@@ -1,0 +1,31 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Git
+.git/
+.gitignore
+
+# Runtime data (mounted as Docker volume)
+data/
+*.db
+
+# Large source documents (not needed in image)
+*.xlsx
+*.docx
+*.pdf
+
+# Editor / OS
+.DS_Store
+.env
+*.swp
+*.swo
+
+# Docs (not needed at runtime)
+DOCS.md

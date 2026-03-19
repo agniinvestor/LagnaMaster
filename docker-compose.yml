@@ -1,0 +1,55 @@
+version: "3.9"
+
+# LagnaMaster — local deploy
+#   API:  http://localhost:8000      (FastAPI + Swagger at /docs)
+#   UI:   http://localhost:8501      (Streamlit)
+#
+# Usage:
+#   docker compose up --build       # first run
+#   docker compose up               # subsequent runs (uses cached image)
+#   docker compose down             # stop and remove containers
+#   docker compose logs -f ui       # tail logs for one service
+
+services:
+
+  api:
+    build: .
+    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - chart_data:/app/data        # SQLite persists across restarts
+      - ./src:/app/src               # live-reload source in dev
+    environment:
+      PYTHONPATH: /app
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  ui:
+    build: .
+    command: >
+      streamlit run src/ui/app.py
+      --server.port 8501
+      --server.address 0.0.0.0
+      --server.headless true
+      --browser.gatherUsageStats false
+    ports:
+      - "8501:8501"
+    volumes:
+      - chart_data:/app/data        # shared SQLite with api service
+      - ./src:/app/src               # live-reload source in dev
+    environment:
+      PYTHONPATH: /app
+    depends_on:
+      api:
+        condition: service_healthy
+
+volumes:
+  chart_data:
+    # Named volume — survives `docker compose down`
+    # To wipe: docker compose down -v
