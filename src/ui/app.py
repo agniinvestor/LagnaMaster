@@ -33,6 +33,8 @@ from src.calculations.yogas import detect_yogas, Yoga
 from src.calculations.ashtakavarga import compute_ashtakavarga, _PLANETS as _AV_PLANETS
 from src.calculations.shadbala import compute_shadbala
 from src.calculations.gochara import compute_gochara
+from src.calculations.panchanga import compute_panchanga
+from src.ui.chart_visual import navamsha_svg
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -275,6 +277,23 @@ with tab_chart:
             height=545,
         )
 
+    # ── Panchanga (below SVG) ─────────────────────────────────────────────────
+    if birth_date_ss:
+        panchanga = compute_panchanga(chart, birth_date_ss)
+        with col_svg:
+            st.markdown("##### Panchanga")
+            _YOGA_NATURE_CLR = {"auspicious": "#1a7a1a", "inauspicious": "#b71c1c", "mixed": "#7c5700"}
+            pc1, pc2, pc3, pc4, pc5 = st.columns(5)
+            pc1.metric("Tithi",    f"{panchanga.tithi} {panchanga.tithi_name}",
+                       delta=panchanga.paksha, delta_color="off")
+            pc2.metric("Vara",     panchanga.vara_name, delta=panchanga.vara, delta_color="off")
+            pc3.metric("Nakshatra",panchanga.nakshatra,
+                       delta=f"P{panchanga.nakshatra_pada} · {panchanga.nakshatra_lord}", delta_color="off")
+            pc4.metric("Yoga",     panchanga.yoga_name, delta=panchanga.yoga_nature, delta_color="off")
+            pc5.metric("Karana",   panchanga.karana_name,
+                       delta="⚠ inauspicious" if panchanga.karana_inauspicious else "auspicious",
+                       delta_color="inverse" if panchanga.karana_inauspicious else "off")
+
     with col_table:
         st.subheader(f"Lagna: {chart.lagna_degree_in_sign:.4f}° {_sign_fmt(chart.lagna_sign)}")
 
@@ -356,6 +375,38 @@ with tab_chart:
                          })
             st.caption("Minimum required Virupas: Sun 390, Moon 360, Mars 300, "
                        "Mercury 420, Jupiter 390, Venus 330, Saturn 300")
+
+        with st.expander("Navamsha Chart (D9)"):
+            if birth_date_ss:
+                panchanga_d9 = compute_panchanga(chart, birth_date_ss)
+            else:
+                from src.calculations.panchanga import compute_navamsha_chart
+                panchanga_d9 = type("_D9", (), {"navamsha_chart": compute_navamsha_chart(chart)})()
+            d9 = panchanga_d9.navamsha_chart
+            lagna_d9_si = d9["lagna"]
+            d9_planets = {k: v for k, v in d9.items() if k != "lagna"}
+            d9_svg = navamsha_svg(d9_planets, lagna_d9_si)
+            col_d9, col_d9t = st.columns([1, 1], gap="large")
+            with col_d9:
+                components.html(
+                    f'<div style="display:flex;justify-content:center;">{d9_svg}</div>',
+                    height=545,
+                )
+            with col_d9t:
+                st.markdown("**D9 Planet Positions**")
+                d9_rows = []
+                for pname, si in d9_planets.items():
+                    d9_rows.append({
+                        "Planet": f"{_PLANET_SYMBOL.get(pname,'')}{pname}",
+                        "D9 Sign": _sign_fmt(SIGNS[si]),
+                        "D1 Sign": _sign_fmt(chart.planets[pname].sign),
+                    })
+                d9_rows.insert(0, {
+                    "Planet": "Lagna",
+                    "D9 Sign": _sign_fmt(SIGNS[lagna_d9_si]),
+                    "D1 Sign": _sign_fmt(chart.lagna_sign),
+                })
+                st.dataframe(d9_rows, use_container_width=True, hide_index=True)
 
 
 # ══════════════════════════════════════════════════════════════════════════════

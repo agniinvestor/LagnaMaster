@@ -1,7 +1,11 @@
 """
 src/ui/chart_visual.py
 =======================
-South Indian chart as an SVG string.
+South Indian chart SVG renderer.
+
+Exposes two public functions:
+  south_indian_svg(chart, name="") → D1 natal chart SVG
+  navamsha_svg(d9_data, lagna_sign_index) → D9 navamsha chart SVG
 
 Layout — 4×4 grid, signs are fixed positions (traditional South Indian format):
 
@@ -174,5 +178,94 @@ def south_indian_svg(chart: BirthChart, name: str = "") -> str:
             f'text-anchor="middle" font-weight="{fw}">{lbl}</text>'
         )
 
+    lines.append('</svg>')
+    return "\n".join(lines)
+
+
+def navamsha_svg(d9_data: dict[str, int], lagna_d9_si: int, label: str = "D9 Navamsha") -> str:
+    """
+    Render the Navamsha (D9) chart as a South Indian SVG.
+
+    Parameters
+    ----------
+    d9_data      : dict mapping planet names → D9 sign index (0=Aries)
+                   e.g. {"Sun": 11, "Moon": 4, "Mars": 8, …}
+    lagna_d9_si  : D9 sign index of the lagna/ascendant
+    label        : text shown in center panel (default "D9 Navamsha")
+
+    Returns
+    -------
+    SVG string at the same 520×520px dimensions as south_indian_svg().
+    """
+    # Build sign → planets mapping for D9
+    sign_planets: dict[int, list[str]] = {i: [] for i in range(12)}
+    for pname, si in d9_data.items():
+        if pname == "lagna":
+            continue   # lagna handled separately
+        abbr = _PLANET_ABBR.get(pname, pname[:2])
+        sign_planets[si].append((pname, abbr))
+
+    lines: list[str] = []
+    lines.append(f'<svg width="{W}" height="{H}" xmlns="http://www.w3.org/2000/svg"'
+                 f' style="font-family: Georgia, serif; background:{_BG};">')
+    lines.append(f'<rect width="{W}" height="{H}" fill="{_BG}"/>')
+
+    for si, (row, col) in _SIGN_POS.items():
+        x = col * CELL
+        y = row * CELL
+        is_lagna = (si == lagna_d9_si)
+        bg  = _LAGNA_BG  if is_lagna else _CELL_BG
+        stk = _LAGNA_STO if is_lagna else _GRID_STO
+        sw  = 2          if is_lagna else 1
+
+        lines.append(
+            f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
+            f'fill="{bg}" stroke="{stk}" stroke-width="{sw}"/>'
+        )
+        lines.append(
+            f'<text x="{x+6}" y="{y+15}" font-size="11" fill="{_SIGN_CLR}">'
+            f'{_SIGN_ABBR[si]}</text>'
+        )
+        if is_lagna:
+            lines.append(
+                f'<text x="{x+CELL-38}" y="{y+15}" font-size="10" '
+                f'fill="{_LAGNA_STO}" font-weight="bold">Lag</text>'
+            )
+
+        planets_here = sign_planets.get(si, [])
+        top_offset = 25 if is_lagna else 22
+        for i, (pname, abbr) in enumerate(planets_here):
+            py = y + top_offset + i * 17
+            clr = _P_COLOR.get(pname, "#333")
+            lines.append(
+                f'<text x="{x+8}" y="{py}" font-size="13" '
+                f'fill="{clr}" font-weight="600">{abbr}</text>'
+            )
+
+    # Center panel
+    cx, cy = 1 * CELL, 1 * CELL
+    cw, ch = 2 * CELL, 2 * CELL
+    lines.append(
+        f'<rect x="{cx}" y="{cy}" width="{cw}" height="{ch}" '
+        f'fill="{_CTR_BG}" stroke="{_GRID_STO}" stroke-width="1"/>'
+    )
+    lines.append(
+        f'<line x1="{cx}" y1="{cy}" x2="{cx+cw}" y2="{cy+ch}" '
+        f'stroke="{_GRID_STO}" stroke-width="1" opacity="0.5"/>'
+    )
+    lines.append(
+        f'<line x1="{cx+cw}" y1="{cy}" x2="{cx}" y2="{cy+ch}" '
+        f'stroke="{_GRID_STO}" stroke-width="1" opacity="0.5"/>'
+    )
+    mid_x, mid_y = cx + cw // 2, cy + ch // 2
+    lagna_label = f"{SIGNS[lagna_d9_si]} Lagna"
+    for i, lbl in enumerate([label, lagna_label]):
+        fy = mid_y - 8 + i * 20
+        fw = "bold" if i == 0 else "normal"
+        fs = 13 if i == 0 else 11
+        lines.append(
+            f'<text x="{mid_x}" y="{fy}" font-size="{fs}" fill="{_CTR_TXT}" '
+            f'text-anchor="middle" font-weight="{fw}">{lbl}</text>'
+        )
     lines.append('</svg>')
     return "\n".join(lines)
