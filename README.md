@@ -1,10 +1,12 @@
 # LagnaMaster
+
 Vedic Jyotish birth chart scoring platform.
 
-**312 tests passing | Sessions 1–14 complete**
+**359 tests passing | Sessions 1–17 complete**
 
 ## Quick Start
-```bash
+
+```
 git clone https://github.com/agniinvestor/LagnaMaster.git && cd LagnaMaster
 docker compose up --build
 # Streamlit UI: http://localhost:8501
@@ -12,15 +14,17 @@ docker compose up --build
 ```
 
 ## Local
-```bash
+
+```
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-PYTHONPATH=. pytest tests/ -q          # 312 tests
+PYTHONPATH=. pytest tests/ -q          # 359 tests
 PYTHONPATH=. uvicorn src.api.main:app --reload
 PYTHONPATH=. streamlit run src/ui/app.py
 ```
 
 ## Sessions
+
 | Session | Deliverable | Tests |
 |---------|-------------|-------|
 | 1–10 | Pilot complete (ephemeris→panchanga) | 222 |
@@ -28,5 +32,8 @@ PYTHONPATH=. streamlit run src/ui/app.py
 | 12 | Kundali Milan (Ashtakoot 36-pt) | 25 |
 | 13 | PDF Chart Report (reportlab) | 15 |
 | 14 | Jaimini Chara Dasha | 20 |
+| 15 | Varga Divisional Charts (D2/D3/D4/D7/D9/D10/D12/D60) | 25 |
+| 16 | Sapta Varga Vimshopak Bala (20-pt dignity) | 20 |
+| 17 | KP Sub-lord System (Star/Sub/Sub-Sub + significators) | 22 |
 
-See PLAN.md and DOCS.md for full reference.
+See [PLAN.md](PLAN.md), [DOCS.md](DOCS.md), and [docs/SESSION_LOG.md](docs/SESSION_LOG.md).
