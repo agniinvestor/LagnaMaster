@@ -9,7 +9,7 @@
 ## Tech Stack
 
 | Layer | Pilot (v1) | Production (v2) |
-|-------|-----------|-----------------|
+|-------|-----------|----------------|
 | Ephemeris | pyswisseph DE441 | same |
 | Backend | FastAPI (sync) | FastAPI + Celery |
 | Database | SQLite | PostgreSQL (immutable inserts) |
@@ -40,10 +40,16 @@ src/calculations/            ← 12 Jyotish modules (translated from Excel CALC 
   ashtakavarga.py            ← Parashari 8-source bindu system: 7 planets + Sarva [Session 8]
   gochara.py                 ← Transit analysis: GocharaReport, Sade Sati, AV bindus [Session 9]
   panchanga.py               ← 5-limb almanac: Tithi/Vara/Nakshatra/Yoga/Karana + D9 [Session 10]
+  pushkara_navamsha.py       ← 24 PN zones (2/sign), R21 scoring hook [Session 11]
+  kundali_milan.py           ← Ashtakoot 36-pt compatibility + Mangal Dosha [Session 12]
         ↓
 src/scoring.py               ← 22 BPHS rules × 12 houses = 264 evaluations per chart
                                 WC rules (R03/R05/R07/R14) count at 0.5× weight
                                 Scores clamped to [-10, +10]; rating Excellent→Very Weak
+                                R21 now live: bhavesh in PN → +0.5  [Session 11]
+        ↓
+src/montecarlo.py            ← ±30 min sensitivity engine, ProcessPoolExecutor [Session 11]
+                                SensitivityReport: house stats + lagna/dasha stability
         ↓
 src/api/main.py              ← FastAPI: POST /charts, GET /charts, GET /charts/{id}(/scores)
 src/api/models.py            ← Pydantic: BirthDataRequest, ChartOut, ChartScoresOut
@@ -51,7 +57,8 @@ src/api/models.py            ← Pydantic: BirthDataRequest, ChartOut, ChartScor
 src/db.py                    ← SQLite immutable inserts (_SENTINEL testability pattern)
         ↓
 src/ui/chart_visual.py       ← South Indian SVG: south_indian_svg() + navamsha_svg() [Sessions 6,10]
-src/ui/app.py                ← Streamlit 7-tab UI: Chart/Scores/Yogas/AV/Dasha/Transits/Rules [Sessions 4,6,7,8,9,10]
+src/ui/app.py                ← Streamlit 8-tab UI: Chart/Scores/Yogas/AV/Dasha/Transits/Rules/Sensitivity
+                                [Sessions 4,6,7,8,9,10,11]
 ```
 
 ---
@@ -59,10 +66,11 @@ src/ui/app.py                ← Streamlit 7-tab UI: Chart/Scores/Yogas/AV/Dasha
 ## Regression Fixture
 
 **1947 India Independence Chart** (primary validator):
-- Birth: 1947-08-15 00:00 IST, New Delhi (28.6139°N, 77.2090°E)
-- Lagna: 7.7286° Taurus
-- Sun: 27.989° Cancer
-- Ayanamsha: Lahiri
+
+* Birth: 1947-08-15 00:00 IST, New Delhi (28.6139°N, 77.2090°E)
+* Lagna: 7.7286° Taurus
+* Sun: 27.989° Cancer
+* Ayanamsha: Lahiri
 
 All modules must pass this fixture before being considered done.
 
@@ -71,7 +79,7 @@ All modules must pass this fixture before being considered done.
 ## Pilot Build — Sessions 1–10 ✅ Complete
 
 | Session | Deliverable | Status | Tests |
-|---------|------------|--------|-------|
+|---------|-------------|--------|-------|
 | 1 | `src/ephemeris.py` — pyswisseph wrapper | ✅ Done | 14/14 |
 | 2 | `src/calculations/` — 7 modules (dignity, nakshatra, friendship, house_lord, chara_karak, narayana_dasa, shadbala) | ✅ Done | 36/36 |
 | 3 | `src/scoring.py` + `src/api/` + `src/db.py` — 22-rule engine + FastAPI + SQLite | ✅ Done | 20/20 |
@@ -82,48 +90,61 @@ All modules must pass this fixture before being considered done.
 | 8 | `ashtakavarga.py` (Parashari 8-source bindu tables) + AV tab in UI + E-1/A-2 regression guards | ✅ Done | 26/26 |
 | 9 | `gochara.py` (transit analysis, Sade Sati) + Shadbala UI surface + Transits tab | ✅ Done | 29/29 |
 | 10 | `panchanga.py` (5-limb almanac) + Navamsha D9 chart + `navamsha_svg()` | ✅ Done | 40/40 |
-| 11 | Next | 🔲 Next | — |
 
-**Total tests passing: 222/222**
+**Pilot total: 222/222 tests passing**
 
 ---
 
-## Accuracy Audit — Sessions 8–10 ✅ Complete
+## Accuracy & Sensitivity Phase — Sessions 11–17
 
-All 6 known bugs from the v5 Excel audit have been investigated and resolved:
+| Session | Deliverable | Status | Tests |
+|---------|-------------|--------|-------|
+| 11 | `pushkara_navamsha.py` + R21 live + `montecarlo.py` + Sensitivity tab | ✅ Done | 30/30 |
+| 12 | Kundali Milan (chart compatibility / Ashtakoot scoring) | 🔲 Next | — |
+| 13 | PDF chart report export (`reportlab` or `weasyprint`) | 🔲 | — |
+| 14 | Jaimini Chara Dasha (sign-based, complements Vimshottari) | 🔲 | — |
+| 15 | Sarvashtakavarga Kakshya bindus + Gochara AV-weighted scoring | 🔲 | — |
+| 16 | Performance benchmark + profiling (target: chart <200 ms) | 🔲 | — |
+| 17 | Pre-production cleanup: logging, error handling, API versioning | 🔲 | — |
 
-| ID | Bug | Status | Resolution |
-|----|-----|--------|------------|
-| P-1 | Midnight birth: 0 treated as falsy | ✅ Fixed | `if hour is None` in ephemeris.py |
-| P-4 | Ayanamsha silent failure | ✅ Fixed | Raise ValueError on unknown ayanamsha |
-| N-1 | Narayana Dasha: Taurus = 4yr (should be 7yr) | ✅ Fixed | Period table in narayana_dasa.py |
-| S-2 | Shadbala J14 formula = hardcoded 3851 | ✅ Fixed | `min(60, mean_motion/\|speed\|×60)` |
-| E-1 | JDN Gregorian +0.5 day correction missing | ✅ Not present in Python code | `swe.julday` handles negative UT hours correctly; regression test added |
-| A-2 | Mercury direction: wrong row reference | ✅ Not present in Python code | Python uses `speed < 0` directly; regression test added |
-
-1947 regression fixture: all modules pass.
+**Total tests after Session 11: 252/252**
 
 ---
 
 ## Phase 3 — Production Hardening (Sessions 18–25)
 
-- PostgreSQL migration (immutable inserts schema)
-- Redis 3-tier caching
-- Multi-user auth (JWT)
-- Monte Carlo ±30min birth time (100 samples, <8s on 4 cores)
-- KP and Jaimini school gates
-- Docker → K8s
-- Streamlit → Next.js
+* PostgreSQL migration (immutable inserts schema)
+* Redis 3-tier caching
+* Multi-user auth (JWT)
+* Monte Carlo ±30min birth time (100 samples, <8s on 4 cores) ✅ Session 11
+* KP and Jaimini school gates
+* Docker → K8s
+* Streamlit → Next.js
 
 ---
 
 ## Explicitly Deferred
 
-- Monte Carlo: after all 10 modules are accurate
-- Jaimini / KP: after Parashari is complete
-- Celery: when concurrent users > 5
-- K8s: when concurrent users > 20
-- Next.js: after Streamlit validates UX
+* Jaimini / KP: after Parashari is complete (Session 14 starts Chara Dasha)
+* Celery: when concurrent users > 5
+* K8s: when concurrent users > 20
+* Next.js: after Streamlit validates UX
+
+---
+
+## Accuracy Audit — Sessions 8–11 ✅ Complete
+
+All 6 known bugs + R21 stub resolved:
+
+| ID | Bug | Status | Resolution |
+|----|-----|--------|-----------|
+| P-1 | Midnight birth: 0 treated as falsy | ✅ Fixed | `if hour is None` in ephemeris.py |
+| P-4 | Ayanamsha silent failure | ✅ Fixed | Raise ValueError on unknown ayanamsha |
+| N-1 | Narayana Dasha: Taurus = 4yr (should be 7yr) | ✅ Fixed | Period table in narayana_dasa.py |
+| S-2 | Shadbala J14 formula = hardcoded 3851 | ✅ Fixed | `min(60, mean_motion/|speed|×60)` |
+| E-1 | JDN Gregorian +0.5 day correction missing | ✅ Not present in Python code | regression test added |
+| A-2 | Mercury direction: wrong row reference | ✅ Not present in Python code | regression test added |
+| R21 | Pushkara Navamsha scoring stub (always 0) | ✅ Fixed (Session 11) | 24-zone lookup → +0.5 when triggered |
 
 ---
 
@@ -131,8 +152,9 @@ All 6 known bugs from the v5 Excel audit have been investigated and resolved:
 
 From `LagnaMaster_Audit_v5_PVRNR.docx`:
 
-**Critical**: N-1, E-1, P-1, P-4
-**High**: S-2, A-2 (+ 4 others in audit doc)
+**Critical**: N-1, E-1, P-1, P-4 — all resolved  
+**High**: S-2, A-2 — all resolved  
+**Deferred**: R21 Pushkara Navamsha — resolved Session 11  
 
 ---
 
@@ -152,7 +174,8 @@ From `LagnaMaster_Audit_v5_PVRNR.docx`:
 |-----------|----------|----------|
 | Pilot live (end-to-end working) | 6 | ~1 week |
 | All bugs fixed, regression passing | +4 | ~week 2 |
-| All 10 modules complete | +5 | ~week 3-4 |
-| Production-ready v1 | ~18-20 total | ~5-6 weeks |
+| All 10 modules complete + Monte Carlo + PN | +1 (Session 11) | ~week 3 |
+| Kundali Milan, PDF, Chara Dasha | +3 (12–14) | ~week 4 |
+| Production-ready v1 | ~18–20 total | ~5–6 weeks |
 
 Original estimate for human team: 39 weeks.
