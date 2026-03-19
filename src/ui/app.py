@@ -109,6 +109,12 @@ try:
 except ImportError:
     _HAS_VARSHA = False
 
+try:
+    from src.calculations.muhurta import scan_muhurta, Activity, MuhurtaReport
+    _HAS_MUHURTA = True
+except ImportError:
+    _HAS_MUHURTA = False
+
 # ── constants ──────────────────────────────────────────────────────────────────
 _SIGNS = [
     "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
@@ -266,10 +272,11 @@ if chart is None:
 # ── tab layout ────────────────────────────────────────────────────────────────
 (tab_chart, tab_scores, tab_yogas, tab_av,
  tab_dasha, tab_transits, tab_varga, tab_vimshopak,
- tab_kp, tab_annual, tab_kundali, tab_rules) = st.tabs([
+ tab_kp, tab_annual, tab_kundali, tab_muhurta, tab_rules) = st.tabs([
     "📊 Chart", "🏠 Domain Scores", "🧘 Yogas", "🔢 Ashtakavarga",
     "⏱ Dashas", "🌍 Transits", "📐 Varga Charts", "⚖️ Vimshopak",
-    "🔑 KP Analysis", "🌟 Annual Chart", "💑 Kundali Milan", "📋 Rule Detail",
+    "🔑 KP Analysis", "🌟 Annual Chart", "💑 Kundali Milan",
+    "🕐 Muhurta", "📋 Rule Detail",
 ])
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
@@ -294,7 +301,8 @@ with tab_chart:
             with pc1:
                 st.metric("Tithi", f"{panch.tithi} ({panch.paksha})")
                 st.metric("Vara", panch.vara)
-                st.metric("Nakshatra", f"{panch.nakshatra} P{panch.nakshatra_pada}")
+                nak_pada = getattr(panch, "nakshatra_pada", getattr(panch, "pada", ""))
+                st.metric("Nakshatra", f"{panch.nakshatra} P{nak_pada}")
             with pc2:
                 st.metric("Yoga", panch.yoga)
                 st.metric("Karana", panch.karana)
@@ -316,25 +324,38 @@ with tab_chart:
             except Exception:
                 pass
 
-        rows = []
-        for p in _PLANETS:
-            pp = chart.planets.get(p)
-            if not pp:
-                continue
-            dig = dignities.get(p)
-            dig_label = dig.dignity.name if dig else "—"
-            combust = "💥" if (dig and dig.combust) else ""
-            retro = "℞" if pp.is_retrograde else ""
-            pk = "✨" if pushkara_flags.get(p) else ""
-            colour = "🟢" if p in _BENEFICS else "🔴"
-            rows.append({
-                "": colour, "Planet": f"{p}{retro}{combust}{pk}",
-                "Sign": pp.sign, "Deg": f"{pp.degree_in_sign:.2f}°",
-                "Dignity": dig_label,
-            })
-        st.dataframe(rows, hide_index=True, use_container_width=True)
-        if pushkara_flags:
-            st.caption("✨ = Pushkara Navamsha")
+        try:
+            rows = []
+            for p in _PLANETS:
+                pp = chart.planets.get(p)
+                if not pp:
+                    continue
+                dig = dignities.get(p)
+                # Dignity label — .dignity is a DignityLevel enum
+                if dig:
+                    dl = getattr(dig, "dignity", None)
+                    dig_label = dl.name if dl else str(dig)
+                else:
+                    dig_label = "—"
+                # Combustion — field may be .combust or .is_combust depending on version
+                is_combust = (
+                    getattr(dig, "combust", False) or
+                    getattr(dig, "is_combust", False)
+                ) if dig else False
+                combust = "💥" if is_combust else ""
+                retro = "℞" if pp.is_retrograde else ""
+                pk = "✨" if pushkara_flags.get(p) else ""
+                colour = "🟢" if p in _BENEFICS else "🔴"
+                rows.append({
+                    "": colour, "Planet": f"{p}{retro}{combust}{pk}",
+                    "Sign": pp.sign, "Deg": f"{pp.degree_in_sign:.2f}°",
+                    "Dignity": dig_label,
+                })
+            st.dataframe(rows, hide_index=True, use_container_width=True)
+            if pushkara_flags:
+                st.caption("✨ = Pushkara Navamsha")
+        except Exception as _e:
+            st.warning(f"Planet table: {_e}")
 
     # Navamsha D9
     with st.expander("🔯 Navamsha (D9)"):
@@ -874,46 +895,164 @@ with tab_kundali:
 
         kr = st.session_state.get("_kundali_result")
         if kr:
-            grade_icon = {"Excellent": "🟢", "Good": "🟡", "Average": "🟠", "Poor": "🔴"}.get(
-                kr.grade, "⚪"
+            try:
+                grade_icon = {"Excellent": "🟢", "Good": "🟡", "Average": "🟠", "Poor": "🔴"}.get(
+                    kr.grade, "⚪"
+                )
+                st.markdown(
+                    f"## {grade_icon} Total: **{kr.total:.1f} / 36** — {kr.grade}"
+                )
+
+                if getattr(kr, "mangal_dosha_a", False):
+                    st.warning("⚠️ Person A has Mangal Dosha")
+                if getattr(kr, "mangal_dosha_b", False):
+                    st.warning("⚠️ Person B has Mangal Dosha")
+
+                kuta_rows = []
+                for kuta_name, ks in kr.kutas.items():
+                    kuta_rows.append({
+                        "Kuta": kuta_name,
+                        "Score": round(getattr(ks, "score", getattr(ks, "points", 0)), 1),
+                        "Max":   getattr(ks, "max_score", getattr(ks, "max_points", "—")),
+                        "Detail": getattr(ks, "detail", getattr(ks, "description", "")),
+                    })
+                st.dataframe(kuta_rows, hide_index=True, use_container_width=True)
+
+                cb = st.session_state.get("_chart_b")
+                if cb:
+                    k_c1, k_c2 = st.columns(2)
+                    with k_c1:
+                        st.markdown("**Person A**")
+                        st.components.v1.html(
+                            f"<div style='text-align:center'>{south_indian_svg(chart, 'Person A')}</div>",
+                            height=540,
+                        )
+                    with k_c2:
+                        st.markdown("**Person B**")
+                        st.components.v1.html(
+                            f"<div style='text-align:center'>{south_indian_svg(cb, 'Person B')}</div>",
+                            height=540,
+                        )
+            except Exception as _kr_e:
+                st.error(f"Kundali display error: {_kr_e}")
+
+# ╔═══════════════════════════════════════════════════════════════════════════╗
+# ║  TAB 12 — MUHURTA  (S20)                                                 ║
+# ╚═══════════════════════════════════════════════════════════════════════════╝
+with tab_muhurta:
+    st.markdown("### 🕐 Muhurta — Auspicious Timing Calculator")
+    if not _HAS_MUHURTA:
+        st.info("muhurta.py not available.")
+    else:
+        import pandas as pd
+        mh_c1, mh_c2, mh_c3 = st.columns([1, 1, 1])
+        with mh_c1:
+            mh_activity = st.selectbox(
+                "Activity", Activity.ALL, key="mh_activity"
             )
-            st.markdown(
-                f"## {grade_icon} Total: **{kr.total:.1f} / 36** — {kr.grade}"
+        with mh_c2:
+            mh_start = st.date_input(
+                "From Date", value=today, key="mh_start"
+            )
+        with mh_c3:
+            mh_end = st.date_input(
+                "To Date", value=today + __import__("datetime").timedelta(days=7),
+                key="mh_end"
             )
 
-            if kr.mangal_dosha_a:
-                st.warning("⚠️ Person A has Mangal Dosha")
-            if kr.mangal_dosha_b:
-                st.warning("⚠️ Person B has Mangal Dosha")
+        mh_c4, mh_c5 = st.columns([1, 1])
+        with mh_c4:
+            mh_top = st.slider("Top N results", 3, 20, 10, key="mh_top")
+        with mh_c5:
+            mh_use_natal = st.checkbox(
+                "Include Chandra Bal (uses natal Moon)", value=True, key="mh_natal"
+            )
 
-            kuta_rows = []
-            for kuta_name, ks in kr.kutas.items():
-                kuta_rows.append({
-                    "Kuta": kuta_name,
-                    "Score": round(ks.score, 1),
-                    "Max": ks.max_score,
-                    "Detail": getattr(ks, "detail", ""),
+        mh_hours_all = st.multiselect(
+            "Hours to scan (local time)",
+            options=list(range(4, 23)),
+            default=[6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+            key="mh_hours",
+        )
+
+        if st.button("⚡ Find Auspicious Times", key="mh_run", type="primary"):
+            if mh_start > mh_end:
+                st.error("Start date must be before end date.")
+            elif (mh_end - mh_start).days > 30:
+                st.error("Date range must be ≤ 30 days to keep computation time reasonable.")
+            elif not mh_hours_all:
+                st.error("Select at least one hour to scan.")
+            else:
+                with st.spinner(f"Scanning {(mh_end - mh_start).days + 1} days × {len(mh_hours_all)} slots…"):
+                    try:
+                        natal_for_mc = chart if mh_use_natal else None
+                        mh_report = scan_muhurta(
+                            start_date=mh_start,
+                            end_date=mh_end,
+                            activity=mh_activity,
+                            natal_chart=natal_for_mc,
+                            lat=st.session_state.get("_lat", lat_val),
+                            lon=st.session_state.get("_lon", lon_val),
+                            tz_offset=st.session_state.get("_tz", tz_val),
+                            ayanamsha=st.session_state.get("_ayan", ayan_val),
+                            top_n=mh_top,
+                            hours=sorted(mh_hours_all),
+                        )
+                        st.session_state["_mh_report"] = mh_report
+                    except Exception as e:
+                        st.error(f"Muhurta scan failed: {e}")
+
+        mh_r = st.session_state.get("_mh_report")
+        if mh_r:
+            best = mh_r.best()
+            if best:
+                st.success(
+                    f"✨ **Best slot**: {best.datetime_str} — "
+                    f"Score **{best.score:.2f}/10** | "
+                    f"{best.nakshatra} nakshatra ({best.nak_quality}) | "
+                    f"{best.vara} | Tithi {best.tithi} {best.tithi_class}"
+                )
+
+            st.caption(
+                f"Scanned {mh_r.total_slots_scanned} slots "
+                f"({mh_r.start_date} → {mh_r.end_date}) | "
+                f"Activity: {mh_r.activity} | Showing top {len(mh_r.slots)}"
+            )
+
+            # Results table
+            mh_rows = []
+            for s in mh_r.slots:
+                yoga_icon = "🟢" if s.yoga_auspicious else "🔴"
+                karana_icon = "✅" if s.karana_auspicious else "⚠️"
+                mh_rows.append({
+                    "Rank": len(mh_rows) + 1,
+                    "Date & Time": s.datetime_str,
+                    "Score": f"{s.score:.2f}",
+                    "Nakshatra": f"{s.nakshatra} ({s.nak_quality})",
+                    "Tithi": f"{s.tithi} {s.tithi_class} ({s.paksha})",
+                    "Vara": f"{s.vara}",
+                    "Yoga": f"{yoga_icon} {s.yoga}",
+                    "Karana": f"{karana_icon} {s.karana}",
+                    "Moon": s.moon_sign,
                 })
-            st.dataframe(kuta_rows, hide_index=True, use_container_width=True)
+            st.dataframe(mh_rows, hide_index=True, use_container_width=True)
 
-            cb = st.session_state.get("_chart_b")
-            if cb:
-                k_c1, k_c2 = st.columns(2)
-                with k_c1:
-                    st.markdown("**Person A**")
-                    st.components.v1.html(
-                        f"<div style='text-align:center'>{south_indian_svg(chart, 'Person A')}</div>",
-                        height=540,
-                    )
-                with k_c2:
-                    st.markdown("**Person B**")
-                    st.components.v1.html(
-                        f"<div style='text-align:center'>{south_indian_svg(cb, 'Person B')}</div>",
-                        height=540,
+            # Score breakdown bar
+            with st.expander("📊 Score Breakdown for Top Slot"):
+                if best:
+                    limb_df = pd.DataFrame([
+                        {"Limb": k.replace("_", " ").title(), "Score (0–1)": v,
+                         "Weight": [2.0, 1.5, 2.0, 2.0, 1.0, 1.5][i]}
+                        for i, (k, v) in enumerate(best.limb_scores.items())
+                    ])
+                    st.dataframe(limb_df, hide_index=True, use_container_width=True)
+                    st.caption(
+                        "Score = weighted average of 6 limbs × 10. "
+                        "Weights vary by activity."
                     )
 
 # ╔═══════════════════════════════════════════════════════════════════════════╗
-# ║  TAB 12 — RULE DETAIL                                                    ║
+# ║  TAB 13 — RULE DETAIL                                                    ║
 # ╚═══════════════════════════════════════════════════════════════════════════╝
 with tab_rules:
     st.markdown("### Rule Detail — 22 BPHS Rules per House")
