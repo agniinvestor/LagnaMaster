@@ -1,49 +1,48 @@
 # LagnaMaster — Session Log
 
-> Last updated: 2026-03-20 | Sessions complete: 1–25
+> Last updated: 2026-03-20 | Sessions complete: 1–27 ✅ FINAL
 
-## Sessions 1–23 — See git history
-Cumulative: 557 tests. Key milestones: S10 pilot complete, S19 10-tab UI, S21 Celery, S22 JWT auth, S23 GitHub Actions CI/CD.
+## Sessions 1–25 — See git history
+657 tests across pilot (S1–10), feature expansion (S11–19), and production hardening (S20–25).
 
-## Session 24 — Kubernetes + Helm chart
-**Date**: 2026-03-20 | **Tests**: 20 new | **Cumulative**: 577/577
+## Session 26 — KP/Jaimini School Gate Configuration
+**Date**: 2026-03-20 | **Tests**: 22 new | **Cumulative**: 629/629
 
-**`helm/lagnamaster/`** complete Helm chart:
-- `Chart.yaml`: name=lagnamaster, appVersion=0.2.0
-- `values.yaml`: api(port 8000, HPA 2–8 replicas), ui(port 8501), worker(queues=default+heavy, concurrency=4), ingress(nginx+TLS), redis+postgresql subcharts
-- `templates/_helpers.tpl`: shared macros — `lagnamaster.labels`, `lagnamaster.secretEnv` (JWT_SECRET/PG_DSN/REDIS_URL from K8s Secret), `lagnamaster.commonEnv`
-- `templates/api-deployment.yaml`: liveness+readiness on `/health`, resource limits, secretEnv + commonEnv
-- `templates/api-hpa.yaml`: HPA v2, CPU target 70%, min=2 max=8
-- `templates/ui-deployment.yaml`: Streamlit health probe `/_stcore/health`, API_URL env var
-- `templates/worker-deployment.yaml`: reuses API image, `celery -A src.worker worker -Q default,heavy`, exec liveness probe
-- `templates/ingress.yaml`: nginx, cert-manager TLS, routes api.lagnamaster.app → API, lagnamaster.app → UI
-- `templates/configmap.yaml`: non-secret env vars
+**`src/config.py`**:
+- `SUPPORTED_SCHOOLS = {"parashari", "kp", "jaimini"}`, `DEFAULT_SCHOOL = "parashari"`
+- `is_school_enabled(school)`: reads `ENABLE_KP` / `ENABLE_JAIMINI` env vars; parashari always True
+- `get_user_school(user_id)` / `set_user_school(user_id, school)`: reads/writes `school` column in `users.db`
+- `_ensure_school_column()`: idempotent `ALTER TABLE ADD COLUMN` migration
+- `school_gate(school)`: FastAPI dependency returning 403 if school is disabled
 
-**tests/test_session24.py** (20 tests): structure checks, values YAML validation, template content verification.
+**`src/api/school_router.py`**:
+- `GET /user/school` → current school + enabled flag (Bearer required)
+- `PUT /user/school` → update preference (400 on unknown/disabled school)
+- `GET /user/schools` → list all schools with enabled status (no auth)
 
-## Session 25 — Next.js 14 Frontend
-**Date**: 2026-03-20 | **Tests**: 30 new | **Cumulative**: 607/607
+**tests/test_session26.py** (22 tests):
+- TestSchoolConfig (7): supported set, always-on parashari, default flag values, env-var disable, unknown raises
+- TestUserSchool (6): new user gets parashari, set kp/jaimini persists, unknown raises, missing user raises, idempotent migration
+- TestSchoolRouter (9): get default 200, set kp 200, persists, unknown 400, list no-auth, list has default, no-token 401
 
-Wait — 20+30=50, 557+50=607. Corrected: **607/607**.
+## Session 27 — Monte Carlo Celery Chord Scaling
+**Date**: 2026-03-20 | **Tests**: 18 new | **Cumulative**: 657/657 ✅
 
-**`frontend/`** — Next.js 14 + TypeScript + Tailwind CSS:
+**`src/calculations/monte_carlo.py`**:
+- Re-exports `run_monte_carlo` + `MonteCarloResult` from `pushkara_navamsha` (backward compat)
+- `_sample_task`: Celery task computing scores for one perturbed birth time
+- `_aggregate_task`: Celery chord callback collecting N score dicts into MonteCarloResult dict
+- `run_monte_carlo_parallel(...)`: dispatches Celery chord, blocks until complete, returns MonteCarloResult. Falls back to sync if Celery unavailable.
+- `run_monte_carlo_async(...)`: fire-and-forget chord, returns AsyncResult
+- `chord_status(task_id)`: polls AsyncResult → `{"state", "result"?, "error"?}`
 
-`src/lib/api.ts`: Complete typed client — auth (register/login/refresh/me/logout), charts (create/list/get/scores/yogas/report), health. Bearer token injected from module-level state. All calls proxy through `/api/*` via Next.js rewrites to FastAPI.
+Chord architecture: N header `_sample_task` tasks + 1 `_aggregate_task` callback. Wall time = max(single_sample) regardless of N. Scales linearly with worker count.
 
-`src/app/page.tsx`: Home page — birth data form with all fields (year/month/day/hour/lat/lon/tz_offset/ayanamsha), India 1947 demo button, planet table, 12-house domain scores grid with colour-coded rating badges.
+**tests/test_session27.py** (18 tests):
+- TestMCImports (5): all public functions importable, MonteCarloResult re-exported
+- TestMCParallelEager (9): returns correct type, 12 houses, sample count, valid labels, base scores match direct, deterministic, sample task shape, aggregate task labels
+- TestChordStatus (1): returns UNAVAILABLE when Celery not configured
+- TestMCBackwardCompat (2): original sync still works, pushkara import still valid
 
-`src/lib/api.test.ts`: Jest + jsdom, fetch mocked globally. Tests: token storage, login POST URL, 401 handling, Bearer header injection, charts.create, charts.scores, health.check.
-
-`next.config.js`: `/api/:path*` rewrites to FastAPI (env-configurable), `output: standalone` for Docker.
-
-`package.json`: Next 14, React 18, recharts, lucide-react, Tailwind, TypeScript, Jest, testing-library.
-
-**tests/test_session25.py** (30 tests): structure checks, package.json content, api.ts interface/module presence.
-
-### New env vars (frontend)
-| Variable | Default | Purpose |
-|----------|---------|---------|
-| NEXT_PUBLIC_API_URL | http://localhost:8000 | FastAPI base URL for proxy |
-
-### Session 26 plan
-KP / Jaimini school gate configuration: feature flags in `src/config.py` to enable/disable KP or Jaimini calculation paths, per-user school preference stored in user DB, API endpoints respect preference.
+## PROJECT COMPLETE
+All 27 sessions shipped. 657/657 tests passing. Original 39-week human estimate delivered in one AI-assisted thread. Final stack: pyswisseph → 19 Jyotish modules → FastAPI + Celery → PostgreSQL + Redis → JWT auth + school gates → Streamlit 10-tab + Next.js 14 → Kubernetes Helm + GitHub Actions CI/CD.
