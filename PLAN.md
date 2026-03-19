@@ -27,7 +27,7 @@ Birth Data (date, time, lat/lon)
         ↓
 src/ephemeris.py             ← pyswisseph wrapper → BirthChart
         ↓
-src/calculations/            ← 9 Jyotish modules (translated from Excel CALC sheets)
+src/calculations/            ← 12 Jyotish modules (translated from Excel CALC sheets)
   dignity.py                 ← exaltation/debilitation/own/mooltrikona, combustion, Neecha Bhanga
   nakshatra.py               ← 27 nakshatras, 4 padas, D9 navamsha, Ganda Mool
   friendship.py              ← Naisargika + Tatkalik → Panchadha Maitri (5-fold)
@@ -37,6 +37,9 @@ src/calculations/            ← 9 Jyotish modules (translated from Excel CALC s
   shadbala.py                ← 6-component planetary strength in Virupas
   vimshottari_dasa.py        ← 120-year nakshatra dasha: 9 MDs × 9 ADs [Session 6]
   yogas.py                   ← 13 yoga types: PM/Raj/Dhana/Lunar/Solar/Special [Session 7]
+  ashtakavarga.py            ← Parashari 8-source bindu system: 7 planets + Sarva [Session 8]
+  gochara.py                 ← Transit analysis: GocharaReport, Sade Sati, AV bindus [Session 9]
+  panchanga.py               ← 5-limb almanac: Tithi/Vara/Nakshatra/Yoga/Karana + D9 [Session 10]
         ↓
 src/scoring.py               ← 22 BPHS rules × 12 houses = 264 evaluations per chart
                                 WC rules (R03/R05/R07/R14) count at 0.5× weight
@@ -47,8 +50,8 @@ src/api/models.py            ← Pydantic: BirthDataRequest, ChartOut, ChartScor
         ↓
 src/db.py                    ← SQLite immutable inserts (_SENTINEL testability pattern)
         ↓
-src/ui/chart_visual.py       ← South Indian SVG chart renderer [Session 6]
-src/ui/app.py                ← Streamlit 5-tab UI: Chart/Scores/Yogas/Dasha/Rules [Sessions 4,6,7]
+src/ui/chart_visual.py       ← South Indian SVG: south_indian_svg() + navamsha_svg() [Sessions 6,10]
+src/ui/app.py                ← Streamlit 7-tab UI: Chart/Scores/Yogas/AV/Dasha/Transits/Rules [Sessions 4,6,7,8,9,10]
 ```
 
 ---
@@ -65,7 +68,7 @@ All modules must pass this fixture before being considered done.
 
 ---
 
-## Pilot Build — Sessions 1–7 ✅ Complete
+## Pilot Build — Sessions 1–10 ✅ Complete
 
 | Session | Deliverable | Status | Tests |
 |---------|------------|--------|-------|
@@ -76,26 +79,29 @@ All modules must pass this fixture before being considered done.
 | 5 | Docker Compose + Dockerfile + Makefile + integration tests (17) | ✅ Done | 17/17 |
 | 6 | `vimshottari_dasa.py` + `chart_visual.py` (South Indian SVG) + 4-tab UI | ✅ Done | 20/20 |
 | 7 | `yogas.py` (13 yoga types) + enriched planet table + Yogas tab in UI | ✅ Done | 14/14 |
-| 8 | Accuracy fixes: E-1 (JDN +0.5) + A-2 (Mercury direction) | 🔲 Next | — |
+| 8 | `ashtakavarga.py` (Parashari 8-source bindu tables) + AV tab in UI + E-1/A-2 regression guards | ✅ Done | 26/26 |
+| 9 | `gochara.py` (transit analysis, Sade Sati) + Shadbala UI surface + Transits tab | ✅ Done | 29/29 |
+| 10 | `panchanga.py` (5-limb almanac) + Navamsha D9 chart + `navamsha_svg()` | ✅ Done | 40/40 |
+| 11 | Next | 🔲 Next | — |
 
-**Total tests passing: 127/127**
+**Total tests passing: 222/222**
 
 ---
 
-## Accuracy Iteration — Sessions 8–11
+## Accuracy Audit — Sessions 8–10 ✅ Complete
 
-Fix the 6 known bugs from the v5 audit, in severity order:
+All 6 known bugs from the v5 Excel audit have been investigated and resolved:
 
-| ID | Bug | Status | Fix |
-|----|-----|--------|-----|
+| ID | Bug | Status | Resolution |
+|----|-----|--------|------------|
 | P-1 | Midnight birth: 0 treated as falsy | ✅ Fixed | `if hour is None` in ephemeris.py |
 | P-4 | Ayanamsha silent failure | ✅ Fixed | Raise ValueError on unknown ayanamsha |
 | N-1 | Narayana Dasha: Taurus = 4yr (should be 7yr) | ✅ Fixed | Period table in narayana_dasa.py |
 | S-2 | Shadbala J14 formula = hardcoded 3851 | ✅ Fixed | `min(60, mean_motion/\|speed\|×60)` |
-| E-1 | JDN Gregorian +0.5 day correction missing | 🔲 Session 8 | Add offset in ephemeris.py |
-| A-2 | Mercury direction: wrong row reference | 🔲 Session 8 | Fix lookup in retrograde.py |
+| E-1 | JDN Gregorian +0.5 day correction missing | ✅ Not present in Python code | `swe.julday` handles negative UT hours correctly; regression test added |
+| A-2 | Mercury direction: wrong row reference | ✅ Not present in Python code | Python uses `speed < 0` directly; regression test added |
 
-After each fix: re-run 1947 regression fixture.
+1947 regression fixture: all modules pass.
 
 ---
 

@@ -1,7 +1,7 @@
 # LagnaMaster — Technical Documentation
 
 > Last updated: 2026-03-19
-> Sessions complete: 1–7 (pilot complete — 127/127 tests passing)
+> Sessions complete: 1–10 (pilot complete — 222/222 tests passing)
 
 ---
 
@@ -27,6 +27,9 @@
    - [src/calculations/yogas.py](#414-srccalculationsyogaspy)
    - [src/ui/chart_visual.py](#415-srcuichart_visualpy)
    - [src/ui/app.py](#416-srcuiapppy)
+   - [src/calculations/ashtakavarga.py](#417-srccalculationsashtakavargapy)
+   - [src/calculations/gochara.py](#418-srccalculationsgocharapy)
+   - [src/calculations/panchanga.py](#419-srccalculationspanchangapy)
 5. [API Reference](#5-api-reference)
 6. [Scoring Engine Deep Dive](#6-scoring-engine-deep-dive)
 7. [Known Bugs & Status](#7-known-bugs--status)
@@ -48,12 +51,13 @@ Birth data (date, time, lat/lon)
     → calculations/              9 Jyotish modules
         dignity, nakshatra, friendship, house_lord,
         chara_karak, narayana_dasa, shadbala,
-        vimshottari_dasa, yogas
+        vimshottari_dasa, yogas,
+        ashtakavarga, gochara, panchanga
     → scoring.py                 22 BPHS rules × 12 houses
     → api/main.py                FastAPI REST endpoints
     → db.py                      SQLite (immutable inserts)
-    → ui/app.py                  Streamlit 5-tab UI
-    → ui/chart_visual.py         South Indian chart SVG
+    → ui/app.py                  Streamlit 7-tab UI
+    → ui/chart_visual.py         South Indian chart SVG (D1 + D9)
 ```
 
 **Tech stack**:
@@ -99,10 +103,13 @@ LagnaMaster/
 │   │   ├── narayana_dasa.py    Sign-based 81-year dasha calculator
 │   │   ├── shadbala.py         6-component planetary strength in Virupas
 │   │   ├── vimshottari_dasa.py 120-year nakshatra-based dasha (9 MDs × 9 ADs)
-│   │   └── yogas.py            13 yoga types: PM/Raj/Dhana/Lunar/Solar/Special
+│   │   ├── yogas.py            13 yoga types: PM/Raj/Dhana/Lunar/Solar/Special
+│   │   ├── ashtakavarga.py     Parashari 8-source bindu tables (7 planets + Sarva)
+│   │   ├── gochara.py          Transit analysis: GocharaReport, Sade Sati, AV bindus
+│   │   └── panchanga.py        5-limb almanac: Tithi/Vara/Nakshatra/Yoga/Karana + D9
 │   ├── ui/
-│   │   ├── app.py              Streamlit 5-tab UI (Chart/Scores/Yogas/Dasha/Rules)
-│   │   └── chart_visual.py     South Indian 4×4 SVG chart renderer
+│   │   ├── app.py              Streamlit 7-tab UI (Chart/Scores/Yogas/AV/Dasha/Transits/Rules)
+│   │   └── chart_visual.py     South Indian 4×4 SVG: south_indian_svg() + navamsha_svg()
 │   └── api/
 │       ├── main.py             FastAPI application
 │       └── models.py           Pydantic request/response models
@@ -114,7 +121,10 @@ LagnaMaster/
     ├── test_scoring.py         20 tests — scoring engine + API endpoints
     ├── test_integration.py     17 tests — end-to-end journey + edge cases
     ├── test_vimshottari.py     20 tests — dasha structure + 1947 fixture
-    └── test_yogas.py           14 tests — yoga detection + 1947 fixture
+    ├── test_yogas.py           14 tests — yoga detection + 1947 fixture
+    ├── test_ashtakavarga.py    26 tests — AV structure, fixed totals, Sarva, E-1/A-2 regression
+    ├── test_gochara.py         29 tests — transit structure, Sade Sati phases, house math
+    └── test_panchanga.py       40 tests — 5 limbs, D9 formula, 1947 known values
 ```
 
 ---
@@ -756,21 +766,28 @@ Center 4 cells (1,1)–(2,2) show diagonal cross lines and chart label.
 **Public API**:
 ```python
 def south_indian_svg(chart: BirthChart, name: str = "") -> str
+
+def navamsha_svg(d9_data: dict[str, int], lagna_d9_si: int, label: str = "D9 Navamsha") -> str
+# d9_data: {planet_name: D9_sign_index} (excludes "lagna" key)
+# lagna_d9_si: D9 sign index of ascendant (0=Aries)
+# Same 520×520px layout as south_indian_svg()
 ```
 
 ---
 
 ### 4.16 `src/ui/app.py`
 
-**Purpose**: Streamlit 5-tab web UI. Birth data input → compute → display chart, scores, yogas, dasha timeline, and rule detail.
+**Purpose**: Streamlit 7-tab web UI. Birth data input → compute → display chart, panchanga, scores, yogas, ashtakavarga, dasha, transits, and rule detail.
 
 **Tabs**:
 | Tab | Content |
 |-----|---------|
-| Chart | South Indian SVG + enriched planet table (sign, degree, nakshatra+pada, dignity, speed) |
+| Chart | South Indian SVG + panchanga strip (5 limbs) + Shadbala expander + Navamsha D9 expander |
 | Domain Scores | 12-house score bar chart + rating badges |
 | Yogas | Detected yoga cards grouped by category (name, nature badge, planets, description) |
+| Ashtakavarga | Sarvashtakavarga bar (12 signs) + per-planet 12-bindu grids + full data table |
 | Vimshottari Dasha | Current MD/AD period + full 9 MahaDasha table + AntarDasha expandable |
+| Transits | Date picker + Sade Sati banner (phase indicator) + Guru-Chandal warning + per-planet transit table |
 | Rule Detail | Per-house rule breakdown (all 22 rules, triggered/not, score contribution) |
 
 **Sidebar**:
@@ -790,7 +807,11 @@ from src.calculations.nakshatra import nakshatra_position
 from src.calculations.dignity import compute_all_dignities, DignityLevel
 from src.calculations.yogas import detect_yogas
 from src.calculations.vimshottari_dasa import compute_vimshottari_dasa, current_dasha
-from src.ui.chart_visual import south_indian_svg
+from src.calculations.ashtakavarga import compute_ashtakavarga, _PLANETS as _AV_PLANETS
+from src.calculations.shadbala import compute_shadbala
+from src.calculations.gochara import compute_gochara
+from src.calculations.panchanga import compute_panchanga
+from src.ui.chart_visual import south_indian_svg, navamsha_svg
 ```
 
 **DignityLevel enum names** (actual values — do not use the wrong aliases):
@@ -800,6 +821,152 @@ from src.ui.chart_visual import south_indian_svg
 - `packages.txt` provides `gcc g++ python3-dev` for pyswisseph compilation
 - `requirements.txt` uses `fastapi` (not `fastapi[standard]`) to avoid Rust dependency from `email-validator`
 - `.streamlit/config.toml`: `headless=true`, `enableCORS=false`, serif font, indigo theme
+
+---
+
+### 4.17 `src/calculations/ashtakavarga.py`
+
+**Purpose**: Parashari Ashtakavarga — computes 8-source bindu contribution tables for each of 7 planets plus the Sarvashtakavarga (sum of all 7).
+
+**Theory**: For each target planet P, 8 contributors (Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Lagna) each donate 1 bindu to certain signs based on fixed house tables from BPHS. A sign with ≥5 bindus is "Strong", 3–4 is "Average", ≤2 is "Weak".
+
+**Fixed totals** (chart-independent — sum of all 8 contributors across 12 signs):
+| Planet | Total | Sarva |
+|--------|-------|-------|
+| Sun | 50 | |
+| Moon | 48 | |
+| Mars | 42 | |
+| Mercury | 55 | 344 |
+| Jupiter | 57 | |
+| Venus | 52 | |
+| Saturn | 40 | |
+
+**Data classes**:
+```python
+@dataclass
+class AshtakavargaTable:
+    planet: str
+    bindus: list[int]   # 12 values; index 0 = Aries
+    total: int
+    def bindu_for_sign(self, sign_index: int) -> int
+    def bindu_for_sign_name(self, sign_name: str) -> int
+    def strength(self, sign_index: int) -> str   # "Strong" / "Average" / "Weak"
+
+@dataclass
+class AshtakavargaChart:
+    planet_av: dict[str, AshtakavargaTable]   # 7 planets
+    sarva: AshtakavargaTable
+    def for_planet(self, planet: str) -> AshtakavargaTable
+```
+
+**Public API**:
+```python
+def compute_ashtakavarga(chart: BirthChart) -> AshtakavargaChart
+```
+
+**Key implementation details**:
+- `_BENEFIC_HOUSES` dict encodes which house offsets from each contributor donate a bindu to each target planet
+- `_PLANETS = ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn"]` — Rahu/Ketu excluded
+- Lagna is the 8th contributor (sign index = `chart.lagna_sign_index`)
+- Sarva = element-wise sum of 7 planet bindu arrays
+
+---
+
+### 4.18 `src/calculations/gochara.py`
+
+**Purpose**: Transit (Gochara) analysis — current planetary positions mapped against the natal chart. Includes Sade Sati detection and AV-bindu quality for each transit.
+
+**Data classes**:
+```python
+@dataclass
+class TransitPlanet:
+    planet: str
+    longitude: float; sign: str; sign_index: int
+    degree_in_sign: float; is_retrograde: bool; speed: float
+    natal_house: int     # whole-sign house from natal lagna (1–12)
+    av_bindus: int       # AV bindus at transit sign (-1 for Rahu/Ketu)
+
+@dataclass
+class GocharaReport:
+    transit_date: date
+    natal_lagna_sign: str
+    natal_moon_sign: str; natal_moon_sign_index: int
+    planets: dict[str, TransitPlanet]
+    sade_sati: bool
+    sade_sati_phase: str   # "Rising" / "Peak" / "Setting" / "None"
+    guru_transit_house: int
+    guru_chandal_transit: bool
+```
+
+**Public API**:
+```python
+def compute_gochara(natal_chart: BirthChart, transit_date: date = None) -> GocharaReport
+# transit_date defaults to today; positions computed at noon UTC
+```
+
+**Key implementation details**:
+- Transit positions computed at noon UTC: `swe.julday(y, m, d, 12.0, swe.GREG_CAL)`
+- `_whole_sign_house(planet_si, lagna_si) = (planet_si - lagna_si) % 12 + 1`
+- **Sade Sati phases**:
+  - Rising: Saturn in sign preceding natal Moon
+  - Peak: Saturn in natal Moon sign
+  - Setting: Saturn in sign following natal Moon
+- `guru_chandal_transit`: Jupiter and Rahu in same sign in transit sky
+- AV bindus sourced from `compute_ashtakavarga(natal_chart)` for each transit sign
+
+---
+
+### 4.19 `src/calculations/panchanga.py`
+
+**Purpose**: Panchanga — 5-limb Vedic almanac computed from birth date/time. Also exposes the Navamsha (D9) chart.
+
+**The 5 Limbs**:
+
+| Limb | Computation | Range |
+|------|-------------|-------|
+| Tithi | `int((moon_lon − sun_lon) % 360 / 12) + 1` | 1–30 |
+| Vara | `birth_date.weekday()` → planet lord | Sun/Moon/Mars/Mercury/Jupiter/Venus/Saturn |
+| Nakshatra | Moon's nakshatra via `nakshatra_position(moon_lon)` | 27 nakshatras, 4 padas |
+| Yoga | `int((sun_lon + moon_lon) % 360 / (360/27)) + 1` | 1–27 |
+| Karana | `int(elongation / 6) + 1` | 1–60 (half-tithis) |
+
+**Tithi/Paksha**:
+- Tithis 1–15 = Shukla (bright, waxing)
+- Tithis 16–30 = Krishna (dark, waning)
+- Tithi 15 = Purnima (full moon); Tithi 30 = Amavasya (new moon)
+
+**Karana sequence** (60 per month):
+- Index 0: Kimstughna (fixed)
+- Indices 1–56: 7 movable karanas cycling 8 times (`_MOVABLE_KARANAS[(idx−1) % 7]`)
+- Index 57: Shakuni; Index 58: Chatushpada; Index 59: Naga (fixed)
+- Inauspicious: Vishti, Shakuni, Chatushpada, Naga, Kimstughna
+
+**Weekday lords** (`_VARA_LORDS`):
+- Python `weekday()` 0=Monday, 6=Sunday → Moon, Mars, Mercury, Jupiter, Venus, Saturn, Sun
+
+**D9 Navamsha formula** (`_d9_sign_index(longitude)`):
+```python
+_D9_START = {0: 0, 1: 9, 2: 6, 3: 3}   # Fire→Aries, Earth→Capricorn, Air→Libra, Water→Cancer
+si   = int(longitude / 30) % 12
+pada = int((longitude % 30) * 9 / 30)   # 0–8
+return (_D9_START[si % 4] + pada) % 12
+```
+
+**1947 India chart known values**:
+- Tithi: 28 (Krishna Trayodashi)
+- Vara: Venus / Friday
+- Nakshatra: Pushya Pada 1, lord = Saturn
+- Yoga: Siddhi (index 15, auspicious)
+- D9 Lagna: Pisces; D9 Moon: Leo
+
+**Public API**:
+```python
+def compute_panchanga(chart: BirthChart, birth_date: date) -> Panchanga
+def compute_navamsha_chart(chart: BirthChart) -> dict[str, int]
+# dict keys: "lagna" + 9 planet names; values: D9 sign index 0–11
+```
+
+**`NakshatraPosition` field name**: use `.dasha_lord` (not `.lord`).
 
 ---
 
@@ -915,16 +1082,18 @@ From `LagnaMaster_Audit_v5_PVRNR.docx` (v5 Excel audit):
 | P-4 | Critical | ephemeris.py | Unknown ayanamsha silently uses default | ✅ Fixed |
 | N-1 | Critical | narayana_dasa.py | Taurus period = 4yr (should be 7yr) | ✅ Fixed |
 | S-2 | High | shadbala.py | Chesta Bala cell J14 = hardcoded 3851 | ✅ Fixed |
-| E-1 | Critical | ephemeris.py | JDN Gregorian +0.5 day correction missing | 🔲 Session 7 |
-| A-2 | High | retrograde.py | Mercury direction uses wrong row reference | 🔲 Session 7 |
+| E-1 | Critical | ephemeris.py | JDN Gregorian +0.5 day correction missing | ✅ Not present in Python code |
+| A-2 | High | retrograde.py | Mercury direction uses wrong row reference | ✅ Not present in Python code |
 
-**Note**: E-1 and A-2 are deferred to the accuracy iteration phase (Sessions 7–10). The pilot ships with bugs preserved as per the pilot-first strategy.
+**Notes on E-1 and A-2**:
+- **E-1**: `swe.julday(1947, 8, 15, -5.5, GREG_CAL)` correctly handles negative UT hours (midnight IST = UTC−5.5h). The bug was Excel-only. Regression test added in `test_ashtakavarga.py::TestAccuracyGuards` — asserts `|india_chart.jd_ut − 2432412.2708| < 0.001`.
+- **A-2**: Python retrograde detection uses `speed < 0` directly (correct). The wrong row reference was Excel-only. Regression test confirms `compute_chart(2022, 9, 20, ...)` → Mercury `is_retrograde=True` and `compute_chart(2022, 10, 15, ...)` → `is_retrograde=False`.
 
 ---
 
 ## 8. Test Suite
 
-**127 tests, all passing** (as of Session 7):
+**222 tests, all passing** (as of Session 10):
 
 ```
 tests/test_ephemeris.py       14 tests  — pyswisseph wrapper, position accuracy
@@ -933,8 +1102,11 @@ tests/test_scoring.py         20 tests  — 22-rule engine + FastAPI endpoints
 tests/test_integration.py     17 tests  — end-to-end chart journey + edge cases
 tests/test_vimshottari.py     20 tests  — dasha structure, 1947 fixture, antardasha proportions
 tests/test_yogas.py           14 tests  — yoga detection logic + 1947 fixture
+tests/test_ashtakavarga.py    26 tests  — AV structure, fixed totals, Sarva, E-1/A-2 regression
+tests/test_gochara.py         29 tests  — transit structure, Sade Sati phases, house math
+tests/test_panchanga.py       40 tests  — 5-limb structure, D9 formula, 1947 known values
                              ───────────
-                             127 total
+                             222 total
 ```
 
 **Run**:
@@ -966,6 +1138,12 @@ PYTHONPATH=/tmp/lm .venv/bin/pytest tests/ -v
 5. **Yoga tests** (`test_yogas.py`): Pancha-Graha Yoga (5 planets in Cancer), Gajakesari (Moon/Jupiter), Kemadruma absent (Mars adjacent to Moon), PM yoga only if planet in kendra, determinism check.
 
 6. **Score validation**: H2 and H7 expected negative for 1947 chart (matches Excel OUTPUT_LifeDomains).
+
+7. **Ashtakavarga tests** (`test_ashtakavarga.py`): AV tables have 12 bindus each in 0–8 range, fixed totals are chart-independent (`FIXED_TOTALS` dict), Sarva = sum of 7 planet arrays, strength ratings (Strong ≥5, Weak ≤2), E-1/A-2 regression guards (JD accuracy + Mercury Rx direction).
+
+8. **Gochara tests** (`test_gochara.py`): 9-planet structure, longitude/sign consistency, Rahu+Ketu 180° opposition, `_whole_sign_house` unit tests (same-sign=1, adjacent, wrap-around, opposite=7), Sade Sati phase unit tests (all 4 outcomes including wrap-around), AV bindu accessor, default date = today, determinism, Jupiter fields.
+
+9. **Panchanga tests** (`test_panchanga.py`): All 5 limbs present in structure, 1947 known values (Vara=Friday/Venus, Nakshatra=Pushya, Tithi=28/Krishna/Trayodashi, Yoga=Siddhi/auspicious, not full/new moon), D9 Lagna=Pisces, D9 Moon=Leo, tithi arithmetic edge cases, D9 formula tested per element type (Fire/Earth/Air/Water) and full 9-pada Aries cycle, determinism.
 
 ---
 
