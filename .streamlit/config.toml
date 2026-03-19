@@ -3,8 +3,9 @@ headless = true
 enableCORS = false
 
 [theme]
-primaryColor = "#4B0082"          # deep indigo — Jyotish
-backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F5F0FF"
-textColor = "#1A1A2E"
+base = "light"
 font = "serif"
+primaryColor = "#4B0082"
+backgroundColor = "#FAFAF8"
+secondaryBackgroundColor = "#EDE7F6"
+textColor = "#1A1A2E"
