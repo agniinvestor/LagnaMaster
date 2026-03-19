@@ -1,134 +1,128 @@
 # LagnaMaster — Technical Documentation
 
-> Last updated: 2026-03-20 | Sessions 1–27 COMPLETE | 657/657 tests
+> Last updated: 2026-03-20 | Sessions 1–32 | 717/717 tests
 
-## Repository Structure (final)
+## New in Phase 4 (Sessions 28–32)
 
-```
-LagnaMaster/
-├── streamlit_app.py
-├── PLAN.md / DOCS.md / README.md
-├── requirements.txt            16 packages
-├── alembic.ini / migrations/
-├── .github/workflows/ci.yml
-├── helm/lagnamaster/           Kubernetes + Helm  [S24]
-├── frontend/                   Next.js 14         [S25]
-├── docs/SESSION_LOG.md / MEMORY.md
-└── src/
-    ├── __init__.py
-    ├── ephemeris.py            S1
-    ├── scoring.py              S3
-    ├── db.py / db_pg.py        S3 / S20
-    ├── cache.py                S20
-    ├── report.py               S13
-    ├── worker.py               S21
-    ├── auth.py                 S22
-    ├── config.py               S26  school gates
-    ├── calculations/
-    │   ├── dignity … panchanga S2–S10
-    │   ├── pushkara_navamsha   S11  + MonteCarloResult
-    │   ├── kundali_milan       S12
-    │   ├── jaimini_chara_dasha S14
-    │   ├── kp_significators    S15
-    │   ├── tajika              S16
-    │   ├── compatibility_score S17
-    │   └── monte_carlo.py      S27  Celery chord parallel MC
-    ├── ui/app.py               S4,6–21
-    └── api/
-        ├── main.py / main_v2.py
-        ├── auth_router.py      S22
-        ├── school_router.py    S26
-        └── models.py
+### `src/calculations/functional_roles.py` (Session 28)
 
-tests/ — 657 total across 21 test files
-```
-
-## Session 26 — KP/Jaimini School Gates
-
-**`src/config.py`** — feature flag + per-user school preference:
+Per-lagna functional role matrix — the most critical under-modeled layer.
 
 ```python
-SUPPORTED_SCHOOLS  = {"parashari", "kp", "jaimini"}
-DEFAULT_SCHOOL     = "parashari"
-
-is_school_enabled(school)                    → bool
-get_user_school(user_id, path)               → str
-set_user_school(user_id, school, path)       → None
-school_gate(school)                          → FastAPI dependency (403 if disabled)
+roles = compute_functional_roles(chart)
+roles.yogakarakas          # planets ruling kendra+trikona simultaneously
+roles.badhaka_house        # 11 (moveable) / 9 (fixed) / 7 (dual) lagna
+roles.badhaka_lord         # lord of badhaka house
+roles.maraka_lords         # H2 + H7 lords
+roles.dusthana_lords       # H6 + H8 + H12 lords
+roles.functional_benefics  # lagna-specific, not universal
+roles.functional_malefics  # lagna-specific
+roles.is_yogakaraka(p)     # True if planet is yogakaraka for this lagna
+roles.is_functional_malefic(p)
 ```
 
-Feature flags: `ENABLE_KP=0` disables KP school. `ENABLE_JAIMINI=0` disables Jaimini.
-Parashari is always enabled. School preference stored in `users.school` column (added via `ALTER TABLE` migration — idempotent).
+**Key insight**: Venus rules H1+H6 for Sagittarius lagna — making it both lagna lord (protective) and H6 lord (challenging). This dual-role is computed correctly by the functional matrix.
 
-**`src/api/school_router.py`** — 3 endpoints:
+### `src/calculations/avastha.py` (Session 29)
 
-| Method | Path | Auth | Description |
-|--------|------|------|-------------|
-| GET | `/user/school` | Bearer | Current user's school |
-| PUT | `/user/school` | Bearer | Update school preference |
-| GET | `/user/schools` | None | List all schools + enabled status |
-
-**`school_gate` usage** (protect any school-specific endpoint):
-```python
-from src.config import school_gate
-@router.get("/kp/significators", dependencies=[Depends(school_gate("kp"))])
-def kp_endpoint(): ...
-```
-
-## Session 27 — Monte Carlo Celery Chord Scaling
-
-**`src/calculations/monte_carlo.py`** — parallel Monte Carlo via Celery chord:
-
-```
-header:   N × _sample_task  (one ephemeris+score per perturbed birth time)
-callback: _aggregate_task   (collects N score dicts → MonteCarloResult)
-```
-
-Wall time ≈ max(single sample) regardless of N. Scales linearly with worker count.
+Three classical planetary state systems:
 
 ```python
-# Synchronous parallel (Celery chord, blocking)
-run_monte_carlo_parallel(year, month, day, hour, lat, lon,
-                         tz_offset, ayanamsha, samples, window_minutes)
-    → MonteCarloResult
-
-# Fire-and-forget (returns AsyncResult immediately)
-result = run_monte_carlo_async(...)
-status = chord_status(result.id)   # {"state": "SUCCESS"|"PENDING"|"FAILURE", ...}
+report = compute_all_avasthas(chart)
+report.deeptadi["Jupiter"]    # "Deepta"/"Swastha"/"Mudita"/"Shanta"/"Dukha"/"Kshobhita"
+report.baladi["Saturn"]       # "Bala"/"Kumara"/"Yuva"/"Vriddha"/"Mrita"
+report.lajjitadi.state        # "Lajjita"/"Kshobhita"/"Kshudhita"/"Trushita"/"Garvita"/"Mudita"
+report.lajjitadi.pressure_score  # 0.0–1.0
+report.effective_multipliers  # deeptadi × baladi per planet
 ```
 
-`run_monte_carlo` (original sync implementation from `pushkara_navamsha`) is
-re-exported from this module for full backward compatibility.
+**Lajjita** (5th lord ashamed) = highest pressure state. Occurs when 5th lord is in dusthana with malefics or combust. Strong correlation with psychological burden, creative grief, anxiety.
 
-## Test Suite — 657 total
+### `src/calculations/pressure_engine.py` (Session 30)
+
+**The Life Pressure Index** — the central missing capability.
 
 ```
-S1–S10  pilot           222
-S11–S19 features        225
-S20     db_pg+cache      35
-S21     celery+UI        25
-S22     jwt auth         25
-S23     CI/health        20
-S24     helm             20
-S25     next.js          30
-S26     school gates     22   TestSchoolConfig(7) TestUserSchool(6) TestSchoolRouter(9)
-S27     MC celery        18   TestMCImports(5) TestMCParallelEager(9) TestChordStatus(1) TestMCBackwardCompat(2) [~17+1]
-                        ────
-                         657
+PressureIndex = (structural_vulnerability/10 × dasha_activation × transit_load / resilience) × 10
 ```
 
-## Complete Environment Variables
+Four components:
+1. `structural_vulnerability(chart)` → float [0..10] — natal baseline from Moon condition, Saturn-Moon, badhaka, dusthana interlocking, Lajjitadi
+2. `dasha_activation_weight(chart, dashas, date)` → float [0..2] — amplifies when MD/AD lords are functional malefics, badhaka lords, or marakas
+3. `transit_load(chart, date)` → float [0..2] — Sade Sati, Saturn/Rahu over lagna, malefic clusters
+4. `resilience_factor(chart, dashas, date)` → float [0.5..2.0] — Jupiter strength, yogakaraka dasha, Jupiter transit over Moon kendra
 
-| Variable | Default | Purpose |
-|----------|---------|---------|
-| PG_DSN | — | PostgreSQL (absent = SQLite) |
-| REDIS_URL | redis://localhost:6379/0 | Cache (empty = disabled) |
-| CACHE_VERSION | 1 | Bust score cache |
-| CELERY_BROKER_URL | redis://localhost:6379/1 | Celery broker |
-| CELERY_RESULT_URL | redis://localhost:6379/2 | Celery results |
-| JWT_SECRET | dev-secret-... | **Change in production** |
-| ACCESS_TTL_MIN | 15 | Access token lifetime (min) |
-| REFRESH_TTL_DAY | 7 | Refresh token lifetime (days) |
-| ENABLE_KP | 1 | Set 0 to disable KP school |
-| ENABLE_JAIMINI | 1 | Set 0 to disable Jaimini school |
-| NEXT_PUBLIC_API_URL | http://localhost:8000 | Next.js → FastAPI proxy |
+```python
+# Single date
+point = compute_pressure_index(chart, dashas, date(2026,6,15))
+print(f"{point.pressure_index:.1f} — {point.label}")
+print(f"Drivers: {point.key_drivers}")
+
+# Timeline
+timeline = compute_pressure_timeline(chart, dashas,
+    from_date=date(2024,1,1), to_date=date(2028,12,31), step_months=3)
+crisis_periods = [p for p in timeline if p.is_elevated]
+```
+
+Labels: Tranquil (<2.5) / Mild (<4.0) / Moderate (<5.5) / Elevated (<7.0) / High (<8.5) / Critical (≥8.5)
+
+### `src/calculations/argala.py` (Session 31)
+
+Jaimini Argala + Arudha Lagna:
+
+```python
+# Argala on Lagna
+argala = compute_argala(chart, reference_house=1)
+argala.net_argala_score    # positive = net support, negative = obstruction
+argala.entries             # list of ArgalaEntry per argala house
+for e in argala.entries:
+    print(f"H{e.house_from_reference} argala: {e.net_effect} ({e.nature})")
+
+# Arudha Lagna
+al = compute_arudha_lagna(chart)
+al.arudha_lagna_sign       # social mirror sign
+al.al_condition            # "Strong"/"Afflicted"/"Mixed"/"Neutral"
+al.pressure_note           # explanation
+```
+
+### `src/calculations/scoring_v2.py` + `graha_yuddha.py` (Session 32)
+
+```python
+# Graha Yuddha
+wars = compute_graha_yuddha(chart)
+for w in wars:
+    print(f"{w.winner} defeats {w.loser} in {w.sign} (sep={w.separation_degrees:.3f}°)")
+
+# Scoring Engine v2
+from src.calculations.scoring_v2 import score_chart_v2, ENGINE_VERSION
+scores = score_chart_v2(chart)
+print(scores.engine_version)   # "2.0.0" — store alongside each score run
+print(scores.summary())
+for h, hs in scores.houses.items():
+    print(f"H{h}: {hs.final_score:+.2f} | func_malefic_bhavesh={hs.functional_malefic_bhavesh}")
+```
+
+v2 differences from v1: functional (lagna-specific) benefic/malefic classification; Graha Yuddha penalty (losers give 50% benefic score); ENGINE_VERSION field on every output; declarative rule results with traceable scoring.
+
+## Test Suite — 717 total
+
+```
+S1–S10  pilot          222
+S11–S19 features       225
+S20–S27 production     210
+S28–S32 pressure       36   (test_phase4.py)
+                       ────
+                        717
+Note: functional_roles(9) + avastha(6) + pressure_engine(9) + argala(5) + graha_yuddha+scoring_v2(7) = 36
+```
+
+## Remaining gaps (honest assessment)
+
+| Gap | Priority | Notes |
+|-----|----------|-------|
+| Vimsopaka Bala | High | Divisional chart strength across 16 vargas |
+| Full Kala Sarpa Yoga | High | All planets between Rahu/Ketu axis |
+| Compound temporal activation (multiplicative) | High | pressure_engine is additive; true multiplicative model needs all three layers formally combined |
+| Audit log | Medium | user_id + engine_version per score_run |
+| Sandhi sensitivity | Medium | Planets in last/first 1° of sign penalized |
+| Grantha Bhanga (war cancellation) | Medium | If war loser is in own/exalt sign, cancels war |
