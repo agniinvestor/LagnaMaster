@@ -568,17 +568,38 @@ with tab_dasha:
         st.markdown("### Jaimini Chara Dasha (Sign-based Cycle)")
         try:
             chara_dashas = compute_chara_dasha(chart, birth_date)
-            cur_cmd, cur_cad = current_chara_dasha(chara_dashas, today)
+            # current_chara_dasha may return (MD, AD) tuple OR a single entry object
+            _chara_current = current_chara_dasha(chara_dashas, today)
+            if isinstance(_chara_current, tuple):
+                cur_cmd, cur_cad = _chara_current
+                _chara_current_sign = cur_cmd.sign
+                _chara_ad_info = f"{cur_cad.sign} AD ({cur_cad.start} → {cur_cad.end})"
+            else:
+                # Single entry object — use its own fields
+                cur_cmd = _chara_current
+                _chara_current_sign = (
+                    cur_cmd.sign if hasattr(cur_cmd, "sign")
+                    else getattr(cur_cmd, "name", str(cur_cmd))
+                )
+                _chara_ad_info = (
+                    f"{cur_cmd.start} → {cur_cmd.end}"
+                    if hasattr(cur_cmd, "start") else ""
+                )
             st.markdown(
-                f"**Current**: {cur_cmd.sign} MD / {cur_cad.sign} AD  "
-                f"({cur_cad.start} → {cur_cad.end})"
+                f"**Current MD**: {_chara_current_sign}  |  {_chara_ad_info}"
             )
-            cd_rows = [
-                {"Sign": md.sign, "Start": str(md.start), "End": str(md.end),
-                 "Years": round(md.years, 2),
-                 "Current": "▶" if md.sign == cur_cmd.sign else ""}
-                for md in chara_dashas
-            ]
+            # Build table — handle both CharaMahaDasha and CharaDashaEntry shapes
+            cd_rows = []
+            for md in chara_dashas:
+                sign = md.sign if hasattr(md, "sign") else getattr(md, "name", str(md))
+                start = str(md.start) if hasattr(md, "start") else "—"
+                end = str(md.end) if hasattr(md, "end") else "—"
+                years = round(md.years, 2) if hasattr(md, "years") else "—"
+                cd_rows.append({
+                    "Sign / Period": sign,
+                    "Start": start, "End": end, "Years": years,
+                    "Current": "▶" if sign == _chara_current_sign else "",
+                })
             st.dataframe(cd_rows, hide_index=True, use_container_width=True)
         except Exception as e:
             st.error(f"Chara Dasha failed: {e}")
