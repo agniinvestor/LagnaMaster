@@ -1,4 +1,4 @@
-"""src/auth.py - LagnaMaster Session 22 - Multi-user JWT auth."""
+"""src/auth.py — LagnaMaster Session 22 — multi-user JWT auth."""
 from __future__ import annotations
 import os, sqlite3
 from dataclasses import dataclass
@@ -7,20 +7,18 @@ from pathlib import Path
 from typing import Optional
 
 try:
-    import bcrypt; _BCRYPT = True
+    import bcrypt; _BC = True
 except ImportError:
-    _BCRYPT = False
-
+    _BC = False
 try:
-    import jwt as pyjwt; _JWT = True
+    import jwt as _jwt; _JW = True
 except ImportError:
-    _JWT = False
+    _JW = False
 
-_SECRET    = os.environ.get("JWT_SECRET", "dev-secret-change-in-production")
-_ALGORITHM = os.environ.get("JWT_ALGORITHM", "HS256")
-_ACCESS_TTL  = int(os.environ.get("ACCESS_TTL_MIN",  "15"))
-_REFRESH_TTL = int(os.environ.get("REFRESH_TTL_DAY",  "7"))
-
+_SEC = os.environ.get("JWT_SECRET", "dev-secret-change-in-production")
+_ALG = os.environ.get("JWT_ALGORITHM", "HS256")
+_ATT = int(os.environ.get("ACCESS_TTL_MIN", "15"))
+_RTT = int(os.environ.get("REFRESH_TTL_DAY", "7"))
 _SENTINEL = object()
 USER_DB_PATH = str(Path(__file__).parent.parent / "data" / "users.db")
 
@@ -30,13 +28,12 @@ class UserRecord:
 
 @dataclass
 class TokenPair:
-    access_token: str; refresh_token: str
-    token_type: str = "bearer"
-    access_expires_in: int = _ACCESS_TTL * 60
-    refresh_expires_in: int = _REFRESH_TTL * 86400
+    access_token: str; refresh_token: str; token_type: str = "bearer"
+    access_expires_in: int = _ATT * 60
+    refresh_expires_in: int = _RTT * 86400
 
 _DDL = """
-CREATE TABLE IF NOT EXISTS users (
+CREATE TABLE IF NOT EXISTS users(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     username TEXT NOT NULL UNIQUE COLLATE NOCASE,
     email TEXT NOT NULL UNIQUE COLLATE NOCASE,
@@ -44,101 +41,84 @@ CREATE TABLE IF NOT EXISTS users (
     created_at TEXT NOT NULL,
     is_active INTEGER NOT NULL DEFAULT 1
 );
-CREATE INDEX IF NOT EXISTS idx_users_username ON users(username COLLATE NOCASE);
-CREATE INDEX IF NOT EXISTS idx_users_email ON users(email COLLATE NOCASE);
+CREATE INDEX IF NOT EXISTS idx_un ON users(username COLLATE NOCASE);
+CREATE INDEX IF NOT EXISTS idx_em ON users(email COLLATE NOCASE);
 """
 
-def _db_path(path) -> str:
-    return USER_DB_PATH if path is _SENTINEL else str(path)
+def _p(path): return USER_DB_PATH if path is _SENTINEL else str(path)
+def _cx(path):
+    p = _p(path); Path(p).parent.mkdir(parents=True, exist_ok=True)
+    c = sqlite3.connect(p); c.row_factory = sqlite3.Row
+    c.execute("PRAGMA journal_mode=WAL"); return c
 
-def _connect(path):
-    p = _db_path(path)
-    Path(p).parent.mkdir(parents=True, exist_ok=True)
-    conn = sqlite3.connect(p)
-    conn.row_factory = sqlite3.Row
-    conn.execute("PRAGMA journal_mode=WAL")
-    return conn
+def init_user_db(path=_SENTINEL):
+    with _cx(path) as c: c.executescript(_DDL)
 
-def init_user_db(path=_SENTINEL) -> None:
-    with _connect(path) as conn:
-        conn.executescript(_DDL)
-
-def _hash_password(plain: str) -> str:
-    if not _BCRYPT:
+def _hp(pw):
+    if not _BC:
         import hashlib, hmac
-        return "sha256:" + hmac.new(_SECRET.encode(), plain.encode(), hashlib.sha256).hexdigest()
-    return bcrypt.hashpw(plain.encode(), bcrypt.gensalt(rounds=12)).decode()
+        return "sha256:"+hmac.new(_SEC.encode(),pw.encode(),hashlib.sha256).hexdigest()
+    return bcrypt.hashpw(pw.encode(), bcrypt.gensalt(rounds=12)).decode()
 
-def _verify_password(plain: str, hashed: str) -> bool:
-    if hashed.startswith("sha256:"):
+def _vp(pw, h):
+    if h.startswith("sha256:"):
         import hashlib, hmac
-        exp = hmac.new(_SECRET.encode(), plain.encode(), hashlib.sha256).hexdigest()
-        return hmac.compare_digest(exp, hashed[7:])
-    return _BCRYPT and bcrypt.checkpw(plain.encode(), hashed.encode())
+        e = hmac.new(_SEC.encode(),pw.encode(),hashlib.sha256).hexdigest()
+        return hmac.compare_digest(e, h[7:])
+    return _BC and bcrypt.checkpw(pw.encode(), h.encode())
 
-def _make_token(user_id: int, kind: str, ttl: int) -> str:
-    if not _JWT: raise RuntimeError("pip install pyjwt")
-    now = datetime.now(timezone.utc)
-    return pyjwt.encode({"sub": str(user_id), "kind": kind, "iat": now,
-                          "exp": now + timedelta(seconds=ttl)}, _SECRET, algorithm=_ALGORITHM)
+def _mt(uid, kind, ttl):
+    if not _JW: raise RuntimeError("pip install pyjwt")
+    n = datetime.now(timezone.utc)
+    return _jwt.encode({"sub":str(uid),"kind":kind,"iat":n,"exp":n+timedelta(seconds=ttl)},
+                       _SEC, algorithm=_ALG)
 
-def _decode_token(token: str, kind: str) -> int:
-    if not _JWT: raise RuntimeError("pip install pyjwt")
-    try:
-        p = pyjwt.decode(token, _SECRET, algorithms=[_ALGORITHM])
-    except pyjwt.ExpiredSignatureError:
-        raise ValueError("Token has expired")
-    except pyjwt.InvalidTokenError as e:
-        raise ValueError(f"Invalid token: {e}")
-    if p.get("kind") != kind:
-        raise ValueError(f"Wrong token kind: expected {kind}")
+def _dt(tok, kind):
+    if not _JW: raise RuntimeError("pip install pyjwt")
+    try: p = _jwt.decode(tok, _SEC, algorithms=[_ALG])
+    except _jwt.ExpiredSignatureError: raise ValueError("Token has expired")
+    except _jwt.InvalidTokenError as e: raise ValueError(f"Invalid token: {e}")
+    if p.get("kind") != kind: raise ValueError(f"Wrong token kind: expected {kind}")
     return int(p["sub"])
 
-def register_user(username, email, password, path=_SENTINEL) -> UserRecord:
+def register_user(username, email, password, path=_SENTINEL):
     if len(password) < 8: raise ValueError("Password must be at least 8 characters")
-    hashed = _hash_password(password)
     now = datetime.now(timezone.utc).isoformat()
     try:
-        with _connect(path) as conn:
-            cur = conn.execute(
-                "INSERT INTO users (username,email,password_hash,created_at) VALUES(?,?,?,?) RETURNING id",
-                (username.strip(), email.strip().lower(), hashed, now))
-            row = cur.fetchone()
+        with _cx(path) as c:
+            row = c.execute(
+                "INSERT INTO users(username,email,password_hash,created_at) VALUES(?,?,?,?) RETURNING id",
+                (username.strip(), email.strip().lower(), _hp(password), now)
+            ).fetchone()
             return UserRecord(id=row["id"], username=username.strip(),
                               email=email.strip().lower(), created_at=now, is_active=True)
     except sqlite3.IntegrityError as e:
-        msg = str(e).lower()
-        if "username" in msg: raise ValueError(f"Username '{username}' is already taken")
-        if "email" in msg: raise ValueError(f"Email '{email}' is already registered")
+        m = str(e).lower()
+        if "username" in m: raise ValueError(f"Username '{username}' is already taken")
+        if "email" in m: raise ValueError(f"Email '{email}' is already registered")
         raise ValueError(str(e))
 
 def authenticate_user(username, password, path=_SENTINEL) -> Optional[UserRecord]:
-    with _connect(path) as conn:
-        row = conn.execute("SELECT * FROM users WHERE username=? COLLATE NOCASE AND is_active=1",
-                           (username.strip(),)).fetchone()
-    if row is None or not _verify_password(password, row["password_hash"]):
-        return None
+    with _cx(path) as c:
+        row = c.execute("SELECT * FROM users WHERE username=? COLLATE NOCASE AND is_active=1",
+                        (username.strip(),)).fetchone()
+    if row is None or not _vp(password, row["password_hash"]): return None
     return UserRecord(id=row["id"], username=row["username"], email=row["email"],
                       created_at=row["created_at"], is_active=bool(row["is_active"]))
 
 def create_token_pair(user_id: int) -> TokenPair:
-    return TokenPair(
-        access_token=_make_token(user_id, "access", _ACCESS_TTL * 60),
-        refresh_token=_make_token(user_id, "refresh", _REFRESH_TTL * 86400))
+    return TokenPair(access_token=_mt(user_id,"access",_ATT*60),
+                     refresh_token=_mt(user_id,"refresh",_RTT*86400))
 
-def verify_access_token(token: str) -> int:
-    return _decode_token(token, "access")
-
-def verify_refresh_token(token: str) -> int:
-    return _decode_token(token, "refresh")
+def verify_access_token(token: str) -> int: return _dt(token, "access")
+def verify_refresh_token(token: str) -> int: return _dt(token, "refresh")
 
 def get_user_by_id(user_id: int, path=_SENTINEL) -> Optional[UserRecord]:
-    with _connect(path) as conn:
-        row = conn.execute("SELECT * FROM users WHERE id=?", (user_id,)).fetchone()
+    with _cx(path) as c:
+        row = c.execute("SELECT * FROM users WHERE id=?", (user_id,)).fetchone()
     if row is None: return None
     return UserRecord(id=row["id"], username=row["username"], email=row["email"],
                       created_at=row["created_at"], is_active=bool(row["is_active"]))
 
-def deactivate_user(user_id: int, path=_SENTINEL) -> None:
-    with _connect(path) as conn:
-        conn.execute("UPDATE users SET is_active=0 WHERE id=?", (user_id,))
+def deactivate_user(user_id: int, path=_SENTINEL):
+    with _cx(path) as c: c.execute("UPDATE users SET is_active=0 WHERE id=?", (user_id,))

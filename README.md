@@ -2,7 +2,7 @@
 
 Vedic Jyotish birth chart scoring platform. Transforms a 178-sheet Excel workbook into a deterministic, auditable web app.
 
-**532 tests passing | Sessions 1–22 complete**
+**![CI](https://github.com/agniinvestor/LagnaMaster/actions/workflows/ci.yml/badge.svg) 557 tests passing | Sessions 1–23 complete**
 
 ## Quick Start (Docker)
 
@@ -29,7 +29,7 @@ PYTHONPATH=. streamlit run src/ui/app.py
 
 ## Streamlit Cloud
 
-Entry point: `streamlit_app.py` (repo root). Set this in your Streamlit Cloud app settings.
+Entry point: `streamlit_app.py` (repo root). Set this in Streamlit Cloud app settings.
 
 ## Sessions
 
@@ -48,20 +48,22 @@ Entry point: `streamlit_app.py` (repo root). Set this in your Streamlit Cloud ap
 | 20 | PostgreSQL + Redis 3-tier caching | 35 |
 | 21 | Celery async workers + full UI wiring | 25 |
 | 22 | Multi-user JWT auth | 25 |
-| 23 | GitHub Actions CI/CD | 🔲 Next |
+| 23 | GitHub Actions CI/CD | 20 |
+| 24 | Kubernetes + Helm | 🔲 Next |
 
-**Total: 532/532 tests passing**
+**Total: 557/557 tests passing**
+
+## API
+
+```
+POST /auth/register      create account
+POST /auth/login         access + refresh tokens
+POST /auth/refresh       renew access token
+GET  /auth/me            current user profile
+POST /charts             compute + store chart
+GET  /charts/{id}/scores 22-rule breakdown
+GET  /charts/{id}/report download PDF
+GET  /health             DB + cache status
+```
 
 See [PLAN.md](PLAN.md) · [DOCS.md](DOCS.md) · [docs/SESSION_LOG.md](docs/SESSION_LOG.md)
-
-## API Auth
-
-```
-POST /auth/register    create account
-POST /auth/login       get access + refresh tokens
-POST /auth/refresh     renew access token
-GET  /auth/me          current user profile
-POST /auth/logout      client-side (204)
-```
-
-All chart endpoints accept `Authorization: Bearer <access_token>`.

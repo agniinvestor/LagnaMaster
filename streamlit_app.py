@@ -1,6 +1,6 @@
-"""Root entry point for Streamlit Cloud."""
+"""Streamlit Cloud entry point — adds repo root to sys.path then runs UI."""
 import sys, os
-repo_root = os.path.dirname(os.path.abspath(__file__))
-if repo_root not in sys.path:
-    sys.path.insert(0, repo_root)
-exec(open(os.path.join(repo_root, "src", "ui", "app.py")).read())
+r = os.path.dirname(os.path.abspath(__file__))
+if r not in sys.path:
+    sys.path.insert(0, r)
+exec(open(os.path.join(r, "src", "ui", "app.py")).read())
