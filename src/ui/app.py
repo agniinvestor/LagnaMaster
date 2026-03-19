@@ -30,6 +30,7 @@ from src.ui.chart_visual import south_indian_svg
 from src.calculations.nakshatra import nakshatra_position
 from src.calculations.dignity import compute_all_dignities, DignityLevel
 from src.calculations.yogas import detect_yogas, Yoga
+from src.calculations.ashtakavarga import compute_ashtakavarga, _PLANETS as _AV_PLANETS
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -224,6 +225,8 @@ if st.session_state.chart is None:
     - South Indian visual chart with planet placements
     - Sidereal planet positions (Lahiri / Raman / Krishnamurti ayanamsha)
     - 12-house domain scoring using 22 BPHS rules
+    - Classical yoga detection (13 yoga types)
+    - Ashtakavarga bindu tables (8-source strength system)
     - Vimshottari Dasha timeline with antardasha breakdown
     - Per-rule scoring detail for each house
     """)
@@ -243,8 +246,8 @@ st.caption(
     f"JD (UT): {chart.jd_ut:.4f}"
 )
 
-tab_chart, tab_scores, tab_yogas, tab_dashas, tab_rules = st.tabs([
-    "Chart", "Domain Scores", "Yogas", "Vimshottari Dasha", "Rule Detail",
+tab_chart, tab_scores, tab_yogas, tab_av, tab_dashas, tab_rules = st.tabs([
+    "Chart", "Domain Scores", "Yogas", "Ashtakavarga", "Vimshottari Dasha", "Rule Detail",
 ])
 
 
@@ -431,7 +434,95 @@ with tab_yogas:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Tab 4: Vimshottari Dasha
+# Tab 4: Ashtakavarga
+# ══════════════════════════════════════════════════════════════════════════════
+with tab_av:
+    av = compute_ashtakavarga(chart)
+    st.subheader("Ashtakavarga — 8-Source Bindu System")
+    st.caption(
+        "Each planet's table shows how many of the 8 contributors "
+        "(Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Lagna) "
+        "donate a bindu to each sign. "
+        "**Strong ≥ 5, Average = 4, Weak ≤ 3** &nbsp;|&nbsp; "
+        "Sarva (total): **Strong ≥ 30, Average ≥ 25, Weak < 25**"
+    )
+
+    # ── Sarvashtakavarga summary bar ──────────────────────────────────────────
+    st.markdown("#### Sarvashtakavarga (All-Planet Total)")
+    sarva_cols = st.columns(12)
+    for si, sign in enumerate(SIGNS):
+        b = av.sarva.bindus[si]
+        strength = av.sarva.strength(si)
+        color = {"Strong": "#1a7a1a", "Average": "#f0a500", "Weak": "#b71c1c"}[strength]
+        bg    = {"Strong": "#e8f5e9", "Average": "#fff8e1", "Weak": "#fdecea"}[strength]
+        is_lagna = (si == chart.lagna_sign_index)
+        border = "3px solid #4B0082" if is_lagna else f"1px solid {color}"
+        with sarva_cols[si]:
+            st.markdown(
+                f'<div style="background:{bg};border:{border};border-radius:6px;'
+                f'padding:6px 4px;text-align:center;margin-bottom:4px;">'
+                f'<div style="font-size:10px;color:#555;">{_SIGN_SYMBOL.get(sign,"")}</div>'
+                f'<div style="font-size:14px;font-weight:700;color:{color};">{b}</div>'
+                f'<div style="font-size:9px;color:{color};">{strength[:3]}</div>'
+                f'</div>',
+                unsafe_allow_html=True,
+            )
+
+    st.divider()
+
+    # ── Per-planet tables ─────────────────────────────────────────────────────
+    st.markdown("#### Planet Bindu Tables")
+    st.caption("Lagna sign highlighted with indigo border. "
+               "Planet's own sign (where it sits in this chart) marked with ◉.")
+
+    for planet in _AV_PLANETS:
+        table = av.planet_av[planet]
+        planet_si = chart.planets[planet].sign_index
+        sym = _PLANET_SYMBOL.get(planet, "")
+
+        p_cols = st.columns([1] + [1] * 12)
+        with p_cols[0]:
+            total_str = str(table.total)
+            st.markdown(
+                f'<div style="padding:6px 0;font-weight:700;color:{_DASHA_COLOR.get(planet,"#333")};">'
+                f'{sym} {planet}<br>'
+                f'<span style="font-size:10px;color:#888;">Σ={total_str}</span></div>',
+                unsafe_allow_html=True,
+            )
+        for si, sign in enumerate(SIGNS):
+            b = table.bindus[si]
+            strength = table.strength(si)
+            color = {"Strong": "#1a7a1a", "Average": "#f0a500", "Weak": "#b71c1c"}[strength]
+            bg    = {"Strong": "#e8f5e9", "Average": "#fff8e1", "Weak": "#fdecea"}[strength]
+            is_lagna_sign = (si == chart.lagna_sign_index)
+            is_own_sign   = (si == planet_si)
+            border = "2px solid #4B0082" if is_lagna_sign else f"1px solid {color}"
+            marker = "◉" if is_own_sign else ""
+            with p_cols[si + 1]:
+                st.markdown(
+                    f'<div style="background:{bg};border:{border};border-radius:4px;'
+                    f'padding:4px 2px;text-align:center;">'
+                    f'<div style="font-size:13px;font-weight:700;color:{color};">{b}{marker}</div>'
+                    f'</div>',
+                    unsafe_allow_html=True,
+                )
+
+    st.divider()
+
+    # ── Full data table ───────────────────────────────────────────────────────
+    st.markdown("#### Full Bindu Table")
+    full_rows = []
+    for si, sign in enumerate(SIGNS):
+        row: dict = {"Sign": _sign_fmt(sign)}
+        for planet in _AV_PLANETS:
+            row[planet[:3]] = av.planet_av[planet].bindus[si]
+        row["Sarva"] = av.sarva.bindus[si]
+        full_rows.append(row)
+    st.dataframe(full_rows, use_container_width=True, hide_index=True)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Tab 5: Vimshottari Dasha
 # ══════════════════════════════════════════════════════════════════════════════
 with tab_dashas:
     from src.calculations.vimshottari_dasa import (
@@ -520,7 +611,7 @@ with tab_dashas:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Tab 4: Rule Detail
+# Tab 6: Rule Detail
 # ══════════════════════════════════════════════════════════════════════════════
 with tab_rules:
     st.subheader("Per-House Rule Breakdown")
