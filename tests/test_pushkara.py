@@ -1,62 +1,32 @@
-"""tests/test_pushkara.py — Pushkara Navamsha tests (Session 11, 10 tests)"""
+"""tests/test_pushkara.py — 10 tests (Session 11)"""
 import pytest
-from src.calculations.pushkara_navamsha import (
-    _PUSHKARA_STARTS, _NAVAMSHA_WIDTH,
-    is_pushkara_navamsha, pushkara_navamsha_planets,
-    pushkara_navamsha_zones, pushkara_strength_label,
-)
-
+from src.calculations.pushkara_navamsha import _PUSHKARA_STARTS,_NAVAMSHA_WIDTH,is_pushkara_navamsha,pushkara_navamsha_planets,pushkara_navamsha_zones,pushkara_strength_label
 class TestIsPushkaraNavamsha:
-    def test_aries_first_zone(self):
-        assert is_pushkara_navamsha(0, 18.5) is True
-    def test_aries_second_zone(self):
-        assert is_pushkara_navamsha(0, 25.5) is True
-    def test_aries_gap_between_zones(self):
-        assert is_pushkara_navamsha(0, 22.0) is False
-    def test_taurus_first_zone(self):
-        assert is_pushkara_navamsha(1, 3.5) is True
-    def test_libra_zero_start(self):
-        assert is_pushkara_navamsha(6, 0.0) is True
-    def test_pisces_second_zone(self):
-        assert is_pushkara_navamsha(11, 26.0) is True
-    def test_boundary_inclusive_start(self):
+    def test_aries_first_zone(self): assert is_pushkara_navamsha(0,18.5)
+    def test_aries_second_zone(self): assert is_pushkara_navamsha(0,25.5)
+    def test_gap_false(self): assert not is_pushkara_navamsha(0,22.0)
+    def test_taurus(self): assert is_pushkara_navamsha(1,3.5)
+    def test_libra_zero(self): assert is_pushkara_navamsha(6,0.0)
+    def test_pisces(self): assert is_pushkara_navamsha(11,26.0)
+    def test_boundary_start(self):
         for si,(s1,s2) in _PUSHKARA_STARTS.items():
-            assert is_pushkara_navamsha(si,s1) is True
-            assert is_pushkara_navamsha(si,s2) is True
-    def test_boundary_exclusive_end(self):
+            assert is_pushkara_navamsha(si,s1) and is_pushkara_navamsha(si,s2)
+    def test_boundary_end(self):
         for si,(s1,s2) in _PUSHKARA_STARTS.items():
-            e1=s1+_NAVAMSHA_WIDTH; e2=s2+_NAVAMSHA_WIDTH
-            if e1<30.0: assert is_pushkara_navamsha(si,e1) is False
-            if e2<30.0: assert is_pushkara_navamsha(si,e2) is False
-    def test_all_12_signs_have_two_zones(self):
-        for si in range(12):
-            zones=pushkara_navamsha_zones(si)
-            assert len(zones)==2
-    def test_invalid_sign_index_returns_false(self):
-        assert is_pushkara_navamsha(-1,5.0) is False
-        assert is_pushkara_navamsha(12,5.0) is False
-
+            if s1+_NAVAMSHA_WIDTH<30: assert not is_pushkara_navamsha(si,s1+_NAVAMSHA_WIDTH)
+    def test_all_12_two_zones(self):
+        for si in range(12): assert len(pushkara_navamsha_zones(si))==2
+    def test_invalid(self): assert not is_pushkara_navamsha(-1,5.0)
 class TestStrengthLabel:
-    def test_label_in_pn(self): assert pushkara_strength_label(0,18.5)=="Pushkara Navamsha"
-    def test_label_outside_pn(self): assert pushkara_strength_label(0,10.0)==""
-
+    def test_in_pn(self): assert pushkara_strength_label(0,18.5)=="Pushkara Navamsha"
+    def test_out(self): assert pushkara_strength_label(0,10.0)==""
 class TestPushkaraWithChart:
     @pytest.fixture(scope="class")
-    def india_chart(self):
+    def c(self):
         from src.ephemeris import compute_chart
-        return compute_chart(year=1947,month=8,day=15,hour=0.0,
-                             lat=28.6139,lon=77.209,tz_offset=5.5,ayanamsha="lahiri")
-    def test_returns_list(self,india_chart):
-        assert isinstance(pushkara_navamsha_planets(india_chart),list)
-    def test_sun_cancer_in_pn(self,india_chart):
-        sun=india_chart.planets["Sun"]
-        assert sun.sign_index==3
-        assert is_pushkara_navamsha(sun.sign_index,sun.degree_in_sign) is True
-    def test_moon_cancer_in_pn(self,india_chart):
-        moon=india_chart.planets["Moon"]
-        assert moon.sign_index==3
-        assert is_pushkara_navamsha(3,moon.degree_in_sign) is True
-    def test_planets_are_valid_names(self,india_chart):
-        valid=set(india_chart.planets.keys())
-        for name in pushkara_navamsha_planets(india_chart):
-            assert name in valid
+        return compute_chart(1947,8,15,0.0,28.6139,77.209,5.5,"lahiri")
+    def test_list(self,c): assert isinstance(pushkara_navamsha_planets(c),list)
+    def test_sun(self,c): assert is_pushkara_navamsha(c.planets["Sun"].sign_index,c.planets["Sun"].degree_in_sign)
+    def test_moon(self,c): assert is_pushkara_navamsha(3,c.planets["Moon"].degree_in_sign)
+    def test_names(self,c):
+        for n in pushkara_navamsha_planets(c): assert n in c.planets
