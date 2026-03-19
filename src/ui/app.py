@@ -27,6 +27,9 @@ from src.ephemeris import compute_chart, BirthChart, SIGNS
 from src.scoring import score_chart, ChartScores
 from src.db import init_db, save_chart, list_charts, get_chart
 from src.ui.chart_visual import south_indian_svg
+from src.calculations.nakshatra import nakshatra_position
+from src.calculations.dignity import compute_all_dignities, DignityLevel
+from src.calculations.yogas import detect_yogas, Yoga
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -240,8 +243,8 @@ st.caption(
     f"JD (UT): {chart.jd_ut:.4f}"
 )
 
-tab_chart, tab_scores, tab_dashas, tab_rules = st.tabs([
-    "Chart", "Domain Scores", "Vimshottari Dasha", "Rule Detail",
+tab_chart, tab_scores, tab_yogas, tab_dashas, tab_rules = st.tabs([
+    "Chart", "Domain Scores", "Yogas", "Vimshottari Dasha", "Rule Detail",
 ])
 
 
@@ -267,17 +270,34 @@ with tab_chart:
     with col_table:
         st.subheader(f"Lagna: {chart.lagna_degree_in_sign:.4f}° {_sign_fmt(chart.lagna_sign)}")
 
+        dignities = compute_all_dignities(chart)
         rows_data = []
         for pname, p in chart.planets.items():
             sym   = _PLANET_SYMBOL.get(pname, "")
             retro = "℞" if p.is_retrograde else ""
+            nak   = nakshatra_position(p.longitude)
+            dig   = dignities.get(pname)
+            dig_label = ""
+            if dig:
+                lvl = dig.dignity
+                if lvl == DignityLevel.DEEP_EXALT:    dig_label = "⬆⬆ Deep Exalt"
+                elif lvl == DignityLevel.EXALT:        dig_label = "⬆ Exalted"
+                elif lvl == DignityLevel.MOOLTRIKONA:  dig_label = "◎ Moolatrikona"
+                elif lvl == DignityLevel.OWN_SIGN:     dig_label = "✦ Own Sign"
+                elif lvl == DignityLevel.FRIEND_SIGN:  dig_label = "＋ Friendly"
+                elif lvl == DignityLevel.ENEMY_SIGN:   dig_label = "－ Enemy"
+                elif lvl == DignityLevel.DEBIL:        dig_label = "⬇ Debilitated"
+                elif lvl == DignityLevel.DEEP_DEBIL:   dig_label = "⬇⬇ Deep Debil"
+                if dig.is_cazimi:    dig_label += " ☀cazimi"
+                elif dig.is_combust: dig_label += " 🔥combust"
             rows_data.append({
                 "": sym,
                 "Planet":      pname,
                 "Sign":        _sign_fmt(p.sign),
-                "Degree":      f"{p.degree_in_sign:.4f}°",
-                "Longitude":   f"{p.longitude:.4f}°",
-                "Speed °/day": f"{p.speed:+.4f}",
+                "Degree":      f"{p.degree_in_sign:.2f}°",
+                "Nakshatra":   f"{nak.nakshatra} P{nak.pada}",
+                "Dignity":     dig_label,
+                "Speed":       f"{p.speed:+.3f}",
                 "Rx":          retro,
             })
         st.dataframe(rows_data, use_container_width=True, hide_index=True,
@@ -360,7 +380,58 @@ with tab_scores:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Tab 3: Vimshottari Dasha
+# Tab 3: Yogas
+# ══════════════════════════════════════════════════════════════════════════════
+with tab_yogas:
+    yogas = detect_yogas(chart)
+
+    benefic = [y for y in yogas if y.nature == "benefic"]
+    mixed   = [y for y in yogas if y.nature == "mixed"]
+    malefic = [y for y in yogas if y.nature == "malefic"]
+
+    st.subheader(f"Detected Yogas — {len(yogas)} total")
+    st.caption(
+        f"✅ {len(benefic)} benefic  &nbsp;·&nbsp;  "
+        f"⚖ {len(mixed)} mixed  &nbsp;·&nbsp;  "
+        f"⚠ {len(malefic)} challenging"
+    )
+
+    if not yogas:
+        st.info("No major yogas detected in this chart.")
+    else:
+        _YOGA_NATURE_STYLE = {
+            "benefic": ("#1a7a1a", "#e8f5e9"),
+            "mixed":   ("#7c5700", "#fff8e1"),
+            "malefic": ("#b71c1c", "#fdecea"),
+        }
+        _YOGA_NATURE_ICON = {"benefic": "✅", "mixed": "⚖", "malefic": "⚠"}
+
+        # Group by category
+        from itertools import groupby
+        for category, group in groupby(yogas, key=lambda y: y.category):
+            group_list = list(group)
+            st.markdown(f"**{category} Yogas** ({len(group_list)})")
+            for y in group_list:
+                fg, bg = _YOGA_NATURE_STYLE[y.nature]
+                icon   = _YOGA_NATURE_ICON[y.nature]
+                planets_str = " · ".join(
+                    f"{_PLANET_SYMBOL.get(p,'')}{p}" for p in y.planets
+                )
+                st.markdown(
+                    f'<div style="background:{bg};border-left:4px solid {fg};'
+                    f'padding:10px 14px;border-radius:6px;margin-bottom:8px;">'
+                    f'<span style="font-weight:700;color:{fg};">{icon} {y.name}</span>'
+                    f'<span style="font-size:11px;color:#888;margin-left:10px;">'
+                    f'{planets_str}</span><br>'
+                    f'<span style="font-size:12px;color:#444;">{y.description}</span>'
+                    f'</div>',
+                    unsafe_allow_html=True,
+                )
+            st.write("")  # spacing between categories
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Tab 4: Vimshottari Dasha
 # ══════════════════════════════════════════════════════════════════════════════
 with tab_dashas:
     from src.calculations.vimshottari_dasa import (
