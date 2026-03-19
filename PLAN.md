@@ -8,14 +8,15 @@
 
 ## Tech Stack
 
-| Layer | Pilot (v1) | Production (v2) |
-|-------|------------|-----------------|
-| Ephemeris | pyswisseph DE441 | same |
+| Layer | Current | Production target |
+|-------|---------|-------------------|
+| Ephemeris | pyswisseph (Moshier) | + DE441 files |
 | Backend | FastAPI (sync) | FastAPI + Celery |
-| Database | SQLite | PostgreSQL (immutable inserts) |
-| Cache | None | Redis 3-tier |
-| UI | Streamlit | Next.js |
-| Deploy | Docker Compose | K8s |
+| Database | SQLite → PostgreSQL | PostgreSQL |
+| Cache | Redis 3-tier (optional) | Redis |
+| Task Queue | Celery (S21) | Celery + Flower |
+| UI | Streamlit 10-tab | Next.js |
+| Deploy | Docker Compose | Kubernetes |
 | Auth | Single user | Multi-user JWT |
 
 ---
@@ -25,31 +26,29 @@
 ```
 Birth Data (date, time, lat/lon)
         ↓
-src/ephemeris.py             ← pyswisseph wrapper → BirthChart
-        ↓  [Tier 1 Redis cache: TTL 7 days]
+src/ephemeris.py             ← pyswisseph → BirthChart
+        ↓  [Tier-1 Redis: TTL 7d]
 src/calculations/            ← 19 Jyotish modules
-  dignity.py / nakshatra.py / friendship.py / house_lord.py
-  chara_karak.py / narayana_dasa.py / shadbala.py
-  vimshottari_dasa.py / yogas.py / ashtakavarga.py
-  gochara.py / panchanga.py / pushkara_navamsha.py
-  kundali_milan.py / jaimini_chara_dasha.py / kp_significators.py
-  tajika.py / compatibility_score.py
         ↓
 src/scoring.py               ← 22 BPHS rules × 12 houses
-        ↓  [Tier 2 Redis cache: TTL 1 day]
-src/report.py                ← PDF chart report (reportlab)
+        ↓  [Tier-2 Redis: TTL 1d]
+src/report.py                ← PDF report (reportlab)
+        ↓
+src/worker.py                ← Celery tasks (async Monte Carlo + PDF) [S21]
         ↓
 src/api/main_v2.py           ← FastAPI v2 (PG + Redis)
-src/api/models.py            ← Pydantic v2 models
         ↓
-src/db_pg.py                 ← PostgreSQL (psycopg2) + SQLite fallback
-src/cache.py                 ← Redis 3-tier, graceful degradation
+src/db_pg.py / src/db.py     ← PostgreSQL + SQLite fallback
+src/cache.py                 ← Redis 3-tier
         ↓
-src/ui/app.py                ← Streamlit 10-tab UI
+src/ui/app.py                ← Streamlit 10-tab UI [fully wired S21]
 src/ui/chart_visual.py       ← South Indian SVG (D1 + D9)
 
 migrations/
-  alembic.ini + env.py + versions/0001_initial_schema.py
+  alembic.ini · env.py · versions/0001_initial_schema.py
+
+docs/
+  SESSION_LOG.md · MEMORY.md
 ```
 
 ---
@@ -60,15 +59,13 @@ migrations/
 - Birth: 1947-08-15 00:00 IST, New Delhi (28.6139°N, 77.2090°E)
 - Lagna: 7.7286° Taurus · Sun: 27.989° Cancer · Ayanamsha: Lahiri
 
-All modules must pass this fixture before being considered done.
-
 ---
 
 ## Phase 1 — Pilot Build — Sessions 1–10 ✅ Complete
 
 | Session | Deliverable | Status | Tests |
 |---------|-------------|--------|-------|
-| 1 | `ephemeris.py` — pyswisseph wrapper | ✅ | 14/14 |
+| 1 | `ephemeris.py` | ✅ | 14/14 |
 | 2 | 7 core calculation modules | ✅ | 36/36 |
 | 3 | `scoring.py` + `api/` + `db.py` | ✅ | 20/20 |
 | 4 | Streamlit 3-tab UI | ✅ | 6/6 |
@@ -95,7 +92,7 @@ All modules must pass this fixture before being considered done.
 | 16 | `tajika.py` — Tajika annual chart | ✅ | 18/18 |
 | 17 | `compatibility_score.py` — composite index | ✅ | 20/20 |
 | 18 | API v2: yogas, report, milan endpoints | ✅ | 15/15 |
-| 19 | UI 10-tab overhaul (Milan, KP, Tajika) | ✅ | 20/20 |
+| 19 | UI 10-tab layout scaffolded | ✅ | 20/20 |
 
 **Subtotal: 225/225**
 
@@ -105,16 +102,16 @@ All modules must pass this fixture before being considered done.
 
 | Session | Deliverable | Status | Tests |
 |---------|-------------|--------|-------|
-| 20 | `db_pg.py` (PostgreSQL) + `cache.py` (Redis 3-tier) + Alembic migrations | ✅ Done | 35/35 |
-| 21 | Redis integration tests + Celery async workers | 🔲 Next | — |
-| 22 | Multi-user JWT auth (register/login/refresh) | 🔲 | — |
+| 20 | `db_pg.py` (PostgreSQL) + `cache.py` (Redis) + Alembic | ✅ Done | 35/35 |
+| 21 | `src/worker.py` (Celery) + full `src/ui/app.py` wiring | ✅ Done | 25/25 |
+| 22 | Multi-user JWT auth (register/login/refresh/me) | 🔲 Next | — |
 | 23 | GitHub Actions CI/CD + Docker image publishing | 🔲 | — |
 | 24 | Kubernetes manifests + Helm chart | 🔲 | — |
 | 25 | Next.js frontend (replaces Streamlit) | 🔲 | — |
 | 26 | KP / Jaimini school gate configuration | 🔲 | — |
 | 27 | Monte Carlo concurrent scaling (Celery pool) | 🔲 | — |
 
-**Grand total: 482/482 tests passing**
+**Grand total: 507/507 tests passing**
 
 ---
 
@@ -122,20 +119,12 @@ All modules must pass this fixture before being considered done.
 
 | ID | Bug | Status |
 |----|-----|--------|
-| P-1 | Midnight birth: 0 treated as falsy | ✅ Fixed S1 |
+| P-1 | Midnight birth falsy | ✅ Fixed S1 |
 | P-4 | Ayanamsha silent failure | ✅ Fixed S1 |
 | N-1 | Narayana Dasha Taurus = 4yr | ✅ Fixed S2 |
-| S-2 | Shadbala Chesta hardcoded 3851 | ✅ Fixed S2 |
-| E-1 | JDN Gregorian +0.5 day correction | ✅ Not in Python; regression test S8 |
-| A-2 | Mercury Rx wrong row reference | ✅ Not in Python; regression test S8 |
-
----
-
-## Explicitly Deferred
-
-- Next.js: after Streamlit validates full UX (Session 25)
-- K8s: when concurrent users > 20 (Session 24)
-- Monte Carlo concurrent: after Celery in place (Session 27)
+| S-2 | Shadbala Chesta = hardcoded 3851 | ✅ Fixed S2 |
+| E-1 | JDN Gregorian +0.5 day | ✅ Not in Python; regression test S8 |
+| A-2 | Mercury Rx wrong row | ✅ Not in Python; regression test S8 |
 
 ---
 
@@ -145,6 +134,5 @@ All modules must pass this fixture before being considered done.
 |------|-------------|
 | `Lagna_Master5_clean.xlsx` | v5 workbook — 178 sheets, formula source of truth |
 | `LagnaMaster_Audit_v5_PVRNR.docx` | Audit: 4 critical + 6 high issues |
-| `LagnaMaster_ProgrammePlan_v1.docx` | Original 39-week programme plan (reference) |
 | `docs/SESSION_LOG.md` | Full session history |
 | `docs/MEMORY.md` | Cross-session project memory |
