@@ -31,6 +31,8 @@ from src.calculations.nakshatra import nakshatra_position
 from src.calculations.dignity import compute_all_dignities, DignityLevel
 from src.calculations.yogas import detect_yogas, Yoga
 from src.calculations.ashtakavarga import compute_ashtakavarga, _PLANETS as _AV_PLANETS
+from src.calculations.shadbala import compute_shadbala
+from src.calculations.gochara import compute_gochara
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -227,7 +229,9 @@ if st.session_state.chart is None:
     - 12-house domain scoring using 22 BPHS rules
     - Classical yoga detection (13 yoga types)
     - Ashtakavarga bindu tables (8-source strength system)
+    - Shadbala planetary strength (6 components in Virupas)
     - Vimshottari Dasha timeline with antardasha breakdown
+    - Gochara (transit) analysis with Sade Sati detection
     - Per-rule scoring detail for each house
     """)
     st.stop()
@@ -246,8 +250,9 @@ st.caption(
     f"JD (UT): {chart.jd_ut:.4f}"
 )
 
-tab_chart, tab_scores, tab_yogas, tab_av, tab_dashas, tab_rules = st.tabs([
-    "Chart", "Domain Scores", "Yogas", "Ashtakavarga", "Vimshottari Dasha", "Rule Detail",
+tab_chart, tab_scores, tab_yogas, tab_av, tab_dashas, tab_gochara, tab_rules = st.tabs([
+    "Chart", "Domain Scores", "Yogas", "Ashtakavarga",
+    "Vimshottari Dasha", "Transits", "Rule Detail",
 ])
 
 
@@ -327,6 +332,30 @@ with tab_chart:
                 "Lord": lord, "Lord in": f"H{lh}", "Occupants": planets_in,
             })
         st.dataframe(house_rows, use_container_width=True, hide_index=True)
+
+        with st.expander("Shadbala — Planetary Strength (Virupas)"):
+            sb = compute_shadbala(chart)
+            sb_rows = []
+            for pname, sp in sb.planets.items():
+                sb_rows.append({
+                    "Planet":    pname,
+                    "Uchcha":    f"{sp.uchcha:.1f}",
+                    "Kendradi":  f"{sp.kendradi:.1f}",
+                    "Ojha-Yugma":f"{sp.ojha_yugma:.1f}",
+                    "Dig Bala":  f"{sp.dig_bala:.1f}",
+                    "Paksha":    f"{sp.paksha:.1f}",
+                    "Chesta":    f"{sp.chesta:.1f}",
+                    "Total":     f"{sp.total:.1f}",
+                    "Min Req":   f"{sp.minimum:.0f}",
+                    "Ishta%":    f"{sp.ishta_pct:.0f}%",
+                    "✓":         "✓" if sp.meets_minimum else "",
+                })
+            st.dataframe(sb_rows, use_container_width=True, hide_index=True,
+                         column_config={
+                             "✓": st.column_config.TextColumn(width="small"),
+                         })
+            st.caption("Minimum required Virupas: Sun 390, Moon 360, Mars 300, "
+                       "Mercury 420, Jupiter 390, Venus 330, Saturn 300")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -611,7 +640,91 @@ with tab_dashas:
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# Tab 6: Rule Detail
+# Tab 6: Gochara (Transits)
+# ══════════════════════════════════════════════════════════════════════════════
+with tab_gochara:
+    st.subheader("Gochara — Planetary Transits")
+
+    transit_date_input = st.date_input(
+        "Transit Date",
+        value=date.today(),
+        min_value=date(1915, 1, 1),
+        max_value=date(2100, 12, 31),
+        key="transit_date_picker",
+    )
+    gochara = compute_gochara(chart, transit_date_input)
+
+    # ── Summary banners ───────────────────────────────────────────────────────
+    m1, m2, m3 = st.columns(3)
+    m1.metric("Transit Date", str(transit_date_input))
+    m2.metric("Natal Lagna", gochara.natal_lagna_sign)
+    m3.metric("Natal Moon", gochara.natal_moon_sign)
+
+    # Sade Sati
+    if gochara.sade_sati:
+        phase_color = {"Rising": "#e05c00", "Peak": "#b71c1c", "Setting": "#e05c00"}
+        pc = phase_color.get(gochara.sade_sati_phase, "#b71c1c")
+        st.markdown(
+            f'<div style="background:#fdecea;border-left:5px solid {pc};'
+            f'padding:10px 14px;border-radius:6px;margin-bottom:12px;">'
+            f'<b style="color:{pc};">⚠ Sade Sati — {gochara.sade_sati_phase} Phase</b><br>'
+            f'<span style="font-size:12px;color:#555;">Saturn transiting '
+            f'{gochara.planets["Saturn"].sign} — '
+            f'natal Moon in {gochara.natal_moon_sign}</span></div>',
+            unsafe_allow_html=True,
+        )
+    else:
+        st.success(f"No Sade Sati. Saturn in {gochara.planets['Saturn'].sign} "
+                   f"(natal Moon: {gochara.natal_moon_sign})")
+
+    if gochara.guru_chandal_transit:
+        st.warning(
+            f"Guru-Chandal Yoga in transit: Jupiter and Rahu both in "
+            f"{gochara.planets['Jupiter'].sign}"
+        )
+
+    st.divider()
+
+    # ── Transit table ─────────────────────────────────────────────────────────
+    st.subheader("Current Transit Positions")
+    t_rows = []
+    for pname, tp in gochara.planets.items():
+        sym  = _PLANET_SYMBOL.get(pname, "")
+        retro = "℞" if tp.is_retrograde else ""
+        av_str = str(tp.av_bindus) if tp.av_bindus >= 0 else "—"
+        av_strength = ""
+        if tp.av_bindus >= 5:
+            av_strength = "Strong"
+        elif tp.av_bindus == 4:
+            av_strength = "Average"
+        elif tp.av_bindus >= 0:
+            av_strength = "Weak"
+        t_rows.append({
+            "": sym,
+            "Planet":    pname,
+            "Transit Sign": _sign_fmt(tp.sign),
+            "Degree":    f"{tp.degree_in_sign:.2f}°",
+            "Natal H":   f"H{tp.natal_house}",
+            "Rx":        retro,
+            "AV Bindus": av_str,
+            "Strength":  av_strength,
+        })
+    st.dataframe(t_rows, use_container_width=True, hide_index=True,
+                 column_config={
+                     "": st.column_config.TextColumn(width="small"),
+                     "Rx": st.column_config.TextColumn(width="small"),
+                     "AV Bindus": st.column_config.TextColumn(width="small"),
+                 })
+
+    st.caption(
+        "**AV Bindus** = Ashtakavarga bindus for transit sign from planet's own table. "
+        "Strong ≥ 5 (beneficial transit), Average = 4, Weak ≤ 3 (challenging transit). "
+        "Natal H = house in natal chart that the transit planet currently occupies (from lagna)."
+    )
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# Tab 7: Rule Detail
 # ══════════════════════════════════════════════════════════════════════════════
 with tab_rules:
     st.subheader("Per-House Rule Breakdown")
