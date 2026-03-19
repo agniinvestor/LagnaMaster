@@ -80,7 +80,9 @@ with st.sidebar:
 
     col1, col2 = st.columns(2)
     with col1:
-        birth_date_input = st.date_input("Birth Date", value=None)
+        birth_date_input = st.date_input("Birth Date", value=None,
+                                          min_value=date(1915, 1, 1),
+                                          max_value=date.today())
     with col2:
         birth_time_input = st.time_input("Birth Time (local)", value=None, step=60)
 
