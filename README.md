@@ -23,15 +23,6 @@ PYTHONPATH=. uvicorn src.api.main:app --reload
 PYTHONPATH=. streamlit run src/ui/app.py
 ```
 
-## What It Does
-
-1. Accepts birth date, time, and geographic coordinates
-2. Computes sidereal planet positions via **pyswisseph** (Lahiri ayanamsha)
-3. Runs 18 Jyotish calculation modules
-4. Scores **22 BPHS rules × 12 houses** → domain score in [−10, +10] per house
-5. Stores every chart in **SQLite** (immutable insert pattern)
-6. Serves results via **FastAPI** REST + **Streamlit** UI
-
 ## Session Progress
 
 | Session | Deliverable | Tests |
@@ -45,19 +36,5 @@ PYTHONPATH=. streamlit run src/ui/app.py
 | 16 | Sapta Varga Vimshopak Bala (20-pt weighted dignity) | 20 |
 | 17 | KP Sub-lord System (Star/Sub/Sub-Sub + significators) | 22 |
 | 18 | Varshaphala — Annual Solar Return, Muntha, Tajika aspects | 22 |
-
-## API
-
-```
-POST /charts              # compute + store chart
-GET  /charts              # list recent charts
-GET  /charts/{id}         # retrieve chart
-GET  /charts/{id}/scores  # full 22-rule house score breakdown
-GET  /health              # health check
-```
-
-## Known Bugs (Deferred to Phase 3)
-
-All 6 critical/high bugs from the v5 Excel audit are resolved. See [PLAN.md](PLAN.md).
 
 See [PLAN.md](PLAN.md), [DOCS.md](DOCS.md), and [docs/SESSION_LOG.md](docs/SESSION_LOG.md).
