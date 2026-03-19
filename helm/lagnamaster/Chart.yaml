@@ -1,0 +1,15 @@
+apiVersion: v2
+name: lagnamaster
+description: Vedic Jyotish birth chart scoring platform
+type: application
+version: 0.1.0
+appVersion: "0.2.0"
+keywords:
+  - jyotish
+  - astrology
+  - vedic
+home: https://github.com/agniinvestor/LagnaMaster
+sources:
+  - https://github.com/agniinvestor/LagnaMaster
+maintainers:
+  - name: agniinvestor

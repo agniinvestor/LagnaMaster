@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lagnamaster-config
+data:
+  JWT_ALGORITHM: {{ .Values.env.JWT_ALGORITHM | quote }}
+  ACCESS_TTL_MIN: {{ .Values.env.ACCESS_TTL_MIN | quote }}
+  REFRESH_TTL_DAY: {{ .Values.env.REFRESH_TTL_DAY | quote }}
+  CACHE_VERSION: {{ .Values.env.CACHE_VERSION | quote }}
+  PG_POOL_MIN: {{ .Values.env.PG_POOL_MIN | quote }}
+  PG_POOL_MAX: {{ .Values.env.PG_POOL_MAX | quote }}

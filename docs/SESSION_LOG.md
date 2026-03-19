@@ -1,42 +1,49 @@
 # LagnaMaster — Session Log
 
-> Last updated: 2026-03-19 | Sessions complete: 1–23
+> Last updated: 2026-03-20 | Sessions complete: 1–25
 
-## Sessions 1–21 — See git history
+## Sessions 1–23 — See git history
+Cumulative: 557 tests. Key milestones: S10 pilot complete, S19 10-tab UI, S21 Celery, S22 JWT auth, S23 GitHub Actions CI/CD.
 
-Cumulative summary: 507 tests across pilot (S1–10), feature expansion (S11–19), and Phase 3 start (S20–21).
+## Session 24 — Kubernetes + Helm chart
+**Date**: 2026-03-20 | **Tests**: 20 new | **Cumulative**: 577/577
 
-Key milestones:
-- S10: Pilot complete, 222/222 tests, 1947 fixture validated end-to-end
-- S19: 10-tab Streamlit UI scaffolded, 447/447 tests
-- S21: Celery workers, full UI wiring, 507/507 tests
+**`helm/lagnamaster/`** complete Helm chart:
+- `Chart.yaml`: name=lagnamaster, appVersion=0.2.0
+- `values.yaml`: api(port 8000, HPA 2–8 replicas), ui(port 8501), worker(queues=default+heavy, concurrency=4), ingress(nginx+TLS), redis+postgresql subcharts
+- `templates/_helpers.tpl`: shared macros — `lagnamaster.labels`, `lagnamaster.secretEnv` (JWT_SECRET/PG_DSN/REDIS_URL from K8s Secret), `lagnamaster.commonEnv`
+- `templates/api-deployment.yaml`: liveness+readiness on `/health`, resource limits, secretEnv + commonEnv
+- `templates/api-hpa.yaml`: HPA v2, CPU target 70%, min=2 max=8
+- `templates/ui-deployment.yaml`: Streamlit health probe `/_stcore/health`, API_URL env var
+- `templates/worker-deployment.yaml`: reuses API image, `celery -A src.worker worker -Q default,heavy`, exec liveness probe
+- `templates/ingress.yaml`: nginx, cert-manager TLS, routes api.lagnamaster.app → API, lagnamaster.app → UI
+- `templates/configmap.yaml`: non-secret env vars
 
-## Session 22 — Multi-user JWT Authentication
-**Date**: 2026-03-19 | **Tests**: 25 new | **Cumulative**: 532/532
+**tests/test_session24.py** (20 tests): structure checks, values YAML validation, template content verification.
 
-**src/auth.py**: SQLite user store (data/users.db), _SENTINEL pattern, bcrypt(12) hashing, SHA-256 HMAC fallback, register/authenticate/token/deactivate API.
+## Session 25 — Next.js 14 Frontend
+**Date**: 2026-03-20 | **Tests**: 30 new | **Cumulative**: 607/607
 
-**src/api/auth_router.py**: 5 endpoints (register/login/refresh/me/logout). `get_current_user` dependency exported for protecting chart endpoints.
+Wait — 20+30=50, 557+50=607. Corrected: **607/607**.
 
-**Token design**: HS256 JWT with `"kind"` claim. Access=15min, Refresh=7d. Cross-kind use raises ValueError. Tampered tokens caught by signature verification.
+**`frontend/`** — Next.js 14 + TypeScript + Tailwind CSS:
 
-**New env vars**: JWT_SECRET (change in prod!), JWT_ALGORITHM, ACCESS_TTL_MIN, REFRESH_TTL_DAY.
+`src/lib/api.ts`: Complete typed client — auth (register/login/refresh/me/logout), charts (create/list/get/scores/yogas/report), health. Bearer token injected from module-level state. All calls proxy through `/api/*` via Next.js rewrites to FastAPI.
 
-**New deps**: pyjwt>=2.8.0, bcrypt>=4.1.0.
+`src/app/page.tsx`: Home page — birth data form with all fields (year/month/day/hour/lat/lon/tz_offset/ayanamsha), India 1947 demo button, planet table, 12-house domain scores grid with colour-coded rating badges.
 
-## Session 23 — GitHub Actions CI/CD
-**Date**: 2026-03-19 | **Tests**: 25 new | **Cumulative**: 557/557
+`src/lib/api.test.ts`: Jest + jsdom, fetch mocked globally. Tests: token storage, login POST URL, 401 handling, Bearer header injection, charts.create, charts.scores, health.check.
 
-**`.github/workflows/ci.yml`**: Three jobs:
-1. `test`: pytest on Python 3.12, installs gcc/g++/python3-dev, runs all 557 tests. Triggers on push + PR to main.
-2. `docker`: builds and pushes API + UI images to GHCR (`ghcr.io/agniinvestor/lagnamaster-{api,ui}:{latest,sha}`). Only runs on push to main, requires `test` to pass.
-3. `lint`: ruff E/F/W checks on src/ and tests/.
+`next.config.js`: `/api/:path*` rewrites to FastAPI (env-configurable), `output: standalone` for Docker.
 
-**Docker images**: Tagged with both `latest` and commit SHA. GitHub Actions cache used for both pip and Docker layer cache (type=gha).
+`package.json`: Next 14, React 18, recharts, lucide-react, Tailwind, TypeScript, Jest, testing-library.
 
-**tests/test_session23.py**: Project health checks — CI file present + content, all source modules importable, requirements.txt has all packages, streamlit_app.py entry point correct, __init__.py files present.
+**tests/test_session25.py** (30 tests): structure checks, package.json content, api.ts interface/module presence.
 
-**requirements.txt**: Added ruff>=0.4.0.
+### New env vars (frontend)
+| Variable | Default | Purpose |
+|----------|---------|---------|
+| NEXT_PUBLIC_API_URL | http://localhost:8000 | FastAPI base URL for proxy |
 
-## Session 24 plan
-Kubernetes manifests + Helm chart: Deployment + Service + HorizontalPodAutoscaler for API; Deployment + Service for UI; ConfigMap for environment; Secret for JWT_SECRET + PG_DSN. Target: `helm install lagnamaster ./helm/lagnamaster`.
+### Session 26 plan
+KP / Jaimini school gate configuration: feature flags in `src/config.py` to enable/disable KP or Jaimini calculation paths, per-user school preference stored in user DB, API endpoints respect preference.

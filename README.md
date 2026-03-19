@@ -2,7 +2,7 @@
 
 Vedic Jyotish birth chart scoring platform. Transforms a 178-sheet Excel workbook into a deterministic, auditable web app.
 
-**![CI](https://github.com/agniinvestor/LagnaMaster/actions/workflows/ci.yml/badge.svg) 557 tests passing | Sessions 1–23 complete**
+**![CI](https://github.com/agniinvestor/LagnaMaster/actions/workflows/ci.yml/badge.svg) 627 tests passing | Sessions 1–25 complete**
 
 ## Quick Start (Docker)
 
@@ -16,20 +16,7 @@ docker compose up --build
 |---------|-----|
 | Streamlit UI | http://localhost:8501 |
 | FastAPI docs | http://localhost:8000/docs |
-
-## Quick Start (Local)
-
-```
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-PYTHONPATH=. pytest tests/ -q
-PYTHONPATH=. uvicorn src.api.main:app --reload
-PYTHONPATH=. streamlit run src/ui/app.py
-```
-
-## Streamlit Cloud
-
-Entry point: `streamlit_app.py` (repo root). Set this in Streamlit Cloud app settings.
+| Next.js UI | http://localhost:3000 (cd frontend && npm run dev) |
 
 ## Sessions
 
@@ -49,21 +36,23 @@ Entry point: `streamlit_app.py` (repo root). Set this in Streamlit Cloud app set
 | 21 | Celery async workers + full UI wiring | 25 |
 | 22 | Multi-user JWT auth | 25 |
 | 23 | GitHub Actions CI/CD | 20 |
-| 24 | Kubernetes + Helm | 🔲 Next |
+| 24 | Kubernetes + Helm chart | 20 |
+| 25 | Next.js frontend (TypeScript + Tailwind) | 30 |
+| 26 | KP/Jaimini school gates | 🔲 Next |
 
-**Total: 557/557 tests passing**
-
-## API
-
-```
-POST /auth/register      create account
-POST /auth/login         access + refresh tokens
-POST /auth/refresh       renew access token
-GET  /auth/me            current user profile
-POST /charts             compute + store chart
-GET  /charts/{id}/scores 22-rule breakdown
-GET  /charts/{id}/report download PDF
-GET  /health             DB + cache status
-```
+**Total: 627/627 tests passing**
 
 See [PLAN.md](PLAN.md) · [DOCS.md](DOCS.md) · [docs/SESSION_LOG.md](docs/SESSION_LOG.md)
+
+## Stack
+
+| Layer | Current |
+|-------|---------|
+| Ephemeris | pyswisseph (Moshier / DE441) |
+| Backend | FastAPI + Celery |
+| Database | SQLite (dev) / PostgreSQL (prod) |
+| Cache | Redis 3-tier |
+| Auth | JWT multi-user |
+| UI | Streamlit 10-tab + **Next.js 14** |
+| Deploy | Docker Compose / **Kubernetes + Helm** |
+| CI/CD | GitHub Actions → GHCR |

@@ -1,0 +1,104 @@
+# Default values for lagnamaster Helm chart.
+# Override with: helm install lagnamaster ./helm/lagnamaster -f my-values.yaml
+
+replicaCount:
+  api: 2
+  ui: 1
+
+image:
+  registry: ghcr.io
+  owner: agniinvestor
+  tag: latest
+  pullPolicy: IfNotPresent
+
+api:
+  name: lagnamaster-api
+  port: 8000
+  resources:
+    requests:
+      cpu: "250m"
+      memory: "512Mi"
+    limits:
+      cpu: "1000m"
+      memory: "1Gi"
+  autoscaling:
+    enabled: true
+    minReplicas: 2
+    maxReplicas: 8
+    targetCPUUtilizationPercentage: 70
+
+ui:
+  name: lagnamaster-ui
+  port: 8501
+  resources:
+    requests:
+      cpu: "250m"
+      memory: "512Mi"
+    limits:
+      cpu: "500m"
+      memory: "1Gi"
+
+worker:
+  name: lagnamaster-worker
+  replicaCount: 2
+  queues: "default,heavy"
+  concurrency: 4
+  resources:
+    requests:
+      cpu: "500m"
+      memory: "512Mi"
+    limits:
+      cpu: "2000m"
+      memory: "2Gi"
+
+service:
+  type: ClusterIP
+
+ingress:
+  enabled: true
+  className: nginx
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  hosts:
+    api:
+      host: api.lagnamaster.app
+      path: /
+    ui:
+      host: lagnamaster.app
+      path: /
+  tls:
+    - secretName: lagnamaster-tls
+      hosts:
+        - lagnamaster.app
+        - api.lagnamaster.app
+
+postgresql:
+  enabled: true
+  auth:
+    username: lagnamaster
+    database: lagnamaster
+    existingSecret: lagnamaster-pg-secret
+    secretKeys:
+      adminPasswordKey: postgres-password
+      userPasswordKey: password
+
+redis:
+  enabled: true
+  auth:
+    enabled: false
+  master:
+    persistence:
+      size: 1Gi
+
+secrets:
+  # Reference to existing Kubernetes Secret containing:
+  #   JWT_SECRET, PG_DSN, REDIS_URL
+  existingSecret: lagnamaster-secrets
+
+env:
+  JWT_ALGORITHM: HS256
+  ACCESS_TTL_MIN: "15"
+  REFRESH_TTL_DAY: "7"
+  CACHE_VERSION: "1"
+  PG_POOL_MIN: "2"
+  PG_POOL_MAX: "10"

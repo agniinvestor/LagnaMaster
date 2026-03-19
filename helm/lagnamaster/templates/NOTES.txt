@@ -1,0 +1,21 @@
+LagnaMaster has been deployed!
+
+API:    http://{{ .Values.ingress.hosts.api.host }}
+UI:     http://{{ .Values.ingress.hosts.ui.host }}
+Docs:   http://{{ .Values.ingress.hosts.api.host }}/docs
+
+Before deploying, ensure the secret exists:
+  kubectl create secret generic lagnamaster-secrets \
+    --from-literal=JWT_SECRET=<your-secret> \
+    --from-literal=PG_DSN=postgresql://lagnamaster:<password>@<host>:5432/lagnamaster \
+    --from-literal=REDIS_URL=redis://<host>:6379/0
+
+Run tests:
+  kubectl exec -it deploy/lagnamaster-api -- pytest tests/ -q
+
+Scale API:
+  kubectl scale deployment lagnamaster-api --replicas=4
+
+View logs:
+  kubectl logs -f deploy/lagnamaster-api
+  kubectl logs -f deploy/lagnamaster-worker
