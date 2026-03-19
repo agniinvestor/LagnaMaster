@@ -1,0 +1,5 @@
+# Swiss Ephemeris data files go here (*.se1).
+# These files are large (30–3000 MB) and not tracked in git.
+# pyswisseph falls back to built-in Moshier if this directory is empty.
+# For production accuracy, download standard SE files from:
+#   https://www.astro.com/swisseph/

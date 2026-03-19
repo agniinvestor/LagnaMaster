@@ -13,9 +13,10 @@ build/
 *.sqlite
 data/
 
-# Ephemeris files (large)
-ephe/
-*.se1
+# Ephemeris files (large) — track the dir placeholder, not the data files
+ephe/*.se1
+ephe/*.swe
+ephe/*.cat
 
 # Env
 .env
