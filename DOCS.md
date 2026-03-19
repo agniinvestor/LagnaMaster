@@ -1,7 +1,7 @@
 # LagnaMaster — Technical Documentation
 
 > Last updated: 2026-03-19
-> Sessions complete: 1, 2, 3 (pilot build — Sessions 4–6 remaining)
+> Sessions complete: 1–7 (pilot complete — 127/127 tests passing)
 
 ---
 
@@ -23,6 +23,10 @@
    - [src/db.py](#410-srcdbpy)
    - [src/api/main.py](#411-srcapimainpy)
    - [src/api/models.py](#412-srcapimodelspy)
+   - [src/calculations/vimshottari_dasa.py](#413-srccalculationsvimshottari_dasapy)
+   - [src/calculations/yogas.py](#414-srccalculationsyogaspy)
+   - [src/ui/chart_visual.py](#415-srcuichart_visualpy)
+   - [src/ui/app.py](#416-srcuiapppy)
 5. [API Reference](#5-api-reference)
 6. [Scoring Engine Deep Dive](#6-scoring-engine-deep-dive)
 7. [Known Bugs & Status](#7-known-bugs--status)
@@ -40,12 +44,16 @@ LagnaMaster transforms a 178-sheet Excel Jyotish workbook into a deterministic, 
 **Core flow**:
 ```
 Birth data (date, time, lat/lon)
-    → ephemeris.py          pyswisseph DE441 / Moshier
-    → calculations/         7 Jyotish modules (Excel CALC sheets → Python)
-    → scoring.py            22 BPHS rules × 12 houses
-    → api/main.py           FastAPI REST endpoints
-    → db.py                 SQLite (immutable inserts)
-    → ui/app.py             Streamlit (Session 4)
+    → ephemeris.py               pyswisseph DE441 / Moshier
+    → calculations/              9 Jyotish modules
+        dignity, nakshatra, friendship, house_lord,
+        chara_karak, narayana_dasa, shadbala,
+        vimshottari_dasa, yogas
+    → scoring.py                 22 BPHS rules × 12 houses
+    → api/main.py                FastAPI REST endpoints
+    → db.py                      SQLite (immutable inserts)
+    → ui/app.py                  Streamlit 5-tab UI
+    → ui/chart_visual.py         South Indian chart SVG
 ```
 
 **Tech stack**:
@@ -67,7 +75,13 @@ Birth data (date, time, lat/lon)
 LagnaMaster/
 ├── PLAN.md                     Build plan + milestones
 ├── DOCS.md                     This file
+├── README.md                   Quick-start guide
 ├── requirements.txt            Python dependencies
+├── packages.txt                apt packages for Streamlit Cloud (gcc, g++, python3-dev)
+├── Dockerfile                  python:3.12-slim + gcc; runs api or ui
+├── docker-compose.yml          api (8000) + ui (8501) + shared SQLite volume
+├── Makefile                    up/down/logs/test targets
+├── .streamlit/config.toml      theme + headless config
 ├── ephe/                       Swiss Ephemeris data files (optional; Moshier used if absent)
 ├── data/
 │   └── charts.db               SQLite database (created at runtime)
@@ -83,7 +97,12 @@ LagnaMaster/
 │   │   ├── house_lord.py       Whole-sign house map + Kendra/Trikona helpers
 │   │   ├── chara_karak.py      7 Jaimini Chara Karakas (AK → GK)
 │   │   ├── narayana_dasa.py    Sign-based 81-year dasha calculator
-│   │   └── shadbala.py         6-component planetary strength in Virupas
+│   │   ├── shadbala.py         6-component planetary strength in Virupas
+│   │   ├── vimshottari_dasa.py 120-year nakshatra-based dasha (9 MDs × 9 ADs)
+│   │   └── yogas.py            13 yoga types: PM/Raj/Dhana/Lunar/Solar/Special
+│   ├── ui/
+│   │   ├── app.py              Streamlit 5-tab UI (Chart/Scores/Yogas/Dasha/Rules)
+│   │   └── chart_visual.py     South Indian 4×4 SVG chart renderer
 │   └── api/
 │       ├── main.py             FastAPI application
 │       └── models.py           Pydantic request/response models
@@ -91,8 +110,11 @@ LagnaMaster/
 └── tests/
     ├── fixtures.py             Known-good birth chart data (1947 India)
     ├── test_ephemeris.py       14 tests — wrapper + position accuracy
-    ├── test_calculations.py    36 tests — all 7 calculation modules
-    └── test_scoring.py         20 tests — scoring engine + API endpoints
+    ├── test_calculations.py    36 tests — all 7 core calculation modules
+    ├── test_scoring.py         20 tests — scoring engine + API endpoints
+    ├── test_integration.py     17 tests — end-to-end journey + edge cases
+    ├── test_vimshottari.py     20 tests — dasha structure + 1947 fixture
+    └── test_yogas.py           14 tests — yoga detection + 1947 fixture
 ```
 
 ---
@@ -194,17 +216,22 @@ class BirthChart:
 **Purpose**: Dignity levels (exaltation through debilitation), combustion detection, cazimi override, Neecha Bhanga.
 
 **Dignity levels** (enum `DignityLevel`):
-| Level | Score | Trigger |
-|-------|-------|---------|
-| DEEP_EXALT | +2.0 | within 1° of exact exaltation point |
-| EXALTED | +1.5 | in exaltation sign |
-| MOOLATRIKONA | +1.0 | in moolatrikona portion of own sign |
-| OWN_SIGN | +0.75 | in own sign (non-moolatrikona) |
-| FRIENDLY | +0.25 | in friendly sign |
-| NEUTRAL | 0.0 | |
-| ENEMY | -0.25 | in enemy sign |
-| DEBILITATED | -1.5 | in debilitation sign |
-| DEEP_DEBIL | -2.0 | within 1° of exact debilitation point |
+| Enum Name | Score | Trigger |
+|-----------|-------|---------|
+| `EXALT` | +1.5 | in exaltation sign |
+| `MOOLTRIKONA` | +1.0 | in moolatrikona portion of own sign |
+| `OWN_SIGN` | +0.75 | in own sign (non-moolatrikona) |
+| `FRIEND_SIGN` | +0.25 | in friendly sign |
+| `NEUTRAL` | 0.0 | neutral sign |
+| `ENEMY_SIGN` | -0.25 | in enemy sign |
+| `DEBIL` | -1.5 | in debilitation sign |
+
+**Combustion states** (separate from DignityLevel):
+- `COMBUST`: within combustion orb of Sun
+- `CAZIMI`: within 1° of Sun — positive override (+0.5)
+- `ASTA_VAKRI`: combust + retrograde — reduced negative effect
+
+**DignityResult fields**: `.dignity` (DignityLevel), `.combust` (bool), `.cazimi` (bool), `.neecha_bhanga` (bool)
 
 **Combustion detection**:
 - Each planet has a combustion orb (e.g. Moon: 12°, Mars: 17°, Mercury: 14°/12° direct/Rx)
@@ -599,6 +626,183 @@ class HouseScoreOut(BaseModel):
 
 ---
 
+### 4.13 `src/calculations/vimshottari_dasa.py`
+
+**Purpose**: 120-year Vimshottari Dasha calculator. Derives birth nakshatra from Moon's sidereal longitude and computes 9 MahaDashas (each with 9 AntarDashas).
+
+**Period table** (`VIMSHOTTARI_YEARS`):
+| Planet | Years | | Planet | Years |
+|--------|-------|--|--------|-------|
+| Ketu | 7 | | Rahu | 18 |
+| Venus | 20 | | Jupiter | 16 |
+| Sun | 6 | | Saturn | 19 |
+| Moon | 10 | | Mercury | 17 |
+| Mars | 7 | | **Total** | **120** |
+
+**Sequence** (`_SEQUENCE`): Ketu → Venus → Sun → Moon → Mars → Rahu → Jupiter → Saturn → Mercury
+
+**Nakshatra-to-lord mapping**: `_NAKSHATRA_LORDS = _SEQUENCE * 3` (27 entries, cycling the 9-planet sequence 3 times).
+
+**Computation logic**:
+```python
+moon_lon = chart.planets["Moon"].longitude
+nak_idx  = min(int(moon_lon / 13.333), 26)          # nakshatra index 0–26
+elapsed_fraction = (moon_lon - nak_idx * 13.333) / 13.333
+birth_lord = _NAKSHATRA_LORDS[nak_idx]
+balance    = VIMSHOTTARI_YEARS[birth_lord] * (1.0 - elapsed_fraction)
+```
+- `balance` = years remaining in the birth dasha (< full period years)
+- Subsequent dashas follow `_SEQUENCE` cyclically
+- **AntarDasha duration** = `maha_years × VIMSHOTTARI_YEARS[antar_lord] / 120`
+
+**1947 India chart**: Moon at ~93.98° sidereal → Pushya nakshatra (index 7) → Saturn birth dasha (19-year period).
+
+**Data classes**:
+```python
+@dataclass
+class AntarDasha:
+    lord: str; start: date; end: date; years: float
+
+@dataclass
+class MahaDasha:
+    lord: str; nakshatra: str; start: date; end: date
+    years: float; antardashas: list[AntarDasha]
+```
+
+**Public API**:
+```python
+def compute_vimshottari_dasa(chart: BirthChart, birth_date: date) -> list[MahaDasha]
+def current_dasha(dashas: list[MahaDasha], on_date: date = None) -> tuple[MahaDasha, AntarDasha]
+def nakshatra_of_moon(chart: BirthChart) -> tuple[str, str]   # (nakshatra_name, dasha_lord)
+```
+
+---
+
+### 4.14 `src/calculations/yogas.py`
+
+**Purpose**: Detect classical yoga formations in a birth chart. Returns a sorted list of `Yoga` objects.
+
+**Data class**:
+```python
+@dataclass
+class Yoga:
+    name: str
+    category: str   # "Pancha Mahapurusha" | "Raj" | "Dhana" | "Lunar" | "Solar" | "Special" | "Negative"
+    nature: str     # "benefic" | "malefic" | "mixed"
+    planets: list[str]
+    description: str
+```
+
+**13 Yoga Types** by category:
+
+| Category | Yogas |
+|----------|-------|
+| Pancha Mahapurusha | Ruchaka (Mars), Bhadra (Mercury), Hamsa (Jupiter), Malavya (Venus), Shasha (Saturn) — planet in own/exalt sign AND in kendra |
+| Raj | Kendra lord + Trikona lord conjunct in the same sign (dusthana lords excluded) |
+| Dhana | H1/2/5/9/11 lord pairs conjunct in the same sign |
+| Lunar | Gajakesari (Jupiter in kendra from Moon), Chandra-Mangala (Moon+Mars conjunct), Adhi Yoga (benefics in H6/H7/H8 from Moon), Kemadruma (Moon with no adjacent planets), Shakata (Jupiter in H6/H8/H12 from Moon) |
+| Solar | Budha-Aditya (Sun+Mercury conjunct), Vesi (planets in H2 from Sun), Vasi (planets in H12 from Sun), Ubhayachari (both H2 and H12 occupied) |
+| Special | Pancha-Graha (5+ planets in one sign), Guru-Chandala (Jupiter+Rahu conjunct), Neecha Bhanga Raj (debilitated planet with debilitation-lord in kendra) |
+
+**Sorting**: benefic/mixed categories first (by `_CATEGORY_ORDER`), then by nature (`_NATURE_ORDER`).
+
+**Key implementation notes**:
+- Rahu/Ketu excluded from planet counts (e.g. Pancha-Graha yoga only counts 7 main planets)
+- `sign_lord(debil_si)` used for Neecha Bhanga (not `_SIGN_LORDS` dict — not public)
+- Gajakesari: `dist = _wrap(jup_house - moon_house + 1)` must be in {1, 4, 7, 10}
+
+**Public API**:
+```python
+def detect_yogas(chart: BirthChart) -> list[Yoga]
+```
+
+**1947 India chart**: Pancha-Graha Yoga (Sun/Moon/Mercury/Venus/Saturn in Cancer), Gajakesari (Jupiter in Libra = H4 from Moon in Cancer), multiple Dhana Yogas, Budha-Aditya (Sun+Mercury in Cancer).
+
+---
+
+### 4.15 `src/ui/chart_visual.py`
+
+**Purpose**: Renders a South Indian Jyotish birth chart as an SVG string for display in Streamlit.
+
+**South Indian chart layout** (4×4 grid, fixed sign positions):
+```
+┌──────────┬──────────┬──────────┬──────────┐
+│ Pisces   │ Aries    │ Taurus   │ Gemini   │  row 0 (signs 11,0,1,2)
+├──────────┼──────────┴──────────┼──────────┤
+│ Aquarius │   [diagonal cross]  │ Cancer   │  row 1 (signs 10, center, 3)
+├──────────┼──────────┬──────────┼──────────┤
+│ Capricorn│   [chart label]     │ Leo      │  row 2 (signs 9, center, 4)
+├──────────┼──────────┴──────────┼──────────┤
+│ Sagittarius│ Scorpio │ Libra   │ Virgo    │  row 3 (signs 8,7,6,5)
+└──────────┴──────────┴──────────┴──────────┘
+```
+
+**Cell positions** (sign_index → grid (row, col)):
+```python
+{11:(0,0), 0:(0,1), 1:(0,2), 2:(0,3),
+ 10:(1,0),                   3:(1,3),
+  9:(2,0),                   4:(2,3),
+  8:(3,0), 7:(3,1), 6:(3,2), 5:(3,3)}
+```
+Center 4 cells (1,1)–(2,2) show diagonal cross lines and chart label.
+
+**Visual encoding**:
+- CELL = 130px, total SVG = 520×520px
+- Lagna sign: fill `#EDE7FF`, border `#4B0082` (indigo)
+- Benefics (Jupiter, Venus, Moon, Mercury): text color `#1a7a1a` (dark green)
+- Malefics (Sun, Mars, Saturn, Rahu, Ketu): text color `#8b0000` (dark red)
+- Each cell lists planet abbreviations + lagna marker ("Lgn")
+
+**Public API**:
+```python
+def south_indian_svg(chart: BirthChart, name: str = "") -> str
+```
+
+---
+
+### 4.16 `src/ui/app.py`
+
+**Purpose**: Streamlit 5-tab web UI. Birth data input → compute → display chart, scores, yogas, dasha timeline, and rule detail.
+
+**Tabs**:
+| Tab | Content |
+|-----|---------|
+| Chart | South Indian SVG + enriched planet table (sign, degree, nakshatra+pada, dignity, speed) |
+| Domain Scores | 12-house score bar chart + rating badges |
+| Yogas | Detected yoga cards grouped by category (name, nature badge, planets, description) |
+| Vimshottari Dasha | Current MD/AD period + full 9 MahaDasha table + AntarDasha expandable |
+| Rule Detail | Per-house rule breakdown (all 22 rules, triggered/not, score contribution) |
+
+**Sidebar**:
+- Birth date (`date_input`, `min_value=date(1915, 1, 1)`)
+- Birth time (hour + minute sliders)
+- Latitude / Longitude
+- Timezone offset
+- Ayanamsha selector (Lahiri / Raman / Krishnamurti)
+- "Demo: India 1947" button (pre-fills all fields)
+- "Chart History" toggle
+
+**Session state keys**: `chart`, `scores`, `chart_id`, `birth_date`, `show_history`
+
+**Key imports** (names must match exactly):
+```python
+from src.calculations.nakshatra import nakshatra_position
+from src.calculations.dignity import compute_all_dignities, DignityLevel
+from src.calculations.yogas import detect_yogas
+from src.calculations.vimshottari_dasa import compute_vimshottari_dasa, current_dasha
+from src.ui.chart_visual import south_indian_svg
+```
+
+**DignityLevel enum names** (actual values — do not use the wrong aliases):
+`EXALT`, `MOOLTRIKONA`, `OWN_SIGN`, `FRIEND_SIGN`, `NEUTRAL`, `ENEMY_SIGN`, `DEBIL`
+
+**Streamlit Cloud notes**:
+- `packages.txt` provides `gcc g++ python3-dev` for pyswisseph compilation
+- `requirements.txt` uses `fastapi` (not `fastapi[standard]`) to avoid Rust dependency from `email-validator`
+- `.streamlit/config.toml`: `headless=true`, `enableCORS=false`, serif font, indigo theme
+
+---
+
 ## 5. API Reference
 
 **Base URL** (local): `http://localhost:8000`
@@ -720,23 +924,28 @@ From `LagnaMaster_Audit_v5_PVRNR.docx` (v5 Excel audit):
 
 ## 8. Test Suite
 
-**70 tests, all passing** (as of Session 3):
+**127 tests, all passing** (as of Session 7):
 
 ```
-tests/test_ephemeris.py       14 tests
-tests/test_calculations.py    36 tests
-tests/test_scoring.py         20 tests
+tests/test_ephemeris.py       14 tests  — pyswisseph wrapper, position accuracy
+tests/test_calculations.py    36 tests  — all 7 core calculation modules
+tests/test_scoring.py         20 tests  — 22-rule engine + FastAPI endpoints
+tests/test_integration.py     17 tests  — end-to-end chart journey + edge cases
+tests/test_vimshottari.py     20 tests  — dasha structure, 1947 fixture, antardasha proportions
+tests/test_yogas.py           14 tests  — yoga detection logic + 1947 fixture
+                             ───────────
+                             127 total
 ```
 
 **Run**:
 ```bash
-cd /path/to/LagnaMaster
-PYTHONPATH=. .venv/bin/pytest tests/ -v
+cd /tmp/lm
+PYTHONPATH=/tmp/lm .venv/bin/pytest tests/ -v
 ```
 
 **Key test patterns**:
 
-1. **1947 fixture validation**: All ephemeris and scoring tests use `INDIA_1947` as the primary input. Any regression in position accuracy breaks these tests immediately.
+1. **1947 fixture validation**: All test files use `INDIA_1947` as the primary input. Any regression in position accuracy breaks these tests immediately.
 
 2. **API test DB isolation** (`test_scoring.py::TestAPI`):
    ```python
@@ -750,9 +959,13 @@ PYTHONPATH=. .venv/bin/pytest tests/ -v
        return TestClient(app)
    ```
 
-3. **Aspect engine tests**: `test_planet_aspects_engine`, `test_mars_special_aspects`, `test_saturn_special_aspects` verify Graha Drishti offsets directly against `_planet_aspects_house()`.
+3. **Integration tests** (`test_integration.py`): Full round-trip — POST /charts, GET /charts/{id}/scores, history ordering, Rahu/Ketu 180° invariant, score determinism, all 3 ayanamshas.
 
-4. **Score validation**: H2 and H7 expected negative for 1947 chart (matches Excel OUTPUT_LifeDomains).
+4. **Vimshottari tests** (`test_vimshottari.py`): Checks 9 MDs, 9 ADs per MD, antardasha proportional formula, Saturn birth dasha for 1947 (Moon in Pushya nakshatra), contiguous date ranges.
+
+5. **Yoga tests** (`test_yogas.py`): Pancha-Graha Yoga (5 planets in Cancer), Gajakesari (Moon/Jupiter), Kemadruma absent (Mars adjacent to Moon), PM yoga only if planet in kendra, determinism check.
+
+6. **Score validation**: H2 and H7 expected negative for 1947 chart (matches Excel OUTPUT_LifeDomains).
 
 ---
 

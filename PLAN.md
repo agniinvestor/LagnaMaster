@@ -25,27 +25,30 @@
 ```
 Birth Data (date, time, lat/lon)
         ↓
-src/ephemeris.py        ← pyswisseph wrapper → BirthChart
+src/ephemeris.py             ← pyswisseph wrapper → BirthChart
         ↓
-src/calculations/       ← 7 Jyotish modules (translated from Excel CALC sheets)
-  dignity.py            ← exaltation, debilitation, own sign, moolatrikona, combustion, Neecha Bhanga
-  nakshatra.py          ← 27 nakshatras, 4 padas, D9 navamsha, Ganda Mool
-  friendship.py         ← Naisargika + Tatkalik → Panchadha Maitri (5-fold)
-  house_lord.py         ← whole-sign house map, Kendra/Trikona/Dusthana helpers
-  chara_karak.py        ← 7 Jaimini Chara Karakas (AK → GK)
-  narayana_dasa.py      ← sign-based 81-year predictive cycle
-  shadbala.py           ← 6-component planetary strength in Virupas
+src/calculations/            ← 9 Jyotish modules (translated from Excel CALC sheets)
+  dignity.py                 ← exaltation/debilitation/own/mooltrikona, combustion, Neecha Bhanga
+  nakshatra.py               ← 27 nakshatras, 4 padas, D9 navamsha, Ganda Mool
+  friendship.py              ← Naisargika + Tatkalik → Panchadha Maitri (5-fold)
+  house_lord.py              ← whole-sign house map, Kendra/Trikona/Dusthana helpers
+  chara_karak.py             ← 7 Jaimini Chara Karakas (AK → GK)
+  narayana_dasa.py           ← sign-based 81-year predictive cycle
+  shadbala.py                ← 6-component planetary strength in Virupas
+  vimshottari_dasa.py        ← 120-year nakshatra dasha: 9 MDs × 9 ADs [Session 6]
+  yogas.py                   ← 13 yoga types: PM/Raj/Dhana/Lunar/Solar/Special [Session 7]
         ↓
-src/scoring.py          ← 22 BPHS rules × 12 houses = 264 evaluations per chart
-                           WC rules (R03/R05/R07/R14) count at 0.5× weight
-                           Scores clamped to [-10, +10]; rating Excellent→Very Weak
+src/scoring.py               ← 22 BPHS rules × 12 houses = 264 evaluations per chart
+                                WC rules (R03/R05/R07/R14) count at 0.5× weight
+                                Scores clamped to [-10, +10]; rating Excellent→Very Weak
         ↓
-src/api/main.py         ← FastAPI: POST /charts, GET /charts, GET /charts/{id}(/scores)
-src/api/models.py       ← Pydantic: BirthDataRequest, ChartOut, ChartScoresOut
+src/api/main.py              ← FastAPI: POST /charts, GET /charts, GET /charts/{id}(/scores)
+src/api/models.py            ← Pydantic: BirthDataRequest, ChartOut, ChartScoresOut
         ↓
-src/db.py               ← SQLite immutable inserts (_SENTINEL testability pattern)
+src/db.py                    ← SQLite immutable inserts (_SENTINEL testability pattern)
         ↓
-src/ui/app.py           ← Streamlit: birth input → chart display → domain scores [Session 4]
+src/ui/chart_visual.py       ← South Indian SVG chart renderer [Session 6]
+src/ui/app.py                ← Streamlit 5-tab UI: Chart/Scores/Yogas/Dasha/Rules [Sessions 4,6,7]
 ```
 
 ---
@@ -62,22 +65,24 @@ All modules must pass this fixture before being considered done.
 
 ---
 
-## Pilot Build — 6 Sessions (~1 week)
+## Pilot Build — Sessions 1–7 ✅ Complete
 
 | Session | Deliverable | Status | Tests |
 |---------|------------|--------|-------|
 | 1 | `src/ephemeris.py` — pyswisseph wrapper | ✅ Done | 14/14 |
 | 2 | `src/calculations/` — 7 modules (dignity, nakshatra, friendship, house_lord, chara_karak, narayana_dasa, shadbala) | ✅ Done | 36/36 |
 | 3 | `src/scoring.py` + `src/api/` + `src/db.py` — 22-rule engine + FastAPI + SQLite | ✅ Done | 20/20 |
-| 4 | `src/ui/app.py` — Streamlit UI (birth input → chart display → domain scores) | 🔲 Next | — |
-| 5 | Docker Compose — shareable local deploy | 🔲 Pending | — |
-| 6 | End-to-end smoke test + README | 🔲 Pending | — |
+| 4 | `src/ui/app.py` — Streamlit 3-tab UI (Chart / Domain Scores / Rule Detail) | ✅ Done | 6/6 |
+| 5 | Docker Compose + Dockerfile + Makefile + integration tests (17) | ✅ Done | 17/17 |
+| 6 | `vimshottari_dasa.py` + `chart_visual.py` (South Indian SVG) + 4-tab UI | ✅ Done | 20/20 |
+| 7 | `yogas.py` (13 yoga types) + enriched planet table + Yogas tab in UI | ✅ Done | 14/14 |
+| 8 | Accuracy fixes: E-1 (JDN +0.5) + A-2 (Mercury direction) | 🔲 Next | — |
 
-**Total tests passing: 70/70**
+**Total tests passing: 127/127**
 
 ---
 
-## Accuracy Iteration — Sessions 7–10
+## Accuracy Iteration — Sessions 8–11
 
 Fix the 6 known bugs from the v5 audit, in severity order:
 
@@ -87,8 +92,8 @@ Fix the 6 known bugs from the v5 audit, in severity order:
 | P-4 | Ayanamsha silent failure | ✅ Fixed | Raise ValueError on unknown ayanamsha |
 | N-1 | Narayana Dasha: Taurus = 4yr (should be 7yr) | ✅ Fixed | Period table in narayana_dasa.py |
 | S-2 | Shadbala J14 formula = hardcoded 3851 | ✅ Fixed | `min(60, mean_motion/\|speed\|×60)` |
-| E-1 | JDN Gregorian +0.5 day correction missing | 🔲 Session 7 | Add offset in ephemeris.py |
-| A-2 | Mercury direction: wrong row reference | 🔲 Session 7 | Fix lookup in retrograde.py |
+| E-1 | JDN Gregorian +0.5 day correction missing | 🔲 Session 8 | Add offset in ephemeris.py |
+| A-2 | Mercury direction: wrong row reference | 🔲 Session 8 | Fix lookup in retrograde.py |
 
 After each fix: re-run 1947 regression fixture.
 
