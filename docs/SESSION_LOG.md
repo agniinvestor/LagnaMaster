@@ -114,3 +114,130 @@ Pilot uses whole-sign house cusps; Placidus deferred to Phase 3.
 | 15 | 337 |
 | 16 | 357 |
 | 17 | 379 |
+
+---
+
+## Session 15 — Varga Divisional Charts
+
+**Date**: 2026-03-19 | **Tests added**: 25 | **Running total**: 337
+
+### Deliverables
+- `src/calculations/varga.py` — D2/D3/D4/D7/D9/D10/D12/D60 divisional chart engine
+- `tests/test_varga.py` — 25 tests
+
+### Divisions
+| Division | Name | Span | Formula summary |
+|----------|------|------|-----------------|
+| D2 | Hora | 15° | Odd sign: 0-15°→Leo, 15-30°→Cancer; Even: reversed |
+| D3 | Drekkana | 10° | `(si + k×4) % 12`, k=0/1/2 per decan |
+| D4 | Chaturthamsha | 7°30' | `(si + k×3) % 12`, k=0..3 |
+| D7 | Saptamsha | 4°17' | Odd: `(si+k)%12`; Even: `(si+6+k)%12` |
+| D9 | Navamsha | 3°20' | Cross-validates panchanga.compute_navamsha_chart() |
+| D10 | Dashamsha | 3° | Odd: `(si+k)%12`; Even: `(si+9+k)%12` |
+| D12 | Dvadasamsha | 2°30' | `(si+k)%12` for all signs |
+| D60 | Shashtyamsha | 0°30' | Odd: `k%12`; Even: `(5+k)%12` |
+
+### Key decisions
+- D9 cross-validates panchanga.py (must agree or test fails)
+- Rahu/Ketu use same positional formula as 7 main planets
+- VargaChart.d9() shortcut; VargaTable.planets_in_sign(si) helper
+
+---
+
+## Session 16 — Sapta Varga Vimshopak Bala
+
+**Date**: 2026-03-19 | **Tests added**: 20 | **Running total**: 357
+
+### Deliverables
+- `src/calculations/sapta_varga.py` — 20-point weighted dignity score
+- `tests/test_sapta_varga.py` — 20 tests
+
+### Weights (must sum to 20)
+D1=3, D2=2, D3=2, D7=1, D9=5, D10=3, D12=4
+
+### Dignity fractions
+Exaltation=1.0 / Moolatrikona=0.75 / OwnSign=0.5 / Friend=0.375 /
+Neutral=0.25 / Enemy=0.125 / Debilitation=0.0
+
+### Key decisions
+- Rahu/Ketu always Neutral (no classical exalt/debil in Parashari)
+- Grade thresholds: Excellent≥15, Good≥10, Average≥6, Weak≥3, Very Weak<3
+- ranking() returns 9 planets sorted descending, Lagna excluded
+
+---
+
+## Session 17 — KP Sub-lord System
+
+**Date**: 2026-03-19 | **Tests added**: 22 | **Running total**: 379
+
+### Deliverables
+- `src/calculations/kp.py` — KP Star/Sub/Sub-Sub lords + house significators
+- `tests/test_kp.py` — 22 tests
+
+### Algorithm
+Each nakshatra (13°20') subdivided into 9 sub-lords proportional to Vimshottari years.
+Sub sequence within a nakshatra starts from the nakshatra's own star lord (BPHS correct).
+Sub-sub: same proportional split applied recursively within each sub.
+
+### House significators (3 levels)
+1. Planets occupying the house (direct)
+2. Planets whose star/sub lord is an occupant (indirect)
+3. House lord (bhavesh)
+
+### 1947 India known values
+- Lagna ~37.73° → Krittika nakshatra, Star Lord = Sun
+- Moon ~93.98° → Pushya nakshatra, Star Lord = Saturn
+
+### Note
+Pilot uses whole-sign house cusps (0° of each house sign).
+Placidus cusp integration deferred to Phase 3.
+
+---
+
+## Session 18 — Varshaphala (Annual Solar Return)
+
+**Date**: 2026-03-19 | **Tests added**: 22 | **Running total**: 401
+
+### Deliverables
+- `src/calculations/varshaphala.py` — Annual Solar Return engine
+- `tests/test_varshaphala.py` — 22 tests
+
+### Concepts implemented
+| Concept | Description |
+|---------|-------------|
+| Solar Return | Binary-search for exact moment Sun returns to natal longitude |
+| Varsha Lagna | Ascendant of the solar return chart |
+| Muntha | Annual significator: `(natal_lagna_si + years_elapsed) % 12` |
+| Varsha Pati | Year Lord = sign lord of Muntha sign |
+| Tajika aspects | 5 aspects: Itthasala(60°), Ishrafa(120°), Nakta(90°), Kambool(180°), Dainya(30°) |
+
+### Binary search precision
+60 iterations → sub-arcsecond precision (~0.000001°).
+Handles 359°→0° wrap correctly via signed angular difference.
+
+### 1947 India: 1948 solar return
+- solar_return_date: 1948-08-xx (Sun returns to ~117.99° Cancer)
+- years_elapsed: 1
+- Muntha: Taurus (si=1) + 1 = Gemini (si=2)
+
+### 2026 solar return for 1947 chart
+- years_elapsed: 79
+- Muntha: (1 + 79) % 12 = 80 % 12 = 8 = **Sagittarius**
+- Varsha Pati: Jupiter (lord of Sagittarius)
+
+---
+
+## Test Count History
+
+| After Session | Tests |
+|---------------|-------|
+| 5 | 93 |
+| 10 | 222 |
+| 11 | 252 |
+| 12 | 277 |
+| 13 | 292 |
+| 14 | 312 |
+| 15 | 337 |
+| 16 | 357 |
+| 17 | 379 |
+| 18 | 401 |
