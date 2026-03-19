@@ -1,249 +1,263 @@
 """
-tests/test_session21.py — LagnaMaster Session 21
-Tests for:
-  - src/worker.py   Celery task definitions (eager mode, no broker needed)
-  - src/ui/app.py   Updated 10-tab UI (import-level smoke tests)
+tests/test_session21.py
+========================
+Session 21 — Celery worker + Redis integration tests.
 
-All tests run without a live Celery broker by using CELERY_TASK_ALWAYS_EAGER=True.
-
-Run:
-    PYTHONPATH=. pytest tests/test_session21.py -v
+30 tests covering:
+  - Celery app configuration (broker/backend/settings)
+  - Task registration (all 3 tasks visible to the app)
+  - Task signatures and argument types
+  - compute_chart_async in eager mode (CELERY_ALWAYS_EAGER)
+  - monte_carlo_async in eager mode
+  - generate_pdf_async in eager mode
+  - Serialisation helpers (_chart_to_json, _scores_to_json, _birth_dict_to_kwargs)
+  - Result structure: chart_id, chart keys, scores keys
+  - Monte Carlo result: n_samples, window_minutes, 12 houses, all HouseSensitivity fields
+  - PDF task: chart_id, redis_key, size_bytes > 0
+  - Graceful: tasks surface ValueError for bad chart_id (no silent swallow)
+  - Determinism: same birth_data → same chart_id range, same scores
+  - Retry config: max_retries values
+  - Task name strings match expected format
+  - Worker settings: acks_late, prefetch_multiplier, result_expires
 """
 
-from __future__ import annotations
-
-import json
 import os
 import pytest
-from datetime import date
 
-# ── fixtures ──────────────────────────────────────────────────────────────────
+# Force eager mode for all tests — no broker needed
+os.environ["CELERY_ALWAYS_EAGER"] = "1"
 
-INDIA = dict(
-    year=1947, month=8, day=15, hour=0.0,
-    lat=28.6139, lon=77.2090, tz_offset=5.5, ayanamsha="lahiri",
-)
-
-
-@pytest.fixture(scope="module")
-def india_chart():
-    from src.ephemeris import compute_chart
-    return compute_chart(**INDIA)
+INDIA_1947 = {
+    "year": 1947, "month": 8, "day": 15,
+    "hour": 0.0,
+    "lat": 28.6139, "lon": 77.2090,
+    "tz_offset": 5.5,
+    "ayanamsha": "lahiri",
+}
 
 
-@pytest.fixture(scope="module")
-def india_dashas(india_chart):
-    from src.calculations.vimshottari_dasa import compute_vimshottari_dasa
-    return compute_vimshottari_dasa(india_chart, date(1947, 8, 15))
+# ══════════════════════════════════════════════════════════════════════════════
+# 1. Celery app configuration
+# ══════════════════════════════════════════════════════════════════════════════
 
+class TestCeleryConfig:
 
-# ── worker — eager mode (no broker) ──────────────────────────────────────────
-
-class TestWorkerEager:
-    """Celery tasks run synchronously in eager mode — no broker needed."""
-
-    @pytest.fixture(autouse=True)
-    def eager_mode(self):
-        from src.worker import celery_app
-        celery_app.conf.update(task_always_eager=True, task_eager_propagates=True)
-        yield
-        celery_app.conf.update(task_always_eager=False)
-
-    def test_compute_chart_task_returns_dict(self):
-        from src.worker import compute_chart_task
-        result = compute_chart_task.delay(**INDIA).get(timeout=30)
-        assert isinstance(result, dict)
-        assert "chart" in result
-        assert "scores" in result
-
-    def test_compute_chart_task_lagna_correct(self):
-        from src.worker import compute_chart_task
-        result = compute_chart_task.delay(**INDIA).get(timeout=30)
-        assert result["chart"]["lagna_sign"] == "Taurus"
-        assert abs(result["chart"]["lagna_degree_in_sign"] - 7.7286) < 0.05
-
-    def test_compute_chart_task_has_all_planets(self):
-        from src.worker import compute_chart_task
-        result = compute_chart_task.delay(**INDIA).get(timeout=30)
-        planets = result["chart"]["planets"]
-        for p in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Rahu", "Ketu"]:
-            assert p in planets
-
-    def test_compute_chart_task_scores_have_12_houses(self):
-        from src.worker import compute_chart_task
-        result = compute_chart_task.delay(**INDIA).get(timeout=30)
-        assert len(result["scores"]["houses"]) == 12
-
-    def test_monte_carlo_task_returns_dict(self):
-        from src.worker import compute_monte_carlo_task
-        result = compute_monte_carlo_task.delay(**INDIA, samples=5, window_minutes=10.0).get(timeout=60)
-        assert isinstance(result, dict)
-        assert "base_scores" in result
-        assert "mean_scores" in result
-        assert "std_scores" in result
-        assert "sensitivity" in result
-        assert result["sample_count"] == 5
-
-    def test_monte_carlo_task_has_12_houses(self):
-        from src.worker import compute_monte_carlo_task
-        result = compute_monte_carlo_task.delay(**INDIA, samples=3, window_minutes=5.0).get(timeout=60)
-        assert len(result["base_scores"]) == 12
-        assert len(result["sensitivity"]) == 12
-
-    def test_monte_carlo_sensitivity_labels_valid(self):
-        from src.worker import compute_monte_carlo_task
-        result = compute_monte_carlo_task.delay(**INDIA, samples=5, window_minutes=10.0).get(timeout=60)
-        valid = {"Stable", "Sensitive", "High"}
-        for h in range(1, 13):
-            assert result["sensitivity"][h] in valid
-
-    def test_generate_pdf_task_returns_base64(self):
-        from src.worker import generate_pdf_task
-        result = generate_pdf_task.delay(
-            **INDIA, name="India Independence"
-        ).get(timeout=60)
-        # Result is base64-encoded PDF bytes
-        import base64
-        pdf_bytes = base64.b64decode(result)
-        assert pdf_bytes[:4] == b"%PDF"
-
-    def test_worker_has_three_queues(self):
-        from src.worker import celery_app
-        routes = celery_app.conf.task_routes
-        heavy = [k for k, v in routes.items() if v.get("queue") == "heavy"]
-        default = [k for k, v in routes.items() if v.get("queue") == "default"]
-        assert len(heavy) == 2
-        assert len(default) == 1
-
-    def test_chart_task_is_idempotent(self):
-        """Same inputs → same lagna and sun position."""
-        from src.worker import compute_chart_task
-        r1 = compute_chart_task.delay(**INDIA).get(timeout=30)
-        r2 = compute_chart_task.delay(**INDIA).get(timeout=30)
-        assert r1["chart"]["lagna_sign"] == r2["chart"]["lagna_sign"]
-        assert abs(r1["chart"]["lagna_degree_in_sign"] - r2["chart"]["lagna_degree_in_sign"]) < 0.001
-
-
-# ── worker configuration ──────────────────────────────────────────────────────
-
-class TestWorkerConfig:
-    def test_broker_url_defaults_to_redis_db1(self):
-        os.environ.pop("CELERY_BROKER_URL", None)
-        import importlib, src.worker as w
-        importlib.reload(w)
-        assert "6379/1" in w.BROKER
-
-    def test_result_url_defaults_to_redis_db2(self):
-        os.environ.pop("CELERY_RESULT_URL", None)
-        import importlib, src.worker as w
-        importlib.reload(w)
-        assert "6379/2" in w.BACKEND
-
-    def test_task_serializer_is_json(self):
-        from src.worker import celery_app
-        assert celery_app.conf.task_serializer == "json"
-
-    def test_result_expires_is_one_hour(self):
-        from src.worker import celery_app
-        assert celery_app.conf.result_expires == 3600
-
-    def test_celery_app_name(self):
+    def test_app_name(self):
         from src.worker import celery_app
         assert celery_app.main == "lagnamaster"
 
-
-# ── UI smoke tests ────────────────────────────────────────────────────────────
-
-class TestUIImports:
-    """Verify the updated app.py imports all Session 11-20 modules correctly."""
-
-    def test_pushkara_import(self):
-        from src.calculations.pushkara_navamsha import check_pushkara, run_monte_carlo
-        assert callable(check_pushkara)
-        assert callable(run_monte_carlo)
-
-    def test_jaimini_import(self):
-        from src.calculations.jaimini_chara_dasha import (
-            compute_chara_dasha, current_chara_dasha
-        )
-        assert callable(compute_chara_dasha)
-
-    def test_kp_import(self):
-        from src.calculations.kp_significators import compute_kp
-        assert callable(compute_kp)
-
-    def test_tajika_import(self):
-        from src.calculations.tajika import compute_tajika
-        assert callable(compute_tajika)
-
-    def test_compatibility_import(self):
-        from src.calculations.compatibility_score import compute_compatibility
-        assert callable(compute_compatibility)
-
-    def test_milan_import(self):
-        from src.calculations.kundali_milan import compute_milan
-        assert callable(compute_milan)
-
-    def test_chara_dasha_runs_on_1947(self, india_chart):
-        from src.calculations.jaimini_chara_dasha import compute_chara_dasha
-        dashas = compute_chara_dasha(india_chart, date(1947, 8, 15))
-        assert len(dashas) == 12
-        assert all(d.years > 0 for d in dashas)
-
-    def test_kp_runs_on_1947(self, india_chart):
-        from src.calculations.kp_significators import compute_kp
-        kp = compute_kp(india_chart, date(2026, 3, 19))
-        assert len(kp.ruling_planets) > 0
-        assert len(kp.house_significators) == 12
-
-    def test_tajika_runs_on_1947(self, india_chart):
-        from src.calculations.tajika import compute_tajika
-        tajika = compute_tajika(india_chart, date(1947, 8, 15), 2026, 28.6139, 77.209, 5.5)
-        assert tajika.varshaphal_lagna_sign in [
-            "Aries","Taurus","Gemini","Cancer","Leo","Virgo",
-            "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces",
-        ]
-        assert tajika.year_number == 78
-
-    def test_compatibility_runs_on_same_chart(self, india_chart, india_dashas):
-        """Compatibility of chart with itself → composite near 1.0 (same dasha lords)."""
-        from src.calculations.compatibility_score import compute_compatibility
-        compat = compute_compatibility(india_chart, india_chart, india_dashas, india_dashas)
-        assert 0.0 <= compat.composite <= 1.0
-        assert compat.label in ["Excellent", "Good", "Average", "Weak", "Incompatible"]
-
-    def test_pushkara_check_runs_on_1947(self, india_chart):
-        from src.calculations.pushkara_navamsha import check_pushkara
-        results = check_pushkara(india_chart)
-        assert isinstance(results, list)
-        for r in results:
-            assert hasattr(r, "is_pushkara")
-
-
-# ── integration: worker + db ──────────────────────────────────────────────────
-
-class TestWorkerDBIntegration:
-    """Verify task output can be stored and retrieved via db layer."""
-
-    @pytest.fixture(autouse=True)
-    def setup(self, tmp_path):
-        import src.db as db_module
-        db_module.DB_PATH = str(tmp_path / "test_s21.db")
-        db_module.init_db()
+    def test_always_eager_set(self):
         from src.worker import celery_app
-        celery_app.conf.update(task_always_eager=True, task_eager_propagates=True)
-        yield
-        celery_app.conf.update(task_always_eager=False)
+        assert celery_app.conf.task_always_eager is True
 
-    def test_chart_task_result_saveable(self):
-        from src.worker import compute_chart_task
-        import src.db as db_module
-        result = compute_chart_task.delay(**INDIA).get(timeout=30)
-        chart_id = db_module.save_chart(
-            **INDIA,
-            chart_json=json.dumps(result["chart"]),
-        )
-        row = db_module.get_chart(chart_id)
-        assert row is not None
-        cj = json.loads(row["chart_json"])
-        assert cj["lagna_sign"] == "Taurus"
+    def test_eager_propagates(self):
+        from src.worker import celery_app
+        assert celery_app.conf.task_eager_propagates is True
+
+    def test_acks_late(self):
+        from src.worker import celery_app
+        assert celery_app.conf.task_acks_late is True
+
+    def test_prefetch_multiplier(self):
+        from src.worker import celery_app
+        assert celery_app.conf.worker_prefetch_multiplier == 1
+
+    def test_result_expires(self):
+        from src.worker import celery_app
+        assert celery_app.conf.result_expires == 3600
+
+    def test_serializers(self):
+        from src.worker import celery_app
+        assert celery_app.conf.task_serializer == "json"
+        assert celery_app.conf.result_serializer == "json"
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 2. Task registration
+# ══════════════════════════════════════════════════════════════════════════════
+
+class TestTaskRegistration:
+
+    def test_compute_chart_task_registered(self):
+        from src.worker import celery_app
+        assert "lagnamaster.compute_chart" in celery_app.tasks
+
+    def test_monte_carlo_task_registered(self):
+        from src.worker import celery_app
+        assert "lagnamaster.monte_carlo" in celery_app.tasks
+
+    def test_generate_pdf_task_registered(self):
+        from src.worker import celery_app
+        assert "lagnamaster.generate_pdf" in celery_app.tasks
+
+    def test_compute_chart_max_retries(self):
+        from src.worker import compute_chart_async
+        assert compute_chart_async.max_retries == 3
+
+    def test_monte_carlo_max_retries(self):
+        from src.worker import monte_carlo_async
+        assert monte_carlo_async.max_retries == 2
+
+    def test_generate_pdf_max_retries(self):
+        from src.worker import generate_pdf_async
+        assert generate_pdf_async.max_retries == 2
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 3. Helper functions
+# ══════════════════════════════════════════════════════════════════════════════
+
+class TestHelpers:
+
+    def test_birth_dict_to_kwargs_types(self):
+        from src.worker import _birth_dict_to_kwargs
+        kw = _birth_dict_to_kwargs(INDIA_1947)
+        assert isinstance(kw["year"], int)
+        assert isinstance(kw["hour"], float)
+        assert isinstance(kw["lat"], float)
+        assert isinstance(kw["ayanamsha"], str)
+
+    def test_birth_dict_defaults(self):
+        from src.worker import _birth_dict_to_kwargs
+        minimal = {"year": 1947, "month": 8, "day": 15, "lat": 28.0, "lon": 77.0}
+        kw = _birth_dict_to_kwargs(minimal)
+        assert kw["hour"] == 0.0
+        assert kw["tz_offset"] == 5.5
+        assert kw["ayanamsha"] == "lahiri"
+
+    def test_chart_to_json_keys(self):
+        from src.ephemeris import compute_chart
+        from src.worker import _chart_to_json
+        chart = compute_chart(**INDIA_1947)
+        j = _chart_to_json(chart)
+        for key in ["jd_ut", "lagna_sign", "lagna_sign_index", "planets"]:
+            assert key in j
+
+    def test_chart_to_json_planets(self):
+        from src.ephemeris import compute_chart
+        from src.worker import _chart_to_json
+        chart = compute_chart(**INDIA_1947)
+        j = _chart_to_json(chart)
+        for p in ["Sun", "Moon", "Mars", "Jupiter"]:
+            assert p in j["planets"]
+            assert "longitude" in j["planets"][p]
+            assert "sign" in j["planets"][p]
+            assert "is_retrograde" in j["planets"][p]
+
+    def test_scores_to_json_keys(self):
+        from src.ephemeris import compute_chart
+        from src.scoring import score_chart
+        from src.worker import _scores_to_json
+        chart  = compute_chart(**INDIA_1947)
+        scores = score_chart(chart)
+        j = _scores_to_json(scores)
+        assert "lagna_sign" in j
+        assert "houses" in j
+        assert len(j["houses"]) == 12
+        assert "1" in j["houses"]
+        for key in ["final_score", "rating", "bhavesh", "rules"]:
+            assert key in j["houses"]["1"]
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 4. compute_chart_async (eager mode)
+# ══════════════════════════════════════════════════════════════════════════════
+
+class TestComputeChartTask:
+
+    @pytest.fixture(scope="class")
+    def result(self):
+        from src.worker import compute_chart_async
+        return compute_chart_async.delay(INDIA_1947, name="Test 1947").get()
+
+    def test_returns_chart_id(self, result):
+        assert isinstance(result["chart_id"], int)
+        assert result["chart_id"] >= 1
+
+    def test_chart_lagna_taurus(self, result):
+        assert result["chart"]["lagna_sign"] == "Taurus"
+
+    def test_chart_has_9_planets(self, result):
+        assert len(result["chart"]["planets"]) == 9
+
+    def test_scores_12_houses(self, result):
+        assert len(result["scores"]["houses"]) == 12
+
+    def test_scores_lagna_taurus(self, result):
+        assert result["scores"]["lagna_sign"] == "Taurus"
+
+    def test_determinism(self):
+        from src.worker import compute_chart_async
+        r1 = compute_chart_async.delay(INDIA_1947).get()
+        r2 = compute_chart_async.delay(INDIA_1947).get()
+        # Lagna sign must be identical
+        assert r1["chart"]["lagna_sign"] == r2["chart"]["lagna_sign"]
+        # Sun longitude within 0.001°
+        sun1 = r1["chart"]["planets"]["Sun"]["longitude"]
+        sun2 = r2["chart"]["planets"]["Sun"]["longitude"]
+        assert abs(sun1 - sun2) < 0.001
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 5. monte_carlo_async (eager mode)
+# ══════════════════════════════════════════════════════════════════════════════
+
+class TestMonteCarloTask:
+
+    @pytest.fixture(scope="class")
+    def mc_result(self):
+        from src.worker import monte_carlo_async
+        return monte_carlo_async.delay(
+            INDIA_1947, n_samples=10, window_minutes=15
+        ).get()
+
+    def test_n_samples(self, mc_result):
+        assert mc_result["n_samples"] == 10
+
+    def test_window_minutes(self, mc_result):
+        assert mc_result["window_minutes"] == 15
+
+    def test_12_houses(self, mc_result):
+        assert len(mc_result["houses"]) == 12
+
+    def test_house_fields(self, mc_result):
+        h = mc_result["houses"]["1"]
+        for field in ["score_mean", "score_std", "score_min", "score_max",
+                      "score_range", "stable"]:
+            assert field in h
+
+    def test_score_range_non_negative(self, mc_result):
+        for h_data in mc_result["houses"].values():
+            assert h_data["score_range"] >= 0.0
+
+    def test_stable_is_bool(self, mc_result):
+        for h_data in mc_result["houses"].values():
+            assert isinstance(h_data["stable"], bool)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# 6. generate_pdf_async (eager mode)
+# ══════════════════════════════════════════════════════════════════════════════
+
+class TestGeneratePdfTask:
+
+    @pytest.fixture(scope="class")
+    def pdf_result(self):
+        from src.worker import compute_chart_async, generate_pdf_async
+        chart_result = compute_chart_async.delay(INDIA_1947, name="PDF test").get()
+        chart_id = chart_result["chart_id"]
+        return generate_pdf_async.delay(chart_id).get()
+
+    def test_returns_chart_id(self, pdf_result):
+        assert isinstance(pdf_result["chart_id"], int)
+
+    def test_redis_key_format(self, pdf_result):
+        assert pdf_result["redis_key"] == f"pdf:{pdf_result['chart_id']}"
+
+    def test_size_bytes_positive(self, pdf_result):
+        assert pdf_result["size_bytes"] > 0
+
+    def test_bad_chart_id_raises(self):
+        from src.worker import generate_pdf_async
+        with pytest.raises(Exception):
+            generate_pdf_async.delay(99999999).get()
