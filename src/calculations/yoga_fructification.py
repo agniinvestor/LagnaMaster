@@ -64,13 +64,24 @@ def compute_amsa_level(planet: str, chart) -> tuple[int, str]:
     # 10 Dasa Varga divisions: D1,D2,D3,D7,D9,D10,D12,D16,D30,D60
     dasa_vargas = ["D1","D2","D3","D7","D9","D10","D12","D16","D30","D60"]
     count = 0
+    # DivisionalMap uses attribute access: div.D1, div.D9 etc.
     for dv in dasa_vargas:
-        si = div.get(dv, {}).get(planet)
-        if si is None:
-            # Fall back to D1 for basic
+        try:
+            varga_map = getattr(div, dv, None)
+            if varga_map is None:
+                continue
+            # varga_map is a dict {planet: sign_index}
+            if isinstance(varga_map, dict):
+                si = varga_map.get(planet)
+            elif hasattr(varga_map, planet):
+                si = getattr(varga_map, planet)
+            else:
+                si = None
+        except Exception:
+            si = None
+        if si is None and dv == "D1":
             pos = chart.planets.get(planet)
-            if pos and dv == "D1":
-                si = pos.sign_index
+            si = pos.sign_index if pos else None
         if si is not None:
             if si in _OWN.get(planet, set()):
                 count += 1
