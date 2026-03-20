@@ -122,3 +122,18 @@ def get_user_by_id(user_id: int, path=_SENTINEL) -> Optional[UserRecord]:
 
 def deactivate_user(user_id: int, path=_SENTINEL):
     with _cx(path) as c: c.execute("UPDATE users SET is_active=0 WHERE id=?", (user_id,))
+
+
+# ── Helpers for config.py (added by diagnose_and_fix.sh) ──────────────────────
+def _db_path(path=_SENTINEL) -> str:
+    """Return the resolved DB file path string."""
+    return USER_DB_PATH if path is _SENTINEL else str(path)
+
+
+def _connect(path=_SENTINEL):
+    """Return a sqlite3 connection with row_factory set."""
+    import sqlite3
+    p = _db_path(path)
+    conn = sqlite3.connect(p)
+    conn.row_factory = sqlite3.Row
+    return conn

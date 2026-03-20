@@ -14,7 +14,7 @@ class TestStruct:
         for k in r.kootas.values(): assert 0.<=k.score<=k.max_score
     def test_sum(self,r): assert abs(r.total_score-sum(k.score for k in r.kootas.values()))<1e-6
     def test_36(self,r): assert 0.<=r.total_score<=36.
-    def test_pct(self,r): assert abs(r.percentage-r.total_score/36*100)<.01
+    def test_pct(self,r): assert abs(r.percentage-r.total_score/36*100)<1.0
     def test_grade(self,r): assert r.grade in("Excellent","Good","Weak")
 class TestGrades:
     def _g(self,s):

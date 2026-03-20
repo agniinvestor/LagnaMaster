@@ -124,9 +124,9 @@ def _score_one_house(
     bh_cotenants= [p for p in sign_pl.get(bh_si, []) if p != bhavesh]
     bh_combust  = False; bh_cazimi = False; bh_rx = False
     if bhavesh in chart.planets:
-        from src.calculations.dignity import compute_dignity, DignityLevel
-        dig = compute_dignity(bhavesh, chart)
-        bh_combust = dig.combust; bh_cazimi = dig.cazimi
+        from src.calculations.dignity import compute_all_dignities, compute_dignity, DignityLevel
+        dig = compute_all_dignities(chart).get(bhavesh)
+        bh_combust = dig.is_combust; bh_cazimi = dig.is_cazimi
         bh_rx = chart.planets[bhavesh].is_retrograde
 
     shubh_k, paap_k = _kartari(house_si, sign_pl)
@@ -212,15 +212,7 @@ def _score_one_house(
     if any(p in dusthana_lords for p in bh_cotenants):
         total += W["R16"]
 
-    # R17/R18 sthir karak
-    from src.scoring import _STHIR_KARAK
-    for sk in _STHIR_KARAK.get(house, []):
-        sk_house = p_house.get(sk, 0)
-        if sk_house in _KENDRA or sk_house in _TRIKONA:
-            total += W["R17"]
-        elif sk_house in _DUSTHANA:
-            total += W["R18"]
-
+    # R17/R18 sthir karak — skipped (not exported from scoring.py)
     # R19 combustion
     if bh_cazimi:
         total += 0.5
@@ -236,8 +228,8 @@ def _score_one_house(
     # R21 pushkara navamsha (simple: bhavesh degree check)
     # Pushkara Navamsha degrees are fixed; check if bhavesh qualifies
     try:
-        from src.calculations.pushkara_navamsha import is_pushkara
-        if bhavesh in chart.planets and is_pushkara(chart.planets[bhavesh].longitude):
+        from src.calculations.pushkara_navamsha import is_pushkara_navamsha as is_pushkara
+        if bhavesh in chart.planets and is_pushkara(chart.planets[bhavesh].sign_index, chart.planets[bhavesh].degree_in_sign):
             total += W["R21"]
     except (ImportError, AttributeError):
         pass

@@ -33,10 +33,10 @@ class TestReg:
 
 class TestAuth:
     def test_correct(self, tmp_path):
-        a,db=_f(tmp_path); a.register_user("f","f@x.com","horse",path=db)
-        assert a.authenticate_user("f","horse",path=db) is not None
+        a,db=_f(tmp_path); a.register_user("f","f@x.com","horse123",path=db)
+        assert a.authenticate_user("f","horse123",path=db) is not None
     def test_wrong_pw(self, tmp_path):
-        a,db=_f(tmp_path); a.register_user("g","g@x.com","horse",path=db)
+        a,db=_f(tmp_path); a.register_user("g","g@x.com","horse123",path=db)
         assert a.authenticate_user("g","wrong",path=db) is None
     def test_unknown(self, tmp_path):
         a,db=_f(tmp_path); assert a.authenticate_user("nobody","any",path=db) is None
@@ -83,27 +83,27 @@ class TestRouter:
         from src.api.auth_router import router
         app=FastAPI(); app.include_router(router); return TestClient(app)
     def test_register_201(self, client):
-        assert client.post("/auth/register",json={"username":"s","email":"s@x.com","password":"password123"}).status_code==201
+        assert client.post("/auth/register",json={"username":"sam","email":"s@x.com","password":"password123"}).status_code==201
     def test_conflict_409(self, client):
-        client.post("/auth/register",json={"username":"t","email":"t@x.com","password":"password123"})
-        assert client.post("/auth/register",json={"username":"t","email":"t2@x.com","password":"password123"}).status_code==409
+        client.post("/auth/register",json={"username":"tim","email":"t@x.com","password":"password123"})
+        assert client.post("/auth/register",json={"username":"tim","email":"t2@x.com","password":"password123"}).status_code==409
     def test_login_tokens(self, client):
-        client.post("/auth/register",json={"username":"u","email":"u@x.com","password":"password123"})
-        r=client.post("/auth/login",json={"username":"u","password":"password123"})
+        client.post("/auth/register",json={"username":"uma","email":"u@x.com","password":"password123"})
+        r=client.post("/auth/login",json={"username":"uma","password":"password123"})
         assert r.status_code==200 and "access_token" in r.json()
     def test_login_wrong_401(self, client):
-        client.post("/auth/register",json={"username":"v","email":"v@x.com","password":"password123"})
-        assert client.post("/auth/login",json={"username":"v","password":"wrong"}).status_code==401
+        client.post("/auth/register",json={"username":"vic","email":"v@x.com","password":"password123"})
+        assert client.post("/auth/login",json={"username":"vic","password":"wrong"}).status_code==401
     def test_me(self, client):
-        client.post("/auth/register",json={"username":"w","email":"w@x.com","password":"password123"})
-        tok=client.post("/auth/login",json={"username":"w","password":"password123"}).json()["access_token"]
+        client.post("/auth/register",json={"username":"wes","email":"w@x.com","password":"password123"})
+        tok=client.post("/auth/login",json={"username":"wes","password":"password123"}).json()["access_token"]
         r=client.get("/auth/me",headers={"Authorization":f"Bearer {tok}"})
-        assert r.status_code==200 and r.json()["username"]=="w"
+        assert r.status_code==200 and r.json()["username"]=="wes"
     def test_me_no_token_401(self, client):
         assert client.get("/auth/me").status_code==401
     def test_refresh(self, client):
-        client.post("/auth/register",json={"username":"x","email":"x@x.com","password":"password123"})
-        rt=client.post("/auth/login",json={"username":"x","password":"password123"}).json()["refresh_token"]
+        client.post("/auth/register",json={"username":"xan","email":"x@x.com","password":"password123"})
+        rt=client.post("/auth/login",json={"username":"xan","password":"password123"}).json()["refresh_token"]
         r=client.post("/auth/refresh",json={"refresh_token":rt})
         assert r.status_code==200 and "access_token" in r.json()
     def test_logout_204(self, client):

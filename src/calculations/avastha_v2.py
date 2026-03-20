@@ -1,31 +1,6 @@
 """
-src/calculations/avastha_v2.py — Session 39
-
-Corrected Baaladi and full Sayanadi (12-state) avastha systems.
-Verified against REF_AvasthaRules and CALC_Avasthas workbook output.
-
-KEY FIX: Baaladi direction reverses in even signs (0-indexed even = Taurus, Cancer...).
-  Odd sign  (Aries, Gemini, Leo, Libra, Sagittarius, Aquarius):
-    0°–6°   = Bala (Infant)   25% effective
-    6°–12°  = Kumar (Child)   50%
-    12°–18° = Yuva (Prime)   100%
-    18°–24° = Vridha (Old)    50%
-    24°–30° = Mrita (Dead)     0%
-  Even sign (Taurus, Cancer, Virgo, Scorpio, Capricorn, Pisces): REVERSED
-    0°–6°   = Mrita            0%
-    6°–12°  = Vridha           50%
-    12°–18° = Yuva            100%
-    18°–24° = Kumar            50%
-    24°–30° = Bala             25%
-
-Sayanadi (12 mood states) from REF_AvasthaRules section 2.
-Score modifiers from REF_AvasthaRules section 3.
-
-Public API
-----------
-  compute_baaladi(planet, chart)   -> tuple[str, float]   (state, effectiveness)
-  compute_sayanadi(planet, chart)  -> tuple[str, float]   (state, modifier)
-  compute_avasthas_v2(chart)       -> AvasthaReportV2
+src/calculations/avastha_v2.py — Session 39 (fixed)
+Corrected Baaladi (even-sign reversal) and Sayanadi avastha systems.
 """
 from __future__ import annotations
 from dataclasses import dataclass
@@ -41,79 +16,66 @@ _NAT_FRIEND = {
     "Jupiter":{"Sun","Moon","Mars"},"Venus":{"Mercury","Saturn"},
     "Saturn":{"Mercury","Venus"},
 }
+_NAT_ENEMY = {
+    "Sun":   {"Venus","Saturn"},
+    "Moon":  set(),
+    "Mars":  {"Mercury"},
+    "Mercury":{"Moon"},
+    "Jupiter":{"Mercury","Venus"},
+    "Venus": {"Sun","Moon"},
+    "Saturn":{"Sun","Moon","Mars"},
+}
 _SIGN_LORD = {
     0:"Mars",1:"Venus",2:"Mercury",3:"Moon",4:"Sun",5:"Mercury",
     6:"Venus",7:"Mars",8:"Jupiter",9:"Saturn",10:"Saturn",11:"Jupiter",
 }
-_WATERY = {3,7,11}  # Cancer, Scorpio, Pisces
+_WATERY = {3,7,11}
 _NAT_MALEFIC = {"Sun","Mars","Saturn","Rahu","Ketu"}
 
 
 def compute_baaladi(planet: str, chart) -> tuple[str, float]:
-    """Return (state_name, effectiveness_pct) for Baaladi avastha."""
     pos = chart.planets.get(planet)
-    if not pos: return "Yuva", 1.0
-    deg  = pos.degree_in_sign
-    # Even sign index: 1(Tau),3(Can),5(Vir),7(Sco),9(Cap),11(Pis)
+    if not pos:
+        return "Yuva", 1.0
+    deg = pos.degree_in_sign
     table = _BAALADI_EVEN if pos.sign_index % 2 == 1 else _BAALADI_ODD
     for lo, hi, name, eff in table:
         if lo <= deg < hi:
             return name, eff
-    return "Bala", 0.25   # edge case at 30°
+    return "Bala", 0.25
 
 
 def compute_sayanadi(planet: str, chart) -> tuple[str, float]:
-    """
-    Sayanadi (12 mood states). Simplified to most practically used 6:
-    Mudita/Sthira (joyful/content) → +1.25×
-    Deena (defeated in war)        → ×0.5
-    Kopa (combust)                 → ×0.5
-    Kshuditha (enemy sign)         → ×0.75
-    Trashita (watery + malefic)    → ×0.75
-    Prakrita (all other)           → ×1.0
-    """
     pos = chart.planets.get(planet)
-    if not pos: return "Prakrita", 1.0
+    if not pos:
+        return "Prakrita", 1.0
 
     # Kopa: combust
     try:
-        from src.calculations.dignity import compute_dignity
-        dig = compute_dignity(planet, chart)
-        if dig.combust:
+        from src.calculations.dignity import compute_all_dignities, DignityLevel
+        dig = compute_all_dignities(chart).get(planet)
+        if dig and dig.is_combust:
             return "Kopa", 0.5
-    except Exception:
-        pass
-
-    # Check if in own/exalt sign → Sthira
-    from src.calculations.dignity import compute_dignity, DignityLevel
-    try:
-        dig = compute_dignity(planet, chart)
-        if dig.dignity in {DignityLevel.EXALT, DignityLevel.OWN_SIGN, DignityLevel.MOOLTRIKONA}:
+        if dig and dig.dignity in {DignityLevel.EXALT, DignityLevel.OWN_SIGN, DignityLevel.MOOLTRIKONA}:
             return "Sthira", 1.25
     except Exception:
         pass
 
-    # Friendly sign + aspected by benefic → Mudita
+    # Friendly sign → Mudita
     lord = _SIGN_LORD[pos.sign_index]
     if lord in _NAT_FRIEND.get(planet, set()):
-        # Check for benefic aspect (simplified: any benefic in chart aspects)
         return "Mudita", 1.25
 
     # Enemy sign → Kshuditha
-    from src.calculations.friendship import get_naisargika
-    try:
-        rel = get_naisargika(planet, lord)
-        if rel == "Enemy":
-            return "Kshuditha", 0.75
-    except Exception:
-        pass
+    if lord in _NAT_ENEMY.get(planet, set()):
+        return "Kshuditha", 0.75
 
     # Watery sign + malefic aspect → Trashita
     if pos.sign_index in _WATERY:
         for p2, p2pos in chart.planets.items():
             if p2 in _NAT_MALEFIC and p2 != planet:
                 diff = (pos.sign_index - p2pos.sign_index) % 12
-                if diff == 6:  # 7th aspect
+                if diff == 6:
                     return "Trashita", 0.75
 
     return "Prakrita", 1.0
@@ -125,18 +87,19 @@ class AvasthaV2:
     sign: str
     degree: float
     baaladi_state: str
-    baaladi_pct: float    # effectiveness
+    baaladi_pct: float
     sayanadi_state: str
     sayanadi_modifier: float
-    combined_modifier: float   # baaladi_pct × sayanadi_modifier
+    combined_modifier: float
 
 
 @dataclass
 class AvasthaReportV2:
-    planets: dict[str, AvasthaV2]
+    planets: dict
 
     def modifier_for(self, planet: str) -> float:
-        return self.planets.get(planet, AvasthaV2(planet,"",0,"Yuva",1.0,"Prakrita",1.0,1.0)).combined_modifier
+        av = self.planets.get(planet)
+        return av.combined_modifier if av else 1.0
 
 
 def compute_avasthas_v2(chart) -> AvasthaReportV2:
@@ -144,9 +107,10 @@ def compute_avasthas_v2(chart) -> AvasthaReportV2:
     result = {}
     for p in planets_7:
         pos = chart.planets.get(p)
-        if not pos: continue
-        ba_state, ba_pct  = compute_baaladi(p, chart)
-        sa_state, sa_mod  = compute_sayanadi(p, chart)
+        if not pos:
+            continue
+        ba_state, ba_pct = compute_baaladi(p, chart)
+        sa_state, sa_mod = compute_sayanadi(p, chart)
         result[p] = AvasthaV2(
             planet=p, sign=pos.sign, degree=round(pos.degree_in_sign, 4),
             baaladi_state=ba_state, baaladi_pct=ba_pct,

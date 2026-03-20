@@ -39,15 +39,15 @@ DEEPTADI_STATES = {
 
 def compute_deeptadi(planet: str, chart) -> str:
     """Return the Deeptadi state name for a planet."""
-    from src.calculations.dignity import compute_dignity, DignityLevel
-    d = compute_dignity(planet, chart)
+    from src.calculations.dignity import compute_all_dignities, DignityLevel
+    d = compute_all_dignities(chart).get(planet)
     if d.dignity in {DignityLevel.EXALT, DignityLevel.MOOLTRIKONA}:
         return "Deepta"
     if d.dignity == DignityLevel.OWN_SIGN:
         return "Swastha"
     if d.dignity == DignityLevel.FRIEND_SIGN:
         return "Mudita"
-    if d.dignity == DignityLevel.NEUTRAL:
+    if d.dignity == DignityLevel.NEUTRAL_SIGN:
         return "Shanta"
     if d.dignity == DignityLevel.ENEMY_SIGN:
         return "Dukha"
@@ -101,7 +101,7 @@ LAJJITADI_STATES = {
 def compute_lajjitadi(chart) -> LajjitadiResult:
     """Compute Lajjitadi state for the 5th house lord (most pressure-relevant)."""
     from src.calculations.house_lord import compute_house_map
-    from src.calculations.dignity import compute_dignity, DignityLevel
+    from src.calculations.dignity import compute_all_dignities, DignityLevel
 
     hmap = compute_house_map(chart)
     fifth_lord = hmap.house_lord[4]   # 0-indexed: index 4 = H5
@@ -115,8 +115,8 @@ def compute_lajjitadi(chart) -> LajjitadiResult:
     in_kendra   = fifth_lord_house in {1, 4, 7, 10}
     in_trikona  = fifth_lord_house in {1, 5, 9}
 
-    dig = compute_dignity(fifth_lord, chart)
-    combust = dig.combust
+    dig = compute_all_dignities(chart).get(fifth_lord)
+    combust = dig.is_combust
     exalted = dig.dignity in {DignityLevel.EXALT, DignityLevel.MOOLTRIKONA}
     own_sign = dig.dignity == DignityLevel.OWN_SIGN
 

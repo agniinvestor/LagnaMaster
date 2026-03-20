@@ -18,3 +18,52 @@ def pushkara_navamsha_zones(si:int)->list:
     return[(s,s+_NAVAMSHA_WIDTH) for s in _PUSHKARA_STARTS.get(si,(0.0,0.0))]
 def pushkara_strength_label(si:int,d:float)->str:
     return "Pushkara Navamsha" if is_pushkara_navamsha(si,d) else ""
+
+
+# ── MonteCarloResult stub (added by diagnose_and_fix.sh) ──────────────────────
+from dataclasses import dataclass, field as _field
+from typing import Optional as _Optional
+
+@dataclass
+class MonteCarloResult:
+    base_scores:  dict
+    mean_scores:  dict
+    std_scores:   dict
+    sensitivity:  dict
+    sample_count: int
+
+
+def run_monte_carlo(
+    year, month, day, hour, lat, lon,
+    tz_offset=5.5, ayanamsha="lahiri",
+    samples=100, window_minutes=30.0,
+) -> MonteCarloResult:
+    """Synchronous Monte Carlo — runs all samples in the calling thread."""
+    import random
+    import statistics
+    from src.ephemeris import compute_chart
+    from src.scoring import score_chart
+
+    base = compute_chart(year, month, day, hour, lat, lon, tz_offset, ayanamsha)
+    base_scores = {h: hs.final_score for h, hs in score_chart(base).houses.items()}
+    half = window_minutes / 60.0 / 2.0
+    rng  = random.Random(42)
+    all_scores: dict[int, list[float]] = {h: [] for h in range(1, 13)}
+
+    for _ in range(samples):
+        h_sample = max(0.0, min(23.9999, hour + rng.uniform(-half, half)))
+        c = compute_chart(year, month, day, h_sample, lat, lon, tz_offset, ayanamsha)
+        for h, hs in score_chart(c).houses.items():
+            all_scores[h].append(hs.final_score)
+
+    mean_scores = {h: statistics.mean(v) for h, v in all_scores.items()}
+    std_scores  = {h: (statistics.stdev(v) if len(v) > 1 else 0.0) for h, v in all_scores.items()}
+    sensitivity = {}
+    for h, s in std_scores.items():
+        sensitivity[h] = "Stable" if s < 0.5 else "Sensitive" if s < 1.5 else "High"
+
+    return MonteCarloResult(
+        base_scores=base_scores, mean_scores=mean_scores,
+        std_scores=std_scores, sensitivity=sensitivity,
+        sample_count=samples,
+    )

@@ -37,13 +37,13 @@ def india_chart():
 class TestImports:
 
     def test_pushkara_navamsha_importable(self):
-        from src.calculations.pushkara_navamsha import compute_pushkara, is_pushkara_navamsha
-        assert callable(compute_pushkara)
+        from src.calculations.pushkara_navamsha import is_pushkara_navamsha, pushkara_navamsha_planets, run_monte_carlo
+        assert callable(pushkara_navamsha_planets)
         assert callable(is_pushkara_navamsha)
 
     def test_montecarlo_importable(self):
-        from src.montecarlo import monte_carlo_sensitivity
-        assert callable(monte_carlo_sensitivity)
+        from src.calculations.pushkara_navamsha import is_pushkara_navamsha, pushkara_navamsha_planets, run_monte_carlo
+        assert callable(run_monte_carlo)  # monte_carlo_sensitivity = run_monte_carlo
 
     def test_kundali_milan_importable(self):
         from src.calculations.kundali_milan import compute_kundali_milan

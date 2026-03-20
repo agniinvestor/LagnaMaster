@@ -114,7 +114,7 @@ def structural_vulnerability(chart) -> tuple[float, list[str]]:
             score += 2.0; drivers.append("Moon debilitated")
         elif moon_dig.dignity == DignityLevel.ENEMY_SIGN:
             score += 1.0; drivers.append("Moon in enemy sign")
-        if moon_dig.combust:
+        if moon_dig.is_combust:
             score += 1.5; drivers.append("Moon combust")
 
     # Saturn-Moon relationship (chronic stress indicator)

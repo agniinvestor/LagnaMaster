@@ -215,3 +215,16 @@ def chord_status(task_id: str) -> dict:
     if state == "FAILURE":
         return {"state": "FAILURE", "error": str(result.result)}
     return {"state": state}
+
+
+# ── Stub references so imports don't NameError when Celery is unavailable ──────
+if not _CELERY:
+    class _TaskStub:
+        """Placeholder when Celery is not configured."""
+        def delay(self, *a, **kw):
+            raise RuntimeError("Celery not available")
+        def s(self, *a, **kw):
+            raise RuntimeError("Celery not available")
+    _sample_task    = _TaskStub()   # noqa: F811
+    _aggregate_task = _TaskStub()   # noqa: F811
+    _sample_task_stub = True

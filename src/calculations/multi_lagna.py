@@ -119,7 +119,16 @@ def compute_karakamsha(chart) -> KarakamshaResult:
     from src.calculations.chara_karak import compute_chara_karakas
     from src.calculations.panchanga import compute_navamsha_chart
     karakas = compute_chara_karakas(chart)
-    ak_planet = next((p for p, r in karakas.items() if r == "AK"), "Sun")
+    # Robust AK lookup: handles dict {planet: role} or list [(planet, role)]
+    if hasattr(karakas, "items"):
+        ak_planet = next((pl for pl, r in karakas.items() if r == "AK"), "Sun")
+    elif karakas:
+        try:
+            ak_planet = next((pl for pl, r in karakas if r == "AK"), "Sun")
+        except TypeError:
+            ak_planet = "Sun"
+    else:
+        ak_planet = "Sun"
     ak_d1_si  = chart.planets[ak_planet].sign_index
     d9_map    = compute_navamsha_chart(chart)
     ak_d9_si  = d9_map.get(ak_planet, 0)

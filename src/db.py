@@ -1,3 +1,9 @@
+from __future__ import annotations
+from pathlib import Path
+import json
+import sqlite3
+from contextlib import contextmanager
+from datetime import datetime, timezone
 """
 src/db.py
 ==========
@@ -5,32 +11,23 @@ SQLite database setup and helpers for chart persistence.
 Immutable insert pattern: charts are never updated, only appended.
 """
 
-from __future__ import annotations
-import json
-import sqlite3
-from contextlib import contextmanager
-from datetime import datetime, timezone
-from pathlib import Path
 
 DB_PATH = Path(__file__).parent.parent / "data" / "charts.db"
 
-
 _SENTINEL = object()
-
 
 def _resolve(path) -> Path:
     """Return path, defaulting to the current DB_PATH module variable."""
     return DB_PATH if path is _SENTINEL else path
 
-
 def _conn(path=_SENTINEL) -> sqlite3.Connection:
     p = _resolve(path)
+    p = Path(str(p))
     p.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(str(p))
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA journal_mode=WAL")
     return conn
-
 
 @contextmanager
 def get_db(path=_SENTINEL):
@@ -40,7 +37,6 @@ def get_db(path=_SENTINEL):
         conn.commit()
     finally:
         conn.close()
-
 
 def init_db(path=_SENTINEL) -> None:
     """Create tables if they don't exist."""
@@ -71,7 +67,6 @@ def init_db(path=_SENTINEL) -> None:
             );
         """)
 
-
 def save_chart(
     year: int, month: int, day: int,
     hour: float, lat: float, lon: float,
@@ -99,7 +94,6 @@ def save_chart(
         )
         return cur.lastrowid
 
-
 def get_chart(chart_id: int, path=_SENTINEL) -> dict | None:
     with get_db(_resolve(path)) as conn:
         row = conn.execute(
@@ -111,7 +105,6 @@ def get_chart(chart_id: int, path=_SENTINEL) -> dict | None:
         d["chart_json"]  = json.loads(d["chart_json"])
         d["scores_json"] = json.loads(d["scores_json"]) if d["scores_json"] else None
         return d
-
 
 def list_charts(limit: int = 50, path=_SENTINEL) -> list[dict]:
     with get_db(_resolve(path)) as conn:
