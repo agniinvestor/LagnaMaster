@@ -40,24 +40,25 @@ def log_session(user_id: str, domain: str = "general",
                 db_path: str | Path = "lagna.db") -> None:
     ensure_session_table(db_path)
     with sqlite3.connect(str(db_path)) as conn:
-        conn.execute("INSERT INTO session_log (user_id, domain) VALUES (?, ?)",
-                     (user_id, domain))
+        conn.execute("INSERT INTO session_log (user_id, domain, started_at) VALUES (?, ?, ?)",
+                     (user_id, domain, __import__('datetime').datetime.now().isoformat()))
 
 
 def check_dependency_status(user_id: str,
                               db_path: str | Path = "lagna.db") -> DependencyStatus:
     ensure_session_table(db_path)
     today = date.today().isoformat()
-    week_ago = (date.today().replace(day=date.today().day - 7)).isoformat()
+    week_ago = (date.today() - __import__('datetime').timedelta(days=7)).isoformat()
 
     with sqlite3.connect(str(db_path)) as conn:
+        # Use string prefix match so timezone offset in stored datetime doesn't matter
         today_count = conn.execute("""
             SELECT COUNT(*) FROM session_log
-            WHERE user_id=? AND DATE(started_at)=?
-        """, (user_id, today)).fetchone()[0]
+            WHERE user_id=? AND started_at LIKE ?
+        """, (user_id, today + "%")).fetchone()[0]
         week_count = conn.execute("""
             SELECT COUNT(*) FROM session_log
-            WHERE user_id=? AND DATE(started_at) >= ?
+            WHERE user_id=? AND started_at >= ?
         """, (user_id, week_ago)).fetchone()[0]
 
     is_overuse = today_count >= _DAILY_CAP * 2 or week_count >= _WEEKLY_CAP * 1.5
