@@ -339,3 +339,63 @@ H4 Cancer has 6 planets. H1 is empty but some kendras have planets (H4=✓, H6=n
 No "empty kendras" exception fires because H4 (Cancer) is occupied.
 Combust check: Venus 22.56° + Saturn 20.47° both in Cancer with Sun 27.99° —
 Venus within combust orb of Sun (5.43°, standard orb 10°), Venus IS combust.
+
+---
+
+## Consumer Product Vision (March 2026)
+
+### Design review: Sessions 71–90 roadmap
+
+Approved product direction following architectural review against GPT product design spec.
+
+**Readiness gap analysis (Session 70 baseline):**
+Engine computation layer: ~100% complete.
+Language/safety layer: ~0% — blocking consumer launch.
+Privacy/legal: ~15% — blocking consumer launch.
+Consumer frontend: ~10% (Streamlit analyst tool exists; Bloomberg consumer UI does not).
+Feedback governance: ~20% (empirica event log exists; human review queue does not).
+Overall consumer readiness: ~25%.
+
+**Critical architectural decision confirmed:**
+Raw LPI and house scores must be permanently gated behind L3 opt-in.
+Engine modules are never called directly from consumer-facing endpoints.
+All consumer traffic passes through the four-stage guidance pipeline.
+This single constraint eliminates the largest category of psychological harm risk.
+
+**Four blocking gaps before any external user sees the product:**
+1. score_to_language.py + fatalism_filter.py (S71, S72)
+2. explainability_tiers.py (S73)
+3. GDPR/DPDP consent and deletion flows (S76)
+4. Bloomberg-style consumer frontend (S79–S83)
+
+**Score-to-language mapping rationale:**
+A user who sees "−4.2" next to Wealth receives a potential psychological harm.
+The 5-bar signal system (inspired by mobile signal strength indicators) communicates
+direction without inviting numerical comparison, obsession, or fatalism.
+"Navigate carefully" preserves the signal while removing the catastrophe framing.
+
+**Fatalism filter rationale:**
+The engine produces technically correct output. "8th house affliction" is a valid
+classical descriptor. But presented verbatim to a consumer, it produces fear, not
+insight. The filter is not whitewashing — it preserves signal direction while
+removing determinism. "Significant resistance in health area" and "health crisis
+indicated" carry the same actionable meaning; only the second causes harm.
+
+**Dependency prevention rationale:**
+Jyotish is traditionally a tool for self-understanding and dharma alignment, not
+compulsive fate-checking. The product actively discourages overuse: no streaks,
+no badges, no unsolicited notifications, session frequency caps, and an explicit
+philosophy statement in onboarding that guidance is most useful when combined with
+personal judgment and trusted advisors.
+
+**Family consent rationale:**
+Computing compatibility scores for a person who has not consented to use the platform
+is a privacy violation regardless of the consenting party's intentions.
+Each family member is a separate consent principal. Non-consenting members are
+excluded from all analysis. The Kundali Milan engine exists but is gated.
+
+**Practitioner handoff rationale:**
+The confidence model (S69) already produces "requires expert review" flags.
+For these cases, the platform should not attempt to answer — it should connect the
+user to a verified Jyotish practitioner. LagnaMaster is the tool; the practitioner
+is the expert. This boundary preserves human dignity and avoids overreach.

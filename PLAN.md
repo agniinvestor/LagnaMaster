@@ -258,3 +258,193 @@ Addresses GPT Gap 9. Seven checks with severity ratings:
   Hemisphere imbalance (Moderate) — all planets in visible/invisible half
   Score extreme (Critical/Advisory) — average D1 < −2.5 or > +2.5
 `special_rules_apply` list names specific BPHS doctrines triggered.
+
+---
+
+## Consumer Product Vision
+
+Approved design direction (March 2026):
+
+**Product:** Personal Timing & Guidance Companion
+**Aesthetic:** Bloomberg Terminal — professional, data-dense, calm, no mysticism
+**Core constraint:** Raw scores permanently gated behind L3 opt-in
+**Signal system:** 5-bar (mobile-signal style), not percentages or star ratings
+**Language:** Possibility framing, not deterministic claims
+**Architecture:** All consumer traffic passes through the guidance pipeline;
+                  engine modules are never called directly by consumers
+
+**Readiness assessment (as of Session 70):**
+- Engine layer: ~100% complete (63 modules, 920 tests)
+- Language/safety layer: ~0% (Phase 10 — blocking)
+- Privacy/legal: ~15% (Phase 11 — blocking)
+- Consumer frontend: ~10% (Phase 12)
+- Feedback governance: ~20% (Phase 13)
+- Educational/mature features: ~0% (Phase 14)
+- Overall consumer readiness: ~25%
+
+---
+
+## Phase 10 — Language & Safety Layer (Sessions 71–75)
+**Status: PLANNED — blocking consumer launch**
+
+### Session 71 — Score-to-language transformation
+**File:** `src/guidance/score_to_language.py`
+Maps every numerical engine output to a human-safe guidance sentence.
+5-tier system: Clear passage / Favourable / Mixed / Navigate carefully / Significant resistance.
+Signal bars: 5 filled = strong, 0 filled = significant resistance.
+Raw scores NEVER passed through to consumer API responses at L1 or L2.
+Timing labels avoid deterministic language: "navigate carefully" not "bad period".
+
+### Session 72 — Fatalism filter
+**File:** `src/guidance/fatalism_filter.py`
+Post-processor that scans all generated text for deterministic patterns:
+"will fail", "doomed", "impossible", "never", "ruined", "crisis", "death".
+Rewrites using possibility framing while preserving signal direction.
+Not whitewashing: "significant resistance" is preserved; "financial ruin" is not.
+Operates on all narrative output before any API response is formed.
+
+### Session 73 — Three-tier explainability engine
+**File:** `src/guidance/explainability_tiers.py`
+L1 (default): single guidance sentence + signal bar + timing label. No factors.
+L2 (on "Why?" click): 3–5 bullet factors. Planet names and timing triggers allowed.
+    No scores, no Shadbala components, no AV rekhas.
+L3 (explicit opt-in modal): full technical trace — Shadbala, AV, rule firings,
+    raw house scores, LPI breakdown. Clearly labelled "Advanced technical view".
+    Opt-in resets each session (not persisted, to prevent normalisation of raw scores).
+
+### Session 74 — Guidance API
+**File:** `src/guidance/guidance_api.py`
+Single consumer-facing contract. POST /guidance → GuidanceResponse.
+Fields: heading, summary (L1), factors (L2), timing_note, confidence_label,
+        signal_bars (0–5), timing_quality, disclaimer.
+All engine calls internal. No raw scores in response schema at L1/L2.
+Domain parameter routes to domain_weighting.py weights automatically.
+on_date parameter triggers promise_engine.py manifestation check.
+
+### Session 75 — Disclaimer and dependency prevention engine
+**File:** `src/guidance/disclaimer_engine.py`
+Domain-specific scope disclaimers: career → "not financial advice",
+health → "consult a medical professional", relationships → "reflection tool only".
+Dependency prevention: after 3 sessions/day or 15/week, non-intrusive reminder
+that guidance is most useful combined with personal judgment and trusted advisors.
+No usage data shared with third parties. No streak mechanics.
+
+---
+
+## Phase 11 — Privacy & Legal Compliance (Sessions 76–78)
+**Status: PLANNED — blocking consumer launch**
+
+### Session 76 — Consent engine + right to erasure
+**File:** `src/privacy/consent_engine.py`
+Consent records: user_id, purpose, granted_at, withdrawn_at, jurisdiction, version.
+GDPR Article 7 compliant. right_to_erasure() cascade: removes all computed outputs,
+birth data, and event logs; replaces with tombstone record preserving deletion timestamp.
+DPDP Act (India) and CCPA/CPRA equivalent flows.
+Age gate: birth year check — under-18 blocks chart creation with explanation.
+
+### Session 77 — Family consent gates
+**File:** `src/privacy/family_consent.py`
+Each family member is a separate consent principal.
+Non-consenting members excluded from all cross-chart analysis.
+Kundali Milan (compatibility) requires active consent from both individuals.
+Controls: add member, revoke consent, delete member data independently.
+Cross-chart insights shown only when all involved parties have active consent.
+
+### Session 78 — Data minimisation
+**File:** `src/privacy/data_minimisation.py`
+Audit pass: birth time stored to minute precision only (not seconds).
+IP addresses hashed on ingress. Location stored to city level only.
+Retention policy: raw birth data deleted after 90 days of user inactivity.
+Computed chart retained (reproducible from birth data on demand).
+Event log anonymised after 1 year (user_id replaced with hash).
+No secondary monetisation of any user data.
+
+---
+
+## Phase 12 — Consumer Frontend (Sessions 79–83)
+**Status: PLANNED — beta launch gate**
+
+### Session 79 — Dashboard shell
+Next.js 14, TypeScript, Tailwind. Dark neutral palette. Structured panel layout.
+No astrology imagery, no mysticism styling. Bloomberg Terminal aesthetic.
+Left nav (domains), center (primary guidance), right (timing sidebar).
+Typography-first design. Professional and calm.
+
+### Session 80 — Domain dashboard panels
+One panel per domain (Career, Relationships, Health, Wealth, Spirituality, Learning).
+Each panel: headline sentence (L1) + 3-item factor list (L2) + timing signal bar
++ confidence dot (green/amber/grey). Raw scores never visible at L1/L2.
+Domain-specific axis weights (from domain_weighting.py) applied automatically.
+
+### Session 81 — Timing calendar
+90-day forward view. Days coloured by net activation: deep blue (clear passage),
+neutral grey (mixed), amber (navigate carefully). No "bad day" language.
+Click any day: domain activation status, active dasha/antardasha, transit AV quality.
+Promise engine checks which domains are activated vs blocked for each day.
+
+### Session 82 — Layered explanation UI
+Each guidance card has a "Why?" button → expands to L2 factors.
+L2 has "Show technical detail" → consent modal → L3 full trace.
+L3 clearly labelled "Advanced technical view — for practitioners and advanced students".
+L3 opt-in resets on page reload. No persistent L3 mode.
+
+### Session 83 — Onboarding and consent flow
+4-screen onboarding: what LagnaMaster is / what it is not / how to use it /
+consent capture. Users who decline cannot proceed. Revisitable from settings.
+Jurisdiction detection for appropriate legal language (GDPR vs DPDP vs CCPA).
+Clear statement: "This is a reflective tool inspired by Jyotish principles.
+It is not a predictor, not medical advice, not financial advice."
+
+---
+
+## Phase 13 — Feedback Governance (Sessions 84–86)
+**Status: PLANNED — within 60 days of beta launch**
+
+### Session 84 — Human-supervised feedback loop
+Users mark guidance as helpful / not helpful / concerning.
+Concerning flags → human review queue (never automated retrain).
+Helpful/not-helpful → output quality monitoring only.
+Reproducibility lock: any guidance output is recomputable from chart + date + version.
+Past outputs never silently change after user interaction.
+
+### Session 85 — Harm escalation
+Pattern detector on usage signals: same negative domain viewed repeatedly,
+very high session frequency, distressed free-text.
+Does not intervene automatically. Surfaces a gentle, non-alarming prompt:
+"You've been reflecting on this area a lot. Speaking with a trusted person
+or counsellor may offer perspectives we can't."
+No crisis resources surfaced unless explicitly requested by the user.
+
+### Session 86 — Dependency prevention
+Session frequency monitor. After 3 sessions/day or 15/week: non-intrusive reminder.
+No streak mechanics, no badges, no engagement notifications.
+Usage data not shared with advertisers or third parties.
+Product actively discourages compulsive checking.
+
+---
+
+## Phase 14 — Maturity Features (Sessions 87–90)
+**Status: PLANNED — 3–6 months post-launch**
+
+### Session 87 — Educational layer
+"Learn" mode alongside "Guide" mode. Explains how each factor arises in plain language.
+Connected to rule_interaction.py and narrative.py. Never shows raw scores.
+Shows classical reasoning: "Jupiter's aspect on your 10th house strengthens career
+indicators because Jupiter is a natural benefic aspecting a karma house."
+
+### Session 88 — Reflection prompts
+Converts guidance from declarative to Socratic. Instead of "this period activates
+career themes", prompts: "What feels most significant in your professional life
+right now?" Aligned with Jyotish's traditional purpose of self-understanding,
+not prediction.
+
+### Session 89 — Practitioner handoff
+When confidence model flags "requires expert review", offers referral to verified
+Jyotish practitioners (opt-in directory). User can share a sanitised chart summary
+(no raw scores) with the practitioner. LagnaMaster is the tool; the practitioner
+is the expert. Clear separation maintained.
+
+### Session 90 — Mobile
+Lightweight React Native companion. Push notifications only for user-scheduled
+timing alerts (never unsolicited). No notification streak mechanics.
+Mobile data stored locally by default, synced to server with explicit consent only.

@@ -302,3 +302,87 @@ Verdict mapping: ≥0.75=Full, ≥0.50=Partial, ≥0.25=Weak, <0.25=Minimal.
 32. Dispositor chain terminates at planet in own sign (max depth 9, cycle-safe)
 33. Upachaya age modifier: 35y = 0.80×, 60y = 1.00× (full maturation)
 34. Confidence: requires_expert_review when label="Uncertain" OR flags ≥ 3
+
+---
+
+## Consumer Product Layer (Phases 10–14)
+
+### Architecture
+
+All consumer traffic passes through a four-stage pipeline before reaching the user.
+Engine modules are never called directly from consumer-facing endpoints.
+
+```
+guidance_api.py
+  └─ score_to_language.py     Map engine scores to 5-tier signal system
+  └─ explainability_tiers.py  Gate L1/L2/L3 content by depth parameter
+  └─ fatalism_filter.py       Rewrite deterministic/catastrophising language
+  └─ disclaimer_engine.py     Append scope disclaimers + dependency nudges
+```
+
+### Guidance pipeline modules (Phase 10)
+
+| Module | Key function | Purpose |
+|--------|-------------|---------|
+| score_to_language.py | score_to_signal(score) → SignalLevel | 5-tier score mapping |
+| fatalism_filter.py | filter_output(text) → str | Rewrite deterministic language |
+| explainability_tiers.py | explain(engine_result, depth) → GuidanceContent | L1/L2/L3 gating |
+| guidance_api.py | get_guidance(chart_id, domain, depth, on_date) → GuidanceResponse | Single consumer contract |
+| disclaimer_engine.py | append_disclaimer(response, domain, session_count) → GuidanceResponse | Scope limiting |
+
+### Privacy modules (Phase 11)
+
+| Module | Key function | Regulation |
+|--------|-------------|-----------|
+| consent_engine.py | grant_consent() + right_to_erasure() | GDPR Art.7, Art.17 |
+| family_consent.py | add_family_member() + revoke_consent() | GDPR + DPDP |
+| data_minimisation.py | audit_stored_fields() + apply_retention_policy() | GDPR Art.5 |
+
+### Score-to-signal reference
+
+| Score | Signal bars | Timing label | Guidance tone |
+|-------|------------|-------------|--------------|
+| ≥ +3.0 | ●●●●● | Clear passage | Affirming, action-oriented |
+| +1.5 to +3 | ●●●●○ | Favourable | Supportive, encouraging |
+| +0.5 to +1.5 | ●●●○○ | Mixed — lean in | Balanced, preparation-focused |
+| −0.5 to +0.5 | ●●○○○ | Neutral | Neither/nor, reflective |
+| −1.5 to −0.5 | ●○○○○ | Navigate carefully | Patient, strategic |
+| ≤ −1.5 | ○○○○○ | Significant resistance | Foundation-building, not forcing |
+
+### Fatalism filter word-level rules
+
+Blocked patterns (trigger rewrite): "will fail", "doomed", "impossible", "never
+recover", "ruined", "financial ruin", "health crisis", "death", "destroyed",
+"no hope", "certain to", "guaranteed to fail".
+
+Rewrite rules:
+- Outcome certainty → outcome tendency ("will struggle" → "may face resistance")
+- Permanence → period-bound ("never" → "in this period")
+- Catastrophe → challenge ("crisis" → "significant challenge")
+- Fatalism → agency ("doomed to" → "may benefit from careful preparation for")
+
+### Consumer design constraints (invariants 35–42)
+
+35. Raw LPI and house scores permanently gated behind L3 explicit opt-in
+36. L3 opt-in resets each session — no persistent L3 mode for consumers
+37. Signal system is 5-bar (0–5), never percentages or star ratings
+38. All guidance uses possibility language, never deterministic claims
+39. Feedback loop is human-supervised only — no automated parameter changes
+40. Right-to-erasure cascade is total: outputs + birth data + event log → tombstone
+41. Family chart cross-analysis requires active consent from every individual
+42. Session frequency caps: ≥3/day or ≥15/week triggers dependency nudge
+
+### Risk register
+
+| Risk | Severity | Mitigation |
+|------|---------|-----------|
+| User fatalism from negative scores | High | Score-to-language layer; scores never shown at L1/L2 |
+| Dependency / compulsive checking | High | Session frequency monitor; no streak mechanics |
+| Medical/financial advice claims | Critical | Disclaimer engine; explicit product scope statement |
+| GDPR non-compliance | Critical | Consent engine + right-to-erasure (S76) |
+| Child exposure | High | Age gate at chart creation (under-18 blocked) |
+| Family profiling without consent | High | Per-person consent gate (S77) |
+| Feedback loop manipulation | Medium | Human-supervised queue; no auto-retrain |
+| Cultural insensitivity | Medium | Possibility framing; no deterministic cultural claims |
+| Expert review bypass | Medium | Confidence model flags routed to practitioner handoff |
+| Birth time sensitivity harm | Low | Confidence indicators; sensitivity alerts in L2 |
