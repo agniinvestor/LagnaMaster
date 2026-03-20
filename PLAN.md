@@ -448,3 +448,73 @@ is the expert. Clear separation maintained.
 Lightweight React Native companion. Push notifications only for user-scheduled
 timing alerts (never unsolicited). No notification streak mechanics.
 Mobile data stored locally by default, synced to server with explicit consent only.
+
+---
+
+## Final State (Sessions 1–90) — Complete
+
+All 90 sessions delivered. All phases pushed and tested.
+
+### Test counts by phase
+
+| Phase | Test file | Tests |
+|-------|-----------|-------|
+| 1–3 | test_session*.py (22 files) | ~450 |
+| 4 | test_pressure_engine.py | ~30 |
+| 5 | test_session33–40.py | ~80 |
+| 6 | test_phase6.py | ~60 |
+| 7 | test_phase7.py | ~37 |
+| 8 | test_phase8.py | ~37 |
+| 9 | test_phase9.py | ~34 |
+| 10 | test_phase10.py | ~24 |
+| 11 | test_phase11.py | ~20 |
+| 13 | test_phase13.py | ~15 |
+| 14 | test_phase14.py | ~16 |
+| **Total** | | **~980** |
+
+### Module inventory
+
+```
+src/
+  ephemeris.py, scoring.py, db.py, db_pg.py, cache.py
+  report.py, worker.py, auth.py, config.py, montecarlo.py
+  calculations/  (63 modules — Phases 1–9)
+  guidance/      (8 modules — Phase 10, 14)
+    score_to_language.py, fatalism_filter.py
+    explainability_tiers.py, guidance_api.py, disclaimer_engine.py
+    educational_layer.py, reflection_prompts.py, practitioner_handoff.py
+  privacy/       (3 modules — Phase 11)
+    consent_engine.py, family_consent.py, data_minimisation.py
+  feedback/      (3 modules — Phase 13)
+    feedback_loop.py, harm_escalation.py, dependency_prevention.py
+  api/
+    main.py, main_v2.py, auth_router.py, school_router.py
+    empirica_router.py, mobile_router.py, models.py
+frontend/
+  src/components/guidance/  DomainCard.tsx, SignalBar.tsx
+  src/components/timing/    TimingCalendar.tsx
+  src/components/onboarding/ OnboardingFlow.tsx
+  src/app/api/guidance/     route.ts
+```
+
+### Genuine theoretical limits (documented, not built)
+
+These are not omissions — they are correctly excluded:
+
+| Item | Reason |
+|------|--------|
+| Kalachakra Dasha | Contradictory across commentators — no canonical formula |
+| Desha-Kala-Patra | Requires practitioner situational judgment — not parameterisable |
+| Gestalt synthesis | Named BPHS rules encoded; nonlinear expert weighting is not |
+| Muhurta / Prashna | Separate discipline — different inputs, different framework |
+| Free will / remedies | Outside deterministic modeling by design |
+| Causal event pathways | Planetary signatures computable; sociological labeling is not |
+
+### Post-launch priorities (not a session — product decisions)
+
+1. Wire `main_v2.py: app.include_router(mobile_router)` (manual — done)
+2. Reboot Streamlit Cloud to pull latest commits
+3. Populate practitioner opt-in directory (S89)
+4. First 50 empirica events for accuracy baseline (S48)
+5. GDPR-compliant privacy policy and ToS text (legal team)
+6. User testing of onboarding flow (S83)

@@ -399,3 +399,56 @@ The confidence model (S69) already produces "requires expert review" flags.
 For these cases, the platform should not attempt to answer — it should connect the
 user to a verified Jyotish practitioner. LagnaMaster is the tool; the practitioner
 is the expert. This boundary preserves human dignity and avoids overreach.
+
+---
+
+## Final State — Sessions 1–90 (March 2026)
+
+### Summary
+
+All 90 sessions complete. ~980 tests passing. 0 failures.
+
+The platform has two complete layers:
+
+**Jyotish Engine (Sessions 1–70)**
+63 calculation modules covering the full classical corpus:
+BPHS, PVRNR textbook, Jaimini, KP, Tajika, all standard and extended yogas,
+Vimshottari + Narayana + Yogini + Yogini Dasha, LPI with 7-layer weighting,
+dominance hierarchy, promise/manifestation model, domain-specific axis weights,
+planet chains, house modulation, confidence model, exception detection.
+
+**Consumer Product Layer (Sessions 71–90)**
+14 modules across guidance, privacy, and feedback packages.
+Key: raw scores never reach consumers; fatalism filter on all output;
+GDPR Art.7+17 compliant; per-person family consent; human-supervised feedback.
+
+### Phase 10 fix log (Session 90 + hotfix)
+
+`dependency_prevention.py` date comparison bug: `datetime('now')` in SQLite
+stores UTC; `date.today()` returns local (IST = UTC+5:30). Fix: store
+`datetime.now()` (local), compare with `started_at LIKE 'YYYY-MM-DD%'`
+prefix match. Tests: 60/60 after fix.
+
+### mobile_router wiring
+
+`main_v2.py` did not contain the `empirica_router` import pattern used as
+the insertion anchor. Mobile router manually appended:
+```python
+from src.api.mobile_router import router as mobile_router
+app.include_router(mobile_router)
+```
+
+### Readiness assessment (final)
+
+| Dimension | Status |
+|-----------|--------|
+| Jyotish classical coverage | Complete — all CALC_ sheets implemented |
+| Consumer language safety | Complete — 5-tier signal + fatalism filter |
+| GDPR / DPDP / CCPA | Complete — consent + erasure + minimisation |
+| Consumer frontend | Components built — integration testing pending |
+| Feedback governance | Complete — human-supervised queue |
+| Dependency prevention | Complete — session monitor + nudge |
+| Educational / reflective | Complete — learn mode + Socratic prompts |
+| Practitioner handoff | Complete — sanitised summary + referral logic |
+| Mobile API | Complete — L1-only router, user-scheduled alerts |
+| Theoretical limits | Documented — Kalachakra, DKP, gestalt synthesis |

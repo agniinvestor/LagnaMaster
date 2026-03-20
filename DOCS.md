@@ -386,3 +386,82 @@ Rewrite rules:
 | Cultural insensitivity | Medium | Possibility framing; no deterministic cultural claims |
 | Expert review bypass | Medium | Confidence model flags routed to practitioner handoff |
 | Birth time sensitivity harm | Low | Confidence indicators; sensitivity alerts in L2 |
+
+---
+
+## Complete Module Reference (all 90 sessions)
+
+### src/guidance/ — Consumer Pipeline (Phase 10, 14)
+
+| Module | Primary function | Consumer role |
+|--------|-----------------|--------------|
+| score_to_language.py | score_to_signal(score) → SignalLevel | Maps scores to 5-bar system |
+| fatalism_filter.py | filter_output(text) → str | Rewrites 26 deterministic patterns |
+| explainability_tiers.py | explain(domain, score, depth) → GuidanceContent | L1/L2/L3 gating |
+| guidance_api.py | get_guidance(chart, domain, depth) → GuidanceResponse | Single consumer contract |
+| disclaimer_engine.py | get_disclaimer(domain) + append_disclaimer() | Scope limits + dependency nudge |
+| educational_layer.py | get_educational_content(domain) → list | "Learn" mode explanations |
+| reflection_prompts.py | get_reflection_prompt(domain, label) → str | Socratic question conversion |
+| practitioner_handoff.py | build_chart_summary(chart) + should_recommend_practitioner() | Safe handoff to experts |
+
+### src/privacy/ — Privacy & Legal (Phase 11)
+
+| Module | Primary function | Regulation |
+|--------|-----------------|-----------|
+| consent_engine.py | grant_consent() + right_to_erasure() | GDPR Art.7 + Art.17 |
+| family_consent.py | add_family_member() + can_run_compatibility() | GDPR + DPDP |
+| data_minimisation.py | minimise_birth_time() + apply_retention_policy() | GDPR Art.5 |
+
+### src/feedback/ — Feedback Governance (Phase 13)
+
+| Module | Primary function | Safety role |
+|--------|-----------------|------------|
+| feedback_loop.py | record_feedback() + get_quality_metrics() | Human-supervised queue |
+| harm_escalation.py | check_usage_pattern() → EscalationSignal | Gentle prompt only |
+| dependency_prevention.py | log_session() + check_dependency_status() | Usage frequency monitor |
+
+### src/api/ — API Layer
+
+| Module | Routes | Notes |
+|--------|--------|-------|
+| main.py | /charts, /scores | Original v1 |
+| main_v2.py | all v2 routes | Includes all routers |
+| auth_router.py | /auth/register, /auth/login | JWT |
+| school_router.py | /user/school | Parashari/KP/Jaimini toggle |
+| empirica_router.py | /empirica/events, /empirica/accuracy | Event log + accuracy |
+| mobile_router.py | /mobile/guidance, /mobile/alerts/schedule | L1 only, user-scheduled |
+
+---
+
+## Final System Invariants (all 42)
+
+**Engine (Phases 1–9):**
+1–20: see Phase 7 docs
+21–27: see Phase 8 docs (orb formula, fructification, stronger-of-two)
+28–34: see Phase 9 docs (dominance, promise, domain weights, stellium)
+
+**Consumer Pipeline (Phases 10–14):**
+35. Raw LPI and house scores gated behind L3 explicit opt-in
+36. L3 opt-in resets each session — no persistent L3 mode
+37. Signal system is 5-bar (0–5) — never percentages or star ratings
+38. All guidance uses possibility language — never deterministic claims
+39. Feedback loop is human-supervised only — no automated parameter changes
+40. Right-to-erasure cascade: outputs + birth data + event log → tombstone
+41. Family chart cross-analysis requires active consent from every individual
+42. Dependency nudge: ≥ 3 sessions/day or ≥ 15/week
+
+**Privacy:**
+43. Birth time stored to minute precision only (seconds stripped)
+44. IP addresses hashed (SHA-256, first 16 chars) on ingress
+45. Location stored to city level only (no street, no postcode)
+46. Raw birth data deleted after 90 days of user inactivity
+47. Event log anonymised after 1 year (user_id → hash)
+48. Age gate: under-18 blocked from chart creation
+
+**Safety:**
+49. Fatalism filter applied to ALL text before any API response
+50. Harm escalation: gentle prompt only — no automatic intervention
+51. No crisis resources surfaced unless explicitly requested by user
+52. Practitioner referral available when confidence = "Uncertain" or critical exceptions > 0
+53. No streak mechanics, no badges, no unsolicited push notifications
+54. Dependency nudge text contains no shaming or alarming language
