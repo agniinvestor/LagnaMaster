@@ -194,3 +194,72 @@ Source: CALC_CompositeVargaScore col I.
 ○ (Low): D1 and D9 disagree. India 1947 confirmed:
 H2 Wealth D1=−5.25, D9=−2.0, D10=−2.5 → all negative → ★★ High.
 H1 Self D1=+1.25, D9=−1.35, D10=−1.9 → D1 positive, D9/D10 negative → ○ Low.
+
+---
+
+## Phase 8 — PVRNR Textbook Tier 1 (Sessions 57–63)
+
+### Session 57 — Orb-sensitive conjunction strength
+**File:** `src/calculations/orb_strength.py`  
+Source: PVRNR "Vedic Astrology: An Integrated Approach" p147, p149.
+p147 explicit: "The conjunction or aspect should be close (say, within 6° or so)."
+p149 Rajiv Gandhi: Sun+Jupiter 8° apart → weak yoga, became PM not emperor.
+p149 Akbar: Venus+Saturn <1° apart → very strong yoga, became great emperor.
+Linear decay: `1 - orb/15`. At exactly 6°: strength=0.60 (above 0.5 threshold).
+At 8°: 0.467. Beyond 15°: 0.0. `is_pvrnr_close()` = True if ≤6°.
+
+### Session 58 — Yoga fructification conditions + Amsa level
+**File:** `src/calculations/yoga_fructification.py`  
+Source: PVRNR p147-148. Three conditions explicitly listed by PVRNR (p147):
+"(1) The two planets should be free from afflictions from functional malefics.
+(2) The conjunction should be close (say, within 6°).
+(3) The two planets should not be combust, debilitated or in an inimical house."
+Amsa level from p64+148: Dasa Varga = D1,D2,D3,D7,D9,D10,D12,D16,D30,D60.
+Count how many the planet occupies own/exalt/mooltrikona. p148 example:
+Akbar's Venus+Saturn in Uttamaamsa+Paarijataamsa → Simhasanamsa level combined.
+DivisionalMap uses attribute access (`getattr(div, 'D9')`), not dict access.
+
+### Session 59 — Stronger-of-two planet/rasi framework
+**File:** `src/calculations/stronger_of_two.py`  
+Source: PVRNR p194 (Rudra calculation). PVRNR gives exact hierarchy:
+"We say that a planet is stronger if it conjoins more planets. If both conjoin
+the same number, a planet in exaltation or own rasi is stronger. A planet
+joining exalted planets is stronger. A planet aspected by many planets (rasi
+aspect) is stronger. Finally, a planet which is more advanced in its rasi is
+stronger." India 1947: Sun in Cancer with 4 cotenants (Moon/Mercury/Venus/Mars).
+
+### Session 60 — AV-weighted transit
+**File:** `src/calculations/av_transit.py`  
+Source: PVRNR p154: "If we can judge benefic positions with respect to 8 references
+in rasi chart, there is no reason why we should not do it in all divisional charts.
+This becomes invaluable when interpreting transits." SAV thresholds from p165:
+≥30 rekhas = strong house (D-10 lagna of Vajpayee=35 rekhas). SAV=33 in H8
+"explains the struggle in Vajpayee's career."
+
+### Session 61 — Arudha reality vs perception model
+**File:** `src/calculations/arudha_perception.py`  
+Source: PVRNR Ch.9 p97-104. p97: "Usually, how one is perceived by others is
+more important in material life than who one really is." p103 vehicle example:
+"Venus in own sign in A4 + Saturn in H4 → luxurious vehicle (perceived happy)
+but not actually happy. Saturn in A4 + Venus/Jupiter in H4 → small vehicle
+(perceived unhappy) but happy with it." p102: malefics 3rd/6th from AL =
+"perceived as bold person who hits enemies hard — usually materially successful."
+
+### Session 62 — PVRNR textbook yogas
+**File:** `src/calculations/yogas_pvrnr.py`  
+Source: PVRNR Ch.11 p125-130. Key additions:
+- Jaya Yoga (p129): requires 10th lord in DEEP exaltation + 6th lord debilitated.
+  Checks exact degree proximity to deep exaltation point per planet.
+- Brahma Yoga (p130): requires Jupiter in kendra from 9th lord AND Venus in kendra
+  from 11th lord AND Mercury in kendra from lagnesh/10th lord — all three conditions.
+- Amala Yoga checks both lagna and Moon references (p125 explicitly says "from lagna or Moon").
+
+### Session 63 — Planet effectiveness synthesis
+**File:** `src/calculations/planet_effectiveness.py`  
+Source: PVRNR Ch.15 p201. PVRNR's caution: "Attempting to use various techniques
+in an interchangeable manner only leads to confusion. One should strive to
+understand the meanings of various parameters and use the right set for the occasion."
+This module provides a summary view only — explicit documentation in docstring
+warns against substituting it for specific-purpose strength computations.
+Weights derived from PVRNR's emphasis ordering: Avastha and Shadbala highest
+(most discussed in Ch.15), AV/Dig/Amsa moderate, penalties lowest.

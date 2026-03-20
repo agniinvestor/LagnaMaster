@@ -182,3 +182,55 @@ Score formula: `1 − circular_distance(current, peak) / 6`
 18. Tatkalik Friend houses from P1: {2,3,4,10,11,12}; Enemy: {1,5,6,7,8,9}
 19. Ayanamsha IDs: Lahiri=1, Raman=3, Krishnamurti=5, Fagan-Bradley=0
 20. Deena state: planet in yuddha_losers set passed from graha_yuddha.py
+
+### Phase 8 — PVRNR Textbook Tier 1 (Sessions 57–63)
+| Module | Key function | PVRNR source |
+|--------|-------------|-------------|
+| orb_strength.py | conjunction_strength(lon1, lon2) + association_strength(p1, p2, chart) | p147, p149 |
+| yoga_fructification.py | yoga_fructification_score(planets, chart) + compute_amsa_level(planet, chart) | p147-148 |
+| stronger_of_two.py | stronger_planet(p1, p2, chart) + stronger_sign(si1, si2, chart) | p194 |
+| av_transit.py | compute_transit_av_score(chart, date) + planet_transit_quality(planet, si, chart) | p154, p165 |
+| arudha_perception.py | compute_al_perception(chart, house) + compute_full_perception_model(chart) | Ch.9 p97-104 |
+| yogas_pvrnr.py | detect_pvrnr_yogas(chart, dashas, date) | Ch.11 p125-130 |
+| planet_effectiveness.py | compute_planet_effectiveness(planet, chart) + compute_all_effectiveness(chart) | Ch.15 p201 |
+
+## Orb Strength Reference (PVRNR p147, p149)
+
+| Orb | Strength | PVRNR verdict |
+|-----|---------|--------------|
+| 0° | 1.00 | Maximum — full results |
+| 3° | 0.75 | Strong |
+| 6° | 0.50 | PVRNR threshold ("within 6° or so") |
+| 8° | 0.33 | Weak (Rajiv Gandhi example, p149) |
+| 15°+ | 0.00 | No effective conjunction |
+
+## Yoga Fructification Conditions (PVRNR p147)
+
+Three conditions all required for full delivery:
+1. Free from functional malefic conjunction/aspect
+2. Conjunction/aspect within 6° (PVRNR explicit threshold)
+3. Not combust, not debilitated, not in inimical sign
+
+Verdict mapping: ≥0.75=Full, ≥0.50=Partial, ≥0.25=Weak, <0.25=Minimal.
+
+## Planet Effectiveness Weights (Phase 8)
+
+| Component | Weight | Source |
+|-----------|--------|--------|
+| Shadbala | 20% | BPHS Ch.27 |
+| Avastha (Baaladi × Sayanadi) | 20% | BPHS Ch.45-47 |
+| AV BAV rekhas in natal sign | 15% | BPHS Ch.66-76 |
+| Dig Bala (directional strength) | 15% | BPHS Ch.27 |
+| Amsa level (Dasa Varga count) | 15% | BPHS Ch.6 |
+| Combustion penalty | 7.5% | BPHS Ch.3 |
+| Graha Yuddha outcome | 7.5% | BPHS Ch.3 |
+
+## Updated Invariants (Phase 8 additions)
+
+21. Orb formula: `strength = max(0, 1 − orb_degrees / 15)` — 0.5 at 6°, 0.33 at 8°
+22. Yoga fructification: all three PVRNR conditions must pass for Full verdict
+23. Stronger-of-two hierarchy: cotenants > dignity > exalted cotenants > rasi aspects > degree
+24. AV transit: BAV ≥5 rekhas = favorable, ≤3 = unfavorable (per-planet in transit sign)
+25. AL perception: strong house + weak AL = Hidden Success; weak house + strong AL = Apparent Success
+26. Planet effectiveness: summary-only synthesis — does NOT replace specific-purpose strength measures
+27. Amsa level uses minimum across yoga planets (weakest link determines yoga strength)

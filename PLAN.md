@@ -113,3 +113,72 @@ All 178 sheets audited. Every CALC_ and SCORE_ sheet has a Python equivalent.
 | Kalachakra Dasha | Contradictory versions across commentators |
 | Desha-Kala-Patra | Geographic/cultural context — no parameterisable formula |
 | Muhurta / Prashna | Separate discipline with different inputs |
+
+---
+
+## Phase 8 — PVRNR Textbook Tier 1 (Sessions 57–63)
+
+### Session 57 — Orb-sensitive conjunction/aspect strength
+**File:** `src/calculations/orb_strength.py`
+PVRNR p147: "conjunction should be close (say, within 6° or so)".
+p149: Rajiv Gandhi — planets 8° apart = weak yoga.
+p149: Akbar — Venus/Saturn less than 1° = very strong.
+Formula: `strength = max(0, 1 - orb / 15)` → 1.0 at 0°, 0.5 at 6°, 0.33 at 8°, 0.0 at 15°+.
+`AssociationStrength` dataclass includes `reduces_yoga()` (True if orb > 8°) and
+`is_pvrnr_close()` (True if ≤ 6°). Parivartana (mutual sign exchange) detected.
+
+### Session 58 — Yoga fructification conditions
+**File:** `src/calculations/yoga_fructification.py`
+PVRNR p147 three conditions: (1) free from functional malefic afflictions,
+(2) conjunction within 6°, (3) not combust/debilitated/inimical.
+Amsa level from Dasa Varga count: Paarijataamsa(2)→Uttamaamsa(3)→Gopuraamsa(4)→
+Simhasanamsa(5)→Paaravataamsa(6)→Devalokaamsa(7)→Brahmalokaamsa(8)→Airaavataamsa(9).
+`FructificationResult` with verdict: Full/Partial/Weak/Minimal.
+`yoga_fructification_score()` integrates all three conditions into 0.0-1.0 score.
+
+### Session 59 — Stronger-of-two framework
+**File:** `src/calculations/stronger_of_two.py`
+PVRNR p194 (Rudra calculation) explicit hierarchy:
+1. More planets in conjunction (same sign)
+2. Exaltation or own sign
+3. Joining exalted planets
+4. Aspected by more planets via rasi drishti
+5. More advanced in sign (higher degree in sign)
+`stronger_planet(p1, p2, chart)` and `stronger_sign(si1, si2, chart)`.
+Used for Scorpio/Aquarius dual lords, Narayana Dasha start, longevity lords.
+India 1947: Sun in Cancer has 4 cotenants (Moon/Mercury/Venus/Mars) confirmed.
+
+### Session 60 — AV-weighted transit interpretation
+**File:** `src/calculations/av_transit.py`
+PVRNR p154: "AV becomes invaluable when interpreting transits in rasi chart
+with respect to natal positions in divisional charts."
+p165: SAV ≥30 rekhas = strong house, <25 = weak.
+BAV thresholds: ≥6=Excellent, 5=Good, 4=Average, 3=Unfavorable, ≤2=Malefic.
+`compute_transit_av_score(natal_chart, transit_date)` → full `TransitAVReport`.
+
+### Session 61 — Arudha reality vs perception model
+**File:** `src/calculations/arudha_perception.py`
+PVRNR Ch.9 p97: "how one is perceived by others is more important in material life".
+AL = maya/illusion. House = actual reality.
+2×2 conflict matrix: strong/weak actual × strong/weak AL:
+  → Aligned / Hidden Success / Apparent Success / Recognized Struggle.
+p102: malefics in 3rd/6th from AL → bold, materially successful.
+      benefics in 3rd/6th from AL → gentle, saintly.
+`compute_full_perception_model(chart)` covers all 12 houses.
+
+### Session 62 — PVRNR textbook yogas
+**File:** `src/calculations/yogas_pvrnr.py`
+8 yogas from PVRNR Ch.11 p125-130:
+  Guru-Mangala (Jup+Mars conjunct/7th), Amala (only benefics in H10),
+  Sankha (lagnesh strong + 5/6th lords mutual kendra), Vasumati (benefics in upachaya),
+  Lagnaadhi (benefics in H7+H8), Jaya (10th lord exalted + 6th debilitated),
+  Pushkala (lagnesh with Moon, Moon dispositor strong), Brahma (Jup/Ven/Mer in kendras).
+
+### Session 63 — Multi-factor planet effectiveness synthesis
+**File:** `src/calculations/planet_effectiveness.py`
+PVRNR p201: "use the right set of parameters for the occasion — attempting to use
+various techniques interchangeably leads to confusion."
+Combines 7 measures for summary effectiveness (not replacing specific-purpose use):
+  Shadbala 20% + Avastha 20% + AV bala 15% + Dig Bala 15% + Amsa level 15%
+  + Combustion 7.5% + Yuddha 7.5% → 0.0-1.0 overall + label.
+  Labels: Highly effective / Effective / Moderate / Weak / Ineffective.
