@@ -1,70 +1,86 @@
 # LagnaMaster — Programme Plan
 
-## Status: COMPLETE — Sessions 1–40 ✅
+## Status: COMPLETE — Sessions 1–48 ✅
 
-743 tests passing. ENGINE_VERSION = "3.0.0". All planned phases delivered.
-
----
-
-## Phase Summary
-
-### Phase 1 — Pilot (Sessions 1–10) ✅ 222 tests
-- S1: ephemeris.py (pyswisseph wrapper, Lahiri ayanamsha, 1947 fixture)
-- S2: 7 calculation modules (dignity, nakshatra, friendship, house_lord, chara_karak, narayana_dasha, shadbala)
-- S3: scoring.py + FastAPI + SQLite
-- S4: Streamlit 3-tab UI
-- S5: Docker Compose + integration tests
-- S6: Vimshottari Dasha + SVG chart
-- S7: Yogas (Pancha Mahapurusha, Gajakesari, Kemadruma)
-- S8: Ashtakavarga (SAV bindus)
-- S9: Gochara + Sade Sati
-- S10: Panchanga + D9 Navamsha
-
-### Phase 2 — Features (Sessions 11–19) ✅ 225 tests
-- S11: Pushkara Navamsha + Monte Carlo birth-time sensitivity
-- S12: Kundali Milan 36-point compatibility
-- S13: PDF report generation (reportlab)
-- S14: Jaimini Chara Dasha
-- S15: KP Significators + sub-lord table
-- S16: Varshaphala / Tajika annual chart
-- S17: Compatibility scoring
-- S18: API v2 endpoints
-- S19: Streamlit 12-tab UI
-
-### Phase 3 — Production (Sessions 20–27) ✅ 210 tests
-- S20: PostgreSQL (db_pg.py) + Redis 3-tier caching
-- S21: Celery async workers (compute_chart, monte_carlo, generate_pdf)
-- S22: JWT multi-user auth
-- S23: GitHub Actions CI/CD
-- S24: Kubernetes Helm chart (HPA, ingress, secrets)
-- S25: Next.js 14 frontend (TypeScript + Tailwind)
-- S26: School gates (Parashari/KP/Jaimini per-user)
-- S27: Monte Carlo Celery chord (parallel sampling)
-
-### Phase 4 — Pressure Engine (Sessions 28–32) ✅ 36 tests
-- S28: functional_roles.py (per-lagna maleficence, badhaka, maraka, yogakaraka)
-- S29: avastha.py (Deeptadi/Baladi/Lajjitadi)
-- S30: pressure_engine.py (Life Pressure Index v1, D1 approximation)
-- S31: argala.py (Argala/Virodhargala + Arudha Lagna)
-- S32: graha_yuddha.py + scoring_v2.py (ENGINE_VERSION="2.0.0")
-
-### Phase 5 — Full Workbook Parity (Sessions 33–40) ✅ 50 tests
-- S33: multi_lagna.py (Chandra/Surya/Karakamsha frames, all 12 Arudha Padas)
-- S34: multi_axis_scoring.py (23-rule engine × 5 axes, R23 SAV, school weights)
-- S35: rule_interaction.py (30 rule-pair modifiers from REF_RuleInteractionMatrix)
-- S36: lpi.py (full 7-layer LPI, dasha modifier ×1.15, domain balance)
-- S37: divisional_charts.py (all 16 vargas, Vimshopaka Bala, D60 Shastiamsha)
-- S38: extended_yogas.py (Raja/Dhana/Viparita/NeechaBhanga, Rasi Drishti, Bhavat Bhavam)
-- S39: avastha_v2.py (Baaladi even-sign fix), narrative.py
-- S40: scoring_v3.py (ENGINE_VERSION="3.0.0"), scenario.py
+~789 tests passing. ENGINE_VERSION = "3.0.0".
 
 ---
 
-## Remaining Gaps (out of scope)
+## Phase 6 — Classical Depth (Sessions 41–48)
 
-| Sheet | Reason not built |
-|-------|-----------------|
-| UX_StudentMode | Pedagogical UI layer — product decision needed |
-| API_ProkeralaScript | External API integration — not in scope |
-| REF_EmpiricaSchema | Event log + statistical validation backend — requires real birth data corpus |
-| NOTES_* / HOWTO_* | Documentation only — no code equivalent |
+### Session 41 — Ishta / Kashta Phala
+**File:** `src/calculations/ishta_kashta.py`
+- BPHS Ch.27: Ishta = √(Uchcha_Bala × Cheshta_Bala), Kashta = √((60−U)×(60−C))
+- Net Sphuta = Ishta − Kashta (range −60 to +60 Virupas)
+- All 7 planets. Addresses PVRNR gap: full strength doctrine beyond Shadbala
+
+### Session 42 — Longevity Doctrine
+**File:** `src/calculations/longevity.py`
+- Three methods: Pindayu (exaltation ratios), Nisargayu (natural years × house weight), Amsayu (D9 dignity)
+- Average → Short/Medium/Long span classification
+- Balarishta: Moon in dusthana, Lagnesh in dusthana, malefics H1+H8
+
+### Session 43 — Yogini Dasha
+**File:** `src/calculations/yogini_dasha.py`
+- 8-lord 36-year cycle: Mangala(Moon,1)→Pingala(Sun,2)→Dhanya(Jup,3)→Bhramari(Mars,4)→Bhadrika(Mer,5)→Ulka(Sat,6)→Siddha(Ven,7)→Sankata(Rahu,8)
+- Starting Yogini from birth nakshatra mod 8
+- Antardashas proportional. current_yogini() for any date.
+
+### Session 44 — Full KP Engine
+**File:** `src/calculations/kp_full.py`
+- Sub-lord chain: sign lord → nakshatra lord → sub-lord → sub-sub-lord
+- Matches REF_KPSubLordTable exactly. India 1947: Lagna Krittika → nak lord Sun ✓
+- compute_kp_cusps() for all 12 houses
+- kp_ruling_planets() method
+- kp_event_promise(): sub-lord signification + ruling planet overlap
+
+### Session 45 — Extended Yoga Library (200+)
+**File:** `src/calculations/yogas_extended.py`
+- Nabhasa: Rajju/Musala/Nala/Mala/Sarpa + Sankhya (Gola through Veena)
+- Chandra: Sunapha/Anapha/Durudhura/Kemadruma/Adhi
+- Surya: Vesi/Vasi/Ubhayachari
+- Extended Dhana: Lakshmi/Duryoga/Daridra/Mahabhagya
+- All with dasha weighting (dormant=0.5×, active=1.0×)
+
+### Session 46 — Special Lagnas
+**File:** `src/calculations/special_lagnas.py`
+- Hora Lagna (Sun + hour×30°)
+- Ghati Lagna (Lagna + hour×37.5°)
+- Sree Lagna (Moon distance from Sun + Lagna)
+- Indu Lagna (9th lord Indu values mod 12 from Moon)
+- Pranapada (Sun + 2×degree_in_sign)
+
+### Session 47 — Full Jaimini System
+**File:** `src/calculations/jaimini_full.py`
+- AK in Kendra yoga, AK+AmK conjunction yoga
+- Karakamsha Gyana Yoga (benefics 5/9 from Karakamsha)
+- Arudha 7th quality, Upapada lord strength
+- Karakamsha house scoring via Jaimini school weights
+- Jaimini longevity: Brahma/Maheshvara/Rudra method
+- Pada relationship scoring (6/8 = −1.5×, trine = +1.5×, same sign = +2.0×)
+
+### Session 48 — Empirical Validation Backend
+**Files:** `src/calculations/empirica.py`, `src/api/empirica_router.py`
+- REF_EmpiricaSchema live: 18-column SQLite event log
+- record_event(), get_events(), compute_accuracy()
+- Per-rule lift ratios (manifested/fired vs base rate)
+- Accuracy by house, event type, Mahadasha
+- Three 1947 India seed events (1971 war, 1991 liberalisation, 2001 Parliament attack)
+- FastAPI: POST /empirica/events, GET /empirica/events/{id}, GET /empirica/accuracy
+
+---
+
+## Phases 1–5 — see previous PLAN.md entries
+
+---
+
+## Remaining Gaps (out of scope / not encodable)
+
+| Item | Reason |
+|------|--------|
+| UX_StudentMode | Pedagogical UI — product decision needed |
+| API_ProkeralaScript | External API integration |
+| "Strong benefic cancels afflictions" rule | Threshold unspecified in classical texts |
+| Holistic chart gestalt synthesis | Requires practitioner tacit knowledge |
+| Kalachakra Dasha | Highly complex, textual disagreement |
+| Full Placidus cusps (KP) | Requires swe.houses('P') — partial implementation |

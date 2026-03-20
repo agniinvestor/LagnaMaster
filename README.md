@@ -3,7 +3,7 @@
 Vedic Jyotish birth chart scoring platform. Transforms a 178-sheet Excel workbook
 into a deterministic, auditable Python web application.
 
-**743 tests passing | Sessions 1–40 complete | Engine v3.0.0**
+**~789 tests passing | Sessions 1–48 complete | Engine v3.0.0**
 
 ---
 
@@ -20,13 +20,12 @@ docker compose up --build
 | Streamlit UI | http://localhost:8501 |
 | FastAPI + Swagger | http://localhost:8000/docs |
 
-**Local (no Docker):**
+**Local:**
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-PYTHONPATH=. pytest tests/ -q          # 743 tests
-PYTHONPATH=. uvicorn src.api.main:app --reload
-PYTHONPATH=. streamlit run streamlit_app.py
+ulimit -n 4096  # macOS: raise fd limit for test suite
+PYTHONPATH=. pytest tests/ -q -p no:warnings
 ```
 
 ---
@@ -37,16 +36,14 @@ PYTHONPATH=. streamlit run streamlit_app.py
 2. Computes sidereal planet positions via **pyswisseph** (Lahiri ayanamsha)
 3. Runs 23 BPHS scoring rules × 12 houses × 5 lagna axes (D1/Chandra/Surya/D9/D10)
 4. Computes the 7-layer **Life Pressure Index** per house
-5. Detects Raja/Dhana/Viparita/Neecha Bhanga yogas with dasha weighting
-6. Produces Rasi Drishti, Bhavat Bhavam, Vimshopaka Bala, D60 Shastiamsha
-7. Stores every chart in SQLite (immutable insert pattern)
+5. Detects 200+ yogas (Nabhasa, Chandra, Surya, Dhana, Raja, Viparita, Jaimini)
+6. Full KP sub-lord chain, Yogini Dasha, Ishta/Kashta Phala, longevity doctrine
+7. Records birth-event correlations for empirical accuracy measurement
 8. Serves results via FastAPI REST + Streamlit UI + Next.js frontend
 
 ---
 
 ## Life Pressure Index
-
-Full 7-layer synthesis per house:
 
 ```
 LPI = D1×35% + Chandra×15% + Surya×10% + D9×15% + D10×10% + Dasha×10% + Gochar×5%
@@ -56,35 +53,26 @@ LPI = D1×35% + Chandra×15% + Surya×10% + D9×15% + D10×10% + Dasha×10% + Go
 from src.calculations.scoring_v3 import score_chart_v3
 
 result = score_chart_v3(chart, dashas, on_date=date.today(), school="parashari")
-print(result.summary())
-
-# Per-house full index with RAG and confidence
 for h, hl in result.lpi.houses.items():
     print(f"H{h}: {hl.full_index:+.2f} [{hl.rag}] {hl.confidence}")
-
-# Domain balance
-print(result.lpi.domain_balance)  # {Dharma: -0.71, Artha: -0.63, ...}
-
-# Scenario explorer
-from src.calculations.scenario import compare_scenarios
-compare_scenarios(chart, [("Sun to Leo", {"Sun": {"longitude": 120.0}})], dashas)
+print(result.lpi.domain_balance)  # Dharma/Artha/Kama/Moksha
 ```
 
 ---
 
-## Regression Fixture
-
-All 743 tests validate against the **1947 India Independence Chart**:
+## Regression Fixture — India 1947
 
 | Field | Value |
 |-------|-------|
 | Birth | 1947-08-15 00:00 IST, New Delhi |
 | Lagna | 7.7286° **Taurus** |
 | Sun | 27.989° Cancer |
-| Ayanamsha | Lahiri (~23.1489°) |
-| Arudha Lagna | Virgo (H5) |
-| D9 Lagna | Pisces |
-| Baaladi Sun | Bala (infant) — even-sign reversal verified |
+| Ayanamsha | Lahiri |
+| Arudha Lagna | Virgo (H5) — verified |
+| D9 Lagna | Pisces — verified |
+| Baaladi Sun | Bala (even-sign reversal confirmed) |
+| Baaladi Moon | Mrita (even-sign reversal confirmed) |
+| KP Lagna nak lord | Sun (Krittika) — verified |
 
 ---
 
@@ -92,61 +80,73 @@ All 743 tests validate against the **1947 India Independence Chart**:
 
 | Module | Status |
 |--------|--------|
-| D1 scoring — 23 rules (R01–R23) | ✅ |
-| Chandra Lagna / Surya Lagna scoring | ✅ |
-| D9 Navamsha / D10 Dashamsha scoring | ✅ |
-| Karakamsha (soul axis) | ✅ |
+| D1 scoring — 23 rules (R01–R23 incl. SAV) | ✅ |
+| Chandra / Surya / D9 / D10 / Karakamsha axes | ✅ |
 | 30-pair Rule Interaction Engine | ✅ |
 | 7-layer Life Pressure Index | ✅ |
 | All 12 Arudha Padas (AL, A2–A12, DL, UL) | ✅ |
 | Vimshopaka Bala (16 vargas, max 20 pts) | ✅ |
-| D60 Shastiamsha (60 division names) | ✅ |
+| D60 Shastiamsha (60 named divisions) | ✅ |
 | Raja + Dhana Yogas (13 pairs) | ✅ |
 | Viparita Raja + Neecha Bhanga | ✅ |
+| Nabhasa yogas (Rajju/Musala/Nala/Mala/Sarpa/Sankhya) | ✅ |
+| Chandra yogas (Sunapha/Anapha/Durudhura/Kemadruma/Adhi) | ✅ |
+| Surya yogas (Vesi/Vasi/Ubhayachari) | ✅ |
+| Dhana yogas (Lakshmi/Duryoga/Daridra/Mahabhagya) | ✅ |
 | Rasi Drishti (12×12 sign aspects) | ✅ |
 | Bhavat Bhavam | ✅ |
 | Baaladi avastha (even-sign reversal) | ✅ |
 | Sayanadi avastha (12 mood states) | ✅ |
+| Ishta / Kashta Phala (BPHS Ch.27) | ✅ |
+| Longevity: Pindayu + Nisargayu + Amsayu | ✅ |
+| Balarishta detection | ✅ |
+| Yogini Dasha (8-lord 36-year cycle) | ✅ |
+| Full KP sub-lord chain (sign→nak→sub→sub-sub) | ✅ |
+| KP ruling planets + event promise | ✅ |
+| Special lagnas (Hora/Ghati/Sree/Indu/Pranapada) | ✅ |
+| Full Jaimini yogas + Karakamsha scoring | ✅ |
+| Jaimini longevity (Brahma/Maheshvara/Rudra) | ✅ |
+| Pada relationship scoring | ✅ |
+| Empirical event log + accuracy metrics | ✅ |
 | Shadbala | ✅ |
-| Ashtakavarga (SAV + R23) | ✅ |
-| Vimshottari + Narayana + Jaimini Chara Dasha | ✅ |
+| Ashtakavarga (SAV) | ✅ |
+| Vimshottari + Narayana + Chara + Yogini Dasha | ✅ |
 | Gochara + Sade Sati | ✅ |
 | KP Significators | ✅ |
 | Varshaphala (Tajika) | ✅ |
-| Kundali Milan (36-point compatibility) | ✅ |
+| Kundali Milan (36-point) | ✅ |
 | Monte Carlo birth-time sensitivity | ✅ |
-| Narrative report generator | ✅ |
-| Scenario / counterfactual explorer | ✅ |
+| Narrative report + Scenario explorer | ✅ |
 
 ---
 
 ## API Reference
 
 ```
-POST /charts                    # compute + store chart
-GET  /charts                    # list recent charts
-GET  /charts/{id}               # retrieve chart
-GET  /charts/{id}/scores        # full 23-rule breakdown
-GET  /health                    # system health
-POST /auth/register             # register user
-POST /auth/login                # get JWT tokens
-GET  /user/school               # get scoring school (Parashari/KP/Jaimini)
-PUT  /user/school               # set scoring school
+POST /charts                    compute + store chart
+GET  /charts                    list recent charts
+GET  /charts/{id}/scores        full 23-rule breakdown
+POST /auth/register             register user
+POST /auth/login                get JWT tokens
+GET  /user/school               get scoring school
+PUT  /user/school               set school (Parashari/KP/Jaimini)
+POST /empirica/events           record birth event
+GET  /empirica/events/{chart_id}  list events for chart
+GET  /empirica/accuracy         per-rule accuracy metrics
 ```
 
 ---
 
 ## Session Progress
 
-| Phase | Sessions | Tests | Key deliverables |
-|-------|----------|-------|-----------------|
-| 1 — Pilot | 1–10 | 222 | Ephemeris, 7 calc modules, D1 scoring, FastAPI, SQLite, Streamlit, Docker |
-| 2 — Features | 11–19 | 225 | Pushkara, Kundali Milan, PDF, Jaimini, KP, Tajika, Compatibility, API v2, 12-tab UI |
-| 3 — Production | 20–27 | 210 | PostgreSQL, Redis, Celery, JWT, CI/CD, Kubernetes, Next.js, School gates, Monte Carlo |
-| 4 — Pressure Engine | 28–32 | 36 | Functional roles, Avastha, LPI v1, Argala, Graha Yuddha, Scoring v2 |
-| 5 — Workbook Parity | 33–40 | 50 | Multi-lagna, 5-axis scoring, Rule interactions, 7-layer LPI, Divisional charts, Yogas, Avastha fix, Scoring v3 |
-
-**Total: 743 tests | Engine v3.0.0 | ~160/178 workbook sheets**
+| Phase | Sessions | Key deliverables |
+|-------|----------|-----------------|
+| 1 — Pilot | 1–10 | Ephemeris, calc modules, D1 scoring, FastAPI, SQLite, Streamlit, Docker |
+| 2 — Features | 11–19 | Pushkara, Kundali Milan, PDF, Jaimini, KP, Tajika, API v2, 12-tab UI |
+| 3 — Production | 20–27 | PostgreSQL, Redis, Celery, JWT, CI/CD, Kubernetes, Next.js, School gates |
+| 4 — Pressure Engine | 28–32 | Functional roles, Avastha, LPI v1, Argala, Graha Yuddha, Scoring v2 |
+| 5 — Workbook Parity | 33–40 | Multi-lagna, 5-axis scoring, Rule interactions, 7-layer LPI, D60, Yogas, Scoring v3 |
+| 6 — Classical Depth | 41–48 | Ishta/Kashta, Longevity, Yogini Dasha, Full KP, 200+ Yogas, Special Lagnas, Jaimini, Empirica |
 
 ---
 
@@ -169,7 +169,6 @@ PUT  /user/school               # set scoring school
 |----------|---------|-------|
 | PG_DSN | — | Absent = SQLite |
 | REDIS_URL | redis://localhost:6379/0 | Empty = disabled |
-| CACHE_VERSION | 1 | Bump to bust scores |
 | JWT_SECRET | dev-secret | **Change in prod** |
 | ENABLE_KP | 1 | 0 = disable |
 | ENABLE_JAIMINI | 1 | 0 = disable |

@@ -63,3 +63,66 @@ See previous SESSION_LOG entries. ENGINE_VERSION="2.0.0".
 
 ## Phases 1–3 — Pilot, Features, Production (Sessions 1–27)
 See docs/MEMORY.md for full session-by-session history.
+
+---
+
+## Phase 6 — Classical Depth (Sessions 41–48)
+
+### Session 41 — Ishta / Kashta Phala
+**File:** `src/calculations/ishta_kashta.py`  
+BPHS Ch.27 formula grounded in REF_ShadbalaData. Uchcha_Bala computed from
+angular distance to exaltation longitude. Cheshta_Bala from speed vs mean motion
+(retrograde=60, stationary=30). India 1947: Sun at 27.99° Cancer — moderate
+Uchcha_Bala confirmed (not exalted in Cancer, exaltation is Aries).
+
+### Session 42 — Longevity Doctrine + Balarishta
+**File:** `src/calculations/longevity.py`  
+Three methods from BPHS Ch.44. Pindayu uses planet max-years weighted by
+exaltation strength ratio. Nisargayu uses natural lifespan × house weight
+(Kendra=1.0, Panapara=0.5, Apoklima=0.25). Amsayu uses D9 dignity strength.
+Balarishta: three classical indicators — Moon in dusthana, Lagnesh in dusthana,
+simultaneous malefics in H1+H8.
+
+### Session 43 — Yogini Dasha
+**File:** `src/calculations/yogini_dasha.py`  
+Starting Yogini: `(nakshatra_index mod 8)` where index = `floor(moon_lon × 27 / 360)`.
+Bug fix: original code called `compute_nakshatra()` which doesn't exist by that
+name — replaced with direct longitude formula. Balance proportional to Moon's
+position within its nakshatra. Antara periods proportional within each 
+Mahadasha (same Yogini sequence, scaled).
+
+### Session 44 — Full KP Engine
+**File:** `src/calculations/kp_full.py`  
+Sub-lord algorithm matches REF_KPSubLordTable exactly: `_SUB_SPAN_DEG[planet] = 
+nakshatra_span × planet_years / 120`. Sub-lord sequence starts from the nakshatra
+lord's position in Vimshottari order. Sub-sub spans are further proportional
+subdivision. India 1947 regression: Lagna at 37.73° = Krittika (Sun nakshatra),
+nak_lord = Sun — confirmed.
+
+### Session 45 — Extended Yoga Library
+**File:** `src/calculations/yogas_extended.py`  
+Nabhasa Sankhya: count occupied signs, map to Gola(1)→Yugma(2)→Shoola(3)→
+Kedara(4)→Pasha(5)→Dama(6)→Veena(7). India 1947 Kemadruma test: Moon in
+Cancer (H3) has Jupiter also in Cancer — Kemadruma absent, confirmed.
+Lakshmi Yoga from Phaladeepika Ch.6 (Venus + 9th lord strong in kendra/trikona).
+
+### Session 46 — Special Lagnas
+**File:** `src/calculations/special_lagnas.py`  
+Indu Lagna planet values from BPHS: Sun=30, Moon=16, Mars=6, Mercury=8,
+Jupiter=10, Venus=12, Saturn=1. 9th lords from both Lagna and Moon, sum their
+Indu values mod 12, count from Moon's sign.
+
+### Session 47 — Full Jaimini System
+**File:** `src/calculations/jaimini_full.py`  
+Brahma/Maheshvara/Rudra longevity: Brahma = strongest odd-house planet,
+Maheshvara = lord of 8th from AK's sign, Rudra = stronger of H8/H12 lords
+by house strength score (Kendra=4, Panapara=2, Apoklima=1). Pada relationship:
+sign difference 0=+2.0, 4or8=+1.5, 5or7=−1.5.
+
+### Session 48 — Empirical Validation Backend
+**Files:** `src/calculations/empirica.py`, `src/api/empirica_router.py`  
+Three 1947 India seed events loaded from REF_EmpiricaSchema: EVT_001 (1971 war
+victory, H10 Career, d1=3.5, Saturn MD, manifested=1), EVT_002 (1991 economic
+liberalisation, H11 Finance, d1=2.0, Jupiter MD, manifested=1), EVT_003 (2001
+Parliament attack, H6 Conflicts, d1=−2.5, Saturn MD, manifested=1). Rule lift
+formula: accuracy = manifested_when_fired / fired_count, lift = accuracy / base_rate.
