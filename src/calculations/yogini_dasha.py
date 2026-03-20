@@ -59,16 +59,15 @@ class YoginiPeriod:
         return subs
 
 
-def compute_yogini_dasha(chart, birth_date: date) -> list[YoginiPeriod]:
+def compute_yogini_dasha(chart, birth_date):
     """Compute full Yogini Dasha sequence from birth."""
-    from src.calculations.nakshatra import compute_nakshatra
-    nak = compute_nakshatra("Moon", chart)
-    nak_idx = nak.index  # 0-based nakshatra index (0=Ashwini)
+    # Get Moon nakshatra index (0-based, 0=Ashwini)
+    moon_lon = chart.planets["Moon"].longitude
+    # Nakshatra index = floor(longitude * 27 / 360)
+    nak_idx = int((moon_lon % 360) / (360 / 27))
+    nak_fraction = ((moon_lon % 360) % (360 / 27)) / (360 / 27)
 
     start_yogini = nak_idx % 8
-    # Balance: how much of the first period has elapsed
-    # Moon's position within nakshatra (0.0–1.0) × first period years
-    nak_fraction = (chart.planets["Moon"].longitude % (360/27)) / (360/27)
     first_years = _YOGINIS[start_yogini][2]
     elapsed_years = nak_fraction * first_years
     elapsed_days = int(elapsed_years * 365.25)
@@ -82,7 +81,6 @@ def compute_yogini_dasha(chart, birth_date: date) -> list[YoginiPeriod]:
             idx = (start_yogini + i) % 8
             yname, yplanet, yyears = _YOGINIS[idx]
             if cycle == 0 and i == 0:
-                # First period: only remaining balance
                 days = int((first_years - elapsed_years) * 365.25)
             else:
                 days = int(yyears * 365.25)
