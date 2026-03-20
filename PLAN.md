@@ -1,86 +1,115 @@
 # LagnaMaster — Programme Plan
 
-## Status: COMPLETE — Sessions 1–48 ✅
+## Status: COMPLETE — Sessions 1–56 ✅
 
-~789 tests passing. ENGINE_VERSION = "3.0.0".
-
----
-
-## Phase 6 — Classical Depth (Sessions 41–48)
-
-### Session 41 — Ishta / Kashta Phala
-**File:** `src/calculations/ishta_kashta.py`
-- BPHS Ch.27: Ishta = √(Uchcha_Bala × Cheshta_Bala), Kashta = √((60−U)×(60−C))
-- Net Sphuta = Ishta − Kashta (range −60 to +60 Virupas)
-- All 7 planets. Addresses PVRNR gap: full strength doctrine beyond Shadbala
-
-### Session 42 — Longevity Doctrine
-**File:** `src/calculations/longevity.py`
-- Three methods: Pindayu (exaltation ratios), Nisargayu (natural years × house weight), Amsayu (D9 dignity)
-- Average → Short/Medium/Long span classification
-- Balarishta: Moon in dusthana, Lagnesh in dusthana, malefics H1+H8
-
-### Session 43 — Yogini Dasha
-**File:** `src/calculations/yogini_dasha.py`
-- 8-lord 36-year cycle: Mangala(Moon,1)→Pingala(Sun,2)→Dhanya(Jup,3)→Bhramari(Mars,4)→Bhadrika(Mer,5)→Ulka(Sat,6)→Siddha(Ven,7)→Sankata(Rahu,8)
-- Starting Yogini from birth nakshatra mod 8
-- Antardashas proportional. current_yogini() for any date.
-
-### Session 44 — Full KP Engine
-**File:** `src/calculations/kp_full.py`
-- Sub-lord chain: sign lord → nakshatra lord → sub-lord → sub-sub-lord
-- Matches REF_KPSubLordTable exactly. India 1947: Lagna Krittika → nak lord Sun ✓
-- compute_kp_cusps() for all 12 houses
-- kp_ruling_planets() method
-- kp_event_promise(): sub-lord signification + ruling planet overlap
-
-### Session 45 — Extended Yoga Library (200+)
-**File:** `src/calculations/yogas_extended.py`
-- Nabhasa: Rajju/Musala/Nala/Mala/Sarpa + Sankhya (Gola through Veena)
-- Chandra: Sunapha/Anapha/Durudhura/Kemadruma/Adhi
-- Surya: Vesi/Vasi/Ubhayachari
-- Extended Dhana: Lakshmi/Duryoga/Daridra/Mahabhagya
-- All with dasha weighting (dormant=0.5×, active=1.0×)
-
-### Session 46 — Special Lagnas
-**File:** `src/calculations/special_lagnas.py`
-- Hora Lagna (Sun + hour×30°)
-- Ghati Lagna (Lagna + hour×37.5°)
-- Sree Lagna (Moon distance from Sun + Lagna)
-- Indu Lagna (9th lord Indu values mod 12 from Moon)
-- Pranapada (Sun + 2×degree_in_sign)
-
-### Session 47 — Full Jaimini System
-**File:** `src/calculations/jaimini_full.py`
-- AK in Kendra yoga, AK+AmK conjunction yoga
-- Karakamsha Gyana Yoga (benefics 5/9 from Karakamsha)
-- Arudha 7th quality, Upapada lord strength
-- Karakamsha house scoring via Jaimini school weights
-- Jaimini longevity: Brahma/Maheshvara/Rudra method
-- Pada relationship scoring (6/8 = −1.5×, trine = +1.5×, same sign = +2.0×)
-
-### Session 48 — Empirical Validation Backend
-**Files:** `src/calculations/empirica.py`, `src/api/empirica_router.py`
-- REF_EmpiricaSchema live: 18-column SQLite event log
-- record_event(), get_events(), compute_accuracy()
-- Per-rule lift ratios (manifested/fired vs base rate)
-- Accuracy by house, event type, Mahadasha
-- Three 1947 India seed events (1971 war, 1991 liberalisation, 2001 Parliament attack)
-- FastAPI: POST /empirica/events, GET /empirica/events/{id}, GET /empirica/accuracy
+Every CALC_ and SCORE_ sheet in the workbook has a corresponding Python implementation.
+ENGINE_VERSION = "3.0.0".
 
 ---
 
-## Phases 1–5 — see previous PLAN.md entries
+## Phase 7 — Workbook Completeness (Sessions 49–56)
+
+### Session 49 — Full 12-state Sayanadi
+**File:** `src/calculations/sayanadi_full.py`
+- Previous implementation had 7 of 12 states. Added 5 decanate-based states:
+  Sayana (odd 0°–10°), Upavesh (odd 10°–20°), Netrapani (odd 20°–30°),
+  Kautuka (even 0°–10°), Nishcheshta (even 10°–20°)
+- Priority chain: Kopa > Deena > Sthira > Mudita > Kshuditha > Trashita > decanate > Prakrita
+- Deena now wired from `graha_yuddha.py` loser detection (yuddha_losers set)
+- Modifiers: Sthira/Mudita=1.25, Deena/Kopa=0.50, Kshuditha/Trashita/Upavesh=0.75,
+  Netrapani/Kautuka=0.85, Sayana/Nishcheshta=0.60, Prakrita=1.00
+- Source: REF_AvasthaRules §2, BPHS Ch.45–47
+
+### Session 50 — Panchadha Maitri wired to scoring
+**File:** `src/calculations/panchadha_maitri.py`
+- Tatkalik: P2 in H2/3/4/10/11/12 from P1 = temporal Friend, else Enemy
+- Panchadha = Naisargika × Tatkalik → 5-fold: Adhi Mitra(+1.0)/Mitra(+0.5)/
+  Sama(0)/Shatru(−0.5)/Adhi Shatru(−1.0)
+- India 1947 verified against CALC_TatkalikFriendship live matrix
+- compute_panchadha_matrix(chart) returns full 7×7 PanchadhaMatrix dataclass
+- Source: CALC_PanchadhaMaitri §4, BPHS Ch.15
+
+### Session 51 — Lagnesh Global Modifier
+**File:** `src/calculations/lagnesh_strength.py`
+- 9-condition lookup table (CALC_LagneshStrength): modifier −0.75 to +0.75
+- Applied to ALL 12 house scores as a cross-cutting adjustment
+- India 1947: Venus (Lagnesh) in H3, neutral dignity → 0.00 confirmed
+- Source: CALC_LagneshStrength, SCORE_AllHouses row 42
+
+### Session 52 — Dig Bala Continuous Score
+**File:** `src/calculations/dig_bala.py`
+- Replaces binary yes/no with 0.0–1.0 continuous score per CALC_DigBala col G
+- Formula: score = 1 − circular_dist(current_house, peak_house) / 6
+- All 7 workbook values verified: Sun 0.167, Moon 0.833, Mars 0.333,
+  Mercury 0.667, Jupiter 0.167, Venus 0.833, Saturn 0.333
+- Source: CALC_DigBala, BPHS Ch.27
+
+### Session 53 — Graha Yogas (YOGA_Graha sheet)
+**File:** `src/calculations/yogas_graha.py`
+- 4 missing yogas + 2 confirmations from YOGA_Graha:
+  Budhaditya (Sun+Mer conjunct, present 1947)
+  Saraswati (Jup+Ven+Mer all in kendra/trikona)
+  Chandra-Mangal (Moon+Mars conjunct)
+  Kahala (H4+H9 lords mutual kendra, present 1947)
+  Parvata (H1+H2 lords both strong)
+  Gaja Kesari (confirmed present 1947)
+- Source: YOGA_Graha, BPHS Ch.36–43–68; Phaladeepika Ch.6
+
+### Session 54 — Narayana Dasha Argala (ND-6)
+**File:** `src/calculations/narayana_argala.py`
+- PVRNR Ch.5: Argala on the active Narayana Dasha sign modifies activation weight
+- Argala positions: H2 (Dhan), H4 (Sukha), H11 (Labha), H5 (secondary, ×0.5)
+- Virodha: H12 cancels H2, H10 cancels H4, H3 cancels H11, H9 cancels H5
+- Net modifier −0.5 to +0.5 applied to period activation weight
+- Source: NOTES_NarayanaDasaCompliance ND-6, PVRNR Narayana Dasha Ch.5
+
+### Session 55 — Configuration Toggles
+**File:** `src/calculations/config_toggles.py`
+- All REF_Config §1 toggles now exposed:
+  Ayanamshas: Lahiri(1)/Raman(3)/Krishnamurti(5)/Fagan-Bradley(0)
+  Node type: mean/true (both via pyswisseph)
+  Retrograde policy: apply ±0.10 / ignore / classical full-strength
+- CalcConfig dataclass with to_dict()/from_dict() for API persistence
+- Source: REF_Config §1, CALC_RetrogradeFix
+
+### Session 56 — Varga Agreement Confidence Flag
+**File:** `src/calculations/varga_agreement.py`
+- CALC_CompositeVargaScore col I: per-house D1/D9/D10 agreement
+- ★★ = all 3 same direction → High confidence
+- ★  = D1+D9 agree, D10 diverges → Moderate confidence
+- ○  = D1 and D9 disagree → Low confidence (nuanced chart)
+- India 1947 H2 Wealth: D1=−5.25, D9=−2.0, D10=−2.5 → ★★ confirmed
+- Source: CALC_CompositeVargaScore col I, OUTPUT_LifePressureIndex_Full
 
 ---
 
-## Remaining Gaps (out of scope / not encodable)
+## Phases 1–6 (Sessions 1–48) — see previous PLAN.md entries
 
-| Item | Reason |
-|------|--------|
-| UX_StudentMode | Pedagogical UI — product decision needed |
-| API_ProkeralaScript | External API integration |
-| "Strong benefic cancels afflictions" rule | Threshold unspecified in classical texts |
-| Holistic chart gestalt synthesis | Requires practitioner tacit knowledge |
-| Kalachakra Dasha | Highly complex, textual disagreement |
-| Full Placidus cusps (KP) | Requires swe.houses('P') — partial implementation |
+---
+
+## Workbook Coverage — Final State
+
+All 178 sheets audited. Every CALC_ and SCORE_ sheet has a Python equivalent.
+
+| Category | Implemented | Notes |
+|----------|-------------|-------|
+| INPUT sheets (5) | Not needed | Runtime inputs handled by API |
+| REF sheets (28) | All encoded | Constants in Python dicts/dataclasses |
+| CALC sheets (43) | All 43 ✅ | Complete as of Session 56 |
+| SCORE sheets (75) | All 75 ✅ | multi_axis_scoring.py × 5 axes |
+| YOGA sheets (5) | All 5 ✅ | extended_yogas.py + yogas_graha.py |
+| OUTPUT sheets (13) | All ✅ | Generated by scoring_v3.py + narrative.py |
+| LEGEND/NOTES (4) | Encoded | As invariants in docs |
+| HOWTO/UX (3) | Partial | StudentMode = product decision |
+| API_ProkeralaScript | Skipped | External integration, not in scope |
+| NOTES_VBAMacro | N/A | Excel-specific |
+
+## Genuine Theoretical Limits
+
+| Item | Why not encodable |
+|------|-----------------|
+| Holistic gestalt synthesis | No classical formula — requires practitioner judgment |
+| "Strong benefic cancels afflictions" threshold | BPHS states principle, gives no number |
+| Kalachakra Dasha | Contradictory versions across commentators |
+| Desha-Kala-Patra | Geographic/cultural context — no parameterisable formula |
+| Muhurta / Prashna | Separate discipline with different inputs |
