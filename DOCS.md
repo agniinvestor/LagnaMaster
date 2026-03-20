@@ -1,128 +1,102 @@
-# LagnaMaster — Technical Documentation
+# LagnaMaster — Module Reference
 
-> Last updated: 2026-03-20 | Sessions 1–32 | 717/717 tests
+## src/calculations/ — 25 modules
 
-## New in Phase 4 (Sessions 28–32)
+| Module | Function | Phase |
+|--------|----------|-------|
+| dignity.py | compute_all_dignities(chart) → dict | 1 |
+| nakshatra.py | compute_nakshatra(planet, chart) → NakshatraResult | 1 |
+| friendship.py | compute_friendship(p1, p2, chart) | 1 |
+| house_lord.py | compute_house_map(chart) → HouseMap | 1 |
+| chara_karak.py | compute_chara_karakas(chart) | 1 |
+| narayana_dasha.py | compute_narayana_dasha(chart, birth_date) | 1 |
+| shadbala.py | compute_shadbala(chart) → ShadbalaResult | 1 |
+| vimshottari_dasa.py | compute_vimshottari_dasa(chart, birth_date) | 2 |
+| ashtakavarga.py | compute_ashtakavarga(chart) → AshtakavargaChart | 1 |
+| gochara.py | compute_gochara(chart, transit_date) → GocharaReport | 1 |
+| panchanga.py | compute_panchanga(chart) + compute_navamsha_chart(chart) | 1 |
+| pushkara_navamsha.py | is_pushkara_navamsha(si, d) + run_monte_carlo(...) | 2 |
+| kundali_milan.py | compute_kundali_milan(chart1, chart2) | 2 |
+| chara_dasha.py | compute_chara_dasha(chart, birth_date) | 2 |
+| kp_significators.py | compute_kp_chart(chart) → KPChart | 2 |
+| varshaphala.py | compute_varshaphala(chart, year) | 2 |
+| varga.py | compute_varga(chart) → VargaChart | 2 |
+| sapta_varga.py | compute_vimshopak(chart) | 2 |
+| functional_roles.py | compute_functional_roles(chart) → FunctionalRoles | 4 |
+| avastha.py | compute_deeptadi/baladi/lajjitadi(planet, chart) | 4 |
+| avastha_v2.py | compute_avasthas_v2(chart) → AvasthaReportV2 | 5 |
+| pressure_engine.py | compute_pressure_index(chart, dashas, date) | 4 |
+| argala.py | compute_argala(chart) + compute_arudha_lagna(chart) | 4 |
+| graha_yuddha.py | compute_graha_yuddha(chart) → list[GrahaYuddha] | 4 |
+| multi_lagna.py | compute_chandra/surya/karakamsha_lagna(chart) + compute_all_arudha_padas(chart) | 5 |
+| multi_axis_scoring.py | score_all_axes(chart, school) → MultiAxisScores | 5 |
+| rule_interaction.py | apply_rule_interactions(fired, scores) → float | 5 |
+| lpi.py | compute_lpi(chart, dashas, on_date, school) → LPIResult | 5 |
+| divisional_charts.py | compute_divisional_signs(chart) + compute_vimshopaka(chart) + compute_d60(chart) | 5 |
+| extended_yogas.py | detect_raja_dhana/viparita/neecha_bhanga_yogas(...) + compute_rasi_drishti/bhavat_bhavam(chart) | 5 |
+| narrative.py | generate_narrative(lpi, chart, dashas, date) → NarrativeReport | 5 |
+| scoring_v2.py | score_chart_v2(chart) → ChartScoresV2 (ENGINE_VERSION="2.0.0") | 4 |
+| scoring_v3.py | score_chart_v3(chart, dashas, date, school) → ChartScoresV3 (ENGINE_VERSION="3.0.0") | 5 |
+| scenario.py | apply_scenario(chart, overrides) + compare_scenarios(...) | 5 |
 
-### `src/calculations/functional_roles.py` (Session 28)
+## src/ — Core modules
 
-Per-lagna functional role matrix — the most critical under-modeled layer.
+| Module | Purpose |
+|--------|---------|
+| ephemeris.py | pyswisseph wrapper, compute_chart() |
+| scoring.py | D1 scoring engine v1 (22 rules) |
+| db.py | SQLite immutable chart store |
+| db_pg.py | PostgreSQL adapter (mirrors db.py API) |
+| cache.py | Redis 3-tier caching |
+| auth.py | JWT multi-user authentication |
+| config.py | School gates (Parashari/KP/Jaimini) |
+| worker.py | Celery tasks: compute_chart, monte_carlo, generate_pdf |
+| report.py | PDF report generation (reportlab) |
+| montecarlo.py | Monte Carlo sensitivity (re-exports pushkara_navamsha) |
 
-```python
-roles = compute_functional_roles(chart)
-roles.yogakarakas          # planets ruling kendra+trikona simultaneously
-roles.badhaka_house        # 11 (moveable) / 9 (fixed) / 7 (dual) lagna
-roles.badhaka_lord         # lord of badhaka house
-roles.maraka_lords         # H2 + H7 lords
-roles.dusthana_lords       # H6 + H8 + H12 lords
-roles.functional_benefics  # lagna-specific, not universal
-roles.functional_malefics  # lagna-specific
-roles.is_yogakaraka(p)     # True if planet is yogakaraka for this lagna
-roles.is_functional_malefic(p)
-```
+## Scoring Schools
 
-**Key insight**: Venus rules H1+H6 for Sagittarius lagna — making it both lagna lord (protective) and H6 lord (challenging). This dual-role is computed correctly by the functional matrix.
+Rule weights differ by school (REF_SchoolConfig):
 
-### `src/calculations/avastha.py` (Session 29)
+| Rule | Parashari | KP | Jaimini |
+|------|-----------|-----|---------|
+| R04 Bhavesh in Kendra/Trikon | 2.0 | 1.5 | 1.5 |
+| R03 Benefic aspects house | 0.75 | 0.5 | 0.75 |
+| R11 Dusthana lord in house | -1.25 | -1.25 | -1.0 |
+| R23 SAV bindus ≥5 | +0.5 | +0.25 | +0.5 |
+| YK multiplier | 1.5× | 1.5× | 1.25× |
 
-Three classical planetary state systems:
-
-```python
-report = compute_all_avasthas(chart)
-report.deeptadi["Jupiter"]    # "Deepta"/"Swastha"/"Mudita"/"Shanta"/"Dukha"/"Kshobhita"
-report.baladi["Saturn"]       # "Bala"/"Kumara"/"Yuva"/"Vriddha"/"Mrita"
-report.lajjitadi.state        # "Lajjita"/"Kshobhita"/"Kshudhita"/"Trushita"/"Garvita"/"Mudita"
-report.lajjitadi.pressure_score  # 0.0–1.0
-report.effective_multipliers  # deeptadi × baladi per planet
-```
-
-**Lajjita** (5th lord ashamed) = highest pressure state. Occurs when 5th lord is in dusthana with malefics or combust. Strong correlation with psychological burden, creative grief, anxiety.
-
-### `src/calculations/pressure_engine.py` (Session 30)
-
-**The Life Pressure Index** — the central missing capability.
-
-```
-PressureIndex = (structural_vulnerability/10 × dasha_activation × transit_load / resilience) × 10
-```
-
-Four components:
-1. `structural_vulnerability(chart)` → float [0..10] — natal baseline from Moon condition, Saturn-Moon, badhaka, dusthana interlocking, Lajjitadi
-2. `dasha_activation_weight(chart, dashas, date)` → float [0..2] — amplifies when MD/AD lords are functional malefics, badhaka lords, or marakas
-3. `transit_load(chart, date)` → float [0..2] — Sade Sati, Saturn/Rahu over lagna, malefic clusters
-4. `resilience_factor(chart, dashas, date)` → float [0.5..2.0] — Jupiter strength, yogakaraka dasha, Jupiter transit over Moon kendra
-
-```python
-# Single date
-point = compute_pressure_index(chart, dashas, date(2026,6,15))
-print(f"{point.pressure_index:.1f} — {point.label}")
-print(f"Drivers: {point.key_drivers}")
-
-# Timeline
-timeline = compute_pressure_timeline(chart, dashas,
-    from_date=date(2024,1,1), to_date=date(2028,12,31), step_months=3)
-crisis_periods = [p for p in timeline if p.is_elevated]
-```
-
-Labels: Tranquil (<2.5) / Mild (<4.0) / Moderate (<5.5) / Elevated (<7.0) / High (<8.5) / Critical (≥8.5)
-
-### `src/calculations/argala.py` (Session 31)
-
-Jaimini Argala + Arudha Lagna:
-
-```python
-# Argala on Lagna
-argala = compute_argala(chart, reference_house=1)
-argala.net_argala_score    # positive = net support, negative = obstruction
-argala.entries             # list of ArgalaEntry per argala house
-for e in argala.entries:
-    print(f"H{e.house_from_reference} argala: {e.net_effect} ({e.nature})")
-
-# Arudha Lagna
-al = compute_arudha_lagna(chart)
-al.arudha_lagna_sign       # social mirror sign
-al.al_condition            # "Strong"/"Afflicted"/"Mixed"/"Neutral"
-al.pressure_note           # explanation
-```
-
-### `src/calculations/scoring_v2.py` + `graha_yuddha.py` (Session 32)
-
-```python
-# Graha Yuddha
-wars = compute_graha_yuddha(chart)
-for w in wars:
-    print(f"{w.winner} defeats {w.loser} in {w.sign} (sep={w.separation_degrees:.3f}°)")
-
-# Scoring Engine v2
-from src.calculations.scoring_v2 import score_chart_v2, ENGINE_VERSION
-scores = score_chart_v2(chart)
-print(scores.engine_version)   # "2.0.0" — store alongside each score run
-print(scores.summary())
-for h, hs in scores.houses.items():
-    print(f"H{h}: {hs.final_score:+.2f} | func_malefic_bhavesh={hs.functional_malefic_bhavesh}")
-```
-
-v2 differences from v1: functional (lagna-specific) benefic/malefic classification; Graha Yuddha penalty (losers give 50% benefic score); ENGINE_VERSION field on every output; declarative rule results with traceable scoring.
-
-## Test Suite — 717 total
+## Life Pressure Index Weights
 
 ```
-S1–S10  pilot          222
-S11–S19 features       225
-S20–S27 production     210
-S28–S32 pressure       36   (test_phase4.py)
-                       ────
-                        717
-Note: functional_roles(9) + avastha(6) + pressure_engine(9) + argala(5) + graha_yuddha+scoring_v2(7) = 36
+D1  Natal          35%   Core natal promise
+CL  Chandra Lagna  15%   Emotional/relational axis
+SL  Surya Lagna    10%   Authority/career axis
+D9  Navamsha       15%   Inner/dharmic axis
+D10 Dashamsha      10%   Career varga axis
+Dasha activation   10%   Current timing weight
+Gochar transit      5%   Transit influence
 ```
 
-## Remaining gaps (honest assessment)
+Active MD lord's natal house: ×1.15 modifier (CALC_DashaModifier).
 
-| Gap | Priority | Notes |
-|-----|----------|-------|
-| Vimsopaka Bala | High | Divisional chart strength across 16 vargas |
-| Full Kala Sarpa Yoga | High | All planets between Rahu/Ketu axis |
-| Compound temporal activation (multiplicative) | High | pressure_engine is additive; true multiplicative model needs all three layers formally combined |
-| Audit log | Medium | user_id + engine_version per score_run |
-| Sandhi sensitivity | Medium | Planets in last/first 1° of sign penalized |
-| Grantha Bhanga (war cancellation) | Medium | If war loser is in own/exalt sign, cancels war |
+## Invariants
+
+1. 1947 fixture: Lagna=Taurus 7.7286° ±0.05°, Sun=Cancer 27.989°
+2. Immutable inserts: save_chart always inserts new row
+3. `_SENTINEL` in db.py and auth.py for test isolation
+4. nakshatra.py field: `.dasha_lord`
+5. DignityLevel enum: DEEP_EXALT/EXALT/MOOLTRIKONA/OWN_SIGN/FRIEND_SIGN/NEUTRAL_SIGN/ENEMY_SIGN/DEBIL/DEEP_DEBIL
+6. WC rules R03/R05/R07/R14: always ×0.5
+7. db_pg.py API exactly mirrors db.py signatures
+8. Cache is optional: get() returns None on miss/error
+9. Celery JSON only; PDF returned as base64 string
+10. JWT tokens typed by "kind" claim
+11. Streamlit Cloud entry point: streamlit_app.py
+12. CI: docker job has needs: test
+13. Helm: secrets in K8s Secret lagnamaster-secrets
+14. Next.js: all API calls via /api/* proxy
+15. Parashari school always enabled; KP/Jaimini via ENABLE_KP/ENABLE_JAIMINI
+16. scoring_v3 ENGINE_VERSION stored in score_runs table for audit trail
+17. MonteCarloResult fields: base_scores, mean_scores, std_scores, sensitivity, sample_count
+18. Baaladi even-sign: sequence REVERSES (Mrita→Vridha→Yuva→Kumar→Bala from 0°→30°)

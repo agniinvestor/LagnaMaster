@@ -1,31 +1,70 @@
-# LagnaMaster — Build Plan
+# LagnaMaster — Programme Plan
 
-**Goal**: Transform a 178-sheet Excel Jyotish workbook into a deterministic, auditable, multi-user web platform with a genuine Life Pressure forecasting engine.
+## Status: COMPLETE — Sessions 1–40 ✅
 
-## Phase 1 — Pilot ✅ 222/222
-S1–S10: ephemeris, calculations×7, scoring, UI, Docker, vimshottari+SVG, yogas, AV, gochara, panchanga
+743 tests passing. ENGINE_VERSION = "3.0.0". All planned phases delivered.
 
-## Phase 2 — Features ✅ 225/225
-S11–S19: pushkara+MC, milan, PDF, jaimini, KP, tajika, compat, APIv2, UI10tabs
+---
 
-## Phase 3 — Production ✅ 210/210
-S20–S27: PostgreSQL+Redis, Celery, JWT, CI/CD, Kubernetes+Helm, Next.js, school gates, MC chord
+## Phase Summary
 
-## Phase 4 — Pressure Engine ✅ COMPLETE
+### Phase 1 — Pilot (Sessions 1–10) ✅ 222 tests
+- S1: ephemeris.py (pyswisseph wrapper, Lahiri ayanamsha, 1947 fixture)
+- S2: 7 calculation modules (dignity, nakshatra, friendship, house_lord, chara_karak, narayana_dasha, shadbala)
+- S3: scoring.py + FastAPI + SQLite
+- S4: Streamlit 3-tab UI
+- S5: Docker Compose + integration tests
+- S6: Vimshottari Dasha + SVG chart
+- S7: Yogas (Pancha Mahapurusha, Gajakesari, Kemadruma)
+- S8: Ashtakavarga (SAV bindus)
+- S9: Gochara + Sade Sati
+- S10: Panchanga + D9 Navamsha
 
-| S | Deliverable | Status | Tests |
-|---|-------------|--------|-------|
-| 28 | `functional_roles.py` — per-lagna maleficence, badhaka, maraka, kendradhipati, yogakaraka | ✅ Done | 9 |
-| 29 | `avastha.py` — Deeptadi (6), Baladi (5), Lajjitadi (6) psychological states | ✅ Done | 6 |
-| 30 | `pressure_engine.py` — Life Pressure Index: structural_vulnerability × dasha_activation × transit_load ÷ resilience; timeline output | ✅ Done | 9 |
-| 31 | `argala.py` — Jaimini Argala/Virodhargala obstruction model + Arudha Lagna | ✅ Done | 5 |
-| 32 | `graha_yuddha.py` + `scoring_v2.py` — Planetary war outcomes + declarative scoring engine with ENGINE_VERSION | ✅ Done | 7 |
+### Phase 2 — Features (Sessions 11–19) ✅ 225 tests
+- S11: Pushkara Navamsha + Monte Carlo birth-time sensitivity
+- S12: Kundali Milan 36-point compatibility
+- S13: PDF report generation (reportlab)
+- S14: Jaimini Chara Dasha
+- S15: KP Significators + sub-lord table
+- S16: Varshaphala / Tajika annual chart
+- S17: Compatibility scoring
+- S18: API v2 endpoints
+- S19: Streamlit 12-tab UI
 
-**Grand total: 717/717 tests passing**
+### Phase 3 — Production (Sessions 20–27) ✅ 210 tests
+- S20: PostgreSQL (db_pg.py) + Redis 3-tier caching
+- S21: Celery async workers (compute_chart, monte_carlo, generate_pdf)
+- S22: JWT multi-user auth
+- S23: GitHub Actions CI/CD
+- S24: Kubernetes Helm chart (HPA, ingress, secrets)
+- S25: Next.js 14 frontend (TypeScript + Tailwind)
+- S26: School gates (Parashari/KP/Jaimini per-user)
+- S27: Monte Carlo Celery chord (parallel sampling)
 
-## Remaining gaps (future Phase 5)
-- Vimsopaka Bala (divisional chart strength)
-- Full Kala Sarpa Yoga detection
-- Compound temporal activation model (multiplicative natal×dasha×transit)
-- Audit log (user-action trail with engine version per run)
-- Sandhi/boundary proximity sensitivity in scoring
+### Phase 4 — Pressure Engine (Sessions 28–32) ✅ 36 tests
+- S28: functional_roles.py (per-lagna maleficence, badhaka, maraka, yogakaraka)
+- S29: avastha.py (Deeptadi/Baladi/Lajjitadi)
+- S30: pressure_engine.py (Life Pressure Index v1, D1 approximation)
+- S31: argala.py (Argala/Virodhargala + Arudha Lagna)
+- S32: graha_yuddha.py + scoring_v2.py (ENGINE_VERSION="2.0.0")
+
+### Phase 5 — Full Workbook Parity (Sessions 33–40) ✅ 50 tests
+- S33: multi_lagna.py (Chandra/Surya/Karakamsha frames, all 12 Arudha Padas)
+- S34: multi_axis_scoring.py (23-rule engine × 5 axes, R23 SAV, school weights)
+- S35: rule_interaction.py (30 rule-pair modifiers from REF_RuleInteractionMatrix)
+- S36: lpi.py (full 7-layer LPI, dasha modifier ×1.15, domain balance)
+- S37: divisional_charts.py (all 16 vargas, Vimshopaka Bala, D60 Shastiamsha)
+- S38: extended_yogas.py (Raja/Dhana/Viparita/NeechaBhanga, Rasi Drishti, Bhavat Bhavam)
+- S39: avastha_v2.py (Baaladi even-sign fix), narrative.py
+- S40: scoring_v3.py (ENGINE_VERSION="3.0.0"), scenario.py
+
+---
+
+## Remaining Gaps (out of scope)
+
+| Sheet | Reason not built |
+|-------|-----------------|
+| UX_StudentMode | Pedagogical UI layer — product decision needed |
+| API_ProkeralaScript | External API integration — not in scope |
+| REF_EmpiricaSchema | Event log + statistical validation backend — requires real birth data corpus |
+| NOTES_* / HOWTO_* | Documentation only — no code equivalent |
