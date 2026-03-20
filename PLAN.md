@@ -182,3 +182,79 @@ Combines 7 measures for summary effectiveness (not replacing specific-purpose us
   Shadbala 20% + Avastha 20% + AV bala 15% + Dig Bala 15% + Amsa level 15%
   + Combustion 7.5% + Yuddha 7.5% → 0.0-1.0 overall + label.
   Labels: Highly effective / Effective / Moderate / Weak / Ineffective.
+
+---
+
+## Phase 9 — Synthesis & Judgment Layer (Sessions 64–70)
+
+### Session 64 — Dominance Hierarchy Engine
+**File:** `src/calculations/dominance_engine.py`
+Addresses GPT Gap 1. Encodes the specific classical overrides PVRNR uses in examples:
+- Benefic override: Jupiter in kendra aspects (BPHS Ch.34) suppress mild negatives
+- Malefic dominance: combust benefics cannot initiate yogas (BPHS Ch.3, PVRNR p147)
+- Dasha priority: running MD lord's house/strength = primary period filter
+- Activation dominance: MD lord's houses get ×1.5 weight
+`DominanceReport`: factors list, global_tone (Positive→Negative), affliction_dominated and
+yoga_dominated house lists. `dominant_theme()` returns single-sentence chart summary.
+Note: does NOT implement "gestalt synthesis" — those are named, specific BPHS rules only.
+
+### Session 65 — Promise vs Manifestation
+**File:** `src/calculations/promise_engine.py`
+Addresses GPT Gap 2. PVRNR applied principle: "dasha cannot produce what's absent."
+Three-level model:
+  Promise (natal) → `promise_present`, `promise_strength`, `ceiling` (max attainable)
+  Capacity (dasha) → `dasha_activated` flag (MD or AD lord rules the house/lord)
+  Delivery (transit) → `transit_supported` via AV SAV threshold
+Timing: Now (all three) / Soon (promise + dasha) / Future (promise only) / Blocked (no promise).
+
+### Session 66 — Domain-Specific Axis Weighting
+**File:** `src/calculations/domain_weighting.py`
+Addresses GPT Gap 3. PVRNR Ch.13 p181: "Use the correct divisional chart for the matter."
+7 domains with classical-grounded weights (all sum to 1.0):
+  career (D10×35%), marriage (D9×35%), mind_psychology (Chandra×40%),
+  wealth (D1×35%), health_longevity (D1×45%), spirituality (D9×45%), children.
+`compute_domain_lpi(chart, dashas, on_date, domain)` → `DomainLPIResult` with
+`domain_score`, `top_houses`, `weak_houses`, `rationale`.
+
+### Session 67 — Multi-Planet Chains
+**File:** `src/calculations/planet_chains.py`
+Addresses GPT Gap 4.
+A. Stelliums (3+ planets in same sign): benefic/malefic/mixed nature, house, interpretation.
+B. Dispositor chains: trace from planet → dispositor → ... → final (in own sign). Detects
+   mutual reception (2-planet parivartana). Max depth 9 to prevent infinite loops.
+C. Mutual reception (parivartana) classification: Strong (both in other's own sign) / Partial.
+India 1947: Cancer stellium = Sun/Moon/Mercury/Venus/Saturn (5 planets) confirmed.
+
+### Session 68 — House-Type Modulation
+**File:** `src/calculations/house_modulation.py`
+Addresses GPT Gaps 5+6. Classical doctrine:
+  Upachayas (3,6,10,11): mature with age; malefics BENEFICIAL here (BPHS).
+    Age modifier: 0–35y = 0.5×, 35–60y = 0.8×, 60+y = 1.0× (full maturation).
+  Kendras: stable throughout life.
+  Trikonas: lasting benefic promise.
+  Dusthanas: slightly dampened (0.9×) unless Viparita.
+  Marakas (2,7): noted for longevity considerations.
+`apply_house_modulation(scores, chart, age_years)` for batch processing.
+
+### Session 69 — Interpretive Confidence Model
+**File:** `src/calculations/confidence_model.py`
+Addresses GPT Gap 8. Five weighted components:
+  Varga agreement (30%): ★★=1.0, ★=0.65, ○=0.30
+  Conflict score (25%): benefic+malefic both active = 0.40, else 1.0
+  Sensitivity (20%): Monte Carlo stable=0.85, unstable=0.40
+  Boundary proximity (15%): |score|/2.0 — near zero = uncertain
+  Role clarity (10%): lord has clear functional role = 0.90
+Flags: varga divergence, benefic/malefic conflict, near-zero score, unclear role.
+`requires_expert_review` list for houses with Uncertain label or ≥3 flags.
+
+### Session 70 — Chart Exception Detection
+**File:** `src/calculations/chart_exceptions.py`
+Addresses GPT Gap 9. Seven checks with severity ratings:
+  Empty kendras (High) — Mahapurusha yogas absent, weak structural support
+  Lagnesh in 8th (High/Critical) — vitality challenges; Critical if also debilitated
+  Dusthana lords all strong (High) — check Viparita Raja Yoga
+  Moon severely afflicted (High) — 2+ malefics or dusthana placement
+  Multiple combust benefics (High) — yogas weakened (BPHS Ch.3)
+  Hemisphere imbalance (Moderate) — all planets in visible/invisible half
+  Score extreme (Critical/Advisory) — average D1 < −2.5 or > +2.5
+`special_rules_apply` list names specific BPHS doctrines triggered.

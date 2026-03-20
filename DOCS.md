@@ -234,3 +234,71 @@ Verdict mapping: ≥0.75=Full, ≥0.50=Partial, ≥0.25=Weak, <0.25=Minimal.
 25. AL perception: strong house + weak AL = Hidden Success; weak house + strong AL = Apparent Success
 26. Planet effectiveness: summary-only synthesis — does NOT replace specific-purpose strength measures
 27. Amsa level uses minimum across yoga planets (weakest link determines yoga strength)
+
+### Phase 9 — Synthesis & Judgment Layer (Sessions 64–70)
+| Module | Key function | Gap addressed |
+|--------|-------------|--------------|
+| dominance_engine.py | compute_dominance_factors(chart, dashas, date) + dominant_theme() | GAP 1 |
+| promise_engine.py | compute_full_promise(chart, dashas, date) + compute_house_promise(chart, h) | GAP 2 |
+| domain_weighting.py | compute_domain_lpi(chart, dashas, date, domain) + get_domain_weights(domain) | GAP 3 |
+| planet_chains.py | compute_stelliums(chart) + compute_all_dispositor_chains(chart) + compute_mutual_receptions(chart) | GAP 4 |
+| house_modulation.py | house_type_modifier(house, chart, age) + apply_house_modulation(scores, chart, age) | GAP 5+6 |
+| confidence_model.py | compute_confidence(chart, sensitivity_report) → ConfidenceReport | GAP 8 |
+| chart_exceptions.py | detect_chart_exceptions(chart) → ChartExceptionReport | GAP 9 |
+
+## Domain Axis Weights Reference (PVRNR p181)
+
+| Domain | D1 | Chandra | Surya | D9 | D10 | Dasha | Gochar | Primary H |
+|--------|----|---------|-------|----|-----|-------|--------|-----------|
+| career | 20% | 5% | 10% | 10% | 35% | 15% | 5% | 10 |
+| marriage | 20% | 10% | 5% | 35% | 5% | 15% | 10% | 7 |
+| mind_psychology | 20% | 40% | 10% | 10% | 5% | 10% | 5% | 4 |
+| wealth | 35% | 10% | 10% | 10% | 10% | 15% | 10% | 2 |
+| health_longevity | 45% | 15% | 10% | 10% | 5% | 10% | 5% | 8 |
+| spirituality | 15% | 10% | 5% | 45% | 5% | 15% | 5% | 9 |
+| children | 25% | 10% | 10% | 20% | 5% | 20% | 10% | 5 |
+| default | 35% | 15% | 10% | 15% | 10% | 10% | 5% | — |
+
+## Promise Levels
+
+| Level | Score threshold | Ceiling | Meaning |
+|-------|----------------|---------|---------|
+| Strong | ≥ 3.0 | 9.0 | Clear natal promise — dasha will deliver |
+| Moderate | ≥ 1.5 | 7.0 | Good promise — partial results likely |
+| Weak | ≥ 0.5 | 5.0 | Marginal promise — results limited |
+| Absent | ≥ −0.5 | 3.0 | No positive promise — dasha cannot create |
+| Negated | < −0.5 | 1.0 | Active affliction — results unlikely |
+
+## Confidence Model Weights
+
+| Component | Weight | Description |
+|-----------|--------|-------------|
+| Varga agreement | 30% | ★★=1.0, ★=0.65, ○=0.30 |
+| Conflict score | 25% | Benefic+malefic both active = 0.40 |
+| Sensitivity | 20% | Monte Carlo stable=0.85, unstable=0.40 |
+| Boundary proximity | 15% | \|score\|/2.0 — near zero = uncertain |
+| Role clarity | 10% | Lord has clear functional role |
+
+## Chart Exception Severities
+
+| Exception | Severity | Triggers |
+|-----------|----------|---------|
+| Severely Challenged Chart | Critical | Average D1 score < −2.5 |
+| Lagnesh in 8th + debilitated | Critical | Lagnesh debil in H8 |
+| Empty Kendras | High | No planets in H1/4/7/10 |
+| Lagnesh in 8th | High | Lagnesh in H8 (not debil) |
+| Dusthana Lords Strong | High | ≥2 of H6/H8/H12 lords in kendra/trikona |
+| Moon Severely Afflicted | High | ≥2 malefics conjunct OR malefic+dusthana |
+| Multiple Combust Benefics | High | ≥2 natural benefics combust |
+| Hemisphere Imbalance | Moderate | All planets in visible or invisible half |
+| Exceptionally Strong Chart | Advisory | Average D1 score > +2.5 |
+
+## Updated Invariants (Phase 9 additions)
+
+28. Dominance engine: encodes named BPHS rules only — not gestalt synthesis
+29. Promise: "dasha cannot produce what's absent" — ceiling applies even with activation
+30. Domain weights all sum to exactly 1.0 (verified in tests)
+31. Stellium = 3+ planets in same sign; Cancer stellium 1947 = ≥5 planets
+32. Dispositor chain terminates at planet in own sign (max depth 9, cycle-safe)
+33. Upachaya age modifier: 35y = 0.80×, 60y = 1.00× (full maturation)
+34. Confidence: requires_expert_review when label="Uncertain" OR flags ≥ 3

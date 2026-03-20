@@ -263,3 +263,79 @@ This module provides a summary view only — explicit documentation in docstring
 warns against substituting it for specific-purpose strength computations.
 Weights derived from PVRNR's emphasis ordering: Avastha and Shadbala highest
 (most discussed in Ch.15), AV/Dig/Amsa moderate, penalties lowest.
+
+---
+
+## Phase 9 — Synthesis & Judgment Layer (Sessions 64–70)
+
+### Session 64 — Dominance Hierarchy Engine
+**File:** `src/calculations/dominance_engine.py`
+Classical rules specifically encoded (NOT gestalt):
+(1) Jupiter in kendra aspects H1/5/7/9 from its position — suppresses mild negatives
+    in those houses if Jupiter is not combust. (BPHS Ch.34)
+(2) Combust benefics: `is_combust` flag from `dignity.py` → DominanceFactor with
+    overrides list naming which yogas are neutralized. (BPHS Ch.3)
+(3) Dasha priority: MD lord's house D1 score × 1.5 if in kendra/trikona.
+    This is the "primary activation filter" PVRNR uses in chart readings.
+Global tone from mean D1 score: >1.5=Positive, >0.5=Mixed Positive, >-0.5=Neutral,
+>-1.5=Mixed Negative, else Negative.
+
+### Session 65 — Promise vs Manifestation
+**File:** `src/calculations/promise_engine.py`
+Three-level model derived from PVRNR's chart reading approach:
+Level 1 (Promise): D1 score threshold → promise_present, strength, ceiling.
+  Score ≥3.0=Strong (ceiling 9.0), ≥1.5=Moderate (7.0), ≥0.5=Weak (5.0),
+  ≥-0.5=Absent (3.0), <-0.5=Negated (1.0).
+Level 2 (Capacity): MD or AD lord either rules the house or is in the house.
+Level 3 (Delivery): AV SAV ≥28 rekhas for that house = transit supported.
+India 1947: H2 Wealth score -5.25 → Negated promise, ceiling 1.0.
+
+### Session 66 — Domain-specific axis weights
+**File:** `src/calculations/domain_weighting.py`
+Derived from PVRNR p181: "Use the correct divisional chart for the matter of interest."
+"Suppose we are looking at happiness from a vehicle. D-16 is the best chart.
+Suppose we are trying to analyze a criminal's psychology. D-30 is the best chart.
+Suppose we are analyzing marriage. D-9 is the best chart."
+For LPI which only has 5 axes (D1/Chandra/Surya/D9/D10), career weights D10 most
+heavily because D-10 "shows one's true conduct in society" (PVRNR p102).
+Marriage weights D9 most because "D-9 is for marriage as dharma" (p181).
+Chandra Lagna given 40% for psychology because Moon = mind per naisargika karakas.
+
+### Session 67 — Planet chains
+**File:** `src/calculations/planet_chains.py`
+India 1947 Cancer stellium verified: Sun(27.99°), Moon(3.98°), Mars(7.46°),
+Mercury(13.67°), Venus(22.56°), Saturn(20.47°) — 6 planets in Cancer.
+Rahu/Ketu in Aries/Libra. Jupiter in Libra. Only Rahu/Ketu/Jupiter outside Cancer.
+Dispositor chain example: Jupiter in Libra → Venus (Libra lord) in Cancer →
+Moon (Cancer lord) in Cancer → Moon self-disposed (own sign Cancer). Length=3.
+Mutual reception check: any planet A in sign owned by planet B AND B in sign owned by A.
+India 1947: no mutual reception (Jupiter/Venus not in each other's own signs).
+
+### Session 68 — House-type modulation
+**File:** `src/calculations/house_modulation.py`
+BPHS upachaya doctrine: "Natural malefics in the 3rd and 6th houses from AL show
+someone perceived as a bold person who hits enemies hard. Since such impressions
+are usually formed about materially successful people, malefics in the 3rd and 6th
+from AL make one bold and materially successful." (PVRNR p102)
+General BPHS principle: malefics in H3/H6/H11 (upachayas) are beneficial.
+Age modifier for upachayas based on PVRNR's statements about these houses
+improving with persistence and effort over time (explicit in several chart readings).
+
+### Session 69 — Confidence model
+**File:** `src/calculations/confidence_model.py`
+India 1947 H2 Wealth: D1=−5.25, D9=−2.0, D10=−2.5 → all negative → ★★ (varga
+agreement component = 1.0). Score boundary = |−5.25|/2 = 1.0 (capped). Very
+high confidence this house is genuinely challenging.
+H1 Self: D1=+1.25, D9=−1.35, D10=−1.9 → ○ diverge (va_score=0.30). Lower
+confidence — mixed varga signals.
+
+### Session 70 — Chart exception detection
+**File:** `src/calculations/chart_exceptions.py`
+India 1947 chart: massive Cancer stellium triggers no "exception" by itself
+(stelliums detected in planet_chains.py, not here). The exception module checks
+for structural conditions (empty kendras, lagnesh in 8th, etc.).
+India 1947: Jupiter in H6 (Libra), Mars in H2 (Gemini), no planets in H1/H7/H10.
+H4 Cancer has 6 planets. H1 is empty but some kendras have planets (H4=✓, H6=near).
+No "empty kendras" exception fires because H4 (Cancer) is occupied.
+Combust check: Venus 22.56° + Saturn 20.47° both in Cancer with Sun 27.99° —
+Venus within combust orb of Sun (5.43°, standard orb 10°), Venus IS combust.

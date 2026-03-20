@@ -3,7 +3,7 @@
 Vedic Jyotish birth chart scoring platform. Transforms a 178-sheet Excel workbook
 into a deterministic, auditable Python web application.
 
-**873 tests | Sessions 1–63 complete | 56 calc modules | Engine v3.0.0**
+**~920 tests | Sessions 1–70 complete | 63 calc modules | Engine v3.0.0**
 
 ---
 
@@ -32,101 +32,80 @@ PYTHONPATH=. pytest tests/ -q -p no:warnings
 
 ## What It Does
 
-1. Accepts birth date, time, and geographic coordinates
-2. Computes sidereal planet positions via **pyswisseph** (Lahiri, Raman, KP, or Fagan-Bradley)
-3. Runs 23 BPHS scoring rules × 12 houses × 5 lagna axes (D1/Chandra/Surya/D9/D10)
-4. Applies Lagnesh global modifier, Dig Bala continuous scores, full 12-state Sayanadi
-5. Computes the 7-layer **Life Pressure Index** with varga agreement confidence flags
-6. Evaluates yoga fructification conditions (orb, affliction, dignity, Amsa level)
-7. Models Arudha perception (reality vs how the world perceives)
-8. Synthesises multi-factor planet effectiveness across all strength measures
-9. Detects 200+ yogas with dasha-weighted scoring
-10. Records birth-event correlations for empirical accuracy measurement
-11. Serves results via FastAPI REST + Streamlit UI + Next.js frontend
+1. Computes sidereal planet positions via **pyswisseph** (Lahiri, Raman, KP, Fagan-Bradley)
+2. Runs 23 BPHS scoring rules × 12 houses × 5 lagna axes
+3. Applies full avastha (12-state Sayanadi), Panchadha Maitri, Lagnesh modifier, Dig Bala
+4. Computes 7-layer **Life Pressure Index** with varga agreement confidence
+5. Evaluates yoga fructification (orb, affliction, Amsa level per PVRNR p147)
+6. **Synthesis layer**: dominance hierarchy, promise vs manifestation, domain weighting
+7. Multi-planet chains: stelliums, dispositor chains, mutual receptions
+8. House-type modulation (upachaya age effect, malefics in 3/6/11)
+9. Interpretive confidence model with expert-review flags
+10. Empirical event log with per-rule accuracy tracking
 
 ---
 
-## Life Pressure Index
-
-```
-LPI = D1×35% + Chandra×15% + Surya×10% + D9×15% + D10×10% + Dasha×10% + Gochar×5%
-```
+## Synthesis Layer (Phase 9)
 
 ```python
-from src.calculations.scoring_v3 import score_chart_v3
-from src.calculations.varga_agreement import compute_varga_agreement
-from src.calculations.yoga_fructification import yoga_fructification_score
-from src.calculations.planet_effectiveness import compute_all_effectiveness
+from src.calculations.dominance_engine  import compute_dominance_factors, dominant_theme
+from src.calculations.promise_engine    import compute_full_promise
+from src.calculations.domain_weighting  import compute_domain_lpi
+from src.calculations.confidence_model  import compute_confidence
+from src.calculations.chart_exceptions  import detect_chart_exceptions
 
-result  = score_chart_v3(chart, dashas, on_date=date.today(), school="parashari")
-agree   = compute_varga_agreement(chart)
-effects = compute_all_effectiveness(chart)
+# What dominates this chart right now?
+dom = compute_dominance_factors(chart, dashas, on_date)
+print(dominant_theme(chart, dashas, on_date))
+# → "Mercury MD (D1=−0.50); chart tone: Mixed Negative"
 
-for h, hl in result.lpi.houses.items():
-    flag = agree.flag_for(h)
-    print(f"H{h}: {hl.full_index:+.2f} [{hl.rag}] {flag}")
+# Does the natal chart even promise career success?
+promise = compute_full_promise(chart, dashas, on_date)
+h10 = promise[10]
+print(f"H10 Career: {h10.promise.promise_strength} / {h10.manifestation_timing}")
+# → "H10 Career: Weak / Future"
 
-# Yoga strength — does it actually deliver?
-r = yoga_fructification_score(["Jupiter","Moon"], chart)
-print(f"Gaja Kesari: {r.verdict} ({r.fructification_score:.2f})")
-print(f"Weaknesses: {r.weaknesses}")
+# Career-specific axis weights (D10 dominates)
+career = compute_domain_lpi(chart, dashas, on_date, "career")
+print(f"Career domain score: {career.domain_score:+.2f}")
 
-# Planet effectiveness synthesis
-for planet, eff in effects.items():
-    print(f"{planet}: {eff.label} ({eff.overall:.2f})")
+# How confident is the interpretation?
+conf = compute_confidence(chart)
+print(f"Global confidence: {conf.global_confidence:.2f}")
+print(f"Expert review needed: {conf.requires_expert_review}")
+
+# Any exceptional chart conditions?
+exc = detect_chart_exceptions(chart)
+print(exc.exception_summary)
 ```
 
 ---
 
-## Yoga Fructification (PVRNR p147)
+## Domain-Specific Axis Weights (PVRNR p181)
 
-Three conditions explicitly stated by PVRNR for a yoga to deliver full results:
-
-1. **Free from functional malefic afflictions** — conjunct functional malefics reduce power
-2. **Close conjunction** — within 6° (PVRNR's stated threshold); 8° = weak (Rajiv Gandhi example)
-3. **Not combust, debilitated, or in inimical house**
-
-Amsa level (Dasa Varga count) determines the magnitude of results:
-
-| Count | Amsa | Quality |
-|-------|------|---------|
-| 2 | Paarijataamsa | Moderate |
-| 3 | Uttamaamsa | Good |
-| 4 | Gopuraamsa | Notable |
-| 5 | Simhasanamsa | Distinguished |
-| 6 | Paaravataamsa | Excellent |
-| 7+ | Devaloka/Brahmaloka/Airaavata | Divine/Supreme |
+| Domain | Dominant axis | Primary house |
+|--------|--------------|--------------|
+| career | D10 × 35% | H10 |
+| marriage | D9 × 35% | H7 |
+| mind_psychology | Chandra × 40% | H4 |
+| wealth | D1 × 35% | H2 |
+| health_longevity | D1 × 45% | H8 |
+| spirituality | D9 × 45% | H9 |
+| children | D1 × 25% + Dasha × 20% | H5 |
 
 ---
 
-## Stronger-of-Two Framework (PVRNR p194)
+## Promise vs Manifestation
 
-Used for dual-lord signs (Scorpio/Aquarius), Narayana Dasha start sign, longevity lords:
+Classical principle (PVRNR, applied throughout):
+*"If the promise is absent, the dasha cannot produce the result."*
 
-```python
-from src.calculations.stronger_of_two import stronger_planet, stronger_sign
-
-# Scorpio has dual lords: Mars and Ketu — which is stronger?
-lord = stronger_planet("Mars", "Ketu", chart)
-
-# Narayana Dasha: starts from stronger of Lagna or 7th
-start_si = stronger_sign(lagna_si, (lagna_si+6)%12, chart)
-```
-
-Hierarchy: cotenants > exalt/own > exalted cotenants > rasi aspects > degree advancement.
-
----
-
-## Regression Fixture — India 1947
-
-All India 1947 regressions pass:
-
-| Phase 8 check | Value | Status |
-|---------------|-------|--------|
-| Orb Sun–Mercury | same sign Cancer | Conjunction detected |
-| Budhaditya fructification | present + close | Partial/Full |
-| Cotenant count Sun | 4 (Moon/Mer/Ven/Mars in Cancer) | ✓ |
-| AL perception H2 Wealth | both actual/AL weak | Recognized Struggle |
+| Promise | Dasha | Transit | Timing |
+|---------|-------|---------|--------|
+| ✓ Strong | ✓ Active | ✓ Supported | **Now** (p~0.80) |
+| ✓ Present | ✓ Active | ✗ | **Soon** (p~0.55) |
+| ✓ Present | ✗ | — | **Future** (p~0.20) |
+| ✗ Absent | any | any | **Blocked** (p~0.05) |
 
 ---
 
@@ -138,10 +117,11 @@ All India 1947 regressions pass:
 | 2 — Features | 11–19 | Pushkara, Kundali Milan, PDF, Jaimini, KP, Tajika, API v2, 12-tab UI |
 | 3 — Production | 20–27 | PostgreSQL, Redis, Celery, JWT, CI/CD, Kubernetes, Next.js, School gates |
 | 4 — Pressure Engine | 28–32 | Functional roles, Avastha, LPI v1, Argala, Graha Yuddha, Scoring v2 |
-| 5 — Workbook Parity | 33–40 | Multi-lagna, 5-axis scoring, Rule interactions, 7-layer LPI, D60, Scoring v3 |
-| 6 — Classical Depth | 41–48 | Ishta/Kashta, Longevity, Yogini Dasha, Full KP, 200+ Yogas, Jaimini, Empirica |
-| 7 — Workbook Complete | 49–56 | 12-state Sayanadi, Panchadha Maitri, Lagnesh modifier, Dig Bala, Config toggles |
-| 8 — PVRNR Textbook | 57–63 | Orb strength, Yoga fructification, Stronger-of-two, AV transit, Arudha perception, PVRNR yogas, Planet effectiveness |
+| 5 — Workbook Parity | 33–40 | Multi-lagna, 5-axis scoring, Rule interactions, 7-layer LPI, Scoring v3 |
+| 6 — Classical Depth | 41–48 | Ishta/Kashta, Longevity, Yogini Dasha, Full KP, 200+ Yogas, Empirica |
+| 7 — Workbook Complete | 49–56 | 12-state Sayanadi, Panchadha Maitri, Lagnesh modifier, Dig Bala |
+| 8 — PVRNR Textbook | 57–63 | Orb strength, Yoga fructification, Stronger-of-two, AV transit, Arudha perception |
+| 9 — Synthesis Layer | 64–70 | Dominance engine, Promise/Manifestation, Domain weights, Planet chains, House modulation, Confidence model, Exception detection |
 
 ---
 
@@ -151,7 +131,7 @@ All India 1947 regressions pass:
 |-------|---------|
 | Ephemeris | pyswisseph (Lahiri/Raman/KP/Fagan-Bradley) |
 | Backend | FastAPI + Celery workers |
-| Database | SQLite (→ PostgreSQL via PG_DSN) + Empirica event log |
+| Database | SQLite (→ PostgreSQL) + Empirica event log |
 | Cache | Redis (optional) |
 | UI | Streamlit (10-tab) + Next.js 14 |
 | Deploy | Docker Compose + Kubernetes Helm |
