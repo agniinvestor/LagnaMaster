@@ -231,3 +231,41 @@ def compute_confidence(chart, birth_time_uncertainty_minutes: float = 5.0):
     """Alias for compute_chart_confidence with auto-generated base scores."""
     base_scores = {h: 0.0 for h in range(1, 13)}
     return compute_chart_confidence(chart, base_scores, birth_time_uncertainty_minutes)
+
+
+from dataclasses import dataclass as _dc
+from typing import Dict as _Dict
+
+@_dc
+class HouseConfidence:
+    house: int
+    overall_confidence: float   # 0.0-1.0
+    confidence_label: str       # 'High'/'Moderate'/'Low'/'Uncertain'
+
+class ChartConfidenceReport2:
+    def __init__(self, houses, global_confidence, most_reliable_houses,
+                 uncertainty_flags=None, recommendations=None):
+        self.houses = houses                          # dict {int: HouseConfidence}
+        self.global_confidence = global_confidence    # float 0-1
+        self.most_reliable_houses = most_reliable_houses  # list of 3 ints
+
+def compute_confidence(chart, birth_time_uncertainty_minutes: float = 5.0):
+    flags = compute_uncertainty_flags(chart)
+    base = {h: 0.0 for h in range(1, 13)}
+    intervals = compute_confidence_intervals(base, flags, birth_time_uncertainty_minutes)
+
+    houses = {}
+    for ci in intervals:
+        conf = max(0.0, min(1.0, ci.confidence_pct / 100.0))
+        if conf >= 0.8:   label = "High"
+        elif conf >= 0.6: label = "Moderate"
+        elif conf >= 0.4: label = "Low"
+        else:              label = "Uncertain"
+        houses[ci.house] = HouseConfidence(ci.house, round(conf, 3), label)
+
+    global_conf = round(sum(h.overall_confidence for h in houses.values()) / 12, 3)
+    top3 = sorted(houses.values(), key=lambda h: h.overall_confidence, reverse=True)[:3]
+    most_reliable = [h.house for h in top3]
+
+    return ChartConfidenceReport2(houses=houses, global_confidence=global_conf,
+                                   most_reliable_houses=most_reliable)
