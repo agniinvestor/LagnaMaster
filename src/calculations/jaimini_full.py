@@ -132,25 +132,30 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
         "Jaimini Sutra 3.4.1"
     ))
 
-    try:
-        _lord4 = hmap.house_lord[3]
-        _ak_h  = ph.get(ak_planet, 0)
-        _l4_h  = ph.get(_lord4, 0)
-        _bandhu = (_ak_h > 0 and _l4_h > 0 and abs(_l4_h - _ak_h) % 12 in {0,3,6,9})
-        yogas.append(JaiminiYoga(
-            name="Bandhu Yoga", present=_bandhu,
-            score=1.5 if _bandhu else 0.0,
-            description=f"4th lord {_lord4} in kendra from AK {ak_planet}",
-            source="Jaimini Sutra 4.2",
-        ))
-    except Exception:
-        pass
+
+    # ── Bandhu Yoga (4th lord in kendra from AK) ─────────────────────────────
+    lord4 = hmap.house_lord[3]
+    ak_h = ph.get(ak_planet, 0)
+    lord4_h = ph.get(lord4, 0)
+    if ak_h > 0 and lord4_h > 0:
+        diff_bandhu = abs(lord4_h - ak_h) % 12
+        bandhu = diff_bandhu in {0, 3, 6, 9}
+    else:
+        bandhu = False
+    yogas.append(JaiminiYoga(
+        name="Bandhu Yoga",
+        present=bandhu,
+        score=1.5 if bandhu else 0.0,
+        description=f"4th lord {lord4} in kendra from AK {ak_planet} — comfort and homeland",
+        source="Jaimini Sutra 4.2",
+    ))
+
 
     try:
         _lord4 = hmap.house_lord[3]
         _ak_h  = ph.get(ak_planet, 0)
         _l4_h  = ph.get(_lord4, 0)
-        _bandhu = (_ak_h > 0 and _l4_h > 0 and abs(_l4_h - _ak_h) % 12 in {0,3,6,9})
+        _bandhu = _ak_h > 0 and _l4_h > 0 and abs(_l4_h - _ak_h) % 12 in {0,3,6,9}
         yogas.append(JaiminiYoga(
             name="Bandhu Yoga", present=_bandhu,
             score=1.5 if _bandhu else 0.0,
@@ -160,3 +165,106 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
     except Exception:
         pass
     return yogas
+
+
+def compute_karakamsha_scores(chart) -> dict[int, float]:
+    """Score all 12 houses from Karakamsha lagna (soul axis)."""
+    from src.calculations.multi_lagna import compute_karakamsha
+    from src.calculations.multi_axis_scoring import score_axis
+    try:
+        kk = compute_karakamsha(chart)
+        ax = score_axis(chart, kk.ak_d9_sign_index, "Karakamsha", "jaimini")
+        return ax.scores
+    except Exception:
+        return {h: 0.0 for h in range(1, 13)}
+
+
+@dataclass
+class JaiminiLongevity:
+    brahma: str        # planet
+    maheshvara: str    # planet
+    rudra: str         # planet
+    span: str          # "Short"/"Medium"/"Long"
+    years_estimate: float
+    method: str = "Jaimini Brahma-Maheshvara-Rudra"
+
+
+def compute_jaimini_longevity(chart) -> JaiminiLongevity:
+    """
+    Jaimini longevity via Brahma, Maheshvara, Rudra method.
+    Brahma: strongest planet in odd houses (1,3,5,7,9,11)
+    Maheshvara: 8th lord from AK
+    Rudra: stronger of 8th and 12th lords
+    """
+    from src.calculations.house_lord import compute_house_map
+    from src.calculations.chara_karak import compute_chara_karakas
+
+    hmap = compute_house_map(chart)
+    ph = hmap.planet_house
+
+    # Brahma: planet occupying or ruling odd houses with most strength
+    odd_houses = {1,3,5,7,9,11}
+    odd_planets = [p for p in chart.planets if ph.get(p,0) in odd_houses
+                   and p not in {"Rahu","Ketu"}]
+    brahma = odd_planets[0] if odd_planets else "Jupiter"
+
+    # Maheshvara: lord of 8th from Atmakaraka
+    try:
+        karakas_raw = compute_chara_karakas(chart)
+        if hasattr(karakas_raw, 'items'):
+            ak = next((p for p, r in karakas_raw.items() if r == "AK"), "Sun")
+        else:
+            ak = next((p for p, r in karakas_raw if r == "AK"), "Sun")
+    except Exception:
+        ak = "Sun"
+    ak_si = chart.planets[ak].sign_index
+    h8_from_ak_si = (ak_si + 7) % 12
+    maheshvara = _SIGN_LORD[h8_from_ak_si]
+
+    # Rudra: stronger of H8 lord and H12 lord (by house position)
+    lord8  = hmap.house_lord[7]
+    lord12 = hmap.house_lord[11]
+    h8_lord_house  = ph.get(lord8, 1)
+    h12_lord_house = ph.get(lord12, 1)
+    _HOUSE_STRENGTH = {1:4,4:4,7:4,10:4, 2:2,5:2,8:2,11:2, 3:1,6:1,9:1,12:1}
+    rudra = lord8 if _HOUSE_STRENGTH.get(h8_lord_house,1) >= _HOUSE_STRENGTH.get(h12_lord_house,1) else lord12
+
+    # Span estimate from combination
+    strong_count = sum(1 for p in [brahma, maheshvara, rudra]
+                       if ph.get(p,0) in {1,4,7,10})
+    if strong_count >= 2:
+        span, years = "Long", 75.0
+    elif strong_count == 1:
+        span, years = "Medium", 55.0
+    else:
+        span, years = "Short", 35.0
+
+    return JaiminiLongevity(brahma=brahma, maheshvara=maheshvara, rudra=rudra,
+                             span=span, years_estimate=years)
+
+
+def pada_relationship_score(chart, h1: int, h2: int) -> float:
+    """
+    Score the relationship between two Arudha Padas.
+    Positive: compatible signs (trine/sextile), benefics between them.
+    Negative: 6/8 relationship between the padas (shad-ashtaka).
+    """
+    from src.calculations.multi_lagna import compute_all_arudha_padas
+    ap = compute_all_arudha_padas(chart)
+    p1 = ap.padas.get(h1)
+    p2 = ap.padas.get(h2)
+    if not p1 or not p2:
+        return 0.0
+
+    diff = abs(p1.sign_index - p2.sign_index) % 12
+    if diff in {2, 10}:   # trine (5th/9th = 4,8 but from sign: 0,4,8)
+        return 1.0
+    if diff in {4, 8}:    # trine positions
+        return 1.5
+    if diff in {0}:        # same sign
+        return 2.0
+    if diff in {5, 7}:    # 6/8 relationship — challenging
+        return -1.5
+    if diff in {6}:        # 7th — opposition, neutral
+        return 0.5
+    return 0.0
