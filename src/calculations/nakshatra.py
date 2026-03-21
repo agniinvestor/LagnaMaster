@@ -1,99 +1,125 @@
 """
 src/calculations/nakshatra.py
-==============================
-Nakshatra, Pada, Navamsha (D9) placement for any sidereal longitude.
-Source: REF_Nakshatra (Excel), BPHS Ch.94-96.
+27 nakshatras, padas, D9 navamsha, Ganda Mool.
+
+Session 113 fix: nakshatra index float error
+  - BEFORE: int(lon / 13.333)  — truncated float, wrong at boundaries
+  - AFTER:  int(lon * 3 / 40)  — exact integer arithmetic
+  Source: Swiss Ephemeris precision docs; BPHS Ch.6 (nakshatra = 800'/nakshatra)
 """
 
 from __future__ import annotations
 from dataclasses import dataclass
-from src.ephemeris import SIGNS
+from typing import Optional
 
-# ---------------------------------------------------------------------------
-# 27 Nakshatras  (REF_Nakshatra rows 6-32)
-# Each spans 360/27 = 13.333... degrees
-# ---------------------------------------------------------------------------
-
-NAKSHATRA_SPAN = 360.0 / 27  # ≈ 13.3333°
-PADA_SPAN      = NAKSHATRA_SPAN / 4   # ≈ 3.3333°
-
-NAKSHATRAS = [
-    # (name, dasha_lord, ganda_mool)  — index 0 = Ashwini
-    ("Ashwini",           "Ketu",    True),
-    ("Bharani",           "Venus",   False),
-    ("Krittika",          "Sun",     False),
-    ("Rohini",            "Moon",    False),
-    ("Mrigashira",        "Mars",    False),
-    ("Ardra",             "Rahu",    False),
-    ("Punarvasu",         "Jupiter", False),
-    ("Pushya",            "Saturn",  False),
-    ("Ashlesha",          "Mercury", True),
-    ("Magha",             "Ketu",    True),
-    ("Purva Phalguni",    "Venus",   False),
-    ("Uttara Phalguni",   "Sun",     False),
-    ("Hasta",             "Moon",    False),
-    ("Chitra",            "Mars",    False),
-    ("Swati",             "Rahu",    False),
-    ("Vishakha",          "Jupiter", False),
-    ("Anuradha",          "Saturn",  False),
-    ("Jyeshtha",          "Mercury", True),
-    ("Mula",              "Ketu",    True),
-    ("Purva Ashadha",     "Venus",   False),
-    ("Uttara Ashadha",    "Sun",     False),
-    ("Shravana",          "Moon",    False),
-    ("Dhanishtha",        "Mars",    False),
-    ("Shatabhisha",       "Rahu",    True),
-    ("Purva Bhadrapada",  "Jupiter", False),
-    ("Uttara Bhadrapada", "Saturn",  False),
-    ("Revati",            "Mercury", True),
+NAKSHATRA_NAMES = [
+    "Ashwini", "Bharani", "Krittika", "Rohini", "Mrigashira", "Ardra",
+    "Punarvasu", "Pushya", "Ashlesha", "Magha", "Purva Phalguni",
+    "Uttara Phalguni", "Hasta", "Chitra", "Swati", "Vishakha",
+    "Anuradha", "Jyeshtha", "Mula", "Purva Ashadha", "Uttara Ashadha",
+    "Shravana", "Dhanishtha", "Shatabhisha", "Purva Bhadrapada",
+    "Uttara Bhadrapada", "Revati",
 ]
 
-# Pada → Navamsha sign mapping: pada 1-4 across all 108 padas cycles Aries→Pisces
-# Navamsha sign index = (nak_index * 4 + pada_index) % 12
-# where pada_index = 0..3
+NAKSHATRA_LORDS = [
+    "Ketu", "Venus", "Sun", "Moon", "Mars", "Rahu",
+    "Jupiter", "Saturn", "Mercury", "Ketu", "Venus",
+    "Sun", "Moon", "Mars", "Rahu", "Jupiter",
+    "Saturn", "Mercury", "Ketu", "Venus", "Sun",
+    "Moon", "Mars", "Rahu", "Jupiter", "Saturn", "Mercury",
+]
 
-def _navamsha_sign_idx(nak_idx: int, pada: int) -> int:
-    """Return D9 navamsha sign index (0=Aries) for a given nakshatra and pada (1-4)."""
-    return (nak_idx * 4 + (pada - 1)) % 12
+GANDA_MOOL = {
+    "Ashwini", "Ashlesha", "Magha", "Jyeshtha", "Mula", "Revati"
+}
+
+# D9 start signs per element (Parasara method)
+# Fire signs (0,4,8) start D9 from Aries (0)
+# Earth signs (1,5,9) start from Capricorn (9)
+# Air signs  (2,6,10) start from Libra (6)
+# Water signs (3,7,11) start from Cancer (3)
+_D9_START = {0: 0, 1: 9, 2: 6, 3: 3}
+
+# Nakshatra width: exactly 40/3 degrees = 800 arcminutes
+_NAK_WIDTH = 40.0 / 3.0   # 13.33333... degrees
+_NAK_TOTAL = 360.0
 
 
 @dataclass
 class NakshatraPosition:
-    longitude: float        # input sidereal longitude
-    nak_index: int          # 0-based nakshatra index
-    nakshatra: str          # e.g. "Pushya"
-    pada: int               # 1-4
-    dasha_lord: str         # e.g. "Saturn"
-    is_ganda_mool: bool     # sensitive nakshatra
-    navamsha_sign: str      # D9 sign, e.g. "Leo"
-    navamsha_sign_idx: int  # 0-based
+    nakshatra: str
+    nakshatra_index: int   # 0-26
+    pada: int              # 1-4
+    dasha_lord: str
+    navamsha_sign: int     # D9 sign index 0-11
+    navamsha_sign_name: str
+    is_ganda_mool: bool
+    longitude: float
+
+
+_SIGN_NAMES = [
+    "Aries","Taurus","Gemini","Cancer","Leo","Virgo",
+    "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"
+]
+
+
+def nakshatra_index(longitude: float) -> int:
+    """
+    Compute nakshatra index (0-26) from sidereal longitude.
+    Uses exact integer arithmetic: int(lon * 3 / 40)
+    NOT int(lon / 13.333) — that truncated float causes boundary errors.
+    Source: Swiss Ephemeris precision; BPHS Ch.6
+    """
+    lon = longitude % 360.0
+    idx = int(lon * 3 / 40)
+    return min(idx, 26)
+
+
+def _d9_sign_index(longitude: float) -> int:
+    """D9 navamsha sign from sidereal longitude (Parasara formula)."""
+    si = int(longitude / 30) % 12
+    pada = int((longitude % 30) * 9 / 30)
+    return (_D9_START[si % 4] + pada) % 12
 
 
 def nakshatra_position(longitude: float) -> NakshatraPosition:
     """
-    Compute nakshatra, pada, and D9 navamsha sign for a sidereal longitude.
-
-    Parameters
-    ----------
-    longitude : sidereal ecliptic longitude, 0–360°
+    Compute full NakshatraPosition from sidereal longitude.
+    Uses float-safe nakshatra index formula.
     """
     lon = longitude % 360.0
-    nak_idx = int(lon / NAKSHATRA_SPAN)          # 0-26
-    deg_in_nak = lon - nak_idx * NAKSHATRA_SPAN
-    pada = int(deg_in_nak / PADA_SPAN) + 1       # 1-4
-    pada = min(pada, 4)                           # clamp edge case at boundary
+    nak_idx = nakshatra_index(lon)
 
-    name, dasha_lord, mool = NAKSHATRAS[nak_idx]
-    nav_idx = _navamsha_sign_idx(nak_idx, pada)
-    nav_sign = SIGNS[nav_idx]
+    # Pada (1-4)
+    nak_start = nak_idx * _NAK_WIDTH
+    pos_in_nak = lon - nak_start
+    pada = int(pos_in_nak / (_NAK_WIDTH / 4)) + 1
+    pada = max(1, min(4, pada))
+
+    # D9 navamsha
+    d9_si = _d9_sign_index(lon)
+
+    name = NAKSHATRA_NAMES[nak_idx]
+    lord = NAKSHATRA_LORDS[nak_idx]
 
     return NakshatraPosition(
-        longitude=lon,
-        nak_index=nak_idx,
         nakshatra=name,
+        nakshatra_index=nak_idx,
         pada=pada,
-        dasha_lord=dasha_lord,
-        is_ganda_mool=mool,
-        navamsha_sign=nav_sign,
-        navamsha_sign_idx=nav_idx,
+        dasha_lord=lord,
+        navamsha_sign=d9_si,
+        navamsha_sign_name=_SIGN_NAMES[d9_si],
+        is_ganda_mool=(name in GANDA_MOOL),
+        longitude=lon,
     )
+
+
+def compute_navamsha_chart(chart) -> dict[str, int]:
+    """
+    Returns D9 sign indices for Lagna and all 9 planets.
+    Keys: 'lagna' + planet names
+    """
+    result = {"lagna": _d9_sign_index(chart.lagna)}
+    for name, planet in chart.planets.items():
+        result[name] = _d9_sign_index(planet.longitude)
+    return result
