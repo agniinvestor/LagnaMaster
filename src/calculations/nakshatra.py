@@ -136,3 +136,15 @@ NAKSHATRAS_FULL = [(NAKSHATRA_NAMES[i], NAKSHATRA_LORDS[i], NAKSHATRA_NAMES[i] i
 
 
 # navamsha_sign now returns sign name string directly (see field definition above)
+
+
+# Abhijit Nakshatra (XII-C) — 28th intercalary nakshatra
+# Location: 6°40' to 10°53'20" in Capricorn (sidereal)
+# Source: PVRNR BPHS; used in Muhurtha and Kalachakra
+ABHIJIT_START_LON = 9 * 30 + 6 + 40/60     # ~276.667°
+ABHIJIT_END_LON   = 9 * 30 + 10 + 53/60 + 20/3600  # ~280.889°
+
+def is_abhijit_nakshatra(longitude: float) -> bool:
+    """Returns True if longitude falls in Abhijit nakshatra (Capricorn 6°40'-10°53'20")."""
+    lon = longitude % 360
+    return ABHIJIT_START_LON <= lon <= ABHIJIT_END_LON

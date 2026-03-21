@@ -1,158 +1,227 @@
 """
-src/calculations/confidence_model.py — Session 69
+src/calculations/confidence_model.py
+Birth time uncertainty propagation — confidence intervals for chart scores.
+Session 158 (Audit OB-5).
 
-Interpretive confidence model (GAP 8).
+Every chart interpretation carries implicit uncertainty from:
+  - Birth time uncertainty (±5 minutes typical)
+  - Ayanamsha uncertainty (±0.3°)
+  - Nakshatra boundary sensitivity
 
-Global confidence score per house incorporating:
-  1. Varga agreement (already computed in varga_agreement.py) — weight 30%
-  2. Conflicting indicators (benefic + malefic both active) — weight 25%
-  3. Data sensitivity (birth time sensitivity from Monte Carlo) — weight 20%
-  4. Score boundary proximity (close to 0 = uncertain) — weight 15%
-  5. Functional role clarity (clear benefic/malefic roles) — weight 10%
-
-Output: per-house confidence 0.0–1.0 with label.
-
-Public API
-----------
-  compute_confidence(chart, sensitivity_report) -> ConfidenceReport
+Sources:
+  Swiss Ephemeris Manual §2.3 (Moon parallax, precision)
+  Hart de Fouw & Robert Svoboda · Light on Life, App on Research
 """
 from __future__ import annotations
-from dataclasses import dataclass
+from dataclasses import dataclass, field
+from typing import Optional
 
 
 @dataclass
-class HouseConfidence:
+class UncertaintyFlags:
+    """Flags that affect the reliability of chart interpretations."""
+    # Lagna uncertainty
+    lagna_near_sign_boundary: bool = False     # Lagna within 1° of sign cusp
+    lagna_boundary_margin_deg: float = 0.0     # degrees from nearest cusp
+
+    # Moon uncertainty
+    moon_near_nakshatra_cusp: bool = False     # Moon within 0.5° of nak boundary
+    moon_boundary_margin_deg: float = 0.0     # degrees from nearest nak cusp
+
+    # Dasha uncertainty
+    dasha_lord_uncertain: bool = False         # Moon too close to nakshatra boundary
+
+    # Ayanamsha sensitivity
+    sign_boundary_planets: list[str] = field(default_factory=list)  # planets within 1° of sign cusp
+
+    @property
+    def any_flag(self) -> bool:
+        return (self.lagna_near_sign_boundary or
+                self.moon_near_nakshatra_cusp or
+                self.dasha_lord_uncertain or
+                bool(self.sign_boundary_planets))
+
+    @property
+    def severity(self) -> str:
+        flags_set = sum([self.lagna_near_sign_boundary, self.moon_near_nakshatra_cusp,
+                         self.dasha_lord_uncertain])
+        if flags_set >= 2: return "high"
+        if flags_set == 1: return "moderate"
+        return "low"
+
+
+@dataclass
+class ConfidenceInterval:
+    """Confidence interval for a single house score."""
     house: int
-    varga_agreement_score: float     # 0.0–1.0
-    conflict_score: float            # 0.0–1.0 (high = less conflict = more confident)
-    sensitivity_score: float         # 0.0–1.0 (low sensitivity = more confident)
-    boundary_score: float            # 0.0–1.0 (far from 0 = more confident)
-    role_clarity_score: float        # 0.0–1.0
-    overall_confidence: float        # 0.0–1.0 weighted
-    confidence_label: str            # "High"/"Moderate"/"Low"/"Uncertain"
-    flags: list[str]                 # specific uncertainty flags
+    point_estimate: float
+    lower_bound: float
+    upper_bound: float
+    confidence_pct: float      # 0-100
+    uncertainty_sources: list[str]
+    is_reliable: bool          # True if interval width < 2.0
+
+    @property
+    def interval_width(self) -> float:
+        return self.upper_bound - self.lower_bound
 
 
 @dataclass
-class ConfidenceReport:
-    houses: dict[int, HouseConfidence]
-    global_confidence: float
-    most_reliable_houses: list[int]
-    least_reliable_houses: list[int]
-    requires_expert_review: list[int]
+class ChartConfidenceReport:
+    """Full confidence analysis for a chart."""
+    uncertainty_flags: UncertaintyFlags
+    house_intervals: list[ConfidenceInterval]
+    overall_reliability: str    # "high"/"moderate"/"low"
+    recommendations: list[str]
+
+    def interval_for_house(self, house: int) -> Optional[ConfidenceInterval]:
+        return next((ci for ci in self.house_intervals if ci.house == house), None)
 
 
-def compute_confidence(chart, sensitivity_report=None) -> ConfidenceReport:
-    """Compute interpretive confidence for all 12 houses."""
-    from src.calculations.varga_agreement import compute_varga_agreement
-    from src.calculations.multi_axis_scoring import score_all_axes
+def _lagna_boundary_margin(lagna_lon: float) -> float:
+    """Degrees from nearest sign boundary (0 = on boundary, 30 = center)."""
+    deg_in_sign = lagna_lon % 30
+    return min(deg_in_sign, 30 - deg_in_sign)
 
-    try:
-        agree = compute_varga_agreement(chart)
-    except Exception:
-        agree = None
 
-    try:
-        axes = score_all_axes(chart, "parashari")
-        d1_scores = axes.d1.scores if axes.d1 else {}
-    except Exception:
-        d1_scores = {}
+def _moon_nak_boundary_margin(moon_lon: float) -> float:
+    """Degrees from nearest nakshatra boundary."""
+    nak_width = 40.0 / 3.0  # 13.333...°
+    deg_in_nak = moon_lon % nak_width
+    return min(deg_in_nak, nak_width - deg_in_nak)
 
-    from src.calculations.house_lord import compute_house_map
-    from src.calculations.functional_roles import compute_functional_roles
-    hmap = compute_house_map(chart)
-    ph = hmap.planet_house
 
-    try:
-        fr = compute_functional_roles(chart)
-        func_malefics = fr.functional_malefics
-        func_benefics = fr.functional_benefics
-    except Exception:
-        func_malefics = set(); func_benefics = set()
+def compute_uncertainty_flags(chart) -> UncertaintyFlags:
+    """
+    Compute uncertainty flags for a chart.
 
-    houses = {}
-    for h in range(1, 13):
-        flags = []
+    Birth time ±5 min → Lagna moves ±1.25° (1° per 4 minutes for avg rising time)
+    Ayanamsha ±0.3° → affects all sign/nakshatra boundaries
+    """
+    flags = UncertaintyFlags()
 
-        # 1. Varga agreement
-        if agree:
-            flag = agree.flag_for(h)
-            va_score = 1.0 if flag == "★★" else 0.65 if flag == "★" else 0.30
-            if flag == "○":
-                flags.append("Vargas diverge — chart has contradictory varga signals")
-        else:
-            va_score = 0.5
+    # Lagna boundary check
+    lagna_lon = chart.lagna
+    margin = _lagna_boundary_margin(lagna_lon)
+    flags.lagna_boundary_margin_deg = round(margin, 3)
+    # ±5 min birth time → ±1.25° Lagna movement (rough estimate)
+    if margin < 1.5:
+        flags.lagna_near_sign_boundary = True
 
-        # 2. Conflict (benefic + malefic both in house)
-        in_house = [p for p, hp in ph.items() if hp == h]
-        bens_in = [p for p in in_house if p in func_benefics]
-        mals_in = [p for p in in_house if p in func_malefics]
-        has_conflict = bool(bens_in and mals_in)
-        conflict_score = 0.4 if has_conflict else 1.0
-        if has_conflict:
-            flags.append(f"Benefic/malefic conflict: {bens_in} vs {mals_in}")
+    # Moon boundary check
+    if "Moon" in chart.planets:
+        moon_lon = chart.planets["Moon"].longitude
+        moon_margin = _moon_nak_boundary_margin(moon_lon)
+        flags.moon_boundary_margin_deg = round(moon_margin, 3)
+        # Ayanamsha ±0.3° + topocentric ~0.5° = total ~0.8° uncertainty
+        if moon_margin < 1.0:
+            flags.moon_near_nakshatra_cusp = True
+            flags.dasha_lord_uncertain = True
 
-        # 3. Sensitivity from Monte Carlo (if available)
-        sens_score = 0.75  # default moderate
-        if sensitivity_report:
-            try:
-                house_data = sensitivity_report.get("houses", {})
-                key = str(h)
-                if key in house_data:
-                    stable = house_data[key].get("stable", True)
-                    sens_score = 0.85 if stable else 0.40
-                    if not stable:
-                        flags.append("Birth time sensitive — minor changes shift this house score")
-            except Exception:
-                pass
+    # Sign-boundary planets
+    for p, pd in chart.planets.items():
+        deg_in_sign = pd.longitude % 30
+        if deg_in_sign < 1.0 or deg_in_sign >= 29.0:
+            flags.sign_boundary_planets.append(p)
 
-        # 4. Boundary proximity (score near 0 = uncertain)
-        raw = d1_scores.get(h, 0.0)
-        boundary_score = min(1.0, abs(raw) / 2.0)  # confident when score clearly +/-
-        if abs(raw) < 0.5:
-            flags.append(f"Score near zero ({raw:+.2f}) — borderline interpretation")
+    return flags
 
-        # 5. Functional role clarity
-        lord = hmap.house_lord[h - 1]
-        role_clear = lord in func_benefics or lord in func_malefics
-        role_score = 0.90 if role_clear else 0.60
-        if not role_clear:
-            flags.append(f"Lord {lord} has mixed/unclear functional role")
 
-        # Weighted combination
-        overall = round(
-            va_score      * 0.30 +
-            conflict_score * 0.25 +
-            sens_score    * 0.20 +
-            boundary_score * 0.15 +
-            role_score    * 0.10,
-            4
-        )
+def compute_confidence_intervals(
+    base_scores: dict[int, float],
+    flags: UncertaintyFlags,
+    birth_time_uncertainty_minutes: float = 5.0,
+) -> list[ConfidenceInterval]:
+    """
+    Compute confidence intervals for house scores given birth time uncertainty.
 
-        if overall >= 0.75:   label = "High"
-        elif overall >= 0.55: label = "Moderate"
-        elif overall >= 0.35: label = "Low"
-        else:                 label = "Uncertain"
+    The interval width increases when:
+    - Lagna is near a sign boundary (house assignments may change)
+    - Moon is near nakshatra boundary (dasha lord may change)
+    - Multiple planets are near sign boundaries
+    """
+    intervals = []
+    base_uncertainty = birth_time_uncertainty_minutes / 5.0  # normalized
 
-        houses[h] = HouseConfidence(
-            house=h, varga_agreement_score=round(va_score, 3),
-            conflict_score=round(conflict_score, 3),
-            sensitivity_score=round(sens_score, 3),
-            boundary_score=round(boundary_score, 3),
-            role_clarity_score=round(role_score, 3),
-            overall_confidence=overall, confidence_label=label, flags=flags,
-        )
+    for house in range(1, 13):
+        score = base_scores.get(house, 0.0)
+        sources = []
+        extra_uncertainty = 0.0
 
-    global_conf = round(sum(h.overall_confidence for h in houses.values()) / 12, 4)
-    sorted_h = sorted(houses, key=lambda h: houses[h].overall_confidence, reverse=True)
-    most_reliable = sorted_h[:3]
-    least_reliable = sorted_h[-3:]
-    expert_review = [h for h, hc in houses.items() if hc.confidence_label == "Uncertain"
-                     or len(hc.flags) >= 3]
+        if flags.lagna_near_sign_boundary:
+            extra_uncertainty += 1.5 * base_uncertainty
+            sources.append(f"lagna_near_sign_boundary ({flags.lagna_boundary_margin_deg:.1f}° margin)")
 
-    return ConfidenceReport(
-        houses=houses, global_confidence=global_conf,
-        most_reliable_houses=most_reliable,
-        least_reliable_houses=least_reliable,
-        requires_expert_review=expert_review,
+        if flags.dasha_lord_uncertain:
+            extra_uncertainty += 0.5 * base_uncertainty
+            sources.append(f"moon_near_nakshatra_cusp ({flags.moon_boundary_margin_deg:.1f}° margin)")
+
+        if len(flags.sign_boundary_planets) > 0 and any(
+            p in ["Sun","Moon","Mars","Jupiter","Saturn"]
+            for p in flags.sign_boundary_planets
+        ):
+            extra_uncertainty += 0.3
+            sources.append(f"planets_near_sign_boundary: {flags.sign_boundary_planets[:3]}")
+
+        half_width = 0.3 + extra_uncertainty
+        lower = round(max(-10.0, score - half_width), 3)
+        upper = round(min(+10.0, score + half_width), 3)
+        conf_pct = max(30.0, 95.0 - extra_uncertainty * 20)
+
+        intervals.append(ConfidenceInterval(
+            house=house,
+            point_estimate=round(score, 3),
+            lower_bound=lower,
+            upper_bound=upper,
+            confidence_pct=round(conf_pct, 1),
+            uncertainty_sources=sources,
+            is_reliable=(upper - lower) < 2.0,
+        ))
+
+    return intervals
+
+
+def compute_chart_confidence(
+    chart,
+    base_scores: dict[int, float],
+    birth_time_uncertainty_minutes: float = 5.0,
+) -> ChartConfidenceReport:
+    """
+    Full confidence analysis for a chart.
+
+    Source: Hart de Fouw & Robert Svoboda · Light on Life, App on Research
+    """
+    flags = compute_uncertainty_flags(chart)
+    intervals = compute_confidence_intervals(base_scores, flags, birth_time_uncertainty_minutes)
+
+    # Overall reliability
+    if not flags.any_flag:
+        reliability = "high"
+        recs = ["Birth time appears reliable. Chart scores have high confidence."]
+    elif flags.severity == "moderate":
+        reliability = "moderate"
+        recs = []
+        if flags.lagna_near_sign_boundary:
+            recs.append(
+                f"Lagna is {flags.lagna_boundary_margin_deg:.1f}° from sign boundary — "
+                "birth time should be verified to within 2 minutes for reliable Lagna."
+            )
+        if flags.moon_near_nakshatra_cusp:
+            recs.append(
+                f"Moon is {flags.moon_boundary_margin_deg:.1f}° from nakshatra boundary — "
+                "Vimshottari Dasha starting lord may be uncertain. Consider topocentric correction."
+            )
+    else:
+        reliability = "low"
+        recs = ["Multiple uncertainty flags — verify birth time precisely before prediction."]
+
+    if flags.sign_boundary_planets:
+        recs.append(f"Planets near sign boundary: {', '.join(flags.sign_boundary_planets)} — "
+                    "sign dignity may differ by ±0.3° ayanamsha variation.")
+
+    return ChartConfidenceReport(
+        uncertainty_flags=flags,
+        house_intervals=intervals,
+        overall_reliability=reliability,
+        recommendations=recs,
     )

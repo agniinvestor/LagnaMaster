@@ -205,3 +205,11 @@ def compute_gochara(
         guru_transit_house=guru_house,
         guru_chandal_transit=guru_chandal,
     )
+
+
+# Guru Sade Sati modulation (XI-D)
+def guru_modulates_sade_sati(natal_moon_si: int, jupiter_transit_si: int) -> bool:
+    """Jupiter adjacent to or aspecting natal Moon during Sade Sati mitigates it.
+    Source: Classical Gochara texts; K.N. Rao references"""
+    house_from_moon = ((jupiter_transit_si - natal_moon_si) % 12) + 1
+    return house_from_moon in {1, 2, 12, 5, 9}  # adjacent or trine

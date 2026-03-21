@@ -658,3 +658,11 @@ def compute_dignity_legacy(planet: str, sign_idx: int = 0, degree: float = 0.0,
 # ── Additional backward-compatibility aliases ──
 # DEEP_DEBIL: some old tests check for this level (not in classical texts, just a test artefact)
 DignityLevel.DEEP_DEBIL = DignityLevel.DEBIL   # alias: no separate DEEP_DEBIL level
+
+
+# Asta Vakri (F-3) — retrograde planets have smaller combustion orbs
+# Source: Saravali Ch.3 v.14-16
+COMBUSTION_ORBS_RETROGRADE = {
+    "Moon": 12.0, "Mars": 17.0, "Mercury": 12.0,  # Rx Mercury: 12° not 14°
+    "Jupiter": 11.0, "Venus": 8.0, "Saturn": 15.0,  # Rx Venus: 8° not 10°
+}

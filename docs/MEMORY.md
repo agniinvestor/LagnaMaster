@@ -231,3 +231,14 @@ These were identified by the March 2026 classical audit. See `AUDIT.md` for full
 
 ## Sessions 135-160
 S135 Rashi Drishti. S137 functional_dignity. S138 avasthas. S142 transit_quality_advanced. S146 upagrahas_derived. S147 shadbala_patches. S149 varshaphala. S150 karakamsha. S140/145 yoga_strength. S154 dasha_activation.
+
+
+## Sessions 139-160 Pending Build
+S139 dasha_scoring.py — dasha-sensitized scoring with query_date
+S148 muhurtha_complete.py — Tarabala+Chandrabala+Panchaka+Siddha+Vishti+Abhijit
+S155 kp_sublord.py — KP 249 sub-lord table + significators + ruling planets
+S156 calc_config.py — CalcConfig.school declaration (Parashari/Jaimini/KP/Tajika)
+S158 confidence_model.py — Birth time uncertainty propagation + confidence intervals
+S159 sudarshana.py — Sudarshana Chakra + Dasha Pravesh charts
+G-3  shodashavarga_bala.py — 16-varga Shodashavarga Bala
+Patches: topocentric Moon note, asta_vakri orbs, guru Sade Sati, Abhijit, SVG ARIA

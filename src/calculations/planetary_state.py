@@ -276,3 +276,10 @@ def compute_mandi_gulika(
         "mandi": round(mandi_lon, 4),
         "gulika": round(gulika_lon, 4),
     }
+
+
+# Graha Yuddha loser persistence (B-3 S144)
+# War loser treated as debilitated throughout life.
+# Store in chart after graha_yuddha detection:
+# BirthChart.planetary_war_losers: set[str] — checked in compute_dignity()
+PLANETARY_WAR_LOSER_OVERRIDE = "GRAHA_YUDDHA_DEBIL"
