@@ -136,7 +136,7 @@ class AshtakavargaTable:
         return self.bindus[idx]
 
     def strength(self, sign_index: int) -> str:
-        b = self.bindu_for_sign(sign_index)
+        b = self.raw_bindus[sign_index % 12]
         if b >= 5: return "Strong"
         if b == 4: return "Average"
         return "Weak"
