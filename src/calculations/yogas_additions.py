@@ -242,7 +242,7 @@ def detect_solar_yogas(chart) -> list[SolarYogaResult]:
             yoga_name="Ubhayachari",
             planets_involved=in_second + in_twelfth,
             nature=_nature(in_second + in_twelfth),
-            description=f"Planets on both sides of Sun — native is eloquent, fortunate, respected",
+            description="Planets on both sides of Sun — native is eloquent, fortunate, respected",
         ))
     elif in_second:
         results.append(SolarYogaResult(
