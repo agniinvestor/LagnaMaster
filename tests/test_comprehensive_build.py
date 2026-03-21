@@ -324,7 +324,7 @@ class TestVarshaphala:
         chart = make_chart(INDIA_LAGNA, **INDIA)
         result = compute_varshaphala(chart, birth_year=1947, query_year=2026)
         assert result.query_year == 2026
-        assert result.muntha_sign in range(12)
+        assert result.muntha_sign_index in range(12)
         assert result.year_quality in ("excellent", "good", "neutral", "challenging")
 
     def test_tajika_aspects_in_chart(self):

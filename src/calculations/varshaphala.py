@@ -315,12 +315,15 @@ class VarshaphalaResult:
 
 def compute_varshaphala(
     natal_chart,
-    birth_date_or_year: Union[date, int] = None,
+    birth_date_or_year=None,
     birth_year: int = None,
     query_year: int = None,
     lat: float = 28.6139,
     lon: float = 77.2090,
     annual_chart=None,
+    natal_birth_date=None,
+    target_year: int = None,
+    **kwargs,
 ) -> VarshaphalaResult:
     """
     Compute Varshaphala (solar return annual chart) for query_year.
@@ -336,8 +339,13 @@ def compute_varshaphala(
     Source: Tajika Nilakanthi; K.N. Rao Ch.7-9
     """
     # Resolve birth_year
+    # Handle aliases
+    if natal_birth_date is not None and birth_date_or_year is None:
+        birth_date_or_year = natal_birth_date
+    if target_year is not None and query_year is None:
+        query_year = target_year
     if query_year is None:
-        raise ValueError("query_year is required")
+        raise ValueError("query_year or target_year is required")
     query_year = int(query_year)
     if birth_year is None:
         if birth_date_or_year is None:

@@ -52,6 +52,11 @@ class CharaKarakaResult:
     atma_karaka: str                 # Convenience — the AK planet
     dara_karaka: str                 # Convenience — the DK planet
 
+    @property
+    def atmakaraka(self) -> str:
+        """Alias for atma_karaka."""
+        return self.atma_karaka
+
 
 def _degree_for_ranking(planet: str, chart) -> float:
     """
