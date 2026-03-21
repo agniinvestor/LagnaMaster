@@ -57,7 +57,7 @@ def detect_parivartana(chart) -> list[ParivartanaResult]:
     trikonas  = {1, 5, 9}
     dusthanas = {6, 8, 12}
 
-    planets = [p for p in chart.planets if p not in ("Rahu", "Ketu")]
+    planets = [p for p in chart.planets if p not in ("Rahu", "Ketu")]  # noqa: F841
 
     checked = set()
     for pa in planets:

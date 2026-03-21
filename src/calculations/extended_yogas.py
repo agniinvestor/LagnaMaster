@@ -85,7 +85,7 @@ def detect_raja_dhana_yogas(chart, dashas=None, on_date=None) -> list[YogaResult
         score = 2.0 if present else 0.0
         results.append(YogaResult(
             name=f"RY: {label}", yoga_type="Raja",
-            planets=[lord_k, lord_t], present=present,
+            planets=[lord_k, lord_t], present=present,  # noqa: F841
             score=score, dasha_weight=dw,
             weighted_score=round(score * dw, 2),
             description="Kendra+Trikona lord contact → status elevation",

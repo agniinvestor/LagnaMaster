@@ -83,7 +83,7 @@ class TestVargaStructure:
         assert india_varga.d60().division == "D60"
 
     def test_all_9_planets_in_every_table(self, india_varga):
-        planets = ["Sun", "Moon", "Mars", "Mercury",
+        planets = ["Sun", "Moon", "Mars", "Mercury",  # noqa: F841
                    "Jupiter", "Venus", "Saturn", "Rahu", "Ketu"]
         for div, table in india_varga.tables.items():
             for p in planets:

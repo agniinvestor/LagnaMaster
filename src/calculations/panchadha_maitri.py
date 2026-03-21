@@ -115,7 +115,7 @@ class PanchadhaMatrix:
 
 
 def compute_panchadha_matrix(chart) -> PanchadhaMatrix:
-    planets = ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn"]
+    planets = ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn"]  # noqa: F841
     relations = {}
     weights = {}
     for p1 in planets:

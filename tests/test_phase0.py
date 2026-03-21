@@ -27,7 +27,7 @@ def make_chart(lagna_lon=37.73, **planet_lons):
     chart.lagna = lagna_lon
     chart.lagna_sign_index = int(lagna_lon / 30) % 12
     chart.lagna_degree_in_sign = lagna_lon % 30
-    planets = {}
+    planets = {}  # noqa: F841
     for name, lon in planet_lons.items():
         planets[name] = make_planet(lon)
     chart.planets = planets
@@ -590,7 +590,7 @@ class TestParivartana:
                            Venus=0.0, Saturn=0.0, Rahu=40.0, Ketu=220.0)
         results = detect_parivartana(chart)
         kinds = {r.kind for r in results}
-        planets = {(r.planet_a, r.planet_b) for r in results}
+        planets = {(r.planet_a, r.planet_b) for r in results}  # noqa: F841
         assert "Maha" in kinds or len(results) > 0
 
     def test_no_parivartana_when_absent(self):

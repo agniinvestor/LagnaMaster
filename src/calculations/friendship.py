@@ -119,7 +119,7 @@ def compute_all_friendships(chart: BirthChart) -> dict[tuple[str, str], Friendsh
     Compute all pairwise Panchadha relationships for a chart.
     Returns dict keyed by (viewer, viewed).
     """
-    planets = list(chart.planets.keys())
+    planets = list(chart.planets.keys())  # noqa: F841
     results = {}
     for p1 in planets:
         for p2 in planets:

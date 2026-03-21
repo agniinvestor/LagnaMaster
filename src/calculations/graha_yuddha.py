@@ -37,7 +37,7 @@ _SIGNS = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
 def compute_graha_yuddha(chart) -> list[YuddhaResult]:
     """Detect all planetary wars in the chart."""
     wars = []
-    planets = list(_WAR_PLANETS)
+    planets = list(_WAR_PLANETS)  # noqa: F841
     for i in range(len(planets)):
         for j in range(i + 1, len(planets)):
             p1, p2 = planets[i], planets[j]

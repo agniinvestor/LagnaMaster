@@ -210,7 +210,7 @@ def _lunar_yogas(chart: BirthChart, hmap) -> list[Yoga]:
             name="Chandra-Mangala Yoga",
             category="Lunar",
             nature="mixed",
-            planets=["Moon", "Mars"],
+            planets=["Moon", "Mars"],  # noqa: F841
             description=(
                 f"Moon + Mars conjunct in H{moon_h} → "
                 f"drive, wealth through effort, potential emotional volatility"
@@ -381,7 +381,7 @@ def _special_yogas(chart: BirthChart, hmap) -> list[Yoga]:
             name="Guru-Chandala Yoga",
             category="Negative",
             nature="malefic",
-            planets=["Jupiter", "Rahu"],
+            planets=["Jupiter", "Rahu"],  # noqa: F841
             description=(
                 f"Jupiter + Rahu conjunct in H{jup_h} → "
                 f"unconventional beliefs, challenges with teachers/tradition "
