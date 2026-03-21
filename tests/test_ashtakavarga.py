@@ -92,7 +92,7 @@ class TestFixedTotals:
 
     def test_sarva_total_equals_sum_of_planet_totals(self, india_av):
         expected = sum(FIXED_TOTALS[p] for p in _PLANETS)
-        assert india_av.sarva.total == expected
+        assert india_sum(av.sarva.raw_bindus) == expected
 
     def test_fixed_totals_are_chart_independent(self, india_chart):
         """

@@ -49,7 +49,7 @@ class NakshatraPosition:
     nakshatra_index: int   # 0-26
     pada: int              # 1-4
     dasha_lord: str
-    navamsha_sign: str     # D9 sign name (e.g. 'Aries') — backward compat
+    navamsha_sign: str     # D9 sign name — backward compat
     navamsha_sign_name: str
     is_ganda_mool: bool
     longitude: float

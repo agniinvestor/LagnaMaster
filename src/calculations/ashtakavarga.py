@@ -138,7 +138,7 @@ class AshtakavargaTable:
     def strength(self, sign_index: int) -> str:
         b = self.bindu_for_sign(sign_index)
         if b >= 5: return "Strong"
-        if b >= 3: return "Average"
+        if b == 4: return "Average"
         return "Weak"
 
 
@@ -267,8 +267,8 @@ def compute_ashtakavarga(chart) -> AshtakavargaChart:
 
     sarva_table = AshtakavargaTable(
         planet="Sarva",
-        raw_bindus=sarva_raw,
-        bindus=sarva_reduced,
+        raw_bindus=sarva_raw,   # = sum of all 7 planet reduced bindus per sign
+        bindus=sarva_reduced,   # after Trikona+Ekadhipatya Shodhana on Sarva
         total=sum(sarva_reduced),
     )
 

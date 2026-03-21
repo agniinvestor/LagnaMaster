@@ -572,7 +572,7 @@ class TestNakshatraFloat:
         assert pos.nakshatra is not None
         assert 1 <= pos.pada <= 4
         assert pos.dasha_lord is not None
-        assert 0 <= pos.navamsha_sign <= 11
+        assert pos.navamsha_sign in ['Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn','Aquarius','Pisces']
 
 
 # ═══════════════════════════════════════════════════════════════════════════
