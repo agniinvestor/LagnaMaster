@@ -317,8 +317,8 @@ def _solar_yogas(chart: BirthChart, hmap) -> list[Yoga]:
             nature="benefic",
             planets=planets_before + planets_after,
             description=(
-                f"Planets on both sides of Sun → "
-                f"royal bearing, balanced and authoritative personality"
+                "Planets on both sides of Sun → "
+                "royal bearing, balanced and authoritative personality"
             ),
         ))
     elif planets_after:
@@ -396,7 +396,6 @@ def _special_yogas(chart: BirthChart, hmap) -> list[Yoga]:
     }
     for planet, debil_si in _DEBILITATION.items():
         if chart.planets[planet].sign_index == debil_si:
-            debil_lord_si = debil_si  # lord of debilitation sign
             # Check if lord of debilitation sign is in kendra
             from src.calculations.house_lord import sign_lord
             debil_sign_lord = sign_lord(debil_si)

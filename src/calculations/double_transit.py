@@ -90,15 +90,13 @@ def compute_double_transit(chart, domain: str = "marriage",
 
     from src.calculations.house_lord import compute_house_map
     hmap = compute_house_map(chart)
-    ph = hmap.planet_house
 
     target_house = _DOMAINS.get(domain, 1)
     target_lord = hmap.house_lord[target_house - 1]
     target_natal_lon = chart.planets[target_lord].longitude if target_lord in chart.planets else 0.0
 
     # Also check natal Moon for marriage
-    moon_natal = chart.planets.get("Moon")
-    moon_lon = moon_natal.longitude if moon_natal else 0.0
+    chart.planets.get("Moon")
     # Use house lord position as primary target
     target_lon = target_natal_lon
 

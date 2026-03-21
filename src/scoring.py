@@ -127,7 +127,6 @@ def _houses_aspected_by(planet_house: int) -> set[int]:
     h = planet_house
     # 7th aspect (all planets)
     aspects = {(h - 1 + 6) % 12 + 1}  # h + 6, wrapping 1-12
-    name_map = {}  # injected per call — handled in engine
     return aspects
 
 

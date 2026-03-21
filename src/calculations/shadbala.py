@@ -96,7 +96,7 @@ def compute_shadbala(chart: BirthChart) -> ShadbalaResult:
     Compute simplified Shadbala for all 7 classical planets.
     Rahu and Ketu are excluded (no classical Shadbala).
     """
-    dignities = compute_all_dignities(chart)
+    compute_all_dignities(chart)
     house_map = compute_house_map(chart)
     sun_lon = chart.planets["Sun"].longitude
     moon_lon = chart.planets["Moon"].longitude
@@ -176,7 +176,7 @@ def _uchcha_bala(planet: str, longitude: float) -> float:
     exalt = _EXALT_LON.get(planet)
     if exalt is None:
         return 30.0   # default
-    debil = (exalt + 180.0) % 360.0
+    (exalt + 180.0) % 360.0
     lon = longitude % 360.0
 
     # Distance from exaltation (shorter arc)

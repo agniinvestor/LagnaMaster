@@ -60,7 +60,7 @@ def detect_pvrnr_yogas(chart, dashas=None, on_date: date | None = None) -> list[
       "Jupiter and Mars conjunct or 7th — righteous, energetic, dharmic","PVRNR p125")
 
     # Amala Yoga (p125): only natural benefics in H10 from lagna or Moon
-    h10_from_lagna = ph.get(hmap.house_lord[9], 0)
+    ph.get(hmap.house_lord[9], 0)
     h10_planets = [p for p in chart.planets if ph.get(p) == 10]
     moon_h = ph.get("Moon",0)
     h10_from_moon = ((moon_h + 9 - 1) % 12) + 1 if moon_h else 0

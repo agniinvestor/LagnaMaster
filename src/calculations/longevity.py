@@ -40,7 +40,7 @@ _DEBIL_LON = {"Sun":190,"Moon":213,"Mars":118,"Mercury":345,
 def _strength_ratio(planet: str, longitude: float) -> float:
     """0.0 (debilitated) to 1.0 (exalted) based on longitude distance."""
     exalt = _EXALT_LON.get(planet)
-    debil = _DEBIL_LON.get(planet)
+    _DEBIL_LON.get(planet)
     if exalt is None:
         return 0.5
     diff = abs(longitude - exalt) % 360

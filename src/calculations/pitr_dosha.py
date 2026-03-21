@@ -41,7 +41,6 @@ def compute_pitr_dosha(chart) -> PitrDoshaResult:
     hmap = compute_house_map(chart)
     ph = hmap.planet_house
 
-    lagna_si = chart.lagna_sign_index
     triggers = []
 
     # Criterion 1: Sun in 9th house

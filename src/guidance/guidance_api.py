@@ -137,7 +137,7 @@ def get_guidance(
     from src.calculations.score_to_language import score_to_signal  # noqa
 
     from src.guidance.score_to_language import score_to_signal as sts
-    sig = sts(score)
+    sts(score)
 
     return GuidanceResponse(
         domain=domain,

@@ -53,7 +53,6 @@ def detect_chart_exceptions(chart) -> ChartExceptionReport:
 
     hmap = compute_house_map(chart)
     ph = hmap.planet_house
-    lagna_si = chart.lagna_sign_index
 
     # ── 1. All 7 planets in one hemisphere ───────────────────────────────────
     visible_h = {7,8,9,10,11,12}
@@ -102,7 +101,7 @@ def detect_chart_exceptions(chart) -> ChartExceptionReport:
     if d_lords_strong >= 2:
         exceptions.append(ChartException(
             "Dusthana Lords Strong","High",
-            f"≥2 dusthana lords in strong positions — hidden challenges, Viparita possibility",
+            "≥2 dusthana lords in strong positions — hidden challenges, Viparita possibility",
             [6,8,12], False,
         ))
 

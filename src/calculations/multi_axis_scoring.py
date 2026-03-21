@@ -294,8 +294,6 @@ def score_axis(chart, frame_lagna_si: int, axis_name: str, school: str = "parash
     if school not in _WEIGHTS:
         school = "parashari"
 
-    yk = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
-          "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
 
     from src.calculations.multi_lagna import yogakaraka_for_lagna
     yogakaraka = yogakaraka_for_lagna(frame_lagna_si)
@@ -336,7 +334,7 @@ def score_all_axes(chart, school: str = "parashari") -> MultiAxisScores:
     sl_si  = chart.planets["Sun"].sign_index
 
     # D9 lagna: D9 sign of D1 lagna
-    d9_map    = compute_navamsha_chart(chart)
+    compute_navamsha_chart(chart)
     d9_lagna_si = chart.lagna_sign_index  # DivisionalMap has no .get(); use D1 lagna as D9 reference
 
     # D10 lagna: Dashamsha sign of D1 lagna

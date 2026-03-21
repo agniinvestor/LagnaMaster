@@ -241,7 +241,7 @@ _NAT_MALEFIC = {"Sun","Mars","Saturn","Rahu","Ketu"}
 
 def compute_rasi_drishti(chart) -> RasiDrishtiMap:
     from src.calculations.house_lord import compute_house_map
-    hmap = compute_house_map(chart)
+    compute_house_map(chart)
     lsi = chart.lagna_sign_index
 
     # Build sign → planets map
