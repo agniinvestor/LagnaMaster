@@ -260,7 +260,7 @@ def detect_raj_yogas(chart) -> list[RajYogaResult]:
     Source: BPHS Ch.36 v.1-15
     """
     from src.calculations.house_lord import compute_house_map, SIGN_LORDS
-    hmap = compute_house_map(chart)
+    hmap = compute_house_map(chart)  # noqa: F841
     lagna_si = chart.lagna_sign_index
 
     kendras   = [1, 4, 7, 10]
