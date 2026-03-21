@@ -227,12 +227,6 @@ def compute_chart_confidence(
     )
 
 
-def compute_confidence(chart, birth_time_uncertainty_minutes: float = 5.0):
-    """Alias for compute_chart_confidence with auto-generated base scores."""
-    base_scores = {h: 0.0 for h in range(1, 13)}
-    return compute_chart_confidence(chart, base_scores, birth_time_uncertainty_minutes)
-
-
 from dataclasses import dataclass as _dc
 from typing import Dict as _Dict
 
