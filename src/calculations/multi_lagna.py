@@ -131,7 +131,16 @@ def compute_karakamsha(chart) -> KarakamshaResult:
         ak_planet = "Sun"
     ak_d1_si  = chart.planets[ak_planet].sign_index
     d9_map    = compute_navamsha_chart(chart)
-    ak_d9_si  = d9_map.get(ak_planet, 0)
+    # DivisionalMap: access planet's D9 sign via planets dict or D9 attribute
+    try:
+        if hasattr(d9_map, 'planets') and isinstance(d9_map.planets, dict):
+            ak_d9_si = d9_map.planets.get(ak_planet, {}).get('D9', 0)
+        elif hasattr(d9_map, 'D9') and isinstance(d9_map.D9, dict):
+            ak_d9_si = d9_map.D9.get(ak_planet, 0)
+        else:
+            ak_d9_si = chart.lagna_sign_index
+    except Exception:
+        ak_d9_si = chart.lagna_sign_index
     frame     = _build_frame("Karakamsha", ak_d9_si, chart)
     return KarakamshaResult(
         atmakaraka=ak_planet,

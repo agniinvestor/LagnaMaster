@@ -103,7 +103,17 @@ def compute_amsayu(chart) -> float:
 
     total = 0.0
     for planet, years in _PLANET_YEARS.items():
-        d9_si = d9.get(planet)
+        # DivisionalMap access — try planets dict first, then D9 attribute
+        try:
+            if hasattr(d9, 'planets') and isinstance(d9.planets, dict):
+                d9_si = d9.planets.get(planet, {}).get('D9',
+                        chart.planets[planet].sign_index if planet in chart.planets else 0)
+            elif hasattr(d9, 'D9') and isinstance(d9.D9, dict):
+                d9_si = d9.D9.get(planet, 0)
+            else:
+                d9_si = chart.planets[planet].sign_index if planet in chart.planets else 0
+        except Exception:
+            d9_si = chart.planets[planet].sign_index if planet in chart.planets else 0
         if d9_si is None:
             total += years * 0.5
             continue
