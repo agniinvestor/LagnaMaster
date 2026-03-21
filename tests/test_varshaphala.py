@@ -51,10 +51,8 @@ def report_1948(india_chart):
     from src.calculations.varshaphala import compute_varshaphala
     return compute_varshaphala(
         natal_chart=india_chart,
-        natal_birth_date=date(1947, 8, 15),
-        target_year=1948,
-        lat=28.6139, lon=77.2090,
-        tz_offset=5.5, ayanamsha="lahiri",
+        birth_year=1947,
+        query_year=1948,
     )
 
 
@@ -63,10 +61,8 @@ def report_2026(india_chart):
     from src.calculations.varshaphala import compute_varshaphala
     return compute_varshaphala(
         natal_chart=india_chart,
-        natal_birth_date=date(1947, 8, 15),
-        target_year=2026,
-        lat=28.6139, lon=77.2090,
-        tz_offset=5.5, ayanamsha="lahiri",
+        birth_year=1947,
+        query_year=2026,
     )
 
 
