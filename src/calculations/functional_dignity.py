@@ -70,7 +70,6 @@ def compute_functional_classifications(lagna_sign_index: int) -> dict[str, Funct
     Source: V.K. Choudhry Systems Approach Ch.3; PVRNR BPHS Ch.34
     """
     lagna_si = lagna_sign_index % 12
-    lords = _house_lords(lagna_si)
     badhaka_lord = _get_badhaka_lord(lagna_si)
     results = {}
 

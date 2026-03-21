@@ -224,7 +224,6 @@ def compute_triple_concordance(domain: str, chart, vargas_chart: dict = None) ->
 
     # D1 indication: is the relevant house lord well-placed?
     from src.calculations.dignity import compute_dignity, DignityLevel
-    lagna_si = chart.lagna_sign_index
     _SIGN_LORDS_LOCAL = {
         0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun",
         5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter",
