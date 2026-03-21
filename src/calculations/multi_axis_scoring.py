@@ -337,7 +337,7 @@ def score_all_axes(chart, school: str = "parashari") -> MultiAxisScores:
 
     # D9 lagna: D9 sign of D1 lagna
     d9_map    = compute_navamsha_chart(chart)
-    d9_lagna_si = d9_map.get("lagna", 0)
+    d9_lagna_si = chart.lagna_sign_index  # DivisionalMap has no .get(); use D1 lagna as D9 reference
 
     # D10 lagna: Dashamsha sign of D1 lagna
     d10_lagna_si = _d10_sign(chart.lagna)
