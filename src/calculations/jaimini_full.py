@@ -132,6 +132,24 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
         "Jaimini Sutra 3.4.1"
     ))
 
+
+    # ── Bandhu Yoga (4th lord in kendra from AK) ─────────────────────────────
+    lord4 = hmap.house_lord[3]
+    ak_h = ph.get(ak_planet, 0)
+    lord4_h = ph.get(lord4, 0)
+    if ak_h > 0 and lord4_h > 0:
+        diff_bandhu = abs(lord4_h - ak_h) % 12
+        bandhu = diff_bandhu in {0, 3, 6, 9}
+    else:
+        bandhu = False
+    yogas.append(JaiminiYoga(
+        name="Bandhu Yoga",
+        present=bandhu,
+        score=1.5 if bandhu else 0.0,
+        description=f"4th lord {lord4} in kendra from AK {ak_planet} — comfort and homeland",
+        source="Jaimini Sutra 4.2",
+    ))
+
     return yogas
 
 
