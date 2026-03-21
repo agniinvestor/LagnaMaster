@@ -298,6 +298,8 @@ class VarshaphalaResult:
     # Ruler of year
     varsha_pati: str
 
+    year_quality: str = "neutral"
+
     # Aspects
     tajika_aspects: list[TajikaAspect] = field(default_factory=list)
 
@@ -404,4 +406,24 @@ def compute_varshaphala(
         muntha_sign=_SIGN_NAMES[muntha_si],
         varsha_pati=varsha_pati,
         tajika_aspects=aspects,
+        year_quality="neutral",
     )
+
+
+def compute_muntha(natal_lagna_si: int, birth_year: int, query_year: int) -> int:
+    return _compute_muntha(natal_lagna_si, query_year - birth_year)
+
+
+def compute_tajika_aspects_for_chart(chart) -> list:
+    return _detect_tajika_aspects(chart)
+
+
+def get_tajika_aspect(lon_a: float, lon_b: float):
+    dist = _angular_distance(lon_a, lon_b)
+    for angle, orb_max in _TAJIKA_ORBS.items():
+        if abs(dist - angle) <= orb_max:
+            names = {0.0: "Itthasala", 60.0: "Nakta", 90.0: "Dainya",
+                     120.0: "Kambool", 180.0: "Kambool"}
+            return {"angle": angle, "orb": round(abs(dist - angle), 6),
+                    "aspect_type": names.get(angle, "Unknown")}
+    return None

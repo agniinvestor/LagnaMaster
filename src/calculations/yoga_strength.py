@@ -245,8 +245,6 @@ def detect_sannyasa_yogas(chart) -> list[NamedYogaResult]:
     sign_planets: dict[int, list[str]] = {}
 
     for planet, pdata in chart.planets.items():
-        if planet in ("Rahu", "Ketu"):
-            continue
         si = pdata.sign_index
         sign_planets.setdefault(si, []).append(planet)
 
