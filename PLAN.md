@@ -1,566 +1,60 @@
 # LagnaMaster — Programme Plan
 
-## Status: COMPLETE — Sessions 1–56 ✅
+## Status: Sessions 1–100 COMPLETE ✅ | Sessions 101–108 in progress on remote 🔄
 
-Every CALC_ and SCORE_ sheet in the workbook has a corresponding Python implementation.
-ENGINE_VERSION = "3.0.0".
+ENGINE_VERSION = "3.0.0"
 
----
-
-## Phase 7 — Workbook Completeness (Sessions 49–56)
-
-### Session 49 — Full 12-state Sayanadi
-**File:** `src/calculations/sayanadi_full.py`
-- Previous implementation had 7 of 12 states. Added 5 decanate-based states:
-  Sayana (odd 0°–10°), Upavesh (odd 10°–20°), Netrapani (odd 20°–30°),
-  Kautuka (even 0°–10°), Nishcheshta (even 10°–20°)
-- Priority chain: Kopa > Deena > Sthira > Mudita > Kshuditha > Trashita > decanate > Prakrita
-- Deena now wired from `graha_yuddha.py` loser detection (yuddha_losers set)
-- Modifiers: Sthira/Mudita=1.25, Deena/Kopa=0.50, Kshuditha/Trashita/Upavesh=0.75,
-  Netrapani/Kautuka=0.85, Sayana/Nishcheshta=0.60, Prakrita=1.00
-- Source: REF_AvasthaRules §2, BPHS Ch.45–47
-
-### Session 50 — Panchadha Maitri wired to scoring
-**File:** `src/calculations/panchadha_maitri.py`
-- Tatkalik: P2 in H2/3/4/10/11/12 from P1 = temporal Friend, else Enemy
-- Panchadha = Naisargika × Tatkalik → 5-fold: Adhi Mitra(+1.0)/Mitra(+0.5)/
-  Sama(0)/Shatru(−0.5)/Adhi Shatru(−1.0)
-- India 1947 verified against CALC_TatkalikFriendship live matrix
-- compute_panchadha_matrix(chart) returns full 7×7 PanchadhaMatrix dataclass
-- Source: CALC_PanchadhaMaitri §4, BPHS Ch.15
-
-### Session 51 — Lagnesh Global Modifier
-**File:** `src/calculations/lagnesh_strength.py`
-- 9-condition lookup table (CALC_LagneshStrength): modifier −0.75 to +0.75
-- Applied to ALL 12 house scores as a cross-cutting adjustment
-- India 1947: Venus (Lagnesh) in H3, neutral dignity → 0.00 confirmed
-- Source: CALC_LagneshStrength, SCORE_AllHouses row 42
-
-### Session 52 — Dig Bala Continuous Score
-**File:** `src/calculations/dig_bala.py`
-- Replaces binary yes/no with 0.0–1.0 continuous score per CALC_DigBala col G
-- Formula: score = 1 − circular_dist(current_house, peak_house) / 6
-- All 7 workbook values verified: Sun 0.167, Moon 0.833, Mars 0.333,
-  Mercury 0.667, Jupiter 0.167, Venus 0.833, Saturn 0.333
-- Source: CALC_DigBala, BPHS Ch.27
-
-### Session 53 — Graha Yogas (YOGA_Graha sheet)
-**File:** `src/calculations/yogas_graha.py`
-- 4 missing yogas + 2 confirmations from YOGA_Graha:
-  Budhaditya (Sun+Mer conjunct, present 1947)
-  Saraswati (Jup+Ven+Mer all in kendra/trikona)
-  Chandra-Mangal (Moon+Mars conjunct)
-  Kahala (H4+H9 lords mutual kendra, present 1947)
-  Parvata (H1+H2 lords both strong)
-  Gaja Kesari (confirmed present 1947)
-- Source: YOGA_Graha, BPHS Ch.36–43–68; Phaladeepika Ch.6
-
-### Session 54 — Narayana Dasha Argala (ND-6)
-**File:** `src/calculations/narayana_argala.py`
-- PVRNR Ch.5: Argala on the active Narayana Dasha sign modifies activation weight
-- Argala positions: H2 (Dhan), H4 (Sukha), H11 (Labha), H5 (secondary, ×0.5)
-- Virodha: H12 cancels H2, H10 cancels H4, H3 cancels H11, H9 cancels H5
-- Net modifier −0.5 to +0.5 applied to period activation weight
-- Source: NOTES_NarayanaDasaCompliance ND-6, PVRNR Narayana Dasha Ch.5
-
-### Session 55 — Configuration Toggles
-**File:** `src/calculations/config_toggles.py`
-- All REF_Config §1 toggles now exposed:
-  Ayanamshas: Lahiri(1)/Raman(3)/Krishnamurti(5)/Fagan-Bradley(0)
-  Node type: mean/true (both via pyswisseph)
-  Retrograde policy: apply ±0.10 / ignore / classical full-strength
-- CalcConfig dataclass with to_dict()/from_dict() for API persistence
-- Source: REF_Config §1, CALC_RetrogradeFix
-
-### Session 56 — Varga Agreement Confidence Flag
-**File:** `src/calculations/varga_agreement.py`
-- CALC_CompositeVargaScore col I: per-house D1/D9/D10 agreement
-- ★★ = all 3 same direction → High confidence
-- ★  = D1+D9 agree, D10 diverges → Moderate confidence
-- ○  = D1 and D9 disagree → Low confidence (nuanced chart)
-- India 1947 H2 Wealth: D1=−5.25, D9=−2.0, D10=−2.5 → ★★ confirmed
-- Source: CALC_CompositeVargaScore col I, OUTPUT_LifePressureIndex_Full
+> **Source of truth:** Classical Sanskrit texts — BPHS (PVRNR), Phaladeepika (Mantreswara),
+> Saravali (Kalyanarma), Brihat Jataka (Varahamihira), Jaimini Sutras.
+> The Excel workbook (`Lagna_Master5_clean.xlsx`) was the prototype source for Sessions 1–56.
+> It has been superseded by classical text references from Session 57 onward and is no longer
+> authoritative. See `AUDIT.md` for the full classical audit.
 
 ---
 
-## Phases 1–6 (Sessions 1–48) — see previous PLAN.md entries
+## Phase 0 — Classical Correctness (Sessions 101–108) 🔄
+
+**Committed on remote 2026-03-21. Run `git pull` to get these changes.**
+
+Fixes identified by the March 2026 classical audit against primary Sanskrit authorities.
+Every fix has a cited śhloka. No new features — correctness only.
+
+| Issue | Fix | Source |
+|-------|-----|--------|
+| MT degree ranges approximate | Hard-code exact BPHS ranges; Mercury 16°–20° Virgo (4° window only) | BPHS Ch.3 v.2–9 |
+| Exaltation binary flag | Add Paramotcha degrees; Uchcha Bala = `60×(1−\|deg−paramotcha\|/30)` | Phaladeepika Ch.2 v.4–7 |
+| Rahu/Ketu NEUTRAL in all signs | Implement exaltation per BPHS school (Rahu: Taurus, Ketu: Scorpio) | BPHS Ch.3 |
+| Neecha Bhanga: 1 of 6 conditions | Implement all 6 as separate booleans; NEECHA_BHANGA_RAJA when ≥2 | BPHS Ch.49 v.12–18 |
+| WC-halving (0.5×) non-classical | Replace with BPHS ¾-strength for Mars/Jupiter/Saturn special aspects | BPHS Ch.26 v.3–5 |
+| Nakshatra index: `int(lon/13.333)` | Use `int(lon*3/40)` — exact integer arithmetic | Swiss Ephem. precision |
+| AV Trikona Shodhana missing | Implement reduction; raw bindus are meaningless for prediction | PVRNR AV System Ch.4 |
+| AV Ekadhipatya Shodhana missing | Implement dual-lordship reduction | PVRNR AV System Ch.5 |
+| Kala Bala: 7 of 8 sub-components missing | Add Vara, Hora, Tribhaga, Abda, Masa, Nathonnata, Ayana | BPHS Ch.27 v.30–62 |
+| Drik Bala = 0 in all charts | Implement aspect-sum across all planet pairs | BPHS Ch.27 v.22–29 |
+| Single regression fixture | Add 8 new fixtures: Neecha Bhanga, Graha Yuddha, nakshatra cusp, Parivartana, female chart, high-latitude, year-boundary, celebrity | BV Raman Notable Horoscopes |
+| No JHora cross-validation | Add `cross_validate.py` — diff all fields vs JHora CSV export | Jagannatha Hora 8.0 |
 
 ---
 
-## Workbook Coverage — Final State
-
-All 178 sheets audited. Every CALC_ and SCORE_ sheet has a Python equivalent.
-
-| Category | Implemented | Notes |
-|----------|-------------|-------|
-| INPUT sheets (5) | Not needed | Runtime inputs handled by API |
-| REF sheets (28) | All encoded | Constants in Python dicts/dataclasses |
-| CALC sheets (43) | All 43 ✅ | Complete as of Session 56 |
-| SCORE sheets (75) | All 75 ✅ | multi_axis_scoring.py × 5 axes |
-| YOGA sheets (5) | All 5 ✅ | extended_yogas.py + yogas_graha.py |
-| OUTPUT sheets (13) | All ✅ | Generated by scoring_v3.py + narrative.py |
-| LEGEND/NOTES (4) | Encoded | As invariants in docs |
-| HOWTO/UX (3) | Partial | StudentMode = product decision |
-| API_ProkeralaScript | Skipped | External integration, not in scope |
-| NOTES_VBAMacro | N/A | Excel-specific |
-
-## Genuine Theoretical Limits
-
-| Item | Why not encodable |
-|------|-----------------|
-| Holistic gestalt synthesis | No classical formula — requires practitioner judgment |
-| "Strong benefic cancels afflictions" threshold | BPHS states principle, gives no number |
-| Kalachakra Dasha | Contradictory versions across commentators |
-| Desha-Kala-Patra | Geographic/cultural context — no parameterisable formula |
-| Muhurta / Prashna | Separate discipline with different inputs |
-
----
-
-## Phase 8 — PVRNR Textbook Tier 1 (Sessions 57–63)
-
-### Session 57 — Orb-sensitive conjunction/aspect strength
-**File:** `src/calculations/orb_strength.py`
-PVRNR p147: "conjunction should be close (say, within 6° or so)".
-p149: Rajiv Gandhi — planets 8° apart = weak yoga.
-p149: Akbar — Venus/Saturn less than 1° = very strong.
-Formula: `strength = max(0, 1 - orb / 15)` → 1.0 at 0°, 0.5 at 6°, 0.33 at 8°, 0.0 at 15°+.
-`AssociationStrength` dataclass includes `reduces_yoga()` (True if orb > 8°) and
-`is_pvrnr_close()` (True if ≤ 6°). Parivartana (mutual sign exchange) detected.
-
-### Session 58 — Yoga fructification conditions
-**File:** `src/calculations/yoga_fructification.py`
-PVRNR p147 three conditions: (1) free from functional malefic afflictions,
-(2) conjunction within 6°, (3) not combust/debilitated/inimical.
-Amsa level from Dasa Varga count: Paarijataamsa(2)→Uttamaamsa(3)→Gopuraamsa(4)→
-Simhasanamsa(5)→Paaravataamsa(6)→Devalokaamsa(7)→Brahmalokaamsa(8)→Airaavataamsa(9).
-`FructificationResult` with verdict: Full/Partial/Weak/Minimal.
-`yoga_fructification_score()` integrates all three conditions into 0.0-1.0 score.
-
-### Session 59 — Stronger-of-two framework
-**File:** `src/calculations/stronger_of_two.py`
-PVRNR p194 (Rudra calculation) explicit hierarchy:
-1. More planets in conjunction (same sign)
-2. Exaltation or own sign
-3. Joining exalted planets
-4. Aspected by more planets via rasi drishti
-5. More advanced in sign (higher degree in sign)
-`stronger_planet(p1, p2, chart)` and `stronger_sign(si1, si2, chart)`.
-Used for Scorpio/Aquarius dual lords, Narayana Dasha start, longevity lords.
-India 1947: Sun in Cancer has 4 cotenants (Moon/Mercury/Venus/Mars) confirmed.
-
-### Session 60 — AV-weighted transit interpretation
-**File:** `src/calculations/av_transit.py`
-PVRNR p154: "AV becomes invaluable when interpreting transits in rasi chart
-with respect to natal positions in divisional charts."
-p165: SAV ≥30 rekhas = strong house, <25 = weak.
-BAV thresholds: ≥6=Excellent, 5=Good, 4=Average, 3=Unfavorable, ≤2=Malefic.
-`compute_transit_av_score(natal_chart, transit_date)` → full `TransitAVReport`.
-
-### Session 61 — Arudha reality vs perception model
-**File:** `src/calculations/arudha_perception.py`
-PVRNR Ch.9 p97: "how one is perceived by others is more important in material life".
-AL = maya/illusion. House = actual reality.
-2×2 conflict matrix: strong/weak actual × strong/weak AL:
-  → Aligned / Hidden Success / Apparent Success / Recognized Struggle.
-p102: malefics in 3rd/6th from AL → bold, materially successful.
-      benefics in 3rd/6th from AL → gentle, saintly.
-`compute_full_perception_model(chart)` covers all 12 houses.
-
-### Session 62 — PVRNR textbook yogas
-**File:** `src/calculations/yogas_pvrnr.py`
-8 yogas from PVRNR Ch.11 p125-130:
-  Guru-Mangala (Jup+Mars conjunct/7th), Amala (only benefics in H10),
-  Sankha (lagnesh strong + 5/6th lords mutual kendra), Vasumati (benefics in upachaya),
-  Lagnaadhi (benefics in H7+H8), Jaya (10th lord exalted + 6th debilitated),
-  Pushkala (lagnesh with Moon, Moon dispositor strong), Brahma (Jup/Ven/Mer in kendras).
-
-### Session 63 — Multi-factor planet effectiveness synthesis
-**File:** `src/calculations/planet_effectiveness.py`
-PVRNR p201: "use the right set of parameters for the occasion — attempting to use
-various techniques interchangeably leads to confusion."
-Combines 7 measures for summary effectiveness (not replacing specific-purpose use):
-  Shadbala 20% + Avastha 20% + AV bala 15% + Dig Bala 15% + Amsa level 15%
-  + Combustion 7.5% + Yuddha 7.5% → 0.0-1.0 overall + label.
-  Labels: Highly effective / Effective / Moderate / Weak / Ineffective.
-
----
-
-## Phase 9 — Synthesis & Judgment Layer (Sessions 64–70)
-
-### Session 64 — Dominance Hierarchy Engine
-**File:** `src/calculations/dominance_engine.py`
-Addresses GPT Gap 1. Encodes the specific classical overrides PVRNR uses in examples:
-- Benefic override: Jupiter in kendra aspects (BPHS Ch.34) suppress mild negatives
-- Malefic dominance: combust benefics cannot initiate yogas (BPHS Ch.3, PVRNR p147)
-- Dasha priority: running MD lord's house/strength = primary period filter
-- Activation dominance: MD lord's houses get ×1.5 weight
-`DominanceReport`: factors list, global_tone (Positive→Negative), affliction_dominated and
-yoga_dominated house lists. `dominant_theme()` returns single-sentence chart summary.
-Note: does NOT implement "gestalt synthesis" — those are named, specific BPHS rules only.
-
-### Session 65 — Promise vs Manifestation
-**File:** `src/calculations/promise_engine.py`
-Addresses GPT Gap 2. PVRNR applied principle: "dasha cannot produce what's absent."
-Three-level model:
-  Promise (natal) → `promise_present`, `promise_strength`, `ceiling` (max attainable)
-  Capacity (dasha) → `dasha_activated` flag (MD or AD lord rules the house/lord)
-  Delivery (transit) → `transit_supported` via AV SAV threshold
-Timing: Now (all three) / Soon (promise + dasha) / Future (promise only) / Blocked (no promise).
-
-### Session 66 — Domain-Specific Axis Weighting
-**File:** `src/calculations/domain_weighting.py`
-Addresses GPT Gap 3. PVRNR Ch.13 p181: "Use the correct divisional chart for the matter."
-7 domains with classical-grounded weights (all sum to 1.0):
-  career (D10×35%), marriage (D9×35%), mind_psychology (Chandra×40%),
-  wealth (D1×35%), health_longevity (D1×45%), spirituality (D9×45%), children.
-`compute_domain_lpi(chart, dashas, on_date, domain)` → `DomainLPIResult` with
-`domain_score`, `top_houses`, `weak_houses`, `rationale`.
-
-### Session 67 — Multi-Planet Chains
-**File:** `src/calculations/planet_chains.py`
-Addresses GPT Gap 4.
-A. Stelliums (3+ planets in same sign): benefic/malefic/mixed nature, house, interpretation.
-B. Dispositor chains: trace from planet → dispositor → ... → final (in own sign). Detects
-   mutual reception (2-planet parivartana). Max depth 9 to prevent infinite loops.
-C. Mutual reception (parivartana) classification: Strong (both in other's own sign) / Partial.
-India 1947: Cancer stellium = Sun/Moon/Mercury/Venus/Saturn (5 planets) confirmed.
-
-### Session 68 — House-Type Modulation
-**File:** `src/calculations/house_modulation.py`
-Addresses GPT Gaps 5+6. Classical doctrine:
-  Upachayas (3,6,10,11): mature with age; malefics BENEFICIAL here (BPHS).
-    Age modifier: 0–35y = 0.5×, 35–60y = 0.8×, 60+y = 1.0× (full maturation).
-  Kendras: stable throughout life.
-  Trikonas: lasting benefic promise.
-  Dusthanas: slightly dampened (0.9×) unless Viparita.
-  Marakas (2,7): noted for longevity considerations.
-`apply_house_modulation(scores, chart, age_years)` for batch processing.
-
-### Session 69 — Interpretive Confidence Model
-**File:** `src/calculations/confidence_model.py`
-Addresses GPT Gap 8. Five weighted components:
-  Varga agreement (30%): ★★=1.0, ★=0.65, ○=0.30
-  Conflict score (25%): benefic+malefic both active = 0.40, else 1.0
-  Sensitivity (20%): Monte Carlo stable=0.85, unstable=0.40
-  Boundary proximity (15%): |score|/2.0 — near zero = uncertain
-  Role clarity (10%): lord has clear functional role = 0.90
-Flags: varga divergence, benefic/malefic conflict, near-zero score, unclear role.
-`requires_expert_review` list for houses with Uncertain label or ≥3 flags.
-
-### Session 70 — Chart Exception Detection
-**File:** `src/calculations/chart_exceptions.py`
-Addresses GPT Gap 9. Seven checks with severity ratings:
-  Empty kendras (High) — Mahapurusha yogas absent, weak structural support
-  Lagnesh in 8th (High/Critical) — vitality challenges; Critical if also debilitated
-  Dusthana lords all strong (High) — check Viparita Raja Yoga
-  Moon severely afflicted (High) — 2+ malefics or dusthana placement
-  Multiple combust benefics (High) — yogas weakened (BPHS Ch.3)
-  Hemisphere imbalance (Moderate) — all planets in visible/invisible half
-  Score extreme (Critical/Advisory) — average D1 < −2.5 or > +2.5
-`special_rules_apply` list names specific BPHS doctrines triggered.
-
----
-
-## Consumer Product Vision
-
-Approved design direction (March 2026):
-
-**Product:** Personal Timing & Guidance Companion
-**Aesthetic:** Bloomberg Terminal — professional, data-dense, calm, no mysticism
-**Core constraint:** Raw scores permanently gated behind L3 opt-in
-**Signal system:** 5-bar (mobile-signal style), not percentages or star ratings
-**Language:** Possibility framing, not deterministic claims
-**Architecture:** All consumer traffic passes through the guidance pipeline;
-                  engine modules are never called directly by consumers
-
-**Readiness assessment (as of Session 100):**
-
-| Layer | Session 70 | Session 100 | Notes |
-|-------|-----------|------------|-------|
-| Jyotish engine (natal) | ~100% | ~100% | 63 modules, 963 tests |
-| Muhurta / Prashna | 0% | ~100% | Sessions 91–93 |
-| Additional dasha systems | ~60% | ~100% | Kalachakra, Ashtottari, Shoola, Sudasa, Tara (S94–96, S100) |
-| Upaya (remedial) | 0% | ~100% | Session 97 — classical prescriptions |
-| Mundane astrology | 0% | ~100% | Session 98 |
-| Language & safety pipeline | 0% | ~100% | Sessions 71–75 — score_to_language, fatalism_filter, L1/L2/L3 |
-| Privacy & legal (GDPR/DPDP) | ~15% | ~100% | Sessions 76–78 — consent, erasure, data minimisation |
-| Consumer frontend | ~10% | ~80% | Sessions 79–83 — components built, integration testing pending |
-| Feedback governance | ~20% | ~100% | Sessions 84–86 — human-supervised queue, harm escalation |
-| Educational / reflection | 0% | ~100% | Sessions 87–88 — learn mode, Socratic prompts |
-| Practitioner handoff | 0% | ~100% | Session 89 — sanitised summary, referral logic |
-| Mobile API | 0% | ~80% | Session 90 — router built, React Native shell pending |
-| **Overall consumer readiness** | **~25%** | **~90%** | Integration testing + practitioner directory are outstanding |
-
-**Remaining to production:**
-1. End-to-end integration testing of Next.js frontend ↔ FastAPI ↔ guidance pipeline
-2. React Native mobile shell (router complete, shell pending)
-3. Practitioner opt-in directory (S89 infrastructure ready)
-4. GDPR-compliant privacy policy and ToS text (legal team)
-5. First 50 empirica events for accuracy baseline
-
----
-
-## Phase 10 — Language & Safety Layer (Sessions 71–75)
-**Status: PLANNED — blocking consumer launch**
-
-### Session 71 — Score-to-language transformation
-**File:** `src/guidance/score_to_language.py`
-Maps every numerical engine output to a human-safe guidance sentence.
-5-tier system: Clear passage / Favourable / Mixed / Navigate carefully / Significant resistance.
-Signal bars: 5 filled = strong, 0 filled = significant resistance.
-Raw scores NEVER passed through to consumer API responses at L1 or L2.
-Timing labels avoid deterministic language: "navigate carefully" not "bad period".
-
-### Session 72 — Fatalism filter
-**File:** `src/guidance/fatalism_filter.py`
-Post-processor that scans all generated text for deterministic patterns:
-"will fail", "doomed", "impossible", "never", "ruined", "crisis", "death".
-Rewrites using possibility framing while preserving signal direction.
-Not whitewashing: "significant resistance" is preserved; "financial ruin" is not.
-Operates on all narrative output before any API response is formed.
-
-### Session 73 — Three-tier explainability engine
-**File:** `src/guidance/explainability_tiers.py`
-L1 (default): single guidance sentence + signal bar + timing label. No factors.
-L2 (on "Why?" click): 3–5 bullet factors. Planet names and timing triggers allowed.
-    No scores, no Shadbala components, no AV rekhas.
-L3 (explicit opt-in modal): full technical trace — Shadbala, AV, rule firings,
-    raw house scores, LPI breakdown. Clearly labelled "Advanced technical view".
-    Opt-in resets each session (not persisted, to prevent normalisation of raw scores).
-
-### Session 74 — Guidance API
-**File:** `src/guidance/guidance_api.py`
-Single consumer-facing contract. POST /guidance → GuidanceResponse.
-Fields: heading, summary (L1), factors (L2), timing_note, confidence_label,
-        signal_bars (0–5), timing_quality, disclaimer.
-All engine calls internal. No raw scores in response schema at L1/L2.
-Domain parameter routes to domain_weighting.py weights automatically.
-on_date parameter triggers promise_engine.py manifestation check.
-
-### Session 75 — Disclaimer and dependency prevention engine
-**File:** `src/guidance/disclaimer_engine.py`
-Domain-specific scope disclaimers: career → "not financial advice",
-health → "consult a medical professional", relationships → "reflection tool only".
-Dependency prevention: after 3 sessions/day or 15/week, non-intrusive reminder
-that guidance is most useful combined with personal judgment and trusted advisors.
-No usage data shared with third parties. No streak mechanics.
-
----
-
-## Phase 11 — Privacy & Legal Compliance (Sessions 76–78)
-**Status: PLANNED — blocking consumer launch**
-
-### Session 76 — Consent engine + right to erasure
-**File:** `src/privacy/consent_engine.py`
-Consent records: user_id, purpose, granted_at, withdrawn_at, jurisdiction, version.
-GDPR Article 7 compliant. right_to_erasure() cascade: removes all computed outputs,
-birth data, and event logs; replaces with tombstone record preserving deletion timestamp.
-DPDP Act (India) and CCPA/CPRA equivalent flows.
-Age gate: birth year check — under-18 blocks chart creation with explanation.
-
-### Session 77 — Family consent gates
-**File:** `src/privacy/family_consent.py`
-Each family member is a separate consent principal.
-Non-consenting members excluded from all cross-chart analysis.
-Kundali Milan (compatibility) requires active consent from both individuals.
-Controls: add member, revoke consent, delete member data independently.
-Cross-chart insights shown only when all involved parties have active consent.
-
-### Session 78 — Data minimisation
-**File:** `src/privacy/data_minimisation.py`
-Audit pass: birth time stored to minute precision only (not seconds).
-IP addresses hashed on ingress. Location stored to city level only.
-Retention policy: raw birth data deleted after 90 days of user inactivity.
-Computed chart retained (reproducible from birth data on demand).
-Event log anonymised after 1 year (user_id replaced with hash).
-No secondary monetisation of any user data.
-
----
-
-## Phase 12 — Consumer Frontend (Sessions 79–83)
-**Status: PLANNED — beta launch gate**
-
-### Session 79 — Dashboard shell
-Next.js 14, TypeScript, Tailwind. Dark neutral palette. Structured panel layout.
-No astrology imagery, no mysticism styling. Bloomberg Terminal aesthetic.
-Left nav (domains), center (primary guidance), right (timing sidebar).
-Typography-first design. Professional and calm.
-
-### Session 80 — Domain dashboard panels
-One panel per domain (Career, Relationships, Health, Wealth, Spirituality, Learning).
-Each panel: headline sentence (L1) + 3-item factor list (L2) + timing signal bar
-+ confidence dot (green/amber/grey). Raw scores never visible at L1/L2.
-Domain-specific axis weights (from domain_weighting.py) applied automatically.
-
-### Session 81 — Timing calendar
-90-day forward view. Days coloured by net activation: deep blue (clear passage),
-neutral grey (mixed), amber (navigate carefully). No "bad day" language.
-Click any day: domain activation status, active dasha/antardasha, transit AV quality.
-Promise engine checks which domains are activated vs blocked for each day.
-
-### Session 82 — Layered explanation UI
-Each guidance card has a "Why?" button → expands to L2 factors.
-L2 has "Show technical detail" → consent modal → L3 full trace.
-L3 clearly labelled "Advanced technical view — for practitioners and advanced students".
-L3 opt-in resets on page reload. No persistent L3 mode.
-
-### Session 83 — Onboarding and consent flow
-4-screen onboarding: what LagnaMaster is / what it is not / how to use it /
-consent capture. Users who decline cannot proceed. Revisitable from settings.
-Jurisdiction detection for appropriate legal language (GDPR vs DPDP vs CCPA).
-Clear statement: "This is a reflective tool inspired by Jyotish principles.
-It is not a predictor, not medical advice, not financial advice."
-
----
-
-## Phase 13 — Feedback Governance (Sessions 84–86)
-**Status: PLANNED — within 60 days of beta launch**
-
-### Session 84 — Human-supervised feedback loop
-Users mark guidance as helpful / not helpful / concerning.
-Concerning flags → human review queue (never automated retrain).
-Helpful/not-helpful → output quality monitoring only.
-Reproducibility lock: any guidance output is recomputable from chart + date + version.
-Past outputs never silently change after user interaction.
-
-### Session 85 — Harm escalation
-Pattern detector on usage signals: same negative domain viewed repeatedly,
-very high session frequency, distressed free-text.
-Does not intervene automatically. Surfaces a gentle, non-alarming prompt:
-"You've been reflecting on this area a lot. Speaking with a trusted person
-or counsellor may offer perspectives we can't."
-No crisis resources surfaced unless explicitly requested by the user.
-
-### Session 86 — Dependency prevention
-Session frequency monitor. After 3 sessions/day or 15/week: non-intrusive reminder.
-No streak mechanics, no badges, no engagement notifications.
-Usage data not shared with advertisers or third parties.
-Product actively discourages compulsive checking.
-
----
-
-## Phase 14 — Maturity Features (Sessions 87–90)
-**Status: PLANNED — 3–6 months post-launch**
-
-### Session 87 — Educational layer
-"Learn" mode alongside "Guide" mode. Explains how each factor arises in plain language.
-Connected to rule_interaction.py and narrative.py. Never shows raw scores.
-Shows classical reasoning: "Jupiter's aspect on your 10th house strengthens career
-indicators because Jupiter is a natural benefic aspecting a karma house."
-
-### Session 88 — Reflection prompts
-Converts guidance from declarative to Socratic. Instead of "this period activates
-career themes", prompts: "What feels most significant in your professional life
-right now?" Aligned with Jyotish's traditional purpose of self-understanding,
-not prediction.
-
-### Session 89 — Practitioner handoff
-When confidence model flags "requires expert review", offers referral to verified
-Jyotish practitioners (opt-in directory). User can share a sanitised chart summary
-(no raw scores) with the practitioner. LagnaMaster is the tool; the practitioner
-is the expert. Clear separation maintained.
-
-### Session 90 — Mobile
-Lightweight React Native companion. Push notifications only for user-scheduled
-timing alerts (never unsolicited). No notification streak mechanics.
-Mobile data stored locally by default, synced to server with explicit consent only.
-
----
-
-## Final State (Sessions 1–90) — Complete
-
-All 90 sessions delivered. All phases pushed and tested.
-
-### Test counts by phase
-
-| Phase | Test file | Tests |
-|-------|-----------|-------|
-| 1–3 | test_session*.py (22 files) | ~450 |
-| 4 | test_pressure_engine.py | ~30 |
-| 5 | test_session33–40.py | ~80 |
-| 6 | test_phase6.py | ~60 |
-| 7 | test_phase7.py | ~37 |
-| 8 | test_phase8.py | ~37 |
-| 9 | test_phase9.py | ~34 |
-| 10 | test_phase10.py | ~24 |
-| 11 | test_phase11.py | ~20 |
-| 13 | test_phase13.py | ~15 |
-| 14 | test_phase14.py | ~16 |
-| **Total** | | **~980** |
-
-### Module inventory
-
-```
-src/
-  ephemeris.py, scoring.py, db.py, db_pg.py, cache.py
-  report.py, worker.py, auth.py, config.py, montecarlo.py
-  calculations/  (63 modules — Phases 1–9)
-  guidance/      (8 modules — Phase 10, 14)
-    score_to_language.py, fatalism_filter.py
-    explainability_tiers.py, guidance_api.py, disclaimer_engine.py
-    educational_layer.py, reflection_prompts.py, practitioner_handoff.py
-  privacy/       (3 modules — Phase 11)
-    consent_engine.py, family_consent.py, data_minimisation.py
-  feedback/      (3 modules — Phase 13)
-    feedback_loop.py, harm_escalation.py, dependency_prevention.py
-  api/
-    main.py, main_v2.py, auth_router.py, school_router.py
-    empirica_router.py, mobile_router.py, models.py
-frontend/
-  src/components/guidance/  DomainCard.tsx, SignalBar.tsx
-  src/components/timing/    TimingCalendar.tsx
-  src/components/onboarding/ OnboardingFlow.tsx
-  src/app/api/guidance/     route.ts
-```
-
-### Genuine theoretical limits (documented, not built)
-
-These are not omissions — they are correctly excluded:
-
-| Item | Reason |
-|------|--------|
-| Kalachakra Dasha | Contradictory across commentators — no canonical formula |
-| Desha-Kala-Patra | Requires practitioner situational judgment — not parameterisable |
-| Gestalt synthesis | Named BPHS rules encoded; nonlinear expert weighting is not |
-| Muhurta / Prashna | Separate discipline — different inputs, different framework |
-| Free will / remedies | Outside deterministic modeling by design |
-| Causal event pathways | Planetary signatures computable; sociological labeling is not |
-
-### Post-launch priorities (not a session — product decisions)
-
-1. Wire `main_v2.py: app.include_router(mobile_router)` (manual — done)
-2. Reboot Streamlit Cloud to pull latest commits
-3. Populate practitioner opt-in directory (S89)
-4. First 50 empirica events for accuracy baseline (S48)
-5. GDPR-compliant privacy policy and ToS text (legal team)
-6. User testing of onboarding flow (S83)
-
----
-
-## Phase 15–18 — Muhurta, Prashna, Additional Dashas, Upaya, Mundane (Sessions 91–100)
+## Phase 15–18 — Muhurta, Prashna, Additional Dashas, Upaya, Mundane (Sessions 91–100) ✅
 
 ### Session 91 — Panchanga (5 limbs of the almanac)
 **File:** `src/calculations/panchanga.py`
 Complete Panchanga engine replacing the incomplete predecessor `panchang.py`.
-Tithi: (moon_lon - sun_lon) / 12° → 1-30, Shukla/Krishna paksha.
-Vara: weekday + lord (Sun=0…Sat=6 in Jyotish order).
-Nakshatra: moon_lon × 27/360, pada 1-4.
-Yoga: (sun_lon + moon_lon) × 27/360.
-Karana: half-tithi, 7 variable + 4 fixed karanas.
+Tithi, Vara, Nakshatra, Yoga, Karana (7 variable + 4 fixed karanas).
 Amrita Siddhi and Sarvaartha Siddhi from Vara×Nakshatra lookup tables.
 Hora (planetary hour from sunrise) and Choghadiya (8 day/8 night periods).
-Note: supersedes `panchang.py`; `test_panchanga_legacy.py` is an empty stub.
 Added `compute_navamsha_chart()` and `_d9_sign_index()` for backward compatibility.
+Note: supersedes `panchang.py`; `test_panchanga_legacy.py` is an empty stub.
 
 ### Session 92 — Muhurta Engine
 **File:** `src/calculations/muhurta.py`
-Source: PVRNR Table 79 (p473-476). 7 task types with per-task rules.
-Tasks: marriage, business_launch, house_construction, house_entry, travel, surgery, education, general.
+Source: PVRNR Table 79 (p473–476). 7 task types: marriage, business_launch,
+house_construction, house_entry, travel, surgery, education, general.
 Per-task: good/bad Tithis, Varas, Nakshatras, Lagnas from Table 79.
 Tarabala: count from birth nakshatra → 9 categories; {1,3,5,7} = auspicious.
 Chandrabala: Moon's current sign from birth Moon sign; {1,3,6,7,10,11} = good.
-Special yoga bonus: Amrita Siddhi or Sarvaartha Siddhi = +1 to score.
-`score_muhurta()` returns 0-7 score: Excellent(≥5)/Good(≥4)/Acceptable(≥3)/Avoid.
+`score_muhurta()` → 0–7: Excellent(≥5)/Good(≥4)/Acceptable(≥3)/Avoid.
 PVRNR p487: "Planetary strength is more important than strictly following thumbrules."
 
 ### Session 93 — Prashna (Horary)
@@ -568,88 +62,238 @@ PVRNR p487: "Planetary strength is more important than strictly following thumbr
 Source: BPHS Prashna chapters; Prashna Marga; PVRNR applications.
 10 query types: general, lost_article, illness, travel, legal, marriage,
 career, wealth, children, property.
-Hora lord quality mapped per query type from classical sources.
-Key house scoring + Moon placement + lagna lord placement → Yes/Possible/Unlikely/No verdict.
+Key house scoring + Moon placement + lagna lord placement → Yes/Possible/Unlikely/No.
 Confidence: High/Moderate/Low based on positive signal count.
 
 ### Session 94 — Kalachakra Dasha
 **File:** `src/calculations/kalachakra_dasha.py`
-Source: BPHS Ch.36-42; PVRNR preface p8 ("most respectable dasha").
-Moon's navamsha pada (0-3) determines Savya/Apasavya sequence.
+Source: BPHS Ch.36–42; PVRNR preface p8 ("most respectable dasha").
+Moon's navamsha pada (0–3) determines Savya/Apasavya sequence.
 Sign periods: Ar=7, Ta=16, Ge=9, Cn=21, Le=5, Vi=9, Li=16, Sc=7, Sg=10, Cp=4, Aq=4, Pi=1.
-Deha (body, 1st sign) and Jeeva (life, 5th sign) flags per cycle.
-`current_kalachakra_period()` for active period lookup.
+Deha (body) and Jeeva (life) flags per cycle. `current_kalachakra_period()` included.
 
 ### Session 95 — Shoola Dasha + Sudasa
 **File:** `src/calculations/shoola_dasha.py`
 Source: BPHS; PVRNR preface p8 ("two ayur dasas"; "timing material success").
-Shoola: lagna-trine-based sequence, Trishoola spikes at lagna + two trines.
-Sudasa: starts from stronger of lagna/8th (using stronger_of_two.py), duration
-proportional to planet count per sign.
-Both used for longevity and material success timing respectively.
+Shoola: lagna-trine-based; Trishoola spikes.
+Sudasa: starts from stronger of lagna/8th (using `stronger_of_two.py`).
 
 ### Session 96 — Tara Dasha
 **File:** `src/calculations/tara_dasha.py`
-9-category nakshatra sequence from birth nakshatra:
-Janma / Sampat / Vipat / Kshema / Pratyak / Sadhana / Naidhana / Mitra / Ati-Mitra.
-Vimshottari period lengths (Ketu=7…Mercury=17).
-Quality annotations: Sampat/Kshema/Sadhana/Mitra/Ati-Mitra = auspicious.
-Primarily used for body, health, and relationship timing.
+9-category nakshatra sequence from birth nakshatra.
+Vimshottari period lengths. Auspicious categories annotated.
 
 ### Session 97 — Upaya (Remedial Measures)
 **File:** `src/calculations/upaya.py`
-Source: PVRNR Ch.34 (p450-458), Tables 77-78.
-Table 77: gemstone/metal/finger/wearing-day per planet.
-Table 78: primary deity per planet.
-Mantra recitation counts per planet (Sun=6000, Moon=10000 … Venus=20000).
-Charitable acts and behavioral guidance per planet.
+Source: PVRNR Ch.34 (p450–458), Tables 77–78.
 `get_chart_upayas()`: auto-detects combust/debilitated/functional-malefic planets.
 EVERY recommendation carries disclaimer: "classical prescriptions for reflection only."
 
 ### Session 98 — Mundane Astrology
 **File:** `src/calculations/mundane.py`
-Source: PVRNR Ch.35 (p460-469).
-Complete H1-H12 mundane significations from PVRNR p461.
-Chart types: nation (independence), solar ingress, lunar new year, swearing-in.
+Source: PVRNR Ch.35 (p460–469).
+Chart types: nation, solar ingress, lunar new year, swearing-in.
 `compress_vimshottari()`: scale 120yr cycle to any period (PVRNR p464).
 India 1947 regression: nation chart analysis confirmed.
 
 ### Session 99 — Contextual Layer (partial DKP)
 **File:** `src/calculations/contextual.py`
-Encodable partial: era-aware profession mapping (king→CEO, soldier→athlete/surgeon),
-latitude warning (>55° affects house boundaries), marriage timing by birth era.
-Explicit practitioner note: "Full Desha-Kala-Patra requires practitioner who knows
-the individual's circumstances. This layer provides partial algorithmic context only."
-Correctly documents the theoretical limit without claiming to resolve it.
+Era-aware profession mapping, latitude warning, marriage timing by birth era.
+Explicit practitioner note: full Desha-Kala-Patra requires practitioner judgment.
 
 ### Session 100 — Ashtottari Dasha
 **File:** `src/calculations/ashtottari_dasha.py`
-Source: BPHS Ch.47; PVRNR preface p8 ("most commonly used nakshatra dasas").
-8-planet sequence (Ketu excluded): Sun=6/Moon=15/Mars=8/Mercury=17/Saturn=10/
-Jupiter=19/Rahu=12/Venus=21. Total = 108 years.
+Source: BPHS Ch.47; PVRNR preface p8.
+8-planet sequence; total 108 years.
 `qualifies_for_ashtottari()`: Rahu not in H1 or H7 required.
-Used as alternative to Vimshottari for qualifying charts.
 
 ---
 
-## Updated Coverage Assessment (Session 100)
+## Phase 9 — Synthesis & Judgment Layer (Sessions 64–70) ✅
 
-| Branch | Status |
-|--------|--------|
-| Natal analysis (BPHS + PVRNR) | ✅ Complete |
-| Divisional charts (20 vargas) | ✅ Complete |
-| Vimshottari Dasha | ✅ Complete |
-| Narayana + Yogini + Chara Dasha | ✅ Complete |
-| Kalachakra Dasha | ✅ Complete (Session 94) |
-| Ashtottari Dasha | ✅ Complete (Session 100) |
-| Shoola + Sudasa + Tara Dasha | ✅ Complete (Sessions 95-96) |
-| Muhurta (electional) | ✅ Complete (Sessions 91-92) |
-| Prashna (horary) | ✅ Complete (Session 93) |
-| Upaya (remedial measures) | ✅ Complete (Session 97) |
-| Mundane astrology | ✅ Complete (Session 98) |
-| Panchanga | ✅ Complete (Session 91) |
-| Consumer safety pipeline | ✅ Complete (Sessions 71-90) |
-| Medical/financial astrology | ❌ Separate discipline |
-| Prashna Marga full corpus | ❌ Separate text needed |
-| Full Desha-Kala-Patra | ❌ Not parameterisable |
-| Kalachakra (textual variants) | ⚠ BPHS version implemented |
+### Session 64 — Dominance Hierarchy Engine
+**File:** `src/calculations/dominance_engine.py`
+Named classical overrides from BPHS: benefic kendra suppression, combust benefic yoga blocking, dasha lord activation weight.
+`DominanceReport`: global_tone, affliction_dominated and yoga_dominated house lists.
+
+### Session 65 — Promise vs Manifestation
+**File:** `src/calculations/promise_engine.py`
+Three-level: Promise (natal) → Capacity (dasha) → Delivery (transit).
+Timing: Now / Soon / Future / Blocked.
+
+### Session 66 — Domain-Specific Axis Weighting
+**File:** `src/calculations/domain_weighting.py`
+7 domains; classical varga weights per domain (PVRNR Ch.13 p181).
+`compute_domain_lpi()` → `DomainLPIResult`.
+
+### Session 67 — Multi-Planet Chains
+**File:** `src/calculations/planet_chains.py`
+Stelliums, dispositor chains (max depth 9), mutual reception (parivartana).
+India 1947: Cancer stellium = 5 planets confirmed.
+
+### Session 68 — House-Type Modulation
+**File:** `src/calculations/house_modulation.py`
+Upachaya age maturation (35/60+ year modifiers). Malefics beneficial in 3/6/10/11.
+`apply_house_modulation(scores, chart, age_years)`.
+
+### Session 69 — Interpretive Confidence Model
+**File:** `src/calculations/confidence_model.py`
+5 components: varga agreement (30%) / conflict (25%) / sensitivity (20%) / boundary (15%) / role clarity (10%).
+`requires_expert_review` list for houses with Uncertain label or ≥3 flags.
+
+### Session 70 — Chart Exception Detection
+**File:** `src/calculations/chart_exceptions.py`
+7 checks: empty kendras, lagnesh in H8, dusthana lords all strong, Moon severely afflicted,
+multiple combust benefics, hemisphere imbalance, score extreme.
+`special_rules_apply` names specific BPHS doctrines triggered.
+
+---
+
+## Phase 8 — PVRNR Textbook Tier 1 (Sessions 57–63) ✅
+
+### Session 57 — Orb-sensitive conjunction/aspect strength
+**File:** `src/calculations/orb_strength.py`
+PVRNR p147/p149. Formula: `strength = max(0, 1 - orb / 15)`.
+`is_pvrnr_close()` (≤6°), `reduces_yoga()` (>8°). Parivartana detected.
+
+### Session 58 — Yoga fructification conditions
+**File:** `src/calculations/yoga_fructification.py`
+PVRNR p147 three conditions. Amsa levels: Paarijataamsa → Airaavataamsa.
+`FructificationResult`: Full/Partial/Weak/Minimal.
+
+### Session 59 — Stronger-of-two framework
+**File:** `src/calculations/stronger_of_two.py`
+PVRNR p194 explicit 5-condition hierarchy.
+Used for: Scorpio/Aquarius dual lords, Narayana Dasha start, longevity lords.
+
+### Session 60 — AV-weighted transit interpretation
+**File:** `src/calculations/av_transit.py`
+PVRNR p154/p165. SAV ≥30=strong, <25=weak. BAV: ≥6/5/4/3/≤2.
+`TransitAVReport` from `compute_transit_av_score()`.
+
+### Session 61 — Arudha reality vs perception model
+**File:** `src/calculations/arudha_perception.py`
+PVRNR Ch.9 p97. 2×2 matrix: actual × perceived strength.
+
+### Session 62 — PVRNR textbook yogas
+**File:** `src/calculations/yogas_pvrnr.py`
+8 yogas from PVRNR Ch.11: Guru-Mangala, Amala, Sankha, Vasumati,
+Lagnaadhi, Jaya, Pushkala, Brahma.
+
+### Session 63 — Multi-factor planet effectiveness
+**File:** `src/calculations/planet_effectiveness.py`
+7 measures → 0.0–1.0: Shadbala 20% / Avastha 20% / AV 15% / Dig Bala 15% / Amsa 15% / Combustion 7.5% / Yuddha 7.5%.
+
+---
+
+## Phase 7 — Workbook Completeness (Sessions 49–56) ✅
+
+### Session 49 — Full 12-state Sayanadi
+**File:** `src/calculations/sayanadi_full.py`
+All 12 states including 5 decanate-based. Priority chain with modifiers.
+Deena wired from `graha_yuddha.py`. Source: BPHS Ch.45–47.
+
+### Session 50 — Panchadha Maitri wired to scoring
+**File:** `src/calculations/panchadha_maitri.py`
+Tatkalik + Naisargika → 5-fold: Adhi Mitra(+1.0)→Adhi Shatru(−1.0).
+`compute_panchadha_matrix(chart)` returns full 7×7 `PanchadhaMatrix`.
+
+### Session 51 — Lagnesh Global Modifier
+**File:** `src/calculations/lagnesh_strength.py`
+9-condition lookup; modifier −0.75 to +0.75 applied to ALL 12 house scores.
+
+### Session 52 — Dig Bala Continuous Score
+**File:** `src/calculations/dig_bala.py`
+Replaces binary with 0.0–1.0. Formula: `1 − circular_dist(current, peak) / 6`.
+All 7 workbook values verified.
+
+### Session 53 — Graha Yogas
+**File:** `src/calculations/yogas_graha.py`
+4 missing + 2 confirmations: Budhaditya, Saraswati, Chandra-Mangal, Kahala, Parvata, Gaja Kesari.
+
+### Session 54 — Narayana Dasha Argala (ND-6)
+**File:** `src/calculations/narayana_argala.py`
+PVRNR Ch.5. Argala positions H2/H4/H11/H5(×0.5). Virodha cancellations.
+Net modifier −0.5 to +0.5.
+
+### Session 55 — Configuration Toggles
+**File:** `src/calculations/config_toggles.py`
+Ayanamshas: Lahiri/Raman/Krishnamurti/Fagan-Bradley. Node: mean/true.
+Retrograde policy: apply ±0.10 / ignore / classical full-strength.
+`CalcConfig` with `to_dict()`/`from_dict()`.
+
+### Session 56 — Varga Agreement Confidence Flag
+**File:** `src/calculations/varga_agreement.py`
+★★/★/○ confidence per house from D1/D9/D10 agreement.
+India 1947 H2 Wealth: D1=−5.25, D9=−2.0, D10=−2.5 → ★★ confirmed.
+
+---
+
+## Phases 1–6 (Sessions 1–48) ✅
+
+| Phase | Sessions | Key Work |
+|-------|----------|----------|
+| 1 | 1–10 | `ephemeris.py`, 7 core modules, scoring, FastAPI, SQLite |
+| 2 | 11–20 | Streamlit UI, Docker, JWT, PostgreSQL migration, K8s Helm |
+| 3 | 21–27 | GitHub Actions CI/CD, Streamlit Cloud deploy, 200+ yoga library |
+| 4 | 28–32 | `functional_roles.py`, `avastha.py`, `pressure_engine.py`, `argala.py`, `graha_yuddha.py` |
+| 5 | 33–40 | 5-axis LPI, Scoring v2/v3, `multi_axis_scoring.py`, rule interactions |
+| 6 | 41–48 | Ishta/Kashta Bala, longevity calc, Yogini Dasha, KP school, Empirica router |
+
+---
+
+## Consumer Product Vision
+
+**Product:** Personal Timing & Guidance Companion
+**Aesthetic:** Bloomberg Terminal — professional, data-dense, calm, no mysticism
+**Core constraint:** Raw scores permanently gated behind L3 opt-in
+**Signal system:** 5-bar (mobile-signal style)
+**Language:** Possibility framing, not deterministic claims
+
+**Consumer readiness (Session 100):**
+
+| Layer | Status |
+|-------|--------|
+| Jyotish engine (natal) | ✅ Complete (63 modules, 963 tests) |
+| All dasha systems | ✅ Complete |
+| Muhurta / Prashna | ✅ Complete (Sessions 91–93) |
+| Upaya / Mundane | ✅ Complete (Sessions 97–98) |
+| Language & safety pipeline | ✅ Complete (Sessions 71–75) |
+| Privacy & legal (GDPR/DPDP) | ✅ Complete (Sessions 76–78) |
+| Consumer frontend (Next.js) | ✅ Built — integration testing pending |
+| Feedback governance | ✅ Complete (Sessions 84–86) |
+| Mobile API | ✅ Router built — React Native shell pending |
+| Phase 0 classical correctness | 🔄 Sessions 101–108 on remote |
+
+**Remaining to production:**
+1. End-to-end integration testing: Next.js ↔ FastAPI ↔ guidance pipeline
+2. React Native mobile shell (router complete at S90)
+3. Practitioner opt-in directory (S89 infrastructure ready)
+4. GDPR privacy policy and ToS text (legal team)
+5. First 50 empirica events for accuracy baseline (S48 router ready)
+
+---
+
+## Genuine Theoretical Limits (Correctly Excluded)
+
+| Item | Reason |
+|------|--------|
+| Kalachakra Dasha (all textual variants) | Contradictory across commentators; BPHS version implemented |
+| Desha-Kala-Patra (full) | Requires practitioner situational judgment |
+| Gestalt synthesis | Named BPHS rules encoded; nonlinear expert weighting is not |
+| Prashna Marga full corpus | Separate discipline with different inputs |
+| Medical / financial astrology | Separate disciplines with liability implications |
+| Causal event labelling | Planetary signatures computable; sociological labelling is not |
+
+---
+
+## Source Authority Hierarchy
+
+1. **BPHS** — Brihat Parasara Hora Sastra (PVRNR translation, Sagar Publications)
+2. **Phaladeepika** — Mantreswara (G.S. Kapoor, Ranjan Publications)
+3. **Saravali** — Kalyanarma (R. Santhanam, Ranjan Publications)
+4. **Brihat Jataka** — Varahamihira (B.S. Rao, Ranjan Publications)
+5. **Jaimini Sutras** — with Sanjay Rath commentary (Sagittarius Publications)
+6. Modern: BV Raman · K.N. Rao · Sanjay Rath · Hart de Fouw & Robert Svoboda · Gayatri Devi Vasudev
+
+The Excel workbook is not a source. It was a prototype input for Sessions 1–56 only.
