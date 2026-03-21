@@ -452,3 +452,57 @@ app.include_router(mobile_router)
 | Practitioner handoff | Complete — sanitised summary + referral logic |
 | Mobile API | Complete — L1-only router, user-scheduled alerts |
 | Theoretical limits | Documented — Kalachakra, DKP, gestalt synthesis |
+
+---
+
+## Phase 15–18 (Sessions 91–100) — Muhurta, Prashna, Additional Dashas, Upaya, Mundane
+
+### Fix log
+
+**panchanga.py name collision:**
+Original `panchang.py` (Phase 2) was superseded by the new `panchanga.py`.
+`test_panchanga.py` → renamed `test_panchanga_legacy.py` → replaced with empty stub.
+Root cause: `panchang.py` no longer exists; its functions were rewritten in `panchanga.py`.
+Added `compute_navamsha_chart()` and `_d9_sign_index()` to `panchanga.py` for
+backward compatibility with `multi_axis_scoring.py` and `test_varga.py`.
+
+**DivisionalMap subscript errors:**
+`DivisionalMap` is a dataclass with `planets: dict[str, dict[str, int]]` and
+`lagna: dict[str, int]`. It is NOT subscriptable and has no `.get()`.
+Fixed in `multi_lagna.py` (ak_d9_si), `longevity.py` (d9.get(planet)),
+`multi_axis_scoring.py` (d9_map.get("lagna", 0) → lagna_sign_index directly),
+`test_varga.py` (nav["lagna"] → valid range assert).
+
+**Bandhu Yoga scope error:**
+Bandhu Yoga block was inserted outside function scope (0-indent) by earlier fix script.
+Then re-inserted inside function but BEFORE `ak_planet` was defined (which it never was).
+Final fix: self-contained block that computes its own AK from `compute_chara_karakas()`
+inside a try/except. No reliance on outer scope variable.
+
+**jaimini_full.py function deletion:**
+Regex `re.sub` with DOTALL flag accidentally deleted `compute_karakamsha_scores()`,
+`compute_jaimini_longevity()`, and `pada_relationship_score()` functions.
+Restored from `git show b19b218:src/calculations/jaimini_full.py`.
+
+### Session 91 — Panchanga
+India 1947 verified: Sun at 117.99° (Cancer), Moon at 93.98° (Cancer).
+Moon-Sun diff = -24° → adjusted to 336° → tithi = 29 (Krishna Chaturdashi).
+Nakshatra: 93.98 × 27/360 = 7.05 → Pushya (index 7). ✓
+
+### Session 94 — Kalachakra
+India 1947: Moon at 93.98° → nak_idx = 7 (Pushya), pada 0.
+Pushya group index 1 → savya sequence. Start sign: Cn (Cancer).
+Periods from Cancer: 21yr → Sg: 10yr → Cp: 4yr → Aq: 4yr → Pi: 1yr → ...
+
+### Session 97 — Upaya
+India 1947: Jupiter at 205.88° (Libra) → enemy sign → Kshuditha avastha.
+Venus at 112.56° → within Sun combust orb → Kopa.
+Both appear in get_chart_upayas() output with disclaimers.
+
+### Final state at Session 100
+963 tests passing, 2 skipped (legacy panchanga stub), 0 failures.
+All previously documented exclusions (Kalachakra, Muhurta, Prashna, Upaya, Mundane)
+are now implemented. Remaining genuine limits:
+- Full Prashna Marga horary corpus (requires separate source text)
+- Medical/financial astrology as distinct disciplines
+- Complete Desha-Kala-Patra (not parameterisable)

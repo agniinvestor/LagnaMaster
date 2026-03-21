@@ -2,44 +2,20 @@
 
 Vedic Jyotish computation engine + consumer guidance platform.
 
-**~980 tests | Sessions 1–90 complete | 90 modules | Engine v3.0.0**
+**963 tests | Sessions 1–100 complete | 100 modules | Engine v3.0.0**
 
 ---
 
-## Architecture
+## What This Is
 
-```
-Consumer (browser / mobile)
-        │
-        ▼
-┌─────────────────────────────────┐
-│  Guidance Pipeline (Phase 10)   │
-│  guidance_api.py                │
-│  ├─ score_to_language.py        │  scores → 5-bar signal
-│  ├─ explainability_tiers.py     │  L1 / L2 / L3 gating
-│  ├─ fatalism_filter.py          │  deterministic language → possibility
-│  └─ disclaimer_engine.py        │  scope limits + dependency nudges
-└─────────────────────────────────┘
-        │
-        ▼
-┌─────────────────────────────────┐
-│  Jyotish Engine (Phases 1–9)    │
-│  63 calculation modules         │
-│  scoring_v3.py  ENGINE v3.0.0   │
-└─────────────────────────────────┘
-        │
-        ▼
-┌─────────────────────────────────┐
-│  Privacy Layer (Phase 11)       │
-│  consent_engine.py   GDPR/DPDP  │
-│  family_consent.py   per-person │
-│  data_minimisation.py GDPR Art5 │
-└─────────────────────────────────┘
-```
-
-Raw engine scores **never** reach consumers at L1 or L2. All traffic passes
-through the guidance pipeline. Engine modules are never called directly from
-consumer-facing endpoints.
+A comprehensive Jyotish platform covering:
+- **Natal analysis** — 63 calculation modules, 23 BPHS rules × 12 houses × 5 lagna axes
+- **Muhurta** — electional astrology with Panchanga, Tarabala, Chandrabala, Hora, Choghadiya
+- **Prashna** — horary Jyotish from query-moment chart
+- **All major dashas** — Vimshottari, Narayana, Yogini, Chara, Kalachakra, Ashtottari, Shoola, Sudasa, Tara
+- **Upaya** — classical remedial measures (gemstones, deities, mantras, charity)
+- **Mundane** — nation charts, solar/lunar ingress, swearing-in charts
+- **Consumer layer** — Bloomberg-style guidance with safety pipeline, GDPR compliance, feedback governance
 
 ---
 
@@ -47,8 +23,7 @@ consumer-facing endpoints.
 
 ```bash
 git clone https://github.com/agniinvestor/LagnaMaster.git
-cd LagnaMaster
-docker compose up --build
+cd LagnaMaster && docker compose up --build
 ```
 
 | Service | URL |
@@ -57,7 +32,6 @@ docker compose up --build
 | FastAPI + Swagger | http://localhost:8000/docs |
 | Next.js (consumer) | http://localhost:3000 |
 
-**Local:**
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
@@ -67,152 +41,117 @@ PYTHONPATH=. pytest tests/ -q -p no:warnings
 
 ---
 
+## Muhurta (Electional Astrology)
+
+```python
+from src.calculations.panchanga import compute_panchanga, compute_hora, compute_choghadiya
+from src.calculations.muhurta import score_muhurta
+from datetime import datetime
+
+# Compute Panchanga (5 limbs of the almanac)
+p = compute_panchanga(sun_lon, moon_lon, datetime.now())
+print(p.tithi_name, p.vara_name, p.nakshatra_name)
+print(p.amrita_siddhi, p.sarvaartha_siddhi)
+
+# Score a muhurta for a specific task
+score = score_muhurta("marriage", p,
+                       birth_nakshatra=7,     # native's Moon nakshatra
+                       birth_moon_sign=3,      # Cancer
+                       muhurta_lagna_sign=1)   # proposed Taurus lagna
+print(score.quality)       # "Excellent"/"Good"/"Acceptable"/"Avoid"
+print(score.total_score)   # 0–7
+print(score.warnings)      # list of inauspicious factors
+
+# Hora and Choghadiya
+hora_lord, hora_num = compute_hora(datetime.now())
+chog = compute_choghadiya(datetime.now())
+print(chog["quality"])     # "Excellent"/"Good"/"Neutral"/"Unfavorable"
+```
+
+---
+
+## Prashna (Horary)
+
+```python
+from src.calculations.prashna import analyze_prashna
+from datetime import datetime
+
+# Chart is computed for the query moment
+prashna_chart = compute_chart(...)   # at time of question
+result = analyze_prashna(prashna_chart, query_type="career",
+                          query_dt=datetime.now())
+print(result.verdict)      # "Yes — strongly indicated" / "Unlikely" etc.
+print(result.confidence)   # "High"/"Moderate"/"Low"
+print(result.reasoning)    # list of supporting factors
+```
+
+---
+
+## All Supported Dashas
+
+```python
+from src.calculations.vimshottari_dasa   import compute_vimshottari_dasa   # 120yr, 9 planets
+from src.calculations.narayana_dasha     import compute_narayana_dasha      # Rasi dasha
+from src.calculations.yogini_dasha       import compute_yogini_dasha        # 36yr cycle
+from src.calculations.chara_dasha        import compute_chara_dasha         # Jaimini
+from src.calculations.kalachakra_dasha   import compute_kalachakra_dasha    # 100yr, Moon D9
+from src.calculations.ashtottari_dasha   import compute_ashtottari_dasha    # 108yr, 8 planets
+from src.calculations.shoola_dasha       import compute_shoola_dasha        # Ayur/longevity
+from src.calculations.shoola_dasha       import compute_sudasa              # Material success
+from src.calculations.tara_dasha         import compute_tara_dasha          # 9-category Nakshatra
+```
+
+---
+
+## Upaya (Remedial Measures)
+
+```python
+from src.calculations.upaya import get_upaya, get_chart_upayas
+
+# Auto-detect afflictions and get classical prescriptions
+upayas = get_chart_upayas(chart)
+for u in upayas:
+    print(f"{u.planet} ({u.affliction_type}):")
+    print(f"  Gemstone: {u.gemstone} in {u.gemstone_metal} on {u.gemstone_day}")
+    print(f"  Deity: {u.primary_deity}")
+    print(f"  Mantra: recite {u.mantra_count} times")
+    print(f"  Charity: {u.charitable_act}")
+    print(f"  {u.disclaimer}")   # always present
+
+# Single planet
+u = get_upaya("Saturn", "debilitated")
+```
+
+---
+
+## Mundane Astrology
+
+```python
+from src.calculations.mundane import analyze_mundane_chart, compress_vimshottari
+from datetime import date
+
+# Nation/ingress/swearing-in chart
+result = analyze_mundane_chart(chart, "nation", "India 1947",
+                                date(1947, 8, 15), "New Delhi")
+print(result.key_themes)    # top activated mundane houses
+print(result.challenges)    # stressed mundane houses
+
+# Compress Vimshottari to 1-year period for annual prediction
+compressed = compress_vimshottari(chart, birth_date, period_years=1.0)
+```
+
+---
+
 ## Consumer Guidance API
 
 ```python
 from src.guidance.guidance_api import get_guidance
-from datetime import date
 
-# L1 — default (no raw scores, single sentence)
 r = get_guidance(chart, domain="career", depth="L1", dashas=dashas)
 print(r.signal_display)   # ●●●○○
 print(r.timing_label)     # "Mixed — lean in"
-print(r.summary)          # "Some supporting factors are present; preparation will help."
-print(r.disclaimer)       # "This is reflective guidance, not financial advice."
-
-# L2 — factor bullets (on "Why?" click)
-r2 = get_guidance(chart, domain="career", depth="L2", dashas=dashas)
-print(r2.factors)         # ["Saturn period activates career themes...",
-                           #  "Your chart holds moderate potential here..."]
-
-# L3 — full technical trace (explicit opt-in only, resets each session)
-r3 = get_guidance(chart, domain="career", depth="L3",
-                  dashas=dashas, l3_opted_in=True)
-print(r3.technical_detail)  # raw scores, rule firings, Shadbala, AV
-```
-
----
-
-## Score → Signal Mapping
-
-| Engine score | Signal | Timing label |
-|-------------|--------|-------------|
-| ≥ +3.0 | ●●●●● | Clear passage |
-| +1.5 to +3 | ●●●●○ | Favourable |
-| +0.5 to +1.5 | ●●●○○ | Mixed — lean in |
-| −0.5 to +0.5 | ●●○○○ | Neutral |
-| −1.5 to −0.5 | ●○○○○ | Navigate carefully |
-| ≤ −1.5 | ○○○○○ | Significant resistance |
-
----
-
-## Privacy
-
-```python
-from src.privacy.consent_engine import grant_consent, right_to_erasure
-from src.privacy.family_consent import add_family_member, can_run_compatibility
-
-# Consent (GDPR Art.7)
-grant_consent("user1", "core", jurisdiction="EU")
-
-# Right to erasure (GDPR Art.17) — cascades all tables
-result = right_to_erasure("user1")   # → {"erased": True, "tombstone": True}
-
-# Family consent — per-person principal
-add_family_member("owner", "partner", "spouse", has_consented=True)
-ok, reason = can_run_compatibility("owner", "partner")
-
-# Age gate
-from src.privacy.consent_engine import check_age_eligibility
-ok, msg = check_age_eligibility(2010)  # → (False, "requires 18+")
-```
-
----
-
-## Fatalism Filter
-
-```python
-from src.guidance.fatalism_filter import filter_output, is_safe
-
-# Rewrites deterministic language, preserves signal direction
-filter_output("financial ruin is possible")
-# → "a period requiring financial caution is possible"
-
-filter_output("career will be destroyed by afflictions")
-# → "career may be significantly affected by challenges"
-
-is_safe("Conditions are supportive for career decisions.")  # → True
-is_safe("This period is doomed to failure.")               # → False
-```
-
----
-
-## Domain Weights
-
-```python
-from src.calculations.domain_weighting import compute_domain_lpi, DOMAINS
-
-# Career: D10 × 35% (dominant)
-r = compute_domain_lpi(chart, dashas, date.today(), "career")
-print(r.domain_score, r.top_houses)
-
-# All domains
-print(DOMAINS)
-# ['career', 'marriage', 'mind_psychology', 'wealth',
-#  'health_longevity', 'spirituality', 'children']
-```
-
-| Domain | Dominant axis | Primary house |
-|--------|--------------|--------------|
-| career | D10 × 35% | H10 |
-| marriage | D9 × 35% | H7 |
-| mind_psychology | Chandra × 40% | H4 |
-| wealth | D1 × 35% | H2 |
-| health_longevity | D1 × 45% | H8 |
-| spirituality | D9 × 45% | H9 |
-
----
-
-## Feedback & Safety
-
-```python
-from src.feedback.feedback_loop import record_feedback
-from src.feedback.harm_escalation import check_usage_pattern
-from src.feedback.dependency_prevention import log_session, check_dependency_status
-
-# Record feedback — 'concerning' → human review queue (never auto-retrain)
-r = record_feedback("user1", "chart1", "career", "concerning", "2026-03-21")
-print(r.queued_for_review)  # True
-
-# Usage safety check
-signal = check_usage_pattern({"health_longevity": 4}, 3, 8, [])
-if signal.show_to_user:
-    print(signal.prompt)    # gentle prompt — no crisis resources
-
-# Dependency monitoring — nudge at 3/day or 15/week
-log_session("user1", "career")
-status = check_dependency_status("user1")
-if status.show_nudge:
-    print(status.nudge_text)
-```
-
----
-
-## Reflection Mode (Socratic)
-
-```python
-from src.guidance.reflection_prompts import get_reflection_prompt
-from src.guidance.educational_layer import get_educational_content
-
-# Converts guidance to a question
-q = get_reflection_prompt("career", "Navigate carefully")
-# → "What aspect of your career feels most like it needs patience right now?"
-
-# Educational context — no raw scores
-for item in get_educational_content("career"):
-    print(item.topic, "—", item.classical_source)
-# → "Dasha activation — BPHS Ch.46"
-# → "Upachaya houses — BPHS Ch.7"
+print(r.summary)          # Human-safe sentence, no raw scores
+print(r.disclaimer)       # Scope disclaimer
 ```
 
 ---
@@ -221,35 +160,34 @@ for item in get_educational_content("career"):
 
 | Phase | Sessions | Status | Key deliverables |
 |-------|----------|--------|-----------------|
-| 1 — Pilot | 1–10 | ✅ | Ephemeris, D1 scoring, FastAPI, Streamlit, Docker |
-| 2 — Features | 11–19 | ✅ | Kundali Milan, PDF, Jaimini, KP, Tajika, API v2 |
-| 3 — Production | 20–27 | ✅ | PostgreSQL, Redis, Celery, JWT, CI/CD, Kubernetes |
-| 4 — Pressure Engine | 28–32 | ✅ | LPI v1, Argala, Graha Yuddha, Scoring v2 |
-| 5 — Workbook Parity | 33–40 | ✅ | 5-axis scoring, Rule interactions, LPI v2, Scoring v3 |
-| 6 — Classical Depth | 41–48 | ✅ | Ishta/Kashta, Longevity, Yogini Dasha, 200+ Yogas |
-| 7 — Workbook Complete | 49–56 | ✅ | 12-state Sayanadi, Panchadha Maitri, Dig Bala |
-| 8 — PVRNR Textbook | 57–63 | ✅ | Orb strength, Yoga fructification, Stronger-of-two |
-| 9 — Synthesis Layer | 64–70 | ✅ | Dominance engine, Promise/Manifestation, Confidence |
-| 10 — Language & Safety | 71–75 | ✅ | score_to_language, fatalism_filter, explainability |
-| 11 — Privacy & Legal | 76–78 | ✅ | GDPR consent+erasure, family consent, data minimisation |
-| 12 — Consumer Frontend | 79–83 | ✅ | Bloomberg UI, domain cards, timing calendar, onboarding |
-| 13 — Feedback | 84–86 | ✅ | Human-supervised queue, harm escalation, dependency |
-| 14 — Maturity | 87–90 | ✅ | Educational layer, reflection prompts, practitioner handoff |
+| 1–3 | 1–27 | ✅ | Engine, scoring, FastAPI, Streamlit, Docker, JWT, K8s |
+| 4–5 | 28–40 | ✅ | LPI, 5-axis scoring, rule interactions, Scoring v3 |
+| 6 | 41–48 | ✅ | Ishta/Kashta, Longevity, Yogini, KP, 200+ Yogas, Empirica |
+| 7 | 49–56 | ✅ | Sayanadi, Panchadha Maitri, Dig Bala, Config toggles |
+| 8 | 57–63 | ✅ | Orb strength, Yoga fructification, Stronger-of-two, AV transit |
+| 9 | 64–70 | ✅ | Dominance engine, Promise/Manifestation, Confidence model |
+| 10–11 | 71–78 | ✅ | Language safety pipeline, GDPR/DPDP consent + erasure |
+| 12–14 | 79–90 | ✅ | Bloomberg UI, feedback governance, educational layer |
+| 15–18 | 91–100 | ✅ | **Muhurta, Prashna, Kalachakra, Ashtottari, Shoola, Tara, Upaya, Mundane** |
 
 ---
 
-## Non-Negotiable Design Constraints
+## Coverage Class
 
-1. Raw LPI and house scores never reach consumers at L1 or L2
-2. L3 opt-in resets each session — no persistent technical mode
-3. Signal system is 5-bar only — no percentages, no star ratings
-4. All guidance uses possibility language, never deterministic claims
-5. Feedback loop is human-supervised — no automated parameter changes
-6. Right-to-erasure cascade removes all data and writes tombstone
-7. Family charts require per-person explicit consent
-8. No streak mechanics, no engagement loops, no unsolicited notifications
-9. Dependency nudge at ≥ 3 sessions/day or ≥ 15/week
-10. Practitioner referral available when confidence flags "Uncertain"
+**Comprehensive Jyotish Platform** — covers:
+- All major branches of natal analysis
+- Muhurta (electional) — complete Panchanga + task scoring
+- Prashna (horary) — query-moment chart analysis
+- All standard dasha systems including Kalachakra and Ashtottari
+- Upaya (remedial measures) as classical prescriptions
+- Mundane astrology — nation/ingress/swearing-in charts
+- Consumer safety pipeline with GDPR compliance
+
+**Acknowledged limits** (not parameterisable):
+- Full Prashna Marga horary corpus (separate discipline)
+- Kala, gender, social role modifiers (Desha-Kala-Patra)
+- Gestalt expert synthesis beyond named rules
+- Ritual/spiritual efficacy of remedies
 
 ---
 
@@ -257,13 +195,11 @@ for item in get_educational_content("career"):
 
 | Layer | Technology |
 |-------|-----------|
-| Ephemeris | pyswisseph (Lahiri / Raman / KP / Fagan-Bradley) |
+| Ephemeris | pyswisseph (Lahiri/Raman/KP/Fagan-Bradley) |
 | Backend | FastAPI + Celery + Redis |
-| Database | SQLite → PostgreSQL + consent/erasure/feedback tables |
-| Analyst UI | Streamlit (10-tab, internal) |
+| Database | SQLite → PostgreSQL + consent/feedback tables |
 | Consumer UI | Next.js 14 + TypeScript + Tailwind |
-| Mobile | FastAPI /mobile router (React Native shell) |
+| Mobile | FastAPI /mobile router |
 | Deploy | Docker Compose + Kubernetes Helm |
-| Auth | JWT (multi-user) |
-| CI/CD | GitHub Actions |
+| Auth | JWT | CI/CD | GitHub Actions |
 | Privacy | GDPR Art.7+17 · DPDP · CCPA/CPRA |

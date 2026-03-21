@@ -465,3 +465,98 @@ Rewrite rules:
 52. Practitioner referral available when confidence = "Uncertain" or critical exceptions > 0
 53. No streak mechanics, no badges, no unsolicited push notifications
 54. Dependency nudge text contains no shaming or alarming language
+
+### Phase 15–18 — Muhurta, Prashna, Dashas, Upaya, Mundane (Sessions 91–100)
+| Module | Key function | Source |
+|--------|-------------|--------|
+| panchanga.py | compute_panchanga(sun_lon, moon_lon, dt) + compute_hora() + compute_choghadiya() | BPHS almanac |
+| muhurta.py | score_muhurta(task, panchanga, birth_nak, birth_moon_si, lagna_si) → MuhurtaScore | PVRNR Table 79 |
+| prashna.py | analyze_prashna(chart, query_type, query_dt) → PrashnaAnalysis | BPHS Prashna |
+| kalachakra_dasha.py | compute_kalachakra_dasha(chart, birth_date) + current_kalachakra_period() | BPHS Ch.36 |
+| shoola_dasha.py | compute_shoola_dasha(chart, date) + compute_sudasa(chart, date) | BPHS ayur |
+| tara_dasha.py | compute_tara_dasha(chart, birth_date) → list[TaraDashaPeriod] | BPHS nakshatra |
+| upaya.py | get_upaya(planet, affliction) + get_chart_upayas(chart) → list[UpayadRecommendation] | PVRNR Ch.34 |
+| mundane.py | analyze_mundane_chart(chart, type, desc, date, location) + compress_vimshottari() | PVRNR Ch.35 |
+| contextual.py | compute_contextual_flags(chart, lat, birth_year) → ContextualFlags | PVRNR DKP |
+| ashtottari_dasha.py | compute_ashtottari_dasha(chart, date) + qualifies_for_ashtottari(chart) | BPHS Ch.47 |
+
+## Panchanga Reference
+
+| Limb | Formula | Range |
+|------|---------|-------|
+| Tithi | (moon_lon − sun_lon) / 12° | 1–30 |
+| Vara | weekday (Jyotish: Sun=0…Sat=6) | 0–6 |
+| Nakshatra | moon_lon × 27/360 | 0–26 |
+| Yoga | (sun_lon + moon_lon) × 27/360 | 0–26 |
+| Karana | half-tithi (mod 11) | 0–10 |
+
+Special yogas: Amrita Siddhi (14 Vara×Nakshatra pairs) and Sarvaartha Siddhi (40+ pairs).
+Hora: planetary hour from sunrise, 24 per day. Choghadiya: 8 day + 8 night periods.
+
+## Muhurta Task Rules (PVRNR Table 79)
+
+| Task | Key house | Good Varas | Rule |
+|------|-----------|-----------|------|
+| marriage | H7 | Mon/Wed/Thu/Fri | H8 empty; benefics in H7 acceptable |
+| business_launch | H10 | Mon/Wed/Thu/Fri | H8 empty; H10 strong; lagnesh strong |
+| house_construction | H4 | Mon/Wed/Thu/Fri | H8 empty; H4 strong |
+| surgery | H8 | Sun/Tue | Avoid nakshatra of affected body part |
+| travel | H3 | Mon/Wed/Thu/Fri | H3 strong; avoid Gandanta |
+
+## Dasha Inventory (all systems)
+
+| Dasha | File | Cycle | Basis |
+|-------|------|-------|-------|
+| Vimshottari | vimshottari_dasa.py | 120yr | Moon nakshatra |
+| Narayana | narayana_dasha.py | 108yr | Lagna sign |
+| Yogini | yogini_dasha.py | 36yr | Moon nakshatra |
+| Chara | chara_dasha.py | variable | Jaimini sign |
+| Kalachakra | kalachakra_dasha.py | 100yr | Moon navamsha pada |
+| Ashtottari | ashtottari_dasha.py | 108yr | Moon nakshatra (8 planets) |
+| Shoola | shoola_dasha.py | variable | Lagna trine |
+| Sudasa | shoola_dasha.py | variable | Lagna/8th sign |
+| Tara | tara_dasha.py | 120yr | Moon nakshatra (9 categories) |
+
+## Upaya Gemstone Table (PVRNR Table 77)
+
+| Planet | Gemstone | Metal | Finger | Day |
+|--------|---------|-------|--------|-----|
+| Sun | Ruby | Gold | Ring | Sunday |
+| Moon | White Pearl | Gold | Little | Monday |
+| Mars | Red Coral | Copper | Ring | Tuesday |
+| Mercury | Emerald | Silver | Little | Wednesday |
+| Jupiter | Yellow Sapphire | Gold | Index | Thursday |
+| Venus | Diamond | Silver | Middle | Friday |
+| Saturn | Blue Sapphire | Iron | Middle | Saturday |
+| Rahu | Hessonite | Silver | Middle | Saturday |
+| Ketu | Cat's Eye | Silver | Ring | Tuesday |
+
+## Mundane House Significations (PVRNR p461)
+
+| House | Mundane signification |
+|-------|----------------------|
+| H1 | General state of affairs, public health, cabinet |
+| H2 | State revenue, wealth, imports, commerce |
+| H3 | Telecommunications, transportation, media |
+| H4 | Education, real estate, agriculture |
+| H5 | Children, crime, mentality of leaders |
+| H6 | State loans, debt, diseases, armed forces |
+| H7 | Women's health, war, foreign relations |
+| H8 | Death rate, state treasury, sudden events |
+| H9 | Religion, judiciary, foreign affairs |
+| H10 | Government, ruling party, leadership |
+| H11 | Parliament, gains, alliances |
+| H12 | Expenditure, foreign enemies, hospitals |
+
+## Updated System Invariants (Phase 15–18 additions)
+
+55. Muhurta score 0-7: Excellent≥5, Good≥4, Acceptable≥3, Avoid<3
+56. Tarabala good groups: {1,3,5,7} (Janma/Sampat/Kshema/Mitra)
+57. Chandrabala good positions: {1,3,6,7,10,11} from birth Moon sign
+58. Kalachakra: BPHS Ch.36 canonical version; Savya=odd-pada, Apasavya=even-pada
+59. Ashtottari: only applies when Rahu NOT in H1 or H7
+60. Tara good categories: Sampat/Kshema/Sadhana/Mitra/Ati-Mitra
+61. Upaya disclaimer present on every recommendation — non-negotiable
+62. Mundane SAV threshold: ≥30 rekhas = strong house (D-10 example PVRNR p167)
+63. panchanga.py supersedes panchang.py; test_panchanga_legacy.py is empty stub
+64. Bandhu Yoga in jaimini_full.py uses self-contained AK lookup (no global ak_planet)

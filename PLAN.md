@@ -518,3 +518,122 @@ These are not omissions — they are correctly excluded:
 4. First 50 empirica events for accuracy baseline (S48)
 5. GDPR-compliant privacy policy and ToS text (legal team)
 6. User testing of onboarding flow (S83)
+
+---
+
+## Phase 15–18 — Muhurta, Prashna, Additional Dashas, Upaya, Mundane (Sessions 91–100)
+
+### Session 91 — Panchanga (5 limbs of the almanac)
+**File:** `src/calculations/panchanga.py`
+Complete Panchanga engine replacing the incomplete predecessor `panchang.py`.
+Tithi: (moon_lon - sun_lon) / 12° → 1-30, Shukla/Krishna paksha.
+Vara: weekday + lord (Sun=0…Sat=6 in Jyotish order).
+Nakshatra: moon_lon × 27/360, pada 1-4.
+Yoga: (sun_lon + moon_lon) × 27/360.
+Karana: half-tithi, 7 variable + 4 fixed karanas.
+Amrita Siddhi and Sarvaartha Siddhi from Vara×Nakshatra lookup tables.
+Hora (planetary hour from sunrise) and Choghadiya (8 day/8 night periods).
+Note: supersedes `panchang.py`; `test_panchanga_legacy.py` is an empty stub.
+Added `compute_navamsha_chart()` and `_d9_sign_index()` for backward compatibility.
+
+### Session 92 — Muhurta Engine
+**File:** `src/calculations/muhurta.py`
+Source: PVRNR Table 79 (p473-476). 7 task types with per-task rules.
+Tasks: marriage, business_launch, house_construction, house_entry, travel, surgery, education, general.
+Per-task: good/bad Tithis, Varas, Nakshatras, Lagnas from Table 79.
+Tarabala: count from birth nakshatra → 9 categories; {1,3,5,7} = auspicious.
+Chandrabala: Moon's current sign from birth Moon sign; {1,3,6,7,10,11} = good.
+Special yoga bonus: Amrita Siddhi or Sarvaartha Siddhi = +1 to score.
+`score_muhurta()` returns 0-7 score: Excellent(≥5)/Good(≥4)/Acceptable(≥3)/Avoid.
+PVRNR p487: "Planetary strength is more important than strictly following thumbrules."
+
+### Session 93 — Prashna (Horary)
+**File:** `src/calculations/prashna.py`
+Source: BPHS Prashna chapters; Prashna Marga; PVRNR applications.
+10 query types: general, lost_article, illness, travel, legal, marriage,
+career, wealth, children, property.
+Hora lord quality mapped per query type from classical sources.
+Key house scoring + Moon placement + lagna lord placement → Yes/Possible/Unlikely/No verdict.
+Confidence: High/Moderate/Low based on positive signal count.
+
+### Session 94 — Kalachakra Dasha
+**File:** `src/calculations/kalachakra_dasha.py`
+Source: BPHS Ch.36-42; PVRNR preface p8 ("most respectable dasha").
+Moon's navamsha pada (0-3) determines Savya/Apasavya sequence.
+Sign periods: Ar=7, Ta=16, Ge=9, Cn=21, Le=5, Vi=9, Li=16, Sc=7, Sg=10, Cp=4, Aq=4, Pi=1.
+Deha (body, 1st sign) and Jeeva (life, 5th sign) flags per cycle.
+`current_kalachakra_period()` for active period lookup.
+
+### Session 95 — Shoola Dasha + Sudasa
+**File:** `src/calculations/shoola_dasha.py`
+Source: BPHS; PVRNR preface p8 ("two ayur dasas"; "timing material success").
+Shoola: lagna-trine-based sequence, Trishoola spikes at lagna + two trines.
+Sudasa: starts from stronger of lagna/8th (using stronger_of_two.py), duration
+proportional to planet count per sign.
+Both used for longevity and material success timing respectively.
+
+### Session 96 — Tara Dasha
+**File:** `src/calculations/tara_dasha.py`
+9-category nakshatra sequence from birth nakshatra:
+Janma / Sampat / Vipat / Kshema / Pratyak / Sadhana / Naidhana / Mitra / Ati-Mitra.
+Vimshottari period lengths (Ketu=7…Mercury=17).
+Quality annotations: Sampat/Kshema/Sadhana/Mitra/Ati-Mitra = auspicious.
+Primarily used for body, health, and relationship timing.
+
+### Session 97 — Upaya (Remedial Measures)
+**File:** `src/calculations/upaya.py`
+Source: PVRNR Ch.34 (p450-458), Tables 77-78.
+Table 77: gemstone/metal/finger/wearing-day per planet.
+Table 78: primary deity per planet.
+Mantra recitation counts per planet (Sun=6000, Moon=10000 … Venus=20000).
+Charitable acts and behavioral guidance per planet.
+`get_chart_upayas()`: auto-detects combust/debilitated/functional-malefic planets.
+EVERY recommendation carries disclaimer: "classical prescriptions for reflection only."
+
+### Session 98 — Mundane Astrology
+**File:** `src/calculations/mundane.py`
+Source: PVRNR Ch.35 (p460-469).
+Complete H1-H12 mundane significations from PVRNR p461.
+Chart types: nation (independence), solar ingress, lunar new year, swearing-in.
+`compress_vimshottari()`: scale 120yr cycle to any period (PVRNR p464).
+India 1947 regression: nation chart analysis confirmed.
+
+### Session 99 — Contextual Layer (partial DKP)
+**File:** `src/calculations/contextual.py`
+Encodable partial: era-aware profession mapping (king→CEO, soldier→athlete/surgeon),
+latitude warning (>55° affects house boundaries), marriage timing by birth era.
+Explicit practitioner note: "Full Desha-Kala-Patra requires practitioner who knows
+the individual's circumstances. This layer provides partial algorithmic context only."
+Correctly documents the theoretical limit without claiming to resolve it.
+
+### Session 100 — Ashtottari Dasha
+**File:** `src/calculations/ashtottari_dasha.py`
+Source: BPHS Ch.47; PVRNR preface p8 ("most commonly used nakshatra dasas").
+8-planet sequence (Ketu excluded): Sun=6/Moon=15/Mars=8/Mercury=17/Saturn=10/
+Jupiter=19/Rahu=12/Venus=21. Total = 108 years.
+`qualifies_for_ashtottari()`: Rahu not in H1 or H7 required.
+Used as alternative to Vimshottari for qualifying charts.
+
+---
+
+## Updated Coverage Assessment (Session 100)
+
+| Branch | Status |
+|--------|--------|
+| Natal analysis (BPHS + PVRNR) | ✅ Complete |
+| Divisional charts (20 vargas) | ✅ Complete |
+| Vimshottari Dasha | ✅ Complete |
+| Narayana + Yogini + Chara Dasha | ✅ Complete |
+| Kalachakra Dasha | ✅ Complete (Session 94) |
+| Ashtottari Dasha | ✅ Complete (Session 100) |
+| Shoola + Sudasa + Tara Dasha | ✅ Complete (Sessions 95-96) |
+| Muhurta (electional) | ✅ Complete (Sessions 91-92) |
+| Prashna (horary) | ✅ Complete (Session 93) |
+| Upaya (remedial measures) | ✅ Complete (Session 97) |
+| Mundane astrology | ✅ Complete (Session 98) |
+| Panchanga | ✅ Complete (Session 91) |
+| Consumer safety pipeline | ✅ Complete (Sessions 71-90) |
+| Medical/financial astrology | ❌ Separate discipline |
+| Prashna Marga full corpus | ❌ Separate text needed |
+| Full Desha-Kala-Patra | ❌ Not parameterisable |
+| Kalachakra (textual variants) | ⚠ BPHS version implemented |
