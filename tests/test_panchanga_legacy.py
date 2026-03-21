@@ -10,7 +10,7 @@ from datetime import date
 
 from tests.fixtures import INDIA_1947
 from src.ephemeris import compute_chart, SIGNS
-from src.calculations.panchanga import (
+from src.calculations.panchang import (
     compute_panchanga,
     compute_navamsha_chart,
     _d9_sign_index,
