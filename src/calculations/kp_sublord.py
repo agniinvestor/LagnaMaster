@@ -57,8 +57,6 @@ def _build_sublord_table() -> list[SubLordEntry]:
     Source: K.S. Krishnamurti Reader Series Vol.1
     """
     table = []
-    current_lon = 0.0
-
     for nak_idx in range(27):
         star_lord = _NAK_STAR_LORDS[nak_idx]
         nak_start = nak_idx * _NAK_SPAN
