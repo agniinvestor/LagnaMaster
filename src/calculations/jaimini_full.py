@@ -133,33 +133,25 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
     ))
 
 
-    # ── Bandhu Yoga (4th lord in kendra from AK) ─────────────────────────────
-    lord4 = hmap.house_lord[3]
-    ak_h = ph.get(ak_planet, 0)
-    lord4_h = ph.get(lord4, 0)
-    if ak_h > 0 and lord4_h > 0:
-        diff_bandhu = abs(lord4_h - ak_h) % 12
-        bandhu = diff_bandhu in {0, 3, 6, 9}
-    else:
-        bandhu = False
-    yogas.append(JaiminiYoga(
-        name="Bandhu Yoga",
-        present=bandhu,
-        score=1.5 if bandhu else 0.0,
-        description=f"4th lord {lord4} in kendra from AK {ak_planet} — comfort and homeland",
-        source="Jaimini Sutra 4.2",
-    ))
 
 
+
+    # ── Bandhu Yoga: 4th lord in kendra from AK ─────────────────────────────
     try:
+        from src.calculations.chara_karak import compute_chara_karakas
+        _karakas = compute_chara_karakas(chart)
+        if hasattr(_karakas, 'items'):
+            _ak = next((pl for pl, r in _karakas.items() if r == 'AK'), 'Sun')
+        else:
+            _ak = next((pl for pl, r in _karakas if r == 'AK'), 'Sun') if _karakas else 'Sun'
         _lord4 = hmap.house_lord[3]
-        _ak_h  = ph.get(ak_planet, 0)
+        _ak_h  = ph.get(_ak, 0)
         _l4_h  = ph.get(_lord4, 0)
         _bandhu = _ak_h > 0 and _l4_h > 0 and abs(_l4_h - _ak_h) % 12 in {0,3,6,9}
         yogas.append(JaiminiYoga(
             name="Bandhu Yoga", present=_bandhu,
             score=1.5 if _bandhu else 0.0,
-            description=f"4th lord {_lord4} in kendra from AK {ak_planet}",
+            description=f"4th lord {_lord4} in kendra from AK {_ak} — comfort",
             source="Jaimini Sutra 4.2",
         ))
     except Exception:
