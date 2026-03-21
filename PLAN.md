@@ -1,38 +1,428 @@
 # LagnaMaster — Programme Plan
 
-## Status: Sessions 1–100 COMPLETE ✅ | Sessions 101–108 in progress on remote 🔄
+## Status: Sessions 1–108 COMPLETE ✅ | Phase 0 CRIT fixes begin Session 109 🔄
 
 ENGINE_VERSION = "3.0.0"
 
 > **Source of truth:** Classical Sanskrit texts — BPHS (PVRNR), Phaladeepika (Mantreswara),
 > Saravali (Kalyanarma), Brihat Jataka (Varahamihira), Jaimini Sutras.
-> The Excel workbook (`Lagna_Master5_clean.xlsx`) was the prototype source for Sessions 1–56.
-> It has been superseded by classical text references from Session 57 onward and is no longer
-> authoritative. See `AUDIT.md` for the full classical audit.
+> The Excel workbook was the prototype source for Sessions 1–56 only and is no longer
+> authoritative. See `AUDIT.md` for the full classical audit (March 2026).
 
 ---
 
-## Phase 0 — Classical Correctness (Sessions 101–108) 🔄
+## Audit Reconciliation — Issues Closed by Sessions 41–100
 
-**Committed on remote 2026-03-21. Run `git pull` to get these changes.**
+The classical audit (March 2026) was written against the Session 1–10 state. Many of the
+issues it raised were resolved in Sessions 41–100. These are **closed** — do not re-implement.
 
-Fixes identified by the March 2026 classical audit against primary Sanskrit authorities.
-Every fix has a cited śhloka. No new features — correctness only.
+| Audit Ref | Issue Raised | Resolution | Session |
+|-----------|-------------|------------|---------|
+| VI (Vargas) | D1+D9 only of 16 mandatory vargas | `vargas.py` — 20 divisional charts D1–D60 | S41–48 |
+| XIII-B | Rashi Drishti absent | `jaimini_full.py` — full Jaimini school | S41–48 |
+| XIII-C | Arudha Lagnas A1–A12 absent | `argala.py` + `jaimini_full.py` | S31, S41–48 |
+| XIII-D | Argala system absent | `argala.py` | S31 |
+| VIII-C | Viparita Raja Yoga absent | `extended_yogas.py` 200+ yogas | S41–48 |
+| VIII-E | 36 Nabhasa Yogas absent | `nabhasa_yogas.py` + `extended_yogas.py` | S41–48 |
+| IX-D | 6 major dasha systems missing | Yogini, Chara, Kalachakra, Ashtottari, Shoola, Tara | S94–100 |
+| XV | Kundali Milan 8-Koota absent | `kundali_milan.py` | S41–48 |
+| XVII | Upaya (remedial) absent | `upaya.py` — PVRNR Tables 77–78 | S97 |
+| XII | Muhurta / Prashna / Hora absent | `muhurta.py`, `prashna.py`, `panchanga.py` | S91–93 |
+| XIX-B | No PDF export | `report.py` — reportlab | S41–48 |
+| VII-B | Saptavargaja Bala = 0 (no vargas) | vargas.py unblocks this — implement in Phase 0 S111 | S41–48 (partial) |
+| I-A | Additive weights non-classical | Design fact documented in AUDIT.md and UI; not a code fix | — |
 
-| Issue | Fix | Source |
-|-------|-----|--------|
-| MT degree ranges approximate | Hard-code exact BPHS ranges; Mercury 16°–20° Virgo (4° window only) | BPHS Ch.3 v.2–9 |
-| Exaltation binary flag | Add Paramotcha degrees; Uchcha Bala = `60×(1−\|deg−paramotcha\|/30)` | Phaladeepika Ch.2 v.4–7 |
-| Rahu/Ketu NEUTRAL in all signs | Implement exaltation per BPHS school (Rahu: Taurus, Ketu: Scorpio) | BPHS Ch.3 |
-| Neecha Bhanga: 1 of 6 conditions | Implement all 6 as separate booleans; NEECHA_BHANGA_RAJA when ≥2 | BPHS Ch.49 v.12–18 |
-| WC-halving (0.5×) non-classical | Replace with BPHS ¾-strength for Mars/Jupiter/Saturn special aspects | BPHS Ch.26 v.3–5 |
-| Nakshatra index: `int(lon/13.333)` | Use `int(lon*3/40)` — exact integer arithmetic | Swiss Ephem. precision |
-| AV Trikona Shodhana missing | Implement reduction; raw bindus are meaningless for prediction | PVRNR AV System Ch.4 |
-| AV Ekadhipatya Shodhana missing | Implement dual-lordship reduction | PVRNR AV System Ch.5 |
-| Kala Bala: 7 of 8 sub-components missing | Add Vara, Hora, Tribhaga, Abda, Masa, Nathonnata, Ayana | BPHS Ch.27 v.30–62 |
-| Drik Bala = 0 in all charts | Implement aspect-sum across all planet pairs | BPHS Ch.27 v.22–29 |
-| Single regression fixture | Add 8 new fixtures: Neecha Bhanga, Graha Yuddha, nakshatra cusp, Parivartana, female chart, high-latitude, year-boundary, celebrity | BV Raman Notable Horoscopes |
-| No JHora cross-validation | Add `cross_validate.py` — diff all fields vs JHora CSV export | Jagannatha Hora 8.0 |
+---
+
+## Phase 0 — Classical Correctness: All 🔴 CRIT Issues (Sessions 109–114)
+
+**Principle:** Fix everything producing wrong output before adding new features.
+No new modules. No new UI. Every fix has a cited śhloka.
+
+### Session 109 — Dignity Engine: MT Ranges, Paramotcha, Rahu/Ketu, Neecha Bhanga
+
+**File:** `src/calculations/dignity.py`
+
+**Fix 1 — Mooltrikona degree ranges** (BPHS Ch.3 v.2–9)
+
+Hard-code exact BPHS boundaries. Currently approximated:
+
+| Planet | MT Sign | Correct MT Range | Non-MT Own Sign |
+|--------|---------|-----------------|-----------------|
+| Sun | Leo | 0°–20° | 20°–30° |
+| Moon | Taurus | **4°–30°** | 0°–3°59' Taurus; all of Cancer |
+| Mars | Aries | 0°–12° | 12°–30° Aries; all Scorpio |
+| Mercury | Virgo | **16°–20°** | 0°–15°59'; 20°–30° Virgo; all Gemini |
+| Jupiter | Sagittarius | 0°–10° | 10°–30° Sag; all Pisces |
+| Venus | Libra | 0°–15° | 15°–30° Libra; all Taurus |
+| Saturn | Aquarius | 0°–20° | 20°–30° Aquarius; all Capricorn |
+
+Mercury is the critical case — MT range is only 4° wide. Any approximation produces wrong results for 87% of Mercury positions in Virgo.
+
+**Fix 2 — Exaltation Paramotcha gradient** (Phaladeepika Ch.2 v.4–7)
+
+Replace binary `EXALT` flag with continuous Uchcha Bala:
+`uchcha_bala = 60 × (1 − |degree_in_sign − paramotcha_degree| / 30)`
+
+| Planet | Exalt Sign | Paramotcha ° | Debil Sign | Neecha ° |
+|--------|-----------|-------------|------------|---------|
+| Sun | Aries | 10° | Libra | 10° |
+| Moon | Taurus | 3° | Scorpio | 3° |
+| Mars | Capricorn | 28° | Cancer | 28° |
+| Mercury | Virgo | 15° | Pisces | 15° |
+| Jupiter | Cancer | 5° | Capricorn | 5° |
+| Venus | Pisces | 27° | Virgo | 27° |
+| Saturn | Libra | 20° | Aries | 20° |
+
+Add `DEEP_EXALT` enum value (within 5° of Paramotcha). Keep `EXALT` for full sign.
+
+**Fix 3 — Rahu/Ketu dignity** (BPHS Ch.3)
+
+Replace universal `NEUTRAL` with school-declared exaltation/debilitation.
+Default: BPHS school — Rahu exalted Taurus, debilitated Scorpio; Ketu exalted Scorpio, debilitated Taurus.
+Add `node_dignity_school: 'bphs' | 'raman' | 'south_indian'` to CalcConfig.
+
+**Fix 4 — Neecha Bhanga all 6 conditions** (BPHS Ch.49 v.12–18; Uttarakalamrita Ch.4)
+
+Currently only condition 1 is coded. Implement all 6 as separate booleans on `DignityResult`:
+
+1. ✅ Lord of debilitation sign in Kendra from Lagna
+2. ❌ Lord of debilitation sign in Kendra from Moon
+3. ❌ Planet that would exalt in the debilitation sign in Kendra from Lagna
+4. ❌ Planet that would exalt in the debilitation sign in Kendra from Moon
+5. ❌ Debilitated planet aspected by its debilitation sign lord
+6. ❌ Debilitated planet in Parivartana with the sign lord
+
+When `neecha_bhanga_count ≥ 2`: classify as `NEECHA_BHANGA_RAJA_YOGA` (+1.5 scoring bonus per Uttarakalamrita Ch.4).
+
+**New tests:** 14 unit tests — MT boundary degrees per planet, Paramotcha gradient at 0°/peak/30°, Rahu in Taurus = EXALT, 6 Neecha Bhanga conditions each independently triggered.
+
+---
+
+### Session 110 — Scoring Engine: Aspect Weights, Score Gradient, Kemadruma, Raj Yoga
+
+**Files:** `src/scoring.py`, `src/scoring_v3.py`, `src/calculations/yogas.py`
+
+**Fix 1 — Partial aspect strengths** (BPHS Ch.26 v.3–5)
+
+BPHS explicitly states Mars/Jupiter/Saturn special aspects are three-quarter (¾) strength, not full. The WC-halving (0.5×) on rules R03/R07/R10/R14 applied this incorrectly and uniformly.
+
+Replace with `ASPECT_STRENGTH` dict:
+```python
+ASPECT_STRENGTH = {
+    ("Mars",    4): 0.75, ("Mars",    8): 0.75,
+    ("Jupiter", 5): 0.75, ("Jupiter", 9): 0.75,
+    ("Saturn",  3): 0.75, ("Saturn", 10): 0.75,
+}  # All other aspects = 1.0 (full)
+```
+Remove WC-halving entirely. Multiply each aspect rule contribution by `ASPECT_STRENGTH.get((planet, houses_from), 1.0)`.
+
+**Fix 2 — Score gradient** (scoring architecture)
+
+Clipping at [−10, +10] makes charts with raw scores of +11 and +47 indistinguishable.
+- Store `raw_score` unclamped (no change to data model — already stored)
+- Add `display_score = round(10 * tanh(raw_score / 8), 2)` for smooth compression
+- API returns both; UI displays `display_score`; raw accessible via L3
+
+**Fix 3 — Kemadruma: all 3 conditions + 4 cancellations** (Phaladeepika Ch.6 v.56–60)
+
+Current: checks only "no planets in 2nd/12th from Moon."
+Full definition requires ALL 3 conditions:
+1. No planets in 2nd or 12th from Moon ✅ exists
+2. No planets in any Kendra (H1/H4/H7/H10) from Moon ❌
+3. Moon not aspected by any benefic ❌
+
+Then check 4 cancellation conditions before confirming:
+- Moon in Kendra from Lagna
+- Moon conjoined or aspected by a benefic
+- Moon in exalted or own sign
+- Lagna lord conjoined Moon
+
+**Fix 4 — Raj Yoga: exchange and aspect forms** (BPHS Ch.36 v.1–15)
+
+Current: conjunction only. Add:
+- Parivartana (mutual sign exchange) between Kendra lord and Trikona lord
+- Kendra lord aspecting (full 7th) the Trikona lord's sign
+- Trikona lord aspecting the Kendra lord's sign
+- Cancellation check: if either planet is combust or in dusthana, downgrade to "weak Raj Yoga"
+
+**New tests:** 12 tests — aspect strength values by planet/house, tanh gradient shape, Kemadruma 3 conditions + 4 cancellations, Raj Yoga via exchange and aspect.
+
+---
+
+### Session 111 — Shadbala: Dig Bala, Kala Bala, Drik Bala, Naisargika, Saptavargaja
+
+**File:** `src/calculations/shadbala.py`, `src/calculations/dig_bala.py`
+
+**Fix 1 — Dig Bala formula** (BPHS Ch.27 v.12–15)
+
+Current formula uses house-number distance (`/6`) — dimensionally wrong. BPHS uses degree-arc distance:
+```python
+peak_cusp_lon = (dig_bala_house - 1) * 30 + (lagna_lon % 30)
+arc_dist = min((planet_lon - peak_cusp_lon) % 360,
+               (peak_cusp_lon - planet_lon) % 360)
+dig_bala = 60 * (180 - arc_dist) / 180
+```
+
+**Fix 2 — Kala Bala: 7 missing sub-components** (BPHS Ch.27 v.30–62)
+
+Only Paksha Bala is computed. Add all 8:
+
+| Sub-component | Formula | Max Virupas |
+|--------------|---------|------------|
+| Nathonnata Bala | Sun/Jupiter/Venus strong by day; Moon/Mars/Saturn by night; Mercury always | 60 |
+| Paksha Bala | ✅ exists — verify benefic/malefic inversion | 60 |
+| Tribhaga Bala | Day ÷ 3 watches: Jupiter/Sun/Saturn; Night: Moon/Venus/Mars | 60 |
+| Vara Bala | Planet ruling birth weekday | 45 |
+| Hora Bala | Planet ruling birth hora (hour) | 60 |
+| Masa Bala | Planet ruling birth Hindu month | 30 |
+| Abda Bala | Planet ruling birth Hindu year | 15 |
+| Ayana Bala | Sun's Uttarayana/Dakshinayana × planet preference | 60 |
+
+Weekday lord and Hora lord already in `panchanga.py` — import and reuse.
+
+**Fix 3 — Drik Bala** (BPHS Ch.27 v.22–29)
+
+Currently 0 in all charts. Implement as signed sum of aspectual influences received:
+```python
+drik_bala = sum(
+    aspect_fraction(aspector, planet) * shubha_value(aspector, chart)
+    for aspector in all_planets if aspector != planet
+)
+```
+Where `shubha_value` returns +1 for benefic, −1 for malefic (chart-specific, not natural classification).
+
+**Fix 4 — Naisargika Bala values** (BPHS Ch.27)
+
+Assert fixed hierarchy: Sun=60, Moon=51.43, Venus=42.86, Jupiter=34.29, Mercury=25.71, Mars=17.14, Saturn=8.57.
+Add unit test asserting these exact values.
+
+**Fix 5 — Saptavargaja Bala** (BPHS Ch.27 v.1–20)
+
+`vargas.py` now provides D1/D2/D3/D7/D9/D12/D30. Compute dignity in each, multiply by virupa table:
+
+| Dignity | Virupas per Varga |
+|---------|------------------|
+| Own Sign / Mooltrikona | 30 |
+| Exaltation / Adhimitra sign | 22.5 |
+| Mitra sign | 15 |
+| Sama (Neutral) | 7.5 |
+| Shatru sign | 3.75 |
+| Neecha / Adhi Shatru | 1.875 |
+
+Sum across all 7 vargas. Max = 210 Virupas. This was 0 before vargas were built.
+
+**New tests:** 14 tests — Dig Bala degree-arc formula (all 7 planets vs known values), Kala Bala sub-components from 1947 chart, Drik Bala sign, Naisargika Bala exact values, Saptavargaja Bala non-zero.
+
+---
+
+### Session 112 — Ashtakavarga: Both Shodhana Reductions
+
+**File:** `src/calculations/ashtakavarga.py`
+
+**Fix 1 — Trikona Shodhana** (PVRNR, Ashtakavarga System Ch.4)
+
+For each of 4 trine groups: find minimum bindu value, subtract from all three:
+```python
+def trikona_shodhana(bindus: list[int]) -> list[int]:
+    result = bindus[:]
+    for group in [(0,4,8), (1,5,9), (2,6,10), (3,7,11)]:
+        m = min(result[i] for i in group)
+        for i in group:
+            result[i] -= m
+    return result
+```
+Apply to each planet's bindu table before storing or displaying.
+
+**Fix 2 — Ekadhipatya Shodhana** (PVRNR, Ashtakavarga System Ch.5)
+
+For dual-ruled sign pairs (Mars: 0/7, Mercury: 2/5, Jupiter: 8/11, Venus: 1/6, Saturn: 9/10):
+- If planet occupies one of its own signs: apply conditional reduction per PVRNR Ch.5 rule
+- If planet in third sign: reduce lower-bindu sign by subtracting higher, zero the lower
+
+**Fix 3 — Sarvashtakavarga reduction**
+
+After reducing all 7 planet tables, recompute Sarva from reduced tables, then apply Trikona + Ekadhipatya Shodhana to the Sarva table itself.
+
+**New tests:** 12 tests — Trikona Shodhana reduces known values, Ekadhipatya both cases (planet in own sign vs third sign), Sarva = sum of reduced tables, India 1947 reduced totals vs JHora export.
+
+---
+
+### Session 113 — Nakshatra Float Fix + 8 New Regression Fixtures
+
+**Files:** `src/calculations/nakshatra.py`, `src/calculations/vimshottari_dasa.py`, `tests/fixtures.py`
+
+**Fix 1 — Nakshatra index float** (Swiss Ephemeris precision)
+
+Replace `int(moon_lon / 13.333)` with `int(moon_lon * 3 / 40)` in all nakshatra index computations. The value 13.333 is a truncated float of 40/3 — at boundary positions the truncation error misassigns the nakshatra and therefore the entire Vimshottari balance.
+
+**Fix 2 — 8 new regression fixtures** (BV Raman, Notable Horoscopes; PVRNR, Astrology of the Seers)
+
+| Fixture | Chart Type | Validates |
+|---------|-----------|-----------|
+| `NEECHA_BHANGA` | Debilitated planet with 2+ cancellation conditions active | All 6 NB conditions |
+| `GRAHA_YUDDHA` | Mars and Venus within 1° lon + 1° lat | War detection, loser dignity |
+| `NAK_CUSP` | Moon within 0.01° of nakshatra boundary | Float-fix correctness |
+| `PARIVARTANA` | Two planets in mutual sign exchange | Parivartana detection |
+| `FEMALE_CHART` | Female, night birth, Sun/Moon/Lagna in even signs | Mahabhagya Yoga gender rules |
+| `HIGH_LATITUDE` | Birth at 61°N (Helsinki area) | Bhava Chalita cusp divergence |
+| `YEAR_BOUNDARY` | Birth 1800-01-01 and 2099-12-31 | Ephemeris edge accuracy |
+| `KNOWN_CELEBRITY` | Chart from PVRNR's Astrology of the Seers with known events | Dasha timing validation |
+
+**New tests:** 24 tests — nakshatra boundary at 40.000°/80.000°/360.000°, each of the 8 new fixtures computes without error and matches known values.
+
+---
+
+### Session 114 — Cross-Validation vs JHora + Karana Boundary Fix
+
+**Files:** `tests/cross_validate.py` (new), `src/calculations/panchanga.py`
+
+**Fix 1 — JHora cross-validation script**
+
+```python
+# tests/cross_validate.py
+def cross_validate_against_jhora(jhora_csv_path: str, chart_inputs: dict) -> ValidationReport:
+    """
+    Compare LagnaMaster output field-by-field against a JHora CSV export.
+    Tolerance: positions ±0.1°, Shadbala totals ±5%, yoga names exact match.
+    Returns list of (field, lm_value, jhora_value, within_tolerance).
+    """
+```
+Run against JHora 8.0 (free) CSV export for India 1947 + at least 2 other charts. Zero divergences on planet positions. Document any Shadbala divergences with explanation.
+
+**Fix 2 — Karana boundary for 4 fixed Karanas** (BPHS Panchanga chapter)
+
+Fixed Karanas (Kimstughna, Shakuni, Chatushpada, Naga) occur at astronomically fixed positions in the lunar month, not by cycling. Verify and fix:
+- Kimstughna: index 0 only (1st half of 1st Tithi of Krishna Paksha each month)
+- Vishti/Bhadra: index 7, 14, 21, 28, 35, 42, 49 (7th of each movable cycle)
+- Shakuni/Chatushpada/Naga: last 3 half-tithis of month only
+
+**New tests:** 12 tests — cross-validation report structure, India 1947 positions within tolerance, Kimstughna at correct position, Vishti flag on all correct indices.
+
+---
+
+## Phase 1 — All 🟠 HIGH Issues (Sessions 115–124)
+
+### Session 115 — Vargottama + Parivartana + Planetary Latitudes
+
+**File:** `src/calculations/dignity.py`, `src/calculations/planet_chains.py`, `src/ephemeris.py`
+
+- **Vargottama** (PVRNR, Vedic Astrology Ch.9): `is_vargottama(lon)` — D1 sign == D9 sign. Add to `PlanetPosition`. Apply +0.75 Shadbala Uchcha Bala bonus. Three Vargottama zones: 0°–3°20', 13°20'–16°40', 26°40'–30° are most powerful (also Sandhi).
+- **Parivartana Yoga** (PVRNR, Astrology of the Seers Ch.11): `detect_parivartana(chart)` — classify Maha/Kahala/Dainya. Override dignity to OWN_SIGN for both planets. This exists partially in `planet_chains.py` — extend with dignity override.
+- **Planetary latitudes**: `latitude: float` already returned by pyswisseph but discarded. Add to `PlanetPosition`. Required for Graha Yuddha (Session 116).
+
+### Session 116 — Graha Yuddha with Latitudes
+
+**File:** `src/calculations/graha_yuddha.py`
+
+Current implementation detects war by longitude proximity only. BPHS/Saravali Ch.4 v.12–18 requires BOTH longitude diff < 1° AND latitude diff < 1°. Winner determined by northward latitude (smaller north lat = loser). Add latitude-based winner detection. Apply DEBIL-equivalent dignity to loser for scoring.
+
+### Session 117 — Combustion Orbs by School + Sandhi Flag
+
+**File:** `src/calculations/dignity.py`
+
+- **Combustion orbs by school**: Add `COMBUSTION_ORBS_BY_SCHOOL` dict (BPHS vs Raman school differ on Venus/Saturn). Default BPHS values. Expose via CalcConfig.
+- **Sandhi flag** (Phaladeepika Ch.2 v.30): `is_sandhi(lon)` — True if `degree_in_sign < 1°` or `degree_in_sign > 29°`. Sandhi planets give confused results regardless of sign dignity. Add to `PlanetPosition`. Apply −0.5 Shadbala modifier and note in scoring.
+
+### Session 118 — Bhava Chalita Overlay
+
+**File:** `src/calculations/house_lord.py`, `src/ui/chart_visual.py`
+
+- Compute Midheaven (MC) from `swe.houses()`. Derive 12 equal Bhava Chalita cusps from MC.
+- Add `bhava_chalita_houses: dict[str, int]` to `BirthChart` — each planet's Bhava Chalita house (may differ from whole-sign house for planets near sign boundaries).
+- Display as second column in chart UI Rule Detail tab. Flag planets whose whole-sign house ≠ Bhava Chalita house.
+- Source: BPHS Ch.6; BV Raman, How to Judge a Horoscope Vol.1 p.12–14.
+
+### Session 119 — PM Yoga D9 Strength + Vesi/Vasi Node Fix + Additional Yoga Fixes
+
+**File:** `src/calculations/yogas.py`
+
+- **PM Yoga D9 check** (Sanjay Rath, Crux of Vedic Astrology Ch.5): After S109 vargas, add D9 dignity check to PM Yoga. Vargottama = full-strength; D9 in own/exalt sign = standard; D9 debilitated = weak PM Yoga.
+- **Vesi/Vasi node exclusion** (Phaladeepika Ch.7 v.10–12): Confirm Rahu/Ketu excluded from counts. Sun and Moon also excluded from Vesi/Vasi counts.
+- **Sunapha/Anapha/Durudhura** (BPHS Ch.38): Planets in 2nd from Moon (Sunapha), 12th from Moon (Anapha), or both (Durudhura) — Sun excluded. Add to yogas.py.
+
+### Session 120 — Pratyantar Dasha (3rd Level)
+
+**File:** `src/calculations/vimshottari_dasa.py`
+
+Add `PratyantarDasha` as 3rd level under `AntarDasha`:
+```python
+pratyantar_years = maha_years × antar_years × pratyantar_lord_years / 120 / 120
+```
+Same sequence as MD/AD. `current_dasha()` returns `tuple[MahaDasha, AntarDasha, PratyantarDasha]`.
+Source: K.N. Rao, Timing Events Through Vimshottari Dasha (core methodology uses Pratyantar).
+
+### Session 121 — Narayana Dasha Direction Verification
+
+**File:** `src/calculations/narayana_dasha.py`
+
+Verify direction re-evaluates per sign (not only from Lagna parity). Per Sanjay Rath, Nadiamsa and Chara Dasha Ch.4: direction reverses at each sign transition. The initial Lagna parity sets only the first sign's direction; each subsequent sign decides its own direction by its own parity.
+
+### Session 122 — Transit: Vedha + Moon/Sun Lagna + Ashtama Shani
+
+**File:** `src/calculations/gochara.py`
+
+- **Vedha obstruction** (Phaladeepika Ch.26 v.10–18): Add `VEDHA_PAIRS = {1:5, 2:12, 3:12, 4:3, 5:9, 6:12, 7:2, 8:5, 9:8, 10:9, 11:8, 12:6}`. Add `is_vedha_blocked: dict[str, bool]` to `GocharaReport`. Flag in UI.
+- **Transit from Moon + Sun lagna** (Phaladeepika Ch.26 v.1–5): Compute transit house from natal Moon and natal Sun as reference points. Add `moon_lagna_houses` and `sun_lagna_houses` dicts to `GocharaReport`.
+- **Ashtama Shani** (K.N. Rao, Yogis Destiny Ch.7): Flag when Saturn is in H8 from natal Moon (often more difficult than Sade Sati itself). Add `ashtama_shani: bool` to `GocharaReport`.
+
+### Session 123 — Upagrahas (Mandi/Gulika)
+
+**File:** `src/calculations/upagrahas.py` (new)
+
+Source: BPHS Ch.25; Phaladeepika Ch.26.
+Mandi and Gulika computed from weekday, birth time, day/night duration:
+```python
+mandi_lon = sunrise_lon + (weekday_lord_order × day_duration / 8)
+gulika_lon = mandi_lon - (day_duration / 8)  # Gulika precedes Mandi
+```
+Requires sunrise time from `swe.rise_trans()`. Add to `BirthChart.upagrahas` dict. Add to SVG chart display.
+
+### Session 124 — Ayanamsha Expansion + Node Mode Toggle
+
+**File:** `src/calculations/config_toggles.py`, `src/ephemeris.py`
+
+- **Additional ayanamshas**: Expose all 36 pyswisseph `SE_SIDM_*` constants in `AYANAMSHA_MAP`. Priority additions: True Chitrapaksha (used by PVRNR), Yukteshwar, Fagan-Bradley, True Mula/Galactic Centre.
+- **Ayanamsha warning**: Add `lagna_ayanamsha_sensitive: bool` flag when Lagna is within 1° of a sign boundary — ayanamsha choice may change the Lagna sign.
+- **Node mode**: `node_mode: 'mean' | 'true'` in CalcConfig. Default mean (Parashari standard per PVRNR). True node for KP school. Difference can reach 1.5°.
+
+---
+
+## Phase 2 — Depth (Sessions 125–134)
+
+| Session | Deliverable | Source |
+|---------|------------|--------|
+| 125 | Bhava Bala: Bhavadhipati + Dig Bala + Drishti Bala per house | BPHS Ch.27 v.32–41 |
+| 126 | Kakshya analysis in AV transits (3°45' sub-divisions) | BV Raman, AV System Ch.9 |
+| 127 | Ishta/Kashta Bala (√(Uchcha×Chesta) / √((60−U)×(60−C))) | BPHS Ch.27 v.70–75 |
+| 128 | Sputa Drishti (exact degree-based aspect orb) | Saravali; Sarvartha Chintamani |
+| 129 | 8-Karaka Chara Karaka option (Rahu eligible as AK) | BPHS Ch.32 |
+| 130 | Special Lagnas: Hora, Ghati, Bhava, Varnada, Sree, Indu, Pranapada | Jaimini Sutras; BPHS Ch.13 |
+| 131 | Dasha Sandhi alerting (last/first 6 months of each MD) | K.N. Rao, Astrology Destiny Ch.3 |
+| 132 | North Indian + East Indian chart styles in SVG | Visual standard |
+| 133 | Ayurdaya (longevity): Pindayu + Amsayu + Nisargayu | BPHS Ch.44 |
+| 134 | Expanded yoga library: target 150+ named yogas with śhloka citations | Uttarakalamrita Khandas 1–4 |
+
+---
+
+## Phase 3 — Production Hardening (Sessions 135+)
+
+| Item | Trigger |
+|------|---------|
+| End-to-end integration test: Next.js ↔ FastAPI ↔ guidance pipeline | Before public launch |
+| React Native mobile shell (router done at S90) | Mobile launch |
+| Practitioner opt-in directory (S89 infrastructure ready) | Post-launch |
+| GDPR privacy policy and ToS text | Legal team |
+| First 50 empirica events for accuracy baseline | S48 router ready |
+| KP Sub-lord system (true node, cusp significators) | After S124 node mode |
+| Varshaphala / Solar Return with Muntha + Tajika aspects | Post-Phase 2 |
+| ML-based yoga strength calibration from verified chart corpus | Research phase |
+
+---
+
+## Sessions 91–108 — Complete ✅
+
+*(Full session specs in previous plan entries below — unchanged)*
 
 ---
 
@@ -40,237 +430,53 @@ Every fix has a cited śhloka. No new features — correctness only.
 
 ### Session 91 — Panchanga (5 limbs of the almanac)
 **File:** `src/calculations/panchanga.py`
-Complete Panchanga engine replacing the incomplete predecessor `panchang.py`.
-Tithi, Vara, Nakshatra, Yoga, Karana (7 variable + 4 fixed karanas).
-Amrita Siddhi and Sarvaartha Siddhi from Vara×Nakshatra lookup tables.
-Hora (planetary hour from sunrise) and Choghadiya (8 day/8 night periods).
-Added `compute_navamsha_chart()` and `_d9_sign_index()` for backward compatibility.
-Note: supersedes `panchang.py`; `test_panchanga_legacy.py` is an empty stub.
+Complete Panchanga engine replacing `panchang.py`. Tithi, Vara, Nakshatra, Yoga, Karana.
+Amrita Siddhi + Sarvaartha Siddhi. Hora. Choghadiya. `compute_navamsha_chart()` backward compat.
 
 ### Session 92 — Muhurta Engine
 **File:** `src/calculations/muhurta.py`
-Source: PVRNR Table 79 (p473–476). 7 task types: marriage, business_launch,
-house_construction, house_entry, travel, surgery, education, general.
-Per-task: good/bad Tithis, Varas, Nakshatras, Lagnas from Table 79.
-Tarabala: count from birth nakshatra → 9 categories; {1,3,5,7} = auspicious.
-Chandrabala: Moon's current sign from birth Moon sign; {1,3,6,7,10,11} = good.
-`score_muhurta()` → 0–7: Excellent(≥5)/Good(≥4)/Acceptable(≥3)/Avoid.
-PVRNR p487: "Planetary strength is more important than strictly following thumbrules."
+PVRNR Table 79. 7 task types. Tarabala + Chandrabala. 0–7 score: Excellent/Good/Acceptable/Avoid.
 
 ### Session 93 — Prashna (Horary)
 **File:** `src/calculations/prashna.py`
-Source: BPHS Prashna chapters; Prashna Marga; PVRNR applications.
-10 query types: general, lost_article, illness, travel, legal, marriage,
-career, wealth, children, property.
-Key house scoring + Moon placement + lagna lord placement → Yes/Possible/Unlikely/No.
-Confidence: High/Moderate/Low based on positive signal count.
+10 query types. Yes/Possible/Unlikely/No verdict. High/Moderate/Low confidence.
 
 ### Session 94 — Kalachakra Dasha
 **File:** `src/calculations/kalachakra_dasha.py`
-Source: BPHS Ch.36–42; PVRNR preface p8 ("most respectable dasha").
-Moon's navamsha pada (0–3) determines Savya/Apasavya sequence.
-Sign periods: Ar=7, Ta=16, Ge=9, Cn=21, Le=5, Vi=9, Li=16, Sc=7, Sg=10, Cp=4, Aq=4, Pi=1.
-Deha (body) and Jeeva (life) flags per cycle. `current_kalachakra_period()` included.
+BPHS Ch.36–42. Savya/Apasavya from Moon's navamsha pada. Deha/Jeeva flags.
 
 ### Session 95 — Shoola Dasha + Sudasa
 **File:** `src/calculations/shoola_dasha.py`
-Source: BPHS; PVRNR preface p8 ("two ayur dasas"; "timing material success").
-Shoola: lagna-trine-based; Trishoola spikes.
-Sudasa: starts from stronger of lagna/8th (using `stronger_of_two.py`).
+Shoola (longevity) + Sudasa (material success).
 
 ### Session 96 — Tara Dasha
 **File:** `src/calculations/tara_dasha.py`
-9-category nakshatra sequence from birth nakshatra.
-Vimshottari period lengths. Auspicious categories annotated.
+9-category nakshatra: Janma→Ati-Mitra. Vimshottari period lengths.
 
 ### Session 97 — Upaya (Remedial Measures)
 **File:** `src/calculations/upaya.py`
-Source: PVRNR Ch.34 (p450–458), Tables 77–78.
-`get_chart_upayas()`: auto-detects combust/debilitated/functional-malefic planets.
-EVERY recommendation carries disclaimer: "classical prescriptions for reflection only."
+PVRNR Tables 77–78. Auto-detect afflictions. Disclaimer on every recommendation — never removed.
 
 ### Session 98 — Mundane Astrology
 **File:** `src/calculations/mundane.py`
-Source: PVRNR Ch.35 (p460–469).
-Chart types: nation, solar ingress, lunar new year, swearing-in.
-`compress_vimshottari()`: scale 120yr cycle to any period (PVRNR p464).
-India 1947 regression: nation chart analysis confirmed.
+PVRNR Ch.35. Nation/ingress/swearing-in. `compress_vimshottari()`.
 
 ### Session 99 — Contextual Layer (partial DKP)
 **File:** `src/calculations/contextual.py`
-Era-aware profession mapping, latitude warning, marriage timing by birth era.
-Explicit practitioner note: full Desha-Kala-Patra requires practitioner judgment.
+Era-aware profession mapping. Explicit practitioner note — partial DKP only.
 
 ### Session 100 — Ashtottari Dasha
 **File:** `src/calculations/ashtottari_dasha.py`
-Source: BPHS Ch.47; PVRNR preface p8.
-8-planet sequence; total 108 years.
-`qualifies_for_ashtottari()`: Rahu not in H1 or H7 required.
+BPHS Ch.47. 108yr, 8 planets. `qualifies_for_ashtottari()` required.
+
+### Sessions 101–108 — Phase 0 initial fixes (remote)
+DivisionalMap compat fixes (`longevity.py`, `multi_lagna.py`). Docs refresh. Audit published.
 
 ---
 
-## Phase 9 — Synthesis & Judgment Layer (Sessions 64–70) ✅
+## Phase 7–9 and Phases 10–14 — Sessions 49–90 ✅
 
-### Session 64 — Dominance Hierarchy Engine
-**File:** `src/calculations/dominance_engine.py`
-Named classical overrides from BPHS: benefic kendra suppression, combust benefic yoga blocking, dasha lord activation weight.
-`DominanceReport`: global_tone, affliction_dominated and yoga_dominated house lists.
-
-### Session 65 — Promise vs Manifestation
-**File:** `src/calculations/promise_engine.py`
-Three-level: Promise (natal) → Capacity (dasha) → Delivery (transit).
-Timing: Now / Soon / Future / Blocked.
-
-### Session 66 — Domain-Specific Axis Weighting
-**File:** `src/calculations/domain_weighting.py`
-7 domains; classical varga weights per domain (PVRNR Ch.13 p181).
-`compute_domain_lpi()` → `DomainLPIResult`.
-
-### Session 67 — Multi-Planet Chains
-**File:** `src/calculations/planet_chains.py`
-Stelliums, dispositor chains (max depth 9), mutual reception (parivartana).
-India 1947: Cancer stellium = 5 planets confirmed.
-
-### Session 68 — House-Type Modulation
-**File:** `src/calculations/house_modulation.py`
-Upachaya age maturation (35/60+ year modifiers). Malefics beneficial in 3/6/10/11.
-`apply_house_modulation(scores, chart, age_years)`.
-
-### Session 69 — Interpretive Confidence Model
-**File:** `src/calculations/confidence_model.py`
-5 components: varga agreement (30%) / conflict (25%) / sensitivity (20%) / boundary (15%) / role clarity (10%).
-`requires_expert_review` list for houses with Uncertain label or ≥3 flags.
-
-### Session 70 — Chart Exception Detection
-**File:** `src/calculations/chart_exceptions.py`
-7 checks: empty kendras, lagnesh in H8, dusthana lords all strong, Moon severely afflicted,
-multiple combust benefics, hemisphere imbalance, score extreme.
-`special_rules_apply` names specific BPHS doctrines triggered.
-
----
-
-## Phase 8 — PVRNR Textbook Tier 1 (Sessions 57–63) ✅
-
-### Session 57 — Orb-sensitive conjunction/aspect strength
-**File:** `src/calculations/orb_strength.py`
-PVRNR p147/p149. Formula: `strength = max(0, 1 - orb / 15)`.
-`is_pvrnr_close()` (≤6°), `reduces_yoga()` (>8°). Parivartana detected.
-
-### Session 58 — Yoga fructification conditions
-**File:** `src/calculations/yoga_fructification.py`
-PVRNR p147 three conditions. Amsa levels: Paarijataamsa → Airaavataamsa.
-`FructificationResult`: Full/Partial/Weak/Minimal.
-
-### Session 59 — Stronger-of-two framework
-**File:** `src/calculations/stronger_of_two.py`
-PVRNR p194 explicit 5-condition hierarchy.
-Used for: Scorpio/Aquarius dual lords, Narayana Dasha start, longevity lords.
-
-### Session 60 — AV-weighted transit interpretation
-**File:** `src/calculations/av_transit.py`
-PVRNR p154/p165. SAV ≥30=strong, <25=weak. BAV: ≥6/5/4/3/≤2.
-`TransitAVReport` from `compute_transit_av_score()`.
-
-### Session 61 — Arudha reality vs perception model
-**File:** `src/calculations/arudha_perception.py`
-PVRNR Ch.9 p97. 2×2 matrix: actual × perceived strength.
-
-### Session 62 — PVRNR textbook yogas
-**File:** `src/calculations/yogas_pvrnr.py`
-8 yogas from PVRNR Ch.11: Guru-Mangala, Amala, Sankha, Vasumati,
-Lagnaadhi, Jaya, Pushkala, Brahma.
-
-### Session 63 — Multi-factor planet effectiveness
-**File:** `src/calculations/planet_effectiveness.py`
-7 measures → 0.0–1.0: Shadbala 20% / Avastha 20% / AV 15% / Dig Bala 15% / Amsa 15% / Combustion 7.5% / Yuddha 7.5%.
-
----
-
-## Phase 7 — Workbook Completeness (Sessions 49–56) ✅
-
-### Session 49 — Full 12-state Sayanadi
-**File:** `src/calculations/sayanadi_full.py`
-All 12 states including 5 decanate-based. Priority chain with modifiers.
-Deena wired from `graha_yuddha.py`. Source: BPHS Ch.45–47.
-
-### Session 50 — Panchadha Maitri wired to scoring
-**File:** `src/calculations/panchadha_maitri.py`
-Tatkalik + Naisargika → 5-fold: Adhi Mitra(+1.0)→Adhi Shatru(−1.0).
-`compute_panchadha_matrix(chart)` returns full 7×7 `PanchadhaMatrix`.
-
-### Session 51 — Lagnesh Global Modifier
-**File:** `src/calculations/lagnesh_strength.py`
-9-condition lookup; modifier −0.75 to +0.75 applied to ALL 12 house scores.
-
-### Session 52 — Dig Bala Continuous Score
-**File:** `src/calculations/dig_bala.py`
-Replaces binary with 0.0–1.0. Formula: `1 − circular_dist(current, peak) / 6`.
-All 7 workbook values verified.
-
-### Session 53 — Graha Yogas
-**File:** `src/calculations/yogas_graha.py`
-4 missing + 2 confirmations: Budhaditya, Saraswati, Chandra-Mangal, Kahala, Parvata, Gaja Kesari.
-
-### Session 54 — Narayana Dasha Argala (ND-6)
-**File:** `src/calculations/narayana_argala.py`
-PVRNR Ch.5. Argala positions H2/H4/H11/H5(×0.5). Virodha cancellations.
-Net modifier −0.5 to +0.5.
-
-### Session 55 — Configuration Toggles
-**File:** `src/calculations/config_toggles.py`
-Ayanamshas: Lahiri/Raman/Krishnamurti/Fagan-Bradley. Node: mean/true.
-Retrograde policy: apply ±0.10 / ignore / classical full-strength.
-`CalcConfig` with `to_dict()`/`from_dict()`.
-
-### Session 56 — Varga Agreement Confidence Flag
-**File:** `src/calculations/varga_agreement.py`
-★★/★/○ confidence per house from D1/D9/D10 agreement.
-India 1947 H2 Wealth: D1=−5.25, D9=−2.0, D10=−2.5 → ★★ confirmed.
-
----
-
-## Phases 1–6 (Sessions 1–48) ✅
-
-| Phase | Sessions | Key Work |
-|-------|----------|----------|
-| 1 | 1–10 | `ephemeris.py`, 7 core modules, scoring, FastAPI, SQLite |
-| 2 | 11–20 | Streamlit UI, Docker, JWT, PostgreSQL migration, K8s Helm |
-| 3 | 21–27 | GitHub Actions CI/CD, Streamlit Cloud deploy, 200+ yoga library |
-| 4 | 28–32 | `functional_roles.py`, `avastha.py`, `pressure_engine.py`, `argala.py`, `graha_yuddha.py` |
-| 5 | 33–40 | 5-axis LPI, Scoring v2/v3, `multi_axis_scoring.py`, rule interactions |
-| 6 | 41–48 | Ishta/Kashta Bala, longevity calc, Yogini Dasha, KP school, Empirica router |
-
----
-
-## Consumer Product Vision
-
-**Product:** Personal Timing & Guidance Companion
-**Aesthetic:** Bloomberg Terminal — professional, data-dense, calm, no mysticism
-**Core constraint:** Raw scores permanently gated behind L3 opt-in
-**Signal system:** 5-bar (mobile-signal style)
-**Language:** Possibility framing, not deterministic claims
-
-**Consumer readiness (Session 100):**
-
-| Layer | Status |
-|-------|--------|
-| Jyotish engine (natal) | ✅ Complete (63 modules, 963 tests) |
-| All dasha systems | ✅ Complete |
-| Muhurta / Prashna | ✅ Complete (Sessions 91–93) |
-| Upaya / Mundane | ✅ Complete (Sessions 97–98) |
-| Language & safety pipeline | ✅ Complete (Sessions 71–75) |
-| Privacy & legal (GDPR/DPDP) | ✅ Complete (Sessions 76–78) |
-| Consumer frontend (Next.js) | ✅ Built — integration testing pending |
-| Feedback governance | ✅ Complete (Sessions 84–86) |
-| Mobile API | ✅ Router built — React Native shell pending |
-| Phase 0 classical correctness | 🔄 Sessions 101–108 on remote |
-
-**Remaining to production:**
-1. End-to-end integration testing: Next.js ↔ FastAPI ↔ guidance pipeline
-2. React Native mobile shell (router complete at S90)
-3. Practitioner opt-in directory (S89 infrastructure ready)
-4. GDPR privacy policy and ToS text (legal team)
-5. First 50 empirica events for accuracy baseline (S48 router ready)
+*(See CHANGELOG.md for full session-by-session history)*
 
 ---
 
@@ -278,8 +484,8 @@ India 1947 H2 Wealth: D1=−5.25, D9=−2.0, D10=−2.5 → ★★ confirmed.
 
 | Item | Reason |
 |------|--------|
-| Kalachakra Dasha (all textual variants) | Contradictory across commentators; BPHS version implemented |
-| Desha-Kala-Patra (full) | Requires practitioner situational judgment |
+| Kalachakra full textual variants | Contradictory commentators; BPHS version implemented |
+| Desha-Kala-Patra in full | Requires practitioner situational judgment |
 | Gestalt synthesis | Named BPHS rules encoded; nonlinear expert weighting is not |
 | Prashna Marga full corpus | Separate discipline with different inputs |
 | Medical / financial astrology | Separate disciplines with liability implications |
@@ -293,7 +499,8 @@ India 1947 H2 Wealth: D1=−5.25, D9=−2.0, D10=−2.5 → ★★ confirmed.
 2. **Phaladeepika** — Mantreswara (G.S. Kapoor, Ranjan Publications)
 3. **Saravali** — Kalyanarma (R. Santhanam, Ranjan Publications)
 4. **Brihat Jataka** — Varahamihira (B.S. Rao, Ranjan Publications)
-5. **Jaimini Sutras** — with Sanjay Rath commentary (Sagittarius Publications)
-6. Modern: BV Raman · K.N. Rao · Sanjay Rath · Hart de Fouw & Robert Svoboda · Gayatri Devi Vasudev
+5. **Jaimini Sutras** — Sanjay Rath commentary (Sagittarius Publications)
+6. **Uttarakalamrita** — Kalidasa (P.S. Sastri, Ranjan Publications)
+7. Modern: BV Raman · K.N. Rao · Sanjay Rath · Hart de Fouw & Robert Svoboda · Gayatri Devi Vasudev · Komilla Sutton · Dennis Harness
 
 The Excel workbook is not a source. It was a prototype input for Sessions 1–56 only.
