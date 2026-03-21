@@ -263,7 +263,7 @@ def compute_mandi_gulika(
     birth_hour = birth_dt.hour + birth_dt.minute / 60.0
     sunrise_hour = 6.0  # simplified; ideally computed from swe.rise_trans
 
-    elapsed = birth_hour - sunrise_hour if is_day_birth else birth_hour
+    elapsed = birth_hour - sunrise_hour  # noqa: F841
 
     # Longitude of Mandi = sunrise longitude + (lord_idx * portion * 15°/hr)
     # Each hour = 15° of celestial motion approximately

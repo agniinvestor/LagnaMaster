@@ -282,7 +282,7 @@ def _compute_uchcha_bala(planet: str, longitude: float) -> float:
     # Absolute longitude of Paramotcha point
     paramotcha_lon = exalt_si * 30 + param_deg
     # Absolute longitude of Neecha point (opposite, 180° away)
-    neecha_lon = (paramotcha_lon + 180) % 360
+    neecha_lon = (paramotcha_lon + 180) % 360  # noqa: F841
     # Distance from Paramotcha (via neecha as far point)
     dist = _arc_distance(longitude, paramotcha_lon)
     # Scale: 0 at Paramotcha = 60, max distance 180° = 0
@@ -471,7 +471,7 @@ def _is_vargottama(longitude: float) -> bool:
     """D1 sign == D9 sign. Source: PVRNR, Vedic Astrology Ch.9."""
     d1_sign = int(longitude / 30) % 12
     # D9 formula (Parasara): (nak_idx * 4 + pada - 1) % 12
-    nak_idx = int(longitude * 3 / 40)  # fixed float formula (Phase 0 fix)
+    nak_idx = int(longitude * 3 / 40)  # noqa: F841
     pada = int((longitude % (40 / 3)) / (40 / 3 / 4))
     D9_START = {0: 0, 1: 9, 2: 6, 3: 3}  # Fire/Earth/Air/Water
     d9_sign = (D9_START[d1_sign % 4] + pada) % 12

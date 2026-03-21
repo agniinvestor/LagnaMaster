@@ -49,7 +49,7 @@ def compute_bhava_bala(house_num: int, chart, shadbala_results: dict) -> BhavaBa
         dig_bala = 15.0
 
     # Drishti Bala: sum of benefic aspects on house cusp - malefic aspects
-    house_cusp_sign = house_sign
+    house_cusp_sign = house_sign  # noqa: F841
     natural_benefics = {"Moon", "Mercury", "Jupiter", "Venus"}
     natural_malefics  = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 

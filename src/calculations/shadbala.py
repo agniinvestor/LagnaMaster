@@ -282,7 +282,7 @@ def compute_kala_bala(planet: str, chart, birth_dt: Optional[datetime] = None) -
         weekday = birth_dt.weekday()
         hour = birth_dt.hour + birth_dt.minute / 60.0
         hora_num = int(hour)  # 0-23
-        weekday_sun_offset = _WEEKDAY_LORDS.index("Sun") if "Sun" in _WEEKDAY_LORDS else 6
+        weekday_sun_offset = _WEEKDAY_LORDS.index("Sun") if "Sun" in _WEEKDAY_LORDS else 6  # noqa: F841
         # Sequence starts from weekday lord at sunrise (hour 0 of that day)
         weekday_lord_idx = _HORA_SEQUENCE.index(_WEEKDAY_LORDS[weekday])
         hora_lord_idx = (weekday_lord_idx + hora_num) % 7
