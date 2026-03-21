@@ -227,3 +227,7 @@ These were identified by the March 2026 classical audit. See `AUDIT.md` for full
 | Medical/financial astrology | Separate disciplines with liability implications |
 
 # Sessions 109-124 additions added — see PLAN.md for full detail
+
+
+## Sessions 135-160
+S135 Rashi Drishti. S137 functional_dignity. S138 avasthas. S142 transit_quality_advanced. S146 upagrahas_derived. S147 shadbala_patches. S149 varshaphala. S150 karakamsha. S140/145 yoga_strength. S154 dasha_activation.

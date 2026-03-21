@@ -260,3 +260,9 @@ def pada_relationship_score(chart, h1: int, h2: int) -> float:
     if diff in {6}:        # 7th — opposition, neutral
         return 0.5
     return 0.0
+
+
+# Rashi Drishti S135
+def get_rashi_drishti(si):
+    from src.calculations.jaimini_rashi_drishti import rashi_drishti
+    return rashi_drishti(si)

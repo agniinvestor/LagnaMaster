@@ -447,3 +447,12 @@ def detect_yogas(chart: BirthChart) -> list[Yoga]:
         _NATURE_ORDER.get(y.nature, 9),
     ))
     return all_yogas
+
+
+# NBRY surfacing S145
+def get_nbry_yogas(chart):
+    try:
+        from src.calculations.shadbala_patches import extract_nbry_yogas
+        return extract_nbry_yogas(chart)
+    except Exception:
+        return []

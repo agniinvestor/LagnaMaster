@@ -103,3 +103,7 @@ def score_chart_v3(
         rasi_drishti=rd, bhavat_bhavam=bb,
         arudha_padas=ap, karakamsha=kk,
     )
+
+
+# Functional dignity S137
+FUNCTIONAL_DIGNITY_NOTE = "use compute_functional_classifications(lagna_si) for R02/R09"

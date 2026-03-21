@@ -239,3 +239,7 @@ def compute_chart(
         lagna_degree_in_sign=lagna_deg,
         planets=planets_out,  # noqa: F841
     )
+
+
+# Topocentric Moon correction S136
+TOPOCENTRIC_MOON_NOTE = "swe.set_topo(lat,lon,0) + SEFLG_TOPOCTR for Moon"
