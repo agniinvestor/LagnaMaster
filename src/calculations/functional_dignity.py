@@ -131,7 +131,7 @@ def compute_functional_classifications(lagna_sign_index: int) -> dict[str, Funct
         note = f"Rules H{','.join(str(h) for h in houses)}"
         if is_yogakaraka: note += " — Yogakaraka"
         if is_badhaka: note += " — Badhaka lord"
-        if is_maraka: note += " — Maraka"
+        if rules_maraka: note += " — Maraka"
 
         results[planet] = FunctionalClassification(
             planet=planet,
