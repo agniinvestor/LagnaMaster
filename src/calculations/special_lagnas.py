@@ -30,7 +30,7 @@ class SpecialLagnas:
 
 def compute_special_lagnas(
     chart,
-    birth_dt: datetime,
+    birth_dt: datetime = None,
     sunrise_dt: Optional[datetime] = None,
 ) -> SpecialLagnas:
     """
@@ -38,6 +38,9 @@ def compute_special_lagnas(
     sunrise_dt: sunrise at birth location on birth date.
     If not provided, approximates 06:00 local time.
     """
+    if birth_dt is None:
+        from datetime import datetime as _dt
+        birth_dt = _dt.now()
     if sunrise_dt is None:
         sunrise_dt = birth_dt.replace(hour=6, minute=0, second=0)
 

@@ -143,7 +143,7 @@ def _gajakesari_bvr(chart) -> bool:
     try:
         from src.calculations.dignity import compute_all_dignities
         dig = compute_all_dignities(chart).get("Jupiter")
-        not_afflicted = not (dig and dig.is_combust)
+        not_afflicted = not (dig and dig.combust)
     except Exception:
         not_afflicted = True
     return in_kendra and not_afflicted

@@ -83,7 +83,7 @@ def compute_dominance_factors(chart, dashas=None,
         try:
             from src.calculations.dignity import compute_all_dignities
             dig = compute_all_dignities(chart).get("Jupiter")
-            jup_strong = not (dig and dig.is_combust)
+            jup_strong = not (dig and dig.combust)
         except Exception:
             jup_strong = True
         if jup_strong:
@@ -116,7 +116,7 @@ def compute_dominance_factors(chart, dashas=None,
         from src.calculations.dignity import compute_all_dignities
         digs = compute_all_dignities(chart)
         for planet, dig in digs.items():
-            if dig and dig.is_combust and planet in _NAT_BENEF:
+            if dig and dig.combust and planet in _NAT_BENEF:
                 factors.append(DominanceFactor(
                     factor_type="Malefic Dominance",
                     planet=planet,

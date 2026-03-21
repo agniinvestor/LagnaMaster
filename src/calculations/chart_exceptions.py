@@ -122,7 +122,7 @@ def detect_chart_exceptions(chart) -> ChartExceptionReport:
         from src.calculations.dignity import compute_all_dignities
         digs = compute_all_dignities(chart)
         combust_benefics = [p for p in _NAT_BENEF - {"Moon"}
-                            if digs.get(p) and digs[p].is_combust]
+                            if digs.get(p) and digs[p].combust]
         if len(combust_benefics) >= 2:
             exceptions.append(ChartException(
                 "Multiple Benefics Combust","High",

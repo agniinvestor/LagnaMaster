@@ -412,11 +412,11 @@ def score_chart(chart: BirthChart) -> ChartScores:
         r19_score = 0.0
         if bhavesh in dignities:
             d = dignities[bhavesh]
-            if d.is_cazimi:
+            if d.cazimi:
                 r19_score = +0.5
-            elif d.is_combust and d.is_retrograde:
+            elif d.combust and d.is_retrograde:
                 r19_score = -0.5   # Asta Vakri (reduced effect)
-            elif d.is_combust:
+            elif d.combust:
                 r19_score = W["R19"]
         rules.append(RuleResult("R19", "Bhavesh combust", r19_score, triggered=r19_score != 0))
 

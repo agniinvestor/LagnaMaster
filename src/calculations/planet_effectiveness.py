@@ -103,7 +103,7 @@ def compute_planet_effectiveness(planet: str, chart) -> PlanetEffectiveness:
     try:
         from src.calculations.dignity import compute_all_dignities
         dig = compute_all_dignities(chart).get(planet)
-        if dig and dig.is_combust:
+        if dig and dig.combust:
             combust_p = 0.5
     except Exception:
         pass

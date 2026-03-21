@@ -140,7 +140,7 @@ def get_chart_upayas(chart) -> list[UpayadRecommendation]:
     for planet in ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn","Rahu","Ketu"]:
         dig = digs.get(planet)
         affliction = None
-        if dig and dig.is_combust and planet != "Sun":
+        if dig and dig.combust and planet != "Sun":
             affliction = "combust"
         elif dig and hasattr(dig, 'level'):
             from src.calculations.dignity import DignityLevel

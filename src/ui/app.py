@@ -345,7 +345,7 @@ with tab_chart:
                     dig_label = dl.name if dl else str(dig)
                 else:
                     dig_label = "—"
-                # Combustion — field may be .combust or .is_combust depending on version
+                # Combustion — field may be .combust or .combust depending on version
                 is_combust = (
                     getattr(dig, "combust", False) or
                     getattr(dig, "is_combust", False)

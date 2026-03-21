@@ -116,7 +116,7 @@ def compute_lajjitadi(chart) -> LajjitadiResult:
     in_trikona  = fifth_lord_house in {1, 5, 9}
 
     dig = compute_all_dignities(chart).get(fifth_lord)
-    combust = dig.is_combust
+    combust = dig.combust
     exalted = dig.dignity in {DignityLevel.EXALT, DignityLevel.MOOLTRIKONA}
     own_sign = dig.dignity == DignityLevel.OWN_SIGN
 

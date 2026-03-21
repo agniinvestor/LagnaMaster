@@ -54,7 +54,7 @@ def compute_sayanadi(planet: str, chart) -> tuple[str, float]:
     try:
         from src.calculations.dignity import compute_all_dignities, DignityLevel
         dig = compute_all_dignities(chart).get(planet)
-        if dig and dig.is_combust:
+        if dig and dig.combust:
             return "Kopa", 0.5
         if dig and dig.dignity in {DignityLevel.EXALT, DignityLevel.OWN_SIGN, DignityLevel.MOOLTRIKONA}:
             return "Sthira", 1.25

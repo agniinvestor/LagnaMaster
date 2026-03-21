@@ -82,13 +82,13 @@ class TestDignity:
         """Venus and Saturn are within Sun's orb in 1947 chart → combust."""
         from src.calculations.dignity import compute_all_dignities
         digs = compute_all_dignities(india_chart)
-        assert digs["Venus"].is_combust, "Venus should be combust (5.4° from Sun)"
-        assert digs["Saturn"].is_combust, "Saturn should be combust (7.5° from Sun)"
+        assert digs["Venus"].combust, "Venus should be combust (5.4° from Sun)"
+        assert digs["Saturn"].combust, "Saturn should be combust (7.5° from Sun)"
 
     def test_mars_not_combust(self, india_chart):
         from src.calculations.dignity import compute_all_dignities
         digs = compute_all_dignities(india_chart)
-        assert not digs["Mars"].is_combust, "Mars (50° from Sun) should not be combust"
+        assert not digs["Mars"].combust, "Mars (50° from Sun) should not be combust"
 
     def test_retrograde_bonus_applied(self, india_chart):
         from src.calculations.dignity import compute_all_dignities, RETROGRADE_BONUS

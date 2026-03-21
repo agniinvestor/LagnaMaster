@@ -171,7 +171,7 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
         if not pos:
             continue
         dig = dignities.get(p)
-        if dig and dig.is_combust:
+        if dig and dig.combust:
             dignity_adequate = False
             weaknesses.append(f"{p} is combust — yoga power reduced")
         si = pos.sign_index
@@ -229,7 +229,7 @@ def check_yoga_affliction(planet: str, chart) -> list[str]:
             issues.append(f"Conjunct functional malefic(s): {afflictors}")
         from src.calculations.dignity import compute_all_dignities
         dig = compute_all_dignities(chart).get(planet)
-        if dig and dig.is_combust:
+        if dig and dig.combust:
             issues.append("Combust")
         _DEBIL = {"Sun":6,"Moon":7,"Mars":3,"Mercury":11,"Jupiter":9,"Venus":5,"Saturn":0}
         if _DEBIL.get(planet) == pos.sign_index:

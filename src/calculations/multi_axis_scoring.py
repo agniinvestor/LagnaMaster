@@ -126,7 +126,7 @@ def _score_one_house(
     if bhavesh in chart.planets:
         from src.calculations.dignity import compute_all_dignities, compute_dignity, DignityLevel
         dig = compute_all_dignities(chart).get(bhavesh)
-        bh_combust = dig.is_combust; bh_cazimi = dig.is_cazimi
+        bh_combust = dig.combust; bh_cazimi = dig.cazimi
         bh_rx = chart.planets[bhavesh].is_retrograde
 
     shubh_k, paap_k = _kartari(house_si, sign_pl)

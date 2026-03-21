@@ -144,8 +144,8 @@ def score_chart_v2(chart) -> ChartScoresV2:
         bhavesh = hmap.house_lord[house - 1]
         bh_house = hmap.planet_house.get(bhavesh, house)
         bh_dig   = digs.get(bhavesh)
-        bh_combust = bh_dig.is_combust if bh_dig else False
-        bh_cazimi  = bh_dig.is_cazimi  if bh_dig else False
+        bh_combust = bh_dig.combust if bh_dig else False
+        bh_cazimi  = bh_dig.cazimi  if bh_dig else False
         bh_rx      = chart.planets[bhavesh].is_retrograde if bhavesh in chart.planets else False
 
         # Planets in this house

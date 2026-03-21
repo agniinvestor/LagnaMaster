@@ -38,6 +38,7 @@ class DignityLevel(Enum):
     OWN_SIGN            = "Own Sign"
     FRIEND_SIGN         = "Friendly Sign"
     NEUTRAL             = "Neutral"
+    NEUTRAL_SIGN        = "Neutral"   # alias — some modules use NEUTRAL_SIGN
     ENEMY_SIGN          = "Enemy Sign"
     DEBIL               = "Debilitation"
 
