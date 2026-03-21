@@ -190,3 +190,18 @@ def compute_choghadiya(dt: datetime, sunrise_hour: float = 6.0,
     return {"choghadiya": choghadiya_name,
             "quality": _QUALITY.get(choghadiya_name, "Neutral"),
             "is_day": is_day}
+
+
+def compute_navamsha_chart(chart):
+    try:
+        from src.calculations.divisional_charts import compute_divisional_signs
+        return compute_divisional_signs(chart)
+    except Exception:
+        return None
+
+def _d9_sign_index(lon: float) -> int:
+    sign = int(lon / 30) % 12
+    deg_in_sign = lon % 30
+    pada = int(deg_in_sign / (30/9))
+    is_odd = (sign % 2 == 0)
+    return (sign * 9 + pada) % 12 if is_odd else (sign * 9 + pada + 9) % 12
