@@ -127,14 +127,14 @@ def detect_chandra_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
     sunapha = bool(planets_before)
     results.append(_yoga("Sunapha Yoga","Chandra",planets_before, sunapha,
         2.0 if sunapha else 0.0,
-        f"Planet(s) in 2nd from Moon — earned wealth",
+        "Planet(s) in 2nd from Moon — earned wealth",
         "BPHS Ch.37 v.1", dashas, on_date))
 
     # Anapha — planet(s) in 12th from Moon
     anapha = bool(planets_after)
     results.append(_yoga("Anapha Yoga","Chandra",planets_after, anapha,
         2.0 if anapha else 0.0,
-        f"Planet(s) in 12th from Moon — pleasure, enjoyment",
+        "Planet(s) in 12th from Moon — pleasure, enjoyment",
         "BPHS Ch.37 v.2", dashas, on_date))
 
     # Durudhura — planets both 2nd AND 12th from Moon

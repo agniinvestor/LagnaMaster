@@ -84,7 +84,6 @@ def _hora(longitude: float) -> int:
 def _d4(longitude: float) -> int:
     si  = int(longitude / 30) % 12
     div = int((longitude % 30) / 7.5)
-    starts = [0, 3, 6, 9]   # Ar, Cn, Li, Cp for movable; adjust by modality
     base = (si // 3) * 3    # 0,3,6,9 for each modality group
     return (base + div) % 12
 
@@ -106,7 +105,7 @@ def _d20(longitude: float) -> int:
 def _d24(longitude: float) -> int:
     si  = int(longitude / 30) % 12
     div = int((longitude % 30) * 24 / 30)
-    base = 3 if si % 2 == 0 else 8  # Odd: Leo/Sagittarius start
+    3 if si % 2 == 0 else 8  # Odd: Leo/Sagittarius start
     return (div + (4 if si % 2 == 0 else 8)) % 12
 
 def _d27(longitude: float) -> int:

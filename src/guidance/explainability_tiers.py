@@ -92,10 +92,10 @@ def build_l2(domain: str, score: float, dominant_theme: str,
     # Promise factor
     _promise_map = {
         "Strong":   f"Your chart holds strong potential in the {domain.replace('_', ' ')} area.",
-        "Moderate": f"Your chart holds moderate potential here — conditions can support progress.",
-        "Weak":     f"The natal foundation here is modest — steady effort matters more than timing.",
-        "Absent":   f"The natal chart does not hold strong promise here — reflection over action is wise.",
-        "Negated":  f"This area carries inherent challenges — patience and foundation-building are favoured.",
+        "Moderate": "Your chart holds moderate potential here — conditions can support progress.",
+        "Weak":     "The natal foundation here is modest — steady effort matters more than timing.",
+        "Absent":   "The natal chart does not hold strong promise here — reflection over action is wise.",
+        "Negated":  "This area carries inherent challenges — patience and foundation-building are favoured.",
     }
     if promise_strength in _promise_map:
         factors.append(_promise_map[promise_strength])

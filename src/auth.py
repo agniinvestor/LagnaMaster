@@ -1,6 +1,7 @@
 """src/auth.py — LagnaMaster Session 22 — multi-user JWT auth."""
 from __future__ import annotations
-import os, sqlite3
+import os
+import sqlite3
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -8,11 +9,11 @@ from typing import Optional
 
 try:
     import bcrypt; _BC = True
-except ImportError:
+except BaseException:
     _BC = False
 try:
     import jwt as _jwt; _JW = True
-except ImportError:
+except BaseException:
     _JW = False
 
 _SEC = os.environ.get("JWT_SECRET", "dev-secret-change-in-production")
@@ -56,13 +57,15 @@ def init_user_db(path=_SENTINEL):
 
 def _hp(pw):
     if not _BC:
-        import hashlib, hmac
+        import hashlib
+        import hmac
         return "sha256:"+hmac.new(_SEC.encode(),pw.encode(),hashlib.sha256).hexdigest()
     return bcrypt.hashpw(pw.encode(), bcrypt.gensalt(rounds=12)).decode()
 
 def _vp(pw, h):
     if h.startswith("sha256:"):
-        import hashlib, hmac
+        import hashlib
+        import hmac
         e = hmac.new(_SEC.encode(),pw.encode(),hashlib.sha256).hexdigest()
         return hmac.compare_digest(e, h[7:])
     return _BC and bcrypt.checkpw(pw.encode(), h.encode())

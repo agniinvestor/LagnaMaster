@@ -66,8 +66,7 @@ _SIGNS = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
 def compute_stelliums(chart) -> list[Stellium]:
     """Find all signs with 3+ planets."""
     from src.calculations.house_lord import compute_house_map
-    hmap = compute_house_map(chart)
-    ph = hmap.planet_house
+    compute_house_map(chart)
 
     # Group planets by sign
     by_sign: dict[int, list[str]] = {}

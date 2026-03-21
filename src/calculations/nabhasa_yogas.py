@@ -77,7 +77,7 @@ def detect_nabhasa_yogas(chart) -> list[NabhasaYoga]:
     # ── GROUP B: Dala (2 yogas) ───────────────────────────────────────────────
     occ_houses = _occupied_houses(chart)
     all_kendra = all(h in _KENDRA for h in occ_houses)
-    all_panap  = all(h in {2,5,8,11} for h in occ_houses)  # panapara
+    all(h in {2,5,8,11} for h in occ_houses)  # panapara
     all_apoklima = all(h in {3,6,9,12} for h in occ_houses)
 
     yogas.append(NabhasaYoga("Śubha", "Dala", all_kendra,

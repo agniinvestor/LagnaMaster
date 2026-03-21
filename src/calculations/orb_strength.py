@@ -59,7 +59,7 @@ def aspect_strength(p1_lon: float, p2_lon: float,
     diff = _circular_diff(p1_lon, p2_lon)
     # For 7th aspect: target is 180° ± orb
     # We compute general orb from nearest aspect angle
-    sign_diff = int(diff / 30)
+    int(diff / 30)
     remainder = diff % 30
     # Nearest aspect angle
     nearest = min(remainder, 30 - remainder)

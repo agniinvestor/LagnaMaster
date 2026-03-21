@@ -1,6 +1,7 @@
 """Monte Carlo birth time sensitivity analysis (Session 11)."""
 from __future__ import annotations
-import random,statistics
+import random
+import statistics
 from concurrent.futures import ProcessPoolExecutor,as_completed
 from dataclasses import dataclass
 from datetime import date
@@ -23,7 +24,7 @@ def _worker(args):
             from src.calculations.vimshottari_dasa import compute_vimshottari_dasa,current_dasha
             from datetime import date as _d
             ds=compute_vimshottari_dasa(c,_d.fromisoformat(bdi)); md,_=current_dasha(ds); ml=md.lord
-        except: pass
+        except Exception: pass
     return{"lagna_sign":c.lagna_sign,"md_lord":ml,
            "house_scores":{h:hs.final_score for h,hs in s.houses.items()},
            "house_ratings":{h:hs.rating for h,hs in s.houses.items()}}

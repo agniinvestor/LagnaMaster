@@ -15,7 +15,7 @@ _GA=["Deva","Manava","Rakshasa","Deva","Deva","Manava","Deva","Deva","Rakshasa",
 _GT={("Deva","Deva"):6.,("Deva","Manava"):6.,("Deva","Rakshasa"):0.,("Manava","Deva"):5.,("Manava","Manava"):6.,("Manava","Rakshasa"):0.,("Rakshasa","Deva"):1.,("Rakshasa","Manava"):0.,("Rakshasa","Rakshasa"):6.}
 _NA=["Aadi","Madhya","Antya","Antya","Madhya","Aadi","Aadi","Madhya","Antya","Antya","Madhya","Aadi","Aadi","Madhya","Antya","Antya","Madhya","Aadi","Aadi","Madhya","Antya","Antya","Madhya","Aadi","Aadi","Madhya","Antya"]
 _MH={1,2,4,7,8,12}
-def _ni(l): return min(int(l/(360/27)),26)
+def _ni(lon): return min(int(lon/(360/27)),26)
 def _ws(p,r): return(p-r)%12+1
 def _vs(ms,fs): return 1. if _VARNA.get(ms,3)<=_VARNA.get(fs,3) else 0.
 def _vash(ms,fs):

@@ -59,7 +59,6 @@ def _sub_at(longitude: float) -> tuple[str, str, str, str]:
             # Sub-sub: further divide
             pos_in_sub = pos_in_nak - cumulative
             start_j = _VIM_SEQ.index(planet)
-            sub_span = span
             cum_j = 0.0
             for j in range(9):
                 pl_j = _VIM_SEQ[(start_j + j) % 9]
