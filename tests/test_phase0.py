@@ -339,42 +339,6 @@ class TestKemadruma:
     """Phaladeepika Ch.6 v.56-60 — all 3 conditions + 4 cancellations."""
 
     def test_kemadruma_all_conditions(self):
-        """Moon isolated — no adjacent, no kendra, no benefic aspect."""
-        from src.calculations.scoring_patches import check_kemadruma
-        # Moon in Aries (0); no planets adjacent (Pisces/Taurus) or in kendra from Moon
-        # Moon in Aries (sign 0). Adjacent signs: Pisces(11), Taurus(1).
-        # Kendra from Moon: H1=Aries(0), H4=Cancer(3), H7=Libra(6), H10=Capricorn(9).
-        # Place all planets in Pisces (sign 11 = 330°) — H12 from Moon, not adjacent, not kendra.
-        chart = make_chart(0.0,  # Aries Lagna
-                           Moon=0.0,     # Aries
-                           Sun=330.0,    # Pisces — H12 from Moon, not adjacent, not kendra
-                           Mars=330.0,   # Pisces
-                           Mercury=330.0,
-                           Jupiter=330.0,
-                           Venus=330.0,
-                           Saturn=330.0,
-                           Rahu=40.0, Ketu=220.0)
-        r = check_kemadruma(chart)
-        assert r.condition1_no_adjacent is True
-        assert r.condition2_no_kendra_moon is True
-
-    def test_kemadruma_cancelled_by_benefic_aspect(self):
-        """Kemadruma cancelled when Moon aspected by Jupiter."""
-        from src.calculations.scoring_patches import check_kemadruma
-        # Moon in Aries (H1); Jupiter in Libra (H7 from Moon = full aspect)
-        chart = make_chart(0.0,
-                           Moon=0.0,     # Aries
-                           Jupiter=180.0,  # Libra — 7th from Moon
-                           Sun=270.0, Mars=270.0, Mercury=270.0,
-                           Venus=270.0, Saturn=270.0, Rahu=40.0, Ketu=220.0)
-        r = check_kemadruma(chart)
-        assert r.cancel_benefic_aspect_or_conjunct is True
-        assert r.is_kemadruma is False
-
-    def test_kemadruma_cancelled_moon_in_kendra(self):
-        """Kemadruma cancelled when Moon is in Kendra from Lagna."""
-        from src.calculations.scoring_patches import check_kemadruma
-    def test_kemadruma_all_conditions(self):
         """Moon isolated: no adjacent, no kendra from Moon, no benefic aspect."""
         from src.calculations.scoring_patches import check_kemadruma
         # Moon in Aries(0). Adjacent=Pisces(11),Taurus(1). Kendra from Moon=0,3,6,9.
