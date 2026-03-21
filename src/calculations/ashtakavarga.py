@@ -267,9 +267,9 @@ def compute_ashtakavarga(chart) -> AshtakavargaChart:
 
     sarva_table = AshtakavargaTable(
         planet="Sarva",
-        raw_bindus=sarva_raw,   # = sum of all 7 planet reduced bindus per sign
-        bindus=sarva_reduced,   # after Trikona+Ekadhipatya Shodhana on Sarva
-        total=sum(sarva_reduced),
+        raw_bindus=sarva_raw,
+        bindus=sarva_raw,   # use raw for interpretation; over-reduction stored separately
+        total=sum(sarva_raw),
     )
 
     return AshtakavargaChart(planet_av=planet_tables, sarva=sarva_table)
