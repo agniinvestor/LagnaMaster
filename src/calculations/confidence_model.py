@@ -225,3 +225,9 @@ def compute_chart_confidence(
         overall_reliability=reliability,
         recommendations=recs,
     )
+
+
+def compute_confidence(chart, birth_time_uncertainty_minutes: float = 5.0):
+    """Alias for compute_chart_confidence with auto-generated base scores."""
+    base_scores = {h: 0.0 for h in range(1, 13)}
+    return compute_chart_confidence(chart, base_scores, birth_time_uncertainty_minutes)
