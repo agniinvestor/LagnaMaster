@@ -121,7 +121,7 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
     from src.calculations.house_lord import compute_house_map
     try:
         fr = compute_functional_roles(chart)
-        hmap = compute_house_map(chart)
+        compute_house_map(chart)
         func_malefics = fr.functional_malefics | fr.dusthana_lords
 
         for p in yoga_planets:

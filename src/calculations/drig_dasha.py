@@ -85,7 +85,6 @@ def compute_drig_dasha(chart, birth_date: date) -> list[DrigPeriod]:
     """
     lagna_si = chart.lagna_sign_index
     moon_pos = chart.planets.get("Moon")
-    moon_si = moon_pos.sign_index if moon_pos else 0
 
     # Determine starting sign (simplified: use lagna)
     # Full rule: compare Lagna lord strength vs Moon strength

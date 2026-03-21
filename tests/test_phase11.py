@@ -1,6 +1,8 @@
 """tests/test_phase11.py — Phase 11: Privacy & Legal (S76–78)"""
 from __future__ import annotations
-import pytest, tempfile, os
+import pytest
+import tempfile
+import os
 from pathlib import Path
 
 @pytest.fixture

@@ -193,9 +193,13 @@ def compute_choghadiya(dt: datetime, sunrise_hour: float = 6.0,
 
 
 def compute_navamsha_chart(chart):
+    """Return {planet: d9_sign_index, 'lagna': d9_sign_index} dict for UI and calculations."""
     try:
         from src.calculations.divisional_charts import compute_divisional_signs
-        return compute_divisional_signs(chart)
+        dmap = compute_divisional_signs(chart)
+        result = {p: signs["D9"] for p, signs in dmap.planets.items()}
+        result["lagna"] = dmap.lagna["D9"]
+        return result
     except Exception:
         return None
 

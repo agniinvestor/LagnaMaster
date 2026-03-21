@@ -112,7 +112,7 @@ def detect_jaimini_yogas(chart) -> list[JaiminiYoga]:
     al_quality = len(al7_benefics) - len(al7_malefics)
     yogas.append(JaiminiYoga(
         "Arudha 7th Quality", al_quality > 0,
-        float(al_quality), 
+        float(al_quality),
         f"7th from AL: benefics={al7_benefics}, malefics={al7_malefics}",
         "Jaimini Sutra 3.3"
     ))

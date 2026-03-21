@@ -1,6 +1,6 @@
 # LagnaMaster — Module Reference
 
-## src/calculations/ — 49 modules across 7 phases
+## src/calculations/ — 84 modules across 19 phases
 
 ### Phase 1 — Pilot (Sessions 1–10)
 | Module | Key function | Source sheet |
@@ -516,6 +516,8 @@ Hora: planetary hour from sunrise, 24 per day. Choghadiya: 8 day + 8 night perio
 | Shoola | shoola_dasha.py | variable | Lagna trine |
 | Sudasa | shoola_dasha.py | variable | Lagna/8th sign |
 | Tara | tara_dasha.py | 120yr | Moon nakshatra (9 categories) |
+| Drig | drig_dasha.py | variable | Sign aspects received |
+| Lagna Kendradi | lagna_kendradi_dasha.py | variable | Kendra/Panapara/Apoklima from Lagna |
 
 ## Upaya Gemstone Table (PVRNR Table 77)
 
@@ -560,3 +562,99 @@ Hora: planetary hour from sunrise, 24 per day. Choghadiya: 8 day + 8 night perio
 62. Mundane SAV threshold: ≥30 rekhas = strong house (D-10 example PVRNR p167)
 63. panchanga.py supersedes panchang.py; test_panchanga_legacy.py is empty stub
 64. Bandhu Yoga in jaimini_full.py uses self-contained AK lookup (no global ak_planet)
+
+---
+
+### Phase 19 — Advanced Dashas, Yogas & Plugin Architecture (Sessions 101–108)
+
+| Module | Key function | Source |
+|--------|-------------|--------|
+| drig_dasha.py | compute_drig_dasha(chart, birth_date) → list[DrigDashaPeriod] | PVRNR preface p8; BPHS Ch.41-43 |
+| lagna_kendradi_dasha.py | compute_lagna_kendradi_dasha(chart, birth_date) → list[LagnaKendradiPeriod] | PVRNR preface p8 |
+| double_transit.py | compute_double_transit(chart, transit_date, domain) → DoubleTransitResult | K.N. Rao double transit theory |
+| upapada_lagna.py | compute_upapada(chart) → UpapadaAnalysis | PVRNR Ch.9 p97-104 |
+| kala_sarpa.py | compute_kala_sarpa(chart) → KalaSarpaResult | Modern convention (not BPHS) |
+| nabhasa_yogas.py | detect_nabhasa_yogas(chart) → list[NabhasaYoga] | BPHS Ch.35 — 32 types |
+| pitr_dosha.py | compute_pitr_dosha(chart) → PitrDoshaResult | Modern convention (not BPHS) |
+| rule_plugin.py | register_yoga() + register_scorer() + apply_all_plugins(chart) | Plugin architecture |
+
+## Drig Dasha Reference (PVRNR preface p8)
+
+One of the "two rasi dasas that don't use navamsha." Period lengths are determined by
+the number of rasi aspects received by each sign. Sequence starts from Lagna (if Lagna
+stronger than Moon) or Moon sign (if Moon stronger). Odd signs go forward, even signs
+go backward through the zodiac.
+
+| Sign type | Direction |
+|-----------|----------|
+| Odd Lagna | Forward through zodiac |
+| Even Lagna | Reverse through zodiac |
+
+## Lagna Kendradi Dasha Reference
+
+Signs grouped from Lagna by house type, processed in order:
+- **Group 1 — Kendra**: signs at H1, H4, H7, H10 from Lagna
+- **Group 2 — Panapara**: signs at H2, H5, H8, H11 from Lagna
+- **Group 3 — Apoklima**: signs at H3, H6, H9, H12 from Lagna
+
+Period length per sign = (planet count in sign) + 1 (minimum 1yr, maximum 12yr).
+
+## Double Transit Reference (K.N. Rao)
+
+| Domain | Key house | Confirmation threshold |
+|--------|----------|----------------------|
+| marriage | H7 lord, D9 Lagna, natal Moon | Both Jupiter + Saturn favorable |
+| career | H10 lord | Both Jupiter + Saturn favorable |
+| general | Dasha lord natal position | Both favorable |
+
+Double confirmed = both transit aspects favorable.
+Partial = one favorable, one challenging.
+Not activated = neither.
+
+## Nabhasa Yoga Groups (BPHS Ch.35)
+
+| Group | Count | Basis |
+|-------|-------|-------|
+| Āśraya | 3 | Sign type (movable/fixed/dual) all planets occupy |
+| Dala | 2 | House type (kendra/trikona) all planets occupy |
+| Ākriti | 20 | Geometric distribution pattern across signs |
+| Sankhya | 7 | Total number of occupied signs (1–7) |
+
+Only the strongest yoga in each group manifests (BPHS rule).
+
+## Modern Convention Disclaimer
+
+`kala_sarpa.py` and `pitr_dosha.py` are labelled "modern practitioner convention"
+because they do not appear in classical texts (BPHS, Parashara). Both modules carry
+a `classical_disclaimer` field in their result dataclass. This is non-negotiable.
+
+## Plugin Architecture Reference
+
+```python
+# Register a custom yoga
+@register_yoga("Name", source="Regional tradition", score_if_present=1.5)
+def my_yoga(chart) -> bool: ...
+
+# Register a custom scorer
+@register_scorer("Name", source="Custom", applies_to_houses=[1, 7])
+def my_scorer(chart, house) -> float: ...
+
+# Run all plugins
+results = apply_all_plugins(chart)
+# results.yoga_results   → list[PluginYogaResult]
+# results.score_results  → list[PluginScoreResult]
+# results.total_modifier → float (sum of all score modifiers)
+```
+
+All plugin results carry `plugin_note = "Custom/extended rule — not core classical engine"`.
+
+## Updated System Invariants (Phase 19 additions)
+
+65. Drig Dasha: sequence starts Lagna if Lagna>Moon, else Moon sign; odd=forward, even=reverse
+66. Lagna Kendradi: Kendra group first, then Panapara, then Apoklima; period = planets+1
+67. Double Transit: Both Jupiter+Saturn must aspect for "Double confirmation" signal
+68. Upapada: if computed UL falls in H1 or H7 from AL, shift 10 signs (PVRNR exception)
+69. Kala Sarpa: classical_disclaimer field is mandatory — yoga not in BPHS
+70. Nabhasa: only strongest yoga per group manifests; all 32 types from BPHS Ch.35
+71. Pitr Dosha: classical_disclaimer field mandatory; severity = Strong/Moderate/Mild/Not present
+72. Plugin yogas: all results carry plugin_note; never override core engine outputs

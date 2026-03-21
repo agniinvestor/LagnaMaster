@@ -20,7 +20,9 @@ Public API
 from __future__ import annotations
 from dataclasses import dataclass, field, asdict
 from datetime import date, datetime
-import json, sqlite3, uuid
+import json
+import sqlite3
+import uuid
 from pathlib import Path
 
 _EVENT_TYPES = {"Career","Marriage","Divorce","Health_Crisis",

@@ -125,6 +125,9 @@ def analyze_prashna(chart, query_type: str = "general",
         positive_signals += 1
         reasoning.append(f"Moon in H{moon_house} supports the query")
 
+    if not reasoning:
+        reasoning.append(f"Moon in {moon_nak_name} nakshatra — general indicator for {query_type} query")
+
     if positive_signals >= 4:
         verdict, conf = "Yes — strongly indicated", "High"
     elif positive_signals >= 2:

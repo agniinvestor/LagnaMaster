@@ -118,7 +118,6 @@ def score_chart_v2(chart) -> ChartScoresV2:
         ph = hmap.planet_house.get(planet, 0)
         if ph == 0: return False
         diff = (target_house - ph) % 12
-        standard = {7: diff == 6}
         extras = {
             "Mars":    {3, 7, 9},  # 4th, 7th, 8th from Mars
             "Jupiter": {4, 6, 9},  # 5th, 7th, 9th
@@ -200,7 +199,7 @@ def score_chart_v2(chart) -> ChartScoresV2:
             rule("R06", "Bhavesh with func. benefic", 0, triggered=False)
 
         # R07 (WC) benefic aspects bhavesh sign
-        bh_si = chart.planets[bhavesh].sign_index if bhavesh in chart.planets else -1
+        chart.planets[bhavesh].sign_index if bhavesh in chart.planets else -1
         bh_h_from_lagna = bh_house
         fb_asp_bh = [p for p in chart.planets if is_func_benefic(p) and aspects(p, bh_h_from_lagna)]
         if fb_asp_bh:

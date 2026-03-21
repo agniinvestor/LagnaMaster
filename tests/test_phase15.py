@@ -264,7 +264,7 @@ class TestAshtottariDasha:
 
     def test_total_years(self, chart):
         from src.calculations.ashtottari_dasha import compute_ashtottari_dasha, _ASHTO_YEARS
-        periods = compute_ashtottari_dasha(chart, BD)
+        compute_ashtottari_dasha(chart, BD)
         # One cycle = 108 years
         cycle_years = sum(_ASHTO_YEARS)
         assert cycle_years == 108

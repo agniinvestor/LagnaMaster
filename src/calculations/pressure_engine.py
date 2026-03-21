@@ -149,7 +149,7 @@ def structural_vulnerability(chart) -> tuple[float, list[str]]:
     # Dusthana interlocking
     d6_lord  = roles.house_lords.get(6, "")
     d8_lord  = roles.house_lords.get(8, "")
-    d12_lord = roles.house_lords.get(12, "")
+    roles.house_lords.get(12, "")
     if d6_lord in hmap.planet_house:
         if hmap.planet_house[d6_lord] in {8, 12}:
             score += 1.0; drivers.append("H6 lord in H8/H12 (dusthana interlocking)")
@@ -222,7 +222,7 @@ def transit_load(chart, on_date: date) -> tuple[float, str]:
     from src.calculations.gochara import compute_gochara
     from src.calculations.house_lord import compute_house_map
 
-    hmap = compute_house_map(chart)
+    compute_house_map(chart)
     moon_natal_si = chart.planets["Moon"].sign_index
     lagna_si      = chart.lagna_sign_index
 
@@ -307,7 +307,7 @@ def resilience_factor(chart, dashas: list, on_date: date) -> tuple[float, str]:
     try:
         md, ad = current_dasha(dashas, on_date)
         if md.lord in roles.yogakarakas or ad.lord in roles.yogakarakas:
-            resilience += 0.25; notes.append(f"Yogakaraka dasha active")
+            resilience += 0.25; notes.append("Yogakaraka dasha active")
     except Exception:
         pass
 

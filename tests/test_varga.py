@@ -230,17 +230,17 @@ class TestD9Navamsha:
         # D9 lagna: access via planets dict for lagna sign
         try:
             if hasattr(div, 'planets') and 'lagna' in div.planets:
-                expected_lagna_si = div.planets['lagna'].get('D9', india_chart.lagna_sign_index)
+                div.planets['lagna'].get('D9', india_chart.lagna_sign_index)
             else:
-                expected_lagna_si = india_chart.lagna_sign_index
+                pass
         except Exception:
-            expected_lagna_si = india_chart.lagna_sign_index
+            pass
         assert 0 <= india_varga.d9().varga_lagna_sign_index <= 11
 
     def test_d9_moon_matches_panchanga(self, india_chart, india_varga):
         from src.calculations.panchanga import compute_navamsha_chart
-        nav = compute_navamsha_chart(india_chart)
-        expected_moon_si = india_chart.planets["Moon"].sign_index  # DivisionalMap not subscriptable
+        compute_navamsha_chart(india_chart)
+        india_chart.planets["Moon"].sign_index  # DivisionalMap not subscriptable
         assert 0 <= india_varga.d9().planets["Moon"].varga_sign_index <= 11
 
     def test_d9_fire_sign_starts_aries(self, varga_fns):

@@ -162,7 +162,6 @@ class TestKPFull:
 
     def test_kp_chain_all_9_possible_sublords(self):
         from src.calculations.kp_full import kp_sub_lord_chain
-        all_planets = {"Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn","Rahu","Ketu"}
         # Test a range of longitudes
         seen = set()
         for i in range(0, 360, 5):
@@ -325,7 +324,8 @@ class TestEmpirica:
 
     def test_three_seed_events_schema(self):
         """Verify the 3 demonstration events from REF_EmpiricaSchema can be recorded."""
-        import tempfile, os
+        import tempfile
+        import os
         from src.calculations.empirica import init_empirica_db, record_event, EmpiricalEvent, get_events
         with tempfile.TemporaryDirectory() as tmpdir:
             db = os.path.join(tmpdir, "seed.db")
