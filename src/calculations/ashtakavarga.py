@@ -318,3 +318,16 @@ def kakshya_has_bindu(
             return True
     return False
 FIXED_TOTALS = FIXED_TOTALS_RAW
+
+
+# ── Backward-compatibility: old tests expect pre-Shodhana totals ──
+def compute_ashtakavarga_raw(chart) -> dict:
+    """Returns pre-Shodhana bindu totals keyed by planet name.
+    Use compute_ashtakavarga() for the correct post-Shodhana values."""
+    result = {}
+    for planet in _PLANETS:
+        raw = _compute_raw_bindus(planet, chart)
+        result[planet] = {"bindus": raw, "total": sum(raw)}
+    sarva = [sum(result[p]["bindus"][i] for p in _PLANETS) for i in range(12)]
+    result["Sarva"] = {"bindus": sarva, "total": sum(sarva)}
+    return result

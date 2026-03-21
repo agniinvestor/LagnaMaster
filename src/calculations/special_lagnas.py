@@ -140,3 +140,24 @@ def compute_special_lagnas(
         pranapada=pranapada,
         upapada=upapada_si,
     )
+
+
+# ── Backward-compatibility properties ──
+_SIGN_NAMES_SL = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
+                  "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
+
+def _add_compat(cls):
+    """Add _sign and _index properties for each lagna field."""
+    fields = ["hora_lagna","ghati_lagna","bhava_lagna","varnada_lagna",
+              "sree_lagna","indu_lagna","pranapada","upapada"]
+    for f in fields:
+        def make_sign(fname):
+            return property(lambda self: _SIGN_NAMES_SL[getattr(self, fname)])
+        def make_index(fname):
+            return property(lambda self: getattr(self, fname))
+        setattr(cls, f + "_sign", make_sign(f))
+        setattr(cls, f + "_index", make_index(f))
+        setattr(cls, f + "_sign_name", make_sign(f))
+    return cls
+
+SpecialLagnas = _add_compat(SpecialLagnas)

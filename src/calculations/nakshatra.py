@@ -29,9 +29,7 @@ NAKSHATRA_LORDS = [
     "Moon", "Mars", "Rahu", "Jupiter", "Saturn", "Mercury",
 ]
 
-GANDA_MOOL = {
-    "Ashwini", "Ashlesha", "Magha", "Jyeshtha", "Mula", "Revati"
-}
+GANDA_MOOL = {"Ashwini", "Ashlesha", "Magha", "Jyeshtha", "Mula", "Revati"}
 
 # D9 start signs per element (Parasara method)
 # Fire signs (0,4,8) start D9 from Aries (0)
@@ -51,7 +49,7 @@ class NakshatraPosition:
     nakshatra_index: int   # 0-26
     pada: int              # 1-4
     dasha_lord: str
-    navamsha_sign: int     # D9 sign index 0-11
+    navamsha_sign: str     # D9 sign name (e.g. 'Aries') — backward compat
     navamsha_sign_name: str
     is_ganda_mool: bool
     longitude: float
@@ -107,7 +105,7 @@ def nakshatra_position(longitude: float) -> NakshatraPosition:
         nakshatra_index=nak_idx,
         pada=pada,
         dasha_lord=lord,
-        navamsha_sign=d9_si,
+        navamsha_sign=_SIGN_NAMES[d9_si],
         navamsha_sign_name=_SIGN_NAMES[d9_si],
         is_ganda_mool=(name in GANDA_MOOL),
         longitude=lon,
@@ -123,3 +121,18 @@ def compute_navamsha_chart(chart) -> dict[str, int]:
     for name, planet in chart.planets.items():
         result[name] = _d9_sign_index(planet.longitude)
     return result
+
+
+# ── Backward-compatibility aliases ──
+NAKSHATRAS = NAKSHATRA_NAMES          # old name used by existing tests/modules
+NAKSHATRA_SPAN = _NAK_WIDTH           # old name: degrees per nakshatra = 40/3
+
+
+# ── Backward-compatibility: old NAKSHATRAS was list of (name, lord) tuples ──
+NAKSHATRAS_TUPLES = list(zip(NAKSHATRA_NAMES, NAKSHATRA_LORDS))
+# Override NAKSHATRAS to be tuples if old code unpacks 2 values
+# Some old tests unpack 3: (name, lord, span) -- provide that too
+NAKSHATRAS_FULL = [(NAKSHATRA_NAMES[i], NAKSHATRA_LORDS[i], NAKSHATRA_NAMES[i] in GANDA_MOOL) for i in range(27)]
+
+
+# navamsha_sign now returns sign name string directly (see field definition above)

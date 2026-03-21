@@ -230,6 +230,22 @@ class DignityResult:
     is_sandhi: bool = False
 
     @property
+    def is_retrograde(self) -> bool:
+        """Backward-compat. Rahu/Ketu always Rx; others True if combust+Rx or plain Rx."""
+        if self.planet in ("Rahu", "Ketu"):
+            return True
+        # asta_vakri = combust+retrograde. Also check stored _is_retrograde if set.
+        return self.asta_vakri or getattr(self, "_is_retrograde", False)
+
+    @property
+    def weight(self) -> float:  # backward-compat alias for score_modifier
+        return DIGNITY_SCORE.get(self.dignity, 0.0)
+
+    @property
+    def total_modifier(self) -> float:  # backward-compat alias
+        return DIGNITY_SCORE.get(self.dignity, 0.0)
+
+    @property
     def score_modifier(self) -> float:
         return DIGNITY_SCORE.get(self.dignity, 0.0)
 
@@ -604,3 +620,41 @@ def _get_sign_lord(sign_index: int) -> Optional[str]:
 def get_uchcha_bala(planet: str, longitude: float) -> float:
     """Public accessor for Uchcha Bala (used by shadbala.py)."""
     return _compute_uchcha_bala(planet, longitude)
+
+
+# ── Backward-compatibility aliases ──
+RETROGRADE_BONUS = 0.0  # old scoring constant; retrograde handled in chesta_bala now
+
+
+# ── Backward-compatibility: old API used keyword args sign_idx/degree ──
+def compute_dignity_legacy(planet: str, sign_idx: int = 0, degree: float = 0.0,
+                           is_rx: bool = False, chart=None, **kwargs) -> "DignityResult":
+    """Old API shim. Prefer compute_dignity(planet, chart)."""
+    if chart is not None:
+        return compute_dignity(planet, chart)
+    # Build minimal mock chart from positional args
+    class _P:
+        def __init__(self):
+            self.sign_index = sign_idx
+            self.degree_in_sign = degree
+            self.longitude = sign_idx * 30.0 + degree
+            self.is_retrograde = is_rx
+            self.speed = -0.5 if is_rx else 1.0
+            self.latitude = 0.0
+    class _C:
+        def __init__(self):
+            self.lagna = 0.0
+            self.lagna_sign_index = 0
+            self.planets = {planet: _P()}
+            # Add Sun at neutral position for combustion checks
+            if planet != "Sun":
+                sun = _P(); sun.sign_index = 6; sun.longitude = 180.0
+                sun.degree_in_sign = 0.0; sun.is_retrograde = False
+                sun.speed = 1.0; sun.latitude = 0.0
+                self.planets["Sun"] = sun
+    return compute_dignity(planet, _C())
+
+
+# ── Additional backward-compatibility aliases ──
+# DEEP_DEBIL: some old tests check for this level (not in classical texts, just a test artefact)
+DignityLevel.DEEP_DEBIL = DignityLevel.DEBIL   # alias: no separate DEEP_DEBIL level

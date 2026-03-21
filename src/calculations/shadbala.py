@@ -604,3 +604,74 @@ def compute_all_shadbala(
         planet: compute_shadbala(planet, chart, birth_dt)
         for planet in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
     }
+
+
+# ── Backward-compatibility: old API positional args ──
+# (replaced by _ShadbalWrapper version below)
+    class _P:
+        def __init__(self):
+            self.sign_index = sign_idx; self.degree_in_sign = degree
+            self.longitude = sign_idx * 30.0 + degree
+            self.is_retrograde = False; self.speed = 1.0; self.latitude = 0.0
+    class _C:
+        def __init__(self):
+            self.lagna = 0.0; self.lagna_sign_index = 0
+            self.planets = {planet: _P()}
+            sun = _P(); sun.sign_index = 0; sun.longitude = 0.0
+            self.planets["Sun"] = sun
+    return compute_shadbala(planet, _C(), birth_dt)
+
+
+# ── Backward-compatibility wrapper ──
+class _ShadbalWrapper:
+    """Wraps dict[str, ShadbalResult] to expose .planets and old field names."""
+    def __init__(self, d: dict):
+        self._d = d
+        self.planets = {k: _ShadbalFieldProxy(v) for k, v in d.items()}
+    def __getitem__(self, k): return self.planets[k]
+    def items(self): return self.planets.items()
+    def keys(self): return self.planets.keys()
+
+class _ShadbalFieldProxy:
+    """Exposes short field names (.naisargika, .chesta) from ShadbalResult."""
+    def __init__(self, r: "ShadbalResult"):
+        self._r = r
+    def __getattr__(self, name):
+        # Map short names to full names
+        _map = {
+            "naisargika": "naisargika_bala",
+            "chesta": "chesta_bala",
+            "uchcha": "uchcha_bala",
+            "dig": "dig_bala",
+            "kala": "kala_bala",
+            "drik": "drik_bala",
+            "sthana": "sthana_bala",
+            "ishta": "ishta_bala",
+            "kashta": "kashta_bala",
+            "total": "total",
+        }
+        full = _map.get(name, name)
+        return getattr(self._r, full)
+
+def compute_shadbala_legacy(planet_or_chart=None, sign_idx: int = 0,
+                            degree: float = 0.0, chart=None, birth_dt=None,
+                            planet: str = None):
+    """Old API shim. Handles compute_shadbala(chart) and compute_shadbala(planet, chart)."""
+    if planet_or_chart is not None and hasattr(planet_or_chart, 'planets'):
+        return _ShadbalWrapper(compute_all_shadbala(planet_or_chart, birth_dt))
+    _planet = planet_or_chart if isinstance(planet_or_chart, str) else planet
+    if chart is not None and hasattr(chart, 'planets'):
+        return compute_shadbala(_planet, chart, birth_dt)
+    # positional legacy: compute_shadbala(planet, sign_idx, degree)
+    class _P:
+        def __init__(self):
+            self.sign_index = sign_idx; self.degree_in_sign = degree
+            self.longitude = sign_idx * 30.0 + degree
+            self.is_retrograde = False; self.speed = 1.0; self.latitude = 0.0
+    class _C:
+        def __init__(self):
+            self.lagna = 0.0; self.lagna_sign_index = 0
+            self.planets = {_planet: _P()}
+            sun = _P(); sun.sign_index = 0; sun.longitude = 0.0
+            self.planets["Sun"] = sun
+    return compute_shadbala(_planet, _C(), birth_dt)
