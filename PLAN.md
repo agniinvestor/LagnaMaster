@@ -273,14 +273,30 @@ Approved design direction (March 2026):
 **Architecture:** All consumer traffic passes through the guidance pipeline;
                   engine modules are never called directly by consumers
 
-**Readiness assessment (as of Session 70):**
-- Engine layer: ~100% complete (63 modules, 920 tests)
-- Language/safety layer: ~0% (Phase 10 — blocking)
-- Privacy/legal: ~15% (Phase 11 — blocking)
-- Consumer frontend: ~10% (Phase 12)
-- Feedback governance: ~20% (Phase 13)
-- Educational/mature features: ~0% (Phase 14)
-- Overall consumer readiness: ~25%
+**Readiness assessment (as of Session 100):**
+
+| Layer | Session 70 | Session 100 | Notes |
+|-------|-----------|------------|-------|
+| Jyotish engine (natal) | ~100% | ~100% | 63 modules, 963 tests |
+| Muhurta / Prashna | 0% | ~100% | Sessions 91–93 |
+| Additional dasha systems | ~60% | ~100% | Kalachakra, Ashtottari, Shoola, Sudasa, Tara (S94–96, S100) |
+| Upaya (remedial) | 0% | ~100% | Session 97 — classical prescriptions |
+| Mundane astrology | 0% | ~100% | Session 98 |
+| Language & safety pipeline | 0% | ~100% | Sessions 71–75 — score_to_language, fatalism_filter, L1/L2/L3 |
+| Privacy & legal (GDPR/DPDP) | ~15% | ~100% | Sessions 76–78 — consent, erasure, data minimisation |
+| Consumer frontend | ~10% | ~80% | Sessions 79–83 — components built, integration testing pending |
+| Feedback governance | ~20% | ~100% | Sessions 84–86 — human-supervised queue, harm escalation |
+| Educational / reflection | 0% | ~100% | Sessions 87–88 — learn mode, Socratic prompts |
+| Practitioner handoff | 0% | ~100% | Session 89 — sanitised summary, referral logic |
+| Mobile API | 0% | ~80% | Session 90 — router built, React Native shell pending |
+| **Overall consumer readiness** | **~25%** | **~90%** | Integration testing + practitioner directory are outstanding |
+
+**Remaining to production:**
+1. End-to-end integration testing of Next.js frontend ↔ FastAPI ↔ guidance pipeline
+2. React Native mobile shell (router complete, shell pending)
+3. Practitioner opt-in directory (S89 infrastructure ready)
+4. GDPR-compliant privacy policy and ToS text (legal team)
+5. First 50 empirica events for accuracy baseline
 
 ---
 
