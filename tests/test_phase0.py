@@ -83,13 +83,6 @@ class TestMooltrikonaRanges:
         r = compute_dignity("Mercury", chart)
         assert r.dignity == DignityLevel.MOOLTRIKONA
 
-    def test_mercury_mt_end_boundary(self):
-        """Mercury at 20° Virgo is OWN_SIGN (MT ends at 20°)."""
-        from src.calculations.dignity import compute_dignity, DignityLevel
-        chart = make_chart(0.0, Mercury=5 * 30 + 20.0)
-        r = compute_dignity("Mercury", chart)
-        assert r.dignity == DignityLevel.OWN_SIGN
-    def test_mercury_mt_end_boundary(self):
         """Mercury 20 Virgo: past MT end(20), |20-15|=5=ORB, DEEP_EXALT or EXALT."""
         from src.calculations.dignity import compute_dignity, DignityLevel
         chart = make_chart(0.0, Mercury=5 * 30 + 20.0)
