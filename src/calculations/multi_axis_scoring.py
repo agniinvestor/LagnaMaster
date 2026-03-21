@@ -281,7 +281,7 @@ def _make_frame_funcs(frame_lagna_si: int, chart, school: str):
         lagna_sign_index=frame_lagna_si,
         lagna_sign=["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
                     "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"][frame_lagna_si],
-        planets=chart.planets,
+        planets=chart.planets,  # noqa: F841
     )
     roles = compute_functional_roles(fake)
     return roles.is_functional_benefic, roles.is_functional_malefic

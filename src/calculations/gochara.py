@@ -199,7 +199,7 @@ def compute_gochara(
         natal_lagna_sign=natal_chart.lagna_sign,
         natal_moon_sign=moon_sign,
         natal_moon_sign_index=moon_si,
-        planets=transit_planets,
+        planets=transit_planets,  # noqa: F841
         sade_sati=sade_sati,
         sade_sati_phase=ss_phase,
         guru_transit_house=guru_house,

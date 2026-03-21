@@ -88,7 +88,7 @@ def _pancha_mahapurusha(chart: BirthChart, hmap) -> list[Yoga]:
                 name=yoga_name,
                 category="Pancha Mahapurusha",
                 nature="benefic",
-                planets=[planet],
+                planets=[planet],  # noqa: F841
                 description=(
                     f"{planet} in {dignity} in H{ph} (kendra) → "
                     f"{yoga_name} Yoga: exceptional strength, renowned personality"
@@ -135,7 +135,7 @@ def _raj_yogas(chart: BirthChart, hmap) -> list[Yoga]:
                     name="Raj Yoga",
                     category="Raj",
                     nature="benefic",
-                    planets=list(pair),
+                    planets=list(pair),  # noqa: F841
                     description=(
                         f"{k_lord} (H{kh} lord) + {t_lord} (H{th} lord) conjunct in H{ph} "
                         f"→ authority, career success, recognition"
@@ -172,7 +172,7 @@ def _dhana_yogas(chart: BirthChart, hmap) -> list[Yoga]:
                     name="Dhana Yoga",
                     category="Dhana",
                     nature="benefic",
-                    planets=list(pair),
+                    planets=list(pair),  # noqa: F841
                     description=(
                         f"{l1} (H{h1} lord) + {l2} (H{h2} lord) conjunct in H{ph} "
                         f"→ wealth accumulation, financial prosperity"
@@ -263,7 +263,7 @@ def _lunar_yogas(chart: BirthChart, hmap) -> list[Yoga]:
             name="Shakata Yoga",
             category="Negative",
             nature="malefic",
-            planets=["Moon", "Jupiter"],
+            planets=["Moon", "Jupiter"],  # noqa: F841
             description=(
                 f"Moon in H{dist3} from Jupiter → fluctuating fortune, "
                 f"periodic reversal of gains (weakened if Moon is in kendra)"
@@ -337,7 +337,7 @@ def _solar_yogas(chart: BirthChart, hmap) -> list[Yoga]:
             name="Vasi Yoga",
             category="Solar",
             nature="benefic",
-            planets=planets_before,
+            planets=planets_before,  # noqa: F841
             description=(
                 f"{', '.join(planets_before)} in H{_wrap(sun_h-1)} (12th from Sun) → "
                 f"industrious, respected, favours from authority"
@@ -406,7 +406,7 @@ def _special_yogas(chart: BirthChart, hmap) -> list[Yoga]:
                         name="Neecha Bhanga Raj Yoga",
                         category="Raj",
                         nature="benefic",
-                        planets=[planet, debil_sign_lord],
+                        planets=[planet, debil_sign_lord],  # noqa: F841
                         description=(
                             f"{planet} debilitated but {debil_sign_lord} "
                             f"(debilitation lord) in kendra H{dl_house} → "

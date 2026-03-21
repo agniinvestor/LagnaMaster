@@ -113,7 +113,7 @@ def compute_argala(chart, reference_house: int = 1) -> ArgalaResult:
         entries.append(ArgalaEntry(
             house_from_reference=argala_h,
             argala_type=atype,
-            planets=arg_planets,
+            planets=arg_planets,  # noqa: F841
             nature=nature,
             is_obstructed=is_obstructed,
             obstruction_planets=vir_planets,

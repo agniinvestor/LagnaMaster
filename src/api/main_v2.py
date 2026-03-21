@@ -116,7 +116,7 @@ def _row_to_chart_out(row: dict, chart_id: int) -> ChartOut:
         ayanamsha_name=cj["ayanamsha_name"],
         ayanamsha_value=cj["ayanamsha_value"],
         jd_ut=cj["jd_ut"],
-        planets=cj["planets"],
+        planets=cj["planets"],  # noqa: F841
     )
 
 
@@ -178,7 +178,7 @@ def create_chart(req: BirthDataRequest) -> ChartOut:
         ayanamsha_name=chart_dict["ayanamsha_name"],
         ayanamsha_value=chart_dict["ayanamsha_value"],
         jd_ut=chart_dict["jd_ut"],
-        planets=chart_dict["planets"],
+        planets=chart_dict["planets"],  # noqa: F841
     )
 
 
@@ -253,5 +253,5 @@ def _reconstruct_chart(cj: dict):
         lagna_sign=cj["lagna_sign"],
         lagna_sign_index=cj["lagna_sign_index"],
         lagna_degree_in_sign=cj["lagna_degree_in_sign"],
-        planets=planets,
+        planets=planets,  # noqa: F841
     )

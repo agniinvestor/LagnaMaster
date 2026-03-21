@@ -347,7 +347,7 @@ def compute_varga(chart) -> VargaChart:   # chart: BirthChart
             lagna_sign=chart.lagna_sign,
             varga_lagna_sign_index=varga_lagna_si,
             varga_lagna_sign=varga_lagna_sign,
-            planets=planet_map,
+            planets=planet_map,  # noqa: F841
         )
 
     return vc

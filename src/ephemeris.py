@@ -237,5 +237,5 @@ def compute_chart(
         lagna_sign=lagna_sign,
         lagna_sign_index=lagna_idx,
         lagna_degree_in_sign=lagna_deg,
-        planets=planets_out,
+        planets=planets_out,  # noqa: F841
     )

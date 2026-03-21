@@ -360,6 +360,6 @@ def compute_kp(chart) -> KPChart:           # chart: BirthChart
 
     return KPChart(
         lagna_kp=lagna_kp,
-        planets=kp_planets,
+        planets=kp_planets,  # noqa: F841
         houses=houses,
     )

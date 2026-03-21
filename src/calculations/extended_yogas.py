@@ -110,7 +110,7 @@ def detect_raja_dhana_yogas(chart, dashas=None, on_date=None) -> list[YogaResult
                  "DY: H11+H5":"Gains via creativity"}.get(label,"Dhana Yoga")
         results.append(YogaResult(
             name=label, yoga_type="Dhana",
-            planets=[la, lb], present=present,
+            planets=[la, lb], present=present,  # noqa: F841
             score=score, dasha_weight=dw,
             weighted_score=round(score * dw, 2),
             description=_desc, source="BPHS Ch.35-36",
@@ -152,7 +152,7 @@ def detect_viparita_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
                  _is_dasha_active(l8, dashas, on_date)) else 0.5
     results.append(YogaResult(
         name="Dainya Yoga", yoga_type="Viparita",
-        planets=[l6, l8], present=dainya,
+        planets=[l6, l8], present=dainya,  # noqa: F841
         score=-1.0 if dainya else 0.0, dasha_weight=dw,
         weighted_score=round((-1.0 if dainya else 0.0) * dw, 2),
         description="H6+H8 lords in mutual exchange — difficult obstacles",
@@ -200,7 +200,7 @@ def detect_neecha_bhanga(chart, dashas=None, on_date=None) -> list[YogaResult]:
         score = 3.0 if present else 0.0
         results.append(YogaResult(
             name=f"NB: {p}", yoga_type="NeechaBhanga",
-            planets=[p], present=present,
+            planets=[p], present=present,  # noqa: F841
             score=score, dasha_weight=dw,
             weighted_score=round(score * dw, 2),
             description=(f"Neecha Bhanga: cond1={cond1} cond2={cond2} d9={cond3}"

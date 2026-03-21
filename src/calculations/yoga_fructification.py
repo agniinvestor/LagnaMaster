@@ -203,7 +203,7 @@ def yoga_fructification_score(yoga_planets: list[str], chart) -> FructificationR
     else: verdict = "Minimal"
 
     return FructificationResult(
-        planets=yoga_planets, base_present=True,
+        planets=yoga_planets, base_present=True,  # noqa: F841
         affliction_free=affliction_free,
         close_conjunction=close_conjunction,
         dignity_adequate=dignity_adequate,
