@@ -191,7 +191,7 @@ def compute_avasthas(planet: str, chart) -> AvasthaResult:
     mod = BALA_AVASTHA_MODIFIER[bala] * JAGRADADI_MODIFIER[jagra]
     mod = max(0.4, min(1.3, mod))
 
-    summary = f"{bala.value} ({bala_avastha.__doc__.split(chr(10))[0].strip()[:20]})"
+    # summary removed (Ruff F841 — unused variable)
 
     return AvasthaResult(
         planet=planet,
