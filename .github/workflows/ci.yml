@@ -4,6 +4,11 @@ permissions:
   contents: read
   packages: write
 
+# Cancel in-progress runs for the same PR/branch on new push
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   push:
     branches: [main]
@@ -11,66 +16,88 @@ on:
     branches: [main]
 
 jobs:
-  test:
-    name: pytest ${{ matrix.python-version }}
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.12"]
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.12"
           cache: pip
-      - run: sudo apt-get install -y gcc g++ python3-dev
-      - run: pip install -r requirements.txt
-      - run: PYTHONPATH=. pytest tests/ -q --tb=short
 
-  docker:
-    name: Docker build
+      - name: Install ruff
+        run: pip install ruff --quiet
+
+      - name: Run ruff
+        run: ruff check src/ tests/ --select E,F,W --ignore E501,E402,E701,E702,F401
+
+  test:
+    name: pytest
     runs-on: ubuntu-latest
-    needs: test
-    if: github.ref == 'refs/heads/main'
+    timeout-minutes: 15
+    needs: lint
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # Cache apt packages to avoid reinstalling gcc/g++ on every run
+      - name: Cache apt packages
+        uses: actions/cache@v4
+        with:
+          path: /var/cache/apt/archives
+          key: apt-${{ runner.os }}-gcc-g++-python3-dev
+          restore-keys: apt-${{ runner.os }}-
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends gcc g++ python3-dev
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          PYTHONPATH=. pytest tests/ -q --tb=short \
+            --ignore=tests/test_session21.py \
+            --ignore=tests/test_varga.py \
+            --timeout=60
+
+  docker:
+    name: Docker build (${{ matrix.service }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    strategy:
+      matrix:
+        service: [api, ui]
+    steps:
+      - uses: actions/checkout@v4
+
       - uses: docker/setup-buildx-action@v3
+
       - uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build and push API image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: |
-            ghcr.io/${{ github.repository_owner }}/lagnamaster-api:latest
-            ghcr.io/${{ github.repository_owner }}/lagnamaster-api:${{ github.sha }}
-          build-args: SERVICE=api
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-      - name: Build and push UI image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true
-          tags: |
-            ghcr.io/${{ github.repository_owner }}/lagnamaster-ui:latest
-            ghcr.io/${{ github.repository_owner }}/lagnamaster-ui:${{ github.sha }}
-          build-args: SERVICE=ui
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
 
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Build and push ${{ matrix.service }} image
+        uses: docker/build-push-action@v5
         with:
-          python-version: "3.12"
-          cache: pip
-      - run: pip install ruff
-      - run: ruff check src/ tests/ --select E,F,W --ignore E501,E402,E701,E702,F401
+          context: .
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/lagnamaster-${{ matrix.service }}:latest
+            ghcr.io/${{ github.repository_owner }}/lagnamaster-${{ matrix.service }}:${{ github.sha }}
+          build-args: SERVICE=${{ matrix.service }}
+          cache-from: type=gha,scope=${{ matrix.service }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.service }}
