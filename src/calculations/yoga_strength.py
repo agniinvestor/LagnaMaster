@@ -255,10 +255,10 @@ def detect_sannyasa_yogas(chart) -> list[NamedYogaResult]:
                 yoga_name = "Brahma Sannyasa Yoga"
                 desc = "Jupiter among 4+ planets in one sign — highest spiritual renunciation, sage-like"
             elif "Saturn" in planets:
-                yoga_name = "Vanaprastha Yoga"
+                yoga_name = "Vanaprastha Sannyasa Yoga"
                 desc = "Saturn among 4+ planets — practical renunciation, forest-dweller type"
             elif "Moon" in planets:
-                yoga_name = "Pravrajya Yoga"
+                yoga_name = "Pravrajya Sannyasa Yoga"
                 desc = "Moon among 4+ planets — emotional/devotional renunciation"
             else:
                 yoga_name = "Sannyasa Yoga"
