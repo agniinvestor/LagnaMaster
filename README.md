@@ -2,7 +2,7 @@
 
 Vedic Jyotish computation engine + consumer guidance platform.
 
-**963 tests | Sessions 1–100 complete | 100 modules | Engine v3.0.0**
+**990 tests | Sessions 1–108 complete | 108 modules | Engine v3.0.0**
 
 ---
 
@@ -12,7 +12,7 @@ A comprehensive Jyotish platform covering:
 - **Natal analysis** — 63 calculation modules, 23 BPHS rules × 12 houses × 5 lagna axes
 - **Muhurta** — electional astrology with Panchanga, Tarabala, Chandrabala, Hora, Choghadiya
 - **Prashna** — horary Jyotish from query-moment chart
-- **All major dashas** — Vimshottari, Narayana, Yogini, Chara, Kalachakra, Ashtottari, Shoola, Sudasa, Tara
+- **All major dashas** — Vimshottari, Narayana, Yogini, Chara, Kalachakra, Ashtottari, Shoola, Sudasa, Tara, Drig, Lagna Kendradi
 - **Upaya** — classical remedial measures (gemstones, deities, mantras, charity)
 - **Mundane** — nation charts, solar/lunar ingress, swearing-in charts
 - **Consumer layer** — Bloomberg-style guidance with safety pipeline, GDPR compliance, feedback governance
@@ -90,15 +90,17 @@ print(result.reasoning)    # list of supporting factors
 ## All Supported Dashas
 
 ```python
-from src.calculations.vimshottari_dasa   import compute_vimshottari_dasa   # 120yr, 9 planets
-from src.calculations.narayana_dasha     import compute_narayana_dasha      # Rasi dasha
-from src.calculations.yogini_dasha       import compute_yogini_dasha        # 36yr cycle
-from src.calculations.chara_dasha        import compute_chara_dasha         # Jaimini
-from src.calculations.kalachakra_dasha   import compute_kalachakra_dasha    # 100yr, Moon D9
-from src.calculations.ashtottari_dasha   import compute_ashtottari_dasha    # 108yr, 8 planets
-from src.calculations.shoola_dasha       import compute_shoola_dasha        # Ayur/longevity
-from src.calculations.shoola_dasha       import compute_sudasa              # Material success
-from src.calculations.tara_dasha         import compute_tara_dasha          # 9-category Nakshatra
+from src.calculations.vimshottari_dasa        import compute_vimshottari_dasa        # 120yr, 9 planets
+from src.calculations.narayana_dasha          import compute_narayana_dasha           # Rasi dasha
+from src.calculations.yogini_dasha            import compute_yogini_dasha             # 36yr cycle
+from src.calculations.chara_dasha             import compute_chara_dasha              # Jaimini
+from src.calculations.kalachakra_dasha        import compute_kalachakra_dasha         # 100yr, Moon D9
+from src.calculations.ashtottari_dasha        import compute_ashtottari_dasha         # 108yr, 8 planets
+from src.calculations.shoola_dasha            import compute_shoola_dasha             # Ayur/longevity
+from src.calculations.shoola_dasha            import compute_sudasa                   # Material success
+from src.calculations.tara_dasha              import compute_tara_dasha               # 9-category Nakshatra
+from src.calculations.drig_dasha              import compute_drig_dasha               # Rasi dasha, aspect-based
+from src.calculations.lagna_kendradi_dasha    import compute_lagna_kendradi_dasha     # Kendra/Panapara/Apoklima
 ```
 
 ---
@@ -142,6 +144,58 @@ compressed = compress_vimshottari(chart, birth_date, period_years=1.0)
 
 ---
 
+## Phase 19 — Advanced Dashas, Yogas & Plugin Architecture
+
+```python
+# Drig Dasha (Session 101) — PVRNR preface p8
+from src.calculations.drig_dasha import compute_drig_dasha
+periods = compute_drig_dasha(chart, birth_date)   # 12 sign-based periods
+
+# Lagna Kendradi Dasha (Session 102)
+from src.calculations.lagna_kendradi_dasha import compute_lagna_kendradi_dasha
+periods = compute_lagna_kendradi_dasha(chart, birth_date)  # Kendra→Panapara→Apoklima
+
+# K.N. Rao Double Transit (Session 103)
+from src.calculations.double_transit import compute_double_transit
+r = compute_double_transit(chart, transit_date, domain="marriage")
+print(r.signal)           # "Double confirmation — event likely"
+
+# Upapada Lagna (Session 104) — Arudha of H12
+from src.calculations.upapada_lagna import compute_upapada
+ul = compute_upapada(chart)
+print(ul.marriage_quality)      # "Favourable"/"Mixed"/"Challenging"
+print(ul.marriage_longevity)    # "Lasting"/"Possible challenges"/"Separation risk"
+
+# Kala Sarpa Yoga (Session 105) — modern practitioner convention
+from src.calculations.kala_sarpa import compute_kala_sarpa
+ks = compute_kala_sarpa(chart)
+print(ks.present, ks.yoga_name, ks.is_reverse)   # Kala Amrita if reverse
+print(ks.classical_disclaimer)  # always present — not in BPHS
+
+# Nabhasa Yogas (Session 106) — 32 types from BPHS Ch.35
+from src.calculations.nabhasa_yogas import detect_nabhasa_yogas
+yogas = [y for y in detect_nabhasa_yogas(chart) if y.present]
+for y in yogas:
+    print(f"{y.name} ({y.group}): {y.result}")
+
+# Pitr Dosha (Session 107) — modern practitioner convention
+from src.calculations.pitr_dosha import compute_pitr_dosha
+pd = compute_pitr_dosha(chart)
+print(pd.severity)           # "Strong"/"Moderate"/"Mild"/"Not present"
+print(pd.classical_disclaimer)  # always present — not in BPHS
+
+# Rule Plugin Architecture (Session 108)
+from src.calculations.rule_plugin import register_yoga, apply_all_plugins
+
+@register_yoga("My Custom Yoga", source="Regional tradition", score_if_present=1.5)
+def my_yoga(chart) -> bool:
+    return chart.planets["Jupiter"].sign_index == chart.lagna_sign_index
+
+results = apply_all_plugins(chart)
+```
+
+---
+
 ## Consumer Guidance API
 
 ```python
@@ -169,6 +223,7 @@ print(r.disclaimer)       # Scope disclaimer
 | 10–11 | 71–78 | ✅ | Language safety pipeline, GDPR/DPDP consent + erasure |
 | 12–14 | 79–90 | ✅ | Bloomberg UI, feedback governance, educational layer |
 | 15–18 | 91–100 | ✅ | **Muhurta, Prashna, Kalachakra, Ashtottari, Shoola, Tara, Upaya, Mundane** |
+| 19 | 101–108 | ✅ | **Drig Dasha, Lagna Kendradi, Double Transit, Upapada Lagna, Kala Sarpa, Nabhasa Yogas, Pitr Dosha, Plugin Architecture** |
 
 ---
 

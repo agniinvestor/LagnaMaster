@@ -1,6 +1,6 @@
 # LagnaMaster — Programme Plan
 
-## Status: COMPLETE — Sessions 1–56 ✅
+## Status: COMPLETE — Sessions 1–108 ✅
 
 Every CALC_ and SCORE_ sheet in the workbook has a corresponding Python implementation.
 ENGINE_VERSION = "3.0.0".
@@ -653,3 +653,113 @@ Used as alternative to Vimshottari for qualifying charts.
 | Prashna Marga full corpus | ❌ Separate text needed |
 | Full Desha-Kala-Patra | ❌ Not parameterisable |
 | Kalachakra (textual variants) | ⚠ BPHS version implemented |
+
+---
+
+## Phase 19 — Advanced Dashas, Yogas & Plugin Architecture (Sessions 101–108)
+
+### Session 101 — Drig Dasha
+**File:** `src/calculations/drig_dasha.py`
+PVRNR preface p8: "two rasi dasas that don't use navamsha" — Drig Dasha is one.
+Used for timing events when Lagna is stronger than Moon.
+Period lengths determined by number of rasi aspects received by each sign (signs 5, 7, 9
+cast standard rasi aspects; movable/fixed/dual signs add additional special aspects).
+Sequence starts from Lagna (if Lagna > Moon) or Moon sign (if Moon > Lagna).
+Odd signs proceed forward; even signs proceed backward through zodiac.
+`DrigDashaPeriod` dataclass: sign, sign_index, years, aspects_received, start_date, end_date.
+Source: PVRNR preface p8; BPHS Ch.41-43.
+
+### Session 102 — Lagna Kendradi Dasha
+**File:** `src/calculations/lagna_kendradi_dasha.py`
+PVRNR preface p8: explicitly named as a standard rasi dasha.
+Signs grouped from Lagna: Group 1 = Kendra (H1/4/7/10), Group 2 = Panapara (H2/5/8/11),
+Group 3 = Apoklima (H3/6/9/12). Within each group: odd Lagna = zodiac order, even = reverse.
+Period = planet count in sign + 1 (minimum 1yr).
+`LagnaKendradiPeriod` dataclass: sign, sign_index, group, years, start_date, end_date.
+Source: PVRNR preface p8; BPHS Lagna Kendradi chapters.
+
+### Session 103 — K.N. Rao Double Transit
+**File:** `src/calculations/double_transit.py`
+K.N. Rao theory: major life events require BOTH Jupiter and Saturn to simultaneously
+transit natal or dasha-activated positions.
+Domains: marriage (H7 lord / D9 Lagna / natal Moon), career (H10 lord), general (dasha lord).
+Aspects: conjunction ≤8°, trine ≤8°, sextile ≤8° = favorable.
+              square ≤8°, opposition ≤8° = challenging.
+Signal: "Double confirmation" / "Partial confirmation" / "Not activated".
+This is a PREDICTION LAYER — strengthens/weakens promise engine signal, does not override.
+Source: K.N. Rao predictive astrology texts and lectures.
+
+### Session 104 — Upapada Lagna
+**File:** `src/calculations/upapada_lagna.py`
+UL = Arudha of the 12th house. Signifies marriage, spouse quality, public perception of marriage.
+Formula: count as many signs from 12th lord as 12th lord is from the 12th house.
+Exception (PVRNR): if UL falls in H1 or H7 from AL, shift by 10 signs.
+Key rules: UL lord in kendra/trikona = good prospects; malefics in 2nd from UL = separation risk.
+`UpapadaAnalysis` fields: ul_sign, ul_lord, marriage_quality, marriage_longevity, notes.
+Source: PVRNR Ch.9 p97-104; B.V. Raman "How to Judge a Horoscope".
+
+### Session 105 — Kala Sarpa Yoga
+**File:** `src/calculations/kala_sarpa.py`
+**Important:** Does NOT appear in classical texts (BPHS, Parashara). Modern practitioner
+convention only. Included because virtually all practitioners reference it.
+Definition: all 7 planets (Sun–Saturn) between Rahu and Ketu (one hemisphere).
+Partial Kala Sarpa: 5-6 planets inside (one outside).
+12 types named by Rahu's sign (Ananta through Sheshnaag).
+Kala Amrita (reverse): planets between Ketu and Rahu.
+`KalaSarpaResult.classical_disclaimer` is always populated — non-negotiable.
+India 1947: not present (verified).
+
+### Session 106 — Nabhasa Yogas
+**File:** `src/calculations/nabhasa_yogas.py`
+Complete 32 types from BPHS Ch.35. "Sky formations" based on planetary distribution patterns.
+Four groups:
+  A. Āśraya (3): all planets in movable / all in fixed / all in dual signs
+  B. Dala (2): all planets in Kendra / all in Trikona
+  C. Ākriti (20): geometric patterns (Chakra, Danda, Yava, Kamala, Paasha, Kedara,
+     Shoola, Sarpa, Chapa, Vajra, Vihaga, Srikantha, Hala, Naukaa, Kuta, etc.)
+  D. Sankhya (7): 1–7 occupied signs (Vallaki/Parijata … Kedara)
+Only strongest yoga in each group manifests (BPHS rule).
+`NabhasaYoga` dataclass: name, group, present, result (classical interpretation), planets_involved.
+
+### Session 107 — Pitr Dosha
+**File:** `src/calculations/pitr_dosha.py`
+**Important:** Not defined in classical texts. Modern practitioner consensus.
+Included with appropriate disclaimer; labeled as "modern convention."
+Five criteria: (1) Sun in H9 with malefic influence; (2) 9th lord afflicted by Rahu/Ketu;
+(3) Sun conjunct Rahu; (4) 5th lord afflicted + 9th lord weak; (5) Saturn in H9 with Rahu aspect.
+Severity: Strong (3+ criteria) / Moderate (2) / Mild (1) / Not present.
+`PitrDoshaResult.classical_disclaimer` always populated — non-negotiable.
+`suggested_consideration` is not a remedy prescription — reflection tool only.
+
+### Session 108 — Dynamic Rule Plugin Architecture
+**File:** `src/calculations/rule_plugin.py`
+Allows custom yogas and scoring modifiers to be registered without modifying the core engine.
+Use cases: regional traditions (Kerala/Bengal/Tamil), practitioner-specific rules,
+B.V. Raman supplementary rules, experimental rules for empirical testing.
+
+Decorator API:
+  `@register_yoga(name, source, score_if_present)` — registers a yoga detection function
+  `@register_scorer(name, source, applies_to_houses)` — registers a house score modifier
+  `apply_all_plugins(chart)` → `PluginApplicationResult` with yoga_results, score_results, total_modifier
+
+All plugin results carry `plugin_note = "Custom/extended rule — not core classical engine"`.
+Plugin registry is module-level dict — persists for process lifetime; `clear_plugins()` for testing.
+
+---
+
+## Final Coverage Assessment (Session 108)
+
+| Branch | Status |
+|--------|--------|
+| All Session 100 branches | ✅ See above |
+| Drig Dasha | ✅ Complete (Session 101) |
+| Lagna Kendradi Dasha | ✅ Complete (Session 102) |
+| K.N. Rao Double Transit | ✅ Complete (Session 103) |
+| Upapada Lagna | ✅ Complete (Session 104) |
+| Kala Sarpa Yoga | ✅ Complete — modern convention (Session 105) |
+| Nabhasa Yogas (32) | ✅ Complete (Session 106) |
+| Pitr Dosha | ✅ Complete — modern convention (Session 107) |
+| Plugin architecture | ✅ Complete (Session 108) |
+| Total calculation modules | 84 (src/calculations/) |
+| Total tests | 990 |
+| Engine version | 3.0.0 |
