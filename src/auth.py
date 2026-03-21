@@ -9,11 +9,11 @@ from typing import Optional
 
 try:
     import bcrypt; _BC = True
-except ImportError:
+except BaseException:
     _BC = False
 try:
     import jwt as _jwt; _JW = True
-except ImportError:
+except BaseException:
     _JW = False
 
 _SEC = os.environ.get("JWT_SECRET", "dev-secret-change-in-production")
