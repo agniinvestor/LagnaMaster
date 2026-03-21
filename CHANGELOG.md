@@ -199,3 +199,5 @@ Phase 0 fixes: Sessions 101–108 (committed on remote)
 - S8: `ashtakavarga.py` + accuracy guards (E-1/A-2 confirmed absent in Python)
 - S9: `gochara.py` — transits, Sade Sati
 - S10: `panchanga.py` — 5-limb almanac + D9 navamsha
+
+## S109-124 Phase 0/1/2 — see PLAN.md for full session listing

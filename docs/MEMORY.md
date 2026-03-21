@@ -225,3 +225,5 @@ These were identified by the March 2026 classical audit. See `AUDIT.md` for full
 | Gestalt synthesis | Named rules encoded; nonlinear expert weighting is not |
 | Prashna Marga full corpus | Separate text, different framework |
 | Medical/financial astrology | Separate disciplines with liability implications |
+
+# Sessions 109-124 additions added — see PLAN.md for full detail
