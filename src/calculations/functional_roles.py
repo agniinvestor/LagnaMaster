@@ -127,11 +127,11 @@ def compute_functional_roles(chart) -> FunctionalRoles:
     # Functional classification per planet (7 grahas)
     planets_7 = ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn"]
     for planet in planets_7:
-        owned = [h for h, l in house_lords.items() if l == planet]
+        owned = [h for h, lord in house_lords.items() if lord == planet]
         dusthana_owned = [h for h in owned if h in {6, 8, 12}]
         kendra_owned   = [h for h in owned if h in {1, 4, 7, 10}]
         trikona_owned  = [h for h in owned if h in {1, 5, 9}]
-        upachaya_owned = [h for h in owned if h in {3, 6, 10, 11}]
+        [h for h in owned if h in {3, 6, 10, 11}]
 
         # Yogakaraka — strongly benefic
         if planet in roles.yogakarakas:

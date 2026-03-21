@@ -1,7 +1,7 @@
 """tests/test_kundali_milan.py — 25 tests (Session 12)"""
 import pytest; from unittest.mock import MagicMock
 from src.calculations.kundali_milan import compute_kundali_milan,has_mangal_dosha,KundaliMilanResult,_nd,_bh,_gn,_yo,_ta,_NA,_GA,_Y
-def _p(s,si,d,l=None): p=MagicMock(); p.sign=s; p.sign_index=si; p.degree_in_sign=d; p.longitude=l if l else si*30+d; return p
+def _p(s,si,d,lon=None): p=MagicMock(); p.sign=s; p.sign_index=si; p.degree_in_sign=d; p.longitude=lon if lon else si*30+d; return p
 def _c(ms,msi,md,masi,vsi,lsi): c=MagicMock(); c.lagna_sign_index=lsi; c.planets={"Moon":_p(ms,msi,md),"Mars":_p("X",masi,10.),"Venus":_p("Y",vsi,5.)}; return c
 class TestStruct:
     @pytest.fixture(scope="class")

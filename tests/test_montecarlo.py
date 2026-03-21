@@ -1,11 +1,11 @@
 """tests/test_montecarlo.py — 20 tests (Session 11)"""
 import pytest; from datetime import date
 from src.montecarlo import compute_sensitivity,SensitivityReport,HouseSensitivity
-I=dict(year=1947,month=8,day=15,hour=0.,lat=28.6139,lon=77.209,tz_offset=5.5,ayanamsha="lahiri")
-def r(n=5,w=30,s=42,bd=None): return compute_sensitivity(**I,n_samples=n,window_minutes=w,seed=s,birth_date=bd)
+INDIA=dict(year=1947,month=8,day=15,hour=0.,lat=28.6139,lon=77.209,tz_offset=5.5,ayanamsha="lahiri")
+def r(n=5,w=30,s=42,bd=None): return compute_sensitivity(**INDIA,n_samples=n,window_minutes=w,seed=s,birth_date=bd)
 class TestStructure:
     def test_type(self): assert isinstance(r(),SensitivityReport)
-    def test_n(self): assert compute_sensitivity(**I,n_samples=7,seed=42).n_samples==7
+    def test_n(self): assert compute_sensitivity(**INDIA,n_samples=7,seed=42).n_samples==7
     def test_w(self): assert r(w=15).birth_time_window_minutes==15
     def test_12h(self): assert set(r().houses.keys())==set(range(1,13))
     def test_fields(self):
@@ -36,10 +36,10 @@ class TestEdge:
     def test_non_ist(self): assert isinstance(compute_sensitivity(2000,6,21,12.,51.5,-.13,0.,n_samples=5,seed=42),SensitivityReport)
 class TestDet:
     def test_same(self):
-        r1=compute_sensitivity(**I,n_samples=8,seed=7); r2=compute_sensitivity(**I,n_samples=8,seed=7)
+        r1=compute_sensitivity(**INDIA,n_samples=8,seed=7); r2=compute_sensitivity(**INDIA,n_samples=8,seed=7)
         for h in range(1,13): assert r1.houses[h].mean_score==r2.houses[h].mean_score
     def test_diff(self):
-        r1=compute_sensitivity(**I,n_samples=20,seed=1); r2=compute_sensitivity(**I,n_samples=20,seed=2)
+        compute_sensitivity(**INDIA,n_samples=20,seed=1); compute_sensitivity(**INDIA,n_samples=20,seed=2)
         pass  # same-seed determinism — relaxed
 class TestIndia:
     def test_lagna(self): assert r(30).dominant_lagna in("Taurus","Aries","Gemini")
