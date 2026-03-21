@@ -607,19 +607,6 @@ def compute_all_shadbala(
 
 
 # ── Backward-compatibility: old API positional args ──
-# (replaced by _ShadbalWrapper version below)
-    class _P:
-        def __init__(self):
-            self.sign_index = sign_idx; self.degree_in_sign = degree
-            self.longitude = sign_idx * 30.0 + degree
-            self.is_retrograde = False; self.speed = 1.0; self.latitude = 0.0
-    class _C:
-        def __init__(self):
-            self.lagna = 0.0; self.lagna_sign_index = 0
-            self.planets = {planet: _P()}
-            sun = _P(); sun.sign_index = 0; sun.longitude = 0.0
-            self.planets["Sun"] = sun
-    return compute_shadbala(planet, _C(), birth_dt)
 
 
 # ── Backward-compatibility wrapper ──
