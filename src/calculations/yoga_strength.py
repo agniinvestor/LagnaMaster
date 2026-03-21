@@ -264,9 +264,13 @@ def detect_sannyasa_yogas(chart) -> list[NamedYogaResult]:
                 yoga_name = "Sannyasa Yoga"
                 desc = f"{len(planets)} planets in one sign — enforced renunciation or intense focus"
 
+            try:
+                ys = compute_yoga_strength(yoga_name, planets, chart)
+            except Exception:
+                ys = None
             results.append(NamedYogaResult(
                 name=yoga_name, present=True,
-                strength=compute_yoga_strength(yoga_name, planets, chart),
+                strength=ys,
                 planets=planets,
                 description=desc,
                 source="BPHS Ch.36 v.50-58",
