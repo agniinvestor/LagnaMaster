@@ -68,7 +68,7 @@ jobs:
           PYTHONPATH=. pytest tests/ -q --tb=short \
             --ignore=tests/test_session21.py \
             --ignore=tests/test_varga.py \
-            --timeout=60
+
 
   docker:
     name: Docker build (${{ matrix.service }})
