@@ -34,7 +34,7 @@ flags |= swe.FLG_TOPOCTR  # for Moon calculation only
 
 | Session | Task | Effort | Impact |
 |---------|------|--------|--------|
-| 161 | Topocentric Moon — 2 lines in ephemeris.py | 30 min | HIGH — nakshatra accuracy | ✅ DONE |
+| 161 | Topocentric Moon — 2 lines in ephemeris.py | 30 min | HIGH — nakshatra accuracy | ✅ DONE | ✅ DONE |
 | 162 | Wire functional dignity into R02/R09 | 2 hr | HIGH — systematic fix for all charts |
 | 163 | Wire dasha_scoring into score_chart() | 3 hr | HIGH — temporal scoring |
 | 164 | Wire war loser into compute_dignity() | 2 hr | MED — Graha Yuddha downstream |

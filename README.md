@@ -49,6 +49,17 @@ cd LagnaMaster && docker compose up --build
 | `POST /charts/{id}/guidance` | Consumer guidance (L1/L2/L3) |
 | `GET /charts/{id}/confidence` | Lagna/nakshatra boundary confidence |
 
+### Key API Endpoints (v3.0.0)
+| Endpoint | Description |
+|----------|-------------|
+| `POST /charts` | Compute + store a birth chart |
+| `GET /charts/{id}/scores` | 22-rule house scores |
+| `GET /charts/{id}/scores/v3` | Dasha-sensitized multi-axis scores (D1/D9/D10/CL/SL) |
+| `POST /charts/{id}/svg` | North/South Indian chart SVG |
+| `POST /charts/{id}/pdf` | 2-page PDF export |
+| `POST /charts/{id}/guidance` | Consumer guidance (L1/L2/L3) |
+| `GET /charts/{id}/confidence` | Lagna/nakshatra boundary confidence |
+
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
