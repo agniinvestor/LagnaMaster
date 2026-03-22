@@ -1,0 +1,106 @@
+{
+  "adb_slug": "Lincoln,_Abraham",
+  "name": "Abraham Lincoln",
+  "source": "astro-databank",
+  "rodden_rating": "A",
+  "adb_url": "https://www.astro.com/astro-databank/Lincoln,_Abraham",
+  "birth_data": {
+    "year": 1809,
+    "month": 2,
+    "day": 12,
+    "hour": 7.75,
+    "lat": 37.5408,
+    "lon": -85.7267,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Hodgenville, Kentucky, USA",
+  "notes": "Rodden A.",
+  "expected": {},
+  "chart": {
+    "lagna": 326.94567581218865,
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "planets": {
+      "Sun": {
+        "longitude": 302.31020412840974,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 2.3102041284097368,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 276.4603352051327,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 6.460335205132708,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 184.31081843716808,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 4.310818437168081,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 319.17916637363055,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 19.17916637363055,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 330.90104794721987,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 0.9010479472198654,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 346.31971476607106,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 16.31971476607106,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 221.95010569932114,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 11.950105699321142,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 195.74002277990382,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 15.740022779903825,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 15.740022779903825,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 15.740022779903825,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 1.5,
+    "2": 3.0,
+    "3": -1.75,
+    "4": -1.5,
+    "5": 3.0,
+    "6": -0.25,
+    "7": 1.875,
+    "8": 3.75,
+    "9": -1.5,
+    "10": 0.375,
+    "11": 1.75,
+    "12": 0.5
+  },
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

@@ -33,3 +33,5 @@ from tests.fixtures.regression_fixtures import (  # noqa: E402
 )
 
 from tests.fixtures.diverse_chart_fixtures import ALL_FIXTURES, fixture_count  # noqa: E402
+
+ADB_FIXTURES_DIR = "tests/fixtures/adb_charts"

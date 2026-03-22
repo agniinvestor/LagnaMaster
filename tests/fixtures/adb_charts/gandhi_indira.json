@@ -1,0 +1,106 @@
+{
+  "adb_slug": "Gandhi,_Indira",
+  "name": "Indira Gandhi",
+  "source": "astro-databank",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Gandhi,_Indira",
+  "birth_data": {
+    "year": 1917,
+    "month": 11,
+    "day": 19,
+    "hour": 23.11,
+    "lat": 25.4358,
+    "lon": 81.8463,
+    "tz_offset": 5.5,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Allahabad, India",
+  "notes": "Rodden AA. Scorpio/Sagittarius Lagna area.",
+  "expected": {},
+  "chart": {
+    "lagna": 116.40572420460609,
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "planets": {
+      "Sun": {
+        "longitude": 214.12209058748277,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 4.122090587482774,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 275.54582316252606,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 5.545823162526062,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 136.37338732019197,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 16.373387320191966,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 223.2247157174397,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 13.224715717439693,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 45.002270329636644,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 15.002270329636644,
+        "is_retrograde": true
+      },
+      "Venus": {
+        "longitude": 261.00211289030295,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 21.002112890302953,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 111.78737693390374,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 21.787376933903744,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 250.56563950528746,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 10.565639505287464,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 70.56563950528744,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 10.565639505287436,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 0.375,
+    "2": 1.5,
+    "3": -0.625,
+    "4": -1.5,
+    "5": -1.875,
+    "6": 0.75,
+    "7": 2.125,
+    "8": 1.75,
+    "9": -0.25,
+    "10": 0.5,
+    "11": -3.375,
+    "12": -0.625
+  },
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}
