@@ -92,7 +92,6 @@ class TestDignityRules:
 
     def test_vargottama_sun_aries_first_navamsha(self):
         # Sun at Aries 2° — D1=Aries, D9=Aries (1st navamsha of fire sign)
-        from src.calculations.vargas import compute_varga_sign
         f = DIGNITY_CHARTS["vargottama_sun_aries"]
         sun_lon = f["planets"]["Sun"]
         d1_sign = int(sun_lon / 30) % 12
