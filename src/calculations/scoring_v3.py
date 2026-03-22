@@ -75,6 +75,13 @@ def score_chart_v3(
     )
 
     axes = score_all_axes(chart, school)
+
+    # S163: Apply dasha sensitization to D1 scores when on_date is supplied
+    # Source: K.N. Rao, Planets in Signs and Houses (Intro); Hart de Fouw Ch.11
+    if on_date is not None:
+        sensitized = score_chart_with_dasha(chart, on_date, dict(axes.d1.scores))
+        axes.d1.scores.update(sensitized)
+
     lpi  = compute_lpi(chart, dashas, on_date, school)
     vim  = compute_vimshopaka(chart)
     avs  = compute_avasthas_v2(chart)
@@ -136,17 +143,26 @@ def _is_functional_malefic(planet: str, lagna_sign_index: int) -> bool:
 # S163: Dasha-sensitized scoring — call after compute_house_scores()
 # Usage: dasha_report = apply_dasha_scoring(raw_scores, chart, query_date)
 #        sensitized = {h: dasha_report.score_for_house(h) for h in range(1,13)}
-def score_chart_with_dasha(chart, query_date=None):
-    """Run house scoring with optional dasha sensitization."""
-    raw_scores = {h: float(h - 6) for h in range(1, 13)}  # placeholder
+def score_chart_with_dasha(chart, query_date=None, base_scores=None):
+    """
+    Apply dasha sensitization to base house scores.
+    S163: Wired into score_chart_v3() — also callable standalone.
+
+    Args:
+        chart:       BirthChart
+        query_date:  date determining active MD/AD; returns base_scores if None
+        base_scores: {house: raw_score} from score_all_axes D1; defaults to zeros
+    """
+    if base_scores is None:
+        base_scores = {h: 0.0 for h in range(1, 13)}
     if query_date is None:
-        return raw_scores
+        return base_scores
     try:
         from src.calculations.dasha_scoring import apply_dasha_scoring
-        report = apply_dasha_scoring(raw_scores, chart, query_date)
+        report = apply_dasha_scoring(base_scores, chart, query_date)
         return {h: report.score_for_house(h) for h in range(1, 13)}
     except Exception:
-        return raw_scores
+        return base_scores
 
 
 # S186: School-rule declarations — Audit I-B

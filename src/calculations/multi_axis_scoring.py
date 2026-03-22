@@ -128,6 +128,9 @@ def _score_one_house(
         dig = compute_all_dignities(chart).get(bhavesh)
         bh_combust = dig.combust; bh_cazimi = dig.cazimi
         bh_rx = chart.planets[bhavesh].is_retrograde
+    # S164: Graha Yuddha loser — effectively debilitated for entire life
+    # Source: Saravali Ch.4 v.18-22
+    bh_war_loser = bhavesh in getattr(chart, "planetary_war_losers", set())
 
     shubh_k, paap_k = _kartari(house_si, sign_pl)
 
@@ -247,6 +250,10 @@ def _score_one_house(
         if bindus >= 5:
             total += W["R23"]
 
+    # S164: War loser bhavesh penalty (Saravali Ch.4 v.18-22)
+    if bh_war_loser:
+        total += -1.5  # treat bhavesh as effectively debilitated throughout life
+
     return max(-10.0, min(10.0, total))
 
 
@@ -287,7 +294,7 @@ def _make_frame_funcs(frame_lagna_si: int, chart, school: str):
     return roles.is_functional_benefic, roles.is_functional_malefic
 
 
-def score_axis(chart, frame_lagna_si: int, axis_name: str, school: str = "parashari") -> AxisScores:
+def score_axis(chart, frame_lagna_si: int, axis_name: str, school: str = "parashari", strict_school: bool = False) -> AxisScores:
     """Score 12 houses for a given lagna reference sign."""
     from src.calculations.ashtakavarga import compute_ashtakavarga
     school = school.lower()
@@ -320,12 +327,23 @@ def score_axis(chart, frame_lagna_si: int, axis_name: str, school: str = "parash
             is_fb, is_fm,
         )
 
+    # I-B: School mixing — deduct forbidden-school rule contributions in strict mode
+    # R17/R18 currently score 0 (skipped in _score_one_house) so no numeric change yet;
+    # wire is live for when Sthir Karak rules are activated.
+    if strict_school:
+        try:
+            from src.calculations.school_rules import school_score_adjustment
+            scores = {h: school_score_adjustment(scores[h], [], school, strict=True)
+                      for h in scores}
+        except Exception:
+            pass
+
     signs = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
              "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
     return AxisScores(axis=axis_name, lagna_sign=signs[frame_lagna_si], scores=scores)
 
 
-def score_all_axes(chart, school: str = "parashari") -> MultiAxisScores:
+def score_all_axes(chart, school: str = "parashari", strict_school: bool = False) -> MultiAxisScores:
     """Score all 5 axes: D1, Chandra Lagna, Surya Lagna, D9, D10."""
     from src.calculations.panchanga import compute_navamsha_chart
 
@@ -341,10 +359,10 @@ def score_all_axes(chart, school: str = "parashari") -> MultiAxisScores:
     d10_lagna_si = _d10_sign(chart.lagna)
 
     return MultiAxisScores(
-        d1  = score_axis(chart, d1_si,  "D1",  school),
-        cl  = score_axis(chart, cl_si,  "CL",  school),
-        sl  = score_axis(chart, sl_si,  "SL",  school),
-        d9  = score_axis(chart, d9_lagna_si,  "D9",  school),
-        d10 = score_axis(chart, d10_lagna_si, "D10", school),
+        d1  = score_axis(chart, d1_si,  "D1",  school, strict_school),
+        cl  = score_axis(chart, cl_si,  "CL",  school, strict_school),
+        sl  = score_axis(chart, sl_si,  "SL",  school, strict_school),
+        d9  = score_axis(chart, d9_lagna_si,  "D9",  school, strict_school),
+        d10 = score_axis(chart, d10_lagna_si, "D10", school, strict_school),
         school=school,
     )
