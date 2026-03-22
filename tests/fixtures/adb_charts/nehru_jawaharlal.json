@@ -2,7 +2,7 @@
   "adb_slug": "Nehru,_Jawaharlal",
   "name": "Jawaharlal Nehru",
   "source": "astro-databank",
-  "rodden_rating": "AA",
+  "rodden_rating": "A",
   "adb_url": "https://www.astro.com/astro-databank/Nehru,_Jawaharlal",
   "birth_data": {
     "year": 1889,
@@ -11,14 +11,12 @@
     "hour": 23.0,
     "lat": 25.4358,
     "lon": 81.8463,
-    "tz_offset": 5.891,
+    "tz_offset": 5.5,
     "ayanamsha": "lahiri"
   },
   "birth_place": "Allahabad (Prayagraj), UP, India",
-  "notes": "Rodden AA. Capricorn Lagna expected. | tz corrected to +5:53 (LMT Allahabad 81.84E / 15 = 5.456 + DST offset)",
-  "expected": {
-    "lagna_sign": "Capricorn"
-  },
+  "notes": "Rodden A \u2014 birth time from family memory, not certificate. Traditional Capricorn Lagna attribution unverified.",
+  "expected": {},
   "chart": {
     "lagna": 106.62174621119635,
     "lagna_sign": "Cancer",
