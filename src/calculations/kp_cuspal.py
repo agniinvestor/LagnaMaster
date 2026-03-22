@@ -112,7 +112,7 @@ def compute_cuspal_sub_lords(chart) -> dict[int, CuspalSubLord]:
         entry = get_sublord(cusp_lon)
 
         try:
-            sig = compute_kp_significators(entry.sub_lord, 
+            sig = compute_kp_significators(entry.sub_lord,
                   chart.planets.get(entry.sub_lord, type('', (), {'longitude': 0.0})()).longitude
                   if entry.sub_lord in chart.planets else 0.0,
                   chart)
@@ -121,9 +121,6 @@ def compute_cuspal_sub_lords(chart) -> dict[int, CuspalSubLord]:
             sub_signified = set()
 
         # Promise: sub-lord must signify this house and its supporting houses
-        supporting = KP_EVENT_HOUSES.get(
-            {1:"self", 7:"marriage", 10:"career"}.get(house, ""), set()
-        )
         has_promise = (house in sub_signified)
 
         note = f"Sub-lord {entry.sub_lord} signifies H{sorted(sub_signified)}"

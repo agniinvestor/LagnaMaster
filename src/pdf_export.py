@@ -131,9 +131,9 @@ def _analysis_html(chart, house_scores: dict = None, yogas: list = None,
         for h in range(1, 13):
             s = house_scores.get(h, 0.0)
             label = "Neutral"
-            for r, l in score_labels.items():
+            for r, lbl in score_labels.items():
                 if s in r or (s >= r.start and s < r.stop):
-                    label = l; break
+                    label = lbl; break
             bar_w = int((s + 10) / 20 * 120)
             bar_color = "#27AE60" if s >= 0 else "#E74C3C"
             score_rows += f"""
@@ -277,7 +277,7 @@ def export_pdf(
         font_config = FontConfiguration()
         combined_html = page1_html.replace(
             '</body></html>',
-            f'<div style="page-break-after:always"></div></body></html>'
+            '<div style="page-break-after:always"></div></body></html>'
         ) + page2_html
 
         HTML(string=combined_html).write_pdf(

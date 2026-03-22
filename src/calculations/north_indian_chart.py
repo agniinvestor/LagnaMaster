@@ -134,7 +134,6 @@ def generate_north_indian_svg(
         cell_fill = "white"
         cell_stroke = "black"
         lagna_fill = "#FFFACD"
-        text_color = "black"
         sign_color = "#333333"
         planet_color = "#000080"
         title_color = "black"
@@ -159,7 +158,7 @@ def generate_north_indian_svg(
         lines.append(f'<path d="{path_d}" stroke="{cell_stroke}" stroke-width="1.5" fill="none"/>')
 
     lines.append('')
-    lines.append('<!-- House cells with sign numbers -->');
+    lines.append('<!-- House cells with sign numbers -->')
 
     for house in range(1, 13):
         cx, cy = _CELL_CENTRES[house]
@@ -230,8 +229,6 @@ def generate_south_indian_svg(
     _GRID_POSITIONS = []  # (col, row) for each sign 0-11
 
     sign_positions = {}
-    row_idx = 0
-    col_idx = 0
     for idx, si in enumerate(_GRID_SIGN_ORDER):
         row = idx // 4
         col = idx % 4
@@ -255,7 +252,7 @@ def generate_south_indian_svg(
         bg = "#FFFEF5"; stroke = "#8B4513"; text_c = "#1A1A2E"
         sign_c = "#8B4513"; planet_c = "#1A5276"; lagna_fill = "#FFF0D0"
     else:
-        bg = "white"; stroke = "black"; text_c = "black"
+        bg = "white"; stroke = "black"
         sign_c = "#333"; planet_c = "#000080"; lagna_fill = "#FFFACD"
 
     svg_w, svg_h = 580, height

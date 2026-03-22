@@ -144,7 +144,8 @@ def compute_and_store_baseline(chart, scoring_fn) -> dict:
 
 def load_baseline(chart_id: str = "india_1947") -> dict:
     """Load stored regression baseline."""
-    import json, os
+    import json
+    import os
     path = f"tests/fixtures/baseline_{chart_id}.json"
     if not os.path.exists(path):
         return {}
