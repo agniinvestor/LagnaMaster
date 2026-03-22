@@ -2,12 +2,13 @@
 
 Vedic Jyotish computation engine + consumer guidance platform.
 
-**990 tests | Sessions 1–108 complete | 108 modules | Engine v3.0.0**
+**1338 tests | Sessions 1–188 complete | 120+ modules | Engine v3.0.0**
 
 > **Classical Audit — March 2026:** An independent audit against BPHS, Phaladeepika,
 > Saravali, Brihat Jataka and Jaimini Sutras is complete. The scoring engine is a
-> heuristic — additive numeric weights are not a classical methodology. Phase 0
-> correctness fixes (Sessions 101+) are in progress on remote. See [`AUDIT.md`](AUDIT.md).
+> heuristic — additive numeric weights are not a classical methodology. All Phase 0
+> correctness fixes are complete (Sessions 101–188). Swiss Ephemeris (JPL DE431)
+> active — Moshier fallback retired. See [`AUDIT.md`](AUDIT.md) and [`PLAN.md`](PLAN.md).
 
 ---
 
@@ -36,6 +37,17 @@ cd LagnaMaster && docker compose up --build
 | Streamlit (analyst) | http://localhost:8501 |
 | FastAPI + Swagger | http://localhost:8000/docs |
 | Next.js (consumer) | http://localhost:3000 |
+
+### Key API Endpoints (v3.0.0)
+| Endpoint | Description |
+|----------|-------------|
+| `POST /charts` | Compute + store a birth chart |
+| `GET /charts/{id}/scores` | 22-rule house scores |
+| `GET /charts/{id}/scores/v3` | Dasha-sensitized multi-axis scores (D1/D9/D10/CL/SL) |
+| `POST /charts/{id}/svg` | North/South Indian chart SVG |
+| `POST /charts/{id}/pdf` | 2-page PDF export |
+| `POST /charts/{id}/guidance` | Consumer guidance (L1/L2/L3) |
+| `GET /charts/{id}/confidence` | Lagna/nakshatra boundary confidence |
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate

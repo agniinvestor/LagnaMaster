@@ -2,8 +2,9 @@
 ## Engine State (Sessions 1–160, March 2026)
 
 ### Core Stack
-- Python 3.12 · pyswisseph · FastAPI + Celery + Redis · PostgreSQL · Next.js 14 · K8s Helm
-- Engine version: v3.0.0 · 1000+ tests · CI green
+- Python 3.14 · pyswisseph (Swiss Ephemeris JPL DE431) · FastAPI + Celery + Redis · PostgreSQL · Next.js 14 · K8s Helm
+- Engine version: v3.0.0 · 1338 tests · CI green
+- Ephemeris: Real SE files (sepl_18.se1 + semo_18.se1) — Moshier fallback retired
 
 ### Critical Invariants — NEVER violate these
 
@@ -76,12 +77,20 @@
 | confidence_model.py | 158 | Birth time uncertainty, confidence intervals |
 | shodashavarga_bala.py | 147/G-3 | 16-varga Shodashavarga Bala |
 
-### Known Remaining Wiring Gaps (MUST FIX)
+### Known Remaining Wiring Gaps
 
-1. **Topocentric Moon** — ephemeris.py Moon calc needs swe.set_topo() + SEFLG_TOPOCTR
-2. **Functional dignity in scoring** — R02/R09 still use natural classification
-3. **Dasha scoring not wired** — dasha_scoring.py built but score_chart() has no query_date
-4. **War loser not downstream** — compute_dignity() doesn't check planetary_war_losers
+All critical wiring gaps CLOSED as of S188. No outstanding gaps.
+
+| Gap | Closed In | Status |
+|-----|-----------|--------|
+| Topocentric Moon (FLG_TOPOCTR) | S161 | ✅ DONE |
+| Functional dignity in R02/R09 | S162 | ✅ DONE |
+| Dasha scoring wired to score_chart_v3 | S187 | ✅ DONE |
+| War loser penalty in _score_one_house | S187 | ✅ DONE |
+| strict_school param on score_axis/score_all_axes | S187 | ✅ DONE |
+| XIX SVG/PDF/guidance/confidence API endpoints | S188 | ✅ DONE |
+| Postgres routing (db_pg replaces db in main.py) | S188 | ✅ DONE |
+| Swiss Ephemeris real files (sepl/semo) | S188 | ✅ DONE |
 
 ### Test Coverage (Sessions 1-160)
 
@@ -91,7 +100,7 @@
 - test_comprehensive_build.py: 76 tests — Sessions 135-160
 - test_pending_build.py: ~45 tests — Sessions 139-160
 - test_phase9.py + all others: ~750 tests
-- TOTAL: 1000+ passing, CI green
+- TOTAL: 1338 passing, 3 skipped, CI green
 
 
 ## Sessions 161-170 (Pending Queue Complete)
@@ -114,6 +123,61 @@ S170 drekkana_variants.py — Parasara/Jagannatha/Somanatha D3 + vargas.py wire
 - baseline_india_1947.json stub created for regression testing
 
 ## Session 186 — School-Mixing Fix (Audit I-B) + Regression Snapshot (J-2)
+
+## Session 187 — Scoring Wiring Gaps (S187)
+
+### multi_axis_scoring.py patches
+- **Gap S164 (War loser)**: `_score_one_house` now checks `chart.planetary_war_losers`;
+  bhavesh that is a Graha Yuddha loser receives −1.5 penalty throughout life
+  (Saravali Ch.4 v.18-22). Detection added pre-return; `bh_war_loser` bool computed
+  from `getattr(chart, 'planetary_war_losers', set())`
+- **Gap I-B (strict_school)**: `score_axis()` and `score_all_axes()` now accept
+  `strict_school: bool = False`. When True, `school_score_adjustment()` is called
+  to deduct forbidden-school rule contributions. Wire is live; R17/R18 currently
+  score 0 so no numeric change yet.
+
+### scoring_v3.py patches
+- **Gap S163 (Dasha scoring)**: `score_chart_with_dasha()` stub (was using
+  `h-6` placeholder scores) replaced with real implementation accepting `base_scores`
+  param. `score_chart_v3()` now calls it after `score_all_axes()`, updating
+  `axes.d1.scores` with dasha-sensitized values when `on_date` is supplied.
+
+### New Invariants
+- #35 War loser bhavesh = −1.5 to house score (Saravali Ch.4 v.18-22) — live
+- #36 strict_school=True deducts Jaimini rule contributions in Parashari mode — live
+
+## Session 188 — XIX Output/API + Postgres Routing (S188)
+
+### src/api/main.py
+- Version bumped to `3.0.0`
+- `src.db` → `src.db_pg` (Postgres routing with automatic SQLite fallback)
+- 5 new endpoints added:
+
+| Endpoint | Module | Description |
+|----------|--------|-------------|
+| `POST /charts/{id}/svg` | north_indian_chart.py | North/South Indian SVG |
+| `POST /charts/{id}/pdf` | pdf_export.py | 2-page PDF (weasyprint/HTML fallback) |
+| `POST /charts/{id}/guidance` | guidance_api.py | Consumer L1/L2/L3 guidance |
+| `GET /charts/{id}/confidence` | confidence_model.py | Lagna/nakshatra boundary warnings |
+| `GET /charts/{id}/scores/v3` | scoring_v3.py | Dasha-sensitized multi-axis scores |
+
+### src/api/models.py
+- Added: `SVGRequest`, `SVGOut`, `GuidanceRequest`, `GuidanceOut`,
+  `ConfidenceOut`, `ChartV3Out`
+
+### Swiss Ephemeris Upgrade
+- Real SE files downloaded from github.com/aloistr/swisseph:
+  `sepl_18.se1` (473K planets) + `semo_18.se1` (1.2M Moon)
+- pyswisseph now uses JPL DE431 — Moshier fallback retired
+- Verified: `swe.calc_ut()` returns flags=258 (FLG_SWIEPH + FLG_SPEED)
+- Sub-arcsecond precision; nakshatra boundary errors eliminated
+- Historical charts (pre-1800): use `seplm_18.se1` + `semom_18.se1` for BC dates
+
+### ADB Fixtures
+- 177 fixture files regenerated post-FLG_TOPOCTR Moon correction
+- 7 new fixtures added: Ambedkar, Bush, Kennedy, Rockefeller, Roosevelt FDR, Tata JRD, Wells HG
+- All 12 Lagnas covered across 200+ real birth charts
+
 
 ### school_rules.py (src/calculations/school_rules.py)
 - SCHOOL_RULE_MAP: 22 rules tagged — R17/R18 = "jaimini", R01-R16/R19-R22 = "parashari"

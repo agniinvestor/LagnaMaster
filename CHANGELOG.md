@@ -1,4 +1,25 @@
 # LagnaMaster — CHANGELOG.md
+## S187-S188 — Scoring Gaps + XIX Output API (March 2026)
+
+### S187 — Wiring Gaps Closed
+- **multi_axis_scoring.py**: Graha Yuddha war loser −1.5 bhavesh penalty
+  (Saravali Ch.4 v.18-22); `strict_school` param on `score_axis`/`score_all_axes`;
+  `school_score_adjustment()` called in strict mode
+- **scoring_v3.py**: `score_chart_with_dasha()` stub replaced with real
+  implementation; D1 scores dasha-sensitized in `score_chart_v3()` when `on_date` supplied
+
+### S188 — XIX Output/API + Infrastructure
+- **src/api/main.py**: Version 3.0.0; `db_pg` routing (Postgres + SQLite fallback);
+  5 new endpoints: `/svg`, `/pdf`, `/guidance`, `/confidence`, `/scores/v3`
+- **src/api/models.py**: `SVGRequest`, `SVGOut`, `GuidanceRequest`, `GuidanceOut`,
+  `ConfidenceOut`, `ChartV3Out`
+- **Swiss Ephemeris**: Real SE files (sepl_18.se1 + semo_18.se1) from JPL DE431;
+  Moshier fallback retired; verified flags=258 (FLG_SWIEPH)
+- **ADB Fixtures**: 177 files regenerated post-FLG_TOPOCTR; 7 new charts added
+
+### Test Status: 1338 passed, 3 skipped, CI green
+
+
 
 ## v3.0.0 — Sessions 1–160 (March 2026)
 

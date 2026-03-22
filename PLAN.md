@@ -30,11 +30,11 @@ swe.set_topo(birth_lat, birth_lon, 0)
 flags |= swe.FLG_TOPOCTR  # for Moon calculation only
 ```
 
-### Sessions 161–170 (Priority Queue)
+### Sessions 161–188 (Complete)
 
 | Session | Task | Effort | Impact |
 |---------|------|--------|--------|
-| 161 | Topocentric Moon — 2 lines in ephemeris.py | 30 min | HIGH — nakshatra accuracy |
+| 161 | Topocentric Moon — 2 lines in ephemeris.py | 30 min | HIGH — nakshatra accuracy | ✅ DONE |
 | 162 | Wire functional dignity into R02/R09 | 2 hr | HIGH — systematic fix for all charts |
 | 163 | Wire dasha_scoring into score_chart() | 3 hr | HIGH — temporal scoring |
 | 164 | Wire war loser into compute_dignity() | 2 hr | MED — Graha Yuddha downstream |
@@ -65,8 +65,8 @@ flags |= swe.FLG_TOPOCTR  # for Moon calculation only
 | XIV. Special Lagnas | 2 | 2 | 0 | 0 |
 | XVI. Varshaphala | 1 | 1 | 0 | 0 |
 | XVIII. Validation | 3 | 1 | 1 | 1 |
-| XIX. Output/API | 5 | 1 | 1 | 3 |
-| OB. Architecture | 5 | 4 | 0 | 1 |
+| XIX. Output/API | 5 | 5 | 0 | 0 | ✅ S188 |
+| OB. Architecture | 5 | 5 | 0 | 0 | ✅ S187/S188 |
 
 ### OB-3 (Empirical Calibration) — Long-Term Roadmap
 Requires 500+ verified charts with documented life events.
@@ -82,3 +82,29 @@ Not feasible without chart corpus collection. Track as separate research project
 5. New yogas must have passing test with India 1947 OR a specific counter-example chart
 6. Varshaphala is Tajika school — different aspects, separate pipeline
 7. KP requires true node + KP ayanamsha + separate significator pipeline
+
+
+## S187 — Scoring Wiring Gaps (March 2026) ✅
+- War loser −1.5 penalty wired into `_score_one_house` (Saravali Ch.4 v.18-22)
+- Dasha scoring wired into `score_chart_v3()` — D1 scores now dasha-sensitized
+- `strict_school` param added to `score_axis()` / `score_all_axes()`
+- `school_score_adjustment()` called in strict mode (live wire for R17/R18)
+
+## S188 — XIX Output API + Postgres + Swiss Ephemeris (March 2026) ✅
+- 5 new API endpoints: SVG, PDF, guidance, confidence, v3 scores
+- Postgres routing live (`db_pg` — auto-falls back to SQLite if PG_DSN unset)
+- Swiss Ephemeris real files installed — JPL DE431 precision
+- API version: 3.0.0
+
+## Sessions 189+ — Remaining Roadmap
+
+| Priority | Item | Effort |
+|----------|------|--------|
+| 🟠 | C-18: 8 diverse stress-test fixtures (Neecha Bhanga, Graha Yuddha, nakshatra cusp, Parivartana, female, high-lat, year-boundary) | 1 day |
+| 🟠 | Verify Shadbala Kala Bala all 8 sub-components complete | 2 hr |
+| 🟠 | PostgreSQL live test (spin up PG_DSN, run 2 skipped tests) | 2 hr |
+| 🟡 | Confidence model surfaced in Streamlit UI | 2 hr |
+| 🟡 | Nehru Capricorn Lagna skip — investigate root cause | 1 hr |
+| 🟡 | BC date charts: seplm_18.se1 + semom_18.se1 for pre-1800 | 30 min |
+| 🔵 | OB-3: Empirical calibration ML pipeline (500+ charts required) | weeks |
+| 🔵 | Mundane astrology consumer pipeline | 3–4 days |
