@@ -65,7 +65,7 @@ jobs:
 
       - name: Run tests
         run: |
-          PYTHONPATH=. pytest tests/ -q --tb=short \
+          PYTHONPATH=. pytest tests/ -q --tb=short 2>&1 | tee /tmp/pytest_out.txt; STATUS=${PIPESTATUS[0]}; if [ $STATUS -ne 0 ]; then grep -E 'FAILED|ERROR|AssertionError' /tmp/pytest_out.txt | while IFS= read -r line; do echo "::error::$line"; done; fi; exit $STATUS -q --tb=short \
             --ignore=tests/test_session21.py \
             --ignore=tests/test_varga.py \
 
