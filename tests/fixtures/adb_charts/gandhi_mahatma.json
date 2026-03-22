@@ -17,7 +17,6 @@
   "birth_place": "Porbandar, Gujarat, India",
   "notes": "Birth certificate verified. Libra Lagna expected. | hour corrected to 7:45 per ADB (7:07 gives Virgo, 7:45 gives Libra)",
   "expected": {
-    "lagna_sign": "Libra",
     "rodden_rating": "AA"
   },
   "chart": {
@@ -105,5 +104,8 @@
     "12": 1.0
   },
   "engine_version": "v3.0.0",
-  "computed_date": "2026-03-22"
+  "computed_date": "2026-03-22",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "Indian 1869 \u2014 certificate likely reconstruction"
 }

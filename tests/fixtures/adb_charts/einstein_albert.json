@@ -14,7 +14,7 @@
     "tz_offset": 1.0,
     "ayanamsha": "lahiri"
   },
-  "birth_place": "Ulm, Baden-Württemberg, Germany",
+  "birth_place": "Ulm, Baden-W\u00fcrttemberg, Germany",
   "notes": "Rodden AA. Gemini Lagna expected.",
   "expected": {
     "lagna_sign": "Gemini"
@@ -104,5 +104,8 @@
     "12": 0.125
   },
   "engine_version": "v3.0.0",
-  "computed_date": "2026-03-22"
+  "computed_date": "2026-03-22",
+  "data_trust_level": "high",
+  "assert_lagna": true,
+  "trust_note": "German Standesamt"
 }

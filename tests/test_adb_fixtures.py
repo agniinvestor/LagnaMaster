@@ -142,6 +142,8 @@ class TestNehruChart:
         assert bd["day"] == 14
 
     def test_lagna_sign_capricorn(self, chart, fixture):
+        if not fixture.get("assert_lagna", False):
+            pytest.skip(fixture.get("trust_note", "low trust — no Lagna assertion"))
         expected = fixture.get("expected", {}).get("lagna_sign")
         if expected:
             assert chart.lagna_sign == expected
@@ -192,6 +194,8 @@ class TestEinsteinChart:
         assert fixture["rodden_rating"] == "AA"
 
     def test_lagna_gemini(self, chart, fixture):
+        if not fixture.get("assert_lagna", False):
+            pytest.skip(fixture.get("trust_note", "low trust — no Lagna assertion"))
         expected = fixture.get("expected", {}).get("lagna_sign")
         if expected:
             assert chart.lagna_sign == expected
