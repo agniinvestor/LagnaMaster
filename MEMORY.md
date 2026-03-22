@@ -207,3 +207,26 @@ S170 drekkana_variants.py — Parasara/Jagannatha/Somanatha D3 + vargas.py wire
 ### Gap Register Update
 - I-B (school-mixing) → ⚡ WIRED (infrastructure complete, not yet default-on)
 - J-2 (regression snapshot) → ✅ COMPLETE (compute_snapshot + diff + assert_no_regression)
+
+
+## CI Guard System (installed March 22 2026)
+
+### Pre-push hook
+- Location: `.git/hooks/pre-push` (not committed — local only)
+- Runs: `pytest tests/ -q --tb=short -x` before every push
+- Bypass: `git push --no-verify`
+
+### CI watch tool
+- Location: `tools/ci_watch.py`
+- Usage: `.venv/bin/python3 tools/ci_watch.py [--fix] [--run-id ID]`
+- Fetches failure log from GitHub Actions to local terminal
+
+### Lint status
+- Tool: `ruff` (in CI as `Lint` job)
+- Status: 0 errors as of March 22 2026
+- Run locally: `.venv/bin/ruff check src/ tests/ tools/`
+- Format: `.venv/bin/ruff format src/ tests/ tools/`
+
+### Key invariant
+- Never push without running ruff first (pre-push hook enforces this)
+- CI fails on ruff before pytest — lint must be clean

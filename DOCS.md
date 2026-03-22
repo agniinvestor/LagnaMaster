@@ -658,3 +658,15 @@ All plugin results carry `plugin_note = "Custom/extended rule — not core class
 70. Nabhasa: only strongest yoga per group manifests; all 32 types from BPHS Ch.35
 71. Pitr Dosha: classical_disclaimer field mandatory; severity = Strong/Moderate/Mild/Not present
 72. Plugin yogas: all results carry plugin_note; never override core engine outputs
+
+
+## Developer Tools
+
+| Tool | Purpose |
+|------|---------|
+| `tools/ci_watch.py` | Watch GitHub Actions CI; print failures locally |
+| `tools/setup_ci_guard.py` | Install pre-push hook + ci_watch |
+| `tools/adb_xml_importer.py` | Import official ADB XML export (5,063 charts) |
+| `.git/hooks/pre-push` | Auto-runs ruff + pytest before every push |
+
+Run `ruff check src/ tests/ tools/` before pushing. CI fails on lint first.

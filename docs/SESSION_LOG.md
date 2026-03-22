@@ -506,3 +506,50 @@ are now implemented. Remaining genuine limits:
 - Full Prashna Marga horary corpus (requires separate source text)
 - Medical/financial astrology as distinct disciplines
 - Complete Desha-Kala-Patra (not parameterisable)
+
+
+### Session S187 — Scoring Pipeline Wiring
+- `multi_axis_scoring.py`: Graha Yuddha war loser −1.5 bhavesh penalty
+  (Saravali Ch.4 v.18-22)
+- `scoring_v3.py`: `score_chart_with_dasha()` stub → real dasha-sensitized
+  implementation; `strict_school` param wired to `score_axis()`
+- Commit: `0b1a17d`
+
+### Session S188 — XIX Output API + Postgres Routing
+- New FastAPI endpoints: `POST /charts/{id}/svg`, `POST /charts/{id}/pdf`,
+  `POST /charts/{id}/guidance`, `GET /charts/{id}/confidence`,
+  `GET /charts/{id}/scores/v3`
+- `src/db_pg.py`: Postgres routing with SQLite fallback (`PG_DSN` env var)
+- New Pydantic models: SVGRequest, SVGOut, GuidanceRequest, GuidanceOut,
+  ConfidenceOut, ChartV3Out, MundaneRequest, MundaneOut
+- `weasyprint>=60.0` added to requirements
+- Commit: `feat(S188)`
+
+### Session S189 — ADB XML Importer + Diverse Fixtures + Streamlit UI
+- `tools/adb_xml_importer.py`: Official ADB XML export parser (replaces Playwright
+  scraper); uses `jd_ut` from `<sbtime>` directly — no timezone guesswork;
+  5,063 charts computed from c_sample.zip (0 errors)
+- `tests/fixtures/diverse_chart_fixtures.py`: Sections B-H added — Neecha Bhanga,
+  Graha Yuddha, Parivartana, Kemadruma, Nakshatra boundary, High-latitude, Female
+- `POST /mundane/analyze` endpoint wired
+- `ephe/semom_18.se1` (BC Moon) downloaded
+- `src/ui/app.py`: Streamlit 4-tab UI — SVG, Scores, Confidence, Guidance
+- Commits: `2caea96`, `87c48ba`
+
+### CI Guard Session (March 22 2026)
+Root cause of 103 CI failures identified and fixed:
+
+**Lint (ruff)**: 732 errors → 0
+- `ruff format` on 203 files; `--unsafe-fixes` for F401; manual `# noqa` for
+  intentional late imports and re-exports
+
+**CI workflow**: trailing `\` after `exit $STATUS` → `exit: too many arguments`
+- Removed stray continuation character; tests were passing but CI reported failure
+
+**Infrastructure installed**:
+- `.git/hooks/pre-push`: runs pytest locally before every push
+- `tools/ci_watch.py`: fetches CI failures to local terminal via `gh run view`
+- `tools/setup_ci_guard.py`: one-shot installer for both tools
+
+**Final numbers**: 1338 passed, 3 skipped | ruff: 0 errors | CI: green
+104 historical failed runs deleted.
