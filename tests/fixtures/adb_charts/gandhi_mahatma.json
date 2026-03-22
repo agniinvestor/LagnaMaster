@@ -8,101 +8,101 @@
     "year": 1869,
     "month": 10,
     "day": 2,
-    "hour": 7.116,
+    "hour": 7.75,
     "lat": 21.6422,
     "lon": 69.6011,
     "tz_offset": 5.5,
     "ayanamsha": "lahiri"
   },
   "birth_place": "Porbandar, Gujarat, India",
-  "notes": "Birth certificate verified. Libra Lagna expected.",
+  "notes": "Birth certificate verified. Libra Lagna expected. | hour corrected to 7:45 per ADB (7:07 gives Virgo, 7:45 gives Libra)",
   "expected": {
     "lagna_sign": "Libra",
     "rodden_rating": "AA"
   },
   "chart": {
-    "lagna": 171.56635908237823,
-    "lagna_sign": "Virgo",
-    "lagna_sign_index": 5,
+    "lagna": 180.3514647164315,
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
     "planets": {
       "Sun": {
-        "longitude": 166.8548379168752,
+        "longitude": 166.88086596785323,
         "sign_index": 5,
         "sign": "Virgo",
-        "degree_in_sign": 16.854837916875198,
+        "degree_in_sign": 16.880865967853225,
         "is_retrograde": false
       },
       "Moon": {
-        "longitude": 117.372002480787,
+        "longitude": 117.75285832715333,
         "sign_index": 3,
         "sign": "Cancer",
-        "degree_in_sign": 27.372002480787003,
+        "degree_in_sign": 27.752858327153334,
         "is_retrograde": false
       },
       "Mars": {
-        "longitude": 206.3384420267118,
+        "longitude": 206.3568726916766,
         "sign_index": 6,
         "sign": "Libra",
-        "degree_in_sign": 26.33844202671179,
+        "degree_in_sign": 26.356872691676614,
         "is_retrograde": false
       },
       "Mercury": {
-        "longitude": 191.71121209855562,
+        "longitude": 191.7276041180129,
         "sign_index": 6,
         "sign": "Libra",
-        "degree_in_sign": 11.71121209855562,
+        "degree_in_sign": 11.727604118012891,
         "is_retrograde": false
       },
       "Jupiter": {
-        "longitude": 28.1415390384754,
+        "longitude": 28.139610085712057,
         "sign_index": 0,
         "sign": "Aries",
-        "degree_in_sign": 28.1415390384754,
+        "degree_in_sign": 28.139610085712057,
         "is_retrograde": true
       },
       "Venus": {
-        "longitude": 204.35271276482982,
+        "longitude": 204.38425442592717,
         "sign_index": 6,
         "sign": "Libra",
-        "degree_in_sign": 24.352712764829818,
+        "degree_in_sign": 24.384254425927168,
         "is_retrograde": false
       },
       "Saturn": {
-        "longitude": 230.32510374033103,
+        "longitude": 230.32701619971698,
         "sign_index": 7,
         "sign": "Scorpio",
-        "degree_in_sign": 20.32510374033103,
+        "degree_in_sign": 20.32701619971698,
         "is_retrograde": false
       },
       "Rahu": {
-        "longitude": 102.1493274364515,
+        "longitude": 102.14792756089878,
         "sign_index": 3,
         "sign": "Cancer",
-        "degree_in_sign": 12.1493274364515,
+        "degree_in_sign": 12.14792756089878,
         "is_retrograde": true
       },
       "Ketu": {
-        "longitude": 282.1493274364515,
+        "longitude": 282.1479275608988,
         "sign_index": 9,
         "sign": "Capricorn",
-        "degree_in_sign": 12.149327436451472,
+        "degree_in_sign": 12.14792756089878,
         "is_retrograde": true
       }
     }
   },
   "scores": {
-    "1": -2.25,
-    "2": -1.125,
-    "3": 0.25,
-    "4": -1.375,
-    "5": -4.125,
-    "6": 0.0,
-    "7": -2.0,
-    "8": 3.25,
-    "9": -3.0,
-    "10": 0.0,
-    "11": -2.25,
-    "12": 1.125
+    "1": -0.375,
+    "2": 2.0,
+    "3": 3.125,
+    "4": -3.125,
+    "5": 0.5,
+    "6": 2.5,
+    "7": 2.5,
+    "8": -0.5,
+    "9": 3.0,
+    "10": 0.75,
+    "11": -2.375,
+    "12": 1.0
   },
   "engine_version": "v3.0.0",
   "computed_date": "2026-03-22"
