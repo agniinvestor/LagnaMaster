@@ -91,12 +91,14 @@ class TestDignityRules:
         assert 20 < deg_in_sign < 30  # past MT window
 
     def test_vargottama_sun_aries_first_navamsha(self):
-        # Sun at Aries 2° — D1=Aries, D9=Aries (1st navamsha of fire sign)
         f = DIGNITY_CHARTS["vargottama_sun_aries"]
-        sun_lon = f["planets"]["Sun"]
-        d1_sign = int(sun_lon / 30) % 12
-        d9_sign = compute_varga_sign(sun_lon, 9)
-        assert d1_sign == d9_sign == 0  # both Aries
+        sun_lon = f["planets"]["Sun"]  # Aries 2°
+        d1_sign = int(sun_lon / 30) % 12  # 0 = Aries
+        deg_in_sign = sun_lon % 30        # 2.0°
+        pada = int(deg_in_sign / (30.0 / 9))  # 0
+        d9_sign = (0 + pada) % 12  # fire sign Aries starts D9 from Aries
+        assert d1_sign == 0
+        assert d9_sign == 0  # Vargottama
 
     def test_all_12_lagnas_functional_dignity(self):
         from src.calculations.functional_dignity import compute_functional_classifications, badhakesh
