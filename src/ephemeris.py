@@ -200,6 +200,7 @@ def compute_chart(
 
     planets_out: dict[str, PlanetPosition] = {}
 
+    swe.set_topo(lon, lat, 0)  # S161: topocentric Moon correction (Swiss Ephemeris Manual §2.3)
     for name, planet_id in _PLANET_IDS.items():
         result, _ = swe.calc_ut(jd_ut, planet_id, flags)
         lon_sid = result[0] % 360
