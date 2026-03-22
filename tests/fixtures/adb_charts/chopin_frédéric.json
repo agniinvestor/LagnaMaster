@@ -21,89 +21,88 @@
   "trust_note": "Poland 1810 — low trust",
   "expected": {},
   "chart": {
-    "lagna": 142.734,
-    "lagna_sign": "Leo",
-    "lagna_sign_index": 4,
-    "ayanamsha_value": 21.206166,
+    "lagna": 358.88182262181107,
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
     "planets": {
       "Sun": {
-        "longitude": 312.2663,
+        "longitude": 318.9456298031105,
         "sign_index": 10,
         "sign": "Aquarius",
-        "degree_in_sign": 12.2663,
+        "degree_in_sign": 18.945629803110478,
         "is_retrograde": false
       },
       "Moon": {
-        "longitude": 170.2797,
-        "sign_index": 5,
-        "sign": "Virgo",
-        "degree_in_sign": 20.2797,
+        "longitude": 262.06464052021744,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 22.064640520217438,
         "is_retrograde": false
       },
       "Mars": {
-        "longitude": 341.2463,
+        "longitude": 346.30783171579844,
         "sign_index": 11,
         "sign": "Pisces",
-        "degree_in_sign": 11.2463,
+        "degree_in_sign": 16.307831715798443,
         "is_retrograde": false
       },
       "Mercury": {
-        "longitude": 299.6608,
+        "longitude": 297.12993753793575,
         "sign_index": 9,
         "sign": "Capricorn",
-        "degree_in_sign": 29.6608,
-        "is_retrograde": true
+        "degree_in_sign": 27.129937537935746,
+        "is_retrograde": false
       },
       "Jupiter": {
-        "longitude": 1.9829,
+        "longitude": 3.312201685112804,
         "sign_index": 0,
         "sign": "Aries",
-        "degree_in_sign": 1.9829,
+        "degree_in_sign": 3.312201685112804,
         "is_retrograde": false
       },
       "Venus": {
-        "longitude": 307.1158,
+        "longitude": 315.4300274782749,
         "sign_index": 10,
         "sign": "Aquarius",
-        "degree_in_sign": 7.1158,
+        "degree_in_sign": 15.430027478274894,
         "is_retrograde": false
       },
       "Saturn": {
-        "longitude": 233.32,
+        "longitude": 233.61765894779325,
         "sign_index": 7,
         "sign": "Scorpio",
-        "degree_in_sign": 23.32,
+        "degree_in_sign": 23.617658947793245,
         "is_retrograde": false
       },
       "Rahu": {
-        "longitude": 175.8608,
+        "longitude": 175.508221231378,
         "sign_index": 5,
         "sign": "Virgo",
-        "degree_in_sign": 25.8608,
+        "degree_in_sign": 25.508221231378002,
         "is_retrograde": true
       },
       "Ketu": {
-        "longitude": 355.8608,
+        "longitude": 355.508221231378,
         "sign_index": 11,
         "sign": "Pisces",
-        "degree_in_sign": 25.8608,
+        "degree_in_sign": 25.508221231378002,
         "is_retrograde": true
       }
     }
   },
   "scores": {
-    "1": 3,
-    "2": -5.5,
-    "3": -1.125,
-    "4": -4.5,
-    "5": 3.875,
-    "6": 2,
-    "7": 2.5,
-    "8": 0.875,
-    "9": -2,
-    "10": 0.25,
-    "11": -2.75,
-    "12": -0.125
+    "1": -3.0,
+    "2": 2.5,
+    "3": -5.5,
+    "4": 0.875,
+    "5": 3.125,
+    "6": -1.75,
+    "7": -3.0,
+    "8": -5.375,
+    "9": -0.75,
+    "10": 1.875,
+    "11": 2.0,
+    "12": 0.0
   },
   "fetch_status": "ok",
   "engine_version": "v3.0.0",

@@ -20,7 +20,91 @@
   "assert_lagna": false,
   "trust_note": "Stub — fetch blocked",
   "expected": {},
-  "chart": null,
-  "scores": null,
-  "fetch_status": "blocked"
+  "chart": {
+    "lagna": 348.19463393428407,
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "planets": {
+      "Sun": {
+        "longitude": 257.2493736462994,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 17.249373646299375,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 227.60732901729833,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 17.607329017298326,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 15.486337131588785,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 15.486337131588785,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 241.81366432463074,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 1.8136643246307358,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 303.5601442675076,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 3.56014426750761,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 267.1295989533203,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 27.129598953320283,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 220.47876358863004,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 10.478763588630045,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 74.11437793993618,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 14.114377939936176,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 254.11437793993616,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 14.114377939936162,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -1.0,
+    "2": -1.5,
+    "3": -2.375,
+    "4": -2.125,
+    "5": -1.25,
+    "6": 2.875,
+    "7": -0.75,
+    "8": -0.625,
+    "9": -2.75,
+    "10": -4.0,
+    "11": 1.5,
+    "12": 4.5
+  },
+  "fetch_status": "blocked",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
 }

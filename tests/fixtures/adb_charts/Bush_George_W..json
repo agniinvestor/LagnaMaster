@@ -1,0 +1,110 @@
+{
+  "adb_slug": "Bush,_George_W.",
+  "name": "George W. Bush",
+  "source": "astro-databank",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Bush,_George_W.",
+  "birth_data": {
+    "year": 1946,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "USA",
+  "country": "USA",
+  "data_trust_level": "medium",
+  "assert_lagna": false,
+  "trust_note": "Stub — fetch blocked",
+  "expected": {},
+  "chart": {
+    "lagna": 348.35449756580516,
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "planets": {
+      "Sun": {
+        "longitude": 257.3868314627484,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 17.386831462748376,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 234.6201767176007,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 24.620176717600714,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 95.00319252734475,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 5.003192527344751,
+        "is_retrograde": true
+      },
+      "Mercury": {
+        "longitude": 236.01844936103663,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 26.01844936103663,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 181.76943203545594,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 1.7694320354559352,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 249.94585846857166,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 9.945858468571657,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 89.21378025385623,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 29.21378025385623,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 66.34939392421354,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 6.349393924213544,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 246.34939392421353,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 6.34939392421353,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -2.25,
+    "2": 1.375,
+    "3": -1.25,
+    "4": 0.5,
+    "5": 3.0,
+    "6": 1.5,
+    "7": 4.5,
+    "8": -1.5,
+    "9": 3.0,
+    "10": -6.25,
+    "11": -0.25,
+    "12": 1.125
+  },
+  "fetch_status": "blocked",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

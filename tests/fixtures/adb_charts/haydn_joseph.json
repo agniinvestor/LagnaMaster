@@ -20,8 +20,92 @@
   "assert_lagna": false,
   "trust_note": "Austria 1732 — low trust",
   "expected": {},
-  "chart": null,
-  "scores": null,
+  "chart": {
+    "lagna": 246.48187940050744,
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "planets": {
+      "Sun": {
+        "longitude": 260.0313876305699,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 20.031387630569895,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 302.9552468156992,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 2.9552468156991836,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 187.00474414766768,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 7.0047441476676795,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 272.52625539897974,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 2.5262553989797425,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 168.89547633900557,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 18.89547633900557,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 273.9701896900383,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 3.9701896900382962,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 337.90691238894567,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 7.9069123889456705,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 248.33837109645745,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 8.33837109645745,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 68.33837109645742,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 8.338371096457422,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -1.25,
+    "2": 2.875,
+    "3": 2.0,
+    "4": 1.625,
+    "5": -0.5,
+    "6": 0.125,
+    "7": -3.5,
+    "8": 1.75,
+    "9": 1.875,
+    "10": 0.5,
+    "11": 0.0,
+    "12": -0.25
+  },
   "fetch_status": "ok",
-  "fetched_date": "2026-03-22"
+  "fetched_date": "2026-03-22",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
 }

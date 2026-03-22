@@ -21,72 +21,71 @@
   "trust_note": "USA 1955 — medium trust (cross-referenced)",
   "expected": {},
   "chart": {
-    "lagna": 148.0781,
+    "lagna": 148.0780685856133,
     "lagna_sign": "Leo",
     "lagna_sign_index": 4,
-    "ayanamsha_value": 23.230653,
     "planets": {
       "Sun": {
-        "longitude": 312.5083,
+        "longitude": 312.5082513877644,
         "sign_index": 10,
         "sign": "Aquarius",
-        "degree_in_sign": 12.5083,
+        "degree_in_sign": 12.508251387764403,
         "is_retrograde": false
       },
       "Moon": {
-        "longitude": 344.4524,
+        "longitude": 344.4524146324893,
         "sign_index": 11,
         "sign": "Pisces",
-        "degree_in_sign": 14.4524,
+        "degree_in_sign": 14.452414632489308,
         "is_retrograde": false
       },
       "Mars": {
-        "longitude": 5.8519,
+        "longitude": 5.8518558284168405,
         "sign_index": 0,
         "sign": "Aries",
-        "degree_in_sign": 5.8519,
+        "degree_in_sign": 5.8518558284168405,
         "is_retrograde": false
       },
       "Mercury": {
-        "longitude": 291.1262,
+        "longitude": 291.12616846849085,
         "sign_index": 9,
         "sign": "Capricorn",
-        "degree_in_sign": 21.1262,
+        "degree_in_sign": 21.126168468490846,
         "is_retrograde": true
       },
       "Jupiter": {
-        "longitude": 87.2725,
+        "longitude": 87.27245589636881,
         "sign_index": 2,
         "sign": "Gemini",
-        "degree_in_sign": 27.2725,
+        "degree_in_sign": 27.27245589636881,
         "is_retrograde": true
       },
       "Venus": {
-        "longitude": 267.9314,
+        "longitude": 267.93144993604,
         "sign_index": 8,
         "sign": "Sagittarius",
-        "degree_in_sign": 27.9314,
+        "degree_in_sign": 27.931449936039996,
         "is_retrograde": false
       },
       "Saturn": {
-        "longitude": 207.927,
+        "longitude": 207.92696829708723,
         "sign_index": 6,
         "sign": "Libra",
-        "degree_in_sign": 27.927,
+        "degree_in_sign": 27.926968297087228,
         "is_retrograde": false
       },
       "Rahu": {
-        "longitude": 249.2695,
+        "longitude": 249.2694721572728,
         "sign_index": 8,
         "sign": "Sagittarius",
-        "degree_in_sign": 9.2695,
+        "degree_in_sign": 9.269472157272787,
         "is_retrograde": true
       },
       "Ketu": {
-        "longitude": 69.2695,
+        "longitude": 69.26947215727279,
         "sign_index": 2,
         "sign": "Gemini",
-        "degree_in_sign": 9.2695,
+        "degree_in_sign": 9.269472157272787,
         "is_retrograde": true
       }
     }

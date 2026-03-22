@@ -20,7 +20,91 @@
   "assert_lagna": false,
   "trust_note": "Stub — fetch blocked",
   "expected": {},
-  "chart": null,
-  "scores": null,
-  "fetch_status": "blocked"
+  "chart": {
+    "lagna": 348.1754508092942,
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "planets": {
+      "Sun": {
+        "longitude": 257.2286093538344,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 17.228609353834372,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 37.34773963281922,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 7.34773963281922,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 112.60415734845755,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 22.604157348457548,
+        "is_retrograde": true
+      },
+      "Mercury": {
+        "longitude": 267.4051336349622,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 27.405133634962226,
+        "is_retrograde": true
+      },
+      "Jupiter": {
+        "longitude": 83.28091396820953,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 23.280913968209532,
+        "is_retrograde": true
+      },
+      "Venus": {
+        "longitude": 215.6216007229004,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 5.621600722900411,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 260.8748314653025,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 20.87483146530252,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 356.6929495667732,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 26.692949566773223,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 176.69294956677322,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 26.692949566773223,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 1.0,
+    "2": 2.0,
+    "3": 4.125,
+    "4": -2.875,
+    "5": 0.25,
+    "6": 2.75,
+    "7": -5.25,
+    "8": 2.625,
+    "9": 2.125,
+    "10": 1.375,
+    "11": 0.0,
+    "12": -0.625
+  },
+  "fetch_status": "blocked",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
 }

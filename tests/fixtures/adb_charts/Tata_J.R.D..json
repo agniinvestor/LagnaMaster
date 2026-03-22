@@ -1,0 +1,110 @@
+{
+  "adb_slug": "Tata,_J.R.D.",
+  "name": "J.R.D. Tata",
+  "source": "astro-databank",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Tata,_J.R.D.",
+  "birth_data": {
+    "year": 1904,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "India",
+  "country": "India",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "Stub — fetch blocked",
+  "expected": {},
+  "chart": {
+    "lagna": 348.0618684973147,
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "planets": {
+      "Sun": {
+        "longitude": 257.1499073557519,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 17.149907355751907,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 53.172286649392944,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 23.172286649392944,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 293.2111235940432,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 23.211123594043215,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 276.6244174347175,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 6.624417434717486,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 325.32144685599917,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 25.32144685599917,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 213.23000765096359,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 3.2300076509635858,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 285.54239307850855,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 15.542393078508553,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 159.30096032683974,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 9.300960326839743,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 339.30096032683974,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 9.300960326839743,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -4.0,
+    "2": -2.25,
+    "3": 3.625,
+    "4": -2.875,
+    "5": -1.375,
+    "6": 3.125,
+    "7": -4.25,
+    "8": 2.125,
+    "9": -1.125,
+    "10": -3.75,
+    "11": -2.5,
+    "12": 0.5
+  },
+  "fetch_status": "blocked",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

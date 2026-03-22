@@ -20,8 +20,92 @@
   "assert_lagna": false,
   "trust_note": "UK 1942 — medium trust",
   "expected": {},
-  "chart": null,
-  "scores": null,
+  "chart": {
+    "lagna": 194.81244387491898,
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "planets": {
+      "Sun": {
+        "longitude": 63.6615849867162,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 3.6615849867162,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 115.71749778552389,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 25.71749778552389,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 99.696014107968,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 9.696014107967997,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 55.26596249585838,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 25.265962495858382,
+        "is_retrograde": true
+      },
+      "Jupiter": {
+        "longitude": 68.80618008229602,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 8.806180082296024,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 26.06810787359883,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 26.06810787359883,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 42.1704645241314,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 12.170464524131397,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 134.86235000823746,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 14.862350008237456,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 314.86235000823746,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 14.862350008237456,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 2.75,
+    "2": 3.375,
+    "3": 1.625,
+    "4": -1.125,
+    "5": -4.125,
+    "6": 1.75,
+    "7": 3.75,
+    "8": 0.25,
+    "9": -4.0,
+    "10": -0.25,
+    "11": 1.75,
+    "12": -3.5
+  },
   "fetch_status": "ok",
-  "fetched_date": "2026-03-22"
+  "fetched_date": "2026-03-22",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
 }

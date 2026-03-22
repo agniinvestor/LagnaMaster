@@ -20,8 +20,92 @@
   "assert_lagna": false,
   "trust_note": "USA 1941 — medium trust",
   "expected": {},
-  "chart": null,
-  "scores": null,
+  "chart": {
+    "lagna": 144.9883525366854,
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "planets": {
+      "Sun": {
+        "longitude": 39.917027437607494,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 9.917027437607494,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 21.585770222938947,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 21.585770222938947,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 312.55550406100735,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 12.555504061007355,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 59.05089967070219,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 29.050899670702186,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 36.49425947608948,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 6.494259476089482,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 49.2341814426321,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 19.2341814426321,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 26.968557446868786,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 26.968557446868786,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 155.53250230134518,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 5.5325023013451755,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 335.5325023013452,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 5.5325023013451755,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 4.5,
+    "2": -0.125,
+    "3": 1.375,
+    "4": 2.625,
+    "5": 3.0,
+    "6": 1.375,
+    "7": 0.5,
+    "8": 0.25,
+    "9": -0.75,
+    "10": 2.75,
+    "11": 2.0,
+    "12": 1.25
+  },
   "fetch_status": "ok",
-  "fetched_date": "2026-03-22"
+  "fetched_date": "2026-03-22",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
 }

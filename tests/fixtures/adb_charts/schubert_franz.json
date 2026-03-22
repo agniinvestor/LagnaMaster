@@ -20,8 +20,92 @@
   "assert_lagna": false,
   "trust_note": "Austria 1797 — low trust",
   "expected": {},
-  "chart": null,
-  "scores": null,
+  "chart": {
+    "lagna": 23.672795604287057,
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "planets": {
+      "Sun": {
+        "longitude": 291.1872122659501,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 21.18721226595011,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 329.37338947793756,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 29.373389477937565,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 349.2268883127007,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 19.22688831270068,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 308.80255229388007,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 8.802552293880069,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 324.67436134041606,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 24.674361340416056,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 261.8824952139437,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 21.882495213943685,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 60.2771545252375,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 0.27715452523749917,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 68.59145910235176,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 8.591459102351763,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 248.59145910235176,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 8.591459102351763,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -1.75,
+    "2": 0.5,
+    "3": -2.0,
+    "4": -0.25,
+    "5": 3.875,
+    "6": -0.25,
+    "7": 0.875,
+    "8": -2.25,
+    "9": -0.25,
+    "10": -1.25,
+    "11": -1.0,
+    "12": -1.5
+  },
   "fetch_status": "ok",
-  "fetched_date": "2026-03-22"
+  "fetched_date": "2026-03-22",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
 }

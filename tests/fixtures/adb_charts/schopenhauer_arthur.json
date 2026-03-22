@@ -21,72 +21,71 @@
   "trust_note": "German Kirchenbuch — Gdansk birth register",
   "expected": {},
   "chart": {
-    "lagna": 80.1095,
+    "lagna": 80.1095056609319,
     "lagna_sign": "Gemini",
     "lagna_sign_index": 2,
-    "ayanamsha_value": 20.899132,
     "planets": {
       "Sun": {
-        "longitude": 312.6606,
+        "longitude": 312.66063927538084,
         "sign_index": 10,
         "sign": "Aquarius",
-        "degree_in_sign": 12.6606,
+        "degree_in_sign": 12.660639275380845,
         "is_retrograde": false
       },
       "Moon": {
-        "longitude": 145.0794,
+        "longitude": 145.0794254593082,
         "sign_index": 4,
         "sign": "Leo",
-        "degree_in_sign": 25.0794,
+        "degree_in_sign": 25.079425459308197,
         "is_retrograde": false
       },
       "Mars": {
-        "longitude": 77.6232,
+        "longitude": 77.62316626871217,
         "sign_index": 2,
         "sign": "Gemini",
-        "degree_in_sign": 17.6232,
+        "degree_in_sign": 17.62316626871217,
         "is_retrograde": false
       },
       "Mercury": {
-        "longitude": 321.3004,
+        "longitude": 321.30043605653617,
         "sign_index": 10,
         "sign": "Aquarius",
-        "degree_in_sign": 21.3004,
+        "degree_in_sign": 21.30043605653617,
         "is_retrograde": false
       },
       "Jupiter": {
-        "longitude": 55.8305,
+        "longitude": 55.83048940892742,
         "sign_index": 1,
         "sign": "Taurus",
-        "degree_in_sign": 25.8305,
+        "degree_in_sign": 25.83048940892742,
         "is_retrograde": false
       },
       "Venus": {
-        "longitude": 342.7094,
+        "longitude": 342.7094465782155,
         "sign_index": 11,
         "sign": "Pisces",
-        "degree_in_sign": 12.7094,
+        "degree_in_sign": 12.709446578215477,
         "is_retrograde": false
       },
       "Saturn": {
-        "longitude": 310.7198,
+        "longitude": 310.7197808934676,
         "sign_index": 10,
         "sign": "Aquarius",
-        "degree_in_sign": 10.7198,
+        "degree_in_sign": 10.7197808934676,
         "is_retrograde": false
       },
       "Rahu": {
-        "longitude": 241.6664,
+        "longitude": 241.66638055405622,
         "sign_index": 8,
         "sign": "Sagittarius",
-        "degree_in_sign": 1.6664,
+        "degree_in_sign": 1.666380554056218,
         "is_retrograde": true
       },
       "Ketu": {
-        "longitude": 61.6664,
+        "longitude": 61.66638055405622,
         "sign_index": 2,
         "sign": "Gemini",
-        "degree_in_sign": 1.6664,
+        "degree_in_sign": 1.666380554056218,
         "is_retrograde": true
       }
     }

@@ -1,0 +1,110 @@
+{
+  "adb_slug": "Ambedkar,_B.R.",
+  "name": "B.R. Ambedkar",
+  "source": "astro-databank",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Ambedkar,_B.R.",
+  "birth_data": {
+    "year": 1891,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "India",
+  "country": "India",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "Stub — fetch blocked",
+  "expected": {},
+  "chart": {
+    "lagna": 349.4657917996893,
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "planets": {
+      "Sun": {
+        "longitude": 258.5060520597752,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 18.506052059775186,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 147.3398434548887,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 27.339843454888694,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 319.23571895863097,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 19.23571895863097,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 277.2377019366766,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 7.237701936676615,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 292.2678531708718,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 22.267853170871774,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 223.2550558273594,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 13.2550558273594,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 144.83523295859132,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 24.83523295859132,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 50.854510716992785,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 20.854510716992785,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 230.8545107169928,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 20.85451071699279,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 2.25,
+    "2": -2.0,
+    "3": -3.0,
+    "4": 0.25,
+    "5": -3.0,
+    "6": 0.5,
+    "7": 1.125,
+    "8": -0.25,
+    "9": -4.25,
+    "10": -0.5,
+    "11": 0.5,
+    "12": -2.875
+  },
+  "fetch_status": "blocked",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

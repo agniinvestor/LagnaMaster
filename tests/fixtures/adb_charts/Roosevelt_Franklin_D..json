@@ -1,0 +1,110 @@
+{
+  "adb_slug": "Roosevelt,_Franklin_D.",
+  "name": "Franklin D. Roosevelt",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Roosevelt,_Franklin_D.",
+  "birth_data": {
+    "year": 1882,
+    "month": 1,
+    "day": 30,
+    "hour": 20.75,
+    "lat": 41.7668,
+    "lon": -73.9326,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Hyde Park NY, USA",
+  "country": "USA",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "USA 1882 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 151.8994861306052,
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "planets": {
+      "Sun": {
+        "longitude": 288.9243896753858,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 18.924389675385783,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 74.06889563712545,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 14.06889563712545,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 64.78998071869336,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 4.789980718693357,
+        "is_retrograde": true
+      },
+      "Mercury": {
+        "longitude": 304.9837635261657,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 4.983763526165717,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 24.721872230630407,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 24.721872230630407,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 283.8458615202875,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 13.845861520287485,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 13.87496565322489,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 13.87496565322489,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 223.47247901147057,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 13.472479011470568,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 43.47247901147057,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 13.472479011470568,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -2.5,
+    "2": -2.125,
+    "3": 1.25,
+    "4": -3.75,
+    "5": -4.5,
+    "6": 0.25,
+    "7": -2.75,
+    "8": 1.0,
+    "9": -4.75,
+    "10": -4.75,
+    "11": -0.875,
+    "12": 3.5
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}
