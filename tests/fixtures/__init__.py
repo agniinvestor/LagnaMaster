@@ -31,3 +31,5 @@ from tests.fixtures.regression_fixtures import (  # noqa: E402
     load_baseline,
     compute_and_store_baseline,
 )
+
+from tests.fixtures.diverse_chart_fixtures import ALL_FIXTURES, fixture_count  # noqa: E402

@@ -248,4 +248,4 @@ TOPOCENTRIC_MOON_NOTE = "swe.set_topo(lat,lon,0) + SEFLG_TOPOCTR for Moon"
 
 # Topocentric Moon (F-1 S136)
 # swe.set_topo(lat,lon,0) before Moon calc; SEFLG_TOPOCTR flag
-TOPOCENTRIC_MOON_ENABLED = False  # Set True and add FLG_TOPOCTR to Moon flags
+TOPOCENTRIC_MOON_ENABLED = True   # Active: swe.set_topo() called before Moon

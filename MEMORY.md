@@ -104,3 +104,11 @@ S167 north_indian_chart.py — North Indian diamond SVG + South Indian grid
 S168 pdf_export.py — 2-page HTML/PDF export with weasyprint fallback
 S169 kp_cuspal.py — cuspal sub-lord analysis, event promise, fructification
 S170 drekkana_variants.py — Parasara/Jagannatha/Somanatha D3 + vargas.py wire
+
+## S171+ Pending Queue Completion
+- diverse_chart_fixtures.py: 70+ synthetic fixtures covering all 12 Lagnas, Graha Yuddha, Parivartana, Neecha Bhanga, Kemadruma, Sannyasa, nakshatra boundaries, transits, Tarabala, Vedha, functional dignity
+- test_diverse_charts.py: parametric tests using diverse fixtures; 34-module smoke test
+- TOPOCENTRIC_MOON_ENABLED = True (was False)
+- weasyprint in requirements.txt
+- ACTIVE_DREKKANA_METHOD = "parasara" declared in vargas.py
+- baseline_india_1947.json stub created for regression testing
