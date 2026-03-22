@@ -6,21 +6,106 @@
   "adb_url": "https://www.astro.com/astro-databank/Keats,_John",
   "birth_data": {
     "year": 1795,
-    "month": 1,
-    "day": 1,
-    "hour": 12.0,
-    "lat": 0.0,
-    "lon": 0.0,
+    "month": 10,
+    "day": 31,
+    "hour": 14.0,
+    "lat": 51.5074,
+    "lon": -0.1278,
     "tz_offset": 0.0,
     "ayanamsha": "lahiri"
   },
-  "birth_place": "UK",
+  "birth_place": "London, UK",
   "country": "UK",
-  "data_trust_level": "low",
+  "data_trust_level": "medium",
   "assert_lagna": false,
-  "trust_note": "Stub — fetch blocked",
+  "trust_note": "Baptism record Moorgate",
   "expected": {},
-  "chart": null,
-  "scores": null,
-  "fetch_status": "blocked"
+  "chart": {
+    "lagna": 295.026,
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "ayanamsha_value": 21.006429,
+    "planets": {
+      "Sun": {
+        "longitude": 197.1453,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 17.1453,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 66.6266,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 6.6266,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 156.407,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 6.407,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 219.5012,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 9.5012,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 278.8058,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 8.8058,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 201.125,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 21.125,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 51.5989,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 21.5989,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 92.8576,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 2.8576,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 272.8576,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 2.8576,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 1.0,
+    "2": 2.25,
+    "3": 1.25,
+    "4": 0.125,
+    "5": -0.75,
+    "6": 1.5,
+    "7": -3.625,
+    "8": 4.0,
+    "9": -0.375,
+    "10": -0.25,
+    "11": 1.5,
+    "12": 1.625
+  },
+  "fetch_status": "stub_updated",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
 }
