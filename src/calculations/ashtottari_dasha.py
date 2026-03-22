@@ -16,19 +16,42 @@ but Rahu replaces Ketu in the sequence).
 
 Source: BPHS Ch.47; PVRNR preface.
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date, timedelta
 
-_ASHTO_LORDS = ["Sun","Moon","Mars","Mercury","Saturn","Jupiter","Rahu","Venus"]
-_ASHTO_YEARS = [6,     15,    8,     17,        10,       19,       12,    21  ]
+_ASHTO_LORDS = ["Sun", "Moon", "Mars", "Mercury", "Saturn", "Jupiter", "Rahu", "Venus"]
+_ASHTO_YEARS = [6, 15, 8, 17, 10, 19, 12, 21]
 _ASHTO_NAK_MAP = {
     # nakshatra → starting lord (8-planet sequence)
-    0:"Sun",1:"Moon",2:"Mars",3:"Mercury",4:"Saturn",5:"Jupiter",
-    6:"Rahu",7:"Venus",8:"Sun",9:"Moon",10:"Mars",11:"Mercury",
-    12:"Saturn",13:"Jupiter",14:"Rahu",15:"Venus",16:"Sun",17:"Moon",
-    18:"Mars",19:"Mercury",20:"Saturn",21:"Jupiter",22:"Rahu",23:"Venus",
-    24:"Sun",25:"Moon",26:"Mars",
+    0: "Sun",
+    1: "Moon",
+    2: "Mars",
+    3: "Mercury",
+    4: "Saturn",
+    5: "Jupiter",
+    6: "Rahu",
+    7: "Venus",
+    8: "Sun",
+    9: "Moon",
+    10: "Mars",
+    11: "Mercury",
+    12: "Saturn",
+    13: "Jupiter",
+    14: "Rahu",
+    15: "Venus",
+    16: "Sun",
+    17: "Moon",
+    18: "Mars",
+    19: "Mercury",
+    20: "Saturn",
+    21: "Jupiter",
+    22: "Rahu",
+    23: "Venus",
+    24: "Sun",
+    25: "Moon",
+    26: "Mars",
 }
 
 
@@ -46,6 +69,7 @@ def qualifies_for_ashtottari(chart) -> bool:
     Applicable: Rahu not in 1st or 7th house from lagna.
     """
     from src.calculations.house_lord import compute_house_map
+
     hmap = compute_house_map(chart)
     rahu_h = hmap.planet_house.get("Rahu", 0)
     return rahu_h not in {1, 7}
@@ -75,10 +99,14 @@ def compute_ashtottari_dasha(chart, birth_date: date) -> list[AshtottariPeriod]:
             planet = _ASHTO_LORDS[planet_idx]
             years = _ASHTO_YEARS[planet_idx]
             end = current_date + timedelta(days=int(years * 365.25))
-            periods.append(AshtottariPeriod(
-                planet=planet, years=years,
-                start_date=current_date, end_date=end,
-            ))
+            periods.append(
+                AshtottariPeriod(
+                    planet=planet,
+                    years=years,
+                    start_date=current_date,
+                    end_date=end,
+                )
+            )
             current_date = end
 
     return periods

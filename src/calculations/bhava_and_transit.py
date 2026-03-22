@@ -8,10 +8,11 @@ Session 122: Vedha obstruction table, transit from Moon + Sun lagna, Ashtama Sha
 """
 
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Optional
 
 # ─── Bhava Chalita ───────────────────────────────────────────────────────────
+
 
 @dataclass
 class BhavaChalitaMap:
@@ -20,13 +21,16 @@ class BhavaChalitaMap:
     Differs from whole-sign when planets are near sign boundaries.
     Source: BPHS Ch.6; BV Raman, How to Judge a Horoscope Vol.1 p.12-14
     """
-    bhava_cusps: list[float]             # 12 cusp longitudes
-    planet_bhava: dict[str, int]         # planet -> bhava house (1-12)
-    lagna_bhava_sign: int                # sign containing bhava cusp 1
-    divergent_planets: list[str]         # planets whose bhava differs from whole-sign house
+
+    bhava_cusps: list[float]  # 12 cusp longitudes
+    planet_bhava: dict[str, int]  # planet -> bhava house (1-12)
+    lagna_bhava_sign: int  # sign containing bhava cusp 1
+    divergent_planets: list[str]  # planets whose bhava differs from whole-sign house
 
 
-def compute_bhava_chalita(chart, midheaven_lon: Optional[float] = None) -> BhavaChalitaMap:
+def compute_bhava_chalita(
+    chart, midheaven_lon: Optional[float] = None
+) -> BhavaChalitaMap:
     """
     Compute Bhava Chalita equal-house chart from Midheaven (MC).
     If midheaven_lon not provided, approximates from Lagna.
@@ -80,9 +84,18 @@ def compute_bhava_chalita(chart, midheaven_lon: Optional[float] = None) -> Bhava
 # {transit_house: obstructing_house}
 
 VEDHA_PAIRS: dict[int, int] = {
-    1: 5,   2: 12,  3: 12,  4: 3,
-    5: 9,   6: 12,  7: 2,   8: 5,
-    9: 8,   10: 9,  11: 8,  12: 6,
+    1: 5,
+    2: 12,
+    3: 12,
+    4: 3,
+    5: 9,
+    6: 12,
+    7: 2,
+    8: 5,
+    9: 8,
+    10: 9,
+    11: 8,
+    12: 6,
 }
 
 
@@ -115,13 +128,15 @@ def is_vedha_blocked(
 # ─── Transit from multiple reference points ───────────────────────────────────
 # Source: Phaladeepika Ch.26 v.1-5; BV Raman, HJH Vol.2
 
+
 @dataclass
 class TransitQuality:
     """Transit quality assessed from a single reference point."""
-    reference: str          # "Lagna" / "Moon" / "Sun"
+
+    reference: str  # "Lagna" / "Moon" / "Sun"
     reference_sign: int
-    transit_house: int      # house number from this reference
-    is_good_house: bool     # classical good/bad house for this planet
+    transit_house: int  # house number from this reference
+    is_good_house: bool  # classical good/bad house for this planet
     vedha_blocked: bool
     vedha_blocker: Optional[str]
     av_bindus: int
@@ -135,28 +150,29 @@ class FullTransitReport:
     'When all three agree, the result is certain;
      when two agree, it is likely; when only one, it is possible.'
     """
+
     planet: str
     transit_sign: int
     from_lagna: TransitQuality
     from_moon: TransitQuality
     from_sun: TransitQuality
-    agreement_count: int    # how many references agree on good/bad
-    consensus: str          # "Certain" / "Likely" / "Possible" / "Uncertain"
-    ashtama_shani: bool     # Saturn in H8 from natal Moon
+    agreement_count: int  # how many references agree on good/bad
+    consensus: str  # "Certain" / "Likely" / "Possible" / "Uncertain"
+    ashtama_shani: bool  # Saturn in H8 from natal Moon
 
 
 # Classical good/bad transit houses by planet
 # Source: Phaladeepika Ch.26; BPHS transit chapters
 GOOD_TRANSIT_HOUSES: dict[str, set[int]] = {
-    "Sun":     {3, 6, 10, 11},
-    "Moon":    {1, 3, 6, 7, 10, 11},
-    "Mars":    {3, 6, 11},
+    "Sun": {3, 6, 10, 11},
+    "Moon": {1, 3, 6, 7, 10, 11},
+    "Mars": {3, 6, 11},
     "Mercury": {2, 4, 6, 8, 10, 11},
     "Jupiter": {2, 5, 7, 9, 11},
-    "Venus":   {1, 2, 3, 4, 5, 8, 9, 11, 12},
-    "Saturn":  {3, 6, 11},
-    "Rahu":    {3, 6, 11},
-    "Ketu":    {3, 6, 11},
+    "Venus": {1, 2, 3, 4, 5, 8, 9, 11, 12},
+    "Saturn": {3, 6, 11},
+    "Rahu": {3, 6, 11},
+    "Ketu": {3, 6, 11},
 }
 
 
@@ -173,8 +189,16 @@ def compute_full_transit(
     """
     # Compute transit houses from each reference
     natal_lagna_si = natal_chart.lagna_sign_index
-    natal_moon_si  = natal_chart.planets["Moon"].sign_index if "Moon" in natal_chart.planets else natal_lagna_si
-    natal_sun_si   = natal_chart.planets["Sun"].sign_index  if "Sun"  in natal_chart.planets else natal_lagna_si
+    natal_moon_si = (
+        natal_chart.planets["Moon"].sign_index
+        if "Moon" in natal_chart.planets
+        else natal_lagna_si
+    )
+    natal_sun_si = (
+        natal_chart.planets["Sun"].sign_index
+        if "Sun" in natal_chart.planets
+        else natal_lagna_si
+    )
 
     # All planet transit houses (from Lagna) for Vedha check
     all_transit_from_lagna = {
@@ -192,7 +216,9 @@ def compute_full_transit(
 
     good_houses = GOOD_TRANSIT_HOUSES.get(planet, set())
 
-    def make_quality(ref: str, ref_si: int, transit_houses: dict[str, int]) -> TransitQuality:
+    def make_quality(
+        ref: str, ref_si: int, transit_houses: dict[str, int]
+    ) -> TransitQuality:
         h = (transit_sign - ref_si) % 12 + 1
         blocked, blocker = is_vedha_blocked(h, transit_houses, planet)
         return TransitQuality(
@@ -206,16 +232,15 @@ def compute_full_transit(
         )
 
     from_lagna = make_quality("Lagna", natal_lagna_si, all_transit_from_lagna)
-    from_moon  = make_quality("Moon",  natal_moon_si,  all_transit_from_moon)
-    from_sun   = make_quality("Sun",   natal_sun_si,   all_transit_from_sun)
+    from_moon = make_quality("Moon", natal_moon_si, all_transit_from_moon)
+    from_sun = make_quality("Sun", natal_sun_si, all_transit_from_sun)
 
     # Count agreement (good houses not blocked by Vedha)
-    effective = [
-        q for q in [from_lagna, from_moon, from_sun]
-        if not q.vedha_blocked
-    ]
+    effective = [q for q in [from_lagna, from_moon, from_sun] if not q.vedha_blocked]
     good_count = sum(1 for q in effective if q.is_good_house)
-    agreement_count = good_count if good_count >= 2 else (3 - good_count if good_count == 0 else 1)
+    agreement_count = (
+        good_count if good_count >= 2 else (3 - good_count if good_count == 0 else 1)
+    )
 
     if agreement_count == 3:
         consensus = "Certain"
@@ -228,10 +253,7 @@ def compute_full_transit(
 
     # Ashtama Shani: Saturn in H8 from natal Moon
     # Source: K.N. Rao, Yogis Destiny Ch.7
-    ashtama = (
-        planet == "Saturn" and
-        (transit_sign - natal_moon_si) % 12 + 1 == 8
-    )
+    ashtama = planet == "Saturn" and (transit_sign - natal_moon_si) % 12 + 1 == 8
 
     return FullTransitReport(
         planet=planet,

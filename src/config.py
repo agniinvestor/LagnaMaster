@@ -29,8 +29,6 @@ from __future__ import annotations
 
 import os
 import sqlite3
-from pathlib import Path
-from typing import Optional
 
 import src.auth as _auth
 
@@ -39,9 +37,9 @@ SUPPORTED_SCHOOLS: frozenset[str] = frozenset({"parashari", "kp", "jaimini"})
 DEFAULT_SCHOOL = "parashari"
 
 _SCHOOL_FLAGS = {
-    "parashari": True,          # always on
-    "kp":        os.environ.get("ENABLE_KP",      "1") == "1",
-    "jaimini":   os.environ.get("ENABLE_JAIMINI", "1") == "1",
+    "parashari": True,  # always on
+    "kp": os.environ.get("ENABLE_KP", "1") == "1",
+    "jaimini": os.environ.get("ENABLE_JAIMINI", "1") == "1",
 }
 
 
@@ -53,6 +51,7 @@ def is_school_enabled(school: str) -> bool:
 
 
 # ── DB migration helper (adds school column to existing users table) ───────────
+
 
 def _ensure_school_column(path) -> None:
     """Add `school` column to users table if it does not exist yet."""
@@ -66,6 +65,7 @@ def _ensure_school_column(path) -> None:
 
 
 # ── public API ────────────────────────────────────────────────────────────────
+
 
 def get_user_school(user_id: int, path=_auth._SENTINEL) -> str:
     """Return the calculation school preference for *user_id*."""
@@ -87,12 +87,11 @@ def set_user_school(user_id: int, school: str, path=_auth._SENTINEL) -> None:
         raise ValueError(f"School '{school}' is disabled on this server")
     _ensure_school_column(path)
     with _auth._connect(path) as conn:
-        conn.execute(
-            "UPDATE users SET school = ? WHERE id = ?", (school, user_id)
-        )
+        conn.execute("UPDATE users SET school = ? WHERE id = ?", (school, user_id))
 
 
 # ── FastAPI dependency ────────────────────────────────────────────────────────
+
 
 def school_gate(school: str):
     """Return a FastAPI dependency that 403s if *school* is disabled.
@@ -108,6 +107,7 @@ def school_gate(school: str):
             raise HTTPException(
                 status_code=403,
                 detail=f"School '{school}' is not enabled on this server. "
-                       f"Set ENABLE_{school.upper()}=1 to activate.",
+                f"Set ENABLE_{school.upper()}=1 to activate.",
             )
+
     return _check

@@ -23,33 +23,33 @@ from src.ephemeris import SIGNS
 # ---------------------------------------------------------------------------
 
 NARAYANA_DASHA_YEARS: dict[str, int] = {
-    "Aries":       6,
-    "Taurus":      7,   # N-1 FIX: was 4 in Excel, correct is 7 (PVRNR Ch.1)
-    "Gemini":      2,
-    "Cancer":      10,
-    "Leo":         9,
-    "Virgo":       8,
-    "Libra":       1,
-    "Scorpio":     11,
+    "Aries": 6,
+    "Taurus": 7,  # N-1 FIX: was 4 in Excel, correct is 7 (PVRNR Ch.1)
+    "Gemini": 2,
+    "Cancer": 10,
+    "Leo": 9,
+    "Virgo": 8,
+    "Libra": 1,
+    "Scorpio": 11,
     "Sagittarius": 5,
-    "Capricorn":   7,
-    "Aquarius":    12,
-    "Pisces":      3,
+    "Capricorn": 7,
+    "Aquarius": 12,
+    "Pisces": 3,
 }
 
-_ODD_SIGNS = {0, 2, 4, 6, 8, 10}   # Aries, Gemini, Leo, Libra, Sagittarius, Aquarius
+_ODD_SIGNS = {0, 2, 4, 6, 8, 10}  # Aries, Gemini, Leo, Libra, Sagittarius, Aquarius
 
 
 @dataclass
 class NarayanaPeriod:
-    sequence: int       # 1-12
+    sequence: int  # 1-12
     sign: str
     sign_index: int
     years: int
     start_date: date
     end_date: date
     is_active: bool
-    remaining_years: float | None   # if active
+    remaining_years: float | None  # if active
 
 
 def _sign_sequence(lagna_sign_idx: int, direction: str) -> list[str]:
@@ -107,16 +107,18 @@ def compute_narayana_dasha(
             remaining = remaining_days / 365.25
 
         sign_idx = SIGNS.index(sign)
-        periods.append(NarayanaPeriod(
-            sequence=i + 1,
-            sign=sign,
-            sign_index=sign_idx,
-            years=years,
-            start_date=current,
-            end_date=end,
-            is_active=is_active,
-            remaining_years=remaining,
-        ))
+        periods.append(
+            NarayanaPeriod(
+                sequence=i + 1,
+                sign=sign,
+                sign_index=sign_idx,
+                years=years,
+                start_date=current,
+                end_date=end,
+                is_active=is_active,
+                remaining_years=remaining,
+            )
+        )
         current = end
 
     return periods

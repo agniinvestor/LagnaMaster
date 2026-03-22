@@ -15,62 +15,111 @@ Gemstone recommendations require qualified astrologer review.
 Health/medical decisions require professional consultation.
 This module presents archetypes, not prescriptions.
 """
+
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 # PVRNR Table 77: Gemstones
 _GEMSTONES = {
-    "Sun":     {"gem":"Ruby",              "metal":"Gold",    "finger":"Ring finger",    "day":"Sunday"},
-    "Moon":    {"gem":"White Pearl",       "metal":"Gold",    "finger":"Little finger",  "day":"Monday"},
-    "Mars":    {"gem":"Red Coral",         "metal":"Copper",  "finger":"Ring finger",    "day":"Tuesday"},
-    "Mercury": {"gem":"Emerald",           "metal":"Silver",  "finger":"Little finger",  "day":"Wednesday"},
-    "Jupiter": {"gem":"Yellow Sapphire",   "metal":"Gold",    "finger":"Index finger",   "day":"Thursday"},
-    "Venus":   {"gem":"Diamond",           "metal":"Silver",  "finger":"Middle finger",  "day":"Friday"},
-    "Saturn":  {"gem":"Blue Sapphire",     "metal":"Iron",    "finger":"Middle finger",  "day":"Saturday"},
-    "Rahu":    {"gem":"Hessonite (Gomedh)","metal":"Silver",  "finger":"Middle finger",  "day":"Saturday"},
-    "Ketu":    {"gem":"Cat's Eye",         "metal":"Silver",  "finger":"Ring finger",    "day":"Tuesday"},
+    "Sun": {"gem": "Ruby", "metal": "Gold", "finger": "Ring finger", "day": "Sunday"},
+    "Moon": {
+        "gem": "White Pearl",
+        "metal": "Gold",
+        "finger": "Little finger",
+        "day": "Monday",
+    },
+    "Mars": {
+        "gem": "Red Coral",
+        "metal": "Copper",
+        "finger": "Ring finger",
+        "day": "Tuesday",
+    },
+    "Mercury": {
+        "gem": "Emerald",
+        "metal": "Silver",
+        "finger": "Little finger",
+        "day": "Wednesday",
+    },
+    "Jupiter": {
+        "gem": "Yellow Sapphire",
+        "metal": "Gold",
+        "finger": "Index finger",
+        "day": "Thursday",
+    },
+    "Venus": {
+        "gem": "Diamond",
+        "metal": "Silver",
+        "finger": "Middle finger",
+        "day": "Friday",
+    },
+    "Saturn": {
+        "gem": "Blue Sapphire",
+        "metal": "Iron",
+        "finger": "Middle finger",
+        "day": "Saturday",
+    },
+    "Rahu": {
+        "gem": "Hessonite (Gomedh)",
+        "metal": "Silver",
+        "finger": "Middle finger",
+        "day": "Saturday",
+    },
+    "Ketu": {
+        "gem": "Cat's Eye",
+        "metal": "Silver",
+        "finger": "Ring finger",
+        "day": "Tuesday",
+    },
 }
 
 # PVRNR Table 78: Deities
 _DEITIES = {
-    "Sun":     ["Shiva", "Rama"],
-    "Moon":    ["Gauri", "Lalita", "Saraswati", "Krishna"],
-    "Mars":    ["Hanuman", "Rudra", "Kartikeya (Subrahmanya)", "Narasimha"],
+    "Sun": ["Shiva", "Rama"],
+    "Moon": ["Gauri", "Lalita", "Saraswati", "Krishna"],
+    "Mars": ["Hanuman", "Rudra", "Kartikeya (Subrahmanya)", "Narasimha"],
     "Mercury": ["Vishnu", "Narayana", "Buddha"],
     "Jupiter": ["Hayagreeva", "Vishnu", "Parameswara", "Dattatreya"],
-    "Venus":   ["Lakshmi", "Parvati"],
-    "Saturn":  ["Vishnu", "Brahma"],
-    "Rahu":    ["Durga", "Narasimha"],
-    "Ketu":    ["Ganesha"],
+    "Venus": ["Lakshmi", "Parvati"],
+    "Saturn": ["Vishnu", "Brahma"],
+    "Rahu": ["Durga", "Narasimha"],
+    "Ketu": ["Ganesha"],
 }
 
 # Mantra recitation counts (PVRNR p455-458)
 _MANTRA_COUNTS = {
-    "Sun": 6000, "Moon": 10000, "Mars": 7000, "Mercury": 17000,
-    "Jupiter": 16000, "Venus": 20000, "Saturn": 19000,
-    "Rahu": 18000, "Ketu": 7000,
+    "Sun": 6000,
+    "Moon": 10000,
+    "Mars": 7000,
+    "Mercury": 17000,
+    "Jupiter": 16000,
+    "Venus": 20000,
+    "Saturn": 19000,
+    "Rahu": 18000,
+    "Ketu": 7000,
 }
 
 # Good deeds / charitable acts by planet
 _CHARITY = {
-    "Sun":     "Donate wheat, copper, or red cloth on Sundays; support leadership/authority causes",
-    "Moon":    "Donate white items, milk, rice on Mondays; support women or children",
-    "Mars":    "Donate red lentils, red cloth on Tuesdays; support firefighters or soldiers",
-    "Mercury": {"donate":"Green vegetables, books on Wednesdays; support education or communication"},
+    "Sun": "Donate wheat, copper, or red cloth on Sundays; support leadership/authority causes",
+    "Moon": "Donate white items, milk, rice on Mondays; support women or children",
+    "Mars": "Donate red lentils, red cloth on Tuesdays; support firefighters or soldiers",
+    "Mercury": {
+        "donate": "Green vegetables, books on Wednesdays; support education or communication"
+    },
     "Jupiter": "Donate yellow items, turmeric, gold on Thursdays; support teachers or scholars",
-    "Venus":   "Donate white sweets, white flowers on Fridays; support arts or beauty",
-    "Saturn":  "Donate black sesame, iron, oil on Saturdays; support the elderly or poor",
-    "Rahu":    "Donate blue items on Saturdays; support the marginalised",
-    "Ketu":    "Donate spotted items on Tuesdays; support spiritual seekers",
+    "Venus": "Donate white sweets, white flowers on Fridays; support arts or beauty",
+    "Saturn": "Donate black sesame, iron, oil on Saturdays; support the elderly or poor",
+    "Rahu": "Donate blue items on Saturdays; support the marginalised",
+    "Ketu": "Donate spotted items on Tuesdays; support spiritual seekers",
 }
 
 # Domain-specific remedy trigger rules
 _AFFLICTION_TRIGGERS = {
-    "combust":       "Gemstone and deity of combust planet; charitable acts on planet's day",
-    "debilitated":   "Mantra of debilitated planet; worship of its deity",
-    "in_dusthana":   "Charitable acts; behavioral correction in planet's domain",
+    "combust": "Gemstone and deity of combust planet; charitable acts on planet's day",
+    "debilitated": "Mantra of debilitated planet; worship of its deity",
+    "in_dusthana": "Charitable acts; behavioral correction in planet's domain",
     "functional_malefic": "Propitiate the functional malefic's deity; avoid its day for major starts",
-    "8th_lord_strong":    "Shoola dasha caution; longevity practices",
+    "8th_lord_strong": "Shoola dasha caution; longevity practices",
 }
 
 
@@ -97,24 +146,27 @@ def get_upaya(planet: str, affliction_type: str = "general") -> UpayadRecommenda
     """Get classical remedy recommendations for an afflicted planet."""
     gem_data = _GEMSTONES.get(planet, {})
     deities = _DEITIES.get(planet, ["Universal"])
-    charity = _CHARITY.get(planet, "Perform acts of service related to this planet's domain")
+    charity = _CHARITY.get(
+        planet, "Perform acts of service related to this planet's domain"
+    )
     if isinstance(charity, dict):
         charity = list(charity.values())[0]
 
     behavioral = {
-        "Sun":     "Respect authority figures; reduce ego; be generous",
-        "Moon":    "Be kind to mother and women; maintain emotional balance; drink clean water",
-        "Mars":    "Channel energy constructively; avoid aggression; exercise regularly",
+        "Sun": "Respect authority figures; reduce ego; be generous",
+        "Moon": "Be kind to mother and women; maintain emotional balance; drink clean water",
+        "Mars": "Channel energy constructively; avoid aggression; exercise regularly",
         "Mercury": "Speak truth; keep written commitments; engage in learning",
         "Jupiter": "Maintain dharmic conduct; respect teachers; be generous",
-        "Venus":   "Cultivate aesthetic sense; maintain purity in relationships",
-        "Saturn":  "Be disciplined and patient; serve the elderly; work honestly",
-        "Rahu":    "Avoid deception; reduce worldly obsession; practice detachment",
-        "Ketu":    "Cultivate spiritual practice; reduce attachment; be selfless",
+        "Venus": "Cultivate aesthetic sense; maintain purity in relationships",
+        "Saturn": "Be disciplined and patient; serve the elderly; work honestly",
+        "Rahu": "Avoid deception; reduce worldly obsession; practice detachment",
+        "Ketu": "Cultivate spiritual practice; reduce attachment; be selfless",
     }.get(planet, "Perform general acts of dharma")
 
     return UpayadRecommendation(
-        planet=planet, affliction_type=affliction_type,
+        planet=planet,
+        affliction_type=affliction_type,
         gemstone=gem_data.get("gem", "Consult astrologer"),
         gemstone_metal=gem_data.get("metal", ""),
         gemstone_finger=gem_data.get("finger", ""),
@@ -131,21 +183,36 @@ def get_chart_upayas(chart) -> list[UpayadRecommendation]:
     try:
         from src.calculations.dignity import compute_all_dignities
         from src.calculations.functional_roles import compute_functional_roles
+
         digs = compute_all_dignities(chart)
         fr = compute_functional_roles(chart)
     except Exception:
         return []
 
     upayas = []
-    for planet in ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn","Rahu","Ketu"]:
+    for planet in [
+        "Sun",
+        "Moon",
+        "Mars",
+        "Mercury",
+        "Jupiter",
+        "Venus",
+        "Saturn",
+        "Rahu",
+        "Ketu",
+    ]:
         dig = digs.get(planet)
         affliction = None
         if dig and dig.combust and planet != "Sun":
             affliction = "combust"
-        elif dig and hasattr(dig, 'level'):
+        elif dig and hasattr(dig, "level"):
             from src.calculations.dignity import DignityLevel
+
             try:
-                if dig.level == DignityLevel.DEBIL or dig.level == DignityLevel.DEEP_DEBIL:
+                if (
+                    dig.level == DignityLevel.DEBIL
+                    or dig.level == DignityLevel.DEEP_DEBIL
+                ):
                     affliction = "debilitated"
             except Exception:
                 pass

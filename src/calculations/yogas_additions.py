@@ -22,25 +22,43 @@ from typing import Optional
 
 # PM planets and their corresponding names
 PM_PLANETS: dict[str, str] = {
-    "Mars":    "Ruchaka",
+    "Mars": "Ruchaka",
     "Mercury": "Bhadra",
     "Jupiter": "Hamsa",
-    "Venus":   "Malavya",
-    "Saturn":  "Sasa",
+    "Venus": "Malavya",
+    "Saturn": "Sasa",
 }
 
 # Exaltation signs for PM check
 _EXALT_SIGN = {
-    "Sun": 0, "Moon": 1, "Mars": 9, "Mercury": 5,
-    "Jupiter": 3, "Venus": 11, "Saturn": 6,
+    "Sun": 0,
+    "Moon": 1,
+    "Mars": 9,
+    "Mercury": 5,
+    "Jupiter": 3,
+    "Venus": 11,
+    "Saturn": 6,
 }
 _OWN_SIGNS = {
-    "Mars": [0, 7], "Mercury": [2, 5], "Jupiter": [8, 11],
-    "Venus": [1, 6], "Saturn": [9, 10],
+    "Mars": [0, 7],
+    "Mercury": [2, 5],
+    "Jupiter": [8, 11],
+    "Venus": [1, 6],
+    "Saturn": [9, 10],
 }
 _SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
 ]
 
 
@@ -48,11 +66,11 @@ _SIGN_NAMES = [
 class PMYogaResult:
     planet: str
     yoga_name: str
-    formation: str           # "exaltation" / "own_sign"
-    house: int               # Kendra house (1/4/7/10)
-    d9_strength: str         # "Vargottama" / "Strong" / "Standard" / "Weak"
+    formation: str  # "exaltation" / "own_sign"
+    house: int  # Kendra house (1/4/7/10)
+    d9_strength: str  # "Vargottama" / "Strong" / "Standard" / "Weak"
     d9_sign: int
-    effective: bool          # False if D9 debilitated or combust
+    effective: bool  # False if D9 debilitated or combust
 
 
 def check_pm_yoga(planet: str, chart) -> Optional[PMYogaResult]:
@@ -83,18 +101,19 @@ def check_pm_yoga(planet: str, chart) -> Optional[PMYogaResult]:
     # D9 strength assessment
     try:
         from src.calculations.vargas import compute_varga_sign
+
         d9_si = compute_varga_sign(lon, 9)
     except Exception:
         d9_si = int(lon / 30) % 12  # fallback
 
     # Vargottama: D1 sign == D9 sign
-    is_vargottama = (si == d9_si)
+    is_vargottama = si == d9_si
 
     # D9 dignity
     d9_in_own = d9_si in _OWN_SIGNS.get(planet, [])
     d9_exalt = d9_si == _EXALT_SIGN.get(planet)
     d9_debil_sign = (_EXALT_SIGN.get(planet, -1) + 6) % 12
-    d9_debil = (d9_si == d9_debil_sign)
+    d9_debil = d9_si == d9_debil_sign
 
     if is_vargottama:
         d9_strength = "Vargottama"
@@ -133,9 +152,10 @@ def detect_all_pm_yogas(chart) -> list[PMYogaResult]:
 # ─── Sunapha / Anapha / Durudhura (Lunar yogas) ──────────────────────────────
 # Source: BPHS Ch.38; Phaladeepika Ch.6 v.50-55
 
+
 @dataclass
 class LunarYogaResult:
-    yoga_name: str           # "Sunapha" / "Anapha" / "Durudhura" / "Kemadruma"
+    yoga_name: str  # "Sunapha" / "Anapha" / "Durudhura" / "Kemadruma"
     planets_involved: list[str]
     description: str
 
@@ -156,34 +176,46 @@ def detect_lunar_yogas(chart) -> list[LunarYogaResult]:
     # Planets that count (Sun, Rahu, Ketu excluded)
     eligible = ["Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
 
-    second_from_moon  = (moon_si + 1) % 12   # 2nd sign
-    twelfth_from_moon = (moon_si - 1) % 12   # 12th sign
+    second_from_moon = (moon_si + 1) % 12  # 2nd sign
+    twelfth_from_moon = (moon_si - 1) % 12  # 12th sign
 
-    in_second  = [p for p in eligible if p in chart.planets
-                  and chart.planets[p].sign_index == second_from_moon]
-    in_twelfth = [p for p in eligible if p in chart.planets
-                  and chart.planets[p].sign_index == twelfth_from_moon]
+    in_second = [
+        p
+        for p in eligible
+        if p in chart.planets and chart.planets[p].sign_index == second_from_moon
+    ]
+    in_twelfth = [
+        p
+        for p in eligible
+        if p in chart.planets and chart.planets[p].sign_index == twelfth_from_moon
+    ]
 
     results = []
 
     if in_second and in_twelfth:
-        results.append(LunarYogaResult(
-            yoga_name="Durudhura",
-            planets_involved=in_second + in_twelfth,
-            description=f"Planets in 2nd ({', '.join(in_second)}) and 12th ({', '.join(in_twelfth)}) from Moon — native is wealthy, enjoys pleasures, has servants",
-        ))
+        results.append(
+            LunarYogaResult(
+                yoga_name="Durudhura",
+                planets_involved=in_second + in_twelfth,
+                description=f"Planets in 2nd ({', '.join(in_second)}) and 12th ({', '.join(in_twelfth)}) from Moon — native is wealthy, enjoys pleasures, has servants",
+            )
+        )
     elif in_second:
-        results.append(LunarYogaResult(
-            yoga_name="Sunapha",
-            planets_involved=in_second,
-            description=f"{', '.join(in_second)} in 2nd from Moon — native is self-made, wealthy, of good reputation",
-        ))
+        results.append(
+            LunarYogaResult(
+                yoga_name="Sunapha",
+                planets_involved=in_second,
+                description=f"{', '.join(in_second)} in 2nd from Moon — native is self-made, wealthy, of good reputation",
+            )
+        )
     elif in_twelfth:
-        results.append(LunarYogaResult(
-            yoga_name="Anapha",
-            planets_involved=in_twelfth,
-            description=f"{', '.join(in_twelfth)} in 12th from Moon — native is handsome, renowned, generous, free from disease",
-        ))
+        results.append(
+            LunarYogaResult(
+                yoga_name="Anapha",
+                planets_involved=in_twelfth,
+                description=f"{', '.join(in_twelfth)} in 12th from Moon — native is handsome, renowned, generous, free from disease",
+            )
+        )
 
     return results
 
@@ -192,11 +224,12 @@ def detect_lunar_yogas(chart) -> list[LunarYogaResult]:
 # Source: BPHS Ch.37; Phaladeepika Ch.7 v.10-12
 # Note: Sun, Moon, Rahu, Ketu all EXCLUDED from Vesi/Vasi/Ubhayachari counts
 
+
 @dataclass
 class SolarYogaResult:
-    yoga_name: str    # "Vesi" / "Vasi" / "Ubhayachari"
+    yoga_name: str  # "Vesi" / "Vasi" / "Ubhayachari"
     planets_involved: list[str]
-    nature: str       # "benefic" / "malefic" (depends on planet quality)
+    nature: str  # "benefic" / "malefic" (depends on planet quality)
     description: str
 
 
@@ -219,13 +252,19 @@ def detect_solar_yogas(chart) -> list[SolarYogaResult]:
     # CRITICAL: Rahu/Ketu and Moon excluded — only classical 5 planets
     eligible = ["Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
 
-    second_from_sun  = (sun_si + 1) % 12
+    second_from_sun = (sun_si + 1) % 12
     twelfth_from_sun = (sun_si - 1) % 12
 
-    in_second  = [p for p in eligible if p in chart.planets
-                  and chart.planets[p].sign_index == second_from_sun]
-    in_twelfth = [p for p in eligible if p in chart.planets
-                  and chart.planets[p].sign_index == twelfth_from_sun]
+    in_second = [
+        p
+        for p in eligible
+        if p in chart.planets and chart.planets[p].sign_index == second_from_sun
+    ]
+    in_twelfth = [
+        p
+        for p in eligible
+        if p in chart.planets and chart.planets[p].sign_index == twelfth_from_sun
+    ]
 
     natural_benefics = {"Mercury", "Jupiter", "Venus"}
     results = []
@@ -238,25 +277,31 @@ def detect_solar_yogas(chart) -> list[SolarYogaResult]:
         return "mixed"
 
     if in_second and in_twelfth:
-        results.append(SolarYogaResult(
-            yoga_name="Ubhayachari",
-            planets_involved=in_second + in_twelfth,
-            nature=_nature(in_second + in_twelfth),
-            description="Planets on both sides of Sun — native is eloquent, fortunate, respected",
-        ))
+        results.append(
+            SolarYogaResult(
+                yoga_name="Ubhayachari",
+                planets_involved=in_second + in_twelfth,
+                nature=_nature(in_second + in_twelfth),
+                description="Planets on both sides of Sun — native is eloquent, fortunate, respected",
+            )
+        )
     elif in_second:
-        results.append(SolarYogaResult(
-            yoga_name="Vesi",
-            planets_involved=in_second,
-            nature=_nature(in_second),
-            description=f"{', '.join(in_second)} in 2nd from Sun — benefic Vesi: diligent, truthful, balanced physique",
-        ))
+        results.append(
+            SolarYogaResult(
+                yoga_name="Vesi",
+                planets_involved=in_second,
+                nature=_nature(in_second),
+                description=f"{', '.join(in_second)} in 2nd from Sun — benefic Vesi: diligent, truthful, balanced physique",
+            )
+        )
     elif in_twelfth:
-        results.append(SolarYogaResult(
-            yoga_name="Vasi",
-            planets_involved=in_twelfth,
-            nature=_nature(in_twelfth),
-            description=f"{', '.join(in_twelfth)} in 12th from Sun — benefic Vasi: fortunate, liberal, at peace",
-        ))
+        results.append(
+            SolarYogaResult(
+                yoga_name="Vasi",
+                planets_involved=in_twelfth,
+                nature=_nature(in_twelfth),
+                description=f"{', '.join(in_twelfth)} in 12th from Sun — benefic Vasi: fortunate, liberal, at peace",
+            )
+        )
 
     return results

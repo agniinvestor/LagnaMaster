@@ -14,7 +14,6 @@ Sources:
 
 from __future__ import annotations
 from dataclasses import dataclass
-from math import sin, radians
 
 # ─── Aspect orb definitions ───────────────────────────────────────────────────
 # Each planet can cast a full (100%), three-quarter (75%), half (50%),
@@ -28,37 +27,48 @@ from math import sin, radians
 #
 # For Sputa Drishti, the strength varies smoothly with exact degrees
 
+
 @dataclass
 class AspectResult:
     aspector: str
     aspected_longitude: float
-    arc_degrees: float       # 0-360 from aspector to aspected
-    strength: float          # 0.0 to 1.0
-    aspect_type: str         # "full" / "three_quarter" / "none"
+    arc_degrees: float  # 0-360 from aspector to aspected
+    strength: float  # 0.0 to 1.0
+    aspect_type: str  # "full" / "three_quarter" / "none"
 
 
 # House-based aspect strength table (BPHS Ch.26)
 # Keys: houses from aspector planet
 _ASPECT_TABLE: dict[str, dict[int, float]] = {
-    "Sun":     {7: 1.0},
-    "Moon":    {7: 1.0},
-    "Mars":    {4: 0.75, 7: 1.0, 8: 0.75},
+    "Sun": {7: 1.0},
+    "Moon": {7: 1.0},
+    "Mars": {4: 0.75, 7: 1.0, 8: 0.75},
     "Mercury": {7: 1.0},
     "Jupiter": {5: 0.75, 7: 1.0, 9: 0.75},
-    "Venus":   {7: 1.0},
-    "Saturn":  {3: 0.75, 7: 1.0, 10: 0.75},
-    "Rahu":    {7: 1.0, 5: 0.75, 9: 0.75},  # some schools give Rahu Jupiter-like aspects
-    "Ketu":    {7: 1.0, 4: 0.75, 8: 0.75},  # Ketu Mars-like aspects per some schools
+    "Venus": {7: 1.0},
+    "Saturn": {3: 0.75, 7: 1.0, 10: 0.75},
+    "Rahu": {7: 1.0, 5: 0.75, 9: 0.75},  # some schools give Rahu Jupiter-like aspects
+    "Ketu": {7: 1.0, 4: 0.75, 8: 0.75},  # Ketu Mars-like aspects per some schools
 }
 
 # House-center degrees for orb calculation
 _HOUSE_CENTER_DEGREES: dict[int, float] = {
-    1: 0.0, 2: 30.0, 3: 60.0, 4: 90.0, 5: 120.0, 6: 150.0,
-    7: 180.0, 8: 210.0, 9: 240.0, 10: 270.0, 11: 300.0, 12: 330.0,
+    1: 0.0,
+    2: 30.0,
+    3: 60.0,
+    4: 90.0,
+    5: 120.0,
+    6: 150.0,
+    7: 180.0,
+    8: 210.0,
+    9: 240.0,
+    10: 270.0,
+    11: 300.0,
+    12: 330.0,
 }
 
 # Orb for aspect (degrees of arc before/after which aspect starts/fades)
-ASPECT_ORB = 15.0   # degrees either side of exact aspect
+ASPECT_ORB = 15.0  # degrees either side of exact aspect
 
 
 def _arc(from_lon: float, to_lon: float) -> float:
@@ -136,13 +146,15 @@ def compute_all_aspects(
         arc = _arc(planet_lon, target_lon)
         strength = sputa_drishti_strength(planet, planet_lon, target_lon)
         if strength > 0:
-            results.append(AspectResult(
-                aspector=planet,
-                aspected_longitude=target_lon,
-                arc_degrees=round(arc, 4),
-                strength=strength,
-                aspect_type="full" if strength >= 1.0 else "three_quarter",
-            ))
+            results.append(
+                AspectResult(
+                    aspector=planet,
+                    aspected_longitude=target_lon,
+                    arc_degrees=round(arc, 4),
+                    strength=strength,
+                    aspect_type="full" if strength >= 1.0 else "three_quarter",
+                )
+            )
     return results
 
 

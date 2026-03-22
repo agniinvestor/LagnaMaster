@@ -17,16 +17,24 @@ Public API
   get_events(chart_id, path) -> list[dict]
   compute_accuracy(path)    -> AccuracyReport
 """
+
 from __future__ import annotations
 from dataclasses import dataclass, field, asdict
-from datetime import date, datetime
-import json
 import sqlite3
 import uuid
 from pathlib import Path
 
-_EVENT_TYPES = {"Career","Marriage","Divorce","Health_Crisis",
-                "Finance","Travel","Loss","Education","Other"}
+_EVENT_TYPES = {
+    "Career",
+    "Marriage",
+    "Divorce",
+    "Health_Crisis",
+    "Finance",
+    "Travel",
+    "Loss",
+    "Education",
+    "Other",
+}
 
 _CREATE_SQL = """
 CREATE TABLE IF NOT EXISTS empirica_events (
@@ -59,7 +67,7 @@ CREATE INDEX IF NOT EXISTS idx_empirica_house ON empirica_events(house_primary);
 @dataclass
 class EmpiricalEvent:
     chart_id: str
-    event_date: str          # ISO date string
+    event_date: str  # ISO date string
     event_type: str
     house_primary: int
     event_description: str = ""
@@ -68,7 +76,7 @@ class EmpiricalEvent:
     active_mahadasha: str = ""
     active_antardasha: str = ""
     manifested: int = 1
-    confidence: int = 2      # 1=low, 2=moderate, 3=high
+    confidence: int = 2  # 1=low, 2=moderate, 3=high
     notes: str = ""
     r04_fired: int = 0
     r15_fired: int = 0
@@ -91,8 +99,7 @@ def init_empirica_db(path: str | Path = "data/empirica.db") -> None:
         conn.executescript(_CREATE_SQL)
 
 
-def record_event(event: EmpiricalEvent,
-                 path: str | Path = "data/empirica.db") -> str:
+def record_event(event: EmpiricalEvent, path: str | Path = "data/empirica.db") -> str:
     """Insert an event record. Returns event_id."""
     if event.event_type not in _EVENT_TYPES:
         event.event_type = "Other"
@@ -102,7 +109,7 @@ def record_event(event: EmpiricalEvent,
     with _get_conn(path) as conn:
         conn.execute(
             f"INSERT OR REPLACE INTO empirica_events ({cols}) VALUES ({placeholders})",
-            list(d.values())
+            list(d.values()),
         )
     return event.event_id
 
@@ -113,7 +120,7 @@ def get_events(chart_id: str, path: str | Path = "data/empirica.db") -> list[dic
         with _get_conn(path) as conn:
             rows = conn.execute(
                 "SELECT * FROM empirica_events WHERE chart_id=? ORDER BY event_date",
-                (chart_id,)
+                (chart_id,),
             ).fetchall()
         return [dict(r) for r in rows]
     except Exception:
@@ -126,8 +133,8 @@ class RuleAccuracy:
     total_events: int
     fired_count: int
     manifested_when_fired: int
-    accuracy: float          # manifested / fired
-    lift: float              # accuracy vs base rate
+    accuracy: float  # manifested / fired
+    lift: float  # accuracy vs base rate
 
 
 @dataclass
@@ -136,7 +143,7 @@ class AccuracyReport:
     manifested_count: int
     base_rate: float
     rule_accuracies: list[RuleAccuracy]
-    by_house: dict[int, float]     # house → accuracy
+    by_house: dict[int, float]  # house → accuracy
     by_event_type: dict[str, float]
     by_mahadasha: dict[str, float]
 
@@ -145,8 +152,10 @@ def compute_accuracy(path: str | Path = "data/empirica.db") -> AccuracyReport:
     """Compute per-rule accuracy from the event log."""
     try:
         with _get_conn(path) as conn:
-            all_events = [dict(r) for r in
-                          conn.execute("SELECT * FROM empirica_events").fetchall()]
+            all_events = [
+                dict(r)
+                for r in conn.execute("SELECT * FROM empirica_events").fetchall()
+            ]
     except Exception:
         return AccuracyReport(0, 0, 0.5, [], {}, {}, {})
 
@@ -159,32 +168,36 @@ def compute_accuracy(path: str | Path = "data/empirica.db") -> AccuracyReport:
 
     # Per-rule accuracy
     rule_accs = []
-    for rule_col in ["r04_fired","r15_fired","r02_fired","r09_fired"]:
+    for rule_col in ["r04_fired", "r15_fired", "r02_fired", "r09_fired"]:
         fired = [e for e in all_events if e.get(rule_col, 0) == 1]
         if not fired:
             continue
         mwf = sum(1 for e in fired if e.get("manifested", 0) == 1)
         acc = mwf / len(fired)
-        rule_accs.append(RuleAccuracy(
-            rule=rule_col.replace("_fired","").upper(),
-            total_events=total, fired_count=len(fired),
-            manifested_when_fired=mwf, accuracy=round(acc, 3),
-            lift=round(acc / base_rate, 2) if base_rate > 0 else 1.0,
-        ))
+        rule_accs.append(
+            RuleAccuracy(
+                rule=rule_col.replace("_fired", "").upper(),
+                total_events=total,
+                fired_count=len(fired),
+                manifested_when_fired=mwf,
+                accuracy=round(acc, 3),
+                lift=round(acc / base_rate, 2) if base_rate > 0 else 1.0,
+            )
+        )
 
     # By house
     by_house: dict[int, list] = {}
     for e in all_events:
         h = e.get("house_primary", 0)
         by_house.setdefault(h, []).append(e.get("manifested", 0))
-    house_acc = {h: round(sum(v)/len(v), 3) for h, v in by_house.items() if v}
+    house_acc = {h: round(sum(v) / len(v), 3) for h, v in by_house.items() if v}
 
     # By event type
     by_type: dict[str, list] = {}
     for e in all_events:
         t = e.get("event_type", "Other")
         by_type.setdefault(t, []).append(e.get("manifested", 0))
-    type_acc = {t: round(sum(v)/len(v), 3) for t, v in by_type.items() if v}
+    type_acc = {t: round(sum(v) / len(v), 3) for t, v in by_type.items() if v}
 
     # By Mahadasha
     by_md: dict[str, list] = {}
@@ -192,10 +205,14 @@ def compute_accuracy(path: str | Path = "data/empirica.db") -> AccuracyReport:
         md = e.get("active_mahadasha", "")
         if md:
             by_md.setdefault(md, []).append(e.get("manifested", 0))
-    md_acc = {md: round(sum(v)/len(v), 3) for md, v in by_md.items() if v}
+    md_acc = {md: round(sum(v) / len(v), 3) for md, v in by_md.items() if v}
 
     return AccuracyReport(
-        total_events=total, manifested_count=manifested,
-        base_rate=round(base_rate, 3), rule_accuracies=rule_accs,
-        by_house=house_acc, by_event_type=type_acc, by_mahadasha=md_acc,
+        total_events=total,
+        manifested_count=manifested,
+        base_rate=round(base_rate, 3),
+        rule_accuracies=rule_accs,
+        by_house=house_acc,
+        by_event_type=type_acc,
+        by_mahadasha=md_acc,
     )

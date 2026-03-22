@@ -13,45 +13,75 @@ Sources:
   Rajasthan, Bengal, and the Indian diaspora in UK/North America.
   Reference: BV Raman · Hindu Predictive Astrology, Chart Conventions.
 """
+
 from __future__ import annotations
 
 _SIGN_ABBREV = [
-    "Ar", "Ta", "Ge", "Ca", "Le", "Vi",
-    "Li", "Sc", "Sa", "Cp", "Aq", "Pi",
+    "Ar",
+    "Ta",
+    "Ge",
+    "Ca",
+    "Le",
+    "Vi",
+    "Li",
+    "Sc",
+    "Sa",
+    "Cp",
+    "Aq",
+    "Pi",
 ]
 
 _SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
 ]
 
 _PLANET_ABBREV = {
-    "Sun": "Su", "Moon": "Mo", "Mars": "Ma", "Mercury": "Me",
-    "Jupiter": "Ju", "Venus": "Ve", "Saturn": "Sa",
-    "Rahu": "Ra", "Ketu": "Ke", "Mandi": "Mn", "Gulika": "Gu",
+    "Sun": "Su",
+    "Moon": "Mo",
+    "Mars": "Ma",
+    "Mercury": "Me",
+    "Jupiter": "Ju",
+    "Venus": "Ve",
+    "Saturn": "Sa",
+    "Rahu": "Ra",
+    "Ketu": "Ke",
+    "Mandi": "Mn",
+    "Gulika": "Gu",
 }
 
 # House cell centres in 600×600 grid
 # H1=top (Lagna), going clockwise
 _CELL_CENTRES = {
-    1:  (300, 100),   # top centre
-    2:  (450, 150),   # top right
-    3:  (530, 300),   # right
-    4:  (450, 450),   # bottom right
-    5:  (300, 500),   # bottom centre
-    6:  (150, 450),   # bottom left
-    7:  (70,  300),   # left
-    8:  (150, 150),   # top left
-    9:  (220, 220),   # inner top-right
-    10: (380, 220),   # inner top-left
-    11: (380, 380),   # inner bottom-left
-    12: (220, 380),   # inner bottom-right
+    1: (300, 100),  # top centre
+    2: (450, 150),  # top right
+    3: (530, 300),  # right
+    4: (450, 450),  # bottom right
+    5: (300, 500),  # bottom centre
+    6: (150, 450),  # bottom left
+    7: (70, 300),  # left
+    8: (150, 150),  # top left
+    9: (220, 220),  # inner top-right
+    10: (380, 220),  # inner top-left
+    11: (380, 380),  # inner bottom-left
+    12: (220, 380),  # inner bottom-right
 }
+
 
 # Diamond polygon points for each house
 def _diamond_points(cx, cy, size=90) -> str:
     s = size
-    return f"{cx},{cy-s} {cx+s},{cy} {cx},{cy+s} {cx-s},{cy}"
+    return f"{cx},{cy - s} {cx + s},{cy} {cx},{cy + s} {cx - s},{cy}"
 
 
 def _house_polygon(house: int) -> str:
@@ -64,10 +94,10 @@ def _house_polygon(house: int) -> str:
 _OUTER_DIAMOND = "300,10 590,300 300,590 10,300"
 _INNER_LINES = [
     "M150,150 L450,150 L450,450 L150,450 Z",  # inner square
-    "M150,150 L300,10",   # top-left to top
+    "M150,150 L300,10",  # top-left to top
     "M450,150 L590,300",  # top-right to right
     "M450,450 L300,590",  # bottom-right to bottom
-    "M150,450 L10,300",   # bottom-left to left
+    "M150,450 L10,300",  # bottom-left to left
     "M150,150 L300,300",  # inner diagonals
     "M450,150 L300,300",
     "M450,450 L300,300",
@@ -110,9 +140,12 @@ def generate_north_indian_svg(
         house = (psi - lagna_si) % 12 + 1
         abbrev = _PLANET_ABBREV.get(planet_name, planet_name[:2])
         if show_degrees:
-            deg = getattr(planet_data, 'degree_in_sign', 0)
+            deg = getattr(planet_data, "degree_in_sign", 0)
             abbrev += f" {deg:.0f}°"
-        if getattr(planet_data, 'is_retrograde', False) and planet_name not in ("Rahu", "Ketu"):
+        if getattr(planet_data, "is_retrograde", False) and planet_name not in (
+            "Rahu",
+            "Ketu",
+        ):
             abbrev += "®"
         house_planets[house].append(abbrev)
 
@@ -141,41 +174,45 @@ def generate_north_indian_svg(
         f'<svg width="{width}" height="{height}" viewBox="0 0 600 {height}" '
         f'xmlns="http://www.w3.org/2000/svg" '
         f'role="img" aria-label="North Indian Birth Chart{" — " + title if title else ""}">',
-        f'<title>North Indian Birth Chart{" — " + title if title else ""}</title>',
-        f'<desc>Vedic Jyotish birth chart in North Indian diamond style. '
-        f'Lagna (Ascendant): {_SIGN_NAMES[lagna_si]}. '
-        f'Houses are fixed; signs rotate based on Lagna.</desc>',
+        f"<title>North Indian Birth Chart{' — ' + title if title else ''}</title>",
+        f"<desc>Vedic Jyotish birth chart in North Indian diamond style. "
+        f"Lagna (Ascendant): {_SIGN_NAMES[lagna_si]}. "
+        f"Houses are fixed; signs rotate based on Lagna.</desc>",
         f'<rect width="600" height="{height}" fill="{bg_fill}"/>',
-        '',
-        '<!-- Outer diamond outline -->',
+        "",
+        "<!-- Outer diamond outline -->",
         f'<polygon points="{_OUTER_DIAMOND}" fill="{cell_fill}" stroke="{cell_stroke}" stroke-width="2"/>',
-        '',
-        '<!-- Inner grid lines -->',
+        "",
+        "<!-- Inner grid lines -->",
     ]
 
     for path_d in _INNER_LINES:
-        lines.append(f'<path d="{path_d}" stroke="{cell_stroke}" stroke-width="1.5" fill="none"/>')
+        lines.append(
+            f'<path d="{path_d}" stroke="{cell_stroke}" stroke-width="1.5" fill="none"/>'
+        )
 
-    lines.append('')
-    lines.append('<!-- House cells with sign numbers -->')
+    lines.append("")
+    lines.append("<!-- House cells with sign numbers -->")
 
     for house in range(1, 13):
         cx, cy = _CELL_CENTRES[house]
         si = house_sign[house]
         sign_abbrev = _SIGN_ABBREV[si]
-        is_lagna_house = (house == 1)
+        is_lagna_house = house == 1
 
         # Lagna house gets slight highlight
         fill = lagna_fill if is_lagna_house else "none"
         if is_lagna_house and fill != "none":
-            lines.append(f'<polygon points="{_house_polygon(house)}" '
-                         f'fill="{fill}" stroke="none"/>')
+            lines.append(
+                f'<polygon points="{_house_polygon(house)}" '
+                f'fill="{fill}" stroke="none"/>'
+            )
 
         # Sign number (top of cell) and abbreviation
         lines.append(
             f'<text x="{cx}" y="{cy - 25}" text-anchor="middle" '
             f'font-family="Arial" font-size="11" fill="{sign_color}" font-weight="bold">'
-            f'{si + 1} {sign_abbrev}</text>'
+            f"{si + 1} {sign_abbrev}</text>"
         )
 
         # Planets in this house
@@ -185,7 +222,7 @@ def generate_north_indian_svg(
             lines.append(
                 f'<text x="{cx}" y="{py}" text-anchor="middle" '
                 f'font-family="Arial" font-size="10" fill="{planet_color}">'
-                f'{pstr}</text>'
+                f"{pstr}</text>"
             )
 
     # Title below chart
@@ -193,11 +230,11 @@ def generate_north_indian_svg(
         lines.append(
             f'<text x="300" y="{height - 10}" text-anchor="middle" '
             f'font-family="Arial" font-size="13" font-weight="bold" fill="{title_color}">'
-            f'{title}</text>'
+            f"{title}</text>"
         )
 
-    lines.append('</svg>')
-    return '\n'.join(lines)
+    lines.append("</svg>")
+    return "\n".join(lines)
 
 
 def generate_south_indian_svg(
@@ -241,25 +278,34 @@ def generate_south_indian_svg(
         psi = planet_data.sign_index
         abbrev = _PLANET_ABBREV.get(planet_name, planet_name[:2])
         if show_degrees:
-            deg = getattr(planet_data, 'degree_in_sign', 0)
+            deg = getattr(planet_data, "degree_in_sign", 0)
             abbrev += f" {deg:.0f}°"
-        if getattr(planet_data, 'is_retrograde', False) and planet_name not in ("Rahu", "Ketu"):
+        if getattr(planet_data, "is_retrograde", False) and planet_name not in (
+            "Rahu",
+            "Ketu",
+        ):
             abbrev += "®"
         sign_planets[psi].append(abbrev)
 
     if color_scheme == "color":
-        bg = "#FFFEF5"; stroke = "#8B4513"
-        sign_c = "#8B4513"; planet_c = "#1A5276"; lagna_fill = "#FFF0D0"
+        bg = "#FFFEF5"
+        stroke = "#8B4513"
+        sign_c = "#8B4513"
+        planet_c = "#1A5276"
+        lagna_fill = "#FFF0D0"
     else:
-        bg = "white"; stroke = "black"
-        sign_c = "#333"; planet_c = "#000080"; lagna_fill = "#FFFACD"
+        bg = "white"
+        stroke = "black"
+        sign_c = "#333"
+        planet_c = "#000080"
+        lagna_fill = "#FFFACD"
 
     svg_w, svg_h = 580, height
     lines = [
         f'<svg width="{svg_w}" height="{svg_h}" viewBox="0 0 {svg_w} {svg_h}" '
         f'xmlns="http://www.w3.org/2000/svg" role="img" '
         f'aria-label="South Indian Birth Chart{" — " + title if title else ""}">',
-        f'<title>South Indian Birth Chart{" — " + title if title else ""}</title>',
+        f"<title>South Indian Birth Chart{' — ' + title if title else ''}</title>",
         f'<rect width="{svg_w}" height="{svg_h}" fill="{bg}"/>',
     ]
 
@@ -269,32 +315,34 @@ def generate_south_indian_svg(
     for si in range(12):
         col, row = sign_positions[si]
         x, y = ox + col * cs, oy + row * cs
-        is_lagna = (si == lagna_si)
+        is_lagna = si == lagna_si
         fill = lagna_fill if is_lagna else bg
 
-        lines.append(f'<rect x="{x}" y="{y}" width="{cs}" height="{cs}" '
-                     f'fill="{fill}" stroke="{stroke}" stroke-width="1.5"/>')
+        lines.append(
+            f'<rect x="{x}" y="{y}" width="{cs}" height="{cs}" '
+            f'fill="{fill}" stroke="{stroke}" stroke-width="1.5"/>'
+        )
 
         house = (si - lagna_si) % 12 + 1
         lines.append(
-            f'<text x="{x+5}" y="{y+16}" font-family="Arial" font-size="11" '
-            f'fill="{sign_c}" font-weight="bold">{si+1} H{house}</text>'
+            f'<text x="{x + 5}" y="{y + 16}" font-family="Arial" font-size="11" '
+            f'fill="{sign_c}" font-weight="bold">{si + 1} H{house}</text>'
         )
 
         for j, pstr in enumerate(sign_planets.get(si, [])):
             py = y + 32 + j * 14
             lines.append(
-                f'<text x="{x + cs//2}" y="{py}" text-anchor="middle" '
+                f'<text x="{x + cs // 2}" y="{py}" text-anchor="middle" '
                 f'font-family="Arial" font-size="10" fill="{planet_c}">{pstr}</text>'
             )
 
     if title:
         ty = oy + 4 * cs + 25
         lines.append(
-            f'<text x="{svg_w//2}" y="{ty}" text-anchor="middle" '
+            f'<text x="{svg_w // 2}" y="{ty}" text-anchor="middle" '
             f'font-family="Arial" font-size="13" font-weight="bold" fill="{sign_c}">'
-            f'{title}</text>'
+            f"{title}</text>"
         )
 
-    lines.append('</svg>')
-    return '\n'.join(lines)
+    lines.append("</svg>")
+    return "\n".join(lines)

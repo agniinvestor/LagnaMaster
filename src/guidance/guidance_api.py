@@ -6,6 +6,7 @@ All engine calls are internal. Raw scores never in L1/L2 response schema.
 
 POST /guidance → GuidanceResponse
 """
+
 from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import date
@@ -14,11 +15,12 @@ from datetime import date
 @dataclass
 class GuidanceResponse:
     """Consumer-facing guidance response — no raw scores at L1/L2."""
+
     domain: str
     heading: str
-    summary: str                  # L1 sentence
-    signal_bars: int              # 0–5
-    signal_display: str           # ●●●○○
+    summary: str  # L1 sentence
+    signal_bars: int  # 0–5
+    signal_display: str  # ●●●○○
     timing_label: str
     confidence_label: str
     confidence_note: str
@@ -53,6 +55,7 @@ def get_guidance(
     # ── Engine calls ──────────────────────────────────────────────────────────
     try:
         from src.calculations.domain_weighting import compute_domain_lpi
+
         dlpi = compute_domain_lpi(chart, dashas, on_date, domain)
         primary_h = dlpi.primary_house or 1
         score = dlpi.house_scores.get(primary_h, 0.0)
@@ -61,7 +64,8 @@ def get_guidance(
 
     try:
         from src.calculations.promise_engine import compute_house_promise
-        primary_h_use = primary_h if 'primary_h' in dir() else 1
+
+        primary_h_use = primary_h if "primary_h" in dir() else 1
         promise = compute_house_promise(chart, primary_h_use)
         promise_strength = promise.promise_strength
         timing = "Future"
@@ -71,8 +75,9 @@ def get_guidance(
 
     try:
         from src.calculations.promise_engine import compute_full_promise
+
         full_promise = compute_full_promise(chart, dashas, on_date)
-        ph = primary_h_use if 'primary_h_use' in dir() else 1
+        ph = primary_h_use if "primary_h_use" in dir() else 1
         mr = full_promise.get(ph)
         if mr:
             timing = mr.manifestation_timing
@@ -81,8 +86,9 @@ def get_guidance(
 
     try:
         from src.calculations.confidence_model import compute_confidence
+
         conf = compute_confidence(chart)
-        ph2 = primary_h_use if 'primary_h_use' in dir() else 1
+        ph2 = primary_h_use if "primary_h_use" in dir() else 1
         hc = conf.houses.get(ph2)
         confidence_label = hc.confidence_label if hc else "Moderate"
     except Exception:
@@ -90,6 +96,7 @@ def get_guidance(
 
     try:
         from src.calculations.dominance_engine import dominant_theme as dom_theme
+
         dom = dom_theme(chart, dashas, on_date)
     except Exception:
         dom = ""
@@ -99,6 +106,7 @@ def get_guidance(
     if dashas:
         try:
             from src.calculations.vimshottari_dasa import current_dasha
+
             md, _ = current_dasha(dashas, on_date)
             active_dasha = md.lord
             dasha_activated = True
@@ -111,10 +119,15 @@ def get_guidance(
     from src.guidance.disclaimer_engine import get_disclaimer
 
     content = explain(
-        domain=domain, score=score, depth=depth,
-        promise_strength=promise_strength, timing=timing,
-        confidence_label=confidence_label, active_dasha=active_dasha,
-        dasha_activated=dasha_activated, dominant_theme=dom,
+        domain=domain,
+        score=score,
+        depth=depth,
+        promise_strength=promise_strength,
+        timing=timing,
+        confidence_label=confidence_label,
+        active_dasha=active_dasha,
+        dasha_activated=dasha_activated,
+        dominant_theme=dom,
     )
 
     # ── Apply fatalism filter to all text ─────────────────────────────────────
@@ -133,10 +146,10 @@ def get_guidance(
             "disclaimer": content.l3.disclaimer,
         }
 
-    from src.guidance.score_to_language import signal_bars_display
     from src.calculations.score_to_language import score_to_signal  # noqa
 
     from src.guidance.score_to_language import score_to_signal as sts
+
     sts(score)
 
     return GuidanceResponse(

@@ -20,11 +20,24 @@ Additional rules:
   Jupiter in UL or 2nd from UL = protective, good marriage
   Rahu/Ketu in UL = unusual/unconventional relationship patterns
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
-_SIGN_NAMES = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
-               "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
+_SIGN_NAMES = [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
+]
 _DUSTHANA = {6, 8, 12}
 _KENDRA_TRIKONA = {1, 4, 5, 7, 9, 10}
 _NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
@@ -35,22 +48,23 @@ _NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 class UpapadaAnalysis:
     ul_sign: str
     ul_sign_index: int
-    ul_house: int                  # UL from Lagna
+    ul_house: int  # UL from Lagna
     ul_lord: str
     ul_lord_house: int
-    ul_lord_strong: bool           # in kendra/trikona
+    ul_lord_strong: bool  # in kendra/trikona
     second_from_ul_sign: str
     second_from_ul_planets: list[str]
     second_from_ul_benefics: list[str]
     second_from_ul_malefics: list[str]
-    marriage_quality: str          # "Favourable"/"Mixed"/"Challenging"
-    marriage_longevity: str        # "Lasting"/"Possible challenges"/"Separation risk"
+    marriage_quality: str  # "Favourable"/"Mixed"/"Challenging"
+    marriage_longevity: str  # "Lasting"/"Possible challenges"/"Separation risk"
     notes: list[str]
 
 
 def compute_upapada(chart) -> UpapadaAnalysis:
     """Compute Upapada Lagna and its analysis."""
     from src.calculations.house_lord import compute_house_map
+
     hmap = compute_house_map(chart)
     ph = hmap.planet_house
     lagna_si = chart.lagna_sign_index
@@ -89,10 +103,14 @@ def compute_upapada(chart) -> UpapadaAnalysis:
     mals_2nd = [p for p in planets_2nd if p in _NAT_MALEF]
 
     notes = []
-    if "Jupiter" in planets_2nd or "Jupiter" in [p for p, h in ph.items() if h == ul_from_lagna]:
+    if "Jupiter" in planets_2nd or "Jupiter" in [
+        p for p, h in ph.items() if h == ul_from_lagna
+    ]:
         notes.append("Jupiter's influence on UL — protective, expansive marriage")
     if "Saturn" in mals_2nd:
-        notes.append("Saturn in 2nd from UL — maraka effect, challenges to marriage longevity")
+        notes.append(
+            "Saturn in 2nd from UL — maraka effect, challenges to marriage longevity"
+        )
     if "Rahu" in [p for p, h in ph.items() if h == ul_from_lagna]:
         notes.append("Rahu in UL — unconventional relationship patterns")
 
@@ -113,9 +131,12 @@ def compute_upapada(chart) -> UpapadaAnalysis:
         longevity = "Possible challenges — mixed signals in 2nd from UL"
 
     return UpapadaAnalysis(
-        ul_sign=_SIGN_NAMES[ul_si], ul_sign_index=ul_si,
-        ul_house=ul_from_lagna, ul_lord=ul_lord,
-        ul_lord_house=ul_lord_house, ul_lord_strong=ul_lord_strong,
+        ul_sign=_SIGN_NAMES[ul_si],
+        ul_sign_index=ul_si,
+        ul_house=ul_from_lagna,
+        ul_lord=ul_lord,
+        ul_lord_house=ul_lord_house,
+        ul_lord_strong=ul_lord_strong,
         second_from_ul_sign=second_ul_sign,
         second_from_ul_planets=planets_2nd,
         second_from_ul_benefics=bens_2nd,

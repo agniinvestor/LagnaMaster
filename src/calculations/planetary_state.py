@@ -15,25 +15,34 @@ Sources:
 """
 
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Optional
 
 # ─── Parivartana Yoga ────────────────────────────────────────────────────────
 
 _OWN_SIGNS: dict[str, list[int]] = {
-    "Sun":     [4],
-    "Moon":    [3],
-    "Mars":    [0, 7],
+    "Sun": [4],
+    "Moon": [3],
+    "Mars": [0, 7],
     "Mercury": [2, 5],
     "Jupiter": [8, 11],
-    "Venus":   [1, 6],
-    "Saturn":  [9, 10],
+    "Venus": [1, 6],
+    "Saturn": [9, 10],
 }
 
 _SIGN_LORDS: dict[int, str] = {
-    0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun",
-    5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter",
-    9: "Saturn", 10: "Saturn", 11: "Jupiter",
+    0: "Mars",
+    1: "Venus",
+    2: "Mercury",
+    3: "Moon",
+    4: "Sun",
+    5: "Mercury",
+    6: "Venus",
+    7: "Mars",
+    8: "Jupiter",
+    9: "Saturn",
+    10: "Saturn",
+    11: "Jupiter",
 }
 
 
@@ -41,7 +50,7 @@ _SIGN_LORDS: dict[int, str] = {
 class ParivartanaResult:
     planet_a: str
     planet_b: str
-    kind: str        # "Maha" / "Kahala" / "Dainya"
+    kind: str  # "Maha" / "Kahala" / "Dainya"
     description: str
 
 
@@ -53,8 +62,8 @@ def detect_parivartana(chart) -> list[ParivartanaResult]:
     results = []
     lagna_si = chart.lagna_sign_index
 
-    kendras   = {1, 4, 7, 10}
-    trikonas  = {1, 5, 9}
+    kendras = {1, 4, 7, 10}
+    trikonas = {1, 5, 9}
     dusthanas = {6, 8, 12}
 
     planets = [p for p in chart.planets if p not in ("Rahu", "Ketu")]  # noqa: F841
@@ -73,8 +82,8 @@ def detect_parivartana(chart) -> list[ParivartanaResult]:
             pb_si = chart.planets[pb].sign_index
 
             # Check mutual exchange
-            pa_in_pb_sign = (pa_si in _OWN_SIGNS.get(pb, []))
-            pb_in_pa_sign = (pb_si in _OWN_SIGNS.get(pa, []))
+            pa_in_pb_sign = pa_si in _OWN_SIGNS.get(pb, [])
+            pb_in_pa_sign = pb_si in _OWN_SIGNS.get(pa, [])
 
             if not (pa_in_pb_sign and pb_in_pa_sign):
                 continue
@@ -104,15 +113,21 @@ def detect_parivartana(chart) -> list[ParivartanaResult]:
                 kind = "Kahala"
                 desc = f"Parivartana: {pa}(H{pa_house}) ↔ {pb}(H{pb_house})"
 
-            results.append(ParivartanaResult(
-                planet_a=pa, planet_b=pb,
-                kind=kind, description=desc,
-            ))
+            results.append(
+                ParivartanaResult(
+                    planet_a=pa,
+                    planet_b=pb,
+                    kind=kind,
+                    description=desc,
+                )
+            )
 
     return results
 
 
-def parivartana_dignity_override(chart, parivartana_list: list[ParivartanaResult]) -> dict[str, str]:
+def parivartana_dignity_override(
+    chart, parivartana_list: list[ParivartanaResult]
+) -> dict[str, str]:
     """
     Returns {planet: "OWN_SIGN"} overrides for planets in Parivartana.
     Both planets in a Parivartana pair effectively act as if in their own sign.
@@ -128,6 +143,7 @@ def parivartana_dignity_override(chart, parivartana_list: list[ParivartanaResult
 
 # ─── Graha Yuddha (Planetary War) ────────────────────────────────────────────
 
+
 @dataclass
 class GrahaYuddhaResult:
     planet_a: str
@@ -136,7 +152,7 @@ class GrahaYuddhaResult:
     lat_diff: float
     winner: str
     loser: str
-    winner_reason: str   # "north_latitude" / "higher_speed" / "brighter"
+    winner_reason: str  # "north_latitude" / "higher_speed" / "brighter"
 
 
 # War only applies to these 5 planets (not Sun, Moon, Rahu, Ketu)
@@ -158,7 +174,7 @@ def detect_graha_yuddha(chart) -> list[GrahaYuddhaResult]:
     war_ps = [p for p in chart.planets if p in WAR_PLANETS]
 
     for i, pa in enumerate(war_ps):
-        for pb in war_ps[i+1:]:
+        for pb in war_ps[i + 1 :]:
             pa_data = chart.planets[pa]
             pb_data = chart.planets[pb]
 
@@ -190,15 +206,17 @@ def detect_graha_yuddha(chart) -> list[GrahaYuddhaResult]:
                     winner, loser = pb, pa
                 reason = "higher_speed"
 
-            results.append(GrahaYuddhaResult(
-                planet_a=pa,
-                planet_b=pb,
-                lon_diff=round(lon_diff, 4),
-                lat_diff=round(lat_diff, 4),
-                winner=winner,
-                loser=loser,
-                winner_reason=reason,
-            ))
+            results.append(
+                GrahaYuddhaResult(
+                    planet_a=pa,
+                    planet_b=pb,
+                    lon_diff=round(lon_diff, 4),
+                    lat_diff=round(lat_diff, 4),
+                    winner=winner,
+                    loser=loser,
+                    winner_reason=reason,
+                )
+            )
 
     return results
 
@@ -209,15 +227,23 @@ def detect_graha_yuddha(chart) -> list[GrahaYuddhaResult]:
 
 _WEEKDAY_ORDER = [6, 0, 1, 2, 3, 4, 5]  # Sun=0 in Jyotish sequence, weekday() Mon=0
 _JYOTISH_WEEKDAY = {
-    0: "Moon",    # Monday
-    1: "Mars",    # Tuesday
-    2: "Mercury", # Wednesday
-    3: "Jupiter", # Thursday
-    4: "Venus",   # Friday
+    0: "Moon",  # Monday
+    1: "Mars",  # Tuesday
+    2: "Mercury",  # Wednesday
+    3: "Jupiter",  # Thursday
+    4: "Venus",  # Friday
     5: "Saturn",  # Saturday
-    6: "Sun",     # Sunday
+    6: "Sun",  # Sunday
 }
-_JYOTISH_WEEKDAY_ORDER = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+_JYOTISH_WEEKDAY_ORDER = [
+    "Sun",
+    "Moon",
+    "Mars",
+    "Mercury",
+    "Jupiter",
+    "Venus",
+    "Saturn",
+]
 
 
 def compute_mandi_gulika(
@@ -239,8 +265,7 @@ def compute_mandi_gulika(
     Source: BPHS Ch.25; Phaladeepika Ch.26
     """
     try:
-        from datetime import datetime
-        if hasattr(birth_dt, 'weekday'):
+        if hasattr(birth_dt, "weekday"):
             weekday = birth_dt.weekday()  # 0=Monday
         else:
             return {}

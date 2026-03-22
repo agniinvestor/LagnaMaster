@@ -20,9 +20,14 @@ class TestIndia1947:
     def chart(self) -> BirthChart:
         f = INDIA_1947
         return compute_chart(
-            year=f["year"], month=f["month"], day=f["day"],
-            hour=f["hour"], lat=f["lat"], lon=f["lon"],
-            tz_offset=f["tz_offset"], ayanamsha=f["ayanamsha"],
+            year=f["year"],
+            month=f["month"],
+            day=f["day"],
+            hour=f["hour"],
+            lat=f["lat"],
+            lon=f["lon"],
+            tz_offset=f["tz_offset"],
+            ayanamsha=f["ayanamsha"],
         )
 
     def test_lagna_sign(self, chart):
@@ -35,14 +40,12 @@ class TestIndia1947:
         actual = chart.lagna_degree_in_sign
         assert abs(actual - expected) < self.TOL, (
             f"Lagna degree: expected {expected:.4f}°, got {actual:.4f}° "
-            f"(diff={abs(actual-expected):.4f}°, tol={self.TOL}°)"
+            f"(diff={abs(actual - expected):.4f}°, tol={self.TOL}°)"
         )
 
     def test_sun_sign(self, chart):
         sun = chart.planet("Sun")
-        assert sun.sign == "Cancer", (
-            f"Sun sign: expected Cancer, got {sun.sign}"
-        )
+        assert sun.sign == "Cancer", f"Sun sign: expected Cancer, got {sun.sign}"
 
     def test_sun_degree(self, chart):
         sun = chart.planet("Sun")
@@ -50,7 +53,7 @@ class TestIndia1947:
         actual = sun.degree_in_sign
         assert abs(actual - expected) < self.TOL, (
             f"Sun degree: expected {expected:.3f}°, got {actual:.4f}° "
-            f"(diff={abs(actual-expected):.4f}°)"
+            f"(diff={abs(actual - expected):.4f}°)"
         )
 
     def test_all_planet_signs(self, chart):
@@ -89,9 +92,13 @@ class TestInputValidation:
     def test_midnight_birth_p1(self):
         """P-1: hour=0.0 (midnight) must not be treated as falsy."""
         chart = compute_chart(
-            year=1947, month=8, day=15,
-            hour=0.0,   # midnight — this was the bug
-            lat=28.6139, lon=77.2090, tz_offset=5.5,
+            year=1947,
+            month=8,
+            day=15,
+            hour=0.0,  # midnight — this was the bug
+            lat=28.6139,
+            lon=77.2090,
+            tz_offset=5.5,
         )
         assert chart.lagna_sign == "Taurus", (
             "Midnight birth (hour=0.0) produced wrong lagna — P-1 bug may be present"
@@ -100,9 +107,13 @@ class TestInputValidation:
     def test_none_hour_treated_as_midnight(self):
         """hour=None should be treated as 0.0, not crash."""
         chart = compute_chart(
-            year=1947, month=8, day=15,
+            year=1947,
+            month=8,
+            day=15,
             hour=None,
-            lat=28.6139, lon=77.2090, tz_offset=5.5,
+            lat=28.6139,
+            lon=77.2090,
+            tz_offset=5.5,
         )
         assert chart.lagna_sign == "Taurus"
 
@@ -110,15 +121,25 @@ class TestInputValidation:
         """P-4: unknown ayanamsha must raise ValueError, not silently pass."""
         with pytest.raises(ValueError, match="Unknown ayanamsha"):
             compute_chart(
-                year=2000, month=1, day=1, hour=12.0,
-                lat=28.6, lon=77.2, ayanamsha="invalid_system",
+                year=2000,
+                month=1,
+                day=1,
+                hour=12.0,
+                lat=28.6,
+                lon=77.2,
+                ayanamsha="invalid_system",
             )
 
     def test_lahiri_ayanamsha_accepted(self):
         """Lahiri is a supported ayanamsha — must not raise."""
         chart = compute_chart(
-            year=2000, month=1, day=1, hour=12.0,
-            lat=28.6, lon=77.2, ayanamsha="lahiri",
+            year=2000,
+            month=1,
+            day=1,
+            hour=12.0,
+            lat=28.6,
+            lon=77.2,
+            ayanamsha="lahiri",
         )
         assert chart.ayanamsha_name == "lahiri"
 
@@ -128,19 +149,36 @@ class TestChart2000:
 
     def test_nine_planets_present(self):
         chart = compute_chart(
-            year=2000, month=1, day=1, hour=12.0,
-            lat=28.6139, lon=77.2090, tz_offset=5.5,
+            year=2000,
+            month=1,
+            day=1,
+            hour=12.0,
+            lat=28.6139,
+            lon=77.2090,
+            tz_offset=5.5,
         )
         expected_planets = {
-            "Sun", "Moon", "Mars", "Mercury", "Jupiter",
-            "Venus", "Saturn", "Rahu", "Ketu",
+            "Sun",
+            "Moon",
+            "Mars",
+            "Mercury",
+            "Jupiter",
+            "Venus",
+            "Saturn",
+            "Rahu",
+            "Ketu",
         }
         assert set(chart.planets.keys()) == expected_planets
 
     def test_retrograde_flag_is_bool(self):
         chart = compute_chart(
-            year=2000, month=1, day=1, hour=12.0,
-            lat=28.6139, lon=77.2090, tz_offset=5.5,
+            year=2000,
+            month=1,
+            day=1,
+            hour=12.0,
+            lat=28.6139,
+            lon=77.2090,
+            tz_offset=5.5,
         )
         for p in chart.planets.values():
             assert isinstance(p.is_retrograde, bool)

@@ -12,54 +12,68 @@ Sources:
   Swiss Ephemeris Manual §2.3 (Moon parallax, precision)
   Hart de Fouw & Robert Svoboda · Light on Life, App on Research
 """
-from __future__ import annotations
-from dataclasses import dataclass, field
-from typing import Optional
+
+from __future__ import annotations  # noqa: E402
+from dataclasses import dataclass, field  # noqa: E402
+from typing import Optional  # noqa: E402
 
 
 @dataclass
 class UncertaintyFlags:
     """Flags that affect the reliability of chart interpretations."""
+
     # Lagna uncertainty
-    lagna_near_sign_boundary: bool = False     # Lagna within 1° of sign cusp
-    lagna_boundary_margin_deg: float = 0.0     # degrees from nearest cusp
+    lagna_near_sign_boundary: bool = False  # Lagna within 1° of sign cusp
+    lagna_boundary_margin_deg: float = 0.0  # degrees from nearest cusp
 
     # Moon uncertainty
-    moon_near_nakshatra_cusp: bool = False     # Moon within 0.5° of nak boundary
-    moon_boundary_margin_deg: float = 0.0     # degrees from nearest nak cusp
+    moon_near_nakshatra_cusp: bool = False  # Moon within 0.5° of nak boundary
+    moon_boundary_margin_deg: float = 0.0  # degrees from nearest nak cusp
 
     # Dasha uncertainty
-    dasha_lord_uncertain: bool = False         # Moon too close to nakshatra boundary
+    dasha_lord_uncertain: bool = False  # Moon too close to nakshatra boundary
 
     # Ayanamsha sensitivity
-    sign_boundary_planets: list[str] = field(default_factory=list)  # planets within 1° of sign cusp
+    sign_boundary_planets: list[str] = field(
+        default_factory=list
+    )  # planets within 1° of sign cusp
 
     @property
     def any_flag(self) -> bool:
-        return (self.lagna_near_sign_boundary or
-                self.moon_near_nakshatra_cusp or
-                self.dasha_lord_uncertain or
-                bool(self.sign_boundary_planets))
+        return (
+            self.lagna_near_sign_boundary
+            or self.moon_near_nakshatra_cusp
+            or self.dasha_lord_uncertain
+            or bool(self.sign_boundary_planets)
+        )
 
     @property
     def severity(self) -> str:
-        flags_set = sum([self.lagna_near_sign_boundary, self.moon_near_nakshatra_cusp,
-                         self.dasha_lord_uncertain])
-        if flags_set >= 2: return "high"
-        if flags_set == 1: return "moderate"
+        flags_set = sum(
+            [
+                self.lagna_near_sign_boundary,
+                self.moon_near_nakshatra_cusp,
+                self.dasha_lord_uncertain,
+            ]
+        )
+        if flags_set >= 2:
+            return "high"
+        if flags_set == 1:
+            return "moderate"
         return "low"
 
 
 @dataclass
 class ConfidenceInterval:
     """Confidence interval for a single house score."""
+
     house: int
     point_estimate: float
     lower_bound: float
     upper_bound: float
-    confidence_pct: float      # 0-100
+    confidence_pct: float  # 0-100
     uncertainty_sources: list[str]
-    is_reliable: bool          # True if interval width < 2.0
+    is_reliable: bool  # True if interval width < 2.0
 
     @property
     def interval_width(self) -> float:
@@ -69,9 +83,10 @@ class ConfidenceInterval:
 @dataclass
 class ChartConfidenceReport:
     """Full confidence analysis for a chart."""
+
     uncertainty_flags: UncertaintyFlags
     house_intervals: list[ConfidenceInterval]
-    overall_reliability: str    # "high"/"moderate"/"low"
+    overall_reliability: str  # "high"/"moderate"/"low"
     recommendations: list[str]
 
     def interval_for_house(self, house: int) -> Optional[ConfidenceInterval]:
@@ -150,33 +165,41 @@ def compute_confidence_intervals(
 
         if flags.lagna_near_sign_boundary:
             extra_uncertainty += 1.5 * base_uncertainty
-            sources.append(f"lagna_near_sign_boundary ({flags.lagna_boundary_margin_deg:.1f}° margin)")
+            sources.append(
+                f"lagna_near_sign_boundary ({flags.lagna_boundary_margin_deg:.1f}° margin)"
+            )
 
         if flags.dasha_lord_uncertain:
             extra_uncertainty += 0.5 * base_uncertainty
-            sources.append(f"moon_near_nakshatra_cusp ({flags.moon_boundary_margin_deg:.1f}° margin)")
+            sources.append(
+                f"moon_near_nakshatra_cusp ({flags.moon_boundary_margin_deg:.1f}° margin)"
+            )
 
         if len(flags.sign_boundary_planets) > 0 and any(
-            p in ["Sun","Moon","Mars","Jupiter","Saturn"]
+            p in ["Sun", "Moon", "Mars", "Jupiter", "Saturn"]
             for p in flags.sign_boundary_planets
         ):
             extra_uncertainty += 0.3
-            sources.append(f"planets_near_sign_boundary: {flags.sign_boundary_planets[:3]}")
+            sources.append(
+                f"planets_near_sign_boundary: {flags.sign_boundary_planets[:3]}"
+            )
 
         half_width = 0.3 + extra_uncertainty
         lower = round(max(-10.0, score - half_width), 3)
         upper = round(min(+10.0, score + half_width), 3)
         conf_pct = max(30.0, 95.0 - extra_uncertainty * 20)
 
-        intervals.append(ConfidenceInterval(
-            house=house,
-            point_estimate=round(score, 3),
-            lower_bound=lower,
-            upper_bound=upper,
-            confidence_pct=round(conf_pct, 1),
-            uncertainty_sources=sources,
-            is_reliable=(upper - lower) < 2.0,
-        ))
+        intervals.append(
+            ConfidenceInterval(
+                house=house,
+                point_estimate=round(score, 3),
+                lower_bound=lower,
+                upper_bound=upper,
+                confidence_pct=round(conf_pct, 1),
+                uncertainty_sources=sources,
+                is_reliable=(upper - lower) < 2.0,
+            )
+        )
 
     return intervals
 
@@ -192,7 +215,9 @@ def compute_chart_confidence(
     Source: Hart de Fouw & Robert Svoboda · Light on Life, App on Research
     """
     flags = compute_uncertainty_flags(chart)
-    intervals = compute_confidence_intervals(base_scores, flags, birth_time_uncertainty_minutes)
+    intervals = compute_confidence_intervals(
+        base_scores, flags, birth_time_uncertainty_minutes
+    )
 
     # Overall reliability
     if not flags.any_flag:
@@ -213,11 +238,15 @@ def compute_chart_confidence(
             )
     else:
         reliability = "low"
-        recs = ["Multiple uncertainty flags — verify birth time precisely before prediction."]
+        recs = [
+            "Multiple uncertainty flags — verify birth time precisely before prediction."
+        ]
 
     if flags.sign_boundary_planets:
-        recs.append(f"Planets near sign boundary: {', '.join(flags.sign_boundary_planets)} — "
-                    "sign dignity may differ by ±0.3° ayanamsha variation.")
+        recs.append(
+            f"Planets near sign boundary: {', '.join(flags.sign_boundary_planets)} — "
+            "sign dignity may differ by ±0.3° ayanamsha variation."
+        )
 
     return ChartConfidenceReport(
         uncertainty_flags=flags,
@@ -227,39 +256,54 @@ def compute_chart_confidence(
     )
 
 
-from dataclasses import dataclass as _dc
-from typing import Dict as _Dict
+from dataclasses import dataclass as _dc  # noqa: E402
+
 
 @_dc
 class HouseConfidence:
     house: int
-    overall_confidence: float   # 0.0-1.0
-    confidence_label: str       # 'High'/'Moderate'/'Low'/'Uncertain'
+    overall_confidence: float  # 0.0-1.0
+    confidence_label: str  # 'High'/'Moderate'/'Low'/'Uncertain'
+
 
 class ChartConfidenceReport2:
-    def __init__(self, houses, global_confidence, most_reliable_houses,
-                 uncertainty_flags=None, recommendations=None):
-        self.houses = houses                          # dict {int: HouseConfidence}
-        self.global_confidence = global_confidence    # float 0-1
+    def __init__(
+        self,
+        houses,
+        global_confidence,
+        most_reliable_houses,
+        uncertainty_flags=None,
+        recommendations=None,
+    ):
+        self.houses = houses  # dict {int: HouseConfidence}
+        self.global_confidence = global_confidence  # float 0-1
         self.most_reliable_houses = most_reliable_houses  # list of 3 ints
+
 
 def compute_confidence(chart, birth_time_uncertainty_minutes: float = 5.0):
     flags = compute_uncertainty_flags(chart)
     base = {h: 0.0 for h in range(1, 13)}
-    intervals = compute_confidence_intervals(base, flags, birth_time_uncertainty_minutes)
+    intervals = compute_confidence_intervals(
+        base, flags, birth_time_uncertainty_minutes
+    )
 
     houses = {}
     for ci in intervals:
         conf = max(0.0, min(1.0, ci.confidence_pct / 100.0))
-        if conf >= 0.8:   label = "High"
-        elif conf >= 0.6: label = "Moderate"
-        elif conf >= 0.4: label = "Low"
-        else:              label = "Uncertain"
+        if conf >= 0.8:
+            label = "High"
+        elif conf >= 0.6:
+            label = "Moderate"
+        elif conf >= 0.4:
+            label = "Low"
+        else:
+            label = "Uncertain"
         houses[ci.house] = HouseConfidence(ci.house, round(conf, 3), label)
 
     global_conf = round(sum(h.overall_confidence for h in houses.values()) / 12, 3)
     top3 = sorted(houses.values(), key=lambda h: h.overall_confidence, reverse=True)[:3]
     most_reliable = [h.house for h in top3]
 
-    return ChartConfidenceReport2(houses=houses, global_confidence=global_conf,
-                                   most_reliable_houses=most_reliable)
+    return ChartConfidenceReport2(
+        houses=houses, global_confidence=global_conf, most_reliable_houses=most_reliable
+    )

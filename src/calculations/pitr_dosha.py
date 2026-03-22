@@ -17,27 +17,31 @@ Modern practitioner criteria (consensus, not classical):
 
 Severity: Strong / Moderate / Mild / Not present
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
 _NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
-_DISCLAIMER = ("Pitr Dosha is a modern practitioner convention, not defined "
-               "in classical texts (BPHS, Parashara). Included as a practitioner-"
-               "expected feature. Classical basis: 9th house/Sun affliction analysis.")
+_DISCLAIMER = (
+    "Pitr Dosha is a modern practitioner convention, not defined "
+    "in classical texts (BPHS, Parashara). Included as a practitioner-"
+    "expected feature. Classical basis: 9th house/Sun affliction analysis."
+)
 
 
 @dataclass
 class PitrDoshaResult:
     present: bool
-    severity: str                # "Strong"/"Moderate"/"Mild"/"Not present"
-    triggers: list[str]          # which criteria triggered
+    severity: str  # "Strong"/"Moderate"/"Mild"/"Not present"
+    triggers: list[str]  # which criteria triggered
     classical_disclaimer: str
-    suggested_consideration: str # (not a remedy prescription)
+    suggested_consideration: str  # (not a remedy prescription)
 
 
 def compute_pitr_dosha(chart) -> PitrDoshaResult:
     """Detect Pitr Dosha by modern practitioner criteria."""
     from src.calculations.house_lord import compute_house_map
+
     hmap = compute_house_map(chart)
     ph = hmap.planet_house
 
@@ -46,8 +50,7 @@ def compute_pitr_dosha(chart) -> PitrDoshaResult:
     # Criterion 1: Sun in 9th house
     sun_h = ph.get("Sun", 0)
     if sun_h == 9:
-        malefics_with_sun = [p for p in _NAT_MALEF
-                             if p != "Sun" and ph.get(p) == 9]
+        malefics_with_sun = [p for p in _NAT_MALEF if p != "Sun" and ph.get(p) == 9]
         if malefics_with_sun:
             triggers.append(f"Sun in H9 with malefics {malefics_with_sun}")
 
@@ -75,20 +78,28 @@ def compute_pitr_dosha(chart) -> PitrDoshaResult:
         triggers.append("Saturn in H9 with Rahu in dusthana/kendra — ancestral burden")
 
     n = len(triggers)
-    if n >= 3:     severity = "Strong"
-    elif n == 2:   severity = "Moderate"
-    elif n == 1:   severity = "Mild"
-    else:          severity = "Not present"
+    if n >= 3:
+        severity = "Strong"
+    elif n == 2:
+        severity = "Moderate"
+    elif n == 1:
+        severity = "Mild"
+    else:
+        severity = "Not present"
     present = n >= 1
 
     consideration = ""
     if present:
-        consideration = ("Consider ancestral memorial practices (Pitru Tarpana/Shraddha) "
-                         "as a general dharmic act — irrespective of chart. "
-                         "Consult a practitioner for specific guidance.")
+        consideration = (
+            "Consider ancestral memorial practices (Pitru Tarpana/Shraddha) "
+            "as a general dharmic act — irrespective of chart. "
+            "Consult a practitioner for specific guidance."
+        )
 
     return PitrDoshaResult(
-        present=present, severity=severity, triggers=triggers,
+        present=present,
+        severity=severity,
+        triggers=triggers,
         classical_disclaimer=_DISCLAIMER,
         suggested_consideration=consideration,
     )

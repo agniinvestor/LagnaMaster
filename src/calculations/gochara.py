@@ -18,48 +18,51 @@ Usage:
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
-from datetime import date, timedelta
+from dataclasses import dataclass
+from datetime import date
 
 import swisseph as swe
 
-from src.ephemeris import BirthChart, PlanetPosition, SIGNS, _AYANAMSHA_MAP, _PLANET_IDS
+from src.ephemeris import BirthChart, SIGNS, _AYANAMSHA_MAP, _PLANET_IDS
 from src.calculations.ashtakavarga import compute_ashtakavarga
 
 # ---------------------------------------------------------------------------
 # Data classes
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class TransitPlanet:
     """Transit position of one planet relative to the natal chart."""
+
     planet: str
-    longitude: float        # sidereal longitude 0–360°
+    longitude: float  # sidereal longitude 0–360°
     sign: str
-    sign_index: int         # 0 = Aries
+    sign_index: int  # 0 = Aries
     degree_in_sign: float
     is_retrograde: bool
-    speed: float            # deg/day (negative = retrograde)
-    natal_house: int        # whole-sign house from natal lagna (1–12)
-    av_bindus: int          # Ashtakavarga bindus for this sign (−1 if N/A)
+    speed: float  # deg/day (negative = retrograde)
+    natal_house: int  # whole-sign house from natal lagna (1–12)
+    av_bindus: int  # Ashtakavarga bindus for this sign (−1 if N/A)
 
 
 @dataclass
 class GocharaReport:
     """Full Gochara (transit) analysis for a given date."""
+
     transit_date: date
     natal_lagna_sign: str
     natal_moon_sign: str
     natal_moon_sign_index: int
-    planets: dict[str, TransitPlanet]   # 9 planets (incl. Rahu/Ketu)
+    planets: dict[str, TransitPlanet]  # 9 planets (incl. Rahu/Ketu)
 
     # Sade Sati (Saturn's 7.5-year period)
-    sade_sati: bool          # True if Saturn is in Sade Sati
-    sade_sati_phase: str     # "Rising", "Peak", "Setting", or "None"
+    sade_sati: bool  # True if Saturn is in Sade Sati
+    sade_sati_phase: str  # "Rising", "Peak", "Setting", or "None"
 
     # Jupiter transit over natal Moon
-    guru_transit_house: int          # house number (from lagna) Jupiter is in
-    guru_chandal_transit: bool       # Jupiter + Rahu in same sign in transit
+    guru_transit_house: int  # house number (from lagna) Jupiter is in
+    guru_chandal_transit: bool  # Jupiter + Rahu in same sign in transit
 
     def transit_house(self, planet: str) -> int:
         """Return the natal house the transiting planet currently occupies."""
@@ -69,6 +72,7 @@ class GocharaReport:
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def _compute_transit_positions(
     transit_date: date,
@@ -80,8 +84,10 @@ def _compute_transit_positions(
     """
     # JD for noon UTC on transit_date
     jd_ut = swe.julday(
-        transit_date.year, transit_date.month, transit_date.day,
-        12.0,   # noon UTC
+        transit_date.year,
+        transit_date.month,
+        transit_date.day,
+        12.0,  # noon UTC
         swe.GREG_CAL,
     )
     swe.set_sid_mode(_AYANAMSHA_MAP[ayanamsha_key])
@@ -91,7 +97,7 @@ def _compute_transit_positions(
     for name, planet_id in _PLANET_IDS.items():
         result, _ = swe.calc_ut(jd_ut, planet_id, flags)
         lon_sid = result[0] % 360
-        speed   = result[3]
+        speed = result[3]
         positions[name] = (lon_sid, speed)
 
     # Ketu = Rahu + 180°
@@ -128,6 +134,7 @@ def _sade_sati_phase(saturn_si: int, moon_si: int) -> tuple[bool, str]:
 # Public API
 # ---------------------------------------------------------------------------
 
+
 def compute_gochara(
     natal_chart: BirthChart,
     transit_date: date | None = None,
@@ -147,10 +154,10 @@ def compute_gochara(
     if transit_date is None:
         transit_date = date.today()
 
-    lagna_si   = natal_chart.lagna_sign_index
-    moon_si    = natal_chart.planets["Moon"].sign_index
-    moon_sign  = natal_chart.planets["Moon"].sign
-    ayanamsha  = natal_chart.ayanamsha_name
+    lagna_si = natal_chart.lagna_sign_index
+    moon_si = natal_chart.planets["Moon"].sign_index
+    moon_sign = natal_chart.planets["Moon"].sign
+    ayanamsha = natal_chart.ayanamsha_name
 
     # Compute transit positions
     transit_pos = _compute_transit_positions(transit_date, ayanamsha)
@@ -162,7 +169,7 @@ def compute_gochara(
 
     transit_planets: dict[str, TransitPlanet] = {}
     for planet_name, (lon, speed) in transit_pos.items():
-        si  = int(lon / 30) % 12
+        si = int(lon / 30) % 12
         deg = lon - si * 30
         sign = SIGNS[si]
         natal_house = _whole_sign_house(si, lagna_si)
@@ -190,8 +197,7 @@ def compute_gochara(
     # Jupiter transit
     guru_house = transit_planets["Jupiter"].natal_house
     guru_chandal = (
-        transit_planets["Jupiter"].sign_index ==
-        transit_planets["Rahu"].sign_index
+        transit_planets["Jupiter"].sign_index == transit_planets["Rahu"].sign_index
     )
 
     return GocharaReport(

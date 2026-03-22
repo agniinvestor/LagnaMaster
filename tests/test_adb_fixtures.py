@@ -8,21 +8,34 @@ spanning different Lagnas, planetary configurations, and life events.
 Charts sourced from Astro-Databank (astro.com) — Rodden AA/A rated.
 Copyright: ADB data free for research use per astro.com copyright notice.
 """
+
 import json
 import os
 import pytest
 
 FIXTURES_DIR = "tests/fixtures/adb_charts"
 _SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
 ]
 
 
 def load_adb_fixture(key: str) -> dict:
     path = os.path.join(FIXTURES_DIR, f"{key}.json")
     if not os.path.exists(path):
-        pytest.skip(f"ADB fixture {key} not yet fetched — run: python3 tools/adb_scraper.py --manual")
+        pytest.skip(
+            f"ADB fixture {key} not yet fetched — run: python3 tools/adb_scraper.py --manual"
+        )
     with open(path) as f:
         return json.load(f)
 
@@ -31,34 +44,45 @@ def compute_from_fixture(fixture: dict):
     """Run LagnaMaster engine on an ADB fixture's birth data."""
     bd = fixture["birth_data"]
     from src.ephemeris import compute_chart
+
     return compute_chart(
-        year=bd["year"], month=bd["month"], day=bd["day"],
-        hour=bd["hour"], lat=bd["lat"], lon=bd["lon"],
-        tz_offset=bd["tz_offset"], ayanamsha=bd.get("ayanamsha", "lahiri"),
+        year=bd["year"],
+        month=bd["month"],
+        day=bd["day"],
+        hour=bd["hour"],
+        lat=bd["lat"],
+        lon=bd["lon"],
+        tz_offset=bd["tz_offset"],
+        ayanamsha=bd.get("ayanamsha", "lahiri"),
     )
 
 
 # ─── Fixture availability ─────────────────────────────────────────────────────
 
-class TestADBFixtureLibrary:
 
+class TestADBFixtureLibrary:
     def test_fixture_dir_exists(self):
         os.makedirs(FIXTURES_DIR, exist_ok=True)
         assert os.path.isdir(FIXTURES_DIR)
 
     def test_manual_fixtures_present(self):
         """At minimum the manually verified AA fixtures should be present."""
-        fixtures = [f for f in os.listdir(FIXTURES_DIR) if f.endswith('.json')] \
-            if os.path.isdir(FIXTURES_DIR) else []
+        fixtures = (
+            [f for f in os.listdir(FIXTURES_DIR) if f.endswith(".json")]
+            if os.path.isdir(FIXTURES_DIR)
+            else []
+        )
         if len(fixtures) == 0:
-            pytest.skip("No ADB fixtures yet — run: python3 tools/adb_scraper.py --manual")
+            pytest.skip(
+                "No ADB fixtures yet — run: python3 tools/adb_scraper.py --manual"
+            )
         assert len(fixtures) >= 1
 
     def test_all_fixtures_have_birth_data(self):
         if not os.path.isdir(FIXTURES_DIR):
             pytest.skip("No ADB fixtures")
         for fname in os.listdir(FIXTURES_DIR):
-            if not fname.endswith('.json'):
+            if not fname.endswith(".json"):
                 continue
             with open(os.path.join(FIXTURES_DIR, fname)) as f:
                 fixture = json.load(f)
@@ -72,20 +96,21 @@ class TestADBFixtureLibrary:
         if not os.path.isdir(FIXTURES_DIR):
             pytest.skip("No ADB fixtures")
         for fname in os.listdir(FIXTURES_DIR):
-            if not fname.endswith('.json'):
+            if not fname.endswith(".json"):
                 continue
             with open(os.path.join(FIXTURES_DIR, fname)) as f:
                 fixture = json.load(f)
             rating = fixture.get("rodden_rating", "Unknown")
             # Warn on low-quality data — DD should never be used
-            assert rating != "DD", \
+            assert rating != "DD", (
                 f"{fname}: Rodden DD (dirty data) must not be in fixtures"
+            )
 
 
 # ─── Mahatma Gandhi chart ─────────────────────────────────────────────────────
 
-class TestGandhiChart:
 
+class TestGandhiChart:
     @pytest.fixture(scope="class")
     def fixture(self):
         return load_adb_fixture("gandhi_mahatma")
@@ -100,11 +125,22 @@ class TestGandhiChart:
     def test_lagna_sign(self, chart, fixture):
         expected = fixture.get("expected", {}).get("lagna_sign")
         if expected:
-            assert chart.lagna_sign == expected, \
+            assert chart.lagna_sign == expected, (
                 f"Gandhi Lagna: expected {expected}, got {chart.lagna_sign}"
+            )
 
     def test_all_planets_computed(self, chart):
-        expected_planets = {"Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Rahu", "Ketu"}
+        expected_planets = {
+            "Sun",
+            "Moon",
+            "Mars",
+            "Mercury",
+            "Jupiter",
+            "Venus",
+            "Saturn",
+            "Rahu",
+            "Ketu",
+        }
         assert set(chart.planets.keys()) >= expected_planets
 
     def test_longitudes_in_range(self, chart):
@@ -113,11 +149,13 @@ class TestGandhiChart:
 
     def test_ayanamsha_reasonable(self, chart):
         # Lahiri ayanamsha in late 19th century should be ~22°
-        assert 21.0 < chart.ayanamsha_value < 23.5, \
+        assert 21.0 < chart.ayanamsha_value < 23.5, (
             f"Ayanamsha out of range: {chart.ayanamsha_value}"
+        )
 
     def test_scoring_runs(self, chart):
         from src.scoring import score_chart
+
         result = score_chart(chart)
         assert result is not None
         assert len(result.houses) == 12
@@ -125,8 +163,8 @@ class TestGandhiChart:
 
 # ─── Jawaharlal Nehru chart ────────────────────────────────────────────────────
 
-class TestNehruChart:
 
+class TestNehruChart:
     @pytest.fixture(scope="class")
     def fixture(self):
         return load_adb_fixture("nehru_jawaharlal")
@@ -151,8 +189,8 @@ class TestNehruChart:
 
 # ─── Swami Vivekananda chart ──────────────────────────────────────────────────
 
-class TestVivekanandaChart:
 
+class TestVivekanandaChart:
     @pytest.fixture(scope="class")
     def fixture(self):
         return load_adb_fixture("vivekananda_swami")
@@ -166,20 +204,24 @@ class TestVivekanandaChart:
 
     def test_scoring_complete(self, chart):
         from src.scoring import score_chart
+
         result = score_chart(chart)
         for h in range(1, 13):
             assert h in result.houses, f"H{h} missing from Vivekananda scores"
 
     def test_functional_dignity_available(self, chart):
-        from src.calculations.functional_dignity import compute_functional_classifications
+        from src.calculations.functional_dignity import (
+            compute_functional_classifications,
+        )
+
         fc = compute_functional_classifications(chart.lagna_sign_index)
         assert len(fc) == 9  # 9 planets classified
 
 
 # ─── Albert Einstein chart ────────────────────────────────────────────────────
 
-class TestEinsteinChart:
 
+class TestEinsteinChart:
     @pytest.fixture(scope="class")
     def fixture(self):
         return load_adb_fixture("einstein_albert")
@@ -203,8 +245,8 @@ class TestEinsteinChart:
 
 # ─── Nelson Mandela chart ─────────────────────────────────────────────────────
 
-class TestMandelaChart:
 
+class TestMandelaChart:
     @pytest.fixture(scope="class")
     def fixture(self):
         return load_adb_fixture("mandela_nelson")
@@ -222,11 +264,13 @@ class TestMandelaChart:
 
     def test_scoring_runs(self, chart):
         from src.scoring import score_chart
+
         result = score_chart(chart)
         assert result is not None
 
 
 # ─── Cross-chart diversity tests ──────────────────────────────────────────────
+
 
 class TestChartDiversity:
     """Verify that the ADB fixture library covers diverse conditions."""
@@ -237,7 +281,7 @@ class TestChartDiversity:
         if not os.path.isdir(FIXTURES_DIR):
             return charts
         for fname in os.listdir(FIXTURES_DIR):
-            if not fname.endswith('.json'):
+            if not fname.endswith(".json"):
                 continue
             with open(os.path.join(FIXTURES_DIR, fname)) as f:
                 fixture = json.load(f)
@@ -251,8 +295,9 @@ class TestChartDiversity:
         if len(charts) < 3:
             pytest.skip("Need at least 3 computed charts to test diversity")
         lagnas = set(c["chart"]["lagna_sign"] for c in charts)
-        assert len(lagnas) >= 2, \
+        assert len(lagnas) >= 2, (
             f"Only 1 Lagna represented: {lagnas}. Need more chart diversity."
+        )
 
     def test_century_diversity(self):
         """Fixtures should span multiple centuries."""
@@ -260,12 +305,13 @@ class TestChartDiversity:
             pytest.skip("No ADB fixtures")
         years = []
         for fname in os.listdir(FIXTURES_DIR):
-            if not fname.endswith('.json'):
+            if not fname.endswith(".json"):
                 continue
             with open(os.path.join(FIXTURES_DIR, fname)) as f:
                 fixture = json.load(f)
             years.append(fixture["birth_data"]["year"])
         if not years:
             pytest.skip("No fixtures loaded")
-        assert max(years) - min(years) > 50, \
-            f"All fixtures within {max(years)-min(years)} years — not diverse enough"
+        assert max(years) - min(years) > 50, (
+            f"All fixtures within {max(years) - min(years)} years — not diverse enough"
+        )

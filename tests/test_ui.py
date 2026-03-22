@@ -13,6 +13,7 @@ from tests.fixtures import INDIA_1947
 @pytest.fixture(scope="module")
 def db_path(tmp_path_factory):
     import src.db as db
+
     p = tmp_path_factory.mktemp("ui_data") / "ui_test.db"
     db.DB_PATH = p
     db.init_db()
@@ -28,9 +29,14 @@ class TestUIRoundTrip:
 
         f = INDIA_1947
         chart = compute_chart(
-            year=f["year"], month=f["month"], day=f["day"],
-            hour=f["hour"], lat=f["lat"], lon=f["lon"],
-            tz_offset=f["tz_offset"], ayanamsha=f["ayanamsha"],
+            year=f["year"],
+            month=f["month"],
+            day=f["day"],
+            hour=f["hour"],
+            lat=f["lat"],
+            lon=f["lon"],
+            tz_offset=f["tz_offset"],
+            ayanamsha=f["ayanamsha"],
         )
         scores = score_chart(chart)
 
@@ -43,28 +49,39 @@ class TestUIRoundTrip:
             "jd_ut": chart.jd_ut,
             "planets": {
                 n: {
-                    "sign": p.sign, "sign_index": p.sign_index,
+                    "sign": p.sign,
+                    "sign_index": p.sign_index,
                     "degree_in_sign": p.degree_in_sign,
                     "longitude": p.longitude,
-                    "is_retrograde": p.is_retrograde, "speed": p.speed,
+                    "is_retrograde": p.is_retrograde,
+                    "speed": p.speed,
                 }
                 for n, p in chart.planets.items()
             },
         }
         scores_json = {
             str(h): {
-                "domain": hs.domain, "final_score": hs.final_score,
-                "raw_score": hs.raw_score, "rating": hs.rating,
-                "bhavesh": hs.bhavesh, "bhavesh_house": hs.bhavesh_house,
+                "domain": hs.domain,
+                "final_score": hs.final_score,
+                "raw_score": hs.raw_score,
+                "rating": hs.rating,
+                "bhavesh": hs.bhavesh,
+                "bhavesh_house": hs.bhavesh_house,
             }
             for h, hs in scores.houses.items()
         }
 
         chart_id = save_chart(
-            year=f["year"], month=f["month"], day=f["day"],
-            hour=f["hour"], lat=f["lat"], lon=f["lon"],
-            tz_offset=f["tz_offset"], ayanamsha=f["ayanamsha"],
-            chart_json=chart_json, scores_json=scores_json,
+            year=f["year"],
+            month=f["month"],
+            day=f["day"],
+            hour=f["hour"],
+            lat=f["lat"],
+            lon=f["lon"],
+            tz_offset=f["tz_offset"],
+            ayanamsha=f["ayanamsha"],
+            chart_json=chart_json,
+            scores_json=scores_json,
             name="India Independence",
         )
         assert chart_id >= 1
@@ -78,6 +95,7 @@ class TestUIRoundTrip:
     def test_history_list(self, db_path):
         """list_charts returns saved entries."""
         from src.db import list_charts
+
         rows = list_charts(limit=10)
         assert len(rows) >= 1
         assert rows[0]["year"] == 1947
@@ -88,7 +106,21 @@ class TestUIRoundTrip:
         from src.scoring import score_chart
 
         f = INDIA_1947
-        chart = compute_chart(**{k: f[k] for k in ["year","month","day","hour","lat","lon","tz_offset","ayanamsha"]})
+        chart = compute_chart(
+            **{
+                k: f[k]
+                for k in [
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "lat",
+                    "lon",
+                    "tz_offset",
+                    "ayanamsha",
+                ]
+            }
+        )
         scores = score_chart(chart)
 
         valid_ratings = {"Excellent", "Strong", "Moderate", "Weak", "Very Weak"}
@@ -106,7 +138,21 @@ class TestUIRoundTrip:
         from src.scoring import score_chart
 
         f = INDIA_1947
-        chart = compute_chart(**{k: f[k] for k in ["year","month","day","hour","lat","lon","tz_offset","ayanamsha"]})
+        chart = compute_chart(
+            **{
+                k: f[k]
+                for k in [
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "lat",
+                    "lon",
+                    "tz_offset",
+                    "ayanamsha",
+                ]
+            }
+        )
         scores = score_chart(chart)
 
         for h, hs in scores.houses.items():
@@ -120,7 +166,21 @@ class TestUIRoundTrip:
         from src.calculations.house_lord import compute_house_map
 
         f = INDIA_1947
-        chart = compute_chart(**{k: f[k] for k in ["year","month","day","hour","lat","lon","tz_offset","ayanamsha"]})
+        chart = compute_chart(
+            **{
+                k: f[k]
+                for k in [
+                    "year",
+                    "month",
+                    "day",
+                    "hour",
+                    "lat",
+                    "lon",
+                    "tz_offset",
+                    "ayanamsha",
+                ]
+            }
+        )
         hmap = compute_house_map(chart)
 
         assert len(hmap.house_sign) == 12
@@ -132,6 +192,7 @@ class TestUIRoundTrip:
     def test_demo_button_values(self, db_path):
         """Demo data (1947) produces Taurus lagna — matches sidebar preset."""
         from src.ephemeris import compute_chart
+
         chart = compute_chart(1947, 8, 15, 0.0, 28.6139, 77.2090, 5.5, "lahiri")
         assert chart.lagna_sign == "Taurus"
         assert abs(chart.lagna_degree_in_sign - 7.7286) < 0.05

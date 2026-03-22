@@ -20,36 +20,37 @@ Scoring weights (CALC_PanchadhaMaitri §4):
   R06/R07: Adhi Mitra=+1.0, Mitra=+0.5, Sama=0, Shatru=−0.5, Adhi Shatru=−1.0
   R13/R14: Adhi Shatru=−1.0, Shatru=−0.5, Sama=0, Mitra=+0.5, Adhi Mitra=+1.0
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
 _NAT_FRIEND_DICT = {
-    "Sun":   {"Moon","Mars","Jupiter"},
-    "Moon":  {"Sun","Mercury"},
-    "Mars":  {"Sun","Moon","Jupiter"},
-    "Mercury":{"Sun","Venus"},
-    "Jupiter":{"Sun","Moon","Mars"},
-    "Venus": {"Mercury","Saturn"},
-    "Saturn":{"Mercury","Venus"},
+    "Sun": {"Moon", "Mars", "Jupiter"},
+    "Moon": {"Sun", "Mercury"},
+    "Mars": {"Sun", "Moon", "Jupiter"},
+    "Mercury": {"Sun", "Venus"},
+    "Jupiter": {"Sun", "Moon", "Mars"},
+    "Venus": {"Mercury", "Saturn"},
+    "Saturn": {"Mercury", "Venus"},
 }
 _NAT_ENEMY_DICT = {
-    "Sun":   {"Venus","Saturn"},
-    "Moon":  set(),
-    "Mars":  {"Mercury"},
-    "Mercury":{"Moon"},
-    "Jupiter":{"Mercury","Venus"},
-    "Venus": {"Sun","Moon"},
-    "Saturn":{"Sun","Moon","Mars"},
+    "Sun": {"Venus", "Saturn"},
+    "Moon": set(),
+    "Mars": {"Mercury"},
+    "Mercury": {"Moon"},
+    "Jupiter": {"Mercury", "Venus"},
+    "Venus": {"Sun", "Moon"},
+    "Saturn": {"Sun", "Moon", "Mars"},
 }
 
 _TATKALIK_FRIEND_HOUSES = {2, 3, 4, 10, 11, 12}  # from P1's house
 
 _PANCHADHA_WEIGHTS = {
     "Adhi Mitra": +1.0,
-    "Mitra":      +0.5,
-    "Sama":        0.0,
-    "Shatru":     -0.5,
-    "Adhi Shatru":-1.0,
+    "Mitra": +0.5,
+    "Sama": 0.0,
+    "Shatru": -0.5,
+    "Adhi Shatru": -1.0,
 }
 
 
@@ -103,9 +104,10 @@ def panchadha_score_weight(p1: str, p2: str, chart) -> float:
 @dataclass
 class PanchadhaMatrix:
     """Full 7×7 Panchadha Maitri matrix for a chart."""
+
     planets: list[str]
-    relations: dict[tuple[str,str], str]
-    weights: dict[tuple[str,str], float]
+    relations: dict[tuple[str, str], str]
+    weights: dict[tuple[str, str], float]
 
     def relation(self, p1: str, p2: str) -> str:
         return self.relations.get((p1, p2), "Sama")
@@ -115,7 +117,7 @@ class PanchadhaMatrix:
 
 
 def compute_panchadha_matrix(chart) -> PanchadhaMatrix:
-    planets = ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn"]  # noqa: F841
+    planets = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]  # noqa: F841
     relations = {}
     weights = {}
     for p1 in planets:
@@ -123,6 +125,6 @@ def compute_panchadha_matrix(chart) -> PanchadhaMatrix:
             if p1 == p2:
                 continue
             rel = panchadha_relation(p1, p2, chart)
-            relations[(p1,p2)] = rel
-            weights[(p1,p2)] = _PANCHADHA_WEIGHTS[rel]
+            relations[(p1, p2)] = rel
+            weights[(p1, p2)] = _PANCHADHA_WEIGHTS[rel]
     return PanchadhaMatrix(planets=planets, relations=relations, weights=weights)

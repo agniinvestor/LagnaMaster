@@ -19,14 +19,15 @@ Retrograde policies (R22 rule):
   ignore   — no retrograde effect on scoring
   classical— full strength regardless of retrograde (traditional view)
 """
+
 from __future__ import annotations
 
 _AYANAMSHA_MAP = {
-    "lahiri":        1,   # SE_SIDM_LAHIRI
-    "raman":         3,   # SE_SIDM_RAMAN
-    "krishnamurti":  5,   # SE_SIDM_KRISHNAMURTI
-    "fagan_bradley": 0,   # SE_SIDM_FAGAN_BRADLEY
-    "true_citra":    27,  # SE_SIDM_TRUE_CITRA (also used by some)
+    "lahiri": 1,  # SE_SIDM_LAHIRI
+    "raman": 3,  # SE_SIDM_RAMAN
+    "krishnamurti": 5,  # SE_SIDM_KRISHNAMURTI
+    "fagan_bradley": 0,  # SE_SIDM_FAGAN_BRADLEY
+    "true_citra": 27,  # SE_SIDM_TRUE_CITRA (also used by some)
 }
 
 _RETROGRADE_POLICIES = {"apply", "ignore", "classical"}
@@ -35,10 +36,9 @@ _NODE_TYPES = {"mean", "true"}
 
 def resolve_ayanamsha(name: str) -> int:
     """Return pyswisseph ayanamsha constant for a name string."""
-    key = name.lower().replace("-","_").replace(" ","_")
+    key = name.lower().replace("-", "_").replace(" ", "_")
     if key not in _AYANAMSHA_MAP:
-        raise ValueError(f"Unknown ayanamsha '{name}'. "
-                         f"Valid: {sorted(_AYANAMSHA_MAP)}")
+        raise ValueError(f"Unknown ayanamsha '{name}'. Valid: {sorted(_AYANAMSHA_MAP)}")
     return _AYANAMSHA_MAP[key]
 
 
@@ -50,7 +50,7 @@ def r22_modifier(planet: str, is_retrograde: bool, policy: str = "apply") -> flo
     if policy == "apply" and is_retrograde:
         # Outer planets (Mars,Jup,Sat,Rahu,Ketu): slightly positive retrograde
         # Inner planets (Mer,Ven): slightly negative
-        _OUTER = {"Mars","Jupiter","Saturn","Rahu","Ketu"}
+        _OUTER = {"Mars", "Jupiter", "Saturn", "Rahu", "Ketu"}
         return +0.10 if planet in _OUTER else -0.10
     return 0.0
 
@@ -62,6 +62,7 @@ def use_true_node(node_type: str = "mean") -> bool:
 
 class CalcConfig:
     """Live configuration object mirroring REF_Config toggles."""
+
     def __init__(
         self,
         school: str = "parashari",
@@ -74,15 +75,15 @@ class CalcConfig:
         combust_orbs: str = "standard",
         node_type: str = "mean",
     ):
-        self.school            = school
-        self.ayanamsha         = ayanamsha
+        self.school = school
+        self.ayanamsha = ayanamsha
         self.retrograde_policy = retrograde_policy
         self.yogakaraka_weight = yogakaraka_weight
-        self.wc_aspect_weight  = wc_aspect_weight
+        self.wc_aspect_weight = wc_aspect_weight
         self.dukshthan_penalty = dukshthan_penalty
-        self.kartari_source    = kartari_source
-        self.combust_orbs      = combust_orbs
-        self.node_type         = node_type
+        self.kartari_source = kartari_source
+        self.combust_orbs = combust_orbs
+        self.node_type = node_type
 
     @property
     def ayanamsha_id(self) -> int:
@@ -97,7 +98,9 @@ class CalcConfig:
 
     @classmethod
     def from_dict(cls, d: dict) -> "CalcConfig":
-        return cls(**{k: v for k, v in d.items() if k in cls.__init__.__code__.co_varnames})
+        return cls(
+            **{k: v for k, v in d.items() if k in cls.__init__.__code__.co_varnames}
+        )
 
 
 # Default config singleton (Parashari, Lahiri, apply R22)

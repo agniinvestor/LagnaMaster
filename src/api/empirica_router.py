@@ -1,10 +1,11 @@
 """src/api/empirica_router.py — REST endpoints for empirical validation."""
+
 from __future__ import annotations
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from pydantic import BaseModel
-from datetime import date
 
 router = APIRouter(prefix="/empirica", tags=["empirica"])
+
 
 class EventIn(BaseModel):
     chart_id: str
@@ -25,23 +26,29 @@ class EventIn(BaseModel):
     r02_fired: int = 0
     r09_fired: int = 0
 
+
 @router.post("/events", status_code=201)
 def create_event(body: EventIn):
     from src.calculations.empirica import EmpiricalEvent, record_event, init_empirica_db
+
     init_empirica_db()
     evt = EmpiricalEvent(**body.model_dump())
     eid = record_event(evt)
     return {"event_id": eid}
 
+
 @router.get("/events/{chart_id}")
 def list_events(chart_id: str):
     from src.calculations.empirica import get_events, init_empirica_db
+
     init_empirica_db()
     return get_events(chart_id)
+
 
 @router.get("/accuracy")
 def get_accuracy():
     from src.calculations.empirica import compute_accuracy, init_empirica_db
+
     init_empirica_db()
     r = compute_accuracy()
     return {

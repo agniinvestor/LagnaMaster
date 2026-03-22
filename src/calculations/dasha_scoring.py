@@ -11,12 +11,12 @@ Sources:
   Hart de Fouw & Robert Svoboda · Light on Life Ch.11
   Gayatri Devi Vasudev · The Art of Prediction in Astrology Ch.4
 """
+
 from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import date
-from typing import Optional
 
-_KENDRA  = {1, 4, 7, 10}
+_KENDRA = {1, 4, 7, 10}
 _TRIKONA = {1, 5, 9}
 _DUSTHANA = {6, 8, 12}
 
@@ -24,10 +24,11 @@ _DUSTHANA = {6, 8, 12}
 @dataclass
 class DashaScoreModifier:
     """Modifier set for a single house score based on active dasha."""
+
     house: int
     base_score: float
-    dasha_multiplier: float         # 1.5 if house lord is active dasha, 0.8 if inimical
-    dasha_sensitized_score: float   # base_score × dasha_multiplier
+    dasha_multiplier: float  # 1.5 if house lord is active dasha, 0.8 if inimical
+    dasha_sensitized_score: float  # base_score × dasha_multiplier
     active_md_lord: str
     active_ad_lord: str
     md_is_house_lord: bool
@@ -36,9 +37,20 @@ class DashaScoreModifier:
 
 
 def _sign_lord(sign_index: int) -> str:
-    _SL = {0:"Mars",1:"Venus",2:"Mercury",3:"Moon",4:"Sun",
-           5:"Mercury",6:"Venus",7:"Mars",8:"Jupiter",
-           9:"Saturn",10:"Saturn",11:"Jupiter"}
+    _SL = {
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
+    }
     return _SL.get(sign_index % 12, "Jupiter")
 
 
@@ -49,9 +61,20 @@ def _house_lord(house: int, lagna_si: int) -> str:
 def _house_from_lord(planet: str, lagna_si: int) -> list[int]:
     """Houses ruled by a planet given Lagna."""
     result = []
-    _SL = {0:"Mars",1:"Venus",2:"Mercury",3:"Moon",4:"Sun",
-           5:"Mercury",6:"Venus",7:"Mars",8:"Jupiter",
-           9:"Saturn",10:"Saturn",11:"Jupiter"}
+    _SL = {
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
+    }
     for h in range(1, 13):
         si = (lagna_si + h - 1) % 12
         if _SL.get(si) == planet:
@@ -61,9 +84,7 @@ def _house_from_lord(planet: str, lagna_si: int) -> list[int]:
 
 def _houses_6_8_12_from_house(house: int) -> set[int]:
     """Signs that are 6th, 8th, 12th from a given house."""
-    return {(house + 5) % 12 or 12,
-            (house + 7) % 12 or 12,
-            (house + 11) % 12 or 12}
+    return {(house + 5) % 12 or 12, (house + 7) % 12 or 12, (house + 11) % 12 or 12}
 
 
 def compute_dasha_modifier(
@@ -121,6 +142,7 @@ def compute_dasha_modifier(
 @dataclass
 class DashaScoreReport:
     """Full dasha-sensitized score report for all 12 houses."""
+
     query_date: date
     active_md_lord: str
     active_ad_lord: str
@@ -168,19 +190,32 @@ def apply_dasha_scoring(
 
     if dasha_tree is not None:
         # Walk dasha tree to find current MD/AD
-        for md in (dasha_tree if hasattr(dasha_tree, '__iter__') else []):
-            if hasattr(md, 'start') and hasattr(md, 'end'):
+        for md in dasha_tree if hasattr(dasha_tree, "__iter__") else []:
+            if hasattr(md, "start") and hasattr(md, "end"):
                 if md.start <= query_date <= md.end:
                     md_lord = md.lord
-                    if hasattr(md, 'antardashas'):
+                    if hasattr(md, "antardashas"):
                         for ad in md.antardashas:
-                            if hasattr(ad, 'start') and ad.start <= query_date <= ad.end:
+                            if (
+                                hasattr(ad, "start")
+                                and ad.start <= query_date <= ad.end
+                            ):
                                 ad_lord = ad.lord
                                 break
                     break
     else:
         # Derive from Moon nakshatra (Vimshottari)
-        _DASHA_LORDS = ["Ketu","Venus","Sun","Moon","Mars","Rahu","Jupiter","Saturn","Mercury"]
+        _DASHA_LORDS = [
+            "Ketu",
+            "Venus",
+            "Sun",
+            "Moon",
+            "Mars",
+            "Rahu",
+            "Jupiter",
+            "Saturn",
+            "Mercury",
+        ]
         if "Moon" in chart.planets:
             moon_lon = chart.planets["Moon"].longitude
             nak_idx = int(moon_lon * 3 / 40) % 27

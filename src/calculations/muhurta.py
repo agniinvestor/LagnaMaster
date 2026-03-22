@@ -16,89 +16,148 @@ Key rules:
   - Hora of the relevant planet is important (PVRNR p485)
   - Moon's nakshatra should be auspicious for the task
 """
+
 from __future__ import annotations
 from dataclasses import dataclass, field
-from datetime import datetime, date
+from datetime import datetime
 
 # PVRNR Table 79 — task-specific guidelines
 _TASK_RULES = {
     "marriage": {
-        "good_tithis": {2,3,5,7,10,11,13},
-        "bad_tithis":  {4,6,8,9,12,14},
-        "good_varas":  {1,3,4,5},  # Mon,Wed,Thu,Fri
-        "bad_varas":   {0,2,6},    # Sun,Tue,Sat
-        "good_lagnas": {1,2,5,8,9,10,11},  # Ta,Ge,Vi,Sg,Aq,Pi (Le,Sc also)
-        "good_naks":   {0,3,4,6,7,10,11,12,13,14,15,20,21,22,23,24,25,26},
+        "good_tithis": {2, 3, 5, 7, 10, 11, 13},
+        "bad_tithis": {4, 6, 8, 9, 12, 14},
+        "good_varas": {1, 3, 4, 5},  # Mon,Wed,Thu,Fri
+        "bad_varas": {0, 2, 6},  # Sun,Tue,Sat
+        "good_lagnas": {1, 2, 5, 8, 9, 10, 11},  # Ta,Ge,Vi,Sg,Aq,Pi (Le,Sc also)
+        "good_naks": {
+            0,
+            3,
+            4,
+            6,
+            7,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+        },
         "rule": "8th house empty; 7th house occupied by benefics is fine",
         "key_house": 7,
     },
     "business_launch": {
-        "good_tithis": {2,3,5,7,10,11},
-        "bad_tithis":  {4,6,8,9,12,14},
-        "good_varas":  {1,3,4,5},
-        "bad_varas":   {0,2},
-        "good_lagnas": {2,5,9,10,11},
-        "good_naks":   {0,3,6,10,11,12,13,14,20,21,22,25,26},
+        "good_tithis": {2, 3, 5, 7, 10, 11},
+        "bad_tithis": {4, 6, 8, 9, 12, 14},
+        "good_varas": {1, 3, 4, 5},
+        "bad_varas": {0, 2},
+        "good_lagnas": {2, 5, 9, 10, 11},
+        "good_naks": {0, 3, 6, 10, 11, 12, 13, 14, 20, 21, 22, 25, 26},
         "rule": "8th house empty; 10th house strong; lagna lord strong",
         "key_house": 10,
     },
     "house_construction": {
-        "good_tithis": {2,3,5,7,11,13,15},
-        "bad_tithis":  {4,6,8,9,12,14},
-        "good_varas":  {1,3,4,5},
-        "bad_varas":   {2,6},
-        "good_lagnas": {1,2,5,9,10,11},
-        "good_naks":   {0,3,4,6,10,11,12,13,14,15,19,20,21,22,23,24,25,26},
+        "good_tithis": {2, 3, 5, 7, 11, 13, 15},
+        "bad_tithis": {4, 6, 8, 9, 12, 14},
+        "good_varas": {1, 3, 4, 5},
+        "bad_varas": {2, 6},
+        "good_lagnas": {1, 2, 5, 9, 10, 11},
+        "good_naks": {
+            0,
+            3,
+            4,
+            6,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+        },
         "rule": "8th house empty; 4th house strong",
         "key_house": 4,
     },
     "house_entry": {
-        "good_tithis": {2,3,5,7,10,11,13,15},
-        "bad_tithis":  {4,6,8,9,12,14},
-        "good_varas":  {1,3,4,5},
-        "bad_varas":   {2,6},
-        "good_lagnas": {1,2,4,5,8,9,10,11},
-        "good_naks":   {0,3,4,6,7,10,11,12,13,14,15,19,20,21,22,23,24,25,26},
+        "good_tithis": {2, 3, 5, 7, 10, 11, 13, 15},
+        "bad_tithis": {4, 6, 8, 9, 12, 14},
+        "good_varas": {1, 3, 4, 5},
+        "bad_varas": {2, 6},
+        "good_lagnas": {1, 2, 4, 5, 8, 9, 10, 11},
+        "good_naks": {
+            0,
+            3,
+            4,
+            6,
+            7,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+        },
         "rule": "8th house empty; 4th house strong",
         "key_house": 4,
     },
     "travel": {
-        "good_tithis": {2,3,5,7,10,11},
-        "bad_tithis":  {4,6,8,9,12,14},
-        "good_varas":  {1,3,4,5},
-        "bad_varas":   {6},
-        "good_lagnas": {2,5,9,11},
-        "good_naks":   {0,3,4,6,10,11,12,13,14,15,20,21,22,25,26},
+        "good_tithis": {2, 3, 5, 7, 10, 11},
+        "bad_tithis": {4, 6, 8, 9, 12, 14},
+        "good_varas": {1, 3, 4, 5},
+        "bad_varas": {6},
+        "good_lagnas": {2, 5, 9, 11},
+        "good_naks": {0, 3, 4, 6, 10, 11, 12, 13, 14, 15, 20, 21, 22, 25, 26},
         "rule": "3rd house strong; avoid Gandanta periods",
         "key_house": 3,
     },
     "surgery": {
-        "good_tithis": {1,6,7,11},
-        "bad_tithis":  {4,8,9,12,14},
-        "good_varas":  {0,2},  # Sun,Tue
-        "bad_varas":   {4,5},  # Thu,Fri
-        "good_lagnas": {0,6,8},
-        "good_naks":   {0,4,6,7,12,21,22},
+        "good_tithis": {1, 6, 7, 11},
+        "bad_tithis": {4, 8, 9, 12, 14},
+        "good_varas": {0, 2},  # Sun,Tue
+        "bad_varas": {4, 5},  # Thu,Fri
+        "good_lagnas": {0, 6, 8},
+        "good_naks": {0, 4, 6, 7, 12, 21, 22},
         "rule": "Avoid nakshatra of affected body part; 8th house concerns",
         "key_house": 8,
     },
     "education": {
-        "good_tithis": {2,3,5,7,10,11,12},
-        "bad_tithis":  {4,6,8,9,14},
-        "good_varas":  {1,3,4,5},
-        "bad_varas":   {6},
-        "good_lagnas": {2,5,9,11},
-        "good_naks":   {0,6,12,13,14,15,21,22,23,25,26},
+        "good_tithis": {2, 3, 5, 7, 10, 11, 12},
+        "bad_tithis": {4, 6, 8, 9, 14},
+        "good_varas": {1, 3, 4, 5},
+        "bad_varas": {6},
+        "good_lagnas": {2, 5, 9, 11},
+        "good_naks": {0, 6, 12, 13, 14, 15, 21, 22, 23, 25, 26},
         "rule": "8th house empty; 5th house strong; Mercury strong",
         "key_house": 5,
     },
     "general": {
-        "good_tithis": {2,3,5,7,10,11,13},
-        "bad_tithis":  {4,6,8,9,12,14},
-        "good_varas":  {1,3,4,5},
-        "bad_varas":   {6},
-        "good_lagnas": {1,2,4,5,9,10,11},
-        "good_naks":   {0,3,6,10,11,12,13,14,20,21,22,25,26},
+        "good_tithis": {2, 3, 5, 7, 10, 11, 13},
+        "bad_tithis": {4, 6, 8, 9, 12, 14},
+        "good_varas": {1, 3, 4, 5},
+        "bad_varas": {6},
+        "good_lagnas": {1, 2, 4, 5, 9, 10, 11},
+        "good_naks": {0, 3, 6, 10, 11, 12, 13, 14, 20, 21, 22, 25, 26},
         "rule": "8th house empty; lagna lord strong",
         "key_house": 1,
     },
@@ -120,16 +179,20 @@ class MuhurtaScore:
     lagna_ok: bool
     tarabala_ok: bool
     chandrabala_ok: bool
-    special_yoga: str   # "Amrita Siddhi" / "Sarvaartha Siddhi" / ""
-    total_score: int    # 0-6
-    quality: str        # "Excellent"/"Good"/"Acceptable"/"Avoid"
+    special_yoga: str  # "Amrita Siddhi" / "Sarvaartha Siddhi" / ""
+    total_score: int  # 0-6
+    quality: str  # "Excellent"/"Good"/"Acceptable"/"Avoid"
     rule_notes: str
     warnings: list[str] = field(default_factory=list)
 
 
-def score_muhurta(task: str, panchanga, birth_nakshatra: int = 0,
-                   birth_moon_sign: int = 3, muhurta_lagna_sign: int = 0
-                   ) -> MuhurtaScore:
+def score_muhurta(
+    task: str,
+    panchanga,
+    birth_nakshatra: int = 0,
+    birth_moon_sign: int = 3,
+    muhurta_lagna_sign: int = 0,
+) -> MuhurtaScore:
     """
     Score a muhurta for a specific task.
     panchanga: Panchanga object from compute_panchanga()
@@ -160,37 +223,54 @@ def score_muhurta(task: str, panchanga, birth_nakshatra: int = 0,
     tarabala_ok = tara_group in _TARABALA_GOOD
 
     # Chandrabala: Moon's current sign from birth Moon sign
-    from src.calculations.panchanga import _NAKSHATRA_NAMES
     current_moon_sign = int(panchanga.nakshatra / 2.25)  # approximate
     chandra_count = ((current_moon_sign - birth_moon_sign) % 12) + 1
     chandrabala_ok = chandra_count in _CHANDRABALA_GOOD
 
     # Special yogas
     special = ""
-    if panchanga.amrita_siddhi:   special = "Amrita Siddhi Yoga"
-    elif panchanga.sarvaartha_siddhi: special = "Sarvaartha Siddhi Yoga"
+    if panchanga.amrita_siddhi:
+        special = "Amrita Siddhi Yoga"
+    elif panchanga.sarvaartha_siddhi:
+        special = "Sarvaartha Siddhi Yoga"
 
     # Total score
     score = sum([tithi_ok, vara_ok, nak_ok, lagna_ok, tarabala_ok, chandrabala_ok])
-    if special: score = min(6, score + 1)
+    if special:
+        score = min(6, score + 1)
 
-    if score >= 5:   quality = "Excellent"
-    elif score >= 4: quality = "Good"
-    elif score >= 3: quality = "Acceptable"
-    else:            quality = "Avoid"
+    if score >= 5:
+        quality = "Excellent"
+    elif score >= 4:
+        quality = "Good"
+    elif score >= 3:
+        quality = "Acceptable"
+    else:
+        quality = "Avoid"
 
     return MuhurtaScore(
-        task=task, tithi_ok=tithi_ok, vara_ok=vara_ok,
-        nakshatra_ok=nak_ok, lagna_ok=lagna_ok,
-        tarabala_ok=tarabala_ok, chandrabala_ok=chandrabala_ok,
-        special_yoga=special, total_score=score, quality=quality,
-        rule_notes=rules["rule"], warnings=warnings,
+        task=task,
+        tithi_ok=tithi_ok,
+        vara_ok=vara_ok,
+        nakshatra_ok=nak_ok,
+        lagna_ok=lagna_ok,
+        tarabala_ok=tarabala_ok,
+        chandrabala_ok=chandrabala_ok,
+        special_yoga=special,
+        total_score=score,
+        quality=quality,
+        rule_notes=rules["rule"],
+        warnings=warnings,
     )
 
 
-def find_next_good_muhurta(task: str, start_dt: datetime, days_ahead: int = 30,
-                            birth_nakshatra: int = 0,
-                            birth_moon_sign: int = 3) -> list[dict]:
+def find_next_good_muhurta(
+    task: str,
+    start_dt: datetime,
+    days_ahead: int = 30,
+    birth_nakshatra: int = 0,
+    birth_moon_sign: int = 3,
+) -> list[dict]:
     """
     Scan forward to find good muhurta windows for a task.
     Returns list of {date, quality, score, panchanga_summary}.
@@ -198,11 +278,14 @@ def find_next_good_muhurta(task: str, start_dt: datetime, days_ahead: int = 30,
     """
     results = []
     from datetime import timedelta
+
     for d in range(days_ahead):
         dt = start_dt + timedelta(days=d)
         # placeholder — in full implementation, fetch sun/moon for this date
-        results.append({
-            "date": dt.date().isoformat(),
-            "note": "Use score_muhurta() with live ephemeris data for exact scoring",
-        })
+        results.append(
+            {
+                "date": dt.date().isoformat(),
+                "note": "Use score_muhurta() with live ephemeris data for exact scoring",
+            }
+        )
     return results[:5]

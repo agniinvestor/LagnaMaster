@@ -6,6 +6,7 @@ Each family member is a separate consent principal.
 Non-consenting members excluded from all cross-chart analysis.
 Kundali Milan (compatibility) requires active consent from both individuals.
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime
@@ -17,7 +18,7 @@ from pathlib import Path
 class FamilyMember:
     member_id: str
     owner_user_id: str
-    relationship: str        # "spouse", "parent", "child", "sibling", "other"
+    relationship: str  # "spouse", "parent", "child", "sibling", "other"
     has_consented: bool
     consent_granted_at: datetime | None
     consent_withdrawn_at: datetime | None
@@ -40,21 +41,29 @@ def ensure_family_tables(db_path: str | Path = "lagna.db") -> None:
         """)
 
 
-def add_family_member(owner_user_id: str, member_id: str,
-                       relationship: str = "other",
-                       has_consented: bool = False,
-                       db_path: str | Path = "lagna.db") -> FamilyMember:
+def add_family_member(
+    owner_user_id: str,
+    member_id: str,
+    relationship: str = "other",
+    has_consented: bool = False,
+    db_path: str | Path = "lagna.db",
+) -> FamilyMember:
     ensure_family_tables(db_path)
     now = datetime.utcnow().isoformat() if has_consented else None
     with sqlite3.connect(str(db_path)) as conn:
-        conn.execute("""
+        conn.execute(
+            """
             INSERT OR REPLACE INTO family_members
             (member_id, owner_user_id, relationship, consent_granted_at)
             VALUES (?, ?, ?, ?)
-        """, (member_id, owner_user_id, relationship, now))
+        """,
+            (member_id, owner_user_id, relationship, now),
+        )
     return FamilyMember(
-        member_id=member_id, owner_user_id=owner_user_id,
-        relationship=relationship, has_consented=has_consented,
+        member_id=member_id,
+        owner_user_id=owner_user_id,
+        relationship=relationship,
+        has_consented=has_consented,
         consent_granted_at=datetime.utcnow() if has_consented else None,
         consent_withdrawn_at=None,
     )
@@ -64,10 +73,13 @@ def grant_family_consent(member_id: str, db_path: str | Path = "lagna.db") -> bo
     ensure_family_tables(db_path)
     now = datetime.utcnow().isoformat()
     with sqlite3.connect(str(db_path)) as conn:
-        conn.execute("""
+        conn.execute(
+            """
             UPDATE family_members SET consent_granted_at=?, consent_withdrawn_at=NULL
             WHERE member_id=?
-        """, (now, member_id))
+        """,
+            (now, member_id),
+        )
     return True
 
 
@@ -75,9 +87,12 @@ def revoke_family_consent(member_id: str, db_path: str | Path = "lagna.db") -> b
     ensure_family_tables(db_path)
     now = datetime.utcnow().isoformat()
     with sqlite3.connect(str(db_path)) as conn:
-        conn.execute("""
+        conn.execute(
+            """
             UPDATE family_members SET consent_withdrawn_at=? WHERE member_id=?
-        """, (now, member_id))
+        """,
+            (now, member_id),
+        )
     return True
 
 
@@ -92,21 +107,26 @@ def has_family_consent(member_id: str, db_path: str | Path = "lagna.db") -> bool
     ensure_family_tables(db_path)
     with sqlite3.connect(str(db_path)) as conn:
         conn.row_factory = sqlite3.Row
-        row = conn.execute("""
+        row = conn.execute(
+            """
             SELECT * FROM family_members
             WHERE member_id=? AND consent_granted_at IS NOT NULL
             AND consent_withdrawn_at IS NULL
-        """, (member_id,)).fetchone()
+        """,
+            (member_id,),
+        ).fetchone()
     return row is not None
 
 
-def can_run_compatibility(user_id: str, member_id: str,
-                           db_path: str | Path = "lagna.db") -> tuple[bool, str]:
+def can_run_compatibility(
+    user_id: str, member_id: str, db_path: str | Path = "lagna.db"
+) -> tuple[bool, str]:
     """
     Kundali Milan requires active consent from both individuals.
     Returns (allowed, reason).
     """
     from src.privacy.consent_engine import has_active_consent, ensure_consent_tables
+
     ensure_consent_tables(db_path)
     user_ok = has_active_consent(user_id, "core", db_path)
     member_ok = has_family_consent(member_id, db_path)
@@ -117,18 +137,27 @@ def can_run_compatibility(user_id: str, member_id: str,
     return True, "Both parties have consented."
 
 
-def get_consenting_members(owner_user_id: str,
-                            db_path: str | Path = "lagna.db") -> list[FamilyMember]:
+def get_consenting_members(
+    owner_user_id: str, db_path: str | Path = "lagna.db"
+) -> list[FamilyMember]:
     ensure_family_tables(db_path)
     with sqlite3.connect(str(db_path)) as conn:
         conn.row_factory = sqlite3.Row
-        rows = conn.execute("""
+        rows = conn.execute(
+            """
             SELECT * FROM family_members WHERE owner_user_id=?
             AND consent_granted_at IS NOT NULL AND consent_withdrawn_at IS NULL
-        """, (owner_user_id,)).fetchall()
-    return [FamilyMember(
-        member_id=r["member_id"], owner_user_id=r["owner_user_id"],
-        relationship=r["relationship"], has_consented=True,
-        consent_granted_at=r["consent_granted_at"],
-        consent_withdrawn_at=None,
-    ) for r in rows]
+        """,
+            (owner_user_id,),
+        ).fetchall()
+    return [
+        FamilyMember(
+            member_id=r["member_id"],
+            owner_user_id=r["owner_user_id"],
+            relationship=r["relationship"],
+            has_consented=True,
+            consent_granted_at=r["consent_granted_at"],
+            consent_withdrawn_at=None,
+        )
+        for r in rows
+    ]

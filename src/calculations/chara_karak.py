@@ -10,13 +10,13 @@ from dataclasses import dataclass
 from src.ephemeris import BirthChart
 
 _KARAK_NAMES = [
-    "Atmakaraka",     # AK  — soul, life's deepest karmic lesson
-    "Amatyakaraka",   # AmK — career/mind, minister to the soul
+    "Atmakaraka",  # AK  — soul, life's deepest karmic lesson
+    "Amatyakaraka",  # AmK — career/mind, minister to the soul
     "Bhratrikaraka",  # BK  — siblings, courage
-    "Matrikaraka",    # MK  — mother, home, happiness
-    "Putrakaraka",    # PK  — children, creativity, past-life merit
-    "Gnatikaraka",    # GK  — obstacles, rivals, disease
-    "Darakaraka",     # DK  — spouse, business partners
+    "Matrikaraka",  # MK  — mother, home, happiness
+    "Putrakaraka",  # PK  — children, creativity, past-life merit
+    "Gnatikaraka",  # GK  — obstacles, rivals, disease
+    "Darakaraka",  # DK  — spouse, business partners
 ]
 
 _KARAK_ABBR = ["AK", "AmK", "BK", "MK", "PK", "GK", "DK"]
@@ -34,10 +34,10 @@ _KARAK_SIGNIFICATION = [
 
 @dataclass
 class CharaKarak:
-    rank: int           # 1=AK (highest degree) … 7=DK (lowest)
-    karak_name: str     # e.g. "Atmakaraka"
-    abbreviation: str   # e.g. "AK"
-    planet: str         # e.g. "Sun"
+    rank: int  # 1=AK (highest degree) … 7=DK (lowest)
+    karak_name: str  # e.g. "Atmakaraka"
+    abbreviation: str  # e.g. "AK"
+    planet: str  # e.g. "Sun"
     degree_in_sign: float
     signification: str
 
@@ -50,19 +50,25 @@ def compute_chara_karakas(chart: BirthChart) -> list[CharaKarak]:
     """
     classical = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
     ranked = sorted(
-        [(name, chart.planets[name].degree_in_sign) for name in classical if name in chart.planets],
+        [
+            (name, chart.planets[name].degree_in_sign)
+            for name in classical
+            if name in chart.planets
+        ],
         key=lambda x: x[1],
-        reverse=True,   # highest degree first = AK
+        reverse=True,  # highest degree first = AK
     )
 
     result = []
     for rank, (planet, degree) in enumerate(ranked, start=1):
-        result.append(CharaKarak(
-            rank=rank,
-            karak_name=_KARAK_NAMES[rank - 1],
-            abbreviation=_KARAK_ABBR[rank - 1],
-            planet=planet,
-            degree_in_sign=degree,
-            signification=_KARAK_SIGNIFICATION[rank - 1],
-        ))
+        result.append(
+            CharaKarak(
+                rank=rank,
+                karak_name=_KARAK_NAMES[rank - 1],
+                abbreviation=_KARAK_ABBR[rank - 1],
+                planet=planet,
+                degree_in_sign=degree,
+                signification=_KARAK_SIGNIFICATION[rank - 1],
+            )
+        )
     return result

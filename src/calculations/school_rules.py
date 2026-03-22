@@ -27,40 +27,41 @@ Source: PVRNR · BPHS Ch.32 (naisargika karakatva) vs Jaimini Sutras Adhyaya 1
         Pada 4 (Sthira Karakas). The distinction is systematically documented in
         Sanjay Rath · Crux of Vedic Astrology Ch.3.
 """
+
 from __future__ import annotations
 
 # Canonical school tags
 PARASHARI = "parashari"
-JAIMINI   = "jaimini"
-TAJIKA    = "tajika"
-KP        = "kp"
-ANY       = "any"  # fires regardless of school
+JAIMINI = "jaimini"
+TAJIKA = "tajika"
+KP = "kp"
+ANY = "any"  # fires regardless of school
 
 # Rule → school mapping
 # R01-R22 are LagnaMaster's house scoring rules
 SCHOOL_RULE_MAP: dict[str, str] = {
-    "R01": PARASHARI,   # Gentle sign (trine/angle) in house
-    "R02": PARASHARI,   # Functional benefic in house
-    "R03": PARASHARI,   # Functional benefic aspects house
-    "R04": PARASHARI,   # Bhavesh in Kendra/Trikona
-    "R05": PARASHARI,   # Bhavesh with Kendra/Trikona lord
-    "R06": PARASHARI,   # Bhavesh with functional benefic
-    "R07": PARASHARI,   # Functional benefic aspects Bhavesh sign
-    "R08": PARASHARI,   # Bhavesh in Shubh Kartari
-    "R09": PARASHARI,   # Functional malefic in house
-    "R10": PARASHARI,   # Functional malefic aspects house
-    "R11": PARASHARI,   # Dusthana lord in house
-    "R12": PARASHARI,   # House in Paap Kartari
-    "R13": PARASHARI,   # Bhavesh with functional malefic
-    "R14": PARASHARI,   # Functional malefic aspects Bhavesh
-    "R15": PARASHARI,   # Bhavesh in Dusthana
-    "R16": PARASHARI,   # Bhavesh with Dusthana lord
-    "R17": JAIMINI,     # Sthir Karak in Kendra/Trikona (Jaimini fixed significator)
-    "R18": JAIMINI,     # Sthir Karak in Dusthana (Jaimini fixed significator)
-    "R19": PARASHARI,   # Bhavesh combust
-    "R20": PARASHARI,   # Bhavesh in Dig Bala house
-    "R21": PARASHARI,   # Bhavesh Pada in Pushkara Navamsha
-    "R22": PARASHARI,   # Bhavesh retrograde
+    "R01": PARASHARI,  # Gentle sign (trine/angle) in house
+    "R02": PARASHARI,  # Functional benefic in house
+    "R03": PARASHARI,  # Functional benefic aspects house
+    "R04": PARASHARI,  # Bhavesh in Kendra/Trikona
+    "R05": PARASHARI,  # Bhavesh with Kendra/Trikona lord
+    "R06": PARASHARI,  # Bhavesh with functional benefic
+    "R07": PARASHARI,  # Functional benefic aspects Bhavesh sign
+    "R08": PARASHARI,  # Bhavesh in Shubh Kartari
+    "R09": PARASHARI,  # Functional malefic in house
+    "R10": PARASHARI,  # Functional malefic aspects house
+    "R11": PARASHARI,  # Dusthana lord in house
+    "R12": PARASHARI,  # House in Paap Kartari
+    "R13": PARASHARI,  # Bhavesh with functional malefic
+    "R14": PARASHARI,  # Functional malefic aspects Bhavesh
+    "R15": PARASHARI,  # Bhavesh in Dusthana
+    "R16": PARASHARI,  # Bhavesh with Dusthana lord
+    "R17": JAIMINI,  # Sthir Karak in Kendra/Trikona (Jaimini fixed significator)
+    "R18": JAIMINI,  # Sthir Karak in Dusthana (Jaimini fixed significator)
+    "R19": PARASHARI,  # Bhavesh combust
+    "R20": PARASHARI,  # Bhavesh in Dig Bala house
+    "R21": PARASHARI,  # Bhavesh Pada in Pushkara Navamsha
+    "R22": PARASHARI,  # Bhavesh retrograde
 }
 
 # School compatibility: which schools allow which rule traditions
@@ -68,16 +69,16 @@ SCHOOL_RULE_MAP: dict[str, str] = {
 # strict=False: parashari mode allows "any"; jaimini mode allows parashari rules too
 SCHOOL_ALLOWS: dict[str, set[str]] = {
     PARASHARI: {PARASHARI, ANY},
-    JAIMINI:   {PARASHARI, JAIMINI, ANY},  # Jaimini analysis includes Parashari base
-    KP:        {PARASHARI, ANY},           # KP is Parashari-derived
-    TAJIKA:    {PARASHARI, ANY},           # Tajika uses Parashari planetary base
+    JAIMINI: {PARASHARI, JAIMINI, ANY},  # Jaimini analysis includes Parashari base
+    KP: {PARASHARI, ANY},  # KP is Parashari-derived
+    TAJIKA: {PARASHARI, ANY},  # Tajika uses Parashari planetary base
 }
 
 SCHOOL_ALLOWS_STRICT: dict[str, set[str]] = {
     PARASHARI: {PARASHARI, ANY},
-    JAIMINI:   {JAIMINI, ANY},
-    KP:        {KP, ANY},
-    TAJIKA:    {TAJIKA, ANY},
+    JAIMINI: {JAIMINI, ANY},
+    KP: {KP, ANY},
+    TAJIKA: {TAJIKA, ANY},
 }
 
 

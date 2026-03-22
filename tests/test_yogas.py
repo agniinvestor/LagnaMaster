@@ -6,7 +6,6 @@ Tests for yoga detection engine.
 """
 
 import pytest
-from datetime import date
 from tests.fixtures import INDIA_1947
 from src.ephemeris import compute_chart
 from src.calculations.yogas import detect_yogas, Yoga
@@ -16,9 +15,14 @@ from src.calculations.yogas import detect_yogas, Yoga
 def india_chart():
     f = INDIA_1947
     return compute_chart(
-        year=f["year"], month=f["month"], day=f["day"],
-        hour=f["hour"], lat=f["lat"], lon=f["lon"],
-        tz_offset=f["tz_offset"], ayanamsha=f["ayanamsha"],
+        year=f["year"],
+        month=f["month"],
+        day=f["day"],
+        hour=f["hour"],
+        lat=f["lat"],
+        lon=f["lon"],
+        tz_offset=f["tz_offset"],
+        ayanamsha=f["ayanamsha"],
     )
 
 
@@ -37,8 +41,13 @@ class TestYogaStructure:
         for y in india_yogas:
             assert y.name, "Yoga missing name"
             assert y.category in {
-                "Pancha Mahapurusha", "Raj", "Dhana",
-                "Lunar", "Solar", "Special", "Negative",
+                "Pancha Mahapurusha",
+                "Raj",
+                "Dhana",
+                "Lunar",
+                "Solar",
+                "Special",
+                "Negative",
             }, f"Unknown category: {y.category}"
             assert y.nature in {"benefic", "malefic", "mixed"}
             assert isinstance(y.planets, list) and len(y.planets) >= 1
@@ -101,7 +110,9 @@ class TestIndia1947Yogas:
         chart_planets = set(india_chart.planets.keys())
         for y in india_yogas:
             for p in y.planets:
-                assert p in chart_planets, f"Yoga {y.name!r} references unknown planet {p!r}"
+                assert p in chart_planets, (
+                    f"Yoga {y.name!r} references unknown planet {p!r}"
+                )
 
 
 class TestYogaLogic:
@@ -115,12 +126,14 @@ class TestYogaLogic:
         pm = [y for y in yogas if y.category == "Pancha Mahapurusha"]
         # If any PM yoga exists, check its planet is truly in kendra
         from src.calculations.house_lord import compute_house_map, is_kendra
+
         hmap = compute_house_map(india_chart)
         for y in pm:
             planet = y.planets[0]
             ph = hmap.planet_house[planet]
-            assert is_kendra(ph), \
+            assert is_kendra(ph), (
                 f"PM yoga {y.name}: {planet} in H{ph} which is not kendra"
+            )
 
     def test_kemadruma_yoga_logic(self, india_chart):
         """
@@ -131,8 +144,9 @@ class TestYogaLogic:
         """
         yogas = detect_yogas(india_chart)
         yoga_names = [y.name for y in yogas]
-        assert "Kemadruma Yoga" not in yoga_names, \
+        assert "Kemadruma Yoga" not in yoga_names, (
             "Kemadruma should not form — Mars is adjacent to Moon in 1947 chart"
+        )
 
     def test_guru_chandala_not_in_1947(self, india_chart):
         """Jupiter (Libra) and Rahu (Taurus) are in different signs — no Guru-Chandala."""

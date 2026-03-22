@@ -23,23 +23,26 @@ Public API
   compute_al_perception(chart, house) -> PerceptionAnalysis
   compute_full_perception_model(chart) -> dict[int, PerceptionAnalysis]
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
-_NAT_BENEFIC = {"Jupiter","Venus","Mercury","Moon"}
-_NAT_MALEFIC = {"Sun","Mars","Saturn","Rahu","Ketu"}
+_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
+_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 
 @dataclass
 class PerceptionAnalysis:
     house: int
-    actual_score: float          # from scoring engine (reality)
-    al_sign_index: int           # arudha pada sign
-    al_score: float              # score from arudha's perspective
-    conflict_type: str           # "Aligned"/"Hidden Success"/"Apparent Success"/"Recognized Struggle"
-    malefics_3_6_from_al: list[str]    # → bold, successful
-    benefics_3_6_from_al: list[str]    # → gentle/saintly
-    material_strength: float    # composite: positive = materially prosperous
+    actual_score: float  # from scoring engine (reality)
+    al_sign_index: int  # arudha pada sign
+    al_score: float  # score from arudha's perspective
+    conflict_type: (
+        str  # "Aligned"/"Hidden Success"/"Apparent Success"/"Recognized Struggle"
+    )
+    malefics_3_6_from_al: list[str]  # → bold, successful
+    benefics_3_6_from_al: list[str]  # → gentle/saintly
+    material_strength: float  # composite: positive = materially prosperous
     commentary: str
 
 
@@ -47,6 +50,7 @@ def _house_score_from_sign(si: int, chart, school: str = "parashari") -> float:
     """Get the D1 score for the house containing a given sign index."""
     try:
         from src.calculations.multi_axis_scoring import score_axis
+
         lagna_si = chart.lagna_sign_index
         ax = score_axis(chart, lagna_si, "D1", school)
         # Find which house has this sign
@@ -59,6 +63,7 @@ def _house_score_from_sign(si: int, chart, school: str = "parashari") -> float:
 def compute_al_perception(chart, house: int) -> PerceptionAnalysis:
     """Perception analysis for a given house."""
     from src.calculations.multi_lagna import compute_all_arudha_padas
+
     try:
         arudha_all = compute_all_arudha_padas(chart)
         al_pada = arudha_all.padas.get(house)
@@ -69,6 +74,7 @@ def compute_al_perception(chart, house: int) -> PerceptionAnalysis:
     # Actual score (reality)
     try:
         from src.calculations.multi_axis_scoring import score_axis
+
         lagna_si = chart.lagna_sign_index
         ax = score_axis(chart, lagna_si, "D1", "parashari")
         actual_score = ax.scores.get(house, 0.0)
@@ -81,14 +87,20 @@ def compute_al_perception(chart, house: int) -> PerceptionAnalysis:
     # Planets in 3rd and 6th from AL
     h3_from_al = (al_si + 2) % 12
     h6_from_al = (al_si + 5) % 12
-    mals_36 = [p for p, pos in chart.planets.items()
-               if pos.sign_index in {h3_from_al, h6_from_al} and p in _NAT_MALEFIC]
-    bens_36 = [p for p, pos in chart.planets.items()
-               if pos.sign_index in {h3_from_al, h6_from_al} and p in _NAT_BENEFIC]
+    mals_36 = [
+        p
+        for p, pos in chart.planets.items()
+        if pos.sign_index in {h3_from_al, h6_from_al} and p in _NAT_MALEFIC
+    ]
+    bens_36 = [
+        p
+        for p, pos in chart.planets.items()
+        if pos.sign_index in {h3_from_al, h6_from_al} and p in _NAT_BENEFIC
+    ]
 
     # Conflict type
     act_pos = actual_score > 0
-    al_pos  = al_score > 0
+    al_pos = al_score > 0
     if act_pos and al_pos:
         conflict = "Aligned"
         comment = "Reality and perception aligned — success is genuine and recognized"
@@ -103,12 +115,16 @@ def compute_al_perception(chart, house: int) -> PerceptionAnalysis:
         comment = "Both actual and perception weak — struggles are visible"
 
     # Material strength from AL indicators
-    material = (len(mals_36) * 0.5 - len(bens_36) * 0.25 + max(-2, min(2, al_score)) * 0.5)
+    material = (
+        len(mals_36) * 0.5 - len(bens_36) * 0.25 + max(-2, min(2, al_score)) * 0.5
+    )
     material = round(material, 3)
 
     return PerceptionAnalysis(
-        house=house, actual_score=round(actual_score, 3),
-        al_sign_index=al_si, al_score=round(al_score, 3),
+        house=house,
+        actual_score=round(actual_score, 3),
+        al_sign_index=al_si,
+        al_score=round(al_score, 3),
         conflict_type=conflict,
         malefics_3_6_from_al=mals_36,
         benefics_3_6_from_al=bens_36,

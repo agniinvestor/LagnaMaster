@@ -22,34 +22,37 @@ Public API
   house_type_modifier(house, chart, age_years) -> HouseModulation
   apply_house_modulation(scores, chart, age_years) -> dict[int, float]
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
-_UPACHAYA  = {3, 6, 10, 11}
-_KENDRA    = {1, 4, 7, 10}
-_TRIKONA   = {1, 5, 9}
-_DUSTHANA  = {6, 8, 12}
-_MARAKA    = {2, 7}
-_NAT_MALEF = {"Sun","Mars","Saturn","Rahu","Ketu"}
-_NAT_BENEF = {"Jupiter","Venus","Mercury","Moon"}
+_UPACHAYA = {3, 6, 10, 11}
+_KENDRA = {1, 4, 7, 10}
+_TRIKONA = {1, 5, 9}
+_DUSTHANA = {6, 8, 12}
+_MARAKA = {2, 7}
+_NAT_MALEF = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+_NAT_BENEF = {"Jupiter", "Venus", "Mercury", "Moon"}
 
 
 @dataclass
 class HouseModulation:
     house: int
-    house_type: str           # "Upachaya"/"Kendra"/"Trikona"/"Dusthana"/"Maraka"/"Neutral"
+    house_type: str  # "Upachaya"/"Kendra"/"Trikona"/"Dusthana"/"Maraka"/"Neutral"
     malefic_beneficial: bool  # malefics are beneficial in this house type
-    age_modifier: float       # 0.5–1.0 for upachayas; 1.0 for others
-    time_improves: bool       # True for upachayas
+    age_modifier: float  # 0.5–1.0 for upachayas; 1.0 for others
+    time_improves: bool  # True for upachayas
     modulated_score: float
     raw_score: float
     commentary: str
 
 
-def house_type_modifier(house: int, chart, age_years: float = 35.0,
-                        raw_score: float = 0.0) -> HouseModulation:
+def house_type_modifier(
+    house: int, chart, age_years: float = 35.0, raw_score: float = 0.0
+) -> HouseModulation:
     """Apply house-type modulation to a score."""
     from src.calculations.house_lord import compute_house_map
+
     hmap = compute_house_map(chart)
     ph = hmap.planet_house
 
@@ -105,7 +108,8 @@ def house_type_modifier(house: int, chart, age_years: float = 35.0,
     commentary = "; ".join(parts)
 
     return HouseModulation(
-        house=house, house_type=htype,
+        house=house,
+        house_type=htype,
         malefic_beneficial=malefic_beneficial,
         age_modifier=round(age_mod, 3),
         time_improves=time_improves,
@@ -115,8 +119,11 @@ def house_type_modifier(house: int, chart, age_years: float = 35.0,
     )
 
 
-def apply_house_modulation(scores: dict[int, float], chart,
-                            age_years: float = 35.0) -> dict[int, float]:
+def apply_house_modulation(
+    scores: dict[int, float], chart, age_years: float = 35.0
+) -> dict[int, float]:
     """Apply house-type modulation to all 12 house scores."""
-    return {h: house_type_modifier(h, chart, age_years, scores.get(h, 0.0)).modulated_score
-            for h in range(1, 13)}
+    return {
+        h: house_type_modifier(h, chart, age_years, scores.get(h, 0.0)).modulated_score
+        for h in range(1, 13)
+    }

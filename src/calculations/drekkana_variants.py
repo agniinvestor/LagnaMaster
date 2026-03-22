@@ -13,11 +13,22 @@ Sources:
   Sanjay Rath · Varga Chakra Ch.3 (all three systems)
   PVRNR · BPHS Ch.6 (Parasara method — standard)
 """
+
 from __future__ import annotations
 
 _SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
 ]
 
 
@@ -66,14 +77,14 @@ def jagannatha_drekkana(longitude: float) -> int:
     part = int(deg_in_sign / 10)  # 0, 1, or 2
 
     _MOVABLE = {0, 3, 6, 9}
-    _FIXED   = {1, 4, 7, 10}
+    _FIXED = {1, 4, 7, 10}
 
     if sign in _MOVABLE:
-        base = 0   # Aries
+        base = 0  # Aries
     elif sign in _FIXED:
-        base = 4   # Leo
+        base = 4  # Leo
     else:
-        base = 8   # Sagittarius
+        base = 8  # Sagittarius
 
     return (base + part) % 12
 
@@ -93,14 +104,14 @@ def somanatha_drekkana(longitude: float) -> int:
     deg_in_sign = lon % 30
     part = int(deg_in_sign / 10)  # 0, 1, or 2
 
-    is_odd = (sign % 2 == 0)  # 0-indexed: Aries(0)=odd per classical convention
+    is_odd = sign % 2 == 0  # 0-indexed: Aries(0)=odd per classical convention
 
     if part == 0:
         return sign
     elif is_odd:
-        return (sign + part) % 12   # forward
+        return (sign + part) % 12  # forward
     else:
-        return (sign - part) % 12   # backward
+        return (sign - part) % 12  # backward
 
 
 def drekkana_sign(longitude: float, method: str = "parasara") -> int:
@@ -116,7 +127,7 @@ def drekkana_sign(longitude: float, method: str = "parasara") -> int:
     Source: Sanjay Rath · Varga Chakra Ch.3
     """
     methods = {
-        "parasara":  parasara_drekkana,
+        "parasara": parasara_drekkana,
         "jagannatha": jagannatha_drekkana,
         "somanatha": somanatha_drekkana,
     }
@@ -130,9 +141,9 @@ def all_drekkana_signs(longitude: float) -> dict[str, int]:
     Returns dict with method name → sign index.
     """
     return {
-        "parasara":   parasara_drekkana(longitude),
+        "parasara": parasara_drekkana(longitude),
         "jagannatha": jagannatha_drekkana(longitude),
-        "somanatha":  somanatha_drekkana(longitude),
+        "somanatha": somanatha_drekkana(longitude),
     }
 
 

@@ -15,11 +15,12 @@ Source: Jaimini Sutras Adhyaya 1 Pada 1 v.15-20
         P.S. Sastri · Textbook of Jaimini Astrology Vol.1, Ch.3
         Sanjay Rath · Crux of Vedic Astrology Ch.6
 """
+
 from __future__ import annotations
 
-_MOVABLE = {0, 3, 6, 9}   # Aries, Cancer, Libra, Capricorn
-_FIXED   = {1, 4, 7, 10}  # Taurus, Leo, Scorpio, Aquarius
-_DUAL    = {2, 5, 8, 11}  # Gemini, Virgo, Sagittarius, Pisces
+_MOVABLE = {0, 3, 6, 9}  # Aries, Cancer, Libra, Capricorn
+_FIXED = {1, 4, 7, 10}  # Taurus, Leo, Scorpio, Aquarius
+_DUAL = {2, 5, 8, 11}  # Gemini, Virgo, Sagittarius, Pisces
 
 _ALL = set(range(12))
 
@@ -33,7 +34,7 @@ def rashi_drishti(sign_index: int) -> frozenset[int]:
     """
     si = sign_index % 12
     if si in _MOVABLE:
-        excluded = {(si + 10) % 12}           # exclude 11th from itself
+        excluded = {(si + 10) % 12}  # exclude 11th from itself
     elif si in _FIXED:
         excluded = {(si + 2) % 12, (si + 4) % 12}  # exclude 3rd and 5th
     else:  # DUAL
@@ -73,17 +74,20 @@ def planets_with_rashi_drishti_to(target_sign: int, chart) -> list[str]:
 def sign_modality(sign_index: int) -> str:
     """Returns 'movable', 'fixed', or 'dual'."""
     si = sign_index % 12
-    if si in _MOVABLE: return "movable"
-    if si in _FIXED:   return "fixed"
+    if si in _MOVABLE:
+        return "movable"
+    if si in _FIXED:
+        return "fixed"
     return "dual"
 
 
 # ─── Argala (Planetary Intervention) via Rashi Drishti ───────────────────────
 # Source: Jaimini Sutras Adhyaya 1 Pada 4
 
-_ARGALA_HOUSES  = {2, 4, 11}    # H2/H4/H11 from reference = benefic Argala
-_VIRODHA_HOUSES = {3, 10, 12}   # H3/H10/H12 = obstructive Argala (Virodha)
+_ARGALA_HOUSES = {2, 4, 11}  # H2/H4/H11 from reference = benefic Argala
+_VIRODHA_HOUSES = {3, 10, 12}  # H3/H10/H12 = obstructive Argala (Virodha)
 # Note: H5 also creates special Argala per some authorities (Sanjay Rath)
+
 
 def compute_argala(reference_sign: int, chart, av_chart=None) -> dict:
     """
@@ -107,28 +111,32 @@ def compute_argala(reference_sign: int, chart, av_chart=None) -> dict:
         sign = (ref + h - 1) % 12
         planets_here = [p for p, pd in chart.planets.items() if pd.sign_index == sign]
         if planets_here:
-            argala_planets.append({'house_from_ref': h, 'sign': sign, 'planets': planets_here})
+            argala_planets.append(
+                {"house_from_ref": h, "sign": sign, "planets": planets_here}
+            )
 
     for h in _VIRODHA_HOUSES:
         sign = (ref + h - 1) % 12
         planets_here = [p for p, pd in chart.planets.items() if pd.sign_index == sign]
         if planets_here:
-            virodha_planets.append({'house_from_ref': h, 'sign': sign, 'planets': planets_here})
+            virodha_planets.append(
+                {"house_from_ref": h, "sign": sign, "planets": planets_here}
+            )
 
     # Simple net: if both Argala (H2/H4/H11) and Virodha (H3/H10/H12) present,
     # use AV bindus to decide if Virodha is confirmed
     if argala_planets and virodha_planets:
-        net = 'contested'
+        net = "contested"
     elif argala_planets:
-        net = 'benefic'
+        net = "benefic"
     elif virodha_planets:
-        net = 'obstructed'
+        net = "obstructed"
     else:
-        net = 'neutral'
+        net = "neutral"
 
     return {
-        'reference_sign': ref,
-        'argala_planets': argala_planets,
-        'virodha_planets': virodha_planets,
-        'net_argala': net,
+        "reference_sign": ref,
+        "argala_planets": argala_planets,
+        "virodha_planets": virodha_planets,
+        "net_argala": net,
     }

@@ -16,16 +16,13 @@ from __future__ import annotations
 
 import json
 from contextlib import asynccontextmanager
-from typing import Optional
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import Response
 
 import src.db_pg as db
 import src.cache as cache
 from src.ephemeris import compute_chart
 from src.scoring import score_chart
-from src.calculations.ashtakavarga import compute_ashtakavarga
 from src.api.models import (
     BirthDataRequest,
     ChartOut,
@@ -37,6 +34,7 @@ _VERSION = "0.2.0"
 
 
 # ── lifespan ──────────────────────────────────────────────────────────────────
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -52,6 +50,7 @@ app = FastAPI(
 
 
 # ── helpers ───────────────────────────────────────────────────────────────────
+
 
 def _chart_to_dict(chart) -> dict:
     """Serialise BirthChart to a plain dict for JSON storage."""
@@ -107,7 +106,11 @@ def _scores_to_dict(scores) -> dict:
 
 
 def _row_to_chart_out(row: dict, chart_id: int) -> ChartOut:
-    cj = json.loads(row["chart_json"]) if isinstance(row["chart_json"], str) else row["chart_json"]
+    cj = (
+        json.loads(row["chart_json"])
+        if isinstance(row["chart_json"], str)
+        else row["chart_json"]
+    )
     return ChartOut(
         id=chart_id,
         lagna_sign=cj["lagna_sign"],
@@ -121,6 +124,7 @@ def _row_to_chart_out(row: dict, chart_id: int) -> ChartOut:
 
 
 # ── endpoints ─────────────────────────────────────────────────────────────────
+
 
 @app.get("/health")
 def health():
@@ -138,15 +142,27 @@ def health():
 def create_chart(req: BirthDataRequest) -> ChartOut:
     # Tier 1: check ephemeris cache
     eph_key = cache.make_ephemeris_key(
-        req.year, req.month, req.day, req.hour,
-        req.lat, req.lon, req.tz_offset, req.ayanamsha,
+        req.year,
+        req.month,
+        req.day,
+        req.hour,
+        req.lat,
+        req.lon,
+        req.tz_offset,
+        req.ayanamsha,
     )
     cached_chart_dict = cache.get(cache.TIER_EPHEMERIS, eph_key)
 
     if cached_chart_dict is None:
         chart = compute_chart(
-            req.year, req.month, req.day, req.hour,
-            req.lat, req.lon, req.tz_offset, req.ayanamsha,
+            req.year,
+            req.month,
+            req.day,
+            req.hour,
+            req.lat,
+            req.lon,
+            req.tz_offset,
+            req.ayanamsha,
         )
         chart_dict = _chart_to_dict(chart)
         cache.set(cache.TIER_EPHEMERIS, eph_key, chart_dict)
@@ -159,8 +175,13 @@ def create_chart(req: BirthDataRequest) -> ChartOut:
     scores_dict = _scores_to_dict(scores)
 
     chart_id = db.save_chart(
-        year=req.year, month=req.month, day=req.day, hour=req.hour,
-        lat=req.lat, lon=req.lon, tz_offset=req.tz_offset,
+        year=req.year,
+        month=req.month,
+        day=req.day,
+        hour=req.hour,
+        lat=req.lat,
+        lon=req.lon,
+        tz_offset=req.tz_offset,
         ayanamsha=req.ayanamsha,
         chart_json=json.dumps(chart_dict),
         scores_json=json.dumps(scores_dict),
@@ -187,13 +208,19 @@ def list_charts(limit: int = 20) -> list[ChartSummary]:
     rows = db.list_charts(limit)
     summaries = []
     for row in rows:
-        cj = json.loads(row["chart_json"]) if isinstance(row["chart_json"], str) else row["chart_json"]
-        summaries.append(ChartSummary(
-            id=row["id"],
-            name=row.get("name"),
-            lagna_sign=cj["lagna_sign"],
-            created_at=str(row["created_at"]),
-        ))
+        cj = (
+            json.loads(row["chart_json"])
+            if isinstance(row["chart_json"], str)
+            else row["chart_json"]
+        )
+        summaries.append(
+            ChartSummary(
+                id=row["id"],
+                name=row.get("name"),
+                lagna_sign=cj["lagna_sign"],
+                created_at=str(row["created_at"]),
+            )
+        )
     return summaries
 
 
@@ -216,7 +243,11 @@ def get_scores(chart_id: int) -> ChartScoresOut:
     if row is None:
         raise HTTPException(status_code=404, detail=f"Chart {chart_id} not found")
 
-    cj = json.loads(row["chart_json"]) if isinstance(row["chart_json"], str) else row["chart_json"]
+    cj = (
+        json.loads(row["chart_json"])
+        if isinstance(row["chart_json"], str)
+        else row["chart_json"]
+    )
     chart = _reconstruct_chart(cj)
     scores = score_chart(chart)
     scores_dict = _scores_to_dict(scores)
@@ -228,6 +259,7 @@ def get_scores(chart_id: int) -> ChartScoresOut:
 
 
 # ── chart reconstruction helper ───────────────────────────────────────────────
+
 
 def _reconstruct_chart(cj: dict):
     """Rebuild a minimal BirthChart-like namespace from a stored JSON dict."""

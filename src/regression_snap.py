@@ -16,9 +16,9 @@ Usage:
 Source: Audit J-2: "When ENGINE_VERSION increments, no automated test checks
         whether any existing chart score changed."
 """
+
 from __future__ import annotations
 import json
-import os
 from pathlib import Path
 from typing import Optional
 
@@ -29,20 +29,35 @@ ENGINE_VERSION = "v3.0.0"
 # These are the same as in regression_fixtures.py but with engine-computed scores
 REFERENCE_CHARTS = {
     "india_1947": {
-        "year": 1947, "month": 8, "day": 15, "hour": 0.0,
-        "lat": 28.6139, "lon": 77.2090, "tz_offset": 5.5,
+        "year": 1947,
+        "month": 8,
+        "day": 15,
+        "hour": 0.0,
+        "lat": 28.6139,
+        "lon": 77.2090,
+        "tz_offset": 5.5,
         "ayanamsha": "lahiri",
         "description": "India Independence — primary regression baseline",
     },
     "einstein_1879": {
-        "year": 1879, "month": 3, "day": 14, "hour": 11.5,
-        "lat": 48.4011, "lon": 9.9876, "tz_offset": 0.86,
+        "year": 1879,
+        "month": 3,
+        "day": 14,
+        "hour": 11.5,
+        "lat": 48.4011,
+        "lon": 9.9876,
+        "tz_offset": 0.86,
         "ayanamsha": "lahiri",
         "description": "Albert Einstein — Gemini Lagna, German Standesamt trust=high",
     },
     "bohr_1885": {
-        "year": 1885, "month": 10, "day": 7, "hour": 10.0,
-        "lat": 55.6761, "lon": 12.5683, "tz_offset": 1.0,
+        "year": 1885,
+        "month": 10,
+        "day": 7,
+        "hour": 10.0,
+        "lat": 55.6761,
+        "lon": 12.5683,
+        "tz_offset": 1.0,
         "ayanamsha": "lahiri",
         "description": "Niels Bohr — Danish civil registration trust=high",
     },
@@ -78,15 +93,21 @@ def compute_snapshot(
     for chart_id, defn in chart_defs.items():
         try:
             chart = compute_chart(
-                year=defn["year"], month=defn["month"], day=defn["day"],
-                hour=defn["hour"], lat=defn["lat"], lon=defn["lon"],
+                year=defn["year"],
+                month=defn["month"],
+                day=defn["day"],
+                hour=defn["hour"],
+                lat=defn["lat"],
+                lon=defn["lon"],
                 tz_offset=defn["tz_offset"],
                 ayanamsha=defn.get("ayanamsha", "lahiri"),
             )
             scores_obj = score_chart(chart)
             if hasattr(scores_obj, "houses"):
-                scores = {str(k): round(float(v.final_score), 4)
-                          for k, v in scores_obj.houses.items()}
+                scores = {
+                    str(k): round(float(v.final_score), 4)
+                    for k, v in scores_obj.houses.items()
+                }
             elif isinstance(scores_obj, dict):
                 scores = {str(k): round(float(v), 4) for k, v in scores_obj.items()}
             else:
@@ -156,13 +177,15 @@ def diff_against_snapshot(
                 continue
             delta = abs(float(current_val) - float(stored_val))
             if delta > tolerance:
-                diffs.append({
-                    "chart_id": chart_id,
-                    "house": int(house_str),
-                    "stored": stored_val,
-                    "current": current_val,
-                    "delta": round(delta, 4),
-                })
+                diffs.append(
+                    {
+                        "chart_id": chart_id,
+                        "house": int(house_str),
+                        "stored": stored_val,
+                        "current": current_val,
+                        "delta": round(delta, 4),
+                    }
+                )
 
     return diffs
 
@@ -187,6 +210,8 @@ def assert_no_regression(
                 f"stored={d['stored']:+.4f} current={d['current']:+.4f} "
                 f"Δ={d['delta']:.4f}"
             )
-        lines.append("\nTo accept changes: run compute_and_store_snapshot() and commit snap_v3.json")
+        lines.append(
+            "\nTo accept changes: run compute_and_store_snapshot() and commit snap_v3.json"
+        )
         raise AssertionError("\n".join(lines))
     print(f"  OK  No regression (tolerance={tolerance})")

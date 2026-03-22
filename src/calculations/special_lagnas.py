@@ -18,14 +18,14 @@ from typing import Optional
 
 @dataclass
 class SpecialLagnas:
-    hora_lagna: int        # Hora Lagna sign index 0-11
-    ghati_lagna: int       # Ghati Lagna sign index
-    bhava_lagna: int       # Bhava Lagna sign index
-    varnada_lagna: int     # Varnada Lagna sign index
-    sree_lagna: int        # Sree / Shree Lagna sign index
-    indu_lagna: int        # Indu Lagna sign index
-    pranapada: int         # Pranapada Lagna sign index
-    upapada: int           # Upapada Lagna (A12, Arudha of H12) sign index
+    hora_lagna: int  # Hora Lagna sign index 0-11
+    ghati_lagna: int  # Ghati Lagna sign index
+    bhava_lagna: int  # Bhava Lagna sign index
+    varnada_lagna: int  # Varnada Lagna sign index
+    sree_lagna: int  # Sree / Shree Lagna sign index
+    indu_lagna: int  # Indu Lagna sign index
+    pranapada: int  # Pranapada Lagna sign index
+    upapada: int  # Upapada Lagna (A12, Arudha of H12) sign index
 
 
 def compute_special_lagnas(
@@ -40,6 +40,7 @@ def compute_special_lagnas(
     """
     if birth_dt is None:
         from datetime import datetime as _dt
+
         birth_dt = _dt.now()
     if sunrise_dt is None:
         sunrise_dt = birth_dt.replace(hour=6, minute=0, second=0)
@@ -69,7 +70,7 @@ def compute_special_lagnas(
     # Derived from Hora Lagna and Ghati Lagna: Source: Jaimini Sutras
     # If both HL and GL are in odd signs or both even: take the difference
     # If one odd one even: add them
-    hl_odd = hora_lagna % 2 == 0   # Aries=0=odd sign in Jyotish (index 0)
+    hl_odd = hora_lagna % 2 == 0  # Aries=0=odd sign in Jyotish (index 0)
     gl_odd = ghati_lagna % 2 == 0
     if hl_odd == gl_odd:
         varnada = abs(hora_lagna - ghati_lagna) % 12
@@ -83,14 +84,29 @@ def compute_special_lagnas(
     moon_lon = chart.planets["Moon"].longitude if "Moon" in chart.planets else 0.0
 
     _LORDS_PERIOD = {
-        "Sun": 6, "Moon": 10, "Mars": 7, "Mercury": 17,
-        "Jupiter": 16, "Venus": 20, "Saturn": 19,
-        "Rahu": 18, "Ketu": 7,
+        "Sun": 6,
+        "Moon": 10,
+        "Mars": 7,
+        "Mercury": 17,
+        "Jupiter": 16,
+        "Venus": 20,
+        "Saturn": 19,
+        "Rahu": 18,
+        "Ketu": 7,
     }
     _SIGN_LORDS = {
-        0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun",
-        5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter",
-        9: "Saturn", 10: "Saturn", 11: "Jupiter",
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
     }
 
     moon_lord = _SIGN_LORDS.get(moon_si, "Moon")
@@ -102,10 +118,12 @@ def compute_special_lagnas(
     # Sum of H9 lord's period value from Lagna and Moon, then from Moon
     # Source: Hora Makaranda
     lagna_h9_sign = (lagna_si + 8) % 12
-    moon_h9_sign  = (moon_si + 8) % 12
+    moon_h9_sign = (moon_si + 8) % 12
     lagna_h9_lord = _SIGN_LORDS.get(lagna_h9_sign, "Jupiter")
-    moon_h9_lord  = _SIGN_LORDS.get(moon_h9_sign, "Jupiter")
-    indu_total = (_LORDS_PERIOD.get(lagna_h9_lord, 10) + _LORDS_PERIOD.get(moon_h9_lord, 10)) % 12
+    moon_h9_lord = _SIGN_LORDS.get(moon_h9_sign, "Jupiter")
+    indu_total = (
+        _LORDS_PERIOD.get(lagna_h9_lord, 10) + _LORDS_PERIOD.get(moon_h9_lord, 10)
+    ) % 12
     indu_lagna = (moon_si + indu_total) % 12
 
     # ── Pranapada ──
@@ -143,21 +161,46 @@ def compute_special_lagnas(
 
 
 # ── Backward-compatibility properties ──
-_SIGN_NAMES_SL = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
-                  "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
+_SIGN_NAMES_SL = [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
+]
+
 
 def _add_compat(cls):
     """Add _sign and _index properties for each lagna field."""
-    fields = ["hora_lagna","ghati_lagna","bhava_lagna","varnada_lagna",
-              "sree_lagna","indu_lagna","pranapada","upapada"]
+    fields = [
+        "hora_lagna",
+        "ghati_lagna",
+        "bhava_lagna",
+        "varnada_lagna",
+        "sree_lagna",
+        "indu_lagna",
+        "pranapada",
+        "upapada",
+    ]
     for f in fields:
+
         def make_sign(fname):
             return property(lambda self: _SIGN_NAMES_SL[getattr(self, fname)])
+
         def make_index(fname):
             return property(lambda self: getattr(self, fname))
+
         setattr(cls, f + "_sign", make_sign(f))
         setattr(cls, f + "_index", make_index(f))
         setattr(cls, f + "_sign_name", make_sign(f))
     return cls
+
 
 SpecialLagnas = _add_compat(SpecialLagnas)

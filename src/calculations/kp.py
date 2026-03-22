@@ -50,61 +50,98 @@ Data classes
 """
 
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from src.ephemeris import BirthChart
+    pass
 
 # ── Vimshottari sequence and periods ─────────────────────────────────────────
 
 _SEQUENCE = [
-    "Ketu", "Venus", "Sun", "Moon", "Mars",
-    "Rahu", "Jupiter", "Saturn", "Mercury",
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
 ]
 
 _VIMSH_YEARS: dict[str, int] = {
-    "Ketu": 7, "Venus": 20, "Sun": 6, "Moon": 10, "Mars": 7,
-    "Rahu": 18, "Jupiter": 16, "Saturn": 19, "Mercury": 17,
+    "Ketu": 7,
+    "Venus": 20,
+    "Sun": 6,
+    "Moon": 10,
+    "Mars": 7,
+    "Rahu": 18,
+    "Jupiter": 16,
+    "Saturn": 19,
+    "Mercury": 17,
 }
 _TOTAL_YEARS = 120
 
 # Nakshatra span in degrees
-_NAK_SPAN = 360.0 / 27          # 13.333...°
+_NAK_SPAN = 360.0 / 27  # 13.333...°
 _NAK_SPAN_MIN = _NAK_SPAN * 60  # 800' arcminutes
 
 # Sub-span for each planet within one nakshatra (in degrees)
 _SUB_SPAN: dict[str, float] = {
-    p: _VIMSH_YEARS[p] / _TOTAL_YEARS * _NAK_SPAN
-    for p in _SEQUENCE
+    p: _VIMSH_YEARS[p] / _TOTAL_YEARS * _NAK_SPAN for p in _SEQUENCE
 }
 # Verify total ≈ _NAK_SPAN
 assert abs(sum(_SUB_SPAN.values()) - _NAK_SPAN) < 1e-9
 
 # Nakshatra names and their lords (27 entries = _SEQUENCE × 3)
 _NAK_NAMES = [
-    "Ashwini", "Bharani", "Krittika", "Rohini", "Mrigashira", "Ardra",
-    "Punarvasu", "Pushya", "Ashlesha", "Magha", "Purva Phalguni", "Uttara Phalguni",
-    "Hasta", "Chitra", "Swati", "Vishakha", "Anuradha", "Jyeshtha",
-    "Mula", "Purva Ashadha", "Uttara Ashadha", "Shravana", "Dhanishtha",
-    "Shatabhisha", "Purva Bhadrapada", "Uttara Bhadrapada", "Revati",
+    "Ashwini",
+    "Bharani",
+    "Krittika",
+    "Rohini",
+    "Mrigashira",
+    "Ardra",
+    "Punarvasu",
+    "Pushya",
+    "Ashlesha",
+    "Magha",
+    "Purva Phalguni",
+    "Uttara Phalguni",
+    "Hasta",
+    "Chitra",
+    "Swati",
+    "Vishakha",
+    "Anuradha",
+    "Jyeshtha",
+    "Mula",
+    "Purva Ashadha",
+    "Uttara Ashadha",
+    "Shravana",
+    "Dhanishtha",
+    "Shatabhisha",
+    "Purva Bhadrapada",
+    "Uttara Bhadrapada",
+    "Revati",
 ]
 _NAK_LORDS = (_SEQUENCE * 3)[:27]  # Ketu→Venus→Sun→Moon→Mars→Rahu→Jup→Sat→Mer × 3
 
 
 # ── KP position lookup ────────────────────────────────────────────────────────
 
+
 @dataclass
 class KPPosition:
     """KP cuspal analysis for a single longitude."""
-    longitude: float       # sidereal, 0–360°
+
+    longitude: float  # sidereal, 0–360°
     nakshatra: str
-    nakshatra_index: int   # 0–26
-    star_lord: str         # nakshatra lord
-    sub_lord: str          # KP sub-lord
-    sub_sub_lord: str      # KP sub-sub-lord (optional finer analysis)
+    nakshatra_index: int  # 0–26
+    star_lord: str  # nakshatra lord
+    sub_lord: str  # KP sub-lord
+    sub_sub_lord: str  # KP sub-sub-lord (optional finer analysis)
     sub_degree_start: float  # longitude where this sub begins
-    sub_degree_end: float    # longitude where this sub ends
+    sub_degree_end: float  # longitude where this sub ends
 
 
 def kp_sub_at(longitude: float) -> KPPosition:
@@ -128,7 +165,7 @@ def kp_sub_at(longitude: float) -> KPPosition:
     lon = longitude % 360.0
     nak_idx = min(int(lon / _NAK_SPAN), 26)
     nak_start = nak_idx * _NAK_SPAN
-    pos_in_nak = lon - nak_start     # 0 … _NAK_SPAN
+    pos_in_nak = lon - nak_start  # 0 … _NAK_SPAN
 
     star_lord = _NAK_LORDS[nak_idx]
     start_idx = _SEQUENCE.index(star_lord)
@@ -177,9 +214,11 @@ def kp_sub_at(longitude: float) -> KPPosition:
 
 # ── KP Planet ─────────────────────────────────────────────────────────────────
 
+
 @dataclass
 class KPPlanet:
     """KP analysis for a single planet in the birth chart."""
+
     planet: str
     longitude: float
     sign: str
@@ -206,6 +245,7 @@ class KPPlanet:
 
 # ── House Significators ───────────────────────────────────────────────────────
 
+
 @dataclass
 class KPHouseSignificator:
     """
@@ -220,35 +260,68 @@ class KPHouseSignificator:
       (b) are the house lord
       (c) are star lords of planets in the house
     """
+
     house: int
     cusp_longitude: float
     cusp_star_lord: str
-    cusp_sub_lord: str       # "House Sub Lord" — key KP concept
-    occupants: list[str]     # planets in this house
+    cusp_sub_lord: str  # "House Sub Lord" — key KP concept
+    occupants: list[str]  # planets in this house
     house_lord: str
     significators: list[str]  # ranked: occupants → star lords → house lord
 
 
 _SIGN_LORDS = [
-    "Mars", "Venus", "Mercury", "Moon", "Sun", "Mercury",
-    "Venus", "Mars", "Jupiter", "Saturn", "Saturn", "Jupiter",
+    "Mars",
+    "Venus",
+    "Mercury",
+    "Moon",
+    "Sun",
+    "Mercury",
+    "Venus",
+    "Mars",
+    "Jupiter",
+    "Saturn",
+    "Saturn",
+    "Jupiter",
 ]
 
 _SIGNS = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
 ]
 
-_ALL_PLANETS = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Rahu", "Ketu"]
+_ALL_PLANETS = [
+    "Sun",
+    "Moon",
+    "Mars",
+    "Mercury",
+    "Jupiter",
+    "Venus",
+    "Saturn",
+    "Rahu",
+    "Ketu",
+]
 
 
 # ── KPChart ───────────────────────────────────────────────────────────────────
 
+
 @dataclass
 class KPChart:
     """Complete KP analysis for a birth chart."""
+
     lagna_kp: KPPosition
-    planets: dict[str, KPPlanet]            # 9 planets
+    planets: dict[str, KPPlanet]  # 9 planets
     houses: dict[int, KPHouseSignificator]  # 1–12
 
     def for_planet(self, planet: str) -> KPPlanet:
@@ -263,7 +336,8 @@ class KPChart:
 
 # ── main public function ──────────────────────────────────────────────────────
 
-def compute_kp(chart) -> KPChart:           # chart: BirthChart
+
+def compute_kp(chart) -> KPChart:  # chart: BirthChart
     """
     Compute the full KP chart analysis for a BirthChart.
 
@@ -338,8 +412,10 @@ def compute_kp(chart) -> KPChart:           # chart: BirthChart
             pp = chart.planets.get(p)
             if pp is None:
                 continue
-            if kp_planets[p].star_lord in occupants or \
-               kp_planets[p].sub_lord in occupants:
+            if (
+                kp_planets[p].star_lord in occupants
+                or kp_planets[p].sub_lord in occupants
+            ):
                 sigs.append(p)
                 seen.add(p)
 

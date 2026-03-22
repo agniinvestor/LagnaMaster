@@ -29,21 +29,33 @@ from typing import Optional
 
 # Sign lord map (0=Aries … 11=Pisces)
 _SIGN_LORD = {
-    0: "Mars",   1: "Venus",   2: "Mercury", 3: "Moon",
-    4: "Sun",    5: "Mercury", 6: "Venus",   7: "Mars",
-    8: "Jupiter",9: "Saturn", 10: "Saturn", 11: "Jupiter",
+    0: "Mars",
+    1: "Venus",
+    2: "Mercury",
+    3: "Moon",
+    4: "Sun",
+    5: "Mercury",
+    6: "Venus",
+    7: "Mars",
+    8: "Jupiter",
+    9: "Saturn",
+    10: "Saturn",
+    11: "Jupiter",
 }
 
 # Natural benefics and malefics
-_NAT_BENEFIC  = {"Jupiter", "Venus", "Mercury", "Moon"}
-_NAT_MALEFIC  = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
+_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+
 
 # Badhaka house by lagna sign type
 # Moveable (0,3,6,9): H11  Fixed (1,4,7,10): H9  Dual (2,5,8,11): H7
 def _badhaka_house(lagna_si: int) -> int:
-    if lagna_si in {0, 3, 6, 9}:  return 11   # moveable
-    if lagna_si in {1, 4, 7, 10}: return 9    # fixed
-    return 7                                    # dual
+    if lagna_si in {0, 3, 6, 9}:
+        return 11  # moveable
+    if lagna_si in {1, 4, 7, 10}:
+        return 9  # fixed
+    return 7  # dual
 
 
 @dataclass
@@ -52,25 +64,27 @@ class FunctionalRoles:
     lagna_sign_index: int
 
     # Per-planet functional classification
-    functional_benefics: list[str]  = field(default_factory=list)
-    functional_malefics: list[str]  = field(default_factory=list)
-    functional_neutrals: list[str]  = field(default_factory=list)
+    functional_benefics: list[str] = field(default_factory=list)
+    functional_malefics: list[str] = field(default_factory=list)
+    functional_neutrals: list[str] = field(default_factory=list)
 
     # Special roles
-    yogakaraka: Optional[str]       = None      # single strongest yogakaraka
-    yogakarakas: list[str]          = field(default_factory=list)  # all
-    maraka_lords: list[str]         = field(default_factory=list)  # H2, H7 lords
-    dusthana_lords: list[str]       = field(default_factory=list)  # H6/H8/H12 lords
-    kendradhipati_planets: list[str]= field(default_factory=list)  # nat. benefics with kendradhipati dosha
+    yogakaraka: Optional[str] = None  # single strongest yogakaraka
+    yogakarakas: list[str] = field(default_factory=list)  # all
+    maraka_lords: list[str] = field(default_factory=list)  # H2, H7 lords
+    dusthana_lords: list[str] = field(default_factory=list)  # H6/H8/H12 lords
+    kendradhipati_planets: list[str] = field(
+        default_factory=list
+    )  # nat. benefics with kendradhipati dosha
 
     # Badhaka
-    badhaka_house: int              = 0
-    badhaka_sign_index: int         = 0
-    badhaka_sign: str               = ""
-    badhaka_lord: str               = ""
+    badhaka_house: int = 0
+    badhaka_sign_index: int = 0
+    badhaka_sign: str = ""
+    badhaka_lord: str = ""
 
     # House-lord lookup (1-indexed, house -> lord)
-    house_lords: dict[int, str]     = field(default_factory=dict)
+    house_lords: dict[int, str] = field(default_factory=dict)
 
     def is_functional_benefic(self, planet: str) -> bool:
         return planet in self.functional_benefics
@@ -85,8 +99,20 @@ class FunctionalRoles:
         return planet in self.maraka_lords
 
 
-_SIGNS = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
-          "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
+_SIGNS = [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
+]
 
 
 def compute_functional_roles(chart) -> FunctionalRoles:
@@ -113,11 +139,13 @@ def compute_functional_roles(chart) -> FunctionalRoles:
 
     # Yogakaraka: planet that simultaneously rules a kendra AND a trikona
     # (H1 counts as both; exclude H1-only lords)
-    kendra_lords  = {house_lords[h] for h in [1, 4, 7, 10]}
+    kendra_lords = {house_lords[h] for h in [1, 4, 7, 10]}
     trikona_lords = {house_lords[h] for h in [1, 5, 9]}
-    yk_set = (kendra_lords & trikona_lords) - {house_lords[1]}  # H1 excluded (always both)
+    yk_set = (kendra_lords & trikona_lords) - {
+        house_lords[1]
+    }  # H1 excluded (always both)
     roles.yogakarakas = sorted(yk_set)
-    roles.yogakaraka  = roles.yogakarakas[0] if len(roles.yogakarakas) == 1 else None
+    roles.yogakaraka = roles.yogakarakas[0] if len(roles.yogakarakas) == 1 else None
 
     # Kendradhipati dosha: natural benefics owning kendras (H4, H7, H10)
     # H1 lordship does not give KD dosha; H4/H7/H10 do for natural benefics
@@ -125,12 +153,12 @@ def compute_functional_roles(chart) -> FunctionalRoles:
     roles.kendradhipati_planets = [p for p in kd_candidates if p in _NAT_BENEFIC]
 
     # Functional classification per planet (7 grahas)
-    planets_7 = ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn"]
+    planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
     for planet in planets_7:
         owned = [h for h, lord in house_lords.items() if lord == planet]
         dusthana_owned = [h for h in owned if h in {6, 8, 12}]
-        kendra_owned   = [h for h in owned if h in {1, 4, 7, 10}]
-        trikona_owned  = [h for h in owned if h in {1, 5, 9}]
+        kendra_owned = [h for h in owned if h in {1, 4, 7, 10}]
+        trikona_owned = [h for h in owned if h in {1, 5, 9}]
         [h for h in owned if h in {3, 6, 10, 11}]
 
         # Yogakaraka — strongly benefic
@@ -170,9 +198,9 @@ def compute_functional_roles(chart) -> FunctionalRoles:
     # Badhaka
     bh = _badhaka_house(lsi)
     bsi = (lsi + bh - 1) % 12
-    roles.badhaka_house       = bh
-    roles.badhaka_sign_index  = bsi
-    roles.badhaka_sign        = _SIGNS[bsi]
-    roles.badhaka_lord        = _SIGN_LORD[bsi]
+    roles.badhaka_house = bh
+    roles.badhaka_sign_index = bsi
+    roles.badhaka_sign = _SIGNS[bsi]
+    roles.badhaka_lord = _SIGN_LORD[bsi]
 
     return roles

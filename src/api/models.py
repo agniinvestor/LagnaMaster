@@ -11,15 +11,18 @@ from typing import Optional
 
 class BirthDataRequest(BaseModel):
     """POST /charts — birth data input."""
-    year:      int   = Field(..., ge=1800, le=2100, description="Birth year")
-    month:     int   = Field(..., ge=1, le=12)
-    day:       int   = Field(..., ge=1, le=31)
-    hour:      float = Field(..., ge=0.0, lt=24.0, description="Local time as decimal hours (0.0=midnight)")
-    lat:       float = Field(..., ge=-90.0, le=90.0, description="Latitude (N positive)")
-    lon:       float = Field(..., ge=-180.0, le=180.0, description="Longitude (E positive)")
+
+    year: int = Field(..., ge=1800, le=2100, description="Birth year")
+    month: int = Field(..., ge=1, le=12)
+    day: int = Field(..., ge=1, le=31)
+    hour: float = Field(
+        ..., ge=0.0, lt=24.0, description="Local time as decimal hours (0.0=midnight)"
+    )
+    lat: float = Field(..., ge=-90.0, le=90.0, description="Latitude (N positive)")
+    lon: float = Field(..., ge=-180.0, le=180.0, description="Longitude (E positive)")
     tz_offset: float = Field(5.5, description="UTC offset in hours (IST=5.5)")
-    ayanamsha: str   = Field("lahiri", description="Ayanamsha system")
-    name:      Optional[str] = Field(None, description="Optional name/label for the chart")
+    ayanamsha: str = Field("lahiri", description="Ayanamsha system")
+    name: Optional[str] = Field(None, description="Optional name/label for the chart")
 
     @field_validator("ayanamsha")
     @classmethod
@@ -42,6 +45,7 @@ class PlanetOut(BaseModel):
 
 class ChartOut(BaseModel):
     """Full chart response."""
+
     id: int
     lagna_sign: str
     lagna_sign_index: int
@@ -87,23 +91,28 @@ class ChartSummary(BaseModel):
     lat: float
     lon: float
 
+
 # ── S188: XIX Output models ──────────────────────────────────────────────────
 
 
 # ── S189: Mundane models ─────────────────────────────────────────────────────
 
+
 class MundaneRequest(BaseModel):
     """POST /mundane/analyze — mundane chart analysis."""
-    year:       int   = Field(..., ge=1800, le=2100)
-    month:      int   = Field(..., ge=1, le=12)
-    day:        int   = Field(..., ge=1, le=31)
-    hour:       float = Field(0.0, ge=0.0, lt=24.0)
-    lat:        float = Field(..., ge=-90.0, le=90.0)
-    lon:        float = Field(..., ge=-180.0, le=180.0)
-    tz_offset:  float = Field(0.0)
-    chart_type: str   = Field("ingress", description="'nation'|'ingress'|'lunar_new_year'|'swearing_in'")
+
+    year: int = Field(..., ge=1800, le=2100)
+    month: int = Field(..., ge=1, le=12)
+    day: int = Field(..., ge=1, le=31)
+    hour: float = Field(0.0, ge=0.0, lt=24.0)
+    lat: float = Field(..., ge=-90.0, le=90.0)
+    lon: float = Field(..., ge=-180.0, le=180.0)
+    tz_offset: float = Field(0.0)
+    chart_type: str = Field(
+        "ingress", description="'nation'|'ingress'|'lunar_new_year'|'swearing_in'"
+    )
     event_description: Optional[str] = Field(None)
-    location:   Optional[str] = Field(None)
+    location: Optional[str] = Field(None)
 
 
 class MundaneOut(BaseModel):
@@ -119,6 +128,7 @@ class MundaneOut(BaseModel):
 
 class SVGRequest(BaseModel):
     """Request body for SVG chart generation."""
+
     style: str = Field("north_indian", description="'north_indian' or 'south_indian'")
     color_scheme: str = Field("color", description="'color' or 'bw'")
     show_degrees: bool = Field(False)
@@ -133,9 +143,14 @@ class SVGOut(BaseModel):
 
 class GuidanceRequest(BaseModel):
     """Request body for consumer guidance."""
-    domain: str = Field("default", description="e.g. 'career','relationships','health','finance'")
+
+    domain: str = Field(
+        "default", description="e.g. 'career','relationships','health','finance'"
+    )
     depth: str = Field("L1", description="'L1' | 'L2' | 'L3'")
-    on_date: Optional[str] = Field(None, description="ISO date YYYY-MM-DD; defaults to today")
+    on_date: Optional[str] = Field(
+        None, description="ISO date YYYY-MM-DD; defaults to today"
+    )
     school: str = Field("parashari")
     l3_opted_in: bool = Field(False)
 
@@ -170,6 +185,7 @@ class ConfidenceOut(BaseModel):
 
 class ChartV3Out(BaseModel):
     """Full v3 scoring response with dasha-sensitized D1 scores."""
+
     chart_id: int
     lagna_sign: str
     engine_version: str
@@ -181,4 +197,3 @@ class ChartV3Out(BaseModel):
     raja_yogas: list = []
     viparita_yogas: list = []
     neecha_bhanga: list = []
-

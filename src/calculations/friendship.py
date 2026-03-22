@@ -20,14 +20,15 @@ _PLANETS = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
 # F=Friend, N=Neutral, E=Enemy
 _NAISARGIKA_RAW: list[list[str]] = [
     # Sun   Moon  Mars  Merc  Jup   Ven   Sat    ← col (viewed)
-    ["—",  "F",  "F",  "N",  "F",  "E",  "E"],   # Sun   ← row (viewer)
-    ["F",  "—",  "N",  "F",  "N",  "N",  "N"],   # Moon
-    ["F",  "F",  "—",  "E",  "F",  "N",  "N"],   # Mars
-    ["F",  "E",  "N",  "—",  "N",  "F",  "N"],   # Mercury
-    ["F",  "F",  "F",  "E",  "—",  "E",  "N"],   # Jupiter
-    ["E",  "E",  "N",  "F",  "N",  "—",  "F"],   # Venus
-    ["E",  "E",  "E",  "F",  "N",  "F",  "—"],   # Saturn
+    ["—", "F", "F", "N", "F", "E", "E"],  # Sun   ← row (viewer)
+    ["F", "—", "N", "F", "N", "N", "N"],  # Moon
+    ["F", "F", "—", "E", "F", "N", "N"],  # Mars
+    ["F", "E", "N", "—", "N", "F", "N"],  # Mercury
+    ["F", "F", "F", "E", "—", "E", "N"],  # Jupiter
+    ["E", "E", "N", "F", "N", "—", "F"],  # Venus
+    ["E", "E", "E", "F", "N", "F", "—"],  # Saturn
 ]
+
 
 def _naisargika(viewer: str, viewed: str) -> str:
     """Return 'F', 'N', or 'E'. Rahu/Ketu always 'N' (no classical entry)."""
@@ -48,9 +49,10 @@ def _naisargika(viewer: str, viewed: str) -> str:
 
 _TATKALIK_FRIEND_HOUSES = {2, 3, 4, 10, 11, 12}
 
+
 def _tatkalik(p1_sign_idx: int, p2_sign_idx: int) -> str:
     """Return 'F' or 'E'. Tatkalik is symmetric."""
-    house = (p2_sign_idx - p1_sign_idx) % 12 + 1   # 1-12
+    house = (p2_sign_idx - p1_sign_idx) % 12 + 1  # 1-12
     return "F" if house in _TATKALIK_FRIEND_HOUSES else "E"
 
 
@@ -62,7 +64,7 @@ def _tatkalik(p1_sign_idx: int, p2_sign_idx: int) -> str:
 
 _PANCHADHA_TABLE = {
     ("F", "F"): "Adhi Mitra",
-    ("F", "N"): "Mitra",       # Tatkalik N is impossible in practice
+    ("F", "N"): "Mitra",  # Tatkalik N is impossible in practice
     ("F", "E"): "Sama",
     ("N", "F"): "Mitra",
     ("N", "N"): "Sama",
@@ -74,11 +76,11 @@ _PANCHADHA_TABLE = {
 
 # Scoring weights (REF_NaisargikaFriendship rows 27-30)
 PANCHADHA_WEIGHT = {
-    "Adhi Mitra":   +1.0,
-    "Mitra":        +0.5,
-    "Sama":          0.0,
-    "Shatru":       -0.5,
-    "Adhi Shatru":  -1.0,
+    "Adhi Mitra": +1.0,
+    "Mitra": +0.5,
+    "Sama": 0.0,
+    "Shatru": -0.5,
+    "Adhi Shatru": -1.0,
 }
 
 
@@ -86,15 +88,17 @@ PANCHADHA_WEIGHT = {
 class FriendshipResult:
     viewer: str
     viewed: str
-    naisargika: str     # F / N / E
-    tatkalik: str       # F / E
-    panchadha: str      # Adhi Mitra … Adhi Shatru
-    weight: float       # score modifier
+    naisargika: str  # F / N / E
+    tatkalik: str  # F / E
+    panchadha: str  # Adhi Mitra … Adhi Shatru
+    weight: float  # score modifier
 
 
 def compute_friendship(
-    viewer: str, viewer_sign_idx: int,
-    viewed: str, viewed_sign_idx: int,
+    viewer: str,
+    viewer_sign_idx: int,
+    viewed: str,
+    viewed_sign_idx: int,
 ) -> FriendshipResult:
     """Compute 5-fold Panchadha Maitri between two planets."""
     nai = _naisargika(viewer, viewed)
@@ -102,7 +106,10 @@ def compute_friendship(
     # Nodes have no tatkalik (they don't occupy independent signs in BPHS model)
     if viewer in ("Rahu", "Ketu") or viewed in ("Rahu", "Ketu"):
         tat = "N"
-    key = (nai if nai in ("F", "N", "E") else "N", tat if tat in ("F", "N", "E") else "N")
+    key = (
+        nai if nai in ("F", "N", "E") else "N",
+        tat if tat in ("F", "N", "E") else "N",
+    )
     pancha = _PANCHADHA_TABLE.get(key, "Sama")
     return FriendshipResult(
         viewer=viewer,
@@ -114,7 +121,9 @@ def compute_friendship(
     )
 
 
-def compute_all_friendships(chart: BirthChart) -> dict[tuple[str, str], FriendshipResult]:
+def compute_all_friendships(
+    chart: BirthChart,
+) -> dict[tuple[str, str], FriendshipResult]:
     """
     Compute all pairwise Panchadha relationships for a chart.
     Returns dict keyed by (viewer, viewed).
@@ -125,7 +134,9 @@ def compute_all_friendships(chart: BirthChart) -> dict[tuple[str, str], Friendsh
         for p2 in planets:
             if p1 != p2:
                 results[(p1, p2)] = compute_friendship(
-                    p1, chart.planets[p1].sign_index,
-                    p2, chart.planets[p2].sign_index,
+                    p1,
+                    chart.planets[p1].sign_index,
+                    p2,
+                    chart.planets[p2].sign_index,
                 )
     return results

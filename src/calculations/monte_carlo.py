@@ -39,8 +39,6 @@ Public API
 from __future__ import annotations
 
 import random
-from dataclasses import dataclass, field
-from typing import Any, Optional
 
 # Re-export for backward compat
 from src.calculations.pushkara_navamsha import (
@@ -51,6 +49,7 @@ from src.calculations.pushkara_navamsha import (
 try:
     from src.worker import celery_app
     from celery import chord as celery_chord
+
     _CELERY = True
 except ImportError:
     _CELERY = False
@@ -59,25 +58,38 @@ except ImportError:
 # ── Celery tasks ──────────────────────────────────────────────────────────────
 
 if _CELERY:
-    @celery_app.task(name="src.calculations.monte_carlo._sample_task", serializer="json")
+
+    @celery_app.task(
+        name="src.calculations.monte_carlo._sample_task", serializer="json"
+    )
     def _sample_task(
-        year: int, month: int, day: int, hour: float,
-        lat: float, lon: float, tz_offset: float, ayanamsha: str,
+        year: int,
+        month: int,
+        day: int,
+        hour: float,
+        lat: float,
+        lon: float,
+        tz_offset: float,
+        ayanamsha: str,
     ) -> dict[str, float]:
         """Compute scores for a single birth-time sample. Returns {str(house): score}."""
         from src.ephemeris import compute_chart
         from src.scoring import score_chart
+
         chart = compute_chart(year, month, day, hour, lat, lon, tz_offset, ayanamsha)
         scores = score_chart(chart)
         return {str(h): hs.final_score for h, hs in scores.houses.items()}
 
-    @celery_app.task(name="src.calculations.monte_carlo._aggregate_task", serializer="json")
+    @celery_app.task(
+        name="src.calculations.monte_carlo._aggregate_task", serializer="json"
+    )
     def _aggregate_task(
         sample_results: list[dict[str, float]],
         base_scores: dict[str, float],
     ) -> dict:
         """Aggregate N sample score dicts into a MonteCarloResult-compatible dict."""
         import statistics
+
         houses = list(base_scores.keys())
         mean_scores: dict[str, float] = {}
         std_scores: dict[str, float] = {}
@@ -108,6 +120,7 @@ if _CELERY:
 
 # ── public functions ──────────────────────────────────────────────────────────
 
+
 def run_monte_carlo_parallel(
     year: int,
     month: int,
@@ -129,8 +142,16 @@ def run_monte_carlo_parallel(
     """
     if not _CELERY:
         return run_monte_carlo(
-            year, month, day, hour, lat, lon, tz_offset, ayanamsha,
-            samples=samples, window_minutes=window_minutes,
+            year,
+            month,
+            day,
+            hour,
+            lat,
+            lon,
+            tz_offset,
+            ayanamsha,
+            samples=samples,
+            window_minutes=window_minutes,
         )
 
     from src.ephemeris import compute_chart
@@ -138,13 +159,14 @@ def run_monte_carlo_parallel(
 
     half = window_minutes / 60.0 / 2.0
     base_chart = compute_chart(year, month, day, hour, lat, lon, tz_offset, ayanamsha)
-    base_scores = {str(h): hs.final_score for h, hs in score_chart(base_chart).houses.items()}
+    base_scores = {
+        str(h): hs.final_score for h, hs in score_chart(base_chart).houses.items()
+    }
 
     # Build N perturbed hours
     rng = random.Random(42)
     sample_hours = [
-        max(0.0, min(23.9999, hour + rng.uniform(-half, half)))
-        for _ in range(samples)
+        max(0.0, min(23.9999, hour + rng.uniform(-half, half))) for _ in range(samples)
     ]
 
     # Celery chord: N header tasks + 1 aggregating callback
@@ -188,12 +210,13 @@ def run_monte_carlo_async(
 
     half = window_minutes / 60.0 / 2.0
     base_chart = compute_chart(year, month, day, hour, lat, lon, tz_offset, ayanamsha)
-    base_scores = {str(h): hs.final_score for h, hs in score_chart(base_chart).houses.items()}
+    base_scores = {
+        str(h): hs.final_score for h, hs in score_chart(base_chart).houses.items()
+    }
 
     rng = random.Random(42)
     sample_hours = [
-        max(0.0, min(23.9999, hour + rng.uniform(-half, half)))
-        for _ in range(samples)
+        max(0.0, min(23.9999, hour + rng.uniform(-half, half))) for _ in range(samples)
     ]
 
     header = [
@@ -219,12 +242,16 @@ def chord_status(task_id: str) -> dict:
 
 # ── Stub references so imports don't NameError when Celery is unavailable ──────
 if not _CELERY:
+
     class _TaskStub:
         """Placeholder when Celery is not configured."""
+
         def delay(self, *a, **kw):
             raise RuntimeError("Celery not available")
+
         def s(self, *a, **kw):
             raise RuntimeError("Celery not available")
-    _sample_task    = _TaskStub()   # noqa: F811
-    _aggregate_task = _TaskStub()   # noqa: F811
+
+    _sample_task = _TaskStub()  # noqa: F811
+    _aggregate_task = _TaskStub()  # noqa: F811
     _sample_task_stub = True

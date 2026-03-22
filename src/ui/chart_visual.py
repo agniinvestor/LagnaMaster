@@ -23,48 +23,53 @@ from src.ephemeris import BirthChart, SIGNS
 
 # ── Layout constants ──────────────────────────────────────────────────────────
 
-CELL = 130        # px per cell
-W    = 4 * CELL   # 520
-H    = 4 * CELL   # 520
+CELL = 130  # px per cell
+W = 4 * CELL  # 520
+H = 4 * CELL  # 520
 
 # sign_index → (row, col)  — 0-indexed
 _SIGN_POS: dict[int, tuple[int, int]] = {
-    11: (0, 0),   # Pisces
-     0: (0, 1),   # Aries
-     1: (0, 2),   # Taurus
-     2: (0, 3),   # Gemini
-    10: (1, 0),   # Aquarius
-     3: (1, 3),   # Cancer
-     9: (2, 0),   # Capricorn
-     4: (2, 3),   # Leo
-     8: (3, 0),   # Sagittarius
-     7: (3, 1),   # Scorpio
-     6: (3, 2),   # Libra
-     5: (3, 3),   # Virgo
+    11: (0, 0),  # Pisces
+    0: (0, 1),  # Aries
+    1: (0, 2),  # Taurus
+    2: (0, 3),  # Gemini
+    10: (1, 0),  # Aquarius
+    3: (1, 3),  # Cancer
+    9: (2, 0),  # Capricorn
+    4: (2, 3),  # Leo
+    8: (3, 0),  # Sagittarius
+    7: (3, 1),  # Scorpio
+    6: (3, 2),  # Libra
+    5: (3, 3),  # Virgo
 }
 
-_SIGN_ABBR = ["Ar","Ta","Ge","Ca","Le","Vi","Li","Sc","Sg","Cp","Aq","Pi"]
+_SIGN_ABBR = ["Ar", "Ta", "Ge", "Ca", "Le", "Vi", "Li", "Sc", "Sg", "Cp", "Aq", "Pi"]
 
 _PLANET_ABBR: dict[str, str] = {
-    "Sun":     "Su",  "Moon":    "Mo",  "Mars":    "Ma",
-    "Mercury": "Me",  "Jupiter": "Ju",  "Venus":   "Ve",
-    "Saturn":  "Sa",  "Rahu":    "Ra",  "Ketu":    "Ke",
+    "Sun": "Su",
+    "Moon": "Mo",
+    "Mars": "Ma",
+    "Mercury": "Me",
+    "Jupiter": "Ju",
+    "Venus": "Ve",
+    "Saturn": "Sa",
+    "Rahu": "Ra",
+    "Ketu": "Ke",
 }
 
 # Natural benefics displayed in green, malefics in dark red
-_BENEFIC   = {"Moon", "Mercury", "Jupiter", "Venus"}
-_P_COLOR   = {p: "#1a7a1a" if p in _BENEFIC else "#8b0000"
-              for p in _PLANET_ABBR}
+_BENEFIC = {"Moon", "Mercury", "Jupiter", "Venus"}
+_P_COLOR = {p: "#1a7a1a" if p in _BENEFIC else "#8b0000" for p in _PLANET_ABBR}
 
 # Theme
-_BG        = "#F9F6FF"
-_CELL_BG   = "#FEFEFE"
-_LAGNA_BG  = "#EDE7FF"
+_BG = "#F9F6FF"
+_CELL_BG = "#FEFEFE"
+_LAGNA_BG = "#EDE7FF"
 _LAGNA_STO = "#4B0082"
-_GRID_STO  = "#C8B8E8"
-_SIGN_CLR  = "#9985BC"
-_CTR_BG    = "#F5F0FF"
-_CTR_TXT   = "#4B0082"
+_GRID_STO = "#C8B8E8"
+_SIGN_CLR = "#9985BC"
+_CTR_BG = "#F5F0FF"
+_CTR_TXT = "#4B0082"
 
 
 def south_indian_svg(chart: BirthChart, name: str = "") -> str:
@@ -87,8 +92,10 @@ def south_indian_svg(chart: BirthChart, name: str = "") -> str:
         sign_planets[p.sign_index].append((pname, abbr))
 
     lines: list[str] = []
-    lines.append(f'<svg width="{W}" height="{H}" xmlns="http://www.w3.org/2000/svg"'
-                 f' style="font-family: Georgia, serif; background:{_BG};">')
+    lines.append(
+        f'<svg width="{W}" height="{H}" xmlns="http://www.w3.org/2000/svg"'
+        f' style="font-family: Georgia, serif; background:{_BG};">'
+    )
 
     # ── Background ──────────────────────────────────────────────────────────
     lines.append(f'<rect width="{W}" height="{H}" fill="{_BG}"/>')
@@ -97,10 +104,10 @@ def south_indian_svg(chart: BirthChart, name: str = "") -> str:
     for si, (row, col) in _SIGN_POS.items():
         x = col * CELL
         y = row * CELL
-        is_lagna = (si == lagna_idx)
-        bg  = _LAGNA_BG  if is_lagna else _CELL_BG
+        is_lagna = si == lagna_idx
+        bg = _LAGNA_BG if is_lagna else _CELL_BG
         stk = _LAGNA_STO if is_lagna else _GRID_STO
-        sw  = 2          if is_lagna else 1
+        sw = 2 if is_lagna else 1
 
         # Cell background
         lines.append(
@@ -110,21 +117,21 @@ def south_indian_svg(chart: BirthChart, name: str = "") -> str:
 
         # Sign abbreviation — top-left
         lines.append(
-            f'<text x="{x+6}" y="{y+15}" font-size="11" fill="{_SIGN_CLR}">'
-            f'{_SIGN_ABBR[si]}</text>'
+            f'<text x="{x + 6}" y="{y + 15}" font-size="11" fill="{_SIGN_CLR}">'
+            f"{_SIGN_ABBR[si]}</text>"
         )
 
         # Lagna marker — top-right
         if is_lagna:
             lines.append(
-                f'<text x="{x+CELL-38}" y="{y+15}" font-size="10" '
+                f'<text x="{x + CELL - 38}" y="{y + 15}" font-size="10" '
                 f'fill="{_LAGNA_STO}" font-weight="bold">Lag</text>'
             )
             # Lagna degree
             deg = chart.lagna_degree_in_sign
             lines.append(
-                f'<text x="{x+6}" y="{y+27}" font-size="9" fill="{_LAGNA_STO}">'
-                f'{deg:.2f}°</text>'
+                f'<text x="{x + 6}" y="{y + 27}" font-size="9" fill="{_LAGNA_STO}">'
+                f"{deg:.2f}°</text>"
             )
 
         # Planets in this sign
@@ -134,7 +141,7 @@ def south_indian_svg(chart: BirthChart, name: str = "") -> str:
             py = y + top_offset + i * 17
             clr = _P_COLOR.get(pname, "#333")
             lines.append(
-                f'<text x="{x+8}" y="{py}" font-size="13" '
+                f'<text x="{x + 8}" y="{py}" font-size="13" '
                 f'fill="{clr}" font-weight="600">{abbr}</text>'
             )
 
@@ -151,11 +158,11 @@ def south_indian_svg(chart: BirthChart, name: str = "") -> str:
 
     # Diagonal cross lines (traditional South Indian decoration)
     lines.append(
-        f'<line x1="{cx}" y1="{cy}" x2="{cx+cw}" y2="{cy+ch}" '
+        f'<line x1="{cx}" y1="{cy}" x2="{cx + cw}" y2="{cy + ch}" '
         f'stroke="{_GRID_STO}" stroke-width="1" opacity="0.5"/>'
     )
     lines.append(
-        f'<line x1="{cx+cw}" y1="{cy}" x2="{cx}" y2="{cy+ch}" '
+        f'<line x1="{cx + cw}" y1="{cy}" x2="{cx}" y2="{cy + ch}" '
         f'stroke="{_GRID_STO}" stroke-width="1" opacity="0.5"/>'
     )
 
@@ -178,11 +185,13 @@ def south_indian_svg(chart: BirthChart, name: str = "") -> str:
             f'text-anchor="middle" font-weight="{fw}">{lbl}</text>'
         )
 
-    lines.append('</svg>')
+    lines.append("</svg>")
     return "\n".join(lines)
 
 
-def navamsha_svg(d9_data: dict[str, int], lagna_d9_si: int, label: str = "D9 Navamsha") -> str:
+def navamsha_svg(
+    d9_data: dict[str, int], lagna_d9_si: int, label: str = "D9 Navamsha"
+) -> str:
     """
     Render the Navamsha (D9) chart as a South Indian SVG.
 
@@ -201,34 +210,36 @@ def navamsha_svg(d9_data: dict[str, int], lagna_d9_si: int, label: str = "D9 Nav
     sign_planets: dict[int, list[str]] = {i: [] for i in range(12)}
     for pname, si in d9_data.items():
         if pname == "lagna":
-            continue   # lagna handled separately
+            continue  # lagna handled separately
         abbr = _PLANET_ABBR.get(pname, pname[:2])
         sign_planets[si].append((pname, abbr))
 
     lines: list[str] = []
-    lines.append(f'<svg width="{W}" height="{H}" xmlns="http://www.w3.org/2000/svg"'
-                 f' style="font-family: Georgia, serif; background:{_BG};">')
+    lines.append(
+        f'<svg width="{W}" height="{H}" xmlns="http://www.w3.org/2000/svg"'
+        f' style="font-family: Georgia, serif; background:{_BG};">'
+    )
     lines.append(f'<rect width="{W}" height="{H}" fill="{_BG}"/>')
 
     for si, (row, col) in _SIGN_POS.items():
         x = col * CELL
         y = row * CELL
-        is_lagna = (si == lagna_d9_si)
-        bg  = _LAGNA_BG  if is_lagna else _CELL_BG
+        is_lagna = si == lagna_d9_si
+        bg = _LAGNA_BG if is_lagna else _CELL_BG
         stk = _LAGNA_STO if is_lagna else _GRID_STO
-        sw  = 2          if is_lagna else 1
+        sw = 2 if is_lagna else 1
 
         lines.append(
             f'<rect x="{x}" y="{y}" width="{CELL}" height="{CELL}" '
             f'fill="{bg}" stroke="{stk}" stroke-width="{sw}"/>'
         )
         lines.append(
-            f'<text x="{x+6}" y="{y+15}" font-size="11" fill="{_SIGN_CLR}">'
-            f'{_SIGN_ABBR[si]}</text>'
+            f'<text x="{x + 6}" y="{y + 15}" font-size="11" fill="{_SIGN_CLR}">'
+            f"{_SIGN_ABBR[si]}</text>"
         )
         if is_lagna:
             lines.append(
-                f'<text x="{x+CELL-38}" y="{y+15}" font-size="10" '
+                f'<text x="{x + CELL - 38}" y="{y + 15}" font-size="10" '
                 f'fill="{_LAGNA_STO}" font-weight="bold">Lag</text>'
             )
 
@@ -238,7 +249,7 @@ def navamsha_svg(d9_data: dict[str, int], lagna_d9_si: int, label: str = "D9 Nav
             py = y + top_offset + i * 17
             clr = _P_COLOR.get(pname, "#333")
             lines.append(
-                f'<text x="{x+8}" y="{py}" font-size="13" '
+                f'<text x="{x + 8}" y="{py}" font-size="13" '
                 f'fill="{clr}" font-weight="600">{abbr}</text>'
             )
 
@@ -250,11 +261,11 @@ def navamsha_svg(d9_data: dict[str, int], lagna_d9_si: int, label: str = "D9 Nav
         f'fill="{_CTR_BG}" stroke="{_GRID_STO}" stroke-width="1"/>'
     )
     lines.append(
-        f'<line x1="{cx}" y1="{cy}" x2="{cx+cw}" y2="{cy+ch}" '
+        f'<line x1="{cx}" y1="{cy}" x2="{cx + cw}" y2="{cy + ch}" '
         f'stroke="{_GRID_STO}" stroke-width="1" opacity="0.5"/>'
     )
     lines.append(
-        f'<line x1="{cx+cw}" y1="{cy}" x2="{cx}" y2="{cy+ch}" '
+        f'<line x1="{cx + cw}" y1="{cy}" x2="{cx}" y2="{cy + ch}" '
         f'stroke="{_GRID_STO}" stroke-width="1" opacity="0.5"/>'
     )
     mid_x, mid_y = cx + cw // 2, cy + ch // 2
@@ -267,5 +278,5 @@ def navamsha_svg(d9_data: dict[str, int], lagna_d9_si: int, label: str = "D9 Nav
             f'<text x="{mid_x}" y="{fy}" font-size="{fs}" fill="{_CTR_TXT}" '
             f'text-anchor="middle" font-weight="{fw}">{lbl}</text>'
         )
-    lines.append('</svg>')
+    lines.append("</svg>")
     return "\n".join(lines)

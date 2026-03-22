@@ -25,12 +25,13 @@ Public API
   yoga_conjunction_strength(yoga_planets, chart) -> float
   association_strength(p1, p2, chart) -> AssociationStrength
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
-_CONJ_ORB_FULL = 15.0   # beyond this = no conjunction
-_CONJ_PVRNR_6  = 6.0    # PVRNR threshold for "close"
-_ASPECT_ORB    = 12.0   # for graha drishti
+_CONJ_ORB_FULL = 15.0  # beyond this = no conjunction
+_CONJ_PVRNR_6 = 6.0  # PVRNR threshold for "close"
+_ASPECT_ORB = 12.0  # for graha drishti
 
 
 def _circular_diff(lon1: float, lon2: float) -> float:
@@ -50,8 +51,7 @@ def conjunction_strength(lon1: float, lon2: float) -> float:
     return round(max(0.0, 1.0 - orb / _CONJ_ORB_FULL), 4)
 
 
-def aspect_strength(p1_lon: float, p2_lon: float,
-                    aspect_type: str = "graha") -> float:
+def aspect_strength(p1_lon: float, p2_lon: float, aspect_type: str = "graha") -> float:
     """
     Strength of a graha drishti aspect.
     aspect_type: 'graha' (7th full, 4th/8th Mars, 5th/9th Jupiter, 3rd/10th Saturn)
@@ -73,10 +73,10 @@ class AssociationStrength:
     planet1: str
     planet2: str
     orb_degrees: float
-    strength: float          # 0.0–1.0
-    quality: str             # "Tight"/"Strong"/"Moderate"/"Weak"/"Absent"
+    strength: float  # 0.0–1.0
+    quality: str  # "Tight"/"Strong"/"Moderate"/"Weak"/"Absent"
     in_same_sign: bool
-    parivartana: bool        # mutual exchange of signs
+    parivartana: bool  # mutual exchange of signs
 
     def reduces_yoga(self) -> bool:
         """True if orb too wide to deliver full yoga results (PVRNR > 8°)."""
@@ -101,23 +101,44 @@ def association_strength(p1: str, p2: str, chart) -> AssociationStrength:
     strength = conjunction_strength(pos1.longitude, pos2.longitude)
     same_sign = pos1.sign_index == pos2.sign_index
 
-    if strength >= 0.90:  q = "Tight"
-    elif strength >= 0.60: q = "Strong"
-    elif strength >= 0.33: q = "Moderate"
-    elif strength > 0.0:   q = "Weak"
-    else:                  q = "Absent"
+    if strength >= 0.90:
+        q = "Tight"
+    elif strength >= 0.60:
+        q = "Strong"
+    elif strength >= 0.33:
+        q = "Moderate"
+    elif strength > 0.0:
+        q = "Weak"
+    else:
+        q = "Absent"
 
     # Parivartana: each planet in sign owned by the other
-    _SIGN_LORD = {0:"Mars",1:"Venus",2:"Mercury",3:"Moon",4:"Sun",5:"Mercury",
-                  6:"Venus",7:"Mars",8:"Jupiter",9:"Saturn",10:"Saturn",11:"Jupiter"}
+    _SIGN_LORD = {
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
+    }
     lord1 = _SIGN_LORD[pos1.sign_index % 12]
     lord2 = _SIGN_LORD[pos2.sign_index % 12]
-    parivartana = (lord1 == p2 and lord2 == p1)
+    parivartana = lord1 == p2 and lord2 == p1
 
     return AssociationStrength(
-        planet1=p1, planet2=p2, orb_degrees=round(orb, 3),
-        strength=strength, quality=q,
-        in_same_sign=same_sign, parivartana=parivartana,
+        planet1=p1,
+        planet2=p2,
+        orb_degrees=round(orb, 3),
+        strength=strength,
+        quality=q,
+        in_same_sign=same_sign,
+        parivartana=parivartana,
     )
 
 
@@ -131,7 +152,7 @@ def yoga_conjunction_strength(yoga_planets: list[str], chart) -> float:
         return 1.0
     strengths = []
     for i in range(len(yoga_planets)):
-        for j in range(i+1, len(yoga_planets)):
+        for j in range(i + 1, len(yoga_planets)):
             s = association_strength(yoga_planets[i], yoga_planets[j], chart)
             if s.in_same_sign:
                 strengths.append(s.strength)

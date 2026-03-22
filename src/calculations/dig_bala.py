@@ -19,18 +19,19 @@ Verified against CALC_DigBala:
   Jupiter H6 → dist 5 → 0.17 ✓  Venus H3 → dist 1 → 0.83 ✓
   Saturn H3 → dist 4 → 0.33 ✓
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
 # Primary peak house for each planet (1-based)
 _DIG_BALA_PEAK = {
-    "Sun":     10,
-    "Moon":    4,
-    "Mars":    10,
+    "Sun": 10,
+    "Moon": 4,
+    "Mars": 10,
     "Mercury": 1,
     "Jupiter": 1,
-    "Venus":   4,
-    "Saturn":  7,
+    "Venus": 4,
+    "Saturn": 7,
 }
 
 
@@ -40,19 +41,23 @@ class DigBalaResult:
     peak_house: int
     current_house: int
     distance: int
-    score: float       # 0.0 – 1.0
+    score: float  # 0.0 – 1.0
     full_strength: bool  # score >= 0.75 (3 or closer)
 
     def label(self) -> str:
-        if self.score >= 0.75:  return "Strong"
-        if self.score >= 0.50:  return "Moderate"
-        if self.score >= 0.25:  return "Weak"
+        if self.score >= 0.75:
+            return "Strong"
+        if self.score >= 0.50:
+            return "Moderate"
+        if self.score >= 0.25:
+            return "Weak"
         return "Absent"
 
 
 def compute_dig_bala(chart) -> dict[str, DigBalaResult]:
     """Compute continuous Dig Bala score for all 7 planets."""
     from src.calculations.house_lord import compute_house_map
+
     hmap = compute_house_map(chart)
     results = {}
 
@@ -63,8 +68,12 @@ def compute_dig_bala(chart) -> dict[str, DigBalaResult]:
         dist = min(diff, 12 - diff)
         score = round(1.0 - dist / 6.0, 4)
         results[planet] = DigBalaResult(
-            planet=planet, peak_house=peak, current_house=current,
-            distance=dist, score=score, full_strength=dist <= 2,
+            planet=planet,
+            peak_house=peak,
+            current_house=current,
+            distance=dist,
+            score=score,
+            full_strength=dist <= 2,
         )
 
     return results

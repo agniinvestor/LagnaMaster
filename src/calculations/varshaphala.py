@@ -14,22 +14,21 @@ Sources:
   Neelakantha · Tajika Nilakanthi (primary Varshaphala text)
   K.N. Rao · Astrology, Destiny and the Wheel of Time Ch.7-9
 """
+
 from __future__ import annotations
 from dataclasses import dataclass, field
-from datetime import date, datetime
-from typing import Optional, Union
-import math
+from datetime import date
 
 # ─── Tajika Aspect Types ───────────────────────────────────────────────────────
 # Format: (name, exact_angle, max_orb_degrees)
 # Source: Tajika Nilakanthi; K.N. Rao references
 
 _TAJIKA_ASPECTS: list[tuple[str, float, float]] = [
-    ("Itthasala",  0.0,  8.0),   # Conjunction — applying
-    ("Ishrafa",    0.0,  8.0),   # Separation — separating (same angle, different applying)
-    ("Nakta",     60.0,  5.0),   # Sextile — via 3rd planet
-    ("Kambool",  120.0,  8.0),   # Trine — very benefic
-    ("Dainya",    90.0,  7.0),   # Square — malefic
+    ("Itthasala", 0.0, 8.0),  # Conjunction — applying
+    ("Ishrafa", 0.0, 8.0),  # Separation — separating (same angle, different applying)
+    ("Nakta", 60.0, 5.0),  # Sextile — via 3rd planet
+    ("Kambool", 120.0, 8.0),  # Trine — very benefic
+    ("Dainya", 90.0, 7.0),  # Square — malefic
 ]
 
 # For orb lookup: max orb by aspect type
@@ -37,21 +36,28 @@ _MAX_ORB: dict[str, float] = {name: orb for name, _, orb in _TAJIKA_ASPECTS}
 
 # Valid Tajika aspect angles (excluding 180° opposition which some schools include)
 _TAJIKA_ANGLES = [0.0, 60.0, 90.0, 120.0, 180.0]
-_TAJIKA_ORBS   = {0.0: 8.0, 60.0: 5.0, 90.0: 7.0, 120.0: 8.0, 180.0: 8.0}
-_TAJIKA_NAMES  = {0.0: ("Itthasala", "Ishrafa"), 60.0: ("Nakta",), 90.0: ("Dainya",), 120.0: ("Kambool",), 180.0: ("Kambool",)}
+_TAJIKA_ORBS = {0.0: 8.0, 60.0: 5.0, 90.0: 7.0, 120.0: 8.0, 180.0: 8.0}
+_TAJIKA_NAMES = {
+    0.0: ("Itthasala", "Ishrafa"),
+    60.0: ("Nakta",),
+    90.0: ("Dainya",),
+    120.0: ("Kambool",),
+    180.0: ("Kambool",),
+}
 
 
 # ─── TajikaAspect dataclass ───────────────────────────────────────────────────
+
 
 @dataclass
 class TajikaAspect:
     planet_a: str
     planet_b: str
-    aspect_type: str        # "Itthasala" / "Ishrafa" / "Nakta" / "Kambool" / "Dainya"
-    angle: float            # Exact Tajika angle (0/60/90/120/180)
-    orb: float              # Actual orb in degrees
-    applying: bool          # True = applying (Itthasala); False = separating (Ishrafa)
-    nature: str             # "benefic" / "malefic" / "variable"
+    aspect_type: str  # "Itthasala" / "Ishrafa" / "Nakta" / "Kambool" / "Dainya"
+    angle: float  # Exact Tajika angle (0/60/90/120/180)
+    orb: float  # Actual orb in degrees
+    applying: bool  # True = applying (Itthasala); False = separating (Ishrafa)
+    nature: str  # "benefic" / "malefic" / "variable"
 
     @property
     def aspect_name(self) -> str:
@@ -59,6 +65,7 @@ class TajikaAspect:
 
 
 # ─── Utility functions ─────────────────────────────────────────────────────────
+
 
 def _angular_distance(a: float, b: float) -> float:
     """
@@ -71,9 +78,13 @@ def _angular_distance(a: float, b: float) -> float:
     return diff
 
 
-def _is_applying(planet_a_lon: float, planet_a_speed: float,
-                 planet_b_lon: float, planet_b_speed: float,
-                 angle: float) -> bool:
+def _is_applying(
+    planet_a_lon: float,
+    planet_a_speed: float,
+    planet_b_lon: float,
+    planet_b_speed: float,
+    angle: float,
+) -> bool:
     """
     Determine if aspect is applying (planets moving toward exact angle).
     Itthasala: faster planet applying to slower planet.
@@ -82,10 +93,16 @@ def _is_applying(planet_a_lon: float, planet_a_speed: float,
     current_diff = (planet_b_lon - planet_a_lon) % 360.0
     if current_diff > 180.0:
         current_diff = 360.0 - current_diff
-    return relative_speed > 0 and current_diff > angle or relative_speed < 0 and current_diff < angle
+    return (
+        relative_speed > 0
+        and current_diff > angle
+        or relative_speed < 0
+        and current_diff < angle
+    )
 
 
 # ─── Tajika aspect detection ──────────────────────────────────────────────────
+
 
 def _detect_tajika_aspects(chart) -> list[TajikaAspect]:
     """
@@ -95,11 +112,16 @@ def _detect_tajika_aspects(chart) -> list[TajikaAspect]:
     aspects = []
     planets = list(chart.planets.items())
 
-    _NATURE = {0.0: "variable", 60.0: "benefic", 90.0: "malefic",
-               120.0: "benefic", 180.0: "malefic"}
+    _NATURE = {
+        0.0: "variable",
+        60.0: "benefic",
+        90.0: "malefic",
+        120.0: "benefic",
+        180.0: "malefic",
+    }
 
     for i, (pa, pa_data) in enumerate(planets):
-        for pb, pb_data in planets[i+1:]:
+        for pb, pb_data in planets[i + 1 :]:
             dist = _angular_distance(pa_data.longitude, pb_data.longitude)
 
             for angle, orb_max in _TAJIKA_ORBS.items():
@@ -108,8 +130,8 @@ def _detect_tajika_aspects(chart) -> list[TajikaAspect]:
                     # Determine aspect type
                     if angle == 0.0:
                         # Conjunction: applying = Itthasala, separating = Ishrafa
-                        pa_speed = getattr(pa_data, 'speed', 1.0)
-                        pb_speed = getattr(pb_data, 'speed', 1.0)
+                        pa_speed = getattr(pa_data, "speed", 1.0)
+                        pb_speed = getattr(pb_data, "speed", 1.0)
                         # Faster planet applying = Itthasala
                         applying = abs(pa_speed) >= abs(pb_speed)
                         atype = "Itthasala" if applying else "Ishrafa"
@@ -125,15 +147,17 @@ def _detect_tajika_aspects(chart) -> list[TajikaAspect]:
                     else:
                         continue
 
-                    aspects.append(TajikaAspect(
-                        planet_a=pa,
-                        planet_b=pb,
-                        aspect_type=atype,
-                        angle=angle,
-                        orb=round(actual_orb, 6),
-                        applying=applying,
-                        nature=_NATURE.get(angle, "variable"),
-                    ))
+                    aspects.append(
+                        TajikaAspect(
+                            planet_a=pa,
+                            planet_b=pb,
+                            aspect_type=atype,
+                            angle=angle,
+                            orb=round(actual_orb, 6),
+                            applying=applying,
+                            nature=_NATURE.get(angle, "variable"),
+                        )
+                    )
                     break  # only one aspect type per planet pair
 
     return aspects
@@ -141,9 +165,14 @@ def _detect_tajika_aspects(chart) -> list[TajikaAspect]:
 
 # ─── Solar Return computation ─────────────────────────────────────────────────
 
-def _compute_solar_return_jd(natal_sun_lon: float, birth_jd: float,
-                              query_year: int,
-                              lat: float = 28.6, lon: float = 77.2) -> float:
+
+def _compute_solar_return_jd(
+    natal_sun_lon: float,
+    birth_jd: float,
+    query_year: int,
+    lat: float = 28.6,
+    lon: float = 77.2,
+) -> float:
     """
     Find Julian Day when Sun returns to natal longitude in query_year.
     Uses binary search with pyswisseph.
@@ -151,6 +180,7 @@ def _compute_solar_return_jd(natal_sun_lon: float, birth_jd: float,
     """
     try:
         import swisseph as swe
+
         swe.set_sid_mode(swe.SIDM_LAHIRI)
 
         # Estimate: Sun moves ~1°/day, start search from approximate date
@@ -160,7 +190,7 @@ def _compute_solar_return_jd(natal_sun_lon: float, birth_jd: float,
 
         # Binary search: find when Sun longitude = natal_sun_lon
         # Search window: ±10 days around estimate
-        jd_low  = estimated_jd - 10.0
+        jd_low = estimated_jd - 10.0
         jd_high = estimated_jd + 10.0
 
         def sun_lon(jd):
@@ -199,6 +229,7 @@ def _jd_to_date(jd: float) -> date:
     """Convert Julian Day to calendar date."""
     try:
         import swisseph as swe
+
         y, m, d, _ = swe.revjul(jd)
         return date(int(y), int(m), int(d))
     except Exception:
@@ -221,6 +252,7 @@ def _cast_varsha_chart(solar_return_jd: float, natal_lat: float, natal_lon: floa
     """Cast the annual chart at solar return moment."""
     try:
         from src.ephemeris import compute_chart
+
         sr_date = _jd_to_date(solar_return_jd)
         # Fractional hour from JD
         frac_day = solar_return_jd - int(solar_return_jd) + 0.5
@@ -228,8 +260,13 @@ def _cast_varsha_chart(solar_return_jd: float, natal_lat: float, natal_lon: floa
             frac_day -= 1.0
         hour = frac_day * 24.0
         return compute_chart(
-            year=sr_date.year, month=sr_date.month, day=sr_date.day,
-            hour=hour, lat=natal_lat, lon=natal_lon, tz_offset=0.0,
+            year=sr_date.year,
+            month=sr_date.month,
+            day=sr_date.day,
+            hour=hour,
+            lat=natal_lat,
+            lon=natal_lon,
+            tz_offset=0.0,
             ayanamsha="lahiri",
         )
     except Exception:
@@ -239,9 +276,20 @@ def _cast_varsha_chart(solar_return_jd: float, natal_lat: float, natal_lon: floa
 # ─── Muntha ────────────────────────────────────────────────────────────────────
 
 _SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
 ]
+
 
 def _compute_muntha(natal_lagna_si: int, years_elapsed: int) -> int:
     """Muntha = (natal_lagna_sign + years_elapsed) % 12. Source: Tajika Nilakanthi."""
@@ -251,6 +299,7 @@ def _compute_muntha(natal_lagna_si: int, years_elapsed: int) -> int:
 # ─── Varsha Pati (Ruler of the Year) ─────────────────────────────────────────
 
 _NAT_STRENGTH = ["Sun", "Moon", "Venus", "Jupiter", "Mercury", "Mars", "Saturn"]
+
 
 def _compute_varsha_pati(varsha_chart) -> str:
     """
@@ -263,7 +312,10 @@ def _compute_varsha_pati(varsha_chart) -> str:
     lagna_si = varsha_chart.lagna_sign_index
     kendra_signs = {(lagna_si + k) % 12 for k in (0, 3, 6, 9)}
     for p in _NAT_STRENGTH:
-        if p in varsha_chart.planets and varsha_chart.planets[p].sign_index in kendra_signs:
+        if (
+            p in varsha_chart.planets
+            and varsha_chart.planets[p].sign_index in kendra_signs
+        ):
             return p
     for p in _NAT_STRENGTH:
         if p in varsha_chart.planets:
@@ -272,6 +324,7 @@ def _compute_varsha_pati(varsha_chart) -> str:
 
 
 # ─── VarshaphalaResult ────────────────────────────────────────────────────────
+
 
 @dataclass
 class VarshaphalaResult:
@@ -285,7 +338,7 @@ class VarshaphalaResult:
     solar_return_date: date
 
     # Charts
-    varsha_chart: object           # BirthChart at solar return moment
+    varsha_chart: object  # BirthChart at solar return moment
 
     # Lagna
     varsha_lagna_sign_index: int
@@ -309,11 +362,15 @@ class VarshaphalaResult:
 
     def aspects_for_planet(self, planet: str) -> list[TajikaAspect]:
         """Return all aspects involving a given planet."""
-        return [a for a in self.tajika_aspects
-                if a.planet_a == planet or a.planet_b == planet]
+        return [
+            a
+            for a in self.tajika_aspects
+            if a.planet_a == planet or a.planet_b == planet
+        ]
 
 
 # ─── Main computation ─────────────────────────────────────────────────────────
+
 
 def compute_varshaphala(
     natal_chart,
@@ -360,12 +417,15 @@ def compute_varshaphala(
     years_elapsed = query_year - birth_year
 
     # Natal Sun longitude
-    natal_sun_lon = natal_chart.planets["Sun"].longitude if "Sun" in natal_chart.planets else 117.99
+    natal_sun_lon = (
+        natal_chart.planets["Sun"].longitude if "Sun" in natal_chart.planets else 117.99
+    )
 
     # Approximate birth JD (for solar return search anchor)
     # India 1947: JD ≈ 2432126.7 for 1947-08-15
     try:
         import swisseph as swe
+
         swe.set_sid_mode(swe.SIDM_LAHIRI)
         birth_jd = swe.julday(birth_year, 8, 15, 0.0)
     except Exception:
@@ -422,8 +482,16 @@ def get_tajika_aspect(lon_a: float, lon_b: float):
     dist = _angular_distance(lon_a, lon_b)
     for angle, orb_max in _TAJIKA_ORBS.items():
         if abs(dist - angle) <= orb_max:
-            names = {0.0: "Itthasala", 60.0: "Nakta", 90.0: "Dainya",
-                     120.0: "Kambool", 180.0: "Kambool"}
-            return {"angle": angle, "orb": round(abs(dist - angle), 6),
-                    "aspect_type": names.get(angle, "Unknown")}
+            names = {
+                0.0: "Itthasala",
+                60.0: "Nakta",
+                90.0: "Dainya",
+                120.0: "Kambool",
+                180.0: "Kambool",
+            }
+            return {
+                "angle": angle,
+                "orb": round(abs(dist - angle), 6),
+                "aspect_type": names.get(angle, "Unknown"),
+            }
     return None

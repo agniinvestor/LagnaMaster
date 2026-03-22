@@ -1,4 +1,5 @@
 """tests/test_session24.py — Session 24 Kubernetes + Helm chart tests."""
+
 from __future__ import annotations
 from pathlib import Path
 import pytest
@@ -50,6 +51,7 @@ class TestHelmContent:
     def values(self):
         pytest.importorskip("yaml")
         import yaml
+
         return yaml.safe_load((HELM / "values.yaml").read_text())
 
     @pytest.fixture(autouse=True)

@@ -8,39 +8,38 @@ Source: BPHS Ch.44; PVRNR commentaries
 
 from __future__ import annotations
 from dataclasses import dataclass
-from math import sqrt
 
 
 # Pindayu years contributed by each planet in its exaltation sign
 PINDAYU_EXALT_YEARS: dict[str, float] = {
-    "Sun":     19.0,
-    "Moon":    25.0,
-    "Mars":    15.0,
+    "Sun": 19.0,
+    "Moon": 25.0,
+    "Mars": 15.0,
     "Mercury": 12.0,
     "Jupiter": 15.0,
-    "Venus":   21.0,
-    "Saturn":  20.0,
+    "Venus": 21.0,
+    "Saturn": 20.0,
 }
 
 # Nisargayu (natural) longevity years by planet
 NISARGAYU_YEARS: dict[str, float] = {
-    "Sun":     20.0,
-    "Moon":    1.0,
-    "Mars":    2.0,
+    "Sun": 20.0,
+    "Moon": 1.0,
+    "Mars": 2.0,
     "Mercury": 9.0,
     "Jupiter": 18.0,
-    "Venus":   20.0,
-    "Saturn":  50.0,
+    "Venus": 20.0,
+    "Saturn": 50.0,
 }
 
 
 @dataclass
 class AyurdayaResult:
-    pindayu: float      # years from planetary arc method
-    amsayu: float       # years from navamsha positions
-    nisargayu: float    # natural/fixed longevity
-    combined: float     # (pindayu + amsayu + nisargayu) / 3
-    category: str       # "Short" (<32) / "Middle" (32-64) / "Long" (>64)
+    pindayu: float  # years from planetary arc method
+    amsayu: float  # years from navamsha positions
+    nisargayu: float  # natural/fixed longevity
+    combined: float  # (pindayu + amsayu + nisargayu) / 3
+    category: str  # "Short" (<32) / "Middle" (32-64) / "Long" (>64)
 
 
 def compute_pindayu(chart) -> float:
@@ -93,6 +92,7 @@ def compute_amsayu(chart) -> float:
             continue
         # Full years if exalted in D9, proportional otherwise
         from src.calculations.dignity import EXALT_SIGN, OWN_SIGNS
+
         if planet in EXALT_SIGN and d9_si == EXALT_SIGN[planet]:
             frac = 1.0
         elif planet in OWN_SIGNS and d9_si in OWN_SIGNS[planet]:
@@ -115,6 +115,7 @@ def compute_nisargayu(chart) -> float:
         if planet not in chart.planets:
             continue
         from src.calculations.dignity import compute_dignity, DignityLevel
+
         d = compute_dignity(planet, chart)
         if d.dignity in (DignityLevel.DEEP_EXALT, DignityLevel.EXALT):
             total += yrs
@@ -133,10 +134,10 @@ def compute_ayurdaya(chart) -> AyurdayaResult:
     Full Ayurdaya calculation combining all three methods.
     Source: BPHS Ch.44
     """
-    pindayu   = compute_pindayu(chart)
-    amsayu    = compute_amsayu(chart)
+    pindayu = compute_pindayu(chart)
+    amsayu = compute_amsayu(chart)
     nisargayu = compute_nisargayu(chart)
-    combined  = round((pindayu + amsayu + nisargayu) / 3.0, 2)
+    combined = round((pindayu + amsayu + nisargayu) / 3.0, 2)
 
     if combined < 32:
         category = "Short"

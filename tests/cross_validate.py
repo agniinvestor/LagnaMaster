@@ -46,8 +46,10 @@ class ValidationReport:
             print("\nFailing fields:")
             for d in self.diffs:
                 if not d.within_tolerance:
-                    print(f"  {d.field}: LM={d.lm_value:.4f} JHora={d.jhora_value:.4f} "
-                          f"(tol±{d.tolerance})")
+                    print(
+                        f"  {d.field}: LM={d.lm_value:.4f} JHora={d.jhora_value:.4f} "
+                        f"(tol±{d.tolerance})"
+                    )
 
 
 def cross_validate_positions(
@@ -82,20 +84,29 @@ def cross_validate_positions(
             diff = abs(lm_lon - jhora_lon) % 360
             diff = min(diff, 360 - diff)
             within = diff <= position_tolerance
-            diffs.append(FieldDiff(
-                field=f"{planet_name}.longitude",
-                lm_value=lm_lon,
-                jhora_value=jhora_lon,
-                tolerance=position_tolerance,
-                within_tolerance=within,
-            ))
+            diffs.append(
+                FieldDiff(
+                    field=f"{planet_name}.longitude",
+                    lm_value=lm_lon,
+                    jhora_value=jhora_lon,
+                    tolerance=position_tolerance,
+                    within_tolerance=within,
+                )
+            )
 
     # Lagna
     if "Lagna" in jhora_data:
         diff = abs(lm_chart.lagna - jhora_data["Lagna"]) % 360
         diff = min(diff, 360 - diff)
-        diffs.append(FieldDiff("Lagna", lm_chart.lagna, jhora_data["Lagna"],
-                               position_tolerance, diff <= position_tolerance))
+        diffs.append(
+            FieldDiff(
+                "Lagna",
+                lm_chart.lagna,
+                jhora_data["Lagna"],
+                position_tolerance,
+                diff <= position_tolerance,
+            )
+        )
 
     passing = sum(1 for d in diffs if d.within_tolerance)
     return ValidationReport(
@@ -111,16 +122,28 @@ def cross_validate_positions(
 
 # Fixture: Neecha Bhanga chart — Mars debilitated in Cancer with 2 NB conditions
 NEECHA_BHANGA_FIXTURE = {
-    "year": 1990, "month": 6, "day": 15, "hour": 12.0,
-    "lat": 28.6139, "lon": 77.2090, "tz_offset": 5.5, "ayanamsha": "lahiri",
+    "year": 1990,
+    "month": 6,
+    "day": 15,
+    "hour": 12.0,
+    "lat": 28.6139,
+    "lon": 77.2090,
+    "tz_offset": 5.5,
+    "ayanamsha": "lahiri",
     "_description": "Mars in Cancer (debilitated); Moon in Capricorn-Kendra provides NB",
     "_validates": ["Neecha Bhanga all 6 conditions", "NBRY when >=2 conditions"],
 }
 
 # Fixture: Nakshatra cusp birth
 NAK_CUSP_FIXTURE = {
-    "year": 1947, "month": 8, "day": 15, "hour": 0.0,
-    "lat": 28.6139, "lon": 77.2090, "tz_offset": 5.5, "ayanamsha": "lahiri",
+    "year": 1947,
+    "month": 8,
+    "day": 15,
+    "hour": 0.0,
+    "lat": 28.6139,
+    "lon": 77.2090,
+    "tz_offset": 5.5,
+    "ayanamsha": "lahiri",
     "_moon_override": 40.000001,  # Moon at exact Krittika start
     "_description": "Moon at exact nakshatra boundary (40.0°)",
     "_validates": ["Nakshatra float boundary fix"],
@@ -128,16 +151,28 @@ NAK_CUSP_FIXTURE = {
 
 # Fixture: Female chart, night birth
 FEMALE_CHART_FIXTURE = {
-    "year": 1975, "month": 3, "day": 21, "hour": 22.0,
-    "lat": 18.9667, "lon": 72.8333, "tz_offset": 5.5, "ayanamsha": "lahiri",
+    "year": 1975,
+    "month": 3,
+    "day": 21,
+    "hour": 22.0,
+    "lat": 18.9667,
+    "lon": 72.8333,
+    "tz_offset": 5.5,
+    "ayanamsha": "lahiri",
     "_description": "Female chart, night birth for gender-specific yoga rules",
     "_validates": ["Mahabhagya Yoga gender conditions"],
 }
 
 # Fixture: High-latitude birth (Helsinki, 60.2°N)
 HIGH_LATITUDE_FIXTURE = {
-    "year": 1985, "month": 6, "day": 21, "hour": 3.0,
-    "lat": 60.1699, "lon": 24.9384, "tz_offset": 3.0, "ayanamsha": "lahiri",
+    "year": 1985,
+    "month": 6,
+    "day": 21,
+    "hour": 3.0,
+    "lat": 60.1699,
+    "lon": 24.9384,
+    "tz_offset": 3.0,
+    "ayanamsha": "lahiri",
     "_description": "Helsinki — high latitude affects house boundaries",
     "_validates": ["Bhava Chalita cusp divergence at high latitude"],
 }
@@ -151,6 +186,7 @@ if __name__ == "__main__":
 
     if args.jhora_csv:
         from src.ephemeris import compute_chart
+
         if args.chart == "india_1947":
             chart = compute_chart(1947, 8, 15, 0.0, 28.6139, 77.2090, 5.5)
         report = cross_validate_positions(chart, args.jhora_csv, args.chart)

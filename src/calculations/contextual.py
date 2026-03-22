@@ -17,6 +17,7 @@ What is NOT encodable (acknowledged):
 PVRNR on DKP: "rules are guidelines, exact application requires
 the astrologer's knowledge" (p458).
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
@@ -24,15 +25,24 @@ from dataclasses import dataclass
 # "King" → "Leader/CEO/Politician" etc.
 _ERA_PROFESSION_MAP = {
     # (Primary planet, Key house): (Classical result, Modern equivalent)
-    ("Sun",   10): ("King, administrator",     "CEO, government official, leader"),
-    ("Moon",  10): ("Trader, public figure",   "Merchant, media personality, public servant"),
-    ("Mars",  10): ("Soldier, warrior",        "Athlete, military, surgeon, engineer"),
-    ("Mercury",10):("Scholar, minister",       "Analyst, writer, teacher, communicator"),
-    ("Jupiter",10):("Counselor, priest",       "Advisor, educator, judge, spiritual teacher"),
-    ("Venus", 10): ("Artist, luxury trader",  "Designer, entertainer, luxury industry"),
-    ("Saturn", 10):("Worker, servant",        "Service industry, labor, discipline-based work"),
-    ("Sun",   2):  ("Wealthy from authority", "Income from leadership or government"),
-    ("Jupiter",5): ("Learned, children-blessed","Academic achievement, progeny"),
+    ("Sun", 10): ("King, administrator", "CEO, government official, leader"),
+    ("Moon", 10): (
+        "Trader, public figure",
+        "Merchant, media personality, public servant",
+    ),
+    ("Mars", 10): ("Soldier, warrior", "Athlete, military, surgeon, engineer"),
+    ("Mercury", 10): ("Scholar, minister", "Analyst, writer, teacher, communicator"),
+    ("Jupiter", 10): (
+        "Counselor, priest",
+        "Advisor, educator, judge, spiritual teacher",
+    ),
+    ("Venus", 10): ("Artist, luxury trader", "Designer, entertainer, luxury industry"),
+    ("Saturn", 10): (
+        "Worker, servant",
+        "Service industry, labor, discipline-based work",
+    ),
+    ("Sun", 2): ("Wealthy from authority", "Income from leadership or government"),
+    ("Jupiter", 5): ("Learned, children-blessed", "Academic achievement, progeny"),
 }
 
 # Latitude adjustments: higher latitudes affect house strength calculations
@@ -49,10 +59,12 @@ class ContextualFlags:
     practitioner_note: str
 
 
-def compute_contextual_flags(chart, lat: float = 28.0,
-                              birth_year: int = 1980) -> ContextualFlags:
+def compute_contextual_flags(
+    chart, lat: float = 28.0, birth_year: int = 1980
+) -> ContextualFlags:
     """Generate contextual interpretation flags."""
     from src.calculations.house_lord import compute_house_map
+
     hmap = compute_house_map(chart)
     ph = hmap.planet_house
 
@@ -70,9 +82,13 @@ def compute_contextual_flags(chart, lat: float = 28.0,
 
     # Cultural marriage note (era-aware)
     if birth_year < 1960:
-        marriage_note = "Classical marriage age expectations apply (earlier unions common)"
+        marriage_note = (
+            "Classical marriage age expectations apply (earlier unions common)"
+        )
     elif birth_year < 2000:
-        marriage_note = "Modern context: marriage timing spans wider range; D9 themes still apply"
+        marriage_note = (
+            "Modern context: marriage timing spans wider range; D9 themes still apply"
+        )
     else:
         marriage_note = "Contemporary context: partnership forms vary; focus on D9 and 7th house themes"
 

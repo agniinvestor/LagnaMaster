@@ -10,23 +10,65 @@ Session 113 fix: nakshatra index float error
 
 from __future__ import annotations
 from dataclasses import dataclass
-from typing import Optional
 
 NAKSHATRA_NAMES = [
-    "Ashwini", "Bharani", "Krittika", "Rohini", "Mrigashira", "Ardra",
-    "Punarvasu", "Pushya", "Ashlesha", "Magha", "Purva Phalguni",
-    "Uttara Phalguni", "Hasta", "Chitra", "Swati", "Vishakha",
-    "Anuradha", "Jyeshtha", "Mula", "Purva Ashadha", "Uttara Ashadha",
-    "Shravana", "Dhanishtha", "Shatabhisha", "Purva Bhadrapada",
-    "Uttara Bhadrapada", "Revati",
+    "Ashwini",
+    "Bharani",
+    "Krittika",
+    "Rohini",
+    "Mrigashira",
+    "Ardra",
+    "Punarvasu",
+    "Pushya",
+    "Ashlesha",
+    "Magha",
+    "Purva Phalguni",
+    "Uttara Phalguni",
+    "Hasta",
+    "Chitra",
+    "Swati",
+    "Vishakha",
+    "Anuradha",
+    "Jyeshtha",
+    "Mula",
+    "Purva Ashadha",
+    "Uttara Ashadha",
+    "Shravana",
+    "Dhanishtha",
+    "Shatabhisha",
+    "Purva Bhadrapada",
+    "Uttara Bhadrapada",
+    "Revati",
 ]
 
 NAKSHATRA_LORDS = [
-    "Ketu", "Venus", "Sun", "Moon", "Mars", "Rahu",
-    "Jupiter", "Saturn", "Mercury", "Ketu", "Venus",
-    "Sun", "Moon", "Mars", "Rahu", "Jupiter",
-    "Saturn", "Mercury", "Ketu", "Venus", "Sun",
-    "Moon", "Mars", "Rahu", "Jupiter", "Saturn", "Mercury",
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
 ]
 
 GANDA_MOOL = {"Ashwini", "Ashlesha", "Magha", "Jyeshtha", "Mula", "Revati"}
@@ -39,25 +81,35 @@ GANDA_MOOL = {"Ashwini", "Ashlesha", "Magha", "Jyeshtha", "Mula", "Revati"}
 _D9_START = {0: 0, 1: 9, 2: 6, 3: 3}
 
 # Nakshatra width: exactly 40/3 degrees = 800 arcminutes
-_NAK_WIDTH = 40.0 / 3.0   # 13.33333... degrees
+_NAK_WIDTH = 40.0 / 3.0  # 13.33333... degrees
 _NAK_TOTAL = 360.0
 
 
 @dataclass
 class NakshatraPosition:
     nakshatra: str
-    nakshatra_index: int   # 0-26
-    pada: int              # 1-4
+    nakshatra_index: int  # 0-26
+    pada: int  # 1-4
     dasha_lord: str
-    navamsha_sign: str     # D9 sign name — backward compat
+    navamsha_sign: str  # D9 sign name — backward compat
     navamsha_sign_name: str
     is_ganda_mool: bool
     longitude: float
 
 
 _SIGN_NAMES = [
-    "Aries","Taurus","Gemini","Cancer","Leo","Virgo",
-    "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
 ]
 
 
@@ -124,15 +176,18 @@ def compute_navamsha_chart(chart) -> dict[str, int]:
 
 
 # ── Backward-compatibility aliases ──
-NAKSHATRAS = NAKSHATRA_NAMES          # old name used by existing tests/modules
-NAKSHATRA_SPAN = _NAK_WIDTH           # old name: degrees per nakshatra = 40/3
+NAKSHATRAS = NAKSHATRA_NAMES  # old name used by existing tests/modules
+NAKSHATRA_SPAN = _NAK_WIDTH  # old name: degrees per nakshatra = 40/3
 
 
 # ── Backward-compatibility: old NAKSHATRAS was list of (name, lord) tuples ──
 NAKSHATRAS_TUPLES = list(zip(NAKSHATRA_NAMES, NAKSHATRA_LORDS))
 # Override NAKSHATRAS to be tuples if old code unpacks 2 values
 # Some old tests unpack 3: (name, lord, span) -- provide that too
-NAKSHATRAS_FULL = [(NAKSHATRA_NAMES[i], NAKSHATRA_LORDS[i], NAKSHATRA_NAMES[i] in GANDA_MOOL) for i in range(27)]
+NAKSHATRAS_FULL = [
+    (NAKSHATRA_NAMES[i], NAKSHATRA_LORDS[i], NAKSHATRA_NAMES[i] in GANDA_MOOL)
+    for i in range(27)
+]
 
 
 # navamsha_sign now returns sign name string directly (see field definition above)
@@ -141,8 +196,9 @@ NAKSHATRAS_FULL = [(NAKSHATRA_NAMES[i], NAKSHATRA_LORDS[i], NAKSHATRA_NAMES[i] i
 # Abhijit Nakshatra (XII-C) — 28th intercalary nakshatra
 # Location: 6°40' to 10°53'20" in Capricorn (sidereal)
 # Source: PVRNR BPHS; used in Muhurtha and Kalachakra
-ABHIJIT_START_LON = 9 * 30 + 6 + 40/60     # ~276.667°
-ABHIJIT_END_LON   = 9 * 30 + 10 + 53/60 + 20/3600  # ~280.889°
+ABHIJIT_START_LON = 9 * 30 + 6 + 40 / 60  # ~276.667°
+ABHIJIT_END_LON = 9 * 30 + 10 + 53 / 60 + 20 / 3600  # ~280.889°
+
 
 def is_abhijit_nakshatra(longitude: float) -> bool:
     """Returns True if longitude falls in Abhijit nakshatra (Capricorn 6°40'-10°53'20")."""

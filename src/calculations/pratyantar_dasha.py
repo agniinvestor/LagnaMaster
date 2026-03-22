@@ -16,13 +16,27 @@ from dateutil.relativedelta import relativedelta
 from typing import Optional
 
 _SEQUENCE = [
-    "Ketu", "Venus", "Sun", "Moon", "Mars",
-    "Rahu", "Jupiter", "Saturn", "Mercury"
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
 ]
 
 VIMSHOTTARI_YEARS: dict[str, float] = {
-    "Ketu": 7, "Venus": 20, "Sun": 6, "Moon": 10, "Mars": 7,
-    "Rahu": 18, "Jupiter": 16, "Saturn": 19, "Mercury": 17,
+    "Ketu": 7,
+    "Venus": 20,
+    "Sun": 6,
+    "Moon": 10,
+    "Mars": 7,
+    "Rahu": 18,
+    "Jupiter": 16,
+    "Saturn": 19,
+    "Mercury": 17,
 }
 
 
@@ -37,6 +51,7 @@ class PratyantarDasha:
 @dataclass
 class AntarDashaFull:
     """AntarDasha with embedded Pratyantar list."""
+
     lord: str
     start: date
     end: date
@@ -69,12 +84,14 @@ def compute_pratyantar_dashas(
         pd_days = pd_years * 365.25
         pd_end_dt = current_start + relativedelta(days=round(pd_days))
 
-        pratyantars.append(PratyantarDasha(
-            lord=pd_lord,
-            start=current_start,
-            end=min(pd_end_dt, ad_end),
-            years=round(pd_years, 6),
-        ))
+        pratyantars.append(
+            PratyantarDasha(
+                lord=pd_lord,
+                start=current_start,
+                end=min(pd_end_dt, ad_end),
+                years=round(pd_years, 6),
+            )
+        )
         current_start = pd_end_dt
 
     return pratyantars

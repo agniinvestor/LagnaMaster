@@ -16,79 +16,90 @@ Sources:
   Saravali Ch.3 (Chesta Bala)
 """
 
-from __future__ import annotations
-from dataclasses import dataclass, field
-from math import sqrt
-from datetime import datetime
-from typing import Optional
+from __future__ import annotations  # noqa: F401
+from dataclasses import dataclass  # noqa: F401
+from math import sqrt  # noqa: F401
+from datetime import datetime  # noqa: F401
+from typing import Optional  # noqa: F401
 
 # ─── Constants ───────────────────────────────────────────────────────────────
 
 # Naisargika (Natural) Bala — fixed hierarchy, never changes
 # Source: BPHS Ch.27
 NAISARGIKA_BALA: dict[str, float] = {
-    "Sun":     60.0,
-    "Moon":    51.43,
-    "Venus":   42.86,
+    "Sun": 60.0,
+    "Moon": 51.43,
+    "Venus": 42.86,
     "Jupiter": 34.29,
     "Mercury": 25.71,
-    "Mars":    17.14,
-    "Saturn":   8.57,
+    "Mars": 17.14,
+    "Saturn": 8.57,
 }
 
 # Dig Bala peak house for each planet
 # Source: BPHS Ch.27 v.12-15
 DIG_BALA_PEAK_HOUSE: dict[str, int] = {
-    "Sun":     10,  # H10 = 10th house
-    "Mars":    10,
-    "Moon":     4,
-    "Venus":    4,
-    "Mercury":  1,
-    "Jupiter":  1,
-    "Saturn":   7,
+    "Sun": 10,  # H10 = 10th house
+    "Mars": 10,
+    "Moon": 4,
+    "Venus": 4,
+    "Mercury": 1,
+    "Jupiter": 1,
+    "Saturn": 7,
 }
 
 # Saptavargaja Bala Virupas per dignity level per varga
 # Source: BPHS Ch.27 v.1-20
 SAPTAVARGAJA_VIRUPAS: dict[str, float] = {
-    "DEEP_EXALT":          30.0,
-    "EXALT":               30.0,
-    "MOOLTRIKONA":         30.0,
-    "OWN_SIGN":            22.5,
-    "FRIEND_SIGN":         15.0,
-    "NEUTRAL":              7.5,
-    "ENEMY_SIGN":           3.75,
-    "DEBIL":                1.875,
-    "NEECHA_BHANGA_RAJA":  22.5,  # treated as neutral for Saptavargaja
-    "NEECHA_BHANGA":        7.5,
+    "DEEP_EXALT": 30.0,
+    "EXALT": 30.0,
+    "MOOLTRIKONA": 30.0,
+    "OWN_SIGN": 22.5,
+    "FRIEND_SIGN": 15.0,
+    "NEUTRAL": 7.5,
+    "ENEMY_SIGN": 3.75,
+    "DEBIL": 1.875,
+    "NEECHA_BHANGA_RAJA": 22.5,  # treated as neutral for Saptavargaja
+    "NEECHA_BHANGA": 7.5,
 }
 
 # 7 vargas used for Saptavargaja Bala
 SAPTAVARGA_LIST = [1, 2, 3, 7, 9, 12, 30]
 
 # Ojha-Yugma Bala — male planets in odd signs, female in even signs = 30 Virupas
-MALE_PLANETS   = {"Sun", "Mars", "Jupiter"}
+MALE_PLANETS = {"Sun", "Mars", "Jupiter"}
 FEMALE_PLANETS = {"Moon", "Venus"}
 # Mercury, Saturn: neutral — get 15 Virupas regardless
 
 # Kendradi Bala
 KENDRADI_VIRUPAS: dict[str, float] = {
-    "kendra":    60.0,  # H1/H4/H7/H10
-    "panapara":  30.0,  # H2/H5/H8/H11
-    "apoklima":  15.0,  # H3/H6/H9/H12
+    "kendra": 60.0,  # H1/H4/H7/H10
+    "panapara": 30.0,  # H2/H5/H8/H11
+    "apoklima": 15.0,  # H3/H6/H9/H12
 }
 
 # Aspect partial strengths (Phase 0 fix: BPHS Ch.26 v.3-5)
 # Used for Drik Bala computation
 ASPECT_STRENGTH: dict[tuple[str, int], float] = {
-    ("Mars",    4): 0.75, ("Mars",    8): 0.75,
-    ("Jupiter", 5): 0.75, ("Jupiter", 9): 0.75,
-    ("Saturn",  3): 0.75, ("Saturn", 10): 0.75,
+    ("Mars", 4): 0.75,
+    ("Mars", 8): 0.75,
+    ("Jupiter", 5): 0.75,
+    ("Jupiter", 9): 0.75,
+    ("Saturn", 3): 0.75,
+    ("Saturn", 10): 0.75,
 }
 
 # Hora sequence for Kala Bala (weekday lord order)
 _HORA_SEQUENCE = ["Sun", "Venus", "Mercury", "Moon", "Saturn", "Jupiter", "Mars"]
-_WEEKDAY_LORDS = ["Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Sun"]  # Mon=0
+_WEEKDAY_LORDS = [
+    "Moon",
+    "Mars",
+    "Mercury",
+    "Jupiter",
+    "Venus",
+    "Saturn",
+    "Sun",
+]  # Mon=0
 
 # Vara Bala: each weekday's ruling planet gets 45 Virupas
 # Hora Bala: birth hora lord gets 60 Virupas
@@ -101,62 +112,68 @@ _WEEKDAY_LORDS = ["Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Sun"
 
 # ─── Result dataclass ────────────────────────────────────────────────────────
 
+
 @dataclass
 class ShadbalResult:
     planet: str
 
     # Sthana Bala components
-    uchcha_bala:      float = 0.0   # 0-60 (from dignity.py)
+    uchcha_bala: float = 0.0  # 0-60 (from dignity.py)
     saptavargaja_bala: float = 0.0  # 0-175 (7 vargas × dignity)
-    ojha_yugma_bala:  float = 0.0   # 15 or 30
-    kendradi_bala:    float = 0.0   # 15/30/60
-    drekkana_bala:    float = 0.0   # 15 (male in 1st/female in 3rd drekkana)
+    ojha_yugma_bala: float = 0.0  # 15 or 30
+    kendradi_bala: float = 0.0  # 15/30/60
+    drekkana_bala: float = 0.0  # 15 (male in 1st/female in 3rd drekkana)
     # sthana total
-    sthana_bala:      float = 0.0
+    sthana_bala: float = 0.0
 
     # Dig Bala
-    dig_bala:         float = 0.0   # 0-60
+    dig_bala: float = 0.0  # 0-60
 
     # Kala Bala components
-    nathonnata_bala:  float = 0.0
-    paksha_bala:      float = 0.0
-    tribhaga_bala:    float = 0.0
-    vara_bala:        float = 0.0
-    hora_bala:        float = 0.0
-    masa_bala:        float = 0.0
-    abda_bala:        float = 0.0
-    ayana_bala:       float = 0.0
+    nathonnata_bala: float = 0.0
+    paksha_bala: float = 0.0
+    tribhaga_bala: float = 0.0
+    vara_bala: float = 0.0
+    hora_bala: float = 0.0
+    masa_bala: float = 0.0
+    abda_bala: float = 0.0
+    ayana_bala: float = 0.0
     # kala total
-    kala_bala:        float = 0.0
+    kala_bala: float = 0.0
 
     # Chesta Bala
-    chesta_bala:      float = 0.0   # 0-60
+    chesta_bala: float = 0.0  # 0-60
 
     # Naisargika Bala
-    naisargika_bala:  float = 0.0   # fixed
+    naisargika_bala: float = 0.0  # fixed
 
     # Drik Bala
-    drik_bala:        float = 0.0   # signed sum of aspects received
+    drik_bala: float = 0.0  # signed sum of aspects received
 
     # Totals
-    total:            float = 0.0   # sum of all components
+    total: float = 0.0  # sum of all components
 
     # Derived
-    ishta_bala:       float = 0.0   # sqrt(uchcha * chesta)
-    kashta_bala:      float = 0.0   # sqrt((60-uchcha) * (60-chesta))
+    ishta_bala: float = 0.0  # sqrt(uchcha * chesta)
+    kashta_bala: float = 0.0  # sqrt((60-uchcha) * (60-chesta))
 
     @property
     def is_strong(self) -> bool:
         """Minimum Shadbala threshold per BPHS."""
         thresholds = {
-            "Sun": 390, "Moon": 360, "Mars": 300,
-            "Mercury": 420, "Jupiter": 390,
-            "Venus": 330, "Saturn": 300,
+            "Sun": 390,
+            "Moon": 360,
+            "Mars": 300,
+            "Mercury": 420,
+            "Jupiter": 390,
+            "Venus": 330,
+            "Saturn": 300,
         }
         return self.total >= thresholds.get(self.planet, 300)
 
 
 # ─── Dig Bala ────────────────────────────────────────────────────────────────
+
 
 def compute_dig_bala(planet: str, chart) -> float:
     """
@@ -183,8 +200,10 @@ def compute_dig_bala(planet: str, chart) -> float:
 
 # ─── Kendradi Bala ────────────────────────────────────────────────────────────
 
+
 def compute_kendradi_bala(planet: str, chart) -> float:
-    from src.calculations.house_lord import compute_house_map
+    from src.calculations.house_lord import compute_house_map  # noqa: F401
+
     hmap = compute_house_map(chart)
     h = hmap.planet_house.get(planet, 1)
     if h in (1, 4, 7, 10):
@@ -196,11 +215,12 @@ def compute_kendradi_bala(planet: str, chart) -> float:
 
 # ─── Ojha-Yugma Bala ─────────────────────────────────────────────────────────
 
+
 def compute_ojha_yugma_bala(planet: str, chart) -> float:
     if planet not in chart.planets:
         return 15.0
     si = chart.planets[planet].sign_index
-    is_odd_sign = (si % 2 == 0)  # Aries=0 is odd
+    is_odd_sign = si % 2 == 0  # Aries=0 is odd
     if planet in MALE_PLANETS:
         return 30.0 if is_odd_sign else 0.0
     if planet in FEMALE_PLANETS:
@@ -210,7 +230,10 @@ def compute_ojha_yugma_bala(planet: str, chart) -> float:
 
 # ─── Kala Bala — all 8 sub-components ───────────────────────────────────────
 
-def compute_kala_bala(planet: str, chart, birth_dt: Optional[datetime] = None) -> tuple[float, dict[str, float]]:
+
+def compute_kala_bala(
+    planet: str, chart, birth_dt: Optional[datetime] = None
+) -> tuple[float, dict[str, float]]:
     """
     Compute Kala Bala with all 8 sub-components.
     Returns (total_kala_bala, component_dict)
@@ -230,7 +253,7 @@ def compute_kala_bala(planet: str, chart, birth_dt: Optional[datetime] = None) -
         sun_lon = chart.planets["Sun"].longitude if "Sun" in chart.planets else 270.0
         is_day = not (90 <= sun_lon % 360 < 270)
 
-    day_planets   = {"Sun", "Jupiter", "Venus"}
+    day_planets = {"Sun", "Jupiter", "Venus"}
     night_planets = {"Moon", "Mars", "Saturn"}
     if planet == "Mercury":
         components["nathonnata"] = 60.0
@@ -244,9 +267,11 @@ def compute_kala_bala(planet: str, chart, birth_dt: Optional[datetime] = None) -
     # 2. Paksha Bala (lunar phase)
     if "Moon" in chart.planets and "Sun" in chart.planets:
         moon_lon = chart.planets["Moon"].longitude
-        sun_lon  = chart.planets["Sun"].longitude
+        sun_lon = chart.planets["Sun"].longitude
         elongation = (moon_lon - sun_lon) % 360
-        paksha_frac = elongation / 180.0 if elongation <= 180 else (360 - elongation) / 180.0
+        paksha_frac = (
+            elongation / 180.0 if elongation <= 180 else (360 - elongation) / 180.0
+        )
         # Benefics strong in waxing (Shukla), malefics in waning (Krishna)
         malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
         if planet in malefics:
@@ -282,7 +307,9 @@ def compute_kala_bala(planet: str, chart, birth_dt: Optional[datetime] = None) -
         weekday = birth_dt.weekday()
         hour = birth_dt.hour + birth_dt.minute / 60.0
         hora_num = int(hour)  # 0-23
-        weekday_sun_offset = _WEEKDAY_LORDS.index("Sun") if "Sun" in _WEEKDAY_LORDS else 6  # noqa: F841
+        (
+            _WEEKDAY_LORDS.index("Sun") if "Sun" in _WEEKDAY_LORDS else 6
+        )  # noqa: F841
         # Sequence starts from weekday lord at sunrise (hour 0 of that day)
         weekday_lord_idx = _HORA_SEQUENCE.index(_WEEKDAY_LORDS[weekday])
         hora_lord_idx = (weekday_lord_idx + hora_num) % 7
@@ -296,8 +323,18 @@ def compute_kala_bala(planet: str, chart, birth_dt: Optional[datetime] = None) -
         sun_sign = chart.planets["Sun"].sign_index if "Sun" in chart.planets else 0
         # Solar month lords cycle: Aries=Mars, Taurus=Venus, etc.
         month_lords = [
-            "Mars", "Venus", "Mercury", "Moon", "Sun", "Mercury",
-            "Venus", "Mars", "Jupiter", "Saturn", "Saturn", "Jupiter"
+            "Mars",
+            "Venus",
+            "Mercury",
+            "Moon",
+            "Sun",
+            "Mercury",
+            "Venus",
+            "Mars",
+            "Jupiter",
+            "Saturn",
+            "Saturn",
+            "Jupiter",
         ]
         masa_lord = month_lords[sun_sign % 12]
         components["masa"] = 30.0 if planet == masa_lord else 0.0
@@ -317,7 +354,7 @@ def compute_kala_bala(planet: str, chart, birth_dt: Optional[datetime] = None) -
     if "Sun" in chart.planets:
         sun_si = chart.planets["Sun"].sign_index
         uttarayana = sun_si in (9, 10, 11, 0, 1, 2)
-        sun_benefited  = {"Sun", "Mars", "Jupiter"}
+        sun_benefited = {"Sun", "Mars", "Jupiter"}
         moon_benefited = {"Moon", "Venus", "Saturn"}
         if planet in sun_benefited:
             components["ayana"] = 48.0 if uttarayana else 12.0
@@ -334,6 +371,7 @@ def compute_kala_bala(planet: str, chart, birth_dt: Optional[datetime] = None) -
 
 # ─── Chesta Bala ─────────────────────────────────────────────────────────────
 
+
 def compute_chesta_bala(planet: str, chart) -> float:
     """
     Chesta Bala from planet's speed relative to mean motion.
@@ -344,15 +382,19 @@ def compute_chesta_bala(planet: str, chart) -> float:
 
     # Mean motions in degrees/day
     MEAN_MOTION: dict[str, float] = {
-        "Sun": 0.9856, "Moon": 13.176, "Mars": 0.524,
-        "Mercury": 1.383, "Jupiter": 0.083, "Venus": 1.2,
+        "Sun": 0.9856,
+        "Moon": 13.176,
+        "Mars": 0.524,
+        "Mercury": 1.383,
+        "Jupiter": 0.083,
+        "Venus": 1.2,
         "Saturn": 0.033,
     }
     if planet not in MEAN_MOTION:
         return 30.0
 
     speed = abs(chart.planets[planet].speed)
-    mean  = MEAN_MOTION[planet]
+    mean = MEAN_MOTION[planet]
     is_rx = chart.planets[planet].is_retrograde
 
     if is_rx:
@@ -366,6 +408,7 @@ def compute_chesta_bala(planet: str, chart) -> float:
 
 # ─── Drik Bala ───────────────────────────────────────────────────────────────
 
+
 def compute_drik_bala(planet: str, chart) -> float:
     """
     Drik Bala: signed sum of aspectual strength received from all other planets.
@@ -374,15 +417,16 @@ def compute_drik_bala(planet: str, chart) -> float:
     if planet not in chart.planets:
         return 0.0
 
-    from src.calculations.house_lord import compute_house_map
+    from src.calculations.house_lord import compute_house_map  # noqa: F401
+
     hmap = compute_house_map(chart)
 
     planet_house = hmap.planet_house.get(planet, 1)
     total = 0.0
 
     # Natural benefic/malefic for Drik Bala (chart-specific would require functional roles)
-    natural_benefics  = {"Moon", "Mercury", "Jupiter", "Venus"}
-    natural_malefics  = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+    natural_benefics = {"Moon", "Mercury", "Jupiter", "Venus"}
+    natural_malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
     for aspector, aspector_pos in chart.planets.items():
         if aspector == planet:
@@ -410,6 +454,7 @@ def compute_drik_bala(planet: str, chart) -> float:
 
 # ─── Saptavargaja Bala ────────────────────────────────────────────────────────
 
+
 def compute_saptavargaja_bala(planet: str, chart) -> float:
     """
     Saptavargaja Bala: dignity across 7 divisional charts.
@@ -417,10 +462,16 @@ def compute_saptavargaja_bala(planet: str, chart) -> float:
     Source: BPHS Ch.27 v.1-20
     """
     try:
-        from src.calculations.vargas import compute_varga_sign
-        from src.calculations.dignity import (
-            EXALT_SIGN, DEBIL_SIGN, MOOLTRIKONA_RANGES, OWN_SIGNS,
-            _NAISARGIKA, _get_sign_lord, DEEP_EXALT_ORB, PARAMOTCHA_DEGREE
+        from src.calculations.vargas import compute_varga_sign  # noqa: F401
+        from src.calculations.dignity import (  # noqa: F401
+            EXALT_SIGN,
+            DEBIL_SIGN,
+            MOOLTRIKONA_RANGES,
+            OWN_SIGNS,
+            _NAISARGIKA,
+            _get_sign_lord,
+            DEEP_EXALT_ORB,
+            PARAMOTCHA_DEGREE,
         )
     except ImportError:
         return 0.0
@@ -444,11 +495,17 @@ def compute_saptavargaja_bala(planet: str, chart) -> float:
     return round(total, 3)
 
 
-def _get_saptavargaja_virupas(planet: str, sign_index: int, longitude: float, varga_n: int) -> float:
+def _get_saptavargaja_virupas(
+    planet: str, sign_index: int, longitude: float, varga_n: int
+) -> float:
     """Determine Virupas for a planet in a given varga sign."""
-    from src.calculations.dignity import (
-        EXALT_SIGN, DEBIL_SIGN, MOOLTRIKONA_RANGES, OWN_SIGNS,
-        PARAMOTCHA_DEGREE, DEEP_EXALT_ORB
+    from src.calculations.dignity import (  # noqa: F401
+        EXALT_SIGN,
+        DEBIL_SIGN,
+        MOOLTRIKONA_RANGES,
+        OWN_SIGNS,
+        PARAMOTCHA_DEGREE,
+        DEEP_EXALT_ORB,
     )
 
     if planet in ("Rahu", "Ketu"):
@@ -457,7 +514,10 @@ def _get_saptavargaja_virupas(planet: str, sign_index: int, longitude: float, va
     # Exaltation
     if planet in EXALT_SIGN and sign_index == EXALT_SIGN[planet]:
         deg = longitude % 30
-        if varga_n == 1 and abs(deg - PARAMOTCHA_DEGREE.get(planet, 15)) <= DEEP_EXALT_ORB:
+        if (
+            varga_n == 1
+            and abs(deg - PARAMOTCHA_DEGREE.get(planet, 15)) <= DEEP_EXALT_ORB
+        ):
             return SAPTAVARGAJA_VIRUPAS["DEEP_EXALT"]
         return SAPTAVARGAJA_VIRUPAS["EXALT"]
 
@@ -479,7 +539,8 @@ def _get_saptavargaja_virupas(planet: str, sign_index: int, longitude: float, va
     # Friendship (simplified naisargika for Saptavargaja)
     lord = _simple_sign_lord(sign_index)
     if lord:
-        from src.calculations.dignity import _NAISARGIKA
+        from src.calculations.dignity import _NAISARGIKA  # noqa: F401
+
         rel = _NAISARGIKA.get((planet, lord), "Neutral")
         if rel == "Friend":
             return SAPTAVARGAJA_VIRUPAS["FRIEND_SIGN"]
@@ -491,14 +552,24 @@ def _get_saptavargaja_virupas(planet: str, sign_index: int, longitude: float, va
 
 def _simple_sign_lord(sign_index: int) -> Optional[str]:
     lords = {
-        0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun",
-        5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter",
-        9: "Saturn", 10: "Saturn", 11: "Jupiter",
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
     }
     return lords.get(sign_index)
 
 
 # ─── Ishta / Kashta Bala ─────────────────────────────────────────────────────
+
 
 def compute_ishta_kashta(uchcha_bala: float, chesta_bala: float) -> tuple[float, float]:
     """
@@ -508,12 +579,13 @@ def compute_ishta_kashta(uchcha_bala: float, chesta_bala: float) -> tuple[float,
     """
     uchcha = max(0.0, min(60.0, uchcha_bala))
     chesta = max(0.0, min(60.0, chesta_bala))
-    ishta  = round(sqrt(uchcha * chesta), 3)
+    ishta = round(sqrt(uchcha * chesta), 3)
     kashta = round(sqrt((60.0 - uchcha) * (60.0 - chesta)), 3)
     return ishta, kashta
 
 
 # ─── Main computation ─────────────────────────────────────────────────────────
+
 
 def compute_shadbala(
     planet: str,
@@ -530,7 +602,8 @@ def compute_shadbala(
         return result
 
     # Uchcha Bala
-    from src.calculations.dignity import get_uchcha_bala
+    from src.calculations.dignity import get_uchcha_bala  # noqa: F401
+
     result.uchcha_bala = get_uchcha_bala(planet, chart.planets[planet].longitude)
 
     # Saptavargaja Bala
@@ -552,8 +625,11 @@ def compute_shadbala(
         result.drekkana_bala = 0.0
 
     result.sthana_bala = (
-        result.uchcha_bala + result.saptavargaja_bala +
-        result.ojha_yugma_bala + result.kendradi_bala + result.drekkana_bala
+        result.uchcha_bala
+        + result.saptavargaja_bala
+        + result.ojha_yugma_bala
+        + result.kendradi_bala
+        + result.drekkana_bala
     )
 
     # Dig Bala
@@ -562,14 +638,14 @@ def compute_shadbala(
     # Kala Bala (all 8 sub-components)
     kala_total, kala_components = compute_kala_bala(planet, chart, birth_dt)
     result.nathonnata_bala = kala_components.get("nathonnata", 0.0)
-    result.paksha_bala     = kala_components.get("paksha", 0.0)
-    result.tribhaga_bala   = kala_components.get("tribhaga", 0.0)
-    result.vara_bala       = kala_components.get("vara", 0.0)
-    result.hora_bala       = kala_components.get("hora", 0.0)
-    result.masa_bala       = kala_components.get("masa", 0.0)
-    result.abda_bala       = kala_components.get("abda", 0.0)
-    result.ayana_bala      = kala_components.get("ayana", 0.0)
-    result.kala_bala       = kala_total
+    result.paksha_bala = kala_components.get("paksha", 0.0)
+    result.tribhaga_bala = kala_components.get("tribhaga", 0.0)
+    result.vara_bala = kala_components.get("vara", 0.0)
+    result.hora_bala = kala_components.get("hora", 0.0)
+    result.masa_bala = kala_components.get("masa", 0.0)
+    result.abda_bala = kala_components.get("abda", 0.0)
+    result.ayana_bala = kala_components.get("ayana", 0.0)
+    result.kala_bala = kala_total
 
     # Chesta Bala
     result.chesta_bala = compute_chesta_bala(planet, chart)
@@ -582,8 +658,12 @@ def compute_shadbala(
 
     # Total
     result.total = round(
-        result.sthana_bala + result.dig_bala + result.kala_bala +
-        result.chesta_bala + result.naisargika_bala + result.drik_bala,
+        result.sthana_bala
+        + result.dig_bala
+        + result.kala_bala
+        + result.chesta_bala
+        + result.naisargika_bala
+        + result.drik_bala,
         3,
     )
 
@@ -612,17 +692,27 @@ def compute_all_shadbala(
 # ── Backward-compatibility wrapper ──
 class _ShadbalWrapper:
     """Wraps dict[str, ShadbalResult] to expose .planets and old field names."""
+
     def __init__(self, d: dict):
         self._d = d
         self.planets = {k: _ShadbalFieldProxy(v) for k, v in d.items()}
-    def __getitem__(self, k): return self.planets[k]
-    def items(self): return self.planets.items()
-    def keys(self): return self.planets.keys()
+
+    def __getitem__(self, k):
+        return self.planets[k]
+
+    def items(self):
+        return self.planets.items()
+
+    def keys(self):
+        return self.planets.keys()
+
 
 class _ShadbalFieldProxy:
     """Exposes short field names (.naisargika, .chesta) from ShadbalResult."""
+
     def __init__(self, r: "ShadbalResult"):
         self._r = r
+
     def __getattr__(self, name):
         # Map short names to full names
         _map = {
@@ -640,28 +730,44 @@ class _ShadbalFieldProxy:
         full = _map.get(name, name)
         return getattr(self._r, full)
 
-def compute_shadbala_legacy(planet_or_chart=None, sign_idx: int = 0,
-                            degree: float = 0.0, chart=None, birth_dt=None,
-                            planet: str = None):
+
+def compute_shadbala_legacy(
+    planet_or_chart=None,
+    sign_idx: int = 0,
+    degree: float = 0.0,
+    chart=None,
+    birth_dt=None,
+    planet: str = None,
+):
     """Old API shim. Handles compute_shadbala(chart) and compute_shadbala(planet, chart)."""
-    if planet_or_chart is not None and hasattr(planet_or_chart, 'planets'):
+    if planet_or_chart is not None and hasattr(planet_or_chart, "planets"):
         return _ShadbalWrapper(compute_all_shadbala(planet_or_chart, birth_dt))
     _planet = planet_or_chart if isinstance(planet_or_chart, str) else planet
-    if chart is not None and hasattr(chart, 'planets'):
+    if chart is not None and hasattr(chart, "planets"):
         return compute_shadbala(_planet, chart, birth_dt)
+
     # positional legacy: compute_shadbala(planet, sign_idx, degree)
     class _P:
         def __init__(self):
-            self.sign_index = sign_idx; self.degree_in_sign = degree
+            self.sign_index = sign_idx
+            self.degree_in_sign = degree
             self.longitude = sign_idx * 30.0 + degree
-            self.is_retrograde = False; self.speed = 1.0; self.latitude = 0.0
+            self.is_retrograde = False
+            self.speed = 1.0
+            self.latitude = 0.0
+
     class _C:
         def __init__(self):
-            self.lagna = 0.0; self.lagna_sign_index = 0
+            self.lagna = 0.0
+            self.lagna_sign_index = 0
             self.planets = {_planet: _P()}
-            sun = _P(); sun.sign_index = 0; sun.longitude = 0.0
+            sun = _P()
+            sun.sign_index = 0
+            sun.longitude = 0.0
             self.planets["Sun"] = sun
+
     return compute_shadbala(_planet, _C(), birth_dt)
+
 
 # S170: Drekkana variant declaration (Sanjay Rath Varga Chakra Ch.3)
 # Options: parasara | jagannatha | somanatha

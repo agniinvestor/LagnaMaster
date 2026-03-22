@@ -20,9 +20,9 @@ SANDHI_MONTHS = 6  # last/first N months of each MD constitute the Sandhi zone
 class DashaSandhi:
     ending_lord: str
     starting_lord: str
-    sandhi_start: date   # 6 months before end of ending MD
+    sandhi_start: date  # 6 months before end of ending MD
     md_transition: date  # actual MD transition
-    sandhi_end: date     # 6 months after start of new MD
+    sandhi_end: date  # 6 months after start of new MD
     is_active_today: bool
 
 
@@ -36,27 +36,31 @@ def compute_sandhi_periods(mahadashas: list, on_date: date = None) -> list[Dasha
 
     for i in range(len(mahadashas) - 1):
         md_current = mahadashas[i]
-        md_next    = mahadashas[i + 1]
+        md_next = mahadashas[i + 1]
 
         transition = md_current.end
         sandhi_start = transition - relativedelta(months=SANDHI_MONTHS)
-        sandhi_end   = transition + relativedelta(months=SANDHI_MONTHS)
+        sandhi_end = transition + relativedelta(months=SANDHI_MONTHS)
 
         is_active = sandhi_start <= today <= sandhi_end
 
-        results.append(DashaSandhi(
-            ending_lord=md_current.lord,
-            starting_lord=md_next.lord,
-            sandhi_start=sandhi_start,
-            md_transition=transition,
-            sandhi_end=sandhi_end,
-            is_active_today=is_active,
-        ))
+        results.append(
+            DashaSandhi(
+                ending_lord=md_current.lord,
+                starting_lord=md_next.lord,
+                sandhi_start=sandhi_start,
+                md_transition=transition,
+                sandhi_end=sandhi_end,
+                is_active_today=is_active,
+            )
+        )
 
     return results
 
 
-def current_sandhi(sandhi_list: list[DashaSandhi], on_date: date = None) -> DashaSandhi | None:
+def current_sandhi(
+    sandhi_list: list[DashaSandhi], on_date: date = None
+) -> DashaSandhi | None:
     """Return the active Sandhi period if any."""
     today = on_date or date.today()
     for s in sandhi_list:

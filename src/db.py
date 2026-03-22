@@ -4,6 +4,7 @@ import json
 import sqlite3
 from contextlib import contextmanager
 from datetime import datetime, timezone
+
 """
 src/db.py
 ==========
@@ -16,9 +17,11 @@ DB_PATH = Path(__file__).parent.parent / "data" / "charts.db"
 
 _SENTINEL = object()
 
+
 def _resolve(path) -> Path:
     """Return path, defaulting to the current DB_PATH module variable."""
     return DB_PATH if path is _SENTINEL else path
+
 
 def _conn(path=_SENTINEL) -> sqlite3.Connection:
     p = _resolve(path)
@@ -29,6 +32,7 @@ def _conn(path=_SENTINEL) -> sqlite3.Connection:
     conn.execute("PRAGMA journal_mode=WAL")
     return conn
 
+
 @contextmanager
 def get_db(path=_SENTINEL):
     conn = _conn(path)
@@ -37,6 +41,7 @@ def get_db(path=_SENTINEL):
         conn.commit()
     finally:
         conn.close()
+
 
 def init_db(path=_SENTINEL) -> None:
     """Create tables if they don't exist."""
@@ -67,10 +72,16 @@ def init_db(path=_SENTINEL) -> None:
             );
         """)
 
+
 def save_chart(
-    year: int, month: int, day: int,
-    hour: float, lat: float, lon: float,
-    tz_offset: float, ayanamsha: str,
+    year: int,
+    month: int,
+    day: int,
+    hour: float,
+    lat: float,
+    lon: float,
+    tz_offset: float,
+    ayanamsha: str,
     chart_json: dict,
     scores_json: dict | None = None,
     name: str | None = None,
@@ -86,30 +97,37 @@ def save_chart(
             (
                 datetime.now(timezone.utc).isoformat(),
                 name,
-                year, month, day, hour, lat, lon,
-                tz_offset, ayanamsha,
+                year,
+                month,
+                day,
+                hour,
+                lat,
+                lon,
+                tz_offset,
+                ayanamsha,
                 json.dumps(chart_json),
                 json.dumps(scores_json) if scores_json else None,
             ),
         )
         return cur.lastrowid
 
+
 def get_chart(chart_id: int, path=_SENTINEL) -> dict | None:
     with get_db(_resolve(path)) as conn:
-        row = conn.execute(
-            "SELECT * FROM charts WHERE id = ?", (chart_id,)
-        ).fetchone()
+        row = conn.execute("SELECT * FROM charts WHERE id = ?", (chart_id,)).fetchone()
         if row is None:
             return None
         d = dict(row)
-        d["chart_json"]  = json.loads(d["chart_json"])
+        d["chart_json"] = json.loads(d["chart_json"])
         d["scores_json"] = json.loads(d["scores_json"]) if d["scores_json"] else None
         return d
+
 
 def list_charts(limit: int = 50, path=_SENTINEL) -> list[dict]:
     with get_db(_resolve(path)) as conn:
         rows = conn.execute(
             "SELECT id, created_at, name, year, month, day, hour, lat, lon "
-            "FROM charts ORDER BY id DESC LIMIT ?", (limit,)
+            "FROM charts ORDER BY id DESC LIMIT ?",
+            (limit,),
         ).fetchall()
         return [dict(r) for r in rows]

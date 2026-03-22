@@ -28,9 +28,12 @@ import pytest
 os.environ["CELERY_ALWAYS_EAGER"] = "1"
 
 INDIA_1947 = {
-    "year": 1947, "month": 8, "day": 15,
+    "year": 1947,
+    "month": 8,
+    "day": 15,
     "hour": 0.0,
-    "lat": 28.6139, "lon": 77.2090,
+    "lat": 28.6139,
+    "lon": 77.2090,
     "tz_offset": 5.5,
     "ayanamsha": "lahiri",
 }
@@ -40,34 +43,41 @@ INDIA_1947 = {
 # 1. Celery app configuration
 # ══════════════════════════════════════════════════════════════════════════════
 
-class TestCeleryConfig:
 
+class TestCeleryConfig:
     def test_app_name(self):
         from src.worker import celery_app
+
         assert celery_app.main == "lagnamaster"
 
     def test_always_eager_set(self):
         from src.worker import celery_app
+
         assert celery_app.conf.task_always_eager is True
 
     def test_eager_propagates(self):
         from src.worker import celery_app
+
         assert celery_app.conf.task_eager_propagates is True
 
     def test_acks_late(self):
         from src.worker import celery_app
+
         assert celery_app.conf.task_acks_late is True
 
     def test_prefetch_multiplier(self):
         from src.worker import celery_app
+
         assert celery_app.conf.worker_prefetch_multiplier == 1
 
     def test_result_expires(self):
         from src.worker import celery_app
+
         assert celery_app.conf.result_expires == 3600
 
     def test_serializers(self):
         from src.worker import celery_app
+
         assert celery_app.conf.task_serializer == "json"
         assert celery_app.conf.result_serializer == "json"
 
@@ -76,30 +86,36 @@ class TestCeleryConfig:
 # 2. Task registration
 # ══════════════════════════════════════════════════════════════════════════════
 
-class TestTaskRegistration:
 
+class TestTaskRegistration:
     def test_compute_chart_task_registered(self):
         from src.worker import celery_app
+
         assert "lagnamaster.compute_chart" in celery_app.tasks
 
     def test_monte_carlo_task_registered(self):
         from src.worker import celery_app
+
         assert "lagnamaster.monte_carlo" in celery_app.tasks
 
     def test_generate_pdf_task_registered(self):
         from src.worker import celery_app
+
         assert "lagnamaster.generate_pdf" in celery_app.tasks
 
     def test_compute_chart_max_retries(self):
         from src.worker import compute_chart_async
+
         assert compute_chart_async.max_retries == 3
 
     def test_monte_carlo_max_retries(self):
         from src.worker import monte_carlo_async
+
         assert monte_carlo_async.max_retries == 2
 
     def test_generate_pdf_max_retries(self):
         from src.worker import generate_pdf_async
+
         assert generate_pdf_async.max_retries == 2
 
 
@@ -107,10 +123,11 @@ class TestTaskRegistration:
 # 3. Helper functions
 # ══════════════════════════════════════════════════════════════════════════════
 
-class TestHelpers:
 
+class TestHelpers:
     def test_birth_dict_to_kwargs_types(self):
         from src.worker import _birth_dict_to_kwargs
+
         kw = _birth_dict_to_kwargs(INDIA_1947)
         assert isinstance(kw["year"], int)
         assert isinstance(kw["hour"], float)
@@ -119,6 +136,7 @@ class TestHelpers:
 
     def test_birth_dict_defaults(self):
         from src.worker import _birth_dict_to_kwargs
+
         minimal = {"year": 1947, "month": 8, "day": 15, "lat": 28.0, "lon": 77.0}
         kw = _birth_dict_to_kwargs(minimal)
         assert kw["hour"] == 0.0
@@ -128,6 +146,7 @@ class TestHelpers:
     def test_chart_to_json_keys(self):
         from src.ephemeris import compute_chart
         from src.worker import _chart_to_json
+
         chart = compute_chart(**INDIA_1947)
         j = _chart_to_json(chart)
         for key in ["jd_ut", "lagna_sign", "lagna_sign_index", "planets"]:
@@ -136,6 +155,7 @@ class TestHelpers:
     def test_chart_to_json_planets(self):
         from src.ephemeris import compute_chart
         from src.worker import _chart_to_json
+
         chart = compute_chart(**INDIA_1947)
         j = _chart_to_json(chart)
         for p in ["Sun", "Moon", "Mars", "Jupiter"]:
@@ -148,7 +168,8 @@ class TestHelpers:
         from src.ephemeris import compute_chart
         from src.scoring import score_chart
         from src.worker import _scores_to_json
-        chart  = compute_chart(**INDIA_1947)
+
+        chart = compute_chart(**INDIA_1947)
         scores = score_chart(chart)
         j = _scores_to_json(scores)
         assert "lagna_sign" in j
@@ -163,11 +184,12 @@ class TestHelpers:
 # 4. compute_chart_async (eager mode)
 # ══════════════════════════════════════════════════════════════════════════════
 
-class TestComputeChartTask:
 
+class TestComputeChartTask:
     @pytest.fixture(scope="class")
     def result(self):
         from src.worker import compute_chart_async
+
         return compute_chart_async.delay(INDIA_1947, name="Test 1947").get()
 
     def test_returns_chart_id(self, result):
@@ -188,6 +210,7 @@ class TestComputeChartTask:
 
     def test_determinism(self):
         from src.worker import compute_chart_async
+
         r1 = compute_chart_async.delay(INDIA_1947).get()
         r2 = compute_chart_async.delay(INDIA_1947).get()
         # Lagna sign must be identical
@@ -202,11 +225,12 @@ class TestComputeChartTask:
 # 5. monte_carlo_async (eager mode)
 # ══════════════════════════════════════════════════════════════════════════════
 
-class TestMonteCarloTask:
 
+class TestMonteCarloTask:
     @pytest.fixture(scope="class")
     def mc_result(self):
         from src.worker import monte_carlo_async
+
         return monte_carlo_async.delay(
             INDIA_1947, n_samples=10, window_minutes=15
         ).get()
@@ -222,8 +246,14 @@ class TestMonteCarloTask:
 
     def test_house_fields(self, mc_result):
         h = mc_result["houses"]["1"]
-        for field in ["score_mean", "score_std", "score_min", "score_max",
-                      "score_range", "stable"]:
+        for field in [
+            "score_mean",
+            "score_std",
+            "score_min",
+            "score_max",
+            "score_range",
+            "stable",
+        ]:
             assert field in h
 
     def test_score_range_non_negative(self, mc_result):
@@ -239,11 +269,12 @@ class TestMonteCarloTask:
 # 6. generate_pdf_async (eager mode)
 # ══════════════════════════════════════════════════════════════════════════════
 
-class TestGeneratePdfTask:
 
+class TestGeneratePdfTask:
     @pytest.fixture(scope="class")
     def pdf_result(self):
         from src.worker import compute_chart_async, generate_pdf_async
+
         chart_result = compute_chart_async.delay(INDIA_1947, name="PDF test").get()
         chart_id = chart_result["chart_id"]
         return generate_pdf_async.delay(chart_id).get()
@@ -259,5 +290,6 @@ class TestGeneratePdfTask:
 
     def test_bad_chart_id_raises(self):
         from src.worker import generate_pdf_async
+
         with pytest.raises(Exception):
             generate_pdf_async.delay(99999999).get()

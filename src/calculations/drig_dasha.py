@@ -19,25 +19,38 @@ Sequence: Starts from Lagna (if Lagna > Moon) or Moon sign (if Moon > Lagna).
 
 Source: PVRNR preface p8; BPHS Ch.41-43.
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date, timedelta
 
-_SIGN_NAMES = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
-               "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
+_SIGN_NAMES = [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
+]
 
 # Standard rasi aspects: every sign aspects the 7th from it.
 # Special: Aries,Cancer,Libra,Capricorn also aspect 4th and 8th.
 #          Taurus,Leo,Scorpio,Aquarius also aspect 3rd and 10th (via trines).
 #          Gemini,Virgo,Sagittarius,Pisces also aspect 5th and 9th.
 _SPECIAL_ASPECTS = {
-    0: {3, 6, 7},   # Ar → Cn, Li, 7th
-    1: {2, 9, 6},   # Ta → Ge, Cp, Li (via trine + 7th)
-    2: {4, 8, 7},   # Ge → Le, Sg, 7th
-    3: {6, 9, 0},   # Cn → Li, Cp, Ar
+    0: {3, 6, 7},  # Ar → Cn, Li, 7th
+    1: {2, 9, 6},  # Ta → Ge, Cp, Li (via trine + 7th)
+    2: {4, 8, 7},  # Ge → Le, Sg, 7th
+    3: {6, 9, 0},  # Cn → Li, Cp, Ar
     4: {5, 1, 10},  # Le → Vi, Ta, Aq
     5: {7, 11, 8},  # Vi → Sc, Pi, Sg
-    6: {9, 0, 3},   # Li → Cp, Ar, Cn
+    6: {9, 0, 3},  # Li → Cp, Ar, Cn
     7: {10, 4, 1},  # Sc → Aq, Le, Ta
     8: {10, 2, 5},  # Sg → Aq, Ge, Vi
     9: {11, 3, 6},  # Cp → Pi, Cn, Li
@@ -48,8 +61,7 @@ _SPECIAL_ASPECTS = {
 
 def _aspects_received(sign_index: int) -> set[int]:
     """Return set of sign indices that aspect this sign."""
-    return {s for s, targets in _SPECIAL_ASPECTS.items()
-            if sign_index in targets}
+    return {s for s, targets in _SPECIAL_ASPECTS.items() if sign_index in targets}
 
 
 def _drig_period_years(sign_index: int, chart) -> float:
@@ -59,8 +71,9 @@ def _drig_period_years(sign_index: int, chart) -> float:
     Scale to reasonable dasha periods.
     """
     aspects = len(_aspects_received(sign_index))
-    planets_in = sum(1 for p, pos in chart.planets.items()
-                     if pos.sign_index == sign_index)
+    planets_in = sum(
+        1 for p, pos in chart.planets.items() if pos.sign_index == sign_index
+    )
     # Base formula: aspects contribute more weight
     years = max(1.0, aspects * 1.5 + planets_in * 0.5)
     return round(min(years, 12.0), 1)
@@ -89,7 +102,7 @@ def compute_drig_dasha(chart, birth_date: date) -> list[DrigPeriod]:
     # Determine starting sign (simplified: use lagna)
     # Full rule: compare Lagna lord strength vs Moon strength
     start_si = lagna_si
-    is_odd = (start_si % 2 == 0)  # 0=Aries is odd in Jyotish
+    is_odd = start_si % 2 == 0  # 0=Aries is odd in Jyotish
 
     # Build 12-sign sequence
     if is_odd:
@@ -110,14 +123,18 @@ def compute_drig_dasha(chart, birth_date: date) -> list[DrigPeriod]:
             elapsed = nak_frac * years
             current_date = birth_date + timedelta(days=-int(elapsed * 365.25))
         end = current_date + timedelta(days=int(years * 365.25))
-        planets_in = [p for p, pos in chart.planets.items()
-                      if pos.sign_index == si]
-        periods.append(DrigPeriod(
-            sign=_SIGN_NAMES[si], sign_index=si, years=years,
-            start_date=current_date, end_date=end,
-            aspects_received=len(_aspects_received(si)),
-            planets_in_sign=planets_in,
-        ))
+        planets_in = [p for p, pos in chart.planets.items() if pos.sign_index == si]
+        periods.append(
+            DrigPeriod(
+                sign=_SIGN_NAMES[si],
+                sign_index=si,
+                years=years,
+                start_date=current_date,
+                end_date=end,
+                aspects_received=len(_aspects_received(si)),
+                planets_in_sign=planets_in,
+            )
+        )
         current_date = end
 
     return periods

@@ -8,15 +8,16 @@ Installs two things:
 Run once:
     cd ~/LagnaMaster && .venv/bin/python3 tools/setup_ci_guard.py
 """
+
 from pathlib import Path
-import os, stat, sys
+import stat
 
 ROOT = Path(__file__).resolve().parent.parent
 
 # ─── 1. Pre-push hook ────────────────────────────────────────────────────────
 HOOK = ROOT / ".git/hooks/pre-push"
 
-HOOK_SCRIPT = '''\
+HOOK_SCRIPT = """\
 #!/usr/bin/env bash
 # LagnaMaster pre-push hook — blocks push if tests fail
 # Installed by tools/setup_ci_guard.py
@@ -45,11 +46,11 @@ fi
 
 echo "✅ All tests passed — pushing."
 exit 0
-'''
+"""
 
 HOOK.write_text(HOOK_SCRIPT)
 HOOK.chmod(HOOK.stat().st_mode | stat.S_IEXEC | stat.S_IXGRP | stat.S_IXOTH)
-print(f"  OK  .git/hooks/pre-push installed")
+print("  OK  .git/hooks/pre-push installed")
 
 # ─── 2. ci_watch.py ──────────────────────────────────────────────────────────
 CI_WATCH = ROOT / "tools/ci_watch.py"
@@ -275,12 +276,13 @@ if __name__ == "__main__":
 
 CI_WATCH.write_text(CI_WATCH_SCRIPT)
 CI_WATCH.chmod(CI_WATCH.stat().st_mode | stat.S_IEXEC | stat.S_IXGRP | stat.S_IXOTH)
-print(f"  OK  tools/ci_watch.py installed")
+print("  OK  tools/ci_watch.py installed")
 
 # ─── 3. Improve GitHub Actions workflow ──────────────────────────────────────
 # Find the workflow file
-workflows = list((ROOT / ".github/workflows").glob("*.yml")) + \
-            list((ROOT / ".github/workflows").glob("*.yaml"))
+workflows = list((ROOT / ".github/workflows").glob("*.yml")) + list(
+    (ROOT / ".github/workflows").glob("*.yaml")
+)
 
 if workflows:
     wf = workflows[0]
@@ -294,7 +296,7 @@ if workflows:
             "STATUS=${PIPESTATUS[0]}; "
             "if [ $STATUS -ne 0 ]; then "
             "grep -E 'FAILED|ERROR|AssertionError' /tmp/pytest_out.txt | "
-            "while IFS= read -r line; do echo \"::error::$line\"; done; fi; "
+            'while IFS= read -r line; do echo "::error::$line"; done; fi; '
             "exit $STATUS"
         )
         if old in text:

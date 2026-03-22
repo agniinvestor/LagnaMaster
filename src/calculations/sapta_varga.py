@@ -44,20 +44,20 @@ Data classes
 """
 
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from src.ephemeris import BirthChart
+    pass
 
 # ── varga weights (must sum to 20) ───────────────────────────────────────────
 
 SAPTA_VARGA_WEIGHTS: dict[str, float] = {
-    "D1":  3.0,
-    "D2":  2.0,
-    "D3":  2.0,
-    "D7":  1.0,
-    "D9":  5.0,
+    "D1": 3.0,
+    "D2": 2.0,
+    "D3": 2.0,
+    "D7": 1.0,
+    "D9": 5.0,
     "D10": 3.0,
     "D12": 4.0,
 }
@@ -66,12 +66,12 @@ assert abs(sum(SAPTA_VARGA_WEIGHTS.values()) - 20.0) < 1e-9, "Weights must sum t
 # ── dignity fraction table ────────────────────────────────────────────────────
 
 _DIGNITY_FRACTION = {
-    "Exaltation":   1.000,
+    "Exaltation": 1.000,
     "Moolatrikona": 0.750,
-    "OwnSign":      0.500,
-    "Friend":       0.375,
-    "Neutral":      0.250,
-    "Enemy":        0.125,
+    "OwnSign": 0.500,
+    "Friend": 0.375,
+    "Neutral": 0.250,
+    "Enemy": 0.125,
     "Debilitation": 0.000,
 }
 
@@ -80,31 +80,41 @@ _DIGNITY_FRACTION = {
 # sign indices: Ar=0 Ta=1 Ge=2 Cn=3 Le=4 Vi=5 Li=6 Sc=7 Sg=8 Cp=9 Aq=10 Pi=11
 
 _EXALT: dict[str, int] = {
-    "Sun": 0, "Moon": 1, "Mars": 9, "Mercury": 5,
-    "Jupiter": 3, "Venus": 11, "Saturn": 6,
+    "Sun": 0,
+    "Moon": 1,
+    "Mars": 9,
+    "Mercury": 5,
+    "Jupiter": 3,
+    "Venus": 11,
+    "Saturn": 6,
 }
 _DEBIL: dict[str, int] = {
-    "Sun": 6, "Moon": 7, "Mars": 3, "Mercury": 11,
-    "Jupiter": 9, "Venus": 5, "Saturn": 0,
+    "Sun": 6,
+    "Moon": 7,
+    "Mars": 3,
+    "Mercury": 11,
+    "Jupiter": 9,
+    "Venus": 5,
+    "Saturn": 0,
 }
 _OWN: dict[str, set[int]] = {
-    "Sun":     {4},
-    "Moon":    {3},
-    "Mars":    {0, 7},
+    "Sun": {4},
+    "Moon": {3},
+    "Mars": {0, 7},
     "Mercury": {2, 5},
     "Jupiter": {8, 11},
-    "Venus":   {1, 6},
-    "Saturn":  {9, 10},
+    "Venus": {1, 6},
+    "Saturn": {9, 10},
 }
 _MOOLTRIKONA: dict[str, int] = {
     # Only the sign matters here (degree range irrelevant for varga analysis)
-    "Sun":     4,   # Leo
-    "Moon":    1,   # Taurus
-    "Mars":    0,   # Aries
-    "Mercury": 5,   # Virgo
-    "Jupiter": 8,   # Sagittarius
-    "Venus":   6,   # Libra
-    "Saturn":  10,  # Aquarius
+    "Sun": 4,  # Leo
+    "Moon": 1,  # Taurus
+    "Mars": 0,  # Aries
+    "Mercury": 5,  # Virgo
+    "Jupiter": 8,  # Sagittarius
+    "Venus": 6,  # Libra
+    "Saturn": 10,  # Aquarius
 }
 
 # Naisargika (permanent) friendship table: True = Friend, None = Neutral, False = Enemy
@@ -112,29 +122,85 @@ _MOOLTRIKONA: dict[str, int] = {
 # Only used when Rahu/Ketu or a planet encounters another's sign.
 _NAI: dict[str, dict[str, str]] = {
     #           Sun     Moon    Mars    Mercury Jupiter Venus   Saturn
-    "Sun":    {"Sun":"F","Moon":"F","Mars":"F","Mercury":"N","Jupiter":"F","Venus":"E","Saturn":"E"},
-    "Moon":   {"Sun":"F","Moon":"F","Mars":"N","Mercury":"F","Jupiter":"F","Venus":"F","Saturn":"N"},
-    "Mars":   {"Sun":"F","Moon":"N","Mars":"F","Mercury":"E","Jupiter":"F","Venus":"E","Saturn":"N"},
-    "Mercury":{"Sun":"F","Moon":"E","Mars":"E","Mercury":"F","Jupiter":"N","Venus":"F","Saturn":"N"},
-    "Jupiter":{"Sun":"F","Moon":"F","Mars":"F","Mercury":"E","Jupiter":"F","Venus":"E","Saturn":"N"},
-    "Venus":  {"Sun":"E","Moon":"N","Mars":"N","Mercury":"F","Jupiter":"N","Venus":"F","Saturn":"F"},
-    "Saturn": {"Sun":"E","Moon":"E","Mars":"N","Mercury":"F","Jupiter":"N","Venus":"F","Saturn":"F"},
+    "Sun": {
+        "Sun": "F",
+        "Moon": "F",
+        "Mars": "F",
+        "Mercury": "N",
+        "Jupiter": "F",
+        "Venus": "E",
+        "Saturn": "E",
+    },
+    "Moon": {
+        "Sun": "F",
+        "Moon": "F",
+        "Mars": "N",
+        "Mercury": "F",
+        "Jupiter": "F",
+        "Venus": "F",
+        "Saturn": "N",
+    },
+    "Mars": {
+        "Sun": "F",
+        "Moon": "N",
+        "Mars": "F",
+        "Mercury": "E",
+        "Jupiter": "F",
+        "Venus": "E",
+        "Saturn": "N",
+    },
+    "Mercury": {
+        "Sun": "F",
+        "Moon": "E",
+        "Mars": "E",
+        "Mercury": "F",
+        "Jupiter": "N",
+        "Venus": "F",
+        "Saturn": "N",
+    },
+    "Jupiter": {
+        "Sun": "F",
+        "Moon": "F",
+        "Mars": "F",
+        "Mercury": "E",
+        "Jupiter": "F",
+        "Venus": "E",
+        "Saturn": "N",
+    },
+    "Venus": {
+        "Sun": "E",
+        "Moon": "N",
+        "Mars": "N",
+        "Mercury": "F",
+        "Jupiter": "N",
+        "Venus": "F",
+        "Saturn": "F",
+    },
+    "Saturn": {
+        "Sun": "E",
+        "Moon": "E",
+        "Mars": "N",
+        "Mercury": "F",
+        "Jupiter": "N",
+        "Venus": "F",
+        "Saturn": "F",
+    },
 }
 
 # Sign lords for all 12 signs (Rahu/Ketu have no lordship in Parashari)
 _SIGN_LORD: list[str] = [
-    "Mars",    # Aries 0
-    "Venus",   # Taurus 1
-    "Mercury", # Gemini 2
-    "Moon",    # Cancer 3
-    "Sun",     # Leo 4
-    "Mercury", # Virgo 5
-    "Venus",   # Libra 6
-    "Mars",    # Scorpio 7
-    "Jupiter", # Sagittarius 8
+    "Mars",  # Aries 0
+    "Venus",  # Taurus 1
+    "Mercury",  # Gemini 2
+    "Moon",  # Cancer 3
+    "Sun",  # Leo 4
+    "Mercury",  # Virgo 5
+    "Venus",  # Libra 6
+    "Mars",  # Scorpio 7
+    "Jupiter",  # Sagittarius 8
     "Saturn",  # Capricorn 9
     "Saturn",  # Aquarius 10
-    "Jupiter", # Pisces 11
+    "Jupiter",  # Pisces 11
 ]
 
 _PLANETS_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
@@ -142,6 +208,7 @@ _ALL_PLANETS = _PLANETS_7 + ["Rahu", "Ketu"]
 
 
 # ── dignity determination ─────────────────────────────────────────────────────
+
 
 def _sign_dignity(planet: str, sign_index: int) -> str:
     """
@@ -167,7 +234,7 @@ def _sign_dignity(planet: str, sign_index: int) -> str:
     # Friendship with sign lord
     lord = _SIGN_LORD[si]
     if lord == planet:
-        return "OwnSign"   # shouldn't normally reach here
+        return "OwnSign"  # shouldn't normally reach here
     nai = _NAI.get(planet, {}).get(lord, "N")
     if nai == "F":
         return "Friend"
@@ -184,66 +251,84 @@ def _dignity_points(planet: str, sign_index: int, weight: float) -> float:
 
 # ── varga sign resolvers (inline — avoids heavy import of varga.py) ──────────
 
+
 def _d1_si(lon: float) -> int:
     return int(lon / 30) % 12
+
 
 def _d2_si(lon: float) -> int:
     si = int(lon / 30) % 12
     deg = lon % 30
     return (4 if deg < 15.0 else 3) if (si % 2 == 0) else (3 if deg < 15.0 else 4)
 
+
 def _d3_si(lon: float) -> int:
     si = int(lon / 30) % 12
     k = int((lon % 30) / 10)
     return (si + k * 4) % 12
+
 
 def _d7_si(lon: float) -> int:
     si = int(lon / 30) % 12
     k = min(int((lon % 30) * 7 / 30), 6)
     return (si + k) % 12 if (si % 2 == 0) else (si + 6 + k) % 12
 
+
 _D9_START = {0: 0, 1: 9, 2: 6, 3: 3}
+
+
 def _d9_si(lon: float) -> int:
     si = int(lon / 30) % 12
     pada = int((lon % 30) * 9 / 30)
     return (_D9_START[si % 4] + pada) % 12
+
 
 def _d10_si(lon: float) -> int:
     si = int(lon / 30) % 12
     k = min(int((lon % 30) / 3), 9)
     return (si + k) % 12 if (si % 2 == 0) else (si + 9 + k) % 12
 
+
 def _d12_si(lon: float) -> int:
     si = int(lon / 30) % 12
     k = min(int((lon % 30) / 2.5), 11)
     return (si + k) % 12
 
+
 _VARGA_FN = {
-    "D1": _d1_si, "D2": _d2_si, "D3": _d3_si,
-    "D7": _d7_si, "D9": _d9_si, "D10": _d10_si, "D12": _d12_si,
+    "D1": _d1_si,
+    "D2": _d2_si,
+    "D3": _d3_si,
+    "D7": _d7_si,
+    "D9": _d9_si,
+    "D10": _d10_si,
+    "D12": _d12_si,
 }
 
 
 # ── data classes ──────────────────────────────────────────────────────────────
 
+
 @dataclass
 class VargaDignity:
     """Dignity assessment for one planet in one varga."""
+
     division: str
     weight: float
     sign_index: int
     sign_name: str
-    dignity: str         # "Exaltation" / "Moolatrikona" / "OwnSign" / "Friend" / "Neutral" / "Enemy" / "Debilitation"
-    points: float        # dignity_fraction × weight
+    dignity: str  # "Exaltation" / "Moolatrikona" / "OwnSign" / "Friend" / "Neutral" / "Enemy" / "Debilitation"
+    points: float  # dignity_fraction × weight
 
 
 @dataclass
 class PlanetVimshopak:
     """Full Sapta Varga Vimshopak row for one planet."""
+
     planet: str
-    varga_dignities: dict[str, VargaDignity]   # division → VargaDignity
-    total: float                               # sum of all .points (0–20)
-    grade: str                                 # "Excellent" / "Good" / "Average" / "Weak" / "Very Weak"
+    varga_dignities: dict[str, VargaDignity]  # division → VargaDignity
+    total: float  # sum of all .points (0–20)
+    grade: str  # "Excellent" / "Good" / "Average" / "Weak" / "Very Weak"
 
     def dignity_in(self, division: str) -> str:
         return self.varga_dignities[division].dignity
@@ -255,7 +340,8 @@ class PlanetVimshopak:
 @dataclass
 class VimshopakResult:
     """Vimshopak Bala for all planets (and lagna ascendant)."""
-    planets: dict[str, PlanetVimshopak]   # includes "Lagna" key
+
+    planets: dict[str, PlanetVimshopak]  # includes "Lagna" key
 
     def for_planet(self, planet: str) -> PlanetVimshopak:
         return self.planets[planet]
@@ -271,6 +357,7 @@ class VimshopakResult:
 
 # ── grade thresholds ──────────────────────────────────────────────────────────
 
+
 def vimshopak_grade(score: float) -> str:
     """Return qualitative grade for a Vimshopak total (0–20)."""
     if score >= 15.0:
@@ -285,15 +372,25 @@ def vimshopak_grade(score: float) -> str:
 
 
 _SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer",
-    "Leo", "Virgo", "Libra", "Scorpio",
-    "Sagittarius", "Capricorn", "Aquarius", "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
 ]
 
 
 # ── main public function ──────────────────────────────────────────────────────
 
-def compute_vimshopak(chart) -> VimshopakResult:    # chart: BirthChart
+
+def compute_vimshopak(chart) -> VimshopakResult:  # chart: BirthChart
     """
     Compute Sapta Varga Vimshopak Bala for all 9 planets plus the Lagna.
 
@@ -311,9 +408,7 @@ def compute_vimshopak(chart) -> VimshopakResult:    # chart: BirthChart
 
     # Build entries for all 9 planets + Lagna
     subjects: dict[str, float] = {
-        p: chart.planets[p].longitude
-        for p in _ALL_PLANETS
-        if p in chart.planets
+        p: chart.planets[p].longitude for p in _ALL_PLANETS if p in chart.planets
     }
     subjects["Lagna"] = chart.lagna
 
@@ -325,16 +420,18 @@ def compute_vimshopak(chart) -> VimshopakResult:    # chart: BirthChart
             fn = _VARGA_FN[div]
             si = fn(lon)
             sign_name = _SIGN_NAMES[si]
-            planet_key = subject if subject != "Lagna" else "Sun"  # Lagna uses sign dignity table
+            planet_key = (
+                subject if subject != "Lagna" else "Sun"
+            )  # Lagna uses sign dignity table
             dignity = _sign_dignity(planet_key if subject != "Lagna" else "Sun", si)
             # For Lagna: use the sign lord approach but don't associate with a planet's own tables
             # Convention: Lagna gets the dignity of the sign lord of its varga sign
             if subject == "Lagna":
                 lord = _SIGN_LORD[si]
-                dignity = _sign_dignity(lord, si)   # lord's dignity in its own sign
+                dignity = _sign_dignity(lord, si)  # lord's dignity in its own sign
                 # Simplification: Lagna in own-lord's sign → OwnSign; exalt sign of lord → Friend, etc.
                 # Standard approach: Lagna just gets the sign quality (neutral unless lord in own sign)
-                dignity = "OwnSign"   # Lagna ascendant is always considered in own-sign dignity
+                dignity = "OwnSign"  # Lagna ascendant is always considered in own-sign dignity
             pts = _DIGNITY_FRACTION[dignity] * weight
             total += pts
             varga_dignities[div] = VargaDignity(

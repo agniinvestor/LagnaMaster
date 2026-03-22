@@ -22,14 +22,14 @@ from src.ephemeris import BirthChart
 # ── Vimshottari constants ────────────────────────────────────────────────────
 
 VIMSHOTTARI_YEARS: dict[str, int] = {
-    "Ketu":    7,
-    "Venus":   20,
-    "Sun":     6,
-    "Moon":    10,
-    "Mars":    7,
-    "Rahu":    18,
+    "Ketu": 7,
+    "Venus": 20,
+    "Sun": 6,
+    "Moon": 10,
+    "Mars": 7,
+    "Rahu": 18,
     "Jupiter": 16,
-    "Saturn":  19,
+    "Saturn": 19,
     "Mercury": 17,
 }
 
@@ -37,37 +37,63 @@ TOTAL_YEARS = 120  # sum of all periods
 
 # Fixed order of the 9 dasha lords
 _SEQUENCE = [
-    "Ketu", "Venus", "Sun", "Moon", "Mars",
-    "Rahu", "Jupiter", "Saturn", "Mercury",
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
 ]
 
 # 27 nakshatra lords (each group of 9 repeats 3 times)
 _NAKSHATRA_LORDS: list[str] = _SEQUENCE * 3  # indices 0–26
 
 _NAKSHATRA_NAMES: list[str] = [
-    "Ashwini",        "Bharani",          "Krittika",
-    "Rohini",         "Mrigashira",       "Ardra",
-    "Punarvasu",      "Pushya",           "Ashlesha",
-    "Magha",          "Purva Phalguni",   "Uttara Phalguni",
-    "Hasta",          "Chitra",           "Swati",
-    "Vishakha",       "Anuradha",         "Jyeshtha",
-    "Mula",           "Purva Ashadha",    "Uttara Ashadha",
-    "Shravana",       "Dhanishtha",       "Shatabhisha",
-    "Purva Bhadrapada", "Uttara Bhadrapada", "Revati",
+    "Ashwini",
+    "Bharani",
+    "Krittika",
+    "Rohini",
+    "Mrigashira",
+    "Ardra",
+    "Punarvasu",
+    "Pushya",
+    "Ashlesha",
+    "Magha",
+    "Purva Phalguni",
+    "Uttara Phalguni",
+    "Hasta",
+    "Chitra",
+    "Swati",
+    "Vishakha",
+    "Anuradha",
+    "Jyeshtha",
+    "Mula",
+    "Purva Ashadha",
+    "Uttara Ashadha",
+    "Shravana",
+    "Dhanishtha",
+    "Shatabhisha",
+    "Purva Bhadrapada",
+    "Uttara Bhadrapada",
+    "Revati",
 ]
 
-_NAK_SPAN      = 360.0 / 27   # 13.3333...° per nakshatra
+_NAK_SPAN = 360.0 / 27  # 13.3333...° per nakshatra
 _DAYS_PER_YEAR = 365.25
 
 
 # ── Data classes ─────────────────────────────────────────────────────────────
 
+
 @dataclass
 class AntarDasha:
-    lord:  str
+    lord: str
     start: date
-    end:   date
-    years: float    # actual duration
+    end: date
+    years: float  # actual duration
 
     @property
     def is_current(self) -> bool:
@@ -76,12 +102,12 @@ class AntarDasha:
 
 @dataclass
 class MahaDasha:
-    lord:       str
-    start:      date
-    end:        date
-    years:      float    # actual duration (balance for first dasha)
-    full_years: int      # nominal period for this lord
-    nakshatra:  str      # Moon's birth nakshatra (non-empty only for first dasha)
+    lord: str
+    start: date
+    end: date
+    years: float  # actual duration (balance for first dasha)
+    full_years: int  # nominal period for this lord
+    nakshatra: str  # Moon's birth nakshatra (non-empty only for first dasha)
     antardashas: list[AntarDasha] = field(default_factory=list)
 
     @property
@@ -91,7 +117,10 @@ class MahaDasha:
 
 # ── Internal helpers ──────────────────────────────────────────────────────────
 
-def _antardashas(maha_lord: str, maha_start: date, maha_years: float) -> list[AntarDasha]:
+
+def _antardashas(
+    maha_lord: str, maha_start: date, maha_years: float
+) -> list[AntarDasha]:
     """Divide a mahadasha into 9 antardashas (sub-periods)."""
     start_idx = _SEQUENCE.index(maha_lord)
     ads: list[AntarDasha] = []
@@ -107,6 +136,7 @@ def _antardashas(maha_lord: str, maha_start: date, maha_years: float) -> list[An
 
 
 # ── Public API ────────────────────────────────────────────────────────────────
+
 
 def compute_vimshottari_dasa(
     chart: BirthChart,
@@ -125,7 +155,7 @@ def compute_vimshottari_dasa(
     List of 9 MahaDashas covering 120 years from birth.
     Each MahaDasha contains 9 AntarDashas.
     """
-    moon_lon = chart.planets["Moon"].longitude   # sidereal 0–360°
+    moon_lon = chart.planets["Moon"].longitude  # sidereal 0–360°
 
     # Moon's nakshatra (0-indexed, 0=Ashwini … 26=Revati)
     nak_idx = min(int(moon_lon / _NAK_SPAN), 26)
@@ -135,9 +165,9 @@ def compute_vimshottari_dasa(
 
     # Birth dasha lord
     birth_lord = _NAKSHATRA_LORDS[nak_idx]
-    birth_nak  = _NAKSHATRA_NAMES[nak_idx]
+    birth_nak = _NAKSHATRA_NAMES[nak_idx]
     full_years = VIMSHOTTARI_YEARS[birth_lord]
-    balance    = full_years * (1.0 - elapsed_fraction)
+    balance = full_years * (1.0 - elapsed_fraction)
 
     start_idx = _SEQUENCE.index(birth_lord)
     dashas: list[MahaDasha] = []
@@ -145,20 +175,22 @@ def compute_vimshottari_dasa(
 
     for i in range(9):
         seq_idx = (start_idx + i) % 9
-        lord    = _SEQUENCE[seq_idx]
-        full    = VIMSHOTTARI_YEARS[lord]
-        actual  = balance if i == 0 else float(full)
-        end_dt  = current_date + timedelta(days=actual * _DAYS_PER_YEAR)
+        lord = _SEQUENCE[seq_idx]
+        full = VIMSHOTTARI_YEARS[lord]
+        actual = balance if i == 0 else float(full)
+        end_dt = current_date + timedelta(days=actual * _DAYS_PER_YEAR)
 
-        dashas.append(MahaDasha(
-            lord=lord,
-            start=current_date,
-            end=end_dt,
-            years=actual,
-            full_years=full,
-            nakshatra=birth_nak if i == 0 else "",
-            antardashas=_antardashas(lord, current_date, actual),
-        ))
+        dashas.append(
+            MahaDasha(
+                lord=lord,
+                start=current_date,
+                end=end_dt,
+                years=actual,
+                full_years=full,
+                nakshatra=birth_nak if i == 0 else "",
+                antardashas=_antardashas(lord, current_date, actual),
+            )
+        )
         current_date = end_dt
 
     return dashas
@@ -185,5 +217,5 @@ def current_dasha(
 def nakshatra_of_moon(chart: BirthChart) -> tuple[str, str]:
     """Return (nakshatra_name, dasha_lord) for Moon's position."""
     moon_lon = chart.planets["Moon"].longitude
-    nak_idx  = min(int(moon_lon / _NAK_SPAN), 26)
+    nak_idx = min(int(moon_lon / _NAK_SPAN), 26)
     return _NAKSHATRA_NAMES[nak_idx], _NAKSHATRA_LORDS[nak_idx]

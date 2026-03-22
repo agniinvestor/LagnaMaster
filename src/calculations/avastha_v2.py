@@ -2,35 +2,59 @@
 src/calculations/avastha_v2.py — Session 39 (fixed)
 Corrected Baaladi (even-sign reversal) and Sayanadi avastha systems.
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
-_BAALADI_ODD  = [(0,6,"Bala",0.25),(6,12,"Kumar",0.5),(12,18,"Yuva",1.0),
-                 (18,24,"Vridha",0.5),(24,30,"Mrita",0.0)]
-_BAALADI_EVEN = [(0,6,"Mrita",0.0),(6,12,"Vridha",0.5),(12,18,"Yuva",1.0),
-                 (18,24,"Kumar",0.5),(24,30,"Bala",0.25)]
+_BAALADI_ODD = [
+    (0, 6, "Bala", 0.25),
+    (6, 12, "Kumar", 0.5),
+    (12, 18, "Yuva", 1.0),
+    (18, 24, "Vridha", 0.5),
+    (24, 30, "Mrita", 0.0),
+]
+_BAALADI_EVEN = [
+    (0, 6, "Mrita", 0.0),
+    (6, 12, "Vridha", 0.5),
+    (12, 18, "Yuva", 1.0),
+    (18, 24, "Kumar", 0.5),
+    (24, 30, "Bala", 0.25),
+]
 
 _NAT_FRIEND = {
-    "Sun":{"Moon","Mars","Jupiter"},"Moon":{"Sun","Mercury"},
-    "Mars":{"Sun","Moon","Jupiter"},"Mercury":{"Sun","Venus"},
-    "Jupiter":{"Sun","Moon","Mars"},"Venus":{"Mercury","Saturn"},
-    "Saturn":{"Mercury","Venus"},
+    "Sun": {"Moon", "Mars", "Jupiter"},
+    "Moon": {"Sun", "Mercury"},
+    "Mars": {"Sun", "Moon", "Jupiter"},
+    "Mercury": {"Sun", "Venus"},
+    "Jupiter": {"Sun", "Moon", "Mars"},
+    "Venus": {"Mercury", "Saturn"},
+    "Saturn": {"Mercury", "Venus"},
 }
 _NAT_ENEMY = {
-    "Sun":   {"Venus","Saturn"},
-    "Moon":  set(),
-    "Mars":  {"Mercury"},
-    "Mercury":{"Moon"},
-    "Jupiter":{"Mercury","Venus"},
-    "Venus": {"Sun","Moon"},
-    "Saturn":{"Sun","Moon","Mars"},
+    "Sun": {"Venus", "Saturn"},
+    "Moon": set(),
+    "Mars": {"Mercury"},
+    "Mercury": {"Moon"},
+    "Jupiter": {"Mercury", "Venus"},
+    "Venus": {"Sun", "Moon"},
+    "Saturn": {"Sun", "Moon", "Mars"},
 }
 _SIGN_LORD = {
-    0:"Mars",1:"Venus",2:"Mercury",3:"Moon",4:"Sun",5:"Mercury",
-    6:"Venus",7:"Mars",8:"Jupiter",9:"Saturn",10:"Saturn",11:"Jupiter",
+    0: "Mars",
+    1: "Venus",
+    2: "Mercury",
+    3: "Moon",
+    4: "Sun",
+    5: "Mercury",
+    6: "Venus",
+    7: "Mars",
+    8: "Jupiter",
+    9: "Saturn",
+    10: "Saturn",
+    11: "Jupiter",
 }
-_WATERY = {3,7,11}
-_NAT_MALEFIC = {"Sun","Mars","Saturn","Rahu","Ketu"}
+_WATERY = {3, 7, 11}
+_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 
 def compute_baaladi(planet: str, chart) -> tuple[str, float]:
@@ -53,10 +77,15 @@ def compute_sayanadi(planet: str, chart) -> tuple[str, float]:
     # Kopa: combust
     try:
         from src.calculations.dignity import compute_all_dignities, DignityLevel
+
         dig = compute_all_dignities(chart).get(planet)
         if dig and dig.combust:
             return "Kopa", 0.5
-        if dig and dig.dignity in {DignityLevel.EXALT, DignityLevel.OWN_SIGN, DignityLevel.MOOLTRIKONA}:
+        if dig and dig.dignity in {
+            DignityLevel.EXALT,
+            DignityLevel.OWN_SIGN,
+            DignityLevel.MOOLTRIKONA,
+        }:
             return "Sthira", 1.25
     except Exception:
         pass
@@ -103,7 +132,7 @@ class AvasthaReportV2:
 
 
 def compute_avasthas_v2(chart) -> AvasthaReportV2:
-    planets_7 = ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn"]
+    planets_7 = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
     result = {}
     for p in planets_7:
         pos = chart.planets.get(p)
@@ -112,9 +141,13 @@ def compute_avasthas_v2(chart) -> AvasthaReportV2:
         ba_state, ba_pct = compute_baaladi(p, chart)
         sa_state, sa_mod = compute_sayanadi(p, chart)
         result[p] = AvasthaV2(
-            planet=p, sign=pos.sign, degree=round(pos.degree_in_sign, 4),
-            baaladi_state=ba_state, baaladi_pct=ba_pct,
-            sayanadi_state=sa_state, sayanadi_modifier=sa_mod,
+            planet=p,
+            sign=pos.sign,
+            degree=round(pos.degree_in_sign, 4),
+            baaladi_state=ba_state,
+            baaladi_pct=ba_pct,
+            sayanadi_state=sa_state,
+            sayanadi_modifier=sa_mod,
             combined_modifier=round(ba_pct * sa_mod, 3),
         )
     return AvasthaReportV2(planets=result)

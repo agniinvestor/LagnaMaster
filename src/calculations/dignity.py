@@ -23,57 +23,79 @@ Sources:
 """
 
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
 
 # ─── Dignity Level ──────────────────────────────────────────────────────────
 
+
 class DignityLevel(Enum):
-    DEEP_EXALT          = "Deep Exaltation"   # within 5° of Paramotcha
-    EXALT               = "Exaltation"
-    NEECHA_BHANGA_RAJA  = "Neecha Bhanga Raja Yoga"  # debil + >=2 NB conditions
-    NEECHA_BHANGA       = "Neecha Bhanga"     # debil cancelled
-    MOOLTRIKONA         = "Mooltrikona"
-    OWN_SIGN            = "Own Sign"
-    FRIEND_SIGN         = "Friendly Sign"
-    NEUTRAL             = "Neutral"
-    NEUTRAL_SIGN        = "Neutral"   # alias — some modules use NEUTRAL_SIGN
-    ENEMY_SIGN          = "Enemy Sign"
-    DEBIL               = "Debilitation"
+    DEEP_EXALT = "Deep Exaltation"  # within 5° of Paramotcha
+    EXALT = "Exaltation"
+    NEECHA_BHANGA_RAJA = "Neecha Bhanga Raja Yoga"  # debil + >=2 NB conditions
+    NEECHA_BHANGA = "Neecha Bhanga"  # debil cancelled
+    MOOLTRIKONA = "Mooltrikona"
+    OWN_SIGN = "Own Sign"
+    FRIEND_SIGN = "Friendly Sign"
+    NEUTRAL = "Neutral"
+    NEUTRAL_SIGN = "Neutral"  # alias — some modules use NEUTRAL_SIGN
+    ENEMY_SIGN = "Enemy Sign"
+    DEBIL = "Debilitation"
+
 
 # Heuristic score modifier for the scoring engine
 DIGNITY_SCORE: dict[DignityLevel, float] = {
-    DignityLevel.DEEP_EXALT:         2.0,
-    DignityLevel.EXALT:              1.5,
+    DignityLevel.DEEP_EXALT: 2.0,
+    DignityLevel.EXALT: 1.5,
     DignityLevel.NEECHA_BHANGA_RAJA: 1.5,
-    DignityLevel.NEECHA_BHANGA:      0.0,
-    DignityLevel.MOOLTRIKONA:        1.0,
-    DignityLevel.OWN_SIGN:           0.75,
-    DignityLevel.FRIEND_SIGN:        0.25,
-    DignityLevel.NEUTRAL:            0.0,
-    DignityLevel.ENEMY_SIGN:        -0.25,
-    DignityLevel.DEBIL:             -1.5,
+    DignityLevel.NEECHA_BHANGA: 0.0,
+    DignityLevel.MOOLTRIKONA: 1.0,
+    DignityLevel.OWN_SIGN: 0.75,
+    DignityLevel.FRIEND_SIGN: 0.25,
+    DignityLevel.NEUTRAL: 0.0,
+    DignityLevel.ENEMY_SIGN: -0.25,
+    DignityLevel.DEBIL: -1.5,
 }
 
 # ─── Exaltation / Debilitation / Paramotcha ─────────────────────────────────
 # Source: BPHS Ch.3 v.2-9; Phaladeepika Ch.2 v.4-7
 
 EXALT_SIGN: dict[str, int] = {
-    "Sun": 0, "Moon": 1, "Mars": 9, "Mercury": 5,
-    "Jupiter": 3, "Venus": 11, "Saturn": 6,
+    "Sun": 0,
+    "Moon": 1,
+    "Mars": 9,
+    "Mercury": 5,
+    "Jupiter": 3,
+    "Venus": 11,
+    "Saturn": 6,
 }
 DEBIL_SIGN: dict[str, int] = {
-    "Sun": 6, "Moon": 7, "Mars": 3, "Mercury": 11,
-    "Jupiter": 9, "Venus": 5, "Saturn": 0,
+    "Sun": 6,
+    "Moon": 7,
+    "Mars": 3,
+    "Mercury": 11,
+    "Jupiter": 9,
+    "Venus": 5,
+    "Saturn": 0,
 }
 PARAMOTCHA_DEGREE: dict[str, float] = {
-    "Sun": 10.0, "Moon": 3.0, "Mars": 28.0, "Mercury": 15.0,
-    "Jupiter": 5.0, "Venus": 27.0, "Saturn": 20.0,
+    "Sun": 10.0,
+    "Moon": 3.0,
+    "Mars": 28.0,
+    "Mercury": 15.0,
+    "Jupiter": 5.0,
+    "Venus": 27.0,
+    "Saturn": 20.0,
 }
 NEECHA_DEGREE: dict[str, float] = {
-    "Sun": 10.0, "Moon": 3.0, "Mars": 28.0, "Mercury": 15.0,
-    "Jupiter": 5.0, "Venus": 27.0, "Saturn": 20.0,
+    "Sun": 10.0,
+    "Moon": 3.0,
+    "Mars": 28.0,
+    "Mercury": 15.0,
+    "Jupiter": 5.0,
+    "Venus": 27.0,
+    "Saturn": 20.0,
 }
 DEEP_EXALT_ORB = 5.0  # degrees from Paramotcha for DEEP_EXALT
 
@@ -82,24 +104,24 @@ DEEP_EXALT_ORB = 5.0  # degrees from Paramotcha for DEEP_EXALT
 # Format: {planet: (sign_index, mt_start_deg, mt_end_deg)}
 
 MOOLTRIKONA_RANGES: dict[str, tuple[int, float, float]] = {
-    "Sun":     (4,  0.0,  20.0),   # Leo 0°-20°; 20°-30° = own sign
-    "Moon":    (1,  4.0,  30.0),   # Taurus 4°-30°; 0°-3°59' = own sign
-    "Mars":    (0,  0.0,  12.0),   # Aries 0°-12°; 12°-30° = own sign
-    "Mercury": (5, 16.0,  20.0),   # Virgo 16°-20° ONLY — 4° window critical
-    "Jupiter": (8,  0.0,  10.0),   # Sagittarius 0°-10°
-    "Venus":   (6,  0.0,  15.0),   # Libra 0°-15°
-    "Saturn":  (10, 0.0,  20.0),   # Aquarius 0°-20°
+    "Sun": (4, 0.0, 20.0),  # Leo 0°-20°; 20°-30° = own sign
+    "Moon": (1, 4.0, 30.0),  # Taurus 4°-30°; 0°-3°59' = own sign
+    "Mars": (0, 0.0, 12.0),  # Aries 0°-12°; 12°-30° = own sign
+    "Mercury": (5, 16.0, 20.0),  # Virgo 16°-20° ONLY — 4° window critical
+    "Jupiter": (8, 0.0, 10.0),  # Sagittarius 0°-10°
+    "Venus": (6, 0.0, 15.0),  # Libra 0°-15°
+    "Saturn": (10, 0.0, 20.0),  # Aquarius 0°-20°
 }
 
 # Own sign indices (including non-MT portion and second sign)
 OWN_SIGNS: dict[str, list[int]] = {
-    "Sun":     [4],          # Leo
-    "Moon":    [3, 1],       # Cancer + Taurus (non-MT portion)
-    "Mars":    [0, 7],       # Aries + Scorpio
-    "Mercury": [5, 2],       # Virgo + Gemini
-    "Jupiter": [8, 11],      # Sagittarius + Pisces
-    "Venus":   [6, 1],       # Libra + Taurus
-    "Saturn":  [10, 9],      # Aquarius + Capricorn
+    "Sun": [4],  # Leo
+    "Moon": [3, 1],  # Cancer + Taurus (non-MT portion)
+    "Mars": [0, 7],  # Aries + Scorpio
+    "Mercury": [5, 2],  # Virgo + Gemini
+    "Jupiter": [8, 11],  # Sagittarius + Pisces
+    "Venus": [6, 1],  # Libra + Taurus
+    "Saturn": [10, 9],  # Aquarius + Capricorn
 }
 
 # ─── Rahu/Ketu dignity ───────────────────────────────────────────────────────
@@ -108,22 +130,22 @@ OWN_SIGNS: dict[str, list[int]] = {
 
 RAHU_KETU_DIGNITY: dict[str, dict[str, Optional[int]]] = {
     "bphs": {
-        "rahu_exalt": 1,   # Taurus
-        "rahu_debil": 7,   # Scorpio
-        "ketu_exalt": 7,   # Scorpio
-        "ketu_debil": 1,   # Taurus
+        "rahu_exalt": 1,  # Taurus
+        "rahu_debil": 7,  # Scorpio
+        "ketu_exalt": 7,  # Scorpio
+        "ketu_debil": 1,  # Taurus
     },
     "raman": {
-        "rahu_exalt": 2,   # Gemini
-        "rahu_debil": 8,   # Sagittarius
-        "ketu_exalt": 8,   # Sagittarius
-        "ketu_debil": 2,   # Gemini
+        "rahu_exalt": 2,  # Gemini
+        "rahu_debil": 8,  # Sagittarius
+        "ketu_exalt": 8,  # Sagittarius
+        "ketu_debil": 2,  # Gemini
     },
     "south_indian": {
-        "rahu_exalt": 5,   # Virgo
+        "rahu_exalt": 5,  # Virgo
         "rahu_debil": 11,  # Pisces
         "ketu_exalt": 11,  # Pisces
-        "ketu_debil": 5,   # Virgo
+        "ketu_debil": 5,  # Virgo
     },
 }
 
@@ -131,27 +153,48 @@ RAHU_KETU_DIGNITY: dict[str, dict[str, Optional[int]]] = {
 # Source: BPHS Ch.15 — permanent friendship matrix (asymmetric)
 
 _NAISARGIKA: dict[tuple[str, str], str] = {
-    ("Sun", "Moon"): "Friend", ("Sun", "Mars"): "Friend",
-    ("Sun", "Jupiter"): "Friend", ("Sun", "Mercury"): "Neutral",
-    ("Sun", "Venus"): "Enemy", ("Sun", "Saturn"): "Enemy",
-    ("Moon", "Sun"): "Friend", ("Moon", "Mercury"): "Friend",
-    ("Moon", "Mars"): "Neutral", ("Moon", "Jupiter"): "Neutral",
-    ("Moon", "Venus"): "Neutral", ("Moon", "Saturn"): "Neutral",
-    ("Mars", "Sun"): "Friend", ("Mars", "Moon"): "Friend",
-    ("Mars", "Jupiter"): "Friend", ("Mars", "Mercury"): "Enemy",
-    ("Mars", "Venus"): "Neutral", ("Mars", "Saturn"): "Neutral",
-    ("Mercury", "Sun"): "Friend", ("Mercury", "Venus"): "Friend",
-    ("Mercury", "Moon"): "Enemy", ("Mercury", "Mars"): "Neutral",
-    ("Mercury", "Jupiter"): "Neutral", ("Mercury", "Saturn"): "Neutral",
-    ("Jupiter", "Sun"): "Friend", ("Jupiter", "Moon"): "Friend",
-    ("Jupiter", "Mars"): "Friend", ("Jupiter", "Mercury"): "Enemy",
-    ("Jupiter", "Saturn"): "Enemy", ("Jupiter", "Venus"): "Neutral",
-    ("Venus", "Mercury"): "Friend", ("Venus", "Saturn"): "Friend",
-    ("Venus", "Sun"): "Enemy", ("Venus", "Moon"): "Neutral",
-    ("Venus", "Mars"): "Neutral", ("Venus", "Jupiter"): "Neutral",
-    ("Saturn", "Mercury"): "Friend", ("Saturn", "Venus"): "Friend",
-    ("Saturn", "Sun"): "Enemy", ("Saturn", "Moon"): "Enemy",
-    ("Saturn", "Mars"): "Neutral", ("Saturn", "Jupiter"): "Neutral",
+    ("Sun", "Moon"): "Friend",
+    ("Sun", "Mars"): "Friend",
+    ("Sun", "Jupiter"): "Friend",
+    ("Sun", "Mercury"): "Neutral",
+    ("Sun", "Venus"): "Enemy",
+    ("Sun", "Saturn"): "Enemy",
+    ("Moon", "Sun"): "Friend",
+    ("Moon", "Mercury"): "Friend",
+    ("Moon", "Mars"): "Neutral",
+    ("Moon", "Jupiter"): "Neutral",
+    ("Moon", "Venus"): "Neutral",
+    ("Moon", "Saturn"): "Neutral",
+    ("Mars", "Sun"): "Friend",
+    ("Mars", "Moon"): "Friend",
+    ("Mars", "Jupiter"): "Friend",
+    ("Mars", "Mercury"): "Enemy",
+    ("Mars", "Venus"): "Neutral",
+    ("Mars", "Saturn"): "Neutral",
+    ("Mercury", "Sun"): "Friend",
+    ("Mercury", "Venus"): "Friend",
+    ("Mercury", "Moon"): "Enemy",
+    ("Mercury", "Mars"): "Neutral",
+    ("Mercury", "Jupiter"): "Neutral",
+    ("Mercury", "Saturn"): "Neutral",
+    ("Jupiter", "Sun"): "Friend",
+    ("Jupiter", "Moon"): "Friend",
+    ("Jupiter", "Mars"): "Friend",
+    ("Jupiter", "Mercury"): "Enemy",
+    ("Jupiter", "Saturn"): "Enemy",
+    ("Jupiter", "Venus"): "Neutral",
+    ("Venus", "Mercury"): "Friend",
+    ("Venus", "Saturn"): "Friend",
+    ("Venus", "Sun"): "Enemy",
+    ("Venus", "Moon"): "Neutral",
+    ("Venus", "Mars"): "Neutral",
+    ("Venus", "Jupiter"): "Neutral",
+    ("Saturn", "Mercury"): "Friend",
+    ("Saturn", "Venus"): "Friend",
+    ("Saturn", "Sun"): "Enemy",
+    ("Saturn", "Moon"): "Enemy",
+    ("Saturn", "Mars"): "Neutral",
+    ("Saturn", "Jupiter"): "Neutral",
 }
 
 # ─── Combustion orbs ─────────────────────────────────────────────────────────
@@ -160,25 +203,26 @@ _NAISARGIKA: dict[tuple[str, str], str] = {
 
 COMBUSTION_ORBS: dict[str, dict[str, tuple[float, float]]] = {
     "bphs": {
-        "Moon":    (12.0, 12.0),   # Moon cannot retrograde
-        "Mars":    (17.0, 17.0),
+        "Moon": (12.0, 12.0),  # Moon cannot retrograde
+        "Mars": (17.0, 17.0),
         "Mercury": (14.0, 12.0),
         "Jupiter": (11.0, 11.0),
-        "Venus":   (10.0,  8.0),
-        "Saturn":  (15.0, 15.0),
+        "Venus": (10.0, 8.0),
+        "Saturn": (15.0, 15.0),
     },
     "raman": {
-        "Moon":    (12.0, 12.0),
-        "Mars":    (17.0, 17.0),
+        "Moon": (12.0, 12.0),
+        "Mars": (17.0, 17.0),
         "Mercury": (13.0, 12.0),
         "Jupiter": (11.0, 11.0),
-        "Venus":   ( 9.0,  8.0),
-        "Saturn":  (16.0, 15.0),
+        "Venus": (9.0, 8.0),
+        "Saturn": (16.0, 15.0),
     },
 }
 CAZIMI_ORB = 1.0  # within 1° of Sun = Cazimi (positive override)
 
 # ─── Result dataclass ────────────────────────────────────────────────────────
+
 
 @dataclass
 class DignityResult:
@@ -188,36 +232,46 @@ class DignityResult:
 
     # Core dignity
     dignity: DignityLevel = DignityLevel.NEUTRAL
-    uchcha_bala: float = 0.0       # 0-60 Virupas; replaces binary EXALT
+    uchcha_bala: float = 0.0  # 0-60 Virupas; replaces binary EXALT
 
     # Combustion
     combust: bool = False
     cazimi: bool = False
-    asta_vakri: bool = False       # combust + retrograde
+    asta_vakri: bool = False  # combust + retrograde
 
     # Neecha Bhanga — all 6 conditions per BPHS Ch.49
-    nb_lord_kendra_lagna: bool = False   # condition 1 (was only one before)
-    nb_lord_kendra_moon: bool = False    # condition 2
+    nb_lord_kendra_lagna: bool = False  # condition 1 (was only one before)
+    nb_lord_kendra_moon: bool = False  # condition 2
     nb_exalt_kendra_lagna: bool = False  # condition 3
-    nb_exalt_kendra_moon: bool = False   # condition 4
-    nb_aspected_by_lord: bool = False    # condition 5
-    nb_parivartana: bool = False         # condition 6
+    nb_exalt_kendra_moon: bool = False  # condition 4
+    nb_aspected_by_lord: bool = False  # condition 5
+    nb_parivartana: bool = False  # condition 6
 
     @property
     def neecha_bhanga(self) -> bool:
-        return any([
-            self.nb_lord_kendra_lagna, self.nb_lord_kendra_moon,
-            self.nb_exalt_kendra_lagna, self.nb_exalt_kendra_moon,
-            self.nb_aspected_by_lord, self.nb_parivartana,
-        ])
+        return any(
+            [
+                self.nb_lord_kendra_lagna,
+                self.nb_lord_kendra_moon,
+                self.nb_exalt_kendra_lagna,
+                self.nb_exalt_kendra_moon,
+                self.nb_aspected_by_lord,
+                self.nb_parivartana,
+            ]
+        )
 
     @property
     def neecha_bhanga_count(self) -> int:
-        return sum([
-            self.nb_lord_kendra_lagna, self.nb_lord_kendra_moon,
-            self.nb_exalt_kendra_lagna, self.nb_exalt_kendra_moon,
-            self.nb_aspected_by_lord, self.nb_parivartana,
-        ])
+        return sum(
+            [
+                self.nb_lord_kendra_lagna,
+                self.nb_lord_kendra_moon,
+                self.nb_exalt_kendra_lagna,
+                self.nb_exalt_kendra_moon,
+                self.nb_aspected_by_lord,
+                self.nb_parivartana,
+            ]
+        )
 
     # Pushkara
     is_pushkara_navamsha: bool = False
@@ -255,6 +309,7 @@ class DignityResult:
 
 
 # ─── Core computation helpers ────────────────────────────────────────────────
+
 
 def _arc_distance(a: float, b: float) -> float:
     """Shortest circular distance between two longitudes (0-360)."""
@@ -333,7 +388,9 @@ def _get_dignity_level(
     return DignityLevel.NEUTRAL  # friendship overlay applied in compute_dignity
 
 
-def _get_node_dignity(planet: str, sign_index: int, school: str = "bphs") -> DignityLevel:
+def _get_node_dignity(
+    planet: str, sign_index: int, school: str = "bphs"
+) -> DignityLevel:
     """Rahu/Ketu dignity by school convention. Source: BPHS Ch.3."""
     school_data = RAHU_KETU_DIGNITY.get(school, RAHU_KETU_DIGNITY["bphs"])
     if planet == "Rahu":
@@ -360,13 +417,29 @@ def _check_neecha_bhanga(planet: str, chart) -> DignityResult:
     Evaluate all 6 Neecha Bhanga conditions per BPHS Ch.49 v.12-18.
     Returns a partial DignityResult with NB booleans set.
     """
-    _SIGN_LORDS_NB = {0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun", 5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter", 9: "Saturn", 10: "Saturn", 11: "Jupiter"}
+    _SIGN_LORDS_NB = {
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
+    }
 
     sign_index = chart.planets[planet].sign_index
     debil_sign = DEBIL_SIGN.get(planet)
     if sign_index != debil_sign:
-        return DignityResult(planet=planet, sign_index=sign_index,
-                             degree_in_sign=chart.planets[planet].degree_in_sign)
+        return DignityResult(
+            planet=planet,
+            sign_index=sign_index,
+            degree_in_sign=chart.planets[planet].degree_in_sign,
+        )
 
     lagna_si = chart.lagna_sign_index
     moon_si = chart.planets["Moon"].sign_index
@@ -375,9 +448,7 @@ def _check_neecha_bhanga(planet: str, chart) -> DignityResult:
     debil_lord = _SIGN_LORDS_NB.get(debil_sign)
 
     # Planet that exalts in debilitation sign
-    exalt_in_debil = next(
-        (p for p, si in EXALT_SIGN.items() if si == debil_sign), None
-    )
+    exalt_in_debil = next((p for p, si in EXALT_SIGN.items() if si == debil_sign), None)
 
     def house_from(ref_si: int, planet_name: str) -> int:
         if planet_name not in chart.planets:
@@ -388,8 +459,11 @@ def _check_neecha_bhanga(planet: str, chart) -> DignityResult:
         h = house_from(ref_si, planet_name)
         return h in (1, 4, 7, 10)
 
-    result = DignityResult(planet=planet, sign_index=sign_index,
-                           degree_in_sign=chart.planets[planet].degree_in_sign)
+    result = DignityResult(
+        planet=planet,
+        sign_index=sign_index,
+        degree_in_sign=chart.planets[planet].degree_in_sign,
+    )
 
     # Condition 1: debilitation lord in Kendra from Lagna
     if debil_lord and debil_lord in chart.planets:
@@ -411,14 +485,14 @@ def _check_neecha_bhanga(planet: str, chart) -> DignityResult:
     # Full 7th aspect check
     if debil_lord and debil_lord in chart.planets:
         lord_si = chart.planets[debil_lord].sign_index
-        result.nb_aspected_by_lord = (lord_si == (sign_index + 6) % 12)
+        result.nb_aspected_by_lord = lord_si == (sign_index + 6) % 12
 
     # Condition 6: Parivartana — mutual sign exchange
     if debil_lord and debil_lord in chart.planets:
         lord_sign = chart.planets[debil_lord].sign_index
         # Planet is in debil_lord's sign if the debil_lord rules it
-        planet_in_lords_sign = (sign_index in OWN_SIGNS.get(debil_lord, []))
-        lord_in_debil_sign = (lord_sign == debil_sign)
+        planet_in_lords_sign = sign_index in OWN_SIGNS.get(debil_lord, [])
+        lord_in_debil_sign = lord_sign == debil_sign
         result.nb_parivartana = planet_in_lords_sign and lord_in_debil_sign
 
     return result
@@ -429,24 +503,34 @@ def _check_neecha_bhanga(planet: str, chart) -> DignityResult:
 
 # 14 Pushkara Navamsha positions: (sign_index, start_deg, end_deg)
 PUSHKARA_NAVAMSHA: list[tuple[int, float, float]] = [
-    (0,  0.0,   3.333),   # Aries pada 1
-    (1,  6.667, 10.0),    # Taurus pada 3
-    (2,  3.333, 6.667),   # Gemini pada 2
-    (3,  10.0,  13.333),  # Cancer pada 4
-    (4,  3.333, 6.667),   # Leo pada 2
-    (5,  10.0,  13.333),  # Virgo pada 4
-    (6,  0.0,   3.333),   # Libra pada 1
-    (7,  6.667, 10.0),    # Scorpio pada 3
-    (8,  3.333, 6.667),   # Sagittarius pada 2
-    (9,  10.0,  13.333),  # Capricorn pada 4
-    (10, 0.0,   3.333),   # Aquarius pada 1
-    (11, 6.667, 10.0),    # Pisces pada 3
+    (0, 0.0, 3.333),  # Aries pada 1
+    (1, 6.667, 10.0),  # Taurus pada 3
+    (2, 3.333, 6.667),  # Gemini pada 2
+    (3, 10.0, 13.333),  # Cancer pada 4
+    (4, 3.333, 6.667),  # Leo pada 2
+    (5, 10.0, 13.333),  # Virgo pada 4
+    (6, 0.0, 3.333),  # Libra pada 1
+    (7, 6.667, 10.0),  # Scorpio pada 3
+    (8, 3.333, 6.667),  # Sagittarius pada 2
+    (9, 10.0, 13.333),  # Capricorn pada 4
+    (10, 0.0, 3.333),  # Aquarius pada 1
+    (11, 6.667, 10.0),  # Pisces pada 3
 ]
 
 # Pushkara Bhaga: exact degree per sign (within ±0.5°)
 PUSHKARA_BHAGA: dict[int, float] = {
-    0: 21.0, 1: 14.0, 2: 18.0, 3: 8.0, 4: 19.0, 5: 24.0,
-    6: 15.0, 7: 11.0, 8: 23.0, 9: 14.0, 10: 20.0, 11: 9.0,
+    0: 21.0,
+    1: 14.0,
+    2: 18.0,
+    3: 8.0,
+    4: 19.0,
+    5: 24.0,
+    6: 15.0,
+    7: 11.0,
+    8: 23.0,
+    9: 14.0,
+    10: 20.0,
+    11: 9.0,
 }
 PUSHKARA_BHAGA_ORB = 0.5
 
@@ -467,6 +551,7 @@ def _is_pushkara_bhaga(sign_index: int, degree_in_sign: float) -> bool:
 
 # ─── Vargottama / Sandhi ─────────────────────────────────────────────────────
 
+
 def _is_vargottama(longitude: float) -> bool:
     """D1 sign == D9 sign. Source: PVRNR, Vedic Astrology Ch.9."""
     d1_sign = int(longitude / 30) % 12
@@ -484,6 +569,7 @@ def _is_sandhi(degree_in_sign: float) -> bool:
 
 
 # ─── Public API ──────────────────────────────────────────────────────────────
+
 
 def compute_dignity(
     planet: str,
@@ -510,12 +596,16 @@ def compute_dignity(
     vargottama = _is_vargottama(longitude)
 
     # Uchcha Bala (continuous, for Shadbala use)
-    uchcha_bala = _compute_uchcha_bala(planet, longitude) if planet not in ("Rahu", "Ketu") else 0.0
+    uchcha_bala = (
+        _compute_uchcha_bala(planet, longitude)
+        if planet not in ("Rahu", "Ketu")
+        else 0.0
+    )
 
     # Neecha Bhanga (if debilitated)
     nb_result = None
     nb_count = 0
-    is_debil = (planet in DEBIL_SIGN and sign_index == DEBIL_SIGN[planet])
+    is_debil = planet in DEBIL_SIGN and sign_index == DEBIL_SIGN[planet]
     if is_debil:
         try:
             nb_result = _check_neecha_bhanga(planet, chart)
@@ -525,7 +615,9 @@ def compute_dignity(
 
     # Core dignity level
     dignity = _get_dignity_level(
-        planet, sign_index, deg,
+        planet,
+        sign_index,
+        deg,
         is_debil_cancelled=(nb_count >= 1),
         nb_count=nb_count,
         uchcha_bala=uchcha_bala,
@@ -573,12 +665,12 @@ def compute_dignity(
 
     # Copy NB booleans if computed
     if nb_result is not None:
-        result.nb_lord_kendra_lagna  = nb_result.nb_lord_kendra_lagna
-        result.nb_lord_kendra_moon   = nb_result.nb_lord_kendra_moon
+        result.nb_lord_kendra_lagna = nb_result.nb_lord_kendra_lagna
+        result.nb_lord_kendra_moon = nb_result.nb_lord_kendra_moon
         result.nb_exalt_kendra_lagna = nb_result.nb_exalt_kendra_lagna
-        result.nb_exalt_kendra_moon  = nb_result.nb_exalt_kendra_moon
-        result.nb_aspected_by_lord   = nb_result.nb_aspected_by_lord
-        result.nb_parivartana        = nb_result.nb_parivartana
+        result.nb_exalt_kendra_moon = nb_result.nb_exalt_kendra_moon
+        result.nb_aspected_by_lord = nb_result.nb_aspected_by_lord
+        result.nb_parivartana = nb_result.nb_parivartana
 
     return result
 
@@ -610,9 +702,18 @@ def _friendship_dignity(planet: str, sign_index: int, chart) -> DignityLevel:
 
 def _get_sign_lord(sign_index: int) -> Optional[str]:
     LORDS = {
-        0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun",
-        5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter",
-        9: "Saturn", 10: "Saturn", 11: "Jupiter",
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
     }
     return LORDS.get(sign_index)
 
@@ -627,11 +728,18 @@ RETROGRADE_BONUS = 0.0  # old scoring constant; retrograde handled in chesta_bal
 
 
 # ── Backward-compatibility: old API used keyword args sign_idx/degree ──
-def compute_dignity_legacy(planet: str, sign_idx: int = 0, degree: float = 0.0,
-                           is_rx: bool = False, chart=None, **kwargs) -> "DignityResult":
+def compute_dignity_legacy(
+    planet: str,
+    sign_idx: int = 0,
+    degree: float = 0.0,
+    is_rx: bool = False,
+    chart=None,
+    **kwargs,
+) -> "DignityResult":
     """Old API shim. Prefer compute_dignity(planet, chart)."""
     if chart is not None:
         return compute_dignity(planet, chart)
+
     # Build minimal mock chart from positional args
     class _P:
         def __init__(self):
@@ -641,6 +749,7 @@ def compute_dignity_legacy(planet: str, sign_idx: int = 0, degree: float = 0.0,
             self.is_retrograde = is_rx
             self.speed = -0.5 if is_rx else 1.0
             self.latitude = 0.0
+
     class _C:
         def __init__(self):
             self.lagna = 0.0
@@ -648,23 +757,32 @@ def compute_dignity_legacy(planet: str, sign_idx: int = 0, degree: float = 0.0,
             self.planets = {planet: _P()}
             # Add Sun at neutral position for combustion checks
             if planet != "Sun":
-                sun = _P(); sun.sign_index = 6; sun.longitude = 180.0
-                sun.degree_in_sign = 0.0; sun.is_retrograde = False
-                sun.speed = 1.0; sun.latitude = 0.0
+                sun = _P()
+                sun.sign_index = 6
+                sun.longitude = 180.0
+                sun.degree_in_sign = 0.0
+                sun.is_retrograde = False
+                sun.speed = 1.0
+                sun.latitude = 0.0
                 self.planets["Sun"] = sun
+
     return compute_dignity(planet, _C())
 
 
 # ── Additional backward-compatibility aliases ──
 # DEEP_DEBIL: some old tests check for this level (not in classical texts, just a test artefact)
-DignityLevel.DEEP_DEBIL = DignityLevel.DEBIL   # alias: no separate DEEP_DEBIL level
+DignityLevel.DEEP_DEBIL = DignityLevel.DEBIL  # alias: no separate DEEP_DEBIL level
 
 
 # Asta Vakri (F-3) — retrograde planets have smaller combustion orbs
 # Source: Saravali Ch.3 v.14-16
 COMBUSTION_ORBS_RETROGRADE = {
-    "Moon": 12.0, "Mars": 17.0, "Mercury": 12.0,  # Rx Mercury: 12° not 14°
-    "Jupiter": 11.0, "Venus": 8.0, "Saturn": 15.0,  # Rx Venus: 8° not 10°
+    "Moon": 12.0,
+    "Mars": 17.0,
+    "Mercury": 12.0,  # Rx Mercury: 12° not 14°
+    "Jupiter": 11.0,
+    "Venus": 8.0,
+    "Saturn": 15.0,  # Rx Venus: 8° not 10°
 }
 
 

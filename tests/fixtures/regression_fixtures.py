@@ -10,16 +10,21 @@ Sources:
   BV Raman · Notable Horoscopes (Ranjan Publications)
   JHora 8.0 (P.V.R. Narasimha Rao) — cross-validation reference
 """
-from __future__ import annotations
+
+from __future__ import annotations  # noqa: E402
 
 # ─── Reference chart data (JHora-verified, Lahiri ayanamsha) ─────────────────
 
 REFERENCE_CHARTS = {
-
     # Chart 1: India Independence 1947 (existing — used as consistency baseline)
     "india_1947": {
-        "year": 1947, "month": 8, "day": 15, "hour": 0.0,
-        "lat": 28.6139, "lon": 77.2090, "tz_offset": 5.5,
+        "year": 1947,
+        "month": 8,
+        "day": 15,
+        "hour": 0.0,
+        "lat": 28.6139,
+        "lon": 77.2090,
+        "tz_offset": 5.5,
         "ayanamsha": "lahiri",
         "description": "India Independence — 5 planets in Cancer, Taurus Lagna, midnight",
         "expected": {
@@ -31,13 +36,17 @@ REFERENCE_CHARTS = {
         },
         "rules_testable": ["sannyasa_yoga", "kemadruma_cancellation"],
     },
-
     # Chart 2: Neecha Bhanga test case
     # Mars debilitated in Cancer, but Moon (lord of Cancer) in Kendra from Lagna
     # AND Jupiter (lord of exaltation sign = Capricorn) in Kendra
     "neecha_bhanga_mars": {
-        "year": 1950, "month": 3, "day": 21, "hour": 6.0,
-        "lat": 28.6139, "lon": 77.2090, "tz_offset": 5.5,
+        "year": 1950,
+        "month": 3,
+        "day": 21,
+        "hour": 6.0,
+        "lat": 28.6139,
+        "lon": 77.2090,
+        "tz_offset": 5.5,
         "ayanamsha": "lahiri",
         "description": "Mars debilitated in Cancer with NB conditions active",
         "expected": {
@@ -48,12 +57,16 @@ REFERENCE_CHARTS = {
         "rules_testable": ["neecha_bhanga", "nbry"],
         "note": "Synthetic chart — verify NB conditions manually",
     },
-
     # Chart 3: Parivartana Yoga test case
     # Sun in Cancer (Moon's sign), Moon in Leo (Sun's sign)
     "parivartana_sun_moon": {
-        "year": 1985, "month": 7, "day": 15, "hour": 10.0,
-        "lat": 19.0760, "lon": 72.8777, "tz_offset": 5.5,  # Mumbai
+        "year": 1985,
+        "month": 7,
+        "day": 15,
+        "hour": 10.0,
+        "lat": 19.0760,
+        "lon": 72.8777,
+        "tz_offset": 5.5,  # Mumbai
         "ayanamsha": "lahiri",
         "description": "Sun in Cancer, Moon in Leo — Parivartana Yoga",
         "expected": {
@@ -63,11 +76,15 @@ REFERENCE_CHARTS = {
         "rules_testable": ["parivartana", "mutual_exchange"],
         "note": "Approximate — verify exact Parivartana with JHora",
     },
-
     # Chart 4: High-latitude chart — Bhava Chalita divergence
     "high_latitude_helsinki": {
-        "year": 1990, "month": 12, "day": 21, "hour": 8.0,
-        "lat": 60.1699, "lon": 24.9384, "tz_offset": 2.0,  # Helsinki
+        "year": 1990,
+        "month": 12,
+        "day": 21,
+        "hour": 8.0,
+        "lat": 60.1699,
+        "lon": 24.9384,
+        "tz_offset": 2.0,  # Helsinki
         "ayanamsha": "lahiri",
         "description": "Helsinki winter solstice — extreme Bhava Chalita divergence expected",
         "expected": {
@@ -76,11 +93,15 @@ REFERENCE_CHARTS = {
         "rules_testable": ["bhava_chalita_divergence", "dig_bala_high_lat"],
         "note": "High latitude causes extreme Bhava Chalita distortion",
     },
-
     # Chart 5: Nakshatra cusp Moon — Vimshottari boundary test
     "nakshatra_cusp_moon": {
-        "year": 2000, "month": 1, "day": 1, "hour": 12.0,
-        "lat": 13.0827, "lon": 80.2707, "tz_offset": 5.5,  # Chennai
+        "year": 2000,
+        "month": 1,
+        "day": 1,
+        "hour": 12.0,
+        "lat": 13.0827,
+        "lon": 80.2707,
+        "tz_offset": 5.5,  # Chennai
         "ayanamsha": "lahiri",
         "description": "Moon near nakshatra boundary — dasha lord sensitivity",
         "expected": {
@@ -104,8 +125,18 @@ REGRESSION_BASELINE_INDIA_1947 = {
     "house_scores": {
         # These will be populated on first run via compute_baseline()
         # null means "not yet established"
-        1: None, 2: None, 3: None, 4: None, 5: None, 6: None,
-        7: None, 8: None, 9: None, 10: None, 11: None, 12: None,
+        1: None,
+        2: None,
+        3: None,
+        4: None,
+        5: None,
+        6: None,
+        7: None,
+        8: None,
+        9: None,
+        10: None,
+        11: None,
+        12: None,
     },
     "note": "Run compute_and_store_baseline() once to establish baseline scores",
 }
@@ -122,8 +153,8 @@ def compute_and_store_baseline(chart, scoring_fn) -> dict:
 
     Returns: the baseline dict
     """
-    import json
-    from datetime import date
+    import json  # noqa: E402
+    from datetime import date  # noqa: E402
 
     scores = scoring_fn(chart)
     baseline = {
@@ -134,7 +165,8 @@ def compute_and_store_baseline(chart, scoring_fn) -> dict:
     }
 
     baseline_path = "tests/fixtures/baseline_india_1947.json"
-    import os
+    import os  # noqa: E402
+
     os.makedirs("tests/fixtures", exist_ok=True)
     with open(baseline_path, "w") as f:
         json.dump(baseline, f, indent=2)
@@ -144,8 +176,9 @@ def compute_and_store_baseline(chart, scoring_fn) -> dict:
 
 def load_baseline(chart_id: str = "india_1947") -> dict:
     """Load stored regression baseline."""
-    import json
-    import os
+    import json  # noqa: E402
+    import os  # noqa: E402
+
     path = f"tests/fixtures/baseline_{chart_id}.json"
     if not os.path.exists(path):
         return {}
@@ -177,21 +210,26 @@ def diff_scores(current: dict, baseline: dict, tolerance: float = 0.1) -> list[d
 
         delta = abs(curr_score - base_score)
         if delta > tolerance:
-            diffs.append({
-                "house": house,
-                "current": round(curr_score, 4),
-                "baseline": round(base_score, 4),
-                "delta": round(delta, 4),
-                "tolerance": tolerance,
-            })
+            diffs.append(
+                {
+                    "house": house,
+                    "current": round(curr_score, 4),
+                    "baseline": round(base_score, 4),
+                    "delta": round(delta, 4),
+                    "tolerance": tolerance,
+                }
+            )
 
     return diffs
 
+
 # Regression baseline for India 1947 at v3.0.0
 # Generated by build_s171.py — update deliberately when scoring changes
-import json, os
+import json  # noqa: E402
+import os  # noqa: E402
 
 _BASELINE_PATH = "tests/fixtures/baseline_india_1947.json"
+
 
 def ensure_baseline():
     """Create baseline file if it doesn't exist."""
@@ -202,7 +240,7 @@ def ensure_baseline():
         "chart_id": "india_1947",
         "computed_date": "2026-03-22",
         "house_scores": {str(h): None for h in range(1, 13)},
-        "note": "Run compute_and_store_baseline() to populate scores"
+        "note": "Run compute_and_store_baseline() to populate scores",
     }
     os.makedirs(os.path.dirname(_BASELINE_PATH), exist_ok=True)
     with open(_BASELINE_PATH, "w") as f:

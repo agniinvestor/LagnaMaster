@@ -33,6 +33,7 @@ Copyright notice: Birth data (public_data) is freely redistributable.
 research_data requires individual permission for service use — it is stored
 in fixtures but never exposed via the LagnaMaster API or consumer layer.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -58,21 +59,21 @@ DEFAULT_MIN_RATING = "B"
 @dataclass
 class ADBRecord:
     adb_id: int
-    name: str                          # "Cardano, Girolamo"
-    given_name: str                    # "Girolamo Cardano"
-    gender: str                        # "m", "f", "e", "u"
-    rodden_rating: str                 # "AA", "A", "B", "C", "DD", "X", "XX"
+    name: str  # "Cardano, Girolamo"
+    given_name: str  # "Girolamo Cardano"
+    gender: str  # "m", "f", "e", "u"
+    rodden_rating: str  # "AA", "A", "B", "C", "DD", "X", "XX"
     rodden_rank: int
 
     # Birth data
-    jd_ut: Optional[float]            # Julian Day UT — primary key for computation
+    jd_ut: Optional[float]  # Julian Day UT — primary key for computation
     year: int
     month: int
     day: int
-    calendar: str                      # "g" (gregorian) or "j" (julian)
-    time_str: str                      # "18:29"
-    time_type: str                     # "l"=LMT, "u"=UT, "z"=zone, "s"=solar
-    time_zone_merid: str               # e.g. "m9e10" (meridian 9°10'E)
+    calendar: str  # "g" (gregorian) or "j" (julian)
+    time_str: str  # "18:29"
+    time_type: str  # "l"=LMT, "u"=UT, "z"=zone, "s"=solar
+    time_zone_merid: str  # e.g. "m9e10" (meridian 9°10'E)
     time_unknown: bool
 
     # Location
@@ -98,6 +99,7 @@ def _parse_latlon(slati: str, slong: str) -> tuple[float, float]:
     slati like "45n10" or "52n0445" (52°04'45")
     slong like "9e10" or "1w20"
     """
+
     def _parse_one(s: str, pos_char: str, neg_char: str) -> float:
         s = s.lower()
         sign = 1 if pos_char in s else -1
@@ -124,6 +126,7 @@ def _parse_time(time_str: str) -> float:
     try:
         # Strip anything non-numeric before the first digit
         import re as _re
+
         clean = time_str.strip()
         # Extract first HH:MM or HH:MM:SS pattern found
         m = _re.search(r"(\d{1,2}):(\d{2})(?::(\d{2}))?", clean)
@@ -190,9 +193,9 @@ def _parse_entry(entry: ET.Element) -> Optional[ADBRecord]:
     sbdate = bdata.find("sbdate")
     if sbdate is None:
         return None
-    year  = int(sbdate.get("iyear", 0))
+    year = int(sbdate.get("iyear", 0))
     month = int(sbdate.get("imonth", 0))
-    day   = int(sbdate.get("iday", 0))
+    day = int(sbdate.get("iday", 0))
     calendar = sbdate.get("ccalendar", "g")  # "g" or "j"
 
     # Time
@@ -226,9 +229,9 @@ def _parse_entry(entry: ET.Element) -> Optional[ADBRecord]:
     pos_el = bdata.find("positions")
     sun_sign = moon_sign = asc_sign = ""
     if pos_el is not None:
-        sun_sign  = pos_el.get("sun_sign", "")
+        sun_sign = pos_el.get("sun_sign", "")
         moon_sign = pos_el.get("moon_sign", "")
-        asc_sign  = pos_el.get("asc_sign", "")
+        asc_sign = pos_el.get("asc_sign", "")
 
     # Text data
     text = entry.find("text_data")
@@ -247,14 +250,30 @@ def _parse_entry(entry: ET.Element) -> Optional[ADBRecord]:
                 categories.append(cat.text.strip())
 
     return ADBRecord(
-        adb_id=adb_id, name=name, given_name=given,
-        gender=gender, rodden_rating=rodden_rating, rodden_rank=rodden_rank,
-        jd_ut=jd_ut, year=year, month=month, day=day,
-        calendar=calendar, time_str=time_str, time_type=time_type,
-        time_zone_merid=time_merid, time_unknown=time_unknown,
-        place=place, country=country, lat=lat, lon=lon,
-        sun_sign=sun_sign, moon_sign=moon_sign, asc_sign=asc_sign,
-        adb_link=adb_link, source_notes=source_notes,
+        adb_id=adb_id,
+        name=name,
+        given_name=given,
+        gender=gender,
+        rodden_rating=rodden_rating,
+        rodden_rank=rodden_rank,
+        jd_ut=jd_ut,
+        year=year,
+        month=month,
+        day=day,
+        calendar=calendar,
+        time_str=time_str,
+        time_type=time_type,
+        time_zone_merid=time_merid,
+        time_unknown=time_unknown,
+        place=place,
+        country=country,
+        lat=lat,
+        lon=lon,
+        sun_sign=sun_sign,
+        moon_sign=moon_sign,
+        asc_sign=asc_sign,
+        adb_link=adb_link,
+        source_notes=source_notes,
         categories=categories,
     )
 
@@ -268,6 +287,7 @@ def compute_chart_from_jd(rec: ADBRecord) -> Optional[dict]:
         return None
     try:
         import swisseph as swe
+
         ephe_path = str(ROOT / "ephe")
         swe.set_ephe_path(ephe_path)
         swe.set_sid_mode(swe.SIDM_LAHIRI)
@@ -275,9 +295,13 @@ def compute_chart_from_jd(rec: ADBRecord) -> Optional[dict]:
         flags = swe.FLG_SWIEPH | swe.FLG_SPEED | swe.FLG_SIDEREAL
 
         _PLANET_IDS = {
-            "Sun": swe.SUN, "Moon": swe.MOON, "Mars": swe.MARS,
-            "Mercury": swe.MERCURY, "Jupiter": swe.JUPITER,
-            "Venus": swe.VENUS, "Saturn": swe.SATURN,
+            "Sun": swe.SUN,
+            "Moon": swe.MOON,
+            "Mars": swe.MARS,
+            "Mercury": swe.MERCURY,
+            "Jupiter": swe.JUPITER,
+            "Venus": swe.VENUS,
+            "Saturn": swe.SATURN,
             "Rahu": swe.MEAN_NODE,
         }
 
@@ -289,7 +313,7 @@ def compute_chart_from_jd(rec: ADBRecord) -> Optional[dict]:
             else:
                 result, _ = swe.calc_ut(rec.jd_ut, pid, flags)
             lon_sid = result[0] % 360
-            speed   = result[3]
+            speed = result[3]
             sign_idx = int(lon_sid / 30)
             planets[name] = {
                 "longitude": round(lon_sid, 6),
@@ -312,17 +336,27 @@ def compute_chart_from_jd(rec: ADBRecord) -> Optional[dict]:
 
         # Lagna (Ascendant) using ARMC
         topo_flags = swe.FLG_SWIEPH | swe.FLG_SIDEREAL
-        cusps, ascmc = swe.houses_ex(
-            rec.jd_ut, rec.lat, rec.lon, b"P", topo_flags
-        )
+        cusps, ascmc = swe.houses_ex(rec.jd_ut, rec.lat, rec.lon, b"P", topo_flags)
         lagna_lon = ascmc[0] % 360  # tropical ASC
         # Apply ayanamsha correction for sidereal
         ayanamsha = swe.get_ayanamsa_ut(rec.jd_ut)
         lagna_sid = (lagna_lon - ayanamsha) % 360
         lagna_sign_idx = int(lagna_sid / 30)
 
-        _SIGNS = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
-                  "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
+        _SIGNS = [
+            "Aries",
+            "Taurus",
+            "Gemini",
+            "Cancer",
+            "Leo",
+            "Virgo",
+            "Libra",
+            "Scorpio",
+            "Sagittarius",
+            "Capricorn",
+            "Aquarius",
+            "Pisces",
+        ]
 
         return {
             "lagna_sign": _SIGNS[lagna_sign_idx],
@@ -373,7 +407,8 @@ def record_to_fixture(rec: ADBRecord, chart: Optional[dict]) -> dict:
         # NOT to be used in service/API per ADB copyright
         "categories": rec.categories,
         "trust_note": (
-            "time_unknown — Lagna not reliable" if rec.time_unknown
+            "time_unknown — Lagna not reliable"
+            if rec.time_unknown
             else f"Rodden {rec.rodden_rating} — {'high' if rec.rodden_rank >= 4 else 'medium' if rec.rodden_rank == 3 else 'low'} trust"
         ),
     }
@@ -423,8 +458,10 @@ def import_xml(
         fixture = record_to_fixture(rec, chart)
 
         if dry_run:
-            print(f"  [{rec.rodden_rating}] {rec.name} — "
-                  f"{'Lagna: ' + chart['lagna_sign'] if chart and 'lagna_sign' in chart else 'time unknown'}")
+            print(
+                f"  [{rec.rodden_rating}] {rec.name} — "
+                f"{'Lagna: ' + chart['lagna_sign'] if chart and 'lagna_sign' in chart else 'time unknown'}"
+            )
             continue
 
         fname = _safe_filename(rec.name)
@@ -441,15 +478,24 @@ def import_xml(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Import ADB XML export to LagnaMaster fixtures")
+    parser = argparse.ArgumentParser(
+        description="Import ADB XML export to LagnaMaster fixtures"
+    )
     parser.add_argument("xml_file", help="Path to ADB XML export file")
-    parser.add_argument("--min-rating", default=DEFAULT_MIN_RATING,
-                        choices=["AA", "A", "B", "C", "DD"],
-                        help="Minimum Rodden rating to import (default: B)")
-    parser.add_argument("--dry-run", action="store_true",
-                        help="Parse and print records without writing files")
-    parser.add_argument("--overwrite", action="store_true",
-                        help="Overwrite existing fixture files")
+    parser.add_argument(
+        "--min-rating",
+        default=DEFAULT_MIN_RATING,
+        choices=["AA", "A", "B", "C", "DD"],
+        help="Minimum Rodden rating to import (default: B)",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Parse and print records without writing files",
+    )
+    parser.add_argument(
+        "--overwrite", action="store_true", help="Overwrite existing fixture files"
+    )
     args = parser.parse_args()
 
     if not os.path.exists(args.xml_file):

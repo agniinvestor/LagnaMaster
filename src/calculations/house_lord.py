@@ -7,14 +7,25 @@ Source: CALC_BhaveshMap, REF_Zodiac row 7 (sign lords).
 
 from __future__ import annotations
 from dataclasses import dataclass
-from src.ephemeris import BirthChart, SIGNS
+from src.ephemeris import BirthChart
 
 
 # Classical sign lords (index 0=Aries…11=Pisces)
 _SIGN_LORD = [
-    "Mars", "Venus", "Mercury", "Moon", "Sun", "Mercury",
-    "Venus", "Mars",  "Jupiter", "Saturn", "Saturn", "Jupiter",
+    "Mars",
+    "Venus",
+    "Mercury",
+    "Moon",
+    "Sun",
+    "Mercury",
+    "Venus",
+    "Mars",
+    "Jupiter",
+    "Saturn",
+    "Saturn",
+    "Jupiter",
 ]
+
 
 def sign_lord(sign_idx: int) -> str:
     return _SIGN_LORD[sign_idx % 12]
@@ -23,10 +34,11 @@ def sign_lord(sign_idx: int) -> str:
 @dataclass
 class HouseMap:
     """Maps each house number to its sign and lord for a given chart."""
+
     lagna_sign_idx: int
     # house_sign[i] = sign_index of house i+1 (i=0 → house 1)
-    house_sign: list[int]        # length 12
-    house_lord: list[str]        # length 12
+    house_sign: list[int]  # length 12
+    house_lord: list[str]  # length 12
     # planet_house[planet_name] = house number (1-12)
     planet_house: dict[str, int]
 
@@ -57,11 +69,14 @@ def compute_house_map(chart: BirthChart) -> HouseMap:
 def is_kendra(house: int) -> bool:
     return house in (1, 4, 7, 10)
 
+
 def is_trikona(house: int) -> bool:
     return house in (1, 5, 9)
 
+
 def is_dusthana(house: int) -> bool:
     return house in (6, 8, 12)
+
 
 def is_upachaya(house: int) -> bool:
     return house in (3, 6, 10, 11)

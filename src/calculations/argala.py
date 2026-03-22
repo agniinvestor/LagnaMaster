@@ -23,27 +23,49 @@ Public API
 """
 
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
-_SIGNS = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
-          "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
+_SIGNS = [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
+]
 _SIGN_LORD = {
-    0:"Mars", 1:"Venus", 2:"Mercury", 3:"Moon", 4:"Sun", 5:"Mercury",
-    6:"Venus", 7:"Mars", 8:"Jupiter", 9:"Saturn", 10:"Saturn", 11:"Jupiter",
+    0: "Mars",
+    1: "Venus",
+    2: "Mercury",
+    3: "Moon",
+    4: "Sun",
+    5: "Mercury",
+    6: "Venus",
+    7: "Mars",
+    8: "Jupiter",
+    9: "Saturn",
+    10: "Saturn",
+    11: "Jupiter",
 }
-_NAT_BENEFIC = {"Jupiter","Venus","Mercury","Moon"}
-_NAT_MALEFIC = {"Sun","Mars","Saturn","Rahu","Ketu"}
+_NAT_BENEFIC = {"Jupiter", "Venus", "Mercury", "Moon"}
+_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 
 @dataclass
 class ArgalaEntry:
-    house_from_reference: int   # 2, 4, 5, 11
-    argala_type: str            # "primary" or "secondary"
+    house_from_reference: int  # 2, 4, 5, 11
+    argala_type: str  # "primary" or "secondary"
     planets: list[str]
-    nature: str                 # "benefic_argala" / "malefic_argala" / "mixed"
-    is_obstructed: bool         # True if virodhargala cancels it
+    nature: str  # "benefic_argala" / "malefic_argala" / "mixed"
+    is_obstructed: bool  # True if virodhargala cancels it
     obstruction_planets: list[str]
-    net_effect: str             # "supports" / "obstructs" / "cancelled" / "neutral"
+    net_effect: str  # "supports" / "obstructs" / "cancelled" / "neutral"
 
 
 @dataclass
@@ -51,7 +73,7 @@ class ArgalaResult:
     reference_house: int
     reference_sign: str
     entries: list[ArgalaEntry]
-    net_argala_score: float     # positive = net support, negative = net obstruction
+    net_argala_score: float  # positive = net support, negative = net obstruction
     summary: str
 
 
@@ -72,9 +94,13 @@ def compute_argala(chart, reference_house: int = 1) -> ArgalaResult:
     entries = []
     net_score = 0.0
 
-    for argala_h, virodha_h, atype in [(2, 12, "primary"), (4, 10, "primary"),
-                                        (11, 3, "primary"), (5, 9, "secondary")]:
-        argala_si  = house_from_ref(argala_h)
+    for argala_h, virodha_h, atype in [
+        (2, 12, "primary"),
+        (4, 10, "primary"),
+        (11, 3, "primary"),
+        (5, 9, "secondary"),
+    ]:
+        argala_si = house_from_ref(argala_h)
         virodha_si = house_from_ref(virodha_h)
 
         arg_planets = sign_planets.get(argala_si, [])
@@ -83,8 +109,8 @@ def compute_argala(chart, reference_house: int = 1) -> ArgalaResult:
         if not arg_planets and not vir_planets:
             continue
 
-        benefics  = [p for p in arg_planets if p in _NAT_BENEFIC]
-        malefics  = [p for p in arg_planets if p in _NAT_MALEFIC]
+        benefics = [p for p in arg_planets if p in _NAT_BENEFIC]
+        malefics = [p for p in arg_planets if p in _NAT_MALEFIC]
         vir_count = len(vir_planets)
         arg_count = len(arg_planets)
 
@@ -110,19 +136,23 @@ def compute_argala(chart, reference_house: int = 1) -> ArgalaResult:
         else:
             net_effect = "neutral"
 
-        entries.append(ArgalaEntry(
-            house_from_reference=argala_h,
-            argala_type=atype,
-            planets=arg_planets,  # noqa: F841
-            nature=nature,
-            is_obstructed=is_obstructed,
-            obstruction_planets=vir_planets,
-            net_effect=net_effect,
-        ))
+        entries.append(
+            ArgalaEntry(
+                house_from_reference=argala_h,
+                argala_type=atype,
+                planets=arg_planets,  # noqa: F841
+                nature=nature,
+                is_obstructed=is_obstructed,
+                obstruction_planets=vir_planets,
+                net_effect=net_effect,
+            )
+        )
 
-    summary = (f"Net argala on H{reference_house}: "
-               f"{'supportive' if net_score > 0 else 'obstructive' if net_score < 0 else 'neutral'} "
-               f"({net_score:+.1f})")
+    summary = (
+        f"Net argala on H{reference_house}: "
+        f"{'supportive' if net_score > 0 else 'obstructive' if net_score < 0 else 'neutral'} "
+        f"({net_score:+.1f})"
+    )
 
     return ArgalaResult(
         reference_house=reference_house,
@@ -140,8 +170,8 @@ class ArudhaResult:
     lagna_lord: str
     lagna_lord_sign: str
     lagna_lord_sign_index: int
-    malefics_on_al: list[str]   # planets in AL sign
-    al_condition: str           # "Strong" / "Afflicted" / "Mixed" / "Neutral"
+    malefics_on_al: list[str]  # planets in AL sign
+    al_condition: str  # "Strong" / "Afflicted" / "Mixed" / "Neutral"
     pressure_note: str
 
 
@@ -170,7 +200,7 @@ def compute_arudha_lagna(chart) -> ArudhaResult:
 
     # Exception rules
     if al_si == lsi or al_si == (lsi + 6) % 12:
-        al_si = (al_si + 9) % 12   # move 10 signs forward (= +9 in 0-based)
+        al_si = (al_si + 9) % 12  # move 10 signs forward (= +9 in 0-based)
 
     # Planets in AL sign
     al_planets = [p for p, pos in chart.planets.items() if pos.sign_index == al_si]

@@ -55,6 +55,7 @@ _USE_PG: bool = False  # resolved in _ensure_pool()
 # Internal pool helpers
 # ──────────────────────────────────────────────────────────────────────────────
 
+
 def _ensure_pool() -> bool:
     """Return True if PostgreSQL pool is available, False → use SQLite."""
     global _pool, _USE_PG
@@ -132,6 +133,7 @@ CREATE INDEX IF NOT EXISTS idx_charts_name    ON charts(name)
 # Public API
 # ──────────────────────────────────────────────────────────────────────────────
 
+
 def init_db() -> None:
     """Initialise whichever backend is configured.
 
@@ -194,8 +196,17 @@ def save_chart(
                 return row["id"]
     else:
         return _sqlite_db.save_chart(
-            year, month, day, hour, lat, lon,
-            tz_offset, ayanamsha, chart_json, scores_json, name,
+            year,
+            month,
+            day,
+            hour,
+            lat,
+            lon,
+            tz_offset,
+            ayanamsha,
+            chart_json,
+            scores_json,
+            name,
         )
 
 
@@ -204,9 +215,7 @@ def get_chart(chart_id: int) -> Optional[dict]:
     if _USE_PG:
         with _conn() as conn:
             with conn.cursor() as cur:
-                cur.execute(
-                    "SELECT * FROM charts WHERE id = %s", (chart_id,)
-                )
+                cur.execute("SELECT * FROM charts WHERE id = %s", (chart_id,))
                 row = cur.fetchone()
                 if row is None:
                     return None
@@ -250,6 +259,7 @@ def health_check() -> dict:
 # ──────────────────────────────────────────────────────────────────────────────
 # Helpers
 # ──────────────────────────────────────────────────────────────────────────────
+
 
 def _pg_row_to_dict(row: dict) -> dict:
     """Normalise a psycopg2 RealDictRow to a plain dict matching SQLite shape."""

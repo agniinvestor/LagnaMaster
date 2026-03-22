@@ -11,6 +11,7 @@ Sources:
   K.N. Rao · Yogis, Destiny and the Wheel of Time Ch.5 (64th navamsha)
   Sanjay Rath · Crux of Vedic Astrology Ch.14 (double transit)
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 from typing import Optional
@@ -19,14 +20,14 @@ from typing import Optional
 # Source: Phaladeepika Ch.26 v.20-25
 
 TARA_NAMES = [
-    "Janma",        # 1 - birth star: difficult for activities
-    "Sampat",       # 2 - wealth: generally auspicious
-    "Vipat",        # 3 - danger: avoid travel, major decisions
-    "Kshema",       # 4 - comfort: good for comfort, moderate
-    "Pratyak",      # 5 - obstacle: obstacles; avoid
-    "Sadhana",      # 6 - achievement: excellent for achievement
-    "Naidhana",     # 7 - destruction: most inauspicious
-    "Mitra",        # 8 - friend: good for friendships/partnerships
+    "Janma",  # 1 - birth star: difficult for activities
+    "Sampat",  # 2 - wealth: generally auspicious
+    "Vipat",  # 3 - danger: avoid travel, major decisions
+    "Kshema",  # 4 - comfort: good for comfort, moderate
+    "Pratyak",  # 5 - obstacle: obstacles; avoid
+    "Sadhana",  # 6 - achievement: excellent for achievement
+    "Naidhana",  # 7 - destruction: most inauspicious
+    "Mitra",  # 8 - friend: good for friendships/partnerships
     "Param Mitra",  # 9 - best friend: most auspicious
 ]
 
@@ -52,21 +53,30 @@ def tarabala(natal_nakshatra_idx: int, transit_nakshatra_idx: int) -> dict:
     Source: Phaladeepika Ch.26 v.20-25
     """
     count = ((transit_nakshatra_idx - natal_nakshatra_idx) % 27) + 1
-    tara_pos = ((count - 1) % 9)  # 0-8 index into TARA_NAMES
+    tara_pos = (count - 1) % 9  # 0-8 index into TARA_NAMES
     tara_name = TARA_NAMES[tara_pos]
     return {
         "count_from_natal": count,
         "tara_name": tara_name,
         "tara_position": tara_pos + 1,  # 1-9
         "quality": TARA_QUALITY[tara_name],
-        "is_auspicious": TARA_QUALITY[tara_name] in ("auspicious", "excellent", "most_auspicious", "moderate"),
+        "is_auspicious": TARA_QUALITY[tara_name]
+        in ("auspicious", "excellent", "most_auspicious", "moderate"),
     }
 
 
 # ─── Chandrabala ──────────────────────────────────────────────────────────────
 
-CHANDRABALA_GOOD_POSITIONS = {1, 3, 5, 6, 7, 10, 11}  # transit Moon positions from natal Moon
-CHANDRABALA_BAD_POSITIONS  = {4, 8, 12}
+CHANDRABALA_GOOD_POSITIONS = {
+    1,
+    3,
+    5,
+    6,
+    7,
+    10,
+    11,
+}  # transit Moon positions from natal Moon
+CHANDRABALA_BAD_POSITIONS = {4, 8, 12}
 # Note: H2, H9 are neutral; H6 is special (upachaya — challenging but growth)
 
 
@@ -93,6 +103,7 @@ def chandrabala(natal_moon_sign: int, transit_moon_sign: int) -> dict:
 
 # ─── 64th Navamsha and 22nd Drekkana ─────────────────────────────────────────
 
+
 def compute_sensitive_points(chart) -> dict[str, float]:
     """
     Compute 64th Navamsha and 22nd Drekkana sensitive points from Moon and Lagna.
@@ -104,15 +115,15 @@ def compute_sensitive_points(chart) -> dict[str, float]:
     Source: PVRNR · BPHS; BV Raman · Notable Horoscopes; K.N. Rao Ch.5
     """
     NAV_WIDTH = 40.0 / 3.0  # 3.333...° per navamsha
-    DRK_WIDTH = 10.0         # 10° per drekkana
+    DRK_WIDTH = 10.0  # 10° per drekkana
 
-    moon_lon  = chart.planets["Moon"].longitude if "Moon" in chart.planets else 0.0
+    moon_lon = chart.planets["Moon"].longitude if "Moon" in chart.planets else 0.0
     lagna_lon = chart.lagna
 
     return {
-        "64th_navamsha_moon":   (moon_lon  + 63 * NAV_WIDTH) % 360,
-        "64th_navamsha_lagna":  (lagna_lon + 63 * NAV_WIDTH) % 360,
-        "22nd_drekkana_lagna":  (lagna_lon + 21 * DRK_WIDTH) % 360,
+        "64th_navamsha_moon": (moon_lon + 63 * NAV_WIDTH) % 360,
+        "64th_navamsha_lagna": (lagna_lon + 63 * NAV_WIDTH) % 360,
+        "22nd_drekkana_lagna": (lagna_lon + 21 * DRK_WIDTH) % 360,
         "note": "Malefic transits within 1° of these points bring adverse results",
     }
 
@@ -138,6 +149,7 @@ def is_transiting_sensitive_point(
 # ─── Double Transit Theory ────────────────────────────────────────────────────
 # Source: Sanjay Rath · Crux of Vedic Astrology Ch.14
 
+
 def compute_double_transit_activation(
     natal_chart,
     transit_chart,
@@ -148,13 +160,20 @@ def compute_double_transit_activation(
 
     Source: Sanjay Rath · Crux of Vedic Astrology Ch.14
     """
-    from src.calculations.bhava_and_transit import GOOD_TRANSIT_HOUSES
 
     lagna_si = natal_chart.lagna_sign_index
     results = []
 
-    jup_transit_si  = transit_chart.planets["Jupiter"].sign_index if "Jupiter" in transit_chart.planets else -1
-    sat_transit_si  = transit_chart.planets["Saturn"].sign_index  if "Saturn"  in transit_chart.planets else -1
+    jup_transit_si = (
+        transit_chart.planets["Jupiter"].sign_index
+        if "Jupiter" in transit_chart.planets
+        else -1
+    )
+    sat_transit_si = (
+        transit_chart.planets["Saturn"].sign_index
+        if "Saturn" in transit_chart.planets
+        else -1
+    )
 
     if jup_transit_si == -1 or sat_transit_si == -1:
         return results
@@ -163,6 +182,7 @@ def compute_double_transit_activation(
     def transit_houses_affected(planet_si: int, planet: str) -> set[int]:
         """Houses a transiting planet occupies or aspects."""
         from src.calculations.sputa_drishti import _ASPECT_TABLE
+
         occupied_house = (planet_si - lagna_si) % 12 + 1
         affected = {occupied_house}
         # Add aspect houses
@@ -176,24 +196,27 @@ def compute_double_transit_activation(
         return affected
 
     jup_houses = transit_houses_affected(jup_transit_si, "Jupiter")
-    sat_houses  = transit_houses_affected(sat_transit_si, "Saturn")
+    sat_houses = transit_houses_affected(sat_transit_si, "Saturn")
 
     # Houses where both simultaneously operate
     double_houses = jup_houses & sat_houses
 
     for h in sorted(double_houses):
-        results.append({
-            "house": h,
-            "jupiter_transit_sign": jup_transit_si,
-            "saturn_transit_sign": sat_transit_si,
-            "activation_strength": "high",
-            "note": f"H{h} activated by both Jupiter and Saturn — major events likely",
-        })
+        results.append(
+            {
+                "house": h,
+                "jupiter_transit_sign": jup_transit_si,
+                "saturn_transit_sign": sat_transit_si,
+                "activation_strength": "high",
+                "note": f"H{h} activated by both Jupiter and Saturn — major events likely",
+            }
+        )
 
     return results
 
 
 # ─── Chandra Shtama ───────────────────────────────────────────────────────────
+
 
 def chandra_shtama(natal_moon_sign: int, planet: str, transit_sign: int) -> bool:
     """
@@ -207,18 +230,19 @@ def chandra_shtama(natal_moon_sign: int, planet: str, transit_sign: int) -> bool
 
 # ─── Comprehensive Transit Quality ────────────────────────────────────────────
 
+
 @dataclass
 class AdvancedTransitResult:
     planet: str
     transit_sign: int
     transit_nakshatra_idx: int
     tarabala: dict
-    chandrabala: dict                          # only for Moon transit
+    chandrabala: dict  # only for Moon transit
     ashtama_shani: bool
     chandra_shtama: bool
     sensitive_point_hits: dict[str, bool]
-    overall_quality: str                       # "excellent" / "good" / "neutral" / "caution" / "avoid"
-    quality_score: float                       # -1.0 to +1.0
+    overall_quality: str  # "excellent" / "good" / "neutral" / "caution" / "avoid"
+    quality_score: float  # -1.0 to +1.0
 
 
 def compute_advanced_transit(
@@ -231,8 +255,14 @@ def compute_advanced_transit(
     """
     Comprehensive transit quality assessment.
     """
-    natal_moon_si   = natal_chart.planets["Moon"].sign_index if "Moon" in natal_chart.planets else 0
-    natal_moon_nak  = int(natal_chart.planets["Moon"].longitude * 3 / 40) if "Moon" in natal_chart.planets else 0
+    natal_moon_si = (
+        natal_chart.planets["Moon"].sign_index if "Moon" in natal_chart.planets else 0
+    )
+    natal_moon_nak = (
+        int(natal_chart.planets["Moon"].longitude * 3 / 40)
+        if "Moon" in natal_chart.planets
+        else 0
+    )
 
     # Tarabala
     tb = tarabala(natal_moon_nak, transit_nakshatra_idx)
@@ -241,8 +271,9 @@ def compute_advanced_transit(
     cb = chandrabala(natal_moon_si, transit_sign)
 
     # Ashtama Shani
-    is_ashtama_shani = (planet == "Saturn" and
-                        ((transit_sign - natal_moon_si) % 12) + 1 == 8)
+    is_ashtama_shani = (
+        planet == "Saturn" and ((transit_sign - natal_moon_si) % 12) + 1 == 8
+    )
 
     # Chandra Shtama
     is_chandra_shtama = chandra_shtama(natal_moon_si, planet, transit_sign)
@@ -256,20 +287,31 @@ def compute_advanced_transit(
 
     # Score
     score = 0.0
-    if tb["is_auspicious"]: score += 0.3
-    else: score -= 0.3
-    if cb["is_favorable"]: score += 0.2
-    elif cb["chandrabala_dosha"]: score -= 0.2
-    if is_ashtama_shani: score -= 0.5
-    if any(sp_hits.values()): score -= 0.3
+    if tb["is_auspicious"]:
+        score += 0.3
+    else:
+        score -= 0.3
+    if cb["is_favorable"]:
+        score += 0.2
+    elif cb["chandrabala_dosha"]:
+        score -= 0.2
+    if is_ashtama_shani:
+        score -= 0.5
+    if any(sp_hits.values()):
+        score -= 0.3
 
     score = max(-1.0, min(1.0, score))
 
-    if score >= 0.4:     quality = "excellent"
-    elif score >= 0.1:   quality = "good"
-    elif score >= -0.1:  quality = "neutral"
-    elif score >= -0.4:  quality = "caution"
-    else:                quality = "avoid"
+    if score >= 0.4:
+        quality = "excellent"
+    elif score >= 0.1:
+        quality = "good"
+    elif score >= -0.1:
+        quality = "neutral"
+    elif score >= -0.4:
+        quality = "caution"
+    else:
+        quality = "avoid"
 
     return AdvancedTransitResult(
         planet=planet,

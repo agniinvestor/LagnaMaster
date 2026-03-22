@@ -56,8 +56,8 @@ TIER_AV = "av"
 
 _TTL: dict[str, int] = {
     TIER_EPHEMERIS: 7 * 24 * 3600,  # 7 days
-    TIER_SCORES: 24 * 3600,          # 1 day
-    TIER_AV: 24 * 3600,              # 1 day
+    TIER_SCORES: 24 * 3600,  # 1 day
+    TIER_AV: 24 * 3600,  # 1 day
 }
 
 _PREFIX = "lm"  # key namespace: lm:{tier}:{key}
@@ -100,6 +100,7 @@ def _get_client() -> Optional["redis.Redis"]:
 # Key builders
 # ──────────────────────────────────────────────────────────────────────────────
 
+
 def make_ephemeris_key(
     year: int,
     month: int,
@@ -134,6 +135,7 @@ def _full_key(tier: str, key: str) -> str:
 # ──────────────────────────────────────────────────────────────────────────────
 # Core operations
 # ──────────────────────────────────────────────────────────────────────────────
+
 
 def get(tier: str, key: str) -> Optional[dict]:
     """Return cached value or None on miss / error."""

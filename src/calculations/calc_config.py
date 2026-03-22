@@ -13,43 +13,62 @@ Sources:
   K.S. Krishnamurti · Reader Series (KP school)
   Neelakantha · Tajika Nilakanthi (Tajika school)
 """
+
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from enum import Enum
-from typing import Optional
 
 
 class School(str, Enum):
     """Jyotish calculation school declaration."""
-    PARASHARI = "parashari"   # PVRNR BPHS — default
-    JAIMINI   = "jaimini"     # Jaimini Sutras
-    KP        = "kp"          # Krishnamurti Paddhati
-    TAJIKA    = "tajika"       # Varshaphala / annual charts
-    NADI      = "nadi"        # Nadi Jyotish (future)
+
+    PARASHARI = "parashari"  # PVRNR BPHS — default
+    JAIMINI = "jaimini"  # Jaimini Sutras
+    KP = "kp"  # Krishnamurti Paddhati
+    TAJIKA = "tajika"  # Varshaphala / annual charts
+    NADI = "nadi"  # Nadi Jyotish (future)
 
 
 class Authority(str, Enum):
     """Within Parashari, which authority resolves conflicts."""
-    PVRNR    = "pvrnr"       # P.V.R. Narasimha Rao BPHS translation
-    BV_RAMAN = "bv_raman"    # BV Raman tradition
-    KN_RAO   = "kn_rao"      # K.N. Rao school
+
+    PVRNR = "pvrnr"  # P.V.R. Narasimha Rao BPHS translation
+    BV_RAMAN = "bv_raman"  # BV Raman tradition
+    KN_RAO = "kn_rao"  # K.N. Rao school
     SANJAY_RATH = "sanjay_rath"  # Sanjay Rath tradition
 
 
 # Which modules are active per school
 _SCHOOL_MODULES: dict[School, set[str]] = {
     School.PARASHARI: {
-        "dignity", "shadbala", "nakshatra", "ashtakavarga",
-        "scoring_v3", "scoring_patches", "yogas", "extended_yogas",
-        "bhava_and_transit", "special_lagnas", "dasha", "vimshottari",
-        "planetary_state", "bhava_bala", "panchanga",
+        "dignity",
+        "shadbala",
+        "nakshatra",
+        "ashtakavarga",
+        "scoring_v3",
+        "scoring_patches",
+        "yogas",
+        "extended_yogas",
+        "bhava_and_transit",
+        "special_lagnas",
+        "dasha",
+        "vimshottari",
+        "planetary_state",
+        "bhava_bala",
+        "panchanga",
     },
     School.JAIMINI: {
-        "jaimini_rashi_drishti", "chara_karaka_config", "karakamsha_analysis",
-        "argala", "jaimini_full", "chara_dasha", "shoola_dasha",
+        "jaimini_rashi_drishti",
+        "chara_karaka_config",
+        "karakamsha_analysis",
+        "argala",
+        "jaimini_full",
+        "chara_dasha",
+        "shoola_dasha",
     },
     School.KP: {
-        "kp_sublord", "vimshottari",
+        "kp_sublord",
+        "vimshottari",
         # KP requires true node + KP ayanamsha
     },
     School.TAJIKA: {
@@ -60,24 +79,24 @@ _SCHOOL_MODULES: dict[School, set[str]] = {
 # Authority-specific overrides (where PVRNR and BV Raman disagree)
 _AUTHORITY_OVERRIDES: dict[Authority, dict[str, object]] = {
     Authority.PVRNR: {
-        "rahu_exalt_sign": 1,        # Taurus
-        "ketu_exalt_sign": 7,        # Scorpio
+        "rahu_exalt_sign": 1,  # Taurus
+        "ketu_exalt_sign": 7,  # Scorpio
         "node_mode": "mean",
         "chara_karaka_schema": "7",  # 7-planet schema
     },
     Authority.BV_RAMAN: {
-        "rahu_exalt_sign": 2,        # Gemini
-        "ketu_exalt_sign": 8,        # Sagittarius
+        "rahu_exalt_sign": 2,  # Gemini
+        "ketu_exalt_sign": 8,  # Sagittarius
         "node_mode": "mean",
         "chara_karaka_schema": "7",
     },
     Authority.KN_RAO: {
-        "rahu_exalt_sign": 1,        # Follows PVRNR
+        "rahu_exalt_sign": 1,  # Follows PVRNR
         "node_mode": "mean",
         "use_pratyantar": True,
     },
     Authority.SANJAY_RATH: {
-        "rahu_exalt_sign": 2,        # Follows BV Raman
+        "rahu_exalt_sign": 2,  # Follows BV Raman
         "node_mode": "true",
         "chara_karaka_schema": "8",  # 8-planet schema
         "ayanamsha": "true_citra",
@@ -95,10 +114,11 @@ class CalcConfig:
         cfg = CalcConfig(school=School.KP)   # KP forces true node + KP ayanamsha
         cfg = CalcConfig(school=School.JAIMINI, authority=Authority.SANJAY_RATH)
     """
+
     school: School = School.PARASHARI
     authority: Authority = Authority.PVRNR
     ayanamsha: str = "lahiri"
-    node_mode: str = "mean"      # "mean" | "true"
+    node_mode: str = "mean"  # "mean" | "true"
 
     # Rule-level declarations (each rule in scoring carries a school tag)
     strict_school: bool = False  # If True, refuse cross-school rules
@@ -155,19 +175,25 @@ class CalcConfig:
 
     @property
     def description(self) -> str:
-        return (f"School: {self.school.value} | Authority: {self.authority.value} | "
-                f"Ayanamsha: {self.ayanamsha} | Nodes: {self.node_mode}")
+        return (
+            f"School: {self.school.value} | Authority: {self.authority.value} | "
+            f"Ayanamsha: {self.ayanamsha} | Nodes: {self.node_mode}"
+        )
 
 
 # Default config for backward compatibility
 DEFAULT_CONFIG = CalcConfig()
 
 # Pre-built configs for common use cases
-PARASHARI_PVRNR   = CalcConfig(school=School.PARASHARI, authority=Authority.PVRNR)
-PARASHARI_RAMAN   = CalcConfig(school=School.PARASHARI, authority=Authority.BV_RAMAN,
-                               ayanamsha="raman")
-KP_CONFIG         = CalcConfig(school=School.KP, ayanamsha="krishnamurti",
-                               node_mode="true")
-JAIMINI_RATH      = CalcConfig(school=School.JAIMINI, authority=Authority.SANJAY_RATH,
-                               node_mode="true", ayanamsha="true_citra")
-TAJIKA_CONFIG     = CalcConfig(school=School.TAJIKA, authority=Authority.PVRNR)
+PARASHARI_PVRNR = CalcConfig(school=School.PARASHARI, authority=Authority.PVRNR)
+PARASHARI_RAMAN = CalcConfig(
+    school=School.PARASHARI, authority=Authority.BV_RAMAN, ayanamsha="raman"
+)
+KP_CONFIG = CalcConfig(school=School.KP, ayanamsha="krishnamurti", node_mode="true")
+JAIMINI_RATH = CalcConfig(
+    school=School.JAIMINI,
+    authority=Authority.SANJAY_RATH,
+    node_mode="true",
+    ayanamsha="true_citra",
+)
+TAJIKA_CONFIG = CalcConfig(school=School.TAJIKA, authority=Authority.PVRNR)

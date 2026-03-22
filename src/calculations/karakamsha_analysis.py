@@ -11,43 +11,69 @@ Sources:
   Sanjay Rath · Crux of Vedic Astrology, Upapada chapter
   PVRNR · BPHS Ch.32 (Atmakaraka and Karakamsha)
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
-from typing import Optional
 
 # ─── Ishta Devata (Chosen Deity) from Karakamsha ─────────────────────────────
 # Source: Sanjay Rath · Crux of Vedic Astrology Ch.8
 
 # Planet → associated deity
 PLANET_DEITY: dict[str, dict] = {
-    "Sun":     {"deity": "Shiva", "mantra_seed": "OM", "gemstone": "Ruby"},
-    "Moon":    {"deity": "Parvati/Devi", "mantra_seed": "SHREEM", "gemstone": "Pearl"},
-    "Mars":    {"deity": "Skanda/Kartikeya", "mantra_seed": "KREEM", "gemstone": "Red Coral"},
+    "Sun": {"deity": "Shiva", "mantra_seed": "OM", "gemstone": "Ruby"},
+    "Moon": {"deity": "Parvati/Devi", "mantra_seed": "SHREEM", "gemstone": "Pearl"},
+    "Mars": {
+        "deity": "Skanda/Kartikeya",
+        "mantra_seed": "KREEM",
+        "gemstone": "Red Coral",
+    },
     "Mercury": {"deity": "Vishnu", "mantra_seed": "AIM", "gemstone": "Emerald"},
-    "Jupiter": {"deity": "Brahma/Indra", "mantra_seed": "HREEM", "gemstone": "Yellow Sapphire"},
-    "Venus":   {"deity": "Lakshmi", "mantra_seed": "SHREEM", "gemstone": "Diamond"},
-    "Saturn":  {"deity": "Yama/Shani", "mantra_seed": "SHAM", "gemstone": "Blue Sapphire"},
-    "Rahu":    {"deity": "Durga/Saraswati", "mantra_seed": "RAAM", "gemstone": "Hessonite"},
-    "Ketu":    {"deity": "Ganesha/Brahma", "mantra_seed": "GAM", "gemstone": "Cat's Eye"},
+    "Jupiter": {
+        "deity": "Brahma/Indra",
+        "mantra_seed": "HREEM",
+        "gemstone": "Yellow Sapphire",
+    },
+    "Venus": {"deity": "Lakshmi", "mantra_seed": "SHREEM", "gemstone": "Diamond"},
+    "Saturn": {
+        "deity": "Yama/Shani",
+        "mantra_seed": "SHAM",
+        "gemstone": "Blue Sapphire",
+    },
+    "Rahu": {
+        "deity": "Durga/Saraswati",
+        "mantra_seed": "RAAM",
+        "gemstone": "Hessonite",
+    },
+    "Ketu": {"deity": "Ganesha/Brahma", "mantra_seed": "GAM", "gemstone": "Cat's Eye"},
 }
 
 
 @dataclass
 class KarakamshaResult:
-    atmakaraka: str                  # AK planet
-    karakamsha_sign: int             # D9 sign of AK
+    atmakaraka: str  # AK planet
+    karakamsha_sign: int  # D9 sign of AK
     karakamsha_sign_name: str
-    ishta_devata: str                # Planet with strongest Rashi Drishti to Karakamsha
+    ishta_devata: str  # Planet with strongest Rashi Drishti to Karakamsha
     ishta_deity_name: str
     ishta_mantra_seed: str
     ishta_gemstone: str
     planets_aspecting_karakamsha: list[str]
-    is_swamsha: bool                 # AK in own sign or exalt in D9
+    is_swamsha: bool  # AK in own sign or exalt in D9
 
 
 _SIGN_NAMES = [
-    "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
-    "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
 ]
 
 
@@ -58,7 +84,7 @@ def compute_karakamsha_analysis(chart, chara_karaka_result) -> KarakamshaResult:
               Rashi Drishti from jaimini_rashi_drishti.py
     Source: Sanjay Rath · Crux of Vedic Astrology Ch.8; PVRNR · BPHS Ch.32
     """
-    from src.calculations.jaimini_rashi_drishti import rashi_drishti, has_rashi_drishti
+    from src.calculations.jaimini_rashi_drishti import has_rashi_drishti
     from src.calculations.chara_karaka_config import compute_karakamsha, is_swamsha
 
     ak = chara_karaka_result.atmakaraka
@@ -74,7 +100,17 @@ def compute_karakamsha_analysis(chart, chara_karaka_result) -> KarakamshaResult:
 
     # Ishta Devata = planet with strongest influence on Karakamsha
     # Priority: (1) planet IN Karakamsha sign, (2) strongest aspecting planet
-    _NAT_STRENGTH = ["Sun", "Moon", "Venus", "Jupiter", "Mercury", "Mars", "Saturn", "Rahu", "Ketu"]
+    _NAT_STRENGTH = [
+        "Sun",
+        "Moon",
+        "Venus",
+        "Jupiter",
+        "Mercury",
+        "Mars",
+        "Saturn",
+        "Rahu",
+        "Ketu",
+    ]
 
     ishta_planet = None
     # First check if any planet is IN Karakamsha sign
@@ -112,13 +148,14 @@ def compute_karakamsha_analysis(chart, chara_karaka_result) -> KarakamshaResult:
 
 # ─── Upapada (A12) Analysis ───────────────────────────────────────────────────
 
+
 @dataclass
 class UpakadaResult:
     upapada_sign: int
     upapada_sign_name: str
     planets_in_upapada: list[str]
-    planets_aspecting_upapada: list[str]    # via Rashi Drishti
-    spouse_quality: str                      # brief description
+    planets_aspecting_upapada: list[str]  # via Rashi Drishti
+    spouse_quality: str  # brief description
     marriage_indicators: list[str]
 
 
@@ -131,15 +168,14 @@ def compute_upapada_analysis(chart, upapada_sign: int) -> UpakadaResult:
     from src.calculations.jaimini_rashi_drishti import has_rashi_drishti
 
     # Planets in Upapada sign
-    in_upapada = [
-        p for p, pd in chart.planets.items()
-        if pd.sign_index == upapada_sign
-    ]
+    in_upapada = [p for p, pd in chart.planets.items() if pd.sign_index == upapada_sign]
 
     # Planets aspecting Upapada by Rashi Drishti
     aspecting = [
-        p for p, pd in chart.planets.items()
-        if has_rashi_drishti(pd.sign_index, upapada_sign) and pd.sign_index != upapada_sign
+        p
+        for p, pd in chart.planets.items()
+        if has_rashi_drishti(pd.sign_index, upapada_sign)
+        and pd.sign_index != upapada_sign
     ]
 
     # Spouse quality from planets
@@ -159,7 +195,9 @@ def compute_upapada_analysis(chart, upapada_sign: int) -> UpakadaResult:
     if "Saturn" in malefic_influence and not benefic_influence:
         indicators.append("Saturn without benefic: delays or difficulties in marriage")
     if "Mars" in malefic_influence and not benefic_influence:
-        indicators.append("Mars without benefic: passionate but potentially combative partner")
+        indicators.append(
+            "Mars without benefic: passionate but potentially combative partner"
+        )
     if not indicators:
         indicators.append("Mixed or neutral influences on Upapada")
 

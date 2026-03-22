@@ -5,9 +5,9 @@ Human-supervised feedback loop.
 Feedback → human review queue (NEVER automated retrain).
 Reproducibility lock: any guidance output is recomputable from chart + date + version.
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
-from datetime import datetime, timezone
 from pathlib import Path
 import sqlite3
 
@@ -48,13 +48,19 @@ class FeedbackRecord:
     feedback_id: int
     rating: str
     queued_for_review: bool
-    reproducibility_key: str   # chart_id + date + engine_version
+    reproducibility_key: str  # chart_id + date + engine_version
 
 
-def record_feedback(user_id: str, chart_id: str, domain: str,
-                    rating: str, on_date: str, depth: str = "L1",
-                    engine_version: str = "3.0.0",
-                    db_path: str | Path = "lagna.db") -> FeedbackRecord:
+def record_feedback(
+    user_id: str,
+    chart_id: str,
+    domain: str,
+    rating: str,
+    on_date: str,
+    depth: str = "L1",
+    engine_version: str = "3.0.0",
+    db_path: str | Path = "lagna.db",
+) -> FeedbackRecord:
     """
     Record user feedback. 'concerning' → human review queue immediately.
     All ratings → output quality monitoring only (no auto-retrain).
@@ -65,24 +71,34 @@ def record_feedback(user_id: str, chart_id: str, domain: str,
         raise ValueError(f"rating must be one of {valid_ratings}")
 
     with sqlite3.connect(str(db_path)) as conn:
-        cur = conn.execute("""
+        cur = conn.execute(
+            """
             INSERT INTO feedback_events
             (user_id, chart_id, domain, depth, rating, on_date, engine_version)
             VALUES (?, ?, ?, ?, ?, ?, ?)
-        """, (user_id, chart_id, domain, depth, rating, on_date, engine_version))
+        """,
+            (user_id, chart_id, domain, depth, rating, on_date, engine_version),
+        )
         fid = cur.lastrowid
 
         queued = False
         if rating == "concerning":
             severity = "high"
-            conn.execute("""
+            conn.execute(
+                """
                 INSERT INTO review_queue (feedback_id, severity) VALUES (?, ?)
-            """, (fid, severity))
+            """,
+                (fid, severity),
+            )
             queued = True
 
     repro_key = f"{chart_id}::{on_date}::{engine_version}"
-    return FeedbackRecord(feedback_id=fid, rating=rating,
-                           queued_for_review=queued, reproducibility_key=repro_key)
+    return FeedbackRecord(
+        feedback_id=fid,
+        rating=rating,
+        queued_for_review=queued,
+        reproducibility_key=repro_key,
+    )
 
 
 def get_quality_metrics(db_path: str | Path = "lagna.db") -> dict:
@@ -101,5 +117,8 @@ def get_quality_metrics(db_path: str | Path = "lagna.db") -> dict:
     by_domain: dict = {}
     for row in rows:
         by_domain.setdefault(row["domain"], {})[row["rating"]] = row["n"]
-    return {"by_domain": by_domain, "pending_human_review": pending_review,
-            "note": "Quality monitoring only. No automated model changes."}
+    return {
+        "by_domain": by_domain,
+        "pending_human_review": pending_review,
+        "note": "Quality monitoring only. No automated model changes.",
+    }

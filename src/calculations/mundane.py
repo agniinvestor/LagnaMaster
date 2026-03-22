@@ -25,20 +25,21 @@ Mundane house significations (PVRNR p461):
   H11: parliament, gains, alliances
   H12: expenditure, foreign enemies, hospitals
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import date
 
 _MUNDANE_HOUSES = {
-    1:  "General state of affairs, public health, cabinet",
-    2:  "State revenue, wealth, imports, commerce, allies",
-    3:  "Telecommunications, transportation, journalism, media",
-    4:  "Educational institutions, real estate, trade, agriculture",
-    5:  "Children, new births, crime, parks, mentality of leaders",
-    6:  "State loans, debt, diseases, armed forces",
-    7:  "Health of women, infant mortality, war, foreign relations",
-    8:  "Death rate, state treasury, unexpected trouble",
-    9:  "Religion, judiciary, foreign affairs, higher education",
+    1: "General state of affairs, public health, cabinet",
+    2: "State revenue, wealth, imports, commerce, allies",
+    3: "Telecommunications, transportation, journalism, media",
+    4: "Educational institutions, real estate, trade, agriculture",
+    5: "Children, new births, crime, parks, mentality of leaders",
+    6: "State loans, debt, diseases, armed forces",
+    7: "Health of women, infant mortality, war, foreign relations",
+    8: "Death rate, state treasury, unexpected trouble",
+    9: "Religion, judiciary, foreign affairs, higher education",
     10: "Government, ruling party, prime minister/president",
     11: "Parliament, legislature, gains, alliances",
     12: "Expenditure, foreign enemies, hospitals, secret activities",
@@ -47,20 +48,23 @@ _MUNDANE_HOUSES = {
 
 @dataclass
 class MundaneChartAnalysis:
-    chart_type: str            # "nation"|"solar_ingress"|"lunar_year"|"swearing_in"
+    chart_type: str  # "nation"|"solar_ingress"|"lunar_year"|"swearing_in"
     event_description: str
     date: date
     location: str
-    key_themes: list[str]      # top 3 activated houses by strength
-    challenges: list[str]      # dusthana emphasis
+    key_themes: list[str]  # top 3 activated houses by strength
+    challenges: list[str]  # dusthana emphasis
     compressed_dasha: str | None
     house_significations: dict[int, str]
 
 
-def analyze_mundane_chart(chart, chart_type: str = "nation",
-                           event_description: str = "",
-                           event_date: date | None = None,
-                           location: str = "National capital") -> MundaneChartAnalysis:
+def analyze_mundane_chart(
+    chart,
+    chart_type: str = "nation",
+    event_description: str = "",
+    event_date: date | None = None,
+    location: str = "National capital",
+) -> MundaneChartAnalysis:
     """
     Analyze a mundane chart (nation, ingress, swearing-in).
     Uses standard D1 scoring; interprets via mundane house significations.
@@ -70,6 +74,7 @@ def analyze_mundane_chart(chart, chart_type: str = "nation",
 
     try:
         from src.calculations.multi_axis_scoring import score_axis
+
         ax = score_axis(chart, chart.lagna_sign_index, "D1", "parashari")
         scores = ax.scores
     except Exception:
@@ -78,28 +83,31 @@ def analyze_mundane_chart(chart, chart_type: str = "nation",
     # Top themes (strong houses)
     sorted_houses = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     key_themes = [
-        f"H{h}: {_MUNDANE_HOUSES[h]} (strong)"
-        for h, s in sorted_houses[:3] if s > 0.5
+        f"H{h}: {_MUNDANE_HOUSES[h]} (strong)" for h, s in sorted_houses[:3] if s > 0.5
     ]
 
     # Challenges (weak houses)
     challenges = [
         f"H{h}: {_MUNDANE_HOUSES[h]} (under pressure)"
-        for h, s in sorted_houses[-3:] if s < -1.0
+        for h, s in sorted_houses[-3:]
+        if s < -1.0
     ]
 
     return MundaneChartAnalysis(
         chart_type=chart_type,
         event_description=event_description or f"{chart_type} chart",
-        date=event_date, location=location,
-        key_themes=key_themes, challenges=challenges,
+        date=event_date,
+        location=location,
+        key_themes=key_themes,
+        challenges=challenges,
         compressed_dasha=None,
         house_significations=_MUNDANE_HOUSES,
     )
 
 
-def compress_vimshottari(chart, birth_date: date,
-                          period_years: float = 1.0) -> list[dict]:
+def compress_vimshottari(
+    chart, birth_date: date, period_years: float = 1.0
+) -> list[dict]:
     """
     Compress Vimshottari dasha to a shorter period (PVRNR p464).
     Useful for mundane charts: compress 120yr cycle to 1yr/1month.
@@ -107,17 +115,20 @@ def compress_vimshottari(chart, birth_date: date,
     """
     try:
         from src.calculations.vimshottari_dasa import compute_vimshottari_dasa
+
         dashas = compute_vimshottari_dasa(chart, birth_date)
         factor = period_years / 120.0
         compressed = []
         for d in dashas[:9]:
             compressed_days = d.years * 365.25 * factor
-            compressed.append({
-                "planet": d.lord,
-                "years_compressed": round(d.years * factor, 3),
-                "days_compressed": round(compressed_days, 1),
-                "original_years": d.years,
-            })
+            compressed.append(
+                {
+                    "planet": d.lord,
+                    "years_compressed": round(d.years * factor, 3),
+                    "days_compressed": round(compressed_days, 1),
+                    "original_years": d.years,
+                }
+            )
         return compressed
     except Exception:
         return []

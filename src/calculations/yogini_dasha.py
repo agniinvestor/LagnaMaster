@@ -14,20 +14,21 @@ Public API
   compute_yogini_dasha(chart, birth_date) -> list[YoginiPeriod]
   current_yogini(periods, on_date) -> YoginiPeriod
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date, timedelta
 
 # 8 Yogini lords in order
 _YOGINIS = [
-    ("Mangala",  "Moon",    1),
-    ("Pingala",  "Sun",     2),
-    ("Dhanya",   "Jupiter", 3),
-    ("Bhramari", "Mars",    4),
+    ("Mangala", "Moon", 1),
+    ("Pingala", "Sun", 2),
+    ("Dhanya", "Jupiter", 3),
+    ("Bhramari", "Mars", 4),
     ("Bhadrika", "Mercury", 5),
-    ("Ulka",     "Saturn",  6),
-    ("Siddha",   "Venus",   7),
-    ("Sankata",  "Rahu",    8),
+    ("Ulka", "Saturn", 6),
+    ("Siddha", "Venus", 7),
+    ("Sankata", "Rahu", 8),
 ]
 # Total = 1+2+3+4+5+6+7+8 = 36 years
 
@@ -53,8 +54,7 @@ class YoginiPeriod:
         for yname, yplanet, yyears in _YOGINIS:
             days = round(total_days * yyears / 36)
             end = cursor + timedelta(days=days)
-            subs.append({"yogini": yname, "lord": yplanet,
-                          "start": cursor, "end": end})
+            subs.append({"yogini": yname, "lord": yplanet, "start": cursor, "end": end})
             cursor = end
         return subs
 
@@ -85,17 +85,23 @@ def compute_yogini_dasha(chart, birth_date):
             else:
                 days = int(yyears * 365.25)
             end = cursor + timedelta(days=days)
-            periods.append(YoginiPeriod(
-                yogini_name=yname, lord=yplanet, years=yyears,
-                start_date=cursor, end_date=end,
-            ))
+            periods.append(
+                YoginiPeriod(
+                    yogini_name=yname,
+                    lord=yplanet,
+                    years=yyears,
+                    start_date=cursor,
+                    end_date=end,
+                )
+            )
             cursor = end
 
     return periods
 
 
-def current_yogini(periods: list[YoginiPeriod],
-                   on_date: date | None = None) -> YoginiPeriod | None:
+def current_yogini(
+    periods: list[YoginiPeriod], on_date: date | None = None
+) -> YoginiPeriod | None:
     if on_date is None:
         on_date = date.today()
     for p in periods:

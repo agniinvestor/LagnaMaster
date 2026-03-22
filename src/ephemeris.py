@@ -28,26 +28,35 @@ import swisseph as swe
 _EPHE_PATH = str(Path(__file__).parent.parent / "ephe")
 
 SIGNS = [
-    "Aries", "Taurus", "Gemini", "Cancer",
-    "Leo", "Virgo", "Libra", "Scorpio",
-    "Sagittarius", "Capricorn", "Aquarius", "Pisces",
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
 ]
 
 # Jyotish Navagrahas (9 planets). Ketu derived from Rahu.
 _PLANET_IDS: dict[str, int] = {
-    "Sun":     swe.SUN,
-    "Moon":    swe.MOON,
-    "Mars":    swe.MARS,
+    "Sun": swe.SUN,
+    "Moon": swe.MOON,
+    "Mars": swe.MARS,
     "Mercury": swe.MERCURY,
     "Jupiter": swe.JUPITER,
-    "Venus":   swe.VENUS,
-    "Saturn":  swe.SATURN,
-    "Rahu":    swe.MEAN_NODE,   # mean North Node (Rahu)
+    "Venus": swe.VENUS,
+    "Saturn": swe.SATURN,
+    "Rahu": swe.MEAN_NODE,  # mean North Node (Rahu)
 }
 
 _AYANAMSHA_MAP = {
     "lahiri": swe.SIDM_LAHIRI,
-    "raman":  swe.SIDM_RAMAN,
+    "raman": swe.SIDM_RAMAN,
     "krishnamurti": swe.SIDM_KRISHNAMURTI,
 }
 
@@ -56,26 +65,27 @@ _AYANAMSHA_MAP = {
 # Data classes
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class PlanetPosition:
     name: str
-    longitude: float         # sidereal, 0–360°
-    sign: str                # e.g. "Taurus"
-    sign_index: int          # 0=Aries … 11=Pisces
-    degree_in_sign: float    # 0–30°
+    longitude: float  # sidereal, 0–360°
+    sign: str  # e.g. "Taurus"
+    sign_index: int  # 0=Aries … 11=Pisces
+    degree_in_sign: float  # 0–30°
     is_retrograde: bool
-    speed: float             # degrees/day (negative = retrograde)
+    speed: float  # degrees/day (negative = retrograde)
 
 
 @dataclass
 class BirthChart:
     # Metadata
-    jd_ut: float             # Julian Day (UT)
-    ayanamsha_name: str      # e.g. "lahiri"
-    ayanamsha_value: float   # degrees (e.g. ~23.15° in 1947)
+    jd_ut: float  # Julian Day (UT)
+    ayanamsha_name: str  # e.g. "lahiri"
+    ayanamsha_value: float  # degrees (e.g. ~23.15° in 1947)
 
     # Lagna (ascendant)
-    lagna: float             # sidereal longitude, 0–360°
+    lagna: float  # sidereal longitude, 0–360°
     lagna_sign: str
     lagna_sign_index: int
     lagna_degree_in_sign: float
@@ -86,7 +96,9 @@ class BirthChart:
     def planet(self, name: str) -> PlanetPosition:
         """Convenience accessor with a clear error."""
         if name not in self.planets:
-            raise KeyError(f"Planet {name!r} not in chart. Available: {list(self.planets)}")
+            raise KeyError(
+                f"Planet {name!r} not in chart. Available: {list(self.planets)}"
+            )
         return self.planets[name]
 
     def summary(self) -> str:
@@ -105,6 +117,7 @@ class BirthChart:
 # Internal helpers
 # ---------------------------------------------------------------------------
 
+
 def _sign_from_lon(lon: float) -> tuple[str, int, float]:
     """Return (sign_name, sign_index 0–11, degree_in_sign 0–30) for a longitude."""
     lon = lon % 360
@@ -113,8 +126,9 @@ def _sign_from_lon(lon: float) -> tuple[str, int, float]:
     return SIGNS[idx], idx, deg
 
 
-def _local_to_jd(year: int, month: int, day: int,
-                 hour: float, tz_offset: float) -> float:
+def _local_to_jd(
+    year: int, month: int, day: int, hour: float, tz_offset: float
+) -> float:
     """
     Convert local date/time to Julian Day (UT).
 
@@ -132,14 +146,15 @@ def _local_to_jd(year: int, month: int, day: int,
 # Public API
 # ---------------------------------------------------------------------------
 
+
 def compute_chart(
     year: int,
     month: int,
     day: int,
-    hour: float,            # local time as decimal hours (0.0 = midnight)
-    lat: float,             # degrees N (positive north)
-    lon: float,             # degrees E (positive east)
-    tz_offset: float = 5.5, # UTC offset in hours; IST = +5.5
+    hour: float,  # local time as decimal hours (0.0 = midnight)
+    lat: float,  # degrees N (positive north)
+    lon: float,  # degrees E (positive east)
+    tz_offset: float = 5.5,  # UTC offset in hours; IST = +5.5
     ayanamsha: str = "lahiri",
     ephe_path: Optional[str] = None,
 ) -> BirthChart:
@@ -164,8 +179,7 @@ def compute_chart(
     ayanamsha_key = ayanamsha.lower().strip()
     if ayanamsha_key not in _AYANAMSHA_MAP:
         raise ValueError(
-            f"Unknown ayanamsha {ayanamsha!r}. "
-            f"Supported: {list(_AYANAMSHA_MAP.keys())}"
+            f"Unknown ayanamsha {ayanamsha!r}. Supported: {list(_AYANAMSHA_MAP.keys())}"
         )
 
     # --- Ephemeris setup ---
@@ -187,7 +201,7 @@ def compute_chart(
     # swe.houses returns tropical cusps; we subtract ayanamsha for sidereal lagna.
     # Use 'P' (Placidus) to get the ascendant degree — house system doesn't matter
     # for Lagna in whole-sign Jyotish; only the ASC degree matters.
-    cusps, ascmc = swe.houses(jd_ut, lat, lon, b'P')
+    cusps, ascmc = swe.houses(jd_ut, lat, lon, b"P")
     tropical_asc = ascmc[0]
     sidereal_asc = (tropical_asc - ayanamsha_val) % 360
     lagna_sign, lagna_idx, lagna_deg = _sign_from_lon(sidereal_asc)
@@ -206,7 +220,7 @@ def compute_chart(
         planet_flags = flags | swe.FLG_TOPOCTR if name == "Moon" else flags
         result, _ = swe.calc_ut(jd_ut, planet_id, planet_flags)
         lon_sid = result[0] % 360
-        speed   = result[3]          # longitude speed, deg/day
+        speed = result[3]  # longitude speed, deg/day
         sign, sign_idx, deg_in_sign = _sign_from_lon(lon_sid)
         planets_out[name] = PlanetPosition(
             name=name,
@@ -250,4 +264,4 @@ TOPOCENTRIC_MOON_NOTE = "swe.set_topo(lat,lon,0) + SEFLG_TOPOCTR for Moon"
 
 # Topocentric Moon (F-1 S136)
 # swe.set_topo(lat,lon,0) before Moon calc; SEFLG_TOPOCTR flag
-TOPOCENTRIC_MOON_ENABLED = True   # Active: swe.set_topo() called before Moon
+TOPOCENTRIC_MOON_ENABLED = True  # Active: swe.set_topo() called before Moon

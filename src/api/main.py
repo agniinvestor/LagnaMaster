@@ -17,15 +17,26 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from src.api.models import (
-    BirthDataRequest, ChartOut, ChartScoresOut,
-    PlanetOut, HouseScoreOut, RuleOut, ChartSummary,
-    SVGRequest, SVGOut, GuidanceRequest, GuidanceOut,
-    ConfidenceOut, ChartV3Out,
-    MundaneRequest, MundaneOut,
+    BirthDataRequest,
+    ChartOut,
+    ChartScoresOut,
+    PlanetOut,
+    HouseScoreOut,
+    RuleOut,
+    ChartSummary,
+    SVGRequest,
+    SVGOut,
+    GuidanceRequest,
+    GuidanceOut,
+    ConfidenceOut,
+    ChartV3Out,
+    MundaneRequest,
+    MundaneOut,
 )
 from src.ephemeris import compute_chart
 from src.scoring import score_chart
 from src.db_pg import init_db, save_chart, get_chart, list_charts
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -61,9 +72,14 @@ def create_chart(req: BirthDataRequest):
     """
     try:
         chart = compute_chart(
-            year=req.year, month=req.month, day=req.day,
-            hour=req.hour, lat=req.lat, lon=req.lon,
-            tz_offset=req.tz_offset, ayanamsha=req.ayanamsha,
+            year=req.year,
+            month=req.month,
+            day=req.day,
+            hour=req.hour,
+            lat=req.lat,
+            lon=req.lon,
+            tz_offset=req.tz_offset,
+            ayanamsha=req.ayanamsha,
         )
     except ValueError as e:
         raise HTTPException(status_code=422, detail=str(e))
@@ -105,9 +121,14 @@ def create_chart(req: BirthDataRequest):
     }
 
     chart_id = save_chart(
-        year=req.year, month=req.month, day=req.day,
-        hour=req.hour, lat=req.lat, lon=req.lon,
-        tz_offset=req.tz_offset, ayanamsha=req.ayanamsha,
+        year=req.year,
+        month=req.month,
+        day=req.day,
+        hour=req.hour,
+        lat=req.lat,
+        lon=req.lon,
+        tz_offset=req.tz_offset,
+        ayanamsha=req.ayanamsha,
         chart_json=chart_json,
         scores_json=scores_json,
         name=req.name,
@@ -158,8 +179,7 @@ def get_chart_endpoint(chart_id: int):
         ayanamsha_value=cj["ayanamsha_value"],
         jd_ut=cj["jd_ut"],
         planets={
-            name: PlanetOut(name=name, **pd)
-            for name, pd in cj["planets"].items()
+            name: PlanetOut(name=name, **pd) for name, pd in cj["planets"].items()
         },
     )
 
@@ -175,9 +195,14 @@ def get_scores_endpoint(chart_id: int):
         raise HTTPException(status_code=404, detail=f"Chart {chart_id} not found")
 
     chart = compute_chart(
-        year=row["year"], month=row["month"], day=row["day"],
-        hour=row["hour"], lat=row["lat"], lon=row["lon"],
-        tz_offset=row["tz_offset"], ayanamsha=row["ayanamsha"],
+        year=row["year"],
+        month=row["month"],
+        day=row["day"],
+        hour=row["hour"],
+        lat=row["lat"],
+        lon=row["lon"],
+        tz_offset=row["tz_offset"],
+        ayanamsha=row["ayanamsha"],
     )
     scores = score_chart(chart)
 
@@ -210,6 +235,7 @@ def get_scores_endpoint(chart_id: int):
 
 # ── S188: XIX Output endpoints ───────────────────────────────────────────────
 
+
 @app.post("/charts/{chart_id}/svg", response_model=SVGOut)
 def get_chart_svg(chart_id: int, req: SVGRequest = None):
     """
@@ -223,23 +249,34 @@ def get_chart_svg(chart_id: int, req: SVGRequest = None):
         raise HTTPException(status_code=404, detail=f"Chart {chart_id} not found")
 
     chart = compute_chart(
-        year=row["year"], month=row["month"], day=row["day"],
-        hour=row["hour"], lat=row["lat"], lon=row["lon"],
-        tz_offset=row["tz_offset"], ayanamsha=row["ayanamsha"],
+        year=row["year"],
+        month=row["month"],
+        day=row["day"],
+        hour=row["hour"],
+        lat=row["lat"],
+        lon=row["lon"],
+        tz_offset=row["tz_offset"],
+        ayanamsha=row["ayanamsha"],
     )
 
     try:
         from src.calculations.north_indian_chart import (
-            generate_north_indian_svg, generate_south_indian_svg
+            generate_north_indian_svg,
+            generate_south_indian_svg,
         )
+
         if req.style == "south_indian":
             svg = generate_south_indian_svg(
-                chart, title=req.title, color_scheme=req.color_scheme,
+                chart,
+                title=req.title,
+                color_scheme=req.color_scheme,
                 show_degrees=req.show_degrees,
             )
         else:
             svg = generate_north_indian_svg(
-                chart, title=req.title, color_scheme=req.color_scheme,
+                chart,
+                title=req.title,
+                color_scheme=req.color_scheme,
                 show_degrees=req.show_degrees,
             )
     except Exception as e:
@@ -255,29 +292,38 @@ def export_chart_pdf(chart_id: int, title: str = "Birth Chart"):
     Returns the file as a downloadable response.
     """
     from fastapi.responses import FileResponse, HTMLResponse
-    import tempfile, os
+    import tempfile
+    import os
 
     row = get_chart(chart_id)
     if row is None:
         raise HTTPException(status_code=404, detail=f"Chart {chart_id} not found")
 
     chart = compute_chart(
-        year=row["year"], month=row["month"], day=row["day"],
-        hour=row["hour"], lat=row["lat"], lon=row["lon"],
-        tz_offset=row["tz_offset"], ayanamsha=row["ayanamsha"],
+        year=row["year"],
+        month=row["month"],
+        day=row["day"],
+        hour=row["hour"],
+        lat=row["lat"],
+        lon=row["lon"],
+        tz_offset=row["tz_offset"],
+        ayanamsha=row["ayanamsha"],
     )
 
     try:
         from src.calculations.north_indian_chart import generate_south_indian_svg
+
         chart_svg = generate_south_indian_svg(chart, title=title, color_scheme="color")
     except Exception:
         chart_svg = ""
 
     try:
         from src.calculations.panchanga import compute_panchanga
+
         sun_lon = chart.planets["Sun"].longitude
         moon_lon = chart.planets["Moon"].longitude
         import datetime
+
         panchanga = compute_panchanga(sun_lon, moon_lon, datetime.datetime.now())
     except Exception:
         panchanga = None
@@ -289,8 +335,10 @@ def export_chart_pdf(chart_id: int, title: str = "Birth Chart"):
 
     try:
         from src.pdf_export import export_pdf
+
         success = export_pdf(
-            chart, pdf_path,
+            chart,
+            pdf_path,
             title=title,
             chart_svg=chart_svg,
             panchanga=panchanga,
@@ -308,7 +356,10 @@ def export_chart_pdf(chart_id: int, title: str = "Birth Chart"):
     # HTML fallback
     try:
         from src.pdf_export import export_html
-        html = export_html(chart, "", title=title, chart_svg=chart_svg, panchanga=panchanga)
+
+        html = export_html(
+            chart, "", title=title, chart_svg=chart_svg, panchanga=panchanga
+        )
         return HTMLResponse(content=html)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Export failed: {e}")
@@ -329,21 +380,30 @@ def get_guidance_endpoint(chart_id: int, req: GuidanceRequest = None):
         raise HTTPException(status_code=404, detail=f"Chart {chart_id} not found")
 
     chart = compute_chart(
-        year=row["year"], month=row["month"], day=row["day"],
-        hour=row["hour"], lat=row["lat"], lon=row["lon"],
-        tz_offset=row["tz_offset"], ayanamsha=row["ayanamsha"],
+        year=row["year"],
+        month=row["month"],
+        day=row["day"],
+        hour=row["hour"],
+        lat=row["lat"],
+        lon=row["lon"],
+        tz_offset=row["tz_offset"],
+        ayanamsha=row["ayanamsha"],
     )
 
     import datetime
+
     on_date = None
     if req.on_date:
         try:
             on_date = datetime.date.fromisoformat(req.on_date)
         except ValueError:
-            raise HTTPException(status_code=422, detail="on_date must be ISO format YYYY-MM-DD")
+            raise HTTPException(
+                status_code=422, detail="on_date must be ISO format YYYY-MM-DD"
+            )
 
     try:
         from src.guidance.guidance_api import get_guidance
+
         resp = get_guidance(
             chart=chart,
             domain=req.domain,
@@ -386,21 +446,30 @@ def get_confidence_endpoint(chart_id: int, birth_time_uncertainty_minutes: float
         raise HTTPException(status_code=404, detail=f"Chart {chart_id} not found")
 
     chart = compute_chart(
-        year=row["year"], month=row["month"], day=row["day"],
-        hour=row["hour"], lat=row["lat"], lon=row["lon"],
-        tz_offset=row["tz_offset"], ayanamsha=row["ayanamsha"],
+        year=row["year"],
+        month=row["month"],
+        day=row["day"],
+        hour=row["hour"],
+        lat=row["lat"],
+        lon=row["lon"],
+        tz_offset=row["tz_offset"],
+        ayanamsha=row["ayanamsha"],
     )
 
     try:
         from src.calculations.confidence_model import (
-            compute_uncertainty_flags, compute_confidence_intervals
+            compute_uncertainty_flags,
+            compute_confidence_intervals,
         )
+
         flags = compute_uncertainty_flags(chart)
         intervals = compute_confidence_intervals(
             chart, birth_time_uncertainty_minutes=birth_time_uncertainty_minutes
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Confidence computation failed: {e}")
+        raise HTTPException(
+            status_code=500, detail=f"Confidence computation failed: {e}"
+        )
 
     house_conf = {}
     if hasattr(intervals, "houses"):
@@ -437,21 +506,30 @@ def get_scores_v3_endpoint(
         raise HTTPException(status_code=404, detail=f"Chart {chart_id} not found")
 
     chart = compute_chart(
-        year=row["year"], month=row["month"], day=row["day"],
-        hour=row["hour"], lat=row["lat"], lon=row["lon"],
-        tz_offset=row["tz_offset"], ayanamsha=row["ayanamsha"],
+        year=row["year"],
+        month=row["month"],
+        day=row["day"],
+        hour=row["hour"],
+        lat=row["lat"],
+        lon=row["lon"],
+        tz_offset=row["tz_offset"],
+        ayanamsha=row["ayanamsha"],
     )
 
     import datetime
+
     query_date = datetime.date.today()
     if on_date:
         try:
             query_date = datetime.date.fromisoformat(on_date)
         except ValueError:
-            raise HTTPException(status_code=422, detail="on_date must be ISO format YYYY-MM-DD")
+            raise HTTPException(
+                status_code=422, detail="on_date must be ISO format YYYY-MM-DD"
+            )
 
     try:
         from src.calculations.scoring_v3 import score_chart_v3
+
         result = score_chart_v3(chart, on_date=query_date, school=school)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"v3 scoring failed: {e}")
@@ -471,8 +549,8 @@ def get_scores_v3_endpoint(
     )
 
 
-
 # ── S189: Mundane astrology endpoint ─────────────────────────────────────────
+
 
 @app.post("/mundane/analyze", response_model=MundaneOut)
 def analyze_mundane(req: MundaneRequest):
@@ -485,8 +563,12 @@ def analyze_mundane(req: MundaneRequest):
 
     try:
         chart = compute_chart(
-            year=req.year, month=req.month, day=req.day,
-            hour=req.hour, lat=req.lat, lon=req.lon,
+            year=req.year,
+            month=req.month,
+            day=req.day,
+            hour=req.hour,
+            lat=req.lat,
+            lon=req.lon,
             tz_offset=req.tz_offset,
         )
     except ValueError as e:
@@ -494,6 +576,7 @@ def analyze_mundane(req: MundaneRequest):
 
     try:
         from src.calculations.mundane import analyze_mundane_chart, compress_vimshottari
+
         event_date = datetime.date(req.year, req.month, req.day)
         analysis = analyze_mundane_chart(
             chart,
@@ -513,7 +596,8 @@ def analyze_mundane(req: MundaneRequest):
         location=analysis.location,
         key_themes=analysis.key_themes,
         challenges=analysis.challenges,
-        house_significations={str(k): v for k, v in analysis.house_significations.items()},
+        house_significations={
+            str(k): v for k, v in analysis.house_significations.items()
+        },
         compressed_dasha=compressed,
     )
-

@@ -18,6 +18,7 @@ Public API
 ----------
   compute_varga_agreement(chart, school) -> VargaAgreementReport
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
@@ -28,8 +29,8 @@ class HouseAgreement:
     d1_score: float
     d9_score: float
     d10_score: float
-    flag: str          # "★★" / "★" / "○"
-    confidence: str    # "High" / "Moderate" / "Low"
+    flag: str  # "★★" / "★" / "○"
+    confidence: str  # "High" / "Moderate" / "Low"
     interpretation: str
 
 
@@ -58,27 +59,32 @@ def compute_varga_agreement(chart, school: str = "parashari") -> VargaAgreementR
     Uses multi_axis_scoring to get all 3 axis scores.
     """
     from src.calculations.multi_axis_scoring import score_all_axes
+
     try:
         axes = score_all_axes(chart, school)
     except Exception:
         # Fallback: all diverge
-        houses = {h: HouseAgreement(h, 0, 0, 0, "○", "Low", "Score unavailable")
-                  for h in range(1, 13)}
-        return VargaAgreementReport(houses=houses,
-                                     high_confidence_houses=[],
-                                     low_confidence_houses=list(range(1,13)))
+        houses = {
+            h: HouseAgreement(h, 0, 0, 0, "○", "Low", "Score unavailable")
+            for h in range(1, 13)
+        }
+        return VargaAgreementReport(
+            houses=houses,
+            high_confidence_houses=[],
+            low_confidence_houses=list(range(1, 13)),
+        )
 
-    d1  = axes.d1.scores   if axes.d1  else {}
-    d9  = axes.d9.scores   if axes.d9  else {}
-    d10 = axes.d10.scores  if axes.d10 else {}
+    d1 = axes.d1.scores if axes.d1 else {}
+    d9 = axes.d9.scores if axes.d9 else {}
+    d10 = axes.d10.scores if axes.d10 else {}
 
     houses = {}
     high_conf = []
-    low_conf  = []
+    low_conf = []
 
     for h in range(1, 13):
-        s1  = d1.get(h, 0.0)
-        s9  = d9.get(h, 0.0)
+        s1 = d1.get(h, 0.0)
+        s9 = d9.get(h, 0.0)
         s10 = d10.get(h, 0.0)
 
         sg1, sg9, sg10 = _sign(s1), _sign(s9), _sign(s10)
@@ -98,9 +104,16 @@ def compute_varga_agreement(chart, school: str = "parashari") -> VargaAgreementR
                 interp = "One axis is neutral — insufficient agreement data"
             low_conf.append(h)
 
-        houses[h] = HouseAgreement(house=h, d1_score=s1, d9_score=s9, d10_score=s10,
-                                    flag=flag, confidence=conf, interpretation=interp)
+        houses[h] = HouseAgreement(
+            house=h,
+            d1_score=s1,
+            d9_score=s9,
+            d10_score=s10,
+            flag=flag,
+            confidence=conf,
+            interpretation=interp,
+        )
 
-    return VargaAgreementReport(houses=houses,
-                                 high_confidence_houses=high_conf,
-                                 low_confidence_houses=low_conf)
+    return VargaAgreementReport(
+        houses=houses, high_confidence_houses=high_conf, low_confidence_houses=low_conf
+    )

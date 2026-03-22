@@ -11,26 +11,30 @@ Sources:
   BV Raman · Three Hundred Important Combinations #163-174 (Sannyasa)
   Saravali Ch.21 (Vasumati Yoga)
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 from typing import Optional
 
 # ─── Yoga Strength Gradient ───────────────────────────────────────────────────
 
+
 @dataclass
 class YogaStrength:
     yoga_name: str
     base_present: bool
-    strength_score: float          # 0.0 to 1.0
-    strength_label: str            # "Strong" / "Moderate" / "Weak" / "Dormant"
+    strength_score: float  # 0.0 to 1.0
+    strength_label: str  # "Strong" / "Moderate" / "Weak" / "Dormant"
     d9_confirmed: bool
     forming_planets: list[str]
     planet_dignities: dict[str, str]
     cancellation_factors: list[str]
-    fructification_note: str       # when it's likely to manifest
+    fructification_note: str  # when it's likely to manifest
 
 
-def compute_yoga_strength(yoga_name: str, forming_planets: list[str], chart) -> YogaStrength:
+def compute_yoga_strength(
+    yoga_name: str, forming_planets: list[str], chart
+) -> YogaStrength:
     """
     Compute gradient strength for any detected yoga.
     Source: PVRNR · BPHS Ch.36 v.15-20; Gayatri Devi Vasudev, Art of Prediction Ch.3
@@ -38,7 +42,7 @@ def compute_yoga_strength(yoga_name: str, forming_planets: list[str], chart) -> 
     if not forming_planets:
         return YogaStrength(yoga_name, False, 0.0, "Absent", False, [], {}, [], "")
 
-    from src.calculations.dignity import compute_dignity, DignityLevel
+    from src.calculations.dignity import compute_dignity
 
     total_score = 0.0
     planet_dignities = {}
@@ -53,11 +57,16 @@ def compute_yoga_strength(yoga_name: str, forming_planets: list[str], chart) -> 
 
         # Dignity component (0.0-0.4 per planet)
         dignity_scores = {
-            "Deep Exaltation": 0.40, "Exaltation": 0.35,
-            "Neecha Bhanga Raja Yoga": 0.30, "Mooltrikona": 0.30,
-            "Own Sign": 0.25, "Friendly Sign": 0.15,
-            "Neutral": 0.10, "Enemy Sign": 0.05,
-            "Neecha Bhanga": 0.08, "Debilitation": 0.0,
+            "Deep Exaltation": 0.40,
+            "Exaltation": 0.35,
+            "Neecha Bhanga Raja Yoga": 0.30,
+            "Mooltrikona": 0.30,
+            "Own Sign": 0.25,
+            "Friendly Sign": 0.15,
+            "Neutral": 0.10,
+            "Enemy Sign": 0.05,
+            "Neecha Bhanga": 0.08,
+            "Debilitation": 0.0,
         }
         total_score += dignity_scores.get(dname, 0.10)
 
@@ -74,19 +83,24 @@ def compute_yoga_strength(yoga_name: str, forming_planets: list[str], chart) -> 
     # D9 confirmation: check if any forming planet is Vargottama
     d9_confirmed = any(
         compute_dignity(p, chart).is_vargottama
-        for p in forming_planets if p in chart.planets
+        for p in forming_planets
+        if p in chart.planets
     )
     if d9_confirmed:
         strength = min(1.0, strength * 1.15)
 
     # Reduce for cancellations
-    strength *= (1.0 - 0.15 * min(3, len(cancellation_factors)))
+    strength *= 1.0 - 0.15 * min(3, len(cancellation_factors))
     strength = max(0.0, strength)
 
-    if strength >= 0.75:  label = "Strong"
-    elif strength >= 0.45: label = "Moderate"
-    elif strength >= 0.20: label = "Weak"
-    else:                  label = "Dormant"
+    if strength >= 0.75:
+        label = "Strong"
+    elif strength >= 0.45:
+        label = "Moderate"
+    elif strength >= 0.20:
+        label = "Weak"
+    else:
+        label = "Dormant"
 
     # Fructification note
     fruct = f"Yoga activates in dasha of {forming_planets[0]} (MD/AD)"
@@ -108,6 +122,7 @@ def compute_yoga_strength(yoga_name: str, forming_planets: list[str], chart) -> 
 
 # ─── Missing Named Yogas ──────────────────────────────────────────────────────
 
+
 @dataclass
 class NamedYogaResult:
     name: str
@@ -124,16 +139,20 @@ def detect_amala_yoga(chart) -> Optional[NamedYogaResult]:
     Source: Phaladeepika Ch.6 v.40
     """
     lagna_si = chart.lagna_sign_index
-    moon_si  = chart.planets["Moon"].sign_index if "Moon" in chart.planets else lagna_si
+    moon_si = chart.planets["Moon"].sign_index if "Moon" in chart.planets else lagna_si
 
     h10_from_lagna = (lagna_si + 9) % 12
-    h10_from_moon  = (moon_si  + 9) % 12
+    h10_from_moon = (moon_si + 9) % 12
 
     natural_benefics = {"Moon", "Mercury", "Jupiter", "Venus"}
-    natural_malefics  = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+    natural_malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
-    planets_h10_lagna = [p for p, pd in chart.planets.items() if pd.sign_index == h10_from_lagna]
-    planets_h10_moon  = [p for p, pd in chart.planets.items() if pd.sign_index == h10_from_moon]
+    planets_h10_lagna = [
+        p for p, pd in chart.planets.items() if pd.sign_index == h10_from_lagna
+    ]
+    planets_h10_moon = [
+        p for p, pd in chart.planets.items() if pd.sign_index == h10_from_moon
+    ]
 
     all_h10 = set(planets_h10_lagna) | set(planets_h10_moon)
 
@@ -141,7 +160,8 @@ def detect_amala_yoga(chart) -> Optional[NamedYogaResult]:
     if all_h10 and not any(p in natural_malefics for p in all_h10):
         benefics_present = [p for p in all_h10 if p in natural_benefics]
         return NamedYogaResult(
-            name="Amala Yoga", present=True,
+            name="Amala Yoga",
+            present=True,
             strength=compute_yoga_strength("Amala Yoga", benefics_present, chart),
             planets=benefics_present,
             description="H10 from Lagna and Moon occupied only by benefics — spotless character, lasting fame",
@@ -156,13 +176,13 @@ def detect_vasumati_yoga(chart) -> Optional[NamedYogaResult]:
     Source: PVRNR · BPHS Ch.36; Saravali Ch.21
     """
     lagna_si = chart.lagna_sign_index
-    moon_si  = chart.planets["Moon"].sign_index if "Moon" in chart.planets else lagna_si
+    moon_si = chart.planets["Moon"].sign_index if "Moon" in chart.planets else lagna_si
 
     natural_benefics = {"Mercury", "Jupiter", "Venus"}  # Moon excluded (it's reference)
     upachaya_offsets = {2, 5, 9, 10}  # 3rd, 6th, 10th, 11th (0-indexed from lagna)
 
     upachaya_from_lagna = {(lagna_si + o) % 12 for o in upachaya_offsets}
-    upachaya_from_moon  = {(moon_si  + o) % 12 for o in upachaya_offsets}
+    upachaya_from_moon = {(moon_si + o) % 12 for o in upachaya_offsets}
 
     benefics_in_chart = [p for p in natural_benefics if p in chart.planets]
 
@@ -176,7 +196,8 @@ def detect_vasumati_yoga(chart) -> Optional[NamedYogaResult]:
     if benefics_in_chart and (all_in_upachaya_lagna or all_in_upachaya_moon):
         ref = "Lagna" if all_in_upachaya_lagna else "Moon"
         return NamedYogaResult(
-            name="Vasumati Yoga", present=True,
+            name="Vasumati Yoga",
+            present=True,
             strength=compute_yoga_strength("Vasumati Yoga", benefics_in_chart, chart),
             planets=benefics_in_chart,
             description=f"All benefics in upachaya from {ref} — native accumulates wealth through own efforts",
@@ -185,7 +206,9 @@ def detect_vasumati_yoga(chart) -> Optional[NamedYogaResult]:
     return None
 
 
-def detect_mahabhagya_yoga(chart, is_male: bool = True, is_day_birth: bool = True) -> Optional[NamedYogaResult]:
+def detect_mahabhagya_yoga(
+    chart, is_male: bool = True, is_day_birth: bool = True
+) -> Optional[NamedYogaResult]:
     """
     Mahabhagya Yoga:
     Male: daytime birth, Sun + Moon + Lagna all in odd signs
@@ -193,14 +216,15 @@ def detect_mahabhagya_yoga(chart, is_male: bool = True, is_day_birth: bool = Tru
     Source: Phaladeepika Ch.6 v.35-38
     """
     lagna_si = chart.lagna_sign_index
-    sun_si   = chart.planets["Sun"].sign_index  if "Sun"  in chart.planets else -1
-    moon_si  = chart.planets["Moon"].sign_index if "Moon" in chart.planets else -1
+    sun_si = chart.planets["Sun"].sign_index if "Sun" in chart.planets else -1
+    moon_si = chart.planets["Moon"].sign_index if "Moon" in chart.planets else -1
 
     if sun_si == -1 or moon_si == -1:
         return None
 
     # Odd signs (Aries=0, Gemini=2, Leo=4, Libra=6, Sag=8, Aquarius=10): index 0,2,4,6,8,10
-    def is_odd_sign(si): return si % 2 == 0  # 0-indexed, so Aries(0) is odd
+    def is_odd_sign(si):
+        return si % 2 == 0  # 0-indexed, so Aries(0) is odd
 
     if is_male and is_day_birth:
         condition = all(is_odd_sign(si) for si in (lagna_si, sun_si, moon_si))
@@ -217,7 +241,9 @@ def detect_mahabhagya_yoga(chart, is_male: bool = True, is_day_birth: bool = Tru
         if met == 2:
             condition_desc = "Partial Mahabhagya (2/3 conditions)"
             return NamedYogaResult(
-                name="Partial Mahabhagya Yoga", present=True, strength=None,
+                name="Partial Mahabhagya Yoga",
+                present=True,
+                strength=None,
                 planets=["Sun", "Moon"],
                 description="2 of 3 Mahabhagya conditions met — partial greatness",
                 source="Phaladeepika Ch.6 v.35-38",
@@ -226,7 +252,8 @@ def detect_mahabhagya_yoga(chart, is_male: bool = True, is_day_birth: bool = Tru
 
     if condition:
         return NamedYogaResult(
-            name="Mahabhagya Yoga", present=True,
+            name="Mahabhagya Yoga",
+            present=True,
             strength=compute_yoga_strength("Mahabhagya Yoga", ["Sun", "Moon"], chart),
             planets=["Sun", "Moon"],
             description=f"{condition_desc} — native of great fortune and noble qualities",
@@ -268,13 +295,16 @@ def detect_sannyasa_yogas(chart) -> list[NamedYogaResult]:
                 ys = compute_yoga_strength(yoga_name, planets, chart)
             except Exception:
                 ys = None
-            results.append(NamedYogaResult(
-                name=yoga_name, present=True,
-                strength=ys,
-                planets=planets,
-                description=desc,
-                source="BPHS Ch.36 v.50-58",
-            ))
+            results.append(
+                NamedYogaResult(
+                    name=yoga_name,
+                    present=True,
+                    strength=ys,
+                    planets=planets,
+                    description=desc,
+                    source="BPHS Ch.36 v.50-58",
+                )
+            )
 
     return results
 
@@ -284,7 +314,7 @@ def detect_chamara_yoga(chart) -> Optional[NamedYogaResult]:
     Chamara Yoga: Lagna lord exalted in Kendra AND aspected by Jupiter.
     Source: Jataka Parijata
     """
-    from src.calculations.dignity import compute_dignity, DignityLevel, EXALT_SIGN
+    from src.calculations.dignity import compute_dignity, DignityLevel
     from src.calculations.house_lord import SIGN_LORDS
 
     lagna_si = chart.lagna_sign_index
@@ -309,12 +339,14 @@ def detect_chamara_yoga(chart) -> Optional[NamedYogaResult]:
     jup_si = chart.planets["Jupiter"].sign_index
     jup_house = (jup_si - lagna_si) % 12 + 1
     from src.calculations.scoring_patches import aspect_hits, get_aspect_strength
+
     asp_str = get_aspect_strength("Jupiter", aspect_hits(jup_house, house))
     if asp_str == 0:
         return None
 
     return NamedYogaResult(
-        name="Chamara Yoga", present=True,
+        name="Chamara Yoga",
+        present=True,
         strength=compute_yoga_strength("Chamara Yoga", [lagna_lord, "Jupiter"], chart),
         planets=[lagna_lord, "Jupiter"],
         description="Lagna lord exalted in Kendra + Jupiter's aspect — great scholar, respected administrator",
@@ -322,9 +354,9 @@ def detect_chamara_yoga(chart) -> Optional[NamedYogaResult]:
     )
 
 
-def detect_all_additional_yogas(chart,
-                                 is_male: bool = True,
-                                 is_day_birth: bool = True) -> list[NamedYogaResult]:
+def detect_all_additional_yogas(
+    chart, is_male: bool = True, is_day_birth: bool = True
+) -> list[NamedYogaResult]:
     """Run all additional yoga detectors and return present ones."""
     results = []
     for detector in [

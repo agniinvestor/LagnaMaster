@@ -12,25 +12,65 @@ Sources:
   K.S. Krishnamurti · Reader Series Vol. 1-6 (Krishnamurti Publications)
   KP system requires: ayanamsha='krishnamurti', node_mode='true'
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
 # ─── Vimshottari dasha years (classic sequence) ───────────────────────────────
 _DASHA_YEARS: dict[str, float] = {
-    "Ketu": 7, "Venus": 20, "Sun": 6, "Moon": 10, "Mars": 7,
-    "Rahu": 18, "Jupiter": 16, "Saturn": 19, "Mercury": 17,
+    "Ketu": 7,
+    "Venus": 20,
+    "Sun": 6,
+    "Moon": 10,
+    "Mars": 7,
+    "Rahu": 18,
+    "Jupiter": 16,
+    "Saturn": 19,
+    "Mercury": 17,
 }
-_DASHA_ORDER = ["Ketu","Venus","Sun","Moon","Mars","Rahu","Jupiter","Saturn","Mercury"]
+_DASHA_ORDER = [
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
+]
 _TOTAL_YEARS = 120.0
 
 # Nakshatra span = 13.333...° each, total 27 nakshatras
 _NAK_SPAN = 360.0 / 27  # 13.3333...°
 _NAK_NAMES = [
-    "Ashwini","Bharani","Krittika","Rohini","Mrigashira","Ardra","Punarvasu",
-    "Pushya","Ashlesha","Magha","Purva Phalguni","Uttara Phalguni","Hasta",
-    "Chitra","Swati","Vishakha","Anuradha","Jyeshtha","Mula","Purva Ashadha",
-    "Uttara Ashadha","Shravana","Dhanishtha","Shatabhisha","Purva Bhadrapada",
-    "Uttara Bhadrapada","Revati",
+    "Ashwini",
+    "Bharani",
+    "Krittika",
+    "Rohini",
+    "Mrigashira",
+    "Ardra",
+    "Punarvasu",
+    "Pushya",
+    "Ashlesha",
+    "Magha",
+    "Purva Phalguni",
+    "Uttara Phalguni",
+    "Hasta",
+    "Chitra",
+    "Swati",
+    "Vishakha",
+    "Anuradha",
+    "Jyeshtha",
+    "Mula",
+    "Purva Ashadha",
+    "Uttara Ashadha",
+    "Shravana",
+    "Dhanishtha",
+    "Shatabhisha",
+    "Purva Bhadrapada",
+    "Uttara Bhadrapada",
+    "Revati",
 ]
 
 # Nakshatra to star-lord mapping (9-planet sequence repeating)
@@ -41,10 +81,11 @@ _NAK_STAR_LORDS = [_DASHA_ORDER[i % 9] for i in range(27)]
 @dataclass
 class SubLordEntry:
     """One entry in the KP 249 sub-lord table."""
-    star_lord: str          # Nakshatra lord
-    sub_lord: str           # Sub-lord (Vimshottari subdivision)
-    start_lon: float        # Start longitude (0-360°)
-    end_lon: float          # End longitude
+
+    star_lord: str  # Nakshatra lord
+    sub_lord: str  # Sub-lord (Vimshottari subdivision)
+    start_lon: float  # Start longitude (0-360°)
+    end_lon: float  # End longitude
     sub_sub_lord: str = ""  # Optional 3rd level
 
 
@@ -70,17 +111,21 @@ def _build_sublord_table() -> list[SubLordEntry]:
             sub_span = _NAK_SPAN * (sl_years / _TOTAL_YEARS)
 
             start = nak_start + sum(
-                _NAK_SPAN * _DASHA_YEARS[_DASHA_ORDER[(sl_start_idx + i) % 9]] / _TOTAL_YEARS
+                _NAK_SPAN
+                * _DASHA_YEARS[_DASHA_ORDER[(sl_start_idx + i) % 9]]
+                / _TOTAL_YEARS
                 for i in range(sub_idx)
             )
             end = start + sub_span
 
-            table.append(SubLordEntry(
-                star_lord=star_lord,
-                sub_lord=sl_planet,
-                start_lon=round(start, 6),
-                end_lon=round(end, 6),
-            ))
+            table.append(
+                SubLordEntry(
+                    star_lord=star_lord,
+                    sub_lord=sl_planet,
+                    start_lon=round(start, 6),
+                    end_lon=round(end, 6),
+                )
+            )
 
     return table
 
@@ -113,15 +158,16 @@ def get_star_lord(longitude: float) -> str:
 @dataclass
 class KPSignificators:
     """KP significators for a planet or cusp."""
+
     planet: str
     longitude: float
     house_occupied: int
     house_owned: list[int]
     star_lord: str
     sub_lord: str
-    star_lord_house: int       # house occupied by star lord
-    sub_lord_house: int        # house occupied by sub lord
-    signified_houses: set[int] # all houses signified via KP theory
+    star_lord_house: int  # house occupied by star lord
+    sub_lord_house: int  # house occupied by sub lord
+    signified_houses: set[int]  # all houses signified via KP theory
 
 
 def compute_kp_significators(planet: str, longitude: float, chart) -> KPSignificators:
@@ -144,10 +190,23 @@ def compute_kp_significators(planet: str, longitude: float, chart) -> KPSignific
     house_occ = (si - lagna_si) % 12 + 1
 
     # Houses owned
-    _SL = {0:"Mars",1:"Venus",2:"Mercury",3:"Moon",4:"Sun",
-           5:"Mercury",6:"Venus",7:"Mars",8:"Jupiter",
-           9:"Saturn",10:"Saturn",11:"Jupiter"}
-    houses_owned = [h for h in range(1,13) if _SL.get((lagna_si+h-1)%12) == planet]
+    _SL = {
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
+    }
+    houses_owned = [
+        h for h in range(1, 13) if _SL.get((lagna_si + h - 1) % 12) == planet
+    ]
 
     # Star lord and sub lord
     sl_entry = get_sublord(lon)
@@ -163,13 +222,19 @@ def compute_kp_significators(planet: str, longitude: float, chart) -> KPSignific
     sl_house = _planet_house(star_lord)
     sub_house = _planet_house(sub_lord)
 
-    sl_owned = [h for h in range(1,13) if _SL.get((lagna_si+h-1)%12) == star_lord]
-    sub_owned = [h for h in range(1,13) if _SL.get((lagna_si+h-1)%12) == sub_lord]
+    sl_owned = [
+        h for h in range(1, 13) if _SL.get((lagna_si + h - 1) % 12) == star_lord
+    ]
+    sub_owned = [
+        h for h in range(1, 13) if _SL.get((lagna_si + h - 1) % 12) == sub_lord
+    ]
 
     all_houses = set([house_occ] + houses_owned)
-    if sl_house: all_houses.add(sl_house)
+    if sl_house:
+        all_houses.add(sl_house)
     all_houses.update(sl_owned)
-    if sub_house: all_houses.add(sub_house)
+    if sub_house:
+        all_houses.add(sub_house)
     all_houses.update(sub_owned)
 
     return KPSignificators(
@@ -187,6 +252,7 @@ def compute_kp_significators(planet: str, longitude: float, chart) -> KPSignific
 
 # ─── KP Ruling Planets ────────────────────────────────────────────────────────
 
+
 def compute_ruling_planets(chart, query_datetime=None) -> list[str]:
     """
     KP Ruling Planets at moment of judgment.
@@ -200,19 +266,25 @@ def compute_ruling_planets(chart, query_datetime=None) -> list[str]:
     Source: K.S. Krishnamurti Reader Series Vol.4
     """
     lagna_lon = chart.lagna
-    moon_lon  = chart.planets["Moon"].longitude if "Moon" in chart.planets else 0.0
+    moon_lon = chart.planets["Moon"].longitude if "Moon" in chart.planets else 0.0
 
     lagna_sl = get_sublord(lagna_lon)
-    moon_sl  = get_sublord(moon_lon)
+    moon_sl = get_sublord(moon_lon)
 
-    ruling = list(dict.fromkeys([
-        lagna_sl.star_lord, lagna_sl.sub_lord,
-        moon_sl.star_lord, moon_sl.sub_lord,
-    ]))
+    ruling = list(
+        dict.fromkeys(
+            [
+                lagna_sl.star_lord,
+                lagna_sl.sub_lord,
+                moon_sl.star_lord,
+                moon_sl.sub_lord,
+            ]
+        )
+    )
 
     # Add day lord if datetime provided
     if query_datetime is not None:
-        day_lords = ["Sun","Moon","Mars","Mercury","Jupiter","Venus","Saturn"]
+        day_lords = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
         day_lord = day_lords[query_datetime.weekday() % 7]
         if day_lord not in ruling:
             ruling.append(day_lord)

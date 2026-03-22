@@ -20,8 +20,9 @@ API:
 
   results = apply_all_plugins(chart)
 """
+
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Callable
 import functools
 
@@ -47,29 +48,37 @@ class PluginScoreResult:
     description: str
 
 
-def register_yoga(name: str, source: str = "Custom",
-                   score_if_present: float = 1.0):
+def register_yoga(name: str, source: str = "Custom", score_if_present: float = 1.0):
     """Decorator to register a custom yoga detection function."""
+
     def decorator(fn: Callable) -> Callable:
         _YOGA_REGISTRY[name] = {
-            "fn": fn, "source": source,
+            "fn": fn,
+            "source": source,
             "score": score_if_present,
         }
+
         @functools.wraps(fn)
         def wrapper(*args, **kwargs):
             return fn(*args, **kwargs)
+
         return wrapper
+
     return decorator
 
 
 def register_scorer(name: str, description: str = ""):
     """Decorator to register a custom house score modifier."""
+
     def decorator(fn: Callable) -> Callable:
         _SCORER_REGISTRY[name] = {"fn": fn, "description": description}
+
         @functools.wraps(fn)
         def wrapper(*args, **kwargs):
             return fn(*args, **kwargs)
+
         return wrapper
+
     return decorator
 
 
@@ -79,17 +88,25 @@ def apply_all_plugins(chart) -> list[PluginYogaResult]:
     for name, reg in _YOGA_REGISTRY.items():
         try:
             present = reg["fn"](chart)
-            results.append(PluginYogaResult(
-                name=name, source=reg["source"],
-                present=bool(present),
-                score=reg["score"] if present else 0.0,
-                description=f"Plugin yoga: {name}",
-            ))
+            results.append(
+                PluginYogaResult(
+                    name=name,
+                    source=reg["source"],
+                    present=bool(present),
+                    score=reg["score"] if present else 0.0,
+                    description=f"Plugin yoga: {name}",
+                )
+            )
         except Exception as e:
-            results.append(PluginYogaResult(
-                name=name, source=reg["source"], present=False, score=0.0,
-                description=f"Plugin error: {e}",
-            ))
+            results.append(
+                PluginYogaResult(
+                    name=name,
+                    source=reg["source"],
+                    present=False,
+                    score=0.0,
+                    description=f"Plugin error: {e}",
+                )
+            )
     return results
 
 
@@ -100,10 +117,14 @@ def apply_score_plugins(chart, house: int) -> list[PluginScoreResult]:
         try:
             modifier = reg["fn"](chart, house)
             if modifier != 0.0:
-                results.append(PluginScoreResult(
-                    name=name, house=house, modifier=float(modifier),
-                    description=reg["description"],
-                ))
+                results.append(
+                    PluginScoreResult(
+                        name=name,
+                        house=house,
+                        modifier=float(modifier),
+                        description=reg["description"],
+                    )
+                )
         except Exception:
             pass
     return results
@@ -112,7 +133,7 @@ def apply_score_plugins(chart, house: int) -> list[PluginScoreResult]:
 def list_plugins() -> dict:
     """List all registered plugins."""
     return {
-        "yogas":   list(_YOGA_REGISTRY.keys()),
+        "yogas": list(_YOGA_REGISTRY.keys()),
         "scorers": list(_SCORER_REGISTRY.keys()),
     }
 
@@ -132,16 +153,18 @@ def _gajakesari_bvr(chart) -> bool:
     BVR adds: Jupiter must not be combust or debilitated.
     """
     from src.calculations.house_lord import compute_house_map
+
     hmap = compute_house_map(chart)
     ph = hmap.planet_house
     moon_h = ph.get("Moon", 0)
-    jup_h  = ph.get("Jupiter", 0)
+    jup_h = ph.get("Jupiter", 0)
     if moon_h == 0 or jup_h == 0:
         return False
     diff = abs(jup_h - moon_h) % 12
     in_kendra = diff in {0, 3, 6, 9}
     try:
         from src.calculations.dignity import compute_all_dignities
+
         dig = compute_all_dignities(chart).get("Jupiter")
         not_afflicted = not (dig and dig.combust)
     except Exception:

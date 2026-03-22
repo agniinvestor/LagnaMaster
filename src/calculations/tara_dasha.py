@@ -14,31 +14,74 @@ Period lengths: same as Vimshottari (Ketu=7, Venus=20, Sun=6, Moon=10, Mars=7,
 
 Used primarily for timing events related to the body, health, and relationships.
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date, timedelta
 
 _TARA_NAMES = [
-    "Janma","Sampat","Vipat","Kshema","Pratyak","Sadhana","Naidhana","Mitra","Ati-Mitra"
+    "Janma",
+    "Sampat",
+    "Vipat",
+    "Kshema",
+    "Pratyak",
+    "Sadhana",
+    "Naidhana",
+    "Mitra",
+    "Ati-Mitra",
 ]
 _TARA_QUALITY = {
-    "Janma":    "Neutral — identity themes",
-    "Sampat":   "Auspicious — wealth and prosperity",
-    "Vipat":    "Challenging — obstacles and dangers",
-    "Kshema":   "Auspicious — comfort and wellbeing",
-    "Pratyak":  "Mixed — obstruction, requires effort",
-    "Sadhana":  "Auspicious — achievement and success",
+    "Janma": "Neutral — identity themes",
+    "Sampat": "Auspicious — wealth and prosperity",
+    "Vipat": "Challenging — obstacles and dangers",
+    "Kshema": "Auspicious — comfort and wellbeing",
+    "Pratyak": "Mixed — obstruction, requires effort",
+    "Sadhana": "Auspicious — achievement and success",
     "Naidhana": "Challenging — difficulties and endings",
-    "Mitra":    "Auspicious — friendly, supportive",
-    "Ati-Mitra":"Very Auspicious — great support and success",
+    "Mitra": "Auspicious — friendly, supportive",
+    "Ati-Mitra": "Very Auspicious — great support and success",
 }
 
-_VIM_LORDS = ["Ketu","Venus","Sun","Moon","Mars","Rahu","Jupiter","Saturn","Mercury"]
+_VIM_LORDS = [
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
+]
 _VIM_YEARS = [7, 20, 6, 10, 7, 18, 16, 19, 17]
 _NAK_LORDS = [
-    "Ketu","Venus","Sun","Moon","Mars","Rahu","Jupiter","Saturn","Mercury",
-    "Ketu","Venus","Sun","Moon","Mars","Rahu","Jupiter","Saturn","Mercury",
-    "Ketu","Venus","Sun","Moon","Mars","Rahu","Jupiter","Saturn","Mercury",
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
 ]
 
 
@@ -48,7 +91,7 @@ class TaraDashaPeriod:
     years: int
     start_date: date
     end_date: date
-    tara_category: str   # "Janma", "Sampat", etc.
+    tara_category: str  # "Janma", "Sampat", etc.
     tara_quality: str
     nakshatra_number: int  # which nakshatra this falls on (0-26)
 
@@ -84,13 +127,17 @@ def compute_tara_dasha(chart, birth_date: date) -> list[TaraDashaPeriod]:
             nak_offset = (birth_nak + cycle * 9 + i) % 27
             tara_cat = _TARA_NAMES[i]  # simplified — same sequence
 
-            periods.append(TaraDashaPeriod(
-                planet=planet, years=years,
-                start_date=current_date, end_date=end,
-                tara_category=tara_cat,
-                tara_quality=_TARA_QUALITY[tara_cat],
-                nakshatra_number=nak_offset,
-            ))
+            periods.append(
+                TaraDashaPeriod(
+                    planet=planet,
+                    years=years,
+                    start_date=current_date,
+                    end_date=end,
+                    tara_category=tara_cat,
+                    tara_quality=_TARA_QUALITY[tara_cat],
+                    nakshatra_number=nak_offset,
+                )
+            )
             current_date = end
 
     return periods

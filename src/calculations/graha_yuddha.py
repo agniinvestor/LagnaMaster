@@ -26,12 +26,24 @@ class YuddhaResult:
     loser_longitude: float
     winner_longitude: float
     sign: str
-    functional_impact: str   # how this affects the chart
+    functional_impact: str  # how this affects the chart
 
 
 _WAR_PLANETS = {"Mars", "Mercury", "Jupiter", "Venus", "Saturn"}
-_SIGNS = ["Aries","Taurus","Gemini","Cancer","Leo","Virgo",
-          "Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"]
+_SIGNS = [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer",
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio",
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces",
+]
 
 
 def compute_graha_yuddha(chart) -> list[YuddhaResult]:
@@ -58,14 +70,19 @@ def compute_graha_yuddha(chart) -> list[YuddhaResult]:
                 loser, winner = p2, p1
                 loser_lon, winner_lon = pos2.longitude, pos1.longitude
 
-            impact = (f"{loser} loses planetary war to {winner} — "
-                      f"{loser}'s significations and strength severely reduced")
-            wars.append(YuddhaResult(
-                winner=winner, loser=loser,
-                separation_degrees=round(sep, 3),
-                loser_longitude=round(loser_lon, 4),
-                winner_longitude=round(winner_lon, 4),
-                sign=_SIGNS[pos1.sign_index],
-                functional_impact=impact,
-            ))
+            impact = (
+                f"{loser} loses planetary war to {winner} — "
+                f"{loser}'s significations and strength severely reduced"
+            )
+            wars.append(
+                YuddhaResult(
+                    winner=winner,
+                    loser=loser,
+                    separation_degrees=round(sep, 3),
+                    loser_longitude=round(loser_lon, 4),
+                    winner_longitude=round(winner_lon, 4),
+                    sign=_SIGNS[pos1.sign_index],
+                    functional_impact=impact,
+                )
+            )
     return wars

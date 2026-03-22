@@ -14,8 +14,14 @@ Usage:
     # Watch a specific run ID:
     .venv/bin/python3 tools/ci_watch.py --run-id 12345678
 """
+
 from __future__ import annotations
-import argparse, json, re, subprocess, sys, time
+import argparse
+import json
+import re
+import subprocess
+import sys
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -32,7 +38,9 @@ AUTO_FIXES = [
     # Import error — missing module
     (
         r"ModuleNotFoundError: No module named '([^']+)'",
-        lambda m: f".venv/bin/pip install {m.group(1).split('.')[0]} --break-system-packages",
+        lambda m: (
+            f".venv/bin/pip install {m.group(1).split('.')[0]} --break-system-packages"
+        ),
         "Missing Python package",
     ),
     # KeyError in fixture dict
@@ -54,7 +62,16 @@ def gh(*args) -> tuple[str, int]:
 
 
 def get_latest_run_id(branch: str) -> str | None:
-    out, _ = gh("run", "list", "--branch", branch, "--limit", "1", "--json", "databaseId,status,conclusion")
+    out, _ = gh(
+        "run",
+        "list",
+        "--branch",
+        branch,
+        "--limit",
+        "1",
+        "--json",
+        "databaseId,status,conclusion",
+    )
     try:
         runs = json.loads(out)
         if runs:
@@ -98,7 +115,9 @@ def watch(run_id: str | None, auto_fix: bool):
         print()
 
     if not run_id:
-        print("❌ Could not find a CI run. Check https://github.com/agniinvestor/LagnaMaster/actions")
+        print(
+            "❌ Could not find a CI run. Check https://github.com/agniinvestor/LagnaMaster/actions"
+        )
         sys.exit(1)
 
     print(f"Run ID: {run_id}")
@@ -135,11 +154,23 @@ def watch(run_id: str | None, auto_fix: bool):
         lines = log.splitlines()
         for i, line in enumerate(lines):
             stripped = line.strip()
-            if any(k in stripped for k in [
-                "FAILED", "ERROR", "Error", "assert", "AssertionError",
-                "KeyError", "ImportError", "ModuleNotFoundError",
-                "AttributeError", "TypeError", "raise ", "short test summary"
-            ]):
+            if any(
+                k in stripped
+                for k in [
+                    "FAILED",
+                    "ERROR",
+                    "Error",
+                    "assert",
+                    "AssertionError",
+                    "KeyError",
+                    "ImportError",
+                    "ModuleNotFoundError",
+                    "AttributeError",
+                    "TypeError",
+                    "raise ",
+                    "short test summary",
+                ]
+            ):
                 # Include a few lines of context
                 start = max(0, i - 1)
                 end = min(len(lines), i + 4)
@@ -149,10 +180,10 @@ def watch(run_id: str | None, auto_fix: bool):
         # Deduplicate while preserving order
         seen = set()
         deduped = []
-        for l in useful:
-            if l not in seen:
-                seen.add(l)
-                deduped.append(l)
+        for line_ in useful:
+            if line_ not in seen:
+                seen.add(line_)
+                deduped.append(line_)
 
         print("─" * 70)
         print("\n".join(deduped[:120]))  # cap at 120 lines
@@ -187,7 +218,9 @@ def attempt_auto_fix(log: str):
         elif fix is None:
             # Pattern-specific custom logic
             if "missing hour" in description:
-                print("  Running: tools/adb_xml_importer.py --overwrite to regenerate fixtures")
+                print(
+                    "  Running: tools/adb_xml_importer.py --overwrite to regenerate fixtures"
+                )
                 out, code = run(
                     f"cd {ROOT} && .venv/bin/python3 tools/adb_xml_importer.py "
                     f"adb_sample/c_sample.xml --overwrite 2>&1 | tail -10"
@@ -202,7 +235,9 @@ def attempt_auto_fix(log: str):
     if fixed_any:
         print()
         print("Fixes applied. Now:")
-        print("  ulimit -n 4096 && PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=short 2>&1 | tail -5")
+        print(
+            "  ulimit -n 4096 && PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=short 2>&1 | tail -5"
+        )
         print("  git add -A && git commit -m 'fix: CI auto-fix' && git push")
     else:
         print("  No auto-fixable patterns found. Review the log above manually.")
@@ -211,6 +246,8 @@ def attempt_auto_fix(log: str):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Watch GitHub Actions CI")
     parser.add_argument("--run-id", help="Specific run ID to watch")
-    parser.add_argument("--fix", action="store_true", help="Attempt auto-fix on failure")
+    parser.add_argument(
+        "--fix", action="store_true", help="Attempt auto-fix on failure"
+    )
     args = parser.parse_args()
     watch(args.run_id, args.fix)

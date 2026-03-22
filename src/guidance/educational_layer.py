@@ -5,8 +5,10 @@ src/guidance/educational_layer.py — Session 87
 Connected to rule_interaction.py and narrative.py.
 Never shows raw scores — shows causes and classical reasoning.
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
+
 
 @dataclass
 class EducationalExplanation:
@@ -86,13 +88,13 @@ def available_topics() -> list[str]:
 def get_educational_content(domain: str) -> list[EducationalExplanation]:
     """Return relevant educational explanations for a given domain."""
     domain_topics = {
-        "career":          ["dasha_activation", "upachaya", "varga_agreement"],
-        "marriage":        ["benefic_aspect", "varga_agreement", "dasha_activation"],
-        "wealth":          ["upachaya", "benefic_aspect", "dasha_activation"],
-        "health_longevity":["benefic_aspect", "dasha_activation"],
+        "career": ["dasha_activation", "upachaya", "varga_agreement"],
+        "marriage": ["benefic_aspect", "varga_agreement", "dasha_activation"],
+        "wealth": ["upachaya", "benefic_aspect", "dasha_activation"],
+        "health_longevity": ["benefic_aspect", "dasha_activation"],
         "mind_psychology": ["benefic_aspect", "dasha_activation"],
-        "spirituality":    ["Jupiter_kendra", "varga_agreement"],
-        "default":         ["dasha_activation", "benefic_aspect"],
+        "spirituality": ["Jupiter_kendra", "varga_agreement"],
+        "default": ["dasha_activation", "benefic_aspect"],
     }
     topics = domain_topics.get(domain, domain_topics["default"])
     return [e for t in topics if (e := _EXPLANATIONS.get(t))]

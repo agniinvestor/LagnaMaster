@@ -9,19 +9,29 @@ Sources:
   PVRNR · BPHS Ch.46 v.1-5 (conditional dasha activation)
   Gayatri Devi Vasudev · The Art of Prediction in Astrology Ch.4 (triple concordance)
 """
+
 from __future__ import annotations
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import date
 from typing import Optional
 
 # ─── Conditional Dasha Applicability ─────────────────────────────────────────
 
-_KENDRA  = {1, 4, 7, 10}
+_KENDRA = {1, 4, 7, 10}
 _TRIKONA = {1, 5, 9}
 _SIGN_LORDS = {
-    0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun",
-    5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter",
-    9: "Saturn", 10: "Saturn", 11: "Jupiter",
+    0: "Mars",
+    1: "Venus",
+    2: "Mercury",
+    3: "Moon",
+    4: "Sun",
+    5: "Mercury",
+    6: "Venus",
+    7: "Mars",
+    8: "Jupiter",
+    9: "Saturn",
+    10: "Saturn",
+    11: "Jupiter",
 }
 
 
@@ -64,22 +74,25 @@ def compute_applicable_dashas(chart) -> dict:
         "primary_dasha": primary,
         "secondary_dashas": secondary,
         "all_applicable": applicable,
-        "note": "Ashtottari applicable" if "ashtottari" in applicable else "Vimshottari is primary; Ashtottari not applicable (Rahu in Kendra/Trikona)",
+        "note": "Ashtottari applicable"
+        if "ashtottari" in applicable
+        else "Vimshottari is primary; Ashtottari not applicable (Rahu in Kendra/Trikona)",
     }
 
 
 # ─── Yoga Activation Timeline ─────────────────────────────────────────────────
+
 
 @dataclass
 class YogaActivationWindow:
     yoga_name: str
     forming_planets: list[str]
     strength_label: str
-    earliest_activation: Optional[date]    # first dasha window
-    latest_activation: Optional[date]      # last dasha window in reasonable range
-    dasha_windows: list[dict]              # list of {md_lord, ad_lord, start, end}
-    transit_trigger: Optional[str]         # "Jupiter transiting H9" etc.
-    confidence: str                        # "High" / "Moderate" / "Low"
+    earliest_activation: Optional[date]  # first dasha window
+    latest_activation: Optional[date]  # last dasha window in reasonable range
+    dasha_windows: list[dict]  # list of {md_lord, ad_lord, start, end}
+    transit_trigger: Optional[str]  # "Jupiter transiting H9" etc.
+    confidence: str  # "High" / "Moderate" / "Low"
     note: str
 
 
@@ -102,10 +115,15 @@ def compute_yoga_activation_windows(
     """
     if not forming_planets or not mahadashas:
         return YogaActivationWindow(
-            yoga_name=yoga_name, forming_planets=forming_planets,
-            strength_label="Unknown", earliest_activation=None,
-            latest_activation=None, dasha_windows=[], transit_trigger=None,
-            confidence="Low", note="Insufficient data",
+            yoga_name=yoga_name,
+            forming_planets=forming_planets,
+            strength_label="Unknown",
+            earliest_activation=None,
+            latest_activation=None,
+            dasha_windows=[],
+            transit_trigger=None,
+            confidence="Low",
+            note="Insufficient data",
         )
 
     dasha_windows = []
@@ -114,37 +132,41 @@ def compute_yoga_activation_windows(
     today = date.today()
 
     for md in mahadashas:
-        if not hasattr(md, 'lord') or not hasattr(md, 'start'):
+        if not hasattr(md, "lord") or not hasattr(md, "start"):
             continue
 
         # Check if MD lord is one of the yoga-forming planets
         if md.lord in forming_planets:
             if md.end.year > today.year and md.start.year <= query_until_year:
-                dasha_windows.append({
-                    "md_lord": md.lord,
-                    "type": "MD",
-                    "start": str(md.start),
-                    "end": str(md.end),
-                    "activation_strength": "Primary",
-                })
+                dasha_windows.append(
+                    {
+                        "md_lord": md.lord,
+                        "type": "MD",
+                        "start": str(md.start),
+                        "end": str(md.end),
+                        "activation_strength": "Primary",
+                    }
+                )
                 if earliest is None or md.start < earliest:
                     earliest = md.start if md.start > today else today
                 if latest is None or md.end > latest:
                     latest = md.end
 
         # Check antardasha level
-        if hasattr(md, 'antardashas'):
+        if hasattr(md, "antardashas"):
             for ad in md.antardashas:
-                if hasattr(ad, 'lord') and ad.lord in forming_planets:
+                if hasattr(ad, "lord") and ad.lord in forming_planets:
                     if ad.end > today and ad.start.year <= query_until_year:
-                        dasha_windows.append({
-                            "md_lord": md.lord,
-                            "ad_lord": ad.lord,
-                            "type": "AD",
-                            "start": str(ad.start),
-                            "end": str(ad.end),
-                            "activation_strength": "Secondary",
-                        })
+                        dasha_windows.append(
+                            {
+                                "md_lord": md.lord,
+                                "ad_lord": ad.lord,
+                                "type": "AD",
+                                "start": str(ad.start),
+                                "end": str(ad.end),
+                                "activation_strength": "Secondary",
+                            }
+                        )
                         if earliest is None or ad.start < earliest:
                             earliest = ad.start if ad.start > today else today
 
@@ -159,7 +181,9 @@ def compute_yoga_activation_windows(
     # Transit trigger: which Jupiter or Saturn transit will confirm
     transit_trigger = None
     if forming_planets:
-        transit_trigger = f"Jupiter transiting house of {forming_planets[0]} or its 5th/9th aspect"
+        transit_trigger = (
+            f"Jupiter transiting house of {forming_planets[0]} or its 5th/9th aspect"
+        )
 
     note = f"Yoga activates in dashas of: {', '.join(forming_planets)}. "
     if earliest:
@@ -180,41 +204,44 @@ def compute_yoga_activation_windows(
 
 # ─── Triple Chart Concordance ─────────────────────────────────────────────────
 
+
 @dataclass
 class TripleConcordanceResult:
-    domain: str                   # "career" / "wealth" / "relationship" / etc.
-    d1_indication: str            # "Strong" / "Moderate" / "Weak"
+    domain: str  # "career" / "wealth" / "relationship" / etc.
+    d1_indication: str  # "Strong" / "Moderate" / "Weak"
     d9_indication: str
     domain_varga_indication: str  # D10 for career, D2 for wealth, etc.
-    concordance: str              # "Triple" / "Double" / "Single" / "None"
-    confidence: str               # "Certain" / "Likely" / "Possible" / "Uncertain"
+    concordance: str  # "Triple" / "Double" / "Single" / "None"
+    confidence: str  # "Certain" / "Likely" / "Possible" / "Uncertain"
     domain_varga_used: str
 
 
 _DOMAIN_VARGAS = {
-    "career":       10,
-    "wealth":       2,
-    "children":     7,
-    "property":     4,
-    "vehicle":      16,
-    "education":    24,
+    "career": 10,
+    "wealth": 2,
+    "children": 7,
+    "property": 4,
+    "vehicle": 16,
+    "education": 24,
     "spirituality": 20,
-    "disease":      30,
-    "destiny":      60,
+    "disease": 30,
+    "destiny": 60,
 }
 
 _DOMAIN_HOUSES = {
-    "career":       [10, 6, 2],
-    "wealth":       [2, 11, 5],
-    "children":     [5, 9],
-    "property":     [4],
+    "career": [10, 6, 2],
+    "wealth": [2, 11, 5],
+    "children": [5, 9],
+    "property": [4],
     "relationship": [7, 1],
     "spirituality": [9, 12, 8],
-    "education":    [4, 5, 9],
+    "education": [4, 5, 9],
 }
 
 
-def compute_triple_concordance(domain: str, chart, vargas_chart: dict = None) -> TripleConcordanceResult:
+def compute_triple_concordance(
+    domain: str, chart, vargas_chart: dict = None
+) -> TripleConcordanceResult:
     """
     Check if a domain theme is confirmed across D1, D9, and domain varga.
     Source: Gayatri Devi Vasudev · Art of Prediction Ch.4
@@ -223,11 +250,21 @@ def compute_triple_concordance(domain: str, chart, vargas_chart: dict = None) ->
     houses = _DOMAIN_HOUSES.get(domain, [10])
 
     # D1 indication: is the relevant house lord well-placed?
-    from src.calculations.dignity import compute_dignity, DignityLevel
+    from src.calculations.dignity import compute_dignity
+
     _SIGN_LORDS_LOCAL = {
-        0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun",
-        5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter",
-        9: "Saturn", 10: "Saturn", 11: "Jupiter",
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
     }
 
     def house_strength(h: int, ref_chart) -> str:
@@ -236,7 +273,12 @@ def compute_triple_concordance(domain: str, chart, vargas_chart: dict = None) ->
         if lord not in ref_chart.planets:
             return "Unknown"
         d = compute_dignity(lord, ref_chart)
-        if d.dignity.value in ("Deep Exaltation", "Exaltation", "Mooltrikona", "Own Sign"):
+        if d.dignity.value in (
+            "Deep Exaltation",
+            "Exaltation",
+            "Mooltrikona",
+            "Own Sign",
+        ):
             return "Strong"
         elif d.dignity.value in ("Friendly Sign", "Neutral"):
             return "Moderate"
@@ -248,6 +290,7 @@ def compute_triple_concordance(domain: str, chart, vargas_chart: dict = None) ->
     d9_str = "Unknown"
     try:
         from src.calculations.vargas import compute_varga_sign
+
         # Build pseudo D9 chart from main chart
         class _PseudoChart:
             def __init__(self):
@@ -255,16 +298,19 @@ def compute_triple_concordance(domain: str, chart, vargas_chart: dict = None) ->
                 self.lagna_sign_index = compute_varga_sign(chart.lagna, 9)
                 self.planets = {}
                 for p, pd in chart.planets.items():
+
                     class _PP:
                         pass
+
                     pp = _PP()
                     pp.sign_index = compute_varga_sign(pd.longitude, 9)
                     pp.degree_in_sign = 0.0
                     pp.longitude = pp.sign_index * 30.0
                     pp.is_retrograde = pd.is_retrograde
-                    pp.speed = getattr(pd, 'speed', 1.0)
-                    pp.latitude = getattr(pd, 'latitude', 0.0)
+                    pp.speed = getattr(pd, "speed", 1.0)
+                    pp.latitude = getattr(pd, "latitude", 0.0)
                     self.planets[p] = pp
+
         d9_chart = _PseudoChart()
         d9_str = house_strength(houses[0], d9_chart)
     except Exception:

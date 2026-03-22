@@ -14,29 +14,70 @@ Public API
   kp_ruling_planets(chart, on_date) -> list[str]
   kp_event_promise(chart, house, on_date) -> KPPromise
 """
+
 from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import date
 
 # Vimshottari sequence for sub-lord calculation
-_VIM_SEQ = ["Ketu","Venus","Sun","Moon","Mars","Rahu",
-            "Jupiter","Saturn","Mercury"]
-_VIM_YEARS = {"Ketu":7,"Venus":20,"Sun":6,"Moon":10,"Mars":7,
-              "Rahu":18,"Jupiter":16,"Saturn":19,"Mercury":17}
+_VIM_SEQ = [
+    "Ketu",
+    "Venus",
+    "Sun",
+    "Moon",
+    "Mars",
+    "Rahu",
+    "Jupiter",
+    "Saturn",
+    "Mercury",
+]
+_VIM_YEARS = {
+    "Ketu": 7,
+    "Venus": 20,
+    "Sun": 6,
+    "Moon": 10,
+    "Mars": 7,
+    "Rahu": 18,
+    "Jupiter": 16,
+    "Saturn": 19,
+    "Mercury": 17,
+}
 
 # Each nakshatra = 13°20' = 800'/60 degrees
-_NAK_SPAN = 360 / 27          # 13.3333°
+_NAK_SPAN = 360 / 27  # 13.3333°
 _SUB_SPAN_DEG = {p: _NAK_SPAN * y / 120 for p, y in _VIM_YEARS.items()}
 
 
 def _sub_at(longitude: float) -> tuple[str, str, str, str]:
     """Return (sign_lord, nak_lord, sub_lord, sub_sub_lord) for any longitude."""
-    _SIGN_LORD = {0:"Mars",1:"Venus",2:"Mercury",3:"Moon",4:"Sun",5:"Mercury",
-                  6:"Venus",7:"Mars",8:"Jupiter",9:"Saturn",10:"Saturn",11:"Jupiter"}
-    _NAK_LORD  = ["Ketu","Venus","Sun","Moon","Mars","Rahu","Jupiter","Saturn","Mercury"] * 3
+    _SIGN_LORD = {
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
+    }
+    _NAK_LORD = [
+        "Ketu",
+        "Venus",
+        "Sun",
+        "Moon",
+        "Mars",
+        "Rahu",
+        "Jupiter",
+        "Saturn",
+        "Mercury",
+    ] * 3
 
     lon = longitude % 360
-    si  = int(lon / 30)
+    si = int(lon / 30)
     sign_lord = _SIGN_LORD[si]
 
     nak_idx = int(lon / _NAK_SPAN) % 27
@@ -87,8 +128,13 @@ class KPChain:
 
 def kp_sub_lord_chain(longitude: float) -> KPChain:
     sl, nl, sub, ss = _sub_at(longitude)
-    return KPChain(longitude=round(longitude % 360, 4),
-                   sign_lord=sl, nak_lord=nl, sub_lord=sub, sub_sub_lord=ss)
+    return KPChain(
+        longitude=round(longitude % 360, 4),
+        sign_lord=sl,
+        nak_lord=nl,
+        sub_lord=sub,
+        sub_sub_lord=ss,
+    )
 
 
 @dataclass
@@ -113,10 +159,16 @@ def compute_kp_cusps(chart) -> list[KPCusp]:
     for h in range(1, 13):
         cusp_lon = (lagna_lon + (h - 1) * 30) % 360
         sl, nl, sub, ss = _sub_at(cusp_lon)
-        cusps.append(KPCusp(
-            house=h, longitude=round(cusp_lon, 4),
-            sign_lord=sl, nak_lord=nl, sub_lord=sub, sub_sub_lord=ss,
-        ))
+        cusps.append(
+            KPCusp(
+                house=h,
+                longitude=round(cusp_lon, 4),
+                sign_lord=sl,
+                nak_lord=nl,
+                sub_lord=sub,
+                sub_sub_lord=ss,
+            )
+        )
     return cusps
 
 
@@ -139,8 +191,15 @@ def kp_ruling_planets(chart, on_date: date | None = None) -> list[str]:
     rps.update([mchain.sign_lord, mchain.nak_lord, mchain.sub_lord])
 
     # Day lord (weekday)
-    _DAY_LORD = {0:"Moon",1:"Mars",2:"Mercury",3:"Jupiter",
-                 4:"Venus",5:"Saturn",6:"Sun"}
+    _DAY_LORD = {
+        0: "Moon",
+        1: "Mars",
+        2: "Mercury",
+        3: "Jupiter",
+        4: "Venus",
+        5: "Saturn",
+        6: "Sun",
+    }
     rps.add(_DAY_LORD[on_date.weekday()])
 
     return sorted(rps)
@@ -152,7 +211,7 @@ class KPPromise:
     sub_lord: str
     signifies_house: bool
     ruling_planets: list[str]
-    promise_level: str   # "Strong"/"Moderate"/"Weak"
+    promise_level: str  # "Strong"/"Moderate"/"Weak"
     reason: str
 
 
@@ -168,13 +227,14 @@ def kp_event_promise(chart, house: int, on_date: date | None = None) -> KPPromis
     rps = kp_ruling_planets(chart, on_date)
 
     from src.calculations.house_lord import compute_house_map
+
     hmap = compute_house_map(chart)
 
     sub = cusp.sub_lord
     sub_house = hmap.planet_house.get(sub, 0)
-    sub_owns = [h for h in range(1, 13) if hmap.house_lord[h-1] == sub]
+    sub_owns = [h for h in range(1, 13) if hmap.house_lord[h - 1] == sub]
 
-    signifies = (sub_house == house or house in sub_owns)
+    signifies = sub_house == house or house in sub_owns
     in_rp = sub in rps
 
     if signifies and in_rp:
@@ -187,5 +247,11 @@ def kp_event_promise(chart, house: int, on_date: date | None = None) -> KPPromis
         level = "Weak"
         reason = f"Sub-lord {sub} does not directly signify H{house}"
 
-    return KPPromise(house=house, sub_lord=sub, signifies_house=signifies,
-                     ruling_planets=rps, promise_level=level, reason=reason)
+    return KPPromise(
+        house=house,
+        sub_lord=sub,
+        signifies_house=signifies,
+        ruling_planets=rps,
+        promise_level=level,
+        reason=reason,
+    )

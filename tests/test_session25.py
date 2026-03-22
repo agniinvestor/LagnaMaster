@@ -1,4 +1,5 @@
 """tests/test_session25.py — Session 25 Next.js frontend structure tests."""
+
 from __future__ import annotations
 from pathlib import Path
 import pytest
@@ -40,6 +41,7 @@ class TestPackageJson:
     @pytest.fixture(scope="class")
     def pkg(self):
         import json
+
         return json.loads((FE / "package.json").read_text())
 
     def test_name(self, pkg):

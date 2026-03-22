@@ -14,20 +14,36 @@ from dataclasses import dataclass
 @dataclass
 class BhavaBalaResult:
     house: int
-    bhavadhipati_bala: float   # lord's Shadbala total
-    dig_bala: float            # house's directional strength
-    drishti_bala: float        # net benefic/malefic aspects on house cusp
+    bhavadhipati_bala: float  # lord's Shadbala total
+    dig_bala: float  # house's directional strength
+    drishti_bala: float  # net benefic/malefic aspects on house cusp
     total: float
-    strength: str              # "Strong" / "Moderate" / "Weak"
+    strength: str  # "Strong" / "Moderate" / "Weak"
 
 
-def compute_bhava_bala(house_num: int, chart, shadbala_results: dict) -> BhavaBalaResult:
+def compute_bhava_bala(
+    house_num: int, chart, shadbala_results: dict
+) -> BhavaBalaResult:
     """
     Bhava Bala for a single house.
     Source: BPHS Ch.27 v.32-41
     """
     from src.calculations.house_lord import compute_house_map
-    _SIGN_LORDS_BB = {0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun", 5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter", 9: "Saturn", 10: "Saturn", 11: "Jupiter"}
+
+    _SIGN_LORDS_BB = {
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
+    }
 
     lagna_si = chart.lagna_sign_index
     hmap = compute_house_map(chart)
@@ -51,7 +67,7 @@ def compute_bhava_bala(house_num: int, chart, shadbala_results: dict) -> BhavaBa
     # Drishti Bala: sum of benefic aspects on house cusp - malefic aspects
     house_cusp_sign = house_sign  # noqa: F841
     natural_benefics = {"Moon", "Mercury", "Jupiter", "Venus"}
-    natural_malefics  = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+    natural_malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
     from src.calculations.scoring_patches import get_aspect_strength, aspect_hits
 

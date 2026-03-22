@@ -22,13 +22,14 @@ from typing import Optional
 # All unspecified planet-house pairs = 1.0 (full strength)
 
 ASPECT_STRENGTH: dict[tuple[str, int], float] = {
-    ("Mars",    4): 0.75,
-    ("Mars",    8): 0.75,
+    ("Mars", 4): 0.75,
+    ("Mars", 8): 0.75,
     ("Jupiter", 5): 0.75,
     ("Jupiter", 9): 0.75,
-    ("Saturn",  3): 0.75,
+    ("Saturn", 3): 0.75,
     ("Saturn", 10): 0.75,
 }
+
 
 def get_aspect_strength(aspector: str, houses_away: int) -> float:
     """
@@ -47,6 +48,7 @@ def aspect_hits(aspector_house: int, target_house: int) -> int:
 
 # ─── Score gradient ───────────────────────────────────────────────────────────
 
+
 def display_score(raw_score: float) -> float:
     """
     Smooth compression of raw score to display range.
@@ -57,22 +59,27 @@ def display_score(raw_score: float) -> float:
 
 
 def score_rating(display: float) -> str:
-    if display >= 6.0:  return "Excellent"
-    if display >= 3.0:  return "Strong"
-    if display >= 0.0:  return "Moderate"
-    if display >= -3.0: return "Weak"
+    if display >= 6.0:
+        return "Excellent"
+    if display >= 3.0:
+        return "Strong"
+    if display >= 0.0:
+        return "Moderate"
+    if display >= -3.0:
+        return "Weak"
     return "Very Weak"
 
 
 # ─── Kemadruma Yoga (corrected) ──────────────────────────────────────────────
 # Source: Phaladeepika Ch.6 v.56-60; PVRNR Astrology of the Seers Ch.8
 
+
 @dataclass
 class KemadrumaResult:
     is_kemadruma: bool
-    condition1_no_adjacent: bool      # no planets in 2nd/12th from Moon
-    condition2_no_kendra_moon: bool   # no planets in Kendra from Moon
-    condition3_no_benefic_aspect: bool # Moon not aspected by benefic
+    condition1_no_adjacent: bool  # no planets in 2nd/12th from Moon
+    condition2_no_kendra_moon: bool  # no planets in Kendra from Moon
+    condition3_no_benefic_aspect: bool  # Moon not aspected by benefic
     # Cancellation flags
     cancel_moon_kendra_lagna: bool
     cancel_benefic_aspect_or_conjunct: bool
@@ -97,15 +104,15 @@ def check_kemadruma(chart) -> KemadrumaResult:
     # ── Condition 1: No planets in 2nd or 12th from Moon ──
     adjacent_signs = {(moon_si + 1) % 12, (moon_si - 1) % 12}
     cond1 = not any(
-        chart.planets[p].sign_index in adjacent_signs
-        for p in planets_7 if p != "Moon"
+        chart.planets[p].sign_index in adjacent_signs for p in planets_7 if p != "Moon"
     )
 
     # ── Condition 2: No planets in Kendra (1/4/7/10) from Moon ──
     kendra_from_moon = {(moon_si + k) % 12 for k in (0, 3, 6, 9)}
     cond2 = not any(
         chart.planets[p].sign_index in kendra_from_moon
-        for p in planets_7 if p != "Moon"
+        for p in planets_7
+        if p != "Moon"
     )
 
     # ── Condition 3: Moon not aspected by any benefic ──
@@ -138,12 +145,25 @@ def check_kemadruma(chart) -> KemadrumaResult:
     cancel3 = moon_si in (1, 3)
 
     # ── Cancellation 4: Lagna lord conjoined Moon ──
-    _SIGN_LORDS_SP = {0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun", 5: "Mercury", 6: "Venus", 7: "Mars", 8: "Jupiter", 9: "Saturn", 10: "Saturn", 11: "Jupiter"}
+    _SIGN_LORDS_SP = {
+        0: "Mars",
+        1: "Venus",
+        2: "Mercury",
+        3: "Moon",
+        4: "Sun",
+        5: "Mercury",
+        6: "Venus",
+        7: "Mars",
+        8: "Jupiter",
+        9: "Saturn",
+        10: "Saturn",
+        11: "Jupiter",
+    }
     lagna_lord = _SIGN_LORDS_SP.get(lagna_si)
     cancel4 = (
-        lagna_lord is not None and
-        lagna_lord in chart.planets and
-        chart.planets[lagna_lord].sign_index == moon_si
+        lagna_lord is not None
+        and lagna_lord in chart.planets
+        and chart.planets[lagna_lord].sign_index == moon_si
     )
 
     any_cancel = cancel1 or cancel2 or cancel3 or cancel4
@@ -164,18 +184,21 @@ def check_kemadruma(chart) -> KemadrumaResult:
 # ─── Raj Yoga (corrected — adds exchange and aspect forms) ──────────────────
 # Source: BPHS Ch.36 v.1-15
 
+
 @dataclass
 class RajYogaResult:
     present: bool
-    strength: str            # "Strong" / "Moderate" / "Weak"
+    strength: str  # "Strong" / "Moderate" / "Weak"
     kendra_lord: str
     trikona_lord: str
-    formation_type: str      # "conjunction" / "exchange" / "aspect"
+    formation_type: str  # "conjunction" / "exchange" / "aspect"
     is_cancelled: bool
     cancel_reason: str
 
 
-def check_raj_yoga_pair(kendra_lord: str, trikona_lord: str, chart) -> Optional[RajYogaResult]:
+def check_raj_yoga_pair(
+    kendra_lord: str, trikona_lord: str, chart
+) -> Optional[RajYogaResult]:
     """
     Check Raj Yoga between a specific Kendra lord and Trikona lord.
     Returns None if no yoga, RajYogaResult if found.
@@ -196,7 +219,6 @@ def check_raj_yoga_pair(kendra_lord: str, trikona_lord: str, chart) -> Optional[
         formation = "conjunction"
     else:
         # Check Parivartana (mutual sign exchange)
-        from src.calculations.house_lord import SIGN_LORDS
         k_rules = _owns_sign(kendra_lord, t_si)
         t_rules = _owns_sign(trikona_lord, k_si)
         if k_rules and t_rules:
@@ -218,6 +240,7 @@ def check_raj_yoga_pair(kendra_lord: str, trikona_lord: str, chart) -> Optional[
     # Combust check
     for lord in (kendra_lord, trikona_lord):
         from src.calculations.dignity import compute_dignity
+
         d = compute_dignity(lord, chart)
         if d.combust and not d.cazimi:
             is_cancelled = True
@@ -260,14 +283,15 @@ def detect_raj_yogas(chart) -> list[RajYogaResult]:
     Source: BPHS Ch.36 v.1-15
     """
     from src.calculations.house_lord import compute_house_map, SIGN_LORDS
+
     hmap = compute_house_map(chart)  # noqa: F841
     lagna_si = chart.lagna_sign_index
 
-    kendras   = [1, 4, 7, 10]
-    trikonas  = [1, 5, 9]
+    kendras = [1, 4, 7, 10]
+    trikonas = [1, 5, 9]
     dusthanas = [6, 8, 12]
 
-    kendra_lords  = set()
+    kendra_lords = set()
     trikona_lords = set()
 
     for h in kendras:
@@ -294,10 +318,12 @@ def detect_raj_yogas(chart) -> list[RajYogaResult]:
 
             # Skip if either lord also rules a dusthana (standard Parashari rule)
             # Exception: H1 is both Kendra and Trikona — always included
-            kl_houses = [h for h in range(1, 13)
-                         if SIGN_LORDS.get((lagna_si + h - 1) % 12) == kl]
-            tl_houses = [h for h in range(1, 13)
-                         if SIGN_LORDS.get((lagna_si + h - 1) % 12) == tl]
+            kl_houses = [
+                h for h in range(1, 13) if SIGN_LORDS.get((lagna_si + h - 1) % 12) == kl
+            ]
+            tl_houses = [
+                h for h in range(1, 13) if SIGN_LORDS.get((lagna_si + h - 1) % 12) == tl
+            ]
 
             kl_dusthana = any(h in dusthanas for h in kl_houses)
             tl_dusthana = any(h in dusthanas for h in tl_houses)
@@ -321,4 +347,5 @@ def detect_raj_yogas(chart) -> list[RajYogaResult]:
 def _owns_sign(planet: str, sign_index: int) -> bool:
     """Check if planet rules this sign."""
     from src.calculations.dignity import OWN_SIGNS
+
     return sign_index in OWN_SIGNS.get(planet, [])

@@ -19,18 +19,18 @@ from enum import Enum
 # ─── Karaka names and order (by descending degree in sign) ───────────────────
 
 KARAKA_NAMES_7 = [
-    "AtmaKaraka",       # AK  — soul, self
-    "AmatyaKaraka",     # AmK — career, counsel
-    "BhratriKaraka",    # BK  — siblings, courage
-    "MatriKaraka",      # MK  — mother, mind
-    "PutraKaraka",      # PiK — children, intelligence
-    "GnatiKaraka",      # GK  — obstacles, disease
-    "DaraKaraka",       # DK  — spouse, partnerships
+    "AtmaKaraka",  # AK  — soul, self
+    "AmatyaKaraka",  # AmK — career, counsel
+    "BhratriKaraka",  # BK  — siblings, courage
+    "MatriKaraka",  # MK  — mother, mind
+    "PutraKaraka",  # PiK — children, intelligence
+    "GnatiKaraka",  # GK  — obstacles, disease
+    "DaraKaraka",  # DK  — spouse, partnerships
 ]
 
 KARAKA_NAMES_8 = KARAKA_NAMES_7[:-1] + [
-    "PitraKaraka",      # PK  — father (8-karaka system only)
-    "DaraKaraka",       # DK  — spouse (shifted to 8th position)
+    "PitraKaraka",  # PK  — father (8-karaka system only)
+    "DaraKaraka",  # DK  — spouse (shifted to 8th position)
 ]
 
 # 7-karaka: Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn
@@ -40,17 +40,17 @@ PLANETS_8 = PLANETS_7 + ["Rahu"]
 
 
 class KarakaSystem(str, Enum):
-    SEVEN  = "7"   # Standard Parashari/Jaimini — 7 planets
-    EIGHT  = "8"   # BPHS Ch.32 variant — includes Rahu as Pitru Karaka
+    SEVEN = "7"  # Standard Parashari/Jaimini — 7 planets
+    EIGHT = "8"  # BPHS Ch.32 variant — includes Rahu as Pitru Karaka
 
 
 @dataclass
 class CharaKarakaResult:
-    system: str                      # "7" or "8"
-    assignments: dict[str, str]      # {karaka_name: planet_name}
-    degrees: dict[str, float]        # {planet: degree_in_sign used for ranking}
-    atma_karaka: str                 # Convenience — the AK planet
-    dara_karaka: str                 # Convenience — the DK planet
+    system: str  # "7" or "8"
+    assignments: dict[str, str]  # {karaka_name: planet_name}
+    degrees: dict[str, float]  # {planet: degree_in_sign used for ranking}
+    atma_karaka: str  # Convenience — the AK planet
+    dara_karaka: str  # Convenience — the DK planet
 
     @property
     def atmakaraka(self) -> str:
@@ -68,7 +68,7 @@ def _degree_for_ranking(planet: str, chart) -> float:
         return 0.0
     deg = chart.planets[planet].degree_in_sign % 30
     if planet == "Rahu":
-        return 30.0 - deg   # Rahu's effective degree for ranking
+        return 30.0 - deg  # Rahu's effective degree for ranking
     return deg
 
 
@@ -118,6 +118,7 @@ def compute_chara_karakas(
 
 # ─── Karakamsha ───────────────────────────────────────────────────────────────
 
+
 def compute_karakamsha(chart, chara_result: CharaKarakaResult) -> int:
     """
     Karakamsha Lagna: the D9 (navamsha) sign of the Atma Karaka.
@@ -130,6 +131,7 @@ def compute_karakamsha(chart, chara_result: CharaKarakaResult) -> int:
     ak_lon = chart.planets[ak].longitude
     try:
         from src.calculations.vargas import compute_varga_sign
+
         return compute_varga_sign(ak_lon, 9)
     except Exception:
         # Fallback
@@ -140,6 +142,7 @@ def compute_karakamsha(chart, chara_result: CharaKarakaResult) -> int:
 
 
 # ─── Swamsha ─────────────────────────────────────────────────────────────────
+
 
 def is_swamsha(chart, chara_result: CharaKarakaResult) -> bool:
     """
@@ -154,11 +157,13 @@ def is_swamsha(chart, chara_result: CharaKarakaResult) -> bool:
     ak_lon = chart.planets[ak].longitude
     try:
         from src.calculations.vargas import compute_varga_sign
+
         d9_si = compute_varga_sign(ak_lon, 9)
     except Exception:
         return False
 
     from src.calculations.dignity import EXALT_SIGN, OWN_SIGNS
+
     if d9_si in OWN_SIGNS.get(ak, []):
         return True
     if d9_si == EXALT_SIGN.get(ak):

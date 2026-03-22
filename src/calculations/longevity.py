@@ -16,25 +16,50 @@ Public API
   longevity_range(chart)   -> LongevityResult
   detect_balarishta(chart) -> list[str]
 """
+
 from __future__ import annotations
 from dataclasses import dataclass
 
 # Pindayu: years contributed by each planet at full exaltation
 _PINDAYU_MAX = {
-    "Sun":19,"Moon":25,"Mars":15,"Mercury":12,
-    "Jupiter":15,"Venus":21,"Saturn":20,
+    "Sun": 19,
+    "Moon": 25,
+    "Mars": 15,
+    "Mercury": 12,
+    "Jupiter": 15,
+    "Venus": 21,
+    "Saturn": 20,
 }
 
 # Nisargayu natural span
 _NISARGAYU = {
-    "Sun":20,"Moon":1,"Mars":2,"Mercury":9,
-    "Jupiter":18,"Venus":20,"Saturn":50,
+    "Sun": 20,
+    "Moon": 1,
+    "Mars": 2,
+    "Mercury": 9,
+    "Jupiter": 18,
+    "Venus": 20,
+    "Saturn": 50,
 }
 
-_EXALT_LON = {"Sun":10,"Moon":33,"Mars":298,"Mercury":165,
-               "Jupiter":95,"Venus":357,"Saturn":200}
-_DEBIL_LON = {"Sun":190,"Moon":213,"Mars":118,"Mercury":345,
-               "Jupiter":275,"Venus":177,"Saturn":20}
+_EXALT_LON = {
+    "Sun": 10,
+    "Moon": 33,
+    "Mars": 298,
+    "Mercury": 165,
+    "Jupiter": 95,
+    "Venus": 357,
+    "Saturn": 200,
+}
+_DEBIL_LON = {
+    "Sun": 190,
+    "Moon": 213,
+    "Mars": 118,
+    "Mercury": 345,
+    "Jupiter": 275,
+    "Venus": 177,
+    "Saturn": 20,
+}
 
 
 def _strength_ratio(planet: str, longitude: float) -> float:
@@ -69,10 +94,22 @@ def compute_nisargayu(chart) -> float:
     Nisargayu: sum natural lifespans weighted by house position.
     Kendra = full, Panapara = half, Apoklima = quarter.
     """
-    _HOUSE_WEIGHT = {1:1.0,4:1.0,7:1.0,10:1.0,
-                     2:.5,5:.5,8:.5,11:.5,
-                     3:.25,6:.25,9:.25,12:.25}
+    _HOUSE_WEIGHT = {
+        1: 1.0,
+        4: 1.0,
+        7: 1.0,
+        10: 1.0,
+        2: 0.5,
+        5: 0.5,
+        8: 0.5,
+        11: 0.5,
+        3: 0.25,
+        6: 0.25,
+        9: 0.25,
+        12: 0.25,
+    }
     from src.calculations.house_lord import compute_house_map
+
     hmap = compute_house_map(chart)
     total = 0.0
     for planet, natural_years in _NISARGAYU.items():
@@ -89,29 +126,54 @@ def compute_amsayu(chart) -> float:
     """
     try:
         from src.calculations.panchanga import compute_navamsha_chart
-        from src.calculations.dignity import DignityLevel
+
         d9 = compute_navamsha_chart(chart)
     except Exception:
         return 66.0  # fallback
 
-    _PLANET_YEARS = {"Sun":19,"Moon":25,"Mars":15,"Mercury":12,
-                     "Jupiter":15,"Venus":21,"Saturn":20}
-    _OWN = {"Sun":{4},"Moon":{3},"Mars":{0,7},"Mercury":{2,5},
-            "Jupiter":{8,11},"Venus":{1,6},"Saturn":{9,10}}
-    _EXALT_SI = {"Sun":0,"Moon":1,"Mars":9,"Mercury":5,
-                  "Jupiter":3,"Venus":11,"Saturn":6}
+    _PLANET_YEARS = {
+        "Sun": 19,
+        "Moon": 25,
+        "Mars": 15,
+        "Mercury": 12,
+        "Jupiter": 15,
+        "Venus": 21,
+        "Saturn": 20,
+    }
+    _OWN = {
+        "Sun": {4},
+        "Moon": {3},
+        "Mars": {0, 7},
+        "Mercury": {2, 5},
+        "Jupiter": {8, 11},
+        "Venus": {1, 6},
+        "Saturn": {9, 10},
+    }
+    _EXALT_SI = {
+        "Sun": 0,
+        "Moon": 1,
+        "Mars": 9,
+        "Mercury": 5,
+        "Jupiter": 3,
+        "Venus": 11,
+        "Saturn": 6,
+    }
 
     total = 0.0
     for planet, years in _PLANET_YEARS.items():
         # DivisionalMap access — try planets dict first, then D9 attribute
         try:
-            if hasattr(d9, 'planets') and isinstance(d9.planets, dict):
-                d9_si = d9.planets.get(planet, {}).get('D9',
-                        chart.planets[planet].sign_index if planet in chart.planets else 0)
-            elif hasattr(d9, 'D9') and isinstance(d9.D9, dict):
+            if hasattr(d9, "planets") and isinstance(d9.planets, dict):
+                d9_si = d9.planets.get(planet, {}).get(
+                    "D9",
+                    chart.planets[planet].sign_index if planet in chart.planets else 0,
+                )
+            elif hasattr(d9, "D9") and isinstance(d9.D9, dict):
                 d9_si = d9.D9.get(planet, 0)
             else:
-                d9_si = chart.planets[planet].sign_index if planet in chart.planets else 0
+                d9_si = (
+                    chart.planets[planet].sign_index if planet in chart.planets else 0
+                )
         except Exception:
             d9_si = chart.planets[planet].sign_index if planet in chart.planets else 0
         if d9_si is None:
@@ -133,11 +195,13 @@ class LongevityResult:
     amsayu: float
     average: float
     minimum: float
-    span: str   # "Short" <36 / "Medium" 36–70 / "Long" >70
+    span: str  # "Short" <36 / "Medium" 36–70 / "Long" >70
 
     def summary(self) -> str:
-        return (f"Pindayu={self.pindayu}yr  Nisargayu={self.nisargayu}yr  "
-                f"Amsayu={self.amsayu}yr  →  {self.span} ({self.average:.0f}yr avg)")
+        return (
+            f"Pindayu={self.pindayu}yr  Nisargayu={self.nisargayu}yr  "
+            f"Amsayu={self.amsayu}yr  →  {self.span} ({self.average:.0f}yr avg)"
+        )
 
 
 def longevity_range(chart) -> LongevityResult:
@@ -145,10 +209,11 @@ def longevity_range(chart) -> LongevityResult:
     n = compute_nisargayu(chart)
     a = compute_amsayu(chart)
     avg = round((p + n + a) / 3, 1)
-    mn  = min(p, n, a)
+    mn = min(p, n, a)
     span = "Short" if avg < 36 else ("Long" if avg > 70 else "Medium")
-    return LongevityResult(pindayu=p, nisargayu=n, amsayu=a,
-                            average=avg, minimum=mn, span=span)
+    return LongevityResult(
+        pindayu=p, nisargayu=n, amsayu=a, average=avg, minimum=mn, span=span
+    )
 
 
 def detect_balarishta(chart) -> list[str]:
@@ -159,6 +224,7 @@ def detect_balarishta(chart) -> list[str]:
     Returns list of triggered condition descriptions.
     """
     from src.calculations.house_lord import compute_house_map
+
     hmap = compute_house_map(chart)
     results = []
 
@@ -170,12 +236,12 @@ def detect_balarishta(chart) -> list[str]:
     if lagnesh_h in {6, 8, 12}:
         results.append(f"Lagnesh in H{lagnesh_h} — weakened vitality")
 
-    _NAT_MALEFIC = {"Sun","Mars","Saturn","Rahu","Ketu"}
-    h1_malefics = [p for p in _NAT_MALEFIC
-                   if hmap.planet_house.get(p) == 1]
-    h8_malefics = [p for p in _NAT_MALEFIC
-                   if hmap.planet_house.get(p) == 8]
+    _NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+    h1_malefics = [p for p in _NAT_MALEFIC if hmap.planet_house.get(p) == 1]
+    h8_malefics = [p for p in _NAT_MALEFIC if hmap.planet_house.get(p) == 8]
     if h1_malefics and h8_malefics:
-        results.append(f"Malefics in H1 ({h1_malefics}) and H8 ({h8_malefics}) — Arishta")
+        results.append(
+            f"Malefics in H1 ({h1_malefics}) and H8 ({h8_malefics}) — Arishta"
+        )
 
     return results
