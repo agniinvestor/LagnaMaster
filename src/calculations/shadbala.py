@@ -662,3 +662,7 @@ def compute_shadbala_legacy(planet_or_chart=None, sign_idx: int = 0,
             sun = _P(); sun.sign_index = 0; sun.longitude = 0.0
             self.planets["Sun"] = sun
     return compute_shadbala(_planet, _C(), birth_dt)
+
+# S170: Drekkana variant declaration (Sanjay Rath Varga Chakra Ch.3)
+# Options: parasara | jagannatha | somanatha
+ACTIVE_DREKKANA_METHOD = "parasara"  # default Parashari
