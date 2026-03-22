@@ -11,80 +11,80 @@
     "hour": 11.5,
     "lat": 48.3984,
     "lon": 9.9909,
-    "tz_offset": 1.0,
+    "tz_offset": 0.6658,
     "ayanamsha": "lahiri"
   },
-  "birth_place": "Ulm, Baden-W\u00fcrttemberg, Germany",
-  "notes": "Rodden AA. Gemini Lagna expected.",
+  "birth_place": "Ulm, Baden-Württemberg, Germany",
+  "notes": "Rodden AA. Gemini Lagna expected. | tz_offset corrected to 0.6658 (Ulm LMT 9.9876E/15)",
   "expected": {
     "lagna_sign": "Gemini"
   },
   "chart": {
-    "lagna": 75.26538974809935,
+    "lagna": 79.4781016654355,
     "lagna_sign": "Gemini",
     "lagna_sign_index": 2,
     "planets": {
       "Sun": {
-        "longitude": 331.31966752308074,
+        "longitude": 331.3335353681805,
         "sign_index": 11,
         "sign": "Pisces",
-        "degree_in_sign": 1.3196675230807386,
+        "degree_in_sign": 1.3335353681804918,
         "is_retrograde": false
       },
       "Moon": {
-        "longitude": 232.15832083798225,
+        "longitude": 232.35217773852355,
         "sign_index": 7,
         "sign": "Scorpio",
-        "degree_in_sign": 22.158320837982245,
+        "degree_in_sign": 22.35217773852355,
         "is_retrograde": false
       },
       "Mars": {
-        "longitude": 274.72985607698826,
+        "longitude": 274.7400016161862,
         "sign_index": 9,
         "sign": "Capricorn",
-        "degree_in_sign": 4.729856076988256,
+        "degree_in_sign": 4.740001616186191,
         "is_retrograde": false
       },
       "Mercury": {
-        "longitude": 340.94253376680365,
+        "longitude": 340.9697141157244,
         "sign_index": 11,
         "sign": "Pisces",
-        "degree_in_sign": 10.942533766803649,
+        "degree_in_sign": 10.9697141157244,
         "is_retrograde": false
       },
       "Jupiter": {
-        "longitude": 305.3066222313025,
+        "longitude": 305.3097875228215,
         "sign_index": 10,
         "sign": "Aquarius",
-        "degree_in_sign": 5.306622231302526,
+        "degree_in_sign": 5.309787522821523,
         "is_retrograde": false
       },
       "Venus": {
-        "longitude": 354.7936674033518,
+        "longitude": 354.81081976712505,
         "sign_index": 11,
         "sign": "Pisces",
-        "degree_in_sign": 24.793667403351776,
+        "degree_in_sign": 24.810819767125054,
         "is_retrograde": false
       },
       "Saturn": {
-        "longitude": 342.013859573052,
+        "longitude": 342.0155794723175,
         "sign_index": 11,
         "sign": "Pisces",
-        "degree_in_sign": 12.013859573052002,
+        "degree_in_sign": 12.015579472317484,
         "is_retrograde": false
       },
       "Rahu": {
-        "longitude": 279.30685928292024,
+        "longitude": 279.30612136756065,
         "sign_index": 9,
         "sign": "Capricorn",
-        "degree_in_sign": 9.306859282920243,
+        "degree_in_sign": 9.30612136756065,
         "is_retrograde": true
       },
       "Ketu": {
-        "longitude": 99.30685928292024,
+        "longitude": 99.30612136756065,
         "sign_index": 3,
         "sign": "Cancer",
-        "degree_in_sign": 9.306859282920243,
+        "degree_in_sign": 9.30612136756065,
         "is_retrograde": true
       }
     }
