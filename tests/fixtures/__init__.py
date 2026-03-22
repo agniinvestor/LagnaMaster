@@ -7,6 +7,10 @@ INDIA_1947 = {
     "lat": 28.6139, "lon": 77.2090,
     "tz_offset": 5.5,
     "ayanamsha": "lahiri",
+    # Verified values from JHora 8.0
+    "lagna_degree_in_sign": 7.7286,
+    "sun_degree_in_sign": 27.99,
+    "moon_degree_in_sign": 3.98,
 }
 
 # Re-export regression fixtures
