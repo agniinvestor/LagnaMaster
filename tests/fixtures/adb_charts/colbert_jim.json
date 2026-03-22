@@ -1,0 +1,109 @@
+{
+  "adb_id": 19628,
+  "name": "Colbert, Jim",
+  "given_name": "Jim Colbert",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430063.497917,
+    "year": 1941,
+    "month": 3,
+    "day": 9,
+    "calendar": "g",
+    "time": "18:57",
+    "time_type": "s",
+    "hour": 18.95,
+    "time_unknown": false,
+    "place": "Elizabethport",
+    "country": "New Jersey",
+    "lat": 40.65,
+    "lon": -74.183333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colbert,_Jim",
+  "source_notes": "B.C. in hand from Frank C. Clifford\\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Sports : Golf"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.78839,
+    "lagna": 135.78839,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.035645,
+    "jd_ut": 2430063.497917,
+    "planets": {
+      "Sun": {
+        "longitude": 325.995865,
+        "sign_index": 10,
+        "degree_in_sign": 25.995865,
+        "is_retrograde": false,
+        "speed": 0.99859
+      },
+      "Moon": {
+        "longitude": 100.062374,
+        "sign_index": 3,
+        "degree_in_sign": 10.062374,
+        "is_retrograde": false,
+        "speed": 9.760568
+      },
+      "Mars": {
+        "longitude": 260.731465,
+        "sign_index": 8,
+        "degree_in_sign": 20.731465,
+        "is_retrograde": false,
+        "speed": 0.689432
+      },
+      "Mercury": {
+        "longitude": 305.982614,
+        "sign_index": 10,
+        "degree_in_sign": 5.982614,
+        "is_retrograde": true,
+        "speed": -0.177184
+      },
+      "Jupiter": {
+        "longitude": 19.804346,
+        "sign_index": 0,
+        "degree_in_sign": 19.804346,
+        "is_retrograde": false,
+        "speed": 0.184647
+      },
+      "Venus": {
+        "longitude": 315.761369,
+        "sign_index": 10,
+        "degree_in_sign": 15.761369,
+        "is_retrograde": false,
+        "speed": 1.245626
+      },
+      "Saturn": {
+        "longitude": 17.922522,
+        "sign_index": 0,
+        "degree_in_sign": 17.922522,
+        "is_retrograde": false,
+        "speed": 0.095244
+      },
+      "Rahu": {
+        "longitude": 159.536053,
+        "sign_index": 5,
+        "degree_in_sign": 9.536053,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 339.536053,
+        "sign_index": 11,
+        "degree_in_sign": 9.536053,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

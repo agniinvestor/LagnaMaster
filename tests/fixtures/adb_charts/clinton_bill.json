@@ -1,110 +1,120 @@
 {
-  "adb_slug": "Clinton,_Bill",
-  "name": "Bill Clinton",
-  "source": "astro-databank",
-  "rodden_rating": "AA",
-  "adb_url": "https://www.astro.com/astro-databank/Clinton,_Bill",
+  "adb_id": 863,
+  "name": "Clinton, Bill",
+  "given_name": "Bill Clinton",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
   "birth_data": {
+    "jd_ut": 2432052.11875,
     "year": 1946,
-    "month": 1,
-    "day": 1,
-    "hour": 12.0,
-    "lat": 0.0,
-    "lon": 0.0,
-    "tz_offset": 0.0,
-    "ayanamsha": "lahiri"
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "08:51",
+    "time_type": "s",
+    "hour": 8.85,
+    "time_unknown": false,
+    "place": "Hope",
+    "country": "Arkansas",
+    "lat": 33.666667,
+    "lon": -93.583333
   },
-  "birth_place": "USA",
-  "country": "USA",
-  "data_trust_level": "medium",
-  "assert_lagna": false,
-  "trust_note": "Stub — fetch blocked",
-  "expected": {},
-  "chart": {
-    "lagna": 348.35449756580516,
-    "lagna_sign": "Pisces",
-    "lagna_sign_index": 11,
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clinton,_Bill",
+  "source_notes": "Note in hand from Mrs. Virginia Kelley, Clinton's mom, to Shelley Ackerman with the time hand-written.  She gave the same data in an interview with  \"Family Circle\" magazine of 2/02/1993, p.23.\\n(Virginia Miller quoted Clinton for the time of 7:30 AM given without hesitation.\\n(David Maraniss \"First in his Class\" stateed that Clinton was born one hour after dawn, \"Details of his birth from Edith Cassidy's records, in possession of her niece, Myra Irvin.  As his grandmother was a nurse who worked at the local hospital, she would probably have taken her daughter into the hospital for the birth.\"  (Source detailed in the Notes section of the biography.)  (Dawn is 5:24 AM)\\n(Kathy Forrest called 10/13/96 to relate that she had talked to Clinton's mom about four years back and that she had said he was born at 7:30 AM.  Kathy asked \"Are you sure?\" and the mom said \"I should be, I'm his mother.\"  Virginia Kelley relates in the Maraniss biography that her Bill was an eight-month baby, despite his birth weight of nearly 8 1/2 lbs.  Her husband, Blythe, returned from Italy where he was stationed eight months before Bill was born.\\n(Edith Custer sent a long letter from Rowena Wall dated 6/121/95 in which she related that when Clinton began his campaign she asked her mom, who lives in Pine Bluff, AR, to see if she could get his birth data.  Her mom replied that she found the data in a book in the library that had the birth certificate in it, giving 3:44 AM.  When this information was printed in AFA DX No.104 (5/02/92), both Mark Lerner and Ken Irving called the library but were told that no such book was there.  When Rowena Wall asked her mom to double-check, the alleged biography could not be found, making the quote impossible to verify.)\\n",
+  "categories": [
+    "Traits : Personality : Acquisitive",
+    "Traits : Personality : Liar/ Fraud",
+    "Traits : Personality : Night Owl",
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Family : Childhood : Family traumatic event",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Stress - Extramarital affairs",
+    "Family : Parenting : Kids 1-3",
+    "Passions : Sexuality : Extremes in quantity",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : U.S. Presidents",
+    "Notable : Famous : Historic figure"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 19.290656,
+    "lagna": 139.290656,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.11168,
+    "jd_ut": 2432052.11875,
     "planets": {
       "Sun": {
-        "longitude": 257.3868314627484,
-        "sign_index": 8,
-        "sign": "Sagittarius",
-        "degree_in_sign": 17.386831462748376,
-        "is_retrograde": false
+        "longitude": 122.894693,
+        "sign_index": 4,
+        "degree_in_sign": 2.894693,
+        "is_retrograde": false,
+        "speed": 0.962445
       },
       "Moon": {
-        "longitude": 234.6201767176007,
-        "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 24.620176717600714,
-        "is_retrograde": false
+        "longitude": 26.500988,
+        "sign_index": 0,
+        "degree_in_sign": 26.500988,
+        "is_retrograde": false,
+        "speed": 10.608294
       },
       "Mars": {
-        "longitude": 95.00319252734475,
-        "sign_index": 3,
-        "sign": "Cancer",
-        "degree_in_sign": 5.003192527344751,
-        "is_retrograde": true
+        "longitude": 163.246353,
+        "sign_index": 5,
+        "degree_in_sign": 13.246353,
+        "is_retrograde": false,
+        "speed": 0.636535
       },
       "Mercury": {
-        "longitude": 236.01844936103663,
-        "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 26.01844936103663,
-        "is_retrograde": false
+        "longitude": 104.499848,
+        "sign_index": 3,
+        "degree_in_sign": 14.499848,
+        "is_retrograde": false,
+        "speed": 0.809981
       },
       "Jupiter": {
-        "longitude": 181.76943203545594,
+        "longitude": 180.113795,
         "sign_index": 6,
-        "sign": "Libra",
-        "degree_in_sign": 1.7694320354559352,
-        "is_retrograde": false
+        "degree_in_sign": 0.113795,
+        "is_retrograde": false,
+        "speed": 0.159203
       },
       "Venus": {
-        "longitude": 249.94585846857166,
-        "sign_index": 8,
-        "sign": "Sagittarius",
-        "degree_in_sign": 9.945858468571657,
-        "is_retrograde": false
+        "longitude": 168.011598,
+        "sign_index": 5,
+        "degree_in_sign": 18.011598,
+        "is_retrograde": false,
+        "speed": 1.066359
       },
       "Saturn": {
-        "longitude": 89.21378025385623,
-        "sign_index": 2,
-        "sign": "Gemini",
-        "degree_in_sign": 29.21378025385623,
-        "is_retrograde": true
+        "longitude": 99.028209,
+        "sign_index": 3,
+        "degree_in_sign": 9.028209,
+        "is_retrograde": false,
+        "speed": 0.12213
       },
       "Rahu": {
-        "longitude": 66.34939392421354,
-        "sign_index": 2,
-        "sign": "Gemini",
-        "degree_in_sign": 6.349393924213544,
-        "is_retrograde": true
+        "longitude": 54.154927,
+        "sign_index": 1,
+        "degree_in_sign": 24.154927,
+        "is_retrograde": true,
+        "speed": -0.052992
       },
       "Ketu": {
-        "longitude": 246.34939392421353,
-        "sign_index": 8,
-        "sign": "Sagittarius",
-        "degree_in_sign": 6.34939392421353,
-        "is_retrograde": true
+        "longitude": 234.154927,
+        "sign_index": 7,
+        "degree_in_sign": 24.154927,
+        "is_retrograde": true,
+        "speed": 0.0
       }
     }
-  },
-  "scores": {
-    "1": -2.25,
-    "2": 1.375,
-    "3": -1.25,
-    "4": 0.5,
-    "5": 3.0,
-    "6": 1.5,
-    "7": 4.5,
-    "8": -1.5,
-    "9": 3.0,
-    "10": -6.25,
-    "11": -0.25,
-    "12": 1.125
-  },
-  "fetch_status": "blocked",
-  "engine_version": "v3.0.0",
-  "computed_date": "2026-03-22"
+  }
 }

@@ -1,0 +1,108 @@
+{
+  "adb_id": 71647,
+  "name": "Chiambretti, Piero",
+  "given_name": "Piero Chiambretti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435623.520833,
+    "year": 1956,
+    "month": 5,
+    "day": 30,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Aosta",
+    "country": "Italy",
+    "lat": 45.733333,
+    "lon": 7.333333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiambretti,_Piero",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 28.591474,
+    "lagna": 298.591474,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.248238,
+    "jd_ut": 2435623.520833,
+    "planets": {
+      "Sun": {
+        "longitude": 45.318128,
+        "sign_index": 1,
+        "degree_in_sign": 15.318128,
+        "is_retrograde": false,
+        "speed": 0.958526
+      },
+      "Moon": {
+        "longitude": 284.733396,
+        "sign_index": 9,
+        "degree_in_sign": 14.733396,
+        "is_retrograde": false,
+        "speed": 9.083604
+      },
+      "Mars": {
+        "longitude": 304.318123,
+        "sign_index": 10,
+        "degree_in_sign": 4.318123,
+        "is_retrograde": false,
+        "speed": 0.570268
+      },
+      "Mercury": {
+        "longitude": 39.279669,
+        "sign_index": 1,
+        "degree_in_sign": 9.279669,
+        "is_retrograde": true,
+        "speed": -0.498203
+      },
+      "Jupiter": {
+        "longitude": 120.841424,
+        "sign_index": 4,
+        "degree_in_sign": 0.841424,
+        "is_retrograde": false,
+        "speed": 0.116092
+      },
+      "Venus": {
+        "longitude": 75.707851,
+        "sign_index": 2,
+        "degree_in_sign": 15.707851,
+        "is_retrograde": false,
+        "speed": 0.066448
+      },
+      "Saturn": {
+        "longitude": 215.570957,
+        "sign_index": 7,
+        "degree_in_sign": 5.570957,
+        "is_retrograde": true,
+        "speed": -0.072977
+      },
+      "Rahu": {
+        "longitude": 224.898978,
+        "sign_index": 7,
+        "degree_in_sign": 14.898978,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 44.898978,
+        "sign_index": 1,
+        "degree_in_sign": 14.898978,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

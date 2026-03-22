@@ -1,0 +1,121 @@
+{
+  "adb_id": 25475,
+  "name": "Calman, Kenneth",
+  "given_name": "Kenneth Calman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430354.25,
+    "year": 1941,
+    "month": 12,
+    "day": 25,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "d",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calman,_Kenneth",
+  "source_notes": "Caroline Gerard quotes B.C. in \"Transit\" (6/1998).\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Parenting : Kids 1-3",
+    "Family : Parenting : Kids - Homosexual",
+    "Family : Parenting : Kids - Noted",
+    "Lifestyle : Social Life : Collector",
+    "Vocation : Business : Middle Management",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Physician",
+    "Vocation : Medical : Surgeon",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Knighted"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.060567,
+    "lagna": 74.060567,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.046762,
+    "jd_ut": 2430354.25,
+    "planets": {
+      "Sun": {
+        "longitude": 250.531739,
+        "sign_index": 8,
+        "degree_in_sign": 10.531739,
+        "is_retrograde": false,
+        "speed": 1.018924
+      },
+      "Moon": {
+        "longitude": 343.72195,
+        "sign_index": 11,
+        "degree_in_sign": 13.72195,
+        "is_retrograde": false,
+        "speed": 9.394493
+      },
+      "Mars": {
+        "longitude": 359.066018,
+        "sign_index": 11,
+        "degree_in_sign": 29.066018,
+        "is_retrograde": false,
+        "speed": 0.420745
+      },
+      "Mercury": {
+        "longitude": 252.668486,
+        "sign_index": 8,
+        "degree_in_sign": 12.668486,
+        "is_retrograde": false,
+        "speed": 1.599795
+      },
+      "Jupiter": {
+        "longitude": 51.101052,
+        "sign_index": 1,
+        "degree_in_sign": 21.101052,
+        "is_retrograde": true,
+        "speed": -0.121126
+      },
+      "Venus": {
+        "longitude": 292.20944,
+        "sign_index": 9,
+        "degree_in_sign": 22.20944,
+        "is_retrograde": false,
+        "speed": 0.593352
+      },
+      "Saturn": {
+        "longitude": 29.331338,
+        "sign_index": 0,
+        "degree_in_sign": 29.331338,
+        "is_retrograde": true,
+        "speed": -0.050313
+      },
+      "Rahu": {
+        "longitude": 144.128499,
+        "sign_index": 4,
+        "degree_in_sign": 24.128499,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 324.128499,
+        "sign_index": 10,
+        "degree_in_sign": 24.128499,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

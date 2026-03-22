@@ -1,0 +1,108 @@
+{
+  "adb_id": 65391,
+  "name": "Cortot, Louis",
+  "given_name": "Louis Cortot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424235.666667,
+    "year": 1925,
+    "month": 3,
+    "day": 26,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Sombernon",
+    "country": "France",
+    "lat": 47.3,
+    "lon": 4.7
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortot,_Louis",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 80.\\n",
+  "categories": [
+    "Vocation : Military : Honors"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 2.256729,
+    "lagna": 272.256729,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.812827,
+    "jd_ut": 2424235.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 342.181866,
+        "sign_index": 11,
+        "degree_in_sign": 12.181866,
+        "is_retrograde": false,
+        "speed": 0.990176
+      },
+      "Moon": {
+        "longitude": 2.079824,
+        "sign_index": 0,
+        "degree_in_sign": 2.079824,
+        "is_retrograde": false,
+        "speed": 16.020728
+      },
+      "Mars": {
+        "longitude": 38.565544,
+        "sign_index": 1,
+        "degree_in_sign": 8.565544,
+        "is_retrograde": false,
+        "speed": 0.642986
+      },
+      "Mercury": {
+        "longitude": 359.896159,
+        "sign_index": 11,
+        "degree_in_sign": 29.896159,
+        "is_retrograde": false,
+        "speed": 1.440479
+      },
+      "Jupiter": {
+        "longitude": 266.638542,
+        "sign_index": 8,
+        "degree_in_sign": 26.638542,
+        "is_retrograde": false,
+        "speed": 0.128372
+      },
+      "Venus": {
+        "longitude": 334.75491,
+        "sign_index": 11,
+        "degree_in_sign": 4.75491,
+        "is_retrograde": false,
+        "speed": 1.242356
+      },
+      "Saturn": {
+        "longitude": 200.663447,
+        "sign_index": 6,
+        "degree_in_sign": 20.663447,
+        "is_retrograde": true,
+        "speed": -0.050367
+      },
+      "Rahu": {
+        "longitude": 108.364927,
+        "sign_index": 3,
+        "degree_in_sign": 18.364927,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 288.364927,
+        "sign_index": 9,
+        "degree_in_sign": 18.364927,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

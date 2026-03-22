@@ -1,0 +1,108 @@
+{
+  "adb_id": 50834,
+  "name": "Cowen, Ronald",
+  "given_name": "Ronald Cowen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431349.034722,
+    "year": 1944,
+    "month": 9,
+    "day": 15,
+    "calendar": "g",
+    "time": "08:50",
+    "time_type": "w",
+    "hour": 8.833333,
+    "time_unknown": false,
+    "place": "Cincinnati",
+    "country": "Ohio",
+    "lat": 39.166667,
+    "lon": -84.45
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowen,_Ronald",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 23.821449,
+    "lagna": 143.821449,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.084797,
+    "jd_ut": 2431349.034722,
+    "planets": {
+      "Sun": {
+        "longitude": 149.45852,
+        "sign_index": 4,
+        "degree_in_sign": 29.45852,
+        "is_retrograde": false,
+        "speed": 0.975434
+      },
+      "Moon": {
+        "longitude": 128.501472,
+        "sign_index": 4,
+        "degree_in_sign": 8.501472,
+        "is_retrograde": false,
+        "speed": 9.12812
+      },
+      "Mars": {
+        "longitude": 168.286391,
+        "sign_index": 5,
+        "degree_in_sign": 18.286391,
+        "is_retrograde": false,
+        "speed": 0.655446
+      },
+      "Mercury": {
+        "longitude": 135.479537,
+        "sign_index": 4,
+        "degree_in_sign": 15.479537,
+        "is_retrograde": true,
+        "speed": -0.117934
+      },
+      "Jupiter": {
+        "longitude": 137.933783,
+        "sign_index": 4,
+        "degree_in_sign": 17.933783,
+        "is_retrograde": false,
+        "speed": 0.214908
+      },
+      "Venus": {
+        "longitude": 171.265562,
+        "sign_index": 5,
+        "degree_in_sign": 21.265562,
+        "is_retrograde": false,
+        "speed": 1.231177
+      },
+      "Saturn": {
+        "longitude": 76.427865,
+        "sign_index": 2,
+        "degree_in_sign": 16.427865,
+        "is_retrograde": false,
+        "speed": 0.065513
+      },
+      "Rahu": {
+        "longitude": 91.4128,
+        "sign_index": 3,
+        "degree_in_sign": 1.4128,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 271.4128,
+        "sign_index": 9,
+        "degree_in_sign": 1.4128,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

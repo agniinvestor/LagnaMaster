@@ -1,0 +1,108 @@
+{
+  "adb_id": 8326,
+  "name": "Curron, Deirdre",
+  "given_name": "Deirdre Curron",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429322.375,
+    "year": 1939,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curron,_Deirdre",
+  "source_notes": "David Fisher quotes her dad\\n",
+  "categories": [
+    "Vocation : Occult Fields : Psychic/ Medium/ Spiritualist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 29.218188,
+    "lagna": 149.218188,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.007308,
+    "jd_ut": 2429322.375,
+    "planets": {
+      "Sun": {
+        "longitude": 315.371121,
+        "sign_index": 10,
+        "degree_in_sign": 15.371121,
+        "is_retrograde": false,
+        "speed": 1.004338
+      },
+      "Moon": {
+        "longitude": 54.2592,
+        "sign_index": 1,
+        "degree_in_sign": 24.2592,
+        "is_retrograde": false,
+        "speed": 10.774426
+      },
+      "Mars": {
+        "longitude": 234.668526,
+        "sign_index": 7,
+        "degree_in_sign": 24.668526,
+        "is_retrograde": false,
+        "speed": 0.587351
+      },
+      "Mercury": {
+        "longitude": 322.995052,
+        "sign_index": 10,
+        "degree_in_sign": 22.995052,
+        "is_retrograde": false,
+        "speed": 1.904312
+      },
+      "Jupiter": {
+        "longitude": 320.419212,
+        "sign_index": 10,
+        "degree_in_sign": 20.419212,
+        "is_retrograde": false,
+        "speed": 0.241472
+      },
+      "Venus": {
+        "longitude": 270.531129,
+        "sign_index": 9,
+        "degree_in_sign": 0.531129,
+        "is_retrograde": false,
+        "speed": 1.129078
+      },
+      "Saturn": {
+        "longitude": 352.819079,
+        "sign_index": 11,
+        "degree_in_sign": 22.819079,
+        "is_retrograde": false,
+        "speed": 0.109094
+      },
+      "Rahu": {
+        "longitude": 198.80969,
+        "sign_index": 6,
+        "degree_in_sign": 18.80969,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.80969,
+        "sign_index": 0,
+        "degree_in_sign": 18.80969,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

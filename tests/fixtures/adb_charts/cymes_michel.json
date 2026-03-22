@@ -1,0 +1,110 @@
+{
+  "adb_id": 59628,
+  "name": "Cymes, Michel",
+  "given_name": "Michel Cymes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435973.065972,
+    "year": 1957,
+    "month": 5,
+    "day": 14,
+    "calendar": "g",
+    "time": "14:35",
+    "time_type": "s",
+    "hour": 14.583333,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 11",
+    "country": "France",
+    "lat": 48.858333,
+    "lon": 2.379722
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cymes,_Michel",
+  "source_notes": "Paddy de Jabrun quotes BC.\\n",
+  "categories": [
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 4.850673,
+    "lagna": 124.850673,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.261604,
+    "jd_ut": 2435973.065972,
+    "planets": {
+      "Sun": {
+        "longitude": 30.21248,
+        "sign_index": 1,
+        "degree_in_sign": 0.21248,
+        "is_retrograde": false,
+        "speed": 0.963957
+      },
+      "Moon": {
+        "longitude": 218.34703,
+        "sign_index": 7,
+        "degree_in_sign": 8.34703,
+        "is_retrograde": false,
+        "speed": 16.955118
+      },
+      "Mars": {
+        "longitude": 72.962193,
+        "sign_index": 2,
+        "degree_in_sign": 12.962193,
+        "is_retrograde": false,
+        "speed": 0.626888
+      },
+      "Mercury": {
+        "longitude": 17.467219,
+        "sign_index": 0,
+        "degree_in_sign": 17.467219,
+        "is_retrograde": true,
+        "speed": -0.324362
+      },
+      "Jupiter": {
+        "longitude": 148.60325,
+        "sign_index": 4,
+        "degree_in_sign": 28.60325,
+        "is_retrograde": true,
+        "speed": -0.013729
+      },
+      "Venus": {
+        "longitude": 38.090979,
+        "sign_index": 1,
+        "degree_in_sign": 8.090979,
+        "is_retrograde": false,
+        "speed": 1.229989
+      },
+      "Saturn": {
+        "longitude": 229.069858,
+        "sign_index": 7,
+        "degree_in_sign": 19.069858,
+        "is_retrograde": true,
+        "speed": -0.067868
+      },
+      "Rahu": {
+        "longitude": 206.375864,
+        "sign_index": 6,
+        "degree_in_sign": 26.375864,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 26.375864,
+        "sign_index": 0,
+        "degree_in_sign": 26.375864,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

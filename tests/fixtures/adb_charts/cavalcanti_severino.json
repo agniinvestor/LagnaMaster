@@ -1,0 +1,114 @@
+{
+  "adb_id": 91067,
+  "name": "Cavalcanti, Severino",
+  "given_name": "Severino Cavalcanti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426237.833333,
+    "year": 1930,
+    "month": 9,
+    "day": 18,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Aliança (Pernambuco)",
+    "country": "Brazil",
+    "lat": -7.603333,
+    "lon": -35.230833
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavalcanti,_Severino",
+  "source_notes": "Sy Scholfield provided birth certificate from Pernambuco archives.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Personal : Religion/Spirituality : Western",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Activist/ social",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Vocation : Misc. : Farmer/ Rancher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 4.159771,
+    "lagna": 124.159771,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.889375,
+    "jd_ut": 2426237.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 151.789539,
+        "sign_index": 5,
+        "degree_in_sign": 1.789539,
+        "is_retrograde": false,
+        "speed": 0.976595
+      },
+      "Moon": {
+        "longitude": 94.415281,
+        "sign_index": 3,
+        "degree_in_sign": 4.415281,
+        "is_retrograde": false,
+        "speed": 9.554102
+      },
+      "Mars": {
+        "longitude": 79.794178,
+        "sign_index": 2,
+        "degree_in_sign": 19.794178,
+        "is_retrograde": false,
+        "speed": 0.584532
+      },
+      "Mercury": {
+        "longitude": 158.923994,
+        "sign_index": 5,
+        "degree_in_sign": 8.923994,
+        "is_retrograde": true,
+        "speed": -0.981997
+      },
+      "Jupiter": {
+        "longitude": 83.72263,
+        "sign_index": 2,
+        "degree_in_sign": 23.72263,
+        "is_retrograde": false,
+        "speed": 0.14278
+      },
+      "Venus": {
+        "longitude": 197.973404,
+        "sign_index": 6,
+        "degree_in_sign": 17.973404,
+        "is_retrograde": false,
+        "speed": 0.934224
+      },
+      "Saturn": {
+        "longitude": 252.427031,
+        "sign_index": 8,
+        "degree_in_sign": 12.427031,
+        "is_retrograde": false,
+        "speed": 0.013628
+      },
+      "Rahu": {
+        "longitude": 2.26595,
+        "sign_index": 0,
+        "degree_in_sign": 2.26595,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.26595,
+        "sign_index": 6,
+        "degree_in_sign": 2.26595,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

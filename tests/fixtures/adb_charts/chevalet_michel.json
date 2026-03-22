@@ -1,0 +1,108 @@
+{
+  "adb_id": 36966,
+  "name": "Chevalet, Michel",
+  "given_name": "Michel Chevalet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429506.09375,
+    "year": 1939,
+    "month": 8,
+    "day": 30,
+    "calendar": "g",
+    "time": "15:15",
+    "time_type": "d",
+    "hour": 15.25,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevalet,_Michel",
+  "source_notes": "Petitallot quotes B.C., Cadran No. 39, March 1997\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.396972,
+    "lagna": 210.396972,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.014333,
+    "jd_ut": 2429506.09375,
+    "planets": {
+      "Sun": {
+        "longitude": 133.285775,
+        "sign_index": 4,
+        "degree_in_sign": 13.285775,
+        "is_retrograde": false,
+        "speed": 0.966491
+      },
+      "Moon": {
+        "longitude": 320.635302,
+        "sign_index": 10,
+        "degree_in_sign": 20.635302,
+        "is_retrograde": false,
+        "speed": 14.676968
+      },
+      "Mars": {
+        "longitude": 271.199455,
+        "sign_index": 9,
+        "degree_in_sign": 1.199455,
+        "is_retrograde": false,
+        "speed": 0.08976
+      },
+      "Mercury": {
+        "longitude": 115.315431,
+        "sign_index": 3,
+        "degree_in_sign": 25.315431,
+        "is_retrograde": false,
+        "speed": 1.214522
+      },
+      "Jupiter": {
+        "longitude": 344.171567,
+        "sign_index": 11,
+        "degree_in_sign": 14.171567,
+        "is_retrograde": true,
+        "speed": -0.096704
+      },
+      "Venus": {
+        "longitude": 131.570455,
+        "sign_index": 4,
+        "degree_in_sign": 11.570455,
+        "is_retrograde": false,
+        "speed": 1.239747
+      },
+      "Saturn": {
+        "longitude": 8.01624,
+        "sign_index": 0,
+        "degree_in_sign": 8.01624,
+        "is_retrograde": true,
+        "speed": -0.028385
+      },
+      "Rahu": {
+        "longitude": 189.074053,
+        "sign_index": 6,
+        "degree_in_sign": 9.074053,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 9.074053,
+        "sign_index": 0,
+        "degree_in_sign": 9.074053,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

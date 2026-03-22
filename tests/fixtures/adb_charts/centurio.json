@@ -1,0 +1,109 @@
+{
+  "adb_id": 26420,
+  "name": "Centurio",
+  "given_name": "Centurio",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2412530.988796,
+    "year": 1893,
+    "month": 3,
+    "day": 8,
+    "calendar": "g",
+    "time": "12:28",
+    "time_type": "l",
+    "hour": 12.466667,
+    "time_unknown": false,
+    "place": "Thale",
+    "country": "Germany",
+    "lat": 51.75,
+    "lon": 11.033333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Centurio",
+  "source_notes": "Taeger quotes Sandor Belcsak from the Wassilko archives.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.179371,
+    "lagna": 67.179371,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.365363,
+    "jd_ut": 2412530.988796,
+    "planets": {
+      "Sun": {
+        "longitude": 325.792984,
+        "sign_index": 10,
+        "degree_in_sign": 25.792984,
+        "is_retrograde": false,
+        "speed": 0.998802
+      },
+      "Moon": {
+        "longitude": 211.302763,
+        "sign_index": 7,
+        "degree_in_sign": 1.302763,
+        "is_retrograde": false,
+        "speed": 13.286184
+      },
+      "Mars": {
+        "longitude": 24.291851,
+        "sign_index": 0,
+        "degree_in_sign": 24.291851,
+        "is_retrograde": false,
+        "speed": 0.659873
+      },
+      "Mercury": {
+        "longitude": 342.152798,
+        "sign_index": 11,
+        "degree_in_sign": 12.152798,
+        "is_retrograde": false,
+        "speed": 1.584286
+      },
+      "Jupiter": {
+        "longitude": 3.858208,
+        "sign_index": 0,
+        "degree_in_sign": 3.858208,
+        "is_retrograde": false,
+        "speed": 0.214014
+      },
+      "Venus": {
+        "longitude": 311.775355,
+        "sign_index": 10,
+        "degree_in_sign": 11.775355,
+        "is_retrograde": false,
+        "speed": 1.244073
+      },
+      "Saturn": {
+        "longitude": 168.695847,
+        "sign_index": 5,
+        "degree_in_sign": 18.695847,
+        "is_retrograde": true,
+        "speed": -0.068392
+      },
+      "Rahu": {
+        "longitude": 8.620389,
+        "sign_index": 0,
+        "degree_in_sign": 8.620389,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 188.620389,
+        "sign_index": 6,
+        "degree_in_sign": 8.620389,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

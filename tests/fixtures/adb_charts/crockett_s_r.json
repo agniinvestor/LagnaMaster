@@ -1,0 +1,109 @@
+{
+  "adb_id": 67886,
+  "name": "Crockett S. R.",
+  "given_name": "Crockett S. R.",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2400311.722222,
+    "year": 1859,
+    "month": 9,
+    "day": 24,
+    "calendar": "g",
+    "time": "05:20",
+    "time_type": "s",
+    "hour": 5.333333,
+    "time_unknown": false,
+    "place": "Balmaghie",
+    "country": "Scotland",
+    "lat": 54.95,
+    "lon": -4.0
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crockett_S._R.",
+  "source_notes": "Paul Wright quotes birth record\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 8.470825,
+    "lagna": 128.470825,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.898295,
+    "jd_ut": 2400311.722222,
+    "planets": {
+      "Sun": {
+        "longitude": 158.719784,
+        "sign_index": 5,
+        "degree_in_sign": 8.719784,
+        "is_retrograde": false,
+        "speed": 0.980627
+      },
+      "Moon": {
+        "longitude": 126.955854,
+        "sign_index": 4,
+        "degree_in_sign": 6.955854,
+        "is_retrograde": false,
+        "speed": 13.582445
+      },
+      "Mars": {
+        "longitude": 137.543803,
+        "sign_index": 4,
+        "degree_in_sign": 17.543803,
+        "is_retrograde": false,
+        "speed": 0.632816
+      },
+      "Mercury": {
+        "longitude": 145.404416,
+        "sign_index": 4,
+        "degree_in_sign": 25.404416,
+        "is_retrograde": false,
+        "speed": 1.728715
+      },
+      "Jupiter": {
+        "longitude": 89.685894,
+        "sign_index": 2,
+        "degree_in_sign": 29.685894,
+        "is_retrograde": false,
+        "speed": 0.139111
+      },
+      "Venus": {
+        "longitude": 157.713935,
+        "sign_index": 5,
+        "degree_in_sign": 7.713935,
+        "is_retrograde": false,
+        "speed": 1.246996
+      },
+      "Saturn": {
+        "longitude": 119.606895,
+        "sign_index": 3,
+        "degree_in_sign": 29.606895,
+        "is_retrograde": false,
+        "speed": 0.109195
+      },
+      "Rahu": {
+        "longitude": 296.145345,
+        "sign_index": 9,
+        "degree_in_sign": 26.145345,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 116.145345,
+        "sign_index": 3,
+        "degree_in_sign": 26.145345,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 53883,
+  "name": "Caillau, Édouard",
+  "given_name": "Édouard Caillau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423845.75,
+    "year": 1924,
+    "month": 3,
+    "day": 1,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Biarritz",
+    "country": "France",
+    "lat": 43.483333,
+    "lon": -1.566667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caillau,_Édouard",
+  "source_notes": "Steinbrecher collection: Infosophia 15/1991 quotes Daisy Van de Vin for birth certificate.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 4.802189,
+    "lagna": 274.802189,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.797919,
+    "jd_ut": 2423845.75,
+    "planets": {
+      "Sun": {
+        "longitude": 317.601149,
+        "sign_index": 10,
+        "degree_in_sign": 17.601149,
+        "is_retrograde": false,
+        "speed": 1.00345
+      },
+      "Moon": {
+        "longitude": 263.119432,
+        "sign_index": 8,
+        "degree_in_sign": 23.119432,
+        "is_retrograde": false,
+        "speed": 10.360658
+      },
+      "Mars": {
+        "longitude": 243.695568,
+        "sign_index": 8,
+        "degree_in_sign": 3.695568,
+        "is_retrograde": false,
+        "speed": 0.634106
+      },
+      "Mercury": {
+        "longitude": 300.662501,
+        "sign_index": 10,
+        "degree_in_sign": 0.662501,
+        "is_retrograde": false,
+        "speed": 1.602067
+      },
+      "Jupiter": {
+        "longitude": 235.170639,
+        "sign_index": 7,
+        "degree_in_sign": 25.170639,
+        "is_retrograde": false,
+        "speed": 0.104331
+      },
+      "Venus": {
+        "longitude": 357.564194,
+        "sign_index": 11,
+        "degree_in_sign": 27.564194,
+        "is_retrograde": false,
+        "speed": 1.177372
+      },
+      "Saturn": {
+        "longitude": 189.22463,
+        "sign_index": 6,
+        "degree_in_sign": 9.22463,
+        "is_retrograde": true,
+        "speed": -0.032467
+      },
+      "Rahu": {
+        "longitude": 129.027424,
+        "sign_index": 4,
+        "degree_in_sign": 9.027424,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.027424,
+        "sign_index": 10,
+        "degree_in_sign": 9.027424,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

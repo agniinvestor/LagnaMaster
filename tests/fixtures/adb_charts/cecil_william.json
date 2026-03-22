@@ -1,0 +1,110 @@
+{
+  "adb_id": 1801,
+  "name": "Cecil, William",
+  "given_name": "William Cecil",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2276494.141343,
+    "year": 1520,
+    "month": 9,
+    "day": 13,
+    "calendar": "j",
+    "time": "15:22",
+    "time_type": "l",
+    "hour": 15.366667,
+    "time_unknown": false,
+    "place": "Bourne",
+    "country": "England",
+    "lat": 52.766667,
+    "lon": -0.383333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cecil,_William",
+  "source_notes": "Martin Harvey quotes recorded time, AJ Winter/1975-76.  (September 13 OS)\\n\\nSy Scholfield quotes \"Calendar of the Cecil Papers in Hatfield House\" edited by E. Salisbury (1915). [http://www.british-history.ac.uk/report.aspx?compid=112013]: 1576, \"A Table collected of the yeares of oure Lorde God, and of the yeares of the Kynges of Englande, from the fyrst yeare of William Conquerour. Londini, 1561. Imprinted by John Waley.\" The above contains many MS. notes by Burghley, beginning at A.D. 1100. Among them the following: '1521, Sept. 13. Ego Gul. Cecill natus sum inter 3 et 4 pt. meridiem. Apd. Burn.' [born between 3 and 4 in the afternoon].\\n",
+  "categories": [
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Politics : Public office",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 14.14723,
+    "lagna": 254.14723,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.169374,
+    "jd_ut": 2276494.141343,
+    "planets": {
+      "Sun": {
+        "longitude": 162.952565,
+        "sign_index": 5,
+        "degree_in_sign": 12.952565,
+        "is_retrograde": false,
+        "speed": 0.983684
+      },
+      "Moon": {
+        "longitude": 181.718878,
+        "sign_index": 6,
+        "degree_in_sign": 1.718878,
+        "is_retrograde": false,
+        "speed": 9.151564
+      },
+      "Mars": {
+        "longitude": 88.667798,
+        "sign_index": 2,
+        "degree_in_sign": 28.667798,
+        "is_retrograde": false,
+        "speed": 0.558836
+      },
+      "Mercury": {
+        "longitude": 187.336261,
+        "sign_index": 6,
+        "degree_in_sign": 7.336261,
+        "is_retrograde": false,
+        "speed": 1.22443
+      },
+      "Jupiter": {
+        "longitude": 212.598226,
+        "sign_index": 7,
+        "degree_in_sign": 2.598226,
+        "is_retrograde": false,
+        "speed": 0.178864
+      },
+      "Venus": {
+        "longitude": 155.162356,
+        "sign_index": 5,
+        "degree_in_sign": 5.162356,
+        "is_retrograde": false,
+        "speed": 1.247458
+      },
+      "Saturn": {
+        "longitude": 279.884449,
+        "sign_index": 9,
+        "degree_in_sign": 9.884449,
+        "is_retrograde": true,
+        "speed": -0.013624
+      },
+      "Rahu": {
+        "longitude": 17.524657,
+        "sign_index": 0,
+        "degree_in_sign": 17.524657,
+        "is_retrograde": true,
+        "speed": -0.052993
+      },
+      "Ketu": {
+        "longitude": 197.524657,
+        "sign_index": 6,
+        "degree_in_sign": 17.524657,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 62867,
+  "name": "Corsini, Catherine",
+  "given_name": "Catherine Corsini",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435611.819444,
+    "year": 1956,
+    "month": 5,
+    "day": 18,
+    "calendar": "g",
+    "time": "08:40",
+    "time_type": "s",
+    "hour": 8.666667,
+    "time_unknown": false,
+    "place": "Dreux",
+    "country": "France",
+    "lat": 48.733333,
+    "lon": 1.366667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corsini,_Catherine",
+  "source_notes": "Didier Geslain archive, 'Cinema Realisateurs' pdf file, p. 67.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 1.969086,
+    "lagna": 61.969086,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.247791,
+    "jd_ut": 2435611.819444,
+    "planets": {
+      "Sun": {
+        "longitude": 34.080607,
+        "sign_index": 1,
+        "degree_in_sign": 4.080607,
+        "is_retrograde": false,
+        "speed": 0.962661
+      },
+      "Moon": {
+        "longitude": 138.666047,
+        "sign_index": 4,
+        "degree_in_sign": 18.666047,
+        "is_retrograde": false,
+        "speed": 17.221624
+      },
+      "Mars": {
+        "longitude": 297.47984,
+        "sign_index": 9,
+        "degree_in_sign": 27.47984,
+        "is_retrograde": false,
+        "speed": 0.59702
+      },
+      "Mercury": {
+        "longitude": 45.065214,
+        "sign_index": 1,
+        "degree_in_sign": 15.065214,
+        "is_retrograde": true,
+        "speed": -0.283906
+      },
+      "Jupiter": {
+        "longitude": 119.641001,
+        "sign_index": 3,
+        "degree_in_sign": 29.641001,
+        "is_retrograde": false,
+        "speed": 0.088468
+      },
+      "Venus": {
+        "longitude": 72.570737,
+        "sign_index": 2,
+        "degree_in_sign": 12.570737,
+        "is_retrograde": false,
+        "speed": 0.448127
+      },
+      "Saturn": {
+        "longitude": 216.438965,
+        "sign_index": 7,
+        "degree_in_sign": 6.438965,
+        "is_retrograde": true,
+        "speed": -0.074558
+      },
+      "Rahu": {
+        "longitude": 225.519059,
+        "sign_index": 7,
+        "degree_in_sign": 15.519059,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 45.519059,
+        "sign_index": 1,
+        "degree_in_sign": 15.519059,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

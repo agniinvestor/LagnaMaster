@@ -1,0 +1,108 @@
+{
+  "adb_id": 84745,
+  "name": "Caballero, Luis",
+  "given_name": "Luis Caballero",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406687.398565,
+    "year": 1877,
+    "month": 3,
+    "day": 8,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Jiménez (Tamaulipas)",
+    "country": "Mexico",
+    "lat": 24.216667,
+    "lon": -98.483333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caballero,_Luis",
+  "source_notes": "Sy Scholfield provided birth record.\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 23.549643,
+    "lagna": 83.549643,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.14199,
+    "jd_ut": 2406687.398565,
+    "planets": {
+      "Sun": {
+        "longitude": 326.3126,
+        "sign_index": 10,
+        "degree_in_sign": 26.3126,
+        "is_retrograde": false,
+        "speed": 0.99874
+      },
+      "Moon": {
+        "longitude": 257.468968,
+        "sign_index": 8,
+        "degree_in_sign": 17.468968,
+        "is_retrograde": false,
+        "speed": 13.829815
+      },
+      "Mars": {
+        "longitude": 252.609205,
+        "sign_index": 8,
+        "degree_in_sign": 12.609205,
+        "is_retrograde": false,
+        "speed": 0.650277
+      },
+      "Mercury": {
+        "longitude": 303.849304,
+        "sign_index": 10,
+        "degree_in_sign": 3.849304,
+        "is_retrograde": false,
+        "speed": 1.471451
+      },
+      "Jupiter": {
+        "longitude": 248.825251,
+        "sign_index": 8,
+        "degree_in_sign": 8.825251,
+        "is_retrograde": false,
+        "speed": 0.12026
+      },
+      "Venus": {
+        "longitude": 311.180267,
+        "sign_index": 10,
+        "degree_in_sign": 11.180267,
+        "is_retrograde": false,
+        "speed": 1.243412
+      },
+      "Saturn": {
+        "longitude": 319.47333,
+        "sign_index": 10,
+        "degree_in_sign": 19.47333,
+        "is_retrograde": false,
+        "speed": 0.121828
+      },
+      "Rahu": {
+        "longitude": 318.284633,
+        "sign_index": 10,
+        "degree_in_sign": 18.284633,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 138.284633,
+        "sign_index": 4,
+        "degree_in_sign": 18.284633,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

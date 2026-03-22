@@ -1,0 +1,112 @@
+{
+  "adb_id": 81108,
+  "name": "Curtius, Ernst",
+  "given_name": "Ernst Curtius",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2383853.84537,
+    "year": 1814,
+    "month": 9,
+    "day": 2,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Lübeck",
+    "country": "Germany",
+    "lat": 53.866667,
+    "lon": 10.666667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curtius,_Ernst",
+  "source_notes": "Grazia Bordoni's Science file quotes Taeger.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Science : Other Science",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 5.109293,
+    "lagna": 155.109293,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.269319,
+    "jd_ut": 2383853.84537,
+    "planets": {
+      "Sun": {
+        "longitude": 137.917479,
+        "sign_index": 4,
+        "degree_in_sign": 17.917479,
+        "is_retrograde": false,
+        "speed": 0.968998
+      },
+      "Moon": {
+        "longitude": 345.64387,
+        "sign_index": 11,
+        "degree_in_sign": 15.64387,
+        "is_retrograde": false,
+        "speed": 14.04356
+      },
+      "Mars": {
+        "longitude": 137.900609,
+        "sign_index": 4,
+        "degree_in_sign": 17.900609,
+        "is_retrograde": false,
+        "speed": 0.637854
+      },
+      "Mercury": {
+        "longitude": 121.464893,
+        "sign_index": 4,
+        "degree_in_sign": 1.464893,
+        "is_retrograde": false,
+        "speed": 1.534756
+      },
+      "Jupiter": {
+        "longitude": 146.818363,
+        "sign_index": 4,
+        "degree_in_sign": 26.818363,
+        "is_retrograde": false,
+        "speed": 0.214812
+      },
+      "Venus": {
+        "longitude": 109.443385,
+        "sign_index": 3,
+        "degree_in_sign": 19.443385,
+        "is_retrograde": false,
+        "speed": 1.210983
+      },
+      "Saturn": {
+        "longitude": 273.449927,
+        "sign_index": 9,
+        "degree_in_sign": 3.449927,
+        "is_retrograde": true,
+        "speed": -0.041678
+      },
+      "Rahu": {
+        "longitude": 88.283915,
+        "sign_index": 2,
+        "degree_in_sign": 28.283915,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 268.283915,
+        "sign_index": 8,
+        "degree_in_sign": 28.283915,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

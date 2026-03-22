@@ -1,0 +1,108 @@
+{
+  "adb_id": 55327,
+  "name": "Collins, Bootsy",
+  "given_name": "Bootsy Collins",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433946.041667,
+    "year": 1951,
+    "month": 10,
+    "day": 26,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Cincinnati",
+    "country": "Ohio",
+    "lat": 39.166667,
+    "lon": -84.45
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Bootsy",
+  "source_notes": "Manfred Gregor quotes him personally.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 27.278751,
+    "lagna": 177.278751,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.184097,
+    "jd_ut": 2433946.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 189.115858,
+        "sign_index": 6,
+        "degree_in_sign": 9.115858,
+        "is_retrograde": false,
+        "speed": 0.997692
+      },
+      "Moon": {
+        "longitude": 139.207271,
+        "sign_index": 4,
+        "degree_in_sign": 19.207271,
+        "is_retrograde": false,
+        "speed": 8.731941
+      },
+      "Mars": {
+        "longitude": 139.919253,
+        "sign_index": 4,
+        "degree_in_sign": 19.919253,
+        "is_retrograde": false,
+        "speed": 0.60108
+      },
+      "Mercury": {
+        "longitude": 197.474317,
+        "sign_index": 6,
+        "degree_in_sign": 17.474317,
+        "is_retrograde": false,
+        "speed": 1.576981
+      },
+      "Jupiter": {
+        "longitude": 343.03719,
+        "sign_index": 11,
+        "degree_in_sign": 13.03719,
+        "is_retrograde": true,
+        "speed": -0.107073
+      },
+      "Venus": {
+        "longitude": 143.987122,
+        "sign_index": 4,
+        "degree_in_sign": 23.987122,
+        "is_retrograde": false,
+        "speed": 0.816407
+      },
+      "Saturn": {
+        "longitude": 165.577919,
+        "sign_index": 5,
+        "degree_in_sign": 15.577919,
+        "is_retrograde": false,
+        "speed": 0.116834
+      },
+      "Rahu": {
+        "longitude": 313.792048,
+        "sign_index": 10,
+        "degree_in_sign": 13.792048,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 133.792048,
+        "sign_index": 4,
+        "degree_in_sign": 13.792048,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

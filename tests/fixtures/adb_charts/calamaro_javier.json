@@ -1,0 +1,108 @@
+{
+  "adb_id": 71736,
+  "name": "Calamaro, Javier",
+  "given_name": "Javier Calamaro",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438964.291667,
+    "year": 1965,
+    "month": 7,
+    "day": 22,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6,
+    "lon": -58.45
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calamaro,_Javier",
+  "source_notes": "Castellanos quotes the astrologer Virginia Lopez, priviate source.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 17.12819,
+    "lagna": 227.12819,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.375983,
+    "jd_ut": 2438964.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 96.35761,
+        "sign_index": 3,
+        "degree_in_sign": 6.35761,
+        "is_retrograde": false,
+        "speed": 0.954937
+      },
+      "Moon": {
+        "longitude": 18.648733,
+        "sign_index": 0,
+        "degree_in_sign": 18.648733,
+        "is_retrograde": false,
+        "speed": 15.745587
+      },
+      "Mars": {
+        "longitude": 169.351252,
+        "sign_index": 5,
+        "degree_in_sign": 19.351252,
+        "is_retrograde": false,
+        "speed": 0.568621
+      },
+      "Mercury": {
+        "longitude": 122.734486,
+        "sign_index": 4,
+        "degree_in_sign": 2.734486,
+        "is_retrograde": false,
+        "speed": 0.73934
+      },
+      "Jupiter": {
+        "longitude": 57.249661,
+        "sign_index": 1,
+        "degree_in_sign": 27.249661,
+        "is_retrograde": false,
+        "speed": 0.204219
+      },
+      "Venus": {
+        "longitude": 123.205945,
+        "sign_index": 4,
+        "degree_in_sign": 3.205945,
+        "is_retrograde": false,
+        "speed": 1.210909
+      },
+      "Saturn": {
+        "longitude": 323.358513,
+        "sign_index": 10,
+        "degree_in_sign": 23.358513,
+        "is_retrograde": true,
+        "speed": -0.039066
+      },
+      "Rahu": {
+        "longitude": 47.864685,
+        "sign_index": 1,
+        "degree_in_sign": 17.864685,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 227.864685,
+        "sign_index": 7,
+        "degree_in_sign": 17.864685,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

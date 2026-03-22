@@ -1,0 +1,109 @@
+{
+  "adb_id": 72889,
+  "name": "Christensen, Pelle",
+  "given_name": "Pelle Christensen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423487.961806,
+    "year": 1923,
+    "month": 3,
+    "day": 9,
+    "calendar": "g",
+    "time": "12:05",
+    "time_type": "s",
+    "hour": 12.083333,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christensen,_Pelle",
+  "source_notes": "Viktor E. quotes certificate of live birth in hand.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Writers : Translator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 8.149852,
+    "lagna": 68.149852,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.78424,
+    "jd_ut": 2423487.961806,
+    "planets": {
+      "Sun": {
+        "longitude": 325.077858,
+        "sign_index": 10,
+        "degree_in_sign": 25.077858,
+        "is_retrograde": false,
+        "speed": 0.999327
+      },
+      "Moon": {
+        "longitude": 230.754976,
+        "sign_index": 7,
+        "degree_in_sign": 20.754976,
+        "is_retrograde": false,
+        "speed": 13.587441
+      },
+      "Mars": {
+        "longitude": 11.061829,
+        "sign_index": 0,
+        "degree_in_sign": 11.061829,
+        "is_retrograde": false,
+        "speed": 0.706141
+      },
+      "Mercury": {
+        "longitude": 301.836924,
+        "sign_index": 10,
+        "degree_in_sign": 1.836924,
+        "is_retrograde": false,
+        "speed": 1.435331
+      },
+      "Jupiter": {
+        "longitude": 206.134426,
+        "sign_index": 6,
+        "degree_in_sign": 26.134426,
+        "is_retrograde": true,
+        "speed": -0.011553
+      },
+      "Venus": {
+        "longitude": 280.877936,
+        "sign_index": 9,
+        "degree_in_sign": 10.877936,
+        "is_retrograde": false,
+        "speed": 1.138225
+      },
+      "Saturn": {
+        "longitude": 176.080767,
+        "sign_index": 5,
+        "degree_in_sign": 26.080767,
+        "is_retrograde": true,
+        "speed": -0.060165
+      },
+      "Rahu": {
+        "longitude": 147.987367,
+        "sign_index": 4,
+        "degree_in_sign": 27.987367,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 327.987367,
+        "sign_index": 10,
+        "degree_in_sign": 27.987367,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

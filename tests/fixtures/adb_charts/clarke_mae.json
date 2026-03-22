@@ -1,0 +1,119 @@
+{
+  "adb_id": 86882,
+  "name": "Clarke, Mae",
+  "given_name": "Mae Clarke",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418899.708333,
+    "year": 1910,
+    "month": 8,
+    "day": 16,
+    "calendar": "g",
+    "time": "00:00",
+    "time_type": "s",
+    "hour": 0.0,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarke,_Mae",
+  "source_notes": "Sy Scholfield provided birth certificate: born at \"12 AM.\"\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Family : Relationship : Number of Divorces",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids none",
+    "Personal : Death : Illness/ Disease",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Education : Teacher",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Dancer/ Teacher",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 0.03711,
+    "lagna": 30.03711,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.608828,
+    "jd_ut": 2418899.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 119.837024,
+        "sign_index": 3,
+        "degree_in_sign": 29.837024,
+        "is_retrograde": false,
+        "speed": 0.961078
+      },
+      "Moon": {
+        "longitude": 243.693268,
+        "sign_index": 8,
+        "degree_in_sign": 3.693268,
+        "is_retrograde": false,
+        "speed": 9.879079
+      },
+      "Mars": {
+        "longitude": 133.827652,
+        "sign_index": 4,
+        "degree_in_sign": 13.827652,
+        "is_retrograde": false,
+        "speed": 0.633957
+      },
+      "Mercury": {
+        "longitude": 143.18005,
+        "sign_index": 4,
+        "degree_in_sign": 23.18005,
+        "is_retrograde": false,
+        "speed": 1.444276
+      },
+      "Jupiter": {
+        "longitude": 169.350676,
+        "sign_index": 5,
+        "degree_in_sign": 19.350676,
+        "is_retrograde": false,
+        "speed": 0.173067
+      },
+      "Venus": {
+        "longitude": 93.712041,
+        "sign_index": 3,
+        "degree_in_sign": 3.712041,
+        "is_retrograde": false,
+        "speed": 1.210456
+      },
+      "Saturn": {
+        "longitude": 13.968537,
+        "sign_index": 0,
+        "degree_in_sign": 13.968537,
+        "is_retrograde": false,
+        "speed": 0.005783
+      },
+      "Rahu": {
+        "longitude": 31.12852,
+        "sign_index": 1,
+        "degree_in_sign": 1.12852,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 211.12852,
+        "sign_index": 7,
+        "degree_in_sign": 1.12852,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

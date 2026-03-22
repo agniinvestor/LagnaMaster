@@ -1,0 +1,111 @@
+{
+  "adb_id": 55884,
+  "name": "Chambaz, Bernard",
+  "given_name": "Bernard Chambaz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433054.520833,
+    "year": 1949,
+    "month": 5,
+    "day": 18,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Boulogne Billancourt",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chambaz,_Bernard",
+  "source_notes": "Collection Didier Geslain (EC DG 811)\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 25.575135,
+    "lagna": 265.575135,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.150008,
+    "jd_ut": 2433054.520833,
+    "planets": {
+      "Sun": {
+        "longitude": 33.590728,
+        "sign_index": 1,
+        "degree_in_sign": 3.590728,
+        "is_retrograde": false,
+        "speed": 0.962741
+      },
+      "Moon": {
+        "longitude": 283.64488,
+        "sign_index": 9,
+        "degree_in_sign": 13.64488,
+        "is_retrograde": false,
+        "speed": 10.679557
+      },
+      "Mars": {
+        "longitude": 20.164947,
+        "sign_index": 0,
+        "degree_in_sign": 20.164947,
+        "is_retrograde": false,
+        "speed": 0.735273
+      },
+      "Mercury": {
+        "longitude": 53.04211,
+        "sign_index": 1,
+        "degree_in_sign": 23.04211,
+        "is_retrograde": false,
+        "speed": 0.407207
+      },
+      "Jupiter": {
+        "longitude": 279.013625,
+        "sign_index": 9,
+        "degree_in_sign": 9.013625,
+        "is_retrograde": false,
+        "speed": 0.008318
+      },
+      "Venus": {
+        "longitude": 41.775775,
+        "sign_index": 1,
+        "degree_in_sign": 11.775775,
+        "is_retrograde": false,
+        "speed": 1.229477
+      },
+      "Saturn": {
+        "longitude": 126.407876,
+        "sign_index": 4,
+        "degree_in_sign": 6.407876,
+        "is_retrograde": false,
+        "speed": 0.028964
+      },
+      "Rahu": {
+        "longitude": 1.035573,
+        "sign_index": 0,
+        "degree_in_sign": 1.035573,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 181.035573,
+        "sign_index": 6,
+        "degree_in_sign": 1.035573,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

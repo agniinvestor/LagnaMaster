@@ -1,0 +1,108 @@
+{
+  "adb_id": 68830,
+  "name": "Charrier, Bernard",
+  "given_name": "Bernard Charrier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429114.708333,
+    "year": 1938,
+    "month": 8,
+    "day": 4,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "d",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Nantes",
+    "country": "France",
+    "lat": 47.216667,
+    "lon": -1.55
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charrier,_Bernard",
+  "source_notes": "Didier Geslain archive, 'religion1' pdf file, p. 66.\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 26.463592,
+    "lagna": 86.463592,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.999368,
+    "jd_ut": 2429114.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 108.156503,
+        "sign_index": 3,
+        "degree_in_sign": 18.156503,
+        "is_retrograde": false,
+        "speed": 0.957408
+      },
+      "Moon": {
+        "longitude": 210.779301,
+        "sign_index": 7,
+        "degree_in_sign": 0.779301,
+        "is_retrograde": false,
+        "speed": 15.256309
+      },
+      "Mars": {
+        "longitude": 104.894824,
+        "sign_index": 3,
+        "degree_in_sign": 14.894824,
+        "is_retrograde": false,
+        "speed": 0.641665
+      },
+      "Mercury": {
+        "longitude": 135.038664,
+        "sign_index": 4,
+        "degree_in_sign": 15.038664,
+        "is_retrograde": false,
+        "speed": 0.765333
+      },
+      "Jupiter": {
+        "longitude": 306.418872,
+        "sign_index": 10,
+        "degree_in_sign": 6.418872,
+        "is_retrograde": true,
+        "speed": -0.117923
+      },
+      "Venus": {
+        "longitude": 150.903164,
+        "sign_index": 5,
+        "degree_in_sign": 0.903164,
+        "is_retrograde": false,
+        "speed": 1.119344
+      },
+      "Saturn": {
+        "longitude": 355.029357,
+        "sign_index": 11,
+        "degree_in_sign": 25.029357,
+        "is_retrograde": true,
+        "speed": -0.007284
+      },
+      "Rahu": {
+        "longitude": 209.814377,
+        "sign_index": 6,
+        "degree_in_sign": 29.814377,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 29.814377,
+        "sign_index": 0,
+        "degree_in_sign": 29.814377,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

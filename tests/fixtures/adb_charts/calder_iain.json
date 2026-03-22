@@ -1,0 +1,109 @@
+{
+  "adb_id": 47725,
+  "name": "Calder, Iain",
+  "given_name": "Iain Calder",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429321.625,
+    "year": 1939,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Falkirk",
+    "country": "Scotland",
+    "lat": 56.0,
+    "lon": -3.8
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calder,_Iain",
+  "source_notes": "Pulsar No. 9 quotes B.C.\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 25.577559,
+    "lagna": 205.577559,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.00728,
+    "jd_ut": 2429321.625,
+    "planets": {
+      "Sun": {
+        "longitude": 314.617706,
+        "sign_index": 10,
+        "degree_in_sign": 14.617706,
+        "is_retrograde": false,
+        "speed": 1.004766
+      },
+      "Moon": {
+        "longitude": 43.847397,
+        "sign_index": 1,
+        "degree_in_sign": 13.847397,
+        "is_retrograde": false,
+        "speed": 15.637748
+      },
+      "Mars": {
+        "longitude": 234.227725,
+        "sign_index": 7,
+        "degree_in_sign": 24.227725,
+        "is_retrograde": false,
+        "speed": 0.58812
+      },
+      "Mercury": {
+        "longitude": 321.567108,
+        "sign_index": 10,
+        "degree_in_sign": 21.567108,
+        "is_retrograde": false,
+        "speed": 1.903259
+      },
+      "Jupiter": {
+        "longitude": 320.238144,
+        "sign_index": 10,
+        "degree_in_sign": 20.238144,
+        "is_retrograde": false,
+        "speed": 0.241374
+      },
+      "Venus": {
+        "longitude": 269.685003,
+        "sign_index": 8,
+        "degree_in_sign": 29.685003,
+        "is_retrograde": false,
+        "speed": 1.127252
+      },
+      "Saturn": {
+        "longitude": 352.737488,
+        "sign_index": 11,
+        "degree_in_sign": 22.737488,
+        "is_retrograde": false,
+        "speed": 0.108479
+      },
+      "Rahu": {
+        "longitude": 198.849434,
+        "sign_index": 6,
+        "degree_in_sign": 18.849434,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.849434,
+        "sign_index": 0,
+        "degree_in_sign": 18.849434,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

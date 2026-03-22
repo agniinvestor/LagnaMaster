@@ -1,0 +1,109 @@
+{
+  "adb_id": 69145,
+  "name": "Cohen, Didier",
+  "given_name": "Didier Cohen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434072.888889,
+    "year": 1952,
+    "month": 3,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:20",
+    "time_type": "s",
+    "hour": 10.333333,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Didier",
+  "source_notes": "Didier Geslain archive, 'romans noirs (religion3)' pdf file, p. 31.\\n",
+  "categories": [
+    "Vocation : Art : Photography",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 11.547714,
+    "lagna": 11.547714,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.188947,
+    "jd_ut": 2434072.888889,
+    "planets": {
+      "Sun": {
+        "longitude": 317.557567,
+        "sign_index": 10,
+        "degree_in_sign": 17.557567,
+        "is_retrograde": false,
+        "speed": 1.003481
+      },
+      "Moon": {
+        "longitude": 22.730311,
+        "sign_index": 0,
+        "degree_in_sign": 22.730311,
+        "is_retrograde": false,
+        "speed": 14.049127
+      },
+      "Mars": {
+        "longitude": 202.115298,
+        "sign_index": 6,
+        "degree_in_sign": 22.115298,
+        "is_retrograde": false,
+        "speed": 0.244925
+      },
+      "Mercury": {
+        "longitude": 324.843708,
+        "sign_index": 10,
+        "degree_in_sign": 24.843708,
+        "is_retrograde": false,
+        "speed": 1.91646
+      },
+      "Jupiter": {
+        "longitude": 353.056273,
+        "sign_index": 11,
+        "degree_in_sign": 23.056273,
+        "is_retrograde": false,
+        "speed": 0.218828
+      },
+      "Venus": {
+        "longitude": 288.103455,
+        "sign_index": 9,
+        "degree_in_sign": 18.103455,
+        "is_retrograde": false,
+        "speed": 1.229302
+      },
+      "Saturn": {
+        "longitude": 170.650346,
+        "sign_index": 5,
+        "degree_in_sign": 20.650346,
+        "is_retrograde": true,
+        "speed": -0.058397
+      },
+      "Rahu": {
+        "longitude": 307.070153,
+        "sign_index": 10,
+        "degree_in_sign": 7.070153,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 127.070153,
+        "sign_index": 4,
+        "degree_in_sign": 7.070153,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

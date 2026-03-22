@@ -1,0 +1,108 @@
+{
+  "adb_id": 74232,
+  "name": "Chavez, Ignacio",
+  "given_name": "Ignacio Chavez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413955.822176,
+    "year": 1897,
+    "month": 1,
+    "day": 31,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Zirándaro",
+    "country": "Mexico",
+    "lat": 18.45,
+    "lon": -100.983333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "cap",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chavez,_Ignacio",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 7.051546,
+    "lagna": 187.051546,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.41983,
+    "jd_ut": 2413955.822176,
+    "planets": {
+      "Sun": {
+        "longitude": 289.331705,
+        "sign_index": 9,
+        "degree_in_sign": 19.331705,
+        "is_retrograde": false,
+        "speed": 1.015033
+      },
+      "Moon": {
+        "longitude": 270.963968,
+        "sign_index": 9,
+        "degree_in_sign": 0.963968,
+        "is_retrograde": false,
+        "speed": 18.032629
+      },
+      "Mars": {
+        "longitude": 50.472669,
+        "sign_index": 1,
+        "degree_in_sign": 20.472669,
+        "is_retrograde": false,
+        "speed": 0.170397
+      },
+      "Mercury": {
+        "longitude": 272.078728,
+        "sign_index": 9,
+        "degree_in_sign": 2.078728,
+        "is_retrograde": true,
+        "speed": -0.416987
+      },
+      "Jupiter": {
+        "longitude": 135.707184,
+        "sign_index": 4,
+        "degree_in_sign": 15.707184,
+        "is_retrograde": true,
+        "speed": -0.106466
+      },
+      "Venus": {
+        "longitude": 335.269758,
+        "sign_index": 11,
+        "degree_in_sign": 5.269758,
+        "is_retrograde": false,
+        "speed": 1.096259
+      },
+      "Saturn": {
+        "longitude": 217.173328,
+        "sign_index": 7,
+        "degree_in_sign": 7.173328,
+        "is_retrograde": false,
+        "speed": 0.060709
+      },
+      "Rahu": {
+        "longitude": 293.115459,
+        "sign_index": 9,
+        "degree_in_sign": 23.115459,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 113.115459,
+        "sign_index": 3,
+        "degree_in_sign": 23.115459,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 80398,
+  "name": "Charlotte Albertine, Princess of Prussia",
+  "given_name": "Princess of Prussia Charlotte Albertine",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2346845.369167,
+    "year": 1713,
+    "month": 5,
+    "day": 5,
+    "calendar": "g",
+    "time": "21:45",
+    "time_type": "l",
+    "hour": 21.75,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlotte_Albertine,_Princess_of_Prussia",
+  "source_notes": "Sy Scholfield quotes news report from \"Haerlemse courante,\" 13 May 1713, p. 2: \"Berlijn den 6 Mey. Gifteren avont quartier voor 10 uuren is de Koningin van een Princes in 't Kraembed bevallen.\"\\n(Berlin, 6 May. Last night at a quarter before 10 o'clock, the Queen gave birth to a Princess).\\n",
+  "categories": [
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.07758,
+    "lagna": 210.07758,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.855409,
+    "jd_ut": 2346845.369167,
+    "planets": {
+      "Sun": {
+        "longitude": 25.248294,
+        "sign_index": 0,
+        "degree_in_sign": 25.248294,
+        "is_retrograde": false,
+        "speed": 0.965862
+      },
+      "Moon": {
+        "longitude": 149.557203,
+        "sign_index": 4,
+        "degree_in_sign": 29.557203,
+        "is_retrograde": false,
+        "speed": 9.556519
+      },
+      "Mars": {
+        "longitude": 144.233795,
+        "sign_index": 4,
+        "degree_in_sign": 24.233795,
+        "is_retrograde": false,
+        "speed": 0.132771
+      },
+      "Mercury": {
+        "longitude": 40.256401,
+        "sign_index": 1,
+        "degree_in_sign": 10.256401,
+        "is_retrograde": true,
+        "speed": -0.003471
+      },
+      "Jupiter": {
+        "longitude": 318.263966,
+        "sign_index": 10,
+        "degree_in_sign": 18.263966,
+        "is_retrograde": false,
+        "speed": 0.157469
+      },
+      "Venus": {
+        "longitude": 67.785577,
+        "sign_index": 2,
+        "degree_in_sign": 7.785577,
+        "is_retrograde": false,
+        "speed": 0.67647
+      },
+      "Saturn": {
+        "longitude": 121.336982,
+        "sign_index": 4,
+        "degree_in_sign": 1.336982,
+        "is_retrograde": false,
+        "speed": 0.023261
+      },
+      "Rahu": {
+        "longitude": 249.445902,
+        "sign_index": 8,
+        "degree_in_sign": 9.445902,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 69.445902,
+        "sign_index": 2,
+        "degree_in_sign": 9.445902,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

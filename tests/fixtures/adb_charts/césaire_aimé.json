@@ -1,0 +1,113 @@
+{
+  "adb_id": 55022,
+  "name": "Césaire, Aimé",
+  "given_name": "Aimé Césaire",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419945.5,
+    "year": 1913,
+    "month": 6,
+    "day": 26,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Basse-Pointe",
+    "country": "Martinique",
+    "lat": 14.866667,
+    "lon": -61.116667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Césaire,_Aimé",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 79.\\nPaddy de Jabrun quotes birth certificate\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Heart",
+    "Personal : Death : Illness/ Disease",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Activist/ social",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 10.24701,
+    "lagna": 250.24701,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.648809,
+    "jd_ut": 2419945.5,
+    "planets": {
+      "Sun": {
+        "longitude": 72.073025,
+        "sign_index": 2,
+        "degree_in_sign": 12.073025,
+        "is_retrograde": false,
+        "speed": 0.953543
+      },
+      "Moon": {
+        "longitude": 345.207484,
+        "sign_index": 11,
+        "degree_in_sign": 15.207484,
+        "is_retrograde": false,
+        "speed": 16.320986
+      },
+      "Mars": {
+        "longitude": 14.621885,
+        "sign_index": 0,
+        "degree_in_sign": 14.621885,
+        "is_retrograde": false,
+        "speed": 0.723342
+      },
+      "Mercury": {
+        "longitude": 95.609273,
+        "sign_index": 3,
+        "degree_in_sign": 5.609273,
+        "is_retrograde": false,
+        "speed": 1.437172
+      },
+      "Jupiter": {
+        "longitude": 261.395079,
+        "sign_index": 8,
+        "degree_in_sign": 21.395079,
+        "is_retrograde": true,
+        "speed": -0.124948
+      },
+      "Venus": {
+        "longitude": 26.629884,
+        "sign_index": 0,
+        "degree_in_sign": 26.629884,
+        "is_retrograde": false,
+        "speed": 0.89649
+      },
+      "Saturn": {
+        "longitude": 48.512736,
+        "sign_index": 1,
+        "degree_in_sign": 18.512736,
+        "is_retrograde": false,
+        "speed": 0.12291
+      },
+      "Rahu": {
+        "longitude": 335.709826,
+        "sign_index": 11,
+        "degree_in_sign": 5.709826,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 155.709826,
+        "sign_index": 5,
+        "degree_in_sign": 5.709826,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

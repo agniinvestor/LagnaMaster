@@ -1,0 +1,109 @@
+{
+  "adb_id": 60283,
+  "name": "Cavour, Camillo",
+  "given_name": "Camillo Cavour",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2382370.218287,
+    "year": 1810,
+    "month": 8,
+    "day": 10,
+    "calendar": "g",
+    "time": "17:45",
+    "time_type": "l",
+    "hour": 17.75,
+    "time_unknown": false,
+    "place": "Turin",
+    "country": "Italy",
+    "lat": 45.05,
+    "lon": 7.666667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavour,_Camillo",
+  "source_notes": "Bordoni vol 1 quoting Barbault\\n",
+  "categories": [
+    "Vocation : Politics : Heads of state",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 6.774785,
+    "lagna": 246.774785,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.212624,
+    "jd_ut": 2382370.218287,
+    "planets": {
+      "Sun": {
+        "longitude": 116.119147,
+        "sign_index": 3,
+        "degree_in_sign": 26.119147,
+        "is_retrograde": false,
+        "speed": 0.95977
+      },
+      "Moon": {
+        "longitude": 237.770886,
+        "sign_index": 7,
+        "degree_in_sign": 27.770886,
+        "is_retrograde": false,
+        "speed": 10.852421
+      },
+      "Mars": {
+        "longitude": 99.521742,
+        "sign_index": 3,
+        "degree_in_sign": 9.521742,
+        "is_retrograde": false,
+        "speed": 0.644509
+      },
+      "Mercury": {
+        "longitude": 117.734635,
+        "sign_index": 3,
+        "degree_in_sign": 27.734635,
+        "is_retrograde": false,
+        "speed": 2.014835
+      },
+      "Jupiter": {
+        "longitude": 37.557586,
+        "sign_index": 1,
+        "degree_in_sign": 7.557586,
+        "is_retrograde": false,
+        "speed": 0.122099
+      },
+      "Venus": {
+        "longitude": 153.58349,
+        "sign_index": 5,
+        "degree_in_sign": 3.58349,
+        "is_retrograde": false,
+        "speed": 1.175773
+      },
+      "Saturn": {
+        "longitude": 227.46278,
+        "sign_index": 7,
+        "degree_in_sign": 17.46278,
+        "is_retrograde": true,
+        "speed": -0.004505
+      },
+      "Rahu": {
+        "longitude": 166.904566,
+        "sign_index": 5,
+        "degree_in_sign": 16.904566,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.904566,
+        "sign_index": 11,
+        "degree_in_sign": 16.904566,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

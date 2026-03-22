@@ -1,0 +1,108 @@
+{
+  "adb_id": 60490,
+  "name": "Coquard, Arthur",
+  "given_name": "Arthur Coquard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2395443.035185,
+    "year": 1846,
+    "month": 5,
+    "day": 26,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "l",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coquard,_Arthur",
+  "source_notes": "Taeger quotes Lescaut\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 8.353929,
+    "lagna": 128.353929,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.712214,
+    "jd_ut": 2395443.035185,
+    "planets": {
+      "Sun": {
+        "longitude": 43.121054,
+        "sign_index": 1,
+        "degree_in_sign": 13.121054,
+        "is_retrograde": false,
+        "speed": 0.959714
+      },
+      "Moon": {
+        "longitude": 58.791568,
+        "sign_index": 1,
+        "degree_in_sign": 28.791568,
+        "is_retrograde": false,
+        "speed": 8.825674
+      },
+      "Mars": {
+        "longitude": 77.836704,
+        "sign_index": 2,
+        "degree_in_sign": 17.836704,
+        "is_retrograde": false,
+        "speed": 0.634062
+      },
+      "Mercury": {
+        "longitude": 19.845217,
+        "sign_index": 0,
+        "degree_in_sign": 19.845217,
+        "is_retrograde": false,
+        "speed": 1.409235
+      },
+      "Jupiter": {
+        "longitude": 34.624111,
+        "sign_index": 1,
+        "degree_in_sign": 4.624111,
+        "is_retrograde": false,
+        "speed": 0.234595
+      },
+      "Venus": {
+        "longitude": 357.78286,
+        "sign_index": 11,
+        "degree_in_sign": 27.78286,
+        "is_retrograde": false,
+        "speed": 1.043818
+      },
+      "Saturn": {
+        "longitude": 308.908188,
+        "sign_index": 10,
+        "degree_in_sign": 8.908188,
+        "is_retrograde": false,
+        "speed": 0.02556
+      },
+      "Rahu": {
+        "longitude": 194.147553,
+        "sign_index": 6,
+        "degree_in_sign": 14.147553,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 14.147553,
+        "sign_index": 0,
+        "degree_in_sign": 14.147553,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

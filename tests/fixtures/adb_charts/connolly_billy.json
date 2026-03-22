@@ -1,0 +1,109 @@
+{
+  "adb_id": 9263,
+  "name": "Connolly, Billy",
+  "given_name": "Billy Connolly",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430687.645833,
+    "year": 1942,
+    "month": 11,
+    "day": 24,
+    "calendar": "g",
+    "time": "04:30",
+    "time_type": "d",
+    "hour": 4.5,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connolly,_Billy",
+  "source_notes": "Frank C. Clifford quotes Gerard for B.C. given in British Entertainers, 1997.\\n\\nFormerly, David Fisher quoted Mischa Bagley \"from him when accosted on the street\" for 5:00 PM.\\n\\nOn 22 September 2013 in a BCC radio 4 show he said \"6pm on the linoleum of a third floor Glasgow flat\", as reported by Mary English on the forum. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 27.632946,
+    "lagna": 147.632946,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.059509,
+    "jd_ut": 2430687.645833,
+    "planets": {
+      "Sun": {
+        "longitude": 218.164184,
+        "sign_index": 7,
+        "degree_in_sign": 8.164184,
+        "is_retrograde": false,
+        "speed": 1.010753
+      },
+      "Moon": {
+        "longitude": 52.223614,
+        "sign_index": 1,
+        "degree_in_sign": 22.223614,
+        "is_retrograde": false,
+        "speed": 9.514516
+      },
+      "Mars": {
+        "longitude": 202.014453,
+        "sign_index": 6,
+        "degree_in_sign": 22.014453,
+        "is_retrograde": false,
+        "speed": 0.685479
+      },
+      "Mercury": {
+        "longitude": 214.243982,
+        "sign_index": 7,
+        "degree_in_sign": 4.243982,
+        "is_retrograde": false,
+        "speed": 1.585115
+      },
+      "Jupiter": {
+        "longitude": 91.960346,
+        "sign_index": 3,
+        "degree_in_sign": 1.960346,
+        "is_retrograde": true,
+        "speed": -0.038231
+      },
+      "Venus": {
+        "longitude": 220.052267,
+        "sign_index": 7,
+        "degree_in_sign": 10.052267,
+        "is_retrograde": false,
+        "speed": 1.256595
+      },
+      "Saturn": {
+        "longitude": 46.606624,
+        "sign_index": 1,
+        "degree_in_sign": 16.606624,
+        "is_retrograde": true,
+        "speed": -0.080686
+      },
+      "Rahu": {
+        "longitude": 126.461164,
+        "sign_index": 4,
+        "degree_in_sign": 6.461164,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.461164,
+        "sign_index": 10,
+        "degree_in_sign": 6.461164,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

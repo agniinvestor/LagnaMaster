@@ -1,0 +1,109 @@
+{
+  "adb_id": 60113,
+  "name": "Camerini, Mario",
+  "given_name": "Mario Camerini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413231.375,
+    "year": 1895,
+    "month": 2,
+    "day": 6,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camerini,_Mario",
+  "source_notes": "Bordoni vol 2\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 26.36539,
+    "lagna": 146.36539,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.392137,
+    "jd_ut": 2413231.375,
+    "planets": {
+      "Sun": {
+        "longitude": 295.478797,
+        "sign_index": 9,
+        "degree_in_sign": 25.478797,
+        "is_retrograde": false,
+        "speed": 1.012314
+      },
+      "Moon": {
+        "longitude": 75.170158,
+        "sign_index": 2,
+        "degree_in_sign": 15.170158,
+        "is_retrograde": false,
+        "speed": 10.238871
+      },
+      "Mars": {
+        "longitude": 25.057557,
+        "sign_index": 0,
+        "degree_in_sign": 25.057557,
+        "is_retrograde": false,
+        "speed": 0.524419
+      },
+      "Mercury": {
+        "longitude": 313.206286,
+        "sign_index": 10,
+        "degree_in_sign": 13.206286,
+        "is_retrograde": false,
+        "speed": 1.305676
+      },
+      "Jupiter": {
+        "longitude": 64.166388,
+        "sign_index": 2,
+        "degree_in_sign": 4.166388,
+        "is_retrograde": true,
+        "speed": -0.044229
+      },
+      "Venus": {
+        "longitude": 311.740347,
+        "sign_index": 10,
+        "degree_in_sign": 11.740347,
+        "is_retrograde": false,
+        "speed": 1.248952
+      },
+      "Saturn": {
+        "longitude": 194.803449,
+        "sign_index": 6,
+        "degree_in_sign": 14.803449,
+        "is_retrograde": false,
+        "speed": 0.013954
+      },
+      "Rahu": {
+        "longitude": 331.505444,
+        "sign_index": 11,
+        "degree_in_sign": 1.505444,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 151.505444,
+        "sign_index": 5,
+        "degree_in_sign": 1.505444,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

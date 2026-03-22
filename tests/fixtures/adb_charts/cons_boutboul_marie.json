@@ -1,0 +1,113 @@
+{
+  "adb_id": 47237,
+  "name": "Cons-Boutboul, Marie",
+  "given_name": "Marie Cons-Boutboul",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423947.239583,
+    "year": 1924,
+    "month": 6,
+    "day": 10,
+    "calendar": "g",
+    "time": "18:45",
+    "time_type": "d",
+    "hour": 18.75,
+    "time_unknown": false,
+    "place": "Orléans",
+    "country": "France",
+    "lat": 47.916667,
+    "lon": 1.9
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cons-Boutboul,_Marie",
+  "source_notes": "Paddy de Jabrun quoted bc (cedra database).\\nPetitallot quotes B.C. in Cadran No.1, 10/1993\\n",
+  "categories": [
+    "Family : Relationship : Number of Divorces",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Passions : Criminal Perpetrator : Homicide single",
+    "Passions : Criminal Perpetrator : Prison sentence",
+    "Vocation : Law : Attorney"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 10.776041,
+    "lagna": 190.776041,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.801799,
+    "jd_ut": 2423947.239583,
+    "planets": {
+      "Sun": {
+        "longitude": 56.732546,
+        "sign_index": 1,
+        "degree_in_sign": 26.732546,
+        "is_retrograde": false,
+        "speed": 0.955586
+      },
+      "Moon": {
+        "longitude": 149.17683,
+        "sign_index": 4,
+        "degree_in_sign": 29.17683,
+        "is_retrograde": false,
+        "speed": 9.686985
+      },
+      "Mars": {
+        "longitude": 301.858212,
+        "sign_index": 10,
+        "degree_in_sign": 1.858212,
+        "is_retrograde": false,
+        "speed": 0.428447
+      },
+      "Mercury": {
+        "longitude": 33.984304,
+        "sign_index": 1,
+        "degree_in_sign": 3.984304,
+        "is_retrograde": false,
+        "speed": 1.320666
+      },
+      "Jupiter": {
+        "longitude": 231.63419,
+        "sign_index": 7,
+        "degree_in_sign": 21.63419,
+        "is_retrograde": true,
+        "speed": -0.126639
+      },
+      "Venus": {
+        "longitude": 84.774707,
+        "sign_index": 2,
+        "degree_in_sign": 24.774707,
+        "is_retrograde": true,
+        "speed": -0.027765
+      },
+      "Saturn": {
+        "longitude": 183.090286,
+        "sign_index": 6,
+        "degree_in_sign": 3.090286,
+        "is_retrograde": true,
+        "speed": -0.029449
+      },
+      "Rahu": {
+        "longitude": 123.64928,
+        "sign_index": 4,
+        "degree_in_sign": 3.64928,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 303.64928,
+        "sign_index": 10,
+        "degree_in_sign": 3.64928,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

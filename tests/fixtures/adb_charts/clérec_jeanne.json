@@ -1,0 +1,111 @@
+{
+  "adb_id": 100060,
+  "name": "Clérec, Jeanne",
+  "given_name": "Jeanne Clérec",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415594.649757,
+    "year": 1901,
+    "month": 7,
+    "day": 29,
+    "calendar": "g",
+    "time": "03:45",
+    "time_type": "s",
+    "hour": 3.75,
+    "time_unknown": false,
+    "place": "Brest",
+    "country": "France",
+    "lat": 48.4,
+    "lon": -4.483333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clérec,_Jeanne",
+  "source_notes": "Paddy de Jabrun quoted BC.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids - Noted",
+    "Lifestyle : Home : Expatriate"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 5.728219,
+    "lagna": 65.728219,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.482479,
+    "jd_ut": 2415594.649757,
+    "planets": {
+      "Sun": {
+        "longitude": 102.815768,
+        "sign_index": 3,
+        "degree_in_sign": 12.815768,
+        "is_retrograde": false,
+        "speed": 0.955737
+      },
+      "Moon": {
+        "longitude": 254.282708,
+        "sign_index": 8,
+        "degree_in_sign": 14.282708,
+        "is_retrograde": false,
+        "speed": 11.997424
+      },
+      "Mars": {
+        "longitude": 166.441444,
+        "sign_index": 5,
+        "degree_in_sign": 16.441444,
+        "is_retrograde": false,
+        "speed": 0.597763
+      },
+      "Mercury": {
+        "longitude": 84.608044,
+        "sign_index": 2,
+        "degree_in_sign": 24.608044,
+        "is_retrograde": false,
+        "speed": 0.483441
+      },
+      "Jupiter": {
+        "longitude": 252.364006,
+        "sign_index": 8,
+        "degree_in_sign": 12.364006,
+        "is_retrograde": true,
+        "speed": -0.094282
+      },
+      "Venus": {
+        "longitude": 126.721339,
+        "sign_index": 4,
+        "degree_in_sign": 6.721339,
+        "is_retrograde": false,
+        "speed": 1.217638
+      },
+      "Saturn": {
+        "longitude": 258.96756,
+        "sign_index": 8,
+        "degree_in_sign": 18.96756,
+        "is_retrograde": true,
+        "speed": -0.063888
+      },
+      "Rahu": {
+        "longitude": 206.270527,
+        "sign_index": 6,
+        "degree_in_sign": 26.270527,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 26.270527,
+        "sign_index": 0,
+        "degree_in_sign": 26.270527,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

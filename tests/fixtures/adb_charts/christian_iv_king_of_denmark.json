@@ -1,0 +1,110 @@
+{
+  "adb_id": 81328,
+  "name": "Christian IV, King of Denmark",
+  "given_name": "King of Denmark Christian IV",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2297159.132454,
+    "year": 1577,
+    "month": 4,
+    "day": 12,
+    "calendar": "j",
+    "time": "16:00",
+    "time_type": "l",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Hillerød",
+    "country": "Denmark",
+    "lat": 55.933333,
+    "lon": 12.316667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian_IV,_King_of_Denmark",
+  "source_notes": "Sy Scholfield quotes from ''Jahrbücher des Vereins für Mecklenburgische Geschichte und Altertumskunde'', Volume 9 (Verein, 1844), p. 142: \"Die Mutter der Konigin ward erfucht, zugegen zu sein, und sie kam den 19. März nach Frederiksborg; hier erfolgte die glückliche Niederkunft den 12. April 1577, Nachmittags 4 Uhr), und fast nach Verlauf eines Jahrhunderts ward den Reichen zum ersten Male eines regierenden Konigs ältester Sohn und präsumtiver Thronfolger geboren.\"\\n(The Queen's mother was asked to be present, and she came to Frederiksborg on the 19th of March, where the happy delivery took place on 12 April 1577 at four o'clock in the afternoon, and almost a century later, the Reich was born for the first time of a ruling king's eldest son and presumptuous heir).\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.3797,
+    "lagna": 144.3797,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.958135,
+    "jd_ut": 2297159.132454,
+    "planets": {
+      "Sun": {
+        "longitude": 14.226532,
+        "sign_index": 0,
+        "degree_in_sign": 14.226532,
+        "is_retrograde": false,
+        "speed": 0.971411
+      },
+      "Moon": {
+        "longitude": 312.463367,
+        "sign_index": 10,
+        "degree_in_sign": 12.463367,
+        "is_retrograde": false,
+        "speed": 13.34058
+      },
+      "Mars": {
+        "longitude": 53.62471,
+        "sign_index": 1,
+        "degree_in_sign": 23.62471,
+        "is_retrograde": false,
+        "speed": 0.652227
+      },
+      "Mercury": {
+        "longitude": 350.75995,
+        "sign_index": 11,
+        "degree_in_sign": 20.75995,
+        "is_retrograde": false,
+        "speed": 0.359275
+      },
+      "Jupiter": {
+        "longitude": 135.724228,
+        "sign_index": 4,
+        "degree_in_sign": 15.724228,
+        "is_retrograde": true,
+        "speed": -0.023717
+      },
+      "Venus": {
+        "longitude": 57.585339,
+        "sign_index": 1,
+        "degree_in_sign": 27.585339,
+        "is_retrograde": false,
+        "speed": 1.09813
+      },
+      "Saturn": {
+        "longitude": 264.52468,
+        "sign_index": 8,
+        "degree_in_sign": 24.52468,
+        "is_retrograde": true,
+        "speed": -0.001514
+      },
+      "Rahu": {
+        "longitude": 2.436359,
+        "sign_index": 0,
+        "degree_in_sign": 2.436359,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.436359,
+        "sign_index": 6,
+        "degree_in_sign": 2.436359,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

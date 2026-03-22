@@ -1,0 +1,108 @@
+{
+  "adb_id": 9317,
+  "name": "Clark, Greydon",
+  "given_name": "Greydon Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430763.131944,
+    "year": 1943,
+    "month": 2,
+    "day": 7,
+    "calendar": "g",
+    "time": "11:10",
+    "time_type": "w",
+    "hour": 11.166667,
+    "time_unknown": false,
+    "place": "Niles",
+    "country": "Michigan",
+    "lat": 41.833333,
+    "lon": -86.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Greydon",
+  "source_notes": "LMR quotes him, 1971\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 28.219289,
+    "lagna": 328.219289,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.062395,
+    "jd_ut": 2430763.131944,
+    "planets": {
+      "Sun": {
+        "longitude": 294.9179,
+        "sign_index": 9,
+        "degree_in_sign": 24.9179,
+        "is_retrograde": false,
+        "speed": 1.013218
+      },
+      "Moon": {
+        "longitude": 331.559599,
+        "sign_index": 11,
+        "degree_in_sign": 1.559599,
+        "is_retrograde": false,
+        "speed": 13.183082
+      },
+      "Mars": {
+        "longitude": 255.568012,
+        "sign_index": 8,
+        "degree_in_sign": 15.568012,
+        "is_retrograde": false,
+        "speed": 0.732329
+      },
+      "Mercury": {
+        "longitude": 272.102124,
+        "sign_index": 9,
+        "degree_in_sign": 2.102124,
+        "is_retrograde": false,
+        "speed": 0.234877
+      },
+      "Jupiter": {
+        "longitude": 83.787663,
+        "sign_index": 2,
+        "degree_in_sign": 23.787663,
+        "is_retrograde": true,
+        "speed": -0.098884
+      },
+      "Venus": {
+        "longitude": 314.746393,
+        "sign_index": 10,
+        "degree_in_sign": 14.746393,
+        "is_retrograde": false,
+        "speed": 1.246569
+      },
+      "Saturn": {
+        "longitude": 42.527833,
+        "sign_index": 1,
+        "degree_in_sign": 12.527833,
+        "is_retrograde": false,
+        "speed": 0.002465
+      },
+      "Rahu": {
+        "longitude": 122.460999,
+        "sign_index": 4,
+        "degree_in_sign": 2.460999,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 302.460999,
+        "sign_index": 10,
+        "degree_in_sign": 2.460999,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

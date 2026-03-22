@@ -1,0 +1,109 @@
+{
+  "adb_id": 19396,
+  "name": "Cypher, Bailey Jean",
+  "given_name": "Bailey Jean Cypher",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2450489.899306,
+    "year": 1997,
+    "month": 2,
+    "day": 10,
+    "calendar": "g",
+    "time": "01:35",
+    "time_type": "s",
+    "hour": 1.583333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cypher,_Bailey_Jean",
+  "source_notes": "LMR quotes The Globe, 25 Feb 1997, p.17.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Personal : Birth : Unusual circumstances"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 15.540342,
+    "lagna": 195.540342,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.816741,
+    "jd_ut": 2450489.899306,
+    "planets": {
+      "Sun": {
+        "longitude": 297.878051,
+        "sign_index": 9,
+        "degree_in_sign": 27.878051,
+        "is_retrograde": false,
+        "speed": 1.012222
+      },
+      "Moon": {
+        "longitude": 336.442456,
+        "sign_index": 11,
+        "degree_in_sign": 6.442456,
+        "is_retrograde": false,
+        "speed": 19.108628
+      },
+      "Mars": {
+        "longitude": 161.984565,
+        "sign_index": 5,
+        "degree_in_sign": 11.984565,
+        "is_retrograde": true,
+        "speed": -0.055627
+      },
+      "Mercury": {
+        "longitude": 277.853998,
+        "sign_index": 9,
+        "degree_in_sign": 7.853998,
+        "is_retrograde": false,
+        "speed": 1.4576
+      },
+      "Jupiter": {
+        "longitude": 280.802583,
+        "sign_index": 9,
+        "degree_in_sign": 10.802583,
+        "is_retrograde": false,
+        "speed": 0.230583
+      },
+      "Venus": {
+        "longitude": 285.215063,
+        "sign_index": 9,
+        "degree_in_sign": 15.215063,
+        "is_retrograde": false,
+        "speed": 1.25173
+      },
+      "Saturn": {
+        "longitude": 340.706232,
+        "sign_index": 11,
+        "degree_in_sign": 10.706232,
+        "is_retrograde": false,
+        "speed": 0.102944
+      },
+      "Rahu": {
+        "longitude": 157.099334,
+        "sign_index": 5,
+        "degree_in_sign": 7.099334,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 337.099334,
+        "sign_index": 11,
+        "degree_in_sign": 7.099334,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

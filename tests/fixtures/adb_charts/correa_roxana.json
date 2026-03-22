@@ -1,0 +1,109 @@
+{
+  "adb_id": 101354,
+  "name": "Correa, Roxana",
+  "given_name": "Roxana Correa",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439374.166667,
+    "year": 1966,
+    "month": 9,
+    "day": 5,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Pueblo Libre",
+    "country": "Peru",
+    "lat": -12.083333,
+    "lon": -77.066667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Correa,_Roxana",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Translator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.160013,
+    "lagna": 197.160013,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.391656,
+    "jd_ut": 2439374.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 139.245374,
+        "sign_index": 4,
+        "degree_in_sign": 19.245374,
+        "is_retrograde": false,
+        "speed": 0.96958
+      },
+      "Moon": {
+        "longitude": 20.441418,
+        "sign_index": 0,
+        "degree_in_sign": 20.441418,
+        "is_retrograde": false,
+        "speed": 13.161568
+      },
+      "Mars": {
+        "longitude": 103.630673,
+        "sign_index": 3,
+        "degree_in_sign": 13.630673,
+        "is_retrograde": false,
+        "speed": 0.63377
+      },
+      "Mercury": {
+        "longitude": 134.851848,
+        "sign_index": 4,
+        "degree_in_sign": 14.851848,
+        "is_retrograde": false,
+        "speed": 1.943286
+      },
+      "Jupiter": {
+        "longitude": 92.909517,
+        "sign_index": 3,
+        "degree_in_sign": 2.909517,
+        "is_retrograde": false,
+        "speed": 0.18595
+      },
+      "Venus": {
+        "longitude": 122.515736,
+        "sign_index": 4,
+        "degree_in_sign": 2.515736,
+        "is_retrograde": false,
+        "speed": 1.232755
+      },
+      "Saturn": {
+        "longitude": 333.942893,
+        "sign_index": 11,
+        "degree_in_sign": 3.942893,
+        "is_retrograde": true,
+        "speed": -0.073492
+      },
+      "Rahu": {
+        "longitude": 26.14457,
+        "sign_index": 0,
+        "degree_in_sign": 26.14457,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 206.14457,
+        "sign_index": 6,
+        "degree_in_sign": 26.14457,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

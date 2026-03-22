@@ -1,0 +1,108 @@
+{
+  "adb_id": 50745,
+  "name": "Carbone, Giuseppe",
+  "given_name": "Giuseppe Carbone",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429301.888889,
+    "year": 1939,
+    "month": 2,
+    "day": 7,
+    "calendar": "g",
+    "time": "10:20",
+    "time_type": "s",
+    "hour": 10.333333,
+    "time_unknown": false,
+    "place": "Messina",
+    "country": "Italy",
+    "lat": 38.183333,
+    "lon": 15.566667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carbone,_Giuseppe",
+  "source_notes": "Steinbrecher has copy of birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 19.089979,
+    "lagna": 349.089979,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.006525,
+    "jd_ut": 2429301.888889,
+    "planets": {
+      "Sun": {
+        "longitude": 294.698182,
+        "sign_index": 9,
+        "degree_in_sign": 24.698182,
+        "is_retrograde": false,
+        "speed": 1.012729
+      },
+      "Moon": {
+        "longitude": 157.073698,
+        "sign_index": 5,
+        "degree_in_sign": 7.073698,
+        "is_retrograde": false,
+        "speed": 16.033426
+      },
+      "Mars": {
+        "longitude": 222.442927,
+        "sign_index": 7,
+        "degree_in_sign": 12.442927,
+        "is_retrograde": false,
+        "speed": 0.604658
+      },
+      "Mercury": {
+        "longitude": 286.157285,
+        "sign_index": 9,
+        "degree_in_sign": 16.157285,
+        "is_retrograde": false,
+        "speed": 1.660538
+      },
+      "Jupiter": {
+        "longitude": 315.532284,
+        "sign_index": 10,
+        "degree_in_sign": 15.532284,
+        "is_retrograde": false,
+        "speed": 0.233935
+      },
+      "Venus": {
+        "longitude": 248.044527,
+        "sign_index": 8,
+        "degree_in_sign": 8.044527,
+        "is_retrograde": false,
+        "speed": 1.057247
+      },
+      "Saturn": {
+        "longitude": 350.784524,
+        "sign_index": 11,
+        "degree_in_sign": 20.784524,
+        "is_retrograde": false,
+        "speed": 0.088142
+      },
+      "Rahu": {
+        "longitude": 199.895292,
+        "sign_index": 6,
+        "degree_in_sign": 19.895292,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 19.895292,
+        "sign_index": 0,
+        "degree_in_sign": 19.895292,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

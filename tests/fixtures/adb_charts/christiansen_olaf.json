@@ -1,0 +1,109 @@
+{
+  "adb_id": 99138,
+  "name": "Christiansen, Olaf",
+  "given_name": "Olaf Christiansen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419518.729167,
+    "year": 1912,
+    "month": 4,
+    "day": 26,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christiansen,_Olaf",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 10.503587,
+    "lagna": 40.503587,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.632493,
+    "jd_ut": 2419518.729167,
+    "planets": {
+      "Sun": {
+        "longitude": 12.982711,
+        "sign_index": 0,
+        "degree_in_sign": 12.982711,
+        "is_retrograde": false,
+        "speed": 0.972359
+      },
+      "Moon": {
+        "longitude": 127.617833,
+        "sign_index": 4,
+        "degree_in_sign": 7.617833,
+        "is_retrograde": false,
+        "speed": 16.67218
+      },
+      "Mars": {
+        "longitude": 78.835568,
+        "sign_index": 2,
+        "degree_in_sign": 18.835568,
+        "is_retrograde": false,
+        "speed": 0.564048
+      },
+      "Mercury": {
+        "longitude": 356.56224,
+        "sign_index": 11,
+        "degree_in_sign": 26.56224,
+        "is_retrograde": true,
+        "speed": -0.227967
+      },
+      "Jupiter": {
+        "longitude": 231.83136,
+        "sign_index": 7,
+        "degree_in_sign": 21.83136,
+        "is_retrograde": true,
+        "speed": -0.07374
+      },
+      "Venus": {
+        "longitude": 354.065798,
+        "sign_index": 11,
+        "degree_in_sign": 24.065798,
+        "is_retrograde": false,
+        "speed": 1.226119
+      },
+      "Saturn": {
+        "longitude": 28.520382,
+        "sign_index": 0,
+        "degree_in_sign": 28.520382,
+        "is_retrograde": false,
+        "speed": 0.126178
+      },
+      "Rahu": {
+        "longitude": 358.325307,
+        "sign_index": 11,
+        "degree_in_sign": 28.325307,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 178.325307,
+        "sign_index": 5,
+        "degree_in_sign": 28.325307,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

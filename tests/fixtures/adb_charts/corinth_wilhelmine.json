@@ -1,0 +1,114 @@
+{
+  "adb_id": 105480,
+  "name": "Corinth, Wilhelmine",
+  "given_name": "Wilhelmine Corinth",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418471.4375,
+    "year": 1909,
+    "month": 6,
+    "day": 13,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "s",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corinth,_Wilhelmine",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. (Berlin Archives, no. 1821).\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 4.557694,
+    "lagna": 274.557694,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.592455,
+    "jd_ut": 2418471.4375,
+    "planets": {
+      "Sun": {
+        "longitude": 59.630953,
+        "sign_index": 1,
+        "degree_in_sign": 29.630953,
+        "is_retrograde": false,
+        "speed": 0.955266
+      },
+      "Moon": {
+        "longitude": 7.314125,
+        "sign_index": 0,
+        "degree_in_sign": 7.314125,
+        "is_retrograde": false,
+        "speed": 16.873329
+      },
+      "Mars": {
+        "longitude": 318.869967,
+        "sign_index": 10,
+        "degree_in_sign": 18.869967,
+        "is_retrograde": false,
+        "speed": 0.579144
+      },
+      "Mercury": {
+        "longitude": 61.204046,
+        "sign_index": 2,
+        "degree_in_sign": 1.204046,
+        "is_retrograde": true,
+        "speed": -0.562876
+      },
+      "Jupiter": {
+        "longitude": 134.617464,
+        "sign_index": 4,
+        "degree_in_sign": 14.617464,
+        "is_retrograde": false,
+        "speed": 0.1168
+      },
+      "Venus": {
+        "longitude": 72.004838,
+        "sign_index": 2,
+        "degree_in_sign": 12.004838,
+        "is_retrograde": false,
+        "speed": 1.225999
+      },
+      "Saturn": {
+        "longitude": 358.390588,
+        "sign_index": 11,
+        "degree_in_sign": 28.390588,
+        "is_retrograde": false,
+        "speed": 0.081096
+      },
+      "Rahu": {
+        "longitude": 53.823491,
+        "sign_index": 1,
+        "degree_in_sign": 23.823491,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 233.823491,
+        "sign_index": 7,
+        "degree_in_sign": 23.823491,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

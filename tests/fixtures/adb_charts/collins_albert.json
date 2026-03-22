@@ -1,0 +1,109 @@
+{
+  "adb_id": 58170,
+  "name": "Collins, Albert",
+  "given_name": "Albert Collins",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426982.708333,
+    "year": 1932,
+    "month": 10,
+    "day": 1,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Leona",
+    "country": "Texas",
+    "lat": 31.15,
+    "lon": -95.966667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Albert",
+  "source_notes": "Sy Scholfield from BC in hand.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 18.642649,
+    "lagna": 48.642649,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.917854,
+    "jd_ut": 2426982.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 165.868923,
+        "sign_index": 5,
+        "degree_in_sign": 15.868923,
+        "is_retrograde": false,
+        "speed": 0.984717
+      },
+      "Moon": {
+        "longitude": 193.045695,
+        "sign_index": 6,
+        "degree_in_sign": 13.045695,
+        "is_retrograde": false,
+        "speed": 18.187248
+      },
+      "Mars": {
+        "longitude": 103.890104,
+        "sign_index": 3,
+        "degree_in_sign": 13.890104,
+        "is_retrograde": false,
+        "speed": 0.588419
+      },
+      "Mercury": {
+        "longitude": 168.049314,
+        "sign_index": 5,
+        "degree_in_sign": 18.049314,
+        "is_retrograde": false,
+        "speed": 1.739408
+      },
+      "Jupiter": {
+        "longitude": 138.2095,
+        "sign_index": 4,
+        "degree_in_sign": 18.2095,
+        "is_retrograde": false,
+        "speed": 0.204264
+      },
+      "Venus": {
+        "longitude": 121.495475,
+        "sign_index": 4,
+        "degree_in_sign": 1.495475,
+        "is_retrograde": false,
+        "speed": 1.100744
+      },
+      "Saturn": {
+        "longitude": 275.196743,
+        "sign_index": 9,
+        "degree_in_sign": 5.196743,
+        "is_retrograde": true,
+        "speed": -0.000922
+      },
+      "Rahu": {
+        "longitude": 322.793477,
+        "sign_index": 10,
+        "degree_in_sign": 22.793477,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 142.793477,
+        "sign_index": 4,
+        "degree_in_sign": 22.793477,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

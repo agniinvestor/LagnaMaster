@@ -1,0 +1,118 @@
+{
+  "adb_id": 91904,
+  "name": "Cascarella, Joe",
+  "given_name": "Joe Cascarella",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417754.9375,
+    "year": 1907,
+    "month": 6,
+    "day": 28,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cascarella,_Joe",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Traits : Body : Handedness",
+    "Traits : Body : Size",
+    "Traits : Body : Voice/Speech",
+    "Traits : Body : Weight",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Sports : Baseball",
+    "Vocation : Sports Business : Other Sports Business",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 1.406026,
+    "lagna": 61.406026,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.565064,
+    "jd_ut": 2417754.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 73.005159,
+        "sign_index": 2,
+        "degree_in_sign": 13.005159,
+        "is_retrograde": false,
+        "speed": 0.953124
+      },
+      "Moon": {
+        "longitude": 288.174361,
+        "sign_index": 9,
+        "degree_in_sign": 18.174361,
+        "is_retrograde": false,
+        "speed": 11.772556
+      },
+      "Mars": {
+        "longitude": 263.122033,
+        "sign_index": 8,
+        "degree_in_sign": 23.122033,
+        "is_retrograde": true,
+        "speed": -0.256608
+      },
+      "Mercury": {
+        "longitude": 98.464737,
+        "sign_index": 3,
+        "degree_in_sign": 8.464737,
+        "is_retrograde": false,
+        "speed": 0.900754
+      },
+      "Jupiter": {
+        "longitude": 86.054326,
+        "sign_index": 2,
+        "degree_in_sign": 26.054326,
+        "is_retrograde": false,
+        "speed": 0.221056
+      },
+      "Venus": {
+        "longitude": 51.827868,
+        "sign_index": 1,
+        "degree_in_sign": 21.827868,
+        "is_retrograde": false,
+        "speed": 1.212806
+      },
+      "Saturn": {
+        "longitude": 334.784022,
+        "sign_index": 11,
+        "degree_in_sign": 4.784022,
+        "is_retrograde": false,
+        "speed": 0.019225
+      },
+      "Rahu": {
+        "longitude": 91.792332,
+        "sign_index": 3,
+        "degree_in_sign": 1.792332,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 271.792332,
+        "sign_index": 9,
+        "degree_in_sign": 1.792332,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

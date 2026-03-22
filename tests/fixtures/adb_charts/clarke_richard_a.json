@@ -1,0 +1,119 @@
+{
+  "adb_id": 49098,
+  "name": "Clarke, Richard A.",
+  "given_name": "Richard A. Clarke",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433585.447917,
+    "year": 1950,
+    "month": 10,
+    "day": 30,
+    "calendar": "g",
+    "time": "17:45",
+    "time_type": "s",
+    "hour": 17.75,
+    "time_unknown": false,
+    "place": "Cambridge (Middlesex County)",
+    "country": "Massachusetts",
+    "lat": 42.366667,
+    "lon": -71.1
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarke,_Richard_A.",
+  "source_notes": "PT quotes birth certificate\\n",
+  "categories": [
+    "Traits : Personality : Aggressive/ brash",
+    "Traits : Personality : Disciplined",
+    "Traits : Personality : Hard worker",
+    "Traits : Personality : Principled strongly",
+    "Family : Childhood : Family traumatic event",
+    "Family : Childhood : Only child",
+    "Family : Relationship : Married late/never",
+    "Lifestyle : Work : Self-employed",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Government employee",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 14.361696,
+    "lagna": 14.361696,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.170309,
+    "jd_ut": 2433585.447917,
+    "planets": {
+      "Sun": {
+        "longitude": 193.772466,
+        "sign_index": 6,
+        "degree_in_sign": 13.772466,
+        "is_retrograde": false,
+        "speed": 0.999664
+      },
+      "Moon": {
+        "longitude": 69.572876,
+        "sign_index": 2,
+        "degree_in_sign": 9.572876,
+        "is_retrograde": false,
+        "speed": 15.276802
+      },
+      "Mars": {
+        "longitude": 242.105127,
+        "sign_index": 8,
+        "degree_in_sign": 2.105127,
+        "is_retrograde": false,
+        "speed": 0.742685
+      },
+      "Mercury": {
+        "longitude": 192.644842,
+        "sign_index": 6,
+        "degree_in_sign": 12.644842,
+        "is_retrograde": false,
+        "speed": 1.644645
+      },
+      "Jupiter": {
+        "longitude": 304.493518,
+        "sign_index": 10,
+        "degree_in_sign": 4.493518,
+        "is_retrograde": false,
+        "speed": 0.022446
+      },
+      "Venus": {
+        "longitude": 190.236137,
+        "sign_index": 6,
+        "degree_in_sign": 10.236137,
+        "is_retrograde": false,
+        "speed": 1.254061
+      },
+      "Saturn": {
+        "longitude": 154.835912,
+        "sign_index": 5,
+        "degree_in_sign": 4.835912,
+        "is_retrograde": false,
+        "speed": 0.106317
+      },
+      "Rahu": {
+        "longitude": 332.900654,
+        "sign_index": 11,
+        "degree_in_sign": 2.900654,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 152.900654,
+        "sign_index": 5,
+        "degree_in_sign": 2.900654,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 81065,
+  "name": "Combes, Charles",
+  "given_name": "Charles Combes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2379221.412685,
+    "year": 1801,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Cahors",
+    "country": "France",
+    "lat": 44.45,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Combes,_Charles",
+  "source_notes": "Sy Scholfield submitted birth certificate (acte n°66) from the online Lot archives, born \"dix heures du soir\" (ten o'clock at night) on 5 Nivôse, An X (26 Dec 1801). Grazia Bordoni's Science file quotes Gauquelin for 1802 which is miscalculated. \\n",
+  "categories": [
+    "Vocation : Business : Consultant",
+    "Vocation : Engineer : Other Engineer",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 28.668497,
+    "lagna": 118.668497,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.092302,
+    "jd_ut": 2379221.412685,
+    "planets": {
+      "Sun": {
+        "longitude": 253.657024,
+        "sign_index": 8,
+        "degree_in_sign": 13.657024,
+        "is_retrograde": false,
+        "speed": 1.019172
+      },
+      "Moon": {
+        "longitude": 148.465899,
+        "sign_index": 4,
+        "degree_in_sign": 28.465899,
+        "is_retrograde": false,
+        "speed": 12.885896
+      },
+      "Mars": {
+        "longitude": 233.742689,
+        "sign_index": 7,
+        "degree_in_sign": 23.742689,
+        "is_retrograde": false,
+        "speed": 0.725379
+      },
+      "Mercury": {
+        "longitude": 235.939052,
+        "sign_index": 7,
+        "degree_in_sign": 25.939052,
+        "is_retrograde": false,
+        "speed": 1.428188
+      },
+      "Jupiter": {
+        "longitude": 134.586827,
+        "sign_index": 4,
+        "degree_in_sign": 14.586827,
+        "is_retrograde": true,
+        "speed": -0.015977
+      },
+      "Venus": {
+        "longitude": 234.119536,
+        "sign_index": 7,
+        "degree_in_sign": 24.119536,
+        "is_retrograde": false,
+        "speed": 1.253308
+      },
+      "Saturn": {
+        "longitude": 136.362335,
+        "sign_index": 4,
+        "degree_in_sign": 16.362335,
+        "is_retrograde": true,
+        "speed": -0.015317
+      },
+      "Rahu": {
+        "longitude": 333.766693,
+        "sign_index": 11,
+        "degree_in_sign": 3.766693,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 153.766693,
+        "sign_index": 5,
+        "degree_in_sign": 3.766693,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

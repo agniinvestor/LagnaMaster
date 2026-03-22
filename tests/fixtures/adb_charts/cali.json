@@ -1,0 +1,109 @@
+{
+  "adb_id": 64906,
+  "name": "Cali",
+  "given_name": "Cali",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440035.625,
+    "year": 1968,
+    "month": 6,
+    "day": 28,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Perpignan",
+    "country": "France",
+    "lat": 42.683333,
+    "lon": 2.883333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cali",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 18.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 1.30482,
+    "lagna": 31.30482,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.41695,
+    "jd_ut": 2440035.625,
+    "planets": {
+      "Sun": {
+        "longitude": 73.055251,
+        "sign_index": 2,
+        "degree_in_sign": 13.055251,
+        "is_retrograde": false,
+        "speed": 0.953782
+      },
+      "Moon": {
+        "longitude": 98.284881,
+        "sign_index": 3,
+        "degree_in_sign": 8.284881,
+        "is_retrograde": false,
+        "speed": 16.160573
+      },
+      "Mars": {
+        "longitude": 71.220217,
+        "sign_index": 2,
+        "degree_in_sign": 11.220217,
+        "is_retrograde": false,
+        "speed": 0.668269
+      },
+      "Mercury": {
+        "longitude": 60.011471,
+        "sign_index": 2,
+        "degree_in_sign": 0.011471,
+        "is_retrograde": true,
+        "speed": -0.163181
+      },
+      "Jupiter": {
+        "longitude": 128.483815,
+        "sign_index": 4,
+        "degree_in_sign": 8.483815,
+        "is_retrograde": false,
+        "speed": 0.162244
+      },
+      "Venus": {
+        "longitude": 75.169322,
+        "sign_index": 2,
+        "degree_in_sign": 15.169322,
+        "is_retrograde": false,
+        "speed": 1.229135
+      },
+      "Saturn": {
+        "longitude": 0.798124,
+        "sign_index": 0,
+        "degree_in_sign": 0.798124,
+        "is_retrograde": false,
+        "speed": 0.064688
+      },
+      "Rahu": {
+        "longitude": 351.092541,
+        "sign_index": 11,
+        "degree_in_sign": 21.092541,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 171.092541,
+        "sign_index": 5,
+        "degree_in_sign": 21.092541,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

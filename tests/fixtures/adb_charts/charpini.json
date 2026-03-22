@@ -1,0 +1,115 @@
+{
+  "adb_id": 81623,
+  "name": "Charpini",
+  "given_name": "Charpini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415595.82684,
+    "year": 1901,
+    "month": 7,
+    "day": 30,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 6",
+    "country": "France",
+    "lat": 48.850556,
+    "lon": 2.332778
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charpini",
+  "source_notes": "Sy Scholfield submitted birth certificate from the online Paris archives (6th arr., acte n° 2314). Death data in margin.\\n",
+  "categories": [
+    "Passions : Sexuality : Gay",
+    "Passions : Sexuality : Transvestite",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Vocalist/Opera",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 28.483399,
+    "lagna": 118.483399,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.482524,
+    "jd_ut": 2415595.82684,
+    "planets": {
+      "Sun": {
+        "longitude": 103.940884,
+        "sign_index": 3,
+        "degree_in_sign": 13.940884,
+        "is_retrograde": false,
+        "speed": 0.95597
+      },
+      "Moon": {
+        "longitude": 269.645073,
+        "sign_index": 8,
+        "degree_in_sign": 29.645073,
+        "is_retrograde": false,
+        "speed": 15.804098
+      },
+      "Mars": {
+        "longitude": 167.146325,
+        "sign_index": 5,
+        "degree_in_sign": 17.146325,
+        "is_retrograde": false,
+        "speed": 0.599909
+      },
+      "Mercury": {
+        "longitude": 85.248226,
+        "sign_index": 2,
+        "degree_in_sign": 25.248226,
+        "is_retrograde": false,
+        "speed": 0.60423
+      },
+      "Jupiter": {
+        "longitude": 252.254605,
+        "sign_index": 8,
+        "degree_in_sign": 12.254605,
+        "is_retrograde": true,
+        "speed": -0.09159
+      },
+      "Venus": {
+        "longitude": 128.154375,
+        "sign_index": 4,
+        "degree_in_sign": 8.154375,
+        "is_retrograde": false,
+        "speed": 1.217259
+      },
+      "Saturn": {
+        "longitude": 258.892936,
+        "sign_index": 8,
+        "degree_in_sign": 18.892936,
+        "is_retrograde": true,
+        "speed": -0.062901
+      },
+      "Rahu": {
+        "longitude": 206.208151,
+        "sign_index": 6,
+        "degree_in_sign": 26.208151,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 26.208151,
+        "sign_index": 0,
+        "degree_in_sign": 26.208151,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

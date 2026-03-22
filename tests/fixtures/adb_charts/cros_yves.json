@@ -1,0 +1,109 @@
+{
+  "adb_id": 19658,
+  "name": "Cros, Yves",
+  "given_name": "Yves Cros",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423697.833333,
+    "year": 1923,
+    "month": 10,
+    "day": 5,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "d",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Aigues Vives",
+    "country": "France",
+    "lat": 43.733333,
+    "lon": 4.166667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cros,_Yves",
+  "source_notes": "Gauquelin Vol 1/26\\n",
+  "categories": [
+    "Vocation : Sports : Track and Field",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 20.53009,
+    "lagna": 170.53009,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.792264,
+    "jd_ut": 2423697.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 168.258683,
+        "sign_index": 5,
+        "degree_in_sign": 18.258683,
+        "is_retrograde": false,
+        "speed": 0.98587
+      },
+      "Moon": {
+        "longitude": 103.071648,
+        "sign_index": 3,
+        "degree_in_sign": 13.071648,
+        "is_retrograde": false,
+        "speed": 9.198483
+      },
+      "Mars": {
+        "longitude": 149.025413,
+        "sign_index": 4,
+        "degree_in_sign": 29.025413,
+        "is_retrograde": false,
+        "speed": 0.636722
+      },
+      "Mercury": {
+        "longitude": 156.731937,
+        "sign_index": 5,
+        "degree_in_sign": 6.731937,
+        "is_retrograde": true,
+        "speed": -0.502143
+      },
+      "Jupiter": {
+        "longitude": 206.444845,
+        "sign_index": 6,
+        "degree_in_sign": 26.444845,
+        "is_retrograde": false,
+        "speed": 0.195158
+      },
+      "Venus": {
+        "longitude": 174.89406,
+        "sign_index": 5,
+        "degree_in_sign": 24.89406,
+        "is_retrograde": false,
+        "speed": 1.247549
+      },
+      "Saturn": {
+        "longitude": 178.786498,
+        "sign_index": 5,
+        "degree_in_sign": 28.786498,
+        "is_retrograde": false,
+        "speed": 0.120485
+      },
+      "Rahu": {
+        "longitude": 136.865837,
+        "sign_index": 4,
+        "degree_in_sign": 16.865837,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 316.865837,
+        "sign_index": 10,
+        "degree_in_sign": 16.865837,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

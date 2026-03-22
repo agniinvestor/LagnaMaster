@@ -1,0 +1,108 @@
+{
+  "adb_id": 65074,
+  "name": "Costa, Jean-Paul",
+  "given_name": "Jean-Paul Costa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430302.010417,
+    "year": 1941,
+    "month": 11,
+    "day": 3,
+    "calendar": "g",
+    "time": "13:15",
+    "time_type": "s",
+    "hour": 13.25,
+    "time_unknown": false,
+    "place": "Tunis",
+    "country": "Tunisia",
+    "lat": 36.8,
+    "lon": 10.183333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costa,_Jean-Paul",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 240.\\n",
+  "categories": [
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 23.911217,
+    "lagna": 263.911217,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.044764,
+    "jd_ut": 2430302.010417,
+    "planets": {
+      "Sun": {
+        "longitude": 197.646754,
+        "sign_index": 6,
+        "degree_in_sign": 17.646754,
+        "is_retrograde": false,
+        "speed": 1.001608
+      },
+      "Moon": {
+        "longitude": 11.451212,
+        "sign_index": 0,
+        "degree_in_sign": 11.451212,
+        "is_retrograde": false,
+        "speed": 15.847754
+      },
+      "Mars": {
+        "longitude": 348.342712,
+        "sign_index": 11,
+        "degree_in_sign": 18.342712,
+        "is_retrograde": true,
+        "speed": -0.091317
+      },
+      "Mercury": {
+        "longitude": 183.557159,
+        "sign_index": 6,
+        "degree_in_sign": 3.557159,
+        "is_retrograde": true,
+        "speed": -0.307897
+      },
+      "Jupiter": {
+        "longitude": 57.431067,
+        "sign_index": 1,
+        "degree_in_sign": 27.431067,
+        "is_retrograde": true,
+        "speed": -0.078514
+      },
+      "Venus": {
+        "longitude": 243.758613,
+        "sign_index": 8,
+        "degree_in_sign": 3.758613,
+        "is_retrograde": false,
+        "speed": 1.100794
+      },
+      "Saturn": {
+        "longitude": 33.161224,
+        "sign_index": 1,
+        "degree_in_sign": 3.161224,
+        "is_retrograde": true,
+        "speed": -0.076788
+      },
+      "Rahu": {
+        "longitude": 146.896782,
+        "sign_index": 4,
+        "degree_in_sign": 26.896782,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 326.896782,
+        "sign_index": 10,
+        "degree_in_sign": 26.896782,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

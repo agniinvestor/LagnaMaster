@@ -1,0 +1,110 @@
+{
+  "adb_id": 59306,
+  "name": "Collins, Charles Allston",
+  "given_name": "Charles Allston Collins",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388746.531759,
+    "year": 1828,
+    "month": 1,
+    "day": 25,
+    "calendar": "g",
+    "time": "00:45",
+    "time_type": "l",
+    "hour": 0.75,
+    "time_unknown": false,
+    "place": "Hampstead",
+    "country": "England",
+    "lat": 51.566667,
+    "lon": -0.183333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Charles_Allston",
+  "source_notes": "Sy Scholfield quotes family bible transcribed in \"Family Genealogica\" by F. A. Crisp, Vol. X (1889), p. 8: \"Charles Allston Collins. Born January 25th 1828 ¼ before 1 in the morning at Pond Street, Hampstead.\"\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Writers : Humor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 18.363215,
+    "lagna": 168.363215,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.456291,
+    "jd_ut": 2388746.531759,
+    "planets": {
+      "Sun": {
+        "longitude": 282.63802,
+        "sign_index": 9,
+        "degree_in_sign": 12.63802,
+        "is_retrograde": false,
+        "speed": 1.016395
+      },
+      "Moon": {
+        "longitude": 25.144718,
+        "sign_index": 0,
+        "degree_in_sign": 25.144718,
+        "is_retrograde": false,
+        "speed": 12.063698
+      },
+      "Mars": {
+        "longitude": 210.67399,
+        "sign_index": 7,
+        "degree_in_sign": 0.67399,
+        "is_retrograde": false,
+        "speed": 0.58798
+      },
+      "Mercury": {
+        "longitude": 276.304434,
+        "sign_index": 9,
+        "degree_in_sign": 6.304434,
+        "is_retrograde": false,
+        "speed": 1.641736
+      },
+      "Jupiter": {
+        "longitude": 201.088798,
+        "sign_index": 6,
+        "degree_in_sign": 21.088798,
+        "is_retrograde": false,
+        "speed": 0.1022
+      },
+      "Venus": {
+        "longitude": 309.010518,
+        "sign_index": 10,
+        "degree_in_sign": 9.010518,
+        "is_retrograde": false,
+        "speed": 1.240454
+      },
+      "Saturn": {
+        "longitude": 83.980889,
+        "sign_index": 2,
+        "degree_in_sign": 23.980889,
+        "is_retrograde": true,
+        "speed": -0.075845
+      },
+      "Rahu": {
+        "longitude": 189.009784,
+        "sign_index": 6,
+        "degree_in_sign": 9.009784,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 9.009784,
+        "sign_index": 0,
+        "degree_in_sign": 9.009784,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

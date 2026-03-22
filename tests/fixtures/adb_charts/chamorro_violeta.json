@@ -1,0 +1,113 @@
+{
+  "adb_id": 104182,
+  "name": "Chamorro, Violeta",
+  "given_name": "Violeta Chamorro",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425903.281389,
+    "year": 1929,
+    "month": 10,
+    "day": 18,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Rivas",
+    "country": "Nicaragua",
+    "lat": 11.433333,
+    "lon": -85.833333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamorro,_Violeta",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file.\\n\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids - Noted",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Heads of state",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 20.158152,
+    "lagna": 260.158152,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.876584,
+    "jd_ut": 2425903.281389,
+    "planets": {
+      "Sun": {
+        "longitude": 182.031594,
+        "sign_index": 6,
+        "degree_in_sign": 2.031594,
+        "is_retrograde": false,
+        "speed": 0.993171
+      },
+      "Moon": {
+        "longitude": 5.672573,
+        "sign_index": 0,
+        "degree_in_sign": 5.672573,
+        "is_retrograde": false,
+        "speed": 18.973069
+      },
+      "Mars": {
+        "longitude": 195.503744,
+        "sign_index": 6,
+        "degree_in_sign": 15.503744,
+        "is_retrograde": false,
+        "speed": 0.688433
+      },
+      "Mercury": {
+        "longitude": 165.383049,
+        "sign_index": 5,
+        "degree_in_sign": 15.383049,
+        "is_retrograde": false,
+        "speed": 0.281553
+      },
+      "Jupiter": {
+        "longitude": 53.233084,
+        "sign_index": 1,
+        "degree_in_sign": 23.233084,
+        "is_retrograde": true,
+        "speed": -0.044612
+      },
+      "Venus": {
+        "longitude": 155.356443,
+        "sign_index": 5,
+        "degree_in_sign": 5.356443,
+        "is_retrograde": false,
+        "speed": 1.232935
+      },
+      "Saturn": {
+        "longitude": 243.032539,
+        "sign_index": 8,
+        "degree_in_sign": 3.032539,
+        "is_retrograde": false,
+        "speed": 0.075652
+      },
+      "Rahu": {
+        "longitude": 19.994553,
+        "sign_index": 0,
+        "degree_in_sign": 19.994553,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 199.994553,
+        "sign_index": 6,
+        "degree_in_sign": 19.994553,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

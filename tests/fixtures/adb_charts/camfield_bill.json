@@ -1,0 +1,110 @@
+{
+  "adb_id": 58132,
+  "name": "Camfield, Bill",
+  "given_name": "Bill Camfield",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425790.0,
+    "year": 1929,
+    "month": 6,
+    "day": 27,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Mineral Wells",
+    "country": "Texas",
+    "lat": 32.816667,
+    "lon": -98.116667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camfield,_Bill",
+  "source_notes": "Sy Scholfield from BC in hand (name amended to \"William Joseph Camfield\" in 1965).\\n",
+  "categories": [
+    "Traits : Personality : Humorous, Witty",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 26.052209,
+    "lagna": 56.052209,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.872253,
+    "jd_ut": 2425790.0,
+    "planets": {
+      "Sun": {
+        "longitude": 72.454689,
+        "sign_index": 2,
+        "degree_in_sign": 12.454689,
+        "is_retrograde": false,
+        "speed": 0.953376
+      },
+      "Moon": {
+        "longitude": 310.753608,
+        "sign_index": 10,
+        "degree_in_sign": 10.753608,
+        "is_retrograde": false,
+        "speed": 8.291296
+      },
+      "Mars": {
+        "longitude": 123.010533,
+        "sign_index": 4,
+        "degree_in_sign": 3.010533,
+        "is_retrograde": false,
+        "speed": 0.59245
+      },
+      "Mercury": {
+        "longitude": 52.480198,
+        "sign_index": 1,
+        "degree_in_sign": 22.480198,
+        "is_retrograde": false,
+        "speed": 0.484043
+      },
+      "Jupiter": {
+        "longitude": 40.469462,
+        "sign_index": 1,
+        "degree_in_sign": 10.469462,
+        "is_retrograde": false,
+        "speed": 0.216846
+      },
+      "Venus": {
+        "longitude": 26.809092,
+        "sign_index": 0,
+        "degree_in_sign": 26.809092,
+        "is_retrograde": false,
+        "speed": 0.939682
+      },
+      "Saturn": {
+        "longitude": 243.72782,
+        "sign_index": 8,
+        "degree_in_sign": 3.72782,
+        "is_retrograde": true,
+        "speed": -0.072621
+      },
+      "Rahu": {
+        "longitude": 25.997569,
+        "sign_index": 0,
+        "degree_in_sign": 25.997569,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 205.997569,
+        "sign_index": 6,
+        "degree_in_sign": 25.997569,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

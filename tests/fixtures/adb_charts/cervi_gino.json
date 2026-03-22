@@ -1,0 +1,114 @@
+{
+  "adb_id": 45707,
+  "name": "Cervi, Gino",
+  "given_name": "Gino Cervi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415508.25,
+    "year": 1901,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Bologna",
+    "country": "Italy",
+    "lat": 44.483333,
+    "lon": 11.333333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cervi,_Gino",
+  "source_notes": "B.C. in hand from Bordoni\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Lung",
+    "Family : Parenting : Foster, Step, or Adopted Kids",
+    "Family : Parenting : Kids 1-3",
+    "Family : Parenting : Kids - Noted",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 24.750051,
+    "lagna": 174.750051,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.479176,
+    "jd_ut": 2415508.25,
+    "planets": {
+      "Sun": {
+        "longitude": 20.103892,
+        "sign_index": 0,
+        "degree_in_sign": 20.103892,
+        "is_retrograde": false,
+        "speed": 0.968487
+      },
+      "Moon": {
+        "longitude": 200.757127,
+        "sign_index": 6,
+        "degree_in_sign": 20.757127,
+        "is_retrograde": false,
+        "speed": 11.383074
+      },
+      "Mars": {
+        "longitude": 125.176616,
+        "sign_index": 4,
+        "degree_in_sign": 5.176616,
+        "is_retrograde": false,
+        "speed": 0.286517
+      },
+      "Mercury": {
+        "longitude": 7.844229,
+        "sign_index": 0,
+        "degree_in_sign": 7.844229,
+        "is_retrograde": false,
+        "speed": 1.944805
+      },
+      "Jupiter": {
+        "longitude": 260.562689,
+        "sign_index": 8,
+        "degree_in_sign": 20.562689,
+        "is_retrograde": true,
+        "speed": -0.009053
+      },
+      "Venus": {
+        "longitude": 20.807776,
+        "sign_index": 0,
+        "degree_in_sign": 20.807776,
+        "is_retrograde": false,
+        "speed": 1.232943
+      },
+      "Saturn": {
+        "longitude": 263.863322,
+        "sign_index": 8,
+        "degree_in_sign": 23.863322,
+        "is_retrograde": true,
+        "speed": -0.012209
+      },
+      "Rahu": {
+        "longitude": 210.849033,
+        "sign_index": 7,
+        "degree_in_sign": 0.849033,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 30.849033,
+        "sign_index": 1,
+        "degree_in_sign": 0.849033,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

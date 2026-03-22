@@ -1,0 +1,109 @@
+{
+  "adb_id": 2259,
+  "name": "Castillon, Alexis",
+  "given_name": "Alexis Castillon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2392722.141667,
+    "year": 1838,
+    "month": 12,
+    "day": 13,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "l",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Chartres",
+    "country": "France",
+    "lat": 48.45,
+    "lon": 1.5
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castillon,_Alexis",
+  "source_notes": "Gauquelin, Vol. 4/1678.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 0.327783,
+    "lagna": 30.327783,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.608226,
+    "jd_ut": 2392722.141667,
+    "planets": {
+      "Sun": {
+        "longitude": 239.642472,
+        "sign_index": 7,
+        "degree_in_sign": 29.642472,
+        "is_retrograde": false,
+        "speed": 1.017804
+      },
+      "Moon": {
+        "longitude": 200.167511,
+        "sign_index": 6,
+        "degree_in_sign": 20.167511,
+        "is_retrograde": false,
+        "speed": 12.126586
+      },
+      "Mars": {
+        "longitude": 147.0341,
+        "sign_index": 4,
+        "degree_in_sign": 27.0341,
+        "is_retrograde": false,
+        "speed": 0.40636
+      },
+      "Mercury": {
+        "longitude": 259.205722,
+        "sign_index": 8,
+        "degree_in_sign": 19.205722,
+        "is_retrograde": false,
+        "speed": 1.272161
+      },
+      "Jupiter": {
+        "longitude": 173.295941,
+        "sign_index": 5,
+        "degree_in_sign": 23.295941,
+        "is_retrograde": false,
+        "speed": 0.139187
+      },
+      "Venus": {
+        "longitude": 238.440552,
+        "sign_index": 7,
+        "degree_in_sign": 28.440552,
+        "is_retrograde": false,
+        "speed": 1.258706
+      },
+      "Saturn": {
+        "longitude": 222.06487,
+        "sign_index": 7,
+        "degree_in_sign": 12.06487,
+        "is_retrograde": false,
+        "speed": 0.115101
+      },
+      "Rahu": {
+        "longitude": 338.333585,
+        "sign_index": 11,
+        "degree_in_sign": 8.333585,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 158.333585,
+        "sign_index": 5,
+        "degree_in_sign": 8.333585,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 81086,
+  "name": "Cottet, Jules",
+  "given_name": "Jules Cottet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404561.565509,
+    "year": 1871,
+    "month": 5,
+    "day": 14,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Bonneville",
+    "country": "France",
+    "lat": 46.083333,
+    "lon": 6.416667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cottet,_Jules",
+  "source_notes": "Sy Scholfield submitted birth certificate (acte n°33) from the online Haute-Savoie archives: \"quatorze mai courant, à deux heures du matin\" (14 May, 2 AM). Marriage and death data in margin. \\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Medical : Physician",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 28.951643,
+    "lagna": 298.951643,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.060733,
+    "jd_ut": 2404561.565509,
+    "planets": {
+      "Sun": {
+        "longitude": 30.733435,
+        "sign_index": 1,
+        "degree_in_sign": 0.733435,
+        "is_retrograde": false,
+        "speed": 0.964219
+      },
+      "Moon": {
+        "longitude": 330.75445,
+        "sign_index": 11,
+        "degree_in_sign": 0.75445,
+        "is_retrograde": false,
+        "speed": 12.690066
+      },
+      "Mars": {
+        "longitude": 148.101166,
+        "sign_index": 4,
+        "degree_in_sign": 28.101166,
+        "is_retrograde": false,
+        "speed": 0.154273
+      },
+      "Mercury": {
+        "longitude": 33.021204,
+        "sign_index": 1,
+        "degree_in_sign": 3.021204,
+        "is_retrograde": true,
+        "speed": -0.56941
+      },
+      "Jupiter": {
+        "longitude": 65.81421,
+        "sign_index": 2,
+        "degree_in_sign": 5.81421,
+        "is_retrograde": false,
+        "speed": 0.2062
+      },
+      "Venus": {
+        "longitude": 67.40497,
+        "sign_index": 2,
+        "degree_in_sign": 7.40497,
+        "is_retrograde": false,
+        "speed": 1.172599
+      },
+      "Saturn": {
+        "longitude": 257.350908,
+        "sign_index": 8,
+        "degree_in_sign": 17.350908,
+        "is_retrograde": true,
+        "speed": -0.038462
+      },
+      "Rahu": {
+        "longitude": 70.937057,
+        "sign_index": 2,
+        "degree_in_sign": 10.937057,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 250.937057,
+        "sign_index": 8,
+        "degree_in_sign": 10.937057,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

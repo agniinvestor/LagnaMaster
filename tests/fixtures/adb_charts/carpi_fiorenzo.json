@@ -1,0 +1,109 @@
+{
+  "adb_id": 52827,
+  "name": "Carpi, Fiorenzo",
+  "given_name": "Fiorenzo Carpi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421886.270833,
+    "year": 1918,
+    "month": 10,
+    "day": 19,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "s",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "Milano",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpi,_Fiorenzo",
+  "source_notes": "Ed Steinbrecher collection: Bordoni/6 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 24.49202,
+    "lagna": 24.49202,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.723005,
+    "jd_ut": 2421886.270833,
+    "planets": {
+      "Sun": {
+        "longitude": 182.835174,
+        "sign_index": 6,
+        "degree_in_sign": 2.835174,
+        "is_retrograde": false,
+        "speed": 0.993563
+      },
+      "Moon": {
+        "longitude": 1.374763,
+        "sign_index": 0,
+        "degree_in_sign": 1.374763,
+        "is_retrograde": false,
+        "speed": 14.095054
+      },
+      "Mars": {
+        "longitude": 230.474364,
+        "sign_index": 7,
+        "degree_in_sign": 20.474364,
+        "is_retrograde": false,
+        "speed": 0.727766
+      },
+      "Mercury": {
+        "longitude": 185.741714,
+        "sign_index": 6,
+        "degree_in_sign": 5.741714,
+        "is_retrograde": false,
+        "speed": 1.65327
+      },
+      "Jupiter": {
+        "longitude": 82.739535,
+        "sign_index": 2,
+        "degree_in_sign": 22.739535,
+        "is_retrograde": false,
+        "speed": 0.04815
+      },
+      "Venus": {
+        "longitude": 173.951441,
+        "sign_index": 5,
+        "degree_in_sign": 23.951441,
+        "is_retrograde": false,
+        "speed": 1.251019
+      },
+      "Saturn": {
+        "longitude": 123.221173,
+        "sign_index": 4,
+        "degree_in_sign": 3.221173,
+        "is_retrograde": false,
+        "speed": 0.084601
+      },
+      "Rahu": {
+        "longitude": 232.864316,
+        "sign_index": 7,
+        "degree_in_sign": 22.864316,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 52.864316,
+        "sign_index": 1,
+        "degree_in_sign": 22.864316,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

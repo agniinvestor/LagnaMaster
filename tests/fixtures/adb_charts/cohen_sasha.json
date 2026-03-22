@@ -1,0 +1,111 @@
+{
+  "adb_id": 50429,
+  "name": "Cohen, Sasha",
+  "given_name": "Sasha Cohen",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446000.68125,
+    "year": 1984,
+    "month": 10,
+    "day": 26,
+    "calendar": "g",
+    "time": "21:21",
+    "time_type": "d",
+    "hour": 21.35,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Sasha",
+  "source_notes": "PT quotes birth certificate in hand\\n",
+  "categories": [
+    "Traits : Body : Aerobic exercise",
+    "Vocation : Sports : Skating",
+    "Notable : Awards : Olympics",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 12.487575,
+    "lagna": 42.487575,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.645059,
+    "jd_ut": 2446000.68125,
+    "planets": {
+      "Sun": {
+        "longitude": 190.290312,
+        "sign_index": 6,
+        "degree_in_sign": 10.290312,
+        "is_retrograde": false,
+        "speed": 0.99837
+      },
+      "Moon": {
+        "longitude": 226.151939,
+        "sign_index": 7,
+        "degree_in_sign": 16.151939,
+        "is_retrograde": false,
+        "speed": 14.239222
+      },
+      "Mars": {
+        "longitude": 261.904862,
+        "sign_index": 8,
+        "degree_in_sign": 21.904862,
+        "is_retrograde": false,
+        "speed": 0.726879
+      },
+      "Mercury": {
+        "longitude": 200.777018,
+        "sign_index": 6,
+        "degree_in_sign": 20.777018,
+        "is_retrograde": false,
+        "speed": 1.550803
+      },
+      "Jupiter": {
+        "longitude": 254.414868,
+        "sign_index": 8,
+        "degree_in_sign": 14.414868,
+        "is_retrograde": false,
+        "speed": 0.1572
+      },
+      "Venus": {
+        "longitude": 224.80141,
+        "sign_index": 7,
+        "degree_in_sign": 14.80141,
+        "is_retrograde": false,
+        "speed": 1.214881
+      },
+      "Saturn": {
+        "longitude": 203.630986,
+        "sign_index": 6,
+        "degree_in_sign": 23.630986,
+        "is_retrograde": false,
+        "speed": 0.117609
+      },
+      "Rahu": {
+        "longitude": 34.992071,
+        "sign_index": 1,
+        "degree_in_sign": 4.992071,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 214.992071,
+        "sign_index": 7,
+        "degree_in_sign": 4.992071,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 50879,
+  "name": "Cummings, Constance",
+  "given_name": "Constance Cummings",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418807.158333,
+    "year": 1910,
+    "month": 5,
+    "day": 15,
+    "calendar": "g",
+    "time": "07:48",
+    "time_type": "s",
+    "hour": 7.8,
+    "time_unknown": false,
+    "place": "Seattle",
+    "country": "Washington",
+    "lat": 47.6,
+    "lon": -122.333333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cummings,_Constance",
+  "source_notes": "Gauquelin Book of American Charts quotes BC.\\n\\nIn June 2025 Sy Scholfield provided birth certificate and upgraded the Rodden Rating to BC in hand.\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Tony"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 28.173946,
+    "lagna": 58.173946,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.60529,
+    "jd_ut": 2418807.158333,
+    "planets": {
+      "Sun": {
+        "longitude": 31.315126,
+        "sign_index": 1,
+        "degree_in_sign": 1.315126,
+        "is_retrograde": false,
+        "speed": 0.963921
+      },
+      "Moon": {
+        "longitude": 116.700131,
+        "sign_index": 3,
+        "degree_in_sign": 26.700131,
+        "is_retrograde": false,
+        "speed": 16.066899
+      },
+      "Mars": {
+        "longitude": 75.957779,
+        "sign_index": 2,
+        "degree_in_sign": 15.957779,
+        "is_retrograde": false,
+        "speed": 0.620912
+      },
+      "Mercury": {
+        "longitude": 45.056146,
+        "sign_index": 1,
+        "degree_in_sign": 15.056146,
+        "is_retrograde": true,
+        "speed": -0.113093
+      },
+      "Jupiter": {
+        "longitude": 162.456403,
+        "sign_index": 5,
+        "degree_in_sign": 12.456403,
+        "is_retrograde": true,
+        "speed": -0.051228
+      },
+      "Venus": {
+        "longitude": 346.487443,
+        "sign_index": 11,
+        "degree_in_sign": 16.487443,
+        "is_retrograde": false,
+        "speed": 1.076787
+      },
+      "Saturn": {
+        "longitude": 7.20135,
+        "sign_index": 0,
+        "degree_in_sign": 7.20135,
+        "is_retrograde": false,
+        "speed": 0.119918
+      },
+      "Rahu": {
+        "longitude": 36.032939,
+        "sign_index": 1,
+        "degree_in_sign": 6.032939,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 216.032939,
+        "sign_index": 7,
+        "degree_in_sign": 6.032939,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 61501,
+  "name": "Carmack, John K.",
+  "given_name": "John K. Carmack",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426472.125,
+    "year": 1931,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Winslow",
+    "country": "Arizona",
+    "lat": 35.016667,
+    "lon": -110.7
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carmack,_John_K.",
+  "source_notes": "Sy Scholfield quotes birth certificate: http://genealogy.az.gov/azbirth/1005/10050656.pdf\\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Vocation : Religion : Missionary"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 13.690344,
+    "lagna": 43.690344,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.898332,
+    "jd_ut": 2426472.125,
+    "planets": {
+      "Sun": {
+        "longitude": 26.085609,
+        "sign_index": 0,
+        "degree_in_sign": 26.085609,
+        "is_retrograde": false,
+        "speed": 0.966231
+      },
+      "Moon": {
+        "longitude": 307.738615,
+        "sign_index": 10,
+        "degree_in_sign": 7.738615,
+        "is_retrograde": false,
+        "speed": 7.680681
+      },
+      "Mars": {
+        "longitude": 111.768388,
+        "sign_index": 3,
+        "degree_in_sign": 21.768388,
+        "is_retrograde": false,
+        "speed": 0.450044
+      },
+      "Mercury": {
+        "longitude": 11.022753,
+        "sign_index": 0,
+        "degree_in_sign": 11.022753,
+        "is_retrograde": true,
+        "speed": -0.226245
+      },
+      "Jupiter": {
+        "longitude": 83.447665,
+        "sign_index": 2,
+        "degree_in_sign": 23.447665,
+        "is_retrograde": false,
+        "speed": 0.164634
+      },
+      "Venus": {
+        "longitude": 354.500595,
+        "sign_index": 11,
+        "degree_in_sign": 24.500595,
+        "is_retrograde": false,
+        "speed": 1.200105
+      },
+      "Saturn": {
+        "longitude": 270.341271,
+        "sign_index": 9,
+        "degree_in_sign": 0.341271,
+        "is_retrograde": true,
+        "speed": -0.01144
+      },
+      "Rahu": {
+        "longitude": 349.850348,
+        "sign_index": 11,
+        "degree_in_sign": 19.850348,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 169.850348,
+        "sign_index": 5,
+        "degree_in_sign": 19.850348,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

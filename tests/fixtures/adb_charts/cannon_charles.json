@@ -1,0 +1,113 @@
+{
+  "adb_id": 9888,
+  "name": "Cannon, Charles",
+  "given_name": "Charles Cannon",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431529.076389,
+    "year": 1945,
+    "month": 3,
+    "day": 14,
+    "calendar": "g",
+    "time": "09:50",
+    "time_type": "w",
+    "hour": 9.833333,
+    "time_unknown": false,
+    "place": "Syracuse",
+    "country": "New York",
+    "lat": 43.05,
+    "lon": -76.15
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cannon,_Charles",
+  "source_notes": "Tom Csere quotes a student of Brother Charles who is an astrologer\\n",
+  "categories": [
+    "Traits : Mind : Child prodigy",
+    "Traits : Personality : Mystical",
+    "Personal : Religion/Spirituality : Meditation",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Religion : Ecclesiastics/ eastern"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 7.89944,
+    "lagna": 7.89944,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.091681,
+    "jd_ut": 2431529.076389,
+    "planets": {
+      "Sun": {
+        "longitude": 330.537619,
+        "sign_index": 11,
+        "degree_in_sign": 0.537619,
+        "is_retrograde": false,
+        "speed": 0.996831
+      },
+      "Moon": {
+        "longitude": 336.764718,
+        "sign_index": 11,
+        "degree_in_sign": 6.764718,
+        "is_retrograde": false,
+        "speed": 12.977251
+      },
+      "Mars": {
+        "longitude": 298.688731,
+        "sign_index": 9,
+        "degree_in_sign": 28.688731,
+        "is_retrograde": false,
+        "speed": 0.77699
+      },
+      "Mercury": {
+        "longitude": 343.190415,
+        "sign_index": 11,
+        "degree_in_sign": 13.190415,
+        "is_retrograde": false,
+        "speed": 1.863748
+      },
+      "Jupiter": {
+        "longitude": 149.349124,
+        "sign_index": 4,
+        "degree_in_sign": 29.349124,
+        "is_retrograde": true,
+        "speed": -0.130202
+      },
+      "Venus": {
+        "longitude": 8.262526,
+        "sign_index": 0,
+        "degree_in_sign": 8.262526,
+        "is_retrograde": false,
+        "speed": 0.38962
+      },
+      "Saturn": {
+        "longitude": 70.814307,
+        "sign_index": 2,
+        "degree_in_sign": 10.814307,
+        "is_retrograde": false,
+        "speed": 0.016141
+      },
+      "Rahu": {
+        "longitude": 81.872021,
+        "sign_index": 2,
+        "degree_in_sign": 21.872021,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 261.872021,
+        "sign_index": 8,
+        "degree_in_sign": 21.872021,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 52305,
+  "name": "Coppola, Bruno",
+  "given_name": "Bruno Coppola",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420194.277778,
+    "year": 1914,
+    "month": 3,
+    "day": 2,
+    "calendar": "g",
+    "time": "19:40",
+    "time_type": "s",
+    "hour": 19.666667,
+    "time_unknown": false,
+    "place": "Milano",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coppola,_Bruno",
+  "source_notes": "Ed Steinbrecher collection: Grazia Bordoni quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Beauty : Designer/ Fashion"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.854048,
+    "lagna": 133.854048,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.658319,
+    "jd_ut": 2420194.277778,
+    "planets": {
+      "Sun": {
+        "longitude": 318.697834,
+        "sign_index": 10,
+        "degree_in_sign": 18.697834,
+        "is_retrograde": false,
+        "speed": 1.002797
+      },
+      "Moon": {
+        "longitude": 20.866915,
+        "sign_index": 0,
+        "degree_in_sign": 20.866915,
+        "is_retrograde": false,
+        "speed": 9.216796
+      },
+      "Mars": {
+        "longitude": 74.817647,
+        "sign_index": 2,
+        "degree_in_sign": 14.817647,
+        "is_retrograde": false,
+        "speed": 0.193342
+      },
+      "Mercury": {
+        "longitude": 331.995998,
+        "sign_index": 11,
+        "degree_in_sign": 1.995998,
+        "is_retrograde": true,
+        "speed": -0.214424
+      },
+      "Jupiter": {
+        "longitude": 286.573953,
+        "sign_index": 9,
+        "degree_in_sign": 16.573953,
+        "is_retrograde": false,
+        "speed": 0.217883
+      },
+      "Venus": {
+        "longitude": 323.319317,
+        "sign_index": 10,
+        "degree_in_sign": 23.319317,
+        "is_retrograde": false,
+        "speed": 1.249032
+      },
+      "Saturn": {
+        "longitude": 48.887754,
+        "sign_index": 1,
+        "degree_in_sign": 18.887754,
+        "is_retrograde": false,
+        "speed": 0.035232
+      },
+      "Rahu": {
+        "longitude": 322.52657,
+        "sign_index": 10,
+        "degree_in_sign": 22.52657,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 142.52657,
+        "sign_index": 4,
+        "degree_in_sign": 22.52657,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 54635,
+  "name": "Cleveland, Michael",
+  "given_name": "Michael Cleveland",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2441183.439583,
+    "year": 1971,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "17:33",
+    "time_type": "d",
+    "hour": 17.55,
+    "time_unknown": false,
+    "place": "Knob Noster",
+    "country": "Missouri",
+    "lat": 38.766667,
+    "lon": -93.55
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cleveland,_Michael",
+  "source_notes": "Sy Scholfield quotes from news article in The Lantern (Ohio State University) by David J. Cross, June 23, 2005\\n",
+  "categories": [
+    "Passions : Criminal Victim : Homicide victim"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 24.512958,
+    "lagna": 234.512958,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.460842,
+    "jd_ut": 2441183.439583,
+    "planets": {
+      "Sun": {
+        "longitude": 122.814051,
+        "sign_index": 4,
+        "degree_in_sign": 2.814051,
+        "is_retrograde": false,
+        "speed": 0.962655
+      },
+      "Moon": {
+        "longitude": 110.844419,
+        "sign_index": 3,
+        "degree_in_sign": 20.844419,
+        "is_retrograde": false,
+        "speed": 11.689996
+      },
+      "Mars": {
+        "longitude": 291.069825,
+        "sign_index": 9,
+        "degree_in_sign": 21.069825,
+        "is_retrograde": true,
+        "speed": -0.234853
+      },
+      "Mercury": {
+        "longitude": 134.762801,
+        "sign_index": 4,
+        "degree_in_sign": 14.762801,
+        "is_retrograde": true,
+        "speed": -0.641126
+      },
+      "Jupiter": {
+        "longitude": 214.150622,
+        "sign_index": 7,
+        "degree_in_sign": 4.150622,
+        "is_retrograde": false,
+        "speed": 0.076277
+      },
+      "Venus": {
+        "longitude": 120.661898,
+        "sign_index": 4,
+        "degree_in_sign": 0.661898,
+        "is_retrograde": false,
+        "speed": 1.23726
+      },
+      "Saturn": {
+        "longitude": 42.253883,
+        "sign_index": 1,
+        "degree_in_sign": 12.253883,
+        "is_retrograde": false,
+        "speed": 0.052454
+      },
+      "Rahu": {
+        "longitude": 290.267503,
+        "sign_index": 9,
+        "degree_in_sign": 20.267503,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 110.267503,
+        "sign_index": 3,
+        "degree_in_sign": 20.267503,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

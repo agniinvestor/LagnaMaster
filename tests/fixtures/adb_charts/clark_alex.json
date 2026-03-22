@@ -1,0 +1,111 @@
+{
+  "adb_id": 85612,
+  "name": "Clark, Alex",
+  "given_name": "Alex Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420944.770833,
+    "year": 1916,
+    "month": 3,
+    "day": 22,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Indianapolis",
+    "country": "Indiana",
+    "lat": 39.766667,
+    "lon": -86.15
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Alex",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Vocation : Law : Jurist",
+    "Vocation : Military : POW/ MIA",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 5.393149,
+    "lagna": 215.393149,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.687011,
+    "jd_ut": 2420944.770833,
+    "planets": {
+      "Sun": {
+        "longitude": 338.620262,
+        "sign_index": 11,
+        "degree_in_sign": 8.620262,
+        "is_retrograde": false,
+        "speed": 0.991625
+      },
+      "Moon": {
+        "longitude": 191.330585,
+        "sign_index": 6,
+        "degree_in_sign": 11.330585,
+        "is_retrograde": false,
+        "speed": 9.975901
+      },
+      "Mars": {
+        "longitude": 107.637972,
+        "sign_index": 3,
+        "degree_in_sign": 17.637972,
+        "is_retrograde": false,
+        "speed": 0.007953
+      },
+      "Mercury": {
+        "longitude": 318.206886,
+        "sign_index": 10,
+        "degree_in_sign": 18.206886,
+        "is_retrograde": false,
+        "speed": 1.581847
+      },
+      "Jupiter": {
+        "longitude": 346.337707,
+        "sign_index": 11,
+        "degree_in_sign": 16.337707,
+        "is_retrograde": false,
+        "speed": 0.240934
+      },
+      "Venus": {
+        "longitude": 21.495803,
+        "sign_index": 0,
+        "degree_in_sign": 21.495803,
+        "is_retrograde": false,
+        "speed": 1.130264
+      },
+      "Saturn": {
+        "longitude": 76.95941,
+        "sign_index": 2,
+        "degree_in_sign": 16.95941,
+        "is_retrograde": false,
+        "speed": 0.019781
+      },
+      "Rahu": {
+        "longitude": 282.756371,
+        "sign_index": 9,
+        "degree_in_sign": 12.756371,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 102.756371,
+        "sign_index": 3,
+        "degree_in_sign": 12.756371,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

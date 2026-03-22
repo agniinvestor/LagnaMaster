@@ -1,0 +1,112 @@
+{
+  "adb_id": 81097,
+  "name": "Crepet, Paolo",
+  "given_name": "Paolo Crepet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433907.0625,
+    "year": 1951,
+    "month": 9,
+    "day": 17,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "s",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Turin",
+    "country": "Italy",
+    "lat": 45.05,
+    "lon": 7.666667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crepet,_Paolo",
+  "source_notes": "Grazia Bordoni's Science file quotes birth certificate.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Healing Fields : Psychiatrist",
+    "Vocation : Humanities+Social Sciences : Sociologist",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 13.71501,
+    "lagna": 223.71501,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.182606,
+    "jd_ut": 2433907.0625,
+    "planets": {
+      "Sun": {
+        "longitude": 150.662578,
+        "sign_index": 5,
+        "degree_in_sign": 0.662578,
+        "is_retrograde": false,
+        "speed": 0.975337
+      },
+      "Moon": {
+        "longitude": 356.130321,
+        "sign_index": 11,
+        "degree_in_sign": 26.130321,
+        "is_retrograde": false,
+        "speed": 17.01595
+      },
+      "Mars": {
+        "longitude": 115.965767,
+        "sign_index": 3,
+        "degree_in_sign": 25.965767,
+        "is_retrograde": false,
+        "speed": 0.626906
+      },
+      "Mercury": {
+        "longitude": 132.836851,
+        "sign_index": 4,
+        "degree_in_sign": 12.836851,
+        "is_retrograde": false,
+        "speed": 1.088308
+      },
+      "Jupiter": {
+        "longitude": 347.997688,
+        "sign_index": 11,
+        "degree_in_sign": 17.997688,
+        "is_retrograde": true,
+        "speed": -0.12237
+      },
+      "Venus": {
+        "longitude": 130.048601,
+        "sign_index": 4,
+        "degree_in_sign": 10.048601,
+        "is_retrograde": true,
+        "speed": -0.301427
+      },
+      "Saturn": {
+        "longitude": 160.827049,
+        "sign_index": 5,
+        "degree_in_sign": 10.827049,
+        "is_retrograde": false,
+        "speed": 0.122254
+      },
+      "Rahu": {
+        "longitude": 315.857635,
+        "sign_index": 10,
+        "degree_in_sign": 15.857635,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 135.857635,
+        "sign_index": 4,
+        "degree_in_sign": 15.857635,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

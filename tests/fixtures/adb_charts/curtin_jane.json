@@ -1,0 +1,115 @@
+{
+  "adb_id": 19662,
+  "name": "Curtin, Jane",
+  "given_name": "Jane Curtin",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432435.25,
+    "year": 1947,
+    "month": 9,
+    "day": 6,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "d",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Middlesex Village",
+    "country": "Massachusetts",
+    "lat": 42.633333,
+    "lon": -71.35
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curtin,_Jane",
+  "source_notes": "B.C. in hand from the Wilsons from Roscoe Hope\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Social Life : Travel",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Notable : Awards : Emmy",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 26.589427,
+    "lagna": 206.589427,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.12633,
+    "jd_ut": 2432435.25,
+    "planets": {
+      "Sun": {
+        "longitude": 140.164738,
+        "sign_index": 4,
+        "degree_in_sign": 20.164738,
+        "is_retrograde": false,
+        "speed": 0.970078
+      },
+      "Moon": {
+        "longitude": 31.492395,
+        "sign_index": 1,
+        "degree_in_sign": 1.492395,
+        "is_retrograde": false,
+        "speed": 16.022035
+      },
+      "Mars": {
+        "longitude": 82.191667,
+        "sign_index": 2,
+        "degree_in_sign": 22.191667,
+        "is_retrograde": false,
+        "speed": 0.624246
+      },
+      "Mercury": {
+        "longitude": 147.971607,
+        "sign_index": 4,
+        "degree_in_sign": 27.971607,
+        "is_retrograde": false,
+        "speed": 1.788814
+      },
+      "Jupiter": {
+        "longitude": 208.476473,
+        "sign_index": 6,
+        "degree_in_sign": 28.476473,
+        "is_retrograde": false,
+        "speed": 0.138528
+      },
+      "Venus": {
+        "longitude": 141.022304,
+        "sign_index": 4,
+        "degree_in_sign": 21.022304,
+        "is_retrograde": false,
+        "speed": 1.241865
+      },
+      "Saturn": {
+        "longitude": 113.331156,
+        "sign_index": 3,
+        "degree_in_sign": 23.331156,
+        "is_retrograde": false,
+        "speed": 0.119424
+      },
+      "Rahu": {
+        "longitude": 33.852011,
+        "sign_index": 1,
+        "degree_in_sign": 3.852011,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 213.852011,
+        "sign_index": 7,
+        "degree_in_sign": 3.852011,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

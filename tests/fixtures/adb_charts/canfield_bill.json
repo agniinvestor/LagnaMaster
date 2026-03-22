@@ -1,0 +1,108 @@
+{
+  "adb_id": 10232,
+  "name": "Canfield, Bill",
+  "given_name": "Bill Canfield",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431984.013889,
+    "year": 1946,
+    "month": 6,
+    "day": 12,
+    "calendar": "g",
+    "time": "08:20",
+    "time_type": "d",
+    "hour": 8.333333,
+    "time_unknown": false,
+    "place": "Cambridge (Middlesex County)",
+    "country": "Massachusetts",
+    "lat": 42.366667,
+    "lon": -71.1
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canfield,_Bill",
+  "source_notes": "LMR quotes his letter 1/l991\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.961777,
+    "lagna": 74.961777,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.109076,
+    "jd_ut": 2431984.013889,
+    "planets": {
+      "Sun": {
+        "longitude": 57.812007,
+        "sign_index": 1,
+        "degree_in_sign": 27.812007,
+        "is_retrograde": false,
+        "speed": 0.955175
+      },
+      "Moon": {
+        "longitude": 212.887373,
+        "sign_index": 7,
+        "degree_in_sign": 2.887373,
+        "is_retrograde": false,
+        "speed": 14.565463
+      },
+      "Mars": {
+        "longitude": 122.498996,
+        "sign_index": 4,
+        "degree_in_sign": 2.498996,
+        "is_retrograde": false,
+        "speed": 0.554986
+      },
+      "Mercury": {
+        "longitude": 71.734427,
+        "sign_index": 2,
+        "degree_in_sign": 11.734427,
+        "is_retrograde": false,
+        "speed": 1.947475
+      },
+      "Jupiter": {
+        "longitude": 174.355338,
+        "sign_index": 5,
+        "degree_in_sign": 24.355338,
+        "is_retrograde": true,
+        "speed": -0.006774
+      },
+      "Venus": {
+        "longitude": 90.125303,
+        "sign_index": 3,
+        "degree_in_sign": 0.125303,
+        "is_retrograde": false,
+        "speed": 1.191574
+      },
+      "Saturn": {
+        "longitude": 90.465614,
+        "sign_index": 3,
+        "degree_in_sign": 0.465614,
+        "is_retrograde": false,
+        "speed": 0.115883
+      },
+      "Rahu": {
+        "longitude": 57.763944,
+        "sign_index": 1,
+        "degree_in_sign": 27.763944,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 237.763944,
+        "sign_index": 7,
+        "degree_in_sign": 27.763944,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

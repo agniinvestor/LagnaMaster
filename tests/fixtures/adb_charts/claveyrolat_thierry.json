@@ -1,0 +1,110 @@
+{
+  "adb_id": 65863,
+  "name": "Claveyrolat, Thierry",
+  "given_name": "Thierry Claveyrolat",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436658.916667,
+    "year": 1959,
+    "month": 3,
+    "day": 31,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "La Tronche",
+    "country": "France",
+    "lat": 45.2,
+    "lon": 5.733333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claveyrolat,_Thierry",
+  "source_notes": "Birth and death records in Didier Geslain archive, 'Cyclisme' pdf file, pp. 69-70.\\n",
+  "categories": [
+    "Personal : Death : Suicide",
+    "Vocation : Sports : Race Bikes",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 21.960449,
+    "lagna": 51.960449,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.287829,
+    "jd_ut": 2436658.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 346.655313,
+        "sign_index": 11,
+        "degree_in_sign": 16.655313,
+        "is_retrograde": false,
+        "speed": 0.987328
+      },
+      "Moon": {
+        "longitude": 255.397778,
+        "sign_index": 8,
+        "degree_in_sign": 15.397778,
+        "is_retrograde": false,
+        "speed": 11.988569
+      },
+      "Mars": {
+        "longitude": 61.172944,
+        "sign_index": 2,
+        "degree_in_sign": 1.172944,
+        "is_retrograde": false,
+        "speed": 0.548126
+      },
+      "Mercury": {
+        "longitude": 343.006011,
+        "sign_index": 11,
+        "degree_in_sign": 13.006011,
+        "is_retrograde": true,
+        "speed": -0.840111
+      },
+      "Jupiter": {
+        "longitude": 218.458701,
+        "sign_index": 7,
+        "degree_in_sign": 8.458701,
+        "is_retrograde": true,
+        "speed": -0.038661
+      },
+      "Venus": {
+        "longitude": 19.419734,
+        "sign_index": 0,
+        "degree_in_sign": 19.419734,
+        "is_retrograde": false,
+        "speed": 1.204204
+      },
+      "Saturn": {
+        "longitude": 253.558836,
+        "sign_index": 8,
+        "degree_in_sign": 13.558836,
+        "is_retrograde": false,
+        "speed": 0.026632
+      },
+      "Rahu": {
+        "longitude": 170.031228,
+        "sign_index": 5,
+        "degree_in_sign": 20.031228,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 350.031228,
+        "sign_index": 11,
+        "degree_in_sign": 20.031228,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

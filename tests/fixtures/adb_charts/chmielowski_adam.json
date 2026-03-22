@@ -1,0 +1,109 @@
+{
+  "adb_id": 76754,
+  "name": "Chmielowski, Adam",
+  "given_name": "Adam Chmielowski",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2395528.65213,
+    "year": 1846,
+    "month": 8,
+    "day": 20,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Igolomia",
+    "country": "Poland",
+    "lat": 50.083333,
+    "lon": 20.233333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chmielowski,_Adam",
+  "source_notes": "PTA quotes Birth certificate: \"It happened in Igołomia August 26, 1845, at one o'clock at noon. Appeared lordship Adalbert [Wojciech] Chmielowski, the head of the Customs Chamber in Class Igołomia and [there] ... here in Igołomia born under the house number 53 of 20 of the current month and year at 5 o'clock in the morning with his wife, Josefa with these great lady Borzysławskich, 24 years old having . Metric cited in Władysław Kluz, When you have one soul: Brother Albert Chmielowski , WAM, Kraków 1989.\\nThe information provided by Mirosław Czylek. [http://www.astrolog.org.pl/baza-horoskopow/Chmielowski_Adam]\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 13.052012,
+    "lagna": 103.052012,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.715486,
+    "jd_ut": 2395528.65213,
+    "planets": {
+      "Sun": {
+        "longitude": 124.978948,
+        "sign_index": 4,
+        "degree_in_sign": 4.978948,
+        "is_retrograde": false,
+        "speed": 0.963672
+      },
+      "Moon": {
+        "longitude": 105.826358,
+        "sign_index": 3,
+        "degree_in_sign": 15.826358,
+        "is_retrograde": false,
+        "speed": 11.442015
+      },
+      "Mars": {
+        "longitude": 131.977992,
+        "sign_index": 4,
+        "degree_in_sign": 11.977992,
+        "is_retrograde": false,
+        "speed": 0.635834
+      },
+      "Mercury": {
+        "longitude": 135.448277,
+        "sign_index": 4,
+        "degree_in_sign": 15.448277,
+        "is_retrograde": true,
+        "speed": -0.717518
+      },
+      "Jupiter": {
+        "longitude": 51.625401,
+        "sign_index": 1,
+        "degree_in_sign": 21.625401,
+        "is_retrograde": false,
+        "speed": 0.134313
+      },
+      "Venus": {
+        "longitude": 95.559317,
+        "sign_index": 3,
+        "degree_in_sign": 5.559317,
+        "is_retrograde": false,
+        "speed": 1.203795
+      },
+      "Saturn": {
+        "longitude": 305.793656,
+        "sign_index": 10,
+        "degree_in_sign": 5.793656,
+        "is_retrograde": true,
+        "speed": -0.075588
+      },
+      "Rahu": {
+        "longitude": 189.610526,
+        "sign_index": 6,
+        "degree_in_sign": 9.610526,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 9.610526,
+        "sign_index": 0,
+        "degree_in_sign": 9.610526,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

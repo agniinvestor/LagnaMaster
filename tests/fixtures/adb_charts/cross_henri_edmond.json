@@ -1,0 +1,108 @@
+{
+  "adb_id": 57084,
+  "name": "Cross, Henri Edmond",
+  "given_name": "Henri Edmond Cross",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2399089.720648,
+    "year": 1856,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "l",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Douai",
+    "country": "France",
+    "lat": 50.366667,
+    "lon": 3.066667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cross,_Henri_Edmond",
+  "source_notes": "BC in hand from Didier Geslain archive\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 8.760042,
+    "lagna": 38.760042,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.851589,
+    "jd_ut": 2399089.720648,
+    "planets": {
+      "Sun": {
+        "longitude": 37.481113,
+        "sign_index": 1,
+        "degree_in_sign": 7.481113,
+        "is_retrograde": false,
+        "speed": 0.960886
+      },
+      "Moon": {
+        "longitude": 219.647792,
+        "sign_index": 7,
+        "degree_in_sign": 9.647792,
+        "is_retrograde": false,
+        "speed": 11.787091
+      },
+      "Mars": {
+        "longitude": 161.45477,
+        "sign_index": 5,
+        "degree_in_sign": 11.45477,
+        "is_retrograde": false,
+        "speed": 0.079665
+      },
+      "Mercury": {
+        "longitude": 59.140971,
+        "sign_index": 1,
+        "degree_in_sign": 29.140971,
+        "is_retrograde": false,
+        "speed": 1.35468
+      },
+      "Jupiter": {
+        "longitude": 340.300646,
+        "sign_index": 11,
+        "degree_in_sign": 10.300646,
+        "is_retrograde": false,
+        "speed": 0.18083
+      },
+      "Venus": {
+        "longitude": 20.830769,
+        "sign_index": 0,
+        "degree_in_sign": 20.830769,
+        "is_retrograde": false,
+        "speed": 1.221963
+      },
+      "Saturn": {
+        "longitude": 67.241262,
+        "sign_index": 2,
+        "degree_in_sign": 7.241262,
+        "is_retrograde": false,
+        "speed": 0.119034
+      },
+      "Rahu": {
+        "longitude": 0.901833,
+        "sign_index": 0,
+        "degree_in_sign": 0.901833,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 180.901833,
+        "sign_index": 6,
+        "degree_in_sign": 0.901833,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 67437,
+  "name": "Croisy, Aristide",
+  "given_name": "Aristide Croisy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393196.195454,
+    "year": 1840,
+    "month": 3,
+    "day": 31,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Fagnon",
+    "country": "France",
+    "lat": 49.737222,
+    "lon": 4.636389
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Croisy,_Aristide",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'sculpteurs' pdf file, p. 25.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 12.506145,
+    "lagna": 132.506145,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.626343,
+    "jd_ut": 2393196.195454,
+    "planets": {
+      "Sun": {
+        "longitude": 349.413338,
+        "sign_index": 11,
+        "degree_in_sign": 19.413338,
+        "is_retrograde": false,
+        "speed": 0.985877
+      },
+      "Moon": {
+        "longitude": 322.762081,
+        "sign_index": 10,
+        "degree_in_sign": 22.762081,
+        "is_retrograde": false,
+        "speed": 14.535664
+      },
+      "Mars": {
+        "longitude": 357.333627,
+        "sign_index": 11,
+        "degree_in_sign": 27.333627,
+        "is_retrograde": false,
+        "speed": 0.75663
+      },
+      "Mercury": {
+        "longitude": 0.814465,
+        "sign_index": 0,
+        "degree_in_sign": 0.814465,
+        "is_retrograde": true,
+        "speed": -0.310367
+      },
+      "Jupiter": {
+        "longitude": 206.031189,
+        "sign_index": 6,
+        "degree_in_sign": 26.031189,
+        "is_retrograde": true,
+        "speed": -0.080303
+      },
+      "Venus": {
+        "longitude": 319.343072,
+        "sign_index": 10,
+        "degree_in_sign": 19.343072,
+        "is_retrograde": false,
+        "speed": 1.217295
+      },
+      "Saturn": {
+        "longitude": 240.109578,
+        "sign_index": 8,
+        "degree_in_sign": 0.109578,
+        "is_retrograde": true,
+        "speed": -0.000861
+      },
+      "Rahu": {
+        "longitude": 313.212448,
+        "sign_index": 10,
+        "degree_in_sign": 13.212448,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 133.212448,
+        "sign_index": 4,
+        "degree_in_sign": 13.212448,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

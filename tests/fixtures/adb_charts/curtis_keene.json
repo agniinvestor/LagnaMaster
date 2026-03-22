@@ -1,0 +1,109 @@
+{
+  "adb_id": 50883,
+  "name": "Curtis, Keene",
+  "given_name": "Keene Curtis",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423466.565278,
+    "year": 1923,
+    "month": 2,
+    "day": 15,
+    "calendar": "g",
+    "time": "18:34",
+    "time_type": "s",
+    "hour": 18.566667,
+    "time_unknown": false,
+    "place": "Salt Lake City",
+    "country": "Utah",
+    "lat": 40.766667,
+    "lon": -111.883333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curtis,_Keene",
+  "source_notes": "Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Voice-Over"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 18.067168,
+    "lagna": 108.067168,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.783422,
+    "jd_ut": 2423466.565278,
+    "planets": {
+      "Sun": {
+        "longitude": 303.582581,
+        "sign_index": 10,
+        "degree_in_sign": 3.582581,
+        "is_retrograde": false,
+        "speed": 1.009982
+      },
+      "Moon": {
+        "longitude": 305.766723,
+        "sign_index": 10,
+        "degree_in_sign": 5.766723,
+        "is_retrograde": false,
+        "speed": 12.316847
+      },
+      "Mars": {
+        "longitude": 355.81212,
+        "sign_index": 11,
+        "degree_in_sign": 25.81212,
+        "is_retrograde": false,
+        "speed": 0.718986
+      },
+      "Mercury": {
+        "longitude": 278.257409,
+        "sign_index": 9,
+        "degree_in_sign": 8.257409,
+        "is_retrograde": false,
+        "speed": 0.584117
+      },
+      "Jupiter": {
+        "longitude": 205.66993,
+        "sign_index": 6,
+        "degree_in_sign": 25.66993,
+        "is_retrograde": false,
+        "speed": 0.054372
+      },
+      "Venus": {
+        "longitude": 257.151197,
+        "sign_index": 8,
+        "degree_in_sign": 17.151197,
+        "is_retrograde": false,
+        "speed": 1.072842
+      },
+      "Saturn": {
+        "longitude": 177.064865,
+        "sign_index": 5,
+        "degree_in_sign": 27.064865,
+        "is_retrograde": true,
+        "speed": -0.029994
+      },
+      "Rahu": {
+        "longitude": 149.121213,
+        "sign_index": 4,
+        "degree_in_sign": 29.121213,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 329.121213,
+        "sign_index": 10,
+        "degree_in_sign": 29.121213,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

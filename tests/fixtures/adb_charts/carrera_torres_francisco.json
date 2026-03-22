@@ -1,0 +1,110 @@
+{
+  "adb_id": 84748,
+  "name": "Carrera Torres, Francisco",
+  "given_name": "Francisco Carrera Torres",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412127.735324,
+    "year": 1892,
+    "month": 1,
+    "day": 29,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Tula (Tamaulipas)",
+    "country": "Mexico",
+    "lat": 23.0,
+    "lon": -99.716667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrera_Torres,_Francisco",
+  "source_notes": "Sy Scholfield provided birth record. \\n",
+  "categories": [
+    "Family : Childhood : Sibling circumstances",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 7.23827,
+    "lagna": 157.23827,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.349948,
+    "jd_ut": 2412127.735324,
+    "planets": {
+      "Sun": {
+        "longitude": 287.497077,
+        "sign_index": 9,
+        "degree_in_sign": 17.497077,
+        "is_retrograde": false,
+        "speed": 1.015658
+      },
+      "Moon": {
+        "longitude": 294.336705,
+        "sign_index": 9,
+        "degree_in_sign": 24.336705,
+        "is_retrograde": false,
+        "speed": 19.356145
+      },
+      "Mars": {
+        "longitude": 221.027124,
+        "sign_index": 7,
+        "degree_in_sign": 11.027124,
+        "is_retrograde": false,
+        "speed": 0.624006
+      },
+      "Mercury": {
+        "longitude": 265.182129,
+        "sign_index": 8,
+        "degree_in_sign": 25.182129,
+        "is_retrograde": false,
+        "speed": 1.338889
+      },
+      "Jupiter": {
+        "longitude": 326.774468,
+        "sign_index": 10,
+        "degree_in_sign": 26.774468,
+        "is_retrograde": false,
+        "speed": 0.214475
+      },
+      "Venus": {
+        "longitude": 319.539275,
+        "sign_index": 10,
+        "degree_in_sign": 19.539275,
+        "is_retrograde": false,
+        "speed": 1.227705
+      },
+      "Saturn": {
+        "longitude": 157.42402,
+        "sign_index": 5,
+        "degree_in_sign": 7.42402,
+        "is_retrograde": true,
+        "speed": -0.036304
+      },
+      "Rahu": {
+        "longitude": 29.989643,
+        "sign_index": 0,
+        "degree_in_sign": 29.989643,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 209.989643,
+        "sign_index": 6,
+        "degree_in_sign": 29.989643,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

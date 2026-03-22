@@ -1,0 +1,118 @@
+{
+  "adb_id": 48920,
+  "name": "Cahill, Mary Beth",
+  "given_name": "Mary Beth Cahill",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434841.003472,
+    "year": 1954,
+    "month": 4,
+    "day": 8,
+    "calendar": "g",
+    "time": "07:05",
+    "time_type": "s",
+    "hour": 7.083333,
+    "time_unknown": false,
+    "place": "Dorchester Center",
+    "country": "Massachusetts",
+    "lat": 42.3,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cahill,_Mary_Beth",
+  "source_notes": "PT quotes birth certificate.\\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Traits : Personality : Aggressive/ brash",
+    "Traits : Personality : Personality robust",
+    "Traits : Personality : Practical/ Realistic",
+    "Family : Childhood : Family close",
+    "Family : Childhood : Family large",
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Married late/never",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Other Politics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 11.170548,
+    "lagna": 11.170548,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.218317,
+    "jd_ut": 2434841.003472,
+    "planets": {
+      "Sun": {
+        "longitude": 354.896709,
+        "sign_index": 11,
+        "degree_in_sign": 24.896709,
+        "is_retrograde": false,
+        "speed": 0.982729
+      },
+      "Moon": {
+        "longitude": 64.135877,
+        "sign_index": 2,
+        "degree_in_sign": 4.135877,
+        "is_retrograde": false,
+        "speed": 17.241014
+      },
+      "Mars": {
+        "longitude": 245.183762,
+        "sign_index": 8,
+        "degree_in_sign": 5.183762,
+        "is_retrograde": false,
+        "speed": 0.39208
+      },
+      "Mercury": {
+        "longitude": 329.504055,
+        "sign_index": 10,
+        "degree_in_sign": 29.504055,
+        "is_retrograde": false,
+        "speed": 1.388845
+      },
+      "Jupiter": {
+        "longitude": 58.090583,
+        "sign_index": 1,
+        "degree_in_sign": 28.090583,
+        "is_retrograde": false,
+        "speed": 0.156676
+      },
+      "Venus": {
+        "longitude": 11.721924,
+        "sign_index": 0,
+        "degree_in_sign": 11.721924,
+        "is_retrograde": false,
+        "speed": 1.232897
+      },
+      "Saturn": {
+        "longitude": 194.169775,
+        "sign_index": 6,
+        "degree_in_sign": 14.169775,
+        "is_retrograde": true,
+        "speed": -0.069438
+      },
+      "Rahu": {
+        "longitude": 266.366181,
+        "sign_index": 8,
+        "degree_in_sign": 26.366181,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 86.366181,
+        "sign_index": 2,
+        "degree_in_sign": 26.366181,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

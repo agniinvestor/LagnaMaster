@@ -1,0 +1,113 @@
+{
+  "adb_id": 97278,
+  "name": "Clark, Percy Missen",
+  "given_name": "Percy Missen Clark",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2405889.416667,
+    "year": 1874,
+    "month": 12,
+    "day": 31,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Cambridge",
+    "country": "England",
+    "lat": 52.216667,
+    "lon": 0.133333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Percy_Missen",
+  "source_notes": "Sy Scholfield quotes from ''The Autobiography of an Old Drifter'' by Percy Missen Clark (Books of Rhodesia, 1972), page 11: \"I was born in Cambridge at ten o'clock on New Year's Eve in the year 1874. If I had been born two hours later it would have been in the year 1875...\"\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Art : Photography",
+    "Vocation : Travel : Adventurer",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 2.016037,
+    "lagna": 122.016037,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.111488,
+    "jd_ut": 2405889.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 258.021591,
+        "sign_index": 8,
+        "degree_in_sign": 18.021591,
+        "is_retrograde": false,
+        "speed": 1.019412
+      },
+      "Moon": {
+        "longitude": 182.796506,
+        "sign_index": 6,
+        "degree_in_sign": 2.796506,
+        "is_retrograde": false,
+        "speed": 14.031922
+      },
+      "Mars": {
+        "longitude": 193.640103,
+        "sign_index": 6,
+        "degree_in_sign": 13.640103,
+        "is_retrograde": false,
+        "speed": 0.593296
+      },
+      "Mercury": {
+        "longitude": 249.444274,
+        "sign_index": 8,
+        "degree_in_sign": 9.444274,
+        "is_retrograde": false,
+        "speed": 1.557535
+      },
+      "Jupiter": {
+        "longitude": 186.481208,
+        "sign_index": 6,
+        "degree_in_sign": 6.481208,
+        "is_retrograde": false,
+        "speed": 0.127376
+      },
+      "Venus": {
+        "longitude": 227.360646,
+        "sign_index": 7,
+        "degree_in_sign": 17.360646,
+        "is_retrograde": false,
+        "speed": 0.09378
+      },
+      "Saturn": {
+        "longitude": 290.454258,
+        "sign_index": 9,
+        "degree_in_sign": 20.454258,
+        "is_retrograde": false,
+        "speed": 0.107514
+      },
+      "Rahu": {
+        "longitude": 0.571393,
+        "sign_index": 0,
+        "degree_in_sign": 0.571393,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 180.571393,
+        "sign_index": 6,
+        "degree_in_sign": 0.571393,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

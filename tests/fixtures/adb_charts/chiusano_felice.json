@@ -1,0 +1,112 @@
+{
+  "adb_id": 71652,
+  "name": "Chiusano, Felice",
+  "given_name": "Felice Chiusano",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423142.180556,
+    "year": 1922,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "17:20",
+    "time_type": "s",
+    "hour": 17.333333,
+    "time_unknown": false,
+    "place": "Fondi",
+    "country": "Italy",
+    "lat": 41.35,
+    "lon": 13.416667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiusano,_Felice",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Traits : Personality : Humorous, Witty",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Business : Other Entertain/Bus"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 9.499203,
+    "lagna": 129.499203,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.771021,
+    "jd_ut": 2423142.180556,
+    "planets": {
+      "Sun": {
+        "longitude": 344.433497,
+        "sign_index": 11,
+        "degree_in_sign": 14.433497,
+        "is_retrograde": false,
+        "speed": 0.98887
+      },
+      "Moon": {
+        "longitude": 345.094556,
+        "sign_index": 11,
+        "degree_in_sign": 15.094556,
+        "is_retrograde": false,
+        "speed": 10.990252
+      },
+      "Mars": {
+        "longitude": 234.164091,
+        "sign_index": 7,
+        "degree_in_sign": 24.164091,
+        "is_retrograde": false,
+        "speed": 0.363525
+      },
+      "Mercury": {
+        "longitude": 321.426455,
+        "sign_index": 10,
+        "degree_in_sign": 21.426455,
+        "is_retrograde": false,
+        "speed": 1.502205
+      },
+      "Jupiter": {
+        "longitude": 172.116339,
+        "sign_index": 5,
+        "degree_in_sign": 22.116339,
+        "is_retrograde": true,
+        "speed": -0.126508
+      },
+      "Venus": {
+        "longitude": 356.115142,
+        "sign_index": 11,
+        "degree_in_sign": 26.115142,
+        "is_retrograde": false,
+        "speed": 1.239599
+      },
+      "Saturn": {
+        "longitude": 161.249533,
+        "sign_index": 5,
+        "degree_in_sign": 11.249533,
+        "is_retrograde": true,
+        "speed": -0.078196
+      },
+      "Rahu": {
+        "longitude": 166.311037,
+        "sign_index": 5,
+        "degree_in_sign": 16.311037,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.311037,
+        "sign_index": 11,
+        "degree_in_sign": 16.311037,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

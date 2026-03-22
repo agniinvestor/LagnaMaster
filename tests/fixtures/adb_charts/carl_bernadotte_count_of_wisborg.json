@@ -1,0 +1,113 @@
+{
+  "adb_id": 92845,
+  "name": "Carl Bernadotte, Count of Wisborg",
+  "given_name": "Count of Wisborg Carl Bernadotte",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2411514.541505,
+    "year": 1890,
+    "month": 5,
+    "day": 27,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Karlskrona",
+    "country": "Sweden",
+    "lat": 56.166667,
+    "lon": 15.583333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carl_Bernadotte,_Count_of_Wisborg",
+  "source_notes": "Sy Scholfield quotes Swedish newspaper report, ''Sydsvenska'', 27 May 1890, page 3: \"Stockholm den 27. Prinsessan Bernadotte har i natt kl. 2 födt en son.\" (Translation: Stockholm, 27th. Princess Bernadotte has tonight at 2 o'clock given birth to a son).\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Military : Military career",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 0.777579,
+    "lagna": 330.777579,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.326508,
+    "jd_ut": 2411514.541505,
+    "planets": {
+      "Sun": {
+        "longitude": 43.341042,
+        "sign_index": 1,
+        "degree_in_sign": 13.341042,
+        "is_retrograde": false,
+        "speed": 0.959213
+      },
+      "Moon": {
+        "longitude": 134.332861,
+        "sign_index": 4,
+        "degree_in_sign": 14.332861,
+        "is_retrograde": false,
+        "speed": 13.561919
+      },
+      "Mars": {
+        "longitude": 224.321056,
+        "sign_index": 7,
+        "degree_in_sign": 14.321056,
+        "is_retrograde": true,
+        "speed": -0.339441
+      },
+      "Mercury": {
+        "longitude": 48.130487,
+        "sign_index": 1,
+        "degree_in_sign": 18.130487,
+        "is_retrograde": true,
+        "speed": -0.510164
+      },
+      "Jupiter": {
+        "longitude": 289.821846,
+        "sign_index": 9,
+        "degree_in_sign": 19.821846,
+        "is_retrograde": false,
+        "speed": 0.01228
+      },
+      "Venus": {
+        "longitude": 67.953461,
+        "sign_index": 2,
+        "degree_in_sign": 7.953461,
+        "is_retrograde": false,
+        "speed": 1.212916
+      },
+      "Saturn": {
+        "longitude": 125.38994,
+        "sign_index": 4,
+        "degree_in_sign": 5.38994,
+        "is_retrograde": false,
+        "speed": 0.048238
+      },
+      "Rahu": {
+        "longitude": 62.484081,
+        "sign_index": 2,
+        "degree_in_sign": 2.484081,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 242.484081,
+        "sign_index": 8,
+        "degree_in_sign": 2.484081,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

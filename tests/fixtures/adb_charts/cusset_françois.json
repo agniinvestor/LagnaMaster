@@ -1,0 +1,110 @@
+{
+  "adb_id": 65116,
+  "name": "Cusset, François",
+  "given_name": "François Cusset",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440289.635417,
+    "year": 1969,
+    "month": 3,
+    "day": 9,
+    "calendar": "g",
+    "time": "04:15",
+    "time_type": "s",
+    "hour": 4.25,
+    "time_unknown": false,
+    "place": "Boulogne Billancourt",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cusset,_François",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 298.\\n",
+  "categories": [
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Humanities+Social Sciences : Historian"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 20.717591,
+    "lagna": 230.717591,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.426663,
+    "jd_ut": 2440289.635417,
+    "planets": {
+      "Sun": {
+        "longitude": 324.951684,
+        "sign_index": 10,
+        "degree_in_sign": 24.951684,
+        "is_retrograde": false,
+        "speed": 0.999285
+      },
+      "Moon": {
+        "longitude": 206.692286,
+        "sign_index": 6,
+        "degree_in_sign": 26.692286,
+        "is_retrograde": false,
+        "speed": 10.200826
+      },
+      "Mars": {
+        "longitude": 221.683936,
+        "sign_index": 7,
+        "degree_in_sign": 11.683936,
+        "is_retrograde": false,
+        "speed": 0.405876
+      },
+      "Mercury": {
+        "longitude": 301.452662,
+        "sign_index": 10,
+        "degree_in_sign": 1.452662,
+        "is_retrograde": false,
+        "speed": 1.423082
+      },
+      "Jupiter": {
+        "longitude": 159.349137,
+        "sign_index": 5,
+        "degree_in_sign": 9.349137,
+        "is_retrograde": true,
+        "speed": -0.121788
+      },
+      "Venus": {
+        "longitude": 1.746549,
+        "sign_index": 0,
+        "degree_in_sign": 1.746549,
+        "is_retrograde": false,
+        "speed": 0.340161
+      },
+      "Saturn": {
+        "longitude": 0.190843,
+        "sign_index": 0,
+        "degree_in_sign": 0.190843,
+        "is_retrograde": false,
+        "speed": 0.111755
+      },
+      "Rahu": {
+        "longitude": 337.63201,
+        "sign_index": 11,
+        "degree_in_sign": 7.63201,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 157.63201,
+        "sign_index": 5,
+        "degree_in_sign": 7.63201,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

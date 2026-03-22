@@ -1,0 +1,108 @@
+{
+  "adb_id": 50733,
+  "name": "Calmettes, Jean-Marie",
+  "given_name": "Jean-Marie Calmettes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421698.375,
+    "year": 1918,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "d",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Wissous",
+    "country": "France",
+    "lat": 48.733333,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calmettes,_Jean-Marie",
+  "source_notes": "Steinbrecher collection: Gauquelin 4/180\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 5.00451,
+    "lagna": 185.00451,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.715822,
+    "jd_ut": 2421698.375,
+    "planets": {
+      "Sun": {
+        "longitude": 1.371314,
+        "sign_index": 0,
+        "degree_in_sign": 1.371314,
+        "is_retrograde": false,
+        "speed": 0.979149
+      },
+      "Moon": {
+        "longitude": 50.82004,
+        "sign_index": 1,
+        "degree_in_sign": 20.82004,
+        "is_retrograde": false,
+        "speed": 13.504177
+      },
+      "Mars": {
+        "longitude": 141.881191,
+        "sign_index": 4,
+        "degree_in_sign": 21.881191,
+        "is_retrograde": true,
+        "speed": -0.14069
+      },
+      "Mercury": {
+        "longitude": 17.539416,
+        "sign_index": 0,
+        "degree_in_sign": 17.539416,
+        "is_retrograde": false,
+        "speed": 0.183769
+      },
+      "Jupiter": {
+        "longitude": 47.49762,
+        "sign_index": 1,
+        "degree_in_sign": 17.49762,
+        "is_retrograde": false,
+        "speed": 0.193455
+      },
+      "Venus": {
+        "longitude": 315.287217,
+        "sign_index": 10,
+        "degree_in_sign": 15.287217,
+        "is_retrograde": false,
+        "speed": 0.928174
+      },
+      "Saturn": {
+        "longitude": 104.919339,
+        "sign_index": 3,
+        "degree_in_sign": 14.919339,
+        "is_retrograde": false,
+        "speed": 0.009712
+      },
+      "Rahu": {
+        "longitude": 242.821309,
+        "sign_index": 8,
+        "degree_in_sign": 2.821309,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 62.821309,
+        "sign_index": 2,
+        "degree_in_sign": 2.821309,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

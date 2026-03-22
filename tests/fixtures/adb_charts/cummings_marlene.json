@@ -1,0 +1,109 @@
+{
+  "adb_id": 7664,
+  "name": "Cummings, Marlene",
+  "given_name": "Marlene Cummings",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2428071.065972,
+    "year": 1935,
+    "month": 9,
+    "day": 25,
+    "calendar": "g",
+    "time": "07:35",
+    "time_type": "s",
+    "hour": 7.583333,
+    "time_unknown": false,
+    "place": "Indianapolis",
+    "country": "Indiana",
+    "lat": 39.766667,
+    "lon": -86.15
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cummings,_Marlene",
+  "source_notes": "Neil Marbell quotes her\\n",
+  "categories": [
+    "Vocation : Politics : Government employee",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 8.854866,
+    "lagna": 158.854866,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.959465,
+    "jd_ut": 2428071.065972,
+    "planets": {
+      "Sun": {
+        "longitude": 158.585606,
+        "sign_index": 5,
+        "degree_in_sign": 8.585606,
+        "is_retrograde": false,
+        "speed": 0.980461
+      },
+      "Moon": {
+        "longitude": 135.644452,
+        "sign_index": 4,
+        "degree_in_sign": 15.644452,
+        "is_retrograde": false,
+        "speed": 8.625704
+      },
+      "Mars": {
+        "longitude": 223.196741,
+        "sign_index": 7,
+        "degree_in_sign": 13.196741,
+        "is_retrograde": false,
+        "speed": 0.691253
+      },
+      "Mercury": {
+        "longitude": 184.62319,
+        "sign_index": 6,
+        "degree_in_sign": 4.62319,
+        "is_retrograde": false,
+        "speed": 0.8667
+      },
+      "Jupiter": {
+        "longitude": 208.020725,
+        "sign_index": 6,
+        "degree_in_sign": 28.020725,
+        "is_retrograde": false,
+        "speed": 0.177891
+      },
+      "Venus": {
+        "longitude": 133.984277,
+        "sign_index": 4,
+        "degree_in_sign": 13.984277,
+        "is_retrograde": true,
+        "speed": -0.167729
+      },
+      "Saturn": {
+        "longitude": 312.045804,
+        "sign_index": 10,
+        "degree_in_sign": 12.045804,
+        "is_retrograde": true,
+        "speed": -0.063666
+      },
+      "Rahu": {
+        "longitude": 265.119148,
+        "sign_index": 8,
+        "degree_in_sign": 25.119148,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 85.119148,
+        "sign_index": 2,
+        "degree_in_sign": 25.119148,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

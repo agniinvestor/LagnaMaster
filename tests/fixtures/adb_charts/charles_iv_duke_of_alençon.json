@@ -1,0 +1,111 @@
+{
+  "adb_id": 77426,
+  "name": "Charles IV, Duke of Alençon",
+  "given_name": "Duke of Alençon Charles IV",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2265159.791435,
+    "year": 1489,
+    "month": 9,
+    "day": 2,
+    "calendar": "j",
+    "time": "07:00",
+    "time_type": "l",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Alençon",
+    "country": "France",
+    "lat": 48.433333,
+    "lon": 0.083333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_IV,_Duke_of_Alençon",
+  "source_notes": "Sy Scholfield quotes from \"Histoire de la Maison Royale de France, et des grands officiers de la Couronne\" by Anselme de Sainte-Marie, Ange de Sainte-Rosalie (libr. associés, 1726), p. 276: \"Charles duc d'Alençon . . . né dans la ville d'Alençon le 2. septembre 1489. à sept heures du matin . . .\"\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids none",
+    "Vocation : Military : Military service",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 0.463144,
+    "lagna": 150.463144,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 16.736837,
+    "jd_ut": 2265159.791435,
+    "planets": {
+      "Sun": {
+        "longitude": 151.777012,
+        "sign_index": 5,
+        "degree_in_sign": 1.777012,
+        "is_retrograde": false,
+        "speed": 0.977024
+      },
+      "Moon": {
+        "longitude": 243.189367,
+        "sign_index": 8,
+        "degree_in_sign": 3.189367,
+        "is_retrograde": false,
+        "speed": 17.188197
+      },
+      "Mars": {
+        "longitude": 186.927044,
+        "sign_index": 6,
+        "degree_in_sign": 6.927044,
+        "is_retrograde": false,
+        "speed": 0.674085
+      },
+      "Mercury": {
+        "longitude": 171.658405,
+        "sign_index": 5,
+        "degree_in_sign": 21.658405,
+        "is_retrograde": true,
+        "speed": -0.156861
+      },
+      "Jupiter": {
+        "longitude": 12.387443,
+        "sign_index": 0,
+        "degree_in_sign": 12.387443,
+        "is_retrograde": true,
+        "speed": -0.073993
+      },
+      "Venus": {
+        "longitude": 124.26316,
+        "sign_index": 4,
+        "degree_in_sign": 4.26316,
+        "is_retrograde": true,
+        "speed": -0.061871
+      },
+      "Saturn": {
+        "longitude": 262.228809,
+        "sign_index": 8,
+        "degree_in_sign": 22.228809,
+        "is_retrograde": true,
+        "speed": -0.002914
+      },
+      "Rahu": {
+        "longitude": 258.159984,
+        "sign_index": 8,
+        "degree_in_sign": 18.159984,
+        "is_retrograde": true,
+        "speed": -0.052993
+      },
+      "Ketu": {
+        "longitude": 78.159984,
+        "sign_index": 2,
+        "degree_in_sign": 18.159984,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

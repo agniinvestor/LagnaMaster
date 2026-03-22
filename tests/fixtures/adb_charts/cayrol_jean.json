@@ -1,0 +1,111 @@
+{
+  "adb_id": 53410,
+  "name": "Cayrol, Jean",
+  "given_name": "Jean Cayrol",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418828.82684,
+    "year": 1910,
+    "month": 6,
+    "day": 6,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Bordeaux",
+    "country": "France",
+    "lat": 44.833333,
+    "lon": -0.566667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cayrol,_Jean",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 78.\\nEd Steinbrecher collection: Gauquelin ns 3/0284\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.921915,
+    "lagna": 74.921915,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.606118,
+    "jd_ut": 2418828.82684,
+    "planets": {
+      "Sun": {
+        "longitude": 52.11513,
+        "sign_index": 1,
+        "degree_in_sign": 22.11513,
+        "is_retrograde": false,
+        "speed": 0.95715
+      },
+      "Moon": {
+        "longitude": 35.398006,
+        "sign_index": 1,
+        "degree_in_sign": 5.398006,
+        "is_retrograde": false,
+        "speed": 12.202832
+      },
+      "Mars": {
+        "longitude": 89.418483,
+        "sign_index": 2,
+        "degree_in_sign": 29.418483,
+        "is_retrograde": false,
+        "speed": 0.621947
+      },
+      "Mercury": {
+        "longitude": 36.507159,
+        "sign_index": 1,
+        "degree_in_sign": 6.507159,
+        "is_retrograde": true,
+        "speed": -0.055118
+      },
+      "Jupiter": {
+        "longitude": 162.041813,
+        "sign_index": 5,
+        "degree_in_sign": 12.041813,
+        "is_retrograde": false,
+        "speed": 0.013336
+      },
+      "Venus": {
+        "longitude": 10.44575,
+        "sign_index": 0,
+        "degree_in_sign": 10.44575,
+        "is_retrograde": false,
+        "speed": 1.129715
+      },
+      "Saturn": {
+        "longitude": 9.652541,
+        "sign_index": 0,
+        "degree_in_sign": 9.652541,
+        "is_retrograde": false,
+        "speed": 0.105025
+      },
+      "Rahu": {
+        "longitude": 34.884679,
+        "sign_index": 1,
+        "degree_in_sign": 4.884679,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 214.884679,
+        "sign_index": 7,
+        "degree_in_sign": 4.884679,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

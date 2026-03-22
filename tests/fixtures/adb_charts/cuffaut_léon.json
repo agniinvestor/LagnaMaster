@@ -1,0 +1,108 @@
+{
+  "adb_id": 53136,
+  "name": "Cuffaut, Léon",
+  "given_name": "Léon Cuffaut",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419362.145833,
+    "year": 1911,
+    "month": 11,
+    "day": 21,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "s",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Charenton le Pont",
+    "country": "France",
+    "lat": 48.816667,
+    "lon": 2.416667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuffaut,_Léon",
+  "source_notes": "Didier Geslain archive, 'aviation' pdf file, p. 42.\\nPreviously this entry had 20 November at 1:30 a.m.: Ed Steinbrecher collection: Gauquelin 1/157\\n",
+  "categories": [
+    "Vocation : Travel : Aviation field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 2.145202,
+    "lagna": 2.145202,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.626507,
+    "jd_ut": 2419362.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 215.588657,
+        "sign_index": 7,
+        "degree_in_sign": 5.588657,
+        "is_retrograde": false,
+        "speed": 1.010655
+      },
+      "Moon": {
+        "longitude": 223.912565,
+        "sign_index": 7,
+        "degree_in_sign": 13.912565,
+        "is_retrograde": false,
+        "speed": 9.504016
+      },
+      "Mars": {
+        "longitude": 40.53321,
+        "sign_index": 1,
+        "degree_in_sign": 10.53321,
+        "is_retrograde": true,
+        "speed": -0.377226
+      },
+      "Mercury": {
+        "longitude": 231.502578,
+        "sign_index": 7,
+        "degree_in_sign": 21.502578,
+        "is_retrograde": false,
+        "speed": 1.465804
+      },
+      "Jupiter": {
+        "longitude": 213.223361,
+        "sign_index": 7,
+        "degree_in_sign": 3.223361,
+        "is_retrograde": false,
+        "speed": 0.222136
+      },
+      "Venus": {
+        "longitude": 168.934237,
+        "sign_index": 5,
+        "degree_in_sign": 18.934237,
+        "is_retrograde": false,
+        "speed": 0.978279
+      },
+      "Saturn": {
+        "longitude": 23.193774,
+        "sign_index": 0,
+        "degree_in_sign": 23.193774,
+        "is_retrograde": true,
+        "speed": -0.078435
+      },
+      "Rahu": {
+        "longitude": 6.622986,
+        "sign_index": 0,
+        "degree_in_sign": 6.622986,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 186.622986,
+        "sign_index": 6,
+        "degree_in_sign": 6.622986,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 50753,
+  "name": "Cary, William Lucius",
+  "given_name": "William Lucius Cary",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419002.833333,
+    "year": 1910,
+    "month": 11,
+    "day": 27,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Columbus",
+    "country": "Ohio",
+    "lat": 39.966667,
+    "lon": -83.0
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cary,_William_Lucius",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.650126,
+    "lagna": 144.650126,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.61277,
+    "jd_ut": 2419002.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 221.599385,
+        "sign_index": 7,
+        "degree_in_sign": 11.599385,
+        "is_retrograde": false,
+        "speed": 1.012705
+      },
+      "Moon": {
+        "longitude": 173.255844,
+        "sign_index": 5,
+        "degree_in_sign": 23.255844,
+        "is_retrograde": false,
+        "speed": 12.319868
+      },
+      "Mars": {
+        "longitude": 201.428076,
+        "sign_index": 6,
+        "degree_in_sign": 21.428076,
+        "is_retrograde": false,
+        "speed": 0.68205
+      },
+      "Mercury": {
+        "longitude": 229.835118,
+        "sign_index": 7,
+        "degree_in_sign": 19.835118,
+        "is_retrograde": false,
+        "speed": 1.547921
+      },
+      "Jupiter": {
+        "longitude": 190.631632,
+        "sign_index": 6,
+        "degree_in_sign": 10.631632,
+        "is_retrograde": false,
+        "speed": 0.201659
+      },
+      "Venus": {
+        "longitude": 221.784366,
+        "sign_index": 7,
+        "degree_in_sign": 11.784366,
+        "is_retrograde": false,
+        "speed": 1.257634
+      },
+      "Saturn": {
+        "longitude": 8.221303,
+        "sign_index": 0,
+        "degree_in_sign": 8.221303,
+        "is_retrograde": true,
+        "speed": -0.059865
+      },
+      "Rahu": {
+        "longitude": 25.66371,
+        "sign_index": 0,
+        "degree_in_sign": 25.66371,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 205.66371,
+        "sign_index": 6,
+        "degree_in_sign": 25.66371,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

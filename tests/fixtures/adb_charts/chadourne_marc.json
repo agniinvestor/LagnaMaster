@@ -1,0 +1,108 @@
+{
+  "adb_id": 62972,
+  "name": "Chadourne, Marc",
+  "given_name": "Marc Chadourne",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413336.868507,
+    "year": 1895,
+    "month": 5,
+    "day": 23,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Brive la Gaillarde",
+    "country": "France",
+    "lat": 45.166667,
+    "lon": 1.533333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chadourne,_Marc",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 84.\\n",
+  "categories": [
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 18.577312,
+    "lagna": 78.577312,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.39617,
+    "jd_ut": 2413336.868507,
+    "planets": {
+      "Sun": {
+        "longitude": 39.54229,
+        "sign_index": 1,
+        "degree_in_sign": 9.54229,
+        "is_retrograde": false,
+        "speed": 0.961031
+      },
+      "Moon": {
+        "longitude": 25.158433,
+        "sign_index": 0,
+        "degree_in_sign": 25.158433,
+        "is_retrograde": false,
+        "speed": 10.080265
+      },
+      "Mars": {
+        "longitude": 86.423847,
+        "sign_index": 2,
+        "degree_in_sign": 26.423847,
+        "is_retrograde": false,
+        "speed": 0.60834
+      },
+      "Mercury": {
+        "longitude": 58.680552,
+        "sign_index": 1,
+        "degree_in_sign": 28.680552,
+        "is_retrograde": false,
+        "speed": 1.65869
+      },
+      "Jupiter": {
+        "longitude": 75.079479,
+        "sign_index": 2,
+        "degree_in_sign": 15.079479,
+        "is_retrograde": false,
+        "speed": 0.203346
+      },
+      "Venus": {
+        "longitude": 79.423064,
+        "sign_index": 2,
+        "degree_in_sign": 19.423064,
+        "is_retrograde": false,
+        "speed": 1.145948
+      },
+      "Saturn": {
+        "longitude": 189.492386,
+        "sign_index": 6,
+        "degree_in_sign": 9.492386,
+        "is_retrograde": true,
+        "speed": -0.060372
+      },
+      "Rahu": {
+        "longitude": 325.915121,
+        "sign_index": 10,
+        "degree_in_sign": 25.915121,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 145.915121,
+        "sign_index": 4,
+        "degree_in_sign": 25.915121,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

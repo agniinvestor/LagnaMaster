@@ -1,0 +1,115 @@
+{
+  "adb_id": 57440,
+  "name": "Cixous, Hélène",
+  "given_name": "Hélène Cixous",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428689.791667,
+    "year": 1937,
+    "month": 6,
+    "day": 5,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Oran",
+    "country": "Algeria",
+    "lat": 35.716667,
+    "lon": -0.716667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cixous,_Hélène",
+  "source_notes": "BC from Marc Brun, first published by Sy Scholfield on his blog on 5 June 2013.\\n",
+  "categories": [
+    "Passions : Sexuality : Bi-Sexual",
+    "Vocation : Humanities+Social Sciences : Gender Studies",
+    "Vocation : Humanities+Social Sciences : Philosopher",
+    "Vocation : Politics : Activist/ feminist",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 27.928282,
+    "lagna": 57.928282,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.983122,
+    "jd_ut": 2428689.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 51.199634,
+        "sign_index": 1,
+        "degree_in_sign": 21.199634,
+        "is_retrograde": false,
+        "speed": 0.957254
+      },
+      "Moon": {
+        "longitude": 1.307634,
+        "sign_index": 0,
+        "degree_in_sign": 1.307634,
+        "is_retrograde": false,
+        "speed": 10.525459
+      },
+      "Mars": {
+        "longitude": 209.848002,
+        "sign_index": 6,
+        "degree_in_sign": 29.848002,
+        "is_retrograde": true,
+        "speed": -0.284644
+      },
+      "Mercury": {
+        "longitude": 27.560236,
+        "sign_index": 0,
+        "degree_in_sign": 27.560236,
+        "is_retrograde": false,
+        "speed": 0.843841
+      },
+      "Jupiter": {
+        "longitude": 273.661195,
+        "sign_index": 9,
+        "degree_in_sign": 3.661195,
+        "is_retrograde": true,
+        "speed": -0.063472
+      },
+      "Venus": {
+        "longitude": 7.738108,
+        "sign_index": 0,
+        "degree_in_sign": 7.738108,
+        "is_retrograde": false,
+        "speed": 0.724091
+      },
+      "Saturn": {
+        "longitude": 340.706961,
+        "sign_index": 11,
+        "degree_in_sign": 10.706961,
+        "is_retrograde": false,
+        "speed": 0.06625
+      },
+      "Rahu": {
+        "longitude": 232.331591,
+        "sign_index": 7,
+        "degree_in_sign": 22.331591,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 52.331591,
+        "sign_index": 1,
+        "degree_in_sign": 22.331591,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

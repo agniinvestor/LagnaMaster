@@ -1,0 +1,108 @@
+{
+  "adb_id": 76751,
+  "name": "Chelmonski, Josef",
+  "given_name": "Josef Chelmonski",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2396704.361296,
+    "year": 1849,
+    "month": 11,
+    "day": 7,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Lowicz",
+    "country": "Poland",
+    "lat": 52.116667,
+    "lon": 19.933333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chelmonski,_Josef",
+  "source_notes": "PTA quotes baptisimal certificate supplied by Jaroslaw Gronert [http://www.chelmonskijozef.republika.pl/index2.html]\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 25.627744,
+    "lagna": 85.627744,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.76042,
+    "jd_ut": 2396704.361296,
+    "planets": {
+      "Sun": {
+        "longitude": 203.608812,
+        "sign_index": 6,
+        "degree_in_sign": 23.608812,
+        "is_retrograde": false,
+        "speed": 1.005123
+      },
+      "Moon": {
+        "longitude": 120.848495,
+        "sign_index": 4,
+        "degree_in_sign": 0.848495,
+        "is_retrograde": false,
+        "speed": 15.579516
+      },
+      "Mars": {
+        "longitude": 74.351139,
+        "sign_index": 2,
+        "degree_in_sign": 14.351139,
+        "is_retrograde": false,
+        "speed": 0.0163
+      },
+      "Mercury": {
+        "longitude": 184.757776,
+        "sign_index": 6,
+        "degree_in_sign": 4.757776,
+        "is_retrograde": false,
+        "speed": 0.809537
+      },
+      "Jupiter": {
+        "longitude": 146.00698,
+        "sign_index": 4,
+        "degree_in_sign": 26.00698,
+        "is_retrograde": false,
+        "speed": 0.158521
+      },
+      "Venus": {
+        "longitude": 176.13802,
+        "sign_index": 5,
+        "degree_in_sign": 26.13802,
+        "is_retrograde": false,
+        "speed": 1.238761
+      },
+      "Saturn": {
+        "longitude": 340.045086,
+        "sign_index": 11,
+        "degree_in_sign": 10.045086,
+        "is_retrograde": true,
+        "speed": -0.045209
+      },
+      "Rahu": {
+        "longitude": 127.30716,
+        "sign_index": 4,
+        "degree_in_sign": 7.30716,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 307.30716,
+        "sign_index": 10,
+        "degree_in_sign": 7.30716,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 71631,
+  "name": "Cegani, Elisa",
+  "given_name": "Elisa Cegani",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419197.666667,
+    "year": 1911,
+    "month": 6,
+    "day": 10,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Turin",
+    "country": "Italy",
+    "lat": 45.05,
+    "lon": 7.666667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cegani,_Elisa",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.97633,
+    "lagna": 35.97633,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.620219,
+    "jd_ut": 2419197.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 55.544662,
+        "sign_index": 1,
+        "degree_in_sign": 25.544662,
+        "is_retrograde": false,
+        "speed": 0.955613
+      },
+      "Moon": {
+        "longitude": 216.092948,
+        "sign_index": 7,
+        "degree_in_sign": 6.092948,
+        "is_retrograde": false,
+        "speed": 11.415173
+      },
+      "Mars": {
+        "longitude": 342.645168,
+        "sign_index": 11,
+        "degree_in_sign": 12.645168,
+        "is_retrograde": false,
+        "speed": 0.721492
+      },
+      "Mercury": {
+        "longitude": 33.148394,
+        "sign_index": 1,
+        "degree_in_sign": 3.148394,
+        "is_retrograde": false,
+        "speed": 1.392785
+      },
+      "Jupiter": {
+        "longitude": 192.818774,
+        "sign_index": 6,
+        "degree_in_sign": 12.818774,
+        "is_retrograde": true,
+        "speed": -0.066421
+      },
+      "Venus": {
+        "longitude": 98.894477,
+        "sign_index": 3,
+        "degree_in_sign": 8.894477,
+        "is_retrograde": false,
+        "speed": 1.090481
+      },
+      "Saturn": {
+        "longitude": 22.064536,
+        "sign_index": 0,
+        "degree_in_sign": 22.064536,
+        "is_retrograde": false,
+        "speed": 0.114308
+      },
+      "Rahu": {
+        "longitude": 15.339083,
+        "sign_index": 0,
+        "degree_in_sign": 15.339083,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 195.339083,
+        "sign_index": 6,
+        "degree_in_sign": 15.339083,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

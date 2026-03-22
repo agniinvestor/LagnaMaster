@@ -1,0 +1,108 @@
+{
+  "adb_id": 52084,
+  "name": "Charlet, Régis",
+  "given_name": "Régis Charlet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422448.666667,
+    "year": 1920,
+    "month": 5,
+    "day": 4,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "d",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Chamonix Mont Blanc",
+    "country": "France",
+    "lat": 45.916667,
+    "lon": 6.866667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlet,_Régis",
+  "source_notes": "Gauquelin vol 1 no 2014\\n",
+  "categories": [
+    "Vocation : Sports : Skiing"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 19.334433,
+    "lagna": 349.334433,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.744506,
+    "jd_ut": 2422448.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 20.631518,
+        "sign_index": 0,
+        "degree_in_sign": 20.631518,
+        "is_retrograde": false,
+        "speed": 0.968297
+      },
+      "Moon": {
+        "longitude": 212.434118,
+        "sign_index": 7,
+        "degree_in_sign": 2.434118,
+        "is_retrograde": false,
+        "speed": 9.592153
+      },
+      "Mars": {
+        "longitude": 183.515779,
+        "sign_index": 6,
+        "degree_in_sign": 3.515779,
+        "is_retrograde": true,
+        "speed": -0.335461
+      },
+      "Mercury": {
+        "longitude": 359.088711,
+        "sign_index": 11,
+        "degree_in_sign": 29.088711,
+        "is_retrograde": false,
+        "speed": 1.612487
+      },
+      "Jupiter": {
+        "longitude": 106.726359,
+        "sign_index": 3,
+        "degree_in_sign": 16.726359,
+        "is_retrograde": false,
+        "speed": 0.087989
+      },
+      "Venus": {
+        "longitude": 4.344232,
+        "sign_index": 0,
+        "degree_in_sign": 4.344232,
+        "is_retrograde": false,
+        "speed": 1.226315
+      },
+      "Saturn": {
+        "longitude": 132.073662,
+        "sign_index": 4,
+        "degree_in_sign": 12.073662,
+        "is_retrograde": true,
+        "speed": -0.005009
+      },
+      "Rahu": {
+        "longitude": 203.061785,
+        "sign_index": 6,
+        "degree_in_sign": 23.061785,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 23.061785,
+        "sign_index": 0,
+        "degree_in_sign": 23.061785,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

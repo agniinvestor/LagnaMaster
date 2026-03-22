@@ -1,0 +1,109 @@
+{
+  "adb_id": 63442,
+  "name": "Coquatrix, Patricia",
+  "given_name": "Patricia Coquatrix",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429640.03125,
+    "year": 1940,
+    "month": 1,
+    "day": 11,
+    "calendar": "g",
+    "time": "12:45",
+    "time_type": "s",
+    "hour": 12.75,
+    "time_unknown": false,
+    "place": "Arcachon",
+    "country": "France",
+    "lat": 44.616667,
+    "lon": -1.2
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coquatrix,_Patricia",
+  "source_notes": "Didier Geslain archive, 'chanteurs' pdf file, p. 57.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 5.075745,
+    "lagna": 5.075745,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.019454,
+    "jd_ut": 2429640.03125,
+    "planets": {
+      "Sun": {
+        "longitude": 267.133457,
+        "sign_index": 8,
+        "degree_in_sign": 27.133457,
+        "is_retrograde": false,
+        "speed": 1.019301
+      },
+      "Moon": {
+        "longitude": 289.201359,
+        "sign_index": 9,
+        "degree_in_sign": 19.201359,
+        "is_retrograde": false,
+        "speed": 8.328161
+      },
+      "Mars": {
+        "longitude": 342.095376,
+        "sign_index": 11,
+        "degree_in_sign": 12.095376,
+        "is_retrograde": false,
+        "speed": 0.68079
+      },
+      "Mercury": {
+        "longitude": 254.851726,
+        "sign_index": 8,
+        "degree_in_sign": 14.851726,
+        "is_retrograde": false,
+        "speed": 1.53411
+      },
+      "Jupiter": {
+        "longitude": 339.51857,
+        "sign_index": 11,
+        "degree_in_sign": 9.51857,
+        "is_retrograde": false,
+        "speed": 0.144776
+      },
+      "Venus": {
+        "longitude": 298.295372,
+        "sign_index": 9,
+        "degree_in_sign": 28.295372,
+        "is_retrograde": false,
+        "speed": 1.233618
+      },
+      "Saturn": {
+        "longitude": 1.587667,
+        "sign_index": 0,
+        "degree_in_sign": 1.587667,
+        "is_retrograde": false,
+        "speed": 0.026681
+      },
+      "Rahu": {
+        "longitude": 181.976428,
+        "sign_index": 6,
+        "degree_in_sign": 1.976428,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 1.976428,
+        "sign_index": 0,
+        "degree_in_sign": 1.976428,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

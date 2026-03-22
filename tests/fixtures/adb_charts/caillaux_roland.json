@@ -1,0 +1,111 @@
+{
+  "adb_id": 79475,
+  "name": "Caillaux, Roland",
+  "given_name": "Roland Caillaux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416851.48309,
+    "year": 1905,
+    "month": 1,
+    "day": 5,
+    "calendar": "g",
+    "time": "23:45",
+    "time_type": "s",
+    "hour": 23.75,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caillaux,_Roland",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection.\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Other Art",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 23.044983,
+    "lagna": 143.044983,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.530526,
+    "jd_ut": 2416851.48309,
+    "planets": {
+      "Sun": {
+        "longitude": 262.476795,
+        "sign_index": 8,
+        "degree_in_sign": 22.476795,
+        "is_retrograde": false,
+        "speed": 1.019631
+      },
+      "Moon": {
+        "longitude": 264.984047,
+        "sign_index": 8,
+        "degree_in_sign": 24.984047,
+        "is_retrograde": false,
+        "speed": 16.581598
+      },
+      "Mars": {
+        "longitude": 183.473794,
+        "sign_index": 6,
+        "degree_in_sign": 3.473794,
+        "is_retrograde": false,
+        "speed": 0.519417
+      },
+      "Mercury": {
+        "longitude": 250.687592,
+        "sign_index": 8,
+        "degree_in_sign": 10.687592,
+        "is_retrograde": true,
+        "speed": -0.876026
+      },
+      "Jupiter": {
+        "longitude": 358.476142,
+        "sign_index": 11,
+        "degree_in_sign": 28.476142,
+        "is_retrograde": false,
+        "speed": 0.071097
+      },
+      "Venus": {
+        "longitude": 305.568247,
+        "sign_index": 10,
+        "degree_in_sign": 5.568247,
+        "is_retrograde": false,
+        "speed": 1.171048
+      },
+      "Saturn": {
+        "longitude": 296.544268,
+        "sign_index": 9,
+        "degree_in_sign": 26.544268,
+        "is_retrograde": false,
+        "speed": 0.10672
+      },
+      "Rahu": {
+        "longitude": 139.668281,
+        "sign_index": 4,
+        "degree_in_sign": 19.668281,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 319.668281,
+        "sign_index": 10,
+        "degree_in_sign": 19.668281,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

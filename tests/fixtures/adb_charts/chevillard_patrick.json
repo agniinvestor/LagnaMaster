@@ -1,0 +1,108 @@
+{
+  "adb_id": 70089,
+  "name": "Chevillard, Patrick",
+  "given_name": "Patrick Chevillard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438638.25,
+    "year": 1964,
+    "month": 8,
+    "day": 30,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Angers",
+    "country": "France",
+    "lat": 47.466667,
+    "lon": -0.55
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevillard,_Patrick",
+  "source_notes": "Didier Geslain archive, 'hippisme entraîneurs' pdf file, p. 20.\\n",
+  "categories": [
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 2.003167,
+    "lagna": 272.003167,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.363516,
+    "jd_ut": 2438638.25,
+    "planets": {
+      "Sun": {
+        "longitude": 134.007707,
+        "sign_index": 4,
+        "degree_in_sign": 14.007707,
+        "is_retrograde": false,
+        "speed": 0.967243
+      },
+      "Moon": {
+        "longitude": 48.64586,
+        "sign_index": 1,
+        "degree_in_sign": 18.64586,
+        "is_retrograde": false,
+        "speed": 18.170466
+      },
+      "Mars": {
+        "longitude": 86.922863,
+        "sign_index": 2,
+        "degree_in_sign": 26.922863,
+        "is_retrograde": false,
+        "speed": 0.637431
+      },
+      "Mercury": {
+        "longitude": 138.877958,
+        "sign_index": 4,
+        "degree_in_sign": 18.877958,
+        "is_retrograde": true,
+        "speed": -0.924801
+      },
+      "Jupiter": {
+        "longitude": 32.395801,
+        "sign_index": 1,
+        "degree_in_sign": 2.395801,
+        "is_retrograde": false,
+        "speed": 0.049257
+      },
+      "Venus": {
+        "longitude": 88.184111,
+        "sign_index": 2,
+        "degree_in_sign": 28.184111,
+        "is_retrograde": false,
+        "speed": 0.972203
+      },
+      "Saturn": {
+        "longitude": 307.860055,
+        "sign_index": 10,
+        "degree_in_sign": 7.860055,
+        "is_retrograde": true,
+        "speed": -0.075053
+      },
+      "Rahu": {
+        "longitude": 65.1423,
+        "sign_index": 2,
+        "degree_in_sign": 5.1423,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 245.1423,
+        "sign_index": 8,
+        "degree_in_sign": 5.1423,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

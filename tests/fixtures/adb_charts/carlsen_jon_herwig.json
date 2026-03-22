@@ -1,0 +1,111 @@
+{
+  "adb_id": 97156,
+  "name": "Carlsen, Jon Herwig",
+  "given_name": "Jon Herwig Carlsen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428638.819444,
+    "year": 1937,
+    "month": 4,
+    "day": 15,
+    "calendar": "g",
+    "time": "08:40",
+    "time_type": "s",
+    "hour": 8.666667,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlsen,_Jon_Herwig",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 27.928188,
+    "lagna": 57.928188,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.981173,
+    "jd_ut": 2428638.819444,
+    "planets": {
+      "Sun": {
+        "longitude": 1.939114,
+        "sign_index": 0,
+        "degree_in_sign": 1.939114,
+        "is_retrograde": false,
+        "speed": 0.978745
+      },
+      "Moon": {
+        "longitude": 59.455116,
+        "sign_index": 1,
+        "degree_in_sign": 29.455116,
+        "is_retrograde": false,
+        "speed": 15.737739
+      },
+      "Mars": {
+        "longitude": 222.544959,
+        "sign_index": 7,
+        "degree_in_sign": 12.544959,
+        "is_retrograde": true,
+        "speed": -0.00874
+      },
+      "Mercury": {
+        "longitude": 20.836555,
+        "sign_index": 0,
+        "degree_in_sign": 20.836555,
+        "is_retrograde": false,
+        "speed": 1.381402
+      },
+      "Jupiter": {
+        "longitude": 272.92705,
+        "sign_index": 9,
+        "degree_in_sign": 2.92705,
+        "is_retrograde": false,
+        "speed": 0.090379
+      },
+      "Venus": {
+        "longitude": 6.320664,
+        "sign_index": 0,
+        "degree_in_sign": 6.320664,
+        "is_retrograde": true,
+        "speed": -0.616144
+      },
+      "Saturn": {
+        "longitude": 335.893472,
+        "sign_index": 11,
+        "degree_in_sign": 5.893472,
+        "is_retrograde": false,
+        "speed": 0.115648
+      },
+      "Rahu": {
+        "longitude": 235.032715,
+        "sign_index": 7,
+        "degree_in_sign": 25.032715,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 55.032715,
+        "sign_index": 1,
+        "degree_in_sign": 25.032715,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

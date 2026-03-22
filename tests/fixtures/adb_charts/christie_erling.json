@@ -1,0 +1,109 @@
+{
+  "adb_id": 74074,
+  "name": "Christie, Erling",
+  "given_name": "Erling Christie",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425385.979167,
+    "year": 1928,
+    "month": 5,
+    "day": 19,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christie,_Erling",
+  "source_notes": "Viktor E. quotes certificate of live birth in hand. AM or PM not specified. (After noon is most likely correct as it's somewhat unlikely that a midwife in Norway would have written 12:30 for a time of 00:30.)\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 25.72572,
+    "lagna": 115.72572,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.856806,
+    "jd_ut": 2425385.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 35.368788,
+        "sign_index": 1,
+        "degree_in_sign": 5.368788,
+        "is_retrograde": false,
+        "speed": 0.962642
+      },
+      "Moon": {
+        "longitude": 34.14314,
+        "sign_index": 1,
+        "degree_in_sign": 4.14314,
+        "is_retrograde": false,
+        "speed": 12.194759
+      },
+      "Mars": {
+        "longitude": 339.099104,
+        "sign_index": 11,
+        "degree_in_sign": 9.099104,
+        "is_retrograde": false,
+        "speed": 0.755417
+      },
+      "Mercury": {
+        "longitude": 52.680949,
+        "sign_index": 1,
+        "degree_in_sign": 22.680949,
+        "is_retrograde": false,
+        "speed": 1.773396
+      },
+      "Jupiter": {
+        "longitude": 3.774246,
+        "sign_index": 0,
+        "degree_in_sign": 3.774246,
+        "is_retrograde": false,
+        "speed": 0.222447
+      },
+      "Venus": {
+        "longitude": 23.681348,
+        "sign_index": 0,
+        "degree_in_sign": 23.681348,
+        "is_retrograde": false,
+        "speed": 1.226738
+      },
+      "Saturn": {
+        "longitude": 234.307556,
+        "sign_index": 7,
+        "degree_in_sign": 24.307556,
+        "is_retrograde": true,
+        "speed": -0.067884
+      },
+      "Rahu": {
+        "longitude": 47.407473,
+        "sign_index": 1,
+        "degree_in_sign": 17.407473,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 227.407473,
+        "sign_index": 7,
+        "degree_in_sign": 17.407473,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 49111,
+  "name": "Chopelas, Mark",
+  "given_name": "Mark Chopelas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438123.263889,
+    "year": 1963,
+    "month": 4,
+    "day": 3,
+    "calendar": "g",
+    "time": "13:20",
+    "time_type": "s",
+    "hour": 13.333333,
+    "time_unknown": false,
+    "place": "Melrose",
+    "country": "Massachusetts",
+    "lat": 42.466667,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chopelas,_Mark",
+  "source_notes": "PT quotes birth certificate\\n",
+  "categories": [
+    "Personal : Death : Accidental",
+    "Vocation : Building Trades : Construction work",
+    "Vocation : Misc. : Physical labor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 0.925929,
+    "lagna": 90.925929,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.343823,
+    "jd_ut": 2438123.263889,
+    "planets": {
+      "Sun": {
+        "longitude": 349.938027,
+        "sign_index": 11,
+        "degree_in_sign": 19.938027,
+        "is_retrograde": false,
+        "speed": 0.985367
+      },
+      "Moon": {
+        "longitude": 112.020988,
+        "sign_index": 3,
+        "degree_in_sign": 22.020988,
+        "is_retrograde": false,
+        "speed": 13.047844
+      },
+      "Mars": {
+        "longitude": 103.82756,
+        "sign_index": 3,
+        "degree_in_sign": 13.82756,
+        "is_retrograde": false,
+        "speed": 0.193203
+      },
+      "Mercury": {
+        "longitude": 354.022057,
+        "sign_index": 11,
+        "degree_in_sign": 24.022057,
+        "is_retrograde": false,
+        "speed": 2.068641
+      },
+      "Jupiter": {
+        "longitude": 336.57118,
+        "sign_index": 11,
+        "degree_in_sign": 6.57118,
+        "is_retrograde": false,
+        "speed": 0.238784
+      },
+      "Venus": {
+        "longitude": 312.273656,
+        "sign_index": 10,
+        "degree_in_sign": 12.273656,
+        "is_retrograde": false,
+        "speed": 1.190116
+      },
+      "Saturn": {
+        "longitude": 296.941172,
+        "sign_index": 9,
+        "degree_in_sign": 26.941172,
+        "is_retrograde": false,
+        "speed": 0.08724
+      },
+      "Rahu": {
+        "longitude": 92.432468,
+        "sign_index": 3,
+        "degree_in_sign": 2.432468,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 272.432468,
+        "sign_index": 9,
+        "degree_in_sign": 2.432468,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

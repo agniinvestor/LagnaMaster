@@ -1,0 +1,113 @@
+{
+  "adb_id": 37104,
+  "name": "Chabrun, Jean-François",
+  "given_name": "Jean-François Chabrun",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422497.541667,
+    "year": 1920,
+    "month": 6,
+    "day": 22,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "d",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Mayenne",
+    "country": "France",
+    "lat": 48.3,
+    "lon": -0.616667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chabrun,_Jean-François",
+  "source_notes": "Petitallot quotes B.C., Cadran No. 47, December 1997\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Vocation : Art : Art critic",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 13.673279,
+    "lagna": 343.673279,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.746375,
+    "jd_ut": 2422497.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 67.541926,
+        "sign_index": 2,
+        "degree_in_sign": 7.541926,
+        "is_retrograde": false,
+        "speed": 0.954011
+      },
+      "Moon": {
+        "longitude": 142.066104,
+        "sign_index": 4,
+        "degree_in_sign": 22.066104,
+        "is_retrograde": false,
+        "speed": 15.359016
+      },
+      "Mars": {
+        "longitude": 181.186806,
+        "sign_index": 6,
+        "degree_in_sign": 1.186806,
+        "is_retrograde": false,
+        "speed": 0.243499
+      },
+      "Mercury": {
+        "longitude": 91.784491,
+        "sign_index": 3,
+        "degree_in_sign": 1.784491,
+        "is_retrograde": false,
+        "speed": 1.324573
+      },
+      "Jupiter": {
+        "longitude": 113.562879,
+        "sign_index": 3,
+        "degree_in_sign": 23.562879,
+        "is_retrograde": false,
+        "speed": 0.180974
+      },
+      "Venus": {
+        "longitude": 64.288681,
+        "sign_index": 2,
+        "degree_in_sign": 4.288681,
+        "is_retrograde": false,
+        "speed": 1.227805
+      },
+      "Saturn": {
+        "longitude": 133.834879,
+        "sign_index": 4,
+        "degree_in_sign": 13.834879,
+        "is_retrograde": false,
+        "speed": 0.073386
+      },
+      "Rahu": {
+        "longitude": 200.471797,
+        "sign_index": 6,
+        "degree_in_sign": 20.471797,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 20.471797,
+        "sign_index": 0,
+        "degree_in_sign": 20.471797,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

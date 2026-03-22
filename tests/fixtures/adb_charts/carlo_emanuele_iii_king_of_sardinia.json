@@ -1,0 +1,110 @@
+{
+  "adb_id": 62391,
+  "name": "Carlo Emanuele III, King of Sardinia",
+  "given_name": "King of Sardinia Carlo Emanuele III",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2342453.853704,
+    "year": 1701,
+    "month": 4,
+    "day": 27,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Turin",
+    "country": "Italy",
+    "lat": 45.05,
+    "lon": 7.666667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlo_Emanuele_III,_King_of_Sardinia",
+  "source_notes": "Sy Scholfield quotes from \"Le campagne di guerra in Piemonte (1703-1708) e l'assedio di Torino (1706) studi--documenti--illustrazioni, Volume 7\" (Bocca, 1907), p. 42: \"Carlo Emanuele Vittorio, duca di Aosta, n. 27 aprile 1701 ore 9, salito al trono di Sardegna 30 ottobre 1732.\"\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 4.36214,
+    "lagna": 64.36214,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.687672,
+    "jd_ut": 2342453.853704,
+    "planets": {
+      "Sun": {
+        "longitude": 17.077491,
+        "sign_index": 0,
+        "degree_in_sign": 17.077491,
+        "is_retrograde": false,
+        "speed": 0.969775
+      },
+      "Moon": {
+        "longitude": 256.544546,
+        "sign_index": 8,
+        "degree_in_sign": 16.544546,
+        "is_retrograde": false,
+        "speed": 11.858742
+      },
+      "Mars": {
+        "longitude": 40.009484,
+        "sign_index": 1,
+        "degree_in_sign": 10.009484,
+        "is_retrograde": false,
+        "speed": 0.689637
+      },
+      "Mercury": {
+        "longitude": 11.715118,
+        "sign_index": 0,
+        "degree_in_sign": 11.715118,
+        "is_retrograde": true,
+        "speed": -0.621915
+      },
+      "Jupiter": {
+        "longitude": 312.609552,
+        "sign_index": 10,
+        "degree_in_sign": 12.609552,
+        "is_retrograde": false,
+        "speed": 0.163246
+      },
+      "Venus": {
+        "longitude": 1.365012,
+        "sign_index": 0,
+        "degree_in_sign": 1.365012,
+        "is_retrograde": false,
+        "speed": 1.227542
+      },
+      "Saturn": {
+        "longitude": 333.15705,
+        "sign_index": 11,
+        "degree_in_sign": 3.15705,
+        "is_retrograde": false,
+        "speed": 0.10005
+      },
+      "Rahu": {
+        "longitude": 122.162372,
+        "sign_index": 4,
+        "degree_in_sign": 2.162372,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 302.162372,
+        "sign_index": 10,
+        "degree_in_sign": 2.162372,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

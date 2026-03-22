@@ -1,0 +1,112 @@
+{
+  "adb_id": 2198,
+  "name": "Crookes, William",
+  "given_name": "William Crookes",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2390352.22963,
+    "year": 1832,
+    "month": 6,
+    "day": 17,
+    "calendar": "g",
+    "time": "17:30",
+    "time_type": "l",
+    "hour": 17.5,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crookes,_William",
+  "source_notes": "Church of Light quotes Wemyss Vol. 2, \"recorded in his diary.\"  Same in Sabian Symbols No.231.\\nSy Scholfield quotes Occult Review, Volume 39 (W. Rider and son, limited, 1924), p. 10: \"It is interesting to note that Crookes's mother recorded the exact time of birth of her eldest child. She kept a diary, and under date, Sunday, June 17, 1832, she notes: 'Was taken ill between 1 and 2 o'clock in the morning. Baby born 5.30 in the evening.'\"\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Science : Chemistry",
+    "Vocation : Science : Physics",
+    "Vocation : Writers : Publisher/ Editor",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.053286,
+    "lagna": 192.053286,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.517655,
+    "jd_ut": 2390352.22963,
+    "planets": {
+      "Sun": {
+        "longitude": 64.912226,
+        "sign_index": 2,
+        "degree_in_sign": 4.912226,
+        "is_retrograde": false,
+        "speed": 0.953848
+      },
+      "Moon": {
+        "longitude": 292.995626,
+        "sign_index": 9,
+        "degree_in_sign": 22.995626,
+        "is_retrograde": false,
+        "speed": 14.433551
+      },
+      "Mars": {
+        "longitude": 348.678561,
+        "sign_index": 11,
+        "degree_in_sign": 18.678561,
+        "is_retrograde": false,
+        "speed": 0.707617
+      },
+      "Mercury": {
+        "longitude": 47.786957,
+        "sign_index": 1,
+        "degree_in_sign": 17.786957,
+        "is_retrograde": false,
+        "speed": 1.782528
+      },
+      "Jupiter": {
+        "longitude": 335.647003,
+        "sign_index": 11,
+        "degree_in_sign": 5.647003,
+        "is_retrograde": false,
+        "speed": 0.094519
+      },
+      "Venus": {
+        "longitude": 54.024389,
+        "sign_index": 1,
+        "degree_in_sign": 24.024389,
+        "is_retrograde": false,
+        "speed": 1.223767
+      },
+      "Saturn": {
+        "longitude": 137.940548,
+        "sign_index": 4,
+        "degree_in_sign": 17.940548,
+        "is_retrograde": false,
+        "speed": 0.062613
+      },
+      "Rahu": {
+        "longitude": 103.920364,
+        "sign_index": 3,
+        "degree_in_sign": 13.920364,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 283.920364,
+        "sign_index": 9,
+        "degree_in_sign": 13.920364,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

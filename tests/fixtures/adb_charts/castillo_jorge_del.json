@@ -1,0 +1,111 @@
+{
+  "adb_id": 88155,
+  "name": "Castillo, Jorge Del",
+  "given_name": "Jorge Del Castillo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433465.302083,
+    "year": 1950,
+    "month": 7,
+    "day": 2,
+    "calendar": "g",
+    "time": "14:15",
+    "time_type": "s",
+    "hour": 14.25,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castillo,_Jorge_Del",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Heads of state",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.888205,
+    "lagna": 181.888205,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.165715,
+    "jd_ut": 2433465.302083,
+    "planets": {
+      "Sun": {
+        "longitude": 77.148827,
+        "sign_index": 2,
+        "degree_in_sign": 17.148827,
+        "is_retrograde": false,
+        "speed": 0.953016
+      },
+      "Moon": {
+        "longitude": 296.436898,
+        "sign_index": 9,
+        "degree_in_sign": 26.436898,
+        "is_retrograde": false,
+        "speed": 18.938135
+      },
+      "Mars": {
+        "longitude": 165.70834,
+        "sign_index": 5,
+        "degree_in_sign": 15.70834,
+        "is_retrograde": false,
+        "speed": 0.47414
+      },
+      "Mercury": {
+        "longitude": 67.204421,
+        "sign_index": 2,
+        "degree_in_sign": 7.204421,
+        "is_retrograde": false,
+        "speed": 2.070119
+      },
+      "Jupiter": {
+        "longitude": 314.232451,
+        "sign_index": 10,
+        "degree_in_sign": 14.232451,
+        "is_retrograde": true,
+        "speed": -0.018682
+      },
+      "Venus": {
+        "longitude": 43.135226,
+        "sign_index": 1,
+        "degree_in_sign": 13.135226,
+        "is_retrograde": false,
+        "speed": 1.179377
+      },
+      "Saturn": {
+        "longitude": 141.348582,
+        "sign_index": 4,
+        "degree_in_sign": 21.348582,
+        "is_retrograde": false,
+        "speed": 0.075848
+      },
+      "Rahu": {
+        "longitude": 339.267429,
+        "sign_index": 11,
+        "degree_in_sign": 9.267429,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 159.267429,
+        "sign_index": 5,
+        "degree_in_sign": 9.267429,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

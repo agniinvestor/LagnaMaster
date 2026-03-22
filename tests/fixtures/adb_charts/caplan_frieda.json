@@ -1,0 +1,114 @@
+{
+  "adb_id": 89926,
+  "name": "Caplan, Frieda",
+  "given_name": "Frieda Caplan",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423642.174306,
+    "year": 1923,
+    "month": 8,
+    "day": 10,
+    "calendar": "g",
+    "time": "08:11",
+    "time_type": "s",
+    "hour": 8.183333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caplan,_Frieda",
+  "source_notes": "Sy Scholfield provided birth certificate (\"Freda Rapoport\").\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Business owner",
+    "Vocation : Business : CPA/ Auditor/ Accountant",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 8.196082,
+    "lagna": 128.196082,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.790136,
+    "jd_ut": 2423642.174306,
+    "planets": {
+      "Sun": {
+        "longitude": 114.200463,
+        "sign_index": 3,
+        "degree_in_sign": 24.200463,
+        "is_retrograde": false,
+        "speed": 0.959579
+      },
+      "Moon": {
+        "longitude": 92.057091,
+        "sign_index": 3,
+        "degree_in_sign": 2.057091,
+        "is_retrograde": false,
+        "speed": 9.165827
+      },
+      "Mars": {
+        "longitude": 113.603651,
+        "sign_index": 3,
+        "degree_in_sign": 23.603651,
+        "is_retrograde": false,
+        "speed": 0.638018
+      },
+      "Mercury": {
+        "longitude": 132.491491,
+        "sign_index": 4,
+        "degree_in_sign": 12.491491,
+        "is_retrograde": false,
+        "speed": 1.657876
+      },
+      "Jupiter": {
+        "longitude": 197.980184,
+        "sign_index": 6,
+        "degree_in_sign": 17.980184,
+        "is_retrograde": false,
+        "speed": 0.096228
+      },
+      "Venus": {
+        "longitude": 105.801535,
+        "sign_index": 3,
+        "degree_in_sign": 15.801535,
+        "is_retrograde": false,
+        "speed": 1.232557
+      },
+      "Saturn": {
+        "longitude": 172.927986,
+        "sign_index": 5,
+        "degree_in_sign": 22.927986,
+        "is_retrograde": false,
+        "speed": 0.081338
+      },
+      "Rahu": {
+        "longitude": 139.815325,
+        "sign_index": 4,
+        "degree_in_sign": 19.815325,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 319.815325,
+        "sign_index": 10,
+        "degree_in_sign": 19.815325,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "adb_id": 101738,
+  "name": "Clemens, Kacy",
+  "given_name": "Kacy Clemens",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2449561.309028,
+    "year": 1994,
+    "month": 7,
+    "day": 27,
+    "calendar": "g",
+    "time": "14:25",
+    "time_type": "d",
+    "hour": 14.416667,
+    "time_unknown": false,
+    "place": "Houston",
+    "country": "Texas",
+    "lat": 29.766667,
+    "lon": -95.366667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clemens,_Kacy",
+  "source_notes": "Sy Scholfield quotes birth news, ''Hartford Courant'' (Hartford, Connecticut), 28 July 1994, page B7.\\n",
+  "categories": [
+    "Traits : Body : Handedness",
+    "Traits : Body : Size",
+    "Family : Childhood : Family large",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Sibling circumstances",
+    "Passions : Criminal Victim : Assault/ Battery victim",
+    "Vocation : Sports : Baseball",
+    "Notable : Famous : Criminal cases"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 26.537331,
+    "lagna": 176.537331,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.781228,
+    "jd_ut": 2449561.309028,
+    "planets": {
+      "Sun": {
+        "longitude": 100.740035,
+        "sign_index": 3,
+        "degree_in_sign": 10.740035,
+        "is_retrograde": false,
+        "speed": 0.955465
+      },
+      "Moon": {
+        "longitude": 340.096599,
+        "sign_index": 11,
+        "degree_in_sign": 10.096599,
+        "is_retrograde": false,
+        "speed": 15.469888
+      },
+      "Mars": {
+        "longitude": 52.842612,
+        "sign_index": 1,
+        "degree_in_sign": 22.842612,
+        "is_retrograde": false,
+        "speed": 0.682041
+      },
+      "Mercury": {
+        "longitude": 84.190449,
+        "sign_index": 2,
+        "degree_in_sign": 24.190449,
+        "is_retrograde": false,
+        "speed": 1.696007
+      },
+      "Jupiter": {
+        "longitude": 191.951043,
+        "sign_index": 6,
+        "degree_in_sign": 11.951043,
+        "is_retrograde": false,
+        "speed": 0.073693
+      },
+      "Venus": {
+        "longitude": 144.625706,
+        "sign_index": 4,
+        "degree_in_sign": 24.625706,
+        "is_retrograde": false,
+        "speed": 1.09084
+      },
+      "Saturn": {
+        "longitude": 317.667126,
+        "sign_index": 10,
+        "degree_in_sign": 17.667126,
+        "is_retrograde": true,
+        "speed": -0.052399
+      },
+      "Rahu": {
+        "longitude": 206.307205,
+        "sign_index": 6,
+        "degree_in_sign": 26.307205,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 26.307205,
+        "sign_index": 0,
+        "degree_in_sign": 26.307205,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

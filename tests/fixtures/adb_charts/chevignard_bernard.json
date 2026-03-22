@@ -1,0 +1,109 @@
+{
+  "adb_id": 65383,
+  "name": "Chevignard, Bernard",
+  "given_name": "Bernard Chevignard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419814.875,
+    "year": 1913,
+    "month": 2,
+    "day": 16,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Havre",
+    "country": "France",
+    "lat": 49.5,
+    "lon": 0.133333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevignard,_Bernard",
+  "source_notes": "Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 71.\\n",
+  "categories": [
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 8.174208,
+    "lagna": 338.174208,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.643815,
+    "jd_ut": 2419814.875,
+    "planets": {
+      "Sun": {
+        "longitude": 304.468178,
+        "sign_index": 10,
+        "degree_in_sign": 4.468178,
+        "is_retrograde": false,
+        "speed": 1.009055
+      },
+      "Moon": {
+        "longitude": 59.640766,
+        "sign_index": 1,
+        "degree_in_sign": 29.640766,
+        "is_retrograde": false,
+        "speed": 17.618595
+      },
+      "Mars": {
+        "longitude": 275.095437,
+        "sign_index": 9,
+        "degree_in_sign": 5.095437,
+        "is_retrograde": false,
+        "speed": 0.763524
+      },
+      "Mercury": {
+        "longitude": 307.224474,
+        "sign_index": 10,
+        "degree_in_sign": 7.224474,
+        "is_retrograde": false,
+        "speed": 1.837331
+      },
+      "Jupiter": {
+        "longitude": 256.803722,
+        "sign_index": 8,
+        "degree_in_sign": 16.803722,
+        "is_retrograde": false,
+        "speed": 0.189165
+      },
+      "Venus": {
+        "longitude": 351.118006,
+        "sign_index": 11,
+        "degree_in_sign": 21.118006,
+        "is_retrograde": false,
+        "speed": 0.979449
+      },
+      "Saturn": {
+        "longitude": 34.848226,
+        "sign_index": 1,
+        "degree_in_sign": 4.848226,
+        "is_retrograde": false,
+        "speed": 0.034776
+      },
+      "Rahu": {
+        "longitude": 342.631918,
+        "sign_index": 11,
+        "degree_in_sign": 12.631918,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 162.631918,
+        "sign_index": 5,
+        "degree_in_sign": 12.631918,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

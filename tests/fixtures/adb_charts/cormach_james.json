@@ -1,0 +1,110 @@
+{
+  "adb_id": 47925,
+  "name": "Cormach, James",
+  "given_name": "James Cormach",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418507.805556,
+    "year": 1909,
+    "month": 7,
+    "day": 20,
+    "calendar": "g",
+    "time": "07:20",
+    "time_type": "s",
+    "hour": 7.333333,
+    "time_unknown": false,
+    "place": "Aberdeen",
+    "country": "Scotland",
+    "lat": 57.166667,
+    "lon": -2.066667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cormach,_James",
+  "source_notes": "Paul Wright collection, B.C.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 15.857269,
+    "lagna": 105.857269,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.593846,
+    "jd_ut": 2418507.805556,
+    "planets": {
+      "Sun": {
+        "longitude": 94.319744,
+        "sign_index": 3,
+        "degree_in_sign": 4.319744,
+        "is_retrograde": false,
+        "speed": 0.954768
+      },
+      "Moon": {
+        "longitude": 128.033246,
+        "sign_index": 4,
+        "degree_in_sign": 8.033246,
+        "is_retrograde": false,
+        "speed": 12.871143
+      },
+      "Mars": {
+        "longitude": 337.006198,
+        "sign_index": 11,
+        "degree_in_sign": 7.006198,
+        "is_retrograde": false,
+        "speed": 0.388151
+      },
+      "Mercury": {
+        "longitude": 78.281221,
+        "sign_index": 2,
+        "degree_in_sign": 18.281221,
+        "is_retrograde": false,
+        "speed": 1.763321
+      },
+      "Jupiter": {
+        "longitude": 140.098221,
+        "sign_index": 4,
+        "degree_in_sign": 20.098221,
+        "is_retrograde": false,
+        "speed": 0.179014
+      },
+      "Venus": {
+        "longitude": 116.479156,
+        "sign_index": 3,
+        "degree_in_sign": 26.479156,
+        "is_retrograde": false,
+        "speed": 1.219447
+      },
+      "Saturn": {
+        "longitude": 0.415161,
+        "sign_index": 0,
+        "degree_in_sign": 0.415161,
+        "is_retrograde": false,
+        "speed": 0.027496
+      },
+      "Rahu": {
+        "longitude": 51.896271,
+        "sign_index": 1,
+        "degree_in_sign": 21.896271,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 231.896271,
+        "sign_index": 7,
+        "degree_in_sign": 21.896271,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

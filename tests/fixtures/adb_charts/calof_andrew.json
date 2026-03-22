@@ -1,0 +1,111 @@
+{
+  "adb_id": 88084,
+  "name": "Calof, Andrew",
+  "given_name": "Andrew Calof",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2448386.086806,
+    "year": 1991,
+    "month": 5,
+    "day": 9,
+    "calendar": "g",
+    "time": "10:05",
+    "time_type": "d",
+    "hour": 10.083333,
+    "time_unknown": false,
+    "place": "Ottawa",
+    "country": "Ontario (CAN)",
+    "lat": 45.416667,
+    "lon": -75.7
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calof,_Andrew",
+  "source_notes": "Sy Scholfield provided birth notice, The Ottawa Citizen (Ontario, Canada), 11 May 1991, p. 39.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Hockey",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 6.421579,
+    "lagna": 66.421579,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.736283,
+    "jd_ut": 2448386.086806,
+    "planets": {
+      "Sun": {
+        "longitude": 24.713055,
+        "sign_index": 0,
+        "degree_in_sign": 24.713055,
+        "is_retrograde": false,
+        "speed": 0.967137
+      },
+      "Moon": {
+        "longitude": 323.940947,
+        "sign_index": 10,
+        "degree_in_sign": 23.940947,
+        "is_retrograde": false,
+        "speed": 9.429751
+      },
+      "Mars": {
+        "longitude": 86.466529,
+        "sign_index": 2,
+        "degree_in_sign": 26.466529,
+        "is_retrograde": false,
+        "speed": 0.571735
+      },
+      "Mercury": {
+        "longitude": 358.960053,
+        "sign_index": 11,
+        "degree_in_sign": 28.960053,
+        "is_retrograde": false,
+        "speed": 0.796088
+      },
+      "Jupiter": {
+        "longitude": 102.194255,
+        "sign_index": 3,
+        "degree_in_sign": 12.194255,
+        "is_retrograde": false,
+        "speed": 0.112993
+      },
+      "Venus": {
+        "longitude": 66.848292,
+        "sign_index": 2,
+        "degree_in_sign": 6.848292,
+        "is_retrograde": false,
+        "speed": 1.119592
+      },
+      "Saturn": {
+        "longitude": 283.054766,
+        "sign_index": 9,
+        "degree_in_sign": 13.054766,
+        "is_retrograde": false,
+        "speed": 0.012387
+      },
+      "Rahu": {
+        "longitude": 268.584603,
+        "sign_index": 8,
+        "degree_in_sign": 28.584603,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 88.584603,
+        "sign_index": 2,
+        "degree_in_sign": 28.584603,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

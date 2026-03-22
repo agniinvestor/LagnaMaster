@@ -1,0 +1,108 @@
+{
+  "adb_id": 101265,
+  "name": "Costantini, Isela",
+  "given_name": "Isela Costantini",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441175.629861,
+    "year": 1971,
+    "month": 8,
+    "day": 12,
+    "calendar": "g",
+    "time": "00:07",
+    "time_type": "s",
+    "hour": 0.116667,
+    "time_unknown": false,
+    "place": "Jardim América",
+    "country": "Brazil",
+    "lat": -22.811667,
+    "lon": -43.324722
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costantini,_Isela",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 1.365863,
+    "lagna": 1.365863,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.460544,
+    "jd_ut": 2441175.629861,
+    "planets": {
+      "Sun": {
+        "longitude": 115.308499,
+        "sign_index": 3,
+        "degree_in_sign": 25.308499,
+        "is_retrograde": false,
+        "speed": 0.959426
+      },
+      "Moon": {
+        "longitude": 8.793643,
+        "sign_index": 0,
+        "degree_in_sign": 8.793643,
+        "is_retrograde": false,
+        "speed": 12.610073
+      },
+      "Mars": {
+        "longitude": 293.052032,
+        "sign_index": 9,
+        "degree_in_sign": 23.052032,
+        "is_retrograde": true,
+        "speed": -0.26488
+      },
+      "Mercury": {
+        "longitude": 137.070945,
+        "sign_index": 4,
+        "degree_in_sign": 17.070945,
+        "is_retrograde": false,
+        "speed": 0.059467
+      },
+      "Jupiter": {
+        "longitude": 213.639305,
+        "sign_index": 7,
+        "degree_in_sign": 3.639305,
+        "is_retrograde": false,
+        "speed": 0.054498
+      },
+      "Venus": {
+        "longitude": 111.009715,
+        "sign_index": 3,
+        "degree_in_sign": 21.009715,
+        "is_retrograde": false,
+        "speed": 1.234485
+      },
+      "Saturn": {
+        "longitude": 41.796762,
+        "sign_index": 1,
+        "degree_in_sign": 11.796762,
+        "is_retrograde": false,
+        "speed": 0.064446
+      },
+      "Rahu": {
+        "longitude": 290.681356,
+        "sign_index": 9,
+        "degree_in_sign": 20.681356,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 110.681356,
+        "sign_index": 3,
+        "degree_in_sign": 20.681356,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

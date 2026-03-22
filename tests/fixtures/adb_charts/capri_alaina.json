@@ -1,0 +1,114 @@
+{
+  "adb_id": 86476,
+  "name": "Capri, Alaina",
+  "given_name": "Alaina Capri",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429426.3125,
+    "year": 1939,
+    "month": 6,
+    "day": 11,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capri,_Alaina",
+  "source_notes": "Alexander Angel provided birth certificate. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Vocation : Beauty : Beauty Queen/ King",
+    "Vocation : Beauty : Sex-symbol",
+    "Vocation : Education : Teacher",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 0.074227,
+    "lagna": 120.074227,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.011282,
+    "jd_ut": 2429426.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 56.951591,
+        "sign_index": 1,
+        "degree_in_sign": 26.951591,
+        "is_retrograde": false,
+        "speed": 0.955747
+      },
+      "Moon": {
+        "longitude": 344.481479,
+        "sign_index": 11,
+        "degree_in_sign": 14.481479,
+        "is_retrograde": false,
+        "speed": 10.541843
+      },
+      "Mars": {
+        "longitude": 280.953337,
+        "sign_index": 9,
+        "degree_in_sign": 10.953337,
+        "is_retrograde": false,
+        "speed": 0.132769
+      },
+      "Mercury": {
+        "longitude": 62.395515,
+        "sign_index": 2,
+        "degree_in_sign": 2.395515,
+        "is_retrograde": false,
+        "speed": 2.160845
+      },
+      "Jupiter": {
+        "longitude": 342.256498,
+        "sign_index": 11,
+        "degree_in_sign": 12.256498,
+        "is_retrograde": false,
+        "speed": 0.137919
+      },
+      "Venus": {
+        "longitude": 33.821849,
+        "sign_index": 1,
+        "degree_in_sign": 3.821849,
+        "is_retrograde": false,
+        "speed": 1.211085
+      },
+      "Saturn": {
+        "longitude": 5.047223,
+        "sign_index": 0,
+        "degree_in_sign": 5.047223,
+        "is_retrograde": false,
+        "speed": 0.093834
+      },
+      "Rahu": {
+        "longitude": 193.301827,
+        "sign_index": 6,
+        "degree_in_sign": 13.301827,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 13.301827,
+        "sign_index": 0,
+        "degree_in_sign": 13.301827,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

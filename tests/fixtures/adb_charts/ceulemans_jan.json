@@ -1,0 +1,109 @@
+{
+  "adb_id": 102412,
+  "name": "Ceulemans, Jan",
+  "given_name": "Jan Ceulemans",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435897.854167,
+    "year": 1957,
+    "month": 2,
+    "day": 28,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "s",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Lier",
+    "country": "Belgium",
+    "lat": 51.133333,
+    "lon": 4.566667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ceulemans,_Jan",
+  "source_notes": "Quoted BC from Bordoni database.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 26.279464,
+    "lagna": 356.279464,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.258728,
+    "jd_ut": 2435897.854167,
+    "planets": {
+      "Sun": {
+        "longitude": 316.235172,
+        "sign_index": 10,
+        "degree_in_sign": 16.235172,
+        "is_retrograde": false,
+        "speed": 1.004245
+      },
+      "Moon": {
+        "longitude": 301.888362,
+        "sign_index": 10,
+        "degree_in_sign": 1.888362,
+        "is_retrograde": false,
+        "speed": 9.081914
+      },
+      "Mars": {
+        "longitude": 25.741727,
+        "sign_index": 0,
+        "degree_in_sign": 25.741727,
+        "is_retrograde": false,
+        "speed": 0.624749
+      },
+      "Mercury": {
+        "longitude": 299.939022,
+        "sign_index": 9,
+        "degree_in_sign": 29.939022,
+        "is_retrograde": false,
+        "speed": 1.611148
+      },
+      "Jupiter": {
+        "longitude": 155.796995,
+        "sign_index": 5,
+        "degree_in_sign": 5.796995,
+        "is_retrograde": true,
+        "speed": -0.115891
+      },
+      "Venus": {
+        "longitude": 304.856963,
+        "sign_index": 10,
+        "degree_in_sign": 4.856963,
+        "is_retrograde": false,
+        "speed": 1.24815
+      },
+      "Saturn": {
+        "longitude": 230.579388,
+        "sign_index": 7,
+        "degree_in_sign": 20.579388,
+        "is_retrograde": false,
+        "speed": 0.039052
+      },
+      "Rahu": {
+        "longitude": 210.361492,
+        "sign_index": 7,
+        "degree_in_sign": 0.361492,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 30.361492,
+        "sign_index": 1,
+        "degree_in_sign": 0.361492,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

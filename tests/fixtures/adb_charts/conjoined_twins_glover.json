@@ -1,0 +1,110 @@
+{
+  "adb_id": 11227,
+  "name": "Conjoined Twins: Glover",
+  "given_name": "Conjoined Twins: Glover",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433033.229167,
+    "year": 1949,
+    "month": 4,
+    "day": 26,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Owensboro",
+    "country": "Kentucky",
+    "lat": 37.766667,
+    "lon": -87.116667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Glover",
+  "source_notes": "McDonald from AFA DX.\\n\\nSy Scholfield quotes same data from ''The Owensboro Messenger'' (Owensboro, Kentucky), 27 April 1949, page 1, born yesterday at 11:30 AM at Owenboro-Daviess County hospital.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Surgery",
+    "Personal : Birth : Conjoined twins",
+    "Personal : Birth : Infant mortality"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 25.044709,
+    "lagna": 85.044709,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.149194,
+    "jd_ut": 2433033.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 12.992208,
+        "sign_index": 0,
+        "degree_in_sign": 12.992208,
+        "is_retrograde": false,
+        "speed": 0.97287
+      },
+      "Moon": {
+        "longitude": 355.00302,
+        "sign_index": 11,
+        "degree_in_sign": 25.00302,
+        "is_retrograde": false,
+        "speed": 7.880419
+      },
+      "Mars": {
+        "longitude": 4.312717,
+        "sign_index": 0,
+        "degree_in_sign": 4.312717,
+        "is_retrograde": false,
+        "speed": 0.753683
+      },
+      "Mercury": {
+        "longitude": 27.51624,
+        "sign_index": 0,
+        "degree_in_sign": 27.51624,
+        "is_retrograde": false,
+        "speed": 1.884622
+      },
+      "Jupiter": {
+        "longitude": 278.137396,
+        "sign_index": 9,
+        "degree_in_sign": 8.137396,
+        "is_retrograde": false,
+        "speed": 0.073016
+      },
+      "Venus": {
+        "longitude": 15.542991,
+        "sign_index": 0,
+        "degree_in_sign": 15.542991,
+        "is_retrograde": false,
+        "speed": 1.234897
+      },
+      "Saturn": {
+        "longitude": 126.184147,
+        "sign_index": 4,
+        "degree_in_sign": 6.184147,
+        "is_retrograde": true,
+        "speed": -0.008299
+      },
+      "Rahu": {
+        "longitude": 2.163863,
+        "sign_index": 0,
+        "degree_in_sign": 2.163863,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.163863,
+        "sign_index": 6,
+        "degree_in_sign": 2.163863,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 4675,
+  "name": "Callaghan, James",
+  "given_name": "James Callaghan",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2419489.180556,
+    "year": 1912,
+    "month": 3,
+    "day": 27,
+    "calendar": "g",
+    "time": "16:20",
+    "time_type": "s",
+    "hour": 16.333333,
+    "time_unknown": false,
+    "place": "Portsmouth",
+    "country": "England",
+    "lat": 50.8,
+    "lon": -1.083333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Callaghan,_James",
+  "source_notes": "Sam Pearson quotes him in AQ Spring/1979.  (Davison rectified to 4:37 PM.  Penfield gave 4:20 AM in Mercury Hour 4/82.)\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Economist",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 29.559915,
+    "lagna": 119.559915,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.631363,
+    "jd_ut": 2419489.180556,
+    "planets": {
+      "Sun": {
+        "longitude": 344.010853,
+        "sign_index": 11,
+        "degree_in_sign": 14.010853,
+        "is_retrograde": false,
+        "speed": 0.988611
+      },
+      "Moon": {
+        "longitude": 95.236013,
+        "sign_index": 3,
+        "degree_in_sign": 5.236013,
+        "is_retrograde": false,
+        "speed": 11.823402
+      },
+      "Mars": {
+        "longitude": 62.681054,
+        "sign_index": 2,
+        "degree_in_sign": 2.681054,
+        "is_retrograde": false,
+        "speed": 0.526027
+      },
+      "Mercury": {
+        "longitude": 2.704982,
+        "sign_index": 0,
+        "degree_in_sign": 2.704982,
+        "is_retrograde": false,
+        "speed": 1.010987
+      },
+      "Jupiter": {
+        "longitude": 232.73108,
+        "sign_index": 7,
+        "degree_in_sign": 22.73108,
+        "is_retrograde": false,
+        "speed": 0.015023
+      },
+      "Venus": {
+        "longitude": 317.820984,
+        "sign_index": 10,
+        "degree_in_sign": 17.820984,
+        "is_retrograde": false,
+        "speed": 1.22634
+      },
+      "Saturn": {
+        "longitude": 25.017743,
+        "sign_index": 0,
+        "degree_in_sign": 25.017743,
+        "is_retrograde": false,
+        "speed": 0.108148
+      },
+      "Rahu": {
+        "longitude": 359.89115,
+        "sign_index": 11,
+        "degree_in_sign": 29.89115,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 179.89115,
+        "sign_index": 5,
+        "degree_in_sign": 29.89115,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 65077,
+  "name": "Cottier, Frédéric",
+  "given_name": "Frédéric Cottier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434779.052083,
+    "year": 1954,
+    "month": 2,
+    "day": 5,
+    "calendar": "g",
+    "time": "14:15",
+    "time_type": "s",
+    "hour": 14.25,
+    "time_unknown": false,
+    "place": "Neuilly sur Seine",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cottier,_Frédéric",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 246.\\n",
+  "categories": [
+    "Vocation : Sports : Equestrian"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 18.882389,
+    "lagna": 48.882389,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.215948,
+    "jd_ut": 2434779.052083,
+    "planets": {
+      "Sun": {
+        "longitude": 292.993556,
+        "sign_index": 9,
+        "degree_in_sign": 22.993556,
+        "is_retrograde": false,
+        "speed": 1.013837
+      },
+      "Moon": {
+        "longitude": 318.21103,
+        "sign_index": 10,
+        "degree_in_sign": 18.21103,
+        "is_retrograde": false,
+        "speed": 10.897768
+      },
+      "Mars": {
+        "longitude": 214.397134,
+        "sign_index": 7,
+        "degree_in_sign": 4.397134,
+        "is_retrograde": false,
+        "speed": 0.563248
+      },
+      "Mercury": {
+        "longitude": 308.096527,
+        "sign_index": 10,
+        "degree_in_sign": 8.096527,
+        "is_retrograde": false,
+        "speed": 1.632843
+      },
+      "Jupiter": {
+        "longitude": 53.232368,
+        "sign_index": 1,
+        "degree_in_sign": 23.232368,
+        "is_retrograde": true,
+        "speed": -0.016558
+      },
+      "Venus": {
+        "longitude": 294.567183,
+        "sign_index": 9,
+        "degree_in_sign": 24.567183,
+        "is_retrograde": false,
+        "speed": 1.254906
+      },
+      "Saturn": {
+        "longitude": 196.012742,
+        "sign_index": 6,
+        "degree_in_sign": 16.012742,
+        "is_retrograde": false,
+        "speed": 0.020362
+      },
+      "Rahu": {
+        "longitude": 269.649113,
+        "sign_index": 8,
+        "degree_in_sign": 29.649113,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 89.649113,
+        "sign_index": 2,
+        "degree_in_sign": 29.649113,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

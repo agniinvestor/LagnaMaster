@@ -1,0 +1,109 @@
+{
+  "adb_id": 71583,
+  "name": "Carosio, Nicolò",
+  "given_name": "Nicolò Carosio",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417649.84375,
+    "year": 1907,
+    "month": 3,
+    "day": 15,
+    "calendar": "g",
+    "time": "09:15",
+    "time_type": "s",
+    "hour": 9.25,
+    "time_unknown": false,
+    "place": "Palermo",
+    "country": "Italy",
+    "lat": 38.116667,
+    "lon": 13.366667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carosio,_Nicolò",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : News journalist/ Anchor",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 12.275679,
+    "lagna": 12.275679,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.561046,
+    "jd_ut": 2417649.84375,
+    "planets": {
+      "Sun": {
+        "longitude": 331.048699,
+        "sign_index": 11,
+        "degree_in_sign": 1.048699,
+        "is_retrograde": false,
+        "speed": 0.996497
+      },
+      "Moon": {
+        "longitude": 345.020477,
+        "sign_index": 11,
+        "degree_in_sign": 15.020477,
+        "is_retrograde": false,
+        "speed": 11.17455
+      },
+      "Mars": {
+        "longitude": 238.649258,
+        "sign_index": 7,
+        "degree_in_sign": 28.649258,
+        "is_retrograde": false,
+        "speed": 0.526514
+      },
+      "Mercury": {
+        "longitude": 336.610839,
+        "sign_index": 11,
+        "degree_in_sign": 6.610839,
+        "is_retrograde": true,
+        "speed": -0.780114
+      },
+      "Jupiter": {
+        "longitude": 68.93514,
+        "sign_index": 2,
+        "degree_in_sign": 8.93514,
+        "is_retrograde": false,
+        "speed": 0.055843
+      },
+      "Venus": {
+        "longitude": 287.01423,
+        "sign_index": 9,
+        "degree_in_sign": 17.01423,
+        "is_retrograde": false,
+        "speed": 1.138096
+      },
+      "Saturn": {
+        "longitude": 325.841638,
+        "sign_index": 10,
+        "degree_in_sign": 25.841638,
+        "is_retrograde": false,
+        "speed": 0.122823
+      },
+      "Rahu": {
+        "longitude": 97.36147,
+        "sign_index": 3,
+        "degree_in_sign": 7.36147,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 277.36147,
+        "sign_index": 9,
+        "degree_in_sign": 7.36147,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

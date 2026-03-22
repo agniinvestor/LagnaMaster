@@ -1,0 +1,113 @@
+{
+  "adb_id": 2932,
+  "name": "Carossa, Hans",
+  "given_name": "Hans Carossa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407333.884537,
+    "year": 1878,
+    "month": 12,
+    "day": 15,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Bad Tölz",
+    "country": "Germany",
+    "lat": 47.766667,
+    "lon": 11.566667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carossa,_Hans",
+  "source_notes": "B.C. in hand from Steinbrecher\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Military : Wounded",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Poet",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 12.851897,
+    "lagna": 252.851897,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.166701,
+    "jd_ut": 2407333.884537,
+    "planets": {
+      "Sun": {
+        "longitude": 241.147736,
+        "sign_index": 8,
+        "degree_in_sign": 1.147736,
+        "is_retrograde": false,
+        "speed": 1.017618
+      },
+      "Moon": {
+        "longitude": 128.358846,
+        "sign_index": 4,
+        "degree_in_sign": 8.358846,
+        "is_retrograde": false,
+        "speed": 13.459078
+      },
+      "Mars": {
+        "longitude": 211.624592,
+        "sign_index": 7,
+        "degree_in_sign": 1.624592,
+        "is_retrograde": false,
+        "speed": 0.686092
+      },
+      "Mercury": {
+        "longitude": 259.647217,
+        "sign_index": 8,
+        "degree_in_sign": 19.647217,
+        "is_retrograde": false,
+        "speed": 0.248331
+      },
+      "Jupiter": {
+        "longitude": 284.780188,
+        "sign_index": 9,
+        "degree_in_sign": 14.780188,
+        "is_retrograde": false,
+        "speed": 0.203349
+      },
+      "Venus": {
+        "longitude": 243.47196,
+        "sign_index": 8,
+        "degree_in_sign": 3.47196,
+        "is_retrograde": false,
+        "speed": 1.258067
+      },
+      "Saturn": {
+        "longitude": 334.192023,
+        "sign_index": 11,
+        "degree_in_sign": 4.192023,
+        "is_retrograde": false,
+        "speed": 0.028444
+      },
+      "Rahu": {
+        "longitude": 284.025965,
+        "sign_index": 9,
+        "degree_in_sign": 14.025965,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 104.025965,
+        "sign_index": 3,
+        "degree_in_sign": 14.025965,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "adb_id": 89792,
+  "name": "Cummings, Iris",
+  "given_name": "Iris Cummings",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422680.753472,
+    "year": 1920,
+    "month": 12,
+    "day": 21,
+    "calendar": "g",
+    "time": "22:05",
+    "time_type": "s",
+    "hour": 22.083333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cummings,_Iris",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Librarian",
+    "Vocation : Education : Teacher",
+    "Vocation : Military : Military service",
+    "Vocation : Sports : Swimming",
+    "Vocation : Travel : Pilot/ military",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 22.22291,
+    "lagna": 112.22291,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.753379,
+    "jd_ut": 2422680.753472,
+    "planets": {
+      "Sun": {
+        "longitude": 247.362877,
+        "sign_index": 8,
+        "degree_in_sign": 7.362877,
+        "is_retrograde": false,
+        "speed": 1.018346
+      },
+      "Moon": {
+        "longitude": 21.756153,
+        "sign_index": 0,
+        "degree_in_sign": 21.756153,
+        "is_retrograde": false,
+        "speed": 9.55034
+      },
+      "Mars": {
+        "longitude": 296.321274,
+        "sign_index": 9,
+        "degree_in_sign": 26.321274,
+        "is_retrograde": false,
+        "speed": 0.776262
+      },
+      "Mercury": {
+        "longitude": 233.197037,
+        "sign_index": 7,
+        "degree_in_sign": 23.197037,
+        "is_retrograde": false,
+        "speed": 1.497111
+      },
+      "Jupiter": {
+        "longitude": 145.902617,
+        "sign_index": 4,
+        "degree_in_sign": 25.902617,
+        "is_retrograde": false,
+        "speed": 0.040026
+      },
+      "Venus": {
+        "longitude": 288.916524,
+        "sign_index": 9,
+        "degree_in_sign": 18.916524,
+        "is_retrograde": false,
+        "speed": 1.188645
+      },
+      "Saturn": {
+        "longitude": 151.885499,
+        "sign_index": 5,
+        "degree_in_sign": 1.885499,
+        "is_retrograde": false,
+        "speed": 0.024
+      },
+      "Rahu": {
+        "longitude": 190.763021,
+        "sign_index": 6,
+        "degree_in_sign": 10.763021,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 10.763021,
+        "sign_index": 0,
+        "degree_in_sign": 10.763021,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

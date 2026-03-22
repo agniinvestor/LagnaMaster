@@ -1,0 +1,109 @@
+{
+  "adb_id": 72161,
+  "name": "Costa, Joaquin",
+  "given_name": "Joaquin Costa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2395554.207778,
+    "year": 1846,
+    "month": 9,
+    "day": 14,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Monzón",
+    "country": "Spain",
+    "lat": 41.916667,
+    "lon": 0.2
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costa,_Joaquin",
+  "source_notes": "Castellanos quotes birth certificate in:\\nhttp://ifc.dpz.es/recursos/publicaciones/30/27/costaolmet.pdf\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 9.785233,
+    "lagna": 279.785233,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.716462,
+    "jd_ut": 2395554.207778,
+    "planets": {
+      "Sun": {
+        "longitude": 149.742735,
+        "sign_index": 4,
+        "degree_in_sign": 29.742735,
+        "is_retrograde": false,
+        "speed": 0.975476
+      },
+      "Moon": {
+        "longitude": 84.460602,
+        "sign_index": 2,
+        "degree_in_sign": 24.460602,
+        "is_retrograde": false,
+        "speed": 15.388316
+      },
+      "Mars": {
+        "longitude": 148.298536,
+        "sign_index": 4,
+        "degree_in_sign": 28.298536,
+        "is_retrograde": false,
+        "speed": 0.642044
+      },
+      "Mercury": {
+        "longitude": 132.46005,
+        "sign_index": 4,
+        "degree_in_sign": 12.46005,
+        "is_retrograde": false,
+        "speed": 1.336697
+      },
+      "Jupiter": {
+        "longitude": 54.235041,
+        "sign_index": 1,
+        "degree_in_sign": 24.235041,
+        "is_retrograde": false,
+        "speed": 0.066871
+      },
+      "Venus": {
+        "longitude": 126.636058,
+        "sign_index": 4,
+        "degree_in_sign": 6.636058,
+        "is_retrograde": false,
+        "speed": 1.227808
+      },
+      "Saturn": {
+        "longitude": 303.960316,
+        "sign_index": 10,
+        "degree_in_sign": 3.960316,
+        "is_retrograde": true,
+        "speed": -0.063871
+      },
+      "Rahu": {
+        "longitude": 188.256277,
+        "sign_index": 6,
+        "degree_in_sign": 8.256277,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 8.256277,
+        "sign_index": 0,
+        "degree_in_sign": 8.256277,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 68335,
+  "name": "Collomb, Gérard",
+  "given_name": "Gérard Collomb",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432356.583333,
+    "year": 1947,
+    "month": 6,
+    "day": 20,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Chalon sur Saône",
+    "country": "France",
+    "lat": 46.783333,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collomb,_Gérard",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 200.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 10.376248,
+    "lagna": 10.376248,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.123322,
+    "jd_ut": 2432356.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 64.800176,
+        "sign_index": 2,
+        "degree_in_sign": 4.800176,
+        "is_retrograde": false,
+        "speed": 0.954648
+      },
+      "Moon": {
+        "longitude": 82.004661,
+        "sign_index": 2,
+        "degree_in_sign": 22.004661,
+        "is_retrograde": false,
+        "speed": 19.217575
+      },
+      "Mars": {
+        "longitude": 28.94839,
+        "sign_index": 0,
+        "degree_in_sign": 28.94839,
+        "is_retrograde": false,
+        "speed": 0.722797
+      },
+      "Mercury": {
+        "longitude": 89.276753,
+        "sign_index": 2,
+        "degree_in_sign": 29.276753,
+        "is_retrograde": false,
+        "speed": 0.804713
+      },
+      "Jupiter": {
+        "longitude": 205.565778,
+        "sign_index": 6,
+        "degree_in_sign": 25.565778,
+        "is_retrograde": true,
+        "speed": -0.074956
+      },
+      "Venus": {
+        "longitude": 44.386311,
+        "sign_index": 1,
+        "degree_in_sign": 14.386311,
+        "is_retrograde": false,
+        "speed": 1.214528
+      },
+      "Saturn": {
+        "longitude": 103.612841,
+        "sign_index": 3,
+        "degree_in_sign": 13.612841,
+        "is_retrograde": false,
+        "speed": 0.109715
+      },
+      "Rahu": {
+        "longitude": 38.02072,
+        "sign_index": 1,
+        "degree_in_sign": 8.02072,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 218.02072,
+        "sign_index": 7,
+        "degree_in_sign": 8.02072,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

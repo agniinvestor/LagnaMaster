@@ -1,0 +1,110 @@
+{
+  "adb_id": 11873,
+  "name": "Christen, Gary",
+  "given_name": "Gary Christen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433784.047222,
+    "year": 1951,
+    "month": 5,
+    "day": 17,
+    "calendar": "g",
+    "time": "09:08",
+    "time_type": "d",
+    "hour": 9.133333,
+    "time_unknown": false,
+    "place": "Jersey City",
+    "country": "New Jersey",
+    "lat": 40.733333,
+    "lon": -74.083333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christen,_Gary",
+  "source_notes": "LMR quotes him by email 7/2002.  \\n(Formerly, NCGR newsletter Summer/85 quoted him for 8:08 AM)\\n",
+  "categories": [
+    "Traits : Mind : I.Q. high/ Mensa level",
+    "Vocation : Computer : Programmer",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.365775,
+    "lagna": 60.365775,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.177903,
+    "jd_ut": 2433784.047222,
+    "planets": {
+      "Sun": {
+        "longitude": 32.646699,
+        "sign_index": 1,
+        "degree_in_sign": 2.646699,
+        "is_retrograde": false,
+        "speed": 0.963126
+      },
+      "Moon": {
+        "longitude": 162.667348,
+        "sign_index": 5,
+        "degree_in_sign": 12.667348,
+        "is_retrograde": false,
+        "speed": 17.711391
+      },
+      "Mars": {
+        "longitude": 33.90472,
+        "sign_index": 1,
+        "degree_in_sign": 3.90472,
+        "is_retrograde": false,
+        "speed": 0.713114
+      },
+      "Mercury": {
+        "longitude": 8.246238,
+        "sign_index": 0,
+        "degree_in_sign": 8.246238,
+        "is_retrograde": false,
+        "speed": 0.656237
+      },
+      "Jupiter": {
+        "longitude": 342.292847,
+        "sign_index": 11,
+        "degree_in_sign": 12.292847,
+        "is_retrograde": false,
+        "speed": 0.194763
+      },
+      "Venus": {
+        "longitude": 74.172777,
+        "sign_index": 2,
+        "degree_in_sign": 14.172777,
+        "is_retrograde": false,
+        "speed": 1.126954
+      },
+      "Saturn": {
+        "longitude": 152.47506,
+        "sign_index": 5,
+        "degree_in_sign": 2.47506,
+        "is_retrograde": true,
+        "speed": -0.019612
+      },
+      "Rahu": {
+        "longitude": 322.376467,
+        "sign_index": 10,
+        "degree_in_sign": 22.376467,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 142.376467,
+        "sign_index": 4,
+        "degree_in_sign": 22.376467,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

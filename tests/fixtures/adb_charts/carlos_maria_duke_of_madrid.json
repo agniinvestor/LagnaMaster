@@ -1,0 +1,110 @@
+{
+  "adb_id": 62038,
+  "name": "Carlos Maria, Duke of Madrid",
+  "given_name": "Duke of Madrid Carlos Maria",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2396116.730509,
+    "year": 1848,
+    "month": 3,
+    "day": 30,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "l",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Ljubljana",
+    "country": "Slovenia",
+    "lat": 46.05,
+    "lon": 14.516667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlos_Maria,_Duke_of_Madrid",
+  "source_notes": "Sy Scholfield quotes from \"Carlos VII: el rey de los caballeros y el caballero de los reyes\" by Francisco López-Sánz (Gómez, 1969), p. 150: \"En las primeras líneas de su 'Diario', que escribió en su impetuosa juventud ... se lee: 'El día 30 de marzo de 1848, a las seis y media de la mañana, nacía yo en una pobre fonda de Leibach, gobierno del reino de Iliria...'\"\\n\\nTranslation: The first lines of his \"Diary\", which he wrote in his impetuous youth ... reads: \"On 30 March 1848, at half past six in the morning, I was born in a poor inn in Ljubljana, government seat of the kingdom of Illyria.\\n\\nFull name: Carlos María de los Dolores Juan Isidro José Francisco Quirino Antonio Miguel Gabriel Rafael de Borbón y Austria-Este.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 15.6174,
+    "lagna": 345.6174,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.737962,
+    "jd_ut": 2396116.730509,
+    "planets": {
+      "Sun": {
+        "longitude": 347.915382,
+        "sign_index": 11,
+        "degree_in_sign": 17.915382,
+        "is_retrograde": false,
+        "speed": 0.986603
+      },
+      "Moon": {
+        "longitude": 284.213399,
+        "sign_index": 9,
+        "degree_in_sign": 14.213399,
+        "is_retrograde": false,
+        "speed": 9.65674
+      },
+      "Mars": {
+        "longitude": 57.346313,
+        "sign_index": 1,
+        "degree_in_sign": 27.346313,
+        "is_retrograde": false,
+        "speed": 0.574084
+      },
+      "Mercury": {
+        "longitude": 323.496024,
+        "sign_index": 10,
+        "degree_in_sign": 23.496024,
+        "is_retrograde": false,
+        "speed": 0.317878
+      },
+      "Jupiter": {
+        "longitude": 79.672926,
+        "sign_index": 2,
+        "degree_in_sign": 19.672926,
+        "is_retrograde": false,
+        "speed": 0.073818
+      },
+      "Venus": {
+        "longitude": 318.059051,
+        "sign_index": 10,
+        "degree_in_sign": 18.059051,
+        "is_retrograde": false,
+        "speed": 1.218329
+      },
+      "Saturn": {
+        "longitude": 326.742932,
+        "sign_index": 10,
+        "degree_in_sign": 26.742932,
+        "is_retrograde": false,
+        "speed": 0.117554
+      },
+      "Rahu": {
+        "longitude": 158.446983,
+        "sign_index": 5,
+        "degree_in_sign": 8.446983,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 338.446983,
+        "sign_index": 11,
+        "degree_in_sign": 8.446983,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

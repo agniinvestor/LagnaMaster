@@ -1,0 +1,110 @@
+{
+  "adb_id": 71522,
+  "name": "Calandra, Giuliana",
+  "given_name": "Giuliana Calandra",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428208.885417,
+    "year": 1936,
+    "month": 2,
+    "day": 10,
+    "calendar": "g",
+    "time": "10:15",
+    "time_type": "s",
+    "hour": 10.25,
+    "time_unknown": false,
+    "place": "Moncalieri",
+    "country": "Italy",
+    "lat": 45.0,
+    "lon": 7.683333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calandra,_Giuliana",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 13.243517,
+    "lagna": 343.243517,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.964735,
+    "jd_ut": 2428208.885417,
+    "planets": {
+      "Sun": {
+        "longitude": 297.505249,
+        "sign_index": 9,
+        "degree_in_sign": 27.505249,
+        "is_retrograde": false,
+        "speed": 1.011682
+      },
+      "Moon": {
+        "longitude": 149.539552,
+        "sign_index": 4,
+        "degree_in_sign": 29.539552,
+        "is_retrograde": false,
+        "speed": 13.395316
+      },
+      "Mars": {
+        "longitude": 327.931079,
+        "sign_index": 10,
+        "degree_in_sign": 27.931079,
+        "is_retrograde": false,
+        "speed": 0.774758
+      },
+      "Mercury": {
+        "longitude": 279.36314,
+        "sign_index": 9,
+        "degree_in_sign": 9.36314,
+        "is_retrograde": true,
+        "speed": -0.345955
+      },
+      "Jupiter": {
+        "longitude": 236.277814,
+        "sign_index": 7,
+        "degree_in_sign": 26.277814,
+        "is_retrograde": false,
+        "speed": 0.158156
+      },
+      "Venus": {
+        "longitude": 262.608519,
+        "sign_index": 8,
+        "degree_in_sign": 22.608519,
+        "is_retrograde": false,
+        "speed": 1.220428
+      },
+      "Saturn": {
+        "longitude": 317.162888,
+        "sign_index": 10,
+        "degree_in_sign": 17.162888,
+        "is_retrograde": false,
+        "speed": 0.117799
+      },
+      "Rahu": {
+        "longitude": 257.815809,
+        "sign_index": 8,
+        "degree_in_sign": 17.815809,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 77.815809,
+        "sign_index": 2,
+        "degree_in_sign": 17.815809,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

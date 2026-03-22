@@ -1,0 +1,111 @@
+{
+  "adb_id": 81052,
+  "name": "Clos, Dominique",
+  "given_name": "Dominique Clos",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2386311.244258,
+    "year": 1821,
+    "month": 5,
+    "day": 25,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Sorèze",
+    "country": "France",
+    "lat": 43.453889,
+    "lon": 2.067222
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clos,_Dominique",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Medical : Physician",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 5.565399,
+    "lagna": 185.565399,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.363226,
+    "jd_ut": 2386311.244258,
+    "planets": {
+      "Sun": {
+        "longitude": 42.752679,
+        "sign_index": 1,
+        "degree_in_sign": 12.752679,
+        "is_retrograde": false,
+        "speed": 0.959445
+      },
+      "Moon": {
+        "longitude": 326.356873,
+        "sign_index": 10,
+        "degree_in_sign": 26.356873,
+        "is_retrograde": false,
+        "speed": 17.941467
+      },
+      "Mars": {
+        "longitude": 13.987822,
+        "sign_index": 0,
+        "degree_in_sign": 13.987822,
+        "is_retrograde": false,
+        "speed": 0.742412
+      },
+      "Mercury": {
+        "longitude": 36.826372,
+        "sign_index": 1,
+        "degree_in_sign": 6.826372,
+        "is_retrograde": false,
+        "speed": 2.141597
+      },
+      "Jupiter": {
+        "longitude": 358.611526,
+        "sign_index": 11,
+        "degree_in_sign": 28.611526,
+        "is_retrograde": false,
+        "speed": 0.205324
+      },
+      "Venus": {
+        "longitude": 43.449652,
+        "sign_index": 1,
+        "degree_in_sign": 13.449652,
+        "is_retrograde": false,
+        "speed": 1.229441
+      },
+      "Saturn": {
+        "longitude": 0.97738,
+        "sign_index": 0,
+        "degree_in_sign": 0.97738,
+        "is_retrograde": false,
+        "speed": 0.104811
+      },
+      "Rahu": {
+        "longitude": 318.060975,
+        "sign_index": 10,
+        "degree_in_sign": 18.060975,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 138.060975,
+        "sign_index": 4,
+        "degree_in_sign": 18.060975,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

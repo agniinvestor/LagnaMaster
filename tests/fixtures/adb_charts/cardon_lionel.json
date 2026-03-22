@@ -1,0 +1,108 @@
+{
+  "adb_id": 44388,
+  "name": "Cardon, Lionel",
+  "given_name": "Lionel Cardon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436209.552083,
+    "year": 1958,
+    "month": 1,
+    "day": 6,
+    "calendar": "g",
+    "time": "02:15",
+    "time_type": "s",
+    "hour": 2.25,
+    "time_unknown": false,
+    "place": "Honfleur",
+    "country": "France",
+    "lat": 49.416667,
+    "lon": 0.233333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardon,_Lionel",
+  "source_notes": "French astrologer Vianney Harpet, Astralis magazine #23 (1988), from civil records, translated by James Elliot.\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide serial"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 8.064799,
+    "lagna": 158.064799,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.270647,
+    "jd_ut": 2436209.552083,
+    "planets": {
+      "Sun": {
+        "longitude": 261.946016,
+        "sign_index": 8,
+        "degree_in_sign": 21.946016,
+        "is_retrograde": false,
+        "speed": 1.018799
+      },
+      "Moon": {
+        "longitude": 84.640592,
+        "sign_index": 2,
+        "degree_in_sign": 24.640592,
+        "is_retrograde": false,
+        "speed": 10.520467
+      },
+      "Mars": {
+        "longitude": 226.441658,
+        "sign_index": 7,
+        "degree_in_sign": 16.441658,
+        "is_retrograde": false,
+        "speed": 0.698109
+      },
+      "Mercury": {
+        "longitude": 241.997461,
+        "sign_index": 8,
+        "degree_in_sign": 1.997461,
+        "is_retrograde": false,
+        "speed": 0.100889
+      },
+      "Jupiter": {
+        "longitude": 185.927338,
+        "sign_index": 6,
+        "degree_in_sign": 5.927338,
+        "is_retrograde": false,
+        "speed": 0.115779
+      },
+      "Venus": {
+        "longitude": 292.939167,
+        "sign_index": 9,
+        "degree_in_sign": 22.939167,
+        "is_retrograde": false,
+        "speed": 0.083466
+      },
+      "Saturn": {
+        "longitude": 236.732109,
+        "sign_index": 7,
+        "degree_in_sign": 26.732109,
+        "is_retrograde": false,
+        "speed": 0.110741
+      },
+      "Rahu": {
+        "longitude": 193.843979,
+        "sign_index": 6,
+        "degree_in_sign": 13.843979,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 13.843979,
+        "sign_index": 0,
+        "degree_in_sign": 13.843979,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 19661,
+  "name": "Curie, Ève",
+  "given_name": "Ève Curie",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416820.868507,
+    "year": 1904,
+    "month": 12,
+    "day": 6,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curie,_Ève",
+  "source_notes": "Petitallot quotes B.C., Cadran No.19, 5/1995\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Education : Public speaker",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Writers : Columnist/ journalist",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.877589,
+    "lagna": 224.877589,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.529356,
+    "jd_ut": 2416820.868507,
+    "planets": {
+      "Sun": {
+        "longitude": 231.304598,
+        "sign_index": 7,
+        "degree_in_sign": 21.304598,
+        "is_retrograde": false,
+        "speed": 1.015942
+      },
+      "Moon": {
+        "longitude": 221.619363,
+        "sign_index": 7,
+        "degree_in_sign": 11.619363,
+        "is_retrograde": false,
+        "speed": 10.840378
+      },
+      "Mars": {
+        "longitude": 166.761126,
+        "sign_index": 5,
+        "degree_in_sign": 16.761126,
+        "is_retrograde": false,
+        "speed": 0.568071
+      },
+      "Mercury": {
+        "longitude": 249.955402,
+        "sign_index": 8,
+        "degree_in_sign": 9.955402,
+        "is_retrograde": false,
+        "speed": 1.380044
+      },
+      "Jupiter": {
+        "longitude": 357.869589,
+        "sign_index": 11,
+        "degree_in_sign": 27.869589,
+        "is_retrograde": true,
+        "speed": -0.033061
+      },
+      "Venus": {
+        "longitude": 268.992124,
+        "sign_index": 8,
+        "degree_in_sign": 28.992124,
+        "is_retrograde": false,
+        "speed": 1.212217
+      },
+      "Saturn": {
+        "longitude": 293.713074,
+        "sign_index": 9,
+        "degree_in_sign": 23.713074,
+        "is_retrograde": false,
+        "speed": 0.07544
+      },
+      "Rahu": {
+        "longitude": 141.290613,
+        "sign_index": 4,
+        "degree_in_sign": 21.290613,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 321.290613,
+        "sign_index": 10,
+        "degree_in_sign": 21.290613,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

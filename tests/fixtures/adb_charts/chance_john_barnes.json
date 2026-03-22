@@ -1,0 +1,109 @@
+{
+  "adb_id": 58167,
+  "name": "Chance, John Barnes",
+  "given_name": "John Barnes Chance",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427032.245139,
+    "year": 1932,
+    "month": 11,
+    "day": 20,
+    "calendar": "g",
+    "time": "11:53",
+    "time_type": "s",
+    "hour": 11.883333,
+    "time_unknown": false,
+    "place": "Beaumont",
+    "country": "Texas",
+    "lat": 30.083333,
+    "lon": -94.1
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chance,_John_Barnes",
+  "source_notes": "Sy Scholfield from BC in hand.\\n",
+  "categories": [
+    "Personal : Death : Accidental",
+    "Vocation : Entertain/Music : Composer/ Arranger"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 24.813766,
+    "lagna": 264.813766,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.919748,
+    "jd_ut": 2427032.245139,
+    "planets": {
+      "Sun": {
+        "longitude": 215.298798,
+        "sign_index": 7,
+        "degree_in_sign": 5.298798,
+        "is_retrograde": false,
+        "speed": 1.010078
+      },
+      "Moon": {
+        "longitude": 117.647319,
+        "sign_index": 3,
+        "degree_in_sign": 27.647319,
+        "is_retrograde": false,
+        "speed": 13.369087
+      },
+      "Mars": {
+        "longitude": 130.337184,
+        "sign_index": 4,
+        "degree_in_sign": 10.337184,
+        "is_retrograde": false,
+        "speed": 0.463085
+      },
+      "Mercury": {
+        "longitude": 236.539891,
+        "sign_index": 7,
+        "degree_in_sign": 26.539891,
+        "is_retrograde": false,
+        "speed": 0.538315
+      },
+      "Jupiter": {
+        "longitude": 146.872374,
+        "sign_index": 4,
+        "degree_in_sign": 26.872374,
+        "is_retrograde": false,
+        "speed": 0.134365
+      },
+      "Venus": {
+        "longitude": 179.437533,
+        "sign_index": 5,
+        "degree_in_sign": 29.437533,
+        "is_retrograde": false,
+        "speed": 1.217135
+      },
+      "Saturn": {
+        "longitude": 277.128398,
+        "sign_index": 9,
+        "degree_in_sign": 7.128398,
+        "is_retrograde": false,
+        "speed": 0.075383
+      },
+      "Rahu": {
+        "longitude": 320.168418,
+        "sign_index": 10,
+        "degree_in_sign": 20.168418,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 140.168418,
+        "sign_index": 4,
+        "degree_in_sign": 20.168418,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

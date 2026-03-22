@@ -1,0 +1,109 @@
+{
+  "adb_id": 102619,
+  "name": "Colomba, Franco",
+  "given_name": "Franco Colomba",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435144.694444,
+    "year": 1955,
+    "month": 2,
+    "day": 6,
+    "calendar": "g",
+    "time": "05:40",
+    "time_type": "s",
+    "hour": 5.666667,
+    "time_unknown": false,
+    "place": "Grosseto",
+    "country": "Italy",
+    "lat": 42.766667,
+    "lon": 11.133333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colomba,_Franco",
+  "source_notes": "quoted BC from Bordoni database\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 26.18728,
+    "lagna": 236.18728,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.229929,
+    "jd_ut": 2435144.694444,
+    "planets": {
+      "Sun": {
+        "longitude": 293.385157,
+        "sign_index": 9,
+        "degree_in_sign": 23.385157,
+        "is_retrograde": false,
+        "speed": 1.013058
+      },
+      "Moon": {
+        "longitude": 101.575741,
+        "sign_index": 3,
+        "degree_in_sign": 11.575741,
+        "is_retrograde": false,
+        "speed": 14.332312
+      },
+      "Mars": {
+        "longitude": 352.481296,
+        "sign_index": 11,
+        "degree_in_sign": 22.481296,
+        "is_retrograde": false,
+        "speed": 0.710271
+      },
+      "Mercury": {
+        "longitude": 305.921671,
+        "sign_index": 10,
+        "degree_in_sign": 5.921671,
+        "is_retrograde": true,
+        "speed": -0.426378
+      },
+      "Jupiter": {
+        "longitude": 88.961677,
+        "sign_index": 2,
+        "degree_in_sign": 28.961677,
+        "is_retrograde": true,
+        "speed": -0.111958
+      },
+      "Venus": {
+        "longitude": 246.917692,
+        "sign_index": 8,
+        "degree_in_sign": 6.917692,
+        "is_retrograde": false,
+        "speed": 1.075688
+      },
+      "Saturn": {
+        "longitude": 207.48644,
+        "sign_index": 6,
+        "degree_in_sign": 27.48644,
+        "is_retrograde": false,
+        "speed": 0.039069
+      },
+      "Rahu": {
+        "longitude": 250.272972,
+        "sign_index": 8,
+        "degree_in_sign": 10.272972,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 70.272972,
+        "sign_index": 2,
+        "degree_in_sign": 10.272972,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

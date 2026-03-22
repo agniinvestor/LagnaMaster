@@ -1,0 +1,114 @@
+{
+  "adb_id": 45565,
+  "name": "Corti, Maria",
+  "given_name": "Maria Corti",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420747.875,
+    "year": 1915,
+    "month": 9,
+    "day": 7,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Milan",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corti,_Maria",
+  "source_notes": "Bordoni quotes B.C. Datanotizie No.44 July/2002\\n",
+  "categories": [
+    "Traits : Mind : I.Q. high/ Mensa level",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Business owner",
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Magazine/ newsletter",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 14.442898,
+    "lagna": 164.442898,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.679484,
+    "jd_ut": 2420747.875,
+    "planets": {
+      "Sun": {
+        "longitude": 140.969931,
+        "sign_index": 4,
+        "degree_in_sign": 20.969931,
+        "is_retrograde": false,
+        "speed": 0.970967
+      },
+      "Moon": {
+        "longitude": 115.817325,
+        "sign_index": 3,
+        "degree_in_sign": 25.817325,
+        "is_retrograde": false,
+        "speed": 9.049988
+      },
+      "Mars": {
+        "longitude": 79.376487,
+        "sign_index": 2,
+        "degree_in_sign": 19.376487,
+        "is_retrograde": false,
+        "speed": 0.619137
+      },
+      "Mercury": {
+        "longitude": 160.403341,
+        "sign_index": 5,
+        "degree_in_sign": 10.403341,
+        "is_retrograde": false,
+        "speed": 1.524371
+      },
+      "Jupiter": {
+        "longitude": 332.154045,
+        "sign_index": 11,
+        "degree_in_sign": 2.154045,
+        "is_retrograde": true,
+        "speed": -0.12844
+      },
+      "Venus": {
+        "longitude": 139.511294,
+        "sign_index": 4,
+        "degree_in_sign": 19.511294,
+        "is_retrograde": false,
+        "speed": 1.242283
+      },
+      "Saturn": {
+        "longitude": 81.405899,
+        "sign_index": 2,
+        "degree_in_sign": 21.405899,
+        "is_retrograde": false,
+        "speed": 0.086342
+      },
+      "Rahu": {
+        "longitude": 293.190293,
+        "sign_index": 9,
+        "degree_in_sign": 23.190293,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 113.190293,
+        "sign_index": 3,
+        "degree_in_sign": 23.190293,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

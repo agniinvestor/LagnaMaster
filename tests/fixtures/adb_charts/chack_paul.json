@@ -1,0 +1,110 @@
+{
+  "adb_id": 70519,
+  "name": "Chack, Paul",
+  "given_name": "Paul Chack",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406297.389352,
+    "year": 1876,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "l",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chack,_Paul",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 61.\\n",
+  "categories": [
+    "Personal : Death : Unusual",
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 26.4978,
+    "lagna": 146.4978,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.127082,
+    "jd_ut": 2406297.389352,
+    "planets": {
+      "Sun": {
+        "longitude": 301.43699,
+        "sign_index": 10,
+        "degree_in_sign": 1.43699,
+        "is_retrograde": false,
+        "speed": 1.010156
+      },
+      "Moon": {
+        "longitude": 162.749059,
+        "sign_index": 5,
+        "degree_in_sign": 12.749059,
+        "is_retrograde": false,
+        "speed": 12.631802
+      },
+      "Mars": {
+        "longitude": 357.273768,
+        "sign_index": 11,
+        "degree_in_sign": 27.273768,
+        "is_retrograde": false,
+        "speed": 0.709334
+      },
+      "Mercury": {
+        "longitude": 302.126696,
+        "sign_index": 10,
+        "degree_in_sign": 2.126696,
+        "is_retrograde": true,
+        "speed": -1.145053
+      },
+      "Jupiter": {
+        "longitude": 218.128106,
+        "sign_index": 7,
+        "degree_in_sign": 8.128106,
+        "is_retrograde": false,
+        "speed": 0.099344
+      },
+      "Venus": {
+        "longitude": 335.256937,
+        "sign_index": 11,
+        "degree_in_sign": 5.256937,
+        "is_retrograde": false,
+        "speed": 1.217386
+      },
+      "Saturn": {
+        "longitude": 305.848448,
+        "sign_index": 10,
+        "degree_in_sign": 5.848448,
+        "is_retrograde": false,
+        "speed": 0.120917
+      },
+      "Rahu": {
+        "longitude": 338.952051,
+        "sign_index": 11,
+        "degree_in_sign": 8.952051,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 158.952051,
+        "sign_index": 5,
+        "degree_in_sign": 8.952051,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

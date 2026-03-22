@@ -1,0 +1,109 @@
+{
+  "adb_id": 68609,
+  "name": "Cotard, Jules",
+  "given_name": "Jules Cotard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393257.744444,
+    "year": 1840,
+    "month": 6,
+    "day": 1,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Issoudun",
+    "country": "France",
+    "lat": 46.95,
+    "lon": 2.0
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cotard,_Jules",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'psychologues' pdf file, p. 22.\\n",
+  "categories": [
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 23.378875,
+    "lagna": 53.378875,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.628695,
+    "jd_ut": 2393257.744444,
+    "planets": {
+      "Sun": {
+        "longitude": 49.109227,
+        "sign_index": 1,
+        "degree_in_sign": 19.109227,
+        "is_retrograde": false,
+        "speed": 0.957783
+      },
+      "Moon": {
+        "longitude": 63.273179,
+        "sign_index": 2,
+        "degree_in_sign": 3.273179,
+        "is_retrograde": false,
+        "speed": 16.448395
+      },
+      "Mars": {
+        "longitude": 42.313025,
+        "sign_index": 1,
+        "degree_in_sign": 12.313025,
+        "is_retrograde": false,
+        "speed": 0.704502
+      },
+      "Mercury": {
+        "longitude": 37.675253,
+        "sign_index": 1,
+        "degree_in_sign": 7.675253,
+        "is_retrograde": false,
+        "speed": 2.02388
+      },
+      "Jupiter": {
+        "longitude": 199.033006,
+        "sign_index": 6,
+        "degree_in_sign": 19.033006,
+        "is_retrograde": true,
+        "speed": -0.096054
+      },
+      "Venus": {
+        "longitude": 34.421572,
+        "sign_index": 1,
+        "degree_in_sign": 4.421572,
+        "is_retrograde": false,
+        "speed": 1.222234
+      },
+      "Saturn": {
+        "longitude": 237.413275,
+        "sign_index": 7,
+        "degree_in_sign": 27.413275,
+        "is_retrograde": true,
+        "speed": -0.072659
+      },
+      "Rahu": {
+        "longitude": 309.950834,
+        "sign_index": 10,
+        "degree_in_sign": 9.950834,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 129.950834,
+        "sign_index": 4,
+        "degree_in_sign": 9.950834,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

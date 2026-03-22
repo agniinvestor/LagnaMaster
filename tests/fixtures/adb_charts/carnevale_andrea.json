@@ -1,0 +1,111 @@
+{
+  "adb_id": 13625,
+  "name": "Carnevale, Andrea",
+  "given_name": "Andrea Carnevale",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437312.447917,
+    "year": 1961,
+    "month": 1,
+    "day": 12,
+    "calendar": "g",
+    "time": "23:45",
+    "time_type": "s",
+    "hour": 23.75,
+    "time_unknown": false,
+    "place": "Monte San Biagio",
+    "country": "Italy",
+    "lat": 41.35,
+    "lon": 13.35
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carnevale,_Andrea",
+  "source_notes": "Bordoni quotes B.C. Vol 4.\\n",
+  "categories": [
+    "Family : Childhood : Family large",
+    "Family : Childhood : Family traumatic event",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 26.60193,
+    "lagna": 146.60193,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.312819,
+    "jd_ut": 2437312.447917,
+    "planets": {
+      "Sun": {
+        "longitude": 269.206447,
+        "sign_index": 8,
+        "degree_in_sign": 29.206447,
+        "is_retrograde": false,
+        "speed": 1.019074
+      },
+      "Moon": {
+        "longitude": 215.028813,
+        "sign_index": 7,
+        "degree_in_sign": 5.028813,
+        "is_retrograde": false,
+        "speed": 17.143816
+      },
+      "Mars": {
+        "longitude": 70.51343,
+        "sign_index": 2,
+        "degree_in_sign": 10.51343,
+        "is_retrograde": true,
+        "speed": -0.310989
+      },
+      "Mercury": {
+        "longitude": 273.59567,
+        "sign_index": 9,
+        "degree_in_sign": 3.59567,
+        "is_retrograde": false,
+        "speed": 1.672232
+      },
+      "Jupiter": {
+        "longitude": 263.559843,
+        "sign_index": 8,
+        "degree_in_sign": 23.559843,
+        "is_retrograde": false,
+        "speed": 0.232495
+      },
+      "Venus": {
+        "longitude": 315.406785,
+        "sign_index": 10,
+        "degree_in_sign": 15.406785,
+        "is_retrograde": false,
+        "speed": 1.102963
+      },
+      "Saturn": {
+        "longitude": 267.683145,
+        "sign_index": 8,
+        "degree_in_sign": 27.683145,
+        "is_retrograde": false,
+        "speed": 0.118492
+      },
+      "Rahu": {
+        "longitude": 135.399267,
+        "sign_index": 4,
+        "degree_in_sign": 15.399267,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 315.399267,
+        "sign_index": 10,
+        "degree_in_sign": 15.399267,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

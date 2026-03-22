@@ -1,0 +1,113 @@
+{
+  "adb_id": 87844,
+  "name": "Cascone, Kim",
+  "given_name": "Kim Cascone",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2435462.744444,
+    "year": 1955,
+    "month": 12,
+    "day": 21,
+    "calendar": "g",
+    "time": "00:52",
+    "time_type": "s",
+    "hour": 0.866667,
+    "time_unknown": false,
+    "place": "Albion (Calhoun County)",
+    "country": "Michigan",
+    "lat": 42.25,
+    "lon": -84.75
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cascone,_Kim",
+  "source_notes": "Sy Scholfield provided birth notice, Battle Creek Enquirer (Michigan), 21 Dec 1955, p. 9.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Music teacher",
+    "Vocation : Entertain/Music : Other Entertain/Music",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.295577,
+    "lagna": 135.295577,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.242091,
+    "jd_ut": 2435462.744444,
+    "planets": {
+      "Sun": {
+        "longitude": 245.339524,
+        "sign_index": 8,
+        "degree_in_sign": 5.339524,
+        "is_retrograde": false,
+        "speed": 1.018413
+      },
+      "Moon": {
+        "longitude": 320.85524,
+        "sign_index": 10,
+        "degree_in_sign": 20.85524,
+        "is_retrograde": false,
+        "speed": 13.881707
+      },
+      "Mars": {
+        "longitude": 201.166892,
+        "sign_index": 6,
+        "degree_in_sign": 21.166892,
+        "is_retrograde": false,
+        "speed": 0.651467
+      },
+      "Mercury": {
+        "longitude": 254.66027,
+        "sign_index": 8,
+        "degree_in_sign": 14.66027,
+        "is_retrograde": false,
+        "speed": 1.588075
+      },
+      "Jupiter": {
+        "longitude": 128.244696,
+        "sign_index": 4,
+        "degree_in_sign": 8.244696,
+        "is_retrograde": true,
+        "speed": -0.010038
+      },
+      "Venus": {
+        "longitude": 272.979651,
+        "sign_index": 9,
+        "degree_in_sign": 2.979651,
+        "is_retrograde": false,
+        "speed": 1.241073
+      },
+      "Saturn": {
+        "longitude": 214.520856,
+        "sign_index": 7,
+        "degree_in_sign": 4.520856,
+        "is_retrograde": false,
+        "speed": 0.108045
+      },
+      "Rahu": {
+        "longitude": 233.41885,
+        "sign_index": 7,
+        "degree_in_sign": 23.41885,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 53.41885,
+        "sign_index": 1,
+        "degree_in_sign": 23.41885,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

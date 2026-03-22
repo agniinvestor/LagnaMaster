@@ -1,0 +1,109 @@
+{
+  "adb_id": 64969,
+  "name": "Chalumeau, Jean-Luc",
+  "given_name": "Jean-Luc Chalumeau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429360.958333,
+    "year": 1939,
+    "month": 4,
+    "day": 7,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Neuilly sur Seine",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chalumeau,_Jean-Luc",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 107.\\n",
+  "categories": [
+    "Vocation : Art : Art critic",
+    "Vocation : Humanities+Social Sciences : Historian"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 10.064576,
+    "lagna": 70.064576,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.008783,
+    "jd_ut": 2429360.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 353.724886,
+        "sign_index": 11,
+        "degree_in_sign": 23.724886,
+        "is_retrograde": false,
+        "speed": 0.983023
+      },
+      "Moon": {
+        "longitude": 215.100514,
+        "sign_index": 7,
+        "degree_in_sign": 5.100514,
+        "is_retrograde": false,
+        "speed": 14.971026
+      },
+      "Mars": {
+        "longitude": 256.303639,
+        "sign_index": 8,
+        "degree_in_sign": 16.303639,
+        "is_retrograde": false,
+        "speed": 0.525048
+      },
+      "Mercury": {
+        "longitude": 346.399493,
+        "sign_index": 11,
+        "degree_in_sign": 16.399493,
+        "is_retrograde": true,
+        "speed": -0.736271
+      },
+      "Jupiter": {
+        "longitude": 329.635259,
+        "sign_index": 10,
+        "degree_in_sign": 29.635259,
+        "is_retrograde": false,
+        "speed": 0.231056
+      },
+      "Venus": {
+        "longitude": 315.379838,
+        "sign_index": 10,
+        "degree_in_sign": 15.379838,
+        "is_retrograde": false,
+        "speed": 1.184789
+      },
+      "Saturn": {
+        "longitude": 357.451245,
+        "sign_index": 11,
+        "degree_in_sign": 27.451245,
+        "is_retrograde": false,
+        "speed": 0.12626
+      },
+      "Rahu": {
+        "longitude": 196.765079,
+        "sign_index": 6,
+        "degree_in_sign": 16.765079,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 16.765079,
+        "sign_index": 0,
+        "degree_in_sign": 16.765079,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

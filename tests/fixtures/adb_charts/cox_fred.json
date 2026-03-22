@@ -1,0 +1,116 @@
+{
+  "adb_id": 89531,
+  "name": "Cox, Fred",
+  "given_name": "Fred Cox",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429244.6875,
+    "year": 1938,
+    "month": 12,
+    "day": 11,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "s",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Monongahela",
+    "country": "Pennsylvania",
+    "lat": 40.2,
+    "lon": -79.933333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cox,_Fred",
+  "source_notes": "Sy Scholfield provided birth notice, ''The Daily Republican'' (Monongahela, Pennsylvania), 12 Dec 1938, page 7, born at home in Park Way.\\n",
+  "categories": [
+    "Traits : Body : Constitution hardy",
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Healing Fields : Alternative methods",
+    "Vocation : Sports : Football",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 26.301261,
+    "lagna": 116.301261,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.004338,
+    "jd_ut": 2429244.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 236.485026,
+        "sign_index": 7,
+        "degree_in_sign": 26.485026,
+        "is_retrograde": false,
+        "speed": 1.016556
+      },
+      "Moon": {
+        "longitude": 123.051683,
+        "sign_index": 4,
+        "degree_in_sign": 3.051683,
+        "is_retrograde": false,
+        "speed": 13.341701
+      },
+      "Mars": {
+        "longitude": 187.12469,
+        "sign_index": 6,
+        "degree_in_sign": 7.12469,
+        "is_retrograde": false,
+        "speed": 0.625879
+      },
+      "Mercury": {
+        "longitude": 241.724248,
+        "sign_index": 8,
+        "degree_in_sign": 1.724248,
+        "is_retrograde": true,
+        "speed": -1.269572
+      },
+      "Jupiter": {
+        "longitude": 303.926109,
+        "sign_index": 10,
+        "degree_in_sign": 3.926109,
+        "is_retrograde": false,
+        "speed": 0.156668
+      },
+      "Venus": {
+        "longitude": 206.59776,
+        "sign_index": 6,
+        "degree_in_sign": 26.59776,
+        "is_retrograde": false,
+        "speed": 0.055181
+      },
+      "Saturn": {
+        "longitude": 348.227592,
+        "sign_index": 11,
+        "degree_in_sign": 18.227592,
+        "is_retrograde": true,
+        "speed": -0.00497
+      },
+      "Rahu": {
+        "longitude": 202.926512,
+        "sign_index": 6,
+        "degree_in_sign": 22.926512,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 22.926512,
+        "sign_index": 0,
+        "degree_in_sign": 22.926512,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

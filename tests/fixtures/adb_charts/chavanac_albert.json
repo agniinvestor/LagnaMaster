@@ -1,0 +1,109 @@
+{
+  "adb_id": 65381,
+  "name": "Chavanac, Albert",
+  "given_name": "Albert Chavanac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418599.410174,
+    "year": 1909,
+    "month": 10,
+    "day": 19,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Saumur",
+    "country": "France",
+    "lat": 47.266667,
+    "lon": -0.083333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chavanac,_Albert",
+  "source_notes": "Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 69.\\n",
+  "categories": [
+    "Vocation : Military : Honors",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 4.448854,
+    "lagna": 64.448854,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.597348,
+    "jd_ut": 2418599.410174,
+    "planets": {
+      "Sun": {
+        "longitude": 183.278783,
+        "sign_index": 6,
+        "degree_in_sign": 3.278783,
+        "is_retrograde": false,
+        "speed": 0.994513
+      },
+      "Moon": {
+        "longitude": 244.294422,
+        "sign_index": 8,
+        "degree_in_sign": 4.294422,
+        "is_retrograde": false,
+        "speed": 12.324769
+      },
+      "Mars": {
+        "longitude": 332.985603,
+        "sign_index": 11,
+        "degree_in_sign": 2.985603,
+        "is_retrograde": true,
+        "speed": -0.059449
+      },
+      "Mercury": {
+        "longitude": 169.77935,
+        "sign_index": 5,
+        "degree_in_sign": 19.77935,
+        "is_retrograde": true,
+        "speed": -0.317203
+      },
+      "Jupiter": {
+        "longitude": 159.063565,
+        "sign_index": 5,
+        "degree_in_sign": 9.063565,
+        "is_retrograde": false,
+        "speed": 0.206413
+      },
+      "Venus": {
+        "longitude": 226.16175,
+        "sign_index": 7,
+        "degree_in_sign": 16.16175,
+        "is_retrograde": false,
+        "speed": 1.159559
+      },
+      "Saturn": {
+        "longitude": 356.681271,
+        "sign_index": 11,
+        "degree_in_sign": 26.681271,
+        "is_retrograde": true,
+        "speed": -0.078709
+      },
+      "Rahu": {
+        "longitude": 47.04195,
+        "sign_index": 1,
+        "degree_in_sign": 17.04195,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 227.04195,
+        "sign_index": 7,
+        "degree_in_sign": 17.04195,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

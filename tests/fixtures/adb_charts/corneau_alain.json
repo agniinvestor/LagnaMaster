@@ -1,0 +1,112 @@
+{
+  "adb_id": 54913,
+  "name": "Corneau, Alain",
+  "given_name": "Alain Corneau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430943.510417,
+    "year": 1943,
+    "month": 8,
+    "day": 7,
+    "calendar": "g",
+    "time": "02:15",
+    "time_type": "d",
+    "hour": 2.25,
+    "time_unknown": false,
+    "place": "Orléans",
+    "country": "France",
+    "lat": 47.916667,
+    "lon": 1.9
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corneau,_Alain",
+  "source_notes": "Didier Geslain archive, 'Cinema Realisateurs' pdf file, p. 66.\\nSame from Paddy de Jabrun who quotes from birth certificate\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Parenting : Foster, Step, or Adopted Kids",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 3.163729,
+    "lagna": 33.163729,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.069292,
+    "jd_ut": 2430943.510417,
+    "planets": {
+      "Sun": {
+        "longitude": 110.573622,
+        "sign_index": 3,
+        "degree_in_sign": 20.573622,
+        "is_retrograde": false,
+        "speed": 0.958311
+      },
+      "Moon": {
+        "longitude": 174.882238,
+        "sign_index": 5,
+        "degree_in_sign": 24.882238,
+        "is_retrograde": false,
+        "speed": 14.276545
+      },
+      "Mars": {
+        "longitude": 26.822216,
+        "sign_index": 0,
+        "degree_in_sign": 26.822216,
+        "is_retrograde": false,
+        "speed": 0.623444
+      },
+      "Mercury": {
+        "longitude": 129.555092,
+        "sign_index": 4,
+        "degree_in_sign": 9.555092,
+        "is_retrograde": false,
+        "speed": 1.647806
+      },
+      "Jupiter": {
+        "longitude": 105.070878,
+        "sign_index": 3,
+        "degree_in_sign": 15.070878,
+        "is_retrograde": false,
+        "speed": 0.220723
+      },
+      "Venus": {
+        "longitude": 146.109259,
+        "sign_index": 4,
+        "degree_in_sign": 26.109259,
+        "is_retrograde": false,
+        "speed": 0.305759
+      },
+      "Saturn": {
+        "longitude": 60.144758,
+        "sign_index": 2,
+        "degree_in_sign": 0.144758,
+        "is_retrograde": false,
+        "speed": 0.098256
+      },
+      "Rahu": {
+        "longitude": 112.902371,
+        "sign_index": 3,
+        "degree_in_sign": 22.902371,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 292.902371,
+        "sign_index": 9,
+        "degree_in_sign": 22.902371,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 98878,
+  "name": "Castanho, Thiago",
+  "given_name": "Thiago Castanho",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442452.159722,
+    "year": 1975,
+    "month": 2,
+    "day": 8,
+    "calendar": "g",
+    "time": "12:50",
+    "time_type": "s",
+    "hour": 12.833333,
+    "time_unknown": false,
+    "place": "Santos (São Paulo)",
+    "country": "Brazil",
+    "lat": -23.960833,
+    "lon": -46.333611
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "cap",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castanho,_Thiago",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Other Entertain/Music"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 6.091052,
+    "lagna": 6.091052,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.509358,
+    "jd_ut": 2442452.159722,
+    "planets": {
+      "Sun": {
+        "longitude": 295.744996,
+        "sign_index": 9,
+        "degree_in_sign": 25.744996,
+        "is_retrograde": false,
+        "speed": 1.01297
+      },
+      "Moon": {
+        "longitude": 267.293408,
+        "sign_index": 8,
+        "degree_in_sign": 27.293408,
+        "is_retrograde": false,
+        "speed": 8.165359
+      },
+      "Mars": {
+        "longitude": 259.63519,
+        "sign_index": 8,
+        "degree_in_sign": 19.63519,
+        "is_retrograde": false,
+        "speed": 0.740944
+      },
+      "Mercury": {
+        "longitude": 295.090805,
+        "sign_index": 9,
+        "degree_in_sign": 25.090805,
+        "is_retrograde": true,
+        "speed": -1.196262
+      },
+      "Jupiter": {
+        "longitude": 327.511701,
+        "sign_index": 10,
+        "degree_in_sign": 27.511701,
+        "is_retrograde": false,
+        "speed": 0.224102
+      },
+      "Venus": {
+        "longitude": 318.20178,
+        "sign_index": 10,
+        "degree_in_sign": 18.20178,
+        "is_retrograde": false,
+        "speed": 1.243529
+      },
+      "Saturn": {
+        "longitude": 79.447982,
+        "sign_index": 2,
+        "degree_in_sign": 19.447982,
+        "is_retrograde": true,
+        "speed": -0.057903
+      },
+      "Rahu": {
+        "longitude": 223.035437,
+        "sign_index": 7,
+        "degree_in_sign": 13.035437,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 43.035437,
+        "sign_index": 1,
+        "degree_in_sign": 13.035437,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

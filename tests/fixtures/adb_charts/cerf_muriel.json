@@ -1,0 +1,108 @@
+{
+  "adb_id": 67155,
+  "name": "Cerf, Muriel",
+  "given_name": "Muriel Cerf",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433436.729167,
+    "year": 1950,
+    "month": 6,
+    "day": 4,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 9",
+    "country": "France",
+    "lat": 48.8725,
+    "lon": 2.340278
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cerf,_Muriel",
+  "source_notes": "Petitallot quoted bc.\\n",
+  "categories": [
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 19.641854,
+    "lagna": 49.641854,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.164622,
+    "jd_ut": 2433436.729167,
+    "planets": {
+      "Sun": {
+        "longitude": 49.867985,
+        "sign_index": 1,
+        "degree_in_sign": 19.867985,
+        "is_retrograde": false,
+        "speed": 0.95713
+      },
+      "Moon": {
+        "longitude": 279.899028,
+        "sign_index": 9,
+        "degree_in_sign": 9.899028,
+        "is_retrograde": false,
+        "speed": 10.695399
+      },
+      "Mars": {
+        "longitude": 154.244411,
+        "sign_index": 5,
+        "degree_in_sign": 4.244411,
+        "is_retrograde": false,
+        "speed": 0.313522
+      },
+      "Mercury": {
+        "longitude": 27.548914,
+        "sign_index": 0,
+        "degree_in_sign": 27.548914,
+        "is_retrograde": false,
+        "speed": 0.563917
+      },
+      "Jupiter": {
+        "longitude": 313.466485,
+        "sign_index": 10,
+        "degree_in_sign": 13.466485,
+        "is_retrograde": false,
+        "speed": 0.070919
+      },
+      "Venus": {
+        "longitude": 9.853183,
+        "sign_index": 0,
+        "degree_in_sign": 9.853183,
+        "is_retrograde": false,
+        "speed": 1.147987
+      },
+      "Saturn": {
+        "longitude": 139.755767,
+        "sign_index": 4,
+        "degree_in_sign": 19.755767,
+        "is_retrograde": false,
+        "speed": 0.033813
+      },
+      "Rahu": {
+        "longitude": 340.781566,
+        "sign_index": 11,
+        "degree_in_sign": 10.781566,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 160.781566,
+        "sign_index": 5,
+        "degree_in_sign": 10.781566,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

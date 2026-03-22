@@ -1,0 +1,109 @@
+{
+  "adb_id": 60492,
+  "name": "Cointreau, Robert",
+  "given_name": "Robert Cointreau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422814.104167,
+    "year": 1921,
+    "month": 5,
+    "day": 4,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "d",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Feneu",
+    "country": "France",
+    "lat": 47.583333,
+    "lon": -0.583333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cointreau,_Robert",
+  "source_notes": "Taeger quotes Lescaut\\n",
+  "categories": [
+    "Vocation : Business/Marketing : Product Marketing",
+    "Vocation : Food and Beverage : Alcohol business"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.241066,
+    "lagna": 126.241066,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.758478,
+    "jd_ut": 2422814.104167,
+    "planets": {
+      "Sun": {
+        "longitude": 20.804166,
+        "sign_index": 0,
+        "degree_in_sign": 20.804166,
+        "is_retrograde": false,
+        "speed": 0.968854
+      },
+      "Moon": {
+        "longitude": 339.717256,
+        "sign_index": 11,
+        "degree_in_sign": 9.717256,
+        "is_retrograde": false,
+        "speed": 11.869765
+      },
+      "Mars": {
+        "longitude": 36.209101,
+        "sign_index": 1,
+        "degree_in_sign": 6.209101,
+        "is_retrograde": false,
+        "speed": 0.702262
+      },
+      "Mercury": {
+        "longitude": 13.961055,
+        "sign_index": 0,
+        "degree_in_sign": 13.961055,
+        "is_retrograde": false,
+        "speed": 2.07258
+      },
+      "Jupiter": {
+        "longitude": 136.172201,
+        "sign_index": 4,
+        "degree_in_sign": 16.172201,
+        "is_retrograde": true,
+        "speed": -0.00454
+      },
+      "Venus": {
+        "longitude": 2.870051,
+        "sign_index": 0,
+        "degree_in_sign": 2.870051,
+        "is_retrograde": true,
+        "speed": -0.372162
+      },
+      "Saturn": {
+        "longitude": 145.437628,
+        "sign_index": 4,
+        "degree_in_sign": 25.437628,
+        "is_retrograde": true,
+        "speed": -0.027758
+      },
+      "Rahu": {
+        "longitude": 183.696489,
+        "sign_index": 6,
+        "degree_in_sign": 3.696489,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 3.696489,
+        "sign_index": 0,
+        "degree_in_sign": 3.696489,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

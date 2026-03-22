@@ -1,0 +1,111 @@
+{
+  "adb_id": 100189,
+  "name": "Cordtz, Dan",
+  "given_name": "Dan Cordtz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425002.666667,
+    "year": 1927,
+    "month": 5,
+    "day": 1,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "d",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Gary",
+    "country": "Indiana",
+    "lat": 41.6,
+    "lon": -87.35
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cordtz,_Dan",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 4.649631,
+    "lagna": 214.649631,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.842151,
+    "jd_ut": 2425002.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 17.926389,
+        "sign_index": 0,
+        "degree_in_sign": 17.926389,
+        "is_retrograde": false,
+        "speed": 0.970512
+      },
+      "Moon": {
+        "longitude": 26.190622,
+        "sign_index": 0,
+        "degree_in_sign": 26.190622,
+        "is_retrograde": false,
+        "speed": 18.233492
+      },
+      "Mars": {
+        "longitude": 76.0243,
+        "sign_index": 2,
+        "degree_in_sign": 16.0243,
+        "is_retrograde": false,
+        "speed": 0.590961
+      },
+      "Mercury": {
+        "longitude": 359.375589,
+        "sign_index": 11,
+        "degree_in_sign": 29.375589,
+        "is_retrograde": false,
+        "speed": 1.740731
+      },
+      "Jupiter": {
+        "longitude": 331.097728,
+        "sign_index": 11,
+        "degree_in_sign": 1.097728,
+        "is_retrograde": false,
+        "speed": 0.200874
+      },
+      "Venus": {
+        "longitude": 55.319142,
+        "sign_index": 1,
+        "degree_in_sign": 25.319142,
+        "is_retrograde": false,
+        "speed": 1.171136
+      },
+      "Saturn": {
+        "longitude": 223.267438,
+        "sign_index": 7,
+        "degree_in_sign": 13.267438,
+        "is_retrograde": true,
+        "speed": -0.063347
+      },
+      "Rahu": {
+        "longitude": 67.72,
+        "sign_index": 2,
+        "degree_in_sign": 7.72,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 247.72,
+        "sign_index": 8,
+        "degree_in_sign": 7.72,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

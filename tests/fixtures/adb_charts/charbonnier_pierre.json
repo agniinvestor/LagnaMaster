@@ -1,0 +1,109 @@
+{
+  "adb_id": 48202,
+  "name": "Charbonnier, Pierre",
+  "given_name": "Pierre Charbonnier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414160.535174,
+    "year": 1897,
+    "month": 8,
+    "day": 24,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Vienne",
+    "country": "France",
+    "lat": 45.516667,
+    "lon": 4.866667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charbonnier,_Pierre",
+  "source_notes": "B.C. in hand from Steinbrecher.  Gauquelin NS 3/0309 has PM in error. (1:00 AM Paris time)\\n",
+  "categories": [
+    "Vocation : Art : Stage/ Set design",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 29.241384,
+    "lagna": 59.241384,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.427656,
+    "jd_ut": 2414160.535174,
+    "planets": {
+      "Sun": {
+        "longitude": 128.651216,
+        "sign_index": 4,
+        "degree_in_sign": 8.651216,
+        "is_retrograde": false,
+        "speed": 0.965196
+      },
+      "Moon": {
+        "longitude": 80.009607,
+        "sign_index": 2,
+        "degree_in_sign": 20.009607,
+        "is_retrograde": false,
+        "speed": 13.824954
+      },
+      "Mars": {
+        "longitude": 156.502193,
+        "sign_index": 5,
+        "degree_in_sign": 6.502193,
+        "is_retrograde": false,
+        "speed": 0.640561
+      },
+      "Mercury": {
+        "longitude": 155.706643,
+        "sign_index": 5,
+        "degree_in_sign": 5.706643,
+        "is_retrograde": false,
+        "speed": 1.076839
+      },
+      "Jupiter": {
+        "longitude": 143.916362,
+        "sign_index": 4,
+        "degree_in_sign": 23.916362,
+        "is_retrograde": false,
+        "speed": 0.21208
+      },
+      "Venus": {
+        "longitude": 88.069828,
+        "sign_index": 2,
+        "degree_in_sign": 28.069828,
+        "is_retrograde": false,
+        "speed": 1.141888
+      },
+      "Saturn": {
+        "longitude": 212.258896,
+        "sign_index": 7,
+        "degree_in_sign": 2.258896,
+        "is_retrograde": false,
+        "speed": 0.042274
+      },
+      "Rahu": {
+        "longitude": 282.267285,
+        "sign_index": 9,
+        "degree_in_sign": 12.267285,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 102.267285,
+        "sign_index": 3,
+        "degree_in_sign": 12.267285,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 81039,
+  "name": "Chauveau, Auguste",
+  "given_name": "Auguste Chauveau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388681.991481,
+    "year": 1827,
+    "month": 11,
+    "day": 21,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Villeneuve la Guyard",
+    "country": "France",
+    "lat": 48.333333,
+    "lon": 3.066667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chauveau,_Auguste",
+  "source_notes": "Sy Scholfield submitted birth certificate (acte n°41) from the online Yonne archives. No data in margin. Grazia Bordoni's Science file quotes Gauquelin for same data. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Researcher",
+    "Vocation : Medical : Veterinarian",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 21.437811,
+    "lagna": 261.437811,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.453825,
+    "jd_ut": 2388681.991481,
+    "planets": {
+      "Sun": {
+        "longitude": 216.985592,
+        "sign_index": 7,
+        "degree_in_sign": 6.985592,
+        "is_retrograde": false,
+        "speed": 1.01131
+      },
+      "Moon": {
+        "longitude": 250.150775,
+        "sign_index": 8,
+        "degree_in_sign": 10.150775,
+        "is_retrograde": false,
+        "speed": 11.350978
+      },
+      "Mars": {
+        "longitude": 171.479035,
+        "sign_index": 5,
+        "degree_in_sign": 21.479035,
+        "is_retrograde": false,
+        "speed": 0.619987
+      },
+      "Mercury": {
+        "longitude": 234.400757,
+        "sign_index": 7,
+        "degree_in_sign": 24.400757,
+        "is_retrograde": true,
+        "speed": -0.169341
+      },
+      "Jupiter": {
+        "longitude": 190.507928,
+        "sign_index": 6,
+        "degree_in_sign": 10.507928,
+        "is_retrograde": false,
+        "speed": 0.206088
+      },
+      "Venus": {
+        "longitude": 228.353353,
+        "sign_index": 7,
+        "degree_in_sign": 18.353353,
+        "is_retrograde": false,
+        "speed": 1.25372
+      },
+      "Saturn": {
+        "longitude": 88.481537,
+        "sign_index": 2,
+        "degree_in_sign": 28.481537,
+        "is_retrograde": true,
+        "speed": -0.035179
+      },
+      "Rahu": {
+        "longitude": 192.429914,
+        "sign_index": 6,
+        "degree_in_sign": 12.429914,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 12.429914,
+        "sign_index": 0,
+        "degree_in_sign": 12.429914,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

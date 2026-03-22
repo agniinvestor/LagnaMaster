@@ -1,0 +1,109 @@
+{
+  "adb_id": 68254,
+  "name": "Camacho Ruiz, Francisco",
+  "given_name": "Francisco Camacho Ruiz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410417.59963,
+    "year": 1887,
+    "month": 5,
+    "day": 26,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Don Benito",
+    "country": "Spain",
+    "lat": 38.95,
+    "lon": -5.866667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camacho_Ruiz,_Francisco",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Production jobs"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 21.042162,
+    "lagna": 321.042162,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.284576,
+    "jd_ut": 2410417.59963,
+    "planets": {
+      "Sun": {
+        "longitude": 42.215194,
+        "sign_index": 1,
+        "degree_in_sign": 12.215194,
+        "is_retrograde": false,
+        "speed": 0.959955
+      },
+      "Moon": {
+        "longitude": 79.847478,
+        "sign_index": 2,
+        "degree_in_sign": 19.847478,
+        "is_retrograde": false,
+        "speed": 17.764673
+      },
+      "Mars": {
+        "longitude": 34.812896,
+        "sign_index": 1,
+        "degree_in_sign": 4.812896,
+        "is_retrograde": false,
+        "speed": 0.714841
+      },
+      "Mercury": {
+        "longitude": 40.377382,
+        "sign_index": 1,
+        "degree_in_sign": 10.377382,
+        "is_retrograde": false,
+        "speed": 2.189455
+      },
+      "Jupiter": {
+        "longitude": 184.859812,
+        "sign_index": 6,
+        "degree_in_sign": 4.859812,
+        "is_retrograde": true,
+        "speed": -0.080435
+      },
+      "Venus": {
+        "longitude": 82.175369,
+        "sign_index": 2,
+        "degree_in_sign": 22.175369,
+        "is_retrograde": false,
+        "speed": 1.144887
+      },
+      "Saturn": {
+        "longitude": 87.291418,
+        "sign_index": 2,
+        "degree_in_sign": 27.291418,
+        "is_retrograde": false,
+        "speed": 0.10409
+      },
+      "Rahu": {
+        "longitude": 120.613354,
+        "sign_index": 4,
+        "degree_in_sign": 0.613354,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 300.613354,
+        "sign_index": 10,
+        "degree_in_sign": 0.613354,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

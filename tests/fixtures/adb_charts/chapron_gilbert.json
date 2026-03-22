@@ -1,0 +1,110 @@
+{
+  "adb_id": 93374,
+  "name": "Chapron, Gilbert",
+  "given_name": "Gilbert Chapron",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427353.222222,
+    "year": 1933,
+    "month": 10,
+    "day": 7,
+    "calendar": "g",
+    "time": "18:20",
+    "time_type": "d",
+    "hour": 18.333333,
+    "time_unknown": false,
+    "place": "Blois",
+    "country": "France",
+    "lat": 47.583333,
+    "lon": 1.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapron,_Gilbert",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_sp_sports.pdf]. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Sports : Boxing",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 28.995066,
+    "lagna": 328.995066,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.93202,
+    "jd_ut": 2427353.222222,
+    "planets": {
+      "Sun": {
+        "longitude": 171.048069,
+        "sign_index": 5,
+        "degree_in_sign": 21.048069,
+        "is_retrograde": false,
+        "speed": 0.987105
+      },
+      "Moon": {
+        "longitude": 37.800724,
+        "sign_index": 1,
+        "degree_in_sign": 7.800724,
+        "is_retrograde": false,
+        "speed": 15.229366
+      },
+      "Mars": {
+        "longitude": 215.817767,
+        "sign_index": 7,
+        "degree_in_sign": 5.817767,
+        "is_retrograde": false,
+        "speed": 0.707758
+      },
+      "Mercury": {
+        "longitude": 188.688514,
+        "sign_index": 6,
+        "degree_in_sign": 8.688514,
+        "is_retrograde": false,
+        "speed": 1.475705
+      },
+      "Jupiter": {
+        "longitude": 162.995617,
+        "sign_index": 5,
+        "degree_in_sign": 12.995617,
+        "is_retrograde": false,
+        "speed": 0.215345
+      },
+      "Venus": {
+        "longitude": 213.043681,
+        "sign_index": 7,
+        "degree_in_sign": 3.043681,
+        "is_retrograde": false,
+        "speed": 1.162515
+      },
+      "Saturn": {
+        "longitude": 286.822704,
+        "sign_index": 9,
+        "degree_in_sign": 16.822704,
+        "is_retrograde": true,
+        "speed": -0.01173
+      },
+      "Rahu": {
+        "longitude": 303.159177,
+        "sign_index": 10,
+        "degree_in_sign": 3.159177,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.159177,
+        "sign_index": 4,
+        "degree_in_sign": 3.159177,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

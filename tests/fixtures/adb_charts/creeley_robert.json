@@ -1,0 +1,108 @@
+{
+  "adb_id": 58468,
+  "name": "Creeley, Robert",
+  "given_name": "Robert Creeley",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2424656.958333,
+    "year": 1926,
+    "month": 5,
+    "day": 21,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "d",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Arlington",
+    "country": "Massachusetts",
+    "lat": 42.416667,
+    "lon": -71.15
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Creeley,_Robert",
+  "source_notes": "Sy Scholfield quotes Ekbert Faas & Maria Trombacco's book, \"Robert Creeley: A Biography\" (McGill-Queen's UP, 2001), p. 3, for date and place plus time from Creeley's poem, \"Numbers\": \"I was born at seven in the morning...\" on the same page.\\n",
+  "categories": [
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 10.168528,
+    "lagna": 40.168528,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.828933,
+    "jd_ut": 2424656.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 36.805688,
+        "sign_index": 1,
+        "degree_in_sign": 6.805688,
+        "is_retrograde": false,
+        "speed": 0.961551
+      },
+      "Moon": {
+        "longitude": 145.643013,
+        "sign_index": 4,
+        "degree_in_sign": 25.643013,
+        "is_retrograde": false,
+        "speed": 15.600681
+      },
+      "Mars": {
+        "longitude": 319.91762,
+        "sign_index": 10,
+        "degree_in_sign": 19.91762,
+        "is_retrograde": false,
+        "speed": 0.712932
+      },
+      "Mercury": {
+        "longitude": 20.969498,
+        "sign_index": 0,
+        "degree_in_sign": 20.969498,
+        "is_retrograde": false,
+        "speed": 1.862591
+      },
+      "Jupiter": {
+        "longitude": 303.290281,
+        "sign_index": 10,
+        "degree_in_sign": 3.290281,
+        "is_retrograde": false,
+        "speed": 0.079404
+      },
+      "Venus": {
+        "longitude": 353.304837,
+        "sign_index": 11,
+        "degree_in_sign": 23.304837,
+        "is_retrograde": false,
+        "speed": 1.107637
+      },
+      "Saturn": {
+        "longitude": 209.425386,
+        "sign_index": 6,
+        "degree_in_sign": 29.425386,
+        "is_retrograde": true,
+        "speed": -0.074054
+      },
+      "Rahu": {
+        "longitude": 86.039804,
+        "sign_index": 2,
+        "degree_in_sign": 26.039804,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 266.039804,
+        "sign_index": 8,
+        "degree_in_sign": 26.039804,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 84379,
+  "name": "Colijn, Hendrik",
+  "given_name": "Hendrik Colijn",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403871.382778,
+    "year": 1869,
+    "month": 6,
+    "day": 22,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "l",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Hoofddorp",
+    "country": "Netherlands",
+    "lat": 52.3,
+    "lon": 4.7
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colijn,_Hendrik",
+  "source_notes": "Sy Scholfield provided birth certificate. Born in Haarlemmermeer municipality, of which the main town is Hoofddorp.\\n",
+  "categories": [
+    "Family : Childhood : Order of birth",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Heads of state"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 6.544077,
+    "lagna": 246.544077,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.034352,
+    "jd_ut": 2403871.382778,
+    "planets": {
+      "Sun": {
+        "longitude": 69.364449,
+        "sign_index": 2,
+        "degree_in_sign": 9.364449,
+        "is_retrograde": false,
+        "speed": 0.953291
+      },
+      "Moon": {
+        "longitude": 235.004971,
+        "sign_index": 7,
+        "degree_in_sign": 25.004971,
+        "is_retrograde": false,
+        "speed": 10.156291
+      },
+      "Mars": {
+        "longitude": 143.238899,
+        "sign_index": 4,
+        "degree_in_sign": 23.238899,
+        "is_retrograde": false,
+        "speed": 0.532233
+      },
+      "Mercury": {
+        "longitude": 72.487253,
+        "sign_index": 2,
+        "degree_in_sign": 12.487253,
+        "is_retrograde": true,
+        "speed": -0.577743
+      },
+      "Jupiter": {
+        "longitude": 20.227412,
+        "sign_index": 0,
+        "degree_in_sign": 20.227412,
+        "is_retrograde": false,
+        "speed": 0.194371
+      },
+      "Venus": {
+        "longitude": 81.39782,
+        "sign_index": 2,
+        "degree_in_sign": 21.39782,
+        "is_retrograde": false,
+        "speed": 1.226169
+      },
+      "Saturn": {
+        "longitude": 230.519325,
+        "sign_index": 7,
+        "degree_in_sign": 20.519325,
+        "is_retrograde": true,
+        "speed": -0.067949
+      },
+      "Rahu": {
+        "longitude": 107.511313,
+        "sign_index": 3,
+        "degree_in_sign": 17.511313,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 287.511313,
+        "sign_index": 9,
+        "degree_in_sign": 17.511313,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

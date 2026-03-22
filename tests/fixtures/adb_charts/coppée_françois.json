@@ -1,0 +1,109 @@
+{
+  "adb_id": 55901,
+  "name": "Coppée, François",
+  "given_name": "François Coppée",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393862.035185,
+    "year": 1842,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "l",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coppée,_François",
+  "source_notes": "Collection Didier Geslain (acte 321); Didier Geslain archive, 'Ecrivains' pdf file, p. 107.\\n",
+  "categories": [
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 7.199416,
+    "lagna": 37.199416,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.65179,
+    "jd_ut": 2393862.035185,
+    "planets": {
+      "Sun": {
+        "longitude": 284.583985,
+        "sign_index": 9,
+        "degree_in_sign": 14.583985,
+        "is_retrograde": false,
+        "speed": 1.015573
+      },
+      "Moon": {
+        "longitude": 102.011817,
+        "sign_index": 3,
+        "degree_in_sign": 12.011817,
+        "is_retrograde": false,
+        "speed": 19.006287
+      },
+      "Mars": {
+        "longitude": 323.856787,
+        "sign_index": 10,
+        "degree_in_sign": 23.856787,
+        "is_retrograde": false,
+        "speed": 0.771287
+      },
+      "Mercury": {
+        "longitude": 290.836971,
+        "sign_index": 9,
+        "degree_in_sign": 20.836971,
+        "is_retrograde": false,
+        "speed": 1.750601
+      },
+      "Jupiter": {
+        "longitude": 257.309673,
+        "sign_index": 8,
+        "degree_in_sign": 17.309673,
+        "is_retrograde": false,
+        "speed": 0.217604
+      },
+      "Venus": {
+        "longitude": 275.331002,
+        "sign_index": 9,
+        "degree_in_sign": 5.331002,
+        "is_retrograde": false,
+        "speed": 1.254682
+      },
+      "Saturn": {
+        "longitude": 257.2796,
+        "sign_index": 8,
+        "degree_in_sign": 17.2796,
+        "is_retrograde": false,
+        "speed": 0.109213
+      },
+      "Rahu": {
+        "longitude": 277.92816,
+        "sign_index": 9,
+        "degree_in_sign": 7.92816,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 97.92816,
+        "sign_index": 3,
+        "degree_in_sign": 7.92816,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 105278,
+  "name": "Coleman, C. Joseph",
+  "given_name": "C. Joseph Coleman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423492.833333,
+    "year": 1923,
+    "month": 3,
+    "day": 14,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Clare",
+    "country": "Iowa",
+    "lat": 42.583333,
+    "lon": -94.35
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coleman,_C._Joseph",
+  "source_notes": "Birth certificate for \"Chas Joseph Coleman\" in hand from Sy Scholfield, copy on file. (Iowa State Department of Health, no. 266).\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 8.233535,
+    "lagna": 218.233535,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.784427,
+    "jd_ut": 2423492.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 329.940655,
+        "sign_index": 10,
+        "degree_in_sign": 29.940655,
+        "is_retrograde": false,
+        "speed": 0.997042
+      },
+      "Moon": {
+        "longitude": 294.772692,
+        "sign_index": 9,
+        "degree_in_sign": 24.772692,
+        "is_retrograde": false,
+        "speed": 14.173234
+      },
+      "Mars": {
+        "longitude": 14.494873,
+        "sign_index": 0,
+        "degree_in_sign": 14.494873,
+        "is_retrograde": false,
+        "speed": 0.703292
+      },
+      "Mercury": {
+        "longitude": 309.086474,
+        "sign_index": 10,
+        "degree_in_sign": 9.086474,
+        "is_retrograde": false,
+        "speed": 1.539791
+      },
+      "Jupiter": {
+        "longitude": 206.0409,
+        "sign_index": 6,
+        "degree_in_sign": 26.0409,
+        "is_retrograde": true,
+        "speed": -0.026819
+      },
+      "Venus": {
+        "longitude": 286.447185,
+        "sign_index": 9,
+        "degree_in_sign": 16.447185,
+        "is_retrograde": false,
+        "speed": 1.147917
+      },
+      "Saturn": {
+        "longitude": 175.774795,
+        "sign_index": 5,
+        "degree_in_sign": 25.774795,
+        "is_retrograde": true,
+        "speed": -0.065319
+      },
+      "Rahu": {
+        "longitude": 147.729214,
+        "sign_index": 4,
+        "degree_in_sign": 27.729214,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 327.729214,
+        "sign_index": 10,
+        "degree_in_sign": 27.729214,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

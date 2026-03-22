@@ -1,0 +1,108 @@
+{
+  "adb_id": 13816,
+  "name": "Carboni, Luca",
+  "given_name": "Luca Carboni",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437950.152778,
+    "year": 1962,
+    "month": 10,
+    "day": 12,
+    "calendar": "g",
+    "time": "16:40",
+    "time_type": "s",
+    "hour": 16.666667,
+    "time_unknown": false,
+    "place": "Bologna",
+    "country": "Italy",
+    "lat": 44.483333,
+    "lon": 11.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carboni,_Luca",
+  "source_notes": "Bordoni quotes B.C. Vol 4\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 7.764759,
+    "lagna": 307.764759,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.337204,
+    "jd_ut": 2437950.152778,
+    "planets": {
+      "Sun": {
+        "longitude": 175.498347,
+        "sign_index": 5,
+        "degree_in_sign": 25.498347,
+        "is_retrograde": false,
+        "speed": 0.989341
+      },
+      "Moon": {
+        "longitude": 343.403336,
+        "sign_index": 11,
+        "degree_in_sign": 13.403336,
+        "is_retrograde": false,
+        "speed": 16.032719
+      },
+      "Mars": {
+        "longitude": 97.015423,
+        "sign_index": 3,
+        "degree_in_sign": 7.015423,
+        "is_retrograde": false,
+        "speed": 0.529321
+      },
+      "Mercury": {
+        "longitude": 163.993375,
+        "sign_index": 5,
+        "degree_in_sign": 13.993375,
+        "is_retrograde": true,
+        "speed": -0.539412
+      },
+      "Jupiter": {
+        "longitude": 309.957922,
+        "sign_index": 10,
+        "degree_in_sign": 9.957922,
+        "is_retrograde": true,
+        "speed": -0.055623
+      },
+      "Venus": {
+        "longitude": 212.278165,
+        "sign_index": 7,
+        "degree_in_sign": 2.278165,
+        "is_retrograde": false,
+        "speed": 0.366404
+      },
+      "Saturn": {
+        "longitude": 281.435452,
+        "sign_index": 9,
+        "degree_in_sign": 11.435452,
+        "is_retrograde": false,
+        "speed": 0.004944
+      },
+      "Rahu": {
+        "longitude": 101.60598,
+        "sign_index": 3,
+        "degree_in_sign": 11.60598,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 281.60598,
+        "sign_index": 9,
+        "degree_in_sign": 11.60598,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 102172,
+  "name": "Custode, Pascual",
+  "given_name": "Pascual Custode",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405483.548657,
+    "year": 1873,
+    "month": 11,
+    "day": 21,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Castelnuovo di Conza",
+    "country": "Italy",
+    "lat": 40.816667,
+    "lon": 15.316667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Custode,_Pascual",
+  "source_notes": "Sy Scholfield quotes from his Spanish Wikipedia biography: \"Hijo de Giovanni Custode di Guiseppe y Maria Felicia Del Vecchio di Pasquale, agricultores de la región de Salerno, Italia, cuando estos tenían 43 y 40 años; domiciliados en la calle San Nicolás de Castelnuovo di Conza, se dice que nació a las 2 de la mañana del 21 de noviembre de 1873.\" [https://es.wikipedia.org/wiki/Pascual_Custode].\\n\\nTranslation: Son of Giovanni Custode di Guiseppe and Maria Felicia Del Vecchio di Pasquale, farmers in the Salerno region, Italy, when they were 43 and 40 years old; residing on San Nicolás Street in Castelnuovo di Conza, who declared that he was born at 2 in the morning on 21 November 1873.\\n\\nThe source is given as \"Datos del registro civil de nacimiento. Archivos Digitales Salerno, Italia. Extraido por Einer Mauricio Rivera.\"\\n\\nTranslation: Civil birth registration data. Salerno Digital Archives, Italy. Extracted by Einer Mauricio Rivera.\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.145175,
+    "lagna": 138.145175,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.095974,
+    "jd_ut": 2405483.548657,
+    "planets": {
+      "Sun": {
+        "longitude": 216.748463,
+        "sign_index": 7,
+        "degree_in_sign": 6.748463,
+        "is_retrograde": false,
+        "speed": 1.011148
+      },
+      "Moon": {
+        "longitude": 227.732312,
+        "sign_index": 7,
+        "degree_in_sign": 17.732312,
+        "is_retrograde": false,
+        "speed": 16.87437
+      },
+      "Mars": {
+        "longitude": 276.289676,
+        "sign_index": 9,
+        "degree_in_sign": 6.289676,
+        "is_retrograde": false,
+        "speed": 0.760977
+      },
+      "Mercury": {
+        "longitude": 234.881494,
+        "sign_index": 7,
+        "degree_in_sign": 24.881494,
+        "is_retrograde": true,
+        "speed": -0.060639
+      },
+      "Jupiter": {
+        "longitude": 155.121131,
+        "sign_index": 5,
+        "degree_in_sign": 5.121131,
+        "is_retrograde": false,
+        "speed": 0.149679
+      },
+      "Venus": {
+        "longitude": 194.152281,
+        "sign_index": 6,
+        "degree_in_sign": 14.152281,
+        "is_retrograde": false,
+        "speed": 1.24891
+      },
+      "Saturn": {
+        "longitude": 276.128445,
+        "sign_index": 9,
+        "degree_in_sign": 6.128445,
+        "is_retrograde": false,
+        "speed": 0.07858
+      },
+      "Rahu": {
+        "longitude": 22.079204,
+        "sign_index": 0,
+        "degree_in_sign": 22.079204,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 202.079204,
+        "sign_index": 6,
+        "degree_in_sign": 22.079204,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

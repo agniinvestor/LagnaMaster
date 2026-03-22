@@ -1,0 +1,108 @@
+{
+  "adb_id": 27144,
+  "name": "Cities: New York, New York (Consolidation)",
+  "given_name": "New York (Consolidation) Cities: New York",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414290.708333,
+    "year": 1898,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "00:00",
+    "time_type": "s",
+    "hour": 0.0,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cities:_New_York,_New_York_(Consolidation)",
+  "source_notes": "Date from legislation: Gary Brand quotes 1897 New York Laws, Chapter 378, pp. 1-555.\\n\\nSy Scholfield quotes from local news report: \"The New City Ushered In: Big Parade and Brilliant Display at the Birth of Greater New York,\" New York Times, 1 January 1898, pp. 1-2: \"The flag of Greater New York was officially unfurled over the New York City Hall at midnight by a touch of a button by the major of San Francisco, 3,700 miles away, and the second city of the world came into existence ... as the City Hall clock marked 12, steam whistles sounded, the bands played more vehemently ... and the flag of the new city ... went to the top of the pole over the City Hall ... [thereafter] for fifteen minutes, there was a saturation of light and sound, and then the snow began to come fast...\"\\n\\nData for inauguration from \"Van Wyck at the Helm,\" New York Times, 2 January 1898, p. 1: \"Robert A. Van Wyck became the Mayor of New York at noon yesterday. At that hour the government of the new city was turned over to him by the outgoing Mayors of the three cities which had become boroughs of the metropolis - William L. Strong of Manhattan and the Bronx, Frederick W. Wurster of Brooklyn, and Patrick Gleason of Long Island City. No elaborate ceremony marked Mayor Van Wyck's entrance into office at the City Hall: it was a business affair pure and simple...\" \\n",
+  "categories": [
+    "Mundane : City Population : more than 500,000 population"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.547007,
+    "lagna": 144.547007,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.432632,
+    "jd_ut": 2414290.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 258.427244,
+        "sign_index": 8,
+        "degree_in_sign": 18.427244,
+        "is_retrograde": false,
+        "speed": 1.019181
+      },
+      "Moon": {
+        "longitude": 3.390813,
+        "sign_index": 0,
+        "degree_in_sign": 3.390813,
+        "is_retrograde": false,
+        "speed": 11.081323
+      },
+      "Mars": {
+        "longitude": 246.826741,
+        "sign_index": 8,
+        "degree_in_sign": 6.826741,
+        "is_retrograde": false,
+        "speed": 0.747226
+      },
+      "Mercury": {
+        "longitude": 270.08454,
+        "sign_index": 9,
+        "degree_in_sign": 0.08454,
+        "is_retrograde": true,
+        "speed": -0.710581
+      },
+      "Jupiter": {
+        "longitude": 167.003161,
+        "sign_index": 5,
+        "degree_in_sign": 17.003161,
+        "is_retrograde": false,
+        "speed": 0.071204
+      },
+      "Venus": {
+        "longitude": 247.45225,
+        "sign_index": 8,
+        "degree_in_sign": 7.45225,
+        "is_retrograde": false,
+        "speed": 1.257081
+      },
+      "Saturn": {
+        "longitude": 225.100669,
+        "sign_index": 7,
+        "degree_in_sign": 15.100669,
+        "is_retrograde": false,
+        "speed": 0.105619
+      },
+      "Rahu": {
+        "longitude": 275.369134,
+        "sign_index": 9,
+        "degree_in_sign": 5.369134,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 95.369134,
+        "sign_index": 3,
+        "degree_in_sign": 5.369134,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

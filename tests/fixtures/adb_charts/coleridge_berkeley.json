@@ -1,0 +1,109 @@
+{
+  "adb_id": 78769,
+  "name": "Coleridge, Berkeley",
+  "given_name": "Berkeley Coleridge",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2377895.6125,
+    "year": 1798,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "l",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Somerset",
+    "country": "England",
+    "lat": 51.133333,
+    "lon": -3.0
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coleridge,_Berkeley",
+  "source_notes": "Sy Scholfield cites mother's record quoted in \"The Collected Works of Samuel Taylor Coleridge: Abbt to Byfield, Volume 1\" (Routledge, 1980), p. 413: \"p-2, in Mrs C's hand, below 3 Berk(e)ley Coleridge born, May 10, half past 2 the Morning — 1798 — (died Feb 1799).\"\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Personal : Death : Short Life less than 29 Yrs"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 7.65903,
+    "lagna": 307.65903,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.041642,
+    "jd_ut": 2377895.6125,
+    "planets": {
+      "Sun": {
+        "longitude": 28.575203,
+        "sign_index": 0,
+        "degree_in_sign": 28.575203,
+        "is_retrograde": false,
+        "speed": 0.965005
+      },
+      "Moon": {
+        "longitude": 323.717369,
+        "sign_index": 10,
+        "degree_in_sign": 23.717369,
+        "is_retrograde": false,
+        "speed": 11.201164
+      },
+      "Mars": {
+        "longitude": 291.333338,
+        "sign_index": 9,
+        "degree_in_sign": 21.333338,
+        "is_retrograde": false,
+        "speed": 0.586326
+      },
+      "Mercury": {
+        "longitude": 48.214374,
+        "sign_index": 1,
+        "degree_in_sign": 18.214374,
+        "is_retrograde": false,
+        "speed": 0.481125
+      },
+      "Jupiter": {
+        "longitude": 15.896935,
+        "sign_index": 0,
+        "degree_in_sign": 15.896935,
+        "is_retrograde": false,
+        "speed": 0.236157
+      },
+      "Venus": {
+        "longitude": 343.657308,
+        "sign_index": 11,
+        "degree_in_sign": 13.657308,
+        "is_retrograde": false,
+        "speed": 0.824714
+      },
+      "Saturn": {
+        "longitude": 77.649012,
+        "sign_index": 2,
+        "degree_in_sign": 17.649012,
+        "is_retrograde": false,
+        "speed": 0.099951
+      },
+      "Rahu": {
+        "longitude": 44.023765,
+        "sign_index": 1,
+        "degree_in_sign": 14.023765,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 224.023765,
+        "sign_index": 7,
+        "degree_in_sign": 14.023765,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

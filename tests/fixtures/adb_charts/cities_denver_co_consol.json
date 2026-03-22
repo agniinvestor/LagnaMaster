@@ -1,0 +1,108 @@
+{
+  "adb_id": 27044,
+  "name": "Cities: Denver CO (consol)",
+  "given_name": "Cities: Denver CO (consol)",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416084.791667,
+    "year": 1902,
+    "month": 12,
+    "day": 1,
+    "calendar": "g",
+    "time": "00:00",
+    "time_type": "s",
+    "hour": 0.0,
+    "time_unknown": false,
+    "place": "Denver",
+    "country": "Colorado",
+    "lat": 39.733333,
+    "lon": -104.983333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cities:_Denver_CO_(consol)",
+  "source_notes": "Dates from Colorado Constitution (as amended).\\n",
+  "categories": [
+    "Mundane : City Population : 400,000-500,000 population"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 28.373712,
+    "lagna": 118.373712,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.501216,
+    "jd_ut": 2416084.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 225.658571,
+        "sign_index": 7,
+        "degree_in_sign": 15.658571,
+        "is_retrograde": false,
+        "speed": 1.01418
+      },
+      "Moon": {
+        "longitude": 238.697136,
+        "sign_index": 7,
+        "degree_in_sign": 28.697136,
+        "is_retrograde": false,
+        "speed": 15.92256
+      },
+      "Mars": {
+        "longitude": 148.454514,
+        "sign_index": 4,
+        "degree_in_sign": 28.454514,
+        "is_retrograde": false,
+        "speed": 0.506857
+      },
+      "Mercury": {
+        "longitude": 219.430815,
+        "sign_index": 7,
+        "degree_in_sign": 9.430815,
+        "is_retrograde": false,
+        "speed": 1.572249
+      },
+      "Jupiter": {
+        "longitude": 290.000286,
+        "sign_index": 9,
+        "degree_in_sign": 20.000286,
+        "is_retrograde": false,
+        "speed": 0.163032
+      },
+      "Venus": {
+        "longitude": 226.19145,
+        "sign_index": 7,
+        "degree_in_sign": 16.19145,
+        "is_retrograde": false,
+        "speed": 1.257853
+      },
+      "Saturn": {
+        "longitude": 272.026048,
+        "sign_index": 9,
+        "degree_in_sign": 2.026048,
+        "is_retrograde": false,
+        "speed": 0.093683
+      },
+      "Rahu": {
+        "longitude": 180.296875,
+        "sign_index": 6,
+        "degree_in_sign": 0.296875,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 0.296875,
+        "sign_index": 0,
+        "degree_in_sign": 0.296875,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

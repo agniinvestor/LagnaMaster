@@ -1,0 +1,109 @@
+{
+  "adb_id": 84149,
+  "name": "Chouteau, Yvonne",
+  "given_name": "Yvonne Chouteau",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425678.127083,
+    "year": 1929,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "09:03",
+    "time_type": "s",
+    "hour": 9.05,
+    "time_unknown": false,
+    "place": "Fort Worth",
+    "country": "Texas",
+    "lat": 32.733333,
+    "lon": -97.316667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chouteau,_Yvonne",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 18.218018,
+    "lagna": 348.218018,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.867975,
+    "jd_ut": 2425678.127083,
+    "planets": {
+      "Sun": {
+        "longitude": 323.700042,
+        "sign_index": 10,
+        "degree_in_sign": 23.700042,
+        "is_retrograde": false,
+        "speed": 1.000357
+      },
+      "Moon": {
+        "longitude": 279.334301,
+        "sign_index": 9,
+        "degree_in_sign": 9.334301,
+        "is_retrograde": false,
+        "speed": 7.668104
+      },
+      "Mars": {
+        "longitude": 65.93188,
+        "sign_index": 2,
+        "degree_in_sign": 5.93188,
+        "is_retrograde": false,
+        "speed": 0.350786
+      },
+      "Mercury": {
+        "longitude": 296.622868,
+        "sign_index": 9,
+        "degree_in_sign": 26.622868,
+        "is_retrograde": false,
+        "speed": 1.111181
+      },
+      "Jupiter": {
+        "longitude": 15.274611,
+        "sign_index": 0,
+        "degree_in_sign": 15.274611,
+        "is_retrograde": false,
+        "speed": 0.189734
+      },
+      "Venus": {
+        "longitude": 6.679445,
+        "sign_index": 0,
+        "degree_in_sign": 6.679445,
+        "is_retrograde": false,
+        "speed": 0.672748
+      },
+      "Saturn": {
+        "longitude": 246.762556,
+        "sign_index": 8,
+        "degree_in_sign": 6.762556,
+        "is_retrograde": false,
+        "speed": 0.052922
+      },
+      "Rahu": {
+        "longitude": 31.925947,
+        "sign_index": 1,
+        "degree_in_sign": 1.925947,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 211.925947,
+        "sign_index": 7,
+        "degree_in_sign": 1.925947,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

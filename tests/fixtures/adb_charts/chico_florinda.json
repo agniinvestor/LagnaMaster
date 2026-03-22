@@ -1,0 +1,108 @@
+{
+  "adb_id": 95399,
+  "name": "Chico, Florinda",
+  "given_name": "Florinda Chico",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2424629.708333,
+    "year": 1926,
+    "month": 4,
+    "day": 24,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "d",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Don Benito",
+    "country": "Spain",
+    "lat": 38.95,
+    "lon": -5.866667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chico,_Florinda",
+  "source_notes": "Faustino Rodriguez quotes the biography \"Florinda Chico, En el gran teatro del mundo\" by Juan Antonio Pérez Mareos.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 1.94808,
+    "lagna": 331.94808,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.827892,
+    "jd_ut": 2424629.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 10.441999,
+        "sign_index": 0,
+        "degree_in_sign": 10.441999,
+        "is_retrograde": false,
+        "speed": 0.973667
+      },
+      "Moon": {
+        "longitude": 146.222462,
+        "sign_index": 4,
+        "degree_in_sign": 26.222462,
+        "is_retrograde": false,
+        "speed": 13.601241
+      },
+      "Mars": {
+        "longitude": 300.312644,
+        "sign_index": 10,
+        "degree_in_sign": 0.312644,
+        "is_retrograde": false,
+        "speed": 0.722895
+      },
+      "Mercury": {
+        "longitude": 343.919312,
+        "sign_index": 11,
+        "degree_in_sign": 13.919312,
+        "is_retrograde": false,
+        "speed": 0.759491
+      },
+      "Jupiter": {
+        "longitude": 300.158428,
+        "sign_index": 10,
+        "degree_in_sign": 0.158428,
+        "is_retrograde": false,
+        "speed": 0.147047
+      },
+      "Venus": {
+        "longitude": 324.270871,
+        "sign_index": 10,
+        "degree_in_sign": 24.270871,
+        "is_retrograde": false,
+        "speed": 1.008547
+      },
+      "Saturn": {
+        "longitude": 211.414938,
+        "sign_index": 7,
+        "degree_in_sign": 1.414938,
+        "is_retrograde": true,
+        "speed": -0.067209
+      },
+      "Rahu": {
+        "longitude": 87.483839,
+        "sign_index": 2,
+        "degree_in_sign": 27.483839,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 267.483839,
+        "sign_index": 8,
+        "degree_in_sign": 27.483839,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

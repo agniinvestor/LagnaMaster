@@ -1,0 +1,114 @@
+{
+  "adb_id": 19521,
+  "name": "Cartan, Henri",
+  "given_name": "Henri Cartan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416670.410174,
+    "year": 1904,
+    "month": 7,
+    "day": 8,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Nancy",
+    "country": "France",
+    "lat": 48.683333,
+    "lon": 6.2
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cartan,_Henri",
+  "source_notes": "B.R. in hand from Steinbrecher (10:00 PM Paris time)\\nBirth certificate in Didier Geslain archive, 'sciences' pdf file, p. 17.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Work : Same Job more than 10 yrs",
+    "Lifestyle : Social Life : Groups",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Mathematics/ Statistics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 24.443818,
+    "lagna": 294.443818,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.523604,
+    "jd_ut": 2416670.410174,
+    "planets": {
+      "Sun": {
+        "longitude": 83.721182,
+        "sign_index": 2,
+        "degree_in_sign": 23.721182,
+        "is_retrograde": false,
+        "speed": 0.95356
+      },
+      "Moon": {
+        "longitude": 27.87222,
+        "sign_index": 0,
+        "degree_in_sign": 27.87222,
+        "is_retrograde": false,
+        "speed": 16.323732
+      },
+      "Mars": {
+        "longitude": 73.038056,
+        "sign_index": 2,
+        "degree_in_sign": 13.038056,
+        "is_retrograde": false,
+        "speed": 0.668225
+      },
+      "Mercury": {
+        "longitude": 82.430089,
+        "sign_index": 2,
+        "degree_in_sign": 22.430089,
+        "is_retrograde": false,
+        "speed": 2.163501
+      },
+      "Jupiter": {
+        "longitude": 4.901457,
+        "sign_index": 0,
+        "degree_in_sign": 4.901457,
+        "is_retrograde": false,
+        "speed": 0.125112
+      },
+      "Venus": {
+        "longitude": 83.878107,
+        "sign_index": 2,
+        "degree_in_sign": 23.878107,
+        "is_retrograde": false,
+        "speed": 1.229886
+      },
+      "Saturn": {
+        "longitude": 297.372724,
+        "sign_index": 9,
+        "degree_in_sign": 27.372724,
+        "is_retrograde": true,
+        "speed": -0.055299
+      },
+      "Rahu": {
+        "longitude": 149.263716,
+        "sign_index": 4,
+        "degree_in_sign": 29.263716,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 329.263716,
+        "sign_index": 10,
+        "degree_in_sign": 29.263716,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

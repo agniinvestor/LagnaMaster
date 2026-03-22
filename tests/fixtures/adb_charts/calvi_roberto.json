@@ -1,0 +1,111 @@
+{
+  "adb_id": 836,
+  "name": "Calvi, Roberto",
+  "given_name": "Roberto Calvi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422428.125,
+    "year": 1920,
+    "month": 4,
+    "day": 13,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "d",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Milan",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvi,_Roberto",
+  "source_notes": "Bordoni quotes B.C.\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Thief/ Financial crime",
+    "Passions : Criminal Victim : Homicide victim",
+    "Vocation : Business : Banker/ Financier",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 3.692665,
+    "lagna": 123.692665,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.743721,
+    "jd_ut": 2422428.125,
+    "planets": {
+      "Sun": {
+        "longitude": 0.626643,
+        "sign_index": 0,
+        "degree_in_sign": 0.626643,
+        "is_retrograde": false,
+        "speed": 0.979408
+      },
+      "Moon": {
+        "longitude": 293.299325,
+        "sign_index": 9,
+        "degree_in_sign": 23.299325,
+        "is_retrograde": false,
+        "speed": 14.579804
+      },
+      "Mars": {
+        "longitude": 190.987801,
+        "sign_index": 6,
+        "degree_in_sign": 10.987801,
+        "is_retrograde": true,
+        "speed": -0.340278
+      },
+      "Mercury": {
+        "longitude": 333.508003,
+        "sign_index": 11,
+        "degree_in_sign": 3.508003,
+        "is_retrograde": false,
+        "speed": 0.796915
+      },
+      "Jupiter": {
+        "longitude": 105.499218,
+        "sign_index": 3,
+        "degree_in_sign": 15.499218,
+        "is_retrograde": false,
+        "speed": 0.029705
+      },
+      "Venus": {
+        "longitude": 339.139781,
+        "sign_index": 11,
+        "degree_in_sign": 9.139781,
+        "is_retrograde": false,
+        "speed": 1.22759
+      },
+      "Saturn": {
+        "longitude": 132.539124,
+        "sign_index": 4,
+        "degree_in_sign": 12.539124,
+        "is_retrograde": true,
+        "speed": -0.039715
+      },
+      "Rahu": {
+        "longitude": 204.150331,
+        "sign_index": 6,
+        "degree_in_sign": 24.150331,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 24.150331,
+        "sign_index": 0,
+        "degree_in_sign": 24.150331,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

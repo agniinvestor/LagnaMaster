@@ -1,0 +1,115 @@
+{
+  "adb_id": 93301,
+  "name": "Crochet, Marcel",
+  "given_name": "Marcel Crochet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429225.635417,
+    "year": 1938,
+    "month": 11,
+    "day": 23,
+    "calendar": "g",
+    "time": "03:15",
+    "time_type": "s",
+    "hour": 3.25,
+    "time_unknown": false,
+    "place": "Uccle",
+    "country": "Belgium",
+    "lat": 50.8,
+    "lon": 4.316667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crochet,_Marcel",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_sc_sciences-2.pdf]. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Engineer : Civil",
+    "Vocation : Engineer : Electrical",
+    "Vocation : Engineer : Mechanical",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 1.402531,
+    "lagna": 151.402531,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.003609,
+    "jd_ut": 2429225.635417,
+    "planets": {
+      "Sun": {
+        "longitude": 217.168019,
+        "sign_index": 7,
+        "degree_in_sign": 7.168019,
+        "is_retrograde": false,
+        "speed": 1.011118
+      },
+      "Moon": {
+        "longitude": 230.511978,
+        "sign_index": 7,
+        "degree_in_sign": 20.511978,
+        "is_retrograde": false,
+        "speed": 14.91972
+      },
+      "Mars": {
+        "longitude": 175.175942,
+        "sign_index": 5,
+        "degree_in_sign": 25.175942,
+        "is_retrograde": false,
+        "speed": 0.628556
+      },
+      "Mercury": {
+        "longitude": 238.723923,
+        "sign_index": 7,
+        "degree_in_sign": 28.723923,
+        "is_retrograde": false,
+        "speed": 1.141627
+      },
+      "Jupiter": {
+        "longitude": 301.369345,
+        "sign_index": 10,
+        "degree_in_sign": 1.369345,
+        "is_retrograde": false,
+        "speed": 0.109803
+      },
+      "Venus": {
+        "longitude": 212.550156,
+        "sign_index": 7,
+        "degree_in_sign": 2.550156,
+        "is_retrograde": true,
+        "speed": -0.590492
+      },
+      "Saturn": {
+        "longitude": 348.643721,
+        "sign_index": 11,
+        "degree_in_sign": 18.643721,
+        "is_retrograde": true,
+        "speed": -0.038098
+      },
+      "Rahu": {
+        "longitude": 203.936121,
+        "sign_index": 6,
+        "degree_in_sign": 23.936121,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 23.936121,
+        "sign_index": 0,
+        "degree_in_sign": 23.936121,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

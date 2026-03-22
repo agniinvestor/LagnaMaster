@@ -1,0 +1,109 @@
+{
+  "adb_id": 68337,
+  "name": "Contassot, Yves",
+  "given_name": "Yves Contassot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435954.53125,
+    "year": 1957,
+    "month": 4,
+    "day": 26,
+    "calendar": "g",
+    "time": "01:45",
+    "time_type": "s",
+    "hour": 1.75,
+    "time_unknown": false,
+    "place": "St.Mandé",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.416667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Contassot,_Yves",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 202.\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 1.536987,
+    "lagna": 241.536987,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.260895,
+    "jd_ut": 2435954.53125,
+    "planets": {
+      "Sun": {
+        "longitude": 12.260579,
+        "sign_index": 0,
+        "degree_in_sign": 12.260579,
+        "is_retrograde": false,
+        "speed": 0.97322
+      },
+      "Moon": {
+        "longitude": 327.039762,
+        "sign_index": 10,
+        "degree_in_sign": 27.039762,
+        "is_retrograde": false,
+        "speed": 13.804176
+      },
+      "Mars": {
+        "longitude": 61.329706,
+        "sign_index": 2,
+        "degree_in_sign": 1.329706,
+        "is_retrograde": false,
+        "speed": 0.628036
+      },
+      "Mercury": {
+        "longitude": 26.151871,
+        "sign_index": 0,
+        "degree_in_sign": 26.151871,
+        "is_retrograde": true,
+        "speed": -0.073541
+      },
+      "Jupiter": {
+        "longitude": 149.371208,
+        "sign_index": 4,
+        "degree_in_sign": 29.371208,
+        "is_retrograde": true,
+        "speed": -0.068296
+      },
+      "Venus": {
+        "longitude": 15.246077,
+        "sign_index": 0,
+        "degree_in_sign": 15.246077,
+        "is_retrograde": false,
+        "speed": 1.235008
+      },
+      "Saturn": {
+        "longitude": 230.178666,
+        "sign_index": 7,
+        "degree_in_sign": 20.178666,
+        "is_retrograde": true,
+        "speed": -0.049993
+      },
+      "Rahu": {
+        "longitude": 207.358057,
+        "sign_index": 6,
+        "degree_in_sign": 27.358057,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 27.358057,
+        "sign_index": 0,
+        "degree_in_sign": 27.358057,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

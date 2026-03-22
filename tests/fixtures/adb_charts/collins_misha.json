@@ -1,0 +1,116 @@
+{
+  "adb_id": 65041,
+  "name": "Collins, Misha",
+  "given_name": "Misha Collins",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442279.675,
+    "year": 1974,
+    "month": 8,
+    "day": 20,
+    "calendar": "g",
+    "time": "00:12",
+    "time_type": "d",
+    "hour": 0.2,
+    "time_unknown": false,
+    "place": "Boston",
+    "country": "Massachusetts",
+    "lat": 42.366667,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Misha",
+  "source_notes": "R. Craft quotes birth certificate.\\n",
+  "categories": [
+    "Family : Childhood : Disadvantaged",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 26.549921,
+    "lagna": 26.549921,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.502762,
+    "jd_ut": 2442279.675,
+    "planets": {
+      "Sun": {
+        "longitude": 123.269638,
+        "sign_index": 4,
+        "degree_in_sign": 3.269638,
+        "is_retrograde": false,
+        "speed": 0.962885
+      },
+      "Moon": {
+        "longitude": 156.59983,
+        "sign_index": 5,
+        "degree_in_sign": 6.59983,
+        "is_retrograde": false,
+        "speed": 17.756726
+      },
+      "Mars": {
+        "longitude": 141.359037,
+        "sign_index": 4,
+        "degree_in_sign": 21.359037,
+        "is_retrograde": false,
+        "speed": 0.635271
+      },
+      "Mercury": {
+        "longitude": 126.095164,
+        "sign_index": 4,
+        "degree_in_sign": 6.095164,
+        "is_retrograde": false,
+        "speed": 1.963302
+      },
+      "Jupiter": {
+        "longitude": 321.505593,
+        "sign_index": 10,
+        "degree_in_sign": 21.505593,
+        "is_retrograde": true,
+        "speed": -0.119216
+      },
+      "Venus": {
+        "longitude": 102.822307,
+        "sign_index": 3,
+        "degree_in_sign": 12.822307,
+        "is_retrograde": false,
+        "speed": 1.222716
+      },
+      "Saturn": {
+        "longitude": 81.039903,
+        "sign_index": 2,
+        "degree_in_sign": 21.039903,
+        "is_retrograde": false,
+        "speed": 0.107729
+      },
+      "Rahu": {
+        "longitude": 232.175753,
+        "sign_index": 7,
+        "degree_in_sign": 22.175753,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 52.175753,
+        "sign_index": 1,
+        "degree_in_sign": 22.175753,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

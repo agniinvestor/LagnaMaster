@@ -1,0 +1,108 @@
+{
+  "adb_id": 53087,
+  "name": "Crosby, Beverly",
+  "given_name": "Beverly Crosby",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2426089.052083,
+    "year": 1930,
+    "month": 4,
+    "day": 22,
+    "calendar": "g",
+    "time": "05:15",
+    "time_type": "s",
+    "hour": 5.25,
+    "time_unknown": false,
+    "place": "Maywood",
+    "country": "California",
+    "lat": 33.983333,
+    "lon": -118.183333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crosby,_Beverly",
+  "source_notes": "Steinbrecher collection: Her letter in MH, October 1993.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 14.793752,
+    "lagna": 344.793752,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.883686,
+    "jd_ut": 2426089.052083,
+    "planets": {
+      "Sun": {
+        "longitude": 8.791558,
+        "sign_index": 0,
+        "degree_in_sign": 8.791558,
+        "is_retrograde": false,
+        "speed": 0.974909
+      },
+      "Moon": {
+        "longitude": 296.749728,
+        "sign_index": 9,
+        "degree_in_sign": 26.749728,
+        "is_retrograde": false,
+        "speed": 7.945304
+      },
+      "Mars": {
+        "longitude": 335.435402,
+        "sign_index": 11,
+        "degree_in_sign": 5.435402,
+        "is_retrograde": false,
+        "speed": 0.774625
+      },
+      "Mercury": {
+        "longitude": 28.036323,
+        "sign_index": 0,
+        "degree_in_sign": 28.036323,
+        "is_retrograde": false,
+        "speed": 1.397437
+      },
+      "Jupiter": {
+        "longitude": 52.735089,
+        "sign_index": 1,
+        "degree_in_sign": 22.735089,
+        "is_retrograde": false,
+        "speed": 0.196142
+      },
+      "Venus": {
+        "longitude": 27.348009,
+        "sign_index": 0,
+        "degree_in_sign": 27.348009,
+        "is_retrograde": false,
+        "speed": 1.227337
+      },
+      "Saturn": {
+        "longitude": 259.001586,
+        "sign_index": 8,
+        "degree_in_sign": 19.001586,
+        "is_retrograde": true,
+        "speed": -0.001597
+      },
+      "Rahu": {
+        "longitude": 10.150177,
+        "sign_index": 0,
+        "degree_in_sign": 10.150177,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 190.150177,
+        "sign_index": 6,
+        "degree_in_sign": 10.150177,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 102525,
+  "name": "Co-Star App",
+  "given_name": "Co-Star App",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2458032.322222,
+    "year": 2017,
+    "month": 10,
+    "day": 5,
+    "calendar": "g",
+    "time": "15:44",
+    "time_type": "d",
+    "hour": 15.733333,
+    "time_unknown": false,
+    "place": "New York City",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Co-Star_App",
+  "source_notes": "from Chris Brennan astrology podcast #286 with Banu Guler\\n",
+  "categories": [
+    "Mundane : Business/Finance : Company Founding"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 19.468893,
+    "lagna": 259.468893,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 24.105208,
+    "jd_ut": 2458032.322222,
+    "planets": {
+      "Sun": {
+        "longitude": 168.653266,
+        "sign_index": 5,
+        "degree_in_sign": 18.653266,
+        "is_retrograde": false,
+        "speed": 0.985408
+      },
+      "Moon": {
+        "longitude": 349.444472,
+        "sign_index": 11,
+        "degree_in_sign": 19.444472,
+        "is_retrograde": false,
+        "speed": 17.102524
+      },
+      "Mars": {
+        "longitude": 145.183022,
+        "sign_index": 4,
+        "degree_in_sign": 25.183022,
+        "is_retrograde": false,
+        "speed": 0.632499
+      },
+      "Mercury": {
+        "longitude": 166.317841,
+        "sign_index": 5,
+        "degree_in_sign": 16.317841,
+        "is_retrograde": false,
+        "speed": 1.770448
+      },
+      "Jupiter": {
+        "longitude": 184.884791,
+        "sign_index": 6,
+        "degree_in_sign": 4.884791,
+        "is_retrograde": false,
+        "speed": 0.212999
+      },
+      "Venus": {
+        "longitude": 145.254382,
+        "sign_index": 4,
+        "degree_in_sign": 25.254382,
+        "is_retrograde": false,
+        "speed": 1.233934
+      },
+      "Saturn": {
+        "longitude": 238.430783,
+        "sign_index": 7,
+        "degree_in_sign": 28.430783,
+        "is_retrograde": false,
+        "speed": 0.063347
+      },
+      "Rahu": {
+        "longitude": 117.411225,
+        "sign_index": 3,
+        "degree_in_sign": 27.411225,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 297.411225,
+        "sign_index": 9,
+        "degree_in_sign": 27.411225,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

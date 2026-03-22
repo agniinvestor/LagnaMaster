@@ -1,0 +1,108 @@
+{
+  "adb_id": 50787,
+  "name": "Clanton, Ralph",
+  "given_name": "Ralph Clanton",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420387.083333,
+    "year": 1914,
+    "month": 9,
+    "day": 11,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Fresno Crossing",
+    "country": "California",
+    "lat": 37.233333,
+    "lon": -119.766667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clanton,_Ralph",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.454074,
+    "lagna": 126.454074,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.66569,
+    "jd_ut": 2420387.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 145.307407,
+        "sign_index": 4,
+        "degree_in_sign": 25.307407,
+        "is_retrograde": false,
+        "speed": 0.972845
+      },
+      "Moon": {
+        "longitude": 42.125032,
+        "sign_index": 1,
+        "degree_in_sign": 12.125032,
+        "is_retrograde": false,
+        "speed": 7.73769
+      },
+      "Mars": {
+        "longitude": 175.403743,
+        "sign_index": 5,
+        "degree_in_sign": 25.403743,
+        "is_retrograde": false,
+        "speed": 0.658979
+      },
+      "Mercury": {
+        "longitude": 155.496952,
+        "sign_index": 5,
+        "degree_in_sign": 5.496952,
+        "is_retrograde": false,
+        "speed": 1.71889
+      },
+      "Jupiter": {
+        "longitude": 291.025756,
+        "sign_index": 9,
+        "degree_in_sign": 21.025756,
+        "is_retrograde": true,
+        "speed": -0.08618
+      },
+      "Venus": {
+        "longitude": 191.551599,
+        "sign_index": 6,
+        "degree_in_sign": 11.551599,
+        "is_retrograde": false,
+        "speed": 1.012039
+      },
+      "Saturn": {
+        "longitude": 68.628308,
+        "sign_index": 2,
+        "degree_in_sign": 8.628308,
+        "is_retrograde": false,
+        "speed": 0.059504
+      },
+      "Rahu": {
+        "longitude": 312.309399,
+        "sign_index": 10,
+        "degree_in_sign": 12.309399,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 132.309399,
+        "sign_index": 4,
+        "degree_in_sign": 12.309399,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

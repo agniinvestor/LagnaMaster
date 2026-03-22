@@ -1,0 +1,108 @@
+{
+  "adb_id": 70237,
+  "name": "Claude, Xavier",
+  "given_name": "Xavier Claude",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441404.864583,
+    "year": 1972,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "09:45",
+    "time_type": "s",
+    "hour": 9.75,
+    "time_unknown": false,
+    "place": "Chaudron-en-Mauges",
+    "country": "France",
+    "lat": 47.288333,
+    "lon": -0.983611
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claude,_Xavier",
+  "source_notes": "Didier Geslain archive, 'hippisme jockeys' pdf file, p. 54.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 27.199133,
+    "lagna": 27.199133,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.46931,
+    "jd_ut": 2441404.864583,
+    "planets": {
+      "Sun": {
+        "longitude": 344.304528,
+        "sign_index": 11,
+        "degree_in_sign": 14.304528,
+        "is_retrograde": false,
+        "speed": 0.988369
+      },
+      "Moon": {
+        "longitude": 147.911047,
+        "sign_index": 4,
+        "degree_in_sign": 27.911047,
+        "is_retrograde": false,
+        "speed": 14.998327
+      },
+      "Mars": {
+        "longitude": 37.295482,
+        "sign_index": 1,
+        "degree_in_sign": 7.295482,
+        "is_retrograde": false,
+        "speed": 0.652879
+      },
+      "Mercury": {
+        "longitude": 349.832163,
+        "sign_index": 11,
+        "degree_in_sign": 19.832163,
+        "is_retrograde": true,
+        "speed": -0.698136
+      },
+      "Jupiter": {
+        "longitude": 253.675692,
+        "sign_index": 8,
+        "degree_in_sign": 13.675692,
+        "is_retrograde": false,
+        "speed": 0.082995
+      },
+      "Venus": {
+        "longitude": 29.758116,
+        "sign_index": 0,
+        "degree_in_sign": 29.758116,
+        "is_retrograde": false,
+        "speed": 1.046912
+      },
+      "Saturn": {
+        "longitude": 38.951683,
+        "sign_index": 1,
+        "degree_in_sign": 8.951683,
+        "is_retrograde": false,
+        "speed": 0.092773
+      },
+      "Rahu": {
+        "longitude": 278.533741,
+        "sign_index": 9,
+        "degree_in_sign": 8.533741,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 98.533741,
+        "sign_index": 3,
+        "degree_in_sign": 8.533741,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

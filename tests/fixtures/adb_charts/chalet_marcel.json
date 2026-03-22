@@ -1,0 +1,108 @@
+{
+  "adb_id": 68082,
+  "name": "Chalet, Marcel",
+  "given_name": "Marcel Chalet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423365.513889,
+    "year": 1922,
+    "month": 11,
+    "day": 7,
+    "calendar": "g",
+    "time": "00:20",
+    "time_type": "s",
+    "hour": 0.333333,
+    "time_unknown": false,
+    "place": "Blesle",
+    "country": "France",
+    "lat": 45.319722,
+    "lon": 3.171389
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chalet,_Marcel",
+  "source_notes": "Didier Geslain archive, 'police justice' pdf file, p. 21.\\n",
+  "categories": [
+    "Vocation : Law : Police"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 16.955613,
+    "lagna": 106.955613,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.779559,
+    "jd_ut": 2423365.513889,
+    "planets": {
+      "Sun": {
+        "longitude": 201.032507,
+        "sign_index": 6,
+        "degree_in_sign": 21.032507,
+        "is_retrograde": false,
+        "speed": 1.003404
+      },
+      "Moon": {
+        "longitude": 46.58798,
+        "sign_index": 1,
+        "degree_in_sign": 16.58798,
+        "is_retrograde": false,
+        "speed": 8.809065
+      },
+      "Mars": {
+        "longitude": 282.28152,
+        "sign_index": 9,
+        "degree_in_sign": 12.28152,
+        "is_retrograde": false,
+        "speed": 0.705311
+      },
+      "Mercury": {
+        "longitude": 184.367557,
+        "sign_index": 6,
+        "degree_in_sign": 4.367557,
+        "is_retrograde": false,
+        "speed": 1.453567
+      },
+      "Jupiter": {
+        "longitude": 189.656688,
+        "sign_index": 6,
+        "degree_in_sign": 9.656688,
+        "is_retrograde": false,
+        "speed": 0.216041
+      },
+      "Venus": {
+        "longitude": 226.946379,
+        "sign_index": 7,
+        "degree_in_sign": 16.946379,
+        "is_retrograde": true,
+        "speed": -0.095859
+      },
+      "Saturn": {
+        "longitude": 171.881246,
+        "sign_index": 5,
+        "degree_in_sign": 21.881246,
+        "is_retrograde": false,
+        "speed": 0.112682
+      },
+      "Rahu": {
+        "longitude": 154.476137,
+        "sign_index": 5,
+        "degree_in_sign": 4.476137,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 334.476137,
+        "sign_index": 11,
+        "degree_in_sign": 4.476137,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

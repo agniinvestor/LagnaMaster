@@ -1,0 +1,110 @@
+{
+  "adb_id": 68330,
+  "name": "Comparini, Anne-Marie",
+  "given_name": "Anne-Marie Comparini",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432377.625,
+    "year": 1947,
+    "month": 7,
+    "day": 11,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Orange",
+    "country": "France",
+    "lat": 44.133333,
+    "lon": 4.8
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comparini,_Anne-Marie",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 194.\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Notable : Awards : Public Service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 16.358345,
+    "lagna": 46.358345,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.124126,
+    "jd_ut": 2432377.625,
+    "planets": {
+      "Sun": {
+        "longitude": 84.861555,
+        "sign_index": 2,
+        "degree_in_sign": 24.861555,
+        "is_retrograde": false,
+        "speed": 0.953436
+      },
+      "Moon": {
+        "longitude": 351.032682,
+        "sign_index": 11,
+        "degree_in_sign": 21.032682,
+        "is_retrograde": false,
+        "speed": 9.877281
+      },
+      "Mars": {
+        "longitude": 43.918318,
+        "sign_index": 1,
+        "degree_in_sign": 13.918318,
+        "is_retrograde": false,
+        "speed": 0.700098
+      },
+      "Mercury": {
+        "longitude": 90.687248,
+        "sign_index": 3,
+        "degree_in_sign": 0.687248,
+        "is_retrograde": true,
+        "speed": -0.607905
+      },
+      "Jupiter": {
+        "longitude": 204.607641,
+        "sign_index": 6,
+        "degree_in_sign": 24.607641,
+        "is_retrograde": true,
+        "speed": -0.014724
+      },
+      "Venus": {
+        "longitude": 70.008999,
+        "sign_index": 2,
+        "degree_in_sign": 10.008999,
+        "is_retrograde": false,
+        "speed": 1.221555
+      },
+      "Saturn": {
+        "longitude": 106.072216,
+        "sign_index": 3,
+        "degree_in_sign": 16.072216,
+        "is_retrograde": false,
+        "speed": 0.1228
+      },
+      "Rahu": {
+        "longitude": 36.905679,
+        "sign_index": 1,
+        "degree_in_sign": 6.905679,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 216.905679,
+        "sign_index": 7,
+        "degree_in_sign": 6.905679,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

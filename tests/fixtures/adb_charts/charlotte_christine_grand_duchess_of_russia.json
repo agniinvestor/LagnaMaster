@@ -1,0 +1,108 @@
+{
+  "adb_id": 61830,
+  "name": "Charlotte Christine, Grand Duchess of Russia",
+  "given_name": "Grand Duchess of Russia Charlotte Christine",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2340022.640417,
+    "year": 1694,
+    "month": 8,
+    "day": 20,
+    "calendar": "j",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Kirchheim/Teck",
+    "country": "Germany",
+    "lat": 48.65,
+    "lon": 9.45
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlotte_Christine,_Grand_Duchess_of_Russia",
+  "source_notes": "Sy Scholfield quotes from the German book \"Burg- und Marggräfflich-Brandenburgische Landes- und Regenten-Historie\" by Johann Matthias Groß (Enderes, 1749), p. 538: \"Christiana Charlotta ... welche den 20. Aug. 1694. zu Kirchheim an der Teck früh gegen 4. Uhr gebohren worden.\"\\n\\nTranslation: Christiana Charlotta ... was born on 20 Aug. 1694 at Kirchheim an der Teck toward 4 o'clock in the morning.\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 13.587181,
+    "lagna": 103.587181,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.594815,
+    "jd_ut": 2340022.640417,
+    "planets": {
+      "Sun": {
+        "longitude": 137.482183,
+        "sign_index": 4,
+        "degree_in_sign": 17.482183,
+        "is_retrograde": false,
+        "speed": 0.969075
+      },
+      "Moon": {
+        "longitude": 255.949416,
+        "sign_index": 8,
+        "degree_in_sign": 15.949416,
+        "is_retrograde": false,
+        "speed": 16.347707
+      },
+      "Mars": {
+        "longitude": 176.174312,
+        "sign_index": 5,
+        "degree_in_sign": 26.174312,
+        "is_retrograde": false,
+        "speed": 0.655373
+      },
+      "Mercury": {
+        "longitude": 149.326938,
+        "sign_index": 4,
+        "degree_in_sign": 29.326938,
+        "is_retrograde": true,
+        "speed": -0.722199
+      },
+      "Jupiter": {
+        "longitude": 113.585198,
+        "sign_index": 3,
+        "degree_in_sign": 23.585198,
+        "is_retrograde": false,
+        "speed": 0.210195
+      },
+      "Venus": {
+        "longitude": 100.766481,
+        "sign_index": 3,
+        "degree_in_sign": 10.766481,
+        "is_retrograde": false,
+        "speed": 1.176743
+      },
+      "Saturn": {
+        "longitude": 248.275356,
+        "sign_index": 8,
+        "degree_in_sign": 8.275356,
+        "is_retrograde": true,
+        "speed": -0.00354
+      },
+      "Rahu": {
+        "longitude": 250.997957,
+        "sign_index": 8,
+        "degree_in_sign": 10.997957,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 70.997957,
+        "sign_index": 2,
+        "degree_in_sign": 10.997957,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 50835,
+  "name": "Cox, Allan Verne",
+  "given_name": "Allan Verne Cox",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424866.909722,
+    "year": 1926,
+    "month": 12,
+    "day": 17,
+    "calendar": "g",
+    "time": "01:50",
+    "time_type": "s",
+    "hour": 1.833333,
+    "time_unknown": false,
+    "place": "Santa Ana",
+    "country": "California",
+    "lat": 33.75,
+    "lon": -117.866667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cox,_Allan_Verne",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Personal : Death : Suicide",
+    "Vocation : Science : Physics",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 5.310441,
+    "lagna": 155.310441,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.83696,
+    "jd_ut": 2424866.909722,
+    "planets": {
+      "Sun": {
+        "longitude": 241.878101,
+        "sign_index": 8,
+        "degree_in_sign": 1.878101,
+        "is_retrograde": false,
+        "speed": 1.017434
+      },
+      "Moon": {
+        "longitude": 38.0692,
+        "sign_index": 1,
+        "degree_in_sign": 8.0692,
+        "is_retrograde": false,
+        "speed": 10.781157
+      },
+      "Mars": {
+        "longitude": 12.37426,
+        "sign_index": 0,
+        "degree_in_sign": 12.37426,
+        "is_retrograde": false,
+        "speed": 0.128837
+      },
+      "Mercury": {
+        "longitude": 221.073749,
+        "sign_index": 7,
+        "degree_in_sign": 11.073749,
+        "is_retrograde": false,
+        "speed": 1.189287
+      },
+      "Jupiter": {
+        "longitude": 300.699732,
+        "sign_index": 10,
+        "degree_in_sign": 0.699732,
+        "is_retrograde": false,
+        "speed": 0.176636
+      },
+      "Venus": {
+        "longitude": 248.164628,
+        "sign_index": 8,
+        "degree_in_sign": 8.164628,
+        "is_retrograde": false,
+        "speed": 1.257076
+      },
+      "Saturn": {
+        "longitude": 218.843255,
+        "sign_index": 7,
+        "degree_in_sign": 8.843255,
+        "is_retrograde": false,
+        "speed": 0.112799
+      },
+      "Rahu": {
+        "longitude": 74.914043,
+        "sign_index": 2,
+        "degree_in_sign": 14.914043,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 254.914043,
+        "sign_index": 8,
+        "degree_in_sign": 14.914043,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

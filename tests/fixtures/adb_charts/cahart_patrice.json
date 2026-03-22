@@ -1,0 +1,108 @@
+{
+  "adb_id": 64901,
+  "name": "Cahart, Patrice",
+  "given_name": "Patrice Cahart",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430623.875,
+    "year": 1942,
+    "month": 9,
+    "day": 21,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "d",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Bayeux",
+    "country": "France",
+    "lat": 49.266667,
+    "lon": -0.7
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cahart,_Patrice",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 9.\\n",
+  "categories": [
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 15.584731,
+    "lagna": 165.584731,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.057071,
+    "jd_ut": 2430623.875,
+    "planets": {
+      "Sun": {
+        "longitude": 154.692265,
+        "sign_index": 5,
+        "degree_in_sign": 4.692265,
+        "is_retrograde": false,
+        "speed": 0.977607
+      },
+      "Moon": {
+        "longitude": 292.968132,
+        "sign_index": 9,
+        "degree_in_sign": 22.968132,
+        "is_retrograde": false,
+        "speed": 17.721896
+      },
+      "Mars": {
+        "longitude": 159.505967,
+        "sign_index": 5,
+        "degree_in_sign": 9.505967,
+        "is_retrograde": false,
+        "speed": 0.649
+      },
+      "Mercury": {
+        "longitude": 180.354052,
+        "sign_index": 6,
+        "degree_in_sign": 0.354052,
+        "is_retrograde": false,
+        "speed": 0.65294
+      },
+      "Jupiter": {
+        "longitude": 88.075903,
+        "sign_index": 2,
+        "degree_in_sign": 28.075903,
+        "is_retrograde": false,
+        "speed": 0.145334
+      },
+      "Venus": {
+        "longitude": 140.264062,
+        "sign_index": 4,
+        "degree_in_sign": 20.264062,
+        "is_retrograde": false,
+        "speed": 1.240021
+      },
+      "Saturn": {
+        "longitude": 49.454902,
+        "sign_index": 1,
+        "degree_in_sign": 19.454902,
+        "is_retrograde": false,
+        "speed": 0.007021
+      },
+      "Rahu": {
+        "longitude": 129.840513,
+        "sign_index": 4,
+        "degree_in_sign": 9.840513,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.840513,
+        "sign_index": 10,
+        "degree_in_sign": 9.840513,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

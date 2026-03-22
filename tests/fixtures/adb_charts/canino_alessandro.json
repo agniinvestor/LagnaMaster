@@ -1,0 +1,108 @@
+{
+  "adb_id": 71545,
+  "name": "Canino, Alessandro",
+  "given_name": "Alessandro Canino",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441940.083333,
+    "year": 1973,
+    "month": 9,
+    "day": 14,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "d",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Florence",
+    "country": "Italy",
+    "lat": 43.766667,
+    "lon": 11.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canino,_Alessandro",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.716122,
+    "lagna": 232.716122,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.489776,
+    "jd_ut": 2441940.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 148.109,
+        "sign_index": 4,
+        "degree_in_sign": 28.109,
+        "is_retrograde": false,
+        "speed": 0.973948
+      },
+      "Moon": {
+        "longitude": 352.200548,
+        "sign_index": 11,
+        "degree_in_sign": 22.200548,
+        "is_retrograde": false,
+        "speed": 17.295004
+      },
+      "Mars": {
+        "longitude": 15.56411,
+        "sign_index": 0,
+        "degree_in_sign": 15.56411,
+        "is_retrograde": false,
+        "speed": 0.07825
+      },
+      "Mercury": {
+        "longitude": 158.061463,
+        "sign_index": 5,
+        "degree_in_sign": 8.061463,
+        "is_retrograde": false,
+        "speed": 1.710039
+      },
+      "Jupiter": {
+        "longitude": 279.113708,
+        "sign_index": 9,
+        "degree_in_sign": 9.113708,
+        "is_retrograde": true,
+        "speed": -0.045141
+      },
+      "Venus": {
+        "longitude": 187.91718,
+        "sign_index": 6,
+        "degree_in_sign": 7.91718,
+        "is_retrograde": false,
+        "speed": 1.170901
+      },
+      "Saturn": {
+        "longitude": 70.294827,
+        "sign_index": 2,
+        "degree_in_sign": 10.294827,
+        "is_retrograde": false,
+        "speed": 0.057497
+      },
+      "Rahu": {
+        "longitude": 250.171408,
+        "sign_index": 8,
+        "degree_in_sign": 10.171408,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 70.171408,
+        "sign_index": 2,
+        "degree_in_sign": 10.171408,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 65051,
+  "name": "Colombier, Michel",
+  "given_name": "Michel Colombier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429407.0,
+    "year": 1939,
+    "month": 5,
+    "day": 23,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "d",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colombier,_Michel",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 204.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Song writer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 25.193663,
+    "lagna": 115.193663,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.010544,
+    "jd_ut": 2429407.0,
+    "planets": {
+      "Sun": {
+        "longitude": 38.451527,
+        "sign_index": 1,
+        "degree_in_sign": 8.451527,
+        "is_retrograde": false,
+        "speed": 0.961279
+      },
+      "Moon": {
+        "longitude": 96.132907,
+        "sign_index": 3,
+        "degree_in_sign": 6.132907,
+        "is_retrograde": false,
+        "speed": 11.863107
+      },
+      "Mars": {
+        "longitude": 276.520678,
+        "sign_index": 9,
+        "degree_in_sign": 6.520678,
+        "is_retrograde": false,
+        "speed": 0.313791
+      },
+      "Mercury": {
+        "longitude": 21.990901,
+        "sign_index": 0,
+        "degree_in_sign": 21.990901,
+        "is_retrograde": false,
+        "speed": 1.839649
+      },
+      "Jupiter": {
+        "longitude": 339.205627,
+        "sign_index": 11,
+        "degree_in_sign": 9.205627,
+        "is_retrograde": false,
+        "speed": 0.176412
+      },
+      "Venus": {
+        "longitude": 10.491289,
+        "sign_index": 0,
+        "degree_in_sign": 10.491289,
+        "is_retrograde": false,
+        "speed": 1.205463
+      },
+      "Saturn": {
+        "longitude": 3.059157,
+        "sign_index": 0,
+        "degree_in_sign": 3.059157,
+        "is_retrograde": false,
+        "speed": 0.111069
+      },
+      "Rahu": {
+        "longitude": 194.325236,
+        "sign_index": 6,
+        "degree_in_sign": 14.325236,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 14.325236,
+        "sign_index": 0,
+        "degree_in_sign": 14.325236,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

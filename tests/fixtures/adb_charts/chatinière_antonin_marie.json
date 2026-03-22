@@ -1,0 +1,109 @@
+{
+  "adb_id": 101917,
+  "name": "Chatinière, Antonin Marie",
+  "given_name": "Antonin Marie Chatinière",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388842.739213,
+    "year": 1828,
+    "month": 4,
+    "day": 30,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Montpellier",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 3.883333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chatinière,_Antonin_Marie",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file [https://commons.wikimedia.org/wiki/File:Chatiniere_Antonin_Marie_acte_de_naissance_30-04-1828.jpg].\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 18.080863,
+    "lagna": 18.080863,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.459968,
+    "jd_ut": 2388842.739213,
+    "planets": {
+      "Sun": {
+        "longitude": 18.36179,
+        "sign_index": 0,
+        "degree_in_sign": 18.36179,
+        "is_retrograde": false,
+        "speed": 0.969255
+      },
+      "Moon": {
+        "longitude": 201.650144,
+        "sign_index": 6,
+        "degree_in_sign": 21.650144,
+        "is_retrograde": false,
+        "speed": 13.246349
+      },
+      "Mars": {
+        "longitude": 258.25038,
+        "sign_index": 8,
+        "degree_in_sign": 18.25038,
+        "is_retrograde": false,
+        "speed": 0.305427
+      },
+      "Mercury": {
+        "longitude": 355.884619,
+        "sign_index": 11,
+        "degree_in_sign": 25.884619,
+        "is_retrograde": false,
+        "speed": 1.564407
+      },
+      "Jupiter": {
+        "longitude": 198.04211,
+        "sign_index": 6,
+        "degree_in_sign": 18.04211,
+        "is_retrograde": true,
+        "speed": -0.127537
+      },
+      "Venus": {
+        "longitude": 62.656966,
+        "sign_index": 2,
+        "degree_in_sign": 2.656966,
+        "is_retrograde": false,
+        "speed": 1.069279
+      },
+      "Saturn": {
+        "longitude": 83.7332,
+        "sign_index": 2,
+        "degree_in_sign": 23.7332,
+        "is_retrograde": false,
+        "speed": 0.077291
+      },
+      "Rahu": {
+        "longitude": 183.911542,
+        "sign_index": 6,
+        "degree_in_sign": 3.911542,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 3.911542,
+        "sign_index": 0,
+        "degree_in_sign": 3.911542,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

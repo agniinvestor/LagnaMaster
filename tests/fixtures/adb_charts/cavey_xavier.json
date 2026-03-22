@@ -1,0 +1,108 @@
+{
+  "adb_id": 69896,
+  "name": "Cavey, Xavier",
+  "given_name": "Xavier Cavey",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431799.284722,
+    "year": 1945,
+    "month": 12,
+    "day": 9,
+    "calendar": "g",
+    "time": "19:50",
+    "time_type": "s",
+    "hour": 19.833333,
+    "time_unknown": false,
+    "place": "Nonant le Pin",
+    "country": "France",
+    "lat": 48.7,
+    "lon": 0.216667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavey,_Xavier",
+  "source_notes": "Didier Geslain archive, 'hippisme drivers' pdf file, p. 37.\\n",
+  "categories": [
+    "Vocation : Sports Business : Other Sports Business"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 8.821115,
+    "lagna": 68.821115,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.102013,
+    "jd_ut": 2431799.284722,
+    "planets": {
+      "Sun": {
+        "longitude": 234.261644,
+        "sign_index": 7,
+        "degree_in_sign": 24.261644,
+        "is_retrograde": false,
+        "speed": 1.016391
+      },
+      "Moon": {
+        "longitude": 290.736993,
+        "sign_index": 9,
+        "degree_in_sign": 20.736993,
+        "is_retrograde": false,
+        "speed": 10.472491
+      },
+      "Mars": {
+        "longitude": 99.972467,
+        "sign_index": 3,
+        "degree_in_sign": 9.972467,
+        "is_retrograde": true,
+        "speed": -0.066654
+      },
+      "Mercury": {
+        "longitude": 228.699497,
+        "sign_index": 7,
+        "degree_in_sign": 18.699497,
+        "is_retrograde": true,
+        "speed": -1.255516
+      },
+      "Jupiter": {
+        "longitude": 178.572938,
+        "sign_index": 5,
+        "degree_in_sign": 28.572938,
+        "is_retrograde": false,
+        "speed": 0.162324
+      },
+      "Venus": {
+        "longitude": 221.378509,
+        "sign_index": 7,
+        "degree_in_sign": 11.378509,
+        "is_retrograde": false,
+        "speed": 1.256944
+      },
+      "Saturn": {
+        "longitude": 90.809503,
+        "sign_index": 3,
+        "degree_in_sign": 0.809503,
+        "is_retrograde": true,
+        "speed": -0.057402
+      },
+      "Rahu": {
+        "longitude": 67.553123,
+        "sign_index": 2,
+        "degree_in_sign": 7.553123,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 247.553123,
+        "sign_index": 8,
+        "degree_in_sign": 7.553123,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

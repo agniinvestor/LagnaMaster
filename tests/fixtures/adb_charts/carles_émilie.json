@@ -1,0 +1,110 @@
+{
+  "adb_id": 86858,
+  "name": "Carles, Émilie",
+  "given_name": "Émilie Carles",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415168.618507,
+    "year": 1900,
+    "month": 5,
+    "day": 29,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Val-des-Prés",
+    "country": "France",
+    "lat": 44.949167,
+    "lon": 6.679167
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carles,_Émilie",
+  "source_notes": "Sy Scholfield provided birth certificate posted on Twitter [https://twitter.com/themys073/status/1043796789676167168].\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 0.079612,
+    "lagna": 0.079612,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.466193,
+    "jd_ut": 2415168.618507,
+    "planets": {
+      "Sun": {
+        "longitude": 44.794305,
+        "sign_index": 1,
+        "degree_in_sign": 14.794305,
+        "is_retrograde": false,
+        "speed": 0.959179
+      },
+      "Moon": {
+        "longitude": 51.563962,
+        "sign_index": 1,
+        "degree_in_sign": 21.563962,
+        "is_retrograde": false,
+        "speed": 16.894203
+      },
+      "Mars": {
+        "longitude": 16.2806,
+        "sign_index": 0,
+        "degree_in_sign": 16.2806,
+        "is_retrograde": false,
+        "speed": 0.740164
+      },
+      "Mercury": {
+        "longitude": 43.341344,
+        "sign_index": 1,
+        "degree_in_sign": 13.341344,
+        "is_retrograde": false,
+        "speed": 2.194578
+      },
+      "Jupiter": {
+        "longitude": 223.365303,
+        "sign_index": 7,
+        "degree_in_sign": 13.365303,
+        "is_retrograde": true,
+        "speed": -0.127513
+      },
+      "Venus": {
+        "longitude": 85.585155,
+        "sign_index": 2,
+        "degree_in_sign": 25.585155,
+        "is_retrograde": false,
+        "speed": 0.575752
+      },
+      "Saturn": {
+        "longitude": 251.059111,
+        "sign_index": 8,
+        "degree_in_sign": 11.059111,
+        "is_retrograde": true,
+        "speed": -0.061821
+      },
+      "Rahu": {
+        "longitude": 228.846822,
+        "sign_index": 7,
+        "degree_in_sign": 18.846822,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 48.846822,
+        "sign_index": 1,
+        "degree_in_sign": 18.846822,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

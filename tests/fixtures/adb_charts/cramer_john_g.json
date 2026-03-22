@@ -1,0 +1,110 @@
+{
+  "adb_id": 73173,
+  "name": "Cramer, John G",
+  "given_name": "John G Cramer",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427735.460417,
+    "year": 1934,
+    "month": 10,
+    "day": 24,
+    "calendar": "g",
+    "time": "17:03",
+    "time_type": "s",
+    "hour": 17.05,
+    "time_unknown": false,
+    "place": "Houston",
+    "country": "Texas",
+    "lat": 29.766667,
+    "lon": -95.366667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cramer,_John_G",
+  "source_notes": "Sy Scholfield quotes birth certificate [https://familysearch.org/ark:/61903/1:1:K6G7-M61].\\n",
+  "categories": [
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Sci-Fi/ Fantasy/ Horror",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 2.811147,
+    "lagna": 332.811147,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.946634,
+    "jd_ut": 2427735.460417,
+    "planets": {
+      "Sun": {
+        "longitude": 187.898713,
+        "sign_index": 6,
+        "degree_in_sign": 7.898713,
+        "is_retrograde": false,
+        "speed": 0.996486
+      },
+      "Moon": {
+        "longitude": 37.532031,
+        "sign_index": 1,
+        "degree_in_sign": 7.532031,
+        "is_retrograde": false,
+        "speed": 16.845468
+      },
+      "Mars": {
+        "longitude": 131.027139,
+        "sign_index": 4,
+        "degree_in_sign": 11.027139,
+        "is_retrograde": false,
+        "speed": 0.585064
+      },
+      "Mercury": {
+        "longitude": 205.627972,
+        "sign_index": 6,
+        "degree_in_sign": 25.627972,
+        "is_retrograde": true,
+        "speed": -0.294141
+      },
+      "Jupiter": {
+        "longitude": 190.034967,
+        "sign_index": 6,
+        "degree_in_sign": 10.034967,
+        "is_retrograde": false,
+        "speed": 0.218187
+      },
+      "Venus": {
+        "longitude": 181.589049,
+        "sign_index": 6,
+        "degree_in_sign": 1.589049,
+        "is_retrograde": false,
+        "speed": 1.252758
+      },
+      "Saturn": {
+        "longitude": 298.550812,
+        "sign_index": 9,
+        "degree_in_sign": 28.550812,
+        "is_retrograde": true,
+        "speed": -0.003066
+      },
+      "Rahu": {
+        "longitude": 282.903582,
+        "sign_index": 9,
+        "degree_in_sign": 12.903582,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 102.903582,
+        "sign_index": 3,
+        "degree_in_sign": 12.903582,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

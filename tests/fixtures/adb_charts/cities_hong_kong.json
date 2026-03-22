@@ -1,0 +1,108 @@
+{
+  "adb_id": 74314,
+  "name": "Cities: Hong Kong",
+  "given_name": "Cities: Hong Kong",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2450630.166667,
+    "year": 1997,
+    "month": 7,
+    "day": 1,
+    "calendar": "g",
+    "time": "00:00",
+    "time_type": "s",
+    "hour": 0.0,
+    "time_unknown": false,
+    "place": "Hong Kong",
+    "country": "China",
+    "lat": 22.283333,
+    "lon": 114.15
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cities:_Hong_Kong",
+  "source_notes": "Live-TV (time personally stopped)\\n",
+  "categories": [
+    "Mundane : Political : Birth of State or Country"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 16.207992,
+    "lagna": 316.207992,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.822105,
+    "jd_ut": 2450630.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 75.06561,
+        "sign_index": 2,
+        "degree_in_sign": 15.06561,
+        "is_retrograde": false,
+        "speed": 0.953633
+      },
+      "Moon": {
+        "longitude": 25.706563,
+        "sign_index": 0,
+        "degree_in_sign": 25.706563,
+        "is_retrograde": false,
+        "speed": 17.434542
+      },
+      "Mars": {
+        "longitude": 161.375592,
+        "sign_index": 5,
+        "degree_in_sign": 11.375592,
+        "is_retrograde": false,
+        "speed": 0.483119
+      },
+      "Mercury": {
+        "longitude": 80.935871,
+        "sign_index": 2,
+        "degree_in_sign": 20.935871,
+        "is_retrograde": false,
+        "speed": 2.118107
+      },
+      "Jupiter": {
+        "longitude": 297.448328,
+        "sign_index": 9,
+        "degree_in_sign": 27.448328,
+        "is_retrograde": true,
+        "speed": -0.064057
+      },
+      "Venus": {
+        "longitude": 98.476089,
+        "sign_index": 3,
+        "degree_in_sign": 8.476089,
+        "is_retrograde": false,
+        "speed": 1.215086
+      },
+      "Saturn": {
+        "longitude": 355.674245,
+        "sign_index": 11,
+        "degree_in_sign": 25.674245,
+        "is_retrograde": false,
+        "speed": 0.052799
+      },
+      "Rahu": {
+        "longitude": 149.666283,
+        "sign_index": 4,
+        "degree_in_sign": 29.666283,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 329.666283,
+        "sign_index": 10,
+        "degree_in_sign": 29.666283,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

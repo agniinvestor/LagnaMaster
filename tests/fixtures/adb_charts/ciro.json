@@ -1,0 +1,113 @@
+{
+  "adb_id": 100247,
+  "name": "Ciro",
+  "given_name": "Ciro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2447635.020833,
+    "year": 1989,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "s",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Salgueiro (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.066944,
+    "lon": -39.119722
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ciro",
+  "source_notes": "Birth entry from civil registry book in hand from Sy Scholfield, copy on file (Pernambuco Archives). \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 4.772851,
+    "lagna": 34.772851,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.70756,
+    "jd_ut": 2447635.020833,
+    "planets": {
+      "Sun": {
+        "longitude": 4.738571,
+        "sign_index": 0,
+        "degree_in_sign": 4.738571,
+        "is_retrograde": false,
+        "speed": 0.976796
+      },
+      "Moon": {
+        "longitude": 156.159521,
+        "sign_index": 5,
+        "degree_in_sign": 6.159521,
+        "is_retrograde": false,
+        "speed": 16.672402
+      },
+      "Mars": {
+        "longitude": 59.700212,
+        "sign_index": 1,
+        "degree_in_sign": 29.700212,
+        "is_retrograde": false,
+        "speed": 0.617086
+      },
+      "Mercury": {
+        "longitude": 19.414999,
+        "sign_index": 0,
+        "degree_in_sign": 19.414999,
+        "is_retrograde": false,
+        "speed": 1.854343
+      },
+      "Jupiter": {
+        "longitude": 43.187841,
+        "sign_index": 1,
+        "degree_in_sign": 13.187841,
+        "is_retrograde": false,
+        "speed": 0.206614
+      },
+      "Venus": {
+        "longitude": 8.229668,
+        "sign_index": 0,
+        "degree_in_sign": 8.229668,
+        "is_retrograde": false,
+        "speed": 1.236546
+      },
+      "Saturn": {
+        "longitude": 260.201897,
+        "sign_index": 8,
+        "degree_in_sign": 20.201897,
+        "is_retrograde": false,
+        "speed": 0.007257
+      },
+      "Rahu": {
+        "longitude": 308.385108,
+        "sign_index": 10,
+        "degree_in_sign": 8.385108,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 128.385108,
+        "sign_index": 4,
+        "degree_in_sign": 8.385108,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

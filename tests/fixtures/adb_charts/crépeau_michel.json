@@ -1,0 +1,109 @@
+{
+  "adb_id": 68161,
+  "name": "Crépeau, Michel",
+  "given_name": "Michel Crépeau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426279.666667,
+    "year": 1930,
+    "month": 10,
+    "day": 30,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Fontenay le Comte",
+    "country": "France",
+    "lat": 46.466667,
+    "lon": -0.8
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crépeau,_Michel",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 8.\\n",
+  "categories": [
+    "Vocation : Law : Other Law",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 19.420263,
+    "lagna": 139.420263,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.890974,
+    "jd_ut": 2426279.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 193.124012,
+        "sign_index": 6,
+        "degree_in_sign": 13.124012,
+        "is_retrograde": false,
+        "speed": 0.999545
+      },
+      "Moon": {
+        "longitude": 291.083176,
+        "sign_index": 9,
+        "degree_in_sign": 21.083176,
+        "is_retrograde": false,
+        "speed": 14.843877
+      },
+      "Mars": {
+        "longitude": 101.482293,
+        "sign_index": 3,
+        "degree_in_sign": 11.482293,
+        "is_retrograde": false,
+        "speed": 0.434346
+      },
+      "Mercury": {
+        "longitude": 188.04496,
+        "sign_index": 6,
+        "degree_in_sign": 8.04496,
+        "is_retrograde": false,
+        "speed": 1.66756
+      },
+      "Jupiter": {
+        "longitude": 87.494295,
+        "sign_index": 2,
+        "degree_in_sign": 27.494295,
+        "is_retrograde": false,
+        "speed": 0.029353
+      },
+      "Venus": {
+        "longitude": 224.323207,
+        "sign_index": 7,
+        "degree_in_sign": 14.323207,
+        "is_retrograde": false,
+        "speed": 0.116251
+      },
+      "Saturn": {
+        "longitude": 254.352819,
+        "sign_index": 8,
+        "degree_in_sign": 14.352819,
+        "is_retrograde": false,
+        "speed": 0.075514
+      },
+      "Rahu": {
+        "longitude": 0.049114,
+        "sign_index": 0,
+        "degree_in_sign": 0.049114,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 180.049114,
+        "sign_index": 6,
+        "degree_in_sign": 0.049114,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

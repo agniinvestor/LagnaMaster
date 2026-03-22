@@ -1,0 +1,112 @@
+{
+  "adb_id": 97801,
+  "name": "Chamberlin, Robert P.",
+  "given_name": "Robert P. Chamberlin",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438856.971528,
+    "year": 1965,
+    "month": 4,
+    "day": 6,
+    "calendar": "g",
+    "time": "05:19",
+    "time_type": "s",
+    "hour": 5.316667,
+    "time_unknown": false,
+    "place": "Memphis",
+    "country": "Tennessee",
+    "lat": 35.15,
+    "lon": -90.05
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamberlin,_Robert_P.",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Commercial Appeal'' (Memphis, Tennessee), 7 April 1965, page 26, born at Baptist Hospital, son of Mr. and Mrs. L. P. \"Chamberlain\" (a typo).\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Law : Jurist",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 19.895771,
+    "lagna": 319.895771,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.371879,
+    "jd_ut": 2438856.971528,
+    "planets": {
+      "Sun": {
+        "longitude": 353.076881,
+        "sign_index": 11,
+        "degree_in_sign": 23.076881,
+        "is_retrograde": false,
+        "speed": 0.983836
+      },
+      "Moon": {
+        "longitude": 49.843454,
+        "sign_index": 1,
+        "degree_in_sign": 19.843454,
+        "is_retrograde": false,
+        "speed": 18.558174
+      },
+      "Mars": {
+        "longitude": 136.507668,
+        "sign_index": 4,
+        "degree_in_sign": 16.507668,
+        "is_retrograde": true,
+        "speed": -0.173905
+      },
+      "Mercury": {
+        "longitude": 356.690306,
+        "sign_index": 11,
+        "degree_in_sign": 26.690306,
+        "is_retrograde": true,
+        "speed": -0.711939
+      },
+      "Jupiter": {
+        "longitude": 33.179985,
+        "sign_index": 1,
+        "degree_in_sign": 3.179985,
+        "is_retrograde": false,
+        "speed": 0.206103
+      },
+      "Venus": {
+        "longitude": 351.607818,
+        "sign_index": 11,
+        "degree_in_sign": 21.607818,
+        "is_retrograde": false,
+        "speed": 1.240177
+      },
+      "Saturn": {
+        "longitude": 318.808928,
+        "sign_index": 10,
+        "degree_in_sign": 18.808928,
+        "is_retrograde": false,
+        "speed": 0.10798
+      },
+      "Rahu": {
+        "longitude": 53.551798,
+        "sign_index": 1,
+        "degree_in_sign": 23.551798,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 233.551798,
+        "sign_index": 7,
+        "degree_in_sign": 23.551798,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

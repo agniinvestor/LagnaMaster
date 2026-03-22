@@ -1,0 +1,110 @@
+{
+  "adb_id": 71404,
+  "name": "Cabrera, Lydia",
+  "given_name": "Lydia Cabrera",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415160.562222,
+    "year": 1900,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Havana",
+    "country": "Cuba",
+    "lat": 23.133333,
+    "lon": -82.366667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabrera,_Lydia",
+  "source_notes": "Castellanos quotes birth certificate:\\nAmérica negra, Números 11-12\\nPontificia Universidad Javeriana, 1996\\n",
+  "categories": [
+    "Vocation : Science : Anthropology",
+    "Vocation : Writers : Poet",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 3.877438,
+    "lagna": 213.877438,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.465885,
+    "jd_ut": 2415160.562222,
+    "planets": {
+      "Sun": {
+        "longitude": 37.057552,
+        "sign_index": 1,
+        "degree_in_sign": 7.057552,
+        "is_retrograde": false,
+        "speed": 0.961438
+      },
+      "Moon": {
+        "longitude": 297.091658,
+        "sign_index": 9,
+        "degree_in_sign": 27.091658,
+        "is_retrograde": false,
+        "speed": 17.885777
+      },
+      "Mars": {
+        "longitude": 10.28839,
+        "sign_index": 0,
+        "degree_in_sign": 10.28839,
+        "is_retrograde": false,
+        "speed": 0.747271
+      },
+      "Mercury": {
+        "longitude": 26.228061,
+        "sign_index": 0,
+        "degree_in_sign": 26.228061,
+        "is_retrograde": false,
+        "speed": 2.023352
+      },
+      "Jupiter": {
+        "longitude": 224.387342,
+        "sign_index": 7,
+        "degree_in_sign": 14.387342,
+        "is_retrograde": true,
+        "speed": -0.125212
+      },
+      "Venus": {
+        "longitude": 80.311162,
+        "sign_index": 2,
+        "degree_in_sign": 20.311162,
+        "is_retrograde": false,
+        "speed": 0.725918
+      },
+      "Saturn": {
+        "longitude": 251.525167,
+        "sign_index": 8,
+        "degree_in_sign": 11.525167,
+        "is_retrograde": true,
+        "speed": -0.053568
+      },
+      "Rahu": {
+        "longitude": 229.273741,
+        "sign_index": 7,
+        "degree_in_sign": 19.273741,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 49.273741,
+        "sign_index": 1,
+        "degree_in_sign": 19.273741,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

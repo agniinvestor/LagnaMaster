@@ -1,0 +1,115 @@
+{
+  "adb_id": 90991,
+  "name": "Castex, Jean",
+  "given_name": "Jean Castex",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438937.0,
+    "year": 1965,
+    "month": 6,
+    "day": 25,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Vic-Fezensac",
+    "country": "France",
+    "lat": 43.766667,
+    "lon": 0.3
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castex,_Jean",
+  "source_notes": "Didier Geslain quoted bc.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Asthma",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Law : Legal system employee",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Government employee",
+    "Vocation : Politics : Heads of state",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 16.115094,
+    "lagna": 136.115094,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.37494,
+    "jd_ut": 2438937.0,
+    "planets": {
+      "Sun": {
+        "longitude": 70.329415,
+        "sign_index": 2,
+        "degree_in_sign": 10.329415,
+        "is_retrograde": false,
+        "speed": 0.95398
+      },
+      "Moon": {
+        "longitude": 19.352108,
+        "sign_index": 0,
+        "degree_in_sign": 19.352108,
+        "is_retrograde": false,
+        "speed": 11.08052
+      },
+      "Mars": {
+        "longitude": 154.880512,
+        "sign_index": 5,
+        "degree_in_sign": 4.880512,
+        "is_retrograde": false,
+        "speed": 0.486164
+      },
+      "Mercury": {
+        "longitude": 85.738036,
+        "sign_index": 2,
+        "degree_in_sign": 25.738036,
+        "is_retrograde": false,
+        "speed": 1.877727
+      },
+      "Jupiter": {
+        "longitude": 51.341109,
+        "sign_index": 1,
+        "degree_in_sign": 21.341109,
+        "is_retrograde": false,
+        "speed": 0.226294
+      },
+      "Venus": {
+        "longitude": 90.024563,
+        "sign_index": 3,
+        "degree_in_sign": 0.024563,
+        "is_retrograde": false,
+        "speed": 1.220087
+      },
+      "Saturn": {
+        "longitude": 323.844489,
+        "sign_index": 10,
+        "degree_in_sign": 23.844489,
+        "is_retrograde": false,
+        "speed": 0.004483
+      },
+      "Rahu": {
+        "longitude": 49.310926,
+        "sign_index": 1,
+        "degree_in_sign": 19.310926,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 229.310926,
+        "sign_index": 7,
+        "degree_in_sign": 19.310926,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 61510,
+  "name": "Clawson, Del M.",
+  "given_name": "Del M. Clawson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420144.208333,
+    "year": 1914,
+    "month": 1,
+    "day": 11,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Thatcher",
+    "country": "Arizona",
+    "lat": 32.85,
+    "lon": -109.766667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clawson,_Del_M.",
+  "source_notes": "Sy Scholfield quotes birth certificate:  http://genealogy.az.gov/azbirth/414/414-0212.pdf; http://genealogy.az.gov/azbirth/414/414-0213.pdf\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 23.175863,
+    "lagna": 293.175863,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.656405,
+    "jd_ut": 2420144.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 268.000859,
+        "sign_index": 8,
+        "degree_in_sign": 28.000859,
+        "is_retrograde": false,
+        "speed": 1.018505
+      },
+      "Moon": {
+        "longitude": 81.154414,
+        "sign_index": 2,
+        "degree_in_sign": 21.154414,
+        "is_retrograde": false,
+        "speed": 18.268415
+      },
+      "Mars": {
+        "longitude": 79.640689,
+        "sign_index": 2,
+        "degree_in_sign": 19.640689,
+        "is_retrograde": true,
+        "speed": -0.37691
+      },
+      "Mercury": {
+        "longitude": 259.576771,
+        "sign_index": 8,
+        "degree_in_sign": 19.576771,
+        "is_retrograde": false,
+        "speed": 1.576018
+      },
+      "Jupiter": {
+        "longitude": 275.003824,
+        "sign_index": 9,
+        "degree_in_sign": 5.003824,
+        "is_retrograde": false,
+        "speed": 0.234812
+      },
+      "Venus": {
+        "longitude": 260.523131,
+        "sign_index": 8,
+        "degree_in_sign": 20.523131,
+        "is_retrograde": false,
+        "speed": 1.257088
+      },
+      "Saturn": {
+        "longitude": 49.439548,
+        "sign_index": 1,
+        "degree_in_sign": 19.439548,
+        "is_retrograde": true,
+        "speed": -0.054645
+      },
+      "Rahu": {
+        "longitude": 325.179854,
+        "sign_index": 10,
+        "degree_in_sign": 25.179854,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 145.179854,
+        "sign_index": 4,
+        "degree_in_sign": 25.179854,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 45579,
+  "name": "Connolly, John J. II",
+  "given_name": "John J. II Connolly",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2447758.167361,
+    "year": 1989,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "12:01",
+    "time_type": "d",
+    "hour": 12.016667,
+    "time_unknown": false,
+    "place": "Boston",
+    "country": "Massachusetts",
+    "lat": 42.366667,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connolly,_John_J._II",
+  "source_notes": "McEvoy quotes B.C.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Memories Bad"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 19.194524,
+    "lagna": 169.194524,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.712269,
+    "jd_ut": 2447758.167361,
+    "planets": {
+      "Sun": {
+        "longitude": 122.924489,
+        "sign_index": 4,
+        "degree_in_sign": 2.924489,
+        "is_retrograde": false,
+        "speed": 0.962099
+      },
+      "Moon": {
+        "longitude": 336.795695,
+        "sign_index": 11,
+        "degree_in_sign": 6.795695,
+        "is_retrograde": false,
+        "speed": 17.668384
+      },
+      "Mars": {
+        "longitude": 136.467813,
+        "sign_index": 4,
+        "degree_in_sign": 16.467813,
+        "is_retrograde": false,
+        "speed": 0.634703
+      },
+      "Mercury": {
+        "longitude": 148.366168,
+        "sign_index": 4,
+        "degree_in_sign": 28.366168,
+        "is_retrograde": false,
+        "speed": 1.306796
+      },
+      "Jupiter": {
+        "longitude": 70.072168,
+        "sign_index": 2,
+        "degree_in_sign": 10.072168,
+        "is_retrograde": false,
+        "speed": 0.178893
+      },
+      "Venus": {
+        "longitude": 158.171278,
+        "sign_index": 5,
+        "degree_in_sign": 8.171278,
+        "is_retrograde": false,
+        "speed": 1.189153
+      },
+      "Saturn": {
+        "longitude": 253.99588,
+        "sign_index": 8,
+        "degree_in_sign": 13.99588,
+        "is_retrograde": true,
+        "speed": -0.035387
+      },
+      "Rahu": {
+        "longitude": 301.859324,
+        "sign_index": 10,
+        "degree_in_sign": 1.859324,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 121.859324,
+        "sign_index": 4,
+        "degree_in_sign": 1.859324,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

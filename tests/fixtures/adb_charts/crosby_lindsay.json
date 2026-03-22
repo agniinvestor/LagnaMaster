@@ -1,0 +1,120 @@
+{
+  "adb_id": 8103,
+  "name": "Crosby, Lindsay",
+  "given_name": "Lindsay Crosby",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428904.038194,
+    "year": 1938,
+    "month": 1,
+    "day": 5,
+    "calendar": "g",
+    "time": "04:55",
+    "time_type": "s",
+    "hour": 4.916667,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crosby,_Lindsay",
+  "source_notes": "\\nB.C. in hand from the Wilsons, but they had misread the BC as 6 January.\\nCareful examination reveals it as 5 January (compare to the 6 in 26 further below in the BC fragment; the 6 is much rounder)\\n",
+  "categories": [
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Diagnoses : Psychological : Depression",
+    "Family : Childhood : Abuse - Physical/ Verbal",
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Family : Childhood : Sibling circumstances",
+    "Family : Relationship : Number of Divorces",
+    "Family : Relationship : Number of Marriages",
+    "Lifestyle : Financial : Extreme ups and downs",
+    "Lifestyle : Financial : Gain - Inheritance",
+    "Personal : Death : Suicide",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 28.929074,
+    "lagna": 208.929074,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.991313,
+    "jd_ut": 2428904.038194,
+    "planets": {
+      "Sun": {
+        "longitude": 261.553729,
+        "sign_index": 8,
+        "degree_in_sign": 21.553729,
+        "is_retrograde": false,
+        "speed": 1.019554
+      },
+      "Moon": {
+        "longitude": 303.517838,
+        "sign_index": 10,
+        "degree_in_sign": 3.517838,
+        "is_retrograde": false,
+        "speed": 15.943403
+      },
+      "Mars": {
+        "longitude": 318.203762,
+        "sign_index": 10,
+        "degree_in_sign": 18.203762,
+        "is_retrograde": false,
+        "speed": 0.756189
+      },
+      "Mercury": {
+        "longitude": 247.79042,
+        "sign_index": 8,
+        "degree_in_sign": 7.79042,
+        "is_retrograde": true,
+        "speed": -0.692227
+      },
+      "Jupiter": {
+        "longitude": 280.681332,
+        "sign_index": 9,
+        "degree_in_sign": 10.681332,
+        "is_retrograde": false,
+        "speed": 0.230417
+      },
+      "Venus": {
+        "longitude": 254.459353,
+        "sign_index": 8,
+        "degree_in_sign": 14.459353,
+        "is_retrograde": false,
+        "speed": 1.258
+      },
+      "Saturn": {
+        "longitude": 336.413236,
+        "sign_index": 11,
+        "degree_in_sign": 6.413236,
+        "is_retrograde": false,
+        "speed": 0.059674
+      },
+      "Rahu": {
+        "longitude": 220.978224,
+        "sign_index": 7,
+        "degree_in_sign": 10.978224,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 40.978224,
+        "sign_index": 1,
+        "degree_in_sign": 10.978224,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

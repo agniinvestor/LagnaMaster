@@ -1,0 +1,108 @@
+{
+  "adb_id": 68826,
+  "name": "Calvet, Michel-Marie",
+  "given_name": "Michel-Marie Calvet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431183.739583,
+    "year": 1944,
+    "month": 4,
+    "day": 3,
+    "calendar": "g",
+    "time": "07:45",
+    "time_type": "d",
+    "hour": 7.75,
+    "time_unknown": false,
+    "place": "Autun",
+    "country": "France",
+    "lat": 46.95,
+    "lon": 4.3
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvet,_Michel-Marie",
+  "source_notes": "Didier Geslain archive, 'religion1' pdf file, p. 61.\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 7.614081,
+    "lagna": 337.614081,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.078477,
+    "jd_ut": 2431183.739583,
+    "planets": {
+      "Sun": {
+        "longitude": 350.278626,
+        "sign_index": 11,
+        "degree_in_sign": 20.278626,
+        "is_retrograde": false,
+        "speed": 0.985037
+      },
+      "Moon": {
+        "longitude": 110.08926,
+        "sign_index": 3,
+        "degree_in_sign": 20.08926,
+        "is_retrograde": false,
+        "speed": 15.015393
+      },
+      "Mars": {
+        "longitude": 69.876482,
+        "sign_index": 2,
+        "degree_in_sign": 9.876482,
+        "is_retrograde": false,
+        "speed": 0.512276
+      },
+      "Mercury": {
+        "longitude": 6.089642,
+        "sign_index": 0,
+        "degree_in_sign": 6.089642,
+        "is_retrograde": false,
+        "speed": 1.725946
+      },
+      "Jupiter": {
+        "longitude": 114.111414,
+        "sign_index": 3,
+        "degree_in_sign": 24.111414,
+        "is_retrograde": true,
+        "speed": -0.030848
+      },
+      "Venus": {
+        "longitude": 327.990591,
+        "sign_index": 10,
+        "degree_in_sign": 27.990591,
+        "is_retrograde": false,
+        "speed": 1.22974
+      },
+      "Saturn": {
+        "longitude": 58.249772,
+        "sign_index": 1,
+        "degree_in_sign": 28.249772,
+        "is_retrograde": false,
+        "speed": 0.073612
+      },
+      "Rahu": {
+        "longitude": 100.172131,
+        "sign_index": 3,
+        "degree_in_sign": 10.172131,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 280.172131,
+        "sign_index": 9,
+        "degree_in_sign": 10.172131,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 54667,
+  "name": "Chien, Nicole",
+  "given_name": "Nicole Chien",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2453871.675,
+    "year": 2006,
+    "month": 5,
+    "day": 16,
+    "calendar": "g",
+    "time": "12:12",
+    "time_type": "s",
+    "hour": 12.2,
+    "time_unknown": false,
+    "place": "Muntinlupa",
+    "country": "Philippines",
+    "lat": 14.383333,
+    "lon": 121.05
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chien,_Nicole",
+  "source_notes": "Sy Scholfield quotes news reports; the child was born in Asian Hospital in Alabang, Muntinlupa City, in metro Manila.\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 10.856376,
+    "lagna": 100.856376,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.946077,
+    "jd_ut": 2453871.675,
+    "planets": {
+      "Sun": {
+        "longitude": 31.22622,
+        "sign_index": 1,
+        "degree_in_sign": 1.22622,
+        "is_retrograde": false,
+        "speed": 0.963781
+      },
+      "Moon": {
+        "longitude": 246.243271,
+        "sign_index": 8,
+        "degree_in_sign": 6.243271,
+        "is_retrograde": false,
+        "speed": 18.299277
+      },
+      "Mars": {
+        "longitude": 84.908378,
+        "sign_index": 2,
+        "degree_in_sign": 24.908378,
+        "is_retrograde": false,
+        "speed": 0.594906
+      },
+      "Mercury": {
+        "longitude": 28.004701,
+        "sign_index": 0,
+        "degree_in_sign": 28.004701,
+        "is_retrograde": false,
+        "speed": 2.157197
+      },
+      "Jupiter": {
+        "longitude": 198.595117,
+        "sign_index": 6,
+        "degree_in_sign": 18.595117,
+        "is_retrograde": true,
+        "speed": -0.12195
+      },
+      "Venus": {
+        "longitude": 350.58408,
+        "sign_index": 11,
+        "degree_in_sign": 20.58408,
+        "is_retrograde": false,
+        "speed": 1.150072
+      },
+      "Saturn": {
+        "longitude": 101.873724,
+        "sign_index": 3,
+        "degree_in_sign": 11.873724,
+        "is_retrograde": false,
+        "speed": 0.06825
+      },
+      "Rahu": {
+        "longitude": 337.892243,
+        "sign_index": 11,
+        "degree_in_sign": 7.892243,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 157.892243,
+        "sign_index": 5,
+        "degree_in_sign": 7.892243,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

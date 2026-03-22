@@ -1,0 +1,110 @@
+{
+  "adb_id": 93813,
+  "name": "Changy, Charles de",
+  "given_name": "Charles de Changy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2384908.331296,
+    "year": 1817,
+    "month": 7,
+    "day": 22,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "St.Avertin",
+    "country": "France",
+    "lat": 47.366667,
+    "lon": 0.733333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sco",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Changy,_Charles_de",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_in_inventeurs-2.pdf]. \\n",
+  "categories": [
+    "Vocation : Education : Researcher",
+    "Vocation : Engineer : Electrical",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 23.569231,
+    "lagna": 263.569231,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.309615,
+    "jd_ut": 2384908.331296,
+    "planets": {
+      "Sun": {
+        "longitude": 98.237195,
+        "sign_index": 3,
+        "degree_in_sign": 8.237195,
+        "is_retrograde": false,
+        "speed": 0.954981
+      },
+      "Moon": {
+        "longitude": 205.88033,
+        "sign_index": 6,
+        "degree_in_sign": 25.88033,
+        "is_retrograde": false,
+        "speed": 10.256566
+      },
+      "Mars": {
+        "longitude": 21.258226,
+        "sign_index": 0,
+        "degree_in_sign": 21.258226,
+        "is_retrograde": false,
+        "speed": 0.664077
+      },
+      "Mercury": {
+        "longitude": 86.77573,
+        "sign_index": 2,
+        "degree_in_sign": 26.77573,
+        "is_retrograde": false,
+        "speed": 1.991456
+      },
+      "Jupiter": {
+        "longitude": 219.684369,
+        "sign_index": 7,
+        "degree_in_sign": 9.684369,
+        "is_retrograde": true,
+        "speed": -0.018674
+      },
+      "Venus": {
+        "longitude": 52.885482,
+        "sign_index": 1,
+        "degree_in_sign": 22.885482,
+        "is_retrograde": false,
+        "speed": 0.882671
+      },
+      "Saturn": {
+        "longitude": 313.681181,
+        "sign_index": 10,
+        "degree_in_sign": 13.681181,
+        "is_retrograde": true,
+        "speed": -0.053964
+      },
+      "Rahu": {
+        "longitude": 32.404398,
+        "sign_index": 1,
+        "degree_in_sign": 2.404398,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 212.404398,
+        "sign_index": 7,
+        "degree_in_sign": 2.404398,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

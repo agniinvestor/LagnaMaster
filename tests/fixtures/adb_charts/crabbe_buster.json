@@ -1,0 +1,112 @@
+{
+  "adb_id": 4404,
+  "name": "Crabbe, Buster",
+  "given_name": "Buster Crabbe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417978.881944,
+    "year": 1908,
+    "month": 2,
+    "day": 7,
+    "calendar": "g",
+    "time": "01:10",
+    "time_type": "s",
+    "hour": 1.166667,
+    "time_unknown": false,
+    "place": "Oakland",
+    "country": "USA",
+    "lat": 37.8,
+    "lon": -122.266667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crabbe,_Buster",
+  "source_notes": "B.R. in hand from Steinbrecher. (Same in Contemporary American Horoscopes.)\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Heart",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Sports : Swimming",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.381021,
+    "lagna": 184.381021,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.573625,
+    "jd_ut": 2417978.881944,
+    "planets": {
+      "Sun": {
+        "longitude": 294.642979,
+        "sign_index": 9,
+        "degree_in_sign": 24.642979,
+        "is_retrograde": false,
+        "speed": 1.013193
+      },
+      "Moon": {
+        "longitude": 2.020152,
+        "sign_index": 0,
+        "degree_in_sign": 2.020152,
+        "is_retrograde": false,
+        "speed": 15.999178
+      },
+      "Mars": {
+        "longitude": 356.483479,
+        "sign_index": 11,
+        "degree_in_sign": 26.483479,
+        "is_retrograde": false,
+        "speed": 0.697667
+      },
+      "Mercury": {
+        "longitude": 310.933014,
+        "sign_index": 10,
+        "degree_in_sign": 10.933014,
+        "is_retrograde": false,
+        "speed": 1.541698
+      },
+      "Jupiter": {
+        "longitude": 104.909892,
+        "sign_index": 3,
+        "degree_in_sign": 14.909892,
+        "is_retrograde": true,
+        "speed": -0.129975
+      },
+      "Venus": {
+        "longitude": 329.253336,
+        "sign_index": 10,
+        "degree_in_sign": 29.253336,
+        "is_retrograde": false,
+        "speed": 1.217369
+      },
+      "Saturn": {
+        "longitude": 332.550811,
+        "sign_index": 11,
+        "degree_in_sign": 2.550811,
+        "is_retrograde": false,
+        "speed": 0.106856
+      },
+      "Rahu": {
+        "longitude": 79.925045,
+        "sign_index": 2,
+        "degree_in_sign": 19.925045,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 259.925045,
+        "sign_index": 8,
+        "degree_in_sign": 19.925045,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

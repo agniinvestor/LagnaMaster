@@ -1,0 +1,114 @@
+{
+  "adb_id": 24338,
+  "name": "Christina, Queen of Sweden",
+  "given_name": "Queen of Sweden Christina",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2315296.283194,
+    "year": 1626,
+    "month": 12,
+    "day": 8,
+    "calendar": "j",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Stockholm",
+    "country": "Sweden",
+    "lat": 59.333333,
+    "lon": 18.05
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christina,_Queen_of_Sweden",
+  "source_notes": "On 12 August 2014, Sy Scholfield changed the time to 8pm, quoting from the Swedish book, \"Ur drottning Kristinas liv och historia: berättelser ur svenska historien\" [From Queen Christina's life and history: stories from Swedish history] by Anders Tidner (1915), p. 6: \"Emellertid gick vid det kritiska tillfället allt väl för både föräldrarna och det väntade barnet, som föddes den 8 december 1626 klockan 8 på aftonen. Det var en dotter, den blivande drottning Kristina.\"\\nTranslation: However, at the critical moment, all went well for both the parents and the expected child, who was born on 8 December 1626 at 8 o'clock in the evening. A daughter, the future Queen Kristina. \\n\\nPreviously this entry had 11:45am rated C (Orig source not known): Revel in AQ fall/54 quotes biographer  Neumann, \"The Life of Charlotte of Sweden\"  (Martin Harvey \"Nativitas I\" notes the quote of \"vers minuit,\" but also quotes Bernard for the time of 8:46 PM LMT, 28 Leo ASC).\\nUntil correction on 6-aug-2012 the date was wrong, because the Julian date 8 December had been entered as Gregorian.\\nRR was downgraded to C after this email note: I noticed that your source for this data was a biography written by \"Neumann\" titled Queen Charlotte of Sweden. Queen Charlotte of Sweden was born about 100 years after Queen Christina and it doesn't seem likely that Christina's birth time would be mentioned in Charlotte's biography. Since the quoted source is from 1954, I don't see much hope for finding the book (I checked WorldCat and found no listing) so I think this entry should be lowered from \"B\" to \"C\". What do you think?\\nScholfield notes that the book is \"The Life of Christina of Sweden\" by Alfred Neumann (Hutchinson, 1935), published in German as \"Konigin Christine\" (1936). The text of the books is difficult to access on Google Books and no time of birth has been found in them. Neumann is described on Wikipedia as \"a German writer of novels, stories, poems, plays, and films,\" not as a biographer, so if a time of birth exists in these books then perhaps it is the result of poetic licence.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Family : Childhood : Advantaged",
+    "Family : Relationship : Married late/never",
+    "Family : Parenting : Kids none",
+    "Passions : Sexuality : Bi-Sexual",
+    "Notable : Famous : Royal family",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 13.567919,
+    "lagna": 103.567919,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 18.650572,
+    "jd_ut": 2315296.283194,
+    "planets": {
+      "Sun": {
+        "longitude": 248.312456,
+        "sign_index": 8,
+        "degree_in_sign": 8.312456,
+        "is_retrograde": false,
+        "speed": 1.019502
+      },
+      "Moon": {
+        "longitude": 247.797031,
+        "sign_index": 8,
+        "degree_in_sign": 7.797031,
+        "is_retrograde": false,
+        "speed": 14.07984
+      },
+      "Mars": {
+        "longitude": 219.914813,
+        "sign_index": 7,
+        "degree_in_sign": 9.914813,
+        "is_retrograde": false,
+        "speed": 0.700085
+      },
+      "Mercury": {
+        "longitude": 256.311556,
+        "sign_index": 8,
+        "degree_in_sign": 16.311556,
+        "is_retrograde": false,
+        "speed": 1.602117
+      },
+      "Jupiter": {
+        "longitude": 212.295461,
+        "sign_index": 7,
+        "degree_in_sign": 2.295461,
+        "is_retrograde": false,
+        "speed": 0.198594
+      },
+      "Venus": {
+        "longitude": 295.429341,
+        "sign_index": 9,
+        "degree_in_sign": 25.429341,
+        "is_retrograde": false,
+        "speed": 0.968479
+      },
+      "Saturn": {
+        "longitude": 159.57319,
+        "sign_index": 5,
+        "degree_in_sign": 9.57319,
+        "is_retrograde": false,
+        "speed": 0.035857
+      },
+      "Rahu": {
+        "longitude": 121.305382,
+        "sign_index": 4,
+        "degree_in_sign": 1.305382,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 301.305382,
+        "sign_index": 10,
+        "degree_in_sign": 1.305382,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

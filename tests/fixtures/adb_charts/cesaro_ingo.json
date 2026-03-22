@@ -1,0 +1,108 @@
+{
+  "adb_id": 58244,
+  "name": "Cesaro, Ingo",
+  "given_name": "Ingo Cesaro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430302.795139,
+    "year": 1941,
+    "month": 11,
+    "day": 4,
+    "calendar": "g",
+    "time": "09:05",
+    "time_type": "d",
+    "hour": 9.083333,
+    "time_unknown": false,
+    "place": "Kronach",
+    "country": "Germany",
+    "lat": 50.233333,
+    "lon": 11.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cesaro,_Ingo",
+  "source_notes": "Taeger quotes him B.C.\\n",
+  "categories": [
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.30643,
+    "lagna": 184.30643,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.044794,
+    "jd_ut": 2430302.795139,
+    "planets": {
+      "Sun": {
+        "longitude": 198.432894,
+        "sign_index": 6,
+        "degree_in_sign": 18.432894,
+        "is_retrograde": false,
+        "speed": 1.002005
+      },
+      "Moon": {
+        "longitude": 20.039832,
+        "sign_index": 0,
+        "degree_in_sign": 20.039832,
+        "is_retrograde": false,
+        "speed": 13.351994
+      },
+      "Mars": {
+        "longitude": 348.275166,
+        "sign_index": 11,
+        "degree_in_sign": 18.275166,
+        "is_retrograde": true,
+        "speed": -0.080832
+      },
+      "Mercury": {
+        "longitude": 183.375338,
+        "sign_index": 6,
+        "degree_in_sign": 3.375338,
+        "is_retrograde": true,
+        "speed": -0.155713
+      },
+      "Jupiter": {
+        "longitude": 57.368562,
+        "sign_index": 1,
+        "degree_in_sign": 27.368562,
+        "is_retrograde": true,
+        "speed": -0.080785
+      },
+      "Venus": {
+        "longitude": 244.621427,
+        "sign_index": 8,
+        "degree_in_sign": 4.621427,
+        "is_retrograde": false,
+        "speed": 1.098227
+      },
+      "Saturn": {
+        "longitude": 33.100772,
+        "sign_index": 1,
+        "degree_in_sign": 3.100772,
+        "is_retrograde": true,
+        "speed": -0.077281
+      },
+      "Rahu": {
+        "longitude": 146.855198,
+        "sign_index": 4,
+        "degree_in_sign": 26.855198,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 326.855198,
+        "sign_index": 10,
+        "degree_in_sign": 26.855198,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

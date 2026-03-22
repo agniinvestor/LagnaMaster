@@ -1,0 +1,115 @@
+{
+  "adb_id": 96224,
+  "name": "Culpepper, William A.",
+  "given_name": "William A. Culpepper",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2421067.489583,
+    "year": 1916,
+    "month": 7,
+    "day": 22,
+    "calendar": "g",
+    "time": "17:45",
+    "time_type": "s",
+    "hour": 17.75,
+    "time_unknown": false,
+    "place": "Alexandria",
+    "country": "Louisiana",
+    "lat": 31.316667,
+    "lon": -92.45
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Culpepper,_William_A.",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Weekly Town Talk'' (Alexandria, Louisiana), 29 July 1916, page 3.\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Law : Jurist",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.953251,
+    "lagna": 232.953251,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.691703,
+    "jd_ut": 2421067.489583,
+    "planets": {
+      "Sun": {
+        "longitude": 97.080997,
+        "sign_index": 3,
+        "degree_in_sign": 7.080997,
+        "is_retrograde": false,
+        "speed": 0.954921
+      },
+      "Moon": {
+        "longitude": 18.51302,
+        "sign_index": 0,
+        "degree_in_sign": 18.51302,
+        "is_retrograde": false,
+        "speed": 16.85696
+      },
+      "Mars": {
+        "longitude": 157.16416,
+        "sign_index": 5,
+        "degree_in_sign": 7.16416,
+        "is_retrograde": false,
+        "speed": 0.595332
+      },
+      "Mercury": {
+        "longitude": 90.782308,
+        "sign_index": 3,
+        "degree_in_sign": 0.782308,
+        "is_retrograde": false,
+        "speed": 2.108437
+      },
+      "Jupiter": {
+        "longitude": 10.937693,
+        "sign_index": 0,
+        "degree_in_sign": 10.937693,
+        "is_retrograde": false,
+        "speed": 0.102474
+      },
+      "Venus": {
+        "longitude": 70.632578,
+        "sign_index": 2,
+        "degree_in_sign": 10.632578,
+        "is_retrograde": true,
+        "speed": -0.096908
+      },
+      "Saturn": {
+        "longitude": 88.727901,
+        "sign_index": 2,
+        "degree_in_sign": 28.727901,
+        "is_retrograde": false,
+        "speed": 0.128958
+      },
+      "Rahu": {
+        "longitude": 276.253247,
+        "sign_index": 9,
+        "degree_in_sign": 6.253247,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 96.253247,
+        "sign_index": 3,
+        "degree_in_sign": 6.253247,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

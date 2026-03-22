@@ -1,0 +1,116 @@
+{
+  "adb_id": 19516,
+  "name": "Carpenter, Mary Chapin",
+  "given_name": "Mary Chapin Carpenter",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436255.948611,
+    "year": 1958,
+    "month": 2,
+    "day": 21,
+    "calendar": "g",
+    "time": "05:46",
+    "time_type": "s",
+    "hour": 5.766667,
+    "time_unknown": false,
+    "place": "Princeton",
+    "country": "New Jersey",
+    "lat": 40.35,
+    "lon": -74.666667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpenter,_Mary_Chapin",
+  "source_notes": "B.C. in hand from Frank C. Clifford\\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Family : Childhood : Advantaged",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Financial : Gain - Financial success in field",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Awards : Vocational award",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 22.739777,
+    "lagna": 262.739777,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.272421,
+    "jd_ut": 2436255.948611,
+    "planets": {
+      "Sun": {
+        "longitude": 309.033058,
+        "sign_index": 10,
+        "degree_in_sign": 9.033058,
+        "is_retrograde": false,
+        "speed": 1.007576
+      },
+      "Moon": {
+        "longitude": 339.829274,
+        "sign_index": 11,
+        "degree_in_sign": 9.829274,
+        "is_retrograde": false,
+        "speed": 14.02489
+      },
+      "Mars": {
+        "longitude": 259.396726,
+        "sign_index": 8,
+        "degree_in_sign": 19.396726,
+        "is_retrograde": false,
+        "speed": 0.721638
+      },
+      "Mercury": {
+        "longitude": 300.66255,
+        "sign_index": 10,
+        "degree_in_sign": 0.66255,
+        "is_retrograde": false,
+        "speed": 1.725923
+      },
+      "Jupiter": {
+        "longitude": 188.335421,
+        "sign_index": 6,
+        "degree_in_sign": 8.335421,
+        "is_retrograde": true,
+        "speed": -0.01851
+      },
+      "Venus": {
+        "longitude": 277.608704,
+        "sign_index": 9,
+        "degree_in_sign": 7.608704,
+        "is_retrograde": false,
+        "speed": 0.124304
+      },
+      "Saturn": {
+        "longitude": 240.983752,
+        "sign_index": 8,
+        "degree_in_sign": 0.983752,
+        "is_retrograde": false,
+        "speed": 0.066145
+      },
+      "Rahu": {
+        "longitude": 191.385332,
+        "sign_index": 6,
+        "degree_in_sign": 11.385332,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 11.385332,
+        "sign_index": 0,
+        "degree_in_sign": 11.385332,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

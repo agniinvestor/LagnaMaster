@@ -1,0 +1,108 @@
+{
+  "adb_id": 69346,
+  "name": "Cuasante, Pierre",
+  "given_name": "Pierre Cuasante",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434344.416667,
+    "year": 1952,
+    "month": 11,
+    "day": 27,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Le Mesnil sur Oger",
+    "country": "France",
+    "lat": 48.95,
+    "lon": 4.016667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuasante,_Pierre",
+  "source_notes": "Didier Geslain archive, 'sommeliers' pdf file, p. 12.\\n",
+  "categories": [
+    "Vocation : Food and Beverage : Other Food and Beverage"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 7.952469,
+    "lagna": 97.952469,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.199329,
+    "jd_ut": 2434344.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 222.421443,
+        "sign_index": 7,
+        "degree_in_sign": 12.421443,
+        "is_retrograde": false,
+        "speed": 1.012478
+      },
+      "Moon": {
+        "longitude": 356.579577,
+        "sign_index": 11,
+        "degree_in_sign": 26.579577,
+        "is_retrograde": false,
+        "speed": 10.464067
+      },
+      "Mars": {
+        "longitude": 281.440384,
+        "sign_index": 9,
+        "degree_in_sign": 11.440384,
+        "is_retrograde": false,
+        "speed": 0.763093
+      },
+      "Mercury": {
+        "longitude": 228.353426,
+        "sign_index": 7,
+        "degree_in_sign": 18.353426,
+        "is_retrograde": true,
+        "speed": -1.245387
+      },
+      "Jupiter": {
+        "longitude": 20.182612,
+        "sign_index": 0,
+        "degree_in_sign": 20.182612,
+        "is_retrograde": true,
+        "speed": -0.115944
+      },
+      "Venus": {
+        "longitude": 261.403988,
+        "sign_index": 8,
+        "degree_in_sign": 21.403988,
+        "is_retrograde": false,
+        "speed": 1.204121
+      },
+      "Saturn": {
+        "longitude": 180.237079,
+        "sign_index": 6,
+        "degree_in_sign": 0.237079,
+        "is_retrograde": false,
+        "speed": 0.100896
+      },
+      "Rahu": {
+        "longitude": 292.681337,
+        "sign_index": 9,
+        "degree_in_sign": 22.681337,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 112.681337,
+        "sign_index": 3,
+        "degree_in_sign": 22.681337,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

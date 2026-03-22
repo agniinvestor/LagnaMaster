@@ -1,0 +1,111 @@
+{
+  "adb_id": 38960,
+  "name": "Cherubin, Edward",
+  "given_name": "Edward Cherubin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440406.243056,
+    "year": 1969,
+    "month": 7,
+    "day": 3,
+    "calendar": "g",
+    "time": "13:50",
+    "time_type": "d",
+    "hour": 13.833333,
+    "time_unknown": false,
+    "place": "Malden",
+    "country": "Massachusetts",
+    "lat": 42.433333,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cherubin,_Edward",
+  "source_notes": "Frances McEvoy quotes B.C.\\n",
+  "categories": [
+    "Diagnoses : Psychological : Psychotic Episode",
+    "Passions : Criminal Perpetrator : Assault/ Battery",
+    "Passions : Criminal Perpetrator : Homicide single",
+    "Passions : Criminal Perpetrator : Prison sentence"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 4.943139,
+    "lagna": 154.943139,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.431122,
+    "jd_ut": 2440406.243056,
+    "planets": {
+      "Sun": {
+        "longitude": 78.164639,
+        "sign_index": 2,
+        "degree_in_sign": 18.164639,
+        "is_retrograde": false,
+        "speed": 0.953089
+      },
+      "Moon": {
+        "longitude": 312.122732,
+        "sign_index": 10,
+        "degree_in_sign": 12.122732,
+        "is_retrograde": false,
+        "speed": 17.489974
+      },
+      "Mars": {
+        "longitude": 218.408473,
+        "sign_index": 7,
+        "degree_in_sign": 8.408473,
+        "is_retrograde": true,
+        "speed": -0.062702
+      },
+      "Mercury": {
+        "longitude": 59.055653,
+        "sign_index": 1,
+        "degree_in_sign": 29.055653,
+        "is_retrograde": false,
+        "speed": 1.574724
+      },
+      "Jupiter": {
+        "longitude": 155.100081,
+        "sign_index": 5,
+        "degree_in_sign": 5.100081,
+        "is_retrograde": false,
+        "speed": 0.111544
+      },
+      "Venus": {
+        "longitude": 33.235309,
+        "sign_index": 1,
+        "degree_in_sign": 3.235309,
+        "is_retrograde": false,
+        "speed": 1.04273
+      },
+      "Saturn": {
+        "longitude": 13.547113,
+        "sign_index": 0,
+        "degree_in_sign": 13.547113,
+        "is_retrograde": false,
+        "speed": 0.077194
+      },
+      "Rahu": {
+        "longitude": 331.452733,
+        "sign_index": 11,
+        "degree_in_sign": 1.452733,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 151.452733,
+        "sign_index": 5,
+        "degree_in_sign": 1.452733,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

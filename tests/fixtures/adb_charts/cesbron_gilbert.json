@@ -1,0 +1,108 @@
+{
+  "adb_id": 62970,
+  "name": "Cesbron, Gilbert",
+  "given_name": "Gilbert Cesbron",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419780.625,
+    "year": 1913,
+    "month": 1,
+    "day": 13,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cesbron,_Gilbert",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 80.\\n",
+  "categories": [
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.909668,
+    "lagna": 184.909668,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.642505,
+    "jd_ut": 2419780.625,
+    "planets": {
+      "Sun": {
+        "longitude": 269.707918,
+        "sign_index": 8,
+        "degree_in_sign": 29.707918,
+        "is_retrograde": false,
+        "speed": 1.01894
+      },
+      "Moon": {
+        "longitude": 331.217677,
+        "sign_index": 11,
+        "degree_in_sign": 1.217677,
+        "is_retrograde": false,
+        "speed": 15.035502
+      },
+      "Mars": {
+        "longitude": 249.255672,
+        "sign_index": 8,
+        "degree_in_sign": 9.255672,
+        "is_retrograde": false,
+        "speed": 0.744008
+      },
+      "Mercury": {
+        "longitude": 251.470266,
+        "sign_index": 8,
+        "degree_in_sign": 11.470266,
+        "is_retrograde": false,
+        "speed": 1.435826
+      },
+      "Jupiter": {
+        "longitude": 249.673617,
+        "sign_index": 8,
+        "degree_in_sign": 9.673617,
+        "is_retrograde": false,
+        "speed": 0.222286
+      },
+      "Venus": {
+        "longitude": 314.176894,
+        "sign_index": 10,
+        "degree_in_sign": 14.176894,
+        "is_retrograde": false,
+        "speed": 1.14847
+      },
+      "Saturn": {
+        "longitude": 34.750888,
+        "sign_index": 1,
+        "degree_in_sign": 4.750888,
+        "is_retrograde": true,
+        "speed": -0.02903
+      },
+      "Rahu": {
+        "longitude": 344.446898,
+        "sign_index": 11,
+        "degree_in_sign": 14.446898,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 164.446898,
+        "sign_index": 5,
+        "degree_in_sign": 14.446898,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 62498,
+  "name": "Cassar, Yvan",
+  "given_name": "Yvan Cassar",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439472.267361,
+    "year": 1966,
+    "month": 12,
+    "day": 12,
+    "calendar": "g",
+    "time": "19:25",
+    "time_type": "s",
+    "hour": 19.416667,
+    "time_unknown": false,
+    "place": "Rennes",
+    "country": "France",
+    "lat": 48.083333,
+    "lon": -1.683333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassar,_Yvan",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Music teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 3.687338,
+    "lagna": 63.687338,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.395408,
+    "jd_ut": 2439472.267361,
+    "planets": {
+      "Sun": {
+        "longitude": 236.893456,
+        "sign_index": 7,
+        "degree_in_sign": 26.893456,
+        "is_retrograde": false,
+        "speed": 1.017155
+      },
+      "Moon": {
+        "longitude": 244.237344,
+        "sign_index": 8,
+        "degree_in_sign": 4.237344,
+        "is_retrograde": false,
+        "speed": 13.312933
+      },
+      "Mars": {
+        "longitude": 161.2152,
+        "sign_index": 5,
+        "degree_in_sign": 11.2152,
+        "is_retrograde": false,
+        "speed": 0.518503
+      },
+      "Mercury": {
+        "longitude": 218.123724,
+        "sign_index": 7,
+        "degree_in_sign": 8.123724,
+        "is_retrograde": false,
+        "speed": 1.362723
+      },
+      "Jupiter": {
+        "longitude": 100.346481,
+        "sign_index": 3,
+        "degree_in_sign": 10.346481,
+        "is_retrograde": true,
+        "speed": -0.068881
+      },
+      "Venus": {
+        "longitude": 245.156204,
+        "sign_index": 8,
+        "degree_in_sign": 5.156204,
+        "is_retrograde": false,
+        "speed": 1.256662
+      },
+      "Saturn": {
+        "longitude": 329.753653,
+        "sign_index": 10,
+        "degree_in_sign": 29.753653,
+        "is_retrograde": false,
+        "speed": 0.028695
+      },
+      "Rahu": {
+        "longitude": 20.946014,
+        "sign_index": 0,
+        "degree_in_sign": 20.946014,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 200.946014,
+        "sign_index": 6,
+        "degree_in_sign": 20.946014,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

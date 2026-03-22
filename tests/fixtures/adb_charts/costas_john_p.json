@@ -1,0 +1,110 @@
+{
+  "adb_id": 86505,
+  "name": "Costas, John P.",
+  "given_name": "John P. Costas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423679.208333,
+    "year": 1923,
+    "month": 9,
+    "day": 16,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Wabash",
+    "country": "Indiana",
+    "lat": 40.8,
+    "lon": -85.816667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costas,_John_P.",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Engineer : Electrical",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.445033,
+    "lagna": 192.445033,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.791552,
+    "jd_ut": 2423679.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 150.000847,
+        "sign_index": 5,
+        "degree_in_sign": 0.000847,
+        "is_retrograde": false,
+        "speed": 0.97545
+      },
+      "Moon": {
+        "longitude": 230.458165,
+        "sign_index": 7,
+        "degree_in_sign": 20.458165,
+        "is_retrograde": false,
+        "speed": 14.138077
+      },
+      "Mars": {
+        "longitude": 137.177058,
+        "sign_index": 4,
+        "degree_in_sign": 17.177058,
+        "is_retrograde": false,
+        "speed": 0.635962
+      },
+      "Mercury": {
+        "longitude": 170.99096,
+        "sign_index": 5,
+        "degree_in_sign": 20.99096,
+        "is_retrograde": true,
+        "speed": -0.043967
+      },
+      "Jupiter": {
+        "longitude": 203.026877,
+        "sign_index": 6,
+        "degree_in_sign": 23.026877,
+        "is_retrograde": false,
+        "speed": 0.170605
+      },
+      "Venus": {
+        "longitude": 151.687177,
+        "sign_index": 5,
+        "degree_in_sign": 1.687177,
+        "is_retrograde": false,
+        "speed": 1.24448
+      },
+      "Saturn": {
+        "longitude": 176.600804,
+        "sign_index": 5,
+        "degree_in_sign": 26.600804,
+        "is_retrograde": false,
+        "speed": 0.113268
+      },
+      "Rahu": {
+        "longitude": 137.852814,
+        "sign_index": 4,
+        "degree_in_sign": 17.852814,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 317.852814,
+        "sign_index": 10,
+        "degree_in_sign": 17.852814,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 64970,
+  "name": "Chamarat, Georges",
+  "given_name": "Georges Chamarat",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415473.535174,
+    "year": 1901,
+    "month": 3,
+    "day": 30,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamarat,_Georges",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 108.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 7.910548,
+    "lagna": 217.910548,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.477849,
+    "jd_ut": 2415473.535174,
+    "planets": {
+      "Sun": {
+        "longitude": 346.159028,
+        "sign_index": 11,
+        "degree_in_sign": 16.159028,
+        "is_retrograde": false,
+        "speed": 0.987264
+      },
+      "Moon": {
+        "longitude": 109.736023,
+        "sign_index": 3,
+        "degree_in_sign": 19.736023,
+        "is_retrograde": false,
+        "speed": 11.492777
+      },
+      "Mars": {
+        "longitude": 120.75336,
+        "sign_index": 4,
+        "degree_in_sign": 0.75336,
+        "is_retrograde": true,
+        "speed": -0.066081
+      },
+      "Mercury": {
+        "longitude": 319.070624,
+        "sign_index": 10,
+        "degree_in_sign": 19.070624,
+        "is_retrograde": false,
+        "speed": 0.711909
+      },
+      "Jupiter": {
+        "longitude": 259.029974,
+        "sign_index": 8,
+        "degree_in_sign": 19.029974,
+        "is_retrograde": false,
+        "speed": 0.094374
+      },
+      "Venus": {
+        "longitude": 337.869268,
+        "sign_index": 11,
+        "degree_in_sign": 7.869268,
+        "is_retrograde": false,
+        "speed": 1.240564
+      },
+      "Saturn": {
+        "longitude": 263.311334,
+        "sign_index": 8,
+        "degree_in_sign": 23.311334,
+        "is_retrograde": false,
+        "speed": 0.043498
+      },
+      "Rahu": {
+        "longitude": 212.688645,
+        "sign_index": 7,
+        "degree_in_sign": 2.688645,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 32.688645,
+        "sign_index": 1,
+        "degree_in_sign": 2.688645,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

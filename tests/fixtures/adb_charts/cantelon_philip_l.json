@@ -1,0 +1,115 @@
+{
+  "adb_id": 88678,
+  "name": "Cantelon, Philip L.",
+  "given_name": "Philip L. Cantelon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429941.243056,
+    "year": 1940,
+    "month": 11,
+    "day": 7,
+    "calendar": "g",
+    "time": "11:50",
+    "time_type": "s",
+    "hour": 11.833333,
+    "time_unknown": false,
+    "place": "Fort Wayne",
+    "country": "Indiana",
+    "lat": 41.133333,
+    "lon": -85.133333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "aqu",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantelon,_Philip_L.",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Lifestyle : Financial : Gain - Grant, Scholarship, etc.",
+    "Vocation : Business : Consultant",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Business : Top executive",
+    "Vocation : Education : Teacher",
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 11.840127,
+    "lagna": 251.840127,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.03097,
+    "jd_ut": 2429941.243056,
+    "planets": {
+      "Sun": {
+        "longitude": 202.152171,
+        "sign_index": 6,
+        "degree_in_sign": 22.152171,
+        "is_retrograde": false,
+        "speed": 1.004193
+      },
+      "Moon": {
+        "longitude": 302.392953,
+        "sign_index": 10,
+        "degree_in_sign": 2.392953,
+        "is_retrograde": false,
+        "speed": 12.447302
+      },
+      "Mars": {
+        "longitude": 178.463805,
+        "sign_index": 5,
+        "degree_in_sign": 28.463805,
+        "is_retrograde": false,
+        "speed": 0.653335
+      },
+      "Mercury": {
+        "longitude": 211.653241,
+        "sign_index": 7,
+        "degree_in_sign": 1.653241,
+        "is_retrograde": true,
+        "speed": -1.032154
+      },
+      "Jupiter": {
+        "longitude": 16.954745,
+        "sign_index": 0,
+        "degree_in_sign": 16.954745,
+        "is_retrograde": true,
+        "speed": -0.134893
+      },
+      "Venus": {
+        "longitude": 164.166611,
+        "sign_index": 5,
+        "degree_in_sign": 14.166611,
+        "is_retrograde": false,
+        "speed": 1.200928
+      },
+      "Saturn": {
+        "longitude": 17.95956,
+        "sign_index": 0,
+        "degree_in_sign": 17.95956,
+        "is_retrograde": true,
+        "speed": -0.080419
+      },
+      "Rahu": {
+        "longitude": 166.014591,
+        "sign_index": 5,
+        "degree_in_sign": 16.014591,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.014591,
+        "sign_index": 11,
+        "degree_in_sign": 16.014591,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

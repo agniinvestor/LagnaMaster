@@ -1,0 +1,110 @@
+{
+  "adb_id": 4351,
+  "name": "Char, René",
+  "given_name": "René Char",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417740.88934,
+    "year": 1907,
+    "month": 6,
+    "day": 14,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "s",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "L'Isle sur la Sorgue",
+    "country": "France",
+    "lat": 43.916667,
+    "lon": 5.05
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Char,_René",
+  "source_notes": "BC in Didier Geslain archive, 'Ecrivains' pdf file, p. 91.\\nGauquelin Vol 6/187 (9:30 AM Paris time)\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 11.773334,
+    "lagna": 101.773334,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.564527,
+    "jd_ut": 2417740.88934,
+    "planets": {
+      "Sun": {
+        "longitude": 59.603406,
+        "sign_index": 1,
+        "degree_in_sign": 29.603406,
+        "is_retrograde": false,
+        "speed": 0.955377
+      },
+      "Moon": {
+        "longitude": 97.179805,
+        "sign_index": 3,
+        "degree_in_sign": 7.179805,
+        "is_retrograde": false,
+        "speed": 10.561552
+      },
+      "Mars": {
+        "longitude": 265.813036,
+        "sign_index": 8,
+        "degree_in_sign": 25.813036,
+        "is_retrograde": true,
+        "speed": -0.114809
+      },
+      "Mercury": {
+        "longitude": 80.84356,
+        "sign_index": 2,
+        "degree_in_sign": 20.84356,
+        "is_retrograde": false,
+        "speed": 1.578307
+      },
+      "Jupiter": {
+        "longitude": 82.988411,
+        "sign_index": 2,
+        "degree_in_sign": 22.988411,
+        "is_retrograde": false,
+        "speed": 0.2148
+      },
+      "Venus": {
+        "longitude": 34.827485,
+        "sign_index": 1,
+        "degree_in_sign": 4.827485,
+        "is_retrograde": false,
+        "speed": 1.207819
+      },
+      "Saturn": {
+        "longitude": 334.353851,
+        "sign_index": 11,
+        "degree_in_sign": 4.353851,
+        "is_retrograde": false,
+        "speed": 0.041823
+      },
+      "Rahu": {
+        "longitude": 92.536773,
+        "sign_index": 3,
+        "degree_in_sign": 2.536773,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 272.536773,
+        "sign_index": 9,
+        "degree_in_sign": 2.536773,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

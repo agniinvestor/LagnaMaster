@@ -1,0 +1,108 @@
+{
+  "adb_id": 3419,
+  "name": "Capoulade, François",
+  "given_name": "François Capoulade",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411792.991944,
+    "year": 1891,
+    "month": 3,
+    "day": 1,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Crépy en Valois",
+    "country": "France",
+    "lat": 49.233333,
+    "lon": 2.9
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capoulade,_François",
+  "source_notes": "Lescaut quotes Barbault for B.R.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 23.427386,
+    "lagna": 53.427386,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.337152,
+    "jd_ut": 2411792.991944,
+    "planets": {
+      "Sun": {
+        "longitude": 318.305854,
+        "sign_index": 10,
+        "degree_in_sign": 18.305854,
+        "is_retrograde": false,
+        "speed": 1.002769
+      },
+      "Moon": {
+        "longitude": 200.715227,
+        "sign_index": 6,
+        "degree_in_sign": 20.715227,
+        "is_retrograde": false,
+        "speed": 13.737273
+      },
+      "Mars": {
+        "longitude": 2.698218,
+        "sign_index": 0,
+        "degree_in_sign": 2.698218,
+        "is_retrograde": false,
+        "speed": 0.72059
+      },
+      "Mercury": {
+        "longitude": 300.353974,
+        "sign_index": 10,
+        "degree_in_sign": 0.353974,
+        "is_retrograde": false,
+        "speed": 1.58064
+      },
+      "Jupiter": {
+        "longitude": 306.12157,
+        "sign_index": 10,
+        "degree_in_sign": 6.12157,
+        "is_retrograde": false,
+        "speed": 0.23765
+      },
+      "Venus": {
+        "longitude": 272.25302,
+        "sign_index": 9,
+        "degree_in_sign": 2.25302,
+        "is_retrograde": false,
+        "speed": 1.086761
+      },
+      "Saturn": {
+        "longitude": 141.713546,
+        "sign_index": 4,
+        "degree_in_sign": 21.713546,
+        "is_retrograde": true,
+        "speed": -0.07977
+      },
+      "Rahu": {
+        "longitude": 47.728403,
+        "sign_index": 1,
+        "degree_in_sign": 17.728403,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 227.728403,
+        "sign_index": 7,
+        "degree_in_sign": 17.728403,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

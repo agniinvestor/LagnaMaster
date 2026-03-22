@@ -1,0 +1,118 @@
+{
+  "adb_id": 7847,
+  "name": "Chamberlain, Wilt",
+  "given_name": "Wilt Chamberlain",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2428402.64375,
+    "year": 1936,
+    "month": 8,
+    "day": 21,
+    "calendar": "g",
+    "time": "23:27",
+    "time_type": "d",
+    "hour": 23.45,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamberlain,_Wilt",
+  "source_notes": "R.H. Oliver quotes the biography, ''Wilt; Just Like Any Other 7-foot Black Millionaire who Lives Next Door'' by Wilt Chamberlain and David Shaw (1973), page 7: \"I was born at 11:27 P.M., August 21, 1936, which — for you astrology buffs — makes me a Leo. I wouldn't even bring it up except I just missed being a Virgo by 33 minutes...\"\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Traits : Body : Size",
+    "Lifestyle : Financial : Gain - Financial success in field",
+    "Passions : Sexuality : Extremes in quantity",
+    "Vocation : Sports : Basketball",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Extraordinary Talents : For Gross motor control",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 10.288571,
+    "lagna": 10.288571,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.972143,
+    "jd_ut": 2428402.64375,
+    "planets": {
+      "Sun": {
+        "longitude": 125.869063,
+        "sign_index": 4,
+        "degree_in_sign": 5.869063,
+        "is_retrograde": false,
+        "speed": 0.96379
+      },
+      "Moon": {
+        "longitude": 181.584385,
+        "sign_index": 6,
+        "degree_in_sign": 1.584385,
+        "is_retrograde": false,
+        "speed": 12.535934
+      },
+      "Mars": {
+        "longitude": 104.581253,
+        "sign_index": 3,
+        "degree_in_sign": 14.581253,
+        "is_retrograde": false,
+        "speed": 0.640869
+      },
+      "Mercury": {
+        "longitude": 149.559503,
+        "sign_index": 4,
+        "degree_in_sign": 29.559503,
+        "is_retrograde": false,
+        "speed": 1.409836
+      },
+      "Jupiter": {
+        "longitude": 231.782746,
+        "sign_index": 7,
+        "degree_in_sign": 21.782746,
+        "is_retrograde": false,
+        "speed": 0.032427
+      },
+      "Venus": {
+        "longitude": 140.655352,
+        "sign_index": 4,
+        "degree_in_sign": 20.655352,
+        "is_retrograde": false,
+        "speed": 1.233431
+      },
+      "Saturn": {
+        "longitude": 327.693959,
+        "sign_index": 10,
+        "degree_in_sign": 27.693959,
+        "is_retrograde": true,
+        "speed": -0.068301
+      },
+      "Rahu": {
+        "longitude": 247.548154,
+        "sign_index": 8,
+        "degree_in_sign": 7.548154,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 67.548154,
+        "sign_index": 2,
+        "degree_in_sign": 7.548154,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

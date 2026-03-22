@@ -1,0 +1,108 @@
+{
+  "adb_id": 68323,
+  "name": "Chantepy, Christophe",
+  "given_name": "Christophe Chantepy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436789.447917,
+    "year": 1959,
+    "month": 8,
+    "day": 8,
+    "calendar": "g",
+    "time": "23:45",
+    "time_type": "s",
+    "hour": 23.75,
+    "time_unknown": false,
+    "place": "St.Chamond",
+    "country": "France",
+    "lat": 45.466667,
+    "lon": 4.5
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chantepy,_Christophe",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 186.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 8.821981,
+    "lagna": 8.821981,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.292821,
+    "jd_ut": 2436789.447917,
+    "planets": {
+      "Sun": {
+        "longitude": 112.33282,
+        "sign_index": 3,
+        "degree_in_sign": 22.33282,
+        "is_retrograde": false,
+        "speed": 0.958849
+      },
+      "Moon": {
+        "longitude": 166.006547,
+        "sign_index": 5,
+        "degree_in_sign": 16.006547,
+        "is_retrograde": false,
+        "speed": 15.196284
+      },
+      "Mars": {
+        "longitude": 138.870174,
+        "sign_index": 4,
+        "degree_in_sign": 18.870174,
+        "is_retrograde": false,
+        "speed": 0.62931
+      },
+      "Mercury": {
+        "longitude": 106.921505,
+        "sign_index": 3,
+        "degree_in_sign": 16.921505,
+        "is_retrograde": true,
+        "speed": -0.655261
+      },
+      "Jupiter": {
+        "longitude": 209.405644,
+        "sign_index": 6,
+        "degree_in_sign": 29.405644,
+        "is_retrograde": false,
+        "speed": 0.057995
+      },
+      "Venus": {
+        "longitude": 142.749202,
+        "sign_index": 4,
+        "degree_in_sign": 22.749202,
+        "is_retrograde": false,
+        "speed": 0.076802
+      },
+      "Saturn": {
+        "longitude": 247.740416,
+        "sign_index": 8,
+        "degree_in_sign": 7.740416,
+        "is_retrograde": true,
+        "speed": -0.041279
+      },
+      "Rahu": {
+        "longitude": 163.114109,
+        "sign_index": 5,
+        "degree_in_sign": 13.114109,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 343.114109,
+        "sign_index": 11,
+        "degree_in_sign": 13.114109,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

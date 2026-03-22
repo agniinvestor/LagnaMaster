@@ -1,0 +1,109 @@
+{
+  "adb_id": 52207,
+  "name": "Currie, Robert Alexander",
+  "given_name": "Robert Alexander Currie",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416964.565972,
+    "year": 1905,
+    "month": 4,
+    "day": 29,
+    "calendar": "g",
+    "time": "01:35",
+    "time_type": "s",
+    "hour": 1.583333,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Currie,_Robert_Alexander",
+  "source_notes": "Ed Steinbrecher collection: Paul Wright quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 1.946639,
+    "lagna": 241.946639,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.534849,
+    "jd_ut": 2416964.565972,
+    "planets": {
+      "Sun": {
+        "longitude": 15.531186,
+        "sign_index": 0,
+        "degree_in_sign": 15.531186,
+        "is_retrograde": false,
+        "speed": 0.971383
+      },
+      "Moon": {
+        "longitude": 314.792037,
+        "sign_index": 10,
+        "degree_in_sign": 14.792037,
+        "is_retrograde": false,
+        "speed": 12.344376
+      },
+      "Mars": {
+        "longitude": 208.333335,
+        "sign_index": 6,
+        "degree_in_sign": 28.333335,
+        "is_retrograde": true,
+        "speed": -0.308974
+      },
+      "Mercury": {
+        "longitude": 7.156607,
+        "sign_index": 0,
+        "degree_in_sign": 7.156607,
+        "is_retrograde": true,
+        "speed": -0.567195
+      },
+      "Jupiter": {
+        "longitude": 19.334022,
+        "sign_index": 0,
+        "degree_in_sign": 19.334022,
+        "is_retrograde": false,
+        "speed": 0.238245
+      },
+      "Venus": {
+        "longitude": 12.880958,
+        "sign_index": 0,
+        "degree_in_sign": 12.880958,
+        "is_retrograde": true,
+        "speed": -0.623999
+      },
+      "Saturn": {
+        "longitude": 308.712626,
+        "sign_index": 10,
+        "degree_in_sign": 8.712626,
+        "is_retrograde": false,
+        "speed": 0.069702
+      },
+      "Rahu": {
+        "longitude": 133.675781,
+        "sign_index": 4,
+        "degree_in_sign": 13.675781,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 313.675781,
+        "sign_index": 10,
+        "degree_in_sign": 13.675781,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

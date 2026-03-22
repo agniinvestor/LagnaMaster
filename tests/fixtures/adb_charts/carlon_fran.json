@@ -1,0 +1,113 @@
+{
+  "adb_id": 85436,
+  "name": "Carlon, Fran",
+  "given_name": "Fran Carlon",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419860.211806,
+    "year": 1913,
+    "month": 4,
+    "day": 2,
+    "calendar": "g",
+    "time": "11:05",
+    "time_type": "s",
+    "hour": 11.083333,
+    "time_unknown": false,
+    "place": "Indianapolis",
+    "country": "Indiana",
+    "lat": 39.766667,
+    "lon": -86.15
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlon,_Fran",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 3.474672,
+    "lagna": 63.474672,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.645548,
+    "jd_ut": 2419860.211806,
+    "planets": {
+      "Sun": {
+        "longitude": 349.706974,
+        "sign_index": 11,
+        "degree_in_sign": 19.706974,
+        "is_retrograde": false,
+        "speed": 0.985703
+      },
+      "Moon": {
+        "longitude": 305.031724,
+        "sign_index": 10,
+        "degree_in_sign": 5.031724,
+        "is_retrograde": false,
+        "speed": 8.491812
+      },
+      "Mars": {
+        "longitude": 310.039944,
+        "sign_index": 10,
+        "degree_in_sign": 10.039944,
+        "is_retrograde": false,
+        "speed": 0.774485
+      },
+      "Mercury": {
+        "longitude": 339.806355,
+        "sign_index": 11,
+        "degree_in_sign": 9.806355,
+        "is_retrograde": true,
+        "speed": -0.68793
+      },
+      "Jupiter": {
+        "longitude": 263.524553,
+        "sign_index": 8,
+        "degree_in_sign": 23.524553,
+        "is_retrograde": false,
+        "speed": 0.09792
+      },
+      "Venus": {
+        "longitude": 19.828415,
+        "sign_index": 0,
+        "degree_in_sign": 19.828415,
+        "is_retrograde": false,
+        "speed": 0.043981
+      },
+      "Saturn": {
+        "longitude": 38.048109,
+        "sign_index": 1,
+        "degree_in_sign": 8.048109,
+        "is_retrograde": false,
+        "speed": 0.100654
+      },
+      "Rahu": {
+        "longitude": 340.229426,
+        "sign_index": 11,
+        "degree_in_sign": 10.229426,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 160.229426,
+        "sign_index": 5,
+        "degree_in_sign": 10.229426,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

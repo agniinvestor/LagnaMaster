@@ -1,0 +1,117 @@
+{
+  "adb_id": 4759,
+  "name": "Cassini, Oleg",
+  "given_name": "Oleg Cassini",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2419868.583333,
+    "year": 1913,
+    "month": 4,
+    "day": 11,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassini,_Oleg",
+  "source_notes": "Autobiography \"In My Own Fashion,\" 1987, p.16\\n",
+  "categories": [
+    "Lifestyle : Financial : Rags to riches",
+    "Lifestyle : Social Life : Friends",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Military : Military service",
+    "Vocation : Sports : Water sports",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 6.962467,
+    "lagna": 246.962467,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.645868,
+    "jd_ut": 2419868.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 357.93955,
+        "sign_index": 11,
+        "degree_in_sign": 27.93955,
+        "is_retrograde": false,
+        "speed": 0.980954
+      },
+      "Moon": {
+        "longitude": 48.134268,
+        "sign_index": 1,
+        "degree_in_sign": 18.134268,
+        "is_retrograde": false,
+        "speed": 16.665927
+      },
+      "Mars": {
+        "longitude": 316.521147,
+        "sign_index": 10,
+        "degree_in_sign": 16.521147,
+        "is_retrograde": false,
+        "speed": 0.773691
+      },
+      "Mercury": {
+        "longitude": 336.894401,
+        "sign_index": 11,
+        "degree_in_sign": 6.894401,
+        "is_retrograde": false,
+        "speed": 0.021719
+      },
+      "Jupiter": {
+        "longitude": 264.249271,
+        "sign_index": 8,
+        "degree_in_sign": 24.249271,
+        "is_retrograde": false,
+        "speed": 0.074937
+      },
+      "Venus": {
+        "longitude": 18.779318,
+        "sign_index": 0,
+        "degree_in_sign": 18.779318,
+        "is_retrograde": true,
+        "speed": -0.295952
+      },
+      "Saturn": {
+        "longitude": 38.925824,
+        "sign_index": 1,
+        "degree_in_sign": 8.925824,
+        "is_retrograde": false,
+        "speed": 0.108798
+      },
+      "Rahu": {
+        "longitude": 339.785801,
+        "sign_index": 11,
+        "degree_in_sign": 9.785801,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 159.785801,
+        "sign_index": 5,
+        "degree_in_sign": 9.785801,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

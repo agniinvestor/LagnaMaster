@@ -1,0 +1,116 @@
+{
+  "adb_id": 19427,
+  "name": "Calment, Jeanne",
+  "given_name": "Jeanne Calment",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405940.778796,
+    "year": 1875,
+    "month": 2,
+    "day": 21,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "l",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Arles",
+    "country": "France",
+    "lat": 43.666667,
+    "lon": 4.633333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calment,_Jeanne",
+  "source_notes": "Paddy de Jabrun quoted bc in Astralis 35, 4/91 (Cedra's periodical) also on Cedra database.\\nB.C. printed in Cadran No.16, 2/95, 4 years later! by Petitallot.\\nSy Scholfield notes that the BC has been published at Wikimedia Commons: http://commons.wikimedia.org/wiki/File:Acte_de_naissance_de_Jeanne_Calment.png\\n\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Eyes",
+    "Diagnoses : Body Part Problems : Ears",
+    "Diagnoses : Body Part Problems : Bone",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Family : Parenting : Kids -Traumatic event",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Notable : Famous : Notable extremes",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 20.023585,
+    "lagna": 290.023585,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.113451,
+    "jd_ut": 2405940.778796,
+    "planets": {
+      "Sun": {
+        "longitude": 310.157962,
+        "sign_index": 10,
+        "degree_in_sign": 10.157962,
+        "is_retrograde": false,
+        "speed": 1.006345
+      },
+      "Moon": {
+        "longitude": 140.946109,
+        "sign_index": 4,
+        "degree_in_sign": 20.946109,
+        "is_retrograde": false,
+        "speed": 12.999665
+      },
+      "Mars": {
+        "longitude": 222.731971,
+        "sign_index": 7,
+        "degree_in_sign": 12.731971,
+        "is_retrograde": false,
+        "speed": 0.529069
+      },
+      "Mercury": {
+        "longitude": 324.558349,
+        "sign_index": 10,
+        "degree_in_sign": 24.558349,
+        "is_retrograde": true,
+        "speed": -0.089045
+      },
+      "Jupiter": {
+        "longitude": 189.500339,
+        "sign_index": 6,
+        "degree_in_sign": 9.500339,
+        "is_retrograde": true,
+        "speed": -0.018185
+      },
+      "Venus": {
+        "longitude": 263.442546,
+        "sign_index": 8,
+        "degree_in_sign": 23.442546,
+        "is_retrograde": false,
+        "speed": 1.02341
+      },
+      "Saturn": {
+        "longitude": 296.463082,
+        "sign_index": 9,
+        "degree_in_sign": 26.463082,
+        "is_retrograde": false,
+        "speed": 0.117915
+      },
+      "Rahu": {
+        "longitude": 357.849604,
+        "sign_index": 11,
+        "degree_in_sign": 27.849604,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 177.849604,
+        "sign_index": 5,
+        "degree_in_sign": 27.849604,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

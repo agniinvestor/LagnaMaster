@@ -1,0 +1,113 @@
+{
+  "adb_id": 71902,
+  "name": "Cucchiara, Tony",
+  "given_name": "Tony Cucchiara",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428836.708333,
+    "year": 1937,
+    "month": 10,
+    "day": 30,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Agrigento",
+    "country": "Italy",
+    "lat": 37.316667,
+    "lon": 13.583333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cucchiara,_Tony",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Folk Music",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 13.912485,
+    "lagna": 163.912485,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.988739,
+    "jd_ut": 2428836.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 193.365483,
+        "sign_index": 6,
+        "degree_in_sign": 13.365483,
+        "is_retrograde": false,
+        "speed": 0.999993
+      },
+      "Moon": {
+        "longitude": 148.814057,
+        "sign_index": 4,
+        "degree_in_sign": 28.814057,
+        "is_retrograde": false,
+        "speed": 9.789456
+      },
+      "Mars": {
+        "longitude": 267.821371,
+        "sign_index": 8,
+        "degree_in_sign": 27.821371,
+        "is_retrograde": false,
+        "speed": 0.723152
+      },
+      "Mercury": {
+        "longitude": 193.876562,
+        "sign_index": 6,
+        "degree_in_sign": 13.876562,
+        "is_retrograde": false,
+        "speed": 1.635093
+      },
+      "Jupiter": {
+        "longitude": 267.744082,
+        "sign_index": 8,
+        "degree_in_sign": 27.744082,
+        "is_retrograde": false,
+        "speed": 0.133792
+      },
+      "Venus": {
+        "longitude": 170.039394,
+        "sign_index": 5,
+        "degree_in_sign": 20.039394,
+        "is_retrograde": false,
+        "speed": 1.242766
+      },
+      "Saturn": {
+        "longitude": 336.276408,
+        "sign_index": 11,
+        "degree_in_sign": 6.276408,
+        "is_retrograde": true,
+        "speed": -0.053518
+      },
+      "Rahu": {
+        "longitude": 224.546172,
+        "sign_index": 7,
+        "degree_in_sign": 14.546172,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 44.546172,
+        "sign_index": 1,
+        "degree_in_sign": 14.546172,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "adb_id": 101149,
+  "name": "Coopersmith, Esther",
+  "given_name": "Esther Coopersmith",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425994.836806,
+    "year": 1930,
+    "month": 1,
+    "day": 18,
+    "calendar": "g",
+    "time": "02:05",
+    "time_type": "s",
+    "hour": 2.083333,
+    "time_unknown": false,
+    "place": "Des Moines",
+    "country": "Iowa",
+    "lat": 41.6,
+    "lon": -93.616667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coopersmith,_Esther",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Financial : Philanthropist",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Activist/ feminist",
+    "Vocation : Politics : Diplomat",
+    "Notable : Famous : Socialite"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 26.928579,
+    "lagna": 176.928579,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.880084,
+    "jd_ut": 2425994.836806,
+    "planets": {
+      "Sun": {
+        "longitude": 274.643535,
+        "sign_index": 9,
+        "degree_in_sign": 4.643535,
+        "is_retrograde": false,
+        "speed": 1.017676
+      },
+      "Moon": {
+        "longitude": 143.018237,
+        "sign_index": 4,
+        "degree_in_sign": 23.018237,
+        "is_retrograde": false,
+        "speed": 10.506654
+      },
+      "Mars": {
+        "longitude": 262.180869,
+        "sign_index": 8,
+        "degree_in_sign": 22.180869,
+        "is_retrograde": false,
+        "speed": 0.763518
+      },
+      "Mercury": {
+        "longitude": 282.716831,
+        "sign_index": 9,
+        "degree_in_sign": 12.716831,
+        "is_retrograde": true,
+        "speed": -0.972002
+      },
+      "Jupiter": {
+        "longitude": 43.764026,
+        "sign_index": 1,
+        "degree_in_sign": 13.764026,
+        "is_retrograde": true,
+        "speed": -0.044413
+      },
+      "Venus": {
+        "longitude": 269.986277,
+        "sign_index": 8,
+        "degree_in_sign": 29.986277,
+        "is_retrograde": false,
+        "speed": 1.256877
+      },
+      "Saturn": {
+        "longitude": 252.841442,
+        "sign_index": 8,
+        "degree_in_sign": 12.841442,
+        "is_retrograde": false,
+        "speed": 0.112637
+      },
+      "Rahu": {
+        "longitude": 15.142841,
+        "sign_index": 0,
+        "degree_in_sign": 15.142841,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 195.142841,
+        "sign_index": 6,
+        "degree_in_sign": 15.142841,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

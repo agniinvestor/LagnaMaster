@@ -1,0 +1,108 @@
+{
+  "adb_id": 8508,
+  "name": "Construction: Welder 8508",
+  "given_name": "Construction: Welder 8508",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429622.489583,
+    "year": 1939,
+    "month": 12,
+    "day": 24,
+    "calendar": "g",
+    "time": "17:45",
+    "time_type": "s",
+    "hour": 17.75,
+    "time_unknown": false,
+    "place": "Stigler",
+    "country": "Oklahoma",
+    "lat": 35.25,
+    "lon": -95.116667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Construction:_Welder_8508",
+  "source_notes": "Dona Shaw quotes time from his dad who attended the birth\\n",
+  "categories": [
+    "Vocation : Building Trades : Construction work"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.280401,
+    "lagna": 54.280401,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.018783,
+    "jd_ut": 2429622.489583,
+    "planets": {
+      "Sun": {
+        "longitude": 249.255725,
+        "sign_index": 8,
+        "degree_in_sign": 9.255725,
+        "is_retrograde": false,
+        "speed": 1.018425
+      },
+      "Moon": {
+        "longitude": 50.702901,
+        "sign_index": 1,
+        "degree_in_sign": 20.702901,
+        "is_retrograde": false,
+        "speed": 13.025898
+      },
+      "Mars": {
+        "longitude": 330.20462,
+        "sign_index": 11,
+        "degree_in_sign": 0.20462,
+        "is_retrograde": false,
+        "speed": 0.674283
+      },
+      "Mercury": {
+        "longitude": 229.381654,
+        "sign_index": 7,
+        "degree_in_sign": 19.381654,
+        "is_retrograde": false,
+        "speed": 1.330045
+      },
+      "Jupiter": {
+        "longitude": 337.373179,
+        "sign_index": 11,
+        "degree_in_sign": 7.373179,
+        "is_retrograde": false,
+        "speed": 0.098334
+      },
+      "Venus": {
+        "longitude": 276.582435,
+        "sign_index": 9,
+        "degree_in_sign": 6.582435,
+        "is_retrograde": false,
+        "speed": 1.241325
+      },
+      "Saturn": {
+        "longitude": 1.40344,
+        "sign_index": 0,
+        "degree_in_sign": 1.40344,
+        "is_retrograde": true,
+        "speed": -0.005708
+      },
+      "Rahu": {
+        "longitude": 182.905997,
+        "sign_index": 6,
+        "degree_in_sign": 2.905997,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 2.905997,
+        "sign_index": 0,
+        "degree_in_sign": 2.905997,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

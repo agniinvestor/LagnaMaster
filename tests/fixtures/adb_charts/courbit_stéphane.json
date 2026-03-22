@@ -1,0 +1,109 @@
+{
+  "adb_id": 67525,
+  "name": "Courbit, Stéphane",
+  "given_name": "Stéphane Courbit",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438878.875,
+    "year": 1965,
+    "month": 4,
+    "day": 28,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Crest",
+    "country": "France",
+    "lat": 44.733333,
+    "lon": 5.033333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courbit,_Stéphane",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 66.\\n",
+  "categories": [
+    "Lifestyle : Financial : Wealthy",
+    "Vocation : Business : Business owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 1.699459,
+    "lagna": 61.699459,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.372717,
+    "jd_ut": 2438878.875,
+    "planets": {
+      "Sun": {
+        "longitude": 14.487677,
+        "sign_index": 0,
+        "degree_in_sign": 14.487677,
+        "is_retrograde": false,
+        "speed": 0.972157
+      },
+      "Moon": {
+        "longitude": 335.205388,
+        "sign_index": 11,
+        "degree_in_sign": 5.205388,
+        "is_retrograde": false,
+        "speed": 9.171718
+      },
+      "Mars": {
+        "longitude": 135.778364,
+        "sign_index": 4,
+        "degree_in_sign": 15.778364,
+        "is_retrograde": false,
+        "speed": 0.098959
+      },
+      "Mercury": {
+        "longitude": 349.934125,
+        "sign_index": 11,
+        "degree_in_sign": 19.934125,
+        "is_retrograde": false,
+        "speed": 0.485
+      },
+      "Jupiter": {
+        "longitude": 37.918395,
+        "sign_index": 1,
+        "degree_in_sign": 7.918395,
+        "is_retrograde": false,
+        "speed": 0.224802
+      },
+      "Venus": {
+        "longitude": 18.703812,
+        "sign_index": 0,
+        "degree_in_sign": 18.703812,
+        "is_retrograde": false,
+        "speed": 1.234364
+      },
+      "Saturn": {
+        "longitude": 320.973748,
+        "sign_index": 10,
+        "degree_in_sign": 20.973748,
+        "is_retrograde": false,
+        "speed": 0.088402
+      },
+      "Rahu": {
+        "longitude": 52.391089,
+        "sign_index": 1,
+        "degree_in_sign": 22.391089,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 232.391089,
+        "sign_index": 7,
+        "degree_in_sign": 22.391089,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

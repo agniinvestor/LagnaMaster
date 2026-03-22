@@ -1,0 +1,110 @@
+{
+  "adb_id": 88719,
+  "name": "Collias, John",
+  "given_name": "John Collias",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421757.138889,
+    "year": 1918,
+    "month": 6,
+    "day": 12,
+    "calendar": "g",
+    "time": "10:20",
+    "time_type": "w",
+    "hour": 10.333333,
+    "time_unknown": false,
+    "place": "Fort Wayne",
+    "country": "Indiana",
+    "lat": 41.133333,
+    "lon": -85.133333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collias,_John",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana archives. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 9.197496,
+    "lagna": 99.197496,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.718069,
+    "jd_ut": 2421757.138889,
+    "planets": {
+      "Sun": {
+        "longitude": 58.102103,
+        "sign_index": 1,
+        "degree_in_sign": 28.102103,
+        "is_retrograde": false,
+        "speed": 0.955738
+      },
+      "Moon": {
+        "longitude": 104.884358,
+        "sign_index": 3,
+        "degree_in_sign": 14.884358,
+        "is_retrograde": false,
+        "speed": 12.002008
+      },
+      "Mars": {
+        "longitude": 152.394241,
+        "sign_index": 5,
+        "degree_in_sign": 2.394241,
+        "is_retrograde": false,
+        "speed": 0.410095
+      },
+      "Mercury": {
+        "longitude": 41.897555,
+        "sign_index": 1,
+        "degree_in_sign": 11.897555,
+        "is_retrograde": false,
+        "speed": 1.84407
+      },
+      "Jupiter": {
+        "longitude": 60.308337,
+        "sign_index": 2,
+        "degree_in_sign": 0.308337,
+        "is_retrograde": false,
+        "speed": 0.230241
+      },
+      "Venus": {
+        "longitude": 17.979224,
+        "sign_index": 0,
+        "degree_in_sign": 17.979224,
+        "is_retrograde": false,
+        "speed": 1.14424
+      },
+      "Saturn": {
+        "longitude": 108.288399,
+        "sign_index": 3,
+        "degree_in_sign": 18.288399,
+        "is_retrograde": false,
+        "speed": 0.097117
+      },
+      "Rahu": {
+        "longitude": 239.707288,
+        "sign_index": 7,
+        "degree_in_sign": 29.707288,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 59.707288,
+        "sign_index": 1,
+        "degree_in_sign": 29.707288,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

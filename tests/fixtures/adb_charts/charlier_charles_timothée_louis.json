@@ -1,0 +1,108 @@
+{
+  "adb_id": 70523,
+  "name": "Charlier, Charles Timothée Louis",
+  "given_name": "Charles Timothée Louis Charlier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2401076.285185,
+    "year": 1861,
+    "month": 10,
+    "day": 27,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlier,_Charles_Timothée_Louis",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 65.\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 7.364452,
+    "lagna": 37.364452,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.927517,
+    "jd_ut": 2401076.285185,
+    "planets": {
+      "Sun": {
+        "longitude": 192.425933,
+        "sign_index": 6,
+        "degree_in_sign": 12.425933,
+        "is_retrograde": false,
+        "speed": 0.999541
+      },
+      "Moon": {
+        "longitude": 113.204944,
+        "sign_index": 3,
+        "degree_in_sign": 23.204944,
+        "is_retrograde": false,
+        "speed": 16.87184
+      },
+      "Mars": {
+        "longitude": 171.504246,
+        "sign_index": 5,
+        "degree_in_sign": 21.504246,
+        "is_retrograde": false,
+        "speed": 0.649759
+      },
+      "Mercury": {
+        "longitude": 215.28664,
+        "sign_index": 7,
+        "degree_in_sign": 5.28664,
+        "is_retrograde": false,
+        "speed": 0.547872
+      },
+      "Jupiter": {
+        "longitude": 147.60159,
+        "sign_index": 4,
+        "degree_in_sign": 27.60159,
+        "is_retrograde": false,
+        "speed": 0.181763
+      },
+      "Venus": {
+        "longitude": 234.41669,
+        "sign_index": 7,
+        "degree_in_sign": 24.41669,
+        "is_retrograde": false,
+        "speed": 1.173087
+      },
+      "Saturn": {
+        "longitude": 147.087089,
+        "sign_index": 4,
+        "degree_in_sign": 27.087089,
+        "is_retrograde": false,
+        "speed": 0.100635
+      },
+      "Rahu": {
+        "longitude": 255.629514,
+        "sign_index": 8,
+        "degree_in_sign": 15.629514,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 75.629514,
+        "sign_index": 2,
+        "degree_in_sign": 15.629514,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

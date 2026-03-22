@@ -1,0 +1,108 @@
+{
+  "adb_id": 64548,
+  "name": "Casadesus, Henri",
+  "given_name": "Henri Casadesus",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407622.535166,
+    "year": 1879,
+    "month": 9,
+    "day": 30,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 9",
+    "country": "France",
+    "lat": 48.8725,
+    "lon": 2.340278
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casadesus,_Henri",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Conductor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 27.429165,
+    "lagna": 87.429165,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.177735,
+    "jd_ut": 2407622.535166,
+    "planets": {
+      "Sun": {
+        "longitude": 164.306845,
+        "sign_index": 5,
+        "degree_in_sign": 14.306845,
+        "is_retrograde": false,
+        "speed": 0.983077
+      },
+      "Moon": {
+        "longitude": 339.843297,
+        "sign_index": 11,
+        "degree_in_sign": 9.843297,
+        "is_retrograde": false,
+        "speed": 9.173677
+      },
+      "Mars": {
+        "longitude": 36.290197,
+        "sign_index": 1,
+        "degree_in_sign": 6.290197,
+        "is_retrograde": false,
+        "speed": 0.09735
+      },
+      "Mercury": {
+        "longitude": 159.499128,
+        "sign_index": 5,
+        "degree_in_sign": 9.499128,
+        "is_retrograde": false,
+        "speed": 1.80804
+      },
+      "Jupiter": {
+        "longitude": 312.066082,
+        "sign_index": 10,
+        "degree_in_sign": 12.066082,
+        "is_retrograde": true,
+        "speed": -0.091729
+      },
+      "Venus": {
+        "longitude": 154.894374,
+        "sign_index": 5,
+        "degree_in_sign": 4.894374,
+        "is_retrograde": true,
+        "speed": -0.552106
+      },
+      "Saturn": {
+        "longitude": 350.616449,
+        "sign_index": 11,
+        "degree_in_sign": 20.616449,
+        "is_retrograde": true,
+        "speed": -0.077938
+      },
+      "Rahu": {
+        "longitude": 268.729754,
+        "sign_index": 8,
+        "degree_in_sign": 28.729754,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 88.729754,
+        "sign_index": 2,
+        "degree_in_sign": 28.729754,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

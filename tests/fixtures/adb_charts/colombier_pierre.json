@@ -1,0 +1,109 @@
+{
+  "adb_id": 62868,
+  "name": "Colombier, Pierre",
+  "given_name": "Pierre Colombier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413637.222674,
+    "year": 1896,
+    "month": 3,
+    "day": 18,
+    "calendar": "g",
+    "time": "17:30",
+    "time_type": "s",
+    "hour": 17.5,
+    "time_unknown": false,
+    "place": "Compiègne",
+    "country": "France",
+    "lat": 49.416667,
+    "lon": 2.833333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colombier,_Pierre",
+  "source_notes": "Didier Geslain archive, 'Cinema Realisateurs' pdf file, p. 65.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 7.774051,
+    "lagna": 127.774051,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.407651,
+    "jd_ut": 2413637.222674,
+    "planets": {
+      "Sun": {
+        "longitude": 336.222878,
+        "sign_index": 11,
+        "degree_in_sign": 6.222878,
+        "is_retrograde": false,
+        "speed": 0.993434
+      },
+      "Moon": {
+        "longitude": 22.256616,
+        "sign_index": 0,
+        "degree_in_sign": 22.256616,
+        "is_retrograde": false,
+        "speed": 9.15617
+      },
+      "Mars": {
+        "longitude": 289.104743,
+        "sign_index": 9,
+        "degree_in_sign": 19.104743,
+        "is_retrograde": false,
+        "speed": 0.756955
+      },
+      "Mercury": {
+        "longitude": 311.944189,
+        "sign_index": 10,
+        "degree_in_sign": 11.944189,
+        "is_retrograde": false,
+        "speed": 1.420757
+      },
+      "Jupiter": {
+        "longitude": 96.747986,
+        "sign_index": 3,
+        "degree_in_sign": 6.747986,
+        "is_retrograde": true,
+        "speed": -0.020232
+      },
+      "Venus": {
+        "longitude": 307.039355,
+        "sign_index": 10,
+        "degree_in_sign": 7.039355,
+        "is_retrograde": false,
+        "speed": 1.223804
+      },
+      "Saturn": {
+        "longitude": 206.333219,
+        "sign_index": 6,
+        "degree_in_sign": 26.333219,
+        "is_retrograde": true,
+        "speed": -0.034326
+      },
+      "Rahu": {
+        "longitude": 309.998719,
+        "sign_index": 10,
+        "degree_in_sign": 9.998719,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 129.998719,
+        "sign_index": 4,
+        "degree_in_sign": 9.998719,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

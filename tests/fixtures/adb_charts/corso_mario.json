@@ -1,0 +1,109 @@
+{
+  "adb_id": 103073,
+  "name": "Corso, Mario",
+  "given_name": "Mario Corso",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430231.614583,
+    "year": 1941,
+    "month": 8,
+    "day": 25,
+    "calendar": "g",
+    "time": "04:45",
+    "time_type": "d",
+    "hour": 4.75,
+    "time_unknown": false,
+    "place": "Verona",
+    "country": "Italy",
+    "lat": 45.45,
+    "lon": 11.0
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corso,_Mario",
+  "source_notes": "quoted BC from Bordoni database\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 25.232976,
+    "lagna": 85.232976,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.042073,
+    "jd_ut": 2430231.614583,
+    "planets": {
+      "Sun": {
+        "longitude": 128.464422,
+        "sign_index": 4,
+        "degree_in_sign": 8.464422,
+        "is_retrograde": false,
+        "speed": 0.965064
+      },
+      "Moon": {
+        "longitude": 159.488301,
+        "sign_index": 5,
+        "degree_in_sign": 9.488301,
+        "is_retrograde": false,
+        "speed": 17.707821
+      },
+      "Mars": {
+        "longitude": 359.558634,
+        "sign_index": 11,
+        "degree_in_sign": 29.558634,
+        "is_retrograde": false,
+        "speed": 0.173456
+      },
+      "Mercury": {
+        "longitude": 134.452328,
+        "sign_index": 4,
+        "degree_in_sign": 14.452328,
+        "is_retrograde": false,
+        "speed": 1.884003
+      },
+      "Jupiter": {
+        "longitude": 55.105993,
+        "sign_index": 1,
+        "degree_in_sign": 25.105993,
+        "is_retrograde": false,
+        "speed": 0.133944
+      },
+      "Venus": {
+        "longitude": 161.872683,
+        "sign_index": 5,
+        "degree_in_sign": 11.872683,
+        "is_retrograde": false,
+        "speed": 1.199128
+      },
+      "Saturn": {
+        "longitude": 35.261464,
+        "sign_index": 1,
+        "degree_in_sign": 5.261464,
+        "is_retrograde": false,
+        "speed": 0.02945
+      },
+      "Rahu": {
+        "longitude": 150.627203,
+        "sign_index": 5,
+        "degree_in_sign": 0.627203,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 330.627203,
+        "sign_index": 11,
+        "degree_in_sign": 0.627203,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

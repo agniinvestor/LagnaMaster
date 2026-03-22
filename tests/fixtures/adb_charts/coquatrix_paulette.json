@@ -1,0 +1,111 @@
+{
+  "adb_id": 63443,
+  "name": "Coquatrix, Paulette",
+  "given_name": "Paulette Coquatrix",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420981.8125,
+    "year": 1916,
+    "month": 4,
+    "day": 28,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "s",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coquatrix,_Paulette",
+  "source_notes": "Didier Geslain archive, 'chanteurs' pdf file, p. 58.\\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 15.12669,
+    "lagna": 45.12669,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.688427,
+    "jd_ut": 2420981.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 14.978494,
+        "sign_index": 0,
+        "degree_in_sign": 14.978494,
+        "is_retrograde": false,
+        "speed": 0.971819
+      },
+      "Moon": {
+        "longitude": 327.72955,
+        "sign_index": 10,
+        "degree_in_sign": 27.72955,
+        "is_retrograde": false,
+        "speed": 10.009543
+      },
+      "Mars": {
+        "longitude": 114.770973,
+        "sign_index": 3,
+        "degree_in_sign": 24.770973,
+        "is_retrograde": false,
+        "speed": 0.337291
+      },
+      "Mercury": {
+        "longitude": 29.584123,
+        "sign_index": 0,
+        "degree_in_sign": 29.584123,
+        "is_retrograde": false,
+        "speed": 1.884901
+      },
+      "Jupiter": {
+        "longitude": 355.2228,
+        "sign_index": 11,
+        "degree_in_sign": 25.2228,
+        "is_retrograde": false,
+        "speed": 0.234212
+      },
+      "Venus": {
+        "longitude": 60.464352,
+        "sign_index": 2,
+        "degree_in_sign": 0.464352,
+        "is_retrograde": false,
+        "speed": 0.941181
+      },
+      "Saturn": {
+        "longitude": 78.860849,
+        "sign_index": 2,
+        "degree_in_sign": 18.860849,
+        "is_retrograde": false,
+        "speed": 0.079725
+      },
+      "Rahu": {
+        "longitude": 280.793455,
+        "sign_index": 9,
+        "degree_in_sign": 10.793455,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 100.793455,
+        "sign_index": 3,
+        "degree_in_sign": 10.793455,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

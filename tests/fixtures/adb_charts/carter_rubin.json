@@ -1,0 +1,116 @@
+{
+  "adb_id": 843,
+  "name": "Carter, Rubin",
+  "given_name": "Rubin Carter",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428660.15625,
+    "year": 1937,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "11:45",
+    "time_type": "d",
+    "hour": 11.75,
+    "time_unknown": false,
+    "place": "Passaic",
+    "country": "New Jersey",
+    "lat": 40.85,
+    "lon": -74.116667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carter,_Rubin",
+  "source_notes": "B.C. in hand, LMR.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Passions : Criminal Perpetrator : Homicide many at once",
+    "Vocation : Sports : Boxing",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Famous : Criminal cases",
+    "Notable : Famous : Newsmaker",
+    "Notable : Famous : Notable extremes",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 23.899448,
+    "lagna": 83.899448,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.981989,
+    "jd_ut": 2428660.15625,
+    "planets": {
+      "Sun": {
+        "longitude": 22.695652,
+        "sign_index": 0,
+        "degree_in_sign": 22.695652,
+        "is_retrograde": false,
+        "speed": 0.96793
+      },
+      "Moon": {
+        "longitude": 328.0173,
+        "sign_index": 10,
+        "degree_in_sign": 28.0173,
+        "is_retrograde": false,
+        "speed": 10.712218
+      },
+      "Mars": {
+        "longitude": 219.533547,
+        "sign_index": 7,
+        "degree_in_sign": 9.533547,
+        "is_retrograde": true,
+        "speed": -0.26731
+      },
+      "Mercury": {
+        "longitude": 29.901427,
+        "sign_index": 0,
+        "degree_in_sign": 29.901427,
+        "is_retrograde": true,
+        "speed": -0.460909
+      },
+      "Jupiter": {
+        "longitude": 274.205824,
+        "sign_index": 9,
+        "degree_in_sign": 4.205824,
+        "is_retrograde": false,
+        "speed": 0.028009
+      },
+      "Venus": {
+        "longitude": 356.586343,
+        "sign_index": 11,
+        "degree_in_sign": 26.586343,
+        "is_retrograde": true,
+        "speed": -0.103479
+      },
+      "Saturn": {
+        "longitude": 338.208864,
+        "sign_index": 11,
+        "degree_in_sign": 8.208864,
+        "is_retrograde": false,
+        "speed": 0.100152
+      },
+      "Rahu": {
+        "longitude": 233.902033,
+        "sign_index": 7,
+        "degree_in_sign": 23.902033,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 53.902033,
+        "sign_index": 1,
+        "degree_in_sign": 23.902033,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

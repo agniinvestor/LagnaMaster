@@ -1,0 +1,109 @@
+{
+  "adb_id": 65031,
+  "name": "Cohen, Jean-Joseph",
+  "given_name": "Jean-Joseph Cohen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425970.125,
+    "year": 1929,
+    "month": 12,
+    "day": 24,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Jean-Joseph",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 195.\\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 4.301656,
+    "lagna": 34.301656,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.879139,
+    "jd_ut": 2425970.125,
+    "planets": {
+      "Sun": {
+        "longitude": 249.463567,
+        "sign_index": 8,
+        "degree_in_sign": 9.463567,
+        "is_retrograde": false,
+        "speed": 1.018911
+      },
+      "Moon": {
+        "longitude": 177.712802,
+        "sign_index": 5,
+        "degree_in_sign": 27.712802,
+        "is_retrograde": false,
+        "speed": 14.492379
+      },
+      "Mars": {
+        "longitude": 243.513997,
+        "sign_index": 8,
+        "degree_in_sign": 3.513997,
+        "is_retrograde": false,
+        "speed": 0.746544
+      },
+      "Mercury": {
+        "longitude": 264.351106,
+        "sign_index": 8,
+        "degree_in_sign": 24.351106,
+        "is_retrograde": false,
+        "speed": 1.539766
+      },
+      "Jupiter": {
+        "longitude": 45.786671,
+        "sign_index": 1,
+        "degree_in_sign": 15.786671,
+        "is_retrograde": true,
+        "speed": -0.114132
+      },
+      "Venus": {
+        "longitude": 238.908564,
+        "sign_index": 7,
+        "degree_in_sign": 28.908564,
+        "is_retrograde": false,
+        "speed": 1.257777
+      },
+      "Saturn": {
+        "longitude": 249.964398,
+        "sign_index": 8,
+        "degree_in_sign": 9.964398,
+        "is_retrograde": false,
+        "speed": 0.11819
+      },
+      "Rahu": {
+        "longitude": 16.452371,
+        "sign_index": 0,
+        "degree_in_sign": 16.452371,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 196.452371,
+        "sign_index": 6,
+        "degree_in_sign": 16.452371,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

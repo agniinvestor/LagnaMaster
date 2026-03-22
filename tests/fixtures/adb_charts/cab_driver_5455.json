@@ -1,0 +1,108 @@
+{
+  "adb_id": 5455,
+  "name": "Cab Driver 5455",
+  "given_name": "Cab Driver 5455",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2422967.083333,
+    "year": 1921,
+    "month": 10,
+    "day": 4,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "San Diego",
+    "country": "California",
+    "lat": 32.716667,
+    "lon": -117.15
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Cab_Driver_5455",
+  "source_notes": "Don Woolson quotes him\\n",
+  "categories": [
+    "Vocation : Travel : Trucking business"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 27.720815,
+    "lagna": 147.720815,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.764326,
+    "jd_ut": 2422967.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 168.03206,
+        "sign_index": 5,
+        "degree_in_sign": 18.03206,
+        "is_retrograde": false,
+        "speed": 0.985958
+      },
+      "Moon": {
+        "longitude": 208.880335,
+        "sign_index": 6,
+        "degree_in_sign": 28.880335,
+        "is_retrograde": false,
+        "speed": 16.383744
+      },
+      "Mars": {
+        "longitude": 136.712602,
+        "sign_index": 4,
+        "degree_in_sign": 16.712602,
+        "is_retrograde": false,
+        "speed": 0.625469
+      },
+      "Mercury": {
+        "longitude": 193.063705,
+        "sign_index": 6,
+        "degree_in_sign": 13.063705,
+        "is_retrograde": false,
+        "speed": 1.110867
+      },
+      "Jupiter": {
+        "longitude": 159.095218,
+        "sign_index": 5,
+        "degree_in_sign": 9.095218,
+        "is_retrograde": false,
+        "speed": 0.215178
+      },
+      "Venus": {
+        "longitude": 137.435795,
+        "sign_index": 4,
+        "degree_in_sign": 17.435795,
+        "is_retrograde": false,
+        "speed": 1.217787
+      },
+      "Saturn": {
+        "longitude": 156.849947,
+        "sign_index": 5,
+        "degree_in_sign": 6.849947,
+        "is_retrograde": false,
+        "speed": 0.122807
+      },
+      "Rahu": {
+        "longitude": 175.589804,
+        "sign_index": 5,
+        "degree_in_sign": 25.589804,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 355.589804,
+        "sign_index": 11,
+        "degree_in_sign": 25.589804,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

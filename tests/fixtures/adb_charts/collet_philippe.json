@@ -1,0 +1,108 @@
+{
+  "adb_id": 69415,
+  "name": "Collet, Philippe",
+  "given_name": "Philippe Collet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438376.572917,
+    "year": 1963,
+    "month": 12,
+    "day": 13,
+    "calendar": "g",
+    "time": "02:45",
+    "time_type": "s",
+    "hour": 2.75,
+    "time_unknown": false,
+    "place": "Nancy",
+    "country": "France",
+    "lat": 48.683333,
+    "lon": 6.2
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collet,_Philippe",
+  "source_notes": "Didier Geslain archive, 'sport athlétisme' pdf file, p. 28.\\n",
+  "categories": [
+    "Vocation : Sports : Track and Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 0.411402,
+    "lagna": 150.411402,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.35351,
+    "jd_ut": 2438376.572917,
+    "planets": {
+      "Sun": {
+        "longitude": 236.967795,
+        "sign_index": 7,
+        "degree_in_sign": 26.967795,
+        "is_retrograde": false,
+        "speed": 1.01711
+      },
+      "Moon": {
+        "longitude": 204.955375,
+        "sign_index": 6,
+        "degree_in_sign": 24.955375,
+        "is_retrograde": false,
+        "speed": 13.384869
+      },
+      "Mars": {
+        "longitude": 252.504595,
+        "sign_index": 8,
+        "degree_in_sign": 12.504595,
+        "is_retrograde": false,
+        "speed": 0.76376
+      },
+      "Mercury": {
+        "longitude": 256.260997,
+        "sign_index": 8,
+        "degree_in_sign": 16.260997,
+        "is_retrograde": false,
+        "speed": 1.318294
+      },
+      "Jupiter": {
+        "longitude": 346.290278,
+        "sign_index": 11,
+        "degree_in_sign": 16.290278,
+        "is_retrograde": false,
+        "speed": 0.026437
+      },
+      "Venus": {
+        "longitude": 263.355407,
+        "sign_index": 8,
+        "degree_in_sign": 23.355407,
+        "is_retrograde": false,
+        "speed": 1.242355
+      },
+      "Saturn": {
+        "longitude": 295.336148,
+        "sign_index": 9,
+        "degree_in_sign": 25.336148,
+        "is_retrograde": false,
+        "speed": 0.080959
+      },
+      "Rahu": {
+        "longitude": 79.009104,
+        "sign_index": 2,
+        "degree_in_sign": 19.009104,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 259.009104,
+        "sign_index": 8,
+        "degree_in_sign": 19.009104,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

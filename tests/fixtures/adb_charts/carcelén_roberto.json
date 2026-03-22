@@ -1,0 +1,111 @@
+{
+  "adb_id": 88186,
+  "name": "Carcelén, Roberto",
+  "given_name": "Roberto Carcelén",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440838.451389,
+    "year": 1970,
+    "month": 9,
+    "day": 8,
+    "calendar": "g",
+    "time": "17:50",
+    "time_type": "s",
+    "hour": 17.833333,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carcelén,_Roberto",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Lifestyle : Financial : Philanthropist",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Sports : Skiing",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 26.233013,
+    "lagna": 296.233013,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.44765,
+    "jd_ut": 2440838.451389,
+    "planets": {
+      "Sun": {
+        "longitude": 142.408044,
+        "sign_index": 4,
+        "degree_in_sign": 22.408044,
+        "is_retrograde": false,
+        "speed": 0.971322
+      },
+      "Moon": {
+        "longitude": 234.137476,
+        "sign_index": 7,
+        "degree_in_sign": 24.137476,
+        "is_retrograde": false,
+        "speed": 7.661567
+      },
+      "Mars": {
+        "longitude": 130.20247,
+        "sign_index": 4,
+        "degree_in_sign": 10.20247,
+        "is_retrograde": false,
+        "speed": 0.635415
+      },
+      "Mercury": {
+        "longitude": 149.894472,
+        "sign_index": 4,
+        "degree_in_sign": 29.894472,
+        "is_retrograde": true,
+        "speed": -0.919153
+      },
+      "Jupiter": {
+        "longitude": 190.395069,
+        "sign_index": 6,
+        "degree_in_sign": 10.395069,
+        "is_retrograde": false,
+        "speed": 0.177859
+      },
+      "Venus": {
+        "longitude": 188.25912,
+        "sign_index": 6,
+        "degree_in_sign": 8.25912,
+        "is_retrograde": false,
+        "speed": 0.904419
+      },
+      "Saturn": {
+        "longitude": 29.156092,
+        "sign_index": 0,
+        "degree_in_sign": 29.156092,
+        "is_retrograde": true,
+        "speed": -0.00785
+      },
+      "Rahu": {
+        "longitude": 308.549132,
+        "sign_index": 10,
+        "degree_in_sign": 8.549132,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 128.549132,
+        "sign_index": 4,
+        "degree_in_sign": 8.549132,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

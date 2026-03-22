@@ -1,0 +1,108 @@
+{
+  "adb_id": 54067,
+  "name": "Consolo, Billy",
+  "given_name": "Billy Consolo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427667.75,
+    "year": 1934,
+    "month": 8,
+    "day": 18,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Cleveland",
+    "country": "Ohio",
+    "lat": 41.5,
+    "lon": -81.7
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Consolo,_Billy",
+  "source_notes": "Steinbrecher collection: Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Sports : Baseball"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 11.120688,
+    "lagna": 41.120688,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.944045,
+    "jd_ut": 2427667.75,
+    "planets": {
+      "Sun": {
+        "longitude": 121.654675,
+        "sign_index": 4,
+        "degree_in_sign": 1.654675,
+        "is_retrograde": false,
+        "speed": 0.96194
+      },
+      "Moon": {
+        "longitude": 211.859384,
+        "sign_index": 7,
+        "degree_in_sign": 1.859384,
+        "is_retrograde": false,
+        "speed": 13.982296
+      },
+      "Mars": {
+        "longitude": 89.127061,
+        "sign_index": 2,
+        "degree_in_sign": 29.127061,
+        "is_retrograde": false,
+        "speed": 0.648164
+      },
+      "Mercury": {
+        "longitude": 113.309696,
+        "sign_index": 3,
+        "degree_in_sign": 23.309696,
+        "is_retrograde": false,
+        "speed": 2.00302
+      },
+      "Jupiter": {
+        "longitude": 176.549817,
+        "sign_index": 5,
+        "degree_in_sign": 26.549817,
+        "is_retrograde": false,
+        "speed": 0.1636
+      },
+      "Venus": {
+        "longitude": 97.774345,
+        "sign_index": 3,
+        "degree_in_sign": 7.774345,
+        "is_retrograde": false,
+        "speed": 1.215939
+      },
+      "Saturn": {
+        "longitude": 301.886566,
+        "sign_index": 10,
+        "degree_in_sign": 1.886566,
+        "is_retrograde": true,
+        "speed": -0.075407
+      },
+      "Rahu": {
+        "longitude": 286.491697,
+        "sign_index": 9,
+        "degree_in_sign": 16.491697,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 106.491697,
+        "sign_index": 3,
+        "degree_in_sign": 16.491697,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

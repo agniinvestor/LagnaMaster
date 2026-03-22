@@ -1,0 +1,108 @@
+{
+  "adb_id": 105252,
+  "name": "Cottenet, Maurice",
+  "given_name": "Maurice Cottenet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413236.118507,
+    "year": 1895,
+    "month": 2,
+    "day": 11,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Le Raincy",
+    "country": "France",
+    "lat": 48.9,
+    "lon": 2.516667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cottenet,_Maurice",
+  "source_notes": "quoted BC from Bordoni database\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.695898,
+    "lagna": 74.695898,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.392318,
+    "jd_ut": 2413236.118507,
+    "planets": {
+      "Sun": {
+        "longitude": 300.276276,
+        "sign_index": 10,
+        "degree_in_sign": 0.276276,
+        "is_retrograde": false,
+        "speed": 1.010498
+      },
+      "Moon": {
+        "longitude": 147.512159,
+        "sign_index": 4,
+        "degree_in_sign": 27.512159,
+        "is_retrograde": false,
+        "speed": 18.379329
+      },
+      "Mars": {
+        "longitude": 27.568357,
+        "sign_index": 0,
+        "degree_in_sign": 27.568357,
+        "is_retrograde": false,
+        "speed": 0.534004
+      },
+      "Mercury": {
+        "longitude": 318.199465,
+        "sign_index": 10,
+        "degree_in_sign": 18.199465,
+        "is_retrograde": false,
+        "speed": 0.753834
+      },
+      "Jupiter": {
+        "longitude": 63.993439,
+        "sign_index": 2,
+        "degree_in_sign": 3.993439,
+        "is_retrograde": true,
+        "speed": -0.028654
+      },
+      "Venus": {
+        "longitude": 317.660169,
+        "sign_index": 10,
+        "degree_in_sign": 17.660169,
+        "is_retrograde": false,
+        "speed": 1.24703
+      },
+      "Saturn": {
+        "longitude": 194.850087,
+        "sign_index": 6,
+        "degree_in_sign": 14.850087,
+        "is_retrograde": false,
+        "speed": 0.005705
+      },
+      "Rahu": {
+        "longitude": 331.254076,
+        "sign_index": 11,
+        "degree_in_sign": 1.254076,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 151.254076,
+        "sign_index": 5,
+        "degree_in_sign": 1.254076,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

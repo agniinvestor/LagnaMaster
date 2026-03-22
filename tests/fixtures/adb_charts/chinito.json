@@ -1,0 +1,108 @@
+{
+  "adb_id": 57174,
+  "name": "Chinito",
+  "given_name": "Chinito",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434463.0,
+    "year": 1953,
+    "month": 3,
+    "day": 26,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Montpellier",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 3.883333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chinito",
+  "source_notes": "Collection Didier Geslain (EC DG 640)\\n",
+  "categories": [
+    "Vocation : Sports : Bullfighting"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 10.304617,
+    "lagna": 70.304617,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.203863,
+    "jd_ut": 2434463.0,
+    "planets": {
+      "Sun": {
+        "longitude": 342.32714,
+        "sign_index": 11,
+        "degree_in_sign": 12.32714,
+        "is_retrograde": false,
+        "speed": 0.989538
+      },
+      "Moon": {
+        "longitude": 119.068759,
+        "sign_index": 3,
+        "degree_in_sign": 29.068759,
+        "is_retrograde": false,
+        "speed": 14.341367
+      },
+      "Mars": {
+        "longitude": 11.320198,
+        "sign_index": 0,
+        "degree_in_sign": 11.320198,
+        "is_retrograde": false,
+        "speed": 0.726244
+      },
+      "Mercury": {
+        "longitude": 328.10149,
+        "sign_index": 10,
+        "degree_in_sign": 28.10149,
+        "is_retrograde": true,
+        "speed": -0.539297
+      },
+      "Jupiter": {
+        "longitude": 27.067142,
+        "sign_index": 0,
+        "degree_in_sign": 27.067142,
+        "is_retrograde": false,
+        "speed": 0.200034
+      },
+      "Venus": {
+        "longitude": 7.906156,
+        "sign_index": 0,
+        "degree_in_sign": 7.906156,
+        "is_retrograde": true,
+        "speed": -0.138168
+      },
+      "Saturn": {
+        "longitude": 182.157399,
+        "sign_index": 6,
+        "degree_in_sign": 2.157399,
+        "is_retrograde": true,
+        "speed": -0.069806
+      },
+      "Rahu": {
+        "longitude": 286.397363,
+        "sign_index": 9,
+        "degree_in_sign": 16.397363,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 106.397363,
+        "sign_index": 3,
+        "degree_in_sign": 16.397363,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

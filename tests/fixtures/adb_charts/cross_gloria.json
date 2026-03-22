@@ -1,0 +1,109 @@
+{
+  "adb_id": 895,
+  "name": "Cross, Gloria",
+  "given_name": "Gloria Cross",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428697.0,
+    "year": 1937,
+    "month": 6,
+    "day": 12,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Stephenville",
+    "country": "USA",
+    "lat": 32.216667,
+    "lon": -98.2
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cross,_Gloria",
+  "source_notes": "LMR quotes her, B.C.\\n",
+  "categories": [
+    "Vocation : Law : Police",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 12.234884,
+    "lagna": 42.234884,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.983397,
+    "jd_ut": 2428697.0,
+    "planets": {
+      "Sun": {
+        "longitude": 58.094476,
+        "sign_index": 1,
+        "degree_in_sign": 28.094476,
+        "is_retrograde": false,
+        "speed": 0.955661
+      },
+      "Moon": {
+        "longitude": 108.307905,
+        "sign_index": 3,
+        "degree_in_sign": 18.307905,
+        "is_retrograde": false,
+        "speed": 17.959378
+      },
+      "Mars": {
+        "longitude": 208.074826,
+        "sign_index": 6,
+        "degree_in_sign": 28.074826,
+        "is_retrograde": true,
+        "speed": -0.203385
+      },
+      "Mercury": {
+        "longitude": 35.156571,
+        "sign_index": 1,
+        "degree_in_sign": 5.156571,
+        "is_retrograde": false,
+        "speed": 1.254133
+      },
+      "Jupiter": {
+        "longitude": 273.131833,
+        "sign_index": 9,
+        "degree_in_sign": 3.131833,
+        "is_retrograde": true,
+        "speed": -0.083002
+      },
+      "Venus": {
+        "longitude": 13.323192,
+        "sign_index": 0,
+        "degree_in_sign": 13.323192,
+        "is_retrograde": false,
+        "speed": 0.82082
+      },
+      "Saturn": {
+        "longitude": 341.148017,
+        "sign_index": 11,
+        "degree_in_sign": 11.148017,
+        "is_retrograde": false,
+        "speed": 0.056004
+      },
+      "Rahu": {
+        "longitude": 231.949606,
+        "sign_index": 7,
+        "degree_in_sign": 21.949606,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 51.949606,
+        "sign_index": 1,
+        "degree_in_sign": 21.949606,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

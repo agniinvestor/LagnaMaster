@@ -1,0 +1,113 @@
+{
+  "adb_id": 74765,
+  "name": "Canseco, Carlos",
+  "given_name": "Carlos Canseco",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422766.136389,
+    "year": 1921,
+    "month": 3,
+    "day": 17,
+    "calendar": "g",
+    "time": "08:45",
+    "time_type": "l",
+    "hour": 8.75,
+    "time_unknown": false,
+    "place": "Tampico",
+    "country": "Mexico",
+    "lat": 22.216667,
+    "lon": -97.85
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canseco,_Carlos",
+  "source_notes": "Sy Scholfield submitted birth record from the online Tamaulipas state archive [http://servicios.tamaulipas.gob.mx/servicios/crct/actas/detalle1.asp?cve_ref=10000427688&mpio=38].\\n",
+  "categories": [
+    "Lifestyle : Financial : Fundraiser",
+    "Lifestyle : Financial : Philanthropist",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Physician",
+    "Vocation : Politics : Public office",
+    "Notable : Awards : Public Service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 29.768354,
+    "lagna": 359.768354,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.756644,
+    "jd_ut": 2422766.136389,
+    "planets": {
+      "Sun": {
+        "longitude": 333.739937,
+        "sign_index": 11,
+        "degree_in_sign": 3.739937,
+        "is_retrograde": false,
+        "speed": 0.994551
+      },
+      "Moon": {
+        "longitude": 70.494494,
+        "sign_index": 2,
+        "degree_in_sign": 10.494494,
+        "is_retrograde": false,
+        "speed": 18.800992
+      },
+      "Mars": {
+        "longitude": 1.614529,
+        "sign_index": 0,
+        "degree_in_sign": 1.614529,
+        "is_retrograde": false,
+        "speed": 0.740323
+      },
+      "Mercury": {
+        "longitude": 310.791804,
+        "sign_index": 10,
+        "degree_in_sign": 10.791804,
+        "is_retrograde": false,
+        "speed": 0.123839
+      },
+      "Jupiter": {
+        "longitude": 139.608343,
+        "sign_index": 4,
+        "degree_in_sign": 19.608343,
+        "is_retrograde": true,
+        "speed": -0.12349
+      },
+      "Venus": {
+        "longitude": 13.560666,
+        "sign_index": 0,
+        "degree_in_sign": 13.560666,
+        "is_retrograde": false,
+        "speed": 0.498358
+      },
+      "Saturn": {
+        "longitude": 148.26635,
+        "sign_index": 4,
+        "degree_in_sign": 28.26635,
+        "is_retrograde": true,
+        "speed": -0.078747
+      },
+      "Rahu": {
+        "longitude": 186.238402,
+        "sign_index": 6,
+        "degree_in_sign": 6.238402,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 6.238402,
+        "sign_index": 0,
+        "degree_in_sign": 6.238402,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

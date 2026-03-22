@@ -1,0 +1,108 @@
+{
+  "adb_id": 79058,
+  "name": "Canudo, Ricciotto",
+  "given_name": "Ricciotto Canudo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406621.635463,
+    "year": 1877,
+    "month": 1,
+    "day": 2,
+    "calendar": "g",
+    "time": "04:05",
+    "time_type": "s",
+    "hour": 4.083333,
+    "time_unknown": false,
+    "place": "Gioia del Colle",
+    "country": "Italy",
+    "lat": 40.8,
+    "lon": 16.933333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canudo,_Ricciotto",
+  "source_notes": "Memo from BC in Steinbrecher collection, \"misc_4\" file, p. 37/164. Originally Scholfield read the numbers as 1:05 AM but after consulting with GraZia Bordoni on 16 January 2017 he changed it to 4:05 AM.\\n",
+  "categories": [
+    "Vocation : Writers : Critic"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 16.728336,
+    "lagna": 196.728336,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.139476,
+    "jd_ut": 2406621.635463,
+    "planets": {
+      "Sun": {
+        "longitude": 259.763194,
+        "sign_index": 8,
+        "degree_in_sign": 19.763194,
+        "is_retrograde": false,
+        "speed": 1.019066
+      },
+      "Moon": {
+        "longitude": 110.987917,
+        "sign_index": 3,
+        "degree_in_sign": 20.987917,
+        "is_retrograde": false,
+        "speed": 11.434598
+      },
+      "Mars": {
+        "longitude": 209.687355,
+        "sign_index": 6,
+        "degree_in_sign": 29.687355,
+        "is_retrograde": false,
+        "speed": 0.651677
+      },
+      "Mercury": {
+        "longitude": 275.854838,
+        "sign_index": 9,
+        "degree_in_sign": 5.854838,
+        "is_retrograde": false,
+        "speed": 1.52032
+      },
+      "Jupiter": {
+        "longitude": 237.096188,
+        "sign_index": 7,
+        "degree_in_sign": 27.096188,
+        "is_retrograde": false,
+        "speed": 0.217159
+      },
+      "Venus": {
+        "longitude": 229.385106,
+        "sign_index": 7,
+        "degree_in_sign": 19.385106,
+        "is_retrograde": false,
+        "speed": 1.2386
+      },
+      "Saturn": {
+        "longitude": 312.058104,
+        "sign_index": 10,
+        "degree_in_sign": 12.058104,
+        "is_retrograde": false,
+        "speed": 0.089714
+      },
+      "Rahu": {
+        "longitude": 321.769559,
+        "sign_index": 10,
+        "degree_in_sign": 21.769559,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 141.769559,
+        "sign_index": 4,
+        "degree_in_sign": 21.769559,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

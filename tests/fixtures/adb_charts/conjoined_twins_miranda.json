@@ -1,0 +1,109 @@
+{
+  "adb_id": 10006,
+  "name": "Conjoined Twins: Miranda",
+  "given_name": "Conjoined Twins: Miranda",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431693.8125,
+    "year": 1945,
+    "month": 8,
+    "day": 26,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Avondale",
+    "country": "Arizona",
+    "lat": 33.433333,
+    "lon": -112.35
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Miranda",
+  "source_notes": "Sy Scholfield provided birth certificates, copies on file.\\n\\nPreviously this ADB entry had 25 August 1945, 11:30 PM, Litchfield Park, Arizona (rated A: from memory) quoting DeCosta Williams collection, AFA.\\n",
+  "categories": [
+    "Personal : Birth : Conjoined twins",
+    "Personal : Birth : Infant mortality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.312532,
+    "lagna": 35.312532,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.09798,
+    "jd_ut": 2431693.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 129.595212,
+        "sign_index": 4,
+        "degree_in_sign": 9.595212,
+        "is_retrograde": false,
+        "speed": 0.964998
+      },
+      "Moon": {
+        "longitude": 348.206771,
+        "sign_index": 11,
+        "degree_in_sign": 18.206771,
+        "is_retrograde": false,
+        "speed": 11.002189
+      },
+      "Mars": {
+        "longitude": 59.249981,
+        "sign_index": 1,
+        "degree_in_sign": 29.249981,
+        "is_retrograde": false,
+        "speed": 0.624592
+      },
+      "Mercury": {
+        "longitude": 119.954221,
+        "sign_index": 3,
+        "degree_in_sign": 29.954221,
+        "is_retrograde": true,
+        "speed": -0.507538
+      },
+      "Jupiter": {
+        "longitude": 157.120438,
+        "sign_index": 5,
+        "degree_in_sign": 7.120438,
+        "is_retrograde": false,
+        "speed": 0.202406
+      },
+      "Venus": {
+        "longitude": 91.949022,
+        "sign_index": 3,
+        "degree_in_sign": 1.949022,
+        "is_retrograde": false,
+        "speed": 1.16739
+      },
+      "Saturn": {
+        "longitude": 87.464854,
+        "sign_index": 2,
+        "degree_in_sign": 27.464854,
+        "is_retrograde": false,
+        "speed": 0.107565
+      },
+      "Rahu": {
+        "longitude": 73.142314,
+        "sign_index": 2,
+        "degree_in_sign": 13.142314,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 253.142314,
+        "sign_index": 8,
+        "degree_in_sign": 13.142314,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

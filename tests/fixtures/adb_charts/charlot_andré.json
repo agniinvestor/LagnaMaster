@@ -1,0 +1,111 @@
+{
+  "adb_id": 79501,
+  "name": "Charlot, André",
+  "given_name": "André Charlot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408652.910165,
+    "year": 1882,
+    "month": 7,
+    "day": 26,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 2",
+    "country": "France",
+    "lat": 48.866944,
+    "lon": 2.340556
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlot,_André",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection [http://www.mandlonline.com/IMG/pdf/archives_mm_am_acteurs_muet-2.pdf]. \\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.467017,
+    "lagna": 138.467017,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.21712,
+    "jd_ut": 2408652.910165,
+    "planets": {
+      "Sun": {
+        "longitude": 101.031128,
+        "sign_index": 3,
+        "degree_in_sign": 11.031128,
+        "is_retrograde": false,
+        "speed": 0.955514
+      },
+      "Moon": {
+        "longitude": 226.249344,
+        "sign_index": 7,
+        "degree_in_sign": 16.249344,
+        "is_retrograde": false,
+        "speed": 16.601965
+      },
+      "Mars": {
+        "longitude": 143.289914,
+        "sign_index": 4,
+        "degree_in_sign": 23.289914,
+        "is_retrograde": false,
+        "speed": 0.616456
+      },
+      "Mercury": {
+        "longitude": 82.54482,
+        "sign_index": 2,
+        "degree_in_sign": 22.54482,
+        "is_retrograde": false,
+        "speed": 1.460103
+      },
+      "Jupiter": {
+        "longitude": 59.24091,
+        "sign_index": 1,
+        "degree_in_sign": 29.24091,
+        "is_retrograde": false,
+        "speed": 0.199979
+      },
+      "Venus": {
+        "longitude": 139.451655,
+        "sign_index": 4,
+        "degree_in_sign": 19.451655,
+        "is_retrograde": false,
+        "speed": 1.164754
+      },
+      "Saturn": {
+        "longitude": 32.321335,
+        "sign_index": 1,
+        "degree_in_sign": 2.321335,
+        "is_retrograde": false,
+        "speed": 0.071689
+      },
+      "Rahu": {
+        "longitude": 214.127994,
+        "sign_index": 7,
+        "degree_in_sign": 4.127994,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 34.127994,
+        "sign_index": 1,
+        "degree_in_sign": 4.127994,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

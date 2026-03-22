@@ -1,0 +1,109 @@
+{
+  "adb_id": 65164,
+  "name": "Cardon, Jacques-Armand",
+  "given_name": "Jacques-Armand Cardon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428502.5625,
+    "year": 1936,
+    "month": 11,
+    "day": 30,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Le Havre",
+    "country": "France",
+    "lat": 49.5,
+    "lon": 0.133333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardon,_Jacques-Armand",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'comiques' pdf file, p. 9.\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist",
+    "Vocation : Art : Commercial artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.041498,
+    "lagna": 135.041498,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.975963,
+    "jd_ut": 2428502.5625,
+    "planets": {
+      "Sun": {
+        "longitude": 224.697342,
+        "sign_index": 7,
+        "degree_in_sign": 14.697342,
+        "is_retrograde": false,
+        "speed": 1.013207
+      },
+      "Moon": {
+        "longitude": 63.814083,
+        "sign_index": 2,
+        "degree_in_sign": 3.814083,
+        "is_retrograde": false,
+        "speed": 10.693034
+      },
+      "Mars": {
+        "longitude": 166.166724,
+        "sign_index": 5,
+        "degree_in_sign": 16.166724,
+        "is_retrograde": false,
+        "speed": 0.586172
+      },
+      "Mercury": {
+        "longitude": 231.160817,
+        "sign_index": 7,
+        "degree_in_sign": 21.160817,
+        "is_retrograde": false,
+        "speed": 1.55707
+      },
+      "Jupiter": {
+        "longitude": 246.510129,
+        "sign_index": 8,
+        "degree_in_sign": 6.510129,
+        "is_retrograde": false,
+        "speed": 0.220913
+      },
+      "Venus": {
+        "longitude": 263.128067,
+        "sign_index": 8,
+        "degree_in_sign": 23.128067,
+        "is_retrograde": false,
+        "speed": 1.207222
+      },
+      "Saturn": {
+        "longitude": 322.904462,
+        "sign_index": 10,
+        "degree_in_sign": 22.904462,
+        "is_retrograde": false,
+        "speed": 0.019038
+      },
+      "Rahu": {
+        "longitude": 242.253252,
+        "sign_index": 8,
+        "degree_in_sign": 2.253252,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 62.253252,
+        "sign_index": 2,
+        "degree_in_sign": 2.253252,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

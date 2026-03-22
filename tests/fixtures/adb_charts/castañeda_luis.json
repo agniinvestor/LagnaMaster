@@ -1,0 +1,111 @@
+{
+  "adb_id": 88153,
+  "name": "Castañeda, Luis",
+  "given_name": "Luis Castañeda",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431629.541667,
+    "year": 1945,
+    "month": 6,
+    "day": 22,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Chiclayo",
+    "country": "Peru",
+    "lat": -6.766667,
+    "lon": -79.85
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castañeda,_Luis",
+  "source_notes": "Sy Scholfield provided birth certificate. (Wikipedia has 21 June in error.)\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Vocation : Politics : Candidate and lost",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 10.366652,
+    "lagna": 250.366652,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.095523,
+    "jd_ut": 2431629.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 68.106685,
+        "sign_index": 2,
+        "degree_in_sign": 8.106685,
+        "is_retrograde": false,
+        "speed": 0.953577
+      },
+      "Moon": {
+        "longitude": 218.735898,
+        "sign_index": 7,
+        "degree_in_sign": 8.735898,
+        "is_retrograde": false,
+        "speed": 7.884908
+      },
+      "Mars": {
+        "longitude": 15.391845,
+        "sign_index": 0,
+        "degree_in_sign": 15.391845,
+        "is_retrograde": false,
+        "speed": 0.72826
+      },
+      "Mercury": {
+        "longitude": 76.575309,
+        "sign_index": 2,
+        "degree_in_sign": 16.575309,
+        "is_retrograde": false,
+        "speed": 2.084655
+      },
+      "Jupiter": {
+        "longitude": 146.642373,
+        "sign_index": 4,
+        "degree_in_sign": 26.642373,
+        "is_retrograde": false,
+        "speed": 0.107162
+      },
+      "Venus": {
+        "longitude": 22.437204,
+        "sign_index": 0,
+        "degree_in_sign": 22.437204,
+        "is_retrograde": false,
+        "speed": 0.941615
+      },
+      "Saturn": {
+        "longitude": 79.498666,
+        "sign_index": 2,
+        "degree_in_sign": 19.498666,
+        "is_retrograde": false,
+        "speed": 0.128196
+      },
+      "Rahu": {
+        "longitude": 76.548158,
+        "sign_index": 2,
+        "degree_in_sign": 16.548158,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 256.548158,
+        "sign_index": 8,
+        "degree_in_sign": 16.548158,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

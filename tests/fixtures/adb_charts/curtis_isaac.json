@@ -1,0 +1,108 @@
+{
+  "adb_id": 50882,
+  "name": "Curtis, Isaac",
+  "given_name": "Isaac Curtis",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433575.179861,
+    "year": 1950,
+    "month": 10,
+    "day": 20,
+    "calendar": "g",
+    "time": "08:19",
+    "time_type": "s",
+    "hour": 8.316667,
+    "time_unknown": false,
+    "place": "Santa Ana",
+    "country": "California",
+    "lat": 33.75,
+    "lon": -117.866667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curtis,_Isaac",
+  "source_notes": "Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Sports : Football"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 8.223596,
+    "lagna": 188.223596,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.169916,
+    "jd_ut": 2433575.179861,
+    "planets": {
+      "Sun": {
+        "longitude": 183.537247,
+        "sign_index": 6,
+        "degree_in_sign": 3.537247,
+        "is_retrograde": false,
+        "speed": 0.994122
+      },
+      "Moon": {
+        "longitude": 304.329254,
+        "sign_index": 10,
+        "degree_in_sign": 4.329254,
+        "is_retrograde": false,
+        "speed": 17.272874
+      },
+      "Mars": {
+        "longitude": 234.54216,
+        "sign_index": 7,
+        "degree_in_sign": 24.54216,
+        "is_retrograde": false,
+        "speed": 0.730274
+      },
+      "Mercury": {
+        "longitude": 175.362071,
+        "sign_index": 5,
+        "degree_in_sign": 25.362071,
+        "is_retrograde": false,
+        "speed": 1.714192
+      },
+      "Jupiter": {
+        "longitude": 304.440355,
+        "sign_index": 10,
+        "degree_in_sign": 4.440355,
+        "is_retrograde": true,
+        "speed": -0.012144
+      },
+      "Venus": {
+        "longitude": 177.370538,
+        "sign_index": 5,
+        "degree_in_sign": 27.370538,
+        "is_retrograde": false,
+        "speed": 1.25188
+      },
+      "Saturn": {
+        "longitude": 153.703687,
+        "sign_index": 5,
+        "degree_in_sign": 3.703687,
+        "is_retrograde": false,
+        "speed": 0.113899
+      },
+      "Rahu": {
+        "longitude": 333.444779,
+        "sign_index": 11,
+        "degree_in_sign": 3.444779,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 153.444779,
+        "sign_index": 5,
+        "degree_in_sign": 3.444779,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

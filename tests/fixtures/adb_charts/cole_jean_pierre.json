@@ -1,0 +1,108 @@
+{
+  "adb_id": 866,
+  "name": "Cole, Jean-Pierre",
+  "given_name": "Jean-Pierre Cole",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437121.625,
+    "year": 1960,
+    "month": 7,
+    "day": 6,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Outarville",
+    "country": "France",
+    "lat": 48.2,
+    "lon": 2.016667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cole,_Jean-Pierre",
+  "source_notes": "Astralis No.23 quotes B.C.\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide single"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 13.504252,
+    "lagna": 43.504252,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.305522,
+    "jd_ut": 2437121.625,
+    "planets": {
+      "Sun": {
+        "longitude": 80.733925,
+        "sign_index": 2,
+        "degree_in_sign": 20.733925,
+        "is_retrograde": false,
+        "speed": 0.952964
+      },
+      "Moon": {
+        "longitude": 221.885088,
+        "sign_index": 7,
+        "degree_in_sign": 11.885088,
+        "is_retrograde": false,
+        "speed": 14.365702
+      },
+      "Mars": {
+        "longitude": 18.045892,
+        "sign_index": 0,
+        "degree_in_sign": 18.045892,
+        "is_retrograde": false,
+        "speed": 0.710279
+      },
+      "Mercury": {
+        "longitude": 96.6821,
+        "sign_index": 3,
+        "degree_in_sign": 6.6821,
+        "is_retrograde": true,
+        "speed": -0.198318
+      },
+      "Jupiter": {
+        "longitude": 243.438687,
+        "sign_index": 8,
+        "degree_in_sign": 3.438687,
+        "is_retrograde": true,
+        "speed": -0.11685
+      },
+      "Venus": {
+        "longitude": 84.437724,
+        "sign_index": 2,
+        "degree_in_sign": 24.437724,
+        "is_retrograde": false,
+        "speed": 1.229443
+      },
+      "Saturn": {
+        "longitude": 261.906704,
+        "sign_index": 8,
+        "degree_in_sign": 21.906704,
+        "is_retrograde": true,
+        "speed": -0.073687
+      },
+      "Rahu": {
+        "longitude": 145.511365,
+        "sign_index": 4,
+        "degree_in_sign": 25.511365,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.511365,
+        "sign_index": 10,
+        "degree_in_sign": 25.511365,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

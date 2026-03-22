@@ -1,0 +1,109 @@
+{
+  "adb_id": 74819,
+  "name": "Collado, Gloria",
+  "given_name": "Gloria Collado",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429926.208333,
+    "year": 1940,
+    "month": 10,
+    "day": 23,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Tampico",
+    "country": "Mexico",
+    "lat": 22.216667,
+    "lon": -97.85
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collado,_Gloria",
+  "source_notes": "Sy Scholfield submitted birth record from the online Tamaulipas state archive [http://servicios.tamaulipas.gob.mx/servicios/crct/actas/detalle1.asp?cve_ref=102744511&mpio=38].\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 12.934859,
+    "lagna": 222.934859,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.030396,
+    "jd_ut": 2429926.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 187.107981,
+        "sign_index": 6,
+        "degree_in_sign": 7.107981,
+        "is_retrograde": false,
+        "speed": 0.996372
+      },
+      "Moon": {
+        "longitude": 89.625427,
+        "sign_index": 2,
+        "degree_in_sign": 29.625427,
+        "is_retrograde": false,
+        "speed": 12.104676
+      },
+      "Mars": {
+        "longitude": 168.673448,
+        "sign_index": 5,
+        "degree_in_sign": 18.673448,
+        "is_retrograde": false,
+        "speed": 0.648882
+      },
+      "Mercury": {
+        "longitude": 211.187943,
+        "sign_index": 7,
+        "degree_in_sign": 1.187943,
+        "is_retrograde": false,
+        "speed": 0.82436
+      },
+      "Jupiter": {
+        "longitude": 18.981807,
+        "sign_index": 0,
+        "degree_in_sign": 18.981807,
+        "is_retrograde": true,
+        "speed": -0.130633
+      },
+      "Venus": {
+        "longitude": 146.312929,
+        "sign_index": 4,
+        "degree_in_sign": 26.312929,
+        "is_retrograde": false,
+        "speed": 1.172043
+      },
+      "Saturn": {
+        "longitude": 19.16322,
+        "sign_index": 0,
+        "degree_in_sign": 19.16322,
+        "is_retrograde": true,
+        "speed": -0.077917
+      },
+      "Rahu": {
+        "longitude": 166.811312,
+        "sign_index": 5,
+        "degree_in_sign": 16.811312,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.811312,
+        "sign_index": 11,
+        "degree_in_sign": 16.811312,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

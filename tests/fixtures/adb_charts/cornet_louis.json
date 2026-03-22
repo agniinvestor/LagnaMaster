@@ -1,0 +1,108 @@
+{
+  "adb_id": 68837,
+  "name": "Cornet, Louis",
+  "given_name": "Louis Cornet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423724.125,
+    "year": 1923,
+    "month": 10,
+    "day": 31,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Nuits St.Georges",
+    "country": "France",
+    "lat": 47.133333,
+    "lon": 4.95
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "can",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornet,_Louis",
+  "source_notes": "Didier Geslain archive, 'religion1' pdf file, p. 75.\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 12.036113,
+    "lagna": 312.036113,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.793269,
+    "jd_ut": 2423724.125,
+    "planets": {
+      "Sun": {
+        "longitude": 194.36901,
+        "sign_index": 6,
+        "degree_in_sign": 14.36901,
+        "is_retrograde": false,
+        "speed": 1.000265
+      },
+      "Moon": {
+        "longitude": 89.750417,
+        "sign_index": 2,
+        "degree_in_sign": 29.750417,
+        "is_retrograde": false,
+        "speed": 16.056327
+      },
+      "Mars": {
+        "longitude": 165.786929,
+        "sign_index": 5,
+        "degree_in_sign": 15.786929,
+        "is_retrograde": false,
+        "speed": 0.638636
+      },
+      "Mercury": {
+        "longitude": 184.734344,
+        "sign_index": 6,
+        "degree_in_sign": 4.734344,
+        "is_retrograde": false,
+        "speed": 1.66088
+      },
+      "Jupiter": {
+        "longitude": 211.889822,
+        "sign_index": 7,
+        "degree_in_sign": 1.889822,
+        "is_retrograde": false,
+        "speed": 0.216438
+      },
+      "Venus": {
+        "longitude": 207.716899,
+        "sign_index": 6,
+        "degree_in_sign": 27.716899,
+        "is_retrograde": false,
+        "speed": 1.248824
+      },
+      "Saturn": {
+        "longitude": 181.975614,
+        "sign_index": 6,
+        "degree_in_sign": 1.975614,
+        "is_retrograde": false,
+        "speed": 0.119991
+      },
+      "Rahu": {
+        "longitude": 135.472587,
+        "sign_index": 4,
+        "degree_in_sign": 15.472587,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 315.472587,
+        "sign_index": 10,
+        "degree_in_sign": 15.472587,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

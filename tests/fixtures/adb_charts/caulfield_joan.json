@@ -1,0 +1,112 @@
+{
+  "adb_id": 25889,
+  "name": "Caulfield, Joan",
+  "given_name": "Joan Caulfield",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423207.001389,
+    "year": 1922,
+    "month": 6,
+    "day": 1,
+    "calendar": "g",
+    "time": "08:02",
+    "time_type": "d",
+    "hour": 8.033333,
+    "time_unknown": false,
+    "place": "West Orange",
+    "country": "New Jersey",
+    "lat": 40.8,
+    "lon": -74.233333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caulfield,_Joan",
+  "source_notes": "Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Diagnoses : Major Diseases : Cancer",
+    "Vocation : Beauty : Model",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 29.647513,
+    "lagna": 59.647513,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.773499,
+    "jd_ut": 2423207.001389,
+    "planets": {
+      "Sun": {
+        "longitude": 47.421005,
+        "sign_index": 1,
+        "degree_in_sign": 17.421005,
+        "is_retrograde": false,
+        "speed": 0.958142
+      },
+      "Moon": {
+        "longitude": 121.498862,
+        "sign_index": 4,
+        "degree_in_sign": 1.498862,
+        "is_retrograde": false,
+        "speed": 17.662918
+      },
+      "Mars": {
+        "longitude": 238.908104,
+        "sign_index": 7,
+        "degree_in_sign": 28.908104,
+        "is_retrograde": true,
+        "speed": -0.280114
+      },
+      "Mercury": {
+        "longitude": 67.358048,
+        "sign_index": 2,
+        "degree_in_sign": 7.358048,
+        "is_retrograde": false,
+        "speed": 0.341403
+      },
+      "Jupiter": {
+        "longitude": 166.228241,
+        "sign_index": 5,
+        "degree_in_sign": 16.228241,
+        "is_retrograde": true,
+        "speed": -0.01421
+      },
+      "Venus": {
+        "longitude": 75.427761,
+        "sign_index": 2,
+        "degree_in_sign": 15.427761,
+        "is_retrograde": false,
+        "speed": 1.205446
+      },
+      "Saturn": {
+        "longitude": 158.043134,
+        "sign_index": 5,
+        "degree_in_sign": 8.043134,
+        "is_retrograde": true,
+        "speed": -0.003498
+      },
+      "Rahu": {
+        "longitude": 162.876045,
+        "sign_index": 5,
+        "degree_in_sign": 12.876045,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 342.876045,
+        "sign_index": 11,
+        "degree_in_sign": 12.876045,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 71720,
+  "name": "Courbois, Kitty",
+  "given_name": "Kitty Courbois",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2428728.006944,
+    "year": 1937,
+    "month": 7,
+    "day": 13,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "d",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Nijmegen",
+    "country": "Netherlands",
+    "lat": 51.833333,
+    "lon": 5.85
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courbois,_Kitty",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes Sterren Tijd for 15h30.\\nSvi: Actually Selma Schepel gave 13 July 1937 at 13:30 LOZ Nijmegen in [http://home.kpn.nl/aojo54tm/sterrentijd/s338.html Sterrentijd 55 of 1 Nov 1994] as given by her in 1987. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 4.567719,
+    "lagna": 154.567719,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.984583,
+    "jd_ut": 2428728.006944,
+    "planets": {
+      "Sun": {
+        "longitude": 87.67017,
+        "sign_index": 2,
+        "degree_in_sign": 27.67017,
+        "is_retrograde": false,
+        "speed": 0.953848
+      },
+      "Moon": {
+        "longitude": 156.7609,
+        "sign_index": 5,
+        "degree_in_sign": 6.7609,
+        "is_retrograde": false,
+        "speed": 11.095836
+      },
+      "Mars": {
+        "longitude": 208.232456,
+        "sign_index": 6,
+        "degree_in_sign": 28.232456,
+        "is_retrograde": false,
+        "speed": 0.204416
+      },
+      "Mercury": {
+        "longitude": 93.581646,
+        "sign_index": 3,
+        "degree_in_sign": 3.581646,
+        "is_retrograde": false,
+        "speed": 2.076648
+      },
+      "Jupiter": {
+        "longitude": 269.659254,
+        "sign_index": 8,
+        "degree_in_sign": 29.659254,
+        "is_retrograde": true,
+        "speed": -0.128835
+      },
+      "Venus": {
+        "longitude": 42.808835,
+        "sign_index": 1,
+        "degree_in_sign": 12.808835,
+        "is_retrograde": false,
+        "speed": 1.04344
+      },
+      "Saturn": {
+        "longitude": 342.133091,
+        "sign_index": 11,
+        "degree_in_sign": 12.133091,
+        "is_retrograde": false,
+        "speed": 0.006239
+      },
+      "Rahu": {
+        "longitude": 230.306484,
+        "sign_index": 7,
+        "degree_in_sign": 20.306484,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 50.306484,
+        "sign_index": 1,
+        "degree_in_sign": 20.306484,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 54104,
+  "name": "Chance, Dean",
+  "given_name": "Dean Chance",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430147.326389,
+    "year": 1941,
+    "month": 6,
+    "day": 1,
+    "calendar": "g",
+    "time": "14:50",
+    "time_type": "s",
+    "hour": 14.833333,
+    "time_unknown": false,
+    "place": "Apple Creek",
+    "country": "Ohio",
+    "lat": 40.75,
+    "lon": -81.833333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chance,_Dean",
+  "source_notes": "Steinbrecher Collection quoting birth certificate\\n",
+  "categories": [
+    "Vocation : Sports : Baseball"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 26.26336,
+    "lagna": 146.26336,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.03885,
+    "jd_ut": 2430147.326389,
+    "planets": {
+      "Sun": {
+        "longitude": 47.860208,
+        "sign_index": 1,
+        "degree_in_sign": 17.860208,
+        "is_retrograde": false,
+        "speed": 0.958041
+      },
+      "Moon": {
+        "longitude": 124.953943,
+        "sign_index": 4,
+        "degree_in_sign": 4.953943,
+        "is_retrograde": false,
+        "speed": 10.080357
+      },
+      "Mars": {
+        "longitude": 318.025006,
+        "sign_index": 10,
+        "degree_in_sign": 18.025006,
+        "is_retrograde": false,
+        "speed": 0.654622
+      },
+      "Mercury": {
+        "longitude": 71.001165,
+        "sign_index": 2,
+        "degree_in_sign": 11.001165,
+        "is_retrograde": false,
+        "speed": 1.219081
+      },
+      "Jupiter": {
+        "longitude": 38.438686,
+        "sign_index": 1,
+        "degree_in_sign": 8.438686,
+        "is_retrograde": false,
+        "speed": 0.233874
+      },
+      "Venus": {
+        "longitude": 59.398234,
+        "sign_index": 1,
+        "degree_in_sign": 29.398234,
+        "is_retrograde": false,
+        "speed": 1.226844
+      },
+      "Saturn": {
+        "longitude": 28.005358,
+        "sign_index": 0,
+        "degree_in_sign": 28.005358,
+        "is_retrograde": false,
+        "speed": 0.123699
+      },
+      "Rahu": {
+        "longitude": 155.093809,
+        "sign_index": 5,
+        "degree_in_sign": 5.093809,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 335.093809,
+        "sign_index": 11,
+        "degree_in_sign": 5.093809,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

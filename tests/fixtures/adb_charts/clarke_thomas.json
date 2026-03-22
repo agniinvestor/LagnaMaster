@@ -1,0 +1,108 @@
+{
+  "adb_id": 8772,
+  "name": "Clarke, Thomas",
+  "given_name": "Thomas Clarke",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430004.8125,
+    "year": 1941,
+    "month": 1,
+    "day": 10,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "d",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Coatbridge",
+    "country": "Scotland",
+    "lat": 55.866667,
+    "lon": -4.033333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarke,_Thomas",
+  "source_notes": "Pulsar collection quotes B.C.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 12.238768,
+    "lagna": 222.238768,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.033401,
+    "jd_ut": 2430004.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 266.654758,
+        "sign_index": 8,
+        "degree_in_sign": 26.654758,
+        "is_retrograde": false,
+        "speed": 1.018659
+      },
+      "Moon": {
+        "longitude": 48.476473,
+        "sign_index": 1,
+        "degree_in_sign": 18.476473,
+        "is_retrograde": false,
+        "speed": 15.167193
+      },
+      "Mars": {
+        "longitude": 220.663679,
+        "sign_index": 7,
+        "degree_in_sign": 10.663679,
+        "is_retrograde": false,
+        "speed": 0.674166
+      },
+      "Mercury": {
+        "longitude": 265.962287,
+        "sign_index": 8,
+        "degree_in_sign": 25.962287,
+        "is_retrograde": false,
+        "speed": 1.633843
+      },
+      "Jupiter": {
+        "longitude": 12.824552,
+        "sign_index": 0,
+        "degree_in_sign": 12.824552,
+        "is_retrograde": false,
+        "speed": 0.035358
+      },
+      "Venus": {
+        "longitude": 242.494556,
+        "sign_index": 8,
+        "degree_in_sign": 2.494556,
+        "is_retrograde": false,
+        "speed": 1.247676
+      },
+      "Saturn": {
+        "longitude": 14.860295,
+        "sign_index": 0,
+        "degree_in_sign": 14.860295,
+        "is_retrograde": false,
+        "speed": 0.00144
+      },
+      "Rahu": {
+        "longitude": 162.645915,
+        "sign_index": 5,
+        "degree_in_sign": 12.645915,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 342.645915,
+        "sign_index": 11,
+        "degree_in_sign": 12.645915,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

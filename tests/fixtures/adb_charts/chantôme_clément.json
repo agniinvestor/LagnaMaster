@@ -1,0 +1,108 @@
+{
+  "adb_id": 64977,
+  "name": "Chantôme, Clément",
+  "given_name": "Clément Chantôme",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2447049.541667,
+    "year": 1987,
+    "month": 9,
+    "day": 11,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "d",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Sens",
+    "country": "France",
+    "lat": 48.2,
+    "lon": 3.283333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chantôme,_Clément",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 118.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 12.525431,
+    "lagna": 72.525431,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.68517,
+    "jd_ut": 2447049.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 144.090475,
+        "sign_index": 4,
+        "degree_in_sign": 24.090475,
+        "is_retrograde": false,
+        "speed": 0.97181
+      },
+      "Moon": {
+        "longitude": 7.49032,
+        "sign_index": 0,
+        "degree_in_sign": 7.49032,
+        "is_retrograde": false,
+        "speed": 10.215031
+      },
+      "Mars": {
+        "longitude": 138.549709,
+        "sign_index": 4,
+        "degree_in_sign": 18.549709,
+        "is_retrograde": false,
+        "speed": 0.637552
+      },
+      "Mercury": {
+        "longitude": 161.832981,
+        "sign_index": 5,
+        "degree_in_sign": 11.832981,
+        "is_retrograde": false,
+        "speed": 1.559861
+      },
+      "Jupiter": {
+        "longitude": 5.236532,
+        "sign_index": 0,
+        "degree_in_sign": 5.236532,
+        "is_retrograde": true,
+        "speed": -0.071602
+      },
+      "Venus": {
+        "longitude": 149.211074,
+        "sign_index": 4,
+        "degree_in_sign": 29.211074,
+        "is_retrograde": false,
+        "speed": 1.242108
+      },
+      "Saturn": {
+        "longitude": 231.263933,
+        "sign_index": 7,
+        "degree_in_sign": 21.263933,
+        "is_retrograde": false,
+        "speed": 0.036247
+      },
+      "Rahu": {
+        "longitude": 339.410833,
+        "sign_index": 11,
+        "degree_in_sign": 9.410833,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 159.410833,
+        "sign_index": 5,
+        "degree_in_sign": 9.410833,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "adb_id": 102282,
+  "name": "Chang, Christopher",
+  "given_name": "Christopher Chang",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2442399.566667,
+    "year": 1974,
+    "month": 12,
+    "day": 17,
+    "calendar": "g",
+    "time": "19:36",
+    "time_type": "s",
+    "hour": 19.6,
+    "time_unknown": false,
+    "place": "Ames",
+    "country": "Iowa",
+    "lat": 42.033333,
+    "lon": -93.616667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chang,_Christopher",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Ames Daily Tribune'' (Ames, Iowa), 18 December 1974, page 12: born at Mary Greeley Hospital. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Relationship : Mate - Noted",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Biology",
+    "Vocation : Science : Chemistry",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 15.972012,
+    "lagna": 75.972012,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.507347,
+    "jd_ut": 2442399.566667,
+    "planets": {
+      "Sun": {
+        "longitude": 242.231428,
+        "sign_index": 8,
+        "degree_in_sign": 2.231428,
+        "is_retrograde": false,
+        "speed": 1.018007
+      },
+      "Moon": {
+        "longitude": 290.600423,
+        "sign_index": 9,
+        "degree_in_sign": 20.600423,
+        "is_retrograde": false,
+        "speed": 10.212316
+      },
+      "Mars": {
+        "longitude": 221.526806,
+        "sign_index": 7,
+        "degree_in_sign": 11.526806,
+        "is_retrograde": false,
+        "speed": 0.707383
+      },
+      "Mercury": {
+        "longitude": 241.24044,
+        "sign_index": 8,
+        "degree_in_sign": 1.24044,
+        "is_retrograde": false,
+        "speed": 1.576303
+      },
+      "Jupiter": {
+        "longitude": 317.677541,
+        "sign_index": 10,
+        "degree_in_sign": 17.677541,
+        "is_retrograde": false,
+        "speed": 0.136346
+      },
+      "Venus": {
+        "longitude": 252.377473,
+        "sign_index": 8,
+        "degree_in_sign": 12.377473,
+        "is_retrograde": false,
+        "speed": 1.256108
+      },
+      "Saturn": {
+        "longitude": 83.458497,
+        "sign_index": 2,
+        "degree_in_sign": 23.458497,
+        "is_retrograde": true,
+        "speed": -0.073964
+      },
+      "Rahu": {
+        "longitude": 225.82245,
+        "sign_index": 7,
+        "degree_in_sign": 15.82245,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 45.82245,
+        "sign_index": 1,
+        "degree_in_sign": 15.82245,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

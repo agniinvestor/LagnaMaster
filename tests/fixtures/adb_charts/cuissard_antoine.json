@@ -1,0 +1,109 @@
+{
+  "adb_id": 104646,
+  "name": "Cuissard, Antoine",
+  "given_name": "Antoine Cuissard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423985.625,
+    "year": 1924,
+    "month": 7,
+    "day": 19,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "d",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "St.Étienne",
+    "country": "France",
+    "lat": 45.433333,
+    "lon": 4.4
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuissard,_Antoine",
+  "source_notes": "quoted BC from Bordoni database\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 25.048542,
+    "lagna": 55.048542,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.803267,
+    "jd_ut": 2423985.625,
+    "planets": {
+      "Sun": {
+        "longitude": 93.343637,
+        "sign_index": 3,
+        "degree_in_sign": 3.343637,
+        "is_retrograde": false,
+        "speed": 0.953929
+      },
+      "Moon": {
+        "longitude": 308.20934,
+        "sign_index": 10,
+        "degree_in_sign": 8.20934,
+        "is_retrograde": false,
+        "speed": 10.066993
+      },
+      "Mars": {
+        "longitude": 312.321352,
+        "sign_index": 10,
+        "degree_in_sign": 12.321352,
+        "is_retrograde": false,
+        "speed": 0.070005
+      },
+      "Mercury": {
+        "longitude": 107.771042,
+        "sign_index": 3,
+        "degree_in_sign": 17.771042,
+        "is_retrograde": false,
+        "speed": 1.850398
+      },
+      "Jupiter": {
+        "longitude": 227.803454,
+        "sign_index": 7,
+        "degree_in_sign": 17.803454,
+        "is_retrograde": true,
+        "speed": -0.057113
+      },
+      "Venus": {
+        "longitude": 68.576332,
+        "sign_index": 2,
+        "degree_in_sign": 8.576332,
+        "is_retrograde": true,
+        "speed": -0.159878
+      },
+      "Saturn": {
+        "longitude": 183.148535,
+        "sign_index": 6,
+        "degree_in_sign": 3.148535,
+        "is_retrograde": false,
+        "speed": 0.032683
+      },
+      "Rahu": {
+        "longitude": 121.615156,
+        "sign_index": 4,
+        "degree_in_sign": 1.615156,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 301.615156,
+        "sign_index": 10,
+        "degree_in_sign": 1.615156,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

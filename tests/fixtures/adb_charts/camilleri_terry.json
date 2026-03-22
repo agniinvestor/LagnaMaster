@@ -1,0 +1,108 @@
+{
+  "adb_id": 71531,
+  "name": "Camilleri, Terry",
+  "given_name": "Terry Camilleri",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432280.815972,
+    "year": 1947,
+    "month": 4,
+    "day": 5,
+    "calendar": "g",
+    "time": "09:35",
+    "time_type": "d",
+    "hour": 9.583333,
+    "time_unknown": false,
+    "place": "Gozo",
+    "country": "Malta",
+    "lat": 36.05,
+    "lon": 14.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camilleri,_Terry",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file, cites Lois Rodden for data from him. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 23.194704,
+    "lagna": 23.194704,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.120425,
+    "jd_ut": 2432280.815972,
+    "planets": {
+      "Sun": {
+        "longitude": 351.566157,
+        "sign_index": 11,
+        "degree_in_sign": 21.566157,
+        "is_retrograde": false,
+        "speed": 0.984114
+      },
+      "Moon": {
+        "longitude": 167.180406,
+        "sign_index": 5,
+        "degree_in_sign": 17.180406,
+        "is_retrograde": false,
+        "speed": 16.080059
+      },
+      "Mars": {
+        "longitude": 331.708013,
+        "sign_index": 11,
+        "degree_in_sign": 1.708013,
+        "is_retrograde": false,
+        "speed": 0.780394
+      },
+      "Mercury": {
+        "longitude": 323.816325,
+        "sign_index": 10,
+        "degree_in_sign": 23.816325,
+        "is_retrograde": false,
+        "speed": 0.983162
+      },
+      "Jupiter": {
+        "longitude": 213.710303,
+        "sign_index": 7,
+        "degree_in_sign": 3.710303,
+        "is_retrograde": true,
+        "speed": -0.065985
+      },
+      "Venus": {
+        "longitude": 313.262522,
+        "sign_index": 10,
+        "degree_in_sign": 13.262522,
+        "is_retrograde": false,
+        "speed": 1.185718
+      },
+      "Saturn": {
+        "longitude": 98.835418,
+        "sign_index": 3,
+        "degree_in_sign": 8.835418,
+        "is_retrograde": false,
+        "speed": 0.002731
+      },
+      "Rahu": {
+        "longitude": 42.035789,
+        "sign_index": 1,
+        "degree_in_sign": 12.035789,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 222.035789,
+        "sign_index": 7,
+        "degree_in_sign": 12.035789,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

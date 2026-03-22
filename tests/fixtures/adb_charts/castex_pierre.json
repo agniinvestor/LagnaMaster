@@ -1,0 +1,110 @@
+{
+  "adb_id": 63123,
+  "name": "Castex, Pierre",
+  "given_name": "Pierre Castex",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420669.0,
+    "year": 1915,
+    "month": 6,
+    "day": 20,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Toulouse",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castex,_Pierre",
+  "source_notes": "Didier Geslain archive, 'Historiens' pdf file, p. 17.\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.910472,
+    "lagna": 133.910472,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.676468,
+    "jd_ut": 2420669.0,
+    "planets": {
+      "Sun": {
+        "longitude": 65.393263,
+        "sign_index": 2,
+        "degree_in_sign": 5.393263,
+        "is_retrograde": false,
+        "speed": 0.954121
+      },
+      "Moon": {
+        "longitude": 155.043624,
+        "sign_index": 5,
+        "degree_in_sign": 5.043624,
+        "is_retrograde": false,
+        "speed": 13.383266
+      },
+      "Mars": {
+        "longitude": 26.028569,
+        "sign_index": 0,
+        "degree_in_sign": 26.028569,
+        "is_retrograde": false,
+        "speed": 0.724647
+      },
+      "Mercury": {
+        "longitude": 75.353973,
+        "sign_index": 2,
+        "degree_in_sign": 15.353973,
+        "is_retrograde": true,
+        "speed": -0.408155
+      },
+      "Jupiter": {
+        "longitude": 334.506548,
+        "sign_index": 11,
+        "degree_in_sign": 4.506548,
+        "is_retrograde": false,
+        "speed": 0.089056
+      },
+      "Venus": {
+        "longitude": 42.748321,
+        "sign_index": 1,
+        "degree_in_sign": 12.748321,
+        "is_retrograde": false,
+        "speed": 1.210772
+      },
+      "Saturn": {
+        "longitude": 72.164293,
+        "sign_index": 2,
+        "degree_in_sign": 12.164293,
+        "is_retrograde": false,
+        "speed": 0.129644
+      },
+      "Rahu": {
+        "longitude": 297.370044,
+        "sign_index": 9,
+        "degree_in_sign": 27.370044,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 117.370044,
+        "sign_index": 3,
+        "degree_in_sign": 27.370044,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

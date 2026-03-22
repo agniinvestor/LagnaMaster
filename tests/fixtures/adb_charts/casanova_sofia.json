@@ -1,0 +1,108 @@
+{
+  "adb_id": 72761,
+  "name": "Casanova, Sofia",
+  "given_name": "Sofia Casanova",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2401049.023287,
+    "year": 1861,
+    "month": 9,
+    "day": 30,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Corunna",
+    "country": "Spain",
+    "lat": 43.366667,
+    "lon": -8.383333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casanova,_Sofia",
+  "source_notes": "Castellanos quotes birth certificate in:\\nhttp://anuariobrigantino.betanzos.net/Ab1992PDF/1992%20279_282.pdf\\n",
+  "categories": [
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 3.096085,
+    "lagna": 213.096085,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.926475,
+    "jd_ut": 2401049.023287,
+    "planets": {
+      "Sun": {
+        "longitude": 165.385159,
+        "sign_index": 5,
+        "degree_in_sign": 15.385159,
+        "is_retrograde": false,
+        "speed": 0.984469
+      },
+      "Moon": {
+        "longitude": 113.986691,
+        "sign_index": 3,
+        "degree_in_sign": 23.986691,
+        "is_retrograde": false,
+        "speed": 11.402414
+      },
+      "Mars": {
+        "longitude": 153.893237,
+        "sign_index": 5,
+        "degree_in_sign": 3.893237,
+        "is_retrograde": false,
+        "speed": 0.642722
+      },
+      "Mercury": {
+        "longitude": 183.469408,
+        "sign_index": 6,
+        "degree_in_sign": 3.469408,
+        "is_retrograde": false,
+        "speed": 1.480531
+      },
+      "Jupiter": {
+        "longitude": 142.249685,
+        "sign_index": 4,
+        "degree_in_sign": 22.249685,
+        "is_retrograde": false,
+        "speed": 0.207913
+      },
+      "Venus": {
+        "longitude": 202.064458,
+        "sign_index": 6,
+        "degree_in_sign": 22.064458,
+        "is_retrograde": false,
+        "speed": 1.197524
+      },
+      "Saturn": {
+        "longitude": 144.045766,
+        "sign_index": 4,
+        "degree_in_sign": 24.045766,
+        "is_retrograde": false,
+        "speed": 0.120177
+      },
+      "Rahu": {
+        "longitude": 257.07418,
+        "sign_index": 8,
+        "degree_in_sign": 17.07418,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 77.07418,
+        "sign_index": 2,
+        "degree_in_sign": 17.07418,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

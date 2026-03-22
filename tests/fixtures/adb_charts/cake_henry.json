@@ -1,0 +1,110 @@
+{
+  "adb_id": 100258,
+  "name": "Cake, Henry",
+  "given_name": "Henry Cake",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420937.916667,
+    "year": 1916,
+    "month": 3,
+    "day": 15,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Norfolk",
+    "country": "Virginia",
+    "lat": 36.85,
+    "lon": -76.283333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cake,_Henry",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Personal : Death : Accidental",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 8.17747,
+    "lagna": 278.17747,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.686749,
+    "jd_ut": 2420937.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 331.810464,
+        "sign_index": 11,
+        "degree_in_sign": 1.810464,
+        "is_retrograde": false,
+        "speed": 0.995536
+      },
+      "Moon": {
+        "longitude": 101.021263,
+        "sign_index": 3,
+        "degree_in_sign": 11.021263,
+        "is_retrograde": false,
+        "speed": 14.617934
+      },
+      "Mars": {
+        "longitude": 107.874796,
+        "sign_index": 3,
+        "degree_in_sign": 17.874796,
+        "is_retrograde": true,
+        "speed": -0.078148
+      },
+      "Mercury": {
+        "longitude": 307.8933,
+        "sign_index": 10,
+        "degree_in_sign": 7.8933,
+        "is_retrograde": false,
+        "speed": 1.425671
+      },
+      "Jupiter": {
+        "longitude": 344.691914,
+        "sign_index": 11,
+        "degree_in_sign": 14.691914,
+        "is_retrograde": false,
+        "speed": 0.239152
+      },
+      "Venus": {
+        "longitude": 13.68044,
+        "sign_index": 0,
+        "degree_in_sign": 13.68044,
+        "is_retrograde": false,
+        "speed": 1.149765
+      },
+      "Saturn": {
+        "longitude": 76.867017,
+        "sign_index": 2,
+        "degree_in_sign": 16.867017,
+        "is_retrograde": false,
+        "speed": 0.007133
+      },
+      "Rahu": {
+        "longitude": 283.119587,
+        "sign_index": 9,
+        "degree_in_sign": 13.119587,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 103.119587,
+        "sign_index": 3,
+        "degree_in_sign": 13.119587,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

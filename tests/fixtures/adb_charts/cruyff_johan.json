@@ -1,0 +1,112 @@
+{
+  "adb_id": 44372,
+  "name": "Cruyff, Johan",
+  "given_name": "Johan Cruyff",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432301.006944,
+    "year": 1947,
+    "month": 4,
+    "day": 25,
+    "calendar": "g",
+    "time": "13:10",
+    "time_type": "s",
+    "hour": 13.166667,
+    "time_unknown": false,
+    "place": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.366667,
+    "lon": 4.9
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cruyff,_Johan",
+  "source_notes": "Pete Watson quotes Gauquelin’s \"Spheres of Destiny\" for B.C. Pete notes that the Dutch spelling is 'Cruijff”\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 9.094448,
+    "lagna": 99.094448,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.121197,
+    "jd_ut": 2432301.006944,
+    "planets": {
+      "Sun": {
+        "longitude": 11.332479,
+        "sign_index": 0,
+        "degree_in_sign": 11.332479,
+        "is_retrograde": false,
+        "speed": 0.973697
+      },
+      "Moon": {
+        "longitude": 69.66052,
+        "sign_index": 2,
+        "degree_in_sign": 9.66052,
+        "is_retrograde": false,
+        "speed": 12.187639
+      },
+      "Mars": {
+        "longitude": 347.369483,
+        "sign_index": 11,
+        "degree_in_sign": 17.369483,
+        "is_retrograde": false,
+        "speed": 0.769984
+      },
+      "Mercury": {
+        "longitude": 351.170209,
+        "sign_index": 11,
+        "degree_in_sign": 21.170209,
+        "is_retrograde": false,
+        "speed": 1.669254
+      },
+      "Jupiter": {
+        "longitude": 211.878611,
+        "sign_index": 7,
+        "degree_in_sign": 1.878611,
+        "is_retrograde": true,
+        "speed": -0.111609
+      },
+      "Venus": {
+        "longitude": 337.338686,
+        "sign_index": 11,
+        "degree_in_sign": 7.338686,
+        "is_retrograde": false,
+        "speed": 1.197543
+      },
+      "Saturn": {
+        "longitude": 99.257579,
+        "sign_index": 3,
+        "degree_in_sign": 9.257579,
+        "is_retrograde": false,
+        "speed": 0.038708
+      },
+      "Rahu": {
+        "longitude": 40.965828,
+        "sign_index": 1,
+        "degree_in_sign": 10.965828,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 220.965828,
+        "sign_index": 7,
+        "degree_in_sign": 10.965828,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

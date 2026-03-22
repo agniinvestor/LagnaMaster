@@ -1,0 +1,111 @@
+{
+  "adb_id": 47558,
+  "name": "Charles VII, King of France",
+  "given_name": "King of France Charles VII",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2233555.585185,
+    "year": 1403,
+    "month": 2,
+    "day": 22,
+    "calendar": "j",
+    "time": "02:12",
+    "time_type": "l",
+    "hour": 2.2,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_VII,_King_of_France",
+  "source_notes": "Martin Harvey quotes records, noting that the French year began at Easter.  The Annunciation Calendar gave the date as February 22, 1402/03 OS, 2:00 AM LAT with a plus 12' correction for 2:12 AM LMT (or 2:03 AM GMT).\\nSame data from Arthur Blackwell quoting Anselme's \"Histoire,\" same from Andre Barbault, \"Traite Pratique D'Astrology.\"\\n",
+  "categories": [
+    "Traits : Personality : Difficult/ mean spirited",
+    "Family : Childhood : Order of birth",
+    "Family : Parenting : Kids more than 3",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.344996,
+    "lagna": 224.344996,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 15.531081,
+    "jd_ut": 2233555.585185,
+    "planets": {
+      "Sun": {
+        "longitude": 326.066105,
+        "sign_index": 10,
+        "degree_in_sign": 26.066105,
+        "is_retrograde": false,
+        "speed": 0.998497
+      },
+      "Moon": {
+        "longitude": 332.320562,
+        "sign_index": 11,
+        "degree_in_sign": 2.320562,
+        "is_retrograde": false,
+        "speed": 17.280498
+      },
+      "Mars": {
+        "longitude": 246.743101,
+        "sign_index": 8,
+        "degree_in_sign": 6.743101,
+        "is_retrograde": false,
+        "speed": 0.620214
+      },
+      "Mercury": {
+        "longitude": 299.304406,
+        "sign_index": 9,
+        "degree_in_sign": 29.304406,
+        "is_retrograde": false,
+        "speed": 1.19166
+      },
+      "Jupiter": {
+        "longitude": 261.635867,
+        "sign_index": 8,
+        "degree_in_sign": 21.635867,
+        "is_retrograde": false,
+        "speed": 0.156153
+      },
+      "Venus": {
+        "longitude": 11.538069,
+        "sign_index": 0,
+        "degree_in_sign": 11.538069,
+        "is_retrograde": false,
+        "speed": 0.854963
+      },
+      "Saturn": {
+        "longitude": 291.528463,
+        "sign_index": 9,
+        "degree_in_sign": 21.528463,
+        "is_retrograde": false,
+        "speed": 0.105337
+      },
+      "Rahu": {
+        "longitude": 132.947077,
+        "sign_index": 4,
+        "degree_in_sign": 12.947077,
+        "is_retrograde": true,
+        "speed": -0.052993
+      },
+      "Ketu": {
+        "longitude": 312.947077,
+        "sign_index": 10,
+        "degree_in_sign": 12.947077,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

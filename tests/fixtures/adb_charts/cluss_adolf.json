@@ -1,0 +1,114 @@
+{
+  "adb_id": 90196,
+  "name": "Cluss, Adolf",
+  "given_name": "Adolf Cluss",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2387821.953565,
+    "year": 1825,
+    "month": 7,
+    "day": 14,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "l",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Heilbronn",
+    "country": "Germany",
+    "lat": 49.133333,
+    "lon": 9.216667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cluss,_Adolf",
+  "source_notes": "Sy Scholfield provided Lutheran Church birth and baptism entry (Heilbronn, 1825, no. 161): \"14. July Mittags 11-12\" (born 14 July between 11 and 12 o'clock midday).\\n",
+  "categories": [
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Building Trades : Architect/ Planner",
+    "Vocation : Engineer : Civil"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 27.683366,
+    "lagna": 147.683366,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.420958,
+    "jd_ut": 2387821.953565,
+    "planets": {
+      "Sun": {
+        "longitude": 90.188143,
+        "sign_index": 3,
+        "degree_in_sign": 0.188143,
+        "is_retrograde": false,
+        "speed": 0.954284
+      },
+      "Moon": {
+        "longitude": 71.083981,
+        "sign_index": 2,
+        "degree_in_sign": 11.083981,
+        "is_retrograde": false,
+        "speed": 9.738162
+      },
+      "Mars": {
+        "longitude": 76.920676,
+        "sign_index": 2,
+        "degree_in_sign": 16.920676,
+        "is_retrograde": false,
+        "speed": 0.664126
+      },
+      "Mercury": {
+        "longitude": 95.039649,
+        "sign_index": 3,
+        "degree_in_sign": 5.039649,
+        "is_retrograde": false,
+        "speed": 2.084506
+      },
+      "Jupiter": {
+        "longitude": 115.663892,
+        "sign_index": 3,
+        "degree_in_sign": 25.663892,
+        "is_retrograde": false,
+        "speed": 0.207083
+      },
+      "Venus": {
+        "longitude": 45.461709,
+        "sign_index": 1,
+        "degree_in_sign": 15.461709,
+        "is_retrograde": false,
+        "speed": 0.819023
+      },
+      "Saturn": {
+        "longitude": 55.158158,
+        "sign_index": 1,
+        "degree_in_sign": 25.158158,
+        "is_retrograde": false,
+        "speed": 0.114557
+      },
+      "Rahu": {
+        "longitude": 238.005195,
+        "sign_index": 7,
+        "degree_in_sign": 28.005195,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 58.005195,
+        "sign_index": 1,
+        "degree_in_sign": 28.005195,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

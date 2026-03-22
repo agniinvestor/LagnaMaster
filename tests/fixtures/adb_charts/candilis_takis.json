@@ -1,0 +1,110 @@
+{
+  "adb_id": 67511,
+  "name": "Candilis, Takis",
+  "given_name": "Takis Candilis",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435042.642361,
+    "year": 1954,
+    "month": 10,
+    "day": 27,
+    "calendar": "g",
+    "time": "04:25",
+    "time_type": "s",
+    "hour": 4.416667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sco",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Candilis,_Takis",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 42.\\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 12.482213,
+    "lagna": 132.482213,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.226027,
+    "jd_ut": 2435042.642361,
+    "planets": {
+      "Sun": {
+        "longitude": 189.94782,
+        "sign_index": 6,
+        "degree_in_sign": 9.94782,
+        "is_retrograde": false,
+        "speed": 0.998206
+      },
+      "Moon": {
+        "longitude": 194.944007,
+        "sign_index": 6,
+        "degree_in_sign": 14.944007,
+        "is_retrograde": false,
+        "speed": 14.116165
+      },
+      "Mars": {
+        "longitude": 280.445705,
+        "sign_index": 9,
+        "degree_in_sign": 10.445705,
+        "is_retrograde": false,
+        "speed": 0.658583
+      },
+      "Mercury": {
+        "longitude": 196.130495,
+        "sign_index": 6,
+        "degree_in_sign": 16.130495,
+        "is_retrograde": true,
+        "speed": -1.180042
+      },
+      "Jupiter": {
+        "longitude": 96.001617,
+        "sign_index": 3,
+        "degree_in_sign": 6.001617,
+        "is_retrograde": false,
+        "speed": 0.066548
+      },
+      "Venus": {
+        "longitude": 216.789054,
+        "sign_index": 7,
+        "degree_in_sign": 6.789054,
+        "is_retrograde": true,
+        "speed": -0.057543
+      },
+      "Saturn": {
+        "longitude": 197.784616,
+        "sign_index": 6,
+        "degree_in_sign": 17.784616,
+        "is_retrograde": false,
+        "speed": 0.119418
+      },
+      "Rahu": {
+        "longitude": 255.680922,
+        "sign_index": 8,
+        "degree_in_sign": 15.680922,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 75.680922,
+        "sign_index": 2,
+        "degree_in_sign": 15.680922,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

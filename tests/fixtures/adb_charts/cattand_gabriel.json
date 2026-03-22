@@ -1,0 +1,108 @@
+{
+  "adb_id": 71617,
+  "name": "Cattand, Gabriel",
+  "given_name": "Gabriel Cattand",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423752.75,
+    "year": 1923,
+    "month": 11,
+    "day": 29,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Bonneville",
+    "country": "France",
+    "lat": 46.083333,
+    "lon": 6.416667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cattand,_Gabriel",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 9.329535,
+    "lagna": 189.329535,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.794364,
+    "jd_ut": 2423752.75,
+    "planets": {
+      "Sun": {
+        "longitude": 223.198757,
+        "sign_index": 7,
+        "degree_in_sign": 13.198757,
+        "is_retrograde": false,
+        "speed": 1.01295
+      },
+      "Moon": {
+        "longitude": 106.958819,
+        "sign_index": 3,
+        "degree_in_sign": 16.958819,
+        "is_retrograde": false,
+        "speed": 9.599947
+      },
+      "Mars": {
+        "longitude": 184.102911,
+        "sign_index": 6,
+        "degree_in_sign": 4.102911,
+        "is_retrograde": false,
+        "speed": 0.641124
+      },
+      "Mercury": {
+        "longitude": 230.581112,
+        "sign_index": 7,
+        "degree_in_sign": 20.581112,
+        "is_retrograde": false,
+        "speed": 1.552701
+      },
+      "Jupiter": {
+        "longitude": 218.214082,
+        "sign_index": 7,
+        "degree_in_sign": 8.214082,
+        "is_retrograde": false,
+        "speed": 0.222395
+      },
+      "Venus": {
+        "longitude": 243.459653,
+        "sign_index": 8,
+        "degree_in_sign": 3.459653,
+        "is_retrograde": false,
+        "speed": 1.247773
+      },
+      "Saturn": {
+        "longitude": 185.227043,
+        "sign_index": 6,
+        "degree_in_sign": 5.227043,
+        "is_retrograde": false,
+        "speed": 0.104547
+      },
+      "Rahu": {
+        "longitude": 133.955688,
+        "sign_index": 4,
+        "degree_in_sign": 13.955688,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 313.955688,
+        "sign_index": 10,
+        "degree_in_sign": 13.955688,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

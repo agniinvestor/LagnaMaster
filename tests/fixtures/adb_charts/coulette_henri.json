@@ -1,0 +1,110 @@
+{
+  "adb_id": 50831,
+  "name": "Coulette, Henri",
+  "given_name": "Henri Coulette",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425196.0,
+    "year": 1927,
+    "month": 11,
+    "day": 11,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coulette,_Henri",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n\\nPreviously this entry had same data quoting Steinbrecher collection: Gauquelin Book of American Charts.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Poet",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 2.29085,
+    "lagna": 152.29085,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.849542,
+    "jd_ut": 2425196.0,
+    "planets": {
+      "Sun": {
+        "longitude": 205.255229,
+        "sign_index": 6,
+        "degree_in_sign": 25.255229,
+        "is_retrograde": false,
+        "speed": 1.005315
+      },
+      "Moon": {
+        "longitude": 55.739161,
+        "sign_index": 1,
+        "degree_in_sign": 25.739161,
+        "is_retrograde": false,
+        "speed": 10.271691
+      },
+      "Mars": {
+        "longitude": 198.381661,
+        "sign_index": 6,
+        "degree_in_sign": 18.381661,
+        "is_retrograde": false,
+        "speed": 0.686574
+      },
+      "Mercury": {
+        "longitude": 202.329491,
+        "sign_index": 6,
+        "degree_in_sign": 22.329491,
+        "is_retrograde": true,
+        "speed": -1.283201
+      },
+      "Jupiter": {
+        "longitude": 330.882382,
+        "sign_index": 11,
+        "degree_in_sign": 0.882382,
+        "is_retrograde": true,
+        "speed": -0.028448
+      },
+      "Venus": {
+        "longitude": 158.931809,
+        "sign_index": 5,
+        "degree_in_sign": 8.931809,
+        "is_retrograde": false,
+        "speed": 0.925643
+      },
+      "Saturn": {
+        "longitude": 224.769472,
+        "sign_index": 7,
+        "degree_in_sign": 14.769472,
+        "is_retrograde": false,
+        "speed": 0.113981
+      },
+      "Rahu": {
+        "longitude": 57.474864,
+        "sign_index": 1,
+        "degree_in_sign": 27.474864,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 237.474864,
+        "sign_index": 7,
+        "degree_in_sign": 27.474864,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

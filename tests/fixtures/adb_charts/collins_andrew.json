@@ -1,0 +1,108 @@
+{
+  "adb_id": 60088,
+  "name": "Collins, Andrew",
+  "given_name": "Andrew Collins",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2435863.791667,
+    "year": 1957,
+    "month": 1,
+    "day": 25,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Bedford",
+    "country": "England",
+    "lat": 52.133333,
+    "lon": -0.483333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Andrew",
+  "source_notes": "Starkman quotes personal email \"I was born around 07.00 on 25 January, 1957 in Bedford, England\". \\n",
+  "categories": [
+    "Vocation : Writers : Metaphysics/ Parapsychology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 28.700358,
+    "lagna": 238.700358,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.257426,
+    "jd_ut": 2435863.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 281.796761,
+        "sign_index": 9,
+        "degree_in_sign": 11.796761,
+        "is_retrograde": false,
+        "speed": 1.016783
+      },
+      "Moon": {
+        "longitude": 220.222211,
+        "sign_index": 7,
+        "degree_in_sign": 10.222211,
+        "is_retrograde": false,
+        "speed": 9.107629
+      },
+      "Mars": {
+        "longitude": 4.734905,
+        "sign_index": 0,
+        "degree_in_sign": 4.734905,
+        "is_retrograde": false,
+        "speed": 0.604501
+      },
+      "Mercury": {
+        "longitude": 258.743904,
+        "sign_index": 8,
+        "degree_in_sign": 18.743904,
+        "is_retrograde": false,
+        "speed": 0.412264
+      },
+      "Jupiter": {
+        "longitude": 158.411087,
+        "sign_index": 5,
+        "degree_in_sign": 8.411087,
+        "is_retrograde": true,
+        "speed": -0.028502
+      },
+      "Venus": {
+        "longitude": 262.290991,
+        "sign_index": 8,
+        "degree_in_sign": 22.290991,
+        "is_retrograde": false,
+        "speed": 1.250499
+      },
+      "Saturn": {
+        "longitude": 228.407767,
+        "sign_index": 7,
+        "degree_in_sign": 18.407767,
+        "is_retrograde": false,
+        "speed": 0.085767
+      },
+      "Rahu": {
+        "longitude": 212.166534,
+        "sign_index": 7,
+        "degree_in_sign": 2.166534,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 32.166534,
+        "sign_index": 1,
+        "degree_in_sign": 2.166534,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

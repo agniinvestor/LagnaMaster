@@ -1,0 +1,108 @@
+{
+  "adb_id": 86294,
+  "name": "Chicot, Etienne",
+  "given_name": "Etienne Chicot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433041.715278,
+    "year": 1949,
+    "month": 5,
+    "day": 5,
+    "calendar": "g",
+    "time": "06:10",
+    "time_type": "s",
+    "hour": 6.166667,
+    "time_unknown": false,
+    "place": "Fécamp",
+    "country": "France",
+    "lat": 49.75,
+    "lon": 0.366667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chicot,_Etienne",
+  "source_notes": "Didier Geslain quoted bc.\\n\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 11.595434,
+    "lagna": 11.595434,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.149518,
+    "jd_ut": 2433041.715278,
+    "planets": {
+      "Sun": {
+        "longitude": 21.229658,
+        "sign_index": 0,
+        "degree_in_sign": 21.229658,
+        "is_retrograde": false,
+        "speed": 0.968426
+      },
+      "Moon": {
+        "longitude": 102.645312,
+        "sign_index": 3,
+        "degree_in_sign": 12.645312,
+        "is_retrograde": false,
+        "speed": 17.397462
+      },
+      "Mars": {
+        "longitude": 10.678395,
+        "sign_index": 0,
+        "degree_in_sign": 10.678395,
+        "is_retrograde": false,
+        "speed": 0.74646
+      },
+      "Mercury": {
+        "longitude": 41.463795,
+        "sign_index": 1,
+        "degree_in_sign": 11.463795,
+        "is_retrograde": false,
+        "speed": 1.373866
+      },
+      "Jupiter": {
+        "longitude": 278.651475,
+        "sign_index": 9,
+        "degree_in_sign": 8.651475,
+        "is_retrograde": false,
+        "speed": 0.047932
+      },
+      "Venus": {
+        "longitude": 26.013168,
+        "sign_index": 0,
+        "degree_in_sign": 26.013168,
+        "is_retrograde": false,
+        "speed": 1.232634
+      },
+      "Saturn": {
+        "longitude": 126.177778,
+        "sign_index": 4,
+        "degree_in_sign": 6.177778,
+        "is_retrograde": false,
+        "speed": 0.006796
+      },
+      "Rahu": {
+        "longitude": 1.714166,
+        "sign_index": 0,
+        "degree_in_sign": 1.714166,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 181.714166,
+        "sign_index": 6,
+        "degree_in_sign": 1.714166,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

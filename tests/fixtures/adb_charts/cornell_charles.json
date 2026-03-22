@@ -1,0 +1,111 @@
+{
+  "adb_id": 61512,
+  "name": "Cornell, Charles",
+  "given_name": "Charles Cornell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419110.333333,
+    "year": 1911,
+    "month": 3,
+    "day": 14,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Cochise",
+    "country": "Arizona",
+    "lat": 32.116667,
+    "lon": -109.916667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornell,_Charles",
+  "source_notes": "Sy Scholfield quotes birth certificate: http://genealogy.az.gov/azbirth/408/408-2087.pdf\\n",
+  "categories": [
+    "Vocation : Business/Marketing : Real estate",
+    "Vocation : Education : Teacher",
+    "Vocation : Law : Security guard",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.000547,
+    "lagna": 60.000547,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.61688,
+    "jd_ut": 2419110.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 330.5132,
+        "sign_index": 11,
+        "degree_in_sign": 0.5132,
+        "is_retrograde": false,
+        "speed": 0.996027
+      },
+      "Moon": {
+        "longitude": 148.841597,
+        "sign_index": 4,
+        "degree_in_sign": 28.841597,
+        "is_retrograde": false,
+        "speed": 17.504008
+      },
+      "Mars": {
+        "longitude": 277.998095,
+        "sign_index": 9,
+        "degree_in_sign": 7.998095,
+        "is_retrograde": false,
+        "speed": 0.738789
+      },
+      "Mercury": {
+        "longitude": 325.151556,
+        "sign_index": 10,
+        "degree_in_sign": 25.151556,
+        "is_retrograde": false,
+        "speed": 1.880488
+      },
+      "Jupiter": {
+        "longitude": 201.655425,
+        "sign_index": 6,
+        "degree_in_sign": 21.655425,
+        "is_retrograde": true,
+        "speed": -0.041768
+      },
+      "Venus": {
+        "longitude": 356.179746,
+        "sign_index": 11,
+        "degree_in_sign": 26.179746,
+        "is_retrograde": false,
+        "speed": 1.228349
+      },
+      "Saturn": {
+        "longitude": 11.372869,
+        "sign_index": 0,
+        "degree_in_sign": 11.372869,
+        "is_retrograde": false,
+        "speed": 0.107404
+      },
+      "Rahu": {
+        "longitude": 19.967059,
+        "sign_index": 0,
+        "degree_in_sign": 19.967059,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 199.967059,
+        "sign_index": 6,
+        "degree_in_sign": 19.967059,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

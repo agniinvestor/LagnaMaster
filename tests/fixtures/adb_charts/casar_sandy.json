@@ -1,0 +1,108 @@
+{
+  "adb_id": 65860,
+  "name": "Casar, Sandy",
+  "given_name": "Sandy Casar",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443907.201389,
+    "year": 1979,
+    "month": 2,
+    "day": 2,
+    "calendar": "g",
+    "time": "17:50",
+    "time_type": "s",
+    "hour": 17.833333,
+    "time_unknown": false,
+    "place": "Mantes la Jolie",
+    "country": "France",
+    "lat": 48.983333,
+    "lon": 1.716667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casar,_Sandy",
+  "source_notes": "Didier Geslain archive, 'Cyclisme' pdf file, p. 64.\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 26.952964,
+    "lagna": 86.952964,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.565,
+    "jd_ut": 2443907.201389,
+    "planets": {
+      "Sun": {
+        "longitude": 289.686838,
+        "sign_index": 9,
+        "degree_in_sign": 19.686838,
+        "is_retrograde": false,
+        "speed": 1.014729
+      },
+      "Moon": {
+        "longitude": 3.278965,
+        "sign_index": 0,
+        "degree_in_sign": 3.278965,
+        "is_retrograde": false,
+        "speed": 9.892544
+      },
+      "Mars": {
+        "longitude": 286.614632,
+        "sign_index": 9,
+        "degree_in_sign": 16.614632,
+        "is_retrograde": false,
+        "speed": 0.785858
+      },
+      "Mercury": {
+        "longitude": 285.001213,
+        "sign_index": 9,
+        "degree_in_sign": 15.001213,
+        "is_retrograde": false,
+        "speed": 1.68785
+      },
+      "Jupiter": {
+        "longitude": 99.273505,
+        "sign_index": 3,
+        "degree_in_sign": 9.273505,
+        "is_retrograde": true,
+        "speed": -0.129845
+      },
+      "Venus": {
+        "longitude": 243.485536,
+        "sign_index": 8,
+        "degree_in_sign": 3.485536,
+        "is_retrograde": false,
+        "speed": 1.094014
+      },
+      "Saturn": {
+        "longitude": 139.001562,
+        "sign_index": 4,
+        "degree_in_sign": 19.001562,
+        "is_retrograde": true,
+        "speed": -0.064222
+      },
+      "Rahu": {
+        "longitude": 145.929818,
+        "sign_index": 4,
+        "degree_in_sign": 25.929818,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.929818,
+        "sign_index": 10,
+        "degree_in_sign": 25.929818,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

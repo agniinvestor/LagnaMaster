@@ -1,0 +1,109 @@
+{
+  "adb_id": 52425,
+  "name": "Cicognini, Alessandro",
+  "given_name": "Alessandro Cicognini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417235.625,
+    "year": 1906,
+    "month": 1,
+    "day": 25,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Pescara",
+    "country": "Italy",
+    "lat": 42.466667,
+    "lon": 14.216667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cicognini,_Alessandro",
+  "source_notes": "Ed Steinbrecher collection: Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 27.121589,
+    "lagna": 207.121589,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.545211,
+    "jd_ut": 2417235.625,
+    "planets": {
+      "Sun": {
+        "longitude": 281.70874,
+        "sign_index": 9,
+        "degree_in_sign": 11.70874,
+        "is_retrograde": false,
+        "speed": 1.017
+      },
+      "Moon": {
+        "longitude": 287.269452,
+        "sign_index": 9,
+        "degree_in_sign": 17.269452,
+        "is_retrograde": false,
+        "speed": 15.819857
+      },
+      "Mars": {
+        "longitude": 329.241322,
+        "sign_index": 10,
+        "degree_in_sign": 29.241322,
+        "is_retrograde": false,
+        "speed": 0.75873
+      },
+      "Mercury": {
+        "longitude": 264.60114,
+        "sign_index": 8,
+        "degree_in_sign": 24.60114,
+        "is_retrograde": false,
+        "speed": 1.48556
+      },
+      "Jupiter": {
+        "longitude": 33.93984,
+        "sign_index": 1,
+        "degree_in_sign": 3.93984,
+        "is_retrograde": false,
+        "speed": 0.012086
+      },
+      "Venus": {
+        "longitude": 276.818879,
+        "sign_index": 9,
+        "degree_in_sign": 6.818879,
+        "is_retrograde": false,
+        "speed": 1.256374
+      },
+      "Saturn": {
+        "longitude": 309.228526,
+        "sign_index": 10,
+        "degree_in_sign": 9.228526,
+        "is_retrograde": false,
+        "speed": 0.112613
+      },
+      "Rahu": {
+        "longitude": 119.311793,
+        "sign_index": 3,
+        "degree_in_sign": 29.311793,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 299.311793,
+        "sign_index": 9,
+        "degree_in_sign": 29.311793,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

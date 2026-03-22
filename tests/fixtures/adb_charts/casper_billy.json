@@ -1,0 +1,116 @@
+{
+  "adb_id": 19592,
+  "name": "Casper, Billy",
+  "given_name": "Billy Casper",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426517.266667,
+    "year": 1931,
+    "month": 6,
+    "day": 24,
+    "calendar": "g",
+    "time": "10:24",
+    "time_type": "s",
+    "hour": 10.4,
+    "time_unknown": false,
+    "place": "San Diego",
+    "country": "California",
+    "lat": 32.716667,
+    "lon": -117.15
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casper,_Billy",
+  "source_notes": "Contemporary American Horoscopes\\n",
+  "categories": [
+    "Traits : Personality : Disciplined",
+    "Traits : Personality : Emotional",
+    "Traits : Personality : Temper",
+    "Family : Parenting : Foster, Step, or Adopted Kids",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Financial : Gain - Financial success in field",
+    "Lifestyle : Home : Home centered",
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Sports : Golf"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 27.856944,
+    "lagna": 117.856944,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.900058,
+    "jd_ut": 2426517.266667,
+    "planets": {
+      "Sun": {
+        "longitude": 69.363547,
+        "sign_index": 2,
+        "degree_in_sign": 9.363547,
+        "is_retrograde": false,
+        "speed": 0.953615
+      },
+      "Moon": {
+        "longitude": 183.047825,
+        "sign_index": 6,
+        "degree_in_sign": 3.047825,
+        "is_retrograde": false,
+        "speed": 17.390258
+      },
+      "Mars": {
+        "longitude": 134.81873,
+        "sign_index": 4,
+        "degree_in_sign": 14.81873,
+        "is_retrograde": false,
+        "speed": 0.558525
+      },
+      "Mercury": {
+        "longitude": 63.183046,
+        "sign_index": 2,
+        "degree_in_sign": 3.183046,
+        "is_retrograde": false,
+        "speed": 2.152686
+      },
+      "Jupiter": {
+        "longitude": 92.168915,
+        "sign_index": 3,
+        "degree_in_sign": 2.168915,
+        "is_retrograde": false,
+        "speed": 0.213682
+      },
+      "Venus": {
+        "longitude": 48.991592,
+        "sign_index": 1,
+        "degree_in_sign": 18.991592,
+        "is_retrograde": false,
+        "speed": 1.214029
+      },
+      "Saturn": {
+        "longitude": 268.395721,
+        "sign_index": 8,
+        "degree_in_sign": 28.395721,
+        "is_retrograde": true,
+        "speed": -0.067662
+      },
+      "Rahu": {
+        "longitude": 347.458197,
+        "sign_index": 11,
+        "degree_in_sign": 17.458197,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 167.458197,
+        "sign_index": 5,
+        "degree_in_sign": 17.458197,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

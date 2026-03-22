@@ -1,0 +1,113 @@
+{
+  "adb_id": 94207,
+  "name": "Connors, John",
+  "given_name": "John Connors",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423390.9375,
+    "year": 1922,
+    "month": 12,
+    "day": 2,
+    "calendar": "g",
+    "time": "04:30",
+    "time_type": "s",
+    "hour": 4.5,
+    "time_unknown": false,
+    "place": "Des Moines",
+    "country": "Iowa",
+    "lat": 41.6,
+    "lon": -93.616667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connors,_John",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Family : Parenting : Kids more than 3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Law : Fire department",
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 19.158325,
+    "lagna": 169.158325,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.780531,
+    "jd_ut": 2423390.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 226.69515,
+        "sign_index": 7,
+        "degree_in_sign": 16.69515,
+        "is_retrograde": false,
+        "speed": 1.013847
+      },
+      "Moon": {
+        "longitude": 22.360882,
+        "sign_index": 0,
+        "degree_in_sign": 22.360882,
+        "is_retrograde": false,
+        "speed": 12.099467
+      },
+      "Mars": {
+        "longitude": 300.560713,
+        "sign_index": 10,
+        "degree_in_sign": 0.560713,
+        "is_retrograde": false,
+        "speed": 0.72899
+      },
+      "Mercury": {
+        "longitude": 224.269488,
+        "sign_index": 7,
+        "degree_in_sign": 14.269488,
+        "is_retrograde": false,
+        "speed": 1.572193
+      },
+      "Jupiter": {
+        "longitude": 194.993455,
+        "sign_index": 6,
+        "degree_in_sign": 14.993455,
+        "is_retrograde": false,
+        "speed": 0.201108
+      },
+      "Venus": {
+        "longitude": 215.284912,
+        "sign_index": 7,
+        "degree_in_sign": 5.284912,
+        "is_retrograde": true,
+        "speed": -0.507388
+      },
+      "Saturn": {
+        "longitude": 174.490466,
+        "sign_index": 5,
+        "degree_in_sign": 24.490466,
+        "is_retrograde": false,
+        "speed": 0.090435
+      },
+      "Rahu": {
+        "longitude": 153.128887,
+        "sign_index": 5,
+        "degree_in_sign": 3.128887,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 333.128887,
+        "sign_index": 11,
+        "degree_in_sign": 3.128887,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

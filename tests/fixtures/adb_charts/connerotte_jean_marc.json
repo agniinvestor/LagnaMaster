@@ -1,0 +1,108 @@
+{
+  "adb_id": 93159,
+  "name": "Connerotte, Jean-Marc",
+  "given_name": "Jean-Marc Connerotte",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432746.25,
+    "year": 1948,
+    "month": 7,
+    "day": 13,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Neufchâteau",
+    "country": "Belgium",
+    "lat": 49.833333,
+    "lon": 5.433333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connerotte,_Jean-Marc",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_cr_criminalite-3.pdf]. \\n",
+  "categories": [
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 10.157692,
+    "lagna": 220.157692,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.138221,
+    "jd_ut": 2432746.25,
+    "planets": {
+      "Sun": {
+        "longitude": 88.074887,
+        "sign_index": 2,
+        "degree_in_sign": 28.074887,
+        "is_retrograde": false,
+        "speed": 0.953677
+      },
+      "Moon": {
+        "longitude": 181.784862,
+        "sign_index": 6,
+        "degree_in_sign": 1.784862,
+        "is_retrograde": false,
+        "speed": 10.015689
+      },
+      "Mars": {
+        "longitude": 154.862395,
+        "sign_index": 5,
+        "degree_in_sign": 4.862395,
+        "is_retrograde": false,
+        "speed": 0.57263
+      },
+      "Mercury": {
+        "longitude": 68.037854,
+        "sign_index": 2,
+        "degree_in_sign": 8.037854,
+        "is_retrograde": false,
+        "speed": 0.705497
+      },
+      "Jupiter": {
+        "longitude": 237.617928,
+        "sign_index": 7,
+        "degree_in_sign": 27.617928,
+        "is_retrograde": true,
+        "speed": -0.094356
+      },
+      "Venus": {
+        "longitude": 61.621002,
+        "sign_index": 2,
+        "degree_in_sign": 1.621002,
+        "is_retrograde": true,
+        "speed": -0.096699
+      },
+      "Saturn": {
+        "longitude": 118.497956,
+        "sign_index": 3,
+        "degree_in_sign": 28.497956,
+        "is_retrograde": false,
+        "speed": 0.115885
+      },
+      "Rahu": {
+        "longitude": 17.37148,
+        "sign_index": 0,
+        "degree_in_sign": 17.37148,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 197.37148,
+        "sign_index": 6,
+        "degree_in_sign": 17.37148,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

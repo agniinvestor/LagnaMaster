@@ -1,0 +1,108 @@
+{
+  "adb_id": 69348,
+  "name": "Cronenberger, Philippe",
+  "given_name": "Philippe Cronenberger",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434717.756944,
+    "year": 1953,
+    "month": 12,
+    "day": 6,
+    "calendar": "g",
+    "time": "07:10",
+    "time_type": "s",
+    "hour": 7.166667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cronenberger,_Philippe",
+  "source_notes": "Didier Geslain archive, 'sommeliers' pdf file, p. 14.\\n",
+  "categories": [
+    "Vocation : Food and Beverage : Other Food and Beverage"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 11.271483,
+    "lagna": 191.271483,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.213605,
+    "jd_ut": 2434717.756944,
+    "planets": {
+      "Sun": {
+        "longitude": 230.620516,
+        "sign_index": 7,
+        "degree_in_sign": 20.620516,
+        "is_retrograde": false,
+        "speed": 1.015643
+      },
+      "Moon": {
+        "longitude": 229.051405,
+        "sign_index": 7,
+        "degree_in_sign": 19.051405,
+        "is_retrograde": false,
+        "speed": 12.284106
+      },
+      "Mars": {
+        "longitude": 178.150052,
+        "sign_index": 5,
+        "degree_in_sign": 28.150052,
+        "is_retrograde": false,
+        "speed": 0.610546
+      },
+      "Mercury": {
+        "longitude": 210.983897,
+        "sign_index": 7,
+        "degree_in_sign": 0.983897,
+        "is_retrograde": false,
+        "speed": 1.258645
+      },
+      "Jupiter": {
+        "longitude": 59.189424,
+        "sign_index": 1,
+        "degree_in_sign": 29.189424,
+        "is_retrograde": true,
+        "speed": -0.133692
+      },
+      "Venus": {
+        "longitude": 217.503466,
+        "sign_index": 7,
+        "degree_in_sign": 7.503466,
+        "is_retrograde": false,
+        "speed": 1.256871
+      },
+      "Saturn": {
+        "longitude": 191.931848,
+        "sign_index": 6,
+        "degree_in_sign": 11.931848,
+        "is_retrograde": false,
+        "speed": 0.103301
+      },
+      "Rahu": {
+        "longitude": 272.897268,
+        "sign_index": 9,
+        "degree_in_sign": 2.897268,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 92.897268,
+        "sign_index": 3,
+        "degree_in_sign": 2.897268,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

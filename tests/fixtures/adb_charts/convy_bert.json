@@ -1,0 +1,115 @@
+{
+  "adb_id": 25922,
+  "name": "Convy, Bert",
+  "given_name": "Bert Convy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427277.427083,
+    "year": 1933,
+    "month": 7,
+    "day": 23,
+    "calendar": "g",
+    "time": "16:15",
+    "time_type": "s",
+    "hour": 16.25,
+    "time_unknown": false,
+    "place": "St.Louis",
+    "country": "Missouri",
+    "lat": 38.633333,
+    "lon": -90.2
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Convy,_Bert",
+  "source_notes": "Originally the Gauquelin Book of American Charts was quoted for 23 July 1934 at 16:15 (4:15 PM).\\nIn January 2021 the year was changed to 1933 because the death certificate lists the birth year as 1933 [https://findadeath.com/bert-convy/], and because a son is listed as being born to B. and M. Convy in the birth notices in ''St. Louis Globe-Democrat'' (St. Louis, Missouri), 3 August 1933, page C4, albeit no date given. His death certificate lists his parents as Bernard Fleming and Monica (née Whalen) Convy.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Relationship : Married late/never",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Sports : Baseball",
+    "Notable : Awards : Emmy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.47985,
+    "lagna": 210.47985,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.929122,
+    "jd_ut": 2427277.427083,
+    "planets": {
+      "Sun": {
+        "longitude": 97.63189,
+        "sign_index": 3,
+        "degree_in_sign": 7.63189,
+        "is_retrograde": false,
+        "speed": 0.955382
+      },
+      "Moon": {
+        "longitude": 111.450276,
+        "sign_index": 3,
+        "degree_in_sign": 21.450276,
+        "is_retrograde": false,
+        "speed": 9.818124
+      },
+      "Mars": {
+        "longitude": 166.600215,
+        "sign_index": 5,
+        "degree_in_sign": 16.600215,
+        "is_retrograde": false,
+        "speed": 0.580583
+      },
+      "Mercury": {
+        "longitude": 108.340971,
+        "sign_index": 3,
+        "degree_in_sign": 18.340971,
+        "is_retrograde": true,
+        "speed": -0.547785
+      },
+      "Jupiter": {
+        "longitude": 147.575507,
+        "sign_index": 4,
+        "degree_in_sign": 27.575507,
+        "is_retrograde": false,
+        "speed": 0.171751
+      },
+      "Venus": {
+        "longitude": 122.487204,
+        "sign_index": 4,
+        "degree_in_sign": 2.487204,
+        "is_retrograde": false,
+        "speed": 1.215469
+      },
+      "Saturn": {
+        "longitude": 291.059188,
+        "sign_index": 9,
+        "degree_in_sign": 21.059188,
+        "is_retrograde": true,
+        "speed": -0.071598
+      },
+      "Rahu": {
+        "longitude": 307.175718,
+        "sign_index": 10,
+        "degree_in_sign": 7.175718,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 127.175718,
+        "sign_index": 4,
+        "degree_in_sign": 7.175718,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 103742,
+  "name": "Chasey, Gail",
+  "given_name": "Gail Chasey",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431182.161111,
+    "year": 1944,
+    "month": 4,
+    "day": 1,
+    "calendar": "g",
+    "time": "09:52",
+    "time_type": "w",
+    "hour": 9.866667,
+    "time_unknown": false,
+    "place": "Yuma",
+    "country": "Arizona",
+    "lat": 32.733333,
+    "lon": -114.616667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chasey,_Gail",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 12.812805,
+    "lagna": 12.812805,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.078417,
+    "jd_ut": 2431182.161111,
+    "planets": {
+      "Sun": {
+        "longitude": 348.72298,
+        "sign_index": 11,
+        "degree_in_sign": 18.72298,
+        "is_retrograde": false,
+        "speed": 0.986042
+      },
+      "Moon": {
+        "longitude": 91.765004,
+        "sign_index": 3,
+        "degree_in_sign": 1.765004,
+        "is_retrograde": false,
+        "speed": 16.346345
+      },
+      "Mars": {
+        "longitude": 69.070303,
+        "sign_index": 2,
+        "degree_in_sign": 9.070303,
+        "is_retrograde": false,
+        "speed": 0.509172
+      },
+      "Mercury": {
+        "longitude": 3.29298,
+        "sign_index": 0,
+        "degree_in_sign": 3.29298,
+        "is_retrograde": false,
+        "speed": 1.814957
+      },
+      "Jupiter": {
+        "longitude": 114.163992,
+        "sign_index": 3,
+        "degree_in_sign": 24.163992,
+        "is_retrograde": true,
+        "speed": -0.035768
+      },
+      "Venus": {
+        "longitude": 326.049405,
+        "sign_index": 10,
+        "degree_in_sign": 26.049405,
+        "is_retrograde": false,
+        "speed": 1.22984
+      },
+      "Saturn": {
+        "longitude": 58.135368,
+        "sign_index": 1,
+        "degree_in_sign": 28.135368,
+        "is_retrograde": false,
+        "speed": 0.071335
+      },
+      "Rahu": {
+        "longitude": 100.255778,
+        "sign_index": 3,
+        "degree_in_sign": 10.255778,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 280.255778,
+        "sign_index": 9,
+        "degree_in_sign": 10.255778,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

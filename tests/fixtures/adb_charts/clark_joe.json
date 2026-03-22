@@ -1,0 +1,109 @@
+{
+  "adb_id": 8388,
+  "name": "Clark, Joe",
+  "given_name": "Joe Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429420.3125,
+    "year": 1939,
+    "month": 6,
+    "day": 5,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "High River",
+    "country": "Alberta",
+    "lat": 50.583333,
+    "lon": -113.866667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "cap",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Joe",
+  "source_notes": "Doug Brown quotes his mom.  McKay-Clements quotes a letter from Clark, 1996, \"I think it was later than 12:30 PM.\"\\n",
+  "categories": [
+    "Vocation : Politics : Heads of state",
+    "Notable : Famous : Notable extremes"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 1.112219,
+    "lagna": 121.112219,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.011053,
+    "jd_ut": 2429420.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 51.214416,
+        "sign_index": 1,
+        "degree_in_sign": 21.214416,
+        "is_retrograde": false,
+        "speed": 0.956719
+      },
+      "Moon": {
+        "longitude": 272.879397,
+        "sign_index": 9,
+        "degree_in_sign": 2.879397,
+        "is_retrograde": false,
+        "speed": 14.592445
+      },
+      "Mars": {
+        "longitude": 279.95931,
+        "sign_index": 9,
+        "degree_in_sign": 9.95931,
+        "is_retrograde": false,
+        "speed": 0.197286
+      },
+      "Mercury": {
+        "longitude": 49.246944,
+        "sign_index": 1,
+        "degree_in_sign": 19.246944,
+        "is_retrograde": false,
+        "speed": 2.195443
+      },
+      "Jupiter": {
+        "longitude": 341.389346,
+        "sign_index": 11,
+        "degree_in_sign": 11.389346,
+        "is_retrograde": false,
+        "speed": 0.15095
+      },
+      "Venus": {
+        "longitude": 26.56134,
+        "sign_index": 0,
+        "degree_in_sign": 26.56134,
+        "is_retrograde": false,
+        "speed": 1.20909
+      },
+      "Saturn": {
+        "longitude": 4.465925,
+        "sign_index": 0,
+        "degree_in_sign": 4.465925,
+        "is_retrograde": false,
+        "speed": 0.099828
+      },
+      "Rahu": {
+        "longitude": 193.619779,
+        "sign_index": 6,
+        "degree_in_sign": 13.619779,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 13.619779,
+        "sign_index": 0,
+        "degree_in_sign": 13.619779,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 9479,
+  "name": "Christian",
+  "given_name": "Christian",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430976.083333,
+    "year": 1943,
+    "month": 9,
+    "day": 8,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "d",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Palermo",
+    "country": "Italy",
+    "lat": 38.116667,
+    "lon": 13.366667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian",
+  "source_notes": "Bordoni quotes B.C. for date, him for the time.\\n\\n(Wikipedia has 1947, 1949, etc, no sources given).\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Brain",
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 23.592153,
+    "lagna": 233.592153,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.070538,
+    "jd_ut": 2430976.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 141.976569,
+        "sign_index": 4,
+        "degree_in_sign": 21.976569,
+        "is_retrograde": false,
+        "speed": 0.971019
+      },
+      "Moon": {
+        "longitude": 246.303405,
+        "sign_index": 8,
+        "degree_in_sign": 6.303405,
+        "is_retrograde": false,
+        "speed": 11.557206
+      },
+      "Mars": {
+        "longitude": 45.152706,
+        "sign_index": 1,
+        "degree_in_sign": 15.152706,
+        "is_retrograde": false,
+        "speed": 0.487106
+      },
+      "Mercury": {
+        "longitude": 165.96339,
+        "sign_index": 5,
+        "degree_in_sign": 15.96339,
+        "is_retrograde": false,
+        "speed": 0.29209
+      },
+      "Jupiter": {
+        "longitude": 112.062311,
+        "sign_index": 3,
+        "degree_in_sign": 22.062311,
+        "is_retrograde": false,
+        "speed": 0.204885
+      },
+      "Venus": {
+        "longitude": 137.88296,
+        "sign_index": 4,
+        "degree_in_sign": 17.88296,
+        "is_retrograde": true,
+        "speed": -0.608576
+      },
+      "Saturn": {
+        "longitude": 62.686702,
+        "sign_index": 2,
+        "degree_in_sign": 2.686702,
+        "is_retrograde": false,
+        "speed": 0.054823
+      },
+      "Rahu": {
+        "longitude": 111.176265,
+        "sign_index": 3,
+        "degree_in_sign": 21.176265,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 291.176265,
+        "sign_index": 9,
+        "degree_in_sign": 21.176265,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

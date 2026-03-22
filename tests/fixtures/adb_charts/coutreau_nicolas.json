@@ -1,0 +1,108 @@
+{
+  "adb_id": 70243,
+  "name": "Coutreau, Nicolas",
+  "given_name": "Nicolas Coutreau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444331.788194,
+    "year": 1980,
+    "month": 4,
+    "day": 2,
+    "calendar": "g",
+    "time": "07:55",
+    "time_type": "s",
+    "hour": 7.916667,
+    "time_unknown": false,
+    "place": "Marmande",
+    "country": "France",
+    "lat": 44.5,
+    "lon": 0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coutreau,_Nicolas",
+  "source_notes": "Didier Geslain archive, 'hippisme jockeys' pdf file, p. 61.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 26.178652,
+    "lagna": 356.178652,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.581237,
+    "jd_ut": 2444331.788194,
+    "planets": {
+      "Sun": {
+        "longitude": 349.109753,
+        "sign_index": 11,
+        "degree_in_sign": 19.109753,
+        "is_retrograde": false,
+        "speed": 0.98562
+      },
+      "Moon": {
+        "longitude": 186.817058,
+        "sign_index": 6,
+        "degree_in_sign": 6.817058,
+        "is_retrograde": false,
+        "speed": 11.45934
+      },
+      "Mars": {
+        "longitude": 122.394492,
+        "sign_index": 4,
+        "degree_in_sign": 2.394492,
+        "is_retrograde": true,
+        "speed": -0.050658
+      },
+      "Mercury": {
+        "longitude": 321.337544,
+        "sign_index": 10,
+        "degree_in_sign": 21.337544,
+        "is_retrograde": false,
+        "speed": 0.973416
+      },
+      "Jupiter": {
+        "longitude": 127.551968,
+        "sign_index": 4,
+        "degree_in_sign": 7.551968,
+        "is_retrograde": true,
+        "speed": -0.072486
+      },
+      "Venus": {
+        "longitude": 34.887775,
+        "sign_index": 1,
+        "degree_in_sign": 4.887775,
+        "is_retrograde": false,
+        "speed": 1.004157
+      },
+      "Saturn": {
+        "longitude": 148.600903,
+        "sign_index": 4,
+        "degree_in_sign": 28.600903,
+        "is_retrograde": true,
+        "speed": -0.071337
+      },
+      "Rahu": {
+        "longitude": 123.4301,
+        "sign_index": 4,
+        "degree_in_sign": 3.4301,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 303.4301,
+        "sign_index": 10,
+        "degree_in_sign": 3.4301,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

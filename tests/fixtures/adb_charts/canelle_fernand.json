@@ -1,0 +1,109 @@
+{
+  "adb_id": 105381,
+  "name": "Canelle, Fernand",
+  "given_name": "Fernand Canelle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408448.243519,
+    "year": 1882,
+    "month": 1,
+    "day": 2,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canelle,_Fernand",
+  "source_notes": "quoted BC from Bordoni database\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 19.22902,
+    "lagna": 79.22902,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.209297,
+    "jd_ut": 2408448.243519,
+    "planets": {
+      "Sun": {
+        "longitude": 260.094403,
+        "sign_index": 8,
+        "degree_in_sign": 20.094403,
+        "is_retrograde": false,
+        "speed": 1.018922
+      },
+      "Moon": {
+        "longitude": 61.344234,
+        "sign_index": 2,
+        "degree_in_sign": 1.344234,
+        "is_retrograde": false,
+        "speed": 11.29686
+      },
+      "Mars": {
+        "longitude": 70.933294,
+        "sign_index": 2,
+        "degree_in_sign": 10.933294,
+        "is_retrograde": true,
+        "speed": -0.369399
+      },
+      "Mercury": {
+        "longitude": 257.685752,
+        "sign_index": 8,
+        "degree_in_sign": 17.685752,
+        "is_retrograde": false,
+        "speed": 1.603429
+      },
+      "Jupiter": {
+        "longitude": 24.096821,
+        "sign_index": 0,
+        "degree_in_sign": 24.096821,
+        "is_retrograde": true,
+        "speed": -0.02641
+      },
+      "Venus": {
+        "longitude": 248.256705,
+        "sign_index": 8,
+        "degree_in_sign": 8.256705,
+        "is_retrograde": false,
+        "speed": 1.256603
+      },
+      "Saturn": {
+        "longitude": 13.351783,
+        "sign_index": 0,
+        "degree_in_sign": 13.351783,
+        "is_retrograde": true,
+        "speed": -0.007815
+      },
+      "Rahu": {
+        "longitude": 224.973714,
+        "sign_index": 7,
+        "degree_in_sign": 14.973714,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 44.973714,
+        "sign_index": 1,
+        "degree_in_sign": 14.973714,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

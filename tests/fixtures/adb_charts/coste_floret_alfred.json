@@ -1,0 +1,111 @@
+{
+  "adb_id": 50829,
+  "name": "Coste-Floret, Alfred",
+  "given_name": "Alfred Coste-Floret",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419135.642361,
+    "year": 1911,
+    "month": 4,
+    "day": 9,
+    "calendar": "g",
+    "time": "03:25",
+    "time_type": "s",
+    "hour": 3.416667,
+    "time_unknown": false,
+    "place": "Montpellier",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 3.883333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coste-Floret,_Alfred",
+  "source_notes": "Steinbrecher collection: Gauquelin vol 5 no 1433\\n",
+  "categories": [
+    "Personal : Birth : Twin, triplet, etc.",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Other Politics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 11.719961,
+    "lagna": 281.719961,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.617848,
+    "jd_ut": 2419135.642361,
+    "planets": {
+      "Sun": {
+        "longitude": 355.553215,
+        "sign_index": 11,
+        "degree_in_sign": 25.553215,
+        "is_retrograde": false,
+        "speed": 0.981955
+      },
+      "Moon": {
+        "longitude": 121.993163,
+        "sign_index": 4,
+        "degree_in_sign": 1.993163,
+        "is_retrograde": false,
+        "speed": 14.745029
+      },
+      "Mars": {
+        "longitude": 296.790813,
+        "sign_index": 9,
+        "degree_in_sign": 26.790813,
+        "is_retrograde": false,
+        "speed": 0.744868
+      },
+      "Mercury": {
+        "longitude": 13.528414,
+        "sign_index": 0,
+        "degree_in_sign": 13.528414,
+        "is_retrograde": false,
+        "speed": 1.495986
+      },
+      "Jupiter": {
+        "longitude": 199.720799,
+        "sign_index": 6,
+        "degree_in_sign": 19.720799,
+        "is_retrograde": true,
+        "speed": -0.106132
+      },
+      "Venus": {
+        "longitude": 27.002495,
+        "sign_index": 0,
+        "degree_in_sign": 27.002495,
+        "is_retrograde": false,
+        "speed": 1.205787
+      },
+      "Saturn": {
+        "longitude": 14.325673,
+        "sign_index": 0,
+        "degree_in_sign": 14.325673,
+        "is_retrograde": false,
+        "speed": 0.123834
+      },
+      "Rahu": {
+        "longitude": 18.625881,
+        "sign_index": 0,
+        "degree_in_sign": 18.625881,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 198.625881,
+        "sign_index": 6,
+        "degree_in_sign": 18.625881,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

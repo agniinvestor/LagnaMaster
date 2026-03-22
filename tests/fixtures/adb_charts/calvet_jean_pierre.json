@@ -1,0 +1,109 @@
+{
+  "adb_id": 64908,
+  "name": "Calvet, Jean-Pierre",
+  "given_name": "Jean-Pierre Calvet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424221.833333,
+    "year": 1925,
+    "month": 3,
+    "day": 12,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Orgon",
+    "country": "France",
+    "lat": 43.783333,
+    "lon": 5.033333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvet,_Jean-Pierre",
+  "source_notes": "Birth and death records in Didier Geslain archive, 'C' pdf file, pp. 21-22.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 26.797184,
+    "lagna": 356.797184,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.812298,
+    "jd_ut": 2424221.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 328.434389,
+        "sign_index": 10,
+        "degree_in_sign": 28.434389,
+        "is_retrograde": false,
+        "speed": 0.997187
+      },
+      "Moon": {
+        "longitude": 169.079288,
+        "sign_index": 5,
+        "degree_in_sign": 19.079288,
+        "is_retrograde": false,
+        "speed": 14.069315
+      },
+      "Mars": {
+        "longitude": 29.663392,
+        "sign_index": 0,
+        "degree_in_sign": 29.663392,
+        "is_retrograde": false,
+        "speed": 0.644081
+      },
+      "Mercury": {
+        "longitude": 334.842486,
+        "sign_index": 11,
+        "degree_in_sign": 4.842486,
+        "is_retrograde": false,
+        "speed": 1.971083
+      },
+      "Jupiter": {
+        "longitude": 264.653897,
+        "sign_index": 8,
+        "degree_in_sign": 24.653897,
+        "is_retrograde": false,
+        "speed": 0.157584
+      },
+      "Venus": {
+        "longitude": 317.551185,
+        "sign_index": 10,
+        "degree_in_sign": 17.551185,
+        "is_retrograde": false,
+        "speed": 1.244707
+      },
+      "Saturn": {
+        "longitude": 201.225866,
+        "sign_index": 6,
+        "degree_in_sign": 21.225866,
+        "is_retrograde": true,
+        "speed": -0.030318
+      },
+      "Rahu": {
+        "longitude": 109.097985,
+        "sign_index": 3,
+        "degree_in_sign": 19.097985,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 289.097985,
+        "sign_index": 9,
+        "degree_in_sign": 19.097985,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 60755,
+  "name": "Crowther, Kitty",
+  "given_name": "Kitty Crowther",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440680.504861,
+    "year": 1970,
+    "month": 4,
+    "day": 4,
+    "calendar": "g",
+    "time": "01:07",
+    "time_type": "s",
+    "hour": 1.116667,
+    "time_unknown": false,
+    "place": "Uccle",
+    "country": "Belgium",
+    "lat": 50.8,
+    "lon": 4.316667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crowther,_Kitty",
+  "source_notes": "from Dekoster, data list 17. Oct. 2013\\n",
+  "categories": [
+    "Vocation : Writers : Children's literature"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.962802,
+    "lagna": 210.962802,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.44161,
+    "jd_ut": 2440680.504861,
+    "planets": {
+      "Sun": {
+        "longitude": 350.370019,
+        "sign_index": 11,
+        "degree_in_sign": 20.370019,
+        "is_retrograde": false,
+        "speed": 0.985548
+      },
+      "Moon": {
+        "longitude": 321.216751,
+        "sign_index": 10,
+        "degree_in_sign": 21.216751,
+        "is_retrograde": false,
+        "speed": 17.401279
+      },
+      "Mars": {
+        "longitude": 26.314162,
+        "sign_index": 0,
+        "degree_in_sign": 26.314162,
+        "is_retrograde": false,
+        "speed": 0.697636
+      },
+      "Mercury": {
+        "longitude": 2.125826,
+        "sign_index": 0,
+        "degree_in_sign": 2.125826,
+        "is_retrograde": false,
+        "speed": 1.956972
+      },
+      "Jupiter": {
+        "longitude": 189.825079,
+        "sign_index": 6,
+        "degree_in_sign": 9.825079,
+        "is_retrograde": true,
+        "speed": -0.113946
+      },
+      "Venus": {
+        "longitude": 7.278819,
+        "sign_index": 0,
+        "degree_in_sign": 7.278819,
+        "is_retrograde": false,
+        "speed": 1.23415
+      },
+      "Saturn": {
+        "longitude": 15.035241,
+        "sign_index": 0,
+        "degree_in_sign": 15.035241,
+        "is_retrograde": false,
+        "speed": 0.120775
+      },
+      "Rahu": {
+        "longitude": 316.91904,
+        "sign_index": 10,
+        "degree_in_sign": 16.91904,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 136.91904,
+        "sign_index": 4,
+        "degree_in_sign": 16.91904,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

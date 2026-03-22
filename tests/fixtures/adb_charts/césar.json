@@ -1,0 +1,108 @@
+{
+  "adb_id": 53453,
+  "name": "César",
+  "given_name": "César",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422691.0,
+    "year": 1921,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/César",
+  "source_notes": "Paddy de Jabrun Cedra database, has a fraternal twin sister, Amandine. Birth certificate. Didier Geslain archive, 'sculpteurs' pdf file, p. 112.\\nSame data: Steinbrecher Collection: Gauquelin ns 3/0289\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 13.015329,
+    "lagna": 343.015329,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.753771,
+    "jd_ut": 2422691.0,
+    "planets": {
+      "Sun": {
+        "longitude": 257.801771,
+        "sign_index": 8,
+        "degree_in_sign": 17.801771,
+        "is_retrograde": false,
+        "speed": 1.019309
+      },
+      "Moon": {
+        "longitude": 171.146933,
+        "sign_index": 5,
+        "degree_in_sign": 21.146933,
+        "is_retrograde": false,
+        "speed": 13.069124
+      },
+      "Mars": {
+        "longitude": 304.277635,
+        "sign_index": 10,
+        "degree_in_sign": 4.277635,
+        "is_retrograde": false,
+        "speed": 0.776602
+      },
+      "Mercury": {
+        "longitude": 248.835323,
+        "sign_index": 8,
+        "degree_in_sign": 8.835323,
+        "is_retrograde": false,
+        "speed": 1.55401
+      },
+      "Jupiter": {
+        "longitude": 146.14863,
+        "sign_index": 4,
+        "degree_in_sign": 26.14863,
+        "is_retrograde": false,
+        "speed": 0.007721
+      },
+      "Venus": {
+        "longitude": 301.00557,
+        "sign_index": 10,
+        "degree_in_sign": 1.00557,
+        "is_retrograde": false,
+        "speed": 1.170304
+      },
+      "Saturn": {
+        "longitude": 152.036544,
+        "sign_index": 5,
+        "degree_in_sign": 2.036544,
+        "is_retrograde": false,
+        "speed": 0.00539
+      },
+      "Rahu": {
+        "longitude": 190.220036,
+        "sign_index": 6,
+        "degree_in_sign": 10.220036,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 10.220036,
+        "sign_index": 0,
+        "degree_in_sign": 10.220036,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

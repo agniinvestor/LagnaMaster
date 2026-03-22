@@ -1,0 +1,108 @@
+{
+  "adb_id": 81064,
+  "name": "Comberg, Wilhelm",
+  "given_name": "Wilhelm Comberg",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409681.313657,
+    "year": 1885,
+    "month": 5,
+    "day": 19,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Neviges",
+    "country": "Germany",
+    "lat": 51.316667,
+    "lon": 7.083333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comberg,_Wilhelm",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.319852,
+    "lagna": 197.319852,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.256431,
+    "jd_ut": 2409681.313657,
+    "planets": {
+      "Sun": {
+        "longitude": 36.667352,
+        "sign_index": 1,
+        "degree_in_sign": 6.667352,
+        "is_retrograde": false,
+        "speed": 0.961724
+      },
+      "Moon": {
+        "longitude": 107.81673,
+        "sign_index": 3,
+        "degree_in_sign": 17.81673,
+        "is_retrograde": false,
+        "speed": 11.947434
+      },
+      "Mars": {
+        "longitude": 15.985467,
+        "sign_index": 0,
+        "degree_in_sign": 15.985467,
+        "is_retrograde": false,
+        "speed": 0.740819
+      },
+      "Mercury": {
+        "longitude": 12.872569,
+        "sign_index": 0,
+        "degree_in_sign": 12.872569,
+        "is_retrograde": false,
+        "speed": 0.61589
+      },
+      "Jupiter": {
+        "longitude": 124.741273,
+        "sign_index": 4,
+        "degree_in_sign": 4.741273,
+        "is_retrograde": false,
+        "speed": 0.080835
+      },
+      "Venus": {
+        "longitude": 40.688688,
+        "sign_index": 1,
+        "degree_in_sign": 10.688688,
+        "is_retrograde": false,
+        "speed": 1.230151
+      },
+      "Saturn": {
+        "longitude": 61.684498,
+        "sign_index": 2,
+        "degree_in_sign": 1.684498,
+        "is_retrograde": false,
+        "speed": 0.122205
+      },
+      "Rahu": {
+        "longitude": 159.63071,
+        "sign_index": 5,
+        "degree_in_sign": 9.63071,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 339.63071,
+        "sign_index": 11,
+        "degree_in_sign": 9.63071,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

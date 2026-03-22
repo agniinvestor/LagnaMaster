@@ -1,0 +1,109 @@
+{
+  "adb_id": 65401,
+  "name": "Cunibil, Robert",
+  "given_name": "Robert Cunibil",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420531.666667,
+    "year": 1915,
+    "month": 2,
+    "day": 3,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cunibil,_Robert",
+  "source_notes": "Death certificate in Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 88.\\n",
+  "categories": [
+    "Vocation : Military : Honors",
+    "Vocation : Travel : Pilot/ military"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 1.586113,
+    "lagna": 211.586113,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.671218,
+    "jd_ut": 2420531.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 290.575997,
+        "sign_index": 9,
+        "degree_in_sign": 20.575997,
+        "is_retrograde": false,
+        "speed": 1.01405
+      },
+      "Moon": {
+        "longitude": 147.800496,
+        "sign_index": 4,
+        "degree_in_sign": 27.800496,
+        "is_retrograde": false,
+        "speed": 10.562782
+      },
+      "Mars": {
+        "longitude": 280.369891,
+        "sign_index": 9,
+        "degree_in_sign": 10.369891,
+        "is_retrograde": false,
+        "speed": 0.779669
+      },
+      "Mercury": {
+        "longitude": 308.308038,
+        "sign_index": 10,
+        "degree_in_sign": 8.308038,
+        "is_retrograde": false,
+        "speed": 1.321947
+      },
+      "Jupiter": {
+        "longitude": 307.121898,
+        "sign_index": 10,
+        "degree_in_sign": 7.121898,
+        "is_retrograde": false,
+        "speed": 0.236048
+      },
+      "Venus": {
+        "longitude": 243.838543,
+        "sign_index": 8,
+        "degree_in_sign": 3.838543,
+        "is_retrograde": false,
+        "speed": 0.984229
+      },
+      "Saturn": {
+        "longitude": 63.183353,
+        "sign_index": 2,
+        "degree_in_sign": 3.183353,
+        "is_retrograde": true,
+        "speed": -0.041827
+      },
+      "Rahu": {
+        "longitude": 304.647625,
+        "sign_index": 10,
+        "degree_in_sign": 4.647625,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 124.647625,
+        "sign_index": 4,
+        "degree_in_sign": 4.647625,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

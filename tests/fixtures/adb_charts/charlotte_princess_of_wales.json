@@ -1,0 +1,112 @@
+{
+  "adb_id": 66267,
+  "name": "Charlotte, Princess of Wales",
+  "given_name": "Princess of Wales Charlotte",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2457144.815278,
+    "year": 2015,
+    "month": 5,
+    "day": 2,
+    "calendar": "g",
+    "time": "08:34",
+    "time_type": "d",
+    "hour": 8.566667,
+    "time_unknown": false,
+    "place": "London St Mary's Hospital",
+    "country": "England",
+    "lat": 51.517222,
+    "lon": -0.173056
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlotte,_Princess_of_Wales",
+  "source_notes": "Handwritten official birth announcement in front of Buckingham Palace [http://www.bbc.com/news/uk-32562117].\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Personal : Birth : Labor short less than 3 hrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.425858,
+    "lagna": 47.425858,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 24.071263,
+    "jd_ut": 2457144.815278,
+    "planets": {
+      "Sun": {
+        "longitude": 17.523492,
+        "sign_index": 0,
+        "degree_in_sign": 17.523492,
+        "is_retrograde": false,
+        "speed": 0.970084
+      },
+      "Moon": {
+        "longitude": 176.533934,
+        "sign_index": 5,
+        "degree_in_sign": 26.533934,
+        "is_retrograde": false,
+        "speed": 14.184416
+      },
+      "Mars": {
+        "longitude": 28.963053,
+        "sign_index": 0,
+        "degree_in_sign": 28.963053,
+        "is_retrograde": false,
+        "speed": 0.715001
+      },
+      "Mercury": {
+        "longitude": 37.631169,
+        "sign_index": 1,
+        "degree_in_sign": 7.631169,
+        "is_retrograde": false,
+        "speed": 1.338123
+      },
+      "Jupiter": {
+        "longitude": 109.370872,
+        "sign_index": 3,
+        "degree_in_sign": 19.370872,
+        "is_retrograde": false,
+        "speed": 0.070483
+      },
+      "Venus": {
+        "longitude": 59.649973,
+        "sign_index": 1,
+        "degree_in_sign": 29.649973,
+        "is_retrograde": false,
+        "speed": 1.122081
+      },
+      "Saturn": {
+        "longitude": 219.056166,
+        "sign_index": 7,
+        "degree_in_sign": 9.056166,
+        "is_retrograde": true,
+        "speed": -0.066425
+      },
+      "Rahu": {
+        "longitude": 164.44199,
+        "sign_index": 5,
+        "degree_in_sign": 14.44199,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 344.44199,
+        "sign_index": 11,
+        "degree_in_sign": 14.44199,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

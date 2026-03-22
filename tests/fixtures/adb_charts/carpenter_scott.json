@@ -1,0 +1,115 @@
+{
+  "adb_id": 5959,
+  "name": "Carpenter, Scott",
+  "given_name": "Scott Carpenter",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424272.072917,
+    "year": 1925,
+    "month": 5,
+    "day": 1,
+    "calendar": "g",
+    "time": "06:45",
+    "time_type": "s",
+    "hour": 6.75,
+    "time_unknown": false,
+    "place": "Boulder",
+    "country": "Colorado",
+    "lat": 40.016667,
+    "lon": -105.266667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpenter,_Scott",
+  "source_notes": "Contemporary American Horoscopes\\n",
+  "categories": [
+    "Lifestyle : Social Life : Outdoors",
+    "Vocation : Military : Military career",
+    "Vocation : Travel : Astronaut",
+    "Vocation : Travel : Explorer",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Famous : Historic figure",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 25.869905,
+    "lagna": 25.869905,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.814218,
+    "jd_ut": 2424272.072917,
+    "planets": {
+      "Sun": {
+        "longitude": 17.848661,
+        "sign_index": 0,
+        "degree_in_sign": 17.848661,
+        "is_retrograde": false,
+        "speed": 0.969972
+      },
+      "Moon": {
+        "longitude": 112.858816,
+        "sign_index": 3,
+        "degree_in_sign": 22.858816,
+        "is_retrograde": false,
+        "speed": 16.031521
+      },
+      "Mars": {
+        "longitude": 61.863585,
+        "sign_index": 2,
+        "degree_in_sign": 1.863585,
+        "is_retrograde": false,
+        "speed": 0.636877
+      },
+      "Mercury": {
+        "longitude": 359.217876,
+        "sign_index": 11,
+        "degree_in_sign": 29.217876,
+        "is_retrograde": true,
+        "speed": -0.048581
+      },
+      "Jupiter": {
+        "longitude": 269.580421,
+        "sign_index": 8,
+        "degree_in_sign": 29.580421,
+        "is_retrograde": false,
+        "speed": 0.028233
+      },
+      "Venus": {
+        "longitude": 19.82381,
+        "sign_index": 0,
+        "degree_in_sign": 19.82381,
+        "is_retrograde": false,
+        "speed": 1.233609
+      },
+      "Saturn": {
+        "longitude": 198.226861,
+        "sign_index": 6,
+        "degree_in_sign": 18.226861,
+        "is_retrograde": true,
+        "speed": -0.075684
+      },
+      "Rahu": {
+        "longitude": 106.435684,
+        "sign_index": 3,
+        "degree_in_sign": 16.435684,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 286.435684,
+        "sign_index": 9,
+        "degree_in_sign": 16.435684,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

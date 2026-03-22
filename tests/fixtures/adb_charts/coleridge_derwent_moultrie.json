@@ -1,0 +1,108 @@
+{
+  "adb_id": 78767,
+  "name": "Coleridge, Derwent Moultrie",
+  "given_name": "Derwent Moultrie Coleridge",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2389013.361852,
+    "year": 1828,
+    "month": 10,
+    "day": 17,
+    "calendar": "g",
+    "time": "20:20",
+    "time_type": "l",
+    "hour": 20.333333,
+    "time_unknown": false,
+    "place": "Helston",
+    "country": "England",
+    "lat": 50.083333,
+    "lon": -5.266667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coleridge,_Derwent_Moultrie",
+  "source_notes": "Sy Scholfield cites mother's record quoted in \"The Collected Works of Samuel Taylor Coleridge: Abbt to Byfield, Volume 1\" (Routledge, 1980), p. 413: \"p -2, in Mrs Derwent Coleridge's hand October 17th (friday) 1828. Derwent Moultrie Coleridge son of Derwent & Mary Coleridge was born 20 minutes past 8 in the evening at Helston.\"\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 19.387438,
+    "lagna": 49.387438,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.466488,
+    "jd_ut": 2389013.361852,
+    "planets": {
+      "Sun": {
+        "longitude": 182.992463,
+        "sign_index": 6,
+        "degree_in_sign": 2.992463,
+        "is_retrograde": false,
+        "speed": 0.994215
+      },
+      "Moon": {
+        "longitude": 293.626334,
+        "sign_index": 9,
+        "degree_in_sign": 23.626334,
+        "is_retrograde": false,
+        "speed": 10.745227
+      },
+      "Mars": {
+        "longitude": 279.807715,
+        "sign_index": 9,
+        "degree_in_sign": 9.807715,
+        "is_retrograde": false,
+        "speed": 0.615695
+      },
+      "Mercury": {
+        "longitude": 206.510335,
+        "sign_index": 6,
+        "degree_in_sign": 26.510335,
+        "is_retrograde": false,
+        "speed": 1.184363
+      },
+      "Jupiter": {
+        "longitude": 206.906511,
+        "sign_index": 6,
+        "degree_in_sign": 26.906511,
+        "is_retrograde": false,
+        "speed": 0.21104
+      },
+      "Venus": {
+        "longitude": 137.033704,
+        "sign_index": 4,
+        "degree_in_sign": 17.033704,
+        "is_retrograde": false,
+        "speed": 1.053247
+      },
+      "Saturn": {
+        "longitude": 102.092962,
+        "sign_index": 3,
+        "degree_in_sign": 12.092962,
+        "is_retrograde": false,
+        "speed": 0.051616
+      },
+      "Rahu": {
+        "longitude": 174.869877,
+        "sign_index": 5,
+        "degree_in_sign": 24.869877,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 354.869877,
+        "sign_index": 11,
+        "degree_in_sign": 24.869877,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

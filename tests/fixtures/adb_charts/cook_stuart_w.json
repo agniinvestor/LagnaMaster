@@ -1,0 +1,111 @@
+{
+  "adb_id": 86414,
+  "name": "Cook, Stuart W.",
+  "given_name": "Stuart W. Cook",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419875.041667,
+    "year": 1913,
+    "month": 4,
+    "day": 17,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Richmond",
+    "country": "Virginia",
+    "lat": 37.55,
+    "lon": -77.466667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cook,_Stuart_W.",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Healing Fields : Psychologist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 27.13971,
+    "lagna": 27.13971,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.646115,
+    "jd_ut": 2419875.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 4.261749,
+        "sign_index": 0,
+        "degree_in_sign": 4.261749,
+        "is_retrograde": false,
+        "speed": 0.976897
+      },
+      "Moon": {
+        "longitude": 138.374792,
+        "sign_index": 4,
+        "degree_in_sign": 18.374792,
+        "is_retrograde": false,
+        "speed": 18.867805
+      },
+      "Mars": {
+        "longitude": 321.513924,
+        "sign_index": 10,
+        "degree_in_sign": 21.513924,
+        "is_retrograde": false,
+        "speed": 0.77241
+      },
+      "Mercury": {
+        "longitude": 338.753402,
+        "sign_index": 11,
+        "degree_in_sign": 8.753402,
+        "is_retrograde": false,
+        "speed": 0.533308
+      },
+      "Jupiter": {
+        "longitude": 264.673241,
+        "sign_index": 8,
+        "degree_in_sign": 24.673241,
+        "is_retrograde": false,
+        "speed": 0.056245
+      },
+      "Venus": {
+        "longitude": 16.093858,
+        "sign_index": 0,
+        "degree_in_sign": 16.093858,
+        "is_retrograde": true,
+        "speed": -0.522943
+      },
+      "Saturn": {
+        "longitude": 39.646013,
+        "sign_index": 1,
+        "degree_in_sign": 9.646013,
+        "is_retrograde": false,
+        "speed": 0.114085
+      },
+      "Rahu": {
+        "longitude": 339.44356,
+        "sign_index": 11,
+        "degree_in_sign": 9.44356,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 159.44356,
+        "sign_index": 5,
+        "degree_in_sign": 9.44356,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

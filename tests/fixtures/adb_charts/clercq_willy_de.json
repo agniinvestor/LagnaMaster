@@ -1,0 +1,110 @@
+{
+  "adb_id": 53387,
+  "name": "Clercq, Willy de",
+  "given_name": "Willy de Clercq",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425069.75,
+    "year": 1927,
+    "month": 7,
+    "day": 8,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "d",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Ghent",
+    "country": "Belgium",
+    "lat": 51.05,
+    "lon": 3.716667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clercq,_Willy_de",
+  "source_notes": "Ed Steinbrecher collection: Lescaut quotes \"demain\" 2 for birth record\\n",
+  "categories": [
+    "Vocation : Business : Economist",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 24.167097,
+    "lagna": 84.167097,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.844715,
+    "jd_ut": 2425069.75,
+    "planets": {
+      "Sun": {
+        "longitude": 82.246025,
+        "sign_index": 2,
+        "degree_in_sign": 22.246025,
+        "is_retrograde": false,
+        "speed": 0.953251
+      },
+      "Moon": {
+        "longitude": 185.66377,
+        "sign_index": 6,
+        "degree_in_sign": 5.66377,
+        "is_retrograde": false,
+        "speed": 15.058566
+      },
+      "Mars": {
+        "longitude": 116.571678,
+        "sign_index": 3,
+        "degree_in_sign": 26.571678,
+        "is_retrograde": false,
+        "speed": 0.61687
+      },
+      "Mercury": {
+        "longitude": 99.255128,
+        "sign_index": 3,
+        "degree_in_sign": 9.255128,
+        "is_retrograde": true,
+        "speed": -0.14052
+      },
+      "Jupiter": {
+        "longitude": 340.250978,
+        "sign_index": 11,
+        "degree_in_sign": 10.250978,
+        "is_retrograde": false,
+        "speed": 0.052016
+      },
+      "Venus": {
+        "longitude": 127.582428,
+        "sign_index": 4,
+        "degree_in_sign": 7.582428,
+        "is_retrograde": false,
+        "speed": 0.912128
+      },
+      "Saturn": {
+        "longitude": 218.820676,
+        "sign_index": 7,
+        "degree_in_sign": 8.820676,
+        "is_retrograde": true,
+        "speed": -0.04332
+      },
+      "Rahu": {
+        "longitude": 64.165115,
+        "sign_index": 2,
+        "degree_in_sign": 4.165115,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 244.165115,
+        "sign_index": 8,
+        "degree_in_sign": 4.165115,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

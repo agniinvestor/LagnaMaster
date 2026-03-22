@@ -1,0 +1,109 @@
+{
+  "adb_id": 63276,
+  "name": "Coco (cartoonist)",
+  "given_name": "Coco (cartoonist)",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445203.149306,
+    "year": 1982,
+    "month": 8,
+    "day": 21,
+    "calendar": "g",
+    "time": "17:35",
+    "time_type": "d",
+    "hour": 17.583333,
+    "time_unknown": false,
+    "place": "Annemasse",
+    "country": "France",
+    "lat": 46.2,
+    "lon": 6.25
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coco_(cartoonist)",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 15.327171,
+    "lagna": 225.327171,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.614559,
+    "jd_ut": 2445203.149306,
+    "planets": {
+      "Sun": {
+        "longitude": 124.636216,
+        "sign_index": 4,
+        "degree_in_sign": 4.636216,
+        "is_retrograde": false,
+        "speed": 0.963426
+      },
+      "Moon": {
+        "longitude": 158.230223,
+        "sign_index": 5,
+        "degree_in_sign": 8.230223,
+        "is_retrograde": false,
+        "speed": 10.405793
+      },
+      "Mars": {
+        "longitude": 197.202435,
+        "sign_index": 6,
+        "degree_in_sign": 17.202435,
+        "is_retrograde": false,
+        "speed": 0.619817
+      },
+      "Mercury": {
+        "longitude": 147.507636,
+        "sign_index": 4,
+        "degree_in_sign": 27.507636,
+        "is_retrograde": false,
+        "speed": 1.453623
+      },
+      "Jupiter": {
+        "longitude": 190.972259,
+        "sign_index": 6,
+        "degree_in_sign": 10.972259,
+        "is_retrograde": false,
+        "speed": 0.14077
+      },
+      "Venus": {
+        "longitude": 105.171104,
+        "sign_index": 3,
+        "degree_in_sign": 15.171104,
+        "is_retrograde": false,
+        "speed": 1.224596
+      },
+      "Saturn": {
+        "longitude": 175.064031,
+        "sign_index": 5,
+        "degree_in_sign": 25.064031,
+        "is_retrograde": false,
+        "speed": 0.091525
+      },
+      "Rahu": {
+        "longitude": 77.254906,
+        "sign_index": 2,
+        "degree_in_sign": 17.254906,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 257.254906,
+        "sign_index": 8,
+        "degree_in_sign": 17.254906,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

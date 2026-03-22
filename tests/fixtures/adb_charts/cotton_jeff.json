@@ -1,0 +1,111 @@
+{
+  "adb_id": 102022,
+  "name": "Cotton, Jeff",
+  "given_name": "Jeff Cotton",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2450556.505556,
+    "year": 1997,
+    "month": 4,
+    "day": 17,
+    "calendar": "g",
+    "time": "17:08",
+    "time_type": "s",
+    "hour": 17.133333,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cotton,_Jeff",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Tucson Citizen'', 27 May 1997, page C3: born at University Medical Center. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Football",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.540989,
+    "lagna": 138.540989,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.819288,
+    "jd_ut": 2450556.505556,
+    "planets": {
+      "Sun": {
+        "longitude": 4.190834,
+        "sign_index": 0,
+        "degree_in_sign": 4.190834,
+        "is_retrograde": false,
+        "speed": 0.977175
+      },
+      "Moon": {
+        "longitude": 130.939801,
+        "sign_index": 4,
+        "degree_in_sign": 10.939801,
+        "is_retrograde": false,
+        "speed": 9.339374
+      },
+      "Mars": {
+        "longitude": 143.530309,
+        "sign_index": 4,
+        "degree_in_sign": 23.530309,
+        "is_retrograde": true,
+        "speed": -0.126148
+      },
+      "Mercury": {
+        "longitude": 15.389863,
+        "sign_index": 0,
+        "degree_in_sign": 15.389863,
+        "is_retrograde": true,
+        "speed": -0.289584
+      },
+      "Jupiter": {
+        "longitude": 293.967638,
+        "sign_index": 9,
+        "degree_in_sign": 23.967638,
+        "is_retrograde": false,
+        "speed": 0.14642
+      },
+      "Venus": {
+        "longitude": 8.161541,
+        "sign_index": 0,
+        "degree_in_sign": 8.161541,
+        "is_retrograde": false,
+        "speed": 1.236653
+      },
+      "Saturn": {
+        "longitude": 348.679969,
+        "sign_index": 11,
+        "degree_in_sign": 18.679969,
+        "is_retrograde": false,
+        "speed": 0.122439
+      },
+      "Rahu": {
+        "longitude": 153.569734,
+        "sign_index": 5,
+        "degree_in_sign": 3.569734,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 333.569734,
+        "sign_index": 11,
+        "degree_in_sign": 3.569734,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

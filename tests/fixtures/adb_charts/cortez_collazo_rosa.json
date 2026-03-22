@@ -1,0 +1,108 @@
+{
+  "adb_id": 74364,
+  "name": "Cortez Collazo, Rosa",
+  "given_name": "Rosa Cortez Collazo",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416718.916667,
+    "year": 1904,
+    "month": 8,
+    "day": 26,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Ponce",
+    "country": "Puerto Rico",
+    "lat": 18.016667,
+    "lon": -66.616667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortez_Collazo,_Rosa",
+  "source_notes": "Castellanos quotes BC\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ social"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 14.300045,
+    "lagna": 104.300045,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.525458,
+    "jd_ut": 2416718.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 130.183735,
+        "sign_index": 4,
+        "degree_in_sign": 10.183735,
+        "is_retrograde": false,
+        "speed": 0.965134
+      },
+      "Moon": {
+        "longitude": 313.345581,
+        "sign_index": 10,
+        "degree_in_sign": 13.345581,
+        "is_retrograde": false,
+        "speed": 11.275142
+      },
+      "Mars": {
+        "longitude": 104.715881,
+        "sign_index": 3,
+        "degree_in_sign": 14.715881,
+        "is_retrograde": false,
+        "speed": 0.638947
+      },
+      "Mercury": {
+        "longitude": 156.432931,
+        "sign_index": 5,
+        "degree_in_sign": 6.432931,
+        "is_retrograde": false,
+        "speed": 0.606756
+      },
+      "Jupiter": {
+        "longitude": 7.625326,
+        "sign_index": 0,
+        "degree_in_sign": 7.625326,
+        "is_retrograde": true,
+        "speed": -0.020554
+      },
+      "Venus": {
+        "longitude": 143.690323,
+        "sign_index": 4,
+        "degree_in_sign": 23.690323,
+        "is_retrograde": false,
+        "speed": 1.23504
+      },
+      "Saturn": {
+        "longitude": 293.984238,
+        "sign_index": 9,
+        "degree_in_sign": 23.984238,
+        "is_retrograde": true,
+        "speed": -0.070214
+      },
+      "Rahu": {
+        "longitude": 146.693255,
+        "sign_index": 4,
+        "degree_in_sign": 26.693255,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 326.693255,
+        "sign_index": 10,
+        "degree_in_sign": 26.693255,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

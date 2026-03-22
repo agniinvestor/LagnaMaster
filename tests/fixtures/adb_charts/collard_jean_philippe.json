@@ -1,0 +1,108 @@
+{
+  "adb_id": 64431,
+  "name": "Collard, Jean-Philippe",
+  "given_name": "Jean-Philippe Collard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432577.875,
+    "year": 1948,
+    "month": 1,
+    "day": 27,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Mareuil sur Aÿ",
+    "country": "France",
+    "lat": 49.05,
+    "lon": 4.033333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collard,_Jean-Philippe",
+  "source_notes": "Patrice Petitallot quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 2.036886,
+    "lagna": 302.036886,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.131783,
+    "jd_ut": 2432577.875,
+    "planets": {
+      "Sun": {
+        "longitude": 283.213362,
+        "sign_index": 9,
+        "degree_in_sign": 13.213362,
+        "is_retrograde": false,
+        "speed": 1.015956
+      },
+      "Moon": {
+        "longitude": 118.367386,
+        "sign_index": 3,
+        "degree_in_sign": 28.367386,
+        "is_retrograde": false,
+        "speed": 17.61941
+      },
+      "Mars": {
+        "longitude": 132.15115,
+        "sign_index": 4,
+        "degree_in_sign": 12.15115,
+        "is_retrograde": true,
+        "speed": -0.246261
+      },
+      "Mercury": {
+        "longitude": 298.594922,
+        "sign_index": 9,
+        "degree_in_sign": 28.594922,
+        "is_retrograde": false,
+        "speed": 1.596244
+      },
+      "Jupiter": {
+        "longitude": 237.366168,
+        "sign_index": 7,
+        "degree_in_sign": 27.366168,
+        "is_retrograde": false,
+        "speed": 0.188311
+      },
+      "Venus": {
+        "longitude": 318.226546,
+        "sign_index": 10,
+        "degree_in_sign": 18.226546,
+        "is_retrograde": false,
+        "speed": 1.21865
+      },
+      "Saturn": {
+        "longitude": 117.136872,
+        "sign_index": 3,
+        "degree_in_sign": 27.136872,
+        "is_retrograde": true,
+        "speed": -0.077735
+      },
+      "Rahu": {
+        "longitude": 26.294018,
+        "sign_index": 0,
+        "degree_in_sign": 26.294018,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 206.294018,
+        "sign_index": 6,
+        "degree_in_sign": 26.294018,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 65016,
+  "name": "Claverie, Jean-Michel",
+  "given_name": "Jean-Michel Claverie",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433407.65625,
+    "year": 1950,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "04:45",
+    "time_type": "s",
+    "hour": 4.75,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claverie,_Jean-Michel",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 175.\\n",
+  "categories": [
+    "Vocation : Education : Researcher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 8.913557,
+    "lagna": 338.913557,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.163511,
+    "jd_ut": 2433407.65625,
+    "planets": {
+      "Sun": {
+        "longitude": 21.891222,
+        "sign_index": 0,
+        "degree_in_sign": 21.891222,
+        "is_retrograde": false,
+        "speed": 0.967916
+      },
+      "Moon": {
+        "longitude": 256.719945,
+        "sign_index": 8,
+        "degree_in_sign": 16.719945,
+        "is_retrograde": false,
+        "speed": 10.186182
+      },
+      "Mars": {
+        "longitude": 148.88151,
+        "sign_index": 4,
+        "degree_in_sign": 28.88151,
+        "is_retrograde": false,
+        "speed": 0.030588
+      },
+      "Mercury": {
+        "longitude": 34.098822,
+        "sign_index": 1,
+        "degree_in_sign": 4.098822,
+        "is_retrograde": true,
+        "speed": -0.205499
+      },
+      "Jupiter": {
+        "longitude": 310.275703,
+        "sign_index": 10,
+        "degree_in_sign": 10.275703,
+        "is_retrograde": false,
+        "speed": 0.144987
+      },
+      "Venus": {
+        "longitude": 337.219835,
+        "sign_index": 11,
+        "degree_in_sign": 7.219835,
+        "is_retrograde": false,
+        "speed": 1.08966
+      },
+      "Saturn": {
+        "longitude": 139.490902,
+        "sign_index": 4,
+        "degree_in_sign": 19.490902,
+        "is_retrograde": true,
+        "speed": -0.01602
+      },
+      "Rahu": {
+        "longitude": 342.3222,
+        "sign_index": 11,
+        "degree_in_sign": 12.3222,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 162.3222,
+        "sign_index": 5,
+        "degree_in_sign": 12.3222,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

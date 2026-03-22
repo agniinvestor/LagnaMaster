@@ -1,0 +1,108 @@
+{
+  "adb_id": 70205,
+  "name": "Cheminaud, Christophe",
+  "given_name": "Christophe Cheminaud",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441877.840278,
+    "year": 1973,
+    "month": 7,
+    "day": 14,
+    "calendar": "g",
+    "time": "09:10",
+    "time_type": "s",
+    "hour": 9.166667,
+    "time_unknown": false,
+    "place": "Libourne",
+    "country": "France",
+    "lat": 44.916667,
+    "lon": -0.233333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cheminaud,_Christophe",
+  "source_notes": "Didier Geslain archive, 'hippisme jockeys' pdf file, p. 48.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 15.96474,
+    "lagna": 105.96474,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.487396,
+    "jd_ut": 2441877.840278,
+    "planets": {
+      "Sun": {
+        "longitude": 88.249094,
+        "sign_index": 2,
+        "degree_in_sign": 28.249094,
+        "is_retrograde": false,
+        "speed": 0.953391
+      },
+      "Moon": {
+        "longitude": 255.103777,
+        "sign_index": 8,
+        "degree_in_sign": 15.103777,
+        "is_retrograde": false,
+        "speed": 14.598254
+      },
+      "Mars": {
+        "longitude": 351.227696,
+        "sign_index": 11,
+        "degree_in_sign": 21.227696,
+        "is_retrograde": false,
+        "speed": 0.591252
+      },
+      "Mercury": {
+        "longitude": 97.676156,
+        "sign_index": 3,
+        "degree_in_sign": 7.676156,
+        "is_retrograde": true,
+        "speed": -0.538611
+      },
+      "Jupiter": {
+        "longitude": 285.746779,
+        "sign_index": 9,
+        "degree_in_sign": 15.746779,
+        "is_retrograde": true,
+        "speed": -0.117497
+      },
+      "Venus": {
+        "longitude": 113.489233,
+        "sign_index": 3,
+        "degree_in_sign": 23.489233,
+        "is_retrograde": false,
+        "speed": 1.212922
+      },
+      "Saturn": {
+        "longitude": 64.326371,
+        "sign_index": 2,
+        "degree_in_sign": 4.326371,
+        "is_retrograde": false,
+        "speed": 0.122924
+      },
+      "Rahu": {
+        "longitude": 253.469794,
+        "sign_index": 8,
+        "degree_in_sign": 13.469794,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 73.469794,
+        "sign_index": 2,
+        "degree_in_sign": 13.469794,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

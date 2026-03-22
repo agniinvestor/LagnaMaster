@@ -1,0 +1,110 @@
+{
+  "adb_id": 50756,
+  "name": "Castelot, André",
+  "given_name": "André Castelot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419059.791667,
+    "year": 1911,
+    "month": 1,
+    "day": 23,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Antwerp",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 4.416667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castelot,_André",
+  "source_notes": "Steinbrecher collection: Gauquelin ns 3/0271\\n",
+  "categories": [
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Other Writers",
+    "Vocation : Misc. : Other Vocation Misc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 3.74908,
+    "lagna": 243.74908,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.614948,
+    "jd_ut": 2419059.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 279.555981,
+        "sign_index": 9,
+        "degree_in_sign": 9.555981,
+        "is_retrograde": false,
+        "speed": 1.017154
+      },
+      "Moon": {
+        "longitude": 200.892939,
+        "sign_index": 6,
+        "degree_in_sign": 20.892939,
+        "is_retrograde": false,
+        "speed": 8.464264
+      },
+      "Mars": {
+        "longitude": 241.214552,
+        "sign_index": 8,
+        "degree_in_sign": 1.214552,
+        "is_retrograde": false,
+        "speed": 0.71506
+      },
+      "Mercury": {
+        "longitude": 257.774151,
+        "sign_index": 8,
+        "degree_in_sign": 17.774151,
+        "is_retrograde": false,
+        "speed": 0.214903
+      },
+      "Jupiter": {
+        "longitude": 199.868203,
+        "sign_index": 6,
+        "degree_in_sign": 19.868203,
+        "is_retrograde": false,
+        "speed": 0.10741
+      },
+      "Venus": {
+        "longitude": 293.35584,
+        "sign_index": 9,
+        "degree_in_sign": 23.35584,
+        "is_retrograde": false,
+        "speed": 1.253043
+      },
+      "Saturn": {
+        "longitude": 7.492812,
+        "sign_index": 0,
+        "degree_in_sign": 7.492812,
+        "is_retrograde": false,
+        "speed": 0.038605
+      },
+      "Rahu": {
+        "longitude": 22.645368,
+        "sign_index": 0,
+        "degree_in_sign": 22.645368,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 202.645368,
+        "sign_index": 6,
+        "degree_in_sign": 22.645368,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

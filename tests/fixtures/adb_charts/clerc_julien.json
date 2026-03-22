@@ -1,0 +1,108 @@
+{
+  "adb_id": 52743,
+  "name": "Clerc, Julien",
+  "given_name": "Julien Clerc",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432463.201389,
+    "year": 1947,
+    "month": 10,
+    "day": 4,
+    "calendar": "g",
+    "time": "17:50",
+    "time_type": "s",
+    "hour": 17.833333,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clerc,_Julien",
+  "source_notes": "Didier Geslain archive, 'chanteurs' pdf file, p. 52.\\nSteinbrecher collection: Taeger quotes Lescaut for birth record.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 8.054298,
+    "lagna": 308.054298,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.127398,
+    "jd_ut": 2432463.201389,
+    "planets": {
+      "Sun": {
+        "longitude": 167.487356,
+        "sign_index": 5,
+        "degree_in_sign": 17.487356,
+        "is_retrograde": false,
+        "speed": 0.984979
+      },
+      "Moon": {
+        "longitude": 42.168732,
+        "sign_index": 1,
+        "degree_in_sign": 12.168732,
+        "is_retrograde": false,
+        "speed": 17.37175
+      },
+      "Mars": {
+        "longitude": 98.949055,
+        "sign_index": 3,
+        "degree_in_sign": 8.949055,
+        "is_retrograde": false,
+        "speed": 0.572325
+      },
+      "Mercury": {
+        "longitude": 190.886733,
+        "sign_index": 6,
+        "degree_in_sign": 10.886733,
+        "is_retrograde": false,
+        "speed": 1.277876
+      },
+      "Jupiter": {
+        "longitude": 213.05066,
+        "sign_index": 7,
+        "degree_in_sign": 3.05066,
+        "is_retrograde": false,
+        "speed": 0.185392
+      },
+      "Venus": {
+        "longitude": 175.811066,
+        "sign_index": 5,
+        "degree_in_sign": 25.811066,
+        "is_retrograde": false,
+        "speed": 1.246401
+      },
+      "Saturn": {
+        "longitude": 116.377655,
+        "sign_index": 3,
+        "degree_in_sign": 26.377655,
+        "is_retrograde": false,
+        "speed": 0.096128
+      },
+      "Rahu": {
+        "longitude": 32.37081,
+        "sign_index": 1,
+        "degree_in_sign": 2.37081,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 212.37081,
+        "sign_index": 7,
+        "degree_in_sign": 2.37081,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

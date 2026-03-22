@@ -1,0 +1,108 @@
+{
+  "adb_id": 14558,
+  "name": "C-Section 14558",
+  "given_name": "C-Section 14558",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441508.85,
+    "year": 1972,
+    "month": 7,
+    "day": 10,
+    "calendar": "g",
+    "time": "01:24",
+    "time_type": "d",
+    "hour": 1.4,
+    "time_unknown": false,
+    "place": "Encino",
+    "country": "California",
+    "lat": 34.166667,
+    "lon": -118.5
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "can",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:C-Section_14558",
+  "source_notes": "Mollie Sommer, quotes B.C., her son\\n",
+  "categories": [
+    "Personal : Birth : Cesarean"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 21.185656,
+    "lagna": 351.185656,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.473286,
+    "jd_ut": 2441508.85,
+    "planets": {
+      "Sun": {
+        "longitude": 84.68902,
+        "sign_index": 2,
+        "degree_in_sign": 24.68902,
+        "is_retrograde": false,
+        "speed": 0.953831
+      },
+      "Moon": {
+        "longitude": 78.716361,
+        "sign_index": 2,
+        "degree_in_sign": 18.716361,
+        "is_retrograde": false,
+        "speed": 19.111367
+      },
+      "Mars": {
+        "longitude": 103.915483,
+        "sign_index": 3,
+        "degree_in_sign": 13.915483,
+        "is_retrograde": false,
+        "speed": 0.633001
+      },
+      "Mercury": {
+        "longitude": 111.072234,
+        "sign_index": 3,
+        "degree_in_sign": 21.072234,
+        "is_retrograde": false,
+        "speed": 0.983424
+      },
+      "Jupiter": {
+        "longitude": 248.038834,
+        "sign_index": 8,
+        "degree_in_sign": 8.038834,
+        "is_retrograde": true,
+        "speed": -0.11795
+      },
+      "Venus": {
+        "longitude": 54.767091,
+        "sign_index": 1,
+        "degree_in_sign": 24.767091,
+        "is_retrograde": false,
+        "speed": 0.043588
+      },
+      "Saturn": {
+        "longitude": 51.494577,
+        "sign_index": 1,
+        "degree_in_sign": 21.494577,
+        "is_retrograde": false,
+        "speed": 0.116092
+      },
+      "Rahu": {
+        "longitude": 273.023341,
+        "sign_index": 9,
+        "degree_in_sign": 3.023341,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 93.023341,
+        "sign_index": 3,
+        "degree_in_sign": 3.023341,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

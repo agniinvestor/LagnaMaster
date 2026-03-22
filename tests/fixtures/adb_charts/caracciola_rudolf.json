@@ -1,0 +1,108 @@
+{
+  "adb_id": 55325,
+  "name": "Caracciola, Rudolf",
+  "given_name": "Rudolf Caracciola",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2415414.604167,
+    "year": 1901,
+    "month": 1,
+    "day": 30,
+    "calendar": "g",
+    "time": "03:30",
+    "time_type": "s",
+    "hour": 3.5,
+    "time_unknown": false,
+    "place": "Remagen",
+    "country": "Germany",
+    "lat": 50.566667,
+    "lon": 7.216667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caracciola,_Rudolf",
+  "source_notes": "Manfred Gregor quotes online German-language biography: http://einestages.spiegel.de/static/topicalbumbackground/5045/milchbubi_im_geschwindigkeitsrausch.html\\n",
+  "categories": [
+    "Vocation : Sports : Race Cars"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 14.329578,
+    "lagna": 194.329578,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.475596,
+    "jd_ut": 2415414.604167,
+    "planets": {
+      "Sun": {
+        "longitude": 287.061322,
+        "sign_index": 9,
+        "degree_in_sign": 17.061322,
+        "is_retrograde": false,
+        "speed": 1.015136
+      },
+      "Moon": {
+        "longitude": 50.865004,
+        "sign_index": 1,
+        "degree_in_sign": 20.865004,
+        "is_retrograde": false,
+        "speed": 14.249107
+      },
+      "Mars": {
+        "longitude": 138.208643,
+        "sign_index": 4,
+        "degree_in_sign": 18.208643,
+        "is_retrograde": true,
+        "speed": -0.220847
+      },
+      "Mercury": {
+        "longitude": 292.730388,
+        "sign_index": 9,
+        "degree_in_sign": 22.730388,
+        "is_retrograde": false,
+        "speed": 1.761211
+      },
+      "Jupiter": {
+        "longitude": 249.770206,
+        "sign_index": 8,
+        "degree_in_sign": 9.770206,
+        "is_retrograde": false,
+        "speed": 0.203988
+      },
+      "Venus": {
+        "longitude": 264.501606,
+        "sign_index": 8,
+        "degree_in_sign": 24.501606,
+        "is_retrograde": false,
+        "speed": 1.246536
+      },
+      "Saturn": {
+        "longitude": 258.560274,
+        "sign_index": 8,
+        "degree_in_sign": 18.560274,
+        "is_retrograde": false,
+        "speed": 0.108524
+      },
+      "Rahu": {
+        "longitude": 215.811523,
+        "sign_index": 7,
+        "degree_in_sign": 5.811523,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 35.811523,
+        "sign_index": 1,
+        "degree_in_sign": 5.811523,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 58168,
+  "name": "Clay, James",
+  "given_name": "James Clay",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428053.927083,
+    "year": 1935,
+    "month": 9,
+    "day": 8,
+    "calendar": "g",
+    "time": "04:15",
+    "time_type": "s",
+    "hour": 4.25,
+    "time_unknown": false,
+    "place": "Dallas",
+    "country": "Texas",
+    "lat": 32.783333,
+    "lon": -96.8
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clay,_James",
+  "source_notes": "Sy Scholfield from BC in hand.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 4.827683,
+    "lagna": 94.827683,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.95881,
+    "jd_ut": 2428053.927083,
+    "planets": {
+      "Sun": {
+        "longitude": 141.868606,
+        "sign_index": 4,
+        "degree_in_sign": 21.868606,
+        "is_retrograde": false,
+        "speed": 0.970857
+      },
+      "Moon": {
+        "longitude": 260.046667,
+        "sign_index": 8,
+        "degree_in_sign": 20.046667,
+        "is_retrograde": false,
+        "speed": 16.451718
+      },
+      "Mars": {
+        "longitude": 211.636574,
+        "sign_index": 7,
+        "degree_in_sign": 1.636574,
+        "is_retrograde": false,
+        "speed": 0.657117
+      },
+      "Mercury": {
+        "longitude": 164.411078,
+        "sign_index": 5,
+        "degree_in_sign": 14.411078,
+        "is_retrograde": false,
+        "speed": 1.411956
+      },
+      "Jupiter": {
+        "longitude": 205.205123,
+        "sign_index": 6,
+        "degree_in_sign": 25.205123,
+        "is_retrograde": false,
+        "speed": 0.149581
+      },
+      "Venus": {
+        "longitude": 141.772877,
+        "sign_index": 4,
+        "degree_in_sign": 21.772877,
+        "is_retrograde": true,
+        "speed": -0.620017
+      },
+      "Saturn": {
+        "longitude": 313.247396,
+        "sign_index": 10,
+        "degree_in_sign": 13.247396,
+        "is_retrograde": true,
+        "speed": -0.074771
+      },
+      "Rahu": {
+        "longitude": 266.027373,
+        "sign_index": 8,
+        "degree_in_sign": 26.027373,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 86.027373,
+        "sign_index": 2,
+        "degree_in_sign": 26.027373,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

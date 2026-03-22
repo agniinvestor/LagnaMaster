@@ -1,0 +1,109 @@
+{
+  "adb_id": 65087,
+  "name": "Courteau, Loïc",
+  "given_name": "Loïc Courteau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438400.732639,
+    "year": 1964,
+    "month": 1,
+    "day": 6,
+    "calendar": "g",
+    "time": "06:35",
+    "time_type": "s",
+    "hour": 6.583333,
+    "time_unknown": false,
+    "place": "Caudéran",
+    "country": "France",
+    "lat": 44.85,
+    "lon": -0.616667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courteau,_Loïc",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 260.\\n",
+  "categories": [
+    "Vocation : Sports : Tennis",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 28.129415,
+    "lagna": 208.129415,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.354433,
+    "jd_ut": 2438400.732639,
+    "planets": {
+      "Sun": {
+        "longitude": 261.574112,
+        "sign_index": 8,
+        "degree_in_sign": 21.574112,
+        "is_retrograde": false,
+        "speed": 1.019172
+      },
+      "Moon": {
+        "longitude": 167.001945,
+        "sign_index": 5,
+        "degree_in_sign": 17.001945,
+        "is_retrograde": false,
+        "speed": 8.603737
+      },
+      "Mars": {
+        "longitude": 271.159156,
+        "sign_index": 9,
+        "degree_in_sign": 1.159156,
+        "is_retrograde": false,
+        "speed": 0.77954
+      },
+      "Mercury": {
+        "longitude": 257.707358,
+        "sign_index": 8,
+        "degree_in_sign": 17.707358,
+        "is_retrograde": true,
+        "speed": -1.311289
+      },
+      "Jupiter": {
+        "longitude": 347.887901,
+        "sign_index": 11,
+        "degree_in_sign": 17.887901,
+        "is_retrograde": false,
+        "speed": 0.103305
+      },
+      "Venus": {
+        "longitude": 293.26838,
+        "sign_index": 9,
+        "degree_in_sign": 23.26838,
+        "is_retrograde": false,
+        "speed": 1.232412
+      },
+      "Saturn": {
+        "longitude": 297.606671,
+        "sign_index": 9,
+        "degree_in_sign": 27.606671,
+        "is_retrograde": false,
+        "speed": 0.105187
+      },
+      "Rahu": {
+        "longitude": 77.728831,
+        "sign_index": 2,
+        "degree_in_sign": 17.728831,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 257.728831,
+        "sign_index": 8,
+        "degree_in_sign": 17.728831,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

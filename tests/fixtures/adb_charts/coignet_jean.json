@@ -1,0 +1,108 @@
+{
+  "adb_id": 55715,
+  "name": "Coignet, Jean",
+  "given_name": "Jean Coignet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424895.375,
+    "year": 1927,
+    "month": 1,
+    "day": 14,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Boën sur Lignon",
+    "country": "France",
+    "lat": 45.733333,
+    "lon": 3.983333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coignet,_Jean",
+  "source_notes": "On 23 February 2015 the time was changed from 8pm to 9pm. Birth certificate in Didier Geslain archive, 'architectes' pdf file, p. 19, clearly states \"vingt et une heures\" (21:00).\\n",
+  "categories": [
+    "Vocation : Building Trades : Architect/ Planner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 0.994765,
+    "lagna": 120.994765,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.838049,
+    "jd_ut": 2424895.375,
+    "planets": {
+      "Sun": {
+        "longitude": 270.88147,
+        "sign_index": 9,
+        "degree_in_sign": 0.88147,
+        "is_retrograde": false,
+        "speed": 1.018267
+      },
+      "Moon": {
+        "longitude": 54.656601,
+        "sign_index": 1,
+        "degree_in_sign": 24.656601,
+        "is_retrograde": false,
+        "speed": 9.162297
+      },
+      "Mars": {
+        "longitude": 19.84875,
+        "sign_index": 0,
+        "degree_in_sign": 19.84875,
+        "is_retrograde": false,
+        "speed": 0.370707
+      },
+      "Mercury": {
+        "longitude": 262.287456,
+        "sign_index": 8,
+        "degree_in_sign": 22.287456,
+        "is_retrograde": false,
+        "speed": 1.581049
+      },
+      "Jupiter": {
+        "longitude": 306.371631,
+        "sign_index": 10,
+        "degree_in_sign": 6.371631,
+        "is_retrograde": false,
+        "speed": 0.218056
+      },
+      "Venus": {
+        "longitude": 283.921755,
+        "sign_index": 9,
+        "degree_in_sign": 13.921755,
+        "is_retrograde": false,
+        "speed": 1.254177
+      },
+      "Saturn": {
+        "longitude": 221.781331,
+        "sign_index": 7,
+        "degree_in_sign": 11.781331,
+        "is_retrograde": false,
+        "speed": 0.090992
+      },
+      "Rahu": {
+        "longitude": 73.405609,
+        "sign_index": 2,
+        "degree_in_sign": 13.405609,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 253.405609,
+        "sign_index": 8,
+        "degree_in_sign": 13.405609,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

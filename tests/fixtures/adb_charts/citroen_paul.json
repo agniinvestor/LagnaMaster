@@ -1,0 +1,112 @@
+{
+  "adb_id": 85696,
+  "name": "Citroen, Paul",
+  "given_name": "Paul Citroen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413909.302083,
+    "year": 1896,
+    "month": 12,
+    "day": 15,
+    "calendar": "g",
+    "time": "20:15",
+    "time_type": "s",
+    "hour": 20.25,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Citroen,_Paul",
+  "source_notes": "Sy Scholfield provided birth registry entry from Berlin City Archives.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Photography",
+    "Vocation : Education : Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 1.563007,
+    "lagna": 91.563007,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.418052,
+    "jd_ut": 2413909.302083,
+    "planets": {
+      "Sun": {
+        "longitude": 241.969489,
+        "sign_index": 8,
+        "degree_in_sign": 1.969489,
+        "is_retrograde": false,
+        "speed": 1.017655
+      },
+      "Moon": {
+        "longitude": 12.974454,
+        "sign_index": 0,
+        "degree_in_sign": 12.974454,
+        "is_retrograde": false,
+        "speed": 8.766475
+      },
+      "Mars": {
+        "longitude": 55.584226,
+        "sign_index": 1,
+        "degree_in_sign": 25.584226,
+        "is_retrograde": true,
+        "speed": -0.371317
+      },
+      "Mercury": {
+        "longitude": 251.43087,
+        "sign_index": 8,
+        "degree_in_sign": 11.43087,
+        "is_retrograde": false,
+        "speed": 1.578154
+      },
+      "Jupiter": {
+        "longitude": 137.652197,
+        "sign_index": 4,
+        "degree_in_sign": 17.652197,
+        "is_retrograde": false,
+        "speed": 0.030872
+      },
+      "Venus": {
+        "longitude": 281.17063,
+        "sign_index": 9,
+        "degree_in_sign": 11.17063,
+        "is_retrograde": false,
+        "speed": 1.205078
+      },
+      "Saturn": {
+        "longitude": 213.065728,
+        "sign_index": 7,
+        "degree_in_sign": 3.065728,
+        "is_retrograde": false,
+        "speed": 0.109452
+      },
+      "Rahu": {
+        "longitude": 295.580657,
+        "sign_index": 9,
+        "degree_in_sign": 25.580657,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 115.580657,
+        "sign_index": 3,
+        "degree_in_sign": 25.580657,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

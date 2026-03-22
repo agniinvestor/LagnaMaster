@@ -1,0 +1,111 @@
+{
+  "adb_id": 2265,
+  "name": "Chardonnet, Hilaire de",
+  "given_name": "Hilaire de Chardonnet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2392860.899907,
+    "year": 1839,
+    "month": 5,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Besançon",
+    "country": "France",
+    "lat": 47.25,
+    "lon": 6.033333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chardonnet,_Hilaire_de",
+  "source_notes": "Gauquelin, Vol. 2/2618.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Science : Chemistry",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 16.668521,
+    "lagna": 76.668521,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.613529,
+    "jd_ut": 2392860.899907,
+    "planets": {
+      "Sun": {
+        "longitude": 18.687649,
+        "sign_index": 0,
+        "degree_in_sign": 18.687649,
+        "is_retrograde": false,
+        "speed": 0.969195
+      },
+      "Moon": {
+        "longitude": 226.796131,
+        "sign_index": 7,
+        "degree_in_sign": 16.796131,
+        "is_retrograde": false,
+        "speed": 13.852875
+      },
+      "Mars": {
+        "longitude": 139.844778,
+        "sign_index": 4,
+        "degree_in_sign": 19.844778,
+        "is_retrograde": false,
+        "speed": 0.102513
+      },
+      "Mercury": {
+        "longitude": 12.990622,
+        "sign_index": 0,
+        "degree_in_sign": 12.990622,
+        "is_retrograde": true,
+        "speed": -0.608981
+      },
+      "Jupiter": {
+        "longitude": 169.010675,
+        "sign_index": 5,
+        "degree_in_sign": 19.010675,
+        "is_retrograde": true,
+        "speed": -0.097996
+      },
+      "Venus": {
+        "longitude": 50.529802,
+        "sign_index": 1,
+        "degree_in_sign": 20.529802,
+        "is_retrograde": false,
+        "speed": 1.197517
+      },
+      "Saturn": {
+        "longitude": 227.358033,
+        "sign_index": 7,
+        "degree_in_sign": 17.358033,
+        "is_retrograde": true,
+        "speed": -0.059974
+      },
+      "Rahu": {
+        "longitude": 330.980485,
+        "sign_index": 11,
+        "degree_in_sign": 0.980485,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 150.980485,
+        "sign_index": 5,
+        "degree_in_sign": 0.980485,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

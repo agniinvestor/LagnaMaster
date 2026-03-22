@@ -1,0 +1,108 @@
+{
+  "adb_id": 60816,
+  "name": "Chevandier de Valdrome, Armand",
+  "given_name": "Armand Chevandier de Valdrome",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402524.410185,
+    "year": 1865,
+    "month": 10,
+    "day": 14,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevandier_de_Valdrome,_Armand",
+  "source_notes": "Sy Scholfield downloaded the birth certificate from Wikimedia Commons: http://commons.wikimedia.org/wiki/File:Chevandier_de_Valdrome.jpg\\n",
+  "categories": [
+    "Vocation : Politics : Diplomat"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 5.493438,
+    "lagna": 65.493438,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.982867,
+    "jd_ut": 2402524.410185,
+    "planets": {
+      "Sun": {
+        "longitude": 179.579246,
+        "sign_index": 5,
+        "degree_in_sign": 29.579246,
+        "is_retrograde": false,
+        "speed": 0.99254
+      },
+      "Moon": {
+        "longitude": 128.016227,
+        "sign_index": 4,
+        "degree_in_sign": 8.016227,
+        "is_retrograde": false,
+        "speed": 15.276181
+      },
+      "Mars": {
+        "longitude": 188.092491,
+        "sign_index": 6,
+        "degree_in_sign": 8.092491,
+        "is_retrograde": false,
+        "speed": 0.679012
+      },
+      "Mercury": {
+        "longitude": 174.872509,
+        "sign_index": 5,
+        "degree_in_sign": 24.872509,
+        "is_retrograde": false,
+        "speed": 1.728417
+      },
+      "Jupiter": {
+        "longitude": 242.298326,
+        "sign_index": 8,
+        "degree_in_sign": 2.298326,
+        "is_retrograde": false,
+        "speed": 0.157976
+      },
+      "Venus": {
+        "longitude": 147.715882,
+        "sign_index": 4,
+        "degree_in_sign": 27.715882,
+        "is_retrograde": false,
+        "speed": 1.219006
+      },
+      "Saturn": {
+        "longitude": 189.767694,
+        "sign_index": 6,
+        "degree_in_sign": 9.767694,
+        "is_retrograde": false,
+        "speed": 0.119628
+      },
+      "Rahu": {
+        "longitude": 178.890269,
+        "sign_index": 5,
+        "degree_in_sign": 28.890269,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 358.890269,
+        "sign_index": 11,
+        "degree_in_sign": 28.890269,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 81026,
+  "name": "Cazeneuve, Paul (1852)",
+  "given_name": "Paul (1852) Cazeneuve",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2397498.278194,
+    "year": 1852,
+    "month": 1,
+    "day": 10,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cazeneuve,_Paul_(1852)",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Pharmacist",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 4.784098,
+    "lagna": 94.784098,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.790764,
+    "jd_ut": 2397498.278194,
+    "planets": {
+      "Sun": {
+        "longitude": 267.969094,
+        "sign_index": 8,
+        "degree_in_sign": 27.969094,
+        "is_retrograde": false,
+        "speed": 1.018642
+      },
+      "Moon": {
+        "longitude": 135.233186,
+        "sign_index": 4,
+        "degree_in_sign": 15.233186,
+        "is_retrograde": false,
+        "speed": 16.409791
+      },
+      "Mars": {
+        "longitude": 107.562665,
+        "sign_index": 3,
+        "degree_in_sign": 17.562665,
+        "is_retrograde": true,
+        "speed": -0.335094
+      },
+      "Mercury": {
+        "longitude": 258.252724,
+        "sign_index": 8,
+        "degree_in_sign": 18.252724,
+        "is_retrograde": true,
+        "speed": -1.035714
+      },
+      "Jupiter": {
+        "longitude": 206.555286,
+        "sign_index": 6,
+        "degree_in_sign": 26.555286,
+        "is_retrograde": false,
+        "speed": 0.153348
+      },
+      "Venus": {
+        "longitude": 292.889333,
+        "sign_index": 9,
+        "degree_in_sign": 22.889333,
+        "is_retrograde": false,
+        "speed": 1.244168
+      },
+      "Saturn": {
+        "longitude": 5.768883,
+        "sign_index": 0,
+        "degree_in_sign": 5.768883,
+        "is_retrograde": false,
+        "speed": 0.020565
+      },
+      "Rahu": {
+        "longitude": 85.235793,
+        "sign_index": 2,
+        "degree_in_sign": 25.235793,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 265.235793,
+        "sign_index": 8,
+        "degree_in_sign": 25.235793,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

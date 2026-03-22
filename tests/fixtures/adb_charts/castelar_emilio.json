@@ -1,0 +1,110 @@
+{
+  "adb_id": 65836,
+  "name": "Castelar, Emilio",
+  "given_name": "Emilio Castelar",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2390434.455,
+    "year": 1832,
+    "month": 9,
+    "day": 7,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "l",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Cádiz",
+    "country": "Spain",
+    "lat": 36.533333,
+    "lon": -6.3
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castelar,_Emilio",
+  "source_notes": "Eduardo Castellanos quotes [http://hemerotecadigital.bne.es/issue.vm?id=0000646528&page=2 official record] \\n\" 11 de Septiembre de 1832 ... nació el día 7 de dicho mes, á las diez y media de la noche\" (September 11, 1832 ... was born on the 7th of this month, in the half past ten p.m.)\\nThis is a verbatim transcription of the birth certificate.\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Politics : Heads of state",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 0.692994,
+    "lagna": 30.692994,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.520797,
+    "jd_ut": 2390434.455,
+    "planets": {
+      "Sun": {
+        "longitude": 143.738839,
+        "sign_index": 4,
+        "degree_in_sign": 23.738839,
+        "is_retrograde": false,
+        "speed": 0.971832
+      },
+      "Moon": {
+        "longitude": 297.889272,
+        "sign_index": 9,
+        "degree_in_sign": 27.889272,
+        "is_retrograde": false,
+        "speed": 7.741514
+      },
+      "Mars": {
+        "longitude": 37.819295,
+        "sign_index": 1,
+        "degree_in_sign": 7.819295,
+        "is_retrograde": false,
+        "speed": 0.405366
+      },
+      "Mercury": {
+        "longitude": 145.989364,
+        "sign_index": 4,
+        "degree_in_sign": 25.989364,
+        "is_retrograde": true,
+        "speed": -1.01206
+      },
+      "Jupiter": {
+        "longitude": 333.273806,
+        "sign_index": 11,
+        "degree_in_sign": 3.273806,
+        "is_retrograde": true,
+        "speed": -0.129815
+      },
+      "Venus": {
+        "longitude": 155.384918,
+        "sign_index": 5,
+        "degree_in_sign": 5.384918,
+        "is_retrograde": false,
+        "speed": 1.23949
+      },
+      "Saturn": {
+        "longitude": 146.437751,
+        "sign_index": 4,
+        "degree_in_sign": 26.437751,
+        "is_retrograde": false,
+        "speed": 0.125136
+      },
+      "Rahu": {
+        "longitude": 99.563063,
+        "sign_index": 3,
+        "degree_in_sign": 9.563063,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 279.563063,
+        "sign_index": 9,
+        "degree_in_sign": 9.563063,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "adb_id": 94595,
+  "name": "Carlson, Norman",
+  "given_name": "Norman Carlson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427295.024306,
+    "year": 1933,
+    "month": 8,
+    "day": 10,
+    "calendar": "g",
+    "time": "06:35",
+    "time_type": "s",
+    "hour": 6.583333,
+    "time_unknown": false,
+    "place": "Sioux City",
+    "country": "Iowa",
+    "lat": 42.5,
+    "lon": -96.4
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlson,_Norman",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Top executive",
+    "Vocation : Education : Teacher",
+    "Vocation : Law : Security guard",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 13.76728,
+    "lagna": 103.76728,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.929794,
+    "jd_ut": 2427295.024306,
+    "planets": {
+      "Sun": {
+        "longitude": 114.47069,
+        "sign_index": 3,
+        "degree_in_sign": 24.47069,
+        "is_retrograde": false,
+        "speed": 0.959209
+      },
+      "Moon": {
+        "longitude": 353.79021,
+        "sign_index": 11,
+        "degree_in_sign": 23.79021,
+        "is_retrograde": false,
+        "speed": 9.486228
+      },
+      "Mars": {
+        "longitude": 177.13794,
+        "sign_index": 5,
+        "degree_in_sign": 27.13794,
+        "is_retrograde": false,
+        "speed": 0.61595
+      },
+      "Mercury": {
+        "longitude": 99.166349,
+        "sign_index": 3,
+        "degree_in_sign": 9.166349,
+        "is_retrograde": false,
+        "speed": 0.081046
+      },
+      "Jupiter": {
+        "longitude": 150.79094,
+        "sign_index": 5,
+        "degree_in_sign": 0.79094,
+        "is_retrograde": false,
+        "speed": 0.192517
+      },
+      "Venus": {
+        "longitude": 143.814291,
+        "sign_index": 4,
+        "degree_in_sign": 23.814291,
+        "is_retrograde": false,
+        "speed": 1.20813
+      },
+      "Saturn": {
+        "longitude": 289.757839,
+        "sign_index": 9,
+        "degree_in_sign": 19.757839,
+        "is_retrograde": true,
+        "speed": -0.074394
+      },
+      "Rahu": {
+        "longitude": 306.243205,
+        "sign_index": 10,
+        "degree_in_sign": 6.243205,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 126.243205,
+        "sign_index": 4,
+        "degree_in_sign": 6.243205,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

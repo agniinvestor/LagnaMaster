@@ -1,0 +1,108 @@
+{
+  "adb_id": 60424,
+  "name": "Correns, Carl W.",
+  "given_name": "Carl W. Correns",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412603.104167,
+    "year": 1893,
+    "month": 5,
+    "day": 19,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "s",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Tübingen",
+    "country": "Germany",
+    "lat": 48.516667,
+    "lon": 9.033333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Correns,_Carl_W.",
+  "source_notes": "Gauquelin vol 2\\n",
+  "categories": [
+    "Vocation : Science : Geology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.509113,
+    "lagna": 145.509113,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.36812,
+    "jd_ut": 2412603.104167,
+    "planets": {
+      "Sun": {
+        "longitude": 36.420229,
+        "sign_index": 1,
+        "degree_in_sign": 6.420229,
+        "is_retrograde": false,
+        "speed": 0.962027
+      },
+      "Moon": {
+        "longitude": 87.868222,
+        "sign_index": 2,
+        "degree_in_sign": 27.868222,
+        "is_retrograde": false,
+        "speed": 10.503226
+      },
+      "Mars": {
+        "longitude": 71.17453,
+        "sign_index": 2,
+        "degree_in_sign": 11.17453,
+        "is_retrograde": false,
+        "speed": 0.640476
+      },
+      "Mercury": {
+        "longitude": 18.523852,
+        "sign_index": 0,
+        "degree_in_sign": 18.523852,
+        "is_retrograde": false,
+        "speed": 1.779399
+      },
+      "Jupiter": {
+        "longitude": 20.67518,
+        "sign_index": 0,
+        "degree_in_sign": 20.67518,
+        "is_retrograde": false,
+        "speed": 0.234129
+      },
+      "Venus": {
+        "longitude": 40.998444,
+        "sign_index": 1,
+        "degree_in_sign": 10.998444,
+        "is_retrograde": false,
+        "speed": 1.230229
+      },
+      "Saturn": {
+        "longitude": 163.963335,
+        "sign_index": 5,
+        "degree_in_sign": 13.963335,
+        "is_retrograde": true,
+        "speed": -0.031977
+      },
+      "Rahu": {
+        "longitude": 4.798843,
+        "sign_index": 0,
+        "degree_in_sign": 4.798843,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 184.798843,
+        "sign_index": 6,
+        "degree_in_sign": 4.798843,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

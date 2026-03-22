@@ -1,0 +1,110 @@
+{
+  "adb_id": 59403,
+  "name": "Charles, Duke of Cambridge",
+  "given_name": "Duke of Cambridge Charles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2333893.406713,
+    "year": 1677,
+    "month": 11,
+    "day": 7,
+    "calendar": "j",
+    "time": "21:45",
+    "time_type": "l",
+    "hour": 21.75,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles,_Duke_of_Cambridge",
+  "source_notes": "Sy Scholfield quotes \"Mrs. Dawson's Diary concerning the births, ages, and deaths of James the IId's children\" in \"Reliquiæ Hearnianæ: the remains of Thomas Hearne, extracts from his MS. diaries, collected with a few notes by P. Bliss, Volume 1\" by Thomas Hearne (Oxford: James Wright, 1857), p. 276: \"Charles, duke of Cambridge, was born Nov. 7th, 1677, a quarter before 10 at night. Dyed Dec. the 12th, 1677.\" Mrs Dawson was the lady of the bedchamber (midwife) to Mary of Modena, in attendance when Mary gave birth to Charles.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Other Major diseases",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 4.820019,
+    "lagna": 94.820019,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.360727,
+    "jd_ut": 2333893.406713,
+    "planets": {
+      "Sun": {
+        "longitude": 216.858036,
+        "sign_index": 7,
+        "degree_in_sign": 6.858036,
+        "is_retrograde": false,
+        "speed": 1.011204
+      },
+      "Moon": {
+        "longitude": 131.464609,
+        "sign_index": 4,
+        "degree_in_sign": 11.464609,
+        "is_retrograde": false,
+        "speed": 13.978332
+      },
+      "Mars": {
+        "longitude": 223.430902,
+        "sign_index": 7,
+        "degree_in_sign": 13.430902,
+        "is_retrograde": false,
+        "speed": 0.726994
+      },
+      "Mercury": {
+        "longitude": 199.094856,
+        "sign_index": 6,
+        "degree_in_sign": 19.094856,
+        "is_retrograde": false,
+        "speed": 0.210803
+      },
+      "Jupiter": {
+        "longitude": 300.359234,
+        "sign_index": 10,
+        "degree_in_sign": 0.359234,
+        "is_retrograde": false,
+        "speed": 0.111831
+      },
+      "Venus": {
+        "longitude": 252.440347,
+        "sign_index": 8,
+        "degree_in_sign": 12.440347,
+        "is_retrograde": false,
+        "speed": 1.218068
+      },
+      "Saturn": {
+        "longitude": 47.886797,
+        "sign_index": 1,
+        "degree_in_sign": 17.886797,
+        "is_retrograde": true,
+        "speed": -0.080073
+      },
+      "Rahu": {
+        "longitude": 215.80022,
+        "sign_index": 7,
+        "degree_in_sign": 5.80022,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 35.80022,
+        "sign_index": 1,
+        "degree_in_sign": 5.80022,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 58460,
+  "name": "Clapperton, Hugh",
+  "given_name": "Hugh Clapperton",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2374246.613241,
+    "year": 1788,
+    "month": 5,
+    "day": 13,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "l",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Annan",
+    "country": "Scotland",
+    "lat": 54.983333,
+    "lon": -3.266667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clapperton,_Hugh",
+  "source_notes": "Sy Scholfield quotes Jamie Bruce-Lockhart's book, \"A Sailor in the Sahara: The Life and Travels in Africa of Hugh Clapperton\" (I.B.Tauris, 2008), p. 2: \"He was born on 13 May 1788 at half past two in the morning in the Clapperton home at 22 Butts Street, a small, low-ceilinged building with a crowded parlour, a kitchen and a couple of back rooms, located on a lane on the north side of Annan's main thoroughfare.\"\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Travel : Explorer"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 15.371016,
+    "lagna": 315.371016,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.902213,
+    "jd_ut": 2374246.613241,
+    "planets": {
+      "Sun": {
+        "longitude": 32.013665,
+        "sign_index": 1,
+        "degree_in_sign": 2.013665,
+        "is_retrograde": false,
+        "speed": 0.963338
+      },
+      "Moon": {
+        "longitude": 126.865603,
+        "sign_index": 4,
+        "degree_in_sign": 6.865603,
+        "is_retrograde": false,
+        "speed": 15.809193
+      },
+      "Mars": {
+        "longitude": 106.545027,
+        "sign_index": 3,
+        "degree_in_sign": 16.545027,
+        "is_retrograde": false,
+        "speed": 0.513929
+      },
+      "Mercury": {
+        "longitude": 13.060377,
+        "sign_index": 0,
+        "degree_in_sign": 13.060377,
+        "is_retrograde": false,
+        "speed": 1.732605
+      },
+      "Jupiter": {
+        "longitude": 67.022999,
+        "sign_index": 2,
+        "degree_in_sign": 7.022999,
+        "is_retrograde": false,
+        "speed": 0.205643
+      },
+      "Venus": {
+        "longitude": 76.465968,
+        "sign_index": 2,
+        "degree_in_sign": 16.465968,
+        "is_retrograde": false,
+        "speed": 1.05716
+      },
+      "Saturn": {
+        "longitude": 318.804801,
+        "sign_index": 10,
+        "degree_in_sign": 18.804801,
+        "is_retrograde": false,
+        "speed": 0.060593
+      },
+      "Rahu": {
+        "longitude": 237.392298,
+        "sign_index": 7,
+        "degree_in_sign": 27.392298,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 57.392298,
+        "sign_index": 1,
+        "degree_in_sign": 27.392298,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

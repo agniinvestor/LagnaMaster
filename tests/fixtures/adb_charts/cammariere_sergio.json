@@ -1,0 +1,110 @@
+{
+  "adb_id": 71536,
+  "name": "Cammariere, Sergio",
+  "given_name": "Sergio Cammariere",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2437254.34375,
+    "year": 1960,
+    "month": 11,
+    "day": 15,
+    "calendar": "g",
+    "time": "21:15",
+    "time_type": "s",
+    "hour": 21.25,
+    "time_unknown": false,
+    "place": "Crotone",
+    "country": "Italy",
+    "lat": 39.083333,
+    "lon": 17.116667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cammariere,_Sergio",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes him.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Jazz",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.133007,
+    "lagna": 74.133007,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.310597,
+    "jd_ut": 2437254.34375,
+    "planets": {
+      "Sun": {
+        "longitude": 210.167867,
+        "sign_index": 7,
+        "degree_in_sign": 0.167867,
+        "is_retrograde": false,
+        "speed": 1.008231
+      },
+      "Moon": {
+        "longitude": 169.578914,
+        "sign_index": 5,
+        "degree_in_sign": 19.578914,
+        "is_retrograde": false,
+        "speed": 17.407715
+      },
+      "Mars": {
+        "longitude": 85.183177,
+        "sign_index": 2,
+        "degree_in_sign": 25.183177,
+        "is_retrograde": false,
+        "speed": 0.065994
+      },
+      "Mercury": {
+        "longitude": 194.791519,
+        "sign_index": 6,
+        "degree_in_sign": 14.791519,
+        "is_retrograde": true,
+        "speed": -0.182905
+      },
+      "Jupiter": {
+        "longitude": 250.569943,
+        "sign_index": 8,
+        "degree_in_sign": 10.569943,
+        "is_retrograde": false,
+        "speed": 0.201648
+      },
+      "Venus": {
+        "longitude": 247.261302,
+        "sign_index": 8,
+        "degree_in_sign": 7.261302,
+        "is_retrograde": false,
+        "speed": 1.210641
+      },
+      "Saturn": {
+        "longitude": 261.37995,
+        "sign_index": 8,
+        "degree_in_sign": 21.37995,
+        "is_retrograde": false,
+        "speed": 0.087951
+      },
+      "Rahu": {
+        "longitude": 138.478326,
+        "sign_index": 4,
+        "degree_in_sign": 18.478326,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 318.478326,
+        "sign_index": 10,
+        "degree_in_sign": 18.478326,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

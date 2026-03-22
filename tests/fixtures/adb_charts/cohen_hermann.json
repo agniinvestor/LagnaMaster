@@ -1,0 +1,109 @@
+{
+  "adb_id": 101244,
+  "name": "Cohen, Hermann",
+  "given_name": "Hermann Cohen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2394020.795648,
+    "year": 1842,
+    "month": 7,
+    "day": 4,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Coswig (Sachsen)",
+    "country": "Germany",
+    "lat": 51.116667,
+    "lon": 13.566667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Hermann",
+  "source_notes": "Sy Scholfield quotes from the book ''Hermann Cohen: An Intellectual Biography'' by Frederick C. Beiser (Oxford University Press, 18 Oct 2018), page 7:\\n\"At 8:00 in the morning, July 4, 1842, Hermann Jescheskel Cohen was born in the little town of Coswig, Germany.... The birth date and hour is stated in the ''Personenstandsregister der jūdischen Gemeinde Coswig''. It is reproduced in Hermann Cohen (1842–1918), ed. Franz Orlik (Marburg; Universitätsbibliothek Marburg, 1992), p. 13.\"\\n",
+  "categories": [
+    "Vocation : Writers : Religion/ Philosophy",
+    "Notable : Famous : Historic figure"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 12.737342,
+    "lagna": 102.737342,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.657858,
+    "jd_ut": 2394020.795648,
+    "planets": {
+      "Sun": {
+        "longitude": 80.163539,
+        "sign_index": 2,
+        "degree_in_sign": 20.163539,
+        "is_retrograde": false,
+        "speed": 0.953486
+      },
+      "Moon": {
+        "longitude": 28.448071,
+        "sign_index": 0,
+        "degree_in_sign": 28.448071,
+        "is_retrograde": false,
+        "speed": 9.657063
+      },
+      "Mars": {
+        "longitude": 77.696873,
+        "sign_index": 2,
+        "degree_in_sign": 17.696873,
+        "is_retrograde": false,
+        "speed": 0.661355
+      },
+      "Mercury": {
+        "longitude": 87.461032,
+        "sign_index": 2,
+        "degree_in_sign": 27.461032,
+        "is_retrograde": true,
+        "speed": -0.554585
+      },
+      "Jupiter": {
+        "longitude": 266.90457,
+        "sign_index": 8,
+        "degree_in_sign": 26.90457,
+        "is_retrograde": true,
+        "speed": -0.126995
+      },
+      "Venus": {
+        "longitude": 110.99293,
+        "sign_index": 3,
+        "degree_in_sign": 20.99293,
+        "is_retrograde": false,
+        "speed": 1.198211
+      },
+      "Saturn": {
+        "longitude": 259.408935,
+        "sign_index": 8,
+        "degree_in_sign": 19.408935,
+        "is_retrograde": true,
+        "speed": -0.073707
+      },
+      "Rahu": {
+        "longitude": 269.515099,
+        "sign_index": 8,
+        "degree_in_sign": 29.515099,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 89.515099,
+        "sign_index": 2,
+        "degree_in_sign": 29.515099,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

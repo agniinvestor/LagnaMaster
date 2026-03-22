@@ -1,0 +1,112 @@
+{
+  "adb_id": 60489,
+  "name": "Cortot, Alfred",
+  "given_name": "Alfred Cortot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406888.812662,
+    "year": 1877,
+    "month": 9,
+    "day": 26,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Nyon",
+    "country": "Switzerland",
+    "lat": 46.383333,
+    "lon": 6.233333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortot,_Alfred",
+  "source_notes": "Sy Scholfield quotes from the book ''Alfred Cortot'' by Francois Anselmini and Remi Jacobs (Librairie Artheme Fayard, 2018):\\n\"Alfred Cortot voit le jour à Nyon, en Suisse, le 26 septembre 1877, à huit heures du matin si l'on en croit son acte de naissance.\"\\nTranslation: Alfred Cortot was born in Nyon, Switzerland, on 26 September 1877, at eight a.m. according to his birth certificate.\\n------------------------\\nPreviously, this entry had 7:30 AM: \"Taeger quotes Lescaut. Snethlage has the time 8.00\" (AM?). (Taeger Vol. 1, page 338.)\\n",
+  "categories": [
+    "Family : Parenting : Kids - Noted",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Music teacher",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 11.087598,
+    "lagna": 161.087598,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.149689,
+    "jd_ut": 2406888.812662,
+    "planets": {
+      "Sun": {
+        "longitude": 161.144916,
+        "sign_index": 5,
+        "degree_in_sign": 11.144916,
+        "is_retrograde": false,
+        "speed": 0.981415
+      },
+      "Moon": {
+        "longitude": 22.051767,
+        "sign_index": 0,
+        "degree_in_sign": 22.051767,
+        "is_retrograde": false,
+        "speed": 11.911903
+      },
+      "Mars": {
+        "longitude": 316.904012,
+        "sign_index": 10,
+        "degree_in_sign": 16.904012,
+        "is_retrograde": true,
+        "speed": -0.119419
+      },
+      "Mercury": {
+        "longitude": 162.517668,
+        "sign_index": 5,
+        "degree_in_sign": 12.517668,
+        "is_retrograde": true,
+        "speed": -1.123536
+      },
+      "Jupiter": {
+        "longitude": 243.667833,
+        "sign_index": 8,
+        "degree_in_sign": 3.667833,
+        "is_retrograde": false,
+        "speed": 0.106929
+      },
+      "Venus": {
+        "longitude": 197.919151,
+        "sign_index": 6,
+        "degree_in_sign": 17.919151,
+        "is_retrograde": false,
+        "speed": 1.195096
+      },
+      "Saturn": {
+        "longitude": 323.54082,
+        "sign_index": 10,
+        "degree_in_sign": 23.54082,
+        "is_retrograde": true,
+        "speed": -0.071182
+      },
+      "Rahu": {
+        "longitude": 307.611271,
+        "sign_index": 10,
+        "degree_in_sign": 7.611271,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 127.611271,
+        "sign_index": 4,
+        "degree_in_sign": 7.611271,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

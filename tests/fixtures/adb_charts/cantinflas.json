@@ -1,0 +1,116 @@
+{
+  "adb_id": 47517,
+  "name": "Cantinflas",
+  "given_name": "Cantinflas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419261.754583,
+    "year": 1911,
+    "month": 8,
+    "day": 12,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "l",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4,
+    "lon": -99.15
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantinflas",
+  "source_notes": "Sy Scholfield provided birth registry entry from Distrito Federal México archives. \\n\\n(Previously this entry had 12:30 AM: Juan Estadella saw a copy of his birth certificate in a magazine.)\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Diagnoses : Major Diseases : Cancer",
+    "Lifestyle : Financial : Philanthropist",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : First in Field",
+    "Notable : Famous : Historic figure"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 6.933105,
+    "lagna": 6.933105,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.622669,
+    "jd_ut": 2419261.754583,
+    "planets": {
+      "Sun": {
+        "longitude": 116.750273,
+        "sign_index": 3,
+        "degree_in_sign": 26.750273,
+        "is_retrograde": false,
+        "speed": 0.959844
+      },
+      "Moon": {
+        "longitude": 334.054793,
+        "sign_index": 11,
+        "degree_in_sign": 4.054793,
+        "is_retrograde": false,
+        "speed": 9.362865
+      },
+      "Mars": {
+        "longitude": 25.230894,
+        "sign_index": 0,
+        "degree_in_sign": 25.230894,
+        "is_retrograde": false,
+        "speed": 0.576178
+      },
+      "Mercury": {
+        "longitude": 144.126987,
+        "sign_index": 4,
+        "degree_in_sign": 24.126987,
+        "is_retrograde": false,
+        "speed": 0.955395
+      },
+      "Jupiter": {
+        "longitude": 194.484018,
+        "sign_index": 6,
+        "degree_in_sign": 14.484018,
+        "is_retrograde": false,
+        "speed": 0.112588
+      },
+      "Venus": {
+        "longitude": 154.297555,
+        "sign_index": 5,
+        "degree_in_sign": 4.297555,
+        "is_retrograde": false,
+        "speed": 0.401724
+      },
+      "Saturn": {
+        "longitude": 27.22957,
+        "sign_index": 0,
+        "degree_in_sign": 27.22957,
+        "is_retrograde": false,
+        "speed": 0.03614
+      },
+      "Rahu": {
+        "longitude": 11.942929,
+        "sign_index": 0,
+        "degree_in_sign": 11.942929,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 191.942929,
+        "sign_index": 6,
+        "degree_in_sign": 11.942929,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

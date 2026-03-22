@@ -1,0 +1,108 @@
+{
+  "adb_id": 83785,
+  "name": "Crédeville, Gérémy",
+  "given_name": "Gérémy Crédeville",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446829.708333,
+    "year": 1987,
+    "month": 2,
+    "day": 3,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Lille",
+    "country": "France",
+    "lat": 50.633333,
+    "lon": 3.066667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crédeville,_Gérémy",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertainment : Live Stage"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 11.738621,
+    "lagna": 221.738621,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.676763,
+    "jd_ut": 2446829.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 290.146322,
+        "sign_index": 9,
+        "degree_in_sign": 20.146322,
+        "is_retrograde": false,
+        "speed": 1.014713
+      },
+      "Moon": {
+        "longitude": 351.189034,
+        "sign_index": 11,
+        "degree_in_sign": 21.189034,
+        "is_retrograde": false,
+        "speed": 16.423286
+      },
+      "Mars": {
+        "longitude": 354.259561,
+        "sign_index": 11,
+        "degree_in_sign": 24.259561,
+        "is_retrograde": false,
+        "speed": 0.696041
+      },
+      "Mercury": {
+        "longitude": 304.858984,
+        "sign_index": 10,
+        "degree_in_sign": 4.858984,
+        "is_retrograde": false,
+        "speed": 1.648152
+      },
+      "Jupiter": {
+        "longitude": 330.083143,
+        "sign_index": 11,
+        "degree_in_sign": 0.083143,
+        "is_retrograde": false,
+        "speed": 0.213257
+      },
+      "Venus": {
+        "longitude": 244.196265,
+        "sign_index": 8,
+        "degree_in_sign": 4.196265,
+        "is_retrograde": false,
+        "speed": 1.105704
+      },
+      "Saturn": {
+        "longitude": 235.001817,
+        "sign_index": 7,
+        "degree_in_sign": 25.001817,
+        "is_retrograde": false,
+        "speed": 0.083542
+      },
+      "Rahu": {
+        "longitude": 351.060246,
+        "sign_index": 11,
+        "degree_in_sign": 21.060246,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 171.060246,
+        "sign_index": 5,
+        "degree_in_sign": 21.060246,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

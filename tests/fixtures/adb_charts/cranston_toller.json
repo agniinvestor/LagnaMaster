@@ -1,0 +1,114 @@
+{
+  "adb_id": 11222,
+  "name": "Cranston, Toller",
+  "given_name": "Toller Cranston",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2433026.972222,
+    "year": 1949,
+    "month": 4,
+    "day": 20,
+    "calendar": "g",
+    "time": "06:20",
+    "time_type": "s",
+    "hour": 6.333333,
+    "time_unknown": false,
+    "place": "Hamilton",
+    "country": "Ontario (CAN)",
+    "lat": 43.25,
+    "lon": -79.85
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cranston,_Toller",
+  "source_notes": "Biography: \"Toller.\"  Mary Lee Lewis quotes him for same.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Sports : Skating",
+    "Notable : Awards : Olympics",
+    "Notable : Awards : Sports Championship",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 1.358967,
+    "lagna": 1.358967,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.148955,
+    "jd_ut": 2433026.972222,
+    "planets": {
+      "Sun": {
+        "longitude": 6.895792,
+        "sign_index": 0,
+        "degree_in_sign": 6.895792,
+        "is_retrograde": false,
+        "speed": 0.975787
+      },
+      "Moon": {
+        "longitude": 280.559585,
+        "sign_index": 9,
+        "degree_in_sign": 10.559585,
+        "is_retrograde": false,
+        "speed": 8.31052
+      },
+      "Mars": {
+        "longitude": 359.581602,
+        "sign_index": 11,
+        "degree_in_sign": 29.581602,
+        "is_retrograde": false,
+        "speed": 0.75853
+      },
+      "Mercury": {
+        "longitude": 14.976889,
+        "sign_index": 0,
+        "degree_in_sign": 14.976889,
+        "is_retrograde": false,
+        "speed": 2.090506
+      },
+      "Jupiter": {
+        "longitude": 277.625292,
+        "sign_index": 9,
+        "degree_in_sign": 7.625292,
+        "is_retrograde": false,
+        "speed": 0.090507
+      },
+      "Venus": {
+        "longitude": 7.811834,
+        "sign_index": 0,
+        "degree_in_sign": 7.811834,
+        "is_retrograde": false,
+        "speed": 1.236307
+      },
+      "Saturn": {
+        "longitude": 126.270556,
+        "sign_index": 4,
+        "degree_in_sign": 6.270556,
+        "is_retrograde": true,
+        "speed": -0.019275
+      },
+      "Rahu": {
+        "longitude": 2.495431,
+        "sign_index": 0,
+        "degree_in_sign": 2.495431,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.495431,
+        "sign_index": 6,
+        "degree_in_sign": 2.495431,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

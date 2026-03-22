@@ -1,0 +1,108 @@
+{
+  "adb_id": 57008,
+  "name": "Calfan, Nicole",
+  "given_name": "Nicole Calfan",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432248.802083,
+    "year": 1947,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "08:15",
+    "time_type": "s",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Neuilly sur Seine",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "leo",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calfan,_Nicole",
+  "source_notes": "Collection Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 18.585056,
+    "lagna": 318.585056,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.119201,
+    "jd_ut": 2432248.802083,
+    "planets": {
+      "Sun": {
+        "longitude": 319.76204,
+        "sign_index": 10,
+        "degree_in_sign": 19.76204,
+        "is_retrograde": false,
+        "speed": 1.001831
+      },
+      "Moon": {
+        "longitude": 101.716068,
+        "sign_index": 3,
+        "degree_in_sign": 11.716068,
+        "is_retrograde": false,
+        "speed": 17.906117
+      },
+      "Mars": {
+        "longitude": 306.572447,
+        "sign_index": 10,
+        "degree_in_sign": 6.572447,
+        "is_retrograde": false,
+        "speed": 0.787502
+      },
+      "Mercury": {
+        "longitude": 328.4352,
+        "sign_index": 10,
+        "degree_in_sign": 28.4352,
+        "is_retrograde": true,
+        "speed": -0.666402
+      },
+      "Jupiter": {
+        "longitude": 214.286544,
+        "sign_index": 7,
+        "degree_in_sign": 4.286544,
+        "is_retrograde": false,
+        "speed": 0.031543
+      },
+      "Venus": {
+        "longitude": 275.839058,
+        "sign_index": 9,
+        "degree_in_sign": 5.839058,
+        "is_retrograde": false,
+        "speed": 1.145173
+      },
+      "Saturn": {
+        "longitude": 99.661572,
+        "sign_index": 3,
+        "degree_in_sign": 9.661572,
+        "is_retrograde": true,
+        "speed": -0.052357
+      },
+      "Rahu": {
+        "longitude": 43.732271,
+        "sign_index": 1,
+        "degree_in_sign": 13.732271,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 223.732271,
+        "sign_index": 7,
+        "degree_in_sign": 13.732271,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

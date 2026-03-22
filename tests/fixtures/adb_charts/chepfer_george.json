@@ -1,0 +1,110 @@
+{
+  "adb_id": 71644,
+  "name": "Chepfer, George",
+  "given_name": "George Chepfer",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404410.357778,
+    "year": 1870,
+    "month": 12,
+    "day": 13,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "l",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Nancy",
+    "country": "France",
+    "lat": 48.683333,
+    "lon": 6.2
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chepfer,_George",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes Gauquelin.\\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 7.651029,
+    "lagna": 97.651029,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.054953,
+    "jd_ut": 2404410.357778,
+    "planets": {
+      "Sun": {
+        "longitude": 239.648728,
+        "sign_index": 7,
+        "degree_in_sign": 29.648728,
+        "is_retrograde": false,
+        "speed": 1.017342
+      },
+      "Moon": {
+        "longitude": 125.589396,
+        "sign_index": 4,
+        "degree_in_sign": 5.589396,
+        "is_retrograde": false,
+        "speed": 14.1066
+      },
+      "Mars": {
+        "longitude": 151.194928,
+        "sign_index": 5,
+        "degree_in_sign": 1.194928,
+        "is_retrograde": false,
+        "speed": 0.438728
+      },
+      "Mercury": {
+        "longitude": 251.245412,
+        "sign_index": 8,
+        "degree_in_sign": 11.245412,
+        "is_retrograde": false,
+        "speed": 1.560143
+      },
+      "Jupiter": {
+        "longitude": 59.295937,
+        "sign_index": 1,
+        "degree_in_sign": 29.295937,
+        "is_retrograde": true,
+        "speed": -0.136269
+      },
+      "Venus": {
+        "longitude": 240.983656,
+        "sign_index": 8,
+        "degree_in_sign": 0.983656,
+        "is_retrograde": false,
+        "speed": 1.258199
+      },
+      "Saturn": {
+        "longitude": 247.810576,
+        "sign_index": 8,
+        "degree_in_sign": 7.810576,
+        "is_retrograde": false,
+        "speed": 0.117338
+      },
+      "Rahu": {
+        "longitude": 78.949877,
+        "sign_index": 2,
+        "degree_in_sign": 18.949877,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 258.949877,
+        "sign_index": 8,
+        "degree_in_sign": 18.949877,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

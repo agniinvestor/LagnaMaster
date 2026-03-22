@@ -1,0 +1,108 @@
+{
+  "adb_id": 57156,
+  "name": "Chancel, Gustave Charles",
+  "given_name": "Gustave Charles Chancel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2386548.73662,
+    "year": 1822,
+    "month": 1,
+    "day": 18,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Loriol sur Drôme",
+    "country": "France",
+    "lat": 44.75,
+    "lon": 4.816667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chancel,_Gustave_Charles",
+  "source_notes": "Geslain archive\\n",
+  "categories": [
+    "Vocation : Science : Chemistry"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 18.713405,
+    "lagna": 228.713405,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.372302,
+    "jd_ut": 2386548.73662,
+    "planets": {
+      "Sun": {
+        "longitude": 276.268401,
+        "sign_index": 9,
+        "degree_in_sign": 6.268401,
+        "is_retrograde": false,
+        "speed": 1.01795
+      },
+      "Moon": {
+        "longitude": 219.337139,
+        "sign_index": 7,
+        "degree_in_sign": 9.337139,
+        "is_retrograde": false,
+        "speed": 8.789689
+      },
+      "Mars": {
+        "longitude": 137.935293,
+        "sign_index": 4,
+        "degree_in_sign": 17.935293,
+        "is_retrograde": true,
+        "speed": -0.104234
+      },
+      "Mercury": {
+        "longitude": 273.259907,
+        "sign_index": 9,
+        "degree_in_sign": 3.259907,
+        "is_retrograde": false,
+        "speed": 1.651429
+      },
+      "Jupiter": {
+        "longitude": 0.781867,
+        "sign_index": 0,
+        "degree_in_sign": 0.781867,
+        "is_retrograde": false,
+        "speed": 0.107932
+      },
+      "Venus": {
+        "longitude": 321.602117,
+        "sign_index": 10,
+        "degree_in_sign": 21.602117,
+        "is_retrograde": false,
+        "speed": 0.807999
+      },
+      "Saturn": {
+        "longitude": 359.123797,
+        "sign_index": 11,
+        "degree_in_sign": 29.123797,
+        "is_retrograde": false,
+        "speed": 0.04724
+      },
+      "Rahu": {
+        "longitude": 305.475736,
+        "sign_index": 10,
+        "degree_in_sign": 5.475736,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 125.475736,
+        "sign_index": 4,
+        "degree_in_sign": 5.475736,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

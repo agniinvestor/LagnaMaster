@@ -1,0 +1,112 @@
+{
+  "adb_id": 81034,
+  "name": "Charton, André",
+  "given_name": "André Charton",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419308.208333,
+    "year": 1911,
+    "month": 9,
+    "day": 28,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Ossey-les-Trois-Maisons",
+    "country": "France",
+    "lat": 48.434722,
+    "lon": 3.738333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charton,_André",
+  "source_notes": "Sy Scholfield submitted birth certificate (acte no. 8) from the online Aube archives: \"l'heure de cinq du soir\" (five o'clock in the evening). Adoption, marriage and death data in margin. Grazia Bordoni's Science file quotes Gauquelin for same birth data.\\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Veterinarian",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 4.324363,
+    "lagna": 304.324363,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.624445,
+    "jd_ut": 2419308.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 161.821768,
+        "sign_index": 5,
+        "degree_in_sign": 11.821768,
+        "is_retrograde": false,
+        "speed": 0.982133
+      },
+      "Moon": {
+        "longitude": 232.685805,
+        "sign_index": 7,
+        "degree_in_sign": 22.685805,
+        "is_retrograde": false,
+        "speed": 8.217695
+      },
+      "Mars": {
+        "longitude": 45.720779,
+        "sign_index": 1,
+        "degree_in_sign": 15.720779,
+        "is_retrograde": false,
+        "speed": 0.253203
+      },
+      "Mercury": {
+        "longitude": 144.568907,
+        "sign_index": 4,
+        "degree_in_sign": 24.568907,
+        "is_retrograde": false,
+        "speed": 1.32399
+      },
+      "Jupiter": {
+        "longitude": 201.767913,
+        "sign_index": 6,
+        "degree_in_sign": 21.767913,
+        "is_retrograde": false,
+        "speed": 0.192165
+      },
+      "Venus": {
+        "longitude": 142.093299,
+        "sign_index": 4,
+        "degree_in_sign": 22.093299,
+        "is_retrograde": true,
+        "speed": -0.325481
+      },
+      "Saturn": {
+        "longitude": 27.019858,
+        "sign_index": 0,
+        "degree_in_sign": 27.019858,
+        "is_retrograde": true,
+        "speed": -0.044334
+      },
+      "Rahu": {
+        "longitude": 9.481248,
+        "sign_index": 0,
+        "degree_in_sign": 9.481248,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 189.481248,
+        "sign_index": 6,
+        "degree_in_sign": 9.481248,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

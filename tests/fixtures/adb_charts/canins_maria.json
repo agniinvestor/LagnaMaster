@@ -1,0 +1,110 @@
+{
+  "adb_id": 50740,
+  "name": "Canins, Maria",
+  "given_name": "Maria Canins",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433072.395833,
+    "year": 1949,
+    "month": 6,
+    "day": 4,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Badia",
+    "country": "Italy",
+    "lat": 46.616667,
+    "lon": 11.9
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canins,_Maria",
+  "source_notes": "Steinbrecher collection: Bordoni/3 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes",
+    "Vocation : Sports : Skiing",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 4.272851,
+    "lagna": 244.272851,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.150692,
+    "jd_ut": 2433072.395833,
+    "planets": {
+      "Sun": {
+        "longitude": 50.750396,
+        "sign_index": 1,
+        "degree_in_sign": 20.750396,
+        "is_retrograde": false,
+        "speed": 0.957023
+      },
+      "Moon": {
+        "longitude": 150.43354,
+        "sign_index": 5,
+        "degree_in_sign": 0.43354,
+        "is_retrograde": false,
+        "speed": 11.977831
+      },
+      "Mars": {
+        "longitude": 33.165514,
+        "sign_index": 1,
+        "degree_in_sign": 3.165514,
+        "is_retrograde": false,
+        "speed": 0.718984
+      },
+      "Mercury": {
+        "longitude": 49.295167,
+        "sign_index": 1,
+        "degree_in_sign": 19.295167,
+        "is_retrograde": true,
+        "speed": -0.555983
+      },
+      "Jupiter": {
+        "longitude": 278.65668,
+        "sign_index": 9,
+        "degree_in_sign": 8.65668,
+        "is_retrograde": true,
+        "speed": -0.047734
+      },
+      "Venus": {
+        "longitude": 63.721991,
+        "sign_index": 2,
+        "degree_in_sign": 3.721991,
+        "is_retrograde": false,
+        "speed": 1.225776
+      },
+      "Saturn": {
+        "longitude": 127.187419,
+        "sign_index": 4,
+        "degree_in_sign": 7.187419,
+        "is_retrograde": false,
+        "speed": 0.057649
+      },
+      "Rahu": {
+        "longitude": 0.08834,
+        "sign_index": 0,
+        "degree_in_sign": 0.08834,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 180.08834,
+        "sign_index": 6,
+        "degree_in_sign": 0.08834,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

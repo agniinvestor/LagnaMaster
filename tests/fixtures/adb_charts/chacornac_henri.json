@@ -1,0 +1,111 @@
+{
+  "adb_id": 62901,
+  "name": "Chacornac, Henri",
+  "given_name": "Henri Chacornac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2398781.446713,
+    "year": 1855,
+    "month": 7,
+    "day": 16,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "St.Ambroix",
+    "country": "France",
+    "lat": 44.25,
+    "lon": 4.183333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "leo",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chacornac,_Henri",
+  "source_notes": "Didier Geslain archive, 'Astrologues' pdf file, p. 51.\\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Education : Librarian",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 3.487972,
+    "lagna": 333.487972,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.839807,
+    "jd_ut": 2398781.446713,
+    "planets": {
+      "Sun": {
+        "longitude": 91.918339,
+        "sign_index": 3,
+        "degree_in_sign": 1.918339,
+        "is_retrograde": false,
+        "speed": 0.954425
+      },
+      "Moon": {
+        "longitude": 122.329397,
+        "sign_index": 4,
+        "degree_in_sign": 2.329397,
+        "is_retrograde": false,
+        "speed": 14.642066
+      },
+      "Mars": {
+        "longitude": 67.936541,
+        "sign_index": 2,
+        "degree_in_sign": 7.936541,
+        "is_retrograde": false,
+        "speed": 0.673915
+      },
+      "Mercury": {
+        "longitude": 84.630417,
+        "sign_index": 2,
+        "degree_in_sign": 24.630417,
+        "is_retrograde": true,
+        "speed": -0.490217
+      },
+      "Jupiter": {
+        "longitude": 309.783484,
+        "sign_index": 10,
+        "degree_in_sign": 9.783484,
+        "is_retrograde": true,
+        "speed": -0.077118
+      },
+      "Venus": {
+        "longitude": 137.408428,
+        "sign_index": 4,
+        "degree_in_sign": 17.408428,
+        "is_retrograde": false,
+        "speed": 0.99734
+      },
+      "Saturn": {
+        "longitude": 62.117375,
+        "sign_index": 2,
+        "degree_in_sign": 2.117375,
+        "is_retrograde": false,
+        "speed": 0.119064
+      },
+      "Rahu": {
+        "longitude": 17.237931,
+        "sign_index": 0,
+        "degree_in_sign": 17.237931,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 197.237931,
+        "sign_index": 6,
+        "degree_in_sign": 17.237931,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

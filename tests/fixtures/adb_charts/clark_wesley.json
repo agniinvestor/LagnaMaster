@@ -1,0 +1,121 @@
+{
+  "adb_id": 48876,
+  "name": "Clark, Wesley",
+  "given_name": "Wesley Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431447.946528,
+    "year": 1944,
+    "month": 12,
+    "day": 23,
+    "calendar": "g",
+    "time": "05:43",
+    "time_type": "w",
+    "hour": 5.716667,
+    "time_unknown": false,
+    "place": "Chicago",
+    "country": "Illinois",
+    "lat": 41.85,
+    "lon": -87.65
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Wesley",
+  "source_notes": "Betsy Stang writes in an e-mail posted on Star IQ website on September 16, 2003: \"Just spoke to Wes Clark. His time of birth (as best he recalls) is 5:43 AM.\" Date and place are taken from media.  \\n",
+  "categories": [
+    "Traits : Personality : Ambitious",
+    "Traits : Personality : Courageous",
+    "Traits : Personality : Disciplined",
+    "Traits : Personality : Stubborn/ Steadfast",
+    "Family : Childhood : Family traumatic event",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Work : Hazardous work",
+    "Personal : Religion/Spirituality : Conversion/ Born again",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Wounded",
+    "Notable : Awards : Medals"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.205441,
+    "lagna": 192.205441,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.088579,
+    "jd_ut": 2431447.946528,
+    "planets": {
+      "Sun": {
+        "longitude": 248.421483,
+        "sign_index": 8,
+        "degree_in_sign": 8.421483,
+        "is_retrograde": false,
+        "speed": 1.018648
+      },
+      "Moon": {
+        "longitude": 348.183698,
+        "sign_index": 11,
+        "degree_in_sign": 18.183698,
+        "is_retrograde": false,
+        "speed": 17.827381
+      },
+      "Mars": {
+        "longitude": 237.025298,
+        "sign_index": 7,
+        "degree_in_sign": 27.025298,
+        "is_retrograde": false,
+        "speed": 0.734949
+      },
+      "Mercury": {
+        "longitude": 247.638866,
+        "sign_index": 8,
+        "degree_in_sign": 7.638866,
+        "is_retrograde": true,
+        "speed": -1.377731
+      },
+      "Jupiter": {
+        "longitude": 153.797518,
+        "sign_index": 5,
+        "degree_in_sign": 3.797518,
+        "is_retrograde": false,
+        "speed": 0.061217
+      },
+      "Venus": {
+        "longitude": 291.425245,
+        "sign_index": 9,
+        "degree_in_sign": 21.425245,
+        "is_retrograde": false,
+        "speed": 1.174542
+      },
+      "Saturn": {
+        "longitude": 74.693439,
+        "sign_index": 2,
+        "degree_in_sign": 14.693439,
+        "is_retrograde": true,
+        "speed": -0.08189
+      },
+      "Rahu": {
+        "longitude": 86.17126,
+        "sign_index": 2,
+        "degree_in_sign": 26.17126,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 266.17126,
+        "sign_index": 8,
+        "degree_in_sign": 26.17126,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

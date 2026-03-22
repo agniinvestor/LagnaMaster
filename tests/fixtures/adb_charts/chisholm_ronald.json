@@ -1,0 +1,111 @@
+{
+  "adb_id": 47865,
+  "name": "Chisholm, Ronald",
+  "given_name": "Ronald Chisholm",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418698.180556,
+    "year": 1910,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "16:20",
+    "time_type": "s",
+    "hour": 16.333333,
+    "time_unknown": false,
+    "place": "Edinburgh",
+    "country": "Scotland",
+    "lat": 55.95,
+    "lon": -3.216667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chisholm,_Ronald",
+  "source_notes": "Paul Wright collection, B.C.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Politics : Diplomat",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 19.929284,
+    "lagna": 79.929284,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.601124,
+    "jd_ut": 2418698.180556,
+    "planets": {
+      "Sun": {
+        "longitude": 283.263298,
+        "sign_index": 9,
+        "degree_in_sign": 13.263298,
+        "is_retrograde": false,
+        "speed": 1.015886
+      },
+      "Moon": {
+        "longitude": 118.150387,
+        "sign_index": 3,
+        "degree_in_sign": 28.150387,
+        "is_retrograde": false,
+        "speed": 14.924742
+      },
+      "Mars": {
+        "longitude": 9.471041,
+        "sign_index": 0,
+        "degree_in_sign": 9.471041,
+        "is_retrograde": false,
+        "speed": 0.576743
+      },
+      "Mercury": {
+        "longitude": 282.571005,
+        "sign_index": 9,
+        "degree_in_sign": 12.571005,
+        "is_retrograde": true,
+        "speed": -1.266331
+      },
+      "Jupiter": {
+        "longitude": 171.93712,
+        "sign_index": 5,
+        "degree_in_sign": 21.93712,
+        "is_retrograde": false,
+        "speed": 0.009737
+      },
+      "Venus": {
+        "longitude": 308.005537,
+        "sign_index": 10,
+        "degree_in_sign": 8.005537,
+        "is_retrograde": true,
+        "speed": -0.166476
+      },
+      "Saturn": {
+        "longitude": 355.057384,
+        "sign_index": 11,
+        "degree_in_sign": 25.057384,
+        "is_retrograde": false,
+        "speed": 0.065606
+      },
+      "Rahu": {
+        "longitude": 41.8079,
+        "sign_index": 1,
+        "degree_in_sign": 11.8079,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 221.8079,
+        "sign_index": 7,
+        "degree_in_sign": 11.8079,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

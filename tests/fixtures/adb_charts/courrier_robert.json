@@ -1,0 +1,111 @@
+{
+  "adb_id": 81089,
+  "name": "Courrier, Robert",
+  "given_name": "Robert Courrier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413473.243507,
+    "year": 1895,
+    "month": 10,
+    "day": 6,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Saxon-Sion",
+    "country": "France",
+    "lat": 48.426667,
+    "lon": 6.079722
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courrier,_Robert",
+  "source_notes": "Grazia Bordoni's Science file quotes Lescaut.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Medical : Physician",
+    "Vocation : Science : Biology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 22.852504,
+    "lagna": 352.852504,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.401383,
+    "jd_ut": 2413473.243507,
+    "planets": {
+      "Sun": {
+        "longitude": 170.816274,
+        "sign_index": 5,
+        "degree_in_sign": 20.816274,
+        "is_retrograde": false,
+        "speed": 0.986865
+      },
+      "Moon": {
+        "longitude": 22.549119,
+        "sign_index": 0,
+        "degree_in_sign": 22.549119,
+        "is_retrograde": false,
+        "speed": 14.240448
+      },
+      "Mars": {
+        "longitude": 172.32514,
+        "sign_index": 5,
+        "degree_in_sign": 22.32514,
+        "is_retrograde": false,
+        "speed": 0.660037
+      },
+      "Mercury": {
+        "longitude": 195.76093,
+        "sign_index": 6,
+        "degree_in_sign": 15.76093,
+        "is_retrograde": false,
+        "speed": 0.711671
+      },
+      "Jupiter": {
+        "longitude": 102.979001,
+        "sign_index": 3,
+        "degree_in_sign": 12.979001,
+        "is_retrograde": false,
+        "speed": 0.13987
+      },
+      "Venus": {
+        "longitude": 145.836956,
+        "sign_index": 4,
+        "degree_in_sign": 25.836956,
+        "is_retrograde": true,
+        "speed": -0.154673
+      },
+      "Saturn": {
+        "longitude": 194.418894,
+        "sign_index": 6,
+        "degree_in_sign": 14.418894,
+        "is_retrograde": false,
+        "speed": 0.113499
+      },
+      "Rahu": {
+        "longitude": 318.688321,
+        "sign_index": 10,
+        "degree_in_sign": 18.688321,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 138.688321,
+        "sign_index": 4,
+        "degree_in_sign": 18.688321,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 85166,
+  "name": "Chelius, Adolf",
+  "given_name": "Adolf Chelius",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2399099.746759,
+    "year": 1856,
+    "month": 5,
+    "day": 30,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "l",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Frankfurt am Main",
+    "country": "Germany",
+    "lat": 50.116667,
+    "lon": 8.666667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chelius,_Adolf",
+  "source_notes": "Sy Scholfield provided birth registry entry from Hesse Archives.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.542846,
+    "lagna": 60.542846,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.851972,
+    "jd_ut": 2399099.746759,
+    "planets": {
+      "Sun": {
+        "longitude": 47.100574,
+        "sign_index": 1,
+        "degree_in_sign": 17.100574,
+        "is_retrograde": false,
+        "speed": 0.958252
+      },
+      "Moon": {
+        "longitude": 357.273196,
+        "sign_index": 11,
+        "degree_in_sign": 27.273196,
+        "is_retrograde": false,
+        "speed": 11.470328
+      },
+      "Mars": {
+        "longitude": 162.815934,
+        "sign_index": 5,
+        "degree_in_sign": 12.815934,
+        "is_retrograde": false,
+        "speed": 0.189108
+      },
+      "Mercury": {
+        "longitude": 69.623266,
+        "sign_index": 2,
+        "degree_in_sign": 9.623266,
+        "is_retrograde": false,
+        "speed": 0.718548
+      },
+      "Jupiter": {
+        "longitude": 342.025974,
+        "sign_index": 11,
+        "degree_in_sign": 12.025974,
+        "is_retrograde": false,
+        "speed": 0.162865
+      },
+      "Venus": {
+        "longitude": 33.087215,
+        "sign_index": 1,
+        "degree_in_sign": 3.087215,
+        "is_retrograde": false,
+        "speed": 1.223033
+      },
+      "Saturn": {
+        "longitude": 68.463535,
+        "sign_index": 2,
+        "degree_in_sign": 8.463535,
+        "is_retrograde": false,
+        "speed": 0.124509
+      },
+      "Rahu": {
+        "longitude": 0.370528,
+        "sign_index": 0,
+        "degree_in_sign": 0.370528,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 180.370528,
+        "sign_index": 6,
+        "degree_in_sign": 0.370528,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

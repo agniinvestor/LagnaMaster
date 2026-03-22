@@ -1,0 +1,108 @@
+{
+  "adb_id": 62624,
+  "name": "Costello, Frank",
+  "given_name": "Frank Costello",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411782.027824,
+    "year": 1891,
+    "month": 2,
+    "day": 18,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "s",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Cassano allo Ionio",
+    "country": "Italy",
+    "lat": 39.783333,
+    "lon": 16.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costello,_Frank",
+  "source_notes": "Sy Scholfield quotes an online copy of his birth certificate: http://remigioraimondi.blogspot.com.au/2009/12/blog-post.html\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Other Criminal"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 29.108917,
+    "lagna": 59.108917,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.336733,
+    "jd_ut": 2411782.027824,
+    "planets": {
+      "Sun": {
+        "longitude": 307.283855,
+        "sign_index": 10,
+        "degree_in_sign": 7.283855,
+        "is_retrograde": false,
+        "speed": 1.00793
+      },
+      "Moon": {
+        "longitude": 70.065108,
+        "sign_index": 2,
+        "degree_in_sign": 10.065108,
+        "is_retrograde": false,
+        "speed": 12.891309
+      },
+      "Mars": {
+        "longitude": 354.758387,
+        "sign_index": 11,
+        "degree_in_sign": 24.758387,
+        "is_retrograde": false,
+        "speed": 0.727764
+      },
+      "Mercury": {
+        "longitude": 284.120441,
+        "sign_index": 9,
+        "degree_in_sign": 14.120441,
+        "is_retrograde": false,
+        "speed": 1.375059
+      },
+      "Jupiter": {
+        "longitude": 303.500866,
+        "sign_index": 10,
+        "degree_in_sign": 3.500866,
+        "is_retrograde": false,
+        "speed": 0.240021
+      },
+      "Venus": {
+        "longitude": 260.591829,
+        "sign_index": 8,
+        "degree_in_sign": 20.591829,
+        "is_retrograde": false,
+        "speed": 1.037512
+      },
+      "Saturn": {
+        "longitude": 142.569654,
+        "sign_index": 4,
+        "degree_in_sign": 22.569654,
+        "is_retrograde": true,
+        "speed": -0.075552
+      },
+      "Rahu": {
+        "longitude": 48.309415,
+        "sign_index": 1,
+        "degree_in_sign": 18.309415,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 228.309415,
+        "sign_index": 7,
+        "degree_in_sign": 18.309415,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

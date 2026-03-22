@@ -1,0 +1,109 @@
+{
+  "adb_id": 64990,
+  "name": "Chazottes, Gilberte",
+  "given_name": "Gilberte Chazottes",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418886.324167,
+    "year": 1910,
+    "month": 8,
+    "day": 2,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "s",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Bahía Blanca (Buenos Aires)",
+    "country": "Argentina",
+    "lat": -38.716667,
+    "lon": -62.283333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chazottes,_Gilberte",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 141.\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Personal : Death : Suicide"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 6.5619,
+    "lagna": 246.5619,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.608316,
+    "jd_ut": 2418886.324167,
+    "planets": {
+      "Sun": {
+        "longitude": 106.997684,
+        "sign_index": 3,
+        "degree_in_sign": 16.997684,
+        "is_retrograde": false,
+        "speed": 0.957487
+      },
+      "Moon": {
+        "longitude": 74.583347,
+        "sign_index": 2,
+        "degree_in_sign": 14.583347,
+        "is_retrograde": false,
+        "speed": 13.875943
+      },
+      "Mars": {
+        "longitude": 125.366034,
+        "sign_index": 4,
+        "degree_in_sign": 5.366034,
+        "is_retrograde": false,
+        "speed": 0.630446
+      },
+      "Mercury": {
+        "longitude": 121.491948,
+        "sign_index": 4,
+        "degree_in_sign": 1.491948,
+        "is_retrograde": false,
+        "speed": 1.797794
+      },
+      "Jupiter": {
+        "longitude": 167.168321,
+        "sign_index": 5,
+        "degree_in_sign": 17.168321,
+        "is_retrograde": false,
+        "speed": 0.152245
+      },
+      "Venus": {
+        "longitude": 77.587769,
+        "sign_index": 2,
+        "degree_in_sign": 17.587769,
+        "is_retrograde": false,
+        "speed": 1.198831
+      },
+      "Saturn": {
+        "longitude": 13.734873,
+        "sign_index": 0,
+        "degree_in_sign": 13.734873,
+        "is_retrograde": false,
+        "speed": 0.029023
+      },
+      "Rahu": {
+        "longitude": 31.837775,
+        "sign_index": 1,
+        "degree_in_sign": 1.837775,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 211.837775,
+        "sign_index": 7,
+        "degree_in_sign": 1.837775,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

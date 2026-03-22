@@ -1,0 +1,108 @@
+{
+  "adb_id": 77080,
+  "name": "Chapman, George",
+  "given_name": "George Chapman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402584.823241,
+    "year": 1865,
+    "month": 12,
+    "day": 14,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Kolo",
+    "country": "Poland",
+    "lat": 52.2,
+    "lon": 18.633333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapman,_George",
+  "source_notes": "PTA quotes the civil parish of the Roman Catholic Circle \", Ref. 109, tab 29 v., Birth certificate No. 183 - Seweryn Kłosowski. Source provided by the State Archives in Poznan [https://www.facebook.com/APPoznan/photos/a.974274719264957.1073741911.205740456118391/974274762598286/?type=3&theater] .\\nreported by Mirosław Czylek .\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide serial"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 19.774107,
+    "lagna": 229.774107,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.985176,
+    "jd_ut": 2402584.823241,
+    "planets": {
+      "Sun": {
+        "longitude": 240.412834,
+        "sign_index": 8,
+        "degree_in_sign": 0.412834,
+        "is_retrograde": false,
+        "speed": 1.017981
+      },
+      "Moon": {
+        "longitude": 197.379433,
+        "sign_index": 6,
+        "degree_in_sign": 17.379433,
+        "is_retrograde": false,
+        "speed": 8.592294
+      },
+      "Mars": {
+        "longitude": 230.60024,
+        "sign_index": 7,
+        "degree_in_sign": 20.60024,
+        "is_retrograde": false,
+        "speed": 0.728254
+      },
+      "Mercury": {
+        "longitude": 257.448856,
+        "sign_index": 8,
+        "degree_in_sign": 17.448856,
+        "is_retrograde": true,
+        "speed": -0.049364
+      },
+      "Jupiter": {
+        "longitude": 254.402587,
+        "sign_index": 8,
+        "degree_in_sign": 14.402587,
+        "is_retrograde": false,
+        "speed": 0.227755
+      },
+      "Venus": {
+        "longitude": 222.746276,
+        "sign_index": 7,
+        "degree_in_sign": 12.746276,
+        "is_retrograde": false,
+        "speed": 1.255009
+      },
+      "Saturn": {
+        "longitude": 196.699453,
+        "sign_index": 6,
+        "degree_in_sign": 16.699453,
+        "is_retrograde": false,
+        "speed": 0.098243
+      },
+      "Rahu": {
+        "longitude": 175.688852,
+        "sign_index": 5,
+        "degree_in_sign": 25.688852,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 355.688852,
+        "sign_index": 11,
+        "degree_in_sign": 25.688852,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

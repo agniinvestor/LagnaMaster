@@ -1,0 +1,110 @@
+{
+  "adb_id": 44175,
+  "name": "Cornevin, Charles",
+  "given_name": "Charles Cornevin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2395574.484173,
+    "year": 1846,
+    "month": 10,
+    "day": 4,
+    "calendar": "g",
+    "time": "23:59",
+    "time_type": "l",
+    "hour": 23.983333,
+    "time_unknown": false,
+    "place": "Is-en-Bassigny",
+    "country": "France",
+    "lat": 48.032778,
+    "lon": 5.447778
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornevin,_Charles",
+  "source_notes": "Bordoni quotes Didier Geslain for B.C., Datanotizie No.41 1/2001. Geslain has two entries, 4 October 23:55 and 4 October 24:00 (end of day).\\n",
+  "categories": [
+    "Vocation : Medical : Veterinarian",
+    "Vocation : Science : Biology",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 20.244777,
+    "lagna": 80.244777,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.717237,
+    "jd_ut": 2395574.484173,
+    "planets": {
+      "Sun": {
+        "longitude": 169.633318,
+        "sign_index": 5,
+        "degree_in_sign": 19.633318,
+        "is_retrograde": false,
+        "speed": 0.986175
+      },
+      "Moon": {
+        "longitude": 350.207733,
+        "sign_index": 11,
+        "degree_in_sign": 20.207733,
+        "is_retrograde": false,
+        "speed": 10.940544
+      },
+      "Mars": {
+        "longitude": 161.380891,
+        "sign_index": 5,
+        "degree_in_sign": 11.380891,
+        "is_retrograde": false,
+        "speed": 0.648424
+      },
+      "Mercury": {
+        "longitude": 167.367136,
+        "sign_index": 5,
+        "degree_in_sign": 17.367136,
+        "is_retrograde": false,
+        "speed": 1.763468
+      },
+      "Jupiter": {
+        "longitude": 54.941492,
+        "sign_index": 1,
+        "degree_in_sign": 24.941492,
+        "is_retrograde": false,
+        "speed": 0.001757
+      },
+      "Venus": {
+        "longitude": 151.681801,
+        "sign_index": 5,
+        "degree_in_sign": 1.681801,
+        "is_retrograde": false,
+        "speed": 1.241713
+      },
+      "Saturn": {
+        "longitude": 302.897115,
+        "sign_index": 10,
+        "degree_in_sign": 2.897115,
+        "is_retrograde": true,
+        "speed": -0.03917
+      },
+      "Rahu": {
+        "longitude": 187.181787,
+        "sign_index": 6,
+        "degree_in_sign": 7.181787,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 7.181787,
+        "sign_index": 0,
+        "degree_in_sign": 7.181787,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

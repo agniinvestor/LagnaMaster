@@ -1,0 +1,111 @@
+{
+  "adb_id": 74081,
+  "name": "Carling, Finn",
+  "given_name": "Finn Carling",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424425.208333,
+    "year": 1925,
+    "month": 10,
+    "day": 1,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carling,_Finn",
+  "source_notes": "Viktor E. quotes certificate of live birth in hand.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Handicapped",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 7.918568,
+    "lagna": 337.918568,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.820073,
+    "jd_ut": 2424425.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 165.170066,
+        "sign_index": 5,
+        "degree_in_sign": 15.170066,
+        "is_retrograde": false,
+        "speed": 0.983504
+      },
+      "Moon": {
+        "longitude": 338.437687,
+        "sign_index": 11,
+        "degree_in_sign": 8.437687,
+        "is_retrograde": false,
+        "speed": 14.113526
+      },
+      "Mars": {
+        "longitude": 159.070062,
+        "sign_index": 5,
+        "degree_in_sign": 9.070062,
+        "is_retrograde": false,
+        "speed": 0.647161
+      },
+      "Mercury": {
+        "longitude": 160.723881,
+        "sign_index": 5,
+        "degree_in_sign": 10.723881,
+        "is_retrograde": false,
+        "speed": 1.802115
+      },
+      "Jupiter": {
+        "longitude": 260.663139,
+        "sign_index": 8,
+        "degree_in_sign": 20.663139,
+        "is_retrograde": false,
+        "speed": 0.069854
+      },
+      "Venus": {
+        "longitude": 205.642969,
+        "sign_index": 6,
+        "degree_in_sign": 25.642969,
+        "is_retrograde": false,
+        "speed": 1.173667
+      },
+      "Saturn": {
+        "longitude": 199.680805,
+        "sign_index": 6,
+        "degree_in_sign": 19.680805,
+        "is_retrograde": false,
+        "speed": 0.105611
+      },
+      "Rahu": {
+        "longitude": 98.32072,
+        "sign_index": 3,
+        "degree_in_sign": 8.32072,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 278.32072,
+        "sign_index": 9,
+        "degree_in_sign": 8.32072,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

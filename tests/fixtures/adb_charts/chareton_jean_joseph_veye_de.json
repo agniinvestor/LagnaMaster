@@ -1,0 +1,109 @@
+{
+  "adb_id": 68050,
+  "name": "Chareton, Jean-Joseph Veye de",
+  "given_name": "Jean-Joseph Veye de Chareton",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2383432.653472,
+    "year": 1813,
+    "month": 7,
+    "day": 8,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Montélimar",
+    "country": "France",
+    "lat": 44.566667,
+    "lon": 4.75
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chareton,_Jean-Joseph_Veye_de",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'officiers 1800-1918' pdf file, p. 12.\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 27.197125,
+    "lagna": 57.197125,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.253223,
+    "jd_ut": 2383432.653472,
+    "planets": {
+      "Sun": {
+        "longitude": 84.254437,
+        "sign_index": 2,
+        "degree_in_sign": 24.254437,
+        "is_retrograde": false,
+        "speed": 0.953189
+      },
+      "Moon": {
+        "longitude": 203.273018,
+        "sign_index": 6,
+        "degree_in_sign": 23.273018,
+        "is_retrograde": false,
+        "speed": 13.627822
+      },
+      "Mars": {
+        "longitude": 291.011274,
+        "sign_index": 9,
+        "degree_in_sign": 21.011274,
+        "is_retrograde": true,
+        "speed": -0.088709
+      },
+      "Mercury": {
+        "longitude": 101.492461,
+        "sign_index": 3,
+        "degree_in_sign": 11.492461,
+        "is_retrograde": false,
+        "speed": 1.782948
+      },
+      "Jupiter": {
+        "longitude": 111.003795,
+        "sign_index": 3,
+        "degree_in_sign": 21.003795,
+        "is_retrograde": false,
+        "speed": 0.206649
+      },
+      "Venus": {
+        "longitude": 96.204245,
+        "sign_index": 3,
+        "degree_in_sign": 6.204245,
+        "is_retrograde": false,
+        "speed": 1.227687
+      },
+      "Saturn": {
+        "longitude": 264.827791,
+        "sign_index": 8,
+        "degree_in_sign": 24.827791,
+        "is_retrograde": true,
+        "speed": -0.073896
+      },
+      "Rahu": {
+        "longitude": 110.603796,
+        "sign_index": 3,
+        "degree_in_sign": 20.603796,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 290.603796,
+        "sign_index": 9,
+        "degree_in_sign": 20.603796,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

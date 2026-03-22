@@ -1,0 +1,109 @@
+{
+  "adb_id": 36500,
+  "name": "Columbo, Patricia Ann",
+  "given_name": "Patricia Ann Columbo",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2435646.244444,
+    "year": 1956,
+    "month": 6,
+    "day": 21,
+    "calendar": "g",
+    "time": "11:52",
+    "time_type": "s",
+    "hour": 11.866667,
+    "time_unknown": false,
+    "place": "Chicago",
+    "country": "Illinois",
+    "lat": 41.85,
+    "lon": -87.65
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Columbo,_Patricia_Ann",
+  "source_notes": "Dana Holliday quotes biographer Clark Howard, \"Love's Blood,\" which gives the data from Patricia's step-mom who was present at the birth.\\nBiography: Bonnie Remsberg, \"The True Story of the Columbo Murders.\"\\n",
+  "categories": [
+    "Family : Childhood : Order of birth",
+    "Passions : Criminal Perpetrator : Homicide serial"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.692121,
+    "lagna": 133.692121,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.249107,
+    "jd_ut": 2435646.244444,
+    "planets": {
+      "Sun": {
+        "longitude": 67.043374,
+        "sign_index": 2,
+        "degree_in_sign": 7.043374,
+        "is_retrograde": false,
+        "speed": 0.953629
+      },
+      "Moon": {
+        "longitude": 230.598003,
+        "sign_index": 7,
+        "degree_in_sign": 20.598003,
+        "is_retrograde": false,
+        "speed": 15.915763
+      },
+      "Mars": {
+        "longitude": 316.373386,
+        "sign_index": 10,
+        "degree_in_sign": 16.373386,
+        "is_retrograde": false,
+        "speed": 0.482331
+      },
+      "Mercury": {
+        "longitude": 44.563437,
+        "sign_index": 1,
+        "degree_in_sign": 14.563437,
+        "is_retrograde": false,
+        "speed": 1.024162
+      },
+      "Jupiter": {
+        "longitude": 123.998856,
+        "sign_index": 4,
+        "degree_in_sign": 3.998856,
+        "is_retrograde": false,
+        "speed": 0.15939
+      },
+      "Venus": {
+        "longitude": 67.852396,
+        "sign_index": 2,
+        "degree_in_sign": 7.852396,
+        "is_retrograde": true,
+        "speed": -0.627709
+      },
+      "Saturn": {
+        "longitude": 214.072291,
+        "sign_index": 7,
+        "degree_in_sign": 4.072291,
+        "is_retrograde": true,
+        "speed": -0.056061
+      },
+      "Rahu": {
+        "longitude": 223.694808,
+        "sign_index": 7,
+        "degree_in_sign": 13.694808,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 43.694808,
+        "sign_index": 1,
+        "degree_in_sign": 13.694808,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 11273,
+  "name": "Cox, Susie",
+  "given_name": "Susie Cox",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433085.694444,
+    "year": 1949,
+    "month": 6,
+    "day": 17,
+    "calendar": "g",
+    "time": "21:40",
+    "time_type": "s",
+    "hour": 21.666667,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cox,_Susie",
+  "source_notes": "LMR quotes her letter of 4/1989  (Formerly, Steinbrecher had 10:40 PM from her but in the interim, she found her baby book and it read 9:40 PM.)\\n",
+  "categories": [
+    "Lifestyle : Work : Intern/ Apprentice",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology",
+    "Vocation : Writers : Publisher/ Editor",
+    "Notable : Awards : Who's Who"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 13.250556,
+    "lagna": 253.250556,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.1512,
+    "jd_ut": 2433085.694444,
+    "planets": {
+      "Sun": {
+        "longitude": 63.455631,
+        "sign_index": 2,
+        "degree_in_sign": 3.455631,
+        "is_retrograde": false,
+        "speed": 0.954412
+      },
+      "Moon": {
+        "longitude": 330.272829,
+        "sign_index": 11,
+        "degree_in_sign": 0.272829,
+        "is_retrograde": false,
+        "speed": 14.455847
+      },
+      "Mars": {
+        "longitude": 42.644942,
+        "sign_index": 1,
+        "degree_in_sign": 12.644942,
+        "is_retrograde": false,
+        "speed": 0.706799
+      },
+      "Mercury": {
+        "longitude": 45.698724,
+        "sign_index": 1,
+        "degree_in_sign": 15.698724,
+        "is_retrograde": false,
+        "speed": 0.167316
+      },
+      "Jupiter": {
+        "longitude": 277.769348,
+        "sign_index": 9,
+        "degree_in_sign": 7.769348,
+        "is_retrograde": true,
+        "speed": -0.084719
+      },
+      "Venus": {
+        "longitude": 80.002392,
+        "sign_index": 2,
+        "degree_in_sign": 20.002392,
+        "is_retrograde": false,
+        "speed": 1.222889
+      },
+      "Saturn": {
+        "longitude": 128.079601,
+        "sign_index": 4,
+        "degree_in_sign": 8.079601,
+        "is_retrograde": false,
+        "speed": 0.076116
+      },
+      "Rahu": {
+        "longitude": 359.383619,
+        "sign_index": 11,
+        "degree_in_sign": 29.383619,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 179.383619,
+        "sign_index": 5,
+        "degree_in_sign": 29.383619,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

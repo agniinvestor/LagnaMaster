@@ -1,0 +1,108 @@
+{
+  "adb_id": 65187,
+  "name": "Colombier, Jacques",
+  "given_name": "Jacques Colombier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415698.20184,
+    "year": 1901,
+    "month": 11,
+    "day": 9,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Compiègne",
+    "country": "France",
+    "lat": 49.416667,
+    "lon": 2.833333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colombier,_Jacques",
+  "source_notes": "Didier Geslain archive, 'cinema_autres_professions.pdf ' pdf file, p. 5.\\n",
+  "categories": [
+    "Vocation : Art : Stage/ Set design"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 16.673816,
+    "lagna": 16.673816,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.486438,
+    "jd_ut": 2415698.20184,
+    "planets": {
+      "Sun": {
+        "longitude": 204.113556,
+        "sign_index": 6,
+        "degree_in_sign": 24.113556,
+        "is_retrograde": false,
+        "speed": 1.005608
+      },
+      "Moon": {
+        "longitude": 186.382978,
+        "sign_index": 6,
+        "degree_in_sign": 6.382978,
+        "is_retrograde": false,
+        "speed": 11.955646
+      },
+      "Mars": {
+        "longitude": 236.612451,
+        "sign_index": 7,
+        "degree_in_sign": 26.612451,
+        "is_retrograde": false,
+        "speed": 0.744598
+      },
+      "Mercury": {
+        "longitude": 193.576387,
+        "sign_index": 6,
+        "degree_in_sign": 13.576387,
+        "is_retrograde": true,
+        "speed": -0.787093
+      },
+      "Jupiter": {
+        "longitude": 257.811166,
+        "sign_index": 8,
+        "degree_in_sign": 17.811166,
+        "is_retrograde": false,
+        "speed": 0.180578
+      },
+      "Venus": {
+        "longitude": 249.642998,
+        "sign_index": 8,
+        "degree_in_sign": 9.642998,
+        "is_retrograde": false,
+        "speed": 1.124149
+      },
+      "Saturn": {
+        "longitude": 259.752869,
+        "sign_index": 8,
+        "degree_in_sign": 19.752869,
+        "is_retrograde": false,
+        "speed": 0.082621
+      },
+      "Rahu": {
+        "longitude": 200.783084,
+        "sign_index": 6,
+        "degree_in_sign": 20.783084,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 20.783084,
+        "sign_index": 0,
+        "degree_in_sign": 20.783084,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

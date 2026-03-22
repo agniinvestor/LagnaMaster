@@ -1,0 +1,108 @@
+{
+  "adb_id": 65063,
+  "name": "Contamine, Claude",
+  "given_name": "Claude Contamine",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425853.208333,
+    "year": 1929,
+    "month": 8,
+    "day": 29,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "d",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Metz",
+    "country": "France",
+    "lat": 49.133333,
+    "lon": 6.166667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Contamine,_Claude",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 223.\\n",
+  "categories": [
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 16.027683,
+    "lagna": 256.027683,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.874669,
+    "jd_ut": 2425853.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 132.973934,
+        "sign_index": 4,
+        "degree_in_sign": 12.973934,
+        "is_retrograde": false,
+        "speed": 0.966968
+      },
+      "Moon": {
+        "longitude": 67.348899,
+        "sign_index": 2,
+        "degree_in_sign": 7.348899,
+        "is_retrograde": false,
+        "speed": 17.833584
+      },
+      "Mars": {
+        "longitude": 162.131123,
+        "sign_index": 5,
+        "degree_in_sign": 12.131123,
+        "is_retrograde": false,
+        "speed": 0.644888
+      },
+      "Mercury": {
+        "longitude": 156.371818,
+        "sign_index": 5,
+        "degree_in_sign": 6.371818,
+        "is_retrograde": false,
+        "speed": 1.402454
+      },
+      "Jupiter": {
+        "longitude": 51.39606,
+        "sign_index": 1,
+        "degree_in_sign": 21.39606,
+        "is_retrograde": false,
+        "speed": 0.111345
+      },
+      "Venus": {
+        "longitude": 95.06361,
+        "sign_index": 3,
+        "degree_in_sign": 5.06361,
+        "is_retrograde": false,
+        "speed": 1.167212
+      },
+      "Saturn": {
+        "longitude": 241.021675,
+        "sign_index": 8,
+        "degree_in_sign": 1.021675,
+        "is_retrograde": false,
+        "speed": 0.001017
+      },
+      "Rahu": {
+        "longitude": 22.648028,
+        "sign_index": 0,
+        "degree_in_sign": 22.648028,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 202.648028,
+        "sign_index": 6,
+        "degree_in_sign": 22.648028,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 82410,
+  "name": "Cameron, Florence",
+  "given_name": "Florence Cameron",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2455432.958333,
+    "year": 2010,
+    "month": 8,
+    "day": 24,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "d",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Cornwall",
+    "country": "England",
+    "lat": 50.5,
+    "lon": -4.666667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cameron,_Florence",
+  "source_notes": "Sy Scholfield quotes from \"David Cameron says new baby 'just popped out',\" Asian News International, 25 August 2010: \"London, Aug. 25 -- British Prime Minister David Cameron has become a father of a girl, .. The baby daughter arrived nearly three weeks earlier than the scheduled time on couple's holiday in Cornwall... The baby was delivered at noon, by caesarean section, with Cameron's [sic] present... the Sun quoted the Prime Minister as saying. 'Things sped up and it all happened very, very quickly and the baby popped out at about 12 o'clock.'\"\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Personal : Birth : Cesarean",
+    "Personal : Birth : Premature"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 12.543743,
+    "lagna": 162.543743,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 24.00579,
+    "jd_ut": 2455432.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 127.175613,
+        "sign_index": 4,
+        "degree_in_sign": 7.175613,
+        "is_retrograde": false,
+        "speed": 0.963796
+      },
+      "Moon": {
+        "longitude": 304.065129,
+        "sign_index": 10,
+        "degree_in_sign": 4.065129,
+        "is_retrograde": false,
+        "speed": 14.990748
+      },
+      "Mars": {
+        "longitude": 171.924946,
+        "sign_index": 5,
+        "degree_in_sign": 21.924946,
+        "is_retrograde": false,
+        "speed": 0.64153
+      },
+      "Mercury": {
+        "longitude": 144.419421,
+        "sign_index": 4,
+        "degree_in_sign": 24.419421,
+        "is_retrograde": true,
+        "speed": -0.350004
+      },
+      "Jupiter": {
+        "longitude": 337.771105,
+        "sign_index": 11,
+        "degree_in_sign": 7.771105,
+        "is_retrograde": true,
+        "speed": -0.096906
+      },
+      "Venus": {
+        "longitude": 173.032994,
+        "sign_index": 5,
+        "degree_in_sign": 23.032994,
+        "is_retrograde": false,
+        "speed": 0.92648
+      },
+      "Saturn": {
+        "longitude": 159.254676,
+        "sign_index": 5,
+        "degree_in_sign": 9.254676,
+        "is_retrograde": false,
+        "speed": 0.110813
+      },
+      "Rahu": {
+        "longitude": 255.156711,
+        "sign_index": 8,
+        "degree_in_sign": 15.156711,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 75.156711,
+        "sign_index": 2,
+        "degree_in_sign": 15.156711,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

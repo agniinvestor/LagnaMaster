@@ -1,0 +1,113 @@
+{
+  "adb_id": 100595,
+  "name": "Carvalho, Apolônio de",
+  "given_name": "Apolônio de Carvalho",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419442.659454,
+    "year": 1912,
+    "month": 2,
+    "day": 9,
+    "calendar": "g",
+    "time": "23:59",
+    "time_type": "l",
+    "hour": 23.983333,
+    "time_unknown": false,
+    "place": "Corumbá (Mato Grosso do Sul)",
+    "country": "Brazil",
+    "lat": -19.009167,
+    "lon": -57.653333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carvalho,_Apolônio_de",
+  "source_notes": "Birth entry dated 10 February 1912 from civil registry book in hand from Sy Scholfield, copy on file, stating he was born yesterday at midnight (\"houtem a maia/meia horas da tarde\"). \\n",
+  "categories": [
+    "Traits : Personality : Courageous",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.719515,
+    "lagna": 192.719515,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.629585,
+    "jd_ut": 2419442.659454,
+    "planets": {
+      "Sun": {
+        "longitude": 297.432803,
+        "sign_index": 9,
+        "degree_in_sign": 27.432803,
+        "is_retrograde": false,
+        "speed": 1.011979
+      },
+      "Moon": {
+        "longitude": 209.60991,
+        "sign_index": 6,
+        "degree_in_sign": 29.60991,
+        "is_retrograde": false,
+        "speed": 12.868646
+      },
+      "Mars": {
+        "longitude": 40.981654,
+        "sign_index": 1,
+        "degree_in_sign": 10.981654,
+        "is_retrograde": false,
+        "speed": 0.380082
+      },
+      "Mercury": {
+        "longitude": 282.090996,
+        "sign_index": 9,
+        "degree_in_sign": 12.090996,
+        "is_retrograde": false,
+        "speed": 1.563368
+      },
+      "Jupiter": {
+        "longitude": 228.926237,
+        "sign_index": 7,
+        "degree_in_sign": 18.926237,
+        "is_retrograde": false,
+        "speed": 0.140326
+      },
+      "Venus": {
+        "longitude": 260.945263,
+        "sign_index": 8,
+        "degree_in_sign": 20.945263,
+        "is_retrograde": false,
+        "speed": 1.214651
+      },
+      "Saturn": {
+        "longitude": 21.273313,
+        "sign_index": 0,
+        "degree_in_sign": 21.273313,
+        "is_retrograde": false,
+        "speed": 0.046305
+      },
+      "Rahu": {
+        "longitude": 2.356401,
+        "sign_index": 0,
+        "degree_in_sign": 2.356401,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.356401,
+        "sign_index": 6,
+        "degree_in_sign": 2.356401,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

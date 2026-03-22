@@ -1,0 +1,114 @@
+{
+  "adb_id": 87678,
+  "name": "Congleton, John",
+  "given_name": "John Congleton",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2443239.30625,
+    "year": 1977,
+    "month": 4,
+    "day": 5,
+    "calendar": "g",
+    "time": "13:21",
+    "time_type": "s",
+    "hour": 13.35,
+    "time_unknown": false,
+    "place": "Lubbock",
+    "country": "Texas",
+    "lat": 33.583333,
+    "lon": -101.85
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Congleton,_John",
+  "source_notes": "Sy Scholfield provided birth report, Lubbock Avalanche-Journal (Lubbock, Texas), 8 April 1977, p. 78. Full name from Texas Birth Index. \\n",
+  "categories": [
+    "Vocation : Engineer : Other Engineer",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 16.478013,
+    "lagna": 76.478013,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.539459,
+    "jd_ut": 2443239.30625,
+    "planets": {
+      "Sun": {
+        "longitude": 352.343764,
+        "sign_index": 11,
+        "degree_in_sign": 22.343764,
+        "is_retrograde": false,
+        "speed": 0.983703
+      },
+      "Moon": {
+        "longitude": 194.862013,
+        "sign_index": 6,
+        "degree_in_sign": 14.862013,
+        "is_retrograde": false,
+        "speed": 19.359328
+      },
+      "Mars": {
+        "longitude": 319.494756,
+        "sign_index": 10,
+        "degree_in_sign": 19.494756,
+        "is_retrograde": false,
+        "speed": 0.779161
+      },
+      "Mercury": {
+        "longitude": 10.566712,
+        "sign_index": 0,
+        "degree_in_sign": 10.566712,
+        "is_retrograde": false,
+        "speed": 1.419498
+      },
+      "Jupiter": {
+        "longitude": 36.882426,
+        "sign_index": 1,
+        "degree_in_sign": 6.882426,
+        "is_retrograde": false,
+        "speed": 0.198239
+      },
+      "Venus": {
+        "longitude": 353.093684,
+        "sign_index": 11,
+        "degree_in_sign": 23.093684,
+        "is_retrograde": true,
+        "speed": -0.632483
+      },
+      "Saturn": {
+        "longitude": 106.436996,
+        "sign_index": 3,
+        "degree_in_sign": 16.436996,
+        "is_retrograde": true,
+        "speed": -0.00985
+      },
+      "Rahu": {
+        "longitude": 181.32294,
+        "sign_index": 6,
+        "degree_in_sign": 1.32294,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 1.32294,
+        "sign_index": 0,
+        "degree_in_sign": 1.32294,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 70090,
+  "name": "Cherel, Guy",
+  "given_name": "Guy Cherel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436919.239583,
+    "year": 1959,
+    "month": 12,
+    "day": 16,
+    "calendar": "g",
+    "time": "18:45",
+    "time_type": "s",
+    "hour": 18.75,
+    "time_unknown": false,
+    "place": "Rennes",
+    "country": "France",
+    "lat": 48.083333,
+    "lon": -1.683333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cherel,_Guy",
+  "source_notes": "Didier Geslain archive, 'hippisme entraîneurs' pdf file, p. 21.\\n",
+  "categories": [
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 28.826647,
+    "lagna": 58.826647,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.297784,
+    "jd_ut": 2436919.239583,
+    "planets": {
+      "Sun": {
+        "longitude": 240.729196,
+        "sign_index": 8,
+        "degree_in_sign": 0.729196,
+        "is_retrograde": false,
+        "speed": 1.017328
+      },
+      "Moon": {
+        "longitude": 78.144522,
+        "sign_index": 2,
+        "degree_in_sign": 18.144522,
+        "is_retrograde": false,
+        "speed": 13.374971
+      },
+      "Mars": {
+        "longitude": 225.96247,
+        "sign_index": 7,
+        "degree_in_sign": 15.96247,
+        "is_retrograde": false,
+        "speed": 0.718006
+      },
+      "Mercury": {
+        "longitude": 220.308081,
+        "sign_index": 7,
+        "degree_in_sign": 10.308081,
+        "is_retrograde": false,
+        "speed": 1.235467
+      },
+      "Jupiter": {
+        "longitude": 232.052272,
+        "sign_index": 7,
+        "degree_in_sign": 22.052272,
+        "is_retrograde": false,
+        "speed": 0.224444
+      },
+      "Venus": {
+        "longitude": 197.095653,
+        "sign_index": 6,
+        "degree_in_sign": 17.095653,
+        "is_retrograde": false,
+        "speed": 1.161604
+      },
+      "Saturn": {
+        "longitude": 254.366556,
+        "sign_index": 8,
+        "degree_in_sign": 14.366556,
+        "is_retrograde": false,
+        "speed": 0.11585
+      },
+      "Rahu": {
+        "longitude": 156.236183,
+        "sign_index": 5,
+        "degree_in_sign": 6.236183,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 336.236183,
+        "sign_index": 11,
+        "degree_in_sign": 6.236183,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

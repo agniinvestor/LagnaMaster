@@ -1,0 +1,108 @@
+{
+  "adb_id": 71424,
+  "name": "Cortes, Mapy",
+  "given_name": "Mapy Cortes",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418731.791667,
+    "year": 1910,
+    "month": 3,
+    "day": 1,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Santurce",
+    "country": "Puerto Rico",
+    "lat": 18.2,
+    "lon": -67.133333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortes,_Mapy",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.100617,
+    "lagna": 232.100617,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.602409,
+    "jd_ut": 2418731.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 317.226557,
+        "sign_index": 10,
+        "degree_in_sign": 17.226557,
+        "is_retrograde": false,
+        "speed": 1.003165
+      },
+      "Moon": {
+        "longitude": 194.571537,
+        "sign_index": 6,
+        "degree_in_sign": 14.571537,
+        "is_retrograde": false,
+        "speed": 7.180294
+      },
+      "Mars": {
+        "longitude": 29.458721,
+        "sign_index": 0,
+        "degree_in_sign": 29.458721,
+        "is_retrograde": false,
+        "speed": 0.607287
+      },
+      "Mercury": {
+        "longitude": 292.202419,
+        "sign_index": 9,
+        "degree_in_sign": 22.202419,
+        "is_retrograde": false,
+        "speed": 1.310403
+      },
+      "Jupiter": {
+        "longitude": 170.517304,
+        "sign_index": 5,
+        "degree_in_sign": 20.517304,
+        "is_retrograde": true,
+        "speed": -0.089907
+      },
+      "Venus": {
+        "longitude": 292.815936,
+        "sign_index": 9,
+        "degree_in_sign": 22.815936,
+        "is_retrograde": true,
+        "speed": -0.156278
+      },
+      "Saturn": {
+        "longitude": 358.008453,
+        "sign_index": 11,
+        "degree_in_sign": 28.008453,
+        "is_retrograde": false,
+        "speed": 0.106431
+      },
+      "Rahu": {
+        "longitude": 40.026777,
+        "sign_index": 1,
+        "degree_in_sign": 10.026777,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 220.026777,
+        "sign_index": 7,
+        "degree_in_sign": 10.026777,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

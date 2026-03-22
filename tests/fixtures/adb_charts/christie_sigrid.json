@@ -1,0 +1,109 @@
+{
+  "adb_id": 74076,
+  "name": "Christie, Sigrid",
+  "given_name": "Sigrid Christie",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423528.125,
+    "year": 1923,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christie,_Sigrid",
+  "source_notes": "Viktor E. quotes certificate of live birth in hand.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Humanities+Social Sciences : Historian"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 9.101934,
+    "lagna": 129.101934,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.785776,
+    "jd_ut": 2423528.125,
+    "planets": {
+      "Sun": {
+        "longitude": 4.770167,
+        "sign_index": 0,
+        "degree_in_sign": 4.770167,
+        "is_retrograde": false,
+        "speed": 0.977313
+      },
+      "Moon": {
+        "longitude": 30.056801,
+        "sign_index": 1,
+        "degree_in_sign": 0.056801,
+        "is_retrograde": false,
+        "speed": 9.570698
+      },
+      "Mars": {
+        "longitude": 38.923625,
+        "sign_index": 1,
+        "degree_in_sign": 8.923625,
+        "is_retrograde": false,
+        "speed": 0.681391
+      },
+      "Mercury": {
+        "longitude": 15.655988,
+        "sign_index": 0,
+        "degree_in_sign": 15.655988,
+        "is_retrograde": false,
+        "speed": 2.021011
+      },
+      "Jupiter": {
+        "longitude": 203.378459,
+        "sign_index": 6,
+        "degree_in_sign": 23.378459,
+        "is_retrograde": true,
+        "speed": -0.114579
+      },
+      "Venus": {
+        "longitude": 327.767483,
+        "sign_index": 10,
+        "degree_in_sign": 27.767483,
+        "is_retrograde": false,
+        "speed": 1.187421
+      },
+      "Saturn": {
+        "longitude": 173.151814,
+        "sign_index": 5,
+        "degree_in_sign": 23.151814,
+        "is_retrograde": true,
+        "speed": -0.074941
+      },
+      "Rahu": {
+        "longitude": 145.859035,
+        "sign_index": 4,
+        "degree_in_sign": 25.859035,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.859035,
+        "sign_index": 10,
+        "degree_in_sign": 25.859035,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

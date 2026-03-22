@@ -1,0 +1,109 @@
+{
+  "adb_id": 44047,
+  "name": "Coga, Arthur",
+  "given_name": "Arthur Coga",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2320067.652546,
+    "year": 1640,
+    "month": 1,
+    "day": 1,
+    "calendar": "j",
+    "time": "03:39",
+    "time_type": "l",
+    "hour": 3.65,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coga,_Arthur",
+  "source_notes": "Martin Harvey, Nativitas I, quotes the papers of Dr. Charles Bernard, given in the British Museum as Sloane 1684, (1/01/1639/40, 3:30 AM LAT)\\n",
+  "categories": [
+    "Traits : Mind : I.Q. low",
+    "Vocation : Healing Fields : Alternative methods"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 14.877311,
+    "lagna": 194.877311,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 18.832758,
+    "jd_ut": 2320067.652546,
+    "planets": {
+      "Sun": {
+        "longitude": 271.791477,
+        "sign_index": 9,
+        "degree_in_sign": 1.791477,
+        "is_retrograde": false,
+        "speed": 1.018271
+      },
+      "Moon": {
+        "longitude": 118.021743,
+        "sign_index": 3,
+        "degree_in_sign": 28.021743,
+        "is_retrograde": false,
+        "speed": 11.018019
+      },
+      "Mars": {
+        "longitude": 215.120071,
+        "sign_index": 7,
+        "degree_in_sign": 5.120071,
+        "is_retrograde": false,
+        "speed": 0.645564
+      },
+      "Mercury": {
+        "longitude": 290.258606,
+        "sign_index": 9,
+        "degree_in_sign": 20.258606,
+        "is_retrograde": false,
+        "speed": 1.236383
+      },
+      "Jupiter": {
+        "longitude": 245.458471,
+        "sign_index": 8,
+        "degree_in_sign": 5.458471,
+        "is_retrograde": false,
+        "speed": 0.215996
+      },
+      "Venus": {
+        "longitude": 231.229784,
+        "sign_index": 7,
+        "degree_in_sign": 21.229784,
+        "is_retrograde": false,
+        "speed": 0.558962
+      },
+      "Saturn": {
+        "longitude": 298.661935,
+        "sign_index": 9,
+        "degree_in_sign": 28.661935,
+        "is_retrograde": false,
+        "speed": 0.111705
+      },
+      "Rahu": {
+        "longitude": 228.459251,
+        "sign_index": 7,
+        "degree_in_sign": 18.459251,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 48.459251,
+        "sign_index": 1,
+        "degree_in_sign": 18.459251,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

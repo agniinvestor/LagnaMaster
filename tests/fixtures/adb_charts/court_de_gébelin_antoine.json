@@ -1,0 +1,108 @@
+{
+  "adb_id": 59872,
+  "name": "Court de Gébelin, Antoine",
+  "given_name": "Antoine Court de Gébelin",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2352447.154583,
+    "year": 1728,
+    "month": 9,
+    "day": 5,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "l",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Nîmes",
+    "country": "France",
+    "lat": 43.833333,
+    "lon": 4.35
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Court_de_Gébelin,_Antoine",
+  "source_notes": "Sy Scholfield quotes \"Antoine Court de Gébelin and His Monde Primitif\" by William Henry Alexander (Department of History, Stanford University, 1972), p. 36: \"The first entry in the 'Journal' of Antoine Court's youngest son reads: \"September 5, 1728 - I was born at four in the evening one Sunday near Nimes.\"\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 10.407573,
+    "lagna": 250.407573,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.069384,
+    "jd_ut": 2352447.154583,
+    "planets": {
+      "Sun": {
+        "longitude": 143.110105,
+        "sign_index": 4,
+        "degree_in_sign": 23.110105,
+        "is_retrograde": false,
+        "speed": 0.972328
+      },
+      "Moon": {
+        "longitude": 165.314597,
+        "sign_index": 5,
+        "degree_in_sign": 15.314597,
+        "is_retrograde": false,
+        "speed": 11.756131
+      },
+      "Mars": {
+        "longitude": 197.331831,
+        "sign_index": 6,
+        "degree_in_sign": 17.331831,
+        "is_retrograde": false,
+        "speed": 0.668673
+      },
+      "Mercury": {
+        "longitude": 125.431827,
+        "sign_index": 4,
+        "degree_in_sign": 5.431827,
+        "is_retrograde": false,
+        "speed": 1.239686
+      },
+      "Jupiter": {
+        "longitude": 72.528482,
+        "sign_index": 2,
+        "degree_in_sign": 12.528482,
+        "is_retrograde": false,
+        "speed": 0.137858
+      },
+      "Venus": {
+        "longitude": 146.381899,
+        "sign_index": 4,
+        "degree_in_sign": 26.381899,
+        "is_retrograde": false,
+        "speed": 1.242982
+      },
+      "Saturn": {
+        "longitude": 302.05146,
+        "sign_index": 10,
+        "degree_in_sign": 2.05146,
+        "is_retrograde": true,
+        "speed": -0.067606
+      },
+      "Rahu": {
+        "longitude": 312.594524,
+        "sign_index": 10,
+        "degree_in_sign": 12.594524,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 132.594524,
+        "sign_index": 4,
+        "degree_in_sign": 12.594524,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 54064,
+  "name": "Chambliss, Chris",
+  "given_name": "Chris Chambliss",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432912.497222,
+    "year": 1948,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "18:56",
+    "time_type": "s",
+    "hour": 18.933333,
+    "time_unknown": false,
+    "place": "Dayton",
+    "country": "Ohio",
+    "lat": 39.766667,
+    "lon": -84.2
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chambliss,_Chris",
+  "source_notes": "Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Sports : Baseball",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 10.333083,
+    "lagna": 70.333083,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.144578,
+    "jd_ut": 2432912.497222,
+    "planets": {
+      "Sun": {
+        "longitude": 252.011576,
+        "sign_index": 8,
+        "degree_in_sign": 12.011576,
+        "is_retrograde": false,
+        "speed": 1.019405
+      },
+      "Moon": {
+        "longitude": 209.997662,
+        "sign_index": 6,
+        "degree_in_sign": 29.997662,
+        "is_retrograde": false,
+        "speed": 16.526
+      },
+      "Mars": {
+        "longitude": 270.015864,
+        "sign_index": 9,
+        "degree_in_sign": 0.015864,
+        "is_retrograde": false,
+        "speed": 0.779968
+      },
+      "Mercury": {
+        "longitude": 260.128928,
+        "sign_index": 8,
+        "degree_in_sign": 20.128928,
+        "is_retrograde": false,
+        "speed": 1.612078
+      },
+      "Jupiter": {
+        "longitude": 256.071147,
+        "sign_index": 8,
+        "degree_in_sign": 16.071147,
+        "is_retrograde": false,
+        "speed": 0.231305
+      },
+      "Venus": {
+        "longitude": 225.177764,
+        "sign_index": 7,
+        "degree_in_sign": 15.177764,
+        "is_retrograde": false,
+        "speed": 1.245607
+      },
+      "Saturn": {
+        "longitude": 132.970375,
+        "sign_index": 4,
+        "degree_in_sign": 12.970375,
+        "is_retrograde": true,
+        "speed": -0.018547
+      },
+      "Rahu": {
+        "longitude": 8.561697,
+        "sign_index": 0,
+        "degree_in_sign": 8.561697,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 188.561697,
+        "sign_index": 6,
+        "degree_in_sign": 8.561697,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

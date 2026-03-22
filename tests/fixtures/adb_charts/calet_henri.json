@@ -1,0 +1,109 @@
+{
+  "adb_id": 64905,
+  "name": "Calet, Henri",
+  "given_name": "Henri Calet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416543.337257,
+    "year": 1904,
+    "month": 3,
+    "day": 3,
+    "calendar": "g",
+    "time": "20:15",
+    "time_type": "s",
+    "hour": 20.25,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calet,_Henri",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, pp. 15-17.\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.815,
+    "lagna": 145.815,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.518746,
+    "jd_ut": 2416543.337257,
+    "planets": {
+      "Sun": {
+        "longitude": 320.322032,
+        "sign_index": 10,
+        "degree_in_sign": 20.322032,
+        "is_retrograde": false,
+        "speed": 1.001501
+      },
+      "Moon": {
+        "longitude": 165.322053,
+        "sign_index": 5,
+        "degree_in_sign": 15.322053,
+        "is_retrograde": false,
+        "speed": 14.338685
+      },
+      "Mars": {
+        "longitude": 341.86752,
+        "sign_index": 11,
+        "degree_in_sign": 11.86752,
+        "is_retrograde": false,
+        "speed": 0.767175
+      },
+      "Mercury": {
+        "longitude": 301.85791,
+        "sign_index": 10,
+        "degree_in_sign": 1.85791,
+        "is_retrograde": false,
+        "speed": 1.57476
+      },
+      "Jupiter": {
+        "longitude": 338.121311,
+        "sign_index": 11,
+        "degree_in_sign": 8.121311,
+        "is_retrograde": false,
+        "speed": 0.236679
+      },
+      "Venus": {
+        "longitude": 288.107847,
+        "sign_index": 9,
+        "degree_in_sign": 18.107847,
+        "is_retrograde": false,
+        "speed": 1.221833
+      },
+      "Saturn": {
+        "longitude": 292.80886,
+        "sign_index": 9,
+        "degree_in_sign": 22.80886,
+        "is_retrograde": false,
+        "speed": 0.11072
+      },
+      "Rahu": {
+        "longitude": 155.997578,
+        "sign_index": 5,
+        "degree_in_sign": 5.997578,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 335.997578,
+        "sign_index": 11,
+        "degree_in_sign": 5.997578,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

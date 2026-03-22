@@ -1,0 +1,108 @@
+{
+  "adb_id": 63972,
+  "name": "Creation conjunctions:Saturn-Neptune",
+  "given_name": "Creation conjunctions:Saturn-Neptune",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2368904.899942,
+    "year": 1773,
+    "month": 9,
+    "day": 27,
+    "calendar": "g",
+    "time": "04:35:15",
+    "time_type": "l",
+    "hour": 4.5875,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Creation_conjunctions:Saturn-Neptune",
+  "source_notes": "Andersen (\"astrogeography\", but he hadn't exact dates);Keller in Astrologix and Prognosefokus gives different charts.\\n",
+  "categories": [
+    "Mundane : Political : Birth of State or Country"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.844224,
+    "lagna": 126.844224,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.698118,
+    "jd_ut": 2368904.899942,
+    "planets": {
+      "Sun": {
+        "longitude": 163.844849,
+        "sign_index": 5,
+        "degree_in_sign": 13.844849,
+        "is_retrograde": false,
+        "speed": 0.983157
+      },
+      "Moon": {
+        "longitude": 303.888019,
+        "sign_index": 10,
+        "degree_in_sign": 3.888019,
+        "is_retrograde": false,
+        "speed": 14.642306
+      },
+      "Mars": {
+        "longitude": 194.958629,
+        "sign_index": 6,
+        "degree_in_sign": 14.958629,
+        "is_retrograde": false,
+        "speed": 0.685641
+      },
+      "Mercury": {
+        "longitude": 148.153464,
+        "sign_index": 4,
+        "degree_in_sign": 28.153464,
+        "is_retrograde": false,
+        "speed": 1.559703
+      },
+      "Jupiter": {
+        "longitude": 343.5522,
+        "sign_index": 11,
+        "degree_in_sign": 13.5522,
+        "is_retrograde": true,
+        "speed": -0.134306
+      },
+      "Venus": {
+        "longitude": 194.255329,
+        "sign_index": 6,
+        "degree_in_sign": 14.255329,
+        "is_retrograde": false,
+        "speed": 1.218716
+      },
+      "Saturn": {
+        "longitude": 148.017541,
+        "sign_index": 4,
+        "degree_in_sign": 28.017541,
+        "is_retrograde": false,
+        "speed": 0.12226
+      },
+      "Rahu": {
+        "longitude": 160.461554,
+        "sign_index": 5,
+        "degree_in_sign": 10.461554,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 340.461554,
+        "sign_index": 11,
+        "degree_in_sign": 10.461554,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

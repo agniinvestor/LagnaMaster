@@ -1,0 +1,109 @@
+{
+  "adb_id": 39215,
+  "name": "Caroli, Flavio",
+  "given_name": "Flavio Caroli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431521.746528,
+    "year": 1945,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "06:55",
+    "time_type": "s",
+    "hour": 6.916667,
+    "time_unknown": false,
+    "place": "Ravenna",
+    "country": "Italy",
+    "lat": 44.416667,
+    "lon": 12.2
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caroli,_Flavio",
+  "source_notes": "Bordoni quotes B.C. Datanotizie No.27, 9/1999\\n",
+  "categories": [
+    "Vocation : Art : Art critic",
+    "Vocation : Writers : Biographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 5.392483,
+    "lagna": 305.392483,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.091401,
+    "jd_ut": 2431521.746528,
+    "planets": {
+      "Sun": {
+        "longitude": 323.217481,
+        "sign_index": 10,
+        "degree_in_sign": 23.217481,
+        "is_retrograde": false,
+        "speed": 1.000377
+      },
+      "Moon": {
+        "longitude": 233.866718,
+        "sign_index": 7,
+        "degree_in_sign": 23.866718,
+        "is_retrograde": false,
+        "speed": 8.384929
+      },
+      "Mars": {
+        "longitude": 292.998329,
+        "sign_index": 9,
+        "degree_in_sign": 22.998329,
+        "is_retrograde": false,
+        "speed": 0.775498
+      },
+      "Mercury": {
+        "longitude": 329.058531,
+        "sign_index": 10,
+        "degree_in_sign": 29.058531,
+        "is_retrograde": false,
+        "speed": 1.947346
+      },
+      "Jupiter": {
+        "longitude": 150.299456,
+        "sign_index": 5,
+        "degree_in_sign": 0.299456,
+        "is_retrograde": true,
+        "speed": -0.128234
+      },
+      "Venus": {
+        "longitude": 4.668121,
+        "sign_index": 0,
+        "degree_in_sign": 4.668121,
+        "is_retrograde": false,
+        "speed": 0.582511
+      },
+      "Saturn": {
+        "longitude": 70.746305,
+        "sign_index": 2,
+        "degree_in_sign": 10.746305,
+        "is_retrograde": false,
+        "speed": 0.002404
+      },
+      "Rahu": {
+        "longitude": 82.260445,
+        "sign_index": 2,
+        "degree_in_sign": 22.260445,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 262.260445,
+        "sign_index": 8,
+        "degree_in_sign": 22.260445,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

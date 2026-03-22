@@ -1,0 +1,113 @@
+{
+  "adb_id": 65026,
+  "name": "Cocagnac, Maurice",
+  "given_name": "Maurice Cocagnac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423956.760417,
+    "year": 1924,
+    "month": 6,
+    "day": 20,
+    "calendar": "g",
+    "time": "07:15",
+    "time_type": "d",
+    "hour": 7.25,
+    "time_unknown": false,
+    "place": "Tarbes",
+    "country": "France",
+    "lat": 43.233333,
+    "lon": 0.083333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cocagnac,_Maurice",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 186.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Education : Teacher",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Religion : Ecclesiastics/ western",
+    "Vocation : Travel : Other Travel"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 6.525771,
+    "lagna": 66.525771,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.802163,
+    "jd_ut": 2423956.760417,
+    "planets": {
+      "Sun": {
+        "longitude": 65.819977,
+        "sign_index": 2,
+        "degree_in_sign": 5.819977,
+        "is_retrograde": false,
+        "speed": 0.95376
+      },
+      "Moon": {
+        "longitude": 287.585545,
+        "sign_index": 9,
+        "degree_in_sign": 17.585545,
+        "is_retrograde": false,
+        "speed": 11.694167
+      },
+      "Mars": {
+        "longitude": 305.654324,
+        "sign_index": 10,
+        "degree_in_sign": 5.654324,
+        "is_retrograde": false,
+        "speed": 0.366483
+      },
+      "Mercury": {
+        "longitude": 48.815631,
+        "sign_index": 1,
+        "degree_in_sign": 18.815631,
+        "is_retrograde": false,
+        "speed": 1.787911
+      },
+      "Jupiter": {
+        "longitude": 230.459341,
+        "sign_index": 7,
+        "degree_in_sign": 20.459341,
+        "is_retrograde": true,
+        "speed": -0.118948
+      },
+      "Venus": {
+        "longitude": 82.7016,
+        "sign_index": 2,
+        "degree_in_sign": 22.7016,
+        "is_retrograde": true,
+        "speed": -0.401179
+      },
+      "Saturn": {
+        "longitude": 182.880946,
+        "sign_index": 6,
+        "degree_in_sign": 2.880946,
+        "is_retrograde": true,
+        "speed": -0.014419
+      },
+      "Rahu": {
+        "longitude": 123.144751,
+        "sign_index": 4,
+        "degree_in_sign": 3.144751,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 303.144751,
+        "sign_index": 10,
+        "degree_in_sign": 3.144751,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 67447,
+  "name": "Chaissac, Gaston",
+  "given_name": "Gaston Chaissac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418897.222674,
+    "year": 1910,
+    "month": 8,
+    "day": 13,
+    "calendar": "g",
+    "time": "17:30",
+    "time_type": "s",
+    "hour": 17.5,
+    "time_unknown": false,
+    "place": "Avallon",
+    "country": "France",
+    "lat": 47.483333,
+    "lon": 3.9
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaissac,_Gaston",
+  "source_notes": "Birth and death certificates in Didier Geslain archive, 'sculpteurs' pdf file, pp. 48-49.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 2.033826,
+    "lagna": 242.033826,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.608733,
+    "jd_ut": 2418897.222674,
+    "planets": {
+      "Sun": {
+        "longitude": 117.448994,
+        "sign_index": 3,
+        "degree_in_sign": 27.448994,
+        "is_retrograde": false,
+        "speed": 0.960379
+      },
+      "Moon": {
+        "longitude": 214.674,
+        "sign_index": 7,
+        "degree_in_sign": 4.674,
+        "is_retrograde": false,
+        "speed": 8.228076
+      },
+      "Mars": {
+        "longitude": 132.252675,
+        "sign_index": 4,
+        "degree_in_sign": 12.252675,
+        "is_retrograde": false,
+        "speed": 0.633298
+      },
+      "Mercury": {
+        "longitude": 139.507942,
+        "sign_index": 4,
+        "degree_in_sign": 19.507942,
+        "is_retrograde": false,
+        "speed": 1.510129
+      },
+      "Jupiter": {
+        "longitude": 168.92482,
+        "sign_index": 5,
+        "degree_in_sign": 18.92482,
+        "is_retrograde": false,
+        "speed": 0.169558
+      },
+      "Venus": {
+        "longitude": 90.70589,
+        "sign_index": 3,
+        "degree_in_sign": 0.70589,
+        "is_retrograde": false,
+        "speed": 1.208344
+      },
+      "Saturn": {
+        "longitude": 13.94875,
+        "sign_index": 0,
+        "degree_in_sign": 13.94875,
+        "is_retrograde": false,
+        "speed": 0.010137
+      },
+      "Rahu": {
+        "longitude": 31.26024,
+        "sign_index": 1,
+        "degree_in_sign": 1.26024,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 211.26024,
+        "sign_index": 7,
+        "degree_in_sign": 1.26024,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 51428,
+  "name": "Checchi, Andrea",
+  "given_name": "Andrea Checchi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421158.166667,
+    "year": 1916,
+    "month": 10,
+    "day": 21,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Firenze",
+    "country": "Italy",
+    "lat": 43.766667,
+    "lon": 11.25
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Checchi,_Andrea",
+  "source_notes": "Steinbrecher collection: Gauquelin 5/843\\n",
+  "categories": [
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 4.801185,
+    "lagna": 334.801185,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.695169,
+    "jd_ut": 2421158.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 185.227279,
+        "sign_index": 6,
+        "degree_in_sign": 5.227279,
+        "is_retrograde": false,
+        "speed": 0.995593
+      },
+      "Moon": {
+        "longitude": 123.524582,
+        "sign_index": 4,
+        "degree_in_sign": 3.524582,
+        "is_retrograde": false,
+        "speed": 14.871398
+      },
+      "Mars": {
+        "longitude": 216.97333,
+        "sign_index": 7,
+        "degree_in_sign": 6.97333,
+        "is_retrograde": false,
+        "speed": 0.716983
+      },
+      "Mercury": {
+        "longitude": 167.056322,
+        "sign_index": 5,
+        "degree_in_sign": 17.056322,
+        "is_retrograde": false,
+        "speed": 1.078463
+      },
+      "Jupiter": {
+        "longitude": 7.973041,
+        "sign_index": 0,
+        "degree_in_sign": 7.973041,
+        "is_retrograde": true,
+        "speed": -0.135514
+      },
+      "Venus": {
+        "longitude": 142.843938,
+        "sign_index": 4,
+        "degree_in_sign": 22.843938,
+        "is_retrograde": false,
+        "speed": 1.152769
+      },
+      "Saturn": {
+        "longitude": 97.473841,
+        "sign_index": 3,
+        "degree_in_sign": 7.473841,
+        "is_retrograde": false,
+        "speed": 0.039538
+      },
+      "Rahu": {
+        "longitude": 271.448079,
+        "sign_index": 9,
+        "degree_in_sign": 1.448079,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 91.448079,
+        "sign_index": 3,
+        "degree_in_sign": 1.448079,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

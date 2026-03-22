@@ -1,0 +1,109 @@
+{
+  "adb_id": 81043,
+  "name": "Chevallier, André",
+  "given_name": "André Chevallier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413888.132396,
+    "year": 1896,
+    "month": 11,
+    "day": 24,
+    "calendar": "g",
+    "time": "15:20",
+    "time_type": "s",
+    "hour": 15.333333,
+    "time_unknown": false,
+    "place": "Saint-Paul-d'Eyjeaux",
+    "country": "France",
+    "lat": 45.750833,
+    "lon": 1.433056
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevallier,_André",
+  "source_notes": "Grazia Bordoni's Science file quotes Didier Geslain from birth certificate.\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 27.301154,
+    "lagna": 357.301154,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.417243,
+    "jd_ut": 2413888.132396,
+    "planets": {
+      "Sun": {
+        "longitude": 220.472023,
+        "sign_index": 7,
+        "degree_in_sign": 10.472023,
+        "is_retrograde": false,
+        "speed": 1.011879
+      },
+      "Moon": {
+        "longitude": 88.357941,
+        "sign_index": 2,
+        "degree_in_sign": 28.357941,
+        "is_retrograde": false,
+        "speed": 16.689091
+      },
+      "Mars": {
+        "longitude": 63.411142,
+        "sign_index": 2,
+        "degree_in_sign": 3.411142,
+        "is_retrograde": true,
+        "speed": -0.307307
+      },
+      "Mercury": {
+        "longitude": 218.142443,
+        "sign_index": 7,
+        "degree_in_sign": 8.142443,
+        "is_retrograde": false,
+        "speed": 1.579109
+      },
+      "Jupiter": {
+        "longitude": 136.3238,
+        "sign_index": 4,
+        "degree_in_sign": 16.3238,
+        "is_retrograde": false,
+        "speed": 0.092865
+      },
+      "Venus": {
+        "longitude": 255.470737,
+        "sign_index": 8,
+        "degree_in_sign": 15.470737,
+        "is_retrograde": false,
+        "speed": 1.220548
+      },
+      "Saturn": {
+        "longitude": 210.639653,
+        "sign_index": 7,
+        "degree_in_sign": 0.639653,
+        "is_retrograde": false,
+        "speed": 0.118231
+      },
+      "Rahu": {
+        "longitude": 296.702483,
+        "sign_index": 9,
+        "degree_in_sign": 26.702483,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 116.702483,
+        "sign_index": 3,
+        "degree_in_sign": 26.702483,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

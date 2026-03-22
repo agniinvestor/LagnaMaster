@@ -1,0 +1,112 @@
+{
+  "adb_id": 85868,
+  "name": "Crumpacker, Shepard J. Jr.",
+  "given_name": "Shepard J. Jr. Crumpacker",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421273.125,
+    "year": 1917,
+    "month": 2,
+    "day": 13,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "South Bend",
+    "country": "Indiana",
+    "lat": 41.683333,
+    "lon": -86.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crumpacker,_Shepard_J._Jr.",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana Archives.\\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Vocation : Law : Jurist",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 5.246415,
+    "lagna": 335.246415,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.699564,
+    "jd_ut": 2421273.125,
+    "planets": {
+      "Sun": {
+        "longitude": 301.656641,
+        "sign_index": 10,
+        "degree_in_sign": 1.656641,
+        "is_retrograde": false,
+        "speed": 1.010244
+      },
+      "Moon": {
+        "longitude": 193.753798,
+        "sign_index": 6,
+        "degree_in_sign": 13.753798,
+        "is_retrograde": false,
+        "speed": 10.932924
+      },
+      "Mars": {
+        "longitude": 304.971187,
+        "sign_index": 10,
+        "degree_in_sign": 4.971187,
+        "is_retrograde": false,
+        "speed": 0.790703
+      },
+      "Mercury": {
+        "longitude": 275.644399,
+        "sign_index": 9,
+        "degree_in_sign": 5.644399,
+        "is_retrograde": false,
+        "speed": 1.060796
+      },
+      "Jupiter": {
+        "longitude": 7.447535,
+        "sign_index": 0,
+        "degree_in_sign": 7.447535,
+        "is_retrograde": false,
+        "speed": 0.159179
+      },
+      "Venus": {
+        "longitude": 283.698417,
+        "sign_index": 9,
+        "degree_in_sign": 13.698417,
+        "is_retrograde": false,
+        "speed": 1.247698
+      },
+      "Saturn": {
+        "longitude": 92.377291,
+        "sign_index": 3,
+        "degree_in_sign": 2.377291,
+        "is_retrograde": true,
+        "speed": -0.066032
+      },
+      "Rahu": {
+        "longitude": 265.356196,
+        "sign_index": 8,
+        "degree_in_sign": 25.356196,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 85.356196,
+        "sign_index": 2,
+        "degree_in_sign": 25.356196,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

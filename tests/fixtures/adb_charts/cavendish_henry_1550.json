@@ -1,0 +1,110 @@
+{
+  "adb_id": 99304,
+  "name": "Cavendish, Henry (1550)",
+  "given_name": "Henry (1550) Cavendish",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2287545.50412,
+    "year": 1550,
+    "month": 12,
+    "day": 17,
+    "calendar": "j",
+    "time": "00:00",
+    "time_type": "l",
+    "hour": 0.0,
+    "time_unknown": false,
+    "place": "Derby",
+    "country": "England",
+    "lat": 52.916667,
+    "lon": -1.483333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavendish,_Henry_(1550)",
+  "source_notes": "Sy Scholfield quotes from ''Bess Of Hardwick: First Lady of Chatsworth'' by Mary S. Lovell (Hachette UK, 4 June 2009):\\n\\n\"She [Bess] became pregnant again almost immediately, and there was some consolation before the year was out when she gave birth to a healthy son. Sir William wrote: 'Henry, my 11th child, and the third by the same woman, was borne of Tuesday at 12 of the clock at night . . . the 17th day of December [1550].\"\\n\\nThe day of the week for 17 December 1550 under the old Julian calendar was Wednesday, therefore he was born at midnight between the 16th and 17th.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 28.139609,
+    "lagna": 148.139609,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.591168,
+    "jd_ut": 2287545.50412,
+    "planets": {
+      "Sun": {
+        "longitude": 257.19645,
+        "sign_index": 8,
+        "degree_in_sign": 17.19645,
+        "is_retrograde": false,
+        "speed": 1.019552
+      },
+      "Moon": {
+        "longitude": 354.93694,
+        "sign_index": 11,
+        "degree_in_sign": 24.93694,
+        "is_retrograde": false,
+        "speed": 11.432964
+      },
+      "Mars": {
+        "longitude": 82.071913,
+        "sign_index": 2,
+        "degree_in_sign": 22.071913,
+        "is_retrograde": true,
+        "speed": -0.398408
+      },
+      "Mercury": {
+        "longitude": 234.6385,
+        "sign_index": 7,
+        "degree_in_sign": 24.6385,
+        "is_retrograde": false,
+        "speed": 0.796446
+      },
+      "Jupiter": {
+        "longitude": 66.926527,
+        "sign_index": 2,
+        "degree_in_sign": 6.926527,
+        "is_retrograde": true,
+        "speed": -0.131533
+      },
+      "Venus": {
+        "longitude": 237.527842,
+        "sign_index": 7,
+        "degree_in_sign": 27.527842,
+        "is_retrograde": false,
+        "speed": 1.253044
+      },
+      "Saturn": {
+        "longitude": 290.649033,
+        "sign_index": 9,
+        "degree_in_sign": 20.649033,
+        "is_retrograde": false,
+        "speed": 0.106589
+      },
+      "Rahu": {
+        "longitude": 151.885844,
+        "sign_index": 5,
+        "degree_in_sign": 1.885844,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 331.885844,
+        "sign_index": 11,
+        "degree_in_sign": 1.885844,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

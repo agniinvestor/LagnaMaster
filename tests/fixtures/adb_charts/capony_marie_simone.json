@@ -1,0 +1,109 @@
+{
+  "adb_id": 64921,
+  "name": "Capony, Marie-Simone",
+  "given_name": "Marie-Simone Capony",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412901.70184,
+    "year": 1894,
+    "month": 3,
+    "day": 14,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Charlieu",
+    "country": "France",
+    "lat": 46.166667,
+    "lon": 4.166667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capony,_Marie-Simone",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 40.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 5.583824,
+    "lagna": 275.583824,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.379534,
+    "jd_ut": 2412901.70184,
+    "planets": {
+      "Sun": {
+        "longitude": 331.236957,
+        "sign_index": 11,
+        "degree_in_sign": 1.236957,
+        "is_retrograde": false,
+        "speed": 0.996011
+      },
+      "Moon": {
+        "longitude": 53.612418,
+        "sign_index": 1,
+        "degree_in_sign": 23.612418,
+        "is_retrograde": false,
+        "speed": 18.225632
+      },
+      "Mars": {
+        "longitude": 267.581446,
+        "sign_index": 8,
+        "degree_in_sign": 27.581446,
+        "is_retrograde": false,
+        "speed": 0.703679
+      },
+      "Mercury": {
+        "longitude": 331.522414,
+        "sign_index": 11,
+        "degree_in_sign": 1.522414,
+        "is_retrograde": true,
+        "speed": -0.938219
+      },
+      "Jupiter": {
+        "longitude": 34.163117,
+        "sign_index": 1,
+        "degree_in_sign": 4.163117,
+        "is_retrograde": false,
+        "speed": 0.162032
+      },
+      "Venus": {
+        "longitude": 298.038119,
+        "sign_index": 9,
+        "degree_in_sign": 28.038119,
+        "is_retrograde": false,
+        "speed": 0.196703
+      },
+      "Saturn": {
+        "longitude": 181.496528,
+        "sign_index": 6,
+        "degree_in_sign": 1.496528,
+        "is_retrograde": true,
+        "speed": -0.060785
+      },
+      "Rahu": {
+        "longitude": 348.975522,
+        "sign_index": 11,
+        "degree_in_sign": 18.975522,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 168.975522,
+        "sign_index": 5,
+        "degree_in_sign": 18.975522,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

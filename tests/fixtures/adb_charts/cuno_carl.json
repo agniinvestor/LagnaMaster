@@ -1,0 +1,109 @@
+{
+  "adb_id": 66077,
+  "name": "Cuno, Carl",
+  "given_name": "Carl Cuno",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2387039.616065,
+    "year": 1823,
+    "month": 5,
+    "day": 24,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Ratibor",
+    "country": "Germany",
+    "lat": 50.1,
+    "lon": 18.216667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuno,_Carl",
+  "source_notes": "Sy Scholfield quotes him in \"Nachricht von dem Geschlecht und Herkommen der Cunoen: 1672-1957\" by Johannes Cuno (MV-Verlag, 2012), p. 69: \"Ich bin geboren am 24. Mai 1823 früh 4 Uhr zu Ratibor.\"\\n",
+  "categories": [
+    "Vocation : Building Trades : Architect/ Planner",
+    "Vocation : Building Trades : Construction work"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 16.027262,
+    "lagna": 16.027262,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.391061,
+    "jd_ut": 2387039.616065,
+    "planets": {
+      "Sun": {
+        "longitude": 40.695454,
+        "sign_index": 1,
+        "degree_in_sign": 10.695454,
+        "is_retrograde": false,
+        "speed": 0.959779
+      },
+      "Moon": {
+        "longitude": 211.788531,
+        "sign_index": 7,
+        "degree_in_sign": 1.788531,
+        "is_retrograde": false,
+        "speed": 10.752174
+      },
+      "Mars": {
+        "longitude": 27.386034,
+        "sign_index": 0,
+        "degree_in_sign": 27.386034,
+        "is_retrograde": false,
+        "speed": 0.72516
+      },
+      "Mercury": {
+        "longitude": 62.958292,
+        "sign_index": 2,
+        "degree_in_sign": 2.958292,
+        "is_retrograde": false,
+        "speed": 1.2874
+      },
+      "Jupiter": {
+        "longitude": 53.456605,
+        "sign_index": 1,
+        "degree_in_sign": 23.456605,
+        "is_retrograde": false,
+        "speed": 0.228664
+      },
+      "Venus": {
+        "longitude": 76.564588,
+        "sign_index": 2,
+        "degree_in_sign": 16.564588,
+        "is_retrograde": false,
+        "speed": 1.175826
+      },
+      "Saturn": {
+        "longitude": 24.457779,
+        "sign_index": 0,
+        "degree_in_sign": 24.457779,
+        "is_retrograde": false,
+        "speed": 0.125143
+      },
+      "Rahu": {
+        "longitude": 279.462964,
+        "sign_index": 9,
+        "degree_in_sign": 9.462964,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 99.462964,
+        "sign_index": 3,
+        "degree_in_sign": 9.462964,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

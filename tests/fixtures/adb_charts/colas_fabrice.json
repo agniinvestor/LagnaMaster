@@ -1,0 +1,109 @@
+{
+  "adb_id": 93410,
+  "name": "Colas, Fabrice",
+  "given_name": "Fabrice Colas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438598.104167,
+    "year": 1964,
+    "month": 7,
+    "day": 21,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "s",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Rueil Malmaison",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.183333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colas,_Fabrice",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_sp_sports.pdf].\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 3.285019,
+    "lagna": 183.285019,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.361981,
+    "jd_ut": 2438598.104167,
+    "planets": {
+      "Sun": {
+        "longitude": 95.474157,
+        "sign_index": 3,
+        "degree_in_sign": 5.474157,
+        "is_retrograde": false,
+        "speed": 0.954332
+      },
+      "Moon": {
+        "longitude": 242.328086,
+        "sign_index": 8,
+        "degree_in_sign": 2.328086,
+        "is_retrograde": false,
+        "speed": 12.815744
+      },
+      "Mars": {
+        "longitude": 60.450508,
+        "sign_index": 2,
+        "degree_in_sign": 0.450508,
+        "is_retrograde": false,
+        "speed": 0.680475
+      },
+      "Mercury": {
+        "longitude": 118.278493,
+        "sign_index": 3,
+        "degree_in_sign": 28.278493,
+        "is_retrograde": false,
+        "speed": 1.51926
+      },
+      "Jupiter": {
+        "longitude": 28.169537,
+        "sign_index": 0,
+        "degree_in_sign": 28.169537,
+        "is_retrograde": false,
+        "speed": 0.153717
+      },
+      "Venus": {
+        "longitude": 58.808249,
+        "sign_index": 1,
+        "degree_in_sign": 28.808249,
+        "is_retrograde": false,
+        "speed": 0.344779
+      },
+      "Saturn": {
+        "longitude": 310.644344,
+        "sign_index": 10,
+        "degree_in_sign": 10.644344,
+        "is_retrograde": true,
+        "speed": -0.054118
+      },
+      "Rahu": {
+        "longitude": 67.26971,
+        "sign_index": 2,
+        "degree_in_sign": 7.26971,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 247.26971,
+        "sign_index": 8,
+        "degree_in_sign": 7.26971,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

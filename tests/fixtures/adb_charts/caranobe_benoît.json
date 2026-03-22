@@ -1,0 +1,114 @@
+{
+  "adb_id": 93567,
+  "name": "Caranobe, Benoît",
+  "given_name": "Benoît Caranobe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444402.936111,
+    "year": 1980,
+    "month": 6,
+    "day": 12,
+    "calendar": "g",
+    "time": "12:28",
+    "time_type": "d",
+    "hour": 12.466667,
+    "time_unknown": false,
+    "place": "Vitry",
+    "country": "France",
+    "lat": 48.8,
+    "lon": 2.4
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caranobe,_Benoît",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_sp_sports.pdf]. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Vocation : Business : Business owner",
+    "Vocation : Business/Marketing : Sales",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Vocation : Sports : Gymnastics",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 21.235307,
+    "lagna": 111.235307,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.583958,
+    "jd_ut": 2444402.936111,
+    "planets": {
+      "Sun": {
+        "longitude": 58.010642,
+        "sign_index": 1,
+        "degree_in_sign": 28.010642,
+        "is_retrograde": false,
+        "speed": 0.955827
+      },
+      "Moon": {
+        "longitude": 52.59054,
+        "sign_index": 1,
+        "degree_in_sign": 22.59054,
+        "is_retrograde": false,
+        "speed": 10.345706
+      },
+      "Mars": {
+        "longitude": 141.706216,
+        "sign_index": 4,
+        "degree_in_sign": 21.706216,
+        "is_retrograde": false,
+        "speed": 0.47696
+      },
+      "Mercury": {
+        "longitude": 82.32772,
+        "sign_index": 2,
+        "degree_in_sign": 22.32772,
+        "is_retrograde": false,
+        "speed": 1.083126
+      },
+      "Jupiter": {
+        "longitude": 129.804215,
+        "sign_index": 4,
+        "degree_in_sign": 9.804215,
+        "is_retrograde": false,
+        "speed": 0.125342
+      },
+      "Venus": {
+        "longitude": 62.540474,
+        "sign_index": 2,
+        "degree_in_sign": 2.540474,
+        "is_retrograde": true,
+        "speed": -0.609402
+      },
+      "Saturn": {
+        "longitude": 146.985686,
+        "sign_index": 4,
+        "degree_in_sign": 26.985686,
+        "is_retrograde": false,
+        "speed": 0.035249
+      },
+      "Rahu": {
+        "longitude": 119.659827,
+        "sign_index": 3,
+        "degree_in_sign": 29.659827,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 299.659827,
+        "sign_index": 9,
+        "degree_in_sign": 29.659827,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

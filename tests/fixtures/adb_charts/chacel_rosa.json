@@ -1,0 +1,108 @@
+{
+  "adb_id": 94291,
+  "name": "Chacel, Rosa",
+  "given_name": "Rosa Chacel",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414444.471435,
+    "year": 1898,
+    "month": 6,
+    "day": 3,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Valladolid",
+    "country": "Spain",
+    "lat": 41.65,
+    "lon": -4.716667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chacel,_Rosa",
+  "source_notes": "Faustino Rodriguez quotes birth certificate in hand.\\n",
+  "categories": [
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 23.017686,
+    "lagna": 263.017686,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.43851,
+    "jd_ut": 2414444.471435,
+    "planets": {
+      "Sun": {
+        "longitude": 50.88652,
+        "sign_index": 1,
+        "degree_in_sign": 20.88652,
+        "is_retrograde": false,
+        "speed": 0.956632
+      },
+      "Moon": {
+        "longitude": 222.325653,
+        "sign_index": 7,
+        "degree_in_sign": 12.325653,
+        "is_retrograde": false,
+        "speed": 10.517122
+      },
+      "Mars": {
+        "longitude": 5.006987,
+        "sign_index": 0,
+        "degree_in_sign": 5.006987,
+        "is_retrograde": false,
+        "speed": 0.745592
+      },
+      "Mercury": {
+        "longitude": 27.433413,
+        "sign_index": 0,
+        "degree_in_sign": 27.433413,
+        "is_retrograde": false,
+        "speed": 1.28583
+      },
+      "Jupiter": {
+        "longitude": 157.984276,
+        "sign_index": 5,
+        "degree_in_sign": 7.984276,
+        "is_retrograde": false,
+        "speed": 0.022137
+      },
+      "Venus": {
+        "longitude": 78.069754,
+        "sign_index": 2,
+        "degree_in_sign": 18.069754,
+        "is_retrograde": false,
+        "speed": 1.206838
+      },
+      "Saturn": {
+        "longitude": 226.210622,
+        "sign_index": 7,
+        "degree_in_sign": 16.210622,
+        "is_retrograde": true,
+        "speed": -0.073768
+      },
+      "Rahu": {
+        "longitude": 267.220903,
+        "sign_index": 8,
+        "degree_in_sign": 27.220903,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 87.220903,
+        "sign_index": 2,
+        "degree_in_sign": 27.220903,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 52561,
+  "name": "Clydesdale, Victoria Elizabeth",
+  "given_name": "Victoria Elizabeth Clydesdale",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2448028.172222,
+    "year": 1990,
+    "month": 5,
+    "day": 16,
+    "calendar": "g",
+    "time": "17:08",
+    "time_type": "d",
+    "hour": 17.133333,
+    "time_unknown": false,
+    "place": "Stirling",
+    "country": "Scotland",
+    "lat": 56.116667,
+    "lon": -3.95
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clydesdale,_Victoria_Elizabeth",
+  "source_notes": "Steinbrecher collection: Caroline Gerard quotes birth certificate\\n",
+  "categories": [
+    "Passions : Criminal Victim : Homicide victim",
+    "Personal : Death : Other Death"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 27.210505,
+    "lagna": 147.210505,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.722595,
+    "jd_ut": 2448028.172222,
+    "planets": {
+      "Sun": {
+        "longitude": 31.800278,
+        "sign_index": 1,
+        "degree_in_sign": 1.800278,
+        "is_retrograde": false,
+        "speed": 0.96377
+      },
+      "Moon": {
+        "longitude": 287.745659,
+        "sign_index": 9,
+        "degree_in_sign": 17.745659,
+        "is_retrograde": false,
+        "speed": 15.527495
+      },
+      "Mars": {
+        "longitude": 325.47833,
+        "sign_index": 10,
+        "degree_in_sign": 25.47833,
+        "is_retrograde": false,
+        "speed": 0.742189
+      },
+      "Mercury": {
+        "longitude": 14.197473,
+        "sign_index": 0,
+        "degree_in_sign": 14.197473,
+        "is_retrograde": true,
+        "speed": -0.031549
+      },
+      "Jupiter": {
+        "longitude": 76.038501,
+        "sign_index": 2,
+        "degree_in_sign": 16.038501,
+        "is_retrograde": false,
+        "speed": 0.190588
+      },
+      "Venus": {
+        "longitude": 350.430633,
+        "sign_index": 11,
+        "degree_in_sign": 20.430633,
+        "is_retrograde": false,
+        "speed": 1.14247
+      },
+      "Saturn": {
+        "longitude": 271.502639,
+        "sign_index": 9,
+        "degree_in_sign": 1.502639,
+        "is_retrograde": true,
+        "speed": -0.018805
+      },
+      "Rahu": {
+        "longitude": 287.551221,
+        "sign_index": 9,
+        "degree_in_sign": 17.551221,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 107.551221,
+        "sign_index": 3,
+        "degree_in_sign": 17.551221,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

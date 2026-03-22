@@ -1,0 +1,108 @@
+{
+  "adb_id": 70533,
+  "name": "Conrad, Alfred Claude Aimé",
+  "given_name": "Alfred Claude Aimé Conrad",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2387487.561806,
+    "year": 1824,
+    "month": 8,
+    "day": 14,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Strasbourg",
+    "country": "France",
+    "lat": 48.583333,
+    "lon": 7.75
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conrad,_Alfred_Claude_Aimé",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 72.\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 5.610704,
+    "lagna": 65.610704,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.408179,
+    "jd_ut": 2387487.561806,
+    "planets": {
+      "Sun": {
+        "longitude": 119.726404,
+        "sign_index": 3,
+        "degree_in_sign": 29.726404,
+        "is_retrograde": false,
+        "speed": 0.961051
+      },
+      "Moon": {
+        "longitude": 346.03321,
+        "sign_index": 11,
+        "degree_in_sign": 16.03321,
+        "is_retrograde": false,
+        "speed": 8.782448
+      },
+      "Mars": {
+        "longitude": 192.368442,
+        "sign_index": 6,
+        "degree_in_sign": 12.368442,
+        "is_retrograde": false,
+        "speed": 0.611334
+      },
+      "Mercury": {
+        "longitude": 137.447879,
+        "sign_index": 4,
+        "degree_in_sign": 17.447879,
+        "is_retrograde": false,
+        "speed": 1.65408
+      },
+      "Jupiter": {
+        "longitude": 97.797086,
+        "sign_index": 3,
+        "degree_in_sign": 7.797086,
+        "is_retrograde": false,
+        "speed": 0.214438
+      },
+      "Venus": {
+        "longitude": 123.984591,
+        "sign_index": 4,
+        "degree_in_sign": 3.984591,
+        "is_retrograde": false,
+        "speed": 1.236605
+      },
+      "Saturn": {
+        "longitude": 45.23405,
+        "sign_index": 1,
+        "degree_in_sign": 15.23405,
+        "is_retrograde": false,
+        "speed": 0.06286
+      },
+      "Rahu": {
+        "longitude": 255.725343,
+        "sign_index": 8,
+        "degree_in_sign": 15.725343,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 75.725343,
+        "sign_index": 2,
+        "degree_in_sign": 15.725343,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

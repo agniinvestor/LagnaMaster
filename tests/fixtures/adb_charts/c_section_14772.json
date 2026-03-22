@@ -1,0 +1,108 @@
+{
+  "adb_id": 14772,
+  "name": "C-Section 14772",
+  "given_name": "C-Section 14772",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444127.572222,
+    "year": 1979,
+    "month": 9,
+    "day": 10,
+    "calendar": "g",
+    "time": "19:44",
+    "time_type": "d",
+    "hour": 19.733333,
+    "time_unknown": false,
+    "place": "Whitefish",
+    "country": "Montana",
+    "lat": 48.416667,
+    "lon": -114.333333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:C-Section_14772",
+  "source_notes": "Carol Shaw in MH 4/1980, B.C.\\n",
+  "categories": [
+    "Personal : Birth : Cesarean"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 24.311993,
+    "lagna": 294.311993,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.573428,
+    "jd_ut": 2444127.572222,
+    "planets": {
+      "Sun": {
+        "longitude": 144.169551,
+        "sign_index": 4,
+        "degree_in_sign": 24.169551,
+        "is_retrograde": false,
+        "speed": 0.972025
+      },
+      "Moon": {
+        "longitude": 27.384134,
+        "sign_index": 0,
+        "degree_in_sign": 27.384134,
+        "is_retrograde": false,
+        "speed": 17.153711
+      },
+      "Mars": {
+        "longitude": 87.999733,
+        "sign_index": 2,
+        "degree_in_sign": 27.999733,
+        "is_retrograde": false,
+        "speed": 0.620731
+      },
+      "Mercury": {
+        "longitude": 142.198729,
+        "sign_index": 4,
+        "degree_in_sign": 22.198729,
+        "is_retrograde": false,
+        "speed": 1.902815
+      },
+      "Jupiter": {
+        "longitude": 122.67544,
+        "sign_index": 4,
+        "degree_in_sign": 2.67544,
+        "is_retrograde": false,
+        "speed": 0.210962
+      },
+      "Venus": {
+        "longitude": 148.679059,
+        "sign_index": 4,
+        "degree_in_sign": 28.679059,
+        "is_retrograde": false,
+        "speed": 1.242361
+      },
+      "Saturn": {
+        "longitude": 143.743689,
+        "sign_index": 4,
+        "degree_in_sign": 23.743689,
+        "is_retrograde": false,
+        "speed": 0.12542
+      },
+      "Rahu": {
+        "longitude": 134.251919,
+        "sign_index": 4,
+        "degree_in_sign": 14.251919,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 314.251919,
+        "sign_index": 10,
+        "degree_in_sign": 14.251919,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

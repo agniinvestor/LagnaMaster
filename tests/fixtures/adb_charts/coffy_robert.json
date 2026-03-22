@@ -1,0 +1,108 @@
+{
+  "adb_id": 49663,
+  "name": "Coffy, Robert",
+  "given_name": "Robert Coffy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422622.375,
+    "year": 1920,
+    "month": 10,
+    "day": 24,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Biot",
+    "country": "France",
+    "lat": 43.633333,
+    "lon": 7.1
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coffy,_Robert",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'religion1' pdf file, p. 71.\\nSame data: Grazia Bordoni quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 1.267618,
+    "lagna": 61.267618,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.751148,
+    "jd_ut": 2422622.375,
+    "planets": {
+      "Sun": {
+        "longitude": 188.400219,
+        "sign_index": 6,
+        "degree_in_sign": 8.400219,
+        "is_retrograde": false,
+        "speed": 0.996815
+      },
+      "Moon": {
+        "longitude": 333.759977,
+        "sign_index": 11,
+        "degree_in_sign": 3.759977,
+        "is_retrograde": false,
+        "speed": 9.304834
+      },
+      "Mars": {
+        "longitude": 251.86558,
+        "sign_index": 8,
+        "degree_in_sign": 11.86558,
+        "is_retrograde": false,
+        "speed": 0.735239
+      },
+      "Mercury": {
+        "longitude": 212.370018,
+        "sign_index": 7,
+        "degree_in_sign": 2.370018,
+        "is_retrograde": false,
+        "speed": 1.019575
+      },
+      "Jupiter": {
+        "longitude": 139.148645,
+        "sign_index": 4,
+        "degree_in_sign": 19.148645,
+        "is_retrograde": false,
+        "speed": 0.174769
+      },
+      "Venus": {
+        "longitude": 218.055131,
+        "sign_index": 7,
+        "degree_in_sign": 8.055131,
+        "is_retrograde": false,
+        "speed": 1.227137
+      },
+      "Saturn": {
+        "longitude": 147.836383,
+        "sign_index": 4,
+        "degree_in_sign": 27.836383,
+        "is_retrograde": false,
+        "speed": 0.105383
+      },
+      "Rahu": {
+        "longitude": 193.856618,
+        "sign_index": 6,
+        "degree_in_sign": 13.856618,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 13.856618,
+        "sign_index": 0,
+        "degree_in_sign": 13.856618,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 835,
+  "name": "Calabresi, Luigi",
+  "given_name": "Luigi Calabresi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428851.479167,
+    "year": 1937,
+    "month": 11,
+    "day": 14,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calabresi,_Luigi",
+  "source_notes": "Bordoni quotes B.C. Datanotizie No.32, 7/2000\\n",
+  "categories": [
+    "Passions : Criminal Victim : Homicide victim",
+    "Vocation : Law : Police",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 18.709901,
+    "lagna": 108.709901,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.989304,
+    "jd_ut": 2428851.479167,
+    "planets": {
+      "Sun": {
+        "longitude": 208.190542,
+        "sign_index": 6,
+        "degree_in_sign": 28.190542,
+        "is_retrograde": false,
+        "speed": 1.006812
+      },
+      "Moon": {
+        "longitude": 328.411626,
+        "sign_index": 10,
+        "degree_in_sign": 28.411626,
+        "is_retrograde": false,
+        "speed": 12.020697
+      },
+      "Mars": {
+        "longitude": 278.638742,
+        "sign_index": 9,
+        "degree_in_sign": 8.638742,
+        "is_retrograde": false,
+        "speed": 0.740152
+      },
+      "Mercury": {
+        "longitude": 217.268598,
+        "sign_index": 7,
+        "degree_in_sign": 7.268598,
+        "is_retrograde": false,
+        "speed": 1.541232
+      },
+      "Jupiter": {
+        "longitude": 269.963254,
+        "sign_index": 8,
+        "degree_in_sign": 29.963254,
+        "is_retrograde": false,
+        "speed": 0.165574
+      },
+      "Venus": {
+        "longitude": 188.453856,
+        "sign_index": 6,
+        "degree_in_sign": 8.453856,
+        "is_retrograde": false,
+        "speed": 1.249908
+      },
+      "Saturn": {
+        "longitude": 335.64345,
+        "sign_index": 11,
+        "degree_in_sign": 5.64345,
+        "is_retrograde": true,
+        "speed": -0.031368
+      },
+      "Rahu": {
+        "longitude": 223.763435,
+        "sign_index": 7,
+        "degree_in_sign": 13.763435,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 43.763435,
+        "sign_index": 1,
+        "degree_in_sign": 13.763435,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

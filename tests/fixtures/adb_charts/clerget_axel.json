@@ -1,0 +1,113 @@
+{
+  "adb_id": 94546,
+  "name": "Clerget, Axel",
+  "given_name": "Axel Clerget",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446854.538194,
+    "year": 1987,
+    "month": 2,
+    "day": 28,
+    "calendar": "g",
+    "time": "01:55",
+    "time_type": "s",
+    "hour": 1.916667,
+    "time_unknown": false,
+    "place": "Saint Dizier",
+    "country": "France",
+    "lat": 48.633333,
+    "lon": 4.95
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clerget,_Axel",
+  "source_notes": "Marc Brun's dossier \"Jeux Olympiques d’été 2020\" (2020 Summer Olympics) quotes Acte n°211. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Healing Fields : Other Healing Fields",
+    "Vocation : Sports : Martial arts",
+    "Vocation : Sports Business : Personal Trainer",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 15.317785,
+    "lagna": 195.317785,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.677712,
+    "jd_ut": 2446854.538194,
+    "planets": {
+      "Sun": {
+        "longitude": 315.220291,
+        "sign_index": 10,
+        "degree_in_sign": 15.220291,
+        "is_retrograde": false,
+        "speed": 1.004945
+      },
+      "Moon": {
+        "longitude": 315.182954,
+        "sign_index": 10,
+        "degree_in_sign": 15.182954,
+        "is_retrograde": false,
+        "speed": 17.824953
+      },
+      "Mars": {
+        "longitude": 11.435657,
+        "sign_index": 0,
+        "degree_in_sign": 11.435657,
+        "is_retrograde": false,
+        "speed": 0.687244
+      },
+      "Mercury": {
+        "longitude": 314.595387,
+        "sign_index": 10,
+        "degree_in_sign": 14.595387,
+        "is_retrograde": true,
+        "speed": -1.066578
+      },
+      "Jupiter": {
+        "longitude": 335.677247,
+        "sign_index": 11,
+        "degree_in_sign": 5.677247,
+        "is_retrograde": false,
+        "speed": 0.234909
+      },
+      "Venus": {
+        "longitude": 272.480557,
+        "sign_index": 9,
+        "degree_in_sign": 2.480557,
+        "is_retrograde": false,
+        "speed": 1.164971
+      },
+      "Saturn": {
+        "longitude": 236.684797,
+        "sign_index": 7,
+        "degree_in_sign": 26.684797,
+        "is_retrograde": false,
+        "speed": 0.050506
+      },
+      "Rahu": {
+        "longitude": 349.744462,
+        "sign_index": 11,
+        "degree_in_sign": 19.744462,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 169.744462,
+        "sign_index": 5,
+        "degree_in_sign": 19.744462,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 68832,
+  "name": "Chevalier, Paul",
+  "given_name": "Paul Chevalier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413800.57684,
+    "year": 1896,
+    "month": 8,
+    "day": 29,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Marolles les Braults",
+    "country": "France",
+    "lat": 48.25,
+    "lon": 0.316667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevalier,_Paul",
+  "source_notes": "Didier Geslain archive, 'religion1' pdf file, p. 68.\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 13.565301,
+    "lagna": 73.565301,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.413896,
+    "jd_ut": 2413800.57684,
+    "planets": {
+      "Sun": {
+        "longitude": 133.768868,
+        "sign_index": 4,
+        "degree_in_sign": 13.768868,
+        "is_retrograde": false,
+        "speed": 0.967045
+      },
+      "Moon": {
+        "longitude": 17.512999,
+        "sign_index": 0,
+        "degree_in_sign": 17.512999,
+        "is_retrograde": false,
+        "speed": 9.08886
+      },
+      "Mars": {
+        "longitude": 45.106435,
+        "sign_index": 1,
+        "degree_in_sign": 15.106435,
+        "is_retrograde": false,
+        "speed": 0.555709
+      },
+      "Mercury": {
+        "longitude": 156.465371,
+        "sign_index": 5,
+        "degree_in_sign": 6.465371,
+        "is_retrograde": false,
+        "speed": 1.431932
+      },
+      "Jupiter": {
+        "longitude": 121.302957,
+        "sign_index": 4,
+        "degree_in_sign": 1.302957,
+        "is_retrograde": false,
+        "speed": 0.216089
+      },
+      "Venus": {
+        "longitude": 147.65175,
+        "sign_index": 4,
+        "degree_in_sign": 27.65175,
+        "is_retrograde": false,
+        "speed": 1.235672
+      },
+      "Saturn": {
+        "longitude": 201.552108,
+        "sign_index": 6,
+        "degree_in_sign": 21.552108,
+        "is_retrograde": false,
+        "speed": 0.067065
+      },
+      "Rahu": {
+        "longitude": 301.342237,
+        "sign_index": 10,
+        "degree_in_sign": 1.342237,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 121.342237,
+        "sign_index": 4,
+        "degree_in_sign": 1.342237,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

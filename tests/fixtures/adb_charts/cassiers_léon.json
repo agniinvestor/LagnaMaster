@@ -1,0 +1,111 @@
+{
+  "adb_id": 81021,
+  "name": "Cassiers, Léon",
+  "given_name": "Léon Cassiers",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426119.885417,
+    "year": 1930,
+    "month": 5,
+    "day": 23,
+    "calendar": "g",
+    "time": "10:15",
+    "time_type": "d",
+    "hour": 10.25,
+    "time_unknown": false,
+    "place": "Brussels",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.333333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassiers,_Léon",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_sc_sciences-2.pdf]. \\n(Grazia Bordoni's Science file quotes Lois Rodden).\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Teacher",
+    "Vocation : Healing Fields : Psychiatrist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 27.095007,
+    "lagna": 87.095007,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.884865,
+    "jd_ut": 2426119.885417,
+    "planets": {
+      "Sun": {
+        "longitude": 38.622192,
+        "sign_index": 1,
+        "degree_in_sign": 8.622192,
+        "is_retrograde": false,
+        "speed": 0.961236
+      },
+      "Moon": {
+        "longitude": 338.351931,
+        "sign_index": 11,
+        "degree_in_sign": 8.351931,
+        "is_retrograde": false,
+        "speed": 9.379591
+      },
+      "Mars": {
+        "longitude": 359.045852,
+        "sign_index": 11,
+        "degree_in_sign": 29.045852,
+        "is_retrograde": false,
+        "speed": 0.755368
+      },
+      "Mercury": {
+        "longitude": 33.777039,
+        "sign_index": 1,
+        "degree_in_sign": 3.777039,
+        "is_retrograde": true,
+        "speed": -0.538052
+      },
+      "Jupiter": {
+        "longitude": 59.248141,
+        "sign_index": 1,
+        "degree_in_sign": 29.248141,
+        "is_retrograde": false,
+        "speed": 0.222663
+      },
+      "Venus": {
+        "longitude": 64.933005,
+        "sign_index": 2,
+        "degree_in_sign": 4.933005,
+        "is_retrograde": false,
+        "speed": 1.210005
+      },
+      "Saturn": {
+        "longitude": 258.209904,
+        "sign_index": 8,
+        "degree_in_sign": 18.209904,
+        "is_retrograde": true,
+        "speed": -0.047735
+      },
+      "Rahu": {
+        "longitude": 8.516255,
+        "sign_index": 0,
+        "degree_in_sign": 8.516255,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 188.516255,
+        "sign_index": 6,
+        "degree_in_sign": 8.516255,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

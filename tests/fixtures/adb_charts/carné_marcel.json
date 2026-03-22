@@ -1,0 +1,110 @@
+{
+  "adb_id": 37405,
+  "name": "Carné, Marcel",
+  "given_name": "Marcel Carné",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417441.20184,
+    "year": 1906,
+    "month": 8,
+    "day": 18,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carné,_Marcel",
+  "source_notes": "Petitallot quotes B.C. Cadran No.36. 12/1996\\n",
+  "categories": [
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 26.00451,
+    "lagna": 236.00451,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.55307,
+    "jd_ut": 2417441.20184,
+    "planets": {
+      "Sun": {
+        "longitude": 122.255381,
+        "sign_index": 4,
+        "degree_in_sign": 2.255381,
+        "is_retrograde": false,
+        "speed": 0.9626
+      },
+      "Moon": {
+        "longitude": 105.495594,
+        "sign_index": 3,
+        "degree_in_sign": 15.495594,
+        "is_retrograde": false,
+        "speed": 13.197092
+      },
+      "Mars": {
+        "longitude": 111.650862,
+        "sign_index": 3,
+        "degree_in_sign": 21.650862,
+        "is_retrograde": false,
+        "speed": 0.639228
+      },
+      "Mercury": {
+        "longitude": 112.118562,
+        "sign_index": 3,
+        "degree_in_sign": 22.118562,
+        "is_retrograde": true,
+        "speed": -0.439315
+      },
+      "Jupiter": {
+        "longitude": 71.087038,
+        "sign_index": 2,
+        "degree_in_sign": 11.087038,
+        "is_retrograde": false,
+        "speed": 0.181623
+      },
+      "Venus": {
+        "longitude": 165.909942,
+        "sign_index": 5,
+        "degree_in_sign": 15.909942,
+        "is_retrograde": false,
+        "speed": 1.109946
+      },
+      "Saturn": {
+        "longitude": 320.384903,
+        "sign_index": 10,
+        "degree_in_sign": 20.384903,
+        "is_retrograde": true,
+        "speed": -0.070513
+      },
+      "Rahu": {
+        "longitude": 108.417844,
+        "sign_index": 3,
+        "degree_in_sign": 18.417844,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 288.417844,
+        "sign_index": 9,
+        "degree_in_sign": 18.417844,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

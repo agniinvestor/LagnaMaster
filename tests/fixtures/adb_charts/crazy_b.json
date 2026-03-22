@@ -1,0 +1,109 @@
+{
+  "adb_id": 68656,
+  "name": "Crazy B",
+  "given_name": "Crazy B",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439879.743056,
+    "year": 1968,
+    "month": 1,
+    "day": 24,
+    "calendar": "g",
+    "time": "06:50",
+    "time_type": "s",
+    "hour": 6.833333,
+    "time_unknown": false,
+    "place": "Sarcelles",
+    "country": "France",
+    "lat": 49.0,
+    "lon": 2.383333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crazy_B",
+  "source_notes": "Didier Geslain archive, 'rap' pdf file, p. 9.\\n",
+  "categories": [
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertain/Music : Composer/ Arranger"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 15.583778,
+    "lagna": 225.583778,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.410989,
+    "jd_ut": 2439879.743056,
+    "planets": {
+      "Sun": {
+        "longitude": 279.894297,
+        "sign_index": 9,
+        "degree_in_sign": 9.894297,
+        "is_retrograde": false,
+        "speed": 1.017214
+      },
+      "Moon": {
+        "longitude": 208.988005,
+        "sign_index": 6,
+        "degree_in_sign": 28.988005,
+        "is_retrograde": false,
+        "speed": 10.565828
+      },
+      "Mars": {
+        "longitude": 318.140835,
+        "sign_index": 10,
+        "degree_in_sign": 18.140835,
+        "is_retrograde": false,
+        "speed": 0.776855
+      },
+      "Mercury": {
+        "longitude": 296.181574,
+        "sign_index": 9,
+        "degree_in_sign": 26.181574,
+        "is_retrograde": false,
+        "speed": 1.530949
+      },
+      "Jupiter": {
+        "longitude": 130.741412,
+        "sign_index": 4,
+        "degree_in_sign": 10.741412,
+        "is_retrograde": true,
+        "speed": -0.098009
+      },
+      "Venus": {
+        "longitude": 243.553699,
+        "sign_index": 8,
+        "degree_in_sign": 3.553699,
+        "is_retrograde": false,
+        "speed": 1.219062
+      },
+      "Saturn": {
+        "longitude": 344.073545,
+        "sign_index": 11,
+        "degree_in_sign": 14.073545,
+        "is_retrograde": false,
+        "speed": 0.076542
+      },
+      "Rahu": {
+        "longitude": 359.353044,
+        "sign_index": 11,
+        "degree_in_sign": 29.353044,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 179.353044,
+        "sign_index": 5,
+        "degree_in_sign": 29.353044,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

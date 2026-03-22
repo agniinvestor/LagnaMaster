@@ -1,0 +1,108 @@
+{
+  "adb_id": 76893,
+  "name": "Czapinski, Janusz",
+  "given_name": "Janusz Czapinski",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433671.916667,
+    "year": 1951,
+    "month": 1,
+    "day": 25,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Pabianice",
+    "country": "Poland",
+    "lat": 51.666667,
+    "lon": 19.366667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Czapinski,_Janusz",
+  "source_notes": "PTA quotes him, reported by Miroslaw Czylkowi. [http://www.astrolog.org.pl/baza-horoskopow/Czapi%C5%84ski_Janusz]\\n",
+  "categories": [
+    "Vocation : Healing Fields : Psychologist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 2.975694,
+    "lagna": 2.975694,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.173615,
+    "jd_ut": 2433671.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 281.449419,
+        "sign_index": 9,
+        "degree_in_sign": 11.449419,
+        "is_retrograde": false,
+        "speed": 1.016406
+      },
+      "Moon": {
+        "longitude": 127.06938,
+        "sign_index": 4,
+        "degree_in_sign": 7.06938,
+        "is_retrograde": false,
+        "speed": 15.541806
+      },
+      "Mars": {
+        "longitude": 309.085172,
+        "sign_index": 10,
+        "degree_in_sign": 9.085172,
+        "is_retrograde": false,
+        "speed": 0.786756
+      },
+      "Mercury": {
+        "longitude": 257.006335,
+        "sign_index": 8,
+        "degree_in_sign": 17.006335,
+        "is_retrograde": false,
+        "speed": 1.073993
+      },
+      "Jupiter": {
+        "longitude": 316.50815,
+        "sign_index": 10,
+        "degree_in_sign": 16.50815,
+        "is_retrograde": false,
+        "speed": 0.219707
+      },
+      "Venus": {
+        "longitude": 298.795025,
+        "sign_index": 9,
+        "degree_in_sign": 28.795025,
+        "is_retrograde": false,
+        "speed": 1.250455
+      },
+      "Saturn": {
+        "longitude": 159.029706,
+        "sign_index": 5,
+        "degree_in_sign": 9.029706,
+        "is_retrograde": true,
+        "speed": -0.023875
+      },
+      "Rahu": {
+        "longitude": 328.318496,
+        "sign_index": 10,
+        "degree_in_sign": 28.318496,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 148.318496,
+        "sign_index": 4,
+        "degree_in_sign": 28.318496,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

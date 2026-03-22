@@ -1,0 +1,109 @@
+{
+  "adb_id": 65036,
+  "name": "Colombani, Roger",
+  "given_name": "Roger Colombani",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423884.708333,
+    "year": 1924,
+    "month": 4,
+    "day": 9,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "d",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Toulon",
+    "country": "France",
+    "lat": 43.116667,
+    "lon": 5.933333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colombani,_Roger",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 202.\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 29.136394,
+    "lagna": 329.136394,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.799409,
+    "jd_ut": 2423884.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 356.277447,
+        "sign_index": 11,
+        "degree_in_sign": 26.277447,
+        "is_retrograde": false,
+        "speed": 0.98195
+      },
+      "Moon": {
+        "longitude": 50.631337,
+        "sign_index": 1,
+        "degree_in_sign": 20.631337,
+        "is_retrograde": false,
+        "speed": 15.568187
+      },
+      "Mars": {
+        "longitude": 267.966326,
+        "sign_index": 8,
+        "degree_in_sign": 27.966326,
+        "is_retrograde": false,
+        "speed": 0.607214
+      },
+      "Mercury": {
+        "longitude": 13.333581,
+        "sign_index": 0,
+        "degree_in_sign": 13.333581,
+        "is_retrograde": false,
+        "speed": 1.627196
+      },
+      "Jupiter": {
+        "longitude": 237.089489,
+        "sign_index": 7,
+        "degree_in_sign": 27.089489,
+        "is_retrograde": true,
+        "speed": -0.009895
+      },
+      "Venus": {
+        "longitude": 41.373739,
+        "sign_index": 1,
+        "degree_in_sign": 11.373739,
+        "is_retrograde": false,
+        "speed": 1.052647
+      },
+      "Saturn": {
+        "longitude": 186.993161,
+        "sign_index": 6,
+        "degree_in_sign": 6.993161,
+        "is_retrograde": true,
+        "speed": -0.074402
+      },
+      "Rahu": {
+        "longitude": 126.962941,
+        "sign_index": 4,
+        "degree_in_sign": 6.962941,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.962941,
+        "sign_index": 10,
+        "degree_in_sign": 6.962941,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

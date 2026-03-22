@@ -1,0 +1,114 @@
+{
+  "adb_id": 82997,
+  "name": "Christensen, Frank",
+  "given_name": "Frank Christensen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418823.902778,
+    "year": 1910,
+    "month": 6,
+    "day": 1,
+    "calendar": "g",
+    "time": "02:40",
+    "time_type": "s",
+    "hour": 2.666667,
+    "time_unknown": false,
+    "place": "Salt Lake City",
+    "country": "Utah",
+    "lat": 40.766667,
+    "lon": -111.883333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christensen,_Frank",
+  "source_notes": "Birth certificate provided by Sy Scholfield.\\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Sports : Football",
+    "Vocation : Sports : Track and Field",
+    "Vocation : Misc. : Mining",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 5.539187,
+    "lagna": 335.539187,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.60593,
+    "jd_ut": 2418823.902778,
+    "planets": {
+      "Sun": {
+        "longitude": 47.399624,
+        "sign_index": 1,
+        "degree_in_sign": 17.399624,
+        "is_retrograde": false,
+        "speed": 0.958126
+      },
+      "Moon": {
+        "longitude": 323.774117,
+        "sign_index": 10,
+        "degree_in_sign": 23.774117,
+        "is_retrograde": false,
+        "speed": 11.947427
+      },
+      "Mars": {
+        "longitude": 86.357198,
+        "sign_index": 2,
+        "degree_in_sign": 26.357198,
+        "is_retrograde": false,
+        "speed": 0.621459
+      },
+      "Mercury": {
+        "longitude": 37.608592,
+        "sign_index": 1,
+        "degree_in_sign": 7.608592,
+        "is_retrograde": true,
+        "speed": -0.377262
+      },
+      "Jupiter": {
+        "longitude": 162.012584,
+        "sign_index": 5,
+        "degree_in_sign": 12.012584,
+        "is_retrograde": true,
+        "speed": -0.00147
+      },
+      "Venus": {
+        "longitude": 4.905657,
+        "sign_index": 0,
+        "degree_in_sign": 4.905657,
+        "is_retrograde": false,
+        "speed": 1.120235
+      },
+      "Saturn": {
+        "longitude": 9.125128,
+        "sign_index": 0,
+        "degree_in_sign": 9.125128,
+        "is_retrograde": false,
+        "speed": 0.109115
+      },
+      "Rahu": {
+        "longitude": 35.145616,
+        "sign_index": 1,
+        "degree_in_sign": 5.145616,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 215.145616,
+        "sign_index": 7,
+        "degree_in_sign": 5.145616,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 47921,
+  "name": "Conway, Derek Leslie",
+  "given_name": "Derek Leslie Conway",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2434423.770833,
+    "year": 1953,
+    "month": 2,
+    "day": 15,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Newcastle upon Tyne",
+    "country": "England",
+    "lat": 54.983333,
+    "lon": -1.583333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conway,_Derek_Leslie",
+  "source_notes": "Pulsar collection quotes him\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 9.238449,
+    "lagna": 249.238449,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.202363,
+    "jd_ut": 2434423.770833,
+    "planets": {
+      "Sun": {
+        "longitude": 303.085026,
+        "sign_index": 10,
+        "degree_in_sign": 3.085026,
+        "is_retrograde": false,
+        "speed": 1.010198
+      },
+      "Moon": {
+        "longitude": 320.661053,
+        "sign_index": 10,
+        "degree_in_sign": 20.661053,
+        "is_retrograde": false,
+        "speed": 15.800432
+      },
+      "Mars": {
+        "longitude": 342.258548,
+        "sign_index": 11,
+        "degree_in_sign": 12.258548,
+        "is_retrograde": false,
+        "speed": 0.75439
+      },
+      "Mercury": {
+        "longitude": 312.788121,
+        "sign_index": 10,
+        "degree_in_sign": 12.788121,
+        "is_retrograde": false,
+        "speed": 1.829894
+      },
+      "Jupiter": {
+        "longitude": 20.50434,
+        "sign_index": 0,
+        "degree_in_sign": 20.50434,
+        "is_retrograde": false,
+        "speed": 0.126558
+      },
+      "Venus": {
+        "longitude": 349.108854,
+        "sign_index": 11,
+        "degree_in_sign": 19.108854,
+        "is_retrograde": false,
+        "speed": 0.880184
+      },
+      "Saturn": {
+        "longitude": 184.001446,
+        "sign_index": 6,
+        "degree_in_sign": 4.001446,
+        "is_retrograde": true,
+        "speed": -0.017868
+      },
+      "Rahu": {
+        "longitude": 288.476197,
+        "sign_index": 9,
+        "degree_in_sign": 18.476197,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 108.476197,
+        "sign_index": 3,
+        "degree_in_sign": 18.476197,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

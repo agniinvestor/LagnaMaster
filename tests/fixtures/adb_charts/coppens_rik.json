@@ -1,0 +1,110 @@
+{
+  "adb_id": 104286,
+  "name": "Coppens, Rik",
+  "given_name": "Rik Coppens",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426095.958333,
+    "year": 1930,
+    "month": 4,
+    "day": 29,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "d",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Antwerpen",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 4.416667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coppens,_Rik",
+  "source_notes": "Grazia Bordoni database quotes Gauquelin. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 29.257093,
+    "lagna": 89.257093,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.88395,
+    "jd_ut": 2426095.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 15.513505,
+        "sign_index": 0,
+        "degree_in_sign": 15.513505,
+        "is_retrograde": false,
+        "speed": 0.971657
+      },
+      "Moon": {
+        "longitude": 23.792046,
+        "sign_index": 0,
+        "degree_in_sign": 23.792046,
+        "is_retrograde": false,
+        "speed": 10.312927
+      },
+      "Mars": {
+        "longitude": 340.774031,
+        "sign_index": 11,
+        "degree_in_sign": 10.774031,
+        "is_retrograde": false,
+        "speed": 0.771249
+      },
+      "Mercury": {
+        "longitude": 35.780076,
+        "sign_index": 1,
+        "degree_in_sign": 5.780076,
+        "is_retrograde": false,
+        "speed": 0.832955
+      },
+      "Jupiter": {
+        "longitude": 54.117918,
+        "sign_index": 1,
+        "degree_in_sign": 24.117918,
+        "is_retrograde": false,
+        "speed": 0.204108
+      },
+      "Venus": {
+        "longitude": 35.812961,
+        "sign_index": 1,
+        "degree_in_sign": 5.812961,
+        "is_retrograde": false,
+        "speed": 1.223994
+      },
+      "Saturn": {
+        "longitude": 258.951517,
+        "sign_index": 8,
+        "degree_in_sign": 18.951517,
+        "is_retrograde": true,
+        "speed": -0.012867
+      },
+      "Rahu": {
+        "longitude": 9.784201,
+        "sign_index": 0,
+        "degree_in_sign": 9.784201,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 189.784201,
+        "sign_index": 6,
+        "degree_in_sign": 9.784201,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

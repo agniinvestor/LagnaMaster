@@ -1,0 +1,108 @@
+{
+  "adb_id": 8803,
+  "name": "Computer Programmer 8803",
+  "given_name": "Computer Programmer 8803",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430065.045139,
+    "year": 1941,
+    "month": 3,
+    "day": 11,
+    "calendar": "g",
+    "time": "08:05",
+    "time_type": "s",
+    "hour": 8.083333,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Computer_Programmer_8803",
+  "source_notes": "LMR quotes him\\n",
+  "categories": [
+    "Vocation : Computer : Programmer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 18.884535,
+    "lagna": 348.884535,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.035704,
+    "jd_ut": 2430065.045139,
+    "planets": {
+      "Sun": {
+        "longitude": 327.5402,
+        "sign_index": 10,
+        "degree_in_sign": 27.5402,
+        "is_retrograde": false,
+        "speed": 0.997682
+      },
+      "Moon": {
+        "longitude": 120.977825,
+        "sign_index": 4,
+        "degree_in_sign": 0.977825,
+        "is_retrograde": false,
+        "speed": 17.966423
+      },
+      "Mars": {
+        "longitude": 261.79838,
+        "sign_index": 8,
+        "degree_in_sign": 21.79838,
+        "is_retrograde": false,
+        "speed": 0.689708
+      },
+      "Mercury": {
+        "longitude": 305.837361,
+        "sign_index": 10,
+        "degree_in_sign": 5.837361,
+        "is_retrograde": true,
+        "speed": -0.012038
+      },
+      "Jupiter": {
+        "longitude": 20.091932,
+        "sign_index": 0,
+        "degree_in_sign": 20.091932,
+        "is_retrograde": false,
+        "speed": 0.187087
+      },
+      "Venus": {
+        "longitude": 317.688383,
+        "sign_index": 10,
+        "degree_in_sign": 17.688383,
+        "is_retrograde": false,
+        "speed": 1.245313
+      },
+      "Saturn": {
+        "longitude": 18.071215,
+        "sign_index": 0,
+        "degree_in_sign": 18.071215,
+        "is_retrograde": false,
+        "speed": 0.096955
+      },
+      "Rahu": {
+        "longitude": 159.454063,
+        "sign_index": 5,
+        "degree_in_sign": 9.454063,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 339.454063,
+        "sign_index": 11,
+        "degree_in_sign": 9.454063,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

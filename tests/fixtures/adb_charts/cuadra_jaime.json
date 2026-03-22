@@ -1,0 +1,115 @@
+{
+  "adb_id": 91301,
+  "name": "Cuadra, Jaime",
+  "given_name": "Jaime Cuadra",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440917.5625,
+    "year": 1970,
+    "month": 11,
+    "day": 26,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Jesús María",
+    "country": "Peru",
+    "lat": -12.066667,
+    "lon": -77.066667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuadra,_Jaime",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Business/Marketing : Product Marketing",
+    "Vocation : Entertainment : Voice-Over",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Politics : Diplomat"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 18.326033,
+    "lagna": 48.326033,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.450675,
+    "jd_ut": 2440917.5625,
+    "planets": {
+      "Sun": {
+        "longitude": 220.934948,
+        "sign_index": 7,
+        "degree_in_sign": 10.934948,
+        "is_retrograde": false,
+        "speed": 1.012555
+      },
+      "Moon": {
+        "longitude": 198.259335,
+        "sign_index": 6,
+        "degree_in_sign": 18.259335,
+        "is_retrograde": false,
+        "speed": 17.290683
+      },
+      "Mars": {
+        "longitude": 180.431075,
+        "sign_index": 6,
+        "degree_in_sign": 0.431075,
+        "is_retrograde": false,
+        "speed": 0.635382
+      },
+      "Mercury": {
+        "longitude": 237.564405,
+        "sign_index": 7,
+        "degree_in_sign": 27.564405,
+        "is_retrograde": false,
+        "speed": 1.453925
+      },
+      "Jupiter": {
+        "longitude": 206.925055,
+        "sign_index": 6,
+        "degree_in_sign": 26.925055,
+        "is_retrograde": false,
+        "speed": 0.217479
+      },
+      "Venus": {
+        "longitude": 196.645441,
+        "sign_index": 6,
+        "degree_in_sign": 16.645441,
+        "is_retrograde": true,
+        "speed": -0.162015
+      },
+      "Saturn": {
+        "longitude": 24.470593,
+        "sign_index": 0,
+        "degree_in_sign": 24.470593,
+        "is_retrograde": true,
+        "speed": -0.076249
+      },
+      "Rahu": {
+        "longitude": 304.356872,
+        "sign_index": 10,
+        "degree_in_sign": 4.356872,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 124.356872,
+        "sign_index": 4,
+        "degree_in_sign": 4.356872,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "adb_id": 19525,
+  "name": "Castle, Barbara",
+  "given_name": "Barbara Castle",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2418951.104167,
+    "year": 1910,
+    "month": 10,
+    "day": 6,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "s",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Chesterfield",
+    "country": "England",
+    "lat": 53.25,
+    "lon": -1.416667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castle,_Barbara",
+  "source_notes": "Frank C. Clifford quotes the Astrological Association from her\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids none",
+    "Lifestyle : Work : Mentor/Tutor",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Public office",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 0.102928,
+    "lagna": 240.102928,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.610793,
+    "jd_ut": 2418951.104167,
+    "planets": {
+      "Sun": {
+        "longitude": 169.847835,
+        "sign_index": 5,
+        "degree_in_sign": 19.847835,
+        "is_retrograde": false,
+        "speed": 0.986936
+      },
+      "Moon": {
+        "longitude": 205.754619,
+        "sign_index": 6,
+        "degree_in_sign": 25.754619,
+        "is_retrograde": false,
+        "speed": 8.557103
+      },
+      "Mars": {
+        "longitude": 166.892606,
+        "sign_index": 5,
+        "degree_in_sign": 16.892606,
+        "is_retrograde": false,
+        "speed": 0.654322
+      },
+      "Mercury": {
+        "longitude": 153.741825,
+        "sign_index": 5,
+        "degree_in_sign": 3.741825,
+        "is_retrograde": false,
+        "speed": 0.214043
+      },
+      "Jupiter": {
+        "longitude": 179.582024,
+        "sign_index": 5,
+        "degree_in_sign": 29.582024,
+        "is_retrograde": false,
+        "speed": 0.215721
+      },
+      "Venus": {
+        "longitude": 156.942622,
+        "sign_index": 5,
+        "degree_in_sign": 6.942622,
+        "is_retrograde": false,
+        "speed": 1.246261
+      },
+      "Saturn": {
+        "longitude": 12.101352,
+        "sign_index": 0,
+        "degree_in_sign": 12.101352,
+        "is_retrograde": true,
+        "speed": -0.071063
+      },
+      "Rahu": {
+        "longitude": 28.404947,
+        "sign_index": 0,
+        "degree_in_sign": 28.404947,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 208.404947,
+        "sign_index": 6,
+        "degree_in_sign": 28.404947,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

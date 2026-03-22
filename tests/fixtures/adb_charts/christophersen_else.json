@@ -1,0 +1,108 @@
+{
+  "adb_id": 97142,
+  "name": "Christophersen, Else",
+  "given_name": "Else Christophersen",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420539.840278,
+    "year": 1915,
+    "month": 2,
+    "day": 11,
+    "calendar": "g",
+    "time": "09:10",
+    "time_type": "s",
+    "hour": 9.166667,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christophersen,_Else",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Sports : Equestrian"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 29.849761,
+    "lagna": 329.849761,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.67153,
+    "jd_ut": 2420539.840278,
+    "planets": {
+      "Sun": {
+        "longitude": 298.855835,
+        "sign_index": 9,
+        "degree_in_sign": 28.855835,
+        "is_retrograde": false,
+        "speed": 1.011848
+      },
+      "Moon": {
+        "longitude": 262.932932,
+        "sign_index": 8,
+        "degree_in_sign": 22.932932,
+        "is_retrograde": false,
+        "speed": 10.917242
+      },
+      "Mars": {
+        "longitude": 286.755761,
+        "sign_index": 9,
+        "degree_in_sign": 16.755761,
+        "is_retrograde": false,
+        "speed": 0.782746
+      },
+      "Mercury": {
+        "longitude": 315.2685,
+        "sign_index": 10,
+        "degree_in_sign": 15.2685,
+        "is_retrograde": false,
+        "speed": 0.250509
+      },
+      "Jupiter": {
+        "longitude": 309.065562,
+        "sign_index": 10,
+        "degree_in_sign": 9.065562,
+        "is_retrograde": false,
+        "speed": 0.239303
+      },
+      "Venus": {
+        "longitude": 252.111475,
+        "sign_index": 8,
+        "degree_in_sign": 12.111475,
+        "is_retrograde": false,
+        "speed": 1.037214
+      },
+      "Saturn": {
+        "longitude": 62.898461,
+        "sign_index": 2,
+        "degree_in_sign": 2.898461,
+        "is_retrograde": true,
+        "speed": -0.027677
+      },
+      "Rahu": {
+        "longitude": 304.214489,
+        "sign_index": 10,
+        "degree_in_sign": 4.214489,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 124.214489,
+        "sign_index": 4,
+        "degree_in_sign": 4.214489,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

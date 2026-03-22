@@ -1,0 +1,108 @@
+{
+  "adb_id": 59399,
+  "name": "Charles, Duke of Kendal",
+  "given_name": "Duke of Kendal Charles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2329749.199074,
+    "year": 1666,
+    "month": 7,
+    "day": 4,
+    "calendar": "j",
+    "time": "16:46",
+    "time_type": "l",
+    "hour": 16.766667,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles,_Duke_of_Kendal",
+  "source_notes": "Sy Scholfield quotes \"Mrs. Dawson's Diary concerning the births, ages, and deaths of James the IId's children\" in \"Reliquiæ Hearnianæ: the remains of Thomas Hearne, extracts from his MS. diaries, collected with a few notes by P. Bliss, Volume 1\" by Thomas Hearne (Oxford: James Wright, 1857), p. 275: \"Charles, duke of Kendall, was born July 4, 1666, at 13 minutes and an halfe before 5 in the evening, and dyed May 22, 1667.\" Mrs Dawson was the lady of the bedchamber (midwife) to Anne Hyde, in attendance when Anne gave birth to Charles.\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 28.131287,
+    "lagna": 208.131287,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.202461,
+    "jd_ut": 2329749.199074,
+    "planets": {
+      "Sun": {
+        "longitude": 93.043852,
+        "sign_index": 3,
+        "degree_in_sign": 3.043852,
+        "is_retrograde": false,
+        "speed": 0.953807
+      },
+      "Moon": {
+        "longitude": 254.654846,
+        "sign_index": 8,
+        "degree_in_sign": 14.654846,
+        "is_retrograde": false,
+        "speed": 13.394148
+      },
+      "Mars": {
+        "longitude": 174.581884,
+        "sign_index": 5,
+        "degree_in_sign": 24.581884,
+        "is_retrograde": false,
+        "speed": 0.537616
+      },
+      "Mercury": {
+        "longitude": 79.711545,
+        "sign_index": 2,
+        "degree_in_sign": 19.711545,
+        "is_retrograde": false,
+        "speed": 1.924748
+      },
+      "Jupiter": {
+        "longitude": 339.54306,
+        "sign_index": 11,
+        "degree_in_sign": 9.54306,
+        "is_retrograde": false,
+        "speed": 0.012322
+      },
+      "Venus": {
+        "longitude": 114.559426,
+        "sign_index": 3,
+        "degree_in_sign": 24.559426,
+        "is_retrograde": false,
+        "speed": 1.219871
+      },
+      "Saturn": {
+        "longitude": 267.518911,
+        "sign_index": 8,
+        "degree_in_sign": 27.518911,
+        "is_retrograde": true,
+        "speed": -0.073189
+      },
+      "Rahu": {
+        "longitude": 75.411418,
+        "sign_index": 2,
+        "degree_in_sign": 15.411418,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 255.411418,
+        "sign_index": 8,
+        "degree_in_sign": 15.411418,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

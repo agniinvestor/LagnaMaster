@@ -1,0 +1,108 @@
+{
+  "adb_id": 71432,
+  "name": "Carrasco Formiguera, Manuel",
+  "given_name": "Manuel Carrasco Formiguera",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411461.358519,
+    "year": 1890,
+    "month": 4,
+    "day": 3,
+    "calendar": "g",
+    "time": "20:45",
+    "time_type": "l",
+    "hour": 20.75,
+    "time_unknown": false,
+    "place": "Barcelona",
+    "country": "Spain",
+    "lat": 41.383333,
+    "lon": 2.183333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrasco_Formiguera,_Manuel",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 27.141487,
+    "lagna": 177.141487,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.324475,
+    "jd_ut": 2411461.358519,
+    "planets": {
+      "Sun": {
+        "longitude": 351.720083,
+        "sign_index": 11,
+        "degree_in_sign": 21.720083,
+        "is_retrograde": false,
+        "speed": 0.983888
+      },
+      "Moon": {
+        "longitude": 154.001493,
+        "sign_index": 5,
+        "degree_in_sign": 4.001493,
+        "is_retrograde": false,
+        "speed": 9.405173
+      },
+      "Mars": {
+        "longitude": 228.747703,
+        "sign_index": 7,
+        "degree_in_sign": 18.747703,
+        "is_retrograde": false,
+        "speed": 0.209916
+      },
+      "Mercury": {
+        "longitude": 345.96999,
+        "sign_index": 11,
+        "degree_in_sign": 15.96999,
+        "is_retrograde": false,
+        "speed": 1.978193
+      },
+      "Jupiter": {
+        "longitude": 285.094595,
+        "sign_index": 9,
+        "degree_in_sign": 15.094595,
+        "is_retrograde": false,
+        "speed": 0.154495
+      },
+      "Venus": {
+        "longitude": 2.762998,
+        "sign_index": 0,
+        "degree_in_sign": 2.762998,
+        "is_retrograde": false,
+        "speed": 1.237414
+      },
+      "Saturn": {
+        "longitude": 125.234408,
+        "sign_index": 4,
+        "degree_in_sign": 5.234408,
+        "is_retrograde": true,
+        "speed": -0.042419
+      },
+      "Rahu": {
+        "longitude": 65.30236,
+        "sign_index": 2,
+        "degree_in_sign": 5.30236,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 245.30236,
+        "sign_index": 8,
+        "degree_in_sign": 5.30236,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

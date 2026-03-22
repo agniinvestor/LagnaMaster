@@ -1,0 +1,111 @@
+{
+  "adb_id": 81058,
+  "name": "Colin, Élie",
+  "given_name": "Élie Colin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2397820.661141,
+    "year": 1852,
+    "month": 11,
+    "day": 28,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Graulhet",
+    "country": "France",
+    "lat": 43.761667,
+    "lon": 1.989167
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colin,_Élie",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Astronomy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 14.936342,
+    "lagna": 164.936342,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.803085,
+    "jd_ut": 2397820.661141,
+    "planets": {
+      "Sun": {
+        "longitude": 224.334359,
+        "sign_index": 7,
+        "degree_in_sign": 14.334359,
+        "is_retrograde": false,
+        "speed": 1.013276
+      },
+      "Moon": {
+        "longitude": 59.076568,
+        "sign_index": 1,
+        "degree_in_sign": 29.076568,
+        "is_retrograde": false,
+        "speed": 9.326625
+      },
+      "Mars": {
+        "longitude": 239.08944,
+        "sign_index": 7,
+        "degree_in_sign": 29.08944,
+        "is_retrograde": false,
+        "speed": 0.748356
+      },
+      "Mercury": {
+        "longitude": 244.830874,
+        "sign_index": 8,
+        "degree_in_sign": 4.830874,
+        "is_retrograde": false,
+        "speed": 1.24568
+      },
+      "Jupiter": {
+        "longitude": 222.644147,
+        "sign_index": 7,
+        "degree_in_sign": 12.644147,
+        "is_retrograde": false,
+        "speed": 0.223997
+      },
+      "Venus": {
+        "longitude": 185.155917,
+        "sign_index": 6,
+        "degree_in_sign": 5.155917,
+        "is_retrograde": false,
+        "speed": 1.201779
+      },
+      "Saturn": {
+        "longitude": 20.987695,
+        "sign_index": 0,
+        "degree_in_sign": 20.987695,
+        "is_retrograde": true,
+        "speed": -0.070823
+      },
+      "Rahu": {
+        "longitude": 68.152026,
+        "sign_index": 2,
+        "degree_in_sign": 8.152026,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 248.152026,
+        "sign_index": 8,
+        "degree_in_sign": 8.152026,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 71520,
+  "name": "Cabello, Victoria",
+  "given_name": "Victoria Cabello",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2442483.916667,
+    "year": 1975,
+    "month": 3,
+    "day": 12,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabello,_Victoria",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file, quotes her. \\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.562112,
+    "lagna": 35.562112,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.510573,
+    "jd_ut": 2442483.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 327.689515,
+        "sign_index": 10,
+        "degree_in_sign": 27.689515,
+        "is_retrograde": false,
+        "speed": 0.998488
+      },
+      "Moon": {
+        "longitude": 321.362693,
+        "sign_index": 10,
+        "degree_in_sign": 21.362693,
+        "is_retrograde": false,
+        "speed": 8.977162
+      },
+      "Mars": {
+        "longitude": 283.410666,
+        "sign_index": 9,
+        "degree_in_sign": 13.410666,
+        "is_retrograde": false,
+        "speed": 0.75561
+      },
+      "Mercury": {
+        "longitude": 301.215451,
+        "sign_index": 10,
+        "degree_in_sign": 1.215451,
+        "is_retrograde": false,
+        "speed": 1.23275
+      },
+      "Jupiter": {
+        "longitude": 334.964916,
+        "sign_index": 11,
+        "degree_in_sign": 4.964916,
+        "is_retrograde": false,
+        "speed": 0.241473
+      },
+      "Venus": {
+        "longitude": 357.368279,
+        "sign_index": 11,
+        "degree_in_sign": 27.368279,
+        "is_retrograde": false,
+        "speed": 1.221152
+      },
+      "Saturn": {
+        "longitude": 78.431701,
+        "sign_index": 2,
+        "degree_in_sign": 18.431701,
+        "is_retrograde": true,
+        "speed": -0.003644
+      },
+      "Rahu": {
+        "longitude": 221.352571,
+        "sign_index": 7,
+        "degree_in_sign": 11.352571,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 41.352571,
+        "sign_index": 1,
+        "degree_in_sign": 11.352571,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

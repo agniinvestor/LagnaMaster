@@ -1,0 +1,108 @@
+{
+  "adb_id": 62198,
+  "name": "Catharina-Amalia, Princess of Orange",
+  "given_name": "Princess of Orange Catharina-Amalia",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2452981.167361,
+    "year": 2003,
+    "month": 12,
+    "day": 7,
+    "calendar": "g",
+    "time": "17:01",
+    "time_type": "s",
+    "hour": 17.016667,
+    "time_unknown": false,
+    "place": "The Hague",
+    "country": "Netherlands",
+    "lat": 52.1,
+    "lon": 4.3
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Catharina-Amalia,_Princess_of_Orange",
+  "source_notes": "Sy Scholfield quotes news reports, for example: http://nos.nl/archief/2004/nieuws/index.html#@http://nos.nl/archief/2004/nieuws/dossiers/koningskind/2003/december/0712_geboorteverhaal.htm\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 6.865738,
+    "lagna": 36.865738,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.912019,
+    "jd_ut": 2452981.167361,
+    "planets": {
+      "Sun": {
+        "longitude": 231.215737,
+        "sign_index": 7,
+        "degree_in_sign": 21.215737,
+        "is_retrograde": false,
+        "speed": 1.014992
+      },
+      "Moon": {
+        "longitude": 38.741016,
+        "sign_index": 1,
+        "degree_in_sign": 8.741016,
+        "is_retrograde": false,
+        "speed": 12.663711
+      },
+      "Mars": {
+        "longitude": 331.04399,
+        "sign_index": 11,
+        "degree_in_sign": 1.04399,
+        "is_retrograde": false,
+        "speed": 0.556307
+      },
+      "Mercury": {
+        "longitude": 251.962576,
+        "sign_index": 8,
+        "degree_in_sign": 11.962576,
+        "is_retrograde": false,
+        "speed": 1.123998
+      },
+      "Jupiter": {
+        "longitude": 143.82722,
+        "sign_index": 4,
+        "degree_in_sign": 23.82722,
+        "is_retrograde": false,
+        "speed": 0.083133
+      },
+      "Venus": {
+        "longitude": 259.264432,
+        "sign_index": 8,
+        "degree_in_sign": 19.264432,
+        "is_retrograde": false,
+        "speed": 1.238855
+      },
+      "Saturn": {
+        "longitude": 77.741645,
+        "sign_index": 2,
+        "degree_in_sign": 17.741645,
+        "is_retrograde": true,
+        "speed": -0.068968
+      },
+      "Rahu": {
+        "longitude": 25.082029,
+        "sign_index": 0,
+        "degree_in_sign": 25.082029,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 205.082029,
+        "sign_index": 6,
+        "degree_in_sign": 25.082029,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

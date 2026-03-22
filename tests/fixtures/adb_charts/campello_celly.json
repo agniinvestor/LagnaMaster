@@ -1,0 +1,114 @@
+{
+  "adb_id": 99381,
+  "name": "Campello, Celly",
+  "given_name": "Celly Campello",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430528.791667,
+    "year": 1942,
+    "month": 6,
+    "day": 18,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Bela Vista (São Paulo)",
+    "country": "Brazil",
+    "lat": -23.083333,
+    "lon": -47.9
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campello,_Celly",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 1.782199,
+    "lagna": 1.782199,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.053435,
+    "jd_ut": 2430528.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 63.35844,
+        "sign_index": 2,
+        "degree_in_sign": 3.35844,
+        "is_retrograde": false,
+        "speed": 0.954806
+      },
+      "Moon": {
+        "longitude": 111.90145,
+        "sign_index": 3,
+        "degree_in_sign": 21.90145,
+        "is_retrograde": false,
+        "speed": 16.881696
+      },
+      "Mars": {
+        "longitude": 99.499692,
+        "sign_index": 3,
+        "degree_in_sign": 9.499692,
+        "is_retrograde": false,
+        "speed": 0.618333
+      },
+      "Mercury": {
+        "longitude": 55.39656,
+        "sign_index": 1,
+        "degree_in_sign": 25.39656,
+        "is_retrograde": true,
+        "speed": -0.419228
+      },
+      "Jupiter": {
+        "longitude": 68.73375,
+        "sign_index": 2,
+        "degree_in_sign": 8.73375,
+        "is_retrograde": false,
+        "speed": 0.227987
+      },
+      "Venus": {
+        "longitude": 25.699064,
+        "sign_index": 0,
+        "degree_in_sign": 25.699064,
+        "is_retrograde": false,
+        "speed": 1.162151
+      },
+      "Saturn": {
+        "longitude": 42.131296,
+        "sign_index": 1,
+        "degree_in_sign": 12.131296,
+        "is_retrograde": false,
+        "speed": 0.123777
+      },
+      "Rahu": {
+        "longitude": 134.879175,
+        "sign_index": 4,
+        "degree_in_sign": 14.879175,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 314.879175,
+        "sign_index": 10,
+        "degree_in_sign": 14.879175,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

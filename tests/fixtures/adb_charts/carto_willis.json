@@ -1,0 +1,112 @@
+{
+  "adb_id": 85881,
+  "name": "Carto, Willis",
+  "given_name": "Willis Carto",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424714.333333,
+    "year": 1926,
+    "month": 7,
+    "day": 17,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Fort Wayne",
+    "country": "Indiana",
+    "lat": 41.133333,
+    "lon": -85.133333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carto,_Willis",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana Archives. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Personal : Death : Illness/ Disease",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.192696,
+    "lagna": 181.192696,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.831127,
+    "jd_ut": 2424714.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 91.629632,
+        "sign_index": 3,
+        "degree_in_sign": 1.629632,
+        "is_retrograde": false,
+        "speed": 0.954107
+      },
+      "Moon": {
+        "longitude": 179.110756,
+        "sign_index": 5,
+        "degree_in_sign": 29.110756,
+        "is_retrograde": false,
+        "speed": 9.920556
+      },
+      "Mars": {
+        "longitude": 358.658222,
+        "sign_index": 11,
+        "degree_in_sign": 28.658222,
+        "is_retrograde": false,
+        "speed": 0.611871
+      },
+      "Mercury": {
+        "longitude": 116.543935,
+        "sign_index": 3,
+        "degree_in_sign": 26.543935,
+        "is_retrograde": false,
+        "speed": 0.527422
+      },
+      "Jupiter": {
+        "longitude": 302.809485,
+        "sign_index": 10,
+        "degree_in_sign": 2.809485,
+        "is_retrograde": true,
+        "speed": -0.093284
+      },
+      "Venus": {
+        "longitude": 59.502964,
+        "sign_index": 1,
+        "degree_in_sign": 29.502964,
+        "is_retrograde": false,
+        "speed": 1.187013
+      },
+      "Saturn": {
+        "longitude": 206.622019,
+        "sign_index": 6,
+        "degree_in_sign": 26.622019,
+        "is_retrograde": true,
+        "speed": -0.010683
+      },
+      "Rahu": {
+        "longitude": 82.999384,
+        "sign_index": 2,
+        "degree_in_sign": 22.999384,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 262.999384,
+        "sign_index": 8,
+        "degree_in_sign": 22.999384,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

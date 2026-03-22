@@ -1,0 +1,108 @@
+{
+  "adb_id": 62865,
+  "name": "Coutard, Raoul",
+  "given_name": "Raoul Coutard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424044.677083,
+    "year": 1924,
+    "month": 9,
+    "day": 16,
+    "calendar": "g",
+    "time": "05:15",
+    "time_type": "d",
+    "hour": 5.25,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coutard,_Raoul",
+  "source_notes": "Didier Geslain archive, 'Cinema Realisateurs' pdf file, p. 69.\\n",
+  "categories": [
+    "Vocation : Art : Photography"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 23.25854,
+    "lagna": 113.25854,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.805525,
+    "jd_ut": 2424044.677083,
+    "planets": {
+      "Sun": {
+        "longitude": 150.204522,
+        "sign_index": 5,
+        "degree_in_sign": 0.204522,
+        "is_retrograde": false,
+        "speed": 0.975176
+      },
+      "Moon": {
+        "longitude": 4.34447,
+        "sign_index": 0,
+        "degree_in_sign": 4.34447,
+        "is_retrograde": false,
+        "speed": 9.628529
+      },
+      "Mars": {
+        "longitude": 302.780887,
+        "sign_index": 10,
+        "degree_in_sign": 2.780887,
+        "is_retrograde": true,
+        "speed": -0.080916
+      },
+      "Mercury": {
+        "longitude": 141.563609,
+        "sign_index": 4,
+        "degree_in_sign": 21.563609,
+        "is_retrograde": true,
+        "speed": -0.684243
+      },
+      "Jupiter": {
+        "longitude": 229.617441,
+        "sign_index": 7,
+        "degree_in_sign": 19.617441,
+        "is_retrograde": false,
+        "speed": 0.113298
+      },
+      "Venus": {
+        "longitude": 104.356391,
+        "sign_index": 3,
+        "degree_in_sign": 14.356391,
+        "is_retrograde": false,
+        "speed": 1.00955
+      },
+      "Saturn": {
+        "longitude": 187.431066,
+        "sign_index": 6,
+        "degree_in_sign": 7.431066,
+        "is_retrograde": false,
+        "speed": 0.104151
+      },
+      "Rahu": {
+        "longitude": 118.485863,
+        "sign_index": 3,
+        "degree_in_sign": 28.485863,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 298.485863,
+        "sign_index": 9,
+        "degree_in_sign": 28.485863,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

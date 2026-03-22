@@ -1,0 +1,111 @@
+{
+  "adb_id": 37716,
+  "name": "Clement, Stephanie",
+  "given_name": "Stephanie Clement",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431412.477778,
+    "year": 1944,
+    "month": 11,
+    "day": 17,
+    "calendar": "g",
+    "time": "17:28",
+    "time_type": "w",
+    "hour": 17.466667,
+    "time_unknown": false,
+    "place": "Pueblo",
+    "country": "Colorado",
+    "lat": 38.25,
+    "lon": -104.616667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clement,_Stephanie",
+  "source_notes": "Frances McEvoy quotes her, Astrologer's Newsletter April/2000\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Computer : Programmer",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 5.545732,
+    "lagna": 5.545732,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.087223,
+    "jd_ut": 2431412.477778,
+    "planets": {
+      "Sun": {
+        "longitude": 212.428738,
+        "sign_index": 7,
+        "degree_in_sign": 2.428738,
+        "is_retrograde": false,
+        "speed": 1.009223
+      },
+      "Moon": {
+        "longitude": 235.747729,
+        "sign_index": 7,
+        "degree_in_sign": 25.747729,
+        "is_retrograde": false,
+        "speed": 9.579822
+      },
+      "Mars": {
+        "longitude": 211.455486,
+        "sign_index": 7,
+        "degree_in_sign": 1.455486,
+        "is_retrograde": false,
+        "speed": 0.706567
+      },
+      "Mercury": {
+        "longitude": 228.136049,
+        "sign_index": 7,
+        "degree_in_sign": 18.136049,
+        "is_retrograde": false,
+        "speed": 1.467973
+      },
+      "Jupiter": {
+        "longitude": 149.979573,
+        "sign_index": 4,
+        "degree_in_sign": 29.979573,
+        "is_retrograde": false,
+        "speed": 0.147898
+      },
+      "Venus": {
+        "longitude": 248.94355,
+        "sign_index": 8,
+        "degree_in_sign": 8.94355,
+        "is_retrograde": false,
+        "speed": 1.213789
+      },
+      "Saturn": {
+        "longitude": 77.100776,
+        "sign_index": 2,
+        "degree_in_sign": 17.100776,
+        "is_retrograde": true,
+        "speed": -0.045965
+      },
+      "Rahu": {
+        "longitude": 88.050822,
+        "sign_index": 2,
+        "degree_in_sign": 28.050822,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 268.050822,
+        "sign_index": 8,
+        "degree_in_sign": 28.050822,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

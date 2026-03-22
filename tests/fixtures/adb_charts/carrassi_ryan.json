@@ -1,0 +1,114 @@
+{
+  "adb_id": 71586,
+  "name": "Carrassi, Ryan",
+  "given_name": "Ryan Carrassi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441164.729167,
+    "year": 1971,
+    "month": 8,
+    "day": 1,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "d",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Spezia",
+    "country": "Italy",
+    "lat": 44.116667,
+    "lon": 9.833333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrassi,_Ryan",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Voice-Over",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Business : Manager/ Agent",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 6.078831,
+    "lagna": 96.078831,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.460127,
+    "jd_ut": 2441164.729167,
+    "planets": {
+      "Sun": {
+        "longitude": 104.869452,
+        "sign_index": 3,
+        "degree_in_sign": 14.869452,
+        "is_retrograde": false,
+        "speed": 0.956361
+      },
+      "Moon": {
+        "longitude": 214.728996,
+        "sign_index": 7,
+        "degree_in_sign": 4.728996,
+        "is_retrograde": false,
+        "speed": 16.1414
+      },
+      "Mars": {
+        "longitude": 295.832671,
+        "sign_index": 9,
+        "degree_in_sign": 25.832671,
+        "is_retrograde": true,
+        "speed": -0.231845
+      },
+      "Mercury": {
+        "longitude": 131.881116,
+        "sign_index": 4,
+        "degree_in_sign": 11.881116,
+        "is_retrograde": false,
+        "speed": 0.82999
+      },
+      "Jupiter": {
+        "longitude": 213.21745,
+        "sign_index": 7,
+        "degree_in_sign": 3.21745,
+        "is_retrograde": false,
+        "speed": 0.022604
+      },
+      "Venus": {
+        "longitude": 97.574746,
+        "sign_index": 3,
+        "degree_in_sign": 7.574746,
+        "is_retrograde": false,
+        "speed": 1.230635
+      },
+      "Saturn": {
+        "longitude": 41.010373,
+        "sign_index": 1,
+        "degree_in_sign": 11.010373,
+        "is_retrograde": false,
+        "speed": 0.079543
+      },
+      "Rahu": {
+        "longitude": 291.259006,
+        "sign_index": 9,
+        "degree_in_sign": 21.259006,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 111.259006,
+        "sign_index": 3,
+        "degree_in_sign": 21.259006,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

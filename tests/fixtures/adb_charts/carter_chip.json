@@ -1,0 +1,111 @@
+{
+  "adb_id": 42639,
+  "name": "Carter, Chip",
+  "given_name": "Chip Carter",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433383.9375,
+    "year": 1950,
+    "month": 4,
+    "day": 12,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Honolulu",
+    "country": "Hawaii",
+    "lat": 21.3,
+    "lon": -157.866667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carter,_Chip",
+  "source_notes": "Marion March quotes news, given in Mercury Hour EXT 10/1980.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.962581,
+    "lagna": 232.962581,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.162604,
+    "jd_ut": 2433383.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 358.786621,
+        "sign_index": 11,
+        "degree_in_sign": 28.786621,
+        "is_retrograde": false,
+        "speed": 0.9806
+      },
+      "Moon": {
+        "longitude": 304.712982,
+        "sign_index": 10,
+        "degree_in_sign": 4.712982,
+        "is_retrograde": false,
+        "speed": 15.370466
+      },
+      "Mars": {
+        "longitude": 151.766785,
+        "sign_index": 5,
+        "degree_in_sign": 1.766785,
+        "is_retrograde": true,
+        "speed": -0.271979
+      },
+      "Mercury": {
+        "longitude": 14.297229,
+        "sign_index": 0,
+        "degree_in_sign": 14.297229,
+        "is_retrograde": false,
+        "speed": 1.780435
+      },
+      "Jupiter": {
+        "longitude": 306.290806,
+        "sign_index": 10,
+        "degree_in_sign": 6.290806,
+        "is_retrograde": false,
+        "speed": 0.188674
+      },
+      "Venus": {
+        "longitude": 312.447582,
+        "sign_index": 10,
+        "degree_in_sign": 12.447582,
+        "is_retrograde": false,
+        "speed": 0.986518
+      },
+      "Saturn": {
+        "longitude": 140.328886,
+        "sign_index": 4,
+        "degree_in_sign": 20.328886,
+        "is_retrograde": true,
+        "speed": -0.053279
+      },
+      "Rahu": {
+        "longitude": 343.579106,
+        "sign_index": 11,
+        "degree_in_sign": 13.579106,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 163.579106,
+        "sign_index": 5,
+        "degree_in_sign": 13.579106,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

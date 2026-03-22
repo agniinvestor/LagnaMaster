@@ -1,0 +1,111 @@
+{
+  "adb_id": 60461,
+  "name": "Campanella, Tommaso",
+  "given_name": "Tommaso Campanella",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2294017.72162,
+    "year": 1568,
+    "month": 9,
+    "day": 5,
+    "calendar": "j",
+    "time": "06:25",
+    "time_type": "l",
+    "hour": 6.416667,
+    "time_unknown": false,
+    "place": "Stilo",
+    "country": "Italy",
+    "lat": 38.483333,
+    "lon": 16.466667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campanella,_Tommaso",
+  "source_notes": "In February 2016 Grazia Bordoni forwarded an article by academics Germana Ernst and Giuseppe Bezza confirming that Campanella was born at 6.30 AM and not PM. Their article, \"Una Nativita Manoscitta di Campanella\" (in Bruniana & Campanelliana, 2007/2, pp. 711-16) includes a manuscript horoscope for Campanella on page 714, stating the date and time as \"1568 Sept. 4, 18:30.\" \\nAlois Treindl writes, \"I assume that this means an astronomical definition of the day. We are still on the 4 September at birth, because the astronomical day begins at noon (so that no data change happens during the night when observations are made). 4 Sept 18:30 astronomically means 6.30 am of 5 September in civil reckoning. The time is in LAT (local apparent time). The equation of time tells us that this corresponds to 6:25 am LMT. (I verified by computing Sun at noon LMT and LAT for the given date). If I erect a chart for this date and time, I arrive exactly at the results given in the right column 'positioni computate'. For 6:25 am LMT, UT is 5:19.\"\\n\\nPreviously, this entry had 6pm, with Sy Scholfield quoting from \"Halalí: Zehn Portrats spiegeln den Umgang humaner Gesellschaften mit ihren Talenten\" by Moritz Pirol (BoD – Books on Demand, 2009), p. 267: \"Am Sonntag, dem 5. September 1568, wurde ihnen gegen sechs Uhr nachmittags ein Sohn geboren, der am vorgeschrieben siebenten Lebenstage auf die Vornamen Giovan Domenico getauft wurde.\" Translation: On Sunday, September 5, 1568, a son was born to them at six o'clock in the afternoon, baptized as prescribed seven days after birth with the names Giovan Domenico.\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Philosopher",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Religion : Other Religion",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.624641,
+    "lagna": 144.624641,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.838218,
+    "jd_ut": 2294017.72162,
+    "planets": {
+      "Sun": {
+        "longitude": 154.394986,
+        "sign_index": 5,
+        "degree_in_sign": 4.394986,
+        "is_retrograde": false,
+        "speed": 0.977995
+      },
+      "Moon": {
+        "longitude": 319.8067,
+        "sign_index": 10,
+        "degree_in_sign": 19.8067,
+        "is_retrograde": false,
+        "speed": 13.481704
+      },
+      "Mars": {
+        "longitude": 189.400438,
+        "sign_index": 6,
+        "degree_in_sign": 9.400438,
+        "is_retrograde": false,
+        "speed": 0.676943
+      },
+      "Mercury": {
+        "longitude": 168.196238,
+        "sign_index": 5,
+        "degree_in_sign": 18.196238,
+        "is_retrograde": true,
+        "speed": -0.669017
+      },
+      "Jupiter": {
+        "longitude": 225.83212,
+        "sign_index": 7,
+        "degree_in_sign": 15.83212,
+        "is_retrograde": false,
+        "speed": 0.1342
+      },
+      "Venus": {
+        "longitude": 148.090976,
+        "sign_index": 4,
+        "degree_in_sign": 28.090976,
+        "is_retrograde": false,
+        "speed": 1.245061
+      },
+      "Saturn": {
+        "longitude": 161.363399,
+        "sign_index": 5,
+        "degree_in_sign": 11.363399,
+        "is_retrograde": false,
+        "speed": 0.122835
+      },
+      "Rahu": {
+        "longitude": 168.907314,
+        "sign_index": 5,
+        "degree_in_sign": 18.907314,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 348.907314,
+        "sign_index": 11,
+        "degree_in_sign": 18.907314,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

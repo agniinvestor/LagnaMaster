@@ -1,0 +1,114 @@
+{
+  "adb_id": 101214,
+  "name": "Clifford, Paul",
+  "given_name": "Paul Clifford",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436350.0125,
+    "year": 1958,
+    "month": 5,
+    "day": 26,
+    "calendar": "g",
+    "time": "08:18",
+    "time_type": "d",
+    "hour": 8.3,
+    "time_unknown": false,
+    "place": "Rutland",
+    "country": "Vermont",
+    "lat": 43.616667,
+    "lon": -72.966667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clifford,_Paul",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n\\nhttps://web.archive.org/web/20240206040644/https://legislature.vermont.gov/people/single/2024/37380\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Business/Marketing : Sales",
+    "Vocation : Politics : Government employee",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.236973,
+    "lagna": 60.236973,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.276018,
+    "jd_ut": 2436350.0125,
+    "planets": {
+      "Sun": {
+        "longitude": 41.465234,
+        "sign_index": 1,
+        "degree_in_sign": 11.465234,
+        "is_retrograde": false,
+        "speed": 0.960012
+      },
+      "Moon": {
+        "longitude": 136.085319,
+        "sign_index": 4,
+        "degree_in_sign": 16.085319,
+        "is_retrograde": false,
+        "speed": 17.858255
+      },
+      "Mars": {
+        "longitude": 328.255794,
+        "sign_index": 10,
+        "degree_in_sign": 28.255794,
+        "is_retrograde": false,
+        "speed": 0.724847
+      },
+      "Mercury": {
+        "longitude": 19.004705,
+        "sign_index": 0,
+        "degree_in_sign": 19.004705,
+        "is_retrograde": false,
+        "speed": 1.501701
+      },
+      "Jupiter": {
+        "longitude": 179.301261,
+        "sign_index": 5,
+        "degree_in_sign": 29.301261,
+        "is_retrograde": true,
+        "speed": -0.068613
+      },
+      "Venus": {
+        "longitude": 0.251297,
+        "sign_index": 0,
+        "degree_in_sign": 0.251297,
+        "is_retrograde": false,
+        "speed": 1.13914
+      },
+      "Saturn": {
+        "longitude": 240.465196,
+        "sign_index": 8,
+        "degree_in_sign": 0.465196,
+        "is_retrograde": true,
+        "speed": -0.06753
+      },
+      "Rahu": {
+        "longitude": 186.400694,
+        "sign_index": 6,
+        "degree_in_sign": 6.400694,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 6.400694,
+        "sign_index": 0,
+        "degree_in_sign": 6.400694,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

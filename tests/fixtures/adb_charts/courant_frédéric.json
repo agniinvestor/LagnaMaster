@@ -1,0 +1,109 @@
+{
+  "adb_id": 82940,
+  "name": "Courant, Frédéric",
+  "given_name": "Frédéric Courant",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437038.888889,
+    "year": 1960,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "10:20",
+    "time_type": "s",
+    "hour": 10.333333,
+    "time_unknown": false,
+    "place": "Angers",
+    "country": "France",
+    "lat": 47.466667,
+    "lon": -0.55
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courant,_Frédéric",
+  "source_notes": "Lepoivre quotes B.C. acte n° 1083\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 22.366165,
+    "lagna": 52.366165,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.302359,
+    "jd_ut": 2437038.888889,
+    "planets": {
+      "Sun": {
+        "longitude": 1.12873,
+        "sign_index": 0,
+        "degree_in_sign": 1.12873,
+        "is_retrograde": false,
+        "speed": 0.978704
+      },
+      "Moon": {
+        "longitude": 214.807276,
+        "sign_index": 7,
+        "degree_in_sign": 4.807276,
+        "is_retrograde": false,
+        "speed": 15.355486
+      },
+      "Mars": {
+        "longitude": 316.042501,
+        "sign_index": 10,
+        "degree_in_sign": 16.042501,
+        "is_retrograde": false,
+        "speed": 0.770529
+      },
+      "Mercury": {
+        "longitude": 334.481179,
+        "sign_index": 11,
+        "degree_in_sign": 4.481179,
+        "is_retrograde": false,
+        "speed": 1.267165
+      },
+      "Jupiter": {
+        "longitude": 250.260876,
+        "sign_index": 8,
+        "degree_in_sign": 10.260876,
+        "is_retrograde": false,
+        "speed": 0.018213
+      },
+      "Venus": {
+        "longitude": 342.7893,
+        "sign_index": 11,
+        "degree_in_sign": 12.7893,
+        "is_retrograde": false,
+        "speed": 1.230355
+      },
+      "Saturn": {
+        "longitude": 264.984677,
+        "sign_index": 8,
+        "degree_in_sign": 24.984677,
+        "is_retrograde": false,
+        "speed": 0.021565
+      },
+      "Rahu": {
+        "longitude": 149.895721,
+        "sign_index": 4,
+        "degree_in_sign": 29.895721,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 329.895721,
+        "sign_index": 10,
+        "degree_in_sign": 29.895721,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

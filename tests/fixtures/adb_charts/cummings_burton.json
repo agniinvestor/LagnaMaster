@@ -1,0 +1,113 @@
+{
+  "adb_id": 10826,
+  "name": "Cummings, Burton",
+  "given_name": "Burton Cummings",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432551.465278,
+    "year": 1947,
+    "month": 12,
+    "day": 31,
+    "calendar": "g",
+    "time": "17:10",
+    "time_type": "s",
+    "hour": 17.166667,
+    "time_unknown": false,
+    "place": "Winnipeg",
+    "country": "Manitoba (CAN)",
+    "lat": 49.883333,
+    "lon": -97.15
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cummings,_Burton",
+  "source_notes": "Brian Clark quotes him, B.R.\\n",
+  "categories": [
+    "Lifestyle : Work : Skills - Multi-faceted",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 1.276947,
+    "lagna": 61.276947,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.130773,
+    "jd_ut": 2432551.465278,
+    "planets": {
+      "Sun": {
+        "longitude": 256.315619,
+        "sign_index": 8,
+        "degree_in_sign": 16.315619,
+        "is_retrograde": false,
+        "speed": 1.019079
+      },
+      "Moon": {
+        "longitude": 134.235354,
+        "sign_index": 4,
+        "degree_in_sign": 14.235354,
+        "is_retrograde": false,
+        "speed": 18.032447
+      },
+      "Mars": {
+        "longitude": 134.123721,
+        "sign_index": 4,
+        "degree_in_sign": 14.123721,
+        "is_retrograde": false,
+        "speed": 0.092586
+      },
+      "Mercury": {
+        "longitude": 254.797161,
+        "sign_index": 8,
+        "degree_in_sign": 14.797161,
+        "is_retrograde": false,
+        "speed": 1.598943
+      },
+      "Jupiter": {
+        "longitude": 232.002916,
+        "sign_index": 7,
+        "degree_in_sign": 22.002916,
+        "is_retrograde": false,
+        "speed": 0.21483
+      },
+      "Venus": {
+        "longitude": 285.751101,
+        "sign_index": 9,
+        "degree_in_sign": 15.751101,
+        "is_retrograde": false,
+        "speed": 1.237573
+      },
+      "Saturn": {
+        "longitude": 118.860924,
+        "sign_index": 3,
+        "degree_in_sign": 28.860924,
+        "is_retrograde": true,
+        "speed": -0.048513
+      },
+      "Rahu": {
+        "longitude": 27.693524,
+        "sign_index": 0,
+        "degree_in_sign": 27.693524,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 207.693524,
+        "sign_index": 6,
+        "degree_in_sign": 27.693524,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

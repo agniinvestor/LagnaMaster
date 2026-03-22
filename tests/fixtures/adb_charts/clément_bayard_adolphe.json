@@ -1,0 +1,108 @@
+{
+  "adb_id": 65021,
+  "name": "Clément-Bayard, Adolphe",
+  "given_name": "Adolphe Clément-Bayard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2398848.65838,
+    "year": 1855,
+    "month": 9,
+    "day": 22,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Pierrefonds",
+    "country": "France",
+    "lat": 49.35,
+    "lon": 2.983333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clément-Bayard,_Adolphe",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 178.\\n",
+  "categories": [
+    "Vocation : Business : Entrepreneur"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 24.966927,
+    "lagna": 114.966927,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.842375,
+    "jd_ut": 2398848.65838,
+    "planets": {
+      "Sun": {
+        "longitude": 156.725332,
+        "sign_index": 5,
+        "degree_in_sign": 6.725332,
+        "is_retrograde": false,
+        "speed": 0.978924
+      },
+      "Moon": {
+        "longitude": 283.564802,
+        "sign_index": 9,
+        "degree_in_sign": 13.564802,
+        "is_retrograde": false,
+        "speed": 16.358804
+      },
+      "Mars": {
+        "longitude": 111.345253,
+        "sign_index": 3,
+        "degree_in_sign": 21.345253,
+        "is_retrograde": false,
+        "speed": 0.616866
+      },
+      "Mercury": {
+        "longitude": 176.184506,
+        "sign_index": 5,
+        "degree_in_sign": 26.184506,
+        "is_retrograde": false,
+        "speed": 1.469858
+      },
+      "Jupiter": {
+        "longitude": 302.119252,
+        "sign_index": 10,
+        "degree_in_sign": 2.119252,
+        "is_retrograde": true,
+        "speed": -0.085579
+      },
+      "Venus": {
+        "longitude": 170.765174,
+        "sign_index": 5,
+        "degree_in_sign": 20.765174,
+        "is_retrograde": true,
+        "speed": -0.453414
+      },
+      "Saturn": {
+        "longitude": 67.812862,
+        "sign_index": 2,
+        "degree_in_sign": 7.812862,
+        "is_retrograde": false,
+        "speed": 0.03767
+      },
+      "Rahu": {
+        "longitude": 13.676241,
+        "sign_index": 0,
+        "degree_in_sign": 13.676241,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 193.676241,
+        "sign_index": 6,
+        "degree_in_sign": 13.676241,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

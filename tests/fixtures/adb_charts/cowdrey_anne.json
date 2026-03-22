@@ -1,0 +1,112 @@
+{
+  "adb_id": 66945,
+  "name": "Cowdrey, Anne",
+  "given_name": "Anne Cowdrey",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429061.954861,
+    "year": 1938,
+    "month": 6,
+    "day": 12,
+    "calendar": "g",
+    "time": "11:55",
+    "time_type": "d",
+    "hour": 11.916667,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England (UK)",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowdrey,_Anne",
+  "source_notes": "Sy Scholfield originally quoted from \"News in Brief,\" ''The Times'' (London, England), 13 June 1938, page 14: \"about noon.\"\\nIn October 2025 he changed the time, quoting 11:55 AM from ''Daily Mirror'' (London, England), 13 June 1938, page 1.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Pneumonia",
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids none",
+    "Vocation : Misc. : Animal Breeder/Trainer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 25.476917,
+    "lagna": 115.476917,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.997351,
+    "jd_ut": 2429061.954861,
+    "planets": {
+      "Sun": {
+        "longitude": 57.806063,
+        "sign_index": 1,
+        "degree_in_sign": 27.806063,
+        "is_retrograde": false,
+        "speed": 0.955105
+      },
+      "Moon": {
+        "longitude": 231.893503,
+        "sign_index": 7,
+        "degree_in_sign": 21.893503,
+        "is_retrograde": false,
+        "speed": 15.158304
+      },
+      "Mars": {
+        "longitude": 70.574371,
+        "sign_index": 2,
+        "degree_in_sign": 10.574371,
+        "is_retrograde": false,
+        "speed": 0.661471
+      },
+      "Mercury": {
+        "longitude": 45.500941,
+        "sign_index": 1,
+        "degree_in_sign": 15.500941,
+        "is_retrograde": false,
+        "speed": 2.001472
+      },
+      "Jupiter": {
+        "longitude": 309.115618,
+        "sign_index": 10,
+        "degree_in_sign": 9.115618,
+        "is_retrograde": false,
+        "speed": 0.029276
+      },
+      "Venus": {
+        "longitude": 89.571262,
+        "sign_index": 2,
+        "degree_in_sign": 29.571262,
+        "is_retrograde": false,
+        "speed": 1.193515
+      },
+      "Saturn": {
+        "longitude": 353.117518,
+        "sign_index": 11,
+        "degree_in_sign": 23.117518,
+        "is_retrograde": false,
+        "speed": 0.075688
+      },
+      "Rahu": {
+        "longitude": 212.609892,
+        "sign_index": 7,
+        "degree_in_sign": 2.609892,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 32.609892,
+        "sign_index": 1,
+        "degree_in_sign": 2.609892,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 36862,
+  "name": "Courroye, Philippe",
+  "given_name": "Philippe Courroye",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436578.5,
+    "year": 1959,
+    "month": 1,
+    "day": 10,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courroye,_Philippe",
+  "source_notes": "Didier Geslain archive, 'police justice' pdf file, p. 24.\\nSame data: Petitallot quotes B.C., Cadran No.15, 1/1995\\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 1.21564,
+    "lagna": 151.21564,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.284754,
+    "jd_ut": 2436578.5,
+    "planets": {
+      "Sun": {
+        "longitude": 265.708033,
+        "sign_index": 8,
+        "degree_in_sign": 25.708033,
+        "is_retrograde": false,
+        "speed": 1.019419
+      },
+      "Moon": {
+        "longitude": 275.474444,
+        "sign_index": 9,
+        "degree_in_sign": 5.474444,
+        "is_retrograde": false,
+        "speed": 17.765919
+      },
+      "Mars": {
+        "longitude": 25.839537,
+        "sign_index": 0,
+        "degree_in_sign": 25.839537,
+        "is_retrograde": false,
+        "speed": 0.231656
+      },
+      "Mercury": {
+        "longitude": 245.749004,
+        "sign_index": 8,
+        "degree_in_sign": 5.749004,
+        "is_retrograde": false,
+        "speed": 1.372729
+      },
+      "Jupiter": {
+        "longitude": 212.281714,
+        "sign_index": 7,
+        "degree_in_sign": 2.281714,
+        "is_retrograde": false,
+        "speed": 0.17042
+      },
+      "Venus": {
+        "longitude": 280.044426,
+        "sign_index": 9,
+        "degree_in_sign": 10.044426,
+        "is_retrograde": false,
+        "speed": 1.254198
+      },
+      "Saturn": {
+        "longitude": 247.22349,
+        "sign_index": 8,
+        "degree_in_sign": 7.22349,
+        "is_retrograde": false,
+        "speed": 0.114094
+      },
+      "Rahu": {
+        "longitude": 174.292672,
+        "sign_index": 5,
+        "degree_in_sign": 24.292672,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 354.292672,
+        "sign_index": 11,
+        "degree_in_sign": 24.292672,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

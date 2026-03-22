@@ -1,0 +1,115 @@
+{
+  "adb_id": 47550,
+  "name": "Chapman-Taylor, Jim",
+  "given_name": "Jim Chapman-Taylor",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2407159.618056,
+    "year": 1878,
+    "month": 6,
+    "day": 24,
+    "calendar": "g",
+    "time": "02:50",
+    "time_type": "s",
+    "hour": 2.833333,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapman-Taylor,_Jim",
+  "source_notes": "Prier Wintle quotes him; his teacher, mentor and friend, in Considerations 8/1996\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Photography",
+    "Vocation : Building Trades : Architect/ Planner",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 3.25375,
+    "lagna": 33.25375,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.16004,
+    "jd_ut": 2407159.618056,
+    "planets": {
+      "Sun": {
+        "longitude": 70.251787,
+        "sign_index": 2,
+        "degree_in_sign": 10.251787,
+        "is_retrograde": false,
+        "speed": 0.953726
+      },
+      "Moon": {
+        "longitude": 354.8494,
+        "sign_index": 11,
+        "degree_in_sign": 24.8494,
+        "is_retrograde": false,
+        "speed": 10.576626
+      },
+      "Mars": {
+        "longitude": 98.509719,
+        "sign_index": 3,
+        "degree_in_sign": 8.509719,
+        "is_retrograde": false,
+        "speed": 0.627472
+      },
+      "Mercury": {
+        "longitude": 58.022821,
+        "sign_index": 1,
+        "degree_in_sign": 28.022821,
+        "is_retrograde": false,
+        "speed": 2.002572
+      },
+      "Jupiter": {
+        "longitude": 283.672005,
+        "sign_index": 9,
+        "degree_in_sign": 13.672005,
+        "is_retrograde": true,
+        "speed": -0.087079
+      },
+      "Venus": {
+        "longitude": 30.36082,
+        "sign_index": 1,
+        "degree_in_sign": 0.36082,
+        "is_retrograde": false,
+        "speed": 1.143383
+      },
+      "Saturn": {
+        "longitude": 340.393413,
+        "sign_index": 11,
+        "degree_in_sign": 10.393413,
+        "is_retrograde": false,
+        "speed": 0.034136
+      },
+      "Rahu": {
+        "longitude": 293.260717,
+        "sign_index": 9,
+        "degree_in_sign": 23.260717,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 113.260717,
+        "sign_index": 3,
+        "degree_in_sign": 23.260717,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

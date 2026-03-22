@@ -1,0 +1,108 @@
+{
+  "adb_id": 69948,
+  "name": "Cities: House of Zähringen:Foundations",
+  "given_name": "Cities: House of Zähringen:Foundations",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2130143.724306,
+    "year": 1120,
+    "month": 1,
+    "day": 7,
+    "calendar": "j",
+    "time": "05:23",
+    "time_type": "u",
+    "hour": 5.383333,
+    "time_unknown": false,
+    "place": "Freiburg im Breisgau",
+    "country": "Germany",
+    "lat": 47.983333,
+    "lon": 7.85
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cities:_House_of_Zähringen:Foundations",
+  "source_notes": "Emanuel Friedli:Geschichte der Stadt Bern;www.zaehringerstädte.eu;wikipedia:Berchtold II.;Grote,Stammtafeln\\n",
+  "categories": [
+    "Mundane : Political : Birth of State or Country"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 29.608522,
+    "lagna": 239.608522,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 11.588934,
+    "jd_ut": 2130143.724306,
+    "planets": {
+      "Sun": {
+        "longitude": 281.411515,
+        "sign_index": 9,
+        "degree_in_sign": 11.411515,
+        "is_retrograde": false,
+        "speed": 1.01704
+      },
+      "Moon": {
+        "longitude": 343.622053,
+        "sign_index": 11,
+        "degree_in_sign": 13.622053,
+        "is_retrograde": false,
+        "speed": 16.853863
+      },
+      "Mars": {
+        "longitude": 357.923122,
+        "sign_index": 11,
+        "degree_in_sign": 27.923122,
+        "is_retrograde": false,
+        "speed": 0.6409
+      },
+      "Mercury": {
+        "longitude": 299.497197,
+        "sign_index": 9,
+        "degree_in_sign": 29.497197,
+        "is_retrograde": false,
+        "speed": 1.26827
+      },
+      "Jupiter": {
+        "longitude": 297.787024,
+        "sign_index": 9,
+        "degree_in_sign": 27.787024,
+        "is_retrograde": false,
+        "speed": 0.235067
+      },
+      "Venus": {
+        "longitude": 323.786496,
+        "sign_index": 10,
+        "degree_in_sign": 23.786496,
+        "is_retrograde": false,
+        "speed": 1.172126
+      },
+      "Saturn": {
+        "longitude": 70.256752,
+        "sign_index": 2,
+        "degree_in_sign": 10.256752,
+        "is_retrograde": true,
+        "speed": -0.064356
+      },
+      "Rahu": {
+        "longitude": 213.022035,
+        "sign_index": 7,
+        "degree_in_sign": 3.022035,
+        "is_retrograde": true,
+        "speed": -0.052993
+      },
+      "Ketu": {
+        "longitude": 33.022035,
+        "sign_index": 1,
+        "degree_in_sign": 3.022035,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 38746,
+  "name": "Castaignède, Stéphane",
+  "given_name": "Stéphane Castaignède",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440495.09375,
+    "year": 1969,
+    "month": 9,
+    "day": 30,
+    "calendar": "g",
+    "time": "15:15",
+    "time_type": "s",
+    "hour": 15.25,
+    "time_unknown": false,
+    "place": "Mont de Marsan",
+    "country": "France",
+    "lat": 43.883333,
+    "lon": -0.5
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castaignède,_Stéphane",
+  "source_notes": "Didier Geslain quotes B.C. record No.1151, 1/2000\\n",
+  "categories": [
+    "Family : Childhood : Sibling circumstances",
+    "Lifestyle : Work : Hazardous work",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Sports : Rugby"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 0.851103,
+    "lagna": 240.851103,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.43452,
+    "jd_ut": 2440495.09375,
+    "planets": {
+      "Sun": {
+        "longitude": 163.803305,
+        "sign_index": 5,
+        "degree_in_sign": 13.803305,
+        "is_retrograde": false,
+        "speed": 0.982912
+      },
+      "Moon": {
+        "longitude": 41.47813,
+        "sign_index": 1,
+        "degree_in_sign": 11.47813,
+        "is_retrograde": false,
+        "speed": 16.135826
+      },
+      "Mars": {
+        "longitude": 252.437087,
+        "sign_index": 8,
+        "degree_in_sign": 12.437087,
+        "is_retrograde": false,
+        "speed": 0.644406
+      },
+      "Mercury": {
+        "longitude": 161.301049,
+        "sign_index": 5,
+        "degree_in_sign": 11.301049,
+        "is_retrograde": true,
+        "speed": -1.080856
+      },
+      "Jupiter": {
+        "longitude": 170.964403,
+        "sign_index": 5,
+        "degree_in_sign": 20.964403,
+        "is_retrograde": false,
+        "speed": 0.215729
+      },
+      "Venus": {
+        "longitude": 135.643242,
+        "sign_index": 4,
+        "degree_in_sign": 15.643242,
+        "is_retrograde": false,
+        "speed": 1.222522
+      },
+      "Saturn": {
+        "longitude": 14.1551,
+        "sign_index": 0,
+        "degree_in_sign": 14.1551,
+        "is_retrograde": true,
+        "speed": -0.063213
+      },
+      "Rahu": {
+        "longitude": 326.744354,
+        "sign_index": 10,
+        "degree_in_sign": 26.744354,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 146.744354,
+        "sign_index": 4,
+        "degree_in_sign": 26.744354,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

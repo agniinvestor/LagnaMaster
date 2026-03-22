@@ -1,0 +1,109 @@
+{
+  "adb_id": 60312,
+  "name": "Calvo-Sotelo, Leopoldo",
+  "given_name": "Leopoldo Calvo-Sotelo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424619.625,
+    "year": 1926,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvo-Sotelo,_Leopoldo",
+  "source_notes": "Taeger quotes Lescaut quoting Barbault\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Heads of state"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 0.657238,
+    "lagna": 270.657238,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.827506,
+    "jd_ut": 2424619.625,
+    "planets": {
+      "Sun": {
+        "longitude": 0.593836,
+        "sign_index": 0,
+        "degree_in_sign": 0.593836,
+        "is_retrograde": false,
+        "speed": 0.979715
+      },
+      "Moon": {
+        "longitude": 21.601628,
+        "sign_index": 0,
+        "degree_in_sign": 21.601628,
+        "is_retrograde": false,
+        "speed": 18.104459
+      },
+      "Mars": {
+        "longitude": 293.019748,
+        "sign_index": 9,
+        "degree_in_sign": 23.019748,
+        "is_retrograde": false,
+        "speed": 0.723539
+      },
+      "Mercury": {
+        "longitude": 339.742339,
+        "sign_index": 11,
+        "degree_in_sign": 9.742339,
+        "is_retrograde": false,
+        "speed": 0.019654
+      },
+      "Jupiter": {
+        "longitude": 298.572576,
+        "sign_index": 9,
+        "degree_in_sign": 28.572576,
+        "is_retrograde": false,
+        "speed": 0.167088
+      },
+      "Venus": {
+        "longitude": 314.412374,
+        "sign_index": 10,
+        "degree_in_sign": 14.412374,
+        "is_retrograde": false,
+        "speed": 0.943157
+      },
+      "Saturn": {
+        "longitude": 212.048717,
+        "sign_index": 7,
+        "degree_in_sign": 2.048717,
+        "is_retrograde": true,
+        "speed": -0.057934
+      },
+      "Rahu": {
+        "longitude": 88.018175,
+        "sign_index": 2,
+        "degree_in_sign": 28.018175,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 268.018175,
+        "sign_index": 8,
+        "degree_in_sign": 28.018175,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

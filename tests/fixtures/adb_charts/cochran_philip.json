@@ -1,0 +1,119 @@
+{
+  "adb_id": 86903,
+  "name": "Cochran, Philip",
+  "given_name": "Philip Cochran",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418701.229167,
+    "year": 1910,
+    "month": 1,
+    "day": 29,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Erie",
+    "country": "Pennsylvania",
+    "lat": 42.133333,
+    "lon": -80.083333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cochran,_Philip",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Family : Relationship : Mate - Noted",
+    "Lifestyle : Financial : Fundraiser",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Business : Top executive",
+    "Vocation : Entertainment : Stunt work",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military service",
+    "Vocation : Travel : Pilot/ military",
+    "Vocation : Travel : Pilot/ military",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 17.334803,
+    "lagna": 17.334803,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.60124,
+    "jd_ut": 2418701.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 286.359309,
+        "sign_index": 9,
+        "degree_in_sign": 16.359309,
+        "is_retrograde": false,
+        "speed": 1.015215
+      },
+      "Moon": {
+        "longitude": 155.378323,
+        "sign_index": 5,
+        "degree_in_sign": 5.378323,
+        "is_retrograde": false,
+        "speed": 14.663186
+      },
+      "Mars": {
+        "longitude": 11.235536,
+        "sign_index": 0,
+        "degree_in_sign": 11.235536,
+        "is_retrograde": false,
+        "speed": 0.580786
+      },
+      "Mercury": {
+        "longitude": 278.856234,
+        "sign_index": 9,
+        "degree_in_sign": 8.856234,
+        "is_retrograde": true,
+        "speed": -1.120941
+      },
+      "Jupiter": {
+        "longitude": 171.952096,
+        "sign_index": 5,
+        "degree_in_sign": 21.952096,
+        "is_retrograde": false,
+        "speed": 7.7e-05
+      },
+      "Venus": {
+        "longitude": 307.303734,
+        "sign_index": 10,
+        "degree_in_sign": 7.303734,
+        "is_retrograde": true,
+        "speed": -0.293017
+      },
+      "Saturn": {
+        "longitude": 355.264337,
+        "sign_index": 11,
+        "degree_in_sign": 25.264337,
+        "is_retrograde": false,
+        "speed": 0.07014
+      },
+      "Rahu": {
+        "longitude": 41.646348,
+        "sign_index": 1,
+        "degree_in_sign": 11.646348,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 221.646348,
+        "sign_index": 7,
+        "degree_in_sign": 11.646348,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

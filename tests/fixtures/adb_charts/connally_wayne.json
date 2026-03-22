@@ -1,0 +1,110 @@
+{
+  "adb_id": 78413,
+  "name": "Connally, Wayne",
+  "given_name": "Wayne Connally",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423497.9375,
+    "year": 1923,
+    "month": 3,
+    "day": 19,
+    "calendar": "g",
+    "time": "04:30",
+    "time_type": "s",
+    "hour": 4.5,
+    "time_unknown": false,
+    "place": "Floresville",
+    "country": "Texas",
+    "lat": 29.133333,
+    "lon": -98.15
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connally,_Wayne",
+  "source_notes": "Birth certificate in hand, submitted by Sy Scholfield. \\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Vocation : Misc. : Farmer/ Rancher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 27.51521,
+    "lagna": 267.51521,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.784622,
+    "jd_ut": 2423497.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 335.022823,
+        "sign_index": 11,
+        "degree_in_sign": 5.022823,
+        "is_retrograde": false,
+        "speed": 0.994267
+      },
+      "Moon": {
+        "longitude": 355.914671,
+        "sign_index": 11,
+        "degree_in_sign": 25.914671,
+        "is_retrograde": false,
+        "speed": 15.415365
+      },
+      "Mars": {
+        "longitude": 18.076818,
+        "sign_index": 0,
+        "degree_in_sign": 18.076818,
+        "is_retrograde": false,
+        "speed": 0.700221
+      },
+      "Mercury": {
+        "longitude": 317.216022,
+        "sign_index": 10,
+        "degree_in_sign": 17.216022,
+        "is_retrograde": false,
+        "speed": 1.645654
+      },
+      "Jupiter": {
+        "longitude": 205.863808,
+        "sign_index": 6,
+        "degree_in_sign": 25.863808,
+        "is_retrograde": true,
+        "speed": -0.042491
+      },
+      "Venus": {
+        "longitude": 292.328408,
+        "sign_index": 9,
+        "degree_in_sign": 22.328408,
+        "is_retrograde": false,
+        "speed": 1.156298
+      },
+      "Saturn": {
+        "longitude": 175.429535,
+        "sign_index": 5,
+        "degree_in_sign": 25.429535,
+        "is_retrograde": true,
+        "speed": -0.069801
+      },
+      "Rahu": {
+        "longitude": 147.458734,
+        "sign_index": 4,
+        "degree_in_sign": 27.458734,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 327.458734,
+        "sign_index": 10,
+        "degree_in_sign": 27.458734,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

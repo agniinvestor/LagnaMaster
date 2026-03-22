@@ -1,0 +1,108 @@
+{
+  "adb_id": 50321,
+  "name": "Criss, Egypt Jahnari",
+  "given_name": "Egypt Jahnari Criss",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2451059.263194,
+    "year": 1998,
+    "month": 9,
+    "day": 2,
+    "calendar": "g",
+    "time": "14:19",
+    "time_type": "d",
+    "hour": 14.316667,
+    "time_unknown": false,
+    "place": "Secaucus",
+    "country": "New Jersey",
+    "lat": 40.783333,
+    "lon": -74.05
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Criss,_Egypt_Jahnari",
+  "source_notes": "Sy Scholfield quotes Associated Press article the day after her birth\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 25.359457,
+    "lagna": 205.359457,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.838516,
+    "jd_ut": 2451059.263194,
+    "planets": {
+      "Sun": {
+        "longitude": 136.239668,
+        "sign_index": 4,
+        "degree_in_sign": 16.239668,
+        "is_retrograde": false,
+        "speed": 0.967941
+      },
+      "Moon": {
+        "longitude": 268.341724,
+        "sign_index": 8,
+        "degree_in_sign": 28.341724,
+        "is_retrograde": false,
+        "speed": 14.594309
+      },
+      "Mars": {
+        "longitude": 104.463797,
+        "sign_index": 3,
+        "degree_in_sign": 14.463797,
+        "is_retrograde": false,
+        "speed": 0.635941
+      },
+      "Mercury": {
+        "longitude": 118.378412,
+        "sign_index": 3,
+        "degree_in_sign": 28.378412,
+        "is_retrograde": false,
+        "speed": 1.228345
+      },
+      "Jupiter": {
+        "longitude": 330.95946,
+        "sign_index": 11,
+        "degree_in_sign": 0.95946,
+        "is_retrograde": true,
+        "speed": -0.12445
+      },
+      "Venus": {
+        "longitude": 121.169744,
+        "sign_index": 4,
+        "degree_in_sign": 1.169744,
+        "is_retrograde": false,
+        "speed": 1.233302
+      },
+      "Saturn": {
+        "longitude": 9.511218,
+        "sign_index": 0,
+        "degree_in_sign": 9.511218,
+        "is_retrograde": true,
+        "speed": -0.030864
+      },
+      "Rahu": {
+        "longitude": 126.927594,
+        "sign_index": 4,
+        "degree_in_sign": 6.927594,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.927594,
+        "sign_index": 10,
+        "degree_in_sign": 6.927594,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

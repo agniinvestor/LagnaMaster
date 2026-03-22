@@ -1,0 +1,110 @@
+{
+  "adb_id": 71886,
+  "name": "Crippa, Maddalena",
+  "given_name": "Maddalena Crippa",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436085.958333,
+    "year": 1957,
+    "month": 9,
+    "day": 4,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Besana in Brianza",
+    "country": "Italy",
+    "lat": 45.7,
+    "lon": 9.283333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crippa,_Maddalena",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.131339,
+    "lagna": 184.131339,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.265921,
+    "jd_ut": 2436085.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 138.367895,
+        "sign_index": 4,
+        "degree_in_sign": 18.367895,
+        "is_retrograde": false,
+        "speed": 0.969164
+      },
+      "Moon": {
+        "longitude": 266.605228,
+        "sign_index": 8,
+        "degree_in_sign": 26.605228,
+        "is_retrograde": false,
+        "speed": 14.626624
+      },
+      "Mars": {
+        "longitude": 144.043416,
+        "sign_index": 4,
+        "degree_in_sign": 24.043416,
+        "is_retrograde": false,
+        "speed": 0.639576
+      },
+      "Mercury": {
+        "longitude": 148.683758,
+        "sign_index": 4,
+        "degree_in_sign": 28.683758,
+        "is_retrograde": true,
+        "speed": -0.795202
+      },
+      "Jupiter": {
+        "longitude": 162.229699,
+        "sign_index": 5,
+        "degree_in_sign": 12.229699,
+        "is_retrograde": false,
+        "speed": 0.205934
+      },
+      "Venus": {
+        "longitude": 175.135084,
+        "sign_index": 5,
+        "degree_in_sign": 25.135084,
+        "is_retrograde": false,
+        "speed": 1.186985
+      },
+      "Saturn": {
+        "longitude": 224.855608,
+        "sign_index": 7,
+        "degree_in_sign": 14.855608,
+        "is_retrograde": false,
+        "speed": 0.037429
+      },
+      "Rahu": {
+        "longitude": 200.393466,
+        "sign_index": 6,
+        "degree_in_sign": 20.393466,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 20.393466,
+        "sign_index": 0,
+        "degree_in_sign": 20.393466,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

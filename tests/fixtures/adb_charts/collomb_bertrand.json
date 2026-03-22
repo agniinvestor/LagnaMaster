@@ -1,0 +1,108 @@
+{
+  "adb_id": 64811,
+  "name": "Collomb, Bertrand",
+  "given_name": "Bertrand Collomb",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430585.53125,
+    "year": 1942,
+    "month": 8,
+    "day": 14,
+    "calendar": "g",
+    "time": "02:45",
+    "time_type": "d",
+    "hour": 2.75,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collomb,_Bertrand",
+  "source_notes": "Didier Geslain archive, 'business_men_pdg' pdf file, p. 32.\\n",
+  "categories": [
+    "Vocation : Business : Entrepreneur"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.808164,
+    "lagna": 47.808164,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.055605,
+    "jd_ut": 2430585.53125,
+    "planets": {
+      "Sun": {
+        "longitude": 117.555169,
+        "sign_index": 3,
+        "degree_in_sign": 27.555169,
+        "is_retrograde": false,
+        "speed": 0.960784
+      },
+      "Moon": {
+        "longitude": 140.109701,
+        "sign_index": 4,
+        "degree_in_sign": 20.109701,
+        "is_retrograde": false,
+        "speed": 16.379179
+      },
+      "Mars": {
+        "longitude": 134.944237,
+        "sign_index": 4,
+        "degree_in_sign": 14.944237,
+        "is_retrograde": false,
+        "speed": 0.633025
+      },
+      "Mercury": {
+        "longitude": 128.71282,
+        "sign_index": 4,
+        "degree_in_sign": 8.71282,
+        "is_retrograde": false,
+        "speed": 1.835164
+      },
+      "Jupiter": {
+        "longitude": 81.266509,
+        "sign_index": 2,
+        "degree_in_sign": 21.266509,
+        "is_retrograde": false,
+        "speed": 0.203284
+      },
+      "Venus": {
+        "longitude": 93.183179,
+        "sign_index": 3,
+        "degree_in_sign": 3.183179,
+        "is_retrograde": false,
+        "speed": 1.214007
+      },
+      "Saturn": {
+        "longitude": 47.911949,
+        "sign_index": 1,
+        "degree_in_sign": 17.911949,
+        "is_retrograde": false,
+        "speed": 0.070751
+      },
+      "Rahu": {
+        "longitude": 131.872427,
+        "sign_index": 4,
+        "degree_in_sign": 11.872427,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 311.872427,
+        "sign_index": 10,
+        "degree_in_sign": 11.872427,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

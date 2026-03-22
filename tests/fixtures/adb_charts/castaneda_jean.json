@@ -1,0 +1,108 @@
+{
+  "adb_id": 64951,
+  "name": "Castaneda, Jean",
+  "given_name": "Jean Castaneda",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435918.28125,
+    "year": 1957,
+    "month": 3,
+    "day": 20,
+    "calendar": "g",
+    "time": "19:45",
+    "time_type": "s",
+    "hour": 19.75,
+    "time_unknown": false,
+    "place": "St.Étienne",
+    "country": "France",
+    "lat": 45.433333,
+    "lon": 4.4
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castaneda,_Jean",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Sports : Football"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 23.824143,
+    "lagna": 143.824143,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.259509,
+    "jd_ut": 2435918.28125,
+    "planets": {
+      "Sun": {
+        "longitude": 336.632204,
+        "sign_index": 11,
+        "degree_in_sign": 6.632204,
+        "is_retrograde": false,
+        "speed": 0.992828
+      },
+      "Moon": {
+        "longitude": 218.846569,
+        "sign_index": 7,
+        "degree_in_sign": 8.846569,
+        "is_retrograde": false,
+        "speed": 16.105335
+      },
+      "Mars": {
+        "longitude": 38.546707,
+        "sign_index": 1,
+        "degree_in_sign": 8.546707,
+        "is_retrograde": false,
+        "speed": 0.627994
+      },
+      "Mercury": {
+        "longitude": 336.649946,
+        "sign_index": 11,
+        "degree_in_sign": 6.649946,
+        "is_retrograde": false,
+        "speed": 1.983951
+      },
+      "Jupiter": {
+        "longitude": 153.227946,
+        "sign_index": 5,
+        "degree_in_sign": 3.227946,
+        "is_retrograde": true,
+        "speed": -0.129398
+      },
+      "Venus": {
+        "longitude": 330.3109,
+        "sign_index": 11,
+        "degree_in_sign": 0.3109,
+        "is_retrograde": false,
+        "speed": 1.24398
+      },
+      "Saturn": {
+        "longitude": 231.036024,
+        "sign_index": 7,
+        "degree_in_sign": 21.036024,
+        "is_retrograde": false,
+        "speed": 0.005411
+      },
+      "Rahu": {
+        "longitude": 209.279019,
+        "sign_index": 6,
+        "degree_in_sign": 29.279019,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 29.279019,
+        "sign_index": 0,
+        "degree_in_sign": 29.279019,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

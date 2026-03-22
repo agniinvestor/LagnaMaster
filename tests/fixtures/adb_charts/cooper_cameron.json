@@ -1,0 +1,106 @@
+{
+  "adb_id": 47617,
+  "name": "Cooper, Cameron",
+  "given_name": "Cameron Cooper",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429368.104167,
+    "year": 1939,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Redlands",
+    "country": "California",
+    "lat": 34.066667,
+    "lon": -117.183333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooper,_Cameron",
+  "source_notes": "Steinbrecher quotes her in the '60s.\\n",
+  "categories": [],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 0.364326,
+    "lagna": 0.364326,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.009057,
+    "jd_ut": 2429368.104167,
+    "planets": {
+      "Sun": {
+        "longitude": 0.736808,
+        "sign_index": 0,
+        "degree_in_sign": 0.736808,
+        "is_retrograde": false,
+        "speed": 0.979521
+      },
+      "Moon": {
+        "longitude": 302.807914,
+        "sign_index": 10,
+        "degree_in_sign": 2.807914,
+        "is_retrograde": false,
+        "speed": 7.838158
+      },
+      "Mars": {
+        "longitude": 259.989413,
+        "sign_index": 8,
+        "degree_in_sign": 19.989413,
+        "is_retrograde": false,
+        "speed": 0.505857
+      },
+      "Mercury": {
+        "longitude": 342.854752,
+        "sign_index": 11,
+        "degree_in_sign": 12.854752,
+        "is_retrograde": true,
+        "speed": -0.207419
+      },
+      "Jupiter": {
+        "longitude": 331.268247,
+        "sign_index": 11,
+        "degree_in_sign": 1.268247,
+        "is_retrograde": false,
+        "speed": 0.2258
+      },
+      "Venus": {
+        "longitude": 323.865785,
+        "sign_index": 10,
+        "degree_in_sign": 23.865785,
+        "is_retrograde": false,
+        "speed": 1.19006
+      },
+      "Saturn": {
+        "longitude": 358.354551,
+        "sign_index": 11,
+        "degree_in_sign": 28.354551,
+        "is_retrograde": false,
+        "speed": 0.126423
+      },
+      "Rahu": {
+        "longitude": 196.386407,
+        "sign_index": 6,
+        "degree_in_sign": 16.386407,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 16.386407,
+        "sign_index": 0,
+        "degree_in_sign": 16.386407,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

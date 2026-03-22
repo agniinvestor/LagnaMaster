@@ -1,0 +1,111 @@
+{
+  "adb_id": 2005,
+  "name": "Chassaignac, Édouard",
+  "given_name": "Édouard Chassaignac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2380312.837639,
+    "year": 1804,
+    "month": 12,
+    "day": 22,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Nantes",
+    "country": "France",
+    "lat": 47.216667,
+    "lon": -1.55
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chassaignac,_Édouard",
+  "source_notes": "Gauquelin Vol. 2/149.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Physician",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 20.236305,
+    "lagna": 230.236305,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.134007,
+    "jd_ut": 2380312.837639,
+    "planets": {
+      "Sun": {
+        "longitude": 249.231241,
+        "sign_index": 8,
+        "degree_in_sign": 9.231241,
+        "is_retrograde": false,
+        "speed": 1.018886
+      },
+      "Moon": {
+        "longitude": 141.373743,
+        "sign_index": 4,
+        "degree_in_sign": 21.373743,
+        "is_retrograde": false,
+        "speed": 10.760948
+      },
+      "Mars": {
+        "longitude": 117.937712,
+        "sign_index": 3,
+        "degree_in_sign": 27.937712,
+        "is_retrograde": true,
+        "speed": -0.02669
+      },
+      "Mercury": {
+        "longitude": 263.192463,
+        "sign_index": 8,
+        "degree_in_sign": 23.192463,
+        "is_retrograde": false,
+        "speed": 1.558892
+      },
+      "Jupiter": {
+        "longitude": 214.484606,
+        "sign_index": 7,
+        "degree_in_sign": 4.484606,
+        "is_retrograde": false,
+        "speed": 0.200349
+      },
+      "Venus": {
+        "longitude": 211.783785,
+        "sign_index": 7,
+        "degree_in_sign": 1.783785,
+        "is_retrograde": false,
+        "speed": 1.216134
+      },
+      "Saturn": {
+        "longitude": 174.013343,
+        "sign_index": 5,
+        "degree_in_sign": 24.013343,
+        "is_retrograde": false,
+        "speed": 0.058046
+      },
+      "Rahu": {
+        "longitude": 275.929684,
+        "sign_index": 9,
+        "degree_in_sign": 5.929684,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 95.929684,
+        "sign_index": 3,
+        "degree_in_sign": 5.929684,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

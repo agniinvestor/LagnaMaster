@@ -1,0 +1,110 @@
+{
+  "adb_id": 83085,
+  "name": "Carmen, Eric",
+  "given_name": "Eric Carmen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433139.969444,
+    "year": 1949,
+    "month": 8,
+    "day": 11,
+    "calendar": "g",
+    "time": "07:16",
+    "time_type": "d",
+    "hour": 7.266667,
+    "time_unknown": false,
+    "place": "Cleveland",
+    "country": "Ohio",
+    "lat": 41.5,
+    "lon": -81.7
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carmen,_Eric",
+  "source_notes": "Birth certificate in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 9.91908,
+    "lagna": 99.91908,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.153275,
+    "jd_ut": 2433139.969444,
+    "planets": {
+      "Sun": {
+        "longitude": 115.284167,
+        "sign_index": 3,
+        "degree_in_sign": 25.284167,
+        "is_retrograde": false,
+        "speed": 0.959327
+      },
+      "Moon": {
+        "longitude": 324.581309,
+        "sign_index": 10,
+        "degree_in_sign": 24.581309,
+        "is_retrograde": false,
+        "speed": 10.120969
+      },
+      "Mars": {
+        "longitude": 79.63927,
+        "sign_index": 2,
+        "degree_in_sign": 19.63927,
+        "is_retrograde": false,
+        "speed": 0.656373
+      },
+      "Mercury": {
+        "longitude": 130.547939,
+        "sign_index": 4,
+        "degree_in_sign": 10.547939,
+        "is_retrograde": false,
+        "speed": 1.742445
+      },
+      "Jupiter": {
+        "longitude": 271.40946,
+        "sign_index": 9,
+        "degree_in_sign": 1.40946,
+        "is_retrograde": true,
+        "speed": -0.107611
+      },
+      "Venus": {
+        "longitude": 145.959955,
+        "sign_index": 4,
+        "degree_in_sign": 25.959955,
+        "is_retrograde": false,
+        "speed": 1.204451
+      },
+      "Saturn": {
+        "longitude": 133.680797,
+        "sign_index": 4,
+        "degree_in_sign": 13.680797,
+        "is_retrograde": false,
+        "speed": 0.121933
+      },
+      "Rahu": {
+        "longitude": 356.507475,
+        "sign_index": 11,
+        "degree_in_sign": 26.507475,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 176.507475,
+        "sign_index": 5,
+        "degree_in_sign": 26.507475,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

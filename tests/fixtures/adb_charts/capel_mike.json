@@ -1,0 +1,110 @@
+{
+  "adb_id": 87787,
+  "name": "Capel, Mike",
+  "given_name": "Mike Capel",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2437585.963194,
+    "year": 1961,
+    "month": 10,
+    "day": 13,
+    "calendar": "g",
+    "time": "05:07",
+    "time_type": "s",
+    "hour": 5.116667,
+    "time_unknown": false,
+    "place": "Marshall",
+    "country": "Texas",
+    "lat": 32.55,
+    "lon": -94.366667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capel,_Mike",
+  "source_notes": "Sy Scholfield provided birth notice, The Marshall News Messenger (Texas), 13 Oct 1961, p. 2.\\n",
+  "categories": [
+    "Vocation : Business : Middle Management",
+    "Vocation : Sports : Baseball",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 16.901732,
+    "lagna": 136.901732,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.323278,
+    "jd_ut": 2437585.963194,
+    "planets": {
+      "Sun": {
+        "longitude": 176.555127,
+        "sign_index": 5,
+        "degree_in_sign": 26.555127,
+        "is_retrograde": false,
+        "speed": 0.99063
+      },
+      "Moon": {
+        "longitude": 220.302355,
+        "sign_index": 7,
+        "degree_in_sign": 10.302355,
+        "is_retrograde": false,
+        "speed": 17.26928
+      },
+      "Mars": {
+        "longitude": 194.606681,
+        "sign_index": 6,
+        "degree_in_sign": 14.606681,
+        "is_retrograde": false,
+        "speed": 0.687194
+      },
+      "Mercury": {
+        "longitude": 194.299818,
+        "sign_index": 6,
+        "degree_in_sign": 14.299818,
+        "is_retrograde": true,
+        "speed": -0.329729
+      },
+      "Jupiter": {
+        "longitude": 274.631231,
+        "sign_index": 9,
+        "degree_in_sign": 4.631231,
+        "is_retrograde": false,
+        "speed": 0.063342
+      },
+      "Venus": {
+        "longitude": 150.924096,
+        "sign_index": 5,
+        "degree_in_sign": 0.924096,
+        "is_retrograde": false,
+        "speed": 1.233236
+      },
+      "Saturn": {
+        "longitude": 270.11885,
+        "sign_index": 9,
+        "degree_in_sign": 0.11885,
+        "is_retrograde": false,
+        "speed": 0.0259
+      },
+      "Rahu": {
+        "longitude": 120.905132,
+        "sign_index": 4,
+        "degree_in_sign": 0.905132,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 300.905132,
+        "sign_index": 10,
+        "degree_in_sign": 0.905132,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

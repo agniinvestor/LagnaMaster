@@ -1,0 +1,114 @@
+{
+  "adb_id": 6877,
+  "name": "Cristal, Linda",
+  "given_name": "Linda Cristal",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426397.125,
+    "year": 1931,
+    "month": 2,
+    "day": 24,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "d",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6,
+    "lon": -58.45
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cristal,_Linda",
+  "source_notes": "Steinbrecher quotes birth certificate.\\n",
+  "categories": [
+    "Family : Childhood : Family traumatic event",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Child performer",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Notable : Awards : Vocational award",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 25.823575,
+    "lagna": 355.823575,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.895465,
+    "jd_ut": 2426397.125,
+    "planets": {
+      "Sun": {
+        "longitude": 312.155669,
+        "sign_index": 10,
+        "degree_in_sign": 12.155669,
+        "is_retrograde": false,
+        "speed": 1.005911
+      },
+      "Moon": {
+        "longitude": 30.499663,
+        "sign_index": 1,
+        "degree_in_sign": 0.499663,
+        "is_retrograde": false,
+        "speed": 12.945672
+      },
+      "Mars": {
+        "longitude": 95.444187,
+        "sign_index": 3,
+        "degree_in_sign": 5.444187,
+        "is_retrograde": true,
+        "speed": -0.154534
+      },
+      "Mercury": {
+        "longitude": 296.921844,
+        "sign_index": 9,
+        "degree_in_sign": 26.921844,
+        "is_retrograde": false,
+        "speed": 1.617953
+      },
+      "Jupiter": {
+        "longitude": 77.743499,
+        "sign_index": 2,
+        "degree_in_sign": 17.743499,
+        "is_retrograde": true,
+        "speed": -0.035251
+      },
+      "Venus": {
+        "longitude": 266.663167,
+        "sign_index": 8,
+        "degree_in_sign": 26.663167,
+        "is_retrograde": false,
+        "speed": 1.112672
+      },
+      "Saturn": {
+        "longitude": 266.885693,
+        "sign_index": 8,
+        "degree_in_sign": 26.885693,
+        "is_retrograde": false,
+        "speed": 0.094616
+      },
+      "Rahu": {
+        "longitude": 353.824753,
+        "sign_index": 11,
+        "degree_in_sign": 23.824753,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 173.824753,
+        "sign_index": 5,
+        "degree_in_sign": 23.824753,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

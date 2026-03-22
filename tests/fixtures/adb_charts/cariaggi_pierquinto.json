@@ -1,0 +1,110 @@
+{
+  "adb_id": 7858,
+  "name": "Cariaggi, Pierquinto",
+  "given_name": "Pierquinto Cariaggi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428439.979167,
+    "year": 1936,
+    "month": 9,
+    "day": 28,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Stia",
+    "country": "Italy",
+    "lat": 43.8,
+    "lon": 11.7
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cariaggi,_Pierquinto",
+  "source_notes": "Bordoni quotes B.C. Vol 3\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Vocation : Entertain/Business : Manager/ Agent",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 2.387004,
+    "lagna": 212.387004,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.97357,
+    "jd_ut": 2428439.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 162.172487,
+        "sign_index": 5,
+        "degree_in_sign": 12.172487,
+        "is_retrograde": false,
+        "speed": 0.981818
+      },
+      "Moon": {
+        "longitude": 308.944457,
+        "sign_index": 10,
+        "degree_in_sign": 8.944457,
+        "is_retrograde": false,
+        "speed": 17.482377
+      },
+      "Mars": {
+        "longitude": 128.182399,
+        "sign_index": 4,
+        "degree_in_sign": 8.182399,
+        "is_retrograde": false,
+        "speed": 0.623457
+      },
+      "Mercury": {
+        "longitude": 167.516063,
+        "sign_index": 5,
+        "degree_in_sign": 17.516063,
+        "is_retrograde": true,
+        "speed": -1.08686
+      },
+      "Jupiter": {
+        "longitude": 234.949458,
+        "sign_index": 7,
+        "degree_in_sign": 24.949458,
+        "is_retrograde": false,
+        "speed": 0.132105
+      },
+      "Venus": {
+        "longitude": 186.658001,
+        "sign_index": 6,
+        "degree_in_sign": 6.658001,
+        "is_retrograde": false,
+        "speed": 1.229932
+      },
+      "Saturn": {
+        "longitude": 324.910954,
+        "sign_index": 10,
+        "degree_in_sign": 24.910954,
+        "is_retrograde": true,
+        "speed": -0.071506
+      },
+      "Rahu": {
+        "longitude": 245.569673,
+        "sign_index": 8,
+        "degree_in_sign": 5.569673,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 65.569673,
+        "sign_index": 2,
+        "degree_in_sign": 5.569673,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

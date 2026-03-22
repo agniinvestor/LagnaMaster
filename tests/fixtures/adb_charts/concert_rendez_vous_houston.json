@@ -1,0 +1,108 @@
+{
+  "adb_id": 70916,
+  "name": "Concert: Rendez-vous Houston",
+  "given_name": "Concert: Rendez-vous Houston",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2446526.604167,
+    "year": 1986,
+    "month": 4,
+    "day": 5,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Houston",
+    "country": "Texas",
+    "lat": 29.766667,
+    "lon": -95.366667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Concert:_Rendez-vous_Houston",
+  "source_notes": "Michael Brown quotes a YouTube video (https://www.youtube.com/watch?v=vrcXSh4NFsc) which shows 8:30pm as the time the music began to play (at 1 minute and 18 seconds into the video), while he also notes that another source [http://www.discogs.com/Jean-Michel-Jarre-Rendez-Vous-Houston-A-City-In-Concert/release/242687] gives 8:15pm in notes for the start of the recording.\\n",
+  "categories": [
+    "Mundane : Civic/Entertainment : Other Soc/Ent"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 22.613625,
+    "lagna": 172.613625,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.665171,
+    "jd_ut": 2446526.604167,
+    "planets": {
+      "Sun": {
+        "longitude": 352.338348,
+        "sign_index": 11,
+        "degree_in_sign": 22.338348,
+        "is_retrograde": false,
+        "speed": 0.984434
+      },
+      "Moon": {
+        "longitude": 315.344278,
+        "sign_index": 10,
+        "degree_in_sign": 15.344278,
+        "is_retrograde": false,
+        "speed": 17.158412
+      },
+      "Mars": {
+        "longitude": 250.755123,
+        "sign_index": 8,
+        "degree_in_sign": 10.755123,
+        "is_retrograde": false,
+        "speed": 0.479759
+      },
+      "Mercury": {
+        "longitude": 326.234603,
+        "sign_index": 10,
+        "degree_in_sign": 26.234603,
+        "is_retrograde": false,
+        "speed": 0.555716
+      },
+      "Jupiter": {
+        "longitude": 316.657117,
+        "sign_index": 10,
+        "degree_in_sign": 16.657117,
+        "is_retrograde": false,
+        "speed": 0.217151
+      },
+      "Venus": {
+        "longitude": 10.969882,
+        "sign_index": 0,
+        "degree_in_sign": 10.969882,
+        "is_retrograde": false,
+        "speed": 1.231864
+      },
+      "Saturn": {
+        "longitude": 225.782639,
+        "sign_index": 7,
+        "degree_in_sign": 15.782639,
+        "is_retrograde": true,
+        "speed": -0.028846
+      },
+      "Rahu": {
+        "longitude": 7.12235,
+        "sign_index": 0,
+        "degree_in_sign": 7.12235,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 187.12235,
+        "sign_index": 6,
+        "degree_in_sign": 7.12235,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

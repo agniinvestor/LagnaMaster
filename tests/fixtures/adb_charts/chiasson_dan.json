@@ -1,0 +1,115 @@
+{
+  "adb_id": 91716,
+  "name": "Chiasson, Dan",
+  "given_name": "Dan Chiasson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441080.706944,
+    "year": 1971,
+    "month": 5,
+    "day": 9,
+    "calendar": "g",
+    "time": "00:58",
+    "time_type": "d",
+    "hour": 0.966667,
+    "time_unknown": false,
+    "place": "Burlington",
+    "country": "Vermont",
+    "lat": 44.483333,
+    "lon": -73.216667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiasson,_Dan",
+  "source_notes": "Sy Scholfield provided birth certificate from public records database. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Financial : Gain - Grant, Scholarship, etc.",
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 6.171099,
+    "lagna": 246.171099,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.456914,
+    "jd_ut": 2441080.706944,
+    "planets": {
+      "Sun": {
+        "longitude": 24.476035,
+        "sign_index": 0,
+        "degree_in_sign": 24.476035,
+        "is_retrograde": false,
+        "speed": 0.966613
+      },
+      "Moon": {
+        "longitude": 190.139389,
+        "sign_index": 6,
+        "degree_in_sign": 10.139389,
+        "is_retrograde": false,
+        "speed": 8.486232
+      },
+      "Mars": {
+        "longitude": 279.262073,
+        "sign_index": 9,
+        "degree_in_sign": 9.262073,
+        "is_retrograde": false,
+        "speed": 0.501666
+      },
+      "Mercury": {
+        "longitude": 0.990903,
+        "sign_index": 0,
+        "degree_in_sign": 0.990903,
+        "is_retrograde": false,
+        "speed": 0.441142
+      },
+      "Jupiter": {
+        "longitude": 219.892485,
+        "sign_index": 7,
+        "degree_in_sign": 9.892485,
+        "is_retrograde": true,
+        "speed": -0.118138
+      },
+      "Venus": {
+        "longitude": 355.274997,
+        "sign_index": 11,
+        "degree_in_sign": 25.274997,
+        "is_retrograde": false,
+        "speed": 1.206584
+      },
+      "Saturn": {
+        "longitude": 31.403499,
+        "sign_index": 1,
+        "degree_in_sign": 1.403499,
+        "is_retrograde": false,
+        "speed": 0.128691
+      },
+      "Rahu": {
+        "longitude": 295.711515,
+        "sign_index": 9,
+        "degree_in_sign": 25.711515,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 115.711515,
+        "sign_index": 3,
+        "degree_in_sign": 25.711515,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

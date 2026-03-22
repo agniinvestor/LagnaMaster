@@ -1,0 +1,111 @@
+{
+  "adb_id": 100202,
+  "name": "Cruz, Rwan",
+  "given_name": "Rwan Cruz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2452049.998611,
+    "year": 2001,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "08:58",
+    "time_type": "s",
+    "hour": 8.966667,
+    "time_unknown": false,
+    "place": "Recife (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.053889,
+    "lon": -34.881111
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cruz,_Rwan",
+  "source_notes": "Birth entry from civil registry in hand from Sy Scholfield, copy on file; born at \"Maternidade IMIP, Recife, PE\" (Instituto Materno Infantil de Pernambuco).\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.260966,
+    "lagna": 60.260966,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.876406,
+    "jd_ut": 2452049.998611,
+    "planets": {
+      "Sun": {
+        "longitude": 35.656641,
+        "sign_index": 1,
+        "degree_in_sign": 5.656641,
+        "is_retrograde": false,
+        "speed": 0.962603
+      },
+      "Moon": {
+        "longitude": 3.277658,
+        "sign_index": 0,
+        "degree_in_sign": 3.277658,
+        "is_retrograde": false,
+        "speed": 7.615349
+      },
+      "Mars": {
+        "longitude": 244.685834,
+        "sign_index": 8,
+        "degree_in_sign": 4.685834,
+        "is_retrograde": true,
+        "speed": -0.112024
+      },
+      "Mercury": {
+        "longitude": 57.894998,
+        "sign_index": 1,
+        "degree_in_sign": 27.894998,
+        "is_retrograde": false,
+        "speed": 1.083635
+      },
+      "Jupiter": {
+        "longitude": 53.906421,
+        "sign_index": 1,
+        "degree_in_sign": 23.906421,
+        "is_retrograde": false,
+        "speed": 0.225607
+      },
+      "Venus": {
+        "longitude": 351.407567,
+        "sign_index": 11,
+        "degree_in_sign": 21.407567,
+        "is_retrograde": false,
+        "speed": 0.775869
+      },
+      "Saturn": {
+        "longitude": 39.838321,
+        "sign_index": 1,
+        "degree_in_sign": 9.838321,
+        "is_retrograde": false,
+        "speed": 0.129324
+      },
+      "Rahu": {
+        "longitude": 74.426532,
+        "sign_index": 2,
+        "degree_in_sign": 14.426532,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 254.426532,
+        "sign_index": 8,
+        "degree_in_sign": 14.426532,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

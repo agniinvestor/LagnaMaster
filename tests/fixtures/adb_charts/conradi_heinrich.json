@@ -1,0 +1,109 @@
+{
+  "adb_id": 81068,
+  "name": "Conradi, Heinrich",
+  "given_name": "Heinrich Conradi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406336.059259,
+    "year": 1876,
+    "month": 3,
+    "day": 22,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Frankfurt am Main",
+    "country": "Germany",
+    "lat": 50.116667,
+    "lon": 8.666667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conradi,_Heinrich",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Vocation : Medical : Other Medical Vocations",
+    "Vocation : Science : Biology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 3.213552,
+    "lagna": 93.213552,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.12856,
+    "jd_ut": 2406336.059259,
+    "planets": {
+      "Sun": {
+        "longitude": 340.154978,
+        "sign_index": 11,
+        "degree_in_sign": 10.154978,
+        "is_retrograde": false,
+        "speed": 0.991244
+      },
+      "Moon": {
+        "longitude": 299.552478,
+        "sign_index": 9,
+        "degree_in_sign": 29.552478,
+        "is_retrograde": false,
+        "speed": 11.462007
+      },
+      "Mars": {
+        "longitude": 24.316856,
+        "sign_index": 0,
+        "degree_in_sign": 24.316856,
+        "is_retrograde": false,
+        "speed": 0.688583
+      },
+      "Mercury": {
+        "longitude": 315.355148,
+        "sign_index": 10,
+        "degree_in_sign": 15.355148,
+        "is_retrograde": false,
+        "speed": 1.402843
+      },
+      "Jupiter": {
+        "longitude": 219.835691,
+        "sign_index": 7,
+        "degree_in_sign": 9.835691,
+        "is_retrograde": true,
+        "speed": -0.01477
+      },
+      "Venus": {
+        "longitude": 21.267623,
+        "sign_index": 0,
+        "degree_in_sign": 21.267623,
+        "is_retrograde": false,
+        "speed": 1.153804
+      },
+      "Saturn": {
+        "longitude": 310.415902,
+        "sign_index": 10,
+        "degree_in_sign": 10.415902,
+        "is_retrograde": false,
+        "speed": 0.110688
+      },
+      "Rahu": {
+        "longitude": 336.90285,
+        "sign_index": 11,
+        "degree_in_sign": 6.90285,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 156.90285,
+        "sign_index": 5,
+        "degree_in_sign": 6.90285,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

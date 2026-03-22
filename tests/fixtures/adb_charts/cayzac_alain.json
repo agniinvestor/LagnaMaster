@@ -1,0 +1,109 @@
+{
+  "adb_id": 64958,
+  "name": "Cayzac, Alain",
+  "given_name": "Alain Cayzac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430147.729167,
+    "year": 1941,
+    "month": 6,
+    "day": 2,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "d",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Évreux",
+    "country": "France",
+    "lat": 49.016667,
+    "lon": 1.15
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cayzac,_Alain",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 92.\\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Business/Marketing : Advertising"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.426185,
+    "lagna": 47.426185,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.038865,
+    "jd_ut": 2430147.729167,
+    "planets": {
+      "Sun": {
+        "longitude": 48.246056,
+        "sign_index": 1,
+        "degree_in_sign": 18.246056,
+        "is_retrograde": false,
+        "speed": 0.957896
+      },
+      "Moon": {
+        "longitude": 129.95322,
+        "sign_index": 4,
+        "degree_in_sign": 9.95322,
+        "is_retrograde": false,
+        "speed": 16.955431
+      },
+      "Mars": {
+        "longitude": 318.288547,
+        "sign_index": 10,
+        "degree_in_sign": 18.288547,
+        "is_retrograde": false,
+        "speed": 0.653991
+      },
+      "Mercury": {
+        "longitude": 71.487609,
+        "sign_index": 2,
+        "degree_in_sign": 11.487609,
+        "is_retrograde": false,
+        "speed": 1.196339
+      },
+      "Jupiter": {
+        "longitude": 38.532861,
+        "sign_index": 1,
+        "degree_in_sign": 8.532861,
+        "is_retrograde": false,
+        "speed": 0.233753
+      },
+      "Venus": {
+        "longitude": 59.892359,
+        "sign_index": 1,
+        "degree_in_sign": 29.892359,
+        "is_retrograde": false,
+        "speed": 1.226746
+      },
+      "Saturn": {
+        "longitude": 28.055147,
+        "sign_index": 0,
+        "degree_in_sign": 28.055147,
+        "is_retrograde": false,
+        "speed": 0.123526
+      },
+      "Rahu": {
+        "longitude": 155.072465,
+        "sign_index": 5,
+        "degree_in_sign": 5.072465,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 335.072465,
+        "sign_index": 11,
+        "degree_in_sign": 5.072465,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

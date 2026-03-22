@@ -1,0 +1,113 @@
+{
+  "adb_id": 80979,
+  "name": "Carnot, Marie-Adolphe",
+  "given_name": "Marie-Adolphe Carnot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2392766.576852,
+    "year": 1839,
+    "month": 1,
+    "day": 27,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carnot,_Marie-Adolphe",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Engineer : Other Engineer",
+    "Vocation : Politics : Other Politics",
+    "Vocation : Science : Chemistry",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.314745,
+    "lagna": 184.314745,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.609924,
+    "jd_ut": 2392766.576852,
+    "planets": {
+      "Sun": {
+        "longitude": 284.896291,
+        "sign_index": 9,
+        "degree_in_sign": 14.896291,
+        "is_retrograde": false,
+        "speed": 1.015498
+      },
+      "Moon": {
+        "longitude": 73.148937,
+        "sign_index": 2,
+        "degree_in_sign": 13.148937,
+        "is_retrograde": false,
+        "speed": 11.625439
+      },
+      "Mars": {
+        "longitude": 158.490646,
+        "sign_index": 5,
+        "degree_in_sign": 8.490646,
+        "is_retrograde": false,
+        "speed": 0.057518
+      },
+      "Mercury": {
+        "longitude": 260.07924,
+        "sign_index": 8,
+        "degree_in_sign": 20.07924,
+        "is_retrograde": false,
+        "speed": 1.044704
+      },
+      "Jupiter": {
+        "longitude": 177.036378,
+        "sign_index": 5,
+        "degree_in_sign": 27.036378,
+        "is_retrograde": false,
+        "speed": 0.020883
+      },
+      "Venus": {
+        "longitude": 294.305191,
+        "sign_index": 9,
+        "degree_in_sign": 24.305191,
+        "is_retrograde": false,
+        "speed": 1.254058
+      },
+      "Saturn": {
+        "longitude": 226.526526,
+        "sign_index": 7,
+        "degree_in_sign": 16.526526,
+        "is_retrograde": false,
+        "speed": 0.079556
+      },
+      "Rahu": {
+        "longitude": 335.978868,
+        "sign_index": 11,
+        "degree_in_sign": 5.978868,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 155.978868,
+        "sign_index": 5,
+        "degree_in_sign": 5.978868,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

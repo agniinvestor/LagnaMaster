@@ -1,0 +1,114 @@
+{
+  "adb_id": 95139,
+  "name": "Cummings, Larry L.",
+  "given_name": "Larry L. Cummings",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428834.965278,
+    "year": 1937,
+    "month": 10,
+    "day": 28,
+    "calendar": "g",
+    "time": "05:10",
+    "time_type": "s",
+    "hour": 5.166667,
+    "time_unknown": false,
+    "place": "Indianapolis",
+    "country": "Indiana",
+    "lat": 39.766667,
+    "lon": -86.15
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cummings,_Larry_L.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. In the book ''Management Laureates'', Volume 1, by H. Igor Ansoff and Arthur G. Bedeian (JAI Press Inc, 1992), he gives a different time: \"I was born at 5:30 a.m. October 28, 1937 in Indianapolis.\"\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Public speaker",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 6.165139,
+    "lagna": 156.165139,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.988672,
+    "jd_ut": 2428834.965278,
+    "planets": {
+      "Sun": {
+        "longitude": 191.623342,
+        "sign_index": 6,
+        "degree_in_sign": 11.623342,
+        "is_retrograde": false,
+        "speed": 0.998952
+      },
+      "Moon": {
+        "longitude": 125.977113,
+        "sign_index": 4,
+        "degree_in_sign": 5.977113,
+        "is_retrograde": false,
+        "speed": 9.529493
+      },
+      "Mars": {
+        "longitude": 266.563049,
+        "sign_index": 8,
+        "degree_in_sign": 26.563049,
+        "is_retrograde": false,
+        "speed": 0.720647
+      },
+      "Mercury": {
+        "longitude": 191.013915,
+        "sign_index": 6,
+        "degree_in_sign": 11.013915,
+        "is_retrograde": false,
+        "speed": 1.649496
+      },
+      "Jupiter": {
+        "longitude": 267.514499,
+        "sign_index": 8,
+        "degree_in_sign": 27.514499,
+        "is_retrograde": false,
+        "speed": 0.129621
+      },
+      "Venus": {
+        "longitude": 167.874188,
+        "sign_index": 5,
+        "degree_in_sign": 17.874188,
+        "is_retrograde": false,
+        "speed": 1.241604
+      },
+      "Saturn": {
+        "longitude": 336.371659,
+        "sign_index": 11,
+        "degree_in_sign": 6.371659,
+        "is_retrograde": true,
+        "speed": -0.055759
+      },
+      "Rahu": {
+        "longitude": 224.638541,
+        "sign_index": 7,
+        "degree_in_sign": 14.638541,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 44.638541,
+        "sign_index": 1,
+        "degree_in_sign": 14.638541,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

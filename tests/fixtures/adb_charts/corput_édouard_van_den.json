@@ -1,0 +1,110 @@
+{
+  "adb_id": 81073,
+  "name": "Corput, Édouard van den",
+  "given_name": "Édouard van den Corput",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2386275.675463,
+    "year": 1821,
+    "month": 4,
+    "day": 20,
+    "calendar": "g",
+    "time": "04:30",
+    "time_type": "l",
+    "hour": 4.5,
+    "time_unknown": false,
+    "place": "Brussels",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corput,_Édouard_van_den",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Medical : Physician",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 29.834825,
+    "lagna": 329.834825,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.361867,
+    "jd_ut": 2386275.675463,
+    "planets": {
+      "Sun": {
+        "longitude": 8.377486,
+        "sign_index": 0,
+        "degree_in_sign": 8.377486,
+        "is_retrograde": false,
+        "speed": 0.974519
+      },
+      "Moon": {
+        "longitude": 217.532081,
+        "sign_index": 7,
+        "degree_in_sign": 7.532081,
+        "is_retrograde": false,
+        "speed": 9.272274
+      },
+      "Mars": {
+        "longitude": 347.061906,
+        "sign_index": 11,
+        "degree_in_sign": 17.061906,
+        "is_retrograde": false,
+        "speed": 0.770036
+      },
+      "Mercury": {
+        "longitude": 341.405219,
+        "sign_index": 11,
+        "degree_in_sign": 11.405219,
+        "is_retrograde": false,
+        "speed": 0.850462
+      },
+      "Jupiter": {
+        "longitude": 350.682791,
+        "sign_index": 11,
+        "degree_in_sign": 20.682791,
+        "is_retrograde": false,
+        "speed": 0.236049
+      },
+      "Venus": {
+        "longitude": 359.645508,
+        "sign_index": 11,
+        "degree_in_sign": 29.645508,
+        "is_retrograde": false,
+        "speed": 1.234002
+      },
+      "Saturn": {
+        "longitude": 356.836103,
+        "sign_index": 11,
+        "degree_in_sign": 26.836103,
+        "is_retrograde": false,
+        "speed": 0.124409
+      },
+      "Rahu": {
+        "longitude": 319.945843,
+        "sign_index": 10,
+        "degree_in_sign": 19.945843,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 139.945843,
+        "sign_index": 4,
+        "degree_in_sign": 19.945843,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

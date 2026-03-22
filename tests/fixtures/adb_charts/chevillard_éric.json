@@ -1,0 +1,108 @@
+{
+  "adb_id": 62977,
+  "name": "Chevillard, Éric",
+  "given_name": "Éric Chevillard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438565.163194,
+    "year": 1964,
+    "month": 6,
+    "day": 18,
+    "calendar": "g",
+    "time": "16:55",
+    "time_type": "s",
+    "hour": 16.916667,
+    "time_unknown": false,
+    "place": "La Roche sur Yon",
+    "country": "France",
+    "lat": 46.666667,
+    "lon": -1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevillard,_Éric",
+  "source_notes": "BC in Didier Geslain archive, 'Ecrivains' pdf file, p. 94.\\n",
+  "categories": [
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 23.54738,
+    "lagna": 173.54738,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.360721,
+    "jd_ut": 2438565.163194,
+    "planets": {
+      "Sun": {
+        "longitude": 64.058986,
+        "sign_index": 2,
+        "degree_in_sign": 4.058986,
+        "is_retrograde": false,
+        "speed": 0.954291
+      },
+      "Moon": {
+        "longitude": 174.675349,
+        "sign_index": 5,
+        "degree_in_sign": 24.675349,
+        "is_retrograde": false,
+        "speed": 10.303468
+      },
+      "Mars": {
+        "longitude": 37.483317,
+        "sign_index": 1,
+        "degree_in_sign": 7.483317,
+        "is_retrograde": false,
+        "speed": 0.713458
+      },
+      "Mercury": {
+        "longitude": 53.705262,
+        "sign_index": 1,
+        "degree_in_sign": 23.705262,
+        "is_retrograde": false,
+        "speed": 2.063393
+      },
+      "Jupiter": {
+        "longitude": 22.163989,
+        "sign_index": 0,
+        "degree_in_sign": 22.163989,
+        "is_retrograde": false,
+        "speed": 0.206172
+      },
+      "Venus": {
+        "longitude": 66.084353,
+        "sign_index": 2,
+        "degree_in_sign": 6.084353,
+        "is_retrograde": true,
+        "speed": -0.624107
+      },
+      "Saturn": {
+        "longitude": 311.673042,
+        "sign_index": 10,
+        "degree_in_sign": 11.673042,
+        "is_retrograde": true,
+        "speed": -0.005815
+      },
+      "Rahu": {
+        "longitude": 69.015319,
+        "sign_index": 2,
+        "degree_in_sign": 9.015319,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 249.015319,
+        "sign_index": 8,
+        "degree_in_sign": 9.015319,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

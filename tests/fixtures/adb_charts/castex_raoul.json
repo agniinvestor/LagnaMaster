@@ -1,0 +1,109 @@
+{
+  "adb_id": 70448,
+  "name": "Castex, Raoul",
+  "given_name": "Raoul Castex",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407284.963194,
+    "year": 1878,
+    "month": 10,
+    "day": 27,
+    "calendar": "g",
+    "time": "11:16",
+    "time_type": "l",
+    "hour": 11.266667,
+    "time_unknown": false,
+    "place": "St.Omer",
+    "country": "France",
+    "lat": 50.75,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castex,_Raoul",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 52.\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Military : Other Military"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 9.124329,
+    "lagna": 219.124329,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.164831,
+    "jd_ut": 2407284.963194,
+    "planets": {
+      "Sun": {
+        "longitude": 191.749359,
+        "sign_index": 6,
+        "degree_in_sign": 11.749359,
+        "is_retrograde": false,
+        "speed": 0.999321
+      },
+      "Moon": {
+        "longitude": 213.488624,
+        "sign_index": 7,
+        "degree_in_sign": 3.488624,
+        "is_retrograde": false,
+        "speed": 11.635146
+      },
+      "Mars": {
+        "longitude": 178.681503,
+        "sign_index": 5,
+        "degree_in_sign": 28.681503,
+        "is_retrograde": false,
+        "speed": 0.661362
+      },
+      "Mercury": {
+        "longitude": 193.431425,
+        "sign_index": 6,
+        "degree_in_sign": 13.431425,
+        "is_retrograde": false,
+        "speed": 1.631541
+      },
+      "Jupiter": {
+        "longitude": 276.977384,
+        "sign_index": 9,
+        "degree_in_sign": 6.977384,
+        "is_retrograde": false,
+        "speed": 0.104196
+      },
+      "Venus": {
+        "longitude": 181.993526,
+        "sign_index": 6,
+        "degree_in_sign": 1.993526,
+        "is_retrograde": false,
+        "speed": 1.253148
+      },
+      "Saturn": {
+        "longitude": 334.895844,
+        "sign_index": 11,
+        "degree_in_sign": 4.895844,
+        "is_retrograde": true,
+        "speed": -0.053702
+      },
+      "Rahu": {
+        "longitude": 286.618411,
+        "sign_index": 9,
+        "degree_in_sign": 16.618411,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 106.618411,
+        "sign_index": 3,
+        "degree_in_sign": 16.618411,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

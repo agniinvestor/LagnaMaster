@@ -1,0 +1,109 @@
+{
+  "adb_id": 69895,
+  "name": "Carpon, Jean-Luc",
+  "given_name": "Jean-Luc Carpon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434839.927083,
+    "year": 1954,
+    "month": 4,
+    "day": 7,
+    "calendar": "g",
+    "time": "11:15",
+    "time_type": "s",
+    "hour": 11.25,
+    "time_unknown": false,
+    "place": "Cerisy-la-Forêt",
+    "country": "France",
+    "lat": 49.195833,
+    "lon": -0.935556
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpon,_Jean-Luc",
+  "source_notes": "Didier Geslain archive, 'hippisme drivers' pdf file, p. 36.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 28.972602,
+    "lagna": 58.972602,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.218276,
+    "jd_ut": 2434839.927083,
+    "planets": {
+      "Sun": {
+        "longitude": 353.83854,
+        "sign_index": 11,
+        "degree_in_sign": 23.83854,
+        "is_retrograde": false,
+        "speed": 0.983416
+      },
+      "Moon": {
+        "longitude": 49.145444,
+        "sign_index": 1,
+        "degree_in_sign": 19.145444,
+        "is_retrograde": false,
+        "speed": 14.066264
+      },
+      "Mars": {
+        "longitude": 244.758759,
+        "sign_index": 8,
+        "degree_in_sign": 4.758759,
+        "is_retrograde": false,
+        "speed": 0.397585
+      },
+      "Mercury": {
+        "longitude": 328.026561,
+        "sign_index": 10,
+        "degree_in_sign": 28.026561,
+        "is_retrograde": false,
+        "speed": 1.356294
+      },
+      "Jupiter": {
+        "longitude": 57.923042,
+        "sign_index": 1,
+        "degree_in_sign": 27.923042,
+        "is_retrograde": false,
+        "speed": 0.154619
+      },
+      "Venus": {
+        "longitude": 10.394536,
+        "sign_index": 0,
+        "degree_in_sign": 10.394536,
+        "is_retrograde": false,
+        "speed": 1.233476
+      },
+      "Saturn": {
+        "longitude": 194.244099,
+        "sign_index": 6,
+        "degree_in_sign": 14.244099,
+        "is_retrograde": true,
+        "speed": -0.068652
+      },
+      "Rahu": {
+        "longitude": 266.423221,
+        "sign_index": 8,
+        "degree_in_sign": 26.423221,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 86.423221,
+        "sign_index": 2,
+        "degree_in_sign": 26.423221,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

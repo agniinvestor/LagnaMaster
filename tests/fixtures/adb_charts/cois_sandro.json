@@ -1,0 +1,108 @@
+{
+  "adb_id": 101655,
+  "name": "Cois, Sandro",
+  "given_name": "Sandro Cois",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441477.6875,
+    "year": 1972,
+    "month": 6,
+    "day": 9,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "d",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Fossano",
+    "country": "Italy",
+    "lat": 44.55,
+    "lon": 7.716667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cois,_Sandro",
+  "source_notes": "Quoted BC from Bordoni database.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 11.323919,
+    "lagna": 41.323919,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.472094,
+    "jd_ut": 2441477.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 54.957691,
+        "sign_index": 1,
+        "degree_in_sign": 24.957691,
+        "is_retrograde": false,
+        "speed": 0.956437
+      },
+      "Moon": {
+        "longitude": 23.30615,
+        "sign_index": 0,
+        "degree_in_sign": 23.30615,
+        "is_retrograde": false,
+        "speed": 14.053809
+      },
+      "Mars": {
+        "longitude": 84.16074,
+        "sign_index": 2,
+        "degree_in_sign": 24.16074,
+        "is_retrograde": false,
+        "speed": 0.635714
+      },
+      "Mercury": {
+        "longitude": 60.260234,
+        "sign_index": 2,
+        "degree_in_sign": 0.260234,
+        "is_retrograde": false,
+        "speed": 2.165509
+      },
+      "Jupiter": {
+        "longitude": 251.917378,
+        "sign_index": 8,
+        "degree_in_sign": 11.917378,
+        "is_retrograde": true,
+        "speed": -0.116775
+      },
+      "Venus": {
+        "longitude": 67.922796,
+        "sign_index": 2,
+        "degree_in_sign": 7.922796,
+        "is_retrograde": true,
+        "speed": -0.491841
+      },
+      "Saturn": {
+        "longitude": 47.628287,
+        "sign_index": 1,
+        "degree_in_sign": 17.628287,
+        "is_retrograde": false,
+        "speed": 0.129308
+      },
+      "Rahu": {
+        "longitude": 274.674706,
+        "sign_index": 9,
+        "degree_in_sign": 4.674706,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 94.674706,
+        "sign_index": 3,
+        "degree_in_sign": 4.674706,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

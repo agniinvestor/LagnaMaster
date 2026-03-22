@@ -1,0 +1,109 @@
+{
+  "adb_id": 102246,
+  "name": "Cissey, Ernest Courtot de",
+  "given_name": "Ernest Courtot de Cissey",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2382504.993519,
+    "year": 1810,
+    "month": 12,
+    "day": 23,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cissey,_Ernest_Courtot_de",
+  "source_notes": "Taeger Vol. 4, p. 95, BAR-3 (registry office) \\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 20.514236,
+    "lagna": 320.514236,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.217775,
+    "jd_ut": 2382504.993519,
+    "planets": {
+      "Sun": {
+        "longitude": 249.855847,
+        "sign_index": 8,
+        "degree_in_sign": 9.855847,
+        "is_retrograde": false,
+        "speed": 1.019332
+      },
+      "Moon": {
+        "longitude": 211.830689,
+        "sign_index": 7,
+        "degree_in_sign": 1.830689,
+        "is_retrograde": false,
+        "speed": 10.759545
+      },
+      "Mars": {
+        "longitude": 182.199697,
+        "sign_index": 6,
+        "degree_in_sign": 2.199697,
+        "is_retrograde": false,
+        "speed": 0.569635
+      },
+      "Mercury": {
+        "longitude": 257.595479,
+        "sign_index": 8,
+        "degree_in_sign": 17.595479,
+        "is_retrograde": false,
+        "speed": 1.60618
+      },
+      "Jupiter": {
+        "longitude": 31.127084,
+        "sign_index": 1,
+        "degree_in_sign": 1.127084,
+        "is_retrograde": true,
+        "speed": -0.079456
+      },
+      "Venus": {
+        "longitude": 258.937057,
+        "sign_index": 8,
+        "degree_in_sign": 18.937057,
+        "is_retrograde": true,
+        "speed": -0.546184
+      },
+      "Saturn": {
+        "longitude": 238.058735,
+        "sign_index": 7,
+        "degree_in_sign": 28.058735,
+        "is_retrograde": false,
+        "speed": 0.116598
+      },
+      "Rahu": {
+        "longitude": 159.762531,
+        "sign_index": 5,
+        "degree_in_sign": 9.762531,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 339.762531,
+        "sign_index": 11,
+        "degree_in_sign": 9.762531,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

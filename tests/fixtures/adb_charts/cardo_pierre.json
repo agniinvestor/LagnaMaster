@@ -1,0 +1,110 @@
+{
+  "adb_id": 53866,
+  "name": "Cardo, Pierre",
+  "given_name": "Pierre Cardo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433157.375,
+    "year": 1949,
+    "month": 8,
+    "day": 28,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Toulon",
+    "country": "France",
+    "lat": 43.116667,
+    "lon": 5.933333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardo,_Pierre",
+  "source_notes": "Steinbrecher collection: Cadran 1/1-93 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 0.25563,
+    "lagna": 0.25563,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.153941,
+    "jd_ut": 2433157.375,
+    "planets": {
+      "Sun": {
+        "longitude": 132.044977,
+        "sign_index": 4,
+        "degree_in_sign": 12.044977,
+        "is_retrograde": false,
+        "speed": 0.966515
+      },
+      "Moon": {
+        "longitude": 196.397656,
+        "sign_index": 6,
+        "degree_in_sign": 16.397656,
+        "is_retrograde": false,
+        "speed": 13.229261
+      },
+      "Mars": {
+        "longitude": 90.923195,
+        "sign_index": 3,
+        "degree_in_sign": 0.923195,
+        "is_retrograde": false,
+        "speed": 0.63981
+      },
+      "Mercury": {
+        "longitude": 157.131618,
+        "sign_index": 5,
+        "degree_in_sign": 7.131618,
+        "is_retrograde": false,
+        "speed": 1.306678
+      },
+      "Jupiter": {
+        "longitude": 269.87881,
+        "sign_index": 8,
+        "degree_in_sign": 29.87881,
+        "is_retrograde": true,
+        "speed": -0.065275
+      },
+      "Venus": {
+        "longitude": 166.84255,
+        "sign_index": 5,
+        "degree_in_sign": 16.84255,
+        "is_retrograde": false,
+        "speed": 1.19454
+      },
+      "Saturn": {
+        "longitude": 135.84674,
+        "sign_index": 4,
+        "degree_in_sign": 15.84674,
+        "is_retrograde": false,
+        "speed": 0.126035
+      },
+      "Rahu": {
+        "longitude": 355.585119,
+        "sign_index": 11,
+        "degree_in_sign": 25.585119,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 175.585119,
+        "sign_index": 5,
+        "degree_in_sign": 25.585119,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

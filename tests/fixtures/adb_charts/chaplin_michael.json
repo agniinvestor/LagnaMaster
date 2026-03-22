@@ -1,0 +1,115 @@
+{
+  "adb_id": 10150,
+  "name": "Chaplin, Michael",
+  "given_name": "Michael Chaplin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431886.767361,
+    "year": 1946,
+    "month": 3,
+    "day": 6,
+    "calendar": "g",
+    "time": "22:25",
+    "time_type": "s",
+    "hour": 22.416667,
+    "time_unknown": false,
+    "place": "Santa Monica",
+    "country": "California",
+    "lat": 34.016667,
+    "lon": -118.483333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaplin,_Michael",
+  "source_notes": "B.C. in hand from the Wilsons\\n",
+  "categories": [
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Family : Childhood : Family large",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Family : Childhood : Sibling circumstances",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Writers : Autobiographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 27.304661,
+    "lagna": 177.304661,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.105358,
+    "jd_ut": 2431886.767361,
+    "planets": {
+      "Sun": {
+        "longitude": 322.983964,
+        "sign_index": 10,
+        "degree_in_sign": 22.983964,
+        "is_retrograde": false,
+        "speed": 1.000708
+      },
+      "Moon": {
+        "longitude": 9.154885,
+        "sign_index": 0,
+        "degree_in_sign": 9.154885,
+        "is_retrograde": false,
+        "speed": 15.915574
+      },
+      "Mars": {
+        "longitude": 82.048231,
+        "sign_index": 2,
+        "degree_in_sign": 22.048231,
+        "is_retrograde": false,
+        "speed": 0.150421
+      },
+      "Mercury": {
+        "longitude": 340.882375,
+        "sign_index": 11,
+        "degree_in_sign": 10.882375,
+        "is_retrograde": false,
+        "speed": 1.249953
+      },
+      "Jupiter": {
+        "longitude": 183.379896,
+        "sign_index": 6,
+        "degree_in_sign": 3.379896,
+        "is_retrograde": true,
+        "speed": -0.072455
+      },
+      "Venus": {
+        "longitude": 331.181722,
+        "sign_index": 11,
+        "degree_in_sign": 1.181722,
+        "is_retrograde": false,
+        "speed": 1.247107
+      },
+      "Saturn": {
+        "longitude": 85.007592,
+        "sign_index": 2,
+        "degree_in_sign": 25.007592,
+        "is_retrograde": true,
+        "speed": -0.02412
+      },
+      "Rahu": {
+        "longitude": 62.917238,
+        "sign_index": 2,
+        "degree_in_sign": 2.917238,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 242.917238,
+        "sign_index": 8,
+        "degree_in_sign": 2.917238,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

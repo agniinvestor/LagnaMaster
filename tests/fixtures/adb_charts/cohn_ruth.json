@@ -1,0 +1,110 @@
+{
+  "adb_id": 58160,
+  "name": "Cohn, Ruth",
+  "given_name": "Ruth Cohn",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419642.03125,
+    "year": 1912,
+    "month": 8,
+    "day": 27,
+    "calendar": "g",
+    "time": "13:45",
+    "time_type": "s",
+    "hour": 13.75,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohn,_Ruth",
+  "source_notes": "Taeger quotes her via Claus D. Stahl\\n",
+  "categories": [
+    "Vocation : Healing Fields : Counselor/ Therapist",
+    "Vocation : Writers : Poet",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.313273,
+    "lagna": 197.313273,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.637207,
+    "jd_ut": 2419642.03125,
+    "planets": {
+      "Sun": {
+        "longitude": 131.211964,
+        "sign_index": 4,
+        "degree_in_sign": 11.211964,
+        "is_retrograde": false,
+        "speed": 0.965581
+      },
+      "Moon": {
+        "longitude": 307.925211,
+        "sign_index": 10,
+        "degree_in_sign": 7.925211,
+        "is_retrograde": false,
+        "speed": 14.574912
+      },
+      "Mars": {
+        "longitude": 153.391613,
+        "sign_index": 5,
+        "degree_in_sign": 3.391613,
+        "is_retrograde": false,
+        "speed": 0.64078
+      },
+      "Mercury": {
+        "longitude": 122.334807,
+        "sign_index": 4,
+        "degree_in_sign": 2.334807,
+        "is_retrograde": true,
+        "speed": -0.570404
+      },
+      "Jupiter": {
+        "longitude": 223.848347,
+        "sign_index": 7,
+        "degree_in_sign": 13.848347,
+        "is_retrograde": false,
+        "speed": 0.07375
+      },
+      "Venus": {
+        "longitude": 145.627851,
+        "sign_index": 4,
+        "degree_in_sign": 25.627851,
+        "is_retrograde": false,
+        "speed": 1.234561
+      },
+      "Saturn": {
+        "longitude": 41.12064,
+        "sign_index": 1,
+        "degree_in_sign": 11.12064,
+        "is_retrograde": false,
+        "speed": 0.035314
+      },
+      "Rahu": {
+        "longitude": 351.791271,
+        "sign_index": 11,
+        "degree_in_sign": 21.791271,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 171.791271,
+        "sign_index": 5,
+        "degree_in_sign": 21.791271,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

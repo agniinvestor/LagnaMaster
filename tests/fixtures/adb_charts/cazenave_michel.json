@@ -1,0 +1,109 @@
+{
+  "adb_id": 63069,
+  "name": "Cazenave, Michel",
+  "given_name": "Michel Cazenave",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430519.75,
+    "year": 1942,
+    "month": 6,
+    "day": 9,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "d",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Toulouse",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cazenave,_Michel",
+  "source_notes": "Didier Geslain archive, 'Philosophes' pdf file, p. 22.\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Philosopher",
+    "Vocation : Writers : Religion/ Philosophy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 25.128673,
+    "lagna": 55.128673,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.05309,
+    "jd_ut": 2430519.75,
+    "planets": {
+      "Sun": {
+        "longitude": 54.717668,
+        "sign_index": 1,
+        "degree_in_sign": 24.717668,
+        "is_retrograde": false,
+        "speed": 0.956457
+      },
+      "Moon": {
+        "longitude": 3.954146,
+        "sign_index": 0,
+        "degree_in_sign": 3.954146,
+        "is_retrograde": false,
+        "speed": 9.324364
+      },
+      "Mars": {
+        "longitude": 93.916476,
+        "sign_index": 3,
+        "degree_in_sign": 3.916476,
+        "is_retrograde": false,
+        "speed": 0.61662
+      },
+      "Mercury": {
+        "longitude": 60.146694,
+        "sign_index": 2,
+        "degree_in_sign": 0.146694,
+        "is_retrograde": true,
+        "speed": -0.506422
+      },
+      "Jupiter": {
+        "longitude": 66.679116,
+        "sign_index": 2,
+        "degree_in_sign": 6.679116,
+        "is_retrograde": false,
+        "speed": 0.226202
+      },
+      "Venus": {
+        "longitude": 15.238263,
+        "sign_index": 0,
+        "degree_in_sign": 15.238263,
+        "is_retrograde": false,
+        "speed": 1.151367
+      },
+      "Saturn": {
+        "longitude": 40.995964,
+        "sign_index": 1,
+        "degree_in_sign": 10.995964,
+        "is_retrograde": false,
+        "speed": 0.1271
+      },
+      "Rahu": {
+        "longitude": 135.358312,
+        "sign_index": 4,
+        "degree_in_sign": 15.358312,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 315.358312,
+        "sign_index": 10,
+        "degree_in_sign": 15.358312,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

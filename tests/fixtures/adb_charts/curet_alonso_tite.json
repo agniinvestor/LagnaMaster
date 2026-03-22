@@ -1,0 +1,109 @@
+{
+  "adb_id": 72756,
+  "name": "Curet Alonso, Tite",
+  "given_name": "Tite Curet Alonso",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424559.208333,
+    "year": 1926,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Guayama",
+    "country": "Puerto Rico",
+    "lat": 17.983333,
+    "lon": -66.116667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curet_Alonso,_Tite",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 24.3787,
+    "lagna": 24.3787,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.825196,
+    "jd_ut": 2424559.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 300.422152,
+        "sign_index": 10,
+        "degree_in_sign": 0.422152,
+        "is_retrograde": false,
+        "speed": 1.011332
+      },
+      "Moon": {
+        "longitude": 299.953881,
+        "sign_index": 9,
+        "degree_in_sign": 29.953881,
+        "is_retrograde": false,
+        "speed": 9.679974
+      },
+      "Mars": {
+        "longitude": 249.693134,
+        "sign_index": 8,
+        "degree_in_sign": 9.693134,
+        "is_retrograde": false,
+        "speed": 0.707045
+      },
+      "Mercury": {
+        "longitude": 297.844031,
+        "sign_index": 9,
+        "degree_in_sign": 27.844031,
+        "is_retrograde": false,
+        "speed": 1.763795
+      },
+      "Jupiter": {
+        "longitude": 286.041856,
+        "sign_index": 9,
+        "degree_in_sign": 16.041856,
+        "is_retrograde": false,
+        "speed": 0.233219
+      },
+      "Venus": {
+        "longitude": 292.235022,
+        "sign_index": 9,
+        "degree_in_sign": 22.235022,
+        "is_retrograde": true,
+        "speed": -0.562109
+      },
+      "Saturn": {
+        "longitude": 212.863745,
+        "sign_index": 7,
+        "degree_in_sign": 2.863745,
+        "is_retrograde": false,
+        "speed": 0.036268
+      },
+      "Rahu": {
+        "longitude": 91.21978,
+        "sign_index": 3,
+        "degree_in_sign": 1.21978,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 271.21978,
+        "sign_index": 9,
+        "degree_in_sign": 1.21978,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

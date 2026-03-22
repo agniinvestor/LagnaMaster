@@ -1,0 +1,109 @@
+{
+  "adb_id": 53976,
+  "name": "Collins, Cecil",
+  "given_name": "Cecil Collins",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2418023.75,
+    "year": 1908,
+    "month": 3,
+    "day": 23,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Plymouth",
+    "country": "England",
+    "lat": 50.383333,
+    "lon": -4.166667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sag",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Cecil",
+  "source_notes": "Steinbrecher collection: Koppejans quotes mother\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 6.089229,
+    "lagna": 306.089229,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.575341,
+    "jd_ut": 2418023.75,
+    "planets": {
+      "Sun": {
+        "longitude": 339.642069,
+        "sign_index": 11,
+        "degree_in_sign": 9.642069,
+        "is_retrograde": false,
+        "speed": 0.991134
+      },
+      "Moon": {
+        "longitude": 220.826359,
+        "sign_index": 7,
+        "degree_in_sign": 10.826359,
+        "is_retrograde": false,
+        "speed": 9.875477
+      },
+      "Mars": {
+        "longitude": 27.366201,
+        "sign_index": 0,
+        "degree_in_sign": 27.366201,
+        "is_retrograde": false,
+        "speed": 0.677821
+      },
+      "Mercury": {
+        "longitude": 312.260287,
+        "sign_index": 10,
+        "degree_in_sign": 12.260287,
+        "is_retrograde": false,
+        "speed": 0.781238
+      },
+      "Jupiter": {
+        "longitude": 101.077987,
+        "sign_index": 3,
+        "degree_in_sign": 11.077987,
+        "is_retrograde": true,
+        "speed": -0.023304
+      },
+      "Venus": {
+        "longitude": 22.287352,
+        "sign_index": 0,
+        "degree_in_sign": 22.287352,
+        "is_retrograde": false,
+        "speed": 1.133283
+      },
+      "Saturn": {
+        "longitude": 337.883783,
+        "sign_index": 11,
+        "degree_in_sign": 7.883783,
+        "is_retrograde": false,
+        "speed": 0.124408
+      },
+      "Rahu": {
+        "longitude": 77.547392,
+        "sign_index": 2,
+        "degree_in_sign": 17.547392,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 257.547392,
+        "sign_index": 8,
+        "degree_in_sign": 17.547392,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

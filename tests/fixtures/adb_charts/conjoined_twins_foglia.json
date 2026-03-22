@@ -1,0 +1,109 @@
+{
+  "adb_id": 36699,
+  "name": "Conjoined Twins: Foglia",
+  "given_name": "Conjoined Twins: Foglia",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436514.145833,
+    "year": 1958,
+    "month": 11,
+    "day": 6,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "s",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "Grazzano Badoglio",
+    "country": "Italy",
+    "lat": 45.033333,
+    "lon": 8.316667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Foglia",
+  "source_notes": "Bordoni quotes B.C., Datanotizie 3/2000\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Surgery",
+    "Personal : Birth : Conjoined twins"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 13.384269,
+    "lagna": 343.384269,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.282294,
+    "jd_ut": 2436514.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 200.432276,
+        "sign_index": 6,
+        "degree_in_sign": 20.432276,
+        "is_retrograde": false,
+        "speed": 1.00352
+      },
+      "Moon": {
+        "longitude": 136.216336,
+        "sign_index": 4,
+        "degree_in_sign": 16.216336,
+        "is_retrograde": false,
+        "speed": 16.564306
+      },
+      "Mars": {
+        "longitude": 34.058078,
+        "sign_index": 1,
+        "degree_in_sign": 4.058078,
+        "is_retrograde": true,
+        "speed": -0.344188
+      },
+      "Mercury": {
+        "longitude": 218.895332,
+        "sign_index": 7,
+        "degree_in_sign": 8.895332,
+        "is_retrograde": false,
+        "speed": 1.407767
+      },
+      "Jupiter": {
+        "longitude": 199.182416,
+        "sign_index": 6,
+        "degree_in_sign": 19.182416,
+        "is_retrograde": false,
+        "speed": 0.219659
+      },
+      "Venus": {
+        "longitude": 199.211418,
+        "sign_index": 6,
+        "degree_in_sign": 19.211418,
+        "is_retrograde": false,
+        "speed": 1.255263
+      },
+      "Saturn": {
+        "longitude": 239.92286,
+        "sign_index": 7,
+        "degree_in_sign": 29.92286,
+        "is_retrograde": false,
+        "speed": 0.099728
+      },
+      "Rahu": {
+        "longitude": 177.702931,
+        "sign_index": 5,
+        "degree_in_sign": 27.702931,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 357.702931,
+        "sign_index": 11,
+        "degree_in_sign": 27.702931,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

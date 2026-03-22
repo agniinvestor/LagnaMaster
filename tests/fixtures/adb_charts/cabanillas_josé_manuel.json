@@ -1,0 +1,108 @@
+{
+  "adb_id": 74055,
+  "name": "Cabanillas, José Manuel",
+  "given_name": "José Manuel Cabanillas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415650.9375,
+    "year": 1901,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Mayaguez",
+    "country": "Puerto Rico",
+    "lat": 18.2,
+    "lon": -67.133333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabanillas,_José_Manuel",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 16.880536,
+    "lagna": 136.880536,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.484631,
+    "jd_ut": 2415650.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 157.199796,
+        "sign_index": 5,
+        "degree_in_sign": 7.199796,
+        "is_retrograde": false,
+        "speed": 0.979214
+      },
+      "Moon": {
+        "longitude": 274.26071,
+        "sign_index": 9,
+        "degree_in_sign": 4.26071,
+        "is_retrograde": false,
+        "speed": 17.879254
+      },
+      "Mars": {
+        "longitude": 202.725908,
+        "sign_index": 6,
+        "degree_in_sign": 22.725908,
+        "is_retrograde": false,
+        "speed": 0.686955
+      },
+      "Mercury": {
+        "longitude": 176.657082,
+        "sign_index": 5,
+        "degree_in_sign": 26.657082,
+        "is_retrograde": false,
+        "speed": 1.468683
+      },
+      "Jupiter": {
+        "longitude": 251.601163,
+        "sign_index": 8,
+        "degree_in_sign": 11.601163,
+        "is_retrograde": false,
+        "speed": 0.072391
+      },
+      "Venus": {
+        "longitude": 194.620479,
+        "sign_index": 6,
+        "degree_in_sign": 14.620479,
+        "is_retrograde": false,
+        "speed": 1.190591
+      },
+      "Saturn": {
+        "longitude": 257.361891,
+        "sign_index": 8,
+        "degree_in_sign": 17.361891,
+        "is_retrograde": false,
+        "speed": 0.014556
+      },
+      "Rahu": {
+        "longitude": 203.287721,
+        "sign_index": 6,
+        "degree_in_sign": 23.287721,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 23.287721,
+        "sign_index": 0,
+        "degree_in_sign": 23.287721,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

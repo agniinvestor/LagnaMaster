@@ -1,0 +1,110 @@
+{
+  "adb_id": 52215,
+  "name": "Carter, Oliver",
+  "given_name": "Oliver Carter",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419053.548611,
+    "year": 1911,
+    "month": 1,
+    "day": 16,
+    "calendar": "g",
+    "time": "17:10",
+    "time_type": "s",
+    "hour": 17.166667,
+    "time_unknown": false,
+    "place": "San Francisco",
+    "country": "California",
+    "lat": 37.783333,
+    "lon": -122.416667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carter,_Oliver",
+  "source_notes": "Steinbrecher Collection: Contemporary American Horoscopes quotes birth certificate\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 10.532984,
+    "lagna": 70.532984,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.614709,
+    "jd_ut": 2419053.548611,
+    "planets": {
+      "Sun": {
+        "longitude": 273.203545,
+        "sign_index": 9,
+        "degree_in_sign": 3.203545,
+        "is_retrograde": false,
+        "speed": 1.017852
+      },
+      "Moon": {
+        "longitude": 122.151444,
+        "sign_index": 4,
+        "degree_in_sign": 2.151444,
+        "is_retrograde": false,
+        "speed": 16.92387
+      },
+      "Mars": {
+        "longitude": 236.761932,
+        "sign_index": 7,
+        "degree_in_sign": 26.761932,
+        "is_retrograde": false,
+        "speed": 0.711339
+      },
+      "Mercury": {
+        "longitude": 259.132337,
+        "sign_index": 8,
+        "degree_in_sign": 19.132337,
+        "is_retrograde": true,
+        "speed": -0.693277
+      },
+      "Jupiter": {
+        "longitude": 199.15068,
+        "sign_index": 6,
+        "degree_in_sign": 19.15068,
+        "is_retrograde": false,
+        "speed": 0.122249
+      },
+      "Venus": {
+        "longitude": 285.529383,
+        "sign_index": 9,
+        "degree_in_sign": 15.529383,
+        "is_retrograde": false,
+        "speed": 1.254191
+      },
+      "Saturn": {
+        "longitude": 7.286478,
+        "sign_index": 0,
+        "degree_in_sign": 7.286478,
+        "is_retrograde": false,
+        "speed": 0.027447
+      },
+      "Rahu": {
+        "longitude": 22.976201,
+        "sign_index": 0,
+        "degree_in_sign": 22.976201,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 202.976201,
+        "sign_index": 6,
+        "degree_in_sign": 22.976201,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

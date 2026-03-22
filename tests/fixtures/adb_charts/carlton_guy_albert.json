@@ -1,0 +1,109 @@
+{
+  "adb_id": 54199,
+  "name": "Carlton, Guy Albert",
+  "given_name": "Guy Albert Carlton",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434759.077083,
+    "year": 1954,
+    "month": 1,
+    "day": 16,
+    "calendar": "g",
+    "time": "08:51",
+    "time_type": "s",
+    "hour": 8.85,
+    "time_unknown": false,
+    "place": "Amherst",
+    "country": "Ohio",
+    "lat": 41.4,
+    "lon": -82.216667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlton,_Guy_Albert",
+  "source_notes": "Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Sports : Weightlifting",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 26.531703,
+    "lagna": 266.531703,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.215184,
+    "jd_ut": 2434759.077083,
+    "planets": {
+      "Sun": {
+        "longitude": 272.695418,
+        "sign_index": 9,
+        "degree_in_sign": 2.695418,
+        "is_retrograde": false,
+        "speed": 1.017943
+      },
+      "Moon": {
+        "longitude": 61.293669,
+        "sign_index": 2,
+        "degree_in_sign": 1.293669,
+        "is_retrograde": false,
+        "speed": 17.639149
+      },
+      "Mars": {
+        "longitude": 202.912657,
+        "sign_index": 6,
+        "degree_in_sign": 22.912657,
+        "is_retrograde": false,
+        "speed": 0.584787
+      },
+      "Mercury": {
+        "longitude": 273.855747,
+        "sign_index": 9,
+        "degree_in_sign": 3.855747,
+        "is_retrograde": false,
+        "speed": 1.668877
+      },
+      "Jupiter": {
+        "longitude": 54.222361,
+        "sign_index": 1,
+        "degree_in_sign": 24.222361,
+        "is_retrograde": true,
+        "speed": -0.080816
+      },
+      "Venus": {
+        "longitude": 269.474797,
+        "sign_index": 8,
+        "degree_in_sign": 29.474797,
+        "is_retrograde": false,
+        "speed": 1.257167
+      },
+      "Saturn": {
+        "longitude": 195.26981,
+        "sign_index": 6,
+        "degree_in_sign": 15.26981,
+        "is_retrograde": false,
+        "speed": 0.053319
+      },
+      "Rahu": {
+        "longitude": 270.707629,
+        "sign_index": 9,
+        "degree_in_sign": 0.707629,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 90.707629,
+        "sign_index": 3,
+        "degree_in_sign": 0.707629,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

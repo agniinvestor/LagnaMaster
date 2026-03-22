@@ -1,0 +1,108 @@
+{
+  "adb_id": 3962,
+  "name": "Chabod, Federico",
+  "given_name": "Federico Chabod",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415439.197917,
+    "year": 1901,
+    "month": 2,
+    "day": 23,
+    "calendar": "g",
+    "time": "17:45",
+    "time_type": "s",
+    "hour": 17.75,
+    "time_unknown": false,
+    "place": "Aosta",
+    "country": "Italy",
+    "lat": 45.733333,
+    "lon": 7.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chabod,_Federico",
+  "source_notes": "Bordoni quotes B.C.\\n",
+  "categories": [
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 16.081667,
+    "lagna": 106.081667,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.476537,
+    "jd_ut": 2415439.197917,
+    "planets": {
+      "Sun": {
+        "longitude": 311.925967,
+        "sign_index": 10,
+        "degree_in_sign": 11.925967,
+        "is_retrograde": false,
+        "speed": 1.006103
+      },
+      "Moon": {
+        "longitude": 14.414962,
+        "sign_index": 0,
+        "degree_in_sign": 14.414962,
+        "is_retrograde": false,
+        "speed": 10.452886
+      },
+      "Mars": {
+        "longitude": 129.90312,
+        "sign_index": 4,
+        "degree_in_sign": 9.90312,
+        "is_retrograde": true,
+        "speed": -0.397801
+      },
+      "Mercury": {
+        "longitude": 328.975791,
+        "sign_index": 10,
+        "degree_in_sign": 28.975791,
+        "is_retrograde": false,
+        "speed": 0.454316
+      },
+      "Jupiter": {
+        "longitude": 254.400705,
+        "sign_index": 8,
+        "degree_in_sign": 14.400705,
+        "is_retrograde": false,
+        "speed": 0.169791
+      },
+      "Venus": {
+        "longitude": 295.163175,
+        "sign_index": 9,
+        "degree_in_sign": 25.163175,
+        "is_retrograde": false,
+        "speed": 1.246149
+      },
+      "Saturn": {
+        "longitude": 261.002396,
+        "sign_index": 8,
+        "degree_in_sign": 21.002396,
+        "is_retrograde": false,
+        "speed": 0.088208
+      },
+      "Rahu": {
+        "longitude": 214.508248,
+        "sign_index": 7,
+        "degree_in_sign": 4.508248,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 34.508248,
+        "sign_index": 1,
+        "degree_in_sign": 4.508248,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

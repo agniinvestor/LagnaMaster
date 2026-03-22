@@ -1,0 +1,116 @@
+{
+  "adb_id": 3565,
+  "name": "Carpentier, Georges",
+  "given_name": "Georges Carpentier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412841.243507,
+    "year": 1894,
+    "month": 1,
+    "day": 12,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Liévin",
+    "country": "France",
+    "lat": 50.416667,
+    "lon": 2.766667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpentier,_Georges",
+  "source_notes": "Gauquelin Vol 1/581 (06:00 PM Paris time)\\n",
+  "categories": [
+    "Lifestyle : Work : Start young less than 16",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Top executive",
+    "Vocation : Law : Attorney",
+    "Vocation : Sports : Boxing",
+    "Vocation : Misc. : Outdoor vocations",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 27.363187,
+    "lagna": 87.363187,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.377223,
+    "jd_ut": 2412841.243507,
+    "planets": {
+      "Sun": {
+        "longitude": 270.204144,
+        "sign_index": 9,
+        "degree_in_sign": 0.204144,
+        "is_retrograde": false,
+        "speed": 1.018787
+      },
+      "Moon": {
+        "longitude": 332.512274,
+        "sign_index": 11,
+        "degree_in_sign": 2.512274,
+        "is_retrograde": false,
+        "speed": 9.71145
+      },
+      "Mars": {
+        "longitude": 225.578916,
+        "sign_index": 7,
+        "degree_in_sign": 15.578916,
+        "is_retrograde": false,
+        "speed": 0.683881
+      },
+      "Mercury": {
+        "longitude": 259.781185,
+        "sign_index": 8,
+        "degree_in_sign": 19.781185,
+        "is_retrograde": false,
+        "speed": 1.560827
+      },
+      "Jupiter": {
+        "longitude": 29.059445,
+        "sign_index": 0,
+        "degree_in_sign": 29.059445,
+        "is_retrograde": true,
+        "speed": -0.009749
+      },
+      "Venus": {
+        "longitude": 309.832637,
+        "sign_index": 10,
+        "degree_in_sign": 9.832637,
+        "is_retrograde": false,
+        "speed": 0.481781
+      },
+      "Saturn": {
+        "longitude": 182.399942,
+        "sign_index": 6,
+        "degree_in_sign": 2.399942,
+        "is_retrograde": false,
+        "speed": 0.036597
+      },
+      "Rahu": {
+        "longitude": 352.179336,
+        "sign_index": 11,
+        "degree_in_sign": 22.179336,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 172.179336,
+        "sign_index": 5,
+        "degree_in_sign": 22.179336,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

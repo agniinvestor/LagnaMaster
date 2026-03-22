@@ -1,0 +1,110 @@
+{
+  "adb_id": 75686,
+  "name": "Christina, Archduchess of Austria",
+  "given_name": "Archduchess of Austria Christina",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2365307.496186,
+    "year": 1763,
+    "month": 11,
+    "day": 22,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Vienna",
+    "country": "Austria",
+    "lat": 48.216667,
+    "lon": 16.373056
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christina,_Archduchess_of_Austria",
+  "source_notes": "Sy Scholfield quotes from ''Geschlechtsfolge der Beherrscher Oesterreichs, babenbergisch- habsburgisch- und lothringischen Stammes bis auf Kaiser Franz II'' (Baumeister, 1795), p. 165. \\n",
+  "categories": [
+    "Personal : Birth : Premature",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 8.389596,
+    "lagna": 128.389596,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.560676,
+    "jd_ut": 2365307.496186,
+    "planets": {
+      "Sun": {
+        "longitude": 218.919858,
+        "sign_index": 7,
+        "degree_in_sign": 8.919858,
+        "is_retrograde": false,
+        "speed": 1.011414
+      },
+      "Moon": {
+        "longitude": 53.59838,
+        "sign_index": 1,
+        "degree_in_sign": 23.59838,
+        "is_retrograde": false,
+        "speed": 8.756141
+      },
+      "Mars": {
+        "longitude": 166.727272,
+        "sign_index": 5,
+        "degree_in_sign": 16.727272,
+        "is_retrograde": false,
+        "speed": 0.60318
+      },
+      "Mercury": {
+        "longitude": 200.086666,
+        "sign_index": 6,
+        "degree_in_sign": 20.086666,
+        "is_retrograde": false,
+        "speed": 1.288264
+      },
+      "Jupiter": {
+        "longitude": 52.635043,
+        "sign_index": 1,
+        "degree_in_sign": 22.635043,
+        "is_retrograde": true,
+        "speed": -0.129243
+      },
+      "Venus": {
+        "longitude": 225.726015,
+        "sign_index": 7,
+        "degree_in_sign": 15.726015,
+        "is_retrograde": false,
+        "speed": 1.255522
+      },
+      "Saturn": {
+        "longitude": 12.145732,
+        "sign_index": 0,
+        "degree_in_sign": 12.145732,
+        "is_retrograde": true,
+        "speed": -0.066968
+      },
+      "Rahu": {
+        "longitude": 351.096016,
+        "sign_index": 11,
+        "degree_in_sign": 21.096016,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 171.096016,
+        "sign_index": 5,
+        "degree_in_sign": 21.096016,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 57125,
+  "name": "Cesarsky, Catherine",
+  "given_name": "Catherine Cesarsky",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430779.979167,
+    "year": 1943,
+    "month": 2,
+    "day": 24,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Ambazac",
+    "country": "France",
+    "lat": 45.958333,
+    "lon": 1.400833
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cesarsky,_Catherine",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 102.\\n",
+  "categories": [
+    "Vocation : Science : Astronomy",
+    "Notable : Awards : Other Awards",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 8.229198,
+    "lagna": 38.229198,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.063039,
+    "jd_ut": 2430779.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 311.9243,
+        "sign_index": 10,
+        "degree_in_sign": 11.9243,
+        "is_retrograde": false,
+        "speed": 1.005729
+      },
+      "Moon": {
+        "longitude": 180.706978,
+        "sign_index": 6,
+        "degree_in_sign": 0.706978,
+        "is_retrograde": false,
+        "speed": 14.948449
+      },
+      "Mars": {
+        "longitude": 267.977445,
+        "sign_index": 8,
+        "degree_in_sign": 27.977445,
+        "is_retrograde": false,
+        "speed": 0.740905
+      },
+      "Mercury": {
+        "longitude": 286.233566,
+        "sign_index": 9,
+        "degree_in_sign": 16.233566,
+        "is_retrograde": false,
+        "speed": 1.226222
+      },
+      "Jupiter": {
+        "longitude": 82.511075,
+        "sign_index": 2,
+        "degree_in_sign": 22.511075,
+        "is_retrograde": true,
+        "speed": -0.050807
+      },
+      "Venus": {
+        "longitude": 335.672995,
+        "sign_index": 11,
+        "degree_in_sign": 5.672995,
+        "is_retrograde": false,
+        "speed": 1.237291
+      },
+      "Saturn": {
+        "longitude": 42.835794,
+        "sign_index": 1,
+        "degree_in_sign": 12.835794,
+        "is_retrograde": false,
+        "speed": 0.033759
+      },
+      "Rahu": {
+        "longitude": 121.56823,
+        "sign_index": 4,
+        "degree_in_sign": 1.56823,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 301.56823,
+        "sign_index": 10,
+        "degree_in_sign": 1.56823,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

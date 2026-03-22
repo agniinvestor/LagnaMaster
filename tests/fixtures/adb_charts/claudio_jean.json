@@ -1,0 +1,108 @@
+{
+  "adb_id": 71671,
+  "name": "Claudio, Jean",
+  "given_name": "Jean Claudio",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424967.541667,
+    "year": 1927,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Neuilly sur Seine",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claudio,_Jean",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 7.184071,
+    "lagna": 217.184071,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.840808,
+    "jd_ut": 2424967.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 343.523187,
+        "sign_index": 11,
+        "degree_in_sign": 13.523187,
+        "is_retrograde": false,
+        "speed": 0.989328
+      },
+      "Moon": {
+        "longitude": 273.278654,
+        "sign_index": 9,
+        "degree_in_sign": 3.278654,
+        "is_retrograde": false,
+        "speed": 13.790103
+      },
+      "Mars": {
+        "longitude": 55.65588,
+        "sign_index": 1,
+        "degree_in_sign": 25.65588,
+        "is_retrograde": false,
+        "speed": 0.565916
+      },
+      "Mercury": {
+        "longitude": 321.110897,
+        "sign_index": 10,
+        "degree_in_sign": 21.110897,
+        "is_retrograde": false,
+        "speed": 0.088092
+      },
+      "Jupiter": {
+        "longitude": 323.381194,
+        "sign_index": 10,
+        "degree_in_sign": 23.381194,
+        "is_retrograde": false,
+        "speed": 0.23401
+      },
+      "Venus": {
+        "longitude": 13.354192,
+        "sign_index": 0,
+        "degree_in_sign": 13.354192,
+        "is_retrograde": false,
+        "speed": 1.214781
+      },
+      "Saturn": {
+        "longitude": 224.748058,
+        "sign_index": 7,
+        "degree_in_sign": 14.748058,
+        "is_retrograde": true,
+        "speed": -0.016623
+      },
+      "Rahu": {
+        "longitude": 69.581347,
+        "sign_index": 2,
+        "degree_in_sign": 9.581347,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 249.581347,
+        "sign_index": 8,
+        "degree_in_sign": 9.581347,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

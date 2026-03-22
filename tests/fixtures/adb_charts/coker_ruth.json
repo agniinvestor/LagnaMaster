@@ -1,0 +1,109 @@
+{
+  "adb_id": 8185,
+  "name": "Coker, Ruth",
+  "given_name": "Ruth Coker",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429050.5,
+    "year": 1938,
+    "month": 5,
+    "day": 31,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Waynesville",
+    "country": "North Carolina",
+    "lat": 35.483333,
+    "lon": -82.983333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coker,_Ruth",
+  "source_notes": "Ed Dearborn quotes her\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 16.345466,
+    "lagna": 196.345466,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.996913,
+    "jd_ut": 2429050.5,
+    "planets": {
+      "Sun": {
+        "longitude": 46.847338,
+        "sign_index": 1,
+        "degree_in_sign": 16.847338,
+        "is_retrograde": false,
+        "speed": 0.958565
+      },
+      "Moon": {
+        "longitude": 80.153967,
+        "sign_index": 2,
+        "degree_in_sign": 20.153967,
+        "is_retrograde": false,
+        "speed": 12.789794
+      },
+      "Mars": {
+        "longitude": 62.961732,
+        "sign_index": 2,
+        "degree_in_sign": 2.961732,
+        "is_retrograde": false,
+        "speed": 0.667798
+      },
+      "Mercury": {
+        "longitude": 25.165226,
+        "sign_index": 0,
+        "degree_in_sign": 25.165226,
+        "is_retrograde": false,
+        "speed": 1.537683
+      },
+      "Jupiter": {
+        "longitude": 308.578126,
+        "sign_index": 10,
+        "degree_in_sign": 8.578126,
+        "is_retrograde": false,
+        "speed": 0.064264
+      },
+      "Venus": {
+        "longitude": 75.843711,
+        "sign_index": 2,
+        "degree_in_sign": 15.843711,
+        "is_retrograde": false,
+        "speed": 1.203012
+      },
+      "Saturn": {
+        "longitude": 352.170481,
+        "sign_index": 11,
+        "degree_in_sign": 22.170481,
+        "is_retrograde": false,
+        "speed": 0.089363
+      },
+      "Rahu": {
+        "longitude": 213.216909,
+        "sign_index": 7,
+        "degree_in_sign": 3.216909,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 33.216909,
+        "sign_index": 1,
+        "degree_in_sign": 3.216909,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

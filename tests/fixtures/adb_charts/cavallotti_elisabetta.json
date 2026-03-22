@@ -1,0 +1,108 @@
+{
+  "adb_id": 71625,
+  "name": "Cavallotti, Elisabetta",
+  "given_name": "Elisabetta Cavallotti",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439672.916667,
+    "year": 1967,
+    "month": 7,
+    "day": 1,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "d",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Bologna",
+    "country": "Italy",
+    "lat": 44.483333,
+    "lon": 11.333333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavallotti,_Elisabetta",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 5.634321,
+    "lagna": 125.634321,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.40308,
+    "jd_ut": 2439672.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 75.484184,
+        "sign_index": 2,
+        "degree_in_sign": 15.484184,
+        "is_retrograde": false,
+        "speed": 0.953529
+      },
+      "Moon": {
+        "longitude": 2.589946,
+        "sign_index": 0,
+        "degree_in_sign": 2.589946,
+        "is_retrograde": false,
+        "speed": 9.560558
+      },
+      "Mars": {
+        "longitude": 178.77912,
+        "sign_index": 5,
+        "degree_in_sign": 28.77912,
+        "is_retrograde": false,
+        "speed": 0.362326
+      },
+      "Mercury": {
+        "longitude": 87.611077,
+        "sign_index": 2,
+        "degree_in_sign": 27.611077,
+        "is_retrograde": true,
+        "speed": -0.367351
+      },
+      "Jupiter": {
+        "longitude": 103.865104,
+        "sign_index": 3,
+        "degree_in_sign": 13.865104,
+        "is_retrograde": false,
+        "speed": 0.206021
+      },
+      "Venus": {
+        "longitude": 120.432504,
+        "sign_index": 4,
+        "degree_in_sign": 0.432504,
+        "is_retrograde": false,
+        "speed": 0.864029
+      },
+      "Saturn": {
+        "longitude": 348.585282,
+        "sign_index": 11,
+        "degree_in_sign": 18.585282,
+        "is_retrograde": false,
+        "speed": 0.039646
+      },
+      "Rahu": {
+        "longitude": 10.313197,
+        "sign_index": 0,
+        "degree_in_sign": 10.313197,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 190.313197,
+        "sign_index": 6,
+        "degree_in_sign": 10.313197,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

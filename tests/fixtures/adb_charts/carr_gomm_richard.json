@@ -1,0 +1,108 @@
+{
+  "adb_id": 59028,
+  "name": "Carr-Gomm, Richard",
+  "given_name": "Richard Carr-Gomm",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2423056.583333,
+    "year": 1922,
+    "month": 1,
+    "day": 2,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Atherstone",
+    "country": "England",
+    "lat": 52.583333,
+    "lon": -1.516667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carr-Gomm,_Richard",
+  "source_notes": "Sy Scholfield quotes Richard Carr-Gomm's book, \"All Things Considered: An Autobiography: 1922-2004\" (2005), p. 14: \"I was born at 2 am on the morning of the 2nd January 1922. ... I was born at Mancetter Lodge near Atherstone in Warwickshire.\"\\n",
+  "categories": [
+    "Lifestyle : Financial : Philanthropist"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 11.785555,
+    "lagna": 161.785555,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.767748,
+    "jd_ut": 2423056.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 258.141308,
+        "sign_index": 8,
+        "degree_in_sign": 18.141308,
+        "is_retrograde": false,
+        "speed": 1.019522
+      },
+      "Moon": {
+        "longitude": 300.614631,
+        "sign_index": 10,
+        "degree_in_sign": 0.614631,
+        "is_retrograde": false,
+        "speed": 14.90677
+      },
+      "Mars": {
+        "longitude": 191.077539,
+        "sign_index": 6,
+        "degree_in_sign": 11.077539,
+        "is_retrograde": false,
+        "speed": 0.5804
+      },
+      "Mercury": {
+        "longitude": 261.342719,
+        "sign_index": 8,
+        "degree_in_sign": 21.342719,
+        "is_retrograde": false,
+        "speed": 1.625768
+      },
+      "Jupiter": {
+        "longitude": 174.566907,
+        "sign_index": 5,
+        "degree_in_sign": 24.566907,
+        "is_retrograde": false,
+        "speed": 0.094523
+      },
+      "Venus": {
+        "longitude": 248.985548,
+        "sign_index": 8,
+        "degree_in_sign": 8.985548,
+        "is_retrograde": false,
+        "speed": 1.257775
+      },
+      "Saturn": {
+        "longitude": 164.629741,
+        "sign_index": 5,
+        "degree_in_sign": 14.629741,
+        "is_retrograde": false,
+        "speed": 0.027201
+      },
+      "Rahu": {
+        "longitude": 170.847012,
+        "sign_index": 5,
+        "degree_in_sign": 20.847012,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 350.847012,
+        "sign_index": 11,
+        "degree_in_sign": 20.847012,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 93581,
+  "name": "Clement, Inge",
+  "given_name": "Inge Clement",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443320.479167,
+    "year": 1977,
+    "month": 6,
+    "day": 26,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "d",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Oostende",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 2.916667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clement,_Inge",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_sp_sports.pdf]. \\n",
+  "categories": [
+    "Vocation : Sports : Martial arts"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 11.497064,
+    "lagna": 311.497064,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.542564,
+    "jd_ut": 2443320.479167,
+    "planets": {
+      "Sun": {
+        "longitude": 70.719812,
+        "sign_index": 2,
+        "degree_in_sign": 10.719812,
+        "is_retrograde": false,
+        "speed": 0.953604
+      },
+      "Moon": {
+        "longitude": 179.032857,
+        "sign_index": 5,
+        "degree_in_sign": 29.032857,
+        "is_retrograde": false,
+        "speed": 12.524518
+      },
+      "Mars": {
+        "longitude": 21.051135,
+        "sign_index": 0,
+        "degree_in_sign": 21.051135,
+        "is_retrograde": false,
+        "speed": 0.724246
+      },
+      "Mercury": {
+        "longitude": 65.766513,
+        "sign_index": 2,
+        "degree_in_sign": 5.766513,
+        "is_retrograde": false,
+        "speed": 2.167988
+      },
+      "Jupiter": {
+        "longitude": 55.083675,
+        "sign_index": 1,
+        "degree_in_sign": 25.083675,
+        "is_retrograde": false,
+        "speed": 0.227469
+      },
+      "Venus": {
+        "longitude": 25.357479,
+        "sign_index": 0,
+        "degree_in_sign": 25.357479,
+        "is_retrograde": false,
+        "speed": 1.018015
+      },
+      "Saturn": {
+        "longitude": 110.994432,
+        "sign_index": 3,
+        "degree_in_sign": 20.994432,
+        "is_retrograde": false,
+        "speed": 0.107843
+      },
+      "Rahu": {
+        "longitude": 177.021422,
+        "sign_index": 5,
+        "degree_in_sign": 27.021422,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 357.021422,
+        "sign_index": 11,
+        "degree_in_sign": 27.021422,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

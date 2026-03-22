@@ -1,0 +1,108 @@
+{
+  "adb_id": 60343,
+  "name": "Comisso, Giovanni",
+  "given_name": "Giovanni Comisso",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413470.305556,
+    "year": 1895,
+    "month": 10,
+    "day": 3,
+    "calendar": "g",
+    "time": "20:20",
+    "time_type": "s",
+    "hour": 20.333333,
+    "time_unknown": false,
+    "place": "Treviso",
+    "country": "Italy",
+    "lat": 45.666667,
+    "lon": 12.25
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comisso,_Giovanni",
+  "source_notes": "Gauquelin vol 6\\n",
+  "categories": [
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 25.779338,
+    "lagna": 25.779338,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.40127,
+    "jd_ut": 2413470.305556,
+    "planets": {
+      "Sun": {
+        "longitude": 167.919475,
+        "sign_index": 5,
+        "degree_in_sign": 17.919475,
+        "is_retrograde": false,
+        "speed": 0.985142
+      },
+      "Moon": {
+        "longitude": 346.558478,
+        "sign_index": 11,
+        "degree_in_sign": 16.558478,
+        "is_retrograde": false,
+        "speed": 9.970196
+      },
+      "Mars": {
+        "longitude": 170.388552,
+        "sign_index": 5,
+        "degree_in_sign": 20.388552,
+        "is_retrograde": false,
+        "speed": 0.658302
+      },
+      "Mercury": {
+        "longitude": 193.403712,
+        "sign_index": 6,
+        "degree_in_sign": 13.403712,
+        "is_retrograde": false,
+        "speed": 0.885521
+      },
+      "Jupiter": {
+        "longitude": 102.559231,
+        "sign_index": 3,
+        "degree_in_sign": 12.559231,
+        "is_retrograde": false,
+        "speed": 0.145844
+      },
+      "Venus": {
+        "longitude": 146.467353,
+        "sign_index": 4,
+        "degree_in_sign": 26.467353,
+        "is_retrograde": true,
+        "speed": -0.273798
+      },
+      "Saturn": {
+        "longitude": 194.087639,
+        "sign_index": 6,
+        "degree_in_sign": 14.087639,
+        "is_retrograde": false,
+        "speed": 0.111979
+      },
+      "Rahu": {
+        "longitude": 318.844009,
+        "sign_index": 10,
+        "degree_in_sign": 18.844009,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 138.844009,
+        "sign_index": 4,
+        "degree_in_sign": 18.844009,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

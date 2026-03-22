@@ -1,0 +1,110 @@
+{
+  "adb_id": 25788,
+  "name": "Calloway, Cab",
+  "given_name": "Cab Calloway",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2417935.706944,
+    "year": 1907,
+    "month": 12,
+    "day": 25,
+    "calendar": "g",
+    "time": "23:58",
+    "time_type": "s",
+    "hour": 23.966667,
+    "time_unknown": false,
+    "place": "Rochester",
+    "country": "New York",
+    "lat": 43.15,
+    "lon": -77.616667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calloway,_Cab",
+  "source_notes": "Sy Scholfield quotes \"Negro Digest, Volume 3\" (Negro Digest Publishing Co., 1944), p. 208: \"Born two minutes before midnight on Christmas in 1907, it is inaccurately reported that Cab sang jive duets with Santa Claus and his reindeer as the stork and Kris Kringle dashed side by side over the rooftops of Rochester, New York.\"\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Stroke",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.192923,
+    "lagna": 135.192923,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.571975,
+    "jd_ut": 2417935.706944,
+    "planets": {
+      "Sun": {
+        "longitude": 250.705457,
+        "sign_index": 8,
+        "degree_in_sign": 10.705457,
+        "is_retrograde": false,
+        "speed": 1.018892
+      },
+      "Moon": {
+        "longitude": 141.678295,
+        "sign_index": 4,
+        "degree_in_sign": 21.678295,
+        "is_retrograde": false,
+        "speed": 10.968086
+      },
+      "Mars": {
+        "longitude": 326.204432,
+        "sign_index": 10,
+        "degree_in_sign": 26.204432,
+        "is_retrograde": false,
+        "speed": 0.700784
+      },
+      "Mercury": {
+        "longitude": 239.775417,
+        "sign_index": 7,
+        "degree_in_sign": 29.775417,
+        "is_retrograde": false,
+        "speed": 1.532564
+      },
+      "Jupiter": {
+        "longitude": 110.018272,
+        "sign_index": 3,
+        "degree_in_sign": 20.018272,
+        "is_retrograde": true,
+        "speed": -0.079449
+      },
+      "Venus": {
+        "longitude": 275.985649,
+        "sign_index": 9,
+        "degree_in_sign": 5.985649,
+        "is_retrograde": false,
+        "speed": 1.244398
+      },
+      "Saturn": {
+        "longitude": 328.96665,
+        "sign_index": 10,
+        "degree_in_sign": 28.96665,
+        "is_retrograde": false,
+        "speed": 0.053632
+      },
+      "Rahu": {
+        "longitude": 82.212979,
+        "sign_index": 2,
+        "degree_in_sign": 22.212979,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 262.212979,
+        "sign_index": 8,
+        "degree_in_sign": 22.212979,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

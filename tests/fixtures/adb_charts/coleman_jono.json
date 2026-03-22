@@ -1,0 +1,122 @@
+{
+  "adb_id": 42563,
+  "name": "Coleman, Jono",
+  "given_name": "Jono Coleman",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2435532.979167,
+    "year": 1956,
+    "month": 2,
+    "day": 29,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coleman,_Jono",
+  "source_notes": "Sy Scholfield quotes Jane Bennett and Craig McIntosh, \"A Handbook of Astrology for Australia and New Zealand\" (Richmond, Vic: Greenhouse, 1986), in which p.205 quotes him for the data.\\n",
+  "categories": [
+    "Traits : Personality : Humorous, Witty",
+    "Traits : Personality : Loved by all",
+    "Traits : Personality : Talkative",
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Business/Marketing : Advertising",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertainment : Voice-Over",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Humor"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 16.770448,
+    "lagna": 46.770448,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.244776,
+    "jd_ut": 2435532.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 316.616899,
+        "sign_index": 10,
+        "degree_in_sign": 16.616899,
+        "is_retrograde": false,
+        "speed": 1.003483
+      },
+      "Moon": {
+        "longitude": 180.430328,
+        "sign_index": 6,
+        "degree_in_sign": 0.430328,
+        "is_retrograde": false,
+        "speed": 15.079285
+      },
+      "Mars": {
+        "longitude": 247.171723,
+        "sign_index": 8,
+        "degree_in_sign": 7.171723,
+        "is_retrograde": false,
+        "speed": 0.655714
+      },
+      "Mercury": {
+        "longitude": 291.262416,
+        "sign_index": 9,
+        "degree_in_sign": 21.262416,
+        "is_retrograde": false,
+        "speed": 1.282843
+      },
+      "Jupiter": {
+        "longitude": 121.570474,
+        "sign_index": 4,
+        "degree_in_sign": 1.570474,
+        "is_retrograde": true,
+        "speed": -0.123762
+      },
+      "Venus": {
+        "longitude": 358.197734,
+        "sign_index": 11,
+        "degree_in_sign": 28.197734,
+        "is_retrograde": false,
+        "speed": 1.162141
+      },
+      "Saturn": {
+        "longitude": 219.448094,
+        "sign_index": 7,
+        "degree_in_sign": 9.448094,
+        "is_retrograde": false,
+        "speed": 0.019822
+      },
+      "Rahu": {
+        "longitude": 229.696967,
+        "sign_index": 7,
+        "degree_in_sign": 19.696967,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 49.696967,
+        "sign_index": 1,
+        "degree_in_sign": 19.696967,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

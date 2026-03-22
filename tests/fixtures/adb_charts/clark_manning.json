@@ -1,0 +1,109 @@
+{
+  "adb_id": 94421,
+  "name": "Clark, Manning",
+  "given_name": "Manning Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2420559.472222,
+    "year": 1915,
+    "month": 3,
+    "day": 3,
+    "calendar": "g",
+    "time": "09:20",
+    "time_type": "s",
+    "hour": 9.333333,
+    "time_unknown": false,
+    "place": "Sydney",
+    "country": "Australia",
+    "lat": -33.866667,
+    "lon": 151.216667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Manning",
+  "source_notes": "Sy Scholfield quotes Clark's data from a document, \"More Oz Birth Data,\" compiled by Dennis Sutton, stating source as \"From him to Susan Alexander.\"\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 10.603569,
+    "lagna": 340.603569,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.672281,
+    "jd_ut": 2420559.472222,
+    "planets": {
+      "Sun": {
+        "longitude": 318.632827,
+        "sign_index": 10,
+        "degree_in_sign": 18.632827,
+        "is_retrograde": false,
+        "speed": 1.002393
+      },
+      "Moon": {
+        "longitude": 153.560144,
+        "sign_index": 5,
+        "degree_in_sign": 3.560144,
+        "is_retrograde": false,
+        "speed": 16.867512
+      },
+      "Mars": {
+        "longitude": 302.161846,
+        "sign_index": 10,
+        "degree_in_sign": 2.161846,
+        "is_retrograde": false,
+        "speed": 0.785983
+      },
+      "Mercury": {
+        "longitude": 301.380253,
+        "sign_index": 10,
+        "degree_in_sign": 1.380253,
+        "is_retrograde": true,
+        "speed": -0.426431
+      },
+      "Jupiter": {
+        "longitude": 313.791169,
+        "sign_index": 10,
+        "degree_in_sign": 13.791169,
+        "is_retrograde": false,
+        "speed": 0.240698
+      },
+      "Venus": {
+        "longitude": 273.315878,
+        "sign_index": 9,
+        "degree_in_sign": 3.315878,
+        "is_retrograde": false,
+        "speed": 1.114856
+      },
+      "Saturn": {
+        "longitude": 62.713479,
+        "sign_index": 2,
+        "degree_in_sign": 2.713479,
+        "is_retrograde": false,
+        "speed": 0.00902
+      },
+      "Rahu": {
+        "longitude": 303.174151,
+        "sign_index": 10,
+        "degree_in_sign": 3.174151,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.174151,
+        "sign_index": 4,
+        "degree_in_sign": 3.174151,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 9901,
+  "name": "Cervera, Jorge",
+  "given_name": "Jorge Cervera",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431558.78125,
+    "year": 1945,
+    "month": 4,
+    "day": 13,
+    "calendar": "g",
+    "time": "00:45",
+    "time_type": "s",
+    "hour": 0.75,
+    "time_unknown": false,
+    "place": "Progreso (Yucatan)",
+    "country": "Mexico",
+    "lat": 21.283333,
+    "lon": -89.666667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cervera,_Jorge",
+  "source_notes": "Joseph Silveira deMello quotes him, from his mom\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : AIDS/ HIV",
+    "Family : Childhood : Sibling circumstances",
+    "Passions : Sexuality : Gay",
+    "Vocation : Food and Beverage : Waiter/ Waitress"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 5.832669,
+    "lagna": 245.832669,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.092817,
+    "jd_ut": 2431558.78125,
+    "planets": {
+      "Sun": {
+        "longitude": 359.888311,
+        "sign_index": 11,
+        "degree_in_sign": 29.888311,
+        "is_retrograde": false,
+        "speed": 0.980113
+      },
+      "Moon": {
+        "longitude": 10.614262,
+        "sign_index": 0,
+        "degree_in_sign": 10.614262,
+        "is_retrograde": false,
+        "speed": 20.620817
+      },
+      "Mars": {
+        "longitude": 321.78047,
+        "sign_index": 10,
+        "degree_in_sign": 21.78047,
+        "is_retrograde": false,
+        "speed": 0.776222
+      },
+      "Mercury": {
+        "longitude": 0.442555,
+        "sign_index": 0,
+        "degree_in_sign": 0.442555,
+        "is_retrograde": true,
+        "speed": -0.733565
+      },
+      "Jupiter": {
+        "longitude": 145.907056,
+        "sign_index": 4,
+        "degree_in_sign": 25.907056,
+        "is_retrograde": true,
+        "speed": -0.09019
+      },
+      "Venus": {
+        "longitude": 3.767855,
+        "sign_index": 0,
+        "degree_in_sign": 3.767855,
+        "is_retrograde": true,
+        "speed": -0.618756
+      },
+      "Saturn": {
+        "longitude": 72.071314,
+        "sign_index": 2,
+        "degree_in_sign": 12.071314,
+        "is_retrograde": false,
+        "speed": 0.066718
+      },
+      "Rahu": {
+        "longitude": 80.297899,
+        "sign_index": 2,
+        "degree_in_sign": 20.297899,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 260.297899,
+        "sign_index": 8,
+        "degree_in_sign": 20.297899,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

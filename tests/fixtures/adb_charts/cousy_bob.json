@@ -1,0 +1,120 @@
+{
+  "adb_id": 15738,
+  "name": "Cousy, Bob",
+  "given_name": "Bob Cousy",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2425467.916667,
+    "year": 1928,
+    "month": 8,
+    "day": 9,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "d",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cousy,_Bob",
+  "source_notes": "Sy Scholfield quotes from ''Basketball Is My Life'' by Bob Cousy (Prentice-Hall, 1958), page 4: \"I was born—a slum kid in a slum section of New York. I was born at 6 a.m. on August 9, 1928, on 83rd Street...\"\\n\\nPreviously Dr. J. Lee Lehman quoted a sport almanac for date; time unknown.\\n",
+  "categories": [
+    "Traits : Body : Aerobic exercise",
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Sports : Basketball",
+    "Vocation : Sports Business : Coach/ Manager/ Owner",
+    "Vocation : Sports Business : Other Sports Business",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Public Service",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 29.909558,
+    "lagna": 89.909558,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.859938,
+    "jd_ut": 2425467.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 113.68393,
+        "sign_index": 3,
+        "degree_in_sign": 23.68393,
+        "is_retrograde": false,
+        "speed": 0.959125
+      },
+      "Moon": {
+        "longitude": 32.957169,
+        "sign_index": 1,
+        "degree_in_sign": 2.957169,
+        "is_retrograde": false,
+        "speed": 10.108758
+      },
+      "Mars": {
+        "longitude": 37.30016,
+        "sign_index": 1,
+        "degree_in_sign": 7.30016,
+        "is_retrograde": false,
+        "speed": 0.640519
+      },
+      "Mercury": {
+        "longitude": 106.323589,
+        "sign_index": 3,
+        "degree_in_sign": 16.323589,
+        "is_retrograde": false,
+        "speed": 2.045294
+      },
+      "Jupiter": {
+        "longitude": 16.849231,
+        "sign_index": 0,
+        "degree_in_sign": 16.849231,
+        "is_retrograde": false,
+        "speed": 0.067279
+      },
+      "Venus": {
+        "longitude": 124.395477,
+        "sign_index": 4,
+        "degree_in_sign": 4.395477,
+        "is_retrograde": false,
+        "speed": 1.233308
+      },
+      "Saturn": {
+        "longitude": 229.689451,
+        "sign_index": 7,
+        "degree_in_sign": 19.689451,
+        "is_retrograde": true,
+        "speed": -0.012266
+      },
+      "Rahu": {
+        "longitude": 43.065435,
+        "sign_index": 1,
+        "degree_in_sign": 13.065435,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 223.065435,
+        "sign_index": 7,
+        "degree_in_sign": 13.065435,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

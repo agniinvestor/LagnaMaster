@@ -1,0 +1,111 @@
+{
+  "adb_id": 93203,
+  "name": "Courthéoux, Juliette",
+  "given_name": "Juliette Courthéoux",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403837.695741,
+    "year": 1869,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Villers la Ville",
+    "country": "Belgium",
+    "lat": 50.583333,
+    "lon": 4.533333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courthéoux,_Juliette",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_ef_entreprise.pdf]. \\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids - Noted",
+    "Lifestyle : Financial : Gain - Money Through Marriage",
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 0.495097,
+    "lagna": 30.495097,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.033064,
+    "jd_ut": 2403837.695741,
+    "planets": {
+      "Sun": {
+        "longitude": 37.134985,
+        "sign_index": 1,
+        "degree_in_sign": 7.134985,
+        "is_retrograde": false,
+        "speed": 0.961311
+      },
+      "Moon": {
+        "longitude": 144.287584,
+        "sign_index": 4,
+        "degree_in_sign": 24.287584,
+        "is_retrograde": false,
+        "speed": 17.239344
+      },
+      "Mars": {
+        "longitude": 126.951101,
+        "sign_index": 4,
+        "degree_in_sign": 6.951101,
+        "is_retrograde": false,
+        "speed": 0.425043
+      },
+      "Mercury": {
+        "longitude": 57.576339,
+        "sign_index": 1,
+        "degree_in_sign": 27.576339,
+        "is_retrograde": false,
+        "speed": 1.523029
+      },
+      "Jupiter": {
+        "longitude": 13.023897,
+        "sign_index": 0,
+        "degree_in_sign": 13.023897,
+        "is_retrograde": false,
+        "speed": 0.229077
+      },
+      "Venus": {
+        "longitude": 40.027246,
+        "sign_index": 1,
+        "degree_in_sign": 10.027246,
+        "is_retrograde": false,
+        "speed": 1.230054
+      },
+      "Saturn": {
+        "longitude": 232.957163,
+        "sign_index": 7,
+        "degree_in_sign": 22.957163,
+        "is_retrograde": true,
+        "speed": -0.069742
+      },
+      "Rahu": {
+        "longitude": 109.296461,
+        "sign_index": 3,
+        "degree_in_sign": 19.296461,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 289.296461,
+        "sign_index": 9,
+        "degree_in_sign": 19.296461,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

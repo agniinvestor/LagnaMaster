@@ -1,0 +1,110 @@
+{
+  "adb_id": 71653,
+  "name": "Chomet, Sylvain",
+  "given_name": "Sylvain Chomet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438343.993056,
+    "year": 1963,
+    "month": 11,
+    "day": 10,
+    "calendar": "g",
+    "time": "12:50",
+    "time_type": "s",
+    "hour": 12.833333,
+    "time_unknown": false,
+    "place": "Maisons Laffitte",
+    "country": "France",
+    "lat": 48.95,
+    "lon": 2.15
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chomet,_Sylvain",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes EC (État civil: Civil registry).\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Humor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 2.543903,
+    "lagna": 242.543903,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.352264,
+    "jd_ut": 2438343.993056,
+    "planets": {
+      "Sun": {
+        "longitude": 204.009017,
+        "sign_index": 6,
+        "degree_in_sign": 24.009017,
+        "is_retrograde": false,
+        "speed": 1.005167
+      },
+      "Moon": {
+        "longitude": 139.828922,
+        "sign_index": 4,
+        "degree_in_sign": 19.828922,
+        "is_retrograde": false,
+        "speed": 11.122673
+      },
+      "Mars": {
+        "longitude": 228.088561,
+        "sign_index": 7,
+        "degree_in_sign": 18.088561,
+        "is_retrograde": false,
+        "speed": 0.73385
+      },
+      "Mercury": {
+        "longitude": 207.273552,
+        "sign_index": 6,
+        "degree_in_sign": 27.273552,
+        "is_retrograde": false,
+        "speed": 1.586353
+      },
+      "Jupiter": {
+        "longitude": 347.245027,
+        "sign_index": 11,
+        "degree_in_sign": 17.245027,
+        "is_retrograde": true,
+        "speed": -0.082272
+      },
+      "Venus": {
+        "longitude": 222.801853,
+        "sign_index": 7,
+        "degree_in_sign": 12.801853,
+        "is_retrograde": false,
+        "speed": 1.246236
+      },
+      "Saturn": {
+        "longitude": 293.434229,
+        "sign_index": 9,
+        "degree_in_sign": 23.434229,
+        "is_retrograde": false,
+        "speed": 0.033422
+      },
+      "Rahu": {
+        "longitude": 80.735578,
+        "sign_index": 2,
+        "degree_in_sign": 20.735578,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 260.735578,
+        "sign_index": 8,
+        "degree_in_sign": 20.735578,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

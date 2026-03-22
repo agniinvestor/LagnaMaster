@@ -1,0 +1,108 @@
+{
+  "adb_id": 67448,
+  "name": "Châtelain, Fernand",
+  "given_name": "Fernand Châtelain",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414883.38934,
+    "year": 1899,
+    "month": 8,
+    "day": 16,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "s",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Piacé",
+    "country": "France",
+    "lat": 48.26,
+    "lon": 0.115
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Châtelain,_Fernand",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'sculpteurs' pdf file, p. 50.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 16.147016,
+    "lagna": 346.147016,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.455289,
+    "jd_ut": 2414883.38934,
+    "planets": {
+      "Sun": {
+        "longitude": 121.276849,
+        "sign_index": 4,
+        "degree_in_sign": 1.276849,
+        "is_retrograde": false,
+        "speed": 0.96157
+      },
+      "Moon": {
+        "longitude": 241.196252,
+        "sign_index": 8,
+        "degree_in_sign": 1.196252,
+        "is_retrograde": false,
+        "speed": 10.249216
+      },
+      "Mars": {
+        "longitude": 164.412504,
+        "sign_index": 5,
+        "degree_in_sign": 14.412504,
+        "is_retrograde": false,
+        "speed": 0.635062
+      },
+      "Mercury": {
+        "longitude": 125.826634,
+        "sign_index": 4,
+        "degree_in_sign": 5.826634,
+        "is_retrograde": true,
+        "speed": -0.846401
+      },
+      "Jupiter": {
+        "longitude": 191.38491,
+        "sign_index": 6,
+        "degree_in_sign": 11.38491,
+        "is_retrograde": false,
+        "speed": 0.131822
+      },
+      "Venus": {
+        "longitude": 112.998656,
+        "sign_index": 3,
+        "degree_in_sign": 22.998656,
+        "is_retrograde": false,
+        "speed": 1.234174
+      },
+      "Saturn": {
+        "longitude": 234.630242,
+        "sign_index": 7,
+        "degree_in_sign": 24.630242,
+        "is_retrograde": true,
+        "speed": -0.007737
+      },
+      "Rahu": {
+        "longitude": 243.961717,
+        "sign_index": 8,
+        "degree_in_sign": 3.961717,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 63.961717,
+        "sign_index": 2,
+        "degree_in_sign": 3.961717,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

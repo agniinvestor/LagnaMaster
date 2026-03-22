@@ -1,0 +1,108 @@
+{
+  "adb_id": 83500,
+  "name": "Cozanet, Gilles",
+  "given_name": "Gilles Cozanet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433894.277778,
+    "year": 1951,
+    "month": 9,
+    "day": 4,
+    "calendar": "g",
+    "time": "19:40",
+    "time_type": "s",
+    "hour": 19.666667,
+    "time_unknown": false,
+    "place": "Meaux",
+    "country": "France",
+    "lat": 48.95,
+    "lon": 2.866667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cozanet,_Gilles",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertainment : News journalist/ Anchor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 4.852235,
+    "lagna": 304.852235,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.182117,
+    "jd_ut": 2433894.277778,
+    "planets": {
+      "Sun": {
+        "longitude": 138.23262,
+        "sign_index": 4,
+        "degree_in_sign": 18.23262,
+        "is_retrograde": false,
+        "speed": 0.969509
+      },
+      "Moon": {
+        "longitude": 176.957152,
+        "sign_index": 5,
+        "degree_in_sign": 26.957152,
+        "is_retrograde": false,
+        "speed": 11.779107
+      },
+      "Mars": {
+        "longitude": 107.902018,
+        "sign_index": 3,
+        "degree_in_sign": 17.902018,
+        "is_retrograde": false,
+        "speed": 0.634716
+      },
+      "Mercury": {
+        "longitude": 130.251114,
+        "sign_index": 4,
+        "degree_in_sign": 10.251114,
+        "is_retrograde": true,
+        "speed": -0.665068
+      },
+      "Jupiter": {
+        "longitude": 349.41067,
+        "sign_index": 11,
+        "degree_in_sign": 19.41067,
+        "is_retrograde": true,
+        "speed": -0.096629
+      },
+      "Venus": {
+        "longitude": 136.411643,
+        "sign_index": 4,
+        "degree_in_sign": 16.411643,
+        "is_retrograde": true,
+        "speed": -0.616945
+      },
+      "Saturn": {
+        "longitude": 159.287304,
+        "sign_index": 5,
+        "degree_in_sign": 9.287304,
+        "is_retrograde": false,
+        "speed": 0.118155
+      },
+      "Rahu": {
+        "longitude": 316.535123,
+        "sign_index": 10,
+        "degree_in_sign": 16.535123,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 136.535123,
+        "sign_index": 4,
+        "degree_in_sign": 16.535123,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

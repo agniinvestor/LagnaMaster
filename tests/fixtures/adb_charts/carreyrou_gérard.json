@@ -1,0 +1,108 @@
+{
+  "adb_id": 68664,
+  "name": "Carreyrou, Gérard",
+  "given_name": "Gérard Carreyrou",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430410.5625,
+    "year": 1942,
+    "month": 2,
+    "day": 20,
+    "calendar": "g",
+    "time": "03:30",
+    "time_type": "d",
+    "hour": 3.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carreyrou,_Gérard",
+  "source_notes": "Didier Geslain archive, 'radio-tele' pdf file, p. 6.\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 15.038086,
+    "lagna": 195.038086,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.048915,
+    "jd_ut": 2430410.5625,
+    "planets": {
+      "Sun": {
+        "longitude": 307.738539,
+        "sign_index": 10,
+        "degree_in_sign": 7.738539,
+        "is_retrograde": false,
+        "speed": 1.008032
+      },
+      "Moon": {
+        "longitude": 3.081517,
+        "sign_index": 0,
+        "degree_in_sign": 3.081517,
+        "is_retrograde": false,
+        "speed": 15.193154
+      },
+      "Mars": {
+        "longitude": 28.074602,
+        "sign_index": 0,
+        "degree_in_sign": 28.074602,
+        "is_retrograde": false,
+        "speed": 0.573548
+      },
+      "Mercury": {
+        "longitude": 288.918686,
+        "sign_index": 9,
+        "degree_in_sign": 18.918686,
+        "is_retrograde": true,
+        "speed": -0.292649
+      },
+      "Jupiter": {
+        "longitude": 48.697842,
+        "sign_index": 1,
+        "degree_in_sign": 18.697842,
+        "is_retrograde": false,
+        "speed": 0.048649
+      },
+      "Venus": {
+        "longitude": 282.677434,
+        "sign_index": 9,
+        "degree_in_sign": 12.677434,
+        "is_retrograde": true,
+        "speed": -0.129943
+      },
+      "Saturn": {
+        "longitude": 29.300559,
+        "sign_index": 0,
+        "degree_in_sign": 29.300559,
+        "is_retrograde": false,
+        "speed": 0.050529
+      },
+      "Rahu": {
+        "longitude": 141.144383,
+        "sign_index": 4,
+        "degree_in_sign": 21.144383,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 321.144383,
+        "sign_index": 10,
+        "degree_in_sign": 21.144383,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

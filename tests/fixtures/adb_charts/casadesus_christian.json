@@ -1,0 +1,108 @@
+{
+  "adb_id": 60826,
+  "name": "Casadesus, Christian",
+  "given_name": "Christian Casadesus",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419762.875,
+    "year": 1912,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 18",
+    "country": "France",
+    "lat": 48.892222,
+    "lon": 2.344444
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casadesus,_Christian",
+  "source_notes": "Paddy de Jabrun quotes bc.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 7.945458,
+    "lagna": 247.945458,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.641827,
+    "jd_ut": 2419762.875,
+    "planets": {
+      "Sun": {
+        "longitude": 251.61393,
+        "sign_index": 8,
+        "degree_in_sign": 11.61393,
+        "is_retrograde": false,
+        "speed": 1.018776
+      },
+      "Moon": {
+        "longitude": 101.433975,
+        "sign_index": 3,
+        "degree_in_sign": 11.433975,
+        "is_retrograde": false,
+        "speed": 16.311428
+      },
+      "Mars": {
+        "longitude": 236.158593,
+        "sign_index": 7,
+        "degree_in_sign": 26.158593,
+        "is_retrograde": false,
+        "speed": 0.731274
+      },
+      "Mercury": {
+        "longitude": 229.458788,
+        "sign_index": 7,
+        "degree_in_sign": 19.458788,
+        "is_retrograde": false,
+        "speed": 0.876768
+      },
+      "Jupiter": {
+        "longitude": 245.663175,
+        "sign_index": 8,
+        "degree_in_sign": 5.663175,
+        "is_retrograde": false,
+        "speed": 0.228285
+      },
+      "Venus": {
+        "longitude": 293.429827,
+        "sign_index": 9,
+        "degree_in_sign": 23.429827,
+        "is_retrograde": false,
+        "speed": 1.18574
+      },
+      "Saturn": {
+        "longitude": 35.531065,
+        "sign_index": 1,
+        "degree_in_sign": 5.531065,
+        "is_retrograde": true,
+        "speed": -0.057605
+      },
+      "Rahu": {
+        "longitude": 345.387507,
+        "sign_index": 11,
+        "degree_in_sign": 15.387507,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 165.387507,
+        "sign_index": 5,
+        "degree_in_sign": 15.387507,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

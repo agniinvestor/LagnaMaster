@@ -1,0 +1,108 @@
+{
+  "adb_id": 68338,
+  "name": "Conze, Henri",
+  "given_name": "Henri Conze",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429370.854167,
+    "year": 1939,
+    "month": 4,
+    "day": 17,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "d",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Grenoble",
+    "country": "France",
+    "lat": 45.166667,
+    "lon": 5.716667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conze,_Henri",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 203.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.28158,
+    "lagna": 47.28158,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.009162,
+    "jd_ut": 2429370.854167,
+    "planets": {
+      "Sun": {
+        "longitude": 3.428618,
+        "sign_index": 0,
+        "degree_in_sign": 3.428618,
+        "is_retrograde": false,
+        "speed": 0.978151
+      },
+      "Moon": {
+        "longitude": 336.056444,
+        "sign_index": 11,
+        "degree_in_sign": 6.056444,
+        "is_retrograde": false,
+        "speed": 8.976916
+      },
+      "Mars": {
+        "longitude": 261.368961,
+        "sign_index": 8,
+        "degree_in_sign": 21.368961,
+        "is_retrograde": false,
+        "speed": 0.497344
+      },
+      "Mercury": {
+        "longitude": 342.615514,
+        "sign_index": 11,
+        "degree_in_sign": 12.615514,
+        "is_retrograde": false,
+        "speed": 0.032512
+      },
+      "Jupiter": {
+        "longitude": 331.886024,
+        "sign_index": 11,
+        "degree_in_sign": 1.886024,
+        "is_retrograde": false,
+        "speed": 0.223461
+      },
+      "Venus": {
+        "longitude": 327.140775,
+        "sign_index": 10,
+        "degree_in_sign": 27.140775,
+        "is_retrograde": false,
+        "speed": 1.191717
+      },
+      "Saturn": {
+        "longitude": 358.701989,
+        "sign_index": 11,
+        "degree_in_sign": 28.701989,
+        "is_retrograde": false,
+        "speed": 0.126234
+      },
+      "Rahu": {
+        "longitude": 196.240679,
+        "sign_index": 6,
+        "degree_in_sign": 16.240679,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 16.240679,
+        "sign_index": 0,
+        "degree_in_sign": 16.240679,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

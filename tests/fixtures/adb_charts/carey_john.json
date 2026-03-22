@@ -1,0 +1,111 @@
+{
+  "adb_id": 89586,
+  "name": "Carey, John",
+  "given_name": "John Carey",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2436677.565972,
+    "year": 1959,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "20:35",
+    "time_type": "s",
+    "hour": 20.583333,
+    "time_unknown": false,
+    "place": "Chillicothe",
+    "country": "Ohio",
+    "lat": 39.333333,
+    "lon": -82.983333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carey,_John",
+  "source_notes": "Sy Scholfield quotes birth notice, Chillicothe Gazette (Chillicothe, Ohio), 21 April 1959, page 2, born at Chillicothe Hospital. \\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Law : Other Law",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 29.012044,
+    "lagna": 179.012044,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.288543,
+    "jd_ut": 2436677.565972,
+    "planets": {
+      "Sun": {
+        "longitude": 4.974208,
+        "sign_index": 0,
+        "degree_in_sign": 4.974208,
+        "is_retrograde": false,
+        "speed": 0.976728
+      },
+      "Moon": {
+        "longitude": 128.746843,
+        "sign_index": 4,
+        "degree_in_sign": 8.746843,
+        "is_retrograde": false,
+        "speed": 9.439724
+      },
+      "Mars": {
+        "longitude": 71.598419,
+        "sign_index": 2,
+        "degree_in_sign": 11.598419,
+        "is_retrograde": false,
+        "speed": 0.568414
+      },
+      "Mercury": {
+        "longitude": 339.364773,
+        "sign_index": 11,
+        "degree_in_sign": 9.364773,
+        "is_retrograde": false,
+        "speed": 0.552261
+      },
+      "Jupiter": {
+        "longitude": 217.240002,
+        "sign_index": 7,
+        "degree_in_sign": 7.240002,
+        "is_retrograde": true,
+        "speed": -0.089735
+      },
+      "Venus": {
+        "longitude": 41.660933,
+        "sign_index": 1,
+        "degree_in_sign": 11.660933,
+        "is_retrograde": false,
+        "speed": 1.179353
+      },
+      "Saturn": {
+        "longitude": 253.770355,
+        "sign_index": 8,
+        "degree_in_sign": 13.770355,
+        "is_retrograde": true,
+        "speed": -0.003984
+      },
+      "Rahu": {
+        "longitude": 169.042963,
+        "sign_index": 5,
+        "degree_in_sign": 19.042963,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 349.042963,
+        "sign_index": 11,
+        "degree_in_sign": 19.042963,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

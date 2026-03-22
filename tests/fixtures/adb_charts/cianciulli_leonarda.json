@@ -1,0 +1,115 @@
+{
+  "adb_id": 47578,
+  "name": "Cianciulli, Leonarda",
+  "given_name": "Leonarda Cianciulli",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412937.208333,
+    "year": 1894,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Montella",
+    "country": "Italy",
+    "lat": 40.85,
+    "lon": 15.016667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cianciulli,_Leonarda",
+  "source_notes": "Bordoni quotes B.C., Datanotizie No.5, 1/1996\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Epilepsy",
+    "Diagnoses : Psychological : Psychotic Episode",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids -Traumatic event",
+    "Passions : Criminal Perpetrator : Homicide serial",
+    "Passions : Criminal Perpetrator : Prison sentence",
+    "Vocation : Occult Fields : Divination/ Prophecy",
+    "Notable : Famous : Criminal cases"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 6.436302,
+    "lagna": 156.436302,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.380892,
+    "jd_ut": 2412937.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 6.245722,
+        "sign_index": 0,
+        "degree_in_sign": 6.245722,
+        "is_retrograde": false,
+        "speed": 0.975803
+      },
+      "Moon": {
+        "longitude": 169.955741,
+        "sign_index": 5,
+        "degree_in_sign": 19.955741,
+        "is_retrograde": false,
+        "speed": 12.301704
+      },
+      "Mars": {
+        "longitude": 292.651522,
+        "sign_index": 9,
+        "degree_in_sign": 22.651522,
+        "is_retrograde": false,
+        "speed": 0.706088
+      },
+      "Mercury": {
+        "longitude": 339.93841,
+        "sign_index": 11,
+        "degree_in_sign": 9.93841,
+        "is_retrograde": false,
+        "speed": 1.29499
+      },
+      "Jupiter": {
+        "longitude": 40.908361,
+        "sign_index": 1,
+        "degree_in_sign": 10.908361,
+        "is_retrograde": false,
+        "speed": 0.21207
+      },
+      "Venus": {
+        "longitude": 320.379211,
+        "sign_index": 10,
+        "degree_in_sign": 20.379211,
+        "is_retrograde": false,
+        "speed": 0.903022
+      },
+      "Saturn": {
+        "longitude": 178.92019,
+        "sign_index": 5,
+        "degree_in_sign": 28.92019,
+        "is_retrograde": true,
+        "speed": -0.07605
+      },
+      "Rahu": {
+        "longitude": 347.093957,
+        "sign_index": 11,
+        "degree_in_sign": 17.093957,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 167.093957,
+        "sign_index": 5,
+        "degree_in_sign": 17.093957,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

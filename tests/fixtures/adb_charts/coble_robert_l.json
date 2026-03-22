@@ -1,0 +1,113 @@
+{
+  "adb_id": 103815,
+  "name": "Coble, Robert L.",
+  "given_name": "Robert L. Coble",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2425268.5,
+    "year": 1928,
+    "month": 1,
+    "day": 22,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Uniontown (Fayette County)",
+    "country": "Pennsylvania",
+    "lat": 39.9,
+    "lon": -79.733333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coble,_Robert_L.",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Morning Herald'' (Uniontown, Pennsylvania), 24 January 1928, page 3: born at Uniontown Hospital. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Lifestyle : Work : Mentor/Tutor",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Other Science",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 5.661909,
+    "lagna": 95.661909,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.852314,
+    "jd_ut": 2425268.5,
+    "planets": {
+      "Sun": {
+        "longitude": 278.893238,
+        "sign_index": 9,
+        "degree_in_sign": 8.893238,
+        "is_retrograde": false,
+        "speed": 1.017675
+      },
+      "Moon": {
+        "longitude": 279.952697,
+        "sign_index": 9,
+        "degree_in_sign": 9.952697,
+        "is_retrograde": false,
+        "speed": 14.148928
+      },
+      "Mars": {
+        "longitude": 250.034308,
+        "sign_index": 8,
+        "degree_in_sign": 10.034308,
+        "is_retrograde": false,
+        "speed": 0.737392
+      },
+      "Mercury": {
+        "longitude": 288.134599,
+        "sign_index": 9,
+        "degree_in_sign": 18.134599,
+        "is_retrograde": false,
+        "speed": 1.720315
+      },
+      "Jupiter": {
+        "longitude": 337.130232,
+        "sign_index": 11,
+        "degree_in_sign": 7.130232,
+        "is_retrograde": false,
+        "speed": 0.179518
+      },
+      "Venus": {
+        "longitude": 239.840236,
+        "sign_index": 7,
+        "degree_in_sign": 29.840236,
+        "is_retrograde": false,
+        "speed": 1.205856
+      },
+      "Saturn": {
+        "longitude": 232.919127,
+        "sign_index": 7,
+        "degree_in_sign": 22.919127,
+        "is_retrograde": false,
+        "speed": 0.094019
+      },
+      "Rahu": {
+        "longitude": 53.632939,
+        "sign_index": 1,
+        "degree_in_sign": 23.632939,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 233.632939,
+        "sign_index": 7,
+        "degree_in_sign": 23.632939,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

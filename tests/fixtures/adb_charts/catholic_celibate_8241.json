@@ -1,0 +1,109 @@
+{
+  "adb_id": 8241,
+  "name": "Catholic celibate 8241",
+  "given_name": "Catholic celibate 8241",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429159.041667,
+    "year": 1938,
+    "month": 9,
+    "day": 17,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "d",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Catholic_celibate_8241",
+  "source_notes": "Sandy Gumienny, a niece, quotes her in MH, 1/1978\\n",
+  "categories": [
+    "Passions : Sexuality : Celibacy/ Minimal",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 4.442695,
+    "lagna": 154.442695,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.001063,
+    "jd_ut": 2429159.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 150.965484,
+        "sign_index": 5,
+        "degree_in_sign": 0.965484,
+        "is_retrograde": false,
+        "speed": 0.975947
+      },
+      "Moon": {
+        "longitude": 65.972466,
+        "sign_index": 2,
+        "degree_in_sign": 5.972466,
+        "is_retrograde": false,
+        "speed": 9.996144
+      },
+      "Mars": {
+        "longitude": 133.144163,
+        "sign_index": 4,
+        "degree_in_sign": 13.144163,
+        "is_retrograde": false,
+        "speed": 0.63394
+      },
+      "Mercury": {
+        "longitude": 133.846269,
+        "sign_index": 4,
+        "degree_in_sign": 13.846269,
+        "is_retrograde": false,
+        "speed": 1.373317
+      },
+      "Jupiter": {
+        "longitude": 300.998542,
+        "sign_index": 10,
+        "degree_in_sign": 0.998542,
+        "is_retrograde": true,
+        "speed": -0.096623
+      },
+      "Venus": {
+        "longitude": 197.031764,
+        "sign_index": 6,
+        "degree_in_sign": 17.031764,
+        "is_retrograde": false,
+        "speed": 0.919006
+      },
+      "Saturn": {
+        "longitude": 353.185361,
+        "sign_index": 11,
+        "degree_in_sign": 23.185361,
+        "is_retrograde": true,
+        "speed": -0.06961
+      },
+      "Rahu": {
+        "longitude": 207.465062,
+        "sign_index": 6,
+        "degree_in_sign": 27.465062,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 27.465062,
+        "sign_index": 0,
+        "degree_in_sign": 27.465062,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

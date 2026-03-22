@@ -1,0 +1,108 @@
+{
+  "adb_id": 3150,
+  "name": "Chautemps, Camille",
+  "given_name": "Camille Chautemps",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409574.201852,
+    "year": 1885,
+    "month": 2,
+    "day": 1,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chautemps,_Camille",
+  "source_notes": "\"The Astrological Review\" 10/1937.\\nDidier Geslain archive quotes BR.\\n",
+  "categories": [
+    "Vocation : Politics : Heads of state"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 29.922096,
+    "lagna": 89.922096,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.252337,
+    "jd_ut": 2409574.201852,
+    "planets": {
+      "Sun": {
+        "longitude": 290.811026,
+        "sign_index": 9,
+        "degree_in_sign": 20.811026,
+        "is_retrograde": false,
+        "speed": 1.013832
+      },
+      "Moon": {
+        "longitude": 138.800794,
+        "sign_index": 4,
+        "degree_in_sign": 18.800794,
+        "is_retrograde": false,
+        "speed": 16.541325
+      },
+      "Mars": {
+        "longitude": 292.990359,
+        "sign_index": 9,
+        "degree_in_sign": 22.990359,
+        "is_retrograde": false,
+        "speed": 0.7893
+      },
+      "Mercury": {
+        "longitude": 266.667431,
+        "sign_index": 8,
+        "degree_in_sign": 26.667431,
+        "is_retrograde": false,
+        "speed": 1.232084
+      },
+      "Jupiter": {
+        "longitude": 130.866073,
+        "sign_index": 4,
+        "degree_in_sign": 10.866073,
+        "is_retrograde": true,
+        "speed": -0.116993
+      },
+      "Venus": {
+        "longitude": 267.904886,
+        "sign_index": 8,
+        "degree_in_sign": 27.904886,
+        "is_retrograde": false,
+        "speed": 1.24545
+      },
+      "Saturn": {
+        "longitude": 55.24827,
+        "sign_index": 1,
+        "degree_in_sign": 25.24827,
+        "is_retrograde": true,
+        "speed": -0.02819
+      },
+      "Rahu": {
+        "longitude": 165.306791,
+        "sign_index": 5,
+        "degree_in_sign": 15.306791,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 345.306791,
+        "sign_index": 11,
+        "degree_in_sign": 15.306791,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

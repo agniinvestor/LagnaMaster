@@ -1,0 +1,108 @@
+{
+  "adb_id": 67524,
+  "name": "Coupé, Annick",
+  "given_name": "Annick Coupé",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434594.125,
+    "year": 1953,
+    "month": 8,
+    "day": 4,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Falaise",
+    "country": "France",
+    "lat": 48.9,
+    "lon": -0.2
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coupé,_Annick",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 64.\\n",
+  "categories": [
+    "Vocation : Politics : Labor unions"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.303843,
+    "lagna": 197.303843,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.208877,
+    "jd_ut": 2434594.125,
+    "planets": {
+      "Sun": {
+        "longitude": 108.702206,
+        "sign_index": 3,
+        "degree_in_sign": 18.702206,
+        "is_retrograde": false,
+        "speed": 0.957813
+      },
+      "Moon": {
+        "longitude": 49.310977,
+        "sign_index": 1,
+        "degree_in_sign": 19.310977,
+        "is_retrograde": false,
+        "speed": 14.140663
+      },
+      "Mars": {
+        "longitude": 100.54241,
+        "sign_index": 3,
+        "degree_in_sign": 10.54241,
+        "is_retrograde": false,
+        "speed": 0.644706
+      },
+      "Mercury": {
+        "longitude": 94.290903,
+        "sign_index": 3,
+        "degree_in_sign": 4.290903,
+        "is_retrograde": true,
+        "speed": -0.028279
+      },
+      "Jupiter": {
+        "longitude": 55.937771,
+        "sign_index": 1,
+        "degree_in_sign": 25.937771,
+        "is_retrograde": false,
+        "speed": 0.181719
+      },
+      "Venus": {
+        "longitude": 67.437706,
+        "sign_index": 2,
+        "degree_in_sign": 7.437706,
+        "is_retrograde": false,
+        "speed": 1.12773
+      },
+      "Saturn": {
+        "longitude": 178.745393,
+        "sign_index": 5,
+        "degree_in_sign": 28.745393,
+        "is_retrograde": false,
+        "speed": 0.064818
+      },
+      "Rahu": {
+        "longitude": 279.448779,
+        "sign_index": 9,
+        "degree_in_sign": 9.448779,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 99.448779,
+        "sign_index": 3,
+        "degree_in_sign": 9.448779,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

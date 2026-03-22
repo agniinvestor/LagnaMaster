@@ -1,0 +1,116 @@
+{
+  "adb_id": 89282,
+  "name": "Clifford, Frank",
+  "given_name": "Frank Clifford",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441785.831944,
+    "year": 1973,
+    "month": 4,
+    "day": 13,
+    "calendar": "g",
+    "time": "08:58",
+    "time_type": "d",
+    "hour": 8.966667,
+    "time_unknown": false,
+    "place": "St.Pancras",
+    "country": "England",
+    "lat": 51.533333,
+    "lon": -0.116667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clifford,_Frank",
+  "source_notes": "Sy Scholfield quotes Clifford for data from hospital records. \\n\\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Occult Fields : Palmist",
+    "Vocation : Writers : Astrology",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Publisher/ Editor",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 7.149654,
+    "lagna": 37.149654,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.483878,
+    "jd_ut": 2441785.831944,
+    "planets": {
+      "Sun": {
+        "longitude": 359.768563,
+        "sign_index": 11,
+        "degree_in_sign": 29.768563,
+        "is_retrograde": false,
+        "speed": 0.979587
+      },
+      "Moon": {
+        "longitude": 129.548246,
+        "sign_index": 4,
+        "degree_in_sign": 9.548246,
+        "is_retrograde": false,
+        "speed": 16.582776
+      },
+      "Mars": {
+        "longitude": 288.906389,
+        "sign_index": 9,
+        "degree_in_sign": 18.906389,
+        "is_retrograde": false,
+        "speed": 0.710109
+      },
+      "Mercury": {
+        "longitude": 332.312603,
+        "sign_index": 11,
+        "degree_in_sign": 2.312603,
+        "is_retrograde": false,
+        "speed": 1.110639
+      },
+      "Jupiter": {
+        "longitude": 285.262713,
+        "sign_index": 9,
+        "degree_in_sign": 15.262713,
+        "is_retrograde": false,
+        "speed": 0.134144
+      },
+      "Venus": {
+        "longitude": 0.679475,
+        "sign_index": 0,
+        "degree_in_sign": 0.679475,
+        "is_retrograde": false,
+        "speed": 1.238103
+      },
+      "Saturn": {
+        "longitude": 53.154975,
+        "sign_index": 1,
+        "degree_in_sign": 23.154975,
+        "is_retrograde": false,
+        "speed": 0.094685
+      },
+      "Rahu": {
+        "longitude": 258.345503,
+        "sign_index": 8,
+        "degree_in_sign": 18.345503,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 78.345503,
+        "sign_index": 2,
+        "degree_in_sign": 18.345503,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

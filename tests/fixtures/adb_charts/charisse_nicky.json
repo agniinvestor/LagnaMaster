@@ -1,0 +1,108 @@
+{
+  "adb_id": 19585,
+  "name": "Charisse, Nicky",
+  "given_name": "Nicky Charisse",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430486.881944,
+    "year": 1942,
+    "month": 5,
+    "day": 7,
+    "calendar": "g",
+    "time": "02:10",
+    "time_type": "w",
+    "hour": 2.166667,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charisse,_Nicky",
+  "source_notes": "B.C. in hand from the Wilsons\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 5.402477,
+    "lagna": 275.402477,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.051833,
+    "jd_ut": 2430486.881944,
+    "planets": {
+      "Sun": {
+        "longitude": 23.121705,
+        "sign_index": 0,
+        "degree_in_sign": 23.121705,
+        "is_retrograde": false,
+        "speed": 0.967582
+      },
+      "Moon": {
+        "longitude": 292.085655,
+        "sign_index": 9,
+        "degree_in_sign": 22.085655,
+        "is_retrograde": false,
+        "speed": 11.893436
+      },
+      "Mars": {
+        "longitude": 73.735467,
+        "sign_index": 2,
+        "degree_in_sign": 13.735467,
+        "is_retrograde": false,
+        "speed": 0.611183
+      },
+      "Mercury": {
+        "longitude": 40.808155,
+        "sign_index": 1,
+        "degree_in_sign": 10.808155,
+        "is_retrograde": false,
+        "speed": 1.70189
+      },
+      "Jupiter": {
+        "longitude": 59.516641,
+        "sign_index": 1,
+        "degree_in_sign": 29.516641,
+        "is_retrograde": false,
+        "speed": 0.205799
+      },
+      "Venus": {
+        "longitude": 338.337883,
+        "sign_index": 11,
+        "degree_in_sign": 8.337883,
+        "is_retrograde": false,
+        "speed": 1.085401
+      },
+      "Saturn": {
+        "longitude": 36.767207,
+        "sign_index": 1,
+        "degree_in_sign": 6.767207,
+        "is_retrograde": false,
+        "speed": 0.127067
+      },
+      "Rahu": {
+        "longitude": 137.100058,
+        "sign_index": 4,
+        "degree_in_sign": 17.100058,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 317.100058,
+        "sign_index": 10,
+        "degree_in_sign": 17.100058,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

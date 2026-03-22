@@ -1,0 +1,115 @@
+{
+  "adb_id": 89938,
+  "name": "Carr, Georgia",
+  "given_name": "Georgia Carr",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424322.184028,
+    "year": 1925,
+    "month": 6,
+    "day": 20,
+    "calendar": "g",
+    "time": "08:25",
+    "time_type": "s",
+    "hour": 8.416667,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carr,_Georgia",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Stroke",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Business : Business owner",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Vocation : Entertain/Music : Jazz",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Food and Beverage : Cater/ Supplier"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 29.637305,
+    "lagna": 89.637305,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.816134,
+    "jd_ut": 2424322.184028,
+    "planets": {
+      "Sun": {
+        "longitude": 65.978254,
+        "sign_index": 2,
+        "degree_in_sign": 5.978254,
+        "is_retrograde": false,
+        "speed": 0.954417
+      },
+      "Moon": {
+        "longitude": 60.153435,
+        "sign_index": 2,
+        "degree_in_sign": 0.153435,
+        "is_retrograde": false,
+        "speed": 8.868677
+      },
+      "Mars": {
+        "longitude": 93.594324,
+        "sign_index": 3,
+        "degree_in_sign": 3.594324,
+        "is_retrograde": false,
+        "speed": 0.630888
+      },
+      "Mercury": {
+        "longitude": 66.57576,
+        "sign_index": 2,
+        "degree_in_sign": 6.57576,
+        "is_retrograde": false,
+        "speed": 2.192454
+      },
+      "Jupiter": {
+        "longitude": 267.229047,
+        "sign_index": 8,
+        "degree_in_sign": 27.229047,
+        "is_retrograde": true,
+        "speed": -0.111039
+      },
+      "Venus": {
+        "longitude": 81.386962,
+        "sign_index": 2,
+        "degree_in_sign": 21.386962,
+        "is_retrograde": false,
+        "speed": 1.224188
+      },
+      "Saturn": {
+        "longitude": 195.172786,
+        "sign_index": 6,
+        "degree_in_sign": 15.172786,
+        "is_retrograde": true,
+        "speed": -0.033527
+      },
+      "Rahu": {
+        "longitude": 103.780192,
+        "sign_index": 3,
+        "degree_in_sign": 13.780192,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 283.780192,
+        "sign_index": 9,
+        "degree_in_sign": 13.780192,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

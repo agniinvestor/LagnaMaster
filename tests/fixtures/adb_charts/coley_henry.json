@@ -1,0 +1,111 @@
+{
+  "adb_id": 1845,
+  "name": "Coley, Henry",
+  "given_name": "Henry Coley",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2317802.086111,
+    "year": 1633,
+    "month": 10,
+    "day": 18,
+    "calendar": "j",
+    "time": "13:59",
+    "time_type": "l",
+    "hour": 13.983333,
+    "time_unknown": false,
+    "place": "Oxford",
+    "country": "England",
+    "lat": 51.766667,
+    "lon": -1.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coley,_Henry",
+  "source_notes": "Eugene Moore submits chart copy from an astrology magazine, undated, Oct 18, 1633 OS. The chart displayed is for 1:59 PM LMT.\\n(Astrological Pioneers of America file gives the data as Oct 18, 1633, 2:15 PM LMT without a style designation.)\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Vocation : Writers : Astrology",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 3.168293,
+    "lagna": 273.168293,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 18.74625,
+    "jd_ut": 2317802.086111,
+    "planets": {
+      "Sun": {
+        "longitude": 196.684246,
+        "sign_index": 6,
+        "degree_in_sign": 16.684246,
+        "is_retrograde": false,
+        "speed": 1.002362
+      },
+      "Moon": {
+        "longitude": 145.81329,
+        "sign_index": 4,
+        "degree_in_sign": 25.81329,
+        "is_retrograde": false,
+        "speed": 11.956389
+      },
+      "Mars": {
+        "longitude": 127.459421,
+        "sign_index": 4,
+        "degree_in_sign": 7.459421,
+        "is_retrograde": false,
+        "speed": 0.546312
+      },
+      "Mercury": {
+        "longitude": 180.602769,
+        "sign_index": 6,
+        "degree_in_sign": 0.602769,
+        "is_retrograde": false,
+        "speed": 1.495676
+      },
+      "Jupiter": {
+        "longitude": 72.254854,
+        "sign_index": 2,
+        "degree_in_sign": 12.254854,
+        "is_retrograde": true,
+        "speed": -0.031959
+      },
+      "Venus": {
+        "longitude": 153.875576,
+        "sign_index": 5,
+        "degree_in_sign": 3.875576,
+        "is_retrograde": false,
+        "speed": 1.154921
+      },
+      "Saturn": {
+        "longitude": 229.730215,
+        "sign_index": 7,
+        "degree_in_sign": 19.730215,
+        "is_retrograde": false,
+        "speed": 0.104965
+      },
+      "Rahu": {
+        "longitude": 348.51696,
+        "sign_index": 11,
+        "degree_in_sign": 18.51696,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 168.51696,
+        "sign_index": 5,
+        "degree_in_sign": 18.51696,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

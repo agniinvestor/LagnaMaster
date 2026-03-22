@@ -1,0 +1,109 @@
+{
+  "adb_id": 71681,
+  "name": "Colizzi, Pino",
+  "given_name": "Pino Colizzi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428850.256944,
+    "year": 1937,
+    "month": 11,
+    "day": 12,
+    "calendar": "g",
+    "time": "19:10",
+    "time_type": "s",
+    "hour": 19.166667,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colizzi,_Pino",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Voice-Over"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 13.405628,
+    "lagna": 43.405628,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.989257,
+    "jd_ut": 2428850.256944,
+    "planets": {
+      "Sun": {
+        "longitude": 206.960277,
+        "sign_index": 6,
+        "degree_in_sign": 26.960277,
+        "is_retrograde": false,
+        "speed": 1.006346
+      },
+      "Moon": {
+        "longitude": 312.716607,
+        "sign_index": 10,
+        "degree_in_sign": 12.716607,
+        "is_retrograde": false,
+        "speed": 8.995654
+      },
+      "Mars": {
+        "longitude": 277.734768,
+        "sign_index": 9,
+        "degree_in_sign": 7.734768,
+        "is_retrograde": false,
+        "speed": 0.739069
+      },
+      "Mercury": {
+        "longitude": 215.381332,
+        "sign_index": 7,
+        "degree_in_sign": 5.381332,
+        "is_retrograde": false,
+        "speed": 1.547066
+      },
+      "Jupiter": {
+        "longitude": 269.762331,
+        "sign_index": 8,
+        "degree_in_sign": 29.762331,
+        "is_retrograde": false,
+        "speed": 0.163201
+      },
+      "Venus": {
+        "longitude": 186.926471,
+        "sign_index": 6,
+        "degree_in_sign": 6.926471,
+        "is_retrograde": false,
+        "speed": 1.249448
+      },
+      "Saturn": {
+        "longitude": 335.683012,
+        "sign_index": 11,
+        "degree_in_sign": 5.683012,
+        "is_retrograde": true,
+        "speed": -0.033367
+      },
+      "Rahu": {
+        "longitude": 223.828203,
+        "sign_index": 7,
+        "degree_in_sign": 13.828203,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 43.828203,
+        "sign_index": 1,
+        "degree_in_sign": 13.828203,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

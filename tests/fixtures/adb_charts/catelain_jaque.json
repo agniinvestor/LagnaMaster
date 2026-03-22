@@ -1,0 +1,108 @@
+{
+  "adb_id": 71417,
+  "name": "Catelain, Jaque",
+  "given_name": "Jaque Catelain",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413965.160174,
+    "year": 1897,
+    "month": 2,
+    "day": 9,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "St.Germain En Laye",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.066667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Catelain,_Jaque",
+  "source_notes": "Sy Scholfield quotes birth certificate no. 42 in the online Yvelines archives, p. 9/76.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 24.277662,
+    "lagna": 84.277662,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.420187,
+    "jd_ut": 2413965.160174,
+    "planets": {
+      "Sun": {
+        "longitude": 298.794802,
+        "sign_index": 9,
+        "degree_in_sign": 28.794802,
+        "is_retrograde": false,
+        "speed": 1.011478
+      },
+      "Moon": {
+        "longitude": 27.308287,
+        "sign_index": 0,
+        "degree_in_sign": 27.308287,
+        "is_retrograde": false,
+        "speed": 8.93134
+      },
+      "Mars": {
+        "longitude": 52.471084,
+        "sign_index": 1,
+        "degree_in_sign": 22.471084,
+        "is_retrograde": false,
+        "speed": 0.254607
+      },
+      "Mercury": {
+        "longitude": 273.570536,
+        "sign_index": 9,
+        "degree_in_sign": 3.570536,
+        "is_retrograde": false,
+        "speed": 0.625048
+      },
+      "Jupiter": {
+        "longitude": 134.633785,
+        "sign_index": 4,
+        "degree_in_sign": 14.633785,
+        "is_retrograde": true,
+        "speed": -0.122211
+      },
+      "Venus": {
+        "longitude": 345.299457,
+        "sign_index": 11,
+        "degree_in_sign": 15.299457,
+        "is_retrograde": false,
+        "speed": 1.049382
+      },
+      "Saturn": {
+        "longitude": 217.675349,
+        "sign_index": 7,
+        "degree_in_sign": 7.675349,
+        "is_retrograde": false,
+        "speed": 0.046639
+      },
+      "Rahu": {
+        "longitude": 292.620618,
+        "sign_index": 9,
+        "degree_in_sign": 22.620618,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 112.620618,
+        "sign_index": 3,
+        "degree_in_sign": 22.620618,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "adb_id": 98005,
+  "name": "Cary, Otis",
+  "given_name": "Otis Cary",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422982.277778,
+    "year": 1921,
+    "month": 10,
+    "day": 20,
+    "calendar": "g",
+    "time": "03:40",
+    "time_type": "s",
+    "hour": 3.666667,
+    "time_unknown": false,
+    "place": "Otaru",
+    "country": "Japan",
+    "lat": 43.189444,
+    "lon": 141.002222
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cary,_Otis",
+  "source_notes": "U.S. Consular Report of Birth in hand from Sy Scholfield, copy on file; he was born at \"5 Tomioka cho, 3 chome, Otaru, Hokkaido.\"\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Diagnoses : Major Diseases : Pneumonia",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Extraordinary Talents : For Languages"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.456115,
+    "lagna": 133.456115,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.764907,
+    "jd_ut": 2422982.277778,
+    "planets": {
+      "Sun": {
+        "longitude": 183.071709,
+        "sign_index": 6,
+        "degree_in_sign": 3.071709,
+        "is_retrograde": false,
+        "speed": 0.993921
+      },
+      "Moon": {
+        "longitude": 36.40898,
+        "sign_index": 1,
+        "degree_in_sign": 6.40898,
+        "is_retrograde": false,
+        "speed": 9.598342
+      },
+      "Mars": {
+        "longitude": 146.178163,
+        "sign_index": 4,
+        "degree_in_sign": 26.178163,
+        "is_retrograde": false,
+        "speed": 0.620603
+      },
+      "Mercury": {
+        "longitude": 203.528256,
+        "sign_index": 6,
+        "degree_in_sign": 23.528256,
+        "is_retrograde": false,
+        "speed": 0.02856
+      },
+      "Jupiter": {
+        "longitude": 162.32473,
+        "sign_index": 5,
+        "degree_in_sign": 12.32473,
+        "is_retrograde": false,
+        "speed": 0.209134
+      },
+      "Venus": {
+        "longitude": 156.056672,
+        "sign_index": 5,
+        "degree_in_sign": 6.056672,
+        "is_retrograde": false,
+        "speed": 1.232788
+      },
+      "Saturn": {
+        "longitude": 158.676898,
+        "sign_index": 5,
+        "degree_in_sign": 8.676898,
+        "is_retrograde": false,
+        "speed": 0.116986
+      },
+      "Rahu": {
+        "longitude": 174.784618,
+        "sign_index": 5,
+        "degree_in_sign": 24.784618,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 354.784618,
+        "sign_index": 11,
+        "degree_in_sign": 24.784618,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

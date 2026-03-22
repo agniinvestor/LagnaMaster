@@ -1,0 +1,111 @@
+{
+  "adb_id": 9048,
+  "name": "Conjoined Twins: Picciotto",
+  "given_name": "Conjoined Twins: Picciotto",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430416.673611,
+    "year": 1942,
+    "month": 2,
+    "day": 26,
+    "calendar": "g",
+    "time": "00:10",
+    "time_type": "w",
+    "hour": 0.166667,
+    "time_unknown": false,
+    "place": "Saint George",
+    "country": "New York",
+    "lat": 40.65,
+    "lon": -74.083333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Picciotto",
+  "source_notes": "Sy Scholfield quotes news, ''Daily News'' (New York, New York), 27 February 1942, page 4, born yesterday at 12:10 AM at St. Vincent's.\\n\\nDeCosta Williams collection, AFA, gives 12:15 AM.\\n",
+  "categories": [
+    "Personal : Birth : Cesarean",
+    "Personal : Birth : Conjoined twins",
+    "Personal : Birth : Infant mortality",
+    "Notable : Famous : Newsmaker"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 26.309471,
+    "lagna": 176.309471,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.049148,
+    "jd_ut": 2430416.673611,
+    "planets": {
+      "Sun": {
+        "longitude": 313.888948,
+        "sign_index": 10,
+        "degree_in_sign": 13.888948,
+        "is_retrograde": false,
+        "speed": 1.004792
+      },
+      "Moon": {
+        "longitude": 76.512352,
+        "sign_index": 2,
+        "degree_in_sign": 16.512352,
+        "is_retrograde": false,
+        "speed": 9.158002
+      },
+      "Mars": {
+        "longitude": 31.600312,
+        "sign_index": 1,
+        "degree_in_sign": 1.600312,
+        "is_retrograde": false,
+        "speed": 0.580077
+      },
+      "Mercury": {
+        "longitude": 289.276949,
+        "sign_index": 9,
+        "degree_in_sign": 19.276949,
+        "is_retrograde": false,
+        "speed": 0.372483
+      },
+      "Jupiter": {
+        "longitude": 49.053822,
+        "sign_index": 1,
+        "degree_in_sign": 19.053822,
+        "is_retrograde": false,
+        "speed": 0.067677
+      },
+      "Venus": {
+        "longitude": 282.639415,
+        "sign_index": 9,
+        "degree_in_sign": 12.639415,
+        "is_retrograde": false,
+        "speed": 0.114167
+      },
+      "Saturn": {
+        "longitude": 29.640202,
+        "sign_index": 0,
+        "degree_in_sign": 29.640202,
+        "is_retrograde": false,
+        "speed": 0.060523
+      },
+      "Rahu": {
+        "longitude": 140.820543,
+        "sign_index": 4,
+        "degree_in_sign": 20.820543,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 320.820543,
+        "sign_index": 10,
+        "degree_in_sign": 20.820543,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

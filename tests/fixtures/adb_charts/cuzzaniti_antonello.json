@@ -1,0 +1,113 @@
+{
+  "adb_id": 11875,
+  "name": "Cuzzaniti, Antonello",
+  "given_name": "Antonello Cuzzaniti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433785.3125,
+    "year": 1951,
+    "month": 5,
+    "day": 18,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuzzaniti,_Antonello",
+  "source_notes": "Bordoni quotes B.C. Vol 4\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Other Major diseases",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Parent, Single or Step",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Birth : Illegitimate birth"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 24.52925,
+    "lagna": 204.52925,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.177951,
+    "jd_ut": 2433785.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 33.864956,
+        "sign_index": 1,
+        "degree_in_sign": 3.864956,
+        "is_retrograde": false,
+        "speed": 0.962554
+      },
+      "Moon": {
+        "longitude": 180.808649,
+        "sign_index": 6,
+        "degree_in_sign": 0.808649,
+        "is_retrograde": false,
+        "speed": 10.510127
+      },
+      "Mars": {
+        "longitude": 34.806311,
+        "sign_index": 1,
+        "degree_in_sign": 4.806311,
+        "is_retrograde": false,
+        "speed": 0.712017
+      },
+      "Mercury": {
+        "longitude": 9.126866,
+        "sign_index": 0,
+        "degree_in_sign": 9.126866,
+        "is_retrograde": false,
+        "speed": 0.735204
+      },
+      "Jupiter": {
+        "longitude": 342.538108,
+        "sign_index": 11,
+        "degree_in_sign": 12.538108,
+        "is_retrograde": false,
+        "speed": 0.19291
+      },
+      "Venus": {
+        "longitude": 75.596564,
+        "sign_index": 2,
+        "degree_in_sign": 15.596564,
+        "is_retrograde": false,
+        "speed": 1.123584
+      },
+      "Saturn": {
+        "longitude": 152.451579,
+        "sign_index": 5,
+        "degree_in_sign": 2.451579,
+        "is_retrograde": true,
+        "speed": -0.017502
+      },
+      "Rahu": {
+        "longitude": 322.309418,
+        "sign_index": 10,
+        "degree_in_sign": 22.309418,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 142.309418,
+        "sign_index": 4,
+        "degree_in_sign": 22.309418,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

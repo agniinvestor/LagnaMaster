@@ -1,0 +1,110 @@
+{
+  "adb_id": 86361,
+  "name": "Costa, Alzira",
+  "given_name": "Alzira Costa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405999.27338,
+    "year": 1875,
+    "month": 4,
+    "day": 20,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Coimbra",
+    "country": "Portugal",
+    "lat": 40.2,
+    "lon": -8.416667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costa,_Alzira",
+  "source_notes": "Sy Scholfield provided birth registry entry published on Wikimedia: \"nasceu n'esta freguesia ás seis horas da tarde do dia vinte do mêz de Abril proximo passado\" [https://commons.wikimedia.org/wiki/File:Assento_de_baptismo,_Alzira_Costa_(27_Junho_1875).png].\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 8.384476,
+    "lagna": 158.384476,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.115687,
+    "jd_ut": 2405999.27338,
+    "planets": {
+      "Sun": {
+        "longitude": 8.139485,
+        "sign_index": 0,
+        "degree_in_sign": 8.139485,
+        "is_retrograde": false,
+        "speed": 0.974706
+      },
+      "Moon": {
+        "longitude": 189.916826,
+        "sign_index": 6,
+        "degree_in_sign": 9.916826,
+        "is_retrograde": false,
+        "speed": 12.265794
+      },
+      "Mars": {
+        "longitude": 248.098235,
+        "sign_index": 8,
+        "degree_in_sign": 8.098235,
+        "is_retrograde": false,
+        "speed": 0.285297
+      },
+      "Mercury": {
+        "longitude": 349.573605,
+        "sign_index": 11,
+        "degree_in_sign": 19.573605,
+        "is_retrograde": false,
+        "speed": 1.722723
+      },
+      "Jupiter": {
+        "longitude": 184.221513,
+        "sign_index": 6,
+        "degree_in_sign": 4.221513,
+        "is_retrograde": true,
+        "speed": -0.127472
+      },
+      "Venus": {
+        "longitude": 328.948261,
+        "sign_index": 10,
+        "degree_in_sign": 28.948261,
+        "is_retrograde": false,
+        "speed": 1.172378
+      },
+      "Saturn": {
+        "longitude": 302.264577,
+        "sign_index": 10,
+        "degree_in_sign": 2.264577,
+        "is_retrograde": false,
+        "speed": 0.070645
+      },
+      "Rahu": {
+        "longitude": 354.749852,
+        "sign_index": 11,
+        "degree_in_sign": 24.749852,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 174.749852,
+        "sign_index": 5,
+        "degree_in_sign": 24.749852,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

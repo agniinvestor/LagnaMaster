@@ -1,0 +1,111 @@
+{
+  "adb_id": 100394,
+  "name": "Cowan, Finis E.",
+  "given_name": "Finis E. Cowan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425901.621528,
+    "year": 1929,
+    "month": 10,
+    "day": 16,
+    "calendar": "g",
+    "time": "20:55",
+    "time_type": "s",
+    "hour": 20.916667,
+    "time_unknown": false,
+    "place": "Dallas",
+    "country": "Texas",
+    "lat": 32.783333,
+    "lon": -96.8
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowan,_Finis_E.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Law : Attorney",
+    "Vocation : Law : Jurist",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 3.155551,
+    "lagna": 33.155551,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.87652,
+    "jd_ut": 2425901.621528,
+    "planets": {
+      "Sun": {
+        "longitude": 180.383831,
+        "sign_index": 6,
+        "degree_in_sign": 0.383831,
+        "is_retrograde": false,
+        "speed": 0.992259
+      },
+      "Moon": {
+        "longitude": 343.33194,
+        "sign_index": 11,
+        "degree_in_sign": 13.33194,
+        "is_retrograde": false,
+        "speed": 9.574932
+      },
+      "Mars": {
+        "longitude": 194.362267,
+        "sign_index": 6,
+        "degree_in_sign": 14.362267,
+        "is_retrograde": false,
+        "speed": 0.686959
+      },
+      "Mercury": {
+        "longitude": 165.161871,
+        "sign_index": 5,
+        "degree_in_sign": 15.161871,
+        "is_retrograde": true,
+        "speed": -0.017992
+      },
+      "Jupiter": {
+        "longitude": 53.302633,
+        "sign_index": 1,
+        "degree_in_sign": 23.302633,
+        "is_retrograde": true,
+        "speed": -0.039181
+      },
+      "Venus": {
+        "longitude": 153.311159,
+        "sign_index": 5,
+        "degree_in_sign": 3.311159,
+        "is_retrograde": false,
+        "speed": 1.231468
+      },
+      "Saturn": {
+        "longitude": 242.908641,
+        "sign_index": 8,
+        "degree_in_sign": 2.908641,
+        "is_retrograde": false,
+        "speed": 0.073629
+      },
+      "Rahu": {
+        "longitude": 20.082512,
+        "sign_index": 0,
+        "degree_in_sign": 20.082512,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 200.082512,
+        "sign_index": 6,
+        "degree_in_sign": 20.082512,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

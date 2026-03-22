@@ -1,0 +1,108 @@
+{
+  "adb_id": 52105,
+  "name": "Chemama, Emile",
+  "given_name": "Emile Chemama",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424579.173611,
+    "year": 1926,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "16:10",
+    "time_type": "s",
+    "hour": 16.166667,
+    "time_unknown": false,
+    "place": "Bône",
+    "country": "Algeria",
+    "lat": 36.9,
+    "lon": 7.766667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chemama,_Emile",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin vol 1 no 587\\n",
+  "categories": [
+    "Vocation : Sports : Boxing"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 13.221402,
+    "lagna": 103.221402,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.82596,
+    "jd_ut": 2424579.173611,
+    "planets": {
+      "Sun": {
+        "longitude": 320.516744,
+        "sign_index": 10,
+        "degree_in_sign": 20.516744,
+        "is_retrograde": false,
+        "speed": 1.001595
+      },
+      "Moon": {
+        "longitude": 196.779801,
+        "sign_index": 6,
+        "degree_in_sign": 16.779801,
+        "is_retrograde": false,
+        "speed": 16.884849
+      },
+      "Mars": {
+        "longitude": 263.885207,
+        "sign_index": 8,
+        "degree_in_sign": 23.885207,
+        "is_retrograde": false,
+        "speed": 0.714792
+      },
+      "Mercury": {
+        "longitude": 334.677008,
+        "sign_index": 11,
+        "degree_in_sign": 4.677008,
+        "is_retrograde": false,
+        "speed": 1.75911
+      },
+      "Jupiter": {
+        "longitude": 290.588805,
+        "sign_index": 9,
+        "degree_in_sign": 20.588805,
+        "is_retrograde": false,
+        "speed": 0.220873
+      },
+      "Venus": {
+        "longitude": 287.905607,
+        "sign_index": 9,
+        "degree_in_sign": 17.905607,
+        "is_retrograde": false,
+        "speed": 0.173222
+      },
+      "Saturn": {
+        "longitude": 213.253548,
+        "sign_index": 7,
+        "degree_in_sign": 3.253548,
+        "is_retrograde": false,
+        "speed": 0.00258
+      },
+      "Rahu": {
+        "longitude": 90.161779,
+        "sign_index": 3,
+        "degree_in_sign": 0.161779,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 270.161779,
+        "sign_index": 9,
+        "degree_in_sign": 0.161779,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

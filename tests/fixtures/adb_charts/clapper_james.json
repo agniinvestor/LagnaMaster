@@ -1,0 +1,108 @@
+{
+  "adb_id": 100748,
+  "name": "Clapper, James",
+  "given_name": "James Clapper",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430067.784722,
+    "year": 1941,
+    "month": 3,
+    "day": 14,
+    "calendar": "g",
+    "time": "00:50",
+    "time_type": "s",
+    "hour": 0.833333,
+    "time_unknown": false,
+    "place": "Fort Wayne",
+    "country": "Indiana",
+    "lat": 41.133333,
+    "lon": -85.133333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clapper,_James",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Law : Other Law"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 2.147314,
+    "lagna": 212.147314,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.035809,
+    "jd_ut": 2430067.784722,
+    "planets": {
+      "Sun": {
+        "longitude": 330.271319,
+        "sign_index": 11,
+        "degree_in_sign": 0.271319,
+        "is_retrograde": false,
+        "speed": 0.996163
+      },
+      "Moon": {
+        "longitude": 161.517931,
+        "sign_index": 5,
+        "degree_in_sign": 11.517931,
+        "is_retrograde": false,
+        "speed": 10.664895
+      },
+      "Mars": {
+        "longitude": 263.688595,
+        "sign_index": 8,
+        "degree_in_sign": 23.688595,
+        "is_retrograde": false,
+        "speed": 0.690226
+      },
+      "Mercury": {
+        "longitude": 306.178081,
+        "sign_index": 10,
+        "degree_in_sign": 6.178081,
+        "is_retrograde": false,
+        "speed": 0.25478
+      },
+      "Jupiter": {
+        "longitude": 20.610206,
+        "sign_index": 0,
+        "degree_in_sign": 20.610206,
+        "is_retrograde": false,
+        "speed": 0.191239
+      },
+      "Venus": {
+        "longitude": 321.099304,
+        "sign_index": 10,
+        "degree_in_sign": 21.099304,
+        "is_retrograde": false,
+        "speed": 1.244803
+      },
+      "Saturn": {
+        "longitude": 18.340862,
+        "sign_index": 0,
+        "degree_in_sign": 18.340862,
+        "is_retrograde": false,
+        "speed": 0.099875
+      },
+      "Rahu": {
+        "longitude": 159.308886,
+        "sign_index": 5,
+        "degree_in_sign": 9.308886,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 339.308886,
+        "sign_index": 11,
+        "degree_in_sign": 9.308886,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

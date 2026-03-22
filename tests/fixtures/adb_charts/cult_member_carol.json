@@ -1,0 +1,108 @@
+{
+  "adb_id": 19529,
+  "name": "Cult Member Carol",
+  "given_name": "Cult Member Carol",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2427312.810417,
+    "year": 1933,
+    "month": 8,
+    "day": 27,
+    "calendar": "g",
+    "time": "23:27",
+    "time_type": "s",
+    "hour": 23.45,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Cult_Member_Carol",
+  "source_notes": "Dr. Glen Perry quotes her\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Cult follower"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 1.346823,
+    "lagna": 31.346823,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.930475,
+    "jd_ut": 2427312.810417,
+    "planets": {
+      "Sun": {
+        "longitude": 131.595348,
+        "sign_index": 4,
+        "degree_in_sign": 11.595348,
+        "is_retrograde": false,
+        "speed": 0.966204
+      },
+      "Moon": {
+        "longitude": 219.369401,
+        "sign_index": 7,
+        "degree_in_sign": 9.369401,
+        "is_retrograde": false,
+        "speed": 13.694568
+      },
+      "Mars": {
+        "longitude": 188.383067,
+        "sign_index": 6,
+        "degree_in_sign": 8.383067,
+        "is_retrograde": false,
+        "speed": 0.647812
+      },
+      "Mercury": {
+        "longitude": 117.824354,
+        "sign_index": 3,
+        "degree_in_sign": 27.824354,
+        "is_retrograde": false,
+        "speed": 1.794216
+      },
+      "Jupiter": {
+        "longitude": 154.353248,
+        "sign_index": 5,
+        "degree_in_sign": 4.353248,
+        "is_retrograde": false,
+        "speed": 0.206879
+      },
+      "Venus": {
+        "longitude": 165.228445,
+        "sign_index": 5,
+        "degree_in_sign": 15.228445,
+        "is_retrograde": false,
+        "speed": 1.199124
+      },
+      "Saturn": {
+        "longitude": 288.49649,
+        "sign_index": 9,
+        "degree_in_sign": 18.49649,
+        "is_retrograde": true,
+        "speed": -0.065437
+      },
+      "Rahu": {
+        "longitude": 305.300682,
+        "sign_index": 10,
+        "degree_in_sign": 5.300682,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 125.300682,
+        "sign_index": 4,
+        "degree_in_sign": 5.300682,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

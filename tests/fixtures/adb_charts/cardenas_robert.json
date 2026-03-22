@@ -1,0 +1,113 @@
+{
+  "adb_id": 86573,
+  "name": "Cardenas, Robert",
+  "given_name": "Robert Cardenas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422394.748241,
+    "year": 1920,
+    "month": 3,
+    "day": 10,
+    "calendar": "g",
+    "time": "23:59",
+    "time_type": "l",
+    "hour": 23.983333,
+    "time_unknown": false,
+    "place": "Mérida (Yucatan)",
+    "country": "Mexico",
+    "lat": 20.966667,
+    "lon": -89.616667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardenas,_Robert",
+  "source_notes": "Sy Scholfield provided birth registry entry from Yucatán state archives stating time of birth as \"a las doce de la noche del dia diez\" (at twelve o'clock at night on the tenth).\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Top executive",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 25.481103,
+    "lagna": 205.481103,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.742445,
+    "jd_ut": 2422394.748241,
+    "planets": {
+      "Sun": {
+        "longitude": 327.628809,
+        "sign_index": 10,
+        "degree_in_sign": 27.628809,
+        "is_retrograde": false,
+        "speed": 0.997882
+      },
+      "Moon": {
+        "longitude": 222.267902,
+        "sign_index": 7,
+        "degree_in_sign": 12.267902,
+        "is_retrograde": false,
+        "speed": 10.820164
+      },
+      "Mars": {
+        "longitude": 196.261628,
+        "sign_index": 6,
+        "degree_in_sign": 16.261628,
+        "is_retrograde": false,
+        "speed": 0.046554
+      },
+      "Mercury": {
+        "longitude": 341.930315,
+        "sign_index": 11,
+        "degree_in_sign": 11.930315,
+        "is_retrograde": true,
+        "speed": -0.055266
+      },
+      "Jupiter": {
+        "longitude": 106.248518,
+        "sign_index": 3,
+        "degree_in_sign": 16.248518,
+        "is_retrograde": true,
+        "speed": -0.073574
+      },
+      "Venus": {
+        "longitude": 298.177519,
+        "sign_index": 9,
+        "degree_in_sign": 28.177519,
+        "is_retrograde": false,
+        "speed": 1.226172
+      },
+      "Saturn": {
+        "longitude": 134.583394,
+        "sign_index": 4,
+        "degree_in_sign": 14.583394,
+        "is_retrograde": true,
+        "speed": -0.077028
+      },
+      "Rahu": {
+        "longitude": 205.919036,
+        "sign_index": 6,
+        "degree_in_sign": 25.919036,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 25.919036,
+        "sign_index": 0,
+        "degree_in_sign": 25.919036,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

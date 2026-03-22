@@ -1,0 +1,112 @@
+{
+  "adb_id": 81061,
+  "name": "Colonnetti, Gustavo",
+  "given_name": "Gustavo Colonnetti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410219.11463,
+    "year": 1886,
+    "month": 11,
+    "day": 8,
+    "calendar": "g",
+    "time": "15:35",
+    "time_type": "s",
+    "hour": 15.583333,
+    "time_unknown": false,
+    "place": "Turin",
+    "country": "Italy",
+    "lat": 45.05,
+    "lon": 7.666667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colonnetti,_Gustavo",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Administrator",
+    "Vocation : Engineer : Civil",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 28.165319,
+    "lagna": 328.165319,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.276989,
+    "jd_ut": 2410219.11463,
+    "planets": {
+      "Sun": {
+        "longitude": 203.879073,
+        "sign_index": 6,
+        "degree_in_sign": 23.879073,
+        "is_retrograde": false,
+        "speed": 1.004843
+      },
+      "Moon": {
+        "longitude": 347.549714,
+        "sign_index": 11,
+        "degree_in_sign": 17.549714,
+        "is_retrograde": false,
+        "speed": 12.413753
+      },
+      "Mars": {
+        "longitude": 242.533664,
+        "sign_index": 8,
+        "degree_in_sign": 2.533664,
+        "is_retrograde": false,
+        "speed": 0.749777
+      },
+      "Mercury": {
+        "longitude": 225.775189,
+        "sign_index": 7,
+        "degree_in_sign": 15.775189,
+        "is_retrograde": false,
+        "speed": 1.216828
+      },
+      "Jupiter": {
+        "longitude": 180.459143,
+        "sign_index": 6,
+        "degree_in_sign": 0.459143,
+        "is_retrograde": false,
+        "speed": 0.207708
+      },
+      "Venus": {
+        "longitude": 197.807075,
+        "sign_index": 6,
+        "degree_in_sign": 17.807075,
+        "is_retrograde": false,
+        "speed": 1.25557
+      },
+      "Saturn": {
+        "longitude": 90.23091,
+        "sign_index": 3,
+        "degree_in_sign": 0.23091,
+        "is_retrograde": true,
+        "speed": -0.008933
+      },
+      "Rahu": {
+        "longitude": 131.131495,
+        "sign_index": 4,
+        "degree_in_sign": 11.131495,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 311.131495,
+        "sign_index": 10,
+        "degree_in_sign": 11.131495,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

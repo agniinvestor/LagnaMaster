@@ -1,0 +1,108 @@
+{
+  "adb_id": 73814,
+  "name": "Cardenas Rodriguez, Antonio",
+  "given_name": "Antonio Cardenas Rodriguez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416378.152731,
+    "year": 1903,
+    "month": 9,
+    "day": 20,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Coahuila",
+    "country": "Mexico",
+    "lat": 32.2,
+    "lon": -114.983333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardenas_Rodriguez,_Antonio",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 9.147603,
+    "lagna": 159.147603,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.512431,
+    "jd_ut": 2416378.152731,
+    "planets": {
+      "Sun": {
+        "longitude": 153.976542,
+        "sign_index": 5,
+        "degree_in_sign": 3.976542,
+        "is_retrograde": false,
+        "speed": 0.977975
+      },
+      "Moon": {
+        "longitude": 147.51941,
+        "sign_index": 4,
+        "degree_in_sign": 27.51941,
+        "is_retrograde": false,
+        "speed": 11.618664
+      },
+      "Mars": {
+        "longitude": 216.165375,
+        "sign_index": 7,
+        "degree_in_sign": 6.165375,
+        "is_retrograde": false,
+        "speed": 0.68474
+      },
+      "Mercury": {
+        "longitude": 175.546433,
+        "sign_index": 5,
+        "degree_in_sign": 25.546433,
+        "is_retrograde": false,
+        "speed": 0.030071
+      },
+      "Jupiter": {
+        "longitude": 324.689735,
+        "sign_index": 10,
+        "degree_in_sign": 24.689735,
+        "is_retrograde": true,
+        "speed": -0.129559
+      },
+      "Venus": {
+        "longitude": 149.574991,
+        "sign_index": 4,
+        "degree_in_sign": 29.574991,
+        "is_retrograde": true,
+        "speed": -0.602643
+      },
+      "Saturn": {
+        "longitude": 280.431435,
+        "sign_index": 9,
+        "degree_in_sign": 10.431435,
+        "is_retrograde": true,
+        "speed": -0.028682
+      },
+      "Rahu": {
+        "longitude": 164.751054,
+        "sign_index": 5,
+        "degree_in_sign": 14.751054,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 344.751054,
+        "sign_index": 11,
+        "degree_in_sign": 14.751054,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

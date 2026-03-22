@@ -1,0 +1,108 @@
+{
+  "adb_id": 65057,
+  "name": "Compagnon, Jean",
+  "given_name": "Jean Compagnon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2392029.903287,
+    "year": 1837,
+    "month": 1,
+    "day": 20,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Reyrieux",
+    "country": "France",
+    "lat": 45.933333,
+    "lon": 4.816667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Compagnon,_Jean",
+  "source_notes": "Sy Scholfield quotes birth certificate No. 2 in the online Ain archives.\\n",
+  "categories": [
+    "Vocation : Building Trades : Construction work"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 15.971731,
+    "lagna": 315.971731,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.58177,
+    "jd_ut": 2392029.903287,
+    "planets": {
+      "Sun": {
+        "longitude": 278.6339,
+        "sign_index": 9,
+        "degree_in_sign": 8.6339,
+        "is_retrograde": false,
+        "speed": 1.016999
+      },
+      "Moon": {
+        "longitude": 83.134415,
+        "sign_index": 2,
+        "degree_in_sign": 23.134415,
+        "is_retrograde": false,
+        "speed": 15.601735
+      },
+      "Mars": {
+        "longitude": 121.748967,
+        "sign_index": 4,
+        "degree_in_sign": 1.748967,
+        "is_retrograde": true,
+        "speed": -0.303294
+      },
+      "Mercury": {
+        "longitude": 297.241417,
+        "sign_index": 9,
+        "degree_in_sign": 27.241417,
+        "is_retrograde": false,
+        "speed": 0.998163
+      },
+      "Jupiter": {
+        "longitude": 113.204393,
+        "sign_index": 3,
+        "degree_in_sign": 23.204393,
+        "is_retrograde": true,
+        "speed": -0.125246
+      },
+      "Venus": {
+        "longitude": 249.465433,
+        "sign_index": 8,
+        "degree_in_sign": 9.465433,
+        "is_retrograde": false,
+        "speed": 1.238728
+      },
+      "Saturn": {
+        "longitude": 204.515843,
+        "sign_index": 6,
+        "degree_in_sign": 24.515843,
+        "is_retrograde": false,
+        "speed": 0.05815
+      },
+      "Rahu": {
+        "longitude": 15.016797,
+        "sign_index": 0,
+        "degree_in_sign": 15.016797,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 195.016797,
+        "sign_index": 6,
+        "degree_in_sign": 15.016797,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

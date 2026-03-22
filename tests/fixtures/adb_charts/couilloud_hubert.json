@@ -1,0 +1,108 @@
+{
+  "adb_id": 69347,
+  "name": "Couilloud, Hubert",
+  "given_name": "Hubert Couilloud",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435368.236111,
+    "year": 1955,
+    "month": 9,
+    "day": 17,
+    "calendar": "g",
+    "time": "18:40",
+    "time_type": "s",
+    "hour": 18.666667,
+    "time_unknown": false,
+    "place": "Bourg en Bresse",
+    "country": "France",
+    "lat": 46.2,
+    "lon": 5.216667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couilloud,_Hubert",
+  "source_notes": "Didier Geslain archive, 'sommeliers' pdf file, p. 13.\\n",
+  "categories": [
+    "Vocation : Food and Beverage : Host/ Maitre d'"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 5.772474,
+    "lagna": 305.772474,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.238477,
+    "jd_ut": 2435368.236111,
+    "planets": {
+      "Sun": {
+        "longitude": 150.808878,
+        "sign_index": 5,
+        "degree_in_sign": 0.808878,
+        "is_retrograde": false,
+        "speed": 0.976126
+      },
+      "Moon": {
+        "longitude": 168.535571,
+        "sign_index": 5,
+        "degree_in_sign": 18.535571,
+        "is_retrograde": false,
+        "speed": 11.932141
+      },
+      "Mars": {
+        "longitude": 140.323935,
+        "sign_index": 4,
+        "degree_in_sign": 20.323935,
+        "is_retrograde": false,
+        "speed": 0.637345
+      },
+      "Mercury": {
+        "longitude": 177.225316,
+        "sign_index": 5,
+        "degree_in_sign": 27.225316,
+        "is_retrograde": false,
+        "speed": 1.005949
+      },
+      "Jupiter": {
+        "longitude": 117.346613,
+        "sign_index": 3,
+        "degree_in_sign": 27.346613,
+        "is_retrograde": false,
+        "speed": 0.200164
+      },
+      "Venus": {
+        "longitude": 155.252422,
+        "sign_index": 5,
+        "degree_in_sign": 5.252422,
+        "is_retrograde": false,
+        "speed": 1.244338
+      },
+      "Saturn": {
+        "longitude": 204.045769,
+        "sign_index": 6,
+        "degree_in_sign": 24.045769,
+        "is_retrograde": false,
+        "speed": 0.086323
+      },
+      "Rahu": {
+        "longitude": 238.42704,
+        "sign_index": 7,
+        "degree_in_sign": 28.42704,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 58.42704,
+        "sign_index": 1,
+        "degree_in_sign": 28.42704,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 82452,
+  "name": "Clark, Bert",
+  "given_name": "Bert Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426020.326389,
+    "year": 1930,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "13:50",
+    "time_type": "s",
+    "hour": 13.833333,
+    "time_unknown": false,
+    "place": "Wichita Falls",
+    "country": "Texas",
+    "lat": 33.916667,
+    "lon": -98.5
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Bert",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Vocation : Sports : Football",
+    "Vocation : Sports Business : Coach/ Manager/ Owner",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 12.478568,
+    "lagna": 42.478568,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.881059,
+    "jd_ut": 2426020.326389,
+    "planets": {
+      "Sun": {
+        "longitude": 300.513082,
+        "sign_index": 10,
+        "degree_in_sign": 0.513082,
+        "is_retrograde": false,
+        "speed": 1.010337
+      },
+      "Moon": {
+        "longitude": 113.450448,
+        "sign_index": 3,
+        "degree_in_sign": 23.450448,
+        "is_retrograde": false,
+        "speed": 19.633071
+      },
+      "Mars": {
+        "longitude": 281.819425,
+        "sign_index": 9,
+        "degree_in_sign": 11.819425,
+        "is_retrograde": false,
+        "speed": 0.776091
+      },
+      "Mercury": {
+        "longitude": 274.453596,
+        "sign_index": 9,
+        "degree_in_sign": 4.453596,
+        "is_retrograde": false,
+        "speed": 0.879766
+      },
+      "Jupiter": {
+        "longitude": 43.734151,
+        "sign_index": 1,
+        "degree_in_sign": 13.734151,
+        "is_retrograde": false,
+        "speed": 0.041721
+      },
+      "Venus": {
+        "longitude": 301.987901,
+        "sign_index": 10,
+        "degree_in_sign": 1.987901,
+        "is_retrograde": false,
+        "speed": 1.253086
+      },
+      "Saturn": {
+        "longitude": 255.510219,
+        "sign_index": 8,
+        "degree_in_sign": 15.510219,
+        "is_retrograde": false,
+        "speed": 0.0947
+      },
+      "Rahu": {
+        "longitude": 13.792095,
+        "sign_index": 0,
+        "degree_in_sign": 13.792095,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 193.792095,
+        "sign_index": 6,
+        "degree_in_sign": 13.792095,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

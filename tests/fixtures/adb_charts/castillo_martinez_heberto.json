@@ -1,0 +1,109 @@
+{
+  "adb_id": 71544,
+  "name": "Castillo Martinez, Heberto",
+  "given_name": "Heberto Castillo Martinez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425482.0,
+    "year": 1928,
+    "month": 8,
+    "day": 23,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Ixhuatlán del Café",
+    "country": "Mexico",
+    "lat": 19.066667,
+    "lon": -96.983333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castillo_Martinez,_Heberto",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Engineer : Civil",
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 11.037265,
+    "lagna": 101.037265,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.860477,
+    "jd_ut": 2425482.0,
+    "planets": {
+      "Sun": {
+        "longitude": 127.228569,
+        "sign_index": 4,
+        "degree_in_sign": 7.228569,
+        "is_retrograde": false,
+        "speed": 0.96416
+      },
+      "Moon": {
+        "longitude": 218.796778,
+        "sign_index": 7,
+        "degree_in_sign": 8.796778,
+        "is_retrograde": false,
+        "speed": 16.763237
+      },
+      "Mars": {
+        "longitude": 46.050199,
+        "sign_index": 1,
+        "degree_in_sign": 16.050199,
+        "is_retrograde": false,
+        "speed": 0.600584
+      },
+      "Mercury": {
+        "longitude": 134.387473,
+        "sign_index": 4,
+        "degree_in_sign": 14.387473,
+        "is_retrograde": false,
+        "speed": 1.868928
+      },
+      "Jupiter": {
+        "longitude": 17.487129,
+        "sign_index": 0,
+        "degree_in_sign": 17.487129,
+        "is_retrograde": false,
+        "speed": 0.0227
+      },
+      "Venus": {
+        "longitude": 141.771071,
+        "sign_index": 4,
+        "degree_in_sign": 21.771071,
+        "is_retrograde": false,
+        "speed": 1.233827
+      },
+      "Saturn": {
+        "longitude": 229.676849,
+        "sign_index": 7,
+        "degree_in_sign": 19.676849,
+        "is_retrograde": false,
+        "speed": 0.01056
+      },
+      "Rahu": {
+        "longitude": 42.319129,
+        "sign_index": 1,
+        "degree_in_sign": 12.319129,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 222.319129,
+        "sign_index": 7,
+        "degree_in_sign": 12.319129,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

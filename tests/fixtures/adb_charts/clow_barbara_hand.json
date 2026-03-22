@@ -1,0 +1,109 @@
+{
+  "adb_id": 47591,
+  "name": "Clow, Barbara Hand",
+  "given_name": "Barbara Hand Clow",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2430770.473611,
+    "year": 1943,
+    "month": 2,
+    "day": 14,
+    "calendar": "g",
+    "time": "19:22",
+    "time_type": "w",
+    "hour": 19.366667,
+    "time_unknown": false,
+    "place": "Saginaw",
+    "country": "Michigan",
+    "lat": 43.416667,
+    "lon": -83.95
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clow,_Barbara_Hand",
+  "source_notes": "Steinbrecher quotes her book \"Chiron.\"\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 13.597626,
+    "lagna": 103.597626,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.062676,
+    "jd_ut": 2430770.473611,
+    "planets": {
+      "Sun": {
+        "longitude": 302.344816,
+        "sign_index": 10,
+        "degree_in_sign": 2.344816,
+        "is_retrograde": false,
+        "speed": 1.009929
+      },
+      "Moon": {
+        "longitude": 65.342208,
+        "sign_index": 2,
+        "degree_in_sign": 5.342208,
+        "is_retrograde": false,
+        "speed": 8.687718
+      },
+      "Mars": {
+        "longitude": 260.958045,
+        "sign_index": 8,
+        "degree_in_sign": 20.958045,
+        "is_retrograde": false,
+        "speed": 0.736015
+      },
+      "Mercury": {
+        "longitude": 276.240743,
+        "sign_index": 9,
+        "degree_in_sign": 6.240743,
+        "is_retrograde": false,
+        "speed": 0.831306
+      },
+      "Jupiter": {
+        "longitude": 83.131773,
+        "sign_index": 2,
+        "degree_in_sign": 23.131773,
+        "is_retrograde": true,
+        "speed": -0.079329
+      },
+      "Venus": {
+        "longitude": 323.885115,
+        "sign_index": 10,
+        "degree_in_sign": 23.885115,
+        "is_retrograde": false,
+        "speed": 1.242849
+      },
+      "Saturn": {
+        "longitude": 42.597053,
+        "sign_index": 1,
+        "degree_in_sign": 12.597053,
+        "is_retrograde": false,
+        "speed": 0.016347
+      },
+      "Rahu": {
+        "longitude": 122.071949,
+        "sign_index": 4,
+        "degree_in_sign": 2.071949,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 302.071949,
+        "sign_index": 10,
+        "degree_in_sign": 2.071949,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

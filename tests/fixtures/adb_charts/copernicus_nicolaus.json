@@ -1,110 +1,114 @@
 {
-  "adb_slug": "Copernicus,_Nicolaus",
-  "name": "Nicolaus Copernicus",
-  "source": "astro-databank",
+  "adb_id": 1782,
+  "name": "Copernicus, Nicolaus",
+  "given_name": "Nicolaus Copernicus",
+  "gender": "m",
   "rodden_rating": "AA",
-  "adb_url": "https://www.astro.com/astro-databank/Copernicus,_Nicolaus",
+  "rodden_rank": 5,
   "birth_data": {
+    "jd_ut": 2259121.165741,
     "year": 1473,
-    "month": 1,
-    "day": 1,
-    "hour": 12.0,
-    "lat": 0.0,
-    "lon": 0.0,
-    "tz_offset": 0.0,
-    "ayanamsha": "lahiri"
+    "month": 2,
+    "day": 19,
+    "calendar": "j",
+    "time": "17:13",
+    "time_type": "l",
+    "hour": 17.216667,
+    "time_unknown": false,
+    "place": "Torun",
+    "country": "Poland",
+    "lat": 53.033333,
+    "lon": 18.583333
   },
-  "birth_place": "Poland",
-  "country": "Poland",
-  "data_trust_level": "low",
-  "assert_lagna": false,
-  "trust_note": "Stub — fetch blocked",
-  "expected": {},
-  "chart": {
-    "lagna": 355.57392040837004,
-    "lagna_sign": "Pisces",
-    "lagna_sign_index": 11,
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Copernicus,_Nicolaus",
+  "source_notes": "Constellations '77 quotes J. Scperkowicz, \"Nicolaus Copernicus,\" \"data from astrologers present at his birth\" (February 19 OS, 5:00 PM LAT).  Same in NN No.469.\\nTaeger IHL update 3 gives 16:48 LAT, quoting J. Mixa.\\n",
+  "categories": [
+    "Traits : Mind : Exceptional mind",
+    "Diagnoses : Major Diseases : Stroke",
+    "Vocation : Science : Astronomy",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : Historic figure",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 4.018361,
+    "lagna": 124.018361,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 16.506417,
+    "jd_ut": 2259121.165741,
     "planets": {
       "Sun": {
-        "longitude": 264.8434400363902,
-        "sign_index": 8,
-        "sign": "Sagittarius",
-        "degree_in_sign": 24.843440036390177,
-        "is_retrograde": false
+        "longitude": 323.689075,
+        "sign_index": 10,
+        "degree_in_sign": 23.689075,
+        "is_retrograde": false,
+        "speed": 0.999438
       },
       "Moon": {
-        "longitude": 177.1554242100147,
-        "sign_index": 5,
-        "sign": "Virgo",
-        "degree_in_sign": 27.1554242100147,
-        "is_retrograde": false
+        "longitude": 229.069595,
+        "sign_index": 7,
+        "degree_in_sign": 19.069595,
+        "is_retrograde": false,
+        "speed": 17.479544
       },
       "Mars": {
-        "longitude": 259.8729835697102,
-        "sign_index": 8,
-        "sign": "Sagittarius",
-        "degree_in_sign": 19.872983569710186,
-        "is_retrograde": false
+        "longitude": 305.213106,
+        "sign_index": 10,
+        "degree_in_sign": 5.213106,
+        "is_retrograde": false,
+        "speed": 0.785721
       },
       "Mercury": {
-        "longitude": 249.48089736005142,
-        "sign_index": 8,
-        "sign": "Sagittarius",
-        "degree_in_sign": 9.480897360051415,
-        "is_retrograde": false
+        "longitude": 339.993664,
+        "sign_index": 11,
+        "degree_in_sign": 9.993664,
+        "is_retrograde": false,
+        "speed": 0.277112
       },
       "Jupiter": {
-        "longitude": 220.25752911872314,
+        "longitude": 228.04804,
         "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 10.257529118723141,
-        "is_retrograde": false
+        "degree_in_sign": 18.04804,
+        "is_retrograde": false,
+        "speed": 0.064495
       },
       "Venus": {
-        "longitude": 278.3076698569521,
-        "sign_index": 9,
-        "sign": "Capricorn",
-        "degree_in_sign": 8.307669856952089,
-        "is_retrograde": false
+        "longitude": 350.66779,
+        "sign_index": 11,
+        "degree_in_sign": 20.66779,
+        "is_retrograde": false,
+        "speed": 1.227681
       },
       "Saturn": {
-        "longitude": 63.96273505753334,
+        "longitude": 62.104969,
         "sign_index": 2,
-        "sign": "Gemini",
-        "degree_in_sign": 3.9627350575333367,
-        "is_retrograde": true
+        "degree_in_sign": 2.104969,
+        "is_retrograde": false,
+        "speed": 0.019876
       },
       "Rahu": {
-        "longitude": 221.24423015841128,
+        "longitude": 218.161881,
         "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 11.244230158411284,
-        "is_retrograde": true
+        "degree_in_sign": 8.161881,
+        "is_retrograde": true,
+        "speed": -0.052993
       },
       "Ketu": {
-        "longitude": 41.244230158411256,
+        "longitude": 38.161881,
         "sign_index": 1,
-        "sign": "Taurus",
-        "degree_in_sign": 11.244230158411256,
-        "is_retrograde": true
+        "degree_in_sign": 8.161881,
+        "is_retrograde": true,
+        "speed": 0.0
       }
     }
-  },
-  "scores": {
-    "1": 1.0,
-    "2": 1.75,
-    "3": -1.125,
-    "4": -3.125,
-    "5": 2.75,
-    "6": 3.75,
-    "7": 0.75,
-    "8": 1.0,
-    "9": 0.75,
-    "10": 0.5,
-    "11": 2.25,
-    "12": 2.5
-  },
-  "fetch_status": "blocked",
-  "engine_version": "v3.0.0",
-  "computed_date": "2026-03-22"
+  }
 }

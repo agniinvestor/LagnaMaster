@@ -1,0 +1,108 @@
+{
+  "adb_id": 60147,
+  "name": "Contreau, Françoise",
+  "given_name": "Françoise Contreau",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431739.510417,
+    "year": 1945,
+    "month": 10,
+    "day": 11,
+    "calendar": "g",
+    "time": "01:15",
+    "time_type": "s",
+    "hour": 1.25,
+    "time_unknown": false,
+    "place": "Cherbourg",
+    "country": "France",
+    "lat": 49.65,
+    "lon": -1.65
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Contreau,_Françoise",
+  "source_notes": "Paddy de Jabrun quotes bc.\\n",
+  "categories": [
+    "Family : Relationship : Other relationship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 24.533405,
+    "lagna": 84.533405,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.099727,
+    "jd_ut": 2431739.510417,
+    "planets": {
+      "Sun": {
+        "longitude": 174.230288,
+        "sign_index": 5,
+        "degree_in_sign": 24.230288,
+        "is_retrograde": false,
+        "speed": 0.989364
+      },
+      "Moon": {
+        "longitude": 225.921852,
+        "sign_index": 7,
+        "degree_in_sign": 15.921852,
+        "is_retrograde": false,
+        "speed": 14.110307
+      },
+      "Mars": {
+        "longitude": 84.790132,
+        "sign_index": 2,
+        "degree_in_sign": 24.790132,
+        "is_retrograde": false,
+        "speed": 0.474595
+      },
+      "Mercury": {
+        "longitude": 180.39669,
+        "sign_index": 6,
+        "degree_in_sign": 0.39669,
+        "is_retrograde": false,
+        "speed": 1.651678
+      },
+      "Jupiter": {
+        "longitude": 166.833633,
+        "sign_index": 5,
+        "degree_in_sign": 16.833633,
+        "is_retrograde": false,
+        "speed": 0.215576
+      },
+      "Venus": {
+        "longitude": 146.847543,
+        "sign_index": 4,
+        "degree_in_sign": 26.847543,
+        "is_retrograde": false,
+        "speed": 1.228737
+      },
+      "Saturn": {
+        "longitude": 91.158407,
+        "sign_index": 3,
+        "degree_in_sign": 1.158407,
+        "is_retrograde": false,
+        "speed": 0.047975
+      },
+      "Rahu": {
+        "longitude": 70.720687,
+        "sign_index": 2,
+        "degree_in_sign": 10.720687,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 250.720687,
+        "sign_index": 8,
+        "degree_in_sign": 10.720687,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 81042,
+  "name": "Chéreau, Achille",
+  "given_name": "Achille Chéreau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2384939.86287,
+    "year": 1817,
+    "month": 8,
+    "day": 23,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Bar sur Seine",
+    "country": "France",
+    "lat": 48.116667,
+    "lon": 4.366667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chéreau,_Achille",
+  "source_notes": "Sy Scholfield submitted birth certificate (acte n°48) from the online Aube archives: \"neuf heures du matin\" (9 AM). No data in margin. Grazia Bordoni's Science file quotes Lescaut for same data. \\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Writers : Biographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 29.332172,
+    "lagna": 149.332172,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.310819,
+    "jd_ut": 2384939.86287,
+    "planets": {
+      "Sun": {
+        "longitude": 128.486545,
+        "sign_index": 4,
+        "degree_in_sign": 8.486545,
+        "is_retrograde": false,
+        "speed": 0.964586
+      },
+      "Moon": {
+        "longitude": 265.701051,
+        "sign_index": 8,
+        "degree_in_sign": 25.701051,
+        "is_retrograde": false,
+        "speed": 17.446221
+      },
+      "Mars": {
+        "longitude": 40.866845,
+        "sign_index": 1,
+        "degree_in_sign": 10.866845,
+        "is_retrograde": false,
+        "speed": 0.570522
+      },
+      "Mercury": {
+        "longitude": 147.178391,
+        "sign_index": 4,
+        "degree_in_sign": 27.178391,
+        "is_retrograde": false,
+        "speed": 1.591821
+      },
+      "Jupiter": {
+        "longitude": 220.594744,
+        "sign_index": 7,
+        "degree_in_sign": 10.594744,
+        "is_retrograde": false,
+        "speed": 0.074815
+      },
+      "Venus": {
+        "longitude": 84.255357,
+        "sign_index": 2,
+        "degree_in_sign": 24.255357,
+        "is_retrograde": false,
+        "speed": 1.07713
+      },
+      "Saturn": {
+        "longitude": 311.548162,
+        "sign_index": 10,
+        "degree_in_sign": 11.548162,
+        "is_retrograde": true,
+        "speed": -0.075667
+      },
+      "Rahu": {
+        "longitude": 30.733471,
+        "sign_index": 1,
+        "degree_in_sign": 0.733471,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 210.733471,
+        "sign_index": 7,
+        "degree_in_sign": 0.733471,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

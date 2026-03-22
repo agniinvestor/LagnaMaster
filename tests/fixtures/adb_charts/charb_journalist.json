@@ -1,0 +1,110 @@
+{
+  "adb_id": 62732,
+  "name": "Charb (journalist)",
+  "given_name": "Charb (journalist)",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439724.229167,
+    "year": 1967,
+    "month": 8,
+    "day": 21,
+    "calendar": "g",
+    "time": "18:30",
+    "time_type": "s",
+    "hour": 18.5,
+    "time_unknown": false,
+    "place": "Conflans Ste.Honorine",
+    "country": "France",
+    "lat": 48.983333,
+    "lon": 2.1
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charb_(journalist)",
+  "source_notes": "Collection Didier Geslain.\\n",
+  "categories": [
+    "Passions : Criminal Victim : Terrorism victim",
+    "Vocation : Art : Cartoonist",
+    "Mundane : Disasters : Deranged Actions"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 8.974512,
+    "lagna": 248.974512,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.405043,
+    "jd_ut": 2439724.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 124.561997,
+        "sign_index": 4,
+        "degree_in_sign": 4.561997,
+        "is_retrograde": false,
+        "speed": 0.962747
+      },
+      "Moon": {
+        "longitude": 323.521954,
+        "sign_index": 10,
+        "degree_in_sign": 23.521954,
+        "is_retrograde": false,
+        "speed": 13.505702
+      },
+      "Mars": {
+        "longitude": 204.421041,
+        "sign_index": 6,
+        "degree_in_sign": 24.421041,
+        "is_retrograde": false,
+        "speed": 0.602369
+      },
+      "Mercury": {
+        "longitude": 121.533473,
+        "sign_index": 4,
+        "degree_in_sign": 1.533473,
+        "is_retrograde": false,
+        "speed": 2.01347
+      },
+      "Jupiter": {
+        "longitude": 114.963776,
+        "sign_index": 3,
+        "degree_in_sign": 24.963776,
+        "is_retrograde": false,
+        "speed": 0.218025
+      },
+      "Venus": {
+        "longitude": 137.15131,
+        "sign_index": 4,
+        "degree_in_sign": 17.15131,
+        "is_retrograde": true,
+        "speed": -0.491553
+      },
+      "Saturn": {
+        "longitude": 348.42757,
+        "sign_index": 11,
+        "degree_in_sign": 18.42757,
+        "is_retrograde": true,
+        "speed": -0.044621
+      },
+      "Rahu": {
+        "longitude": 7.594043,
+        "sign_index": 0,
+        "degree_in_sign": 7.594043,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 187.594043,
+        "sign_index": 6,
+        "degree_in_sign": 7.594043,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

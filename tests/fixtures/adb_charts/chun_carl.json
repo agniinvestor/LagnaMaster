@@ -1,0 +1,109 @@
+{
+  "adb_id": 85152,
+  "name": "Chun, Carl",
+  "given_name": "Carl Chun",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2397764.486343,
+    "year": 1852,
+    "month": 10,
+    "day": 3,
+    "calendar": "g",
+    "time": "00:15",
+    "time_type": "l",
+    "hour": 0.25,
+    "time_unknown": false,
+    "place": "Frankfurt am Main",
+    "country": "Germany",
+    "lat": 50.116667,
+    "lon": 8.666667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chun,_Carl",
+  "source_notes": "Sy Scholfield provided birth registry entry from Hesse Archives: \"Nachts 12 1/4 Uhr.\"\\n",
+  "categories": [
+    "Vocation : Science : Biology",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 23.289448,
+    "lagna": 83.289448,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.800938,
+    "jd_ut": 2397764.486343,
+    "planets": {
+      "Sun": {
+        "longitude": 168.112411,
+        "sign_index": 5,
+        "degree_in_sign": 18.112411,
+        "is_retrograde": false,
+        "speed": 0.985561
+      },
+      "Moon": {
+        "longitude": 39.823687,
+        "sign_index": 1,
+        "degree_in_sign": 9.823687,
+        "is_retrograde": false,
+        "speed": 9.570046
+      },
+      "Mars": {
+        "longitude": 198.607017,
+        "sign_index": 6,
+        "degree_in_sign": 18.607017,
+        "is_retrograde": false,
+        "speed": 0.690611
+      },
+      "Mercury": {
+        "longitude": 156.584343,
+        "sign_index": 5,
+        "degree_in_sign": 6.584343,
+        "is_retrograde": false,
+        "speed": 1.749674
+      },
+      "Jupiter": {
+        "longitude": 210.68933,
+        "sign_index": 7,
+        "degree_in_sign": 0.68933,
+        "is_retrograde": false,
+        "speed": 0.189844
+      },
+      "Venus": {
+        "longitude": 121.940668,
+        "sign_index": 4,
+        "degree_in_sign": 1.940668,
+        "is_retrograde": false,
+        "speed": 1.000312
+      },
+      "Saturn": {
+        "longitude": 25.173607,
+        "sign_index": 0,
+        "degree_in_sign": 25.173607,
+        "is_retrograde": true,
+        "speed": -0.055671
+      },
+      "Rahu": {
+        "longitude": 71.12885,
+        "sign_index": 2,
+        "degree_in_sign": 11.12885,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 251.12885,
+        "sign_index": 8,
+        "degree_in_sign": 11.12885,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

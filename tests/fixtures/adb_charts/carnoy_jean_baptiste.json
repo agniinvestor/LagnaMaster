@@ -1,0 +1,109 @@
+{
+  "adb_id": 80981,
+  "name": "Carnoy, Jean Baptiste",
+  "given_name": "Jean Baptiste Carnoy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2391666.136435,
+    "year": 1836,
+    "month": 1,
+    "day": 22,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "l",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Tournai",
+    "country": "Belgium",
+    "lat": 50.6,
+    "lon": 3.383333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carnoy,_Jean_Baptiste",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. Born in Rumillies, a village in the Belgian province of Hainaut, and a sub-municipality of the Walloon city of Tournai.\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western",
+    "Vocation : Science : Biology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.851761,
+    "lagna": 67.851761,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.567868,
+    "jd_ut": 2391666.136435,
+    "planets": {
+      "Sun": {
+        "longitude": 280.146343,
+        "sign_index": 9,
+        "degree_in_sign": 10.146343,
+        "is_retrograde": false,
+        "speed": 1.01727
+      },
+      "Moon": {
+        "longitude": 335.626805,
+        "sign_index": 11,
+        "degree_in_sign": 5.626805,
+        "is_retrograde": false,
+        "speed": 9.709838
+      },
+      "Mars": {
+        "longitude": 271.671248,
+        "sign_index": 9,
+        "degree_in_sign": 1.671248,
+        "is_retrograde": false,
+        "speed": 0.77472
+      },
+      "Mercury": {
+        "longitude": 290.885538,
+        "sign_index": 9,
+        "degree_in_sign": 20.885538,
+        "is_retrograde": false,
+        "speed": 1.715957
+      },
+      "Jupiter": {
+        "longitude": 76.683166,
+        "sign_index": 2,
+        "degree_in_sign": 16.683166,
+        "is_retrograde": true,
+        "speed": -0.114173
+      },
+      "Venus": {
+        "longitude": 306.564028,
+        "sign_index": 10,
+        "degree_in_sign": 6.564028,
+        "is_retrograde": false,
+        "speed": 1.240964
+      },
+      "Saturn": {
+        "longitude": 193.288667,
+        "sign_index": 6,
+        "degree_in_sign": 13.288667,
+        "is_retrograde": false,
+        "speed": 0.037872
+      },
+      "Rahu": {
+        "longitude": 34.293591,
+        "sign_index": 1,
+        "degree_in_sign": 4.293591,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 214.293591,
+        "sign_index": 7,
+        "degree_in_sign": 4.293591,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

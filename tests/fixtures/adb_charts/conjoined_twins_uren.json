@@ -1,0 +1,109 @@
+{
+  "adb_id": 15107,
+  "name": "Conjoined Twins: Uren",
+  "given_name": "Conjoined Twins: Uren",
+  "gender": "u",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2446940.520833,
+    "year": 1987,
+    "month": 5,
+    "day": 25,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "s",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Sydney",
+    "country": "Australia",
+    "lat": -33.883333,
+    "lon": 151.216667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Uren",
+  "source_notes": "Victoria Shaw quotes news\\n",
+  "categories": [
+    "Personal : Birth : Conjoined twins",
+    "Personal : Death : Short Life less than 29 Yrs"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 6.322015,
+    "lagna": 66.322015,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.681,
+    "jd_ut": 2446940.520833,
+    "planets": {
+      "Sun": {
+        "longitude": 39.618795,
+        "sign_index": 1,
+        "degree_in_sign": 9.618795,
+        "is_retrograde": false,
+        "speed": 0.961049
+      },
+      "Moon": {
+        "longitude": 9.537557,
+        "sign_index": 0,
+        "degree_in_sign": 9.537557,
+        "is_retrograde": false,
+        "speed": 8.228439
+      },
+      "Mars": {
+        "longitude": 68.853282,
+        "sign_index": 2,
+        "degree_in_sign": 8.853282,
+        "is_retrograde": false,
+        "speed": 0.649727
+      },
+      "Mercury": {
+        "longitude": 58.238613,
+        "sign_index": 1,
+        "degree_in_sign": 28.238613,
+        "is_retrograde": false,
+        "speed": 1.697683
+      },
+      "Jupiter": {
+        "longitude": 355.709047,
+        "sign_index": 11,
+        "degree_in_sign": 25.709047,
+        "is_retrograde": false,
+        "speed": 0.20567
+      },
+      "Venus": {
+        "longitude": 15.438415,
+        "sign_index": 0,
+        "degree_in_sign": 15.438415,
+        "is_retrograde": false,
+        "speed": 1.212697
+      },
+      "Saturn": {
+        "longitude": 235.294277,
+        "sign_index": 7,
+        "degree_in_sign": 25.294277,
+        "is_retrograde": true,
+        "speed": -0.069799
+      },
+      "Rahu": {
+        "longitude": 345.188068,
+        "sign_index": 11,
+        "degree_in_sign": 15.188068,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 165.188068,
+        "sign_index": 5,
+        "degree_in_sign": 15.188068,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

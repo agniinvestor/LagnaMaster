@@ -1,0 +1,108 @@
+{
+  "adb_id": 86653,
+  "name": "Cauchy, Emmanuel",
+  "given_name": "Emmanuel Cauchy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436986.208333,
+    "year": 1960,
+    "month": 2,
+    "day": 21,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Grand Quevilly",
+    "country": "France",
+    "lat": 49.433333,
+    "lon": 1.05
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cauchy,_Emmanuel",
+  "source_notes": "Paddy de Jabrun quoted bc. Born in Petit Quevilly.\\n\\n",
+  "categories": [
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 12.181524,
+    "lagna": 102.181524,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.300344,
+    "jd_ut": 2436986.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 308.781289,
+        "sign_index": 10,
+        "degree_in_sign": 8.781289,
+        "is_retrograde": false,
+        "speed": 1.00758
+      },
+      "Moon": {
+        "longitude": 241.140102,
+        "sign_index": 8,
+        "degree_in_sign": 1.140102,
+        "is_retrograde": false,
+        "speed": 17.340493
+      },
+      "Mars": {
+        "longitude": 275.583871,
+        "sign_index": 9,
+        "degree_in_sign": 5.583871,
+        "is_retrograde": false,
+        "speed": 0.760657
+      },
+      "Mercury": {
+        "longitude": 326.591002,
+        "sign_index": 10,
+        "degree_in_sign": 26.591002,
+        "is_retrograde": false,
+        "speed": 1.248154
+      },
+      "Jupiter": {
+        "longitude": 245.405103,
+        "sign_index": 8,
+        "degree_in_sign": 5.405103,
+        "is_retrograde": false,
+        "speed": 0.15531
+      },
+      "Venus": {
+        "longitude": 277.93969,
+        "sign_index": 9,
+        "degree_in_sign": 7.93969,
+        "is_retrograde": false,
+        "speed": 1.229125
+      },
+      "Saturn": {
+        "longitude": 261.823835,
+        "sign_index": 8,
+        "degree_in_sign": 21.823835,
+        "is_retrograde": false,
+        "speed": 0.092668
+      },
+      "Rahu": {
+        "longitude": 152.687371,
+        "sign_index": 5,
+        "degree_in_sign": 2.687371,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 332.687371,
+        "sign_index": 11,
+        "degree_in_sign": 2.687371,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

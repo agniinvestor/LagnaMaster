@@ -1,0 +1,109 @@
+{
+  "adb_id": 2956,
+  "name": "Canteloube, Joseph",
+  "given_name": "Joseph Canteloube",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407643.94537,
+    "year": 1879,
+    "month": 10,
+    "day": 21,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Annonay",
+    "country": "France",
+    "lat": 45.233333,
+    "lon": 4.666667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canteloube,_Joseph",
+  "source_notes": "Gauquelin Vol 4/1659\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 5.592394,
+    "lagna": 215.592394,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.178553,
+    "jd_ut": 2407643.94537,
+    "planets": {
+      "Sun": {
+        "longitude": 185.494021,
+        "sign_index": 6,
+        "degree_in_sign": 5.494021,
+        "is_retrograde": false,
+        "speed": 0.995629
+      },
+      "Moon": {
+        "longitude": 265.804932,
+        "sign_index": 8,
+        "degree_in_sign": 25.804932,
+        "is_retrograde": false,
+        "speed": 13.809119
+      },
+      "Mars": {
+        "longitude": 35.035689,
+        "sign_index": 1,
+        "degree_in_sign": 5.035689,
+        "is_retrograde": true,
+        "speed": -0.214282
+      },
+      "Mercury": {
+        "longitude": 195.569976,
+        "sign_index": 6,
+        "degree_in_sign": 15.569976,
+        "is_retrograde": false,
+        "speed": 1.565984
+      },
+      "Jupiter": {
+        "longitude": 310.765336,
+        "sign_index": 10,
+        "degree_in_sign": 10.765336,
+        "is_retrograde": true,
+        "speed": -0.026726
+      },
+      "Venus": {
+        "longitude": 151.102403,
+        "sign_index": 5,
+        "degree_in_sign": 1.102403,
+        "is_retrograde": false,
+        "speed": 0.232165
+      },
+      "Saturn": {
+        "longitude": 348.958203,
+        "sign_index": 11,
+        "degree_in_sign": 18.958203,
+        "is_retrograde": true,
+        "speed": -0.073627
+      },
+      "Rahu": {
+        "longitude": 267.595182,
+        "sign_index": 8,
+        "degree_in_sign": 27.595182,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 87.595182,
+        "sign_index": 2,
+        "degree_in_sign": 27.595182,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

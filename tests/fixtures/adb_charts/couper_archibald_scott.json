@@ -1,0 +1,113 @@
+{
+  "adb_id": 94637,
+  "name": "Couper, Archibald Scott",
+  "given_name": "Archibald Scott Couper",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2389908.261574,
+    "year": 1831,
+    "month": 3,
+    "day": 31,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Kirkintilloch",
+    "country": "Scotland",
+    "lat": 55.95,
+    "lon": -4.166667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couper,_Archibald_Scott",
+  "source_notes": "Sy Scholfield downloaded civil birth registry entry, National Records of Scotland; copy on file [https://www.nrscotland.gov.uk/research/learning/hall-of-fame/hall-of-fame-a-z/couper-archibald].\\n",
+  "categories": [
+    "Traits : Body : Constitution sensitive",
+    "Diagnoses : Psychological : Nervous Breakdown",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Science : Chemistry",
+    "Notable : Famous : First in Field",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 22.556718,
+    "lagna": 142.556718,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.500688,
+    "jd_ut": 2389908.261574,
+    "planets": {
+      "Sun": {
+        "longitude": 348.793555,
+        "sign_index": 11,
+        "degree_in_sign": 18.793555,
+        "is_retrograde": false,
+        "speed": 0.985616
+      },
+      "Moon": {
+        "longitude": 207.35727,
+        "sign_index": 6,
+        "degree_in_sign": 27.35727,
+        "is_retrograde": false,
+        "speed": 13.910378
+      },
+      "Mars": {
+        "longitude": 48.132521,
+        "sign_index": 1,
+        "degree_in_sign": 18.132521,
+        "is_retrograde": false,
+        "speed": 0.620115
+      },
+      "Mercury": {
+        "longitude": 343.021398,
+        "sign_index": 11,
+        "degree_in_sign": 13.021398,
+        "is_retrograde": false,
+        "speed": 1.964768
+      },
+      "Jupiter": {
+        "longitude": 293.603752,
+        "sign_index": 9,
+        "degree_in_sign": 23.603752,
+        "is_retrograde": false,
+        "speed": 0.181603
+      },
+      "Venus": {
+        "longitude": 12.871938,
+        "sign_index": 0,
+        "degree_in_sign": 12.871938,
+        "is_retrograde": false,
+        "speed": 1.225079
+      },
+      "Saturn": {
+        "longitude": 123.975215,
+        "sign_index": 4,
+        "degree_in_sign": 3.975215,
+        "is_retrograde": true,
+        "speed": -0.045
+      },
+      "Rahu": {
+        "longitude": 127.447195,
+        "sign_index": 4,
+        "degree_in_sign": 7.447195,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 307.447195,
+        "sign_index": 10,
+        "degree_in_sign": 7.447195,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

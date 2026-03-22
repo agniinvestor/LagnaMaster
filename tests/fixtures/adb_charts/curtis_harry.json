@@ -1,0 +1,112 @@
+{
+  "adb_id": 6810,
+  "name": "Curtis, Harry",
+  "given_name": "Harry Curtis",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426255.128472,
+    "year": 1930,
+    "month": 10,
+    "day": 5,
+    "calendar": "g",
+    "time": "10:05",
+    "time_type": "s",
+    "hour": 10.083333,
+    "time_unknown": false,
+    "place": "Springfield",
+    "country": "Ohio",
+    "lat": 39.916667,
+    "lon": -83.816667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curtis,_Harry",
+  "source_notes": "LMR quotes him for B.C. 1982, a client\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Financial : Gain - Financial success in field",
+    "Vocation : Art : Stage/ Set design",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 6.518933,
+    "lagna": 186.518933,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.890036,
+    "jd_ut": 2426255.128472,
+    "planets": {
+      "Sun": {
+        "longitude": 168.760186,
+        "sign_index": 5,
+        "degree_in_sign": 18.760186,
+        "is_retrograde": false,
+        "speed": 0.985618
+      },
+      "Moon": {
+        "longitude": 324.316253,
+        "sign_index": 10,
+        "degree_in_sign": 24.316253,
+        "is_retrograde": false,
+        "speed": 15.784925
+      },
+      "Mars": {
+        "longitude": 89.490818,
+        "sign_index": 2,
+        "degree_in_sign": 29.490818,
+        "is_retrograde": false,
+        "speed": 0.534876
+      },
+      "Mercury": {
+        "longitude": 151.036421,
+        "sign_index": 5,
+        "degree_in_sign": 1.036421,
+        "is_retrograde": false,
+        "speed": 0.758169
+      },
+      "Jupiter": {
+        "longitude": 85.851022,
+        "sign_index": 2,
+        "degree_in_sign": 25.851022,
+        "is_retrograde": false,
+        "speed": 0.101903
+      },
+      "Venus": {
+        "longitude": 212.656714,
+        "sign_index": 7,
+        "degree_in_sign": 2.656714,
+        "is_retrograde": false,
+        "speed": 0.741544
+      },
+      "Saturn": {
+        "longitude": 252.904898,
+        "sign_index": 8,
+        "degree_in_sign": 12.904898,
+        "is_retrograde": false,
+        "speed": 0.041284
+      },
+      "Rahu": {
+        "longitude": 1.349444,
+        "sign_index": 0,
+        "degree_in_sign": 1.349444,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 181.349444,
+        "sign_index": 6,
+        "degree_in_sign": 1.349444,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

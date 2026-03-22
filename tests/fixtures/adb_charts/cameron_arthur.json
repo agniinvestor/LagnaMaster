@@ -1,0 +1,109 @@
+{
+  "adb_id": 50252,
+  "name": "Cameron, Arthur",
+  "given_name": "Arthur Cameron",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2453780.996528,
+    "year": 2006,
+    "month": 2,
+    "day": 14,
+    "calendar": "g",
+    "time": "11:55",
+    "time_type": "s",
+    "hour": 11.916667,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cameron,_Arthur",
+  "source_notes": "Sy Scholfield quotes article in The Birmingham Post February 18, 2006.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 8.336907,
+    "lagna": 38.336907,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.942609,
+    "jd_ut": 2453780.996528,
+    "planets": {
+      "Sun": {
+        "longitude": 301.704784,
+        "sign_index": 10,
+        "degree_in_sign": 1.704784,
+        "is_retrograde": false,
+        "speed": 1.010029
+      },
+      "Moon": {
+        "longitude": 135.87793,
+        "sign_index": 4,
+        "degree_in_sign": 15.87793,
+        "is_retrograde": false,
+        "speed": 14.86292
+      },
+      "Mars": {
+        "longitude": 34.365965,
+        "sign_index": 1,
+        "degree_in_sign": 4.365965,
+        "is_retrograde": false,
+        "speed": 0.485423
+      },
+      "Mercury": {
+        "longitude": 315.672665,
+        "sign_index": 10,
+        "degree_in_sign": 15.672665,
+        "is_retrograde": false,
+        "speed": 1.715102
+      },
+      "Jupiter": {
+        "longitude": 204.400117,
+        "sign_index": 6,
+        "degree_in_sign": 24.400117,
+        "is_retrograde": false,
+        "speed": 0.056109
+      },
+      "Venus": {
+        "longitude": 264.378918,
+        "sign_index": 8,
+        "degree_in_sign": 24.378918,
+        "is_retrograde": false,
+        "speed": 0.394558
+      },
+      "Saturn": {
+        "longitude": 102.524151,
+        "sign_index": 3,
+        "degree_in_sign": 12.524151,
+        "is_retrograde": true,
+        "speed": -0.074896
+      },
+      "Rahu": {
+        "longitude": 342.697477,
+        "sign_index": 11,
+        "degree_in_sign": 12.697477,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 162.697477,
+        "sign_index": 5,
+        "degree_in_sign": 12.697477,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

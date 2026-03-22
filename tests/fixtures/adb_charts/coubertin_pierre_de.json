@@ -1,0 +1,108 @@
+{
+  "adb_id": 78254,
+  "name": "Coubertin, Pierre (de)",
+  "given_name": "Pierre (de) Coubertin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2401507.201852,
+    "year": 1863,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coubertin,_Pierre_(de)",
+  "source_notes": "info@astrosesam.ch Didier Geslain, L'Astrologue 115.\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Historian"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.426345,
+    "lagna": 67.426345,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.943988,
+    "jd_ut": 2401507.201852,
+    "planets": {
+      "Sun": {
+        "longitude": 258.903356,
+        "sign_index": 8,
+        "degree_in_sign": 18.903356,
+        "is_retrograde": false,
+        "speed": 1.019008
+      },
+      "Moon": {
+        "longitude": 42.164036,
+        "sign_index": 1,
+        "degree_in_sign": 12.164036,
+        "is_retrograde": false,
+        "speed": 10.659326
+      },
+      "Mars": {
+        "longitude": 1.234688,
+        "sign_index": 0,
+        "degree_in_sign": 1.234688,
+        "is_retrograde": false,
+        "speed": 0.474955
+      },
+      "Mercury": {
+        "longitude": 264.713717,
+        "sign_index": 8,
+        "degree_in_sign": 24.713717,
+        "is_retrograde": false,
+        "speed": 1.635787
+      },
+      "Jupiter": {
+        "longitude": 182.949277,
+        "sign_index": 6,
+        "degree_in_sign": 2.949277,
+        "is_retrograde": false,
+        "speed": 0.115763
+      },
+      "Venus": {
+        "longitude": 264.125407,
+        "sign_index": 8,
+        "degree_in_sign": 24.125407,
+        "is_retrograde": false,
+        "speed": 1.257365
+      },
+      "Saturn": {
+        "longitude": 163.423825,
+        "sign_index": 5,
+        "degree_in_sign": 13.423825,
+        "is_retrograde": false,
+        "speed": 0.023745
+      },
+      "Rahu": {
+        "longitude": 232.794316,
+        "sign_index": 7,
+        "degree_in_sign": 22.794316,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 52.794316,
+        "sign_index": 1,
+        "degree_in_sign": 22.794316,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

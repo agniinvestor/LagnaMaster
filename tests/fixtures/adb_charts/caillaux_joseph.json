@@ -1,0 +1,110 @@
+{
+  "adb_id": 47716,
+  "name": "Caillaux, Joseph",
+  "given_name": "Joseph Caillaux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2401594.874444,
+    "year": 1863,
+    "month": 3,
+    "day": 30,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Le Mans",
+    "country": "France",
+    "lat": 48.0,
+    "lon": 0.2
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caillaux,_Joseph",
+  "source_notes": "Gauquelin NS 3/0246.\\n",
+  "categories": [
+    "Family : Relationship : Stress - Traumatic event",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Diplomat"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 7.509079,
+    "lagna": 37.509079,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.947339,
+    "jd_ut": 2401594.874444,
+    "planets": {
+      "Sun": {
+        "longitude": 347.222473,
+        "sign_index": 11,
+        "degree_in_sign": 17.222473,
+        "is_retrograde": false,
+        "speed": 0.986647
+      },
+      "Moon": {
+        "longitude": 110.399847,
+        "sign_index": 3,
+        "degree_in_sign": 20.399847,
+        "is_retrograde": false,
+        "speed": 15.737012
+      },
+      "Mars": {
+        "longitude": 50.63564,
+        "sign_index": 1,
+        "degree_in_sign": 20.63564,
+        "is_retrograde": false,
+        "speed": 0.604981
+      },
+      "Mercury": {
+        "longitude": 327.699132,
+        "sign_index": 10,
+        "degree_in_sign": 27.699132,
+        "is_retrograde": false,
+        "speed": 1.636922
+      },
+      "Jupiter": {
+        "longitude": 182.22649,
+        "sign_index": 6,
+        "degree_in_sign": 2.22649,
+        "is_retrograde": true,
+        "speed": -0.119722
+      },
+      "Venus": {
+        "longitude": 13.289973,
+        "sign_index": 0,
+        "degree_in_sign": 13.289973,
+        "is_retrograde": false,
+        "speed": 1.222201
+      },
+      "Saturn": {
+        "longitude": 159.672835,
+        "sign_index": 5,
+        "degree_in_sign": 9.672835,
+        "is_retrograde": true,
+        "speed": -0.077347
+      },
+      "Rahu": {
+        "longitude": 228.148357,
+        "sign_index": 7,
+        "degree_in_sign": 18.148357,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 48.148357,
+        "sign_index": 1,
+        "degree_in_sign": 18.148357,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

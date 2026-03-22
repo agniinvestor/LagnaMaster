@@ -1,0 +1,108 @@
+{
+  "adb_id": 76137,
+  "name": "Carrère, Claude",
+  "given_name": "Claude Carrère",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426332.336806,
+    "year": 1930,
+    "month": 12,
+    "day": 21,
+    "calendar": "g",
+    "time": "20:05",
+    "time_type": "s",
+    "hour": 20.083333,
+    "time_unknown": false,
+    "place": "Clermont",
+    "country": "France",
+    "lat": 49.383333,
+    "lon": 2.4
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrère,_Claude",
+  "source_notes": "Collection Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Manager/ Agent"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 3.408831,
+    "lagna": 93.408831,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.892988,
+    "jd_ut": 2426332.336806,
+    "planets": {
+      "Sun": {
+        "longitude": 246.362422,
+        "sign_index": 8,
+        "degree_in_sign": 6.362422,
+        "is_retrograde": false,
+        "speed": 1.018847
+      },
+      "Moon": {
+        "longitude": 266.345147,
+        "sign_index": 8,
+        "degree_in_sign": 26.345147,
+        "is_retrograde": false,
+        "speed": 13.353517
+      },
+      "Mars": {
+        "longitude": 113.849651,
+        "sign_index": 3,
+        "degree_in_sign": 23.849651,
+        "is_retrograde": true,
+        "speed": -0.043863
+      },
+      "Mercury": {
+        "longitude": 266.383614,
+        "sign_index": 8,
+        "degree_in_sign": 26.383614,
+        "is_retrograde": false,
+        "speed": 0.883832
+      },
+      "Jupiter": {
+        "longitude": 84.660202,
+        "sign_index": 2,
+        "degree_in_sign": 24.660202,
+        "is_retrograde": true,
+        "speed": -0.122892
+      },
+      "Venus": {
+        "longitude": 210.56056,
+        "sign_index": 7,
+        "degree_in_sign": 0.56056,
+        "is_retrograde": false,
+        "speed": 0.319256
+      },
+      "Saturn": {
+        "longitude": 259.622292,
+        "sign_index": 8,
+        "degree_in_sign": 19.622292,
+        "is_retrograde": false,
+        "speed": 0.116326
+      },
+      "Rahu": {
+        "longitude": 357.258014,
+        "sign_index": 11,
+        "degree_in_sign": 27.258014,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 177.258014,
+        "sign_index": 5,
+        "degree_in_sign": 27.258014,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

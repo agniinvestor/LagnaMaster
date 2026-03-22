@@ -1,0 +1,109 @@
+{
+  "adb_id": 67536,
+  "name": "Cayla, Véronique",
+  "given_name": "Véronique Cayla",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433467.954861,
+    "year": 1950,
+    "month": 7,
+    "day": 5,
+    "calendar": "g",
+    "time": "11:55",
+    "time_type": "s",
+    "hour": 11.916667,
+    "time_unknown": false,
+    "place": "St.Cloud",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.183333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cayla,_Véronique",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 78.\\n",
+  "categories": [
+    "Vocation : Politics : Government employee",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 12.795589,
+    "lagna": 132.795589,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.165816,
+    "jd_ut": 2433467.954861,
+    "planets": {
+      "Sun": {
+        "longitude": 79.677153,
+        "sign_index": 2,
+        "degree_in_sign": 19.677153,
+        "is_retrograde": false,
+        "speed": 0.953177
+      },
+      "Moon": {
+        "longitude": 330.070803,
+        "sign_index": 11,
+        "degree_in_sign": 0.070803,
+        "is_retrograde": false,
+        "speed": 12.837615
+      },
+      "Mars": {
+        "longitude": 166.980821,
+        "sign_index": 5,
+        "degree_in_sign": 16.980821,
+        "is_retrograde": false,
+        "speed": 0.485152
+      },
+      "Mercury": {
+        "longitude": 72.786974,
+        "sign_index": 2,
+        "degree_in_sign": 12.786974,
+        "is_retrograde": false,
+        "speed": 2.133397
+      },
+      "Jupiter": {
+        "longitude": 314.171593,
+        "sign_index": 10,
+        "degree_in_sign": 14.171593,
+        "is_retrograde": true,
+        "speed": -0.027196
+      },
+      "Venus": {
+        "longitude": 46.267288,
+        "sign_index": 1,
+        "degree_in_sign": 16.267288,
+        "is_retrograde": false,
+        "speed": 1.18196
+      },
+      "Saturn": {
+        "longitude": 141.554215,
+        "sign_index": 4,
+        "degree_in_sign": 21.554215,
+        "is_retrograde": false,
+        "speed": 0.079169
+      },
+      "Rahu": {
+        "longitude": 339.126853,
+        "sign_index": 11,
+        "degree_in_sign": 9.126853,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 159.126853,
+        "sign_index": 5,
+        "degree_in_sign": 9.126853,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

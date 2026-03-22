@@ -1,0 +1,108 @@
+{
+  "adb_id": 58272,
+  "name": "Consorti, Charlotte",
+  "given_name": "Charlotte Consorti",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443806.149306,
+    "year": 1978,
+    "month": 10,
+    "day": 24,
+    "calendar": "g",
+    "time": "16:35",
+    "time_type": "s",
+    "hour": 16.583333,
+    "time_unknown": false,
+    "place": "Levallois Perret",
+    "country": "France",
+    "lat": 48.9,
+    "lon": 2.3
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Consorti,_Charlotte",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Sports : Water sports"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 10.132566,
+    "lagna": 310.132566,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.561136,
+    "jd_ut": 2443806.149306,
+    "planets": {
+      "Sun": {
+        "longitude": 187.309785,
+        "sign_index": 6,
+        "degree_in_sign": 7.309785,
+        "is_retrograde": false,
+        "speed": 0.996399
+      },
+      "Moon": {
+        "longitude": 103.920628,
+        "sign_index": 3,
+        "degree_in_sign": 13.920628,
+        "is_retrograde": false,
+        "speed": 14.73433
+      },
+      "Mars": {
+        "longitude": 210.442854,
+        "sign_index": 7,
+        "degree_in_sign": 0.442854,
+        "is_retrograde": false,
+        "speed": 0.708816
+      },
+      "Mercury": {
+        "longitude": 202.516434,
+        "sign_index": 6,
+        "degree_in_sign": 22.516434,
+        "is_retrograde": false,
+        "speed": 1.490219
+      },
+      "Jupiter": {
+        "longitude": 103.864613,
+        "sign_index": 3,
+        "degree_in_sign": 13.864613,
+        "is_retrograde": false,
+        "speed": 0.097862
+      },
+      "Venus": {
+        "longitude": 208.405961,
+        "sign_index": 6,
+        "degree_in_sign": 28.405961,
+        "is_retrograde": true,
+        "speed": -0.258913
+      },
+      "Saturn": {
+        "longitude": 137.184261,
+        "sign_index": 4,
+        "degree_in_sign": 17.184261,
+        "is_retrograde": false,
+        "speed": 0.095966
+      },
+      "Rahu": {
+        "longitude": 151.284773,
+        "sign_index": 5,
+        "degree_in_sign": 1.284773,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 331.284773,
+        "sign_index": 11,
+        "degree_in_sign": 1.284773,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

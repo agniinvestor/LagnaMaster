@@ -1,0 +1,113 @@
+{
+  "adb_id": 50791,
+  "name": "Claus, Hugo",
+  "given_name": "Hugo Claus",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425707.375,
+    "year": 1929,
+    "month": 4,
+    "day": 5,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Brugge",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 3.233333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claus,_Hugo",
+  "source_notes": "Steinbrecher collection: Lescaut quotes demain 4 for birth record.\\n\\nMichaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_arts_medias-3.pdf].\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : News journalist/ Anchor",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 27.836386,
+    "lagna": 177.836386,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.869094,
+    "jd_ut": 2425707.375,
+    "planets": {
+      "Sun": {
+        "longitude": 352.714913,
+        "sign_index": 11,
+        "degree_in_sign": 22.714913,
+        "is_retrograde": false,
+        "speed": 0.984056
+      },
+      "Moon": {
+        "longitude": 302.769627,
+        "sign_index": 10,
+        "degree_in_sign": 2.769627,
+        "is_retrograde": false,
+        "speed": 16.044062
+      },
+      "Mars": {
+        "longitude": 78.119238,
+        "sign_index": 2,
+        "degree_in_sign": 18.119238,
+        "is_retrograde": false,
+        "speed": 0.468888
+      },
+      "Mercury": {
+        "longitude": 340.776757,
+        "sign_index": 11,
+        "degree_in_sign": 10.776757,
+        "is_retrograde": false,
+        "speed": 1.85808
+      },
+      "Jupiter": {
+        "longitude": 21.36767,
+        "sign_index": 0,
+        "degree_in_sign": 21.36767,
+        "is_retrograde": false,
+        "speed": 0.223163
+      },
+      "Venus": {
+        "longitude": 14.249369,
+        "sign_index": 0,
+        "degree_in_sign": 14.249369,
+        "is_retrograde": true,
+        "speed": -0.275336
+      },
+      "Saturn": {
+        "longitude": 247.64163,
+        "sign_index": 8,
+        "degree_in_sign": 7.64163,
+        "is_retrograde": false,
+        "speed": 0.006311
+      },
+      "Rahu": {
+        "longitude": 30.376039,
+        "sign_index": 1,
+        "degree_in_sign": 0.376039,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 210.376039,
+        "sign_index": 7,
+        "degree_in_sign": 0.376039,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

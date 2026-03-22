@@ -1,0 +1,109 @@
+{
+  "adb_id": 68317,
+  "name": "Capitant, René",
+  "given_name": "René Capitant",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415615.51434,
+    "year": 1901,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "La Tronche",
+    "country": "France",
+    "lat": 45.2,
+    "lon": 5.733333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capitant,_René",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 178.\\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 18.158103,
+    "lagna": 48.158103,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.483277,
+    "jd_ut": 2415615.51434,
+    "planets": {
+      "Sun": {
+        "longitude": 122.824839,
+        "sign_index": 4,
+        "degree_in_sign": 2.824839,
+        "is_retrograde": false,
+        "speed": 0.962634
+      },
+      "Moon": {
+        "longitude": 176.619472,
+        "sign_index": 5,
+        "degree_in_sign": 26.619472,
+        "is_retrograde": false,
+        "speed": 14.566379
+      },
+      "Mars": {
+        "longitude": 179.301103,
+        "sign_index": 5,
+        "degree_in_sign": 29.301103,
+        "is_retrograde": false,
+        "speed": 0.634335
+      },
+      "Mercury": {
+        "longitude": 113.677398,
+        "sign_index": 3,
+        "degree_in_sign": 23.677398,
+        "is_retrograde": false,
+        "speed": 1.985155
+      },
+      "Jupiter": {
+        "longitude": 250.959991,
+        "sign_index": 8,
+        "degree_in_sign": 10.959991,
+        "is_retrograde": true,
+        "speed": -0.037331
+      },
+      "Venus": {
+        "longitude": 152.058925,
+        "sign_index": 5,
+        "degree_in_sign": 2.058925,
+        "is_retrograde": false,
+        "speed": 1.210767
+      },
+      "Saturn": {
+        "longitude": 257.855599,
+        "sign_index": 8,
+        "degree_in_sign": 17.855599,
+        "is_retrograde": true,
+        "speed": -0.040766
+      },
+      "Rahu": {
+        "longitude": 205.164869,
+        "sign_index": 6,
+        "degree_in_sign": 25.164869,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 25.164869,
+        "sign_index": 0,
+        "degree_in_sign": 25.164869,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 64989,
+  "name": "Chaumont, André",
+  "given_name": "André Chaumont",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424347.885417,
+    "year": 1925,
+    "month": 7,
+    "day": 16,
+    "calendar": "g",
+    "time": "10:15",
+    "time_type": "d",
+    "hour": 10.25,
+    "time_unknown": false,
+    "place": "Besançon",
+    "country": "France",
+    "lat": 47.25,
+    "lon": 6.033333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaumont,_André",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 139.\\n",
+  "categories": [
+    "Vocation : Medical : Other Medical Vocations"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 5.823526,
+    "lagna": 125.823526,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.817117,
+    "jd_ut": 2424347.885417,
+    "planets": {
+      "Sun": {
+        "longitude": 90.483538,
+        "sign_index": 3,
+        "degree_in_sign": 0.483538,
+        "is_retrograde": false,
+        "speed": 0.954154
+      },
+      "Moon": {
+        "longitude": 40.803231,
+        "sign_index": 1,
+        "degree_in_sign": 10.803231,
+        "is_retrograde": false,
+        "speed": 8.509861
+      },
+      "Mars": {
+        "longitude": 109.801646,
+        "sign_index": 3,
+        "degree_in_sign": 19.801646,
+        "is_retrograde": false,
+        "speed": 0.630939
+      },
+      "Mercury": {
+        "longitude": 114.489167,
+        "sign_index": 3,
+        "degree_in_sign": 24.489167,
+        "is_retrograde": false,
+        "speed": 1.444457
+      },
+      "Jupiter": {
+        "longitude": 264.043763,
+        "sign_index": 8,
+        "degree_in_sign": 24.043763,
+        "is_retrograde": true,
+        "speed": -0.127283
+      },
+      "Venus": {
+        "longitude": 112.778051,
+        "sign_index": 3,
+        "degree_in_sign": 22.778051,
+        "is_retrograde": false,
+        "speed": 1.218502
+      },
+      "Saturn": {
+        "longitude": 194.828668,
+        "sign_index": 6,
+        "degree_in_sign": 14.828668,
+        "is_retrograde": false,
+        "speed": 0.007347
+      },
+      "Rahu": {
+        "longitude": 102.418222,
+        "sign_index": 3,
+        "degree_in_sign": 12.418222,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 282.418222,
+        "sign_index": 9,
+        "degree_in_sign": 12.418222,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

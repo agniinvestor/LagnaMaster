@@ -1,0 +1,108 @@
+{
+  "adb_id": 62904,
+  "name": "Cholet, Colette",
+  "given_name": "Colette Cholet",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426053.979167,
+    "year": 1930,
+    "month": 3,
+    "day": 18,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Amboise",
+    "country": "France",
+    "lat": 47.416667,
+    "lon": 0.983333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cholet,_Colette",
+  "source_notes": "Didier Geslain archive, 'Astrologues' pdf file, p. 57.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 28.787964,
+    "lagna": 58.787964,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.882345,
+    "jd_ut": 2426053.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 334.264617,
+        "sign_index": 11,
+        "degree_in_sign": 4.264617,
+        "is_retrograde": false,
+        "speed": 0.994015
+      },
+      "Moon": {
+        "longitude": 201.741664,
+        "sign_index": 6,
+        "degree_in_sign": 21.741664,
+        "is_retrograde": false,
+        "speed": 15.094007
+      },
+      "Mars": {
+        "longitude": 308.085073,
+        "sign_index": 10,
+        "degree_in_sign": 8.085073,
+        "is_retrograde": false,
+        "speed": 0.78251
+      },
+      "Mercury": {
+        "longitude": 321.400775,
+        "sign_index": 10,
+        "degree_in_sign": 21.400775,
+        "is_retrograde": false,
+        "speed": 1.758745
+      },
+      "Jupiter": {
+        "longitude": 46.811427,
+        "sign_index": 1,
+        "degree_in_sign": 16.811427,
+        "is_retrograde": false,
+        "speed": 0.135499
+      },
+      "Venus": {
+        "longitude": 344.011425,
+        "sign_index": 11,
+        "degree_in_sign": 14.011425,
+        "is_retrograde": false,
+        "speed": 1.243029
+      },
+      "Saturn": {
+        "longitude": 258.062313,
+        "sign_index": 8,
+        "degree_in_sign": 18.062313,
+        "is_retrograde": false,
+        "speed": 0.054059
+      },
+      "Rahu": {
+        "longitude": 12.008764,
+        "sign_index": 0,
+        "degree_in_sign": 12.008764,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 192.008764,
+        "sign_index": 6,
+        "degree_in_sign": 12.008764,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

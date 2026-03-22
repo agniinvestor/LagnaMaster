@@ -1,0 +1,109 @@
+{
+  "adb_id": 47720,
+  "name": "Cairoli, Benedetto",
+  "given_name": "Benedetto Cairoli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2387655.266204,
+    "year": 1825,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Pavia",
+    "country": "Italy",
+    "lat": 45.166667,
+    "lon": 9.166667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cairoli,_Benedetto",
+  "source_notes": "Bordoni quotes B.C.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 18.980113,
+    "lagna": 108.980113,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.414588,
+    "jd_ut": 2387655.266204,
+    "planets": {
+      "Sun": {
+        "longitude": 287.212706,
+        "sign_index": 9,
+        "degree_in_sign": 17.212706,
+        "is_retrograde": false,
+        "speed": 1.015163
+      },
+      "Moon": {
+        "longitude": 33.24483,
+        "sign_index": 1,
+        "degree_in_sign": 3.24483,
+        "is_retrograde": false,
+        "speed": 8.791827
+      },
+      "Mars": {
+        "longitude": 315.649233,
+        "sign_index": 10,
+        "degree_in_sign": 15.649233,
+        "is_retrograde": false,
+        "speed": 0.783677
+      },
+      "Mercury": {
+        "longitude": 266.128394,
+        "sign_index": 8,
+        "degree_in_sign": 26.128394,
+        "is_retrograde": false,
+        "speed": 0.043401
+      },
+      "Jupiter": {
+        "longitude": 107.188424,
+        "sign_index": 3,
+        "degree_in_sign": 17.188424,
+        "is_retrograde": true,
+        "speed": -0.133505
+      },
+      "Venus": {
+        "longitude": 329.908616,
+        "sign_index": 10,
+        "degree_in_sign": 29.908616,
+        "is_retrograde": false,
+        "speed": 1.166057
+      },
+      "Saturn": {
+        "longitude": 39.49893,
+        "sign_index": 1,
+        "degree_in_sign": 9.49893,
+        "is_retrograde": true,
+        "speed": -0.006205
+      },
+      "Rahu": {
+        "longitude": 246.838321,
+        "sign_index": 8,
+        "degree_in_sign": 6.838321,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 66.838321,
+        "sign_index": 2,
+        "degree_in_sign": 6.838321,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

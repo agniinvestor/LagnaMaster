@@ -1,0 +1,109 @@
+{
+  "adb_id": 67514,
+  "name": "Casanova, Jean-Claude",
+  "given_name": "Jean-Claude Casanova",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427599.666667,
+    "year": 1934,
+    "month": 6,
+    "day": 11,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "d",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Ajaccio",
+    "country": "France",
+    "lat": 41.916667,
+    "lon": 8.733333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casanova,_Jean-Claude",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 47.\\n",
+  "categories": [
+    "Vocation : Business : Economist",
+    "Vocation : Education : Other Education"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.017955,
+    "lagna": 35.017955,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.941442,
+    "jd_ut": 2427599.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 56.59807,
+        "sign_index": 1,
+        "degree_in_sign": 26.59807,
+        "is_retrograde": false,
+        "speed": 0.956085
+      },
+      "Moon": {
+        "longitude": 46.773072,
+        "sign_index": 1,
+        "degree_in_sign": 16.773072,
+        "is_retrograde": false,
+        "speed": 13.315107
+      },
+      "Mars": {
+        "longitude": 43.074902,
+        "sign_index": 1,
+        "degree_in_sign": 13.074902,
+        "is_retrograde": false,
+        "speed": 0.705661
+      },
+      "Mercury": {
+        "longitude": 80.723399,
+        "sign_index": 2,
+        "degree_in_sign": 20.723399,
+        "is_retrograde": false,
+        "speed": 1.139199
+      },
+      "Jupiter": {
+        "longitude": 170.330239,
+        "sign_index": 5,
+        "degree_in_sign": 20.330239,
+        "is_retrograde": false,
+        "speed": 0.001733
+      },
+      "Venus": {
+        "longitude": 17.05547,
+        "sign_index": 0,
+        "degree_in_sign": 17.05547,
+        "is_retrograde": false,
+        "speed": 1.150137
+      },
+      "Saturn": {
+        "longitude": 305.23596,
+        "sign_index": 10,
+        "degree_in_sign": 5.23596,
+        "is_retrograde": true,
+        "speed": -0.004094
+      },
+      "Rahu": {
+        "longitude": 290.099574,
+        "sign_index": 9,
+        "degree_in_sign": 20.099574,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 110.099574,
+        "sign_index": 3,
+        "degree_in_sign": 20.099574,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 50801,
+  "name": "Colinon, Maurice",
+  "given_name": "Maurice Colinon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423101.791667,
+    "year": 1922,
+    "month": 2,
+    "day": 16,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Château Thierry",
+    "country": "France",
+    "lat": 49.05,
+    "lon": 3.4
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colinon,_Maurice",
+  "source_notes": "Steinbrecher Collection: Gauquelin ns vol 3 no 0365\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Clairvoyant/ Clairaudient",
+    "Vocation : Entertainment : News journalist/ Anchor",
+    "Vocation : Healing Fields : Other Healing Fields",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 11.184745,
+    "lagna": 281.184745,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.769476,
+    "jd_ut": 2423101.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 304.066052,
+        "sign_index": 10,
+        "degree_in_sign": 4.066052,
+        "is_retrograde": false,
+        "speed": 1.009107
+      },
+      "Moon": {
+        "longitude": 182.729485,
+        "sign_index": 6,
+        "degree_in_sign": 2.729485,
+        "is_retrograde": false,
+        "speed": 11.577189
+      },
+      "Mars": {
+        "longitude": 216.011967,
+        "sign_index": 7,
+        "degree_in_sign": 6.011967,
+        "is_retrograde": false,
+        "speed": 0.513
+      },
+      "Mercury": {
+        "longitude": 300.030207,
+        "sign_index": 10,
+        "degree_in_sign": 0.030207,
+        "is_retrograde": true,
+        "speed": -1.132496
+      },
+      "Jupiter": {
+        "longitude": 175.846026,
+        "sign_index": 5,
+        "degree_in_sign": 25.846026,
+        "is_retrograde": true,
+        "speed": -0.041687
+      },
+      "Venus": {
+        "longitude": 305.762727,
+        "sign_index": 10,
+        "degree_in_sign": 5.762727,
+        "is_retrograde": false,
+        "speed": 1.252476
+      },
+      "Saturn": {
+        "longitude": 164.051412,
+        "sign_index": 5,
+        "degree_in_sign": 14.051412,
+        "is_retrograde": true,
+        "speed": -0.050095
+      },
+      "Rahu": {
+        "longitude": 168.451328,
+        "sign_index": 5,
+        "degree_in_sign": 18.451328,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 348.451328,
+        "sign_index": 11,
+        "degree_in_sign": 18.451328,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

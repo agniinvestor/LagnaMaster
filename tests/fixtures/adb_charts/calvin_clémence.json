@@ -1,0 +1,108 @@
+{
+  "adb_id": 88327,
+  "name": "Calvin, Clémence",
+  "given_name": "Clémence Calvin",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2448028.986111,
+    "year": 1990,
+    "month": 5,
+    "day": 17,
+    "calendar": "g",
+    "time": "13:40",
+    "time_type": "d",
+    "hour": 13.666667,
+    "time_unknown": false,
+    "place": "Vichy",
+    "country": "France",
+    "lat": 46.133333,
+    "lon": 3.433333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvin,_Clémence",
+  "source_notes": "Collection Didier Geslain\\n",
+  "categories": [
+    "Vocation : Sports : Track and Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 15.116198,
+    "lagna": 105.116198,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.722626,
+    "jd_ut": 2448028.986111,
+    "planets": {
+      "Sun": {
+        "longitude": 32.584573,
+        "sign_index": 1,
+        "degree_in_sign": 2.584573,
+        "is_retrograde": false,
+        "speed": 0.963509
+      },
+      "Moon": {
+        "longitude": 297.689106,
+        "sign_index": 9,
+        "degree_in_sign": 27.689106,
+        "is_retrograde": false,
+        "speed": 13.207105
+      },
+      "Mars": {
+        "longitude": 326.082249,
+        "sign_index": 10,
+        "degree_in_sign": 26.082249,
+        "is_retrograde": false,
+        "speed": 0.741842
+      },
+      "Mercury": {
+        "longitude": 14.197103,
+        "sign_index": 0,
+        "degree_in_sign": 14.197103,
+        "is_retrograde": false,
+        "speed": 0.030674
+      },
+      "Jupiter": {
+        "longitude": 76.194023,
+        "sign_index": 2,
+        "degree_in_sign": 16.194023,
+        "is_retrograde": false,
+        "speed": 0.191579
+      },
+      "Venus": {
+        "longitude": 351.360997,
+        "sign_index": 11,
+        "degree_in_sign": 21.360997,
+        "is_retrograde": false,
+        "speed": 1.143744
+      },
+      "Saturn": {
+        "longitude": 271.486814,
+        "sign_index": 9,
+        "degree_in_sign": 1.486814,
+        "is_retrograde": true,
+        "speed": -0.020082
+      },
+      "Rahu": {
+        "longitude": 287.508091,
+        "sign_index": 9,
+        "degree_in_sign": 17.508091,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 107.508091,
+        "sign_index": 3,
+        "degree_in_sign": 17.508091,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

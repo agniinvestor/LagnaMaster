@@ -1,0 +1,112 @@
+{
+  "adb_id": 78329,
+  "name": "Claude, Georges",
+  "given_name": "Georges Claude",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404329.660185,
+    "year": 1870,
+    "month": 9,
+    "day": 24,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claude,_Georges",
+  "source_notes": "Sy Scholfield forwarded birth certificate n°3988 from the online Paris municipal archives (11 arr., image 11/31): \"quatre heures du matin.\" Death data in margin. English Wikipedia incorrectly has 23 May 1960 as date of death.\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Prison sentence",
+    "Vocation : Business : Business owner",
+    "Vocation : Engineer : Chemical",
+    "Vocation : Science : Chemistry",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 26.116806,
+    "lagna": 116.116806,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.051869,
+    "jd_ut": 2404329.660185,
+    "planets": {
+      "Sun": {
+        "longitude": 158.83882,
+        "sign_index": 5,
+        "degree_in_sign": 8.83882,
+        "is_retrograde": false,
+        "speed": 0.980754
+      },
+      "Moon": {
+        "longitude": 144.420438,
+        "sign_index": 4,
+        "degree_in_sign": 24.420438,
+        "is_retrograde": false,
+        "speed": 15.355204
+      },
+      "Mars": {
+        "longitude": 107.462952,
+        "sign_index": 3,
+        "degree_in_sign": 17.462952,
+        "is_retrograde": false,
+        "speed": 0.610136
+      },
+      "Mercury": {
+        "longitude": 177.239169,
+        "sign_index": 5,
+        "degree_in_sign": 27.239169,
+        "is_retrograde": true,
+        "speed": -0.295353
+      },
+      "Jupiter": {
+        "longitude": 63.705904,
+        "sign_index": 2,
+        "degree_in_sign": 3.705904,
+        "is_retrograde": false,
+        "speed": 0.066978
+      },
+      "Venus": {
+        "longitude": 139.928735,
+        "sign_index": 4,
+        "degree_in_sign": 19.928735,
+        "is_retrograde": false,
+        "speed": 1.237425
+      },
+      "Saturn": {
+        "longitude": 240.522569,
+        "sign_index": 8,
+        "degree_in_sign": 0.522569,
+        "is_retrograde": false,
+        "speed": 0.045131
+      },
+      "Rahu": {
+        "longitude": 83.226215,
+        "sign_index": 2,
+        "degree_in_sign": 23.226215,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 263.226215,
+        "sign_index": 8,
+        "degree_in_sign": 23.226215,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

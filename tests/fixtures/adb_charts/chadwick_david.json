@@ -1,0 +1,117 @@
+{
+  "adb_id": 89925,
+  "name": "Chadwick, David",
+  "given_name": "David Chadwick",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424770.913194,
+    "year": 1926,
+    "month": 9,
+    "day": 12,
+    "calendar": "g",
+    "time": "01:55",
+    "time_type": "s",
+    "hour": 1.916667,
+    "time_unknown": false,
+    "place": "San Pedro",
+    "country": "California",
+    "lat": 33.733333,
+    "lon": -118.283333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chadwick,_David",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids - Noted",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Public speaker",
+    "Vocation : Education : Researcher",
+    "Vocation : Medical : Physician",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 16.921491,
+    "lagna": 76.921491,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.83329,
+    "jd_ut": 2424770.913194,
+    "planets": {
+      "Sun": {
+        "longitude": 146.04733,
+        "sign_index": 4,
+        "degree_in_sign": 26.04733,
+        "is_retrograde": false,
+        "speed": 0.973417
+      },
+      "Moon": {
+        "longitude": 203.171026,
+        "sign_index": 6,
+        "degree_in_sign": 23.171026,
+        "is_retrograde": false,
+        "speed": 16.308238
+      },
+      "Mars": {
+        "longitude": 24.651162,
+        "sign_index": 0,
+        "degree_in_sign": 24.651162,
+        "is_retrograde": false,
+        "speed": 0.226017
+      },
+      "Mercury": {
+        "longitude": 139.548884,
+        "sign_index": 4,
+        "degree_in_sign": 19.548884,
+        "is_retrograde": false,
+        "speed": 1.908349
+      },
+      "Jupiter": {
+        "longitude": 296.100581,
+        "sign_index": 9,
+        "degree_in_sign": 26.100581,
+        "is_retrograde": true,
+        "speed": -0.096413
+      },
+      "Venus": {
+        "longitude": 128.060659,
+        "sign_index": 4,
+        "degree_in_sign": 8.060659,
+        "is_retrograde": false,
+        "speed": 1.233751
+      },
+      "Saturn": {
+        "longitude": 208.530971,
+        "sign_index": 6,
+        "degree_in_sign": 28.530971,
+        "is_retrograde": false,
+        "speed": 0.074375
+      },
+      "Rahu": {
+        "longitude": 80.001099,
+        "sign_index": 2,
+        "degree_in_sign": 20.001099,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 260.001099,
+        "sign_index": 8,
+        "degree_in_sign": 20.001099,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

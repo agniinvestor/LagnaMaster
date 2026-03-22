@@ -1,0 +1,109 @@
+{
+  "adb_id": 93908,
+  "name": "Challiot, Maurice",
+  "given_name": "Maurice Challiot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406593.368562,
+    "year": 1876,
+    "month": 12,
+    "day": 4,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "l",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 8",
+    "country": "France",
+    "lat": 48.877778,
+    "lon": 2.317778
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Challiot,_Maurice",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_acteurs_muet-2.pdf]. \\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 1.567642,
+    "lagna": 91.567642,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.138395,
+    "jd_ut": 2406593.368562,
+    "planets": {
+      "Sun": {
+        "longitude": 230.9815,
+        "sign_index": 7,
+        "degree_in_sign": 20.9815,
+        "is_retrograde": false,
+        "speed": 1.015315
+      },
+      "Moon": {
+        "longitude": 99.149093,
+        "sign_index": 3,
+        "degree_in_sign": 9.149093,
+        "is_retrograde": false,
+        "speed": 14.774304
+      },
+      "Mars": {
+        "longitude": 191.314739,
+        "sign_index": 6,
+        "degree_in_sign": 11.314739,
+        "is_retrograde": false,
+        "speed": 0.647986
+      },
+      "Mercury": {
+        "longitude": 231.193184,
+        "sign_index": 7,
+        "degree_in_sign": 21.193184,
+        "is_retrograde": false,
+        "speed": 1.570387
+      },
+      "Jupiter": {
+        "longitude": 230.795649,
+        "sign_index": 7,
+        "degree_in_sign": 20.795649,
+        "is_retrograde": false,
+        "speed": 0.225228
+      },
+      "Venus": {
+        "longitude": 194.606674,
+        "sign_index": 6,
+        "degree_in_sign": 14.606674,
+        "is_retrograde": false,
+        "speed": 1.218676
+      },
+      "Saturn": {
+        "longitude": 310.033557,
+        "sign_index": 10,
+        "degree_in_sign": 10.033557,
+        "is_retrograde": false,
+        "speed": 0.051329
+      },
+      "Rahu": {
+        "longitude": 323.267483,
+        "sign_index": 10,
+        "degree_in_sign": 23.267483,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 143.267483,
+        "sign_index": 4,
+        "degree_in_sign": 23.267483,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 7402,
+  "name": "Capra, Frank Jr.",
+  "given_name": "Frank Jr. Capra",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427517.572222,
+    "year": 1934,
+    "month": 3,
+    "day": 20,
+    "calendar": "g",
+    "time": "17:44",
+    "time_type": "s",
+    "hour": 17.733333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capra,_Frank_Jr.",
+  "source_notes": "B.C. in hand from the Wilsons.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Sibling circumstances",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 10.447709,
+    "lagna": 130.447709,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.938303,
+    "jd_ut": 2427517.572222,
+    "planets": {
+      "Sun": {
+        "longitude": 336.82138,
+        "sign_index": 11,
+        "degree_in_sign": 6.82138,
+        "is_retrograde": false,
+        "speed": 0.993065
+      },
+      "Moon": {
+        "longitude": 44.420143,
+        "sign_index": 1,
+        "degree_in_sign": 14.420143,
+        "is_retrograde": false,
+        "speed": 7.821681
+      },
+      "Mars": {
+        "longitude": 342.245937,
+        "sign_index": 11,
+        "degree_in_sign": 12.245937,
+        "is_retrograde": false,
+        "speed": 0.773136
+      },
+      "Mercury": {
+        "longitude": 313.53167,
+        "sign_index": 10,
+        "degree_in_sign": 13.53167,
+        "is_retrograde": false,
+        "speed": 0.164905
+      },
+      "Jupiter": {
+        "longitude": 177.678821,
+        "sign_index": 5,
+        "degree_in_sign": 27.678821,
+        "is_retrograde": true,
+        "speed": -0.112561
+      },
+      "Venus": {
+        "longitude": 293.995963,
+        "sign_index": 9,
+        "degree_in_sign": 23.995963,
+        "is_retrograde": false,
+        "speed": 0.679636
+      },
+      "Saturn": {
+        "longitude": 300.571286,
+        "sign_index": 10,
+        "degree_in_sign": 0.571286,
+        "is_retrograde": false,
+        "speed": 0.104823
+      },
+      "Rahu": {
+        "longitude": 294.449929,
+        "sign_index": 9,
+        "degree_in_sign": 24.449929,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 114.449929,
+        "sign_index": 3,
+        "degree_in_sign": 24.449929,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

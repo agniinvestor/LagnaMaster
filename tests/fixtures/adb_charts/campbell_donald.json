@@ -1,0 +1,109 @@
+{
+  "adb_id": 77815,
+  "name": "Campbell, Donald",
+  "given_name": "Donald Campbell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429684.895833,
+    "year": 1940,
+    "month": 2,
+    "day": 25,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "d",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Wick",
+    "country": "Scotland",
+    "lat": 58.433333,
+    "lon": -3.1
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campbell,_Donald",
+  "source_notes": "Paul Wright quotes B.C.\\n",
+  "categories": [
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 18.050611,
+    "lagna": 18.050611,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.021169,
+    "jd_ut": 2429684.895833,
+    "planets": {
+      "Sun": {
+        "longitude": 312.61545,
+        "sign_index": 10,
+        "degree_in_sign": 12.61545,
+        "is_retrograde": false,
+        "speed": 1.005342
+      },
+      "Moon": {
+        "longitude": 160.636679,
+        "sign_index": 5,
+        "degree_in_sign": 10.636679,
+        "is_retrograde": false,
+        "speed": 16.004162
+      },
+      "Mars": {
+        "longitude": 12.608927,
+        "sign_index": 0,
+        "degree_in_sign": 12.608927,
+        "is_retrograde": false,
+        "speed": 0.675814
+      },
+      "Mercury": {
+        "longitude": 330.218778,
+        "sign_index": 11,
+        "degree_in_sign": 0.218778,
+        "is_retrograde": false,
+        "speed": 1.323147
+      },
+      "Jupiter": {
+        "longitude": 347.91335,
+        "sign_index": 11,
+        "degree_in_sign": 17.91335,
+        "is_retrograde": false,
+        "speed": 0.219311
+      },
+      "Venus": {
+        "longitude": 352.644847,
+        "sign_index": 11,
+        "degree_in_sign": 22.644847,
+        "is_retrograde": false,
+        "speed": 1.179221
+      },
+      "Saturn": {
+        "longitude": 4.424817,
+        "sign_index": 0,
+        "degree_in_sign": 4.424817,
+        "is_retrograde": false,
+        "speed": 0.094533
+      },
+      "Rahu": {
+        "longitude": 179.598961,
+        "sign_index": 5,
+        "degree_in_sign": 29.598961,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 359.598961,
+        "sign_index": 11,
+        "degree_in_sign": 29.598961,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

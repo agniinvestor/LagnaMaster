@@ -1,0 +1,108 @@
+{
+  "adb_id": 60686,
+  "name": "Carmichael, Alistair",
+  "given_name": "Alistair Carmichael",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435304.413194,
+    "year": 1955,
+    "month": 7,
+    "day": 15,
+    "calendar": "g",
+    "time": "22:55",
+    "time_type": "d",
+    "hour": 22.916667,
+    "time_unknown": false,
+    "place": "Port Ellen",
+    "country": "Scotland",
+    "lat": 55.65,
+    "lon": -6.2
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carmichael,_Alistair",
+  "source_notes": "AA journal July/August 2014, p. 37, quotes Caroline Gerard, from BC. \\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 4.291014,
+    "lagna": 274.291014,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.236037,
+    "jd_ut": 2435304.413194,
+    "planets": {
+      "Sun": {
+        "longitude": 89.380158,
+        "sign_index": 2,
+        "degree_in_sign": 29.380158,
+        "is_retrograde": false,
+        "speed": 0.954116
+      },
+      "Moon": {
+        "longitude": 39.876486,
+        "sign_index": 1,
+        "degree_in_sign": 9.876486,
+        "is_retrograde": false,
+        "speed": 18.016196
+      },
+      "Mars": {
+        "longitude": 99.655432,
+        "sign_index": 3,
+        "degree_in_sign": 9.655432,
+        "is_retrograde": false,
+        "speed": 0.640027
+      },
+      "Mercury": {
+        "longitude": 69.797767,
+        "sign_index": 2,
+        "degree_in_sign": 9.797767,
+        "is_retrograde": false,
+        "speed": 1.403408
+      },
+      "Jupiter": {
+        "longitude": 103.596499,
+        "sign_index": 3,
+        "degree_in_sign": 13.596499,
+        "is_retrograde": false,
+        "speed": 0.217194
+      },
+      "Venus": {
+        "longitude": 76.419919,
+        "sign_index": 2,
+        "degree_in_sign": 16.419919,
+        "is_retrograde": false,
+        "speed": 1.224064
+      },
+      "Saturn": {
+        "longitude": 201.269219,
+        "sign_index": 6,
+        "degree_in_sign": 21.269219,
+        "is_retrograde": true,
+        "speed": -0.005621
+      },
+      "Rahu": {
+        "longitude": 241.809148,
+        "sign_index": 8,
+        "degree_in_sign": 1.809148,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 61.809148,
+        "sign_index": 2,
+        "degree_in_sign": 1.809148,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

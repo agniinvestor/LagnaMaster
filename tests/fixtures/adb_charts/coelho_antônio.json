@@ -1,0 +1,113 @@
+{
+  "adb_id": 100200,
+  "name": "Coelho, Antônio",
+  "given_name": "Antônio Coelho",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2449857.951389,
+    "year": 1995,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "07:50",
+    "time_type": "s",
+    "hour": 7.833333,
+    "time_unknown": false,
+    "place": "Recife (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.053889,
+    "lon": -34.881111
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coelho,_Antônio",
+  "source_notes": "Birth entry from civil registry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Sibling circumstances",
+    "Vocation : Business : Economist",
+    "Vocation : Humanities+Social Sciences : Political Science",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 14.001093,
+    "lagna": 44.001093,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.792572,
+    "jd_ut": 2449857.951389,
+    "planets": {
+      "Sun": {
+        "longitude": 35.173117,
+        "sign_index": 1,
+        "degree_in_sign": 5.173117,
+        "is_retrograde": false,
+        "speed": 0.962287
+      },
+      "Moon": {
+        "longitude": 291.431923,
+        "sign_index": 9,
+        "degree_in_sign": 21.431923,
+        "is_retrograde": false,
+        "speed": 10.387761
+      },
+      "Mars": {
+        "longitude": 123.901562,
+        "sign_index": 4,
+        "degree_in_sign": 3.901562,
+        "is_retrograde": false,
+        "speed": 0.430895
+      },
+      "Mercury": {
+        "longitude": 53.955938,
+        "sign_index": 1,
+        "degree_in_sign": 23.955938,
+        "is_retrograde": false,
+        "speed": 0.313418
+      },
+      "Jupiter": {
+        "longitude": 228.225255,
+        "sign_index": 7,
+        "degree_in_sign": 18.225255,
+        "is_retrograde": true,
+        "speed": -0.120671
+      },
+      "Venus": {
+        "longitude": 10.421049,
+        "sign_index": 0,
+        "degree_in_sign": 10.421049,
+        "is_retrograde": false,
+        "speed": 1.212617
+      },
+      "Saturn": {
+        "longitude": 329.187451,
+        "sign_index": 10,
+        "degree_in_sign": 29.187451,
+        "is_retrograde": false,
+        "speed": 0.072304
+      },
+      "Rahu": {
+        "longitude": 190.587528,
+        "sign_index": 6,
+        "degree_in_sign": 10.587528,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 10.587528,
+        "sign_index": 0,
+        "degree_in_sign": 10.587528,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

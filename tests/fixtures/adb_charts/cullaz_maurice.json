@@ -1,0 +1,108 @@
+{
+  "adb_id": 65115,
+  "name": "Cullaz, Maurice",
+  "given_name": "Maurice Cullaz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419503.427083,
+    "year": 1912,
+    "month": 4,
+    "day": 10,
+    "calendar": "g",
+    "time": "22:15",
+    "time_type": "s",
+    "hour": 22.25,
+    "time_unknown": false,
+    "place": "Annecy",
+    "country": "France",
+    "lat": 45.9,
+    "lon": 6.116667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cullaz,_Maurice",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 295.\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 21.340015,
+    "lagna": 201.340015,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.631908,
+    "jd_ut": 2419503.427083,
+    "planets": {
+      "Sun": {
+        "longitude": 358.036173,
+        "sign_index": 11,
+        "degree_in_sign": 28.036173,
+        "is_retrograde": false,
+        "speed": 0.980791
+      },
+      "Moon": {
+        "longitude": 282.422571,
+        "sign_index": 9,
+        "degree_in_sign": 12.422571,
+        "is_retrograde": false,
+        "speed": 13.950252
+      },
+      "Mars": {
+        "longitude": 70.328902,
+        "sign_index": 2,
+        "degree_in_sign": 10.328902,
+        "is_retrograde": false,
+        "speed": 0.54677
+      },
+      "Mercury": {
+        "longitude": 5.524609,
+        "sign_index": 0,
+        "degree_in_sign": 5.524609,
+        "is_retrograde": true,
+        "speed": -0.531659
+      },
+      "Jupiter": {
+        "longitude": 232.629104,
+        "sign_index": 7,
+        "degree_in_sign": 22.629104,
+        "is_retrograde": true,
+        "speed": -0.029323
+      },
+      "Venus": {
+        "longitude": 335.295486,
+        "sign_index": 11,
+        "degree_in_sign": 5.295486,
+        "is_retrograde": false,
+        "speed": 1.22687
+      },
+      "Saturn": {
+        "longitude": 26.639279,
+        "sign_index": 0,
+        "degree_in_sign": 26.639279,
+        "is_retrograde": false,
+        "speed": 0.118894
+      },
+      "Rahu": {
+        "longitude": 359.136197,
+        "sign_index": 11,
+        "degree_in_sign": 29.136197,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 179.136197,
+        "sign_index": 5,
+        "degree_in_sign": 29.136197,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

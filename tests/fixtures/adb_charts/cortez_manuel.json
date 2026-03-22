@@ -1,0 +1,111 @@
+{
+  "adb_id": 43121,
+  "name": "Cortez, Manuel",
+  "given_name": "Manuel Cortez",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2412404.60875,
+    "year": 1892,
+    "month": 11,
+    "day": 1,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4,
+    "lon": -99.15
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortez,_Manuel",
+  "source_notes": "LMR quotes his son Robert for family records, born in rural village near Mexico City.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Bone",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Misc. : Physical labor"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 6.556521,
+    "lagna": 36.556521,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.360532,
+    "jd_ut": 2412404.60875,
+    "planets": {
+      "Sun": {
+        "longitude": 197.808256,
+        "sign_index": 6,
+        "degree_in_sign": 17.808256,
+        "is_retrograde": false,
+        "speed": 1.001818
+      },
+      "Moon": {
+        "longitude": 342.13697,
+        "sign_index": 11,
+        "degree_in_sign": 12.13697,
+        "is_retrograde": false,
+        "speed": 9.828002
+      },
+      "Mars": {
+        "longitude": 303.650254,
+        "sign_index": 10,
+        "degree_in_sign": 3.650254,
+        "is_retrograde": false,
+        "speed": 0.534664
+      },
+      "Mercury": {
+        "longitude": 212.705174,
+        "sign_index": 7,
+        "degree_in_sign": 2.705174,
+        "is_retrograde": false,
+        "speed": 1.482907
+      },
+      "Jupiter": {
+        "longitude": 354.92992,
+        "sign_index": 11,
+        "degree_in_sign": 24.92992,
+        "is_retrograde": true,
+        "speed": -0.113659
+      },
+      "Venus": {
+        "longitude": 156.221152,
+        "sign_index": 5,
+        "degree_in_sign": 6.221152,
+        "is_retrograde": false,
+        "speed": 1.16951
+      },
+      "Saturn": {
+        "longitude": 165.366575,
+        "sign_index": 5,
+        "degree_in_sign": 15.366575,
+        "is_retrograde": false,
+        "speed": 0.110874
+      },
+      "Rahu": {
+        "longitude": 15.317535,
+        "sign_index": 0,
+        "degree_in_sign": 15.317535,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 195.317535,
+        "sign_index": 6,
+        "degree_in_sign": 15.317535,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

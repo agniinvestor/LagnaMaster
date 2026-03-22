@@ -1,0 +1,106 @@
+{
+  "adb_id": 56439,
+  "name": "Cassez, Florence",
+  "given_name": "Florence Cassez",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442369.166667,
+    "year": 1974,
+    "month": 11,
+    "day": 17,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Lille",
+    "country": "France",
+    "lat": 50.633333,
+    "lon": 3.066667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassez,_Florence",
+  "source_notes": "Marc Brun quoted bc (FDAF).\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 10.336919,
+    "lagna": 10.336919,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.506185,
+    "jd_ut": 2442369.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 211.415135,
+        "sign_index": 7,
+        "degree_in_sign": 1.415135,
+        "is_retrograde": false,
+        "speed": 1.008567
+      },
+      "Moon": {
+        "longitude": 254.148544,
+        "sign_index": 8,
+        "degree_in_sign": 14.148544,
+        "is_retrograde": false,
+        "speed": 8.96637
+      },
+      "Mars": {
+        "longitude": 200.339774,
+        "sign_index": 6,
+        "degree_in_sign": 20.339774,
+        "is_retrograde": false,
+        "speed": 0.686683
+      },
+      "Mercury": {
+        "longitude": 194.236134,
+        "sign_index": 6,
+        "degree_in_sign": 14.236134,
+        "is_retrograde": false,
+        "speed": 1.423072
+      },
+      "Jupiter": {
+        "longitude": 314.816467,
+        "sign_index": 10,
+        "degree_in_sign": 14.816467,
+        "is_retrograde": false,
+        "speed": 0.04778
+      },
+      "Venus": {
+        "longitude": 214.189896,
+        "sign_index": 7,
+        "degree_in_sign": 4.189896,
+        "is_retrograde": false,
+        "speed": 1.256004
+      },
+      "Saturn": {
+        "longitude": 85.127519,
+        "sign_index": 2,
+        "degree_in_sign": 25.127519,
+        "is_retrograde": true,
+        "speed": -0.031489
+      },
+      "Rahu": {
+        "longitude": 227.433408,
+        "sign_index": 7,
+        "degree_in_sign": 17.433408,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 47.433408,
+        "sign_index": 1,
+        "degree_in_sign": 17.433408,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

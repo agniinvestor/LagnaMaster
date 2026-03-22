@@ -1,0 +1,113 @@
+{
+  "adb_id": 5367,
+  "name": "Chemist 5367",
+  "given_name": "Chemist 5367",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2422694.423611,
+    "year": 1921,
+    "month": 1,
+    "day": 5,
+    "calendar": "g",
+    "time": "00:10",
+    "time_type": "s",
+    "hour": 0.166667,
+    "time_unknown": false,
+    "place": "Danzig",
+    "country": "Poland",
+    "lat": 54.383333,
+    "lon": 18.666667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Chemist_5367",
+  "source_notes": "LMR client, 1980\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Traits : Mind : I.Q. high/ Mensa level",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Biology",
+    "Vocation : Science : Chemistry"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 17.975868,
+    "lagna": 137.975868,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.753902,
+    "jd_ut": 2422694.423611,
+    "planets": {
+      "Sun": {
+        "longitude": 261.29192,
+        "sign_index": 8,
+        "degree_in_sign": 21.29192,
+        "is_retrograde": false,
+        "speed": 1.019526
+      },
+      "Moon": {
+        "longitude": 214.783727,
+        "sign_index": 7,
+        "degree_in_sign": 4.783727,
+        "is_retrograde": false,
+        "speed": 14.624665
+      },
+      "Mars": {
+        "longitude": 306.936314,
+        "sign_index": 10,
+        "degree_in_sign": 6.936314,
+        "is_retrograde": false,
+        "speed": 0.776514
+      },
+      "Mercury": {
+        "longitude": 254.189529,
+        "sign_index": 8,
+        "degree_in_sign": 14.189529,
+        "is_retrograde": false,
+        "speed": 1.574157
+      },
+      "Jupiter": {
+        "longitude": 146.156101,
+        "sign_index": 4,
+        "degree_in_sign": 26.156101,
+        "is_retrograde": true,
+        "speed": -0.00337
+      },
+      "Venus": {
+        "longitude": 305.000073,
+        "sign_index": 10,
+        "degree_in_sign": 5.000073,
+        "is_retrograde": false,
+        "speed": 1.163077
+      },
+      "Saturn": {
+        "longitude": 152.044199,
+        "sign_index": 5,
+        "degree_in_sign": 2.044199,
+        "is_retrograde": true,
+        "speed": -0.00092
+      },
+      "Rahu": {
+        "longitude": 190.038612,
+        "sign_index": 6,
+        "degree_in_sign": 10.038612,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 10.038612,
+        "sign_index": 0,
+        "degree_in_sign": 10.038612,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

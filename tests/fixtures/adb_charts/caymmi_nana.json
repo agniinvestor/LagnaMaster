@@ -1,0 +1,109 @@
+{
+  "adb_id": 61829,
+  "name": "Caymmi, Nana",
+  "given_name": "Nana Caymmi",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2430114.541667,
+    "year": 1941,
+    "month": 4,
+    "day": 29,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Rio De Janeiro",
+    "country": "Brazil",
+    "lat": -22.883333,
+    "lon": -43.103611
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caymmi,_Nana",
+  "source_notes": "Sy Scholfield quotes from the biography \"Dorival Caymmi: o mar e o tempo\" by Stella Caymmi (Editora 34, 2001), p. 189: \"Entrou em trabalho de parto três dias antes, mas a menina só nasceria às 10 da noite, em 29 de abril de 1941.\"\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 1.850838,
+    "lagna": 241.850838,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.037596,
+    "jd_ut": 2430114.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 16.259541,
+        "sign_index": 0,
+        "degree_in_sign": 16.259541,
+        "is_retrograde": false,
+        "speed": 0.971199
+      },
+      "Moon": {
+        "longitude": 53.602438,
+        "sign_index": 1,
+        "degree_in_sign": 23.602438,
+        "is_retrograde": false,
+        "speed": 13.909072
+      },
+      "Mars": {
+        "longitude": 295.958036,
+        "sign_index": 9,
+        "degree_in_sign": 25.958036,
+        "is_retrograde": false,
+        "speed": 0.685262
+      },
+      "Mercury": {
+        "longitude": 9.159312,
+        "sign_index": 0,
+        "degree_in_sign": 9.159312,
+        "is_retrograde": false,
+        "speed": 2.052796
+      },
+      "Jupiter": {
+        "longitude": 30.731894,
+        "sign_index": 1,
+        "degree_in_sign": 0.731894,
+        "is_retrograde": false,
+        "speed": 0.232877
+      },
+      "Venus": {
+        "longitude": 19.064932,
+        "sign_index": 0,
+        "degree_in_sign": 19.064932,
+        "is_retrograde": false,
+        "speed": 1.23414
+      },
+      "Saturn": {
+        "longitude": 23.828958,
+        "sign_index": 0,
+        "degree_in_sign": 23.828958,
+        "is_retrograde": false,
+        "speed": 0.127954
+      },
+      "Rahu": {
+        "longitude": 156.831139,
+        "sign_index": 5,
+        "degree_in_sign": 6.831139,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 336.831139,
+        "sign_index": 11,
+        "degree_in_sign": 6.831139,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

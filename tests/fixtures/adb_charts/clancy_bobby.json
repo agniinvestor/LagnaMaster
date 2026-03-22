@@ -1,0 +1,119 @@
+{
+  "adb_id": 104501,
+  "name": "Clancy, Bobby",
+  "given_name": "Bobby Clancy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425012.4375,
+    "year": 1927,
+    "month": 5,
+    "day": 11,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "d",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Carrick-On-Suir",
+    "country": "Ireland",
+    "lat": 52.35,
+    "lon": -7.416667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clancy,_Bobby",
+  "source_notes": "Sy Scholfield quotes birth certificate in hand obtained by Kennedy O'Brien, copy on file (a twin). \\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Lung",
+    "Family : Childhood : Family large",
+    "Family : Childhood : Sibling circumstances",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids - Noted",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Birth : Twin, triplet, etc.",
+    "Vocation : Entertain/Music : Folk Music",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 1.220342,
+    "lagna": 211.220342,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.842524,
+    "jd_ut": 2425012.4375,
+    "planets": {
+      "Sun": {
+        "longitude": 27.384055,
+        "sign_index": 0,
+        "degree_in_sign": 27.384055,
+        "is_retrograde": false,
+        "speed": 0.965412
+      },
+      "Moon": {
+        "longitude": 153.816541,
+        "sign_index": 5,
+        "degree_in_sign": 3.816541,
+        "is_retrograde": false,
+        "speed": 8.983457
+      },
+      "Mars": {
+        "longitude": 81.82143,
+        "sign_index": 2,
+        "degree_in_sign": 21.82143,
+        "is_retrograde": false,
+        "speed": 0.595433
+      },
+      "Mercury": {
+        "longitude": 17.829379,
+        "sign_index": 0,
+        "degree_in_sign": 17.829379,
+        "is_retrograde": false,
+        "speed": 2.033443
+      },
+      "Jupiter": {
+        "longitude": 332.991903,
+        "sign_index": 11,
+        "degree_in_sign": 2.991903,
+        "is_retrograde": false,
+        "speed": 0.186483
+      },
+      "Venus": {
+        "longitude": 66.679587,
+        "sign_index": 2,
+        "degree_in_sign": 6.679587,
+        "is_retrograde": false,
+        "speed": 1.153563
+      },
+      "Saturn": {
+        "longitude": 222.611387,
+        "sign_index": 7,
+        "degree_in_sign": 12.611387,
+        "is_retrograde": true,
+        "speed": -0.070375
+      },
+      "Rahu": {
+        "longitude": 67.202223,
+        "sign_index": 2,
+        "degree_in_sign": 7.202223,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 247.202223,
+        "sign_index": 8,
+        "degree_in_sign": 7.202223,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

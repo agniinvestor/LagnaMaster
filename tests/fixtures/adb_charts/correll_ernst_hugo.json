@@ -1,0 +1,108 @@
+{
+  "adb_id": 78414,
+  "name": "Correll, Ernst Hugo",
+  "given_name": "Ernst Hugo Correll",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408605.562407,
+    "year": 1882,
+    "month": 6,
+    "day": 9,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Neuf Brisach",
+    "country": "France",
+    "lat": 48.016667,
+    "lon": 7.533333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Correll,_Ernst_Hugo",
+  "source_notes": "Sy Scholfield forwarded birth certificate n°14 from the online Haut-Rhin departmental archives, image 258/274: \"Vormittags um zwei Uhr\" (in the morning at two o'clock).\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 20.046579,
+    "lagna": 350.046579,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.215311,
+    "jd_ut": 2408605.562407,
+    "planets": {
+      "Sun": {
+        "longitude": 55.850703,
+        "sign_index": 1,
+        "degree_in_sign": 25.850703,
+        "is_retrograde": false,
+        "speed": 0.9559
+      },
+      "Moon": {
+        "longitude": 330.715223,
+        "sign_index": 11,
+        "degree_in_sign": 0.715223,
+        "is_retrograde": false,
+        "speed": 12.618208
+      },
+      "Mars": {
+        "longitude": 115.14927,
+        "sign_index": 3,
+        "degree_in_sign": 25.14927,
+        "is_retrograde": false,
+        "speed": 0.570119
+      },
+      "Mercury": {
+        "longitude": 77.627878,
+        "sign_index": 2,
+        "degree_in_sign": 17.627878,
+        "is_retrograde": false,
+        "speed": 0.475667
+      },
+      "Jupiter": {
+        "longitude": 48.824235,
+        "sign_index": 1,
+        "degree_in_sign": 18.824235,
+        "is_retrograde": false,
+        "speed": 0.232353
+      },
+      "Venus": {
+        "longitude": 83.180962,
+        "sign_index": 2,
+        "degree_in_sign": 23.180962,
+        "is_retrograde": false,
+        "speed": 1.206517
+      },
+      "Saturn": {
+        "longitude": 27.665897,
+        "sign_index": 0,
+        "degree_in_sign": 27.665897,
+        "is_retrograde": false,
+        "speed": 0.118632
+      },
+      "Rahu": {
+        "longitude": 216.637052,
+        "sign_index": 7,
+        "degree_in_sign": 6.637052,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 36.637052,
+        "sign_index": 1,
+        "degree_in_sign": 6.637052,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

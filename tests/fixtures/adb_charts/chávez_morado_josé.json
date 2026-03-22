@@ -1,0 +1,108 @@
+{
+  "adb_id": 70314,
+  "name": "Chávez Morado, José",
+  "given_name": "José Chávez Morado",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418311.270833,
+    "year": 1909,
+    "month": 1,
+    "day": 4,
+    "calendar": "g",
+    "time": "11:45",
+    "time_type": "l",
+    "hour": 11.75,
+    "time_unknown": false,
+    "place": "Guanajuato",
+    "country": "Mexico",
+    "lat": 21.016667,
+    "lon": -101.25
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chávez_Morado,_José",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 27.818535,
+    "lagna": 327.818535,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.586332,
+    "jd_ut": 2418311.270833,
+    "planets": {
+      "Sun": {
+        "longitude": 261.218659,
+        "sign_index": 8,
+        "degree_in_sign": 21.218659,
+        "is_retrograde": false,
+        "speed": 1.018946
+      },
+      "Moon": {
+        "longitude": 60.240103,
+        "sign_index": 2,
+        "degree_in_sign": 0.240103,
+        "is_retrograde": false,
+        "speed": 17.938458
+      },
+      "Mars": {
+        "longitude": 213.843094,
+        "sign_index": 7,
+        "degree_in_sign": 3.843094,
+        "is_retrograde": false,
+        "speed": 0.662265
+      },
+      "Mercury": {
+        "longitude": 268.141076,
+        "sign_index": 8,
+        "degree_in_sign": 28.141076,
+        "is_retrograde": false,
+        "speed": 1.64579
+      },
+      "Jupiter": {
+        "longitude": 141.897864,
+        "sign_index": 4,
+        "degree_in_sign": 21.897864,
+        "is_retrograde": true,
+        "speed": -0.016686
+      },
+      "Venus": {
+        "longitude": 233.475088,
+        "sign_index": 7,
+        "degree_in_sign": 23.475088,
+        "is_retrograde": false,
+        "speed": 1.243204
+      },
+      "Saturn": {
+        "longitude": 341.536454,
+        "sign_index": 11,
+        "degree_in_sign": 11.536454,
+        "is_retrograde": false,
+        "speed": 0.05091
+      },
+      "Rahu": {
+        "longitude": 62.311059,
+        "sign_index": 2,
+        "degree_in_sign": 2.311059,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 242.311059,
+        "sign_index": 8,
+        "degree_in_sign": 2.311059,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

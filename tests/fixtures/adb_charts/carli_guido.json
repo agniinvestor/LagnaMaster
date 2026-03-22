@@ -1,0 +1,111 @@
+{
+  "adb_id": 50748,
+  "name": "Carli, Guido",
+  "given_name": "Guido Carli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420220.444444,
+    "year": 1914,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "23:40",
+    "time_type": "s",
+    "hour": 23.666667,
+    "time_unknown": false,
+    "place": "Concesio",
+    "country": "Italy",
+    "lat": 45.633333,
+    "lon": 13.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carli,_Guido",
+  "source_notes": "Steinbrecher Collection: Bordoni/1/439 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Business : Banker/ Financier",
+    "Vocation : Business : Economist",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 21.554291,
+    "lagna": 201.554291,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.65932,
+    "jd_ut": 2420220.444444,
+    "planets": {
+      "Sun": {
+        "longitude": 344.749211,
+        "sign_index": 11,
+        "degree_in_sign": 14.749211,
+        "is_retrograde": false,
+        "speed": 0.988657
+      },
+      "Moon": {
+        "longitude": 7.885524,
+        "sign_index": 0,
+        "degree_in_sign": 7.885524,
+        "is_retrograde": false,
+        "speed": 14.839734
+      },
+      "Mars": {
+        "longitude": 82.449355,
+        "sign_index": 2,
+        "degree_in_sign": 22.449355,
+        "is_retrograde": false,
+        "speed": 0.372448
+      },
+      "Mercury": {
+        "longitude": 319.413132,
+        "sign_index": 10,
+        "degree_in_sign": 19.413132,
+        "is_retrograde": false,
+        "speed": 0.424197
+      },
+      "Jupiter": {
+        "longitude": 291.893252,
+        "sign_index": 9,
+        "degree_in_sign": 21.893252,
+        "is_retrograde": false,
+        "speed": 0.185898
+      },
+      "Venus": {
+        "longitude": 355.883255,
+        "sign_index": 11,
+        "degree_in_sign": 25.883255,
+        "is_retrograde": false,
+        "speed": 1.239779
+      },
+      "Saturn": {
+        "longitude": 50.382252,
+        "sign_index": 1,
+        "degree_in_sign": 20.382252,
+        "is_retrograde": false,
+        "speed": 0.077344
+      },
+      "Rahu": {
+        "longitude": 321.139943,
+        "sign_index": 10,
+        "degree_in_sign": 21.139943,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 141.139943,
+        "sign_index": 4,
+        "degree_in_sign": 21.139943,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

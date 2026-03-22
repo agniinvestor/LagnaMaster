@@ -1,0 +1,113 @@
+{
+  "adb_id": 79514,
+  "name": "Cresté, René",
+  "given_name": "René Cresté",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408420.32687,
+    "year": 1881,
+    "month": 12,
+    "day": 5,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 14",
+    "country": "France",
+    "lat": 48.833056,
+    "lon": 2.326667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cresté,_René",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Tuberculosis",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Military : Military service",
+    "Vocation : Military : Wounded"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 21.033949,
+    "lagna": 81.033949,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.20823,
+    "jd_ut": 2408420.32687,
+    "planets": {
+      "Sun": {
+        "longitude": 231.671037,
+        "sign_index": 7,
+        "degree_in_sign": 21.671037,
+        "is_retrograde": false,
+        "speed": 1.015278
+      },
+      "Moon": {
+        "longitude": 53.414922,
+        "sign_index": 1,
+        "degree_in_sign": 23.414922,
+        "is_retrograde": false,
+        "speed": 10.979231
+      },
+      "Mars": {
+        "longitude": 80.986424,
+        "sign_index": 2,
+        "degree_in_sign": 20.986424,
+        "is_retrograde": true,
+        "speed": -0.255276
+      },
+      "Mercury": {
+        "longitude": 214.804823,
+        "sign_index": 7,
+        "degree_in_sign": 4.804823,
+        "is_retrograde": false,
+        "speed": 1.444767
+      },
+      "Jupiter": {
+        "longitude": 26.081928,
+        "sign_index": 0,
+        "degree_in_sign": 26.081928,
+        "is_retrograde": true,
+        "speed": -0.109939
+      },
+      "Venus": {
+        "longitude": 213.196281,
+        "sign_index": 7,
+        "degree_in_sign": 3.196281,
+        "is_retrograde": false,
+        "speed": 1.25373
+      },
+      "Saturn": {
+        "longitude": 14.258243,
+        "sign_index": 0,
+        "degree_in_sign": 14.258243,
+        "is_retrograde": true,
+        "speed": -0.054874
+      },
+      "Rahu": {
+        "longitude": 226.453077,
+        "sign_index": 7,
+        "degree_in_sign": 16.453077,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 46.453077,
+        "sign_index": 1,
+        "degree_in_sign": 16.453077,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

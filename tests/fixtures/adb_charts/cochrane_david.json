@@ -1,0 +1,110 @@
+{
+  "adb_id": 47592,
+  "name": "Cochrane, David",
+  "given_name": "David Cochrane",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433037.851389,
+    "year": 1949,
+    "month": 5,
+    "day": 1,
+    "calendar": "g",
+    "time": "04:26",
+    "time_type": "d",
+    "hour": 4.433333,
+    "time_unknown": false,
+    "place": "East Meadow",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -73.566667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cochrane,_David",
+  "source_notes": "Steinbrecher quotes John Woodsmall, from Cochrane 10/1992. In Nov. 2015, Cochrane confirms that this is from BC.\\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Computer : Programmer",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 16.954197,
+    "lagna": 316.954197,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.149371,
+    "jd_ut": 2433037.851389,
+    "planets": {
+      "Sun": {
+        "longitude": 17.483687,
+        "sign_index": 0,
+        "degree_in_sign": 17.483687,
+        "is_retrograde": false,
+        "speed": 0.970524
+      },
+      "Moon": {
+        "longitude": 51.917766,
+        "sign_index": 1,
+        "degree_in_sign": 21.917766,
+        "is_retrograde": false,
+        "speed": 16.805885
+      },
+      "Mars": {
+        "longitude": 7.787601,
+        "sign_index": 0,
+        "degree_in_sign": 7.787601,
+        "is_retrograde": false,
+        "speed": 0.749835
+      },
+      "Mercury": {
+        "longitude": 35.657775,
+        "sign_index": 1,
+        "degree_in_sign": 5.657775,
+        "is_retrograde": false,
+        "speed": 1.627252
+      },
+      "Jupiter": {
+        "longitude": 278.443838,
+        "sign_index": 9,
+        "degree_in_sign": 8.443838,
+        "is_retrograde": false,
+        "speed": 0.059508
+      },
+      "Venus": {
+        "longitude": 21.248289,
+        "sign_index": 0,
+        "degree_in_sign": 21.248289,
+        "is_retrograde": false,
+        "speed": 1.233721
+      },
+      "Saturn": {
+        "longitude": 126.164779,
+        "sign_index": 4,
+        "degree_in_sign": 6.164779,
+        "is_retrograde": true,
+        "speed": -7.4e-05
+      },
+      "Rahu": {
+        "longitude": 1.918922,
+        "sign_index": 0,
+        "degree_in_sign": 1.918922,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 181.918922,
+        "sign_index": 6,
+        "degree_in_sign": 1.918922,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

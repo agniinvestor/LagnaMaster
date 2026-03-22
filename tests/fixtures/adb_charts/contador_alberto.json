@@ -1,0 +1,109 @@
+{
+  "adb_id": 55107,
+  "name": "Contador, Alberto",
+  "given_name": "Alberto Contador",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445310.239583,
+    "year": 1982,
+    "month": 12,
+    "day": 6,
+    "calendar": "g",
+    "time": "18:45",
+    "time_type": "s",
+    "hour": 18.75,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Contador,_Alberto",
+  "source_notes": "Paddy de Jabrun quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 12.218204,
+    "lagna": 42.218204,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.618655,
+    "jd_ut": 2445310.239583,
+    "planets": {
+      "Sun": {
+        "longitude": 230.664894,
+        "sign_index": 7,
+        "degree_in_sign": 20.664894,
+        "is_retrograde": false,
+        "speed": 1.015157
+      },
+      "Moon": {
+        "longitude": 129.157076,
+        "sign_index": 4,
+        "degree_in_sign": 9.157076,
+        "is_retrograde": false,
+        "speed": 18.171462
+      },
+      "Mars": {
+        "longitude": 273.650621,
+        "sign_index": 9,
+        "degree_in_sign": 3.650621,
+        "is_retrograde": false,
+        "speed": 0.775647
+      },
+      "Mercury": {
+        "longitude": 240.031042,
+        "sign_index": 8,
+        "degree_in_sign": 0.031042,
+        "is_retrograde": false,
+        "speed": 1.553204
+      },
+      "Jupiter": {
+        "longitude": 212.335063,
+        "sign_index": 7,
+        "degree_in_sign": 2.335063,
+        "is_retrograde": false,
+        "speed": 0.215657
+      },
+      "Venus": {
+        "longitude": 238.714344,
+        "sign_index": 7,
+        "degree_in_sign": 28.714344,
+        "is_retrograde": false,
+        "speed": 1.25605
+      },
+      "Saturn": {
+        "longitude": 187.133622,
+        "sign_index": 6,
+        "degree_in_sign": 7.133622,
+        "is_retrograde": false,
+        "speed": 0.099058
+      },
+      "Rahu": {
+        "longitude": 71.579975,
+        "sign_index": 2,
+        "degree_in_sign": 11.579975,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 251.579975,
+        "sign_index": 8,
+        "degree_in_sign": 11.579975,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

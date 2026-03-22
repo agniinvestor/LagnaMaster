@@ -1,0 +1,110 @@
+{
+  "adb_id": 64944,
+  "name": "Castaing, Michel",
+  "given_name": "Michel Castaing",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421679.0,
+    "year": 1918,
+    "month": 3,
+    "day": 26,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "d",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Toulouse",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castaing,_Michel",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 70.\\n",
+  "categories": [
+    "Vocation : Business/Marketing : Sales",
+    "Vocation : Education : Researcher",
+    "Vocation : Humanities+Social Sciences : Historian"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 8.946983,
+    "lagna": 68.946983,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.715081,
+    "jd_ut": 2421679.0,
+    "planets": {
+      "Sun": {
+        "longitude": 342.299841,
+        "sign_index": 11,
+        "degree_in_sign": 12.299841,
+        "is_retrograde": false,
+        "speed": 0.989407
+      },
+      "Moon": {
+        "longitude": 150.174005,
+        "sign_index": 5,
+        "degree_in_sign": 0.174005,
+        "is_retrograde": false,
+        "speed": 15.409061
+      },
+      "Mars": {
+        "longitude": 146.879601,
+        "sign_index": 4,
+        "degree_in_sign": 26.879601,
+        "is_retrograde": true,
+        "speed": -0.355142
+      },
+      "Mercury": {
+        "longitude": 355.411083,
+        "sign_index": 11,
+        "degree_in_sign": 25.411083,
+        "is_retrograde": false,
+        "speed": 1.878306
+      },
+      "Jupiter": {
+        "longitude": 44.030361,
+        "sign_index": 1,
+        "degree_in_sign": 14.030361,
+        "is_retrograde": false,
+        "speed": 0.162731
+      },
+      "Venus": {
+        "longitude": 299.3359,
+        "sign_index": 9,
+        "degree_in_sign": 29.3359,
+        "is_retrograde": false,
+        "speed": 0.68691
+      },
+      "Saturn": {
+        "longitude": 105.072431,
+        "sign_index": 3,
+        "degree_in_sign": 15.072431,
+        "is_retrograde": true,
+        "speed": -0.025243
+      },
+      "Rahu": {
+        "longitude": 243.848031,
+        "sign_index": 8,
+        "degree_in_sign": 3.848031,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 63.848031,
+        "sign_index": 2,
+        "degree_in_sign": 3.848031,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

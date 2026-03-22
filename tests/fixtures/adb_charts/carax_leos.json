@@ -1,0 +1,111 @@
+{
+  "adb_id": 57123,
+  "name": "Carax, Leos",
+  "given_name": "Leos Carax",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437261.295139,
+    "year": 1960,
+    "month": 11,
+    "day": 22,
+    "calendar": "g",
+    "time": "20:05",
+    "time_type": "s",
+    "hour": 20.083333,
+    "time_unknown": false,
+    "place": "Suresnes",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.233333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carax,_Leos",
+  "source_notes": "Didier Geslain archive gives his name from BC as Alex Christophe Dupont, son of journalist Georges Louis Dupont and New York-born Joan Elizabeth Ossermann.\\n",
+  "categories": [
+    "Personal : Misc. : Changed name",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.313644,
+    "lagna": 60.313644,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.310863,
+    "jd_ut": 2437261.295139,
+    "planets": {
+      "Sun": {
+        "longitude": 217.187166,
+        "sign_index": 7,
+        "degree_in_sign": 7.187166,
+        "is_retrograde": false,
+        "speed": 1.011091
+      },
+      "Moon": {
+        "longitude": 268.749373,
+        "sign_index": 8,
+        "degree_in_sign": 28.749373,
+        "is_retrograde": false,
+        "speed": 12.546302
+      },
+      "Mars": {
+        "longitude": 85.314552,
+        "sign_index": 2,
+        "degree_in_sign": 25.314552,
+        "is_retrograde": true,
+        "speed": -0.029235
+      },
+      "Mercury": {
+        "longitude": 197.551603,
+        "sign_index": 6,
+        "degree_in_sign": 17.551603,
+        "is_retrograde": false,
+        "speed": 0.866019
+      },
+      "Jupiter": {
+        "longitude": 252.000006,
+        "sign_index": 8,
+        "degree_in_sign": 12.000006,
+        "is_retrograde": false,
+        "speed": 0.209574
+      },
+      "Venus": {
+        "longitude": 255.662142,
+        "sign_index": 8,
+        "degree_in_sign": 15.662142,
+        "is_retrograde": false,
+        "speed": 1.206105
+      },
+      "Saturn": {
+        "longitude": 262.016087,
+        "sign_index": 8,
+        "degree_in_sign": 22.016087,
+        "is_retrograde": false,
+        "speed": 0.094922
+      },
+      "Rahu": {
+        "longitude": 138.109958,
+        "sign_index": 4,
+        "degree_in_sign": 18.109958,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 318.109958,
+        "sign_index": 10,
+        "degree_in_sign": 18.109958,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

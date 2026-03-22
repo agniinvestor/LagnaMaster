@@ -1,0 +1,115 @@
+{
+  "adb_id": 96746,
+  "name": "Clark, Sam",
+  "given_name": "Sam Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2447086.600694,
+    "year": 1987,
+    "month": 10,
+    "day": 18,
+    "calendar": "g",
+    "time": "11:55",
+    "time_type": "s",
+    "hour": 11.916667,
+    "time_unknown": false,
+    "place": "Adelaide",
+    "country": "Australia",
+    "lat": -34.916667,
+    "lon": 138.583333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "vir",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Sam",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Advertiser'' (Adelaide), 19 October 1987, page 44, born at Burnside.\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 15.541622,
+    "lagna": 255.541622,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.686587,
+    "jd_ut": 2447086.600694,
+    "planets": {
+      "Sun": {
+        "longitude": 180.487564,
+        "sign_index": 6,
+        "degree_in_sign": 0.487564,
+        "is_retrograde": false,
+        "speed": 0.992772
+      },
+      "Moon": {
+        "longitude": 126.233086,
+        "sign_index": 4,
+        "degree_in_sign": 6.233086,
+        "is_retrograde": false,
+        "speed": 9.425613
+      },
+      "Mars": {
+        "longitude": 162.289065,
+        "sign_index": 5,
+        "degree_in_sign": 12.289065,
+        "is_retrograde": false,
+        "speed": 0.644254
+      },
+      "Mercury": {
+        "longitude": 199.399376,
+        "sign_index": 6,
+        "degree_in_sign": 19.399376,
+        "is_retrograde": true,
+        "speed": -0.184401
+      },
+      "Jupiter": {
+        "longitude": 1.057043,
+        "sign_index": 0,
+        "degree_in_sign": 1.057043,
+        "is_retrograde": true,
+        "speed": -0.135429
+      },
+      "Venus": {
+        "longitude": 195.320146,
+        "sign_index": 6,
+        "degree_in_sign": 15.320146,
+        "is_retrograde": false,
+        "speed": 1.245201
+      },
+      "Saturn": {
+        "longitude": 233.577497,
+        "sign_index": 7,
+        "degree_in_sign": 23.577497,
+        "is_retrograde": false,
+        "speed": 0.085652
+      },
+      "Rahu": {
+        "longitude": 337.447,
+        "sign_index": 11,
+        "degree_in_sign": 7.447,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 157.447,
+        "sign_index": 5,
+        "degree_in_sign": 7.447,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

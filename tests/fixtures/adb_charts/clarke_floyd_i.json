@@ -1,0 +1,109 @@
+{
+  "adb_id": 84492,
+  "name": "Clarke, Floyd I.",
+  "given_name": "Floyd I. Clarke",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430367.243056,
+    "year": 1942,
+    "month": 1,
+    "day": 7,
+    "calendar": "g",
+    "time": "10:50",
+    "time_type": "s",
+    "hour": 10.833333,
+    "time_unknown": false,
+    "place": "Phoenix",
+    "country": "Arizona",
+    "lat": 33.45,
+    "lon": -112.066667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarke,_Floyd_I.",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 1.88299,
+    "lagna": 301.88299,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.047258,
+    "jd_ut": 2430367.243056,
+    "planets": {
+      "Sun": {
+        "longitude": 263.770632,
+        "sign_index": 8,
+        "degree_in_sign": 23.770632,
+        "is_retrograde": false,
+        "speed": 1.018963
+      },
+      "Moon": {
+        "longitude": 142.131055,
+        "sign_index": 4,
+        "degree_in_sign": 22.131055,
+        "is_retrograde": false,
+        "speed": 13.720118
+      },
+      "Mars": {
+        "longitude": 4.923163,
+        "sign_index": 0,
+        "degree_in_sign": 4.923163,
+        "is_retrograde": false,
+        "speed": 0.477412
+      },
+      "Mercury": {
+        "longitude": 273.82073,
+        "sign_index": 9,
+        "degree_in_sign": 3.82073,
+        "is_retrograde": false,
+        "speed": 1.650233
+      },
+      "Jupiter": {
+        "longitude": 49.703684,
+        "sign_index": 1,
+        "degree_in_sign": 19.703684,
+        "is_retrograde": true,
+        "speed": -0.091965
+      },
+      "Venus": {
+        "longitude": 297.588572,
+        "sign_index": 9,
+        "degree_in_sign": 27.588572,
+        "is_retrograde": false,
+        "speed": 0.205296
+      },
+      "Saturn": {
+        "longitude": 28.813684,
+        "sign_index": 0,
+        "degree_in_sign": 28.813684,
+        "is_retrograde": true,
+        "speed": -0.028841
+      },
+      "Rahu": {
+        "longitude": 143.43997,
+        "sign_index": 4,
+        "degree_in_sign": 23.43997,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 323.43997,
+        "sign_index": 10,
+        "degree_in_sign": 23.43997,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 47555,
+  "name": "Charles V, King of France",
+  "given_name": "King of France Charles V",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2209782.726574,
+    "year": 1338,
+    "month": 1,
+    "day": 21,
+    "calendar": "j",
+    "time": "05:36",
+    "time_type": "l",
+    "hour": 5.6,
+    "time_unknown": false,
+    "place": "Vincennes",
+    "country": "France",
+    "lat": 48.85,
+    "lon": 2.433333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_V,_King_of_France",
+  "source_notes": "Martin Harvey in Nativitas I quotes Latin records from Anselme's Geneology. January 21, 1337/38 OS. (A time to the minute would appear to have been rectified from a sundial (or hourglass) time, however Harvey treats it as LAT and gives it the necessary correction of 12', resulting in an ASC of 6 Capricorn.\\n(Steinbrecher states that the date is \"verified by archivist.\"  Barbault quotes an old manuscript for the time of 5:36 AM LMT, \"from Manuscrit de Pelerin de Prusse\" but he has Jan 23, 1338.)\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 2.840135,
+    "lagna": 242.840135,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 14.624407,
+    "jd_ut": 2209782.726574,
+    "planets": {
+      "Sun": {
+        "longitude": 294.690811,
+        "sign_index": 9,
+        "degree_in_sign": 24.690811,
+        "is_retrograde": false,
+        "speed": 1.013084
+      },
+      "Moon": {
+        "longitude": 290.846966,
+        "sign_index": 9,
+        "degree_in_sign": 20.846966,
+        "is_retrograde": false,
+        "speed": 11.931359
+      },
+      "Mars": {
+        "longitude": 340.007406,
+        "sign_index": 11,
+        "degree_in_sign": 10.007406,
+        "is_retrograde": false,
+        "speed": 0.746731
+      },
+      "Mercury": {
+        "longitude": 273.524351,
+        "sign_index": 9,
+        "degree_in_sign": 3.524351,
+        "is_retrograde": false,
+        "speed": 0.004654
+      },
+      "Jupiter": {
+        "longitude": 81.294868,
+        "sign_index": 2,
+        "degree_in_sign": 21.294868,
+        "is_retrograde": true,
+        "speed": -0.093885
+      },
+      "Venus": {
+        "longitude": 252.071649,
+        "sign_index": 8,
+        "degree_in_sign": 12.071649,
+        "is_retrograde": false,
+        "speed": 1.173136
+      },
+      "Saturn": {
+        "longitude": 225.923633,
+        "sign_index": 7,
+        "degree_in_sign": 15.923633,
+        "is_retrograde": false,
+        "speed": 0.064901
+      },
+      "Rahu": {
+        "longitude": 312.732901,
+        "sign_index": 10,
+        "degree_in_sign": 12.732901,
+        "is_retrograde": true,
+        "speed": -0.052993
+      },
+      "Ketu": {
+        "longitude": 132.732901,
+        "sign_index": 4,
+        "degree_in_sign": 12.732901,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 37331,
+  "name": "Christian, Dom",
+  "given_name": "Dom Christian",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428552.458333,
+    "year": 1937,
+    "month": 1,
+    "day": 18,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Colmar",
+    "country": "France",
+    "lat": 48.083333,
+    "lon": 7.366667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian,_Dom",
+  "source_notes": "Petitallot quotes B.C., Cadran No.33, 9/1996\\n",
+  "categories": [
+    "Passions : Sexuality : Celibacy/ Minimal",
+    "Passions : Criminal Victim : Homicide victim",
+    "Passions : Criminal Victim : Kidnapping victim",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 28.937179,
+    "lagna": 148.937179,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.977871,
+    "jd_ut": 2428552.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 275.489608,
+        "sign_index": 9,
+        "degree_in_sign": 5.489608,
+        "is_retrograde": false,
+        "speed": 1.018049
+      },
+      "Moon": {
+        "longitude": 353.14661,
+        "sign_index": 11,
+        "degree_in_sign": 23.14661,
+        "is_retrograde": false,
+        "speed": 14.24091
+      },
+      "Mars": {
+        "longitude": 193.968263,
+        "sign_index": 6,
+        "degree_in_sign": 13.968263,
+        "is_retrograde": false,
+        "speed": 0.517674
+      },
+      "Mercury": {
+        "longitude": 266.421985,
+        "sign_index": 8,
+        "degree_in_sign": 26.421985,
+        "is_retrograde": true,
+        "speed": -1.069105
+      },
+      "Jupiter": {
+        "longitude": 257.883223,
+        "sign_index": 8,
+        "degree_in_sign": 17.883223,
+        "is_retrograde": false,
+        "speed": 0.225476
+      },
+      "Venus": {
+        "longitude": 321.493085,
+        "sign_index": 10,
+        "degree_in_sign": 21.493085,
+        "is_retrograde": false,
+        "speed": 1.106476
+      },
+      "Saturn": {
+        "longitude": 325.850689,
+        "sign_index": 10,
+        "degree_in_sign": 25.850689,
+        "is_retrograde": false,
+        "speed": 0.093303
+      },
+      "Rahu": {
+        "longitude": 239.609169,
+        "sign_index": 7,
+        "degree_in_sign": 29.609169,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 59.609169,
+        "sign_index": 1,
+        "degree_in_sign": 29.609169,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

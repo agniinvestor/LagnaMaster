@@ -1,0 +1,117 @@
+{
+  "adb_id": 55466,
+  "name": "Clarac, Achille",
+  "given_name": "Achille Clarac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416358.01434,
+    "year": 1903,
+    "month": 8,
+    "day": 31,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Nantes",
+    "country": "France",
+    "lat": 47.216667,
+    "lon": -1.55
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarac,_Achille",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file (marriage and death data in margin).\\n",
+  "categories": [
+    "Family : Relationship : Widowed",
+    "Family : Relationship : Other relationship",
+    "Family : Parenting : Foster, Step, or Adopted Kids",
+    "Lifestyle : Home : Expatriate",
+    "Passions : Sexuality : Gay",
+    "Personal : Misc. : Changed name",
+    "Vocation : Politics : Diplomat",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Public Service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 8.183704,
+    "lagna": 188.183704,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.511661,
+    "jd_ut": 2416358.01434,
+    "planets": {
+      "Sun": {
+        "longitude": 134.396672,
+        "sign_index": 4,
+        "degree_in_sign": 14.396672,
+        "is_retrograde": false,
+        "speed": 0.96734
+      },
+      "Moon": {
+        "longitude": 243.652827,
+        "sign_index": 8,
+        "degree_in_sign": 3.652827,
+        "is_retrograde": false,
+        "speed": 12.92532
+      },
+      "Mars": {
+        "longitude": 202.767053,
+        "sign_index": 6,
+        "degree_in_sign": 22.767053,
+        "is_retrograde": false,
+        "speed": 0.64507
+      },
+      "Mercury": {
+        "longitude": 160.354462,
+        "sign_index": 5,
+        "degree_in_sign": 10.354462,
+        "is_retrograde": false,
+        "speed": 1.222908
+      },
+      "Jupiter": {
+        "longitude": 327.331909,
+        "sign_index": 10,
+        "degree_in_sign": 27.331909,
+        "is_retrograde": true,
+        "speed": -0.126259
+      },
+      "Venus": {
+        "longitude": 158.940969,
+        "sign_index": 5,
+        "degree_in_sign": 8.940969,
+        "is_retrograde": true,
+        "speed": -0.149658
+      },
+      "Saturn": {
+        "longitude": 281.294586,
+        "sign_index": 9,
+        "degree_in_sign": 11.294586,
+        "is_retrograde": true,
+        "speed": -0.055619
+      },
+      "Rahu": {
+        "longitude": 165.818229,
+        "sign_index": 5,
+        "degree_in_sign": 15.818229,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 345.818229,
+        "sign_index": 11,
+        "degree_in_sign": 15.818229,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

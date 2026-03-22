@@ -1,0 +1,112 @@
+{
+  "adb_id": 81037,
+  "name": "Chauffard, Anatole",
+  "given_name": "Anatole Chauffard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2398818.403287,
+    "year": 1855,
+    "month": 8,
+    "day": 22,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Avignon",
+    "country": "France",
+    "lat": 43.95,
+    "lon": 4.816667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chauffard,_Anatole",
+  "source_notes": "Sy Scholfield submitted birth certificate (acte no. 619) from the online Avignon municipal archives: \"dix heures du soir\" (ten o'clock at night). No data in margin.\\nGrazia Bordoni's Science file quotes Gauquelin for same data.\\n",
+  "categories": [
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Physician",
+    "Notable : Famous : First in Field",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 7.796849,
+    "lagna": 7.796849,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.841219,
+    "jd_ut": 2398818.403287,
+    "planets": {
+      "Sun": {
+        "longitude": 127.335565,
+        "sign_index": 4,
+        "degree_in_sign": 7.335565,
+        "is_retrograde": false,
+        "speed": 0.964133
+      },
+      "Moon": {
+        "longitude": 242.423307,
+        "sign_index": 8,
+        "degree_in_sign": 2.423307,
+        "is_retrograde": false,
+        "speed": 10.328799
+      },
+      "Mars": {
+        "longitude": 92.272289,
+        "sign_index": 3,
+        "degree_in_sign": 2.272289,
+        "is_retrograde": false,
+        "speed": 0.643113
+      },
+      "Mercury": {
+        "longitude": 123.482362,
+        "sign_index": 4,
+        "degree_in_sign": 3.482362,
+        "is_retrograde": false,
+        "speed": 2.001715
+      },
+      "Jupiter": {
+        "longitude": 305.596084,
+        "sign_index": 10,
+        "degree_in_sign": 5.596084,
+        "is_retrograde": true,
+        "speed": -0.131347
+      },
+      "Venus": {
+        "longitude": 167.922785,
+        "sign_index": 5,
+        "degree_in_sign": 17.922785,
+        "is_retrograde": false,
+        "speed": 0.559282
+      },
+      "Saturn": {
+        "longitude": 65.940016,
+        "sign_index": 2,
+        "degree_in_sign": 5.940016,
+        "is_retrograde": false,
+        "speed": 0.083746
+      },
+      "Rahu": {
+        "longitude": 15.279523,
+        "sign_index": 0,
+        "degree_in_sign": 15.279523,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 195.279523,
+        "sign_index": 6,
+        "degree_in_sign": 15.279523,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

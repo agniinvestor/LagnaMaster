@@ -1,0 +1,113 @@
+{
+  "adb_id": 89487,
+  "name": "Changarnier, Nicolas",
+  "given_name": "Nicolas Changarnier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2376055.863056,
+    "year": 1793,
+    "month": 4,
+    "day": 26,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Autun",
+    "country": "France",
+    "lat": 46.95,
+    "lon": 4.3
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Changarnier,_Nicolas",
+  "source_notes": "Sy Scholfield cites birth record quoted in ''Mémoires de la Société Éduenne'', Volume 6 (Société Éduenne des Lettres, Sciences et Arts (Autun, France), 1877), page 312: \"Cejourd'hui vingt-six avril mil sept cent quatre-vingt-treize, l'an second de la République Française, sur les deux heures et demie après midi, en la maison commune de la ville d'Autun et par-devant nous Jean Suchet, ... a comparu la citoyenne Anne Changarnier ... est accouchée cejourd'hui à neuf heures du matin, au domicile de son mari, d'un enfant mâle auquel il ete a donné le prénoms de Nicolas-Anne-Theodule.\" NB: Decimal time was observed during this period but considering that there were only ten 'hours' allocated per 24-hour period this time of nine o'clock in the morning (\"neuf heures du matin\") obviously was not recorded in decimal time.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Candidate and lost",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 3.057079,
+    "lagna": 63.057079,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.971344,
+    "jd_ut": 2376055.863056,
+    "planets": {
+      "Sun": {
+        "longitude": 15.54429,
+        "sign_index": 0,
+        "degree_in_sign": 15.54429,
+        "is_retrograde": false,
+        "speed": 0.970554
+      },
+      "Moon": {
+        "longitude": 197.031955,
+        "sign_index": 6,
+        "degree_in_sign": 17.031955,
+        "is_retrograde": false,
+        "speed": 15.612536
+      },
+      "Mars": {
+        "longitude": 19.766872,
+        "sign_index": 0,
+        "degree_in_sign": 19.766872,
+        "is_retrograde": false,
+        "speed": 0.729685
+      },
+      "Mercury": {
+        "longitude": 14.292744,
+        "sign_index": 0,
+        "degree_in_sign": 14.292744,
+        "is_retrograde": true,
+        "speed": -0.657942
+      },
+      "Jupiter": {
+        "longitude": 218.61616,
+        "sign_index": 7,
+        "degree_in_sign": 8.61616,
+        "is_retrograde": true,
+        "speed": -0.107332
+      },
+      "Venus": {
+        "longitude": 52.365429,
+        "sign_index": 1,
+        "degree_in_sign": 22.365429,
+        "is_retrograde": false,
+        "speed": 0.35743
+      },
+      "Saturn": {
+        "longitude": 14.522192,
+        "sign_index": 0,
+        "degree_in_sign": 14.522192,
+        "is_retrograde": false,
+        "speed": 0.128091
+      },
+      "Rahu": {
+        "longitude": 141.516148,
+        "sign_index": 4,
+        "degree_in_sign": 21.516148,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 321.516148,
+        "sign_index": 10,
+        "degree_in_sign": 21.516148,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "adb_id": 14378,
+  "name": "Cosby, Ennis",
+  "given_name": "Ennis Cosby",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440326.852778,
+    "year": 1969,
+    "month": 4,
+    "day": 15,
+    "calendar": "g",
+    "time": "00:28",
+    "time_type": "s",
+    "hour": 0.466667,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cosby,_Ennis",
+  "source_notes": "B.C. in hand from the Wilsons\\n",
+  "categories": [
+    "Diagnoses : Psychological : Dyslexia",
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Sibling circumstances",
+    "Family : Relationship : Married late/never",
+    "Passions : Criminal Victim : Homicide victim",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Vocation : Education : Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 27.58926,
+    "lagna": 237.58926,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.428087,
+    "jd_ut": 2440326.852778,
+    "planets": {
+      "Sun": {
+        "longitude": 1.76564,
+        "sign_index": 0,
+        "degree_in_sign": 1.76564,
+        "is_retrograde": false,
+        "speed": 0.979053
+      },
+      "Moon": {
+        "longitude": 345.004053,
+        "sign_index": 11,
+        "degree_in_sign": 15.004053,
+        "is_retrograde": false,
+        "speed": 17.077118
+      },
+      "Mars": {
+        "longitude": 232.474749,
+        "sign_index": 7,
+        "degree_in_sign": 22.474749,
+        "is_retrograde": false,
+        "speed": 0.13798
+      },
+      "Mercury": {
+        "longitude": 8.892279,
+        "sign_index": 0,
+        "degree_in_sign": 8.892279,
+        "is_retrograde": false,
+        "speed": 2.091737
+      },
+      "Jupiter": {
+        "longitude": 154.772058,
+        "sign_index": 5,
+        "degree_in_sign": 4.772058,
+        "is_retrograde": true,
+        "speed": -0.104038
+      },
+      "Venus": {
+        "longitude": 351.156575,
+        "sign_index": 11,
+        "degree_in_sign": 21.156575,
+        "is_retrograde": true,
+        "speed": -0.535846
+      },
+      "Saturn": {
+        "longitude": 4.719651,
+        "sign_index": 0,
+        "degree_in_sign": 4.719651,
+        "is_retrograde": false,
+        "speed": 0.127224
+      },
+      "Rahu": {
+        "longitude": 335.659786,
+        "sign_index": 11,
+        "degree_in_sign": 5.659786,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 155.659786,
+        "sign_index": 5,
+        "degree_in_sign": 5.659786,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

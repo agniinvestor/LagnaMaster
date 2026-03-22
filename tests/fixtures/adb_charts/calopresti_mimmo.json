@@ -1,0 +1,111 @@
+{
+  "adb_id": 71526,
+  "name": "Calopresti, Mimmo",
+  "given_name": "Mimmo Calopresti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435112.145833,
+    "year": 1955,
+    "month": 1,
+    "day": 4,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "s",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "Polistena",
+    "country": "Italy",
+    "lat": 38.416667,
+    "lon": 16.083333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calopresti,_Mimmo",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file, from birth certificate. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.321329,
+    "lagna": 54.321329,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.228685,
+    "jd_ut": 2435112.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 260.2762,
+        "sign_index": 8,
+        "degree_in_sign": 20.2762,
+        "is_retrograde": false,
+        "speed": 1.01904
+      },
+      "Moon": {
+        "longitude": 27.791119,
+        "sign_index": 0,
+        "degree_in_sign": 27.791119,
+        "is_retrograde": false,
+        "speed": 12.409085
+      },
+      "Mars": {
+        "longitude": 329.197902,
+        "sign_index": 10,
+        "degree_in_sign": 29.197902,
+        "is_retrograde": false,
+        "speed": 0.718521
+      },
+      "Mercury": {
+        "longitude": 266.322466,
+        "sign_index": 8,
+        "degree_in_sign": 26.322466,
+        "is_retrograde": false,
+        "speed": 1.640839
+      },
+      "Jupiter": {
+        "longitude": 93.156646,
+        "sign_index": 3,
+        "degree_in_sign": 3.156646,
+        "is_retrograde": true,
+        "speed": -0.128482
+      },
+      "Venus": {
+        "longitude": 215.431093,
+        "sign_index": 7,
+        "degree_in_sign": 5.431093,
+        "is_retrograde": false,
+        "speed": 0.80363
+      },
+      "Saturn": {
+        "longitude": 205.424831,
+        "sign_index": 6,
+        "degree_in_sign": 25.424831,
+        "is_retrograde": false,
+        "speed": 0.084983
+      },
+      "Rahu": {
+        "longitude": 251.99779,
+        "sign_index": 8,
+        "degree_in_sign": 11.99779,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 71.99779,
+        "sign_index": 2,
+        "degree_in_sign": 11.99779,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

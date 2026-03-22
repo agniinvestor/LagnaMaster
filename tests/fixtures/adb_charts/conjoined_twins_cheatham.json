@@ -1,0 +1,109 @@
+{
+  "adb_id": 15007,
+  "name": "Conjoined Twins: Cheatham",
+  "given_name": "Conjoined Twins: Cheatham",
+  "gender": "u",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2446152.479167,
+    "year": 1985,
+    "month": 3,
+    "day": 27,
+    "calendar": "g",
+    "time": "17:30",
+    "time_type": "s",
+    "hour": 17.5,
+    "time_unknown": false,
+    "place": "San Antonio",
+    "country": "Texas",
+    "lat": 29.416667,
+    "lon": -98.5
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Cheatham",
+  "source_notes": "David Dozier quotes news\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Surgery",
+    "Personal : Birth : Conjoined twins"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 3.366488,
+    "lagna": 123.366488,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.650864,
+    "jd_ut": 2446152.479167,
+    "planets": {
+      "Sun": {
+        "longitude": 343.593657,
+        "sign_index": 11,
+        "degree_in_sign": 13.593657,
+        "is_retrograde": false,
+        "speed": 0.989219
+      },
+      "Moon": {
+        "longitude": 54.109349,
+        "sign_index": 1,
+        "degree_in_sign": 24.109349,
+        "is_retrograde": false,
+        "speed": 7.286847
+      },
+      "Mars": {
+        "longitude": 15.575901,
+        "sign_index": 0,
+        "degree_in_sign": 15.575901,
+        "is_retrograde": false,
+        "speed": 0.717673
+      },
+      "Mercury": {
+        "longitude": 354.38635,
+        "sign_index": 11,
+        "degree_in_sign": 24.38635,
+        "is_retrograde": true,
+        "speed": -0.380951
+      },
+      "Jupiter": {
+        "longitude": 286.600236,
+        "sign_index": 9,
+        "degree_in_sign": 16.600236,
+        "is_retrograde": false,
+        "speed": 0.176328
+      },
+      "Venus": {
+        "longitude": 354.60825,
+        "sign_index": 11,
+        "degree_in_sign": 24.60825,
+        "is_retrograde": true,
+        "speed": -0.537401
+      },
+      "Saturn": {
+        "longitude": 214.130926,
+        "sign_index": 7,
+        "degree_in_sign": 4.130926,
+        "is_retrograde": true,
+        "speed": -0.033461
+      },
+      "Rahu": {
+        "longitude": 26.947991,
+        "sign_index": 0,
+        "degree_in_sign": 26.947991,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 206.947991,
+        "sign_index": 6,
+        "degree_in_sign": 26.947991,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

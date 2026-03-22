@@ -1,0 +1,109 @@
+{
+  "adb_id": 64928,
+  "name": "Caresche, Christophe",
+  "given_name": "Christophe Caresche",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437180.118056,
+    "year": 1960,
+    "month": 9,
+    "day": 2,
+    "calendar": "g",
+    "time": "15:50",
+    "time_type": "s",
+    "hour": 15.833333,
+    "time_unknown": false,
+    "place": "Arcachon",
+    "country": "France",
+    "lat": 44.616667,
+    "lon": -1.2
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caresche,_Christophe",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 49.\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 11.313701,
+    "lagna": 221.313701,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.307759,
+    "jd_ut": 2437180.118056,
+    "planets": {
+      "Sun": {
+        "longitude": 136.809185,
+        "sign_index": 4,
+        "degree_in_sign": 16.809185,
+        "is_retrograde": false,
+        "speed": 0.968196
+      },
+      "Moon": {
+        "longitude": 278.615834,
+        "sign_index": 9,
+        "degree_in_sign": 8.615834,
+        "is_retrograde": false,
+        "speed": 15.076995
+      },
+      "Mars": {
+        "longitude": 56.43703,
+        "sign_index": 1,
+        "degree_in_sign": 26.43703,
+        "is_retrograde": false,
+        "speed": 0.585197
+      },
+      "Mercury": {
+        "longitude": 139.311123,
+        "sign_index": 4,
+        "degree_in_sign": 19.311123,
+        "is_retrograde": false,
+        "speed": 1.893237
+      },
+      "Jupiter": {
+        "longitude": 240.73091,
+        "sign_index": 8,
+        "degree_in_sign": 0.73091,
+        "is_retrograde": false,
+        "speed": 0.04017
+      },
+      "Venus": {
+        "longitude": 156.454544,
+        "sign_index": 5,
+        "degree_in_sign": 6.454544,
+        "is_retrograde": false,
+        "speed": 1.230697
+      },
+      "Saturn": {
+        "longitude": 258.657327,
+        "sign_index": 8,
+        "degree_in_sign": 18.657327,
+        "is_retrograde": true,
+        "speed": -0.021355
+      },
+      "Rahu": {
+        "longitude": 142.411698,
+        "sign_index": 4,
+        "degree_in_sign": 22.411698,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 322.411698,
+        "sign_index": 10,
+        "degree_in_sign": 22.411698,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

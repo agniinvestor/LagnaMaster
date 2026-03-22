@@ -1,0 +1,114 @@
+{
+  "adb_id": 91205,
+  "name": "Charles, Duke of Aumale",
+  "given_name": "Duke of Aumale Charles",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2289035.539206,
+    "year": 1555,
+    "month": 1,
+    "day": 15,
+    "calendar": "j",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Mauny",
+    "country": "France",
+    "lat": 49.385,
+    "lon": 0.885833
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles,_Duke_of_Aumale",
+  "source_notes": "Sy Scholfield quotes from ''Bulletin des bibliothèques et des archives'' (H. Champion, libraire, 1868), page 223: \"1556 ... Charles monsieur de Lorraine , second filz de hault et puissant seigneur Claude de Lorraine , duc d'Aumalle , et de madame Loyse de Brezé , fut né le xvj iour de ianuier entre le samedy et le dimanche une heure après minuict ... Moreri , le 25 janvier 1555.\"\\n(Translation: 1556 ... Charles Monsieur de Lorraine, second son of Lord Claude de Lorraine, Duke of Aumale, and of Madame Louise de Brezé, was born on the 16th day of January between Saturday and Sunday at one hour after midnight ... [The date according to encyclopedist Louis Moreri was 25 January 1555]).\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Military career",
+    "Vocation : Military : POW/ MIA",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 29.592997,
+    "lagna": 179.592997,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.648042,
+    "jd_ut": 2289035.539206,
+    "planets": {
+      "Sun": {
+        "longitude": 286.730517,
+        "sign_index": 9,
+        "degree_in_sign": 16.730517,
+        "is_retrograde": false,
+        "speed": 1.015267
+      },
+      "Moon": {
+        "longitude": 186.81065,
+        "sign_index": 6,
+        "degree_in_sign": 6.81065,
+        "is_retrograde": false,
+        "speed": 10.847909
+      },
+      "Mars": {
+        "longitude": 159.038301,
+        "sign_index": 5,
+        "degree_in_sign": 9.038301,
+        "is_retrograde": false,
+        "speed": 0.044033
+      },
+      "Mercury": {
+        "longitude": 276.78108,
+        "sign_index": 9,
+        "degree_in_sign": 6.78108,
+        "is_retrograde": true,
+        "speed": -0.996445
+      },
+      "Jupiter": {
+        "longitude": 196.233991,
+        "sign_index": 6,
+        "degree_in_sign": 16.233991,
+        "is_retrograde": false,
+        "speed": 0.07639
+      },
+      "Venus": {
+        "longitude": 331.629128,
+        "sign_index": 11,
+        "degree_in_sign": 1.629128,
+        "is_retrograde": false,
+        "speed": 0.779728
+      },
+      "Saturn": {
+        "longitude": 337.37826,
+        "sign_index": 11,
+        "degree_in_sign": 7.37826,
+        "is_retrograde": false,
+        "speed": 0.094158
+      },
+      "Rahu": {
+        "longitude": 72.925255,
+        "sign_index": 2,
+        "degree_in_sign": 12.925255,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 252.925255,
+        "sign_index": 8,
+        "degree_in_sign": 12.925255,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

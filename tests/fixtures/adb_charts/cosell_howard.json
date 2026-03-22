@@ -1,0 +1,118 @@
+{
+  "adb_id": 5303,
+  "name": "Cosell, Howard",
+  "given_name": "Howard Cosell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421678.302083,
+    "year": 1918,
+    "month": 3,
+    "day": 25,
+    "calendar": "g",
+    "time": "14:15",
+    "time_type": "s",
+    "hour": 14.25,
+    "time_unknown": false,
+    "place": "Winston-Salem",
+    "country": "North Carolina",
+    "lat": 36.1,
+    "lon": -80.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cosell,_Howard",
+  "source_notes": "Original source notes gave \"Contemporary American Horoscopes\" for 1920; however, in July 2004, PT found social security death index, obituaries and many biographies gave 1918 and confirmed 1918 with the county vital statistics office.\\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Traits : Body : Voice/Speech",
+    "Traits : Mind : I.Q. high/ Mensa level",
+    "Traits : Personality : Ambitious",
+    "Diagnoses : Major Diseases : Cancer",
+    "Diagnoses : Body Part Problems : Surgery",
+    "Vocation : Entertainment : News journalist/ Anchor",
+    "Vocation : Law : Attorney",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Extraordinary Talents : For Verbal skills",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 26.172854,
+    "lagna": 86.172854,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.715055,
+    "jd_ut": 2421678.302083,
+    "planets": {
+      "Sun": {
+        "longitude": 341.609175,
+        "sign_index": 11,
+        "degree_in_sign": 11.609175,
+        "is_retrograde": false,
+        "speed": 0.989815
+      },
+      "Moon": {
+        "longitude": 142.215204,
+        "sign_index": 4,
+        "degree_in_sign": 22.215204,
+        "is_retrograde": false,
+        "speed": 14.633481
+      },
+      "Mars": {
+        "longitude": 147.129161,
+        "sign_index": 4,
+        "degree_in_sign": 27.129161,
+        "is_retrograde": true,
+        "speed": -0.359969
+      },
+      "Mercury": {
+        "longitude": 354.090976,
+        "sign_index": 11,
+        "degree_in_sign": 24.090976,
+        "is_retrograde": false,
+        "speed": 1.904139
+      },
+      "Jupiter": {
+        "longitude": 43.917241,
+        "sign_index": 1,
+        "degree_in_sign": 13.917241,
+        "is_retrograde": false,
+        "speed": 0.16143
+      },
+      "Venus": {
+        "longitude": 298.860901,
+        "sign_index": 9,
+        "degree_in_sign": 28.860901,
+        "is_retrograde": false,
+        "speed": 0.674221
+      },
+      "Saturn": {
+        "longitude": 105.090473,
+        "sign_index": 3,
+        "degree_in_sign": 15.090473,
+        "is_retrograde": true,
+        "speed": -0.026459
+      },
+      "Rahu": {
+        "longitude": 243.885015,
+        "sign_index": 8,
+        "degree_in_sign": 3.885015,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 63.885015,
+        "sign_index": 2,
+        "degree_in_sign": 3.885015,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

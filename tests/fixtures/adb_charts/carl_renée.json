@@ -1,0 +1,109 @@
+{
+  "adb_id": 79486,
+  "name": "Carl, Renée",
+  "given_name": "Renée Carl",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406050.418889,
+    "year": 1875,
+    "month": 6,
+    "day": 10,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Fontenay le Comte",
+    "country": "France",
+    "lat": 46.466667,
+    "lon": -0.8
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carl,_Renée",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 8.201738,
+    "lagna": 248.201738,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.117642,
+    "jd_ut": 2406050.418889,
+    "planets": {
+      "Sun": {
+        "longitude": 57.436541,
+        "sign_index": 1,
+        "degree_in_sign": 27.436541,
+        "is_retrograde": false,
+        "speed": 0.955453
+      },
+      "Moon": {
+        "longitude": 148.215889,
+        "sign_index": 4,
+        "degree_in_sign": 28.215889,
+        "is_retrograde": false,
+        "speed": 10.671468
+      },
+      "Mars": {
+        "longitude": 249.207683,
+        "sign_index": 8,
+        "degree_in_sign": 9.207683,
+        "is_retrograde": true,
+        "speed": -0.264518
+      },
+      "Mercury": {
+        "longitude": 81.567319,
+        "sign_index": 2,
+        "degree_in_sign": 21.567319,
+        "is_retrograde": false,
+        "speed": 0.903859
+      },
+      "Jupiter": {
+        "longitude": 179.74202,
+        "sign_index": 5,
+        "degree_in_sign": 29.74202,
+        "is_retrograde": true,
+        "speed": -0.024243
+      },
+      "Venus": {
+        "longitude": 29.781765,
+        "sign_index": 0,
+        "degree_in_sign": 29.781765,
+        "is_retrograde": false,
+        "speed": 1.201877
+      },
+      "Saturn": {
+        "longitude": 303.953943,
+        "sign_index": 10,
+        "degree_in_sign": 3.953943,
+        "is_retrograde": true,
+        "speed": -0.007729
+      },
+      "Rahu": {
+        "longitude": 352.039542,
+        "sign_index": 11,
+        "degree_in_sign": 22.039542,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 172.039542,
+        "sign_index": 5,
+        "degree_in_sign": 22.039542,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

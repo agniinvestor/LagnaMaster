@@ -1,0 +1,108 @@
+{
+  "adb_id": 67434,
+  "name": "Carrier-Belleuse, Albert-Ernest",
+  "given_name": "Albert-Ernest Carrier-Belleuse",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2387424.57375,
+    "year": 1824,
+    "month": 6,
+    "day": 12,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Anizy le Château",
+    "country": "France",
+    "lat": 49.5,
+    "lon": 3.45
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrier-Belleuse,_Albert-Ernest",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'sculpteurs' pdf file, p. 20.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 28.601069,
+    "lagna": 358.601069,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.405772,
+    "jd_ut": 2387424.57375,
+    "planets": {
+      "Sun": {
+        "longitude": 59.556943,
+        "sign_index": 1,
+        "degree_in_sign": 29.556943,
+        "is_retrograde": false,
+        "speed": 0.954613
+      },
+      "Moon": {
+        "longitude": 244.708389,
+        "sign_index": 8,
+        "degree_in_sign": 4.708389,
+        "is_retrograde": false,
+        "speed": 9.049944
+      },
+      "Mars": {
+        "longitude": 160.525152,
+        "sign_index": 5,
+        "degree_in_sign": 10.525152,
+        "is_retrograde": false,
+        "speed": 0.358382
+      },
+      "Mercury": {
+        "longitude": 47.457839,
+        "sign_index": 1,
+        "degree_in_sign": 17.457839,
+        "is_retrograde": true,
+        "speed": -0.242391
+      },
+      "Jupiter": {
+        "longitude": 83.91251,
+        "sign_index": 2,
+        "degree_in_sign": 23.91251,
+        "is_retrograde": false,
+        "speed": 0.213695
+      },
+      "Venus": {
+        "longitude": 46.545492,
+        "sign_index": 1,
+        "degree_in_sign": 16.545492,
+        "is_retrograde": false,
+        "speed": 1.222268
+      },
+      "Saturn": {
+        "longitude": 38.992662,
+        "sign_index": 1,
+        "degree_in_sign": 8.992662,
+        "is_retrograde": false,
+        "speed": 0.124013
+      },
+      "Rahu": {
+        "longitude": 259.063217,
+        "sign_index": 8,
+        "degree_in_sign": 19.063217,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 79.063217,
+        "sign_index": 2,
+        "degree_in_sign": 19.063217,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

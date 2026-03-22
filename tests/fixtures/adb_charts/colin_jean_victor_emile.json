@@ -1,0 +1,108 @@
+{
+  "adb_id": 64780,
+  "name": "Colin, Jean Victor Emile",
+  "given_name": "Jean Victor Emile Colin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419433.583333,
+    "year": 1912,
+    "month": 2,
+    "day": 1,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colin,_Jean_Victor_Emile",
+  "source_notes": "Didier Geslain archive, 'bd_pub_affichistes' pdf file, p. 43.\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 7.07718,
+    "lagna": 187.07718,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.629238,
+    "jd_ut": 2419433.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 288.236276,
+        "sign_index": 9,
+        "degree_in_sign": 18.236276,
+        "is_retrograde": false,
+        "speed": 1.014631
+      },
+      "Moon": {
+        "longitude": 80.502887,
+        "sign_index": 2,
+        "degree_in_sign": 20.502887,
+        "is_retrograde": false,
+        "speed": 13.192469
+      },
+      "Mars": {
+        "longitude": 37.762782,
+        "sign_index": 1,
+        "degree_in_sign": 7.762782,
+        "is_retrograde": false,
+        "speed": 0.327339
+      },
+      "Mercury": {
+        "longitude": 268.468409,
+        "sign_index": 8,
+        "degree_in_sign": 28.468409,
+        "is_retrograde": false,
+        "speed": 1.436489
+      },
+      "Jupiter": {
+        "longitude": 227.570266,
+        "sign_index": 7,
+        "degree_in_sign": 17.570266,
+        "is_retrograde": false,
+        "speed": 0.158071
+      },
+      "Venus": {
+        "longitude": 249.950349,
+        "sign_index": 8,
+        "degree_in_sign": 9.950349,
+        "is_retrograde": false,
+        "speed": 1.207878
+      },
+      "Saturn": {
+        "longitude": 20.92506,
+        "sign_index": 0,
+        "degree_in_sign": 20.92506,
+        "is_retrograde": false,
+        "speed": 0.030302
+      },
+      "Rahu": {
+        "longitude": 2.837363,
+        "sign_index": 0,
+        "degree_in_sign": 2.837363,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.837363,
+        "sign_index": 6,
+        "degree_in_sign": 2.837363,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

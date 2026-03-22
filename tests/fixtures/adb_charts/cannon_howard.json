@@ -1,0 +1,112 @@
+{
+  "adb_id": 86515,
+  "name": "Cannon, Howard",
+  "given_name": "Howard Cannon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419428.78125,
+    "year": 1912,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "23:45",
+    "time_type": "s",
+    "hour": 23.75,
+    "time_unknown": false,
+    "place": "St.George",
+    "country": "Utah",
+    "lat": 37.1,
+    "lon": -113.583333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cannon,_Howard",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Vocation : Travel : Pilot/ commercial",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 3.464313,
+    "lagna": 153.464313,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.629054,
+    "jd_ut": 2419428.78125,
+    "planets": {
+      "Sun": {
+        "longitude": 283.359947,
+        "sign_index": 9,
+        "degree_in_sign": 13.359947,
+        "is_retrograde": false,
+        "speed": 1.016287
+      },
+      "Moon": {
+        "longitude": 11.387674,
+        "sign_index": 0,
+        "degree_in_sign": 11.387674,
+        "is_retrograde": false,
+        "speed": 12.301368
+      },
+      "Mars": {
+        "longitude": 36.269285,
+        "sign_index": 1,
+        "degree_in_sign": 6.269285,
+        "is_retrograde": false,
+        "speed": 0.293929
+      },
+      "Mercury": {
+        "longitude": 261.755279,
+        "sign_index": 8,
+        "degree_in_sign": 21.755279,
+        "is_retrograde": false,
+        "speed": 1.356539
+      },
+      "Jupiter": {
+        "longitude": 226.790546,
+        "sign_index": 7,
+        "degree_in_sign": 16.790546,
+        "is_retrograde": false,
+        "speed": 0.166578
+      },
+      "Venus": {
+        "longitude": 244.159699,
+        "sign_index": 8,
+        "degree_in_sign": 4.159699,
+        "is_retrograde": false,
+        "speed": 1.203792
+      },
+      "Saturn": {
+        "longitude": 20.800589,
+        "sign_index": 0,
+        "degree_in_sign": 20.800589,
+        "is_retrograde": false,
+        "speed": 0.021498
+      },
+      "Rahu": {
+        "longitude": 3.091836,
+        "sign_index": 0,
+        "degree_in_sign": 3.091836,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 183.091836,
+        "sign_index": 6,
+        "degree_in_sign": 3.091836,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

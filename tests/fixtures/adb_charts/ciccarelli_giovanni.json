@@ -1,0 +1,108 @@
+{
+  "adb_id": 53257,
+  "name": "Ciccarelli, Giovanni",
+  "given_name": "Giovanni Ciccarelli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424909.5,
+    "year": 1927,
+    "month": 1,
+    "day": 29,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Civitanova Marche",
+    "country": "Italy",
+    "lat": 43.3,
+    "lon": 13.733333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ciccarelli,_Giovanni",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/1478\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 23.527695,
+    "lagna": 173.527695,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.838589,
+    "jd_ut": 2424909.5,
+    "planets": {
+      "Sun": {
+        "longitude": 285.249187,
+        "sign_index": 9,
+        "degree_in_sign": 15.249187,
+        "is_retrograde": false,
+        "speed": 1.016069
+      },
+      "Moon": {
+        "longitude": 229.463611,
+        "sign_index": 7,
+        "degree_in_sign": 19.463611,
+        "is_retrograde": false,
+        "speed": 14.581565
+      },
+      "Mars": {
+        "longitude": 25.602744,
+        "sign_index": 0,
+        "degree_in_sign": 25.602744,
+        "is_retrograde": false,
+        "speed": 0.440077
+      },
+      "Mercury": {
+        "longitude": 285.539827,
+        "sign_index": 9,
+        "degree_in_sign": 15.539827,
+        "is_retrograde": false,
+        "speed": 1.718517
+      },
+      "Jupiter": {
+        "longitude": 309.545536,
+        "sign_index": 10,
+        "degree_in_sign": 9.545536,
+        "is_retrograde": false,
+        "speed": 0.23059
+      },
+      "Venus": {
+        "longitude": 301.614437,
+        "sign_index": 10,
+        "degree_in_sign": 1.614437,
+        "is_retrograde": false,
+        "speed": 1.250915
+      },
+      "Saturn": {
+        "longitude": 222.955843,
+        "sign_index": 7,
+        "degree_in_sign": 12.955843,
+        "is_retrograde": false,
+        "speed": 0.074732
+      },
+      "Rahu": {
+        "longitude": 72.657096,
+        "sign_index": 2,
+        "degree_in_sign": 12.657096,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 252.657096,
+        "sign_index": 8,
+        "degree_in_sign": 12.657096,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

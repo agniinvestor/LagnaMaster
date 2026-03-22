@@ -1,0 +1,108 @@
+{
+  "adb_id": 56309,
+  "name": "Clayderman, Richard",
+  "given_name": "Richard Clayderman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434740.291667,
+    "year": 1953,
+    "month": 12,
+    "day": 28,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clayderman,_Richard",
+  "source_notes": "Collection Régine Ruet.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 25.983737,
+    "lagna": 85.983737,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.214466,
+    "jd_ut": 2434740.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 253.55028,
+        "sign_index": 8,
+        "degree_in_sign": 13.55028,
+        "is_retrograde": false,
+        "speed": 1.019145
+      },
+      "Moon": {
+        "longitude": 169.908742,
+        "sign_index": 5,
+        "degree_in_sign": 19.908742,
+        "is_retrograde": false,
+        "speed": 15.117546
+      },
+      "Mars": {
+        "longitude": 191.784564,
+        "sign_index": 6,
+        "degree_in_sign": 11.784564,
+        "is_retrograde": false,
+        "speed": 0.599157
+      },
+      "Mercury": {
+        "longitude": 243.798568,
+        "sign_index": 8,
+        "degree_in_sign": 3.798568,
+        "is_retrograde": false,
+        "speed": 1.543641
+      },
+      "Jupiter": {
+        "longitude": 56.187775,
+        "sign_index": 1,
+        "degree_in_sign": 26.187775,
+        "is_retrograde": true,
+        "speed": -0.124113
+      },
+      "Venus": {
+        "longitude": 245.843274,
+        "sign_index": 8,
+        "degree_in_sign": 5.843274,
+        "is_retrograde": false,
+        "speed": 1.2582
+      },
+      "Saturn": {
+        "longitude": 194.011319,
+        "sign_index": 6,
+        "degree_in_sign": 14.011319,
+        "is_retrograde": false,
+        "speed": 0.079757
+      },
+      "Rahu": {
+        "longitude": 271.703107,
+        "sign_index": 9,
+        "degree_in_sign": 1.703107,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 91.703107,
+        "sign_index": 3,
+        "degree_in_sign": 1.703107,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

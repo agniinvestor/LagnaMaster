@@ -1,0 +1,108 @@
+{
+  "adb_id": 69410,
+  "name": "Chabrier, Michel",
+  "given_name": "Michel Chabrier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432576.645833,
+    "year": 1948,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "04:30",
+    "time_type": "s",
+    "hour": 4.5,
+    "time_unknown": false,
+    "place": "Remiremont",
+    "country": "France",
+    "lat": 48.016667,
+    "lon": 6.583333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chabrier,_Michel",
+  "source_notes": "Didier Geslain archive, 'sport athlétisme' pdf file, p. 25.\\n",
+  "categories": [
+    "Vocation : Sports : Track and Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 22.536086,
+    "lagna": 202.536086,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.131736,
+    "jd_ut": 2432576.645833,
+    "planets": {
+      "Sun": {
+        "longitude": 281.964412,
+        "sign_index": 9,
+        "degree_in_sign": 11.964412,
+        "is_retrograde": false,
+        "speed": 1.016236
+      },
+      "Moon": {
+        "longitude": 99.317301,
+        "sign_index": 3,
+        "degree_in_sign": 9.317301,
+        "is_retrograde": false,
+        "speed": 13.600848
+      },
+      "Mars": {
+        "longitude": 132.444525,
+        "sign_index": 4,
+        "degree_in_sign": 12.444525,
+        "is_retrograde": true,
+        "speed": -0.231044
+      },
+      "Mercury": {
+        "longitude": 296.610982,
+        "sign_index": 9,
+        "degree_in_sign": 26.610982,
+        "is_retrograde": false,
+        "speed": 1.630289
+      },
+      "Jupiter": {
+        "longitude": 237.133706,
+        "sign_index": 7,
+        "degree_in_sign": 27.133706,
+        "is_retrograde": false,
+        "speed": 0.189928
+      },
+      "Venus": {
+        "longitude": 316.727833,
+        "sign_index": 10,
+        "degree_in_sign": 16.727833,
+        "is_retrograde": false,
+        "speed": 1.219932
+      },
+      "Saturn": {
+        "longitude": 117.231964,
+        "sign_index": 3,
+        "degree_in_sign": 27.231964,
+        "is_retrograde": true,
+        "speed": -0.076981
+      },
+      "Rahu": {
+        "longitude": 26.359155,
+        "sign_index": 0,
+        "degree_in_sign": 26.359155,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 206.359155,
+        "sign_index": 6,
+        "degree_in_sign": 26.359155,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

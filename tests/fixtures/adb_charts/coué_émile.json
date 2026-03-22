@@ -1,0 +1,114 @@
+{
+  "adb_id": 2447,
+  "name": "Coué, Émile",
+  "given_name": "Émile Coué",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2399371.613657,
+    "year": 1857,
+    "month": 2,
+    "day": 26,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "l",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Troyes",
+    "country": "France",
+    "lat": 48.3,
+    "lon": 4.083333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coué,_Émile",
+  "source_notes": "Originally this entry had 3pm, quoting B.C. in hand from Steinbrecher.\\nOn 15 May 2017 the time was changed to 3 AM after Sy Scholfield forwarded birth certificate (acte n° 144) stating \"ce matin, à trois heures\" (at three o'clock this morning). Grazia Bordoni's Science file quotes Infosophia also for 3 AM.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Pneumonia",
+    "Lifestyle : Work : Same Job more than 10 yrs",
+    "Vocation : Healing Fields : Alternative methods",
+    "Vocation : Medical : Pharmacist",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : Historic figure",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 8.980974,
+    "lagna": 218.980974,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.862363,
+    "jd_ut": 2399371.613657,
+    "planets": {
+      "Sun": {
+        "longitude": 315.636573,
+        "sign_index": 10,
+        "degree_in_sign": 15.636573,
+        "is_retrograde": false,
+        "speed": 1.004511
+      },
+      "Moon": {
+        "longitude": 337.494976,
+        "sign_index": 11,
+        "degree_in_sign": 7.494976,
+        "is_retrograde": false,
+        "speed": 18.072162
+      },
+      "Mars": {
+        "longitude": 341.038857,
+        "sign_index": 11,
+        "degree_in_sign": 11.038857,
+        "is_retrograde": false,
+        "speed": 0.765998
+      },
+      "Mercury": {
+        "longitude": 288.684269,
+        "sign_index": 9,
+        "degree_in_sign": 18.684269,
+        "is_retrograde": false,
+        "speed": 1.021579
+      },
+      "Jupiter": {
+        "longitude": 349.77272,
+        "sign_index": 11,
+        "degree_in_sign": 19.77272,
+        "is_retrograde": false,
+        "speed": 0.22061
+      },
+      "Venus": {
+        "longitude": 2.033174,
+        "sign_index": 0,
+        "degree_in_sign": 2.033174,
+        "is_retrograde": false,
+        "speed": 1.01454
+      },
+      "Saturn": {
+        "longitude": 75.525746,
+        "sign_index": 2,
+        "degree_in_sign": 15.525746,
+        "is_retrograde": true,
+        "speed": -0.020339
+      },
+      "Rahu": {
+        "longitude": 345.963717,
+        "sign_index": 11,
+        "degree_in_sign": 15.963717,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 165.963717,
+        "sign_index": 5,
+        "degree_in_sign": 15.963717,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

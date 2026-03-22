@@ -1,0 +1,113 @@
+{
+  "adb_id": 3631,
+  "name": "Cárdenas, Lázaro",
+  "given_name": "Lázaro Cárdenas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413335.212407,
+    "year": 1895,
+    "month": 5,
+    "day": 21,
+    "calendar": "g",
+    "time": "10:15",
+    "time_type": "l",
+    "hour": 10.25,
+    "time_unknown": false,
+    "place": "Jiquilpan de Juárez",
+    "country": "Mexico",
+    "lat": 19.983333,
+    "lon": -102.716667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cárdenas,_Lázaro",
+  "source_notes": "Sy Scholfield provided birth registry entry from Michoacán state archives. Previously Steinbrecher quoted same data from birth record.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Business : Top executive",
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Heads of state"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 22.596492,
+    "lagna": 82.596492,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.396106,
+    "jd_ut": 2413335.212407,
+    "planets": {
+      "Sun": {
+        "longitude": 37.950289,
+        "sign_index": 1,
+        "degree_in_sign": 7.950289,
+        "is_retrograde": false,
+        "speed": 0.961556
+      },
+      "Moon": {
+        "longitude": 3.232437,
+        "sign_index": 0,
+        "degree_in_sign": 3.232437,
+        "is_retrograde": false,
+        "speed": 7.690599
+      },
+      "Mars": {
+        "longitude": 85.416773,
+        "sign_index": 2,
+        "degree_in_sign": 25.416773,
+        "is_retrograde": false,
+        "speed": 0.607859
+      },
+      "Mercury": {
+        "longitude": 55.864719,
+        "sign_index": 1,
+        "degree_in_sign": 25.864719,
+        "is_retrograde": false,
+        "speed": 1.741449
+      },
+      "Jupiter": {
+        "longitude": 74.74405,
+        "sign_index": 2,
+        "degree_in_sign": 14.74405,
+        "is_retrograde": false,
+        "speed": 0.201726
+      },
+      "Venus": {
+        "longitude": 77.52261,
+        "sign_index": 2,
+        "degree_in_sign": 17.52261,
+        "is_retrograde": false,
+        "speed": 1.149129
+      },
+      "Saturn": {
+        "longitude": 189.593773,
+        "sign_index": 6,
+        "degree_in_sign": 9.593773,
+        "is_retrograde": true,
+        "speed": -0.062054
+      },
+      "Rahu": {
+        "longitude": 326.002881,
+        "sign_index": 10,
+        "degree_in_sign": 26.002881,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 146.002881,
+        "sign_index": 4,
+        "degree_in_sign": 26.002881,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 70198,
+  "name": "Carré, Anthony",
+  "given_name": "Anthony Carré",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446092.364583,
+    "year": 1985,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "21:45",
+    "time_type": "s",
+    "hour": 21.75,
+    "time_unknown": false,
+    "place": "Saint-Georges-de-Didonne",
+    "country": "France",
+    "lat": 45.605556,
+    "lon": -0.998611
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carré,_Anthony",
+  "source_notes": "Didier Geslain archive, 'hippisme jockeys' pdf file, p. 43.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 2.38812,
+    "lagna": 122.38812,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.648565,
+    "jd_ut": 2446092.364583,
+    "planets": {
+      "Sun": {
+        "longitude": 283.214108,
+        "sign_index": 9,
+        "degree_in_sign": 13.214108,
+        "is_retrograde": false,
+        "speed": 1.01655
+      },
+      "Moon": {
+        "longitude": 347.798331,
+        "sign_index": 11,
+        "degree_in_sign": 17.798331,
+        "is_retrograde": false,
+        "speed": 10.274604
+      },
+      "Mars": {
+        "longitude": 331.17722,
+        "sign_index": 11,
+        "degree_in_sign": 1.17722,
+        "is_retrograde": false,
+        "speed": 0.756731
+      },
+      "Mercury": {
+        "longitude": 267.880408,
+        "sign_index": 8,
+        "degree_in_sign": 27.880408,
+        "is_retrograde": false,
+        "speed": 1.522146
+      },
+      "Jupiter": {
+        "longitude": 273.85962,
+        "sign_index": 9,
+        "degree_in_sign": 3.85962,
+        "is_retrograde": false,
+        "speed": 0.233131
+      },
+      "Venus": {
+        "longitude": 330.170616,
+        "sign_index": 11,
+        "degree_in_sign": 0.170616,
+        "is_retrograde": false,
+        "speed": 0.981969
+      },
+      "Saturn": {
+        "longitude": 213.169925,
+        "sign_index": 7,
+        "degree_in_sign": 3.169925,
+        "is_retrograde": false,
+        "speed": 0.064037
+      },
+      "Rahu": {
+        "longitude": 30.133585,
+        "sign_index": 1,
+        "degree_in_sign": 0.133585,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 210.133585,
+        "sign_index": 7,
+        "degree_in_sign": 0.133585,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

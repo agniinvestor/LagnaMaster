@@ -1,0 +1,113 @@
+{
+  "adb_id": 96037,
+  "name": "Cros, Gaston",
+  "given_name": "Gaston Cros",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2401054.56287,
+    "year": 1861,
+    "month": 10,
+    "day": 6,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Saverne",
+    "country": "France",
+    "lat": 48.733333,
+    "lon": 7.366667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cros,_Gaston",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file (Bas-Rhin archives, no. 126). \\n",
+  "categories": [
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Killed",
+    "Vocation : Military : Military service",
+    "Vocation : Military : Wounded",
+    "Vocation : Science : Other Science"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 13.245832,
+    "lagna": 103.245832,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.926687,
+    "jd_ut": 2401054.56287,
+    "planets": {
+      "Sun": {
+        "longitude": 170.848007,
+        "sign_index": 5,
+        "degree_in_sign": 20.848007,
+        "is_retrograde": false,
+        "speed": 0.987726
+      },
+      "Moon": {
+        "longitude": 196.304283,
+        "sign_index": 6,
+        "degree_in_sign": 16.304283,
+        "is_retrograde": false,
+        "speed": 18.875671
+      },
+      "Mars": {
+        "longitude": 157.457348,
+        "sign_index": 5,
+        "degree_in_sign": 7.457348,
+        "is_retrograde": false,
+        "speed": 0.644027
+      },
+      "Mercury": {
+        "longitude": 191.439368,
+        "sign_index": 6,
+        "degree_in_sign": 11.439368,
+        "is_retrograde": false,
+        "speed": 1.395485
+      },
+      "Jupiter": {
+        "longitude": 143.391116,
+        "sign_index": 4,
+        "degree_in_sign": 23.391116,
+        "is_retrograde": false,
+        "speed": 0.204049
+      },
+      "Venus": {
+        "longitude": 208.688999,
+        "sign_index": 6,
+        "degree_in_sign": 28.688999,
+        "is_retrograde": false,
+        "speed": 1.194073
+      },
+      "Saturn": {
+        "longitude": 144.703968,
+        "sign_index": 4,
+        "degree_in_sign": 24.703968,
+        "is_retrograde": false,
+        "speed": 0.11735
+      },
+      "Rahu": {
+        "longitude": 256.780626,
+        "sign_index": 8,
+        "degree_in_sign": 16.780626,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 76.780626,
+        "sign_index": 2,
+        "degree_in_sign": 16.780626,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

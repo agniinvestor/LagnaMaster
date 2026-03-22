@@ -1,0 +1,110 @@
+{
+  "adb_id": 50094,
+  "name": "Cruise, Suri",
+  "given_name": "Suri Cruise",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2453843.934722,
+    "year": 2006,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "03:26",
+    "time_type": "d",
+    "hour": 3.433333,
+    "time_unknown": false,
+    "place": "Santa Monica",
+    "country": "California",
+    "lat": 34.016667,
+    "lon": -118.483333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cruise,_Suri",
+  "source_notes": "Sarah Van Sanden forwarded a copy of the birth certificate found online; Julia Earl did the same.\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Parents divorced"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 4.424717,
+    "lagna": 274.424717,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.945016,
+    "jd_ut": 2453843.934722,
+    "planets": {
+      "Sun": {
+        "longitude": 4.305255,
+        "sign_index": 0,
+        "degree_in_sign": 4.305255,
+        "is_retrograde": false,
+        "speed": 0.97723
+      },
+      "Moon": {
+        "longitude": 240.36074,
+        "sign_index": 8,
+        "degree_in_sign": 0.36074,
+        "is_retrograde": false,
+        "speed": 8.665076
+      },
+      "Mars": {
+        "longitude": 68.595977,
+        "sign_index": 2,
+        "degree_in_sign": 8.595977,
+        "is_retrograde": false,
+        "speed": 0.579666
+      },
+      "Mercury": {
+        "longitude": 338.612269,
+        "sign_index": 11,
+        "degree_in_sign": 8.612269,
+        "is_retrograde": false,
+        "speed": 1.362931
+      },
+      "Jupiter": {
+        "longitude": 202.047963,
+        "sign_index": 6,
+        "degree_in_sign": 22.047963,
+        "is_retrograde": true,
+        "speed": -0.115636
+      },
+      "Venus": {
+        "longitude": 319.348036,
+        "sign_index": 10,
+        "degree_in_sign": 19.348036,
+        "is_retrograde": false,
+        "speed": 1.094839
+      },
+      "Saturn": {
+        "longitude": 100.581619,
+        "sign_index": 3,
+        "degree_in_sign": 10.581619,
+        "is_retrograde": false,
+        "speed": 0.023225
+      },
+      "Rahu": {
+        "longitude": 339.362256,
+        "sign_index": 11,
+        "degree_in_sign": 9.362256,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 159.362256,
+        "sign_index": 5,
+        "degree_in_sign": 9.362256,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

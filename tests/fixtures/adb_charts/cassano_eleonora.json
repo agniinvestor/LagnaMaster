@@ -1,0 +1,108 @@
+{
+  "adb_id": 74697,
+  "name": "Cassano, Eleonora",
+  "given_name": "Eleonora Cassano",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438766.215278,
+    "year": 1965,
+    "month": 1,
+    "day": 5,
+    "calendar": "g",
+    "time": "14:10",
+    "time_type": "d",
+    "hour": 14.166667,
+    "time_unknown": false,
+    "place": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6,
+    "lon": -58.45
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassano,_Eleonora",
+  "source_notes": "Castellanos quotes the astrologer Virginia Lopez\\n\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 11.756359,
+    "lagna": 341.756359,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.368409,
+    "jd_ut": 2438766.215278,
+    "planets": {
+      "Sun": {
+        "longitude": 261.811683,
+        "sign_index": 8,
+        "degree_in_sign": 21.811683,
+        "is_retrograde": false,
+        "speed": 1.019516
+      },
+      "Moon": {
+        "longitude": 292.852217,
+        "sign_index": 9,
+        "degree_in_sign": 22.852217,
+        "is_retrograde": false,
+        "speed": 7.654006
+      },
+      "Mars": {
+        "longitude": 151.682413,
+        "sign_index": 5,
+        "degree_in_sign": 1.682413,
+        "is_retrograde": false,
+        "speed": 0.24163
+      },
+      "Mercury": {
+        "longitude": 238.85102,
+        "sign_index": 7,
+        "degree_in_sign": 28.85102,
+        "is_retrograde": false,
+        "speed": 0.845696
+      },
+      "Jupiter": {
+        "longitude": 22.777998,
+        "sign_index": 0,
+        "degree_in_sign": 22.777998,
+        "is_retrograde": true,
+        "speed": -0.016355
+      },
+      "Venus": {
+        "longitude": 238.365718,
+        "sign_index": 7,
+        "degree_in_sign": 28.365718,
+        "is_retrograde": false,
+        "speed": 1.24927
+      },
+      "Saturn": {
+        "longitude": 308.367239,
+        "sign_index": 10,
+        "degree_in_sign": 8.367239,
+        "is_retrograde": false,
+        "speed": 0.096057
+      },
+      "Rahu": {
+        "longitude": 58.361158,
+        "sign_index": 1,
+        "degree_in_sign": 28.361158,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 238.361158,
+        "sign_index": 7,
+        "degree_in_sign": 28.361158,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

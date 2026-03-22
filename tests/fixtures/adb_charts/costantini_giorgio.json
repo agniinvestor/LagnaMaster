@@ -1,0 +1,109 @@
+{
+  "adb_id": 71713,
+  "name": "Costantini, Giorgio",
+  "given_name": "Giorgio Costantini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417671.6875,
+    "year": 1907,
+    "month": 4,
+    "day": 6,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "San Michele al Tagliamento",
+    "country": "Italy",
+    "lat": 45.766667,
+    "lon": 12.983333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costantini,_Giorgio",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 22.331431,
+    "lagna": 322.331431,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.561882,
+    "jd_ut": 2417671.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 352.671532,
+        "sign_index": 11,
+        "degree_in_sign": 22.671532,
+        "is_retrograde": false,
+        "speed": 0.983836
+      },
+      "Moon": {
+        "longitude": 269.921772,
+        "sign_index": 8,
+        "degree_in_sign": 29.921772,
+        "is_retrograde": false,
+        "speed": 9.967939
+      },
+      "Mars": {
+        "longitude": 249.52906,
+        "sign_index": 8,
+        "degree_in_sign": 9.52906,
+        "is_retrograde": false,
+        "speed": 0.464841
+      },
+      "Mercury": {
+        "longitude": 327.345029,
+        "sign_index": 10,
+        "degree_in_sign": 27.345029,
+        "is_retrograde": false,
+        "speed": 0.446928
+      },
+      "Jupiter": {
+        "longitude": 70.83284,
+        "sign_index": 2,
+        "degree_in_sign": 10.83284,
+        "is_retrograde": false,
+        "speed": 0.115508
+      },
+      "Venus": {
+        "longitude": 312.264972,
+        "sign_index": 10,
+        "degree_in_sign": 12.264972,
+        "is_retrograde": false,
+        "speed": 1.171021
+      },
+      "Saturn": {
+        "longitude": 328.465512,
+        "sign_index": 10,
+        "degree_in_sign": 28.465512,
+        "is_retrograde": false,
+        "speed": 0.116047
+      },
+      "Rahu": {
+        "longitude": 96.203924,
+        "sign_index": 3,
+        "degree_in_sign": 6.203924,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 276.203924,
+        "sign_index": 9,
+        "degree_in_sign": 6.203924,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

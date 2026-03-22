@@ -1,0 +1,110 @@
+{
+  "adb_id": 85640,
+  "name": "Carruthers, Peter A.",
+  "given_name": "Peter A. Carruthers",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428082.953472,
+    "year": 1935,
+    "month": 10,
+    "day": 7,
+    "calendar": "g",
+    "time": "04:53",
+    "time_type": "s",
+    "hour": 4.883333,
+    "time_unknown": false,
+    "place": "Lafayette",
+    "country": "Indiana",
+    "lat": 40.416667,
+    "lon": -86.883333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carruthers,_Peter_A.",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Physics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.29132,
+    "lagna": 135.29132,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.95992,
+    "jd_ut": 2428082.953472,
+    "planets": {
+      "Sun": {
+        "longitude": 170.279009,
+        "sign_index": 5,
+        "degree_in_sign": 20.279009,
+        "is_retrograde": false,
+        "speed": 0.986665
+      },
+      "Moon": {
+        "longitude": 283.829243,
+        "sign_index": 9,
+        "degree_in_sign": 13.829243,
+        "is_retrograde": false,
+        "speed": 17.791697
+      },
+      "Mars": {
+        "longitude": 231.539268,
+        "sign_index": 7,
+        "degree_in_sign": 21.539268,
+        "is_retrograde": false,
+        "speed": 0.711678
+      },
+      "Mercury": {
+        "longitude": 189.751301,
+        "sign_index": 6,
+        "degree_in_sign": 9.751301,
+        "is_retrograde": true,
+        "speed": -0.159017
+      },
+      "Jupiter": {
+        "longitude": 210.231,
+        "sign_index": 7,
+        "degree_in_sign": 0.231,
+        "is_retrograde": false,
+        "speed": 0.193355
+      },
+      "Venus": {
+        "longitude": 134.752362,
+        "sign_index": 4,
+        "degree_in_sign": 14.752362,
+        "is_retrograde": false,
+        "speed": 0.281256
+      },
+      "Saturn": {
+        "longitude": 311.365988,
+        "sign_index": 10,
+        "degree_in_sign": 11.365988,
+        "is_retrograde": true,
+        "speed": -0.050001
+      },
+      "Rahu": {
+        "longitude": 264.489204,
+        "sign_index": 8,
+        "degree_in_sign": 24.489204,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 84.489204,
+        "sign_index": 2,
+        "degree_in_sign": 24.489204,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 55704,
+  "name": "Castro, Roland",
+  "given_name": "Roland Castro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429919.166667,
+    "year": 1940,
+    "month": 10,
+    "day": 16,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "d",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Limoges",
+    "country": "France",
+    "lat": 45.833333,
+    "lon": 1.266667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro,_Roland",
+  "source_notes": "Collection Didier Geslain (acte 1448)\\n",
+  "categories": [
+    "Vocation : Building Trades : Architect/ Planner",
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 6.63582,
+    "lagna": 306.63582,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.030126,
+    "jd_ut": 2429919.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 180.107118,
+        "sign_index": 6,
+        "degree_in_sign": 0.107118,
+        "is_retrograde": false,
+        "speed": 0.992116
+      },
+      "Moon": {
+        "longitude": 3.872217,
+        "sign_index": 0,
+        "degree_in_sign": 3.872217,
+        "is_retrograde": false,
+        "speed": 13.792946
+      },
+      "Mars": {
+        "longitude": 164.11205,
+        "sign_index": 5,
+        "degree_in_sign": 14.11205,
+        "is_retrograde": false,
+        "speed": 0.646709
+      },
+      "Mercury": {
+        "longitude": 204.126176,
+        "sign_index": 6,
+        "degree_in_sign": 24.126176,
+        "is_retrograde": false,
+        "speed": 1.145303
+      },
+      "Jupiter": {
+        "longitude": 19.869408,
+        "sign_index": 0,
+        "degree_in_sign": 19.869408,
+        "is_retrograde": true,
+        "speed": -0.120729
+      },
+      "Venus": {
+        "longitude": 138.121721,
+        "sign_index": 4,
+        "degree_in_sign": 18.121721,
+        "is_retrograde": false,
+        "speed": 1.154007
+      },
+      "Saturn": {
+        "longitude": 19.696829,
+        "sign_index": 0,
+        "degree_in_sign": 19.696829,
+        "is_retrograde": true,
+        "speed": -0.073316
+      },
+      "Rahu": {
+        "longitude": 167.184465,
+        "sign_index": 5,
+        "degree_in_sign": 17.184465,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 347.184465,
+        "sign_index": 11,
+        "degree_in_sign": 17.184465,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 5858,
+  "name": "Charrat, Janine",
+  "given_name": "Janine Charrat",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423991.041667,
+    "year": 1924,
+    "month": 7,
+    "day": 24,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "d",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Grenoble",
+    "country": "France",
+    "lat": 45.166667,
+    "lon": 5.716667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charrat,_Janine",
+  "source_notes": "Steinbrecher quotes B.R.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Vocation : Business : Business owner",
+    "Vocation : Education : Administrator",
+    "Vocation : Entertain/Music : Dancer/ Teacher",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 24.145532,
+    "lagna": 174.145532,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.803474,
+    "jd_ut": 2423991.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 98.513937,
+        "sign_index": 3,
+        "degree_in_sign": 8.513937,
+        "is_retrograde": false,
+        "speed": 0.955167
+      },
+      "Moon": {
+        "longitude": 17.196224,
+        "sign_index": 0,
+        "degree_in_sign": 17.196224,
+        "is_retrograde": false,
+        "speed": 12.727722
+      },
+      "Mars": {
+        "longitude": 312.509225,
+        "sign_index": 10,
+        "degree_in_sign": 12.509225,
+        "is_retrograde": true,
+        "speed": -0.001128
+      },
+      "Mercury": {
+        "longitude": 117.355841,
+        "sign_index": 3,
+        "degree_in_sign": 27.355841,
+        "is_retrograde": false,
+        "speed": 1.688999
+      },
+      "Jupiter": {
+        "longitude": 227.536081,
+        "sign_index": 7,
+        "degree_in_sign": 17.536081,
+        "is_retrograde": true,
+        "speed": -0.041477
+      },
+      "Venus": {
+        "longitude": 68.293893,
+        "sign_index": 2,
+        "degree_in_sign": 8.293893,
+        "is_retrograde": false,
+        "speed": 0.053436
+      },
+      "Saturn": {
+        "longitude": 183.348384,
+        "sign_index": 6,
+        "degree_in_sign": 3.348384,
+        "is_retrograde": false,
+        "speed": 0.041074
+      },
+      "Rahu": {
+        "longitude": 121.328116,
+        "sign_index": 4,
+        "degree_in_sign": 1.328116,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 301.328116,
+        "sign_index": 10,
+        "degree_in_sign": 1.328116,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 72567,
+  "name": "Camino Brent, Enrique",
+  "given_name": "Enrique Camino Brent",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418480.208333,
+    "year": 1909,
+    "month": 6,
+    "day": 22,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camino_Brent,_Enrique",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 12.635119,
+    "lagna": 132.635119,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.592791,
+    "jd_ut": 2418480.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 68.004397,
+        "sign_index": 2,
+        "degree_in_sign": 8.004397,
+        "is_retrograde": false,
+        "speed": 0.954025
+      },
+      "Moon": {
+        "longitude": 124.767852,
+        "sign_index": 4,
+        "degree_in_sign": 4.767852,
+        "is_retrograde": false,
+        "speed": 9.343582
+      },
+      "Mars": {
+        "longitude": 323.816849,
+        "sign_index": 10,
+        "degree_in_sign": 23.816849,
+        "is_retrograde": false,
+        "speed": 0.547724
+      },
+      "Mercury": {
+        "longitude": 57.010543,
+        "sign_index": 1,
+        "degree_in_sign": 27.010543,
+        "is_retrograde": true,
+        "speed": -0.286381
+      },
+      "Jupiter": {
+        "longitude": 135.723323,
+        "sign_index": 4,
+        "degree_in_sign": 15.723323,
+        "is_retrograde": false,
+        "speed": 0.135005
+      },
+      "Venus": {
+        "longitude": 82.752871,
+        "sign_index": 2,
+        "degree_in_sign": 22.752871,
+        "is_retrograde": false,
+        "speed": 1.224736
+      },
+      "Saturn": {
+        "longitude": 359.052834,
+        "sign_index": 11,
+        "degree_in_sign": 29.052834,
+        "is_retrograde": false,
+        "speed": 0.069714
+      },
+      "Rahu": {
+        "longitude": 53.358706,
+        "sign_index": 1,
+        "degree_in_sign": 23.358706,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 233.358706,
+        "sign_index": 7,
+        "degree_in_sign": 23.358706,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

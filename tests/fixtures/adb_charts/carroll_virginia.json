@@ -1,0 +1,116 @@
+{
+  "adb_id": 90568,
+  "name": "Carroll, Virginia",
+  "given_name": "Virginia Carroll",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420104.388889,
+    "year": 1913,
+    "month": 12,
+    "day": 2,
+    "calendar": "g",
+    "time": "13:20",
+    "time_type": "s",
+    "hour": 13.333333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carroll,_Virginia",
+  "source_notes": "Sy Scholfield provided birth certificate (\"Virginia Elizabeth Carroll\").\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Beauty : Model",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 19.091417,
+    "lagna": 319.091417,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.654883,
+    "jd_ut": 2420104.388889,
+    "planets": {
+      "Sun": {
+        "longitude": 227.465119,
+        "sign_index": 7,
+        "degree_in_sign": 17.465119,
+        "is_retrograde": false,
+        "speed": 1.014644
+      },
+      "Moon": {
+        "longitude": 287.425498,
+        "sign_index": 9,
+        "degree_in_sign": 17.425498,
+        "is_retrograde": false,
+        "speed": 8.678988
+      },
+      "Mars": {
+        "longitude": 91.657161,
+        "sign_index": 3,
+        "degree_in_sign": 1.657161,
+        "is_retrograde": true,
+        "speed": -0.084384
+      },
+      "Mercury": {
+        "longitude": 210.002789,
+        "sign_index": 7,
+        "degree_in_sign": 0.002789,
+        "is_retrograde": false,
+        "speed": 0.035751
+      },
+      "Jupiter": {
+        "longitude": 266.070732,
+        "sign_index": 8,
+        "degree_in_sign": 26.070732,
+        "is_retrograde": false,
+        "speed": 0.207582
+      },
+      "Venus": {
+        "longitude": 210.478115,
+        "sign_index": 7,
+        "degree_in_sign": 0.478115,
+        "is_retrograde": false,
+        "speed": 1.254679
+      },
+      "Saturn": {
+        "longitude": 52.388426,
+        "sign_index": 1,
+        "degree_in_sign": 22.388426,
+        "is_retrograde": true,
+        "speed": -0.082127
+      },
+      "Rahu": {
+        "longitude": 327.28997,
+        "sign_index": 10,
+        "degree_in_sign": 27.28997,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 147.28997,
+        "sign_index": 4,
+        "degree_in_sign": 27.28997,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

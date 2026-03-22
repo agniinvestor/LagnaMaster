@@ -1,0 +1,109 @@
+{
+  "adb_id": 52737,
+  "name": "Calligaris, Novella",
+  "given_name": "Novella Calligaris",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435104.041667,
+    "year": 1954,
+    "month": 12,
+    "day": 27,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Padua",
+    "country": "Italy",
+    "lat": 45.416667,
+    "lon": 11.883333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calligaris,_Novella",
+  "source_notes": "steinbrecher Collection: Bordoni/1 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Sports : Swimming",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 8.793519,
+    "lagna": 8.793519,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.228375,
+    "jd_ut": 2435104.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 252.015621,
+        "sign_index": 8,
+        "degree_in_sign": 12.015621,
+        "is_retrograde": false,
+        "speed": 1.01938
+      },
+      "Moon": {
+        "longitude": 277.110207,
+        "sign_index": 9,
+        "degree_in_sign": 7.110207,
+        "is_retrograde": false,
+        "speed": 8.610019
+      },
+      "Mars": {
+        "longitude": 323.374157,
+        "sign_index": 10,
+        "degree_in_sign": 23.374157,
+        "is_retrograde": false,
+        "speed": 0.718379
+      },
+      "Mercury": {
+        "longitude": 253.190319,
+        "sign_index": 8,
+        "degree_in_sign": 13.190319,
+        "is_retrograde": false,
+        "speed": 1.600528
+      },
+      "Jupiter": {
+        "longitude": 94.154059,
+        "sign_index": 3,
+        "degree_in_sign": 4.154059,
+        "is_retrograde": true,
+        "speed": -0.116651
+      },
+      "Venus": {
+        "longitude": 209.453717,
+        "sign_index": 6,
+        "degree_in_sign": 29.453717,
+        "is_retrograde": false,
+        "speed": 0.664127
+      },
+      "Saturn": {
+        "longitude": 204.699648,
+        "sign_index": 6,
+        "degree_in_sign": 24.699648,
+        "is_retrograde": false,
+        "speed": 0.093793
+      },
+      "Rahu": {
+        "longitude": 252.427247,
+        "sign_index": 8,
+        "degree_in_sign": 12.427247,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 72.427247,
+        "sign_index": 2,
+        "degree_in_sign": 12.427247,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

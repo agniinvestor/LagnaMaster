@@ -1,0 +1,108 @@
+{
+  "adb_id": 53982,
+  "name": "Cook, Greg",
+  "given_name": "Greg Cook",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432144.940972,
+    "year": 1946,
+    "month": 11,
+    "day": 20,
+    "calendar": "g",
+    "time": "05:35",
+    "time_type": "s",
+    "hour": 5.583333,
+    "time_unknown": false,
+    "place": "Dayton",
+    "country": "Ohio",
+    "lat": 39.766667,
+    "lon": -84.2
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cook,_Greg",
+  "source_notes": "Steinbrecher collection: Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Sports : Football"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 18.319758,
+    "lagna": 168.319758,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.115229,
+    "jd_ut": 2432144.940972,
+    "planets": {
+      "Sun": {
+        "longitude": 214.397445,
+        "sign_index": 7,
+        "degree_in_sign": 4.397445,
+        "is_retrograde": false,
+        "speed": 1.009995
+      },
+      "Moon": {
+        "longitude": 178.824722,
+        "sign_index": 5,
+        "degree_in_sign": 28.824722,
+        "is_retrograde": false,
+        "speed": 10.987333
+      },
+      "Mars": {
+        "longitude": 226.801934,
+        "sign_index": 7,
+        "degree_in_sign": 16.801934,
+        "is_retrograde": false,
+        "speed": 0.731505
+      },
+      "Mercury": {
+        "longitude": 217.431424,
+        "sign_index": 7,
+        "degree_in_sign": 7.431424,
+        "is_retrograde": true,
+        "speed": -1.33446
+      },
+      "Jupiter": {
+        "longitude": 198.94252,
+        "sign_index": 6,
+        "degree_in_sign": 18.94252,
+        "is_retrograde": false,
+        "speed": 0.215322
+      },
+      "Venus": {
+        "longitude": 210.127731,
+        "sign_index": 7,
+        "degree_in_sign": 0.127731,
+        "is_retrograde": true,
+        "speed": -0.593353
+      },
+      "Saturn": {
+        "longitude": 105.779734,
+        "sign_index": 3,
+        "degree_in_sign": 15.779734,
+        "is_retrograde": false,
+        "speed": 0.000355
+      },
+      "Rahu": {
+        "longitude": 49.236085,
+        "sign_index": 1,
+        "degree_in_sign": 19.236085,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 229.236085,
+        "sign_index": 7,
+        "degree_in_sign": 19.236085,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

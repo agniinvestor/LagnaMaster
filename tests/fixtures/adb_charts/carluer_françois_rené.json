@@ -1,0 +1,108 @@
+{
+  "adb_id": 67987,
+  "name": "Carluer, François-René",
+  "given_name": "François-René Carluer",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441389.833333,
+    "year": 1972,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Rennes",
+    "country": "France",
+    "lat": 48.083333,
+    "lon": -1.683333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carluer,_François-René",
+  "source_notes": "Didier Geslain archive, 'navigateurs' pdf file, p. 9.\\n",
+  "categories": [
+    "Vocation : Sports : Sailing/ Boating"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 21.196495,
+    "lagna": 351.196495,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.468735,
+    "jd_ut": 2441389.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 329.377793,
+        "sign_index": 10,
+        "degree_in_sign": 29.377793,
+        "is_retrograde": false,
+        "speed": 0.997495
+      },
+      "Moon": {
+        "longitude": 300.297922,
+        "sign_index": 10,
+        "degree_in_sign": 0.297922,
+        "is_retrograde": false,
+        "speed": 10.876521
+      },
+      "Mars": {
+        "longitude": 27.451086,
+        "sign_index": 0,
+        "degree_in_sign": 27.451086,
+        "is_retrograde": false,
+        "speed": 0.656588
+      },
+      "Mercury": {
+        "longitude": 347.607614,
+        "sign_index": 11,
+        "degree_in_sign": 17.607614,
+        "is_retrograde": false,
+        "speed": 1.099762
+      },
+      "Jupiter": {
+        "longitude": 252.131353,
+        "sign_index": 8,
+        "degree_in_sign": 12.131353,
+        "is_retrograde": false,
+        "speed": 0.121619
+      },
+      "Venus": {
+        "longitude": 13.483954,
+        "sign_index": 0,
+        "degree_in_sign": 13.483954,
+        "is_retrograde": false,
+        "speed": 1.113428
+      },
+      "Saturn": {
+        "longitude": 37.700805,
+        "sign_index": 1,
+        "degree_in_sign": 7.700805,
+        "is_retrograde": false,
+        "speed": 0.072907
+      },
+      "Rahu": {
+        "longitude": 279.330277,
+        "sign_index": 9,
+        "degree_in_sign": 9.330277,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 99.330277,
+        "sign_index": 3,
+        "degree_in_sign": 9.330277,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 73444,
+  "name": "Coolus, Romain",
+  "given_name": "Romain Coolus",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403477.713009,
+    "year": 1868,
+    "month": 5,
+    "day": 25,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Rennes",
+    "country": "France",
+    "lat": 48.083333,
+    "lon": -1.683333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coolus,_Romain",
+  "source_notes": "Sy Scholfield cites birth data from registry (\"Rennes/acte n°545\") quoted in \"Henri de Toulouse-Lautrec ou les labyrinthes du Temps: Art et géométrie temporelle\" by Gérard and Julie Conton (Mémoires du Monde, 2015), p. 404; death data on same page (\"Paris IIeme/acte n°361\").\\n",
+  "categories": [
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 3.109663,
+    "lagna": 33.109663,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.019305,
+    "jd_ut": 2403477.713009,
+    "planets": {
+      "Sun": {
+        "longitude": 42.203877,
+        "sign_index": 1,
+        "degree_in_sign": 12.203877,
+        "is_retrograde": false,
+        "speed": 0.959922
+      },
+      "Moon": {
+        "longitude": 82.267358,
+        "sign_index": 2,
+        "degree_in_sign": 22.267358,
+        "is_retrograde": false,
+        "speed": 17.907807
+      },
+      "Mars": {
+        "longitude": 10.884347,
+        "sign_index": 0,
+        "degree_in_sign": 10.884347,
+        "is_retrograde": false,
+        "speed": 0.745713
+      },
+      "Mercury": {
+        "longitude": 53.987104,
+        "sign_index": 1,
+        "degree_in_sign": 23.987104,
+        "is_retrograde": false,
+        "speed": 2.03032
+      },
+      "Jupiter": {
+        "longitude": 345.149983,
+        "sign_index": 11,
+        "degree_in_sign": 15.149983,
+        "is_retrograde": false,
+        "speed": 0.181164
+      },
+      "Venus": {
+        "longitude": 86.243403,
+        "sign_index": 2,
+        "degree_in_sign": 26.243403,
+        "is_retrograde": false,
+        "speed": 0.786468
+      },
+      "Saturn": {
+        "longitude": 220.252244,
+        "sign_index": 7,
+        "degree_in_sign": 10.252244,
+        "is_retrograde": true,
+        "speed": -0.074537
+      },
+      "Rahu": {
+        "longitude": 128.372715,
+        "sign_index": 4,
+        "degree_in_sign": 8.372715,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 308.372715,
+        "sign_index": 10,
+        "degree_in_sign": 8.372715,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

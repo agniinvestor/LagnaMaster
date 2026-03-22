@@ -1,0 +1,111 @@
+{
+  "adb_id": 104952,
+  "name": "Cyvoct, Antoine",
+  "given_name": "Antoine Cyvoct",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2400834.528194,
+    "year": 1861,
+    "month": 2,
+    "day": 28,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cyvoct,_Antoine",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file (Lyon, 4th arr., no 127).\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Civil/ Political",
+    "Passions : Criminal Perpetrator : Prison sentence",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 18.352002,
+    "lagna": 198.352002,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.918277,
+    "jd_ut": 2400834.528194,
+    "planets": {
+      "Sun": {
+        "longitude": 317.532928,
+        "sign_index": 10,
+        "degree_in_sign": 17.532928,
+        "is_retrograde": false,
+        "speed": 1.002853
+      },
+      "Moon": {
+        "longitude": 177.855015,
+        "sign_index": 5,
+        "degree_in_sign": 27.855015,
+        "is_retrograde": false,
+        "speed": 11.395658
+      },
+      "Mars": {
+        "longitude": 15.105667,
+        "sign_index": 0,
+        "degree_in_sign": 15.105667,
+        "is_retrograde": false,
+        "speed": 0.676859
+      },
+      "Mercury": {
+        "longitude": 335.625695,
+        "sign_index": 11,
+        "degree_in_sign": 5.625695,
+        "is_retrograde": false,
+        "speed": 0.965434
+      },
+      "Jupiter": {
+        "longitude": 117.920932,
+        "sign_index": 3,
+        "degree_in_sign": 27.920932,
+        "is_retrograde": true,
+        "speed": -0.118205
+      },
+      "Venus": {
+        "longitude": 299.046545,
+        "sign_index": 9,
+        "degree_in_sign": 29.046545,
+        "is_retrograde": false,
+        "speed": 1.243247
+      },
+      "Saturn": {
+        "longitude": 133.947698,
+        "sign_index": 4,
+        "degree_in_sign": 13.947698,
+        "is_retrograde": true,
+        "speed": -0.080089
+      },
+      "Rahu": {
+        "longitude": 268.440735,
+        "sign_index": 8,
+        "degree_in_sign": 28.440735,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 88.440735,
+        "sign_index": 2,
+        "degree_in_sign": 28.440735,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

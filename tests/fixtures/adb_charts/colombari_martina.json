@@ -1,0 +1,108 @@
+{
+  "adb_id": 53412,
+  "name": "Colombari, Martina",
+  "given_name": "Martina Colombari",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442603.916667,
+    "year": 1975,
+    "month": 7,
+    "day": 10,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "d",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Riccione",
+    "country": "Italy",
+    "lat": 43.983333,
+    "lon": 12.65
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colombari,_Martina",
+  "source_notes": "Ed Steinbrecher collection: Bordoni/6 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Beauty : Beauty Queen/ King"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.241586,
+    "lagna": 133.241586,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.515162,
+    "jd_ut": 2442603.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 84.024444,
+        "sign_index": 2,
+        "degree_in_sign": 24.024444,
+        "is_retrograde": false,
+        "speed": 0.953814
+      },
+      "Moon": {
+        "longitude": 101.36671,
+        "sign_index": 3,
+        "degree_in_sign": 11.36671,
+        "is_retrograde": false,
+        "speed": 11.010284
+      },
+      "Mars": {
+        "longitude": 13.01094,
+        "sign_index": 0,
+        "degree_in_sign": 13.01094,
+        "is_retrograde": false,
+        "speed": 0.698074
+      },
+      "Mercury": {
+        "longitude": 63.728184,
+        "sign_index": 2,
+        "degree_in_sign": 3.728184,
+        "is_retrograde": false,
+        "speed": 1.341724
+      },
+      "Jupiter": {
+        "longitude": 359.204916,
+        "sign_index": 11,
+        "degree_in_sign": 29.204916,
+        "is_retrograde": false,
+        "speed": 0.10744
+      },
+      "Venus": {
+        "longitude": 127.172119,
+        "sign_index": 4,
+        "degree_in_sign": 7.172119,
+        "is_retrograde": false,
+        "speed": 0.717542
+      },
+      "Saturn": {
+        "longitude": 88.308982,
+        "sign_index": 2,
+        "degree_in_sign": 28.308982,
+        "is_retrograde": false,
+        "speed": 0.129543
+      },
+      "Rahu": {
+        "longitude": 214.993527,
+        "sign_index": 7,
+        "degree_in_sign": 4.993527,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 34.993527,
+        "sign_index": 1,
+        "degree_in_sign": 4.993527,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

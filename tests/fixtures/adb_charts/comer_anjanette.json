@@ -1,0 +1,108 @@
+{
+  "adb_id": 50815,
+  "name": "Comer, Anjanette",
+  "given_name": "Anjanette Comer",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429482.78125,
+    "year": 1939,
+    "month": 8,
+    "day": 7,
+    "calendar": "g",
+    "time": "00:45",
+    "time_type": "s",
+    "hour": 0.75,
+    "time_unknown": false,
+    "place": "Dawson",
+    "country": "Texas",
+    "lat": 31.9,
+    "lon": -96.716667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comer,_Anjanette",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 19.290967,
+    "lagna": 19.290967,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.013441,
+    "jd_ut": 2429482.78125,
+    "planets": {
+      "Sun": {
+        "longitude": 110.853268,
+        "sign_index": 3,
+        "degree_in_sign": 20.853268,
+        "is_retrograde": false,
+        "speed": 0.958096
+      },
+      "Moon": {
+        "longitude": 8.546263,
+        "sign_index": 0,
+        "degree_in_sign": 8.546263,
+        "is_retrograde": false,
+        "speed": 11.22544
+      },
+      "Mars": {
+        "longitude": 272.752718,
+        "sign_index": 9,
+        "degree_in_sign": 2.752718,
+        "is_retrograde": true,
+        "speed": -0.208284
+      },
+      "Mercury": {
+        "longitude": 116.793908,
+        "sign_index": 3,
+        "degree_in_sign": 26.793908,
+        "is_retrograde": true,
+        "speed": -0.758498
+      },
+      "Jupiter": {
+        "longitude": 345.659583,
+        "sign_index": 11,
+        "degree_in_sign": 15.659583,
+        "is_retrograde": true,
+        "speed": -0.027628
+      },
+      "Venus": {
+        "longitude": 102.755417,
+        "sign_index": 3,
+        "degree_in_sign": 12.755417,
+        "is_retrograde": false,
+        "speed": 1.231676
+      },
+      "Saturn": {
+        "longitude": 8.214447,
+        "sign_index": 0,
+        "degree_in_sign": 8.214447,
+        "is_retrograde": false,
+        "speed": 0.011789
+      },
+      "Rahu": {
+        "longitude": 190.309431,
+        "sign_index": 6,
+        "degree_in_sign": 10.309431,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 10.309431,
+        "sign_index": 0,
+        "degree_in_sign": 10.309431,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

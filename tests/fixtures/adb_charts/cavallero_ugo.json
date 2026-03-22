@@ -1,0 +1,114 @@
+{
+  "adb_id": 847,
+  "name": "Cavallero, Ugo",
+  "given_name": "Ugo Cavallero",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407979.309074,
+    "year": 1880,
+    "month": 9,
+    "day": 20,
+    "calendar": "g",
+    "time": "20:15",
+    "time_type": "s",
+    "hour": 20.25,
+    "time_unknown": false,
+    "place": "Casale Monferrato",
+    "country": "Italy",
+    "lat": 45.133333,
+    "lon": 8.45
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "ari",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavallero,_Ugo",
+  "source_notes": "Gauquelin Vol 3/1168  (8:15 PM Rome time)\\n",
+  "categories": [
+    "Lifestyle : Work : Loss of job",
+    "Personal : Death : Suicide",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Public office",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 7.014286,
+    "lagna": 7.014286,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.191372,
+    "jd_ut": 2407979.309074,
+    "planets": {
+      "Sun": {
+        "longitude": 155.980843,
+        "sign_index": 5,
+        "degree_in_sign": 5.980843,
+        "is_retrograde": false,
+        "speed": 0.978398
+      },
+      "Moon": {
+        "longitude": 2.987683,
+        "sign_index": 0,
+        "degree_in_sign": 2.987683,
+        "is_retrograde": false,
+        "speed": 12.784679
+      },
+      "Mars": {
+        "longitude": 167.213271,
+        "sign_index": 5,
+        "degree_in_sign": 17.213271,
+        "is_retrograde": false,
+        "speed": 0.655746
+      },
+      "Mercury": {
+        "longitude": 158.834296,
+        "sign_index": 5,
+        "degree_in_sign": 8.834296,
+        "is_retrograde": false,
+        "speed": 1.781712
+      },
+      "Jupiter": {
+        "longitude": 354.475184,
+        "sign_index": 11,
+        "degree_in_sign": 24.475184,
+        "is_retrograde": true,
+        "speed": -0.121173
+      },
+      "Venus": {
+        "longitude": 174.644976,
+        "sign_index": 5,
+        "degree_in_sign": 24.644976,
+        "is_retrograde": false,
+        "speed": 1.236228
+      },
+      "Saturn": {
+        "longitude": 5.35332,
+        "sign_index": 0,
+        "degree_in_sign": 5.35332,
+        "is_retrograde": true,
+        "speed": -0.063575
+      },
+      "Rahu": {
+        "longitude": 249.823547,
+        "sign_index": 8,
+        "degree_in_sign": 9.823547,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 69.823547,
+        "sign_index": 2,
+        "degree_in_sign": 9.823547,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

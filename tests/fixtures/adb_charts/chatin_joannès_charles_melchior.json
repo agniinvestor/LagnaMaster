@@ -1,0 +1,112 @@
+{
+  "adb_id": 81036,
+  "name": "Chatin, Joannès Charles Melchior",
+  "given_name": "Joannès Charles Melchior Chatin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2395893.160185,
+    "year": 1847,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "l",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chatin,_Joannès_Charles_Melchior",
+  "source_notes": "Grazia Bordoni's Science file quotes Lescaut.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Education : Teacher",
+    "Vocation : Military : Military service",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.349117,
+    "lagna": 224.349117,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.729417,
+    "jd_ut": 2395893.160185,
+    "planets": {
+      "Sun": {
+        "longitude": 124.260967,
+        "sign_index": 4,
+        "degree_in_sign": 4.260967,
+        "is_retrograde": false,
+        "speed": 0.962999
+      },
+      "Moon": {
+        "longitude": 219.897133,
+        "sign_index": 7,
+        "degree_in_sign": 9.897133,
+        "is_retrograde": false,
+        "speed": 9.448331
+      },
+      "Mars": {
+        "longitude": 15.168185,
+        "sign_index": 0,
+        "degree_in_sign": 15.168185,
+        "is_retrograde": false,
+        "speed": 0.420425
+      },
+      "Mercury": {
+        "longitude": 108.388967,
+        "sign_index": 3,
+        "degree_in_sign": 18.388967,
+        "is_retrograde": false,
+        "speed": 0.179821
+      },
+      "Jupiter": {
+        "longitude": 79.951493,
+        "sign_index": 2,
+        "degree_in_sign": 19.951493,
+        "is_retrograde": false,
+        "speed": 0.1916
+      },
+      "Venus": {
+        "longitude": 166.828074,
+        "sign_index": 5,
+        "degree_in_sign": 16.828074,
+        "is_retrograde": false,
+        "speed": 0.67147
+      },
+      "Saturn": {
+        "longitude": 318.850029,
+        "sign_index": 10,
+        "degree_in_sign": 18.850029,
+        "is_retrograde": true,
+        "speed": -0.072496
+      },
+      "Rahu": {
+        "longitude": 170.294457,
+        "sign_index": 5,
+        "degree_in_sign": 20.294457,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 350.294457,
+        "sign_index": 11,
+        "degree_in_sign": 20.294457,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

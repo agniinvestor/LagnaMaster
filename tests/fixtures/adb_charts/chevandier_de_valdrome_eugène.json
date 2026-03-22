@@ -1,0 +1,110 @@
+{
+  "adb_id": 81044,
+  "name": "Chevandier de Valdrome, Eugène",
+  "given_name": "Eugène Chevandier de Valdrome",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2382375.438708,
+    "year": 1810,
+    "month": 8,
+    "day": 15,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Saint-Quirin",
+    "country": "France",
+    "lat": 48.610833,
+    "lon": 7.065278
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevandier_de_Valdrome,_Eugène",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Business : Other Business",
+    "Vocation : Politics : Public office",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 24.630679,
+    "lagna": 24.630679,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.212824,
+    "jd_ut": 2382375.438708,
+    "planets": {
+      "Sun": {
+        "longitude": 121.133596,
+        "sign_index": 4,
+        "degree_in_sign": 1.133596,
+        "is_retrograde": false,
+        "speed": 0.961443
+      },
+      "Moon": {
+        "longitude": 315.588511,
+        "sign_index": 10,
+        "degree_in_sign": 15.588511,
+        "is_retrograde": false,
+        "speed": 11.437024
+      },
+      "Mars": {
+        "longitude": 102.879903,
+        "sign_index": 3,
+        "degree_in_sign": 12.879903,
+        "is_retrograde": false,
+        "speed": 0.642094
+      },
+      "Mercury": {
+        "longitude": 127.97843,
+        "sign_index": 4,
+        "degree_in_sign": 7.97843,
+        "is_retrograde": false,
+        "speed": 1.90559
+      },
+      "Jupiter": {
+        "longitude": 38.161258,
+        "sign_index": 1,
+        "degree_in_sign": 8.161258,
+        "is_retrograde": false,
+        "speed": 0.109053
+      },
+      "Venus": {
+        "longitude": 159.705842,
+        "sign_index": 5,
+        "degree_in_sign": 9.705842,
+        "is_retrograde": false,
+        "speed": 1.169711
+      },
+      "Saturn": {
+        "longitude": 227.461202,
+        "sign_index": 7,
+        "degree_in_sign": 17.461202,
+        "is_retrograde": false,
+        "speed": 0.003902
+      },
+      "Rahu": {
+        "longitude": 166.627924,
+        "sign_index": 5,
+        "degree_in_sign": 16.627924,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.627924,
+        "sign_index": 11,
+        "degree_in_sign": 16.627924,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 19635,
+  "name": "Colombo, Gabriele",
+  "given_name": "Gabriele Colombo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441448.979167,
+    "year": 1972,
+    "month": 5,
+    "day": 11,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Varese",
+    "country": "Italy",
+    "lat": 45.8,
+    "lon": 8.8
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colombo,_Gabriele",
+  "source_notes": "Bordoni quotes B.C. Datanotizie 9/l996\\n",
+  "categories": [
+    "Traits : Body : Constitution hardy",
+    "Vocation : Sports : Race Bikes",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 13.506266,
+    "lagna": 103.506266,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.470996,
+    "jd_ut": 2441448.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 27.387908,
+        "sign_index": 0,
+        "degree_in_sign": 27.387908,
+        "is_retrograde": false,
+        "speed": 0.965991
+      },
+      "Moon": {
+        "longitude": 2.661483,
+        "sign_index": 0,
+        "degree_in_sign": 2.661483,
+        "is_retrograde": false,
+        "speed": 11.438082
+      },
+      "Mars": {
+        "longitude": 65.837545,
+        "sign_index": 2,
+        "degree_in_sign": 5.837545,
+        "is_retrograde": false,
+        "speed": 0.641387
+      },
+      "Mercury": {
+        "longitude": 4.210364,
+        "sign_index": 0,
+        "degree_in_sign": 4.210364,
+        "is_retrograde": false,
+        "speed": 1.505765
+      },
+      "Jupiter": {
+        "longitude": 254.427975,
+        "sign_index": 8,
+        "degree_in_sign": 14.427975,
+        "is_retrograde": true,
+        "speed": -0.050762
+      },
+      "Venus": {
+        "longitude": 66.991737,
+        "sign_index": 2,
+        "degree_in_sign": 6.991737,
+        "is_retrograde": false,
+        "speed": 0.506115
+      },
+      "Saturn": {
+        "longitude": 43.922601,
+        "sign_index": 1,
+        "degree_in_sign": 13.922601,
+        "is_retrograde": false,
+        "speed": 0.126505
+      },
+      "Rahu": {
+        "longitude": 276.196019,
+        "sign_index": 9,
+        "degree_in_sign": 6.196019,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 96.196019,
+        "sign_index": 3,
+        "degree_in_sign": 6.196019,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

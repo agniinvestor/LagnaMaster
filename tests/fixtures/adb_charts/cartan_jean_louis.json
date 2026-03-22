@@ -1,0 +1,108 @@
+{
+  "adb_id": 47804,
+  "name": "Cartan, Jean Louis",
+  "given_name": "Jean Louis Cartan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410242.107778,
+    "year": 1886,
+    "month": 12,
+    "day": 1,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Nancy",
+    "country": "France",
+    "lat": 48.683333,
+    "lon": 6.2
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cartan,_Jean_Louis",
+  "source_notes": "Gauquelin  Vol.  4/1674 (3:00 PM Paris time)\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 4.167284,
+    "lagna": 4.167284,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.277868,
+    "jd_ut": 2410242.107778,
+    "planets": {
+      "Sun": {
+        "longitude": 227.104205,
+        "sign_index": 7,
+        "degree_in_sign": 17.104205,
+        "is_retrograde": false,
+        "speed": 1.01448
+      },
+      "Moon": {
+        "longitude": 295.513885,
+        "sign_index": 9,
+        "degree_in_sign": 25.513885,
+        "is_retrograde": false,
+        "speed": 8.60914
+      },
+      "Mars": {
+        "longitude": 260.024309,
+        "sign_index": 8,
+        "degree_in_sign": 20.024309,
+        "is_retrograde": false,
+        "speed": 0.770635
+      },
+      "Mercury": {
+        "longitude": 231.592899,
+        "sign_index": 7,
+        "degree_in_sign": 21.592899,
+        "is_retrograde": true,
+        "speed": -1.30459
+      },
+      "Jupiter": {
+        "longitude": 185.01744,
+        "sign_index": 6,
+        "degree_in_sign": 5.01744,
+        "is_retrograde": false,
+        "speed": 0.186448
+      },
+      "Venus": {
+        "longitude": 226.711867,
+        "sign_index": 7,
+        "degree_in_sign": 16.711867,
+        "is_retrograde": false,
+        "speed": 1.257959
+      },
+      "Saturn": {
+        "longitude": 89.548398,
+        "sign_index": 2,
+        "degree_in_sign": 29.548398,
+        "is_retrograde": true,
+        "speed": -0.049277
+      },
+      "Rahu": {
+        "longitude": 129.91304,
+        "sign_index": 4,
+        "degree_in_sign": 9.91304,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.91304,
+        "sign_index": 10,
+        "degree_in_sign": 9.91304,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 38534,
+  "name": "Carratti, Cristiano",
+  "given_name": "Cristiano Carratti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440730.833333,
+    "year": 1970,
+    "month": 5,
+    "day": 24,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Acqui Terme",
+    "country": "Italy",
+    "lat": 44.683333,
+    "lon": 8.466667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carratti,_Cristiano",
+  "source_notes": "Bordoni quotes B.C.\\n",
+  "categories": [
+    "Vocation : Sports : Tennis"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 12.398349,
+    "lagna": 72.398349,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.443535,
+    "jd_ut": 2440730.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 39.293064,
+        "sign_index": 1,
+        "degree_in_sign": 9.293064,
+        "is_retrograde": false,
+        "speed": 0.960524
+      },
+      "Moon": {
+        "longitude": 260.582853,
+        "sign_index": 8,
+        "degree_in_sign": 20.582853,
+        "is_retrograde": false,
+        "speed": 14.075227
+      },
+      "Mars": {
+        "longitude": 60.609339,
+        "sign_index": 2,
+        "degree_in_sign": 0.609339,
+        "is_retrograde": false,
+        "speed": 0.666344
+      },
+      "Mercury": {
+        "longitude": 19.914946,
+        "sign_index": 0,
+        "degree_in_sign": 19.914946,
+        "is_retrograde": false,
+        "speed": 0.154855
+      },
+      "Jupiter": {
+        "longitude": 183.949664,
+        "sign_index": 6,
+        "degree_in_sign": 3.949664,
+        "is_retrograde": true,
+        "speed": -0.085155
+      },
+      "Venus": {
+        "longitude": 68.643958,
+        "sign_index": 2,
+        "degree_in_sign": 8.643958,
+        "is_retrograde": false,
+        "speed": 1.20214
+      },
+      "Saturn": {
+        "longitude": 21.396592,
+        "sign_index": 0,
+        "degree_in_sign": 21.396592,
+        "is_retrograde": false,
+        "speed": 0.124398
+      },
+      "Rahu": {
+        "longitude": 314.252032,
+        "sign_index": 10,
+        "degree_in_sign": 14.252032,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 134.252032,
+        "sign_index": 4,
+        "degree_in_sign": 14.252032,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 70520,
+  "name": "Challier, Clément Etienne",
+  "given_name": "Clément Etienne Challier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2397344.691852,
+    "year": 1851,
+    "month": 8,
+    "day": 10,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Toulon",
+    "country": "France",
+    "lat": 43.116667,
+    "lon": 5.933333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Challier,_Clément_Etienne",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 62.\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 2.613154,
+    "lagna": 92.613154,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.784894,
+    "jd_ut": 2397344.691852,
+    "planets": {
+      "Sun": {
+        "longitude": 115.130474,
+        "sign_index": 3,
+        "degree_in_sign": 25.130474,
+        "is_retrograde": false,
+        "speed": 0.959273
+      },
+      "Moon": {
+        "longitude": 275.351385,
+        "sign_index": 9,
+        "degree_in_sign": 5.351385,
+        "is_retrograde": false,
+        "speed": 12.685406
+      },
+      "Mars": {
+        "longitude": 55.337144,
+        "sign_index": 1,
+        "degree_in_sign": 25.337144,
+        "is_retrograde": false,
+        "speed": 0.659024
+      },
+      "Mercury": {
+        "longitude": 137.585415,
+        "sign_index": 4,
+        "degree_in_sign": 17.585415,
+        "is_retrograde": false,
+        "speed": 1.498668
+      },
+      "Jupiter": {
+        "longitude": 176.309979,
+        "sign_index": 5,
+        "degree_in_sign": 26.309979,
+        "is_retrograde": false,
+        "speed": 0.1508
+      },
+      "Venus": {
+        "longitude": 101.364757,
+        "sign_index": 3,
+        "degree_in_sign": 11.364757,
+        "is_retrograde": false,
+        "speed": 1.228287
+      },
+      "Saturn": {
+        "longitude": 12.507816,
+        "sign_index": 0,
+        "degree_in_sign": 12.507816,
+        "is_retrograde": false,
+        "speed": 0.01178
+      },
+      "Rahu": {
+        "longitude": 93.374664,
+        "sign_index": 3,
+        "degree_in_sign": 3.374664,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 273.374664,
+        "sign_index": 9,
+        "degree_in_sign": 3.374664,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

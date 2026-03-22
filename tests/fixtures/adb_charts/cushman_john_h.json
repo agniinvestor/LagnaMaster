@@ -1,0 +1,113 @@
+{
+  "adb_id": 94801,
+  "name": "Cushman, John H.",
+  "given_name": "John H. Cushman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422965.726593,
+    "year": 1921,
+    "month": 10,
+    "day": 3,
+    "calendar": "g",
+    "time": "13:15",
+    "time_type": "l",
+    "hour": 13.25,
+    "time_unknown": false,
+    "place": "Tianjin (Tianjin Shi)",
+    "country": "China",
+    "lat": 39.142222,
+    "lon": 117.176667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cushman,_John_H.",
+  "source_notes": "Sy Scholfield provided U.S. Consular Report of Birth, copy on file (born at Tientsin U. S. Army Hospital). \\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 23.445939,
+    "lagna": 233.445939,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.764274,
+    "jd_ut": 2422965.726593,
+    "planets": {
+      "Sun": {
+        "longitude": 166.694848,
+        "sign_index": 5,
+        "degree_in_sign": 16.694848,
+        "is_retrograde": false,
+        "speed": 0.98525
+      },
+      "Moon": {
+        "longitude": 189.740363,
+        "sign_index": 6,
+        "degree_in_sign": 9.740363,
+        "is_retrograde": false,
+        "speed": 9.607251
+      },
+      "Mars": {
+        "longitude": 135.863692,
+        "sign_index": 4,
+        "degree_in_sign": 15.863692,
+        "is_retrograde": false,
+        "speed": 0.625927
+      },
+      "Mercury": {
+        "longitude": 191.526142,
+        "sign_index": 6,
+        "degree_in_sign": 11.526142,
+        "is_retrograde": false,
+        "speed": 1.154958
+      },
+      "Jupiter": {
+        "longitude": 158.803067,
+        "sign_index": 5,
+        "degree_in_sign": 8.803067,
+        "is_retrograde": false,
+        "speed": 0.215481
+      },
+      "Venus": {
+        "longitude": 135.784588,
+        "sign_index": 4,
+        "degree_in_sign": 15.784588,
+        "is_retrograde": false,
+        "speed": 1.216288
+      },
+      "Saturn": {
+        "longitude": 156.683113,
+        "sign_index": 5,
+        "degree_in_sign": 6.683113,
+        "is_retrograde": false,
+        "speed": 0.123121
+      },
+      "Rahu": {
+        "longitude": 175.6617,
+        "sign_index": 5,
+        "degree_in_sign": 25.6617,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 355.6617,
+        "sign_index": 11,
+        "degree_in_sign": 25.6617,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

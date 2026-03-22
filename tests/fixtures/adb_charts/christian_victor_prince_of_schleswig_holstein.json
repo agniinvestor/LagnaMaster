@@ -1,0 +1,108 @@
+{
+  "adb_id": 55623,
+  "name": "Christian Victor, Prince of Schleswig-Holstein",
+  "given_name": "Prince of Schleswig-Holstein Christian Victor",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2403071.208333,
+    "year": 1867,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Windsor",
+    "country": "England",
+    "lat": 51.483333,
+    "lon": -0.633333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian_Victor,_Prince_of_Schleswig-Holstein",
+  "source_notes": "Queen Victoria's journal, now available online, quoted on that day:\\n“We had a long (?) day...At last, at five o’clock a fine strong boy was born...”\\nhttp://www.queenvictoriasjournals.org/\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 20.763314,
+    "lagna": 140.763314,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.003767,
+    "jd_ut": 2403071.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 2.26976,
+        "sign_index": 0,
+        "degree_in_sign": 2.26976,
+        "is_retrograde": false,
+        "speed": 0.978069
+      },
+      "Moon": {
+        "longitude": 132.178084,
+        "sign_index": 4,
+        "degree_in_sign": 12.178084,
+        "is_retrograde": false,
+        "speed": 11.440649
+      },
+      "Mars": {
+        "longitude": 92.976255,
+        "sign_index": 3,
+        "degree_in_sign": 2.976255,
+        "is_retrograde": false,
+        "speed": 0.420719
+      },
+      "Mercury": {
+        "longitude": 337.532939,
+        "sign_index": 11,
+        "degree_in_sign": 7.532939,
+        "is_retrograde": false,
+        "speed": 0.419789
+      },
+      "Jupiter": {
+        "longitude": 307.960192,
+        "sign_index": 10,
+        "degree_in_sign": 7.960192,
+        "is_retrograde": false,
+        "speed": 0.184888
+      },
+      "Venus": {
+        "longitude": 321.478465,
+        "sign_index": 10,
+        "degree_in_sign": 21.478465,
+        "is_retrograde": false,
+        "speed": 1.162337
+      },
+      "Saturn": {
+        "longitude": 210.725824,
+        "sign_index": 7,
+        "degree_in_sign": 0.725824,
+        "is_retrograde": true,
+        "speed": -0.060943
+      },
+      "Rahu": {
+        "longitude": 149.914266,
+        "sign_index": 4,
+        "degree_in_sign": 29.914266,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 329.914266,
+        "sign_index": 10,
+        "degree_in_sign": 29.914266,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

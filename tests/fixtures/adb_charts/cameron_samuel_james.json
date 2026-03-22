@@ -1,0 +1,113 @@
+{
+  "adb_id": 80970,
+  "name": "Cameron, Samuel James",
+  "given_name": "Samuel James Cameron",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406991.520833,
+    "year": 1878,
+    "month": 1,
+    "day": 7,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cameron,_Samuel_James",
+  "source_notes": "Paul Wright quotes birth record\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Lifestyle : Social Life : Collector",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Physician",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 28.763022,
+    "lagna": 148.763022,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.153614,
+    "jd_ut": 2406991.520833,
+    "planets": {
+      "Sun": {
+        "longitude": 264.479655,
+        "sign_index": 8,
+        "degree_in_sign": 24.479655,
+        "is_retrograde": false,
+        "speed": 1.019531
+      },
+      "Moon": {
+        "longitude": 302.326195,
+        "sign_index": 10,
+        "degree_in_sign": 2.326195,
+        "is_retrograde": false,
+        "speed": 14.310629
+      },
+      "Mars": {
+        "longitude": 353.411219,
+        "sign_index": 11,
+        "degree_in_sign": 23.411219,
+        "is_retrograde": false,
+        "speed": 0.591947
+      },
+      "Mercury": {
+        "longitude": 273.245693,
+        "sign_index": 9,
+        "degree_in_sign": 3.245693,
+        "is_retrograde": true,
+        "speed": -0.963062
+      },
+      "Jupiter": {
+        "longitude": 263.369623,
+        "sign_index": 8,
+        "degree_in_sign": 23.369623,
+        "is_retrograde": false,
+        "speed": 0.232952
+      },
+      "Venus": {
+        "longitude": 308.449957,
+        "sign_index": 10,
+        "degree_in_sign": 8.449957,
+        "is_retrograde": false,
+        "speed": 0.72
+      },
+      "Saturn": {
+        "longitude": 323.667346,
+        "sign_index": 10,
+        "degree_in_sign": 23.667346,
+        "is_retrograde": false,
+        "speed": 0.081959
+      },
+      "Rahu": {
+        "longitude": 302.168546,
+        "sign_index": 10,
+        "degree_in_sign": 2.168546,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 122.168546,
+        "sign_index": 4,
+        "degree_in_sign": 2.168546,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

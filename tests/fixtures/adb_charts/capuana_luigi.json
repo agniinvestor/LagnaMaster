@@ -1,0 +1,111 @@
+{
+  "adb_id": 62614,
+  "name": "Capuana, Luigi",
+  "given_name": "Luigi Capuana",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2392887.834167,
+    "year": 1839,
+    "month": 5,
+    "day": 28,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Mineo",
+    "country": "Italy",
+    "lat": 37.266667,
+    "lon": 14.7
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capuana,_Luigi",
+  "source_notes": "Sy Scholfield quotes an online copy of birth certificate: http://it.wikipedia.org/wiki/File:Attonascita_capuana-1.jpg\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 20.192295,
+    "lagna": 80.192295,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.614558,
+    "jd_ut": 2392887.834167,
+    "planets": {
+      "Sun": {
+        "longitude": 44.646402,
+        "sign_index": 1,
+        "degree_in_sign": 14.646402,
+        "is_retrograde": false,
+        "speed": 0.95842
+      },
+      "Moon": {
+        "longitude": 222.942605,
+        "sign_index": 7,
+        "degree_in_sign": 12.942605,
+        "is_retrograde": false,
+        "speed": 15.119005
+      },
+      "Mars": {
+        "longitude": 146.034785,
+        "sign_index": 4,
+        "degree_in_sign": 26.034785,
+        "is_retrograde": false,
+        "speed": 0.336943
+      },
+      "Mercury": {
+        "longitude": 20.10692,
+        "sign_index": 0,
+        "degree_in_sign": 20.10692,
+        "is_retrograde": false,
+        "speed": 1.121141
+      },
+      "Jupiter": {
+        "longitude": 167.287834,
+        "sign_index": 5,
+        "degree_in_sign": 17.287834,
+        "is_retrograde": true,
+        "speed": -0.025982
+      },
+      "Venus": {
+        "longitude": 82.365705,
+        "sign_index": 2,
+        "degree_in_sign": 22.365705,
+        "is_retrograde": false,
+        "speed": 1.163525
+      },
+      "Saturn": {
+        "longitude": 225.492788,
+        "sign_index": 7,
+        "degree_in_sign": 15.492788,
+        "is_retrograde": true,
+        "speed": -0.074143
+      },
+      "Rahu": {
+        "longitude": 329.55318,
+        "sign_index": 10,
+        "degree_in_sign": 29.55318,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 149.55318,
+        "sign_index": 4,
+        "degree_in_sign": 29.55318,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

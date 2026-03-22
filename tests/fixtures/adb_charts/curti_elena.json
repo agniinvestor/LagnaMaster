@@ -1,0 +1,106 @@
+{
+  "adb_id": 52823,
+  "name": "Curti, Elena",
+  "given_name": "Elena Curti",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423346.625,
+    "year": 1922,
+    "month": 10,
+    "day": 19,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Milano",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curti,_Elena",
+  "source_notes": "Ed Steinbrecher collection: Bordoni/2 quotes birth certificate\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 7.640821,
+    "lagna": 127.640821,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.778837,
+    "jd_ut": 2423346.625,
+    "planets": {
+      "Sun": {
+        "longitude": 182.166014,
+        "sign_index": 6,
+        "degree_in_sign": 2.166014,
+        "is_retrograde": false,
+        "speed": 0.994097
+      },
+      "Moon": {
+        "longitude": 162.710853,
+        "sign_index": 5,
+        "degree_in_sign": 12.710853,
+        "is_retrograde": false,
+        "speed": 16.089786
+      },
+      "Mars": {
+        "longitude": 269.242572,
+        "sign_index": 8,
+        "degree_in_sign": 29.242572,
+        "is_retrograde": false,
+        "speed": 0.671928
+      },
+      "Mercury": {
+        "longitude": 174.434025,
+        "sign_index": 5,
+        "degree_in_sign": 24.434025,
+        "is_retrograde": true,
+        "speed": -0.92483
+      },
+      "Jupiter": {
+        "longitude": 185.547921,
+        "sign_index": 6,
+        "degree_in_sign": 5.547921,
+        "is_retrograde": false,
+        "speed": 0.217748
+      },
+      "Venus": {
+        "longitude": 222.283846,
+        "sign_index": 7,
+        "degree_in_sign": 12.283846,
+        "is_retrograde": false,
+        "speed": 0.53154
+      },
+      "Saturn": {
+        "longitude": 169.662153,
+        "sign_index": 5,
+        "degree_in_sign": 19.662153,
+        "is_retrograde": false,
+        "speed": 0.121173
+      },
+      "Rahu": {
+        "longitude": 155.477099,
+        "sign_index": 5,
+        "degree_in_sign": 5.477099,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 335.477099,
+        "sign_index": 11,
+        "degree_in_sign": 5.477099,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

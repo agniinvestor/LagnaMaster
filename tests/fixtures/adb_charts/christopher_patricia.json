@@ -1,0 +1,108 @@
+{
+  "adb_id": 50785,
+  "name": "Christopher, Patricia",
+  "given_name": "Patricia Christopher",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427865.086806,
+    "year": 1935,
+    "month": 3,
+    "day": 3,
+    "calendar": "g",
+    "time": "06:05",
+    "time_type": "s",
+    "hour": 6.083333,
+    "time_unknown": false,
+    "place": "San Francisco",
+    "country": "California",
+    "lat": 37.783333,
+    "lon": -122.416667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christopher,_Patricia",
+  "source_notes": "Steinbrecher collection: Lescaut quotes birth record in his collection\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 11.283076,
+    "lagna": 281.283076,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.95159,
+    "jd_ut": 2427865.086806,
+    "planets": {
+      "Sun": {
+        "longitude": 319.117533,
+        "sign_index": 10,
+        "degree_in_sign": 19.117533,
+        "is_retrograde": false,
+        "speed": 1.002835
+      },
+      "Moon": {
+        "longitude": 298.007723,
+        "sign_index": 9,
+        "degree_in_sign": 28.007723,
+        "is_retrograde": false,
+        "speed": 13.418958
+      },
+      "Mars": {
+        "longitude": 181.556428,
+        "sign_index": 6,
+        "degree_in_sign": 1.556428,
+        "is_retrograde": true,
+        "speed": -0.051526
+      },
+      "Mercury": {
+        "longitude": 295.952128,
+        "sign_index": 9,
+        "degree_in_sign": 25.952128,
+        "is_retrograde": false,
+        "speed": 0.159086
+      },
+      "Jupiter": {
+        "longitude": 210.274203,
+        "sign_index": 7,
+        "degree_in_sign": 0.274203,
+        "is_retrograde": false,
+        "speed": 0.020467
+      },
+      "Venus": {
+        "longitude": 343.922143,
+        "sign_index": 11,
+        "degree_in_sign": 13.922143,
+        "is_retrograde": false,
+        "speed": 1.233916
+      },
+      "Saturn": {
+        "longitude": 309.102917,
+        "sign_index": 10,
+        "degree_in_sign": 9.102917,
+        "is_retrograde": false,
+        "speed": 0.120255
+      },
+      "Rahu": {
+        "longitude": 276.034411,
+        "sign_index": 9,
+        "degree_in_sign": 6.034411,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 96.034411,
+        "sign_index": 3,
+        "degree_in_sign": 6.034411,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

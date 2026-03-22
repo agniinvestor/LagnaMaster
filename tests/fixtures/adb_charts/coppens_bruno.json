@@ -1,0 +1,108 @@
+{
+  "adb_id": 78233,
+  "name": "Coppens, Bruno",
+  "given_name": "Bruno Coppens",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437090.5,
+    "year": 1960,
+    "month": 6,
+    "day": 5,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Tournai",
+    "country": "Belgium",
+    "lat": 50.6,
+    "lon": 3.383333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coppens,_Bruno",
+  "source_notes": "Michael Mandl quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 14.218579,
+    "lagna": 284.218579,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.304332,
+    "jd_ut": 2437090.5,
+    "planets": {
+      "Sun": {
+        "longitude": 51.026593,
+        "sign_index": 1,
+        "degree_in_sign": 21.026593,
+        "is_retrograde": false,
+        "speed": 0.95685
+      },
+      "Moon": {
+        "longitude": 168.960991,
+        "sign_index": 5,
+        "degree_in_sign": 18.960991,
+        "is_retrograde": false,
+        "speed": 11.988337
+      },
+      "Mars": {
+        "longitude": 355.34089,
+        "sign_index": 11,
+        "degree_in_sign": 25.34089,
+        "is_retrograde": false,
+        "speed": 0.745483
+      },
+      "Mercury": {
+        "longitude": 70.40779,
+        "sign_index": 2,
+        "degree_in_sign": 10.40779,
+        "is_retrograde": false,
+        "speed": 1.681596
+      },
+      "Jupiter": {
+        "longitude": 247.307933,
+        "sign_index": 8,
+        "degree_in_sign": 7.307933,
+        "is_retrograde": true,
+        "speed": -0.117414
+      },
+      "Venus": {
+        "longitude": 46.202128,
+        "sign_index": 1,
+        "degree_in_sign": 16.202128,
+        "is_retrograde": false,
+        "speed": 1.227549
+      },
+      "Saturn": {
+        "longitude": 263.998453,
+        "sign_index": 8,
+        "degree_in_sign": 23.998453,
+        "is_retrograde": true,
+        "speed": -0.055246
+      },
+      "Rahu": {
+        "longitude": 147.160742,
+        "sign_index": 4,
+        "degree_in_sign": 27.160742,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 327.160742,
+        "sign_index": 10,
+        "degree_in_sign": 27.160742,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

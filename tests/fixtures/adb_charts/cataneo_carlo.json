@@ -1,0 +1,109 @@
+{
+  "adb_id": 71615,
+  "name": "Cataneo, Carlo",
+  "given_name": "Carlo Cataneo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426103.576389,
+    "year": 1930,
+    "month": 5,
+    "day": 7,
+    "calendar": "g",
+    "time": "02:50",
+    "time_type": "s",
+    "hour": 2.833333,
+    "time_unknown": false,
+    "place": "Milan",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cataneo,_Carlo",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Voice-Over"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 26.700267,
+    "lagna": 296.700267,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.884242,
+    "jd_ut": 2426103.576389,
+    "planets": {
+      "Sun": {
+        "longitude": 22.900146,
+        "sign_index": 0,
+        "degree_in_sign": 22.900146,
+        "is_retrograde": false,
+        "speed": 0.96754
+      },
+      "Moon": {
+        "longitude": 130.677114,
+        "sign_index": 4,
+        "degree_in_sign": 10.677114,
+        "is_retrograde": false,
+        "speed": 15.463679
+      },
+      "Mars": {
+        "longitude": 346.632107,
+        "sign_index": 11,
+        "degree_in_sign": 16.632107,
+        "is_retrograde": false,
+        "speed": 0.766586
+      },
+      "Mercury": {
+        "longitude": 39.566745,
+        "sign_index": 1,
+        "degree_in_sign": 9.566745,
+        "is_retrograde": false,
+        "speed": 0.159183
+      },
+      "Jupiter": {
+        "longitude": 55.701586,
+        "sign_index": 1,
+        "degree_in_sign": 25.701586,
+        "is_retrograde": false,
+        "speed": 0.211395
+      },
+      "Venus": {
+        "longitude": 45.12135,
+        "sign_index": 1,
+        "degree_in_sign": 15.12135,
+        "is_retrograde": false,
+        "speed": 1.219655
+      },
+      "Saturn": {
+        "longitude": 258.807451,
+        "sign_index": 8,
+        "degree_in_sign": 18.807451,
+        "is_retrograde": true,
+        "speed": -0.02484
+      },
+      "Rahu": {
+        "longitude": 9.380504,
+        "sign_index": 0,
+        "degree_in_sign": 9.380504,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 189.380504,
+        "sign_index": 6,
+        "degree_in_sign": 9.380504,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

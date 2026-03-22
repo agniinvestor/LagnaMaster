@@ -1,0 +1,109 @@
+{
+  "adb_id": 105311,
+  "name": "Caprino, Ivonne",
+  "given_name": "Ivonne Caprino",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434865.666667,
+    "year": 1954,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caprino,_Ivonne",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 18.70236,
+    "lagna": 18.70236,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.21926,
+    "jd_ut": 2434865.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 18.96411,
+        "sign_index": 0,
+        "degree_in_sign": 18.96411,
+        "is_retrograde": false,
+        "speed": 0.969995
+      },
+      "Moon": {
+        "longitude": 23.692701,
+        "sign_index": 0,
+        "degree_in_sign": 23.692701,
+        "is_retrograde": false,
+        "speed": 16.685252
+      },
+      "Mars": {
+        "longitude": 252.947693,
+        "sign_index": 8,
+        "degree_in_sign": 12.947693,
+        "is_retrograde": false,
+        "speed": 0.220451
+      },
+      "Mercury": {
+        "longitude": 12.253163,
+        "sign_index": 0,
+        "degree_in_sign": 12.253163,
+        "is_retrograde": false,
+        "speed": 2.069243
+      },
+      "Jupiter": {
+        "longitude": 62.455776,
+        "sign_index": 2,
+        "degree_in_sign": 2.455776,
+        "is_retrograde": false,
+        "speed": 0.194615
+      },
+      "Venus": {
+        "longitude": 41.961811,
+        "sign_index": 1,
+        "degree_in_sign": 11.961811,
+        "is_retrograde": false,
+        "speed": 1.219465
+      },
+      "Saturn": {
+        "longitude": 192.335968,
+        "sign_index": 6,
+        "degree_in_sign": 12.335968,
+        "is_retrograde": true,
+        "speed": -0.075358
+      },
+      "Rahu": {
+        "longitude": 265.059228,
+        "sign_index": 8,
+        "degree_in_sign": 25.059228,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 85.059228,
+        "sign_index": 2,
+        "degree_in_sign": 25.059228,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

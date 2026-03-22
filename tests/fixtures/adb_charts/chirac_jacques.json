@@ -1,0 +1,121 @@
+{
+  "adb_id": 7157,
+  "name": "Chirac, Jacques",
+  "given_name": "Jacques Chirac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427041.0,
+    "year": 1932,
+    "month": 11,
+    "day": 29,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chirac,_Jacques",
+  "source_notes": "Cadran No.18 quotes B.C. 4/1995.\\n",
+  "categories": [
+    "Traits : Body : Voice/Speech",
+    "Diagnoses : Body Part Problems : Circulatory problems",
+    "Family : Childhood : Only child",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Marriage - Compatible",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Foster, Step, or Adopted Kids",
+    "Family : Parenting : Kids 1-3",
+    "Family : Parenting : Kids - Noted",
+    "Family : Parenting : Kids -Traumatic event",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Heads of state",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 4.934697,
+    "lagna": 274.934697,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.920082,
+    "jd_ut": 2427041.0,
+    "planets": {
+      "Sun": {
+        "longitude": 224.159165,
+        "sign_index": 7,
+        "degree_in_sign": 14.159165,
+        "is_retrograde": false,
+        "speed": 1.013745
+      },
+      "Moon": {
+        "longitude": 245.250562,
+        "sign_index": 8,
+        "degree_in_sign": 5.250562,
+        "is_retrograde": false,
+        "speed": 11.06309
+      },
+      "Mars": {
+        "longitude": 134.236716,
+        "sign_index": 4,
+        "degree_in_sign": 14.236716,
+        "is_retrograde": false,
+        "speed": 0.426531
+      },
+      "Mercury": {
+        "longitude": 235.650757,
+        "sign_index": 7,
+        "degree_in_sign": 25.650757,
+        "is_retrograde": true,
+        "speed": -0.852143
+      },
+      "Jupiter": {
+        "longitude": 147.963862,
+        "sign_index": 4,
+        "degree_in_sign": 27.963862,
+        "is_retrograde": false,
+        "speed": 0.114544
+      },
+      "Venus": {
+        "longitude": 190.13723,
+        "sign_index": 6,
+        "degree_in_sign": 10.13723,
+        "is_retrograde": false,
+        "speed": 1.226579
+      },
+      "Saturn": {
+        "longitude": 277.835214,
+        "sign_index": 9,
+        "degree_in_sign": 7.835214,
+        "is_retrograde": false,
+        "speed": 0.08588
+      },
+      "Rahu": {
+        "longitude": 319.70448,
+        "sign_index": 10,
+        "degree_in_sign": 19.70448,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 139.70448,
+        "sign_index": 4,
+        "degree_in_sign": 19.70448,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

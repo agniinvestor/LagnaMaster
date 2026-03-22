@@ -1,0 +1,110 @@
+{
+  "adb_id": 58245,
+  "name": "Corman, Louis",
+  "given_name": "Louis Corman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415435.035174,
+    "year": 1901,
+    "month": 2,
+    "day": 19,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Roubaix",
+    "country": "France",
+    "lat": 50.7,
+    "lon": 3.166667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corman,_Louis",
+  "source_notes": "Taeger quotes L'astrologue Nr. 108 , B.C.\\n",
+  "categories": [
+    "Vocation : Healing Fields : Psychiatrist",
+    "Vocation : Medical : Physician",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 29.168992,
+    "lagna": 59.168992,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.476377,
+    "jd_ut": 2415435.035174,
+    "planets": {
+      "Sun": {
+        "longitude": 307.733268,
+        "sign_index": 10,
+        "degree_in_sign": 7.733268,
+        "is_retrograde": false,
+        "speed": 1.00822
+      },
+      "Moon": {
+        "longitude": 313.098009,
+        "sign_index": 10,
+        "degree_in_sign": 13.098009,
+        "is_retrograde": false,
+        "speed": 11.157021
+      },
+      "Mars": {
+        "longitude": 131.558408,
+        "sign_index": 4,
+        "degree_in_sign": 11.558408,
+        "is_retrograde": true,
+        "speed": -0.395178
+      },
+      "Mercury": {
+        "longitude": 325.810579,
+        "sign_index": 10,
+        "degree_in_sign": 25.810579,
+        "is_retrograde": false,
+        "speed": 1.041122
+      },
+      "Jupiter": {
+        "longitude": 253.679174,
+        "sign_index": 8,
+        "degree_in_sign": 13.679174,
+        "is_retrograde": false,
+        "speed": 0.176791
+      },
+      "Venus": {
+        "longitude": 289.97464,
+        "sign_index": 9,
+        "degree_in_sign": 19.97464,
+        "is_retrograde": false,
+        "speed": 1.246662
+      },
+      "Saturn": {
+        "longitude": 260.626288,
+        "sign_index": 8,
+        "degree_in_sign": 20.626288,
+        "is_retrograde": false,
+        "speed": 0.092443
+      },
+      "Rahu": {
+        "longitude": 214.728841,
+        "sign_index": 7,
+        "degree_in_sign": 4.728841,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 34.728841,
+        "sign_index": 1,
+        "degree_in_sign": 4.728841,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

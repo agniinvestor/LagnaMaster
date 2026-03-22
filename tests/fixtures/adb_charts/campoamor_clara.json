@@ -1,0 +1,111 @@
+{
+  "adb_id": 61389,
+  "name": "Campoamor, Clara",
+  "given_name": "Clara Campoamor",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410679.926898,
+    "year": 1888,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campoamor,_Clara",
+  "source_notes": "Eduardo Castellanos quotes La revolución española vista por una republicana - Univ. Autònoma de Barcelona, 2002 Page 19\\n\"Nació en Madrid, el día 12 de febrero de 1888, a las diez de la mañana\" ... \"Según consta en el Libro 44 del Registro Civil de Nacimientos, folio 249, n° 283. Distrito Universidad\" \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Activist/ feminist",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 21.471366,
+    "lagna": 351.471366,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.294604,
+    "jd_ut": 2410679.926898,
+    "planets": {
+      "Sun": {
+        "longitude": 300.895762,
+        "sign_index": 10,
+        "degree_in_sign": 0.895762,
+        "is_retrograde": false,
+        "speed": 1.011035
+      },
+      "Moon": {
+        "longitude": 306.138282,
+        "sign_index": 10,
+        "degree_in_sign": 6.138282,
+        "is_retrograde": false,
+        "speed": 9.274593
+      },
+      "Mars": {
+        "longitude": 185.48301,
+        "sign_index": 6,
+        "degree_in_sign": 5.48301,
+        "is_retrograde": false,
+        "speed": 0.219175
+      },
+      "Mercury": {
+        "longitude": 317.895904,
+        "sign_index": 10,
+        "degree_in_sign": 17.895904,
+        "is_retrograde": false,
+        "speed": 1.452607
+      },
+      "Jupiter": {
+        "longitude": 221.808401,
+        "sign_index": 7,
+        "degree_in_sign": 11.808401,
+        "is_retrograde": false,
+        "speed": 0.111693
+      },
+      "Venus": {
+        "longitude": 263.559814,
+        "sign_index": 8,
+        "degree_in_sign": 23.559814,
+        "is_retrograde": false,
+        "speed": 1.210007
+      },
+      "Saturn": {
+        "longitude": 99.220439,
+        "sign_index": 3,
+        "degree_in_sign": 9.220439,
+        "is_retrograde": true,
+        "speed": -0.0732
+      },
+      "Rahu": {
+        "longitude": 106.712076,
+        "sign_index": 3,
+        "degree_in_sign": 16.712076,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 286.712076,
+        "sign_index": 9,
+        "degree_in_sign": 16.712076,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

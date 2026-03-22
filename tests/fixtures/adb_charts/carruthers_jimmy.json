@@ -1,0 +1,121 @@
+{
+  "adb_id": 94378,
+  "name": "Carruthers, Jimmy",
+  "given_name": "Jimmy Carruthers",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2425797.375,
+    "year": 1929,
+    "month": 7,
+    "day": 5,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Sydney",
+    "country": "Australia",
+    "lat": -33.866667,
+    "lon": 151.216667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carruthers,_Jimmy",
+  "source_notes": "Sy Scholfield has a 21-page document of Australian data from Dennis Sutton giving Carlile's data as above with the following source: \"From him to Susan Alexander - A rating.\"\\n",
+  "categories": [
+    "Traits : Body : Handedness",
+    "Traits : Body : Size",
+    "Diagnoses : Major Diseases : Cancer",
+    "Diagnoses : Major Diseases : Parkinson's",
+    "Diagnoses : Body Part Problems : Gastrointestinal",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Sports : Boxing",
+    "Vocation : Misc. : Physical labor",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 25.343232,
+    "lagna": 55.343232,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.872535,
+    "jd_ut": 2425797.375,
+    "planets": {
+      "Sun": {
+        "longitude": 79.486827,
+        "sign_index": 2,
+        "degree_in_sign": 19.486827,
+        "is_retrograde": false,
+        "speed": 0.953708
+      },
+      "Moon": {
+        "longitude": 51.861417,
+        "sign_index": 1,
+        "degree_in_sign": 21.861417,
+        "is_retrograde": false,
+        "speed": 11.457809
+      },
+      "Mars": {
+        "longitude": 127.404142,
+        "sign_index": 4,
+        "degree_in_sign": 7.404142,
+        "is_retrograde": false,
+        "speed": 0.599053
+      },
+      "Mercury": {
+        "longitude": 58.133029,
+        "sign_index": 1,
+        "degree_in_sign": 28.133029,
+        "is_retrograde": false,
+        "speed": 1.040497
+      },
+      "Jupiter": {
+        "longitude": 42.043364,
+        "sign_index": 1,
+        "degree_in_sign": 12.043364,
+        "is_retrograde": false,
+        "speed": 0.209757
+      },
+      "Venus": {
+        "longitude": 33.928873,
+        "sign_index": 1,
+        "degree_in_sign": 3.928873,
+        "is_retrograde": false,
+        "speed": 0.98897
+      },
+      "Saturn": {
+        "longitude": 243.202919,
+        "sign_index": 8,
+        "degree_in_sign": 3.202919,
+        "is_retrograde": true,
+        "speed": -0.069394
+      },
+      "Rahu": {
+        "longitude": 25.606752,
+        "sign_index": 0,
+        "degree_in_sign": 25.606752,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 205.606752,
+        "sign_index": 6,
+        "degree_in_sign": 25.606752,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

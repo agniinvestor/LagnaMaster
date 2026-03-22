@@ -1,0 +1,110 @@
+{
+  "adb_id": 19595,
+  "name": "Chechi, Yuri",
+  "given_name": "Yuri Chechi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440506.454861,
+    "year": 1969,
+    "month": 10,
+    "day": 11,
+    "calendar": "g",
+    "time": "23:55",
+    "time_type": "s",
+    "hour": 23.916667,
+    "time_unknown": false,
+    "place": "Prato",
+    "country": "Italy",
+    "lat": 43.883333,
+    "lon": 11.1
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chechi,_Yuri",
+  "source_notes": "DATAsophia Autumn 1966 quotes B.C.  (Same from Bordoni in Datanotizie 7/1996)\\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Vocation : Sports : Gymnastics",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 15.982625,
+    "lagna": 75.982625,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.434954,
+    "jd_ut": 2440506.454861,
+    "planets": {
+      "Sun": {
+        "longitude": 175.010933,
+        "sign_index": 5,
+        "degree_in_sign": 25.010933,
+        "is_retrograde": false,
+        "speed": 0.989937
+      },
+      "Moon": {
+        "longitude": 181.949892,
+        "sign_index": 6,
+        "degree_in_sign": 1.949892,
+        "is_retrograde": false,
+        "speed": 17.188332
+      },
+      "Mars": {
+        "longitude": 259.93536,
+        "sign_index": 8,
+        "degree_in_sign": 19.93536,
+        "is_retrograde": false,
+        "speed": 0.674625
+      },
+      "Mercury": {
+        "longitude": 157.506461,
+        "sign_index": 5,
+        "degree_in_sign": 7.506461,
+        "is_retrograde": false,
+        "speed": 0.600436
+      },
+      "Jupiter": {
+        "longitude": 173.424727,
+        "sign_index": 5,
+        "degree_in_sign": 23.424727,
+        "is_retrograde": false,
+        "speed": 0.216936
+      },
+      "Venus": {
+        "longitude": 149.596229,
+        "sign_index": 4,
+        "degree_in_sign": 29.596229,
+        "is_retrograde": false,
+        "speed": 1.233243
+      },
+      "Saturn": {
+        "longitude": 13.370426,
+        "sign_index": 0,
+        "degree_in_sign": 13.370426,
+        "is_retrograde": true,
+        "speed": -0.074143
+      },
+      "Rahu": {
+        "longitude": 326.142305,
+        "sign_index": 10,
+        "degree_in_sign": 26.142305,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 146.142305,
+        "sign_index": 4,
+        "degree_in_sign": 26.142305,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

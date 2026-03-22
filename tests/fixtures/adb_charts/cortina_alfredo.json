@@ -1,0 +1,108 @@
+{
+  "adb_id": 68590,
+  "name": "Cortina, Alfredo",
+  "given_name": "Alfredo Cortina",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416181.102546,
+    "year": 1903,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Valencia",
+    "country": "Venezuela",
+    "lat": 10.183333,
+    "lon": -68.0
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortina,_Alfredo",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 3.722416,
+    "lagna": 3.722416,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.504898,
+    "jd_ut": 2416181.102546,
+    "planets": {
+      "Sun": {
+        "longitude": 323.347218,
+        "sign_index": 10,
+        "degree_in_sign": 23.347218,
+        "is_retrograde": false,
+        "speed": 1.000232
+      },
+      "Moon": {
+        "longitude": 64.565794,
+        "sign_index": 2,
+        "degree_in_sign": 4.565794,
+        "is_retrograde": false,
+        "speed": 18.3449
+      },
+      "Mars": {
+        "longitude": 171.9379,
+        "sign_index": 5,
+        "degree_in_sign": 21.9379,
+        "is_retrograde": true,
+        "speed": -0.217126
+      },
+      "Mercury": {
+        "longitude": 297.490584,
+        "sign_index": 9,
+        "degree_in_sign": 27.490584,
+        "is_retrograde": false,
+        "speed": 1.273321
+      },
+      "Jupiter": {
+        "longitude": 311.151423,
+        "sign_index": 10,
+        "degree_in_sign": 11.151423,
+        "is_retrograde": false,
+        "speed": 0.238096
+      },
+      "Venus": {
+        "longitude": 346.741882,
+        "sign_index": 11,
+        "degree_in_sign": 16.741882,
+        "is_retrograde": false,
+        "speed": 1.234638
+      },
+      "Saturn": {
+        "longitude": 282.75405,
+        "sign_index": 9,
+        "degree_in_sign": 12.75405,
+        "is_retrograde": false,
+        "speed": 0.099642
+      },
+      "Rahu": {
+        "longitude": 175.193158,
+        "sign_index": 5,
+        "degree_in_sign": 25.193158,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 355.193158,
+        "sign_index": 11,
+        "degree_in_sign": 25.193158,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

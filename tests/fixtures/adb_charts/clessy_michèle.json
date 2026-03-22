@@ -1,0 +1,108 @@
+{
+  "adb_id": 50812,
+  "name": "Clessy, Michèle",
+  "given_name": "Michèle Clessy",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434008.875,
+    "year": 1951,
+    "month": 12,
+    "day": 28,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Vilvoorde",
+    "country": "Belgium",
+    "lat": 50.933333,
+    "lon": 4.433333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "cap",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clessy,_Michèle",
+  "source_notes": "Steinbrecher collection: Lesc quotes birth record\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 8.717881,
+    "lagna": 248.717881,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.186499,
+    "jd_ut": 2434008.875,
+    "planets": {
+      "Sun": {
+        "longitude": 252.629261,
+        "sign_index": 8,
+        "degree_in_sign": 12.629261,
+        "is_retrograde": false,
+        "speed": 1.019492
+      },
+      "Moon": {
+        "longitude": 251.391026,
+        "sign_index": 8,
+        "degree_in_sign": 11.391026,
+        "is_retrograde": false,
+        "speed": 12.132336
+      },
+      "Mars": {
+        "longitude": 175.592781,
+        "sign_index": 5,
+        "degree_in_sign": 25.592781,
+        "is_retrograde": false,
+        "speed": 0.521712
+      },
+      "Mercury": {
+        "longitude": 232.927433,
+        "sign_index": 7,
+        "degree_in_sign": 22.927433,
+        "is_retrograde": false,
+        "speed": 0.166084
+      },
+      "Jupiter": {
+        "longitude": 342.402022,
+        "sign_index": 11,
+        "degree_in_sign": 12.402022,
+        "is_retrograde": false,
+        "speed": 0.092842
+      },
+      "Venus": {
+        "longitude": 210.398127,
+        "sign_index": 7,
+        "degree_in_sign": 0.398127,
+        "is_retrograde": false,
+        "speed": 1.181898
+      },
+      "Saturn": {
+        "longitude": 171.125847,
+        "sign_index": 5,
+        "degree_in_sign": 21.125847,
+        "is_retrograde": false,
+        "speed": 0.04775
+      },
+      "Rahu": {
+        "longitude": 310.462381,
+        "sign_index": 10,
+        "degree_in_sign": 10.462381,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 130.462381,
+        "sign_index": 4,
+        "degree_in_sign": 10.462381,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

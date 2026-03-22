@@ -1,0 +1,108 @@
+{
+  "adb_id": 69480,
+  "name": "Casas Padilla, Pablo",
+  "given_name": "Pablo Casas Padilla",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419474.916667,
+    "year": 1912,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casas_Padilla,_Pablo",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 18.632556,
+    "lagna": 288.632556,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.630818,
+    "jd_ut": 2419474.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 329.846666,
+        "sign_index": 10,
+        "degree_in_sign": 29.846666,
+        "is_retrograde": false,
+        "speed": 0.996925
+      },
+      "Moon": {
+        "longitude": 268.702683,
+        "sign_index": 8,
+        "degree_in_sign": 28.702683,
+        "is_retrograde": false,
+        "speed": 8.120259
+      },
+      "Mars": {
+        "longitude": 55.375156,
+        "sign_index": 1,
+        "degree_in_sign": 25.375156,
+        "is_retrograde": false,
+        "speed": 0.496619
+      },
+      "Mercury": {
+        "longitude": 340.010045,
+        "sign_index": 11,
+        "degree_in_sign": 10.010045,
+        "is_retrograde": false,
+        "speed": 1.935894
+      },
+      "Jupiter": {
+        "longitude": 232.203916,
+        "sign_index": 7,
+        "degree_in_sign": 22.203916,
+        "is_retrograde": false,
+        "speed": 0.05849
+      },
+      "Venus": {
+        "longitude": 300.332068,
+        "sign_index": 10,
+        "degree_in_sign": 0.332068,
+        "is_retrograde": false,
+        "speed": 1.225426
+      },
+      "Saturn": {
+        "longitude": 23.575292,
+        "sign_index": 0,
+        "degree_in_sign": 23.575292,
+        "is_retrograde": false,
+        "speed": 0.093398
+      },
+      "Rahu": {
+        "longitude": 0.647023,
+        "sign_index": 0,
+        "degree_in_sign": 0.647023,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 180.647023,
+        "sign_index": 6,
+        "degree_in_sign": 0.647023,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

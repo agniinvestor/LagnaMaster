@@ -1,0 +1,108 @@
+{
+  "adb_id": 64154,
+  "name": "Clarke, Henri Jacques Guillaume",
+  "given_name": "Henri Jacques Guillaume Clarke",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2366003.448056,
+    "year": 1765,
+    "month": 10,
+    "day": 17,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Landrecies",
+    "country": "France",
+    "lat": 50.133333,
+    "lon": 3.7
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarke,_Henri_Jacques_Guillaume",
+  "source_notes": "Didier Geslain archive, 'armée' pdf file, p. 4. \\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 22.892383,
+    "lagna": 82.892383,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.587265,
+    "jd_ut": 2366003.448056,
+    "planets": {
+      "Sun": {
+        "longitude": 184.223335,
+        "sign_index": 6,
+        "degree_in_sign": 4.223335,
+        "is_retrograde": false,
+        "speed": 0.995425
+      },
+      "Moon": {
+        "longitude": 227.260077,
+        "sign_index": 7,
+        "degree_in_sign": 17.260077,
+        "is_retrograde": false,
+        "speed": 16.477093
+      },
+      "Mars": {
+        "longitude": 158.029724,
+        "sign_index": 5,
+        "degree_in_sign": 8.029724,
+        "is_retrograde": false,
+        "speed": 0.636487
+      },
+      "Mercury": {
+        "longitude": 166.726392,
+        "sign_index": 5,
+        "degree_in_sign": 16.726392,
+        "is_retrograde": false,
+        "speed": 1.31925
+      },
+      "Jupiter": {
+        "longitude": 117.944907,
+        "sign_index": 3,
+        "degree_in_sign": 27.944907,
+        "is_retrograde": false,
+        "speed": 0.141545
+      },
+      "Venus": {
+        "longitude": 218.75229,
+        "sign_index": 7,
+        "degree_in_sign": 8.75229,
+        "is_retrograde": false,
+        "speed": 1.213177
+      },
+      "Saturn": {
+        "longitude": 44.321835,
+        "sign_index": 1,
+        "degree_in_sign": 14.321835,
+        "is_retrograde": true,
+        "speed": -0.052189
+      },
+      "Rahu": {
+        "longitude": 314.215969,
+        "sign_index": 10,
+        "degree_in_sign": 14.215969,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 134.215969,
+        "sign_index": 4,
+        "degree_in_sign": 14.215969,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

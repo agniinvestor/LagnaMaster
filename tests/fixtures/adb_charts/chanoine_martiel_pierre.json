@@ -1,0 +1,109 @@
+{
+  "adb_id": 64974,
+  "name": "Chanoine-Martiel, Pierre",
+  "given_name": "Pierre Chanoine-Martiel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422780.916667,
+    "year": 1921,
+    "month": 4,
+    "day": 1,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "d",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chanoine-Martiel,_Pierre",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 115.\\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Travel : Aviation field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.368194,
+    "lagna": 54.368194,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.757209,
+    "jd_ut": 2422780.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 348.375359,
+        "sign_index": 11,
+        "degree_in_sign": 18.375359,
+        "is_retrograde": false,
+        "speed": 0.986308
+      },
+      "Moon": {
+        "longitude": 269.079647,
+        "sign_index": 8,
+        "degree_in_sign": 29.079647,
+        "is_retrograde": false,
+        "speed": 9.569192
+      },
+      "Mars": {
+        "longitude": 12.46897,
+        "sign_index": 0,
+        "degree_in_sign": 12.46897,
+        "is_retrograde": false,
+        "speed": 0.728598
+      },
+      "Mercury": {
+        "longitude": 320.690906,
+        "sign_index": 10,
+        "degree_in_sign": 20.690906,
+        "is_retrograde": false,
+        "speed": 1.081204
+      },
+      "Jupiter": {
+        "longitude": 137.951069,
+        "sign_index": 4,
+        "degree_in_sign": 17.951069,
+        "is_retrograde": true,
+        "speed": -0.098202
+      },
+      "Venus": {
+        "longitude": 17.51519,
+        "sign_index": 0,
+        "degree_in_sign": 17.51519,
+        "is_retrograde": false,
+        "speed": 0.002169
+      },
+      "Saturn": {
+        "longitude": 147.149601,
+        "sign_index": 4,
+        "degree_in_sign": 27.149601,
+        "is_retrograde": true,
+        "speed": -0.070948
+      },
+      "Rahu": {
+        "longitude": 185.455164,
+        "sign_index": 6,
+        "degree_in_sign": 5.455164,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 5.455164,
+        "sign_index": 0,
+        "degree_in_sign": 5.455164,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

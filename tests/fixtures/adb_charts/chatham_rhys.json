@@ -1,0 +1,111 @@
+{
+  "adb_id": 101395,
+  "name": "Chatham, Rhys",
+  "given_name": "Rhys Chatham",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434274.7,
+    "year": 1952,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "00:48",
+    "time_type": "d",
+    "hour": 0.8,
+    "time_unknown": false,
+    "place": "Manhattan",
+    "country": "New York",
+    "lat": 40.766667,
+    "lon": -73.983333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chatham,_Rhys",
+  "source_notes": "by himself via email, quoted from birth record.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Occult Fields : Other Occult Fields"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 29.277842,
+    "lagna": 59.277842,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.196663,
+    "jd_ut": 2434274.7,
+    "planets": {
+      "Sun": {
+        "longitude": 152.984933,
+        "sign_index": 5,
+        "degree_in_sign": 2.984933,
+        "is_retrograde": false,
+        "speed": 0.977328
+      },
+      "Moon": {
+        "longitude": 152.043078,
+        "sign_index": 5,
+        "degree_in_sign": 2.043078,
+        "is_retrograde": false,
+        "speed": 15.930856
+      },
+      "Mars": {
+        "longitude": 230.965684,
+        "sign_index": 7,
+        "degree_in_sign": 20.965684,
+        "is_retrograde": false,
+        "speed": 0.663222
+      },
+      "Mercury": {
+        "longitude": 148.346939,
+        "sign_index": 4,
+        "degree_in_sign": 28.346939,
+        "is_retrograde": false,
+        "speed": 1.870157
+      },
+      "Jupiter": {
+        "longitude": 27.642432,
+        "sign_index": 0,
+        "degree_in_sign": 27.642432,
+        "is_retrograde": true,
+        "speed": -0.03163
+      },
+      "Venus": {
+        "longitude": 176.311382,
+        "sign_index": 5,
+        "degree_in_sign": 26.311382,
+        "is_retrograde": false,
+        "speed": 1.229846
+      },
+      "Saturn": {
+        "longitude": 172.079306,
+        "sign_index": 5,
+        "degree_in_sign": 22.079306,
+        "is_retrograde": false,
+        "speed": 0.117883
+      },
+      "Rahu": {
+        "longitude": 296.375767,
+        "sign_index": 9,
+        "degree_in_sign": 26.375767,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 116.375767,
+        "sign_index": 3,
+        "degree_in_sign": 26.375767,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 63637,
+  "name": "Caplan, Jil",
+  "given_name": "Jil Caplan",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439056.791667,
+    "year": 1965,
+    "month": 10,
+    "day": 23,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Issy les Moulineaux",
+    "country": "France",
+    "lat": 48.816667,
+    "lon": 2.283333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caplan,_Jil",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 18.616344,
+    "lagna": 168.616344,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.37952,
+    "jd_ut": 2439056.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 186.286192,
+        "sign_index": 6,
+        "degree_in_sign": 6.286192,
+        "is_retrograde": false,
+        "speed": 0.996251
+      },
+      "Moon": {
+        "longitude": 170.225648,
+        "sign_index": 5,
+        "degree_in_sign": 20.225648,
+        "is_retrograde": false,
+        "speed": 12.063854
+      },
+      "Mars": {
+        "longitude": 230.271127,
+        "sign_index": 7,
+        "degree_in_sign": 20.271127,
+        "is_retrograde": false,
+        "speed": 0.730282
+      },
+      "Mercury": {
+        "longitude": 202.529925,
+        "sign_index": 6,
+        "degree_in_sign": 22.529925,
+        "is_retrograde": false,
+        "speed": 1.473634
+      },
+      "Jupiter": {
+        "longitude": 67.921077,
+        "sign_index": 2,
+        "degree_in_sign": 7.921077,
+        "is_retrograde": true,
+        "speed": -0.011778
+      },
+      "Venus": {
+        "longitude": 231.920231,
+        "sign_index": 7,
+        "degree_in_sign": 21.920231,
+        "is_retrograde": false,
+        "speed": 1.109046
+      },
+      "Saturn": {
+        "longitude": 317.521676,
+        "sign_index": 10,
+        "degree_in_sign": 17.521676,
+        "is_retrograde": true,
+        "speed": -0.036745
+      },
+      "Rahu": {
+        "longitude": 42.962921,
+        "sign_index": 1,
+        "degree_in_sign": 12.962921,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 222.962921,
+        "sign_index": 7,
+        "degree_in_sign": 12.962921,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 82706,
+  "name": "Clark, Yvonne",
+  "given_name": "Yvonne Clark",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425715.25,
+    "year": 1929,
+    "month": 4,
+    "day": 13,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Houston",
+    "country": "Texas",
+    "lat": 29.766667,
+    "lon": -95.366667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Yvonne",
+  "source_notes": "Birth certificate in hand from Sy Scholfield. It states \"12 noon.\"\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Traits : Mind : Education extensive",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Engineer : Mechanical",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 10.878287,
+    "lagna": 70.878287,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.869395,
+    "jd_ut": 2425715.25,
+    "planets": {
+      "Sun": {
+        "longitude": 0.447669,
+        "sign_index": 0,
+        "degree_in_sign": 0.447669,
+        "is_retrograde": false,
+        "speed": 0.97965
+      },
+      "Moon": {
+        "longitude": 53.400793,
+        "sign_index": 1,
+        "degree_in_sign": 23.400793,
+        "is_retrograde": false,
+        "speed": 11.958245
+      },
+      "Mars": {
+        "longitude": 81.896754,
+        "sign_index": 2,
+        "degree_in_sign": 21.896754,
+        "is_retrograde": false,
+        "speed": 0.48989
+      },
+      "Mercury": {
+        "longitude": 356.145662,
+        "sign_index": 11,
+        "degree_in_sign": 26.145662,
+        "is_retrograde": false,
+        "speed": 2.04087
+      },
+      "Jupiter": {
+        "longitude": 23.147413,
+        "sign_index": 0,
+        "degree_in_sign": 23.147413,
+        "is_retrograde": false,
+        "speed": 0.228566
+      },
+      "Venus": {
+        "longitude": 10.944912,
+        "sign_index": 0,
+        "degree_in_sign": 10.944912,
+        "is_retrograde": true,
+        "speed": -0.544664
+      },
+      "Saturn": {
+        "longitude": 247.639781,
+        "sign_index": 8,
+        "degree_in_sign": 7.639781,
+        "is_retrograde": true,
+        "speed": -0.006749
+      },
+      "Rahu": {
+        "longitude": 29.958727,
+        "sign_index": 0,
+        "degree_in_sign": 29.958727,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 209.958727,
+        "sign_index": 6,
+        "degree_in_sign": 29.958727,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

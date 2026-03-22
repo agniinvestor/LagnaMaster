@@ -1,0 +1,111 @@
+{
+  "adb_id": 68316,
+  "name": "Caouissin, Herry",
+  "given_name": "Herry Caouissin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420017.666667,
+    "year": 1913,
+    "month": 9,
+    "day": 7,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Pleyber-Christ",
+    "country": "France",
+    "lat": 48.505556,
+    "lon": -3.874167
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caouissin,_Herry",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'politique a-f' pdf file, p. 176.\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Publisher/ Editor",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 9.581228,
+    "lagna": 99.581228,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.651567,
+    "jd_ut": 2420017.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 141.267191,
+        "sign_index": 4,
+        "degree_in_sign": 21.267191,
+        "is_retrograde": false,
+        "speed": 0.970879
+      },
+      "Moon": {
+        "longitude": 226.4031,
+        "sign_index": 7,
+        "degree_in_sign": 16.4031,
+        "is_retrograde": false,
+        "speed": 16.609884
+      },
+      "Mars": {
+        "longitude": 62.487313,
+        "sign_index": 2,
+        "degree_in_sign": 2.487313,
+        "is_retrograde": false,
+        "speed": 0.581849
+      },
+      "Mercury": {
+        "longitude": 132.492927,
+        "sign_index": 4,
+        "degree_in_sign": 12.492927,
+        "is_retrograde": false,
+        "speed": 1.915171
+      },
+      "Jupiter": {
+        "longitude": 255.363347,
+        "sign_index": 8,
+        "degree_in_sign": 15.363347,
+        "is_retrograde": false,
+        "speed": 0.008136
+      },
+      "Venus": {
+        "longitude": 104.111242,
+        "sign_index": 3,
+        "degree_in_sign": 14.111242,
+        "is_retrograde": false,
+        "speed": 1.175533
+      },
+      "Saturn": {
+        "longitude": 55.00837,
+        "sign_index": 1,
+        "degree_in_sign": 25.00837,
+        "is_retrograde": false,
+        "speed": 0.042437
+      },
+      "Rahu": {
+        "longitude": 331.885563,
+        "sign_index": 11,
+        "degree_in_sign": 1.885563,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 151.885563,
+        "sign_index": 5,
+        "degree_in_sign": 1.885563,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

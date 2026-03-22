@@ -1,0 +1,106 @@
+{
+  "adb_id": 52636,
+  "name": "Cogniaux, Robert L.",
+  "given_name": "Robert L. Cogniaux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427586.5,
+    "year": 1934,
+    "month": 5,
+    "day": 29,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "d",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Asse",
+    "country": "Belgium",
+    "lat": 50.916667,
+    "lon": 4.2
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cogniaux,_Robert_L.",
+  "source_notes": "Ed Steinbrecher collection: Lescaut quotes \"demain 5\" for birth record\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 1.585138,
+    "lagna": 271.585138,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.940939,
+    "jd_ut": 2427586.5,
+    "planets": {
+      "Sun": {
+        "longitude": 43.993586,
+        "sign_index": 1,
+        "degree_in_sign": 13.993586,
+        "is_retrograde": false,
+        "speed": 0.95875
+      },
+      "Moon": {
+        "longitude": 225.432372,
+        "sign_index": 7,
+        "degree_in_sign": 15.432372,
+        "is_retrograde": false,
+        "speed": 10.821196
+      },
+      "Mars": {
+        "longitude": 33.708537,
+        "sign_index": 1,
+        "degree_in_sign": 3.708537,
+        "is_retrograde": false,
+        "speed": 0.717056
+      },
+      "Mercury": {
+        "longitude": 61.316358,
+        "sign_index": 2,
+        "degree_in_sign": 1.316358,
+        "is_retrograde": false,
+        "speed": 1.791689
+      },
+      "Jupiter": {
+        "longitude": 170.567771,
+        "sign_index": 5,
+        "degree_in_sign": 20.567771,
+        "is_retrograde": true,
+        "speed": -0.037597
+      },
+      "Venus": {
+        "longitude": 2.042827,
+        "sign_index": 0,
+        "degree_in_sign": 2.042827,
+        "is_retrograde": false,
+        "speed": 1.129004
+      },
+      "Saturn": {
+        "longitude": 305.147073,
+        "sign_index": 10,
+        "degree_in_sign": 5.147073,
+        "is_retrograde": false,
+        "speed": 0.017527
+      },
+      "Rahu": {
+        "longitude": 290.797303,
+        "sign_index": 9,
+        "degree_in_sign": 20.797303,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 110.797303,
+        "sign_index": 3,
+        "degree_in_sign": 20.797303,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

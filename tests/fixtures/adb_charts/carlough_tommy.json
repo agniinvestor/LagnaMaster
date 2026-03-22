@@ -1,0 +1,114 @@
+{
+  "adb_id": 8165,
+  "name": "Carlough, Tommy",
+  "given_name": "Tommy Carlough",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429017.375,
+    "year": 1938,
+    "month": 4,
+    "day": 28,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlough,_Tommy",
+  "source_notes": "LMR quotes him, time from his mom, Hilda\\n",
+  "categories": [
+    "Traits : Mind : Education limited",
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Vocation : Business : Business owner",
+    "Vocation : Entertainment : Child performer",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 12.938387,
+    "lagna": 102.938387,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.995647,
+    "jd_ut": 2429017.375,
+    "planets": {
+      "Sun": {
+        "longitude": 14.90297,
+        "sign_index": 0,
+        "degree_in_sign": 14.90297,
+        "is_retrograde": false,
+        "speed": 0.971955
+      },
+      "Moon": {
+        "longitude": 356.370092,
+        "sign_index": 11,
+        "degree_in_sign": 26.370092,
+        "is_retrograde": false,
+        "speed": 10.103729
+      },
+      "Mars": {
+        "longitude": 40.517659,
+        "sign_index": 1,
+        "degree_in_sign": 10.517659,
+        "is_retrograde": false,
+        "speed": 0.688244
+      },
+      "Mercury": {
+        "longitude": 3.785398,
+        "sign_index": 0,
+        "degree_in_sign": 3.785398,
+        "is_retrograde": true,
+        "speed": -0.480068
+      },
+      "Jupiter": {
+        "longitude": 304.972578,
+        "sign_index": 10,
+        "degree_in_sign": 4.972578,
+        "is_retrograde": false,
+        "speed": 0.148659
+      },
+      "Venus": {
+        "longitude": 35.64543,
+        "sign_index": 1,
+        "degree_in_sign": 5.64543,
+        "is_retrograde": false,
+        "speed": 1.2235
+      },
+      "Saturn": {
+        "longitude": 348.70512,
+        "sign_index": 11,
+        "degree_in_sign": 18.70512,
+        "is_retrograde": false,
+        "speed": 0.116826
+      },
+      "Rahu": {
+        "longitude": 214.972272,
+        "sign_index": 7,
+        "degree_in_sign": 4.972272,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 34.972272,
+        "sign_index": 1,
+        "degree_in_sign": 4.972272,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

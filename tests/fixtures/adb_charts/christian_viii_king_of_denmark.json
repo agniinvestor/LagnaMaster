@@ -1,0 +1,108 @@
+{
+  "adb_id": 62197,
+  "name": "Christian VIII, King of Denmark",
+  "given_name": "King of Denmark Christian VIII",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2373643.902546,
+    "year": 1786,
+    "month": 9,
+    "day": 18,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "l",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Copenhagen",
+    "country": "Denmark",
+    "lat": 55.666667,
+    "lon": 12.583333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian_VIII,_King_of_Denmark",
+  "source_notes": "Sy Scholfield quotes \"between 10 and 11 in the forenoon\" from church records: \"Anno 1786 den 18 September om Formiddagen imellem Kl. 10 og 11 slet blev hans Kongelige Höyheds Arveprinds Friderichs Gemahl, Hendes Kongelige Höyhed Prindsesse Sophia Friderica forlöst med en ung Prinds paa Christiansborg Slot, som den 28.de September om Eftermiddagen Kl.4½ slet blev döbt i Hendes Kongelige Höyheds Gemak af hr. Confessionario Bastholm og kaldet: Christian, Friderich; De höye Faddere vare: hans Kgl. Majestæt Kong Christian den 7de, Hendes Kgl. majestæt Dronning Juliana Maria, som holdt Prindsen over Daaben, hans Kongelige Höyhed Kronprinds Frideric, Hendes Kongelige Höyhed Kronprindsesse Lovisa Augusta, Hans Durchlautighed Arveprinds Frideric Christian af Augustenborg.\" http://www.historie-online.dk/special/daab/kirkeboeger.htm\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.241943,
+    "lagna": 181.241943,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.879184,
+    "jd_ut": 2373643.902546,
+    "planets": {
+      "Sun": {
+        "longitude": 154.693443,
+        "sign_index": 5,
+        "degree_in_sign": 4.693443,
+        "is_retrograde": false,
+        "speed": 0.978449
+      },
+      "Moon": {
+        "longitude": 107.532313,
+        "sign_index": 3,
+        "degree_in_sign": 17.532313,
+        "is_retrograde": false,
+        "speed": 10.298869
+      },
+      "Mars": {
+        "longitude": 170.566193,
+        "sign_index": 5,
+        "degree_in_sign": 20.566193,
+        "is_retrograde": false,
+        "speed": 0.659238
+      },
+      "Mercury": {
+        "longitude": 138.792277,
+        "sign_index": 4,
+        "degree_in_sign": 18.792277,
+        "is_retrograde": false,
+        "speed": 0.206226
+      },
+      "Jupiter": {
+        "longitude": 30.277553,
+        "sign_index": 1,
+        "degree_in_sign": 0.277553,
+        "is_retrograde": true,
+        "speed": -0.028829
+      },
+      "Venus": {
+        "longitude": 198.351037,
+        "sign_index": 6,
+        "degree_in_sign": 18.351037,
+        "is_retrograde": false,
+        "speed": 1.131421
+      },
+      "Saturn": {
+        "longitude": 290.051514,
+        "sign_index": 9,
+        "degree_in_sign": 20.051514,
+        "is_retrograde": true,
+        "speed": -0.041793
+      },
+      "Rahu": {
+        "longitude": 269.331273,
+        "sign_index": 8,
+        "degree_in_sign": 29.331273,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 89.331273,
+        "sign_index": 2,
+        "degree_in_sign": 29.331273,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

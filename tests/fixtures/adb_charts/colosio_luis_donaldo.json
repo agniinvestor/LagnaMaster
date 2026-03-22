@@ -1,0 +1,118 @@
+{
+  "adb_id": 47602,
+  "name": "Colosio, Luis Donaldo",
+  "given_name": "Luis Donaldo Colosio",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433323.78125,
+    "year": 1950,
+    "month": 2,
+    "day": 10,
+    "calendar": "g",
+    "time": "23:45",
+    "time_type": "s",
+    "hour": 23.75,
+    "time_unknown": false,
+    "place": "Magdalena de Kino (Sonora)",
+    "country": "Mexico",
+    "lat": 30.633333,
+    "lon": -110.95
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colosio,_Luis_Donaldo",
+  "source_notes": "Dr. Zip Dobyns quotes a colleague, Louis, for B.C. Data confirmed by Gerardo Cabezudt in Mexico City. dpa gives another time for the\\nassault: 19:05 local time (23.3.1994)(7 p.m.)(mik.)- that gives a difference of only hour which he still had to live.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Traits : Mind : I.Q. high/ Mensa level",
+    "Traits : Personality : Articulate",
+    "Traits : Personality : Hard worker",
+    "Diagnoses : Psychological : Anxiety Disorder",
+    "Family : Childhood : Disadvantaged",
+    "Family : Childhood : Family large",
+    "Family : Childhood : Order of birth",
+    "Passions : Criminal Victim : Homicide victim",
+    "Vocation : Business : Economist",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 18.992152,
+    "lagna": 168.992152,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.160304,
+    "jd_ut": 2433323.78125,
+    "planets": {
+      "Sun": {
+        "longitude": 298.819094,
+        "sign_index": 9,
+        "degree_in_sign": 28.819094,
+        "is_retrograde": false,
+        "speed": 1.011653
+      },
+      "Moon": {
+        "longitude": 229.180855,
+        "sign_index": 7,
+        "degree_in_sign": 19.180855,
+        "is_retrograde": false,
+        "speed": 16.589715
+      },
+      "Mars": {
+        "longitude": 167.874706,
+        "sign_index": 5,
+        "degree_in_sign": 17.874706,
+        "is_retrograde": false,
+        "speed": 0.011787
+      },
+      "Mercury": {
+        "longitude": 272.946755,
+        "sign_index": 9,
+        "degree_in_sign": 2.946755,
+        "is_retrograde": false,
+        "speed": 1.037964
+      },
+      "Jupiter": {
+        "longitude": 293.042389,
+        "sign_index": 9,
+        "degree_in_sign": 23.042389,
+        "is_retrograde": false,
+        "speed": 0.238122
+      },
+      "Venus": {
+        "longitude": 281.77269,
+        "sign_index": 9,
+        "degree_in_sign": 11.77269,
+        "is_retrograde": true,
+        "speed": -0.382332
+      },
+      "Saturn": {
+        "longitude": 144.700873,
+        "sign_index": 4,
+        "degree_in_sign": 24.700873,
+        "is_retrograde": true,
+        "speed": -0.067381
+      },
+      "Rahu": {
+        "longitude": 346.766909,
+        "sign_index": 11,
+        "degree_in_sign": 16.766909,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 166.766909,
+        "sign_index": 5,
+        "degree_in_sign": 16.766909,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

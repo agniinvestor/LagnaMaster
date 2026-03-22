@@ -1,0 +1,108 @@
+{
+  "adb_id": 71865,
+  "name": "Chardon Palacois, Carlos Eugenio",
+  "given_name": "Carlos Eugenio Chardon Palacois",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414185.726713,
+    "year": 1897,
+    "month": 9,
+    "day": 18,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Ponce",
+    "country": "Puerto Rico",
+    "lat": 18.016667,
+    "lon": -66.616667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chardon_Palacois,_Carlos_Eugenio",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Science : Biology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 3.616509,
+    "lagna": 63.616509,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.428619,
+    "jd_ut": 2414185.726713,
+    "planets": {
+      "Sun": {
+        "longitude": 153.10761,
+        "sign_index": 5,
+        "degree_in_sign": 3.10761,
+        "is_retrograde": false,
+        "speed": 0.977167
+      },
+      "Moon": {
+        "longitude": 54.127874,
+        "sign_index": 1,
+        "degree_in_sign": 24.127874,
+        "is_retrograde": false,
+        "speed": 9.672889
+      },
+      "Mars": {
+        "longitude": 172.883578,
+        "sign_index": 5,
+        "degree_in_sign": 22.883578,
+        "is_retrograde": false,
+        "speed": 0.66016
+      },
+      "Mercury": {
+        "longitude": 161.742293,
+        "sign_index": 5,
+        "degree_in_sign": 11.742293,
+        "is_retrograde": true,
+        "speed": -0.937437
+      },
+      "Jupiter": {
+        "longitude": 149.335836,
+        "sign_index": 4,
+        "degree_in_sign": 29.335836,
+        "is_retrograde": false,
+        "speed": 0.216115
+      },
+      "Venus": {
+        "longitude": 117.478254,
+        "sign_index": 3,
+        "degree_in_sign": 27.478254,
+        "is_retrograde": false,
+        "speed": 1.190466
+      },
+      "Saturn": {
+        "longitude": 213.771997,
+        "sign_index": 7,
+        "degree_in_sign": 3.771997,
+        "is_retrograde": false,
+        "speed": 0.076474
+      },
+      "Rahu": {
+        "longitude": 280.932332,
+        "sign_index": 9,
+        "degree_in_sign": 10.932332,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 100.932332,
+        "sign_index": 3,
+        "degree_in_sign": 10.932332,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

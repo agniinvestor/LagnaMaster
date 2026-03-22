@@ -1,0 +1,108 @@
+{
+  "adb_id": 14674,
+  "name": "C-Section 14674",
+  "given_name": "C-Section 14674",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2443097.364583,
+    "year": 1976,
+    "month": 11,
+    "day": 14,
+    "calendar": "g",
+    "time": "15:45",
+    "time_type": "s",
+    "hour": 15.75,
+    "time_unknown": false,
+    "place": "Middle City",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:C-Section_14674",
+  "source_notes": "Helen Crawford in MH Ext. 10/1980, presumed personal\\n",
+  "categories": [
+    "Personal : Birth : Cesarean"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 16.054341,
+    "lagna": 346.054341,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.534031,
+    "jd_ut": 2443097.364583,
+    "planets": {
+      "Sun": {
+        "longitude": 209.078897,
+        "sign_index": 6,
+        "degree_in_sign": 29.078897,
+        "is_retrograde": false,
+        "speed": 1.007398
+      },
+      "Moon": {
+        "longitude": 117.96503,
+        "sign_index": 3,
+        "degree_in_sign": 27.96503,
+        "is_retrograde": false,
+        "speed": 16.946997
+      },
+      "Mars": {
+        "longitude": 212.101813,
+        "sign_index": 7,
+        "degree_in_sign": 2.101813,
+        "is_retrograde": false,
+        "speed": 0.708702
+      },
+      "Mercury": {
+        "longitude": 213.441703,
+        "sign_index": 7,
+        "degree_in_sign": 3.441703,
+        "is_retrograde": false,
+        "speed": 1.571266
+      },
+      "Jupiter": {
+        "longitude": 33.06194,
+        "sign_index": 1,
+        "degree_in_sign": 3.06194,
+        "is_retrograde": true,
+        "speed": -0.135908
+      },
+      "Venus": {
+        "longitude": 246.969055,
+        "sign_index": 8,
+        "degree_in_sign": 6.969055,
+        "is_retrograde": false,
+        "speed": 1.2064
+      },
+      "Saturn": {
+        "longitude": 113.184875,
+        "sign_index": 3,
+        "degree_in_sign": 23.184875,
+        "is_retrograde": false,
+        "speed": 0.024161
+      },
+      "Rahu": {
+        "longitude": 188.844717,
+        "sign_index": 6,
+        "degree_in_sign": 8.844717,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 8.844717,
+        "sign_index": 0,
+        "degree_in_sign": 8.844717,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

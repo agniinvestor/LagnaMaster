@@ -1,0 +1,113 @@
+{
+  "adb_id": 11158,
+  "name": "Canoletti, Adelia",
+  "given_name": "Adelia Canoletti",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432949.708333,
+    "year": 1949,
+    "month": 2,
+    "day": 2,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5525,
+    "lon": -46.624722
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canoletti,_Adelia",
+  "source_notes": "Marcello Borges quotes her twin sister who was born 15 min earlier\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Tubal ligation/ Vasectomy",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids - Noted",
+    "Lifestyle : Home : Same location lifetime",
+    "Personal : Birth : Twin, triplet, etc.",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 5.628861,
+    "lagna": 215.628861,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.146,
+    "jd_ut": 2432949.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 289.895478,
+        "sign_index": 9,
+        "degree_in_sign": 19.895478,
+        "is_retrograde": false,
+        "speed": 1.014795
+      },
+      "Moon": {
+        "longitude": 334.773618,
+        "sign_index": 11,
+        "degree_in_sign": 4.773618,
+        "is_retrograde": false,
+        "speed": 16.131905
+      },
+      "Mars": {
+        "longitude": 299.304446,
+        "sign_index": 9,
+        "degree_in_sign": 29.304446,
+        "is_retrograde": false,
+        "speed": 0.791206
+      },
+      "Mercury": {
+        "longitude": 291.10453,
+        "sign_index": 9,
+        "degree_in_sign": 21.10453,
+        "is_retrograde": true,
+        "speed": -1.207297
+      },
+      "Jupiter": {
+        "longitude": 264.583478,
+        "sign_index": 8,
+        "degree_in_sign": 24.583478,
+        "is_retrograde": false,
+        "speed": 0.220995
+      },
+      "Venus": {
+        "longitude": 271.643392,
+        "sign_index": 9,
+        "degree_in_sign": 1.643392,
+        "is_retrograde": false,
+        "speed": 1.250024
+      },
+      "Saturn": {
+        "longitude": 131.171802,
+        "sign_index": 4,
+        "degree_in_sign": 11.171802,
+        "is_retrograde": true,
+        "speed": -0.072199
+      },
+      "Rahu": {
+        "longitude": 6.589804,
+        "sign_index": 0,
+        "degree_in_sign": 6.589804,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 186.589804,
+        "sign_index": 6,
+        "degree_in_sign": 6.589804,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

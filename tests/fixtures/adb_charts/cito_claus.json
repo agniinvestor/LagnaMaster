@@ -1,0 +1,109 @@
+{
+  "adb_id": 82998,
+  "name": "Cito, Claus",
+  "given_name": "Claus Cito",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408591.900231,
+    "year": 1882,
+    "month": 5,
+    "day": 26,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Bascharage",
+    "country": "Luxembourg",
+    "lat": 49.566667,
+    "lon": 5.916667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cito,_Claus",
+  "source_notes": "Birth certificate (acte n° 13) provided by Sy Scholfield.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 5.235713,
+    "lagna": 95.235713,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.214788,
+    "jd_ut": 2408591.900231,
+    "planets": {
+      "Sun": {
+        "longitude": 42.771741,
+        "sign_index": 1,
+        "degree_in_sign": 12.771741,
+        "is_retrograde": false,
+        "speed": 0.959409
+      },
+      "Moon": {
+        "longitude": 148.416867,
+        "sign_index": 4,
+        "degree_in_sign": 28.416867,
+        "is_retrograde": false,
+        "speed": 14.2863
+      },
+      "Mars": {
+        "longitude": 107.470633,
+        "sign_index": 3,
+        "degree_in_sign": 17.470633,
+        "is_retrograde": false,
+        "speed": 0.553665
+      },
+      "Mercury": {
+        "longitude": 64.952898,
+        "sign_index": 2,
+        "degree_in_sign": 4.952898,
+        "is_retrograde": false,
+        "speed": 1.341482
+      },
+      "Jupiter": {
+        "longitude": 45.638362,
+        "sign_index": 1,
+        "degree_in_sign": 15.638362,
+        "is_retrograde": false,
+        "speed": 0.233542
+      },
+      "Venus": {
+        "longitude": 66.644849,
+        "sign_index": 2,
+        "degree_in_sign": 6.644849,
+        "is_retrograde": false,
+        "speed": 1.21428
+      },
+      "Saturn": {
+        "longitude": 25.998299,
+        "sign_index": 0,
+        "degree_in_sign": 25.998299,
+        "is_retrograde": false,
+        "speed": 0.124996
+      },
+      "Rahu": {
+        "longitude": 217.36104,
+        "sign_index": 7,
+        "degree_in_sign": 7.36104,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 37.36104,
+        "sign_index": 1,
+        "degree_in_sign": 7.36104,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

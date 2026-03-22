@@ -1,0 +1,113 @@
+{
+  "adb_id": 93197,
+  "name": "Cauwe, Maurice",
+  "given_name": "Maurice Cauwe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417136.395833,
+    "year": 1905,
+    "month": 10,
+    "day": 17,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "s",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Namur",
+    "country": "Belgium",
+    "lat": 50.466667,
+    "lon": 4.866667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cauwe,_Maurice",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_ef_entreprise.pdf]. \\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Business : Middle Management",
+    "Vocation : Business : Top executive",
+    "Vocation : Business/Marketing : Sales",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 5.440174,
+    "lagna": 65.440174,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.541418,
+    "jd_ut": 2417136.395833,
+    "planets": {
+      "Sun": {
+        "longitude": 181.29977,
+        "sign_index": 6,
+        "degree_in_sign": 1.29977,
+        "is_retrograde": false,
+        "speed": 0.992984
+      },
+      "Moon": {
+        "longitude": 50.211748,
+        "sign_index": 1,
+        "degree_in_sign": 20.211748,
+        "is_retrograde": false,
+        "speed": 11.567714
+      },
+      "Mars": {
+        "longitude": 254.448244,
+        "sign_index": 8,
+        "degree_in_sign": 14.448244,
+        "is_retrograde": false,
+        "speed": 0.714675
+      },
+      "Mercury": {
+        "longitude": 185.117523,
+        "sign_index": 6,
+        "degree_in_sign": 5.117523,
+        "is_retrograde": false,
+        "speed": 1.650091
+      },
+      "Jupiter": {
+        "longitude": 43.155559,
+        "sign_index": 1,
+        "degree_in_sign": 13.155559,
+        "is_retrograde": true,
+        "speed": -0.072178
+      },
+      "Venus": {
+        "longitude": 152.691998,
+        "sign_index": 5,
+        "degree_in_sign": 2.691998,
+        "is_retrograde": false,
+        "speed": 1.228587
+      },
+      "Saturn": {
+        "longitude": 303.81993,
+        "sign_index": 10,
+        "degree_in_sign": 3.81993,
+        "is_retrograde": true,
+        "speed": -0.022881
+      },
+      "Rahu": {
+        "longitude": 124.570155,
+        "sign_index": 4,
+        "degree_in_sign": 4.570155,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 304.570155,
+        "sign_index": 10,
+        "degree_in_sign": 4.570155,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

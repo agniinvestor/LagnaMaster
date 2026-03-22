@@ -1,0 +1,110 @@
+{
+  "adb_id": 87449,
+  "name": "Camacho, César",
+  "given_name": "César Camacho",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430829.96875,
+    "year": 1943,
+    "month": 4,
+    "day": 15,
+    "calendar": "g",
+    "time": "06:15",
+    "time_type": "s",
+    "hour": 6.25,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camacho,_César",
+  "source_notes": "Sy Scholfield provided birth entry from civil registry.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Education : Researcher",
+    "Vocation : Science : Mathematics/ Statistics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 8.08548,
+    "lagna": 338.08548,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.064951,
+    "jd_ut": 2430829.96875,
+    "planets": {
+      "Sun": {
+        "longitude": 1.553446,
+        "sign_index": 0,
+        "degree_in_sign": 1.553446,
+        "is_retrograde": false,
+        "speed": 0.978636
+      },
+      "Moon": {
+        "longitude": 122.070933,
+        "sign_index": 4,
+        "degree_in_sign": 2.070933,
+        "is_retrograde": false,
+        "speed": 16.521148
+      },
+      "Mars": {
+        "longitude": 305.455067,
+        "sign_index": 10,
+        "degree_in_sign": 5.455067,
+        "is_retrograde": false,
+        "speed": 0.754563
+      },
+      "Mercury": {
+        "longitude": 13.540992,
+        "sign_index": 0,
+        "degree_in_sign": 13.540992,
+        "is_retrograde": false,
+        "speed": 1.976309
+      },
+      "Jupiter": {
+        "longitude": 83.933129,
+        "sign_index": 2,
+        "degree_in_sign": 23.933129,
+        "is_retrograde": false,
+        "speed": 0.10169
+      },
+      "Venus": {
+        "longitude": 36.494798,
+        "sign_index": 1,
+        "degree_in_sign": 6.494798,
+        "is_retrograde": false,
+        "speed": 1.189909
+      },
+      "Saturn": {
+        "longitude": 46.472111,
+        "sign_index": 1,
+        "degree_in_sign": 16.472111,
+        "is_retrograde": false,
+        "speed": 0.104624
+      },
+      "Rahu": {
+        "longitude": 118.919179,
+        "sign_index": 3,
+        "degree_in_sign": 28.919179,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 298.919179,
+        "sign_index": 9,
+        "degree_in_sign": 28.919179,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

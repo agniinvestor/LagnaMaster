@@ -1,0 +1,113 @@
+{
+  "adb_id": 12604,
+  "name": "Connors, Stephen",
+  "given_name": "Stephen Connors",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2434831.923611,
+    "year": 1954,
+    "month": 3,
+    "day": 30,
+    "calendar": "g",
+    "time": "04:10",
+    "time_type": "s",
+    "hour": 4.166667,
+    "time_unknown": false,
+    "place": "Oak Park",
+    "country": "Illinois",
+    "lat": 41.883333,
+    "lon": -87.783333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connors,_Stephen",
+  "source_notes": "LMR quotes him 1984\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Traits : Body : Diet unusual",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Family traumatic event",
+    "Vocation : Education : Administrator",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 12.601236,
+    "lagna": 282.601236,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.21797,
+    "jd_ut": 2434831.923611,
+    "planets": {
+      "Sun": {
+        "longitude": 345.948882,
+        "sign_index": 11,
+        "degree_in_sign": 15.948882,
+        "is_retrograde": false,
+        "speed": 0.987931
+      },
+      "Moon": {
+        "longitude": 290.014658,
+        "sign_index": 9,
+        "degree_in_sign": 20.014658,
+        "is_retrograde": false,
+        "speed": 11.609047
+      },
+      "Mars": {
+        "longitude": 241.422786,
+        "sign_index": 8,
+        "degree_in_sign": 1.422786,
+        "is_retrograde": false,
+        "speed": 0.434934
+      },
+      "Mercury": {
+        "longitude": 318.245023,
+        "sign_index": 10,
+        "degree_in_sign": 18.245023,
+        "is_retrograde": false,
+        "speed": 1.073311
+      },
+      "Jupiter": {
+        "longitude": 56.750335,
+        "sign_index": 1,
+        "degree_in_sign": 26.750335,
+        "is_retrograde": false,
+        "speed": 0.13808
+      },
+      "Venus": {
+        "longitude": 0.506761,
+        "sign_index": 0,
+        "degree_in_sign": 0.506761,
+        "is_retrograde": false,
+        "speed": 1.237236
+      },
+      "Saturn": {
+        "longitude": 194.766263,
+        "sign_index": 6,
+        "degree_in_sign": 14.766263,
+        "is_retrograde": true,
+        "speed": -0.06144
+      },
+      "Rahu": {
+        "longitude": 266.847342,
+        "sign_index": 8,
+        "degree_in_sign": 26.847342,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 86.847342,
+        "sign_index": 2,
+        "degree_in_sign": 26.847342,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

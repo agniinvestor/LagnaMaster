@@ -1,0 +1,111 @@
+{
+  "adb_id": 47606,
+  "name": "Comencini, Luigi",
+  "given_name": "Luigi Comencini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421023.020833,
+    "year": 1916,
+    "month": 6,
+    "day": 8,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "d",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Salò",
+    "country": "Italy",
+    "lat": 45.6,
+    "lon": 10.516667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comencini,_Luigi",
+  "source_notes": "Bordoni quote B.C. Vol 1\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.070112,
+    "lagna": 138.070112,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.690003,
+    "jd_ut": 2421023.020833,
+    "planets": {
+      "Sun": {
+        "longitude": 54.660452,
+        "sign_index": 1,
+        "degree_in_sign": 24.660452,
+        "is_retrograde": false,
+        "speed": 0.956124
+      },
+      "Moon": {
+        "longitude": 139.964697,
+        "sign_index": 4,
+        "degree_in_sign": 19.964697,
+        "is_retrograde": false,
+        "speed": 10.944378
+      },
+      "Mars": {
+        "longitude": 132.552477,
+        "sign_index": 4,
+        "degree_in_sign": 12.552477,
+        "is_retrograde": false,
+        "speed": 0.503929
+      },
+      "Mercury": {
+        "longitude": 50.94698,
+        "sign_index": 1,
+        "degree_in_sign": 20.94698,
+        "is_retrograde": true,
+        "speed": -0.530143
+      },
+      "Jupiter": {
+        "longitude": 4.159217,
+        "sign_index": 0,
+        "degree_in_sign": 4.159217,
+        "is_retrograde": false,
+        "speed": 0.193343
+      },
+      "Venus": {
+        "longitude": 86.760137,
+        "sign_index": 2,
+        "degree_in_sign": 26.760137,
+        "is_retrograde": false,
+        "speed": 0.143784
+      },
+      "Saturn": {
+        "longitude": 83.074154,
+        "sign_index": 2,
+        "degree_in_sign": 23.074154,
+        "is_retrograde": false,
+        "speed": 0.11965
+      },
+      "Rahu": {
+        "longitude": 278.609739,
+        "sign_index": 9,
+        "degree_in_sign": 8.609739,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 98.609739,
+        "sign_index": 3,
+        "degree_in_sign": 8.609739,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

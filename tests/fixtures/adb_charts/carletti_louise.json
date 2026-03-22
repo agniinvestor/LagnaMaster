@@ -1,0 +1,108 @@
+{
+  "adb_id": 63914,
+  "name": "Carletti, Louise",
+  "given_name": "Louise Carletti",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423112.75,
+    "year": 1922,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carletti,_Louise",
+  "source_notes": "Didier Geslain archive, 'acteurs et comédiens' pdf file, p. 43.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 12.109913,
+    "lagna": 282.109913,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.769895,
+    "jd_ut": 2423112.75,
+    "planets": {
+      "Sun": {
+        "longitude": 315.101818,
+        "sign_index": 10,
+        "degree_in_sign": 15.101818,
+        "is_retrograde": false,
+        "speed": 1.004731
+      },
+      "Moon": {
+        "longitude": 320.519206,
+        "sign_index": 10,
+        "degree_in_sign": 20.519206,
+        "is_retrograde": false,
+        "speed": 11.796297
+      },
+      "Mars": {
+        "longitude": 221.484614,
+        "sign_index": 7,
+        "degree_in_sign": 11.484614,
+        "is_retrograde": false,
+        "speed": 0.484498
+      },
+      "Mercury": {
+        "longitude": 293.259949,
+        "sign_index": 9,
+        "degree_in_sign": 23.259949,
+        "is_retrograde": false,
+        "speed": 0.012846
+      },
+      "Jupiter": {
+        "longitude": 175.210568,
+        "sign_index": 5,
+        "degree_in_sign": 25.210568,
+        "is_retrograde": true,
+        "speed": -0.073668
+      },
+      "Venus": {
+        "longitude": 319.475526,
+        "sign_index": 10,
+        "degree_in_sign": 19.475526,
+        "is_retrograde": false,
+        "speed": 1.250049
+      },
+      "Saturn": {
+        "longitude": 163.424209,
+        "sign_index": 5,
+        "degree_in_sign": 13.424209,
+        "is_retrograde": true,
+        "speed": -0.063765
+      },
+      "Rahu": {
+        "longitude": 167.870623,
+        "sign_index": 5,
+        "degree_in_sign": 17.870623,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 347.870623,
+        "sign_index": 11,
+        "degree_in_sign": 17.870623,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

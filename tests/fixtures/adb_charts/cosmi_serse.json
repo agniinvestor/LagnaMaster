@@ -1,0 +1,108 @@
+{
+  "adb_id": 42309,
+  "name": "Cosmi, Serse",
+  "given_name": "Serse Cosmi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436328.75,
+    "year": 1958,
+    "month": 5,
+    "day": 5,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Perugia",
+    "country": "Italy",
+    "lat": 43.133333,
+    "lon": 12.366667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cosmi,_Serse",
+  "source_notes": "Bordoni quotes B.C., Datanotizie No.37, 5/2001\\n",
+  "categories": [
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 2.804979,
+    "lagna": 32.804979,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.275205,
+    "jd_ut": 2436328.75,
+    "planets": {
+      "Sun": {
+        "longitude": 20.963465,
+        "sign_index": 0,
+        "degree_in_sign": 20.963465,
+        "is_retrograde": false,
+        "speed": 0.968278
+      },
+      "Moon": {
+        "longitude": 224.163001,
+        "sign_index": 7,
+        "degree_in_sign": 14.163001,
+        "is_retrograde": false,
+        "speed": 13.295254
+      },
+      "Mars": {
+        "longitude": 312.714582,
+        "sign_index": 10,
+        "degree_in_sign": 12.714582,
+        "is_retrograde": false,
+        "speed": 0.734954
+      },
+      "Mercury": {
+        "longitude": 357.692664,
+        "sign_index": 11,
+        "degree_in_sign": 27.692664,
+        "is_retrograde": false,
+        "speed": 0.386066
+      },
+      "Jupiter": {
+        "longitude": 181.293551,
+        "sign_index": 6,
+        "degree_in_sign": 1.293551,
+        "is_retrograde": true,
+        "speed": -0.114419
+      },
+      "Venus": {
+        "longitude": 336.449678,
+        "sign_index": 11,
+        "degree_in_sign": 6.449678,
+        "is_retrograde": false,
+        "speed": 1.094727
+      },
+      "Saturn": {
+        "longitude": 241.698202,
+        "sign_index": 8,
+        "degree_in_sign": 1.698202,
+        "is_retrograde": true,
+        "speed": -0.046239
+      },
+      "Rahu": {
+        "longitude": 187.527437,
+        "sign_index": 6,
+        "degree_in_sign": 7.527437,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 7.527437,
+        "sign_index": 0,
+        "degree_in_sign": 7.527437,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

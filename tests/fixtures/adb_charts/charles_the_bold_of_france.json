@@ -1,0 +1,111 @@
+{
+  "adb_id": 47953,
+  "name": "Charles the Bold of France",
+  "given_name": "Charles the Bold of France",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2244775.558287,
+    "year": 1433,
+    "month": 11,
+    "day": 11,
+    "calendar": "j",
+    "time": "01:44",
+    "time_type": "l",
+    "hour": 1.733333,
+    "time_unknown": false,
+    "place": "Dijon",
+    "country": "France",
+    "lat": 47.316667,
+    "lon": 5.016667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sco",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_the_Bold_of_France",
+  "source_notes": "Petitallot quotes Guy Jamin from a biography on \"Charles le Téméraire\" by Jean-Pierre Soisson, given in Cadran No.45, Oct/1997.  (November 11, 1433 OS, 2:00 AM LAT)\\n",
+  "categories": [
+    "Vocation : Military : Combat",
+    "Vocation : Military : Killed",
+    "Vocation : Politics : Activist/ political",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.169043,
+    "lagna": 144.169043,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 15.95909,
+    "jd_ut": 2244775.558287,
+    "planets": {
+      "Sun": {
+        "longitude": 221.643895,
+        "sign_index": 7,
+        "degree_in_sign": 11.643895,
+        "is_retrograde": false,
+        "speed": 1.013728
+      },
+      "Moon": {
+        "longitude": 210.697085,
+        "sign_index": 7,
+        "degree_in_sign": 0.697085,
+        "is_retrograde": false,
+        "speed": 15.048003
+      },
+      "Mars": {
+        "longitude": 299.664101,
+        "sign_index": 9,
+        "degree_in_sign": 29.664101,
+        "is_retrograde": false,
+        "speed": 0.714204
+      },
+      "Mercury": {
+        "longitude": 213.567749,
+        "sign_index": 7,
+        "degree_in_sign": 3.567749,
+        "is_retrograde": true,
+        "speed": -1.076796
+      },
+      "Jupiter": {
+        "longitude": 124.573867,
+        "sign_index": 4,
+        "degree_in_sign": 4.573867,
+        "is_retrograde": false,
+        "speed": 0.054432
+      },
+      "Venus": {
+        "longitude": 174.91185,
+        "sign_index": 5,
+        "degree_in_sign": 24.91185,
+        "is_retrograde": false,
+        "speed": 1.024123
+      },
+      "Saturn": {
+        "longitude": 296.949247,
+        "sign_index": 9,
+        "degree_in_sign": 26.949247,
+        "is_retrograde": false,
+        "speed": 0.056716
+      },
+      "Rahu": {
+        "longitude": 258.371929,
+        "sign_index": 8,
+        "degree_in_sign": 18.371929,
+        "is_retrograde": true,
+        "speed": -0.052993
+      },
+      "Ketu": {
+        "longitude": 78.371929,
+        "sign_index": 2,
+        "degree_in_sign": 18.371929,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

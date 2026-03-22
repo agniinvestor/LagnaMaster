@@ -1,0 +1,109 @@
+{
+  "adb_id": 4258,
+  "name": "Curvers, Alexis Theophile",
+  "given_name": "Alexis Theophile Curvers",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417265.708333,
+    "year": 1906,
+    "month": 2,
+    "day": 24,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Liège",
+    "country": "Belgium",
+    "lat": 50.633333,
+    "lon": 5.566667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curvers,_Alexis_Theophile",
+  "source_notes": "Gauquelin Vol 6/1063\\n",
+  "categories": [
+    "Vocation : Writers : Fiction",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 8.198304,
+    "lagna": 248.198304,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.546361,
+    "jd_ut": 2417265.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 312.146565,
+        "sign_index": 10,
+        "degree_in_sign": 12.146565,
+        "is_retrograde": false,
+        "speed": 1.006126
+      },
+      "Moon": {
+        "longitude": 322.69137,
+        "sign_index": 10,
+        "degree_in_sign": 22.69137,
+        "is_retrograde": false,
+        "speed": 13.770057
+      },
+      "Mars": {
+        "longitude": 351.826047,
+        "sign_index": 11,
+        "degree_in_sign": 21.826047,
+        "is_retrograde": false,
+        "speed": 0.741833
+      },
+      "Mercury": {
+        "longitude": 314.98563,
+        "sign_index": 10,
+        "degree_in_sign": 14.98563,
+        "is_retrograde": false,
+        "speed": 1.879689
+      },
+      "Jupiter": {
+        "longitude": 35.76824,
+        "sign_index": 1,
+        "degree_in_sign": 5.76824,
+        "is_retrograde": false,
+        "speed": 0.105733
+      },
+      "Venus": {
+        "longitude": 314.538305,
+        "sign_index": 10,
+        "degree_in_sign": 14.538305,
+        "is_retrograde": false,
+        "speed": 1.250975
+      },
+      "Saturn": {
+        "longitude": 312.798235,
+        "sign_index": 10,
+        "degree_in_sign": 12.798235,
+        "is_retrograde": false,
+        "speed": 0.121819
+      },
+      "Rahu": {
+        "longitude": 117.717614,
+        "sign_index": 3,
+        "degree_in_sign": 27.717614,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 297.717614,
+        "sign_index": 9,
+        "degree_in_sign": 27.717614,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

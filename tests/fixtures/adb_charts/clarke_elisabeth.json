@@ -1,0 +1,108 @@
+{
+  "adb_id": 50811,
+  "name": "Clarke, Elisabeth",
+  "given_name": "Elisabeth Clarke",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434717.232639,
+    "year": 1953,
+    "month": 12,
+    "day": 5,
+    "calendar": "g",
+    "time": "12:35",
+    "time_type": "s",
+    "hour": 12.583333,
+    "time_unknown": false,
+    "place": "Camden",
+    "country": "New Jersey",
+    "lat": 39.933333,
+    "lon": -75.116667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarke,_Elisabeth",
+  "source_notes": "Steinbrecher collection: Lescaut quotes birth record\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 1.405672,
+    "lagna": 301.405672,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.213584,
+    "jd_ut": 2434717.232639,
+    "planets": {
+      "Sun": {
+        "longitude": 230.088049,
+        "sign_index": 7,
+        "degree_in_sign": 20.088049,
+        "is_retrograde": false,
+        "speed": 1.01549
+      },
+      "Moon": {
+        "longitude": 221.627405,
+        "sign_index": 7,
+        "degree_in_sign": 11.627405,
+        "is_retrograde": false,
+        "speed": 8.404064
+      },
+      "Mars": {
+        "longitude": 177.829879,
+        "sign_index": 5,
+        "degree_in_sign": 27.829879,
+        "is_retrograde": false,
+        "speed": 0.610776
+      },
+      "Mercury": {
+        "longitude": 210.329654,
+        "sign_index": 7,
+        "degree_in_sign": 0.329654,
+        "is_retrograde": false,
+        "speed": 1.236731
+      },
+      "Jupiter": {
+        "longitude": 59.259413,
+        "sign_index": 1,
+        "degree_in_sign": 29.259413,
+        "is_retrograde": true,
+        "speed": -0.133281
+      },
+      "Venus": {
+        "longitude": 216.844502,
+        "sign_index": 7,
+        "degree_in_sign": 6.844502,
+        "is_retrograde": false,
+        "speed": 1.256798
+      },
+      "Saturn": {
+        "longitude": 191.877573,
+        "sign_index": 6,
+        "degree_in_sign": 11.877573,
+        "is_retrograde": false,
+        "speed": 0.103736
+      },
+      "Rahu": {
+        "longitude": 272.925052,
+        "sign_index": 9,
+        "degree_in_sign": 2.925052,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 92.925052,
+        "sign_index": 3,
+        "degree_in_sign": 2.925052,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 64917,
+  "name": "Cantagrel, Gilles",
+  "given_name": "Gilles Cantagrel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428857.725694,
+    "year": 1937,
+    "month": 11,
+    "day": 20,
+    "calendar": "g",
+    "time": "05:25",
+    "time_type": "s",
+    "hour": 5.416667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantagrel,_Gilles",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 35.\\n",
+  "categories": [
+    "Vocation : Education : Public speaker",
+    "Vocation : Entertain/Music : Other Entertain/Music",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 21.979238,
+    "lagna": 171.979238,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.989543,
+    "jd_ut": 2428857.725694,
+    "planets": {
+      "Sun": {
+        "longitude": 214.487348,
+        "sign_index": 7,
+        "degree_in_sign": 4.487348,
+        "is_retrograde": false,
+        "speed": 1.009371
+      },
+      "Moon": {
+        "longitude": 60.540581,
+        "sign_index": 2,
+        "degree_in_sign": 0.540581,
+        "is_retrograde": false,
+        "speed": 12.981728
+      },
+      "Mars": {
+        "longitude": 283.277592,
+        "sign_index": 9,
+        "degree_in_sign": 13.277592,
+        "is_retrograde": false,
+        "speed": 0.744937
+      },
+      "Mercury": {
+        "longitude": 226.808833,
+        "sign_index": 7,
+        "degree_in_sign": 16.808833,
+        "is_retrograde": false,
+        "speed": 1.513595
+      },
+      "Jupiter": {
+        "longitude": 271.03384,
+        "sign_index": 9,
+        "degree_in_sign": 1.03384,
+        "is_retrograde": false,
+        "speed": 0.177027
+      },
+      "Venus": {
+        "longitude": 196.268584,
+        "sign_index": 6,
+        "degree_in_sign": 16.268584,
+        "is_retrograde": false,
+        "speed": 1.252196
+      },
+      "Saturn": {
+        "longitude": 335.48008,
+        "sign_index": 11,
+        "degree_in_sign": 5.48008,
+        "is_retrograde": true,
+        "speed": -0.020865
+      },
+      "Rahu": {
+        "longitude": 223.432419,
+        "sign_index": 7,
+        "degree_in_sign": 13.432419,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 43.432419,
+        "sign_index": 1,
+        "degree_in_sign": 13.432419,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

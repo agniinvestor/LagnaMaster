@@ -1,0 +1,117 @@
+{
+  "adb_id": 47887,
+  "name": "Coccinelle",
+  "given_name": "Coccinelle",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426577.104167,
+    "year": 1931,
+    "month": 8,
+    "day": 23,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "d",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coccinelle",
+  "source_notes": "De Lescaut quotes \"L'Astrologue\" 1984 for B.R.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Surgery",
+    "Family : Relationship : Number of Marriages",
+    "Passions : Sexuality : Transgender M-to-F",
+    "Passions : Sexuality : Transvestite",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Politics : Activist/ social",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Famous : Historic figure"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 28.046114,
+    "lagna": 208.046114,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.902346,
+    "jd_ut": 2426577.104167,
+    "planets": {
+      "Sun": {
+        "longitude": 126.589057,
+        "sign_index": 4,
+        "degree_in_sign": 6.589057,
+        "is_retrograde": false,
+        "speed": 0.963729
+      },
+      "Moon": {
+        "longitude": 255.488985,
+        "sign_index": 8,
+        "degree_in_sign": 15.488985,
+        "is_retrograde": false,
+        "speed": 12.565292
+      },
+      "Mars": {
+        "longitude": 170.855334,
+        "sign_index": 5,
+        "degree_in_sign": 20.855334,
+        "is_retrograde": false,
+        "speed": 0.641322
+      },
+      "Mercury": {
+        "longitude": 146.714481,
+        "sign_index": 4,
+        "degree_in_sign": 26.714481,
+        "is_retrograde": true,
+        "speed": -0.119197
+      },
+      "Jupiter": {
+        "longitude": 105.30303,
+        "sign_index": 3,
+        "degree_in_sign": 15.30303,
+        "is_retrograde": false,
+        "speed": 0.213806
+      },
+      "Venus": {
+        "longitude": 122.341374,
+        "sign_index": 4,
+        "degree_in_sign": 2.341374,
+        "is_retrograde": false,
+        "speed": 1.237444
+      },
+      "Saturn": {
+        "longitude": 264.421742,
+        "sign_index": 8,
+        "degree_in_sign": 24.421742,
+        "is_retrograde": true,
+        "speed": -0.044636
+      },
+      "Rahu": {
+        "longitude": 344.287283,
+        "sign_index": 11,
+        "degree_in_sign": 14.287283,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 164.287283,
+        "sign_index": 5,
+        "degree_in_sign": 14.287283,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

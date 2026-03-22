@@ -1,0 +1,110 @@
+{
+  "adb_id": 50097,
+  "name": "Cannon, Joseph Gurney",
+  "given_name": "Joseph Gurney Cannon",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2391772.346944,
+    "year": 1836,
+    "month": 5,
+    "day": 7,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Guilford",
+    "country": "North Carolina",
+    "lat": 36.083333,
+    "lon": -79.9
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cannon,_Joseph_Gurney",
+  "source_notes": "Sy Scholfield quotes newspaper article \"Uncle Joe Tells Birthday; Ex-Speaker, after 87 Years, Fieles Certificate in North Carolina\", NY Times, April 12, 1923, p. 9.  Place given is New Garden, Guilford County; another bio gives Guilford as birth place.\\n",
+  "categories": [
+    "Family : Childhood : Family traumatic event",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Personal : Death : Long life  more than 80 yrs"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 17.439744,
+    "lagna": 137.439744,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.571927,
+    "jd_ut": 2391772.346944,
+    "planets": {
+      "Sun": {
+        "longitude": 25.6713,
+        "sign_index": 0,
+        "degree_in_sign": 25.6713,
+        "is_retrograde": false,
+        "speed": 0.966152
+      },
+      "Moon": {
+        "longitude": 293.664266,
+        "sign_index": 9,
+        "degree_in_sign": 23.664266,
+        "is_retrograde": false,
+        "speed": 17.179289
+      },
+      "Mars": {
+        "longitude": 354.467685,
+        "sign_index": 11,
+        "degree_in_sign": 24.467685,
+        "is_retrograde": false,
+        "speed": 0.762132
+      },
+      "Mercury": {
+        "longitude": 33.691326,
+        "sign_index": 1,
+        "degree_in_sign": 3.691326,
+        "is_retrograde": false,
+        "speed": 2.122393
+      },
+      "Jupiter": {
+        "longitude": 80.679606,
+        "sign_index": 2,
+        "degree_in_sign": 20.679606,
+        "is_retrograde": false,
+        "speed": 0.169645
+      },
+      "Venus": {
+        "longitude": 70.765094,
+        "sign_index": 2,
+        "degree_in_sign": 10.765094,
+        "is_retrograde": false,
+        "speed": 1.021296
+      },
+      "Saturn": {
+        "longitude": 189.216501,
+        "sign_index": 6,
+        "degree_in_sign": 9.216501,
+        "is_retrograde": true,
+        "speed": -0.071367
+      },
+      "Rahu": {
+        "longitude": 28.665266,
+        "sign_index": 0,
+        "degree_in_sign": 28.665266,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 208.665266,
+        "sign_index": 6,
+        "degree_in_sign": 28.665266,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

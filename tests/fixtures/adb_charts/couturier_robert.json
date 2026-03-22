@@ -1,0 +1,109 @@
+{
+  "adb_id": 65097,
+  "name": "Couturier, Robert",
+  "given_name": "Robert Couturier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416967.868507,
+    "year": 1905,
+    "month": 5,
+    "day": 2,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Angoulême",
+    "country": "France",
+    "lat": 45.65,
+    "lon": 0.15
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couturier,_Robert",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 275.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 1.023408,
+    "lagna": 61.023408,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.534975,
+    "jd_ut": 2416967.868507,
+    "planets": {
+      "Sun": {
+        "longitude": 18.736833,
+        "sign_index": 0,
+        "degree_in_sign": 18.736833,
+        "is_retrograde": false,
+        "speed": 0.969933
+      },
+      "Moon": {
+        "longitude": 353.593135,
+        "sign_index": 11,
+        "degree_in_sign": 23.593135,
+        "is_retrograde": false,
+        "speed": 8.600506
+      },
+      "Mars": {
+        "longitude": 207.269687,
+        "sign_index": 6,
+        "degree_in_sign": 27.269687,
+        "is_retrograde": true,
+        "speed": -0.334079
+      },
+      "Mercury": {
+        "longitude": 5.591087,
+        "sign_index": 0,
+        "degree_in_sign": 5.591087,
+        "is_retrograde": true,
+        "speed": -0.36916
+      },
+      "Jupiter": {
+        "longitude": 20.121159,
+        "sign_index": 0,
+        "degree_in_sign": 20.121159,
+        "is_retrograde": false,
+        "speed": 0.238401
+      },
+      "Venus": {
+        "longitude": 10.884702,
+        "sign_index": 0,
+        "degree_in_sign": 10.884702,
+        "is_retrograde": true,
+        "speed": -0.578075
+      },
+      "Saturn": {
+        "longitude": 308.935651,
+        "sign_index": 10,
+        "degree_in_sign": 8.935651,
+        "is_retrograde": false,
+        "speed": 0.065333
+      },
+      "Rahu": {
+        "longitude": 133.500773,
+        "sign_index": 4,
+        "degree_in_sign": 13.500773,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 313.500773,
+        "sign_index": 10,
+        "degree_in_sign": 13.500773,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

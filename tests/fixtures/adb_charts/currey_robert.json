@@ -1,0 +1,114 @@
+{
+  "adb_id": 43922,
+  "name": "Currey, Robert",
+  "given_name": "Robert Currey",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435375.010417,
+    "year": 1955,
+    "month": 9,
+    "day": 24,
+    "calendar": "g",
+    "time": "13:15",
+    "time_type": "d",
+    "hour": 13.25,
+    "time_unknown": false,
+    "place": "Dundee",
+    "country": "Scotland",
+    "lat": 56.466667,
+    "lon": -3.0
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Currey,_Robert",
+  "source_notes": "LMR quotes him by email 11/2001, B.C. www.astrology.co.uk/EQIntro\\nCaroline Gerard confirmed data from birth certificate to Sy Scholfield by email, 18 March 2016. \\n",
+  "categories": [
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Education : Public speaker",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 14.780477,
+    "lagna": 194.780477,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.238736,
+    "jd_ut": 2435375.010417,
+    "planets": {
+      "Sun": {
+        "longitude": 157.432645,
+        "sign_index": 5,
+        "degree_in_sign": 7.432645,
+        "is_retrograde": false,
+        "speed": 0.979397
+      },
+      "Moon": {
+        "longitude": 251.782416,
+        "sign_index": 8,
+        "degree_in_sign": 11.782416,
+        "is_retrograde": false,
+        "speed": 11.848216
+      },
+      "Mars": {
+        "longitude": 144.642888,
+        "sign_index": 4,
+        "degree_in_sign": 24.642888,
+        "is_retrograde": false,
+        "speed": 0.637761
+      },
+      "Mercury": {
+        "longitude": 182.91773,
+        "sign_index": 6,
+        "degree_in_sign": 2.91773,
+        "is_retrograde": false,
+        "speed": 0.643933
+      },
+      "Jupiter": {
+        "longitude": 118.679518,
+        "sign_index": 3,
+        "degree_in_sign": 28.679518,
+        "is_retrograde": false,
+        "speed": 0.193169
+      },
+      "Venus": {
+        "longitude": 163.684957,
+        "sign_index": 5,
+        "degree_in_sign": 13.684957,
+        "is_retrograde": false,
+        "speed": 1.245152
+      },
+      "Saturn": {
+        "longitude": 204.654133,
+        "sign_index": 6,
+        "degree_in_sign": 24.654133,
+        "is_retrograde": false,
+        "speed": 0.093152
+      },
+      "Rahu": {
+        "longitude": 238.068056,
+        "sign_index": 7,
+        "degree_in_sign": 28.068056,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 58.068056,
+        "sign_index": 1,
+        "degree_in_sign": 28.068056,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

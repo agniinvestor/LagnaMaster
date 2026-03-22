@@ -1,0 +1,108 @@
+{
+  "adb_id": 69900,
+  "name": "Cogné, Henri",
+  "given_name": "Henri Cogné",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428137.270833,
+    "year": 1935,
+    "month": 11,
+    "day": 30,
+    "calendar": "g",
+    "time": "18:30",
+    "time_type": "s",
+    "hour": 18.5,
+    "time_unknown": false,
+    "place": "Le Lion d'Angers",
+    "country": "France",
+    "lat": 47.633333,
+    "lon": -0.716667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cogné,_Henri",
+  "source_notes": "Didier Geslain archive, 'hippisme drivers' pdf file, p. 41.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 26.101445,
+    "lagna": 56.101445,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.961997,
+    "jd_ut": 2428137.270833,
+    "planets": {
+      "Sun": {
+        "longitude": 224.666917,
+        "sign_index": 7,
+        "degree_in_sign": 14.666917,
+        "is_retrograde": false,
+        "speed": 1.013787
+      },
+      "Moon": {
+        "longitude": 281.279889,
+        "sign_index": 9,
+        "degree_in_sign": 11.279889,
+        "is_retrograde": false,
+        "speed": 10.827836
+      },
+      "Mars": {
+        "longitude": 272.065125,
+        "sign_index": 9,
+        "degree_in_sign": 2.065125,
+        "is_retrograde": false,
+        "speed": 0.772182
+      },
+      "Mercury": {
+        "longitude": 219.35853,
+        "sign_index": 7,
+        "degree_in_sign": 9.35853,
+        "is_retrograde": false,
+        "speed": 1.57468
+      },
+      "Jupiter": {
+        "longitude": 221.84464,
+        "sign_index": 7,
+        "degree_in_sign": 11.84464,
+        "is_retrograde": false,
+        "speed": 0.223444
+      },
+      "Venus": {
+        "longitude": 178.423851,
+        "sign_index": 5,
+        "degree_in_sign": 28.423851,
+        "is_retrograde": false,
+        "speed": 1.08088
+      },
+      "Saturn": {
+        "longitude": 310.995226,
+        "sign_index": 10,
+        "degree_in_sign": 10.995226,
+        "is_retrograde": false,
+        "speed": 0.039391
+      },
+      "Rahu": {
+        "longitude": 261.610815,
+        "sign_index": 8,
+        "degree_in_sign": 21.610815,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 81.610815,
+        "sign_index": 2,
+        "degree_in_sign": 21.610815,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

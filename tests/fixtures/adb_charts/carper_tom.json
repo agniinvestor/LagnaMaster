@@ -1,0 +1,114 @@
+{
+  "adb_id": 104157,
+  "name": "Carper, Tom",
+  "given_name": "Tom Carper",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432209.25,
+    "year": 1947,
+    "month": 1,
+    "day": 23,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Beckley",
+    "country": "West Virginia",
+    "lat": 37.783333,
+    "lon": -81.183333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carper,_Tom",
+  "source_notes": "Sy Scholfield provided birth report, ''The Raleigh Register'' (Beckley, West Virginia), 24 January 1947, page 3: born at Raleigh General Hospital to \"Mr and Mrs Wallace R. Carpenter, of Beaver.\" This is clearly a typo. His father was Wallace R. Carper.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Vocation : Travel : Pilot/ military"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 13.482542,
+    "lagna": 13.482542,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.117688,
+    "jd_ut": 2432209.25,
+    "planets": {
+      "Sun": {
+        "longitude": 279.790216,
+        "sign_index": 9,
+        "degree_in_sign": 9.790216,
+        "is_retrograde": false,
+        "speed": 1.017435
+      },
+      "Moon": {
+        "longitude": 295.2382,
+        "sign_index": 9,
+        "degree_in_sign": 25.2382,
+        "is_retrograde": false,
+        "speed": 8.014627
+      },
+      "Mars": {
+        "longitude": 275.530876,
+        "sign_index": 9,
+        "degree_in_sign": 5.530876,
+        "is_retrograde": false,
+        "speed": 0.778969
+      },
+      "Mercury": {
+        "longitude": 280.036732,
+        "sign_index": 9,
+        "degree_in_sign": 10.036732,
+        "is_retrograde": false,
+        "speed": 1.693041
+      },
+      "Jupiter": {
+        "longitude": 210.840681,
+        "sign_index": 7,
+        "degree_in_sign": 0.840681,
+        "is_retrograde": false,
+        "speed": 0.136306
+      },
+      "Venus": {
+        "longitude": 233.040392,
+        "sign_index": 7,
+        "degree_in_sign": 23.040392,
+        "is_retrograde": false,
+        "speed": 0.98309
+      },
+      "Saturn": {
+        "longitude": 102.530187,
+        "sign_index": 3,
+        "degree_in_sign": 12.530187,
+        "is_retrograde": true,
+        "speed": -0.082066
+      },
+      "Rahu": {
+        "longitude": 45.828217,
+        "sign_index": 1,
+        "degree_in_sign": 15.828217,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 225.828217,
+        "sign_index": 7,
+        "degree_in_sign": 15.828217,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

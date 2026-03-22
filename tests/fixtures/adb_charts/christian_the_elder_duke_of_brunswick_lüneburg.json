@@ -1,0 +1,108 @@
+{
+  "adb_id": 59752,
+  "name": "Christian the Elder, Duke of Brunswick-Lüneburg",
+  "given_name": "Duke of Brunswick-Lüneburg Christian the Elder",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2293352.221991,
+    "year": 1566,
+    "month": 11,
+    "day": 9,
+    "calendar": "j",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Celle",
+    "country": "Germany",
+    "lat": 52.616667,
+    "lon": 10.083333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian_the_Elder,_Duke_of_Brunswick-Lüneburg",
+  "source_notes": "Sy Scholfield quotes \"Braunschweig-Lüneburgische Chronica\" by Philippus Julius Rehtmeier (Detleff Detleffsen, 1722), p. 1635: \"Christian der Aeltere . . . ist A. 1566. den 19. Novemb. um 6. Uhr Nachmittage, zu Zell geboren.\"\\n\\nWikipedia gives 9 November (equal to 19 November NS) so the dates in this book are presumably New Style.\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 26.941178,
+    "lagna": 56.941178,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.812814,
+    "jd_ut": 2293352.221991,
+    "planets": {
+      "Sun": {
+        "longitude": 219.171765,
+        "sign_index": 7,
+        "degree_in_sign": 9.171765,
+        "is_retrograde": false,
+        "speed": 1.012638
+      },
+      "Moon": {
+        "longitude": 194.742291,
+        "sign_index": 6,
+        "degree_in_sign": 14.742291,
+        "is_retrograde": false,
+        "speed": 13.754074
+      },
+      "Mars": {
+        "longitude": 221.327127,
+        "sign_index": 7,
+        "degree_in_sign": 11.327127,
+        "is_retrograde": false,
+        "speed": 0.723458
+      },
+      "Mercury": {
+        "longitude": 202.250865,
+        "sign_index": 6,
+        "degree_in_sign": 22.250865,
+        "is_retrograde": false,
+        "speed": 1.443877
+      },
+      "Jupiter": {
+        "longitude": 189.680988,
+        "sign_index": 6,
+        "degree_in_sign": 9.680988,
+        "is_retrograde": false,
+        "speed": 0.203245
+      },
+      "Venus": {
+        "longitude": 192.021753,
+        "sign_index": 6,
+        "degree_in_sign": 12.021753,
+        "is_retrograde": false,
+        "speed": 1.24344
+      },
+      "Saturn": {
+        "longitude": 145.214181,
+        "sign_index": 4,
+        "degree_in_sign": 25.214181,
+        "is_retrograde": false,
+        "speed": 0.061637
+      },
+      "Rahu": {
+        "longitude": 204.173751,
+        "sign_index": 6,
+        "degree_in_sign": 24.173751,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 24.173751,
+        "sign_index": 0,
+        "degree_in_sign": 24.173751,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

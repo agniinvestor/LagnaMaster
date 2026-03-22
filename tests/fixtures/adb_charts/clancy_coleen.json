@@ -1,0 +1,110 @@
+{
+  "adb_id": 25793,
+  "name": "Clancy, Coleen",
+  "given_name": "Coleen Clancy",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444842.747917,
+    "year": 1981,
+    "month": 8,
+    "day": 26,
+    "calendar": "g",
+    "time": "01:57",
+    "time_type": "d",
+    "hour": 1.95,
+    "time_unknown": false,
+    "place": "Boston",
+    "country": "Massachusetts",
+    "lat": 42.366667,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clancy,_Coleen",
+  "source_notes": "The Astrologer's Newsletter quotes B.C. 10/1998\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Western",
+    "Personal : Death : Accidental",
+    "Personal : Death : Short Life less than 29 Yrs"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 26.646744,
+    "lagna": 56.646744,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.600777,
+    "jd_ut": 2444842.747917,
+    "planets": {
+      "Sun": {
+        "longitude": 129.309957,
+        "sign_index": 4,
+        "degree_in_sign": 9.309957,
+        "is_retrograde": false,
+        "speed": 0.965415
+      },
+      "Moon": {
+        "longitude": 87.832651,
+        "sign_index": 2,
+        "degree_in_sign": 27.832651,
+        "is_retrograde": false,
+        "speed": 15.846506
+      },
+      "Mars": {
+        "longitude": 92.035698,
+        "sign_index": 3,
+        "degree_in_sign": 2.035698,
+        "is_retrograde": false,
+        "speed": 0.642537
+      },
+      "Mercury": {
+        "longitude": 143.973475,
+        "sign_index": 4,
+        "degree_in_sign": 23.973475,
+        "is_retrograde": false,
+        "speed": 1.698033
+      },
+      "Jupiter": {
+        "longitude": 166.954931,
+        "sign_index": 5,
+        "degree_in_sign": 16.954931,
+        "is_retrograde": false,
+        "speed": 0.19126
+      },
+      "Venus": {
+        "longitude": 165.533853,
+        "sign_index": 5,
+        "degree_in_sign": 15.533853,
+        "is_retrograde": false,
+        "speed": 1.18676
+      },
+      "Saturn": {
+        "longitude": 164.413075,
+        "sign_index": 5,
+        "degree_in_sign": 14.413075,
+        "is_retrograde": false,
+        "speed": 0.107898
+      },
+      "Rahu": {
+        "longitude": 96.353307,
+        "sign_index": 3,
+        "degree_in_sign": 6.353307,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 276.353307,
+        "sign_index": 9,
+        "degree_in_sign": 6.353307,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

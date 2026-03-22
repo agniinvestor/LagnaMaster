@@ -1,0 +1,108 @@
+{
+  "adb_id": 65089,
+  "name": "Courtois, Georges",
+  "given_name": "Georges Courtois",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432455.791667,
+    "year": 1947,
+    "month": 9,
+    "day": 27,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Nantes",
+    "country": "France",
+    "lat": 47.216667,
+    "lon": -1.55
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courtois,_Georges",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 262.\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Other Criminal"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 27.599326,
+    "lagna": 147.599326,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.127115,
+    "jd_ut": 2432455.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 160.205337,
+        "sign_index": 5,
+        "degree_in_sign": 10.205337,
+        "is_retrograde": false,
+        "speed": 0.98071
+      },
+      "Moon": {
+        "longitude": 305.066209,
+        "sign_index": 10,
+        "degree_in_sign": 5.066209,
+        "is_retrograde": false,
+        "speed": 15.017885
+      },
+      "Mars": {
+        "longitude": 94.651407,
+        "sign_index": 3,
+        "degree_in_sign": 4.651407,
+        "is_retrograde": false,
+        "speed": 0.587463
+      },
+      "Mercury": {
+        "longitude": 180.855784,
+        "sign_index": 6,
+        "degree_in_sign": 0.855784,
+        "is_retrograde": false,
+        "speed": 1.423212
+      },
+      "Jupiter": {
+        "longitude": 211.715042,
+        "sign_index": 7,
+        "degree_in_sign": 1.715042,
+        "is_retrograde": false,
+        "speed": 0.174913
+      },
+      "Venus": {
+        "longitude": 166.578722,
+        "sign_index": 5,
+        "degree_in_sign": 16.578722,
+        "is_retrograde": false,
+        "speed": 1.245591
+      },
+      "Saturn": {
+        "longitude": 115.636756,
+        "sign_index": 3,
+        "degree_in_sign": 25.636756,
+        "is_retrograde": false,
+        "speed": 0.10369
+      },
+      "Rahu": {
+        "longitude": 32.763466,
+        "sign_index": 1,
+        "degree_in_sign": 2.763466,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 212.763466,
+        "sign_index": 7,
+        "degree_in_sign": 2.763466,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

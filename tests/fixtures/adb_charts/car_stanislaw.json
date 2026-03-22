@@ -1,0 +1,108 @@
+{
+  "adb_id": 77254,
+  "name": "Car, Stanislaw",
+  "given_name": "Stanislaw Car",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408503.316667,
+    "year": 1882,
+    "month": 2,
+    "day": 26,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Warszawa",
+    "country": "Poland",
+    "lat": 52.25,
+    "lon": 21.0
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Car,_Stanislaw",
+  "source_notes": "PTA quotes birth certificate No. 184 from 1882, the Roman Catholic parish of the Transfiguration in Warsaw, reported by Wojciech Suchomski .\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 0.605348,
+    "lagna": 150.605348,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.211402,
+    "jd_ut": 2408503.316667,
+    "planets": {
+      "Sun": {
+        "longitude": 315.92904,
+        "sign_index": 10,
+        "degree_in_sign": 15.92904,
+        "is_retrograde": false,
+        "speed": 1.003793
+      },
+      "Moon": {
+        "longitude": 67.778296,
+        "sign_index": 2,
+        "degree_in_sign": 7.778296,
+        "is_retrograde": false,
+        "speed": 9.047694
+      },
+      "Mars": {
+        "longitude": 67.957909,
+        "sign_index": 2,
+        "degree_in_sign": 7.957909,
+        "is_retrograde": false,
+        "speed": 0.248437
+      },
+      "Mercury": {
+        "longitude": 306.911248,
+        "sign_index": 10,
+        "degree_in_sign": 6.911248,
+        "is_retrograde": true,
+        "speed": -0.929515
+      },
+      "Jupiter": {
+        "longitude": 27.584712,
+        "sign_index": 0,
+        "degree_in_sign": 27.584712,
+        "is_retrograde": false,
+        "speed": 0.141405
+      },
+      "Venus": {
+        "longitude": 317.350229,
+        "sign_index": 10,
+        "degree_in_sign": 17.350229,
+        "is_retrograde": false,
+        "speed": 1.249864
+      },
+      "Saturn": {
+        "longitude": 15.624676,
+        "sign_index": 0,
+        "degree_in_sign": 15.624676,
+        "is_retrograde": false,
+        "speed": 0.084839
+      },
+      "Rahu": {
+        "longitude": 222.055271,
+        "sign_index": 7,
+        "degree_in_sign": 12.055271,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 42.055271,
+        "sign_index": 1,
+        "degree_in_sign": 12.055271,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 7163,
+  "name": "Cameron, Erin",
+  "given_name": "Erin Cameron",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2427048.404167,
+    "year": 1932,
+    "month": 12,
+    "day": 6,
+    "calendar": "g",
+    "time": "14:42",
+    "time_type": "s",
+    "hour": 14.7,
+    "time_unknown": false,
+    "place": "Syracuse",
+    "country": "Kansas",
+    "lat": 37.983333,
+    "lon": -101.75
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "ari",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cameron,_Erin",
+  "source_notes": "LMR quotes her in the '60s\\n",
+  "categories": [
+    "Vocation : Beauty : Model",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 29.036471,
+    "lagna": 359.036471,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.920365,
+    "jd_ut": 2427048.404167,
+    "planets": {
+      "Sun": {
+        "longitude": 231.671953,
+        "sign_index": 7,
+        "degree_in_sign": 21.671953,
+        "is_retrograde": false,
+        "speed": 1.015474
+      },
+      "Moon": {
+        "longitude": 344.605191,
+        "sign_index": 11,
+        "degree_in_sign": 14.605191,
+        "is_retrograde": false,
+        "speed": 10.614683
+      },
+      "Mars": {
+        "longitude": 137.263511,
+        "sign_index": 4,
+        "degree_in_sign": 17.263511,
+        "is_retrograde": false,
+        "speed": 0.390265
+      },
+      "Mercury": {
+        "longitude": 226.468554,
+        "sign_index": 7,
+        "degree_in_sign": 16.468554,
+        "is_retrograde": true,
+        "speed": -1.268394
+      },
+      "Jupiter": {
+        "longitude": 148.744093,
+        "sign_index": 4,
+        "degree_in_sign": 28.744093,
+        "is_retrograde": false,
+        "speed": 0.095969
+      },
+      "Venus": {
+        "longitude": 199.241441,
+        "sign_index": 6,
+        "degree_in_sign": 19.241441,
+        "is_retrograde": false,
+        "speed": 1.232438
+      },
+      "Saturn": {
+        "longitude": 278.500558,
+        "sign_index": 9,
+        "degree_in_sign": 8.500558,
+        "is_retrograde": false,
+        "speed": 0.093665
+      },
+      "Rahu": {
+        "longitude": 319.312118,
+        "sign_index": 10,
+        "degree_in_sign": 19.312118,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 139.312118,
+        "sign_index": 4,
+        "degree_in_sign": 19.312118,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

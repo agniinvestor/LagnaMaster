@@ -1,0 +1,110 @@
+{
+  "adb_id": 60321,
+  "name": "Claude, Albert",
+  "given_name": "Albert Claude",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414525.083333,
+    "year": 1898,
+    "month": 8,
+    "day": 23,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Neufchâteau",
+    "country": "Belgium",
+    "lat": 49.833333,
+    "lon": 5.433333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claude,_Albert",
+  "source_notes": "Taeger quotes Lescaut quoting Luc de Marre, B.R.\\n",
+  "categories": [
+    "Vocation : Science : Biology",
+    "Notable : Awards : Nobel prize",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 25.433649,
+    "lagna": 205.433649,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.441592,
+    "jd_ut": 2414525.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 127.969869,
+        "sign_index": 4,
+        "degree_in_sign": 7.969869,
+        "is_retrograde": false,
+        "speed": 0.964725
+      },
+      "Moon": {
+        "longitude": 202.24706,
+        "sign_index": 6,
+        "degree_in_sign": 22.24706,
+        "is_retrograde": false,
+        "speed": 10.788911
+      },
+      "Mars": {
+        "longitude": 61.144115,
+        "sign_index": 2,
+        "degree_in_sign": 1.144115,
+        "is_retrograde": false,
+        "speed": 0.632259
+      },
+      "Mercury": {
+        "longitude": 148.944557,
+        "sign_index": 4,
+        "degree_in_sign": 28.944557,
+        "is_retrograde": true,
+        "speed": -0.044715
+      },
+      "Jupiter": {
+        "longitude": 167.527181,
+        "sign_index": 5,
+        "degree_in_sign": 17.527181,
+        "is_retrograde": false,
+        "speed": 0.188598
+      },
+      "Venus": {
+        "longitude": 172.158275,
+        "sign_index": 5,
+        "degree_in_sign": 22.158275,
+        "is_retrograde": false,
+        "speed": 1.101884
+      },
+      "Saturn": {
+        "longitude": 223.361999,
+        "sign_index": 7,
+        "degree_in_sign": 13.361999,
+        "is_retrograde": false,
+        "speed": 0.022561
+      },
+      "Rahu": {
+        "longitude": 262.949108,
+        "sign_index": 8,
+        "degree_in_sign": 22.949108,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 82.949108,
+        "sign_index": 2,
+        "degree_in_sign": 22.949108,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

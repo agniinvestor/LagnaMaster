@@ -1,0 +1,113 @@
+{
+  "adb_id": 87334,
+  "name": "Coe, James",
+  "given_name": "James Coe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418471.673611,
+    "year": 1909,
+    "month": 6,
+    "day": 13,
+    "calendar": "g",
+    "time": "22:10",
+    "time_type": "s",
+    "hour": 22.166667,
+    "time_unknown": false,
+    "place": "Richmond",
+    "country": "Indiana",
+    "lat": 39.833333,
+    "lon": -84.883333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coe,_James",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Killed",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 26.826854,
+    "lagna": 266.826854,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.592464,
+    "jd_ut": 2418471.673611,
+    "planets": {
+      "Sun": {
+        "longitude": 59.856498,
+        "sign_index": 1,
+        "degree_in_sign": 29.856498,
+        "is_retrograde": false,
+        "speed": 0.95524
+      },
+      "Moon": {
+        "longitude": 10.654176,
+        "sign_index": 0,
+        "degree_in_sign": 10.654176,
+        "is_retrograde": false,
+        "speed": 18.178278
+      },
+      "Mars": {
+        "longitude": 319.006621,
+        "sign_index": 10,
+        "degree_in_sign": 19.006621,
+        "is_retrograde": false,
+        "speed": 0.578394
+      },
+      "Mercury": {
+        "longitude": 61.070948,
+        "sign_index": 2,
+        "degree_in_sign": 1.070948,
+        "is_retrograde": true,
+        "speed": -0.564453
+      },
+      "Jupiter": {
+        "longitude": 134.645103,
+        "sign_index": 4,
+        "degree_in_sign": 14.645103,
+        "is_retrograde": false,
+        "speed": 0.117317
+      },
+      "Venus": {
+        "longitude": 72.294307,
+        "sign_index": 2,
+        "degree_in_sign": 12.294307,
+        "is_retrograde": false,
+        "speed": 1.225974
+      },
+      "Saturn": {
+        "longitude": 358.409701,
+        "sign_index": 11,
+        "degree_in_sign": 28.409701,
+        "is_retrograde": false,
+        "speed": 0.080806
+      },
+      "Rahu": {
+        "longitude": 53.810979,
+        "sign_index": 1,
+        "degree_in_sign": 23.810979,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 233.810979,
+        "sign_index": 7,
+        "degree_in_sign": 23.810979,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

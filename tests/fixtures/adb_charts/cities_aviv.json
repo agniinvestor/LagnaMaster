@@ -1,0 +1,112 @@
+{
+  "adb_id": 97505,
+  "name": "Cities Aviv",
+  "given_name": "Cities Aviv",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2447663.040972,
+    "year": 1989,
+    "month": 5,
+    "day": 16,
+    "calendar": "g",
+    "time": "07:59",
+    "time_type": "d",
+    "hour": 7.983333,
+    "time_unknown": false,
+    "place": "Memphis",
+    "country": "Tennessee",
+    "lat": 35.15,
+    "lon": -90.05
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cities_Aviv",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Commercial Appeal'' (Memphis, Tennessee), 18 May 1989, page C4, born at Methodist Hospital, son of Jacquelyn and Bishop Mays. \\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Music : Vocalist/ Rapper",
+    "Vocation : Entertain/Music : Other Entertain/Music"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 9.521623,
+    "lagna": 39.521623,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.708631,
+    "jd_ut": 2447663.040972,
+    "planets": {
+      "Sun": {
+        "longitude": 31.921413,
+        "sign_index": 1,
+        "degree_in_sign": 1.921413,
+        "is_retrograde": false,
+        "speed": 0.963494
+      },
+      "Moon": {
+        "longitude": 164.934535,
+        "sign_index": 5,
+        "degree_in_sign": 14.934535,
+        "is_retrograde": false,
+        "speed": 15.326141
+      },
+      "Mars": {
+        "longitude": 77.025566,
+        "sign_index": 2,
+        "degree_in_sign": 17.025566,
+        "is_retrograde": false,
+        "speed": 0.619304
+      },
+      "Mercury": {
+        "longitude": 42.508873,
+        "sign_index": 1,
+        "degree_in_sign": 12.508873,
+        "is_retrograde": true,
+        "speed": -0.303141
+      },
+      "Jupiter": {
+        "longitude": 49.306757,
+        "sign_index": 1,
+        "degree_in_sign": 19.306757,
+        "is_retrograde": false,
+        "speed": 0.227149
+      },
+      "Venus": {
+        "longitude": 42.770914,
+        "sign_index": 1,
+        "degree_in_sign": 12.770914,
+        "is_retrograde": false,
+        "speed": 1.228699
+      },
+      "Saturn": {
+        "longitude": 259.773941,
+        "sign_index": 8,
+        "degree_in_sign": 19.773941,
+        "is_retrograde": true,
+        "speed": -0.036748
+      },
+      "Rahu": {
+        "longitude": 306.900264,
+        "sign_index": 10,
+        "degree_in_sign": 6.900264,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 126.900264,
+        "sign_index": 4,
+        "degree_in_sign": 6.900264,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

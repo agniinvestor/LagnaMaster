@@ -1,0 +1,108 @@
+{
+  "adb_id": 56052,
+  "name": "Constantine Pavlovich, Grand Duke of Russia",
+  "given_name": "Grand Duke of Russia Constantine Pavlovich",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2370953.77662,
+    "year": 1779,
+    "month": 4,
+    "day": 27,
+    "calendar": "j",
+    "time": "08:40",
+    "time_type": "l",
+    "hour": 8.666667,
+    "time_unknown": false,
+    "place": "Tsarskoye Selo",
+    "country": "Russian Federation",
+    "lat": 59.716667,
+    "lon": 30.416667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Constantine_Pavlovich,_Grand_Duke_of_Russia",
+  "source_notes": "Dimitri Macedonsky quotes Kammer-Furier Journal, April 27, 1779 on his Russian succession website:\\nhttp://macedonsky.narod.ru/agnates/a02.html\\nhttp://macedonsky.narod.ru/sources/a02s.html\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 20.186715,
+    "lagna": 80.186715,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.7764,
+    "jd_ut": 2370953.77662,
+    "planets": {
+      "Sun": {
+        "longitude": 26.678017,
+        "sign_index": 0,
+        "degree_in_sign": 26.678017,
+        "is_retrograde": false,
+        "speed": 0.965586
+      },
+      "Moon": {
+        "longitude": 291.310095,
+        "sign_index": 9,
+        "degree_in_sign": 21.310095,
+        "is_retrograde": false,
+        "speed": 10.063827
+      },
+      "Mars": {
+        "longitude": 212.126949,
+        "sign_index": 7,
+        "degree_in_sign": 2.126949,
+        "is_retrograde": true,
+        "speed": -0.340601
+      },
+      "Mercury": {
+        "longitude": 33.748841,
+        "sign_index": 1,
+        "degree_in_sign": 3.748841,
+        "is_retrograde": true,
+        "speed": -0.458901
+      },
+      "Jupiter": {
+        "longitude": 146.54766,
+        "sign_index": 4,
+        "degree_in_sign": 26.54766,
+        "is_retrograde": true,
+        "speed": -0.018455
+      },
+      "Venus": {
+        "longitude": 345.806912,
+        "sign_index": 11,
+        "degree_in_sign": 15.806912,
+        "is_retrograde": false,
+        "speed": 1.149701
+      },
+      "Saturn": {
+        "longitude": 213.395954,
+        "sign_index": 7,
+        "degree_in_sign": 3.395954,
+        "is_retrograde": true,
+        "speed": -0.073911
+      },
+      "Rahu": {
+        "longitude": 51.887018,
+        "sign_index": 1,
+        "degree_in_sign": 21.887018,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 231.887018,
+        "sign_index": 7,
+        "degree_in_sign": 21.887018,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 53262,
+  "name": "Corbelli, Guido",
+  "given_name": "Guido Corbelli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419842.5,
+    "year": 1913,
+    "month": 3,
+    "day": 16,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Sassuolo",
+    "country": "Italy",
+    "lat": 44.55,
+    "lon": 10.783333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corbelli,_Guido",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/1483\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 26.324888,
+    "lagna": 206.324888,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.644871,
+    "jd_ut": 2419842.5,
+    "planets": {
+      "Sun": {
+        "longitude": 332.166857,
+        "sign_index": 11,
+        "degree_in_sign": 2.166857,
+        "is_retrograde": false,
+        "speed": 0.995432
+      },
+      "Moon": {
+        "longitude": 63.050307,
+        "sign_index": 2,
+        "degree_in_sign": 3.050307,
+        "is_retrograde": false,
+        "speed": 14.184905
+      },
+      "Mars": {
+        "longitude": 296.334583,
+        "sign_index": 9,
+        "degree_in_sign": 26.334583,
+        "is_retrograde": false,
+        "speed": 0.772638
+      },
+      "Mercury": {
+        "longitude": 348.864414,
+        "sign_index": 11,
+        "degree_in_sign": 18.864414,
+        "is_retrograde": false,
+        "speed": 0.353383
+      },
+      "Jupiter": {
+        "longitude": 261.403045,
+        "sign_index": 8,
+        "degree_in_sign": 21.403045,
+        "is_retrograde": false,
+        "speed": 0.140198
+      },
+      "Venus": {
+        "longitude": 13.73496,
+        "sign_index": 0,
+        "degree_in_sign": 13.73496,
+        "is_retrograde": false,
+        "speed": 0.59392
+      },
+      "Saturn": {
+        "longitude": 36.447615,
+        "sign_index": 1,
+        "degree_in_sign": 6.447615,
+        "is_retrograde": false,
+        "speed": 0.079155
+      },
+      "Rahu": {
+        "longitude": 341.168012,
+        "sign_index": 11,
+        "degree_in_sign": 11.168012,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 161.168012,
+        "sign_index": 5,
+        "degree_in_sign": 11.168012,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 47513,
+  "name": "Campagna, Alessandro",
+  "given_name": "Alessandro Campagna",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438206.5,
+    "year": 1963,
+    "month": 6,
+    "day": 26,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Palermo",
+    "country": "Italy",
+    "lat": 38.116667,
+    "lon": 13.366667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campagna,_Alessandro",
+  "source_notes": "Bordoni quotes B.C. Vol 7.\\n",
+  "categories": [
+    "Vocation : Sports : Swimming",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 10.302772,
+    "lagna": 340.302772,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.347006,
+    "jd_ut": 2438206.5,
+    "planets": {
+      "Sun": {
+        "longitude": 70.352264,
+        "sign_index": 2,
+        "degree_in_sign": 10.352264,
+        "is_retrograde": false,
+        "speed": 0.953862
+      },
+      "Moon": {
+        "longitude": 127.497129,
+        "sign_index": 4,
+        "degree_in_sign": 7.497129,
+        "is_retrograde": false,
+        "speed": 15.970092
+      },
+      "Mars": {
+        "longitude": 138.627285,
+        "sign_index": 4,
+        "degree_in_sign": 18.627285,
+        "is_retrograde": false,
+        "speed": 0.551212
+      },
+      "Mercury": {
+        "longitude": 51.620576,
+        "sign_index": 1,
+        "degree_in_sign": 21.620576,
+        "is_retrograde": false,
+        "speed": 1.655222
+      },
+      "Jupiter": {
+        "longitude": 353.067194,
+        "sign_index": 11,
+        "degree_in_sign": 23.067194,
+        "is_retrograde": false,
+        "speed": 0.130197
+      },
+      "Venus": {
+        "longitude": 52.670125,
+        "sign_index": 1,
+        "degree_in_sign": 22.670125,
+        "is_retrograde": false,
+        "speed": 1.217709
+      },
+      "Saturn": {
+        "longitude": 299.361111,
+        "sign_index": 9,
+        "degree_in_sign": 29.361111,
+        "is_retrograde": true,
+        "speed": -0.035459
+      },
+      "Rahu": {
+        "longitude": 88.021616,
+        "sign_index": 2,
+        "degree_in_sign": 28.021616,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 268.021616,
+        "sign_index": 8,
+        "degree_in_sign": 28.021616,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "adb_id": 47609,
+  "name": "Conley, Earl Thomas",
+  "given_name": "Earl Thomas Conley",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430284.791667,
+    "year": 1941,
+    "month": 10,
+    "day": 17,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Washington Court House",
+    "country": "Ohio",
+    "lat": 39.533333,
+    "lon": -83.433333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conley,_Earl_Thomas",
+  "source_notes": "B.C. in hand from Frank C. Clifford 1996\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Alzheimer's/ Senility",
+    "Family : Childhood : Disadvantaged",
+    "Lifestyle : Work : Start young less than 16",
+    "Lifestyle : Financial : Rags to riches",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertain/Music : Country-Western",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 9.568226,
+    "lagna": 99.568226,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.044106,
+    "jd_ut": 2430284.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 180.471559,
+        "sign_index": 6,
+        "degree_in_sign": 0.471559,
+        "is_retrograde": false,
+        "speed": 0.992955
+      },
+      "Moon": {
+        "longitude": 136.63005,
+        "sign_index": 4,
+        "degree_in_sign": 16.63005,
+        "is_retrograde": false,
+        "speed": 15.384657
+      },
+      "Mars": {
+        "longitude": 351.735342,
+        "sign_index": 11,
+        "degree_in_sign": 21.735342,
+        "is_retrograde": true,
+        "speed": -0.284343
+      },
+      "Mercury": {
+        "longitude": 198.905451,
+        "sign_index": 6,
+        "degree_in_sign": 18.905451,
+        "is_retrograde": true,
+        "speed": -0.240453
+      },
+      "Jupiter": {
+        "longitude": 58.32142,
+        "sign_index": 1,
+        "degree_in_sign": 28.32142,
+        "is_retrograde": true,
+        "speed": -0.023514
+      },
+      "Venus": {
+        "longitude": 224.404125,
+        "sign_index": 7,
+        "degree_in_sign": 14.404125,
+        "is_retrograde": false,
+        "speed": 1.142891
+      },
+      "Saturn": {
+        "longitude": 34.354392,
+        "sign_index": 1,
+        "degree_in_sign": 4.354392,
+        "is_retrograde": true,
+        "speed": -0.059911
+      },
+      "Rahu": {
+        "longitude": 147.80924,
+        "sign_index": 4,
+        "degree_in_sign": 27.80924,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 327.80924,
+        "sign_index": 10,
+        "degree_in_sign": 27.80924,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

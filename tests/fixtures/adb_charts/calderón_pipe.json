@@ -1,0 +1,109 @@
+{
+  "adb_id": 77040,
+  "name": "Calderón, Pipe",
+  "given_name": "Pipe Calderón",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2445578.695833,
+    "year": 1983,
+    "month": 8,
+    "day": 31,
+    "calendar": "g",
+    "time": "23:42",
+    "time_type": "s",
+    "hour": 23.7,
+    "time_unknown": false,
+    "place": "Medellín",
+    "country": "Colombia",
+    "lat": 6.25,
+    "lon": -75.583333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calderón,_Pipe",
+  "source_notes": "Sy Scholfield quotes him on Twitter: \"tengo 27 años naci el 31 de agosto de 1983 en medellin hospital general camilla 22 a las 1142 de la noche\" (Translation: I'm still 27, born the 31 of August of 1983 in medellin hospital general, stretcher 22, at 1142 at night\") [https://twitter.com/PipeCalderon/status/52082050634760192].\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 21.666415,
+    "lagna": 21.666415,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.628921,
+    "jd_ut": 2445578.695833,
+    "planets": {
+      "Sun": {
+        "longitude": 134.564191,
+        "sign_index": 4,
+        "degree_in_sign": 14.564191,
+        "is_retrograde": false,
+        "speed": 0.967495
+      },
+      "Moon": {
+        "longitude": 54.531053,
+        "sign_index": 1,
+        "degree_in_sign": 24.531053,
+        "is_retrograde": false,
+        "speed": 15.11268
+      },
+      "Mars": {
+        "longitude": 108.242405,
+        "sign_index": 3,
+        "degree_in_sign": 18.242405,
+        "is_retrograde": false,
+        "speed": 0.636938
+      },
+      "Mercury": {
+        "longitude": 157.067071,
+        "sign_index": 5,
+        "degree_in_sign": 7.067071,
+        "is_retrograde": false,
+        "speed": 0.103813
+      },
+      "Jupiter": {
+        "longitude": 219.141606,
+        "sign_index": 7,
+        "degree_in_sign": 9.141606,
+        "is_retrograde": false,
+        "speed": 0.096894
+      },
+      "Venus": {
+        "longitude": 123.652702,
+        "sign_index": 4,
+        "degree_in_sign": 3.652702,
+        "is_retrograde": true,
+        "speed": -0.530685
+      },
+      "Saturn": {
+        "longitude": 187.022959,
+        "sign_index": 6,
+        "degree_in_sign": 7.022959,
+        "is_retrograde": false,
+        "speed": 0.088239
+      },
+      "Rahu": {
+        "longitude": 57.353933,
+        "sign_index": 1,
+        "degree_in_sign": 27.353933,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 237.353933,
+        "sign_index": 7,
+        "degree_in_sign": 27.353933,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

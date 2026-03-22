@@ -1,0 +1,123 @@
+{
+  "adb_id": 7969,
+  "name": "Carlin, George",
+  "given_name": "George Carlin",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2428666.15625,
+    "year": 1937,
+    "month": 5,
+    "day": 12,
+    "calendar": "g",
+    "time": "11:45",
+    "time_type": "d",
+    "hour": 11.75,
+    "time_unknown": false,
+    "place": "Manhattan",
+    "country": "New York",
+    "lat": 40.766667,
+    "lon": -73.983333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlin,_George",
+  "source_notes": "Linda Clark quotes him;  he remembered the time from having had his chart done\\n",
+  "categories": [
+    "Traits : Mind : Education limited",
+    "Traits : Personality : Eccentric",
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Diagnoses : Body Part Problems : Heart",
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 28.590601,
+    "lagna": 88.590601,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.982218,
+    "jd_ut": 2428666.15625,
+    "planets": {
+      "Sun": {
+        "longitude": 28.495886,
+        "sign_index": 0,
+        "degree_in_sign": 28.495886,
+        "is_retrograde": false,
+        "speed": 0.965392
+      },
+      "Moon": {
+        "longitude": 58.782902,
+        "sign_index": 1,
+        "degree_in_sign": 28.782902,
+        "is_retrograde": false,
+        "speed": 11.936633
+      },
+      "Mars": {
+        "longitude": 217.763483,
+        "sign_index": 7,
+        "degree_in_sign": 7.763483,
+        "is_retrograde": true,
+        "speed": -0.319362
+      },
+      "Mercury": {
+        "longitude": 26.535025,
+        "sign_index": 0,
+        "degree_in_sign": 26.535025,
+        "is_retrograde": true,
+        "speed": -0.599719
+      },
+      "Jupiter": {
+        "longitude": 274.317251,
+        "sign_index": 9,
+        "degree_in_sign": 4.317251,
+        "is_retrograde": false,
+        "speed": 0.009088
+      },
+      "Venus": {
+        "longitude": 356.675216,
+        "sign_index": 11,
+        "degree_in_sign": 26.675216,
+        "is_retrograde": false,
+        "speed": 0.12874
+      },
+      "Saturn": {
+        "longitude": 338.792774,
+        "sign_index": 11,
+        "degree_in_sign": 8.792774,
+        "is_retrograde": false,
+        "speed": 0.094373
+      },
+      "Rahu": {
+        "longitude": 233.584081,
+        "sign_index": 7,
+        "degree_in_sign": 23.584081,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 53.584081,
+        "sign_index": 1,
+        "degree_in_sign": 23.584081,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

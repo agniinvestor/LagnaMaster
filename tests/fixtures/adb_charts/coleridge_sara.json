@@ -1,0 +1,113 @@
+{
+  "adb_id": 58462,
+  "name": "Coleridge, Sara",
+  "given_name": "Sara Coleridge",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2379582.772593,
+    "year": 1802,
+    "month": 12,
+    "day": 23,
+    "calendar": "g",
+    "time": "06:20",
+    "time_type": "l",
+    "hour": 6.333333,
+    "time_unknown": false,
+    "place": "Keswick",
+    "country": "England",
+    "lat": 54.616667,
+    "lon": -3.133333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coleridge,_Sara",
+  "source_notes": "Sy Scholfield quotes the family bible, as transcribed in Susan Howe's book, \"The Birth-Mark: Unsettling the Wilderness in American Literary History\" p. 34: \"Sara Coleridge born December 23, 20 minutes past 6 in the Morning, 1802.\" Same data from mother's record quoted in \"The Collected Works of Samuel Taylor Coleridge: Abbt to Byfield, Volume 1\" (Routledge, 1980), p. 413: \"p _2, in Mrs C's hand, below 4 Sara Coleridge born December 23d 20 minutes past 6 in the Morning, 1802.\"\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Translator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 22.795795,
+    "lagna": 202.795795,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.10611,
+    "jd_ut": 2379582.772593,
+    "planets": {
+      "Sun": {
+        "longitude": 249.686324,
+        "sign_index": 8,
+        "degree_in_sign": 9.686324,
+        "is_retrograde": false,
+        "speed": 1.019334
+      },
+      "Moon": {
+        "longitude": 229.556278,
+        "sign_index": 7,
+        "degree_in_sign": 19.556278,
+        "is_retrograde": false,
+        "speed": 12.051085
+      },
+      "Mars": {
+        "longitude": 72.19634,
+        "sign_index": 2,
+        "degree_in_sign": 12.19634,
+        "is_retrograde": true,
+        "speed": -0.398102
+      },
+      "Mercury": {
+        "longitude": 240.436443,
+        "sign_index": 8,
+        "degree_in_sign": 0.436443,
+        "is_retrograde": false,
+        "speed": 1.545724
+      },
+      "Jupiter": {
+        "longitude": 163.495829,
+        "sign_index": 5,
+        "degree_in_sign": 13.495829,
+        "is_retrograde": false,
+        "speed": 0.086709
+      },
+      "Venus": {
+        "longitude": 262.93153,
+        "sign_index": 8,
+        "degree_in_sign": 22.93153,
+        "is_retrograde": true,
+        "speed": -0.474353
+      },
+      "Saturn": {
+        "longitude": 149.533229,
+        "sign_index": 4,
+        "degree_in_sign": 29.533229,
+        "is_retrograde": false,
+        "speed": 0.015622
+      },
+      "Rahu": {
+        "longitude": 314.617436,
+        "sign_index": 10,
+        "degree_in_sign": 14.617436,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 134.617436,
+        "sign_index": 4,
+        "degree_in_sign": 14.617436,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

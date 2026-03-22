@@ -1,0 +1,108 @@
+{
+  "adb_id": 103285,
+  "name": "Crispi, Francesco",
+  "given_name": "Francesco Crispi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2385347.296481,
+    "year": 1818,
+    "month": 10,
+    "day": 4,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Ribera",
+    "country": "Italy",
+    "lat": 37.5,
+    "lon": 13.266667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crispi,_Francesco",
+  "source_notes": "Taeger Vol. 1, page 350\\n",
+  "categories": [
+    "Vocation : Politics : Other Politics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 19.019224,
+    "lagna": 19.019224,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.326389,
+    "jd_ut": 2385347.296481,
+    "planets": {
+      "Sun": {
+        "longitude": 169.619949,
+        "sign_index": 5,
+        "degree_in_sign": 19.619949,
+        "is_retrograde": false,
+        "speed": 0.986871
+      },
+      "Moon": {
+        "longitude": 228.760739,
+        "sign_index": 7,
+        "degree_in_sign": 18.760739,
+        "is_retrograde": false,
+        "speed": 11.93419
+      },
+      "Mars": {
+        "longitude": 183.47117,
+        "sign_index": 6,
+        "degree_in_sign": 3.47117,
+        "is_retrograde": false,
+        "speed": 0.673886
+      },
+      "Mercury": {
+        "longitude": 153.080327,
+        "sign_index": 5,
+        "degree_in_sign": 3.080327,
+        "is_retrograde": false,
+        "speed": 0.319404
+      },
+      "Jupiter": {
+        "longitude": 253.700024,
+        "sign_index": 8,
+        "degree_in_sign": 13.700024,
+        "is_retrograde": false,
+        "speed": 0.104252
+      },
+      "Venus": {
+        "longitude": 216.025019,
+        "sign_index": 7,
+        "degree_in_sign": 6.025019,
+        "is_retrograde": false,
+        "speed": 1.05332
+      },
+      "Saturn": {
+        "longitude": 321.588627,
+        "sign_index": 10,
+        "degree_in_sign": 21.588627,
+        "is_retrograde": true,
+        "speed": -0.062678
+      },
+      "Rahu": {
+        "longitude": 9.142673,
+        "sign_index": 0,
+        "degree_in_sign": 9.142673,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 189.142673,
+        "sign_index": 6,
+        "degree_in_sign": 9.142673,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

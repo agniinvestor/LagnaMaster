@@ -1,0 +1,110 @@
+{
+  "adb_id": 99320,
+  "name": "Campos, Siqueira",
+  "given_name": "Siqueira Campos",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425460.458333,
+    "year": 1928,
+    "month": 8,
+    "day": 1,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Crato (Ceará)",
+    "country": "Brazil",
+    "lat": -7.234167,
+    "lon": -39.409444
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "aqu",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campos,_Siqueira",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 29.747051,
+    "lagna": 299.747051,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.859653,
+    "jd_ut": 2425460.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 106.540618,
+        "sign_index": 3,
+        "degree_in_sign": 16.540618,
+        "is_retrograde": false,
+        "speed": 0.956584
+      },
+      "Moon": {
+        "longitude": 291.08288,
+        "sign_index": 9,
+        "degree_in_sign": 21.08288,
+        "is_retrograde": false,
+        "speed": 9.932056
+      },
+      "Mars": {
+        "longitude": 32.457386,
+        "sign_index": 1,
+        "degree_in_sign": 2.457386,
+        "is_retrograde": false,
+        "speed": 0.657703
+      },
+      "Mercury": {
+        "longitude": 91.74354,
+        "sign_index": 3,
+        "degree_in_sign": 1.74354,
+        "is_retrograde": false,
+        "speed": 1.809111
+      },
+      "Jupiter": {
+        "longitude": 16.265844,
+        "sign_index": 0,
+        "degree_in_sign": 16.265844,
+        "is_retrograde": false,
+        "speed": 0.088888
+      },
+      "Venus": {
+        "longitude": 115.200165,
+        "sign_index": 3,
+        "degree_in_sign": 25.200165,
+        "is_retrograde": false,
+        "speed": 1.232516
+      },
+      "Saturn": {
+        "longitude": 229.824443,
+        "sign_index": 7,
+        "degree_in_sign": 19.824443,
+        "is_retrograde": true,
+        "speed": -0.023847
+      },
+      "Rahu": {
+        "longitude": 43.460667,
+        "sign_index": 1,
+        "degree_in_sign": 13.460667,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 223.460667,
+        "sign_index": 7,
+        "degree_in_sign": 13.460667,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

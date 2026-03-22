@@ -1,0 +1,111 @@
+{
+  "adb_id": 81094,
+  "name": "Craninx, Pierre",
+  "given_name": "Pierre Craninx",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2380642.653611,
+    "year": 1805,
+    "month": 11,
+    "day": 17,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Louvain",
+    "country": "Belgium",
+    "lat": 50.883333,
+    "lon": 4.7
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Craninx,_Pierre",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Medical : Physician",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 5.97694,
+    "lagna": 155.97694,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.14661,
+    "jd_ut": 2380642.653611,
+    "planets": {
+      "Sun": {
+        "longitude": 213.24748,
+        "sign_index": 7,
+        "degree_in_sign": 3.24748,
+        "is_retrograde": false,
+        "speed": 1.00982
+      },
+      "Moon": {
+        "longitude": 166.386928,
+        "sign_index": 5,
+        "degree_in_sign": 16.386928,
+        "is_retrograde": false,
+        "speed": 12.126479
+      },
+      "Mars": {
+        "longitude": 233.469735,
+        "sign_index": 7,
+        "degree_in_sign": 23.469735,
+        "is_retrograde": false,
+        "speed": 0.742177
+      },
+      "Mercury": {
+        "longitude": 219.29313,
+        "sign_index": 7,
+        "degree_in_sign": 9.29313,
+        "is_retrograde": false,
+        "speed": 1.558405
+      },
+      "Jupiter": {
+        "longitude": 231.08822,
+        "sign_index": 7,
+        "degree_in_sign": 21.08822,
+        "is_retrograde": false,
+        "speed": 0.220358
+      },
+      "Venus": {
+        "longitude": 255.82691,
+        "sign_index": 8,
+        "degree_in_sign": 15.82691,
+        "is_retrograde": false,
+        "speed": 1.175171
+      },
+      "Saturn": {
+        "longitude": 182.146489,
+        "sign_index": 6,
+        "degree_in_sign": 2.146489,
+        "is_retrograde": false,
+        "speed": 0.110464
+      },
+      "Rahu": {
+        "longitude": 258.452011,
+        "sign_index": 8,
+        "degree_in_sign": 18.452011,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 78.452011,
+        "sign_index": 2,
+        "degree_in_sign": 18.452011,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

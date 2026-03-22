@@ -1,0 +1,111 @@
+{
+  "adb_id": 50408,
+  "name": "Carter, Ron",
+  "given_name": "Ron Carter",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2428657.875,
+    "year": 1937,
+    "month": 5,
+    "day": 4,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Ferndale (Oakland County)",
+    "country": "Michigan",
+    "lat": 42.466667,
+    "lon": -83.133333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carter,_Ron",
+  "source_notes": "Nick Dagan Best quotes birth time from Carter to Best by e-mail; date and place were taken from various biographical sources and confirmed by Carter.\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 20.702419,
+    "lagna": 320.702419,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.981902,
+    "jd_ut": 2428657.875,
+    "planets": {
+      "Sun": {
+        "longitude": 20.486558,
+        "sign_index": 0,
+        "degree_in_sign": 20.486558,
+        "is_retrograde": false,
+        "speed": 0.968812
+      },
+      "Moon": {
+        "longitude": 297.945384,
+        "sign_index": 9,
+        "degree_in_sign": 27.945384,
+        "is_retrograde": false,
+        "speed": 10.136822
+      },
+      "Mars": {
+        "longitude": 220.115978,
+        "sign_index": 7,
+        "degree_in_sign": 10.115978,
+        "is_retrograde": true,
+        "speed": -0.242994
+      },
+      "Mercury": {
+        "longitude": 30.799621,
+        "sign_index": 1,
+        "degree_in_sign": 0.799621,
+        "is_retrograde": true,
+        "speed": -0.31987
+      },
+      "Jupiter": {
+        "longitude": 274.133832,
+        "sign_index": 9,
+        "degree_in_sign": 4.133832,
+        "is_retrograde": false,
+        "speed": 0.035093
+      },
+      "Venus": {
+        "longitude": 356.928347,
+        "sign_index": 11,
+        "degree_in_sign": 26.928347,
+        "is_retrograde": true,
+        "speed": -0.196456
+      },
+      "Saturn": {
+        "longitude": 337.978069,
+        "sign_index": 11,
+        "degree_in_sign": 7.978069,
+        "is_retrograde": false,
+        "speed": 0.102172
+      },
+      "Rahu": {
+        "longitude": 234.022921,
+        "sign_index": 7,
+        "degree_in_sign": 24.022921,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 54.022921,
+        "sign_index": 1,
+        "degree_in_sign": 24.022921,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

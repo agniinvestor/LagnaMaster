@@ -1,0 +1,111 @@
+{
+  "adb_id": 103725,
+  "name": "Cudlip, William B.",
+  "given_name": "William B. Cudlip",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2416544.458333,
+    "year": 1904,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Iron Mountain",
+    "country": "Michigan",
+    "lat": 45.816667,
+    "lon": -88.066667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cudlip,_William_B.",
+  "source_notes": "Sy Scholfield quotes from the book, ''A Boy Remembers'', by William B. Cudlip (University of Michigan, 1980):\\n\"I was born on March 4, 1904. My mother said that the delivery occurred around five o'clock on a Friday afternoon.\"\\nPlace from various biographical references.\\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Law : Attorney",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 21.812512,
+    "lagna": 111.812512,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.518789,
+    "jd_ut": 2416544.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 321.444497,
+        "sign_index": 10,
+        "degree_in_sign": 21.444497,
+        "is_retrograde": false,
+        "speed": 1.00098
+      },
+      "Moon": {
+        "longitude": 181.343541,
+        "sign_index": 6,
+        "degree_in_sign": 1.343541,
+        "is_retrograde": false,
+        "speed": 17.51146
+      },
+      "Mars": {
+        "longitude": 342.72718,
+        "sign_index": 11,
+        "degree_in_sign": 12.72718,
+        "is_retrograde": false,
+        "speed": 0.766459
+      },
+      "Mercury": {
+        "longitude": 303.634876,
+        "sign_index": 10,
+        "degree_in_sign": 3.634876,
+        "is_retrograde": false,
+        "speed": 1.595362
+      },
+      "Jupiter": {
+        "longitude": 338.386949,
+        "sign_index": 11,
+        "degree_in_sign": 8.386949,
+        "is_retrograde": false,
+        "speed": 0.237215
+      },
+      "Venus": {
+        "longitude": 289.477814,
+        "sign_index": 9,
+        "degree_in_sign": 19.477814,
+        "is_retrograde": false,
+        "speed": 1.222188
+      },
+      "Saturn": {
+        "longitude": 292.932624,
+        "sign_index": 9,
+        "degree_in_sign": 22.932624,
+        "is_retrograde": false,
+        "speed": 0.110071
+      },
+      "Rahu": {
+        "longitude": 155.93817,
+        "sign_index": 5,
+        "degree_in_sign": 5.93817,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 335.93817,
+        "sign_index": 11,
+        "degree_in_sign": 5.93817,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

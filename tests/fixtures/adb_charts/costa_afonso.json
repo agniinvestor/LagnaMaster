@@ -1,0 +1,111 @@
+{
+  "adb_id": 86362,
+  "name": "Costa, Afonso",
+  "given_name": "Afonso Costa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404493.396389,
+    "year": 1871,
+    "month": 3,
+    "day": 6,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "l",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Seia",
+    "country": "Portugal",
+    "lat": 40.416667,
+    "lon": -7.7
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costa,_Afonso",
+  "source_notes": "Sy Scholfield provided birth registry entry published online [http://www.arquivo.guarda.pt/images/stories/figuras-da-republica/anexos/ac1.pdf].\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Heads of state",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 9.035959,
+    "lagna": 159.035959,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.058127,
+    "jd_ut": 2404493.396389,
+    "planets": {
+      "Sun": {
+        "longitude": 323.842792,
+        "sign_index": 10,
+        "degree_in_sign": 23.842792,
+        "is_retrograde": false,
+        "speed": 0.999517
+      },
+      "Moon": {
+        "longitude": 141.246655,
+        "sign_index": 4,
+        "degree_in_sign": 21.246655,
+        "is_retrograde": false,
+        "speed": 10.804664
+      },
+      "Mars": {
+        "longitude": 161.877826,
+        "sign_index": 5,
+        "degree_in_sign": 11.877826,
+        "is_retrograde": true,
+        "speed": -0.315936
+      },
+      "Mercury": {
+        "longitude": 306.037582,
+        "sign_index": 10,
+        "degree_in_sign": 6.037582,
+        "is_retrograde": false,
+        "speed": 1.60427
+      },
+      "Jupiter": {
+        "longitude": 55.335904,
+        "sign_index": 1,
+        "degree_in_sign": 25.335904,
+        "is_retrograde": false,
+        "speed": 0.078462
+      },
+      "Venus": {
+        "longitude": 344.940688,
+        "sign_index": 11,
+        "degree_in_sign": 14.940688,
+        "is_retrograde": false,
+        "speed": 1.237161
+      },
+      "Saturn": {
+        "longitude": 256.340698,
+        "sign_index": 8,
+        "degree_in_sign": 16.340698,
+        "is_retrograde": false,
+        "speed": 0.066901
+      },
+      "Rahu": {
+        "longitude": 74.549484,
+        "sign_index": 2,
+        "degree_in_sign": 14.549484,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 254.549484,
+        "sign_index": 8,
+        "degree_in_sign": 14.549484,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

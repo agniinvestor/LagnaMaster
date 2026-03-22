@@ -1,0 +1,108 @@
+{
+  "adb_id": 65025,
+  "name": "Clostre, Adrienne",
+  "given_name": "Adrienne Clostre",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422972.152778,
+    "year": 1921,
+    "month": 10,
+    "day": 9,
+    "calendar": "g",
+    "time": "16:40",
+    "time_type": "d",
+    "hour": 16.666667,
+    "time_unknown": false,
+    "place": "Thomery",
+    "country": "France",
+    "lat": 48.409444,
+    "lon": 2.784444
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clostre,_Adrienne",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 182.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 14.812176,
+    "lagna": 284.812176,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.76452,
+    "jd_ut": 2422972.152778,
+    "planets": {
+      "Sun": {
+        "longitude": 173.03675,
+        "sign_index": 5,
+        "degree_in_sign": 23.03675,
+        "is_retrograde": false,
+        "speed": 0.98848
+      },
+      "Moon": {
+        "longitude": 272.243839,
+        "sign_index": 9,
+        "degree_in_sign": 2.243839,
+        "is_retrograde": false,
+        "speed": 9.012518
+      },
+      "Mars": {
+        "longitude": 139.879017,
+        "sign_index": 4,
+        "degree_in_sign": 19.879017,
+        "is_retrograde": false,
+        "speed": 0.623752
+      },
+      "Mercury": {
+        "longitude": 198.19031,
+        "sign_index": 6,
+        "degree_in_sign": 18.19031,
+        "is_retrograde": false,
+        "speed": 0.89653
+      },
+      "Jupiter": {
+        "longitude": 160.182501,
+        "sign_index": 5,
+        "degree_in_sign": 10.182501,
+        "is_retrograde": false,
+        "speed": 0.213685
+      },
+      "Venus": {
+        "longitude": 143.622918,
+        "sign_index": 4,
+        "degree_in_sign": 23.622918,
+        "is_retrograde": false,
+        "speed": 1.223095
+      },
+      "Saturn": {
+        "longitude": 157.468953,
+        "sign_index": 5,
+        "degree_in_sign": 7.468953,
+        "is_retrograde": false,
+        "speed": 0.121323
+      },
+      "Rahu": {
+        "longitude": 175.321163,
+        "sign_index": 5,
+        "degree_in_sign": 25.321163,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 355.321163,
+        "sign_index": 11,
+        "degree_in_sign": 25.321163,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

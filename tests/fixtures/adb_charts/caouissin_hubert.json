@@ -1,0 +1,109 @@
+{
+  "adb_id": 95134,
+  "name": "Caouissin, Hubert",
+  "given_name": "Hubert Caouissin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440940.114583,
+    "year": 1970,
+    "month": 12,
+    "day": 19,
+    "calendar": "g",
+    "time": "15:45",
+    "time_type": "s",
+    "hour": 15.75,
+    "time_unknown": false,
+    "place": "Brest",
+    "country": "France",
+    "lat": 48.4,
+    "lon": -4.483333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caouissin,_Hubert",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Traits : Personality : Solitary/ Introvert",
+    "Passions : Criminal Perpetrator : Other Criminal"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 14.630084,
+    "lagna": 14.630084,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.451537,
+    "jd_ut": 2440940.114583,
+    "planets": {
+      "Sun": {
+        "longitude": 243.836845,
+        "sign_index": 8,
+        "degree_in_sign": 3.836845,
+        "is_retrograde": false,
+        "speed": 1.01806
+      },
+      "Moon": {
+        "longitude": 140.083143,
+        "sign_index": 4,
+        "degree_in_sign": 20.083143,
+        "is_retrograde": false,
+        "speed": 14.469035
+      },
+      "Mars": {
+        "longitude": 194.750329,
+        "sign_index": 6,
+        "degree_in_sign": 14.750329,
+        "is_retrograde": false,
+        "speed": 0.634623
+      },
+      "Mercury": {
+        "longitude": 260.627958,
+        "sign_index": 8,
+        "degree_in_sign": 20.627958,
+        "is_retrograde": true,
+        "speed": -0.066836
+      },
+      "Jupiter": {
+        "longitude": 211.689958,
+        "sign_index": 7,
+        "degree_in_sign": 1.689958,
+        "is_retrograde": false,
+        "speed": 0.203145
+      },
+      "Venus": {
+        "longitude": 202.418121,
+        "sign_index": 6,
+        "degree_in_sign": 22.418121,
+        "is_retrograde": false,
+        "speed": 0.598883
+      },
+      "Saturn": {
+        "longitude": 23.004094,
+        "sign_index": 0,
+        "degree_in_sign": 23.004094,
+        "is_retrograde": true,
+        "speed": -0.050833
+      },
+      "Rahu": {
+        "longitude": 303.161791,
+        "sign_index": 10,
+        "degree_in_sign": 3.161791,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.161791,
+        "sign_index": 4,
+        "degree_in_sign": 3.161791,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

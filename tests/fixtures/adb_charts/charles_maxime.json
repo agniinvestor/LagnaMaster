@@ -1,0 +1,108 @@
+{
+  "adb_id": 68829,
+  "name": "Charles, Maxime",
+  "given_name": "Maxime Charles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418087.910174,
+    "year": 1908,
+    "month": 5,
+    "day": 26,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Ribérac",
+    "country": "France",
+    "lat": 45.25,
+    "lon": 0.333333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles,_Maxime",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'religion1' pdf file, p. 65.\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 0.824786,
+    "lagna": 90.824786,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.577793,
+    "jd_ut": 2418087.910174,
+    "planets": {
+      "Sun": {
+        "longitude": 42.145276,
+        "sign_index": 1,
+        "degree_in_sign": 12.145276,
+        "is_retrograde": false,
+        "speed": 0.959941
+      },
+      "Moon": {
+        "longitude": 355.903311,
+        "sign_index": 11,
+        "degree_in_sign": 25.903311,
+        "is_retrograde": false,
+        "speed": 9.902693
+      },
+      "Mars": {
+        "longitude": 69.909776,
+        "sign_index": 2,
+        "degree_in_sign": 9.909776,
+        "is_retrograde": false,
+        "speed": 0.649763
+      },
+      "Mercury": {
+        "longitude": 61.558597,
+        "sign_index": 2,
+        "degree_in_sign": 1.558597,
+        "is_retrograde": false,
+        "speed": 1.648055
+      },
+      "Jupiter": {
+        "longitude": 105.575703,
+        "sign_index": 3,
+        "degree_in_sign": 15.575703,
+        "is_retrograde": false,
+        "speed": 0.14753
+      },
+      "Venus": {
+        "longitude": 83.098718,
+        "sign_index": 2,
+        "degree_in_sign": 23.098718,
+        "is_retrograde": false,
+        "speed": 0.584037
+      },
+      "Saturn": {
+        "longitude": 345.004074,
+        "sign_index": 11,
+        "degree_in_sign": 15.004074,
+        "is_retrograde": false,
+        "speed": 0.085677
+      },
+      "Rahu": {
+        "longitude": 74.14741,
+        "sign_index": 2,
+        "degree_in_sign": 14.14741,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 254.14741,
+        "sign_index": 8,
+        "degree_in_sign": 14.14741,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

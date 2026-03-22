@@ -1,0 +1,108 @@
+{
+  "adb_id": 61747,
+  "name": "Colin, Didier",
+  "given_name": "Didier Colin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432982.8125,
+    "year": 1949,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 4",
+    "country": "France",
+    "lat": 48.856111,
+    "lon": 2.355556
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colin,_Didier",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 3.962235,
+    "lagna": 333.962235,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.147266,
+    "jd_ut": 2432982.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 323.266175,
+        "sign_index": 10,
+        "degree_in_sign": 23.266175,
+        "is_retrograde": false,
+        "speed": 1.000354
+      },
+      "Moon": {
+        "longitude": 45.067866,
+        "sign_index": 1,
+        "degree_in_sign": 15.067866,
+        "is_retrograde": false,
+        "speed": 15.859866
+      },
+      "Mars": {
+        "longitude": 325.434777,
+        "sign_index": 10,
+        "degree_in_sign": 25.434777,
+        "is_retrograde": false,
+        "speed": 0.785211
+      },
+      "Mercury": {
+        "longitude": 297.251703,
+        "sign_index": 9,
+        "degree_in_sign": 27.251703,
+        "is_retrograde": false,
+        "speed": 1.258208
+      },
+      "Jupiter": {
+        "longitude": 271.366065,
+        "sign_index": 9,
+        "degree_in_sign": 1.366065,
+        "is_retrograde": false,
+        "speed": 0.184211
+      },
+      "Venus": {
+        "longitude": 312.979184,
+        "sign_index": 10,
+        "degree_in_sign": 12.979184,
+        "is_retrograde": false,
+        "speed": 1.24652
+      },
+      "Saturn": {
+        "longitude": 128.572722,
+        "sign_index": 4,
+        "degree_in_sign": 8.572722,
+        "is_retrograde": true,
+        "speed": -0.076647
+      },
+      "Rahu": {
+        "longitude": 4.835546,
+        "sign_index": 0,
+        "degree_in_sign": 4.835546,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 184.835546,
+        "sign_index": 6,
+        "degree_in_sign": 4.835546,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

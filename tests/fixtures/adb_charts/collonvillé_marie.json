@@ -1,0 +1,108 @@
+{
+  "adb_id": 65037,
+  "name": "Collonvillé, Marie",
+  "given_name": "Marie Collonvillé",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442010.263889,
+    "year": 1973,
+    "month": 11,
+    "day": 23,
+    "calendar": "g",
+    "time": "19:20",
+    "time_type": "s",
+    "hour": 19.333333,
+    "time_unknown": false,
+    "place": "Amiens",
+    "country": "France",
+    "lat": 49.9,
+    "lon": 2.3
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collonvillé,_Marie",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 203.\\n",
+  "categories": [
+    "Vocation : Sports : Other Sports"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 22.491362,
+    "lagna": 52.491362,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.49246,
+    "jd_ut": 2442010.263889,
+    "planets": {
+      "Sun": {
+        "longitude": 217.827427,
+        "sign_index": 7,
+        "degree_in_sign": 7.827427,
+        "is_retrograde": false,
+        "speed": 1.011346
+      },
+      "Moon": {
+        "longitude": 205.501479,
+        "sign_index": 6,
+        "degree_in_sign": 25.501479,
+        "is_retrograde": false,
+        "speed": 13.37555
+      },
+      "Mars": {
+        "longitude": 1.841577,
+        "sign_index": 0,
+        "degree_in_sign": 1.841577,
+        "is_retrograde": true,
+        "speed": -0.030412
+      },
+      "Mercury": {
+        "longitude": 198.505924,
+        "sign_index": 6,
+        "degree_in_sign": 18.505924,
+        "is_retrograde": false,
+        "speed": 0.65298
+      },
+      "Jupiter": {
+        "longitude": 283.586245,
+        "sign_index": 9,
+        "degree_in_sign": 13.586245,
+        "is_retrograde": false,
+        "speed": 0.158595
+      },
+      "Venus": {
+        "longitude": 264.526061,
+        "sign_index": 8,
+        "degree_in_sign": 24.526061,
+        "is_retrograde": false,
+        "speed": 0.927552
+      },
+      "Saturn": {
+        "longitude": 70.005263,
+        "sign_index": 2,
+        "degree_in_sign": 10.005263,
+        "is_retrograde": true,
+        "speed": -0.063004
+      },
+      "Rahu": {
+        "longitude": 246.452397,
+        "sign_index": 8,
+        "degree_in_sign": 6.452397,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 66.452397,
+        "sign_index": 2,
+        "degree_in_sign": 6.452397,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

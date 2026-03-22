@@ -1,0 +1,110 @@
+{
+  "adb_id": 52739,
+  "name": "Cartier, Raymond",
+  "given_name": "Raymond Cartier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416644.57684,
+    "year": 1904,
+    "month": 6,
+    "day": 13,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Niort",
+    "country": "France",
+    "lat": 46.316667,
+    "lon": -0.45
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cartier,_Raymond",
+  "source_notes": "Steinbrecher collection: Lescaut quotes ca112 for br\\n",
+  "categories": [
+    "Vocation : Entertainment : News journalist/ Anchor",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 19.367112,
+    "lagna": 349.367112,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.522616,
+    "jd_ut": 2416644.57684,
+    "planets": {
+      "Sun": {
+        "longitude": 59.084219,
+        "sign_index": 1,
+        "degree_in_sign": 29.084219,
+        "is_retrograde": false,
+        "speed": 0.955512
+      },
+      "Moon": {
+        "longitude": 48.969564,
+        "sign_index": 1,
+        "degree_in_sign": 18.969564,
+        "is_retrograde": false,
+        "speed": 17.124386
+      },
+      "Mars": {
+        "longitude": 55.54483,
+        "sign_index": 1,
+        "degree_in_sign": 25.54483,
+        "is_retrograde": false,
+        "speed": 0.686773
+      },
+      "Mercury": {
+        "longitude": 36.028025,
+        "sign_index": 1,
+        "degree_in_sign": 6.028025,
+        "is_retrograde": false,
+        "speed": 1.186607
+      },
+      "Jupiter": {
+        "longitude": 0.945665,
+        "sign_index": 0,
+        "degree_in_sign": 0.945665,
+        "is_retrograde": false,
+        "speed": 0.178192
+      },
+      "Venus": {
+        "longitude": 52.158278,
+        "sign_index": 1,
+        "degree_in_sign": 22.158278,
+        "is_retrograde": false,
+        "speed": 1.226565
+      },
+      "Saturn": {
+        "longitude": 298.364885,
+        "sign_index": 9,
+        "degree_in_sign": 28.364885,
+        "is_retrograde": true,
+        "speed": -0.019591
+      },
+      "Rahu": {
+        "longitude": 150.632679,
+        "sign_index": 5,
+        "degree_in_sign": 0.632679,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 330.632679,
+        "sign_index": 11,
+        "degree_in_sign": 0.632679,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

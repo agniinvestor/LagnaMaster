@@ -1,0 +1,109 @@
+{
+  "adb_id": 65103,
+  "name": "Crasset, Matali",
+  "given_name": "Matali Crasset",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438970.277778,
+    "year": 1965,
+    "month": 7,
+    "day": 28,
+    "calendar": "g",
+    "time": "19:40",
+    "time_type": "s",
+    "hour": 19.666667,
+    "time_unknown": false,
+    "place": "Châlons en Champagne",
+    "country": "France",
+    "lat": 48.95,
+    "lon": 4.366667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crasset,_Matali",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 279.\\n",
+  "categories": [
+    "Personal : Birth : Twin, triplet, etc.",
+    "Vocation : Art : Other Art"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 4.888368,
+    "lagna": 244.888368,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.376212,
+    "jd_ut": 2438970.277778,
+    "planets": {
+      "Sun": {
+        "longitude": 102.078333,
+        "sign_index": 3,
+        "degree_in_sign": 12.078333,
+        "is_retrograde": false,
+        "speed": 0.956356
+      },
+      "Moon": {
+        "longitude": 105.76785,
+        "sign_index": 3,
+        "degree_in_sign": 15.76785,
+        "is_retrograde": false,
+        "speed": 16.303831
+      },
+      "Mars": {
+        "longitude": 172.799975,
+        "sign_index": 5,
+        "degree_in_sign": 22.799975,
+        "is_retrograde": false,
+        "speed": 0.583491
+      },
+      "Mercury": {
+        "longitude": 126.005354,
+        "sign_index": 4,
+        "degree_in_sign": 6.005354,
+        "is_retrograde": false,
+        "speed": 0.336568
+      },
+      "Jupiter": {
+        "longitude": 58.451604,
+        "sign_index": 1,
+        "degree_in_sign": 28.451604,
+        "is_retrograde": false,
+        "speed": 0.197193
+      },
+      "Venus": {
+        "longitude": 130.447884,
+        "sign_index": 4,
+        "degree_in_sign": 10.447884,
+        "is_retrograde": false,
+        "speed": 1.208604
+      },
+      "Saturn": {
+        "longitude": 323.099211,
+        "sign_index": 10,
+        "degree_in_sign": 23.099211,
+        "is_retrograde": true,
+        "speed": -0.047452
+      },
+      "Rahu": {
+        "longitude": 47.547468,
+        "sign_index": 1,
+        "degree_in_sign": 17.547468,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 227.547468,
+        "sign_index": 7,
+        "degree_in_sign": 17.547468,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

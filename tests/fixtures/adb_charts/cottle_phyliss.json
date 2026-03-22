@@ -1,0 +1,110 @@
+{
+  "adb_id": 47629,
+  "name": "Cottle, Phyliss",
+  "given_name": "Phyliss Cottle",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429531.986111,
+    "year": 1939,
+    "month": 9,
+    "day": 25,
+    "calendar": "g",
+    "time": "06:40",
+    "time_type": "s",
+    "hour": 6.666667,
+    "time_unknown": false,
+    "place": "Akron",
+    "country": "Ohio",
+    "lat": 41.083333,
+    "lon": -81.516667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cottle,_Phyliss",
+  "source_notes": "Bill Land quotes astrologer Joanne Stover, data from Cottle\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Eyes",
+    "Passions : Criminal Victim : Assault/ Battery victim",
+    "Passions : Criminal Victim : Rape/ Sex crime victim"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 19.405359,
+    "lagna": 139.405359,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.015323,
+    "jd_ut": 2429531.986111,
+    "planets": {
+      "Sun": {
+        "longitude": 158.485651,
+        "sign_index": 5,
+        "degree_in_sign": 8.485651,
+        "is_retrograde": false,
+        "speed": 0.979728
+      },
+      "Moon": {
+        "longitude": 303.677424,
+        "sign_index": 10,
+        "degree_in_sign": 3.677424,
+        "is_retrograde": false,
+        "speed": 14.458727
+      },
+      "Mars": {
+        "longitude": 277.515222,
+        "sign_index": 9,
+        "degree_in_sign": 7.515222,
+        "is_retrograde": false,
+        "speed": 0.377506
+      },
+      "Mercury": {
+        "longitude": 160.854309,
+        "sign_index": 5,
+        "degree_in_sign": 10.854309,
+        "is_retrograde": false,
+        "speed": 1.77507
+      },
+      "Jupiter": {
+        "longitude": 341.059,
+        "sign_index": 11,
+        "degree_in_sign": 11.059,
+        "is_retrograde": true,
+        "speed": -0.133808
+      },
+      "Venus": {
+        "longitude": 163.76019,
+        "sign_index": 5,
+        "degree_in_sign": 13.76019,
+        "is_retrograde": false,
+        "speed": 1.245577
+      },
+      "Saturn": {
+        "longitude": 6.776518,
+        "sign_index": 0,
+        "degree_in_sign": 6.776518,
+        "is_retrograde": true,
+        "speed": -0.064822
+      },
+      "Rahu": {
+        "longitude": 187.701963,
+        "sign_index": 6,
+        "degree_in_sign": 7.701963,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 7.701963,
+        "sign_index": 0,
+        "degree_in_sign": 7.701963,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 4443,
+  "name": "Carlson, Anne M.",
+  "given_name": "Anne M. Carlson",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2418185.520833,
+    "year": 1908,
+    "month": 8,
+    "day": 31,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Chatham",
+    "country": "New Brunswick (CAN)",
+    "lat": 47.033333,
+    "lon": -65.466667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlson,_Anne_M.",
+  "source_notes": "Astrological Pioneers of America file\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 8.335798,
+    "lagna": 338.335798,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.581525,
+    "jd_ut": 2418185.520833,
+    "planets": {
+      "Sun": {
+        "longitude": 135.579877,
+        "sign_index": 4,
+        "degree_in_sign": 15.579877,
+        "is_retrograde": false,
+        "speed": 0.968235
+      },
+      "Moon": {
+        "longitude": 191.53448,
+        "sign_index": 6,
+        "degree_in_sign": 11.53448,
+        "is_retrograde": false,
+        "speed": 10.879037
+      },
+      "Mars": {
+        "longitude": 132.350472,
+        "sign_index": 4,
+        "degree_in_sign": 12.350472,
+        "is_retrograde": false,
+        "speed": 0.636777
+      },
+      "Mercury": {
+        "longitude": 146.010275,
+        "sign_index": 4,
+        "degree_in_sign": 26.010275,
+        "is_retrograde": false,
+        "speed": 1.762096
+      },
+      "Jupiter": {
+        "longitude": 124.98,
+        "sign_index": 4,
+        "degree_in_sign": 4.98,
+        "is_retrograde": false,
+        "speed": 0.216459
+      },
+      "Venus": {
+        "longitude": 90.446488,
+        "sign_index": 3,
+        "degree_in_sign": 0.446488,
+        "is_retrograde": false,
+        "speed": 0.838177
+      },
+      "Saturn": {
+        "longitude": 346.286199,
+        "sign_index": 11,
+        "degree_in_sign": 16.286199,
+        "is_retrograde": true,
+        "speed": -0.061249
+      },
+      "Rahu": {
+        "longitude": 68.974816,
+        "sign_index": 2,
+        "degree_in_sign": 8.974816,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 248.974816,
+        "sign_index": 8,
+        "degree_in_sign": 8.974816,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

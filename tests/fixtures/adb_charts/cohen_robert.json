@@ -1,0 +1,109 @@
+{
+  "adb_id": 51031,
+  "name": "Cohen, Robert",
+  "given_name": "Robert Cohen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426296.375,
+    "year": 1930,
+    "month": 11,
+    "day": 15,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Bône",
+    "country": "Algeria",
+    "lat": 36.9,
+    "lon": 7.766667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Robert",
+  "source_notes": "Ed Steinbrecher collection quotes Gauquelin 1/591.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Sports : Boxing"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.871403,
+    "lagna": 74.871403,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.891613,
+    "jd_ut": 2426296.375,
+    "planets": {
+      "Sun": {
+        "longitude": 209.892413,
+        "sign_index": 6,
+        "degree_in_sign": 29.892413,
+        "is_retrograde": false,
+        "speed": 1.007967
+      },
+      "Moon": {
+        "longitude": 151.460163,
+        "sign_index": 5,
+        "degree_in_sign": 1.460163,
+        "is_retrograde": false,
+        "speed": 18.168387
+      },
+      "Mars": {
+        "longitude": 107.941675,
+        "sign_index": 3,
+        "degree_in_sign": 17.941675,
+        "is_retrograde": false,
+        "speed": 0.332762
+      },
+      "Mercury": {
+        "longitude": 214.99231,
+        "sign_index": 7,
+        "degree_in_sign": 4.99231,
+        "is_retrograde": false,
+        "speed": 1.566184
+      },
+      "Jupiter": {
+        "longitude": 87.525971,
+        "sign_index": 2,
+        "degree_in_sign": 27.525971,
+        "is_retrograde": true,
+        "speed": -0.02591
+      },
+      "Venus": {
+        "longitude": 220.790446,
+        "sign_index": 7,
+        "degree_in_sign": 10.790446,
+        "is_retrograde": true,
+        "speed": -0.510219
+      },
+      "Saturn": {
+        "longitude": 255.772925,
+        "sign_index": 8,
+        "degree_in_sign": 15.772925,
+        "is_retrograde": false,
+        "speed": 0.09376
+      },
+      "Rahu": {
+        "longitude": 359.163705,
+        "sign_index": 11,
+        "degree_in_sign": 29.163705,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 179.163705,
+        "sign_index": 5,
+        "degree_in_sign": 29.163705,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 87306,
+  "name": "Chung, Jamie",
+  "given_name": "Jamie Chung",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445435.515972,
+    "year": 1983,
+    "month": 4,
+    "day": 10,
+    "calendar": "g",
+    "time": "16:23",
+    "time_type": "s",
+    "hour": 16.383333,
+    "time_unknown": false,
+    "place": "San Francisco",
+    "country": "California",
+    "lat": 37.783333,
+    "lon": -122.416667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chung,_Jamie",
+  "source_notes": "Birth certificate in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Other Entertainment"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.227721,
+    "lagna": 126.227721,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.623446,
+    "jd_ut": 2445435.515972,
+    "planets": {
+      "Sun": {
+        "longitude": 356.938861,
+        "sign_index": 11,
+        "degree_in_sign": 26.938861,
+        "is_retrograde": false,
+        "speed": 0.981827
+      },
+      "Moon": {
+        "longitude": 328.519784,
+        "sign_index": 10,
+        "degree_in_sign": 28.519784,
+        "is_retrograde": false,
+        "speed": 12.58183
+      },
+      "Mars": {
+        "longitude": 10.40574,
+        "sign_index": 0,
+        "degree_in_sign": 10.40574,
+        "is_retrograde": false,
+        "speed": 0.73887
+      },
+      "Mercury": {
+        "longitude": 12.510874,
+        "sign_index": 0,
+        "degree_in_sign": 12.510874,
+        "is_retrograde": false,
+        "speed": 1.769431
+      },
+      "Jupiter": {
+        "longitude": 227.00024,
+        "sign_index": 7,
+        "degree_in_sign": 17.00024,
+        "is_retrograde": true,
+        "speed": -0.043334
+      },
+      "Venus": {
+        "longitude": 33.474851,
+        "sign_index": 1,
+        "degree_in_sign": 3.474851,
+        "is_retrograde": false,
+        "speed": 1.183265
+      },
+      "Saturn": {
+        "longitude": 188.319974,
+        "sign_index": 6,
+        "degree_in_sign": 8.319974,
+        "is_retrograde": true,
+        "speed": -0.074039
+      },
+      "Rahu": {
+        "longitude": 64.941325,
+        "sign_index": 2,
+        "degree_in_sign": 4.941325,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 244.941325,
+        "sign_index": 8,
+        "degree_in_sign": 4.941325,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

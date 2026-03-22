@@ -1,0 +1,112 @@
+{
+  "adb_id": 47729,
+  "name": "Calman, William",
+  "given_name": "William Calman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404791.208333,
+    "year": 1871,
+    "month": 12,
+    "day": 29,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Dundee",
+    "country": "Scotland",
+    "lat": 56.466667,
+    "lon": -3.0
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calman,_William",
+  "source_notes": "Paul Wright collection, B.C.\\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Magazine/ newsletter",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 9.798557,
+    "lagna": 69.798557,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.06951,
+    "jd_ut": 2404791.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 255.534641,
+        "sign_index": 8,
+        "degree_in_sign": 15.534641,
+        "is_retrograde": false,
+        "speed": 1.019022
+      },
+      "Moon": {
+        "longitude": 106.498978,
+        "sign_index": 3,
+        "degree_in_sign": 16.498978,
+        "is_retrograde": false,
+        "speed": 14.151684
+      },
+      "Mars": {
+        "longitude": 288.295339,
+        "sign_index": 9,
+        "degree_in_sign": 18.295339,
+        "is_retrograde": false,
+        "speed": 0.786177
+      },
+      "Mercury": {
+        "longitude": 263.456534,
+        "sign_index": 8,
+        "degree_in_sign": 23.456534,
+        "is_retrograde": true,
+        "speed": -1.06557
+      },
+      "Jupiter": {
+        "longitude": 95.022745,
+        "sign_index": 3,
+        "degree_in_sign": 5.022745,
+        "is_retrograde": true,
+        "speed": -0.120475
+      },
+      "Venus": {
+        "longitude": 210.118926,
+        "sign_index": 7,
+        "degree_in_sign": 0.118926,
+        "is_retrograde": false,
+        "speed": 1.127568
+      },
+      "Saturn": {
+        "longitude": 259.648609,
+        "sign_index": 8,
+        "degree_in_sign": 19.648609,
+        "is_retrograde": false,
+        "speed": 0.118083
+      },
+      "Rahu": {
+        "longitude": 58.767794,
+        "sign_index": 1,
+        "degree_in_sign": 28.767794,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 238.767794,
+        "sign_index": 7,
+        "degree_in_sign": 28.767794,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

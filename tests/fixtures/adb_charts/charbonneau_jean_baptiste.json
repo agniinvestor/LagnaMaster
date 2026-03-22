@@ -1,0 +1,112 @@
+{
+  "adb_id": 59782,
+  "name": "Charbonneau, Jean Baptiste",
+  "given_name": "Jean Baptiste Charbonneau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2380364.488981,
+    "year": 1805,
+    "month": 2,
+    "day": 11,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Washburn",
+    "country": "North Dakota",
+    "lat": 47.283333,
+    "lon": -101.033333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charbonneau,_Jean_Baptiste",
+  "source_notes": "Sy Scholfield cites Captain Meriwether Lewis's journal quoted in \"Explorations Into the World of Lewis and Clark, V-1 of 3\" by Robert A. Saindon (Lewis and Clark Trail Heritage Foundation, 2003), pp. 344-345: \"11th February Monday 1805, ... the weather was fair and could wind N.W. about five o'clock this evening one of the wives of Charbono was delivered of a fine boy.\" \\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Military : Other Military",
+    "Vocation : Politics : Public office",
+    "Vocation : Travel : Explorer",
+    "Vocation : Travel : Other Travel"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 8.334709,
+    "lagna": 98.334709,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.135981,
+    "jd_ut": 2380364.488981,
+    "planets": {
+      "Sun": {
+        "longitude": 301.754296,
+        "sign_index": 10,
+        "degree_in_sign": 1.754296,
+        "is_retrograde": false,
+        "speed": 1.009881
+      },
+      "Moon": {
+        "longitude": 97.644413,
+        "sign_index": 3,
+        "degree_in_sign": 7.644413,
+        "is_retrograde": false,
+        "speed": 13.726065
+      },
+      "Mars": {
+        "longitude": 103.028701,
+        "sign_index": 3,
+        "degree_in_sign": 13.028701,
+        "is_retrograde": true,
+        "speed": -0.328235
+      },
+      "Mercury": {
+        "longitude": 275.608434,
+        "sign_index": 9,
+        "degree_in_sign": 5.608434,
+        "is_retrograde": false,
+        "speed": 0.872389
+      },
+      "Jupiter": {
+        "longitude": 222.884386,
+        "sign_index": 7,
+        "degree_in_sign": 12.884386,
+        "is_retrograde": false,
+        "speed": 0.112356
+      },
+      "Venus": {
+        "longitude": 275.380756,
+        "sign_index": 9,
+        "degree_in_sign": 5.380756,
+        "is_retrograde": false,
+        "speed": 1.238507
+      },
+      "Saturn": {
+        "longitude": 174.743918,
+        "sign_index": 5,
+        "degree_in_sign": 24.743918,
+        "is_retrograde": true,
+        "speed": -0.030786
+      },
+      "Rahu": {
+        "longitude": 273.192566,
+        "sign_index": 9,
+        "degree_in_sign": 3.192566,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 93.192566,
+        "sign_index": 3,
+        "degree_in_sign": 3.192566,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

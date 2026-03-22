@@ -1,0 +1,110 @@
+{
+  "adb_id": 89340,
+  "name": "Coogan, Robert",
+  "given_name": "Robert Coogan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424133.541667,
+    "year": 1924,
+    "month": 12,
+    "day": 13,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Glendale (Los Angeles County)",
+    "country": "California",
+    "lat": 34.15,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coogan,_Robert",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Family : Childhood : Sibling circumstances",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Child performer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 10.94245,
+    "lagna": 40.94245,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.808922,
+    "jd_ut": 2424133.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 238.9753,
+        "sign_index": 7,
+        "degree_in_sign": 28.9753,
+        "is_retrograde": false,
+        "speed": 1.017092
+      },
+      "Moon": {
+        "longitude": 89.329313,
+        "sign_index": 2,
+        "degree_in_sign": 29.329313,
+        "is_retrograde": false,
+        "speed": 14.824558
+      },
+      "Mars": {
+        "longitude": 333.980829,
+        "sign_index": 11,
+        "degree_in_sign": 3.980829,
+        "is_retrograde": false,
+        "speed": 0.587291
+      },
+      "Mercury": {
+        "longitude": 258.934049,
+        "sign_index": 8,
+        "degree_in_sign": 18.934049,
+        "is_retrograde": false,
+        "speed": 0.613213
+      },
+      "Jupiter": {
+        "longitude": 246.228369,
+        "sign_index": 8,
+        "degree_in_sign": 6.228369,
+        "is_retrograde": false,
+        "speed": 0.228144
+      },
+      "Venus": {
+        "longitude": 207.548566,
+        "sign_index": 6,
+        "degree_in_sign": 27.548566,
+        "is_retrograde": false,
+        "speed": 1.236033
+      },
+      "Saturn": {
+        "longitude": 197.614042,
+        "sign_index": 6,
+        "degree_in_sign": 17.614042,
+        "is_retrograde": false,
+        "speed": 0.100437
+      },
+      "Rahu": {
+        "longitude": 113.776744,
+        "sign_index": 3,
+        "degree_in_sign": 23.776744,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 293.776744,
+        "sign_index": 9,
+        "degree_in_sign": 23.776744,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

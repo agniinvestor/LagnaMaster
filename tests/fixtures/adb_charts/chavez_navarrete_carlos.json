@@ -1,0 +1,108 @@
+{
+  "adb_id": 71864,
+  "name": "Chavez Navarrete, Carlos",
+  "given_name": "Carlos Chavez Navarrete",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437189.375,
+    "year": 1960,
+    "month": 9,
+    "day": 11,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chavez_Navarrete,_Carlos",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 3.055928,
+    "lagna": 273.055928,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.308113,
+    "jd_ut": 2437189.375,
+    "planets": {
+      "Sun": {
+        "longitude": 145.792494,
+        "sign_index": 4,
+        "degree_in_sign": 25.792494,
+        "is_retrograde": false,
+        "speed": 0.972967
+      },
+      "Moon": {
+        "longitude": 43.808631,
+        "sign_index": 1,
+        "degree_in_sign": 13.808631,
+        "is_retrograde": false,
+        "speed": 17.171491
+      },
+      "Mars": {
+        "longitude": 61.713677,
+        "sign_index": 2,
+        "degree_in_sign": 1.713677,
+        "is_retrograde": false,
+        "speed": 0.553962
+      },
+      "Mercury": {
+        "longitude": 156.016056,
+        "sign_index": 5,
+        "degree_in_sign": 6.016056,
+        "is_retrograde": false,
+        "speed": 1.716139
+      },
+      "Jupiter": {
+        "longitude": 241.230085,
+        "sign_index": 8,
+        "degree_in_sign": 1.230085,
+        "is_retrograde": false,
+        "speed": 0.06745
+      },
+      "Venus": {
+        "longitude": 167.841628,
+        "sign_index": 5,
+        "degree_in_sign": 17.841628,
+        "is_retrograde": false,
+        "speed": 1.229617
+      },
+      "Saturn": {
+        "longitude": 258.527079,
+        "sign_index": 8,
+        "degree_in_sign": 18.527079,
+        "is_retrograde": true,
+        "speed": -0.006678
+      },
+      "Rahu": {
+        "longitude": 141.921153,
+        "sign_index": 4,
+        "degree_in_sign": 21.921153,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 321.921153,
+        "sign_index": 10,
+        "degree_in_sign": 21.921153,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

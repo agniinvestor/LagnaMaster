@@ -1,0 +1,110 @@
+{
+  "adb_id": 79515,
+  "name": "Croué, Jean",
+  "given_name": "Jean Croué",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407024.951785,
+    "year": 1878,
+    "month": 2,
+    "day": 9,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 10",
+    "country": "France",
+    "lat": 48.871944,
+    "lon": 2.3575
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Croué,_Jean",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Voice-Over",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 17.629036,
+    "lagna": 17.629036,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.154892,
+    "jd_ut": 2407024.951785,
+    "planets": {
+      "Sun": {
+        "longitude": 298.456989,
+        "sign_index": 9,
+        "degree_in_sign": 28.456989,
+        "is_retrograde": false,
+        "speed": 1.011681
+      },
+      "Moon": {
+        "longitude": 16.22666,
+        "sign_index": 0,
+        "degree_in_sign": 16.22666,
+        "is_retrograde": false,
+        "speed": 12.723787
+      },
+      "Mars": {
+        "longitude": 13.803035,
+        "sign_index": 0,
+        "degree_in_sign": 13.803035,
+        "is_retrograde": false,
+        "speed": 0.622902
+      },
+      "Mercury": {
+        "longitude": 273.69948,
+        "sign_index": 9,
+        "degree_in_sign": 3.69948,
+        "is_retrograde": false,
+        "speed": 1.228233
+      },
+      "Jupiter": {
+        "longitude": 271.010467,
+        "sign_index": 9,
+        "degree_in_sign": 1.010467,
+        "is_retrograde": false,
+        "speed": 0.219996
+      },
+      "Venus": {
+        "longitude": 316.698416,
+        "sign_index": 10,
+        "degree_in_sign": 16.698416,
+        "is_retrograde": true,
+        "speed": -0.372815
+      },
+      "Saturn": {
+        "longitude": 326.995915,
+        "sign_index": 10,
+        "degree_in_sign": 26.995915,
+        "is_retrograde": false,
+        "speed": 0.113645
+      },
+      "Rahu": {
+        "longitude": 300.396969,
+        "sign_index": 10,
+        "degree_in_sign": 0.396969,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 120.396969,
+        "sign_index": 4,
+        "degree_in_sign": 0.396969,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

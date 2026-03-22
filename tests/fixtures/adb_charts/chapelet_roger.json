@@ -1,0 +1,109 @@
+{
+  "adb_id": 53454,
+  "name": "Chapelet, Roger",
+  "given_name": "Roger Chapelet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416383.431007,
+    "year": 1903,
+    "month": 9,
+    "day": 25,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Versailles",
+    "country": "France",
+    "lat": 48.8,
+    "lon": 2.133333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapelet,_Roger",
+  "source_notes": "Steinbrecher Collection: Gauquelin ns 3/0305\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.209849,
+    "lagna": 54.209849,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.512633,
+    "jd_ut": 2416383.431007,
+    "planets": {
+      "Sun": {
+        "longitude": 159.145869,
+        "sign_index": 5,
+        "degree_in_sign": 9.145869,
+        "is_retrograde": false,
+        "speed": 0.980682
+      },
+      "Moon": {
+        "longitude": 218.862291,
+        "sign_index": 7,
+        "degree_in_sign": 8.862291,
+        "is_retrograde": false,
+        "speed": 13.18678
+      },
+      "Mars": {
+        "longitude": 219.804718,
+        "sign_index": 7,
+        "degree_in_sign": 9.804718,
+        "is_retrograde": false,
+        "speed": 0.694121
+      },
+      "Mercury": {
+        "longitude": 174.098592,
+        "sign_index": 5,
+        "degree_in_sign": 24.098592,
+        "is_retrograde": true,
+        "speed": -0.592617
+      },
+      "Jupiter": {
+        "longitude": 324.020222,
+        "sign_index": 10,
+        "degree_in_sign": 24.020222,
+        "is_retrograde": true,
+        "speed": -0.123664
+      },
+      "Venus": {
+        "longitude": 146.625871,
+        "sign_index": 4,
+        "degree_in_sign": 26.625871,
+        "is_retrograde": true,
+        "speed": -0.499294
+      },
+      "Saturn": {
+        "longitude": 280.30181,
+        "sign_index": 9,
+        "degree_in_sign": 10.30181,
+        "is_retrograde": true,
+        "speed": -0.020377
+      },
+      "Rahu": {
+        "longitude": 164.471347,
+        "sign_index": 5,
+        "degree_in_sign": 14.471347,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 344.471347,
+        "sign_index": 11,
+        "degree_in_sign": 14.471347,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

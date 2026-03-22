@@ -1,0 +1,111 @@
+{
+  "adb_id": 62869,
+  "name": "Chérasse, Jean",
+  "given_name": "Jean Chérasse",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427037.947917,
+    "year": 1932,
+    "month": 11,
+    "day": 26,
+    "calendar": "g",
+    "time": "10:45",
+    "time_type": "s",
+    "hour": 10.75,
+    "time_unknown": false,
+    "place": "Issoire",
+    "country": "France",
+    "lat": 45.55,
+    "lon": 3.25
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chérasse,_Jean",
+  "source_notes": "Didier Geslain archive, 'Cinema Realisateurs' pdf file, p. 57.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 8.544368,
+    "lagna": 248.544368,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.919966,
+    "jd_ut": 2427037.947917,
+    "planets": {
+      "Sun": {
+        "longitude": 221.066687,
+        "sign_index": 7,
+        "degree_in_sign": 11.066687,
+        "is_retrograde": false,
+        "speed": 1.012676
+      },
+      "Moon": {
+        "longitude": 198.61348,
+        "sign_index": 6,
+        "degree_in_sign": 18.61348,
+        "is_retrograde": false,
+        "speed": 10.988755
+      },
+      "Mars": {
+        "longitude": 132.913985,
+        "sign_index": 4,
+        "degree_in_sign": 12.913985,
+        "is_retrograde": false,
+        "speed": 0.440101
+      },
+      "Mercury": {
+        "longitude": 237.411056,
+        "sign_index": 7,
+        "degree_in_sign": 27.411056,
+        "is_retrograde": true,
+        "speed": -0.29935
+      },
+      "Jupiter": {
+        "longitude": 147.603193,
+        "sign_index": 4,
+        "degree_in_sign": 27.603193,
+        "is_retrograde": false,
+        "speed": 0.121749
+      },
+      "Venus": {
+        "longitude": 186.39793,
+        "sign_index": 6,
+        "degree_in_sign": 6.39793,
+        "is_retrograde": false,
+        "speed": 1.223682
+      },
+      "Saturn": {
+        "longitude": 277.578424,
+        "sign_index": 9,
+        "degree_in_sign": 7.578424,
+        "is_retrograde": false,
+        "speed": 0.082363
+      },
+      "Rahu": {
+        "longitude": 319.866216,
+        "sign_index": 10,
+        "degree_in_sign": 19.866216,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 139.866216,
+        "sign_index": 4,
+        "degree_in_sign": 19.866216,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

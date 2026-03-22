@@ -1,0 +1,114 @@
+{
+  "adb_id": 2,
+  "name": "Cardano, Girolamo",
+  "given_name": "Girolamo Cardano",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2269565.244676,
+    "year": 1501,
+    "month": 9,
+    "day": 24,
+    "calendar": "j",
+    "time": "18:29",
+    "time_type": "l",
+    "hour": 18.483333,
+    "time_unknown": false,
+    "place": "Pavia",
+    "country": "Italy",
+    "lat": 45.166667,
+    "lon": 9.166667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardano,_Girolamo",
+  "source_notes": "LMR quotes \"Giralmo Cardano: Book of My Life,\" translated from the Latin by Jean Stoner, 1930, p.4, \"I was born normally September 24, 1501 when the first hour of the night was more than half run but less than two-thirds.\" (September 25, Florentine time, 6:40 PM LAT) All editions of the \"De Colsolations Liber III, Vol 1\" give 1500, but in his own horoscope he gives the date and hour as above.\\n\\nBiography: Anthony Grafton, \"Cardano's Cosmos: The Worlds and Works of a Renaissance Astrologer,\" Harvard University Press, 1999.\\n\\nA review of this book by Shelley Jordan can be seen at:\\nhttp://cura.free.fr/books.html\\n",
+  "categories": [
+    "Family : Parenting : Kids -Traumatic event",
+    "Passions : Criminal Perpetrator : Civil/ Political",
+    "Vocation : Medical : Physician",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 2.551543,
+    "lagna": 2.551543,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 16.904949,
+    "jd_ut": 2269565.244676,
+    "planets": {
+      "Sun": {
+        "longitude": 173.778903,
+        "sign_index": 5,
+        "degree_in_sign": 23.778903,
+        "is_retrograde": false,
+        "speed": 0.989302
+      },
+      "Moon": {
+        "longitude": 323.999091,
+        "sign_index": 10,
+        "degree_in_sign": 23.999091,
+        "is_retrograde": false,
+        "speed": 12.315317
+      },
+      "Mars": {
+        "longitude": 54.344041,
+        "sign_index": 1,
+        "degree_in_sign": 24.344041,
+        "is_retrograde": false,
+        "speed": 0.184171
+      },
+      "Mercury": {
+        "longitude": 189.548907,
+        "sign_index": 6,
+        "degree_in_sign": 9.548907,
+        "is_retrograde": true,
+        "speed": -0.530117
+      },
+      "Jupiter": {
+        "longitude": 15.762081,
+        "sign_index": 0,
+        "degree_in_sign": 15.762081,
+        "is_retrograde": true,
+        "speed": -0.11697
+      },
+      "Venus": {
+        "longitude": 186.272457,
+        "sign_index": 6,
+        "degree_in_sign": 6.272457,
+        "is_retrograde": false,
+        "speed": 1.246029
+      },
+      "Saturn": {
+        "longitude": 62.425856,
+        "sign_index": 2,
+        "degree_in_sign": 2.425856,
+        "is_retrograde": true,
+        "speed": -0.004373
+      },
+      "Rahu": {
+        "longitude": 24.704045,
+        "sign_index": 0,
+        "degree_in_sign": 24.704045,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 204.704045,
+        "sign_index": 6,
+        "degree_in_sign": 24.704045,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

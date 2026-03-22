@@ -1,0 +1,108 @@
+{
+  "adb_id": 59252,
+  "name": "Christian Wilhelm von Brandenburg",
+  "given_name": "Christian Wilhelm von Brandenburg",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2300949.301065,
+    "year": 1587,
+    "month": 8,
+    "day": 28,
+    "calendar": "j",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Wolmirstedt",
+    "country": "Germany",
+    "lat": 52.25,
+    "lon": 11.616667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian_Wilhelm_von_Brandenburg",
+  "source_notes": "Sy Scholfield quotes the chronicle of events in \"Allgemeine preussische staats-geschichte, samt aller dazu gehörigen königreichs, churfürstenthums, herzogthümer, fürstenthümer, graf- und herrschaften, aus bewährten schriftstellern und urkunden bis auf gegenwärtige regierung,\" Volumes 3-4, by Karl Friedrich Pauli (C. P. Francken, 1762), p. 415: \"Christian Wilhelm, geboren, zu Wolmirstedt den 28ten Aug. um 8 Uhr des Abends 1587.\" [Translation: Christian William born at Wolmirstedt on 28 Aug. 1587 at 8 o'clock in the evening.]\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 1.145912,
+    "lagna": 1.145912,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 18.102823,
+    "jd_ut": 2300949.301065,
+    "planets": {
+      "Sun": {
+        "longitude": 146.307459,
+        "sign_index": 4,
+        "degree_in_sign": 26.307459,
+        "is_retrograde": false,
+        "speed": 0.974093
+      },
+      "Moon": {
+        "longitude": 213.333364,
+        "sign_index": 7,
+        "degree_in_sign": 3.333364,
+        "is_retrograde": false,
+        "speed": 12.106166
+      },
+      "Mars": {
+        "longitude": 207.659848,
+        "sign_index": 6,
+        "degree_in_sign": 27.659848,
+        "is_retrograde": false,
+        "speed": 0.674315
+      },
+      "Mercury": {
+        "longitude": 172.823694,
+        "sign_index": 5,
+        "degree_in_sign": 22.823694,
+        "is_retrograde": false,
+        "speed": 1.046081
+      },
+      "Jupiter": {
+        "longitude": 109.133831,
+        "sign_index": 3,
+        "degree_in_sign": 19.133831,
+        "is_retrograde": false,
+        "speed": 0.196548
+      },
+      "Venus": {
+        "longitude": 120.826369,
+        "sign_index": 4,
+        "degree_in_sign": 0.826369,
+        "is_retrograde": false,
+        "speed": 1.22202
+      },
+      "Saturn": {
+        "longitude": 28.111957,
+        "sign_index": 0,
+        "degree_in_sign": 28.111957,
+        "is_retrograde": true,
+        "speed": -0.016673
+      },
+      "Rahu": {
+        "longitude": 161.586195,
+        "sign_index": 5,
+        "degree_in_sign": 11.586195,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 341.586195,
+        "sign_index": 11,
+        "degree_in_sign": 11.586195,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

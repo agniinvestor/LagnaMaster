@@ -1,0 +1,109 @@
+{
+  "adb_id": 54192,
+  "name": "Carter, Keith Eyre",
+  "given_name": "Keith Eyre Carter",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424027.722222,
+    "year": 1924,
+    "month": 8,
+    "day": 30,
+    "calendar": "g",
+    "time": "00:20",
+    "time_type": "d",
+    "hour": 0.333333,
+    "time_unknown": false,
+    "place": "Akron",
+    "country": "Ohio",
+    "lat": 41.083333,
+    "lon": -81.516667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carter,_Keith_Eyre",
+  "source_notes": "Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Sports : Swimming",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 13.312605,
+    "lagna": 43.312605,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.804876,
+    "jd_ut": 2424027.722222,
+    "planets": {
+      "Sun": {
+        "longitude": 133.739247,
+        "sign_index": 4,
+        "degree_in_sign": 13.739247,
+        "is_retrograde": false,
+        "speed": 0.967472
+      },
+      "Moon": {
+        "longitude": 132.348931,
+        "sign_index": 4,
+        "degree_in_sign": 12.348931,
+        "is_retrograde": false,
+        "speed": 17.068505
+      },
+      "Mars": {
+        "longitude": 305.753632,
+        "sign_index": 10,
+        "degree_in_sign": 5.753632,
+        "is_retrograde": true,
+        "speed": -0.248955
+      },
+      "Mercury": {
+        "longitude": 154.060095,
+        "sign_index": 5,
+        "degree_in_sign": 4.060095,
+        "is_retrograde": true,
+        "speed": -0.113232
+      },
+      "Jupiter": {
+        "longitude": 228.061849,
+        "sign_index": 7,
+        "degree_in_sign": 18.061849,
+        "is_retrograde": false,
+        "speed": 0.068956
+      },
+      "Venus": {
+        "longitude": 88.331804,
+        "sign_index": 2,
+        "degree_in_sign": 28.331804,
+        "is_retrograde": false,
+        "speed": 0.869188
+      },
+      "Saturn": {
+        "longitude": 185.787552,
+        "sign_index": 6,
+        "degree_in_sign": 5.787552,
+        "is_retrograde": false,
+        "speed": 0.088904
+      },
+      "Rahu": {
+        "longitude": 119.384337,
+        "sign_index": 3,
+        "degree_in_sign": 29.384337,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 299.384337,
+        "sign_index": 9,
+        "degree_in_sign": 29.384337,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

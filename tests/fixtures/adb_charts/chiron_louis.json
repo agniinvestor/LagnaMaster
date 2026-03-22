@@ -1,0 +1,109 @@
+{
+  "adb_id": 3867,
+  "name": "Chiron, Louis",
+  "given_name": "Louis Chiron",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414870.243507,
+    "year": 1899,
+    "month": 8,
+    "day": 3,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Monte Carlo",
+    "country": "Monaco",
+    "lat": 43.75,
+    "lon": 7.416667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiron,_Louis",
+  "source_notes": "Gauquelin Vol 1/88  (6:00 PM Paris time)\\n",
+  "categories": [
+    "Lifestyle : Social Life : Sports",
+    "Vocation : Sports : Race Cars"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 8.313508,
+    "lagna": 248.313508,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.454787,
+    "jd_ut": 2414870.243507,
+    "planets": {
+      "Sun": {
+        "longitude": 108.660197,
+        "sign_index": 3,
+        "degree_in_sign": 18.660197,
+        "is_retrograde": false,
+        "speed": 0.957857
+      },
+      "Moon": {
+        "longitude": 78.214191,
+        "sign_index": 2,
+        "degree_in_sign": 18.214191,
+        "is_retrograde": false,
+        "speed": 14.430457
+      },
+      "Mars": {
+        "longitude": 156.161182,
+        "sign_index": 5,
+        "degree_in_sign": 6.161182,
+        "is_retrograde": false,
+        "speed": 0.620025
+      },
+      "Mercury": {
+        "longitude": 131.12261,
+        "sign_index": 4,
+        "degree_in_sign": 11.12261,
+        "is_retrograde": false,
+        "speed": 0.151184
+      },
+      "Jupiter": {
+        "longitude": 189.838978,
+        "sign_index": 6,
+        "degree_in_sign": 9.838978,
+        "is_retrograde": false,
+        "speed": 0.102587
+      },
+      "Venus": {
+        "longitude": 96.80892,
+        "sign_index": 3,
+        "degree_in_sign": 6.80892,
+        "is_retrograde": false,
+        "speed": 1.228722
+      },
+      "Saturn": {
+        "longitude": 234.868357,
+        "sign_index": 7,
+        "degree_in_sign": 24.868357,
+        "is_retrograde": true,
+        "speed": -0.02825
+      },
+      "Rahu": {
+        "longitude": 244.658342,
+        "sign_index": 8,
+        "degree_in_sign": 4.658342,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 64.658342,
+        "sign_index": 2,
+        "degree_in_sign": 4.658342,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

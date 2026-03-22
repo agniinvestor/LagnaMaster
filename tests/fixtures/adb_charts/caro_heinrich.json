@@ -1,0 +1,108 @@
+{
+  "adb_id": 58860,
+  "name": "Caro, Heinrich",
+  "given_name": "Heinrich Caro",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2390958.494676,
+    "year": 1834,
+    "month": 2,
+    "day": 14,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Poznan",
+    "country": "Poland",
+    "lat": 52.416667,
+    "lon": 16.916667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caro,_Heinrich",
+  "source_notes": "Sy Scholfield quotes Carsten Reinhardt & Anthony Selwyn Travis's book, \"Heinrich Caro and the Creation of Modern Chemical Industry\" (Springer, 2000), p. 302: \"he was unhappy to have been born on the 13th (as he had been informed, though in fact it appears, according to [his daughter] Amalie, that he was actually born at 1 am on the 14th).  \\n",
+  "categories": [
+    "Vocation : Science : Chemistry"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.41186,
+    "lagna": 184.41186,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.540824,
+    "jd_ut": 2390958.494676,
+    "planets": {
+      "Sun": {
+        "longitude": 303.331695,
+        "sign_index": 10,
+        "degree_in_sign": 3.331695,
+        "is_retrograde": false,
+        "speed": 1.009761
+      },
+      "Moon": {
+        "longitude": 0.34496,
+        "sign_index": 0,
+        "degree_in_sign": 0.34496,
+        "is_retrograde": false,
+        "speed": 14.12336
+      },
+      "Mars": {
+        "longitude": 273.500989,
+        "sign_index": 9,
+        "degree_in_sign": 3.500989,
+        "is_retrograde": false,
+        "speed": 0.762061
+      },
+      "Mercury": {
+        "longitude": 303.696653,
+        "sign_index": 10,
+        "degree_in_sign": 3.696653,
+        "is_retrograde": false,
+        "speed": 1.811552
+      },
+      "Jupiter": {
+        "longitude": 8.866643,
+        "sign_index": 0,
+        "degree_in_sign": 8.866643,
+        "is_retrograde": false,
+        "speed": 0.159882
+      },
+      "Venus": {
+        "longitude": 297.908146,
+        "sign_index": 9,
+        "degree_in_sign": 27.908146,
+        "is_retrograde": false,
+        "speed": 1.25242
+      },
+      "Saturn": {
+        "longitude": 168.68475,
+        "sign_index": 5,
+        "degree_in_sign": 18.68475,
+        "is_retrograde": true,
+        "speed": -0.042676
+      },
+      "Rahu": {
+        "longitude": 71.793063,
+        "sign_index": 2,
+        "degree_in_sign": 11.793063,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 251.793063,
+        "sign_index": 8,
+        "degree_in_sign": 11.793063,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

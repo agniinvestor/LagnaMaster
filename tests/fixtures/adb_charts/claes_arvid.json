@@ -1,0 +1,109 @@
+{
+  "adb_id": 98668,
+  "name": "Claes, Arvid",
+  "given_name": "Arvid Claes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427940.375,
+    "year": 1935,
+    "month": 5,
+    "day": 17,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claes,_Arvid",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Passions : Criminal Victim : Social crime victim",
+    "Personal : Death : Short Life less than 29 Yrs"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 22.681956,
+    "lagna": 202.681956,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.954469,
+    "jd_ut": 2427940.375,
+    "planets": {
+      "Sun": {
+        "longitude": 33.056378,
+        "sign_index": 1,
+        "degree_in_sign": 3.056378,
+        "is_retrograde": false,
+        "speed": 0.962803
+      },
+      "Moon": {
+        "longitude": 206.914938,
+        "sign_index": 6,
+        "degree_in_sign": 26.914938,
+        "is_retrograde": false,
+        "speed": 10.683204
+      },
+      "Mars": {
+        "longitude": 163.093951,
+        "sign_index": 5,
+        "degree_in_sign": 13.093951,
+        "is_retrograde": true,
+        "speed": -0.000383
+      },
+      "Mercury": {
+        "longitude": 53.20911,
+        "sign_index": 1,
+        "degree_in_sign": 23.20911,
+        "is_retrograde": false,
+        "speed": 1.521705
+      },
+      "Jupiter": {
+        "longitude": 204.478093,
+        "sign_index": 6,
+        "degree_in_sign": 24.478093,
+        "is_retrograde": true,
+        "speed": -0.124848
+      },
+      "Venus": {
+        "longitude": 73.851387,
+        "sign_index": 2,
+        "degree_in_sign": 13.851387,
+        "is_retrograde": false,
+        "speed": 1.136279
+      },
+      "Saturn": {
+        "longitude": 316.287341,
+        "sign_index": 10,
+        "degree_in_sign": 16.287341,
+        "is_retrograde": false,
+        "speed": 0.054998
+      },
+      "Rahu": {
+        "longitude": 272.044733,
+        "sign_index": 9,
+        "degree_in_sign": 2.044733,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 92.044733,
+        "sign_index": 3,
+        "degree_in_sign": 2.044733,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

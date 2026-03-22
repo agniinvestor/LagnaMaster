@@ -1,0 +1,109 @@
+{
+  "adb_id": 6300,
+  "name": "Conjoined Twins: Church",
+  "given_name": "Conjoined Twins: Church",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2425126.284722,
+    "year": 1927,
+    "month": 9,
+    "day": 2,
+    "calendar": "g",
+    "time": "19:50",
+    "time_type": "d",
+    "hour": 19.833333,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Church",
+  "source_notes": "Astrology Quarterly Spring/1928 states \"authentic data.\"\\n",
+  "categories": [
+    "Personal : Birth : Conjoined twins",
+    "Personal : Birth : Infant mortality"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 28.349809,
+    "lagna": 298.349809,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.846877,
+    "jd_ut": 2425126.284722,
+    "planets": {
+      "Sun": {
+        "longitude": 136.450273,
+        "sign_index": 4,
+        "degree_in_sign": 16.450273,
+        "is_retrograde": false,
+        "speed": 0.968481
+      },
+      "Moon": {
+        "longitude": 207.916078,
+        "sign_index": 6,
+        "degree_in_sign": 27.916078,
+        "is_retrograde": false,
+        "speed": 8.961965
+      },
+      "Mars": {
+        "longitude": 152.122877,
+        "sign_index": 5,
+        "degree_in_sign": 2.122877,
+        "is_retrograde": false,
+        "speed": 0.642479
+      },
+      "Mercury": {
+        "longitude": 136.596204,
+        "sign_index": 4,
+        "degree_in_sign": 16.596204,
+        "is_retrograde": false,
+        "speed": 1.925091
+      },
+      "Jupiter": {
+        "longitude": 338.175255,
+        "sign_index": 11,
+        "degree_in_sign": 8.175255,
+        "is_retrograde": true,
+        "speed": -0.114933
+      },
+      "Venus": {
+        "longitude": 148.750917,
+        "sign_index": 4,
+        "degree_in_sign": 28.750917,
+        "is_retrograde": true,
+        "speed": -0.492798
+      },
+      "Saturn": {
+        "longitude": 218.808346,
+        "sign_index": 7,
+        "degree_in_sign": 8.808346,
+        "is_retrograde": false,
+        "speed": 0.04429
+      },
+      "Rahu": {
+        "longitude": 61.169222,
+        "sign_index": 2,
+        "degree_in_sign": 1.169222,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 241.169222,
+        "sign_index": 8,
+        "degree_in_sign": 1.169222,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

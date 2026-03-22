@@ -1,0 +1,109 @@
+{
+  "adb_id": 84590,
+  "name": "Chaparro, Ernesto",
+  "given_name": "Ernesto Chaparro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415538.071366,
+    "year": 1901,
+    "month": 6,
+    "day": 2,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Pozo Almonte",
+    "country": "Chile",
+    "lat": -20.266667,
+    "lon": -69.8
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaparro,_Ernesto",
+  "source_notes": "Sy Scholfield provided birth certificate: \"a las nueve de la mañana\" (at nine in the morning). Wikipedia has 1 April 1901, no source given.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 1.104847,
+    "lagna": 61.104847,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.480316,
+    "jd_ut": 2415538.071366,
+    "planets": {
+      "Sun": {
+        "longitude": 48.812727,
+        "sign_index": 1,
+        "degree_in_sign": 18.812727,
+        "is_retrograde": false,
+        "speed": 0.957198
+      },
+      "Moon": {
+        "longitude": 229.93628,
+        "sign_index": 7,
+        "degree_in_sign": 19.93628,
+        "is_retrograde": false,
+        "speed": 15.668342
+      },
+      "Mars": {
+        "longitude": 136.350909,
+        "sign_index": 4,
+        "degree_in_sign": 16.350909,
+        "is_retrograde": false,
+        "speed": 0.446973
+      },
+      "Mercury": {
+        "longitude": 68.498007,
+        "sign_index": 2,
+        "degree_in_sign": 8.498007,
+        "is_retrograde": false,
+        "speed": 1.653502
+      },
+      "Jupiter": {
+        "longitude": 258.962383,
+        "sign_index": 8,
+        "degree_in_sign": 18.962383,
+        "is_retrograde": true,
+        "speed": -0.093815
+      },
+      "Venus": {
+        "longitude": 57.498766,
+        "sign_index": 1,
+        "degree_in_sign": 27.498766,
+        "is_retrograde": false,
+        "speed": 1.227665
+      },
+      "Saturn": {
+        "longitude": 262.838557,
+        "sign_index": 8,
+        "degree_in_sign": 22.838557,
+        "is_retrograde": true,
+        "speed": -0.054048
+      },
+      "Rahu": {
+        "longitude": 209.268736,
+        "sign_index": 6,
+        "degree_in_sign": 29.268736,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 29.268736,
+        "sign_index": 0,
+        "degree_in_sign": 29.268736,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 71881,
+  "name": "Crawfurd, Helen",
+  "given_name": "Helen Crawfurd",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406933.166667,
+    "year": 1877,
+    "month": 11,
+    "day": 9,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crawfurd,_Helen",
+  "source_notes": "Paul Wright collection\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Activist/ feminist",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 25.893117,
+    "lagna": 355.893117,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.151384,
+    "jd_ut": 2406933.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 205.239577,
+        "sign_index": 6,
+        "degree_in_sign": 25.239577,
+        "is_retrograde": false,
+        "speed": 1.006087
+      },
+      "Moon": {
+        "longitude": 258.240087,
+        "sign_index": 8,
+        "degree_in_sign": 18.240087,
+        "is_retrograde": false,
+        "speed": 9.309186
+      },
+      "Mars": {
+        "longitude": 323.609212,
+        "sign_index": 10,
+        "degree_in_sign": 23.609212,
+        "is_retrograde": false,
+        "speed": 0.375179
+      },
+      "Mercury": {
+        "longitude": 202.822646,
+        "sign_index": 6,
+        "degree_in_sign": 22.822646,
+        "is_retrograde": false,
+        "speed": 1.613166
+      },
+      "Jupiter": {
+        "longitude": 250.532163,
+        "sign_index": 8,
+        "degree_in_sign": 10.532163,
+        "is_retrograde": false,
+        "speed": 0.193876
+      },
+      "Venus": {
+        "longitude": 249.988005,
+        "sign_index": 8,
+        "degree_in_sign": 9.988005,
+        "is_retrograde": false,
+        "speed": 1.142475
+      },
+      "Saturn": {
+        "longitude": 321.502913,
+        "sign_index": 10,
+        "degree_in_sign": 21.502913,
+        "is_retrograde": true,
+        "speed": -0.012684
+      },
+      "Rahu": {
+        "longitude": 305.260858,
+        "sign_index": 10,
+        "degree_in_sign": 5.260858,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 125.260858,
+        "sign_index": 4,
+        "degree_in_sign": 5.260858,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 65394,
+  "name": "Cros, Irénée",
+  "given_name": "Irénée Cros",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410620.992465,
+    "year": 1887,
+    "month": 12,
+    "day": 15,
+    "calendar": "g",
+    "time": "unknown, 12:00 used",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Courniou",
+    "country": "France",
+    "lat": 43.474444,
+    "lon": 2.7125
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap/sag",
+    "asc_sign": ""
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cros,_Irénée",
+  "source_notes": "Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 85.\\n",
+  "categories": [
+    "Vocation : Military : Honors"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 4.031703,
+    "lagna": 304.031703,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.292351,
+    "jd_ut": 2410620.992465,
+    "planets": {
+      "Sun": {
+        "longitude": 240.951862,
+        "sign_index": 8,
+        "degree_in_sign": 0.951862,
+        "is_retrograde": false,
+        "speed": 1.018197
+      },
+      "Moon": {
+        "longitude": 250.166686,
+        "sign_index": 8,
+        "degree_in_sign": 10.166686,
+        "is_retrograde": false,
+        "speed": 9.790431
+      },
+      "Mars": {
+        "longitude": 162.421632,
+        "sign_index": 5,
+        "degree_in_sign": 12.421632,
+        "is_retrograde": false,
+        "speed": 0.504767
+      },
+      "Mercury": {
+        "longitude": 222.834926,
+        "sign_index": 7,
+        "degree_in_sign": 12.834926,
+        "is_retrograde": false,
+        "speed": 1.402677
+      },
+      "Jupiter": {
+        "longitude": 211.95539,
+        "sign_index": 7,
+        "degree_in_sign": 1.95539,
+        "is_retrograde": false,
+        "speed": 0.206597
+      },
+      "Venus": {
+        "longitude": 194.704406,
+        "sign_index": 6,
+        "degree_in_sign": 14.704406,
+        "is_retrograde": false,
+        "speed": 1.091146
+      },
+      "Saturn": {
+        "longitude": 103.555437,
+        "sign_index": 3,
+        "degree_in_sign": 13.555437,
+        "is_retrograde": true,
+        "speed": -0.048882
+      },
+      "Rahu": {
+        "longitude": 109.835137,
+        "sign_index": 3,
+        "degree_in_sign": 19.835137,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 289.835137,
+        "sign_index": 9,
+        "degree_in_sign": 19.835137,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

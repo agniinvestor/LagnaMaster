@@ -1,0 +1,109 @@
+{
+  "adb_id": 60404,
+  "name": "Chrzanowski, Ignacy",
+  "given_name": "Ignacy Chrzanowski",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402638.020926,
+    "year": 1866,
+    "month": 2,
+    "day": 5,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Stok",
+    "country": "Poland",
+    "lat": 51.816667,
+    "lon": 22.466667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chrzanowski,_Ignacy",
+  "source_notes": "PTA database quotes from an [http://parafia_ulan.republika.pl/chrzanowski.htm article] which quotes the birth record. Information reported by Miroslaw Czylek.\\n",
+  "categories": [
+    "Passions : Criminal Victim : Concentration camp",
+    "Vocation : Humanities+Social Sciences : Historian"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 1.901257,
+    "lagna": 61.901257,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.98721,
+    "jd_ut": 2402638.020926,
+    "planets": {
+      "Sun": {
+        "longitude": 294.554767,
+        "sign_index": 9,
+        "degree_in_sign": 24.554767,
+        "is_retrograde": false,
+        "speed": 1.012817
+      },
+      "Moon": {
+        "longitude": 179.661202,
+        "sign_index": 5,
+        "degree_in_sign": 29.661202,
+        "is_retrograde": false,
+        "speed": 14.320316
+      },
+      "Mars": {
+        "longitude": 270.347445,
+        "sign_index": 9,
+        "degree_in_sign": 0.347445,
+        "is_retrograde": false,
+        "speed": 0.763756
+      },
+      "Mercury": {
+        "longitude": 277.960603,
+        "sign_index": 9,
+        "degree_in_sign": 7.960603,
+        "is_retrograde": false,
+        "speed": 1.53015
+      },
+      "Jupiter": {
+        "longitude": 266.556843,
+        "sign_index": 8,
+        "degree_in_sign": 26.556843,
+        "is_retrograde": false,
+        "speed": 0.218499
+      },
+      "Venus": {
+        "longitude": 289.550494,
+        "sign_index": 9,
+        "degree_in_sign": 19.550494,
+        "is_retrograde": false,
+        "speed": 1.254081
+      },
+      "Saturn": {
+        "longitude": 200.160492,
+        "sign_index": 6,
+        "degree_in_sign": 20.160492,
+        "is_retrograde": false,
+        "speed": 0.024926
+      },
+      "Rahu": {
+        "longitude": 172.869792,
+        "sign_index": 5,
+        "degree_in_sign": 22.869792,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 352.869792,
+        "sign_index": 11,
+        "degree_in_sign": 22.869792,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

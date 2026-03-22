@@ -1,0 +1,110 @@
+{
+  "adb_id": 19426,
+  "name": "Callandreau, Pierre Jean",
+  "given_name": "Pierre Jean Callandreau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2397752.124583,
+    "year": 1852,
+    "month": 9,
+    "day": 20,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Angoulême",
+    "country": "France",
+    "lat": 45.65,
+    "lon": 0.15
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Callandreau,_Pierre_Jean",
+  "source_notes": "Gauquelin Vol 2/2610\\n",
+  "categories": [
+    "Vocation : Science : Astronomy",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Notable : Extraordinary Talents : For Numbers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 4.86405,
+    "lagna": 244.86405,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.800466,
+    "jd_ut": 2397752.124583,
+    "planets": {
+      "Sun": {
+        "longitude": 155.972926,
+        "sign_index": 5,
+        "degree_in_sign": 5.972926,
+        "is_retrograde": false,
+        "speed": 0.978838
+      },
+      "Moon": {
+        "longitude": 247.346298,
+        "sign_index": 8,
+        "degree_in_sign": 7.346298,
+        "is_retrograde": false,
+        "speed": 10.546228
+      },
+      "Mars": {
+        "longitude": 190.154693,
+        "sign_index": 6,
+        "degree_in_sign": 10.154693,
+        "is_retrograde": false,
+        "speed": 0.67695
+      },
+      "Mercury": {
+        "longitude": 138.133017,
+        "sign_index": 4,
+        "degree_in_sign": 18.133017,
+        "is_retrograde": false,
+        "speed": 1.000824
+      },
+      "Jupiter": {
+        "longitude": 208.444268,
+        "sign_index": 6,
+        "degree_in_sign": 28.444268,
+        "is_retrograde": false,
+        "speed": 0.172804
+      },
+      "Venus": {
+        "longitude": 110.193612,
+        "sign_index": 3,
+        "degree_in_sign": 20.193612,
+        "is_retrograde": false,
+        "speed": 0.893714
+      },
+      "Saturn": {
+        "longitude": 25.750701,
+        "sign_index": 0,
+        "degree_in_sign": 25.750701,
+        "is_retrograde": true,
+        "speed": -0.03717
+      },
+      "Rahu": {
+        "longitude": 71.783926,
+        "sign_index": 2,
+        "degree_in_sign": 11.783926,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 251.783926,
+        "sign_index": 8,
+        "degree_in_sign": 11.783926,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

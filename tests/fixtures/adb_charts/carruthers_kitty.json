@@ -1,0 +1,115 @@
+{
+  "adb_id": 13674,
+  "name": "Carruthers, Kitty",
+  "given_name": "Kitty Carruthers",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2437450.127778,
+    "year": 1961,
+    "month": 5,
+    "day": 30,
+    "calendar": "g",
+    "time": "11:04",
+    "time_type": "d",
+    "hour": 11.066667,
+    "time_unknown": false,
+    "place": "Boston",
+    "country": "Massachusetts",
+    "lat": 42.366667,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carruthers,_Kitty",
+  "source_notes": "Mary Lee Lewis quotes her dad\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Family : Childhood : Adopted",
+    "Family : Childhood : Family supportive",
+    "Family : Childhood : Sibling circumstances",
+    "Lifestyle : Social Life : Hobbies, games",
+    "Vocation : Sports : Skating",
+    "Notable : Awards : Sports Championship",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 6.731129,
+    "lagna": 96.731129,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.318084,
+    "jd_ut": 2437450.127778,
+    "planets": {
+      "Sun": {
+        "longitude": 45.631928,
+        "sign_index": 1,
+        "degree_in_sign": 15.631928,
+        "is_retrograde": false,
+        "speed": 0.958244
+      },
+      "Moon": {
+        "longitude": 231.125256,
+        "sign_index": 7,
+        "degree_in_sign": 21.125256,
+        "is_retrograde": false,
+        "speed": 17.977951
+      },
+      "Mars": {
+        "longitude": 109.872422,
+        "sign_index": 3,
+        "degree_in_sign": 19.872422,
+        "is_retrograde": false,
+        "speed": 0.554798
+      },
+      "Mercury": {
+        "longitude": 68.815738,
+        "sign_index": 2,
+        "degree_in_sign": 8.815738,
+        "is_retrograde": false,
+        "speed": 1.061793
+      },
+      "Jupiter": {
+        "longitude": 283.801331,
+        "sign_index": 9,
+        "degree_in_sign": 13.801331,
+        "is_retrograde": true,
+        "speed": -0.015334
+      },
+      "Venus": {
+        "longitude": 1.809468,
+        "sign_index": 0,
+        "degree_in_sign": 1.809468,
+        "is_retrograde": false,
+        "speed": 0.746311
+      },
+      "Saturn": {
+        "longitude": 276.189787,
+        "sign_index": 9,
+        "degree_in_sign": 6.189787,
+        "is_retrograde": true,
+        "speed": -0.032761
+      },
+      "Rahu": {
+        "longitude": 128.103329,
+        "sign_index": 4,
+        "degree_in_sign": 8.103329,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 308.103329,
+        "sign_index": 10,
+        "degree_in_sign": 8.103329,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

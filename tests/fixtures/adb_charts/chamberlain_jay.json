@@ -1,0 +1,109 @@
+{
+  "adb_id": 94583,
+  "name": "Chamberlain, Jay",
+  "given_name": "Jay Chamberlain",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424514.239583,
+    "year": 1925,
+    "month": 12,
+    "day": 29,
+    "calendar": "g",
+    "time": "09:45",
+    "time_type": "s",
+    "hour": 9.75,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamberlain,_Jay",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Vocation : Sports : Race Cars",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 8.341784,
+    "lagna": 278.341784,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.823477,
+    "jd_ut": 2424514.239583,
+    "planets": {
+      "Sun": {
+        "longitude": 254.700653,
+        "sign_index": 8,
+        "degree_in_sign": 14.700653,
+        "is_retrograde": false,
+        "speed": 1.018906
+      },
+      "Moon": {
+        "longitude": 70.545838,
+        "sign_index": 2,
+        "degree_in_sign": 10.545838,
+        "is_retrograde": false,
+        "speed": 16.23849
+      },
+      "Mars": {
+        "longitude": 218.356944,
+        "sign_index": 7,
+        "degree_in_sign": 8.356944,
+        "is_retrograde": false,
+        "speed": 0.686196
+      },
+      "Mercury": {
+        "longitude": 232.275074,
+        "sign_index": 7,
+        "degree_in_sign": 22.275074,
+        "is_retrograde": false,
+        "speed": 0.906593
+      },
+      "Jupiter": {
+        "longitude": 275.499757,
+        "sign_index": 9,
+        "degree_in_sign": 5.499757,
+        "is_retrograde": false,
+        "speed": 0.228075
+      },
+      "Venus": {
+        "longitude": 296.782889,
+        "sign_index": 9,
+        "degree_in_sign": 26.782889,
+        "is_retrograde": false,
+        "speed": 0.612745
+      },
+      "Saturn": {
+        "longitude": 209.771173,
+        "sign_index": 6,
+        "degree_in_sign": 29.771173,
+        "is_retrograde": false,
+        "speed": 0.096076
+      },
+      "Rahu": {
+        "longitude": 93.602768,
+        "sign_index": 3,
+        "degree_in_sign": 3.602768,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 273.602768,
+        "sign_index": 9,
+        "degree_in_sign": 3.602768,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

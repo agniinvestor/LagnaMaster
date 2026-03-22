@@ -1,0 +1,110 @@
+{
+  "adb_id": 101955,
+  "name": "Curren, Tom",
+  "given_name": "Tom Curren",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2438580.395833,
+    "year": 1964,
+    "month": 7,
+    "day": 3,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "d",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Newport Beach",
+    "country": "California",
+    "lat": 33.616667,
+    "lon": -117.933333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curren,_Tom",
+  "source_notes": "Sy Scholfield quotes from ''Surfing'', Volume 20, Issue 8 (Western Empire Publications, 1984), page 102:\\n\\n\"Thomas Roland Curren was born at 2:30 in the afternoon, the day before the Fourth of July, 1964. Roland is his grandfather's name. His father, big wave pioneer Pat Curren, met his future bride Jeanine in the surf at Windansea, ... Tommy's birthplace was Newport Beach.\"\\n",
+  "categories": [
+    "Vocation : Sports : Water sports",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 13.972887,
+    "lagna": 163.972887,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.361304,
+    "jd_ut": 2438580.395833,
+    "planets": {
+      "Sun": {
+        "longitude": 78.582557,
+        "sign_index": 2,
+        "degree_in_sign": 18.582557,
+        "is_retrograde": false,
+        "speed": 0.953403
+      },
+      "Moon": {
+        "longitude": 0.920308,
+        "sign_index": 0,
+        "degree_in_sign": 0.920308,
+        "is_retrograde": false,
+        "speed": 14.727183
+      },
+      "Mars": {
+        "longitude": 48.237768,
+        "sign_index": 1,
+        "degree_in_sign": 18.237768,
+        "is_retrograde": false,
+        "speed": 0.698671
+      },
+      "Mercury": {
+        "longitude": 86.393104,
+        "sign_index": 2,
+        "degree_in_sign": 26.393104,
+        "is_retrograde": false,
+        "speed": 2.070765
+      },
+      "Jupiter": {
+        "longitude": 25.153773,
+        "sign_index": 0,
+        "degree_in_sign": 25.153773,
+        "is_retrograde": false,
+        "speed": 0.185495
+      },
+      "Venus": {
+        "longitude": 58.149392,
+        "sign_index": 1,
+        "degree_in_sign": 28.149392,
+        "is_retrograde": true,
+        "speed": -0.301542
+      },
+      "Saturn": {
+        "longitude": 311.39846,
+        "sign_index": 10,
+        "degree_in_sign": 11.39846,
+        "is_retrograde": true,
+        "speed": -0.029965
+      },
+      "Rahu": {
+        "longitude": 68.20811,
+        "sign_index": 2,
+        "degree_in_sign": 8.20811,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 248.20811,
+        "sign_index": 8,
+        "degree_in_sign": 8.20811,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 47523,
+  "name": "Carlos II, King of Spain",
+  "given_name": "King of Spain Carlos II",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2328038.051898,
+    "year": 1661,
+    "month": 11,
+    "day": 6,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "l",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlos_II,_King_of_Spain",
+  "source_notes": "Arthur Blackwell quotes Wemyss FM No.81 from the Ashmole manuscript, 6 November 1661 NS, giving the time as 13:13:49 UT. Americana Encyclopedia has 11 Nov 1661 as OS. (Also called Charles II of Spain).\\nA.J. Pearce in \"Urania\" 1880 (page 123) gives 6 Nov 1661 with a birth time of 1:15  PM LMT,  Madrid.\\n\\nSy Scholfield quotes from ''La torre: revista general de la Universidad de Puerto Rico'', Issues 29-32 (Universidad de Puerto Rico, 1994):\\n\"El 8 de noviembre de 1661, el rey Felipe IV expresó su regocijo, e indudablemente su alivio, al anunciar que doña Mariana, su segunda esposa, le había proporcionado a él, y también al reino, un heredero: \"Domingo 6 de éste a la una del día fue nuestro Señor servido de favorecernos con el feliz parto de la Serenísima Reyna , mi muy cara y muy amada muger , y nacimiento del Príncipe Don Carlos Joseph mi hijo.\" \\nTranslation: \"On 8 November 1661, King Felipe IV expressed his joy, and undoubtedly his relief, by announcing that Doña Mariana, his second wife, had provided him, and also the kingdom, with an heir: \"Sunday the 6th of this [month] at one o'clock in the daytime, our Lord was pleased to favour us with the happy birth to the Most Serene Queen, my very dear and beloved wife, of Prince Don Carlos Joseph, my son.\"\\nSame time in another biography, \"Carlos II nació el domingo 6 de noviembre de 1661 , a la una del día\" [Carlos II was born on Sunday, 6 November 1661, at one o'clock during the daytime] (''Los libros de acuerdos municipales de Santander, siglo XVII'', Volume 1, 2003).\\n",
+  "categories": [
+    "Traits : Body : Constitution sensitive",
+    "Family : Childhood : Advantaged",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids none",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 5.644561,
+    "lagna": 275.644561,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.137116,
+    "jd_ut": 2328038.051898,
+    "planets": {
+      "Sun": {
+        "longitude": 205.511523,
+        "sign_index": 6,
+        "degree_in_sign": 25.511523,
+        "is_retrograde": false,
+        "speed": 1.006021
+      },
+      "Moon": {
+        "longitude": 25.737512,
+        "sign_index": 0,
+        "degree_in_sign": 25.737512,
+        "is_retrograde": false,
+        "speed": 19.173682
+      },
+      "Mars": {
+        "longitude": 97.226132,
+        "sign_index": 3,
+        "degree_in_sign": 7.226132,
+        "is_retrograde": false,
+        "speed": 0.270883
+      },
+      "Mercury": {
+        "longitude": 214.815367,
+        "sign_index": 7,
+        "degree_in_sign": 4.815367,
+        "is_retrograde": false,
+        "speed": 1.540994
+      },
+      "Jupiter": {
+        "longitude": 189.546013,
+        "sign_index": 6,
+        "degree_in_sign": 9.546013,
+        "is_retrograde": false,
+        "speed": 0.21407
+      },
+      "Venus": {
+        "longitude": 237.601483,
+        "sign_index": 7,
+        "degree_in_sign": 27.601483,
+        "is_retrograde": false,
+        "speed": 1.225984
+      },
+      "Saturn": {
+        "longitude": 215.704179,
+        "sign_index": 7,
+        "degree_in_sign": 5.704179,
+        "is_retrograde": false,
+        "speed": 0.117262
+      },
+      "Rahu": {
+        "longitude": 166.089098,
+        "sign_index": 5,
+        "degree_in_sign": 16.089098,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.089098,
+        "sign_index": 11,
+        "degree_in_sign": 16.089098,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

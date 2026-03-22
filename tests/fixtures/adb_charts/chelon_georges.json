@@ -1,0 +1,109 @@
+{
+  "adb_id": 63437,
+  "name": "Chelon, Georges",
+  "given_name": "Georges Chelon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430729.277778,
+    "year": 1943,
+    "month": 1,
+    "day": 4,
+    "calendar": "g",
+    "time": "19:40",
+    "time_type": "s",
+    "hour": 19.666667,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chelon,_Georges",
+  "source_notes": "Didier Geslain archive, 'chanteurs' pdf file, p. 48.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 26.945148,
+    "lagna": 86.945148,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.061101,
+    "jd_ut": 2430729.277778,
+    "planets": {
+      "Sun": {
+        "longitude": 260.48629,
+        "sign_index": 8,
+        "degree_in_sign": 20.48629,
+        "is_retrograde": false,
+        "speed": 1.01963
+      },
+      "Moon": {
+        "longitude": 235.099827,
+        "sign_index": 7,
+        "degree_in_sign": 25.099827,
+        "is_retrograde": false,
+        "speed": 17.854832
+      },
+      "Mars": {
+        "longitude": 231.110385,
+        "sign_index": 7,
+        "degree_in_sign": 21.110385,
+        "is_retrograde": false,
+        "speed": 0.712303
+      },
+      "Mercury": {
+        "longitude": 278.886704,
+        "sign_index": 9,
+        "degree_in_sign": 8.886704,
+        "is_retrograde": false,
+        "speed": 1.330018
+      },
+      "Jupiter": {
+        "longitude": 88.012472,
+        "sign_index": 2,
+        "degree_in_sign": 28.012472,
+        "is_retrograde": true,
+        "speed": -0.133028
+      },
+      "Venus": {
+        "longitude": 272.370596,
+        "sign_index": 9,
+        "degree_in_sign": 2.370596,
+        "is_retrograde": false,
+        "speed": 1.255579
+      },
+      "Saturn": {
+        "longitude": 43.488165,
+        "sign_index": 1,
+        "degree_in_sign": 13.488165,
+        "is_retrograde": true,
+        "speed": -0.056529
+      },
+      "Rahu": {
+        "longitude": 124.255001,
+        "sign_index": 4,
+        "degree_in_sign": 4.255001,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 304.255001,
+        "sign_index": 10,
+        "degree_in_sign": 4.255001,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "adb_id": 2122,
+  "name": "Chaney, William Henry",
+  "given_name": "William Henry Chaney",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2386179.674537,
+    "year": 1821,
+    "month": 1,
+    "day": 13,
+    "calendar": "g",
+    "time": "23:31",
+    "time_type": "l",
+    "hour": 23.516667,
+    "time_unknown": false,
+    "place": "Chesterville",
+    "country": "Maine",
+    "lat": 44.55,
+    "lon": -70.083333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaney,_William_Henry",
+  "source_notes": "\"The Astrology Magazine\" 1/1892 quotes Chaney's own chart.\\nEugene Moore submits chart copy from an astrology magazine, undated, \"Horoscopes of Notable Astrologers,\" same data.\\n",
+  "categories": [
+    "Traits : Personality : Articulate",
+    "Family : Parenting : Kids - Noted",
+    "Lifestyle : Financial : On the edge",
+    "Lifestyle : Home : Many moves",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Occult Fields : Astrologer",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 29.532638,
+    "lagna": 149.532638,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.358198,
+    "jd_ut": 2386179.674537,
+    "planets": {
+      "Sun": {
+        "longitude": 272.397668,
+        "sign_index": 9,
+        "degree_in_sign": 2.397668,
+        "is_retrograde": false,
+        "speed": 1.018177
+      },
+      "Moon": {
+        "longitude": 41.371255,
+        "sign_index": 1,
+        "degree_in_sign": 11.371255,
+        "is_retrograde": false,
+        "speed": 10.542408
+      },
+      "Mars": {
+        "longitude": 271.856899,
+        "sign_index": 9,
+        "degree_in_sign": 1.856899,
+        "is_retrograde": false,
+        "speed": 0.777773
+      },
+      "Mercury": {
+        "longitude": 255.77739,
+        "sign_index": 8,
+        "degree_in_sign": 15.77739,
+        "is_retrograde": false,
+        "speed": 1.476384
+      },
+      "Jupiter": {
+        "longitude": 328.815525,
+        "sign_index": 10,
+        "degree_in_sign": 28.815525,
+        "is_retrograde": false,
+        "speed": 0.183699
+      },
+      "Venus": {
+        "longitude": 240.749038,
+        "sign_index": 8,
+        "degree_in_sign": 0.749038,
+        "is_retrograde": false,
+        "speed": 1.234379
+      },
+      "Saturn": {
+        "longitude": 346.518313,
+        "sign_index": 11,
+        "degree_in_sign": 16.518313,
+        "is_retrograde": false,
+        "speed": 0.061327
+      },
+      "Rahu": {
+        "longitude": 325.033142,
+        "sign_index": 10,
+        "degree_in_sign": 25.033142,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 145.033142,
+        "sign_index": 4,
+        "degree_in_sign": 25.033142,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

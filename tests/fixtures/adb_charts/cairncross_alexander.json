@@ -1,0 +1,112 @@
+{
+  "adb_id": 61809,
+  "name": "Cairncross, Alexander",
+  "given_name": "Alexander Cairncross",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419078.666667,
+    "year": 1911,
+    "month": 2,
+    "day": 11,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Lesmahagow",
+    "country": "Scotland",
+    "lat": 55.65,
+    "lon": -3.916667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cairncross,_Alexander",
+  "source_notes": "Paul Wright quotes birth record\\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Teacher",
+    "Vocation : Humanities+Social Sciences : Economics",
+    "Vocation : Politics : Government employee",
+    "Notable : Awards : Knighted"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 25.988554,
+    "lagna": 205.988554,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.61567,
+    "jd_ut": 2419078.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 298.708327,
+        "sign_index": 9,
+        "degree_in_sign": 28.708327,
+        "is_retrograde": false,
+        "speed": 1.01113
+      },
+      "Moon": {
+        "longitude": 88.25337,
+        "sign_index": 2,
+        "degree_in_sign": 28.25337,
+        "is_retrograde": false,
+        "speed": 14.272151
+      },
+      "Mars": {
+        "longitude": 254.806024,
+        "sign_index": 8,
+        "degree_in_sign": 14.806024,
+        "is_retrograde": false,
+        "speed": 0.724836
+      },
+      "Mercury": {
+        "longitude": 274.750526,
+        "sign_index": 9,
+        "degree_in_sign": 4.750526,
+        "is_retrograde": false,
+        "speed": 1.293493
+      },
+      "Jupiter": {
+        "longitude": 201.423114,
+        "sign_index": 6,
+        "degree_in_sign": 21.423114,
+        "is_retrograde": false,
+        "speed": 0.055941
+      },
+      "Venus": {
+        "longitude": 316.9565,
+        "sign_index": 10,
+        "degree_in_sign": 16.9565,
+        "is_retrograde": false,
+        "speed": 1.246768
+      },
+      "Saturn": {
+        "longitude": 8.521627,
+        "sign_index": 0,
+        "degree_in_sign": 8.521627,
+        "is_retrograde": false,
+        "speed": 0.069497
+      },
+      "Rahu": {
+        "longitude": 21.645142,
+        "sign_index": 0,
+        "degree_in_sign": 21.645142,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 201.645142,
+        "sign_index": 6,
+        "degree_in_sign": 21.645142,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

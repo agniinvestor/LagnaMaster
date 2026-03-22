@@ -1,0 +1,126 @@
+{
+  "adb_id": 65040,
+  "name": "Cena, John",
+  "given_name": "John Cena",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443257.08125,
+    "year": 1977,
+    "month": 4,
+    "day": 23,
+    "calendar": "g",
+    "time": "08:57",
+    "time_type": "s",
+    "hour": 8.95,
+    "time_unknown": false,
+    "place": "West Newbury",
+    "country": "Massachusetts",
+    "lat": 42.8,
+    "lon": -70.983333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cena,_John",
+  "source_notes": "R. Craft quotes birth certificate.\\n",
+  "categories": [
+    "Traits : Body : Body builder",
+    "Traits : Body : Constitution hardy",
+    "Traits : Body : Handedness",
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Number of Divorces",
+    "Family : Relationship : Number of Marriages",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertainment : Voice-Over",
+    "Vocation : Entertain/Music : Vocalist/ Rapper",
+    "Vocation : Sports : Wrestling",
+    "Vocation : Writers : Children's literature",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.702655,
+    "lagna": 54.702655,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.540139,
+    "jd_ut": 2443257.08125,
+    "planets": {
+      "Sun": {
+        "longitude": 9.750631,
+        "sign_index": 0,
+        "degree_in_sign": 9.750631,
+        "is_retrograde": false,
+        "speed": 0.974575
+      },
+      "Moon": {
+        "longitude": 66.385995,
+        "sign_index": 2,
+        "degree_in_sign": 6.385995,
+        "is_retrograde": false,
+        "speed": 12.696688
+      },
+      "Mars": {
+        "longitude": 333.307341,
+        "sign_index": 11,
+        "degree_in_sign": 3.307341,
+        "is_retrograde": false,
+        "speed": 0.774033
+      },
+      "Mercury": {
+        "longitude": 20.402687,
+        "sign_index": 0,
+        "degree_in_sign": 20.402687,
+        "is_retrograde": true,
+        "speed": -0.314526
+      },
+      "Jupiter": {
+        "longitude": 40.583215,
+        "sign_index": 1,
+        "degree_in_sign": 10.583215,
+        "is_retrograde": false,
+        "speed": 0.216834
+      },
+      "Venus": {
+        "longitude": 344.995739,
+        "sign_index": 11,
+        "degree_in_sign": 14.995739,
+        "is_retrograde": true,
+        "speed": -0.153315
+      },
+      "Saturn": {
+        "longitude": 106.547812,
+        "sign_index": 3,
+        "degree_in_sign": 16.547812,
+        "is_retrograde": false,
+        "speed": 0.022269
+      },
+      "Rahu": {
+        "longitude": 180.381006,
+        "sign_index": 6,
+        "degree_in_sign": 0.381006,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 0.381006,
+        "sign_index": 0,
+        "degree_in_sign": 0.381006,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

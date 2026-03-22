@@ -1,0 +1,110 @@
+{
+  "adb_id": 6480,
+  "name": "Coburn, James",
+  "given_name": "James Coburn",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2425490.59375,
+    "year": 1928,
+    "month": 8,
+    "day": 31,
+    "calendar": "g",
+    "time": "20:15",
+    "time_type": "s",
+    "hour": 20.25,
+    "time_unknown": false,
+    "place": "Laurel",
+    "country": "Nebraska",
+    "lat": 42.433333,
+    "lon": -97.083333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coburn,_James",
+  "source_notes": "Linda Clark and Lynne Palmer both quoted him for 8:30 PM.  Steinbrecher quotes a letter from his mom for 8:00 PM\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Diagnoses : Major Diseases : Arthritis",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 26.256659,
+    "lagna": 326.256659,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.860805,
+    "jd_ut": 2425490.59375,
+    "planets": {
+      "Sun": {
+        "longitude": 135.528019,
+        "sign_index": 4,
+        "degree_in_sign": 15.528019,
+        "is_retrograde": false,
+        "speed": 0.967553
+      },
+      "Moon": {
+        "longitude": 328.638741,
+        "sign_index": 10,
+        "degree_in_sign": 28.638741,
+        "is_retrograde": false,
+        "speed": 12.864397
+      },
+      "Mars": {
+        "longitude": 51.091354,
+        "sign_index": 1,
+        "degree_in_sign": 21.091354,
+        "is_retrograde": false,
+        "speed": 0.572066
+      },
+      "Mercury": {
+        "longitude": 149.639221,
+        "sign_index": 4,
+        "degree_in_sign": 29.639221,
+        "is_retrograde": false,
+        "speed": 1.682712
+      },
+      "Jupiter": {
+        "longitude": 17.560545,
+        "sign_index": 0,
+        "degree_in_sign": 17.560545,
+        "is_retrograde": true,
+        "speed": -0.005695
+      },
+      "Venus": {
+        "longitude": 152.37236,
+        "sign_index": 5,
+        "degree_in_sign": 2.37236,
+        "is_retrograde": false,
+        "speed": 1.233379
+      },
+      "Saturn": {
+        "longitude": 229.827126,
+        "sign_index": 7,
+        "degree_in_sign": 19.827126,
+        "is_retrograde": false,
+        "speed": 0.024354
+      },
+      "Rahu": {
+        "longitude": 41.863729,
+        "sign_index": 1,
+        "degree_in_sign": 11.863729,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 221.863729,
+        "sign_index": 7,
+        "degree_in_sign": 11.863729,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

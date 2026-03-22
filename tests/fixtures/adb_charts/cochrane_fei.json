@@ -1,0 +1,111 @@
+{
+  "adb_id": 100829,
+  "name": "Cochrane, Fei",
+  "given_name": "Fei Cochrane",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2437176.965278,
+    "year": 1960,
+    "month": 8,
+    "day": 30,
+    "calendar": "g",
+    "time": "19:10",
+    "time_type": "s",
+    "hour": 19.166667,
+    "time_unknown": false,
+    "place": "Bato",
+    "country": "Philippines",
+    "lat": 13.6,
+    "lon": 124.3
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cochrane,_Fei",
+  "source_notes": "She gives her birth information on https://www.astrosoftware.com/cpnew/about.html \\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Business : Top executive",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 13.926734,
+    "lagna": 313.926734,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.307639,
+    "jd_ut": 2437176.965278,
+    "planets": {
+      "Sun": {
+        "longitude": 133.758622,
+        "sign_index": 4,
+        "degree_in_sign": 13.758622,
+        "is_retrograde": false,
+        "speed": 0.966986
+      },
+      "Moon": {
+        "longitude": 232.200432,
+        "sign_index": 7,
+        "degree_in_sign": 22.200432,
+        "is_retrograde": false,
+        "speed": 8.43272
+      },
+      "Mars": {
+        "longitude": 54.576669,
+        "sign_index": 1,
+        "degree_in_sign": 24.576669,
+        "is_retrograde": false,
+        "speed": 0.594891
+      },
+      "Mercury": {
+        "longitude": 133.254808,
+        "sign_index": 4,
+        "degree_in_sign": 13.254808,
+        "is_retrograde": false,
+        "speed": 1.946983
+      },
+      "Jupiter": {
+        "longitude": 240.619388,
+        "sign_index": 8,
+        "degree_in_sign": 0.619388,
+        "is_retrograde": false,
+        "speed": 0.030546
+      },
+      "Venus": {
+        "longitude": 152.573723,
+        "sign_index": 5,
+        "degree_in_sign": 2.573723,
+        "is_retrograde": false,
+        "speed": 1.231143
+      },
+      "Saturn": {
+        "longitude": 258.732319,
+        "sign_index": 8,
+        "degree_in_sign": 18.732319,
+        "is_retrograde": true,
+        "speed": -0.026202
+      },
+      "Rahu": {
+        "longitude": 142.57877,
+        "sign_index": 4,
+        "degree_in_sign": 22.57877,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 322.57877,
+        "sign_index": 10,
+        "degree_in_sign": 22.57877,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

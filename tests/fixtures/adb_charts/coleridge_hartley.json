@@ -1,0 +1,112 @@
+{
+  "adb_id": 78768,
+  "name": "Coleridge, Hartley",
+  "given_name": "Hartley Coleridge",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2377297.612083,
+    "year": 1796,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "l",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Clevedon",
+    "country": "England",
+    "lat": 51.45,
+    "lon": -2.85
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coleridge,_Hartley",
+  "source_notes": "Sy Scholfield quotes from \"Hartley Coleridge: A Reassessment of His Life and Work\" by A. Keanie (Springer, 2008), p. 2: \"The following letter from STC [Samuel Taylor Coleridge] to his friend, the tanner and philanthropist, Thomas Poole (1765–1837), outlines some of the details of Hartley's birth, and reveals the typical first-time father's proud and shell-shocked reaction: 'On Tuesday Morning I was surprised by a Letter from Mr Maurice, our medical attendant, informing me that Mrs Coleridge was delivered on Monday, September 19th, 1796, halfpast two in the Morning, of a SON—& that both she and the Child were uncommonly well...'\"\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Biographer",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 10.208612,
+    "lagna": 100.208612,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.018792,
+    "jd_ut": 2377297.612083,
+    "planets": {
+      "Sun": {
+        "longitude": 155.814872,
+        "sign_index": 5,
+        "degree_in_sign": 5.814872,
+        "is_retrograde": false,
+        "speed": 0.978429
+      },
+      "Moon": {
+        "longitude": 359.824579,
+        "sign_index": 11,
+        "degree_in_sign": 29.824579,
+        "is_retrograde": false,
+        "speed": 10.455473
+      },
+      "Mars": {
+        "longitude": 256.363852,
+        "sign_index": 8,
+        "degree_in_sign": 16.363852,
+        "is_retrograde": false,
+        "speed": 0.561698
+      },
+      "Mercury": {
+        "longitude": 176.503804,
+        "sign_index": 5,
+        "degree_in_sign": 26.503804,
+        "is_retrograde": false,
+        "speed": 1.434782
+      },
+      "Jupiter": {
+        "longitude": 314.594102,
+        "sign_index": 10,
+        "degree_in_sign": 14.594102,
+        "is_retrograde": true,
+        "speed": -0.114196
+      },
+      "Venus": {
+        "longitude": 113.014089,
+        "sign_index": 3,
+        "degree_in_sign": 23.014089,
+        "is_retrograde": false,
+        "speed": 0.662393
+      },
+      "Saturn": {
+        "longitude": 66.507746,
+        "sign_index": 2,
+        "degree_in_sign": 6.507746,
+        "is_retrograde": false,
+        "speed": 0.037034
+      },
+      "Rahu": {
+        "longitude": 75.713126,
+        "sign_index": 2,
+        "degree_in_sign": 15.713126,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 255.713126,
+        "sign_index": 8,
+        "degree_in_sign": 15.713126,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

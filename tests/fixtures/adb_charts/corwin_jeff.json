@@ -1,0 +1,112 @@
+{
+  "adb_id": 48934,
+  "name": "Corwin, Jeff",
+  "given_name": "Jeff Corwin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439683.192361,
+    "year": 1967,
+    "month": 7,
+    "day": 11,
+    "calendar": "g",
+    "time": "12:37",
+    "time_type": "d",
+    "hour": 12.616667,
+    "time_unknown": false,
+    "place": "Quincy",
+    "country": "Massachusetts",
+    "lat": 42.25,
+    "lon": -71.0
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corwin,_Jeff",
+  "source_notes": "PT quotes birth certificate\\n",
+  "categories": [
+    "Lifestyle : Work : Hazardous work",
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Science : Biology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 26.591516,
+    "lagna": 146.591516,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.403473,
+    "jd_ut": 2439683.192361,
+    "planets": {
+      "Sun": {
+        "longitude": 85.284187,
+        "sign_index": 2,
+        "degree_in_sign": 25.284187,
+        "is_retrograde": false,
+        "speed": 0.953794
+      },
+      "Moon": {
+        "longitude": 137.00462,
+        "sign_index": 4,
+        "degree_in_sign": 17.00462,
+        "is_retrograde": false,
+        "speed": 11.501834
+      },
+      "Mars": {
+        "longitude": 182.858179,
+        "sign_index": 6,
+        "degree_in_sign": 2.858179,
+        "is_retrograde": false,
+        "speed": 0.429547
+      },
+      "Mercury": {
+        "longitude": 81.8507,
+        "sign_index": 2,
+        "degree_in_sign": 21.8507,
+        "is_retrograde": true,
+        "speed": -0.589111
+      },
+      "Jupiter": {
+        "longitude": 106.017968,
+        "sign_index": 3,
+        "degree_in_sign": 16.017968,
+        "is_retrograde": false,
+        "speed": 0.212604
+      },
+      "Venus": {
+        "longitude": 128.688503,
+        "sign_index": 4,
+        "degree_in_sign": 8.688503,
+        "is_retrograde": false,
+        "speed": 0.734527
+      },
+      "Saturn": {
+        "longitude": 348.906822,
+        "sign_index": 11,
+        "degree_in_sign": 18.906822,
+        "is_retrograde": false,
+        "speed": 0.022787
+      },
+      "Rahu": {
+        "longitude": 9.768667,
+        "sign_index": 0,
+        "degree_in_sign": 9.768667,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 189.768667,
+        "sign_index": 6,
+        "degree_in_sign": 9.768667,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

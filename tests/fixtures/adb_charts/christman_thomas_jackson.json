@@ -1,0 +1,109 @@
+{
+  "adb_id": 50784,
+  "name": "Christman, Thomas Jackson",
+  "given_name": "Thomas Jackson Christman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423119.927083,
+    "year": 1922,
+    "month": 3,
+    "day": 6,
+    "calendar": "g",
+    "time": "02:15",
+    "time_type": "s",
+    "hour": 2.25,
+    "time_unknown": false,
+    "place": "Seattle",
+    "country": "Washington",
+    "lat": 47.6,
+    "lon": -122.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christman,_Thomas_Jackson",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 2.674967,
+    "lagna": 212.674967,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.77017,
+    "jd_ut": 2423119.927083,
+    "planets": {
+      "Sun": {
+        "longitude": 322.299106,
+        "sign_index": 10,
+        "degree_in_sign": 22.299106,
+        "is_retrograde": false,
+        "speed": 1.000766
+      },
+      "Moon": {
+        "longitude": 47.06481,
+        "sign_index": 1,
+        "degree_in_sign": 17.06481,
+        "is_retrograde": false,
+        "speed": 15.246587
+      },
+      "Mars": {
+        "longitude": 224.881894,
+        "sign_index": 7,
+        "degree_in_sign": 14.881894,
+        "is_retrograde": false,
+        "speed": 0.461682
+      },
+      "Mercury": {
+        "longitude": 295.811335,
+        "sign_index": 9,
+        "degree_in_sign": 25.811335,
+        "is_retrograde": false,
+        "speed": 0.648013
+      },
+      "Jupiter": {
+        "longitude": 174.614892,
+        "sign_index": 5,
+        "degree_in_sign": 24.614892,
+        "is_retrograde": true,
+        "speed": -0.091858
+      },
+      "Venus": {
+        "longitude": 328.439187,
+        "sign_index": 10,
+        "degree_in_sign": 28.439187,
+        "is_retrograde": false,
+        "speed": 1.247711
+      },
+      "Saturn": {
+        "longitude": 162.941331,
+        "sign_index": 5,
+        "degree_in_sign": 12.941331,
+        "is_retrograde": true,
+        "speed": -0.070465
+      },
+      "Rahu": {
+        "longitude": 167.490295,
+        "sign_index": 5,
+        "degree_in_sign": 17.490295,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 347.490295,
+        "sign_index": 11,
+        "degree_in_sign": 17.490295,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 87337,
+  "name": "Cushman, David",
+  "given_name": "David Cushman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429583.057639,
+    "year": 1939,
+    "month": 11,
+    "day": 15,
+    "calendar": "g",
+    "time": "07:23",
+    "time_type": "s",
+    "hour": 7.383333,
+    "time_unknown": false,
+    "place": "Indianapolis",
+    "country": "Indiana",
+    "lat": 39.766667,
+    "lon": -86.15
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cushman,_David",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Science : Chemistry",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 16.149966,
+    "lagna": 196.149966,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.017275,
+    "jd_ut": 2429583.057639,
+    "planets": {
+      "Sun": {
+        "longitude": 209.261369,
+        "sign_index": 6,
+        "degree_in_sign": 29.261369,
+        "is_retrograde": false,
+        "speed": 1.007716
+      },
+      "Moon": {
+        "longitude": 261.752496,
+        "sign_index": 8,
+        "degree_in_sign": 21.752496,
+        "is_retrograde": false,
+        "speed": 14.358011
+      },
+      "Mars": {
+        "longitude": 304.400892,
+        "sign_index": 10,
+        "degree_in_sign": 4.400892,
+        "is_retrograde": false,
+        "speed": 0.62371
+      },
+      "Mercury": {
+        "longitude": 230.336959,
+        "sign_index": 7,
+        "degree_in_sign": 20.336959,
+        "is_retrograde": false,
+        "speed": 0.399648
+      },
+      "Jupiter": {
+        "longitude": 336.002567,
+        "sign_index": 11,
+        "degree_in_sign": 6.002567,
+        "is_retrograde": true,
+        "speed": -0.032276
+      },
+      "Venus": {
+        "longitude": 227.469846,
+        "sign_index": 7,
+        "degree_in_sign": 17.469846,
+        "is_retrograde": false,
+        "speed": 1.247837
+      },
+      "Saturn": {
+        "longitude": 2.941124,
+        "sign_index": 0,
+        "degree_in_sign": 2.941124,
+        "is_retrograde": true,
+        "speed": -0.066893
+      },
+      "Rahu": {
+        "longitude": 184.995577,
+        "sign_index": 6,
+        "degree_in_sign": 4.995577,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 4.995577,
+        "sign_index": 0,
+        "degree_in_sign": 4.995577,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

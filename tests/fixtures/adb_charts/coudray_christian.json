@@ -1,0 +1,110 @@
+{
+  "adb_id": 65393,
+  "name": "Coudray, Christian",
+  "given_name": "Christian Coudray",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418283.160174,
+    "year": 1908,
+    "month": 12,
+    "day": 7,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Rouen",
+    "country": "France",
+    "lat": 49.433333,
+    "lon": 1.083333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coudray,_Christian",
+  "source_notes": "Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 81.\\n",
+  "categories": [
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Killed"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 29.993297,
+    "lagna": 29.993297,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.585258,
+    "jd_ut": 2418283.160174,
+    "planets": {
+      "Sun": {
+        "longitude": 232.593957,
+        "sign_index": 7,
+        "degree_in_sign": 22.593957,
+        "is_retrograde": false,
+        "speed": 1.015499
+      },
+      "Moon": {
+        "longitude": 50.049558,
+        "sign_index": 1,
+        "degree_in_sign": 20.049558,
+        "is_retrograde": false,
+        "speed": 15.165307
+      },
+      "Mars": {
+        "longitude": 195.313243,
+        "sign_index": 6,
+        "degree_in_sign": 15.313243,
+        "is_retrograde": false,
+        "speed": 0.655647
+      },
+      "Mercury": {
+        "longitude": 223.490256,
+        "sign_index": 7,
+        "degree_in_sign": 13.490256,
+        "is_retrograde": false,
+        "speed": 1.553523
+      },
+      "Jupiter": {
+        "longitude": 141.109189,
+        "sign_index": 4,
+        "degree_in_sign": 21.109189,
+        "is_retrograde": false,
+        "speed": 0.071003
+      },
+      "Venus": {
+        "longitude": 198.695986,
+        "sign_index": 6,
+        "degree_in_sign": 18.695986,
+        "is_retrograde": false,
+        "speed": 1.22809
+      },
+      "Saturn": {
+        "longitude": 340.789721,
+        "sign_index": 11,
+        "degree_in_sign": 10.789721,
+        "is_retrograde": false,
+        "speed": 0.001353
+      },
+      "Rahu": {
+        "longitude": 63.800702,
+        "sign_index": 2,
+        "degree_in_sign": 3.800702,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 243.800702,
+        "sign_index": 8,
+        "degree_in_sign": 3.800702,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

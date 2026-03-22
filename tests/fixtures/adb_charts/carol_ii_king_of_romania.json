@@ -1,0 +1,111 @@
+{
+  "adb_id": 38124,
+  "name": "Carol II, King of Romania",
+  "given_name": "King of Romania Carol II",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2412751.500417,
+    "year": 1893,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "01:45",
+    "time_type": "s",
+    "hour": 1.75,
+    "time_unknown": false,
+    "place": "Sinaia",
+    "country": "Romania",
+    "lat": 45.35,
+    "lon": 25.55
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carol_II,_King_of_Romania",
+  "source_notes": "Sy Scholfield quotes from \"Court Circular,\" The Times (London, England), 16 Oct. 1893, p. 6: \"A telegram from Sinaia announces that the Princess of Roumania (Princess Marie) gave birth to a son yesterday morning. The following bulletin has been issued:--'Her Royal Highness the Princess of Roumania was safely delivered of a son at a quarter to 2 this morning...'\"\\n\\nPreviously this entry had 12:58am quoting Robson in British Journal of Astrology Mar/1931, from a Romanian correspondent who checked the local papers at the time of Carol's birth.\"  (1:00 AM Bucharest time; rectified by Robson to 1:06 AM LMT.)  October 3, 1893 OS.  Same in SS No.172, NS date, 1:00 AM.\\n",
+  "categories": [
+    "Traits : Personality : Creative",
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Stress - Extramarital affairs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 14.66952,
+    "lagna": 104.66952,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.373793,
+    "jd_ut": 2412751.500417,
+    "planets": {
+      "Sun": {
+        "longitude": 179.493421,
+        "sign_index": 5,
+        "degree_in_sign": 29.493421,
+        "is_retrograde": false,
+        "speed": 0.992404
+      },
+      "Moon": {
+        "longitude": 236.784179,
+        "sign_index": 7,
+        "degree_in_sign": 26.784179,
+        "is_retrograde": false,
+        "speed": 15.098836
+      },
+      "Mars": {
+        "longitude": 165.787279,
+        "sign_index": 5,
+        "degree_in_sign": 15.787279,
+        "is_retrograde": false,
+        "speed": 0.649502
+      },
+      "Mercury": {
+        "longitude": 195.720935,
+        "sign_index": 6,
+        "degree_in_sign": 15.720935,
+        "is_retrograde": false,
+        "speed": 1.486222
+      },
+      "Jupiter": {
+        "longitude": 38.044369,
+        "sign_index": 1,
+        "degree_in_sign": 8.044369,
+        "is_retrograde": true,
+        "speed": -0.081221
+      },
+      "Venus": {
+        "longitude": 220.891155,
+        "sign_index": 7,
+        "degree_in_sign": 10.891155,
+        "is_retrograde": false,
+        "speed": 1.173173
+      },
+      "Saturn": {
+        "longitude": 174.177779,
+        "sign_index": 5,
+        "degree_in_sign": 24.177779,
+        "is_retrograde": false,
+        "speed": 0.122166
+      },
+      "Rahu": {
+        "longitude": 356.935012,
+        "sign_index": 11,
+        "degree_in_sign": 26.935012,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 176.935012,
+        "sign_index": 5,
+        "degree_in_sign": 26.935012,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

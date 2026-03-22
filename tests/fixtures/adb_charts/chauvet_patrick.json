@@ -1,0 +1,108 @@
+{
+  "adb_id": 89033,
+  "name": "Chauvet, Patrick",
+  "given_name": "Patrick Chauvet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433930.666667,
+    "year": 1951,
+    "month": 10,
+    "day": 11,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 17",
+    "country": "France",
+    "lat": 48.884444,
+    "lon": 2.321944
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chauvet,_Patrick",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Religion : Cult leader"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 7.270787,
+    "lagna": 127.270787,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.183509,
+    "jd_ut": 2433930.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 173.84852,
+        "sign_index": 5,
+        "degree_in_sign": 23.84852,
+        "is_retrograde": false,
+        "speed": 0.988594
+      },
+      "Moon": {
+        "longitude": 304.419868,
+        "sign_index": 10,
+        "degree_in_sign": 4.419868,
+        "is_retrograde": false,
+        "speed": 15.453593
+      },
+      "Mars": {
+        "longitude": 130.592957,
+        "sign_index": 4,
+        "degree_in_sign": 10.592957,
+        "is_retrograde": false,
+        "speed": 0.611852
+      },
+      "Mercury": {
+        "longitude": 172.044423,
+        "sign_index": 5,
+        "degree_in_sign": 22.044423,
+        "is_retrograde": false,
+        "speed": 1.738743
+      },
+      "Jupiter": {
+        "longitude": 344.894278,
+        "sign_index": 11,
+        "degree_in_sign": 14.894278,
+        "is_retrograde": true,
+        "speed": -0.130995
+      },
+      "Venus": {
+        "longitude": 133.473457,
+        "sign_index": 4,
+        "degree_in_sign": 13.473457,
+        "is_retrograde": false,
+        "speed": 0.523428
+      },
+      "Saturn": {
+        "longitude": 163.734085,
+        "sign_index": 5,
+        "degree_in_sign": 13.734085,
+        "is_retrograde": false,
+        "speed": 0.122297
+      },
+      "Rahu": {
+        "longitude": 314.606801,
+        "sign_index": 10,
+        "degree_in_sign": 14.606801,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 134.606801,
+        "sign_index": 4,
+        "degree_in_sign": 14.606801,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

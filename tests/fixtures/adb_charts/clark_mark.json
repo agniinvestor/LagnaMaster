@@ -1,0 +1,112 @@
+{
+  "adb_id": 38646,
+  "name": "Clark, Mark",
+  "given_name": "Mark Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439989.072222,
+    "year": 1968,
+    "month": 5,
+    "day": 12,
+    "calendar": "g",
+    "time": "08:44",
+    "time_type": "d",
+    "hour": 8.733333,
+    "time_unknown": false,
+    "place": "Bath",
+    "country": "Illinois",
+    "lat": 40.2,
+    "lon": -90.133333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Mark",
+  "source_notes": "Sant Khalsa quotes B.C. obtained by phone\\n",
+  "categories": [
+    "Traits : Body : Handedness",
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Sports : Baseball"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 20.113088,
+    "lagna": 50.113088,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.41517,
+    "jd_ut": 2439989.072222,
+    "planets": {
+      "Sun": {
+        "longitude": 28.464574,
+        "sign_index": 0,
+        "degree_in_sign": 28.464574,
+        "is_retrograde": false,
+        "speed": 0.964698
+      },
+      "Moon": {
+        "longitude": 208.312463,
+        "sign_index": 6,
+        "degree_in_sign": 28.312463,
+        "is_retrograde": false,
+        "speed": 16.909252
+      },
+      "Mars": {
+        "longitude": 39.381693,
+        "sign_index": 1,
+        "degree_in_sign": 9.381693,
+        "is_retrograde": false,
+        "speed": 0.700849
+      },
+      "Mercury": {
+        "longitude": 46.79847,
+        "sign_index": 1,
+        "degree_in_sign": 16.79847,
+        "is_retrograde": false,
+        "speed": 1.671994
+      },
+      "Jupiter": {
+        "longitude": 123.059816,
+        "sign_index": 4,
+        "degree_in_sign": 3.059816,
+        "is_retrograde": false,
+        "speed": 0.061217
+      },
+      "Venus": {
+        "longitude": 17.993833,
+        "sign_index": 0,
+        "degree_in_sign": 17.993833,
+        "is_retrograde": false,
+        "speed": 1.228347
+      },
+      "Saturn": {
+        "longitude": 356.514753,
+        "sign_index": 11,
+        "degree_in_sign": 26.514753,
+        "is_retrograde": false,
+        "speed": 0.113449
+      },
+      "Rahu": {
+        "longitude": 353.559468,
+        "sign_index": 11,
+        "degree_in_sign": 23.559468,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 173.559468,
+        "sign_index": 5,
+        "degree_in_sign": 23.559468,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

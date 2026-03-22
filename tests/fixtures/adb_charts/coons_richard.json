@@ -1,0 +1,114 @@
+{
+  "adb_id": 92052,
+  "name": "Coons, Richard",
+  "given_name": "Richard Coons",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425958.875,
+    "year": 1929,
+    "month": 12,
+    "day": 13,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coons,_Richard",
+  "source_notes": "Birth certificate in hand from Sy Scholfield. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Other Art",
+    "Vocation : Business : Business owner",
+    "Vocation : Business/Marketing : Sales",
+    "Vocation : Writers : Biographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.249117,
+    "lagna": 141.249117,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.878709,
+    "jd_ut": 2425958.875,
+    "planets": {
+      "Sun": {
+        "longitude": 238.013381,
+        "sign_index": 7,
+        "degree_in_sign": 28.013381,
+        "is_retrograde": false,
+        "speed": 1.016767
+      },
+      "Moon": {
+        "longitude": 15.008095,
+        "sign_index": 0,
+        "degree_in_sign": 15.008095,
+        "is_retrograde": false,
+        "speed": 11.435493
+      },
+      "Mars": {
+        "longitude": 235.166825,
+        "sign_index": 7,
+        "degree_in_sign": 25.166825,
+        "is_retrograde": false,
+        "speed": 0.737425
+      },
+      "Mercury": {
+        "longitude": 246.752052,
+        "sign_index": 8,
+        "degree_in_sign": 6.752052,
+        "is_retrograde": false,
+        "speed": 1.570491
+      },
+      "Jupiter": {
+        "longitude": 47.178792,
+        "sign_index": 1,
+        "degree_in_sign": 17.178792,
+        "is_retrograde": true,
+        "speed": -0.131469
+      },
+      "Venus": {
+        "longitude": 224.764838,
+        "sign_index": 7,
+        "degree_in_sign": 14.764838,
+        "is_retrograde": false,
+        "speed": 1.25667
+      },
+      "Saturn": {
+        "longitude": 248.639912,
+        "sign_index": 8,
+        "degree_in_sign": 8.639912,
+        "is_retrograde": false,
+        "speed": 0.116841
+      },
+      "Rahu": {
+        "longitude": 17.048532,
+        "sign_index": 0,
+        "degree_in_sign": 17.048532,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 197.048532,
+        "sign_index": 6,
+        "degree_in_sign": 17.048532,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

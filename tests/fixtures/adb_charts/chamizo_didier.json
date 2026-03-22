@@ -1,0 +1,108 @@
+{
+  "adb_id": 64972,
+  "name": "Chamizo, Didier",
+  "given_name": "Didier Chamizo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433935.4375,
+    "year": 1951,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "s",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Cahors",
+    "country": "France",
+    "lat": 44.45,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamizo,_Didier",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 111.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 6.996865,
+    "lagna": 66.996865,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.183691,
+    "jd_ut": 2433935.4375,
+    "planets": {
+      "Sun": {
+        "longitude": 178.570948,
+        "sign_index": 5,
+        "degree_in_sign": 28.570948,
+        "is_retrograde": false,
+        "speed": 0.991176
+      },
+      "Moon": {
+        "longitude": 9.57449,
+        "sign_index": 0,
+        "degree_in_sign": 9.57449,
+        "is_retrograde": false,
+        "speed": 9.684505
+      },
+      "Mars": {
+        "longitude": 133.504292,
+        "sign_index": 4,
+        "degree_in_sign": 13.504292,
+        "is_retrograde": false,
+        "speed": 0.60863
+      },
+      "Mercury": {
+        "longitude": 180.209825,
+        "sign_index": 6,
+        "degree_in_sign": 0.209825,
+        "is_retrograde": false,
+        "speed": 1.684167
+      },
+      "Jupiter": {
+        "longitude": 344.280778,
+        "sign_index": 11,
+        "degree_in_sign": 14.280778,
+        "is_retrograde": true,
+        "speed": -0.125841
+      },
+      "Venus": {
+        "longitude": 136.238626,
+        "sign_index": 4,
+        "degree_in_sign": 16.238626,
+        "is_retrograde": false,
+        "speed": 0.632697
+      },
+      "Saturn": {
+        "longitude": 164.314731,
+        "sign_index": 5,
+        "degree_in_sign": 14.314731,
+        "is_retrograde": false,
+        "speed": 0.121054
+      },
+      "Rahu": {
+        "longitude": 314.353985,
+        "sign_index": 10,
+        "degree_in_sign": 14.353985,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 134.353985,
+        "sign_index": 4,
+        "degree_in_sign": 14.353985,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

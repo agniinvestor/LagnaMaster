@@ -1,0 +1,108 @@
+{
+  "adb_id": 60420,
+  "name": "Couve de Murville, Maurice",
+  "given_name": "Maurice Couve de Murville",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417600.035174,
+    "year": 1907,
+    "month": 1,
+    "day": 24,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Reims",
+    "country": "France",
+    "lat": 49.25,
+    "lon": 4.033333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "gem",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couve_de_Murville,_Maurice",
+  "source_notes": "Taeger quotes Lescaut quoting Barbault, B.R.\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 4.777954,
+    "lagna": 34.777954,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.559142,
+    "jd_ut": 2417600.035174,
+    "planets": {
+      "Sun": {
+        "longitude": 280.849283,
+        "sign_index": 9,
+        "degree_in_sign": 10.849283,
+        "is_retrograde": false,
+        "speed": 1.016679
+      },
+      "Moon": {
+        "longitude": 46.171303,
+        "sign_index": 1,
+        "degree_in_sign": 16.171303,
+        "is_retrograde": false,
+        "speed": 13.166009
+      },
+      "Mars": {
+        "longitude": 210.46213,
+        "sign_index": 7,
+        "degree_in_sign": 0.46213,
+        "is_retrograde": false,
+        "speed": 0.593452
+      },
+      "Mercury": {
+        "longitude": 274.691372,
+        "sign_index": 9,
+        "degree_in_sign": 4.691372,
+        "is_retrograde": false,
+        "speed": 1.636574
+      },
+      "Jupiter": {
+        "longitude": 70.134699,
+        "sign_index": 2,
+        "degree_in_sign": 10.134699,
+        "is_retrograde": true,
+        "speed": -0.099833
+      },
+      "Venus": {
+        "longitude": 235.147204,
+        "sign_index": 7,
+        "degree_in_sign": 25.147204,
+        "is_retrograde": false,
+        "speed": 0.868559
+      },
+      "Saturn": {
+        "longitude": 319.982785,
+        "sign_index": 10,
+        "degree_in_sign": 19.982785,
+        "is_retrograde": false,
+        "speed": 0.104474
+      },
+      "Rahu": {
+        "longitude": 100.000932,
+        "sign_index": 3,
+        "degree_in_sign": 10.000932,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 280.000932,
+        "sign_index": 9,
+        "degree_in_sign": 10.000932,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

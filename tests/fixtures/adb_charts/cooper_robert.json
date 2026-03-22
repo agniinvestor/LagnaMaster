@@ -1,0 +1,113 @@
+{
+  "adb_id": 36585,
+  "name": "Cooper, Robert",
+  "given_name": "Robert Cooper",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2420921.145833,
+    "year": 1916,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "s",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooper,_Robert",
+  "source_notes": "LMR quotes him in the '70s\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Vocation : Business : Middle Management",
+    "Vocation : Business : Top executive",
+    "Vocation : Occult Fields : Astrologer",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 18.841309,
+    "lagna": 18.841309,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.686108,
+    "jd_ut": 2420921.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 315.032374,
+        "sign_index": 10,
+        "degree_in_sign": 15.032374,
+        "is_retrograde": false,
+        "speed": 1.004652
+      },
+      "Moon": {
+        "longitude": 240.984992,
+        "sign_index": 8,
+        "degree_in_sign": 0.984992,
+        "is_retrograde": false,
+        "speed": 11.153925
+      },
+      "Mars": {
+        "longitude": 111.017281,
+        "sign_index": 3,
+        "degree_in_sign": 21.017281,
+        "is_retrograde": true,
+        "speed": -0.291081
+      },
+      "Mercury": {
+        "longitude": 288.189235,
+        "sign_index": 9,
+        "degree_in_sign": 18.189235,
+        "is_retrograde": false,
+        "speed": 0.837923
+      },
+      "Jupiter": {
+        "longitude": 340.745125,
+        "sign_index": 11,
+        "degree_in_sign": 10.745125,
+        "is_retrograde": false,
+        "speed": 0.23034
+      },
+      "Venus": {
+        "longitude": 354.073567,
+        "sign_index": 11,
+        "degree_in_sign": 24.073567,
+        "is_retrograde": false,
+        "speed": 1.185749
+      },
+      "Saturn": {
+        "longitude": 77.010545,
+        "sign_index": 2,
+        "degree_in_sign": 17.010545,
+        "is_retrograde": true,
+        "speed": -0.0241
+      },
+      "Rahu": {
+        "longitude": 284.008309,
+        "sign_index": 9,
+        "degree_in_sign": 14.008309,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 104.008309,
+        "sign_index": 3,
+        "degree_in_sign": 14.008309,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 84020,
+  "name": "Christian, George",
+  "given_name": "George Christian",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424881.916667,
+    "year": 1927,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Austin",
+    "country": "Texas",
+    "lat": 30.266667,
+    "lon": -97.75
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian,_George",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Vocation : Business : Clerical/ Secretarial",
+    "Vocation : Business : Consultant",
+    "Vocation : Business/Marketing : Public relations"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 7.690378,
+    "lagna": 187.690378,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.837534,
+    "jd_ut": 2424881.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 257.164403,
+        "sign_index": 8,
+        "degree_in_sign": 17.164403,
+        "is_retrograde": false,
+        "speed": 1.019608
+      },
+      "Moon": {
+        "longitude": 227.37677,
+        "sign_index": 7,
+        "degree_in_sign": 17.37677,
+        "is_retrograde": false,
+        "speed": 13.971446
+      },
+      "Mars": {
+        "longitude": 15.46345,
+        "sign_index": 0,
+        "degree_in_sign": 15.46345,
+        "is_retrograde": false,
+        "speed": 0.275324
+      },
+      "Mercury": {
+        "longitude": 241.690347,
+        "sign_index": 8,
+        "degree_in_sign": 1.690347,
+        "is_retrograde": false,
+        "speed": 1.479412
+      },
+      "Jupiter": {
+        "longitude": 303.54333,
+        "sign_index": 10,
+        "degree_in_sign": 3.54333,
+        "is_retrograde": false,
+        "speed": 0.201342
+      },
+      "Venus": {
+        "longitude": 267.024884,
+        "sign_index": 8,
+        "degree_in_sign": 27.024884,
+        "is_retrograde": false,
+        "speed": 1.256436
+      },
+      "Saturn": {
+        "longitude": 220.470183,
+        "sign_index": 7,
+        "degree_in_sign": 10.470183,
+        "is_retrograde": false,
+        "speed": 0.103298
+      },
+      "Rahu": {
+        "longitude": 74.118794,
+        "sign_index": 2,
+        "degree_in_sign": 14.118794,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 254.118794,
+        "sign_index": 8,
+        "degree_in_sign": 14.118794,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

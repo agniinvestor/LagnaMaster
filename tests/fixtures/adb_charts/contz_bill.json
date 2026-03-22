@@ -1,0 +1,112 @@
+{
+  "adb_id": 88002,
+  "name": "Contz, Bill",
+  "given_name": "Bill Contz",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2437431.720139,
+    "year": 1961,
+    "month": 5,
+    "day": 12,
+    "calendar": "g",
+    "time": "01:17",
+    "time_type": "d",
+    "hour": 1.283333,
+    "time_unknown": false,
+    "place": "North Charleroi",
+    "country": "Pennsylvania",
+    "lat": 40.15,
+    "lon": -79.9
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Contz,_Bill",
+  "source_notes": "Sy Scholfield provided birth notice, \"Charleroi-Monessen Hospital BIRTHS,\" The Daily Republican (Monongahela, Pennsylvania), 15 May 1961, p. 2.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Football",
+    "Vocation : Writers : Biographer",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 12.018174,
+    "lagna": 252.018174,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.31738,
+    "jd_ut": 2437431.720139,
+    "planets": {
+      "Sun": {
+        "longitude": 27.926872,
+        "sign_index": 0,
+        "degree_in_sign": 27.926872,
+        "is_retrograde": false,
+        "speed": 0.96567
+      },
+      "Moon": {
+        "longitude": 357.053619,
+        "sign_index": 11,
+        "degree_in_sign": 27.053619,
+        "is_retrograde": false,
+        "speed": 17.362254
+      },
+      "Mars": {
+        "longitude": 99.901281,
+        "sign_index": 3,
+        "degree_in_sign": 9.901281,
+        "is_retrograde": false,
+        "speed": 0.52694
+      },
+      "Mercury": {
+        "longitude": 39.818464,
+        "sign_index": 1,
+        "degree_in_sign": 9.818464,
+        "is_retrograde": false,
+        "speed": 2.02217
+      },
+      "Jupiter": {
+        "longitude": 283.549172,
+        "sign_index": 9,
+        "degree_in_sign": 13.549172,
+        "is_retrograde": false,
+        "speed": 0.042542
+      },
+      "Venus": {
+        "longitude": 351.275932,
+        "sign_index": 11,
+        "degree_in_sign": 21.275932,
+        "is_retrograde": false,
+        "speed": 0.352243
+      },
+      "Saturn": {
+        "longitude": 276.535094,
+        "sign_index": 9,
+        "degree_in_sign": 6.535094,
+        "is_retrograde": true,
+        "speed": -0.004165
+      },
+      "Rahu": {
+        "longitude": 129.078788,
+        "sign_index": 4,
+        "degree_in_sign": 9.078788,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.078788,
+        "sign_index": 10,
+        "degree_in_sign": 9.078788,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

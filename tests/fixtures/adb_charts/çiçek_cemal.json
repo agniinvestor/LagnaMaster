@@ -1,0 +1,110 @@
+{
+  "adb_id": 99165,
+  "name": "Çiçek, Cemal",
+  "given_name": "Cemal Çiçek",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438475.229167,
+    "year": 1964,
+    "month": 3,
+    "day": 20,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "s",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "Gaziantep",
+    "country": "Turkey",
+    "lat": 37.083333,
+    "lon": 37.366667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Çiçek,_Cemal",
+  "source_notes": "Email from Andreas Tankel, which shows birth record without time, and quotes Cicek's mother \"during evening prayer between 19h and 20h\". Ascendant remains in Libra during this time span, Sun remains in Aries. However he rectifies his chart to 17:49 which gives him Virgo rising and Aries Sun.\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Law : Attorney",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 6.313929,
+    "lagna": 156.313929,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.357282,
+    "jd_ut": 2438475.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 336.785497,
+        "sign_index": 11,
+        "degree_in_sign": 6.785497,
+        "is_retrograde": false,
+        "speed": 0.993067
+      },
+      "Moon": {
+        "longitude": 64.674597,
+        "sign_index": 2,
+        "degree_in_sign": 4.674597,
+        "is_retrograde": false,
+        "speed": 9.887705
+      },
+      "Mars": {
+        "longitude": 329.816435,
+        "sign_index": 10,
+        "degree_in_sign": 29.816435,
+        "is_retrograde": false,
+        "speed": 0.783112
+      },
+      "Mercury": {
+        "longitude": 344.118905,
+        "sign_index": 11,
+        "degree_in_sign": 14.118905,
+        "is_retrograde": false,
+        "speed": 2.002606
+      },
+      "Jupiter": {
+        "longitude": 1.33409,
+        "sign_index": 0,
+        "degree_in_sign": 1.33409,
+        "is_retrograde": false,
+        "speed": 0.229981
+      },
+      "Venus": {
+        "longitude": 21.399524,
+        "sign_index": 0,
+        "degree_in_sign": 21.399524,
+        "is_retrograde": false,
+        "speed": 1.093252
+      },
+      "Saturn": {
+        "longitude": 306.272597,
+        "sign_index": 10,
+        "degree_in_sign": 6.272597,
+        "is_retrograde": false,
+        "speed": 0.109761
+      },
+      "Rahu": {
+        "longitude": 73.781107,
+        "sign_index": 2,
+        "degree_in_sign": 13.781107,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 253.781107,
+        "sign_index": 8,
+        "degree_in_sign": 13.781107,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

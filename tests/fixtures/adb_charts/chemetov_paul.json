@@ -1,0 +1,110 @@
+{
+  "adb_id": 55713,
+  "name": "Chemetov, Paul",
+  "given_name": "Paul Chemetov",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425496.34375,
+    "year": 1928,
+    "month": 9,
+    "day": 6,
+    "calendar": "g",
+    "time": "21:15",
+    "time_type": "d",
+    "hour": 21.25,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chemetov,_Paul",
+  "source_notes": "Collection Didier Geslain (acte 1352)\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Building Trades : Architect/ Planner",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 27.349514,
+    "lagna": 357.349514,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.861025,
+    "jd_ut": 2425496.34375,
+    "planets": {
+      "Sun": {
+        "longitude": 141.100106,
+        "sign_index": 4,
+        "degree_in_sign": 21.100106,
+        "is_retrograde": false,
+        "speed": 0.970663
+      },
+      "Moon": {
+        "longitude": 50.132703,
+        "sign_index": 1,
+        "degree_in_sign": 20.132703,
+        "is_retrograde": false,
+        "speed": 17.273535
+      },
+      "Mars": {
+        "longitude": 54.319999,
+        "sign_index": 1,
+        "degree_in_sign": 24.319999,
+        "is_retrograde": false,
+        "speed": 0.550496
+      },
+      "Mercury": {
+        "longitude": 158.979933,
+        "sign_index": 5,
+        "degree_in_sign": 8.979933,
+        "is_retrograde": false,
+        "speed": 1.567411
+      },
+      "Jupiter": {
+        "longitude": 17.472621,
+        "sign_index": 0,
+        "degree_in_sign": 17.472621,
+        "is_retrograde": true,
+        "speed": -0.024902
+      },
+      "Venus": {
+        "longitude": 159.463776,
+        "sign_index": 5,
+        "degree_in_sign": 9.463776,
+        "is_retrograde": false,
+        "speed": 1.233234
+      },
+      "Saturn": {
+        "longitude": 229.993192,
+        "sign_index": 7,
+        "degree_in_sign": 19.993192,
+        "is_retrograde": false,
+        "speed": 0.033383
+      },
+      "Rahu": {
+        "longitude": 41.559024,
+        "sign_index": 1,
+        "degree_in_sign": 11.559024,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 221.559024,
+        "sign_index": 7,
+        "degree_in_sign": 11.559024,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

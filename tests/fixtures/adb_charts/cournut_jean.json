@@ -1,0 +1,108 @@
+{
+  "adb_id": 68608,
+  "name": "Cournut, Jean",
+  "given_name": "Jean Cournut",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425946.590278,
+    "year": 1929,
+    "month": 12,
+    "day": 1,
+    "calendar": "g",
+    "time": "02:10",
+    "time_type": "s",
+    "hour": 2.166667,
+    "time_unknown": false,
+    "place": "Béziers",
+    "country": "France",
+    "lat": 43.35,
+    "lon": 3.25
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cournut,_Jean",
+  "source_notes": "Didier Geslain archive, 'psychologues' pdf file, p. 21.\\n",
+  "categories": [
+    "Vocation : Healing Fields : Psychiatrist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.994864,
+    "lagna": 145.994864,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.878239,
+    "jd_ut": 2425946.590278,
+    "planets": {
+      "Sun": {
+        "longitude": 225.536454,
+        "sign_index": 7,
+        "degree_in_sign": 15.536454,
+        "is_retrograde": false,
+        "speed": 1.014147
+      },
+      "Moon": {
+        "longitude": 224.78512,
+        "sign_index": 7,
+        "degree_in_sign": 14.78512,
+        "is_retrograde": false,
+        "speed": 15.402798
+      },
+      "Mars": {
+        "longitude": 226.168721,
+        "sign_index": 7,
+        "degree_in_sign": 16.168721,
+        "is_retrograde": false,
+        "speed": 0.727397
+      },
+      "Mercury": {
+        "longitude": 227.490717,
+        "sign_index": 7,
+        "degree_in_sign": 17.490717,
+        "is_retrograde": false,
+        "speed": 1.568766
+      },
+      "Jupiter": {
+        "longitude": 48.839846,
+        "sign_index": 1,
+        "degree_in_sign": 18.839846,
+        "is_retrograde": true,
+        "speed": -0.136264
+      },
+      "Venus": {
+        "longitude": 209.334929,
+        "sign_index": 6,
+        "degree_in_sign": 29.334929,
+        "is_retrograde": false,
+        "speed": 1.255131
+      },
+      "Saturn": {
+        "longitude": 247.227322,
+        "sign_index": 8,
+        "degree_in_sign": 7.227322,
+        "is_retrograde": false,
+        "speed": 0.112632
+      },
+      "Rahu": {
+        "longitude": 17.699525,
+        "sign_index": 0,
+        "degree_in_sign": 17.699525,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 197.699525,
+        "sign_index": 6,
+        "degree_in_sign": 17.699525,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

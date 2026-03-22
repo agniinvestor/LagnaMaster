@@ -1,0 +1,116 @@
+{
+  "adb_id": 3601,
+  "name": "Cummings, E.E.",
+  "given_name": "E.E. Cummings",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413116.5,
+    "year": 1894,
+    "month": 10,
+    "day": 14,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Cambridge (Middlesex County)",
+    "country": "USA",
+    "lat": 42.366667,
+    "lon": -71.1
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cummings,_E.E.",
+  "source_notes": "Filipe Ferreira quotes Richard S. Kennedy, \"Dreams in the Mirror: A Biography of e.e. cummings,\" in which the data is given from the diary of Cummings' mother: New York, Liveright, p.8.\\n(Formerly, Penfield Collection gave a spec time of 5:15 AM.  Old-file has 12:40 PM)\\n",
+  "categories": [
+    "Traits : Personality : Eccentric",
+    "Traits : Personality : Unique",
+    "Passions : Criminal Victim : Concentration camp",
+    "Personal : Misc. : Changed name",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Humor",
+    "Vocation : Writers : Poet",
+    "Notable : Awards : Vocational award",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 20.239963,
+    "lagna": 20.239963,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.387746,
+    "jd_ut": 2413116.5,
+    "planets": {
+      "Sun": {
+        "longitude": 179.242021,
+        "sign_index": 5,
+        "degree_in_sign": 29.242021,
+        "is_retrograde": false,
+        "speed": 0.991608
+      },
+      "Moon": {
+        "longitude": 2.341636,
+        "sign_index": 0,
+        "degree_in_sign": 2.341636,
+        "is_retrograde": false,
+        "speed": 12.146186
+      },
+      "Mars": {
+        "longitude": 7.09416,
+        "sign_index": 0,
+        "degree_in_sign": 7.09416,
+        "is_retrograde": true,
+        "speed": -0.326992
+      },
+      "Mercury": {
+        "longitude": 203.219861,
+        "sign_index": 6,
+        "degree_in_sign": 23.219861,
+        "is_retrograde": false,
+        "speed": 1.158404
+      },
+      "Jupiter": {
+        "longitude": 73.796152,
+        "sign_index": 2,
+        "degree_in_sign": 13.796152,
+        "is_retrograde": false,
+        "speed": 0.031282
+      },
+      "Venus": {
+        "longitude": 167.532523,
+        "sign_index": 5,
+        "degree_in_sign": 17.532523,
+        "is_retrograde": false,
+        "speed": 1.249098
+      },
+      "Saturn": {
+        "longitude": 184.861974,
+        "sign_index": 6,
+        "degree_in_sign": 4.861974,
+        "is_retrograde": false,
+        "speed": 0.120872
+      },
+      "Rahu": {
+        "longitude": 337.592913,
+        "sign_index": 11,
+        "degree_in_sign": 7.592913,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 157.592913,
+        "sign_index": 5,
+        "degree_in_sign": 7.592913,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

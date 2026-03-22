@@ -1,0 +1,108 @@
+{
+  "adb_id": 19747,
+  "name": "Compagnoni, Achille",
+  "given_name": "Achille Compagnoni",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420402.114583,
+    "year": 1914,
+    "month": 9,
+    "day": 26,
+    "calendar": "g",
+    "time": "15:45",
+    "time_type": "s",
+    "hour": 15.75,
+    "time_unknown": false,
+    "place": "Valfurva",
+    "country": "Italy",
+    "lat": 46.45,
+    "lon": 10.416667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Compagnoni,_Achille",
+  "source_notes": "Bordoni quotes B.C. Vol 7\\n",
+  "categories": [
+    "Vocation : Travel : Adventurer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 16.407695,
+    "lagna": 256.407695,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.666265,
+    "jd_ut": 2420402.114583,
+    "planets": {
+      "Sun": {
+        "longitude": 159.994663,
+        "sign_index": 5,
+        "degree_in_sign": 9.994663,
+        "is_retrograde": false,
+        "speed": 0.980975
+      },
+      "Moon": {
+        "longitude": 251.811385,
+        "sign_index": 8,
+        "degree_in_sign": 11.811385,
+        "is_retrograde": false,
+        "speed": 10.313674
+      },
+      "Mars": {
+        "longitude": 185.421907,
+        "sign_index": 6,
+        "degree_in_sign": 5.421907,
+        "is_retrograde": false,
+        "speed": 0.673828
+      },
+      "Mercury": {
+        "longitude": 179.363952,
+        "sign_index": 5,
+        "degree_in_sign": 29.363952,
+        "is_retrograde": false,
+        "speed": 1.462791
+      },
+      "Jupiter": {
+        "longitude": 290.05015,
+        "sign_index": 9,
+        "degree_in_sign": 20.05015,
+        "is_retrograde": true,
+        "speed": -0.042028
+      },
+      "Venus": {
+        "longitude": 206.062605,
+        "sign_index": 6,
+        "degree_in_sign": 26.062605,
+        "is_retrograde": false,
+        "speed": 0.909394
+      },
+      "Saturn": {
+        "longitude": 69.337894,
+        "sign_index": 2,
+        "degree_in_sign": 9.337894,
+        "is_retrograde": false,
+        "speed": 0.0344
+      },
+      "Rahu": {
+        "longitude": 311.512862,
+        "sign_index": 10,
+        "degree_in_sign": 11.512862,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 131.512862,
+        "sign_index": 4,
+        "degree_in_sign": 11.512862,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

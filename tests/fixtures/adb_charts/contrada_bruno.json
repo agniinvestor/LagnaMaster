@@ -1,0 +1,110 @@
+{
+  "adb_id": 47614,
+  "name": "Contrada, Bruno",
+  "given_name": "Bruno Contrada",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426587.375,
+    "year": 1931,
+    "month": 9,
+    "day": 2,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Naples",
+    "country": "Italy",
+    "lat": 40.85,
+    "lon": 14.283333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Contrada,_Bruno",
+  "source_notes": "Bordoni quotes B.C. in Datanotizie No.6, 3/1996\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Prison sentence",
+    "Passions : Criminal Perpetrator : Thief/ Financial crime",
+    "Vocation : Law : CIA"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 15.428089,
+    "lagna": 15.428089,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.902739,
+    "jd_ut": 2426587.375,
+    "planets": {
+      "Sun": {
+        "longitude": 136.50903,
+        "sign_index": 4,
+        "degree_in_sign": 16.50903,
+        "is_retrograde": false,
+        "speed": 0.968279
+      },
+      "Moon": {
+        "longitude": 19.503733,
+        "sign_index": 0,
+        "degree_in_sign": 19.503733,
+        "is_retrograde": false,
+        "speed": 12.356248
+      },
+      "Mars": {
+        "longitude": 177.504065,
+        "sign_index": 5,
+        "degree_in_sign": 27.504065,
+        "is_retrograde": false,
+        "speed": 0.653415
+      },
+      "Mercury": {
+        "longitude": 140.630594,
+        "sign_index": 4,
+        "degree_in_sign": 20.630594,
+        "is_retrograde": true,
+        "speed": -0.951261
+      },
+      "Jupiter": {
+        "longitude": 107.464532,
+        "sign_index": 3,
+        "degree_in_sign": 17.464532,
+        "is_retrograde": false,
+        "speed": 0.206752
+      },
+      "Venus": {
+        "longitude": 135.068011,
+        "sign_index": 4,
+        "degree_in_sign": 15.068011,
+        "is_retrograde": false,
+        "speed": 1.240797
+      },
+      "Saturn": {
+        "longitude": 264.035683,
+        "sign_index": 8,
+        "degree_in_sign": 24.035683,
+        "is_retrograde": true,
+        "speed": -0.030244
+      },
+      "Rahu": {
+        "longitude": 343.743011,
+        "sign_index": 11,
+        "degree_in_sign": 13.743011,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 163.743011,
+        "sign_index": 5,
+        "degree_in_sign": 13.743011,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

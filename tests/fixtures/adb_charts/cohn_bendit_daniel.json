@@ -1,0 +1,111 @@
+{
+  "adb_id": 9900,
+  "name": "Cohn-Bendit, Daniel",
+  "given_name": "Daniel Cohn-Bendit",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431550.25,
+    "year": 1945,
+    "month": 4,
+    "day": 4,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "d",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Montauban",
+    "country": "France",
+    "lat": 44.016667,
+    "lon": 1.35
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohn-Bendit,_Daniel",
+  "source_notes": "B.C. in hand from Steinbrecher\\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.592368,
+    "lagna": 144.592368,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.092491,
+    "jd_ut": 2431550.25,
+    "planets": {
+      "Sun": {
+        "longitude": 351.507803,
+        "sign_index": 11,
+        "degree_in_sign": 21.507803,
+        "is_retrograde": false,
+        "speed": 0.984429
+      },
+      "Moon": {
+        "longitude": 249.209995,
+        "sign_index": 8,
+        "degree_in_sign": 9.209995,
+        "is_retrograde": false,
+        "speed": 16.49412
+      },
+      "Mars": {
+        "longitude": 315.151709,
+        "sign_index": 10,
+        "degree_in_sign": 15.151709,
+        "is_retrograde": false,
+        "speed": 0.777507
+      },
+      "Mercury": {
+        "longitude": 4.751134,
+        "sign_index": 0,
+        "degree_in_sign": 4.751134,
+        "is_retrograde": true,
+        "speed": -0.1404
+      },
+      "Jupiter": {
+        "longitude": 146.757597,
+        "sign_index": 4,
+        "degree_in_sign": 26.757597,
+        "is_retrograde": true,
+        "speed": -0.108415
+      },
+      "Venus": {
+        "longitude": 8.329435,
+        "sign_index": 0,
+        "degree_in_sign": 8.329435,
+        "is_retrograde": true,
+        "speed": -0.413249
+      },
+      "Saturn": {
+        "longitude": 71.558632,
+        "sign_index": 2,
+        "degree_in_sign": 11.558632,
+        "is_retrograde": false,
+        "speed": 0.053301
+      },
+      "Rahu": {
+        "longitude": 80.749987,
+        "sign_index": 2,
+        "degree_in_sign": 20.749987,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 260.749987,
+        "sign_index": 8,
+        "degree_in_sign": 20.749987,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

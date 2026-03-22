@@ -1,0 +1,108 @@
+{
+  "adb_id": 70207,
+  "name": "Chevalier, Noam",
+  "given_name": "Noam Chevalier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445323.451389,
+    "year": 1982,
+    "month": 12,
+    "day": 19,
+    "calendar": "g",
+    "time": "23:50",
+    "time_type": "s",
+    "hour": 23.833333,
+    "time_unknown": false,
+    "place": "Laval",
+    "country": "France",
+    "lat": 48.066667,
+    "lon": -0.766667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevalier,_Noam",
+  "source_notes": "Didier Geslain archive, 'hippisme jockeys' pdf file, p. 50.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 28.033819,
+    "lagna": 118.033819,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.61916,
+    "jd_ut": 2445323.451389,
+    "planets": {
+      "Sun": {
+        "longitude": 244.102361,
+        "sign_index": 8,
+        "degree_in_sign": 4.102361,
+        "is_retrograde": false,
+        "speed": 1.018368
+      },
+      "Moon": {
+        "longitude": 292.708929,
+        "sign_index": 9,
+        "degree_in_sign": 22.708929,
+        "is_retrograde": false,
+        "speed": 13.36794
+      },
+      "Mars": {
+        "longitude": 283.944714,
+        "sign_index": 9,
+        "degree_in_sign": 13.944714,
+        "is_retrograde": false,
+        "speed": 0.782086
+      },
+      "Mercury": {
+        "longitude": 260.325922,
+        "sign_index": 8,
+        "degree_in_sign": 20.325922,
+        "is_retrograde": false,
+        "speed": 1.491689
+      },
+      "Jupiter": {
+        "longitude": 215.132622,
+        "sign_index": 7,
+        "degree_in_sign": 5.132622,
+        "is_retrograde": false,
+        "speed": 0.207061
+      },
+      "Venus": {
+        "longitude": 255.309203,
+        "sign_index": 8,
+        "degree_in_sign": 15.309203,
+        "is_retrograde": false,
+        "speed": 1.255782
+      },
+      "Saturn": {
+        "longitude": 188.353557,
+        "sign_index": 6,
+        "degree_in_sign": 8.353557,
+        "is_retrograde": false,
+        "speed": 0.085031
+      },
+      "Rahu": {
+        "longitude": 70.879854,
+        "sign_index": 2,
+        "degree_in_sign": 10.879854,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 250.879854,
+        "sign_index": 8,
+        "degree_in_sign": 10.879854,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

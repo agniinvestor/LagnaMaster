@@ -1,0 +1,109 @@
+{
+  "adb_id": 105057,
+  "name": "Christoffersen, Kris",
+  "given_name": "Kris Christoffersen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431584.269444,
+    "year": 1945,
+    "month": 5,
+    "day": 8,
+    "calendar": "g",
+    "time": "20:28",
+    "time_type": "d",
+    "hour": 20.466667,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christoffersen,_Kris",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Humanities+Social Sciences : Linguist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 23.329371,
+    "lagna": 173.329371,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.093792,
+    "jd_ut": 2431584.269444,
+    "planets": {
+      "Sun": {
+        "longitude": 24.687474,
+        "sign_index": 0,
+        "degree_in_sign": 24.687474,
+        "is_retrograde": false,
+        "speed": 0.967096
+      },
+      "Moon": {
+        "longitude": 340.682604,
+        "sign_index": 11,
+        "degree_in_sign": 10.682604,
+        "is_retrograde": false,
+        "speed": 17.268822
+      },
+      "Mars": {
+        "longitude": 341.455615,
+        "sign_index": 11,
+        "degree_in_sign": 11.455615,
+        "is_retrograde": false,
+        "speed": 0.766623
+      },
+      "Mercury": {
+        "longitude": 358.83747,
+        "sign_index": 11,
+        "degree_in_sign": 28.83747,
+        "is_retrograde": false,
+        "speed": 0.821454
+      },
+      "Jupiter": {
+        "longitude": 144.490938,
+        "sign_index": 4,
+        "degree_in_sign": 24.490938,
+        "is_retrograde": true,
+        "speed": -0.018328
+      },
+      "Venus": {
+        "longitude": 354.174436,
+        "sign_index": 11,
+        "degree_in_sign": 24.174436,
+        "is_retrograde": false,
+        "speed": 0.073226
+      },
+      "Saturn": {
+        "longitude": 74.210634,
+        "sign_index": 2,
+        "degree_in_sign": 14.210634,
+        "is_retrograde": false,
+        "speed": 0.099256
+      },
+      "Rahu": {
+        "longitude": 78.947227,
+        "sign_index": 2,
+        "degree_in_sign": 18.947227,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 258.947227,
+        "sign_index": 8,
+        "degree_in_sign": 18.947227,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 15180,
+  "name": "Cole, Emily Carrie",
+  "given_name": "Emily Carrie Cole",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2447393.511111,
+    "year": 1988,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "20:16",
+    "time_type": "d",
+    "hour": 20.266667,
+    "time_unknown": false,
+    "place": "Albany",
+    "country": "New York",
+    "lat": 42.65,
+    "lon": -73.75
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sco",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cole,_Emily_Carrie",
+  "source_notes": "LMR quotes news at the time\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 22.610362,
+    "lagna": 292.610362,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.698324,
+    "jd_ut": 2447393.511111,
+    "planets": {
+      "Sun": {
+        "longitude": 123.505773,
+        "sign_index": 4,
+        "degree_in_sign": 3.505773,
+        "is_retrograde": false,
+        "speed": 0.962634
+      },
+      "Moon": {
+        "longitude": 205.74529,
+        "sign_index": 6,
+        "degree_in_sign": 25.74529,
+        "is_retrograde": false,
+        "speed": 8.904629
+      },
+      "Mars": {
+        "longitude": 347.461653,
+        "sign_index": 11,
+        "degree_in_sign": 17.461653,
+        "is_retrograde": false,
+        "speed": 0.091045
+      },
+      "Mercury": {
+        "longitude": 139.279553,
+        "sign_index": 4,
+        "degree_in_sign": 19.279553,
+        "is_retrograde": false,
+        "speed": 1.694745
+      },
+      "Jupiter": {
+        "longitude": 40.418598,
+        "sign_index": 1,
+        "degree_in_sign": 10.418598,
+        "is_retrograde": false,
+        "speed": 0.108308
+      },
+      "Venus": {
+        "longitude": 77.77397,
+        "sign_index": 2,
+        "degree_in_sign": 17.77397,
+        "is_retrograde": false,
+        "speed": 0.940213
+      },
+      "Saturn": {
+        "longitude": 242.316036,
+        "sign_index": 8,
+        "degree_in_sign": 2.316036,
+        "is_retrograde": true,
+        "speed": -0.016669
+      },
+      "Rahu": {
+        "longitude": 321.183196,
+        "sign_index": 10,
+        "degree_in_sign": 21.183196,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 141.183196,
+        "sign_index": 4,
+        "degree_in_sign": 21.183196,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

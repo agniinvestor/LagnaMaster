@@ -1,0 +1,111 @@
+{
+  "adb_id": 81033,
+  "name": "Charpy, Georges",
+  "given_name": "Georges Charpy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402481.236667,
+    "year": 1865,
+    "month": 9,
+    "day": 1,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Oullins",
+    "country": "France",
+    "lat": 45.716667,
+    "lon": 4.8
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charpy,_Georges",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Vocation : Engineer : Mechanical",
+    "Vocation : Science : Chemistry",
+    "Vocation : Science : Geology",
+    "Vocation : Science : Physics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 10.527644,
+    "lagna": 280.527644,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.981217,
+    "jd_ut": 2402481.236667,
+    "planets": {
+      "Sun": {
+        "longitude": 137.260098,
+        "sign_index": 4,
+        "degree_in_sign": 17.260098,
+        "is_retrograde": false,
+        "speed": 0.96863
+      },
+      "Moon": {
+        "longitude": 266.166653,
+        "sign_index": 8,
+        "degree_in_sign": 26.166653,
+        "is_retrograde": false,
+        "speed": 10.16977
+      },
+      "Mars": {
+        "longitude": 159.503747,
+        "sign_index": 5,
+        "degree_in_sign": 9.503747,
+        "is_retrograde": false,
+        "speed": 0.6461
+      },
+      "Mercury": {
+        "longitude": 148.026611,
+        "sign_index": 4,
+        "degree_in_sign": 28.026611,
+        "is_retrograde": true,
+        "speed": -0.770859
+      },
+      "Jupiter": {
+        "longitude": 237.618266,
+        "sign_index": 7,
+        "degree_in_sign": 27.618266,
+        "is_retrograde": false,
+        "speed": 0.051213
+      },
+      "Venus": {
+        "longitude": 96.531299,
+        "sign_index": 3,
+        "degree_in_sign": 6.531299,
+        "is_retrograde": false,
+        "speed": 1.143356
+      },
+      "Saturn": {
+        "longitude": 185.044137,
+        "sign_index": 6,
+        "degree_in_sign": 5.044137,
+        "is_retrograde": false,
+        "speed": 0.093849
+      },
+      "Rahu": {
+        "longitude": 181.178126,
+        "sign_index": 6,
+        "degree_in_sign": 1.178126,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 1.178126,
+        "sign_index": 0,
+        "degree_in_sign": 1.178126,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

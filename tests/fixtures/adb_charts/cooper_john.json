@@ -1,0 +1,113 @@
+{
+  "adb_id": 97504,
+  "name": "Cooper, John",
+  "given_name": "John Cooper",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2442510.135417,
+    "year": 1975,
+    "month": 4,
+    "day": 7,
+    "calendar": "g",
+    "time": "10:15",
+    "time_type": "d",
+    "hour": 10.25,
+    "time_unknown": false,
+    "place": "Memphis",
+    "country": "Tennessee",
+    "lat": 35.15,
+    "lon": -90.05
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooper,_John",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Commercial Appeal'' (Memphis, Tennessee), 8 April 1975, page 24, born at St. Joseph Hospital, son of Mr. and Mrs. Larry Cooper.\\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.212464,
+    "lagna": 35.212464,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.511575,
+    "jd_ut": 2442510.135417,
+    "planets": {
+      "Sun": {
+        "longitude": 353.667058,
+        "sign_index": 11,
+        "degree_in_sign": 23.667058,
+        "is_retrograde": false,
+        "speed": 0.983696
+      },
+      "Moon": {
+        "longitude": 308.709904,
+        "sign_index": 10,
+        "degree_in_sign": 8.709904,
+        "is_retrograde": false,
+        "speed": 7.579676
+      },
+      "Mars": {
+        "longitude": 303.310363,
+        "sign_index": 10,
+        "degree_in_sign": 3.310363,
+        "is_retrograde": false,
+        "speed": 0.761589
+      },
+      "Mercury": {
+        "longitude": 342.202577,
+        "sign_index": 11,
+        "degree_in_sign": 12.202577,
+        "is_retrograde": false,
+        "speed": 1.872576
+      },
+      "Jupiter": {
+        "longitude": 341.295955,
+        "sign_index": 11,
+        "degree_in_sign": 11.295955,
+        "is_retrograde": false,
+        "speed": 0.239236
+      },
+      "Venus": {
+        "longitude": 29.01081,
+        "sign_index": 0,
+        "degree_in_sign": 29.01081,
+        "is_retrograde": false,
+        "speed": 1.19085
+      },
+      "Saturn": {
+        "longitude": 78.970386,
+        "sign_index": 2,
+        "degree_in_sign": 18.970386,
+        "is_retrograde": false,
+        "speed": 0.04391
+      },
+      "Rahu": {
+        "longitude": 219.963186,
+        "sign_index": 7,
+        "degree_in_sign": 9.963186,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 39.963186,
+        "sign_index": 1,
+        "degree_in_sign": 9.963186,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

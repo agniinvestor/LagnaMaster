@@ -1,0 +1,111 @@
+{
+  "adb_id": 47814,
+  "name": "Cassola, Carlo",
+  "given_name": "Carlo Cassola",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421304.8125,
+    "year": 1917,
+    "month": 3,
+    "day": 17,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassola,_Carlo",
+  "source_notes": "Bordoni quotes B.C. Vol. 2. Due to an editor error the wrong date 27 March had been entered. This was corrected on 18 March 2022.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Religion/ Philosophy",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 2.426381,
+    "lagna": 2.426381,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.700776,
+    "jd_ut": 2421304.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 333.437985,
+        "sign_index": 11,
+        "degree_in_sign": 3.437985,
+        "is_retrograde": false,
+        "speed": 0.994857
+      },
+      "Moon": {
+        "longitude": 253.256458,
+        "sign_index": 8,
+        "degree_in_sign": 13.256458,
+        "is_retrograde": false,
+        "speed": 9.796441
+      },
+      "Mars": {
+        "longitude": 329.936599,
+        "sign_index": 10,
+        "degree_in_sign": 29.936599,
+        "is_retrograde": false,
+        "speed": 0.782935
+      },
+      "Mercury": {
+        "longitude": 322.015,
+        "sign_index": 10,
+        "degree_in_sign": 22.015,
+        "is_retrograde": false,
+        "speed": 1.785361
+      },
+      "Jupiter": {
+        "longitude": 13.373902,
+        "sign_index": 0,
+        "degree_in_sign": 13.373902,
+        "is_retrograde": false,
+        "speed": 0.209785
+      },
+      "Venus": {
+        "longitude": 323.182709,
+        "sign_index": 10,
+        "degree_in_sign": 23.182709,
+        "is_retrograde": false,
+        "speed": 1.243812
+      },
+      "Saturn": {
+        "longitude": 91.019778,
+        "sign_index": 3,
+        "degree_in_sign": 1.019778,
+        "is_retrograde": true,
+        "speed": -0.016236
+      },
+      "Rahu": {
+        "longitude": 263.677009,
+        "sign_index": 8,
+        "degree_in_sign": 23.677009,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 83.677009,
+        "sign_index": 2,
+        "degree_in_sign": 23.677009,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

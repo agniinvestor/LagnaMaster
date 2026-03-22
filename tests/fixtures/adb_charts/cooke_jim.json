@@ -1,0 +1,110 @@
+{
+  "adb_id": 74001,
+  "name": "Cooke, Jim",
+  "given_name": "Jim Cooke",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2393280.595139,
+    "year": 1840,
+    "month": 6,
+    "day": 24,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooke,_Jim",
+  "source_notes": "Sy Scholfield quotes him in \"'Jim' Cooke Tells of the Old Days in the Ring,\" New York Times, 13 May 1900, p. 4: \"... in Glasgow, Scotland, on the evening of June 23, 1840 [my mother] rode on a lion cage in the grand entry, and at 2 o'clock on the following morning I was born.\"\\n",
+  "categories": [
+    "Vocation : Entertainment : Circus/ Animal acts",
+    "Vocation : Sports : Equestrian",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 27.393346,
+    "lagna": 27.393346,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.629569,
+    "jd_ut": 2393280.595139,
+    "planets": {
+      "Sun": {
+        "longitude": 70.930588,
+        "sign_index": 2,
+        "degree_in_sign": 10.930588,
+        "is_retrograde": false,
+        "speed": 0.953569
+      },
+      "Moon": {
+        "longitude": 355.253113,
+        "sign_index": 11,
+        "degree_in_sign": 25.253113,
+        "is_retrograde": false,
+        "speed": 13.148336
+      },
+      "Mars": {
+        "longitude": 58.188501,
+        "sign_index": 1,
+        "degree_in_sign": 28.188501,
+        "is_retrograde": false,
+        "speed": 0.685495
+      },
+      "Mercury": {
+        "longitude": 85.831703,
+        "sign_index": 2,
+        "degree_in_sign": 25.831703,
+        "is_retrograde": false,
+        "speed": 1.894095
+      },
+      "Jupiter": {
+        "longitude": 197.490672,
+        "sign_index": 6,
+        "degree_in_sign": 17.490672,
+        "is_retrograde": true,
+        "speed": -0.036047
+      },
+      "Venus": {
+        "longitude": 62.379674,
+        "sign_index": 2,
+        "degree_in_sign": 2.379674,
+        "is_retrograde": false,
+        "speed": 1.22557
+      },
+      "Saturn": {
+        "longitude": 235.749254,
+        "sign_index": 7,
+        "degree_in_sign": 25.749254,
+        "is_retrograde": true,
+        "speed": -0.069853
+      },
+      "Rahu": {
+        "longitude": 308.739926,
+        "sign_index": 10,
+        "degree_in_sign": 8.739926,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 128.739926,
+        "sign_index": 4,
+        "degree_in_sign": 8.739926,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

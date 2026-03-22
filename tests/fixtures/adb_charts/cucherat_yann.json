@@ -1,0 +1,108 @@
+{
+  "adb_id": 65113,
+  "name": "Cucherat, Yann",
+  "given_name": "Yann Cucherat",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444148.888889,
+    "year": 1979,
+    "month": 10,
+    "day": 2,
+    "calendar": "g",
+    "time": "10:20",
+    "time_type": "s",
+    "hour": 10.333333,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cucherat,_Yann",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 293.\\n",
+  "categories": [
+    "Vocation : Sports : Gymnastics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.821486,
+    "lagna": 181.821486,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.574243,
+    "jd_ut": 2444148.888889,
+    "planets": {
+      "Sun": {
+        "longitude": 165.017153,
+        "sign_index": 5,
+        "degree_in_sign": 15.017153,
+        "is_retrograde": false,
+        "speed": 0.983436
+      },
+      "Moon": {
+        "longitude": 297.159497,
+        "sign_index": 9,
+        "degree_in_sign": 27.159497,
+        "is_retrograde": false,
+        "speed": 18.413046
+      },
+      "Mars": {
+        "longitude": 100.866142,
+        "sign_index": 3,
+        "degree_in_sign": 10.866142,
+        "is_retrograde": false,
+        "speed": 0.584914
+      },
+      "Mercury": {
+        "longitude": 179.113386,
+        "sign_index": 5,
+        "degree_in_sign": 29.113386,
+        "is_retrograde": false,
+        "speed": 1.565104
+      },
+      "Jupiter": {
+        "longitude": 127.003887,
+        "sign_index": 4,
+        "degree_in_sign": 7.003887,
+        "is_retrograde": false,
+        "speed": 0.193277
+      },
+      "Venus": {
+        "longitude": 175.197824,
+        "sign_index": 5,
+        "degree_in_sign": 25.197824,
+        "is_retrograde": false,
+        "speed": 1.244901
+      },
+      "Saturn": {
+        "longitude": 146.387364,
+        "sign_index": 4,
+        "degree_in_sign": 26.387364,
+        "is_retrograde": false,
+        "speed": 0.121131
+      },
+      "Rahu": {
+        "longitude": 133.122306,
+        "sign_index": 4,
+        "degree_in_sign": 13.122306,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 313.122306,
+        "sign_index": 10,
+        "degree_in_sign": 13.122306,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

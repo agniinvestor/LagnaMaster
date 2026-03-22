@@ -1,0 +1,111 @@
+{
+  "adb_id": 19539,
+  "name": "Cross, Robert",
+  "given_name": "Robert Cross",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2376747.887037,
+    "year": 1795,
+    "month": 3,
+    "day": 19,
+    "calendar": "g",
+    "time": "09:07",
+    "time_type": "l",
+    "hour": 9.116667,
+    "time_unknown": false,
+    "place": "Bristol",
+    "country": "England",
+    "lat": 51.45,
+    "lon": -2.583333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cross,_Robert",
+  "source_notes": "LMR quotes data given by him in NN No.16\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : New Age",
+    "Personal : Misc. : Changed name",
+    "Vocation : Occult Fields : Astrologer",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 4.618899,
+    "lagna": 34.618899,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.997786,
+    "jd_ut": 2376747.887037,
+    "planets": {
+      "Sun": {
+        "longitude": 337.775128,
+        "sign_index": 11,
+        "degree_in_sign": 7.775128,
+        "is_retrograde": false,
+        "speed": 0.992559
+      },
+      "Moon": {
+        "longitude": 315.492332,
+        "sign_index": 10,
+        "degree_in_sign": 15.492332,
+        "is_retrograde": false,
+        "speed": 11.207838
+      },
+      "Mars": {
+        "longitude": 6.517355,
+        "sign_index": 0,
+        "degree_in_sign": 6.517355,
+        "is_retrograde": false,
+        "speed": 0.732217
+      },
+      "Mercury": {
+        "longitude": 338.232433,
+        "sign_index": 11,
+        "degree_in_sign": 8.232433,
+        "is_retrograde": true,
+        "speed": -0.885823
+      },
+      "Jupiter": {
+        "longitude": 279.918787,
+        "sign_index": 9,
+        "degree_in_sign": 9.918787,
+        "is_retrograde": false,
+        "speed": 0.173852
+      },
+      "Venus": {
+        "longitude": 291.301824,
+        "sign_index": 9,
+        "degree_in_sign": 21.301824,
+        "is_retrograde": false,
+        "speed": 1.026364
+      },
+      "Saturn": {
+        "longitude": 34.369757,
+        "sign_index": 1,
+        "degree_in_sign": 4.369757,
+        "is_retrograde": false,
+        "speed": 0.09017
+      },
+      "Rahu": {
+        "longitude": 104.844269,
+        "sign_index": 3,
+        "degree_in_sign": 14.844269,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 284.844269,
+        "sign_index": 9,
+        "degree_in_sign": 14.844269,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

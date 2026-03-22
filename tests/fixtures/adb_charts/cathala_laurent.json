@@ -1,0 +1,109 @@
+{
+  "adb_id": 68320,
+  "name": "Cathala, Laurent",
+  "given_name": "Laurent Cathala",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431720.145833,
+    "year": 1945,
+    "month": 9,
+    "day": 21,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "s",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "Saint-Jean-de-Barrou",
+    "country": "France",
+    "lat": 42.958333,
+    "lon": 2.840556
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cathala,_Laurent",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'politique a-f' pdf file, p. 183.\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 18.027937,
+    "lagna": 258.027937,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.098987,
+    "jd_ut": 2431720.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 155.180252,
+        "sign_index": 5,
+        "degree_in_sign": 5.180252,
+        "is_retrograde": false,
+        "speed": 0.977883
+      },
+      "Moon": {
+        "longitude": 332.431473,
+        "sign_index": 11,
+        "degree_in_sign": 2.431473,
+        "is_retrograde": false,
+        "speed": 16.967627
+      },
+      "Mars": {
+        "longitude": 74.80209,
+        "sign_index": 2,
+        "degree_in_sign": 14.80209,
+        "is_retrograde": false,
+        "speed": 0.551943
+      },
+      "Mercury": {
+        "longitude": 146.111257,
+        "sign_index": 4,
+        "degree_in_sign": 26.111257,
+        "is_retrograde": false,
+        "speed": 1.846834
+      },
+      "Jupiter": {
+        "longitude": 162.650527,
+        "sign_index": 5,
+        "degree_in_sign": 12.650527,
+        "is_retrograde": false,
+        "speed": 0.21512
+      },
+      "Venus": {
+        "longitude": 123.247968,
+        "sign_index": 4,
+        "degree_in_sign": 3.247968,
+        "is_retrograde": false,
+        "speed": 1.207138
+      },
+      "Saturn": {
+        "longitude": 89.931657,
+        "sign_index": 2,
+        "degree_in_sign": 29.931657,
+        "is_retrograde": false,
+        "speed": 0.077651
+      },
+      "Rahu": {
+        "longitude": 71.746856,
+        "sign_index": 2,
+        "degree_in_sign": 11.746856,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 251.746856,
+        "sign_index": 8,
+        "degree_in_sign": 11.746856,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

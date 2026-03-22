@@ -1,0 +1,110 @@
+{
+  "adb_id": 65380,
+  "name": "Chateau-Jobert, Pierre",
+  "given_name": "Pierre Chateau-Jobert",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419435.760417,
+    "year": 1912,
+    "month": 2,
+    "day": 3,
+    "calendar": "g",
+    "time": "06:15",
+    "time_type": "s",
+    "hour": 6.25,
+    "time_unknown": false,
+    "place": "Morlaix",
+    "country": "France",
+    "lat": 48.583333,
+    "lon": -3.833333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chateau-Jobert,_Pierre",
+  "source_notes": "Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 68.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 27.078654,
+    "lagna": 237.078654,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.629321,
+    "jd_ut": 2419435.760417,
+    "planets": {
+      "Sun": {
+        "longitude": 290.444439,
+        "sign_index": 9,
+        "degree_in_sign": 20.444439,
+        "is_retrograde": false,
+        "speed": 1.013931
+      },
+      "Moon": {
+        "longitude": 113.722469,
+        "sign_index": 3,
+        "degree_in_sign": 23.722469,
+        "is_retrograde": false,
+        "speed": 15.080229
+      },
+      "Mars": {
+        "longitude": 38.490519,
+        "sign_index": 1,
+        "degree_in_sign": 8.490519,
+        "is_retrograde": false,
+        "speed": 0.34107
+      },
+      "Mercury": {
+        "longitude": 271.630775,
+        "sign_index": 9,
+        "degree_in_sign": 1.630775,
+        "is_retrograde": false,
+        "speed": 1.46836
+      },
+      "Jupiter": {
+        "longitude": 227.910021,
+        "sign_index": 7,
+        "degree_in_sign": 17.910021,
+        "is_retrograde": false,
+        "speed": 0.154029
+      },
+      "Venus": {
+        "longitude": 252.581931,
+        "sign_index": 8,
+        "degree_in_sign": 12.581931,
+        "is_retrograde": false,
+        "speed": 1.209645
+      },
+      "Saturn": {
+        "longitude": 20.995298,
+        "sign_index": 0,
+        "degree_in_sign": 20.995298,
+        "is_retrograde": false,
+        "speed": 0.034214
+      },
+      "Rahu": {
+        "longitude": 2.721995,
+        "sign_index": 0,
+        "degree_in_sign": 2.721995,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.721995,
+        "sign_index": 6,
+        "degree_in_sign": 2.721995,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

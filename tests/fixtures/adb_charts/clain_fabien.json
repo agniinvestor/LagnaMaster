@@ -1,0 +1,108 @@
+{
+  "adb_id": 87748,
+  "name": "Clain, Fabien",
+  "given_name": "Fabien Clain",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443538.958333,
+    "year": 1978,
+    "month": 1,
+    "day": 30,
+    "calendar": "g",
+    "time": "unknown, 12:00 used",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Toulouse",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": ""
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clain,_Fabien",
+  "source_notes": "Wikipedia\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Terrorist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 27.060803,
+    "lagna": 357.060803,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.550918,
+    "jd_ut": 2443538.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 286.650842,
+        "sign_index": 9,
+        "degree_in_sign": 16.650842,
+        "is_retrograde": false,
+        "speed": 1.015266
+      },
+      "Moon": {
+        "longitude": 177.129043,
+        "sign_index": 5,
+        "degree_in_sign": 27.129043,
+        "is_retrograde": false,
+        "speed": 13.427829
+      },
+      "Mars": {
+        "longitude": 94.78588,
+        "sign_index": 3,
+        "degree_in_sign": 4.78588,
+        "is_retrograde": true,
+        "speed": -0.366967
+      },
+      "Mercury": {
+        "longitude": 268.589157,
+        "sign_index": 8,
+        "degree_in_sign": 28.589157,
+        "is_retrograde": false,
+        "speed": 1.476263
+      },
+      "Jupiter": {
+        "longitude": 63.228272,
+        "sign_index": 2,
+        "degree_in_sign": 3.228272,
+        "is_retrograde": true,
+        "speed": -0.067691
+      },
+      "Venus": {
+        "longitude": 288.618247,
+        "sign_index": 9,
+        "degree_in_sign": 18.618247,
+        "is_retrograde": false,
+        "speed": 1.255585
+      },
+      "Saturn": {
+        "longitude": 124.899085,
+        "sign_index": 4,
+        "degree_in_sign": 4.899085,
+        "is_retrograde": true,
+        "speed": -0.074631
+      },
+      "Rahu": {
+        "longitude": 165.443766,
+        "sign_index": 5,
+        "degree_in_sign": 15.443766,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 345.443766,
+        "sign_index": 11,
+        "degree_in_sign": 15.443766,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

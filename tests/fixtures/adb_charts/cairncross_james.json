@@ -1,0 +1,108 @@
+{
+  "adb_id": 50838,
+  "name": "Cairncross, James",
+  "given_name": "James Cairncross",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420853.079861,
+    "year": 1915,
+    "month": 12,
+    "day": 21,
+    "calendar": "g",
+    "time": "13:55",
+    "time_type": "s",
+    "hour": 13.916667,
+    "time_unknown": false,
+    "place": "Dunfermline",
+    "country": "Scotland",
+    "lat": 56.066667,
+    "lon": -3.483333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cairncross,_James",
+  "source_notes": "Steinbrecher collection: Paul Wright quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 13.935442,
+    "lagna": 13.935442,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.683506,
+    "jd_ut": 2420853.079861,
+    "planets": {
+      "Sun": {
+        "longitude": 245.940618,
+        "sign_index": 8,
+        "degree_in_sign": 5.940618,
+        "is_retrograde": false,
+        "speed": 1.018078
+      },
+      "Moon": {
+        "longitude": 66.623269,
+        "sign_index": 2,
+        "degree_in_sign": 6.623269,
+        "is_retrograde": false,
+        "speed": 14.681989
+      },
+      "Mars": {
+        "longitude": 126.474858,
+        "sign_index": 4,
+        "degree_in_sign": 6.474858,
+        "is_retrograde": false,
+        "speed": 0.124188
+      },
+      "Mercury": {
+        "longitude": 249.080081,
+        "sign_index": 8,
+        "degree_in_sign": 9.080081,
+        "is_retrograde": false,
+        "speed": 1.591165
+      },
+      "Jupiter": {
+        "longitude": 328.155719,
+        "sign_index": 10,
+        "degree_in_sign": 28.155719,
+        "is_retrograde": false,
+        "speed": 0.116694
+      },
+      "Venus": {
+        "longitude": 270.759225,
+        "sign_index": 9,
+        "degree_in_sign": 0.759225,
+        "is_retrograde": false,
+        "speed": 1.244774
+      },
+      "Saturn": {
+        "longitude": 81.487637,
+        "sign_index": 2,
+        "degree_in_sign": 21.487637,
+        "is_retrograde": true,
+        "speed": -0.077941
+      },
+      "Rahu": {
+        "longitude": 287.615267,
+        "sign_index": 9,
+        "degree_in_sign": 17.615267,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 107.615267,
+        "sign_index": 3,
+        "degree_in_sign": 17.615267,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

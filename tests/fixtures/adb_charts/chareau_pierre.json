@@ -1,0 +1,109 @@
+{
+  "adb_id": 76958,
+  "name": "Chareau, Pierre",
+  "given_name": "Pierre Chareau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409025.751574,
+    "year": 1883,
+    "month": 8,
+    "day": 3,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Bordeaux",
+    "country": "France",
+    "lat": 44.833333,
+    "lon": -0.566667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chareau,_Pierre",
+  "source_notes": "Sy Scholfield submitted birth certificate n°1164 from the online Bordeaux municipal archives (section 1 [1E 326], image 165/290). Marriage data in margin. Wikipedia has 4 August in error.\\n",
+  "categories": [
+    "Vocation : Building Trades : Architect/ Planner",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 8.784206,
+    "lagna": 98.784206,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.231372,
+    "jd_ut": 2409025.751574,
+    "planets": {
+      "Sun": {
+        "longitude": 108.288353,
+        "sign_index": 3,
+        "degree_in_sign": 18.288353,
+        "is_retrograde": false,
+        "speed": 0.957883
+      },
+      "Moon": {
+        "longitude": 111.435971,
+        "sign_index": 3,
+        "degree_in_sign": 21.435971,
+        "is_retrograde": false,
+        "speed": 13.037458
+      },
+      "Mars": {
+        "longitude": 54.073769,
+        "sign_index": 1,
+        "degree_in_sign": 24.073769,
+        "is_retrograde": false,
+        "speed": 0.671291
+      },
+      "Mercury": {
+        "longitude": 112.96288,
+        "sign_index": 3,
+        "degree_in_sign": 22.96288,
+        "is_retrograde": false,
+        "speed": 2.00998
+      },
+      "Jupiter": {
+        "longitude": 87.340483,
+        "sign_index": 2,
+        "degree_in_sign": 27.340483,
+        "is_retrograde": false,
+        "speed": 0.217386
+      },
+      "Venus": {
+        "longitude": 95.083944,
+        "sign_index": 3,
+        "degree_in_sign": 5.083944,
+        "is_retrograde": false,
+        "speed": 1.227509
+      },
+      "Saturn": {
+        "longitude": 45.730461,
+        "sign_index": 1,
+        "degree_in_sign": 15.730461,
+        "is_retrograde": false,
+        "speed": 0.081576
+      },
+      "Rahu": {
+        "longitude": 194.370336,
+        "sign_index": 6,
+        "degree_in_sign": 14.370336,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 14.370336,
+        "sign_index": 0,
+        "degree_in_sign": 14.370336,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

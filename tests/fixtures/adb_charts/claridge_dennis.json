@@ -1,0 +1,115 @@
+{
+  "adb_id": 80089,
+  "name": "Claridge, Dennis",
+  "given_name": "Dennis Claridge",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430224.843056,
+    "year": 1941,
+    "month": 8,
+    "day": 18,
+    "calendar": "g",
+    "time": "01:14",
+    "time_type": "s",
+    "hour": 1.233333,
+    "time_unknown": false,
+    "place": "Phoenix",
+    "country": "Arizona",
+    "lat": 33.45,
+    "lon": -112.066667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claridge,_Dennis",
+  "source_notes": "Birth certificate on file, submitted by Sy Scholfield.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Medical : Dentist/ Dental Tech",
+    "Vocation : Sports : Football",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 8.685044,
+    "lagna": 38.685044,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.041814,
+    "jd_ut": 2430224.843056,
+    "planets": {
+      "Sun": {
+        "longitude": 121.93866,
+        "sign_index": 4,
+        "degree_in_sign": 1.93866,
+        "is_retrograde": false,
+        "speed": 0.962276
+      },
+      "Moon": {
+        "longitude": 69.017472,
+        "sign_index": 2,
+        "degree_in_sign": 9.017472,
+        "is_retrograde": false,
+        "speed": 14.375108
+      },
+      "Mars": {
+        "longitude": 358.099109,
+        "sign_index": 11,
+        "degree_in_sign": 28.099109,
+        "is_retrograde": false,
+        "speed": 0.256032
+      },
+      "Mercury": {
+        "longitude": 121.235833,
+        "sign_index": 4,
+        "degree_in_sign": 1.235833,
+        "is_retrograde": false,
+        "speed": 2.011514
+      },
+      "Jupiter": {
+        "longitude": 54.148214,
+        "sign_index": 1,
+        "degree_in_sign": 24.148214,
+        "is_retrograde": false,
+        "speed": 0.148695
+      },
+      "Venus": {
+        "longitude": 153.739952,
+        "sign_index": 5,
+        "degree_in_sign": 3.739952,
+        "is_retrograde": false,
+        "speed": 1.202786
+      },
+      "Saturn": {
+        "longitude": 35.022736,
+        "sign_index": 1,
+        "degree_in_sign": 5.022736,
+        "is_retrograde": false,
+        "speed": 0.040978
+      },
+      "Rahu": {
+        "longitude": 150.98604,
+        "sign_index": 5,
+        "degree_in_sign": 0.98604,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 330.98604,
+        "sign_index": 11,
+        "degree_in_sign": 0.98604,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

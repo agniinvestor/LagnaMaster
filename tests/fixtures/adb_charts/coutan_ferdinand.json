@@ -1,0 +1,110 @@
+{
+  "adb_id": 81091,
+  "name": "Coutan, Ferdinand",
+  "given_name": "Ferdinand Coutan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2397674.957778,
+    "year": 1852,
+    "month": 7,
+    "day": 5,
+    "calendar": "g",
+    "time": "11:10",
+    "time_type": "l",
+    "hour": 11.166667,
+    "time_unknown": false,
+    "place": "Fontainebleau",
+    "country": "France",
+    "lat": 48.4,
+    "lon": 2.7
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coutan,_Ferdinand",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Medical : Physician",
+    "Vocation : Science : Other Science"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 17.20926,
+    "lagna": 137.20926,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.797516,
+    "jd_ut": 2397674.957778,
+    "planets": {
+      "Sun": {
+        "longitude": 81.691578,
+        "sign_index": 2,
+        "degree_in_sign": 21.691578,
+        "is_retrograde": false,
+        "speed": 0.952968
+      },
+      "Moon": {
+        "longitude": 307.534839,
+        "sign_index": 10,
+        "degree_in_sign": 7.534839,
+        "is_retrograde": false,
+        "speed": 14.515248
+      },
+      "Mars": {
+        "longitude": 141.474009,
+        "sign_index": 4,
+        "degree_in_sign": 21.474009,
+        "is_retrograde": false,
+        "speed": 0.580693
+      },
+      "Mercury": {
+        "longitude": 89.153155,
+        "sign_index": 2,
+        "degree_in_sign": 29.153155,
+        "is_retrograde": false,
+        "speed": 2.066974
+      },
+      "Jupiter": {
+        "longitude": 201.558489,
+        "sign_index": 6,
+        "degree_in_sign": 21.558489,
+        "is_retrograde": true,
+        "speed": -0.015203
+      },
+      "Venus": {
+        "longitude": 104.446256,
+        "sign_index": 3,
+        "degree_in_sign": 14.446256,
+        "is_retrograde": true,
+        "speed": -0.221878
+      },
+      "Saturn": {
+        "longitude": 23.56089,
+        "sign_index": 0,
+        "degree_in_sign": 23.56089,
+        "is_retrograde": false,
+        "speed": 0.087041
+      },
+      "Rahu": {
+        "longitude": 75.873161,
+        "sign_index": 2,
+        "degree_in_sign": 15.873161,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 255.873161,
+        "sign_index": 8,
+        "degree_in_sign": 15.873161,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

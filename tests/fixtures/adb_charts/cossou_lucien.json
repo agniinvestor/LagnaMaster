@@ -1,0 +1,108 @@
+{
+  "adb_id": 52866,
+  "name": "Cossou, Lucien",
+  "given_name": "Lucien Cossou",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428196.666667,
+    "year": 1936,
+    "month": 1,
+    "day": 29,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cossou,_Lucien",
+  "source_notes": "Didier Geslain archive, 'Foot et sports' pdf file, p. 11.\\nSame data in Ed Steinbrecher collection: Gauquelin 1/1282\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 3.944781,
+    "lagna": 213.944781,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.964268,
+    "jd_ut": 2428196.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 285.117478,
+        "sign_index": 9,
+        "degree_in_sign": 15.117478,
+        "is_retrograde": false,
+        "speed": 1.016058
+      },
+      "Moon": {
+        "longitude": 350.89655,
+        "sign_index": 11,
+        "degree_in_sign": 20.89655,
+        "is_retrograde": false,
+        "speed": 18.434374
+      },
+      "Mars": {
+        "longitude": 318.431523,
+        "sign_index": 10,
+        "degree_in_sign": 18.431523,
+        "is_retrograde": false,
+        "speed": 0.779931
+      },
+      "Mercury": {
+        "longitude": 291.19334,
+        "sign_index": 9,
+        "degree_in_sign": 21.19334,
+        "is_retrograde": true,
+        "speed": -1.049937
+      },
+      "Jupiter": {
+        "longitude": 234.216175,
+        "sign_index": 7,
+        "degree_in_sign": 24.216175,
+        "is_retrograde": false,
+        "speed": 0.178672
+      },
+      "Venus": {
+        "longitude": 247.738369,
+        "sign_index": 8,
+        "degree_in_sign": 7.738369,
+        "is_retrograde": false,
+        "speed": 1.213309
+      },
+      "Saturn": {
+        "longitude": 315.76122,
+        "sign_index": 10,
+        "degree_in_sign": 15.76122,
+        "is_retrograde": false,
+        "speed": 0.111161
+      },
+      "Rahu": {
+        "longitude": 258.463306,
+        "sign_index": 8,
+        "degree_in_sign": 18.463306,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 78.463306,
+        "sign_index": 2,
+        "degree_in_sign": 18.463306,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 65068,
+  "name": "Corteel, André",
+  "given_name": "André Corteel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420352.8125,
+    "year": 1914,
+    "month": 8,
+    "day": 8,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "s",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Lille",
+    "country": "France",
+    "lat": 50.633333,
+    "lon": 3.066667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corteel,_André",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 234.\\n",
+  "categories": [
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 1.513034,
+    "lagna": 121.513034,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.66438,
+    "jd_ut": 2420352.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 112.230113,
+        "sign_index": 3,
+        "degree_in_sign": 22.230113,
+        "is_retrograde": false,
+        "speed": 0.958364
+      },
+      "Moon": {
+        "longitude": 318.22312,
+        "sign_index": 10,
+        "degree_in_sign": 18.22312,
+        "is_retrograde": false,
+        "speed": 12.516783
+      },
+      "Mars": {
+        "longitude": 153.385802,
+        "sign_index": 5,
+        "degree_in_sign": 3.385802,
+        "is_retrograde": false,
+        "speed": 0.625747
+      },
+      "Mercury": {
+        "longitude": 93.37948,
+        "sign_index": 3,
+        "degree_in_sign": 3.37948,
+        "is_retrograde": false,
+        "speed": 1.204021
+      },
+      "Jupiter": {
+        "longitude": 295.019191,
+        "sign_index": 9,
+        "degree_in_sign": 25.019191,
+        "is_retrograde": true,
+        "speed": -0.130251
+      },
+      "Venus": {
+        "longitude": 154.58372,
+        "sign_index": 5,
+        "degree_in_sign": 4.58372,
+        "is_retrograde": false,
+        "speed": 1.127104
+      },
+      "Saturn": {
+        "longitude": 65.78303,
+        "sign_index": 2,
+        "degree_in_sign": 5.78303,
+        "is_retrograde": false,
+        "speed": 0.103202
+      },
+      "Rahu": {
+        "longitude": 314.125482,
+        "sign_index": 10,
+        "degree_in_sign": 14.125482,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 134.125482,
+        "sign_index": 4,
+        "degree_in_sign": 14.125482,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

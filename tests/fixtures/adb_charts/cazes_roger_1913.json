@@ -1,0 +1,109 @@
+{
+  "adb_id": 64962,
+  "name": "Cazes, Roger (1913)",
+  "given_name": "Roger (1913) Cazes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419901.1875,
+    "year": 1913,
+    "month": 5,
+    "day": 13,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "s",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cazes,_Roger_(1913)",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 96.\\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Food and Beverage : Restaurateur"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 6.977626,
+    "lagna": 156.977626,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.647114,
+    "jd_ut": 2419901.1875,
+    "planets": {
+      "Sun": {
+        "longitude": 29.638558,
+        "sign_index": 0,
+        "degree_in_sign": 29.638558,
+        "is_retrograde": false,
+        "speed": 0.964482
+      },
+      "Moon": {
+        "longitude": 122.723994,
+        "sign_index": 4,
+        "degree_in_sign": 2.723994,
+        "is_retrograde": false,
+        "speed": 10.685419
+      },
+      "Mars": {
+        "longitude": 341.6029,
+        "sign_index": 11,
+        "degree_in_sign": 11.6029,
+        "is_retrograde": false,
+        "speed": 0.762287
+      },
+      "Mercury": {
+        "longitude": 9.729256,
+        "sign_index": 0,
+        "degree_in_sign": 9.729256,
+        "is_retrograde": false,
+        "speed": 1.688969
+      },
+      "Jupiter": {
+        "longitude": 265.094384,
+        "sign_index": 8,
+        "degree_in_sign": 25.094384,
+        "is_retrograde": true,
+        "speed": -0.024881
+      },
+      "Venus": {
+        "longitude": 3.57724,
+        "sign_index": 0,
+        "degree_in_sign": 3.57724,
+        "is_retrograde": true,
+        "speed": -0.107561
+      },
+      "Saturn": {
+        "longitude": 42.834468,
+        "sign_index": 1,
+        "degree_in_sign": 12.834468,
+        "is_retrograde": false,
+        "speed": 0.127707
+      },
+      "Rahu": {
+        "longitude": 338.058038,
+        "sign_index": 11,
+        "degree_in_sign": 8.058038,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 158.058038,
+        "sign_index": 5,
+        "degree_in_sign": 8.058038,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

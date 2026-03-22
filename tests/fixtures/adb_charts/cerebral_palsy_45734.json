@@ -1,0 +1,108 @@
+{
+  "adb_id": 45734,
+  "name": "Cerebral Palsy 45734",
+  "given_name": "Cerebral Palsy 45734",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431496.5875,
+    "year": 1945,
+    "month": 2,
+    "day": 9,
+    "calendar": "g",
+    "time": "21:06",
+    "time_type": "w",
+    "hour": 21.1,
+    "time_unknown": false,
+    "place": "Evanston",
+    "country": "Illinois",
+    "lat": 42.033333,
+    "lon": -87.683333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "cap",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Cerebral_Palsy_45734",
+  "source_notes": "Victoria Shaw quotes Buell Huggins collection, all given in standard time\\n",
+  "categories": [
+    "Personal : Birth : Defects, Handicaps"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 8.815572,
+    "lagna": 128.815572,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.090439,
+    "jd_ut": 2431496.5875,
+    "planets": {
+      "Sun": {
+        "longitude": 297.898252,
+        "sign_index": 9,
+        "degree_in_sign": 27.898252,
+        "is_retrograde": false,
+        "speed": 1.01215
+      },
+      "Moon": {
+        "longitude": 262.612361,
+        "sign_index": 8,
+        "degree_in_sign": 22.612361,
+        "is_retrograde": false,
+        "speed": 17.662232
+      },
+      "Mars": {
+        "longitude": 273.592541,
+        "sign_index": 9,
+        "degree_in_sign": 3.592541,
+        "is_retrograde": false,
+        "speed": 0.766445
+      },
+      "Mercury": {
+        "longitude": 284.262835,
+        "sign_index": 9,
+        "degree_in_sign": 14.262835,
+        "is_retrograde": false,
+        "speed": 1.595397
+      },
+      "Jupiter": {
+        "longitude": 153.108507,
+        "sign_index": 5,
+        "degree_in_sign": 3.108507,
+        "is_retrograde": true,
+        "speed": -0.086947
+      },
+      "Venus": {
+        "longitude": 344.571499,
+        "sign_index": 11,
+        "degree_in_sign": 14.571499,
+        "is_retrograde": false,
+        "speed": 0.956541
+      },
+      "Saturn": {
+        "longitude": 71.268447,
+        "sign_index": 2,
+        "degree_in_sign": 11.268447,
+        "is_retrograde": true,
+        "speed": -0.043036
+      },
+      "Rahu": {
+        "longitude": 83.593674,
+        "sign_index": 2,
+        "degree_in_sign": 23.593674,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 263.593674,
+        "sign_index": 8,
+        "degree_in_sign": 23.593674,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

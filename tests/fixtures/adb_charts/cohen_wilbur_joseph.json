@@ -1,0 +1,111 @@
+{
+  "adb_id": 50800,
+  "name": "Cohen, Wilbur Joseph",
+  "given_name": "Wilbur Joseph Cohen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419929.152778,
+    "year": 1913,
+    "month": 6,
+    "day": 10,
+    "calendar": "g",
+    "time": "09:40",
+    "time_type": "s",
+    "hour": 9.666667,
+    "time_unknown": false,
+    "place": "Milwaukee",
+    "country": "Wisconsin",
+    "lat": 43.033333,
+    "lon": -87.9
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Wilbur_Joseph",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Politics : Activist/ social",
+    "Vocation : Politics : Government employee",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 10.350255,
+    "lagna": 100.350255,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.648184,
+    "jd_ut": 2419929.152778,
+    "planets": {
+      "Sun": {
+        "longitude": 56.474435,
+        "sign_index": 1,
+        "degree_in_sign": 26.474435,
+        "is_retrograde": false,
+        "speed": 0.955803
+      },
+      "Moon": {
+        "longitude": 133.64342,
+        "sign_index": 4,
+        "degree_in_sign": 13.64342,
+        "is_retrograde": false,
+        "speed": 15.512712
+      },
+      "Mars": {
+        "longitude": 2.650772,
+        "sign_index": 0,
+        "degree_in_sign": 2.650772,
+        "is_retrograde": false,
+        "speed": 0.740812
+      },
+      "Mercury": {
+        "longitude": 66.850344,
+        "sign_index": 2,
+        "degree_in_sign": 6.850344,
+        "is_retrograde": false,
+        "speed": 2.060206
+      },
+      "Jupiter": {
+        "longitude": 263.268874,
+        "sign_index": 8,
+        "degree_in_sign": 23.268874,
+        "is_retrograde": true,
+        "speed": -0.100977
+      },
+      "Venus": {
+        "longitude": 13.468057,
+        "sign_index": 0,
+        "degree_in_sign": 13.468057,
+        "is_retrograde": false,
+        "speed": 0.693809
+      },
+      "Saturn": {
+        "longitude": 46.450803,
+        "sign_index": 1,
+        "degree_in_sign": 16.450803,
+        "is_retrograde": false,
+        "speed": 0.128649
+      },
+      "Rahu": {
+        "longitude": 336.576099,
+        "sign_index": 11,
+        "degree_in_sign": 6.576099,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 156.576099,
+        "sign_index": 5,
+        "degree_in_sign": 6.576099,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

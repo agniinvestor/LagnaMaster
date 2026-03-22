@@ -1,0 +1,114 @@
+{
+  "adb_id": 3356,
+  "name": "Chevalier, Marie George",
+  "given_name": "Marie George Chevalier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411275.652315,
+    "year": 1889,
+    "month": 9,
+    "day": 30,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Bar le Duc",
+    "country": "France",
+    "lat": 48.783333,
+    "lon": 5.166667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevalier,_Marie_George",
+  "source_notes": "B. C. in hand, Steinbrecher\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Engineer : Civil",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Healing Fields : Psychologist",
+    "Vocation : Military : Military service",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 0.137908,
+    "lagna": 120.137908,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.317376,
+    "jd_ut": 2411275.652315,
+    "planets": {
+      "Sun": {
+        "longitude": 164.849493,
+        "sign_index": 5,
+        "degree_in_sign": 14.849493,
+        "is_retrograde": false,
+        "speed": 0.983974
+      },
+      "Moon": {
+        "longitude": 229.798909,
+        "sign_index": 7,
+        "degree_in_sign": 19.798909,
+        "is_retrograde": false,
+        "speed": 17.884934
+      },
+      "Mars": {
+        "longitude": 131.973996,
+        "sign_index": 4,
+        "degree_in_sign": 11.973996,
+        "is_retrograde": false,
+        "speed": 0.624143
+      },
+      "Mercury": {
+        "longitude": 188.66004,
+        "sign_index": 6,
+        "degree_in_sign": 8.66004,
+        "is_retrograde": false,
+        "speed": 0.394882
+      },
+      "Jupiter": {
+        "longitude": 248.090305,
+        "sign_index": 8,
+        "degree_in_sign": 8.090305,
+        "is_retrograde": false,
+        "speed": 0.105892
+      },
+      "Venus": {
+        "longitude": 131.297474,
+        "sign_index": 4,
+        "degree_in_sign": 11.297474,
+        "is_retrograde": false,
+        "speed": 1.20566
+      },
+      "Saturn": {
+        "longitude": 126.941263,
+        "sign_index": 4,
+        "degree_in_sign": 6.941263,
+        "is_retrograde": false,
+        "speed": 0.109678
+      },
+      "Rahu": {
+        "longitude": 75.143325,
+        "sign_index": 2,
+        "degree_in_sign": 15.143325,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 255.143325,
+        "sign_index": 8,
+        "degree_in_sign": 15.143325,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

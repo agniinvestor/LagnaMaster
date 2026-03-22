@@ -1,0 +1,110 @@
+{
+  "adb_id": 87713,
+  "name": "Coffee, Glenn",
+  "given_name": "Glenn Coffee",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2439511.472222,
+    "year": 1967,
+    "month": 1,
+    "day": 20,
+    "calendar": "g",
+    "time": "17:20",
+    "time_type": "s",
+    "hour": 17.333333,
+    "time_unknown": false,
+    "place": "Lubbock",
+    "country": "Texas",
+    "lat": 33.583333,
+    "lon": -101.85
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coffee,_Glenn",
+  "source_notes": "Sy Scholfield provided birth report, Lubbock Avalanche-Journal (Lubbock, Texas), 22 January 1967, p. 8. Full name from Texas Birth Index.\\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 4.62431,
+    "lagna": 64.62431,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.396907,
+    "jd_ut": 2439511.472222,
+    "planets": {
+      "Sun": {
+        "longitude": 276.826818,
+        "sign_index": 9,
+        "degree_in_sign": 6.826818,
+        "is_retrograde": false,
+        "speed": 1.017475
+      },
+      "Moon": {
+        "longitude": 31.173461,
+        "sign_index": 1,
+        "degree_in_sign": 1.173461,
+        "is_retrograde": false,
+        "speed": 9.424393
+      },
+      "Mars": {
+        "longitude": 179.324103,
+        "sign_index": 5,
+        "degree_in_sign": 29.324103,
+        "is_retrograde": false,
+        "speed": 0.387921
+      },
+      "Mercury": {
+        "longitude": 278.730822,
+        "sign_index": 9,
+        "degree_in_sign": 8.730822,
+        "is_retrograde": false,
+        "speed": 1.691573
+      },
+      "Jupiter": {
+        "longitude": 95.960541,
+        "sign_index": 3,
+        "degree_in_sign": 5.960541,
+        "is_retrograde": true,
+        "speed": -0.134272
+      },
+      "Venus": {
+        "longitude": 294.343062,
+        "sign_index": 9,
+        "degree_in_sign": 24.343062,
+        "is_retrograde": false,
+        "speed": 1.251065
+      },
+      "Saturn": {
+        "longitude": 332.110134,
+        "sign_index": 11,
+        "degree_in_sign": 2.110134,
+        "is_retrograde": false,
+        "speed": 0.087823
+      },
+      "Rahu": {
+        "longitude": 18.868468,
+        "sign_index": 0,
+        "degree_in_sign": 18.868468,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 198.868468,
+        "sign_index": 6,
+        "degree_in_sign": 18.868468,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

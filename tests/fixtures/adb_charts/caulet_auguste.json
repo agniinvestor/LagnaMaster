@@ -1,0 +1,108 @@
+{
+  "adb_id": 52075,
+  "name": "Caulet, Auguste",
+  "given_name": "Auguste Caulet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424803.625,
+    "year": 1926,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Montpellier",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 3.883333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caulet,_Auguste",
+  "source_notes": "Gauquelin vol 1 no 582\\n",
+  "categories": [
+    "Vocation : Sports : Boxing"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 0.291587,
+    "lagna": 120.291587,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.834541,
+    "jd_ut": 2424803.625,
+    "planets": {
+      "Sun": {
+        "longitude": 178.174568,
+        "sign_index": 5,
+        "degree_in_sign": 28.174568,
+        "is_retrograde": false,
+        "speed": 0.991234
+      },
+      "Moon": {
+        "longitude": 274.237062,
+        "sign_index": 9,
+        "degree_in_sign": 4.237062,
+        "is_retrograde": false,
+        "speed": 16.825756
+      },
+      "Mars": {
+        "longitude": 24.756034,
+        "sign_index": 0,
+        "degree_in_sign": 24.756034,
+        "is_retrograde": true,
+        "speed": -0.228913
+      },
+      "Mercury": {
+        "longitude": 195.0263,
+        "sign_index": 6,
+        "degree_in_sign": 15.0263,
+        "is_retrograde": false,
+        "speed": 1.476335
+      },
+      "Jupiter": {
+        "longitude": 294.485447,
+        "sign_index": 9,
+        "degree_in_sign": 24.485447,
+        "is_retrograde": false,
+        "speed": 0.003049
+      },
+      "Venus": {
+        "longitude": 168.712018,
+        "sign_index": 5,
+        "degree_in_sign": 18.712018,
+        "is_retrograde": false,
+        "speed": 1.249883
+      },
+      "Saturn": {
+        "longitude": 211.526009,
+        "sign_index": 7,
+        "degree_in_sign": 1.526009,
+        "is_retrograde": false,
+        "speed": 0.105896
+      },
+      "Rahu": {
+        "longitude": 78.267632,
+        "sign_index": 2,
+        "degree_in_sign": 18.267632,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 258.267632,
+        "sign_index": 8,
+        "degree_in_sign": 18.267632,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

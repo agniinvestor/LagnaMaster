@@ -1,0 +1,110 @@
+{
+  "adb_id": 53444,
+  "name": "Cornut-Gentille, Bernard",
+  "given_name": "Bernard Cornut-Gentille",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418514.443507,
+    "year": 1909,
+    "month": 7,
+    "day": 26,
+    "calendar": "g",
+    "time": "22:48",
+    "time_type": "s",
+    "hour": 22.8,
+    "time_unknown": false,
+    "place": "Brest",
+    "country": "France",
+    "lat": 48.4,
+    "lon": -4.483333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornut-Gentille,_Bernard",
+  "source_notes": "Steinbrecher collection: Gauquelin ns 3/0388\\n",
+  "categories": [
+    "Vocation : Politics : Diplomat",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Other Politics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 3.99442,
+    "lagna": 333.99442,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.5941,
+    "jd_ut": 2418514.443507,
+    "planets": {
+      "Sun": {
+        "longitude": 100.659805,
+        "sign_index": 3,
+        "degree_in_sign": 10.659805,
+        "is_retrograde": false,
+        "speed": 0.955504
+      },
+      "Moon": {
+        "longitude": 206.631554,
+        "sign_index": 6,
+        "degree_in_sign": 26.631554,
+        "is_retrograde": false,
+        "speed": 9.784148
+      },
+      "Mars": {
+        "longitude": 339.395227,
+        "sign_index": 11,
+        "degree_in_sign": 9.395227,
+        "is_retrograde": false,
+        "speed": 0.330357
+      },
+      "Mercury": {
+        "longitude": 91.02629,
+        "sign_index": 3,
+        "degree_in_sign": 1.02629,
+        "is_retrograde": false,
+        "speed": 2.041103
+      },
+      "Jupiter": {
+        "longitude": 141.313066,
+        "sign_index": 4,
+        "degree_in_sign": 21.313066,
+        "is_retrograde": false,
+        "speed": 0.186832
+      },
+      "Venus": {
+        "longitude": 124.567471,
+        "sign_index": 4,
+        "degree_in_sign": 4.567471,
+        "is_retrograde": false,
+        "speed": 1.217462
+      },
+      "Saturn": {
+        "longitude": 0.560413,
+        "sign_index": 0,
+        "degree_in_sign": 0.560413,
+        "is_retrograde": false,
+        "speed": 0.016236
+      },
+      "Rahu": {
+        "longitude": 51.544512,
+        "sign_index": 1,
+        "degree_in_sign": 21.544512,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 231.544512,
+        "sign_index": 7,
+        "degree_in_sign": 21.544512,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

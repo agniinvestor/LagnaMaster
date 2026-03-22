@@ -1,0 +1,111 @@
+{
+  "adb_id": 85461,
+  "name": "Craig, Catherine",
+  "given_name": "Catherine Craig",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420516.256944,
+    "year": 1915,
+    "month": 1,
+    "day": 18,
+    "calendar": "g",
+    "time": "12:10",
+    "time_type": "s",
+    "hour": 12.166667,
+    "time_unknown": false,
+    "place": "Bloomington",
+    "country": "Indiana",
+    "lat": 39.166667,
+    "lon": -86.533333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Craig,_Catherine",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Mate - Noted",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 5.434327,
+    "lagna": 5.434327,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.670629,
+    "jd_ut": 2420516.256944,
+    "planets": {
+      "Sun": {
+        "longitude": 274.915974,
+        "sign_index": 9,
+        "degree_in_sign": 4.915974,
+        "is_retrograde": false,
+        "speed": 1.018348
+      },
+      "Moon": {
+        "longitude": 314.51573,
+        "sign_index": 10,
+        "degree_in_sign": 14.51573,
+        "is_retrograde": false,
+        "speed": 9.415576
+      },
+      "Mars": {
+        "longitude": 268.40761,
+        "sign_index": 8,
+        "degree_in_sign": 28.40761,
+        "is_retrograde": false,
+        "speed": 0.772634
+      },
+      "Mercury": {
+        "longitude": 283.385582,
+        "sign_index": 9,
+        "degree_in_sign": 13.385582,
+        "is_retrograde": false,
+        "speed": 1.704562
+      },
+      "Jupiter": {
+        "longitude": 303.554773,
+        "sign_index": 10,
+        "degree_in_sign": 3.554773,
+        "is_retrograde": false,
+        "speed": 0.225997
+      },
+      "Venus": {
+        "longitude": 229.762306,
+        "sign_index": 7,
+        "degree_in_sign": 19.762306,
+        "is_retrograde": false,
+        "speed": 0.82799
+      },
+      "Saturn": {
+        "longitude": 64.010465,
+        "sign_index": 2,
+        "degree_in_sign": 4.010465,
+        "is_retrograde": true,
+        "speed": -0.06449
+      },
+      "Rahu": {
+        "longitude": 305.464219,
+        "sign_index": 10,
+        "degree_in_sign": 5.464219,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 125.464219,
+        "sign_index": 4,
+        "degree_in_sign": 5.464219,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

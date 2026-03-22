@@ -1,0 +1,109 @@
+{
+  "adb_id": 14055,
+  "name": "Canè, Paolo",
+  "given_name": "Paolo Canè",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438869.625,
+    "year": 1965,
+    "month": 4,
+    "day": 19,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Bologna",
+    "country": "Italy",
+    "lat": 44.483333,
+    "lon": 11.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sag",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canè,_Paolo",
+  "source_notes": "Bordoni quotes B.C. Vol 4\\n",
+  "categories": [
+    "Vocation : Sports : Tennis",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 0.698061,
+    "lagna": 300.698061,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.372363,
+    "jd_ut": 2438869.625,
+    "planets": {
+      "Sun": {
+        "longitude": 5.476108,
+        "sign_index": 0,
+        "degree_in_sign": 5.476108,
+        "is_retrograde": false,
+        "speed": 0.976351
+      },
+      "Moon": {
+        "longitude": 223.046819,
+        "sign_index": 7,
+        "degree_in_sign": 13.046819,
+        "is_retrograde": false,
+        "speed": 8.48218
+      },
+      "Mars": {
+        "longitude": 135.356462,
+        "sign_index": 4,
+        "degree_in_sign": 15.356462,
+        "is_retrograde": true,
+        "speed": -0.009791
+      },
+      "Mercury": {
+        "longitude": 348.775173,
+        "sign_index": 11,
+        "degree_in_sign": 18.775173,
+        "is_retrograde": true,
+        "speed": -0.257965
+      },
+      "Jupiter": {
+        "longitude": 35.868253,
+        "sign_index": 1,
+        "degree_in_sign": 5.868253,
+        "is_retrograde": false,
+        "speed": 0.218169
+      },
+      "Venus": {
+        "longitude": 7.27615,
+        "sign_index": 0,
+        "degree_in_sign": 7.27615,
+        "is_retrograde": false,
+        "speed": 1.236502
+      },
+      "Saturn": {
+        "longitude": 320.112264,
+        "sign_index": 10,
+        "degree_in_sign": 20.112264,
+        "is_retrograde": false,
+        "speed": 0.097617
+      },
+      "Rahu": {
+        "longitude": 52.881265,
+        "sign_index": 1,
+        "degree_in_sign": 22.881265,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 232.881265,
+        "sign_index": 7,
+        "degree_in_sign": 22.881265,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

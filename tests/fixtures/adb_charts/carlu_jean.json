@@ -1,0 +1,114 @@
+{
+  "adb_id": 37051,
+  "name": "Carlu, Jean",
+  "given_name": "Jean Carlu",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415142.785174,
+    "year": 1900,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlu,_Jean",
+  "source_notes": "Birth and death certificates in Didier Geslain archive, 'bd_pub_affichistes' pdf file, pp. 37-39.\\nSame data from Petitallot quotes B.C., Cadran No. 43, July-August 1997\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Business : Top executive",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 10.834225,
+    "lagna": 40.834225,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.465205,
+    "jd_ut": 2415142.785174,
+    "planets": {
+      "Sun": {
+        "longitude": 19.904233,
+        "sign_index": 0,
+        "degree_in_sign": 19.904233,
+        "is_retrograde": false,
+        "speed": 0.969251
+      },
+      "Moon": {
+        "longitude": 72.642731,
+        "sign_index": 2,
+        "degree_in_sign": 12.642731,
+        "is_retrograde": false,
+        "speed": 15.454925
+      },
+      "Mars": {
+        "longitude": 356.87522,
+        "sign_index": 11,
+        "degree_in_sign": 26.87522,
+        "is_retrograde": false,
+        "speed": 0.76168
+      },
+      "Mercury": {
+        "longitude": 355.457532,
+        "sign_index": 11,
+        "degree_in_sign": 25.457532,
+        "is_retrograde": false,
+        "speed": 1.431659
+      },
+      "Jupiter": {
+        "longitude": 226.435971,
+        "sign_index": 7,
+        "degree_in_sign": 16.435971,
+        "is_retrograde": true,
+        "speed": -0.10126
+      },
+      "Venus": {
+        "longitude": 65.331697,
+        "sign_index": 2,
+        "degree_in_sign": 5.331697,
+        "is_retrograde": false,
+        "speed": 0.937372
+      },
+      "Saturn": {
+        "longitude": 252.278322,
+        "sign_index": 8,
+        "degree_in_sign": 12.278322,
+        "is_retrograde": true,
+        "speed": -0.030124
+      },
+      "Rahu": {
+        "longitude": 230.215785,
+        "sign_index": 7,
+        "degree_in_sign": 20.215785,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 50.215785,
+        "sign_index": 1,
+        "degree_in_sign": 20.215785,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

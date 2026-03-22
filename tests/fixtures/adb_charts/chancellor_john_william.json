@@ -1,0 +1,117 @@
+{
+  "adb_id": 254,
+  "name": "Chancellor, John William",
+  "given_name": "John William Chancellor",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425075.811806,
+    "year": 1927,
+    "month": 7,
+    "day": 14,
+    "calendar": "g",
+    "time": "01:29",
+    "time_type": "s",
+    "hour": 1.483333,
+    "time_unknown": false,
+    "place": "Chicago",
+    "country": "USA",
+    "lat": 41.866667,
+    "lon": -87.65
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chancellor,_John_William",
+  "source_notes": "B.C. in hand from the Wilsons\\n",
+  "categories": [
+    "Traits : Personality : Humorous, Witty",
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Entertainment : News journalist/ Anchor",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Military : Military service",
+    "Vocation : Writers : Columnist/ journalist",
+    "Notable : Extraordinary Talents : For Verbal skills",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 22.742904,
+    "lagna": 22.742904,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.844947,
+    "jd_ut": 2425075.811806,
+    "planets": {
+      "Sun": {
+        "longitude": 88.024281,
+        "sign_index": 2,
+        "degree_in_sign": 28.024281,
+        "is_retrograde": false,
+        "speed": 0.953312
+      },
+      "Moon": {
+        "longitude": 261.331997,
+        "sign_index": 8,
+        "degree_in_sign": 21.331997,
+        "is_retrograde": false,
+        "speed": 9.745973
+      },
+      "Mars": {
+        "longitude": 120.317467,
+        "sign_index": 4,
+        "degree_in_sign": 0.317467,
+        "is_retrograde": false,
+        "speed": 0.619017
+      },
+      "Mercury": {
+        "longitude": 97.083439,
+        "sign_index": 3,
+        "degree_in_sign": 7.083439,
+        "is_retrograde": true,
+        "speed": -0.54925
+      },
+      "Jupiter": {
+        "longitude": 340.50928,
+        "sign_index": 11,
+        "degree_in_sign": 10.50928,
+        "is_retrograde": false,
+        "speed": 0.033113
+      },
+      "Venus": {
+        "longitude": 132.937139,
+        "sign_index": 4,
+        "degree_in_sign": 12.937139,
+        "is_retrograde": false,
+        "speed": 0.85246
+      },
+      "Saturn": {
+        "longitude": 218.583176,
+        "sign_index": 7,
+        "degree_in_sign": 8.583176,
+        "is_retrograde": true,
+        "speed": -0.034945
+      },
+      "Rahu": {
+        "longitude": 63.843887,
+        "sign_index": 2,
+        "degree_in_sign": 3.843887,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 243.843887,
+        "sign_index": 8,
+        "degree_in_sign": 3.843887,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 64926,
+  "name": "Carayon, Bernard",
+  "given_name": "Bernard Carayon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436112.746528,
+    "year": 1957,
+    "month": 10,
+    "day": 1,
+    "calendar": "g",
+    "time": "06:55",
+    "time_type": "s",
+    "hour": 6.916667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carayon,_Bernard",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 47.\\n",
+  "categories": [
+    "Vocation : Business : Economist",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.317093,
+    "lagna": 141.317093,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.266945,
+    "jd_ut": 2436112.746528,
+    "planets": {
+      "Sun": {
+        "longitude": 164.520727,
+        "sign_index": 5,
+        "degree_in_sign": 14.520727,
+        "is_retrograde": false,
+        "speed": 0.983536
+      },
+      "Moon": {
+        "longitude": 260.236056,
+        "sign_index": 8,
+        "degree_in_sign": 20.236056,
+        "is_retrograde": false,
+        "speed": 16.016892
+      },
+      "Mars": {
+        "longitude": 161.305115,
+        "sign_index": 5,
+        "degree_in_sign": 11.305115,
+        "is_retrograde": false,
+        "speed": 0.649499
+      },
+      "Mercury": {
+        "longitude": 148.274983,
+        "sign_index": 4,
+        "degree_in_sign": 28.274983,
+        "is_retrograde": false,
+        "speed": 1.498389
+      },
+      "Jupiter": {
+        "longitude": 167.916735,
+        "sign_index": 5,
+        "degree_in_sign": 17.916735,
+        "is_retrograde": false,
+        "speed": 0.216223
+      },
+      "Venus": {
+        "longitude": 206.585915,
+        "sign_index": 6,
+        "degree_in_sign": 26.585915,
+        "is_retrograde": false,
+        "speed": 1.158831
+      },
+      "Saturn": {
+        "longitude": 226.374511,
+        "sign_index": 7,
+        "degree_in_sign": 16.374511,
+        "is_retrograde": false,
+        "speed": 0.074615
+      },
+      "Rahu": {
+        "longitude": 198.973904,
+        "sign_index": 6,
+        "degree_in_sign": 18.973904,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.973904,
+        "sign_index": 0,
+        "degree_in_sign": 18.973904,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

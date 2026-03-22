@@ -1,0 +1,111 @@
+{
+  "adb_id": 89737,
+  "name": "Cohn, Chad",
+  "given_name": "Chad Cohn",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2445559.307639,
+    "year": 1983,
+    "month": 8,
+    "day": 12,
+    "calendar": "g",
+    "time": "12:23",
+    "time_type": "s",
+    "hour": 12.383333,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohn,_Chad",
+  "source_notes": "Sy Scholfield provided copy of birth notice, ''Tucson Citizen'' (Tucson, Arizona), 16 August 1983, page E6, born at Tucson Medical Center. \\n",
+  "categories": [
+    "Vocation : Sports : Football",
+    "Notable : Awards : Medals",
+    "Notable : Awards : Olympics",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 25.507252,
+    "lagna": 175.507252,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.62818,
+    "jd_ut": 2445559.307639,
+    "planets": {
+      "Sun": {
+        "longitude": 115.88905,
+        "sign_index": 3,
+        "degree_in_sign": 25.88905,
+        "is_retrograde": false,
+        "speed": 0.960015
+      },
+      "Moon": {
+        "longitude": 172.547804,
+        "sign_index": 5,
+        "degree_in_sign": 22.547804,
+        "is_retrograde": false,
+        "speed": 11.574029
+      },
+      "Mars": {
+        "longitude": 95.795996,
+        "sign_index": 3,
+        "degree_in_sign": 5.795996,
+        "is_retrograde": false,
+        "speed": 0.647371
+      },
+      "Mercury": {
+        "longitude": 142.335188,
+        "sign_index": 4,
+        "degree_in_sign": 22.335188,
+        "is_retrograde": false,
+        "speed": 1.223214
+      },
+      "Jupiter": {
+        "longitude": 217.765107,
+        "sign_index": 7,
+        "degree_in_sign": 7.765107,
+        "is_retrograde": false,
+        "speed": 0.043777
+      },
+      "Venus": {
+        "longitude": 134.295854,
+        "sign_index": 4,
+        "degree_in_sign": 14.295854,
+        "is_retrograde": true,
+        "speed": -0.349616
+      },
+      "Saturn": {
+        "longitude": 185.527035,
+        "sign_index": 6,
+        "degree_in_sign": 5.527035,
+        "is_retrograde": false,
+        "speed": 0.065177
+      },
+      "Rahu": {
+        "longitude": 58.381353,
+        "sign_index": 1,
+        "degree_in_sign": 28.381353,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 238.381353,
+        "sign_index": 7,
+        "degree_in_sign": 28.381353,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

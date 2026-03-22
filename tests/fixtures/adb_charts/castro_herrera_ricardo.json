@@ -1,0 +1,109 @@
+{
+  "adb_id": 70486,
+  "name": "Castro Herrera, Ricardo",
+  "given_name": "Ricardo Castro Herrera",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2401909.457407,
+    "year": 1864,
+    "month": 2,
+    "day": 7,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "l",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Durango",
+    "country": "Mexico",
+    "lat": 24.033333,
+    "lon": -104.666667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro_Herrera,_Ricardo",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 11.347488,
+    "lagna": 71.347488,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.959363,
+    "jd_ut": 2401909.457407,
+    "planets": {
+      "Sun": {
+        "longitude": 296.53159,
+        "sign_index": 9,
+        "degree_in_sign": 26.53159,
+        "is_retrograde": false,
+        "speed": 1.01271
+      },
+      "Moon": {
+        "longitude": 298.515171,
+        "sign_index": 9,
+        "degree_in_sign": 28.515171,
+        "is_retrograde": false,
+        "speed": 12.584492
+      },
+      "Mars": {
+        "longitude": 255.990302,
+        "sign_index": 8,
+        "degree_in_sign": 15.990302,
+        "is_retrograde": false,
+        "speed": 0.731651
+      },
+      "Mercury": {
+        "longitude": 273.729457,
+        "sign_index": 9,
+        "degree_in_sign": 3.729457,
+        "is_retrograde": false,
+        "speed": 0.219639
+      },
+      "Jupiter": {
+        "longitude": 213.843366,
+        "sign_index": 7,
+        "degree_in_sign": 3.843366,
+        "is_retrograde": false,
+        "speed": 0.100563
+      },
+      "Venus": {
+        "longitude": 256.892997,
+        "sign_index": 8,
+        "degree_in_sign": 16.892997,
+        "is_retrograde": false,
+        "speed": 1.198489
+      },
+      "Saturn": {
+        "longitude": 175.990012,
+        "sign_index": 5,
+        "degree_in_sign": 25.990012,
+        "is_retrograde": true,
+        "speed": -0.020327
+      },
+      "Rahu": {
+        "longitude": 211.477932,
+        "sign_index": 7,
+        "degree_in_sign": 1.477932,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 31.477932,
+        "sign_index": 1,
+        "degree_in_sign": 1.477932,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

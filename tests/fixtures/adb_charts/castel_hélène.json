@@ -1,0 +1,109 @@
+{
+  "adb_id": 68319,
+  "name": "Castel, Hélène",
+  "given_name": "Hélène Castel",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436777.357639,
+    "year": 1959,
+    "month": 7,
+    "day": 27,
+    "calendar": "g",
+    "time": "21:35",
+    "time_type": "s",
+    "hour": 21.583333,
+    "time_unknown": false,
+    "place": "Amiens",
+    "country": "France",
+    "lat": 49.9,
+    "lon": 2.3
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castel,_Hélène",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 182.\\n",
+  "categories": [
+    "Vocation : Healing Fields : Psychologist",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 12.994485,
+    "lagna": 282.994485,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.292358,
+    "jd_ut": 2436777.357639,
+    "planets": {
+      "Sun": {
+        "longitude": 100.758955,
+        "sign_index": 3,
+        "degree_in_sign": 10.758955,
+        "is_retrograde": false,
+        "speed": 0.955616
+      },
+      "Moon": {
+        "longitude": 13.707719,
+        "sign_index": 0,
+        "degree_in_sign": 13.707719,
+        "is_retrograde": false,
+        "speed": 14.641892
+      },
+      "Mars": {
+        "longitude": 131.300353,
+        "sign_index": 4,
+        "degree_in_sign": 11.300353,
+        "is_retrograde": false,
+        "speed": 0.62287
+      },
+      "Mercury": {
+        "longitude": 115.051806,
+        "sign_index": 3,
+        "degree_in_sign": 25.051806,
+        "is_retrograde": true,
+        "speed": -0.406551
+      },
+      "Jupiter": {
+        "longitude": 208.916637,
+        "sign_index": 6,
+        "degree_in_sign": 28.916637,
+        "is_retrograde": false,
+        "speed": 0.022583
+      },
+      "Venus": {
+        "longitude": 139.380522,
+        "sign_index": 4,
+        "degree_in_sign": 19.380522,
+        "is_retrograde": false,
+        "speed": 0.45651
+      },
+      "Saturn": {
+        "longitude": 248.331897,
+        "sign_index": 8,
+        "degree_in_sign": 8.331897,
+        "is_retrograde": true,
+        "speed": -0.055961
+      },
+      "Rahu": {
+        "longitude": 163.754798,
+        "sign_index": 5,
+        "degree_in_sign": 13.754798,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 343.754798,
+        "sign_index": 11,
+        "degree_in_sign": 13.754798,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

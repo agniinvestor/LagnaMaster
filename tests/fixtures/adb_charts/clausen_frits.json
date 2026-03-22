@@ -1,0 +1,113 @@
+{
+  "adb_id": 98944,
+  "name": "Clausen, Frits",
+  "given_name": "Frits Clausen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412780.121296,
+    "year": 1893,
+    "month": 11,
+    "day": 12,
+    "calendar": "g",
+    "time": "15:45",
+    "time_type": "s",
+    "hour": 15.75,
+    "time_unknown": false,
+    "place": "Åbenrå",
+    "country": "Denmark",
+    "lat": 55.033333,
+    "lon": 9.433333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clausen,_Frits",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file (no. 142). The certificate is handwritten in German language recording place of birth as \"Apenade\" which is German for Åbenrå.\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Medical : Surgeon",
+    "Vocation : Military : Military service",
+    "Vocation : Military : POW/ MIA",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 24.615515,
+    "lagna": 354.615515,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.374887,
+    "jd_ut": 2412780.121296,
+    "planets": {
+      "Sun": {
+        "longitude": 208.112026,
+        "sign_index": 6,
+        "degree_in_sign": 28.112026,
+        "is_retrograde": false,
+        "speed": 1.007372
+      },
+      "Moon": {
+        "longitude": 252.591805,
+        "sign_index": 8,
+        "degree_in_sign": 12.591805,
+        "is_retrograde": false,
+        "speed": 8.65217
+      },
+      "Mars": {
+        "longitude": 184.518461,
+        "sign_index": 6,
+        "degree_in_sign": 4.518461,
+        "is_retrograde": false,
+        "speed": 0.659761
+      },
+      "Mercury": {
+        "longitude": 229.617876,
+        "sign_index": 7,
+        "degree_in_sign": 19.617876,
+        "is_retrograde": false,
+        "speed": 0.482313
+      },
+      "Jupiter": {
+        "longitude": 34.794868,
+        "sign_index": 1,
+        "degree_in_sign": 4.794868,
+        "is_retrograde": true,
+        "speed": -0.13495
+      },
+      "Venus": {
+        "longitude": 253.823615,
+        "sign_index": 8,
+        "degree_in_sign": 13.823615,
+        "is_retrograde": false,
+        "speed": 1.121421
+      },
+      "Saturn": {
+        "longitude": 177.554132,
+        "sign_index": 5,
+        "degree_in_sign": 27.554132,
+        "is_retrograde": false,
+        "speed": 0.111186
+      },
+      "Rahu": {
+        "longitude": 355.418331,
+        "sign_index": 11,
+        "degree_in_sign": 25.418331,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 175.418331,
+        "sign_index": 5,
+        "degree_in_sign": 25.418331,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

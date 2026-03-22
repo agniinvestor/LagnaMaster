@@ -1,0 +1,117 @@
+{
+  "adb_id": 26658,
+  "name": "Collin, Rodney",
+  "given_name": "Rodney Collin",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2418422.875,
+    "year": 1909,
+    "month": 4,
+    "day": 26,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Brighton",
+    "country": "England",
+    "lat": 50.833333,
+    "lon": -0.133333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collin,_Rodney",
+  "source_notes": "Taeger Lexikon quotes Harding and Harvey, \"Working with Astrology,\" Arkana, London, 1990, from a recorded source.  Andrew Smith collection.\\n",
+  "categories": [
+    "Traits : Mind : Other Mind",
+    "Traits : Personality : Gracious/ sociable",
+    "Lifestyle : Financial : Gain - Money Through Marriage",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Religion/Spirituality : Metaphysical",
+    "Personal : Death : Accidental",
+    "Vocation : Business : Business owner",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 2.21518,
+    "lagna": 62.21518,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.590599,
+    "jd_ut": 2418422.875,
+    "planets": {
+      "Sun": {
+        "longitude": 12.896373,
+        "sign_index": 0,
+        "degree_in_sign": 12.896373,
+        "is_retrograde": false,
+        "speed": 0.972624
+      },
+      "Moon": {
+        "longitude": 92.304872,
+        "sign_index": 3,
+        "degree_in_sign": 2.304872,
+        "is_retrograde": false,
+        "speed": 14.536455
+      },
+      "Mars": {
+        "longitude": 288.367531,
+        "sign_index": 9,
+        "degree_in_sign": 18.367531,
+        "is_retrograde": false,
+        "speed": 0.658079
+      },
+      "Mercury": {
+        "longitude": 18.005684,
+        "sign_index": 0,
+        "degree_in_sign": 18.005684,
+        "is_retrograde": false,
+        "speed": 2.139305
+      },
+      "Jupiter": {
+        "longitude": 131.985525,
+        "sign_index": 4,
+        "degree_in_sign": 11.985525,
+        "is_retrograde": true,
+        "speed": -0.016173
+      },
+      "Venus": {
+        "longitude": 12.274603,
+        "sign_index": 0,
+        "degree_in_sign": 12.274603,
+        "is_retrograde": false,
+        "speed": 1.234839
+      },
+      "Saturn": {
+        "longitude": 353.321412,
+        "sign_index": 11,
+        "degree_in_sign": 23.321412,
+        "is_retrograde": false,
+        "speed": 0.121112
+      },
+      "Rahu": {
+        "longitude": 56.39692,
+        "sign_index": 1,
+        "degree_in_sign": 26.39692,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 236.39692,
+        "sign_index": 7,
+        "degree_in_sign": 26.39692,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

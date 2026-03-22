@@ -1,110 +1,119 @@
 {
-  "adb_slug": "Chekhov,_Anton",
-  "name": "Anton Chekhov",
-  "source": "astro-databank",
-  "rodden_rating": "AA",
-  "adb_url": "https://www.astro.com/astro-databank/Chekhov,_Anton",
+  "adb_id": 2499,
+  "name": "Chekhov, Anton",
+  "given_name": "Anton Chekhov",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
   "birth_data": {
+    "jd_ut": 2400438.398796,
     "year": 1860,
     "month": 1,
-    "day": 1,
-    "hour": 12.0,
-    "lat": 0.0,
-    "lon": 0.0,
-    "tz_offset": 0.0,
-    "ayanamsha": "lahiri"
+    "day": 17,
+    "calendar": "j",
+    "time": "00:10",
+    "time_type": "l",
+    "hour": 0.166667,
+    "time_unknown": false,
+    "place": "Taganrog",
+    "country": "Russian Federation",
+    "lat": 47.2,
+    "lon": 38.933333
   },
-  "birth_place": "Russia",
-  "country": "Russia",
-  "data_trust_level": "low",
-  "assert_lagna": false,
-  "trust_note": "Stub — fetch blocked",
-  "expected": {},
-  "chart": {
-    "lagna": 349.3817508962085,
-    "lagna_sign": "Pisces",
-    "lagna_sign_index": 11,
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chekhov,_Anton",
+  "source_notes": "Bordoni quotes a biography, \"At midnight someone called to tell his father that the baby was coming.  He returned in 20 minutes and said it was a boy.\"  (AA, 3/1980, wrote, \"about daybreak is accepted in Russia as Chekhov's birth time\")\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Tuberculosis",
+    "Family : Relationship : Marriage less than 3 Yrs",
+    "Family : Relationship : Married late/never",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids none",
+    "Vocation : Medical : Physician",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Extraordinary Talents : For Creativity",
+    "Notable : Famous : Historic figure",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 15.675899,
+    "lagna": 165.675899,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.903137,
+    "jd_ut": 2400438.398796,
     "planets": {
       "Sun": {
-        "longitude": 258.4587648664217,
-        "sign_index": 8,
-        "sign": "Sagittarius",
-        "degree_in_sign": 18.45876486642169,
-        "is_retrograde": false
+        "longitude": 286.353369,
+        "sign_index": 9,
+        "degree_in_sign": 16.353369,
+        "is_retrograde": false,
+        "speed": 1.015689
       },
       "Moon": {
-        "longitude": 349.0176532521957,
+        "longitude": 349.394175,
         "sign_index": 11,
-        "sign": "Pisces",
-        "degree_in_sign": 19.017653252195714,
-        "is_retrograde": false
+        "degree_in_sign": 19.394175,
+        "is_retrograde": false,
+        "speed": 13.644961
       },
       "Mars": {
-        "longitude": 199.81687734084306,
-        "sign_index": 6,
-        "sign": "Libra",
-        "degree_in_sign": 19.816877340843064,
-        "is_retrograde": false
+        "longitude": 216.601513,
+        "sign_index": 7,
+        "degree_in_sign": 6.601513,
+        "is_retrograde": false,
+        "speed": 0.605537
       },
       "Mercury": {
-        "longitude": 235.74837706405322,
-        "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 25.748377064053216,
-        "is_retrograde": false
+        "longitude": 271.777411,
+        "sign_index": 9,
+        "degree_in_sign": 1.777411,
+        "is_retrograde": false,
+        "speed": 1.54362
       },
       "Jupiter": {
-        "longitude": 89.61186620796593,
+        "longitude": 86.026843,
         "sign_index": 2,
-        "sign": "Gemini",
-        "degree_in_sign": 29.61186620796593,
-        "is_retrograde": true
+        "degree_in_sign": 26.026843,
+        "is_retrograde": true,
+        "speed": -0.118967
       },
       "Venus": {
-        "longitude": 281.8663811369583,
-        "sign_index": 9,
-        "sign": "Capricorn",
-        "degree_in_sign": 11.866381136958296,
-        "is_retrograde": false
+        "longitude": 315.875015,
+        "sign_index": 10,
+        "degree_in_sign": 15.875015,
+        "is_retrograde": false,
+        "speed": 1.234028
       },
       "Saturn": {
-        "longitude": 123.59312764164441,
+        "longitude": 121.87456,
         "sign_index": 4,
-        "sign": "Leo",
-        "degree_in_sign": 3.593127641644415,
-        "is_retrograde": true
+        "degree_in_sign": 1.87456,
+        "is_retrograde": true,
+        "speed": -0.076602
       },
       "Rahu": {
-        "longitude": 290.8844029127495,
+        "longitude": 289.432482,
         "sign_index": 9,
-        "sign": "Capricorn",
-        "degree_in_sign": 20.884402912749522,
-        "is_retrograde": true
+        "degree_in_sign": 19.432482,
+        "is_retrograde": true,
+        "speed": -0.052992
       },
       "Ketu": {
-        "longitude": 110.88440291274952,
+        "longitude": 109.432482,
         "sign_index": 3,
-        "sign": "Cancer",
-        "degree_in_sign": 20.884402912749522,
-        "is_retrograde": true
+        "degree_in_sign": 19.432482,
+        "is_retrograde": true,
+        "speed": 0.0
       }
     }
-  },
-  "scores": {
-    "1": 4.0,
-    "2": -2.5,
-    "3": -3.625,
-    "4": 3.0,
-    "5": 1.375,
-    "6": 0.75,
-    "7": 1.625,
-    "8": -3.125,
-    "9": -1.25,
-    "10": 1.625,
-    "11": -4.5,
-    "12": -2.875
-  },
-  "fetch_status": "blocked",
-  "engine_version": "v3.0.0",
-  "computed_date": "2026-03-22"
+  }
 }

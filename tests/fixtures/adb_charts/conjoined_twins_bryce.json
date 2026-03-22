@@ -1,0 +1,110 @@
+{
+  "adb_id": 54768,
+  "name": "Conjoined Twins: Bryce",
+  "given_name": "Conjoined Twins: Bryce",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2451836.275,
+    "year": 2000,
+    "month": 10,
+    "day": 18,
+    "calendar": "g",
+    "time": "11:36",
+    "time_type": "d",
+    "hour": 11.6,
+    "time_unknown": false,
+    "place": "Portland",
+    "country": "Oregon",
+    "lat": 45.516667,
+    "lon": -122.683333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Bryce",
+  "source_notes": "Sy Scholfield quotes news at the time\\n",
+  "categories": [
+    "Personal : Birth : Cesarean",
+    "Personal : Birth : Conjoined twins",
+    "Personal : Birth : Defects, Handicaps"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 23.290051,
+    "lagna": 203.290051,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.868232,
+    "jd_ut": 2451836.275,
+    "planets": {
+      "Sun": {
+        "longitude": 181.818699,
+        "sign_index": 6,
+        "degree_in_sign": 1.818699,
+        "is_retrograde": false,
+        "speed": 0.993176
+      },
+      "Moon": {
+        "longitude": 70.740937,
+        "sign_index": 2,
+        "degree_in_sign": 10.740937,
+        "is_retrograde": false,
+        "speed": 14.135319
+      },
+      "Mars": {
+        "longitude": 146.035519,
+        "sign_index": 4,
+        "degree_in_sign": 26.035519,
+        "is_retrograde": false,
+        "speed": 0.62187
+      },
+      "Mercury": {
+        "longitude": 201.933014,
+        "sign_index": 6,
+        "degree_in_sign": 21.933014,
+        "is_retrograde": true,
+        "speed": -0.026465
+      },
+      "Jupiter": {
+        "longitude": 46.754493,
+        "sign_index": 1,
+        "degree_in_sign": 16.754493,
+        "is_retrograde": true,
+        "speed": -0.063393
+      },
+      "Venus": {
+        "longitude": 215.544525,
+        "sign_index": 7,
+        "degree_in_sign": 5.544525,
+        "is_retrograde": false,
+        "speed": 1.214236
+      },
+      "Saturn": {
+        "longitude": 35.978275,
+        "sign_index": 1,
+        "degree_in_sign": 5.978275,
+        "is_retrograde": true,
+        "speed": -0.059583
+      },
+      "Rahu": {
+        "longitude": 85.752176,
+        "sign_index": 2,
+        "degree_in_sign": 25.752176,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 265.752176,
+        "sign_index": 8,
+        "degree_in_sign": 25.752176,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

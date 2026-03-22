@@ -1,0 +1,112 @@
+{
+  "adb_id": 72673,
+  "name": "Connally, Nellie",
+  "given_name": "Nellie Connally",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422014.722917,
+    "year": 1919,
+    "month": 2,
+    "day": 24,
+    "calendar": "g",
+    "time": "23:21",
+    "time_type": "s",
+    "hour": 23.35,
+    "time_unknown": false,
+    "place": "Austin",
+    "country": "Texas",
+    "lat": 30.266667,
+    "lon": -97.75
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connally,_Nellie",
+  "source_notes": "Sy Scholfield quotes birth certificate [https://familysearch.org/ark:/61903/1:1:X2JP-R99].\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Diagnoses : Body Part Problems : Other body problems",
+    "Lifestyle : Financial : Philanthropist",
+    "Vocation : Politics : Other Politics",
+    "Vocation : Writers : Autobiographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 24.58518,
+    "lagna": 174.58518,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.727916,
+    "jd_ut": 2422014.722917,
+    "planets": {
+      "Sun": {
+        "longitude": 312.828054,
+        "sign_index": 10,
+        "degree_in_sign": 12.828054,
+        "is_retrograde": false,
+        "speed": 1.005669
+      },
+      "Moon": {
+        "longitude": 247.439998,
+        "sign_index": 8,
+        "degree_in_sign": 7.439998,
+        "is_retrograde": false,
+        "speed": 15.816075
+      },
+      "Mars": {
+        "longitude": 329.836888,
+        "sign_index": 10,
+        "degree_in_sign": 29.836888,
+        "is_retrograde": false,
+        "speed": 0.779595
+      },
+      "Mercury": {
+        "longitude": 313.965001,
+        "sign_index": 10,
+        "degree_in_sign": 13.965001,
+        "is_retrograde": false,
+        "speed": 1.869378
+      },
+      "Jupiter": {
+        "longitude": 73.075501,
+        "sign_index": 2,
+        "degree_in_sign": 13.075501,
+        "is_retrograde": true,
+        "speed": -0.018175
+      },
+      "Venus": {
+        "longitude": 334.976755,
+        "sign_index": 11,
+        "degree_in_sign": 4.976755,
+        "is_retrograde": false,
+        "speed": 1.239388
+      },
+      "Saturn": {
+        "longitude": 121.245975,
+        "sign_index": 4,
+        "degree_in_sign": 1.245975,
+        "is_retrograde": true,
+        "speed": -0.078591
+      },
+      "Rahu": {
+        "longitude": 226.057372,
+        "sign_index": 7,
+        "degree_in_sign": 16.057372,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 46.057372,
+        "sign_index": 1,
+        "degree_in_sign": 16.057372,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 2104,
+  "name": "Courbet, Gustave",
+  "given_name": "Gustave Courbet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2385595.607917,
+    "year": 1819,
+    "month": 6,
+    "day": 10,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "l",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Ornans",
+    "country": "France",
+    "lat": 47.1,
+    "lon": 6.15
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "cap",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courbet,_Gustave",
+  "source_notes": "Gauquelin Vol. 4/253\\n",
+  "categories": [
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Passions : Criminal Perpetrator : Civil/ Political",
+    "Passions : Criminal Perpetrator : Prison sentence",
+    "Vocation : Art : Fine art artist",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 14.772703,
+    "lagna": 14.772703,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.335878,
+    "jd_ut": 2385595.607917,
+    "planets": {
+      "Sun": {
+        "longitude": 56.997244,
+        "sign_index": 1,
+        "degree_in_sign": 26.997244,
+        "is_retrograde": false,
+        "speed": 0.955102
+      },
+      "Moon": {
+        "longitude": 261.341035,
+        "sign_index": 8,
+        "degree_in_sign": 21.341035,
+        "is_retrograde": false,
+        "speed": 11.043257
+      },
+      "Mars": {
+        "longitude": 8.982355,
+        "sign_index": 0,
+        "degree_in_sign": 8.982355,
+        "is_retrograde": false,
+        "speed": 0.739298
+      },
+      "Mercury": {
+        "longitude": 35.740076,
+        "sign_index": 1,
+        "degree_in_sign": 5.740076,
+        "is_retrograde": false,
+        "speed": 1.509595
+      },
+      "Jupiter": {
+        "longitude": 295.82568,
+        "sign_index": 9,
+        "degree_in_sign": 25.82568,
+        "is_retrograde": true,
+        "speed": -0.012919
+      },
+      "Venus": {
+        "longitude": 25.322368,
+        "sign_index": 0,
+        "degree_in_sign": 25.322368,
+        "is_retrograde": false,
+        "speed": 1.190744
+      },
+      "Saturn": {
+        "longitude": 338.51142,
+        "sign_index": 11,
+        "degree_in_sign": 8.51142,
+        "is_retrograde": false,
+        "speed": 0.053288
+      },
+      "Rahu": {
+        "longitude": 355.984107,
+        "sign_index": 11,
+        "degree_in_sign": 25.984107,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 175.984107,
+        "sign_index": 5,
+        "degree_in_sign": 25.984107,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

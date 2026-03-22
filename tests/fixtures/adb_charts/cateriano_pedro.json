@@ -1,0 +1,109 @@
+{
+  "adb_id": 67285,
+  "name": "Cateriano, Pedro",
+  "given_name": "Pedro Cateriano",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436381.465278,
+    "year": 1958,
+    "month": 6,
+    "day": 26,
+    "calendar": "g",
+    "time": "18:10",
+    "time_type": "s",
+    "hour": 18.166667,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cateriano,_Pedro",
+  "source_notes": "Eduardo Castellanos quotes [https://dl.dropboxusercontent.com/u/74292393/datos%20natales/Registro%20de%20nacimiento%20de%20Pedro%20Cateriano%20Bellido.jpg Birth Certificate]\\n",
+  "categories": [
+    "Vocation : Law : Other Law",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.854838,
+    "lagna": 232.854838,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.27722,
+    "jd_ut": 2436381.465278,
+    "planets": {
+      "Sun": {
+        "longitude": 71.538098,
+        "sign_index": 2,
+        "degree_in_sign": 11.538098,
+        "is_retrograde": false,
+        "speed": 0.953382
+      },
+      "Moon": {
+        "longitude": 195.891095,
+        "sign_index": 6,
+        "degree_in_sign": 15.891095,
+        "is_retrograde": false,
+        "speed": 9.699669
+      },
+      "Mars": {
+        "longitude": 350.572133,
+        "sign_index": 11,
+        "degree_in_sign": 20.572133,
+        "is_retrograde": false,
+        "speed": 0.688398
+      },
+      "Mercury": {
+        "longitude": 81.339512,
+        "sign_index": 2,
+        "degree_in_sign": 21.339512,
+        "is_retrograde": false,
+        "speed": 2.045293
+      },
+      "Jupiter": {
+        "longitude": 178.56937,
+        "sign_index": 5,
+        "degree_in_sign": 28.56937,
+        "is_retrograde": false,
+        "speed": 0.02354
+      },
+      "Venus": {
+        "longitude": 36.721909,
+        "sign_index": 1,
+        "degree_in_sign": 6.721909,
+        "is_retrograde": false,
+        "speed": 1.176124
+      },
+      "Saturn": {
+        "longitude": 238.195042,
+        "sign_index": 7,
+        "degree_in_sign": 28.195042,
+        "is_retrograde": true,
+        "speed": -0.070719
+      },
+      "Rahu": {
+        "longitude": 184.733946,
+        "sign_index": 6,
+        "degree_in_sign": 4.733946,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 4.733946,
+        "sign_index": 0,
+        "degree_in_sign": 4.733946,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

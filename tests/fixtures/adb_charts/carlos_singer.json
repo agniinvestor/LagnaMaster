@@ -1,0 +1,108 @@
+{
+  "adb_id": 56525,
+  "name": "Carlos (singer)",
+  "given_name": "Carlos (singer)",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430775.972917,
+    "year": 1943,
+    "month": 2,
+    "day": 20,
+    "calendar": "g",
+    "time": "12:21",
+    "time_type": "s",
+    "hour": 12.35,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlos_(singer)",
+  "source_notes": "bc quoted in \"Les Cahiers Astrologiques\", N°200 (on Cedra).\\n",
+  "categories": [
+    "Vocation : Entertainment : Other Entertainment"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 6.086308,
+    "lagna": 36.086308,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.062886,
+    "jd_ut": 2430775.972917,
+    "planets": {
+      "Sun": {
+        "longitude": 307.891758,
+        "sign_index": 10,
+        "degree_in_sign": 7.891758,
+        "is_retrograde": false,
+        "speed": 1.00742
+      },
+      "Moon": {
+        "longitude": 130.654288,
+        "sign_index": 4,
+        "degree_in_sign": 10.654288,
+        "is_retrograde": false,
+        "speed": 15.588309
+      },
+      "Mars": {
+        "longitude": 265.013337,
+        "sign_index": 8,
+        "degree_in_sign": 25.013337,
+        "is_retrograde": false,
+        "speed": 0.738834
+      },
+      "Mercury": {
+        "longitude": 281.579233,
+        "sign_index": 9,
+        "degree_in_sign": 11.579233,
+        "is_retrograde": false,
+        "speed": 1.091648
+      },
+      "Jupiter": {
+        "longitude": 82.739503,
+        "sign_index": 2,
+        "degree_in_sign": 22.739503,
+        "is_retrograde": true,
+        "speed": -0.063159
+      },
+      "Venus": {
+        "longitude": 330.711301,
+        "sign_index": 11,
+        "degree_in_sign": 0.711301,
+        "is_retrograde": false,
+        "speed": 1.239682
+      },
+      "Saturn": {
+        "longitude": 42.715016,
+        "sign_index": 1,
+        "degree_in_sign": 12.715016,
+        "is_retrograde": false,
+        "speed": 0.026513
+      },
+      "Rahu": {
+        "longitude": 121.78053,
+        "sign_index": 4,
+        "degree_in_sign": 1.78053,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 301.78053,
+        "sign_index": 10,
+        "degree_in_sign": 1.78053,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 80508,
+  "name": "Czarminska, Natasza",
+  "given_name": "Natasza Czarminska",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433419.677083,
+    "year": 1950,
+    "month": 5,
+    "day": 18,
+    "calendar": "g",
+    "time": "05:15",
+    "time_type": "s",
+    "hour": 5.25,
+    "time_unknown": false,
+    "place": "Warszawa",
+    "country": "Poland",
+    "lat": 52.25,
+    "lon": 21.0
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "gem",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Czarminska,_Natasza",
+  "source_notes": "PTA quotes the archive of Vladimir H. Zylbertala, obtained directly from Natasza. \\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 8.055636,
+    "lagna": 38.055636,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.16397,
+    "jd_ut": 2433419.677083,
+    "planets": {
+      "Sun": {
+        "longitude": 33.499293,
+        "sign_index": 1,
+        "degree_in_sign": 3.499293,
+        "is_retrograde": false,
+        "speed": 0.963357
+      },
+      "Moon": {
+        "longitude": 46.376778,
+        "sign_index": 1,
+        "degree_in_sign": 16.376778,
+        "is_retrograde": false,
+        "speed": 13.223385
+      },
+      "Mars": {
+        "longitude": 150.083476,
+        "sign_index": 5,
+        "degree_in_sign": 0.083476,
+        "is_retrograde": false,
+        "speed": 0.165651
+      },
+      "Mercury": {
+        "longitude": 28.227621,
+        "sign_index": 0,
+        "degree_in_sign": 28.227621,
+        "is_retrograde": true,
+        "speed": -0.547685
+      },
+      "Jupiter": {
+        "longitude": 311.854808,
+        "sign_index": 10,
+        "degree_in_sign": 11.854808,
+        "is_retrograde": false,
+        "speed": 0.117015
+      },
+      "Venus": {
+        "longitude": 350.509344,
+        "sign_index": 11,
+        "degree_in_sign": 20.509344,
+        "is_retrograde": false,
+        "speed": 1.119399
+      },
+      "Saturn": {
+        "longitude": 139.423168,
+        "sign_index": 4,
+        "degree_in_sign": 19.423168,
+        "is_retrograde": false,
+        "speed": 0.004842
+      },
+      "Rahu": {
+        "longitude": 341.685191,
+        "sign_index": 11,
+        "degree_in_sign": 11.685191,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 161.685191,
+        "sign_index": 5,
+        "degree_in_sign": 11.685191,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

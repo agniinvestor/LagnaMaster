@@ -1,0 +1,109 @@
+{
+  "adb_id": 70463,
+  "name": "Coates, Tom",
+  "given_name": "Tom Coates",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2441517.479167,
+    "year": 1972,
+    "month": 7,
+    "day": 19,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "d",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Reading",
+    "country": "England",
+    "lat": 51.466667,
+    "lon": -0.983333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coates,_Tom",
+  "source_notes": "Sy Scholfield quotes him on Twitter: \"I suppose that given that it's past midnight in the UK and I was born at 00.30am, that—strictly speaking—I'm now thirty seven. Wow.\" [https://twitter.com/tomcoates/status/2713294328]. Name and place of registration of birth from England and Wales birth index.\\n",
+  "categories": [
+    "Vocation : Computer : Other Computer",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 23.407925,
+    "lagna": 353.407925,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.473616,
+    "jd_ut": 2441517.479167,
+    "planets": {
+      "Sun": {
+        "longitude": 92.921401,
+        "sign_index": 3,
+        "degree_in_sign": 2.921401,
+        "is_retrograde": false,
+        "speed": 0.954199
+      },
+      "Moon": {
+        "longitude": 189.844174,
+        "sign_index": 6,
+        "degree_in_sign": 9.844174,
+        "is_retrograde": false,
+        "speed": 10.901297
+      },
+      "Mars": {
+        "longitude": 109.377085,
+        "sign_index": 3,
+        "degree_in_sign": 19.377085,
+        "is_retrograde": false,
+        "speed": 0.632835
+      },
+      "Mercury": {
+        "longitude": 117.44704,
+        "sign_index": 3,
+        "degree_in_sign": 27.44704,
+        "is_retrograde": false,
+        "speed": 0.465282
+      },
+      "Jupiter": {
+        "longitude": 247.079192,
+        "sign_index": 8,
+        "degree_in_sign": 7.079192,
+        "is_retrograde": true,
+        "speed": -0.103531
+      },
+      "Venus": {
+        "longitude": 56.454382,
+        "sign_index": 1,
+        "degree_in_sign": 26.454382,
+        "is_retrograde": false,
+        "speed": 0.335933
+      },
+      "Saturn": {
+        "longitude": 52.468321,
+        "sign_index": 1,
+        "degree_in_sign": 22.468321,
+        "is_retrograde": false,
+        "speed": 0.109375
+      },
+      "Rahu": {
+        "longitude": 272.566064,
+        "sign_index": 9,
+        "degree_in_sign": 2.566064,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 92.566064,
+        "sign_index": 3,
+        "degree_in_sign": 2.566064,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

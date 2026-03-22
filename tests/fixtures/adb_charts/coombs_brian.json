@@ -1,0 +1,111 @@
+{
+  "adb_id": 25910,
+  "name": "Coombs, Brian",
+  "given_name": "Brian Coombs",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2435256.733333,
+    "year": 1955,
+    "month": 5,
+    "day": 29,
+    "calendar": "g",
+    "time": "01:36",
+    "time_type": "d",
+    "hour": 1.6,
+    "time_unknown": false,
+    "place": "Weymouth",
+    "country": "Massachusetts",
+    "lat": 42.216667,
+    "lon": -70.933333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coombs,_Brian",
+  "source_notes": "NCGR Newsletter quotes him Spring/l991\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Childhood : Family traumatic event",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 24.12943,
+    "lagna": 294.12943,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.234213,
+    "jd_ut": 2435256.733333,
+    "planets": {
+      "Sun": {
+        "longitude": 43.854426,
+        "sign_index": 1,
+        "degree_in_sign": 13.854426,
+        "is_retrograde": false,
+        "speed": 0.959186
+      },
+      "Moon": {
+        "longitude": 141.265725,
+        "sign_index": 4,
+        "degree_in_sign": 21.265725,
+        "is_retrograde": false,
+        "speed": 13.313336
+      },
+      "Mars": {
+        "longitude": 68.855086,
+        "sign_index": 2,
+        "degree_in_sign": 8.855086,
+        "is_retrograde": false,
+        "speed": 0.653865
+      },
+      "Mercury": {
+        "longitude": 64.345298,
+        "sign_index": 2,
+        "degree_in_sign": 4.345298,
+        "is_retrograde": false,
+        "speed": 0.441232
+      },
+      "Jupiter": {
+        "longitude": 94.013367,
+        "sign_index": 3,
+        "degree_in_sign": 4.013367,
+        "is_retrograde": false,
+        "speed": 0.17665
+      },
+      "Venus": {
+        "longitude": 18.441672,
+        "sign_index": 0,
+        "degree_in_sign": 18.441672,
+        "is_retrograde": false,
+        "speed": 1.209162
+      },
+      "Saturn": {
+        "longitude": 203.185578,
+        "sign_index": 6,
+        "degree_in_sign": 23.185578,
+        "is_retrograde": true,
+        "speed": -0.06776
+      },
+      "Rahu": {
+        "longitude": 244.335801,
+        "sign_index": 8,
+        "degree_in_sign": 4.335801,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 64.335801,
+        "sign_index": 2,
+        "degree_in_sign": 4.335801,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

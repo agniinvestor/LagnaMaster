@@ -1,0 +1,111 @@
+{
+  "adb_id": 55900,
+  "name": "Constantin-Weyer, Maurice",
+  "given_name": "Maurice Constantin-Weyer",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408194.827778,
+    "year": 1881,
+    "month": 4,
+    "day": 24,
+    "calendar": "g",
+    "time": "08:15",
+    "time_type": "l",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Bourbonne les Bains",
+    "country": "France",
+    "lat": 47.95,
+    "lon": 5.75
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Constantin-Weyer,_Maurice",
+  "source_notes": "Collection Didier Geslain (acte 2891)\\n",
+  "categories": [
+    "Lifestyle : Social Life : Travel",
+    "Vocation : Writers : Biographer",
+    "Vocation : Writers : Fiction",
+    "Notable : Awards : Medals"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 20.066084,
+    "lagna": 50.066084,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.19961,
+    "jd_ut": 2408194.827778,
+    "planets": {
+      "Sun": {
+        "longitude": 12.046995,
+        "sign_index": 0,
+        "degree_in_sign": 12.046995,
+        "is_retrograde": false,
+        "speed": 0.973235
+      },
+      "Moon": {
+        "longitude": 320.14433,
+        "sign_index": 10,
+        "degree_in_sign": 20.14433,
+        "is_retrograde": false,
+        "speed": 10.219609
+      },
+      "Mars": {
+        "longitude": 323.84611,
+        "sign_index": 10,
+        "degree_in_sign": 23.84611,
+        "is_retrograde": false,
+        "speed": 0.767918
+      },
+      "Mercury": {
+        "longitude": 349.651005,
+        "sign_index": 11,
+        "degree_in_sign": 19.651005,
+        "is_retrograde": false,
+        "speed": 1.570792
+      },
+      "Jupiter": {
+        "longitude": 10.778019,
+        "sign_index": 0,
+        "degree_in_sign": 10.778019,
+        "is_retrograde": false,
+        "speed": 0.240066
+      },
+      "Venus": {
+        "longitude": 26.117235,
+        "sign_index": 0,
+        "degree_in_sign": 26.117235,
+        "is_retrograde": true,
+        "speed": -0.475094
+      },
+      "Saturn": {
+        "longitude": 10.129155,
+        "sign_index": 0,
+        "degree_in_sign": 10.129155,
+        "is_retrograde": false,
+        "speed": 0.127446
+      },
+      "Rahu": {
+        "longitude": 238.402753,
+        "sign_index": 7,
+        "degree_in_sign": 28.402753,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 58.402753,
+        "sign_index": 1,
+        "degree_in_sign": 28.402753,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

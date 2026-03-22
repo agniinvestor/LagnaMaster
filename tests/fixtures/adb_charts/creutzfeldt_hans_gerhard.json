@@ -1,0 +1,109 @@
+{
+  "adb_id": 81100,
+  "name": "Creutzfeldt, Hans Gerhard",
+  "given_name": "Hans Gerhard Creutzfeldt",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409694.522407,
+    "year": 1885,
+    "month": 6,
+    "day": 2,
+    "calendar": "g",
+    "time": "01:15",
+    "time_type": "l",
+    "hour": 1.25,
+    "time_unknown": false,
+    "place": "Harburg",
+    "country": "Germany",
+    "lat": 48.783333,
+    "lon": 10.683333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "cap",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Creutzfeldt,_Hans_Gerhard",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Vocation : Science : Biology",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 14.186248,
+    "lagna": 314.186248,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.256936,
+    "jd_ut": 2409694.522407,
+    "planets": {
+      "Sun": {
+        "longitude": 49.336585,
+        "sign_index": 1,
+        "degree_in_sign": 19.336585,
+        "is_retrograde": false,
+        "speed": 0.957149
+      },
+      "Moon": {
+        "longitude": 275.253241,
+        "sign_index": 9,
+        "degree_in_sign": 5.253241,
+        "is_retrograde": false,
+        "speed": 8.573947
+      },
+      "Mars": {
+        "longitude": 25.689731,
+        "sign_index": 0,
+        "degree_in_sign": 25.689731,
+        "is_retrograde": false,
+        "speed": 0.728623
+      },
+      "Mercury": {
+        "longitude": 26.044082,
+        "sign_index": 0,
+        "degree_in_sign": 26.044082,
+        "is_retrograde": false,
+        "speed": 1.338752
+      },
+      "Jupiter": {
+        "longitude": 126.024575,
+        "sign_index": 4,
+        "degree_in_sign": 6.024575,
+        "is_retrograde": false,
+        "speed": 0.112673
+      },
+      "Venus": {
+        "longitude": 56.921657,
+        "sign_index": 1,
+        "degree_in_sign": 26.921657,
+        "is_retrograde": false,
+        "speed": 1.228004
+      },
+      "Saturn": {
+        "longitude": 63.337472,
+        "sign_index": 2,
+        "degree_in_sign": 3.337472,
+        "is_retrograde": false,
+        "speed": 0.127593
+      },
+      "Rahu": {
+        "longitude": 158.93075,
+        "sign_index": 5,
+        "degree_in_sign": 8.93075,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 338.93075,
+        "sign_index": 11,
+        "degree_in_sign": 8.93075,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

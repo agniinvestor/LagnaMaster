@@ -1,0 +1,109 @@
+{
+  "adb_id": 81277,
+  "name": "Cejrowski, Wojciech",
+  "given_name": "Wojciech Cejrowski",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2438573.666667,
+    "year": 1964,
+    "month": 6,
+    "day": 27,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "d",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Elblag",
+    "country": "Poland",
+    "lat": 54.166667,
+    "lon": 19.416667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cejrowski,_Wojciech",
+  "source_notes": "PTA quotes the book by Wojciech Cejrowski \"Rio Anaconda\" on pages 76-77: \" And outside the city? There, I like to get up at dawn. Maybe because I was born at six in the morning and so I have left. The sixth is my time\"\\nReported by Mirosław Czylek .\\n",
+  "categories": [
+    "Vocation : Travel : Adventurer",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 8.381074,
+    "lagna": 68.381074,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.361046,
+    "jd_ut": 2438573.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 72.168076,
+        "sign_index": 2,
+        "degree_in_sign": 12.168076,
+        "is_retrograde": false,
+        "speed": 0.953202
+      },
+      "Moon": {
+        "longitude": 274.871683,
+        "sign_index": 9,
+        "degree_in_sign": 4.871683,
+        "is_retrograde": false,
+        "speed": 10.339529
+      },
+      "Mars": {
+        "longitude": 43.514548,
+        "sign_index": 1,
+        "degree_in_sign": 13.514548,
+        "is_retrograde": false,
+        "speed": 0.705129
+      },
+      "Mercury": {
+        "longitude": 71.992755,
+        "sign_index": 2,
+        "degree_in_sign": 11.992755,
+        "is_retrograde": false,
+        "speed": 2.185264
+      },
+      "Jupiter": {
+        "longitude": 23.871952,
+        "sign_index": 0,
+        "degree_in_sign": 23.871952,
+        "is_retrograde": false,
+        "speed": 0.195286
+      },
+      "Venus": {
+        "longitude": 60.988876,
+        "sign_index": 2,
+        "degree_in_sign": 0.988876,
+        "is_retrograde": true,
+        "speed": -0.528514
+      },
+      "Saturn": {
+        "longitude": 311.565109,
+        "sign_index": 10,
+        "degree_in_sign": 11.565109,
+        "is_retrograde": true,
+        "speed": -0.0195
+      },
+      "Rahu": {
+        "longitude": 68.564703,
+        "sign_index": 2,
+        "degree_in_sign": 8.564703,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 248.564703,
+        "sign_index": 8,
+        "degree_in_sign": 8.564703,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

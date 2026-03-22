@@ -1,0 +1,108 @@
+{
+  "adb_id": 52862,
+  "name": "Carré, Roger",
+  "given_name": "Roger Carré",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422704.270833,
+    "year": 1921,
+    "month": 1,
+    "day": 14,
+    "calendar": "g",
+    "time": "18:30",
+    "time_type": "s",
+    "hour": 18.5,
+    "time_unknown": false,
+    "place": "Roubaix",
+    "country": "France",
+    "lat": 50.7,
+    "lon": 3.166667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carré,_Roger",
+  "source_notes": "Steinbrecher collection: Gauquelin 1/1275\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 5.04584,
+    "lagna": 95.04584,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.754279,
+    "jd_ut": 2422704.270833,
+    "planets": {
+      "Sun": {
+        "longitude": 271.329137,
+        "sign_index": 9,
+        "degree_in_sign": 1.329137,
+        "is_retrograde": false,
+        "speed": 1.018684
+      },
+      "Moon": {
+        "longitude": 331.589595,
+        "sign_index": 11,
+        "degree_in_sign": 1.589595,
+        "is_retrograde": false,
+        "speed": 9.8149
+      },
+      "Mars": {
+        "longitude": 314.577344,
+        "sign_index": 10,
+        "degree_in_sign": 14.577344,
+        "is_retrograde": false,
+        "speed": 0.77507
+      },
+      "Mercury": {
+        "longitude": 270.02827,
+        "sign_index": 9,
+        "degree_in_sign": 0.02827,
+        "is_retrograde": false,
+        "speed": 1.646528
+      },
+      "Jupiter": {
+        "longitude": 145.965897,
+        "sign_index": 4,
+        "degree_in_sign": 25.965897,
+        "is_retrograde": true,
+        "speed": -0.035121
+      },
+      "Venus": {
+        "longitude": 316.332415,
+        "sign_index": 10,
+        "degree_in_sign": 16.332415,
+        "is_retrograde": false,
+        "speed": 1.137076
+      },
+      "Saturn": {
+        "longitude": 151.946355,
+        "sign_index": 5,
+        "degree_in_sign": 1.946355,
+        "is_retrograde": true,
+        "speed": -0.018847
+      },
+      "Rahu": {
+        "longitude": 189.516787,
+        "sign_index": 6,
+        "degree_in_sign": 9.516787,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 9.516787,
+        "sign_index": 0,
+        "degree_in_sign": 9.516787,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

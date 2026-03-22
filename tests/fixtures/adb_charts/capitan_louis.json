@@ -1,0 +1,109 @@
+{
+  "adb_id": 80977,
+  "name": "Capitan, Louis",
+  "given_name": "Louis Capitan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2398327.535185,
+    "year": 1854,
+    "month": 4,
+    "day": 19,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capitan,_Louis",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Science : Anthropology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 28.154633,
+    "lagna": 238.154633,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.822458,
+    "jd_ut": 2398327.535185,
+    "planets": {
+      "Sun": {
+        "longitude": 6.815137,
+        "sign_index": 0,
+        "degree_in_sign": 6.815137,
+        "is_retrograde": false,
+        "speed": 0.9756
+      },
+      "Moon": {
+        "longitude": 264.459057,
+        "sign_index": 8,
+        "degree_in_sign": 24.459057,
+        "is_retrograde": false,
+        "speed": 12.369023
+      },
+      "Mars": {
+        "longitude": 126.792123,
+        "sign_index": 4,
+        "degree_in_sign": 6.792123,
+        "is_retrograde": false,
+        "speed": 0.114396
+      },
+      "Mercury": {
+        "longitude": 339.657219,
+        "sign_index": 11,
+        "degree_in_sign": 9.657219,
+        "is_retrograde": false,
+        "speed": 0.889469
+      },
+      "Jupiter": {
+        "longitude": 274.602349,
+        "sign_index": 9,
+        "degree_in_sign": 4.602349,
+        "is_retrograde": false,
+        "speed": 0.081025
+      },
+      "Venus": {
+        "longitude": 322.68494,
+        "sign_index": 10,
+        "degree_in_sign": 22.68494,
+        "is_retrograde": false,
+        "speed": 0.761921
+      },
+      "Saturn": {
+        "longitude": 38.656528,
+        "sign_index": 1,
+        "degree_in_sign": 8.656528,
+        "is_retrograde": false,
+        "speed": 0.117049
+      },
+      "Rahu": {
+        "longitude": 41.291679,
+        "sign_index": 1,
+        "degree_in_sign": 11.291679,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 221.291679,
+        "sign_index": 7,
+        "degree_in_sign": 11.291679,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

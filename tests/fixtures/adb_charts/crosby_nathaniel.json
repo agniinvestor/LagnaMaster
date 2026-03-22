@@ -1,0 +1,116 @@
+{
+  "adb_id": 13722,
+  "name": "Crosby, Nathaniel",
+  "given_name": "Nathaniel Crosby",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437602.789583,
+    "year": 1961,
+    "month": 10,
+    "day": 29,
+    "calendar": "g",
+    "time": "22:57",
+    "time_type": "s",
+    "hour": 22.95,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crosby,_Nathaniel",
+  "source_notes": "B.C. in hand from the Wilsons\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Family traumatic event",
+    "Family : Childhood : Order of birth",
+    "Family : Childhood : Sibling circumstances",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Financial : Gain - Inheritance",
+    "Vocation : Sports : Golf",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 18.745605,
+    "lagna": 78.745605,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.323921,
+    "jd_ut": 2437602.789583,
+    "planets": {
+      "Sun": {
+        "longitude": 193.295169,
+        "sign_index": 6,
+        "degree_in_sign": 13.295169,
+        "is_retrograde": false,
+        "speed": 0.999537
+      },
+      "Moon": {
+        "longitude": 92.225782,
+        "sign_index": 3,
+        "degree_in_sign": 2.225782,
+        "is_retrograde": false,
+        "speed": 12.055646
+      },
+      "Mars": {
+        "longitude": 206.300126,
+        "sign_index": 6,
+        "degree_in_sign": 26.300126,
+        "is_retrograde": false,
+        "speed": 0.70288
+      },
+      "Mercury": {
+        "longitude": 179.194215,
+        "sign_index": 5,
+        "degree_in_sign": 29.194215,
+        "is_retrograde": true,
+        "speed": -0.279782
+      },
+      "Jupiter": {
+        "longitude": 276.111238,
+        "sign_index": 9,
+        "degree_in_sign": 6.111238,
+        "is_retrograde": false,
+        "speed": 0.111361
+      },
+      "Venus": {
+        "longitude": 171.776022,
+        "sign_index": 5,
+        "degree_in_sign": 21.776022,
+        "is_retrograde": false,
+        "speed": 1.244871
+      },
+      "Saturn": {
+        "longitude": 270.779413,
+        "sign_index": 9,
+        "degree_in_sign": 0.779413,
+        "is_retrograde": false,
+        "speed": 0.052173
+      },
+      "Rahu": {
+        "longitude": 120.013467,
+        "sign_index": 4,
+        "degree_in_sign": 0.013467,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 300.013467,
+        "sign_index": 10,
+        "degree_in_sign": 0.013467,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

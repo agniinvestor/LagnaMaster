@@ -1,0 +1,109 @@
+{
+  "adb_id": 71696,
+  "name": "Conti, Carlo",
+  "given_name": "Carlo Conti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437372.305556,
+    "year": 1961,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "20:20",
+    "time_type": "s",
+    "hour": 20.333333,
+    "time_unknown": false,
+    "place": "Florence",
+    "country": "Italy",
+    "lat": 43.766667,
+    "lon": 11.25
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conti,_Carlo",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 0.617823,
+    "lagna": 150.617823,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.315108,
+    "jd_ut": 2437372.305556,
+    "planets": {
+      "Sun": {
+        "longitude": 329.669462,
+        "sign_index": 10,
+        "degree_in_sign": 29.669462,
+        "is_retrograde": false,
+        "speed": 0.997239
+      },
+      "Moon": {
+        "longitude": 288.417335,
+        "sign_index": 9,
+        "degree_in_sign": 18.417335,
+        "is_retrograde": false,
+        "speed": 18.662153
+      },
+      "Mars": {
+        "longitude": 73.264953,
+        "sign_index": 2,
+        "degree_in_sign": 13.264953,
+        "is_retrograde": false,
+        "speed": 0.328334
+      },
+      "Mercury": {
+        "longitude": 303.224307,
+        "sign_index": 10,
+        "degree_in_sign": 3.224307,
+        "is_retrograde": false,
+        "speed": 0.601913
+      },
+      "Jupiter": {
+        "longitude": 276.409341,
+        "sign_index": 9,
+        "degree_in_sign": 6.409341,
+        "is_retrograde": false,
+        "speed": 0.182676
+      },
+      "Venus": {
+        "longitude": 4.82675,
+        "sign_index": 0,
+        "degree_in_sign": 4.82675,
+        "is_retrograde": false,
+        "speed": 0.26398
+      },
+      "Saturn": {
+        "longitude": 274.039103,
+        "sign_index": 9,
+        "degree_in_sign": 4.039103,
+        "is_retrograde": false,
+        "speed": 0.083018
+      },
+      "Rahu": {
+        "longitude": 132.227288,
+        "sign_index": 4,
+        "degree_in_sign": 12.227288,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 312.227288,
+        "sign_index": 10,
+        "degree_in_sign": 12.227288,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

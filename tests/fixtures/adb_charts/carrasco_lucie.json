@@ -1,0 +1,108 @@
+{
+  "adb_id": 74250,
+  "name": "Carrasco, Lucie",
+  "given_name": "Lucie Carrasco",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444810.03125,
+    "year": 1981,
+    "month": 7,
+    "day": 24,
+    "calendar": "g",
+    "time": "14:45",
+    "time_type": "d",
+    "hour": 14.75,
+    "time_unknown": false,
+    "place": "Vénissieux",
+    "country": "France",
+    "lat": 45.683333,
+    "lon": 4.883333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrasco,_Lucie",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Beauty : Designer/ Fashion"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 19.059492,
+    "lagna": 169.059492,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.599526,
+    "jd_ut": 2444810.03125,
+    "planets": {
+      "Sun": {
+        "longitude": 97.919821,
+        "sign_index": 3,
+        "degree_in_sign": 7.919821,
+        "is_retrograde": false,
+        "speed": 0.955114
+      },
+      "Moon": {
+        "longitude": 8.747773,
+        "sign_index": 0,
+        "degree_in_sign": 8.747773,
+        "is_retrograde": false,
+        "speed": 15.139282
+      },
+      "Mars": {
+        "longitude": 70.55319,
+        "sign_index": 2,
+        "degree_in_sign": 10.55319,
+        "is_retrograde": false,
+        "speed": 0.670875
+      },
+      "Mercury": {
+        "longitude": 80.915032,
+        "sign_index": 2,
+        "degree_in_sign": 20.915032,
+        "is_retrograde": false,
+        "speed": 1.667262
+      },
+      "Jupiter": {
+        "longitude": 161.389207,
+        "sign_index": 5,
+        "degree_in_sign": 11.389207,
+        "is_retrograde": false,
+        "speed": 0.144728
+      },
+      "Venus": {
+        "longitude": 126.33821,
+        "sign_index": 4,
+        "degree_in_sign": 6.33821,
+        "is_retrograde": false,
+        "speed": 1.207378
+      },
+      "Saturn": {
+        "longitude": 161.364777,
+        "sign_index": 5,
+        "degree_in_sign": 11.364777,
+        "is_retrograde": false,
+        "speed": 0.075553
+      },
+      "Rahu": {
+        "longitude": 98.087029,
+        "sign_index": 3,
+        "degree_in_sign": 8.087029,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 278.087029,
+        "sign_index": 9,
+        "degree_in_sign": 8.087029,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

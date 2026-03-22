@@ -1,0 +1,109 @@
+{
+  "adb_id": 76032,
+  "name": "Centkiewicz, Czeslaw",
+  "given_name": "Czeslaw Centkiewicz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416772.358333,
+    "year": 1904,
+    "month": 10,
+    "day": 18,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Warsaw",
+    "country": "Poland",
+    "lat": 52.25,
+    "lon": 21.0
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Centkiewicz,_Czeslaw",
+  "source_notes": "PTA quotes The act of baptism provided by Jaroslaw Gronert. [http://www.astrolog.org.pl/baza-horoskopow/Centkiewicz_Czes%C5%82aw]\\n",
+  "categories": [
+    "Vocation : Travel : Explorer",
+    "Vocation : Writers : Children's literature"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 9.883099,
+    "lagna": 69.883099,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.527501,
+    "jd_ut": 2416772.358333,
+    "planets": {
+      "Sun": {
+        "longitude": 182.510653,
+        "sign_index": 6,
+        "degree_in_sign": 2.510653,
+        "is_retrograde": false,
+        "speed": 0.993731
+      },
+      "Moon": {
+        "longitude": 300.911974,
+        "sign_index": 10,
+        "degree_in_sign": 0.911974,
+        "is_retrograde": false,
+        "speed": 9.208339
+      },
+      "Mars": {
+        "longitude": 138.095834,
+        "sign_index": 4,
+        "degree_in_sign": 18.095834,
+        "is_retrograde": false,
+        "speed": 0.609227
+      },
+      "Mercury": {
+        "longitude": 173.921775,
+        "sign_index": 5,
+        "degree_in_sign": 23.921775,
+        "is_retrograde": false,
+        "speed": 1.717612
+      },
+      "Jupiter": {
+        "longitude": 2.643764,
+        "sign_index": 0,
+        "degree_in_sign": 2.643764,
+        "is_retrograde": true,
+        "speed": -0.135436
+      },
+      "Venus": {
+        "longitude": 209.631702,
+        "sign_index": 6,
+        "degree_in_sign": 29.631702,
+        "is_retrograde": false,
+        "speed": 1.230778
+      },
+      "Saturn": {
+        "longitude": 291.819058,
+        "sign_index": 9,
+        "degree_in_sign": 21.819058,
+        "is_retrograde": true,
+        "speed": -0.000746
+      },
+      "Rahu": {
+        "longitude": 143.861269,
+        "sign_index": 4,
+        "degree_in_sign": 23.861269,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 323.861269,
+        "sign_index": 10,
+        "degree_in_sign": 23.861269,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

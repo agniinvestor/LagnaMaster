@@ -1,0 +1,108 @@
+{
+  "adb_id": 64778,
+  "name": "Cappiello, Leonetto",
+  "given_name": "Leonetto Cappiello",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405987.590324,
+    "year": 1875,
+    "month": 4,
+    "day": 9,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Livorno",
+    "country": "Italy",
+    "lat": 43.55,
+    "lon": 10.316667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cappiello,_Leonetto",
+  "source_notes": "Didier Geslain archive, 'bd_pub_affichistes' pdf file, p. 36.\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 25.188862,
+    "lagna": 265.188862,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.11524,
+    "jd_ut": 2405987.590324,
+    "planets": {
+      "Sun": {
+        "longitude": 356.712006,
+        "sign_index": 11,
+        "degree_in_sign": 26.712006,
+        "is_retrograde": false,
+        "speed": 0.981754
+      },
+      "Moon": {
+        "longitude": 35.960188,
+        "sign_index": 1,
+        "degree_in_sign": 5.960188,
+        "is_retrograde": false,
+        "speed": 19.224548
+      },
+      "Mars": {
+        "longitude": 244.294655,
+        "sign_index": 8,
+        "degree_in_sign": 4.294655,
+        "is_retrograde": false,
+        "speed": 0.362654
+      },
+      "Mercury": {
+        "longitude": 331.352679,
+        "sign_index": 11,
+        "degree_in_sign": 1.352679,
+        "is_retrograde": false,
+        "speed": 1.392462
+      },
+      "Jupiter": {
+        "longitude": 185.707954,
+        "sign_index": 6,
+        "degree_in_sign": 5.707954,
+        "is_retrograde": true,
+        "speed": -0.124984
+      },
+      "Venus": {
+        "longitude": 315.322364,
+        "sign_index": 10,
+        "degree_in_sign": 15.322364,
+        "is_retrograde": false,
+        "speed": 1.159799
+      },
+      "Saturn": {
+        "longitude": 301.355629,
+        "sign_index": 10,
+        "degree_in_sign": 1.355629,
+        "is_retrograde": false,
+        "speed": 0.084655
+      },
+      "Rahu": {
+        "longitude": 355.368962,
+        "sign_index": 11,
+        "degree_in_sign": 25.368962,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 175.368962,
+        "sign_index": 5,
+        "degree_in_sign": 25.368962,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

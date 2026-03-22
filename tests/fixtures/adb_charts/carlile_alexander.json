@@ -1,0 +1,108 @@
+{
+  "adb_id": 47797,
+  "name": "Carlile, Alexander",
+  "given_name": "Alexander Carlile",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432593.979167,
+    "year": 1948,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Llay",
+    "country": "Wales",
+    "lat": 53.1,
+    "lon": -2.983333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlile,_Alexander",
+  "source_notes": "Pulsar collection quotes him\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 29.777848,
+    "lagna": 29.777848,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.132399,
+    "jd_ut": 2432593.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 299.544118,
+        "sign_index": 9,
+        "degree_in_sign": 29.544118,
+        "is_retrograde": false,
+        "speed": 1.01157
+      },
+      "Moon": {
+        "longitude": 325.268892,
+        "sign_index": 10,
+        "degree_in_sign": 25.268892,
+        "is_retrograde": false,
+        "speed": 9.523921
+      },
+      "Mars": {
+        "longitude": 126.853934,
+        "sign_index": 4,
+        "degree_in_sign": 6.853934,
+        "is_retrograde": true,
+        "speed": -0.389033
+      },
+      "Mercury": {
+        "longitude": 313.230039,
+        "sign_index": 10,
+        "degree_in_sign": 13.230039,
+        "is_retrograde": true,
+        "speed": -0.239057
+      },
+      "Jupiter": {
+        "longitude": 240.206515,
+        "sign_index": 8,
+        "degree_in_sign": 0.206515,
+        "is_retrograde": false,
+        "speed": 0.163145
+      },
+      "Venus": {
+        "longitude": 337.703138,
+        "sign_index": 11,
+        "degree_in_sign": 7.703138,
+        "is_retrograde": false,
+        "speed": 1.19893
+      },
+      "Saturn": {
+        "longitude": 115.839572,
+        "sign_index": 3,
+        "degree_in_sign": 25.839572,
+        "is_retrograde": true,
+        "speed": -0.081344
+      },
+      "Rahu": {
+        "longitude": 25.440625,
+        "sign_index": 0,
+        "degree_in_sign": 25.440625,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 205.440625,
+        "sign_index": 6,
+        "degree_in_sign": 25.440625,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

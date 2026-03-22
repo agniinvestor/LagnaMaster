@@ -1,0 +1,113 @@
+{
+  "adb_id": 6231,
+  "name": "Cooper, Gordon",
+  "given_name": "Gordon Cooper",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2424946.458333,
+    "year": 1927,
+    "month": 3,
+    "day": 6,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Shawnee",
+    "country": "Oklahoma",
+    "lat": 35.333333,
+    "lon": -96.933333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooper,_Gordon",
+  "source_notes": "LMR quotes Nasa Executive Harry Shoaf, his business partner and friend for birth time of 5 PM, in 1971.\\n\\nBirth notice in hand from Sy Scholfield, copy on file (''Shawnee News-Star'', Tuesday 8 March 1927, page 3, born \"Sunday evening\" at Shawnee hospital, son of Mr. and Mrs. Leroy Cooper). \\n",
+  "categories": [
+    "Vocation : Engineer : Aerospace",
+    "Vocation : Military : Military career",
+    "Vocation : Travel : Adventurer",
+    "Vocation : Travel : Astronaut",
+    "Notable : Famous : Historic figure",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 12.62106,
+    "lagna": 102.62106,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.840002,
+    "jd_ut": 2424946.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 322.546811,
+        "sign_index": 10,
+        "degree_in_sign": 22.546811,
+        "is_retrograde": false,
+        "speed": 1.001086
+      },
+      "Moon": {
+        "longitude": 6.627335,
+        "sign_index": 0,
+        "degree_in_sign": 6.627335,
+        "is_retrograde": false,
+        "speed": 10.338204
+      },
+      "Mars": {
+        "longitude": 43.981775,
+        "sign_index": 1,
+        "degree_in_sign": 13.981775,
+        "is_retrograde": false,
+        "speed": 0.539332
+      },
+      "Mercury": {
+        "longitude": 334.148338,
+        "sign_index": 11,
+        "degree_in_sign": 4.148338,
+        "is_retrograde": true,
+        "speed": -0.393759
+      },
+      "Jupiter": {
+        "longitude": 318.356891,
+        "sign_index": 10,
+        "degree_in_sign": 18.356891,
+        "is_retrograde": false,
+        "speed": 0.241191
+      },
+      "Venus": {
+        "longitude": 347.548879,
+        "sign_index": 11,
+        "degree_in_sign": 17.548879,
+        "is_retrograde": false,
+        "speed": 1.232625
+      },
+      "Saturn": {
+        "longitude": 224.728335,
+        "sign_index": 7,
+        "degree_in_sign": 14.728335,
+        "is_retrograde": false,
+        "speed": 0.018657
+      },
+      "Rahu": {
+        "longitude": 70.698597,
+        "sign_index": 2,
+        "degree_in_sign": 10.698597,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 250.698597,
+        "sign_index": 8,
+        "degree_in_sign": 10.698597,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

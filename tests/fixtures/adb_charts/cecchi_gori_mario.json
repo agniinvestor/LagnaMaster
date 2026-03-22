@@ -1,0 +1,109 @@
+{
+  "adb_id": 71629,
+  "name": "Cecchi Gori, Mario",
+  "given_name": "Mario Cecchi Gori",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422404.666667,
+    "year": 1920,
+    "month": 3,
+    "day": 21,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "d",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Brescia",
+    "country": "Italy",
+    "lat": 45.55,
+    "lon": 10.216667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cecchi_Gori,_Mario",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 5.364013,
+    "lagna": 275.364013,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.742824,
+    "jd_ut": 2422404.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 337.502326,
+        "sign_index": 11,
+        "degree_in_sign": 7.502326,
+        "is_retrograde": false,
+        "speed": 0.992885
+      },
+      "Moon": {
+        "longitude": 346.955287,
+        "sign_index": 11,
+        "degree_in_sign": 16.955287,
+        "is_retrograde": false,
+        "speed": 16.015774
+      },
+      "Mars": {
+        "longitude": 196.123391,
+        "sign_index": 6,
+        "degree_in_sign": 16.123391,
+        "is_retrograde": true,
+        "speed": -0.076476
+      },
+      "Mercury": {
+        "longitude": 335.917862,
+        "sign_index": 11,
+        "degree_in_sign": 5.917862,
+        "is_retrograde": true,
+        "speed": -0.908451
+      },
+      "Jupiter": {
+        "longitude": 105.662807,
+        "sign_index": 3,
+        "degree_in_sign": 15.662807,
+        "is_retrograde": true,
+        "speed": -0.044014
+      },
+      "Venus": {
+        "longitude": 310.346463,
+        "sign_index": 10,
+        "degree_in_sign": 10.346463,
+        "is_retrograde": false,
+        "speed": 1.227371
+      },
+      "Saturn": {
+        "longitude": 133.851876,
+        "sign_index": 4,
+        "degree_in_sign": 13.851876,
+        "is_retrograde": true,
+        "speed": -0.0698
+      },
+      "Rahu": {
+        "longitude": 205.393437,
+        "sign_index": 6,
+        "degree_in_sign": 25.393437,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 25.393437,
+        "sign_index": 0,
+        "degree_in_sign": 25.393437,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 70526,
+  "name": "Chauvin, Ernest Alfred",
+  "given_name": "Ernest Alfred Chauvin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404113.751528,
+    "year": 1870,
+    "month": 2,
+    "day": 20,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Angers",
+    "country": "France",
+    "lat": 47.466667,
+    "lon": -0.55
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chauvin,_Ernest_Alfred",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 67.\\n\\nBorn in Les Ponts-de-Cé which is in the suburbs of Angers.\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 21.676915,
+    "lagna": 261.676915,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.043616,
+    "jd_ut": 2404113.751528,
+    "planets": {
+      "Sun": {
+        "longitude": 309.402084,
+        "sign_index": 10,
+        "degree_in_sign": 9.402084,
+        "is_retrograde": false,
+        "speed": 1.006757
+      },
+      "Moon": {
+        "longitude": 185.837752,
+        "sign_index": 6,
+        "degree_in_sign": 5.837752,
+        "is_retrograde": false,
+        "speed": 11.210713
+      },
+      "Mars": {
+        "longitude": 313.82333,
+        "sign_index": 10,
+        "degree_in_sign": 13.82333,
+        "is_retrograde": false,
+        "speed": 0.789282
+      },
+      "Mercury": {
+        "longitude": 284.303097,
+        "sign_index": 9,
+        "degree_in_sign": 14.303097,
+        "is_retrograde": false,
+        "speed": 0.481339
+      },
+      "Jupiter": {
+        "longitude": 22.355391,
+        "sign_index": 0,
+        "degree_in_sign": 22.355391,
+        "is_retrograde": false,
+        "speed": 0.138632
+      },
+      "Venus": {
+        "longitude": 314.923842,
+        "sign_index": 10,
+        "degree_in_sign": 14.923842,
+        "is_retrograde": true,
+        "speed": -0.605751
+      },
+      "Saturn": {
+        "longitude": 244.801483,
+        "sign_index": 8,
+        "degree_in_sign": 4.801483,
+        "is_retrograde": false,
+        "speed": 0.071032
+      },
+      "Rahu": {
+        "longitude": 94.667676,
+        "sign_index": 3,
+        "degree_in_sign": 4.667676,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 274.667676,
+        "sign_index": 9,
+        "degree_in_sign": 4.667676,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

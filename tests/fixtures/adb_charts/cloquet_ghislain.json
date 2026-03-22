@@ -1,0 +1,108 @@
+{
+  "adb_id": 60344,
+  "name": "Cloquet, Ghislain",
+  "given_name": "Ghislain Cloquet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423893.833333,
+    "year": 1924,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "d",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Antwerpen",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 4.416667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cloquet,_Ghislain",
+  "source_notes": "Taeger quotes Lescaut  quoting Demain Nr 4\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Other Entertain/Bus"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.326062,
+    "lagna": 47.326062,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.799758,
+    "jd_ut": 2423893.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 5.211792,
+        "sign_index": 0,
+        "degree_in_sign": 5.211792,
+        "is_retrograde": false,
+        "speed": 0.976334
+      },
+      "Moon": {
+        "longitude": 167.717977,
+        "sign_index": 5,
+        "degree_in_sign": 17.717977,
+        "is_retrograde": false,
+        "speed": 17.221141
+      },
+      "Mars": {
+        "longitude": 273.4571,
+        "sign_index": 9,
+        "degree_in_sign": 3.4571,
+        "is_retrograde": false,
+        "speed": 0.595987
+      },
+      "Mercury": {
+        "longitude": 24.826939,
+        "sign_index": 0,
+        "degree_in_sign": 24.826939,
+        "is_retrograde": false,
+        "speed": 0.852931
+      },
+      "Jupiter": {
+        "longitude": 236.870257,
+        "sign_index": 7,
+        "degree_in_sign": 26.870257,
+        "is_retrograde": true,
+        "speed": -0.037961
+      },
+      "Venus": {
+        "longitude": 50.746529,
+        "sign_index": 1,
+        "degree_in_sign": 20.746529,
+        "is_retrograde": false,
+        "speed": 0.999116
+      },
+      "Saturn": {
+        "longitude": 186.302527,
+        "sign_index": 6,
+        "degree_in_sign": 6.302527,
+        "is_retrograde": true,
+        "speed": -0.076411
+      },
+      "Rahu": {
+        "longitude": 126.479388,
+        "sign_index": 4,
+        "degree_in_sign": 6.479388,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.479388,
+        "sign_index": 10,
+        "degree_in_sign": 6.479388,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 98874,
+  "name": "Chico Science",
+  "given_name": "Chico Science",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439197.791667,
+    "year": 1966,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Boa Vista (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.466667,
+    "lon": -36.016667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chico_Science",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. He was born in Boa Vista, a neighbourhood (\"bairro\") in Recife, Pernambuco, Brazil.\\n",
+  "categories": [
+    "Personal : Death : Accidental",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Folk Music",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 12.331969,
+    "lagna": 282.331969,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.384912,
+    "jd_ut": 2439197.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 328.867788,
+        "sign_index": 10,
+        "degree_in_sign": 28.867788,
+        "is_retrograde": false,
+        "speed": 0.99728
+      },
+      "Moon": {
+        "longitude": 230.728527,
+        "sign_index": 7,
+        "degree_in_sign": 20.728527,
+        "is_retrograde": false,
+        "speed": 7.247545
+      },
+      "Mars": {
+        "longitude": 339.527895,
+        "sign_index": 11,
+        "degree_in_sign": 9.527895,
+        "is_retrograde": false,
+        "speed": 0.773929
+      },
+      "Mercury": {
+        "longitude": 342.258357,
+        "sign_index": 11,
+        "degree_in_sign": 12.258357,
+        "is_retrograde": true,
+        "speed": -0.171171
+      },
+      "Jupiter": {
+        "longitude": 58.966628,
+        "sign_index": 1,
+        "degree_in_sign": 28.966628,
+        "is_retrograde": false,
+        "speed": 0.082035
+      },
+      "Venus": {
+        "longitude": 285.376625,
+        "sign_index": 9,
+        "degree_in_sign": 15.376625,
+        "is_retrograde": false,
+        "speed": 0.72031
+      },
+      "Saturn": {
+        "longitude": 326.785101,
+        "sign_index": 10,
+        "degree_in_sign": 26.785101,
+        "is_retrograde": false,
+        "speed": 0.123245
+      },
+      "Rahu": {
+        "longitude": 35.491042,
+        "sign_index": 1,
+        "degree_in_sign": 5.491042,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 215.491042,
+        "sign_index": 7,
+        "degree_in_sign": 5.491042,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

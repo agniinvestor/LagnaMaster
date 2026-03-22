@@ -1,0 +1,113 @@
+{
+  "adb_id": 78770,
+  "name": "Coleridge, Herbert",
+  "given_name": "Herbert Coleridge",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2389732.962315,
+    "year": 1830,
+    "month": 10,
+    "day": 7,
+    "calendar": "g",
+    "time": "11:05",
+    "time_type": "l",
+    "hour": 11.083333,
+    "time_unknown": false,
+    "place": "Hampstead",
+    "country": "England",
+    "lat": 51.566667,
+    "lon": -0.183333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coleridge,_Herbert",
+  "source_notes": "Sy Scholfield cites mother's record quoted in \"The Collected Works of Samuel Taylor Coleridge: Abbt to Byfield, Volume 1\" (Routledge, 1980), p. 413: \"p ~2, in SC's hand October 11th (1830). Herbert Coleridge, son of Henry Nelson & Sara Coleridge, was born at Hampstead, at a little past 11 in the forenoon.\" However, apparently October \"11th\" is a typo because Sarah Coleridge (Sara's mother), who was in attendance at the birth, wrote of the birth on the 8th of October: \"On October 8, she described the event to Poole: \"Yesterday forenoon, about 11 o'clock Sara was safely brought to bed of a boy...\" (\"Sara Coleridge, a Victorian Daughter: Her Life and Essays\" by Bradford Keyes Mudge, Yale University Press, 1989, p. 54).\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Tuberculosis",
+    "Family : Childhood : Family noted",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Humanities+Social Sciences : Linguist",
+    "Vocation : Law : Other Law",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 21.723785,
+    "lagna": 201.723785,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.493988,
+    "jd_ut": 2389732.962315,
+    "planets": {
+      "Sun": {
+        "longitude": 172.17668,
+        "sign_index": 5,
+        "degree_in_sign": 22.17668,
+        "is_retrograde": false,
+        "speed": 0.98793
+      },
+      "Moon": {
+        "longitude": 62.754943,
+        "sign_index": 2,
+        "degree_in_sign": 2.754943,
+        "is_retrograde": false,
+        "speed": 14.634124
+      },
+      "Mars": {
+        "longitude": 330.469126,
+        "sign_index": 11,
+        "degree_in_sign": 0.469126,
+        "is_retrograde": true,
+        "speed": -0.156576
+      },
+      "Mercury": {
+        "longitude": 183.787878,
+        "sign_index": 6,
+        "degree_in_sign": 3.787878,
+        "is_retrograde": true,
+        "speed": -0.852553
+      },
+      "Jupiter": {
+        "longitude": 258.136802,
+        "sign_index": 8,
+        "degree_in_sign": 18.136802,
+        "is_retrograde": false,
+        "speed": 0.099373
+      },
+      "Venus": {
+        "longitude": 153.647577,
+        "sign_index": 5,
+        "degree_in_sign": 3.647577,
+        "is_retrograde": false,
+        "speed": 1.242185
+      },
+      "Saturn": {
+        "longitude": 126.5365,
+        "sign_index": 4,
+        "degree_in_sign": 6.5365,
+        "is_retrograde": false,
+        "speed": 0.101954
+      },
+      "Rahu": {
+        "longitude": 136.736684,
+        "sign_index": 4,
+        "degree_in_sign": 16.736684,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 316.736684,
+        "sign_index": 10,
+        "degree_in_sign": 16.736684,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 81088,
+  "name": "Courmont, Jules",
+  "given_name": "Jules Courmont",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402260.667083,
+    "year": 1865,
+    "month": 1,
+    "day": 24,
+    "calendar": "g",
+    "time": "04:20",
+    "time_type": "l",
+    "hour": 4.333333,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courmont,_Jules",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Science : Biology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.613753,
+    "lagna": 210.613753,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.972787,
+    "jd_ut": 2402260.667083,
+    "planets": {
+      "Sun": {
+        "longitude": 282.278391,
+        "sign_index": 9,
+        "degree_in_sign": 12.278391,
+        "is_retrograde": false,
+        "speed": 1.016887
+      },
+      "Moon": {
+        "longitude": 240.308921,
+        "sign_index": 8,
+        "degree_in_sign": 0.308921,
+        "is_retrograde": false,
+        "speed": 12.376799
+      },
+      "Mars": {
+        "longitude": 41.620435,
+        "sign_index": 1,
+        "degree_in_sign": 11.620435,
+        "is_retrograde": false,
+        "speed": 0.208081
+      },
+      "Mercury": {
+        "longitude": 258.562521,
+        "sign_index": 8,
+        "degree_in_sign": 18.562521,
+        "is_retrograde": false,
+        "speed": 0.540203
+      },
+      "Jupiter": {
+        "longitude": 238.17419,
+        "sign_index": 7,
+        "degree_in_sign": 28.17419,
+        "is_retrograde": false,
+        "speed": 0.191329
+      },
+      "Venus": {
+        "longitude": 326.221575,
+        "sign_index": 10,
+        "degree_in_sign": 26.221575,
+        "is_retrograde": false,
+        "speed": 1.150955
+      },
+      "Saturn": {
+        "longitude": 188.16464,
+        "sign_index": 6,
+        "degree_in_sign": 8.16464,
+        "is_retrograde": false,
+        "speed": 0.025649
+      },
+      "Rahu": {
+        "longitude": 192.86658,
+        "sign_index": 6,
+        "degree_in_sign": 12.86658,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 12.86658,
+        "sign_index": 0,
+        "degree_in_sign": 12.86658,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

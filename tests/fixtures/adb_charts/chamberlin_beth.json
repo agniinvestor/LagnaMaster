@@ -1,0 +1,110 @@
+{
+  "adb_id": 54886,
+  "name": "Chamberlin, Beth",
+  "given_name": "Beth Chamberlin",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438304.225,
+    "year": 1963,
+    "month": 10,
+    "day": 1,
+    "calendar": "g",
+    "time": "13:24",
+    "time_type": "d",
+    "hour": 13.4,
+    "time_unknown": false,
+    "place": "Danville",
+    "country": "Vermont",
+    "lat": 44.416667,
+    "lon": -72.133333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamberlin,_Beth",
+  "source_notes": "Stephen Przybylowski quotes birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 7.437522,
+    "lagna": 217.437522,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.350743,
+    "jd_ut": 2438304.225,
+    "planets": {
+      "Sun": {
+        "longitude": 164.46205,
+        "sign_index": 5,
+        "degree_in_sign": 14.46205,
+        "is_retrograde": false,
+        "speed": 0.983019
+      },
+      "Moon": {
+        "longitude": 324.284575,
+        "sign_index": 10,
+        "degree_in_sign": 24.284575,
+        "is_retrograde": false,
+        "speed": 17.793779
+      },
+      "Mars": {
+        "longitude": 199.767379,
+        "sign_index": 6,
+        "degree_in_sign": 19.767379,
+        "is_retrograde": false,
+        "speed": 0.689385
+      },
+      "Mercury": {
+        "longitude": 147.683133,
+        "sign_index": 4,
+        "degree_in_sign": 27.683133,
+        "is_retrograde": false,
+        "speed": 0.403373
+      },
+      "Jupiter": {
+        "longitude": 351.995934,
+        "sign_index": 11,
+        "degree_in_sign": 21.995934,
+        "is_retrograde": true,
+        "speed": -0.132489
+      },
+      "Venus": {
+        "longitude": 173.237983,
+        "sign_index": 5,
+        "degree_in_sign": 23.237983,
+        "is_retrograde": false,
+        "speed": 1.245462
+      },
+      "Saturn": {
+        "longitude": 293.434298,
+        "sign_index": 9,
+        "degree_in_sign": 23.434298,
+        "is_retrograde": true,
+        "speed": -0.032616
+      },
+      "Rahu": {
+        "longitude": 82.842968,
+        "sign_index": 2,
+        "degree_in_sign": 22.842968,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 262.842968,
+        "sign_index": 8,
+        "degree_in_sign": 22.842968,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

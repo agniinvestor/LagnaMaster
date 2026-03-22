@@ -1,0 +1,109 @@
+{
+  "adb_id": 80787,
+  "name": "Conjoined Twins: De Nazare",
+  "given_name": "Conjoined Twins: De Nazare",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2455914.666667,
+    "year": 2011,
+    "month": 12,
+    "day": 19,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Anajás (Pará)",
+    "country": "Brazil",
+    "lat": -0.986667,
+    "lon": -49.94
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_De_Nazare",
+  "source_notes": "Ashish Seth quotes news report, \"Brazilian baby 'born healthy with two heads... and both are suckling mother's breasts'\" by Matt Roper, 23 December 2011 [http://www.dailymail.co.uk/news/article-2076954/Baby-heads-born-Brazil-Dicephalic-parapagus-twins-Emanoel-Jesus.html]: \"Maria de Nazare, gave birth by caesarean at a hospital in Anajas, in Brazil's northern Para state, with her newborn weighing 9.9lbs. And in a tribute to the religious celebrations at Christmas, she has decided to call the pair Emanoel and Jesus.... The 25-year-old mother, who lives in a rural area of the state, had no ultra-sound scans during her pregnancy and only found out about the abnormality minutes before the baby was born at 1am on Monday morning.\"  \\n",
+  "categories": [
+    "Personal : Birth : Cesarean",
+    "Personal : Birth : Twin, triplet, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 20.146831,
+    "lagna": 140.146831,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 24.024213,
+    "jd_ut": 2455914.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 242.852368,
+        "sign_index": 8,
+        "degree_in_sign": 2.852368,
+        "is_retrograde": false,
+        "speed": 1.018
+      },
+      "Moon": {
+        "longitude": 168.605662,
+        "sign_index": 5,
+        "degree_in_sign": 18.605662,
+        "is_retrograde": false,
+        "speed": 14.85228
+      },
+      "Mars": {
+        "longitude": 142.346825,
+        "sign_index": 4,
+        "degree_in_sign": 22.346825,
+        "is_retrograde": false,
+        "speed": 0.336654
+      },
+      "Mercury": {
+        "longitude": 221.731327,
+        "sign_index": 7,
+        "degree_in_sign": 11.731327,
+        "is_retrograde": false,
+        "speed": 0.689065
+      },
+      "Jupiter": {
+        "longitude": 6.415833,
+        "sign_index": 0,
+        "degree_in_sign": 6.415833,
+        "is_retrograde": true,
+        "speed": -0.023703
+      },
+      "Venus": {
+        "longitude": 273.995552,
+        "sign_index": 9,
+        "degree_in_sign": 3.995552,
+        "is_retrograde": false,
+        "speed": 1.233969
+      },
+      "Saturn": {
+        "longitude": 183.337305,
+        "sign_index": 6,
+        "degree_in_sign": 3.337305,
+        "is_retrograde": false,
+        "speed": 0.080475
+      },
+      "Rahu": {
+        "longitude": 229.630023,
+        "sign_index": 7,
+        "degree_in_sign": 19.630023,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 49.630023,
+        "sign_index": 1,
+        "degree_in_sign": 19.630023,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 60737,
+  "name": "Clarke",
+  "given_name": "Clarke",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439080.5375,
+    "year": 1965,
+    "month": 11,
+    "day": 16,
+    "calendar": "g",
+    "time": "01:54",
+    "time_type": "s",
+    "hour": 1.9,
+    "time_unknown": false,
+    "place": "Rocourt",
+    "country": "Belgium",
+    "lat": 50.683333,
+    "lon": 5.55
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarke",
+  "source_notes": "from Dekoster, acte 1530, email from 18. Nov. 2013 \"5\"\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 1.808079,
+    "lagna": 121.808079,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.380428,
+    "jd_ut": 2439080.5375,
+    "planets": {
+      "Sun": {
+        "longitude": 210.079981,
+        "sign_index": 7,
+        "degree_in_sign": 0.079981,
+        "is_retrograde": false,
+        "speed": 1.007831
+      },
+      "Moon": {
+        "longitude": 120.328921,
+        "sign_index": 4,
+        "degree_in_sign": 0.328921,
+        "is_retrograde": false,
+        "speed": 12.822012
+      },
+      "Mars": {
+        "longitude": 247.933059,
+        "sign_index": 8,
+        "degree_in_sign": 7.933059,
+        "is_retrograde": false,
+        "speed": 0.756215
+      },
+      "Mercury": {
+        "longitude": 232.449447,
+        "sign_index": 7,
+        "degree_in_sign": 22.449447,
+        "is_retrograde": false,
+        "speed": 0.81951
+      },
+      "Jupiter": {
+        "longitude": 66.720854,
+        "sign_index": 2,
+        "degree_in_sign": 6.720854,
+        "is_retrograde": true,
+        "speed": -0.086949
+      },
+      "Venus": {
+        "longitude": 257.209066,
+        "sign_index": 8,
+        "degree_in_sign": 17.209066,
+        "is_retrograde": false,
+        "speed": 1.006772
+      },
+      "Saturn": {
+        "longitude": 317.114604,
+        "sign_index": 10,
+        "degree_in_sign": 17.114604,
+        "is_retrograde": false,
+        "speed": 0.00327
+      },
+      "Rahu": {
+        "longitude": 41.70458,
+        "sign_index": 1,
+        "degree_in_sign": 11.70458,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 221.70458,
+        "sign_index": 7,
+        "degree_in_sign": 11.70458,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

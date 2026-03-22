@@ -1,0 +1,112 @@
+{
+  "adb_id": 3264,
+  "name": "Chiang Kai-Shek",
+  "given_name": "Chiang Kai-Shek",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2410575.665353,
+    "year": 1887,
+    "month": 10,
+    "day": 31,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Xikou (Zhejiang)",
+    "country": "China",
+    "lat": 29.827778,
+    "lon": 120.472778
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiang_Kai-Shek",
+  "source_notes": "Arthur Blackwell quotes the biography \"Soong Dynasty,\" Harper & Row, 1985, p.152, \"At precisely noon, Chiang entered the world in Chikow.\"\\n(Church of Light quotes a Chinese student for same data from him personally.  Same given by Wynn Spring/38.\\nAQ Summer/50 quotes S.I. Hsuing \"Life of Chiang Kai-Shek\" for \"about 2:00 PM.  LMR could not locate that biography.  \\nIn 2004, Sy Scholfield quotes same data of: 31 October 1887, 12:00 (12 Noon) LMT, Xikou, near Ningbo, Zhejiang Province, China from the book by Jonathan Fenby, \"Generalissimo: Chiang Kai-Shek and the China He Lost\" (London: Simon & Schuster, 2003), p. 17, which states the data including a birth time of \"noon.\" Scholfield quotes same data from \"Chronology of President Chiang Kai-shek\" by Bulei Chen (China Cultural Service, 1954), p. 1: \"Chiang was born at 12 O'clock noon, October 31, on the second floor of the Yutai Salt Store at Chikow, Wuling, Fenghwa.\"\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Heads of state",
+    "Notable : Famous : Historic figure",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 9.765819,
+    "lagna": 249.765819,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.290618,
+    "jd_ut": 2410575.665353,
+    "planets": {
+      "Sun": {
+        "longitude": 195.143713,
+        "sign_index": 6,
+        "degree_in_sign": 15.143713,
+        "is_retrograde": false,
+        "speed": 1.000474
+      },
+      "Moon": {
+        "longitude": 7.090404,
+        "sign_index": 0,
+        "degree_in_sign": 7.090404,
+        "is_retrograde": false,
+        "speed": 16.318757
+      },
+      "Mars": {
+        "longitude": 137.575264,
+        "sign_index": 4,
+        "degree_in_sign": 17.575264,
+        "is_retrograde": false,
+        "speed": 0.581835
+      },
+      "Mercury": {
+        "longitude": 218.493086,
+        "sign_index": 7,
+        "degree_in_sign": 8.493086,
+        "is_retrograde": false,
+        "speed": 0.755986
+      },
+      "Jupiter": {
+        "longitude": 202.127732,
+        "sign_index": 6,
+        "degree_in_sign": 22.127732,
+        "is_retrograde": false,
+        "speed": 0.219219
+      },
+      "Venus": {
+        "longitude": 153.747659,
+        "sign_index": 5,
+        "degree_in_sign": 3.747659,
+        "is_retrograde": false,
+        "speed": 0.581853
+      },
+      "Saturn": {
+        "longitude": 103.951237,
+        "sign_index": 3,
+        "degree_in_sign": 13.951237,
+        "is_retrograde": false,
+        "speed": 0.032989
+      },
+      "Rahu": {
+        "longitude": 112.237117,
+        "sign_index": 3,
+        "degree_in_sign": 22.237117,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 292.237117,
+        "sign_index": 9,
+        "degree_in_sign": 22.237117,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

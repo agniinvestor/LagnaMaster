@@ -1,0 +1,109 @@
+{
+  "adb_id": 44519,
+  "name": "Carlsen, Henning",
+  "given_name": "Henning Carlsen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425035.520833,
+    "year": 1927,
+    "month": 6,
+    "day": 4,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Aalborg",
+    "country": "Denmark",
+    "lat": 57.05,
+    "lon": 9.933333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlsen,_Henning",
+  "source_notes": "Douglas Lannark quotes Danish B.C. 1999\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 10.667992,
+    "lagna": 310.667992,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.843407,
+    "jd_ut": 2425035.520833,
+    "planets": {
+      "Sun": {
+        "longitude": 49.572258,
+        "sign_index": 1,
+        "degree_in_sign": 19.572258,
+        "is_retrograde": false,
+        "speed": 0.95771
+      },
+      "Moon": {
+        "longitude": 101.832436,
+        "sign_index": 3,
+        "degree_in_sign": 11.832436,
+        "is_retrograde": false,
+        "speed": 15.417107
+      },
+      "Mars": {
+        "longitude": 95.671604,
+        "sign_index": 3,
+        "degree_in_sign": 5.671604,
+        "is_retrograde": false,
+        "speed": 0.604603
+      },
+      "Mercury": {
+        "longitude": 66.161808,
+        "sign_index": 2,
+        "degree_in_sign": 6.161808,
+        "is_retrograde": false,
+        "speed": 1.837797
+      },
+      "Jupiter": {
+        "longitude": 336.823816,
+        "sign_index": 11,
+        "degree_in_sign": 6.823816,
+        "is_retrograde": false,
+        "speed": 0.143027
+      },
+      "Venus": {
+        "longitude": 92.696744,
+        "sign_index": 3,
+        "degree_in_sign": 2.696744,
+        "is_retrograde": false,
+        "speed": 1.096326
+      },
+      "Saturn": {
+        "longitude": 220.915237,
+        "sign_index": 7,
+        "degree_in_sign": 10.915237,
+        "is_retrograde": true,
+        "speed": -0.073232
+      },
+      "Rahu": {
+        "longitude": 65.978989,
+        "sign_index": 2,
+        "degree_in_sign": 5.978989,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 245.978989,
+        "sign_index": 8,
+        "degree_in_sign": 5.978989,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

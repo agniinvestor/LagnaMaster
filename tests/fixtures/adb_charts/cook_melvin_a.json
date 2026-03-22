@@ -1,0 +1,109 @@
+{
+  "adb_id": 75698,
+  "name": "Cook, Melvin A.",
+  "given_name": "Melvin A. Cook",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419320.75,
+    "year": 1911,
+    "month": 10,
+    "day": 10,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Garden City",
+    "country": "Utah",
+    "lat": 41.95,
+    "lon": -111.4
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cook,_Melvin_A.",
+  "source_notes": "Birth certificate submitted by Sy Scholfield.\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Science : Chemistry"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 2.239585,
+    "lagna": 62.239585,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.624924,
+    "jd_ut": 2419320.75,
+    "planets": {
+      "Sun": {
+        "longitude": 174.179507,
+        "sign_index": 5,
+        "degree_in_sign": 24.179507,
+        "is_retrograde": false,
+        "speed": 0.988833
+      },
+      "Moon": {
+        "longitude": 34.943131,
+        "sign_index": 1,
+        "degree_in_sign": 4.943131,
+        "is_retrograde": false,
+        "speed": 12.317132
+      },
+      "Mars": {
+        "longitude": 47.975834,
+        "sign_index": 1,
+        "degree_in_sign": 17.975834,
+        "is_retrograde": false,
+        "speed": 0.100995
+      },
+      "Mercury": {
+        "longitude": 165.016158,
+        "sign_index": 5,
+        "degree_in_sign": 15.016158,
+        "is_retrograde": false,
+        "speed": 1.754195
+      },
+      "Jupiter": {
+        "longitude": 204.260196,
+        "sign_index": 6,
+        "degree_in_sign": 24.260196,
+        "is_retrograde": false,
+        "speed": 0.204705
+      },
+      "Venus": {
+        "longitude": 141.135739,
+        "sign_index": 4,
+        "degree_in_sign": 21.135739,
+        "is_retrograde": false,
+        "speed": 0.169176
+      },
+      "Saturn": {
+        "longitude": 26.350392,
+        "sign_index": 0,
+        "degree_in_sign": 26.350392,
+        "is_retrograde": true,
+        "speed": -0.061761
+      },
+      "Rahu": {
+        "longitude": 8.816639,
+        "sign_index": 0,
+        "degree_in_sign": 8.816639,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 188.816639,
+        "sign_index": 6,
+        "degree_in_sign": 8.816639,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

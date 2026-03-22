@@ -1,0 +1,108 @@
+{
+  "adb_id": 65080,
+  "name": "Couderc, Jean-Louis",
+  "given_name": "Jean-Louis Couderc",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430322.690972,
+    "year": 1941,
+    "month": 11,
+    "day": 24,
+    "calendar": "g",
+    "time": "06:35",
+    "time_type": "d",
+    "hour": 6.583333,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couderc,_Jean-Louis",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 249.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 15.69953,
+    "lagna": 165.69953,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.045555,
+    "jd_ut": 2430322.690972,
+    "planets": {
+      "Sun": {
+        "longitude": 218.470642,
+        "sign_index": 7,
+        "degree_in_sign": 8.470642,
+        "is_retrograde": false,
+        "speed": 1.011467
+      },
+      "Moon": {
+        "longitude": 289.347968,
+        "sign_index": 9,
+        "degree_in_sign": 19.347968,
+        "is_retrograde": false,
+        "speed": 17.202958
+      },
+      "Mars": {
+        "longitude": 349.245678,
+        "sign_index": 11,
+        "degree_in_sign": 19.245678,
+        "is_retrograde": false,
+        "speed": 0.171189
+      },
+      "Mercury": {
+        "longitude": 203.382871,
+        "sign_index": 6,
+        "degree_in_sign": 23.382871,
+        "is_retrograde": false,
+        "speed": 1.510003
+      },
+      "Jupiter": {
+        "longitude": 55.266619,
+        "sign_index": 1,
+        "degree_in_sign": 25.266619,
+        "is_retrograde": true,
+        "speed": -0.125753
+      },
+      "Venus": {
+        "longitude": 265.657345,
+        "sign_index": 8,
+        "degree_in_sign": 25.657345,
+        "is_retrograde": false,
+        "speed": 1.005729
+      },
+      "Saturn": {
+        "longitude": 31.499301,
+        "sign_index": 1,
+        "degree_in_sign": 1.499301,
+        "is_retrograde": true,
+        "speed": -0.080614
+      },
+      "Rahu": {
+        "longitude": 145.800877,
+        "sign_index": 4,
+        "degree_in_sign": 25.800877,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.800877,
+        "sign_index": 10,
+        "degree_in_sign": 25.800877,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

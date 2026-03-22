@@ -1,0 +1,111 @@
+{
+  "adb_id": 94596,
+  "name": "Clark, Vern",
+  "given_name": "Vern Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431340.970833,
+    "year": 1944,
+    "month": 9,
+    "day": 7,
+    "calendar": "g",
+    "time": "06:18",
+    "time_type": "w",
+    "hour": 6.3,
+    "time_unknown": false,
+    "place": "Sioux City",
+    "country": "Iowa",
+    "lat": 42.5,
+    "lon": -96.4
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Vern",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 20.121415,
+    "lagna": 110.121415,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.084489,
+    "jd_ut": 2431340.970833,
+    "planets": {
+      "Sun": {
+        "longitude": 141.611314,
+        "sign_index": 4,
+        "degree_in_sign": 21.611314,
+        "is_retrograde": false,
+        "speed": 0.970793
+      },
+      "Moon": {
+        "longitude": 25.700634,
+        "sign_index": 0,
+        "degree_in_sign": 25.700634,
+        "is_retrograde": false,
+        "speed": 9.83683
+      },
+      "Mars": {
+        "longitude": 163.026055,
+        "sign_index": 5,
+        "degree_in_sign": 13.026055,
+        "is_retrograde": false,
+        "speed": 0.649234
+      },
+      "Mercury": {
+        "longitude": 140.573155,
+        "sign_index": 4,
+        "degree_in_sign": 20.573155,
+        "is_retrograde": true,
+        "speed": -0.968844
+      },
+      "Jupiter": {
+        "longitude": 136.192946,
+        "sign_index": 4,
+        "degree_in_sign": 16.192946,
+        "is_retrograde": false,
+        "speed": 0.216616
+      },
+      "Venus": {
+        "longitude": 161.335162,
+        "sign_index": 5,
+        "degree_in_sign": 11.335162,
+        "is_retrograde": false,
+        "speed": 1.231703
+      },
+      "Saturn": {
+        "longitude": 75.851991,
+        "sign_index": 2,
+        "degree_in_sign": 15.851991,
+        "is_retrograde": false,
+        "speed": 0.077115
+      },
+      "Rahu": {
+        "longitude": 91.840123,
+        "sign_index": 3,
+        "degree_in_sign": 1.840123,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 271.840123,
+        "sign_index": 9,
+        "degree_in_sign": 1.840123,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

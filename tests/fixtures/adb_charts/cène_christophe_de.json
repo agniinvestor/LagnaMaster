@@ -1,0 +1,108 @@
+{
+  "adb_id": 64425,
+  "name": "Cène, Christophe de",
+  "given_name": "Christophe de Cène",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437393.791667,
+    "year": 1961,
+    "month": 4,
+    "day": 4,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Combourg",
+    "country": "France",
+    "lat": 48.416667,
+    "lon": -1.75
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cène,_Christophe_de",
+  "source_notes": "Didier Geslain archive, 'Astrologues' pdf file, p. 49.\\n\\nSteinbrecher quotes same data from Patrice Petitallot from B.C.\\n\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 2.12255,
+    "lagna": 2.12255,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.31593,
+    "jd_ut": 2437393.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 350.960346,
+        "sign_index": 11,
+        "degree_in_sign": 20.960346,
+        "is_retrograde": false,
+        "speed": 0.984523
+      },
+      "Moon": {
+        "longitude": 207.552817,
+        "sign_index": 6,
+        "degree_in_sign": 27.552817,
+        "is_retrograde": false,
+        "speed": 11.640307
+      },
+      "Mars": {
+        "longitude": 81.514751,
+        "sign_index": 2,
+        "degree_in_sign": 21.514751,
+        "is_retrograde": false,
+        "speed": 0.430452
+      },
+      "Mercury": {
+        "longitude": 327.175827,
+        "sign_index": 10,
+        "degree_in_sign": 27.175827,
+        "is_retrograde": false,
+        "speed": 1.479518
+      },
+      "Jupiter": {
+        "longitude": 279.925712,
+        "sign_index": 9,
+        "degree_in_sign": 9.925712,
+        "is_retrograde": false,
+        "speed": 0.14269
+      },
+      "Venus": {
+        "longitude": 1.586664,
+        "sign_index": 0,
+        "degree_in_sign": 1.586664,
+        "is_retrograde": true,
+        "speed": -0.545652
+      },
+      "Saturn": {
+        "longitude": 275.53781,
+        "sign_index": 9,
+        "degree_in_sign": 5.53781,
+        "is_retrograde": false,
+        "speed": 0.055471
+      },
+      "Rahu": {
+        "longitude": 131.088695,
+        "sign_index": 4,
+        "degree_in_sign": 11.088695,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 311.088695,
+        "sign_index": 10,
+        "degree_in_sign": 11.088695,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

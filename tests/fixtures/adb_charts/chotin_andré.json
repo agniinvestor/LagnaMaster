@@ -1,0 +1,111 @@
+{
+  "adb_id": 79508,
+  "name": "Chotin, André",
+  "given_name": "André Chotin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412123.70184,
+    "year": 1892,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 10",
+    "country": "France",
+    "lat": 48.871944,
+    "lon": 2.3575
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chotin,_André",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection.\\n",
+  "categories": [
+    "Vocation : Art : Stage/ Set design",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 6.68995,
+    "lagna": 216.68995,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.349794,
+    "jd_ut": 2412123.70184,
+    "planets": {
+      "Sun": {
+        "longitude": 283.398354,
+        "sign_index": 9,
+        "degree_in_sign": 13.398354,
+        "is_retrograde": false,
+        "speed": 1.016619
+      },
+      "Moon": {
+        "longitude": 239.724501,
+        "sign_index": 7,
+        "degree_in_sign": 29.724501,
+        "is_retrograde": false,
+        "speed": 11.190012
+      },
+      "Mars": {
+        "longitude": 218.507107,
+        "sign_index": 7,
+        "degree_in_sign": 8.507107,
+        "is_retrograde": false,
+        "speed": 0.625494
+      },
+      "Mercury": {
+        "longitude": 259.96212,
+        "sign_index": 8,
+        "degree_in_sign": 19.96212,
+        "is_retrograde": false,
+        "speed": 1.24504
+      },
+      "Jupiter": {
+        "longitude": 325.91933,
+        "sign_index": 10,
+        "degree_in_sign": 25.91933,
+        "is_retrograde": false,
+        "speed": 0.209466
+      },
+      "Venus": {
+        "longitude": 314.581089,
+        "sign_index": 10,
+        "degree_in_sign": 14.581089,
+        "is_retrograde": false,
+        "speed": 1.230735
+      },
+      "Saturn": {
+        "longitude": 157.556951,
+        "sign_index": 5,
+        "degree_in_sign": 7.556951,
+        "is_retrograde": true,
+        "speed": -0.029563
+      },
+      "Rahu": {
+        "longitude": 30.203386,
+        "sign_index": 1,
+        "degree_in_sign": 0.203386,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 210.203386,
+        "sign_index": 7,
+        "degree_in_sign": 0.203386,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

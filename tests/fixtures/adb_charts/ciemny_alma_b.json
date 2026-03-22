@@ -1,0 +1,111 @@
+{
+  "adb_id": 4905,
+  "name": "Ciemny, Alma B.",
+  "given_name": "Alma B. Ciemny",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2420569.836111,
+    "year": 1915,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "00:04",
+    "time_type": "s",
+    "hour": 0.066667,
+    "time_unknown": false,
+    "place": "San Martin",
+    "country": "California",
+    "lat": 37.083333,
+    "lon": -121.616667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ciemny,_Alma_B.",
+  "source_notes": "Obit given in AFA 10/l987\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Heart",
+    "Diagnoses : Body Part Problems : Surgery",
+    "Personal : Religion/Spirituality : Theosophy/Vedanta",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 19.000673,
+    "lagna": 199.000673,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.672677,
+    "jd_ut": 2420569.836111,
+    "planets": {
+      "Sun": {
+        "longitude": 328.997214,
+        "sign_index": 10,
+        "degree_in_sign": 28.997214,
+        "is_retrograde": false,
+        "speed": 0.997655
+      },
+      "Moon": {
+        "longitude": 299.793494,
+        "sign_index": 9,
+        "degree_in_sign": 29.793494,
+        "is_retrograde": false,
+        "speed": 16.785902
+      },
+      "Mars": {
+        "longitude": 310.310309,
+        "sign_index": 10,
+        "degree_in_sign": 10.310309,
+        "is_retrograde": false,
+        "speed": 0.786235
+      },
+      "Mercury": {
+        "longitude": 302.651285,
+        "sign_index": 10,
+        "degree_in_sign": 2.651285,
+        "is_retrograde": false,
+        "speed": 0.585648
+      },
+      "Jupiter": {
+        "longitude": 316.275211,
+        "sign_index": 10,
+        "degree_in_sign": 16.275211,
+        "is_retrograde": false,
+        "speed": 0.238286
+      },
+      "Venus": {
+        "longitude": 285.010283,
+        "sign_index": 9,
+        "degree_in_sign": 15.010283,
+        "is_retrograde": false,
+        "speed": 1.140303
+      },
+      "Saturn": {
+        "longitude": 62.906841,
+        "sign_index": 2,
+        "degree_in_sign": 2.906841,
+        "is_retrograde": false,
+        "speed": 0.028222
+      },
+      "Rahu": {
+        "longitude": 302.624947,
+        "sign_index": 10,
+        "degree_in_sign": 2.624947,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 122.624947,
+        "sign_index": 4,
+        "degree_in_sign": 2.624947,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

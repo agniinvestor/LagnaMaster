@@ -1,0 +1,113 @@
+{
+  "adb_id": 87758,
+  "name": "Christy, Karen",
+  "given_name": "Karen Christy",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433717.290972,
+    "year": 1951,
+    "month": 3,
+    "day": 11,
+    "calendar": "g",
+    "time": "12:59",
+    "time_type": "s",
+    "hour": 12.983333,
+    "time_unknown": false,
+    "place": "Abilene",
+    "country": "Texas",
+    "lat": 32.45,
+    "lon": -99.733333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christy,_Karen",
+  "source_notes": "Sy Scholfield provided birth report, Abilene Reporter-News (Abilene, Texas), 12 March 1951, p. 11. Full name from Texas Birth Index.\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Beauty : Model",
+    "Vocation : Beauty : Model",
+    "Vocation : Beauty : Sex-symbol"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 22.312707,
+    "lagna": 52.312707,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.17535,
+    "jd_ut": 2433717.290972,
+    "planets": {
+      "Sun": {
+        "longitude": 327.22178,
+        "sign_index": 10,
+        "degree_in_sign": 27.22178,
+        "is_retrograde": false,
+        "speed": 0.998598
+      },
+      "Moon": {
+        "longitude": 14.140753,
+        "sign_index": 0,
+        "degree_in_sign": 14.140753,
+        "is_retrograde": false,
+        "speed": 9.201201
+      },
+      "Mars": {
+        "longitude": 344.4291,
+        "sign_index": 11,
+        "degree_in_sign": 14.4291,
+        "is_retrograde": false,
+        "speed": 0.767233
+      },
+      "Mercury": {
+        "longitude": 327.566203,
+        "sign_index": 10,
+        "degree_in_sign": 27.566203,
+        "is_retrograde": false,
+        "speed": 1.938972
+      },
+      "Jupiter": {
+        "longitude": 327.172024,
+        "sign_index": 10,
+        "degree_in_sign": 27.172024,
+        "is_retrograde": false,
+        "speed": 0.242291
+      },
+      "Venus": {
+        "longitude": 355.063368,
+        "sign_index": 11,
+        "degree_in_sign": 25.063368,
+        "is_retrograde": false,
+        "speed": 1.225663
+      },
+      "Saturn": {
+        "longitude": 156.496549,
+        "sign_index": 5,
+        "degree_in_sign": 6.496549,
+        "is_retrograde": true,
+        "speed": -0.077337
+      },
+      "Rahu": {
+        "longitude": 325.914019,
+        "sign_index": 10,
+        "degree_in_sign": 25.914019,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 145.914019,
+        "sign_index": 4,
+        "degree_in_sign": 25.914019,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

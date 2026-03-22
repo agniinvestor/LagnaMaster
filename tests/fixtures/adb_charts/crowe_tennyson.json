@@ -1,0 +1,110 @@
+{
+  "adb_id": 50092,
+  "name": "Crowe, Tennyson",
+  "given_name": "Tennyson Crowe",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2453923.389583,
+    "year": 2006,
+    "month": 7,
+    "day": 7,
+    "calendar": "g",
+    "time": "07:21",
+    "time_type": "s",
+    "hour": 7.35,
+    "time_unknown": false,
+    "place": "Sydney",
+    "country": "Australia",
+    "lat": -33.866667,
+    "lon": 151.216667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crowe,_Tennyson",
+  "source_notes": "Sy Scholfield quotes 7:27 AM from Australian AP report [http://www.news.com.au/story/0,10117,19712877-29277,00.html] and People [https://people.com/celebrity/russell-crowe-wife-have-a-boy/] but 7:21 AM from \"Crowe welcomes new baby boy Tennyson\" (Friday 7 July 2006, 14:47 AEST [http://news.ninemsn.com.au/article.aspx?id=63890]): \"Oscar-winning actor Russell Crowe is a dad for the second time. Crowe's wife Danielle Spencer gave birth to Tennyson Spencer Crowe at 7.21am (AEST) on Friday.\" Scholfield also quotes Russell Crowe saying during a telecast that Tennyson was born at 7.21 am. Sarah Van Sanden quotes an AP report also for 7:21 AM.\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Parents divorced"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.894818,
+    "lagna": 60.894818,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.948054,
+    "jd_ut": 2453923.389583,
+    "planets": {
+      "Sun": {
+        "longitude": 80.713905,
+        "sign_index": 2,
+        "degree_in_sign": 20.713905,
+        "is_retrograde": false,
+        "speed": 0.953129
+      },
+      "Moon": {
+        "longitude": 206.60476,
+        "sign_index": 6,
+        "degree_in_sign": 26.60476,
+        "is_retrograde": false,
+        "speed": 17.184847
+      },
+      "Mars": {
+        "longitude": 116.219031,
+        "sign_index": 3,
+        "degree_in_sign": 26.219031,
+        "is_retrograde": false,
+        "speed": 0.615352
+      },
+      "Mercury": {
+        "longitude": 97.258506,
+        "sign_index": 3,
+        "degree_in_sign": 7.258506,
+        "is_retrograde": true,
+        "speed": -0.160748
+      },
+      "Jupiter": {
+        "longitude": 195.030834,
+        "sign_index": 6,
+        "degree_in_sign": 15.030834,
+        "is_retrograde": false,
+        "speed": 0.001714
+      },
+      "Venus": {
+        "longitude": 51.383923,
+        "sign_index": 1,
+        "degree_in_sign": 21.383923,
+        "is_retrograde": false,
+        "speed": 1.195689
+      },
+      "Saturn": {
+        "longitude": 106.933948,
+        "sign_index": 3,
+        "degree_in_sign": 16.933948,
+        "is_retrograde": false,
+        "speed": 0.119705
+      },
+      "Rahu": {
+        "longitude": 335.151783,
+        "sign_index": 11,
+        "degree_in_sign": 5.151783,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 155.151783,
+        "sign_index": 5,
+        "degree_in_sign": 5.151783,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

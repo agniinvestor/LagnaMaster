@@ -1,0 +1,111 @@
+{
+  "adb_id": 75697,
+  "name": "Coffin, Tris",
+  "given_name": "Tris Coffin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418532.104167,
+    "year": 1909,
+    "month": 8,
+    "day": 13,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "s",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Mammoth",
+    "country": "Utah",
+    "lat": 39.933333,
+    "lon": -112.133333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coffin,_Tris",
+  "source_notes": "Birth certificate submitted by Sy Scholfield.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Diagnoses : Body Part Problems : Lung",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 26.26027,
+    "lagna": 116.26027,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.594775,
+    "jd_ut": 2418532.104167,
+    "planets": {
+      "Sun": {
+        "longitude": 117.573402,
+        "sign_index": 3,
+        "degree_in_sign": 27.573402,
+        "is_retrograde": false,
+        "speed": 0.9608
+      },
+      "Moon": {
+        "longitude": 90.652539,
+        "sign_index": 3,
+        "degree_in_sign": 0.652539,
+        "is_retrograde": false,
+        "speed": 9.605274
+      },
+      "Mars": {
+        "longitude": 343.577722,
+        "sign_index": 11,
+        "degree_in_sign": 13.577722,
+        "is_retrograde": false,
+        "speed": 0.130881
+      },
+      "Mercury": {
+        "longitude": 126.860241,
+        "sign_index": 4,
+        "degree_in_sign": 6.860241,
+        "is_retrograde": false,
+        "speed": 1.876049
+      },
+      "Jupiter": {
+        "longitude": 144.764614,
+        "sign_index": 4,
+        "degree_in_sign": 24.764614,
+        "is_retrograde": false,
+        "speed": 0.203049
+      },
+      "Venus": {
+        "longitude": 146.015412,
+        "sign_index": 4,
+        "degree_in_sign": 26.015412,
+        "is_retrograde": false,
+        "speed": 1.211502
+      },
+      "Saturn": {
+        "longitude": 0.578888,
+        "sign_index": 0,
+        "degree_in_sign": 0.578888,
+        "is_retrograde": true,
+        "speed": -0.014206
+      },
+      "Rahu": {
+        "longitude": 50.608637,
+        "sign_index": 1,
+        "degree_in_sign": 20.608637,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 230.608637,
+        "sign_index": 7,
+        "degree_in_sign": 20.608637,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

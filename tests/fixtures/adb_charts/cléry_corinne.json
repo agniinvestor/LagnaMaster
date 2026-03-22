@@ -1,0 +1,110 @@
+{
+  "adb_id": 71674,
+  "name": "Cléry, Corinne",
+  "given_name": "Corinne Cléry",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433364.354167,
+    "year": 1950,
+    "month": 3,
+    "day": 23,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "s",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cléry,_Corinne",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes her.\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Vocation : Beauty : Model",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 13.126825,
+    "lagna": 163.126825,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.161855,
+    "jd_ut": 2433364.354167,
+    "planets": {
+      "Sun": {
+        "longitude": 339.482011,
+        "sign_index": 11,
+        "degree_in_sign": 9.482011,
+        "is_retrograde": false,
+        "speed": 0.991664
+      },
+      "Moon": {
+        "longitude": 35.675604,
+        "sign_index": 1,
+        "degree_in_sign": 5.675604,
+        "is_retrograde": false,
+        "speed": 10.639395
+      },
+      "Mars": {
+        "longitude": 158.631641,
+        "sign_index": 5,
+        "degree_in_sign": 8.631641,
+        "is_retrograde": true,
+        "speed": -0.3908
+      },
+      "Mercury": {
+        "longitude": 335.264103,
+        "sign_index": 11,
+        "degree_in_sign": 5.264103,
+        "is_retrograde": false,
+        "speed": 1.944067
+      },
+      "Jupiter": {
+        "longitude": 302.335171,
+        "sign_index": 10,
+        "degree_in_sign": 2.335171,
+        "is_retrograde": false,
+        "speed": 0.213852
+      },
+      "Venus": {
+        "longitude": 294.717057,
+        "sign_index": 9,
+        "degree_in_sign": 24.717057,
+        "is_retrograde": false,
+        "speed": 0.802385
+      },
+      "Saturn": {
+        "longitude": 141.593619,
+        "sign_index": 4,
+        "degree_in_sign": 21.593619,
+        "is_retrograde": true,
+        "speed": -0.073876
+      },
+      "Rahu": {
+        "longitude": 344.616867,
+        "sign_index": 11,
+        "degree_in_sign": 14.616867,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 164.616867,
+        "sign_index": 5,
+        "degree_in_sign": 14.616867,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

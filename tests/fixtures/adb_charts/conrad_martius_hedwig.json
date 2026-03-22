@@ -1,0 +1,111 @@
+{
+  "adb_id": 87228,
+  "name": "Conrad-Martius, Hedwig",
+  "given_name": "Hedwig Conrad-Martius",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410694.567083,
+    "year": 1888,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "l",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conrad-Martius,_Hedwig",
+  "source_notes": "Sy Scholfield provided birth registry entry from Berlin Archives. Death date and place in margin. \\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Humanities+Social Sciences : Philosopher",
+    "Vocation : Religion : Other Religion",
+    "Vocation : Writers : Religion/ Philosophy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 28.299759,
+    "lagna": 208.299759,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.295164,
+    "jd_ut": 2410694.567083,
+    "planets": {
+      "Sun": {
+        "longitude": 315.645816,
+        "sign_index": 10,
+        "degree_in_sign": 15.645816,
+        "is_retrograde": false,
+        "speed": 1.003718
+      },
+      "Moon": {
+        "longitude": 129.737915,
+        "sign_index": 4,
+        "degree_in_sign": 9.737915,
+        "is_retrograde": false,
+        "speed": 11.910861
+      },
+      "Mars": {
+        "longitude": 187.680076,
+        "sign_index": 6,
+        "degree_in_sign": 7.680076,
+        "is_retrograde": false,
+        "speed": 0.074945
+      },
+      "Mercury": {
+        "longitude": 326.150995,
+        "sign_index": 10,
+        "degree_in_sign": 26.150995,
+        "is_retrograde": true,
+        "speed": -0.535797
+      },
+      "Jupiter": {
+        "longitude": 223.167171,
+        "sign_index": 7,
+        "degree_in_sign": 13.167171,
+        "is_retrograde": false,
+        "speed": 0.073114
+      },
+      "Venus": {
+        "longitude": 281.328657,
+        "sign_index": 9,
+        "degree_in_sign": 11.328657,
+        "is_retrograde": false,
+        "speed": 1.216948
+      },
+      "Saturn": {
+        "longitude": 98.265085,
+        "sign_index": 3,
+        "degree_in_sign": 8.265085,
+        "is_retrograde": true,
+        "speed": -0.056107
+      },
+      "Rahu": {
+        "longitude": 105.936262,
+        "sign_index": 3,
+        "degree_in_sign": 15.936262,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 285.936262,
+        "sign_index": 9,
+        "degree_in_sign": 15.936262,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

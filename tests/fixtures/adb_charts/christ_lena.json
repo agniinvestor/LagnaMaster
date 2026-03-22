@@ -1,0 +1,110 @@
+{
+  "adb_id": 56190,
+  "name": "Christ, Lena",
+  "given_name": "Lena Christ",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408384.071204,
+    "year": 1881,
+    "month": 10,
+    "day": 30,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "l",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Glonn",
+    "country": "Germany",
+    "lat": 47.983333,
+    "lon": 11.866667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "aqu",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christ,_Lena",
+  "source_notes": "Arno Müller, vol 3\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Personal : Death : Suicide",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 18.194507,
+    "lagna": 288.194507,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.206844,
+    "jd_ut": 2408384.071204,
+    "planets": {
+      "Sun": {
+        "longitude": 195.091446,
+        "sign_index": 6,
+        "degree_in_sign": 15.091446,
+        "is_retrograde": false,
+        "speed": 1.000742
+      },
+      "Moon": {
+        "longitude": 290.307146,
+        "sign_index": 9,
+        "degree_in_sign": 20.307146,
+        "is_retrograde": false,
+        "speed": 11.822853
+      },
+      "Mars": {
+        "longitude": 81.261566,
+        "sign_index": 2,
+        "degree_in_sign": 21.261566,
+        "is_retrograde": false,
+        "speed": 0.220527
+      },
+      "Mercury": {
+        "longitude": 211.822746,
+        "sign_index": 7,
+        "degree_in_sign": 1.822746,
+        "is_retrograde": true,
+        "speed": -0.381208
+      },
+      "Jupiter": {
+        "longitude": 30.781271,
+        "sign_index": 1,
+        "degree_in_sign": 0.781271,
+        "is_retrograde": true,
+        "speed": -0.126917
+      },
+      "Venus": {
+        "longitude": 167.984729,
+        "sign_index": 5,
+        "degree_in_sign": 17.984729,
+        "is_retrograde": false,
+        "speed": 1.236659
+      },
+      "Saturn": {
+        "longitude": 16.877883,
+        "sign_index": 0,
+        "degree_in_sign": 16.877883,
+        "is_retrograde": true,
+        "speed": -0.080597
+      },
+      "Rahu": {
+        "longitude": 228.374341,
+        "sign_index": 7,
+        "degree_in_sign": 18.374341,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 48.374341,
+        "sign_index": 1,
+        "degree_in_sign": 18.374341,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

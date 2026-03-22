@@ -1,0 +1,127 @@
+{
+  "adb_id": 186,
+  "name": "Child, Julia",
+  "given_name": "Julia Child",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419630.8125,
+    "year": 1912,
+    "month": 8,
+    "day": 15,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "s",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Pasadena",
+    "country": "California",
+    "lat": 34.15,
+    "lon": -118.15
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Child,_Julia",
+  "source_notes": "Contemporary American Horoscopes.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Personality : Gracious/ sociable",
+    "Traits : Personality : Loved by all",
+    "Diagnoses : Major Diseases : Cancer",
+    "Diagnoses : Body Part Problems : Bone",
+    "Diagnoses : Body Part Problems : Surgery",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids none",
+    "Lifestyle : Work : Loves job",
+    "Lifestyle : Work : Retirement circumstances",
+    "Lifestyle : Financial : Gain - Financial success in field",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Education : Teacher",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertainment : Voice-Over",
+    "Vocation : Food and Beverage : Chef/ Cook",
+    "Vocation : Writers : How To ....",
+    "Notable : Famous : Historic figure",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 20.635545,
+    "lagna": 20.635545,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.636778,
+    "jd_ut": 2419630.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 120.402551,
+        "sign_index": 4,
+        "degree_in_sign": 0.402551,
+        "is_retrograde": false,
+        "speed": 0.961714
+      },
+      "Moon": {
+        "longitude": 168.086798,
+        "sign_index": 5,
+        "degree_in_sign": 18.086798,
+        "is_retrograde": false,
+        "speed": 16.775893
+      },
+      "Mars": {
+        "longitude": 146.240979,
+        "sign_index": 4,
+        "degree_in_sign": 26.240979,
+        "is_retrograde": false,
+        "speed": 0.63405
+      },
+      "Mercury": {
+        "longitude": 131.255497,
+        "sign_index": 4,
+        "degree_in_sign": 11.255497,
+        "is_retrograde": true,
+        "speed": -0.675777
+      },
+      "Jupiter": {
+        "longitude": 223.198678,
+        "sign_index": 7,
+        "degree_in_sign": 13.198678,
+        "is_retrograde": false,
+        "speed": 0.041623
+      },
+      "Venus": {
+        "longitude": 131.777095,
+        "sign_index": 4,
+        "degree_in_sign": 11.777095,
+        "is_retrograde": false,
+        "speed": 1.234599
+      },
+      "Saturn": {
+        "longitude": 40.619898,
+        "sign_index": 1,
+        "degree_in_sign": 10.619898,
+        "is_retrograde": false,
+        "speed": 0.053739
+      },
+      "Rahu": {
+        "longitude": 352.385776,
+        "sign_index": 11,
+        "degree_in_sign": 22.385776,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 172.385776,
+        "sign_index": 5,
+        "degree_in_sign": 22.385776,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

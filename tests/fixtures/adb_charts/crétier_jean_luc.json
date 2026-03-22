@@ -1,0 +1,109 @@
+{
+  "adb_id": 37419,
+  "name": "Crétier, Jean-Luc",
+  "given_name": "Jean-Luc Crétier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439243.6875,
+    "year": 1966,
+    "month": 4,
+    "day": 28,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Albertville",
+    "country": "France",
+    "lat": 45.683333,
+    "lon": 6.383333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crétier,_Jean-Luc",
+  "source_notes": "Didier Geslain archive, 'sports divers' pdf file, p. 43.\\n",
+  "categories": [
+    "Vocation : Sports : Skiing",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 19.495454,
+    "lagna": 349.495454,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.386667,
+    "jd_ut": 2439243.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 14.059594,
+        "sign_index": 0,
+        "degree_in_sign": 14.059594,
+        "is_retrograde": false,
+        "speed": 0.972105
+      },
+      "Moon": {
+        "longitude": 104.422021,
+        "sign_index": 3,
+        "degree_in_sign": 14.422021,
+        "is_retrograde": false,
+        "speed": 18.057533
+      },
+      "Mars": {
+        "longitude": 14.302192,
+        "sign_index": 0,
+        "degree_in_sign": 14.302192,
+        "is_retrograde": false,
+        "speed": 0.739401
+      },
+      "Mercury": {
+        "longitude": 348.742453,
+        "sign_index": 11,
+        "degree_in_sign": 18.742453,
+        "is_retrograde": false,
+        "speed": 1.374638
+      },
+      "Jupiter": {
+        "longitude": 65.238185,
+        "sign_index": 2,
+        "degree_in_sign": 5.238185,
+        "is_retrograde": false,
+        "speed": 0.180463
+      },
+      "Venus": {
+        "longitude": 328.970182,
+        "sign_index": 10,
+        "degree_in_sign": 28.970182,
+        "is_retrograde": false,
+        "speed": 1.081743
+      },
+      "Saturn": {
+        "longitude": 332.102884,
+        "sign_index": 11,
+        "degree_in_sign": 2.102884,
+        "is_retrograde": false,
+        "speed": 0.102182
+      },
+      "Rahu": {
+        "longitude": 33.058928,
+        "sign_index": 1,
+        "degree_in_sign": 3.058928,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 213.058928,
+        "sign_index": 7,
+        "degree_in_sign": 3.058928,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

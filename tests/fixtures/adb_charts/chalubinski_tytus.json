@@ -1,0 +1,108 @@
+{
+  "adb_id": 76892,
+  "name": "Chalubinski, Tytus",
+  "given_name": "Tytus Chalubinski",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2386164.024537,
+    "year": 1820,
+    "month": 12,
+    "day": 29,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Radom",
+    "country": "Poland",
+    "lat": 51.416667,
+    "lon": 21.166667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chalubinski,_Tytus",
+  "source_notes": "PTA quotes birth certificatehttp://www.astrolog.org.pl/baza-horoskopow/Cha%C5%82ubi%C5%84ski_Tytus]\\nThe information reported by Wojciech Suchomski through Genealodzy.pl [\\n",
+  "categories": [
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 27.160626,
+    "lagna": 27.160626,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.3576,
+    "jd_ut": 2386164.024537,
+    "planets": {
+      "Sun": {
+        "longitude": 256.44548,
+        "sign_index": 8,
+        "degree_in_sign": 16.44548,
+        "is_retrograde": false,
+        "speed": 1.019517
+      },
+      "Moon": {
+        "longitude": 187.620475,
+        "sign_index": 6,
+        "degree_in_sign": 7.620475,
+        "is_retrograde": false,
+        "speed": 12.412747
+      },
+      "Mars": {
+        "longitude": 259.749913,
+        "sign_index": 8,
+        "degree_in_sign": 19.749913,
+        "is_retrograde": false,
+        "speed": 0.76882
+      },
+      "Mercury": {
+        "longitude": 234.494749,
+        "sign_index": 7,
+        "degree_in_sign": 24.494749,
+        "is_retrograde": false,
+        "speed": 1.178553
+      },
+      "Jupiter": {
+        "longitude": 326.177652,
+        "sign_index": 10,
+        "degree_in_sign": 26.177652,
+        "is_retrograde": false,
+        "speed": 0.152022
+      },
+      "Venus": {
+        "longitude": 221.484232,
+        "sign_index": 7,
+        "degree_in_sign": 11.484232,
+        "is_retrograde": false,
+        "speed": 1.226566
+      },
+      "Saturn": {
+        "longitude": 345.757039,
+        "sign_index": 11,
+        "degree_in_sign": 15.757039,
+        "is_retrograde": false,
+        "speed": 0.0354
+      },
+      "Rahu": {
+        "longitude": 325.862469,
+        "sign_index": 10,
+        "degree_in_sign": 25.862469,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 145.862469,
+        "sign_index": 4,
+        "degree_in_sign": 25.862469,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

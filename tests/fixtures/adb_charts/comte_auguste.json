@@ -1,0 +1,109 @@
+{
+  "adb_id": 55654,
+  "name": "Comte, Auguste",
+  "given_name": "Auguste Comte",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2377784.989213,
+    "year": 1798,
+    "month": 1,
+    "day": 19,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Montpellier",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 3.883333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comte,_Auguste",
+  "source_notes": "Gaquelin, vol. 6.\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Sociologist",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 6.958429,
+    "lagna": 6.958429,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.037415,
+    "jd_ut": 2377784.989213,
+    "planets": {
+      "Sun": {
+        "longitude": 278.721181,
+        "sign_index": 9,
+        "degree_in_sign": 8.721181,
+        "is_retrograde": false,
+        "speed": 1.017637
+      },
+      "Moon": {
+        "longitude": 305.476715,
+        "sign_index": 10,
+        "degree_in_sign": 5.476715,
+        "is_retrograde": false,
+        "speed": 8.398195
+      },
+      "Mars": {
+        "longitude": 221.072709,
+        "sign_index": 7,
+        "degree_in_sign": 11.072709,
+        "is_retrograde": false,
+        "speed": 0.650723
+      },
+      "Mercury": {
+        "longitude": 293.307471,
+        "sign_index": 9,
+        "degree_in_sign": 23.307471,
+        "is_retrograde": true,
+        "speed": -0.205284
+      },
+      "Jupiter": {
+        "longitude": 352.282178,
+        "sign_index": 11,
+        "degree_in_sign": 22.282178,
+        "is_retrograde": false,
+        "speed": 0.140572
+      },
+      "Venus": {
+        "longitude": 324.867933,
+        "sign_index": 10,
+        "degree_in_sign": 24.867933,
+        "is_retrograde": false,
+        "speed": 0.87299
+      },
+      "Saturn": {
+        "longitude": 75.953706,
+        "sign_index": 2,
+        "degree_in_sign": 15.953706,
+        "is_retrograde": true,
+        "speed": -0.072701
+      },
+      "Rahu": {
+        "longitude": 49.885937,
+        "sign_index": 1,
+        "degree_in_sign": 19.885937,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 229.885937,
+        "sign_index": 7,
+        "degree_in_sign": 19.885937,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

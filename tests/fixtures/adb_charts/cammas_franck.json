@@ -1,0 +1,109 @@
+{
+  "adb_id": 54852,
+  "name": "Cammas, Franck",
+  "given_name": "Franck Cammas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441673.493056,
+    "year": 1972,
+    "month": 12,
+    "day": 22,
+    "calendar": "g",
+    "time": "00:50",
+    "time_type": "s",
+    "hour": 0.833333,
+    "time_unknown": false,
+    "place": "Aix en Provence",
+    "country": "France",
+    "lat": 43.533333,
+    "lon": 5.433333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cammas,_Franck",
+  "source_notes": "Didier Geslain archive, 'navigateurs' pdf file, p. 8.\\nSame data: Paddy de Jabrun quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Sports : Sailing/ Boating",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.794707,
+    "lagna": 135.794707,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.479582,
+    "jd_ut": 2441673.493056,
+    "planets": {
+      "Sun": {
+        "longitude": 246.754221,
+        "sign_index": 8,
+        "degree_in_sign": 6.754221,
+        "is_retrograde": false,
+        "speed": 1.018196
+      },
+      "Moon": {
+        "longitude": 89.109657,
+        "sign_index": 2,
+        "degree_in_sign": 29.109657,
+        "is_retrograde": false,
+        "speed": 10.48425
+      },
+      "Mars": {
+        "longitude": 210.629716,
+        "sign_index": 7,
+        "degree_in_sign": 0.629716,
+        "is_retrograde": false,
+        "speed": 0.675964
+      },
+      "Mercury": {
+        "longitude": 226.997312,
+        "sign_index": 7,
+        "degree_in_sign": 16.997312,
+        "is_retrograde": false,
+        "speed": 1.32892
+      },
+      "Jupiter": {
+        "longitude": 262.021162,
+        "sign_index": 8,
+        "degree_in_sign": 22.021162,
+        "is_retrograde": false,
+        "speed": 0.228936
+      },
+      "Venus": {
+        "longitude": 220.526226,
+        "sign_index": 7,
+        "degree_in_sign": 10.526226,
+        "is_retrograde": false,
+        "speed": 1.246094
+      },
+      "Saturn": {
+        "longitude": 52.565477,
+        "sign_index": 1,
+        "degree_in_sign": 22.565477,
+        "is_retrograde": true,
+        "speed": -0.078604
+      },
+      "Rahu": {
+        "longitude": 264.29857,
+        "sign_index": 8,
+        "degree_in_sign": 24.29857,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 84.29857,
+        "sign_index": 2,
+        "degree_in_sign": 24.29857,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

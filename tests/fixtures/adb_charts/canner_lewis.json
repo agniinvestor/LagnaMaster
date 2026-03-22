@@ -1,0 +1,111 @@
+{
+  "adb_id": 76630,
+  "name": "Canner, Lewis",
+  "given_name": "Lewis Canner",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2449735.825694,
+    "year": 1995,
+    "month": 1,
+    "day": 18,
+    "calendar": "g",
+    "time": "07:49",
+    "time_type": "s",
+    "hour": 7.816667,
+    "time_unknown": false,
+    "place": "Worksop",
+    "country": "England",
+    "lat": 53.3,
+    "lon": -1.116667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canner,_Lewis",
+  "source_notes": "Sy Scholfield quotes him on Twitter: \"I was born at 7:49am, 18th January 1995\" [https://twitter.com/lewiscanner/status/291977144349888512]. Other details from England and Wales Birth Registration Index.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Folk Music",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 1.20538,
+    "lagna": 241.20538,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.787902,
+    "jd_ut": 2449735.825694,
+    "planets": {
+      "Sun": {
+        "longitude": 273.953103,
+        "sign_index": 9,
+        "degree_in_sign": 3.953103,
+        "is_retrograde": false,
+        "speed": 1.017791
+      },
+      "Moon": {
+        "longitude": 110.85165,
+        "sign_index": 3,
+        "degree_in_sign": 20.85165,
+        "is_retrograde": false,
+        "speed": 13.545613
+      },
+      "Mars": {
+        "longitude": 127.302508,
+        "sign_index": 4,
+        "degree_in_sign": 7.302508,
+        "is_retrograde": true,
+        "speed": -0.204688
+      },
+      "Mercury": {
+        "longitude": 292.621984,
+        "sign_index": 9,
+        "degree_in_sign": 22.621984,
+        "is_retrograde": false,
+        "speed": 1.125891
+      },
+      "Jupiter": {
+        "longitude": 224.241008,
+        "sign_index": 7,
+        "degree_in_sign": 14.241008,
+        "is_retrograde": false,
+        "speed": 0.179035
+      },
+      "Venus": {
+        "longitude": 227.162431,
+        "sign_index": 7,
+        "degree_in_sign": 17.162431,
+        "is_retrograde": false,
+        "speed": 1.046871
+      },
+      "Saturn": {
+        "longitude": 315.807914,
+        "sign_index": 10,
+        "degree_in_sign": 15.807914,
+        "is_retrograde": false,
+        "speed": 0.101577
+      },
+      "Rahu": {
+        "longitude": 197.059215,
+        "sign_index": 6,
+        "degree_in_sign": 17.059215,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 17.059215,
+        "sign_index": 0,
+        "degree_in_sign": 17.059215,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

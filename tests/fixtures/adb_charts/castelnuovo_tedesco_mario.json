@@ -1,0 +1,112 @@
+{
+  "adb_id": 48183,
+  "name": "Castelnuovo-Tedesco, Mario",
+  "given_name": "Mario Castelnuovo-Tedesco",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413286.607639,
+    "year": 1895,
+    "month": 4,
+    "day": 3,
+    "calendar": "g",
+    "time": "03:35",
+    "time_type": "s",
+    "hour": 3.583333,
+    "time_unknown": false,
+    "place": "Florence",
+    "country": "Italy",
+    "lat": 43.766667,
+    "lon": 11.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castelnuovo-Tedesco,_Mario",
+  "source_notes": "B.C. in hand from Steinbrecher\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Education : Teacher",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Song writer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 26.439878,
+    "lagna": 266.439878,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.394248,
+    "jd_ut": 2413286.607639,
+    "planets": {
+      "Sun": {
+        "longitude": 350.698824,
+        "sign_index": 11,
+        "degree_in_sign": 20.698824,
+        "is_retrograde": false,
+        "speed": 0.984874
+      },
+      "Moon": {
+        "longitude": 83.05856,
+        "sign_index": 2,
+        "degree_in_sign": 23.05856,
+        "is_retrograde": false,
+        "speed": 17.204406
+      },
+      "Mars": {
+        "longitude": 56.244294,
+        "sign_index": 1,
+        "degree_in_sign": 26.244294,
+        "is_retrograde": false,
+        "speed": 0.590439
+      },
+      "Mercury": {
+        "longitude": 324.858281,
+        "sign_index": 10,
+        "degree_in_sign": 24.858281,
+        "is_retrograde": false,
+        "speed": 1.35141
+      },
+      "Jupiter": {
+        "longitude": 66.594539,
+        "sign_index": 2,
+        "degree_in_sign": 6.594539,
+        "is_retrograde": false,
+        "speed": 0.122712
+      },
+      "Venus": {
+        "longitude": 19.904606,
+        "sign_index": 0,
+        "degree_in_sign": 19.904606,
+        "is_retrograde": false,
+        "speed": 1.214082
+      },
+      "Saturn": {
+        "longitude": 193.100126,
+        "sign_index": 6,
+        "degree_in_sign": 13.100126,
+        "is_retrograde": true,
+        "speed": -0.067189
+      },
+      "Rahu": {
+        "longitude": 328.57855,
+        "sign_index": 10,
+        "degree_in_sign": 28.57855,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 148.57855,
+        "sign_index": 4,
+        "degree_in_sign": 28.57855,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

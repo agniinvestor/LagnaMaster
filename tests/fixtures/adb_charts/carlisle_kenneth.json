@@ -1,0 +1,108 @@
+{
+  "adb_id": 47801,
+  "name": "Carlisle, Kenneth",
+  "given_name": "Kenneth Carlisle",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430078.708333,
+    "year": 1941,
+    "month": 3,
+    "day": 25,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "d",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Tal-y-Cafn",
+    "country": "Wales",
+    "lat": 53.228056,
+    "lon": -3.816944
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlisle,_Kenneth",
+  "source_notes": "Pulsar collection quotes him, \"I hope this is helpful.\"\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 4.550009,
+    "lagna": 274.550009,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.036226,
+    "jd_ut": 2430078.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 341.123739,
+        "sign_index": 11,
+        "degree_in_sign": 11.123739,
+        "is_retrograde": false,
+        "speed": 0.990785
+      },
+      "Moon": {
+        "longitude": 312.090562,
+        "sign_index": 10,
+        "degree_in_sign": 12.090562,
+        "is_retrograde": false,
+        "speed": 11.711835
+      },
+      "Mars": {
+        "longitude": 271.23727,
+        "sign_index": 9,
+        "degree_in_sign": 1.23727,
+        "is_retrograde": false,
+        "speed": 0.691517
+      },
+      "Mercury": {
+        "longitude": 313.351833,
+        "sign_index": 10,
+        "degree_in_sign": 13.351833,
+        "is_retrograde": false,
+        "speed": 0.977639
+      },
+      "Jupiter": {
+        "longitude": 22.782158,
+        "sign_index": 0,
+        "degree_in_sign": 22.782158,
+        "is_retrograde": false,
+        "speed": 0.20592
+      },
+      "Venus": {
+        "longitude": 334.687226,
+        "sign_index": 11,
+        "degree_in_sign": 4.687226,
+        "is_retrograde": false,
+        "speed": 1.242933
+      },
+      "Saturn": {
+        "longitude": 19.490264,
+        "sign_index": 0,
+        "degree_in_sign": 19.490264,
+        "is_retrograde": false,
+        "speed": 0.110211
+      },
+      "Rahu": {
+        "longitude": 158.730022,
+        "sign_index": 5,
+        "degree_in_sign": 8.730022,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 338.730022,
+        "sign_index": 11,
+        "degree_in_sign": 8.730022,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

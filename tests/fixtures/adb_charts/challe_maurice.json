@@ -1,0 +1,110 @@
+{
+  "adb_id": 47845,
+  "name": "Challe, Maurice",
+  "given_name": "Maurice Challe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417093.785174,
+    "year": 1905,
+    "month": 9,
+    "day": 5,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Le Pontel",
+    "country": "France",
+    "lat": 48.816667,
+    "lon": 1.883333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Challe,_Maurice",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'Algérie' pdf file, p. 17.\\nSame data from Gauquelin quotes B.C. Vol. 3/403 (7:00 AM Paris time)\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Prison sentence",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.651651,
+    "lagna": 133.651651,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.539789,
+    "jd_ut": 2417093.785174,
+    "planets": {
+      "Sun": {
+        "longitude": 139.489038,
+        "sign_index": 4,
+        "degree_in_sign": 19.489038,
+        "is_retrograde": false,
+        "speed": 0.97004
+      },
+      "Moon": {
+        "longitude": 218.341266,
+        "sign_index": 7,
+        "degree_in_sign": 8.341266,
+        "is_retrograde": false,
+        "speed": 17.54107
+      },
+      "Mars": {
+        "longitude": 225.922835,
+        "sign_index": 7,
+        "degree_in_sign": 15.922835,
+        "is_retrograde": false,
+        "speed": 0.611857
+      },
+      "Mercury": {
+        "longitude": 128.841345,
+        "sign_index": 4,
+        "degree_in_sign": 8.841345,
+        "is_retrograde": true,
+        "speed": -0.467008
+      },
+      "Jupiter": {
+        "longitude": 43.278864,
+        "sign_index": 1,
+        "degree_in_sign": 13.278864,
+        "is_retrograde": false,
+        "speed": 0.065915
+      },
+      "Venus": {
+        "longitude": 101.473611,
+        "sign_index": 3,
+        "degree_in_sign": 11.473611,
+        "is_retrograde": false,
+        "speed": 1.168845
+      },
+      "Saturn": {
+        "longitude": 306.021997,
+        "sign_index": 10,
+        "degree_in_sign": 6.021997,
+        "is_retrograde": true,
+        "speed": -0.072389
+      },
+      "Rahu": {
+        "longitude": 126.828184,
+        "sign_index": 4,
+        "degree_in_sign": 6.828184,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.828184,
+        "sign_index": 10,
+        "degree_in_sign": 6.828184,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

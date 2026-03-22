@@ -1,0 +1,109 @@
+{
+  "adb_id": 50818,
+  "name": "Connell, Jane",
+  "given_name": "Jane Connell",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424451.149306,
+    "year": 1925,
+    "month": 10,
+    "day": 27,
+    "calendar": "g",
+    "time": "07:35",
+    "time_type": "s",
+    "hour": 7.583333,
+    "time_unknown": false,
+    "place": "Oakland",
+    "country": "California",
+    "lat": 37.8,
+    "lon": -122.266667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connell,_Jane",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 0.384335,
+    "lagna": 180.384335,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.821065,
+    "jd_ut": 2424451.149306,
+    "planets": {
+      "Sun": {
+        "longitude": 190.884899,
+        "sign_index": 6,
+        "degree_in_sign": 10.884899,
+        "is_retrograde": false,
+        "speed": 0.998217
+      },
+      "Moon": {
+        "longitude": 318.173856,
+        "sign_index": 10,
+        "degree_in_sign": 18.173856,
+        "is_retrograde": false,
+        "speed": 18.280552
+      },
+      "Mars": {
+        "longitude": 175.989188,
+        "sign_index": 5,
+        "degree_in_sign": 25.989188,
+        "is_retrograde": false,
+        "speed": 0.657249
+      },
+      "Mercury": {
+        "longitude": 203.641629,
+        "sign_index": 6,
+        "degree_in_sign": 23.641629,
+        "is_retrograde": false,
+        "speed": 1.521176
+      },
+      "Jupiter": {
+        "longitude": 263.396592,
+        "sign_index": 8,
+        "degree_in_sign": 23.396592,
+        "is_retrograde": false,
+        "speed": 0.138082
+      },
+      "Venus": {
+        "longitude": 235.641483,
+        "sign_index": 7,
+        "degree_in_sign": 25.641483,
+        "is_retrograde": false,
+        "speed": 1.134321
+      },
+      "Saturn": {
+        "longitude": 202.609809,
+        "sign_index": 6,
+        "degree_in_sign": 22.609809,
+        "is_retrograde": false,
+        "speed": 0.118163
+      },
+      "Rahu": {
+        "longitude": 96.946053,
+        "sign_index": 3,
+        "degree_in_sign": 6.946053,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 276.946053,
+        "sign_index": 9,
+        "degree_in_sign": 6.946053,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

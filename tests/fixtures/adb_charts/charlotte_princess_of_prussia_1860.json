@@ -1,0 +1,108 @@
+{
+  "adb_id": 55615,
+  "name": "Charlotte, Princess of Prussia (1860)",
+  "given_name": "Princess of Prussia (1860) Charlotte",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2400615.803981,
+    "year": 1860,
+    "month": 7,
+    "day": 24,
+    "calendar": "g",
+    "time": "08:10",
+    "time_type": "l",
+    "hour": 8.166667,
+    "time_unknown": false,
+    "place": "Potsdam",
+    "country": "Germany",
+    "lat": 52.4,
+    "lon": 13.066667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlotte,_Princess_of_Prussia_(1860)",
+  "source_notes": "Queen Victoria's journal, now available online, quoted on that day:\\n\"Soon after we sat down to breakfast came a telegram from Fritz Vicky had got a daughter at 8.10, and both were well! What joy! Children jumping about - everyone delighted - so thankful and relieved.\"\\nhttp://www.queenvictoriasjournals.org/\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 28.590541,
+    "lagna": 118.590541,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.909917,
+    "jd_ut": 2400615.803981,
+    "planets": {
+      "Sun": {
+        "longitude": 99.626529,
+        "sign_index": 3,
+        "degree_in_sign": 9.626529,
+        "is_retrograde": false,
+        "speed": 0.955496
+      },
+      "Moon": {
+        "longitude": 178.073305,
+        "sign_index": 5,
+        "degree_in_sign": 28.073305,
+        "is_retrograde": false,
+        "speed": 16.627556
+      },
+      "Mars": {
+        "longitude": 271.303529,
+        "sign_index": 9,
+        "degree_in_sign": 1.303529,
+        "is_retrograde": true,
+        "speed": -0.269087
+      },
+      "Mercury": {
+        "longitude": 122.657419,
+        "sign_index": 4,
+        "degree_in_sign": 2.657419,
+        "is_retrograde": false,
+        "speed": 0.250657
+      },
+      "Jupiter": {
+        "longitude": 103.427061,
+        "sign_index": 3,
+        "degree_in_sign": 13.427061,
+        "is_retrograde": false,
+        "speed": 0.220955
+      },
+      "Venus": {
+        "longitude": 91.427567,
+        "sign_index": 3,
+        "degree_in_sign": 1.427567,
+        "is_retrograde": true,
+        "speed": -0.572229
+      },
+      "Saturn": {
+        "longitude": 123.977724,
+        "sign_index": 4,
+        "degree_in_sign": 3.977724,
+        "is_retrograde": false,
+        "speed": 0.119712
+      },
+      "Rahu": {
+        "longitude": 280.031401,
+        "sign_index": 9,
+        "degree_in_sign": 10.031401,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 100.031401,
+        "sign_index": 3,
+        "degree_in_sign": 10.031401,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

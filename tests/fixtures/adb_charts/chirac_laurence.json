@@ -1,0 +1,114 @@
+{
+  "adb_id": 19606,
+  "name": "Chirac, Laurence",
+  "given_name": "Laurence Chirac",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436267.322917,
+    "year": 1958,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "20:45",
+    "time_type": "s",
+    "hour": 20.75,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chirac,_Laurence",
+  "source_notes": "Cadran No.18 quotes B.C. 4/l995\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Diagnoses : Body Part Problems : Bone",
+    "Diagnoses : Psychological : Nervous Breakdown",
+    "Family : Childhood : Family noted",
+    "Personal : Birth : Defects, Handicaps",
+    "Personal : Death : Suicide Attempt",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.201909,
+    "lagna": 141.201909,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.272856,
+    "jd_ut": 2436267.322917,
+    "planets": {
+      "Sun": {
+        "longitude": 320.459001,
+        "sign_index": 10,
+        "degree_in_sign": 20.459001,
+        "is_retrograde": false,
+        "speed": 1.001393
+      },
+      "Moon": {
+        "longitude": 127.77566,
+        "sign_index": 4,
+        "degree_in_sign": 7.77566,
+        "is_retrograde": false,
+        "speed": 12.578875
+      },
+      "Mars": {
+        "longitude": 267.630814,
+        "sign_index": 8,
+        "degree_in_sign": 27.630814,
+        "is_retrograde": false,
+        "speed": 0.726244
+      },
+      "Mercury": {
+        "longitude": 321.341194,
+        "sign_index": 10,
+        "degree_in_sign": 21.341194,
+        "is_retrograde": false,
+        "speed": 1.907538
+      },
+      "Jupiter": {
+        "longitude": 187.924971,
+        "sign_index": 6,
+        "degree_in_sign": 7.924971,
+        "is_retrograde": true,
+        "speed": -0.053215
+      },
+      "Venus": {
+        "longitude": 281.212234,
+        "sign_index": 9,
+        "degree_in_sign": 11.212234,
+        "is_retrograde": false,
+        "speed": 0.487189
+      },
+      "Saturn": {
+        "longitude": 241.645156,
+        "sign_index": 8,
+        "degree_in_sign": 1.645156,
+        "is_retrograde": false,
+        "speed": 0.04991
+      },
+      "Rahu": {
+        "longitude": 190.782584,
+        "sign_index": 6,
+        "degree_in_sign": 10.782584,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 10.782584,
+        "sign_index": 0,
+        "degree_in_sign": 10.782584,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

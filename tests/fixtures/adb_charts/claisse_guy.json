@@ -1,0 +1,109 @@
+{
+  "adb_id": 65010,
+  "name": "Claisse, Guy",
+  "given_name": "Guy Claisse",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427482.166667,
+    "year": 1934,
+    "month": 2,
+    "day": 13,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claisse,_Guy",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 168.\\n",
+  "categories": [
+    "Vocation : Food and Beverage : Other Food and Beverage",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 27.300285,
+    "lagna": 87.300285,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.93695,
+    "jd_ut": 2427482.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 301.337118,
+        "sign_index": 10,
+        "degree_in_sign": 1.337118,
+        "is_retrograde": false,
+        "speed": 1.010872
+      },
+      "Moon": {
+        "longitude": 295.507973,
+        "sign_index": 9,
+        "degree_in_sign": 25.507973,
+        "is_retrograde": false,
+        "speed": 13.437044
+      },
+      "Mars": {
+        "longitude": 314.555193,
+        "sign_index": 10,
+        "degree_in_sign": 14.555193,
+        "is_retrograde": false,
+        "speed": 0.78895
+      },
+      "Mercury": {
+        "longitude": 318.346261,
+        "sign_index": 10,
+        "degree_in_sign": 18.346261,
+        "is_retrograde": false,
+        "speed": 1.450996
+      },
+      "Jupiter": {
+        "longitude": 180.19001,
+        "sign_index": 6,
+        "degree_in_sign": 0.19001,
+        "is_retrograde": true,
+        "speed": -0.020434
+      },
+      "Venus": {
+        "longitude": 287.932684,
+        "sign_index": 9,
+        "degree_in_sign": 17.932684,
+        "is_retrograde": true,
+        "speed": -0.470129
+      },
+      "Saturn": {
+        "longitude": 296.521296,
+        "sign_index": 9,
+        "degree_in_sign": 26.521296,
+        "is_retrograde": false,
+        "speed": 0.120134
+      },
+      "Rahu": {
+        "longitude": 296.326143,
+        "sign_index": 9,
+        "degree_in_sign": 26.326143,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 116.326143,
+        "sign_index": 3,
+        "degree_in_sign": 26.326143,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 875,
+  "name": "Coluche",
+  "given_name": "Coluche",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431392.222222,
+    "year": 1944,
+    "month": 10,
+    "day": 28,
+    "calendar": "g",
+    "time": "18:20",
+    "time_type": "d",
+    "hour": 18.333333,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coluche",
+  "source_notes": "6.20 PM on bc (Pierre Saint-Jean on Cedra database).\\nDe Jaeger Luc quotes him for 11.55 AM.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 8.625572,
+    "lagna": 8.625572,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.086449,
+    "jd_ut": 2431392.222222,
+    "planets": {
+      "Sun": {
+        "longitude": 192.089303,
+        "sign_index": 6,
+        "degree_in_sign": 12.089303,
+        "is_retrograde": false,
+        "speed": 0.998754
+      },
+      "Moon": {
+        "longitude": 332.420804,
+        "sign_index": 11,
+        "degree_in_sign": 2.420804,
+        "is_retrograde": false,
+        "speed": 12.802815
+      },
+      "Mars": {
+        "longitude": 197.317554,
+        "sign_index": 6,
+        "degree_in_sign": 17.317554,
+        "is_retrograde": false,
+        "speed": 0.689477
+      },
+      "Mercury": {
+        "longitude": 197.089775,
+        "sign_index": 6,
+        "degree_in_sign": 17.089775,
+        "is_retrograde": false,
+        "speed": 1.601943
+      },
+      "Jupiter": {
+        "longitude": 146.632126,
+        "sign_index": 4,
+        "degree_in_sign": 26.632126,
+        "is_retrograde": false,
+        "speed": 0.180548
+      },
+      "Venus": {
+        "longitude": 224.268477,
+        "sign_index": 7,
+        "degree_in_sign": 14.268477,
+        "is_retrograde": false,
+        "speed": 1.222062
+      },
+      "Saturn": {
+        "longitude": 77.67839,
+        "sign_index": 2,
+        "degree_in_sign": 17.67839,
+        "is_retrograde": true,
+        "speed": -0.010273
+      },
+      "Rahu": {
+        "longitude": 89.124206,
+        "sign_index": 2,
+        "degree_in_sign": 29.124206,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 269.124206,
+        "sign_index": 8,
+        "degree_in_sign": 29.124206,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

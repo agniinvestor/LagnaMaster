@@ -1,0 +1,110 @@
+{
+  "adb_id": 98653,
+  "name": "Casal, Tino",
+  "given_name": "Tino Casal",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433334.375,
+    "year": 1950,
+    "month": 2,
+    "day": 21,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Oviedo",
+    "country": "Spain",
+    "lat": 43.366667,
+    "lon": -5.833333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casal,_Tino",
+  "source_notes": "Faustino Rodriguez quotes birth certificate in hand.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Business : Production jobs"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.696393,
+    "lagna": 141.696393,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.160709,
+    "jd_ut": 2433334.375,
+    "planets": {
+      "Sun": {
+        "longitude": 309.515509,
+        "sign_index": 10,
+        "degree_in_sign": 9.515509,
+        "is_retrograde": false,
+        "speed": 1.007322
+      },
+      "Moon": {
+        "longitude": 3.971985,
+        "sign_index": 0,
+        "degree_in_sign": 3.971985,
+        "is_retrograde": false,
+        "speed": 10.636306
+      },
+      "Mars": {
+        "longitude": 167.287499,
+        "sign_index": 5,
+        "degree_in_sign": 17.287499,
+        "is_retrograde": true,
+        "speed": -0.123983
+      },
+      "Mercury": {
+        "longitude": 285.820118,
+        "sign_index": 9,
+        "degree_in_sign": 15.820118,
+        "is_retrograde": false,
+        "speed": 1.357351
+      },
+      "Jupiter": {
+        "longitude": 295.552495,
+        "sign_index": 9,
+        "degree_in_sign": 25.552495,
+        "is_retrograde": false,
+        "speed": 0.235301
+      },
+      "Venus": {
+        "longitude": 279.968889,
+        "sign_index": 9,
+        "degree_in_sign": 9.968889,
+        "is_retrograde": false,
+        "speed": 0.044549
+      },
+      "Saturn": {
+        "longitude": 143.937418,
+        "sign_index": 4,
+        "degree_in_sign": 23.937418,
+        "is_retrograde": true,
+        "speed": -0.075965
+      },
+      "Rahu": {
+        "longitude": 346.205524,
+        "sign_index": 11,
+        "degree_in_sign": 16.205524,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 166.205524,
+        "sign_index": 5,
+        "degree_in_sign": 16.205524,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 72108,
+  "name": "Camarillo, Maria Enriqueta",
+  "given_name": "Maria Enriqueta Camarillo",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404812.373519,
+    "year": 1872,
+    "month": 1,
+    "day": 19,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "l",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Coatepec (Veracruz)",
+    "country": "Mexico",
+    "lat": 19.45,
+    "lon": -96.966667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camarillo,_Maria_Enriqueta",
+  "source_notes": "Castellano quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 1.646567,
+    "lagna": 31.646567,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.070319,
+    "jd_ut": 2404812.373519,
+    "planets": {
+      "Sun": {
+        "longitude": 277.102288,
+        "sign_index": 9,
+        "degree_in_sign": 7.102288,
+        "is_retrograde": false,
+        "speed": 1.017514
+      },
+      "Moon": {
+        "longitude": 34.550051,
+        "sign_index": 1,
+        "degree_in_sign": 4.550051,
+        "is_retrograde": false,
+        "speed": 11.363167
+      },
+      "Mars": {
+        "longitude": 304.966929,
+        "sign_index": 10,
+        "degree_in_sign": 4.966929,
+        "is_retrograde": false,
+        "speed": 0.787813
+      },
+      "Mercury": {
+        "longitude": 253.095274,
+        "sign_index": 8,
+        "degree_in_sign": 13.095274,
+        "is_retrograde": false,
+        "speed": 0.729935
+      },
+      "Jupiter": {
+        "longitude": 92.253435,
+        "sign_index": 3,
+        "degree_in_sign": 2.253435,
+        "is_retrograde": true,
+        "speed": -0.133634
+      },
+      "Venus": {
+        "longitude": 234.580742,
+        "sign_index": 7,
+        "degree_in_sign": 24.580742,
+        "is_retrograde": false,
+        "speed": 1.177536
+      },
+      "Saturn": {
+        "longitude": 262.138316,
+        "sign_index": 8,
+        "degree_in_sign": 22.138316,
+        "is_retrograde": false,
+        "speed": 0.115676
+      },
+      "Rahu": {
+        "longitude": 57.646206,
+        "sign_index": 1,
+        "degree_in_sign": 27.646206,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 237.646206,
+        "sign_index": 7,
+        "degree_in_sign": 27.646206,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

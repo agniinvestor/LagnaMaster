@@ -1,0 +1,108 @@
+{
+  "adb_id": 62976,
+  "name": "Chevallier, Gabriel",
+  "given_name": "Gabriel Chevallier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413316.618507,
+    "year": 1895,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevallier,_Gabriel",
+  "source_notes": "BC in Didier Geslain archive, 'Ecrivains' pdf file, p. 93.\\n",
+  "categories": [
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 11.811301,
+    "lagna": 311.811301,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.395395,
+    "jd_ut": 2413316.618507,
+    "planets": {
+      "Sun": {
+        "longitude": 20.010942,
+        "sign_index": 0,
+        "degree_in_sign": 20.010942,
+        "is_retrograde": false,
+        "speed": 0.968912
+      },
+      "Moon": {
+        "longitude": 122.410631,
+        "sign_index": 4,
+        "degree_in_sign": 2.410631,
+        "is_retrograde": false,
+        "speed": 16.548692
+      },
+      "Mars": {
+        "longitude": 74.162937,
+        "sign_index": 2,
+        "degree_in_sign": 14.162937,
+        "is_retrograde": false,
+        "speed": 0.602787
+      },
+      "Mercury": {
+        "longitude": 17.742803,
+        "sign_index": 0,
+        "degree_in_sign": 17.742803,
+        "is_retrograde": false,
+        "speed": 2.139259
+      },
+      "Jupiter": {
+        "longitude": 71.190239,
+        "sign_index": 2,
+        "degree_in_sign": 11.190239,
+        "is_retrograde": false,
+        "speed": 0.179211
+      },
+      "Venus": {
+        "longitude": 55.858991,
+        "sign_index": 1,
+        "degree_in_sign": 25.858991,
+        "is_retrograde": false,
+        "speed": 1.179902
+      },
+      "Saturn": {
+        "longitude": 190.882981,
+        "sign_index": 6,
+        "degree_in_sign": 10.882981,
+        "is_retrograde": true,
+        "speed": -0.074653
+      },
+      "Rahu": {
+        "longitude": 326.988211,
+        "sign_index": 10,
+        "degree_in_sign": 26.988211,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 146.988211,
+        "sign_index": 4,
+        "degree_in_sign": 26.988211,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

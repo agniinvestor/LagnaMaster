@@ -1,0 +1,108 @@
+{
+  "adb_id": 67432,
+  "name": "Cabet, Paul",
+  "given_name": "Paul Cabet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2384005.694583,
+    "year": 1815,
+    "month": 2,
+    "day": 1,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Nuits St.Georges",
+    "country": "France",
+    "lat": 47.133333,
+    "lon": 4.95
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabet,_Paul",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'sculpteurs' pdf file, p. 17.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 15.311252,
+    "lagna": 225.311252,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.275121,
+    "jd_ut": 2384005.694583,
+    "planets": {
+      "Sun": {
+        "longitude": 290.246059,
+        "sign_index": 9,
+        "degree_in_sign": 20.246059,
+        "is_retrograde": false,
+        "speed": 1.01429
+      },
+      "Moon": {
+        "longitude": 200.356489,
+        "sign_index": 6,
+        "degree_in_sign": 20.356489,
+        "is_retrograde": false,
+        "speed": 9.201091
+      },
+      "Mars": {
+        "longitude": 238.356022,
+        "sign_index": 7,
+        "degree_in_sign": 28.356022,
+        "is_retrograde": false,
+        "speed": 0.689232
+      },
+      "Mercury": {
+        "longitude": 290.979171,
+        "sign_index": 9,
+        "degree_in_sign": 20.979171,
+        "is_retrograde": false,
+        "speed": 1.747299
+      },
+      "Jupiter": {
+        "longitude": 168.867275,
+        "sign_index": 5,
+        "degree_in_sign": 18.867275,
+        "is_retrograde": true,
+        "speed": -0.021755
+      },
+      "Venus": {
+        "longitude": 299.029701,
+        "sign_index": 9,
+        "degree_in_sign": 29.029701,
+        "is_retrograde": false,
+        "speed": 1.253589
+      },
+      "Saturn": {
+        "longitude": 282.848239,
+        "sign_index": 9,
+        "degree_in_sign": 12.848239,
+        "is_retrograde": false,
+        "speed": 0.118501
+      },
+      "Rahu": {
+        "longitude": 80.237092,
+        "sign_index": 2,
+        "degree_in_sign": 20.237092,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 260.237092,
+        "sign_index": 8,
+        "degree_in_sign": 20.237092,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

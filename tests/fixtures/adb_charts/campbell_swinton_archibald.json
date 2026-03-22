@@ -1,0 +1,108 @@
+{
+  "adb_id": 78273,
+  "name": "Campbell-Swinton, Archibald",
+  "given_name": "Archibald Campbell-Swinton",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2401796.625,
+    "year": 1863,
+    "month": 10,
+    "day": 18,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Edinburgh",
+    "country": "Scotland",
+    "lat": 55.95,
+    "lon": -3.216667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campbell-Swinton,_Archibald",
+  "source_notes": "Paul Wright quotes birth record. GraZia Bordoni quotes a time of 3:13 - source unknown\\n",
+  "categories": [
+    "Vocation : Engineer : Electrical"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 1.429627,
+    "lagna": 121.429627,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.95505,
+    "jd_ut": 2401796.625,
+    "planets": {
+      "Sun": {
+        "longitude": 182.292158,
+        "sign_index": 6,
+        "degree_in_sign": 2.292158,
+        "is_retrograde": false,
+        "speed": 0.994007
+      },
+      "Moon": {
+        "longitude": 249.61309,
+        "sign_index": 8,
+        "degree_in_sign": 9.61309,
+        "is_retrograde": false,
+        "speed": 16.979774
+      },
+      "Mars": {
+        "longitude": 177.270488,
+        "sign_index": 5,
+        "degree_in_sign": 27.270488,
+        "is_retrograde": false,
+        "speed": 0.663587
+      },
+      "Mercury": {
+        "longitude": 169.586492,
+        "sign_index": 5,
+        "degree_in_sign": 19.586492,
+        "is_retrograde": true,
+        "speed": -0.423759
+      },
+      "Jupiter": {
+        "longitude": 192.868628,
+        "sign_index": 6,
+        "degree_in_sign": 12.868628,
+        "is_retrograde": false,
+        "speed": 0.216814
+      },
+      "Venus": {
+        "longitude": 155.287036,
+        "sign_index": 5,
+        "degree_in_sign": 5.287036,
+        "is_retrograde": true,
+        "speed": -0.077088
+      },
+      "Saturn": {
+        "longitude": 168.593068,
+        "sign_index": 5,
+        "degree_in_sign": 18.593068,
+        "is_retrograde": false,
+        "speed": 0.120914
+      },
+      "Rahu": {
+        "longitude": 217.457163,
+        "sign_index": 7,
+        "degree_in_sign": 7.457163,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 37.457163,
+        "sign_index": 1,
+        "degree_in_sign": 7.457163,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

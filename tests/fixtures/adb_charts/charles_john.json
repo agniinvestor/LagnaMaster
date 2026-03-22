@@ -1,0 +1,108 @@
+{
+  "adb_id": 104253,
+  "name": "Charles, John",
+  "given_name": "John Charles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426703.0,
+    "year": 1931,
+    "month": 12,
+    "day": 27,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Swansea",
+    "country": "Wales (UK)",
+    "lat": 51.633333,
+    "lon": -3.95
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles,_John",
+  "source_notes": "Grazia Bordoni database quotes who?\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 16.738458,
+    "lagna": 316.738458,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.907159,
+    "jd_ut": 2426703.0,
+    "planets": {
+      "Sun": {
+        "longitude": 251.867575,
+        "sign_index": 8,
+        "degree_in_sign": 11.867575,
+        "is_retrograde": false,
+        "speed": 1.01872
+      },
+      "Moon": {
+        "longitude": 103.043772,
+        "sign_index": 3,
+        "degree_in_sign": 13.043772,
+        "is_retrograde": false,
+        "speed": 16.705608
+      },
+      "Mars": {
+        "longitude": 260.367252,
+        "sign_index": 8,
+        "degree_in_sign": 20.367252,
+        "is_retrograde": false,
+        "speed": 0.77042
+      },
+      "Mercury": {
+        "longitude": 238.660759,
+        "sign_index": 7,
+        "degree_in_sign": 28.660759,
+        "is_retrograde": true,
+        "speed": -0.716899
+      },
+      "Jupiter": {
+        "longitude": 119.214521,
+        "sign_index": 3,
+        "degree_in_sign": 29.214521,
+        "is_retrograde": true,
+        "speed": -0.057336
+      },
+      "Venus": {
+        "longitude": 279.176458,
+        "sign_index": 9,
+        "degree_in_sign": 9.176458,
+        "is_retrograde": false,
+        "speed": 1.241341
+      },
+      "Saturn": {
+        "longitude": 270.327816,
+        "sign_index": 9,
+        "degree_in_sign": 0.327816,
+        "is_retrograde": false,
+        "speed": 0.114693
+      },
+      "Rahu": {
+        "longitude": 337.615802,
+        "sign_index": 11,
+        "degree_in_sign": 7.615802,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 157.615802,
+        "sign_index": 5,
+        "degree_in_sign": 7.615802,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

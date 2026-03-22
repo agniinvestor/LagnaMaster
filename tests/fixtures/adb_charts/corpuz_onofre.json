@@ -1,0 +1,110 @@
+{
+  "adb_id": 65125,
+  "name": "Corpuz, Onofre",
+  "given_name": "Onofre Corpuz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424850.416667,
+    "year": 1926,
+    "month": 12,
+    "day": 1,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Camiling",
+    "country": "Philippines",
+    "lat": 15.7,
+    "lon": 120.4
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corpuz,_Onofre",
+  "source_notes": "Sy Scholfield quotes online birth certificate [https://familysearch.org/pal:/MM9.3.1/TH-1971-27167-22368-51?cc=1410394&wc=S1WS-K6N:25275301,25782601,25268203,25602901]\\n",
+  "categories": [
+    "Vocation : Business : Economist",
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 19.435242,
+    "lagna": 199.435242,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.83633,
+    "jd_ut": 2424850.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 225.120595,
+        "sign_index": 7,
+        "degree_in_sign": 15.120595,
+        "is_retrograde": false,
+        "speed": 1.013832
+      },
+      "Moon": {
+        "longitude": 175.206895,
+        "sign_index": 5,
+        "degree_in_sign": 25.206895,
+        "is_retrograde": false,
+        "speed": 8.311117
+      },
+      "Mars": {
+        "longitude": 11.952136,
+        "sign_index": 0,
+        "degree_in_sign": 11.952136,
+        "is_retrograde": true,
+        "speed": -0.084421
+      },
+      "Mercury": {
+        "longitude": 214.283373,
+        "sign_index": 7,
+        "degree_in_sign": 4.283373,
+        "is_retrograde": true,
+        "speed": -0.851962
+      },
+      "Jupiter": {
+        "longitude": 298.061753,
+        "sign_index": 9,
+        "degree_in_sign": 28.061753,
+        "is_retrograde": false,
+        "speed": 0.141758
+      },
+      "Venus": {
+        "longitude": 227.425335,
+        "sign_index": 7,
+        "degree_in_sign": 17.425335,
+        "is_retrograde": false,
+        "speed": 1.257441
+      },
+      "Saturn": {
+        "longitude": 216.929528,
+        "sign_index": 7,
+        "degree_in_sign": 6.929528,
+        "is_retrograde": false,
+        "speed": 0.118361
+      },
+      "Rahu": {
+        "longitude": 75.788045,
+        "sign_index": 2,
+        "degree_in_sign": 15.788045,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 255.788045,
+        "sign_index": 8,
+        "degree_in_sign": 15.788045,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

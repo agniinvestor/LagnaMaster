@@ -1,0 +1,111 @@
+{
+  "adb_id": 47569,
+  "name": "Chesnutt, Mark",
+  "given_name": "Mark Chesnutt",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438279.748611,
+    "year": 1963,
+    "month": 9,
+    "day": 6,
+    "calendar": "g",
+    "time": "23:58",
+    "time_type": "s",
+    "hour": 23.966667,
+    "time_unknown": false,
+    "place": "Beaumont",
+    "country": "Texas",
+    "lat": 30.083333,
+    "lon": -94.1
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chesnutt,_Mark",
+  "source_notes": "Stephen Przybylowski quotes B.C. 1995\\n",
+  "categories": [
+    "Traits : Mind : Education limited",
+    "Traits : Mind : Memory",
+    "Lifestyle : Financial : Gain - Financial success in field",
+    "Vocation : Entertain/Music : Country-Western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 9.174356,
+    "lagna": 39.174356,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.349807,
+    "jd_ut": 2438279.748611,
+    "planets": {
+      "Sun": {
+        "longitude": 140.553656,
+        "sign_index": 4,
+        "degree_in_sign": 20.553656,
+        "is_retrograde": false,
+        "speed": 0.970071
+      },
+      "Moon": {
+        "longitude": 7.700309,
+        "sign_index": 0,
+        "degree_in_sign": 7.700309,
+        "is_retrograde": false,
+        "speed": 11.610365
+      },
+      "Mars": {
+        "longitude": 183.252014,
+        "sign_index": 6,
+        "degree_in_sign": 3.252014,
+        "is_retrograde": false,
+        "speed": 0.659471
+      },
+      "Mercury": {
+        "longitude": 161.788443,
+        "sign_index": 5,
+        "degree_in_sign": 11.788443,
+        "is_retrograde": true,
+        "speed": -0.028742
+      },
+      "Jupiter": {
+        "longitude": 354.813386,
+        "sign_index": 11,
+        "degree_in_sign": 24.813386,
+        "is_retrograde": true,
+        "speed": -0.089363
+      },
+      "Venus": {
+        "longitude": 142.786007,
+        "sign_index": 4,
+        "degree_in_sign": 22.786007,
+        "is_retrograde": false,
+        "speed": 1.241783
+      },
+      "Saturn": {
+        "longitude": 294.638001,
+        "sign_index": 9,
+        "degree_in_sign": 24.638001,
+        "is_retrograde": true,
+        "speed": -0.063209
+      },
+      "Rahu": {
+        "longitude": 84.140022,
+        "sign_index": 2,
+        "degree_in_sign": 24.140022,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 264.140022,
+        "sign_index": 8,
+        "degree_in_sign": 24.140022,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

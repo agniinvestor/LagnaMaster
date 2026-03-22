@@ -1,0 +1,110 @@
+{
+  "adb_id": 98584,
+  "name": "Camacho, Marcelino",
+  "given_name": "Marcelino Camacho",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421615.208333,
+    "year": 1918,
+    "month": 1,
+    "day": 21,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Soria",
+    "country": "Spain",
+    "lat": 41.766667,
+    "lon": -2.466667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camacho,_Marcelino",
+  "source_notes": "Faustino Rodriguez quotes birth certificate in hand.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Labor unions"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.360015,
+    "lagna": 74.360015,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.712642,
+    "jd_ut": 2421615.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 278.155173,
+        "sign_index": 9,
+        "degree_in_sign": 8.155173,
+        "is_retrograde": false,
+        "speed": 1.017217
+      },
+      "Moon": {
+        "longitude": 34.964765,
+        "sign_index": 1,
+        "degree_in_sign": 4.964765,
+        "is_retrograde": false,
+        "speed": 10.439368
+      },
+      "Mars": {
+        "longitude": 159.325144,
+        "sign_index": 5,
+        "degree_in_sign": 9.325144,
+        "is_retrograde": false,
+        "speed": 0.148789
+      },
+      "Mercury": {
+        "longitude": 253.958717,
+        "sign_index": 8,
+        "degree_in_sign": 13.958717,
+        "is_retrograde": false,
+        "speed": 0.774211
+      },
+      "Jupiter": {
+        "longitude": 38.791881,
+        "sign_index": 1,
+        "degree_in_sign": 8.791881,
+        "is_retrograde": true,
+        "speed": -0.016586
+      },
+      "Venus": {
+        "longitude": 305.756699,
+        "sign_index": 10,
+        "degree_in_sign": 5.756699,
+        "is_retrograde": true,
+        "speed": -0.057757
+      },
+      "Saturn": {
+        "longitude": 109.198756,
+        "sign_index": 3,
+        "degree_in_sign": 19.198756,
+        "is_retrograde": true,
+        "speed": -0.079492
+      },
+      "Rahu": {
+        "longitude": 247.228485,
+        "sign_index": 8,
+        "degree_in_sign": 7.228485,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 67.228485,
+        "sign_index": 2,
+        "degree_in_sign": 7.228485,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 3889,
+  "name": "Clive, Colin",
+  "given_name": "Colin Clive",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415039.57684,
+    "year": 1900,
+    "month": 1,
+    "day": 20,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "St.Malo",
+    "country": "France",
+    "lat": 48.65,
+    "lon": -2.016667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clive,_Colin",
+  "source_notes": "B.C. in hand from Steinbrecher (2:00 AM Paris time).\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Tuberculosis",
+    "Diagnoses : Body Part Problems : Gastrointestinal",
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 24.747383,
+    "lagna": 174.747383,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.46126,
+    "jd_ut": 2415039.57684,
+    "planets": {
+      "Sun": {
+        "longitude": 277.122684,
+        "sign_index": 9,
+        "degree_in_sign": 7.122684,
+        "is_retrograde": false,
+        "speed": 1.017399
+      },
+      "Moon": {
+        "longitude": 144.510557,
+        "sign_index": 4,
+        "degree_in_sign": 24.510557,
+        "is_retrograde": false,
+        "speed": 8.705145
+      },
+      "Mars": {
+        "longitude": 276.199822,
+        "sign_index": 9,
+        "degree_in_sign": 6.199822,
+        "is_retrograde": false,
+        "speed": 0.780492
+      },
+      "Mercury": {
+        "longitude": 263.850756,
+        "sign_index": 8,
+        "degree_in_sign": 23.850756,
+        "is_retrograde": false,
+        "speed": 1.540204
+      },
+      "Jupiter": {
+        "longitude": 222.162885,
+        "sign_index": 7,
+        "degree_in_sign": 12.162885,
+        "is_retrograde": false,
+        "speed": 0.169053
+      },
+      "Venus": {
+        "longitude": 307.543896,
+        "sign_index": 10,
+        "degree_in_sign": 7.543896,
+        "is_retrograde": false,
+        "speed": 1.233404
+      },
+      "Saturn": {
+        "longitude": 247.398239,
+        "sign_index": 8,
+        "degree_in_sign": 7.398239,
+        "is_retrograde": false,
+        "speed": 0.107681
+      },
+      "Rahu": {
+        "longitude": 235.685012,
+        "sign_index": 7,
+        "degree_in_sign": 25.685012,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 55.685012,
+        "sign_index": 1,
+        "degree_in_sign": 25.685012,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

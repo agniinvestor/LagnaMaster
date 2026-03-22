@@ -1,0 +1,108 @@
+{
+  "adb_id": 54250,
+  "name": "Cowans, Adger W.",
+  "given_name": "Adger W. Cowans",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428430.746528,
+    "year": 1936,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "00:55",
+    "time_type": "s",
+    "hour": 0.916667,
+    "time_unknown": false,
+    "place": "Columbus",
+    "country": "Ohio",
+    "lat": 39.966667,
+    "lon": -83.0
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowans,_Adger_W.",
+  "source_notes": "Steinbrecher collection: Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Art : Photography"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 5.539242,
+    "lagna": 65.539242,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.973217,
+    "jd_ut": 2428430.746528,
+    "planets": {
+      "Sun": {
+        "longitude": 153.128431,
+        "sign_index": 5,
+        "degree_in_sign": 3.128431,
+        "is_retrograde": false,
+        "speed": 0.977344
+      },
+      "Moon": {
+        "longitude": 191.476874,
+        "sign_index": 6,
+        "degree_in_sign": 11.476874,
+        "is_retrograde": false,
+        "speed": 15.081733
+      },
+      "Mars": {
+        "longitude": 122.405906,
+        "sign_index": 4,
+        "degree_in_sign": 2.405906,
+        "is_retrograde": false,
+        "speed": 0.627894
+      },
+      "Mercury": {
+        "longitude": 173.429044,
+        "sign_index": 5,
+        "degree_in_sign": 23.429044,
+        "is_retrograde": true,
+        "speed": -0.111753
+      },
+      "Jupiter": {
+        "longitude": 233.827623,
+        "sign_index": 7,
+        "degree_in_sign": 23.827623,
+        "is_retrograde": false,
+        "speed": 0.110497
+      },
+      "Venus": {
+        "longitude": 175.294324,
+        "sign_index": 5,
+        "degree_in_sign": 25.294324,
+        "is_retrograde": false,
+        "speed": 1.231587
+      },
+      "Saturn": {
+        "longitude": 325.594422,
+        "sign_index": 10,
+        "degree_in_sign": 25.594422,
+        "is_retrograde": true,
+        "speed": -0.075989
+      },
+      "Rahu": {
+        "longitude": 246.058929,
+        "sign_index": 8,
+        "degree_in_sign": 6.058929,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 66.058929,
+        "sign_index": 2,
+        "degree_in_sign": 6.058929,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

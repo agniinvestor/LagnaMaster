@@ -1,0 +1,111 @@
+{
+  "adb_id": 882,
+  "name": "Coppola, Frank",
+  "given_name": "Frank Coppola",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414933.708333,
+    "year": 1899,
+    "month": 10,
+    "day": 6,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Partinico",
+    "country": "Italy",
+    "lat": 38.05,
+    "lon": 13.116667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coppola,_Frank",
+  "source_notes": "Bordoni quotes B.C. Vol 1\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Civil/ Political",
+    "Passions : Criminal Perpetrator : Thief/ Financial crime",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.456102,
+    "lagna": 145.456102,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.457213,
+    "jd_ut": 2414933.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 170.260881,
+        "sign_index": 5,
+        "degree_in_sign": 20.260881,
+        "is_retrograde": false,
+        "speed": 0.987245
+      },
+      "Moon": {
+        "longitude": 187.280917,
+        "sign_index": 6,
+        "degree_in_sign": 7.280917,
+        "is_retrograde": false,
+        "speed": 13.957392
+      },
+      "Mars": {
+        "longitude": 197.764711,
+        "sign_index": 6,
+        "degree_in_sign": 17.764711,
+        "is_retrograde": false,
+        "speed": 0.690375
+      },
+      "Mercury": {
+        "longitude": 174.000079,
+        "sign_index": 5,
+        "degree_in_sign": 24.000079,
+        "is_retrograde": false,
+        "speed": 1.698901
+      },
+      "Jupiter": {
+        "longitude": 200.091452,
+        "sign_index": 6,
+        "degree_in_sign": 20.091452,
+        "is_retrograde": false,
+        "speed": 0.204319
+      },
+      "Venus": {
+        "longitude": 175.528015,
+        "sign_index": 5,
+        "degree_in_sign": 25.528015,
+        "is_retrograde": false,
+        "speed": 1.248624
+      },
+      "Saturn": {
+        "longitude": 236.235611,
+        "sign_index": 7,
+        "degree_in_sign": 26.235611,
+        "is_retrograde": false,
+        "speed": 0.068822
+      },
+      "Rahu": {
+        "longitude": 241.295207,
+        "sign_index": 8,
+        "degree_in_sign": 1.295207,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 61.295207,
+        "sign_index": 2,
+        "degree_in_sign": 1.295207,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

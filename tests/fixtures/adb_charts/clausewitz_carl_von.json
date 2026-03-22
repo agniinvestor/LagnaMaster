@@ -1,0 +1,112 @@
+{
+  "adb_id": 56093,
+  "name": "Clausewitz, Carl von",
+  "given_name": "Carl von Clausewitz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2371374.112917,
+    "year": 1780,
+    "month": 7,
+    "day": 1,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "l",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Burg b. Magdeburg",
+    "country": "Germany",
+    "lat": 52.266667,
+    "lon": 11.85
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clausewitz,_Carl_von",
+  "source_notes": "Arno Müller, vol 2, states 1 June. However, as pointed out by atr, it is explained on German Wikipedia that his father faked records to enter his son into the military. The minimum age was 12 years; decisive was the age at 1 June in the year of admission.\\n\\nSy Scholfield quotes church record for 1 July in the biography, \"Carl von Clausewitz: Lebensbild eines patriotischen Militars und fortschrittlichen Militärtheoretikers\" by Gerhard Förster (Militärverlag der Deutschen Demokratischen Republik, 1983), p. 1797: \"Danach wurde Carl Philipp Gottlieb, Sohn des Clausewitz, Friedrich Gabriel, am 1. Juli 1780 abends ½ 4 Uhr geboren, getauft am 9. desselben Monats. Da das Kirchenregister ordentlich geführt wurde, ist es durchaus möglich, daß dieses Geburtsdatum stimmt.\" [Translation: Carl Philipp Gottlieb, son of Frederick Gabriel Clausewitz, was born at 3:30pm on July 1, 1780, baptized on the 9th of the same month. Since the church register was properly conducted, it is quite possible that this birth is correct.\"] \\n",
+  "categories": [
+    "Traits : Personality : Courageous",
+    "Vocation : Military : Military career",
+    "Vocation : Writers : Other Writers",
+    "Notable : Famous : Historic figure",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.97513,
+    "lagna": 181.97513,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.79246,
+    "jd_ut": 2371374.112917,
+    "planets": {
+      "Sun": {
+        "longitude": 79.409311,
+        "sign_index": 2,
+        "degree_in_sign": 19.409311,
+        "is_retrograde": false,
+        "speed": 0.953529
+      },
+      "Moon": {
+        "longitude": 68.769094,
+        "sign_index": 2,
+        "degree_in_sign": 8.769094,
+        "is_retrograde": false,
+        "speed": 12.730007
+      },
+      "Mars": {
+        "longitude": 84.190944,
+        "sign_index": 2,
+        "degree_in_sign": 24.190944,
+        "is_retrograde": false,
+        "speed": 0.652613
+      },
+      "Mercury": {
+        "longitude": 89.954532,
+        "sign_index": 2,
+        "degree_in_sign": 29.954532,
+        "is_retrograde": false,
+        "speed": 2.003699
+      },
+      "Jupiter": {
+        "longitude": 176.906079,
+        "sign_index": 5,
+        "degree_in_sign": 26.906079,
+        "is_retrograde": false,
+        "speed": 0.053295
+      },
+      "Venus": {
+        "longitude": 119.90161,
+        "sign_index": 3,
+        "degree_in_sign": 29.90161,
+        "is_retrograde": false,
+        "speed": 0.559257
+      },
+      "Saturn": {
+        "longitude": 221.994226,
+        "sign_index": 7,
+        "degree_in_sign": 11.994226,
+        "is_retrograde": true,
+        "speed": -0.050758
+      },
+      "Rahu": {
+        "longitude": 29.612463,
+        "sign_index": 0,
+        "degree_in_sign": 29.612463,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 209.612463,
+        "sign_index": 6,
+        "degree_in_sign": 29.612463,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

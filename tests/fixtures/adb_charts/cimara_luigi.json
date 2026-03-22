@@ -1,0 +1,108 @@
+{
+  "adb_id": 71662,
+  "name": "Cimara, Luigi",
+  "given_name": "Luigi Cimara",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411932.805602,
+    "year": 1891,
+    "month": 7,
+    "day": 19,
+    "calendar": "g",
+    "time": "08:10",
+    "time_type": "s",
+    "hour": 8.166667,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cimara,_Luigi",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 21.306666,
+    "lagna": 111.306666,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.342497,
+    "jd_ut": 2411932.805602,
+    "planets": {
+      "Sun": {
+        "longitude": 93.956367,
+        "sign_index": 3,
+        "degree_in_sign": 3.956367,
+        "is_retrograde": false,
+        "speed": 0.954003
+      },
+      "Moon": {
+        "longitude": 243.547501,
+        "sign_index": 8,
+        "degree_in_sign": 3.547501,
+        "is_retrograde": false,
+        "speed": 17.542682
+      },
+      "Mars": {
+        "longitude": 97.392641,
+        "sign_index": 3,
+        "degree_in_sign": 7.392641,
+        "is_retrograde": false,
+        "speed": 0.643764
+      },
+      "Mercury": {
+        "longitude": 107.085865,
+        "sign_index": 3,
+        "degree_in_sign": 17.085865,
+        "is_retrograde": false,
+        "speed": 1.885448
+      },
+      "Jupiter": {
+        "longitude": 325.463802,
+        "sign_index": 10,
+        "degree_in_sign": 25.463802,
+        "is_retrograde": true,
+        "speed": -0.037328
+      },
+      "Venus": {
+        "longitude": 77.346158,
+        "sign_index": 2,
+        "degree_in_sign": 17.346158,
+        "is_retrograde": false,
+        "speed": 1.220515
+      },
+      "Saturn": {
+        "longitude": 141.58925,
+        "sign_index": 4,
+        "degree_in_sign": 21.58925,
+        "is_retrograde": false,
+        "speed": 0.097488
+      },
+      "Rahu": {
+        "longitude": 40.319381,
+        "sign_index": 1,
+        "degree_in_sign": 10.319381,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 220.319381,
+        "sign_index": 7,
+        "degree_in_sign": 10.319381,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

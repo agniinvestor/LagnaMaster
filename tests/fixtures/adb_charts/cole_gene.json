@@ -1,0 +1,109 @@
+{
+  "adb_id": 54193,
+  "name": "Cole, Gene",
+  "given_name": "Gene Cole",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425599.628472,
+    "year": 1928,
+    "month": 12,
+    "day": 18,
+    "calendar": "g",
+    "time": "22:05",
+    "time_type": "s",
+    "hour": 22.083333,
+    "time_unknown": false,
+    "place": "New Lexington (Perry County)",
+    "country": "Ohio",
+    "lat": 39.716667,
+    "lon": -82.216667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cole,_Gene",
+  "source_notes": "Steinbrecher collection: Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Sports : Track and Field",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 13.579432,
+    "lagna": 103.579432,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.864974,
+    "jd_ut": 2425599.628472,
+    "planets": {
+      "Sun": {
+        "longitude": 244.127413,
+        "sign_index": 8,
+        "degree_in_sign": 4.127413,
+        "is_retrograde": false,
+        "speed": 1.018257
+      },
+      "Moon": {
+        "longitude": 320.819544,
+        "sign_index": 10,
+        "degree_in_sign": 20.819544,
+        "is_retrograde": false,
+        "speed": 11.494709
+      },
+      "Mars": {
+        "longitude": 67.572496,
+        "sign_index": 2,
+        "degree_in_sign": 7.572496,
+        "is_retrograde": true,
+        "speed": -0.395489
+      },
+      "Mercury": {
+        "longitude": 244.462973,
+        "sign_index": 8,
+        "degree_in_sign": 4.462973,
+        "is_retrograde": false,
+        "speed": 1.582021
+      },
+      "Jupiter": {
+        "longitude": 7.64784,
+        "sign_index": 0,
+        "degree_in_sign": 7.64784,
+        "is_retrograde": true,
+        "speed": -0.023548
+      },
+      "Venus": {
+        "longitude": 285.584205,
+        "sign_index": 9,
+        "degree_in_sign": 15.584205,
+        "is_retrograde": false,
+        "speed": 1.189839
+      },
+      "Saturn": {
+        "longitude": 239.335665,
+        "sign_index": 7,
+        "degree_in_sign": 29.335665,
+        "is_retrograde": false,
+        "speed": 0.118046
+      },
+      "Rahu": {
+        "longitude": 36.085752,
+        "sign_index": 1,
+        "degree_in_sign": 6.085752,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 216.085752,
+        "sign_index": 7,
+        "degree_in_sign": 6.085752,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

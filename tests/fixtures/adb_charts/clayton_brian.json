@@ -1,0 +1,111 @@
+{
+  "adb_id": 47590,
+  "name": "Clayton, Brian",
+  "given_name": "Brian Clayton",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441990.486111,
+    "year": 1973,
+    "month": 11,
+    "day": 3,
+    "calendar": "g",
+    "time": "18:40",
+    "time_type": "s",
+    "hour": 18.666667,
+    "time_unknown": false,
+    "place": "Boston",
+    "country": "Massachusetts",
+    "lat": 42.366667,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "aqu",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clayton,_Brian",
+  "source_notes": "Frances McEvoy quotes B.C. 10/1994\\n",
+  "categories": [
+    "Traits : Personality : Bigot",
+    "Passions : Criminal Perpetrator : Civil/ Political",
+    "Vocation : Politics : Activist/ social",
+    "Vocation : Politics : Nazi party"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 3.76206,
+    "lagna": 33.76206,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.491704,
+    "jd_ut": 2441990.486111,
+    "planets": {
+      "Sun": {
+        "longitude": 197.919384,
+        "sign_index": 6,
+        "degree_in_sign": 17.919384,
+        "is_retrograde": false,
+        "speed": 1.001944
+      },
+      "Moon": {
+        "longitude": 295.555082,
+        "sign_index": 9,
+        "degree_in_sign": 25.555082,
+        "is_retrograde": false,
+        "speed": 8.228826
+      },
+      "Mars": {
+        "longitude": 5.006529,
+        "sign_index": 0,
+        "degree_in_sign": 5.006529,
+        "is_retrograde": true,
+        "speed": -0.276542
+      },
+      "Mercury": {
+        "longitude": 211.551773,
+        "sign_index": 7,
+        "degree_in_sign": 1.551773,
+        "is_retrograde": true,
+        "speed": -0.700767
+      },
+      "Jupiter": {
+        "longitude": 280.897375,
+        "sign_index": 9,
+        "degree_in_sign": 10.897375,
+        "is_retrograde": false,
+        "speed": 0.111554
+      },
+      "Venus": {
+        "longitude": 244.748262,
+        "sign_index": 8,
+        "degree_in_sign": 4.748262,
+        "is_retrograde": false,
+        "speed": 1.057607
+      },
+      "Saturn": {
+        "longitude": 70.964975,
+        "sign_index": 2,
+        "degree_in_sign": 10.964975,
+        "is_retrograde": true,
+        "speed": -0.032577
+      },
+      "Rahu": {
+        "longitude": 247.500462,
+        "sign_index": 8,
+        "degree_in_sign": 7.500462,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 67.500462,
+        "sign_index": 2,
+        "degree_in_sign": 7.500462,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

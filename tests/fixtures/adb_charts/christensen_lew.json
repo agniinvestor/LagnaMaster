@@ -1,0 +1,108 @@
+{
+  "adb_id": 75677,
+  "name": "Christensen, Lew",
+  "given_name": "Lew Christensen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418433.083333,
+    "year": 1909,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Brigham City",
+    "country": "Utah",
+    "lat": 41.516667,
+    "lon": -112.016667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christensen,_Lew",
+  "source_notes": "Birth certificate submitted by Sy Scholfield.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 29.484978,
+    "lagna": 29.484978,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.590989,
+    "jd_ut": 2418433.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 22.796445,
+        "sign_index": 0,
+        "degree_in_sign": 22.796445,
+        "is_retrograde": false,
+        "speed": 0.967229
+      },
+      "Moon": {
+        "longitude": 214.640207,
+        "sign_index": 7,
+        "degree_in_sign": 4.640207,
+        "is_retrograde": false,
+        "speed": 11.942872
+      },
+      "Mars": {
+        "longitude": 295.046326,
+        "sign_index": 9,
+        "degree_in_sign": 25.046326,
+        "is_retrograde": false,
+        "speed": 0.650101
+      },
+      "Mercury": {
+        "longitude": 38.663758,
+        "sign_index": 1,
+        "degree_in_sign": 8.663758,
+        "is_retrograde": false,
+        "speed": 1.829963
+      },
+      "Jupiter": {
+        "longitude": 131.980704,
+        "sign_index": 4,
+        "degree_in_sign": 11.980704,
+        "is_retrograde": false,
+        "speed": 0.015087
+      },
+      "Venus": {
+        "longitude": 24.867065,
+        "sign_index": 0,
+        "degree_in_sign": 24.867065,
+        "is_retrograde": false,
+        "speed": 1.232362
+      },
+      "Saturn": {
+        "longitude": 354.533039,
+        "sign_index": 11,
+        "degree_in_sign": 24.533039,
+        "is_retrograde": false,
+        "speed": 0.115989
+      },
+      "Rahu": {
+        "longitude": 55.855959,
+        "sign_index": 1,
+        "degree_in_sign": 25.855959,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 235.855959,
+        "sign_index": 7,
+        "degree_in_sign": 25.855959,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

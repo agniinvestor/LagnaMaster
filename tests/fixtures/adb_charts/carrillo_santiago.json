@@ -1,0 +1,109 @@
+{
+  "adb_id": 92750,
+  "name": "Carrillo, Santiago",
+  "given_name": "Santiago Carrillo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420515.604167,
+    "year": 1915,
+    "month": 1,
+    "day": 18,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "s",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Gijón",
+    "country": "Spain",
+    "lat": 43.533333,
+    "lon": -5.666667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrillo,_Santiago",
+  "source_notes": "Faustino Rodriguez quotes birth certificate in hand.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 29.307739,
+    "lagna": 179.307739,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.670604,
+    "jd_ut": 2420515.604167,
+    "planets": {
+      "Sun": {
+        "longitude": 274.251174,
+        "sign_index": 9,
+        "degree_in_sign": 4.251174,
+        "is_retrograde": false,
+        "speed": 1.018485
+      },
+      "Moon": {
+        "longitude": 305.623862,
+        "sign_index": 10,
+        "degree_in_sign": 5.623862,
+        "is_retrograde": false,
+        "speed": 17.083087
+      },
+      "Mars": {
+        "longitude": 267.903365,
+        "sign_index": 8,
+        "degree_in_sign": 27.903365,
+        "is_retrograde": false,
+        "speed": 0.772288
+      },
+      "Mercury": {
+        "longitude": 282.273633,
+        "sign_index": 9,
+        "degree_in_sign": 12.273633,
+        "is_retrograde": false,
+        "speed": 1.702193
+      },
+      "Jupiter": {
+        "longitude": 303.407429,
+        "sign_index": 10,
+        "degree_in_sign": 3.407429,
+        "is_retrograde": false,
+        "speed": 0.22544
+      },
+      "Venus": {
+        "longitude": 229.224688,
+        "sign_index": 7,
+        "degree_in_sign": 19.224688,
+        "is_retrograde": false,
+        "speed": 0.819143
+      },
+      "Saturn": {
+        "longitude": 64.052827,
+        "sign_index": 2,
+        "degree_in_sign": 4.052827,
+        "is_retrograde": true,
+        "speed": -0.065297
+      },
+      "Rahu": {
+        "longitude": 305.498811,
+        "sign_index": 10,
+        "degree_in_sign": 5.498811,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 125.498811,
+        "sign_index": 4,
+        "degree_in_sign": 5.498811,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

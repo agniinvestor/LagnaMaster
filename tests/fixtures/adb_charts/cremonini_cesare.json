@@ -1,0 +1,113 @@
+{
+  "adb_id": 40011,
+  "name": "Cremonini, Cesare",
+  "given_name": "Cesare Cremonini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444325.965278,
+    "year": 1980,
+    "month": 3,
+    "day": 27,
+    "calendar": "g",
+    "time": "12:10",
+    "time_type": "s",
+    "hour": 12.166667,
+    "time_unknown": false,
+    "place": "Bologna",
+    "country": "Italy",
+    "lat": 44.483333,
+    "lon": 11.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cremonini,_Cesare",
+  "source_notes": "Bordoni quotes B.C. in Datanotizie No.36, 3/2001.\\n",
+  "categories": [
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.240523,
+    "lagna": 67.240523,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.581014,
+    "jd_ut": 2444325.965278,
+    "planets": {
+      "Sun": {
+        "longitude": 343.360864,
+        "sign_index": 11,
+        "degree_in_sign": 13.360864,
+        "is_retrograde": false,
+        "speed": 0.989027
+      },
+      "Moon": {
+        "longitude": 118.774881,
+        "sign_index": 3,
+        "degree_in_sign": 28.774881,
+        "is_retrograde": false,
+        "speed": 14.633645
+      },
+      "Mars": {
+        "longitude": 122.90773,
+        "sign_index": 4,
+        "degree_in_sign": 2.90773,
+        "is_retrograde": true,
+        "speed": -0.126043
+      },
+      "Mercury": {
+        "longitude": 316.563347,
+        "sign_index": 10,
+        "degree_in_sign": 16.563347,
+        "is_retrograde": false,
+        "speed": 0.648648
+      },
+      "Jupiter": {
+        "longitude": 128.019243,
+        "sign_index": 4,
+        "degree_in_sign": 8.019243,
+        "is_retrograde": true,
+        "speed": -0.087782
+      },
+      "Venus": {
+        "longitude": 28.932516,
+        "sign_index": 0,
+        "degree_in_sign": 28.932516,
+        "is_retrograde": false,
+        "speed": 1.040296
+      },
+      "Saturn": {
+        "longitude": 149.028479,
+        "sign_index": 4,
+        "degree_in_sign": 29.028479,
+        "is_retrograde": true,
+        "speed": -0.075315
+      },
+      "Rahu": {
+        "longitude": 123.738668,
+        "sign_index": 4,
+        "degree_in_sign": 3.738668,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 303.738668,
+        "sign_index": 10,
+        "degree_in_sign": 3.738668,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

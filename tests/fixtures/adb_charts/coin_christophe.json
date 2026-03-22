@@ -1,0 +1,109 @@
+{
+  "adb_id": 65032,
+  "name": "Coin, Christophe",
+  "given_name": "Christophe Coin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436229.729167,
+    "year": 1958,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Caen",
+    "country": "France",
+    "lat": 49.183333,
+    "lon": -0.35
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coin,_Christophe",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 196.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 10.760494,
+    "lagna": 220.760494,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.271418,
+    "jd_ut": 2436229.729167,
+    "planets": {
+      "Sun": {
+        "longitude": 282.49152,
+        "sign_index": 9,
+        "degree_in_sign": 12.49152,
+        "is_retrograde": false,
+        "speed": 1.016561
+      },
+      "Moon": {
+        "longitude": 352.01649,
+        "sign_index": 11,
+        "degree_in_sign": 22.01649,
+        "is_retrograde": false,
+        "speed": 15.057489
+      },
+      "Mars": {
+        "longitude": 240.639567,
+        "sign_index": 8,
+        "degree_in_sign": 0.639567,
+        "is_retrograde": false,
+        "speed": 0.708818
+      },
+      "Mercury": {
+        "longitude": 260.433158,
+        "sign_index": 8,
+        "degree_in_sign": 20.433158,
+        "is_retrograde": false,
+        "speed": 1.331187
+      },
+      "Jupiter": {
+        "longitude": 187.743933,
+        "sign_index": 6,
+        "degree_in_sign": 7.743933,
+        "is_retrograde": false,
+        "speed": 0.062364
+      },
+      "Venus": {
+        "longitude": 286.724288,
+        "sign_index": 9,
+        "degree_in_sign": 16.724288,
+        "is_retrograde": true,
+        "speed": -0.605973
+      },
+      "Saturn": {
+        "longitude": 238.832047,
+        "sign_index": 7,
+        "degree_in_sign": 28.832047,
+        "is_retrograde": false,
+        "speed": 0.096063
+      },
+      "Rahu": {
+        "longitude": 192.774754,
+        "sign_index": 6,
+        "degree_in_sign": 12.774754,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 12.774754,
+        "sign_index": 0,
+        "degree_in_sign": 12.774754,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

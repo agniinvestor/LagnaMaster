@@ -1,0 +1,113 @@
+{
+  "adb_id": 102712,
+  "name": "Courbis, Rolland",
+  "given_name": "Rolland Courbis",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434601.75,
+    "year": 1953,
+    "month": 8,
+    "day": 12,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courbis,_Rolland",
+  "source_notes": "Grazia Bordoni database quotes ?.\\nPaddy de Jabrun quoted BC.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Entertainment : News journalist/ Anchor",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 17.202424,
+    "lagna": 107.202424,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.209169,
+    "jd_ut": 2434601.75,
+    "planets": {
+      "Sun": {
+        "longitude": 116.014964,
+        "sign_index": 3,
+        "degree_in_sign": 26.014964,
+        "is_retrograde": false,
+        "speed": 0.960227
+      },
+      "Moon": {
+        "longitude": 145.188596,
+        "sign_index": 4,
+        "degree_in_sign": 25.188596,
+        "is_retrograde": false,
+        "speed": 13.217323
+      },
+      "Mars": {
+        "longitude": 105.448291,
+        "sign_index": 3,
+        "degree_in_sign": 15.448291,
+        "is_retrograde": false,
+        "speed": 0.642063
+      },
+      "Mercury": {
+        "longitude": 97.309057,
+        "sign_index": 3,
+        "degree_in_sign": 7.309057,
+        "is_retrograde": false,
+        "speed": 0.823783
+      },
+      "Jupiter": {
+        "longitude": 57.276448,
+        "sign_index": 1,
+        "degree_in_sign": 27.276448,
+        "is_retrograde": false,
+        "speed": 0.169126
+      },
+      "Venus": {
+        "longitude": 76.10142,
+        "sign_index": 2,
+        "degree_in_sign": 16.10142,
+        "is_retrograde": false,
+        "speed": 1.14428
+      },
+      "Saturn": {
+        "longitude": 179.277824,
+        "sign_index": 5,
+        "degree_in_sign": 29.277824,
+        "is_retrograde": false,
+        "speed": 0.074696
+      },
+      "Rahu": {
+        "longitude": 279.044715,
+        "sign_index": 9,
+        "degree_in_sign": 9.044715,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 99.044715,
+        "sign_index": 3,
+        "degree_in_sign": 9.044715,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

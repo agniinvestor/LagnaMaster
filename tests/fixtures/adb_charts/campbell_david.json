@@ -1,0 +1,109 @@
+{
+  "adb_id": 88907,
+  "name": "Campbell, David",
+  "given_name": "David Campbell",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2443318.025,
+    "year": 1977,
+    "month": 6,
+    "day": 23,
+    "calendar": "g",
+    "time": "05:36",
+    "time_type": "d",
+    "hour": 5.6,
+    "time_unknown": false,
+    "place": "Santa Cruz",
+    "country": "California",
+    "lat": 36.966667,
+    "lon": -122.033333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campbell,_David",
+  "source_notes": "Sy Scholfield provided copy of birth report, Santa Cruz Sentinel (Santa Cruz, California), 6 July 1977, page 20, born at Community Hospital\\n",
+  "categories": [
+    "Traits : Body : Diet unusual",
+    "Vocation : Sports : Track and Field"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 10.674533,
+    "lagna": 40.674533,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.54247,
+    "jd_ut": 2443318.025,
+    "planets": {
+      "Sun": {
+        "longitude": 68.378998,
+        "sign_index": 2,
+        "degree_in_sign": 8.378998,
+        "is_retrograde": false,
+        "speed": 0.954026
+      },
+      "Moon": {
+        "longitude": 146.041632,
+        "sign_index": 4,
+        "degree_in_sign": 26.041632,
+        "is_retrograde": false,
+        "speed": 17.308668
+      },
+      "Mars": {
+        "longitude": 19.270239,
+        "sign_index": 0,
+        "degree_in_sign": 19.270239,
+        "is_retrograde": false,
+        "speed": 0.727075
+      },
+      "Mercury": {
+        "longitude": 60.495126,
+        "sign_index": 2,
+        "degree_in_sign": 0.495126,
+        "is_retrograde": false,
+        "speed": 2.123446
+      },
+      "Jupiter": {
+        "longitude": 54.524107,
+        "sign_index": 1,
+        "degree_in_sign": 24.524107,
+        "is_retrograde": false,
+        "speed": 0.228527
+      },
+      "Venus": {
+        "longitude": 22.874063,
+        "sign_index": 0,
+        "degree_in_sign": 22.874063,
+        "is_retrograde": false,
+        "speed": 1.005682
+      },
+      "Saturn": {
+        "longitude": 110.732298,
+        "sign_index": 3,
+        "degree_in_sign": 20.732298,
+        "is_retrograde": false,
+        "speed": 0.105761
+      },
+      "Rahu": {
+        "longitude": 177.151473,
+        "sign_index": 5,
+        "degree_in_sign": 27.151473,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 357.151473,
+        "sign_index": 11,
+        "degree_in_sign": 27.151473,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

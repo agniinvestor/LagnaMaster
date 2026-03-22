@@ -1,0 +1,116 @@
+{
+  "adb_id": 3217,
+  "name": "Coates, Eric",
+  "given_name": "Eric Coates",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2410146.1875,
+    "year": 1886,
+    "month": 8,
+    "day": 27,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "s",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "Hucknall",
+    "country": "England",
+    "lat": 53.033333,
+    "lon": -1.183333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coates,_Eric",
+  "source_notes": "LMR quotes his autobiography \"Suite in Four Movements\" 1953, p.3\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Stroke",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Financial : Wealthy",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Business : Top executive",
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.131856,
+    "lagna": 232.131856,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.274201,
+    "jd_ut": 2410146.1875,
+    "planets": {
+      "Sun": {
+        "longitude": 132.004667,
+        "sign_index": 4,
+        "degree_in_sign": 12.004667,
+        "is_retrograde": false,
+        "speed": 0.96679
+      },
+      "Moon": {
+        "longitude": 105.399276,
+        "sign_index": 3,
+        "degree_in_sign": 15.399276,
+        "is_retrograde": false,
+        "speed": 15.489777
+      },
+      "Mars": {
+        "longitude": 191.259507,
+        "sign_index": 6,
+        "degree_in_sign": 11.259507,
+        "is_retrograde": false,
+        "speed": 0.647788
+      },
+      "Mercury": {
+        "longitude": 116.074712,
+        "sign_index": 3,
+        "degree_in_sign": 26.074712,
+        "is_retrograde": false,
+        "speed": 0.204532
+      },
+      "Jupiter": {
+        "longitude": 165.027922,
+        "sign_index": 5,
+        "degree_in_sign": 15.027922,
+        "is_retrograde": false,
+        "speed": 0.19683
+      },
+      "Venus": {
+        "longitude": 107.280118,
+        "sign_index": 3,
+        "degree_in_sign": 17.280118,
+        "is_retrograde": false,
+        "speed": 1.218121
+      },
+      "Saturn": {
+        "longitude": 86.337969,
+        "sign_index": 2,
+        "degree_in_sign": 26.337969,
+        "is_retrograde": false,
+        "speed": 0.103855
+      },
+      "Rahu": {
+        "longitude": 134.996059,
+        "sign_index": 4,
+        "degree_in_sign": 14.996059,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 314.996059,
+        "sign_index": 10,
+        "degree_in_sign": 14.996059,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

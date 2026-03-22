@@ -1,0 +1,109 @@
+{
+  "adb_id": 54484,
+  "name": "Cotillard, Marion",
+  "given_name": "Marion Cotillard",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442685.659722,
+    "year": 1975,
+    "month": 9,
+    "day": 30,
+    "calendar": "g",
+    "time": "04:50",
+    "time_type": "s",
+    "hour": 4.833333,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cotillard,_Marion",
+  "source_notes": "Didier Geslain quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Notable : Awards : Oscar"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 27.037773,
+    "lagna": 117.037773,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.518288,
+    "jd_ut": 2442685.659722,
+    "planets": {
+      "Sun": {
+        "longitude": 162.848276,
+        "sign_index": 5,
+        "degree_in_sign": 12.848276,
+        "is_retrograde": false,
+        "speed": 0.98263
+      },
+      "Moon": {
+        "longitude": 94.461203,
+        "sign_index": 3,
+        "degree_in_sign": 4.461203,
+        "is_retrograde": false,
+        "speed": 11.387834
+      },
+      "Mars": {
+        "longitude": 60.806097,
+        "sign_index": 2,
+        "degree_in_sign": 0.806097,
+        "is_retrograde": false,
+        "speed": 0.400725
+      },
+      "Mercury": {
+        "longitude": 180.310559,
+        "sign_index": 6,
+        "degree_in_sign": 0.310559,
+        "is_retrograde": true,
+        "speed": -0.381476
+      },
+      "Jupiter": {
+        "longitude": 357.91075,
+        "sign_index": 11,
+        "degree_in_sign": 27.91075,
+        "is_retrograde": true,
+        "speed": -0.126092
+      },
+      "Venus": {
+        "longitude": 124.559989,
+        "sign_index": 4,
+        "degree_in_sign": 4.559989,
+        "is_retrograde": false,
+        "speed": 0.416814
+      },
+      "Saturn": {
+        "longitude": 97.591554,
+        "sign_index": 3,
+        "degree_in_sign": 7.591554,
+        "is_retrograde": false,
+        "speed": 0.077563
+      },
+      "Rahu": {
+        "longitude": 210.661796,
+        "sign_index": 7,
+        "degree_in_sign": 0.661796,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 30.661796,
+        "sign_index": 1,
+        "degree_in_sign": 0.661796,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 66939,
+  "name": "Carver, Lynne",
+  "given_name": "Lynne Carver",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421120.333333,
+    "year": 1916,
+    "month": 9,
+    "day": 13,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Douglas",
+    "country": "Arizona",
+    "lat": 31.35,
+    "lon": -109.55
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carver,_Lynne",
+  "source_notes": "Sy Scholfield quotes from birth certificate: http://genealogy.az.gov/azbirth/420/420-1307.pdf;\\nhttp://genealogy.az.gov/azbirth/420/420-1306.pdf\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Beauty : Beauty Queen/ King",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 3.522601,
+    "lagna": 213.522601,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.693723,
+    "jd_ut": 2421120.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 147.971334,
+        "sign_index": 4,
+        "degree_in_sign": 27.971334,
+        "is_retrograde": false,
+        "speed": 0.973952
+      },
+      "Moon": {
+        "longitude": 353.741513,
+        "sign_index": 11,
+        "degree_in_sign": 23.741513,
+        "is_retrograde": false,
+        "speed": 18.309512
+      },
+      "Mars": {
+        "longitude": 190.702727,
+        "sign_index": 6,
+        "degree_in_sign": 10.702727,
+        "is_retrograde": false,
+        "speed": 0.670716
+      },
+      "Mercury": {
+        "longitude": 174.292622,
+        "sign_index": 5,
+        "degree_in_sign": 24.292622,
+        "is_retrograde": false,
+        "speed": 0.748554
+      },
+      "Jupiter": {
+        "longitude": 12.084481,
+        "sign_index": 0,
+        "degree_in_sign": 12.084481,
+        "is_retrograde": true,
+        "speed": -0.063524
+      },
+      "Venus": {
+        "longitude": 102.003974,
+        "sign_index": 3,
+        "degree_in_sign": 12.003974,
+        "is_retrograde": false,
+        "speed": 0.978832
+      },
+      "Saturn": {
+        "longitude": 94.860246,
+        "sign_index": 3,
+        "degree_in_sign": 4.860246,
+        "is_retrograde": false,
+        "speed": 0.094704
+      },
+      "Rahu": {
+        "longitude": 273.452946,
+        "sign_index": 9,
+        "degree_in_sign": 3.452946,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 93.452946,
+        "sign_index": 3,
+        "degree_in_sign": 3.452946,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

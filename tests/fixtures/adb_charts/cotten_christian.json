@@ -1,0 +1,109 @@
+{
+  "adb_id": 65076,
+  "name": "Cotten, Christian",
+  "given_name": "Christian Cotten",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434506.833333,
+    "year": 1953,
+    "month": 5,
+    "day": 9,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Colombes",
+    "country": "France",
+    "lat": 48.916667,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cotten,_Christian",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 244.\\n",
+  "categories": [
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 29.649202,
+    "lagna": 59.649202,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.205539,
+    "jd_ut": 2434506.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 25.182619,
+        "sign_index": 0,
+        "degree_in_sign": 25.182619,
+        "is_retrograde": false,
+        "speed": 0.966877
+      },
+      "Moon": {
+        "longitude": 332.432689,
+        "sign_index": 11,
+        "degree_in_sign": 2.432689,
+        "is_retrograde": false,
+        "speed": 10.841472
+      },
+      "Mars": {
+        "longitude": 42.410563,
+        "sign_index": 1,
+        "degree_in_sign": 12.410563,
+        "is_retrograde": false,
+        "speed": 0.692781
+      },
+      "Mercury": {
+        "longitude": 8.722346,
+        "sign_index": 0,
+        "degree_in_sign": 8.722346,
+        "is_retrograde": false,
+        "speed": 1.827004
+      },
+      "Jupiter": {
+        "longitude": 36.717771,
+        "sign_index": 1,
+        "degree_in_sign": 6.717771,
+        "is_retrograde": false,
+        "speed": 0.232973
+      },
+      "Venus": {
+        "longitude": 352.201887,
+        "sign_index": 11,
+        "degree_in_sign": 22.201887,
+        "is_retrograde": false,
+        "speed": 0.180842
+      },
+      "Saturn": {
+        "longitude": 178.933033,
+        "sign_index": 5,
+        "degree_in_sign": 28.933033,
+        "is_retrograde": true,
+        "speed": -0.064709
+      },
+      "Rahu": {
+        "longitude": 284.074544,
+        "sign_index": 9,
+        "degree_in_sign": 14.074544,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 104.074544,
+        "sign_index": 3,
+        "degree_in_sign": 14.074544,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

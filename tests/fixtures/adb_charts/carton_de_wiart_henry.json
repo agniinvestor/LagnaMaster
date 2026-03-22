@@ -1,0 +1,109 @@
+{
+  "adb_id": 60128,
+  "name": "Carton de Wiart, Henry",
+  "given_name": "Henry Carton de Wiart",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403729.27963,
+    "year": 1869,
+    "month": 1,
+    "day": 31,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Brussels",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carton_de_Wiart,_Henry",
+  "source_notes": "Taeger quotes Lescaut\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Heads of state"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 21.842931,
+    "lagna": 111.842931,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.02892,
+    "jd_ut": 2403729.27963,
+    "planets": {
+      "Sun": {
+        "longitude": 289.977981,
+        "sign_index": 9,
+        "degree_in_sign": 19.977981,
+        "is_retrograde": false,
+        "speed": 1.014186
+      },
+      "Moon": {
+        "longitude": 162.587163,
+        "sign_index": 5,
+        "degree_in_sign": 12.587163,
+        "is_retrograde": false,
+        "speed": 16.775716
+      },
+      "Mars": {
+        "longitude": 127.948072,
+        "sign_index": 4,
+        "degree_in_sign": 7.948072,
+        "is_retrograde": true,
+        "speed": -0.33762
+      },
+      "Mercury": {
+        "longitude": 307.661965,
+        "sign_index": 10,
+        "degree_in_sign": 7.661965,
+        "is_retrograde": false,
+        "speed": 1.335349
+      },
+      "Jupiter": {
+        "longitude": 348.541435,
+        "sign_index": 11,
+        "degree_in_sign": 18.541435,
+        "is_retrograde": false,
+        "speed": 0.178182
+      },
+      "Venus": {
+        "longitude": 265.686068,
+        "sign_index": 8,
+        "degree_in_sign": 25.686068,
+        "is_retrograde": false,
+        "speed": 1.244132
+      },
+      "Saturn": {
+        "longitude": 232.834767,
+        "sign_index": 7,
+        "degree_in_sign": 22.834767,
+        "is_retrograde": false,
+        "speed": 0.081094
+      },
+      "Rahu": {
+        "longitude": 115.041662,
+        "sign_index": 3,
+        "degree_in_sign": 25.041662,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 295.041662,
+        "sign_index": 9,
+        "degree_in_sign": 25.041662,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

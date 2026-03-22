@@ -1,0 +1,111 @@
+{
+  "adb_id": 98478,
+  "name": "Cooper, Richard",
+  "given_name": "Richard Cooper",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438701.327778,
+    "year": 1964,
+    "month": 11,
+    "day": 1,
+    "calendar": "g",
+    "time": "13:52",
+    "time_type": "s",
+    "hour": 13.866667,
+    "time_unknown": false,
+    "place": "Memphis",
+    "country": "Tennessee",
+    "lat": 35.15,
+    "lon": -90.05
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooper,_Richard",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Commercial Appeal'' (Memphis, Tennessee), 3 November 1964, page 26, born at Crump Hospital, son of Mr. and Mrs. Amos Cooper Jr.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Football",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 11.50746,
+    "lagna": 281.50746,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.365928,
+    "jd_ut": 2438701.327778,
+    "planets": {
+      "Sun": {
+        "longitude": 196.065194,
+        "sign_index": 6,
+        "degree_in_sign": 16.065194,
+        "is_retrograde": false,
+        "speed": 1.001462
+      },
+      "Moon": {
+        "longitude": 166.80652,
+        "sign_index": 5,
+        "degree_in_sign": 16.80652,
+        "is_retrograde": false,
+        "speed": 10.631009
+      },
+      "Mars": {
+        "longitude": 124.342622,
+        "sign_index": 4,
+        "degree_in_sign": 4.342622,
+        "is_retrograde": false,
+        "speed": 0.537893
+      },
+      "Mercury": {
+        "longitude": 206.575732,
+        "sign_index": 6,
+        "degree_in_sign": 26.575732,
+        "is_retrograde": false,
+        "speed": 1.540466
+      },
+      "Jupiter": {
+        "longitude": 29.239163,
+        "sign_index": 0,
+        "degree_in_sign": 29.239163,
+        "is_retrograde": true,
+        "speed": -0.129746
+      },
+      "Venus": {
+        "longitude": 158.386569,
+        "sign_index": 5,
+        "degree_in_sign": 8.386569,
+        "is_retrograde": false,
+        "speed": 1.200527
+      },
+      "Saturn": {
+        "longitude": 304.982412,
+        "sign_index": 10,
+        "degree_in_sign": 4.982412,
+        "is_retrograde": true,
+        "speed": -7e-05
+      },
+      "Rahu": {
+        "longitude": 61.799679,
+        "sign_index": 2,
+        "degree_in_sign": 1.799679,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 241.799679,
+        "sign_index": 8,
+        "degree_in_sign": 1.799679,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

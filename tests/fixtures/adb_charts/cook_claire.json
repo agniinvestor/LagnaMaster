@@ -1,0 +1,111 @@
+{
+  "adb_id": 49085,
+  "name": "Cook, Claire",
+  "given_name": "Claire Cook",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2435153.125,
+    "year": 1955,
+    "month": 2,
+    "day": 14,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Arlington (Arlington County)",
+    "country": "Virginia",
+    "lat": 38.883333,
+    "lon": -77.116667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cook,_Claire",
+  "source_notes": "She writes to PT via e-mail on 1/2/2004: \" I was born on February 14, 1955 in Arlington, VA. I think about 10 AM but that part is from memory -- the rest from a birth certificate\"\\n",
+  "categories": [
+    "Traits : Body : Aerobic exercise",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 18.4154,
+    "lagna": 348.4154,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.230252,
+    "jd_ut": 2435153.125,
+    "planets": {
+      "Sun": {
+        "longitude": 301.91411,
+        "sign_index": 10,
+        "degree_in_sign": 1.91411,
+        "is_retrograde": false,
+        "speed": 1.010319
+      },
+      "Moon": {
+        "longitude": 209.376533,
+        "sign_index": 6,
+        "degree_in_sign": 29.376533,
+        "is_retrograde": false,
+        "speed": 9.488596
+      },
+      "Mars": {
+        "longitude": 358.453322,
+        "sign_index": 11,
+        "degree_in_sign": 28.453322,
+        "is_retrograde": false,
+        "speed": 0.706518
+      },
+      "Mercury": {
+        "longitude": 297.946333,
+        "sign_index": 9,
+        "degree_in_sign": 27.946333,
+        "is_retrograde": true,
+        "speed": -1.146168
+      },
+      "Jupiter": {
+        "longitude": 88.095634,
+        "sign_index": 2,
+        "degree_in_sign": 28.095634,
+        "is_retrograde": true,
+        "speed": -0.092722
+      },
+      "Venus": {
+        "longitude": 256.129383,
+        "sign_index": 8,
+        "degree_in_sign": 16.129383,
+        "is_retrograde": false,
+        "speed": 1.108076
+      },
+      "Saturn": {
+        "longitude": 207.757483,
+        "sign_index": 6,
+        "degree_in_sign": 27.757483,
+        "is_retrograde": false,
+        "speed": 0.025123
+      },
+      "Rahu": {
+        "longitude": 249.82622,
+        "sign_index": 8,
+        "degree_in_sign": 9.82622,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 69.82622,
+        "sign_index": 2,
+        "degree_in_sign": 9.82622,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

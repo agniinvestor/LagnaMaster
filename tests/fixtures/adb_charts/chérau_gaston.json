@@ -1,0 +1,108 @@
+{
+  "adb_id": 103083,
+  "name": "Chérau, Gaston",
+  "given_name": "Gaston Chérau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405103.709583,
+    "year": 1872,
+    "month": 11,
+    "day": 6,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Niort",
+    "country": "France",
+    "lat": 46.316667,
+    "lon": -0.45
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chérau,_Gaston",
+  "source_notes": "Taeger Vol. 1, p. 293\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 8.809451,
+    "lagna": 158.809451,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.081455,
+    "jd_ut": 2405103.709583,
+    "planets": {
+      "Sun": {
+        "longitude": 202.051025,
+        "sign_index": 6,
+        "degree_in_sign": 22.051025,
+        "is_retrograde": false,
+        "speed": 1.004465
+      },
+      "Moon": {
+        "longitude": 266.387804,
+        "sign_index": 8,
+        "degree_in_sign": 26.387804,
+        "is_retrograde": false,
+        "speed": 18.056268
+      },
+      "Mars": {
+        "longitude": 146.914939,
+        "sign_index": 4,
+        "degree_in_sign": 26.914939,
+        "is_retrograde": false,
+        "speed": 0.588187
+      },
+      "Mercury": {
+        "longitude": 216.155497,
+        "sign_index": 7,
+        "degree_in_sign": 6.155497,
+        "is_retrograde": false,
+        "speed": 1.49239
+      },
+      "Jupiter": {
+        "longitude": 126.855491,
+        "sign_index": 4,
+        "degree_in_sign": 6.855491,
+        "is_retrograde": false,
+        "speed": 0.118379
+      },
+      "Venus": {
+        "longitude": 231.393461,
+        "sign_index": 7,
+        "degree_in_sign": 21.393461,
+        "is_retrograde": false,
+        "speed": 1.231631
+      },
+      "Saturn": {
+        "longitude": 264.450285,
+        "sign_index": 8,
+        "degree_in_sign": 24.450285,
+        "is_retrograde": false,
+        "speed": 0.074151
+      },
+      "Rahu": {
+        "longitude": 42.207686,
+        "sign_index": 1,
+        "degree_in_sign": 12.207686,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 222.207686,
+        "sign_index": 7,
+        "degree_in_sign": 12.207686,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

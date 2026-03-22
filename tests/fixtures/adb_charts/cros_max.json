@@ -1,0 +1,108 @@
+{
+  "adb_id": 53135,
+  "name": "Cros, Max",
+  "given_name": "Max Cros",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425421.6875,
+    "year": 1928,
+    "month": 6,
+    "day": 24,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "d",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Clamart",
+    "country": "France",
+    "lat": 48.8,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cros,_Max",
+  "source_notes": "Steinbrecher collection: Gauquelin 1/156\\n",
+  "categories": [
+    "Vocation : Travel : Aviation field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.359378,
+    "lagna": 54.359378,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.858171,
+    "jd_ut": 2425421.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 69.54683,
+        "sign_index": 2,
+        "degree_in_sign": 9.54683,
+        "is_retrograde": false,
+        "speed": 0.953766
+      },
+      "Moon": {
+        "longitude": 150.970825,
+        "sign_index": 5,
+        "degree_in_sign": 0.970825,
+        "is_retrograde": false,
+        "speed": 15.876552
+      },
+      "Mars": {
+        "longitude": 5.565645,
+        "sign_index": 0,
+        "degree_in_sign": 5.565645,
+        "is_retrograde": false,
+        "speed": 0.72304
+      },
+      "Mercury": {
+        "longitude": 77.687971,
+        "sign_index": 2,
+        "degree_in_sign": 17.687971,
+        "is_retrograde": true,
+        "speed": -0.484321
+      },
+      "Jupiter": {
+        "longitude": 10.984541,
+        "sign_index": 0,
+        "degree_in_sign": 10.984541,
+        "is_retrograde": false,
+        "speed": 0.17643
+      },
+      "Venus": {
+        "longitude": 67.494143,
+        "sign_index": 2,
+        "degree_in_sign": 7.494143,
+        "is_retrograde": false,
+        "speed": 1.228179
+      },
+      "Saturn": {
+        "longitude": 231.730296,
+        "sign_index": 7,
+        "degree_in_sign": 21.730296,
+        "is_retrograde": true,
+        "speed": -0.068624
+      },
+      "Rahu": {
+        "longitude": 45.515214,
+        "sign_index": 1,
+        "degree_in_sign": 15.515214,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 225.515214,
+        "sign_index": 7,
+        "degree_in_sign": 15.515214,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

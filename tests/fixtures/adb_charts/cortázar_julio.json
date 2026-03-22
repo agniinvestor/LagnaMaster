@@ -1,0 +1,109 @@
+{
+  "adb_id": 58265,
+  "name": "Cortázar, Julio",
+  "given_name": "Julio Cortázar",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420370.993056,
+    "year": 1914,
+    "month": 8,
+    "day": 26,
+    "calendar": "g",
+    "time": "11:50",
+    "time_type": "s",
+    "hour": 11.833333,
+    "time_unknown": false,
+    "place": "Ixelles",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.366667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortázar,_Julio",
+  "source_notes": "Michiels got confirmation of his birth hour from the municipality of Ixelles by e-mail. \\n",
+  "categories": [
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Translator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.164885,
+    "lagna": 181.164885,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.665075,
+    "jd_ut": 2420370.993056,
+    "planets": {
+      "Sun": {
+        "longitude": 129.719031,
+        "sign_index": 4,
+        "degree_in_sign": 9.719031,
+        "is_retrograde": false,
+        "speed": 0.965503
+      },
+      "Moon": {
+        "longitude": 197.822179,
+        "sign_index": 6,
+        "degree_in_sign": 17.822179,
+        "is_retrograde": false,
+        "speed": 12.943218
+      },
+      "Mars": {
+        "longitude": 164.925424,
+        "sign_index": 5,
+        "degree_in_sign": 14.925424,
+        "is_retrograde": false,
+        "speed": 0.643649
+      },
+      "Mercury": {
+        "longitude": 125.433601,
+        "sign_index": 4,
+        "degree_in_sign": 5.433601,
+        "is_retrograde": false,
+        "speed": 1.991578
+      },
+      "Jupiter": {
+        "longitude": 292.702446,
+        "sign_index": 9,
+        "degree_in_sign": 22.702446,
+        "is_retrograde": true,
+        "speed": -0.119286
+      },
+      "Venus": {
+        "longitude": 174.679468,
+        "sign_index": 5,
+        "degree_in_sign": 24.679468,
+        "is_retrograde": false,
+        "speed": 1.080094
+      },
+      "Saturn": {
+        "longitude": 67.480588,
+        "sign_index": 2,
+        "degree_in_sign": 7.480588,
+        "is_retrograde": false,
+        "speed": 0.08249
+      },
+      "Rahu": {
+        "longitude": 313.162057,
+        "sign_index": 10,
+        "degree_in_sign": 13.162057,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 133.162057,
+        "sign_index": 4,
+        "degree_in_sign": 13.162057,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

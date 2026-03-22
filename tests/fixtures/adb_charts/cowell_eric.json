@@ -1,0 +1,110 @@
+{
+  "adb_id": 91521,
+  "name": "Cowell, Eric",
+  "given_name": "Eric Cowell",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2456703.447917,
+    "year": 2014,
+    "month": 2,
+    "day": 14,
+    "calendar": "g",
+    "time": "17:45",
+    "time_type": "s",
+    "hour": 17.75,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowell,_Eric",
+  "source_notes": "Scholfield quotes Eric's data from his father on Twitter: \"Very happy to say Eric was born at 17.45pm. Healthy and handsome\" (posted 7:28pm EST, 14 Feb 2014) [https://twitter.com/simoncowell/status/434484338584190976] According to various news sources, he was born in New York.\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family noted",
+    "Vocation : Writers : Children's literature"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 11.960869,
+    "lagna": 101.960869,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 24.054382,
+    "jd_ut": 2456703.447917,
+    "planets": {
+      "Sun": {
+        "longitude": 302.106157,
+        "sign_index": 10,
+        "degree_in_sign": 2.106157,
+        "is_retrograde": false,
+        "speed": 1.009876
+      },
+      "Moon": {
+        "longitude": 122.430801,
+        "sign_index": 4,
+        "degree_in_sign": 2.430801,
+        "is_retrograde": false,
+        "speed": 12.202689
+      },
+      "Mars": {
+        "longitude": 182.224144,
+        "sign_index": 6,
+        "degree_in_sign": 2.224144,
+        "is_retrograde": false,
+        "speed": 0.162848
+      },
+      "Mercury": {
+        "longitude": 304.035756,
+        "sign_index": 10,
+        "degree_in_sign": 4.035756,
+        "is_retrograde": true,
+        "speed": -1.11657
+      },
+      "Jupiter": {
+        "longitude": 77.009122,
+        "sign_index": 2,
+        "degree_in_sign": 17.009122,
+        "is_retrograde": true,
+        "speed": -0.0632
+      },
+      "Venus": {
+        "longitude": 263.092396,
+        "sign_index": 8,
+        "degree_in_sign": 23.092396,
+        "is_retrograde": false,
+        "speed": 0.477998
+      },
+      "Saturn": {
+        "longitude": 209.048614,
+        "sign_index": 6,
+        "degree_in_sign": 29.048614,
+        "is_retrograde": false,
+        "speed": 0.026928
+      },
+      "Rahu": {
+        "longitude": 187.830928,
+        "sign_index": 6,
+        "degree_in_sign": 7.830928,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 7.830928,
+        "sign_index": 0,
+        "degree_in_sign": 7.830928,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

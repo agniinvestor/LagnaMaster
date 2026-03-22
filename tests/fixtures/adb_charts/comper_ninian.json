@@ -1,0 +1,109 @@
+{
+  "adb_id": 62115,
+  "name": "Comper, Ninian",
+  "given_name": "Ninian Comper",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402032.513889,
+    "year": 1864,
+    "month": 6,
+    "day": 10,
+    "calendar": "g",
+    "time": "00:20",
+    "time_type": "s",
+    "hour": 0.333333,
+    "time_unknown": false,
+    "place": "Aberdeen",
+    "country": "Scotland",
+    "lat": 57.166667,
+    "lon": -2.066667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comper,_Ninian",
+  "source_notes": "Paul Wright quotes birth record\\n",
+  "categories": [
+    "Vocation : Building Trades : Architect/ Planner",
+    "Notable : Awards : Knighted"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 19.232592,
+    "lagna": 289.232592,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.964066,
+    "jd_ut": 2402032.513889,
+    "planets": {
+      "Sun": {
+        "longitude": 57.35459,
+        "sign_index": 1,
+        "degree_in_sign": 27.35459,
+        "is_retrograde": false,
+        "speed": 0.955586
+      },
+      "Moon": {
+        "longitude": 120.09223,
+        "sign_index": 4,
+        "degree_in_sign": 0.09223,
+        "is_retrograde": false,
+        "speed": 13.457869
+      },
+      "Mars": {
+        "longitude": 347.664809,
+        "sign_index": 11,
+        "degree_in_sign": 17.664809,
+        "is_retrograde": false,
+        "speed": 0.726589
+      },
+      "Mercury": {
+        "longitude": 37.012568,
+        "sign_index": 1,
+        "degree_in_sign": 7.012568,
+        "is_retrograde": false,
+        "speed": 0.390135
+      },
+      "Jupiter": {
+        "longitude": 207.528825,
+        "sign_index": 6,
+        "degree_in_sign": 27.528825,
+        "is_retrograde": true,
+        "speed": -0.0962
+      },
+      "Venus": {
+        "longitude": 46.820337,
+        "sign_index": 1,
+        "degree_in_sign": 16.820337,
+        "is_retrograde": false,
+        "speed": 1.22447
+      },
+      "Saturn": {
+        "longitude": 169.354953,
+        "sign_index": 5,
+        "degree_in_sign": 19.354953,
+        "is_retrograde": true,
+        "speed": -0.005866
+      },
+      "Rahu": {
+        "longitude": 204.956906,
+        "sign_index": 6,
+        "degree_in_sign": 24.956906,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 24.956906,
+        "sign_index": 0,
+        "degree_in_sign": 24.956906,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

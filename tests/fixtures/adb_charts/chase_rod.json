@@ -1,0 +1,111 @@
+{
+  "adb_id": 5944,
+  "name": "Chase, Rod",
+  "given_name": "Rod Chase",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2424209.711806,
+    "year": 1925,
+    "month": 2,
+    "day": 28,
+    "calendar": "g",
+    "time": "00:05",
+    "time_type": "s",
+    "hour": 0.083333,
+    "time_unknown": false,
+    "place": "Wilmington",
+    "country": "North Carolina",
+    "lat": 34.233333,
+    "lon": -77.95
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chase,_Rod",
+  "source_notes": "Birth data from Ed Dearborn file.\\n\\nDeath data from obituary, ''The Greenville News'', 30 July 2015, page A8.\\n",
+  "categories": [
+    "Traits : Personality : Humorous, Witty",
+    "Personal : Religion/Spirituality : Conversion/ Born again",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 9.039923,
+    "lagna": 189.039923,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.811834,
+    "jd_ut": 2424209.711806,
+    "planets": {
+      "Sun": {
+        "longitude": 316.306125,
+        "sign_index": 10,
+        "degree_in_sign": 16.306125,
+        "is_retrograde": false,
+        "speed": 1.004032
+      },
+      "Moon": {
+        "longitude": 19.664506,
+        "sign_index": 0,
+        "degree_in_sign": 19.664506,
+        "is_retrograde": false,
+        "speed": 14.208956
+      },
+      "Mars": {
+        "longitude": 21.850289,
+        "sign_index": 0,
+        "degree_in_sign": 21.850289,
+        "is_retrograde": false,
+        "speed": 0.644805
+      },
+      "Mercury": {
+        "longitude": 311.699907,
+        "sign_index": 10,
+        "degree_in_sign": 11.699907,
+        "is_retrograde": false,
+        "speed": 1.818635
+      },
+      "Jupiter": {
+        "longitude": 262.611265,
+        "sign_index": 8,
+        "degree_in_sign": 22.611265,
+        "is_retrograde": false,
+        "speed": 0.178841
+      },
+      "Venus": {
+        "longitude": 302.451003,
+        "sign_index": 10,
+        "degree_in_sign": 2.451003,
+        "is_retrograde": false,
+        "speed": 1.246811
+      },
+      "Saturn": {
+        "longitude": 201.474428,
+        "sign_index": 6,
+        "degree_in_sign": 21.474428,
+        "is_retrograde": true,
+        "speed": -0.010413
+      },
+      "Rahu": {
+        "longitude": 109.74033,
+        "sign_index": 3,
+        "degree_in_sign": 19.74033,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 289.74033,
+        "sign_index": 9,
+        "degree_in_sign": 19.74033,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

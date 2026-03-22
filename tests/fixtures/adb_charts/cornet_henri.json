@@ -1,0 +1,110 @@
+{
+  "adb_id": 65866,
+  "name": "Cornet, Henri",
+  "given_name": "Henri Cornet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409393.203241,
+    "year": 1884,
+    "month": 8,
+    "day": 4,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Desvres",
+    "country": "France",
+    "lat": 50.666667,
+    "lon": 1.833333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornet,_Henri",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'Cyclisme' pdf file, p. 78.\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 12.524417,
+    "lagna": 222.524417,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.245418,
+    "jd_ut": 2409393.203241,
+    "planets": {
+      "Sun": {
+        "longitude": 110.387726,
+        "sign_index": 3,
+        "degree_in_sign": 20.387726,
+        "is_retrograde": false,
+        "speed": 0.957796
+      },
+      "Moon": {
+        "longitude": 264.595419,
+        "sign_index": 8,
+        "degree_in_sign": 24.595419,
+        "is_retrograde": false,
+        "speed": 11.47236
+      },
+      "Mars": {
+        "longitude": 162.533988,
+        "sign_index": 5,
+        "degree_in_sign": 12.533988,
+        "is_retrograde": false,
+        "speed": 0.619347
+      },
+      "Mercury": {
+        "longitude": 131.251049,
+        "sign_index": 4,
+        "degree_in_sign": 11.251049,
+        "is_retrograde": false,
+        "speed": 1.578916
+      },
+      "Jupiter": {
+        "longitude": 112.654319,
+        "sign_index": 3,
+        "degree_in_sign": 22.654319,
+        "is_retrograde": false,
+        "speed": 0.219533
+      },
+      "Venus": {
+        "longitude": 79.607619,
+        "sign_index": 2,
+        "degree_in_sign": 19.607619,
+        "is_retrograde": false,
+        "speed": 0.073358
+      },
+      "Saturn": {
+        "longitude": 58.709581,
+        "sign_index": 1,
+        "degree_in_sign": 28.709581,
+        "is_retrograde": false,
+        "speed": 0.096685
+      },
+      "Rahu": {
+        "longitude": 174.898292,
+        "sign_index": 5,
+        "degree_in_sign": 24.898292,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 354.898292,
+        "sign_index": 11,
+        "degree_in_sign": 24.898292,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

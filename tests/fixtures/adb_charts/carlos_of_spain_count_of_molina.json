@@ -1,0 +1,110 @@
+{
+  "adb_id": 66032,
+  "name": "Carlos of Spain, Count of Molina",
+  "given_name": "Count of Molina Carlos of Spain",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2374201.666481,
+    "year": 1788,
+    "month": 3,
+    "day": 29,
+    "calendar": "g",
+    "time": "03:45",
+    "time_type": "l",
+    "hour": 3.75,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlos_of_Spain,_Count_of_Molina",
+  "source_notes": "Eduardo Castellanos quotes [http://www.boe.es/datos/pdfs/BOE//1788/027/A00215-00216.pdf Official Gazette]\\n\"dıo Su Alteza felizmente a luz, a las cuatro menos cuarto\" (His Highness happily gave birth to three forty-five) \\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 5.352294,
+    "lagna": 275.352294,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.900496,
+    "jd_ut": 2374201.666481,
+    "planets": {
+      "Sun": {
+        "longitude": 348.22735,
+        "sign_index": 11,
+        "degree_in_sign": 18.22735,
+        "is_retrograde": false,
+        "speed": 0.986101
+      },
+      "Moon": {
+        "longitude": 252.899931,
+        "sign_index": 8,
+        "degree_in_sign": 12.899931,
+        "is_retrograde": false,
+        "speed": 8.120253
+      },
+      "Mars": {
+        "longitude": 86.286053,
+        "sign_index": 2,
+        "degree_in_sign": 26.286053,
+        "is_retrograde": false,
+        "speed": 0.36501
+      },
+      "Mercury": {
+        "longitude": 343.385758,
+        "sign_index": 11,
+        "degree_in_sign": 13.385758,
+        "is_retrograde": true,
+        "speed": -0.816295
+      },
+      "Jupiter": {
+        "longitude": 59.108349,
+        "sign_index": 1,
+        "degree_in_sign": 29.108349,
+        "is_retrograde": false,
+        "speed": 0.13718
+      },
+      "Venus": {
+        "longitude": 25.735113,
+        "sign_index": 0,
+        "degree_in_sign": 25.735113,
+        "is_retrograde": false,
+        "speed": 1.180131
+      },
+      "Saturn": {
+        "longitude": 314.89027,
+        "sign_index": 10,
+        "degree_in_sign": 14.89027,
+        "is_retrograde": false,
+        "speed": 0.108269
+      },
+      "Rahu": {
+        "longitude": 239.774127,
+        "sign_index": 7,
+        "degree_in_sign": 29.774127,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 59.774127,
+        "sign_index": 1,
+        "degree_in_sign": 29.774127,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

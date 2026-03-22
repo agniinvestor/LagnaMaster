@@ -1,0 +1,109 @@
+{
+  "adb_id": 55020,
+  "name": "Csincsak, Noah",
+  "given_name": "Noah Csincsak",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2455594.958333,
+    "year": 2011,
+    "month": 2,
+    "day": 2,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Frisco",
+    "country": "Colorado",
+    "lat": 39.566667,
+    "lon": -106.1
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Csincsak,_Noah",
+  "source_notes": "Sarah Van Sanden quotes news report\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Personal : Birth : Cesarean"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 3.247645,
+    "lagna": 213.247645,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 24.011986,
+    "jd_ut": 2455594.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 289.225806,
+        "sign_index": 9,
+        "degree_in_sign": 19.225806,
+        "is_retrograde": false,
+        "speed": 1.015105
+      },
+      "Moon": {
+        "longitude": 282.462552,
+        "sign_index": 9,
+        "degree_in_sign": 12.462552,
+        "is_retrograde": false,
+        "speed": 13.862436
+      },
+      "Mars": {
+        "longitude": 289.732391,
+        "sign_index": 9,
+        "degree_in_sign": 19.732391,
+        "is_retrograde": false,
+        "speed": 0.78797
+      },
+      "Mercury": {
+        "longitude": 273.71099,
+        "sign_index": 9,
+        "degree_in_sign": 3.71099,
+        "is_retrograde": false,
+        "speed": 1.534883
+      },
+      "Jupiter": {
+        "longitude": 338.024737,
+        "sign_index": 11,
+        "degree_in_sign": 8.024737,
+        "is_retrograde": false,
+        "speed": 0.198699
+      },
+      "Venus": {
+        "longitude": 243.957052,
+        "sign_index": 8,
+        "degree_in_sign": 3.957052,
+        "is_retrograde": false,
+        "speed": 1.129004
+      },
+      "Saturn": {
+        "longitude": 173.162938,
+        "sign_index": 5,
+        "degree_in_sign": 23.162938,
+        "is_retrograde": true,
+        "speed": -0.012928
+      },
+      "Rahu": {
+        "longitude": 246.572007,
+        "sign_index": 8,
+        "degree_in_sign": 6.572007,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 66.572007,
+        "sign_index": 2,
+        "degree_in_sign": 6.572007,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

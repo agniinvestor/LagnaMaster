@@ -1,0 +1,108 @@
+{
+  "adb_id": 101533,
+  "name": "Crane, Julia",
+  "given_name": "Julia Crane",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2449916.026389,
+    "year": 1995,
+    "month": 7,
+    "day": 17,
+    "calendar": "g",
+    "time": "08:38",
+    "time_type": "d",
+    "hour": 8.633333,
+    "time_unknown": false,
+    "place": "Burlington",
+    "country": "Vermont",
+    "lat": 44.483333,
+    "lon": -73.216667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crane,_Julia",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Beauty : Beauty Queen/ King"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 12.83121,
+    "lagna": 102.83121,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.794793,
+    "jd_ut": 2449916.026389,
+    "planets": {
+      "Sun": {
+        "longitude": 90.680397,
+        "sign_index": 3,
+        "degree_in_sign": 0.680397,
+        "is_retrograde": false,
+        "speed": 0.953783
+      },
+      "Moon": {
+        "longitude": 337.234808,
+        "sign_index": 11,
+        "degree_in_sign": 7.234808,
+        "is_retrograde": false,
+        "speed": 10.627597
+      },
+      "Mars": {
+        "longitude": 153.940141,
+        "sign_index": 5,
+        "degree_in_sign": 3.940141,
+        "is_retrograde": false,
+        "speed": 0.582171
+      },
+      "Mercury": {
+        "longitude": 78.682396,
+        "sign_index": 2,
+        "degree_in_sign": 18.682396,
+        "is_retrograde": false,
+        "speed": 1.987504
+      },
+      "Jupiter": {
+        "longitude": 222.132386,
+        "sign_index": 7,
+        "degree_in_sign": 12.132386,
+        "is_retrograde": true,
+        "speed": -0.04891
+      },
+      "Venus": {
+        "longitude": 81.204307,
+        "sign_index": 2,
+        "degree_in_sign": 21.204307,
+        "is_retrograde": false,
+        "speed": 1.226706
+      },
+      "Saturn": {
+        "longitude": 330.850727,
+        "sign_index": 11,
+        "degree_in_sign": 0.850727,
+        "is_retrograde": true,
+        "speed": -0.018515
+      },
+      "Rahu": {
+        "longitude": 187.510016,
+        "sign_index": 6,
+        "degree_in_sign": 7.510016,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 7.510016,
+        "sign_index": 0,
+        "degree_in_sign": 7.510016,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

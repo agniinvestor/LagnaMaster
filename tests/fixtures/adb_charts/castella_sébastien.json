@@ -1,0 +1,108 @@
+{
+  "adb_id": 57173,
+  "name": "Castella, Sébastien",
+  "given_name": "Sébastien Castella",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444635.486111,
+    "year": 1981,
+    "month": 1,
+    "day": 31,
+    "calendar": "g",
+    "time": "00:40",
+    "time_type": "s",
+    "hour": 0.666667,
+    "time_unknown": false,
+    "place": "Béziers",
+    "country": "France",
+    "lat": 43.35,
+    "lon": 3.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castella,_Sébastien",
+  "source_notes": "Collection Didier Geslain \\n",
+  "categories": [
+    "Vocation : Sports : Bullfighting"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 12.364516,
+    "lagna": 162.364516,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.592851,
+    "jd_ut": 2444635.486111,
+    "planets": {
+      "Sun": {
+        "longitude": 287.424336,
+        "sign_index": 9,
+        "degree_in_sign": 17.424336,
+        "is_retrograde": false,
+        "speed": 1.015382
+      },
+      "Moon": {
+        "longitude": 228.910365,
+        "sign_index": 7,
+        "degree_in_sign": 18.910365,
+        "is_retrograde": false,
+        "speed": 14.547293
+      },
+      "Mars": {
+        "longitude": 300.899893,
+        "sign_index": 10,
+        "degree_in_sign": 0.899893,
+        "is_retrograde": false,
+        "speed": 0.791228
+      },
+      "Mercury": {
+        "longitude": 305.521855,
+        "sign_index": 10,
+        "degree_in_sign": 5.521855,
+        "is_retrograde": false,
+        "speed": 1.225779
+      },
+      "Jupiter": {
+        "longitude": 166.738758,
+        "sign_index": 5,
+        "degree_in_sign": 16.738758,
+        "is_retrograde": true,
+        "speed": -0.019763
+      },
+      "Venus": {
+        "longitude": 271.066762,
+        "sign_index": 9,
+        "degree_in_sign": 1.066762,
+        "is_retrograde": false,
+        "speed": 1.251716
+      },
+      "Saturn": {
+        "longitude": 166.059565,
+        "sign_index": 5,
+        "degree_in_sign": 16.059565,
+        "is_retrograde": true,
+        "speed": -0.021885
+      },
+      "Rahu": {
+        "longitude": 107.336531,
+        "sign_index": 3,
+        "degree_in_sign": 17.336531,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 287.336531,
+        "sign_index": 9,
+        "degree_in_sign": 17.336531,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "adb_id": 3584,
+  "name": "Céline, Louis-Ferdinand",
+  "given_name": "Louis-Ferdinand Céline",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412976.160174,
+    "year": 1894,
+    "month": 5,
+    "day": 27,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Courbevoie",
+    "country": "France",
+    "lat": 48.9,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Céline,_Louis-Ferdinand",
+  "source_notes": "Gauquelin Vol 6/176   (4:00 PM Paris time)\\nSame data given by Vitoux  \"Celine, A Biography\"\\n",
+  "categories": [
+    "Traits : Personality : Bigot",
+    "Family : Relationship : Number of Marriages",
+    "Lifestyle : Social Life : Outdoors",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Business : Economist",
+    "Vocation : Medical : Physician",
+    "Vocation : Military : Wounded",
+    "Vocation : Writers : Fiction",
+    "Vocation : Misc. : Utilities/Phone/Cable/TV"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 10.710366,
+    "lagna": 160.710366,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.382381,
+    "jd_ut": 2412976.160174,
+    "planets": {
+      "Sun": {
+        "longitude": 43.907784,
+        "sign_index": 1,
+        "degree_in_sign": 13.907784,
+        "is_retrograde": false,
+        "speed": 0.959188
+      },
+      "Moon": {
+        "longitude": 311.424364,
+        "sign_index": 10,
+        "degree_in_sign": 11.424364,
+        "is_retrograde": false,
+        "speed": 15.207363
+      },
+      "Mars": {
+        "longitude": 319.868962,
+        "sign_index": 10,
+        "degree_in_sign": 19.868962,
+        "is_retrograde": false,
+        "speed": 0.685484
+      },
+      "Mercury": {
+        "longitude": 52.392807,
+        "sign_index": 1,
+        "degree_in_sign": 22.392807,
+        "is_retrograde": false,
+        "speed": 2.117913
+      },
+      "Jupiter": {
+        "longitude": 49.661286,
+        "sign_index": 1,
+        "degree_in_sign": 19.661286,
+        "is_retrograde": false,
+        "speed": 0.232012
+      },
+      "Venus": {
+        "longitude": 0.177347,
+        "sign_index": 0,
+        "degree_in_sign": 0.177347,
+        "is_retrograde": false,
+        "speed": 1.099281
+      },
+      "Saturn": {
+        "longitude": 176.524326,
+        "sign_index": 5,
+        "degree_in_sign": 26.524326,
+        "is_retrograde": true,
+        "speed": -0.039259
+      },
+      "Rahu": {
+        "longitude": 345.029817,
+        "sign_index": 11,
+        "degree_in_sign": 15.029817,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 165.029817,
+        "sign_index": 5,
+        "degree_in_sign": 15.029817,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

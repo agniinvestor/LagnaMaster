@@ -1,0 +1,109 @@
+{
+  "adb_id": 80975,
+  "name": "Cantraine, François-Joseph",
+  "given_name": "François-Joseph Cantraine",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2379195.573102,
+    "year": 1801,
+    "month": 12,
+    "day": 1,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Ellezelles",
+    "country": "Belgium",
+    "lat": 50.733333,
+    "lon": 3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantraine,_François-Joseph",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Biology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.5377,
+    "lagna": 144.5377,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.091315,
+    "jd_ut": 2379195.573102,
+    "planets": {
+      "Sun": {
+        "longitude": 227.366359,
+        "sign_index": 7,
+        "degree_in_sign": 17.366359,
+        "is_retrograde": false,
+        "speed": 1.014768
+      },
+      "Moon": {
+        "longitude": 166.981602,
+        "sign_index": 5,
+        "degree_in_sign": 16.981602,
+        "is_retrograde": false,
+        "speed": 12.683124
+      },
+      "Mars": {
+        "longitude": 215.242389,
+        "sign_index": 7,
+        "degree_in_sign": 5.242389,
+        "is_retrograde": false,
+        "speed": 0.706555
+      },
+      "Mercury": {
+        "longitude": 214.687021,
+        "sign_index": 7,
+        "degree_in_sign": 4.687021,
+        "is_retrograde": true,
+        "speed": -0.666826
+      },
+      "Jupiter": {
+        "longitude": 133.931652,
+        "sign_index": 4,
+        "degree_in_sign": 13.931652,
+        "is_retrograde": false,
+        "speed": 0.06538
+      },
+      "Venus": {
+        "longitude": 201.807267,
+        "sign_index": 6,
+        "degree_in_sign": 21.807267,
+        "is_retrograde": false,
+        "speed": 1.246587
+      },
+      "Saturn": {
+        "longitude": 136.142314,
+        "sign_index": 4,
+        "degree_in_sign": 16.142314,
+        "is_retrograde": false,
+        "speed": 0.032221
+      },
+      "Rahu": {
+        "longitude": 335.135989,
+        "sign_index": 11,
+        "degree_in_sign": 5.135989,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 155.135989,
+        "sign_index": 5,
+        "degree_in_sign": 5.135989,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

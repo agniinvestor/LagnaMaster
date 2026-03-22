@@ -1,0 +1,114 @@
+{
+  "adb_id": 88018,
+  "name": "Coles, Charles",
+  "given_name": "Charles Coles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419128.833333,
+    "year": 1911,
+    "month": 4,
+    "day": 2,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coles,_Charles",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Diagnoses : Major Diseases : Stroke",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Dancer/ Teacher",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Public Service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 20.071129,
+    "lagna": 260.071129,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.617587,
+    "jd_ut": 2419128.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 348.852152,
+        "sign_index": 11,
+        "degree_in_sign": 18.852152,
+        "is_retrograde": false,
+        "speed": 0.986331
+      },
+      "Moon": {
+        "longitude": 26.475003,
+        "sign_index": 0,
+        "degree_in_sign": 26.475003,
+        "is_retrograde": false,
+        "speed": 19.024341
+      },
+      "Mars": {
+        "longitude": 291.721826,
+        "sign_index": 9,
+        "degree_in_sign": 21.721826,
+        "is_retrograde": false,
+        "speed": 0.744022
+      },
+      "Mercury": {
+        "longitude": 1.799436,
+        "sign_index": 0,
+        "degree_in_sign": 1.799436,
+        "is_retrograde": false,
+        "speed": 1.904942
+      },
+      "Jupiter": {
+        "longitude": 200.39736,
+        "sign_index": 6,
+        "degree_in_sign": 20.39736,
+        "is_retrograde": true,
+        "speed": -0.092075
+      },
+      "Venus": {
+        "longitude": 18.767208,
+        "sign_index": 0,
+        "degree_in_sign": 18.767208,
+        "is_retrograde": false,
+        "speed": 1.212983
+      },
+      "Saturn": {
+        "longitude": 13.49269,
+        "sign_index": 0,
+        "degree_in_sign": 13.49269,
+        "is_retrograde": false,
+        "speed": 0.120682
+      },
+      "Rahu": {
+        "longitude": 18.986705,
+        "sign_index": 0,
+        "degree_in_sign": 18.986705,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 198.986705,
+        "sign_index": 6,
+        "degree_in_sign": 18.986705,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

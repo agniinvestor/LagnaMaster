@@ -1,0 +1,108 @@
+{
+  "adb_id": 67677,
+  "name": "Campbell, Eddie",
+  "given_name": "Eddie Campbell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435329.763889,
+    "year": 1955,
+    "month": 8,
+    "day": 10,
+    "calendar": "g",
+    "time": "07:20",
+    "time_type": "d",
+    "hour": 7.333333,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campbell,_Eddie",
+  "source_notes": "Sy Scholfield requested the data from Caroline Gerard who quotes birth certificate, June 2015. \\n",
+  "categories": [
+    "Vocation : Art : Cartoonist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 16.187532,
+    "lagna": 106.187532,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.237006,
+    "jd_ut": 2435329.763889,
+    "planets": {
+      "Sun": {
+        "longitude": 113.615367,
+        "sign_index": 3,
+        "degree_in_sign": 23.615367,
+        "is_retrograde": false,
+        "speed": 0.959015
+      },
+      "Moon": {
+        "longitude": 12.323547,
+        "sign_index": 0,
+        "degree_in_sign": 12.323547,
+        "is_retrograde": false,
+        "speed": 10.768521
+      },
+      "Mars": {
+        "longitude": 115.832945,
+        "sign_index": 3,
+        "degree_in_sign": 25.832945,
+        "is_retrograde": false,
+        "speed": 0.636814
+      },
+      "Mercury": {
+        "longitude": 118.483886,
+        "sign_index": 3,
+        "degree_in_sign": 28.483886,
+        "is_retrograde": false,
+        "speed": 1.980876
+      },
+      "Jupiter": {
+        "longitude": 109.164065,
+        "sign_index": 3,
+        "degree_in_sign": 19.164065,
+        "is_retrograde": false,
+        "speed": 0.220049
+      },
+      "Venus": {
+        "longitude": 107.567474,
+        "sign_index": 3,
+        "degree_in_sign": 17.567474,
+        "is_retrograde": false,
+        "speed": 1.233448
+      },
+      "Saturn": {
+        "longitude": 201.648742,
+        "sign_index": 6,
+        "degree_in_sign": 21.648742,
+        "is_retrograde": false,
+        "speed": 0.035144
+      },
+      "Rahu": {
+        "longitude": 240.465762,
+        "sign_index": 8,
+        "degree_in_sign": 0.465762,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 60.465762,
+        "sign_index": 2,
+        "degree_in_sign": 0.465762,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

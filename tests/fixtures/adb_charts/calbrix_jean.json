@@ -1,0 +1,109 @@
+{
+  "adb_id": 69144,
+  "name": "Calbrix, Jean",
+  "given_name": "Jean Calbrix",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429629.631944,
+    "year": 1940,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "03:10",
+    "time_type": "s",
+    "hour": 3.166667,
+    "time_unknown": false,
+    "place": "Rouen",
+    "country": "France",
+    "lat": 49.433333,
+    "lon": 1.083333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calbrix,_Jean",
+  "source_notes": "Didier Geslain archive, 'romans noirs (religion3)' pdf file, p. 30.\\n",
+  "categories": [
+    "Vocation : Writers : Detective/ Mystery",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 25.845619,
+    "lagna": 175.845619,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.019056,
+    "jd_ut": 2429629.631944,
+    "planets": {
+      "Sun": {
+        "longitude": 256.532056,
+        "sign_index": 8,
+        "degree_in_sign": 16.532056,
+        "is_retrograde": false,
+        "speed": 1.01915
+      },
+      "Moon": {
+        "longitude": 153.093532,
+        "sign_index": 5,
+        "degree_in_sign": 3.093532,
+        "is_retrograde": false,
+        "speed": 10.985371
+      },
+      "Mars": {
+        "longitude": 335.031974,
+        "sign_index": 11,
+        "degree_in_sign": 5.031974,
+        "is_retrograde": false,
+        "speed": 0.677354
+      },
+      "Mercury": {
+        "longitude": 239.338058,
+        "sign_index": 7,
+        "degree_in_sign": 29.338058,
+        "is_retrograde": false,
+        "speed": 1.443993
+      },
+      "Jupiter": {
+        "longitude": 338.147709,
+        "sign_index": 11,
+        "degree_in_sign": 8.147709,
+        "is_retrograde": false,
+        "speed": 0.118309
+      },
+      "Venus": {
+        "longitude": 285.438713,
+        "sign_index": 9,
+        "degree_in_sign": 15.438713,
+        "is_retrograde": false,
+        "speed": 1.238595
+      },
+      "Saturn": {
+        "longitude": 1.409733,
+        "sign_index": 0,
+        "degree_in_sign": 1.409733,
+        "is_retrograde": false,
+        "speed": 0.007485
+      },
+      "Rahu": {
+        "longitude": 182.527509,
+        "sign_index": 6,
+        "degree_in_sign": 2.527509,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 2.527509,
+        "sign_index": 0,
+        "degree_in_sign": 2.527509,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

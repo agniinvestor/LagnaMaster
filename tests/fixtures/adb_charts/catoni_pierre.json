@@ -1,0 +1,108 @@
+{
+  "adb_id": 51917,
+  "name": "Catoni, Pierre",
+  "given_name": "Pierre Catoni",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429320.833333,
+    "year": 1939,
+    "month": 2,
+    "day": 26,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Catoni,_Pierre",
+  "source_notes": "Ed Steinbrecher collection: Lescaut quotes birth record\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 3.356811,
+    "lagna": 333.356811,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.007249,
+    "jd_ut": 2429320.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 313.822088,
+        "sign_index": 10,
+        "degree_in_sign": 13.822088,
+        "is_retrograde": false,
+        "speed": 1.005213
+      },
+      "Moon": {
+        "longitude": 34.091558,
+        "sign_index": 1,
+        "degree_in_sign": 4.091558,
+        "is_retrograde": false,
+        "speed": 16.419573
+      },
+      "Mars": {
+        "longitude": 233.76181,
+        "sign_index": 7,
+        "degree_in_sign": 23.76181,
+        "is_retrograde": false,
+        "speed": 0.588926
+      },
+      "Mercury": {
+        "longitude": 320.061391,
+        "sign_index": 10,
+        "degree_in_sign": 20.061391,
+        "is_retrograde": false,
+        "speed": 1.900384
+      },
+      "Jupiter": {
+        "longitude": 320.047101,
+        "sign_index": 10,
+        "degree_in_sign": 20.047101,
+        "is_retrograde": false,
+        "speed": 0.241258
+      },
+      "Venus": {
+        "longitude": 268.793372,
+        "sign_index": 8,
+        "degree_in_sign": 28.793372,
+        "is_retrograde": false,
+        "speed": 1.125283
+      },
+      "Saturn": {
+        "longitude": 352.65187,
+        "sign_index": 11,
+        "degree_in_sign": 22.65187,
+        "is_retrograde": false,
+        "speed": 0.107818
+      },
+      "Rahu": {
+        "longitude": 198.891386,
+        "sign_index": 6,
+        "degree_in_sign": 18.891386,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.891386,
+        "sign_index": 0,
+        "degree_in_sign": 18.891386,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

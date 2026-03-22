@@ -1,0 +1,112 @@
+{
+  "adb_id": 63440,
+  "name": "Contet, Henri",
+  "given_name": "Henri Contet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416608.95184,
+    "year": 1904,
+    "month": 5,
+    "day": 8,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Anost",
+    "country": "France",
+    "lat": 47.078056,
+    "lon": 4.100278
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Contet,_Henri",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'chanteurs' pdf file, p. 54.\\n",
+  "categories": [
+    "Vocation : Engineer : Other Engineer",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Critic"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 2.544413,
+    "lagna": 92.544413,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.521254,
+    "jd_ut": 2416608.95184,
+    "planets": {
+      "Sun": {
+        "longitude": 24.878784,
+        "sign_index": 0,
+        "degree_in_sign": 24.878784,
+        "is_retrograde": false,
+        "speed": 0.966725
+      },
+      "Moon": {
+        "longitude": 304.539787,
+        "sign_index": 10,
+        "degree_in_sign": 4.539787,
+        "is_retrograde": false,
+        "speed": 10.453587
+      },
+      "Mars": {
+        "longitude": 30.580267,
+        "sign_index": 1,
+        "degree_in_sign": 0.580267,
+        "is_retrograde": false,
+        "speed": 0.715376
+      },
+      "Mercury": {
+        "longitude": 32.439366,
+        "sign_index": 1,
+        "degree_in_sign": 2.439366,
+        "is_retrograde": true,
+        "speed": -0.44344
+      },
+      "Jupiter": {
+        "longitude": 353.70275,
+        "sign_index": 11,
+        "degree_in_sign": 23.70275,
+        "is_retrograde": false,
+        "speed": 0.22356
+      },
+      "Venus": {
+        "longitude": 8.499385,
+        "sign_index": 0,
+        "degree_in_sign": 8.499385,
+        "is_retrograde": false,
+        "speed": 1.22544
+      },
+      "Saturn": {
+        "longitude": 298.036854,
+        "sign_index": 9,
+        "degree_in_sign": 28.036854,
+        "is_retrograde": false,
+        "speed": 0.037832
+      },
+      "Rahu": {
+        "longitude": 152.520523,
+        "sign_index": 5,
+        "degree_in_sign": 2.520523,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 332.520523,
+        "sign_index": 11,
+        "degree_in_sign": 2.520523,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

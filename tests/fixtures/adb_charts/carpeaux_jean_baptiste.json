@@ -1,0 +1,108 @@
+{
+  "adb_id": 57255,
+  "name": "Carpeaux, Jean-Baptiste",
+  "given_name": "Jean-Baptiste Carpeaux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388488.198519,
+    "year": 1827,
+    "month": 5,
+    "day": 11,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Valenciennes",
+    "country": "France",
+    "lat": 50.35,
+    "lon": 3.533333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpeaux,_Jean-Baptiste",
+  "source_notes": "Collection Didier Geslain\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 11.145544,
+    "lagna": 161.145544,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.446419,
+    "jd_ut": 2388488.198519,
+    "planets": {
+      "Sun": {
+        "longitude": 28.725201,
+        "sign_index": 0,
+        "degree_in_sign": 28.725201,
+        "is_retrograde": false,
+        "speed": 0.964388
+      },
+      "Moon": {
+        "longitude": 214.393157,
+        "sign_index": 7,
+        "degree_in_sign": 4.393157,
+        "is_retrograde": false,
+        "speed": 16.555638
+      },
+      "Mars": {
+        "longitude": 46.620848,
+        "sign_index": 1,
+        "degree_in_sign": 16.620848,
+        "is_retrograde": false,
+        "speed": 0.685737
+      },
+      "Mercury": {
+        "longitude": 3.735132,
+        "sign_index": 0,
+        "degree_in_sign": 3.735132,
+        "is_retrograde": false,
+        "speed": 1.325182
+      },
+      "Jupiter": {
+        "longitude": 163.705278,
+        "sign_index": 5,
+        "degree_in_sign": 13.705278,
+        "is_retrograde": true,
+        "speed": -0.061803
+      },
+      "Venus": {
+        "longitude": 351.001127,
+        "sign_index": 11,
+        "degree_in_sign": 21.001127,
+        "is_retrograde": false,
+        "speed": 1.172698
+      },
+      "Saturn": {
+        "longitude": 71.938613,
+        "sign_index": 2,
+        "degree_in_sign": 11.938613,
+        "is_retrograde": false,
+        "speed": 0.106577
+      },
+      "Rahu": {
+        "longitude": 202.699425,
+        "sign_index": 6,
+        "degree_in_sign": 22.699425,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 22.699425,
+        "sign_index": 0,
+        "degree_in_sign": 22.699425,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

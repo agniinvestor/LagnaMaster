@@ -1,0 +1,108 @@
+{
+  "adb_id": 52427,
+  "name": "Cimone, Nigel",
+  "given_name": "Nigel Cimone",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2437486.002083,
+    "year": 1961,
+    "month": 7,
+    "day": 5,
+    "calendar": "g",
+    "time": "08:03",
+    "time_type": "d",
+    "hour": 8.05,
+    "time_unknown": false,
+    "place": "Lancaster",
+    "country": "Pennsylvania",
+    "lat": 40.033333,
+    "lon": -76.3
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cimone,_Nigel",
+  "source_notes": "Steinbrecher quotes Michael S. Tierney from her personally 9-91\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 24.026162,
+    "lagna": 84.026162,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.319456,
+    "jd_ut": 2437486.002083,
+    "planets": {
+      "Sun": {
+        "longitude": 79.892723,
+        "sign_index": 2,
+        "degree_in_sign": 19.892723,
+        "is_retrograde": false,
+        "speed": 0.953354
+      },
+      "Moon": {
+        "longitude": 354.0451,
+        "sign_index": 11,
+        "degree_in_sign": 24.0451,
+        "is_retrograde": false,
+        "speed": 9.422798
+      },
+      "Mars": {
+        "longitude": 130.535139,
+        "sign_index": 4,
+        "degree_in_sign": 10.535139,
+        "is_retrograde": false,
+        "speed": 0.594867
+      },
+      "Mercury": {
+        "longitude": 68.474597,
+        "sign_index": 2,
+        "degree_in_sign": 8.474597,
+        "is_retrograde": true,
+        "speed": -0.260063
+      },
+      "Jupiter": {
+        "longitude": 281.379011,
+        "sign_index": 9,
+        "degree_in_sign": 11.379011,
+        "is_retrograde": true,
+        "speed": -0.11125
+      },
+      "Venus": {
+        "longitude": 34.921901,
+        "sign_index": 1,
+        "degree_in_sign": 4.921901,
+        "is_retrograde": false,
+        "speed": 1.04024
+      },
+      "Saturn": {
+        "longitude": 274.239295,
+        "sign_index": 9,
+        "degree_in_sign": 4.239295,
+        "is_retrograde": true,
+        "speed": -0.07031
+      },
+      "Rahu": {
+        "longitude": 126.202276,
+        "sign_index": 4,
+        "degree_in_sign": 6.202276,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.202276,
+        "sign_index": 10,
+        "degree_in_sign": 6.202276,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

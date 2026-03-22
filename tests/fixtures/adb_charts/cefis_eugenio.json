@@ -1,0 +1,109 @@
+{
+  "adb_id": 53433,
+  "name": "Cefis, Eugenio",
+  "given_name": "Eugenio Cefis",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422892.25,
+    "year": 1921,
+    "month": 7,
+    "day": 21,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Cividale del Friuli",
+    "country": "Italy",
+    "lat": 46.1,
+    "lon": 13.416667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cefis,_Eugenio",
+  "source_notes": "Ed Steinbrecher collection: Bordoni/1/499 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Business : Banker/ Financier",
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 29.969838,
+    "lagna": 239.969838,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.761465,
+    "jd_ut": 2422892.25,
+    "planets": {
+      "Sun": {
+        "longitude": 95.625357,
+        "sign_index": 3,
+        "degree_in_sign": 5.625357,
+        "is_retrograde": false,
+        "speed": 0.954379
+      },
+      "Moon": {
+        "longitude": 295.104332,
+        "sign_index": 9,
+        "degree_in_sign": 25.104332,
+        "is_retrograde": false,
+        "speed": 12.000771
+      },
+      "Mars": {
+        "longitude": 88.98046,
+        "sign_index": 2,
+        "degree_in_sign": 28.98046,
+        "is_retrograde": false,
+        "speed": 0.652335
+      },
+      "Mercury": {
+        "longitude": 78.6817,
+        "sign_index": 2,
+        "degree_in_sign": 18.6817,
+        "is_retrograde": false,
+        "speed": 0.238044
+      },
+      "Jupiter": {
+        "longitude": 143.783136,
+        "sign_index": 4,
+        "degree_in_sign": 23.783136,
+        "is_retrograde": false,
+        "speed": 0.174863
+      },
+      "Venus": {
+        "longitude": 51.11593,
+        "sign_index": 1,
+        "degree_in_sign": 21.11593,
+        "is_retrograde": false,
+        "speed": 1.058112
+      },
+      "Saturn": {
+        "longitude": 148.245736,
+        "sign_index": 4,
+        "degree_in_sign": 28.245736,
+        "is_retrograde": false,
+        "speed": 0.090987
+      },
+      "Rahu": {
+        "longitude": 179.555378,
+        "sign_index": 5,
+        "degree_in_sign": 29.555378,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 359.555378,
+        "sign_index": 11,
+        "degree_in_sign": 29.555378,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

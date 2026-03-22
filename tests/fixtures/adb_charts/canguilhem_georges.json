@@ -1,0 +1,109 @@
+{
+  "adb_id": 53939,
+  "name": "Canguilhem, Georges",
+  "given_name": "Georges Canguilhem",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416635.868507,
+    "year": 1904,
+    "month": 6,
+    "day": 4,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Castelnaudary",
+    "country": "France",
+    "lat": 43.316667,
+    "lon": 1.95
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canguilhem,_Georges",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'Philosophes' pdf file, p. 21.\\nSteinbrecher collection: Cadran 24/11-95 quotes birth certificate\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Philosopher/ Humanist",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 26.563243,
+    "lagna": 86.563243,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.522283,
+    "jd_ut": 2416635.868507,
+    "planets": {
+      "Sun": {
+        "longitude": 50.757316,
+        "sign_index": 1,
+        "degree_in_sign": 20.757316,
+        "is_retrograde": false,
+        "speed": 0.95692
+      },
+      "Moon": {
+        "longitude": 299.586435,
+        "sign_index": 9,
+        "degree_in_sign": 29.586435,
+        "is_retrograde": false,
+        "speed": 10.387406
+      },
+      "Mars": {
+        "longitude": 49.535768,
+        "sign_index": 1,
+        "degree_in_sign": 19.535768,
+        "is_retrograde": false,
+        "speed": 0.693307
+      },
+      "Mercury": {
+        "longitude": 27.919238,
+        "sign_index": 0,
+        "degree_in_sign": 27.919238,
+        "is_retrograde": false,
+        "speed": 0.659483
+      },
+      "Jupiter": {
+        "longitude": 359.332008,
+        "sign_index": 11,
+        "degree_in_sign": 29.332008,
+        "is_retrograde": false,
+        "speed": 0.192051
+      },
+      "Venus": {
+        "longitude": 41.480968,
+        "sign_index": 1,
+        "degree_in_sign": 11.480968,
+        "is_retrograde": false,
+        "speed": 1.225639
+      },
+      "Saturn": {
+        "longitude": 298.474766,
+        "sign_index": 9,
+        "degree_in_sign": 28.474766,
+        "is_retrograde": true,
+        "speed": -0.005581
+      },
+      "Rahu": {
+        "longitude": 151.094152,
+        "sign_index": 5,
+        "degree_in_sign": 1.094152,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 331.094152,
+        "sign_index": 11,
+        "degree_in_sign": 1.094152,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

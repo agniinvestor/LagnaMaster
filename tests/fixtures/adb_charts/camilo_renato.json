@@ -1,0 +1,109 @@
+{
+  "adb_id": 100198,
+  "name": "Camilo, Renato",
+  "given_name": "Renato Camilo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2449253.854167,
+    "year": 1993,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Recife (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.053889,
+    "lon": -34.881111
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camilo,_Renato",
+  "source_notes": "Birth entry from civil registry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.052333,
+    "lagna": 138.052333,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.769469,
+    "jd_ut": 2449253.854167,
+    "planets": {
+      "Sun": {
+        "longitude": 156.557538,
+        "sign_index": 5,
+        "degree_in_sign": 6.557538,
+        "is_retrograde": false,
+        "speed": 0.978951
+      },
+      "Moon": {
+        "longitude": 253.058936,
+        "sign_index": 8,
+        "degree_in_sign": 13.058936,
+        "is_retrograde": false,
+        "speed": 18.592095
+      },
+      "Mars": {
+        "longitude": 183.711752,
+        "sign_index": 6,
+        "degree_in_sign": 3.711752,
+        "is_retrograde": false,
+        "speed": 0.670538
+      },
+      "Mercury": {
+        "longitude": 175.182521,
+        "sign_index": 5,
+        "degree_in_sign": 25.182521,
+        "is_retrograde": false,
+        "speed": 1.493943
+      },
+      "Jupiter": {
+        "longitude": 175.889915,
+        "sign_index": 5,
+        "degree_in_sign": 25.889915,
+        "is_retrograde": false,
+        "speed": 0.210302
+      },
+      "Venus": {
+        "longitude": 128.364903,
+        "sign_index": 4,
+        "degree_in_sign": 8.364903,
+        "is_retrograde": false,
+        "speed": 1.219231
+      },
+      "Saturn": {
+        "longitude": 300.842318,
+        "sign_index": 10,
+        "degree_in_sign": 0.842318,
+        "is_retrograde": true,
+        "speed": -0.053515
+      },
+      "Rahu": {
+        "longitude": 222.599858,
+        "sign_index": 7,
+        "degree_in_sign": 12.599858,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 42.599858,
+        "sign_index": 1,
+        "degree_in_sign": 12.599858,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

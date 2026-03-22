@@ -1,0 +1,109 @@
+{
+  "adb_id": 54604,
+  "name": "Channel, Ian",
+  "given_name": "Ian Channel",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2427046.048611,
+    "year": 1932,
+    "month": 12,
+    "day": 4,
+    "calendar": "g",
+    "time": "13:10",
+    "time_type": "s",
+    "hour": 13.166667,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "pis",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Channel,_Ian",
+  "source_notes": "Sy Scholfield quotes from Channel's autobiographical book, \"My Life as a Miracle\" (Canterbury UP, 1998), p. 7.\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Occult Fields : Other Occult Fields"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 15.281043,
+    "lagna": 315.281043,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.920275,
+    "jd_ut": 2427046.048611,
+    "planets": {
+      "Sun": {
+        "longitude": 229.280508,
+        "sign_index": 7,
+        "degree_in_sign": 19.280508,
+        "is_retrograde": false,
+        "speed": 1.014992
+      },
+      "Moon": {
+        "longitude": 315.348407,
+        "sign_index": 10,
+        "degree_in_sign": 15.348407,
+        "is_retrograde": false,
+        "speed": 11.33821
+      },
+      "Mars": {
+        "longitude": 136.329912,
+        "sign_index": 4,
+        "degree_in_sign": 16.329912,
+        "is_retrograde": false,
+        "speed": 0.402327
+      },
+      "Mercury": {
+        "longitude": 229.641438,
+        "sign_index": 7,
+        "degree_in_sign": 19.641438,
+        "is_retrograde": true,
+        "speed": -1.383853
+      },
+      "Jupiter": {
+        "longitude": 148.51086,
+        "sign_index": 4,
+        "degree_in_sign": 28.51086,
+        "is_retrograde": false,
+        "speed": 0.102034
+      },
+      "Venus": {
+        "longitude": 196.340402,
+        "sign_index": 6,
+        "degree_in_sign": 16.340402,
+        "is_retrograde": false,
+        "speed": 1.230695
+      },
+      "Saturn": {
+        "longitude": 278.282687,
+        "sign_index": 9,
+        "degree_in_sign": 8.282687,
+        "is_retrograde": false,
+        "speed": 0.091303
+      },
+      "Rahu": {
+        "longitude": 319.436944,
+        "sign_index": 10,
+        "degree_in_sign": 19.436944,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 139.436944,
+        "sign_index": 4,
+        "degree_in_sign": 19.436944,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

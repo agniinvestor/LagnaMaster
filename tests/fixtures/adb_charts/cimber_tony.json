@@ -1,0 +1,108 @@
+{
+  "adb_id": 51634,
+  "name": "Cimber, Tony",
+  "given_name": "Tony Cimber",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439051.179167,
+    "year": 1965,
+    "month": 10,
+    "day": 17,
+    "calendar": "g",
+    "time": "09:18",
+    "time_type": "d",
+    "hour": 9.3,
+    "time_unknown": false,
+    "place": "Hollywood",
+    "country": "California",
+    "lat": 34.1,
+    "lon": -118.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cimber,_Tony",
+  "source_notes": "Steinbrecher Collection: birth certificate in hand\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.935121,
+    "lagna": 184.935121,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.379306,
+    "jd_ut": 2439051.179167,
+    "planets": {
+      "Sun": {
+        "longitude": 180.704352,
+        "sign_index": 6,
+        "degree_in_sign": 0.704352,
+        "is_retrograde": false,
+        "speed": 0.992752
+      },
+      "Moon": {
+        "longitude": 88.778393,
+        "sign_index": 2,
+        "degree_in_sign": 28.778393,
+        "is_retrograde": false,
+        "speed": 10.428653
+      },
+      "Mars": {
+        "longitude": 226.192788,
+        "sign_index": 7,
+        "degree_in_sign": 16.192788,
+        "is_retrograde": false,
+        "speed": 0.722978
+      },
+      "Mercury": {
+        "longitude": 194.095025,
+        "sign_index": 6,
+        "degree_in_sign": 14.095025,
+        "is_retrograde": false,
+        "speed": 1.532155
+      },
+      "Jupiter": {
+        "longitude": 67.934006,
+        "sign_index": 2,
+        "degree_in_sign": 7.934006,
+        "is_retrograde": false,
+        "speed": 0.007134
+      },
+      "Venus": {
+        "longitude": 225.655769,
+        "sign_index": 7,
+        "degree_in_sign": 15.655769,
+        "is_retrograde": false,
+        "speed": 1.122894
+      },
+      "Saturn": {
+        "longitude": 317.751514,
+        "sign_index": 10,
+        "degree_in_sign": 17.751514,
+        "is_retrograde": true,
+        "speed": -0.045034
+      },
+      "Rahu": {
+        "longitude": 43.260338,
+        "sign_index": 1,
+        "degree_in_sign": 13.260338,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 223.260338,
+        "sign_index": 7,
+        "degree_in_sign": 13.260338,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

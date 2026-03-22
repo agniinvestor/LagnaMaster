@@ -1,0 +1,111 @@
+{
+  "adb_id": 1692,
+  "name": "Clark, Dwight",
+  "given_name": "Dwight Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435846.934028,
+    "year": 1957,
+    "month": 1,
+    "day": 8,
+    "calendar": "g",
+    "time": "05:25",
+    "time_type": "s",
+    "hour": 5.416667,
+    "time_unknown": false,
+    "place": "Kinston",
+    "country": "USA",
+    "lat": 35.266667,
+    "lon": -77.583333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Dwight",
+  "source_notes": "B.R. in hand, Steinbrecher\\n",
+  "categories": [
+    "Lifestyle : Work : Hazardous work",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Sports : Football"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 3.244744,
+    "lagna": 213.244744,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.256781,
+    "jd_ut": 2435846.934028,
+    "planets": {
+      "Sun": {
+        "longitude": 264.637455,
+        "sign_index": 8,
+        "degree_in_sign": 24.637455,
+        "is_retrograde": false,
+        "speed": 1.019141
+      },
+      "Moon": {
+        "longitude": 344.634735,
+        "sign_index": 11,
+        "degree_in_sign": 14.634735,
+        "is_retrograde": false,
+        "speed": 16.387126
+      },
+      "Mars": {
+        "longitude": 354.70943,
+        "sign_index": 11,
+        "degree_in_sign": 24.70943,
+        "is_retrograde": false,
+        "speed": 0.583258
+      },
+      "Mercury": {
+        "longitude": 269.705529,
+        "sign_index": 8,
+        "degree_in_sign": 29.705529,
+        "is_retrograde": true,
+        "speed": -1.203802
+      },
+      "Jupiter": {
+        "longitude": 158.438324,
+        "sign_index": 5,
+        "degree_in_sign": 8.438324,
+        "is_retrograde": false,
+        "speed": 0.025129
+      },
+      "Venus": {
+        "longitude": 241.22402,
+        "sign_index": 8,
+        "degree_in_sign": 1.22402,
+        "is_retrograde": false,
+        "speed": 1.248854
+      },
+      "Saturn": {
+        "longitude": 226.819256,
+        "sign_index": 7,
+        "degree_in_sign": 16.819256,
+        "is_retrograde": false,
+        "speed": 0.101871
+      },
+      "Rahu": {
+        "longitude": 213.059854,
+        "sign_index": 7,
+        "degree_in_sign": 3.059854,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 33.059854,
+        "sign_index": 1,
+        "degree_in_sign": 3.059854,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

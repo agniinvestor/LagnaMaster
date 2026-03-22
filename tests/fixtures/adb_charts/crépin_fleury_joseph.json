@@ -1,0 +1,108 @@
+{
+  "adb_id": 67450,
+  "name": "Crépin, Fleury Joseph",
+  "given_name": "Fleury Joseph Crépin",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405928.075185,
+    "year": 1875,
+    "month": 2,
+    "day": 8,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Hénin Beaumont",
+    "country": "France",
+    "lat": 50.416667,
+    "lon": 2.933333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crépin,_Fleury_Joseph",
+  "source_notes": "Didier Geslain archive, 'sculpteurs' pdf file, p. 54.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 2.532139,
+    "lagna": 62.532139,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.112965,
+    "jd_ut": 2405928.075185,
+    "planets": {
+      "Sun": {
+        "longitude": 297.335484,
+        "sign_index": 9,
+        "degree_in_sign": 27.335484,
+        "is_retrograde": false,
+        "speed": 1.012341
+      },
+      "Moon": {
+        "longitude": 325.969268,
+        "sign_index": 10,
+        "degree_in_sign": 25.969268,
+        "is_retrograde": false,
+        "speed": 10.539316
+      },
+      "Mars": {
+        "longitude": 215.865079,
+        "sign_index": 7,
+        "degree_in_sign": 5.865079,
+        "is_retrograde": false,
+        "speed": 0.551357
+      },
+      "Mercury": {
+        "longitude": 313.884779,
+        "sign_index": 10,
+        "degree_in_sign": 13.884779,
+        "is_retrograde": false,
+        "speed": 1.514816
+      },
+      "Jupiter": {
+        "longitude": 189.478162,
+        "sign_index": 6,
+        "degree_in_sign": 9.478162,
+        "is_retrograde": false,
+        "speed": 0.021699
+      },
+      "Venus": {
+        "longitude": 250.988804,
+        "sign_index": 8,
+        "degree_in_sign": 10.988804,
+        "is_retrograde": false,
+        "speed": 0.930527
+      },
+      "Saturn": {
+        "longitude": 294.947882,
+        "sign_index": 9,
+        "degree_in_sign": 24.947882,
+        "is_retrograde": false,
+        "speed": 0.12015
+      },
+      "Rahu": {
+        "longitude": 358.522796,
+        "sign_index": 11,
+        "degree_in_sign": 28.522796,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 178.522796,
+        "sign_index": 5,
+        "degree_in_sign": 28.522796,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 81035,
+  "name": "Chatin, Gaspard Adolphe",
+  "given_name": "Gaspard Adolphe Chatin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2383577.734769,
+    "year": 1813,
+    "month": 11,
+    "day": 30,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Tullins",
+    "country": "France",
+    "lat": 45.3,
+    "lon": 5.483333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chatin,_Gaspard_Adolphe",
+  "source_notes": "Sy Scholfield submitted birth certificate (acte no. 80) from the online Isère archives. Grazia Bordoni's Science file quotes Gauquelin for same birth data but 10 AM. However the certificate states \"six [not 'dix'] heures du matin\" (six o'clock in the morning, not ten o'clock). The 's' in \"six\" is handwritten the same as the 's' in \"sexe\" and \"son\" while the 'd' in \"du\" and \"de\" is clearly written differently.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Physician",
+    "Vocation : Science : Biology",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 9.198247,
+    "lagna": 189.198247,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.258767,
+    "jd_ut": 2383577.734769,
+    "planets": {
+      "Sun": {
+        "longitude": 226.436827,
+        "sign_index": 7,
+        "degree_in_sign": 16.436827,
+        "is_retrograde": false,
+        "speed": 1.014327
+      },
+      "Moon": {
+        "longitude": 305.957294,
+        "sign_index": 10,
+        "degree_in_sign": 5.957294,
+        "is_retrograde": false,
+        "speed": 16.183027
+      },
+      "Mars": {
+        "longitude": 318.829842,
+        "sign_index": 10,
+        "degree_in_sign": 18.829842,
+        "is_retrograde": false,
+        "speed": 0.627409
+      },
+      "Mercury": {
+        "longitude": 246.912752,
+        "sign_index": 8,
+        "degree_in_sign": 6.912752,
+        "is_retrograde": false,
+        "speed": 0.534021
+      },
+      "Jupiter": {
+        "longitude": 137.828624,
+        "sign_index": 4,
+        "degree_in_sign": 17.828624,
+        "is_retrograde": false,
+        "speed": 0.079716
+      },
+      "Venus": {
+        "longitude": 271.341108,
+        "sign_index": 9,
+        "degree_in_sign": 1.341108,
+        "is_retrograde": false,
+        "speed": 1.146226
+      },
+      "Saturn": {
+        "longitude": 265.576075,
+        "sign_index": 8,
+        "degree_in_sign": 25.576075,
+        "is_retrograde": false,
+        "speed": 0.100469
+      },
+      "Rahu": {
+        "longitude": 102.91562,
+        "sign_index": 3,
+        "degree_in_sign": 12.91562,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 282.91562,
+        "sign_index": 9,
+        "degree_in_sign": 12.91562,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

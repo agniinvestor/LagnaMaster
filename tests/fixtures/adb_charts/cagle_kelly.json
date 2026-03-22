@@ -1,0 +1,112 @@
+{
+  "adb_id": 91853,
+  "name": "Cagle, Kelly",
+  "given_name": "Kelly Cagle",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2442282.651389,
+    "year": 1974,
+    "month": 8,
+    "day": 22,
+    "calendar": "g",
+    "time": "20:38",
+    "time_type": "s",
+    "hour": 20.633333,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cagle,_Kelly",
+  "source_notes": "Sy Scholfield provided copy of birth notice, ''Tucson Citizen'' (Tucson, Arizona), 30 August 1974, page 65, born at Tucson Medical Center. \\n",
+  "categories": [
+    "Traits : Body : Aerobic exercise",
+    "Traits : Body : Size",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 19.911436,
+    "lagna": 319.911436,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.502876,
+    "jd_ut": 2442282.651389,
+    "planets": {
+      "Sun": {
+        "longitude": 126.136999,
+        "sign_index": 4,
+        "degree_in_sign": 6.136999,
+        "is_retrograde": false,
+        "speed": 0.963848
+      },
+      "Moon": {
+        "longitude": 197.796624,
+        "sign_index": 6,
+        "degree_in_sign": 17.796624,
+        "is_retrograde": false,
+        "speed": 10.199808
+      },
+      "Mars": {
+        "longitude": 143.251739,
+        "sign_index": 4,
+        "degree_in_sign": 23.251739,
+        "is_retrograde": false,
+        "speed": 0.636536
+      },
+      "Mercury": {
+        "longitude": 131.848204,
+        "sign_index": 4,
+        "degree_in_sign": 11.848204,
+        "is_retrograde": false,
+        "speed": 1.901482
+      },
+      "Jupiter": {
+        "longitude": 321.144248,
+        "sign_index": 10,
+        "degree_in_sign": 21.144248,
+        "is_retrograde": true,
+        "speed": -0.123458
+      },
+      "Venus": {
+        "longitude": 106.464451,
+        "sign_index": 3,
+        "degree_in_sign": 16.464451,
+        "is_retrograde": false,
+        "speed": 1.224636
+      },
+      "Saturn": {
+        "longitude": 81.356458,
+        "sign_index": 2,
+        "degree_in_sign": 21.356458,
+        "is_retrograde": false,
+        "speed": 0.104956
+      },
+      "Rahu": {
+        "longitude": 232.018028,
+        "sign_index": 7,
+        "degree_in_sign": 22.018028,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 52.018028,
+        "sign_index": 1,
+        "degree_in_sign": 22.018028,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 71702,
+  "name": "Corman, Sandrine",
+  "given_name": "Sandrine Corman",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444341.736111,
+    "year": 1980,
+    "month": 4,
+    "day": 12,
+    "calendar": "g",
+    "time": "07:40",
+    "time_type": "d",
+    "hour": 7.666667,
+    "time_unknown": false,
+    "place": "Verviers",
+    "country": "Belgium",
+    "lat": 50.583333,
+    "lon": 5.866667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corman,_Sandrine",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_arts_medias-3.pdf]. \\n(Grazia Bordoni database, 'entertainment' file quotes DataSophia, data from birth certificate).\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Vocation : Beauty : Beauty Queen/ King",
+    "Vocation : Beauty : Model",
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 27.50218,
+    "lagna": 357.50218,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.581618,
+    "jd_ut": 2444341.736111,
+    "planets": {
+      "Sun": {
+        "longitude": 358.889498,
+        "sign_index": 11,
+        "degree_in_sign": 28.889498,
+        "is_retrograde": false,
+        "speed": 0.980674
+      },
+      "Moon": {
+        "longitude": 317.892205,
+        "sign_index": 10,
+        "degree_in_sign": 17.892205,
+        "is_retrograde": false,
+        "speed": 12.354338
+      },
+      "Mars": {
+        "longitude": 122.498464,
+        "sign_index": 4,
+        "degree_in_sign": 2.498464,
+        "is_retrograde": false,
+        "speed": 0.069363
+      },
+      "Mercury": {
+        "longitude": 333.039786,
+        "sign_index": 11,
+        "degree_in_sign": 3.039786,
+        "is_retrograde": false,
+        "speed": 1.354002
+      },
+      "Jupiter": {
+        "longitude": 126.971614,
+        "sign_index": 4,
+        "degree_in_sign": 6.971614,
+        "is_retrograde": true,
+        "speed": -0.043718
+      },
+      "Venus": {
+        "longitude": 44.509305,
+        "sign_index": 1,
+        "degree_in_sign": 14.509305,
+        "is_retrograde": false,
+        "speed": 0.926387
+      },
+      "Saturn": {
+        "longitude": 147.936001,
+        "sign_index": 4,
+        "degree_in_sign": 27.936001,
+        "is_retrograde": true,
+        "speed": -0.061774
+      },
+      "Rahu": {
+        "longitude": 122.90294,
+        "sign_index": 4,
+        "degree_in_sign": 2.90294,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 302.90294,
+        "sign_index": 10,
+        "degree_in_sign": 2.90294,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

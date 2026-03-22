@@ -1,0 +1,108 @@
+{
+  "adb_id": 14406,
+  "name": "Constantijn Christof, Prince",
+  "given_name": "Prince Constantijn Christof",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440505.805556,
+    "year": 1969,
+    "month": 10,
+    "day": 11,
+    "calendar": "g",
+    "time": "08:20",
+    "time_type": "s",
+    "hour": 8.333333,
+    "time_unknown": false,
+    "place": "Utrecht",
+    "country": "Netherlands",
+    "lat": 52.1,
+    "lon": 5.116667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Constantijn_Christof,_Prince",
+  "source_notes": "Selma Schepel in Sterren Tijd quotes Official Palace announcement.\\n\\nIn May 2022 Sy Scholfield downloaded the birth certificate from Wikimedia Commons and upgraded the Rodden Rating to \"BC/BR in hand\" [https://commons.wikimedia.org/wiki/File:Claus_maakt_namen_jongste_prins_bekend_Academisch_Ziekenhuis_Utrecht._De_geboort,_Bestanddeelnr_922-8684.jpg].\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 14.377581,
+    "lagna": 164.377581,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.43493,
+    "jd_ut": 2440505.805556,
+    "planets": {
+      "Sun": {
+        "longitude": 174.368281,
+        "sign_index": 5,
+        "degree_in_sign": 24.368281,
+        "is_retrograde": false,
+        "speed": 0.989571
+      },
+      "Moon": {
+        "longitude": 173.954427,
+        "sign_index": 5,
+        "degree_in_sign": 23.954427,
+        "is_retrograde": false,
+        "speed": 11.802286
+      },
+      "Mars": {
+        "longitude": 259.49783,
+        "sign_index": 8,
+        "degree_in_sign": 19.49783,
+        "is_retrograde": false,
+        "speed": 0.673059
+      },
+      "Mercury": {
+        "longitude": 157.149522,
+        "sign_index": 5,
+        "degree_in_sign": 7.149522,
+        "is_retrograde": false,
+        "speed": 0.49825
+      },
+      "Jupiter": {
+        "longitude": 173.283868,
+        "sign_index": 5,
+        "degree_in_sign": 23.283868,
+        "is_retrograde": false,
+        "speed": 0.216938
+      },
+      "Venus": {
+        "longitude": 148.795649,
+        "sign_index": 4,
+        "degree_in_sign": 28.795649,
+        "is_retrograde": false,
+        "speed": 1.232717
+      },
+      "Saturn": {
+        "longitude": 13.418408,
+        "sign_index": 0,
+        "degree_in_sign": 13.418408,
+        "is_retrograde": true,
+        "speed": -0.07365
+      },
+      "Rahu": {
+        "longitude": 326.176713,
+        "sign_index": 10,
+        "degree_in_sign": 26.176713,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 146.176713,
+        "sign_index": 4,
+        "degree_in_sign": 26.176713,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

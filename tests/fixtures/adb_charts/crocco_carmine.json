@@ -1,0 +1,109 @@
+{
+  "adb_id": 62625,
+  "name": "Crocco, Carmine",
+  "given_name": "Carmine Crocco",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2389609.123102,
+    "year": 1830,
+    "month": 6,
+    "day": 5,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "l",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Rionero in Vulture",
+    "country": "Italy",
+    "lat": 40.933333,
+    "lon": 15.683333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crocco,_Carmine",
+  "source_notes": "Sy Scholfield quotes from an online copy of his birth certificate: http://www.carminecrocco.altervista.org/fotografie%20e%20documenti.htm\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Other Criminal",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 21.302323,
+    "lagna": 171.302323,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.489256,
+    "jd_ut": 2389609.123102,
+    "planets": {
+      "Sun": {
+        "longitude": 52.881,
+        "sign_index": 1,
+        "degree_in_sign": 22.881,
+        "is_retrograde": false,
+        "speed": 0.956081
+      },
+      "Moon": {
+        "longitude": 222.509255,
+        "sign_index": 7,
+        "degree_in_sign": 12.509255,
+        "is_retrograde": false,
+        "speed": 13.830122
+      },
+      "Mars": {
+        "longitude": 313.231922,
+        "sign_index": 10,
+        "degree_in_sign": 13.231922,
+        "is_retrograde": false,
+        "speed": 0.586291
+      },
+      "Mercury": {
+        "longitude": 66.946847,
+        "sign_index": 2,
+        "degree_in_sign": 6.946847,
+        "is_retrograde": true,
+        "speed": -0.16355
+      },
+      "Jupiter": {
+        "longitude": 264.83311,
+        "sign_index": 8,
+        "degree_in_sign": 24.83311,
+        "is_retrograde": true,
+        "speed": -0.089951
+      },
+      "Venus": {
+        "longitude": 8.096932,
+        "sign_index": 0,
+        "degree_in_sign": 8.096932,
+        "is_retrograde": false,
+        "speed": 1.062153
+      },
+      "Saturn": {
+        "longitude": 112.176885,
+        "sign_index": 3,
+        "degree_in_sign": 22.176885,
+        "is_retrograde": false,
+        "speed": 0.084893
+      },
+      "Rahu": {
+        "longitude": 143.299193,
+        "sign_index": 4,
+        "degree_in_sign": 23.299193,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 323.299193,
+        "sign_index": 10,
+        "degree_in_sign": 23.299193,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

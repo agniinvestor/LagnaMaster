@@ -1,0 +1,111 @@
+{
+  "adb_id": 54974,
+  "name": "Cuesta, Henry",
+  "given_name": "Henry Cuesta",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426698.947917,
+    "year": 1931,
+    "month": 12,
+    "day": 23,
+    "calendar": "g",
+    "time": "04:45",
+    "time_type": "s",
+    "hour": 4.75,
+    "time_unknown": false,
+    "place": "McAllen",
+    "country": "Texas",
+    "lat": 26.2,
+    "lon": -98.233333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuesta,_Henry",
+  "source_notes": "Stephen Przybylowski quotes birth certificate. Copy now in Astrodienst files, provided by Sy Scholfield.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 10.576954,
+    "lagna": 190.576954,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.907004,
+    "jd_ut": 2426698.947917,
+    "planets": {
+      "Sun": {
+        "longitude": 247.740527,
+        "sign_index": 8,
+        "degree_in_sign": 7.740527,
+        "is_retrograde": false,
+        "speed": 1.0183
+      },
+      "Moon": {
+        "longitude": 48.678784,
+        "sign_index": 1,
+        "degree_in_sign": 18.678784,
+        "is_retrograde": false,
+        "speed": 11.944024
+      },
+      "Mars": {
+        "longitude": 257.251087,
+        "sign_index": 8,
+        "degree_in_sign": 17.251087,
+        "is_retrograde": false,
+        "speed": 0.76763
+      },
+      "Mercury": {
+        "longitude": 242.857927,
+        "sign_index": 8,
+        "degree_in_sign": 2.857927,
+        "is_retrograde": true,
+        "speed": -1.294605
+      },
+      "Jupiter": {
+        "longitude": 119.421413,
+        "sign_index": 3,
+        "degree_in_sign": 29.421413,
+        "is_retrograde": true,
+        "speed": -0.044719
+      },
+      "Venus": {
+        "longitude": 274.143626,
+        "sign_index": 9,
+        "degree_in_sign": 4.143626,
+        "is_retrograde": false,
+        "speed": 1.242725
+      },
+      "Saturn": {
+        "longitude": 269.866554,
+        "sign_index": 8,
+        "degree_in_sign": 29.866554,
+        "is_retrograde": false,
+        "speed": 0.112926
+      },
+      "Rahu": {
+        "longitude": 337.83053,
+        "sign_index": 11,
+        "degree_in_sign": 7.83053,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 157.83053,
+        "sign_index": 5,
+        "degree_in_sign": 7.83053,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

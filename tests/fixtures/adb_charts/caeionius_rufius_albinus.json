@@ -1,0 +1,108 @@
+{
+  "adb_id": 58242,
+  "name": "Caeionius, Rufius Albinus",
+  "given_name": "Rufius Albinus Caeionius",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 1831801.423657,
+    "year": 303,
+    "month": 3,
+    "day": 14,
+    "calendar": "j",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caeionius,_Rufius_Albinus",
+  "source_notes": "Taeger quotes Specht \"Astyrol. Monatshefte\" Nr.  8/1958 via W. Koch.\\nOtto Neugebauer, The Horoscope of Ceionius Rufius Albinus, in: The American Journal of Philology, Vol 74, part 4, 1953, p. 418–420.\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 21.573784,
+    "lagna": 231.573784,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 0.243046,
+    "jd_ut": 1831801.423657,
+    "planets": {
+      "Sun": {
+        "longitude": 353.736424,
+        "sign_index": 11,
+        "degree_in_sign": 23.736424,
+        "is_retrograde": false,
+        "speed": 0.979961
+      },
+      "Moon": {
+        "longitude": 104.358407,
+        "sign_index": 3,
+        "degree_in_sign": 14.358407,
+        "is_retrograde": false,
+        "speed": 11.430404
+      },
+      "Mars": {
+        "longitude": 311.024582,
+        "sign_index": 10,
+        "degree_in_sign": 11.024582,
+        "is_retrograde": false,
+        "speed": 0.771679
+      },
+      "Mercury": {
+        "longitude": 326.295646,
+        "sign_index": 10,
+        "degree_in_sign": 26.295646,
+        "is_retrograde": false,
+        "speed": 0.854473
+      },
+      "Jupiter": {
+        "longitude": 355.348003,
+        "sign_index": 11,
+        "degree_in_sign": 25.348003,
+        "is_retrograde": false,
+        "speed": 0.240335
+      },
+      "Venus": {
+        "longitude": 39.390578,
+        "sign_index": 1,
+        "degree_in_sign": 9.390578,
+        "is_retrograde": false,
+        "speed": 0.976466
+      },
+      "Saturn": {
+        "longitude": 177.37788,
+        "sign_index": 5,
+        "degree_in_sign": 27.37788,
+        "is_retrograde": true,
+        "speed": -0.076249
+      },
+      "Rahu": {
+        "longitude": 183.138758,
+        "sign_index": 6,
+        "degree_in_sign": 3.138758,
+        "is_retrograde": true,
+        "speed": -0.052994
+      },
+      "Ketu": {
+        "longitude": 3.138758,
+        "sign_index": 0,
+        "degree_in_sign": 3.138758,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

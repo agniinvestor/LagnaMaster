@@ -1,0 +1,114 @@
+{
+  "adb_id": 90589,
+  "name": "Constantine, Eddie",
+  "given_name": "Eddie Constantine",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420070.395833,
+    "year": 1913,
+    "month": 10,
+    "day": 29,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "s",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sco",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Constantine,_Eddie",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 3.545924,
+    "lagna": 273.545924,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.653583,
+    "jd_ut": 2420070.395833,
+    "planets": {
+      "Sun": {
+        "longitude": 193.20884,
+        "sign_index": 6,
+        "degree_in_sign": 13.20884,
+        "is_retrograde": false,
+        "speed": 1.00012
+      },
+      "Moon": {
+        "longitude": 197.161159,
+        "sign_index": 6,
+        "degree_in_sign": 17.161159,
+        "is_retrograde": false,
+        "speed": 10.180051
+      },
+      "Mars": {
+        "longitude": 87.213287,
+        "sign_index": 2,
+        "degree_in_sign": 27.213287,
+        "is_retrograde": false,
+        "speed": 0.309876
+      },
+      "Mercury": {
+        "longitude": 216.382011,
+        "sign_index": 7,
+        "degree_in_sign": 6.382011,
+        "is_retrograde": false,
+        "speed": 1.13833
+      },
+      "Jupiter": {
+        "longitude": 259.86426,
+        "sign_index": 8,
+        "degree_in_sign": 19.86426,
+        "is_retrograde": false,
+        "speed": 0.152472
+      },
+      "Venus": {
+        "longitude": 168.036516,
+        "sign_index": 5,
+        "degree_in_sign": 18.036516,
+        "is_retrograde": false,
+        "speed": 1.239922
+      },
+      "Saturn": {
+        "longitude": 54.767337,
+        "sign_index": 1,
+        "degree_in_sign": 24.767337,
+        "is_retrograde": true,
+        "speed": -0.050456
+      },
+      "Rahu": {
+        "longitude": 329.091334,
+        "sign_index": 10,
+        "degree_in_sign": 29.091334,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 149.091334,
+        "sign_index": 4,
+        "degree_in_sign": 29.091334,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

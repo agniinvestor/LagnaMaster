@@ -1,0 +1,111 @@
+{
+  "adb_id": 93516,
+  "name": "Collins, George E.",
+  "given_name": "George E. Collins",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425255.791667,
+    "year": 1928,
+    "month": 1,
+    "day": 10,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Lincoln",
+    "country": "Iowa",
+    "lat": 42.266667,
+    "lon": -92.7
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_George_E.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 8.360403,
+    "lagna": 158.360403,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.851828,
+    "jd_ut": 2425255.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 265.951112,
+        "sign_index": 8,
+        "degree_in_sign": 25.951112,
+        "is_retrograde": false,
+        "speed": 1.01873
+      },
+      "Moon": {
+        "longitude": 124.451963,
+        "sign_index": 4,
+        "degree_in_sign": 4.451963,
+        "is_retrograde": false,
+        "speed": 9.329432
+      },
+      "Mars": {
+        "longitude": 240.715926,
+        "sign_index": 8,
+        "degree_in_sign": 0.715926,
+        "is_retrograde": false,
+        "speed": 0.72891
+      },
+      "Mercury": {
+        "longitude": 266.71092,
+        "sign_index": 8,
+        "degree_in_sign": 26.71092,
+        "is_retrograde": false,
+        "speed": 1.64061
+      },
+      "Jupiter": {
+        "longitude": 335.008877,
+        "sign_index": 11,
+        "degree_in_sign": 5.008877,
+        "is_retrograde": false,
+        "speed": 0.153528
+      },
+      "Venus": {
+        "longitude": 224.605685,
+        "sign_index": 7,
+        "degree_in_sign": 14.605685,
+        "is_retrograde": false,
+        "speed": 1.190385
+      },
+      "Saturn": {
+        "longitude": 231.652632,
+        "sign_index": 7,
+        "degree_in_sign": 21.652632,
+        "is_retrograde": false,
+        "speed": 0.104764
+      },
+      "Rahu": {
+        "longitude": 54.30638,
+        "sign_index": 1,
+        "degree_in_sign": 24.30638,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 234.30638,
+        "sign_index": 7,
+        "degree_in_sign": 24.30638,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

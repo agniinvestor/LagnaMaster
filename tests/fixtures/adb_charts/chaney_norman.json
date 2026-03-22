@@ -1,0 +1,111 @@
+{
+  "adb_id": 66940,
+  "name": "Chaney, Norman",
+  "given_name": "Norman Chaney",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420424.364583,
+    "year": 1914,
+    "month": 10,
+    "day": 18,
+    "calendar": "g",
+    "time": "15:45",
+    "time_type": "s",
+    "hour": 15.75,
+    "time_unknown": false,
+    "place": "Cambridge",
+    "country": "Maryland",
+    "lat": 38.566667,
+    "lon": -76.083333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaney,_Norman",
+  "source_notes": "Sy Scholfield found the birth and death certificates online.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Other Major diseases",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Child performer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 0.854872,
+    "lagna": 300.854872,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.667116,
+    "jd_ut": 2420424.364583,
+    "planets": {
+      "Sun": {
+        "longitude": 181.958613,
+        "sign_index": 6,
+        "degree_in_sign": 1.958613,
+        "is_retrograde": false,
+        "speed": 0.993923
+      },
+      "Moon": {
+        "longitude": 175.718878,
+        "sign_index": 5,
+        "degree_in_sign": 25.718878,
+        "is_retrograde": false,
+        "speed": 13.069158
+      },
+      "Mars": {
+        "longitude": 200.654874,
+        "sign_index": 6,
+        "degree_in_sign": 20.654874,
+        "is_retrograde": false,
+        "speed": 0.69575
+      },
+      "Mercury": {
+        "longitude": 206.393391,
+        "sign_index": 6,
+        "degree_in_sign": 26.393391,
+        "is_retrograde": false,
+        "speed": 0.81589
+      },
+      "Jupiter": {
+        "longitude": 289.926016,
+        "sign_index": 9,
+        "degree_in_sign": 19.926016,
+        "is_retrograde": false,
+        "speed": 0.031236
+      },
+      "Venus": {
+        "longitude": 223.287545,
+        "sign_index": 7,
+        "degree_in_sign": 13.287545,
+        "is_retrograde": false,
+        "speed": 0.594784
+      },
+      "Saturn": {
+        "longitude": 69.655255,
+        "sign_index": 2,
+        "degree_in_sign": 9.655255,
+        "is_retrograde": true,
+        "speed": -0.006354
+      },
+      "Rahu": {
+        "longitude": 310.333788,
+        "sign_index": 10,
+        "degree_in_sign": 10.333788,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 130.333788,
+        "sign_index": 4,
+        "degree_in_sign": 10.333788,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

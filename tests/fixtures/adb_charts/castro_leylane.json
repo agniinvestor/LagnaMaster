@@ -1,0 +1,110 @@
+{
+  "adb_id": 100199,
+  "name": "Castro, Leylane",
+  "given_name": "Leylane Castro",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2449419.5625,
+    "year": 1994,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Recife (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.053889,
+    "lon": -34.881111
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro,_Leylane",
+  "source_notes": "Birth entry from civil registry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Brain",
+    "Vocation : Sports : Track and Field",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 20.576316,
+    "lagna": 200.576316,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.775807,
+    "jd_ut": 2449419.5625,
+    "planets": {
+      "Sun": {
+        "longitude": 323.466829,
+        "sign_index": 10,
+        "degree_in_sign": 23.466829,
+        "is_retrograde": false,
+        "speed": 1.000483
+      },
+      "Moon": {
+        "longitude": 275.3094,
+        "sign_index": 9,
+        "degree_in_sign": 5.3094,
+        "is_retrograde": false,
+        "speed": 17.346712
+      },
+      "Mars": {
+        "longitude": 306.694347,
+        "sign_index": 10,
+        "degree_in_sign": 6.694347,
+        "is_retrograde": false,
+        "speed": 0.786609
+      },
+      "Mercury": {
+        "longitude": 299.252421,
+        "sign_index": 9,
+        "degree_in_sign": 29.252421,
+        "is_retrograde": false,
+        "speed": 0.281178
+      },
+      "Jupiter": {
+        "longitude": 200.788211,
+        "sign_index": 6,
+        "degree_in_sign": 20.788211,
+        "is_retrograde": true,
+        "speed": -0.023536
+      },
+      "Venus": {
+        "longitude": 335.547435,
+        "sign_index": 11,
+        "degree_in_sign": 5.547435,
+        "is_retrograde": false,
+        "speed": 1.245263
+      },
+      "Saturn": {
+        "longitude": 310.79848,
+        "sign_index": 10,
+        "degree_in_sign": 10.79848,
+        "is_retrograde": false,
+        "speed": 0.119724
+      },
+      "Rahu": {
+        "longitude": 213.818639,
+        "sign_index": 7,
+        "degree_in_sign": 3.818639,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 33.818639,
+        "sign_index": 1,
+        "degree_in_sign": 3.818639,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

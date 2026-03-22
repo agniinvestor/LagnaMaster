@@ -1,0 +1,113 @@
+{
+  "adb_id": 60247,
+  "name": "Cerio, Edwin",
+  "given_name": "Edwin Cerio",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2404241.663241,
+    "year": 1870,
+    "month": 6,
+    "day": 28,
+    "calendar": "g",
+    "time": "04:45",
+    "time_type": "s",
+    "hour": 4.75,
+    "time_unknown": false,
+    "place": "Capri",
+    "country": "Italy",
+    "lat": 40.55,
+    "lon": 14.233333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cerio,_Edwin",
+  "source_notes": "Sy Scholfield quotes \"The Masque of Capri\"  by Edwin Cerio (Nelson, 1957), p. 75: \"I came into the world at dawn on a very warm summer's day. By eight o'clock the excitement caused by my arrival had died down, the bedroom in which the ...\"\\n",
+  "categories": [
+    "Vocation : Building Trades : Architect/ Planner",
+    "Vocation : Engineer : Other Engineer",
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 25.519201,
+    "lagna": 55.519201,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.048505,
+    "jd_ut": 2404241.663241,
+    "planets": {
+      "Sun": {
+        "longitude": 74.155636,
+        "sign_index": 2,
+        "degree_in_sign": 14.155636,
+        "is_retrograde": false,
+        "speed": 0.953786
+      },
+      "Moon": {
+        "longitude": 65.346317,
+        "sign_index": 2,
+        "degree_in_sign": 5.346317,
+        "is_retrograde": false,
+        "speed": 13.16497
+      },
+      "Mars": {
+        "longitude": 49.837168,
+        "sign_index": 1,
+        "degree_in_sign": 19.837168,
+        "is_retrograde": false,
+        "speed": 0.69693
+      },
+      "Mercury": {
+        "longitude": 52.54214,
+        "sign_index": 1,
+        "degree_in_sign": 22.54214,
+        "is_retrograde": false,
+        "speed": 0.869532
+      },
+      "Jupiter": {
+        "longitude": 49.446132,
+        "sign_index": 1,
+        "degree_in_sign": 19.446132,
+        "is_retrograde": false,
+        "speed": 0.222565
+      },
+      "Venus": {
+        "longitude": 34.605749,
+        "sign_index": 1,
+        "degree_in_sign": 4.605749,
+        "is_retrograde": false,
+        "speed": 1.14582
+      },
+      "Saturn": {
+        "longitude": 242.364611,
+        "sign_index": 8,
+        "degree_in_sign": 2.364611,
+        "is_retrograde": true,
+        "speed": -0.071578
+      },
+      "Rahu": {
+        "longitude": 87.889361,
+        "sign_index": 2,
+        "degree_in_sign": 27.889361,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 267.889361,
+        "sign_index": 8,
+        "degree_in_sign": 27.889361,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

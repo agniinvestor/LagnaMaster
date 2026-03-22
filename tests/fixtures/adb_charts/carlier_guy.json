@@ -1,0 +1,110 @@
+{
+  "adb_id": 68687,
+  "name": "Carlier, Guy",
+  "given_name": "Guy Carlier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433073.048611,
+    "year": 1949,
+    "month": 6,
+    "day": 5,
+    "calendar": "g",
+    "time": "14:10",
+    "time_type": "s",
+    "hour": 14.166667,
+    "time_unknown": false,
+    "place": "Argenteuil",
+    "country": "France",
+    "lat": 48.95,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlier,_Guy",
+  "source_notes": "Didier Geslain archive, 'radio-tele' pdf file, p. 29.\\n",
+  "categories": [
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 16.158822,
+    "lagna": 136.158822,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.150717,
+    "jd_ut": 2433073.048611,
+    "planets": {
+      "Sun": {
+        "longitude": 51.375047,
+        "sign_index": 1,
+        "degree_in_sign": 21.375047,
+        "is_retrograde": false,
+        "speed": 0.956802
+      },
+      "Moon": {
+        "longitude": 160.838096,
+        "sign_index": 5,
+        "degree_in_sign": 10.838096,
+        "is_retrograde": false,
+        "speed": 14.317834
+      },
+      "Mars": {
+        "longitude": 33.634647,
+        "sign_index": 1,
+        "degree_in_sign": 3.634647,
+        "is_retrograde": false,
+        "speed": 0.718361
+      },
+      "Mercury": {
+        "longitude": 48.93457,
+        "sign_index": 1,
+        "degree_in_sign": 18.93457,
+        "is_retrograde": true,
+        "speed": -0.548151
+      },
+      "Jupiter": {
+        "longitude": 278.624884,
+        "sign_index": 9,
+        "degree_in_sign": 8.624884,
+        "is_retrograde": true,
+        "speed": -0.049679
+      },
+      "Venus": {
+        "longitude": 64.522094,
+        "sign_index": 2,
+        "degree_in_sign": 4.522094,
+        "is_retrograde": false,
+        "speed": 1.225607
+      },
+      "Saturn": {
+        "longitude": 127.225367,
+        "sign_index": 4,
+        "degree_in_sign": 7.225367,
+        "is_retrograde": false,
+        "speed": 0.058616
+      },
+      "Rahu": {
+        "longitude": 0.053748,
+        "sign_index": 0,
+        "degree_in_sign": 0.053748,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 180.053748,
+        "sign_index": 6,
+        "degree_in_sign": 0.053748,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

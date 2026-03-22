@@ -1,0 +1,110 @@
+{
+  "adb_id": 11220,
+  "name": "Chemist 11220",
+  "given_name": "Chemist 11220",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433021.222222,
+    "year": 1949,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "12:20",
+    "time_type": "s",
+    "hour": 12.333333,
+    "time_unknown": false,
+    "place": "Columbus",
+    "country": "Ohio",
+    "lat": 39.966667,
+    "lon": -83.0
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Chemist_11220",
+  "source_notes": "Rose Sansone in MH 1/1987 quotes her mom, B.C.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Other Major diseases",
+    "Vocation : Healing Fields : Social worker",
+    "Vocation : Science : Chemistry"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 17.904675,
+    "lagna": 77.904675,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.148735,
+    "jd_ut": 2433021.222222,
+    "planets": {
+      "Sun": {
+        "longitude": 1.277339,
+        "sign_index": 0,
+        "degree_in_sign": 1.277339,
+        "is_retrograde": false,
+        "speed": 0.978513
+      },
+      "Moon": {
+        "longitude": 202.710006,
+        "sign_index": 6,
+        "degree_in_sign": 22.710006,
+        "is_retrograde": false,
+        "speed": 18.536742
+      },
+      "Mars": {
+        "longitude": 355.207924,
+        "sign_index": 11,
+        "degree_in_sign": 25.207924,
+        "is_retrograde": false,
+        "speed": 0.762728
+      },
+      "Mercury": {
+        "longitude": 2.840622,
+        "sign_index": 0,
+        "degree_in_sign": 2.840622,
+        "is_retrograde": false,
+        "speed": 2.106004
+      },
+      "Jupiter": {
+        "longitude": 277.060948,
+        "sign_index": 9,
+        "degree_in_sign": 7.060948,
+        "is_retrograde": false,
+        "speed": 0.105628
+      },
+      "Venus": {
+        "longitude": 0.699448,
+        "sign_index": 0,
+        "degree_in_sign": 0.699448,
+        "is_retrograde": false,
+        "speed": 1.23758
+      },
+      "Saturn": {
+        "longitude": 126.409647,
+        "sign_index": 4,
+        "degree_in_sign": 6.409647,
+        "is_retrograde": true,
+        "speed": -0.029043
+      },
+      "Rahu": {
+        "longitude": 2.800135,
+        "sign_index": 0,
+        "degree_in_sign": 2.800135,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.800135,
+        "sign_index": 6,
+        "degree_in_sign": 2.800135,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 64950,
+  "name": "Castérède, Jacques",
+  "given_name": "Jacques Castérède",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424616.333333,
+    "year": 1926,
+    "month": 4,
+    "day": 10,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castérède,_Jacques",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 78.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 21.03234,
+    "lagna": 171.03234,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.82738,
+    "jd_ut": 2424616.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 357.365885,
+        "sign_index": 11,
+        "degree_in_sign": 27.365885,
+        "is_retrograde": false,
+        "speed": 0.981538
+      },
+      "Moon": {
+        "longitude": 333.433654,
+        "sign_index": 11,
+        "degree_in_sign": 3.433654,
+        "is_retrograde": false,
+        "speed": 17.688816
+      },
+      "Mars": {
+        "longitude": 290.638027,
+        "sign_index": 9,
+        "degree_in_sign": 20.638027,
+        "is_retrograde": false,
+        "speed": 0.723551
+      },
+      "Mercury": {
+        "longitude": 340.156165,
+        "sign_index": 11,
+        "degree_in_sign": 10.156165,
+        "is_retrograde": true,
+        "speed": -0.27208
+      },
+      "Jupiter": {
+        "longitude": 298.01266,
+        "sign_index": 9,
+        "degree_in_sign": 28.01266,
+        "is_retrograde": false,
+        "speed": 0.173063
+      },
+      "Venus": {
+        "longitude": 311.351347,
+        "sign_index": 10,
+        "degree_in_sign": 11.351347,
+        "is_retrograde": false,
+        "speed": 0.916115
+      },
+      "Saturn": {
+        "longitude": 212.233343,
+        "sign_index": 7,
+        "degree_in_sign": 2.233343,
+        "is_retrograde": true,
+        "speed": -0.054188
+      },
+      "Rahu": {
+        "longitude": 88.192608,
+        "sign_index": 2,
+        "degree_in_sign": 28.192608,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 268.192608,
+        "sign_index": 8,
+        "degree_in_sign": 28.192608,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

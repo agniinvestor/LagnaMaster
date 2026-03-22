@@ -1,0 +1,109 @@
+{
+  "adb_id": 19404,
+  "name": "Cage, Weston",
+  "given_name": "Weston Cage",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2448252.122917,
+    "year": 1990,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "06:57",
+    "time_type": "s",
+    "hour": 6.95,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cage,_Weston",
+  "source_notes": "Steinbrecher quotes his aunt, Talia Shire.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Personal : Birth : Illegitimate birth"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 16.066461,
+    "lagna": 226.066461,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.73116,
+    "jd_ut": 2448252.122917,
+    "planets": {
+      "Sun": {
+        "longitude": 250.841829,
+        "sign_index": 8,
+        "degree_in_sign": 10.841829,
+        "is_retrograde": false,
+        "speed": 1.018713
+      },
+      "Moon": {
+        "longitude": 359.425434,
+        "sign_index": 11,
+        "degree_in_sign": 29.425434,
+        "is_retrograde": false,
+        "speed": 18.550254
+      },
+      "Mars": {
+        "longitude": 34.249665,
+        "sign_index": 1,
+        "degree_in_sign": 4.249665,
+        "is_retrograde": true,
+        "speed": -0.07933
+      },
+      "Mercury": {
+        "longitude": 245.398167,
+        "sign_index": 8,
+        "degree_in_sign": 5.398167,
+        "is_retrograde": true,
+        "speed": -1.271851
+      },
+      "Jupiter": {
+        "longitude": 108.732054,
+        "sign_index": 3,
+        "degree_in_sign": 18.732054,
+        "is_retrograde": true,
+        "speed": -0.083185
+      },
+      "Venus": {
+        "longitude": 264.24178,
+        "sign_index": 8,
+        "degree_in_sign": 24.24178,
+        "is_retrograde": false,
+        "speed": 1.254707
+      },
+      "Saturn": {
+        "longitude": 271.30889,
+        "sign_index": 9,
+        "degree_in_sign": 1.30889,
+        "is_retrograde": false,
+        "speed": 0.113908
+      },
+      "Rahu": {
+        "longitude": 275.683621,
+        "sign_index": 9,
+        "degree_in_sign": 5.683621,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 95.683621,
+        "sign_index": 3,
+        "degree_in_sign": 5.683621,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

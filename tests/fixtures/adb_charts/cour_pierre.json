@@ -1,0 +1,108 @@
+{
+  "adb_id": 65082,
+  "name": "Cour, Pierre",
+  "given_name": "Pierre Cour",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420958.541667,
+    "year": 1916,
+    "month": 4,
+    "day": 5,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Brunoy",
+    "country": "France",
+    "lat": 48.7,
+    "lon": 2.5
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cour,_Pierre",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 252.\\n\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Song writer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 15.461596,
+    "lagna": 225.461596,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.687538,
+    "jd_ut": 2420958.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 352.228236,
+        "sign_index": 11,
+        "degree_in_sign": 22.228236,
+        "is_retrograde": false,
+        "speed": 0.984467
+      },
+      "Moon": {
+        "longitude": 20.180143,
+        "sign_index": 0,
+        "degree_in_sign": 20.180143,
+        "is_retrograde": false,
+        "speed": 16.125084
+      },
+      "Mars": {
+        "longitude": 108.822711,
+        "sign_index": 3,
+        "degree_in_sign": 18.822711,
+        "is_retrograde": false,
+        "speed": 0.158935
+      },
+      "Mercury": {
+        "longitude": 342.130527,
+        "sign_index": 11,
+        "degree_in_sign": 12.130527,
+        "is_retrograde": false,
+        "speed": 1.896878
+      },
+      "Jupiter": {
+        "longitude": 349.66577,
+        "sign_index": 11,
+        "degree_in_sign": 19.66577,
+        "is_retrograde": false,
+        "speed": 0.241738
+      },
+      "Venus": {
+        "longitude": 36.745064,
+        "sign_index": 1,
+        "degree_in_sign": 6.745064,
+        "is_retrograde": false,
+        "speed": 1.081795
+      },
+      "Saturn": {
+        "longitude": 77.402079,
+        "sign_index": 2,
+        "degree_in_sign": 17.402079,
+        "is_retrograde": false,
+        "speed": 0.044246
+      },
+      "Rahu": {
+        "longitude": 282.026625,
+        "sign_index": 9,
+        "degree_in_sign": 12.026625,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 102.026625,
+        "sign_index": 3,
+        "degree_in_sign": 12.026625,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 67989,
+  "name": "Caseneuve, Anne",
+  "given_name": "Anne Caseneuve",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438498.326389,
+    "year": 1964,
+    "month": 4,
+    "day": 12,
+    "calendar": "g",
+    "time": "20:50",
+    "time_type": "s",
+    "hour": 20.833333,
+    "time_unknown": false,
+    "place": "Villepinte",
+    "country": "France",
+    "lat": 48.966667,
+    "lon": 2.533333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caseneuve,_Anne",
+  "source_notes": "Didier Geslain archive, 'navigateurs' pdf file, p. 11.\\n",
+  "categories": [
+    "Vocation : Sports : Sailing/ Boating"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 20.25382,
+    "lagna": 170.25382,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.358165,
+    "jd_ut": 2438498.326389,
+    "planets": {
+      "Sun": {
+        "longitude": 359.569687,
+        "sign_index": 11,
+        "degree_in_sign": 29.569687,
+        "is_retrograde": false,
+        "speed": 0.98042
+      },
+      "Moon": {
+        "longitude": 2.862747,
+        "sign_index": 0,
+        "degree_in_sign": 2.862747,
+        "is_retrograde": false,
+        "speed": 16.232127
+      },
+      "Mars": {
+        "longitude": 347.769014,
+        "sign_index": 11,
+        "degree_in_sign": 17.769014,
+        "is_retrograde": false,
+        "speed": 0.770726
+      },
+      "Mercury": {
+        "longitude": 17.298944,
+        "sign_index": 0,
+        "degree_in_sign": 17.298944,
+        "is_retrograde": false,
+        "speed": 0.430512
+      },
+      "Jupiter": {
+        "longitude": 6.776241,
+        "sign_index": 0,
+        "degree_in_sign": 6.776241,
+        "is_retrograde": false,
+        "speed": 0.239465
+      },
+      "Venus": {
+        "longitude": 45.271812,
+        "sign_index": 1,
+        "degree_in_sign": 15.271812,
+        "is_retrograde": false,
+        "speed": 0.959893
+      },
+      "Saturn": {
+        "longitude": 308.60265,
+        "sign_index": 10,
+        "degree_in_sign": 8.60265,
+        "is_retrograde": false,
+        "speed": 0.090489
+      },
+      "Rahu": {
+        "longitude": 72.557138,
+        "sign_index": 2,
+        "degree_in_sign": 12.557138,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 252.557138,
+        "sign_index": 8,
+        "degree_in_sign": 12.557138,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

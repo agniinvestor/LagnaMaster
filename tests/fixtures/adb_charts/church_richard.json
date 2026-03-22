@@ -1,0 +1,111 @@
+{
+  "adb_id": 69251,
+  "name": "Church, Richard",
+  "given_name": "Richard Church",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2412548.666667,
+    "year": 1893,
+    "month": 3,
+    "day": 26,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Church,_Richard",
+  "source_notes": "Sy Scholfield quotes from \"Over the Bridge: An Essay in Autobiography\" by Richard Church (William Heinemann, 1955; Bloomsbury, 2015): \"I know that after my birth during violent weather at four o'clock on the morning of 26th March, 1893, Mother's health had greatly deteriorated ... in ... London.\"\\n",
+  "categories": [
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 21.214905,
+    "lagna": 261.214905,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.366039,
+    "jd_ut": 2412548.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 343.369844,
+        "sign_index": 11,
+        "degree_in_sign": 13.369844,
+        "is_retrograde": false,
+        "speed": 0.989039
+      },
+      "Moon": {
+        "longitude": 89.346884,
+        "sign_index": 2,
+        "degree_in_sign": 29.346884,
+        "is_retrograde": false,
+        "speed": 16.283573
+      },
+      "Mars": {
+        "longitude": 35.921614,
+        "sign_index": 1,
+        "degree_in_sign": 5.921614,
+        "is_retrograde": false,
+        "speed": 0.655548
+      },
+      "Mercury": {
+        "longitude": 353.222275,
+        "sign_index": 11,
+        "degree_in_sign": 23.222275,
+        "is_retrograde": true,
+        "speed": -0.454117
+      },
+      "Jupiter": {
+        "longitude": 7.7898,
+        "sign_index": 0,
+        "degree_in_sign": 7.7898,
+        "is_retrograde": false,
+        "speed": 0.229412
+      },
+      "Venus": {
+        "longitude": 333.745367,
+        "sign_index": 11,
+        "degree_in_sign": 3.745367,
+        "is_retrograde": false,
+        "speed": 1.241007
+      },
+      "Saturn": {
+        "longitude": 167.384873,
+        "sign_index": 5,
+        "degree_in_sign": 17.384873,
+        "is_retrograde": true,
+        "speed": -0.077731
+      },
+      "Rahu": {
+        "longitude": 7.683601,
+        "sign_index": 0,
+        "degree_in_sign": 7.683601,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 187.683601,
+        "sign_index": 6,
+        "degree_in_sign": 7.683601,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 70536,
+  "name": "Courthille, Charles Félix Edgar",
+  "given_name": "Charles Félix Edgar Courthille",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393111.621993,
+    "year": 1840,
+    "month": 1,
+    "day": 7,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "l",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Dussac",
+    "country": "France",
+    "lat": 45.396111,
+    "lon": 1.0825
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courthille,_Charles_Félix_Edgar",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 76.\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 2.441997,
+    "lagna": 182.441997,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.623111,
+    "jd_ut": 2393111.621993,
+    "planets": {
+      "Sun": {
+        "longitude": 264.327526,
+        "sign_index": 8,
+        "degree_in_sign": 24.327526,
+        "is_retrograde": false,
+        "speed": 1.019566
+      },
+      "Moon": {
+        "longitude": 290.235471,
+        "sign_index": 9,
+        "degree_in_sign": 20.235471,
+        "is_retrograde": false,
+        "speed": 16.297095
+      },
+      "Mars": {
+        "longitude": 291.432607,
+        "sign_index": 9,
+        "degree_in_sign": 21.432607,
+        "is_retrograde": false,
+        "speed": 0.788655
+      },
+      "Mercury": {
+        "longitude": 241.082629,
+        "sign_index": 8,
+        "degree_in_sign": 1.082629,
+        "is_retrograde": false,
+        "speed": 0.921691
+      },
+      "Jupiter": {
+        "longitude": 202.438161,
+        "sign_index": 6,
+        "degree_in_sign": 22.438161,
+        "is_retrograde": false,
+        "speed": 0.151703
+      },
+      "Venus": {
+        "longitude": 218.73446,
+        "sign_index": 7,
+        "degree_in_sign": 8.73446,
+        "is_retrograde": false,
+        "speed": 1.12296
+      },
+      "Saturn": {
+        "longitude": 234.920955,
+        "sign_index": 7,
+        "degree_in_sign": 24.920955,
+        "is_retrograde": false,
+        "speed": 0.108093
+      },
+      "Rahu": {
+        "longitude": 317.694179,
+        "sign_index": 10,
+        "degree_in_sign": 17.694179,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 137.694179,
+        "sign_index": 4,
+        "degree_in_sign": 17.694179,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 74270,
+  "name": "Cuadra, Pablo Antonio",
+  "given_name": "Pablo Antonio Cuadra",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419711.427222,
+    "year": 1912,
+    "month": 11,
+    "day": 4,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "s",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "Managua",
+    "country": "Nicaragua",
+    "lat": 12.15,
+    "lon": -86.283333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuadra,_Pablo_Antonio",
+  "source_notes": "Castellanos quotes BC\\n",
+  "categories": [
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 10.004276,
+    "lagna": 340.004276,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.63986,
+    "jd_ut": 2419711.427222,
+    "planets": {
+      "Sun": {
+        "longitude": 199.500262,
+        "sign_index": 6,
+        "degree_in_sign": 19.500262,
+        "is_retrograde": false,
+        "speed": 1.003234
+      },
+      "Moon": {
+        "longitude": 145.391731,
+        "sign_index": 4,
+        "degree_in_sign": 25.391731,
+        "is_retrograde": false,
+        "speed": 17.13149
+      },
+      "Mars": {
+        "longitude": 199.55281,
+        "sign_index": 6,
+        "degree_in_sign": 19.55281,
+        "is_retrograde": false,
+        "speed": 0.690464
+      },
+      "Mercury": {
+        "longitude": 217.802818,
+        "sign_index": 7,
+        "degree_in_sign": 7.802818,
+        "is_retrograde": false,
+        "speed": 1.413106
+      },
+      "Jupiter": {
+        "longitude": 234.24449,
+        "sign_index": 7,
+        "degree_in_sign": 24.24449,
+        "is_retrograde": false,
+        "speed": 0.205552
+      },
+      "Venus": {
+        "longitude": 231.106034,
+        "sign_index": 7,
+        "degree_in_sign": 21.106034,
+        "is_retrograde": false,
+        "speed": 1.225733
+      },
+      "Saturn": {
+        "longitude": 39.429755,
+        "sign_index": 1,
+        "degree_in_sign": 9.429755,
+        "is_retrograde": true,
+        "speed": -0.074337
+      },
+      "Rahu": {
+        "longitude": 348.113833,
+        "sign_index": 11,
+        "degree_in_sign": 18.113833,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 168.113833,
+        "sign_index": 5,
+        "degree_in_sign": 18.113833,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

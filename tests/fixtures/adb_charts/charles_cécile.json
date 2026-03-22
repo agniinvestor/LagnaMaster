@@ -1,0 +1,108 @@
+{
+  "adb_id": 50809,
+  "name": "Charles, Cécile",
+  "given_name": "Cécile Charles",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434141.822917,
+    "year": 1952,
+    "month": 5,
+    "day": 9,
+    "calendar": "g",
+    "time": "08:45",
+    "time_type": "s",
+    "hour": 8.75,
+    "time_unknown": false,
+    "place": "La Louvière",
+    "country": "Belgium",
+    "lat": 50.466667,
+    "lon": 4.183333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles,_Cécile",
+  "source_notes": "Steinbrecher collection: Lesc quotes birth record\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 29.810997,
+    "lagna": 59.810997,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.191583,
+    "jd_ut": 2434141.822917,
+    "planets": {
+      "Sun": {
+        "longitude": 25.426637,
+        "sign_index": 0,
+        "degree_in_sign": 25.426637,
+        "is_retrograde": false,
+        "speed": 0.966126
+      },
+      "Moon": {
+        "longitude": 198.428205,
+        "sign_index": 6,
+        "degree_in_sign": 18.428205,
+        "is_retrograde": false,
+        "speed": 15.684237
+      },
+      "Mars": {
+        "longitude": 194.400941,
+        "sign_index": 6,
+        "degree_in_sign": 14.400941,
+        "is_retrograde": true,
+        "speed": -0.356899
+      },
+      "Mercury": {
+        "longitude": 359.678514,
+        "sign_index": 11,
+        "degree_in_sign": 29.678514,
+        "is_retrograde": false,
+        "speed": 1.241268
+      },
+      "Jupiter": {
+        "longitude": 9.28942,
+        "sign_index": 0,
+        "degree_in_sign": 9.28942,
+        "is_retrograde": false,
+        "speed": 0.235401
+      },
+      "Venus": {
+        "longitude": 12.88734,
+        "sign_index": 0,
+        "degree_in_sign": 12.88734,
+        "is_retrograde": false,
+        "speed": 1.227876
+      },
+      "Saturn": {
+        "longitude": 165.843344,
+        "sign_index": 5,
+        "degree_in_sign": 15.843344,
+        "is_retrograde": true,
+        "speed": -0.050484
+      },
+      "Rahu": {
+        "longitude": 303.417197,
+        "sign_index": 10,
+        "degree_in_sign": 3.417197,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.417197,
+        "sign_index": 4,
+        "degree_in_sign": 3.417197,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

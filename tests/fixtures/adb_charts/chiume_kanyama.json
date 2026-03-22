@@ -1,0 +1,108 @@
+{
+  "adb_id": 58457,
+  "name": "Chiume, Kanyama",
+  "given_name": "Kanyama Chiume",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2425938.125,
+    "year": 1929,
+    "month": 11,
+    "day": 22,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Nkhata Bay",
+    "country": "Malawi",
+    "lat": -11.55,
+    "lon": 34.3
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiume,_Kanyama",
+  "source_notes": "Sy Scholfield quotes M. W. Kanyama Chiume's book, \"Autobiography of Kanyama Chiume\" (Panaf, 1982), p. 21: \"I was born at 5 pm on Friday, 22nd November 1929 at [Nkata Bay, Nyasaland].\" \\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 3.412665,
+    "lagna": 3.412665,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.877916,
+    "jd_ut": 2425938.125,
+    "planets": {
+      "Sun": {
+        "longitude": 216.965367,
+        "sign_index": 7,
+        "degree_in_sign": 6.965367,
+        "is_retrograde": false,
+        "speed": 1.010625
+      },
+      "Moon": {
+        "longitude": 113.367877,
+        "sign_index": 3,
+        "degree_in_sign": 23.367877,
+        "is_retrograde": false,
+        "speed": 19.713304
+      },
+      "Mars": {
+        "longitude": 220.042884,
+        "sign_index": 7,
+        "degree_in_sign": 10.042884,
+        "is_retrograde": false,
+        "speed": 0.719813
+      },
+      "Mercury": {
+        "longitude": 214.150211,
+        "sign_index": 7,
+        "degree_in_sign": 4.150211,
+        "is_retrograde": false,
+        "speed": 1.585864
+      },
+      "Jupiter": {
+        "longitude": 49.972347,
+        "sign_index": 1,
+        "degree_in_sign": 19.972347,
+        "is_retrograde": true,
+        "speed": -0.130035
+      },
+      "Venus": {
+        "longitude": 198.719152,
+        "sign_index": 6,
+        "degree_in_sign": 18.719152,
+        "is_retrograde": false,
+        "speed": 1.252718
+      },
+      "Saturn": {
+        "longitude": 246.292591,
+        "sign_index": 8,
+        "degree_in_sign": 6.292591,
+        "is_retrograde": false,
+        "speed": 0.107978
+      },
+      "Rahu": {
+        "longitude": 18.148117,
+        "sign_index": 0,
+        "degree_in_sign": 18.148117,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 198.148117,
+        "sign_index": 6,
+        "degree_in_sign": 18.148117,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 851,
+  "name": "Chamberlain, Azaria",
+  "given_name": "Azaria Chamberlain",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444401.636111,
+    "year": 1980,
+    "month": 6,
+    "day": 11,
+    "calendar": "g",
+    "time": "13:16",
+    "time_type": "s",
+    "hour": 13.266667,
+    "time_unknown": false,
+    "place": "Mount Isa",
+    "country": "Australia",
+    "lat": -20.733333,
+    "lon": 139.5
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamberlain,_Azaria",
+  "source_notes": "Sy Scholfield quotes the Mt Isa hospital baby card, viewed on the National Library of Australia website. http://nla.gov.au/nla.ms-ms9180-1-1x-s1 \\n\\nPreviously Zip Dobyns quoted Australian astrologers who knew the case for a time of 1:15 PM, 1/1982.\\n",
+  "categories": [
+    "Traits : Body : Diet unusual",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Personal : Death : Unusual",
+    "Notable : Famous : Criminal cases",
+    "Notable : Famous : Newsmaker",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 10.384193,
+    "lagna": 130.384193,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.583908,
+    "jd_ut": 2444401.636111,
+    "planets": {
+      "Sun": {
+        "longitude": 56.767915,
+        "sign_index": 1,
+        "degree_in_sign": 26.767915,
+        "is_retrograde": false,
+        "speed": 0.956058
+      },
+      "Moon": {
+        "longitude": 33.603051,
+        "sign_index": 1,
+        "degree_in_sign": 3.603051,
+        "is_retrograde": false,
+        "speed": 9.450231
+      },
+      "Mars": {
+        "longitude": 141.089181,
+        "sign_index": 4,
+        "degree_in_sign": 21.089181,
+        "is_retrograde": false,
+        "speed": 0.472308
+      },
+      "Mercury": {
+        "longitude": 80.873408,
+        "sign_index": 2,
+        "degree_in_sign": 20.873408,
+        "is_retrograde": false,
+        "speed": 1.153956
+      },
+      "Jupiter": {
+        "longitude": 129.643054,
+        "sign_index": 4,
+        "degree_in_sign": 9.643054,
+        "is_retrograde": false,
+        "speed": 0.122589
+      },
+      "Venus": {
+        "longitude": 63.321731,
+        "sign_index": 2,
+        "degree_in_sign": 3.321731,
+        "is_retrograde": true,
+        "speed": -0.591504
+      },
+      "Saturn": {
+        "longitude": 146.941241,
+        "sign_index": 4,
+        "degree_in_sign": 26.941241,
+        "is_retrograde": false,
+        "speed": 0.033126
+      },
+      "Rahu": {
+        "longitude": 119.728717,
+        "sign_index": 3,
+        "degree_in_sign": 29.728717,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 299.728717,
+        "sign_index": 9,
+        "degree_in_sign": 29.728717,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "adb_id": 63,
+  "name": "Croce, Benedetto",
+  "given_name": "Benedetto Croce",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402658.045046,
+    "year": 1866,
+    "month": 2,
+    "day": 25,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Pescasseroli",
+    "country": "Italy",
+    "lat": 41.8,
+    "lon": 13.783333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Croce,_Benedetto",
+  "source_notes": "Gauquelin Vol 6/862.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Diagnoses : Major Diseases : Other Major diseases",
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family traumatic event",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Public office",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 9.783097,
+    "lagna": 69.783097,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.987975,
+    "jd_ut": 2402658.045046,
+    "planets": {
+      "Sun": {
+        "longitude": 314.761632,
+        "sign_index": 10,
+        "degree_in_sign": 14.761632,
+        "is_retrograde": false,
+        "speed": 1.004261
+      },
+      "Moon": {
+        "longitude": 88.149887,
+        "sign_index": 2,
+        "degree_in_sign": 28.149887,
+        "is_retrograde": false,
+        "speed": 14.475862
+      },
+      "Mars": {
+        "longitude": 285.732606,
+        "sign_index": 9,
+        "degree_in_sign": 15.732606,
+        "is_retrograde": false,
+        "speed": 0.772027
+      },
+      "Mercury": {
+        "longitude": 311.475593,
+        "sign_index": 10,
+        "degree_in_sign": 11.475593,
+        "is_retrograde": false,
+        "speed": 1.829092
+      },
+      "Jupiter": {
+        "longitude": 270.742691,
+        "sign_index": 9,
+        "degree_in_sign": 0.742691,
+        "is_retrograde": false,
+        "speed": 0.197841
+      },
+      "Venus": {
+        "longitude": 314.629907,
+        "sign_index": 10,
+        "degree_in_sign": 14.629907,
+        "is_retrograde": false,
+        "speed": 1.250137
+      },
+      "Saturn": {
+        "longitude": 200.31222,
+        "sign_index": 6,
+        "degree_in_sign": 20.31222,
+        "is_retrograde": true,
+        "speed": -0.009761
+      },
+      "Rahu": {
+        "longitude": 171.808672,
+        "sign_index": 5,
+        "degree_in_sign": 21.808672,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 351.808672,
+        "sign_index": 11,
+        "degree_in_sign": 21.808672,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

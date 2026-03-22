@@ -1,0 +1,108 @@
+{
+  "adb_id": 71689,
+  "name": "Comart, Jean-Paul",
+  "given_name": "Jean-Paul Comart",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434648.020833,
+    "year": 1953,
+    "month": 9,
+    "day": 27,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "s",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Tournai",
+    "country": "Belgium",
+    "lat": 50.6,
+    "lon": 3.383333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comart,_Jean-Paul",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes DataSophia/ Michaël Mandl for data from birth certificate [http://www.mandlonline.com/IMG/pdf/archives_mm_am_arts_medias-3.pdf].\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.743228,
+    "lagna": 210.743228,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.210938,
+    "jd_ut": 2434648.020833,
+    "planets": {
+      "Sun": {
+        "longitude": 160.884598,
+        "sign_index": 5,
+        "degree_in_sign": 10.884598,
+        "is_retrograde": false,
+        "speed": 0.981197
+      },
+      "Moon": {
+        "longitude": 40.57895,
+        "sign_index": 1,
+        "degree_in_sign": 10.57895,
+        "is_retrograde": false,
+        "speed": 16.51318
+      },
+      "Mars": {
+        "longitude": 134.842269,
+        "sign_index": 4,
+        "degree_in_sign": 14.842269,
+        "is_retrograde": false,
+        "speed": 0.629452
+      },
+      "Mercury": {
+        "longitude": 175.972913,
+        "sign_index": 5,
+        "degree_in_sign": 25.972913,
+        "is_retrograde": false,
+        "speed": 1.559837
+      },
+      "Jupiter": {
+        "longitude": 62.752159,
+        "sign_index": 2,
+        "degree_in_sign": 2.752159,
+        "is_retrograde": false,
+        "speed": 0.057185
+      },
+      "Venus": {
+        "longitude": 130.86797,
+        "sign_index": 4,
+        "degree_in_sign": 10.86797,
+        "is_retrograde": false,
+        "speed": 1.216157
+      },
+      "Saturn": {
+        "longitude": 183.796204,
+        "sign_index": 6,
+        "degree_in_sign": 3.796204,
+        "is_retrograde": false,
+        "speed": 0.114749
+      },
+      "Rahu": {
+        "longitude": 276.592728,
+        "sign_index": 9,
+        "degree_in_sign": 6.592728,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 96.592728,
+        "sign_index": 3,
+        "degree_in_sign": 6.592728,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

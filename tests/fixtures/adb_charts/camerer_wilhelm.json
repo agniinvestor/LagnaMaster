@@ -1,0 +1,113 @@
+{
+  "adb_id": 90216,
+  "name": "Camerer, Wilhelm",
+  "given_name": "Wilhelm Camerer",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2394126.172407,
+    "year": 1842,
+    "month": 10,
+    "day": 17,
+    "calendar": "g",
+    "time": "16:45",
+    "time_type": "l",
+    "hour": 16.75,
+    "time_unknown": false,
+    "place": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.766667,
+    "lon": 9.183333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camerer,_Wilhelm",
+  "source_notes": "Sy Scholfield provided Lutheran Church birth and baptism entry (1842, page 392, no. 450).\\n",
+  "categories": [
+    "Vocation : Education : Researcher",
+    "Vocation : Medical : Physician",
+    "Vocation : Military : Other Military",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 1.625172,
+    "lagna": 331.625172,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.661885,
+    "jd_ut": 2394126.172407,
+    "planets": {
+      "Sun": {
+        "longitude": 182.218114,
+        "sign_index": 6,
+        "degree_in_sign": 2.218114,
+        "is_retrograde": false,
+        "speed": 0.993499
+      },
+      "Moon": {
+        "longitude": 342.548646,
+        "sign_index": 11,
+        "degree_in_sign": 12.548646,
+        "is_retrograde": false,
+        "speed": 11.861904
+      },
+      "Mars": {
+        "longitude": 145.00028,
+        "sign_index": 4,
+        "degree_in_sign": 25.00028,
+        "is_retrograde": false,
+        "speed": 0.620003
+      },
+      "Mercury": {
+        "longitude": 204.645277,
+        "sign_index": 6,
+        "degree_in_sign": 24.645277,
+        "is_retrograde": false,
+        "speed": 0.325973
+      },
+      "Jupiter": {
+        "longitude": 263.447971,
+        "sign_index": 8,
+        "degree_in_sign": 23.447971,
+        "is_retrograde": false,
+        "speed": 0.114292
+      },
+      "Venus": {
+        "longitude": 228.633426,
+        "sign_index": 7,
+        "degree_in_sign": 18.633426,
+        "is_retrograde": false,
+        "speed": 0.923637
+      },
+      "Saturn": {
+        "longitude": 257.161682,
+        "sign_index": 8,
+        "degree_in_sign": 17.161682,
+        "is_retrograde": false,
+        "speed": 0.055742
+      },
+      "Rahu": {
+        "longitude": 263.930957,
+        "sign_index": 8,
+        "degree_in_sign": 23.930957,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 83.930957,
+        "sign_index": 2,
+        "degree_in_sign": 23.930957,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 57632,
+  "name": "Conway, Karla",
+  "given_name": "Karla Conway",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432007.634722,
+    "year": 1946,
+    "month": 7,
+    "day": 5,
+    "calendar": "g",
+    "time": "19:14",
+    "time_type": "s",
+    "hour": 19.233333,
+    "time_unknown": false,
+    "place": "Pasadena",
+    "country": "California",
+    "lat": 34.15,
+    "lon": -118.15
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conway,_Karla",
+  "source_notes": "Alexander Angel sent copy of birth certificate, by post. The time is hard to decypher.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Beauty : Sex-symbol"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 29.978682,
+    "lagna": 239.978682,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.109979,
+    "jd_ut": 2432007.634722,
+    "planets": {
+      "Sun": {
+        "longitude": 80.347459,
+        "sign_index": 2,
+        "degree_in_sign": 20.347459,
+        "is_retrograde": false,
+        "speed": 0.953369
+      },
+      "Moon": {
+        "longitude": 169.340531,
+        "sign_index": 5,
+        "degree_in_sign": 19.340531,
+        "is_retrograde": false,
+        "speed": 8.304149
+      },
+      "Mars": {
+        "longitude": 136.000601,
+        "sign_index": 4,
+        "degree_in_sign": 16.000601,
+        "is_retrograde": false,
+        "speed": 0.587257
+      },
+      "Mercury": {
+        "longitude": 106.40481,
+        "sign_index": 3,
+        "degree_in_sign": 16.40481,
+        "is_retrograde": false,
+        "speed": 0.934365
+      },
+      "Jupiter": {
+        "longitude": 175.017259,
+        "sign_index": 5,
+        "degree_in_sign": 25.017259,
+        "is_retrograde": false,
+        "speed": 0.061816
+      },
+      "Venus": {
+        "longitude": 117.990365,
+        "sign_index": 3,
+        "degree_in_sign": 27.990365,
+        "is_retrograde": false,
+        "speed": 1.166128
+      },
+      "Saturn": {
+        "longitude": 93.355725,
+        "sign_index": 3,
+        "degree_in_sign": 3.355725,
+        "is_retrograde": false,
+        "speed": 0.127193
+      },
+      "Rahu": {
+        "longitude": 56.512227,
+        "sign_index": 1,
+        "degree_in_sign": 26.512227,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 236.512227,
+        "sign_index": 7,
+        "degree_in_sign": 26.512227,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

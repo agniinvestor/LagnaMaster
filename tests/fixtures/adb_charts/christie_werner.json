@@ -1,0 +1,110 @@
+{
+  "adb_id": 97075,
+  "name": "Christie, Werner",
+  "given_name": "Werner Christie",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433032.5625,
+    "year": 1949,
+    "month": 4,
+    "day": 26,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "s",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christie,_Werner",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 5.625207,
+    "lagna": 245.625207,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.149168,
+    "jd_ut": 2433032.5625,
+    "planets": {
+      "Sun": {
+        "longitude": 12.34352,
+        "sign_index": 0,
+        "degree_in_sign": 12.34352,
+        "is_retrograde": false,
+        "speed": 0.973192
+      },
+      "Moon": {
+        "longitude": 347.463518,
+        "sign_index": 11,
+        "degree_in_sign": 17.463518,
+        "is_retrograde": false,
+        "speed": 13.27686
+      },
+      "Mars": {
+        "longitude": 3.810083,
+        "sign_index": 0,
+        "degree_in_sign": 3.810083,
+        "is_retrograde": false,
+        "speed": 0.754218
+      },
+      "Mercury": {
+        "longitude": 26.2494,
+        "sign_index": 0,
+        "degree_in_sign": 26.2494,
+        "is_retrograde": false,
+        "speed": 1.915595
+      },
+      "Jupiter": {
+        "longitude": 278.088081,
+        "sign_index": 9,
+        "degree_in_sign": 8.088081,
+        "is_retrograde": false,
+        "speed": 0.074926
+      },
+      "Venus": {
+        "longitude": 14.719674,
+        "sign_index": 0,
+        "degree_in_sign": 14.719674,
+        "is_retrograde": false,
+        "speed": 1.235055
+      },
+      "Saturn": {
+        "longitude": 126.190074,
+        "sign_index": 4,
+        "degree_in_sign": 6.190074,
+        "is_retrograde": true,
+        "speed": -0.009481
+      },
+      "Rahu": {
+        "longitude": 2.199191,
+        "sign_index": 0,
+        "degree_in_sign": 2.199191,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.199191,
+        "sign_index": 6,
+        "degree_in_sign": 2.199191,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

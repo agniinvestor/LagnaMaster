@@ -1,0 +1,108 @@
+{
+  "adb_id": 67678,
+  "name": "Carson, Willie",
+  "given_name": "Willie Carson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430680.034722,
+    "year": 1942,
+    "month": 11,
+    "day": 16,
+    "calendar": "g",
+    "time": "13:50",
+    "time_type": "d",
+    "hour": 13.833333,
+    "time_unknown": false,
+    "place": "Stirling",
+    "country": "Scotland",
+    "lat": 56.116667,
+    "lon": -3.95
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carson,_Willie",
+  "source_notes": "Sy Scholfield requested the data from Caroline Gerard who quotes birth certificate, July 2013. \\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 11.027677,
+    "lagna": 251.027677,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.059218,
+    "jd_ut": 2430680.034722,
+    "planets": {
+      "Sun": {
+        "longitude": 210.482418,
+        "sign_index": 7,
+        "degree_in_sign": 0.482418,
+        "is_retrograde": false,
+        "speed": 1.007878
+      },
+      "Moon": {
+        "longitude": 316.369019,
+        "sign_index": 10,
+        "degree_in_sign": 16.369019,
+        "is_retrograde": false,
+        "speed": 13.616273
+      },
+      "Mars": {
+        "longitude": 196.815387,
+        "sign_index": 6,
+        "degree_in_sign": 16.815387,
+        "is_retrograde": false,
+        "speed": 0.68077
+      },
+      "Mercury": {
+        "longitude": 202.099141,
+        "sign_index": 6,
+        "degree_in_sign": 22.099141,
+        "is_retrograde": false,
+        "speed": 1.605514
+      },
+      "Jupiter": {
+        "longitude": 92.156206,
+        "sign_index": 3,
+        "degree_in_sign": 2.156206,
+        "is_retrograde": true,
+        "speed": -0.013158
+      },
+      "Venus": {
+        "longitude": 210.489565,
+        "sign_index": 7,
+        "degree_in_sign": 0.489565,
+        "is_retrograde": false,
+        "speed": 1.256298
+      },
+      "Saturn": {
+        "longitude": 47.206954,
+        "sign_index": 1,
+        "degree_in_sign": 17.206954,
+        "is_retrograde": true,
+        "speed": -0.07665
+      },
+      "Rahu": {
+        "longitude": 126.864493,
+        "sign_index": 4,
+        "degree_in_sign": 6.864493,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.864493,
+        "sign_index": 10,
+        "degree_in_sign": 6.864493,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

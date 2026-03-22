@@ -1,0 +1,112 @@
+{
+  "adb_id": 102999,
+  "name": "Cirio, Martín",
+  "given_name": "Martín Cirio",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2445865.270833,
+    "year": 1984,
+    "month": 6,
+    "day": 13,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "s",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Buenos Aires",
+    "country": "Argentina",
+    "lat": -34.6,
+    "lon": -58.45
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cirio,_Martín",
+  "source_notes": "Francisco Robledo cites a video on Martin Cirio's YouTube account in which Cirio discusses his natal chart with astrologer Gimena Accardi who shows the chart on her device at 49m32s [https://www.youtube.com/watch?v=S1CLGm5X3rA]. The chart appears as a mirror image but Sy Scholfield agrees with Robledo that the birth time would be about 3:30 PM. (The Mars, Saturn and Pluto glyphs are in the 12th house above the ascendant which is at about 15 Scorpio).\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Internet personality",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 28.278206,
+    "lagna": 178.278206,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.63988,
+    "jd_ut": 2445865.270833,
+    "planets": {
+      "Sun": {
+        "longitude": 59.264685,
+        "sign_index": 1,
+        "degree_in_sign": 29.264685,
+        "is_retrograde": false,
+        "speed": 0.954808
+      },
+      "Moon": {
+        "longitude": 241.667118,
+        "sign_index": 8,
+        "degree_in_sign": 1.667118,
+        "is_retrograde": false,
+        "speed": 17.22918
+      },
+      "Mars": {
+        "longitude": 198.307263,
+        "sign_index": 6,
+        "degree_in_sign": 18.307263,
+        "is_retrograde": true,
+        "speed": -0.081717
+      },
+      "Mercury": {
+        "longitude": 48.152544,
+        "sign_index": 1,
+        "degree_in_sign": 18.152544,
+        "is_retrograde": false,
+        "speed": 2.039994
+      },
+      "Jupiter": {
+        "longitude": 256.414575,
+        "sign_index": 8,
+        "degree_in_sign": 16.414575,
+        "is_retrograde": true,
+        "speed": -0.116468
+      },
+      "Venus": {
+        "longitude": 58.671535,
+        "sign_index": 1,
+        "degree_in_sign": 28.671535,
+        "is_retrograde": false,
+        "speed": 1.228094
+      },
+      "Saturn": {
+        "longitude": 196.753432,
+        "sign_index": 6,
+        "degree_in_sign": 16.753432,
+        "is_retrograde": true,
+        "speed": -0.045167
+      },
+      "Rahu": {
+        "longitude": 42.167743,
+        "sign_index": 1,
+        "degree_in_sign": 12.167743,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 222.167743,
+        "sign_index": 7,
+        "degree_in_sign": 12.167743,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

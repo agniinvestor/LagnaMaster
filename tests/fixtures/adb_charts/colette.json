@@ -1,0 +1,133 @@
+{
+  "adb_id": 2773,
+  "name": "Colette",
+  "given_name": "Colette",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405187.407778,
+    "year": 1873,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "St.Sauveur",
+    "country": "France",
+    "lat": 47.616667,
+    "lon": 3.2
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colette",
+  "source_notes": "Gauquelin Vol 6/210\\nSy Scholfield quotes same data from birth certificate n° 9 in the online Yonne archives, p. 6/284.\\n",
+  "categories": [
+    "Traits : Body : Weight",
+    "Traits : Personality : Attention seeking",
+    "Traits : Personality : Eccentric",
+    "Traits : Personality : Unique",
+    "Diagnoses : Major Diseases : Arthritis",
+    "Diagnoses : Psychological : Abuse - other addictions",
+    "Family : Childhood : Family close",
+    "Family : Childhood : Order of birth",
+    "Family : Childhood : Sibling circumstances",
+    "Family : Relationship : Cohabitation more than 3 yrs",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Mate - Age difference more than 15 yrs",
+    "Family : Relationship : Mate - Same sex",
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Stress - Extramarital affairs",
+    "Passions : Sexuality : Bi-Sexual",
+    "Passions : Sexuality : Extremes in quantity",
+    "Personal : Religion/Spirituality : Black Magic",
+    "Personal : Birth : Difficult birth",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Vocation : Sex Business : Exotic Dancers",
+    "Vocation : Writers : Erotic",
+    "Vocation : Writers : Fiction",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.905613,
+    "lagna": 141.905613,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.084654,
+    "jd_ut": 2405187.407778,
+    "planets": {
+      "Sun": {
+        "longitude": 287.039385,
+        "sign_index": 9,
+        "degree_in_sign": 17.039385,
+        "is_retrograde": false,
+        "speed": 1.01576
+      },
+      "Moon": {
+        "longitude": 289.087484,
+        "sign_index": 9,
+        "degree_in_sign": 19.087484,
+        "is_retrograde": false,
+        "speed": 18.730763
+      },
+      "Mars": {
+        "longitude": 190.636342,
+        "sign_index": 6,
+        "degree_in_sign": 10.636342,
+        "is_retrograde": false,
+        "speed": 0.412187
+      },
+      "Mercury": {
+        "longitude": 271.190638,
+        "sign_index": 9,
+        "degree_in_sign": 1.190638,
+        "is_retrograde": false,
+        "speed": 1.523417
+      },
+      "Jupiter": {
+        "longitude": 126.621651,
+        "sign_index": 4,
+        "degree_in_sign": 6.621651,
+        "is_retrograde": true,
+        "speed": -0.11822
+      },
+      "Venus": {
+        "longitude": 331.912503,
+        "sign_index": 11,
+        "degree_in_sign": 1.912503,
+        "is_retrograde": false,
+        "speed": 1.130365
+      },
+      "Saturn": {
+        "longitude": 273.343782,
+        "sign_index": 9,
+        "degree_in_sign": 3.343782,
+        "is_retrograde": false,
+        "speed": 0.11655
+      },
+      "Rahu": {
+        "longitude": 37.77234,
+        "sign_index": 1,
+        "degree_in_sign": 7.77234,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 217.77234,
+        "sign_index": 7,
+        "degree_in_sign": 7.77234,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

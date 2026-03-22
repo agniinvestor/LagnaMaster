@@ -1,0 +1,109 @@
+{
+  "adb_id": 86209,
+  "name": "Chestnut, George",
+  "given_name": "George Chestnut",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419307.625,
+    "year": 1911,
+    "month": 9,
+    "day": 27,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Bogard",
+    "country": "Indiana",
+    "lat": 38.783333,
+    "lon": -87.066667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chestnut,_George",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana archives. \\n",
+  "categories": [
+    "Vocation : Sports : Basketball",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 29.275895,
+    "lagna": 29.275895,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.624423,
+    "jd_ut": 2419307.625,
+    "planets": {
+      "Sun": {
+        "longitude": 161.248941,
+        "sign_index": 5,
+        "degree_in_sign": 11.248941,
+        "is_retrograde": false,
+        "speed": 0.981846
+      },
+      "Moon": {
+        "longitude": 225.144884,
+        "sign_index": 7,
+        "degree_in_sign": 15.144884,
+        "is_retrograde": false,
+        "speed": 10.778534
+      },
+      "Mars": {
+        "longitude": 45.571232,
+        "sign_index": 1,
+        "degree_in_sign": 15.571232,
+        "is_retrograde": false,
+        "speed": 0.259518
+      },
+      "Mercury": {
+        "longitude": 143.811934,
+        "sign_index": 4,
+        "degree_in_sign": 23.811934,
+        "is_retrograde": false,
+        "speed": 1.270705
+      },
+      "Jupiter": {
+        "longitude": 201.656012,
+        "sign_index": 6,
+        "degree_in_sign": 21.656012,
+        "is_retrograde": false,
+        "speed": 0.191493
+      },
+      "Venus": {
+        "longitude": 142.289567,
+        "sign_index": 4,
+        "degree_in_sign": 22.289567,
+        "is_retrograde": true,
+        "speed": -0.347369
+      },
+      "Saturn": {
+        "longitude": 27.045456,
+        "sign_index": 0,
+        "degree_in_sign": 27.045456,
+        "is_retrograde": true,
+        "speed": -0.04343
+      },
+      "Rahu": {
+        "longitude": 9.51216,
+        "sign_index": 0,
+        "degree_in_sign": 9.51216,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 189.51216,
+        "sign_index": 6,
+        "degree_in_sign": 9.51216,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

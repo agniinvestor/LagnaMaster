@@ -1,0 +1,114 @@
+{
+  "adb_id": 104188,
+  "name": "Camacho Quirós, Marita",
+  "given_name": "Marita Camacho Quirós",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419106.566816,
+    "year": 1911,
+    "month": 3,
+    "day": 10,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "San Ramón",
+    "country": "Costa Rica",
+    "lat": 10.1,
+    "lon": -84.466667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camacho_Quirós,_Marita",
+  "source_notes": "Birth document (Catholic Church record of christening, San Ramón, Alajuela, Costa Rica) in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Other Politics",
+    "Notable : Famous : Notable extremes"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 2.095619,
+    "lagna": 152.095619,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.616736,
+    "jd_ut": 2419106.566816,
+    "planets": {
+      "Sun": {
+        "longitude": 326.757622,
+        "sign_index": 10,
+        "degree_in_sign": 26.757622,
+        "is_retrograde": false,
+        "speed": 0.998197
+      },
+      "Moon": {
+        "longitude": 97.5131,
+        "sign_index": 3,
+        "degree_in_sign": 7.5131,
+        "is_retrograde": false,
+        "speed": 8.209105
+      },
+      "Mars": {
+        "longitude": 275.21815,
+        "sign_index": 9,
+        "degree_in_sign": 5.21815,
+        "is_retrograde": false,
+        "speed": 0.737353
+      },
+      "Mercury": {
+        "longitude": 318.205347,
+        "sign_index": 10,
+        "degree_in_sign": 18.205347,
+        "is_retrograde": false,
+        "speed": 1.807948
+      },
+      "Jupiter": {
+        "longitude": 201.791294,
+        "sign_index": 6,
+        "degree_in_sign": 21.791294,
+        "is_retrograde": true,
+        "speed": -0.030338
+      },
+      "Venus": {
+        "longitude": 351.547666,
+        "sign_index": 11,
+        "degree_in_sign": 21.547666,
+        "is_retrograde": false,
+        "speed": 1.231255
+      },
+      "Saturn": {
+        "longitude": 10.974788,
+        "sign_index": 0,
+        "degree_in_sign": 10.974788,
+        "is_retrograde": false,
+        "speed": 0.103931
+      },
+      "Rahu": {
+        "longitude": 20.166655,
+        "sign_index": 0,
+        "degree_in_sign": 20.166655,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 200.166655,
+        "sign_index": 6,
+        "degree_in_sign": 20.166655,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

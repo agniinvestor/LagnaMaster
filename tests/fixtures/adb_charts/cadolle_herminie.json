@@ -1,0 +1,113 @@
+{
+  "adb_id": 93805,
+  "name": "Cadolle, Herminie",
+  "given_name": "Herminie Cadolle",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2394065.203796,
+    "year": 1842,
+    "month": 8,
+    "day": 17,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Beaugency",
+    "country": "France",
+    "lat": 47.783333,
+    "lon": 1.633333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cadolle,_Herminie",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_in_inventeurs-2.pdf].\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Business : Business owner",
+    "Vocation : Business/Marketing : Sales",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 28.502664,
+    "lagna": 238.502664,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.659555,
+    "jd_ut": 2394065.203796,
+    "planets": {
+      "Sun": {
+        "longitude": 122.640589,
+        "sign_index": 4,
+        "degree_in_sign": 2.640589,
+        "is_retrograde": false,
+        "speed": 0.962133
+      },
+      "Moon": {
+        "longitude": 265.782277,
+        "sign_index": 8,
+        "degree_in_sign": 25.782277,
+        "is_retrograde": false,
+        "speed": 10.553638
+      },
+      "Mars": {
+        "longitude": 106.578611,
+        "sign_index": 3,
+        "degree_in_sign": 16.578611,
+        "is_retrograde": false,
+        "speed": 0.640571
+      },
+      "Mercury": {
+        "longitude": 116.249128,
+        "sign_index": 3,
+        "degree_in_sign": 26.249128,
+        "is_retrograde": false,
+        "speed": 2.018724
+      },
+      "Jupiter": {
+        "longitude": 261.972526,
+        "sign_index": 8,
+        "degree_in_sign": 21.972526,
+        "is_retrograde": true,
+        "speed": -0.06937
+      },
+      "Venus": {
+        "longitude": 163.326101,
+        "sign_index": 5,
+        "degree_in_sign": 13.326101,
+        "is_retrograde": false,
+        "speed": 1.152598
+      },
+      "Saturn": {
+        "longitude": 256.672766,
+        "sign_index": 8,
+        "degree_in_sign": 16.672766,
+        "is_retrograde": true,
+        "speed": -0.03936
+      },
+      "Rahu": {
+        "longitude": 267.161816,
+        "sign_index": 8,
+        "degree_in_sign": 27.161816,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 87.161816,
+        "sign_index": 2,
+        "degree_in_sign": 27.161816,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

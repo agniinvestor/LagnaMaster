@@ -1,0 +1,118 @@
+{
+  "adb_id": 100000,
+  "name": "Chaney, William",
+  "given_name": "William Chaney",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423412.3125,
+    "year": 1922,
+    "month": 12,
+    "day": 23,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Arcadia",
+    "country": "California",
+    "lat": 34.133333,
+    "lon": -118.033333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaney,_William",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Relationship : Married late/never",
+    "Family : Parenting : Kids none",
+    "Lifestyle : Financial : Gain - Grant, Scholarship, etc.",
+    "Lifestyle : Social Life : Animals, pets",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 8.297082,
+    "lagna": 308.297082,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.781348,
+    "jd_ut": 2423412.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 248.431263,
+        "sign_index": 8,
+        "degree_in_sign": 8.431263,
+        "is_retrograde": false,
+        "speed": 1.018947
+      },
+      "Moon": {
+        "longitude": 312.391969,
+        "sign_index": 10,
+        "degree_in_sign": 12.391969,
+        "is_retrograde": false,
+        "speed": 10.426676
+      },
+      "Mars": {
+        "longitude": 316.224644,
+        "sign_index": 10,
+        "degree_in_sign": 16.224644,
+        "is_retrograde": false,
+        "speed": 0.735363
+      },
+      "Mercury": {
+        "longitude": 258.02741,
+        "sign_index": 8,
+        "degree_in_sign": 18.02741,
+        "is_retrograde": false,
+        "speed": 1.596819
+      },
+      "Jupiter": {
+        "longitude": 199.046802,
+        "sign_index": 6,
+        "degree_in_sign": 19.046802,
+        "is_retrograde": false,
+        "speed": 0.176
+      },
+      "Venus": {
+        "longitude": 212.990033,
+        "sign_index": 7,
+        "degree_in_sign": 2.990033,
+        "is_retrograde": false,
+        "speed": 0.302285
+      },
+      "Saturn": {
+        "longitude": 176.139324,
+        "sign_index": 5,
+        "degree_in_sign": 26.139324,
+        "is_retrograde": false,
+        "speed": 0.062438
+      },
+      "Rahu": {
+        "longitude": 151.996181,
+        "sign_index": 5,
+        "degree_in_sign": 1.996181,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 331.996181,
+        "sign_index": 11,
+        "degree_in_sign": 1.996181,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

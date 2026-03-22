@@ -1,0 +1,109 @@
+{
+  "adb_id": 65071,
+  "name": "Corteggiani, François",
+  "given_name": "François Corteggiani",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434642.013889,
+    "year": 1953,
+    "month": 9,
+    "day": 21,
+    "calendar": "g",
+    "time": "13:20",
+    "time_type": "s",
+    "hour": 13.333333,
+    "time_unknown": false,
+    "place": "Nice",
+    "country": "France",
+    "lat": 43.7,
+    "lon": 7.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corteggiani,_François",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 235.\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist",
+    "Vocation : Writers : Humor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 2.890148,
+    "lagna": 212.890148,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.210708,
+    "jd_ut": 2434642.013889,
+    "planets": {
+      "Sun": {
+        "longitude": 155.001438,
+        "sign_index": 5,
+        "degree_in_sign": 5.001438,
+        "is_retrograde": false,
+        "speed": 0.977725
+      },
+      "Moon": {
+        "longitude": 311.484742,
+        "sign_index": 10,
+        "degree_in_sign": 11.484742,
+        "is_retrograde": false,
+        "speed": 18.1526
+      },
+      "Mars": {
+        "longitude": 131.057634,
+        "sign_index": 4,
+        "degree_in_sign": 11.057634,
+        "is_retrograde": false,
+        "speed": 0.630681
+      },
+      "Mercury": {
+        "longitude": 166.32592,
+        "sign_index": 5,
+        "degree_in_sign": 16.32592,
+        "is_retrograde": false,
+        "speed": 1.653649
+      },
+      "Jupiter": {
+        "longitude": 62.354319,
+        "sign_index": 2,
+        "degree_in_sign": 2.354319,
+        "is_retrograde": false,
+        "speed": 0.075108
+      },
+      "Venus": {
+        "longitude": 123.584625,
+        "sign_index": 4,
+        "degree_in_sign": 3.584625,
+        "is_retrograde": false,
+        "speed": 1.20877
+      },
+      "Saturn": {
+        "longitude": 183.116185,
+        "sign_index": 6,
+        "degree_in_sign": 3.116185,
+        "is_retrograde": false,
+        "speed": 0.111571
+      },
+      "Rahu": {
+        "longitude": 276.911048,
+        "sign_index": 9,
+        "degree_in_sign": 6.911048,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 96.911048,
+        "sign_index": 3,
+        "degree_in_sign": 6.911048,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

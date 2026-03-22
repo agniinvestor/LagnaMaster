@@ -1,0 +1,109 @@
+{
+  "adb_id": 69202,
+  "name": "Chaintron, Jean",
+  "given_name": "Jean Chaintron",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417450.70184,
+    "year": 1906,
+    "month": 8,
+    "day": 28,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaintron,_Jean",
+  "source_notes": "Didier Geslain archive, 'resistance collaboration' pdf file, p. 10.\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 17.102359,
+    "lagna": 107.102359,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.553433,
+    "jd_ut": 2417450.70184,
+    "planets": {
+      "Sun": {
+        "longitude": 131.416722,
+        "sign_index": 4,
+        "degree_in_sign": 11.416722,
+        "is_retrograde": false,
+        "speed": 0.966007
+      },
+      "Moon": {
+        "longitude": 236.682096,
+        "sign_index": 7,
+        "degree_in_sign": 26.682096,
+        "is_retrograde": false,
+        "speed": 17.798011
+      },
+      "Mars": {
+        "longitude": 117.711466,
+        "sign_index": 3,
+        "degree_in_sign": 27.711466,
+        "is_retrograde": false,
+        "speed": 0.636676
+      },
+      "Mercury": {
+        "longitude": 113.412136,
+        "sign_index": 3,
+        "degree_in_sign": 23.412136,
+        "is_retrograde": false,
+        "speed": 0.749257
+      },
+      "Jupiter": {
+        "longitude": 72.740626,
+        "sign_index": 2,
+        "degree_in_sign": 12.740626,
+        "is_retrograde": false,
+        "speed": 0.166096
+      },
+      "Venus": {
+        "longitude": 176.333344,
+        "sign_index": 5,
+        "degree_in_sign": 26.333344,
+        "is_retrograde": false,
+        "speed": 1.083091
+      },
+      "Saturn": {
+        "longitude": 319.689845,
+        "sign_index": 10,
+        "degree_in_sign": 19.689845,
+        "is_retrograde": true,
+        "speed": -0.075218
+      },
+      "Rahu": {
+        "longitude": 107.914419,
+        "sign_index": 3,
+        "degree_in_sign": 17.914419,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 287.914419,
+        "sign_index": 9,
+        "degree_in_sign": 17.914419,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

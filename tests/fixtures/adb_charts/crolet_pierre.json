@@ -1,0 +1,108 @@
+{
+  "adb_id": 47642,
+  "name": "Crolet, Pierre",
+  "given_name": "Pierre Crolet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424794.458333,
+    "year": 1926,
+    "month": 10,
+    "day": 5,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Clairvaux les Lacs",
+    "country": "France",
+    "lat": 46.566667,
+    "lon": 5.75
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crolet,_Pierre",
+  "source_notes": "Petitallot quotes B.C. in Cadran 1/1993\\n",
+  "categories": [
+    "Personal : Death : Accidental"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 10.697887,
+    "lagna": 70.697887,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.83419,
+    "jd_ut": 2424794.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 169.109357,
+        "sign_index": 5,
+        "degree_in_sign": 19.109357,
+        "is_retrograde": false,
+        "speed": 0.98646
+      },
+      "Moon": {
+        "longitude": 158.721959,
+        "sign_index": 5,
+        "degree_in_sign": 8.721959,
+        "is_retrograde": false,
+        "speed": 15.407018
+      },
+      "Mars": {
+        "longitude": 26.28764,
+        "sign_index": 0,
+        "degree_in_sign": 26.28764,
+        "is_retrograde": true,
+        "speed": -0.101276
+      },
+      "Mercury": {
+        "longitude": 180.980373,
+        "sign_index": 6,
+        "degree_in_sign": 0.980373,
+        "is_retrograde": false,
+        "speed": 1.58964
+      },
+      "Jupiter": {
+        "longitude": 294.598521,
+        "sign_index": 9,
+        "degree_in_sign": 24.598521,
+        "is_retrograde": true,
+        "speed": -0.027633
+      },
+      "Venus": {
+        "longitude": 157.268404,
+        "sign_index": 5,
+        "degree_in_sign": 7.268404,
+        "is_retrograde": false,
+        "speed": 1.246693
+      },
+      "Saturn": {
+        "longitude": 210.586448,
+        "sign_index": 7,
+        "degree_in_sign": 0.586448,
+        "is_retrograde": false,
+        "speed": 0.098835
+      },
+      "Rahu": {
+        "longitude": 78.753393,
+        "sign_index": 2,
+        "degree_in_sign": 18.753393,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 258.753393,
+        "sign_index": 8,
+        "degree_in_sign": 18.753393,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

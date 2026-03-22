@@ -1,0 +1,108 @@
+{
+  "adb_id": 71507,
+  "name": "Cisneros Sanchez, Manuel",
+  "given_name": "Manuel Cisneros Sanchez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416785.776528,
+    "year": 1904,
+    "month": 11,
+    "day": 1,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "l",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cisneros_Sanchez,_Manuel",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 12.727313,
+    "lagna": 102.727313,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.528014,
+    "jd_ut": 2416785.776528,
+    "planets": {
+      "Sun": {
+        "longitude": 195.892862,
+        "sign_index": 6,
+        "degree_in_sign": 15.892862,
+        "is_retrograde": false,
+        "speed": 1.001197
+      },
+      "Moon": {
+        "longitude": 110.671986,
+        "sign_index": 3,
+        "degree_in_sign": 20.671986,
+        "is_retrograde": false,
+        "speed": 11.791455
+      },
+      "Mars": {
+        "longitude": 146.212828,
+        "sign_index": 4,
+        "degree_in_sign": 26.212828,
+        "is_retrograde": false,
+        "speed": 0.600523
+      },
+      "Mercury": {
+        "longitude": 196.423088,
+        "sign_index": 6,
+        "degree_in_sign": 16.423088,
+        "is_retrograde": false,
+        "speed": 1.626069
+      },
+      "Jupiter": {
+        "longitude": 0.869828,
+        "sign_index": 0,
+        "degree_in_sign": 0.869828,
+        "is_retrograde": true,
+        "speed": -0.125999
+      },
+      "Venus": {
+        "longitude": 226.126352,
+        "sign_index": 7,
+        "degree_in_sign": 16.126352,
+        "is_retrograde": false,
+        "speed": 1.227865
+      },
+      "Saturn": {
+        "longitude": 291.9618,
+        "sign_index": 9,
+        "degree_in_sign": 21.9618,
+        "is_retrograde": false,
+        "speed": 0.021993
+      },
+      "Rahu": {
+        "longitude": 143.15021,
+        "sign_index": 4,
+        "degree_in_sign": 23.15021,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 323.15021,
+        "sign_index": 10,
+        "degree_in_sign": 23.15021,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 52664,
+  "name": "Codegone, Cesare",
+  "given_name": "Cesare Codegone",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416556.138889,
+    "year": 1904,
+    "month": 3,
+    "day": 16,
+    "calendar": "g",
+    "time": "16:20",
+    "time_type": "s",
+    "hour": 16.333333,
+    "time_unknown": false,
+    "place": "Novara",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 8.633333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Codegone,_Cesare",
+  "source_notes": "Steinbrecher collection: Gauquelin vol 2 no 2996\\n",
+  "categories": [
+    "Vocation : Engineer : Civil",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 16.634529,
+    "lagna": 106.634529,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.519235,
+    "jd_ut": 2416556.138889,
+    "planets": {
+      "Sun": {
+        "longitude": 333.10492,
+        "sign_index": 11,
+        "degree_in_sign": 3.10492,
+        "is_retrograde": false,
+        "speed": 0.995382
+      },
+      "Moon": {
+        "longitude": 325.784021,
+        "sign_index": 10,
+        "degree_in_sign": 25.784021,
+        "is_retrograde": false,
+        "speed": 10.41497
+      },
+      "Mars": {
+        "longitude": 351.635359,
+        "sign_index": 11,
+        "degree_in_sign": 21.635359,
+        "is_retrograde": false,
+        "speed": 0.758678
+      },
+      "Mercury": {
+        "longitude": 323.562668,
+        "sign_index": 10,
+        "degree_in_sign": 23.562668,
+        "is_retrograde": false,
+        "speed": 1.820928
+      },
+      "Jupiter": {
+        "longitude": 341.184107,
+        "sign_index": 11,
+        "degree_in_sign": 11.184107,
+        "is_retrograde": false,
+        "speed": 0.241221
+      },
+      "Venus": {
+        "longitude": 303.770982,
+        "sign_index": 10,
+        "degree_in_sign": 3.770982,
+        "is_retrograde": false,
+        "speed": 1.224765
+      },
+      "Saturn": {
+        "longitude": 294.173254,
+        "sign_index": 9,
+        "degree_in_sign": 24.173254,
+        "is_retrograde": false,
+        "speed": 0.101923
+      },
+      "Rahu": {
+        "longitude": 155.319192,
+        "sign_index": 5,
+        "degree_in_sign": 5.319192,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 335.319192,
+        "sign_index": 11,
+        "degree_in_sign": 5.319192,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 79483,
+  "name": "Capoul, Victor",
+  "given_name": "Victor Capoul",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2392797.871019,
+    "year": 1839,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Toulouse",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capoul,_Victor",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection. \\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Ears",
+    "Lifestyle : Financial : Loss - Financial crisis",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Vocalist/Opera",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 24.484291,
+    "lagna": 354.484291,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.61112,
+    "jd_ut": 2392797.871019,
+    "planets": {
+      "Sun": {
+        "longitude": 316.512951,
+        "sign_index": 10,
+        "degree_in_sign": 16.512951,
+        "is_retrograde": false,
+        "speed": 1.003255
+      },
+      "Moon": {
+        "longitude": 125.272634,
+        "sign_index": 4,
+        "degree_in_sign": 5.272634,
+        "is_retrograde": false,
+        "speed": 15.563748
+      },
+      "Mars": {
+        "longitude": 154.163249,
+        "sign_index": 5,
+        "degree_in_sign": 4.163249,
+        "is_retrograde": true,
+        "speed": -0.324141
+      },
+      "Mercury": {
+        "longitude": 304.734857,
+        "sign_index": 10,
+        "degree_in_sign": 4.734857,
+        "is_retrograde": false,
+        "speed": 1.702604
+      },
+      "Jupiter": {
+        "longitude": 176.159842,
+        "sign_index": 5,
+        "degree_in_sign": 26.159842,
+        "is_retrograde": true,
+        "speed": -0.074636
+      },
+      "Venus": {
+        "longitude": 333.409624,
+        "sign_index": 11,
+        "degree_in_sign": 3.409624,
+        "is_retrograde": false,
+        "speed": 1.243464
+      },
+      "Saturn": {
+        "longitude": 228.351589,
+        "sign_index": 7,
+        "degree_in_sign": 18.351589,
+        "is_retrograde": false,
+        "speed": 0.034893
+      },
+      "Rahu": {
+        "longitude": 334.320522,
+        "sign_index": 11,
+        "degree_in_sign": 4.320522,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 154.320522,
+        "sign_index": 5,
+        "degree_in_sign": 4.320522,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

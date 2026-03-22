@@ -1,0 +1,109 @@
+{
+  "adb_id": 93723,
+  "name": "Cassiers, Georges",
+  "given_name": "Georges Cassiers",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417586.59375,
+    "year": 1907,
+    "month": 1,
+    "day": 11,
+    "calendar": "g",
+    "time": "02:15",
+    "time_type": "s",
+    "hour": 2.25,
+    "time_unknown": false,
+    "place": "Brussels",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassiers,_Georges",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_po_politique-2.pdf].\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Diplomat"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 25.579724,
+    "lagna": 175.579724,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.558628,
+    "jd_ut": 2417586.59375,
+    "planets": {
+      "Sun": {
+        "longitude": 267.162047,
+        "sign_index": 8,
+        "degree_in_sign": 27.162047,
+        "is_retrograde": false,
+        "speed": 1.019281
+      },
+      "Moon": {
+        "longitude": 223.806381,
+        "sign_index": 7,
+        "degree_in_sign": 13.806381,
+        "is_retrograde": false,
+        "speed": 15.448719
+      },
+      "Mars": {
+        "longitude": 202.419203,
+        "sign_index": 6,
+        "degree_in_sign": 22.419203,
+        "is_retrograde": false,
+        "speed": 0.602973
+      },
+      "Mercury": {
+        "longitude": 253.52904,
+        "sign_index": 8,
+        "degree_in_sign": 13.52904,
+        "is_retrograde": false,
+        "speed": 1.517074
+      },
+      "Jupiter": {
+        "longitude": 71.670322,
+        "sign_index": 2,
+        "degree_in_sign": 11.670322,
+        "is_retrograde": true,
+        "speed": -0.126195
+      },
+      "Venus": {
+        "longitude": 224.753857,
+        "sign_index": 7,
+        "degree_in_sign": 14.753857,
+        "is_retrograde": false,
+        "speed": 0.659058
+      },
+      "Saturn": {
+        "longitude": 318.663038,
+        "sign_index": 10,
+        "degree_in_sign": 18.663038,
+        "is_retrograde": false,
+        "speed": 0.09127
+      },
+      "Rahu": {
+        "longitude": 100.713221,
+        "sign_index": 3,
+        "degree_in_sign": 10.713221,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 280.713221,
+        "sign_index": 9,
+        "degree_in_sign": 10.713221,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

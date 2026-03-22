@@ -1,0 +1,108 @@
+{
+  "adb_id": 53461,
+  "name": "Colletin, Jeanne",
+  "given_name": "Jeanne Colletin",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429095.791667,
+    "year": 1938,
+    "month": 7,
+    "day": 16,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "d",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Toulouse",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colletin,_Jeanne",
+  "source_notes": "Steinbrecher collection: Gauquelin ns 3/0368\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 5.5793,
+    "lagna": 95.5793,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.998645,
+    "jd_ut": 2429095.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 90.079698,
+        "sign_index": 3,
+        "degree_in_sign": 0.079698,
+        "is_retrograde": false,
+        "speed": 0.953664
+      },
+      "Moon": {
+        "longitude": 309.789352,
+        "sign_index": 10,
+        "degree_in_sign": 9.789352,
+        "is_retrograde": false,
+        "speed": 10.847581
+      },
+      "Mars": {
+        "longitude": 92.704025,
+        "sign_index": 3,
+        "degree_in_sign": 2.704025,
+        "is_retrograde": false,
+        "speed": 0.647248
+      },
+      "Mercury": {
+        "longitude": 112.514359,
+        "sign_index": 3,
+        "degree_in_sign": 22.514359,
+        "is_retrograde": false,
+        "speed": 1.543546
+      },
+      "Jupiter": {
+        "longitude": 308.289439,
+        "sign_index": 10,
+        "degree_in_sign": 8.289439,
+        "is_retrograde": true,
+        "speed": -0.075922
+      },
+      "Venus": {
+        "longitude": 129.37023,
+        "sign_index": 4,
+        "degree_in_sign": 9.37023,
+        "is_retrograde": false,
+        "speed": 1.154577
+      },
+      "Saturn": {
+        "longitude": 354.859838,
+        "sign_index": 11,
+        "degree_in_sign": 24.859838,
+        "is_retrograde": false,
+        "speed": 0.025065
+      },
+      "Rahu": {
+        "longitude": 210.81681,
+        "sign_index": 7,
+        "degree_in_sign": 0.81681,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 30.81681,
+        "sign_index": 1,
+        "degree_in_sign": 0.81681,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

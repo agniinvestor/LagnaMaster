@@ -1,0 +1,108 @@
+{
+  "adb_id": 76644,
+  "name": "Clemen, Paul",
+  "given_name": "Paul Clemen",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2402905.538657,
+    "year": 1866,
+    "month": 10,
+    "day": 31,
+    "calendar": "g",
+    "time": "01:45",
+    "time_type": "l",
+    "hour": 1.75,
+    "time_unknown": false,
+    "place": "Leipzig",
+    "country": "Germany",
+    "lat": 51.316667,
+    "lon": 12.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clemen,_Paul",
+  "source_notes": "Sy Scholfield quotes from the book ''Paul Clemen: 1866 - 1947; erster Provinzialkonservator d. Rheinprovinz; Katalog; [Ausstellung aus Anlaß seines 125. Geburtstages vom 1. Oktober - 5. November 1991]'' by Rheinisches Landesmuseum Bonn (Rheinland-Verlag, 1991), p. 21: \"31. Oktober früh ¾ 2 Uhr geboren.\" Translation: Born at 1:45 AM on 31 October.\\n",
+  "categories": [
+    "Vocation : Art : Other Art"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 28.60818,
+    "lagna": 118.60818,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.997435,
+    "jd_ut": 2402905.538657,
+    "planets": {
+      "Sun": {
+        "longitude": 195.397746,
+        "sign_index": 6,
+        "degree_in_sign": 15.397746,
+        "is_retrograde": false,
+        "speed": 1.000943
+      },
+      "Moon": {
+        "longitude": 111.422805,
+        "sign_index": 3,
+        "degree_in_sign": 21.422805,
+        "is_retrograde": false,
+        "speed": 11.968296
+      },
+      "Mars": {
+        "longitude": 92.374606,
+        "sign_index": 3,
+        "degree_in_sign": 2.374606,
+        "is_retrograde": false,
+        "speed": 0.336898
+      },
+      "Mercury": {
+        "longitude": 212.159791,
+        "sign_index": 7,
+        "degree_in_sign": 2.159791,
+        "is_retrograde": false,
+        "speed": 1.45201
+      },
+      "Jupiter": {
+        "longitude": 273.195733,
+        "sign_index": 9,
+        "degree_in_sign": 3.195733,
+        "is_retrograde": false,
+        "speed": 0.125234
+      },
+      "Venus": {
+        "longitude": 237.598291,
+        "sign_index": 7,
+        "degree_in_sign": 27.598291,
+        "is_retrograde": false,
+        "speed": 0.637503
+      },
+      "Saturn": {
+        "longitude": 202.125152,
+        "sign_index": 6,
+        "degree_in_sign": 22.125152,
+        "is_retrograde": false,
+        "speed": 0.119373
+      },
+      "Rahu": {
+        "longitude": 158.693456,
+        "sign_index": 5,
+        "degree_in_sign": 8.693456,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 338.693456,
+        "sign_index": 11,
+        "degree_in_sign": 8.693456,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

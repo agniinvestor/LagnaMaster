@@ -1,0 +1,117 @@
+{
+  "adb_id": 7399,
+  "name": "Cernan, Gene",
+  "given_name": "Gene Cernan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427510.85625,
+    "year": 1934,
+    "month": 3,
+    "day": 14,
+    "calendar": "g",
+    "time": "02:33",
+    "time_type": "s",
+    "hour": 2.55,
+    "time_unknown": false,
+    "place": "Chicago",
+    "country": "Illinois",
+    "lat": 41.85,
+    "lon": -87.65
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cernan,_Gene",
+  "source_notes": "Gauquelin Book of American Charts\\n(Lynn Koiner quotes him by letter for a time of 0630, with his printed notation \"I think.\")\\n",
+  "categories": [
+    "Traits : Body : Constitution hardy",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Abusive - Neglectful",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Engineer : Electrical",
+    "Vocation : Military : Military career",
+    "Vocation : Travel : Astronaut",
+    "Vocation : Travel : Pilot/ military",
+    "Notable : Famous : Historic figure"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.692141,
+    "lagna": 232.692141,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.938047,
+    "jd_ut": 2427510.85625,
+    "planets": {
+      "Sun": {
+        "longitude": 330.138313,
+        "sign_index": 11,
+        "degree_in_sign": 0.138313,
+        "is_retrograde": false,
+        "speed": 0.997012
+      },
+      "Moon": {
+        "longitude": 315.247116,
+        "sign_index": 10,
+        "degree_in_sign": 15.247116,
+        "is_retrograde": false,
+        "speed": 16.636721
+      },
+      "Mars": {
+        "longitude": 337.039478,
+        "sign_index": 11,
+        "degree_in_sign": 7.039478,
+        "is_retrograde": false,
+        "speed": 0.777217
+      },
+      "Mercury": {
+        "longitude": 314.679458,
+        "sign_index": 10,
+        "degree_in_sign": 14.679458,
+        "is_retrograde": true,
+        "speed": -0.521766
+      },
+      "Jupiter": {
+        "longitude": 178.39423,
+        "sign_index": 5,
+        "degree_in_sign": 28.39423,
+        "is_retrograde": true,
+        "speed": -0.099918
+      },
+      "Venus": {
+        "longitude": 289.878831,
+        "sign_index": 9,
+        "degree_in_sign": 19.878831,
+        "is_retrograde": false,
+        "speed": 0.540092
+      },
+      "Saturn": {
+        "longitude": 299.851052,
+        "sign_index": 9,
+        "degree_in_sign": 29.851052,
+        "is_retrograde": false,
+        "speed": 0.109521
+      },
+      "Rahu": {
+        "longitude": 294.805822,
+        "sign_index": 9,
+        "degree_in_sign": 24.805822,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 114.805822,
+        "sign_index": 3,
+        "degree_in_sign": 24.805822,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

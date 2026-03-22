@@ -1,0 +1,110 @@
+{
+  "adb_id": 54971,
+  "name": "Coffey, Todd",
+  "given_name": "Todd Coffey",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444492.602083,
+    "year": 1980,
+    "month": 9,
+    "day": 9,
+    "calendar": "g",
+    "time": "22:27",
+    "time_type": "d",
+    "hour": 22.45,
+    "time_unknown": false,
+    "place": "Shelby",
+    "country": "North Carolina",
+    "lat": 35.3,
+    "lon": -81.533333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coffey,_Todd",
+  "source_notes": "Stephen Przybylowski quotes birth certificate\\n",
+  "categories": [
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Sports : Baseball"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 2.87228,
+    "lagna": 2.87228,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.587387,
+    "jd_ut": 2444492.602083,
+    "planets": {
+      "Sun": {
+        "longitude": 143.949062,
+        "sign_index": 4,
+        "degree_in_sign": 23.949062,
+        "is_retrograde": false,
+        "speed": 0.972536
+      },
+      "Moon": {
+        "longitude": 151.174943,
+        "sign_index": 5,
+        "degree_in_sign": 1.174943,
+        "is_retrograde": false,
+        "speed": 14.590646
+      },
+      "Mars": {
+        "longitude": 194.222867,
+        "sign_index": 6,
+        "degree_in_sign": 14.222867,
+        "is_retrograde": false,
+        "speed": 0.667428
+      },
+      "Mercury": {
+        "longitude": 156.447142,
+        "sign_index": 5,
+        "degree_in_sign": 6.447142,
+        "is_retrograde": false,
+        "speed": 1.680774
+      },
+      "Jupiter": {
+        "longitude": 146.455083,
+        "sign_index": 4,
+        "degree_in_sign": 26.455083,
+        "is_retrograde": false,
+        "speed": 0.216483
+      },
+      "Venus": {
+        "longitude": 98.893527,
+        "sign_index": 3,
+        "degree_in_sign": 8.893527,
+        "is_retrograde": false,
+        "speed": 1.058184
+      },
+      "Saturn": {
+        "longitude": 155.013337,
+        "sign_index": 5,
+        "degree_in_sign": 5.013337,
+        "is_retrograde": false,
+        "speed": 0.122644
+      },
+      "Rahu": {
+        "longitude": 114.908245,
+        "sign_index": 3,
+        "degree_in_sign": 24.908245,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 294.908245,
+        "sign_index": 9,
+        "degree_in_sign": 24.908245,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

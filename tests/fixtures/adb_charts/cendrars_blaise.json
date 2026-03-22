@@ -1,0 +1,109 @@
+{
+  "adb_id": 55883,
+  "name": "Cendrars, Blaise",
+  "given_name": "Blaise Cendrars",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410516.302245,
+    "year": 1887,
+    "month": 9,
+    "day": 1,
+    "calendar": "g",
+    "time": "19:45",
+    "time_type": "s",
+    "hour": 19.75,
+    "time_unknown": false,
+    "place": "La Chaux-De-Fonds",
+    "country": "Switzerland",
+    "lat": 47.1,
+    "lon": 6.833333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cendrars,_Blaise",
+  "source_notes": "Collection Didier Geslain \\nSy Scholfield cites same data from birth record quoted in \"Blaise Cendrars: Homme libre, poète au coeur du monde\" by Jean Bühler (Éditions du Panorama, Fischbacher, 1960), p. 9: \"Blaise Cendrars est né le 1er septembre 1887, à 19 heures 45, à La Chaux-de-Fonds. Son père Georges Frédéric Sauser le déclara à l'état-civil sous les prénoms de Frédéric Louis. \"\\n",
+  "categories": [
+    "Vocation : Travel : Adventurer",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 28.15576,
+    "lagna": 328.15576,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.288349,
+    "jd_ut": 2410516.302245,
+    "planets": {
+      "Sun": {
+        "longitude": 136.704556,
+        "sign_index": 4,
+        "degree_in_sign": 16.704556,
+        "is_retrograde": false,
+        "speed": 0.968231
+      },
+      "Moon": {
+        "longitude": 309.547489,
+        "sign_index": 10,
+        "degree_in_sign": 9.547489,
+        "is_retrograde": false,
+        "speed": 9.975292
+      },
+      "Mars": {
+        "longitude": 101.32315,
+        "sign_index": 3,
+        "degree_in_sign": 11.32315,
+        "is_retrograde": false,
+        "speed": 0.635296
+      },
+      "Mercury": {
+        "longitude": 128.152714,
+        "sign_index": 4,
+        "degree_in_sign": 8.152714,
+        "is_retrograde": false,
+        "speed": 1.937884
+      },
+      "Jupiter": {
+        "longitude": 190.258192,
+        "sign_index": 6,
+        "degree_in_sign": 10.258192,
+        "is_retrograde": false,
+        "speed": 0.167633
+      },
+      "Venus": {
+        "longitude": 163.929711,
+        "sign_index": 5,
+        "degree_in_sign": 13.929711,
+        "is_retrograde": true,
+        "speed": -0.05042
+      },
+      "Saturn": {
+        "longitude": 99.35177,
+        "sign_index": 3,
+        "degree_in_sign": 9.35177,
+        "is_retrograde": false,
+        "speed": 0.11185
+      },
+      "Rahu": {
+        "longitude": 115.382894,
+        "sign_index": 3,
+        "degree_in_sign": 25.382894,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 295.382894,
+        "sign_index": 9,
+        "degree_in_sign": 25.382894,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

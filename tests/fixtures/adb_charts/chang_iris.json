@@ -1,0 +1,110 @@
+{
+  "adb_id": 58455,
+  "name": "Chang, Iris",
+  "given_name": "Iris Chang",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2439944.258333,
+    "year": 1968,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "13:12",
+    "time_type": "s",
+    "hour": 13.2,
+    "time_unknown": false,
+    "place": "Princeton",
+    "country": "New Jersey",
+    "lat": 40.35,
+    "lon": -74.666667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chang,_Iris",
+  "source_notes": "Sy Scholfield quotes Ying-Ying Chang's \"The Woman Who Could Not Forget: Iris Chang Before and Beyond 'The Rape of Nanking'\" (Open Road Media, 2011): \"[At Princeton] . . . Iris was born at 1:12 P.M. on Thursday, March 28, 1968.\"  \\n",
+  "categories": [
+    "Personal : Death : Suicide",
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 21.50929,
+    "lagna": 81.50929,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.413456,
+    "jd_ut": 2439944.258333,
+    "planets": {
+      "Sun": {
+        "longitude": 344.715808,
+        "sign_index": 11,
+        "degree_in_sign": 14.715808,
+        "is_retrograde": false,
+        "speed": 0.988817
+      },
+      "Moon": {
+        "longitude": 342.124723,
+        "sign_index": 11,
+        "degree_in_sign": 12.124723,
+        "is_retrograde": false,
+        "speed": 8.509782
+      },
+      "Mars": {
+        "longitude": 7.156247,
+        "sign_index": 0,
+        "degree_in_sign": 7.156247,
+        "is_retrograde": false,
+        "speed": 0.737444
+      },
+      "Mercury": {
+        "longitude": 321.621737,
+        "sign_index": 10,
+        "degree_in_sign": 21.621737,
+        "is_retrograde": false,
+        "speed": 1.499016
+      },
+      "Jupiter": {
+        "longitude": 123.317125,
+        "sign_index": 4,
+        "degree_in_sign": 3.317125,
+        "is_retrograde": true,
+        "speed": -0.073164
+      },
+      "Venus": {
+        "longitude": 322.85112,
+        "sign_index": 10,
+        "degree_in_sign": 22.85112,
+        "is_retrograde": false,
+        "speed": 1.23247
+      },
+      "Saturn": {
+        "longitude": 351.025875,
+        "sign_index": 11,
+        "degree_in_sign": 21.025875,
+        "is_retrograde": false,
+        "speed": 0.125548
+      },
+      "Rahu": {
+        "longitude": 355.934248,
+        "sign_index": 11,
+        "degree_in_sign": 25.934248,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 175.934248,
+        "sign_index": 5,
+        "degree_in_sign": 25.934248,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

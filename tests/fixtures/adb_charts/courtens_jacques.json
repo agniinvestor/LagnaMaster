@@ -1,0 +1,108 @@
+{
+  "adb_id": 58642,
+  "name": "Courtens, Jacques",
+  "given_name": "Jacques Courtens",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424630.041667,
+    "year": 1926,
+    "month": 4,
+    "day": 24,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "d",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Saint-Josse-ten-Noode",
+    "country": "Belgium",
+    "lat": 50.85,
+    "lon": 4.366667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courtens,_Jacques",
+  "source_notes": "André Dekoster quoted birth registry, email Oct. 2013 \\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 16.82567,
+    "lagna": 106.82567,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.827904,
+    "jd_ut": 2424630.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 10.766524,
+        "sign_index": 0,
+        "degree_in_sign": 10.766524,
+        "is_retrograde": false,
+        "speed": 0.973478
+      },
+      "Moon": {
+        "longitude": 151.366401,
+        "sign_index": 5,
+        "degree_in_sign": 1.366401,
+        "is_retrograde": false,
+        "speed": 13.871049
+      },
+      "Mars": {
+        "longitude": 300.553604,
+        "sign_index": 10,
+        "degree_in_sign": 0.553604,
+        "is_retrograde": false,
+        "speed": 0.722865
+      },
+      "Mercury": {
+        "longitude": 344.175725,
+        "sign_index": 11,
+        "degree_in_sign": 14.175725,
+        "is_retrograde": false,
+        "speed": 0.778936
+      },
+      "Jupiter": {
+        "longitude": 300.207327,
+        "sign_index": 10,
+        "degree_in_sign": 0.207327,
+        "is_retrograde": false,
+        "speed": 0.146342
+      },
+      "Venus": {
+        "longitude": 324.607357,
+        "sign_index": 10,
+        "degree_in_sign": 24.607357,
+        "is_retrograde": false,
+        "speed": 1.010362
+      },
+      "Saturn": {
+        "longitude": 211.392494,
+        "sign_index": 7,
+        "degree_in_sign": 1.392494,
+        "is_retrograde": true,
+        "speed": -0.067457
+      },
+      "Rahu": {
+        "longitude": 87.466175,
+        "sign_index": 2,
+        "degree_in_sign": 27.466175,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 267.466175,
+        "sign_index": 8,
+        "degree_in_sign": 27.466175,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

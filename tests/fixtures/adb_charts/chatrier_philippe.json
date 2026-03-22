@@ -1,0 +1,108 @@
+{
+  "adb_id": 51910,
+  "name": "Chatrier, Philippe",
+  "given_name": "Philippe Chatrier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425278.927083,
+    "year": 1928,
+    "month": 2,
+    "day": 2,
+    "calendar": "g",
+    "time": "10:15",
+    "time_type": "s",
+    "hour": 10.25,
+    "time_unknown": false,
+    "place": "Créteil",
+    "country": "France",
+    "lat": 48.8,
+    "lon": 2.466667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chatrier,_Philippe",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/2049\\n",
+  "categories": [
+    "Vocation : Sports : Tennis"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 20.034005,
+    "lagna": 350.034005,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.852713,
+    "jd_ut": 2425278.927083,
+    "planets": {
+      "Sun": {
+        "longitude": 289.488864,
+        "sign_index": 9,
+        "degree_in_sign": 19.488864,
+        "is_retrograde": false,
+        "speed": 1.014367
+      },
+      "Moon": {
+        "longitude": 66.709171,
+        "sign_index": 2,
+        "degree_in_sign": 6.709171,
+        "is_retrograde": false,
+        "speed": 17.645063
+      },
+      "Mars": {
+        "longitude": 257.754752,
+        "sign_index": 8,
+        "degree_in_sign": 17.754752,
+        "is_retrograde": false,
+        "speed": 0.743391
+      },
+      "Mercury": {
+        "longitude": 305.616115,
+        "sign_index": 10,
+        "degree_in_sign": 5.616115,
+        "is_retrograde": false,
+        "speed": 1.552244
+      },
+      "Jupiter": {
+        "longitude": 339.096156,
+        "sign_index": 11,
+        "degree_in_sign": 9.096156,
+        "is_retrograde": false,
+        "speed": 0.19695
+      },
+      "Venus": {
+        "longitude": 252.456893,
+        "sign_index": 8,
+        "degree_in_sign": 12.456893,
+        "is_retrograde": false,
+        "speed": 1.213705
+      },
+      "Saturn": {
+        "longitude": 233.843183,
+        "sign_index": 7,
+        "degree_in_sign": 23.843183,
+        "is_retrograde": false,
+        "speed": 0.082919
+      },
+      "Rahu": {
+        "longitude": 53.080386,
+        "sign_index": 1,
+        "degree_in_sign": 23.080386,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 233.080386,
+        "sign_index": 7,
+        "degree_in_sign": 23.080386,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 50080,
+  "name": "Conrad, Lauren",
+  "given_name": "Lauren Conrad",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446463.077778,
+    "year": 1986,
+    "month": 2,
+    "day": 1,
+    "calendar": "g",
+    "time": "05:52",
+    "time_type": "s",
+    "hour": 5.866667,
+    "time_unknown": false,
+    "place": "Newport Beach",
+    "country": "California",
+    "lat": 33.616667,
+    "lon": -117.933333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conrad,_Lauren",
+  "source_notes": "PT quotes birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 7.356557,
+    "lagna": 247.356557,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.662742,
+    "jd_ut": 2446463.077778,
+    "planets": {
+      "Sun": {
+        "longitude": 288.749724,
+        "sign_index": 9,
+        "degree_in_sign": 18.749724,
+        "is_retrograde": false,
+        "speed": 1.014827
+      },
+      "Moon": {
+        "longitude": 190.842782,
+        "sign_index": 6,
+        "degree_in_sign": 10.842782,
+        "is_retrograde": false,
+        "speed": 9.219944
+      },
+      "Mars": {
+        "longitude": 215.930834,
+        "sign_index": 7,
+        "degree_in_sign": 5.930834,
+        "is_retrograde": false,
+        "speed": 0.591789
+      },
+      "Mercury": {
+        "longitude": 289.129061,
+        "sign_index": 9,
+        "degree_in_sign": 19.129061,
+        "is_retrograde": false,
+        "speed": 1.73544
+      },
+      "Jupiter": {
+        "longitude": 301.768768,
+        "sign_index": 10,
+        "degree_in_sign": 1.768768,
+        "is_retrograde": false,
+        "speed": 0.237055
+      },
+      "Venus": {
+        "longitude": 291.846296,
+        "sign_index": 9,
+        "degree_in_sign": 21.846296,
+        "is_retrograde": false,
+        "speed": 1.255251
+      },
+      "Saturn": {
+        "longitude": 224.330945,
+        "sign_index": 7,
+        "degree_in_sign": 14.330945,
+        "is_retrograde": false,
+        "speed": 0.071769
+      },
+      "Rahu": {
+        "longitude": 10.488742,
+        "sign_index": 0,
+        "degree_in_sign": 10.488742,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 190.488742,
+        "sign_index": 6,
+        "degree_in_sign": 10.488742,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

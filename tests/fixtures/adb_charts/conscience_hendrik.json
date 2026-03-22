@@ -1,0 +1,108 @@
+{
+  "adb_id": 47612,
+  "name": "Conscience, Hendrik",
+  "given_name": "Hendrik Conscience",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2383215.800231,
+    "year": 1812,
+    "month": 12,
+    "day": 3,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "l",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Antwerpen",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 4.416667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conscience,_Hendrik",
+  "source_notes": "Gauquelin Vol 6/1053\\n",
+  "categories": [
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 24.469697,
+    "lagna": 204.469697,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.244937,
+    "jd_ut": 2383215.800231,
+    "planets": {
+      "Sun": {
+        "longitude": 229.806192,
+        "sign_index": 7,
+        "degree_in_sign": 19.806192,
+        "is_retrograde": false,
+        "speed": 1.015669
+      },
+      "Moon": {
+        "longitude": 222.532073,
+        "sign_index": 7,
+        "degree_in_sign": 12.532073,
+        "is_retrograde": false,
+        "speed": 10.44025
+      },
+      "Mars": {
+        "longitude": 184.612227,
+        "sign_index": 6,
+        "degree_in_sign": 4.612227,
+        "is_retrograde": false,
+        "speed": 0.632147
+      },
+      "Mercury": {
+        "longitude": 248.287598,
+        "sign_index": 8,
+        "degree_in_sign": 8.287598,
+        "is_retrograde": false,
+        "speed": 1.390815
+      },
+      "Jupiter": {
+        "longitude": 107.733683,
+        "sign_index": 3,
+        "degree_in_sign": 17.733683,
+        "is_retrograde": true,
+        "speed": -0.025635
+      },
+      "Venus": {
+        "longitude": 189.254577,
+        "sign_index": 6,
+        "degree_in_sign": 9.254577,
+        "is_retrograde": false,
+        "speed": 1.193662
+      },
+      "Saturn": {
+        "longitude": 255.781926,
+        "sign_index": 8,
+        "degree_in_sign": 15.781926,
+        "is_retrograde": false,
+        "speed": 0.110159
+      },
+      "Rahu": {
+        "longitude": 122.095324,
+        "sign_index": 4,
+        "degree_in_sign": 2.095324,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 302.095324,
+        "sign_index": 10,
+        "degree_in_sign": 2.095324,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

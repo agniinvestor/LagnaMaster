@@ -1,0 +1,112 @@
+{
+  "adb_id": 14568,
+  "name": "Carradine, Tom",
+  "given_name": "Tom Carradine",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441596.858333,
+    "year": 1972,
+    "month": 10,
+    "day": 6,
+    "calendar": "g",
+    "time": "01:36",
+    "time_type": "d",
+    "hour": 1.6,
+    "time_unknown": false,
+    "place": "Hollywood",
+    "country": "California",
+    "lat": 34.1,
+    "lon": -118.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carradine,_Tom",
+  "source_notes": "B.C. in hand from the Wilsons\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Parents divorced",
+    "Personal : Birth : Illegitimate birth",
+    "Personal : Misc. : Changed name",
+    "Vocation : Entertain/Business : Production jobs"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 19.620351,
+    "lagna": 79.620351,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.476651,
+    "jd_ut": 2441596.858333,
+    "planets": {
+      "Sun": {
+        "longitude": 169.705128,
+        "sign_index": 5,
+        "degree_in_sign": 19.705128,
+        "is_retrograde": false,
+        "speed": 0.98679
+      },
+      "Moon": {
+        "longitude": 159.076561,
+        "sign_index": 5,
+        "degree_in_sign": 9.076561,
+        "is_retrograde": false,
+        "speed": 16.253725
+      },
+      "Mars": {
+        "longitude": 159.996943,
+        "sign_index": 5,
+        "degree_in_sign": 9.996943,
+        "is_retrograde": false,
+        "speed": 0.646795
+      },
+      "Mercury": {
+        "longitude": 181.650207,
+        "sign_index": 6,
+        "degree_in_sign": 1.650207,
+        "is_retrograde": false,
+        "speed": 1.58666
+      },
+      "Jupiter": {
+        "longitude": 247.657589,
+        "sign_index": 8,
+        "degree_in_sign": 7.657589,
+        "is_retrograde": false,
+        "speed": 0.120772
+      },
+      "Venus": {
+        "longitude": 127.666784,
+        "sign_index": 4,
+        "degree_in_sign": 7.666784,
+        "is_retrograde": false,
+        "speed": 1.146883
+      },
+      "Saturn": {
+        "longitude": 57.10488,
+        "sign_index": 1,
+        "degree_in_sign": 27.10488,
+        "is_retrograde": true,
+        "speed": -0.006845
+      },
+      "Rahu": {
+        "longitude": 268.3596,
+        "sign_index": 8,
+        "degree_in_sign": 28.3596,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 88.3596,
+        "sign_index": 2,
+        "degree_in_sign": 28.3596,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

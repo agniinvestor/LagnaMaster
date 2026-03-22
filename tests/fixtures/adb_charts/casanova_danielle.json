@@ -1,0 +1,110 @@
+{
+  "adb_id": 69211,
+  "name": "Casanova, Danielle",
+  "given_name": "Danielle Casanova",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418316.20184,
+    "year": 1909,
+    "month": 1,
+    "day": 9,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Ajaccio",
+    "country": "France",
+    "lat": 41.916667,
+    "lon": 8.733333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casanova,_Danielle",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'resistance collaboration' pdf file, p. 25.\\n",
+  "categories": [
+    "Passions : Criminal Victim : Concentration camp",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 12.491523,
+    "lagna": 72.491523,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.586521,
+    "jd_ut": 2418316.20184,
+    "planets": {
+      "Sun": {
+        "longitude": 266.242536,
+        "sign_index": 8,
+        "degree_in_sign": 26.242536,
+        "is_retrograde": false,
+        "speed": 1.018738
+      },
+      "Moon": {
+        "longitude": 121.751582,
+        "sign_index": 4,
+        "degree_in_sign": 1.751582,
+        "is_retrograde": false,
+        "speed": 14.603003
+      },
+      "Mars": {
+        "longitude": 217.111697,
+        "sign_index": 7,
+        "degree_in_sign": 7.111697,
+        "is_retrograde": false,
+        "speed": 0.663481
+      },
+      "Mercury": {
+        "longitude": 276.300031,
+        "sign_index": 9,
+        "degree_in_sign": 6.300031,
+        "is_retrograde": false,
+        "speed": 1.660494
+      },
+      "Jupiter": {
+        "longitude": 141.776625,
+        "sign_index": 4,
+        "degree_in_sign": 21.776625,
+        "is_retrograde": true,
+        "speed": -0.03246
+      },
+      "Venus": {
+        "longitude": 239.608875,
+        "sign_index": 7,
+        "degree_in_sign": 29.608875,
+        "is_retrograde": false,
+        "speed": 1.244619
+      },
+      "Saturn": {
+        "longitude": 341.806997,
+        "sign_index": 11,
+        "degree_in_sign": 11.806997,
+        "is_retrograde": false,
+        "speed": 0.058768
+      },
+      "Rahu": {
+        "longitude": 62.049755,
+        "sign_index": 2,
+        "degree_in_sign": 2.049755,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 242.049755,
+        "sign_index": 8,
+        "degree_in_sign": 2.049755,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

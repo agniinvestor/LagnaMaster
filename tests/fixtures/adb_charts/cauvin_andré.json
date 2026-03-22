@@ -1,0 +1,108 @@
+{
+  "adb_id": 57844,
+  "name": "Cauvin, André",
+  "given_name": "André Cauvin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417619.354167,
+    "year": 1907,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Ixelles",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.366667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cauvin,_André",
+  "source_notes": "acte n° 130, André Dekoster, cited by Lepoivre\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 17.44511,
+    "lagna": 137.44511,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.559881,
+    "jd_ut": 2417619.354167,
+    "planets": {
+      "Sun": {
+        "longitude": 300.440029,
+        "sign_index": 10,
+        "degree_in_sign": 0.440029,
+        "is_retrograde": false,
+        "speed": 1.011269
+      },
+      "Moon": {
+        "longitude": 301.299508,
+        "sign_index": 10,
+        "degree_in_sign": 1.299508,
+        "is_retrograde": false,
+        "speed": 16.677744
+      },
+      "Mars": {
+        "longitude": 221.768138,
+        "sign_index": 7,
+        "degree_in_sign": 11.768138,
+        "is_retrograde": false,
+        "speed": 0.575515
+      },
+      "Mercury": {
+        "longitude": 308.348318,
+        "sign_index": 10,
+        "degree_in_sign": 8.348318,
+        "is_retrograde": false,
+        "speed": 1.830057
+      },
+      "Jupiter": {
+        "longitude": 68.726141,
+        "sign_index": 2,
+        "degree_in_sign": 8.726141,
+        "is_retrograde": true,
+        "speed": -0.043393
+      },
+      "Venus": {
+        "longitude": 253.686183,
+        "sign_index": 8,
+        "degree_in_sign": 13.686183,
+        "is_retrograde": false,
+        "speed": 1.030726
+      },
+      "Saturn": {
+        "longitude": 322.136433,
+        "sign_index": 10,
+        "degree_in_sign": 22.136433,
+        "is_retrograde": false,
+        "speed": 0.117329
+      },
+      "Rahu": {
+        "longitude": 98.977178,
+        "sign_index": 3,
+        "degree_in_sign": 8.977178,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 278.977178,
+        "sign_index": 9,
+        "degree_in_sign": 8.977178,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

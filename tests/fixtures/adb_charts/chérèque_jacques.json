@@ -1,0 +1,108 @@
+{
+  "adb_id": 83807,
+  "name": "Chérèque, Jacques",
+  "given_name": "Jacques Chérèque",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425499.208333,
+    "year": 1928,
+    "month": 9,
+    "day": 9,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "d",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Dijon",
+    "country": "France",
+    "lat": 47.316667,
+    "lon": 5.016667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chérèque,_Jacques",
+  "source_notes": "Régine Ruet in L'Astrologue 83. Cedra database.\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ social"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 3.325555,
+    "lagna": 273.325555,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.861135,
+    "jd_ut": 2425499.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 143.883035,
+        "sign_index": 4,
+        "degree_in_sign": 23.883035,
+        "is_retrograde": false,
+        "speed": 0.972325
+      },
+      "Moon": {
+        "longitude": 89.461207,
+        "sign_index": 2,
+        "degree_in_sign": 29.461207,
+        "is_retrograde": false,
+        "speed": 16.802744
+      },
+      "Mars": {
+        "longitude": 55.880167,
+        "sign_index": 1,
+        "degree_in_sign": 25.880167,
+        "is_retrograde": false,
+        "speed": 0.538656
+      },
+      "Mercury": {
+        "longitude": 163.390141,
+        "sign_index": 5,
+        "degree_in_sign": 13.390141,
+        "is_retrograde": false,
+        "speed": 1.511788
+      },
+      "Jupiter": {
+        "longitude": 17.387586,
+        "sign_index": 0,
+        "degree_in_sign": 17.387586,
+        "is_retrograde": true,
+        "speed": -0.034458
+      },
+      "Venus": {
+        "longitude": 162.996406,
+        "sign_index": 5,
+        "degree_in_sign": 12.996406,
+        "is_retrograde": false,
+        "speed": 1.233182
+      },
+      "Saturn": {
+        "longitude": 230.095188,
+        "sign_index": 7,
+        "degree_in_sign": 20.095188,
+        "is_retrograde": false,
+        "speed": 0.037821
+      },
+      "Rahu": {
+        "longitude": 41.407224,
+        "sign_index": 1,
+        "degree_in_sign": 11.407224,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 221.407224,
+        "sign_index": 7,
+        "degree_in_sign": 11.407224,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

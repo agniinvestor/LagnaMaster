@@ -1,0 +1,108 @@
+{
+  "adb_id": 54960,
+  "name": "Cohana, Mélissande",
+  "given_name": "Mélissande Cohana",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2448245.773611,
+    "year": 1990,
+    "month": 12,
+    "day": 20,
+    "calendar": "g",
+    "time": "07:34",
+    "time_type": "s",
+    "hour": 7.566667,
+    "time_unknown": false,
+    "place": "Vénissieux",
+    "country": "France",
+    "lat": 45.683333,
+    "lon": 4.883333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohana,_Mélissande",
+  "source_notes": "Paddy de Jabrun quotes birth certificate\\n",
+  "categories": [
+    "Family : Childhood : Family traumatic event"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.022695,
+    "lagna": 210.022695,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.730917,
+    "jd_ut": 2448245.773611,
+    "planets": {
+      "Sun": {
+        "longitude": 244.374309,
+        "sign_index": 8,
+        "degree_in_sign": 4.374309,
+        "is_retrograde": false,
+        "speed": 1.018406
+      },
+      "Moon": {
+        "longitude": 278.51756,
+        "sign_index": 9,
+        "degree_in_sign": 8.51756,
+        "is_retrograde": false,
+        "speed": 13.173204
+      },
+      "Mars": {
+        "longitude": 35.033048,
+        "sign_index": 1,
+        "degree_in_sign": 5.033048,
+        "is_retrograde": true,
+        "speed": -0.167358
+      },
+      "Mercury": {
+        "longitude": 253.534558,
+        "sign_index": 8,
+        "degree_in_sign": 13.534558,
+        "is_retrograde": true,
+        "speed": -1.005861
+      },
+      "Jupiter": {
+        "longitude": 109.203095,
+        "sign_index": 3,
+        "degree_in_sign": 19.203095,
+        "is_retrograde": true,
+        "speed": -0.064876
+      },
+      "Venus": {
+        "longitude": 256.272526,
+        "sign_index": 8,
+        "degree_in_sign": 16.272526,
+        "is_retrograde": false,
+        "speed": 1.255496
+      },
+      "Saturn": {
+        "longitude": 270.595249,
+        "sign_index": 9,
+        "degree_in_sign": 0.595249,
+        "is_retrograde": false,
+        "speed": 0.110748
+      },
+      "Rahu": {
+        "longitude": 276.020083,
+        "sign_index": 9,
+        "degree_in_sign": 6.020083,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 96.020083,
+        "sign_index": 3,
+        "degree_in_sign": 6.020083,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

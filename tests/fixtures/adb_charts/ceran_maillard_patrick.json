@@ -1,0 +1,108 @@
+{
+  "adb_id": 64964,
+  "name": "Ceran-Maillard, Patrick",
+  "given_name": "Patrick Ceran-Maillard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428468.9375,
+    "year": 1936,
+    "month": 10,
+    "day": 27,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "s",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ceran-Maillard,_Patrick",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 99.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 1.677422,
+    "lagna": 211.677422,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.974678,
+    "jd_ut": 2428468.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 190.85199,
+        "sign_index": 6,
+        "degree_in_sign": 10.85199,
+        "is_retrograde": false,
+        "speed": 0.998124
+      },
+      "Moon": {
+        "longitude": 330.973303,
+        "sign_index": 11,
+        "degree_in_sign": 0.973303,
+        "is_retrograde": false,
+        "speed": 18.137372
+      },
+      "Mars": {
+        "longitude": 146.039879,
+        "sign_index": 4,
+        "degree_in_sign": 26.039879,
+        "is_retrograde": false,
+        "speed": 0.609063
+      },
+      "Mercury": {
+        "longitude": 177.156135,
+        "sign_index": 5,
+        "degree_in_sign": 27.156135,
+        "is_retrograde": false,
+        "speed": 1.612028
+      },
+      "Jupiter": {
+        "longitude": 239.600466,
+        "sign_index": 7,
+        "degree_in_sign": 29.600466,
+        "is_retrograde": false,
+        "speed": 0.18547
+      },
+      "Venus": {
+        "longitude": 222.19998,
+        "sign_index": 7,
+        "degree_in_sign": 12.19998,
+        "is_retrograde": false,
+        "speed": 1.223901
+      },
+      "Saturn": {
+        "longitude": 323.255058,
+        "sign_index": 10,
+        "degree_in_sign": 23.255058,
+        "is_retrograde": true,
+        "speed": -0.038547
+      },
+      "Rahu": {
+        "longitude": 244.035111,
+        "sign_index": 8,
+        "degree_in_sign": 4.035111,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 64.035111,
+        "sign_index": 2,
+        "degree_in_sign": 4.035111,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

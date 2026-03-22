@@ -1,0 +1,109 @@
+{
+  "adb_id": 64895,
+  "name": "Cachera, Jean-Paul",
+  "given_name": "Jean-Paul Cachera",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426318.84375,
+    "year": 1930,
+    "month": 12,
+    "day": 8,
+    "calendar": "g",
+    "time": "08:15",
+    "time_type": "s",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Boulogne Billancourt",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cachera,_Jean-Paul",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 6.\\n",
+  "categories": [
+    "Vocation : Medical : Surgeon",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 7.675489,
+    "lagna": 217.675489,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.892472,
+    "jd_ut": 2426318.84375,
+    "planets": {
+      "Sun": {
+        "longitude": 232.634303,
+        "sign_index": 7,
+        "degree_in_sign": 22.634303,
+        "is_retrograde": false,
+        "speed": 1.015477
+      },
+      "Moon": {
+        "longitude": 82.405589,
+        "sign_index": 2,
+        "degree_in_sign": 22.405589,
+        "is_retrograde": false,
+        "speed": 14.971012
+      },
+      "Mars": {
+        "longitude": 113.259402,
+        "sign_index": 3,
+        "degree_in_sign": 23.259402,
+        "is_retrograde": false,
+        "speed": 0.126044
+      },
+      "Mercury": {
+        "longitude": 249.274365,
+        "sign_index": 8,
+        "degree_in_sign": 9.274365,
+        "is_retrograde": false,
+        "speed": 1.463632
+      },
+      "Jupiter": {
+        "longitude": 86.141513,
+        "sign_index": 2,
+        "degree_in_sign": 26.141513,
+        "is_retrograde": true,
+        "speed": -0.094369
+      },
+      "Venus": {
+        "longitude": 209.645611,
+        "sign_index": 6,
+        "degree_in_sign": 29.645611,
+        "is_retrograde": true,
+        "speed": -0.205161
+      },
+      "Saturn": {
+        "longitude": 258.087135,
+        "sign_index": 8,
+        "degree_in_sign": 18.087135,
+        "is_retrograde": false,
+        "speed": 0.110635
+      },
+      "Rahu": {
+        "longitude": 357.973039,
+        "sign_index": 11,
+        "degree_in_sign": 27.973039,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 177.973039,
+        "sign_index": 5,
+        "degree_in_sign": 27.973039,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

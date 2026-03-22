@@ -1,0 +1,111 @@
+{
+  "adb_id": 62690,
+  "name": "Camoin, Charles",
+  "given_name": "Charles Camoin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407616.005833,
+    "year": 1879,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "l",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camoin,_Charles",
+  "source_notes": "Archives de Marseille, Conservateur du Patrimoine, there with exact time.\\n\\nBirth certificate also on file in Didier Geslain archive, 'sculpteurs' pdf file, p. 70.\\n",
+  "categories": [
+    "Traits : Personality : Creative",
+    "Family : Childhood : Order of birth",
+    "Lifestyle : Work : Work alone/ Singular role",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 2.835193,
+    "lagna": 212.835193,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.177485,
+    "jd_ut": 2407616.005833,
+    "planets": {
+      "Sun": {
+        "longitude": 157.899183,
+        "sign_index": 5,
+        "degree_in_sign": 7.899183,
+        "is_retrograde": false,
+        "speed": 0.979757
+      },
+      "Moon": {
+        "longitude": 256.461738,
+        "sign_index": 8,
+        "degree_in_sign": 16.461738,
+        "is_retrograde": false,
+        "speed": 13.496354
+      },
+      "Mars": {
+        "longitude": 35.372778,
+        "sign_index": 1,
+        "degree_in_sign": 5.372778,
+        "is_retrograde": false,
+        "speed": 0.182262
+      },
+      "Mercury": {
+        "longitude": 147.600312,
+        "sign_index": 4,
+        "degree_in_sign": 27.600312,
+        "is_retrograde": false,
+        "speed": 1.817291
+      },
+      "Jupiter": {
+        "longitude": 312.716363,
+        "sign_index": 10,
+        "degree_in_sign": 12.716363,
+        "is_retrograde": true,
+        "speed": -0.107005
+      },
+      "Venus": {
+        "longitude": 158.796938,
+        "sign_index": 5,
+        "degree_in_sign": 8.796938,
+        "is_retrograde": true,
+        "speed": -0.615159
+      },
+      "Saturn": {
+        "longitude": 351.118072,
+        "sign_index": 11,
+        "degree_in_sign": 21.118072,
+        "is_retrograde": true,
+        "speed": -0.075432
+      },
+      "Rahu": {
+        "longitude": 269.075758,
+        "sign_index": 8,
+        "degree_in_sign": 29.075758,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 89.075758,
+        "sign_index": 2,
+        "degree_in_sign": 29.075758,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

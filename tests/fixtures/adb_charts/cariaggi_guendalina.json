@@ -1,0 +1,112 @@
+{
+  "adb_id": 39222,
+  "name": "Cariaggi, Guendalina",
+  "given_name": "Guendalina Cariaggi",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440720.25,
+    "year": 1970,
+    "month": 5,
+    "day": 13,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Milan",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cariaggi,_Guendalina",
+  "source_notes": "Bordoni quotes B.C. Datanotizie No.27, 9/1999\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Diagnoses : Psychological : Mental Illness",
+    "Diagnoses : Psychological : Schizophrenia",
+    "Family : Childhood : Family noted",
+    "Family : Parenting : Kids 1-3"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 28.414691,
+    "lagna": 178.414691,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.44313,
+    "jd_ut": 2440720.25,
+    "planets": {
+      "Sun": {
+        "longitude": 29.10653,
+        "sign_index": 0,
+        "degree_in_sign": 29.10653,
+        "is_retrograde": false,
+        "speed": 0.964864
+      },
+      "Moon": {
+        "longitude": 122.670779,
+        "sign_index": 4,
+        "degree_in_sign": 2.670779,
+        "is_retrograde": false,
+        "speed": 8.170745
+      },
+      "Mars": {
+        "longitude": 53.525923,
+        "sign_index": 1,
+        "degree_in_sign": 23.525923,
+        "is_retrograde": false,
+        "speed": 0.672409
+      },
+      "Mercury": {
+        "longitude": 22.260803,
+        "sign_index": 0,
+        "degree_in_sign": 22.260803,
+        "is_retrograde": true,
+        "speed": -0.535049
+      },
+      "Jupiter": {
+        "longitude": 184.97437,
+        "sign_index": 6,
+        "degree_in_sign": 4.97437,
+        "is_retrograde": true,
+        "speed": -0.107488
+      },
+      "Venus": {
+        "longitude": 55.877659,
+        "sign_index": 1,
+        "degree_in_sign": 25.877659,
+        "is_retrograde": false,
+        "speed": 1.210338
+      },
+      "Saturn": {
+        "longitude": 20.06259,
+        "sign_index": 0,
+        "degree_in_sign": 20.06259,
+        "is_retrograde": false,
+        "speed": 0.127404
+      },
+      "Rahu": {
+        "longitude": 314.812864,
+        "sign_index": 10,
+        "degree_in_sign": 14.812864,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 134.812864,
+        "sign_index": 4,
+        "degree_in_sign": 14.812864,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

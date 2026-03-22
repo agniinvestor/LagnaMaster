@@ -1,0 +1,109 @@
+{
+  "adb_id": 79059,
+  "name": "Canali, Nicola",
+  "given_name": "Nicola Canali",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405682.381991,
+    "year": 1874,
+    "month": 6,
+    "day": 7,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Rieti",
+    "country": "Italy",
+    "lat": 42.4,
+    "lon": 12.85
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canali,_Nicola",
+  "source_notes": "Memo from BC in Steinbrecher collection, \"misc_4\" file, p. 41/164.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 9.429757,
+    "lagna": 249.429757,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.103574,
+    "jd_ut": 2405682.381991,
+    "planets": {
+      "Sun": {
+        "longitude": 54.768658,
+        "sign_index": 1,
+        "degree_in_sign": 24.768658,
+        "is_retrograde": false,
+        "speed": 0.956055
+      },
+      "Moon": {
+        "longitude": 329.363707,
+        "sign_index": 10,
+        "degree_in_sign": 29.363707,
+        "is_retrograde": false,
+        "speed": 16.361134
+      },
+      "Mars": {
+        "longitude": 62.777418,
+        "sign_index": 2,
+        "degree_in_sign": 2.777418,
+        "is_retrograde": false,
+        "speed": 0.672673
+      },
+      "Mercury": {
+        "longitude": 70.591583,
+        "sign_index": 2,
+        "degree_in_sign": 10.591583,
+        "is_retrograde": false,
+        "speed": 1.8741
+      },
+      "Jupiter": {
+        "longitude": 150.315896,
+        "sign_index": 5,
+        "degree_in_sign": 0.315896,
+        "is_retrograde": false,
+        "speed": 0.057899
+      },
+      "Venus": {
+        "longitude": 81.236132,
+        "sign_index": 2,
+        "degree_in_sign": 21.236132,
+        "is_retrograde": false,
+        "speed": 1.208436
+      },
+      "Saturn": {
+        "longitude": 292.053601,
+        "sign_index": 9,
+        "degree_in_sign": 22.053601,
+        "is_retrograde": true,
+        "speed": -0.022741
+      },
+      "Rahu": {
+        "longitude": 11.542602,
+        "sign_index": 0,
+        "degree_in_sign": 11.542602,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 191.542602,
+        "sign_index": 6,
+        "degree_in_sign": 11.542602,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

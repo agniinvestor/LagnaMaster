@@ -1,0 +1,110 @@
+{
+  "adb_id": 71659,
+  "name": "Ciavarro, Massimo",
+  "given_name": "Massimo Ciavarro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436150.402778,
+    "year": 1957,
+    "month": 11,
+    "day": 7,
+    "calendar": "g",
+    "time": "22:40",
+    "time_type": "s",
+    "hour": 22.666667,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ciavarro,_Massimo",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 22.327845,
+    "lagna": 82.327845,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.268385,
+    "jd_ut": 2436150.402778,
+    "planets": {
+      "Sun": {
+        "longitude": 201.951979,
+        "sign_index": 6,
+        "degree_in_sign": 21.951979,
+        "is_retrograde": false,
+        "speed": 1.003753
+      },
+      "Moon": {
+        "longitude": 25.52396,
+        "sign_index": 0,
+        "degree_in_sign": 25.52396,
+        "is_retrograde": false,
+        "speed": 8.955645
+      },
+      "Mars": {
+        "longitude": 186.078738,
+        "sign_index": 6,
+        "degree_in_sign": 6.078738,
+        "is_retrograde": false,
+        "speed": 0.666741
+      },
+      "Mercury": {
+        "longitude": 210.814368,
+        "sign_index": 7,
+        "degree_in_sign": 0.814368,
+        "is_retrograde": false,
+        "speed": 1.54818
+      },
+      "Jupiter": {
+        "longitude": 175.948843,
+        "sign_index": 5,
+        "degree_in_sign": 25.948843,
+        "is_retrograde": false,
+        "speed": 0.205171
+      },
+      "Venus": {
+        "longitude": 248.771716,
+        "sign_index": 8,
+        "degree_in_sign": 8.771716,
+        "is_retrograde": false,
+        "speed": 1.063846
+      },
+      "Saturn": {
+        "longitude": 229.90462,
+        "sign_index": 7,
+        "degree_in_sign": 19.90462,
+        "is_retrograde": false,
+        "speed": 0.108921
+      },
+      "Rahu": {
+        "longitude": 196.978422,
+        "sign_index": 6,
+        "degree_in_sign": 16.978422,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 16.978422,
+        "sign_index": 0,
+        "degree_in_sign": 16.978422,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

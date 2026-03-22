@@ -1,0 +1,109 @@
+{
+  "adb_id": 90220,
+  "name": "Calwer, Carl Gustav",
+  "given_name": "Carl Gustav Calwer",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2386480.682824,
+    "year": 1821,
+    "month": 11,
+    "day": 11,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Stuttgart",
+    "country": "Germany",
+    "lat": 48.766667,
+    "lon": 9.183333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calwer,_Carl_Gustav",
+  "source_notes": "Sy Scholfield provided Lutheran Church birth and baptism entry (1821, page 139, no. 331). \\n",
+  "categories": [
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 12.693175,
+    "lagna": 162.693175,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.369701,
+    "jd_ut": 2386480.682824,
+    "planets": {
+      "Sun": {
+        "longitude": 207.125731,
+        "sign_index": 6,
+        "degree_in_sign": 27.125731,
+        "is_retrograde": false,
+        "speed": 1.006414
+      },
+      "Moon": {
+        "longitude": 47.097855,
+        "sign_index": 1,
+        "degree_in_sign": 17.097855,
+        "is_retrograde": false,
+        "speed": 12.783925
+      },
+      "Mars": {
+        "longitude": 121.703785,
+        "sign_index": 4,
+        "degree_in_sign": 1.703785,
+        "is_retrograde": false,
+        "speed": 0.463565
+      },
+      "Mercury": {
+        "longitude": 225.332358,
+        "sign_index": 7,
+        "degree_in_sign": 15.332358,
+        "is_retrograde": true,
+        "speed": -0.123241
+      },
+      "Jupiter": {
+        "longitude": 0.888153,
+        "sign_index": 0,
+        "degree_in_sign": 0.888153,
+        "is_retrograde": true,
+        "speed": -0.107582
+      },
+      "Venus": {
+        "longitude": 249.523862,
+        "sign_index": 8,
+        "degree_in_sign": 9.523862,
+        "is_retrograde": false,
+        "speed": 1.174669
+      },
+      "Saturn": {
+        "longitude": 359.988338,
+        "sign_index": 11,
+        "degree_in_sign": 29.988338,
+        "is_retrograde": true,
+        "speed": -0.065878
+      },
+      "Rahu": {
+        "longitude": 309.082055,
+        "sign_index": 10,
+        "degree_in_sign": 9.082055,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 129.082055,
+        "sign_index": 4,
+        "degree_in_sign": 9.082055,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

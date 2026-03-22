@@ -1,0 +1,110 @@
+{
+  "adb_id": 93409,
+  "name": "Cugnot, Jean",
+  "given_name": "Jean Cugnot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414869.910174,
+    "year": 1899,
+    "month": 8,
+    "day": 3,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 16",
+    "country": "France",
+    "lat": 48.862778,
+    "lon": 2.276111
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cugnot,_Jean",
+  "source_notes": "Sy Scholfield provided birth registry entry from Paris archives (1899, 16th arr, no. 947).\\n\\nMichaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_sp_sports.pdf], but he has 1889 and 10 PM in error.\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes",
+    "Notable : Awards : Olympics",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 23.602608,
+    "lagna": 143.602608,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.454774,
+    "jd_ut": 2414869.910174,
+    "planets": {
+      "Sun": {
+        "longitude": 108.340928,
+        "sign_index": 3,
+        "degree_in_sign": 18.340928,
+        "is_retrograde": false,
+        "speed": 0.957755
+      },
+      "Moon": {
+        "longitude": 74.679327,
+        "sign_index": 2,
+        "degree_in_sign": 14.679327,
+        "is_retrograde": false,
+        "speed": 8.352922
+      },
+      "Mars": {
+        "longitude": 155.954574,
+        "sign_index": 5,
+        "degree_in_sign": 5.954574,
+        "is_retrograde": false,
+        "speed": 0.619625
+      },
+      "Mercury": {
+        "longitude": 131.067606,
+        "sign_index": 4,
+        "degree_in_sign": 11.067606,
+        "is_retrograde": false,
+        "speed": 0.178791
+      },
+      "Jupiter": {
+        "longitude": 189.804916,
+        "sign_index": 6,
+        "degree_in_sign": 9.804916,
+        "is_retrograde": false,
+        "speed": 0.101787
+      },
+      "Venus": {
+        "longitude": 96.399373,
+        "sign_index": 3,
+        "degree_in_sign": 6.399373,
+        "is_retrograde": false,
+        "speed": 1.228566
+      },
+      "Saturn": {
+        "longitude": 234.877856,
+        "sign_index": 7,
+        "degree_in_sign": 24.877856,
+        "is_retrograde": true,
+        "speed": -0.028746
+      },
+      "Rahu": {
+        "longitude": 244.676006,
+        "sign_index": 8,
+        "degree_in_sign": 4.676006,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 64.676006,
+        "sign_index": 2,
+        "degree_in_sign": 4.676006,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

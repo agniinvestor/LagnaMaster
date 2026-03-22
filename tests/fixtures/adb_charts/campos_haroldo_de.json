@@ -1,0 +1,116 @@
+{
+  "adb_id": 98888,
+  "name": "Campos, Haroldo de",
+  "given_name": "Haroldo de Campos",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425842.958333,
+    "year": 1929,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5525,
+    "lon": -46.624722
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campos,_Haroldo_de",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Lifestyle : Social Life : Groups",
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Magazine/ newsletter",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Publisher/ Editor",
+    "Vocation : Writers : Translator",
+    "Notable : Awards : Who's Who"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 8.457338,
+    "lagna": 128.457338,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.874277,
+    "jd_ut": 2425842.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 123.088558,
+        "sign_index": 4,
+        "degree_in_sign": 3.088558,
+        "is_retrograde": false,
+        "speed": 0.962183
+      },
+      "Moon": {
+        "longitude": 291.882027,
+        "sign_index": 9,
+        "degree_in_sign": 21.882027,
+        "is_retrograde": false,
+        "speed": 15.600148
+      },
+      "Mars": {
+        "longitude": 155.565889,
+        "sign_index": 5,
+        "degree_in_sign": 5.565889,
+        "is_retrograde": false,
+        "speed": 0.636272
+      },
+      "Mercury": {
+        "longitude": 140.757861,
+        "sign_index": 4,
+        "degree_in_sign": 20.757861,
+        "is_retrograde": false,
+        "speed": 1.643188
+      },
+      "Jupiter": {
+        "longitude": 50.126366,
+        "sign_index": 1,
+        "degree_in_sign": 20.126366,
+        "is_retrograde": false,
+        "speed": 0.135842
+      },
+      "Venus": {
+        "longitude": 83.204003,
+        "sign_index": 2,
+        "degree_in_sign": 23.204003,
+        "is_retrograde": false,
+        "speed": 1.146376
+      },
+      "Saturn": {
+        "longitude": 241.095868,
+        "sign_index": 8,
+        "degree_in_sign": 1.095868,
+        "is_retrograde": true,
+        "speed": -0.015398
+      },
+      "Rahu": {
+        "longitude": 23.191197,
+        "sign_index": 0,
+        "degree_in_sign": 23.191197,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 203.191197,
+        "sign_index": 6,
+        "degree_in_sign": 23.191197,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

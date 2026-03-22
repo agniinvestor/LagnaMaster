@@ -1,0 +1,110 @@
+{
+  "adb_id": 81046,
+  "name": "Ciani, Edgardo",
+  "given_name": "Edgardo Ciani",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402152.696296,
+    "year": 1864,
+    "month": 10,
+    "day": 8,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "l",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Rocca San Casciano",
+    "country": "Italy",
+    "lat": 44.05,
+    "lon": 11.833333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ciani,_Edgardo",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 23.405359,
+    "lagna": 143.405359,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.96866,
+    "jd_ut": 2402152.696296,
+    "planets": {
+      "Sun": {
+        "longitude": 173.183797,
+        "sign_index": 5,
+        "degree_in_sign": 23.183797,
+        "is_retrograde": false,
+        "speed": 0.988676
+      },
+      "Moon": {
+        "longitude": 257.401833,
+        "sign_index": 8,
+        "degree_in_sign": 17.401833,
+        "is_retrograde": false,
+        "speed": 17.665481
+      },
+      "Mars": {
+        "longitude": 55.140615,
+        "sign_index": 1,
+        "degree_in_sign": 25.140615,
+        "is_retrograde": false,
+        "speed": 0.205305
+      },
+      "Mercury": {
+        "longitude": 155.321977,
+        "sign_index": 5,
+        "degree_in_sign": 5.321977,
+        "is_retrograde": false,
+        "speed": 0.812303
+      },
+      "Jupiter": {
+        "longitude": 215.107068,
+        "sign_index": 7,
+        "degree_in_sign": 5.107068,
+        "is_retrograde": false,
+        "speed": 0.191523
+      },
+      "Venus": {
+        "longitude": 195.055152,
+        "sign_index": 6,
+        "degree_in_sign": 15.055152,
+        "is_retrograde": false,
+        "speed": 1.236728
+      },
+      "Saturn": {
+        "longitude": 178.331837,
+        "sign_index": 5,
+        "degree_in_sign": 28.331837,
+        "is_retrograde": false,
+        "speed": 0.12166
+      },
+      "Rahu": {
+        "longitude": 198.588183,
+        "sign_index": 6,
+        "degree_in_sign": 18.588183,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.588183,
+        "sign_index": 0,
+        "degree_in_sign": 18.588183,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

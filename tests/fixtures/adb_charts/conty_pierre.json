@@ -1,0 +1,108 @@
+{
+  "adb_id": 65064,
+  "name": "Conty, Pierre",
+  "given_name": "Pierre Conty",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432172.302083,
+    "year": 1946,
+    "month": 12,
+    "day": 17,
+    "calendar": "g",
+    "time": "20:15",
+    "time_type": "s",
+    "hour": 20.25,
+    "time_unknown": false,
+    "place": "Grenoble",
+    "country": "France",
+    "lat": 45.166667,
+    "lon": 5.716667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conty,_Pierre",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 226.\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Thief/ Financial crime"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 21.208132,
+    "lagna": 81.208132,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.116276,
+    "jd_ut": 2432172.302083,
+    "planets": {
+      "Sun": {
+        "longitude": 242.150379,
+        "sign_index": 8,
+        "degree_in_sign": 2.150379,
+        "is_retrograde": false,
+        "speed": 1.018023
+      },
+      "Moon": {
+        "longitude": 179.696981,
+        "sign_index": 5,
+        "degree_in_sign": 29.696981,
+        "is_retrograde": false,
+        "speed": 15.925215
+      },
+      "Mars": {
+        "longitude": 247.150258,
+        "sign_index": 8,
+        "degree_in_sign": 7.150258,
+        "is_retrograde": false,
+        "speed": 0.755361
+      },
+      "Mercury": {
+        "longitude": 223.089735,
+        "sign_index": 7,
+        "degree_in_sign": 13.089735,
+        "is_retrograde": false,
+        "speed": 1.358409
+      },
+      "Jupiter": {
+        "longitude": 204.598727,
+        "sign_index": 6,
+        "degree_in_sign": 24.598727,
+        "is_retrograde": false,
+        "speed": 0.195172
+      },
+      "Venus": {
+        "longitude": 205.707741,
+        "sign_index": 6,
+        "degree_in_sign": 25.707741,
+        "is_retrograde": false,
+        "speed": 0.348376
+      },
+      "Saturn": {
+        "longitude": 105.103758,
+        "sign_index": 3,
+        "degree_in_sign": 15.103758,
+        "is_retrograde": true,
+        "speed": -0.048269
+      },
+      "Rahu": {
+        "longitude": 47.786164,
+        "sign_index": 1,
+        "degree_in_sign": 17.786164,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 227.786164,
+        "sign_index": 7,
+        "degree_in_sign": 17.786164,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

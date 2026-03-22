@@ -1,0 +1,111 @@
+{
+  "adb_id": 50728,
+  "name": "Cabanis, José",
+  "given_name": "José Cabanis",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423138.0,
+    "year": 1922,
+    "month": 3,
+    "day": 24,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Toulouse",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabanis,_José",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 72.\\nSteinbrecher collection: Gauquelin 6/164\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Philosopher/ Humanist",
+    "Vocation : Law : Attorney",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.295081,
+    "lagna": 67.295081,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.770861,
+    "jd_ut": 2423138.0,
+    "planets": {
+      "Sun": {
+        "longitude": 340.294663,
+        "sign_index": 11,
+        "degree_in_sign": 10.294663,
+        "is_retrograde": false,
+        "speed": 0.991133
+      },
+      "Moon": {
+        "longitude": 295.798057,
+        "sign_index": 9,
+        "degree_in_sign": 25.798057,
+        "is_retrograde": false,
+        "speed": 9.172939
+      },
+      "Mars": {
+        "longitude": 232.595785,
+        "sign_index": 7,
+        "degree_in_sign": 22.595785,
+        "is_retrograde": false,
+        "speed": 0.386387
+      },
+      "Mercury": {
+        "longitude": 315.36693,
+        "sign_index": 10,
+        "degree_in_sign": 15.36693,
+        "is_retrograde": false,
+        "speed": 1.395333
+      },
+      "Jupiter": {
+        "longitude": 172.638435,
+        "sign_index": 5,
+        "degree_in_sign": 22.638435,
+        "is_retrograde": true,
+        "speed": -0.122998
+      },
+      "Venus": {
+        "longitude": 350.929462,
+        "sign_index": 11,
+        "degree_in_sign": 20.929462,
+        "is_retrograde": false,
+        "speed": 1.241231
+      },
+      "Saturn": {
+        "longitude": 161.576997,
+        "sign_index": 5,
+        "degree_in_sign": 11.576997,
+        "is_retrograde": true,
+        "speed": -0.078335
+      },
+      "Rahu": {
+        "longitude": 166.532573,
+        "sign_index": 5,
+        "degree_in_sign": 16.532573,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.532573,
+        "sign_index": 11,
+        "degree_in_sign": 16.532573,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

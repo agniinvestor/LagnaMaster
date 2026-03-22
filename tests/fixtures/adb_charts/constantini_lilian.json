@@ -1,0 +1,108 @@
+{
+  "adb_id": 79511,
+  "name": "Constantini, Lilian",
+  "given_name": "Lilian Constantini",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416022.32684,
+    "year": 1902,
+    "month": 9,
+    "day": 29,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 9",
+    "country": "France",
+    "lat": 48.8725,
+    "lon": 2.340278
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Constantini,_Lilian",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 21.087387,
+    "lagna": 21.087387,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.498829,
+    "jd_ut": 2416022.32684,
+    "planets": {
+      "Sun": {
+        "longitude": 163.220514,
+        "sign_index": 5,
+        "degree_in_sign": 13.220514,
+        "is_retrograde": false,
+        "speed": 0.983133
+      },
+      "Moon": {
+        "longitude": 139.891996,
+        "sign_index": 4,
+        "degree_in_sign": 19.891996,
+        "is_retrograde": false,
+        "speed": 16.529716
+      },
+      "Mars": {
+        "longitude": 113.159828,
+        "sign_index": 3,
+        "degree_in_sign": 23.159828,
+        "is_retrograde": false,
+        "speed": 0.608563
+      },
+      "Mercury": {
+        "longitude": 188.669631,
+        "sign_index": 6,
+        "degree_in_sign": 8.669631,
+        "is_retrograde": false,
+        "speed": 0.723424
+      },
+      "Jupiter": {
+        "longitude": 284.948603,
+        "sign_index": 9,
+        "degree_in_sign": 14.948603,
+        "is_retrograde": true,
+        "speed": -0.015456
+      },
+      "Venus": {
+        "longitude": 147.944717,
+        "sign_index": 4,
+        "degree_in_sign": 27.944717,
+        "is_retrograde": false,
+        "speed": 1.24257
+      },
+      "Saturn": {
+        "longitude": 268.693393,
+        "sign_index": 8,
+        "degree_in_sign": 28.693393,
+        "is_retrograde": false,
+        "speed": 0.005565
+      },
+      "Rahu": {
+        "longitude": 183.607017,
+        "sign_index": 6,
+        "degree_in_sign": 3.607017,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 3.607017,
+        "sign_index": 0,
+        "degree_in_sign": 3.607017,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

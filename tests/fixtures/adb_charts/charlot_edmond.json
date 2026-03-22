@@ -1,0 +1,112 @@
+{
+  "adb_id": 97420,
+  "name": "Charlot, Edmond",
+  "given_name": "Edmond Charlot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420543.791667,
+    "year": 1915,
+    "month": 2,
+    "day": 15,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Algiers",
+    "country": "Algeria",
+    "lat": 36.783333,
+    "lon": 3.05
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlot,_Edmond",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Art : Other Art",
+    "Vocation : Business : Business owner",
+    "Vocation : Business/Marketing : Sales",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 16.775835,
+    "lagna": 286.775835,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.671681,
+    "jd_ut": 2420543.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 302.851218,
+        "sign_index": 10,
+        "degree_in_sign": 2.851218,
+        "is_retrograde": false,
+        "speed": 1.010353
+      },
+      "Moon": {
+        "longitude": 316.711925,
+        "sign_index": 10,
+        "degree_in_sign": 16.711925,
+        "is_retrograde": false,
+        "speed": 12.599393
+      },
+      "Mars": {
+        "longitude": 289.850936,
+        "sign_index": 9,
+        "degree_in_sign": 19.850936,
+        "is_retrograde": false,
+        "speed": 0.783829
+      },
+      "Mercury": {
+        "longitude": 314.887566,
+        "sign_index": 10,
+        "degree_in_sign": 14.887566,
+        "is_retrograde": true,
+        "speed": -0.438516
+      },
+      "Jupiter": {
+        "longitude": 310.013249,
+        "sign_index": 10,
+        "degree_in_sign": 10.013249,
+        "is_retrograde": false,
+        "speed": 0.240304
+      },
+      "Venus": {
+        "longitude": 256.250469,
+        "sign_index": 8,
+        "degree_in_sign": 16.250469,
+        "is_retrograde": false,
+        "speed": 1.057226
+      },
+      "Saturn": {
+        "longitude": 62.803322,
+        "sign_index": 2,
+        "degree_in_sign": 2.803322,
+        "is_retrograde": true,
+        "speed": -0.020446
+      },
+      "Rahu": {
+        "longitude": 304.005096,
+        "sign_index": 10,
+        "degree_in_sign": 4.005096,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 124.005096,
+        "sign_index": 4,
+        "degree_in_sign": 4.005096,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

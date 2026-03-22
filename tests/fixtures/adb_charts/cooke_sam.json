@@ -1,0 +1,116 @@
+{
+  "adb_id": 47616,
+  "name": "Cooke, Sam",
+  "given_name": "Sam Cooke",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426364.340278,
+    "year": 1931,
+    "month": 1,
+    "day": 22,
+    "calendar": "g",
+    "time": "14:10",
+    "time_type": "s",
+    "hour": 14.166667,
+    "time_unknown": false,
+    "place": "Clarksdale",
+    "country": "Mississippi",
+    "lat": 34.2,
+    "lon": -90.566667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooke,_Sam",
+  "source_notes": "Frank Clifford quotes his B.C. data given in Daniel Wolff's biography, \"You Send Me - the Life and Times of Sam Cook,\" William Morrow, 1995.\\nBiography: \"Sam Cooke: A Man and His Music.\"\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Family : Childhood : Family large",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Passions : Criminal Victim : Homicide victim",
+    "Vocation : Business : Business owner",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Music : Other Entertain/Music",
+    "Notable : Awards : Hall of Fame"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.043057,
+    "lagna": 35.043057,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.894211,
+    "jd_ut": 2426364.340278,
+    "planets": {
+      "Sun": {
+        "longitude": 278.967551,
+        "sign_index": 9,
+        "degree_in_sign": 8.967551,
+        "is_retrograde": false,
+        "speed": 1.017525
+      },
+      "Moon": {
+        "longitude": 323.433819,
+        "sign_index": 10,
+        "degree_in_sign": 23.433819,
+        "is_retrograde": false,
+        "speed": 7.632537
+      },
+      "Mars": {
+        "longitude": 105.986071,
+        "sign_index": 3,
+        "degree_in_sign": 15.986071,
+        "is_retrograde": true,
+        "speed": -0.394669
+      },
+      "Mercury": {
+        "longitude": 255.127495,
+        "sign_index": 8,
+        "degree_in_sign": 15.127495,
+        "is_retrograde": false,
+        "speed": 0.634465
+      },
+      "Jupiter": {
+        "longitude": 80.469214,
+        "sign_index": 2,
+        "degree_in_sign": 20.469214,
+        "is_retrograde": true,
+        "speed": -0.121948
+      },
+      "Venus": {
+        "longitude": 232.578149,
+        "sign_index": 7,
+        "degree_in_sign": 22.578149,
+        "is_retrograde": false,
+        "speed": 0.93171
+      },
+      "Saturn": {
+        "longitude": 263.385476,
+        "sign_index": 8,
+        "degree_in_sign": 23.385476,
+        "is_retrograde": false,
+        "speed": 0.115594
+      },
+      "Rahu": {
+        "longitude": 355.562084,
+        "sign_index": 11,
+        "degree_in_sign": 25.562084,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 175.562084,
+        "sign_index": 5,
+        "degree_in_sign": 25.562084,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

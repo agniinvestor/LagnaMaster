@@ -1,0 +1,109 @@
+{
+  "adb_id": 103980,
+  "name": "Clayton, R. Gilbert",
+  "given_name": "R. Gilbert Clayton",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423343.784722,
+    "year": 1922,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "22:50",
+    "time_type": "s",
+    "hour": 22.833333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clayton,_R._Gilbert",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Stage/ Set design"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 6.483097,
+    "lagna": 66.483097,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.778728,
+    "jd_ut": 2423343.784722,
+    "planets": {
+      "Sun": {
+        "longitude": 179.344972,
+        "sign_index": 5,
+        "degree_in_sign": 29.344972,
+        "is_retrograde": false,
+        "speed": 0.992335
+      },
+      "Moon": {
+        "longitude": 120.628551,
+        "sign_index": 4,
+        "degree_in_sign": 0.628551,
+        "is_retrograde": false,
+        "speed": 17.52712
+      },
+      "Mars": {
+        "longitude": 267.343649,
+        "sign_index": 8,
+        "degree_in_sign": 27.343649,
+        "is_retrograde": false,
+        "speed": 0.665156
+      },
+      "Mercury": {
+        "longitude": 177.498883,
+        "sign_index": 5,
+        "degree_in_sign": 27.498883,
+        "is_retrograde": true,
+        "speed": -1.190074
+      },
+      "Jupiter": {
+        "longitude": 184.930058,
+        "sign_index": 6,
+        "degree_in_sign": 4.930058,
+        "is_retrograde": false,
+        "speed": 0.217293
+      },
+      "Venus": {
+        "longitude": 220.682515,
+        "sign_index": 7,
+        "degree_in_sign": 10.682515,
+        "is_retrograde": false,
+        "speed": 0.594856
+      },
+      "Saturn": {
+        "longitude": 169.317002,
+        "sign_index": 5,
+        "degree_in_sign": 19.317002,
+        "is_retrograde": false,
+        "speed": 0.12184
+      },
+      "Rahu": {
+        "longitude": 155.627611,
+        "sign_index": 5,
+        "degree_in_sign": 5.627611,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 335.627611,
+        "sign_index": 11,
+        "degree_in_sign": 5.627611,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

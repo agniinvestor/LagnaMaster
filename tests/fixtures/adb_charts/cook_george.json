@@ -1,0 +1,108 @@
+{
+  "adb_id": 26254,
+  "name": "Cook, George",
+  "given_name": "George Cook",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2421601.875,
+    "year": 1918,
+    "month": 1,
+    "day": 8,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Waterford",
+    "country": "Ontario (CAN)",
+    "lat": 42.933333,
+    "lon": -80.283333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cook,_George",
+  "source_notes": "John McKay-Clements quotes Cook's wife by letter 1997, given in The Canadian Astrology Collection.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 9.92806,
+    "lagna": 189.92806,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.712133,
+    "jd_ut": 2421601.875,
+    "planets": {
+      "Sun": {
+        "longitude": 264.5734,
+        "sign_index": 8,
+        "degree_in_sign": 24.5734,
+        "is_retrograde": false,
+        "speed": 1.019337
+      },
+      "Moon": {
+        "longitude": 207.908381,
+        "sign_index": 6,
+        "degree_in_sign": 27.908381,
+        "is_retrograde": false,
+        "speed": 11.396413
+      },
+      "Mars": {
+        "longitude": 156.516774,
+        "sign_index": 5,
+        "degree_in_sign": 6.516774,
+        "is_retrograde": false,
+        "speed": 0.267547
+      },
+      "Mercury": {
+        "longitude": 253.461998,
+        "sign_index": 8,
+        "degree_in_sign": 13.461998,
+        "is_retrograde": true,
+        "speed": -0.933745
+      },
+      "Jupiter": {
+        "longitude": 39.315353,
+        "sign_index": 1,
+        "degree_in_sign": 9.315353,
+        "is_retrograde": true,
+        "speed": -0.061387
+      },
+      "Venus": {
+        "longitude": 303.095984,
+        "sign_index": 10,
+        "degree_in_sign": 3.095984,
+        "is_retrograde": false,
+        "speed": 0.426948
+      },
+      "Saturn": {
+        "longitude": 110.199595,
+        "sign_index": 3,
+        "degree_in_sign": 20.199595,
+        "is_retrograde": true,
+        "speed": -0.069299
+      },
+      "Rahu": {
+        "longitude": 247.935046,
+        "sign_index": 8,
+        "degree_in_sign": 7.935046,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 67.935046,
+        "sign_index": 2,
+        "degree_in_sign": 7.935046,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

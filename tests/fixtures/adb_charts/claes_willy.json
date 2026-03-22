@@ -1,0 +1,110 @@
+{
+  "adb_id": 47306,
+  "name": "Claes, Willy",
+  "given_name": "Willy Claes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429226.875,
+    "year": 1938,
+    "month": 11,
+    "day": 24,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Hasselt",
+    "country": "Belgium",
+    "lat": 50.933333,
+    "lon": 5.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claes,_Willy",
+  "source_notes": "Luc de Marre quotes B.C.\\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Politics : Diplomat",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 5.84416,
+    "lagna": 215.84416,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.003657,
+    "jd_ut": 2429226.875,
+    "planets": {
+      "Sun": {
+        "longitude": 218.421667,
+        "sign_index": 7,
+        "degree_in_sign": 8.421667,
+        "is_retrograde": false,
+        "speed": 1.011568
+      },
+      "Moon": {
+        "longitude": 245.70081,
+        "sign_index": 8,
+        "degree_in_sign": 5.70081,
+        "is_retrograde": false,
+        "speed": 10.582375
+      },
+      "Mars": {
+        "longitude": 175.954983,
+        "sign_index": 5,
+        "degree_in_sign": 25.954983,
+        "is_retrograde": false,
+        "speed": 0.628382
+      },
+      "Mercury": {
+        "longitude": 240.103083,
+        "sign_index": 8,
+        "degree_in_sign": 0.103083,
+        "is_retrograde": false,
+        "speed": 1.081957
+      },
+      "Jupiter": {
+        "longitude": 301.50757,
+        "sign_index": 10,
+        "degree_in_sign": 1.50757,
+        "is_retrograde": false,
+        "speed": 0.113208
+      },
+      "Venus": {
+        "longitude": 211.828191,
+        "sign_index": 7,
+        "degree_in_sign": 1.828191,
+        "is_retrograde": true,
+        "speed": -0.573373
+      },
+      "Saturn": {
+        "longitude": 348.59774,
+        "sign_index": 11,
+        "degree_in_sign": 18.59774,
+        "is_retrograde": true,
+        "speed": -0.036085
+      },
+      "Rahu": {
+        "longitude": 203.870433,
+        "sign_index": 6,
+        "degree_in_sign": 23.870433,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 23.870433,
+        "sign_index": 0,
+        "degree_in_sign": 23.870433,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

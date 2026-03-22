@@ -1,0 +1,109 @@
+{
+  "adb_id": 101913,
+  "name": "Case, Anastasia",
+  "given_name": "Anastasia Case",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2446923.1,
+    "year": 1987,
+    "month": 5,
+    "day": 7,
+    "calendar": "g",
+    "time": "07:24",
+    "time_type": "d",
+    "hour": 7.4,
+    "time_unknown": false,
+    "place": "Lodi",
+    "country": "California",
+    "lat": 38.133333,
+    "lon": -121.266667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Case,_Anastasia",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Lodi News-Sentinel'', 15 May 1987, page 8: born at Lodi Memorial Hospital. \\n",
+  "categories": [
+    "Family : Childhood : Sibling circumstances",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 22.332921,
+    "lagna": 22.332921,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.680334,
+    "jd_ut": 2446923.1,
+    "planets": {
+      "Sun": {
+        "longitude": 22.825702,
+        "sign_index": 0,
+        "degree_in_sign": 22.825702,
+        "is_retrograde": false,
+        "speed": 0.967704
+      },
+      "Moon": {
+        "longitude": 129.587353,
+        "sign_index": 4,
+        "degree_in_sign": 9.587353,
+        "is_retrograde": false,
+        "speed": 16.290574
+      },
+      "Mars": {
+        "longitude": 57.481428,
+        "sign_index": 1,
+        "degree_in_sign": 27.481428,
+        "is_retrograde": false,
+        "speed": 0.656272
+      },
+      "Mercury": {
+        "longitude": 23.024924,
+        "sign_index": 0,
+        "degree_in_sign": 23.024924,
+        "is_retrograde": false,
+        "speed": 2.165494
+      },
+      "Jupiter": {
+        "longitude": 351.958097,
+        "sign_index": 11,
+        "degree_in_sign": 21.958097,
+        "is_retrograde": false,
+        "speed": 0.223877
+      },
+      "Venus": {
+        "longitude": 354.346244,
+        "sign_index": 11,
+        "degree_in_sign": 24.346244,
+        "is_retrograde": false,
+        "speed": 1.208894
+      },
+      "Saturn": {
+        "longitude": 236.393994,
+        "sign_index": 7,
+        "degree_in_sign": 26.393994,
+        "is_retrograde": true,
+        "speed": -0.05493
+      },
+      "Rahu": {
+        "longitude": 346.111233,
+        "sign_index": 11,
+        "degree_in_sign": 16.111233,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 166.111233,
+        "sign_index": 5,
+        "degree_in_sign": 16.111233,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

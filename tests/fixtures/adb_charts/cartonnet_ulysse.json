@@ -1,0 +1,109 @@
+{
+  "adb_id": 52146,
+  "name": "Cartonnet, Ulysse",
+  "given_name": "Ulysse Cartonnet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419323.40625,
+    "year": 1911,
+    "month": 10,
+    "day": 13,
+    "calendar": "g",
+    "time": "21:45",
+    "time_type": "s",
+    "hour": 21.75,
+    "time_unknown": false,
+    "place": "Boulogne sur Mer",
+    "country": "France",
+    "lat": 50.716667,
+    "lon": 1.616667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cartonnet,_Ulysse",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/1760\\n",
+  "categories": [
+    "Vocation : Sports : Swimming",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 2.510893,
+    "lagna": 62.510893,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.625026,
+    "jd_ut": 2419323.40625,
+    "planets": {
+      "Sun": {
+        "longitude": 176.808349,
+        "sign_index": 5,
+        "degree_in_sign": 26.808349,
+        "is_retrograde": false,
+        "speed": 0.990543
+      },
+      "Moon": {
+        "longitude": 73.103722,
+        "sign_index": 2,
+        "degree_in_sign": 13.103722,
+        "is_retrograde": false,
+        "speed": 15.401284
+      },
+      "Mars": {
+        "longitude": 48.195836,
+        "sign_index": 1,
+        "degree_in_sign": 18.195836,
+        "is_retrograde": false,
+        "speed": 0.064395
+      },
+      "Mercury": {
+        "longitude": 169.670664,
+        "sign_index": 5,
+        "degree_in_sign": 19.670664,
+        "is_retrograde": false,
+        "speed": 1.748041
+      },
+      "Jupiter": {
+        "longitude": 204.806963,
+        "sign_index": 6,
+        "degree_in_sign": 24.806963,
+        "is_retrograde": false,
+        "speed": 0.206956
+      },
+      "Venus": {
+        "longitude": 141.711796,
+        "sign_index": 4,
+        "degree_in_sign": 21.711796,
+        "is_retrograde": false,
+        "speed": 0.263417
+      },
+      "Saturn": {
+        "longitude": 26.182104,
+        "sign_index": 0,
+        "degree_in_sign": 26.182104,
+        "is_retrograde": true,
+        "speed": -0.064915
+      },
+      "Rahu": {
+        "longitude": 8.675878,
+        "sign_index": 0,
+        "degree_in_sign": 8.675878,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 188.675878,
+        "sign_index": 6,
+        "degree_in_sign": 8.675878,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

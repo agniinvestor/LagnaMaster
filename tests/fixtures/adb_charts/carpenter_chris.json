@@ -1,0 +1,110 @@
+{
+  "adb_id": 101959,
+  "name": "Carpenter, Chris",
+  "given_name": "Chris Carpenter",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2446426.258333,
+    "year": 1985,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "13:12",
+    "time_type": "s",
+    "hour": 13.2,
+    "time_unknown": false,
+    "place": "Bryan",
+    "country": "Ohio",
+    "lat": 41.466667,
+    "lon": -84.55
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpenter,_Chris",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Bryan Times'' (Bryan, Ohio), 27 December 1985, page 14: born at Bryan Hospital.\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Vocation : Sports : Baseball",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 6.260179,
+    "lagna": 336.260179,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.661334,
+    "jd_ut": 2446426.258333,
+    "planets": {
+      "Sun": {
+        "longitude": 251.267052,
+        "sign_index": 8,
+        "degree_in_sign": 11.267052,
+        "is_retrograde": false,
+        "speed": 1.018573
+      },
+      "Moon": {
+        "longitude": 65.223591,
+        "sign_index": 2,
+        "degree_in_sign": 5.223591,
+        "is_retrograde": false,
+        "speed": 16.251697
+      },
+      "Mars": {
+        "longitude": 193.703757,
+        "sign_index": 6,
+        "degree_in_sign": 13.703757,
+        "is_retrograde": false,
+        "speed": 0.613004
+      },
+      "Mercury": {
+        "longitude": 231.863452,
+        "sign_index": 7,
+        "degree_in_sign": 21.863452,
+        "is_retrograde": false,
+        "speed": 1.361612
+      },
+      "Jupiter": {
+        "longitude": 293.494866,
+        "sign_index": 9,
+        "degree_in_sign": 23.494866,
+        "is_retrograde": false,
+        "speed": 0.206746
+      },
+      "Venus": {
+        "longitude": 245.55029,
+        "sign_index": 8,
+        "degree_in_sign": 5.55029,
+        "is_retrograde": false,
+        "speed": 1.25824
+      },
+      "Saturn": {
+        "longitude": 220.94344,
+        "sign_index": 7,
+        "degree_in_sign": 10.94344,
+        "is_retrograde": false,
+        "speed": 0.108154
+      },
+      "Rahu": {
+        "longitude": 12.439879,
+        "sign_index": 0,
+        "degree_in_sign": 12.439879,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 192.439879,
+        "sign_index": 6,
+        "degree_in_sign": 12.439879,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

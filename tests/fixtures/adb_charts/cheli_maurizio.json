@@ -1,0 +1,109 @@
+{
+  "adb_id": 19587,
+  "name": "Cheli, Maurizio",
+  "given_name": "Maurizio Cheli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436692.833333,
+    "year": 1959,
+    "month": 5,
+    "day": 4,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Modena",
+    "country": "Italy",
+    "lat": 44.666667,
+    "lon": 10.916667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cheli,_Maurizio",
+  "source_notes": "Bordoni quotes B.C. Datanotizie 7/l996\\n",
+  "categories": [
+    "Vocation : Travel : Astronaut",
+    "Notable : Famous : Historic figure"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 28.74217,
+    "lagna": 58.74217,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.289126,
+    "jd_ut": 2436692.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 19.826794,
+        "sign_index": 0,
+        "degree_in_sign": 19.826794,
+        "is_retrograde": false,
+        "speed": 0.969474
+      },
+      "Moon": {
+        "longitude": 341.454514,
+        "sign_index": 11,
+        "degree_in_sign": 11.454514,
+        "is_retrograde": false,
+        "speed": 8.462297
+      },
+      "Mars": {
+        "longitude": 80.367318,
+        "sign_index": 2,
+        "degree_in_sign": 20.367318,
+        "is_retrograde": false,
+        "speed": 0.580095
+      },
+      "Mercury": {
+        "longitude": 354.226623,
+        "sign_index": 11,
+        "degree_in_sign": 24.226623,
+        "is_retrograde": false,
+        "speed": 1.316994
+      },
+      "Jupiter": {
+        "longitude": 215.635947,
+        "sign_index": 7,
+        "degree_in_sign": 5.635947,
+        "is_retrograde": true,
+        "speed": -0.117849
+      },
+      "Venus": {
+        "longitude": 59.465871,
+        "sign_index": 1,
+        "degree_in_sign": 29.465871,
+        "is_retrograde": false,
+        "speed": 1.152289
+      },
+      "Saturn": {
+        "longitude": 253.523385,
+        "sign_index": 8,
+        "degree_in_sign": 13.523385,
+        "is_retrograde": true,
+        "speed": -0.028102
+      },
+      "Rahu": {
+        "longitude": 168.233914,
+        "sign_index": 5,
+        "degree_in_sign": 18.233914,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 348.233914,
+        "sign_index": 11,
+        "degree_in_sign": 18.233914,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

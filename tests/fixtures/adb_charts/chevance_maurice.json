@@ -1,0 +1,109 @@
+{
+  "adb_id": 65382,
+  "name": "Chevance, Maurice",
+  "given_name": "Maurice Chevance",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418737.32684,
+    "year": 1910,
+    "month": 3,
+    "day": 6,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Nanteuil le Haudouin",
+    "country": "France",
+    "lat": 49.133333,
+    "lon": 2.8
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevance,_Maurice",
+  "source_notes": "Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 70.\\n",
+  "categories": [
+    "Vocation : Military : Honors",
+    "Vocation : Politics : Other Politics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.046668,
+    "lagna": 145.046668,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.60262,
+    "jd_ut": 2418737.32684,
+    "planets": {
+      "Sun": {
+        "longitude": 322.772607,
+        "sign_index": 10,
+        "degree_in_sign": 22.772607,
+        "is_retrograde": false,
+        "speed": 1.000753
+      },
+      "Moon": {
+        "longitude": 261.538866,
+        "sign_index": 8,
+        "degree_in_sign": 21.538866,
+        "is_retrograde": false,
+        "speed": 16.673051
+      },
+      "Mars": {
+        "longitude": 32.827777,
+        "sign_index": 1,
+        "degree_in_sign": 2.827777,
+        "is_retrograde": false,
+        "speed": 0.610006
+      },
+      "Mercury": {
+        "longitude": 299.825618,
+        "sign_index": 9,
+        "degree_in_sign": 29.825618,
+        "is_retrograde": false,
+        "speed": 1.440255
+      },
+      "Jupiter": {
+        "longitude": 169.984322,
+        "sign_index": 5,
+        "degree_in_sign": 19.984322,
+        "is_retrograde": true,
+        "speed": -0.10237
+      },
+      "Venus": {
+        "longitude": 292.582297,
+        "sign_index": 9,
+        "degree_in_sign": 22.582297,
+        "is_retrograde": false,
+        "speed": 0.069353
+      },
+      "Saturn": {
+        "longitude": 358.610785,
+        "sign_index": 11,
+        "degree_in_sign": 28.610785,
+        "is_retrograde": false,
+        "speed": 0.111113
+      },
+      "Rahu": {
+        "longitude": 39.733456,
+        "sign_index": 1,
+        "degree_in_sign": 9.733456,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 219.733456,
+        "sign_index": 7,
+        "degree_in_sign": 9.733456,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

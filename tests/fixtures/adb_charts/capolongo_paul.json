@@ -1,0 +1,108 @@
+{
+  "adb_id": 64920,
+  "name": "Capolongo, Paul",
+  "given_name": "Paul Capolongo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429705.510417,
+    "year": 1940,
+    "month": 3,
+    "day": 17,
+    "calendar": "g",
+    "time": "01:15",
+    "time_type": "s",
+    "hour": 1.25,
+    "time_unknown": false,
+    "place": "Algiers",
+    "country": "Algeria",
+    "lat": 36.783333,
+    "lon": 3.05
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capolongo,_Paul",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 39.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Conductor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 28.424944,
+    "lagna": 208.424944,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.021957,
+    "jd_ut": 2429705.510417,
+    "planets": {
+      "Sun": {
+        "longitude": 333.243235,
+        "sign_index": 11,
+        "degree_in_sign": 3.243235,
+        "is_retrograde": false,
+        "speed": 0.995012
+      },
+      "Moon": {
+        "longitude": 60.858269,
+        "sign_index": 2,
+        "degree_in_sign": 0.858269,
+        "is_retrograde": false,
+        "speed": 13.710713
+      },
+      "Mars": {
+        "longitude": 26.475184,
+        "sign_index": 0,
+        "degree_in_sign": 26.475184,
+        "is_retrograde": false,
+        "speed": 0.669172
+      },
+      "Mercury": {
+        "longitude": 330.473672,
+        "sign_index": 11,
+        "degree_in_sign": 0.473672,
+        "is_retrograde": true,
+        "speed": -0.941886
+      },
+      "Jupiter": {
+        "longitude": 352.615894,
+        "sign_index": 11,
+        "degree_in_sign": 22.615894,
+        "is_retrograde": false,
+        "speed": 0.235134
+      },
+      "Venus": {
+        "longitude": 16.475038,
+        "sign_index": 0,
+        "degree_in_sign": 16.475038,
+        "is_retrograde": false,
+        "speed": 1.128549
+      },
+      "Saturn": {
+        "longitude": 6.586176,
+        "sign_index": 0,
+        "degree_in_sign": 6.586176,
+        "is_retrograde": false,
+        "speed": 0.113749
+      },
+      "Rahu": {
+        "longitude": 178.506551,
+        "sign_index": 5,
+        "degree_in_sign": 28.506551,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 358.506551,
+        "sign_index": 11,
+        "degree_in_sign": 28.506551,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

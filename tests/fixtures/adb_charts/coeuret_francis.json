@@ -1,0 +1,108 @@
+{
+  "adb_id": 52107,
+  "name": "Coeuret, Francis",
+  "given_name": "Francis Coeuret",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426385.21875,
+    "year": 1931,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "17:15",
+    "time_type": "s",
+    "hour": 17.25,
+    "time_unknown": false,
+    "place": "Plouguenast",
+    "country": "France",
+    "lat": 48.283333,
+    "lon": -2.716667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coeuret,_Francis",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin vol 1 no 590\\n",
+  "categories": [
+    "Vocation : Sports : Boxing"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 6.152784,
+    "lagna": 96.152784,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.89501,
+    "jd_ut": 2426385.21875,
+    "planets": {
+      "Sun": {
+        "longitude": 300.144898,
+        "sign_index": 10,
+        "degree_in_sign": 0.144898,
+        "is_retrograde": false,
+        "speed": 1.011195
+      },
+      "Moon": {
+        "longitude": 245.900681,
+        "sign_index": 8,
+        "degree_in_sign": 5.900681,
+        "is_retrograde": false,
+        "speed": 14.811078
+      },
+      "Mars": {
+        "longitude": 98.196123,
+        "sign_index": 3,
+        "degree_in_sign": 8.196123,
+        "is_retrograde": true,
+        "speed": -0.302532
+      },
+      "Mercury": {
+        "longitude": 278.800774,
+        "sign_index": 9,
+        "degree_in_sign": 8.800774,
+        "is_retrograde": false,
+        "speed": 1.423262
+      },
+      "Jupiter": {
+        "longitude": 78.389932,
+        "sign_index": 2,
+        "degree_in_sign": 18.389932,
+        "is_retrograde": true,
+        "speed": -0.072691
+      },
+      "Venus": {
+        "longitude": 253.650482,
+        "sign_index": 8,
+        "degree_in_sign": 13.650482,
+        "is_retrograde": false,
+        "speed": 1.07014
+      },
+      "Saturn": {
+        "longitude": 265.697295,
+        "sign_index": 8,
+        "degree_in_sign": 25.697295,
+        "is_retrograde": false,
+        "speed": 0.104566
+      },
+      "Rahu": {
+        "longitude": 354.45569,
+        "sign_index": 11,
+        "degree_in_sign": 24.45569,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 174.45569,
+        "sign_index": 5,
+        "degree_in_sign": 24.45569,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

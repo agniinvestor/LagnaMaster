@@ -1,0 +1,112 @@
+{
+  "adb_id": 56921,
+  "name": "Coty, François",
+  "given_name": "François Coty",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405647.309074,
+    "year": 1874,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Ajaccio",
+    "country": "France",
+    "lat": 41.916667,
+    "lon": 8.733333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coty,_François",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'Artisanat d'art (religion3)' pdf file, p. 119.\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Other Rel/Spirituality",
+    "Vocation : Art : Other Art",
+    "Vocation : Beauty : Other Beauty",
+    "Vocation : Business : Entrepreneur",
+    "Notable : Extraordinary Talents : Other Extraordinary"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 11.450338,
+    "lagna": 191.450338,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.102233,
+    "jd_ut": 2405647.309074,
+    "planets": {
+      "Sun": {
+        "longitude": 21.048402,
+        "sign_index": 0,
+        "degree_in_sign": 21.048402,
+        "is_retrograde": false,
+        "speed": 0.968037
+      },
+      "Moon": {
+        "longitude": 225.734772,
+        "sign_index": 7,
+        "degree_in_sign": 15.734772,
+        "is_retrograde": false,
+        "speed": 12.166148
+      },
+      "Mars": {
+        "longitude": 38.776131,
+        "sign_index": 1,
+        "degree_in_sign": 8.776131,
+        "is_retrograde": false,
+        "speed": 0.696606
+      },
+      "Mercury": {
+        "longitude": 0.066906,
+        "sign_index": 0,
+        "degree_in_sign": 0.066906,
+        "is_retrograde": false,
+        "speed": 1.639888
+      },
+      "Jupiter": {
+        "longitude": 150.079741,
+        "sign_index": 5,
+        "degree_in_sign": 0.079741,
+        "is_retrograde": true,
+        "speed": -0.045736
+      },
+      "Venus": {
+        "longitude": 38.537382,
+        "sign_index": 1,
+        "degree_in_sign": 8.537382,
+        "is_retrograde": false,
+        "speed": 1.225452
+      },
+      "Saturn": {
+        "longitude": 291.863316,
+        "sign_index": 9,
+        "degree_in_sign": 21.863316,
+        "is_retrograde": false,
+        "speed": 0.033703
+      },
+      "Rahu": {
+        "longitude": 13.40119,
+        "sign_index": 0,
+        "degree_in_sign": 13.40119,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 193.40119,
+        "sign_index": 6,
+        "degree_in_sign": 13.40119,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

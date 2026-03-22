@@ -1,0 +1,108 @@
+{
+  "adb_id": 50821,
+  "name": "Coolidge, Clark",
+  "given_name": "Clark Coolidge",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429321.033333,
+    "year": 1939,
+    "month": 2,
+    "day": 26,
+    "calendar": "g",
+    "time": "07:48",
+    "time_type": "s",
+    "hour": 7.8,
+    "time_unknown": false,
+    "place": "Providence",
+    "country": "Rhode Island",
+    "lat": 41.816667,
+    "lon": -71.416667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coolidge,_Clark",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 24.713849,
+    "lagna": 324.713849,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.007257,
+    "jd_ut": 2429321.033333,
+    "planets": {
+      "Sun": {
+        "longitude": 314.02312,
+        "sign_index": 10,
+        "degree_in_sign": 14.02312,
+        "is_retrograde": false,
+        "speed": 1.005101
+      },
+      "Moon": {
+        "longitude": 36.70842,
+        "sign_index": 1,
+        "degree_in_sign": 6.70842,
+        "is_retrograde": false,
+        "speed": 16.901621
+      },
+      "Mars": {
+        "longitude": 233.879575,
+        "sign_index": 7,
+        "degree_in_sign": 23.879575,
+        "is_retrograde": false,
+        "speed": 0.588723
+      },
+      "Mercury": {
+        "longitude": 320.441557,
+        "sign_index": 10,
+        "degree_in_sign": 20.441557,
+        "is_retrograde": false,
+        "speed": 1.901268
+      },
+      "Jupiter": {
+        "longitude": 320.095356,
+        "sign_index": 10,
+        "degree_in_sign": 20.095356,
+        "is_retrograde": false,
+        "speed": 0.241288
+      },
+      "Venus": {
+        "longitude": 269.018479,
+        "sign_index": 8,
+        "degree_in_sign": 29.018479,
+        "is_retrograde": false,
+        "speed": 1.125785
+      },
+      "Saturn": {
+        "longitude": 352.67345,
+        "sign_index": 11,
+        "degree_in_sign": 22.67345,
+        "is_retrograde": false,
+        "speed": 0.107986
+      },
+      "Rahu": {
+        "longitude": 198.880788,
+        "sign_index": 6,
+        "degree_in_sign": 18.880788,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.880788,
+        "sign_index": 0,
+        "degree_in_sign": 18.880788,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

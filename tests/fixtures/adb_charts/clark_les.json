@@ -1,0 +1,111 @@
+{
+  "adb_id": 75692,
+  "name": "Clark, Les",
+  "given_name": "Les Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417897.565972,
+    "year": 1907,
+    "month": 11,
+    "day": 17,
+    "calendar": "g",
+    "time": "18:35",
+    "time_type": "s",
+    "hour": 18.583333,
+    "time_unknown": false,
+    "place": "Ogden",
+    "country": "Utah",
+    "lat": 41.216667,
+    "lon": -111.966667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Les",
+  "source_notes": "Birth certificate submitted by Sy Scholfield.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Vocation : Art : Cartoonist",
+    "Vocation : Entertain/Business : Director",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.38693,
+    "lagna": 35.38693,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.570517,
+    "jd_ut": 2417897.565972,
+    "planets": {
+      "Sun": {
+        "longitude": 211.996263,
+        "sign_index": 7,
+        "degree_in_sign": 1.996263,
+        "is_retrograde": false,
+        "speed": 1.008375
+      },
+      "Moon": {
+        "longitude": 9.509684,
+        "sign_index": 0,
+        "degree_in_sign": 9.509684,
+        "is_retrograde": false,
+        "speed": 11.45425
+      },
+      "Mars": {
+        "longitude": 299.891048,
+        "sign_index": 9,
+        "degree_in_sign": 29.891048,
+        "is_retrograde": false,
+        "speed": 0.671266
+      },
+      "Mercury": {
+        "longitude": 204.026394,
+        "sign_index": 6,
+        "degree_in_sign": 24.026394,
+        "is_retrograde": true,
+        "speed": -1.04821
+      },
+      "Jupiter": {
+        "longitude": 110.769846,
+        "sign_index": 3,
+        "degree_in_sign": 20.769846,
+        "is_retrograde": false,
+        "speed": 0.041852
+      },
+      "Venus": {
+        "longitude": 228.393102,
+        "sign_index": 7,
+        "degree_in_sign": 18.393102,
+        "is_retrograde": false,
+        "speed": 1.249399
+      },
+      "Saturn": {
+        "longitude": 328.16296,
+        "sign_index": 10,
+        "degree_in_sign": 28.16296,
+        "is_retrograde": true,
+        "speed": -0.01261
+      },
+      "Rahu": {
+        "longitude": 84.234149,
+        "sign_index": 2,
+        "degree_in_sign": 24.234149,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 264.234149,
+        "sign_index": 8,
+        "degree_in_sign": 24.234149,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

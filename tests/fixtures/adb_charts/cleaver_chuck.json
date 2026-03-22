@@ -1,0 +1,112 @@
+{
+  "adb_id": 103416,
+  "name": "Cleaver, Chuck",
+  "given_name": "Chuck Cleaver",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2436725.925,
+    "year": 1959,
+    "month": 6,
+    "day": 6,
+    "calendar": "g",
+    "time": "05:12",
+    "time_type": "s",
+    "hour": 5.2,
+    "time_unknown": false,
+    "place": "Wilmington",
+    "country": "Ohio",
+    "lat": 39.45,
+    "lon": -83.833333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cleaver,_Chuck",
+  "source_notes": "Sy Scholfield quotes birth notices, ''Wilmington News-Journal'' (Wilmington, Ohio), 6 June 1959, page 2, and 11 June 1959, page 2: born at Clinton Memorial Hospital. \\n",
+  "categories": [
+    "Vocation : Building Trades : Other Building Trades",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 27.955249,
+    "lagna": 27.955249,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.290392,
+    "jd_ut": 2436725.925,
+    "planets": {
+      "Sun": {
+        "longitude": 51.677021,
+        "sign_index": 1,
+        "degree_in_sign": 21.677021,
+        "is_retrograde": false,
+        "speed": 0.957304
+      },
+      "Moon": {
+        "longitude": 51.484799,
+        "sign_index": 1,
+        "degree_in_sign": 21.484799,
+        "is_retrograde": false,
+        "speed": 13.6568
+      },
+      "Mars": {
+        "longitude": 99.889728,
+        "sign_index": 3,
+        "degree_in_sign": 9.889728,
+        "is_retrograde": false,
+        "speed": 0.598797
+      },
+      "Mercury": {
+        "longitude": 55.688754,
+        "sign_index": 1,
+        "degree_in_sign": 25.688754,
+        "is_retrograde": false,
+        "speed": 2.183739
+      },
+      "Jupiter": {
+        "longitude": 211.55502,
+        "sign_index": 7,
+        "degree_in_sign": 1.55502,
+        "is_retrograde": true,
+        "speed": -0.113113
+      },
+      "Venus": {
+        "longitude": 96.160772,
+        "sign_index": 3,
+        "degree_in_sign": 6.160772,
+        "is_retrograde": false,
+        "speed": 1.052988
+      },
+      "Saturn": {
+        "longitude": 251.88395,
+        "sign_index": 8,
+        "degree_in_sign": 11.88395,
+        "is_retrograde": true,
+        "speed": -0.066607
+      },
+      "Rahu": {
+        "longitude": 166.480319,
+        "sign_index": 5,
+        "degree_in_sign": 16.480319,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.480319,
+        "sign_index": 11,
+        "degree_in_sign": 16.480319,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

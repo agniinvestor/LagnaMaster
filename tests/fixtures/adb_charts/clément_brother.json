@@ -1,0 +1,108 @@
+{
+  "adb_id": 66266,
+  "name": "Clément, Brother",
+  "given_name": "Brother Clément",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2392884.65662,
+    "year": 1839,
+    "month": 5,
+    "day": 25,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Chambon sur Dolore",
+    "country": "France",
+    "lat": 45.5,
+    "lon": 3.616667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clément,_Brother",
+  "source_notes": "Paddy de Jabrun, archives, acte 26.\\n",
+  "categories": [
+    "Vocation : Religion : Missionary"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 11.71329,
+    "lagna": 11.71329,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.614437,
+    "jd_ut": 2392884.65662,
+    "planets": {
+      "Sun": {
+        "longitude": 41.599314,
+        "sign_index": 1,
+        "degree_in_sign": 11.599314,
+        "is_retrograde": false,
+        "speed": 0.9595
+      },
+      "Moon": {
+        "longitude": 184.96752,
+        "sign_index": 6,
+        "degree_in_sign": 4.96752,
+        "is_retrograde": false,
+        "speed": 12.001314
+      },
+      "Mars": {
+        "longitude": 144.997769,
+        "sign_index": 4,
+        "degree_in_sign": 24.997769,
+        "is_retrograde": false,
+        "speed": 0.315531
+      },
+      "Mercury": {
+        "longitude": 16.80849,
+        "sign_index": 0,
+        "degree_in_sign": 16.80849,
+        "is_retrograde": false,
+        "speed": 0.952729
+      },
+      "Jupiter": {
+        "longitude": 167.385384,
+        "sign_index": 5,
+        "degree_in_sign": 17.385384,
+        "is_retrograde": true,
+        "speed": -0.035406
+      },
+      "Venus": {
+        "longitude": 78.660571,
+        "sign_index": 2,
+        "degree_in_sign": 18.660571,
+        "is_retrograde": false,
+        "speed": 1.168512
+      },
+      "Saturn": {
+        "longitude": 225.728025,
+        "sign_index": 7,
+        "degree_in_sign": 15.728025,
+        "is_retrograde": true,
+        "speed": -0.073858
+      },
+      "Rahu": {
+        "longitude": 329.721565,
+        "sign_index": 10,
+        "degree_in_sign": 29.721565,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 149.721565,
+        "sign_index": 4,
+        "degree_in_sign": 29.721565,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

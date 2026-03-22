@@ -1,0 +1,108 @@
+{
+  "adb_id": 64930,
+  "name": "Carnot, Hippolyte",
+  "given_name": "Hippolyte Carnot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2378956.952083,
+    "year": 1801,
+    "month": 4,
+    "day": 6,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "St.Omer",
+    "country": "France",
+    "lat": 50.75,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carnot,_Hippolyte",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 51.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 13.26,
+    "lagna": 73.26,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.082196,
+    "jd_ut": 2378956.952083,
+    "planets": {
+      "Sun": {
+        "longitude": 355.072091,
+        "sign_index": 11,
+        "degree_in_sign": 25.072091,
+        "is_retrograde": false,
+        "speed": 0.982202
+      },
+      "Moon": {
+        "longitude": 268.993728,
+        "sign_index": 8,
+        "degree_in_sign": 28.993728,
+        "is_retrograde": false,
+        "speed": 12.876246
+      },
+      "Mars": {
+        "longitude": 64.255071,
+        "sign_index": 2,
+        "degree_in_sign": 4.255071,
+        "is_retrograde": false,
+        "speed": 0.565889
+      },
+      "Mercury": {
+        "longitude": 343.191581,
+        "sign_index": 11,
+        "degree_in_sign": 13.191581,
+        "is_retrograde": true,
+        "speed": -0.575246
+      },
+      "Jupiter": {
+        "longitude": 93.735731,
+        "sign_index": 3,
+        "degree_in_sign": 3.735731,
+        "is_retrograde": false,
+        "speed": 0.05049
+      },
+      "Venus": {
+        "longitude": 39.174697,
+        "sign_index": 1,
+        "degree_in_sign": 9.174697,
+        "is_retrograde": false,
+        "speed": 0.767246
+      },
+      "Saturn": {
+        "longitude": 116.179079,
+        "sign_index": 3,
+        "degree_in_sign": 26.179079,
+        "is_retrograde": true,
+        "speed": -0.022301
+      },
+      "Rahu": {
+        "longitude": 347.781042,
+        "sign_index": 11,
+        "degree_in_sign": 17.781042,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 167.781042,
+        "sign_index": 5,
+        "degree_in_sign": 17.781042,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 81107,
+  "name": "Cuénot, Lucien",
+  "given_name": "Lucien Cuénot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402896.326883,
+    "year": 1866,
+    "month": 10,
+    "day": 21,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 17",
+    "country": "France",
+    "lat": 48.884444,
+    "lon": 2.321944
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuénot,_Lucien",
+  "source_notes": "Sy Scholfield submitted birth certificate (acte n°2283) from the online Paris archives: \"huit heures du soir\" (8pm, 17th arr.). Marriage and death data in margin. Grazia Bordoni's Science file quotes Lescaut for same data.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Science : Biology",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 15.850847,
+    "lagna": 45.850847,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.997083,
+    "jd_ut": 2402896.326883,
+    "planets": {
+      "Sun": {
+        "longitude": 186.202536,
+        "sign_index": 6,
+        "degree_in_sign": 6.202536,
+        "is_retrograde": false,
+        "speed": 0.995636
+      },
+      "Moon": {
+        "longitude": 336.402581,
+        "sign_index": 11,
+        "degree_in_sign": 6.402581,
+        "is_retrograde": false,
+        "speed": 11.028901
+      },
+      "Mars": {
+        "longitude": 88.969447,
+        "sign_index": 2,
+        "degree_in_sign": 28.969447,
+        "is_retrograde": false,
+        "speed": 0.400166
+      },
+      "Mercury": {
+        "longitude": 198.38963,
+        "sign_index": 6,
+        "degree_in_sign": 18.38963,
+        "is_retrograde": false,
+        "speed": 1.537051
+      },
+      "Jupiter": {
+        "longitude": 272.150646,
+        "sign_index": 9,
+        "degree_in_sign": 2.150646,
+        "is_retrograde": false,
+        "speed": 0.101327
+      },
+      "Venus": {
+        "longitude": 230.974741,
+        "sign_index": 7,
+        "degree_in_sign": 20.974741,
+        "is_retrograde": false,
+        "speed": 0.791515
+      },
+      "Saturn": {
+        "longitude": 201.034307,
+        "sign_index": 6,
+        "degree_in_sign": 21.034307,
+        "is_retrograde": false,
+        "speed": 0.117231
+      },
+      "Rahu": {
+        "longitude": 159.181608,
+        "sign_index": 5,
+        "degree_in_sign": 9.181608,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 339.181608,
+        "sign_index": 11,
+        "degree_in_sign": 9.181608,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 64234,
+  "name": "Carbon, Yves",
+  "given_name": "Yves Carbon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419129.916667,
+    "year": 1911,
+    "month": 4,
+    "day": 3,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Lembeye",
+    "country": "France",
+    "lat": 43.450556,
+    "lon": -0.108889
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carbon,_Yves",
+  "source_notes": "Didier Geslain archive, 'aviation' pdf file, p. 28.\\n",
+  "categories": [
+    "Vocation : Military : Military service",
+    "Vocation : Travel : Pilot/ military"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 19.07016,
+    "lagna": 49.07016,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.617629,
+    "jd_ut": 2419129.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 349.920309,
+        "sign_index": 11,
+        "degree_in_sign": 19.920309,
+        "is_retrograde": false,
+        "speed": 0.985647
+      },
+      "Moon": {
+        "longitude": 42.928375,
+        "sign_index": 1,
+        "degree_in_sign": 12.928375,
+        "is_retrograde": false,
+        "speed": 14.304635
+      },
+      "Mars": {
+        "longitude": 292.527928,
+        "sign_index": 9,
+        "degree_in_sign": 22.527928,
+        "is_retrograde": false,
+        "speed": 0.744166
+      },
+      "Mercury": {
+        "longitude": 3.838608,
+        "sign_index": 0,
+        "degree_in_sign": 3.838608,
+        "is_retrograde": false,
+        "speed": 1.858419
+      },
+      "Jupiter": {
+        "longitude": 200.296281,
+        "sign_index": 6,
+        "degree_in_sign": 20.296281,
+        "is_retrograde": true,
+        "speed": -0.094518
+      },
+      "Venus": {
+        "longitude": 20.080694,
+        "sign_index": 0,
+        "degree_in_sign": 20.080694,
+        "is_retrograde": false,
+        "speed": 1.211909
+      },
+      "Saturn": {
+        "longitude": 13.623737,
+        "sign_index": 0,
+        "degree_in_sign": 13.623737,
+        "is_retrograde": false,
+        "speed": 0.121246
+      },
+      "Rahu": {
+        "longitude": 18.929297,
+        "sign_index": 0,
+        "degree_in_sign": 18.929297,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 198.929297,
+        "sign_index": 6,
+        "degree_in_sign": 18.929297,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

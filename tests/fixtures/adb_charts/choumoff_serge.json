@@ -1,0 +1,108 @@
+{
+  "adb_id": 65003,
+  "name": "Choumoff, Serge",
+  "given_name": "Serge Choumoff",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422842.489583,
+    "year": 1921,
+    "month": 6,
+    "day": 2,
+    "calendar": "g",
+    "time": "00:45",
+    "time_type": "d",
+    "hour": 0.75,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Choumoff,_Serge",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 160.\\n",
+  "categories": [
+    "Vocation : Engineer : Other Engineer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 1.82516,
+    "lagna": 271.82516,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.759563,
+    "jd_ut": 2422842.489583,
+    "planets": {
+      "Sun": {
+        "longitude": 48.131206,
+        "sign_index": 1,
+        "degree_in_sign": 18.131206,
+        "is_retrograde": false,
+        "speed": 0.958038
+      },
+      "Moon": {
+        "longitude": 353.595765,
+        "sign_index": 11,
+        "degree_in_sign": 23.595765,
+        "is_retrograde": false,
+        "speed": 15.111939
+      },
+      "Mars": {
+        "longitude": 55.838689,
+        "sign_index": 1,
+        "degree_in_sign": 25.838689,
+        "is_retrograde": false,
+        "speed": 0.681421
+      },
+      "Mercury": {
+        "longitude": 69.909234,
+        "sign_index": 2,
+        "degree_in_sign": 9.909234,
+        "is_retrograde": false,
+        "speed": 1.461754
+      },
+      "Jupiter": {
+        "longitude": 137.239482,
+        "sign_index": 4,
+        "degree_in_sign": 17.239482,
+        "is_retrograde": false,
+        "speed": 0.07735
+      },
+      "Venus": {
+        "longitude": 7.12777,
+        "sign_index": 0,
+        "degree_in_sign": 7.12777,
+        "is_retrograde": false,
+        "speed": 0.576722
+      },
+      "Saturn": {
+        "longitude": 145.334117,
+        "sign_index": 4,
+        "degree_in_sign": 25.334117,
+        "is_retrograde": false,
+        "speed": 0.020611
+      },
+      "Rahu": {
+        "longitude": 182.192287,
+        "sign_index": 6,
+        "degree_in_sign": 2.192287,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 2.192287,
+        "sign_index": 0,
+        "degree_in_sign": 2.192287,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

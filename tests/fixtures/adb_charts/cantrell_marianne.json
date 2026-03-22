@@ -1,0 +1,110 @@
+{
+  "adb_id": 93905,
+  "name": "Cantrell, Marianne",
+  "given_name": "Marianne Cantrell",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415267.410174,
+    "year": 1900,
+    "month": 9,
+    "day": 4,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 18",
+    "country": "France",
+    "lat": 48.892222,
+    "lon": 2.344444
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantrell,_Marianne",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_acteurs_muet-2.pdf]. \\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids - Noted",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 28.206566,
+    "lagna": 28.206566,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.469969,
+    "jd_ut": 2415267.410174,
+    "planets": {
+      "Sun": {
+        "longitude": 139.394642,
+        "sign_index": 4,
+        "degree_in_sign": 19.394642,
+        "is_retrograde": false,
+        "speed": 0.96965
+      },
+      "Moon": {
+        "longitude": 260.212777,
+        "sign_index": 8,
+        "degree_in_sign": 20.212777,
+        "is_retrograde": false,
+        "speed": 10.290107
+      },
+      "Mars": {
+        "longitude": 84.200233,
+        "sign_index": 2,
+        "degree_in_sign": 24.200233,
+        "is_retrograde": false,
+        "speed": 0.626811
+      },
+      "Mercury": {
+        "longitude": 131.143202,
+        "sign_index": 4,
+        "degree_in_sign": 11.143202,
+        "is_retrograde": false,
+        "speed": 1.929382
+      },
+      "Jupiter": {
+        "longitude": 220.638813,
+        "sign_index": 7,
+        "degree_in_sign": 10.638813,
+        "is_retrograde": false,
+        "speed": 0.106962
+      },
+      "Venus": {
+        "longitude": 94.045955,
+        "sign_index": 3,
+        "degree_in_sign": 4.045955,
+        "is_retrograde": false,
+        "speed": 0.856818
+      },
+      "Saturn": {
+        "longitude": 245.962641,
+        "sign_index": 8,
+        "degree_in_sign": 5.962641,
+        "is_retrograde": false,
+        "speed": 0.003651
+      },
+      "Rahu": {
+        "longitude": 223.611643,
+        "sign_index": 7,
+        "degree_in_sign": 13.611643,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 43.611643,
+        "sign_index": 1,
+        "degree_in_sign": 13.611643,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

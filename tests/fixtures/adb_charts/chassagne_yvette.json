@@ -1,0 +1,108 @@
+{
+  "adb_id": 67517,
+  "name": "Chassagne, Yvette",
+  "given_name": "Yvette Chassagne",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423142.291667,
+    "year": 1922,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "d",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Bordeaux",
+    "country": "France",
+    "lat": 44.833333,
+    "lon": -0.566667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chassagne,_Yvette",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 51.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 29.549343,
+    "lagna": 149.549343,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.771025,
+    "jd_ut": 2423142.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 344.543368,
+        "sign_index": 11,
+        "degree_in_sign": 14.543368,
+        "is_retrograde": false,
+        "speed": 0.988806
+      },
+      "Moon": {
+        "longitude": 346.431521,
+        "sign_index": 11,
+        "degree_in_sign": 16.431521,
+        "is_retrograde": false,
+        "speed": 12.594669
+      },
+      "Mars": {
+        "longitude": 234.204447,
+        "sign_index": 7,
+        "degree_in_sign": 24.204447,
+        "is_retrograde": false,
+        "speed": 0.362886
+      },
+      "Mercury": {
+        "longitude": 321.593519,
+        "sign_index": 10,
+        "degree_in_sign": 21.593519,
+        "is_retrograde": false,
+        "speed": 1.504948
+      },
+      "Jupiter": {
+        "longitude": 172.102279,
+        "sign_index": 5,
+        "degree_in_sign": 22.102279,
+        "is_retrograde": true,
+        "speed": -0.12658
+      },
+      "Venus": {
+        "longitude": 356.252872,
+        "sign_index": 11,
+        "degree_in_sign": 26.252872,
+        "is_retrograde": false,
+        "speed": 1.239553
+      },
+      "Saturn": {
+        "longitude": 161.240845,
+        "sign_index": 5,
+        "degree_in_sign": 11.240845,
+        "is_retrograde": true,
+        "speed": -0.078181
+      },
+      "Rahu": {
+        "longitude": 166.305149,
+        "sign_index": 5,
+        "degree_in_sign": 16.305149,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.305149,
+        "sign_index": 11,
+        "degree_in_sign": 16.305149,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

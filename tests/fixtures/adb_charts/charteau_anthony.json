@@ -1,0 +1,108 @@
+{
+  "adb_id": 65862,
+  "name": "Charteau, Anthony",
+  "given_name": "Anthony Charteau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444029.006944,
+    "year": 1979,
+    "month": 6,
+    "day": 4,
+    "calendar": "g",
+    "time": "14:10",
+    "time_type": "d",
+    "hour": 14.166667,
+    "time_unknown": false,
+    "place": "Nantes",
+    "country": "France",
+    "lat": 47.216667,
+    "lon": -1.55
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "lib",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charteau,_Anthony",
+  "source_notes": "Didier Geslain archive, 'Cyclisme' pdf file, p. 66.\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 0.469831,
+    "lagna": 120.469831,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.569658,
+    "jd_ut": 2444029.006944,
+    "planets": {
+      "Sun": {
+        "longitude": 49.720384,
+        "sign_index": 1,
+        "degree_in_sign": 19.720384,
+        "is_retrograde": false,
+        "speed": 0.957355
+      },
+      "Moon": {
+        "longitude": 157.731528,
+        "sign_index": 5,
+        "degree_in_sign": 7.731528,
+        "is_retrograde": false,
+        "speed": 13.180794
+      },
+      "Mars": {
+        "longitude": 20.804321,
+        "sign_index": 0,
+        "degree_in_sign": 20.804321,
+        "is_retrograde": false,
+        "speed": 0.734768
+      },
+      "Mercury": {
+        "longitude": 56.499172,
+        "sign_index": 1,
+        "degree_in_sign": 26.499172,
+        "is_retrograde": false,
+        "speed": 2.147398
+      },
+      "Jupiter": {
+        "longitude": 102.236119,
+        "sign_index": 3,
+        "degree_in_sign": 12.236119,
+        "is_retrograde": false,
+        "speed": 0.171001
+      },
+      "Venus": {
+        "longitude": 27.625605,
+        "sign_index": 0,
+        "degree_in_sign": 27.625605,
+        "is_retrograde": false,
+        "speed": 1.213487
+      },
+      "Saturn": {
+        "longitude": 134.085123,
+        "sign_index": 4,
+        "degree_in_sign": 14.085123,
+        "is_retrograde": false,
+        "speed": 0.043875
+      },
+      "Rahu": {
+        "longitude": 139.475094,
+        "sign_index": 4,
+        "degree_in_sign": 19.475094,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 319.475094,
+        "sign_index": 10,
+        "degree_in_sign": 19.475094,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

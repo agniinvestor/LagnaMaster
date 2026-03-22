@@ -1,0 +1,116 @@
+{
+  "adb_id": 91534,
+  "name": "Crowe, George",
+  "given_name": "George Crowe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422771.666667,
+    "year": 1921,
+    "month": 3,
+    "day": 22,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Pleasant",
+    "country": "Indiana",
+    "lat": 38.866667,
+    "lon": -85.183333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crowe,_George",
+  "source_notes": "Sy Scholfield provided birth certificate (\"George Daniel Crow\").\\n",
+  "categories": [
+    "Traits : Body : Handedness",
+    "Traits : Body : Race",
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Military : Military service",
+    "Vocation : Sports : Baseball",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 6.40725,
+    "lagna": 186.40725,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.756855,
+    "jd_ut": 2422771.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 339.230388,
+        "sign_index": 11,
+        "degree_in_sign": 9.230388,
+        "is_retrograde": false,
+        "speed": 0.991108
+      },
+      "Moon": {
+        "longitude": 150.645385,
+        "sign_index": 5,
+        "degree_in_sign": 0.645385,
+        "is_retrograde": false,
+        "speed": 10.257221
+      },
+      "Mars": {
+        "longitude": 5.696289,
+        "sign_index": 0,
+        "degree_in_sign": 5.696289,
+        "is_retrograde": false,
+        "speed": 0.735828
+      },
+      "Mercury": {
+        "longitude": 312.803666,
+        "sign_index": 10,
+        "degree_in_sign": 12.803666,
+        "is_retrograde": false,
+        "speed": 0.580346
+      },
+      "Jupiter": {
+        "longitude": 138.945477,
+        "sign_index": 4,
+        "degree_in_sign": 18.945477,
+        "is_retrograde": true,
+        "speed": -0.115842
+      },
+      "Venus": {
+        "longitude": 15.88623,
+        "sign_index": 0,
+        "degree_in_sign": 15.88623,
+        "is_retrograde": false,
+        "speed": 0.337455
+      },
+      "Saturn": {
+        "longitude": 147.835602,
+        "sign_index": 4,
+        "degree_in_sign": 27.835602,
+        "is_retrograde": true,
+        "speed": -0.076825
+      },
+      "Rahu": {
+        "longitude": 185.945341,
+        "sign_index": 6,
+        "degree_in_sign": 5.945341,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 5.945341,
+        "sign_index": 0,
+        "degree_in_sign": 5.945341,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

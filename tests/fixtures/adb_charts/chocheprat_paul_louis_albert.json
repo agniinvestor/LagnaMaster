@@ -1,0 +1,108 @@
+{
+  "adb_id": 70528,
+  "name": "Chocheprat, Paul Louis Albert",
+  "given_name": "Paul Louis Albert Chocheprat",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2398745.500539,
+    "year": 1855,
+    "month": 6,
+    "day": 11,
+    "calendar": "g",
+    "time": "00:15",
+    "time_type": "l",
+    "hour": 0.25,
+    "time_unknown": false,
+    "place": "Périgny (Allier)",
+    "country": "France",
+    "lat": 46.251667,
+    "lon": 3.555833
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "tau",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chocheprat,_Paul_Louis_Albert",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 68.\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 1.55467,
+    "lagna": 301.55467,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.838433,
+    "jd_ut": 2398745.500539,
+    "planets": {
+      "Sun": {
+        "longitude": 57.630717,
+        "sign_index": 1,
+        "degree_in_sign": 27.630717,
+        "is_retrograde": false,
+        "speed": 0.955665
+      },
+      "Moon": {
+        "longitude": 14.688787,
+        "sign_index": 0,
+        "degree_in_sign": 14.688787,
+        "is_retrograde": false,
+        "speed": 16.090562
+      },
+      "Mars": {
+        "longitude": 43.160254,
+        "sign_index": 1,
+        "degree_in_sign": 13.160254,
+        "is_retrograde": false,
+        "speed": 0.70507
+      },
+      "Mercury": {
+        "longitude": 81.769677,
+        "sign_index": 2,
+        "degree_in_sign": 21.769677,
+        "is_retrograde": false,
+        "speed": 1.177867
+      },
+      "Jupiter": {
+        "longitude": 310.579207,
+        "sign_index": 10,
+        "degree_in_sign": 10.579207,
+        "is_retrograde": false,
+        "speed": 0.034951
+      },
+      "Venus": {
+        "longitude": 98.818261,
+        "sign_index": 3,
+        "degree_in_sign": 8.818261,
+        "is_retrograde": false,
+        "speed": 1.129535
+      },
+      "Saturn": {
+        "longitude": 57.568592,
+        "sign_index": 1,
+        "degree_in_sign": 27.568592,
+        "is_retrograde": false,
+        "speed": 0.130256
+      },
+      "Rahu": {
+        "longitude": 19.142796,
+        "sign_index": 0,
+        "degree_in_sign": 19.142796,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 199.142796,
+        "sign_index": 6,
+        "degree_in_sign": 19.142796,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

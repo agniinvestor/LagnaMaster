@@ -1,0 +1,112 @@
+{
+  "adb_id": 86945,
+  "name": "Cunningham, Harry",
+  "given_name": "Harry Cunningham",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417780.565972,
+    "year": 1907,
+    "month": 7,
+    "day": 23,
+    "calendar": "g",
+    "time": "20:35",
+    "time_type": "s",
+    "hour": 20.583333,
+    "time_unknown": false,
+    "place": "Union City",
+    "country": "Pennsylvania",
+    "lat": 41.9,
+    "lon": -79.85
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cunningham,_Harry",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Business : Top executive",
+    "Vocation : Business/Marketing : Sales",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 2.488422,
+    "lagna": 272.488422,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.566044,
+    "jd_ut": 2417780.565972,
+    "planets": {
+      "Sun": {
+        "longitude": 97.449397,
+        "sign_index": 3,
+        "degree_in_sign": 7.449397,
+        "is_retrograde": false,
+        "speed": 0.954597
+      },
+      "Moon": {
+        "longitude": 261.961065,
+        "sign_index": 8,
+        "degree_in_sign": 21.961065,
+        "is_retrograde": false,
+        "speed": 11.464415
+      },
+      "Mars": {
+        "longitude": 256.154697,
+        "sign_index": 8,
+        "degree_in_sign": 16.154697,
+        "is_retrograde": true,
+        "speed": -0.206076
+      },
+      "Mercury": {
+        "longitude": 99.219196,
+        "sign_index": 3,
+        "degree_in_sign": 9.219196,
+        "is_retrograde": true,
+        "speed": -0.709791
+      },
+      "Jupiter": {
+        "longitude": 91.772233,
+        "sign_index": 3,
+        "degree_in_sign": 1.772233,
+        "is_retrograde": false,
+        "speed": 0.222959
+      },
+      "Venus": {
+        "longitude": 83.050822,
+        "sign_index": 2,
+        "degree_in_sign": 23.050822,
+        "is_retrograde": false,
+        "speed": 1.223566
+      },
+      "Saturn": {
+        "longitude": 334.726688,
+        "sign_index": 11,
+        "degree_in_sign": 4.726688,
+        "is_retrograde": true,
+        "speed": -0.023447
+      },
+      "Rahu": {
+        "longitude": 90.434225,
+        "sign_index": 3,
+        "degree_in_sign": 0.434225,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 270.434225,
+        "sign_index": 9,
+        "degree_in_sign": 0.434225,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

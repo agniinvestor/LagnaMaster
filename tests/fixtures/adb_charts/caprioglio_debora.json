@@ -1,0 +1,108 @@
+{
+  "adb_id": 71563,
+  "name": "Caprioglio, Debora",
+  "given_name": "Debora Caprioglio",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439980.354167,
+    "year": 1968,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "s",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Mestre",
+    "country": "Italy",
+    "lat": 45.483333,
+    "lon": 12.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caprioglio,_Debora",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 22.363765,
+    "lagna": 202.363765,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.414837,
+    "jd_ut": 2439980.354167,
+    "planets": {
+      "Sun": {
+        "longitude": 20.035633,
+        "sign_index": 0,
+        "degree_in_sign": 20.035633,
+        "is_retrograde": false,
+        "speed": 0.969148
+      },
+      "Moon": {
+        "longitude": 87.616636,
+        "sign_index": 2,
+        "degree_in_sign": 27.616636,
+        "is_retrograde": false,
+        "speed": 11.134525
+      },
+      "Mars": {
+        "longitude": 33.240668,
+        "sign_index": 1,
+        "degree_in_sign": 3.240668,
+        "is_retrograde": false,
+        "speed": 0.708011
+      },
+      "Mercury": {
+        "longitude": 30.350938,
+        "sign_index": 1,
+        "degree_in_sign": 0.350938,
+        "is_retrograde": false,
+        "speed": 2.063303
+      },
+      "Jupiter": {
+        "longitude": 122.633591,
+        "sign_index": 4,
+        "degree_in_sign": 2.633591,
+        "is_retrograde": false,
+        "speed": 0.036252
+      },
+      "Venus": {
+        "longitude": 7.281417,
+        "sign_index": 0,
+        "degree_in_sign": 7.281417,
+        "is_retrograde": false,
+        "speed": 1.229285
+      },
+      "Saturn": {
+        "longitude": 355.502353,
+        "sign_index": 11,
+        "degree_in_sign": 25.502353,
+        "is_retrograde": false,
+        "speed": 0.118606
+      },
+      "Rahu": {
+        "longitude": 354.021456,
+        "sign_index": 11,
+        "degree_in_sign": 24.021456,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 174.021456,
+        "sign_index": 5,
+        "degree_in_sign": 24.021456,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

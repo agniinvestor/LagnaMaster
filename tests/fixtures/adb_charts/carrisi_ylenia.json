@@ -1,0 +1,111 @@
+{
+  "adb_id": 14468,
+  "name": "Carrisi, Ylenia",
+  "given_name": "Ylenia Carrisi",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440919.975694,
+    "year": 1970,
+    "month": 11,
+    "day": 29,
+    "calendar": "g",
+    "time": "12:25",
+    "time_type": "s",
+    "hour": 12.416667,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrisi,_Ylenia",
+  "source_notes": "Bordoni quotes B.C. Vol 4.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Passions : Criminal Victim : Missing person",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 11.629036,
+    "lagna": 281.629036,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.450767,
+    "jd_ut": 2440919.975694,
+    "planets": {
+      "Sun": {
+        "longitude": 223.379534,
+        "sign_index": 7,
+        "degree_in_sign": 13.379534,
+        "is_retrograde": false,
+        "speed": 1.013437
+      },
+      "Moon": {
+        "longitude": 230.873908,
+        "sign_index": 7,
+        "degree_in_sign": 20.873908,
+        "is_retrograde": false,
+        "speed": 9.143636
+      },
+      "Mars": {
+        "longitude": 181.964311,
+        "sign_index": 6,
+        "degree_in_sign": 1.964311,
+        "is_retrograde": false,
+        "speed": 0.63532
+      },
+      "Mercury": {
+        "longitude": 241.04117,
+        "sign_index": 8,
+        "degree_in_sign": 1.04117,
+        "is_retrograde": false,
+        "speed": 1.426053
+      },
+      "Jupiter": {
+        "longitude": 207.448754,
+        "sign_index": 6,
+        "degree_in_sign": 27.448754,
+        "is_retrograde": false,
+        "speed": 0.216525
+      },
+      "Venus": {
+        "longitude": 196.374932,
+        "sign_index": 6,
+        "degree_in_sign": 16.374932,
+        "is_retrograde": true,
+        "speed": -0.062301
+      },
+      "Saturn": {
+        "longitude": 24.288699,
+        "sign_index": 0,
+        "degree_in_sign": 24.288699,
+        "is_retrograde": true,
+        "speed": -0.074456
+      },
+      "Rahu": {
+        "longitude": 304.228992,
+        "sign_index": 10,
+        "degree_in_sign": 4.228992,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 124.228992,
+        "sign_index": 4,
+        "degree_in_sign": 4.228992,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

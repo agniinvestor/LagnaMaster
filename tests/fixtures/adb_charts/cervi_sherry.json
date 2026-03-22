@@ -1,0 +1,114 @@
+{
+  "adb_id": 88602,
+  "name": "Cervi, Sherry",
+  "given_name": "Sherry Cervi",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2442673.052778,
+    "year": 1975,
+    "month": 9,
+    "day": 17,
+    "calendar": "g",
+    "time": "06:16",
+    "time_type": "s",
+    "hour": 6.266667,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cervi,_Sherry",
+  "source_notes": "Sy Scholfield provided copy of birth notice, Tucson Daily Citizen (Tucson, Arizona), 18 Sept 1975, page 43.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Family : Relationship : Number of Marriages",
+    "Passions : Criminal Victim : Social crime victim",
+    "Vocation : Sports : Equestrian",
+    "Vocation : Sports Business : Coach/ Manager/ Owner",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 7.756315,
+    "lagna": 127.756315,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.517805,
+    "jd_ut": 2442673.052778,
+    "planets": {
+      "Sun": {
+        "longitude": 150.508982,
+        "sign_index": 5,
+        "degree_in_sign": 0.508982,
+        "is_retrograde": false,
+        "speed": 0.975256
+      },
+      "Moon": {
+        "longitude": 297.62161,
+        "sign_index": 9,
+        "degree_in_sign": 27.62161,
+        "is_retrograde": false,
+        "speed": 14.532847
+      },
+      "Mars": {
+        "longitude": 55.228932,
+        "sign_index": 1,
+        "degree_in_sign": 25.228932,
+        "is_retrograde": false,
+        "speed": 0.480285
+      },
+      "Mercury": {
+        "longitude": 176.80758,
+        "sign_index": 5,
+        "degree_in_sign": 26.80758,
+        "is_retrograde": false,
+        "speed": 0.779942
+      },
+      "Jupiter": {
+        "longitude": 359.364263,
+        "sign_index": 11,
+        "degree_in_sign": 29.364263,
+        "is_retrograde": true,
+        "speed": -0.102459
+      },
+      "Venus": {
+        "longitude": 121.911795,
+        "sign_index": 4,
+        "degree_in_sign": 1.911795,
+        "is_retrograde": true,
+        "speed": -0.020593
+      },
+      "Saturn": {
+        "longitude": 96.510634,
+        "sign_index": 3,
+        "degree_in_sign": 6.510634,
+        "is_retrograde": false,
+        "speed": 0.093435
+      },
+      "Rahu": {
+        "longitude": 211.329864,
+        "sign_index": 7,
+        "degree_in_sign": 1.329864,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 31.329864,
+        "sign_index": 1,
+        "degree_in_sign": 1.329864,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

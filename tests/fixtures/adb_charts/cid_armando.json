@@ -1,0 +1,109 @@
+{
+  "adb_id": 36305,
+  "name": "Cid, Armando",
+  "given_name": "Armando Cid",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430883.104167,
+    "year": 1943,
+    "month": 6,
+    "day": 7,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Fresnillo",
+    "country": "Mexico",
+    "lat": 23.166667,
+    "lon": -102.883333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cid,_Armando",
+  "source_notes": "Lilia Molina quotes him, time from his mom.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Education : Teacher"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 2.136021,
+    "lagna": 62.136021,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.066982,
+    "jd_ut": 2430883.104167,
+    "planets": {
+      "Sun": {
+        "longitude": 52.90072,
+        "sign_index": 1,
+        "degree_in_sign": 22.90072,
+        "is_retrograde": false,
+        "speed": 0.956868
+      },
+      "Moon": {
+        "longitude": 105.334412,
+        "sign_index": 3,
+        "degree_in_sign": 15.334412,
+        "is_retrograde": false,
+        "speed": 13.949615
+      },
+      "Mars": {
+        "longitude": 345.212575,
+        "sign_index": 11,
+        "degree_in_sign": 15.212575,
+        "is_retrograde": false,
+        "speed": 0.733199
+      },
+      "Mercury": {
+        "longitude": 34.192957,
+        "sign_index": 1,
+        "degree_in_sign": 4.192957,
+        "is_retrograde": false,
+        "speed": 0.189926
+      },
+      "Jupiter": {
+        "longitude": 92.156428,
+        "sign_index": 3,
+        "degree_in_sign": 2.156428,
+        "is_retrograde": false,
+        "speed": 0.194883
+      },
+      "Venus": {
+        "longitude": 97.041241,
+        "sign_index": 3,
+        "degree_in_sign": 7.041241,
+        "is_retrograde": false,
+        "speed": 1.067301
+      },
+      "Saturn": {
+        "longitude": 52.931328,
+        "sign_index": 1,
+        "degree_in_sign": 22.931328,
+        "is_retrograde": false,
+        "speed": 0.129913
+      },
+      "Rahu": {
+        "longitude": 116.103423,
+        "sign_index": 3,
+        "degree_in_sign": 26.103423,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 296.103423,
+        "sign_index": 9,
+        "degree_in_sign": 26.103423,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

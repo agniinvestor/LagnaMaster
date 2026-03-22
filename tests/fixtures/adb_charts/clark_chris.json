@@ -1,0 +1,114 @@
+{
+  "adb_id": 88854,
+  "name": "Clark, Chris",
+  "given_name": "Chris Clark",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431853.118056,
+    "year": 1946,
+    "month": 2,
+    "day": 1,
+    "calendar": "g",
+    "time": "06:50",
+    "time_type": "s",
+    "hour": 6.833333,
+    "time_unknown": false,
+    "place": "Santa Cruz",
+    "country": "California",
+    "lat": 36.966667,
+    "lon": -122.033333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Chris",
+  "source_notes": "Sy Scholfield provided copy of birth notice, Santa Cruz Sentinel (Santa Cruz, California), 2 Feb 1946, page 5, born at Sisters Hospital. \\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Traits : Body : Size",
+    "Family : Relationship : Marriage less than 3 Yrs",
+    "Vocation : Entertain/Music : Jazz",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Awards : Oscar"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 17.918459,
+    "lagna": 257.918459,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.104071,
+    "jd_ut": 2431853.118056,
+    "planets": {
+      "Sun": {
+        "longitude": 289.057911,
+        "sign_index": 9,
+        "degree_in_sign": 19.057911,
+        "is_retrograde": false,
+        "speed": 1.015054
+      },
+      "Moon": {
+        "longitude": 282.593098,
+        "sign_index": 9,
+        "degree_in_sign": 12.593098,
+        "is_retrograde": false,
+        "speed": 11.62585
+      },
+      "Mars": {
+        "longitude": 83.676441,
+        "sign_index": 2,
+        "degree_in_sign": 23.676441,
+        "is_retrograde": true,
+        "speed": -0.263856
+      },
+      "Mercury": {
+        "longitude": 282.337846,
+        "sign_index": 9,
+        "degree_in_sign": 12.337846,
+        "is_retrograde": false,
+        "speed": 1.661522
+      },
+      "Jupiter": {
+        "longitude": 184.118053,
+        "sign_index": 6,
+        "degree_in_sign": 4.118053,
+        "is_retrograde": false,
+        "speed": 0.03051
+      },
+      "Venus": {
+        "longitude": 289.063027,
+        "sign_index": 9,
+        "degree_in_sign": 19.063027,
+        "is_retrograde": false,
+        "speed": 1.255592
+      },
+      "Saturn": {
+        "longitude": 86.721519,
+        "sign_index": 2,
+        "degree_in_sign": 26.721519,
+        "is_retrograde": true,
+        "speed": -0.07289
+      },
+      "Rahu": {
+        "longitude": 64.700384,
+        "sign_index": 2,
+        "degree_in_sign": 4.700384,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 244.700384,
+        "sign_index": 8,
+        "degree_in_sign": 4.700384,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "adb_id": 100276,
+  "name": "Chaui, Marilena",
+  "given_name": "Marilena Chaui",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430242.211806,
+    "year": 1941,
+    "month": 9,
+    "day": 4,
+    "calendar": "g",
+    "time": "14:05",
+    "time_type": "s",
+    "hour": 14.083333,
+    "time_unknown": false,
+    "place": "Bela Vista (São Paulo)",
+    "country": "Brazil",
+    "lat": -23.083333,
+    "lon": -47.9
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaui,_Marilena",
+  "source_notes": "Birth entry from civil registry book in hand from Sy Scholfield, copy on file (São Paulo Archives). \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Education : Teacher",
+    "Vocation : Education : Teacher",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 3.938727,
+    "lagna": 243.938727,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.042478,
+    "jd_ut": 2430242.211806,
+    "planets": {
+      "Sun": {
+        "longitude": 138.712057,
+        "sign_index": 4,
+        "degree_in_sign": 18.712057,
+        "is_retrograde": false,
+        "speed": 0.969129
+      },
+      "Moon": {
+        "longitude": 307.226733,
+        "sign_index": 10,
+        "degree_in_sign": 7.226733,
+        "is_retrograde": false,
+        "speed": 16.559976
+      },
+      "Mars": {
+        "longitude": 0.647371,
+        "sign_index": 0,
+        "degree_in_sign": 0.647371,
+        "is_retrograde": false,
+        "speed": 0.029573
+      },
+      "Mercury": {
+        "longitude": 153.214112,
+        "sign_index": 5,
+        "degree_in_sign": 3.214112,
+        "is_retrograde": false,
+        "speed": 1.659914
+      },
+      "Jupiter": {
+        "longitude": 56.391782,
+        "sign_index": 1,
+        "degree_in_sign": 26.391782,
+        "is_retrograde": false,
+        "speed": 0.10823
+      },
+      "Venus": {
+        "longitude": 174.541676,
+        "sign_index": 5,
+        "degree_in_sign": 24.541676,
+        "is_retrograde": false,
+        "speed": 1.191573
+      },
+      "Saturn": {
+        "longitude": 35.475056,
+        "sign_index": 1,
+        "degree_in_sign": 5.475056,
+        "is_retrograde": false,
+        "speed": 0.010783
+      },
+      "Rahu": {
+        "longitude": 150.065634,
+        "sign_index": 5,
+        "degree_in_sign": 0.065634,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 330.065634,
+        "sign_index": 11,
+        "degree_in_sign": 0.065634,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

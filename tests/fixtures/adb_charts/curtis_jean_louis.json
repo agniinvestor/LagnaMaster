@@ -1,0 +1,112 @@
+{
+  "adb_id": 37140,
+  "name": "Curtis, Jean-Louis",
+  "given_name": "Jean-Louis Curtis",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421371.395833,
+    "year": 1917,
+    "month": 5,
+    "day": 22,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "d",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Orthez",
+    "country": "France",
+    "lat": 43.483333,
+    "lon": -0.766667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curtis,_Jean-Louis",
+  "source_notes": "Petitallot quotes B.C., Cadran No.25, 12/1995.\\nExtract from birth certificate in Didier Geslain archive, 'C' pdf file, p. 297, has 10:30 (a.m.); another extract in same archive, 'diverses' pdf file, p. 69, has 22:30.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Heart",
+    "Family : Relationship : Married late/never",
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Fiction",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 12.201713,
+    "lagna": 222.201713,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.703321,
+    "jd_ut": 2421371.395833,
+    "planets": {
+      "Sun": {
+        "longitude": 38.475378,
+        "sign_index": 1,
+        "degree_in_sign": 8.475378,
+        "is_retrograde": false,
+        "speed": 0.961376
+      },
+      "Moon": {
+        "longitude": 60.197491,
+        "sign_index": 2,
+        "degree_in_sign": 0.197491,
+        "is_retrograde": false,
+        "speed": 14.684122
+      },
+      "Mars": {
+        "longitude": 20.645127,
+        "sign_index": 0,
+        "degree_in_sign": 20.645127,
+        "is_retrograde": false,
+        "speed": 0.735225
+      },
+      "Mercury": {
+        "longitude": 29.396656,
+        "sign_index": 0,
+        "degree_in_sign": 29.396656,
+        "is_retrograde": true,
+        "speed": -0.43238
+      },
+      "Jupiter": {
+        "longitude": 28.714748,
+        "sign_index": 0,
+        "degree_in_sign": 28.714748,
+        "is_retrograde": false,
+        "speed": 0.235357
+      },
+      "Venus": {
+        "longitude": 45.512043,
+        "sign_index": 1,
+        "degree_in_sign": 15.512043,
+        "is_retrograde": false,
+        "speed": 1.229532
+      },
+      "Saturn": {
+        "longitude": 93.792475,
+        "sign_index": 3,
+        "degree_in_sign": 3.792475,
+        "is_retrograde": false,
+        "speed": 0.091382
+      },
+      "Rahu": {
+        "longitude": 260.148619,
+        "sign_index": 8,
+        "degree_in_sign": 20.148619,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 80.148619,
+        "sign_index": 2,
+        "degree_in_sign": 20.148619,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

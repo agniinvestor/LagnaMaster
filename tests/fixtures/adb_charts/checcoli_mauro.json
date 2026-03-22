@@ -1,0 +1,109 @@
+{
+  "adb_id": 9330,
+  "name": "Checcoli, Mauro",
+  "given_name": "Mauro Checcoli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430785.229167,
+    "year": 1943,
+    "month": 3,
+    "day": 1,
+    "calendar": "g",
+    "time": "18:30",
+    "time_type": "s",
+    "hour": 18.5,
+    "time_unknown": false,
+    "place": "Bologna",
+    "country": "Italy",
+    "lat": 44.483333,
+    "lon": 11.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Checcoli,_Mauro",
+  "source_notes": "Bordoni quotes B.C.\\n",
+  "categories": [
+    "Vocation : Sports : Equestrian",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 0.495415,
+    "lagna": 120.495415,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.06324,
+    "jd_ut": 2430785.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 317.198854,
+        "sign_index": 10,
+        "degree_in_sign": 17.198854,
+        "is_retrograde": false,
+        "speed": 1.003621
+      },
+      "Moon": {
+        "longitude": 252.725806,
+        "sign_index": 8,
+        "degree_in_sign": 12.725806,
+        "is_retrograde": false,
+        "speed": 18.2551
+      },
+      "Mars": {
+        "longitude": 271.874073,
+        "sign_index": 9,
+        "degree_in_sign": 1.874073,
+        "is_retrograde": false,
+        "speed": 0.743477
+      },
+      "Mercury": {
+        "longitude": 293.046199,
+        "sign_index": 9,
+        "degree_in_sign": 23.046199,
+        "is_retrograde": false,
+        "speed": 1.363596
+      },
+      "Jupiter": {
+        "longitude": 82.288035,
+        "sign_index": 2,
+        "degree_in_sign": 22.288035,
+        "is_retrograde": true,
+        "speed": -0.034067
+      },
+      "Venus": {
+        "longitude": 342.160409,
+        "sign_index": 11,
+        "degree_in_sign": 12.160409,
+        "is_retrograde": false,
+        "speed": 1.234086
+      },
+      "Saturn": {
+        "longitude": 43.037498,
+        "sign_index": 1,
+        "degree_in_sign": 13.037498,
+        "is_retrograde": false,
+        "speed": 0.043039
+      },
+      "Rahu": {
+        "longitude": 121.290022,
+        "sign_index": 4,
+        "degree_in_sign": 1.290022,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 301.290022,
+        "sign_index": 10,
+        "degree_in_sign": 1.290022,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

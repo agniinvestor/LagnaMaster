@@ -1,0 +1,109 @@
+{
+  "adb_id": 68048,
+  "name": "Cavaignac, Louis-Eugène",
+  "given_name": "Louis-Eugène Cavaignac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2379513.826852,
+    "year": 1802,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavaignac,_Louis-Eugène",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'officiers 1800-1918' pdf file, p. 10.\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 26.27336,
+    "lagna": 176.27336,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.103475,
+    "jd_ut": 2379513.826852,
+    "planets": {
+      "Sun": {
+        "longitude": 180.14277,
+        "sign_index": 6,
+        "degree_in_sign": 0.14277,
+        "is_retrograde": false,
+        "speed": 0.992548
+      },
+      "Moon": {
+        "longitude": 52.383662,
+        "sign_index": 1,
+        "degree_in_sign": 22.383662,
+        "is_retrograde": false,
+        "speed": 12.017954
+      },
+      "Mars": {
+        "longitude": 75.546403,
+        "sign_index": 2,
+        "degree_in_sign": 15.546403,
+        "is_retrograde": false,
+        "speed": 0.343083
+      },
+      "Mercury": {
+        "longitude": 204.424466,
+        "sign_index": 6,
+        "degree_in_sign": 24.424466,
+        "is_retrograde": false,
+        "speed": 1.097121
+      },
+      "Jupiter": {
+        "longitude": 152.706967,
+        "sign_index": 5,
+        "degree_in_sign": 2.706967,
+        "is_retrograde": false,
+        "speed": 0.203595
+      },
+      "Venus": {
+        "longitude": 226.908854,
+        "sign_index": 7,
+        "degree_in_sign": 16.908854,
+        "is_retrograde": false,
+        "speed": 1.029184
+      },
+      "Saturn": {
+        "longitude": 144.744554,
+        "sign_index": 4,
+        "degree_in_sign": 24.744554,
+        "is_retrograde": false,
+        "speed": 0.110465
+      },
+      "Rahu": {
+        "longitude": 318.271023,
+        "sign_index": 10,
+        "degree_in_sign": 18.271023,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 138.271023,
+        "sign_index": 4,
+        "degree_in_sign": 18.271023,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

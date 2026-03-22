@@ -1,0 +1,112 @@
+{
+  "adb_id": 74158,
+  "name": "Carl Bernadotte, Prince of Sweden",
+  "given_name": "Prince of Sweden Carl Bernadotte",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2419046.930556,
+    "year": 1911,
+    "month": 1,
+    "day": 10,
+    "calendar": "g",
+    "time": "11:20",
+    "time_type": "s",
+    "hour": 11.333333,
+    "time_unknown": false,
+    "place": "Stockholm",
+    "country": "Sweden",
+    "lat": 59.333333,
+    "lon": 18.05
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carl_Bernadotte,_Prince_of_Sweden",
+  "source_notes": "Sy Scholfield quotes from Swedish newspapers, e.g. ''Aftonbladet'', 10 January 1911: \"En ny svensk prins välsignelse lyckligen förlöst med en prins KL 11,20 f.m.\" (Translation: A new Swedish prince's blessing, happily delivered of a prince at 11.20 AM).\\n\\nHis Swedish Wikipedia entry gives 10:20 AM: \"född klockan 10.20 den 10 januari 1911 i Stockholm.\" The source is given as ''Gustaf V och hans tid 1907–1918'' by Erik Lindorm (1979), p. 168. [https://sv.wikipedia.org/wiki/Carl_Bernadotte].\\n",
+  "categories": [
+    "Family : Relationship : Number of Divorces",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 27.010532,
+    "lagna": 357.010532,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.614456,
+    "jd_ut": 2419046.930556,
+    "planets": {
+      "Sun": {
+        "longitude": 266.464549,
+        "sign_index": 8,
+        "degree_in_sign": 26.464549,
+        "is_retrograde": false,
+        "speed": 1.018766
+      },
+      "Moon": {
+        "longitude": 24.900193,
+        "sign_index": 0,
+        "degree_in_sign": 24.900193,
+        "is_retrograde": false,
+        "speed": 16.282083
+      },
+      "Mars": {
+        "longitude": 232.067192,
+        "sign_index": 7,
+        "degree_in_sign": 22.067192,
+        "is_retrograde": false,
+        "speed": 0.707487
+      },
+      "Mercury": {
+        "longitude": 266.469237,
+        "sign_index": 8,
+        "degree_in_sign": 26.469237,
+        "is_retrograde": true,
+        "speed": -1.333851
+      },
+      "Jupiter": {
+        "longitude": 198.293087,
+        "sign_index": 6,
+        "degree_in_sign": 18.293087,
+        "is_retrograde": false,
+        "speed": 0.136723
+      },
+      "Venus": {
+        "longitude": 277.224917,
+        "sign_index": 9,
+        "degree_in_sign": 7.224917,
+        "is_retrograde": false,
+        "speed": 1.255477
+      },
+      "Saturn": {
+        "longitude": 7.144793,
+        "sign_index": 0,
+        "degree_in_sign": 7.144793,
+        "is_retrograde": false,
+        "speed": 0.015319
+      },
+      "Rahu": {
+        "longitude": 23.326906,
+        "sign_index": 0,
+        "degree_in_sign": 23.326906,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 203.326906,
+        "sign_index": 6,
+        "degree_in_sign": 23.326906,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

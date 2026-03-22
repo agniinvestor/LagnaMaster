@@ -1,0 +1,109 @@
+{
+  "adb_id": 64929,
+  "name": "Carliez, Michel",
+  "given_name": "Michel Carliez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436492.8125,
+    "year": 1958,
+    "month": 10,
+    "day": 16,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carliez,_Michel",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 50.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Stunt work"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 19.057839,
+    "lagna": 169.057839,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.281478,
+    "jd_ut": 2436492.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 179.150428,
+        "sign_index": 5,
+        "degree_in_sign": 29.150428,
+        "is_retrograde": false,
+        "speed": 0.992159
+      },
+      "Moon": {
+        "longitude": 227.978468,
+        "sign_index": 7,
+        "degree_in_sign": 17.978468,
+        "is_retrograde": false,
+        "speed": 15.972651
+      },
+      "Mars": {
+        "longitude": 38.990713,
+        "sign_index": 1,
+        "degree_in_sign": 8.990713,
+        "is_retrograde": true,
+        "speed": -0.08873
+      },
+      "Mercury": {
+        "longitude": 186.625261,
+        "sign_index": 6,
+        "degree_in_sign": 6.625261,
+        "is_retrograde": false,
+        "speed": 1.616969
+      },
+      "Jupiter": {
+        "longitude": 194.531519,
+        "sign_index": 6,
+        "degree_in_sign": 14.531519,
+        "is_retrograde": false,
+        "speed": 0.214887
+      },
+      "Venus": {
+        "longitude": 172.475381,
+        "sign_index": 5,
+        "degree_in_sign": 22.475381,
+        "is_retrograde": false,
+        "speed": 1.251109
+      },
+      "Saturn": {
+        "longitude": 238.009802,
+        "sign_index": 7,
+        "degree_in_sign": 28.009802,
+        "is_retrograde": false,
+        "speed": 0.078409
+      },
+      "Rahu": {
+        "longitude": 178.833429,
+        "sign_index": 5,
+        "degree_in_sign": 28.833429,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 358.833429,
+        "sign_index": 11,
+        "degree_in_sign": 28.833429,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 82704,
+  "name": "Cannon-Alfred, Carolyn",
+  "given_name": "Carolyn Cannon-Alfred",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427666.583333,
+    "year": 1934,
+    "month": 8,
+    "day": 16,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Tyler",
+    "country": "Texas",
+    "lat": 32.35,
+    "lon": -95.3
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sco",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cannon-Alfred,_Carolyn",
+  "source_notes": "Birth certificate in hand from Sy Scholfield.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Education : Researcher",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 28.396234,
+    "lagna": 298.396234,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.944001,
+    "jd_ut": 2427666.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 120.532606,
+        "sign_index": 4,
+        "degree_in_sign": 0.532606,
+        "is_retrograde": false,
+        "speed": 0.961606
+      },
+      "Moon": {
+        "longitude": 196.568379,
+        "sign_index": 6,
+        "degree_in_sign": 16.568379,
+        "is_retrograde": false,
+        "speed": 9.352012
+      },
+      "Mars": {
+        "longitude": 88.370295,
+        "sign_index": 2,
+        "degree_in_sign": 28.370295,
+        "is_retrograde": false,
+        "speed": 0.649149
+      },
+      "Mercury": {
+        "longitude": 110.982387,
+        "sign_index": 3,
+        "degree_in_sign": 20.982387,
+        "is_retrograde": false,
+        "speed": 1.985353
+      },
+      "Jupiter": {
+        "longitude": 176.360016,
+        "sign_index": 5,
+        "degree_in_sign": 26.360016,
+        "is_retrograde": false,
+        "speed": 0.161767
+      },
+      "Venus": {
+        "longitude": 96.356264,
+        "sign_index": 3,
+        "degree_in_sign": 6.356264,
+        "is_retrograde": false,
+        "speed": 1.215057
+      },
+      "Saturn": {
+        "longitude": 301.97453,
+        "sign_index": 10,
+        "degree_in_sign": 1.97453,
+        "is_retrograde": true,
+        "speed": -0.07538
+      },
+      "Rahu": {
+        "longitude": 286.553521,
+        "sign_index": 9,
+        "degree_in_sign": 16.553521,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 106.553521,
+        "sign_index": 3,
+        "degree_in_sign": 16.553521,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

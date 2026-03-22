@@ -1,0 +1,108 @@
+{
+  "adb_id": 62978,
+  "name": "Ciantar, Maurice",
+  "given_name": "Maurice Ciantar",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420560.541667,
+    "year": 1915,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Asnières",
+    "country": "France",
+    "lat": 48.916667,
+    "lon": 2.283333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ciantar,_Maurice",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 95.\\n",
+  "categories": [
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 18.600767,
+    "lagna": 198.600767,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.672322,
+    "jd_ut": 2420560.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 319.70456,
+        "sign_index": 10,
+        "degree_in_sign": 19.70456,
+        "is_retrograde": false,
+        "speed": 1.001889
+      },
+      "Moon": {
+        "longitude": 170.227232,
+        "sign_index": 5,
+        "degree_in_sign": 20.227232,
+        "is_retrograde": false,
+        "speed": 10.892724
+      },
+      "Mars": {
+        "longitude": 303.002456,
+        "sign_index": 10,
+        "degree_in_sign": 3.002456,
+        "is_retrograde": false,
+        "speed": 0.786066
+      },
+      "Mercury": {
+        "longitude": 300.991133,
+        "sign_index": 10,
+        "degree_in_sign": 0.991133,
+        "is_retrograde": true,
+        "speed": -0.301474
+      },
+      "Jupiter": {
+        "longitude": 314.048504,
+        "sign_index": 10,
+        "degree_in_sign": 14.048504,
+        "is_retrograde": false,
+        "speed": 0.240549
+      },
+      "Venus": {
+        "longitude": 274.509803,
+        "sign_index": 9,
+        "degree_in_sign": 4.509803,
+        "is_retrograde": false,
+        "speed": 1.117922
+      },
+      "Saturn": {
+        "longitude": 62.724195,
+        "sign_index": 2,
+        "degree_in_sign": 2.724195,
+        "is_retrograde": false,
+        "speed": 0.011019
+      },
+      "Rahu": {
+        "longitude": 303.117479,
+        "sign_index": 10,
+        "degree_in_sign": 3.117479,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.117479,
+        "sign_index": 4,
+        "degree_in_sign": 3.117479,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 68836,
+  "name": "Congar, Yves",
+  "given_name": "Yves Congar",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416583.660174,
+    "year": 1904,
+    "month": 4,
+    "day": 13,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Sedan",
+    "country": "France",
+    "lat": 49.7,
+    "lon": 4.95
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Congar,_Yves",
+  "source_notes": "Didier Geslain archive, 'religion1' pdf file, p. 74.\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 0.648015,
+    "lagna": 300.648015,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.520287,
+    "jd_ut": 2416583.660174,
+    "planets": {
+      "Sun": {
+        "longitude": 0.274562,
+        "sign_index": 0,
+        "degree_in_sign": 0.274562,
+        "is_retrograde": false,
+        "speed": 0.979802
+      },
+      "Moon": {
+        "longitude": 329.61907,
+        "sign_index": 10,
+        "degree_in_sign": 29.61907,
+        "is_retrograde": false,
+        "speed": 11.844006
+      },
+      "Mars": {
+        "longitude": 12.217346,
+        "sign_index": 0,
+        "degree_in_sign": 12.217346,
+        "is_retrograde": false,
+        "speed": 0.736834
+      },
+      "Mercury": {
+        "longitude": 17.206319,
+        "sign_index": 0,
+        "degree_in_sign": 17.206319,
+        "is_retrograde": false,
+        "speed": 1.661405
+      },
+      "Jupiter": {
+        "longitude": 347.826632,
+        "sign_index": 11,
+        "degree_in_sign": 17.826632,
+        "is_retrograde": false,
+        "speed": 0.239055
+      },
+      "Venus": {
+        "longitude": 337.500415,
+        "sign_index": 11,
+        "degree_in_sign": 7.500415,
+        "is_retrograde": false,
+        "speed": 1.226215
+      },
+      "Saturn": {
+        "longitude": 296.61417,
+        "sign_index": 9,
+        "degree_in_sign": 26.61417,
+        "is_retrograde": false,
+        "speed": 0.073483
+      },
+      "Rahu": {
+        "longitude": 153.860782,
+        "sign_index": 5,
+        "degree_in_sign": 3.860782,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 333.860782,
+        "sign_index": 11,
+        "degree_in_sign": 3.860782,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

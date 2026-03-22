@@ -1,0 +1,112 @@
+{
+  "adb_id": 37221,
+  "name": "Couëlle, Jacques",
+  "given_name": "Jacques Couëlle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415999.743507,
+    "year": 1902,
+    "month": 9,
+    "day": 7,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couëlle,_Jacques",
+  "source_notes": "Didier Geslain archive, 'architectes' pdf file, p. 23.\\nPreviously this entry had Paris as the birth place: Petitallot quotes B.C., Cadron No. 28, 3/ 1996\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Building Trades : Architect/ Planner",
+    "Vocation : Education : Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.059172,
+    "lagna": 126.059172,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.497965,
+    "jd_ut": 2415999.743507,
+    "planets": {
+      "Sun": {
+        "longitude": 141.167044,
+        "sign_index": 4,
+        "degree_in_sign": 21.167044,
+        "is_retrograde": false,
+        "speed": 0.970953
+      },
+      "Moon": {
+        "longitude": 202.130538,
+        "sign_index": 6,
+        "degree_in_sign": 22.130538,
+        "is_retrograde": false,
+        "speed": 15.472152
+      },
+      "Mars": {
+        "longitude": 99.160523,
+        "sign_index": 3,
+        "degree_in_sign": 9.160523,
+        "is_retrograde": false,
+        "speed": 0.630883
+      },
+      "Mercury": {
+        "longitude": 162.221183,
+        "sign_index": 5,
+        "degree_in_sign": 12.221183,
+        "is_retrograde": false,
+        "speed": 1.471521
+      },
+      "Jupiter": {
+        "longitude": 286.100199,
+        "sign_index": 9,
+        "degree_in_sign": 16.100199,
+        "is_retrograde": true,
+        "speed": -0.084092
+      },
+      "Venus": {
+        "longitude": 120.045961,
+        "sign_index": 4,
+        "degree_in_sign": 0.045961,
+        "is_retrograde": false,
+        "speed": 1.227727
+      },
+      "Saturn": {
+        "longitude": 268.982579,
+        "sign_index": 8,
+        "degree_in_sign": 28.982579,
+        "is_retrograde": true,
+        "speed": -0.030566
+      },
+      "Rahu": {
+        "longitude": 184.803756,
+        "sign_index": 6,
+        "degree_in_sign": 4.803756,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 4.803756,
+        "sign_index": 0,
+        "degree_in_sign": 4.803756,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

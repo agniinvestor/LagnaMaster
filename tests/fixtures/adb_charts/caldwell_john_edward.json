@@ -1,0 +1,108 @@
+{
+  "adb_id": 4354,
+  "name": "Caldwell, John Edward",
+  "given_name": "John Edward Caldwell",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2417748.969815,
+    "year": 1907,
+    "month": 6,
+    "day": 22,
+    "calendar": "g",
+    "time": "03:16:32",
+    "time_type": "s",
+    "hour": 3.275556,
+    "time_unknown": false,
+    "place": "Aberdeen",
+    "country": "Washington",
+    "lat": 46.983333,
+    "lon": -123.816667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caldwell,_John_Edward",
+  "source_notes": "Astrological Pioneers of America file\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 27.211493,
+    "lagna": 27.211493,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.564836,
+    "jd_ut": 2417748.969815,
+    "planets": {
+      "Sun": {
+        "longitude": 67.316146,
+        "sign_index": 2,
+        "degree_in_sign": 7.316146,
+        "is_retrograde": false,
+        "speed": 0.953661
+      },
+      "Moon": {
+        "longitude": 199.121502,
+        "sign_index": 6,
+        "degree_in_sign": 19.121502,
+        "is_retrograde": false,
+        "speed": 14.310967
+      },
+      "Mars": {
+        "longitude": 264.507597,
+        "sign_index": 8,
+        "degree_in_sign": 24.507597,
+        "is_retrograde": true,
+        "speed": -0.205143
+      },
+      "Mercury": {
+        "longitude": 92.139195,
+        "sign_index": 3,
+        "degree_in_sign": 2.139195,
+        "is_retrograde": false,
+        "speed": 1.211124
+      },
+      "Jupiter": {
+        "longitude": 84.741427,
+        "sign_index": 2,
+        "degree_in_sign": 24.741427,
+        "is_retrograde": false,
+        "speed": 0.218854
+      },
+      "Venus": {
+        "longitude": 44.597594,
+        "sign_index": 1,
+        "degree_in_sign": 14.597594,
+        "is_retrograde": false,
+        "speed": 1.21043
+      },
+      "Saturn": {
+        "longitude": 334.640136,
+        "sign_index": 11,
+        "degree_in_sign": 4.640136,
+        "is_retrograde": false,
+        "speed": 0.028963
+      },
+      "Rahu": {
+        "longitude": 92.108572,
+        "sign_index": 3,
+        "degree_in_sign": 2.108572,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 272.108572,
+        "sign_index": 9,
+        "degree_in_sign": 2.108572,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 71444,
+  "name": "Coquelin, Ernest Alexandre Honoré",
+  "given_name": "Ernest Alexandre Honoré Coquelin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2396163.370509,
+    "year": 1848,
+    "month": 5,
+    "day": 15,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "l",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Boulogne sur Mer",
+    "country": "France",
+    "lat": 50.716667,
+    "lon": 1.616667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coquelin,_Ernest_Alexandre_Honoré",
+  "source_notes": "Sy Scholfield quotes from birth certificate no. 385 (dated 17 May 1848) in the online Pas-de-Calais archives, p. 271/1097: \"avant-hier à neuf heures du soir\" ([born] the day before yesterday at 9pm). Other sources wrongly give the 16th.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 27.137029,
+    "lagna": 207.137029,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.739744,
+    "jd_ut": 2396163.370509,
+    "planets": {
+      "Sun": {
+        "longitude": 33.341851,
+        "sign_index": 1,
+        "degree_in_sign": 3.341851,
+        "is_retrograde": false,
+        "speed": 0.962554
+      },
+      "Moon": {
+        "longitude": 187.499872,
+        "sign_index": 6,
+        "degree_in_sign": 7.499872,
+        "is_retrograde": false,
+        "speed": 8.749001
+      },
+      "Mars": {
+        "longitude": 84.806449,
+        "sign_index": 2,
+        "degree_in_sign": 24.806449,
+        "is_retrograde": false,
+        "speed": 0.599753
+      },
+      "Mercury": {
+        "longitude": 28.982619,
+        "sign_index": 0,
+        "degree_in_sign": 28.982619,
+        "is_retrograde": false,
+        "speed": 2.147452
+      },
+      "Jupiter": {
+        "longitude": 85.701715,
+        "sign_index": 2,
+        "degree_in_sign": 25.701715,
+        "is_retrograde": false,
+        "speed": 0.173927
+      },
+      "Venus": {
+        "longitude": 14.967574,
+        "sign_index": 0,
+        "degree_in_sign": 14.967574,
+        "is_retrograde": false,
+        "speed": 1.221132
+      },
+      "Saturn": {
+        "longitude": 331.447427,
+        "sign_index": 11,
+        "degree_in_sign": 1.447427,
+        "is_retrograde": false,
+        "speed": 0.078109
+      },
+      "Rahu": {
+        "longitude": 155.975429,
+        "sign_index": 5,
+        "degree_in_sign": 5.975429,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 335.975429,
+        "sign_index": 11,
+        "degree_in_sign": 5.975429,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

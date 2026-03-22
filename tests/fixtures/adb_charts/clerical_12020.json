@@ -1,0 +1,112 @@
+{
+  "adb_id": 12020,
+  "name": "Clerical 12020",
+  "given_name": "Clerical 12020",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433961.288889,
+    "year": 1951,
+    "month": 11,
+    "day": 10,
+    "calendar": "g",
+    "time": "12:56",
+    "time_type": "s",
+    "hour": 12.933333,
+    "time_unknown": false,
+    "place": "Oklahoma City",
+    "country": "Oklahoma",
+    "lat": 35.466667,
+    "lon": -97.516667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Clerical_12020",
+  "source_notes": "Dona Shaw quotes B.C.\\n",
+  "categories": [
+    "Family : Childhood : Family large",
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Primary care of elderly",
+    "Vocation : Business : Clerical/ Secretarial"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 23.604143,
+    "lagna": 263.604143,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.18468,
+    "jd_ut": 2433961.288889,
+    "planets": {
+      "Sun": {
+        "longitude": 204.387227,
+        "sign_index": 6,
+        "degree_in_sign": 24.387227,
+        "is_retrograde": false,
+        "speed": 1.004937
+      },
+      "Moon": {
+        "longitude": 350.790407,
+        "sign_index": 11,
+        "degree_in_sign": 20.790407,
+        "is_retrograde": false,
+        "speed": 16.320113
+      },
+      "Mars": {
+        "longitude": 148.984985,
+        "sign_index": 4,
+        "degree_in_sign": 28.984985,
+        "is_retrograde": false,
+        "speed": 0.587722
+      },
+      "Mercury": {
+        "longitude": 220.604436,
+        "sign_index": 7,
+        "degree_in_sign": 10.604436,
+        "is_retrograde": false,
+        "speed": 1.457532
+      },
+      "Jupiter": {
+        "longitude": 341.705383,
+        "sign_index": 11,
+        "degree_in_sign": 11.705383,
+        "is_retrograde": true,
+        "speed": -0.065326
+      },
+      "Venus": {
+        "longitude": 157.795566,
+        "sign_index": 5,
+        "degree_in_sign": 7.795566,
+        "is_retrograde": false,
+        "speed": 0.980329
+      },
+      "Saturn": {
+        "longitude": 167.288646,
+        "sign_index": 5,
+        "degree_in_sign": 17.288646,
+        "is_retrograde": false,
+        "speed": 0.106799
+      },
+      "Rahu": {
+        "longitude": 312.984067,
+        "sign_index": 10,
+        "degree_in_sign": 12.984067,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 132.984067,
+        "sign_index": 4,
+        "degree_in_sign": 12.984067,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

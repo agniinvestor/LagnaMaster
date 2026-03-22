@@ -1,0 +1,111 @@
+{
+  "adb_id": 92772,
+  "name": "Calero Fernandez, Fernando",
+  "given_name": "Fernando Calero Fernandez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439022.916667,
+    "year": 1965,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Toledo",
+    "country": "Spain",
+    "lat": 39.866667,
+    "lon": -4.016667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calero_Fernandez,_Fernando",
+  "source_notes": "Faustino Rodriguez quotes birth certificate in hand.\\n",
+  "categories": [
+    "Diagnoses : Psychological : Depression",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Personal : Death : Suicide",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 26.181756,
+    "lagna": 176.181756,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.378225,
+    "jd_ut": 2439022.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 152.872186,
+        "sign_index": 5,
+        "degree_in_sign": 2.872186,
+        "is_retrograde": false,
+        "speed": 0.97701
+      },
+      "Moon": {
+        "longitude": 74.272059,
+        "sign_index": 2,
+        "degree_in_sign": 14.272059,
+        "is_retrograde": false,
+        "speed": 10.984206
+      },
+      "Mars": {
+        "longitude": 206.305548,
+        "sign_index": 6,
+        "degree_in_sign": 26.305548,
+        "is_retrograde": false,
+        "speed": 0.682778
+      },
+      "Mercury": {
+        "longitude": 145.836165,
+        "sign_index": 4,
+        "degree_in_sign": 25.836165,
+        "is_retrograde": false,
+        "speed": 1.872139
+      },
+      "Jupiter": {
+        "longitude": 66.463037,
+        "sign_index": 2,
+        "degree_in_sign": 6.463037,
+        "is_retrograde": false,
+        "speed": 0.09418
+      },
+      "Venus": {
+        "longitude": 193.179422,
+        "sign_index": 6,
+        "degree_in_sign": 13.179422,
+        "is_retrograde": false,
+        "speed": 1.169269
+      },
+      "Saturn": {
+        "longitude": 319.484668,
+        "sign_index": 10,
+        "degree_in_sign": 19.484668,
+        "is_retrograde": true,
+        "speed": -0.073358
+      },
+      "Rahu": {
+        "longitude": 44.758026,
+        "sign_index": 1,
+        "degree_in_sign": 14.758026,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 224.758026,
+        "sign_index": 7,
+        "degree_in_sign": 14.758026,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

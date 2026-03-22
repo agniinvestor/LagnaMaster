@@ -1,0 +1,108 @@
+{
+  "adb_id": 60421,
+  "name": "Courtens, Frans",
+  "given_name": "Frans Courtens",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2398253.696898,
+    "year": 1854,
+    "month": 2,
+    "day": 4,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Termonde",
+    "country": "Belgium",
+    "lat": 51.033333,
+    "lon": 4.116667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courtens,_Frans",
+  "source_notes": "Gauquelin vol 4\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 13.281213,
+    "lagna": 223.281213,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.819636,
+    "jd_ut": 2398253.696898,
+    "planets": {
+      "Sun": {
+        "longitude": 293.294377,
+        "sign_index": 9,
+        "degree_in_sign": 23.294377,
+        "is_retrograde": false,
+        "speed": 1.013493
+      },
+      "Moon": {
+        "longitude": 14.642248,
+        "sign_index": 0,
+        "degree_in_sign": 14.642248,
+        "is_retrograde": false,
+        "speed": 15.611842
+      },
+      "Mars": {
+        "longitude": 143.722635,
+        "sign_index": 4,
+        "degree_in_sign": 23.722635,
+        "is_retrograde": true,
+        "speed": -0.224291
+      },
+      "Mercury": {
+        "longitude": 290.038004,
+        "sign_index": 9,
+        "degree_in_sign": 20.038004,
+        "is_retrograde": false,
+        "speed": 1.721434
+      },
+      "Jupiter": {
+        "longitude": 262.775479,
+        "sign_index": 8,
+        "degree_in_sign": 22.775479,
+        "is_retrograde": false,
+        "speed": 0.215232
+      },
+      "Venus": {
+        "longitude": 325.660197,
+        "sign_index": 10,
+        "degree_in_sign": 25.660197,
+        "is_retrograde": false,
+        "speed": 0.135308
+      },
+      "Saturn": {
+        "longitude": 33.137264,
+        "sign_index": 1,
+        "degree_in_sign": 3.137264,
+        "is_retrograde": false,
+        "speed": 0.017109
+      },
+      "Rahu": {
+        "longitude": 45.204529,
+        "sign_index": 1,
+        "degree_in_sign": 15.204529,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 225.204529,
+        "sign_index": 7,
+        "degree_in_sign": 15.204529,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

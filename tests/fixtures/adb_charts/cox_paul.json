@@ -1,0 +1,110 @@
+{
+  "adb_id": 65102,
+  "name": "Cox, Paul",
+  "given_name": "Paul Cox",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436666.618056,
+    "year": 1959,
+    "month": 4,
+    "day": 8,
+    "calendar": "g",
+    "time": "03:50",
+    "time_type": "s",
+    "hour": 3.833333,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cox,_Paul",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 278.\\n\\n \\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Stage/ Set design"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 18.221579,
+    "lagna": 258.221579,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.288124,
+    "jd_ut": 2436666.618056,
+    "planets": {
+      "Sun": {
+        "longitude": 354.244235,
+        "sign_index": 11,
+        "degree_in_sign": 24.244235,
+        "is_retrograde": false,
+        "speed": 0.983358
+      },
+      "Moon": {
+        "longitude": 354.055903,
+        "sign_index": 11,
+        "degree_in_sign": 24.055903,
+        "is_retrograde": false,
+        "speed": 14.48868
+      },
+      "Mars": {
+        "longitude": 65.431609,
+        "sign_index": 2,
+        "degree_in_sign": 5.431609,
+        "is_retrograde": false,
+        "speed": 0.557604
+      },
+      "Mercury": {
+        "longitude": 338.055605,
+        "sign_index": 11,
+        "degree_in_sign": 8.055605,
+        "is_retrograde": true,
+        "speed": -0.355763
+      },
+      "Jupiter": {
+        "longitude": 218.072472,
+        "sign_index": 7,
+        "degree_in_sign": 8.072472,
+        "is_retrograde": true,
+        "speed": -0.061379
+      },
+      "Venus": {
+        "longitude": 28.659614,
+        "sign_index": 0,
+        "degree_in_sign": 28.659614,
+        "is_retrograde": false,
+        "speed": 1.195127
+      },
+      "Saturn": {
+        "longitude": 253.715613,
+        "sign_index": 8,
+        "degree_in_sign": 13.715613,
+        "is_retrograde": false,
+        "speed": 0.014032
+      },
+      "Rahu": {
+        "longitude": 169.623116,
+        "sign_index": 5,
+        "degree_in_sign": 19.623116,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 349.623116,
+        "sign_index": 11,
+        "degree_in_sign": 19.623116,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

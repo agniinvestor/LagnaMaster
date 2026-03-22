@@ -1,0 +1,108 @@
+{
+  "adb_id": 70460,
+  "name": "Campos Milla, Jorge Luis",
+  "given_name": "Jorge Luis Campos Milla",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435521.847222,
+    "year": 1956,
+    "month": 2,
+    "day": 18,
+    "calendar": "g",
+    "time": "03:20",
+    "time_type": "s",
+    "hour": 3.333333,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campos_Milla,_Jorge_Luis",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide serial"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 2.177663,
+    "lagna": 242.177663,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.244351,
+    "jd_ut": 2435521.847222,
+    "planets": {
+      "Sun": {
+        "longitude": 305.416595,
+        "sign_index": 10,
+        "degree_in_sign": 5.416595,
+        "is_retrograde": false,
+        "speed": 1.008987
+      },
+      "Moon": {
+        "longitude": 21.748517,
+        "sign_index": 0,
+        "degree_in_sign": 21.748517,
+        "is_retrograde": false,
+        "speed": 18.153737
+      },
+      "Mars": {
+        "longitude": 239.870151,
+        "sign_index": 7,
+        "degree_in_sign": 29.870151,
+        "is_retrograde": false,
+        "speed": 0.656167
+      },
+      "Mercury": {
+        "longitude": 279.081891,
+        "sign_index": 9,
+        "degree_in_sign": 9.081891,
+        "is_retrograde": false,
+        "speed": 0.8527
+      },
+      "Jupiter": {
+        "longitude": 123.004369,
+        "sign_index": 4,
+        "degree_in_sign": 3.004369,
+        "is_retrograde": true,
+        "speed": -0.132023
+      },
+      "Venus": {
+        "longitude": 345.123232,
+        "sign_index": 11,
+        "degree_in_sign": 15.123232,
+        "is_retrograde": false,
+        "speed": 1.185968
+      },
+      "Saturn": {
+        "longitude": 219.124855,
+        "sign_index": 7,
+        "degree_in_sign": 9.124855,
+        "is_retrograde": false,
+        "speed": 0.038134
+      },
+      "Rahu": {
+        "longitude": 230.286872,
+        "sign_index": 7,
+        "degree_in_sign": 20.286872,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 50.286872,
+        "sign_index": 1,
+        "degree_in_sign": 20.286872,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

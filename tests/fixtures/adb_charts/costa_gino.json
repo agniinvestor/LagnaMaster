@@ -1,0 +1,113 @@
+{
+  "adb_id": 91758,
+  "name": "Costa, Gino",
+  "given_name": "Gino Costa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435500.600694,
+    "year": 1956,
+    "month": 1,
+    "day": 27,
+    "calendar": "g",
+    "time": "21:25",
+    "time_type": "s",
+    "hour": 21.416667,
+    "time_unknown": false,
+    "place": "Miraflores",
+    "country": "Peru",
+    "lat": -12.116667,
+    "lon": -77.033333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costa,_Gino",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Relationship : Mate - Noted",
+    "Vocation : Education : Teacher",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 8.176987,
+    "lagna": 128.176987,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.243538,
+    "jd_ut": 2435500.600694,
+    "planets": {
+      "Sun": {
+        "longitude": 283.89475,
+        "sign_index": 9,
+        "degree_in_sign": 13.89475,
+        "is_retrograde": false,
+        "speed": 1.015782
+      },
+      "Moon": {
+        "longitude": 111.387668,
+        "sign_index": 3,
+        "degree_in_sign": 21.387668,
+        "is_retrograde": false,
+        "speed": 10.953911
+      },
+      "Mars": {
+        "longitude": 225.924433,
+        "sign_index": 7,
+        "degree_in_sign": 15.924433,
+        "is_retrograde": false,
+        "speed": 0.655822
+      },
+      "Mercury": {
+        "longitude": 282.71349,
+        "sign_index": 9,
+        "degree_in_sign": 12.71349,
+        "is_retrograde": true,
+        "speed": -1.264834
+      },
+      "Jupiter": {
+        "longitude": 125.702179,
+        "sign_index": 4,
+        "degree_in_sign": 5.702179,
+        "is_retrograde": true,
+        "speed": -0.114799
+      },
+      "Venus": {
+        "longitude": 319.579477,
+        "sign_index": 10,
+        "degree_in_sign": 19.579477,
+        "is_retrograde": false,
+        "speed": 1.215904
+      },
+      "Saturn": {
+        "longitude": 217.96798,
+        "sign_index": 7,
+        "degree_in_sign": 7.96798,
+        "is_retrograde": false,
+        "speed": 0.069736
+      },
+      "Rahu": {
+        "longitude": 231.412769,
+        "sign_index": 7,
+        "degree_in_sign": 21.412769,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 51.412769,
+        "sign_index": 1,
+        "degree_in_sign": 21.412769,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

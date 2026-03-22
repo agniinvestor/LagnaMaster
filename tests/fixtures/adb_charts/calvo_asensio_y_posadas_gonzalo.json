@@ -1,0 +1,109 @@
+{
+  "adb_id": 70888,
+  "name": "Calvo-Asensio y Posadas, Gonzalo",
+  "given_name": "Gonzalo Calvo-Asensio y Posadas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2396073.489398,
+    "year": 1848,
+    "month": 2,
+    "day": 15,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "l",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvo-Asensio_y_Posadas,_Gonzalo",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Politics : Diplomat",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 24.182555,
+    "lagna": 174.182555,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.736309,
+    "jd_ut": 2396073.489398,
+    "planets": {
+      "Sun": {
+        "longitude": 304.751871,
+        "sign_index": 10,
+        "degree_in_sign": 4.751871,
+        "is_retrograde": false,
+        "speed": 1.008789
+      },
+      "Moon": {
+        "longitude": 86.87583,
+        "sign_index": 2,
+        "degree_in_sign": 26.87583,
+        "is_retrograde": false,
+        "speed": 9.419495
+      },
+      "Mars": {
+        "longitude": 33.637998,
+        "sign_index": 1,
+        "degree_in_sign": 3.637998,
+        "is_retrograde": false,
+        "speed": 0.511942
+      },
+      "Mercury": {
+        "longitude": 318.433069,
+        "sign_index": 10,
+        "degree_in_sign": 18.433069,
+        "is_retrograde": false,
+        "speed": 1.738316
+      },
+      "Jupiter": {
+        "longitude": 79.382212,
+        "sign_index": 2,
+        "degree_in_sign": 19.382212,
+        "is_retrograde": true,
+        "speed": -0.062488
+      },
+      "Venus": {
+        "longitude": 265.688873,
+        "sign_index": 8,
+        "degree_in_sign": 25.688873,
+        "is_retrograde": false,
+        "speed": 1.199147
+      },
+      "Saturn": {
+        "longitude": 321.493253,
+        "sign_index": 10,
+        "degree_in_sign": 21.493253,
+        "is_retrograde": false,
+        "speed": 0.119438
+      },
+      "Rahu": {
+        "longitude": 160.738423,
+        "sign_index": 5,
+        "degree_in_sign": 10.738423,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 340.738423,
+        "sign_index": 11,
+        "degree_in_sign": 10.738423,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

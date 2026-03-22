@@ -1,0 +1,108 @@
+{
+  "adb_id": 50034,
+  "name": "Celestial: Aries Ingress 2006",
+  "given_name": "Celestial: Aries Ingress 2006",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2453815.268056,
+    "year": 2006,
+    "month": 3,
+    "day": 20,
+    "calendar": "g",
+    "time": "13:26",
+    "time_type": "s",
+    "hour": 13.433333,
+    "time_unknown": false,
+    "place": "Washington Monument",
+    "country": "District of Columbia",
+    "lat": 38.883333,
+    "lon": -77.033333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celestial:_Aries_Ingress_2006",
+  "source_notes": "Calculated using Solar Fire for 1:25:31 PM\\n",
+  "categories": [
+    "Mundane : Political : Other Political"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.233225,
+    "lagna": 74.233225,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.943919,
+    "jd_ut": 2453815.268056,
+    "planets": {
+      "Sun": {
+        "longitude": 336.056808,
+        "sign_index": 11,
+        "degree_in_sign": 6.056808,
+        "is_retrograde": false,
+        "speed": 0.993332
+      },
+      "Moon": {
+        "longitude": 220.798682,
+        "sign_index": 7,
+        "degree_in_sign": 10.798682,
+        "is_retrograde": false,
+        "speed": 15.682294
+      },
+      "Mars": {
+        "longitude": 52.319002,
+        "sign_index": 1,
+        "degree_in_sign": 22.319002,
+        "is_retrograde": false,
+        "speed": 0.552721
+      },
+      "Mercury": {
+        "longitude": 320.392505,
+        "sign_index": 10,
+        "degree_in_sign": 20.392505,
+        "is_retrograde": true,
+        "speed": -0.484237
+      },
+      "Jupiter": {
+        "longitude": 204.519753,
+        "sign_index": 6,
+        "degree_in_sign": 24.519753,
+        "is_retrograde": true,
+        "speed": -0.049283
+      },
+      "Venus": {
+        "longitude": 289.642805,
+        "sign_index": 9,
+        "degree_in_sign": 19.642805,
+        "is_retrograde": false,
+        "speed": 0.955543
+      },
+      "Saturn": {
+        "longitude": 100.658903,
+        "sign_index": 3,
+        "degree_in_sign": 10.658903,
+        "is_retrograde": true,
+        "speed": -0.028529
+      },
+      "Rahu": {
+        "longitude": 340.88136,
+        "sign_index": 11,
+        "degree_in_sign": 10.88136,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 160.88136,
+        "sign_index": 5,
+        "degree_in_sign": 10.88136,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

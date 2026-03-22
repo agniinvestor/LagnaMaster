@@ -1,0 +1,113 @@
+{
+  "adb_id": 101736,
+  "name": "Clemens, Kody",
+  "given_name": "Kody Clemens",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2450219.486806,
+    "year": 1996,
+    "month": 5,
+    "day": 15,
+    "calendar": "g",
+    "time": "18:41",
+    "time_type": "d",
+    "hour": 18.683333,
+    "time_unknown": false,
+    "place": "Houston",
+    "country": "Texas",
+    "lat": 29.766667,
+    "lon": -95.366667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clemens,_Kody",
+  "source_notes": "Sy Scholfield quotes news report, ''The Boston Globe'' (Boston, Massachusetts), 16 May 1996, page 48.\\n",
+  "categories": [
+    "Traits : Body : Handedness",
+    "Family : Childhood : Family large",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Sibling circumstances",
+    "Vocation : Sports : Baseball",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 20.315589,
+    "lagna": 170.315589,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.806399,
+    "jd_ut": 2450219.486806,
+    "planets": {
+      "Sun": {
+        "longitude": 31.58895,
+        "sign_index": 1,
+        "degree_in_sign": 1.58895,
+        "is_retrograde": false,
+        "speed": 0.964169
+      },
+      "Moon": {
+        "longitude": 12.970957,
+        "sign_index": 0,
+        "degree_in_sign": 12.970957,
+        "is_retrograde": false,
+        "speed": 13.290587
+      },
+      "Mars": {
+        "longitude": 16.068213,
+        "sign_index": 0,
+        "degree_in_sign": 16.068213,
+        "is_retrograde": false,
+        "speed": 0.741111
+      },
+      "Mercury": {
+        "longitude": 30.131911,
+        "sign_index": 1,
+        "degree_in_sign": 0.131911,
+        "is_retrograde": true,
+        "speed": -0.590375
+      },
+      "Jupiter": {
+        "longitude": 263.646131,
+        "sign_index": 8,
+        "degree_in_sign": 23.646131,
+        "is_retrograde": true,
+        "speed": -0.035532
+      },
+      "Venus": {
+        "longitude": 64.142523,
+        "sign_index": 2,
+        "degree_in_sign": 4.142523,
+        "is_retrograde": false,
+        "speed": 0.160573
+      },
+      "Saturn": {
+        "longitude": 340.390169,
+        "sign_index": 11,
+        "degree_in_sign": 10.390169,
+        "is_retrograde": false,
+        "speed": 0.092831
+      },
+      "Rahu": {
+        "longitude": 171.429037,
+        "sign_index": 5,
+        "degree_in_sign": 21.429037,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 351.429037,
+        "sign_index": 11,
+        "degree_in_sign": 21.429037,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

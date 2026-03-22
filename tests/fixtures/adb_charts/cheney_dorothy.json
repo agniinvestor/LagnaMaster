@@ -1,0 +1,112 @@
+{
+  "adb_id": 50773,
+  "name": "Cheney, Dorothy",
+  "given_name": "Dorothy Cheney",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421108.4375,
+    "year": 1916,
+    "month": 9,
+    "day": 1,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "s",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cheney,_Dorothy",
+  "source_notes": "Sy Scholfield provided birth certificate and upgraded the Rodden Rating to BC/BR in hand. Previously this entry had same data quoted from Steinbrecher Collection: Gauquelin Book of American Charts.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Sports : Tennis",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 17.337794,
+    "lagna": 227.337794,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.693268,
+    "jd_ut": 2421108.4375,
+    "planets": {
+      "Sun": {
+        "longitude": 136.419004,
+        "sign_index": 4,
+        "degree_in_sign": 16.419004,
+        "is_retrograde": false,
+        "speed": 0.968631
+      },
+      "Moon": {
+        "longitude": 186.037094,
+        "sign_index": 6,
+        "degree_in_sign": 6.037094,
+        "is_retrograde": false,
+        "speed": 8.65247
+      },
+      "Mars": {
+        "longitude": 182.813971,
+        "sign_index": 6,
+        "degree_in_sign": 2.813971,
+        "is_retrograde": false,
+        "speed": 0.655472
+      },
+      "Mercury": {
+        "longitude": 162.12864,
+        "sign_index": 5,
+        "degree_in_sign": 12.12864,
+        "is_retrograde": false,
+        "speed": 1.239412
+      },
+      "Jupiter": {
+        "longitude": 12.615804,
+        "sign_index": 0,
+        "degree_in_sign": 12.615804,
+        "is_retrograde": true,
+        "speed": -0.025305
+      },
+      "Venus": {
+        "longitude": 90.948756,
+        "sign_index": 3,
+        "degree_in_sign": 0.948756,
+        "is_retrograde": false,
+        "speed": 0.873797
+      },
+      "Saturn": {
+        "longitude": 93.659018,
+        "sign_index": 3,
+        "degree_in_sign": 3.659018,
+        "is_retrograde": false,
+        "speed": 0.106863
+      },
+      "Rahu": {
+        "longitude": 274.083331,
+        "sign_index": 9,
+        "degree_in_sign": 4.083331,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 94.083331,
+        "sign_index": 3,
+        "degree_in_sign": 4.083331,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

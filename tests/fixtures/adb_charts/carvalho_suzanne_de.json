@@ -1,0 +1,115 @@
+{
+  "adb_id": 638,
+  "name": "Carvalho, Suzanne de",
+  "given_name": "Suzanne de Carvalho",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438389.979167,
+    "year": 1963,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "d",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Rio de Janeiro (Rio de Janeiro)",
+    "country": "Brazil",
+    "lat": -22.9,
+    "lon": -43.233333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carvalho,_Suzanne_de",
+  "source_notes": "Marcello Borges quotes her in a magazine interview.\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Vocation : Beauty : Model",
+    "Vocation : Beauty : Sex-symbol",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Sports : Race Cars",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : First in Field",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 1.093062,
+    "lagna": 271.093062,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.354022,
+    "jd_ut": 2438389.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 250.61786,
+        "sign_index": 8,
+        "degree_in_sign": 10.61786,
+        "is_retrograde": false,
+        "speed": 1.018651
+      },
+      "Moon": {
+        "longitude": 15.593534,
+        "sign_index": 0,
+        "degree_in_sign": 15.593534,
+        "is_retrograde": false,
+        "speed": 19.797084
+      },
+      "Mars": {
+        "longitude": 262.810098,
+        "sign_index": 8,
+        "degree_in_sign": 22.810098,
+        "is_retrograde": false,
+        "speed": 0.773197
+      },
+      "Mercury": {
+        "longitude": 267.390865,
+        "sign_index": 8,
+        "degree_in_sign": 27.390865,
+        "is_retrograde": true,
+        "speed": -0.014236
+      },
+      "Jupiter": {
+        "longitude": 346.947834,
+        "sign_index": 11,
+        "degree_in_sign": 16.947834,
+        "is_retrograde": false,
+        "speed": 0.07101
+      },
+      "Venus": {
+        "longitude": 279.985374,
+        "sign_index": 9,
+        "degree_in_sign": 9.985374,
+        "is_retrograde": false,
+        "speed": 1.237932
+      },
+      "Saturn": {
+        "longitude": 296.524519,
+        "sign_index": 9,
+        "degree_in_sign": 26.524519,
+        "is_retrograde": false,
+        "speed": 0.095749
+      },
+      "Rahu": {
+        "longitude": 78.298679,
+        "sign_index": 2,
+        "degree_in_sign": 18.298679,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 258.298679,
+        "sign_index": 8,
+        "degree_in_sign": 18.298679,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 74661,
+  "name": "Caparezza",
+  "given_name": "Caparezza",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441965.135417,
+    "year": 1973,
+    "month": 10,
+    "day": 9,
+    "calendar": "g",
+    "time": "16:15",
+    "time_type": "s",
+    "hour": 16.25,
+    "time_unknown": false,
+    "place": "Bari",
+    "country": "Italy",
+    "lat": 41.116667,
+    "lon": 16.866667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caparezza",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Rapper"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 2.039378,
+    "lagna": 302.039378,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.490734,
+    "jd_ut": 2441965.135417,
+    "planets": {
+      "Sun": {
+        "longitude": 172.689555,
+        "sign_index": 5,
+        "degree_in_sign": 22.689555,
+        "is_retrograde": false,
+        "speed": 0.987794
+      },
+      "Moon": {
+        "longitude": 321.850832,
+        "sign_index": 10,
+        "degree_in_sign": 21.850832,
+        "is_retrograde": false,
+        "speed": 12.388283
+      },
+      "Mars": {
+        "longitude": 12.993047,
+        "sign_index": 0,
+        "degree_in_sign": 12.993047,
+        "is_retrograde": true,
+        "speed": -0.266555
+      },
+      "Mercury": {
+        "longitude": 195.6767,
+        "sign_index": 6,
+        "degree_in_sign": 15.6767,
+        "is_retrograde": false,
+        "speed": 1.282677
+      },
+      "Jupiter": {
+        "longitude": 278.996096,
+        "sign_index": 9,
+        "degree_in_sign": 8.996096,
+        "is_retrograde": false,
+        "speed": 0.03622
+      },
+      "Venus": {
+        "longitude": 216.841413,
+        "sign_index": 7,
+        "degree_in_sign": 6.841413,
+        "is_retrograde": false,
+        "speed": 1.133982
+      },
+      "Saturn": {
+        "longitude": 71.204836,
+        "sign_index": 2,
+        "degree_in_sign": 11.204836,
+        "is_retrograde": false,
+        "speed": 0.014022
+      },
+      "Rahu": {
+        "longitude": 248.843847,
+        "sign_index": 8,
+        "degree_in_sign": 8.843847,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 68.843847,
+        "sign_index": 2,
+        "degree_in_sign": 8.843847,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

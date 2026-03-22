@@ -1,0 +1,111 @@
+{
+  "adb_id": 79024,
+  "name": "Clark, Arnold",
+  "given_name": "Arnold Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425212.381944,
+    "year": 1927,
+    "month": 11,
+    "day": 27,
+    "calendar": "g",
+    "time": "21:10",
+    "time_type": "s",
+    "hour": 21.166667,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Arnold",
+  "source_notes": "Paul Wright quotes birth record\\n",
+  "categories": [
+    "Lifestyle : Financial : Philanthropist",
+    "Lifestyle : Financial : Wealthy",
+    "Vocation : Business : Business owner",
+    "Notable : Awards : Knighted"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 27.465362,
+    "lagna": 87.465362,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.850169,
+    "jd_ut": 2425212.381944,
+    "planets": {
+      "Sun": {
+        "longitude": 221.790694,
+        "sign_index": 7,
+        "degree_in_sign": 11.790694,
+        "is_retrograde": false,
+        "speed": 1.012785
+      },
+      "Moon": {
+        "longitude": 260.159915,
+        "sign_index": 8,
+        "degree_in_sign": 20.159915,
+        "is_retrograde": false,
+        "speed": 12.903219
+      },
+      "Mars": {
+        "longitude": 209.727832,
+        "sign_index": 6,
+        "degree_in_sign": 29.727832,
+        "is_retrograde": false,
+        "speed": 0.698501
+      },
+      "Mercury": {
+        "longitude": 201.932276,
+        "sign_index": 6,
+        "degree_in_sign": 21.932276,
+        "is_retrograde": false,
+        "speed": 1.073909
+      },
+      "Jupiter": {
+        "longitude": 330.877524,
+        "sign_index": 11,
+        "degree_in_sign": 0.877524,
+        "is_retrograde": false,
+        "speed": 0.028002
+      },
+      "Venus": {
+        "longitude": 175.24438,
+        "sign_index": 5,
+        "degree_in_sign": 25.24438,
+        "is_retrograde": false,
+        "speed": 1.053331
+      },
+      "Saturn": {
+        "longitude": 226.679401,
+        "sign_index": 7,
+        "degree_in_sign": 16.679401,
+        "is_retrograde": false,
+        "speed": 0.118331
+      },
+      "Rahu": {
+        "longitude": 56.606751,
+        "sign_index": 1,
+        "degree_in_sign": 26.606751,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 236.606751,
+        "sign_index": 7,
+        "degree_in_sign": 26.606751,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 86702,
+  "name": "Cañedo, Alexander",
+  "given_name": "Alexander Cañedo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416110.60875,
+    "year": 1902,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4,
+    "lon": -99.15
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cañedo,_Alexander",
+  "source_notes": "Sy Scholfield provided birth registry entry from Distrito Federal archives.\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Passions : Sexuality : Gay",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 23.80588,
+    "lagna": 83.80588,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.502203,
+    "jd_ut": 2416110.60875,
+    "planets": {
+      "Sun": {
+        "longitude": 251.912925,
+        "sign_index": 8,
+        "degree_in_sign": 11.912925,
+        "is_retrograde": false,
+        "speed": 1.019379
+      },
+      "Moon": {
+        "longitude": 221.318796,
+        "sign_index": 7,
+        "degree_in_sign": 11.318796,
+        "is_retrograde": false,
+        "speed": 16.229718
+      },
+      "Mars": {
+        "longitude": 160.527942,
+        "sign_index": 5,
+        "degree_in_sign": 10.527942,
+        "is_retrograde": false,
+        "speed": 0.421282
+      },
+      "Mercury": {
+        "longitude": 260.267436,
+        "sign_index": 8,
+        "degree_in_sign": 20.267436,
+        "is_retrograde": false,
+        "speed": 1.611622
+      },
+      "Jupiter": {
+        "longitude": 294.808015,
+        "sign_index": 9,
+        "degree_in_sign": 24.808015,
+        "is_retrograde": false,
+        "speed": 0.206297
+      },
+      "Venus": {
+        "longitude": 258.660937,
+        "sign_index": 8,
+        "degree_in_sign": 18.660937,
+        "is_retrograde": false,
+        "speed": 1.257465
+      },
+      "Saturn": {
+        "longitude": 274.715818,
+        "sign_index": 9,
+        "degree_in_sign": 4.715818,
+        "is_retrograde": false,
+        "speed": 0.112667
+      },
+      "Rahu": {
+        "longitude": 178.928773,
+        "sign_index": 5,
+        "degree_in_sign": 28.928773,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 358.928773,
+        "sign_index": 11,
+        "degree_in_sign": 28.928773,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

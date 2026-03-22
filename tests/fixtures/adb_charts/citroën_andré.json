@@ -1,0 +1,111 @@
+{
+  "adb_id": 2904,
+  "name": "Citroën, André",
+  "given_name": "André Citroën",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407020.514352,
+    "year": 1878,
+    "month": 2,
+    "day": 5,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "l",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Citroën,_André",
+  "source_notes": "Sy Scholfield quotes BC no. 261 in the online Paris Archives, 9e arr. Scholfield also quotes John Reynolds's book, \"André Citroën: The Man and the Motor Cars\" (Alan Sutton, 1996), p. 6: \"Andre Citroen was born in Paris at exactly thirty minutes past midnight on the morning of 5 February 1878. The fifth and youngest child of Levie Citroen, a Jewish diamond merchant from Amsterdam.\"\\nPreviously this data had a C-rating: Lescaut quotes Richez for B.R., Cahiers Astrol 204 (not confirmed).\\n",
+  "categories": [
+    "Lifestyle : Financial : Loss - Bankruptcy",
+    "Lifestyle : Financial : Wealthy",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Engineer : Mechanical"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 23.73681,
+    "lagna": 173.73681,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.154723,
+    "jd_ut": 2407020.514352,
+    "planets": {
+      "Sun": {
+        "longitude": 293.963473,
+        "sign_index": 9,
+        "degree_in_sign": 23.963473,
+        "is_retrograde": false,
+        "speed": 1.01354
+      },
+      "Moon": {
+        "longitude": 322.48028,
+        "sign_index": 10,
+        "degree_in_sign": 22.48028,
+        "is_retrograde": false,
+        "speed": 14.859172
+      },
+      "Mars": {
+        "longitude": 11.044216,
+        "sign_index": 0,
+        "degree_in_sign": 11.044216,
+        "is_retrograde": false,
+        "speed": 0.620431
+      },
+      "Mercury": {
+        "longitude": 268.559613,
+        "sign_index": 8,
+        "degree_in_sign": 28.559613,
+        "is_retrograde": false,
+        "speed": 1.080181
+      },
+      "Jupiter": {
+        "longitude": 270.026891,
+        "sign_index": 9,
+        "degree_in_sign": 0.026891,
+        "is_retrograde": false,
+        "speed": 0.223233
+      },
+      "Venus": {
+        "longitude": 317.959349,
+        "sign_index": 10,
+        "degree_in_sign": 17.959349,
+        "is_retrograde": true,
+        "speed": -0.192763
+      },
+      "Saturn": {
+        "longitude": 326.49801,
+        "sign_index": 10,
+        "degree_in_sign": 26.49801,
+        "is_retrograde": false,
+        "speed": 0.110697
+      },
+      "Rahu": {
+        "longitude": 300.632118,
+        "sign_index": 10,
+        "degree_in_sign": 0.632118,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 120.632118,
+        "sign_index": 4,
+        "degree_in_sign": 0.632118,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

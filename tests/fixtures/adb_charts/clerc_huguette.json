@@ -1,0 +1,108 @@
+{
+  "adb_id": 83858,
+  "name": "Clerc, Huguette",
+  "given_name": "Huguette Clerc",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422402.708333,
+    "year": 1920,
+    "month": 3,
+    "day": 19,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "d",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 19",
+    "country": "France",
+    "lat": 48.882778,
+    "lon": 2.381944
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clerc,_Huguette",
+  "source_notes": "André Dekoster quoted bc.\\n",
+  "categories": [
+    "Vocation : Beauty : Model"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 11.278653,
+    "lagna": 281.278653,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.742749,
+    "jd_ut": 2422402.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 335.556845,
+        "sign_index": 11,
+        "degree_in_sign": 5.556845,
+        "is_retrograde": false,
+        "speed": 0.993976
+      },
+      "Moon": {
+        "longitude": 320.089535,
+        "sign_index": 10,
+        "degree_in_sign": 20.089535,
+        "is_retrograde": false,
+        "speed": 13.287434
+      },
+      "Mars": {
+        "longitude": 196.24851,
+        "sign_index": 6,
+        "degree_in_sign": 16.24851,
+        "is_retrograde": true,
+        "speed": -0.051338
+      },
+      "Mercury": {
+        "longitude": 337.672134,
+        "sign_index": 11,
+        "degree_in_sign": 7.672134,
+        "is_retrograde": true,
+        "speed": -0.870667
+      },
+      "Jupiter": {
+        "longitude": 105.754956,
+        "sign_index": 3,
+        "degree_in_sign": 15.754956,
+        "is_retrograde": true,
+        "speed": -0.050081
+      },
+      "Venus": {
+        "longitude": 307.942953,
+        "sign_index": 10,
+        "degree_in_sign": 7.942953,
+        "is_retrograde": false,
+        "speed": 1.227267
+      },
+      "Saturn": {
+        "longitude": 133.990304,
+        "sign_index": 4,
+        "degree_in_sign": 13.990304,
+        "is_retrograde": true,
+        "speed": -0.071548
+      },
+      "Rahu": {
+        "longitude": 205.497214,
+        "sign_index": 6,
+        "degree_in_sign": 25.497214,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 25.497214,
+        "sign_index": 0,
+        "degree_in_sign": 25.497214,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

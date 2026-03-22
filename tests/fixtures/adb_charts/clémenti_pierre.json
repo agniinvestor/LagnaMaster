@@ -1,0 +1,108 @@
+{
+  "adb_id": 63918,
+  "name": "Clémenti, Pierre",
+  "given_name": "Pierre Clémenti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430630.75,
+    "year": 1942,
+    "month": 9,
+    "day": 28,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "d",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clémenti,_Pierre",
+  "source_notes": "Didier Geslain archive, 'acteurs et comédiens' pdf file, p. 59.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 20.234924,
+    "lagna": 140.234924,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.057334,
+    "jd_ut": 2430630.75,
+    "planets": {
+      "Sun": {
+        "longitude": 161.425848,
+        "sign_index": 5,
+        "degree_in_sign": 11.425848,
+        "is_retrograde": false,
+        "speed": 0.981404
+      },
+      "Moon": {
+        "longitude": 24.458009,
+        "sign_index": 0,
+        "degree_in_sign": 24.458009,
+        "is_retrograde": false,
+        "speed": 10.110293
+      },
+      "Mars": {
+        "longitude": 163.979363,
+        "sign_index": 5,
+        "degree_in_sign": 13.979363,
+        "is_retrograde": false,
+        "speed": 0.652433
+      },
+      "Mercury": {
+        "longitude": 182.935728,
+        "sign_index": 6,
+        "degree_in_sign": 2.935728,
+        "is_retrograde": false,
+        "speed": 0.047651
+      },
+      "Jupiter": {
+        "longitude": 89.025462,
+        "sign_index": 2,
+        "degree_in_sign": 29.025462,
+        "is_retrograde": false,
+        "speed": 0.130671
+      },
+      "Venus": {
+        "longitude": 148.801444,
+        "sign_index": 4,
+        "degree_in_sign": 28.801444,
+        "is_retrograde": false,
+        "speed": 1.24358
+      },
+      "Saturn": {
+        "longitude": 49.460191,
+        "sign_index": 1,
+        "degree_in_sign": 19.460191,
+        "is_retrograde": true,
+        "speed": -0.005493
+      },
+      "Rahu": {
+        "longitude": 129.476192,
+        "sign_index": 4,
+        "degree_in_sign": 9.476192,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.476192,
+        "sign_index": 10,
+        "degree_in_sign": 9.476192,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

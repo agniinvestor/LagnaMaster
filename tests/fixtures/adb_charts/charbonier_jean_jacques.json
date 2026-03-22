@@ -1,0 +1,108 @@
+{
+  "adb_id": 78921,
+  "name": "Charbonier, Jean-Jacques",
+  "given_name": "Jean-Jacques Charbonier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435609.958333,
+    "year": 1956,
+    "month": 5,
+    "day": 16,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "St.Gaudens",
+    "country": "France",
+    "lat": 43.116667,
+    "lon": 0.733333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charbonier,_Jean-Jacques",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Medical : Mortician/ Death Affairs"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 4.874513,
+    "lagna": 94.874513,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.24772,
+    "jd_ut": 2435609.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 32.288163,
+        "sign_index": 1,
+        "degree_in_sign": 2.288163,
+        "is_retrograde": false,
+        "speed": 0.963552
+      },
+      "Moon": {
+        "longitude": 113.195281,
+        "sign_index": 3,
+        "degree_in_sign": 23.195281,
+        "is_retrograde": false,
+        "speed": 14.49637
+      },
+      "Mars": {
+        "longitude": 296.365366,
+        "sign_index": 9,
+        "degree_in_sign": 26.365366,
+        "is_retrograde": false,
+        "speed": 0.600606
+      },
+      "Mercury": {
+        "longitude": 45.473647,
+        "sign_index": 1,
+        "degree_in_sign": 15.473647,
+        "is_retrograde": true,
+        "speed": -0.152302
+      },
+      "Jupiter": {
+        "longitude": 119.480758,
+        "sign_index": 3,
+        "degree_in_sign": 29.480758,
+        "is_retrograde": false,
+        "speed": 0.083716
+      },
+      "Venus": {
+        "longitude": 71.691136,
+        "sign_index": 2,
+        "degree_in_sign": 11.691136,
+        "is_retrograde": false,
+        "speed": 0.496554
+      },
+      "Saturn": {
+        "longitude": 216.577549,
+        "sign_index": 7,
+        "degree_in_sign": 6.577549,
+        "is_retrograde": true,
+        "speed": -0.074346
+      },
+      "Rahu": {
+        "longitude": 225.617683,
+        "sign_index": 7,
+        "degree_in_sign": 15.617683,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 45.617683,
+        "sign_index": 1,
+        "degree_in_sign": 15.617683,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

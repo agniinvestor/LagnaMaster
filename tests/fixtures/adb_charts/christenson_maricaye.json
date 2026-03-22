@@ -1,0 +1,110 @@
+{
+  "adb_id": 104422,
+  "name": "Christenson, Maricaye",
+  "given_name": "Maricaye Christenson",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432562.439583,
+    "year": 1948,
+    "month": 1,
+    "day": 11,
+    "calendar": "g",
+    "time": "15:33",
+    "time_type": "s",
+    "hour": 15.55,
+    "time_unknown": false,
+    "place": "Grand Junction",
+    "country": "Colorado",
+    "lat": 39.066667,
+    "lon": -108.55
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christenson,_Maricaye",
+  "source_notes": "Sy Scholfield quotes birth news, ''The Daily Sentinel'' (Grand Junction, Colorado), 13 January 1948, page 5: born at St. Mary's Hospital. \\n",
+  "categories": [
+    "Traits : Body : Handedness",
+    "Vocation : Sports : Tennis",
+    "Notable : Awards : Hall of Fame"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 14.345355,
+    "lagna": 44.345355,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.131193,
+    "jd_ut": 2432562.439583,
+    "planets": {
+      "Sun": {
+        "longitude": 267.50284,
+        "sign_index": 8,
+        "degree_in_sign": 27.50284,
+        "is_retrograde": false,
+        "speed": 1.01933
+      },
+      "Moon": {
+        "longitude": 273.630029,
+        "sign_index": 9,
+        "degree_in_sign": 3.630029,
+        "is_retrograde": false,
+        "speed": 8.874411
+      },
+      "Mars": {
+        "longitude": 134.408884,
+        "sign_index": 4,
+        "degree_in_sign": 14.408884,
+        "is_retrograde": true,
+        "speed": -0.043863
+      },
+      "Mercury": {
+        "longitude": 272.714237,
+        "sign_index": 9,
+        "degree_in_sign": 2.714237,
+        "is_retrograde": false,
+        "speed": 1.668179
+      },
+      "Jupiter": {
+        "longitude": 234.315266,
+        "sign_index": 7,
+        "degree_in_sign": 24.315266,
+        "is_retrograde": false,
+        "speed": 0.206036
+      },
+      "Venus": {
+        "longitude": 299.30422,
+        "sign_index": 9,
+        "degree_in_sign": 29.30422,
+        "is_retrograde": false,
+        "speed": 1.232013
+      },
+      "Saturn": {
+        "longitude": 118.241496,
+        "sign_index": 3,
+        "degree_in_sign": 28.241496,
+        "is_retrograde": true,
+        "speed": -0.063771
+      },
+      "Rahu": {
+        "longitude": 27.111973,
+        "sign_index": 0,
+        "degree_in_sign": 27.111973,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 207.111973,
+        "sign_index": 6,
+        "degree_in_sign": 27.111973,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

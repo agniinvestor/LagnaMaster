@@ -1,0 +1,110 @@
+{
+  "adb_id": 96011,
+  "name": "Croegaert, Edward",
+  "given_name": "Edward Croegaert",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2396967.737731,
+    "year": 1850,
+    "month": 7,
+    "day": 29,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Antwerp",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 4.416667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Croegaert,_Edward",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file [https://commons.wikimedia.org/wiki/File:Croegaert_geboorteakte.jpg].\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Other Entertain/Music",
+    "Vocation : Humanities+Social Sciences : Linguist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 8.804826,
+    "lagna": 98.804826,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.770487,
+    "jd_ut": 2396967.737731,
+    "planets": {
+      "Sun": {
+        "longitude": 103.918732,
+        "sign_index": 3,
+        "degree_in_sign": 13.918732,
+        "is_retrograde": false,
+        "speed": 0.956221
+      },
+      "Moon": {
+        "longitude": 338.343527,
+        "sign_index": 11,
+        "degree_in_sign": 8.343527,
+        "is_retrograde": false,
+        "speed": 9.648697
+      },
+      "Mars": {
+        "longitude": 142.37501,
+        "sign_index": 4,
+        "degree_in_sign": 22.37501,
+        "is_retrograde": false,
+        "speed": 0.620491
+      },
+      "Mercury": {
+        "longitude": 101.3144,
+        "sign_index": 3,
+        "degree_in_sign": 11.3144,
+        "is_retrograde": false,
+        "speed": 2.101819
+      },
+      "Jupiter": {
+        "longitude": 149.526781,
+        "sign_index": 4,
+        "degree_in_sign": 29.526781,
+        "is_retrograde": false,
+        "speed": 0.178978
+      },
+      "Venus": {
+        "longitude": 141.06876,
+        "sign_index": 4,
+        "degree_in_sign": 21.06876,
+        "is_retrograde": false,
+        "speed": 1.173927
+      },
+      "Saturn": {
+        "longitude": 359.217432,
+        "sign_index": 11,
+        "degree_in_sign": 29.217432,
+        "is_retrograde": false,
+        "speed": 0.007901
+      },
+      "Rahu": {
+        "longitude": 113.350275,
+        "sign_index": 3,
+        "degree_in_sign": 23.350275,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 293.350275,
+        "sign_index": 9,
+        "degree_in_sign": 23.350275,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "adb_id": 36587,
+  "name": "Cooper, Sarah",
+  "given_name": "Sarah Cooper",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2422127.510417,
+    "year": 1919,
+    "month": 6,
+    "day": 17,
+    "calendar": "g",
+    "time": "20:15",
+    "time_type": "w",
+    "hour": 20.25,
+    "time_unknown": false,
+    "place": "Bluefield",
+    "country": "West Virginia",
+    "lat": 37.266667,
+    "lon": -81.216667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooper,_Sarah",
+  "source_notes": "Time given by Frances McEvoy and from Joyce Wehrman, from her.  (LMR quotes her for 7:10 PM, either an earlier or later rectification)\\n",
+  "categories": [
+    "Traits : Personality : Gracious/ sociable",
+    "Diagnoses : Major Diseases : Asthma",
+    "Diagnoses : Major Diseases : Cancer",
+    "Diagnoses : Major Diseases : Emphysema",
+    "Family : Relationship : Number of Marriages",
+    "Vocation : Education : Librarian",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 4.268332,
+    "lagna": 214.268332,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.732228,
+    "jd_ut": 2422127.510417,
+    "planets": {
+      "Sun": {
+        "longitude": 62.983628,
+        "sign_index": 2,
+        "degree_in_sign": 2.983628,
+        "is_retrograde": false,
+        "speed": 0.954353
+      },
+      "Moon": {
+        "longitude": 293.332961,
+        "sign_index": 9,
+        "degree_in_sign": 23.332961,
+        "is_retrograde": false,
+        "speed": 15.471366
+      },
+      "Mars": {
+        "longitude": 53.112348,
+        "sign_index": 1,
+        "degree_in_sign": 23.112348,
+        "is_retrograde": false,
+        "speed": 0.69148
+      },
+      "Mercury": {
+        "longitude": 70.769772,
+        "sign_index": 2,
+        "degree_in_sign": 10.769772,
+        "is_retrograde": false,
+        "speed": 2.109938
+      },
+      "Jupiter": {
+        "longitude": 87.260141,
+        "sign_index": 2,
+        "degree_in_sign": 27.260141,
+        "is_retrograde": false,
+        "speed": 0.213131
+      },
+      "Venus": {
+        "longitude": 107.513532,
+        "sign_index": 3,
+        "degree_in_sign": 17.513532,
+        "is_retrograde": false,
+        "speed": 1.051757
+      },
+      "Saturn": {
+        "longitude": 121.146914,
+        "sign_index": 4,
+        "degree_in_sign": 1.146914,
+        "is_retrograde": false,
+        "speed": 0.085853
+      },
+      "Rahu": {
+        "longitude": 220.080526,
+        "sign_index": 7,
+        "degree_in_sign": 10.080526,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 40.080526,
+        "sign_index": 1,
+        "degree_in_sign": 10.080526,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

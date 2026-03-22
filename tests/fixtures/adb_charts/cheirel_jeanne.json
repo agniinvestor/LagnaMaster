@@ -1,0 +1,108 @@
+{
+  "adb_id": 79506,
+  "name": "Cheirel, Jeanne",
+  "given_name": "Jeanne Cheirel",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403402.24339,
+    "year": 1868,
+    "month": 3,
+    "day": 10,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 11",
+    "country": "France",
+    "lat": 48.858333,
+    "lon": 2.379722
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cheirel,_Jeanne",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 7.726044,
+    "lagna": 127.726044,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.01642,
+    "jd_ut": 2403402.24339,
+    "planets": {
+      "Sun": {
+        "longitude": 328.455991,
+        "sign_index": 10,
+        "degree_in_sign": 28.455991,
+        "is_retrograde": false,
+        "speed": 0.997195
+      },
+      "Moon": {
+        "longitude": 174.554122,
+        "sign_index": 5,
+        "degree_in_sign": 24.554122,
+        "is_retrograde": false,
+        "speed": 15.761438
+      },
+      "Mars": {
+        "longitude": 312.684735,
+        "sign_index": 10,
+        "degree_in_sign": 12.684735,
+        "is_retrograde": false,
+        "speed": 0.786752
+      },
+      "Mercury": {
+        "longitude": 323.869836,
+        "sign_index": 10,
+        "degree_in_sign": 23.869836,
+        "is_retrograde": true,
+        "speed": -0.963011
+      },
+      "Jupiter": {
+        "longitude": 328.398947,
+        "sign_index": 10,
+        "degree_in_sign": 28.398947,
+        "is_retrograde": false,
+        "speed": 0.242026
+      },
+      "Venus": {
+        "longitude": 7.064266,
+        "sign_index": 0,
+        "degree_in_sign": 7.064266,
+        "is_retrograde": false,
+        "speed": 1.181933
+      },
+      "Saturn": {
+        "longitude": 223.675504,
+        "sign_index": 7,
+        "degree_in_sign": 13.675504,
+        "is_retrograde": false,
+        "speed": 0.006789
+      },
+      "Rahu": {
+        "longitude": 132.372011,
+        "sign_index": 4,
+        "degree_in_sign": 12.372011,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 312.372011,
+        "sign_index": 10,
+        "degree_in_sign": 12.372011,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

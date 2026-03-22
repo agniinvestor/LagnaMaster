@@ -1,0 +1,108 @@
+{
+  "adb_id": 70238,
+  "name": "Clément, Anthony",
+  "given_name": "Anthony Clément",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443036.96875,
+    "year": 1976,
+    "month": 9,
+    "day": 15,
+    "calendar": "g",
+    "time": "13:15",
+    "time_type": "d",
+    "hour": 13.25,
+    "time_unknown": false,
+    "place": "Châteaubriant",
+    "country": "France",
+    "lat": 47.716667,
+    "lon": -1.383333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clément,_Anthony",
+  "source_notes": "Didier Geslain archive, 'hippisme jockeys' pdf file, p. 56.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 5.704528,
+    "lagna": 185.704528,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.531722,
+    "jd_ut": 2443036.96875,
+    "planets": {
+      "Sun": {
+        "longitude": 149.196379,
+        "sign_index": 4,
+        "degree_in_sign": 29.196379,
+        "is_retrograde": false,
+        "speed": 0.974785
+      },
+      "Moon": {
+        "longitude": 44.547181,
+        "sign_index": 1,
+        "degree_in_sign": 14.547181,
+        "is_retrograde": false,
+        "speed": 12.143361
+      },
+      "Mars": {
+        "longitude": 170.873008,
+        "sign_index": 5,
+        "degree_in_sign": 20.873008,
+        "is_retrograde": false,
+        "speed": 0.6571
+      },
+      "Mercury": {
+        "longitude": 161.994375,
+        "sign_index": 5,
+        "degree_in_sign": 11.994375,
+        "is_retrograde": true,
+        "speed": -0.714914
+      },
+      "Jupiter": {
+        "longitude": 37.642262,
+        "sign_index": 1,
+        "degree_in_sign": 7.642262,
+        "is_retrograde": false,
+        "speed": 0.014405
+      },
+      "Venus": {
+        "longitude": 173.329991,
+        "sign_index": 5,
+        "degree_in_sign": 23.329991,
+        "is_retrograde": false,
+        "speed": 1.227256
+      },
+      "Saturn": {
+        "longitude": 108.872333,
+        "sign_index": 3,
+        "degree_in_sign": 18.872333,
+        "is_retrograde": false,
+        "speed": 0.108621
+      },
+      "Rahu": {
+        "longitude": 192.045215,
+        "sign_index": 6,
+        "degree_in_sign": 12.045215,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 12.045215,
+        "sign_index": 0,
+        "degree_in_sign": 12.045215,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

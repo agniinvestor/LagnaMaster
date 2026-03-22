@@ -1,0 +1,117 @@
+{
+  "adb_id": 86191,
+  "name": "Coulson, Juanita",
+  "given_name": "Juanita Coulson",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427116.427083,
+    "year": 1933,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "16:15",
+    "time_type": "s",
+    "hour": 16.25,
+    "time_unknown": false,
+    "place": "Anderson",
+    "country": "Indiana",
+    "lat": 40.1,
+    "lon": -85.683333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coulson,_Juanita",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana archives.\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Magazine/ newsletter",
+    "Vocation : Writers : Publisher/ Editor",
+    "Vocation : Writers : Sci-Fi/ Fantasy/ Horror",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 27.109465,
+    "lagna": 87.109465,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.922966,
+    "jd_ut": 2427116.427083,
+    "planets": {
+      "Sun": {
+        "longitude": 300.849901,
+        "sign_index": 10,
+        "degree_in_sign": 0.849901,
+        "is_retrograde": false,
+        "speed": 1.010343
+      },
+      "Moon": {
+        "longitude": 151.037106,
+        "sign_index": 5,
+        "degree_in_sign": 1.037106,
+        "is_retrograde": false,
+        "speed": 16.904803
+      },
+      "Mars": {
+        "longitude": 143.968784,
+        "sign_index": 4,
+        "degree_in_sign": 23.968784,
+        "is_retrograde": true,
+        "speed": -0.290301
+      },
+      "Mercury": {
+        "longitude": 304.721053,
+        "sign_index": 10,
+        "degree_in_sign": 4.721053,
+        "is_retrograde": false,
+        "speed": 1.82475
+      },
+      "Jupiter": {
+        "longitude": 148.374117,
+        "sign_index": 4,
+        "degree_in_sign": 28.374117,
+        "is_retrograde": true,
+        "speed": -0.103253
+      },
+      "Venus": {
+        "longitude": 283.92927,
+        "sign_index": 9,
+        "degree_in_sign": 13.92927,
+        "is_retrograde": false,
+        "speed": 1.248439
+      },
+      "Saturn": {
+        "longitude": 286.16777,
+        "sign_index": 9,
+        "degree_in_sign": 16.16777,
+        "is_retrograde": false,
+        "speed": 0.116928
+      },
+      "Rahu": {
+        "longitude": 315.707442,
+        "sign_index": 10,
+        "degree_in_sign": 15.707442,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 135.707442,
+        "sign_index": 4,
+        "degree_in_sign": 15.707442,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

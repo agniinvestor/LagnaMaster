@@ -1,0 +1,113 @@
+{
+  "adb_id": 56092,
+  "name": "Chevreul, Michel Eugène",
+  "given_name": "Michel Eugène Chevreul",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2373626.334861,
+    "year": 1786,
+    "month": 8,
+    "day": 31,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Angers",
+    "country": "France",
+    "lat": 47.466667,
+    "lon": -0.55
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevreul,_Michel_Eugène",
+  "source_notes": "Arno Müller, vol 2.\\nSy Scholfield quotes from The Times (London): \"Paris, Sept. 1. The Chevreul ''fetes'' yesterday closed with the banquet at the Salle Saint Jean, in the Hotel de Ville. Three hundred guests were present. The chief table was placed on a slightly raised platform at the end of the room, and there M. Chevreul occupied the central seat, supported by General Pittie, representing President Grevy, M. Goblet, Minister of Public Instruction, and other Ministers., M. Janssen, of the Academy of Sciences, spoke first. He said that M. Chevreul was born at 8 o'clock in the evening of the 31st of August, 1786. At this moment, then, exactly a hundred years ago, he first saw the light of this world.\" (2 September 1886, page 5).\\n",
+  "categories": [
+    "Traits : Personality : Active",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Science : Chemistry",
+    "Notable : Famous : First in Field",
+    "Notable : Famous : Founder/ originator",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 8.818675,
+    "lagna": 338.818675,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.878513,
+    "jd_ut": 2373626.334861,
+    "planets": {
+      "Sun": {
+        "longitude": 137.593207,
+        "sign_index": 4,
+        "degree_in_sign": 17.593207,
+        "is_retrograde": false,
+        "speed": 0.969134
+      },
+      "Moon": {
+        "longitude": 226.846711,
+        "sign_index": 7,
+        "degree_in_sign": 16.846711,
+        "is_retrograde": false,
+        "speed": 8.682819
+      },
+      "Mars": {
+        "longitude": 159.099728,
+        "sign_index": 5,
+        "degree_in_sign": 9.099728,
+        "is_retrograde": false,
+        "speed": 0.646554
+      },
+      "Mercury": {
+        "longitude": 150.716778,
+        "sign_index": 5,
+        "degree_in_sign": 0.716778,
+        "is_retrograde": true,
+        "speed": -0.653615
+      },
+      "Jupiter": {
+        "longitude": 30.267714,
+        "sign_index": 1,
+        "degree_in_sign": 0.267714,
+        "is_retrograde": false,
+        "speed": 0.029589
+      },
+      "Venus": {
+        "longitude": 178.209316,
+        "sign_index": 5,
+        "degree_in_sign": 28.209316,
+        "is_retrograde": false,
+        "speed": 1.160264
+      },
+      "Saturn": {
+        "longitude": 290.978568,
+        "sign_index": 9,
+        "degree_in_sign": 20.978568,
+        "is_retrograde": true,
+        "speed": -0.062436
+      },
+      "Rahu": {
+        "longitude": 270.262224,
+        "sign_index": 9,
+        "degree_in_sign": 0.262224,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 90.262224,
+        "sign_index": 3,
+        "degree_in_sign": 0.262224,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

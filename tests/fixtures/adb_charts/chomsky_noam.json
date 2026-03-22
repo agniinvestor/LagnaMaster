@@ -1,0 +1,113 @@
+{
+  "adb_id": 47572,
+  "name": "Chomsky, Noam",
+  "given_name": "Noam Chomsky",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2425588.013889,
+    "year": 1928,
+    "month": 12,
+    "day": 7,
+    "calendar": "g",
+    "time": "07:20",
+    "time_type": "s",
+    "hour": 7.333333,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chomsky,_Noam",
+  "source_notes": "Linda Clark quotes him 3/1993 for 7 AM; Jack Fertig met him in person in October 2009 andwrote: \" He told me he was born at 7:20 AM (according to his mother) December 7, 1928 in Philadelphia PA).\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Lifestyle : Social Life : Travel",
+    "Vocation : Education : Teacher",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.725895,
+    "lagna": 210.725895,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.86453,
+    "jd_ut": 2425588.013889,
+    "planets": {
+      "Sun": {
+        "longitude": 232.311011,
+        "sign_index": 7,
+        "degree_in_sign": 22.311011,
+        "is_retrograde": false,
+        "speed": 1.015993
+      },
+      "Moon": {
+        "longitude": 181.85698,
+        "sign_index": 6,
+        "degree_in_sign": 1.85698,
+        "is_retrograde": false,
+        "speed": 8.289197
+      },
+      "Mars": {
+        "longitude": 71.930333,
+        "sign_index": 2,
+        "degree_in_sign": 11.930333,
+        "is_retrograde": true,
+        "speed": -0.336892
+      },
+      "Mercury": {
+        "longitude": 226.219996,
+        "sign_index": 7,
+        "degree_in_sign": 16.219996,
+        "is_retrograde": false,
+        "speed": 1.564359
+      },
+      "Jupiter": {
+        "longitude": 8.152101,
+        "sign_index": 0,
+        "degree_in_sign": 8.152101,
+        "is_retrograde": true,
+        "speed": -0.062731
+      },
+      "Venus": {
+        "longitude": 271.679567,
+        "sign_index": 9,
+        "degree_in_sign": 1.679567,
+        "is_retrograde": false,
+        "speed": 1.203413
+      },
+      "Saturn": {
+        "longitude": 237.9627,
+        "sign_index": 7,
+        "degree_in_sign": 27.9627,
+        "is_retrograde": false,
+        "speed": 0.117925
+      },
+      "Rahu": {
+        "longitude": 36.701233,
+        "sign_index": 1,
+        "degree_in_sign": 6.701233,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 216.701233,
+        "sign_index": 7,
+        "degree_in_sign": 6.701233,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 64812,
+  "name": "Colson, Georges",
+  "given_name": "Georges Colson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428601.875,
+    "year": 1937,
+    "month": 3,
+    "day": 9,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "St.Gaudens",
+    "country": "France",
+    "lat": 43.116667,
+    "lon": 0.733333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colson,_Georges",
+  "source_notes": "Didier Geslain archive, 'business_men_pdg' pdf file, p. 33.\\n",
+  "categories": [
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 7.1109,
+    "lagna": 7.1109,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.97976,
+    "jd_ut": 2428601.875,
+    "planets": {
+      "Sun": {
+        "longitude": 325.402194,
+        "sign_index": 10,
+        "degree_in_sign": 25.402194,
+        "is_retrograde": false,
+        "speed": 0.99949
+      },
+      "Moon": {
+        "longitude": 280.908714,
+        "sign_index": 9,
+        "degree_in_sign": 10.908714,
+        "is_retrograde": false,
+        "speed": 8.959661
+      },
+      "Mars": {
+        "longitude": 215.806662,
+        "sign_index": 7,
+        "degree_in_sign": 5.806662,
+        "is_retrograde": false,
+        "speed": 0.333428
+      },
+      "Mercury": {
+        "longitude": 311.69034,
+        "sign_index": 10,
+        "degree_in_sign": 11.69034,
+        "is_retrograde": false,
+        "speed": 1.703169
+      },
+      "Jupiter": {
+        "longitude": 267.960734,
+        "sign_index": 8,
+        "degree_in_sign": 27.960734,
+        "is_retrograde": false,
+        "speed": 0.172304
+      },
+      "Venus": {
+        "longitude": 6.909972,
+        "sign_index": 0,
+        "degree_in_sign": 6.909972,
+        "is_retrograde": false,
+        "speed": 0.587268
+      },
+      "Saturn": {
+        "longitude": 331.400506,
+        "sign_index": 11,
+        "degree_in_sign": 1.400506,
+        "is_retrograde": false,
+        "speed": 0.123447
+      },
+      "Rahu": {
+        "longitude": 236.990477,
+        "sign_index": 7,
+        "degree_in_sign": 26.990477,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 56.990477,
+        "sign_index": 1,
+        "degree_in_sign": 26.990477,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 50798,
+  "name": "Coffin, Robert Edmondston",
+  "given_name": "Robert Edmondston Coffin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421395.0625,
+    "year": 1917,
+    "month": 6,
+    "day": 15,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Bellingham",
+    "country": "Washington",
+    "lat": 48.766667,
+    "lon": -122.483333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coffin,_Robert_Edmondston",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 25.810778,
+    "lagna": 55.810778,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.704226,
+    "jd_ut": 2421395.0625,
+    "planets": {
+      "Sun": {
+        "longitude": 61.135522,
+        "sign_index": 2,
+        "degree_in_sign": 1.135522,
+        "is_retrograde": false,
+        "speed": 0.95507
+      },
+      "Moon": {
+        "longitude": 13.566292,
+        "sign_index": 0,
+        "degree_in_sign": 13.566292,
+        "is_retrograde": false,
+        "speed": 11.390213
+      },
+      "Mars": {
+        "longitude": 37.78311,
+        "sign_index": 1,
+        "degree_in_sign": 7.78311,
+        "is_retrograde": false,
+        "speed": 0.713216
+      },
+      "Mercury": {
+        "longitude": 38.19819,
+        "sign_index": 1,
+        "degree_in_sign": 8.19819,
+        "is_retrograde": false,
+        "speed": 1.153137
+      },
+      "Jupiter": {
+        "longitude": 34.15985,
+        "sign_index": 1,
+        "degree_in_sign": 4.15985,
+        "is_retrograde": false,
+        "speed": 0.223122
+      },
+      "Venus": {
+        "longitude": 74.556329,
+        "sign_index": 2,
+        "degree_in_sign": 14.556329,
+        "is_retrograde": false,
+        "speed": 1.225412
+      },
+      "Saturn": {
+        "longitude": 96.237972,
+        "sign_index": 3,
+        "degree_in_sign": 6.237972,
+        "is_retrograde": false,
+        "speed": 0.113671
+      },
+      "Rahu": {
+        "longitude": 258.894473,
+        "sign_index": 8,
+        "degree_in_sign": 18.894473,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 78.894473,
+        "sign_index": 2,
+        "degree_in_sign": 18.894473,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

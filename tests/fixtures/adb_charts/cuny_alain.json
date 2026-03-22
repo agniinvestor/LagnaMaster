@@ -1,0 +1,110 @@
+{
+  "adb_id": 71726,
+  "name": "Cuny, Alain",
+  "given_name": "Alain Cuny",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418134.993507,
+    "year": 1908,
+    "month": 7,
+    "day": 12,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "St.Malo",
+    "country": "France",
+    "lat": 48.65,
+    "lon": -2.016667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuny,_Alain",
+  "source_notes": "Sy Scholfield quotes birth certificate n° 150 in the online Ille-et-Vilaine archives, p. 39/78.\\n",
+  "categories": [
+    "Vocation : Art : Stage/ Set design",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 26.240813,
+    "lagna": 146.240813,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.579593,
+    "jd_ut": 2418134.993507,
+    "planets": {
+      "Sun": {
+        "longitude": 87.11358,
+        "sign_index": 2,
+        "degree_in_sign": 27.11358,
+        "is_retrograde": false,
+        "speed": 0.953224
+      },
+      "Moon": {
+        "longitude": 247.709423,
+        "sign_index": 8,
+        "degree_in_sign": 7.709423,
+        "is_retrograde": false,
+        "speed": 18.328891
+      },
+      "Mars": {
+        "longitude": 100.189858,
+        "sign_index": 3,
+        "degree_in_sign": 10.189858,
+        "is_retrograde": false,
+        "speed": 0.637977
+      },
+      "Mercury": {
+        "longitude": 76.120051,
+        "sign_index": 2,
+        "degree_in_sign": 16.120051,
+        "is_retrograde": true,
+        "speed": -0.291198
+      },
+      "Jupiter": {
+        "longitude": 114.102969,
+        "sign_index": 3,
+        "degree_in_sign": 24.102969,
+        "is_retrograde": false,
+        "speed": 0.205799
+      },
+      "Venus": {
+        "longitude": 77.249653,
+        "sign_index": 2,
+        "degree_in_sign": 17.249653,
+        "is_retrograde": true,
+        "speed": -0.550566
+      },
+      "Saturn": {
+        "longitude": 347.522233,
+        "sign_index": 11,
+        "degree_in_sign": 17.522233,
+        "is_retrograde": false,
+        "speed": 0.01698
+      },
+      "Rahu": {
+        "longitude": 71.652365,
+        "sign_index": 2,
+        "degree_in_sign": 11.652365,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 251.652365,
+        "sign_index": 8,
+        "degree_in_sign": 11.652365,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

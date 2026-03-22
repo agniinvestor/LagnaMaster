@@ -1,0 +1,111 @@
+{
+  "adb_id": 5308,
+  "name": "Cantelli, Guido",
+  "given_name": "Guido Cantelli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422442.125,
+    "year": 1920,
+    "month": 4,
+    "day": 27,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "d",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Novara di Sicilia",
+    "country": "Italy",
+    "lat": 38.016667,
+    "lon": 15.133333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantelli,_Guido",
+  "source_notes": "Bordoni quotes B.C.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Lifestyle : Work : Travel for work",
+    "Personal : Death : Accidental",
+    "Vocation : Entertain/Music : Conductor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.923776,
+    "lagna": 138.923776,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.744256,
+    "jd_ut": 2422442.125,
+    "planets": {
+      "Sun": {
+        "longitude": 14.286608,
+        "sign_index": 0,
+        "degree_in_sign": 14.286608,
+        "is_retrograde": false,
+        "speed": 0.971683
+      },
+      "Moon": {
+        "longitude": 131.198346,
+        "sign_index": 4,
+        "degree_in_sign": 11.198346,
+        "is_retrograde": false,
+        "speed": 10.9569
+      },
+      "Mars": {
+        "longitude": 185.8398,
+        "sign_index": 6,
+        "degree_in_sign": 5.8398,
+        "is_retrograde": true,
+        "speed": -0.370419
+      },
+      "Mercury": {
+        "longitude": 349.236447,
+        "sign_index": 11,
+        "degree_in_sign": 19.236447,
+        "is_retrograde": false,
+        "speed": 1.397523
+      },
+      "Jupiter": {
+        "longitude": 106.206859,
+        "sign_index": 3,
+        "degree_in_sign": 16.206859,
+        "is_retrograde": false,
+        "speed": 0.070642
+      },
+      "Venus": {
+        "longitude": 356.321201,
+        "sign_index": 11,
+        "degree_in_sign": 26.321201,
+        "is_retrograde": false,
+        "speed": 1.226656
+      },
+      "Saturn": {
+        "longitude": 132.143684,
+        "sign_index": 4,
+        "degree_in_sign": 12.143684,
+        "is_retrograde": true,
+        "speed": -0.016382
+      },
+      "Rahu": {
+        "longitude": 203.408442,
+        "sign_index": 6,
+        "degree_in_sign": 23.408442,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 23.408442,
+        "sign_index": 0,
+        "degree_in_sign": 23.408442,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

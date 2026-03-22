@@ -1,0 +1,110 @@
+{
+  "adb_id": 63196,
+  "name": "Couturier, François",
+  "given_name": "François Couturier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433317.465278,
+    "year": 1950,
+    "month": 2,
+    "day": 5,
+    "calendar": "g",
+    "time": "00:10",
+    "time_type": "s",
+    "hour": 0.166667,
+    "time_unknown": false,
+    "place": "Fleury les Aubrais",
+    "country": "France",
+    "lat": 47.933333,
+    "lon": 1.916667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couturier,_François",
+  "source_notes": "Didier Geslain archive, 'jazz' pdf file, p. 34.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 8.606035,
+    "lagna": 158.606035,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.160062,
+    "jd_ut": 2433317.465278,
+    "planets": {
+      "Sun": {
+        "longitude": 292.423978,
+        "sign_index": 9,
+        "degree_in_sign": 22.423978,
+        "is_retrograde": false,
+        "speed": 1.013401
+      },
+      "Moon": {
+        "longitude": 139.601334,
+        "sign_index": 4,
+        "degree_in_sign": 19.601334,
+        "is_retrograde": false,
+        "speed": 11.239864
+      },
+      "Mars": {
+        "longitude": 167.562983,
+        "sign_index": 5,
+        "degree_in_sign": 17.562983,
+        "is_retrograde": false,
+        "speed": 0.085646
+      },
+      "Mercury": {
+        "longitude": 267.41456,
+        "sign_index": 8,
+        "degree_in_sign": 27.41456,
+        "is_retrograde": false,
+        "speed": 0.680937
+      },
+      "Jupiter": {
+        "longitude": 291.536602,
+        "sign_index": 9,
+        "degree_in_sign": 21.536602,
+        "is_retrograde": false,
+        "speed": 0.238565
+      },
+      "Venus": {
+        "longitude": 284.840404,
+        "sign_index": 9,
+        "degree_in_sign": 14.840404,
+        "is_retrograde": true,
+        "speed": -0.571101
+      },
+      "Saturn": {
+        "longitude": 145.104547,
+        "sign_index": 4,
+        "degree_in_sign": 25.104547,
+        "is_retrograde": true,
+        "speed": -0.060228
+      },
+      "Rahu": {
+        "longitude": 347.101605,
+        "sign_index": 11,
+        "degree_in_sign": 17.101605,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 167.101605,
+        "sign_index": 5,
+        "degree_in_sign": 17.101605,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

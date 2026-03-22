@@ -1,0 +1,115 @@
+{
+  "adb_id": 880,
+  "name": "Conti, Leonardo",
+  "given_name": "Leonardo Conti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415255.541667,
+    "year": 1900,
+    "month": 8,
+    "day": 24,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Lugano",
+    "country": "Switzerland",
+    "lat": 46.016667,
+    "lon": 8.966667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conti,_Leonardo",
+  "source_notes": "B.R. in hand from Steinbrecher\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide many at once",
+    "Passions : Criminal Perpetrator : Prison sentence",
+    "Personal : Death : Suicide",
+    "Vocation : Business : Top executive",
+    "Vocation : Medical : Physician",
+    "Vocation : Politics : Nazi party",
+    "Notable : Famous : Criminal cases",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 4.164921,
+    "lagna": 64.164921,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.469516,
+    "jd_ut": 2415255.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 127.914434,
+        "sign_index": 4,
+        "degree_in_sign": 7.914434,
+        "is_retrograde": false,
+        "speed": 0.964857
+      },
+      "Moon": {
+        "longitude": 116.006606,
+        "sign_index": 3,
+        "degree_in_sign": 26.006606,
+        "is_retrograde": false,
+        "speed": 15.03786
+      },
+      "Mars": {
+        "longitude": 76.658919,
+        "sign_index": 2,
+        "degree_in_sign": 16.658919,
+        "is_retrograde": false,
+        "speed": 0.643792
+      },
+      "Mercury": {
+        "longitude": 110.377304,
+        "sign_index": 3,
+        "degree_in_sign": 20.377304,
+        "is_retrograde": false,
+        "speed": 1.399186
+      },
+      "Jupiter": {
+        "longitude": 219.548468,
+        "sign_index": 7,
+        "degree_in_sign": 9.548468,
+        "is_retrograde": false,
+        "speed": 0.076168
+      },
+      "Venus": {
+        "longitude": 84.791019,
+        "sign_index": 2,
+        "degree_in_sign": 24.791019,
+        "is_retrograde": false,
+        "speed": 0.691076
+      },
+      "Saturn": {
+        "longitude": 246.033583,
+        "sign_index": 8,
+        "degree_in_sign": 6.033583,
+        "is_retrograde": true,
+        "speed": -0.015523
+      },
+      "Rahu": {
+        "longitude": 224.24058,
+        "sign_index": 7,
+        "degree_in_sign": 14.24058,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 44.24058,
+        "sign_index": 1,
+        "degree_in_sign": 14.24058,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

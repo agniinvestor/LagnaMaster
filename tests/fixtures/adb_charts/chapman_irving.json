@@ -1,0 +1,111 @@
+{
+  "adb_id": 36570,
+  "name": "Chapman, Irving",
+  "given_name": "Irving Chapman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439861.456944,
+    "year": 1968,
+    "month": 1,
+    "day": 5,
+    "calendar": "g",
+    "time": "17:58",
+    "time_type": "s",
+    "hour": 17.966667,
+    "time_unknown": false,
+    "place": "Lowell",
+    "country": "Massachusetts",
+    "lat": 42.633333,
+    "lon": -71.316667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapman,_Irving",
+  "source_notes": "The Astrologers Newsletter 1/2000 quotes B.C. from Francis McEvoy\\n",
+  "categories": [
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Passions : Criminal Perpetrator : Homicide serial",
+    "Passions : Criminal Perpetrator : Prison sentence",
+    "Passions : Criminal Perpetrator : Social crime/ delinquent"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 17.359524,
+    "lagna": 77.359524,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.41029,
+    "jd_ut": 2439861.456944,
+    "planets": {
+      "Sun": {
+        "longitude": 261.274102,
+        "sign_index": 8,
+        "degree_in_sign": 21.274102,
+        "is_retrograde": false,
+        "speed": 1.019393
+      },
+      "Moon": {
+        "longitude": 332.650038,
+        "sign_index": 11,
+        "degree_in_sign": 2.650038,
+        "is_retrograde": false,
+        "speed": 8.733532
+      },
+      "Mars": {
+        "longitude": 303.897737,
+        "sign_index": 10,
+        "degree_in_sign": 3.897737,
+        "is_retrograde": false,
+        "speed": 0.780386
+      },
+      "Mercury": {
+        "longitude": 266.066774,
+        "sign_index": 8,
+        "degree_in_sign": 26.066774,
+        "is_retrograde": false,
+        "speed": 1.641839
+      },
+      "Jupiter": {
+        "longitude": 132.088672,
+        "sign_index": 4,
+        "degree_in_sign": 12.088672,
+        "is_retrograde": true,
+        "speed": -0.04705
+      },
+      "Venus": {
+        "longitude": 221.406553,
+        "sign_index": 7,
+        "degree_in_sign": 11.406553,
+        "is_retrograde": false,
+        "speed": 1.201916
+      },
+      "Saturn": {
+        "longitude": 342.919962,
+        "sign_index": 11,
+        "degree_in_sign": 12.919962,
+        "is_retrograde": false,
+        "speed": 0.048785
+      },
+      "Rahu": {
+        "longitude": 0.322062,
+        "sign_index": 0,
+        "degree_in_sign": 0.322062,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 180.322062,
+        "sign_index": 6,
+        "degree_in_sign": 0.322062,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

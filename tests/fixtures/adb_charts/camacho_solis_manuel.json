@@ -1,0 +1,108 @@
+{
+  "adb_id": 47740,
+  "name": "Camacho Solis, Manuel",
+  "given_name": "Manuel Camacho Solis",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431910.638889,
+    "year": 1946,
+    "month": 3,
+    "day": 30,
+    "calendar": "g",
+    "time": "21:20",
+    "time_type": "s",
+    "hour": 21.333333,
+    "time_unknown": false,
+    "place": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4,
+    "lon": -99.15
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camacho_Solis,_Manuel",
+  "source_notes": "Zip Dobyns quotes B.C. obtained by her colleague Luis.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 29.053184,
+    "lagna": 179.053184,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.106271,
+    "jd_ut": 2431910.638889,
+    "planets": {
+      "Sun": {
+        "longitude": 346.708592,
+        "sign_index": 11,
+        "degree_in_sign": 16.708592,
+        "is_retrograde": false,
+        "speed": 0.98761
+      },
+      "Moon": {
+        "longitude": 318.568915,
+        "sign_index": 10,
+        "degree_in_sign": 18.568915,
+        "is_retrograde": false,
+        "speed": 18.850643
+      },
+      "Mars": {
+        "longitude": 88.032408,
+        "sign_index": 2,
+        "degree_in_sign": 28.032408,
+        "is_retrograde": false,
+        "speed": 0.334577
+      },
+      "Mercury": {
+        "longitude": 338.027156,
+        "sign_index": 11,
+        "degree_in_sign": 8.027156,
+        "is_retrograde": true,
+        "speed": -0.747656
+      },
+      "Jupiter": {
+        "longitude": 181.00312,
+        "sign_index": 6,
+        "degree_in_sign": 1.00312,
+        "is_retrograde": true,
+        "speed": -0.120665
+      },
+      "Venus": {
+        "longitude": 0.836258,
+        "sign_index": 0,
+        "degree_in_sign": 0.836258,
+        "is_retrograde": false,
+        "speed": 1.237428
+      },
+      "Saturn": {
+        "longitude": 84.955222,
+        "sign_index": 2,
+        "degree_in_sign": 24.955222,
+        "is_retrograde": false,
+        "speed": 0.0198
+      },
+      "Rahu": {
+        "longitude": 61.652236,
+        "sign_index": 2,
+        "degree_in_sign": 1.652236,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 241.652236,
+        "sign_index": 8,
+        "degree_in_sign": 1.652236,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

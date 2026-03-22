@@ -1,0 +1,108 @@
+{
+  "adb_id": 61840,
+  "name": "Christian I, Elector of Saxony",
+  "given_name": "Elector of Saxony Christian I",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2291149.618102,
+    "year": 1560,
+    "month": 10,
+    "day": 29,
+    "calendar": "j",
+    "time": "03:45",
+    "time_type": "l",
+    "hour": 3.75,
+    "time_unknown": false,
+    "place": "Dresden",
+    "country": "Germany",
+    "lat": 51.05,
+    "lon": 13.733333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian_I,_Elector_of_Saxony",
+  "source_notes": "Sy Scholfield quotes from \"Sächsische Merckwürdigkeiten Oder Vollständige Alte, Mittle und Neue Historie von Sachsen Und dem Durchlauchtigsten Chur und Fürstlichen Hause so dasselbe beherrschet\" by Johann Christoph Rüdiger (Weidmann, 1724), p. 837: \"Christianus der Erste ... kam an das Licht der Welt zu Dresden, am 29. Octobr. Dienstags nach Simonis Judae, vor 4. Uhr des Morgens, Anno 1560.\"\\n\\nTranslation: Christian the first ... came into light of the world at Dresden on 29 October 1560, the Tuesday after Simonis Judae, before 4 o'clock in the morning.\\n\\nNote: 29/10/1560 Old Style was a Tuesday.\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 4.062509,
+    "lagna": 154.062509,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.728738,
+    "jd_ut": 2291149.618102,
+    "planets": {
+      "Sun": {
+        "longitude": 207.991361,
+        "sign_index": 6,
+        "degree_in_sign": 27.991361,
+        "is_retrograde": false,
+        "speed": 1.00746
+      },
+      "Moon": {
+        "longitude": 331.937045,
+        "sign_index": 11,
+        "degree_in_sign": 1.937045,
+        "is_retrograde": false,
+        "speed": 13.32372
+      },
+      "Mars": {
+        "longitude": 174.026307,
+        "sign_index": 5,
+        "degree_in_sign": 24.026307,
+        "is_retrograde": false,
+        "speed": 0.640356
+      },
+      "Mercury": {
+        "longitude": 191.193623,
+        "sign_index": 6,
+        "degree_in_sign": 11.193623,
+        "is_retrograde": false,
+        "speed": 1.447896
+      },
+      "Jupiter": {
+        "longitude": 358.892084,
+        "sign_index": 11,
+        "degree_in_sign": 28.892084,
+        "is_retrograde": true,
+        "speed": -0.101443
+      },
+      "Venus": {
+        "longitude": 214.97106,
+        "sign_index": 7,
+        "degree_in_sign": 4.97106,
+        "is_retrograde": false,
+        "speed": 1.25457
+      },
+      "Saturn": {
+        "longitude": 62.029793,
+        "sign_index": 2,
+        "degree_in_sign": 2.029793,
+        "is_retrograde": true,
+        "speed": -0.06065
+      },
+      "Rahu": {
+        "longitude": 320.895074,
+        "sign_index": 10,
+        "degree_in_sign": 20.895074,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 140.895074,
+        "sign_index": 4,
+        "degree_in_sign": 20.895074,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

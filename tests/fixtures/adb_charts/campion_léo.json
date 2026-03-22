@@ -1,0 +1,109 @@
+{
+  "adb_id": 50739,
+  "name": "Campion, Léo",
+  "given_name": "Léo Campion",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416928.743507,
+    "year": 1905,
+    "month": 3,
+    "day": 24,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campion,_Léo",
+  "source_notes": "Steinbrecher collection: Lescaut quotes ca 16 for birth record\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 17.171668,
+    "lagna": 317.171668,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.53348,
+    "jd_ut": 2416928.743507,
+    "planets": {
+      "Sun": {
+        "longitude": 340.396291,
+        "sign_index": 11,
+        "degree_in_sign": 10.396291,
+        "is_retrograde": false,
+        "speed": 0.990533
+      },
+      "Moon": {
+        "longitude": 203.002602,
+        "sign_index": 6,
+        "degree_in_sign": 23.002602,
+        "is_retrograde": false,
+        "speed": 11.807657
+      },
+      "Mars": {
+        "longitude": 212.027804,
+        "sign_index": 7,
+        "degree_in_sign": 2.027804,
+        "is_retrograde": false,
+        "speed": 0.111347
+      },
+      "Mercury": {
+        "longitude": 353.934481,
+        "sign_index": 11,
+        "degree_in_sign": 23.934481,
+        "is_retrograde": false,
+        "speed": 1.851522
+      },
+      "Jupiter": {
+        "longitude": 11.000798,
+        "sign_index": 0,
+        "degree_in_sign": 11.000798,
+        "is_retrograde": false,
+        "speed": 0.222376
+      },
+      "Venus": {
+        "longitude": 19.141873,
+        "sign_index": 0,
+        "degree_in_sign": 19.141873,
+        "is_retrograde": false,
+        "speed": 0.442865
+      },
+      "Saturn": {
+        "longitude": 305.500113,
+        "sign_index": 10,
+        "degree_in_sign": 5.500113,
+        "is_retrograde": false,
+        "speed": 0.106234
+      },
+      "Rahu": {
+        "longitude": 135.574089,
+        "sign_index": 4,
+        "degree_in_sign": 15.574089,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 315.574089,
+        "sign_index": 10,
+        "degree_in_sign": 15.574089,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

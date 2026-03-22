@@ -1,0 +1,108 @@
+{
+  "adb_id": 65761,
+  "name": "Coupet, Grégory",
+  "given_name": "Grégory Coupet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441683.229167,
+    "year": 1972,
+    "month": 12,
+    "day": 31,
+    "calendar": "g",
+    "time": "18:30",
+    "time_type": "s",
+    "hour": 18.5,
+    "time_unknown": false,
+    "place": "Le Puy",
+    "country": "France",
+    "lat": 45.033333,
+    "lon": 3.883333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coupet,_Grégory",
+  "source_notes": "Didier Geslain archive, 'Foot et sports' pdf file, p. 68.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 9.941253,
+    "lagna": 69.941253,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.479954,
+    "jd_ut": 2441683.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 256.674982,
+        "sign_index": 8,
+        "degree_in_sign": 16.674982,
+        "is_retrograde": false,
+        "speed": 1.01958
+      },
+      "Moon": {
+        "longitude": 213.521864,
+        "sign_index": 7,
+        "degree_in_sign": 3.521864,
+        "is_retrograde": false,
+        "speed": 14.048264
+      },
+      "Mars": {
+        "longitude": 217.232329,
+        "sign_index": 7,
+        "degree_in_sign": 7.232329,
+        "is_retrograde": false,
+        "speed": 0.680289
+      },
+      "Mercury": {
+        "longitude": 240.740611,
+        "sign_index": 8,
+        "degree_in_sign": 0.740611,
+        "is_retrograde": false,
+        "speed": 1.470885
+      },
+      "Jupiter": {
+        "longitude": 264.269137,
+        "sign_index": 8,
+        "degree_in_sign": 24.269137,
+        "is_retrograde": false,
+        "speed": 0.232496
+      },
+      "Venus": {
+        "longitude": 232.674316,
+        "sign_index": 7,
+        "degree_in_sign": 22.674316,
+        "is_retrograde": false,
+        "speed": 1.249116
+      },
+      "Saturn": {
+        "longitude": 51.835407,
+        "sign_index": 1,
+        "degree_in_sign": 21.835407,
+        "is_retrograde": true,
+        "speed": -0.070682
+      },
+      "Rahu": {
+        "longitude": 263.782634,
+        "sign_index": 8,
+        "degree_in_sign": 23.782634,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 83.782634,
+        "sign_index": 2,
+        "degree_in_sign": 23.782634,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

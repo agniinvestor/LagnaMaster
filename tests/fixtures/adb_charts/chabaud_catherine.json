@@ -1,0 +1,110 @@
+{
+  "adb_id": 67990,
+  "name": "Chabaud, Catherine",
+  "given_name": "Catherine Chabaud",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437998.0,
+    "year": 1962,
+    "month": 11,
+    "day": 29,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Bron",
+    "country": "France",
+    "lat": 45.733333,
+    "lon": 4.916667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chabaud,_Catherine",
+  "source_notes": "Didier Geslain archive, 'navigateurs' pdf file, p. 12.\\n",
+  "categories": [
+    "Vocation : Sports : Sailing/ Boating",
+    "Vocation : Writers : Columnist/ journalist",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 11.069546,
+    "lagna": 281.069546,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.339034,
+    "jd_ut": 2437998.0,
+    "planets": {
+      "Sun": {
+        "longitude": 223.453918,
+        "sign_index": 7,
+        "degree_in_sign": 13.453918,
+        "is_retrograde": false,
+        "speed": 1.013321
+      },
+      "Moon": {
+        "longitude": 249.537841,
+        "sign_index": 8,
+        "degree_in_sign": 9.537841,
+        "is_retrograde": false,
+        "speed": 8.97517
+      },
+      "Mars": {
+        "longitude": 117.377141,
+        "sign_index": 3,
+        "degree_in_sign": 27.377141,
+        "is_retrograde": false,
+        "speed": 0.282577
+      },
+      "Mercury": {
+        "longitude": 225.747489,
+        "sign_index": 7,
+        "degree_in_sign": 15.747489,
+        "is_retrograde": false,
+        "speed": 1.56836
+      },
+      "Jupiter": {
+        "longitude": 311.078479,
+        "sign_index": 10,
+        "degree_in_sign": 11.078479,
+        "is_retrograde": false,
+        "speed": 0.099882
+      },
+      "Venus": {
+        "longitude": 199.203792,
+        "sign_index": 6,
+        "degree_in_sign": 19.203792,
+        "is_retrograde": true,
+        "speed": -0.163052
+      },
+      "Saturn": {
+        "longitude": 283.507635,
+        "sign_index": 9,
+        "degree_in_sign": 13.507635,
+        "is_retrograde": false,
+        "speed": 0.078055
+      },
+      "Rahu": {
+        "longitude": 99.070458,
+        "sign_index": 3,
+        "degree_in_sign": 9.070458,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 279.070458,
+        "sign_index": 9,
+        "degree_in_sign": 9.070458,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

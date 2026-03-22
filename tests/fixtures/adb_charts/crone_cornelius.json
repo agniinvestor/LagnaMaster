@@ -1,0 +1,108 @@
+{
+  "adb_id": 52112,
+  "name": "Crone, Cornelius",
+  "given_name": "Cornelius Crone",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420492.61838,
+    "year": 1914,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "03:10",
+    "time_type": "s",
+    "hour": 3.166667,
+    "time_unknown": false,
+    "place": "Utrecht",
+    "country": "Netherlands",
+    "lat": 52.1,
+    "lon": 5.116667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crone,_Cornelius",
+  "source_notes": "Ed Steinbrecher collection: Lescaut quotes birth record\\n",
+  "categories": [
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 20.527032,
+    "lagna": 170.527032,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.669725,
+    "jd_ut": 2420492.61838,
+    "planets": {
+      "Sun": {
+        "longitude": 250.82887,
+        "sign_index": 8,
+        "degree_in_sign": 10.82887,
+        "is_retrograde": false,
+        "speed": 1.01887
+      },
+      "Moon": {
+        "longitude": 359.461079,
+        "sign_index": 11,
+        "degree_in_sign": 29.461079,
+        "is_retrograde": false,
+        "speed": 13.341303
+      },
+      "Mars": {
+        "longitude": 250.319897,
+        "sign_index": 8,
+        "degree_in_sign": 10.319897,
+        "is_retrograde": false,
+        "speed": 0.757023
+      },
+      "Mercury": {
+        "longitude": 244.788937,
+        "sign_index": 8,
+        "degree_in_sign": 4.788937,
+        "is_retrograde": false,
+        "speed": 1.565828
+      },
+      "Jupiter": {
+        "longitude": 298.507873,
+        "sign_index": 9,
+        "degree_in_sign": 28.507873,
+        "is_retrograde": false,
+        "speed": 0.198662
+      },
+      "Venus": {
+        "longitude": 215.514795,
+        "sign_index": 7,
+        "degree_in_sign": 5.514795,
+        "is_retrograde": false,
+        "speed": 0.296206
+      },
+      "Saturn": {
+        "longitude": 65.792886,
+        "sign_index": 2,
+        "degree_in_sign": 5.792886,
+        "is_retrograde": true,
+        "speed": -0.082291
+      },
+      "Rahu": {
+        "longitude": 306.716876,
+        "sign_index": 10,
+        "degree_in_sign": 6.716876,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 126.716876,
+        "sign_index": 4,
+        "degree_in_sign": 6.716876,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

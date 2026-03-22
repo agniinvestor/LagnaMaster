@@ -1,0 +1,112 @@
+{
+  "adb_id": 848,
+  "name": "Cawthorne, Terence",
+  "given_name": "Terence Cawthorne",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416022.291667,
+    "year": 1902,
+    "month": 9,
+    "day": 29,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Aberdeen",
+    "country": "Scotland",
+    "lat": 57.166667,
+    "lon": -2.066667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "vir",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cawthorne,_Terence",
+  "source_notes": "Paul Wright collection, B.C.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Medical : Dentist/ Dental Tech",
+    "Vocation : Politics : Public office",
+    "Notable : Awards : Knighted"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 10.348432,
+    "lagna": 10.348432,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.498827,
+    "jd_ut": 2416022.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 163.185935,
+        "sign_index": 5,
+        "degree_in_sign": 13.185935,
+        "is_retrograde": false,
+        "speed": 0.983112
+      },
+      "Moon": {
+        "longitude": 139.397934,
+        "sign_index": 4,
+        "degree_in_sign": 19.397934,
+        "is_retrograde": false,
+        "speed": 15.473905
+      },
+      "Mars": {
+        "longitude": 113.138422,
+        "sign_index": 3,
+        "degree_in_sign": 23.138422,
+        "is_retrograde": false,
+        "speed": 0.608602
+      },
+      "Mercury": {
+        "longitude": 188.644146,
+        "sign_index": 6,
+        "degree_in_sign": 8.644146,
+        "is_retrograde": false,
+        "speed": 0.725667
+      },
+      "Jupiter": {
+        "longitude": 284.949149,
+        "sign_index": 9,
+        "degree_in_sign": 14.949149,
+        "is_retrograde": true,
+        "speed": -0.015572
+      },
+      "Venus": {
+        "longitude": 147.901012,
+        "sign_index": 4,
+        "degree_in_sign": 27.901012,
+        "is_retrograde": false,
+        "speed": 1.242551
+      },
+      "Saturn": {
+        "longitude": 268.693198,
+        "sign_index": 8,
+        "degree_in_sign": 28.693198,
+        "is_retrograde": false,
+        "speed": 0.005507
+      },
+      "Rahu": {
+        "longitude": 183.608881,
+        "sign_index": 6,
+        "degree_in_sign": 3.608881,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 3.608881,
+        "sign_index": 0,
+        "degree_in_sign": 3.608881,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

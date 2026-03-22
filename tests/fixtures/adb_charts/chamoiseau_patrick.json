@@ -1,0 +1,110 @@
+{
+  "adb_id": 55886,
+  "name": "Chamoiseau, Patrick",
+  "given_name": "Patrick Chamoiseau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434715.559028,
+    "year": 1953,
+    "month": 12,
+    "day": 3,
+    "calendar": "g",
+    "time": "21:25",
+    "time_type": "s",
+    "hour": 21.416667,
+    "time_unknown": false,
+    "place": "Fort-de-France",
+    "country": "Martinique",
+    "lat": 14.6,
+    "lon": -61.083333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamoiseau,_Patrick",
+  "source_notes": "Collection Didier Geslain (EC DG 2793)\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Sociologist",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 19.05905,
+    "lagna": 79.05905,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.21352,
+    "jd_ut": 2434715.559028,
+    "planets": {
+      "Sun": {
+        "longitude": 228.388949,
+        "sign_index": 7,
+        "degree_in_sign": 18.388949,
+        "is_retrograde": false,
+        "speed": 1.01496
+      },
+      "Moon": {
+        "longitude": 200.784732,
+        "sign_index": 6,
+        "degree_in_sign": 20.784732,
+        "is_retrograde": false,
+        "speed": 17.199472
+      },
+      "Mars": {
+        "longitude": 176.80708,
+        "sign_index": 5,
+        "degree_in_sign": 26.80708,
+        "is_retrograde": false,
+        "speed": 0.611484
+      },
+      "Mercury": {
+        "longitude": 208.326047,
+        "sign_index": 6,
+        "degree_in_sign": 28.326047,
+        "is_retrograde": false,
+        "speed": 1.154236
+      },
+      "Jupiter": {
+        "longitude": 59.481252,
+        "sign_index": 1,
+        "degree_in_sign": 29.481252,
+        "is_retrograde": true,
+        "speed": -0.131772
+      },
+      "Venus": {
+        "longitude": 214.741327,
+        "sign_index": 7,
+        "degree_in_sign": 4.741327,
+        "is_retrograde": false,
+        "speed": 1.256536
+      },
+      "Saturn": {
+        "longitude": 191.702819,
+        "sign_index": 6,
+        "degree_in_sign": 11.702819,
+        "is_retrograde": false,
+        "speed": 0.105089
+      },
+      "Rahu": {
+        "longitude": 273.01374,
+        "sign_index": 9,
+        "degree_in_sign": 3.01374,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 93.01374,
+        "sign_index": 3,
+        "degree_in_sign": 3.01374,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

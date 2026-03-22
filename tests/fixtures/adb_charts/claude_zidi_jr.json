@@ -1,0 +1,106 @@
+{
+  "adb_id": 105323,
+  "name": "Claude Zidi Jr",
+  "given_name": "Claude Zidi Jr",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444567.958333,
+    "year": 1980,
+    "month": 11,
+    "day": 24,
+    "calendar": "g",
+    "time": "unknown, 12:00 used",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 8",
+    "country": "France",
+    "lat": 48.877778,
+    "lon": 2.317778
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can/gem",
+    "asc_sign": ""
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claude_Zidi_Jr",
+  "source_notes": "Wikipedia.\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 4.911192,
+    "lagna": 244.911192,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.590269,
+    "jd_ut": 2444567.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 218.742508,
+        "sign_index": 7,
+        "degree_in_sign": 8.742508,
+        "is_retrograde": false,
+        "speed": 1.010998
+      },
+      "Moon": {
+        "longitude": 68.197948,
+        "sign_index": 2,
+        "degree_in_sign": 8.197948,
+        "is_retrograde": false,
+        "speed": 17.351704
+      },
+      "Mars": {
+        "longitude": 248.222254,
+        "sign_index": 8,
+        "degree_in_sign": 8.222254,
+        "is_retrograde": false,
+        "speed": 0.758689
+      },
+      "Mercury": {
+        "longitude": 200.029993,
+        "sign_index": 6,
+        "degree_in_sign": 20.029993,
+        "is_retrograde": false,
+        "speed": 1.300427
+      },
+      "Jupiter": {
+        "longitude": 161.443282,
+        "sign_index": 5,
+        "degree_in_sign": 11.443282,
+        "is_retrograde": false,
+        "speed": 0.158788
+      },
+      "Venus": {
+        "longitude": 186.896799,
+        "sign_index": 6,
+        "degree_in_sign": 6.896799,
+        "is_retrograde": false,
+        "speed": 1.23174
+      },
+      "Saturn": {
+        "longitude": 163.608166,
+        "sign_index": 5,
+        "degree_in_sign": 13.608166,
+        "is_retrograde": false,
+        "speed": 0.087636
+      },
+      "Rahu": {
+        "longitude": 110.914965,
+        "sign_index": 3,
+        "degree_in_sign": 20.914965,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 290.914965,
+        "sign_index": 9,
+        "degree_in_sign": 20.914965,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

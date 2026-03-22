@@ -1,0 +1,109 @@
+{
+  "adb_id": 55924,
+  "name": "Carrière, Jean",
+  "given_name": "Jean Carrière",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425465.416667,
+    "year": 1928,
+    "month": 8,
+    "day": 6,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "d",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Nîmes",
+    "country": "France",
+    "lat": 43.833333,
+    "lon": 4.35
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "ari",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrière,_Jean",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 74.\\n",
+  "categories": [
+    "Vocation : Writers : Fiction",
+    "Notable : Awards : Other Awards"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 19.004168,
+    "lagna": 349.004168,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.859843,
+    "jd_ut": 2425465.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 111.287342,
+        "sign_index": 3,
+        "degree_in_sign": 21.287342,
+        "is_retrograde": false,
+        "speed": 0.958157
+      },
+      "Moon": {
+        "longitude": 358.043639,
+        "sign_index": 11,
+        "degree_in_sign": 28.043639,
+        "is_retrograde": false,
+        "speed": 14.205129
+      },
+      "Mars": {
+        "longitude": 35.691248,
+        "sign_index": 1,
+        "degree_in_sign": 5.691248,
+        "is_retrograde": false,
+        "speed": 0.646557
+      },
+      "Mercury": {
+        "longitude": 101.255475,
+        "sign_index": 3,
+        "degree_in_sign": 11.255475,
+        "is_retrograde": false,
+        "speed": 2.003214
+      },
+      "Jupiter": {
+        "longitude": 16.671712,
+        "sign_index": 0,
+        "degree_in_sign": 16.671712,
+        "is_retrograde": false,
+        "speed": 0.074705
+      },
+      "Venus": {
+        "longitude": 121.312572,
+        "sign_index": 4,
+        "degree_in_sign": 1.312572,
+        "is_retrograde": false,
+        "speed": 1.233019
+      },
+      "Saturn": {
+        "longitude": 229.725052,
+        "sign_index": 7,
+        "degree_in_sign": 19.725052,
+        "is_retrograde": true,
+        "speed": -0.016205
+      },
+      "Rahu": {
+        "longitude": 43.197915,
+        "sign_index": 1,
+        "degree_in_sign": 13.197915,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 223.197915,
+        "sign_index": 7,
+        "degree_in_sign": 13.197915,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

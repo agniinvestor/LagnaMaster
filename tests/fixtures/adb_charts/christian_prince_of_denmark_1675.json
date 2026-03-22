@@ -1,0 +1,109 @@
+{
+  "adb_id": 61508,
+  "name": "Christian, Prince of Denmark (1675)",
+  "given_name": "Prince of Denmark (1675) Christian",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2332935.475463,
+    "year": 1675,
+    "month": 3,
+    "day": 26,
+    "calendar": "j",
+    "time": "00:15",
+    "time_type": "l",
+    "hour": 0.25,
+    "time_unknown": false,
+    "place": "Copenhagen",
+    "country": "Denmark",
+    "lat": 55.666667,
+    "lon": 12.583333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian,_Prince_of_Denmark_(1675)",
+  "source_notes": "Sy Scholfield quotes from the Danish book \"Genealogisk-historiske tabeller over de nordiske rigers kongeslægter\" by Johannes Peter Frederik Kønigsfeldt, Danske historiske forening, Copenhagen (B. Lunos bogtrykkeri, 1856), p. 68: \"Christian, f. 26 Marts 1675 paa Kjøbenhavns Slot ... „lidet efter Midnat eller Kl. 1 Qvart til Et Formidd.\"\\n\\nTranslation: Christian, b. 26 March 1675 at Copenhagen Castle ... 'a little after midnight, or a quarter before 1 o'clock.'\\n",
+  "categories": [
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 3.142008,
+    "lagna": 213.142008,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.324143,
+    "jd_ut": 2332935.475463,
+    "planets": {
+      "Sun": {
+        "longitude": 355.892995,
+        "sign_index": 11,
+        "degree_in_sign": 25.892995,
+        "is_retrograde": false,
+        "speed": 0.981326
+      },
+      "Moon": {
+        "longitude": 104.971211,
+        "sign_index": 3,
+        "degree_in_sign": 14.971211,
+        "is_retrograde": false,
+        "speed": 12.944461
+      },
+      "Mars": {
+        "longitude": 66.637769,
+        "sign_index": 2,
+        "degree_in_sign": 6.637769,
+        "is_retrograde": false,
+        "speed": 0.556703
+      },
+      "Mercury": {
+        "longitude": 12.372674,
+        "sign_index": 0,
+        "degree_in_sign": 12.372674,
+        "is_retrograde": false,
+        "speed": 0.242325
+      },
+      "Jupiter": {
+        "longitude": 240.267484,
+        "sign_index": 8,
+        "degree_in_sign": 0.267484,
+        "is_retrograde": false,
+        "speed": 0.001911
+      },
+      "Venus": {
+        "longitude": 310.410463,
+        "sign_index": 10,
+        "degree_in_sign": 10.410463,
+        "is_retrograde": false,
+        "speed": 0.860608
+      },
+      "Saturn": {
+        "longitude": 10.052283,
+        "sign_index": 0,
+        "degree_in_sign": 10.052283,
+        "is_retrograde": false,
+        "speed": 0.125607
+      },
+      "Rahu": {
+        "longitude": 266.56322,
+        "sign_index": 8,
+        "degree_in_sign": 26.56322,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 86.56322,
+        "sign_index": 2,
+        "degree_in_sign": 26.56322,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

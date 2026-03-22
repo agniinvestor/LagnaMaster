@@ -1,0 +1,108 @@
+{
+  "adb_id": 65611,
+  "name": "Camara, Zoumana",
+  "given_name": "Zoumana Camara",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443967.263889,
+    "year": 1979,
+    "month": 4,
+    "day": 3,
+    "calendar": "g",
+    "time": "20:20",
+    "time_type": "d",
+    "hour": 20.333333,
+    "time_unknown": false,
+    "place": "Colombes",
+    "country": "France",
+    "lat": 48.916667,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camara,_Zoumana",
+  "source_notes": "Didier Geslain archive, 'Foot autres professions' pdf file, p. 21.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 26.490827,
+    "lagna": 146.490827,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.567297,
+    "jd_ut": 2443967.263889,
+    "planets": {
+      "Sun": {
+        "longitude": 349.834535,
+        "sign_index": 11,
+        "degree_in_sign": 19.834535,
+        "is_retrograde": false,
+        "speed": 0.985612
+      },
+      "Moon": {
+        "longitude": 72.450117,
+        "sign_index": 2,
+        "degree_in_sign": 12.450117,
+        "is_retrograde": false,
+        "speed": 8.650938
+      },
+      "Mars": {
+        "longitude": 333.874531,
+        "sign_index": 11,
+        "degree_in_sign": 3.874531,
+        "is_retrograde": false,
+        "speed": 0.78028
+      },
+      "Mercury": {
+        "longitude": 332.715474,
+        "sign_index": 11,
+        "degree_in_sign": 2.715474,
+        "is_retrograde": true,
+        "speed": -0.320838
+      },
+      "Jupiter": {
+        "longitude": 95.561506,
+        "sign_index": 3,
+        "degree_in_sign": 5.561506,
+        "is_retrograde": false,
+        "speed": 0.027759
+      },
+      "Venus": {
+        "longitude": 313.150279,
+        "sign_index": 10,
+        "degree_in_sign": 13.150279,
+        "is_retrograde": false,
+        "speed": 1.195197
+      },
+      "Saturn": {
+        "longitude": 134.589927,
+        "sign_index": 4,
+        "degree_in_sign": 14.589927,
+        "is_retrograde": true,
+        "speed": -0.057441
+      },
+      "Rahu": {
+        "longitude": 142.746984,
+        "sign_index": 4,
+        "degree_in_sign": 22.746984,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 322.746984,
+        "sign_index": 10,
+        "degree_in_sign": 22.746984,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

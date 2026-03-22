@@ -1,0 +1,111 @@
+{
+  "adb_id": 99978,
+  "name": "Cole, Dick",
+  "given_name": "Dick Cole",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424642.083333,
+    "year": 1926,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Long Beach",
+    "country": "California",
+    "lat": 33.766667,
+    "lon": -118.183333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cole,_Dick",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Body : Handedness",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Sports : Baseball",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 16.471905,
+    "lagna": 16.471905,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.828365,
+    "jd_ut": 2424642.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 22.453186,
+        "sign_index": 0,
+        "degree_in_sign": 22.453186,
+        "is_retrograde": false,
+        "speed": 0.967988
+      },
+      "Moon": {
+        "longitude": 311.639521,
+        "sign_index": 10,
+        "degree_in_sign": 11.639521,
+        "is_retrograde": false,
+        "speed": 9.722312
+      },
+      "Mars": {
+        "longitude": 309.248369,
+        "sign_index": 10,
+        "degree_in_sign": 9.248369,
+        "is_retrograde": false,
+        "speed": 0.720787
+      },
+      "Mercury": {
+        "longitude": 357.14017,
+        "sign_index": 11,
+        "degree_in_sign": 27.14017,
+        "is_retrograde": false,
+        "speed": 1.334776
+      },
+      "Jupiter": {
+        "longitude": 301.808501,
+        "sign_index": 10,
+        "degree_in_sign": 1.808501,
+        "is_retrograde": false,
+        "speed": 0.11892
+      },
+      "Venus": {
+        "longitude": 337.122525,
+        "sign_index": 11,
+        "degree_in_sign": 7.122525,
+        "is_retrograde": false,
+        "speed": 1.064819
+      },
+      "Saturn": {
+        "longitude": 210.536566,
+        "sign_index": 7,
+        "degree_in_sign": 0.536566,
+        "is_retrograde": true,
+        "speed": -0.073858
+      },
+      "Rahu": {
+        "longitude": 86.828062,
+        "sign_index": 2,
+        "degree_in_sign": 26.828062,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 266.828062,
+        "sign_index": 8,
+        "degree_in_sign": 26.828062,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 37357,
+  "name": "Cuminal, Jean",
+  "given_name": "Jean Cuminal",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423511.541667,
+    "year": 1923,
+    "month": 4,
+    "day": 2,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Amiens",
+    "country": "France",
+    "lat": 49.9,
+    "lon": 2.3
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuminal,_Jean",
+  "source_notes": "Petitallot quotes B.C., Cadran No.35, 11/1996\\n",
+  "categories": [
+    "Passions : Sexuality : Celibacy/ Minimal",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 10.530242,
+    "lagna": 220.530242,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.785142,
+    "jd_ut": 2423511.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 348.491381,
+        "sign_index": 11,
+        "degree_in_sign": 18.491381,
+        "is_retrograde": false,
+        "speed": 0.985825
+      },
+      "Moon": {
+        "longitude": 175.747752,
+        "sign_index": 5,
+        "degree_in_sign": 25.747752,
+        "is_retrograde": false,
+        "speed": 11.524596
+      },
+      "Mars": {
+        "longitude": 27.542812,
+        "sign_index": 0,
+        "degree_in_sign": 27.542812,
+        "is_retrograde": false,
+        "speed": 0.691303
+      },
+      "Mercury": {
+        "longitude": 341.597841,
+        "sign_index": 11,
+        "degree_in_sign": 11.597841,
+        "is_retrograde": false,
+        "speed": 1.942798
+      },
+      "Jupiter": {
+        "longitude": 205.019754,
+        "sign_index": 6,
+        "degree_in_sign": 25.019754,
+        "is_retrograde": true,
+        "speed": -0.080456
+      },
+      "Venus": {
+        "longitude": 308.180535,
+        "sign_index": 10,
+        "degree_in_sign": 8.180535,
+        "is_retrograde": false,
+        "speed": 1.173326
+      },
+      "Saturn": {
+        "longitude": 174.424804,
+        "sign_index": 5,
+        "degree_in_sign": 24.424804,
+        "is_retrograde": true,
+        "speed": -0.076664
+      },
+      "Rahu": {
+        "longitude": 146.737821,
+        "sign_index": 4,
+        "degree_in_sign": 26.737821,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 326.737821,
+        "sign_index": 10,
+        "degree_in_sign": 26.737821,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

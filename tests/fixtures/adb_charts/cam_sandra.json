@@ -1,0 +1,109 @@
+{
+  "adb_id": 47735,
+  "name": "Cam, Sandra",
+  "given_name": "Sandra Cam",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441498.934028,
+    "year": 1972,
+    "month": 6,
+    "day": 30,
+    "calendar": "g",
+    "time": "11:25",
+    "time_type": "s",
+    "hour": 11.416667,
+    "time_unknown": false,
+    "place": "Seraing",
+    "country": "Belgium",
+    "lat": 50.6,
+    "lon": 5.483333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cam,_Sandra",
+  "source_notes": "DATAsophia  quotes B.C., Autumn 1996\\n",
+  "categories": [
+    "Vocation : Sports : Swimming",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.145919,
+    "lagna": 126.145919,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.472907,
+    "jd_ut": 2441498.934028,
+    "planets": {
+      "Sun": {
+        "longitude": 75.234887,
+        "sign_index": 2,
+        "degree_in_sign": 15.234887,
+        "is_retrograde": false,
+        "speed": 0.953088
+      },
+      "Moon": {
+        "longitude": 297.603613,
+        "sign_index": 9,
+        "degree_in_sign": 27.603613,
+        "is_retrograde": false,
+        "speed": 14.929619
+      },
+      "Mars": {
+        "longitude": 97.638215,
+        "sign_index": 3,
+        "degree_in_sign": 7.638215,
+        "is_retrograde": false,
+        "speed": 0.63317
+      },
+      "Mercury": {
+        "longitude": 99.049,
+        "sign_index": 3,
+        "degree_in_sign": 9.049,
+        "is_retrograde": false,
+        "speed": 1.424388
+      },
+      "Jupiter": {
+        "longitude": 249.259374,
+        "sign_index": 8,
+        "degree_in_sign": 9.259374,
+        "is_retrograde": true,
+        "speed": -0.12678
+      },
+      "Venus": {
+        "longitude": 56.265051,
+        "sign_index": 1,
+        "degree_in_sign": 26.265051,
+        "is_retrograde": true,
+        "speed": -0.34626
+      },
+      "Saturn": {
+        "longitude": 50.31223,
+        "sign_index": 1,
+        "degree_in_sign": 20.31223,
+        "is_retrograde": false,
+        "speed": 0.122072
+      },
+      "Rahu": {
+        "longitude": 273.548809,
+        "sign_index": 9,
+        "degree_in_sign": 3.548809,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 93.548809,
+        "sign_index": 3,
+        "degree_in_sign": 3.548809,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 50807,
+  "name": "Canova, Gilbert",
+  "given_name": "Gilbert Canova",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425963.017361,
+    "year": 1929,
+    "month": 12,
+    "day": 17,
+    "calendar": "g",
+    "time": "13:25",
+    "time_type": "s",
+    "hour": 13.416667,
+    "time_unknown": false,
+    "place": "Geneva",
+    "country": "Switzerland",
+    "lat": 46.2,
+    "lon": 6.15
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canova,_Gilbert",
+  "source_notes": "Steinbrecher collection: Lescaut quotes birth record\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 0.079624,
+    "lagna": 330.079624,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.878868,
+    "jd_ut": 2425963.017361,
+    "planets": {
+      "Sun": {
+        "longitude": 242.226576,
+        "sign_index": 8,
+        "degree_in_sign": 2.226576,
+        "is_retrograde": false,
+        "speed": 1.017463
+      },
+      "Moon": {
+        "longitude": 76.864254,
+        "sign_index": 2,
+        "degree_in_sign": 16.864254,
+        "is_retrograde": false,
+        "speed": 19.527041
+      },
+      "Mars": {
+        "longitude": 238.228361,
+        "sign_index": 7,
+        "degree_in_sign": 28.228361,
+        "is_retrograde": false,
+        "speed": 0.74075
+      },
+      "Mercury": {
+        "longitude": 253.259613,
+        "sign_index": 8,
+        "degree_in_sign": 13.259613,
+        "is_retrograde": false,
+        "speed": 1.570581
+      },
+      "Jupiter": {
+        "longitude": 46.644146,
+        "sign_index": 1,
+        "degree_in_sign": 16.644146,
+        "is_retrograde": true,
+        "speed": -0.126404
+      },
+      "Venus": {
+        "longitude": 229.971181,
+        "sign_index": 7,
+        "degree_in_sign": 19.971181,
+        "is_retrograde": false,
+        "speed": 1.257056
+      },
+      "Saturn": {
+        "longitude": 249.125612,
+        "sign_index": 8,
+        "degree_in_sign": 9.125612,
+        "is_retrograde": false,
+        "speed": 0.117615
+      },
+      "Rahu": {
+        "longitude": 16.829019,
+        "sign_index": 0,
+        "degree_in_sign": 16.829019,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 196.829019,
+        "sign_index": 6,
+        "degree_in_sign": 16.829019,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

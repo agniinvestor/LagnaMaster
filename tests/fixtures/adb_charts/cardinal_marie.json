@@ -1,0 +1,114 @@
+{
+  "adb_id": 37077,
+  "name": "Cardinal, Marie",
+  "given_name": "Marie Cardinal",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425315.458333,
+    "year": 1928,
+    "month": 3,
+    "day": 9,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Algiers",
+    "country": "Algeria",
+    "lat": 36.783333,
+    "lon": 3.05
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardinal,_Marie",
+  "source_notes": "Petitallot quotes B.C., Cadran No.19, 5/1995 (specified as 1928 and not 1929 as given in Who's Who.)\\n",
+  "categories": [
+    "Family : Childhood : Sibling circumstances",
+    "Family : Parenting : Kids 1-3",
+    "Family : Parenting : Kids - Noted",
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Vocation : Writers : Translator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 7.550297,
+    "lagna": 187.550297,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.85411,
+    "jd_ut": 2425315.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 326.289187,
+        "sign_index": 10,
+        "degree_in_sign": 26.289187,
+        "is_retrograde": false,
+        "speed": 0.998497
+      },
+      "Moon": {
+        "longitude": 186.154572,
+        "sign_index": 6,
+        "degree_in_sign": 6.154572,
+        "is_retrograde": false,
+        "speed": 9.56853
+      },
+      "Mars": {
+        "longitude": 285.259114,
+        "sign_index": 9,
+        "degree_in_sign": 15.259114,
+        "is_retrograde": false,
+        "speed": 0.760748
+      },
+      "Mercury": {
+        "longitude": 303.287712,
+        "sign_index": 10,
+        "degree_in_sign": 3.287712,
+        "is_retrograde": false,
+        "speed": 0.128346
+      },
+      "Jupiter": {
+        "longitude": 347.078801,
+        "sign_index": 11,
+        "degree_in_sign": 17.078801,
+        "is_retrograde": false,
+        "speed": 0.234254
+      },
+      "Venus": {
+        "longitude": 297.102287,
+        "sign_index": 9,
+        "degree_in_sign": 27.102287,
+        "is_retrograde": false,
+        "speed": 1.227022
+      },
+      "Saturn": {
+        "longitude": 235.983436,
+        "sign_index": 7,
+        "degree_in_sign": 25.983436,
+        "is_retrograde": false,
+        "speed": 0.031345
+      },
+      "Rahu": {
+        "longitude": 51.144519,
+        "sign_index": 1,
+        "degree_in_sign": 21.144519,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 231.144519,
+        "sign_index": 7,
+        "degree_in_sign": 21.144519,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 84056,
+  "name": "Carswell, Horace S. Jr.",
+  "given_name": "Horace S. Jr. Carswell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421063.1875,
+    "year": 1916,
+    "month": 7,
+    "day": 18,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "s",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Fort Worth",
+    "country": "Texas",
+    "lat": 32.733333,
+    "lon": -97.316667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carswell,_Horace_S._Jr.",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Killed",
+    "Vocation : Military : Military service",
+    "Vocation : Travel : Pilot/ military"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 11.484692,
+    "lagna": 131.484692,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.691538,
+    "jd_ut": 2421063.1875,
+    "planets": {
+      "Sun": {
+        "longitude": 92.975027,
+        "sign_index": 3,
+        "degree_in_sign": 2.975027,
+        "is_retrograde": false,
+        "speed": 0.953941
+      },
+      "Moon": {
+        "longitude": 320.564974,
+        "sign_index": 10,
+        "degree_in_sign": 20.564974,
+        "is_retrograde": false,
+        "speed": 15.430762
+      },
+      "Mars": {
+        "longitude": 154.618483,
+        "sign_index": 5,
+        "degree_in_sign": 4.618483,
+        "is_retrograde": false,
+        "speed": 0.588121
+      },
+      "Mercury": {
+        "longitude": 81.877869,
+        "sign_index": 2,
+        "degree_in_sign": 21.877869,
+        "is_retrograde": false,
+        "speed": 2.014687
+      },
+      "Jupiter": {
+        "longitude": 10.472537,
+        "sign_index": 0,
+        "degree_in_sign": 10.472537,
+        "is_retrograde": false,
+        "speed": 0.113672
+      },
+      "Venus": {
+        "longitude": 71.42014,
+        "sign_index": 2,
+        "degree_in_sign": 11.42014,
+        "is_retrograde": true,
+        "speed": -0.268879
+      },
+      "Saturn": {
+        "longitude": 88.171796,
+        "sign_index": 2,
+        "degree_in_sign": 28.171796,
+        "is_retrograde": false,
+        "speed": 0.129518
+      },
+      "Rahu": {
+        "longitude": 276.481224,
+        "sign_index": 9,
+        "degree_in_sign": 6.481224,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 96.481224,
+        "sign_index": 3,
+        "degree_in_sign": 6.481224,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

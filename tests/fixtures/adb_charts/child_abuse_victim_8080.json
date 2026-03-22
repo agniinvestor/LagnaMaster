@@ -1,0 +1,112 @@
+{
+  "adb_id": 8080,
+  "name": "Child Abuse Victim 8080",
+  "given_name": "Child Abuse Victim 8080",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2428867.845833,
+    "year": 1937,
+    "month": 11,
+    "day": 30,
+    "calendar": "g",
+    "time": "02:18",
+    "time_type": "s",
+    "hour": 2.3,
+    "time_unknown": false,
+    "place": "Chicago",
+    "country": "Illinois",
+    "lat": 41.85,
+    "lon": -87.65
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Child_Abuse_Victim_8080",
+  "source_notes": "E.H. Wolman in \"Aspects,\" Winter 1987, client\\n",
+  "categories": [
+    "Family : Childhood : Abuse - Physical/ Verbal",
+    "Family : Childhood : Family traumatic event",
+    "Family : Childhood : Memories Bad",
+    "Family : Childhood : Sibling circumstances",
+    "Passions : Sexuality : Gay"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 26.281302,
+    "lagna": 146.281302,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.98993,
+    "jd_ut": 2428867.845833,
+    "planets": {
+      "Sun": {
+        "longitude": 224.725774,
+        "sign_index": 7,
+        "degree_in_sign": 14.725774,
+        "is_retrograde": false,
+        "speed": 1.013841
+      },
+      "Moon": {
+        "longitude": 197.0553,
+        "sign_index": 6,
+        "degree_in_sign": 17.0553,
+        "is_retrograde": false,
+        "speed": 13.715794
+      },
+      "Mars": {
+        "longitude": 290.850345,
+        "sign_index": 9,
+        "degree_in_sign": 20.850345,
+        "is_retrograde": false,
+        "speed": 0.751383
+      },
+      "Mercury": {
+        "longitude": 241.833661,
+        "sign_index": 8,
+        "degree_in_sign": 1.833661,
+        "is_retrograde": false,
+        "speed": 1.443809
+      },
+      "Jupiter": {
+        "longitude": 272.911038,
+        "sign_index": 9,
+        "degree_in_sign": 2.911038,
+        "is_retrograde": false,
+        "speed": 0.193527
+      },
+      "Venus": {
+        "longitude": 208.95789,
+        "sign_index": 6,
+        "degree_in_sign": 28.95789,
+        "is_retrograde": false,
+        "speed": 1.255286
+      },
+      "Saturn": {
+        "longitude": 335.358622,
+        "sign_index": 11,
+        "degree_in_sign": 5.358622,
+        "is_retrograde": true,
+        "speed": -0.00298
+      },
+      "Rahu": {
+        "longitude": 222.896132,
+        "sign_index": 7,
+        "degree_in_sign": 12.896132,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 42.896132,
+        "sign_index": 1,
+        "degree_in_sign": 12.896132,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

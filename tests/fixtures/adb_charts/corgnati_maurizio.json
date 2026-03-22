@@ -1,0 +1,108 @@
+{
+  "adb_id": 5080,
+  "name": "Corgnati, Maurizio",
+  "given_name": "Maurizio Corgnati",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421442.371528,
+    "year": 1917,
+    "month": 8,
+    "day": 1,
+    "calendar": "g",
+    "time": "22:55",
+    "time_type": "d",
+    "hour": 22.916667,
+    "time_unknown": false,
+    "place": "Avigliana",
+    "country": "Italy",
+    "lat": 45.083333,
+    "lon": 7.383333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corgnati,_Maurizio",
+  "source_notes": "Bordoni quotes B.C. Vol 4\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 16.555439,
+    "lagna": 316.555439,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.706035,
+    "jd_ut": 2421442.371528,
+    "planets": {
+      "Sun": {
+        "longitude": 106.281348,
+        "sign_index": 3,
+        "degree_in_sign": 16.281348,
+        "is_retrograde": false,
+        "speed": 0.95656
+      },
+      "Moon": {
+        "longitude": 267.512405,
+        "sign_index": 8,
+        "degree_in_sign": 27.512405,
+        "is_retrograde": false,
+        "speed": 10.64219
+      },
+      "Mars": {
+        "longitude": 70.438009,
+        "sign_index": 2,
+        "degree_in_sign": 10.438009,
+        "is_retrograde": false,
+        "speed": 0.666947
+      },
+      "Mercury": {
+        "longitude": 125.754008,
+        "sign_index": 4,
+        "degree_in_sign": 5.754008,
+        "is_retrograde": false,
+        "speed": 1.643521
+      },
+      "Jupiter": {
+        "longitude": 43.485811,
+        "sign_index": 1,
+        "degree_in_sign": 13.485811,
+        "is_retrograde": false,
+        "speed": 0.162264
+      },
+      "Venus": {
+        "longitude": 132.304066,
+        "sign_index": 4,
+        "degree_in_sign": 12.304066,
+        "is_retrograde": false,
+        "speed": 1.214253
+      },
+      "Saturn": {
+        "longitude": 102.129048,
+        "sign_index": 3,
+        "degree_in_sign": 12.129048,
+        "is_retrograde": false,
+        "speed": 0.128872
+      },
+      "Rahu": {
+        "longitude": 256.387468,
+        "sign_index": 8,
+        "degree_in_sign": 16.387468,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 76.387468,
+        "sign_index": 2,
+        "degree_in_sign": 16.387468,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

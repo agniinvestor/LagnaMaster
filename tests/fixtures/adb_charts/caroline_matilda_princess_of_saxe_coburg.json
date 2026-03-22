@@ -1,0 +1,109 @@
+{
+  "adb_id": 79174,
+  "name": "Caroline Matilda, Princess of Saxe-Coburg",
+  "given_name": "Princess of Saxe-Coburg Caroline Matilda",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2419575.548611,
+    "year": 1912,
+    "month": 6,
+    "day": 22,
+    "calendar": "g",
+    "time": "02:10",
+    "time_type": "s",
+    "hour": 2.166667,
+    "time_unknown": false,
+    "place": "Coburg",
+    "country": "Germany",
+    "lat": 50.25,
+    "lon": 10.966667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caroline_Matilda,_Princess_of_Saxe-Coburg",
+  "source_notes": "Sy Scholfield forwarded news report from \"Berliner Börsenzeitung,\" 22 June 1912: \"Herzogin Viktoria Adelheid von Sachsen-Koburg-Gotha ist heute morgen 2 Uhr 10 Minuten auf Schloss Callenberg von einer Tochter glücklich entbunden worden.\" (Duchess Viktoria Adelheid of Saxe-Coburg-Gotha was happily delivered of a daughter at Callenberg Castle this morning at 2.10 am).\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 9.987388,
+    "lagna": 9.987388,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.634665,
+    "jd_ut": 2419575.548611,
+    "planets": {
+      "Sun": {
+        "longitude": 67.600688,
+        "sign_index": 2,
+        "degree_in_sign": 7.600688,
+        "is_retrograde": false,
+        "speed": 0.953864
+      },
+      "Moon": {
+        "longitude": 159.761107,
+        "sign_index": 5,
+        "degree_in_sign": 9.761107,
+        "is_retrograde": false,
+        "speed": 15.023729
+      },
+      "Mars": {
+        "longitude": 112.086507,
+        "sign_index": 3,
+        "degree_in_sign": 22.086507,
+        "is_retrograde": false,
+        "speed": 0.602916
+      },
+      "Mercury": {
+        "longitude": 73.154647,
+        "sign_index": 2,
+        "degree_in_sign": 13.154647,
+        "is_retrograde": false,
+        "speed": 2.140909
+      },
+      "Jupiter": {
+        "longitude": 225.391087,
+        "sign_index": 7,
+        "degree_in_sign": 15.391087,
+        "is_retrograde": true,
+        "speed": -0.109721
+      },
+      "Venus": {
+        "longitude": 63.733036,
+        "sign_index": 2,
+        "degree_in_sign": 3.733036,
+        "is_retrograde": false,
+        "speed": 1.227548
+      },
+      "Saturn": {
+        "longitude": 35.681996,
+        "sign_index": 1,
+        "degree_in_sign": 5.681996,
+        "is_retrograde": false,
+        "speed": 0.116448
+      },
+      "Rahu": {
+        "longitude": 355.314326,
+        "sign_index": 11,
+        "degree_in_sign": 25.314326,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 175.314326,
+        "sign_index": 5,
+        "degree_in_sign": 25.314326,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

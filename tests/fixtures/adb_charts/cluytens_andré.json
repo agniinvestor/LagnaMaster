@@ -1,0 +1,109 @@
+{
+  "adb_id": 50796,
+  "name": "Cluytens, André",
+  "given_name": "André Cluytens",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416931.395833,
+    "year": 1905,
+    "month": 3,
+    "day": 26,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "s",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Antwerp",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 4.416667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cluytens,_André",
+  "source_notes": "Steinbrecher collection: Lesc quotes De Marre for birth record\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 27.567996,
+    "lagna": 177.567996,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.533581,
+    "jd_ut": 2416931.395833,
+    "planets": {
+      "Sun": {
+        "longitude": 343.021768,
+        "sign_index": 11,
+        "degree_in_sign": 13.021768,
+        "is_retrograde": false,
+        "speed": 0.989229
+      },
+      "Moon": {
+        "longitude": 241.263983,
+        "sign_index": 8,
+        "degree_in_sign": 1.263983,
+        "is_retrograde": false,
+        "speed": 14.907586
+      },
+      "Mars": {
+        "longitude": 212.28502,
+        "sign_index": 7,
+        "degree_in_sign": 2.28502,
+        "is_retrograde": false,
+        "speed": 0.082363
+      },
+      "Mercury": {
+        "longitude": 358.674531,
+        "sign_index": 11,
+        "degree_in_sign": 28.674531,
+        "is_retrograde": false,
+        "speed": 1.714436
+      },
+      "Jupiter": {
+        "longitude": 11.593518,
+        "sign_index": 0,
+        "degree_in_sign": 11.593518,
+        "is_retrograde": false,
+        "speed": 0.224543
+      },
+      "Venus": {
+        "longitude": 20.215076,
+        "sign_index": 0,
+        "degree_in_sign": 20.215076,
+        "is_retrograde": false,
+        "speed": 0.36525
+      },
+      "Saturn": {
+        "longitude": 305.779315,
+        "sign_index": 10,
+        "degree_in_sign": 5.779315,
+        "is_retrograde": false,
+        "speed": 0.104278
+      },
+      "Rahu": {
+        "longitude": 135.433537,
+        "sign_index": 4,
+        "degree_in_sign": 15.433537,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 315.433537,
+        "sign_index": 10,
+        "degree_in_sign": 15.433537,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

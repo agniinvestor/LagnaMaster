@@ -1,0 +1,111 @@
+{
+  "adb_id": 82708,
+  "name": "Corfe, Robert",
+  "given_name": "Robert Corfe",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2428038.145833,
+    "year": 1935,
+    "month": 8,
+    "day": 23,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "d",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corfe,_Robert",
+  "source_notes": "Sy Scholfield quotes from ''This Was My England'' by Robert Corfe (Arena books, 2011), p. 2: \"I was born at approximately 4.30 pm in the middle of a thunderstorm at 27 Welbeck Street, some ten minutes walk from Oxford Circus, on 23rd August 1935.\"\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Philosopher",
+    "Vocation : Humanities+Social Sciences : Political Science",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 5.596229,
+    "lagna": 215.596229,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.958207,
+    "jd_ut": 2428038.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 126.599152,
+        "sign_index": 4,
+        "degree_in_sign": 6.599152,
+        "is_retrograde": false,
+        "speed": 0.964079
+      },
+      "Moon": {
+        "longitude": 66.096472,
+        "sign_index": 2,
+        "degree_in_sign": 6.096472,
+        "is_retrograde": false,
+        "speed": 14.056729
+      },
+      "Mars": {
+        "longitude": 201.556842,
+        "sign_index": 6,
+        "degree_in_sign": 21.556842,
+        "is_retrograde": false,
+        "speed": 0.618905
+      },
+      "Mercury": {
+        "longitude": 139.46175,
+        "sign_index": 4,
+        "degree_in_sign": 19.46175,
+        "is_retrograde": false,
+        "speed": 1.75272
+      },
+      "Jupiter": {
+        "longitude": 203.09364,
+        "sign_index": 6,
+        "degree_in_sign": 23.09364,
+        "is_retrograde": false,
+        "speed": 0.116884
+      },
+      "Venus": {
+        "longitude": 149.198979,
+        "sign_index": 4,
+        "degree_in_sign": 29.198979,
+        "is_retrograde": true,
+        "speed": -0.218631
+      },
+      "Saturn": {
+        "longitude": 314.442873,
+        "sign_index": 10,
+        "degree_in_sign": 14.442873,
+        "is_retrograde": true,
+        "speed": -0.075019
+      },
+      "Rahu": {
+        "longitude": 266.863654,
+        "sign_index": 8,
+        "degree_in_sign": 26.863654,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 86.863654,
+        "sign_index": 2,
+        "degree_in_sign": 26.863654,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 87677,
+  "name": "Cook, Linda",
+  "given_name": "Linda Cook",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432710.9375,
+    "year": 1948,
+    "month": 6,
+    "day": 8,
+    "calendar": "g",
+    "time": "04:30",
+    "time_type": "s",
+    "hour": 4.5,
+    "time_unknown": false,
+    "place": "Lubbock",
+    "country": "Texas",
+    "lat": 33.583333,
+    "lon": -101.85
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cook,_Linda",
+  "source_notes": "Sy Scholfield provided birth report, Lubbock Avalanche-Journal (Lubbock, Texas), 9 June 1948, p. 10. Full name from Texas Birth Index. \\n",
+  "categories": [
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Vocation : Entertainment : Voice-Over"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 12.183961,
+    "lagna": 12.183961,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.136871,
+    "jd_ut": 2432710.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 54.38489,
+        "sign_index": 1,
+        "degree_in_sign": 24.38489,
+        "is_retrograde": false,
+        "speed": 0.956575
+      },
+      "Moon": {
+        "longitude": 66.843608,
+        "sign_index": 2,
+        "degree_in_sign": 6.843608,
+        "is_retrograde": false,
+        "speed": 18.055393
+      },
+      "Mars": {
+        "longitude": 136.074845,
+        "sign_index": 4,
+        "degree_in_sign": 16.074845,
+        "is_retrograde": false,
+        "speed": 0.484807
+      },
+      "Mercury": {
+        "longitude": 73.787945,
+        "sign_index": 2,
+        "degree_in_sign": 13.787945,
+        "is_retrograde": false,
+        "speed": 0.230675
+      },
+      "Jupiter": {
+        "longitude": 241.803203,
+        "sign_index": 8,
+        "degree_in_sign": 1.803203,
+        "is_retrograde": true,
+        "speed": -0.125579
+      },
+      "Venus": {
+        "longitude": 77.450908,
+        "sign_index": 2,
+        "degree_in_sign": 17.450908,
+        "is_retrograde": true,
+        "speed": -0.212579
+      },
+      "Saturn": {
+        "longitude": 114.925576,
+        "sign_index": 3,
+        "degree_in_sign": 24.925576,
+        "is_retrograde": false,
+        "speed": 0.082925
+      },
+      "Rahu": {
+        "longitude": 19.242762,
+        "sign_index": 0,
+        "degree_in_sign": 19.242762,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 199.242762,
+        "sign_index": 6,
+        "degree_in_sign": 19.242762,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

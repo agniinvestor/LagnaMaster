@@ -1,0 +1,110 @@
+{
+  "adb_id": 50774,
+  "name": "Chiari, Walter",
+  "given_name": "Walter Chiari",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2423853.138889,
+    "year": 1924,
+    "month": 3,
+    "day": 8,
+    "calendar": "g",
+    "time": "16:20",
+    "time_type": "s",
+    "hour": 16.333333,
+    "time_unknown": false,
+    "place": "Verona",
+    "country": "Italy",
+    "lat": 45.45,
+    "lon": 11.0
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiari,_Walter",
+  "source_notes": "Ed Steinbrecher collection: Grazia Bordoni/6 quotes him; (gads & discepolo have 4:30 PM).\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 12.054672,
+    "lagna": 102.054672,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.798202,
+    "jd_ut": 2423853.138889,
+    "planets": {
+      "Sun": {
+        "longitude": 325.00247,
+        "sign_index": 10,
+        "degree_in_sign": 25.00247,
+        "is_retrograde": false,
+        "speed": 0.999729
+      },
+      "Moon": {
+        "longitude": 358.971881,
+        "sign_index": 11,
+        "degree_in_sign": 28.971881,
+        "is_retrograde": false,
+        "speed": 8.89651
+      },
+      "Mars": {
+        "longitude": 248.368891,
+        "sign_index": 8,
+        "degree_in_sign": 8.368891,
+        "is_retrograde": false,
+        "speed": 0.630699
+      },
+      "Mercury": {
+        "longitude": 312.987545,
+        "sign_index": 10,
+        "degree_in_sign": 12.987545,
+        "is_retrograde": false,
+        "speed": 1.735644
+      },
+      "Jupiter": {
+        "longitude": 235.870249,
+        "sign_index": 7,
+        "degree_in_sign": 25.870249,
+        "is_retrograde": false,
+        "speed": 0.084798
+      },
+      "Venus": {
+        "longitude": 6.208305,
+        "sign_index": 0,
+        "degree_in_sign": 6.208305,
+        "is_retrograde": false,
+        "speed": 1.161877
+      },
+      "Saturn": {
+        "longitude": 188.942497,
+        "sign_index": 6,
+        "degree_in_sign": 8.942497,
+        "is_retrograde": true,
+        "speed": -0.043711
+      },
+      "Rahu": {
+        "longitude": 128.635872,
+        "sign_index": 4,
+        "degree_in_sign": 8.635872,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 308.635872,
+        "sign_index": 10,
+        "degree_in_sign": 8.635872,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 60169,
+  "name": "Cecil, Elizabeth",
+  "given_name": "Elizabeth Cecil",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2292491.312963,
+    "year": 1564,
+    "month": 7,
+    "day": 1,
+    "calendar": "j",
+    "time": "19:30",
+    "time_type": "l",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cecil,_Elizabeth",
+  "source_notes": "Sy Scholfield quotes \"Calendar of the Cecil Papers in Hatfield House\" edited by E. Salisbury (1915). [http://www.british-history.ac.uk/report.aspx?compid=112013]: 1576, \"A Table collected of the yeares of oure Lorde God, and of the yeares of the Kynges of Englande, from the fyrst yeare of William Conquerour. Londini, 1561. Imprinted by John Waley.\" The above contains many MS. notes by Burghley, beginning at A.D. 1100. Among them the following: '1564, July 1.Inter horam 7 et 8 vespe. Elizab. Cecill filia mea nata.' [born between 7 and 8 o'clock in the evening].\\n",
+  "categories": [
+    "Notable : Famous : Other Famous"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 3.169025,
+    "lagna": 243.169025,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.779952,
+    "jd_ut": 2292491.312963,
+    "planets": {
+      "Sun": {
+        "longitude": 91.375862,
+        "sign_index": 3,
+        "degree_in_sign": 1.375862,
+        "is_retrograde": false,
+        "speed": 0.954053
+      },
+      "Moon": {
+        "longitude": 8.552166,
+        "sign_index": 0,
+        "degree_in_sign": 8.552166,
+        "is_retrograde": false,
+        "speed": 17.507275
+      },
+      "Mars": {
+        "longitude": 122.054112,
+        "sign_index": 4,
+        "degree_in_sign": 2.054112,
+        "is_retrograde": false,
+        "speed": 0.621137
+      },
+      "Mercury": {
+        "longitude": 118.128167,
+        "sign_index": 3,
+        "degree_in_sign": 28.128167,
+        "is_retrograde": false,
+        "speed": 0.948517
+      },
+      "Jupiter": {
+        "longitude": 114.564849,
+        "sign_index": 3,
+        "degree_in_sign": 24.564849,
+        "is_retrograde": false,
+        "speed": 0.209217
+      },
+      "Venus": {
+        "longitude": 135.686885,
+        "sign_index": 4,
+        "degree_in_sign": 15.686885,
+        "is_retrograde": false,
+        "speed": 1.073401
+      },
+      "Saturn": {
+        "longitude": 106.878765,
+        "sign_index": 3,
+        "degree_in_sign": 16.878765,
+        "is_retrograde": false,
+        "speed": 0.125696
+      },
+      "Rahu": {
+        "longitude": 249.795407,
+        "sign_index": 8,
+        "degree_in_sign": 9.795407,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 69.795407,
+        "sign_index": 2,
+        "degree_in_sign": 9.795407,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

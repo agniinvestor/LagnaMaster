@@ -1,0 +1,108 @@
+{
+  "adb_id": 6691,
+  "name": "Clerical 6691",
+  "given_name": "Clerical 6691",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2426011.96875,
+    "year": 1930,
+    "month": 2,
+    "day": 4,
+    "calendar": "g",
+    "time": "05:15",
+    "time_type": "s",
+    "hour": 5.25,
+    "time_unknown": false,
+    "place": "Atlanta",
+    "country": "Georgia (US)",
+    "lat": 33.75,
+    "lon": -84.383333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Clerical_6691",
+  "source_notes": "Edith Custer in MH 1/l982\\n",
+  "categories": [
+    "Vocation : Business : Clerk/ Typist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 5.290005,
+    "lagna": 245.290005,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.880739,
+    "jd_ut": 2426011.96875,
+    "planets": {
+      "Sun": {
+        "longitude": 292.054081,
+        "sign_index": 9,
+        "degree_in_sign": 22.054081,
+        "is_retrograde": false,
+        "speed": 1.013903
+      },
+      "Moon": {
+        "longitude": 355.208315,
+        "sign_index": 11,
+        "degree_in_sign": 25.208315,
+        "is_retrograde": false,
+        "speed": 16.68471
+      },
+      "Mars": {
+        "longitude": 275.346631,
+        "sign_index": 9,
+        "degree_in_sign": 5.346631,
+        "is_retrograde": false,
+        "speed": 0.772805
+      },
+      "Mercury": {
+        "longitude": 269.579896,
+        "sign_index": 8,
+        "degree_in_sign": 29.579896,
+        "is_retrograde": false,
+        "speed": 0.206614
+      },
+      "Jupiter": {
+        "longitude": 43.50052,
+        "sign_index": 1,
+        "degree_in_sign": 13.50052,
+        "is_retrograde": false,
+        "speed": 0.013945
+      },
+      "Venus": {
+        "longitude": 291.507052,
+        "sign_index": 9,
+        "degree_in_sign": 21.507052,
+        "is_retrograde": false,
+        "speed": 1.254982
+      },
+      "Saturn": {
+        "longitude": 254.687768,
+        "sign_index": 8,
+        "degree_in_sign": 14.687768,
+        "is_retrograde": false,
+        "speed": 0.101925
+      },
+      "Rahu": {
+        "longitude": 14.234983,
+        "sign_index": 0,
+        "degree_in_sign": 14.234983,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 194.234983,
+        "sign_index": 6,
+        "degree_in_sign": 14.234983,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

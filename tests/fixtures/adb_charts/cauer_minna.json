@@ -1,0 +1,110 @@
+{
+  "adb_id": 58241,
+  "name": "Cauer, Minna",
+  "given_name": "Minna Cauer",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393775.882407,
+    "year": 1841,
+    "month": 11,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Freyenstein",
+    "country": "Germany",
+    "lat": 53.283333,
+    "lon": 12.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cauer,_Minna",
+  "source_notes": "Arno Muller, vol 3\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ feminist",
+    "Vocation : Writers : Columnist/ journalist",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 26.239654,
+    "lagna": 206.239654,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.648498,
+    "jd_ut": 2393775.882407,
+    "planets": {
+      "Sun": {
+        "longitude": 197.153933,
+        "sign_index": 6,
+        "degree_in_sign": 17.153933,
+        "is_retrograde": false,
+        "speed": 1.001634
+      },
+      "Moon": {
+        "longitude": 43.784841,
+        "sign_index": 1,
+        "degree_in_sign": 13.784841,
+        "is_retrograde": false,
+        "speed": 15.950813
+      },
+      "Mars": {
+        "longitude": 257.518785,
+        "sign_index": 8,
+        "degree_in_sign": 17.518785,
+        "is_retrograde": false,
+        "speed": 0.746361
+      },
+      "Mercury": {
+        "longitude": 219.688028,
+        "sign_index": 7,
+        "degree_in_sign": 9.688028,
+        "is_retrograde": false,
+        "speed": 0.548746
+      },
+      "Jupiter": {
+        "longitude": 238.184349,
+        "sign_index": 7,
+        "degree_in_sign": 28.184349,
+        "is_retrograde": false,
+        "speed": 0.197956
+      },
+      "Venus": {
+        "longitude": 167.609473,
+        "sign_index": 5,
+        "degree_in_sign": 17.609473,
+        "is_retrograde": false,
+        "speed": 1.232053
+      },
+      "Saturn": {
+        "longitude": 247.762959,
+        "sign_index": 8,
+        "degree_in_sign": 7.762959,
+        "is_retrograde": false,
+        "speed": 0.088244
+      },
+      "Rahu": {
+        "longitude": 282.493582,
+        "sign_index": 9,
+        "degree_in_sign": 12.493582,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 102.493582,
+        "sign_index": 3,
+        "degree_in_sign": 12.493582,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 36674,
+  "name": "Clark, Helen",
+  "given_name": "Helen Clark",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433338.8125,
+    "year": 1950,
+    "month": 2,
+    "day": 26,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "s",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "Hamilton",
+    "country": "New Zealand",
+    "lat": -37.783333,
+    "lon": 175.283333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Helen",
+  "source_notes": "Hamish Saunders quotes data from her electoral office, Transit Jan/2000, given as \"late evening, around 7:30 PM.\"\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Vocation : Politics : Activist/ social",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 2.824527,
+    "lagna": 122.824527,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.160878,
+    "jd_ut": 2433338.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 313.980279,
+        "sign_index": 10,
+        "degree_in_sign": 13.980279,
+        "is_retrograde": false,
+        "speed": 1.004938
+      },
+      "Moon": {
+        "longitude": 57.763212,
+        "sign_index": 1,
+        "degree_in_sign": 27.763212,
+        "is_retrograde": false,
+        "speed": 7.783339
+      },
+      "Mars": {
+        "longitude": 166.609788,
+        "sign_index": 5,
+        "degree_in_sign": 16.609788,
+        "is_retrograde": true,
+        "speed": -0.181227
+      },
+      "Mercury": {
+        "longitude": 292.051346,
+        "sign_index": 9,
+        "degree_in_sign": 22.051346,
+        "is_retrograde": false,
+        "speed": 1.449089
+      },
+      "Jupiter": {
+        "longitude": 296.592431,
+        "sign_index": 9,
+        "degree_in_sign": 26.592431,
+        "is_retrograde": false,
+        "speed": 0.233331
+      },
+      "Venus": {
+        "longitude": 280.541697,
+        "sign_index": 9,
+        "degree_in_sign": 10.541697,
+        "is_retrograde": false,
+        "speed": 0.210707
+      },
+      "Saturn": {
+        "longitude": 143.595234,
+        "sign_index": 4,
+        "degree_in_sign": 23.595234,
+        "is_retrograde": true,
+        "speed": -0.078114
+      },
+      "Rahu": {
+        "longitude": 345.970372,
+        "sign_index": 11,
+        "degree_in_sign": 15.970372,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 165.970372,
+        "sign_index": 5,
+        "degree_in_sign": 15.970372,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

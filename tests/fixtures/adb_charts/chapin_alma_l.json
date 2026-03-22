@@ -1,0 +1,109 @@
+{
+  "adb_id": 5688,
+  "name": "Chapin, Alma L.",
+  "given_name": "Alma L. Chapin",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2423560.833333,
+    "year": 1923,
+    "month": 5,
+    "day": 21,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "d",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapin,_Alma_L.",
+  "source_notes": "Given by her in Mercury Hour 4/80.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 5.920595,
+    "lagna": 335.920595,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.787026,
+    "jd_ut": 2423560.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 36.462775,
+        "sign_index": 1,
+        "degree_in_sign": 6.462775,
+        "is_retrograde": false,
+        "speed": 0.961937
+      },
+      "Moon": {
+        "longitude": 98.399645,
+        "sign_index": 3,
+        "degree_in_sign": 8.399645,
+        "is_retrograde": false,
+        "speed": 17.170506
+      },
+      "Mars": {
+        "longitude": 60.900386,
+        "sign_index": 2,
+        "degree_in_sign": 0.900386,
+        "is_retrograde": false,
+        "speed": 0.663244
+      },
+      "Mercury": {
+        "longitude": 47.557532,
+        "sign_index": 1,
+        "degree_in_sign": 17.557532,
+        "is_retrograde": true,
+        "speed": -0.280392
+      },
+      "Jupiter": {
+        "longitude": 199.33589,
+        "sign_index": 6,
+        "degree_in_sign": 19.33589,
+        "is_retrograde": true,
+        "speed": -0.117194
+      },
+      "Venus": {
+        "longitude": 6.871934,
+        "sign_index": 0,
+        "degree_in_sign": 6.871934,
+        "is_retrograde": false,
+        "speed": 1.202075
+      },
+      "Saturn": {
+        "longitude": 171.14609,
+        "sign_index": 5,
+        "degree_in_sign": 21.14609,
+        "is_retrograde": true,
+        "speed": -0.042326
+      },
+      "Rahu": {
+        "longitude": 144.125752,
+        "sign_index": 4,
+        "degree_in_sign": 24.125752,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 324.125752,
+        "sign_index": 10,
+        "degree_in_sign": 24.125752,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

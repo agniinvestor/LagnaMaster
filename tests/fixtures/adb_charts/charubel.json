@@ -1,0 +1,117 @@
+{
+  "adb_id": 2156,
+  "name": "Charubel",
+  "given_name": "Charubel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388304.800139,
+    "year": 1826,
+    "month": 11,
+    "day": 9,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "l",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Montgomery",
+    "country": "Wales",
+    "lat": 52.55,
+    "lon": -3.05
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charubel",
+  "source_notes": "Fagan quotes the family bible AA 5/63.  Given in Modern Astrology 4/1909.\\n(Kim Farnell gives 6:56 AM LMT/ 7:09 AM GMT, Castel Caerneiron, Wales, 52 N.43, 3 W.10, in \"The Astral Tramp,\" 1998, quoting William and Helene Koppejan's Zodiac Image Handbook, Vol. 2, Element, 1990.)\\n",
+  "categories": [
+    "Traits : Personality : Eccentric",
+    "Traits : Personality : Mystical",
+    "Personal : Religion/Spirituality : Metaphysical",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Personal : Misc. : Changed name",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Occult Fields : Psychic/ Medium/ Spiritualist",
+    "Vocation : Writers : Astrology",
+    "Vocation : Writers : Publisher/ Editor",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 0.650663,
+    "lagna": 180.650663,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.43941,
+    "jd_ut": 2388304.800139,
+    "planets": {
+      "Sun": {
+        "longitude": 204.952224,
+        "sign_index": 6,
+        "degree_in_sign": 24.952224,
+        "is_retrograde": false,
+        "speed": 1.00563
+      },
+      "Moon": {
+        "longitude": 325.296015,
+        "sign_index": 10,
+        "degree_in_sign": 25.296015,
+        "is_retrograde": false,
+        "speed": 15.561532
+      },
+      "Mars": {
+        "longitude": 270.824622,
+        "sign_index": 9,
+        "degree_in_sign": 0.824622,
+        "is_retrograde": false,
+        "speed": 0.747232
+      },
+      "Mercury": {
+        "longitude": 220.671724,
+        "sign_index": 7,
+        "degree_in_sign": 10.671724,
+        "is_retrograde": false,
+        "speed": 1.466635
+      },
+      "Jupiter": {
+        "longitude": 164.189881,
+        "sign_index": 5,
+        "degree_in_sign": 14.189881,
+        "is_retrograde": false,
+        "speed": 0.187369
+      },
+      "Venus": {
+        "longitude": 248.385664,
+        "sign_index": 8,
+        "degree_in_sign": 8.385664,
+        "is_retrograde": false,
+        "speed": 0.704338
+      },
+      "Saturn": {
+        "longitude": 74.265491,
+        "sign_index": 2,
+        "degree_in_sign": 14.265491,
+        "is_retrograde": true,
+        "speed": -0.038685
+      },
+      "Rahu": {
+        "longitude": 212.418104,
+        "sign_index": 7,
+        "degree_in_sign": 2.418104,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 32.418104,
+        "sign_index": 1,
+        "degree_in_sign": 2.418104,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

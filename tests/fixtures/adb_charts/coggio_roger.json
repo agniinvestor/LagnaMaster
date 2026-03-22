@@ -1,0 +1,110 @@
+{
+  "adb_id": 52104,
+  "name": "Coggio, Roger",
+  "given_name": "Roger Coggio",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427508.25,
+    "year": 1934,
+    "month": 3,
+    "day": 11,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coggio,_Roger",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin ns vol 3 no 0360\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 9.260258,
+    "lagna": 129.260258,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.937947,
+    "jd_ut": 2427508.25,
+    "planets": {
+      "Sun": {
+        "longitude": 327.538144,
+        "sign_index": 10,
+        "degree_in_sign": 27.538144,
+        "is_retrograde": false,
+        "speed": 0.998298
+      },
+      "Moon": {
+        "longitude": 276.777958,
+        "sign_index": 9,
+        "degree_in_sign": 6.777958,
+        "is_retrograde": false,
+        "speed": 17.771685
+      },
+      "Mars": {
+        "longitude": 335.01204,
+        "sign_index": 11,
+        "degree_in_sign": 5.01204,
+        "is_retrograde": false,
+        "speed": 0.778592
+      },
+      "Mercury": {
+        "longitude": 316.378824,
+        "sign_index": 10,
+        "degree_in_sign": 16.378824,
+        "is_retrograde": true,
+        "speed": -0.774968
+      },
+      "Jupiter": {
+        "longitude": 178.647207,
+        "sign_index": 5,
+        "degree_in_sign": 28.647207,
+        "is_retrograde": true,
+        "speed": -0.09414
+      },
+      "Venus": {
+        "longitude": 288.554912,
+        "sign_index": 9,
+        "degree_in_sign": 18.554912,
+        "is_retrograde": false,
+        "speed": 0.474698
+      },
+      "Saturn": {
+        "longitude": 299.563514,
+        "sign_index": 9,
+        "degree_in_sign": 29.563514,
+        "is_retrograde": false,
+        "speed": 0.111108
+      },
+      "Rahu": {
+        "longitude": 294.943933,
+        "sign_index": 9,
+        "degree_in_sign": 24.943933,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 114.943933,
+        "sign_index": 3,
+        "degree_in_sign": 24.943933,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

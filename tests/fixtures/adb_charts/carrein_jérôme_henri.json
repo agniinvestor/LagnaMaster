@@ -1,0 +1,108 @@
+{
+  "adb_id": 57399,
+  "name": "Carrein, Jérôme Henri",
+  "given_name": "Jérôme Henri Carrein",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430178.375,
+    "year": 1941,
+    "month": 7,
+    "day": 2,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "d",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Cantin",
+    "country": "France",
+    "lat": 50.31,
+    "lon": 3.12
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrein,_Jérôme_Henri",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'Condamnés à mort' pdf file, p. 31.\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide single"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 14.190335,
+    "lagna": 254.190335,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.040037,
+    "jd_ut": 2430178.375,
+    "planets": {
+      "Sun": {
+        "longitude": 77.510209,
+        "sign_index": 2,
+        "degree_in_sign": 17.510209,
+        "is_retrograde": false,
+        "speed": 0.953249
+      },
+      "Moon": {
+        "longitude": 176.488738,
+        "sign_index": 5,
+        "degree_in_sign": 26.488738,
+        "is_retrograde": false,
+        "speed": 11.266862
+      },
+      "Mars": {
+        "longitude": 337.339494,
+        "sign_index": 11,
+        "degree_in_sign": 7.339494,
+        "is_retrograde": false,
+        "speed": 0.57777
+      },
+      "Mercury": {
+        "longitude": 77.522258,
+        "sign_index": 2,
+        "degree_in_sign": 17.522258,
+        "is_retrograde": true,
+        "speed": -0.608695
+      },
+      "Jupiter": {
+        "longitude": 45.469353,
+        "sign_index": 1,
+        "degree_in_sign": 15.469353,
+        "is_retrograde": false,
+        "speed": 0.215804
+      },
+      "Venus": {
+        "longitude": 97.390091,
+        "sign_index": 3,
+        "degree_in_sign": 7.390091,
+        "is_retrograde": false,
+        "speed": 1.220306
+      },
+      "Saturn": {
+        "longitude": 31.560132,
+        "sign_index": 1,
+        "degree_in_sign": 1.560132,
+        "is_retrograde": false,
+        "speed": 0.102481
+      },
+      "Rahu": {
+        "longitude": 153.448479,
+        "sign_index": 5,
+        "degree_in_sign": 3.448479,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 333.448479,
+        "sign_index": 11,
+        "degree_in_sign": 3.448479,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

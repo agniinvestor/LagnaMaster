@@ -1,0 +1,110 @@
+{
+  "adb_id": 36967,
+  "name": "Courbet, Julien",
+  "given_name": "Julien Courbet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438798.8125,
+    "year": 1965,
+    "month": 2,
+    "day": 7,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Caudéran",
+    "country": "France",
+    "lat": 44.85,
+    "lon": -0.616667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courbet,_Julien",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 65.\\nSame data: Petitallot quotes B.C., Cadran No. 39, March 1997\\nSy Scholfield quotes same time from him on Twitter: \"Je suis né a 8h30!\" [https://twitter.com/courbet_julien/status/299402158384762880].\\n",
+  "categories": [
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 5.539471,
+    "lagna": 275.539471,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.369656,
+    "jd_ut": 2438798.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 294.959932,
+        "sign_index": 9,
+        "degree_in_sign": 24.959932,
+        "is_retrograde": false,
+        "speed": 1.012973
+      },
+      "Moon": {
+        "longitude": 359.766339,
+        "sign_index": 11,
+        "degree_in_sign": 29.766339,
+        "is_retrograde": false,
+        "speed": 15.822093
+      },
+      "Mars": {
+        "longitude": 154.116532,
+        "sign_index": 5,
+        "degree_in_sign": 4.116532,
+        "is_retrograde": true,
+        "speed": -0.121467
+      },
+      "Mercury": {
+        "longitude": 282.873937,
+        "sign_index": 9,
+        "degree_in_sign": 12.873937,
+        "is_retrograde": false,
+        "speed": 1.6099
+      },
+      "Jupiter": {
+        "longitude": 24.041065,
+        "sign_index": 0,
+        "degree_in_sign": 24.041065,
+        "is_retrograde": false,
+        "speed": 0.090723
+      },
+      "Venus": {
+        "longitude": 279.125989,
+        "sign_index": 9,
+        "degree_in_sign": 9.125989,
+        "is_retrograde": false,
+        "speed": 1.250502
+      },
+      "Saturn": {
+        "longitude": 311.919204,
+        "sign_index": 10,
+        "degree_in_sign": 11.919204,
+        "is_retrograde": false,
+        "speed": 0.118482
+      },
+      "Rahu": {
+        "longitude": 56.633764,
+        "sign_index": 1,
+        "degree_in_sign": 26.633764,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 236.633764,
+        "sign_index": 7,
+        "degree_in_sign": 26.633764,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

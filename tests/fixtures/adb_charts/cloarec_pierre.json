@@ -1,0 +1,108 @@
+{
+  "adb_id": 65865,
+  "name": "Cloarec, Pierre",
+  "given_name": "Pierre Cloarec",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418379.70184,
+    "year": 1909,
+    "month": 3,
+    "day": 14,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Pleyben",
+    "country": "France",
+    "lat": 48.233333,
+    "lon": -3.966667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cloarec,_Pierre",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'Cyclisme' pdf file, p. 72.\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 19.536075,
+    "lagna": 259.536075,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.588948,
+    "jd_ut": 2418379.70184,
+    "planets": {
+      "Sun": {
+        "longitude": 330.395562,
+        "sign_index": 11,
+        "degree_in_sign": 0.395562,
+        "is_retrograde": false,
+        "speed": 0.996404
+      },
+      "Moon": {
+        "longitude": 229.305386,
+        "sign_index": 7,
+        "degree_in_sign": 19.305386,
+        "is_retrograde": false,
+        "speed": 8.965564
+      },
+      "Mars": {
+        "longitude": 259.568068,
+        "sign_index": 8,
+        "degree_in_sign": 19.568068,
+        "is_retrograde": false,
+        "speed": 0.671396
+      },
+      "Mercury": {
+        "longitude": 303.386082,
+        "sign_index": 10,
+        "degree_in_sign": 3.386082,
+        "is_retrograde": false,
+        "speed": 1.175288
+      },
+      "Jupiter": {
+        "longitude": 135.274563,
+        "sign_index": 4,
+        "degree_in_sign": 15.274563,
+        "is_retrograde": true,
+        "speed": -0.122781
+      },
+      "Venus": {
+        "longitude": 318.755142,
+        "sign_index": 10,
+        "degree_in_sign": 18.755142,
+        "is_retrograde": false,
+        "speed": 1.24404
+      },
+      "Saturn": {
+        "longitude": 347.950825,
+        "sign_index": 11,
+        "degree_in_sign": 17.950825,
+        "is_retrograde": false,
+        "speed": 0.121945
+      },
+      "Rahu": {
+        "longitude": 58.684756,
+        "sign_index": 1,
+        "degree_in_sign": 28.684756,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 238.684756,
+        "sign_index": 7,
+        "degree_in_sign": 28.684756,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

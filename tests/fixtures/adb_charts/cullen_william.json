@@ -1,0 +1,113 @@
+{
+  "adb_id": 82072,
+  "name": "Cullen, William",
+  "given_name": "William Cullen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2345728.76125,
+    "year": 1710,
+    "month": 4,
+    "day": 15,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Hamilton",
+    "country": "Scotland",
+    "lat": 55.783333,
+    "lon": -4.05
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cullen,_William",
+  "source_notes": "Sy Scholfield forwarded copy of birth entry in parish registry [https://www.nrscotland.gov.uk/research/learning/hall-of-fame/hall-of-fame-a-z/cullen-william].\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Physician",
+    "Vocation : Science : Biology",
+    "Vocation : Science : Chemistry",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 16.840466,
+    "lagna": 16.840466,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.812758,
+    "jd_ut": 2345728.76125,
+    "planets": {
+      "Sun": {
+        "longitude": 5.00528,
+        "sign_index": 0,
+        "degree_in_sign": 5.00528,
+        "is_retrograde": false,
+        "speed": 0.97599
+      },
+      "Moon": {
+        "longitude": 206.091683,
+        "sign_index": 6,
+        "degree_in_sign": 26.091683,
+        "is_retrograde": false,
+        "speed": 13.237807
+      },
+      "Mars": {
+        "longitude": 340.141372,
+        "sign_index": 11,
+        "degree_in_sign": 10.141372,
+        "is_retrograde": false,
+        "speed": 0.773869
+      },
+      "Mercury": {
+        "longitude": 338.828079,
+        "sign_index": 11,
+        "degree_in_sign": 8.828079,
+        "is_retrograde": false,
+        "speed": 1.312244
+      },
+      "Jupiter": {
+        "longitude": 220.617195,
+        "sign_index": 7,
+        "degree_in_sign": 10.617195,
+        "is_retrograde": true,
+        "speed": -0.081893
+      },
+      "Venus": {
+        "longitude": 358.627716,
+        "sign_index": 11,
+        "degree_in_sign": 28.627716,
+        "is_retrograde": true,
+        "speed": -0.598362
+      },
+      "Saturn": {
+        "longitude": 80.602065,
+        "sign_index": 2,
+        "degree_in_sign": 20.602065,
+        "is_retrograde": false,
+        "speed": 0.06099
+      },
+      "Rahu": {
+        "longitude": 308.61751,
+        "sign_index": 10,
+        "degree_in_sign": 8.61751,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 128.61751,
+        "sign_index": 4,
+        "degree_in_sign": 8.61751,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

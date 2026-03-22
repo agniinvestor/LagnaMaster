@@ -1,0 +1,110 @@
+{
+  "adb_id": 64900,
+  "name": "Chabat, Alain",
+  "given_name": "Alain Chabat",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436531.520833,
+    "year": 1958,
+    "month": 11,
+    "day": 24,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Oran",
+    "country": "Algeria",
+    "lat": 35.716667,
+    "lon": -0.716667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chabat,_Alain",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 49.\\n\\nPreviously this record was rated A (from memory): Paddy de Jabrun.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 26.224288,
+    "lagna": 116.224288,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.282958,
+    "jd_ut": 2436531.520833,
+    "planets": {
+      "Sun": {
+        "longitude": 217.937471,
+        "sign_index": 7,
+        "degree_in_sign": 7.937471,
+        "is_retrograde": false,
+        "speed": 1.010739
+      },
+      "Moon": {
+        "longitude": 11.088009,
+        "sign_index": 0,
+        "degree_in_sign": 11.088009,
+        "is_retrograde": false,
+        "speed": 8.242166
+      },
+      "Mars": {
+        "longitude": 27.866975,
+        "sign_index": 0,
+        "degree_in_sign": 27.866975,
+        "is_retrograde": true,
+        "speed": -0.32546
+      },
+      "Mercury": {
+        "longitude": 239.682786,
+        "sign_index": 7,
+        "degree_in_sign": 29.682786,
+        "is_retrograde": false,
+        "speed": 0.785725
+      },
+      "Jupiter": {
+        "longitude": 202.978673,
+        "sign_index": 6,
+        "degree_in_sign": 22.978673,
+        "is_retrograde": false,
+        "speed": 0.21614
+      },
+      "Venus": {
+        "longitude": 221.035275,
+        "sign_index": 7,
+        "degree_in_sign": 11.035275,
+        "is_retrograde": false,
+        "speed": 1.256362
+      },
+      "Saturn": {
+        "longitude": 241.764363,
+        "sign_index": 8,
+        "degree_in_sign": 1.764363,
+        "is_retrograde": false,
+        "speed": 0.111268
+      },
+      "Rahu": {
+        "longitude": 176.782195,
+        "sign_index": 5,
+        "degree_in_sign": 26.782195,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 356.782195,
+        "sign_index": 11,
+        "degree_in_sign": 26.782195,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

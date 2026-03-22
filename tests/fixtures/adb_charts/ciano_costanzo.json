@@ -1,0 +1,109 @@
+{
+  "adb_id": 66342,
+  "name": "Ciano, Costanzo",
+  "given_name": "Costanzo Ciano",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406497.381991,
+    "year": 1876,
+    "month": 8,
+    "day": 30,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Livorno",
+    "country": "Italy",
+    "lat": 43.55,
+    "lon": 10.316667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ciano,_Costanzo",
+  "source_notes": "Grazia Bordoni sent copy of BC\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 15.538923,
+    "lagna": 15.538923,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.134726,
+    "jd_ut": 2406497.381991,
+    "planets": {
+      "Sun": {
+        "longitude": 135.636723,
+        "sign_index": 4,
+        "degree_in_sign": 15.636723,
+        "is_retrograde": false,
+        "speed": 0.967793
+      },
+      "Moon": {
+        "longitude": 270.556075,
+        "sign_index": 9,
+        "degree_in_sign": 0.556075,
+        "is_retrograde": false,
+        "speed": 8.028513
+      },
+      "Mars": {
+        "longitude": 129.780387,
+        "sign_index": 4,
+        "degree_in_sign": 9.780387,
+        "is_retrograde": false,
+        "speed": 0.63627
+      },
+      "Mercury": {
+        "longitude": 156.708539,
+        "sign_index": 5,
+        "degree_in_sign": 6.708539,
+        "is_retrograde": false,
+        "speed": 1.489378
+      },
+      "Jupiter": {
+        "longitude": 212.612797,
+        "sign_index": 7,
+        "degree_in_sign": 2.612797,
+        "is_retrograde": false,
+        "speed": 0.117162
+      },
+      "Venus": {
+        "longitude": 92.207867,
+        "sign_index": 3,
+        "degree_in_sign": 2.207867,
+        "is_retrograde": false,
+        "speed": 0.706978
+      },
+      "Saturn": {
+        "longitude": 312.326527,
+        "sign_index": 10,
+        "degree_in_sign": 12.326527,
+        "is_retrograde": true,
+        "speed": -0.075783
+      },
+      "Rahu": {
+        "longitude": 328.354015,
+        "sign_index": 10,
+        "degree_in_sign": 28.354015,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 148.354015,
+        "sign_index": 4,
+        "degree_in_sign": 28.354015,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

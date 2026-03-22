@@ -1,0 +1,115 @@
+{
+  "adb_id": 102876,
+  "name": "Chandler, Joseph Newton III",
+  "given_name": "Joseph Newton III Chandler",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424770.8125,
+    "year": 1926,
+    "month": 9,
+    "day": 12,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "New Albany",
+    "country": "Indiana",
+    "lat": 38.283333,
+    "lon": -85.816667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chandler,_Joseph_Newton_III",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids more than 3",
+    "Passions : Criminal Perpetrator : Other Criminal",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 15.862796,
+    "lagna": 75.862796,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.833286,
+    "jd_ut": 2424770.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 145.949315,
+        "sign_index": 4,
+        "degree_in_sign": 25.949315,
+        "is_retrograde": false,
+        "speed": 0.973372
+      },
+      "Moon": {
+        "longitude": 201.934686,
+        "sign_index": 6,
+        "degree_in_sign": 21.934686,
+        "is_retrograde": false,
+        "speed": 15.96301
+      },
+      "Mars": {
+        "longitude": 24.628344,
+        "sign_index": 0,
+        "degree_in_sign": 24.628344,
+        "is_retrograde": false,
+        "speed": 0.227209
+      },
+      "Mercury": {
+        "longitude": 139.356711,
+        "sign_index": 4,
+        "degree_in_sign": 19.356711,
+        "is_retrograde": false,
+        "speed": 1.90862
+      },
+      "Jupiter": {
+        "longitude": 296.110301,
+        "sign_index": 9,
+        "degree_in_sign": 26.110301,
+        "is_retrograde": true,
+        "speed": -0.096653
+      },
+      "Venus": {
+        "longitude": 127.936431,
+        "sign_index": 4,
+        "degree_in_sign": 7.936431,
+        "is_retrograde": false,
+        "speed": 1.23369
+      },
+      "Saturn": {
+        "longitude": 208.523488,
+        "sign_index": 6,
+        "degree_in_sign": 28.523488,
+        "is_retrograde": false,
+        "speed": 0.074252
+      },
+      "Rahu": {
+        "longitude": 80.006435,
+        "sign_index": 2,
+        "degree_in_sign": 20.006435,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 260.006435,
+        "sign_index": 8,
+        "degree_in_sign": 20.006435,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

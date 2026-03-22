@@ -1,0 +1,109 @@
+{
+  "adb_id": 65759,
+  "name": "Charbonnier, Lionel",
+  "given_name": "Lionel Charbonnier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439424.201389,
+    "year": 1966,
+    "month": 10,
+    "day": 25,
+    "calendar": "g",
+    "time": "17:50",
+    "time_type": "s",
+    "hour": 17.833333,
+    "time_unknown": false,
+    "place": "Poitiers",
+    "country": "France",
+    "lat": 46.583333,
+    "lon": 0.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charbonnier,_Lionel",
+  "source_notes": "Didier Geslain archive, 'Foot et sports' pdf file, p. 64.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 14.880319,
+    "lagna": 344.880319,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.39357,
+    "jd_ut": 2439424.201389,
+    "planets": {
+      "Sun": {
+        "longitude": 188.436174,
+        "sign_index": 6,
+        "degree_in_sign": 8.436174,
+        "is_retrograde": false,
+        "speed": 0.996703
+      },
+      "Moon": {
+        "longitude": 327.863537,
+        "sign_index": 10,
+        "degree_in_sign": 27.863537,
+        "is_retrograde": false,
+        "speed": 10.308633
+      },
+      "Mars": {
+        "longitude": 134.333251,
+        "sign_index": 4,
+        "degree_in_sign": 14.333251,
+        "is_retrograde": false,
+        "speed": 0.590863
+      },
+      "Mercury": {
+        "longitude": 212.363411,
+        "sign_index": 7,
+        "degree_in_sign": 2.363411,
+        "is_retrograde": false,
+        "speed": 1.038087
+      },
+      "Jupiter": {
+        "longitude": 99.94888,
+        "sign_index": 3,
+        "degree_in_sign": 9.94888,
+        "is_retrograde": false,
+        "speed": 0.083054
+      },
+      "Venus": {
+        "longitude": 184.802036,
+        "sign_index": 6,
+        "degree_in_sign": 4.802036,
+        "is_retrograde": false,
+        "speed": 1.253016
+      },
+      "Saturn": {
+        "longitude": 330.39438,
+        "sign_index": 11,
+        "degree_in_sign": 0.39438,
+        "is_retrograde": true,
+        "speed": -0.052018
+      },
+      "Rahu": {
+        "longitude": 23.493128,
+        "sign_index": 0,
+        "degree_in_sign": 23.493128,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 203.493128,
+        "sign_index": 6,
+        "degree_in_sign": 23.493128,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

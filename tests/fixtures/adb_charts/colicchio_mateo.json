@@ -1,0 +1,108 @@
+{
+  "adb_id": 55033,
+  "name": "Colicchio, Mateo",
+  "given_name": "Mateo Colicchio",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2455643.174306,
+    "year": 2011,
+    "month": 3,
+    "day": 22,
+    "calendar": "g",
+    "time": "12:11",
+    "time_type": "d",
+    "hour": 12.183333,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colicchio,_Mateo",
+  "source_notes": "Sarah van Sanden quotes report in People magazine\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 21.267245,
+    "lagna": 51.267245,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 24.01383,
+    "jd_ut": 2455643.174306,
+    "planets": {
+      "Sun": {
+        "longitude": 337.670694,
+        "sign_index": 11,
+        "degree_in_sign": 7.670694,
+        "is_retrograde": false,
+        "speed": 0.992317
+      },
+      "Moon": {
+        "longitude": 198.477006,
+        "sign_index": 6,
+        "degree_in_sign": 18.477006,
+        "is_retrograde": false,
+        "speed": 16.999977
+      },
+      "Mars": {
+        "longitude": 327.748655,
+        "sign_index": 10,
+        "degree_in_sign": 27.748655,
+        "is_retrograde": false,
+        "speed": 0.784007
+      },
+      "Mercury": {
+        "longitude": 356.141399,
+        "sign_index": 11,
+        "degree_in_sign": 26.141399,
+        "is_retrograde": false,
+        "speed": 1.012475
+      },
+      "Jupiter": {
+        "longitude": 348.831924,
+        "sign_index": 11,
+        "degree_in_sign": 18.831924,
+        "is_retrograde": false,
+        "speed": 0.239897
+      },
+      "Venus": {
+        "longitude": 300.450021,
+        "sign_index": 10,
+        "degree_in_sign": 0.450021,
+        "is_retrograde": false,
+        "speed": 1.197743
+      },
+      "Saturn": {
+        "longitude": 170.807456,
+        "sign_index": 5,
+        "degree_in_sign": 20.807456,
+        "is_retrograde": true,
+        "speed": -0.074579
+      },
+      "Rahu": {
+        "longitude": 244.016946,
+        "sign_index": 8,
+        "degree_in_sign": 4.016946,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 64.016946,
+        "sign_index": 2,
+        "degree_in_sign": 4.016946,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

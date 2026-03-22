@@ -1,0 +1,116 @@
+{
+  "adb_id": 90358,
+  "name": "Chenery, Hollis B.",
+  "given_name": "Hollis B. Chenery",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421600.038194,
+    "year": 1918,
+    "month": 1,
+    "day": 6,
+    "calendar": "g",
+    "time": "07:55",
+    "time_type": "s",
+    "hour": 7.916667,
+    "time_unknown": false,
+    "place": "Richmond",
+    "country": "Virginia",
+    "lat": 37.55,
+    "lon": -77.466667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chenery,_Hollis_B.",
+  "source_notes": "Sy Scholfield provided birth certificate from Virginia archives.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Financial : Gain - Grant, Scholarship, etc.",
+    "Vocation : Business : Economist",
+    "Vocation : Education : Teacher",
+    "Vocation : Military : Military service",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 6.613917,
+    "lagna": 246.613917,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.712062,
+    "jd_ut": 2421600.038194,
+    "planets": {
+      "Sun": {
+        "longitude": 262.701104,
+        "sign_index": 8,
+        "degree_in_sign": 22.701104,
+        "is_retrograde": false,
+        "speed": 1.019299
+      },
+      "Moon": {
+        "longitude": 184.321658,
+        "sign_index": 6,
+        "degree_in_sign": 4.321658,
+        "is_retrograde": false,
+        "speed": 8.074155
+      },
+      "Mars": {
+        "longitude": 156.012422,
+        "sign_index": 5,
+        "degree_in_sign": 6.012422,
+        "is_retrograde": false,
+        "speed": 0.281515
+      },
+      "Mercury": {
+        "longitude": 255.414082,
+        "sign_index": 8,
+        "degree_in_sign": 15.414082,
+        "is_retrograde": true,
+        "speed": -1.179807
+      },
+      "Jupiter": {
+        "longitude": 39.433449,
+        "sign_index": 1,
+        "degree_in_sign": 9.433449,
+        "is_retrograde": true,
+        "speed": -0.067179
+      },
+      "Venus": {
+        "longitude": 302.263398,
+        "sign_index": 10,
+        "degree_in_sign": 2.263398,
+        "is_retrograde": false,
+        "speed": 0.479031
+      },
+      "Saturn": {
+        "longitude": 110.325068,
+        "sign_index": 3,
+        "degree_in_sign": 20.325068,
+        "is_retrograde": true,
+        "speed": -0.0673
+      },
+      "Rahu": {
+        "longitude": 248.032382,
+        "sign_index": 8,
+        "degree_in_sign": 8.032382,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 68.032382,
+        "sign_index": 2,
+        "degree_in_sign": 8.032382,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

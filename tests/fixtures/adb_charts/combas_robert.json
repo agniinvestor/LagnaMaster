@@ -1,0 +1,109 @@
+{
+  "adb_id": 91964,
+  "name": "Combas, Robert",
+  "given_name": "Robert Combas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435984.395833,
+    "year": 1957,
+    "month": 5,
+    "day": 25,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Combas,_Robert",
+  "source_notes": "Paddy de Jabrun quoted bc. Born in Lyon 2.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 17.317119,
+    "lagna": 227.317119,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.262037,
+    "jd_ut": 2435984.395833,
+    "planets": {
+      "Sun": {
+        "longitude": 41.112399,
+        "sign_index": 1,
+        "degree_in_sign": 11.112399,
+        "is_retrograde": false,
+        "speed": 0.960372
+      },
+      "Moon": {
+        "longitude": 357.532223,
+        "sign_index": 11,
+        "degree_in_sign": 27.532223,
+        "is_retrograde": false,
+        "speed": 16.105108
+      },
+      "Mars": {
+        "longitude": 80.062134,
+        "sign_index": 2,
+        "degree_in_sign": 20.062134,
+        "is_retrograde": false,
+        "speed": 0.626568
+      },
+      "Mercury": {
+        "longitude": 18.483338,
+        "sign_index": 0,
+        "degree_in_sign": 18.483338,
+        "is_retrograde": false,
+        "speed": 0.505185
+      },
+      "Jupiter": {
+        "longitude": 148.64127,
+        "sign_index": 4,
+        "degree_in_sign": 28.64127,
+        "is_retrograde": false,
+        "speed": 0.020369
+      },
+      "Venus": {
+        "longitude": 52.013171,
+        "sign_index": 1,
+        "degree_in_sign": 22.013171,
+        "is_retrograde": false,
+        "speed": 1.227719
+      },
+      "Saturn": {
+        "longitude": 228.265947,
+        "sign_index": 7,
+        "degree_in_sign": 18.265947,
+        "is_retrograde": true,
+        "speed": -0.073286
+      },
+      "Rahu": {
+        "longitude": 205.775471,
+        "sign_index": 6,
+        "degree_in_sign": 25.775471,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 25.775471,
+        "sign_index": 0,
+        "degree_in_sign": 25.775471,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

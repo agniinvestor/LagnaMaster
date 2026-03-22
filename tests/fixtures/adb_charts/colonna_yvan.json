@@ -1,0 +1,110 @@
+{
+  "adb_id": 65053,
+  "name": "Colonna, Yvan",
+  "given_name": "Yvan Colonna",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437032.34375,
+    "year": 1960,
+    "month": 4,
+    "day": 7,
+    "calendar": "g",
+    "time": "21:15",
+    "time_type": "s",
+    "hour": 21.25,
+    "time_unknown": false,
+    "place": "Ajaccio",
+    "country": "France",
+    "lat": 41.916667,
+    "lon": 8.733333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colonna,_Yvan",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 206.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Passions : Criminal Perpetrator : Homicide single",
+    "Passions : Criminal Victim : Homicide victim"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 29.006487,
+    "lagna": 179.006487,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.302109,
+    "jd_ut": 2437032.34375,
+    "planets": {
+      "Sun": {
+        "longitude": 354.711283,
+        "sign_index": 11,
+        "degree_in_sign": 24.711283,
+        "is_retrograde": false,
+        "speed": 0.98242
+      },
+      "Moon": {
+        "longitude": 124.871109,
+        "sign_index": 4,
+        "degree_in_sign": 4.871109,
+        "is_retrograde": false,
+        "speed": 8.710113
+      },
+      "Mars": {
+        "longitude": 310.998171,
+        "sign_index": 10,
+        "degree_in_sign": 10.998171,
+        "is_retrograde": false,
+        "speed": 0.770839
+      },
+      "Mercury": {
+        "longitude": 327.008972,
+        "sign_index": 10,
+        "degree_in_sign": 27.008972,
+        "is_retrograde": false,
+        "speed": 1.004583
+      },
+      "Jupiter": {
+        "longitude": 250.075685,
+        "sign_index": 8,
+        "degree_in_sign": 10.075685,
+        "is_retrograde": false,
+        "speed": 0.038297
+      },
+      "Venus": {
+        "longitude": 334.735271,
+        "sign_index": 11,
+        "degree_in_sign": 4.735271,
+        "is_retrograde": false,
+        "speed": 1.230783
+      },
+      "Saturn": {
+        "longitude": 264.809307,
+        "sign_index": 8,
+        "degree_in_sign": 24.809307,
+        "is_retrograde": false,
+        "speed": 0.031985
+      },
+      "Rahu": {
+        "longitude": 150.242561,
+        "sign_index": 5,
+        "degree_in_sign": 0.242561,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 330.242561,
+        "sign_index": 11,
+        "degree_in_sign": 0.242561,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 53437,
+  "name": "Charles-Roux, Edmonde",
+  "given_name": "Edmonde Charles-Roux",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422432.329861,
+    "year": 1920,
+    "month": 4,
+    "day": 17,
+    "calendar": "g",
+    "time": "20:55",
+    "time_type": "d",
+    "hour": 20.916667,
+    "time_unknown": false,
+    "place": "Neuilly sur Seine",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles-Roux,_Edmonde",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 126.\\nSame data in Steinbrecher Collection: Gauquelin ns 3/0312\\n",
+  "categories": [
+    "Vocation : Medical : Nurse/ Nurse's Aids",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Publisher/ Editor",
+    "Vocation : Writers : Other Writers",
+    "Notable : Awards : Who's Who"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 25.532704,
+    "lagna": 175.532704,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.743882,
+    "jd_ut": 2422432.329861,
+    "planets": {
+      "Sun": {
+        "longitude": 4.740612,
+        "sign_index": 0,
+        "degree_in_sign": 4.740612,
+        "is_retrograde": false,
+        "speed": 0.977334
+      },
+      "Moon": {
+        "longitude": 349.64186,
+        "sign_index": 11,
+        "degree_in_sign": 19.64186,
+        "is_retrograde": false,
+        "speed": 16.65465
+      },
+      "Mars": {
+        "longitude": 189.501229,
+        "sign_index": 6,
+        "degree_in_sign": 9.501229,
+        "is_retrograde": true,
+        "speed": -0.364803
+      },
+      "Mercury": {
+        "longitude": 337.329546,
+        "sign_index": 11,
+        "degree_in_sign": 7.329546,
+        "is_retrograde": false,
+        "speed": 1.013524
+      },
+      "Jupiter": {
+        "longitude": 105.650986,
+        "sign_index": 3,
+        "degree_in_sign": 15.650986,
+        "is_retrograde": false,
+        "speed": 0.042438
+      },
+      "Venus": {
+        "longitude": 344.301508,
+        "sign_index": 11,
+        "degree_in_sign": 14.301508,
+        "is_retrograde": false,
+        "speed": 1.227503
+      },
+      "Saturn": {
+        "longitude": 132.386168,
+        "sign_index": 4,
+        "degree_in_sign": 12.386168,
+        "is_retrograde": true,
+        "speed": -0.032983
+      },
+      "Rahu": {
+        "longitude": 203.927507,
+        "sign_index": 6,
+        "degree_in_sign": 23.927507,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 23.927507,
+        "sign_index": 0,
+        "degree_in_sign": 23.927507,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

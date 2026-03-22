@@ -1,0 +1,108 @@
+{
+  "adb_id": 79512,
+  "name": "Coquelin, Jean",
+  "given_name": "Jean Coquelin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402571.910166,
+    "year": 1865,
+    "month": 12,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 9",
+    "country": "France",
+    "lat": 48.8725,
+    "lon": 2.340278
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "tau",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coquelin,_Jean",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 26.216589,
+    "lagna": 236.216589,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.984683,
+    "jd_ut": 2402571.910166,
+    "planets": {
+      "Sun": {
+        "longitude": 227.291949,
+        "sign_index": 7,
+        "degree_in_sign": 17.291949,
+        "is_retrograde": false,
+        "speed": 1.014108
+      },
+      "Moon": {
+        "longitude": 27.931385,
+        "sign_index": 0,
+        "degree_in_sign": 27.931385,
+        "is_retrograde": false,
+        "speed": 18.783898
+      },
+      "Mars": {
+        "longitude": 221.264635,
+        "sign_index": 7,
+        "degree_in_sign": 11.264635,
+        "is_retrograde": false,
+        "speed": 0.717657
+      },
+      "Mercury": {
+        "longitude": 247.671139,
+        "sign_index": 8,
+        "degree_in_sign": 7.671139,
+        "is_retrograde": false,
+        "speed": 1.241104
+      },
+      "Jupiter": {
+        "longitude": 251.506558,
+        "sign_index": 8,
+        "degree_in_sign": 11.506558,
+        "is_retrograde": false,
+        "speed": 0.220198
+      },
+      "Venus": {
+        "longitude": 206.560281,
+        "sign_index": 6,
+        "degree_in_sign": 26.560281,
+        "is_retrograde": false,
+        "speed": 1.251624
+      },
+      "Saturn": {
+        "longitude": 195.360124,
+        "sign_index": 6,
+        "degree_in_sign": 15.360124,
+        "is_retrograde": false,
+        "speed": 0.10865
+      },
+      "Rahu": {
+        "longitude": 176.373143,
+        "sign_index": 5,
+        "degree_in_sign": 26.373143,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 356.373143,
+        "sign_index": 11,
+        "degree_in_sign": 26.373143,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

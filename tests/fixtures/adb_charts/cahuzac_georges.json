@@ -1,0 +1,109 @@
+{
+  "adb_id": 79473,
+  "name": "Cahuzac, Georges",
+  "given_name": "Georges Cahuzac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404468.952914,
+    "year": 1871,
+    "month": 2,
+    "day": 10,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Senouillac",
+    "country": "France",
+    "lat": 43.9425,
+    "lon": 1.950833
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cahuzac,_Georges",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 13.314668,
+    "lagna": 13.314668,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.057193,
+    "jd_ut": 2404468.952914,
+    "planets": {
+      "Sun": {
+        "longitude": 299.254354,
+        "sign_index": 9,
+        "degree_in_sign": 29.254354,
+        "is_retrograde": false,
+        "speed": 1.011051
+      },
+      "Moon": {
+        "longitude": 180.428613,
+        "sign_index": 6,
+        "degree_in_sign": 0.428613,
+        "is_retrograde": false,
+        "speed": 14.744428
+      },
+      "Mars": {
+        "longitude": 166.091843,
+        "sign_index": 5,
+        "degree_in_sign": 16.091843,
+        "is_retrograde": true,
+        "speed": -0.016588
+      },
+      "Mercury": {
+        "longitude": 273.251751,
+        "sign_index": 9,
+        "degree_in_sign": 3.251751,
+        "is_retrograde": false,
+        "speed": 0.975993
+      },
+      "Jupiter": {
+        "longitude": 54.346566,
+        "sign_index": 1,
+        "degree_in_sign": 24.346566,
+        "is_retrograde": false,
+        "speed": 0.000439
+      },
+      "Venus": {
+        "longitude": 314.540746,
+        "sign_index": 10,
+        "degree_in_sign": 14.540746,
+        "is_retrograde": false,
+        "speed": 1.248805
+      },
+      "Saturn": {
+        "longitude": 254.344937,
+        "sign_index": 8,
+        "degree_in_sign": 14.344937,
+        "is_retrograde": false,
+        "speed": 0.094776
+      },
+      "Rahu": {
+        "longitude": 75.844796,
+        "sign_index": 2,
+        "degree_in_sign": 15.844796,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 255.844796,
+        "sign_index": 8,
+        "degree_in_sign": 15.844796,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 36725,
+  "name": "Chazel, Marie-Anne",
+  "given_name": "Marie-Anne Chazel",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433909.166667,
+    "year": 1951,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Gap",
+    "country": "France",
+    "lat": 44.566667,
+    "lon": 6.083333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chazel,_Marie-Anne",
+  "source_notes": "Petitallot quotes B.C. in Cadran No.11, 9/1994\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 28.006788,
+    "lagna": 268.006788,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.182687,
+    "jd_ut": 2433909.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 152.716131,
+        "sign_index": 5,
+        "degree_in_sign": 2.716131,
+        "is_retrograde": false,
+        "speed": 0.976566
+      },
+      "Moon": {
+        "longitude": 23.464721,
+        "sign_index": 0,
+        "degree_in_sign": 23.464721,
+        "is_retrograde": false,
+        "speed": 16.346814
+      },
+      "Mars": {
+        "longitude": 117.283613,
+        "sign_index": 3,
+        "degree_in_sign": 27.283613,
+        "is_retrograde": false,
+        "speed": 0.6257
+      },
+      "Mercury": {
+        "longitude": 135.367356,
+        "sign_index": 4,
+        "degree_in_sign": 15.367356,
+        "is_retrograde": false,
+        "speed": 1.309434
+      },
+      "Jupiter": {
+        "longitude": 347.736964,
+        "sign_index": 11,
+        "degree_in_sign": 17.736964,
+        "is_retrograde": true,
+        "speed": -0.125384
+      },
+      "Venus": {
+        "longitude": 129.501986,
+        "sign_index": 4,
+        "degree_in_sign": 9.501986,
+        "is_retrograde": true,
+        "speed": -0.217624
+      },
+      "Saturn": {
+        "longitude": 161.084747,
+        "sign_index": 5,
+        "degree_in_sign": 11.084747,
+        "is_retrograde": false,
+        "speed": 0.122674
+      },
+      "Rahu": {
+        "longitude": 315.746131,
+        "sign_index": 10,
+        "degree_in_sign": 15.746131,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 135.746131,
+        "sign_index": 4,
+        "degree_in_sign": 15.746131,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

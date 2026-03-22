@@ -1,0 +1,121 @@
+{
+  "adb_id": 187,
+  "name": "Cage, John",
+  "given_name": "John Cage",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419651.041667,
+    "year": 1912,
+    "month": 9,
+    "day": 5,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cage,_John",
+  "source_notes": "Sy Scholfield provided birth certificate and upgraded the Rodden Rating to BC/BR in hand. Previously this entry had same data quoted from Contemporary Sidereal Horoscopes, Gauquelin Book of American Charts.\\nBiography: R. Kostelanetz, \"John Cage,\" 1970.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Stroke",
+    "Family : Relationship : Cohabitation more than 3 yrs",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Mate - Same sex",
+    "Lifestyle : Work : Skills - Multi-faceted",
+    "Lifestyle : Home : Expatriate",
+    "Passions : Sexuality : Gay",
+    "Vocation : Art : Photography",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 20.389353,
+    "lagna": 110.389353,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.637551,
+    "jd_ut": 2419651.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 139.932132,
+        "sign_index": 4,
+        "degree_in_sign": 19.932132,
+        "is_retrograde": false,
+        "speed": 0.970214
+      },
+      "Moon": {
+        "longitude": 62.935636,
+        "sign_index": 2,
+        "degree_in_sign": 2.935636,
+        "is_retrograde": false,
+        "speed": 9.520057
+      },
+      "Mars": {
+        "longitude": 159.191843,
+        "sign_index": 5,
+        "degree_in_sign": 9.191843,
+        "is_retrograde": false,
+        "speed": 0.646785
+      },
+      "Mercury": {
+        "longitude": 122.38075,
+        "sign_index": 4,
+        "degree_in_sign": 2.38075,
+        "is_retrograde": false,
+        "speed": 0.633221
+      },
+      "Jupiter": {
+        "longitude": 224.621673,
+        "sign_index": 7,
+        "degree_in_sign": 14.621673,
+        "is_retrograde": false,
+        "speed": 0.097628
+      },
+      "Venus": {
+        "longitude": 156.751857,
+        "sign_index": 5,
+        "degree_in_sign": 6.751857,
+        "is_retrograde": false,
+        "speed": 1.234627
+      },
+      "Saturn": {
+        "longitude": 41.368644,
+        "sign_index": 1,
+        "degree_in_sign": 11.368644,
+        "is_retrograde": false,
+        "speed": 0.019601
+      },
+      "Rahu": {
+        "longitude": 351.31379,
+        "sign_index": 11,
+        "degree_in_sign": 21.31379,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 171.31379,
+        "sign_index": 5,
+        "degree_in_sign": 21.31379,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

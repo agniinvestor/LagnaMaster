@@ -1,0 +1,108 @@
+{
+  "adb_id": 71675,
+  "name": "Cliò",
+  "given_name": "Cliò",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441901.936111,
+    "year": 1973,
+    "month": 8,
+    "day": 7,
+    "calendar": "g",
+    "time": "12:28",
+    "time_type": "d",
+    "hour": 12.466667,
+    "time_unknown": false,
+    "place": "Fondi",
+    "country": "Italy",
+    "lat": 41.35,
+    "lon": 13.416667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cliò",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 11.475191,
+    "lagna": 161.475191,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.488318,
+    "jd_ut": 2441901.936111,
+    "planets": {
+      "Sun": {
+        "longitude": 111.277179,
+        "sign_index": 3,
+        "degree_in_sign": 21.277179,
+        "is_retrograde": false,
+        "speed": 0.958254
+      },
+      "Moon": {
+        "longitude": 218.62875,
+        "sign_index": 7,
+        "degree_in_sign": 8.62875,
+        "is_retrograde": false,
+        "speed": 13.77277
+      },
+      "Mars": {
+        "longitude": 4.16075,
+        "sign_index": 0,
+        "degree_in_sign": 4.16075,
+        "is_retrograde": false,
+        "speed": 0.469928
+      },
+      "Mercury": {
+        "longitude": 92.374994,
+        "sign_index": 3,
+        "degree_in_sign": 2.374994,
+        "is_retrograde": false,
+        "speed": 0.803696
+      },
+      "Jupiter": {
+        "longitude": 282.691564,
+        "sign_index": 9,
+        "degree_in_sign": 12.691564,
+        "is_retrograde": true,
+        "speed": -0.127038
+      },
+      "Venus": {
+        "longitude": 142.593554,
+        "sign_index": 4,
+        "degree_in_sign": 22.593554,
+        "is_retrograde": false,
+        "speed": 1.201863
+      },
+      "Saturn": {
+        "longitude": 67.102408,
+        "sign_index": 2,
+        "degree_in_sign": 7.102408,
+        "is_retrograde": false,
+        "speed": 0.105693
+      },
+      "Rahu": {
+        "longitude": 252.192907,
+        "sign_index": 8,
+        "degree_in_sign": 12.192907,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 72.192907,
+        "sign_index": 2,
+        "degree_in_sign": 12.192907,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

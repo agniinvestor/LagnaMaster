@@ -1,0 +1,115 @@
+{
+  "adb_id": 4881,
+  "name": "Coogan, Jackie",
+  "given_name": "Jackie Coogan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420431.958333,
+    "year": 1914,
+    "month": 10,
+    "day": 26,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coogan,_Jackie",
+  "source_notes": "B.C. in hand from the Wilsons\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Heart",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Number of Marriages",
+    "Lifestyle : Financial : Loss - Financial crisis",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Child performer",
+    "Vocation : Military : Military service",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.848587,
+    "lagna": 126.848587,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.667406,
+    "jd_ut": 2420431.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 189.521002,
+        "sign_index": 6,
+        "degree_in_sign": 9.521002,
+        "is_retrograde": false,
+        "speed": 0.997674
+      },
+      "Moon": {
+        "longitude": 284.997261,
+        "sign_index": 9,
+        "degree_in_sign": 14.997261,
+        "is_retrograde": false,
+        "speed": 16.14447
+      },
+      "Mars": {
+        "longitude": 205.966239,
+        "sign_index": 6,
+        "degree_in_sign": 25.966239,
+        "is_retrograde": false,
+        "speed": 0.703054
+      },
+      "Mercury": {
+        "longitude": 210.258654,
+        "sign_index": 7,
+        "degree_in_sign": 0.258654,
+        "is_retrograde": false,
+        "speed": 0.119172
+      },
+      "Jupiter": {
+        "longitude": 290.257372,
+        "sign_index": 9,
+        "degree_in_sign": 20.257372,
+        "is_retrograde": false,
+        "speed": 0.055858
+      },
+      "Venus": {
+        "longitude": 227.123727,
+        "sign_index": 7,
+        "degree_in_sign": 17.123727,
+        "is_retrograde": false,
+        "speed": 0.405835
+      },
+      "Saturn": {
+        "longitude": 69.553393,
+        "sign_index": 2,
+        "degree_in_sign": 9.553393,
+        "is_retrograde": true,
+        "speed": -0.020397
+      },
+      "Rahu": {
+        "longitude": 309.931379,
+        "sign_index": 10,
+        "degree_in_sign": 9.931379,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 129.931379,
+        "sign_index": 4,
+        "degree_in_sign": 9.931379,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

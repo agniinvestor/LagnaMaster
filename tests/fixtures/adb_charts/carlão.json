@@ -1,0 +1,110 @@
+{
+  "adb_id": 99974,
+  "name": "Carlão",
+  "given_name": "Carlão",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2451981.194444,
+    "year": 2001,
+    "month": 3,
+    "day": 12,
+    "calendar": "g",
+    "time": "13:40",
+    "time_type": "s",
+    "hour": 13.666667,
+    "time_unknown": false,
+    "place": "Recife (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.053889,
+    "lon": -34.881111
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlão",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. He was born at \"Hospital do hmenom Recife.\"\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 2.834793,
+    "lagna": 62.834793,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.873775,
+    "jd_ut": 2451981.194444,
+    "planets": {
+      "Sun": {
+        "longitude": 328.297374,
+        "sign_index": 10,
+        "degree_in_sign": 28.297374,
+        "is_retrograde": false,
+        "speed": 0.997375
+      },
+      "Moon": {
+        "longitude": 188.243279,
+        "sign_index": 6,
+        "degree_in_sign": 8.243279,
+        "is_retrograde": false,
+        "speed": 19.275099
+      },
+      "Mars": {
+        "longitude": 228.846442,
+        "sign_index": 7,
+        "degree_in_sign": 18.846442,
+        "is_retrograde": false,
+        "speed": 0.453051
+      },
+      "Mercury": {
+        "longitude": 300.893056,
+        "sign_index": 10,
+        "degree_in_sign": 0.893056,
+        "is_retrograde": false,
+        "speed": 1.063089
+      },
+      "Jupiter": {
+        "longitude": 40.713983,
+        "sign_index": 1,
+        "degree_in_sign": 10.713983,
+        "is_retrograde": false,
+        "speed": 0.136973
+      },
+      "Venus": {
+        "longitude": 353.584923,
+        "sign_index": 11,
+        "degree_in_sign": 23.584923,
+        "is_retrograde": true,
+        "speed": -0.151416
+      },
+      "Saturn": {
+        "longitude": 32.145442,
+        "sign_index": 1,
+        "degree_in_sign": 2.145442,
+        "is_retrograde": false,
+        "speed": 0.079471
+      },
+      "Rahu": {
+        "longitude": 78.072603,
+        "sign_index": 2,
+        "degree_in_sign": 18.072603,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 258.072603,
+        "sign_index": 8,
+        "degree_in_sign": 18.072603,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

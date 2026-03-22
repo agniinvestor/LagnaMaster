@@ -1,0 +1,111 @@
+{
+  "adb_id": 56718,
+  "name": "Claretie, Jules",
+  "given_name": "Jules Claretie",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393443.246481,
+    "year": 1840,
+    "month": 12,
+    "day": 3,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Limoges",
+    "country": "France",
+    "lat": 45.833333,
+    "lon": 1.266667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claretie,_Jules",
+  "source_notes": "Choisnard, \"Langage Astral\"\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Other Awards"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.83224,
+    "lagna": 54.83224,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.635785,
+    "jd_ut": 2393443.246481,
+    "planets": {
+      "Sun": {
+        "longitude": 230.079395,
+        "sign_index": 7,
+        "degree_in_sign": 20.079395,
+        "is_retrograde": false,
+        "speed": 1.015259
+      },
+      "Moon": {
+        "longitude": 337.062434,
+        "sign_index": 11,
+        "degree_in_sign": 7.062434,
+        "is_retrograde": false,
+        "speed": 9.57602
+      },
+      "Mars": {
+        "longitude": 159.497278,
+        "sign_index": 5,
+        "degree_in_sign": 9.497278,
+        "is_retrograde": false,
+        "speed": 0.540998
+      },
+      "Mercury": {
+        "longitude": 226.634933,
+        "sign_index": 7,
+        "degree_in_sign": 16.634933,
+        "is_retrograde": true,
+        "speed": -1.331805
+      },
+      "Jupiter": {
+        "longitude": 220.539151,
+        "sign_index": 7,
+        "degree_in_sign": 10.539151,
+        "is_retrograde": false,
+        "speed": 0.221875
+      },
+      "Venus": {
+        "longitude": 263.267983,
+        "sign_index": 8,
+        "degree_in_sign": 23.267983,
+        "is_retrograde": false,
+        "speed": 1.227962
+      },
+      "Saturn": {
+        "longitude": 241.074801,
+        "sign_index": 8,
+        "degree_in_sign": 1.074801,
+        "is_retrograde": false,
+        "speed": 0.11651
+      },
+      "Rahu": {
+        "longitude": 300.120679,
+        "sign_index": 10,
+        "degree_in_sign": 0.120679,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 120.120679,
+        "sign_index": 4,
+        "degree_in_sign": 0.120679,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

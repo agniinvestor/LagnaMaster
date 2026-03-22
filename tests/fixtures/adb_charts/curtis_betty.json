@@ -1,0 +1,109 @@
+{
+  "adb_id": 71906,
+  "name": "Curtis, Betty",
+  "given_name": "Betty Curtis",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426789.4375,
+    "year": 1932,
+    "month": 3,
+    "day": 22,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "s",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Milan",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curtis,_Betty",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.022106,
+    "lagna": 192.022106,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.910464,
+    "jd_ut": 2426789.4375,
+    "planets": {
+      "Sun": {
+        "longitude": 339.180551,
+        "sign_index": 11,
+        "degree_in_sign": 9.180551,
+        "is_retrograde": false,
+        "speed": 0.991178
+      },
+      "Moon": {
+        "longitude": 165.521245,
+        "sign_index": 5,
+        "degree_in_sign": 15.521245,
+        "is_retrograde": false,
+        "speed": 11.403774
+      },
+      "Mars": {
+        "longitude": 328.217834,
+        "sign_index": 10,
+        "degree_in_sign": 28.217834,
+        "is_retrograde": false,
+        "speed": 0.783512
+      },
+      "Mercury": {
+        "longitude": 357.702873,
+        "sign_index": 11,
+        "degree_in_sign": 27.702873,
+        "is_retrograde": false,
+        "speed": 1.031951
+      },
+      "Jupiter": {
+        "longitude": 110.12966,
+        "sign_index": 3,
+        "degree_in_sign": 20.12966,
+        "is_retrograde": true,
+        "speed": -0.052126
+      },
+      "Venus": {
+        "longitude": 22.834102,
+        "sign_index": 0,
+        "degree_in_sign": 22.834102,
+        "is_retrograde": false,
+        "speed": 1.115097
+      },
+      "Saturn": {
+        "longitude": 279.671972,
+        "sign_index": 9,
+        "degree_in_sign": 9.671972,
+        "is_retrograde": false,
+        "speed": 0.078346
+      },
+      "Rahu": {
+        "longitude": 333.035299,
+        "sign_index": 11,
+        "degree_in_sign": 3.035299,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 153.035299,
+        "sign_index": 5,
+        "degree_in_sign": 3.035299,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

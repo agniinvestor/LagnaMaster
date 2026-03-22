@@ -1,0 +1,112 @@
+{
+  "adb_id": 93007,
+  "name": "Craenhals, François",
+  "given_name": "François Craenhals",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424834.708333,
+    "year": 1926,
+    "month": 11,
+    "day": 15,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Ixelles",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.366667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Craenhals,_François",
+  "source_notes": "Michaël Mandl quotes Jany Bessière from birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_arts_medias-3.pdf].\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Other Art",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 14.723689,
+    "lagna": 164.723689,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.835729,
+    "jd_ut": 2424834.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 209.24759,
+        "sign_index": 6,
+        "degree_in_sign": 29.24759,
+        "is_retrograde": false,
+        "speed": 1.007237
+      },
+      "Moon": {
+        "longitude": 328.380605,
+        "sign_index": 10,
+        "degree_in_sign": 28.380605,
+        "is_retrograde": false,
+        "speed": 17.202063
+      },
+      "Mars": {
+        "longitude": 14.890848,
+        "sign_index": 0,
+        "degree_in_sign": 14.890848,
+        "is_retrograde": true,
+        "speed": -0.280431
+      },
+      "Mercury": {
+        "longitude": 228.554029,
+        "sign_index": 7,
+        "degree_in_sign": 18.554029,
+        "is_retrograde": false,
+        "speed": 0.064636
+      },
+      "Jupiter": {
+        "longitude": 296.145691,
+        "sign_index": 9,
+        "degree_in_sign": 26.145691,
+        "is_retrograde": false,
+        "speed": 0.101085
+      },
+      "Venus": {
+        "longitude": 207.682901,
+        "sign_index": 6,
+        "degree_in_sign": 27.682901,
+        "is_retrograde": false,
+        "speed": 1.256217
+      },
+      "Saturn": {
+        "longitude": 215.061964,
+        "sign_index": 7,
+        "degree_in_sign": 5.061964,
+        "is_retrograde": false,
+        "speed": 0.118686
+      },
+      "Rahu": {
+        "longitude": 76.620462,
+        "sign_index": 2,
+        "degree_in_sign": 16.620462,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 256.620462,
+        "sign_index": 8,
+        "degree_in_sign": 16.620462,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

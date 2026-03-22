@@ -1,0 +1,110 @@
+{
+  "adb_id": 105354,
+  "name": "Caldwell, Dalton",
+  "given_name": "Dalton Caldwell",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2444297.013889,
+    "year": 1980,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "05:20",
+    "time_type": "s",
+    "hour": 5.333333,
+    "time_unknown": false,
+    "place": "El Paso",
+    "country": "Texas",
+    "lat": 31.766667,
+    "lon": -106.483333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caldwell,_Dalton",
+  "source_notes": "Sy Scholfield provided birth notice, ''El Paso Times'' (El Paso, Texas), 7 March 1980, page D7: born at Sierra Medical Center. \\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Entrepreneur",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 24.2385,
+    "lagna": 264.2385,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.579907,
+    "jd_ut": 2444297.013889,
+    "planets": {
+      "Sun": {
+        "longitude": 314.488765,
+        "sign_index": 10,
+        "degree_in_sign": 14.488765,
+        "is_retrograde": false,
+        "speed": 1.004531
+      },
+      "Moon": {
+        "longitude": 96.938819,
+        "sign_index": 3,
+        "degree_in_sign": 6.938819,
+        "is_retrograde": false,
+        "speed": 14.354116
+      },
+      "Mars": {
+        "longitude": 131.297682,
+        "sign_index": 4,
+        "degree_in_sign": 11.297682,
+        "is_retrograde": true,
+        "speed": -0.395792
+      },
+      "Mercury": {
+        "longitude": 327.756267,
+        "sign_index": 10,
+        "degree_in_sign": 27.756267,
+        "is_retrograde": true,
+        "speed": -0.234986
+      },
+      "Jupiter": {
+        "longitude": 131.348353,
+        "sign_index": 4,
+        "degree_in_sign": 11.348353,
+        "is_retrograde": true,
+        "speed": -0.131129
+      },
+      "Venus": {
+        "longitude": 356.983685,
+        "sign_index": 11,
+        "degree_in_sign": 26.983685,
+        "is_retrograde": false,
+        "speed": 1.152658
+      },
+      "Saturn": {
+        "longitude": 151.276632,
+        "sign_index": 5,
+        "degree_in_sign": 1.276632,
+        "is_retrograde": true,
+        "speed": -0.073874
+      },
+      "Rahu": {
+        "longitude": 125.272861,
+        "sign_index": 4,
+        "degree_in_sign": 5.272861,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 305.272861,
+        "sign_index": 10,
+        "degree_in_sign": 5.272861,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

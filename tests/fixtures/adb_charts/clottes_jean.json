@@ -1,0 +1,110 @@
+{
+  "adb_id": 67521,
+  "name": "Clottes, Jean",
+  "given_name": "Jean Clottes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427262.457639,
+    "year": 1933,
+    "month": 7,
+    "day": 8,
+    "calendar": "g",
+    "time": "23:59",
+    "time_type": "d",
+    "hour": 23.983333,
+    "time_unknown": false,
+    "place": "Espéraza",
+    "country": "France",
+    "lat": 42.936111,
+    "lon": 2.221389
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clottes,_Jean",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'diverses' pdf file, p. 60: born at 2400 hours.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 20.364264,
+    "lagna": 320.364264,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.928549,
+    "jd_ut": 2427262.457639,
+    "planets": {
+      "Sun": {
+        "longitude": 83.349352,
+        "sign_index": 2,
+        "degree_in_sign": 23.349352,
+        "is_retrograde": false,
+        "speed": 0.953004
+      },
+      "Moon": {
+        "longitude": 283.973249,
+        "sign_index": 9,
+        "degree_in_sign": 13.973249,
+        "is_retrograde": false,
+        "speed": 10.868866
+      },
+      "Mars": {
+        "longitude": 158.173962,
+        "sign_index": 5,
+        "degree_in_sign": 8.173962,
+        "is_retrograde": false,
+        "speed": 0.544426
+      },
+      "Mercury": {
+        "longitude": 108.095202,
+        "sign_index": 3,
+        "degree_in_sign": 18.095202,
+        "is_retrograde": false,
+        "speed": 0.578172
+      },
+      "Jupiter": {
+        "longitude": 145.174724,
+        "sign_index": 4,
+        "degree_in_sign": 25.174724,
+        "is_retrograde": false,
+        "speed": 0.14814
+      },
+      "Venus": {
+        "longitude": 104.262427,
+        "sign_index": 3,
+        "degree_in_sign": 14.262427,
+        "is_retrograde": false,
+        "speed": 1.219276
+      },
+      "Saturn": {
+        "longitude": 292.055906,
+        "sign_index": 9,
+        "degree_in_sign": 22.055906,
+        "is_retrograde": true,
+        "speed": -0.060343
+      },
+      "Rahu": {
+        "longitude": 307.96898,
+        "sign_index": 10,
+        "degree_in_sign": 7.96898,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 127.96898,
+        "sign_index": 4,
+        "degree_in_sign": 7.96898,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

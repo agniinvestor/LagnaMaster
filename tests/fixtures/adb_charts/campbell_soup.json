@@ -1,0 +1,112 @@
+{
+  "adb_id": 86442,
+  "name": "Campbell, Soup",
+  "given_name": "Soup Campbell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420564.291667,
+    "year": 1915,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Sparta",
+    "country": "Virginia",
+    "lat": 38.0,
+    "lon": -77.233333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campbell,_Soup",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Sports : Baseball",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 11.948581,
+    "lagna": 71.948581,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.672465,
+    "jd_ut": 2420564.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 323.458482,
+        "sign_index": 10,
+        "degree_in_sign": 23.458482,
+        "is_retrograde": false,
+        "speed": 1.00022
+      },
+      "Moon": {
+        "longitude": 223.342905,
+        "sign_index": 7,
+        "degree_in_sign": 13.342905,
+        "is_retrograde": false,
+        "speed": 16.790836
+      },
+      "Mars": {
+        "longitude": 305.950661,
+        "sign_index": 10,
+        "degree_in_sign": 5.950661,
+        "is_retrograde": false,
+        "speed": 0.786289
+      },
+      "Mercury": {
+        "longitude": 300.648869,
+        "sign_index": 10,
+        "degree_in_sign": 0.648869,
+        "is_retrograde": false,
+        "speed": 0.109237
+      },
+      "Jupiter": {
+        "longitude": 314.949354,
+        "sign_index": 10,
+        "degree_in_sign": 14.949354,
+        "is_retrograde": false,
+        "speed": 0.23986
+      },
+      "Venus": {
+        "longitude": 278.72109,
+        "sign_index": 9,
+        "degree_in_sign": 8.72109,
+        "is_retrograde": false,
+        "speed": 1.127891
+      },
+      "Saturn": {
+        "longitude": 62.778623,
+        "sign_index": 2,
+        "degree_in_sign": 2.778623,
+        "is_retrograde": false,
+        "speed": 0.018002
+      },
+      "Rahu": {
+        "longitude": 302.918758,
+        "sign_index": 10,
+        "degree_in_sign": 2.918758,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 122.918758,
+        "sign_index": 4,
+        "degree_in_sign": 2.918758,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

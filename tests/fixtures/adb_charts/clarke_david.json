@@ -1,0 +1,109 @@
+{
+  "adb_id": 80880,
+  "name": "Clarke, David",
+  "given_name": "David Clarke",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435707.569444,
+    "year": 1956,
+    "month": 8,
+    "day": 21,
+    "calendar": "g",
+    "time": "19:40",
+    "time_type": "s",
+    "hour": 19.666667,
+    "time_unknown": false,
+    "place": "Milwaukee",
+    "country": "Wisconsin",
+    "lat": 43.033333,
+    "lon": -87.9
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "pis",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarke,_David",
+  "source_notes": "Birth record in hand from Viktor E.\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Vocation : Law : Police"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 8.813775,
+    "lagna": 308.813775,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.251452,
+    "jd_ut": 2435707.569444,
+    "planets": {
+      "Sun": {
+        "longitude": 125.676899,
+        "sign_index": 4,
+        "degree_in_sign": 5.676899,
+        "is_retrograde": false,
+        "speed": 0.963224
+      },
+      "Moon": {
+        "longitude": 312.081588,
+        "sign_index": 10,
+        "degree_in_sign": 12.081588,
+        "is_retrograde": false,
+        "speed": 10.57725
+      },
+      "Mars": {
+        "longitude": 329.538896,
+        "sign_index": 10,
+        "degree_in_sign": 29.538896,
+        "is_retrograde": true,
+        "speed": -0.148092
+      },
+      "Mercury": {
+        "longitude": 151.286865,
+        "sign_index": 5,
+        "degree_in_sign": 1.286865,
+        "is_retrograde": false,
+        "speed": 1.285502
+      },
+      "Jupiter": {
+        "longitude": 135.88933,
+        "sign_index": 4,
+        "degree_in_sign": 15.88933,
+        "is_retrograde": false,
+        "speed": 0.214827
+      },
+      "Venus": {
+        "longitude": 80.245907,
+        "sign_index": 2,
+        "degree_in_sign": 20.245907,
+        "is_retrograde": false,
+        "speed": 0.877301
+      },
+      "Saturn": {
+        "longitude": 213.311459,
+        "sign_index": 7,
+        "degree_in_sign": 3.311459,
+        "is_retrograde": false,
+        "speed": 0.035637
+      },
+      "Rahu": {
+        "longitude": 220.44507,
+        "sign_index": 7,
+        "degree_in_sign": 10.44507,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 40.44507,
+        "sign_index": 1,
+        "degree_in_sign": 10.44507,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

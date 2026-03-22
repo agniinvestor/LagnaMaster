@@ -1,0 +1,109 @@
+{
+  "adb_id": 9211,
+  "name": "Construction Worker 9211",
+  "given_name": "Construction Worker 9211",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430626.133333,
+    "year": 1942,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "10:12",
+    "time_type": "w",
+    "hour": 10.2,
+    "time_unknown": false,
+    "place": "Topeka",
+    "country": "Kansas",
+    "lat": 39.05,
+    "lon": -95.683333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Construction_Worker_9211",
+  "source_notes": "LMR client 1980, B.C.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Circulatory problems",
+    "Vocation : Building Trades : Construction work"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 19.262216,
+    "lagna": 169.262216,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.057157,
+    "jd_ut": 2430626.133333,
+    "planets": {
+      "Sun": {
+        "longitude": 156.9013,
+        "sign_index": 5,
+        "degree_in_sign": 6.9013,
+        "is_retrograde": false,
+        "speed": 0.978751
+      },
+      "Moon": {
+        "longitude": 324.011858,
+        "sign_index": 10,
+        "degree_in_sign": 24.011858,
+        "is_retrograde": false,
+        "speed": 17.233284
+      },
+      "Mars": {
+        "longitude": 160.972826,
+        "sign_index": 5,
+        "degree_in_sign": 10.972826,
+        "is_retrograde": false,
+        "speed": 0.650073
+      },
+      "Mercury": {
+        "longitude": 181.646677,
+        "sign_index": 6,
+        "degree_in_sign": 1.646677,
+        "is_retrograde": false,
+        "speed": 0.486998
+      },
+      "Jupiter": {
+        "longitude": 88.398872,
+        "sign_index": 2,
+        "degree_in_sign": 28.398872,
+        "is_retrograde": false,
+        "speed": 0.140668
+      },
+      "Venus": {
+        "longitude": 143.065757,
+        "sign_index": 4,
+        "degree_in_sign": 23.065757,
+        "is_retrograde": false,
+        "speed": 1.24119
+      },
+      "Saturn": {
+        "longitude": 49.466127,
+        "sign_index": 1,
+        "degree_in_sign": 19.466127,
+        "is_retrograde": false,
+        "speed": 0.002918
+      },
+      "Rahu": {
+        "longitude": 129.720839,
+        "sign_index": 4,
+        "degree_in_sign": 9.720839,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.720839,
+        "sign_index": 10,
+        "degree_in_sign": 9.720839,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

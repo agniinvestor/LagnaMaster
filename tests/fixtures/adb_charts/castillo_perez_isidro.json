@@ -1,0 +1,108 @@
+{
+  "adb_id": 72064,
+  "name": "Castillo Perez, Isidro",
+  "given_name": "Isidro Castillo Perez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415332.95,
+    "year": 1900,
+    "month": 11,
+    "day": 9,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "La Piedad",
+    "country": "Mexico",
+    "lat": 20.35,
+    "lon": -102.0
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castillo_Perez,_Isidro",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Education : Administrator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 2.046479,
+    "lagna": 152.046479,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.472475,
+    "jd_ut": 2415332.95,
+    "planets": {
+      "Sun": {
+        "longitude": 204.12006,
+        "sign_index": 6,
+        "degree_in_sign": 24.12006,
+        "is_retrograde": false,
+        "speed": 1.004966
+      },
+      "Moon": {
+        "longitude": 57.376435,
+        "sign_index": 1,
+        "degree_in_sign": 27.376435,
+        "is_retrograde": false,
+        "speed": 9.050813
+      },
+      "Mars": {
+        "longitude": 121.217161,
+        "sign_index": 4,
+        "degree_in_sign": 1.217161,
+        "is_retrograde": false,
+        "speed": 0.48057
+      },
+      "Mercury": {
+        "longitude": 223.789857,
+        "sign_index": 7,
+        "degree_in_sign": 13.789857,
+        "is_retrograde": false,
+        "speed": 0.077499
+      },
+      "Jupiter": {
+        "longitude": 231.705404,
+        "sign_index": 7,
+        "degree_in_sign": 21.705404,
+        "is_retrograde": false,
+        "speed": 0.212849
+      },
+      "Venus": {
+        "longitude": 164.085847,
+        "sign_index": 5,
+        "degree_in_sign": 14.085847,
+        "is_retrograde": false,
+        "speed": 1.187682
+      },
+      "Saturn": {
+        "longitude": 249.423298,
+        "sign_index": 8,
+        "degree_in_sign": 9.423298,
+        "is_retrograde": false,
+        "speed": 0.094058
+      },
+      "Rahu": {
+        "longitude": 220.138549,
+        "sign_index": 7,
+        "degree_in_sign": 10.138549,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 40.138549,
+        "sign_index": 1,
+        "degree_in_sign": 10.138549,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

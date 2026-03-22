@@ -1,0 +1,109 @@
+{
+  "adb_id": 81069,
+  "name": "Considère, Armand",
+  "given_name": "Armand Considère",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393630.399861,
+    "year": 1841,
+    "month": 6,
+    "day": 8,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Port sur Saône",
+    "country": "France",
+    "lat": 47.683333,
+    "lon": 6.05
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Considère,_Armand",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Vocation : Engineer : Civil",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 5.724122,
+    "lagna": 245.724122,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.642937,
+    "jd_ut": 2393630.399861,
+    "planets": {
+      "Sun": {
+        "longitude": 56.18188,
+        "sign_index": 1,
+        "degree_in_sign": 26.18188,
+        "is_retrograde": false,
+        "speed": 0.95542
+      },
+      "Moon": {
+        "longitude": 288.579535,
+        "sign_index": 9,
+        "degree_in_sign": 18.579535,
+        "is_retrograde": false,
+        "speed": 11.170082
+      },
+      "Mars": {
+        "longitude": 177.272053,
+        "sign_index": 5,
+        "degree_in_sign": 27.272053,
+        "is_retrograde": false,
+        "speed": 0.137348
+      },
+      "Mercury": {
+        "longitude": 71.544678,
+        "sign_index": 2,
+        "degree_in_sign": 11.544678,
+        "is_retrograde": false,
+        "speed": 1.892794
+      },
+      "Jupiter": {
+        "longitude": 232.970334,
+        "sign_index": 7,
+        "degree_in_sign": 22.970334,
+        "is_retrograde": true,
+        "speed": -0.127236
+      },
+      "Venus": {
+        "longitude": 24.328288,
+        "sign_index": 0,
+        "degree_in_sign": 24.328288,
+        "is_retrograde": false,
+        "speed": 0.127426
+      },
+      "Saturn": {
+        "longitude": 249.057909,
+        "sign_index": 8,
+        "degree_in_sign": 9.057909,
+        "is_retrograde": true,
+        "speed": -0.070702
+      },
+      "Rahu": {
+        "longitude": 290.203017,
+        "sign_index": 9,
+        "degree_in_sign": 20.203017,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 110.203017,
+        "sign_index": 3,
+        "degree_in_sign": 20.203017,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

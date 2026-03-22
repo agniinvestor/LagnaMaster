@@ -1,0 +1,113 @@
+{
+  "adb_id": 91987,
+  "name": "Campo, Manuel del",
+  "given_name": "Manuel del Campo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420086.150417,
+    "year": 1913,
+    "month": 11,
+    "day": 14,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4,
+    "lon": -99.15
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campo,_Manuel_del",
+  "source_notes": "Birth certificate in hand from Sy Scholfield.\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Number of Marriages",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Misc. : Changed name",
+    "Vocation : Entertain/Business : Production jobs",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.087487,
+    "lagna": 224.087487,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.654186,
+    "jd_ut": 2420086.150417,
+    "planets": {
+      "Sun": {
+        "longitude": 209.02122,
+        "sign_index": 6,
+        "degree_in_sign": 29.02122,
+        "is_retrograde": false,
+        "speed": 1.007093
+      },
+      "Moon": {
+        "longitude": 36.181061,
+        "sign_index": 1,
+        "degree_in_sign": 6.181061,
+        "is_retrograde": false,
+        "speed": 15.773427
+      },
+      "Mars": {
+        "longitude": 90.932164,
+        "sign_index": 3,
+        "degree_in_sign": 0.932164,
+        "is_retrograde": false,
+        "speed": 0.15475
+      },
+      "Mercury": {
+        "longitude": 225.926336,
+        "sign_index": 7,
+        "degree_in_sign": 15.926336,
+        "is_retrograde": true,
+        "speed": -0.293955
+      },
+      "Jupiter": {
+        "longitude": 262.506938,
+        "sign_index": 8,
+        "degree_in_sign": 22.506938,
+        "is_retrograde": false,
+        "speed": 0.181787
+      },
+      "Venus": {
+        "longitude": 187.642146,
+        "sign_index": 6,
+        "degree_in_sign": 7.642146,
+        "is_retrograde": false,
+        "speed": 1.248469
+      },
+      "Saturn": {
+        "longitude": 53.803404,
+        "sign_index": 1,
+        "degree_in_sign": 23.803404,
+        "is_retrograde": true,
+        "speed": -0.070569
+      },
+      "Rahu": {
+        "longitude": 328.256465,
+        "sign_index": 10,
+        "degree_in_sign": 28.256465,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 148.256465,
+        "sign_index": 4,
+        "degree_in_sign": 28.256465,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

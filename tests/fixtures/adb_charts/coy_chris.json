@@ -1,0 +1,108 @@
+{
+  "adb_id": 89420,
+  "name": "Coy, Chris",
+  "given_name": "Chris Coy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446552.407639,
+    "year": 1986,
+    "month": 5,
+    "day": 1,
+    "calendar": "g",
+    "time": "17:47",
+    "time_type": "d",
+    "hour": 17.783333,
+    "time_unknown": false,
+    "place": "Louisville",
+    "country": "Kentucky",
+    "lat": 38.25,
+    "lon": -85.766667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coy,_Chris",
+  "source_notes": "Birth certificate in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.200317,
+    "lagna": 141.200317,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.666158,
+    "jd_ut": 2446552.407639,
+    "planets": {
+      "Sun": {
+        "longitude": 17.549767,
+        "sign_index": 0,
+        "degree_in_sign": 17.549767,
+        "is_retrograde": false,
+        "speed": 0.970396
+      },
+      "Moon": {
+        "longitude": 296.521969,
+        "sign_index": 9,
+        "degree_in_sign": 26.521969,
+        "is_retrograde": false,
+        "speed": 16.740337
+      },
+      "Mars": {
+        "longitude": 261.756297,
+        "sign_index": 8,
+        "degree_in_sign": 21.756297,
+        "is_retrograde": false,
+        "speed": 0.361372
+      },
+      "Mercury": {
+        "longitude": 356.624614,
+        "sign_index": 11,
+        "degree_in_sign": 26.624614,
+        "is_retrograde": false,
+        "speed": 1.642406
+      },
+      "Jupiter": {
+        "longitude": 321.856288,
+        "sign_index": 10,
+        "degree_in_sign": 21.856288,
+        "is_retrograde": false,
+        "speed": 0.18331
+      },
+      "Venus": {
+        "longitude": 42.557275,
+        "sign_index": 1,
+        "degree_in_sign": 12.557275,
+        "is_retrograde": false,
+        "speed": 1.215963
+      },
+      "Saturn": {
+        "longitude": 224.580514,
+        "sign_index": 7,
+        "degree_in_sign": 14.580514,
+        "is_retrograde": true,
+        "speed": -0.061735
+      },
+      "Rahu": {
+        "longitude": 5.754971,
+        "sign_index": 0,
+        "degree_in_sign": 5.754971,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 185.754971,
+        "sign_index": 6,
+        "degree_in_sign": 5.754971,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

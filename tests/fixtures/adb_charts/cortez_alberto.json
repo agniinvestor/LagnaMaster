@@ -1,0 +1,109 @@
+{
+  "adb_id": 69229,
+  "name": "Cortez, Alberto",
+  "given_name": "Alberto Cortez",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2429700.0,
+    "year": 1940,
+    "month": 3,
+    "day": 11,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Rancul (La Pampa)",
+    "country": "Argentina",
+    "lat": -35.05,
+    "lon": -64.7
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortez,_Alberto",
+  "source_notes": "Castellanos quotes his official website: http: //www.albertocortez.com/Biography / home.asp\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 25.890416,
+    "lagna": 325.890416,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.021747,
+    "jd_ut": 2429700.0,
+    "planets": {
+      "Sun": {
+        "longitude": 327.750902,
+        "sign_index": 10,
+        "degree_in_sign": 27.750902,
+        "is_retrograde": false,
+        "speed": 0.998363
+      },
+      "Moon": {
+        "longitude": 354.593855,
+        "sign_index": 11,
+        "degree_in_sign": 24.593855,
+        "is_retrograde": false,
+        "speed": 12.200089
+      },
+      "Mars": {
+        "longitude": 22.782035,
+        "sign_index": 0,
+        "degree_in_sign": 22.782035,
+        "is_retrograde": false,
+        "speed": 0.6712
+      },
+      "Mercury": {
+        "longitude": 335.269841,
+        "sign_index": 11,
+        "degree_in_sign": 5.269841,
+        "is_retrograde": true,
+        "speed": -0.695564
+      },
+      "Jupiter": {
+        "longitude": 351.328573,
+        "sign_index": 11,
+        "degree_in_sign": 21.328573,
+        "is_retrograde": false,
+        "speed": 0.231969
+      },
+      "Venus": {
+        "longitude": 10.210343,
+        "sign_index": 0,
+        "degree_in_sign": 10.210343,
+        "is_retrograde": false,
+        "speed": 1.144793
+      },
+      "Saturn": {
+        "longitude": 5.970893,
+        "sign_index": 0,
+        "degree_in_sign": 5.970893,
+        "is_retrograde": false,
+        "speed": 0.109459
+      },
+      "Rahu": {
+        "longitude": 178.79856,
+        "sign_index": 5,
+        "degree_in_sign": 28.79856,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 358.79856,
+        "sign_index": 11,
+        "degree_in_sign": 28.79856,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 53439,
+  "name": "Clavel, Bernard",
+  "given_name": "Bernard Clavel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423568.9375,
+    "year": 1923,
+    "month": 5,
+    "day": 29,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "d",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Lons le Saunier",
+    "country": "France",
+    "lat": 46.666667,
+    "lon": 5.55
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clavel,_Bernard",
+  "source_notes": "Steinbrecher collection: Gauquelin 6/203\\n\\nDidier Geslain confirmed on 13-sep-2012 11:30, acte EC DG 115\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Military : Pacifist/  Objector",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Awards : Other Awards"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 13.91829,
+    "lagna": 103.91829,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.787336,
+    "jd_ut": 2423568.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 44.244432,
+        "sign_index": 1,
+        "degree_in_sign": 14.244432,
+        "is_retrograde": false,
+        "speed": 0.958622
+      },
+      "Moon": {
+        "longitude": 213.441215,
+        "sign_index": 7,
+        "degree_in_sign": 3.441215,
+        "is_retrograde": false,
+        "speed": 18.930803
+      },
+      "Mars": {
+        "longitude": 66.258482,
+        "sign_index": 2,
+        "degree_in_sign": 6.258482,
+        "is_retrograde": false,
+        "speed": 0.659107
+      },
+      "Mercury": {
+        "longitude": 43.759481,
+        "sign_index": 1,
+        "degree_in_sign": 13.759481,
+        "is_retrograde": true,
+        "speed": -0.564686
+      },
+      "Jupiter": {
+        "longitude": 198.436455,
+        "sign_index": 6,
+        "degree_in_sign": 18.436455,
+        "is_retrograde": true,
+        "speed": -0.104032
+      },
+      "Venus": {
+        "longitude": 16.623017,
+        "sign_index": 0,
+        "degree_in_sign": 16.623017,
+        "is_retrograde": false,
+        "speed": 1.204447
+      },
+      "Saturn": {
+        "longitude": 170.851707,
+        "sign_index": 5,
+        "degree_in_sign": 20.851707,
+        "is_retrograde": true,
+        "speed": -0.03018
+      },
+      "Rahu": {
+        "longitude": 143.696296,
+        "sign_index": 4,
+        "degree_in_sign": 23.696296,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 323.696296,
+        "sign_index": 10,
+        "degree_in_sign": 23.696296,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

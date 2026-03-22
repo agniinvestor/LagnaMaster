@@ -1,0 +1,108 @@
+{
+  "adb_id": 52159,
+  "name": "Casteur, Odette",
+  "given_name": "Odette Casteur",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425196.453472,
+    "year": 1927,
+    "month": 11,
+    "day": 11,
+    "calendar": "g",
+    "time": "22:53",
+    "time_type": "s",
+    "hour": 22.883333,
+    "time_unknown": false,
+    "place": "Tourcoing",
+    "country": "France",
+    "lat": 50.716667,
+    "lon": 3.15
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casteur,_Odette",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/1761\\n",
+  "categories": [
+    "Vocation : Sports : Swimming"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 6.380696,
+    "lagna": 96.380696,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.84956,
+    "jd_ut": 2425196.453472,
+    "planets": {
+      "Sun": {
+        "longitude": 205.711165,
+        "sign_index": 6,
+        "degree_in_sign": 25.711165,
+        "is_retrograde": false,
+        "speed": 1.005552
+      },
+      "Moon": {
+        "longitude": 63.232037,
+        "sign_index": 2,
+        "degree_in_sign": 3.232037,
+        "is_retrograde": false,
+        "speed": 11.920044
+      },
+      "Mars": {
+        "longitude": 198.693078,
+        "sign_index": 6,
+        "degree_in_sign": 18.693078,
+        "is_retrograde": false,
+        "speed": 0.686906
+      },
+      "Mercury": {
+        "longitude": 201.754924,
+        "sign_index": 6,
+        "degree_in_sign": 21.754924,
+        "is_retrograde": true,
+        "speed": -1.249468
+      },
+      "Jupiter": {
+        "longitude": 330.869829,
+        "sign_index": 11,
+        "degree_in_sign": 0.869829,
+        "is_retrograde": true,
+        "speed": -0.026913
+      },
+      "Venus": {
+        "longitude": 159.35262,
+        "sign_index": 5,
+        "degree_in_sign": 9.35262,
+        "is_retrograde": false,
+        "speed": 0.930292
+      },
+      "Saturn": {
+        "longitude": 224.821201,
+        "sign_index": 7,
+        "degree_in_sign": 14.821201,
+        "is_retrograde": false,
+        "speed": 0.114168
+      },
+      "Rahu": {
+        "longitude": 57.450834,
+        "sign_index": 1,
+        "degree_in_sign": 27.450834,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 237.450834,
+        "sign_index": 7,
+        "degree_in_sign": 27.450834,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

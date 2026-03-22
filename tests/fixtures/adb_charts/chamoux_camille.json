@@ -1,0 +1,108 @@
+{
+  "adb_id": 79003,
+  "name": "Chamoux, Camille",
+  "given_name": "Camille Chamoux",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443409.40625,
+    "year": 1977,
+    "month": 9,
+    "day": 22,
+    "calendar": "g",
+    "time": "23:45",
+    "time_type": "d",
+    "hour": 23.75,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamoux,_Camille",
+  "source_notes": "Herself to astrologer Christine Haas on France 2. 23:45 on bc (Paddy de Jabrun)\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 12.890374,
+    "lagna": 42.890374,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.545964,
+    "jd_ut": 2443409.40625,
+    "planets": {
+      "Sun": {
+        "longitude": 156.218745,
+        "sign_index": 5,
+        "degree_in_sign": 6.218745,
+        "is_retrograde": false,
+        "speed": 0.978527
+      },
+      "Moon": {
+        "longitude": 280.372017,
+        "sign_index": 9,
+        "degree_in_sign": 10.372017,
+        "is_retrograde": false,
+        "speed": 10.48305
+      },
+      "Mars": {
+        "longitude": 79.429622,
+        "sign_index": 2,
+        "degree_in_sign": 19.429622,
+        "is_retrograde": false,
+        "speed": 0.563307
+      },
+      "Mercury": {
+        "longitude": 138.533552,
+        "sign_index": 4,
+        "degree_in_sign": 18.533552,
+        "is_retrograde": false,
+        "speed": 1.168398
+      },
+      "Jupiter": {
+        "longitude": 71.007031,
+        "sign_index": 2,
+        "degree_in_sign": 11.007031,
+        "is_retrograde": false,
+        "speed": 0.09705
+      },
+      "Venus": {
+        "longitude": 126.790154,
+        "sign_index": 4,
+        "degree_in_sign": 6.790154,
+        "is_retrograde": false,
+        "speed": 1.215588
+      },
+      "Saturn": {
+        "longitude": 121.852253,
+        "sign_index": 4,
+        "degree_in_sign": 1.852253,
+        "is_retrograde": false,
+        "speed": 0.113171
+      },
+      "Rahu": {
+        "longitude": 172.308995,
+        "sign_index": 5,
+        "degree_in_sign": 22.308995,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 352.308995,
+        "sign_index": 11,
+        "degree_in_sign": 22.308995,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

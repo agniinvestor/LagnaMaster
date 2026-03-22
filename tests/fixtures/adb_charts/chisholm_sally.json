@@ -1,0 +1,109 @@
+{
+  "adb_id": 42040,
+  "name": "Chisholm, Sally",
+  "given_name": "Sally Chisholm",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432468.0,
+    "year": 1947,
+    "month": 10,
+    "day": 9,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Ponca City",
+    "country": "Oklahoma",
+    "lat": 36.7,
+    "lon": -97.083333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chisholm,_Sally",
+  "source_notes": "LMR quotes Shelley Ackerman 4/2001, from her, a personal friend\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 22.129444,
+    "lagna": 142.129444,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.127582,
+    "jd_ut": 2432468.0,
+    "planets": {
+      "Sun": {
+        "longitude": 172.221376,
+        "sign_index": 5,
+        "degree_in_sign": 22.221376,
+        "is_retrograde": false,
+        "speed": 0.988111
+      },
+      "Moon": {
+        "longitude": 110.128444,
+        "sign_index": 3,
+        "degree_in_sign": 20.128444,
+        "is_retrograde": false,
+        "speed": 10.307772
+      },
+      "Mars": {
+        "longitude": 101.670001,
+        "sign_index": 3,
+        "degree_in_sign": 11.670001,
+        "is_retrograde": false,
+        "speed": 0.561564
+      },
+      "Mercury": {
+        "longitude": 196.729025,
+        "sign_index": 6,
+        "degree_in_sign": 16.729025,
+        "is_retrograde": false,
+        "speed": 1.150435
+      },
+      "Jupiter": {
+        "longitude": 213.955292,
+        "sign_index": 7,
+        "degree_in_sign": 3.955292,
+        "is_retrograde": false,
+        "speed": 0.191567
+      },
+      "Venus": {
+        "longitude": 181.793499,
+        "sign_index": 6,
+        "degree_in_sign": 1.793499,
+        "is_retrograde": false,
+        "speed": 1.246999
+      },
+      "Saturn": {
+        "longitude": 116.826042,
+        "sign_index": 3,
+        "degree_in_sign": 26.826042,
+        "is_retrograde": false,
+        "speed": 0.090675
+      },
+      "Rahu": {
+        "longitude": 32.116521,
+        "sign_index": 1,
+        "degree_in_sign": 2.116521,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 212.116521,
+        "sign_index": 7,
+        "degree_in_sign": 2.116521,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 70088,
+  "name": "Collazo, Oscar",
+  "given_name": "Oscar Collazo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420153.5,
+    "year": 1914,
+    "month": 1,
+    "day": 20,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Florida",
+    "country": "Puerto Rico",
+    "lat": 18.233333,
+    "lon": -65.783333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collazo,_Oscar",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Other Criminal"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 10.492205,
+    "lagna": 100.492205,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.65676,
+    "jd_ut": 2420153.5,
+    "planets": {
+      "Sun": {
+        "longitude": 277.460832,
+        "sign_index": 9,
+        "degree_in_sign": 7.460832,
+        "is_retrograde": false,
+        "speed": 1.017726
+      },
+      "Moon": {
+        "longitude": 212.964434,
+        "sign_index": 7,
+        "degree_in_sign": 2.964434,
+        "is_retrograde": false,
+        "speed": 19.097558
+      },
+      "Mars": {
+        "longitude": 76.472037,
+        "sign_index": 2,
+        "degree_in_sign": 16.472037,
+        "is_retrograde": true,
+        "speed": -0.297113
+      },
+      "Mercury": {
+        "longitude": 274.578184,
+        "sign_index": 9,
+        "degree_in_sign": 4.578184,
+        "is_retrograde": false,
+        "speed": 1.656549
+      },
+      "Jupiter": {
+        "longitude": 277.192319,
+        "sign_index": 9,
+        "degree_in_sign": 7.192319,
+        "is_retrograde": false,
+        "speed": 0.235864
+      },
+      "Venus": {
+        "longitude": 272.202161,
+        "sign_index": 9,
+        "degree_in_sign": 2.202161,
+        "is_retrograde": false,
+        "speed": 1.256789
+      },
+      "Saturn": {
+        "longitude": 48.99799,
+        "sign_index": 1,
+        "degree_in_sign": 18.99799,
+        "is_retrograde": true,
+        "speed": -0.040044
+      },
+      "Rahu": {
+        "longitude": 324.68747,
+        "sign_index": 10,
+        "degree_in_sign": 24.68747,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 144.68747,
+        "sign_index": 4,
+        "degree_in_sign": 24.68747,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

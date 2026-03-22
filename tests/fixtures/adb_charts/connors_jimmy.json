@@ -1,0 +1,120 @@
+{
+  "adb_id": 12255,
+  "name": "Connors, Jimmy",
+  "given_name": "Jimmy Connors",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434258.1875,
+    "year": 1952,
+    "month": 9,
+    "day": 2,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "s",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "East St.Louis",
+    "country": "Illinois",
+    "lat": 38.616667,
+    "lon": -90.15
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connors,_Jimmy",
+  "source_notes": "B.C. in hand from Steinbrecher. Legal use of CST for the registry is assumed.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Surgery",
+    "Family : Childhood : Sibling circumstances",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Work : Job-Related Injury",
+    "Lifestyle : Work : Work alone/ Singular role",
+    "Lifestyle : Financial : Gain - Financial success in field",
+    "Vocation : Business/Marketing : Advertising",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Sports : Tennis",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 23.065982,
+    "lagna": 173.065982,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.196032,
+    "jd_ut": 2434258.1875,
+    "planets": {
+      "Sun": {
+        "longitude": 136.92422,
+        "sign_index": 4,
+        "degree_in_sign": 16.92422,
+        "is_retrograde": false,
+        "speed": 0.968198
+      },
+      "Moon": {
+        "longitude": 296.258329,
+        "sign_index": 9,
+        "degree_in_sign": 26.258329,
+        "is_retrograde": false,
+        "speed": 19.541952
+      },
+      "Mars": {
+        "longitude": 220.385051,
+        "sign_index": 7,
+        "degree_in_sign": 10.385051,
+        "is_retrograde": false,
+        "speed": 0.616872
+      },
+      "Mercury": {
+        "longitude": 119.415349,
+        "sign_index": 3,
+        "degree_in_sign": 29.415349,
+        "is_retrograde": false,
+        "speed": 1.340448
+      },
+      "Jupiter": {
+        "longitude": 27.706871,
+        "sign_index": 0,
+        "degree_in_sign": 27.706871,
+        "is_retrograde": false,
+        "speed": 0.023557
+      },
+      "Venus": {
+        "longitude": 155.990873,
+        "sign_index": 5,
+        "degree_in_sign": 5.990873,
+        "is_retrograde": false,
+        "speed": 1.231365
+      },
+      "Saturn": {
+        "longitude": 170.20098,
+        "sign_index": 5,
+        "degree_in_sign": 20.20098,
+        "is_retrograde": false,
+        "speed": 0.10887
+      },
+      "Rahu": {
+        "longitude": 297.250798,
+        "sign_index": 9,
+        "degree_in_sign": 27.250798,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 117.250798,
+        "sign_index": 3,
+        "degree_in_sign": 27.250798,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

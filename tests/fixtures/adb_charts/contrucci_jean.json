@@ -1,0 +1,110 @@
+{
+  "adb_id": 69146,
+  "name": "Contrucci, Jean",
+  "given_name": "Jean Contrucci",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429421.729167,
+    "year": 1939,
+    "month": 6,
+    "day": 7,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "d",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Contrucci,_Jean",
+  "source_notes": "Didier Geslain archive, 'romans noirs (religion3)' pdf file, p. 32.\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Detective/ Mystery",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 20.00925,
+    "lagna": 50.00925,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.011107,
+    "jd_ut": 2429421.729167,
+    "planets": {
+      "Sun": {
+        "longitude": 52.569571,
+        "sign_index": 1,
+        "degree_in_sign": 22.569571,
+        "is_retrograde": false,
+        "speed": 0.956446
+      },
+      "Moon": {
+        "longitude": 289.856676,
+        "sign_index": 9,
+        "degree_in_sign": 19.856676,
+        "is_retrograde": false,
+        "speed": 8.578351
+      },
+      "Mars": {
+        "longitude": 280.228559,
+        "sign_index": 9,
+        "degree_in_sign": 10.228559,
+        "is_retrograde": false,
+        "speed": 0.182756
+      },
+      "Mercury": {
+        "longitude": 52.362766,
+        "sign_index": 1,
+        "degree_in_sign": 22.362766,
+        "is_retrograde": false,
+        "speed": 2.20191
+      },
+      "Jupiter": {
+        "longitude": 341.601088,
+        "sign_index": 11,
+        "degree_in_sign": 11.601088,
+        "is_retrograde": false,
+        "speed": 0.147971
+      },
+      "Venus": {
+        "longitude": 28.274547,
+        "sign_index": 0,
+        "degree_in_sign": 28.274547,
+        "is_retrograde": false,
+        "speed": 1.209558
+      },
+      "Saturn": {
+        "longitude": 4.606389,
+        "sign_index": 0,
+        "degree_in_sign": 4.606389,
+        "is_retrograde": false,
+        "speed": 0.098469
+      },
+      "Rahu": {
+        "longitude": 193.544707,
+        "sign_index": 6,
+        "degree_in_sign": 13.544707,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 13.544707,
+        "sign_index": 0,
+        "degree_in_sign": 13.544707,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

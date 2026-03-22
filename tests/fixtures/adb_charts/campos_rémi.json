@@ -1,0 +1,108 @@
+{
+  "adb_id": 70196,
+  "name": "Campos, Rémi",
+  "given_name": "Rémi Campos",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446327.979167,
+    "year": 1985,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "d",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Dunkerque",
+    "country": "France",
+    "lat": 51.05,
+    "lon": 2.366667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campos,_Rémi",
+  "source_notes": "Didier Geslain archive, 'hippisme jockeys' pdf file, p. 41.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 11.498486,
+    "lagna": 191.498486,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.657575,
+    "jd_ut": 2446327.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 152.815989,
+        "sign_index": 5,
+        "degree_in_sign": 2.815989,
+        "is_retrograde": false,
+        "speed": 0.977023
+      },
+      "Moon": {
+        "longitude": 217.567905,
+        "sign_index": 7,
+        "degree_in_sign": 7.567905,
+        "is_retrograde": false,
+        "speed": 13.015465
+      },
+      "Mars": {
+        "longitude": 132.311521,
+        "sign_index": 4,
+        "degree_in_sign": 12.311521,
+        "is_retrograde": false,
+        "speed": 0.632699
+      },
+      "Mercury": {
+        "longitude": 149.93001,
+        "sign_index": 4,
+        "degree_in_sign": 29.93001,
+        "is_retrograde": false,
+        "speed": 1.861751
+      },
+      "Jupiter": {
+        "longitude": 283.780625,
+        "sign_index": 9,
+        "degree_in_sign": 13.780625,
+        "is_retrograde": true,
+        "speed": -0.044998
+      },
+      "Venus": {
+        "longitude": 123.136944,
+        "sign_index": 4,
+        "degree_in_sign": 3.136944,
+        "is_retrograde": false,
+        "speed": 1.213612
+      },
+      "Saturn": {
+        "longitude": 210.198361,
+        "sign_index": 7,
+        "degree_in_sign": 0.198361,
+        "is_retrograde": false,
+        "speed": 0.081021
+      },
+      "Rahu": {
+        "longitude": 17.647891,
+        "sign_index": 0,
+        "degree_in_sign": 17.647891,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 197.647891,
+        "sign_index": 6,
+        "degree_in_sign": 17.647891,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

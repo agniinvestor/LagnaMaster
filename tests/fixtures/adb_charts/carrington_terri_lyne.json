@@ -1,0 +1,115 @@
+{
+  "adb_id": 49416,
+  "name": "Carrington, Terri Lyne",
+  "given_name": "Terri Lyne Carrington",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438977.004861,
+    "year": 1965,
+    "month": 8,
+    "day": 4,
+    "calendar": "g",
+    "time": "08:07",
+    "time_type": "d",
+    "hour": 8.116667,
+    "time_unknown": false,
+    "place": "Malden",
+    "country": "Massachusetts",
+    "lat": 42.433333,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sco",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrington,_Terri_Lyne",
+  "source_notes": "PT quotes birth certificate.\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Family : Childhood : Family noted",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Jazz",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 22.636765,
+    "lagna": 112.636765,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.376469,
+    "jd_ut": 2438977.004861,
+    "planets": {
+      "Sun": {
+        "longitude": 108.515971,
+        "sign_index": 3,
+        "degree_in_sign": 18.515971,
+        "is_retrograde": false,
+        "speed": 0.957571
+      },
+      "Moon": {
+        "longitude": 201.995072,
+        "sign_index": 6,
+        "degree_in_sign": 21.995072,
+        "is_retrograde": false,
+        "speed": 16.545713
+      },
+      "Mars": {
+        "longitude": 176.777853,
+        "sign_index": 5,
+        "degree_in_sign": 26.777853,
+        "is_retrograde": false,
+        "speed": 0.598882
+      },
+      "Mercury": {
+        "longitude": 126.423658,
+        "sign_index": 4,
+        "degree_in_sign": 6.423658,
+        "is_retrograde": true,
+        "speed": -0.226347
+      },
+      "Jupiter": {
+        "longitude": 59.748404,
+        "sign_index": 1,
+        "degree_in_sign": 29.748404,
+        "is_retrograde": false,
+        "speed": 0.188171
+      },
+      "Venus": {
+        "longitude": 138.567347,
+        "sign_index": 4,
+        "degree_in_sign": 18.567347,
+        "is_retrograde": false,
+        "speed": 1.205209
+      },
+      "Saturn": {
+        "longitude": 322.751026,
+        "sign_index": 10,
+        "degree_in_sign": 22.751026,
+        "is_retrograde": true,
+        "speed": -0.055865
+      },
+      "Rahu": {
+        "longitude": 47.190987,
+        "sign_index": 1,
+        "degree_in_sign": 17.190987,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 227.190987,
+        "sign_index": 7,
+        "degree_in_sign": 17.190987,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

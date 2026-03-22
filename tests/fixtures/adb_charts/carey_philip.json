@@ -1,0 +1,109 @@
+{
+  "adb_id": 50746,
+  "name": "Carey, Philip",
+  "given_name": "Philip Carey",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424347.1,
+    "year": 1925,
+    "month": 7,
+    "day": 15,
+    "calendar": "g",
+    "time": "10:24",
+    "time_type": "d",
+    "hour": 10.4,
+    "time_unknown": false,
+    "place": "Hackensack",
+    "country": "New Jersey",
+    "lat": 40.883333,
+    "lon": -74.05
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carey,_Philip",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 2.389054,
+    "lagna": 122.389054,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.817087,
+    "jd_ut": 2424347.1,
+    "planets": {
+      "Sun": {
+        "longitude": 89.734181,
+        "sign_index": 2,
+        "degree_in_sign": 29.734181,
+        "is_retrograde": false,
+        "speed": 0.954023
+      },
+      "Moon": {
+        "longitude": 31.093176,
+        "sign_index": 1,
+        "degree_in_sign": 1.093176,
+        "is_retrograde": false,
+        "speed": 8.382887
+      },
+      "Mars": {
+        "longitude": 109.306122,
+        "sign_index": 3,
+        "degree_in_sign": 19.306122,
+        "is_retrograde": false,
+        "speed": 0.630873
+      },
+      "Mercury": {
+        "longitude": 113.343936,
+        "sign_index": 3,
+        "degree_in_sign": 23.343936,
+        "is_retrograde": false,
+        "speed": 1.471744
+      },
+      "Jupiter": {
+        "longitude": 264.143883,
+        "sign_index": 8,
+        "degree_in_sign": 24.143883,
+        "is_retrograde": true,
+        "speed": -0.127654
+      },
+      "Venus": {
+        "longitude": 111.820951,
+        "sign_index": 3,
+        "degree_in_sign": 21.820951,
+        "is_retrograde": false,
+        "speed": 1.218675
+      },
+      "Saturn": {
+        "longitude": 194.823403,
+        "sign_index": 6,
+        "degree_in_sign": 14.823403,
+        "is_retrograde": false,
+        "speed": 0.006058
+      },
+      "Rahu": {
+        "longitude": 102.459843,
+        "sign_index": 3,
+        "degree_in_sign": 12.459843,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 282.459843,
+        "sign_index": 9,
+        "degree_in_sign": 12.459843,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

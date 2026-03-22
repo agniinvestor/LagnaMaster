@@ -1,0 +1,113 @@
+{
+  "adb_id": 97681,
+  "name": "Citizen Cope",
+  "given_name": "Citizen Cope",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2439997.413194,
+    "year": 1968,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "16:55",
+    "time_type": "d",
+    "hour": 16.916667,
+    "time_unknown": false,
+    "place": "Memphis",
+    "country": "Tennessee",
+    "lat": 35.15,
+    "lon": -90.05
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Citizen_Cope",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Commercial Appeal'' (Memphis, Tennessee), 22 May 1968, page 25, born at Baptist Hospital, son of Mr. and Mrs. S. J. Greenwood.\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Music : Other Entertain/Music"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 5.898543,
+    "lagna": 155.898543,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.415489,
+    "jd_ut": 2439997.413194,
+    "planets": {
+      "Sun": {
+        "longitude": 36.498669,
+        "sign_index": 1,
+        "degree_in_sign": 6.498669,
+        "is_retrograde": false,
+        "speed": 0.961895
+      },
+      "Moon": {
+        "longitude": 325.413308,
+        "sign_index": 10,
+        "degree_in_sign": 25.413308,
+        "is_retrograde": false,
+        "speed": 15.105395
+      },
+      "Mars": {
+        "longitude": 45.20101,
+        "sign_index": 1,
+        "degree_in_sign": 15.20101,
+        "is_retrograde": false,
+        "speed": 0.694595
+      },
+      "Mercury": {
+        "longitude": 58.709057,
+        "sign_index": 1,
+        "degree_in_sign": 28.709057,
+        "is_retrograde": false,
+        "speed": 1.173275
+      },
+      "Jupiter": {
+        "longitude": 123.664226,
+        "sign_index": 4,
+        "degree_in_sign": 3.664226,
+        "is_retrograde": false,
+        "speed": 0.083465
+      },
+      "Venus": {
+        "longitude": 28.238529,
+        "sign_index": 0,
+        "degree_in_sign": 28.238529,
+        "is_retrograde": false,
+        "speed": 1.228202
+      },
+      "Saturn": {
+        "longitude": 357.436612,
+        "sign_index": 11,
+        "degree_in_sign": 27.436612,
+        "is_retrograde": false,
+        "speed": 0.107394
+      },
+      "Rahu": {
+        "longitude": 353.117463,
+        "sign_index": 11,
+        "degree_in_sign": 23.117463,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 173.117463,
+        "sign_index": 5,
+        "degree_in_sign": 23.117463,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

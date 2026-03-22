@@ -1,0 +1,110 @@
+{
+  "adb_id": 36424,
+  "name": "Charvet, Maurice",
+  "given_name": "Maurice Charvet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432195.172222,
+    "year": 1947,
+    "month": 1,
+    "day": 9,
+    "calendar": "g",
+    "time": "17:08",
+    "time_type": "s",
+    "hour": 17.133333,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charvet,_Maurice",
+  "source_notes": "Didier Geslain archive, 'Astrologues' pdf file, p. 54.\\nSame from: Petitallot quotes B.C. in Quintile No.22, 3/1994\\n",
+  "categories": [
+    "Vocation : Computer : Programmer",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 2.180176,
+    "lagna": 62.180176,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.11715,
+    "jd_ut": 2432195.172222,
+    "planets": {
+      "Sun": {
+        "longitude": 265.454116,
+        "sign_index": 8,
+        "degree_in_sign": 25.454116,
+        "is_retrograde": false,
+        "speed": 1.01872
+      },
+      "Moon": {
+        "longitude": 120.50271,
+        "sign_index": 4,
+        "degree_in_sign": 0.50271,
+        "is_retrograde": false,
+        "speed": 17.86774
+      },
+      "Mars": {
+        "longitude": 264.616286,
+        "sign_index": 8,
+        "degree_in_sign": 24.616286,
+        "is_retrograde": false,
+        "speed": 0.771207
+      },
+      "Mercury": {
+        "longitude": 257.110303,
+        "sign_index": 8,
+        "degree_in_sign": 17.110303,
+        "is_retrograde": false,
+        "speed": 1.571293
+      },
+      "Jupiter": {
+        "longitude": 208.724525,
+        "sign_index": 6,
+        "degree_in_sign": 28.724525,
+        "is_retrograde": false,
+        "speed": 0.163285
+      },
+      "Venus": {
+        "longitude": 220.113268,
+        "sign_index": 7,
+        "degree_in_sign": 10.113268,
+        "is_retrograde": false,
+        "speed": 0.83975
+      },
+      "Saturn": {
+        "longitude": 103.651171,
+        "sign_index": 3,
+        "degree_in_sign": 13.651171,
+        "is_retrograde": true,
+        "speed": -0.075648
+      },
+      "Rahu": {
+        "longitude": 46.574228,
+        "sign_index": 1,
+        "degree_in_sign": 16.574228,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 226.574228,
+        "sign_index": 7,
+        "degree_in_sign": 16.574228,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

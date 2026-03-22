@@ -1,0 +1,108 @@
+{
+  "adb_id": 68328,
+  "name": "Claudius-Petit, Eugène",
+  "given_name": "Eugène Claudius-Petit",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417718.118507,
+    "year": 1907,
+    "month": 5,
+    "day": 22,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Angers",
+    "country": "France",
+    "lat": 47.466667,
+    "lon": -0.55
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claudius-Petit,_Eugène",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'politique a-f' pdf file, p. 191.\\n",
+  "categories": [
+    "Vocation : Politics : Other Politics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 23.157838,
+    "lagna": 143.157838,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.563657,
+    "jd_ut": 2417718.118507,
+    "planets": {
+      "Sun": {
+        "longitude": 37.793016,
+        "sign_index": 1,
+        "degree_in_sign": 7.793016,
+        "is_retrograde": false,
+        "speed": 0.961094
+      },
+      "Moon": {
+        "longitude": 152.759058,
+        "sign_index": 5,
+        "degree_in_sign": 2.759058,
+        "is_retrograde": false,
+        "speed": 12.109227
+      },
+      "Mars": {
+        "longitude": 265.223347,
+        "sign_index": 8,
+        "degree_in_sign": 25.223347,
+        "is_retrograde": false,
+        "speed": 0.15784
+      },
+      "Mercury": {
+        "longitude": 35.638323,
+        "sign_index": 1,
+        "degree_in_sign": 5.638323,
+        "is_retrograde": false,
+        "speed": 2.180633
+      },
+      "Jupiter": {
+        "longitude": 78.294749,
+        "sign_index": 2,
+        "degree_in_sign": 18.294749,
+        "is_retrograde": false,
+        "speed": 0.195638
+      },
+      "Venus": {
+        "longitude": 7.417884,
+        "sign_index": 0,
+        "degree_in_sign": 7.417884,
+        "is_retrograde": false,
+        "speed": 1.199395
+      },
+      "Saturn": {
+        "longitude": 333.020053,
+        "sign_index": 11,
+        "degree_in_sign": 3.020053,
+        "is_retrograde": false,
+        "speed": 0.07417
+      },
+      "Rahu": {
+        "longitude": 93.743447,
+        "sign_index": 3,
+        "degree_in_sign": 3.743447,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 273.743447,
+        "sign_index": 9,
+        "degree_in_sign": 3.743447,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

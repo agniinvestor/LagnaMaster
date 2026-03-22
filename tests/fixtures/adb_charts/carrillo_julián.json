@@ -1,0 +1,116 @@
+{
+  "adb_id": 86686,
+  "name": "Carrillo, Julián",
+  "given_name": "Julián Carrillo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405917.239353,
+    "year": 1875,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Ahualulco",
+    "country": "Mexico",
+    "lat": 22.4,
+    "lon": -101.166944
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrillo,_Julián",
+  "source_notes": "Sy Scholfield provided birth registry entry from San Luis Potosí state archives. \\n",
+  "categories": [
+    "Family : Childhood : Order of birth",
+    "Lifestyle : Financial : Gain - Grant, Scholarship, etc.",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Other Entertain/Music",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 15.119474,
+    "lagna": 345.119474,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.112551,
+    "jd_ut": 2405917.239353,
+    "planets": {
+      "Sun": {
+        "longitude": 286.347047,
+        "sign_index": 9,
+        "degree_in_sign": 16.347047,
+        "is_retrograde": false,
+        "speed": 1.015441
+      },
+      "Moon": {
+        "longitude": 187.23132,
+        "sign_index": 6,
+        "degree_in_sign": 7.23132,
+        "is_retrograde": false,
+        "speed": 11.056935
+      },
+      "Mars": {
+        "longitude": 209.803789,
+        "sign_index": 6,
+        "degree_in_sign": 29.803789,
+        "is_retrograde": false,
+        "speed": 0.566676
+      },
+      "Mercury": {
+        "longitude": 295.586428,
+        "sign_index": 9,
+        "degree_in_sign": 25.586428,
+        "is_retrograde": false,
+        "speed": 1.75526
+      },
+      "Jupiter": {
+        "longitude": 189.061753,
+        "sign_index": 6,
+        "degree_in_sign": 9.061753,
+        "is_retrograde": false,
+        "speed": 0.054825
+      },
+      "Venus": {
+        "longitude": 241.5299,
+        "sign_index": 8,
+        "degree_in_sign": 1.5299,
+        "is_retrograde": false,
+        "speed": 0.805921
+      },
+      "Saturn": {
+        "longitude": 293.647465,
+        "sign_index": 9,
+        "degree_in_sign": 23.647465,
+        "is_retrograde": false,
+        "speed": 0.119496
+      },
+      "Rahu": {
+        "longitude": 359.097009,
+        "sign_index": 11,
+        "degree_in_sign": 29.097009,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 179.097009,
+        "sign_index": 5,
+        "degree_in_sign": 29.097009,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

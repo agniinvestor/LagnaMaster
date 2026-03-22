@@ -1,0 +1,108 @@
+{
+  "adb_id": 67698,
+  "name": "Clark, Michael (1962)",
+  "given_name": "Michael (1962) Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437814.333333,
+    "year": 1962,
+    "month": 5,
+    "day": 29,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "d",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Aberdeen",
+    "country": "Scotland",
+    "lat": 57.166667,
+    "lon": -2.066667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Michael_(1962)",
+  "source_notes": "Sy Scholfield requested the data from Caroline Gerard who quotes birth certificate, October 2002. \\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 14.894402,
+    "lagna": 194.894402,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.33201,
+    "jd_ut": 2437814.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 44.623378,
+        "sign_index": 1,
+        "degree_in_sign": 14.623378,
+        "is_retrograde": false,
+        "speed": 0.959232
+      },
+      "Moon": {
+        "longitude": 354.652486,
+        "sign_index": 11,
+        "degree_in_sign": 24.652486,
+        "is_retrograde": false,
+        "speed": 17.34112
+      },
+      "Mars": {
+        "longitude": 7.30251,
+        "sign_index": 0,
+        "degree_in_sign": 7.30251,
+        "is_retrograde": false,
+        "speed": 0.748384
+      },
+      "Mercury": {
+        "longitude": 56.628726,
+        "sign_index": 1,
+        "degree_in_sign": 26.628726,
+        "is_retrograde": true,
+        "speed": -0.248715
+      },
+      "Jupiter": {
+        "longitude": 317.608538,
+        "sign_index": 10,
+        "degree_in_sign": 17.608538,
+        "is_retrograde": false,
+        "speed": 0.101139
+      },
+      "Venus": {
+        "longitude": 74.748069,
+        "sign_index": 2,
+        "degree_in_sign": 14.748069,
+        "is_retrograde": false,
+        "speed": 1.199702
+      },
+      "Saturn": {
+        "longitude": 288.019585,
+        "sign_index": 9,
+        "degree_in_sign": 18.019585,
+        "is_retrograde": true,
+        "speed": -0.012784
+      },
+      "Rahu": {
+        "longitude": 108.803331,
+        "sign_index": 3,
+        "degree_in_sign": 18.803331,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 288.803331,
+        "sign_index": 9,
+        "degree_in_sign": 18.803331,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

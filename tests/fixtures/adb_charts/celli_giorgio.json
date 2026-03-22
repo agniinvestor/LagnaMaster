@@ -1,0 +1,117 @@
+{
+  "adb_id": 81027,
+  "name": "Celli, Giorgio",
+  "given_name": "Giorgio Celli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427999.875,
+    "year": 1935,
+    "month": 7,
+    "day": 16,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Verona",
+    "country": "Italy",
+    "lat": 45.45,
+    "lon": 11.0
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celli,_Giorgio",
+  "source_notes": "GraZia Bordoni's Science file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 5.96961,
+    "lagna": 125.96961,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.956744,
+    "jd_ut": 2427999.875,
+    "planets": {
+      "Sun": {
+        "longitude": 89.940089,
+        "sign_index": 2,
+        "degree_in_sign": 29.940089,
+        "is_retrograde": false,
+        "speed": 0.953483
+      },
+      "Moon": {
+        "longitude": 271.712174,
+        "sign_index": 9,
+        "degree_in_sign": 1.712174,
+        "is_retrograde": false,
+        "speed": 18.044459
+      },
+      "Mars": {
+        "longitude": 180.152092,
+        "sign_index": 6,
+        "degree_in_sign": 0.152092,
+        "is_retrograde": false,
+        "speed": 0.487621
+      },
+      "Mercury": {
+        "longitude": 69.464017,
+        "sign_index": 2,
+        "degree_in_sign": 9.464017,
+        "is_retrograde": false,
+        "speed": 1.090307
+      },
+      "Jupiter": {
+        "longitude": 200.494425,
+        "sign_index": 6,
+        "degree_in_sign": 20.494425,
+        "is_retrograde": false,
+        "speed": 0.014117
+      },
+      "Venus": {
+        "longitude": 134.277465,
+        "sign_index": 4,
+        "degree_in_sign": 14.277465,
+        "is_retrograde": false,
+        "speed": 0.800162
+      },
+      "Saturn": {
+        "longitude": 316.766344,
+        "sign_index": 10,
+        "degree_in_sign": 16.766344,
+        "is_retrograde": true,
+        "speed": -0.039105
+      },
+      "Rahu": {
+        "longitude": 268.891705,
+        "sign_index": 8,
+        "degree_in_sign": 28.891705,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 88.891705,
+        "sign_index": 2,
+        "degree_in_sign": 28.891705,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

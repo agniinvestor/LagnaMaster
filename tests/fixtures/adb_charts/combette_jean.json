@@ -1,0 +1,112 @@
+{
+  "adb_id": 95455,
+  "name": "Combette, Jean",
+  "given_name": "Jean Combette",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424471.979167,
+    "year": 1925,
+    "month": 11,
+    "day": 17,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Beaune",
+    "country": "France",
+    "lat": 47.033333,
+    "lon": 4.833333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Combette,_Jean",
+  "source_notes": "Civil birth registry entry in hand from Sy Scholfield, copy on file. (Côte-d'Or archives, no. 204). \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 11.702623,
+    "lagna": 251.702623,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.821861,
+    "jd_ut": 2424471.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 211.79188,
+        "sign_index": 7,
+        "degree_in_sign": 1.79188,
+        "is_retrograde": false,
+        "speed": 1.009051
+      },
+      "Moon": {
+        "longitude": 227.71352,
+        "sign_index": 7,
+        "degree_in_sign": 17.71352,
+        "is_retrograde": false,
+        "speed": 10.315278
+      },
+      "Mars": {
+        "longitude": 189.775764,
+        "sign_index": 6,
+        "degree_in_sign": 9.775764,
+        "is_retrograde": false,
+        "speed": 0.666609
+      },
+      "Mercury": {
+        "longitude": 233.056342,
+        "sign_index": 7,
+        "degree_in_sign": 23.056342,
+        "is_retrograde": false,
+        "speed": 1.236208
+      },
+      "Jupiter": {
+        "longitude": 266.724757,
+        "sign_index": 8,
+        "degree_in_sign": 26.724757,
+        "is_retrograde": false,
+        "speed": 0.179602
+      },
+      "Venus": {
+        "longitude": 258.668936,
+        "sign_index": 8,
+        "degree_in_sign": 18.668936,
+        "is_retrograde": false,
+        "speed": 1.070029
+      },
+      "Saturn": {
+        "longitude": 205.097481,
+        "sign_index": 6,
+        "degree_in_sign": 25.097481,
+        "is_retrograde": false,
+        "speed": 0.119369
+      },
+      "Rahu": {
+        "longitude": 95.842236,
+        "sign_index": 3,
+        "degree_in_sign": 5.842236,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 275.842236,
+        "sign_index": 9,
+        "degree_in_sign": 5.842236,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

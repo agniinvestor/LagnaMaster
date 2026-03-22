@@ -1,0 +1,114 @@
+{
+  "adb_id": 89377,
+  "name": "Carlos, Duke of Parma",
+  "given_name": "Duke of Parma Carlos",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2440614.25,
+    "year": 1970,
+    "month": 1,
+    "day": 27,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Nijmegen",
+    "country": "Netherlands",
+    "lat": 51.833333,
+    "lon": 5.85
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlos,_Duke_of_Parma",
+  "source_notes": "Sy Scholfield provided copies of newspaper reports dated 28 January 1970, ''De Telegraaf'' and ''De tĳd'', born precisely at 7pm.  \\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Parents divorced",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Business : Consultant",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 9.868447,
+    "lagna": 99.868447,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.439077,
+    "jd_ut": 2440614.25,
+    "planets": {
+      "Sun": {
+        "longitude": 283.95536,
+        "sign_index": 9,
+        "degree_in_sign": 13.95536,
+        "is_retrograde": false,
+        "speed": 1.015886
+      },
+      "Moon": {
+        "longitude": 161.370015,
+        "sign_index": 5,
+        "degree_in_sign": 11.370015,
+        "is_retrograde": false,
+        "speed": 14.720259
+      },
+      "Mars": {
+        "longitude": 338.667949,
+        "sign_index": 11,
+        "degree_in_sign": 8.667949,
+        "is_retrograde": false,
+        "speed": 0.738023
+      },
+      "Mercury": {
+        "longitude": 261.006372,
+        "sign_index": 8,
+        "degree_in_sign": 21.006372,
+        "is_retrograde": false,
+        "speed": 0.365291
+      },
+      "Jupiter": {
+        "longitude": 191.699328,
+        "sign_index": 6,
+        "degree_in_sign": 11.699328,
+        "is_retrograde": false,
+        "speed": 0.070426
+      },
+      "Venus": {
+        "longitude": 284.650847,
+        "sign_index": 9,
+        "degree_in_sign": 14.650847,
+        "is_retrograde": false,
+        "speed": 1.255985
+      },
+      "Saturn": {
+        "longitude": 9.14264,
+        "sign_index": 0,
+        "degree_in_sign": 9.14264,
+        "is_retrograde": false,
+        "speed": 0.043581
+      },
+      "Rahu": {
+        "longitude": 320.430021,
+        "sign_index": 10,
+        "degree_in_sign": 20.430021,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 140.430021,
+        "sign_index": 4,
+        "degree_in_sign": 20.430021,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

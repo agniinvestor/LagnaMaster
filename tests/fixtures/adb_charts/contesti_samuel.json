@@ -1,0 +1,108 @@
+{
+  "adb_id": 65062,
+  "name": "Contesti, Samuel",
+  "given_name": "Samuel Contesti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445398.006944,
+    "year": 1983,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "13:10",
+    "time_type": "s",
+    "hour": 13.166667,
+    "time_unknown": false,
+    "place": "Le Havre",
+    "country": "France",
+    "lat": 49.5,
+    "lon": 0.133333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Contesti,_Samuel",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 222.\\n",
+  "categories": [
+    "Vocation : Sports : Skating"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 25.510345,
+    "lagna": 55.510345,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.622011,
+    "jd_ut": 2445398.006944,
+    "planets": {
+      "Sun": {
+        "longitude": 319.728922,
+        "sign_index": 10,
+        "degree_in_sign": 19.728922,
+        "is_retrograde": false,
+        "speed": 1.002027
+      },
+      "Moon": {
+        "longitude": 205.948346,
+        "sign_index": 6,
+        "degree_in_sign": 25.948346,
+        "is_retrograde": false,
+        "speed": 14.135141
+      },
+      "Mars": {
+        "longitude": 342.145841,
+        "sign_index": 11,
+        "degree_in_sign": 12.145841,
+        "is_retrograde": false,
+        "speed": 0.766797
+      },
+      "Mercury": {
+        "longitude": 302.057283,
+        "sign_index": 10,
+        "degree_in_sign": 2.057283,
+        "is_retrograde": false,
+        "speed": 1.592023
+      },
+      "Jupiter": {
+        "longitude": 226.457273,
+        "sign_index": 7,
+        "degree_in_sign": 16.457273,
+        "is_retrograde": false,
+        "speed": 0.071117
+      },
+      "Venus": {
+        "longitude": 348.202377,
+        "sign_index": 11,
+        "degree_in_sign": 18.202377,
+        "is_retrograde": false,
+        "speed": 1.226355
+      },
+      "Saturn": {
+        "longitude": 190.475037,
+        "sign_index": 6,
+        "degree_in_sign": 10.475037,
+        "is_retrograde": true,
+        "speed": -0.033736
+      },
+      "Rahu": {
+        "longitude": 66.929004,
+        "sign_index": 2,
+        "degree_in_sign": 6.929004,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 246.929004,
+        "sign_index": 8,
+        "degree_in_sign": 6.929004,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

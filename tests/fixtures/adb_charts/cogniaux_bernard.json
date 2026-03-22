@@ -1,0 +1,111 @@
+{
+  "adb_id": 71678,
+  "name": "Cogniaux, Bernard",
+  "given_name": "Bernard Cogniaux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437094.71875,
+    "year": 1960,
+    "month": 6,
+    "day": 9,
+    "calendar": "g",
+    "time": "06:15",
+    "time_type": "s",
+    "hour": 6.25,
+    "time_unknown": false,
+    "place": "Uccle",
+    "country": "Belgium",
+    "lat": 50.8,
+    "lon": 4.316667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cogniaux,_Bernard",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes DataSophia: Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_arts_medias-3.pdf].\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.409963,
+    "lagna": 54.409963,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.304494,
+    "jd_ut": 2437094.71875,
+    "planets": {
+      "Sun": {
+        "longitude": 55.060621,
+        "sign_index": 1,
+        "degree_in_sign": 25.060621,
+        "is_retrograde": false,
+        "speed": 0.95565
+      },
+      "Moon": {
+        "longitude": 229.86924,
+        "sign_index": 7,
+        "degree_in_sign": 19.86924,
+        "is_retrograde": false,
+        "speed": 14.898692
+      },
+      "Mars": {
+        "longitude": 358.478022,
+        "sign_index": 11,
+        "degree_in_sign": 28.478022,
+        "is_retrograde": false,
+        "speed": 0.741741
+      },
+      "Mercury": {
+        "longitude": 77.092757,
+        "sign_index": 2,
+        "degree_in_sign": 17.092757,
+        "is_retrograde": false,
+        "speed": 1.486405
+      },
+      "Jupiter": {
+        "longitude": 246.801887,
+        "sign_index": 8,
+        "degree_in_sign": 6.801887,
+        "is_retrograde": true,
+        "speed": -0.122255
+      },
+      "Venus": {
+        "longitude": 51.380773,
+        "sign_index": 1,
+        "degree_in_sign": 21.380773,
+        "is_retrograde": false,
+        "speed": 1.227553
+      },
+      "Saturn": {
+        "longitude": 263.756161,
+        "sign_index": 8,
+        "degree_in_sign": 23.756161,
+        "is_retrograde": true,
+        "speed": -0.059539
+      },
+      "Rahu": {
+        "longitude": 146.937182,
+        "sign_index": 4,
+        "degree_in_sign": 26.937182,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 326.937182,
+        "sign_index": 10,
+        "degree_in_sign": 26.937182,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

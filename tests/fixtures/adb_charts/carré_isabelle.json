@@ -1,0 +1,112 @@
+{
+  "adb_id": 60412,
+  "name": "Carré, Isabelle",
+  "given_name": "Isabelle Carré",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441100.097222,
+    "year": 1971,
+    "month": 5,
+    "day": 28,
+    "calendar": "g",
+    "time": "15:20",
+    "time_type": "s",
+    "hour": 15.333333,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 12",
+    "country": "France",
+    "lat": 48.841111,
+    "lon": 2.388056
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carré,_Isabelle",
+  "source_notes": "Didier Geslain archive, 'acteurs et comédiens' pdf file, p. 47.\\nArielle Aumont also quoted BC.\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 22.44693,
+    "lagna": 142.44693,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.457655,
+    "jd_ut": 2441100.097222,
+    "planets": {
+      "Sun": {
+        "longitude": 43.149824,
+        "sign_index": 1,
+        "degree_in_sign": 13.149824,
+        "is_retrograde": false,
+        "speed": 0.959703
+      },
+      "Moon": {
+        "longitude": 94.727089,
+        "sign_index": 3,
+        "degree_in_sign": 4.727089,
+        "is_retrograde": false,
+        "speed": 9.138267
+      },
+      "Mars": {
+        "longitude": 288.219396,
+        "sign_index": 9,
+        "degree_in_sign": 18.219396,
+        "is_retrograde": false,
+        "speed": 0.414188
+      },
+      "Mercury": {
+        "longitude": 20.404221,
+        "sign_index": 0,
+        "degree_in_sign": 20.404221,
+        "is_retrograde": false,
+        "speed": 1.465992
+      },
+      "Jupiter": {
+        "longitude": 217.467794,
+        "sign_index": 7,
+        "degree_in_sign": 7.467794,
+        "is_retrograde": true,
+        "speed": -0.126425
+      },
+      "Venus": {
+        "longitude": 18.720421,
+        "sign_index": 0,
+        "degree_in_sign": 18.720421,
+        "is_retrograde": false,
+        "speed": 1.211273
+      },
+      "Saturn": {
+        "longitude": 33.905774,
+        "sign_index": 1,
+        "degree_in_sign": 3.905774,
+        "is_retrograde": false,
+        "speed": 0.128282
+      },
+      "Rahu": {
+        "longitude": 294.683985,
+        "sign_index": 9,
+        "degree_in_sign": 24.683985,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 114.683985,
+        "sign_index": 3,
+        "degree_in_sign": 24.683985,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

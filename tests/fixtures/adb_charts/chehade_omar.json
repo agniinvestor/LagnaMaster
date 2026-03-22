@@ -1,0 +1,110 @@
+{
+  "adb_id": 92087,
+  "name": "Chehade, Omar",
+  "given_name": "Omar Chehade",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440899.232639,
+    "year": 1970,
+    "month": 11,
+    "day": 8,
+    "calendar": "g",
+    "time": "12:35",
+    "time_type": "s",
+    "hour": 12.583333,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chehade,_Omar",
+  "source_notes": "Birth certificate in hand from Sy Scholfield. \\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Vocation : Law : Legal system employee",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 7.882138,
+    "lagna": 277.882138,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.449974,
+    "jd_ut": 2440899.232639,
+    "planets": {
+      "Sun": {
+        "longitude": 202.452437,
+        "sign_index": 6,
+        "degree_in_sign": 22.452437,
+        "is_retrograde": false,
+        "speed": 1.004126
+      },
+      "Moon": {
+        "longitude": 322.336007,
+        "sign_index": 10,
+        "degree_in_sign": 22.336007,
+        "is_retrograde": false,
+        "speed": 16.190775
+      },
+      "Mars": {
+        "longitude": 168.7884,
+        "sign_index": 5,
+        "degree_in_sign": 18.7884,
+        "is_retrograde": false,
+        "speed": 0.634921
+      },
+      "Mercury": {
+        "longitude": 209.860848,
+        "sign_index": 6,
+        "degree_in_sign": 29.860848,
+        "is_retrograde": false,
+        "speed": 1.559704
+      },
+      "Jupiter": {
+        "longitude": 202.902001,
+        "sign_index": 6,
+        "degree_in_sign": 22.902001,
+        "is_retrograde": false,
+        "speed": 0.22025
+      },
+      "Venus": {
+        "longitude": 205.087314,
+        "sign_index": 6,
+        "degree_in_sign": 25.087314,
+        "is_retrograde": true,
+        "speed": -0.602999
+      },
+      "Saturn": {
+        "longitude": 25.936691,
+        "sign_index": 0,
+        "degree_in_sign": 25.936691,
+        "is_retrograde": true,
+        "speed": -0.081196
+      },
+      "Rahu": {
+        "longitude": 305.328209,
+        "sign_index": 10,
+        "degree_in_sign": 5.328209,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 125.328209,
+        "sign_index": 4,
+        "degree_in_sign": 5.328209,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

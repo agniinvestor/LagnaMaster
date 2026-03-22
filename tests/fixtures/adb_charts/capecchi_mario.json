@@ -1,0 +1,112 @@
+{
+  "adb_id": 54413,
+  "name": "Capecchi, Mario",
+  "given_name": "Mario Capecchi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428812.854167,
+    "year": 1937,
+    "month": 10,
+    "day": 6,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "s",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Verona",
+    "country": "Italy",
+    "lat": 45.45,
+    "lon": 11.0
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capecchi,_Mario",
+  "source_notes": "Grazia Bordoni quotes birth certificate via e-mail and in Datanotizie N.78 March 9, 2008\\n",
+  "categories": [
+    "Family : Childhood : Disadvantaged",
+    "Family : Childhood : Family traumatic event",
+    "Vocation : Science : Biology",
+    "Vocation : Science : Chemistry",
+    "Notable : Awards : Nobel prize"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.436063,
+    "lagna": 181.436063,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.987827,
+    "jd_ut": 2428812.854167,
+    "planets": {
+      "Sun": {
+        "longitude": 169.67578,
+        "sign_index": 5,
+        "degree_in_sign": 19.67578,
+        "is_retrograde": false,
+        "speed": 0.986819
+      },
+      "Moon": {
+        "longitude": 191.634689,
+        "sign_index": 6,
+        "degree_in_sign": 11.634689,
+        "is_retrograde": false,
+        "speed": 10.543721
+      },
+      "Mars": {
+        "longitude": 251.032399,
+        "sign_index": 8,
+        "degree_in_sign": 11.032399,
+        "is_retrograde": false,
+        "speed": 0.680909
+      },
+      "Mercury": {
+        "longitude": 153.743879,
+        "sign_index": 5,
+        "degree_in_sign": 3.743879,
+        "is_retrograde": false,
+        "speed": 1.527732
+      },
+      "Jupiter": {
+        "longitude": 265.283122,
+        "sign_index": 8,
+        "degree_in_sign": 25.283122,
+        "is_retrograde": false,
+        "speed": 0.070078
+      },
+      "Venus": {
+        "longitude": 140.617749,
+        "sign_index": 4,
+        "degree_in_sign": 20.617749,
+        "is_retrograde": false,
+        "speed": 1.222875
+      },
+      "Saturn": {
+        "longitude": 337.852914,
+        "sign_index": 11,
+        "degree_in_sign": 7.852914,
+        "is_retrograde": true,
+        "speed": -0.075367
+      },
+      "Rahu": {
+        "longitude": 225.810254,
+        "sign_index": 7,
+        "degree_in_sign": 15.810254,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 45.810254,
+        "sign_index": 1,
+        "degree_in_sign": 15.810254,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

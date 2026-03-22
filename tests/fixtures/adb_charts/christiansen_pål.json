@@ -1,0 +1,109 @@
+{
+  "adb_id": 99742,
+  "name": "Christiansen, Pål",
+  "given_name": "Pål Christiansen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436455.708333,
+    "year": 1958,
+    "month": 9,
+    "day": 9,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christiansen,_Pål",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Writers : Children's literature",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 3.155866,
+    "lagna": 123.155866,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.280059,
+    "jd_ut": 2436455.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 142.730559,
+        "sign_index": 4,
+        "degree_in_sign": 22.730559,
+        "is_retrograde": false,
+        "speed": 0.971733
+      },
+      "Moon": {
+        "longitude": 85.956524,
+        "sign_index": 2,
+        "degree_in_sign": 25.956524,
+        "is_retrograde": false,
+        "speed": 11.026073
+      },
+      "Mars": {
+        "longitude": 32.951545,
+        "sign_index": 1,
+        "degree_in_sign": 2.951545,
+        "is_retrograde": false,
+        "speed": 0.370887
+      },
+      "Mercury": {
+        "longitude": 124.758977,
+        "sign_index": 4,
+        "degree_in_sign": 4.758977,
+        "is_retrograde": false,
+        "speed": 0.955227
+      },
+      "Jupiter": {
+        "longitude": 187.052763,
+        "sign_index": 6,
+        "degree_in_sign": 7.052763,
+        "is_retrograde": false,
+        "speed": 0.183267
+      },
+      "Venus": {
+        "longitude": 126.327479,
+        "sign_index": 4,
+        "degree_in_sign": 6.327479,
+        "is_retrograde": false,
+        "speed": 1.234512
+      },
+      "Saturn": {
+        "longitude": 236.024647,
+        "sign_index": 7,
+        "degree_in_sign": 26.024647,
+        "is_retrograde": false,
+        "speed": 0.025997
+      },
+      "Rahu": {
+        "longitude": 180.799654,
+        "sign_index": 6,
+        "degree_in_sign": 0.799654,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 0.799654,
+        "sign_index": 0,
+        "degree_in_sign": 0.799654,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

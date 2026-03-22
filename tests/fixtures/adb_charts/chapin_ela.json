@@ -1,0 +1,111 @@
+{
+  "adb_id": 101221,
+  "name": "Chapin, Ela",
+  "given_name": "Ela Chapin",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442834.031944,
+    "year": 1976,
+    "month": 2,
+    "day": 25,
+    "calendar": "g",
+    "time": "07:46",
+    "time_type": "s",
+    "hour": 7.766667,
+    "time_unknown": false,
+    "place": "St.Johnsbury",
+    "country": "Vermont",
+    "lat": 44.416667,
+    "lon": -72.016667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapin,_Ela",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file: born at Northeastern Vermont Regional Hospital.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Business : Middle Management",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 20.519021,
+    "lagna": 320.519021,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.523961,
+    "jd_ut": 2442834.031944,
+    "planets": {
+      "Sun": {
+        "longitude": 312.519255,
+        "sign_index": 10,
+        "degree_in_sign": 12.519255,
+        "is_retrograde": false,
+        "speed": 1.005956
+      },
+      "Moon": {
+        "longitude": 261.61408,
+        "sign_index": 8,
+        "degree_in_sign": 21.61408,
+        "is_retrograde": false,
+        "speed": 8.766171
+      },
+      "Mars": {
+        "longitude": 57.882251,
+        "sign_index": 1,
+        "degree_in_sign": 27.882251,
+        "is_retrograde": false,
+        "speed": 0.333073
+      },
+      "Mercury": {
+        "longitude": 287.707942,
+        "sign_index": 9,
+        "degree_in_sign": 17.707942,
+        "is_retrograde": false,
+        "speed": 1.303605
+      },
+      "Jupiter": {
+        "longitude": 0.001254,
+        "sign_index": 0,
+        "degree_in_sign": 0.001254,
+        "is_retrograde": false,
+        "speed": 0.199232
+      },
+      "Venus": {
+        "longitude": 283.653163,
+        "sign_index": 9,
+        "degree_in_sign": 13.653163,
+        "is_retrograde": false,
+        "speed": 1.232172
+      },
+      "Saturn": {
+        "longitude": 93.371569,
+        "sign_index": 3,
+        "degree_in_sign": 3.371569,
+        "is_retrograde": true,
+        "speed": -0.053889
+      },
+      "Rahu": {
+        "longitude": 202.79925,
+        "sign_index": 6,
+        "degree_in_sign": 22.79925,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 22.79925,
+        "sign_index": 0,
+        "degree_in_sign": 22.79925,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

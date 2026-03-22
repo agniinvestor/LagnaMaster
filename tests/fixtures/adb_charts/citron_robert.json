@@ -1,0 +1,111 @@
+{
+  "adb_id": 89943,
+  "name": "Citron, Robert",
+  "given_name": "Robert Citron",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424255.194444,
+    "year": 1925,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "08:40",
+    "time_type": "s",
+    "hour": 8.666667,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Citron,_Robert",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Thief/ Financial crime",
+    "Vocation : Politics : Government employee",
+    "Vocation : Politics : Government employee",
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 6.021835,
+    "lagna": 36.021835,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.813573,
+    "jd_ut": 2424255.194444,
+    "planets": {
+      "Sun": {
+        "longitude": 1.400234,
+        "sign_index": 0,
+        "degree_in_sign": 1.400234,
+        "is_retrograde": false,
+        "speed": 0.978676
+      },
+      "Moon": {
+        "longitude": 253.661618,
+        "sign_index": 8,
+        "degree_in_sign": 13.661618,
+        "is_retrograde": false,
+        "speed": 11.522089
+      },
+      "Mars": {
+        "longitude": 51.089841,
+        "sign_index": 1,
+        "degree_in_sign": 21.089841,
+        "is_retrograde": false,
+        "speed": 0.639556
+      },
+      "Mercury": {
+        "longitude": 7.949244,
+        "sign_index": 0,
+        "degree_in_sign": 7.949244,
+        "is_retrograde": true,
+        "speed": -0.560374
+      },
+      "Jupiter": {
+        "longitude": 268.672898,
+        "sign_index": 8,
+        "degree_in_sign": 28.672898,
+        "is_retrograde": false,
+        "speed": 0.078471
+      },
+      "Venus": {
+        "longitude": 358.966524,
+        "sign_index": 11,
+        "degree_in_sign": 28.966524,
+        "is_retrograde": false,
+        "speed": 1.237567
+      },
+      "Saturn": {
+        "longitude": 199.470772,
+        "sign_index": 6,
+        "degree_in_sign": 19.470772,
+        "is_retrograde": true,
+        "speed": -0.069789
+      },
+      "Rahu": {
+        "longitude": 107.33011,
+        "sign_index": 3,
+        "degree_in_sign": 17.33011,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 287.33011,
+        "sign_index": 9,
+        "degree_in_sign": 17.33011,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

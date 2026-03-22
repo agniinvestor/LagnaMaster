@@ -1,0 +1,111 @@
+{
+  "adb_id": 93202,
+  "name": "Courthéoux, Albert",
+  "given_name": "Albert Courthéoux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412977.875,
+    "year": 1894,
+    "month": 5,
+    "day": 29,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Couvin",
+    "country": "Belgium",
+    "lat": 50.05,
+    "lon": 4.483333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courthéoux,_Albert",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_ef_entreprise.pdf]. \\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 29.80004,
+    "lagna": 89.80004,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.382446,
+    "jd_ut": 2412977.875,
+    "planets": {
+      "Sun": {
+        "longitude": 45.552285,
+        "sign_index": 1,
+        "degree_in_sign": 15.552285,
+        "is_retrograde": false,
+        "speed": 0.958796
+      },
+      "Moon": {
+        "longitude": 332.673871,
+        "sign_index": 11,
+        "degree_in_sign": 2.673871,
+        "is_retrograde": false,
+        "speed": 9.821069
+      },
+      "Mars": {
+        "longitude": 321.042842,
+        "sign_index": 10,
+        "degree_in_sign": 21.042842,
+        "is_retrograde": false,
+        "speed": 0.683586
+      },
+      "Mercury": {
+        "longitude": 55.984344,
+        "sign_index": 1,
+        "degree_in_sign": 25.984344,
+        "is_retrograde": false,
+        "speed": 2.069313
+      },
+      "Jupiter": {
+        "longitude": 50.059323,
+        "sign_index": 1,
+        "degree_in_sign": 20.059323,
+        "is_retrograde": false,
+        "speed": 0.232208
+      },
+      "Venus": {
+        "longitude": 2.066217,
+        "sign_index": 0,
+        "degree_in_sign": 2.066217,
+        "is_retrograde": false,
+        "speed": 1.103669
+      },
+      "Saturn": {
+        "longitude": 176.45915,
+        "sign_index": 5,
+        "degree_in_sign": 26.45915,
+        "is_retrograde": true,
+        "speed": -0.036748
+      },
+      "Rahu": {
+        "longitude": 344.938945,
+        "sign_index": 11,
+        "degree_in_sign": 14.938945,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 164.938945,
+        "sign_index": 5,
+        "degree_in_sign": 14.938945,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

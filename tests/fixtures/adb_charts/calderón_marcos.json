@@ -1,0 +1,109 @@
+{
+  "adb_id": 91357,
+  "name": "Calderón, Marcos",
+  "given_name": "Marcos Calderón",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425439.333333,
+    "year": 1928,
+    "month": 7,
+    "day": 11,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Callao",
+    "country": "Peru",
+    "lat": -12.066667,
+    "lon": -77.15
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calderón,_Marcos",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Personal : Death : Accidental",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 23.225965,
+    "lagna": 203.225965,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.858846,
+    "jd_ut": 2425439.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 86.366487,
+        "sign_index": 2,
+        "degree_in_sign": 26.366487,
+        "is_retrograde": false,
+        "speed": 0.95365
+      },
+      "Moon": {
+        "longitude": 12.988736,
+        "sign_index": 0,
+        "degree_in_sign": 12.988736,
+        "is_retrograde": false,
+        "speed": 16.464558
+      },
+      "Mars": {
+        "longitude": 18.115282,
+        "sign_index": 0,
+        "degree_in_sign": 18.115282,
+        "is_retrograde": false,
+        "speed": 0.698385
+      },
+      "Mercury": {
+        "longitude": 70.46213,
+        "sign_index": 2,
+        "degree_in_sign": 10.46213,
+        "is_retrograde": false,
+        "speed": 0.089166
+      },
+      "Jupiter": {
+        "longitude": 13.806031,
+        "sign_index": 0,
+        "degree_in_sign": 13.806031,
+        "is_retrograde": false,
+        "speed": 0.141985
+      },
+      "Venus": {
+        "longitude": 89.182085,
+        "sign_index": 2,
+        "degree_in_sign": 29.182085,
+        "is_retrograde": false,
+        "speed": 1.230347
+      },
+      "Saturn": {
+        "longitude": 230.646791,
+        "sign_index": 7,
+        "degree_in_sign": 20.646791,
+        "is_retrograde": true,
+        "speed": -0.05271
+      },
+      "Rahu": {
+        "longitude": 44.580125,
+        "sign_index": 1,
+        "degree_in_sign": 14.580125,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 224.580125,
+        "sign_index": 7,
+        "degree_in_sign": 14.580125,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

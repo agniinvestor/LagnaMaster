@@ -1,0 +1,111 @@
+{
+  "adb_id": 864,
+  "name": "Clouser, John William",
+  "given_name": "John William Clouser",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2426796.6875,
+    "year": 1932,
+    "month": 3,
+    "day": 29,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Chicago",
+    "country": "USA",
+    "lat": 41.866667,
+    "lon": -87.65
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clouser,_John_William",
+  "source_notes": "Richard Nolle quotes him, a client, 5/l976\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Thief/ Financial crime",
+    "Vocation : Law : Police",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 14.316717,
+    "lagna": 194.316717,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.910741,
+    "jd_ut": 2426796.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 346.353065,
+        "sign_index": 11,
+        "degree_in_sign": 16.353065,
+        "is_retrograde": false,
+        "speed": 0.987526
+      },
+      "Moon": {
+        "longitude": 269.48764,
+        "sign_index": 8,
+        "degree_in_sign": 29.48764,
+        "is_retrograde": false,
+        "speed": 15.310365
+      },
+      "Mars": {
+        "longitude": 333.888032,
+        "sign_index": 11,
+        "degree_in_sign": 3.888032,
+        "is_retrograde": false,
+        "speed": 0.780607
+      },
+      "Mercury": {
+        "longitude": 2.043331,
+        "sign_index": 0,
+        "degree_in_sign": 2.043331,
+        "is_retrograde": false,
+        "speed": 0.151194
+      },
+      "Jupiter": {
+        "longitude": 109.832071,
+        "sign_index": 3,
+        "degree_in_sign": 19.832071,
+        "is_retrograde": true,
+        "speed": -0.029815
+      },
+      "Venus": {
+        "longitude": 30.822633,
+        "sign_index": 1,
+        "degree_in_sign": 0.822633,
+        "is_retrograde": false,
+        "speed": 1.087983
+      },
+      "Saturn": {
+        "longitude": 280.208049,
+        "sign_index": 9,
+        "degree_in_sign": 10.208049,
+        "is_retrograde": false,
+        "speed": 0.069398
+      },
+      "Rahu": {
+        "longitude": 332.651107,
+        "sign_index": 11,
+        "degree_in_sign": 2.651107,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 152.651107,
+        "sign_index": 5,
+        "degree_in_sign": 2.651107,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

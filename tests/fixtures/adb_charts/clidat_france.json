@@ -1,0 +1,108 @@
+{
+  "adb_id": 67520,
+  "name": "Clidat, France",
+  "given_name": "France Clidat",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427034.0,
+    "year": 1932,
+    "month": 11,
+    "day": 22,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Nantes",
+    "country": "France",
+    "lat": 47.216667,
+    "lon": -1.55
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clidat,_France",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'diverses' pdf file, p. 58.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 19.837944,
+    "lagna": 259.837944,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.919815,
+    "jd_ut": 2427034.0,
+    "planets": {
+      "Sun": {
+        "longitude": 217.072088,
+        "sign_index": 7,
+        "degree_in_sign": 7.072088,
+        "is_retrograde": false,
+        "speed": 1.010923
+      },
+      "Moon": {
+        "longitude": 141.128705,
+        "sign_index": 4,
+        "degree_in_sign": 21.128705,
+        "is_retrograde": false,
+        "speed": 12.75488
+      },
+      "Mars": {
+        "longitude": 131.143955,
+        "sign_index": 4,
+        "degree_in_sign": 11.143955,
+        "is_retrograde": false,
+        "speed": 0.456339
+      },
+      "Mercury": {
+        "longitude": 237.302355,
+        "sign_index": 7,
+        "degree_in_sign": 27.302355,
+        "is_retrograde": false,
+        "speed": 0.324076
+      },
+      "Jupiter": {
+        "longitude": 147.104881,
+        "sign_index": 4,
+        "degree_in_sign": 27.104881,
+        "is_retrograde": false,
+        "speed": 0.130603
+      },
+      "Venus": {
+        "longitude": 181.575352,
+        "sign_index": 6,
+        "degree_in_sign": 1.575352,
+        "is_retrograde": false,
+        "speed": 1.2193
+      },
+      "Saturn": {
+        "longitude": 277.26262,
+        "sign_index": 9,
+        "degree_in_sign": 7.26262,
+        "is_retrograde": false,
+        "speed": 0.077582
+      },
+      "Rahu": {
+        "longitude": 320.075425,
+        "sign_index": 10,
+        "degree_in_sign": 20.075425,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 140.075425,
+        "sign_index": 4,
+        "degree_in_sign": 20.075425,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

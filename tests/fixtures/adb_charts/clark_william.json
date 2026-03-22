@@ -1,0 +1,111 @@
+{
+  "adb_id": 47588,
+  "name": "Clark, William",
+  "given_name": "William Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426637.958333,
+    "year": 1931,
+    "month": 10,
+    "day": 23,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Oxnard",
+    "country": "California",
+    "lat": 34.2,
+    "lon": -119.183333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_William",
+  "source_notes": "Contemporary American Horoscopes\\n",
+  "categories": [
+    "Traits : Personality : Passive/ Bland",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 3.018674,
+    "lagna": 123.018674,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.904673,
+    "jd_ut": 2426637.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 186.172528,
+        "sign_index": 6,
+        "degree_in_sign": 6.172528,
+        "is_retrograde": false,
+        "speed": 0.995527
+      },
+      "Moon": {
+        "longitude": 331.626851,
+        "sign_index": 11,
+        "degree_in_sign": 1.626851,
+        "is_retrograde": false,
+        "speed": 11.255703
+      },
+      "Mars": {
+        "longitude": 212.039833,
+        "sign_index": 7,
+        "degree_in_sign": 2.039833,
+        "is_retrograde": false,
+        "speed": 0.710996
+      },
+      "Mercury": {
+        "longitude": 189.348349,
+        "sign_index": 6,
+        "degree_in_sign": 9.348349,
+        "is_retrograde": false,
+        "speed": 1.638083
+      },
+      "Jupiter": {
+        "longitude": 116.359893,
+        "sign_index": 3,
+        "degree_in_sign": 26.359893,
+        "is_retrograde": false,
+        "speed": 0.133378
+      },
+      "Venus": {
+        "longitude": 198.083192,
+        "sign_index": 6,
+        "degree_in_sign": 18.083192,
+        "is_retrograde": false,
+        "speed": 1.248159
+      },
+      "Saturn": {
+        "longitude": 264.558033,
+        "sign_index": 8,
+        "degree_in_sign": 24.558033,
+        "is_retrograde": false,
+        "speed": 0.050702
+      },
+      "Rahu": {
+        "longitude": 341.062495,
+        "sign_index": 11,
+        "degree_in_sign": 11.062495,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 161.062495,
+        "sign_index": 5,
+        "degree_in_sign": 11.062495,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

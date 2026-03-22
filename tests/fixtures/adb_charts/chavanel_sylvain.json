@@ -1,0 +1,108 @@
+{
+  "adb_id": 64923,
+  "name": "Chavanel, Sylvain",
+  "given_name": "Sylvain Chavanel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444055.013889,
+    "year": 1979,
+    "month": 6,
+    "day": 30,
+    "calendar": "g",
+    "time": "14:20",
+    "time_type": "d",
+    "hour": 14.333333,
+    "time_unknown": false,
+    "place": "Châtellerault",
+    "country": "France",
+    "lat": 46.816667,
+    "lon": 0.55
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chavanel,_Sylvain",
+  "source_notes": "Birth certificate no. 661 in Didier Geslain archive, 'Cyclisme' pdf file, p. 67.\\nSame data from: Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 22.937499,
+    "lagna": 142.937499,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.570653,
+    "jd_ut": 2444055.013889,
+    "planets": {
+      "Sun": {
+        "longitude": 74.556179,
+        "sign_index": 2,
+        "degree_in_sign": 14.556179,
+        "is_retrograde": false,
+        "speed": 0.953569
+      },
+      "Moon": {
+        "longitude": 141.964139,
+        "sign_index": 4,
+        "degree_in_sign": 21.964139,
+        "is_retrograde": false,
+        "speed": 10.102352
+      },
+      "Mars": {
+        "longitude": 39.584705,
+        "sign_index": 1,
+        "degree_in_sign": 9.584705,
+        "is_retrograde": false,
+        "speed": 0.708864
+      },
+      "Mercury": {
+        "longitude": 100.157803,
+        "sign_index": 3,
+        "degree_in_sign": 10.157803,
+        "is_retrograde": false,
+        "speed": 1.127706
+      },
+      "Jupiter": {
+        "longitude": 107.1072,
+        "sign_index": 3,
+        "degree_in_sign": 17.1072,
+        "is_retrograde": false,
+        "speed": 0.201046
+      },
+      "Venus": {
+        "longitude": 59.271328,
+        "sign_index": 1,
+        "degree_in_sign": 29.271328,
+        "is_retrograde": false,
+        "speed": 1.220387
+      },
+      "Saturn": {
+        "longitude": 135.724464,
+        "sign_index": 4,
+        "degree_in_sign": 15.724464,
+        "is_retrograde": false,
+        "speed": 0.080689
+      },
+      "Rahu": {
+        "longitude": 138.096933,
+        "sign_index": 4,
+        "degree_in_sign": 18.096933,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 318.096933,
+        "sign_index": 10,
+        "degree_in_sign": 18.096933,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

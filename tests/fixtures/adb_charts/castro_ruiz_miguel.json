@@ -1,0 +1,109 @@
+{
+  "adb_id": 72266,
+  "name": "Castro Ruiz, Miguel",
+  "given_name": "Miguel Castro Ruiz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422597.15588,
+    "year": 1920,
+    "month": 9,
+    "day": 29,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Morelia",
+    "country": "Mexico",
+    "lat": 19.7,
+    "lon": -101.116667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro_Ruiz,_Miguel",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 3.569699,
+    "lagna": 183.569699,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.750183,
+    "jd_ut": 2422597.15588,
+    "planets": {
+      "Sun": {
+        "longitude": 163.429442,
+        "sign_index": 5,
+        "degree_in_sign": 13.429442,
+        "is_retrograde": false,
+        "speed": 0.982595
+      },
+      "Moon": {
+        "longitude": 2.315842,
+        "sign_index": 0,
+        "degree_in_sign": 2.315842,
+        "is_retrograde": false,
+        "speed": 15.942909
+      },
+      "Mars": {
+        "longitude": 233.805544,
+        "sign_index": 7,
+        "degree_in_sign": 23.805544,
+        "is_retrograde": false,
+        "speed": 0.694242
+      },
+      "Mercury": {
+        "longitude": 178.588757,
+        "sign_index": 5,
+        "degree_in_sign": 28.588757,
+        "is_retrograde": false,
+        "speed": 1.54977
+      },
+      "Jupiter": {
+        "longitude": 134.348706,
+        "sign_index": 4,
+        "degree_in_sign": 14.348706,
+        "is_retrograde": false,
+        "speed": 0.203054
+      },
+      "Venus": {
+        "longitude": 187.041497,
+        "sign_index": 6,
+        "degree_in_sign": 7.041497,
+        "is_retrograde": false,
+        "speed": 1.231542
+      },
+      "Saturn": {
+        "longitude": 144.950498,
+        "sign_index": 4,
+        "degree_in_sign": 24.950498,
+        "is_retrograde": false,
+        "speed": 0.121378
+      },
+      "Rahu": {
+        "longitude": 195.193032,
+        "sign_index": 6,
+        "degree_in_sign": 15.193032,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 15.193032,
+        "sign_index": 0,
+        "degree_in_sign": 15.193032,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

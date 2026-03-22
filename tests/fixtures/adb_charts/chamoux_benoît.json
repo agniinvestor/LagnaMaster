@@ -1,0 +1,110 @@
+{
+  "adb_id": 37138,
+  "name": "Chamoux, Benoît",
+  "given_name": "Benoît Chamoux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437349.479167,
+    "year": 1961,
+    "month": 2,
+    "day": 19,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "La Roche sur Foron",
+    "country": "France",
+    "lat": 46.066667,
+    "lon": 6.316667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamoux,_Benoît",
+  "source_notes": "Didier Geslain archive, 'sports divers' pdf file, p. 31.\\nSame data from Petitallot quotes B.C., Cadran No.25, 12/1995\\n",
+  "categories": [
+    "Family : Relationship : Married late/never",
+    "Vocation : Travel : Adventurer",
+    "Vocation : Travel : Explorer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 26.32632,
+    "lagna": 176.32632,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.314235,
+    "jd_ut": 2437349.479167,
+    "planets": {
+      "Sun": {
+        "longitude": 306.780895,
+        "sign_index": 10,
+        "degree_in_sign": 6.780895,
+        "is_retrograde": false,
+        "speed": 1.008593
+      },
+      "Moon": {
+        "longitude": 355.219822,
+        "sign_index": 11,
+        "degree_in_sign": 25.219822,
+        "is_retrograde": false,
+        "speed": 16.126701
+      },
+      "Mars": {
+        "longitude": 67.657143,
+        "sign_index": 2,
+        "degree_in_sign": 7.657143,
+        "is_retrograde": false,
+        "speed": 0.147139
+      },
+      "Mercury": {
+        "longitude": 312.893204,
+        "sign_index": 10,
+        "degree_in_sign": 12.893204,
+        "is_retrograde": true,
+        "speed": -0.914765
+      },
+      "Jupiter": {
+        "longitude": 271.883397,
+        "sign_index": 9,
+        "degree_in_sign": 1.883397,
+        "is_retrograde": false,
+        "speed": 0.211788
+      },
+      "Venus": {
+        "longitude": 351.827139,
+        "sign_index": 11,
+        "degree_in_sign": 21.827139,
+        "is_retrograde": false,
+        "speed": 0.801225
+      },
+      "Saturn": {
+        "longitude": 271.885772,
+        "sign_index": 9,
+        "degree_in_sign": 1.885772,
+        "is_retrograde": false,
+        "speed": 0.104217
+      },
+      "Rahu": {
+        "longitude": 133.436905,
+        "sign_index": 4,
+        "degree_in_sign": 13.436905,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 313.436905,
+        "sign_index": 10,
+        "degree_in_sign": 13.436905,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

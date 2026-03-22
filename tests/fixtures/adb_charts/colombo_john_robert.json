@@ -1,0 +1,109 @@
+{
+  "adb_id": 72380,
+  "name": "Colombo, John Robert",
+  "given_name": "John Robert Colombo",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2428252.635417,
+    "year": 1936,
+    "month": 3,
+    "day": 24,
+    "calendar": "g",
+    "time": "22:15",
+    "time_type": "s",
+    "hour": 22.25,
+    "time_unknown": false,
+    "place": "Kitchener",
+    "country": "Ontario (CAN)",
+    "lat": 43.45,
+    "lon": -80.483333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colombo,_John_Robert",
+  "source_notes": "Sy Scholfield quotes him in \"Contemporary Authors Autobiographical Series,\" Volume 22, edited by Joyce Nakamura (Gale, 1995), p. 28: \"I was born, a healthy, chubby child, at St. Mary's Hospital in Kitchener, Ontario, Canada. The delivery took place on Tuesday, March 24, 1936, at 10:15 p.m.\"\\n",
+  "categories": [
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 0.599545,
+    "lagna": 180.599545,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.966408,
+    "jd_ut": 2428252.635417,
+    "planets": {
+      "Sun": {
+        "longitude": 341.339256,
+        "sign_index": 11,
+        "degree_in_sign": 11.339256,
+        "is_retrograde": false,
+        "speed": 0.990689
+      },
+      "Moon": {
+        "longitude": 8.45219,
+        "sign_index": 0,
+        "degree_in_sign": 8.45219,
+        "is_retrograde": false,
+        "speed": 16.997402
+      },
+      "Mars": {
+        "longitude": 1.259983,
+        "sign_index": 0,
+        "degree_in_sign": 1.259983,
+        "is_retrograde": false,
+        "speed": 0.746537
+      },
+      "Mercury": {
+        "longitude": 326.077835,
+        "sign_index": 10,
+        "degree_in_sign": 26.077835,
+        "is_retrograde": false,
+        "speed": 1.733815
+      },
+      "Jupiter": {
+        "longitude": 241.035791,
+        "sign_index": 8,
+        "degree_in_sign": 1.035791,
+        "is_retrograde": false,
+        "speed": 0.050935
+      },
+      "Venus": {
+        "longitude": 316.267417,
+        "sign_index": 10,
+        "degree_in_sign": 16.267417,
+        "is_retrograde": false,
+        "speed": 1.229342
+      },
+      "Saturn": {
+        "longitude": 322.460436,
+        "sign_index": 10,
+        "degree_in_sign": 22.460436,
+        "is_retrograde": false,
+        "speed": 0.118331
+      },
+      "Rahu": {
+        "longitude": 255.497406,
+        "sign_index": 8,
+        "degree_in_sign": 15.497406,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 75.497406,
+        "sign_index": 2,
+        "degree_in_sign": 15.497406,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

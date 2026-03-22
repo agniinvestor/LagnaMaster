@@ -1,0 +1,110 @@
+{
+  "adb_id": 3323,
+  "name": "Capodaglio, Wanda",
+  "given_name": "Wanda Capodaglio",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411003.694491,
+    "year": 1889,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Asti",
+    "country": "Italy",
+    "lat": 44.9,
+    "lon": 8.2
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capodaglio,_Wanda",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\nPreviously this entry had 2 January (Gauquelin Vol 4/831, 5:30 AM Rome time)\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 23.157587,
+    "lagna": 203.157587,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.30698,
+    "jd_ut": 2411003.694491,
+    "planets": {
+      "Sun": {
+        "longitude": 258.723789,
+        "sign_index": 8,
+        "degree_in_sign": 18.723789,
+        "is_retrograde": false,
+        "speed": 1.019835
+      },
+      "Moon": {
+        "longitude": 249.863667,
+        "sign_index": 8,
+        "degree_in_sign": 9.863667,
+        "is_retrograde": false,
+        "speed": 15.140797
+      },
+      "Mars": {
+        "longitude": 301.142478,
+        "sign_index": 10,
+        "degree_in_sign": 1.142478,
+        "is_retrograde": false,
+        "speed": 0.780887
+      },
+      "Mercury": {
+        "longitude": 260.72524,
+        "sign_index": 8,
+        "degree_in_sign": 20.72524,
+        "is_retrograde": false,
+        "speed": 1.623245
+      },
+      "Jupiter": {
+        "longitude": 240.278116,
+        "sign_index": 8,
+        "degree_in_sign": 0.278116,
+        "is_retrograde": false,
+        "speed": 0.221374
+      },
+      "Venus": {
+        "longitude": 300.379327,
+        "sign_index": 10,
+        "degree_in_sign": 0.379327,
+        "is_retrograde": false,
+        "speed": 1.186752
+      },
+      "Saturn": {
+        "longitude": 117.161614,
+        "sign_index": 3,
+        "degree_in_sign": 27.161614,
+        "is_retrograde": true,
+        "speed": -0.054369
+      },
+      "Rahu": {
+        "longitude": 89.554946,
+        "sign_index": 2,
+        "degree_in_sign": 29.554946,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 269.554946,
+        "sign_index": 8,
+        "degree_in_sign": 29.554946,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

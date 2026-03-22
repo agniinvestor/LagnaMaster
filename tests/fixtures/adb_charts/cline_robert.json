@@ -1,0 +1,109 @@
+{
+  "adb_id": 50793,
+  "name": "Cline, Robert",
+  "given_name": "Robert Cline",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427198.958333,
+    "year": 1933,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "San Francisco",
+    "country": "California",
+    "lat": 37.783333,
+    "lon": -122.416667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cline,_Robert",
+  "source_notes": "Steinbrecher collection: J.Johns quotes him for birth certificate\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Other Politics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 8.296338,
+    "lagna": 308.296338,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.926122,
+    "jd_ut": 2427198.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 22.527967,
+        "sign_index": 0,
+        "degree_in_sign": 22.527967,
+        "is_retrograde": false,
+        "speed": 0.967465
+      },
+      "Moon": {
+        "longitude": 154.690996,
+        "sign_index": 5,
+        "degree_in_sign": 4.690996,
+        "is_retrograde": false,
+        "speed": 13.820463
+      },
+      "Mars": {
+        "longitude": 131.184435,
+        "sign_index": 4,
+        "degree_in_sign": 11.184435,
+        "is_retrograde": false,
+        "speed": 0.249804
+      },
+      "Mercury": {
+        "longitude": 0.667006,
+        "sign_index": 0,
+        "degree_in_sign": 0.667006,
+        "is_retrograde": false,
+        "speed": 1.594776
+      },
+      "Jupiter": {
+        "longitude": 140.386526,
+        "sign_index": 4,
+        "degree_in_sign": 20.386526,
+        "is_retrograde": true,
+        "speed": -0.012158
+      },
+      "Venus": {
+        "longitude": 26.411764,
+        "sign_index": 0,
+        "degree_in_sign": 26.411764,
+        "is_retrograde": false,
+        "speed": 1.232312
+      },
+      "Saturn": {
+        "longitude": 293.104316,
+        "sign_index": 9,
+        "degree_in_sign": 23.104316,
+        "is_retrograde": false,
+        "speed": 0.033328
+      },
+      "Rahu": {
+        "longitude": 311.33394,
+        "sign_index": 10,
+        "degree_in_sign": 11.33394,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 131.33394,
+        "sign_index": 4,
+        "degree_in_sign": 11.33394,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

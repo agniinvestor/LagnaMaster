@@ -1,0 +1,110 @@
+{
+  "adb_id": 3185,
+  "name": "Corazzini, Sergio",
+  "given_name": "Sergio Corazzini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409944.048657,
+    "year": 1886,
+    "month": 2,
+    "day": 6,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corazzini,_Sergio",
+  "source_notes": "Bordoni quotes B.C. Vol 3\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Tuberculosis",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 23.90893,
+    "lagna": 53.90893,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.266474,
+    "jd_ut": 2409944.048657,
+    "planets": {
+      "Sun": {
+        "longitude": 295.462904,
+        "sign_index": 9,
+        "degree_in_sign": 25.462904,
+        "is_retrograde": false,
+        "speed": 1.012944
+      },
+      "Moon": {
+        "longitude": 321.360692,
+        "sign_index": 10,
+        "degree_in_sign": 21.360692,
+        "is_retrograde": false,
+        "speed": 8.099747
+      },
+      "Mars": {
+        "longitude": 152.093626,
+        "sign_index": 5,
+        "degree_in_sign": 2.093626,
+        "is_retrograde": true,
+        "speed": -0.151717
+      },
+      "Mercury": {
+        "longitude": 282.466068,
+        "sign_index": 9,
+        "degree_in_sign": 12.466068,
+        "is_retrograde": false,
+        "speed": 1.59778
+      },
+      "Jupiter": {
+        "longitude": 163.268386,
+        "sign_index": 5,
+        "degree_in_sign": 13.268386,
+        "is_retrograde": true,
+        "speed": -0.054034
+      },
+      "Venus": {
+        "longitude": 314.361179,
+        "sign_index": 10,
+        "degree_in_sign": 14.361179,
+        "is_retrograde": true,
+        "speed": -0.353164
+      },
+      "Saturn": {
+        "longitude": 69.7337,
+        "sign_index": 2,
+        "degree_in_sign": 9.7337,
+        "is_retrograde": true,
+        "speed": -0.044411
+      },
+      "Rahu": {
+        "longitude": 145.707825,
+        "sign_index": 4,
+        "degree_in_sign": 25.707825,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.707825,
+        "sign_index": 10,
+        "degree_in_sign": 25.707825,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

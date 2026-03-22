@@ -1,0 +1,110 @@
+{
+  "adb_id": 67485,
+  "name": "Canrobert, François Certain",
+  "given_name": "François Certain Canrobert",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2381961.078102,
+    "year": 1809,
+    "month": 6,
+    "day": 27,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "St.Céré",
+    "country": "France",
+    "lat": 44.866667,
+    "lon": 1.883333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canrobert,_François_Certain",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 4.\\n\\nSy Scholfield cites same data from birth certificate quoted in \"Le marechal Canrobort\" by Louis Martin (Limoges, H. Charles-Lavauzelle, 1895), p. 307: \"L'an mil huit cent neuf, le vingt-huit juin, à sept heures du matin, par devant nous Bernard Docet, avocat, premier adjoint, officier de l'état civil de la commune de Saint-Céré, chef-lieu de canton, département du Lot, délégué par le maire, est comparu M. Antoine-Certain Canrobert, ancien capitaine d'infanterie, âgé de 55 ans, demeurant à Saint-Céré, lequel nous a présenté un enfant du sexe masculin, né le jour d'hier à deux heures après midi...\"\\n",
+  "categories": [
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Diplomat"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 14.349856,
+    "lagna": 164.349856,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.19699,
+    "jd_ut": 2381961.078102,
+    "planets": {
+      "Sun": {
+        "longitude": 74.199112,
+        "sign_index": 2,
+        "degree_in_sign": 14.199112,
+        "is_retrograde": false,
+        "speed": 0.95284
+      },
+      "Moon": {
+        "longitude": 253.79001,
+        "sign_index": 8,
+        "degree_in_sign": 13.79001,
+        "is_retrograde": false,
+        "speed": 18.807003
+      },
+      "Mars": {
+        "longitude": 175.759579,
+        "sign_index": 5,
+        "degree_in_sign": 25.759579,
+        "is_retrograde": false,
+        "speed": 0.377207
+      },
+      "Mercury": {
+        "longitude": 92.542936,
+        "sign_index": 3,
+        "degree_in_sign": 2.542936,
+        "is_retrograde": false,
+        "speed": 0.001096
+      },
+      "Jupiter": {
+        "longitude": 0.142404,
+        "sign_index": 0,
+        "degree_in_sign": 0.142404,
+        "is_retrograde": false,
+        "speed": 0.138941
+      },
+      "Venus": {
+        "longitude": 36.063716,
+        "sign_index": 1,
+        "degree_in_sign": 6.063716,
+        "is_retrograde": false,
+        "speed": 0.42107
+      },
+      "Saturn": {
+        "longitude": 216.930721,
+        "sign_index": 7,
+        "degree_in_sign": 6.930721,
+        "is_retrograde": true,
+        "speed": -0.051132
+      },
+      "Rahu": {
+        "longitude": 188.585802,
+        "sign_index": 6,
+        "degree_in_sign": 8.585802,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 8.585802,
+        "sign_index": 0,
+        "degree_in_sign": 8.585802,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

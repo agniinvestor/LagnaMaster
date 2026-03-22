@@ -1,0 +1,108 @@
+{
+  "adb_id": 64983,
+  "name": "Charliac, Henri",
+  "given_name": "Henri Charliac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420546.875,
+    "year": 1915,
+    "month": 2,
+    "day": 18,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Meyssac",
+    "country": "France",
+    "lat": 45.056111,
+    "lon": 1.676667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charliac,_Henri",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 127.\\n",
+  "categories": [
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 10.724958,
+    "lagna": 340.724958,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.671799,
+    "jd_ut": 2420546.875,
+    "planets": {
+      "Sun": {
+        "longitude": 305.964333,
+        "sign_index": 10,
+        "degree_in_sign": 5.964333,
+        "is_retrograde": false,
+        "speed": 1.008934
+      },
+      "Moon": {
+        "longitude": 355.281038,
+        "sign_index": 11,
+        "degree_in_sign": 25.281038,
+        "is_retrograde": false,
+        "speed": 12.554128
+      },
+      "Mars": {
+        "longitude": 292.268776,
+        "sign_index": 9,
+        "degree_in_sign": 22.268776,
+        "is_retrograde": false,
+        "speed": 0.784475
+      },
+      "Mercury": {
+        "longitude": 312.818921,
+        "sign_index": 10,
+        "degree_in_sign": 12.818921,
+        "is_retrograde": true,
+        "speed": -0.875549
+      },
+      "Jupiter": {
+        "longitude": 310.755029,
+        "sign_index": 10,
+        "degree_in_sign": 10.755029,
+        "is_retrograde": false,
+        "speed": 0.240812
+      },
+      "Venus": {
+        "longitude": 259.531731,
+        "sign_index": 8,
+        "degree_in_sign": 19.531731,
+        "is_retrograde": false,
+        "speed": 1.070912
+      },
+      "Saturn": {
+        "longitude": 62.749128,
+        "sign_index": 2,
+        "degree_in_sign": 2.749128,
+        "is_retrograde": true,
+        "speed": -0.014696
+      },
+      "Rahu": {
+        "longitude": 303.841704,
+        "sign_index": 10,
+        "degree_in_sign": 3.841704,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.841704,
+        "sign_index": 4,
+        "degree_in_sign": 3.841704,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

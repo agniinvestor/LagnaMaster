@@ -1,0 +1,114 @@
+{
+  "adb_id": 91197,
+  "name": "Cuisenaire, Georges",
+  "given_name": "Georges Cuisenaire",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411983.237847,
+    "year": 1891,
+    "month": 9,
+    "day": 7,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Quaregnon",
+    "country": "Belgium",
+    "lat": 50.433333,
+    "lon": 3.85
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuisenaire,_Georges",
+  "source_notes": "Sy Scholfield provided birth record from Hainaut archives (no. 365).\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Notable : Awards : Public Service",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 14.647093,
+    "lagna": 284.647093,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.344425,
+    "jd_ut": 2411983.237847,
+    "planets": {
+      "Sun": {
+        "longitude": 142.440226,
+        "sign_index": 4,
+        "degree_in_sign": 22.440226,
+        "is_retrograde": false,
+        "speed": 0.971625
+      },
+      "Moon": {
+        "longitude": 190.147573,
+        "sign_index": 6,
+        "degree_in_sign": 10.147573,
+        "is_retrograde": false,
+        "speed": 9.382685
+      },
+      "Mars": {
+        "longitude": 129.608563,
+        "sign_index": 4,
+        "degree_in_sign": 9.608563,
+        "is_retrograde": false,
+        "speed": 0.635435
+      },
+      "Mercury": {
+        "longitude": 153.032929,
+        "sign_index": 5,
+        "degree_in_sign": 3.032929,
+        "is_retrograde": true,
+        "speed": -0.802718
+      },
+      "Jupiter": {
+        "longitude": 320.449002,
+        "sign_index": 10,
+        "degree_in_sign": 20.449002,
+        "is_retrograde": true,
+        "speed": -0.132579
+      },
+      "Venus": {
+        "longitude": 139.48774,
+        "sign_index": 4,
+        "degree_in_sign": 19.48774,
+        "is_retrograde": false,
+        "speed": 1.242417
+      },
+      "Saturn": {
+        "longitude": 147.37699,
+        "sign_index": 4,
+        "degree_in_sign": 27.37699,
+        "is_retrograde": false,
+        "speed": 0.124798
+      },
+      "Rahu": {
+        "longitude": 37.64687,
+        "sign_index": 1,
+        "degree_in_sign": 7.64687,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 217.64687,
+        "sign_index": 7,
+        "degree_in_sign": 7.64687,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

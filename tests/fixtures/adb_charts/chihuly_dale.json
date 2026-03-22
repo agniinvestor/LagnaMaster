@@ -1,0 +1,108 @@
+{
+  "adb_id": 53164,
+  "name": "Chihuly, Dale",
+  "given_name": "Dale Chihuly",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430258.609028,
+    "year": 1941,
+    "month": 9,
+    "day": 20,
+    "calendar": "g",
+    "time": "18:37",
+    "time_type": "s",
+    "hour": 18.616667,
+    "time_unknown": false,
+    "place": "Tacoma",
+    "country": "Washington",
+    "lat": 47.25,
+    "lon": -122.45
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chihuly,_Dale",
+  "source_notes": "Steinbrecher Collection: Marie Yates quotes him from birth certificate 1993\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 26.923601,
+    "lagna": 326.923601,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.043105,
+    "jd_ut": 2430258.609028,
+    "planets": {
+      "Sun": {
+        "longitude": 154.67629,
+        "sign_index": 5,
+        "degree_in_sign": 4.67629,
+        "is_retrograde": false,
+        "speed": 0.978325
+      },
+      "Moon": {
+        "longitude": 153.218271,
+        "sign_index": 5,
+        "degree_in_sign": 3.218271,
+        "is_retrograde": false,
+        "speed": 15.113166
+      },
+      "Mars": {
+        "longitude": 359.204159,
+        "sign_index": 11,
+        "degree_in_sign": 29.204159,
+        "is_retrograde": true,
+        "speed": -0.200618
+      },
+      "Mercury": {
+        "longitude": 177.837688,
+        "sign_index": 5,
+        "degree_in_sign": 27.837688,
+        "is_retrograde": false,
+        "speed": 1.340206
+      },
+      "Jupiter": {
+        "longitude": 57.798805,
+        "sign_index": 1,
+        "degree_in_sign": 27.798805,
+        "is_retrograde": false,
+        "speed": 0.062004
+      },
+      "Venus": {
+        "longitude": 193.973533,
+        "sign_index": 6,
+        "degree_in_sign": 13.973533,
+        "is_retrograde": false,
+        "speed": 1.178226
+      },
+      "Saturn": {
+        "longitude": 35.410385,
+        "sign_index": 1,
+        "degree_in_sign": 5.410385,
+        "is_retrograde": true,
+        "speed": -0.018678
+      },
+      "Rahu": {
+        "longitude": 149.196712,
+        "sign_index": 4,
+        "degree_in_sign": 29.196712,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 329.196712,
+        "sign_index": 10,
+        "degree_in_sign": 29.196712,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

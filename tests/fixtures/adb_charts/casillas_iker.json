@@ -1,0 +1,112 @@
+{
+  "adb_id": 98378,
+  "name": "Casillas, Iker",
+  "given_name": "Iker Casillas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444745.03125,
+    "year": 1981,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "14:45",
+    "time_type": "d",
+    "hour": 14.75,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casillas,_Iker",
+  "source_notes": "Birth certificate in hand, copy on file.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 23.466774,
+    "lagna": 113.466774,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.59704,
+    "jd_ut": 2444745.03125,
+    "planets": {
+      "Sun": {
+        "longitude": 35.809927,
+        "sign_index": 1,
+        "degree_in_sign": 5.809927,
+        "is_retrograde": false,
+        "speed": 0.961745
+      },
+      "Moon": {
+        "longitude": 232.500451,
+        "sign_index": 7,
+        "degree_in_sign": 22.500451,
+        "is_retrograde": false,
+        "speed": 15.990246
+      },
+      "Mars": {
+        "longitude": 25.076349,
+        "sign_index": 0,
+        "degree_in_sign": 25.076349,
+        "is_retrograde": false,
+        "speed": 0.728755
+      },
+      "Mercury": {
+        "longitude": 57.178406,
+        "sign_index": 1,
+        "degree_in_sign": 27.178406,
+        "is_retrograde": false,
+        "speed": 1.379857
+      },
+      "Jupiter": {
+        "longitude": 156.930824,
+        "sign_index": 5,
+        "degree_in_sign": 6.930824,
+        "is_retrograde": true,
+        "speed": -0.021802
+      },
+      "Venus": {
+        "longitude": 47.110329,
+        "sign_index": 1,
+        "degree_in_sign": 17.110329,
+        "is_retrograde": false,
+        "speed": 1.22779
+      },
+      "Saturn": {
+        "longitude": 159.607835,
+        "sign_index": 5,
+        "degree_in_sign": 9.607835,
+        "is_retrograde": true,
+        "speed": -0.026002
+      },
+      "Rahu": {
+        "longitude": 101.531511,
+        "sign_index": 3,
+        "degree_in_sign": 11.531511,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 281.531511,
+        "sign_index": 9,
+        "degree_in_sign": 11.531511,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

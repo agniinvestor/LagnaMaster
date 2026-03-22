@@ -1,0 +1,113 @@
+{
+  "adb_id": 92678,
+  "name": "Carmichael, Bill",
+  "given_name": "Bill Carmichael",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2430737.996528,
+    "year": 1943,
+    "month": 1,
+    "day": 13,
+    "calendar": "g",
+    "time": "04:55",
+    "time_type": "w",
+    "hour": 4.916667,
+    "time_unknown": false,
+    "place": "San Jose",
+    "country": "California",
+    "lat": 37.333333,
+    "lon": -121.9
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carmichael,_Bill",
+  "source_notes": "Sy Scholfield quotes from ''7 Habits of a Healthy Home: Preparing the Ground in which Your Children Can Grow'' by William Carmichael (Tyndale House, 1997), page 204, born at O'Connor's hospital.\\n",
+  "categories": [
+    "Family : Parenting : Kids more than 3",
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Business : Business owner",
+    "Vocation : Writers : Magazine/ newsletter",
+    "Vocation : Writers : Religion/ Philosophy",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.843167,
+    "lagna": 197.843167,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.061434,
+    "jd_ut": 2430737.996528,
+    "planets": {
+      "Sun": {
+        "longitude": 269.373631,
+        "sign_index": 8,
+        "degree_in_sign": 29.373631,
+        "is_retrograde": false,
+        "speed": 1.01872
+      },
+      "Moon": {
+        "longitude": 0.77189,
+        "sign_index": 0,
+        "degree_in_sign": 0.77189,
+        "is_retrograde": false,
+        "speed": 16.201506
+      },
+      "Mars": {
+        "longitude": 237.343533,
+        "sign_index": 7,
+        "degree_in_sign": 27.343533,
+        "is_retrograde": false,
+        "speed": 0.717463
+      },
+      "Mercury": {
+        "longitude": 287.267287,
+        "sign_index": 9,
+        "degree_in_sign": 17.267287,
+        "is_retrograde": false,
+        "speed": 0.424361
+      },
+      "Jupiter": {
+        "longitude": 86.839383,
+        "sign_index": 2,
+        "degree_in_sign": 26.839383,
+        "is_retrograde": true,
+        "speed": -0.134708
+      },
+      "Venus": {
+        "longitude": 283.311827,
+        "sign_index": 9,
+        "degree_in_sign": 13.311827,
+        "is_retrograde": false,
+        "speed": 1.254029
+      },
+      "Saturn": {
+        "longitude": 43.052417,
+        "sign_index": 1,
+        "degree_in_sign": 13.052417,
+        "is_retrograde": true,
+        "speed": -0.043092
+      },
+      "Rahu": {
+        "longitude": 123.792977,
+        "sign_index": 4,
+        "degree_in_sign": 3.792977,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 303.792977,
+        "sign_index": 10,
+        "degree_in_sign": 3.792977,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

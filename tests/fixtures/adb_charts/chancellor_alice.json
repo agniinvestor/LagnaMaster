@@ -1,0 +1,116 @@
+{
+  "adb_id": 94917,
+  "name": "Chancellor, Alice",
+  "given_name": "Alice Chancellor",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419648.083333,
+    "year": 1912,
+    "month": 9,
+    "day": 2,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Kentland",
+    "country": "Indiana",
+    "lat": 40.766667,
+    "lon": -87.45
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chancellor,_Alice",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Eyes",
+    "Diagnoses : Body Part Problems : Handicapped",
+    "Diagnoses : Body Part Problems : Surgery",
+    "Lifestyle : Social Life : Hobbies, games",
+    "Vocation : Engineer : Electrical",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Government employee",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.743759,
+    "lagna": 145.743759,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.637438,
+    "jd_ut": 2419648.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 137.064391,
+        "sign_index": 4,
+        "degree_in_sign": 17.064391,
+        "is_retrograde": false,
+        "speed": 0.968555
+      },
+      "Moon": {
+        "longitude": 21.933197,
+        "sign_index": 0,
+        "degree_in_sign": 21.933197,
+        "is_retrograde": false,
+        "speed": 10.703401
+      },
+      "Mars": {
+        "longitude": 157.28148,
+        "sign_index": 5,
+        "degree_in_sign": 7.28148,
+        "is_retrograde": false,
+        "speed": 0.644739
+      },
+      "Mercury": {
+        "longitude": 121.124797,
+        "sign_index": 4,
+        "degree_in_sign": 1.124797,
+        "is_retrograde": false,
+        "speed": 0.212916
+      },
+      "Jupiter": {
+        "longitude": 224.344144,
+        "sign_index": 7,
+        "degree_in_sign": 14.344144,
+        "is_retrograde": false,
+        "speed": 0.089968
+      },
+      "Venus": {
+        "longitude": 153.099496,
+        "sign_index": 5,
+        "degree_in_sign": 3.099496,
+        "is_retrograde": false,
+        "speed": 1.234579
+      },
+      "Saturn": {
+        "longitude": 41.302876,
+        "sign_index": 1,
+        "degree_in_sign": 11.302876,
+        "is_retrograde": false,
+        "speed": 0.024848
+      },
+      "Rahu": {
+        "longitude": 351.470558,
+        "sign_index": 11,
+        "degree_in_sign": 21.470558,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 171.470558,
+        "sign_index": 5,
+        "degree_in_sign": 21.470558,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

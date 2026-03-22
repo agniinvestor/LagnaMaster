@@ -1,0 +1,109 @@
+{
+  "adb_id": 50749,
+  "name": "Carpenter, Ken",
+  "given_name": "Ken Carpenter",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419877.25,
+    "year": 1913,
+    "month": 4,
+    "day": 19,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Compton",
+    "country": "California",
+    "lat": 33.9,
+    "lon": -118.216667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpenter,_Ken",
+  "source_notes": "Steinbrecher Collection quotes Gauquelin Book of American Charts.\\n",
+  "categories": [
+    "Vocation : Sports : Track and Field",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 28.831848,
+    "lagna": 58.831848,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.646199,
+    "jd_ut": 2419877.25,
+    "planets": {
+      "Sun": {
+        "longitude": 6.417622,
+        "sign_index": 0,
+        "degree_in_sign": 6.417622,
+        "is_retrograde": false,
+        "speed": 0.975609
+      },
+      "Moon": {
+        "longitude": 170.810991,
+        "sign_index": 5,
+        "degree_in_sign": 20.810991,
+        "is_retrograde": false,
+        "speed": 19.050141
+      },
+      "Mars": {
+        "longitude": 323.219135,
+        "sign_index": 10,
+        "degree_in_sign": 23.219135,
+        "is_retrograde": false,
+        "speed": 0.771932
+      },
+      "Mercury": {
+        "longitude": 340.094465,
+        "sign_index": 11,
+        "degree_in_sign": 10.094465,
+        "is_retrograde": false,
+        "speed": 0.678772
+      },
+      "Jupiter": {
+        "longitude": 264.790243,
+        "sign_index": 8,
+        "degree_in_sign": 24.790243,
+        "is_retrograde": false,
+        "speed": 0.049706
+      },
+      "Venus": {
+        "longitude": 14.876217,
+        "sign_index": 0,
+        "degree_in_sign": 14.876217,
+        "is_retrograde": true,
+        "speed": -0.577158
+      },
+      "Saturn": {
+        "longitude": 39.899757,
+        "sign_index": 1,
+        "degree_in_sign": 9.899757,
+        "is_retrograde": false,
+        "speed": 0.115706
+      },
+      "Rahu": {
+        "longitude": 339.326536,
+        "sign_index": 11,
+        "degree_in_sign": 9.326536,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 159.326536,
+        "sign_index": 5,
+        "degree_in_sign": 9.326536,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

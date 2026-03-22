@@ -1,0 +1,110 @@
+{
+  "adb_id": 104349,
+  "name": "Cowles, Nelson",
+  "given_name": "Nelson Cowles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426320.208333,
+    "year": 1930,
+    "month": 12,
+    "day": 9,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Hallsville",
+    "country": "Texas",
+    "lat": 32.5,
+    "lon": -94.566667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowles,_Nelson",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 29.101763,
+    "lagna": 269.101763,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.892524,
+    "jd_ut": 2426320.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 234.020295,
+        "sign_index": 7,
+        "degree_in_sign": 24.020295,
+        "is_retrograde": false,
+        "speed": 1.015905
+      },
+      "Moon": {
+        "longitude": 101.960238,
+        "sign_index": 3,
+        "degree_in_sign": 11.960238,
+        "is_retrograde": false,
+        "speed": 16.579781
+      },
+      "Mars": {
+        "longitude": 113.420812,
+        "sign_index": 3,
+        "degree_in_sign": 23.420812,
+        "is_retrograde": false,
+        "speed": 0.110459
+      },
+      "Mercury": {
+        "longitude": 251.259392,
+        "sign_index": 8,
+        "degree_in_sign": 11.259392,
+        "is_retrograde": false,
+        "speed": 1.445028
+      },
+      "Jupiter": {
+        "longitude": 86.010364,
+        "sign_index": 2,
+        "degree_in_sign": 26.010364,
+        "is_retrograde": true,
+        "speed": -0.097832
+      },
+      "Venus": {
+        "longitude": 209.404461,
+        "sign_index": 6,
+        "degree_in_sign": 29.404461,
+        "is_retrograde": true,
+        "speed": -0.148189
+      },
+      "Saturn": {
+        "longitude": 258.238606,
+        "sign_index": 8,
+        "degree_in_sign": 18.238606,
+        "is_retrograde": false,
+        "speed": 0.111363
+      },
+      "Rahu": {
+        "longitude": 357.900727,
+        "sign_index": 11,
+        "degree_in_sign": 27.900727,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 177.900727,
+        "sign_index": 5,
+        "degree_in_sign": 27.900727,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

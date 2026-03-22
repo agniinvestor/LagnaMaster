@@ -1,0 +1,111 @@
+{
+  "adb_id": 8061,
+  "name": "Cerusico, Enzo",
+  "given_name": "Enzo Cerusico",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428828.59375,
+    "year": 1937,
+    "month": 10,
+    "day": 22,
+    "calendar": "g",
+    "time": "03:15",
+    "time_type": "s",
+    "hour": 3.25,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cerusico,_Enzo",
+  "source_notes": "Bordoni quotes B.C. Vol 3\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 3.301422,
+    "lagna": 123.301422,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.988429,
+    "jd_ut": 2428828.59375,
+    "planets": {
+      "Sun": {
+        "longitude": 185.271126,
+        "sign_index": 6,
+        "degree_in_sign": 5.271126,
+        "is_retrograde": false,
+        "speed": 0.994995
+      },
+      "Moon": {
+        "longitude": 35.171279,
+        "sign_index": 1,
+        "degree_in_sign": 5.171279,
+        "is_retrograde": false,
+        "speed": 10.540209
+      },
+      "Mars": {
+        "longitude": 262.001923,
+        "sign_index": 8,
+        "degree_in_sign": 22.001923,
+        "is_retrograde": false,
+        "speed": 0.710953
+      },
+      "Mercury": {
+        "longitude": 180.334055,
+        "sign_index": 6,
+        "degree_in_sign": 0.334055,
+        "is_retrograde": false,
+        "speed": 1.701965
+      },
+      "Jupiter": {
+        "longitude": 266.738674,
+        "sign_index": 8,
+        "degree_in_sign": 26.738674,
+        "is_retrograde": false,
+        "speed": 0.113752
+      },
+      "Venus": {
+        "longitude": 159.978281,
+        "sign_index": 5,
+        "degree_in_sign": 9.978281,
+        "is_retrograde": false,
+        "speed": 1.23676
+      },
+      "Saturn": {
+        "longitude": 336.751081,
+        "sign_index": 11,
+        "degree_in_sign": 6.751081,
+        "is_retrograde": true,
+        "speed": -0.06312
+      },
+      "Rahu": {
+        "longitude": 224.976181,
+        "sign_index": 7,
+        "degree_in_sign": 14.976181,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 44.976181,
+        "sign_index": 1,
+        "degree_in_sign": 14.976181,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

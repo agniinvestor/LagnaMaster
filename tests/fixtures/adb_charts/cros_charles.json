@@ -1,0 +1,109 @@
+{
+  "adb_id": 60460,
+  "name": "Cros, Charles",
+  "given_name": "Charles Cros",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2394109.825833,
+    "year": 1842,
+    "month": 10,
+    "day": 1,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Fabrezan",
+    "country": "France",
+    "lat": 43.133333,
+    "lon": 2.7
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cros,_Charles",
+  "source_notes": "Gauquelin vol 6\\n",
+  "categories": [
+    "Vocation : Writers : Poet",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 17.255702,
+    "lagna": 167.255702,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.66126,
+    "jd_ut": 2394109.825833,
+    "planets": {
+      "Sun": {
+        "longitude": 166.046106,
+        "sign_index": 5,
+        "degree_in_sign": 16.046106,
+        "is_retrograde": false,
+        "speed": 0.98488
+      },
+      "Moon": {
+        "longitude": 124.925618,
+        "sign_index": 4,
+        "degree_in_sign": 4.925618,
+        "is_retrograde": false,
+        "speed": 10.72561
+      },
+      "Mars": {
+        "longitude": 134.818535,
+        "sign_index": 4,
+        "degree_in_sign": 14.818535,
+        "is_retrograde": false,
+        "speed": 0.625704
+      },
+      "Mercury": {
+        "longitude": 190.249092,
+        "sign_index": 6,
+        "degree_in_sign": 10.249092,
+        "is_retrograde": false,
+        "speed": 1.225056
+      },
+      "Jupiter": {
+        "longitude": 261.94075,
+        "sign_index": 8,
+        "degree_in_sign": 21.94075,
+        "is_retrograde": false,
+        "speed": 0.068909
+      },
+      "Venus": {
+        "longitude": 212.566124,
+        "sign_index": 7,
+        "degree_in_sign": 2.566124,
+        "is_retrograde": false,
+        "speed": 1.03097
+      },
+      "Saturn": {
+        "longitude": 256.449509,
+        "sign_index": 8,
+        "degree_in_sign": 16.449509,
+        "is_retrograde": false,
+        "speed": 0.030902
+      },
+      "Rahu": {
+        "longitude": 264.797197,
+        "sign_index": 8,
+        "degree_in_sign": 24.797197,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 84.797197,
+        "sign_index": 2,
+        "degree_in_sign": 24.797197,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 104959,
+  "name": "Caimo, Angelo",
+  "given_name": "Angelo Caimo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420328.003472,
+    "year": 1914,
+    "month": 7,
+    "day": 14,
+    "calendar": "g",
+    "time": "13:05",
+    "time_type": "s",
+    "hour": 13.083333,
+    "time_unknown": false,
+    "place": "San Pietro Mosezzo",
+    "country": "Italy",
+    "lat": 45.45,
+    "lon": 8.55
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caimo,_Angelo",
+  "source_notes": "Grazia Bordoni database.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 8.29753,
+    "lagna": 158.29753,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.663432,
+    "jd_ut": 2420328.003472,
+    "planets": {
+      "Sun": {
+        "longitude": 88.516522,
+        "sign_index": 2,
+        "degree_in_sign": 28.516522,
+        "is_retrograde": false,
+        "speed": 0.953717
+      },
+      "Moon": {
+        "longitude": 348.878032,
+        "sign_index": 11,
+        "degree_in_sign": 18.878032,
+        "is_retrograde": false,
+        "speed": 13.030211
+      },
+      "Mars": {
+        "longitude": 138.160511,
+        "sign_index": 4,
+        "degree_in_sign": 18.160511,
+        "is_retrograde": false,
+        "speed": 0.601032
+      },
+      "Mercury": {
+        "longitude": 92.152816,
+        "sign_index": 3,
+        "degree_in_sign": 2.152816,
+        "is_retrograde": true,
+        "speed": -0.654319
+      },
+      "Jupiter": {
+        "longitude": 297.943785,
+        "sign_index": 9,
+        "degree_in_sign": 27.943785,
+        "is_retrograde": true,
+        "speed": -0.096855
+      },
+      "Venus": {
+        "longitude": 126.065841,
+        "sign_index": 4,
+        "degree_in_sign": 6.065841,
+        "is_retrograde": false,
+        "speed": 1.167784
+      },
+      "Saturn": {
+        "longitude": 62.967141,
+        "sign_index": 2,
+        "degree_in_sign": 2.967141,
+        "is_retrograde": false,
+        "speed": 0.121979
+      },
+      "Rahu": {
+        "longitude": 315.440165,
+        "sign_index": 10,
+        "degree_in_sign": 15.440165,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 135.440165,
+        "sign_index": 4,
+        "degree_in_sign": 15.440165,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

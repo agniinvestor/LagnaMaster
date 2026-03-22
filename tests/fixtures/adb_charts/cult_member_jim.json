@@ -1,0 +1,108 @@
+{
+  "adb_id": 19530,
+  "name": "Cult Member Jim",
+  "given_name": "Cult Member Jim",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2434318.477778,
+    "year": 1952,
+    "month": 11,
+    "day": 1,
+    "calendar": "g",
+    "time": "18:28",
+    "time_type": "s",
+    "hour": 18.466667,
+    "time_unknown": false,
+    "place": "Columbus",
+    "country": "Ohio",
+    "lat": 39.966667,
+    "lon": -83.0
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Cult_Member_Jim",
+  "source_notes": "Dr. Glen Perry quotes him\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Cult follower"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 13.947003,
+    "lagna": 13.947003,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.198337,
+    "jd_ut": 2434318.477778,
+    "planets": {
+      "Sun": {
+        "longitude": 196.290089,
+        "sign_index": 6,
+        "degree_in_sign": 16.290089,
+        "is_retrograde": false,
+        "speed": 1.00088
+      },
+      "Moon": {
+        "longitude": 16.979571,
+        "sign_index": 0,
+        "degree_in_sign": 16.979571,
+        "is_retrograde": false,
+        "speed": 14.191862
+      },
+      "Mars": {
+        "longitude": 261.903974,
+        "sign_index": 8,
+        "degree_in_sign": 21.903974,
+        "is_retrograde": false,
+        "speed": 0.74063
+      },
+      "Mercury": {
+        "longitude": 217.765763,
+        "sign_index": 7,
+        "degree_in_sign": 7.765763,
+        "is_retrograde": false,
+        "speed": 1.288223
+      },
+      "Jupiter": {
+        "longitude": 23.578615,
+        "sign_index": 0,
+        "degree_in_sign": 23.578615,
+        "is_retrograde": true,
+        "speed": -0.134205
+      },
+      "Venus": {
+        "longitude": 229.94784,
+        "sign_index": 7,
+        "degree_in_sign": 19.94784,
+        "is_retrograde": false,
+        "speed": 1.218917
+      },
+      "Saturn": {
+        "longitude": 177.369641,
+        "sign_index": 5,
+        "degree_in_sign": 27.369641,
+        "is_retrograde": false,
+        "speed": 0.117934
+      },
+      "Rahu": {
+        "longitude": 294.055892,
+        "sign_index": 9,
+        "degree_in_sign": 24.055892,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 114.055892,
+        "sign_index": 3,
+        "degree_in_sign": 24.055892,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

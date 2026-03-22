@@ -1,0 +1,127 @@
+{
+  "adb_id": 3347,
+  "name": "Cocteau, Jean",
+  "given_name": "Jean Cocteau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411188.535694,
+    "year": 1889,
+    "month": 7,
+    "day": 5,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Maisons Laffitte",
+    "country": "France",
+    "lat": 48.95,
+    "lon": 2.15
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cocteau,_Jean",
+  "source_notes": "Gauquelin Vol. 4/237 give 1 am from birth registry; same on B.C. in hand, Steinbrecher.\\n(His autobiography gives 3:50 AM, p.6).\\nJean Cocteau: ''L'homme et ses miroirs by Jean-Jacques Kihm'', Elisabeth Sprigge and Henri C. Béhar; La Table Ronde, 1968; page 17, gives besides the two times above also \"shortly before 2:00 am\" supposedly from a grandfather's letter.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family traumatic event",
+    "Family : Relationship : Mate - Noted",
+    "Lifestyle : Work : Skills - Multi-faceted",
+    "Passions : Sexuality : Gay",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Stage/ Set design",
+    "Vocation : Business : Business owner",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Military : Combat",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet",
+    "Notable : Awards : Vocational award",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 8.757392,
+    "lagna": 8.757392,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.314046,
+    "jd_ut": 2411188.535694,
+    "planets": {
+      "Sun": {
+        "longitude": 80.831532,
+        "sign_index": 2,
+        "degree_in_sign": 20.831532,
+        "is_retrograde": false,
+        "speed": 0.953351
+      },
+      "Moon": {
+        "longitude": 155.759143,
+        "sign_index": 5,
+        "degree_in_sign": 5.759143,
+        "is_retrograde": false,
+        "speed": 14.728531
+      },
+      "Mars": {
+        "longitude": 76.006618,
+        "sign_index": 2,
+        "degree_in_sign": 16.006618,
+        "is_retrograde": false,
+        "speed": 0.663829
+      },
+      "Mercury": {
+        "longitude": 62.463618,
+        "sign_index": 2,
+        "degree_in_sign": 2.463618,
+        "is_retrograde": false,
+        "speed": 0.33725
+      },
+      "Jupiter": {
+        "longitude": 249.783619,
+        "sign_index": 8,
+        "degree_in_sign": 9.783619,
+        "is_retrograde": true,
+        "speed": -0.123683
+      },
+      "Venus": {
+        "longitude": 35.310428,
+        "sign_index": 1,
+        "degree_in_sign": 5.310428,
+        "is_retrograde": false,
+        "speed": 0.912239
+      },
+      "Saturn": {
+        "longitude": 116.312852,
+        "sign_index": 3,
+        "degree_in_sign": 26.312852,
+        "is_retrograde": false,
+        "speed": 0.111941
+      },
+      "Rahu": {
+        "longitude": 79.759819,
+        "sign_index": 2,
+        "degree_in_sign": 19.759819,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 259.759819,
+        "sign_index": 8,
+        "degree_in_sign": 19.759819,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

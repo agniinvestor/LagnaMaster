@@ -1,0 +1,111 @@
+{
+  "adb_id": 6735,
+  "name": "Cartier, Jean-Albert",
+  "given_name": "Jean-Albert Cartier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426112.083333,
+    "year": 1930,
+    "month": 5,
+    "day": 15,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "d",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cartier,_Jean-Albert",
+  "source_notes": "Steinbrecher quotes B.C.\\n",
+  "categories": [
+    "Vocation : Art : Art critic",
+    "Vocation : Business/Marketing : Public relations",
+    "Vocation : Entertain/Business : Director",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 12.663638,
+    "lagna": 132.663638,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.884567,
+    "jd_ut": 2426112.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 31.113411,
+        "sign_index": 1,
+        "degree_in_sign": 1.113411,
+        "is_retrograde": false,
+        "speed": 0.96368
+      },
+      "Moon": {
+        "longitude": 244.730134,
+        "sign_index": 8,
+        "degree_in_sign": 4.730134,
+        "is_retrograde": false,
+        "speed": 16.383352
+      },
+      "Mars": {
+        "longitude": 353.129867,
+        "sign_index": 11,
+        "degree_in_sign": 23.129867,
+        "is_retrograde": false,
+        "speed": 0.761011
+      },
+      "Mercury": {
+        "longitude": 38.053568,
+        "sign_index": 1,
+        "degree_in_sign": 8.053568,
+        "is_retrograde": true,
+        "speed": -0.458439
+      },
+      "Jupiter": {
+        "longitude": 57.528663,
+        "sign_index": 1,
+        "degree_in_sign": 27.528663,
+        "is_retrograde": false,
+        "speed": 0.217913
+      },
+      "Venus": {
+        "longitude": 55.474845,
+        "sign_index": 1,
+        "degree_in_sign": 25.474845,
+        "is_retrograde": false,
+        "speed": 1.21452
+      },
+      "Saturn": {
+        "longitude": 258.542393,
+        "sign_index": 8,
+        "degree_in_sign": 18.542393,
+        "is_retrograde": true,
+        "speed": -0.037307
+      },
+      "Rahu": {
+        "longitude": 8.929704,
+        "sign_index": 0,
+        "degree_in_sign": 8.929704,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 188.929704,
+        "sign_index": 6,
+        "degree_in_sign": 8.929704,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

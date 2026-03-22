@@ -1,0 +1,114 @@
+{
+  "adb_id": 86593,
+  "name": "Cabot, Chuck",
+  "given_name": "Chuck Cabot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420634.112176,
+    "year": 1915,
+    "month": 5,
+    "day": 16,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Querétaro",
+    "country": "Mexico",
+    "lat": 20.6,
+    "lon": -100.383333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabot,_Chuck",
+  "source_notes": "Sy Scholfield provided birth registry entry from Querétaro state archives.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Business : Manager/ Agent",
+    "Vocation : Sports : Football",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.035497,
+    "lagna": 47.035497,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.675134,
+    "jd_ut": 2420634.112176,
+    "planets": {
+      "Sun": {
+        "longitude": 31.967941,
+        "sign_index": 1,
+        "degree_in_sign": 1.967941,
+        "is_retrograde": false,
+        "speed": 0.963895
+      },
+      "Moon": {
+        "longitude": 59.676047,
+        "sign_index": 1,
+        "degree_in_sign": 29.676047,
+        "is_retrograde": false,
+        "speed": 11.888281
+      },
+      "Mars": {
+        "longitude": 0.1536,
+        "sign_index": 0,
+        "degree_in_sign": 0.1536,
+        "is_retrograde": false,
+        "speed": 0.757142
+      },
+      "Mercury": {
+        "longitude": 48.279978,
+        "sign_index": 1,
+        "degree_in_sign": 18.279978,
+        "is_retrograde": false,
+        "speed": 1.82613
+      },
+      "Jupiter": {
+        "longitude": 329.893908,
+        "sign_index": 10,
+        "degree_in_sign": 29.893908,
+        "is_retrograde": false,
+        "speed": 0.169757
+      },
+      "Venus": {
+        "longitude": 0.710392,
+        "sign_index": 0,
+        "degree_in_sign": 0.710392,
+        "is_retrograde": false,
+        "speed": 1.199065
+      },
+      "Saturn": {
+        "longitude": 67.851917,
+        "sign_index": 2,
+        "degree_in_sign": 7.851917,
+        "is_retrograde": false,
+        "speed": 0.113994
+      },
+      "Rahu": {
+        "longitude": 299.218823,
+        "sign_index": 9,
+        "degree_in_sign": 29.218823,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 119.218823,
+        "sign_index": 3,
+        "degree_in_sign": 29.218823,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

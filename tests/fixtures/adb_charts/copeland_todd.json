@@ -1,0 +1,108 @@
+{
+  "adb_id": 53874,
+  "name": "Copeland, Todd",
+  "given_name": "Todd Copeland",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439995.129861,
+    "year": 1968,
+    "month": 5,
+    "day": 18,
+    "calendar": "g",
+    "time": "11:07",
+    "time_type": "d",
+    "hour": 11.116667,
+    "time_unknown": false,
+    "place": "Ridgewood",
+    "country": "New Jersey",
+    "lat": 40.983333,
+    "lon": -74.116667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Copeland,_Todd",
+  "source_notes": "Steinbrecher collection: Steinbrecher has memo quotes birth certificate in hand from Ridgewood, New Jersey.\\n",
+  "categories": [
+    "Vocation : Sports : Hockey"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 25.271851,
+    "lagna": 85.271851,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.415402,
+    "jd_ut": 2439995.129861,
+    "planets": {
+      "Sun": {
+        "longitude": 34.301568,
+        "sign_index": 1,
+        "degree_in_sign": 4.301568,
+        "is_retrograde": false,
+        "speed": 0.962578
+      },
+      "Moon": {
+        "longitude": 296.031831,
+        "sign_index": 9,
+        "degree_in_sign": 26.031831,
+        "is_retrograde": false,
+        "speed": 11.969088
+      },
+      "Mars": {
+        "longitude": 43.613116,
+        "sign_index": 1,
+        "degree_in_sign": 13.613116,
+        "is_retrograde": false,
+        "speed": 0.696264
+      },
+      "Mercury": {
+        "longitude": 55.86633,
+        "sign_index": 1,
+        "degree_in_sign": 25.86633,
+        "is_retrograde": false,
+        "speed": 1.315947
+      },
+      "Jupiter": {
+        "longitude": 123.480414,
+        "sign_index": 4,
+        "degree_in_sign": 3.480414,
+        "is_retrograde": false,
+        "speed": 0.07752
+      },
+      "Venus": {
+        "longitude": 25.434128,
+        "sign_index": 0,
+        "degree_in_sign": 25.434128,
+        "is_retrograde": false,
+        "speed": 1.22821
+      },
+      "Saturn": {
+        "longitude": 357.189346,
+        "sign_index": 11,
+        "degree_in_sign": 27.189346,
+        "is_retrograde": false,
+        "speed": 0.109173
+      },
+      "Rahu": {
+        "longitude": 353.238461,
+        "sign_index": 11,
+        "degree_in_sign": 23.238461,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 173.238461,
+        "sign_index": 5,
+        "degree_in_sign": 23.238461,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

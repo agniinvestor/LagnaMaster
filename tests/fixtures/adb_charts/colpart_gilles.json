@@ -1,0 +1,109 @@
+{
+  "adb_id": 62797,
+  "name": "Colpart, Gilles",
+  "given_name": "Gilles Colpart",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433268.916667,
+    "year": 1949,
+    "month": 12,
+    "day": 18,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Alès",
+    "country": "France",
+    "lat": 44.133333,
+    "lon": 4.083333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colpart,_Gilles",
+  "source_notes": "Didier Geslain archive\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Critic"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 24.013152,
+    "lagna": 264.013152,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.158206,
+    "jd_ut": 2433268.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 243.00628,
+        "sign_index": 8,
+        "degree_in_sign": 3.00628,
+        "is_retrograde": false,
+        "speed": 1.018418
+      },
+      "Moon": {
+        "longitude": 224.667174,
+        "sign_index": 7,
+        "degree_in_sign": 14.667174,
+        "is_retrograde": false,
+        "speed": 10.269037
+      },
+      "Mars": {
+        "longitude": 153.599658,
+        "sign_index": 5,
+        "degree_in_sign": 3.599658,
+        "is_retrograde": false,
+        "speed": 0.432463
+      },
+      "Mercury": {
+        "longitude": 257.450204,
+        "sign_index": 8,
+        "degree_in_sign": 17.450204,
+        "is_retrograde": false,
+        "speed": 1.534003
+      },
+      "Jupiter": {
+        "longitude": 280.372232,
+        "sign_index": 9,
+        "degree_in_sign": 10.372232,
+        "is_retrograde": false,
+        "speed": 0.212121
+      },
+      "Venus": {
+        "longitude": 286.485445,
+        "sign_index": 9,
+        "degree_in_sign": 16.485445,
+        "is_retrograde": false,
+        "speed": 0.695304
+      },
+      "Saturn": {
+        "longitude": 146.15596,
+        "sign_index": 4,
+        "degree_in_sign": 26.15596,
+        "is_retrograde": false,
+        "speed": 0.021607
+      },
+      "Rahu": {
+        "longitude": 349.674296,
+        "sign_index": 11,
+        "degree_in_sign": 19.674296,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 169.674296,
+        "sign_index": 5,
+        "degree_in_sign": 19.674296,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

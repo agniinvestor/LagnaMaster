@@ -1,0 +1,108 @@
+{
+  "adb_id": 68834,
+  "name": "Collin, Bernardin",
+  "given_name": "Bernardin Collin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416974.618507,
+    "year": 1905,
+    "month": 5,
+    "day": 9,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "La Mure",
+    "country": "France",
+    "lat": 44.9,
+    "lon": 5.783333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collin,_Bernardin",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'religion1' pdf file, p. 72.\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 23.922981,
+    "lagna": 323.922981,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.535233,
+    "jd_ut": 2416974.618507,
+    "planets": {
+      "Sun": {
+        "longitude": 25.273229,
+        "sign_index": 0,
+        "degree_in_sign": 25.273229,
+        "is_retrograde": false,
+        "speed": 0.966712
+      },
+      "Moon": {
+        "longitude": 76.429687,
+        "sign_index": 2,
+        "degree_in_sign": 16.429687,
+        "is_retrograde": false,
+        "speed": 16.940634
+      },
+      "Mars": {
+        "longitude": 204.900589,
+        "sign_index": 6,
+        "degree_in_sign": 24.900589,
+        "is_retrograde": true,
+        "speed": -0.362273
+      },
+      "Mercury": {
+        "longitude": 4.814783,
+        "sign_index": 0,
+        "degree_in_sign": 4.814783,
+        "is_retrograde": false,
+        "speed": 0.147261
+      },
+      "Jupiter": {
+        "longitude": 21.729295,
+        "sign_index": 0,
+        "degree_in_sign": 21.729295,
+        "is_retrograde": false,
+        "speed": 0.237957
+      },
+      "Venus": {
+        "longitude": 7.588332,
+        "sign_index": 0,
+        "degree_in_sign": 7.588332,
+        "is_retrograde": true,
+        "speed": -0.380025
+      },
+      "Saturn": {
+        "longitude": 309.345238,
+        "sign_index": 10,
+        "degree_in_sign": 9.345238,
+        "is_retrograde": false,
+        "speed": 0.055928
+      },
+      "Rahu": {
+        "longitude": 133.143076,
+        "sign_index": 4,
+        "degree_in_sign": 13.143076,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 313.143076,
+        "sign_index": 10,
+        "degree_in_sign": 13.143076,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

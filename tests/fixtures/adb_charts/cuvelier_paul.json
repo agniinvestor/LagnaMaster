@@ -1,0 +1,109 @@
+{
+  "adb_id": 57868,
+  "name": "Cuvelier, Paul",
+  "given_name": "Paul Cuvelier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423745.583333,
+    "year": 1923,
+    "month": 11,
+    "day": 22,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Liège",
+    "country": "Belgium",
+    "lat": 50.633333,
+    "lon": 5.566667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuvelier,_Paul",
+  "source_notes": "Acte n° 34, André Dekoster, quoted by Lepoivre\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.409407,
+    "lagna": 138.409407,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.79409,
+    "jd_ut": 2423745.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 215.949768,
+        "sign_index": 7,
+        "degree_in_sign": 5.949768,
+        "is_retrograde": false,
+        "speed": 1.010068
+      },
+      "Moon": {
+        "longitude": 19.475322,
+        "sign_index": 0,
+        "degree_in_sign": 19.475322,
+        "is_retrograde": false,
+        "speed": 9.765921
+      },
+      "Mars": {
+        "longitude": 179.511055,
+        "sign_index": 5,
+        "degree_in_sign": 29.511055,
+        "is_retrograde": false,
+        "speed": 0.640348
+      },
+      "Mercury": {
+        "longitude": 219.404699,
+        "sign_index": 7,
+        "degree_in_sign": 9.404699,
+        "is_retrograde": false,
+        "speed": 1.568184
+      },
+      "Jupiter": {
+        "longitude": 216.619176,
+        "sign_index": 7,
+        "degree_in_sign": 6.619176,
+        "is_retrograde": false,
+        "speed": 0.22255
+      },
+      "Venus": {
+        "longitude": 234.515629,
+        "sign_index": 7,
+        "degree_in_sign": 24.515629,
+        "is_retrograde": false,
+        "speed": 1.248268
+      },
+      "Saturn": {
+        "longitude": 184.458172,
+        "sign_index": 6,
+        "degree_in_sign": 4.458172,
+        "is_retrograde": false,
+        "speed": 0.109863
+      },
+      "Rahu": {
+        "longitude": 134.335465,
+        "sign_index": 4,
+        "degree_in_sign": 14.335465,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 314.335465,
+        "sign_index": 10,
+        "degree_in_sign": 14.335465,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

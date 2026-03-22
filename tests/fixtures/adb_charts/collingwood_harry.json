@@ -1,0 +1,111 @@
+{
+  "adb_id": 96958,
+  "name": "Collingwood, Harry",
+  "given_name": "Harry Collingwood",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2394343.902685,
+    "year": 1843,
+    "month": 5,
+    "day": 23,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "l",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Weymouth",
+    "country": "England",
+    "lat": 50.6,
+    "lon": -2.466667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collingwood,_Harry",
+  "source_notes": "From Wikipedia: \"Collingwood was the eldest son of master mariner Captain William Lancaster (1813 – (1861 – 1871)) and Anne, née Cosens (c. 1820 – 9 October 1898). His birth certificate shows that he was born in Weymouth, Dorset on 23 May 1843 at 9:30am at Concord Place. The Oxford Dictionary Of National Biography notes that most references, except his birth certificate, give his date of birth as 1851. His application for Associate Membership of the Institution of Civil Engineers gives his birth date as 23 May 1846.\"\\n\\nBecause the links provided on Wikipedia do not lead to the birth certificate or a quote regarding his time of birth we have rated this data B.\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids - Noted",
+    "Vocation : Engineer : Civil",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 29.038699,
+    "lagna": 89.038699,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.670206,
+    "jd_ut": 2394343.902685,
+    "planets": {
+      "Sun": {
+        "longitude": 39.895388,
+        "sign_index": 1,
+        "degree_in_sign": 9.895388,
+        "is_retrograde": false,
+        "speed": 0.960498
+      },
+      "Moon": {
+        "longitude": 334.062974,
+        "sign_index": 11,
+        "degree_in_sign": 4.062974,
+        "is_retrograde": false,
+        "speed": 8.995019
+      },
+      "Mars": {
+        "longitude": 237.56019,
+        "sign_index": 7,
+        "degree_in_sign": 27.56019,
+        "is_retrograde": true,
+        "speed": -0.235766
+      },
+      "Mercury": {
+        "longitude": 62.552175,
+        "sign_index": 2,
+        "degree_in_sign": 2.552175,
+        "is_retrograde": false,
+        "speed": 1.034101
+      },
+      "Jupiter": {
+        "longitude": 304.906199,
+        "sign_index": 10,
+        "degree_in_sign": 4.906199,
+        "is_retrograde": false,
+        "speed": 0.07508
+      },
+      "Venus": {
+        "longitude": 5.704649,
+        "sign_index": 0,
+        "degree_in_sign": 5.704649,
+        "is_retrograde": false,
+        "speed": 1.186437
+      },
+      "Saturn": {
+        "longitude": 273.896267,
+        "sign_index": 9,
+        "degree_in_sign": 3.896267,
+        "is_retrograde": true,
+        "speed": -0.027616
+      },
+      "Rahu": {
+        "longitude": 252.392959,
+        "sign_index": 8,
+        "degree_in_sign": 12.392959,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 72.392959,
+        "sign_index": 2,
+        "degree_in_sign": 12.392959,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

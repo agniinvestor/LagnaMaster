@@ -1,0 +1,109 @@
+{
+  "adb_id": 63071,
+  "name": "Comte-Sponville, André",
+  "given_name": "André Comte-Sponville",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434083.78125,
+    "year": 1952,
+    "month": 3,
+    "day": 12,
+    "calendar": "g",
+    "time": "07:45",
+    "time_type": "s",
+    "hour": 7.75,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comte-Sponville,_André",
+  "source_notes": "Didier Geslain archive, 'Philosophes' pdf file, p. 30.\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Philosopher/ Humanist",
+    "Vocation : Humanities+Social Sciences : Philosopher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 21.052427,
+    "lagna": 321.052427,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.189363,
+    "jd_ut": 2434083.78125,
+    "planets": {
+      "Sun": {
+        "longitude": 328.45356,
+        "sign_index": 10,
+        "degree_in_sign": 28.45356,
+        "is_retrograde": false,
+        "speed": 0.997259
+      },
+      "Moon": {
+        "longitude": 154.161882,
+        "sign_index": 5,
+        "degree_in_sign": 4.161882,
+        "is_retrograde": false,
+        "speed": 12.915732
+      },
+      "Mars": {
+        "longitude": 204.272568,
+        "sign_index": 6,
+        "degree_in_sign": 24.272568,
+        "is_retrograde": false,
+        "speed": 0.14777
+      },
+      "Mercury": {
+        "longitude": 344.715407,
+        "sign_index": 11,
+        "degree_in_sign": 14.715407,
+        "is_retrograde": false,
+        "speed": 1.603721
+      },
+      "Jupiter": {
+        "longitude": 355.494027,
+        "sign_index": 11,
+        "degree_in_sign": 25.494027,
+        "is_retrograde": false,
+        "speed": 0.228293
+      },
+      "Venus": {
+        "longitude": 301.498949,
+        "sign_index": 10,
+        "degree_in_sign": 1.498949,
+        "is_retrograde": false,
+        "speed": 1.23031
+      },
+      "Saturn": {
+        "longitude": 169.950601,
+        "sign_index": 5,
+        "degree_in_sign": 19.950601,
+        "is_retrograde": true,
+        "speed": -0.06941
+      },
+      "Rahu": {
+        "longitude": 306.492944,
+        "sign_index": 10,
+        "degree_in_sign": 6.492944,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 126.492944,
+        "sign_index": 4,
+        "degree_in_sign": 6.492944,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

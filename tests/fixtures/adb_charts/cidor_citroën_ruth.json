@@ -1,0 +1,114 @@
+{
+  "adb_id": 91105,
+  "name": "Cidor-Citroën, Ruth",
+  "given_name": "Ruth Cidor-Citroën",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417539.96875,
+    "year": 1906,
+    "month": 11,
+    "day": 25,
+    "calendar": "g",
+    "time": "12:15",
+    "time_type": "s",
+    "hour": 12.25,
+    "time_unknown": false,
+    "place": "Berlin-Bohnsdorf",
+    "country": "Germany",
+    "lat": 52.366667,
+    "lon": 13.616667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cidor-Citroën,_Ruth",
+  "source_notes": "Sy Scholfield provided birth registry entry from Berlin archives (no. 2038).\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 23.014703,
+    "lagna": 263.014703,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.556846,
+    "jd_ut": 2417539.96875,
+    "planets": {
+      "Sun": {
+        "longitude": 219.737752,
+        "sign_index": 7,
+        "degree_in_sign": 9.737752,
+        "is_retrograde": false,
+        "speed": 1.01165
+      },
+      "Moon": {
+        "longitude": 338.866945,
+        "sign_index": 11,
+        "degree_in_sign": 8.866945,
+        "is_retrograde": false,
+        "speed": 13.904477
+      },
+      "Mars": {
+        "longitude": 173.834611,
+        "sign_index": 5,
+        "degree_in_sign": 23.834611,
+        "is_retrograde": false,
+        "speed": 0.620527
+      },
+      "Mercury": {
+        "longitude": 230.421982,
+        "sign_index": 7,
+        "degree_in_sign": 20.421982,
+        "is_retrograde": true,
+        "speed": -0.934109
+      },
+      "Jupiter": {
+        "longitude": 77.367325,
+        "sign_index": 2,
+        "degree_in_sign": 17.367325,
+        "is_retrograde": true,
+        "speed": -0.084547
+      },
+      "Venus": {
+        "longitude": 227.365565,
+        "sign_index": 7,
+        "degree_in_sign": 17.365565,
+        "is_retrograde": true,
+        "speed": -0.560611
+      },
+      "Saturn": {
+        "longitude": 315.894864,
+        "sign_index": 10,
+        "degree_in_sign": 15.894864,
+        "is_retrograde": false,
+        "speed": 0.022488
+      },
+      "Rahu": {
+        "longitude": 103.183978,
+        "sign_index": 3,
+        "degree_in_sign": 13.183978,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 283.183978,
+        "sign_index": 9,
+        "degree_in_sign": 13.183978,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

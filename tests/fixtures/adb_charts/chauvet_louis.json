@@ -1,0 +1,109 @@
+{
+  "adb_id": 62806,
+  "name": "Chauvet, Louis",
+  "given_name": "Louis Chauvet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417418.743507,
+    "year": 1906,
+    "month": 7,
+    "day": 27,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Perpignan",
+    "country": "France",
+    "lat": 42.683333,
+    "lon": 2.883333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chauvet,_Louis",
+  "source_notes": "Didier Geslain archive\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 2.028754,
+    "lagna": 92.028754,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.552212,
+    "jd_ut": 2417418.743507,
+    "planets": {
+      "Sun": {
+        "longitude": 100.728137,
+        "sign_index": 3,
+        "degree_in_sign": 10.728137,
+        "is_retrograde": false,
+        "speed": 0.955805
+      },
+      "Moon": {
+        "longitude": 170.584779,
+        "sign_index": 5,
+        "degree_in_sign": 20.584779,
+        "is_retrograde": false,
+        "speed": 17.474225
+      },
+      "Mars": {
+        "longitude": 97.225809,
+        "sign_index": 3,
+        "degree_in_sign": 7.225809,
+        "is_retrograde": false,
+        "speed": 0.645958
+      },
+      "Mercury": {
+        "longitude": 123.275157,
+        "sign_index": 4,
+        "degree_in_sign": 3.275157,
+        "is_retrograde": false,
+        "speed": 0.196078
+      },
+      "Jupiter": {
+        "longitude": 66.68043,
+        "sign_index": 2,
+        "degree_in_sign": 6.68043,
+        "is_retrograde": false,
+        "speed": 0.208824
+      },
+      "Venus": {
+        "longitude": 140.453692,
+        "sign_index": 4,
+        "degree_in_sign": 20.453692,
+        "is_retrograde": false,
+        "speed": 1.154148
+      },
+      "Saturn": {
+        "longitude": 321.735614,
+        "sign_index": 10,
+        "degree_in_sign": 21.735614,
+        "is_retrograde": true,
+        "speed": -0.047425
+      },
+      "Rahu": {
+        "longitude": 109.607958,
+        "sign_index": 3,
+        "degree_in_sign": 19.607958,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 289.607958,
+        "sign_index": 9,
+        "degree_in_sign": 19.607958,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 71704,
+  "name": "Corrado, Cinzia",
+  "given_name": "Cinzia Corrado",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438963.690972,
+    "year": 1965,
+    "month": 7,
+    "day": 22,
+    "calendar": "g",
+    "time": "05:35",
+    "time_type": "s",
+    "hour": 5.583333,
+    "time_unknown": false,
+    "place": "Supersano",
+    "country": "Italy",
+    "lat": 40.016667,
+    "lon": 18.233333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corrado,_Cinzia",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 23.13035,
+    "lagna": 83.13035,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.37596,
+    "jd_ut": 2438963.690972,
+    "planets": {
+      "Sun": {
+        "longitude": 95.784028,
+        "sign_index": 3,
+        "degree_in_sign": 5.784028,
+        "is_retrograde": false,
+        "speed": 0.954793
+      },
+      "Moon": {
+        "longitude": 11.094242,
+        "sign_index": 0,
+        "degree_in_sign": 11.094242,
+        "is_retrograde": false,
+        "speed": 8.970303
+      },
+      "Mars": {
+        "longitude": 169.010144,
+        "sign_index": 5,
+        "degree_in_sign": 19.010144,
+        "is_retrograde": false,
+        "speed": 0.56709
+      },
+      "Mercury": {
+        "longitude": 122.279797,
+        "sign_index": 4,
+        "degree_in_sign": 2.279797,
+        "is_retrograde": false,
+        "speed": 0.774389
+      },
+      "Jupiter": {
+        "longitude": 57.126791,
+        "sign_index": 1,
+        "degree_in_sign": 27.126791,
+        "is_retrograde": false,
+        "speed": 0.204871
+      },
+      "Venus": {
+        "longitude": 122.478493,
+        "sign_index": 4,
+        "degree_in_sign": 2.478493,
+        "is_retrograde": false,
+        "speed": 1.211126
+      },
+      "Saturn": {
+        "longitude": 323.381717,
+        "sign_index": 10,
+        "degree_in_sign": 23.381717,
+        "is_retrograde": true,
+        "speed": -0.038189
+      },
+      "Rahu": {
+        "longitude": 47.896517,
+        "sign_index": 1,
+        "degree_in_sign": 17.896517,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 227.896517,
+        "sign_index": 7,
+        "degree_in_sign": 17.896517,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

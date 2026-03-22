@@ -1,0 +1,110 @@
+{
+  "adb_id": 67679,
+  "name": "Cecil, Henry",
+  "given_name": "Henry Cecil",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430735.513889,
+    "year": 1943,
+    "month": 1,
+    "day": 11,
+    "calendar": "g",
+    "time": "01:20",
+    "time_type": "d",
+    "hour": 1.333333,
+    "time_unknown": false,
+    "place": "Aberdeen",
+    "country": "Scotland",
+    "lat": 57.166667,
+    "lon": -2.066667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cecil,_Henry",
+  "source_notes": "Sy Scholfield requested the data from Caroline Gerard who quotes birth certificate, August 2013. \\n",
+  "categories": [
+    "Vocation : Sports Business : Other Sports Business",
+    "Notable : Awards : Knighted",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 28.576947,
+    "lagna": 148.576947,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.061339,
+    "jd_ut": 2430735.513889,
+    "planets": {
+      "Sun": {
+        "longitude": 266.84396,
+        "sign_index": 8,
+        "degree_in_sign": 26.84396,
+        "is_retrograde": false,
+        "speed": 1.019156
+      },
+      "Moon": {
+        "longitude": 327.646063,
+        "sign_index": 10,
+        "degree_in_sign": 27.646063,
+        "is_retrograde": false,
+        "speed": 15.421878
+      },
+      "Mars": {
+        "longitude": 235.564127,
+        "sign_index": 7,
+        "degree_in_sign": 25.564127,
+        "is_retrograde": false,
+        "speed": 0.716019
+      },
+      "Mercury": {
+        "longitude": 285.742334,
+        "sign_index": 9,
+        "degree_in_sign": 15.742334,
+        "is_retrograde": false,
+        "speed": 0.788932
+      },
+      "Jupiter": {
+        "longitude": 87.174378,
+        "sign_index": 2,
+        "degree_in_sign": 27.174378,
+        "is_retrograde": true,
+        "speed": -0.135056
+      },
+      "Venus": {
+        "longitude": 280.197818,
+        "sign_index": 9,
+        "degree_in_sign": 10.197818,
+        "is_retrograde": false,
+        "speed": 1.254592
+      },
+      "Saturn": {
+        "longitude": 43.164419,
+        "sign_index": 1,
+        "degree_in_sign": 13.164419,
+        "is_retrograde": true,
+        "speed": -0.047115
+      },
+      "Rahu": {
+        "longitude": 123.924537,
+        "sign_index": 4,
+        "degree_in_sign": 3.924537,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 303.924537,
+        "sign_index": 10,
+        "degree_in_sign": 3.924537,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

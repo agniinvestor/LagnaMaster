@@ -1,0 +1,113 @@
+{
+  "adb_id": 50786,
+  "name": "Clancier, Georges Emmanuel",
+  "given_name": "Georges Emmanuel Clancier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420256.041667,
+    "year": 1914,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Limoges",
+    "country": "France",
+    "lat": 45.833333,
+    "lon": 1.266667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clancier,_Georges_Emmanuel",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 96.\\nSteinbrecher collection: Gauquelin 6/200\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Publisher/ Editor",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 19.772756,
+    "lagna": 109.772756,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.660681,
+    "jd_ut": 2420256.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 19.581002,
+        "sign_index": 0,
+        "degree_in_sign": 19.581002,
+        "is_retrograde": false,
+        "speed": 0.969124
+      },
+      "Moon": {
+        "longitude": 113.822373,
+        "sign_index": 3,
+        "degree_in_sign": 23.822373,
+        "is_retrograde": false,
+        "speed": 12.72868
+      },
+      "Mars": {
+        "longitude": 98.171244,
+        "sign_index": 3,
+        "degree_in_sign": 8.171244,
+        "is_retrograde": false,
+        "speed": 0.495697
+      },
+      "Mercury": {
+        "longitude": 4.513685,
+        "sign_index": 0,
+        "degree_in_sign": 4.513685,
+        "is_retrograde": false,
+        "speed": 1.862151
+      },
+      "Jupiter": {
+        "longitude": 297.329173,
+        "sign_index": 9,
+        "degree_in_sign": 27.329173,
+        "is_retrograde": false,
+        "speed": 0.113773
+      },
+      "Venus": {
+        "longitude": 39.725487,
+        "sign_index": 1,
+        "degree_in_sign": 9.725487,
+        "is_retrograde": false,
+        "speed": 1.223114
+      },
+      "Saturn": {
+        "longitude": 53.882246,
+        "sign_index": 1,
+        "degree_in_sign": 23.882246,
+        "is_retrograde": false,
+        "speed": 0.115378
+      },
+      "Rahu": {
+        "longitude": 319.253572,
+        "sign_index": 10,
+        "degree_in_sign": 19.253572,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 139.253572,
+        "sign_index": 4,
+        "degree_in_sign": 19.253572,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

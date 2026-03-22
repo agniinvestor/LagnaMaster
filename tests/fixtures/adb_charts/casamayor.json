@@ -1,0 +1,114 @@
+{
+  "adb_id": 97421,
+  "name": "Casamayor",
+  "given_name": "Casamayor",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419368.583333,
+    "year": 1911,
+    "month": 11,
+    "day": 28,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Algiers",
+    "country": "Algeria",
+    "lat": 36.783333,
+    "lon": 3.05
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casamayor",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file (no. 3071).\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Personal : Misc. : Changed name",
+    "Vocation : Law : Jurist",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 22.078583,
+    "lagna": 142.078583,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.626753,
+    "jd_ut": 2419368.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 222.102007,
+        "sign_index": 7,
+        "degree_in_sign": 12.102007,
+        "is_retrograde": false,
+        "speed": 1.012788
+      },
+      "Moon": {
+        "longitude": 300.371371,
+        "sign_index": 10,
+        "degree_in_sign": 0.371371,
+        "is_retrograde": false,
+        "speed": 15.246416
+      },
+      "Mars": {
+        "longitude": 38.125867,
+        "sign_index": 1,
+        "degree_in_sign": 8.125867,
+        "is_retrograde": true,
+        "speed": -0.364648
+      },
+      "Mercury": {
+        "longitude": 240.723808,
+        "sign_index": 8,
+        "degree_in_sign": 0.723808,
+        "is_retrograde": false,
+        "speed": 1.389086
+      },
+      "Jupiter": {
+        "longitude": 214.651476,
+        "sign_index": 7,
+        "degree_in_sign": 4.651476,
+        "is_retrograde": false,
+        "speed": 0.221389
+      },
+      "Venus": {
+        "longitude": 175.391507,
+        "sign_index": 5,
+        "degree_in_sign": 25.391507,
+        "is_retrograde": false,
+        "speed": 1.026109
+      },
+      "Saturn": {
+        "longitude": 22.701798,
+        "sign_index": 0,
+        "degree_in_sign": 22.701798,
+        "is_retrograde": true,
+        "speed": -0.074103
+      },
+      "Rahu": {
+        "longitude": 6.28185,
+        "sign_index": 0,
+        "degree_in_sign": 6.28185,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 186.28185,
+        "sign_index": 6,
+        "degree_in_sign": 6.28185,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

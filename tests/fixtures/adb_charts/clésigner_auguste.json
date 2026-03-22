@@ -1,0 +1,108 @@
+{
+  "adb_id": 57262,
+  "name": "Clésigner, Auguste",
+  "given_name": "Auguste Clésigner",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2383904.108241,
+    "year": 1814,
+    "month": 10,
+    "day": 22,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Besançon",
+    "country": "France",
+    "lat": 47.25,
+    "lon": 6.033333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clésigner,_Auguste",
+  "source_notes": "Collection Didier Geslain\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 18.564721,
+    "lagna": 288.564721,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.271239,
+    "jd_ut": 2383904.108241,
+    "planets": {
+      "Sun": {
+        "longitude": 187.31512,
+        "sign_index": 6,
+        "degree_in_sign": 7.31512,
+        "is_retrograde": false,
+        "speed": 0.996644
+      },
+      "Moon": {
+        "longitude": 291.24719,
+        "sign_index": 9,
+        "degree_in_sign": 21.24719,
+        "is_retrograde": false,
+        "speed": 9.816254
+      },
+      "Mars": {
+        "longitude": 170.276807,
+        "sign_index": 5,
+        "degree_in_sign": 20.276807,
+        "is_retrograde": false,
+        "speed": 0.651389
+      },
+      "Mercury": {
+        "longitude": 206.149169,
+        "sign_index": 6,
+        "degree_in_sign": 26.149169,
+        "is_retrograde": false,
+        "speed": 1.413377
+      },
+      "Jupiter": {
+        "longitude": 157.497389,
+        "sign_index": 5,
+        "degree_in_sign": 7.497389,
+        "is_retrograde": false,
+        "speed": 0.201041
+      },
+      "Venus": {
+        "longitude": 171.40299,
+        "sign_index": 5,
+        "degree_in_sign": 21.40299,
+        "is_retrograde": false,
+        "speed": 1.24885
+      },
+      "Saturn": {
+        "longitude": 273.32735,
+        "sign_index": 9,
+        "degree_in_sign": 3.32735,
+        "is_retrograde": false,
+        "speed": 0.038534
+      },
+      "Rahu": {
+        "longitude": 85.620375,
+        "sign_index": 2,
+        "degree_in_sign": 25.620375,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 265.620375,
+        "sign_index": 8,
+        "degree_in_sign": 25.620375,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

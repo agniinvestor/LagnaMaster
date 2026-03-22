@@ -1,0 +1,110 @@
+{
+  "adb_id": 56085,
+  "name": "Coutinho, António Rosa",
+  "given_name": "António Rosa Coutinho",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424561.3125,
+    "year": 1926,
+    "month": 2,
+    "day": 14,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "s",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "Areia",
+    "country": "Portugal",
+    "lat": 38.716667,
+    "lon": -9.133333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coutinho,_António_Rosa",
+  "source_notes": "Felipe Ferreira quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 26.130158,
+    "lagna": 116.130158,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.825277,
+    "jd_ut": 2424561.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 302.549249,
+        "sign_index": 10,
+        "degree_in_sign": 2.549249,
+        "is_retrograde": false,
+        "speed": 1.01044
+      },
+      "Moon": {
+        "longitude": 331.112734,
+        "sign_index": 11,
+        "degree_in_sign": 1.112734,
+        "is_retrograde": false,
+        "speed": 13.680128
+      },
+      "Mars": {
+        "longitude": 251.181709,
+        "sign_index": 8,
+        "degree_in_sign": 11.181709,
+        "is_retrograde": false,
+        "speed": 0.707833
+      },
+      "Mercury": {
+        "longitude": 301.586167,
+        "sign_index": 10,
+        "degree_in_sign": 1.586167,
+        "is_retrograde": false,
+        "speed": 1.793036
+      },
+      "Jupiter": {
+        "longitude": 286.531672,
+        "sign_index": 9,
+        "degree_in_sign": 16.531672,
+        "is_retrograde": false,
+        "speed": 0.23233
+      },
+      "Venus": {
+        "longitude": 291.104471,
+        "sign_index": 9,
+        "degree_in_sign": 21.104471,
+        "is_retrograde": true,
+        "speed": -0.510154
+      },
+      "Saturn": {
+        "longitude": 212.936407,
+        "sign_index": 7,
+        "degree_in_sign": 2.936407,
+        "is_retrograde": false,
+        "speed": 0.032792
+      },
+      "Rahu": {
+        "longitude": 91.108276,
+        "sign_index": 3,
+        "degree_in_sign": 1.108276,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 271.108276,
+        "sign_index": 9,
+        "degree_in_sign": 1.108276,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 6753,
+  "name": "Clayton, Keith",
+  "given_name": "Keith Clayton",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2426148.878472,
+    "year": 1930,
+    "month": 6,
+    "day": 21,
+    "calendar": "g",
+    "time": "03:05",
+    "time_type": "s",
+    "hour": 3.083333,
+    "time_unknown": false,
+    "place": "Louisville",
+    "country": "Kentucky",
+    "lat": 38.25,
+    "lon": -85.766667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clayton,_Keith",
+  "source_notes": "Astrological Pioneers of America file\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 23.683627,
+    "lagna": 23.683627,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.885974,
+    "jd_ut": 2426148.878472,
+    "planets": {
+      "Sun": {
+        "longitude": 66.369031,
+        "sign_index": 2,
+        "degree_in_sign": 6.369031,
+        "is_retrograde": false,
+        "speed": 0.954308
+      },
+      "Moon": {
+        "longitude": 359.750855,
+        "sign_index": 11,
+        "degree_in_sign": 29.750855,
+        "is_retrograde": false,
+        "speed": 11.015334
+      },
+      "Mars": {
+        "longitude": 20.56574,
+        "sign_index": 0,
+        "degree_in_sign": 20.56574,
+        "is_retrograde": false,
+        "speed": 0.728127
+      },
+      "Mercury": {
+        "longitude": 44.439177,
+        "sign_index": 1,
+        "degree_in_sign": 14.439177,
+        "is_retrograde": false,
+        "speed": 1.311662
+      },
+      "Jupiter": {
+        "longitude": 65.839887,
+        "sign_index": 2,
+        "degree_in_sign": 5.839887,
+        "is_retrograde": false,
+        "speed": 0.229573
+      },
+      "Venus": {
+        "longitude": 99.713847,
+        "sign_index": 3,
+        "degree_in_sign": 9.713847,
+        "is_retrograde": false,
+        "speed": 1.187814
+      },
+      "Saturn": {
+        "longitude": 256.409781,
+        "sign_index": 8,
+        "degree_in_sign": 16.409781,
+        "is_retrograde": true,
+        "speed": -0.07214
+      },
+      "Rahu": {
+        "longitude": 6.979853,
+        "sign_index": 0,
+        "degree_in_sign": 6.979853,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 186.979853,
+        "sign_index": 6,
+        "degree_in_sign": 6.979853,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

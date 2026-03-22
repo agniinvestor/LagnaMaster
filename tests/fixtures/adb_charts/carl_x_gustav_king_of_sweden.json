@@ -1,0 +1,108 @@
+{
+  "adb_id": 61181,
+  "name": "Carl X Gustav, King of Sweden",
+  "given_name": "King of Sweden Carl X Gustav",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2313804.556944,
+    "year": 1622,
+    "month": 11,
+    "day": 8,
+    "calendar": "j",
+    "time": "02:30",
+    "time_type": "l",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Nyköping",
+    "country": "Sweden",
+    "lat": 58.75,
+    "lon": 17.0
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carl_X_Gustav,_King_of_Sweden",
+  "source_notes": "Sy Scholfield quotes \"Karl den tionde Gustav\" by Björn Asker (Historiska media, 2009), p. 17: \"Den blivande konung Karl X Gustav föddes på Nyköpingshus fredagen den 8 november 1622 som son till pfalzgreve Johan Kasimir och prinsessan Katarina av Sverige. Enligt faderns anteckningar skedde nedkomsten ”morgens frühe zwischen 2 undt 3 Uhren”, det vill säga mellan klockan två och tre om natten.\"\\nTranslation: The future King Charles X Gustav was born at Nyköping castle on Friday, November 8, 1622, the son of Count Palatine Johan Kasimir and Princess Katarina of Sweden. According to his father's notes the confinement occurred in the morning between two and three o'clock. \\nNote: This date Old Style was a Friday.\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.646142,
+    "lagna": 145.646142,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 18.593615,
+    "jd_ut": 2313804.556944,
+    "planets": {
+      "Sun": {
+        "longitude": 217.120333,
+        "sign_index": 7,
+        "degree_in_sign": 7.120333,
+        "is_retrograde": false,
+        "speed": 1.011016
+      },
+      "Moon": {
+        "longitude": 35.189227,
+        "sign_index": 1,
+        "degree_in_sign": 5.189227,
+        "is_retrograde": false,
+        "speed": 9.707394
+      },
+      "Mars": {
+        "longitude": 172.440394,
+        "sign_index": 5,
+        "degree_in_sign": 22.440394,
+        "is_retrograde": false,
+        "speed": 0.622823
+      },
+      "Mercury": {
+        "longitude": 236.26466,
+        "sign_index": 7,
+        "degree_in_sign": 26.26466,
+        "is_retrograde": false,
+        "speed": 1.368774
+      },
+      "Jupiter": {
+        "longitude": 100.744921,
+        "sign_index": 3,
+        "degree_in_sign": 10.744921,
+        "is_retrograde": true,
+        "speed": -0.00711
+      },
+      "Venus": {
+        "longitude": 193.687753,
+        "sign_index": 6,
+        "degree_in_sign": 13.687753,
+        "is_retrograde": false,
+        "speed": 1.247979
+      },
+      "Saturn": {
+        "longitude": 106.405697,
+        "sign_index": 3,
+        "degree_in_sign": 16.405697,
+        "is_retrograde": true,
+        "speed": -0.003449
+      },
+      "Rahu": {
+        "longitude": 200.355491,
+        "sign_index": 6,
+        "degree_in_sign": 20.355491,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 20.355491,
+        "sign_index": 0,
+        "degree_in_sign": 20.355491,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

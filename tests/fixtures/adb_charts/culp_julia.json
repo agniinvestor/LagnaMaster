@@ -1,0 +1,109 @@
+{
+  "adb_id": 72381,
+  "name": "Culp, Julia",
+  "given_name": "Julia Culp",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407995.273465,
+    "year": 1880,
+    "month": 10,
+    "day": 6,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Groningen",
+    "country": "Netherlands",
+    "lat": 53.202222,
+    "lon": 6.5525
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Culp,_Julia",
+  "source_notes": "Sy Scholfield quotes birth certificate n° 1262 in the online Groningen archives: \"des avonds te zeven uur\" (seven o'clock in the evening) [http://www.allegroningers.nl/personen/q/persoon_achternaam_t_0/culp/q/persoon_voornaam_t_0/julia/q/persoon_rol_s_0/0/q/persoon_rol_s_1/0].\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Vocalist/Opera"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 19.047261,
+    "lagna": 19.047261,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.191982,
+    "jd_ut": 2407995.273465,
+    "planets": {
+      "Sun": {
+        "longitude": 171.678953,
+        "sign_index": 5,
+        "degree_in_sign": 21.678953,
+        "is_retrograde": false,
+        "speed": 0.988061
+      },
+      "Moon": {
+        "longitude": 205.105331,
+        "sign_index": 6,
+        "degree_in_sign": 25.105331,
+        "is_retrograde": false,
+        "speed": 13.068248
+      },
+      "Mars": {
+        "longitude": 177.769256,
+        "sign_index": 5,
+        "degree_in_sign": 27.769256,
+        "is_retrograde": false,
+        "speed": 0.666736
+      },
+      "Mercury": {
+        "longitude": 185.358289,
+        "sign_index": 6,
+        "degree_in_sign": 5.358289,
+        "is_retrograde": false,
+        "speed": 1.551517
+      },
+      "Jupiter": {
+        "longitude": 352.396505,
+        "sign_index": 11,
+        "degree_in_sign": 22.396505,
+        "is_retrograde": true,
+        "speed": -0.135007
+      },
+      "Venus": {
+        "longitude": 194.37511,
+        "sign_index": 6,
+        "degree_in_sign": 14.37511,
+        "is_retrograde": false,
+        "speed": 1.235382
+      },
+      "Saturn": {
+        "longitude": 4.22052,
+        "sign_index": 0,
+        "degree_in_sign": 4.22052,
+        "is_retrograde": true,
+        "speed": -0.076752
+      },
+      "Rahu": {
+        "longitude": 248.97756,
+        "sign_index": 8,
+        "degree_in_sign": 8.97756,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 68.97756,
+        "sign_index": 2,
+        "degree_in_sign": 8.97756,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

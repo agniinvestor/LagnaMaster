@@ -1,0 +1,109 @@
+{
+  "adb_id": 58111,
+  "name": "Chenal, Pierre",
+  "given_name": "Pierre Chenal",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416819.732639,
+    "year": 1904,
+    "month": 12,
+    "day": 5,
+    "calendar": "g",
+    "time": "05:35",
+    "time_type": "s",
+    "hour": 5.583333,
+    "time_unknown": false,
+    "place": "Bruxelles",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chenal,_Pierre",
+  "source_notes": "Archives de Bruxelles\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Engineer : Civil"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 5.644462,
+    "lagna": 185.644462,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.529312,
+    "jd_ut": 2416819.732639,
+    "planets": {
+      "Sun": {
+        "longitude": 230.150816,
+        "sign_index": 7,
+        "degree_in_sign": 20.150816,
+        "is_retrograde": false,
+        "speed": 1.015595
+      },
+      "Moon": {
+        "longitude": 205.822047,
+        "sign_index": 6,
+        "degree_in_sign": 25.822047,
+        "is_retrograde": false,
+        "speed": 12.870533
+      },
+      "Mars": {
+        "longitude": 166.115083,
+        "sign_index": 5,
+        "degree_in_sign": 16.115083,
+        "is_retrograde": false,
+        "speed": 0.569454
+      },
+      "Mercury": {
+        "longitude": 248.374143,
+        "sign_index": 8,
+        "degree_in_sign": 8.374143,
+        "is_retrograde": false,
+        "speed": 1.403502
+      },
+      "Jupiter": {
+        "longitude": 357.909358,
+        "sign_index": 11,
+        "degree_in_sign": 27.909358,
+        "is_retrograde": true,
+        "speed": -0.036958
+      },
+      "Venus": {
+        "longitude": 267.614747,
+        "sign_index": 8,
+        "degree_in_sign": 27.614747,
+        "is_retrograde": false,
+        "speed": 1.213019
+      },
+      "Saturn": {
+        "longitude": 293.628226,
+        "sign_index": 9,
+        "degree_in_sign": 23.628226,
+        "is_retrograde": false,
+        "speed": 0.073954
+      },
+      "Rahu": {
+        "longitude": 141.350805,
+        "sign_index": 4,
+        "degree_in_sign": 21.350805,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 321.350805,
+        "sign_index": 10,
+        "degree_in_sign": 21.350805,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

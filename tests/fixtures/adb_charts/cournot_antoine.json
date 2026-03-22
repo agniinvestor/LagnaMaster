@@ -1,0 +1,110 @@
+{
+  "adb_id": 60422,
+  "name": "Cournot, Antoine",
+  "given_name": "Antoine Cournot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2379101.026157,
+    "year": 1801,
+    "month": 8,
+    "day": 28,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "l",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Gray",
+    "country": "France",
+    "lat": 47.45,
+    "lon": 5.583333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cournot,_Antoine",
+  "source_notes": "Gauquelin vol 6\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Philosopher",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.705601,
+    "lagna": 197.705601,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.087702,
+    "jd_ut": 2379101.026157,
+    "planets": {
+      "Sun": {
+        "longitude": 133.570093,
+        "sign_index": 4,
+        "degree_in_sign": 13.570093,
+        "is_retrograde": false,
+        "speed": 0.967044
+      },
+      "Moon": {
+        "longitude": 13.112077,
+        "sign_index": 0,
+        "degree_in_sign": 13.112077,
+        "is_retrograde": false,
+        "speed": 15.677528
+      },
+      "Mars": {
+        "longitude": 151.648773,
+        "sign_index": 5,
+        "degree_in_sign": 1.648773,
+        "is_retrograde": false,
+        "speed": 0.641557
+      },
+      "Mercury": {
+        "longitude": 116.081839,
+        "sign_index": 3,
+        "degree_in_sign": 26.081839,
+        "is_retrograde": false,
+        "speed": 1.368274
+      },
+      "Jupiter": {
+        "longitude": 118.72674,
+        "sign_index": 3,
+        "degree_in_sign": 28.72674,
+        "is_retrograde": false,
+        "speed": 0.215487
+      },
+      "Venus": {
+        "longitude": 89.365217,
+        "sign_index": 2,
+        "degree_in_sign": 29.365217,
+        "is_retrograde": false,
+        "speed": 1.081483
+      },
+      "Saturn": {
+        "longitude": 127.349872,
+        "sign_index": 4,
+        "degree_in_sign": 7.349872,
+        "is_retrograde": false,
+        "speed": 0.126724
+      },
+      "Rahu": {
+        "longitude": 340.14624,
+        "sign_index": 11,
+        "degree_in_sign": 10.14624,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 160.14624,
+        "sign_index": 5,
+        "degree_in_sign": 10.14624,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

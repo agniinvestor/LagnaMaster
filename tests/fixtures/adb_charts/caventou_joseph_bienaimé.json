@@ -1,0 +1,112 @@
+{
+  "adb_id": 93807,
+  "name": "Caventou, Joseph Bienaimé",
+  "given_name": "Joseph Bienaimé Caventou",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2376850.827083,
+    "year": 1795,
+    "month": 6,
+    "day": 30,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "St.Omer",
+    "country": "France",
+    "lat": 50.75,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caventou,_Joseph_Bienaimé",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_in_inventeurs-2.pdf]. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Pharmacist",
+    "Notable : Famous : First in Field",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 11.410062,
+    "lagna": 101.410062,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.00172,
+    "jd_ut": 2376850.827083,
+    "planets": {
+      "Sun": {
+        "longitude": 77.383754,
+        "sign_index": 2,
+        "degree_in_sign": 17.383754,
+        "is_retrograde": false,
+        "speed": 0.952846
+      },
+      "Moon": {
+        "longitude": 234.32102,
+        "sign_index": 7,
+        "degree_in_sign": 24.32102,
+        "is_retrograde": false,
+        "speed": 14.847352
+      },
+      "Mars": {
+        "longitude": 77.913316,
+        "sign_index": 2,
+        "degree_in_sign": 17.913316,
+        "is_retrograde": false,
+        "speed": 0.659671
+      },
+      "Mercury": {
+        "longitude": 103.126425,
+        "sign_index": 3,
+        "degree_in_sign": 13.126425,
+        "is_retrograde": false,
+        "speed": 0.876449
+      },
+      "Jupiter": {
+        "longitude": 284.48254,
+        "sign_index": 9,
+        "degree_in_sign": 14.48254,
+        "is_retrograde": true,
+        "speed": -0.10105
+      },
+      "Venus": {
+        "longitude": 49.183521,
+        "sign_index": 1,
+        "degree_in_sign": 19.183521,
+        "is_retrograde": false,
+        "speed": 1.198622
+      },
+      "Saturn": {
+        "longitude": 46.733282,
+        "sign_index": 1,
+        "degree_in_sign": 16.733282,
+        "is_retrograde": false,
+        "speed": 0.118045
+      },
+      "Rahu": {
+        "longitude": 99.389249,
+        "sign_index": 3,
+        "degree_in_sign": 9.389249,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 279.389249,
+        "sign_index": 9,
+        "degree_in_sign": 9.389249,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

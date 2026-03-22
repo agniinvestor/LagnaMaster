@@ -1,0 +1,109 @@
+{
+  "adb_id": 79474,
+  "name": "Caillard, Adrien",
+  "given_name": "Adrien Caillard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404876.118519,
+    "year": 1872,
+    "month": 3,
+    "day": 23,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caillard,_Adrien",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 14.237226,
+    "lagna": 104.237226,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.072756,
+    "jd_ut": 2404876.118519,
+    "planets": {
+      "Sun": {
+        "longitude": 341.230475,
+        "sign_index": 11,
+        "degree_in_sign": 11.230475,
+        "is_retrograde": false,
+        "speed": 0.989922
+      },
+      "Moon": {
+        "longitude": 144.526352,
+        "sign_index": 4,
+        "degree_in_sign": 24.526352,
+        "is_retrograde": false,
+        "speed": 14.500803
+      },
+      "Mars": {
+        "longitude": 354.449992,
+        "sign_index": 11,
+        "degree_in_sign": 24.449992,
+        "is_retrograde": false,
+        "speed": 0.757508
+      },
+      "Mercury": {
+        "longitude": 353.727114,
+        "sign_index": 11,
+        "degree_in_sign": 23.727114,
+        "is_retrograde": false,
+        "speed": 1.902539
+      },
+      "Jupiter": {
+        "longitude": 87.889156,
+        "sign_index": 2,
+        "degree_in_sign": 27.889156,
+        "is_retrograde": false,
+        "speed": 0.025369
+      },
+      "Venus": {
+        "longitude": 311.505711,
+        "sign_index": 10,
+        "degree_in_sign": 11.505711,
+        "is_retrograde": false,
+        "speed": 1.220561
+      },
+      "Saturn": {
+        "longitude": 268.07027,
+        "sign_index": 8,
+        "degree_in_sign": 28.07027,
+        "is_retrograde": false,
+        "speed": 0.05874
+      },
+      "Rahu": {
+        "longitude": 54.268222,
+        "sign_index": 1,
+        "degree_in_sign": 24.268222,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 234.268222,
+        "sign_index": 7,
+        "degree_in_sign": 24.268222,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 84733,
+  "name": "Clinton, Sam Houston",
+  "given_name": "Sam Houston Clinton",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423680.020833,
+    "year": 1923,
+    "month": 9,
+    "day": 17,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Waco",
+    "country": "Texas",
+    "lat": 31.55,
+    "lon": -97.15
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clinton,_Sam_Houston",
+  "source_notes": "Sy Scholfield provided birth certificate, time could be 4:30 AM or 6:30 AM on first inspection. However, the address of the MD, Dr. G. B. Fascue, is listed in \"The Standard Blue Book\" (1920) as \"Waco; Physician and Surgeon, 1603-4 Amicable Building.\" On the certificate his handwritten \"6\" in his address is the same as the \"6\" in the time of birth. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Alzheimer's/ Senility",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Law : Attorney",
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 10.774264,
+    "lagna": 130.774264,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.791583,
+    "jd_ut": 2423680.020833,
+    "planets": {
+      "Sun": {
+        "longitude": 150.793547,
+        "sign_index": 5,
+        "degree_in_sign": 0.793547,
+        "is_retrograde": false,
+        "speed": 0.975812
+      },
+      "Moon": {
+        "longitude": 241.070219,
+        "sign_index": 8,
+        "degree_in_sign": 1.070219,
+        "is_retrograde": false,
+        "speed": 18.838449
+      },
+      "Mars": {
+        "longitude": 137.693769,
+        "sign_index": 4,
+        "degree_in_sign": 17.693769,
+        "is_retrograde": false,
+        "speed": 0.635944
+      },
+      "Mercury": {
+        "longitude": 170.919128,
+        "sign_index": 5,
+        "degree_in_sign": 20.919128,
+        "is_retrograde": true,
+        "speed": -0.133365
+      },
+      "Jupiter": {
+        "longitude": 203.165998,
+        "sign_index": 6,
+        "degree_in_sign": 23.165998,
+        "is_retrograde": false,
+        "speed": 0.171844
+      },
+      "Venus": {
+        "longitude": 152.698372,
+        "sign_index": 5,
+        "degree_in_sign": 2.698372,
+        "is_retrograde": false,
+        "speed": 1.244617
+      },
+      "Saturn": {
+        "longitude": 176.693012,
+        "sign_index": 5,
+        "degree_in_sign": 26.693012,
+        "is_retrograde": false,
+        "speed": 0.113704
+      },
+      "Rahu": {
+        "longitude": 137.809758,
+        "sign_index": 4,
+        "degree_in_sign": 17.809758,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 317.809758,
+        "sign_index": 10,
+        "degree_in_sign": 17.809758,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

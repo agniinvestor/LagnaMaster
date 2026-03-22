@@ -1,0 +1,111 @@
+{
+  "adb_id": 37332,
+  "name": "Claverie, Pierre",
+  "given_name": "Pierre Claverie",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429027.458333,
+    "year": 1938,
+    "month": 5,
+    "day": 8,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Algiers",
+    "country": "Algeria",
+    "lat": 36.783333,
+    "lon": 3.05
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claverie,_Pierre",
+  "source_notes": "Petitallot quotes B.C., Cadran No.33, 9/1996, from French Algeria\\n",
+  "categories": [
+    "Passions : Sexuality : Celibacy/ Minimal",
+    "Passions : Criminal Victim : Homicide victim",
+    "Passions : Criminal Victim : Terrorism victim",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 28.740705,
+    "lagna": 238.740705,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.996032,
+    "jd_ut": 2429027.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 24.677235,
+        "sign_index": 0,
+        "degree_in_sign": 24.677235,
+        "is_retrograde": false,
+        "speed": 0.96664
+      },
+      "Moon": {
+        "longitude": 140.601388,
+        "sign_index": 4,
+        "degree_in_sign": 20.601388,
+        "is_retrograde": false,
+        "speed": 10.738954
+      },
+      "Mars": {
+        "longitude": 47.423552,
+        "sign_index": 1,
+        "degree_in_sign": 17.423552,
+        "is_retrograde": false,
+        "speed": 0.681457
+      },
+      "Mercury": {
+        "longitude": 2.694771,
+        "sign_index": 0,
+        "degree_in_sign": 2.694771,
+        "is_retrograde": false,
+        "speed": 0.281873
+      },
+      "Jupiter": {
+        "longitude": 306.359173,
+        "sign_index": 10,
+        "degree_in_sign": 6.359173,
+        "is_retrograde": false,
+        "speed": 0.125942
+      },
+      "Venus": {
+        "longitude": 47.953922,
+        "sign_index": 1,
+        "degree_in_sign": 17.953922,
+        "is_retrograde": false,
+        "speed": 1.217628
+      },
+      "Saturn": {
+        "longitude": 349.852056,
+        "sign_index": 11,
+        "degree_in_sign": 19.852056,
+        "is_retrograde": false,
+        "speed": 0.110367
+      },
+      "Rahu": {
+        "longitude": 214.437935,
+        "sign_index": 7,
+        "degree_in_sign": 4.437935,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 34.437935,
+        "sign_index": 1,
+        "degree_in_sign": 4.437935,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

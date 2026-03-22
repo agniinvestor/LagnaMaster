@@ -1,0 +1,110 @@
+{
+  "adb_id": 19513,
+  "name": "Cargill, John Traill",
+  "given_name": "John Traill Cargill",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402976.875,
+    "year": 1867,
+    "month": 1,
+    "day": 10,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cargill,_John_Traill",
+  "source_notes": "Paul Wright collection, B.C.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Business : Entrepreneur"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 8.721053,
+    "lagna": 248.721053,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.000162,
+    "jd_ut": 2402976.875,
+    "planets": {
+      "Sun": {
+        "longitude": 267.714626,
+        "sign_index": 8,
+        "degree_in_sign": 27.714626,
+        "is_retrograde": false,
+        "speed": 1.019209
+      },
+      "Moon": {
+        "longitude": 317.51448,
+        "sign_index": 10,
+        "degree_in_sign": 17.51448,
+        "is_retrograde": false,
+        "speed": 13.143397
+      },
+      "Mars": {
+        "longitude": 88.508493,
+        "sign_index": 2,
+        "degree_in_sign": 28.508493,
+        "is_retrograde": true,
+        "speed": -0.400985
+      },
+      "Mercury": {
+        "longitude": 248.898066,
+        "sign_index": 8,
+        "degree_in_sign": 8.898066,
+        "is_retrograde": false,
+        "speed": 1.416499
+      },
+      "Jupiter": {
+        "longitude": 286.741644,
+        "sign_index": 9,
+        "degree_in_sign": 16.741644,
+        "is_retrograde": false,
+        "speed": 0.231614
+      },
+      "Venus": {
+        "longitude": 231.504122,
+        "sign_index": 7,
+        "degree_in_sign": 21.504122,
+        "is_retrograde": false,
+        "speed": 0.342524
+      },
+      "Saturn": {
+        "longitude": 209.855614,
+        "sign_index": 6,
+        "degree_in_sign": 29.855614,
+        "is_retrograde": false,
+        "speed": 0.081089
+      },
+      "Rahu": {
+        "longitude": 154.913191,
+        "sign_index": 5,
+        "degree_in_sign": 4.913191,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 334.913191,
+        "sign_index": 11,
+        "degree_in_sign": 4.913191,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

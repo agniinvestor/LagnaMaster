@@ -1,0 +1,113 @@
+{
+  "adb_id": 93808,
+  "name": "Chaillet, Adolphe",
+  "given_name": "Adolphe Chaillet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403161.951785,
+    "year": 1867,
+    "month": 7,
+    "day": 14,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 10",
+    "country": "France",
+    "lat": 48.871944,
+    "lon": 2.3575
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaillet,_Adolphe",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_in_inventeurs-2.pdf]. \\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Business : Top executive",
+    "Vocation : Engineer : Electrical",
+    "Vocation : Science : Chemistry",
+    "Vocation : Science : Geology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 20.964443,
+    "lagna": 140.964443,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.007236,
+    "jd_ut": 2403161.951785,
+    "planets": {
+      "Sun": {
+        "longitude": 89.468952,
+        "sign_index": 2,
+        "degree_in_sign": 29.468952,
+        "is_retrograde": false,
+        "speed": 0.953475
+      },
+      "Moon": {
+        "longitude": 243.580342,
+        "sign_index": 8,
+        "degree_in_sign": 3.580342,
+        "is_retrograde": false,
+        "speed": 15.334098
+      },
+      "Mars": {
+        "longitude": 140.995533,
+        "sign_index": 4,
+        "degree_in_sign": 20.995533,
+        "is_retrograde": false,
+        "speed": 0.599611
+      },
+      "Mercury": {
+        "longitude": 113.749022,
+        "sign_index": 3,
+        "degree_in_sign": 23.749022,
+        "is_retrograde": false,
+        "speed": 0.458207
+      },
+      "Jupiter": {
+        "longitude": 315.039904,
+        "sign_index": 10,
+        "degree_in_sign": 15.039904,
+        "is_retrograde": true,
+        "speed": -0.05536
+      },
+      "Venus": {
+        "longitude": 69.787969,
+        "sign_index": 2,
+        "degree_in_sign": 9.787969,
+        "is_retrograde": false,
+        "speed": 1.215903
+      },
+      "Saturn": {
+        "longitude": 205.480539,
+        "sign_index": 6,
+        "degree_in_sign": 25.480539,
+        "is_retrograde": true,
+        "speed": -0.012391
+      },
+      "Rahu": {
+        "longitude": 145.105576,
+        "sign_index": 4,
+        "degree_in_sign": 25.105576,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.105576,
+        "sign_index": 10,
+        "degree_in_sign": 25.105576,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

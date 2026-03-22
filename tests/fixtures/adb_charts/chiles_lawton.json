@@ -1,0 +1,112 @@
+{
+  "adb_id": 35799,
+  "name": "Chiles, Lawton",
+  "given_name": "Lawton Chiles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426070.434028,
+    "year": 1930,
+    "month": 4,
+    "day": 3,
+    "calendar": "g",
+    "time": "17:25",
+    "time_type": "s",
+    "hour": 17.416667,
+    "time_unknown": false,
+    "place": "Lakeland",
+    "country": "Florida",
+    "lat": 28.05,
+    "lon": -81.95
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiles,_Lawton",
+  "source_notes": "Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Traits : Body : Aerobic exercise",
+    "Traits : Personality : Gregarious/Extrovert",
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Lifestyle : Work : Same Job more than 10 yrs",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 10.53593,
+    "lagna": 130.53593,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.882974,
+    "jd_ut": 2426070.434028,
+    "planets": {
+      "Sun": {
+        "longitude": 350.552163,
+        "sign_index": 11,
+        "degree_in_sign": 20.552163,
+        "is_retrograde": false,
+        "speed": 0.985205
+      },
+      "Moon": {
+        "longitude": 47.439225,
+        "sign_index": 1,
+        "degree_in_sign": 17.439225,
+        "is_retrograde": false,
+        "speed": 8.598512
+      },
+      "Mars": {
+        "longitude": 320.952911,
+        "sign_index": 10,
+        "degree_in_sign": 20.952911,
+        "is_retrograde": false,
+        "speed": 0.780695
+      },
+      "Mercury": {
+        "longitude": 353.110752,
+        "sign_index": 11,
+        "degree_in_sign": 23.110752,
+        "is_retrograde": false,
+        "speed": 2.068303
+      },
+      "Jupiter": {
+        "longitude": 49.325052,
+        "sign_index": 1,
+        "degree_in_sign": 19.325052,
+        "is_retrograde": false,
+        "speed": 0.168629
+      },
+      "Venus": {
+        "longitude": 4.414244,
+        "sign_index": 0,
+        "degree_in_sign": 4.414244,
+        "is_retrograde": false,
+        "speed": 1.236458
+      },
+      "Saturn": {
+        "longitude": 258.747562,
+        "sign_index": 8,
+        "degree_in_sign": 18.747562,
+        "is_retrograde": false,
+        "speed": 0.028764
+      },
+      "Rahu": {
+        "longitude": 11.136787,
+        "sign_index": 0,
+        "degree_in_sign": 11.136787,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 191.136787,
+        "sign_index": 6,
+        "degree_in_sign": 11.136787,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 79494,
+  "name": "Cerny, Berthe",
+  "given_name": "Berthe Cerny",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403362.576895,
+    "year": 1868,
+    "month": 1,
+    "day": 31,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 8",
+    "country": "France",
+    "lat": 48.877778,
+    "lon": 2.317778
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cerny,_Berthe",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 6.348142,
+    "lagna": 186.348142,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.014904,
+    "jd_ut": 2403362.576895,
+    "planets": {
+      "Sun": {
+        "longitude": 288.510765,
+        "sign_index": 9,
+        "degree_in_sign": 18.510765,
+        "is_retrograde": false,
+        "speed": 1.015064
+      },
+      "Moon": {
+        "longitude": 357.596059,
+        "sign_index": 11,
+        "degree_in_sign": 27.596059,
+        "is_retrograde": false,
+        "speed": 15.347394
+      },
+      "Mars": {
+        "longitude": 281.507381,
+        "sign_index": 9,
+        "degree_in_sign": 11.507381,
+        "is_retrograde": false,
+        "speed": 0.781915
+      },
+      "Mercury": {
+        "longitude": 293.526477,
+        "sign_index": 9,
+        "degree_in_sign": 23.526477,
+        "is_retrograde": false,
+        "speed": 1.766794
+      },
+      "Jupiter": {
+        "longitude": 319.011364,
+        "sign_index": 10,
+        "degree_in_sign": 19.011364,
+        "is_retrograde": false,
+        "speed": 0.225259
+      },
+      "Venus": {
+        "longitude": 319.068367,
+        "sign_index": 10,
+        "degree_in_sign": 19.068367,
+        "is_retrograde": false,
+        "speed": 1.231191
+      },
+      "Saturn": {
+        "longitude": 222.125525,
+        "sign_index": 7,
+        "degree_in_sign": 12.125525,
+        "is_retrograde": false,
+        "speed": 0.069003
+      },
+      "Rahu": {
+        "longitude": 134.474023,
+        "sign_index": 4,
+        "degree_in_sign": 14.474023,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 314.474023,
+        "sign_index": 10,
+        "degree_in_sign": 14.474023,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

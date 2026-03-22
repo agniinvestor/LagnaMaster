@@ -1,0 +1,109 @@
+{
+  "adb_id": 85883,
+  "name": "Colone, Ann",
+  "given_name": "Ann Colone",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426139.052083,
+    "year": 1930,
+    "month": 6,
+    "day": 11,
+    "calendar": "g",
+    "time": "08:15",
+    "time_type": "d",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Fort Wayne",
+    "country": "Indiana",
+    "lat": 41.133333,
+    "lon": -85.133333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colone,_Ann",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana Archives.\\n",
+  "categories": [
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 13.667119,
+    "lagna": 73.667119,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.885598,
+    "jd_ut": 2426139.052083,
+    "planets": {
+      "Sun": {
+        "longitude": 56.987803,
+        "sign_index": 1,
+        "degree_in_sign": 26.987803,
+        "is_retrograde": false,
+        "speed": 0.955341
+      },
+      "Moon": {
+        "longitude": 239.743426,
+        "sign_index": 7,
+        "degree_in_sign": 29.743426,
+        "is_retrograde": false,
+        "speed": 13.78355
+      },
+      "Mars": {
+        "longitude": 13.361819,
+        "sign_index": 0,
+        "degree_in_sign": 13.361819,
+        "is_retrograde": false,
+        "speed": 0.737944
+      },
+      "Mercury": {
+        "longitude": 34.434277,
+        "sign_index": 1,
+        "degree_in_sign": 4.434277,
+        "is_retrograde": false,
+        "speed": 0.707891
+      },
+      "Jupiter": {
+        "longitude": 63.587317,
+        "sign_index": 2,
+        "degree_in_sign": 3.587317,
+        "is_retrograde": false,
+        "speed": 0.228837
+      },
+      "Venus": {
+        "longitude": 88.000714,
+        "sign_index": 2,
+        "degree_in_sign": 28.000714,
+        "is_retrograde": false,
+        "speed": 1.19613
+      },
+      "Saturn": {
+        "longitude": 257.095023,
+        "sign_index": 8,
+        "degree_in_sign": 17.095023,
+        "is_retrograde": true,
+        "speed": -0.06679
+      },
+      "Rahu": {
+        "longitude": 7.500573,
+        "sign_index": 0,
+        "degree_in_sign": 7.500573,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 187.500573,
+        "sign_index": 6,
+        "degree_in_sign": 7.500573,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

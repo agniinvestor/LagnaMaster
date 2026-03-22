@@ -1,0 +1,110 @@
+{
+  "adb_id": 81028,
+  "name": "Céstan, Étienne Jacques Marie Raymond",
+  "given_name": "Étienne Jacques Marie Raymond Céstan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404889.578009,
+    "year": 1872,
+    "month": 4,
+    "day": 6,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Gaillac",
+    "country": "France",
+    "lat": 43.9,
+    "lon": 1.916667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Céstan,_Étienne_Jacques_Marie_Raymond",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 6.065222,
+    "lagna": 246.065222,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.07327,
+    "jd_ut": 2404889.578009,
+    "planets": {
+      "Sun": {
+        "longitude": 354.506352,
+        "sign_index": 11,
+        "degree_in_sign": 24.506352,
+        "is_retrograde": false,
+        "speed": 0.982983
+      },
+      "Moon": {
+        "longitude": 330.064949,
+        "sign_index": 11,
+        "degree_in_sign": 0.064949,
+        "is_retrograde": false,
+        "speed": 16.217772
+      },
+      "Mars": {
+        "longitude": 4.576402,
+        "sign_index": 0,
+        "degree_in_sign": 4.576402,
+        "is_retrograde": false,
+        "speed": 0.747194
+      },
+      "Mercury": {
+        "longitude": 13.575883,
+        "sign_index": 0,
+        "degree_in_sign": 13.575883,
+        "is_retrograde": false,
+        "speed": 0.886787
+      },
+      "Jupiter": {
+        "longitude": 88.507435,
+        "sign_index": 2,
+        "degree_in_sign": 28.507435,
+        "is_retrograde": false,
+        "speed": 0.065946
+      },
+      "Venus": {
+        "longitude": 327.948509,
+        "sign_index": 10,
+        "degree_in_sign": 27.948509,
+        "is_retrograde": false,
+        "speed": 1.222514
+      },
+      "Saturn": {
+        "longitude": 268.729748,
+        "sign_index": 8,
+        "degree_in_sign": 28.729748,
+        "is_retrograde": false,
+        "speed": 0.038887
+      },
+      "Rahu": {
+        "longitude": 53.554975,
+        "sign_index": 1,
+        "degree_in_sign": 23.554975,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 233.554975,
+        "sign_index": 7,
+        "degree_in_sign": 23.554975,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

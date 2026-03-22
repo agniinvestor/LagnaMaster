@@ -1,0 +1,113 @@
+{
+  "adb_id": 93916,
+  "name": "Clarens, Juliette",
+  "given_name": "Juliette Clarens",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410371.826785,
+    "year": 1887,
+    "month": 4,
+    "day": 10,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 10",
+    "country": "France",
+    "lat": 48.871944,
+    "lon": 2.3575
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarens,_Juliette",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_acteurs_muet-2.pdf]. \\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 3.669837,
+    "lagna": 33.669837,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.282827,
+    "jd_ut": 2410371.826785,
+    "planets": {
+      "Sun": {
+        "longitude": 357.843885,
+        "sign_index": 11,
+        "degree_in_sign": 27.843885,
+        "is_retrograde": false,
+        "speed": 0.980436
+      },
+      "Moon": {
+        "longitude": 206.662992,
+        "sign_index": 6,
+        "degree_in_sign": 26.662992,
+        "is_retrograde": false,
+        "speed": 14.370816
+      },
+      "Mars": {
+        "longitude": 1.184956,
+        "sign_index": 0,
+        "degree_in_sign": 1.184956,
+        "is_retrograde": false,
+        "speed": 0.753815
+      },
+      "Mercury": {
+        "longitude": 332.577297,
+        "sign_index": 11,
+        "degree_in_sign": 2.577297,
+        "is_retrograde": false,
+        "speed": 0.462231
+      },
+      "Jupiter": {
+        "longitude": 190.125298,
+        "sign_index": 6,
+        "degree_in_sign": 10.125298,
+        "is_retrograde": true,
+        "speed": -0.122029
+      },
+      "Venus": {
+        "longitude": 28.144759,
+        "sign_index": 0,
+        "degree_in_sign": 28.144759,
+        "is_retrograde": false,
+        "speed": 1.208301
+      },
+      "Saturn": {
+        "longitude": 83.801765,
+        "sign_index": 2,
+        "degree_in_sign": 23.801765,
+        "is_retrograde": false,
+        "speed": 0.042599
+      },
+      "Rahu": {
+        "longitude": 123.038954,
+        "sign_index": 4,
+        "degree_in_sign": 3.038954,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 303.038954,
+        "sign_index": 10,
+        "degree_in_sign": 3.038954,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

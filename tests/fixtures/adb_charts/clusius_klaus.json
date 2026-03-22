@@ -1,0 +1,109 @@
+{
+  "adb_id": 87128,
+  "name": "Clusius, Klaus",
+  "given_name": "Klaus Clusius",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416192.614583,
+    "year": 1903,
+    "month": 3,
+    "day": 19,
+    "calendar": "g",
+    "time": "03:45",
+    "time_type": "s",
+    "hour": 3.75,
+    "time_unknown": false,
+    "place": "Breslau",
+    "country": "Germany",
+    "lat": 51.115,
+    "lon": 17.036667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clusius,_Klaus",
+  "source_notes": "Sy Scholfield provided birth registry entry. \\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Chemistry"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 7.626589,
+    "lagna": 247.626589,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.505338,
+    "jd_ut": 2416192.614583,
+    "planets": {
+      "Sun": {
+        "longitude": 334.823866,
+        "sign_index": 11,
+        "degree_in_sign": 4.823866,
+        "is_retrograde": false,
+        "speed": 0.993912
+      },
+      "Moon": {
+        "longitude": 223.242524,
+        "sign_index": 7,
+        "degree_in_sign": 13.242524,
+        "is_retrograde": false,
+        "speed": 8.783103
+      },
+      "Mars": {
+        "longitude": 168.698184,
+        "sign_index": 5,
+        "degree_in_sign": 18.698184,
+        "is_retrograde": true,
+        "speed": -0.338101
+      },
+      "Mercury": {
+        "longitude": 313.815461,
+        "sign_index": 10,
+        "degree_in_sign": 13.815461,
+        "is_retrograde": false,
+        "speed": 1.55048
+      },
+      "Jupiter": {
+        "longitude": 313.864317,
+        "sign_index": 10,
+        "degree_in_sign": 13.864317,
+        "is_retrograde": false,
+        "speed": 0.232814
+      },
+      "Venus": {
+        "longitude": 0.906527,
+        "sign_index": 0,
+        "degree_in_sign": 0.906527,
+        "is_retrograde": false,
+        "speed": 1.226169
+      },
+      "Saturn": {
+        "longitude": 283.841209,
+        "sign_index": 9,
+        "degree_in_sign": 13.841209,
+        "is_retrograde": false,
+        "speed": 0.088886
+      },
+      "Rahu": {
+        "longitude": 174.583111,
+        "sign_index": 5,
+        "degree_in_sign": 24.583111,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 354.583111,
+        "sign_index": 11,
+        "degree_in_sign": 24.583111,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

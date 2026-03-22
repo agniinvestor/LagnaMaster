@@ -1,0 +1,108 @@
+{
+  "adb_id": 98281,
+  "name": "Courrèges d'Ustou, Louis de",
+  "given_name": "Louis de Courrèges d'Ustou",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412912.660174,
+    "year": 1894,
+    "month": 3,
+    "day": 25,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Toulouse",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courrèges_d'Ustou,_Louis_de",
+  "source_notes": "Mandl\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 27.350062,
+    "lagna": 267.350062,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.379953,
+    "jd_ut": 2412912.660174,
+    "planets": {
+      "Sun": {
+        "longitude": 342.114757,
+        "sign_index": 11,
+        "degree_in_sign": 12.114757,
+        "is_retrograde": false,
+        "speed": 0.989561
+      },
+      "Moon": {
+        "longitude": 205.469588,
+        "sign_index": 6,
+        "degree_in_sign": 25.469588,
+        "is_retrograde": false,
+        "speed": 8.611431
+      },
+      "Mars": {
+        "longitude": 275.304841,
+        "sign_index": 9,
+        "degree_in_sign": 5.304841,
+        "is_retrograde": false,
+        "speed": 0.705944
+      },
+      "Mercury": {
+        "longitude": 323.717034,
+        "sign_index": 10,
+        "degree_in_sign": 23.717034,
+        "is_retrograde": true,
+        "speed": -0.265935
+      },
+      "Jupiter": {
+        "longitude": 36.046979,
+        "sign_index": 1,
+        "degree_in_sign": 6.046979,
+        "is_retrograde": false,
+        "speed": 0.18119
+      },
+      "Venus": {
+        "longitude": 302.100056,
+        "sign_index": 10,
+        "degree_in_sign": 2.100056,
+        "is_retrograde": false,
+        "speed": 0.524451
+      },
+      "Saturn": {
+        "longitude": 180.772533,
+        "sign_index": 6,
+        "degree_in_sign": 0.772533,
+        "is_retrograde": true,
+        "speed": -0.070676
+      },
+      "Rahu": {
+        "longitude": 348.394816,
+        "sign_index": 11,
+        "degree_in_sign": 18.394816,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 168.394816,
+        "sign_index": 5,
+        "degree_in_sign": 18.394816,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

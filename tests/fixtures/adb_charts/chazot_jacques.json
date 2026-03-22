@@ -1,0 +1,109 @@
+{
+  "adb_id": 62484,
+  "name": "Chazot, Jacques",
+  "given_name": "Jacques Chazot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425515.072917,
+    "year": 1928,
+    "month": 9,
+    "day": 25,
+    "calendar": "g",
+    "time": "14:45",
+    "time_type": "d",
+    "hour": 14.75,
+    "time_unknown": false,
+    "place": "Locminé",
+    "country": "France",
+    "lat": 47.883333,
+    "lon": -2.833333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chazot,_Jacques",
+  "source_notes": "Collection Gauquelin.\\n",
+  "categories": [
+    "Passions : Sexuality : Gay",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 13.252653,
+    "lagna": 223.252653,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.861741,
+    "jd_ut": 2425515.072917,
+    "planets": {
+      "Sun": {
+        "longitude": 159.374009,
+        "sign_index": 5,
+        "degree_in_sign": 9.374009,
+        "is_retrograde": false,
+        "speed": 0.980321
+      },
+      "Moon": {
+        "longitude": 289.152224,
+        "sign_index": 9,
+        "degree_in_sign": 19.152224,
+        "is_retrograde": false,
+        "speed": 13.705775
+      },
+      "Mars": {
+        "longitude": 63.828522,
+        "sign_index": 2,
+        "degree_in_sign": 3.828522,
+        "is_retrograde": false,
+        "speed": 0.459652
+      },
+      "Mercury": {
+        "longitude": 184.717291,
+        "sign_index": 6,
+        "degree_in_sign": 4.717291,
+        "is_retrograde": false,
+        "speed": 1.146049
+      },
+      "Jupiter": {
+        "longitude": 16.438526,
+        "sign_index": 0,
+        "degree_in_sign": 16.438526,
+        "is_retrograde": true,
+        "speed": -0.083757
+      },
+      "Venus": {
+        "longitude": 182.549404,
+        "sign_index": 6,
+        "degree_in_sign": 2.549404,
+        "is_retrograde": false,
+        "speed": 1.231361
+      },
+      "Saturn": {
+        "longitude": 230.882707,
+        "sign_index": 7,
+        "degree_in_sign": 20.882707,
+        "is_retrograde": false,
+        "speed": 0.060964
+      },
+      "Rahu": {
+        "longitude": 40.566527,
+        "sign_index": 1,
+        "degree_in_sign": 10.566527,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 220.566527,
+        "sign_index": 7,
+        "degree_in_sign": 10.566527,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

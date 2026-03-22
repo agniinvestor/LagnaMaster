@@ -1,0 +1,111 @@
+{
+  "adb_id": 101182,
+  "name": "Collazo, Frank Jr.",
+  "given_name": "Frank Jr. Collazo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426503.458333,
+    "year": 1931,
+    "month": 6,
+    "day": 10,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Beaumont",
+    "country": "Texas",
+    "lat": 30.083333,
+    "lon": -94.1
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collazo,_Frank_Jr.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 5.038142,
+    "lagna": 185.038142,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.89953,
+    "jd_ut": 2426503.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 56.178171,
+        "sign_index": 1,
+        "degree_in_sign": 26.178171,
+        "is_retrograde": false,
+        "speed": 0.95601
+      },
+      "Moon": {
+        "longitude": 354.83406,
+        "sign_index": 11,
+        "degree_in_sign": 24.83406,
+        "is_retrograde": false,
+        "speed": 14.82205
+      },
+      "Mars": {
+        "longitude": 127.279687,
+        "sign_index": 4,
+        "degree_in_sign": 7.279687,
+        "is_retrograde": false,
+        "speed": 0.532494
+      },
+      "Mercury": {
+        "longitude": 36.518885,
+        "sign_index": 1,
+        "degree_in_sign": 6.518885,
+        "is_retrograde": false,
+        "speed": 1.648266
+      },
+      "Jupiter": {
+        "longitude": 89.282152,
+        "sign_index": 2,
+        "degree_in_sign": 29.282152,
+        "is_retrograde": false,
+        "speed": 0.203681
+      },
+      "Venus": {
+        "longitude": 32.255651,
+        "sign_index": 1,
+        "degree_in_sign": 2.255651,
+        "is_retrograde": false,
+        "speed": 1.209897
+      },
+      "Saturn": {
+        "longitude": 269.252185,
+        "sign_index": 8,
+        "degree_in_sign": 29.252185,
+        "is_retrograde": true,
+        "speed": -0.055365
+      },
+      "Rahu": {
+        "longitude": 348.189929,
+        "sign_index": 11,
+        "degree_in_sign": 18.189929,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 168.189929,
+        "sign_index": 5,
+        "degree_in_sign": 18.189929,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 71884,
+  "name": "Crescenzo, Mario",
+  "given_name": "Mario Crescenzo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440444.916667,
+    "year": 1969,
+    "month": 8,
+    "day": 11,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "d",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Nocera Inferiore",
+    "country": "Italy",
+    "lat": 40.733333,
+    "lon": 14.633333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crescenzo,_Mario",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 10.26988,
+    "lagna": 160.26988,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.432601,
+    "jd_ut": 2440444.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 115.114697,
+        "sign_index": 3,
+        "degree_in_sign": 25.114697,
+        "is_retrograde": false,
+        "speed": 0.959958
+      },
+      "Moon": {
+        "longitude": 95.281003,
+        "sign_index": 3,
+        "degree_in_sign": 5.281003,
+        "is_retrograde": false,
+        "speed": 7.811508
+      },
+      "Mars": {
+        "longitude": 225.469367,
+        "sign_index": 7,
+        "degree_in_sign": 15.469367,
+        "is_retrograde": false,
+        "speed": 0.38636
+      },
+      "Mercury": {
+        "longitude": 133.759351,
+        "sign_index": 4,
+        "degree_in_sign": 13.759351,
+        "is_retrograde": false,
+        "speed": 1.643594
+      },
+      "Jupiter": {
+        "longitude": 160.839188,
+        "sign_index": 5,
+        "degree_in_sign": 10.839188,
+        "is_retrograde": false,
+        "speed": 0.179026
+      },
+      "Venus": {
+        "longitude": 75.922672,
+        "sign_index": 2,
+        "degree_in_sign": 15.922672,
+        "is_retrograde": false,
+        "speed": 1.1509
+      },
+      "Saturn": {
+        "longitude": 15.429956,
+        "sign_index": 0,
+        "degree_in_sign": 15.429956,
+        "is_retrograde": false,
+        "speed": 0.017252
+      },
+      "Rahu": {
+        "longitude": 329.40334,
+        "sign_index": 10,
+        "degree_in_sign": 29.40334,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 149.40334,
+        "sign_index": 4,
+        "degree_in_sign": 29.40334,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

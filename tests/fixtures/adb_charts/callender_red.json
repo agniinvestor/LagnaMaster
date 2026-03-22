@@ -1,0 +1,113 @@
+{
+  "adb_id": 89467,
+  "name": "Callender, Red",
+  "given_name": "Red Callender",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420929.229167,
+    "year": 1916,
+    "month": 3,
+    "day": 6,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Haynesville",
+    "country": "Virginia",
+    "lat": 37.95,
+    "lon": -76.666667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Callender,_Red",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 23.29595,
+    "lagna": 53.29595,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.686417,
+    "jd_ut": 2420929.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 323.138678,
+        "sign_index": 10,
+        "degree_in_sign": 23.138678,
+        "is_retrograde": false,
+        "speed": 1.000788
+      },
+      "Moon": {
+        "longitude": 355.683464,
+        "sign_index": 11,
+        "degree_in_sign": 25.683464,
+        "is_retrograde": false,
+        "speed": 9.522284
+      },
+      "Mars": {
+        "longitude": 109.050614,
+        "sign_index": 3,
+        "degree_in_sign": 19.050614,
+        "is_retrograde": true,
+        "speed": -0.192645
+      },
+      "Mercury": {
+        "longitude": 296.493179,
+        "sign_index": 9,
+        "degree_in_sign": 26.493179,
+        "is_retrograde": false,
+        "speed": 1.185731
+      },
+      "Jupiter": {
+        "longitude": 342.628962,
+        "sign_index": 11,
+        "degree_in_sign": 12.628962,
+        "is_retrograde": false,
+        "speed": 0.235478
+      },
+      "Venus": {
+        "longitude": 3.598696,
+        "sign_index": 0,
+        "degree_in_sign": 3.598696,
+        "is_retrograde": false,
+        "speed": 1.170444
+      },
+      "Saturn": {
+        "longitude": 76.875736,
+        "sign_index": 2,
+        "degree_in_sign": 16.875736,
+        "is_retrograde": true,
+        "speed": -0.009159
+      },
+      "Rahu": {
+        "longitude": 283.579956,
+        "sign_index": 9,
+        "degree_in_sign": 13.579956,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 103.579956,
+        "sign_index": 3,
+        "degree_in_sign": 13.579956,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

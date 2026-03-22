@@ -1,0 +1,108 @@
+{
+  "adb_id": 63648,
+  "name": "Candido, Maria",
+  "given_name": "Maria Candido",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423297.5,
+    "year": 1922,
+    "month": 8,
+    "day": 31,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "d",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Hyères",
+    "country": "France",
+    "lat": 43.116667,
+    "lon": 6.116667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Candido,_Maria",
+  "source_notes": "Didier Geslain archive, 'chanteuses' pdf file, p. 11.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/Opera"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 21.979932,
+    "lagna": 51.979932,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.776959,
+    "jd_ut": 2423297.5,
+    "planets": {
+      "Sun": {
+        "longitude": 134.022017,
+        "sign_index": 4,
+        "degree_in_sign": 14.022017,
+        "is_retrograde": false,
+        "speed": 0.967225
+      },
+      "Moon": {
+        "longitude": 241.782265,
+        "sign_index": 8,
+        "degree_in_sign": 1.782265,
+        "is_retrograde": false,
+        "speed": 12.156176
+      },
+      "Mars": {
+        "longitude": 240.27724,
+        "sign_index": 8,
+        "degree_in_sign": 0.27724,
+        "is_retrograde": false,
+        "speed": 0.472464
+      },
+      "Mercury": {
+        "longitude": 153.928073,
+        "sign_index": 5,
+        "degree_in_sign": 3.928073,
+        "is_retrograde": false,
+        "speed": 1.534636
+      },
+      "Jupiter": {
+        "longitude": 175.41074,
+        "sign_index": 5,
+        "degree_in_sign": 25.41074,
+        "is_retrograde": false,
+        "speed": 0.186581
+      },
+      "Venus": {
+        "longitude": 179.644792,
+        "sign_index": 5,
+        "degree_in_sign": 29.644792,
+        "is_retrograde": false,
+        "speed": 1.053858
+      },
+      "Saturn": {
+        "longitude": 163.75319,
+        "sign_index": 5,
+        "degree_in_sign": 13.75319,
+        "is_retrograde": false,
+        "speed": 0.11226
+      },
+      "Rahu": {
+        "longitude": 158.080335,
+        "sign_index": 5,
+        "degree_in_sign": 8.080335,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 338.080335,
+        "sign_index": 11,
+        "degree_in_sign": 8.080335,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

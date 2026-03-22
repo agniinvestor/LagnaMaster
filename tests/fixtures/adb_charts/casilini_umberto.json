@@ -1,0 +1,108 @@
+{
+  "adb_id": 71606,
+  "name": "Casilini, Umberto",
+  "given_name": "Umberto Casilini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408024.281296,
+    "year": 1880,
+    "month": 11,
+    "day": 4,
+    "calendar": "g",
+    "time": "19:35",
+    "time_type": "s",
+    "hour": 19.583333,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casilini,_Umberto",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 16.563468,
+    "lagna": 46.563468,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.193091,
+    "jd_ut": 2408024.281296,
+    "planets": {
+      "Sun": {
+        "longitude": 200.565256,
+        "sign_index": 6,
+        "degree_in_sign": 20.565256,
+        "is_retrograde": false,
+        "speed": 1.003896
+      },
+      "Moon": {
+        "longitude": 228.863152,
+        "sign_index": 7,
+        "degree_in_sign": 18.863152,
+        "is_retrograde": false,
+        "speed": 14.308065
+      },
+      "Mars": {
+        "longitude": 197.404691,
+        "sign_index": 6,
+        "degree_in_sign": 17.404691,
+        "is_retrograde": false,
+        "speed": 0.687593
+      },
+      "Mercury": {
+        "longitude": 223.711263,
+        "sign_index": 7,
+        "degree_in_sign": 13.711263,
+        "is_retrograde": false,
+        "speed": 0.897902
+      },
+      "Jupiter": {
+        "longitude": 348.873035,
+        "sign_index": 11,
+        "degree_in_sign": 18.873035,
+        "is_retrograde": true,
+        "speed": -0.095062
+      },
+      "Venus": {
+        "longitude": 230.144868,
+        "sign_index": 7,
+        "degree_in_sign": 20.144868,
+        "is_retrograde": false,
+        "speed": 1.230823
+      },
+      "Saturn": {
+        "longitude": 1.957313,
+        "sign_index": 0,
+        "degree_in_sign": 1.957313,
+        "is_retrograde": true,
+        "speed": -0.073215
+      },
+      "Rahu": {
+        "longitude": 247.440373,
+        "sign_index": 8,
+        "degree_in_sign": 7.440373,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 67.440373,
+        "sign_index": 2,
+        "degree_in_sign": 7.440373,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

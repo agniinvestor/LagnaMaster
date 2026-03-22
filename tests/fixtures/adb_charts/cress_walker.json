@@ -1,0 +1,114 @@
+{
+  "adb_id": 90338,
+  "name": "Cress, Walker",
+  "given_name": "Walker Cress",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421293.84375,
+    "year": 1917,
+    "month": 3,
+    "day": 6,
+    "calendar": "g",
+    "time": "02:15",
+    "time_type": "s",
+    "hour": 2.25,
+    "time_unknown": false,
+    "place": "Ben Hur",
+    "country": "Virginia",
+    "lat": 36.733333,
+    "lon": -83.083333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cress,_Walker",
+  "source_notes": "Sy Scholfield provided birth certificate from Virginia archives. \\n",
+  "categories": [
+    "Traits : Body : Constitution hardy",
+    "Traits : Body : Handedness",
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Baseball",
+    "Vocation : Sports Business : Promoter/ Agent",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 19.51057,
+    "lagna": 229.51057,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.700356,
+    "jd_ut": 2421293.84375,
+    "planets": {
+      "Sun": {
+        "longitude": 322.496455,
+        "sign_index": 10,
+        "degree_in_sign": 22.496455,
+        "is_retrograde": false,
+        "speed": 1.000363
+      },
+      "Moon": {
+        "longitude": 113.822678,
+        "sign_index": 3,
+        "degree_in_sign": 23.822678,
+        "is_retrograde": false,
+        "speed": 10.418807
+      },
+      "Mars": {
+        "longitude": 321.326439,
+        "sign_index": 10,
+        "degree_in_sign": 21.326439,
+        "is_retrograde": false,
+        "speed": 0.78688
+      },
+      "Mercury": {
+        "longitude": 303.62278,
+        "sign_index": 10,
+        "degree_in_sign": 3.62278,
+        "is_retrograde": false,
+        "speed": 1.571631
+      },
+      "Jupiter": {
+        "longitude": 11.147605,
+        "sign_index": 0,
+        "degree_in_sign": 11.147605,
+        "is_retrograde": false,
+        "speed": 0.195652
+      },
+      "Venus": {
+        "longitude": 309.531488,
+        "sign_index": 10,
+        "degree_in_sign": 9.531488,
+        "is_retrograde": false,
+        "speed": 1.24535
+      },
+      "Saturn": {
+        "longitude": 91.305137,
+        "sign_index": 3,
+        "degree_in_sign": 1.305137,
+        "is_retrograde": true,
+        "speed": -0.035574
+      },
+      "Rahu": {
+        "longitude": 264.258266,
+        "sign_index": 8,
+        "degree_in_sign": 24.258266,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 84.258266,
+        "sign_index": 2,
+        "degree_in_sign": 24.258266,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 65024,
+  "name": "Closel, Amaury du",
+  "given_name": "Amaury du Closel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435509.864583,
+    "year": 1956,
+    "month": 2,
+    "day": 6,
+    "calendar": "g",
+    "time": "09:45",
+    "time_type": "s",
+    "hour": 9.75,
+    "time_unknown": false,
+    "place": "St.Cloud",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.183333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Closel,_Amaury_du",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 181.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Conductor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 11.149819,
+    "lagna": 311.149819,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.243892,
+    "jd_ut": 2435509.864583,
+    "planets": {
+      "Sun": {
+        "longitude": 293.295256,
+        "sign_index": 9,
+        "degree_in_sign": 23.295256,
+        "is_retrograde": false,
+        "speed": 1.013656
+      },
+      "Moon": {
+        "longitude": 232.774984,
+        "sign_index": 7,
+        "degree_in_sign": 22.774984,
+        "is_retrograde": false,
+        "speed": 8.172454
+      },
+      "Mars": {
+        "longitude": 232.003943,
+        "sign_index": 7,
+        "degree_in_sign": 22.003943,
+        "is_retrograde": false,
+        "speed": 0.656563
+      },
+      "Mercury": {
+        "longitude": 274.631422,
+        "sign_index": 9,
+        "degree_in_sign": 4.631422,
+        "is_retrograde": true,
+        "speed": -0.279777
+      },
+      "Jupiter": {
+        "longitude": 124.574008,
+        "sign_index": 4,
+        "degree_in_sign": 4.574008,
+        "is_retrograde": true,
+        "speed": -0.127552
+      },
+      "Venus": {
+        "longitude": 330.793119,
+        "sign_index": 11,
+        "degree_in_sign": 0.793119,
+        "is_retrograde": false,
+        "speed": 1.204739
+      },
+      "Saturn": {
+        "longitude": 218.554829,
+        "sign_index": 7,
+        "degree_in_sign": 8.554829,
+        "is_retrograde": false,
+        "speed": 0.056733
+      },
+      "Rahu": {
+        "longitude": 230.921857,
+        "sign_index": 7,
+        "degree_in_sign": 20.921857,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 50.921857,
+        "sign_index": 1,
+        "degree_in_sign": 20.921857,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

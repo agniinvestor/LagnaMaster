@@ -1,0 +1,110 @@
+{
+  "adb_id": 76779,
+  "name": "Cazwell",
+  "given_name": "Cazwell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441861.170833,
+    "year": 1973,
+    "month": 6,
+    "day": 27,
+    "calendar": "g",
+    "time": "12:06",
+    "time_type": "d",
+    "hour": 12.1,
+    "time_unknown": false,
+    "place": "Worcester",
+    "country": "Massachusetts",
+    "lat": 42.266667,
+    "lon": -71.8
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cazwell",
+  "source_notes": "Craft quotes BC requested by Sy Scholfield\\n\\nWikipedia gives birth year as 1972. 1973 is the correct year.\\n",
+  "categories": [
+    "Passions : Sexuality : Gay",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Rapper"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 9.366302,
+    "lagna": 129.366302,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.486759,
+    "jd_ut": 2441861.170833,
+    "planets": {
+      "Sun": {
+        "longitude": 72.354659,
+        "sign_index": 2,
+        "degree_in_sign": 12.354659,
+        "is_retrograde": false,
+        "speed": 0.953834
+      },
+      "Moon": {
+        "longitude": 32.198439,
+        "sign_index": 1,
+        "degree_in_sign": 2.198439,
+        "is_retrograde": false,
+        "speed": 10.843097
+      },
+      "Mars": {
+        "longitude": 340.926672,
+        "sign_index": 11,
+        "degree_in_sign": 10.926672,
+        "is_retrograde": false,
+        "speed": 0.641812
+      },
+      "Mercury": {
+        "longitude": 96.772061,
+        "sign_index": 3,
+        "degree_in_sign": 6.772061,
+        "is_retrograde": false,
+        "speed": 0.659953
+      },
+      "Jupiter": {
+        "longitude": 287.446125,
+        "sign_index": 9,
+        "degree_in_sign": 17.446125,
+        "is_retrograde": true,
+        "speed": -0.0832
+      },
+      "Venus": {
+        "longitude": 93.217694,
+        "sign_index": 3,
+        "degree_in_sign": 3.217694,
+        "is_retrograde": false,
+        "speed": 1.218757
+      },
+      "Saturn": {
+        "longitude": 62.220249,
+        "sign_index": 2,
+        "degree_in_sign": 2.220249,
+        "is_retrograde": false,
+        "speed": 0.128958
+      },
+      "Rahu": {
+        "longitude": 254.353142,
+        "sign_index": 8,
+        "degree_in_sign": 14.353142,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 74.353142,
+        "sign_index": 2,
+        "degree_in_sign": 14.353142,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

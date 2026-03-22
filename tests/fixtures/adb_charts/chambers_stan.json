@@ -1,0 +1,112 @@
+{
+  "adb_id": 90055,
+  "name": "Chambers, Stan",
+  "given_name": "Stan Chambers",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423643.201389,
+    "year": 1923,
+    "month": 8,
+    "day": 11,
+    "calendar": "g",
+    "time": "08:50",
+    "time_type": "s",
+    "hour": 8.833333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chambers,_Stan",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Lifestyle : Work : Same Job more than 10 yrs",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : News journalist/ Anchor",
+    "Notable : Awards : Emmy",
+    "Notable : Awards : Hall of Fame"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 17.266037,
+    "lagna": 137.266037,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.790175,
+    "jd_ut": 2423643.201389,
+    "planets": {
+      "Sun": {
+        "longitude": 115.186211,
+        "sign_index": 3,
+        "degree_in_sign": 25.186211,
+        "is_retrograde": false,
+        "speed": 0.959931
+      },
+      "Moon": {
+        "longitude": 105.941012,
+        "sign_index": 3,
+        "degree_in_sign": 15.941012,
+        "is_retrograde": false,
+        "speed": 9.6381
+      },
+      "Mars": {
+        "longitude": 114.258893,
+        "sign_index": 3,
+        "degree_in_sign": 24.258893,
+        "is_retrograde": false,
+        "speed": 0.63791
+      },
+      "Mercury": {
+        "longitude": 134.180734,
+        "sign_index": 4,
+        "degree_in_sign": 14.180734,
+        "is_retrograde": false,
+        "speed": 1.631549
+      },
+      "Jupiter": {
+        "longitude": 198.080325,
+        "sign_index": 6,
+        "degree_in_sign": 18.080325,
+        "is_retrograde": false,
+        "speed": 0.098768
+      },
+      "Venus": {
+        "longitude": 107.067691,
+        "sign_index": 3,
+        "degree_in_sign": 17.067691,
+        "is_retrograde": false,
+        "speed": 1.232982
+      },
+      "Saturn": {
+        "longitude": 173.01214,
+        "sign_index": 5,
+        "degree_in_sign": 23.01214,
+        "is_retrograde": false,
+        "speed": 0.08253
+      },
+      "Rahu": {
+        "longitude": 139.760897,
+        "sign_index": 4,
+        "degree_in_sign": 19.760897,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 319.760897,
+        "sign_index": 10,
+        "degree_in_sign": 19.760897,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 79502,
+  "name": "Chautard, Émile",
+  "given_name": "Émile Chautard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402121.74361,
+    "year": 1864,
+    "month": 9,
+    "day": 7,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 15",
+    "country": "France",
+    "lat": 48.841389,
+    "lon": 2.300278
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chautard,_Émile",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.277125,
+    "lagna": 126.277125,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.967477,
+    "jd_ut": 2402121.74361,
+    "planets": {
+      "Sun": {
+        "longitude": 142.850615,
+        "sign_index": 4,
+        "degree_in_sign": 22.850615,
+        "is_retrograde": false,
+        "speed": 0.97179
+      },
+      "Moon": {
+        "longitude": 209.528057,
+        "sign_index": 6,
+        "degree_in_sign": 29.528057,
+        "is_retrograde": false,
+        "speed": 15.768023
+      },
+      "Mars": {
+        "longitude": 44.221033,
+        "sign_index": 1,
+        "degree_in_sign": 14.221033,
+        "is_retrograde": false,
+        "speed": 0.470855
+      },
+      "Mercury": {
+        "longitude": 167.341779,
+        "sign_index": 5,
+        "degree_in_sign": 17.341779,
+        "is_retrograde": false,
+        "speed": 0.365068
+      },
+      "Jupiter": {
+        "longitude": 209.887129,
+        "sign_index": 6,
+        "degree_in_sign": 29.887129,
+        "is_retrograde": false,
+        "speed": 0.141921
+      },
+      "Venus": {
+        "longitude": 156.750168,
+        "sign_index": 5,
+        "degree_in_sign": 6.750168,
+        "is_retrograde": false,
+        "speed": 1.237986
+      },
+      "Saturn": {
+        "longitude": 174.707744,
+        "sign_index": 5,
+        "degree_in_sign": 24.707744,
+        "is_retrograde": false,
+        "speed": 0.109726
+      },
+      "Rahu": {
+        "longitude": 200.228432,
+        "sign_index": 6,
+        "degree_in_sign": 20.228432,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 20.228432,
+        "sign_index": 0,
+        "degree_in_sign": 20.228432,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 48182,
+  "name": "Carvalho, Florencio",
+  "given_name": "Florencio Carvalho",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426811.8125,
+    "year": 1932,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "04:30",
+    "time_type": "s",
+    "hour": 4.5,
+    "time_unknown": false,
+    "place": "Juazeiro do Norte (Ceará)",
+    "country": "Brazil",
+    "lat": -7.213056,
+    "lon": -39.315278
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carvalho,_Florencio",
+  "source_notes": "Steinbrecher quotes Alex Rose, from him, \"recorded time.\"\\n",
+  "categories": [
+    "Traits : Personality : Mystical",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Personal : Religion/Spirituality : Mystical experience",
+    "Personal : Religion/Spirituality : Shamanism",
+    "Vocation : Religion : Spiritual Leader/ Guru"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 19.800665,
+    "lagna": 319.800665,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.91132,
+    "jd_ut": 2426811.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 1.227294,
+        "sign_index": 0,
+        "degree_in_sign": 1.227294,
+        "is_retrograde": false,
+        "speed": 0.978916
+      },
+      "Moon": {
+        "longitude": 93.033262,
+        "sign_index": 3,
+        "degree_in_sign": 3.033262,
+        "is_retrograde": false,
+        "speed": 18.283637
+      },
+      "Mars": {
+        "longitude": 345.635134,
+        "sign_index": 11,
+        "degree_in_sign": 15.635134,
+        "is_retrograde": false,
+        "speed": 0.772156
+      },
+      "Mercury": {
+        "longitude": 354.55978,
+        "sign_index": 11,
+        "degree_in_sign": 24.55978,
+        "is_retrograde": true,
+        "speed": -0.698789
+      },
+      "Jupiter": {
+        "longitude": 109.742962,
+        "sign_index": 3,
+        "degree_in_sign": 19.742962,
+        "is_retrograde": false,
+        "speed": 0.017942
+      },
+      "Venus": {
+        "longitude": 46.744401,
+        "sign_index": 1,
+        "degree_in_sign": 16.744401,
+        "is_retrograde": false,
+        "speed": 1.011531
+      },
+      "Saturn": {
+        "longitude": 281.101465,
+        "sign_index": 9,
+        "degree_in_sign": 11.101465,
+        "is_retrograde": false,
+        "speed": 0.048254
+      },
+      "Rahu": {
+        "longitude": 331.849601,
+        "sign_index": 11,
+        "degree_in_sign": 1.849601,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 151.849601,
+        "sign_index": 5,
+        "degree_in_sign": 1.849601,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

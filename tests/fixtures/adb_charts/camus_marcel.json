@@ -1,0 +1,108 @@
+{
+  "adb_id": 60126,
+  "name": "Camus, Marcel",
+  "given_name": "Marcel Camus",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419514.041667,
+    "year": 1912,
+    "month": 4,
+    "day": 21,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Chappes (Ardennes)",
+    "country": "France",
+    "lat": 49.616667,
+    "lon": 4.266667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camus,_Marcel",
+  "source_notes": "Didier Geslain archive, 'Cinema Realisateurs' pdf file, p. 43.\\nSame from Taeger quotes Lescaut quoting L'Astrologue\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 14.89198,
+    "lagna": 104.89198,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.632314,
+    "jd_ut": 2419514.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 8.418195,
+        "sign_index": 0,
+        "degree_in_sign": 8.418195,
+        "is_retrograde": false,
+        "speed": 0.975174
+      },
+      "Moon": {
+        "longitude": 61.255568,
+        "sign_index": 2,
+        "degree_in_sign": 1.255568,
+        "is_retrograde": false,
+        "speed": 11.100872
+      },
+      "Mars": {
+        "longitude": 76.202159,
+        "sign_index": 2,
+        "degree_in_sign": 16.202159,
+        "is_retrograde": false,
+        "speed": 0.559435
+      },
+      "Mercury": {
+        "longitude": 358.454819,
+        "sign_index": 11,
+        "degree_in_sign": 28.454819,
+        "is_retrograde": true,
+        "speed": -0.562574
+      },
+      "Jupiter": {
+        "longitude": 232.147437,
+        "sign_index": 7,
+        "degree_in_sign": 22.147437,
+        "is_retrograde": true,
+        "speed": -0.060964
+      },
+      "Venus": {
+        "longitude": 348.317447,
+        "sign_index": 11,
+        "degree_in_sign": 18.317447,
+        "is_retrograde": false,
+        "speed": 1.226523
+      },
+      "Saturn": {
+        "longitude": 27.9328,
+        "sign_index": 0,
+        "degree_in_sign": 27.9328,
+        "is_retrograde": false,
+        "speed": 0.124452
+      },
+      "Rahu": {
+        "longitude": 358.573708,
+        "sign_index": 11,
+        "degree_in_sign": 28.573708,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 178.573708,
+        "sign_index": 5,
+        "degree_in_sign": 28.573708,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

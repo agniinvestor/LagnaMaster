@@ -1,0 +1,109 @@
+{
+  "adb_id": 65009,
+  "name": "Clair, Jean",
+  "given_name": "Jean Clair",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429923.333333,
+    "year": 1940,
+    "month": 10,
+    "day": 20,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "d",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clair,_Jean",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 167.\\n",
+  "categories": [
+    "Vocation : Art : Other Art",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 15.057392,
+    "lagna": 45.057392,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.030286,
+    "jd_ut": 2429923.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 184.246,
+        "sign_index": 6,
+        "degree_in_sign": 4.246,
+        "is_retrograde": false,
+        "speed": 0.99458
+      },
+      "Moon": {
+        "longitude": 54.322832,
+        "sign_index": 1,
+        "degree_in_sign": 24.322832,
+        "is_retrograde": false,
+        "speed": 13.515838
+      },
+      "Mars": {
+        "longitude": 166.809241,
+        "sign_index": 5,
+        "degree_in_sign": 16.809241,
+        "is_retrograde": false,
+        "speed": 0.647963
+      },
+      "Mercury": {
+        "longitude": 208.580147,
+        "sign_index": 6,
+        "degree_in_sign": 28.580147,
+        "is_retrograde": false,
+        "speed": 0.982149
+      },
+      "Jupiter": {
+        "longitude": 19.352521,
+        "sign_index": 0,
+        "degree_in_sign": 19.352521,
+        "is_retrograde": true,
+        "speed": -0.127126
+      },
+      "Venus": {
+        "longitude": 142.953311,
+        "sign_index": 4,
+        "degree_in_sign": 22.953311,
+        "is_retrograde": false,
+        "speed": 1.165005
+      },
+      "Saturn": {
+        "longitude": 19.384951,
+        "sign_index": 0,
+        "degree_in_sign": 19.384951,
+        "is_retrograde": true,
+        "speed": -0.076274
+      },
+      "Rahu": {
+        "longitude": 166.963664,
+        "sign_index": 5,
+        "degree_in_sign": 16.963664,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.963664,
+        "sign_index": 11,
+        "degree_in_sign": 16.963664,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

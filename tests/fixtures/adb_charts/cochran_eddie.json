@@ -1,0 +1,113 @@
+{
+  "adb_id": 50412,
+  "name": "Cochran, Eddie",
+  "given_name": "Eddie Cochran",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429174.927083,
+    "year": 1938,
+    "month": 10,
+    "day": 3,
+    "calendar": "g",
+    "time": "04:15",
+    "time_type": "s",
+    "hour": 4.25,
+    "time_unknown": false,
+    "place": "Albert Lea",
+    "country": "Minnesota",
+    "lat": 43.65,
+    "lon": -93.366667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cochran,_Eddie",
+  "source_notes": "Nick Dagan Best sent copy of birth certificate found online at http://www.eddiecochran.net/ (not an official website).  It's difficult to read the day of his birth but Nick Dagan Best received clarification of the date from the person who posted it. Some websites give October 2nd as his birth date, but the birth county museum also gives October 3, 1938.\\n\\nThe Minnesota Birth Index also has 3 October 1938. [https://www.familysearch.org/ark:/61903/1:1:VCNY-67W]\\n",
+  "categories": [
+    "Personal : Death : Accidental",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Vocation : Entertain/Music : Country-Western",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 0.009501,
+    "lagna": 120.009501,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.001671,
+    "jd_ut": 2429174.927083,
+    "planets": {
+      "Sun": {
+        "longitude": 166.540312,
+        "sign_index": 5,
+        "degree_in_sign": 16.540312,
+        "is_retrograde": false,
+        "speed": 0.98452
+      },
+      "Moon": {
+        "longitude": 277.046089,
+        "sign_index": 9,
+        "degree_in_sign": 7.046089,
+        "is_retrograde": false,
+        "speed": 14.583895
+      },
+      "Mars": {
+        "longitude": 143.202294,
+        "sign_index": 4,
+        "degree_in_sign": 23.202294,
+        "is_retrograde": false,
+        "speed": 0.63229
+      },
+      "Mercury": {
+        "longitude": 161.054185,
+        "sign_index": 5,
+        "degree_in_sign": 11.054185,
+        "is_retrograde": false,
+        "speed": 1.799012
+      },
+      "Jupiter": {
+        "longitude": 299.802224,
+        "sign_index": 9,
+        "degree_in_sign": 29.802224,
+        "is_retrograde": true,
+        "speed": -0.051902
+      },
+      "Venus": {
+        "longitude": 210.333878,
+        "sign_index": 7,
+        "degree_in_sign": 0.333878,
+        "is_retrograde": false,
+        "speed": 0.736412
+      },
+      "Saturn": {
+        "longitude": 351.996607,
+        "sign_index": 11,
+        "degree_in_sign": 21.996607,
+        "is_retrograde": true,
+        "speed": -0.078303
+      },
+      "Rahu": {
+        "longitude": 206.62326,
+        "sign_index": 6,
+        "degree_in_sign": 26.62326,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 26.62326,
+        "sign_index": 0,
+        "degree_in_sign": 26.62326,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

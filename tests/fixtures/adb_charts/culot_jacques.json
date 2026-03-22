@@ -1,0 +1,109 @@
+{
+  "adb_id": 93107,
+  "name": "Culot, Jacques",
+  "given_name": "Jacques Culot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432689.850694,
+    "year": 1948,
+    "month": 5,
+    "day": 18,
+    "calendar": "g",
+    "time": "09:25",
+    "time_type": "s",
+    "hour": 9.416667,
+    "time_unknown": false,
+    "place": "Etterbeek",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.383333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Culot,_Jacques",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_ac_accidents-2.pdf]. \\n",
+  "categories": [
+    "Personal : Death : Accidental",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.578394,
+    "lagna": 74.578394,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.136065,
+    "jd_ut": 2432689.850694,
+    "planets": {
+      "Sun": {
+        "longitude": 34.160365,
+        "sign_index": 1,
+        "degree_in_sign": 4.160365,
+        "is_retrograde": false,
+        "speed": 0.962503
+      },
+      "Moon": {
+        "longitude": 155.087282,
+        "sign_index": 5,
+        "degree_in_sign": 5.087282,
+        "is_retrograde": false,
+        "speed": 17.449916
+      },
+      "Mars": {
+        "longitude": 126.656968,
+        "sign_index": 4,
+        "degree_in_sign": 6.656968,
+        "is_retrograde": false,
+        "speed": 0.403778
+      },
+      "Mercury": {
+        "longitude": 53.639335,
+        "sign_index": 1,
+        "degree_in_sign": 23.639335,
+        "is_retrograde": false,
+        "speed": 1.600534
+      },
+      "Jupiter": {
+        "longitude": 244.177133,
+        "sign_index": 8,
+        "degree_in_sign": 4.177133,
+        "is_retrograde": true,
+        "speed": -0.094082
+      },
+      "Venus": {
+        "longitude": 73.739933,
+        "sign_index": 2,
+        "degree_in_sign": 13.739933,
+        "is_retrograde": false,
+        "speed": 0.505921
+      },
+      "Saturn": {
+        "longitude": 113.476959,
+        "sign_index": 3,
+        "degree_in_sign": 23.476959,
+        "is_retrograde": false,
+        "speed": 0.053423
+      },
+      "Rahu": {
+        "longitude": 20.360196,
+        "sign_index": 0,
+        "degree_in_sign": 20.360196,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 200.360196,
+        "sign_index": 6,
+        "degree_in_sign": 20.360196,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 67512,
+  "name": "Canivet, Guy",
+  "given_name": "Guy Canivet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430990.708333,
+    "year": 1943,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "d",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Lons le Saunier",
+    "country": "France",
+    "lat": 46.666667,
+    "lon": 5.55
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canivet,_Guy",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 45.\\n",
+  "categories": [
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 7.682598,
+    "lagna": 127.682598,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.071097,
+    "jd_ut": 2430990.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 156.230921,
+        "sign_index": 5,
+        "degree_in_sign": 6.230921,
+        "is_retrograde": false,
+        "speed": 0.978898
+      },
+      "Moon": {
+        "longitude": 87.681799,
+        "sign_index": 2,
+        "degree_in_sign": 27.681799,
+        "is_retrograde": false,
+        "speed": 8.505303
+      },
+      "Mars": {
+        "longitude": 51.609685,
+        "sign_index": 1,
+        "degree_in_sign": 21.609685,
+        "is_retrograde": false,
+        "speed": 0.390577
+      },
+      "Mercury": {
+        "longitude": 159.336176,
+        "sign_index": 5,
+        "degree_in_sign": 9.336176,
+        "is_retrograde": true,
+        "speed": -1.086361
+      },
+      "Jupiter": {
+        "longitude": 114.958049,
+        "sign_index": 3,
+        "degree_in_sign": 24.958049,
+        "is_retrograde": false,
+        "speed": 0.19031
+      },
+      "Venus": {
+        "longitude": 131.633539,
+        "sign_index": 4,
+        "degree_in_sign": 11.633539,
+        "is_retrograde": true,
+        "speed": -0.168464
+      },
+      "Saturn": {
+        "longitude": 63.312009,
+        "sign_index": 2,
+        "degree_in_sign": 3.312009,
+        "is_retrograde": false,
+        "speed": 0.030241
+      },
+      "Rahu": {
+        "longitude": 110.401256,
+        "sign_index": 3,
+        "degree_in_sign": 20.401256,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 290.401256,
+        "sign_index": 9,
+        "degree_in_sign": 20.401256,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

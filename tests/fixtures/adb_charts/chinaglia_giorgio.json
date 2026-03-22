@@ -1,0 +1,108 @@
+{
+  "adb_id": 53894,
+  "name": "Chinaglia, Giorgio",
+  "given_name": "Giorgio Chinaglia",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432209.541667,
+    "year": 1947,
+    "month": 1,
+    "day": 24,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Carrara",
+    "country": "Italy",
+    "lat": 44.083333,
+    "lon": 10.1
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chinaglia,_Giorgio",
+  "source_notes": "Steinbrecher collection: Bordoni/2 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 27.693149,
+    "lagna": 177.693149,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.117699,
+    "jd_ut": 2432209.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 280.086958,
+        "sign_index": 9,
+        "degree_in_sign": 10.086958,
+        "is_retrograde": false,
+        "speed": 1.017366
+      },
+      "Moon": {
+        "longitude": 298.828146,
+        "sign_index": 9,
+        "degree_in_sign": 28.828146,
+        "is_retrograde": false,
+        "speed": 16.043695
+      },
+      "Mars": {
+        "longitude": 275.758094,
+        "sign_index": 9,
+        "degree_in_sign": 5.758094,
+        "is_retrograde": false,
+        "speed": 0.779098
+      },
+      "Mercury": {
+        "longitude": 280.530956,
+        "sign_index": 9,
+        "degree_in_sign": 10.530956,
+        "is_retrograde": false,
+        "speed": 1.695933
+      },
+      "Jupiter": {
+        "longitude": 210.880346,
+        "sign_index": 7,
+        "degree_in_sign": 0.880346,
+        "is_retrograde": false,
+        "speed": 0.135682
+      },
+      "Venus": {
+        "longitude": 233.327447,
+        "sign_index": 7,
+        "degree_in_sign": 23.327447,
+        "is_retrograde": false,
+        "speed": 0.985279
+      },
+      "Saturn": {
+        "longitude": 102.506247,
+        "sign_index": 3,
+        "degree_in_sign": 12.506247,
+        "is_retrograde": true,
+        "speed": -0.082098
+      },
+      "Rahu": {
+        "longitude": 45.812761,
+        "sign_index": 1,
+        "degree_in_sign": 15.812761,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 225.812761,
+        "sign_index": 7,
+        "degree_in_sign": 15.812761,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

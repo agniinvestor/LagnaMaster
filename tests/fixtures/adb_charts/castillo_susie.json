@@ -1,0 +1,109 @@
+{
+  "adb_id": 48547,
+  "name": "Castillo, Susie",
+  "given_name": "Susie Castillo",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444174.277083,
+    "year": 1979,
+    "month": 10,
+    "day": 27,
+    "calendar": "g",
+    "time": "14:39",
+    "time_type": "d",
+    "hour": 14.65,
+    "time_unknown": false,
+    "place": "Methuen",
+    "country": "Massachusetts",
+    "lat": 42.733333,
+    "lon": -71.183333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castillo,_Susie",
+  "source_notes": "pt quotes birth certificate\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Vocation : Beauty : Beauty Queen/ King"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 29.186089,
+    "lagna": 269.186089,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.575214,
+    "jd_ut": 2444174.277083,
+    "planets": {
+      "Sun": {
+        "longitude": 190.174274,
+        "sign_index": 6,
+        "degree_in_sign": 10.174274,
+        "is_retrograde": false,
+        "speed": 0.997988
+      },
+      "Moon": {
+        "longitude": 270.75672,
+        "sign_index": 9,
+        "degree_in_sign": 0.75672,
+        "is_retrograde": false,
+        "speed": 10.789036
+      },
+      "Mars": {
+        "longitude": 115.044275,
+        "sign_index": 3,
+        "degree_in_sign": 25.044275,
+        "is_retrograde": false,
+        "speed": 0.527957
+      },
+      "Mercury": {
+        "longitude": 213.846525,
+        "sign_index": 7,
+        "degree_in_sign": 3.846525,
+        "is_retrograde": false,
+        "speed": 1.079694
+      },
+      "Jupiter": {
+        "longitude": 131.492742,
+        "sign_index": 4,
+        "degree_in_sign": 11.492742,
+        "is_retrograde": false,
+        "speed": 0.15726
+      },
+      "Venus": {
+        "longitude": 206.817924,
+        "sign_index": 6,
+        "degree_in_sign": 26.817924,
+        "is_retrograde": false,
+        "speed": 1.245638
+      },
+      "Saturn": {
+        "longitude": 149.283815,
+        "sign_index": 4,
+        "degree_in_sign": 29.283815,
+        "is_retrograde": false,
+        "speed": 0.104923
+      },
+      "Rahu": {
+        "longitude": 131.776934,
+        "sign_index": 4,
+        "degree_in_sign": 11.776934,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 311.776934,
+        "sign_index": 10,
+        "degree_in_sign": 11.776934,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

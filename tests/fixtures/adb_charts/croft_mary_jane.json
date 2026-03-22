@@ -1,0 +1,110 @@
+{
+  "adb_id": 85462,
+  "name": "Croft, Mary Jane",
+  "given_name": "Mary Jane Croft",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420909.291667,
+    "year": 1916,
+    "month": 2,
+    "day": 15,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Muncie",
+    "country": "Indiana",
+    "lat": 40.2,
+    "lon": -85.383333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Croft,_Mary_Jane",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 19.653615,
+    "lagna": 49.653615,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.685655,
+    "jd_ut": 2420909.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 303.09487,
+        "sign_index": 10,
+        "degree_in_sign": 3.09487,
+        "is_retrograde": false,
+        "speed": 1.009561
+      },
+      "Moon": {
+        "longitude": 86.637782,
+        "sign_index": 2,
+        "degree_in_sign": 26.637782,
+        "is_retrograde": false,
+        "speed": 14.302078
+      },
+      "Mars": {
+        "longitude": 115.106619,
+        "sign_index": 3,
+        "degree_in_sign": 25.106619,
+        "is_retrograde": true,
+        "speed": -0.386214
+      },
+      "Mercury": {
+        "longitude": 283.715245,
+        "sign_index": 9,
+        "degree_in_sign": 13.715245,
+        "is_retrograde": true,
+        "speed": -0.230363
+      },
+      "Jupiter": {
+        "longitude": 338.07262,
+        "sign_index": 11,
+        "degree_in_sign": 8.07262,
+        "is_retrograde": false,
+        "speed": 0.22004
+      },
+      "Venus": {
+        "longitude": 339.903333,
+        "sign_index": 11,
+        "degree_in_sign": 9.903333,
+        "is_retrograde": false,
+        "speed": 1.204481
+      },
+      "Saturn": {
+        "longitude": 77.419105,
+        "sign_index": 2,
+        "degree_in_sign": 17.419105,
+        "is_retrograde": true,
+        "speed": -0.044465
+      },
+      "Rahu": {
+        "longitude": 284.636486,
+        "sign_index": 9,
+        "degree_in_sign": 14.636486,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 104.636486,
+        "sign_index": 3,
+        "degree_in_sign": 14.636486,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

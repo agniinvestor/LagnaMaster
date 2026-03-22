@@ -1,0 +1,108 @@
+{
+  "adb_id": 5339,
+  "name": "Computer Tech 5339",
+  "given_name": "Computer Tech 5339",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2422555.025,
+    "year": 1920,
+    "month": 8,
+    "day": 18,
+    "calendar": "g",
+    "time": "06:36",
+    "time_type": "s",
+    "hour": 6.6,
+    "time_unknown": false,
+    "place": "Madison",
+    "country": "Wisconsin",
+    "lat": 43.066667,
+    "lon": -89.4
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Computer_Tech_5339",
+  "source_notes": "LMR quotes him\\n",
+  "categories": [
+    "Vocation : Computer : Hardware engineer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 26.052405,
+    "lagna": 116.052405,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.748573,
+    "jd_ut": 2422555.025,
+    "planets": {
+      "Sun": {
+        "longitude": 122.481259,
+        "sign_index": 4,
+        "degree_in_sign": 2.481259,
+        "is_retrograde": false,
+        "speed": 0.962533
+      },
+      "Moon": {
+        "longitude": 179.591147,
+        "sign_index": 5,
+        "degree_in_sign": 29.591147,
+        "is_retrograde": false,
+        "speed": 15.776617
+      },
+      "Mars": {
+        "longitude": 206.644128,
+        "sign_index": 6,
+        "degree_in_sign": 26.644128,
+        "is_retrograde": false,
+        "speed": 0.584526
+      },
+      "Mercury": {
+        "longitude": 104.361838,
+        "sign_index": 3,
+        "degree_in_sign": 14.361838,
+        "is_retrograde": false,
+        "speed": 1.30067
+      },
+      "Jupiter": {
+        "longitude": 125.350436,
+        "sign_index": 4,
+        "degree_in_sign": 5.350436,
+        "is_retrograde": false,
+        "speed": 0.217985
+      },
+      "Venus": {
+        "longitude": 135.069791,
+        "sign_index": 4,
+        "degree_in_sign": 15.069791,
+        "is_retrograde": false,
+        "speed": 1.234347
+      },
+      "Saturn": {
+        "longitude": 139.712964,
+        "sign_index": 4,
+        "degree_in_sign": 19.712964,
+        "is_retrograde": false,
+        "speed": 0.121983
+      },
+      "Rahu": {
+        "longitude": 197.425635,
+        "sign_index": 6,
+        "degree_in_sign": 17.425635,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 17.425635,
+        "sign_index": 0,
+        "degree_in_sign": 17.425635,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

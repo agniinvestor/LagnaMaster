@@ -1,0 +1,110 @@
+{
+  "adb_id": 3478,
+  "name": "Cruwell, Ludwig",
+  "given_name": "Ludwig Cruwell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412178.291759,
+    "year": 1892,
+    "month": 3,
+    "day": 20,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "l",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "Dortmund",
+    "country": "Germany",
+    "lat": 51.516667,
+    "lon": 7.466667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cruwell,_Ludwig",
+  "source_notes": "Gauquelin Vol 3/1806\\n",
+  "categories": [
+    "Vocation : Military : Combat",
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Nazi party"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 0.27845,
+    "lagna": 150.27845,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.351881,
+    "jd_ut": 2412178.291759,
+    "planets": {
+      "Sun": {
+        "longitude": 338.298159,
+        "sign_index": 11,
+        "degree_in_sign": 8.298159,
+        "is_retrograde": false,
+        "speed": 0.992068
+      },
+      "Moon": {
+        "longitude": 237.936918,
+        "sign_index": 7,
+        "degree_in_sign": 27.936918,
+        "is_retrograde": false,
+        "speed": 15.315519
+      },
+      "Mars": {
+        "longitude": 251.863432,
+        "sign_index": 8,
+        "degree_in_sign": 11.863432,
+        "is_retrograde": false,
+        "speed": 0.589514
+      },
+      "Mercury": {
+        "longitude": 352.088336,
+        "sign_index": 11,
+        "degree_in_sign": 22.088336,
+        "is_retrograde": false,
+        "speed": 1.832182
+      },
+      "Jupiter": {
+        "longitude": 338.57366,
+        "sign_index": 11,
+        "degree_in_sign": 8.57366,
+        "is_retrograde": false,
+        "speed": 0.24239
+      },
+      "Venus": {
+        "longitude": 19.951376,
+        "sign_index": 0,
+        "degree_in_sign": 19.951376,
+        "is_retrograde": false,
+        "speed": 1.148234
+      },
+      "Saturn": {
+        "longitude": 154.124951,
+        "sign_index": 5,
+        "degree_in_sign": 4.124951,
+        "is_retrograde": true,
+        "speed": -0.078718
+      },
+      "Rahu": {
+        "longitude": 27.310551,
+        "sign_index": 0,
+        "degree_in_sign": 27.310551,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 207.310551,
+        "sign_index": 6,
+        "degree_in_sign": 27.310551,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

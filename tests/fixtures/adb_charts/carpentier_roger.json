@@ -1,0 +1,108 @@
+{
+  "adb_id": 64934,
+  "name": "Carpentier, Roger",
+  "given_name": "Roger Carpentier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422707.083333,
+    "year": 1921,
+    "month": 1,
+    "day": 17,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpentier,_Roger",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 58.\\n",
+  "categories": [
+    "Vocation : Travel : Aviation field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 13.153231,
+    "lagna": 43.153231,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.754386,
+    "jd_ut": 2422707.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 274.193345,
+        "sign_index": 9,
+        "degree_in_sign": 4.193345,
+        "is_retrograde": false,
+        "speed": 1.018063
+      },
+      "Moon": {
+        "longitude": 8.26491,
+        "sign_index": 0,
+        "degree_in_sign": 8.26491,
+        "is_retrograde": false,
+        "speed": 11.680912
+      },
+      "Mars": {
+        "longitude": 316.756153,
+        "sign_index": 10,
+        "degree_in_sign": 16.756153,
+        "is_retrograde": false,
+        "speed": 0.774278
+      },
+      "Mercury": {
+        "longitude": 274.693176,
+        "sign_index": 9,
+        "degree_in_sign": 4.693176,
+        "is_retrograde": false,
+        "speed": 1.670927
+      },
+      "Jupiter": {
+        "longitude": 145.854687,
+        "sign_index": 4,
+        "degree_in_sign": 25.854687,
+        "is_retrograde": true,
+        "speed": -0.043932
+      },
+      "Venus": {
+        "longitude": 319.517664,
+        "sign_index": 10,
+        "degree_in_sign": 19.517664,
+        "is_retrograde": false,
+        "speed": 1.127837
+      },
+      "Saturn": {
+        "longitude": 151.886357,
+        "sign_index": 5,
+        "degree_in_sign": 1.886357,
+        "is_retrograde": true,
+        "speed": -0.023801
+      },
+      "Rahu": {
+        "longitude": 189.367747,
+        "sign_index": 6,
+        "degree_in_sign": 9.367747,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 9.367747,
+        "sign_index": 0,
+        "degree_in_sign": 9.367747,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

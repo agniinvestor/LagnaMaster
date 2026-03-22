@@ -1,0 +1,108 @@
+{
+  "adb_id": 82949,
+  "name": "Cornuché, Eugène",
+  "given_name": "Eugène Cornuché",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403074.743499,
+    "year": 1867,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 9",
+    "country": "France",
+    "lat": 48.8725,
+    "lon": 2.340278
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornuché,_Eugène",
+  "source_notes": "Janine Tissot quoted bc (FDAF).\\n",
+  "categories": [
+    "Vocation : Business : Entrepreneur"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 5.738916,
+    "lagna": 5.738916,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.003902,
+    "jd_ut": 2403074.743499,
+    "planets": {
+      "Sun": {
+        "longitude": 5.723701,
+        "sign_index": 0,
+        "degree_in_sign": 5.723701,
+        "is_retrograde": false,
+        "speed": 0.976016
+      },
+      "Moon": {
+        "longitude": 177.079419,
+        "sign_index": 5,
+        "degree_in_sign": 27.079419,
+        "is_retrograde": false,
+        "speed": 12.931387
+      },
+      "Mars": {
+        "longitude": 94.48706,
+        "sign_index": 3,
+        "degree_in_sign": 4.48706,
+        "is_retrograde": false,
+        "speed": 0.433833
+      },
+      "Mercury": {
+        "longitude": 339.458366,
+        "sign_index": 11,
+        "degree_in_sign": 9.458366,
+        "is_retrograde": false,
+        "speed": 0.662976
+      },
+      "Jupiter": {
+        "longitude": 308.603719,
+        "sign_index": 10,
+        "degree_in_sign": 8.603719,
+        "is_retrograde": false,
+        "speed": 0.179138
+      },
+      "Venus": {
+        "longitude": 325.594748,
+        "sign_index": 10,
+        "degree_in_sign": 25.594748,
+        "is_retrograde": false,
+        "speed": 1.166392
+      },
+      "Saturn": {
+        "longitude": 210.504436,
+        "sign_index": 7,
+        "degree_in_sign": 0.504436,
+        "is_retrograde": true,
+        "speed": -0.064242
+      },
+      "Rahu": {
+        "longitude": 149.72693,
+        "sign_index": 4,
+        "degree_in_sign": 29.72693,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 329.72693,
+        "sign_index": 10,
+        "degree_in_sign": 29.72693,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

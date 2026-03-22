@@ -1,0 +1,108 @@
+{
+  "adb_id": 47846,
+  "name": "Chapman, Sydney",
+  "given_name": "Sydney Chapman",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2428093.059028,
+    "year": 1935,
+    "month": 10,
+    "day": 17,
+    "calendar": "g",
+    "time": "13:25",
+    "time_type": "s",
+    "hour": 13.416667,
+    "time_unknown": false,
+    "place": "Macclesfield",
+    "country": "England",
+    "lat": 53.266667,
+    "lon": -2.116667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapman,_Sydney",
+  "source_notes": "Pulsar collection quotes him, \"with my very best wishes.\"\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.572164,
+    "lagna": 232.572164,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.960306,
+    "jd_ut": 2428093.059028,
+    "planets": {
+      "Sun": {
+        "longitude": 180.277466,
+        "sign_index": 6,
+        "degree_in_sign": 0.277466,
+        "is_retrograde": false,
+        "speed": 0.992441
+      },
+      "Moon": {
+        "longitude": 70.449186,
+        "sign_index": 2,
+        "degree_in_sign": 10.449186,
+        "is_retrograde": false,
+        "speed": 15.257083
+      },
+      "Mars": {
+        "longitude": 238.807038,
+        "sign_index": 7,
+        "degree_in_sign": 28.807038,
+        "is_retrograde": false,
+        "speed": 0.72651
+      },
+      "Mercury": {
+        "longitude": 181.771868,
+        "sign_index": 6,
+        "degree_in_sign": 1.771868,
+        "is_retrograde": true,
+        "speed": -1.231652
+      },
+      "Jupiter": {
+        "longitude": 212.2397,
+        "sign_index": 7,
+        "degree_in_sign": 2.2397,
+        "is_retrograde": false,
+        "speed": 0.20385
+      },
+      "Venus": {
+        "longitude": 139.121087,
+        "sign_index": 4,
+        "degree_in_sign": 19.121087,
+        "is_retrograde": false,
+        "speed": 0.567356
+      },
+      "Saturn": {
+        "longitude": 310.931474,
+        "sign_index": 10,
+        "degree_in_sign": 10.931474,
+        "is_retrograde": true,
+        "speed": -0.03565
+      },
+      "Rahu": {
+        "longitude": 263.95369,
+        "sign_index": 8,
+        "degree_in_sign": 23.95369,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 83.95369,
+        "sign_index": 2,
+        "degree_in_sign": 23.95369,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

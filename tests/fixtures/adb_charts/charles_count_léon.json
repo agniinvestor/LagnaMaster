@@ -1,0 +1,109 @@
+{
+  "adb_id": 62215,
+  "name": "Charles, Count Léon",
+  "given_name": "Count Léon Charles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2381033.576852,
+    "year": 1806,
+    "month": 12,
+    "day": 13,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles,_Count_Léon",
+  "source_notes": "Sy Scholfield quotes from a copy of the birth record and a biography: Translation of extract from birth register in \"The Atheneum, Or, Spirit of the English Magazines, Vol. 2,\" Oct. 1817-Apr. 1818, p. 95: \"Leon, a male, born on the 13th of the said month [December 1806], at two o'clock in the morning, in the Rue de la Victoire, the son of Mademoiselle Eleonore Denuel, aged twenty years, born in Paris, and of a father who is absent.\" Same data in \"Napoleon's love child: a biography of Count Leon\" by Dennis Walton Dodds (Kimber, 1974), p. 25: \"Leon was born at two o'clock in the morning of December 13, 1806, with the aid of the distinguished accoucheur Pierre Marchais, of 29 Rue des Fosses Saint Germain l'Auxerrois, and the Medical Director of the Invalides, Guillaume Andral, Member of the Academy.\"\\n\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Parenting : Kids more than 3"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 2.996043,
+    "lagna": 152.996043,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.161548,
+    "jd_ut": 2381033.576852,
+    "planets": {
+      "Sun": {
+        "longitude": 239.277294,
+        "sign_index": 7,
+        "degree_in_sign": 29.277294,
+        "is_retrograde": false,
+        "speed": 1.017859
+      },
+      "Moon": {
+        "longitude": 273.349006,
+        "sign_index": 9,
+        "degree_in_sign": 3.349006,
+        "is_retrograde": false,
+        "speed": 15.695639
+      },
+      "Mars": {
+        "longitude": 142.480186,
+        "sign_index": 4,
+        "degree_in_sign": 22.480186,
+        "is_retrograde": false,
+        "speed": 0.370285
+      },
+      "Mercury": {
+        "longitude": 254.294626,
+        "sign_index": 8,
+        "degree_in_sign": 14.294626,
+        "is_retrograde": true,
+        "speed": -0.37771
+      },
+      "Jupiter": {
+        "longitude": 262.122554,
+        "sign_index": 8,
+        "degree_in_sign": 22.122554,
+        "is_retrograde": false,
+        "speed": 0.223925
+      },
+      "Venus": {
+        "longitude": 235.456881,
+        "sign_index": 7,
+        "degree_in_sign": 25.456881,
+        "is_retrograde": false,
+        "speed": 1.258846
+      },
+      "Saturn": {
+        "longitude": 195.644392,
+        "sign_index": 6,
+        "degree_in_sign": 15.644392,
+        "is_retrograde": false,
+        "speed": 0.098359
+      },
+      "Rahu": {
+        "longitude": 237.736129,
+        "sign_index": 7,
+        "degree_in_sign": 27.736129,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 57.736129,
+        "sign_index": 1,
+        "degree_in_sign": 27.736129,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

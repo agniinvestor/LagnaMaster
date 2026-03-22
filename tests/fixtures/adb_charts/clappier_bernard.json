@@ -1,0 +1,108 @@
+{
+  "adb_id": 65012,
+  "name": "Clappier, Bernard",
+  "given_name": "Bernard Clappier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420080.854167,
+    "year": 1913,
+    "month": 11,
+    "day": 9,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Limoges",
+    "country": "France",
+    "lat": 45.833333,
+    "lon": 1.266667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clappier,_Bernard",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 171.\\n",
+  "categories": [
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 19.813379,
+    "lagna": 199.813379,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.653983,
+    "jd_ut": 2420080.854167,
+    "planets": {
+      "Sun": {
+        "longitude": 203.693626,
+        "sign_index": 6,
+        "degree_in_sign": 23.693626,
+        "is_retrograde": false,
+        "speed": 1.004775
+      },
+      "Moon": {
+        "longitude": 332.428371,
+        "sign_index": 11,
+        "degree_in_sign": 2.428371,
+        "is_retrograde": false,
+        "speed": 15.252324
+      },
+      "Mars": {
+        "longitude": 89.958491,
+        "sign_index": 2,
+        "degree_in_sign": 29.958491,
+        "is_retrograde": false,
+        "speed": 0.211992
+      },
+      "Mercury": {
+        "longitude": 225.37146,
+        "sign_index": 7,
+        "degree_in_sign": 15.37146,
+        "is_retrograde": false,
+        "speed": 0.451133
+      },
+      "Jupiter": {
+        "longitude": 261.567781,
+        "sign_index": 8,
+        "degree_in_sign": 21.567781,
+        "is_retrograde": false,
+        "speed": 0.172738
+      },
+      "Venus": {
+        "longitude": 181.036691,
+        "sign_index": 6,
+        "degree_in_sign": 1.036691,
+        "is_retrograde": false,
+        "speed": 1.245892
+      },
+      "Saturn": {
+        "longitude": 54.162094,
+        "sign_index": 1,
+        "degree_in_sign": 24.162094,
+        "is_retrograde": true,
+        "speed": -0.064719
+      },
+      "Rahu": {
+        "longitude": 328.537125,
+        "sign_index": 10,
+        "degree_in_sign": 28.537125,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 148.537125,
+        "sign_index": 4,
+        "degree_in_sign": 28.537125,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

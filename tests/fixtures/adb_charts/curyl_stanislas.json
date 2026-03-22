@@ -1,0 +1,108 @@
+{
+  "adb_id": 52867,
+  "name": "Curyl, Stanislas",
+  "given_name": "Stanislas Curyl",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425725.916667,
+    "year": 1929,
+    "month": 4,
+    "day": 24,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "d",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Wittelsheim",
+    "country": "France",
+    "lat": 47.816667,
+    "lon": 7.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curyl,_Stanislas",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/1285\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.948092,
+    "lagna": 74.948092,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.869803,
+    "jd_ut": 2425725.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 10.862404,
+        "sign_index": 0,
+        "degree_in_sign": 10.862404,
+        "is_retrograde": false,
+        "speed": 0.973341
+      },
+      "Moon": {
+        "longitude": 196.568825,
+        "sign_index": 6,
+        "degree_in_sign": 16.568825,
+        "is_retrograde": false,
+        "speed": 15.291196
+      },
+      "Mars": {
+        "longitude": 87.248613,
+        "sign_index": 2,
+        "degree_in_sign": 27.248613,
+        "is_retrograde": false,
+        "speed": 0.512628
+      },
+      "Mercury": {
+        "longitude": 18.606783,
+        "sign_index": 0,
+        "degree_in_sign": 18.606783,
+        "is_retrograde": false,
+        "speed": 2.104634
+      },
+      "Jupiter": {
+        "longitude": 25.613949,
+        "sign_index": 0,
+        "degree_in_sign": 25.613949,
+        "is_retrograde": false,
+        "speed": 0.233519
+      },
+      "Venus": {
+        "longitude": 4.443886,
+        "sign_index": 0,
+        "degree_in_sign": 4.443886,
+        "is_retrograde": true,
+        "speed": -0.597599
+      },
+      "Saturn": {
+        "longitude": 247.476235,
+        "sign_index": 8,
+        "degree_in_sign": 7.476235,
+        "is_retrograde": true,
+        "speed": -0.023741
+      },
+      "Rahu": {
+        "longitude": 29.393478,
+        "sign_index": 0,
+        "degree_in_sign": 29.393478,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 209.393478,
+        "sign_index": 6,
+        "degree_in_sign": 29.393478,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

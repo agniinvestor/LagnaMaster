@@ -1,0 +1,111 @@
+{
+  "adb_id": 62800,
+  "name": "Ciment, Michel",
+  "given_name": "Michel Ciment",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429044.5,
+    "year": 1938,
+    "month": 5,
+    "day": 26,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "d",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ciment,_Michel",
+  "source_notes": "Didier Geslain archive.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Publisher/ Editor",
+    "Notable : Awards : Public Service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 26.033506,
+    "lagna": 266.033506,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.996684,
+    "jd_ut": 2429044.5,
+    "planets": {
+      "Sun": {
+        "longitude": 41.090307,
+        "sign_index": 1,
+        "degree_in_sign": 11.090307,
+        "is_retrograde": false,
+        "speed": 0.960369
+      },
+      "Moon": {
+        "longitude": 353.076058,
+        "sign_index": 11,
+        "degree_in_sign": 23.076058,
+        "is_retrograde": false,
+        "speed": 16.119506
+      },
+      "Mars": {
+        "longitude": 58.944956,
+        "sign_index": 1,
+        "degree_in_sign": 28.944956,
+        "is_retrograde": false,
+        "speed": 0.671106
+      },
+      "Mercury": {
+        "longitude": 16.716567,
+        "sign_index": 0,
+        "degree_in_sign": 16.716567,
+        "is_retrograde": false,
+        "speed": 1.275616
+      },
+      "Jupiter": {
+        "longitude": 308.139783,
+        "sign_index": 10,
+        "degree_in_sign": 8.139783,
+        "is_retrograde": false,
+        "speed": 0.081711
+      },
+      "Venus": {
+        "longitude": 68.613271,
+        "sign_index": 2,
+        "degree_in_sign": 8.613271,
+        "is_retrograde": false,
+        "speed": 1.207025
+      },
+      "Saturn": {
+        "longitude": 351.614891,
+        "sign_index": 11,
+        "degree_in_sign": 21.614891,
+        "is_retrograde": false,
+        "speed": 0.095725
+      },
+      "Rahu": {
+        "longitude": 213.534862,
+        "sign_index": 7,
+        "degree_in_sign": 3.534862,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 33.534862,
+        "sign_index": 1,
+        "degree_in_sign": 3.534862,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

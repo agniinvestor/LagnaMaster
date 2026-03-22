@@ -1,0 +1,108 @@
+{
+  "adb_id": 72535,
+  "name": "Cantu, Federico",
+  "given_name": "Federico Cantu",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417637.892361,
+    "year": 1907,
+    "month": 3,
+    "day": 3,
+    "calendar": "g",
+    "time": "02:45",
+    "time_type": "l",
+    "hour": 2.75,
+    "time_unknown": false,
+    "place": "Cadereyta Jiménez",
+    "country": "Mexico",
+    "lat": 25.6,
+    "lon": -100.0
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantu,_Federico",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 23.541592,
+    "lagna": 233.541592,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.56059,
+    "jd_ut": 2417637.892361,
+    "planets": {
+      "Sun": {
+        "longitude": 319.103807,
+        "sign_index": 10,
+        "degree_in_sign": 19.103807,
+        "is_retrograde": false,
+        "speed": 1.002156
+      },
+      "Moon": {
+        "longitude": 177.866522,
+        "sign_index": 5,
+        "degree_in_sign": 27.866522,
+        "is_retrograde": false,
+        "speed": 8.692964
+      },
+      "Mars": {
+        "longitude": 232.209696,
+        "sign_index": 7,
+        "degree_in_sign": 22.209696,
+        "is_retrograde": false,
+        "speed": 0.54979
+      },
+      "Mercury": {
+        "longitude": 337.070263,
+        "sign_index": 11,
+        "degree_in_sign": 7.070263,
+        "is_retrograde": false,
+        "speed": 0.814921
+      },
+      "Jupiter": {
+        "longitude": 68.491744,
+        "sign_index": 2,
+        "degree_in_sign": 8.491744,
+        "is_retrograde": false,
+        "speed": 0.017983
+      },
+      "Venus": {
+        "longitude": 273.578657,
+        "sign_index": 9,
+        "degree_in_sign": 3.578657,
+        "is_retrograde": false,
+        "speed": 1.107975
+      },
+      "Saturn": {
+        "longitude": 324.371636,
+        "sign_index": 10,
+        "degree_in_sign": 24.371636,
+        "is_retrograde": false,
+        "speed": 0.122718
+      },
+      "Rahu": {
+        "longitude": 97.9948,
+        "sign_index": 3,
+        "degree_in_sign": 7.9948,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 277.9948,
+        "sign_index": 9,
+        "degree_in_sign": 7.9948,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

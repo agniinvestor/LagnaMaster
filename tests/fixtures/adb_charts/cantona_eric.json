@@ -1,0 +1,117 @@
+{
+  "adb_id": 36990,
+  "name": "Cantona, Eric",
+  "given_name": "Eric Cantona",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439269.479167,
+    "year": 1966,
+    "month": 5,
+    "day": 24,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantona,_Eric",
+  "source_notes": "Petitallot quotes B.C., Cadran No.17, 3/1995\\n",
+  "categories": [
+    "Traits : Personality : Temper",
+    "Family : Childhood : Sibling circumstances",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Lifestyle : Social Life : Hobbies, games",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Notable : Awards : Sports Championship",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 21.88106,
+    "lagna": 261.88106,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.387653,
+    "jd_ut": 2439269.479167,
+    "planets": {
+      "Sun": {
+        "longitude": 38.979588,
+        "sign_index": 1,
+        "degree_in_sign": 8.979588,
+        "is_retrograde": false,
+        "speed": 0.961245
+      },
+      "Moon": {
+        "longitude": 83.816328,
+        "sign_index": 2,
+        "degree_in_sign": 23.816328,
+        "is_retrograde": false,
+        "speed": 16.998547
+      },
+      "Mars": {
+        "longitude": 33.083342,
+        "sign_index": 1,
+        "degree_in_sign": 3.083342,
+        "is_retrograde": false,
+        "speed": 0.717032
+      },
+      "Mercury": {
+        "longitude": 34.945636,
+        "sign_index": 1,
+        "degree_in_sign": 4.945636,
+        "is_retrograde": false,
+        "speed": 2.163112
+      },
+      "Jupiter": {
+        "longitude": 70.301928,
+        "sign_index": 2,
+        "degree_in_sign": 10.301928,
+        "is_retrograde": false,
+        "speed": 0.2096
+      },
+      "Venus": {
+        "longitude": 357.714765,
+        "sign_index": 11,
+        "degree_in_sign": 27.714765,
+        "is_retrograde": false,
+        "speed": 1.139979
+      },
+      "Saturn": {
+        "longitude": 334.40618,
+        "sign_index": 11,
+        "degree_in_sign": 4.40618,
+        "is_retrograde": false,
+        "speed": 0.074621
+      },
+      "Rahu": {
+        "longitude": 31.692175,
+        "sign_index": 1,
+        "degree_in_sign": 1.692175,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 211.692175,
+        "sign_index": 7,
+        "degree_in_sign": 1.692175,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

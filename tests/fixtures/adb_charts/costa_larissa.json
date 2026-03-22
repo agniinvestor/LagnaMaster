@@ -1,0 +1,111 @@
+{
+  "adb_id": 101176,
+  "name": "Costa, Larissa",
+  "given_name": "Larissa Costa",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445769.618056,
+    "year": 1984,
+    "month": 3,
+    "day": 9,
+    "calendar": "g",
+    "time": "23:50",
+    "time_type": "s",
+    "hour": 23.833333,
+    "time_unknown": false,
+    "place": "Natal (Rio Grande do Norte)",
+    "country": "Brazil",
+    "lat": -5.795,
+    "lon": -35.209444
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costa,_Larissa",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Traits : Body : Size",
+    "Vocation : Beauty : Beauty Queen/ King",
+    "Vocation : Beauty : Model"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 10.692868,
+    "lagna": 220.692868,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.636222,
+    "jd_ut": 2445769.618056,
+    "planets": {
+      "Sun": {
+        "longitude": 326.095735,
+        "sign_index": 10,
+        "degree_in_sign": 26.095735,
+        "is_retrograde": false,
+        "speed": 0.998914
+      },
+      "Moon": {
+        "longitude": 47.355777,
+        "sign_index": 1,
+        "degree_in_sign": 17.355777,
+        "is_retrograde": false,
+        "speed": 14.147733
+      },
+      "Mars": {
+        "longitude": 210.943511,
+        "sign_index": 7,
+        "degree_in_sign": 0.943511,
+        "is_retrograde": false,
+        "speed": 0.263958
+      },
+      "Mercury": {
+        "longitude": 327.38935,
+        "sign_index": 10,
+        "degree_in_sign": 27.38935,
+        "is_retrograde": false,
+        "speed": 1.941379
+      },
+      "Jupiter": {
+        "longitude": 255.56741,
+        "sign_index": 8,
+        "degree_in_sign": 15.56741,
+        "is_retrograde": false,
+        "speed": 0.139532
+      },
+      "Venus": {
+        "longitude": 300.931566,
+        "sign_index": 10,
+        "degree_in_sign": 0.931566,
+        "is_retrograde": false,
+        "speed": 1.233907
+      },
+      "Saturn": {
+        "longitude": 202.571722,
+        "sign_index": 6,
+        "degree_in_sign": 22.571722,
+        "is_retrograde": true,
+        "speed": -0.024619
+      },
+      "Rahu": {
+        "longitude": 47.236578,
+        "sign_index": 1,
+        "degree_in_sign": 17.236578,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 227.236578,
+        "sign_index": 7,
+        "degree_in_sign": 17.236578,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

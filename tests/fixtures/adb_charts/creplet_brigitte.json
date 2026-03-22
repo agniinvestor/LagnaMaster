@@ -1,0 +1,108 @@
+{
+  "adb_id": 50872,
+  "name": "Creplet, Brigitte",
+  "given_name": "Brigitte Creplet",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438195.979167,
+    "year": 1963,
+    "month": 6,
+    "day": 15,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Uccle",
+    "country": "Belgium",
+    "lat": 50.8,
+    "lon": 4.316667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Creplet,_Brigitte",
+  "source_notes": "Lescaut quotes birth record\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.087673,
+    "lagna": 126.087673,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.346604,
+    "jd_ut": 2438195.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 60.309698,
+        "sign_index": 2,
+        "degree_in_sign": 0.309698,
+        "is_retrograde": false,
+        "speed": 0.955068
+      },
+      "Moon": {
+        "longitude": 337.392185,
+        "sign_index": 11,
+        "degree_in_sign": 7.392185,
+        "is_retrograde": false,
+        "speed": 13.435212
+      },
+      "Mars": {
+        "longitude": 132.942285,
+        "sign_index": 4,
+        "degree_in_sign": 12.942285,
+        "is_retrograde": false,
+        "speed": 0.528969
+      },
+      "Mercury": {
+        "longitude": 37.195061,
+        "sign_index": 1,
+        "degree_in_sign": 7.195061,
+        "is_retrograde": false,
+        "speed": 1.075174
+      },
+      "Jupiter": {
+        "longitude": 351.571506,
+        "sign_index": 11,
+        "degree_in_sign": 21.571506,
+        "is_retrograde": false,
+        "speed": 0.153579
+      },
+      "Venus": {
+        "longitude": 39.873776,
+        "sign_index": 1,
+        "degree_in_sign": 9.873776,
+        "is_retrograde": false,
+        "speed": 1.214743
+      },
+      "Saturn": {
+        "longitude": 299.651196,
+        "sign_index": 9,
+        "degree_in_sign": 29.651196,
+        "is_retrograde": true,
+        "speed": -0.019442
+      },
+      "Rahu": {
+        "longitude": 88.579136,
+        "sign_index": 2,
+        "degree_in_sign": 28.579136,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 268.579136,
+        "sign_index": 8,
+        "degree_in_sign": 28.579136,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

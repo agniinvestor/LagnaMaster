@@ -1,0 +1,112 @@
+{
+  "adb_id": 45704,
+  "name": "Currie, Finlay",
+  "given_name": "Finlay Currie",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407004.666667,
+    "year": 1878,
+    "month": 1,
+    "day": 20,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Edinburgh",
+    "country": "Scotland",
+    "lat": 55.95,
+    "lon": -3.216667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Currie,_Finlay",
+  "source_notes": "Frank C. Clifford quotes Caroline Gerard from B.C., British Entertainers, 1997.\\n",
+  "categories": [
+    "Lifestyle : Work : Same Job more than 10 yrs",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : Night Club/ Vaudeville"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.603701,
+    "lagna": 192.603701,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.154117,
+    "jd_ut": 2407004.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 277.867552,
+        "sign_index": 9,
+        "degree_in_sign": 7.867552,
+        "is_retrograde": false,
+        "speed": 1.017142
+      },
+      "Moon": {
+        "longitude": 113.7746,
+        "sign_index": 3,
+        "degree_in_sign": 23.7746,
+        "is_retrograde": false,
+        "speed": 12.53235
+      },
+      "Mars": {
+        "longitude": 1.305996,
+        "sign_index": 0,
+        "degree_in_sign": 1.305996,
+        "is_retrograde": false,
+        "speed": 0.607779
+      },
+      "Mercury": {
+        "longitude": 259.918106,
+        "sign_index": 8,
+        "degree_in_sign": 19.918106,
+        "is_retrograde": true,
+        "speed": -0.299701
+      },
+      "Jupiter": {
+        "longitude": 266.421293,
+        "sign_index": 8,
+        "degree_in_sign": 26.421293,
+        "is_retrograde": false,
+        "speed": 0.230768
+      },
+      "Venus": {
+        "longitude": 316.019162,
+        "sign_index": 10,
+        "degree_in_sign": 16.019162,
+        "is_retrograde": false,
+        "speed": 0.404419
+      },
+      "Saturn": {
+        "longitude": 324.846664,
+        "sign_index": 10,
+        "degree_in_sign": 24.846664,
+        "is_retrograde": false,
+        "speed": 0.096904
+      },
+      "Rahu": {
+        "longitude": 301.471921,
+        "sign_index": 10,
+        "degree_in_sign": 1.471921,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 121.471921,
+        "sign_index": 4,
+        "degree_in_sign": 1.471921,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

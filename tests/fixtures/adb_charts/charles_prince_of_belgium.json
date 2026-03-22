@@ -1,0 +1,108 @@
+{
+  "adb_id": 47561,
+  "name": "Charles, Prince of Belgium",
+  "given_name": "Prince of Belgium Charles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416398.472222,
+    "year": 1903,
+    "month": 10,
+    "day": 10,
+    "calendar": "g",
+    "time": "23:20",
+    "time_type": "s",
+    "hour": 23.333333,
+    "time_unknown": false,
+    "place": "Brussels",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles,_Prince_of_Belgium",
+  "source_notes": "Luc de Marre quotes B.R.\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 20.261329,
+    "lagna": 80.261329,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.513208,
+    "jd_ut": 2416398.472222,
+    "planets": {
+      "Sun": {
+        "longitude": 173.954149,
+        "sign_index": 5,
+        "degree_in_sign": 23.954149,
+        "is_retrograde": false,
+        "speed": 0.988754
+      },
+      "Moon": {
+        "longitude": 47.356408,
+        "sign_index": 1,
+        "degree_in_sign": 17.356408,
+        "is_retrograde": false,
+        "speed": 11.823964
+      },
+      "Mars": {
+        "longitude": 230.425687,
+        "sign_index": 7,
+        "degree_in_sign": 20.425687,
+        "is_retrograde": false,
+        "speed": 0.717531
+      },
+      "Mercury": {
+        "longitude": 160.62895,
+        "sign_index": 5,
+        "degree_in_sign": 10.62895,
+        "is_retrograde": true,
+        "speed": -0.298662
+      },
+      "Jupiter": {
+        "longitude": 322.36327,
+        "sign_index": 10,
+        "degree_in_sign": 22.36327,
+        "is_retrograde": true,
+        "speed": -0.093803
+      },
+      "Venus": {
+        "longitude": 143.207436,
+        "sign_index": 4,
+        "degree_in_sign": 23.207436,
+        "is_retrograde": false,
+        "speed": 0.070391
+      },
+      "Saturn": {
+        "longitude": 280.180301,
+        "sign_index": 9,
+        "degree_in_sign": 10.180301,
+        "is_retrograde": false,
+        "speed": 0.004382
+      },
+      "Rahu": {
+        "longitude": 163.674281,
+        "sign_index": 5,
+        "degree_in_sign": 13.674281,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 343.674281,
+        "sign_index": 11,
+        "degree_in_sign": 13.674281,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

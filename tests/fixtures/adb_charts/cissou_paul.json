@@ -1,0 +1,109 @@
+{
+  "adb_id": 62906,
+  "name": "Cissou, Paul",
+  "given_name": "Paul Cissou",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429035.708333,
+    "year": 1938,
+    "month": 5,
+    "day": 17,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "d",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cissou,_Paul",
+  "source_notes": "Didier Geslain archive, 'Astrologues' pdf file, p. 59.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 24.827294,
+    "lagna": 24.827294,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.996348,
+    "jd_ut": 2429035.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 32.636068,
+        "sign_index": 1,
+        "degree_in_sign": 2.636068,
+        "is_retrograde": false,
+        "speed": 0.963005
+      },
+      "Moon": {
+        "longitude": 243.707311,
+        "sign_index": 8,
+        "degree_in_sign": 3.707311,
+        "is_retrograde": false,
+        "speed": 9.216873
+      },
+      "Mars": {
+        "longitude": 53.023156,
+        "sign_index": 1,
+        "degree_in_sign": 23.023156,
+        "is_retrograde": false,
+        "speed": 0.676126
+      },
+      "Mercury": {
+        "longitude": 7.382272,
+        "sign_index": 0,
+        "degree_in_sign": 7.382272,
+        "is_retrograde": false,
+        "speed": 0.829936
+      },
+      "Jupiter": {
+        "longitude": 307.31514,
+        "sign_index": 10,
+        "degree_in_sign": 7.31514,
+        "is_retrograde": false,
+        "speed": 0.105519
+      },
+      "Venus": {
+        "longitude": 57.977773,
+        "sign_index": 1,
+        "degree_in_sign": 27.977773,
+        "is_retrograde": false,
+        "speed": 1.212425
+      },
+      "Saturn": {
+        "longitude": 350.736509,
+        "sign_index": 11,
+        "degree_in_sign": 20.736509,
+        "is_retrograde": false,
+        "speed": 0.103872
+      },
+      "Rahu": {
+        "longitude": 214.00075,
+        "sign_index": 7,
+        "degree_in_sign": 4.00075,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 34.00075,
+        "sign_index": 1,
+        "degree_in_sign": 4.00075,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

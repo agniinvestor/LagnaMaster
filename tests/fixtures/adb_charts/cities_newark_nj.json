@@ -1,0 +1,108 @@
+{
+  "adb_id": 27098,
+  "name": "Cities: Newark NJ",
+  "given_name": "Cities: Newark NJ",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2391745.706019,
+    "year": 1836,
+    "month": 4,
+    "day": 11,
+    "calendar": "g",
+    "time": "00:00",
+    "time_type": "l",
+    "hour": 0.0,
+    "time_unknown": false,
+    "place": "Newark",
+    "country": "New Jersey",
+    "lat": 40.733333,
+    "lon": -74.166667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cities:_Newark_NJ",
+  "source_notes": "Dates from legislation.\\n",
+  "categories": [
+    "Mundane : City Population : 200,000-300,000 population"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.582763,
+    "lagna": 224.582763,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.570909,
+    "jd_ut": 2391745.706019,
+    "planets": {
+      "Sun": {
+        "longitude": 359.759341,
+        "sign_index": 11,
+        "degree_in_sign": 29.759341,
+        "is_retrograde": false,
+        "speed": 0.979811
+      },
+      "Moon": {
+        "longitude": 302.749402,
+        "sign_index": 10,
+        "degree_in_sign": 2.749402,
+        "is_retrograde": false,
+        "speed": 15.766643
+      },
+      "Mars": {
+        "longitude": 333.940364,
+        "sign_index": 11,
+        "degree_in_sign": 3.940364,
+        "is_retrograde": false,
+        "speed": 0.777905
+      },
+      "Mercury": {
+        "longitude": 340.554333,
+        "sign_index": 11,
+        "degree_in_sign": 10.554333,
+        "is_retrograde": false,
+        "speed": 1.682401
+      },
+      "Jupiter": {
+        "longitude": 76.805351,
+        "sign_index": 2,
+        "degree_in_sign": 16.805351,
+        "is_retrograde": false,
+        "speed": 0.117593
+      },
+      "Venus": {
+        "longitude": 41.961922,
+        "sign_index": 1,
+        "degree_in_sign": 11.961922,
+        "is_retrograde": false,
+        "speed": 1.128372
+      },
+      "Saturn": {
+        "longitude": 191.212751,
+        "sign_index": 6,
+        "degree_in_sign": 11.212751,
+        "is_retrograde": true,
+        "speed": -0.073843
+      },
+      "Rahu": {
+        "longitude": 30.077026,
+        "sign_index": 1,
+        "degree_in_sign": 0.077026,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 210.077026,
+        "sign_index": 7,
+        "degree_in_sign": 0.077026,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

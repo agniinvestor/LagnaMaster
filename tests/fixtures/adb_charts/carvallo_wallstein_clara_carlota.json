@@ -1,0 +1,108 @@
+{
+  "adb_id": 70747,
+  "name": "Carvallo Wallstein, Clara Carlota",
+  "given_name": "Clara Carlota Carvallo Wallstein",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418483.958333,
+    "year": 1909,
+    "month": 6,
+    "day": 26,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carvallo_Wallstein,_Clara_Carlota",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 11.675213,
+    "lagna": 41.675213,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.592934,
+    "jd_ut": 2418483.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 71.580891,
+        "sign_index": 2,
+        "degree_in_sign": 11.580891,
+        "is_retrograde": false,
+        "speed": 0.953452
+      },
+      "Moon": {
+        "longitude": 168.782613,
+        "sign_index": 5,
+        "degree_in_sign": 18.782613,
+        "is_retrograde": false,
+        "speed": 16.724094
+      },
+      "Mars": {
+        "longitude": 325.842129,
+        "sign_index": 10,
+        "degree_in_sign": 25.842129,
+        "is_retrograde": false,
+        "speed": 0.532212
+      },
+      "Mercury": {
+        "longitude": 56.424753,
+        "sign_index": 1,
+        "degree_in_sign": 26.424753,
+        "is_retrograde": true,
+        "speed": -0.017563
+      },
+      "Jupiter": {
+        "longitude": 136.243038,
+        "sign_index": 4,
+        "degree_in_sign": 16.243038,
+        "is_retrograde": false,
+        "speed": 0.142107
+      },
+      "Venus": {
+        "longitude": 87.344273,
+        "sign_index": 2,
+        "degree_in_sign": 27.344273,
+        "is_retrograde": false,
+        "speed": 1.224002
+      },
+      "Saturn": {
+        "longitude": 359.304567,
+        "sign_index": 11,
+        "degree_in_sign": 29.304567,
+        "is_retrograde": false,
+        "speed": 0.064514
+      },
+      "Rahu": {
+        "longitude": 53.159986,
+        "sign_index": 1,
+        "degree_in_sign": 23.159986,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 233.159986,
+        "sign_index": 7,
+        "degree_in_sign": 23.159986,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

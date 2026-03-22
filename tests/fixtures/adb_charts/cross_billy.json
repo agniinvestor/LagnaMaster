@@ -1,0 +1,110 @@
+{
+  "adb_id": 83001,
+  "name": "Cross, Billy",
+  "given_name": "Billy Cross",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425735.611111,
+    "year": 1929,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "20:40",
+    "time_type": "s",
+    "hour": 20.666667,
+    "time_unknown": false,
+    "place": "Lake Brownwood",
+    "country": "Texas",
+    "lat": 31.833333,
+    "lon": -99.0
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cross,_Billy",
+  "source_notes": "Birth certificate provided by Sy Scholfield (Billie Jarrel Cross). Birth place of Fry is near Lake Brownwood, Texas.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Sports : Football",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 15.5282,
+    "lagna": 195.5282,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.870173,
+    "jd_ut": 2425735.611111,
+    "planets": {
+      "Sun": {
+        "longitude": 20.276897,
+        "sign_index": 0,
+        "degree_in_sign": 20.276897,
+        "is_retrograde": false,
+        "speed": 0.969084
+      },
+      "Moon": {
+        "longitude": 313.860559,
+        "sign_index": 10,
+        "degree_in_sign": 13.860559,
+        "is_retrograde": false,
+        "speed": 17.24644
+      },
+      "Mars": {
+        "longitude": 92.303299,
+        "sign_index": 3,
+        "degree_in_sign": 2.303299,
+        "is_retrograde": false,
+        "speed": 0.529805
+      },
+      "Mercury": {
+        "longitude": 37.501805,
+        "sign_index": 1,
+        "degree_in_sign": 7.501805,
+        "is_retrograde": false,
+        "speed": 1.727297
+      },
+      "Jupiter": {
+        "longitude": 27.892053,
+        "sign_index": 0,
+        "degree_in_sign": 27.892053,
+        "is_retrograde": false,
+        "speed": 0.236175
+      },
+      "Venus": {
+        "longitude": 359.909331,
+        "sign_index": 11,
+        "degree_in_sign": 29.909331,
+        "is_retrograde": true,
+        "speed": -0.301135
+      },
+      "Saturn": {
+        "longitude": 247.17538,
+        "sign_index": 8,
+        "degree_in_sign": 7.17538,
+        "is_retrograde": true,
+        "speed": -0.038121
+      },
+      "Rahu": {
+        "longitude": 28.879749,
+        "sign_index": 0,
+        "degree_in_sign": 28.879749,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 208.879749,
+        "sign_index": 6,
+        "degree_in_sign": 28.879749,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

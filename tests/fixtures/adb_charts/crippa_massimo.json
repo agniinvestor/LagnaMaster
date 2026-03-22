@@ -1,0 +1,109 @@
+{
+  "adb_id": 102140,
+  "name": "Crippa, Massimo",
+  "given_name": "Massimo Crippa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438897.5,
+    "year": 1965,
+    "month": 5,
+    "day": 17,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Seregno",
+    "country": "Italy",
+    "lat": 45.65,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crippa,_Massimo",
+  "source_notes": "Quoted BC from Bordoni database.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 26.389682,
+    "lagna": 266.389682,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.373429,
+    "jd_ut": 2438897.5,
+    "planets": {
+      "Sun": {
+        "longitude": 32.507688,
+        "sign_index": 1,
+        "degree_in_sign": 2.507688,
+        "is_retrograde": false,
+        "speed": 0.963092
+      },
+      "Moon": {
+        "longitude": 229.968448,
+        "sign_index": 7,
+        "degree_in_sign": 19.968448,
+        "is_retrograde": false,
+        "speed": 8.367325
+      },
+      "Mars": {
+        "longitude": 139.349284,
+        "sign_index": 4,
+        "degree_in_sign": 19.349284,
+        "is_retrograde": false,
+        "speed": 0.273559
+      },
+      "Mercury": {
+        "longitude": 8.653168,
+        "sign_index": 0,
+        "degree_in_sign": 8.653168,
+        "is_retrograde": false,
+        "speed": 1.427343
+      },
+      "Jupiter": {
+        "longitude": 42.186787,
+        "sign_index": 1,
+        "degree_in_sign": 12.186787,
+        "is_retrograde": false,
+        "speed": 0.232307
+      },
+      "Venus": {
+        "longitude": 41.646476,
+        "sign_index": 1,
+        "degree_in_sign": 11.646476,
+        "is_retrograde": false,
+        "speed": 1.229244
+      },
+      "Saturn": {
+        "longitude": 322.416248,
+        "sign_index": 10,
+        "degree_in_sign": 22.416248,
+        "is_retrograde": false,
+        "speed": 0.065701
+      },
+      "Rahu": {
+        "longitude": 51.404112,
+        "sign_index": 1,
+        "degree_in_sign": 21.404112,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 231.404112,
+        "sign_index": 7,
+        "degree_in_sign": 21.404112,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

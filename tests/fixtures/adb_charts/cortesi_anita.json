@@ -1,0 +1,110 @@
+{
+  "adb_id": 57940,
+  "name": "Cortesi, Anita",
+  "given_name": "Anita Cortesi",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2435382.197917,
+    "year": 1955,
+    "month": 10,
+    "day": 1,
+    "calendar": "g",
+    "time": "17:45",
+    "time_type": "s",
+    "hour": 17.75,
+    "time_unknown": false,
+    "place": "Zürich",
+    "country": "Switzerland",
+    "lat": 47.383333,
+    "lon": 8.533333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortesi,_Anita",
+  "source_notes": "herself on her website, quoted by Rolf Liefeld in Astrowiki\\n",
+  "categories": [
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 12.3321,
+    "lagna": 312.3321,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.239011,
+    "jd_ut": 2435382.197917,
+    "planets": {
+      "Sun": {
+        "longitude": 164.484802,
+        "sign_index": 5,
+        "degree_in_sign": 14.484802,
+        "is_retrograde": false,
+        "speed": 0.983042
+      },
+      "Moon": {
+        "longitude": 343.431091,
+        "sign_index": 11,
+        "degree_in_sign": 13.431091,
+        "is_retrograde": false,
+        "speed": 14.473605
+      },
+      "Mars": {
+        "longitude": 149.228922,
+        "sign_index": 4,
+        "degree_in_sign": 29.228922,
+        "is_retrograde": false,
+        "speed": 0.638419
+      },
+      "Mercury": {
+        "longitude": 185.391432,
+        "sign_index": 6,
+        "degree_in_sign": 5.391432,
+        "is_retrograde": true,
+        "speed": -0.013381
+      },
+      "Jupiter": {
+        "longitude": 120.037754,
+        "sign_index": 4,
+        "degree_in_sign": 0.037754,
+        "is_retrograde": false,
+        "speed": 0.18458
+      },
+      "Venus": {
+        "longitude": 172.636581,
+        "sign_index": 5,
+        "degree_in_sign": 22.636581,
+        "is_retrograde": false,
+        "speed": 1.245731
+      },
+      "Saturn": {
+        "longitude": 205.347104,
+        "sign_index": 6,
+        "degree_in_sign": 25.347104,
+        "is_retrograde": false,
+        "speed": 0.099532
+      },
+      "Rahu": {
+        "longitude": 237.687175,
+        "sign_index": 7,
+        "degree_in_sign": 27.687175,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 57.687175,
+        "sign_index": 1,
+        "degree_in_sign": 27.687175,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

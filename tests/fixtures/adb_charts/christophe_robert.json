@@ -1,0 +1,109 @@
+{
+  "adb_id": 52158,
+  "name": "Christophe, Robert",
+  "given_name": "Robert Christophe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428951.541667,
+    "year": 1938,
+    "month": 2,
+    "day": 22,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christophe,_Robert",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/1762\\n",
+  "categories": [
+    "Vocation : Sports : Swimming",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 16.848505,
+    "lagna": 196.848505,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.99313,
+    "jd_ut": 2428951.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 309.759258,
+        "sign_index": 10,
+        "degree_in_sign": 9.759258,
+        "is_retrograde": false,
+        "speed": 1.006951
+      },
+      "Moon": {
+        "longitude": 218.951165,
+        "sign_index": 7,
+        "degree_in_sign": 8.951165,
+        "is_retrograde": false,
+        "speed": 10.657348
+      },
+      "Mars": {
+        "longitude": 353.686052,
+        "sign_index": 11,
+        "degree_in_sign": 23.686052,
+        "is_retrograde": false,
+        "speed": 0.734217
+      },
+      "Mercury": {
+        "longitude": 298.261266,
+        "sign_index": 9,
+        "degree_in_sign": 28.261266,
+        "is_retrograde": false,
+        "speed": 1.678011
+      },
+      "Jupiter": {
+        "longitude": 291.862711,
+        "sign_index": 9,
+        "degree_in_sign": 21.862711,
+        "is_retrograde": false,
+        "speed": 0.232032
+      },
+      "Venus": {
+        "longitude": 314.095373,
+        "sign_index": 10,
+        "degree_in_sign": 14.095373,
+        "is_retrograde": false,
+        "speed": 1.25111
+      },
+      "Saturn": {
+        "longitude": 340.687867,
+        "sign_index": 11,
+        "degree_in_sign": 10.687867,
+        "is_retrograde": false,
+        "speed": 0.113329
+      },
+      "Rahu": {
+        "longitude": 218.460916,
+        "sign_index": 7,
+        "degree_in_sign": 8.460916,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 38.460916,
+        "sign_index": 1,
+        "degree_in_sign": 8.460916,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

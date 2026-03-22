@@ -1,0 +1,110 @@
+{
+  "adb_id": 103475,
+  "name": "Carvalho, Viegas de",
+  "given_name": "Viegas de Carvalho",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2445996.524306,
+    "year": 1984,
+    "month": 10,
+    "day": 22,
+    "calendar": "g",
+    "time": "21:35",
+    "time_type": "s",
+    "hour": 21.583333,
+    "time_unknown": false,
+    "place": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5525,
+    "lon": -46.624722
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carvalho,_Viegas_de",
+  "source_notes": "Sy Scholfield found his natal chart displayed on the BBB18 section of the Globo website. The chart has about 14 degrees Gemini rising (without giving the degrees or a time of birth. However, this calculates to a birth time near enough to 9:35 PM). [https://gshow.globo.com/realities/bbb/BBB18/noticia/mapa-astral-de-viegas-do-bbb18-sugere-mente-privilegiada-e-sensibilidade.ghtml]. \\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 27.334634,
+    "lagna": 27.334634,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.6449,
+    "jd_ut": 2445996.524306,
+    "planets": {
+      "Sun": {
+        "longitude": 186.144605,
+        "sign_index": 6,
+        "degree_in_sign": 6.144605,
+        "is_retrograde": false,
+        "speed": 0.996152
+      },
+      "Moon": {
+        "longitude": 164.81968,
+        "sign_index": 5,
+        "degree_in_sign": 14.81968,
+        "is_retrograde": false,
+        "speed": 20.05584
+      },
+      "Mars": {
+        "longitude": 258.896065,
+        "sign_index": 8,
+        "degree_in_sign": 18.896065,
+        "is_retrograde": false,
+        "speed": 0.720607
+      },
+      "Mercury": {
+        "longitude": 194.255004,
+        "sign_index": 6,
+        "degree_in_sign": 14.255004,
+        "is_retrograde": false,
+        "speed": 1.587749
+      },
+      "Jupiter": {
+        "longitude": 253.779019,
+        "sign_index": 8,
+        "degree_in_sign": 13.779019,
+        "is_retrograde": false,
+        "speed": 0.148634
+      },
+      "Venus": {
+        "longitude": 219.747874,
+        "sign_index": 7,
+        "degree_in_sign": 9.747874,
+        "is_retrograde": false,
+        "speed": 1.216421
+      },
+      "Saturn": {
+        "longitude": 203.144755,
+        "sign_index": 6,
+        "degree_in_sign": 23.144755,
+        "is_retrograde": false,
+        "speed": 0.116268
+      },
+      "Rahu": {
+        "longitude": 35.212355,
+        "sign_index": 1,
+        "degree_in_sign": 5.212355,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 215.212355,
+        "sign_index": 7,
+        "degree_in_sign": 5.212355,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 83941,
+  "name": "Calvert, Robert A.",
+  "given_name": "Robert A. Calvert",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427363.75,
+    "year": 1933,
+    "month": 10,
+    "day": 18,
+    "calendar": "g",
+    "time": "00:00",
+    "time_type": "s",
+    "hour": 0.0,
+    "time_unknown": false,
+    "place": "Stephenville",
+    "country": "Texas",
+    "lat": 32.216667,
+    "lon": -98.2
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvert,_Robert_A.",
+  "source_notes": "Sy Scholfield provided birth certificate stating \"12 AM\" as time of birth. \\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Education : Teacher",
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 13.522952,
+    "lagna": 73.522952,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.932422,
+    "jd_ut": 2427363.75,
+    "planets": {
+      "Sun": {
+        "longitude": 181.475192,
+        "sign_index": 6,
+        "degree_in_sign": 1.475192,
+        "is_retrograde": false,
+        "speed": 0.993708
+      },
+      "Moon": {
+        "longitude": 168.759133,
+        "sign_index": 5,
+        "degree_in_sign": 18.759133,
+        "is_retrograde": false,
+        "speed": 18.465965
+      },
+      "Mars": {
+        "longitude": 223.342504,
+        "sign_index": 7,
+        "degree_in_sign": 13.342504,
+        "is_retrograde": false,
+        "speed": 0.721662
+      },
+      "Mercury": {
+        "longitude": 203.410894,
+        "sign_index": 6,
+        "degree_in_sign": 23.410894,
+        "is_retrograde": false,
+        "speed": 1.311005
+      },
+      "Jupiter": {
+        "longitude": 165.247951,
+        "sign_index": 5,
+        "degree_in_sign": 15.247951,
+        "is_retrograde": false,
+        "speed": 0.212119
+      },
+      "Venus": {
+        "longitude": 225.203784,
+        "sign_index": 7,
+        "degree_in_sign": 15.203784,
+        "is_retrograde": false,
+        "speed": 1.146971
+      },
+      "Saturn": {
+        "longitude": 286.791964,
+        "sign_index": 9,
+        "degree_in_sign": 16.791964,
+        "is_retrograde": false,
+        "speed": 0.005991
+      },
+      "Rahu": {
+        "longitude": 302.601288,
+        "sign_index": 10,
+        "degree_in_sign": 2.601288,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 122.601288,
+        "sign_index": 4,
+        "degree_in_sign": 2.601288,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

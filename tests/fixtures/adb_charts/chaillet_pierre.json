@@ -1,0 +1,109 @@
+{
+  "adb_id": 50766,
+  "name": "Chaillet, Pierre",
+  "given_name": "Pierre Chaillet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415153.410174,
+    "year": 1900,
+    "month": 5,
+    "day": 13,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Scey sur Saône et St.Albin",
+    "country": "France",
+    "lat": 47.666667,
+    "lon": 5.966667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaillet,_Pierre",
+  "source_notes": "Steinbrecher collection: Steinbrecher Collection\\n",
+  "categories": [
+    "Traits : Personality : Courageous",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 11.800351,
+    "lagna": 221.800351,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.465611,
+    "jd_ut": 2415153.410174,
+    "planets": {
+      "Sun": {
+        "longitude": 30.173085,
+        "sign_index": 1,
+        "degree_in_sign": 0.173085,
+        "is_retrograde": false,
+        "speed": 0.963915
+      },
+      "Moon": {
+        "longitude": 201.981592,
+        "sign_index": 6,
+        "degree_in_sign": 21.981592,
+        "is_retrograde": false,
+        "speed": 9.081653
+      },
+      "Mars": {
+        "longitude": 4.922893,
+        "sign_index": 0,
+        "degree_in_sign": 4.922893,
+        "is_retrograde": false,
+        "speed": 0.753121
+      },
+      "Mercury": {
+        "longitude": 12.580601,
+        "sign_index": 0,
+        "degree_in_sign": 12.580601,
+        "is_retrograde": false,
+        "speed": 1.789624
+      },
+      "Jupiter": {
+        "longitude": 225.261234,
+        "sign_index": 7,
+        "degree_in_sign": 15.261234,
+        "is_retrograde": true,
+        "speed": -0.118481
+      },
+      "Venus": {
+        "longitude": 74.74242,
+        "sign_index": 2,
+        "degree_in_sign": 14.74242,
+        "is_retrograde": false,
+        "speed": 0.82712
+      },
+      "Saturn": {
+        "longitude": 251.877922,
+        "sign_index": 8,
+        "degree_in_sign": 11.877922,
+        "is_retrograde": true,
+        "speed": -0.044894
+      },
+      "Rahu": {
+        "longitude": 229.652743,
+        "sign_index": 7,
+        "degree_in_sign": 19.652743,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 49.652743,
+        "sign_index": 1,
+        "degree_in_sign": 19.652743,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

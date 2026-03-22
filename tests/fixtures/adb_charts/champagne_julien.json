@@ -1,0 +1,108 @@
+{
+  "adb_id": 67160,
+  "name": "Champagne, Julien",
+  "given_name": "Julien Champagne",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406642.910278,
+    "year": 1877,
+    "month": 1,
+    "day": 23,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Levallois Perret",
+    "country": "France",
+    "lat": 48.9,
+    "lon": 2.3
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Champagne,_Julien",
+  "source_notes": "Sy Scholfield found the birth certificate online [http://www.archerjulienchampagne.com/article-2258329.html].\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 21.858898,
+    "lagna": 321.858898,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.140289,
+    "jd_ut": 2406642.910278,
+    "planets": {
+      "Sun": {
+        "longitude": 281.434243,
+        "sign_index": 9,
+        "degree_in_sign": 11.434243,
+        "is_retrograde": false,
+        "speed": 1.0167
+      },
+      "Moon": {
+        "longitude": 20.800314,
+        "sign_index": 0,
+        "degree_in_sign": 20.800314,
+        "is_retrograde": false,
+        "speed": 15.922417
+      },
+      "Mars": {
+        "longitude": 223.573112,
+        "sign_index": 7,
+        "degree_in_sign": 13.573112,
+        "is_retrograde": false,
+        "speed": 0.653121
+      },
+      "Mercury": {
+        "longitude": 289.100334,
+        "sign_index": 9,
+        "degree_in_sign": 19.100334,
+        "is_retrograde": true,
+        "speed": -0.966371
+      },
+      "Jupiter": {
+        "longitude": 241.537127,
+        "sign_index": 8,
+        "degree_in_sign": 1.537127,
+        "is_retrograde": false,
+        "speed": 0.19831
+      },
+      "Venus": {
+        "longitude": 255.808788,
+        "sign_index": 8,
+        "degree_in_sign": 15.808788,
+        "is_retrograde": false,
+        "speed": 1.243982
+      },
+      "Saturn": {
+        "longitude": 314.190975,
+        "sign_index": 10,
+        "degree_in_sign": 14.190975,
+        "is_retrograde": false,
+        "speed": 0.109316
+      },
+      "Rahu": {
+        "longitude": 320.642162,
+        "sign_index": 10,
+        "degree_in_sign": 20.642162,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 140.642162,
+        "sign_index": 4,
+        "degree_in_sign": 20.642162,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 64123,
+  "name": "Calvi, Yves",
+  "given_name": "Yves Calvi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436810.958333,
+    "year": 1959,
+    "month": 8,
+    "day": 30,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Boulogne Billancourt",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvi,_Yves",
+  "source_notes": "Collection Didier Geslain.\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 23.371167,
+    "lagna": 173.371167,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.293643,
+    "jd_ut": 2436810.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 133.032027,
+        "sign_index": 4,
+        "degree_in_sign": 13.032027,
+        "is_retrograde": false,
+        "speed": 0.966998
+      },
+      "Moon": {
+        "longitude": 88.788013,
+        "sign_index": 2,
+        "degree_in_sign": 28.788013,
+        "is_retrograde": false,
+        "speed": 9.547433
+      },
+      "Mars": {
+        "longitude": 152.530254,
+        "sign_index": 5,
+        "degree_in_sign": 2.530254,
+        "is_retrograde": false,
+        "speed": 0.641304
+      },
+      "Mercury": {
+        "longitude": 116.851305,
+        "sign_index": 3,
+        "degree_in_sign": 26.851305,
+        "is_retrograde": false,
+        "speed": 1.589625
+      },
+      "Jupiter": {
+        "longitude": 211.269766,
+        "sign_index": 7,
+        "degree_in_sign": 1.269766,
+        "is_retrograde": false,
+        "speed": 0.113606
+      },
+      "Venus": {
+        "longitude": 135.894235,
+        "sign_index": 4,
+        "degree_in_sign": 15.894235,
+        "is_retrograde": true,
+        "speed": -0.611364
+      },
+      "Saturn": {
+        "longitude": 247.18919,
+        "sign_index": 8,
+        "degree_in_sign": 7.18919,
+        "is_retrograde": true,
+        "speed": -0.009077
+      },
+      "Rahu": {
+        "longitude": 161.974228,
+        "sign_index": 5,
+        "degree_in_sign": 11.974228,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 341.974228,
+        "sign_index": 11,
+        "degree_in_sign": 11.974228,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 81102,
+  "name": "Crocco, Gaetano",
+  "given_name": "Gaetano Crocco",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406919.006991,
+    "year": 1877,
+    "month": 10,
+    "day": 26,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Naples",
+    "country": "Italy",
+    "lat": 40.85,
+    "lon": 14.283333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crocco,_Gaetano",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Engineer : Aerospace",
+    "Vocation : Science : Other Science",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 17.007849,
+    "lagna": 257.007849,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.150843,
+    "jd_ut": 2406919.006991,
+    "planets": {
+      "Sun": {
+        "longitude": 191.044071,
+        "sign_index": 6,
+        "degree_in_sign": 11.044071,
+        "is_retrograde": false,
+        "speed": 0.998424
+      },
+      "Moon": {
+        "longitude": 61.251835,
+        "sign_index": 2,
+        "degree_in_sign": 1.251835,
+        "is_retrograde": false,
+        "speed": 17.266933
+      },
+      "Mars": {
+        "longitude": 319.125432,
+        "sign_index": 10,
+        "degree_in_sign": 19.125432,
+        "is_retrograde": false,
+        "speed": 0.252297
+      },
+      "Mercury": {
+        "longitude": 179.516759,
+        "sign_index": 5,
+        "degree_in_sign": 29.516759,
+        "is_retrograde": false,
+        "speed": 1.656662
+      },
+      "Jupiter": {
+        "longitude": 247.93766,
+        "sign_index": 8,
+        "degree_in_sign": 7.93766,
+        "is_retrograde": false,
+        "speed": 0.171711
+      },
+      "Venus": {
+        "longitude": 233.630278,
+        "sign_index": 7,
+        "degree_in_sign": 23.630278,
+        "is_retrograde": false,
+        "speed": 1.166159
+      },
+      "Saturn": {
+        "longitude": 321.852309,
+        "sign_index": 10,
+        "degree_in_sign": 21.852309,
+        "is_retrograde": true,
+        "speed": -0.036172
+      },
+      "Rahu": {
+        "longitude": 306.011209,
+        "sign_index": 10,
+        "degree_in_sign": 6.011209,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 126.011209,
+        "sign_index": 4,
+        "degree_in_sign": 6.011209,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 52175,
+  "name": "Celentano, Adriano",
+  "given_name": "Adriano Celentano",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428904.75,
+    "year": 1938,
+    "month": 1,
+    "day": 6,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Milano",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celentano,_Adriano",
+  "source_notes": "Ed Steinbrecher collection: Grazia Bordoni (1) quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 12.379408,
+    "lagna": 222.379408,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.991341,
+    "jd_ut": 2428904.75,
+    "planets": {
+      "Sun": {
+        "longitude": 262.279432,
+        "sign_index": 8,
+        "degree_in_sign": 22.279432,
+        "is_retrograde": false,
+        "speed": 1.019492
+      },
+      "Moon": {
+        "longitude": 312.409888,
+        "sign_index": 10,
+        "degree_in_sign": 12.409888,
+        "is_retrograde": false,
+        "speed": 14.877148
+      },
+      "Mars": {
+        "longitude": 318.741975,
+        "sign_index": 10,
+        "degree_in_sign": 18.741975,
+        "is_retrograde": false,
+        "speed": 0.756055
+      },
+      "Mercury": {
+        "longitude": 247.340467,
+        "sign_index": 8,
+        "degree_in_sign": 7.340467,
+        "is_retrograde": true,
+        "speed": -0.57189
+      },
+      "Jupiter": {
+        "longitude": 280.845487,
+        "sign_index": 9,
+        "degree_in_sign": 10.845487,
+        "is_retrograde": false,
+        "speed": 0.230815
+      },
+      "Venus": {
+        "longitude": 255.354789,
+        "sign_index": 8,
+        "degree_in_sign": 15.354789,
+        "is_retrograde": false,
+        "speed": 1.257955
+      },
+      "Saturn": {
+        "longitude": 336.456105,
+        "sign_index": 11,
+        "degree_in_sign": 6.456105,
+        "is_retrograde": false,
+        "speed": 0.060775
+      },
+      "Rahu": {
+        "longitude": 220.940504,
+        "sign_index": 7,
+        "degree_in_sign": 10.940504,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 40.940504,
+        "sign_index": 1,
+        "degree_in_sign": 10.940504,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

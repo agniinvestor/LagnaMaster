@@ -1,0 +1,110 @@
+{
+  "adb_id": 104391,
+  "name": "Cattelan, Maurizio",
+  "given_name": "Maurizio Cattelan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437199.201389,
+    "year": 1960,
+    "month": 9,
+    "day": 21,
+    "calendar": "g",
+    "time": "17:50",
+    "time_type": "s",
+    "hour": 17.833333,
+    "time_unknown": false,
+    "place": "Padova",
+    "country": "Italy",
+    "lat": 45.416667,
+    "lon": 11.883333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cattelan,_Maurizio",
+  "source_notes": "Sy Scholfield asked Grazia Bordoni for the data which she quoted from birth certificate. \\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 3.585341,
+    "lagna": 303.585341,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.308489,
+    "jd_ut": 2437199.201389,
+    "planets": {
+      "Sun": {
+        "longitude": 155.38153,
+        "sign_index": 5,
+        "degree_in_sign": 5.38153,
+        "is_retrograde": false,
+        "speed": 0.97864
+      },
+      "Moon": {
+        "longitude": 163.894507,
+        "sign_index": 5,
+        "degree_in_sign": 13.894507,
+        "is_retrograde": false,
+        "speed": 12.27428
+      },
+      "Mars": {
+        "longitude": 66.96602,
+        "sign_index": 2,
+        "degree_in_sign": 6.96602,
+        "is_retrograde": false,
+        "speed": 0.513702
+      },
+      "Mercury": {
+        "longitude": 172.02535,
+        "sign_index": 5,
+        "degree_in_sign": 22.02535,
+        "is_retrograde": false,
+        "speed": 1.546125
+      },
+      "Jupiter": {
+        "longitude": 242.028739,
+        "sign_index": 8,
+        "degree_in_sign": 2.028739,
+        "is_retrograde": false,
+        "speed": 0.094782
+      },
+      "Venus": {
+        "longitude": 179.91926,
+        "sign_index": 5,
+        "degree_in_sign": 29.91926,
+        "is_retrograde": false,
+        "speed": 1.228496
+      },
+      "Saturn": {
+        "longitude": 258.540439,
+        "sign_index": 8,
+        "degree_in_sign": 18.540439,
+        "is_retrograde": false,
+        "speed": 0.009454
+      },
+      "Rahu": {
+        "longitude": 141.400433,
+        "sign_index": 4,
+        "degree_in_sign": 21.400433,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 321.400433,
+        "sign_index": 10,
+        "degree_in_sign": 21.400433,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

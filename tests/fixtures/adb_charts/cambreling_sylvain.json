@@ -1,0 +1,111 @@
+{
+  "adb_id": 37060,
+  "name": "Cambreling, Sylvain",
+  "given_name": "Sylvain Cambreling",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432734.6875,
+    "year": 1948,
+    "month": 7,
+    "day": 2,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Amiens",
+    "country": "France",
+    "lat": 49.9,
+    "lon": 2.3
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cambreling,_Sylvain",
+  "source_notes": "Petitallot quotes B.C., Cadran No. 43, July-August 1997\\n",
+  "categories": [
+    "Lifestyle : Home : Many moves",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 1.311022,
+    "lagna": 61.311022,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.137779,
+    "jd_ut": 2432734.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 77.048181,
+        "sign_index": 2,
+        "degree_in_sign": 17.048181,
+        "is_retrograde": false,
+        "speed": 0.953482
+      },
+      "Moon": {
+        "longitude": 16.571831,
+        "sign_index": 0,
+        "degree_in_sign": 16.571831,
+        "is_retrograde": false,
+        "speed": 10.757045
+      },
+      "Mars": {
+        "longitude": 148.38084,
+        "sign_index": 4,
+        "degree_in_sign": 28.38084,
+        "is_retrograde": false,
+        "speed": 0.547829
+      },
+      "Mercury": {
+        "longitude": 65.60416,
+        "sign_index": 2,
+        "degree_in_sign": 5.60416,
+        "is_retrograde": true,
+        "speed": -0.257999
+      },
+      "Jupiter": {
+        "longitude": 238.841888,
+        "sign_index": 7,
+        "degree_in_sign": 28.841888,
+        "is_retrograde": true,
+        "speed": -0.115746
+      },
+      "Venus": {
+        "longitude": 65.291573,
+        "sign_index": 2,
+        "degree_in_sign": 5.291573,
+        "is_retrograde": true,
+        "speed": -0.515937
+      },
+      "Saturn": {
+        "longitude": 117.204534,
+        "sign_index": 3,
+        "degree_in_sign": 27.204534,
+        "is_retrograde": false,
+        "speed": 0.107416
+      },
+      "Rahu": {
+        "longitude": 17.984201,
+        "sign_index": 0,
+        "degree_in_sign": 17.984201,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 197.984201,
+        "sign_index": 6,
+        "degree_in_sign": 17.984201,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

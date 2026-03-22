@@ -1,0 +1,110 @@
+{
+  "adb_id": 3495,
+  "name": "Clemmons, Wallace A.",
+  "given_name": "Wallace A. Clemmons",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2412276.083333,
+    "year": 1892,
+    "month": 6,
+    "day": 26,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Peace Valley",
+    "country": "Missouri",
+    "lat": 36.866667,
+    "lon": -91.733333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clemmons,_Wallace_A.",
+  "source_notes": "Astrological Pioneers of America file\\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Misc. : Outdoor vocations"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 29.211643,
+    "lagna": 89.211643,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.355619,
+    "jd_ut": 2412276.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 72.998227,
+        "sign_index": 2,
+        "degree_in_sign": 12.998227,
+        "is_retrograde": false,
+        "speed": 0.953717
+      },
+      "Moon": {
+        "longitude": 99.693178,
+        "sign_index": 3,
+        "degree_in_sign": 9.693178,
+        "is_retrograde": false,
+        "speed": 13.292792
+      },
+      "Mars": {
+        "longitude": 294.424826,
+        "sign_index": 9,
+        "degree_in_sign": 24.424826,
+        "is_retrograde": false,
+        "speed": 0.105688
+      },
+      "Mercury": {
+        "longitude": 80.065845,
+        "sign_index": 2,
+        "degree_in_sign": 20.065845,
+        "is_retrograde": false,
+        "speed": 2.101368
+      },
+      "Jupiter": {
+        "longitude": 358.994476,
+        "sign_index": 11,
+        "degree_in_sign": 28.994476,
+        "is_retrograde": false,
+        "speed": 0.139235
+      },
+      "Venus": {
+        "longitude": 92.424187,
+        "sign_index": 3,
+        "degree_in_sign": 2.424187,
+        "is_retrograde": true,
+        "speed": -0.326436
+      },
+      "Saturn": {
+        "longitude": 151.829398,
+        "sign_index": 5,
+        "degree_in_sign": 1.829398,
+        "is_retrograde": false,
+        "speed": 0.052418
+      },
+      "Rahu": {
+        "longitude": 22.128368,
+        "sign_index": 0,
+        "degree_in_sign": 22.128368,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 202.128368,
+        "sign_index": 6,
+        "degree_in_sign": 22.128368,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

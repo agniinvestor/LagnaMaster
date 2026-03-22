@@ -1,0 +1,108 @@
+{
+  "adb_id": 68321,
+  "name": "Catoire, Jules",
+  "given_name": "Jules Catoire",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414685.910174,
+    "year": 1899,
+    "month": 1,
+    "day": 31,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Beaurains",
+    "country": "France",
+    "lat": 50.263889,
+    "lon": 2.789444
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Catoire,_Jules",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'politique a-f' pdf file, p. 184.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 9.134596,
+    "lagna": 339.134596,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.44774,
+    "jd_ut": 2414685.910174,
+    "planets": {
+      "Sun": {
+        "longitude": 288.901689,
+        "sign_index": 9,
+        "degree_in_sign": 18.901689,
+        "is_retrograde": false,
+        "speed": 1.014551
+      },
+      "Moon": {
+        "longitude": 159.444729,
+        "sign_index": 5,
+        "degree_in_sign": 9.444729,
+        "is_retrograde": false,
+        "speed": 12.914387
+      },
+      "Mars": {
+        "longitude": 91.600832,
+        "sign_index": 3,
+        "degree_in_sign": 1.600832,
+        "is_retrograde": true,
+        "speed": -0.333518
+      },
+      "Mercury": {
+        "longitude": 270.859214,
+        "sign_index": 9,
+        "degree_in_sign": 0.859214,
+        "is_retrograde": false,
+        "speed": 1.482899
+      },
+      "Jupiter": {
+        "longitude": 196.894788,
+        "sign_index": 6,
+        "degree_in_sign": 16.894788,
+        "is_retrograde": false,
+        "speed": 0.0716
+      },
+      "Venus": {
+        "longitude": 242.578259,
+        "sign_index": 8,
+        "degree_in_sign": 2.578259,
+        "is_retrograde": false,
+        "speed": 0.926106
+      },
+      "Saturn": {
+        "longitude": 238.323229,
+        "sign_index": 7,
+        "degree_in_sign": 28.323229,
+        "is_retrograde": false,
+        "speed": 0.088716
+      },
+      "Rahu": {
+        "longitude": 254.426555,
+        "sign_index": 8,
+        "degree_in_sign": 14.426555,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 74.426555,
+        "sign_index": 2,
+        "degree_in_sign": 14.426555,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

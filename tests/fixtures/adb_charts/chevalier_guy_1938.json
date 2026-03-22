@@ -1,0 +1,108 @@
+{
+  "adb_id": 68831,
+  "name": "Chevalier, Guy (1938)",
+  "given_name": "Guy (1938) Chevalier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429044.260417,
+    "year": 1938,
+    "month": 5,
+    "day": 25,
+    "calendar": "g",
+    "time": "19:15",
+    "time_type": "d",
+    "hour": 19.25,
+    "time_unknown": false,
+    "place": "Les Herbiers",
+    "country": "France",
+    "lat": 46.866667,
+    "lon": -1.016667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevalier,_Guy_(1938)",
+  "source_notes": "Didier Geslain archive, 'religion1' pdf file, p. 67.\\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 2.428264,
+    "lagna": 182.428264,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.996675,
+    "jd_ut": 2429044.260417,
+    "planets": {
+      "Sun": {
+        "longitude": 40.860211,
+        "sign_index": 1,
+        "degree_in_sign": 10.860211,
+        "is_retrograde": false,
+        "speed": 0.960434
+      },
+      "Moon": {
+        "longitude": 348.998301,
+        "sign_index": 11,
+        "degree_in_sign": 18.998301,
+        "is_retrograde": false,
+        "speed": 16.501155
+      },
+      "Mars": {
+        "longitude": 58.784155,
+        "sign_index": 1,
+        "degree_in_sign": 28.784155,
+        "is_retrograde": false,
+        "speed": 0.671237
+      },
+      "Mercury": {
+        "longitude": 16.412257,
+        "sign_index": 0,
+        "degree_in_sign": 16.412257,
+        "is_retrograde": false,
+        "speed": 1.264704
+      },
+      "Jupiter": {
+        "longitude": 308.120125,
+        "sign_index": 10,
+        "degree_in_sign": 8.120125,
+        "is_retrograde": false,
+        "speed": 0.082389
+      },
+      "Venus": {
+        "longitude": 68.324071,
+        "sign_index": 2,
+        "degree_in_sign": 8.324071,
+        "is_retrograde": false,
+        "speed": 1.207174
+      },
+      "Saturn": {
+        "longitude": 351.591928,
+        "sign_index": 11,
+        "degree_in_sign": 21.591928,
+        "is_retrograde": false,
+        "speed": 0.095965
+      },
+      "Rahu": {
+        "longitude": 213.547558,
+        "sign_index": 7,
+        "degree_in_sign": 3.547558,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 33.547558,
+        "sign_index": 1,
+        "degree_in_sign": 3.547558,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "adb_id": 11369,
+  "name": "Clark, Brian",
+  "given_name": "Brian Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433183.605556,
+    "year": 1949,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "22:32",
+    "time_type": "d",
+    "hour": 22.533333,
+    "time_unknown": false,
+    "place": "Belleville",
+    "country": "Ontario (CAN)",
+    "lat": 44.166667,
+    "lon": -77.383333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Brian",
+  "source_notes": "LMR quotes him 1983\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Business : CPA/ Auditor/ Accountant",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology",
+    "Vocation : Writers : Publisher/ Editor",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 2.199157,
+    "lagna": 32.199157,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.154944,
+    "jd_ut": 2433183.605556,
+    "planets": {
+      "Sun": {
+        "longitude": 157.558361,
+        "sign_index": 5,
+        "degree_in_sign": 7.558361,
+        "is_retrograde": false,
+        "speed": 0.97992
+      },
+      "Moon": {
+        "longitude": 179.738894,
+        "sign_index": 5,
+        "degree_in_sign": 29.738894,
+        "is_retrograde": false,
+        "speed": 16.973943
+      },
+      "Mars": {
+        "longitude": 107.357004,
+        "sign_index": 3,
+        "degree_in_sign": 17.357004,
+        "is_retrograde": false,
+        "speed": 0.612564
+      },
+      "Mercury": {
+        "longitude": 175.47247,
+        "sign_index": 5,
+        "degree_in_sign": 25.47247,
+        "is_retrograde": true,
+        "speed": -0.341999
+      },
+      "Jupiter": {
+        "longitude": 269.229149,
+        "sign_index": 8,
+        "degree_in_sign": 29.229149,
+        "is_retrograde": false,
+        "speed": 0.017313
+      },
+      "Venus": {
+        "longitude": 197.891464,
+        "sign_index": 6,
+        "degree_in_sign": 17.891464,
+        "is_retrograde": false,
+        "speed": 1.171754
+      },
+      "Saturn": {
+        "longitude": 139.126044,
+        "sign_index": 4,
+        "degree_in_sign": 19.126044,
+        "is_retrograde": false,
+        "speed": 0.121997
+      },
+      "Rahu": {
+        "longitude": 354.195108,
+        "sign_index": 11,
+        "degree_in_sign": 24.195108,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 174.195108,
+        "sign_index": 5,
+        "degree_in_sign": 24.195108,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

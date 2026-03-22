@@ -1,0 +1,113 @@
+{
+  "adb_id": 92188,
+  "name": "Cornejo, Enrique",
+  "given_name": "Enrique Cornejo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435626.90625,
+    "year": 1956,
+    "month": 6,
+    "day": 2,
+    "calendar": "g",
+    "time": "04:45",
+    "time_type": "s",
+    "hour": 4.75,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornejo,_Enrique",
+  "source_notes": "Birth certificate in hand from Sy Scholfield.\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Business : Economist",
+    "Vocation : Business : Top executive",
+    "Vocation : Education : Teacher",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 2.163616,
+    "lagna": 2.163616,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.248368,
+    "jd_ut": 2435626.90625,
+    "planets": {
+      "Sun": {
+        "longitude": 48.561851,
+        "sign_index": 1,
+        "degree_in_sign": 18.561851,
+        "is_retrograde": false,
+        "speed": 0.95779
+      },
+      "Moon": {
+        "longitude": 325.97409,
+        "sign_index": 10,
+        "degree_in_sign": 25.97409,
+        "is_retrograde": false,
+        "speed": 7.972343
+      },
+      "Mars": {
+        "longitude": 306.232447,
+        "sign_index": 10,
+        "degree_in_sign": 6.232447,
+        "is_retrograde": false,
+        "speed": 0.560465
+      },
+      "Mercury": {
+        "longitude": 37.844973,
+        "sign_index": 1,
+        "degree_in_sign": 7.844973,
+        "is_retrograde": true,
+        "speed": -0.336363
+      },
+      "Jupiter": {
+        "longitude": 121.246941,
+        "sign_index": 4,
+        "degree_in_sign": 1.246941,
+        "is_retrograde": false,
+        "speed": 0.123428
+      },
+      "Venus": {
+        "longitude": 75.712047,
+        "sign_index": 2,
+        "degree_in_sign": 15.712047,
+        "is_retrograde": true,
+        "speed": -0.064994
+      },
+      "Saturn": {
+        "longitude": 215.326117,
+        "sign_index": 7,
+        "degree_in_sign": 5.326117,
+        "is_retrograde": true,
+        "speed": -0.071597
+      },
+      "Rahu": {
+        "longitude": 224.719578,
+        "sign_index": 7,
+        "degree_in_sign": 14.719578,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 44.719578,
+        "sign_index": 1,
+        "degree_in_sign": 14.719578,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

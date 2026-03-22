@@ -1,0 +1,108 @@
+{
+  "adb_id": 65374,
+  "name": "Cazaud, Alfred Maurice",
+  "given_name": "Alfred Maurice Cazaud",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412731.285174,
+    "year": 1893,
+    "month": 9,
+    "day": 24,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Montferrier",
+    "country": "France",
+    "lat": 42.896389,
+    "lon": 1.795278
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cazaud,_Alfred_Maurice",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 67.\\n",
+  "categories": [
+    "Vocation : Military : Honors"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 17.295581,
+    "lagna": 347.295581,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.37302,
+    "jd_ut": 2412731.285174,
+    "planets": {
+      "Sun": {
+        "longitude": 159.550531,
+        "sign_index": 5,
+        "degree_in_sign": 9.550531,
+        "is_retrograde": false,
+        "speed": 0.980372
+      },
+      "Moon": {
+        "longitude": 326.328327,
+        "sign_index": 10,
+        "degree_in_sign": 26.328327,
+        "is_retrograde": false,
+        "speed": 11.505592
+      },
+      "Mars": {
+        "longitude": 152.721677,
+        "sign_index": 5,
+        "degree_in_sign": 2.721677,
+        "is_retrograde": false,
+        "speed": 0.64317
+      },
+      "Mercury": {
+        "longitude": 163.13181,
+        "sign_index": 5,
+        "degree_in_sign": 13.13181,
+        "is_retrograde": false,
+        "speed": 1.753258
+      },
+      "Jupiter": {
+        "longitude": 39.046599,
+        "sign_index": 1,
+        "degree_in_sign": 9.046599,
+        "is_retrograde": true,
+        "speed": -0.016417
+      },
+      "Venus": {
+        "longitude": 196.980182,
+        "sign_index": 6,
+        "degree_in_sign": 16.980182,
+        "is_retrograde": false,
+        "speed": 1.191238
+      },
+      "Saturn": {
+        "longitude": 171.710967,
+        "sign_index": 5,
+        "degree_in_sign": 21.710967,
+        "is_retrograde": false,
+        "speed": 0.120627
+      },
+      "Rahu": {
+        "longitude": 358.006261,
+        "sign_index": 11,
+        "degree_in_sign": 28.006261,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 178.006261,
+        "sign_index": 5,
+        "degree_in_sign": 28.006261,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

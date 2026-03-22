@@ -1,0 +1,108 @@
+{
+  "adb_id": 50738,
+  "name": "Campbell, Milt",
+  "given_name": "Milt Campbell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427416.348611,
+    "year": 1933,
+    "month": 12,
+    "day": 9,
+    "calendar": "g",
+    "time": "15:22",
+    "time_type": "s",
+    "hour": 15.366667,
+    "time_unknown": false,
+    "place": "Plainfield",
+    "country": "New Jersey",
+    "lat": 40.633333,
+    "lon": -74.4
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campbell,_Milt",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Sports : Other Sports"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 13.845867,
+    "lagna": 13.845867,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.934433,
+    "jd_ut": 2427416.348611,
+    "planets": {
+      "Sun": {
+        "longitude": 234.398821,
+        "sign_index": 7,
+        "degree_in_sign": 24.398821,
+        "is_retrograde": false,
+        "speed": 1.01629
+      },
+      "Moon": {
+        "longitude": 139.463833,
+        "sign_index": 4,
+        "degree_in_sign": 19.463833,
+        "is_retrograde": false,
+        "speed": 15.846603
+      },
+      "Mars": {
+        "longitude": 262.794636,
+        "sign_index": 8,
+        "degree_in_sign": 22.794636,
+        "is_retrograde": false,
+        "speed": 0.773631
+      },
+      "Mercury": {
+        "longitude": 214.177412,
+        "sign_index": 7,
+        "degree_in_sign": 4.177412,
+        "is_retrograde": false,
+        "speed": 1.204343
+      },
+      "Jupiter": {
+        "longitude": 175.220584,
+        "sign_index": 5,
+        "degree_in_sign": 25.220584,
+        "is_retrograde": false,
+        "speed": 0.155197
+      },
+      "Venus": {
+        "longitude": 280.805849,
+        "sign_index": 9,
+        "degree_in_sign": 10.805849,
+        "is_retrograde": false,
+        "speed": 0.891848
+      },
+      "Saturn": {
+        "longitude": 289.316051,
+        "sign_index": 9,
+        "degree_in_sign": 19.316051,
+        "is_retrograde": false,
+        "speed": 0.08496
+      },
+      "Rahu": {
+        "longitude": 299.813978,
+        "sign_index": 9,
+        "degree_in_sign": 29.813978,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 119.813978,
+        "sign_index": 3,
+        "degree_in_sign": 29.813978,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 36405,
+  "name": "Canaris, Wilhelm",
+  "given_name": "Wilhelm Canaris",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410273.062593,
+    "year": 1887,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Dortmund",
+    "country": "Germany",
+    "lat": 51.516667,
+    "lon": 7.466667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canaris,_Wilhelm",
+  "source_notes": "Gauquelin Vol 3/1800\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide involvement",
+    "Personal : Death : Unusual",
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Nazi party",
+    "Notable : Extraordinary Talents : For Languages",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 29.016657,
+    "lagna": 29.016657,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.279051,
+    "jd_ut": 2410273.062593,
+    "planets": {
+      "Sun": {
+        "longitude": 258.604315,
+        "sign_index": 8,
+        "degree_in_sign": 18.604315,
+        "is_retrograde": false,
+        "speed": 1.019342
+      },
+      "Moon": {
+        "longitude": 338.384949,
+        "sign_index": 11,
+        "degree_in_sign": 8.384949,
+        "is_retrograde": false,
+        "speed": 9.782441
+      },
+      "Mars": {
+        "longitude": 284.166589,
+        "sign_index": 9,
+        "degree_in_sign": 14.166589,
+        "is_retrograde": false,
+        "speed": 0.787135
+      },
+      "Mercury": {
+        "longitude": 238.758353,
+        "sign_index": 7,
+        "degree_in_sign": 28.758353,
+        "is_retrograde": false,
+        "speed": 1.359517
+      },
+      "Jupiter": {
+        "longitude": 190.063743,
+        "sign_index": 6,
+        "degree_in_sign": 10.063743,
+        "is_retrograde": false,
+        "speed": 0.134911
+      },
+      "Venus": {
+        "longitude": 265.64816,
+        "sign_index": 8,
+        "degree_in_sign": 25.64816,
+        "is_retrograde": false,
+        "speed": 1.257149
+      },
+      "Saturn": {
+        "longitude": 87.437602,
+        "sign_index": 2,
+        "degree_in_sign": 27.437602,
+        "is_retrograde": true,
+        "speed": -0.081073
+      },
+      "Rahu": {
+        "longitude": 128.272678,
+        "sign_index": 4,
+        "degree_in_sign": 8.272678,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 308.272678,
+        "sign_index": 10,
+        "degree_in_sign": 8.272678,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

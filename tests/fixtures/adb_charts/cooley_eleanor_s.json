@@ -1,0 +1,112 @@
+{
+  "adb_id": 3210,
+  "name": "Cooley, Eleanor S.",
+  "given_name": "Eleanor S. Cooley",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2410111.211806,
+    "year": 1886,
+    "month": 7,
+    "day": 23,
+    "calendar": "g",
+    "time": "17:05",
+    "time_type": "s",
+    "hour": 17.083333,
+    "time_unknown": false,
+    "place": "Liverpool",
+    "country": "England",
+    "lat": 53.416667,
+    "lon": -2.916667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooley,_Eleanor_S.",
+  "source_notes": "Astrological Pioneers of America file\\n",
+  "categories": [
+    "Lifestyle : Social Life : Friends",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Religion/Spirituality : Theosophy/Vedanta",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 28.032507,
+    "lagna": 208.032507,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.272864,
+    "jd_ut": 2410111.211806,
+    "planets": {
+      "Sun": {
+        "longitude": 98.42507,
+        "sign_index": 3,
+        "degree_in_sign": 8.42507,
+        "is_retrograde": false,
+        "speed": 0.955183
+      },
+      "Moon": {
+        "longitude": 1.234475,
+        "sign_index": 0,
+        "degree_in_sign": 1.234475,
+        "is_retrograde": false,
+        "speed": 15.405681
+      },
+      "Mars": {
+        "longitude": 169.786603,
+        "sign_index": 5,
+        "degree_in_sign": 19.786603,
+        "is_retrograde": false,
+        "speed": 0.576347
+      },
+      "Mercury": {
+        "longitude": 124.807192,
+        "sign_index": 4,
+        "degree_in_sign": 4.807192,
+        "is_retrograde": false,
+        "speed": 0.719221
+      },
+      "Jupiter": {
+        "longitude": 158.860629,
+        "sign_index": 5,
+        "degree_in_sign": 8.860629,
+        "is_retrograde": false,
+        "speed": 0.151113
+      },
+      "Venus": {
+        "longitude": 65.259664,
+        "sign_index": 2,
+        "degree_in_sign": 5.259664,
+        "is_retrograde": false,
+        "speed": 1.183899
+      },
+      "Saturn": {
+        "longitude": 82.243681,
+        "sign_index": 2,
+        "degree_in_sign": 22.243681,
+        "is_retrograde": false,
+        "speed": 0.126633
+      },
+      "Rahu": {
+        "longitude": 136.849495,
+        "sign_index": 4,
+        "degree_in_sign": 16.849495,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 316.849495,
+        "sign_index": 10,
+        "degree_in_sign": 16.849495,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

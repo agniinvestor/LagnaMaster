@@ -1,0 +1,108 @@
+{
+  "adb_id": 8090,
+  "name": "Coriaty, Kay",
+  "given_name": "Kay Coriaty",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2428880.759028,
+    "year": 1937,
+    "month": 12,
+    "day": 13,
+    "calendar": "g",
+    "time": "01:13",
+    "time_type": "s",
+    "hour": 1.216667,
+    "time_unknown": false,
+    "place": "Detroit",
+    "country": "Michigan",
+    "lat": 42.333333,
+    "lon": -83.05
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coriaty,_Kay",
+  "source_notes": "M.A.R.S. director quotes her 1990\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.355144,
+    "lagna": 135.355144,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.990423,
+    "jd_ut": 2428880.759028,
+    "planets": {
+      "Sun": {
+        "longitude": 237.840677,
+        "sign_index": 7,
+        "degree_in_sign": 27.840677,
+        "is_retrograde": false,
+        "speed": 1.016869
+      },
+      "Moon": {
+        "longitude": 354.537811,
+        "sign_index": 11,
+        "degree_in_sign": 24.537811,
+        "is_retrograde": false,
+        "speed": 12.768009
+      },
+      "Mars": {
+        "longitude": 300.588751,
+        "sign_index": 10,
+        "degree_in_sign": 0.588751,
+        "is_retrograde": false,
+        "speed": 0.75607
+      },
+      "Mercury": {
+        "longitude": 258.394711,
+        "sign_index": 8,
+        "degree_in_sign": 18.394711,
+        "is_retrograde": false,
+        "speed": 0.982109
+      },
+      "Jupiter": {
+        "longitude": 275.524709,
+        "sign_index": 9,
+        "degree_in_sign": 5.524709,
+        "is_retrograde": false,
+        "speed": 0.210475
+      },
+      "Venus": {
+        "longitude": 225.180462,
+        "sign_index": 7,
+        "degree_in_sign": 15.180462,
+        "is_retrograde": false,
+        "speed": 1.256924
+      },
+      "Saturn": {
+        "longitude": 335.471353,
+        "sign_index": 11,
+        "degree_in_sign": 5.471353,
+        "is_retrograde": false,
+        "speed": 0.020392
+      },
+      "Rahu": {
+        "longitude": 222.211835,
+        "sign_index": 7,
+        "degree_in_sign": 12.211835,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 42.211835,
+        "sign_index": 1,
+        "degree_in_sign": 12.211835,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

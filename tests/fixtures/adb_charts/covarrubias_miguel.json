@@ -1,0 +1,111 @@
+{
+  "adb_id": 60558,
+  "name": "Covarrubias, Miguel",
+  "given_name": "Miguel Covarrubias",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2416806.817083,
+    "year": 1904,
+    "month": 11,
+    "day": 22,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4,
+    "lon": -99.15
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Covarrubias,_Miguel",
+  "source_notes": "Sy Scholfield quotes \"Covarrubias\" by Adriana Williams and Doris Ober (Austin: University of Texas Press, 1994), p. 1: \"Miguel was born in Mexico City at one o'clock in the morning on 22 November 1904 in his parents' house at 1237 Presidente Street.\"\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Humanities+Social Sciences : Ethnologist",
+    "Vocation : Humanities+Social Sciences : Historian"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 1.599102,
+    "lagna": 121.599102,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.528818,
+    "jd_ut": 2416806.817083,
+    "planets": {
+      "Sun": {
+        "longitude": 217.066378,
+        "sign_index": 7,
+        "degree_in_sign": 7.066378,
+        "is_retrograde": false,
+        "speed": 1.010474
+      },
+      "Moon": {
+        "longitude": 27.046972,
+        "sign_index": 0,
+        "degree_in_sign": 27.046972,
+        "is_retrograde": false,
+        "speed": 7.878839
+      },
+      "Mars": {
+        "longitude": 158.670011,
+        "sign_index": 5,
+        "degree_in_sign": 8.670011,
+        "is_retrograde": false,
+        "speed": 0.582819
+      },
+      "Mercury": {
+        "longitude": 229.32991,
+        "sign_index": 7,
+        "degree_in_sign": 19.32991,
+        "is_retrograde": false,
+        "speed": 1.515935
+      },
+      "Jupiter": {
+        "longitude": 358.660618,
+        "sign_index": 11,
+        "degree_in_sign": 28.660618,
+        "is_retrograde": true,
+        "speed": -0.078371
+      },
+      "Venus": {
+        "longitude": 251.897791,
+        "sign_index": 8,
+        "degree_in_sign": 11.897791,
+        "is_retrograde": false,
+        "speed": 1.220487
+      },
+      "Saturn": {
+        "longitude": 292.787997,
+        "sign_index": 9,
+        "degree_in_sign": 22.787997,
+        "is_retrograde": false,
+        "speed": 0.055803
+      },
+      "Rahu": {
+        "longitude": 142.035227,
+        "sign_index": 4,
+        "degree_in_sign": 22.035227,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 322.035227,
+        "sign_index": 10,
+        "degree_in_sign": 22.035227,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

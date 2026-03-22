@@ -1,0 +1,110 @@
+{
+  "adb_id": 63195,
+  "name": "Combelle, Alix",
+  "given_name": "Alix Combelle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419569.333333,
+    "year": 1912,
+    "month": 6,
+    "day": 15,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Combelle,_Alix",
+  "source_notes": "Didier Geslain archive, 'jazz' pdf file, p. 33.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 11.377924,
+    "lagna": 221.377924,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.634428,
+    "jd_ut": 2419569.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 61.668312,
+        "sign_index": 2,
+        "degree_in_sign": 1.668312,
+        "is_retrograde": false,
+        "speed": 0.955081
+      },
+      "Moon": {
+        "longitude": 69.017083,
+        "sign_index": 2,
+        "degree_in_sign": 9.017083,
+        "is_retrograde": false,
+        "speed": 16.783627
+      },
+      "Mars": {
+        "longitude": 108.349594,
+        "sign_index": 3,
+        "degree_in_sign": 18.349594,
+        "is_retrograde": false,
+        "speed": 0.599503
+      },
+      "Mercury": {
+        "longitude": 59.595727,
+        "sign_index": 1,
+        "degree_in_sign": 29.595727,
+        "is_retrograde": false,
+        "speed": 2.195245
+      },
+      "Jupiter": {
+        "longitude": 226.103086,
+        "sign_index": 7,
+        "degree_in_sign": 16.103086,
+        "is_retrograde": true,
+        "speed": -0.118891
+      },
+      "Venus": {
+        "longitude": 56.104762,
+        "sign_index": 1,
+        "degree_in_sign": 26.104762,
+        "is_retrograde": false,
+        "speed": 1.227124
+      },
+      "Saturn": {
+        "longitude": 34.945892,
+        "sign_index": 1,
+        "degree_in_sign": 4.945892,
+        "is_retrograde": false,
+        "speed": 0.120307
+      },
+      "Rahu": {
+        "longitude": 355.643686,
+        "sign_index": 11,
+        "degree_in_sign": 25.643686,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 175.643686,
+        "sign_index": 5,
+        "degree_in_sign": 25.643686,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

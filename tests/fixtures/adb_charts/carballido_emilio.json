@@ -1,0 +1,114 @@
+{
+  "adb_id": 85965,
+  "name": "Carballido, Emilio",
+  "given_name": "Emilio Carballido",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424293.583333,
+    "year": 1925,
+    "month": 5,
+    "day": 22,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Orizaba",
+    "country": "Mexico",
+    "lat": 18.85,
+    "lon": -97.1
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carballido,_Emilio",
+  "source_notes": "Sy Scholfield provided birth registry entry.\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Mate - Same sex",
+    "Passions : Sexuality : Gay",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.426546,
+    "lagna": 210.426546,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.815041,
+    "jd_ut": 2424293.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 38.609513,
+        "sign_index": 1,
+        "degree_in_sign": 8.609513,
+        "is_retrograde": false,
+        "speed": 0.961285
+      },
+      "Moon": {
+        "longitude": 42.559222,
+        "sign_index": 1,
+        "degree_in_sign": 12.559222,
+        "is_retrograde": false,
+        "speed": 13.713183
+      },
+      "Mars": {
+        "longitude": 75.522232,
+        "sign_index": 2,
+        "degree_in_sign": 15.522232,
+        "is_retrograde": false,
+        "speed": 0.633551
+      },
+      "Mercury": {
+        "longitude": 14.066229,
+        "sign_index": 0,
+        "degree_in_sign": 14.066229,
+        "is_retrograde": false,
+        "speed": 1.281981
+      },
+      "Jupiter": {
+        "longitude": 269.464332,
+        "sign_index": 8,
+        "degree_in_sign": 29.464332,
+        "is_retrograde": true,
+        "speed": -0.039041
+      },
+      "Venus": {
+        "longitude": 46.308247,
+        "sign_index": 1,
+        "degree_in_sign": 16.308247,
+        "is_retrograde": false,
+        "speed": 1.229302
+      },
+      "Saturn": {
+        "longitude": 196.659539,
+        "sign_index": 6,
+        "degree_in_sign": 16.659539,
+        "is_retrograde": true,
+        "speed": -0.067201
+      },
+      "Rahu": {
+        "longitude": 105.295803,
+        "sign_index": 3,
+        "degree_in_sign": 15.295803,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 285.295803,
+        "sign_index": 9,
+        "degree_in_sign": 15.295803,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

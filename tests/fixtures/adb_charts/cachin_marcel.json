@@ -1,0 +1,109 @@
+{
+  "adb_id": 60129,
+  "name": "Cachin, Marcel",
+  "given_name": "Marcel Cachin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403960.675185,
+    "year": 1869,
+    "month": 9,
+    "day": 20,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Plourivo",
+    "country": "France",
+    "lat": 48.75,
+    "lon": -3.066667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cachin,_Marcel",
+  "source_notes": "Gauquelin vol 5\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 23.443643,
+    "lagna": 113.443643,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.037765,
+    "jd_ut": 2403960.675185,
+    "planets": {
+      "Sun": {
+        "longitude": 155.182424,
+        "sign_index": 5,
+        "degree_in_sign": 5.182424,
+        "is_retrograde": false,
+        "speed": 0.977989
+      },
+      "Moon": {
+        "longitude": 326.932997,
+        "sign_index": 10,
+        "degree_in_sign": 26.932997,
+        "is_retrograde": false,
+        "speed": 10.769236
+      },
+      "Mars": {
+        "longitude": 198.133678,
+        "sign_index": 6,
+        "degree_in_sign": 18.133678,
+        "is_retrograde": false,
+        "speed": 0.682239
+      },
+      "Mercury": {
+        "longitude": 180.498169,
+        "sign_index": 6,
+        "degree_in_sign": 0.498169,
+        "is_retrograde": false,
+        "speed": 1.18023
+      },
+      "Jupiter": {
+        "longitude": 28.78731,
+        "sign_index": 0,
+        "degree_in_sign": 28.78731,
+        "is_retrograde": true,
+        "speed": -0.035084
+      },
+      "Venus": {
+        "longitude": 190.109983,
+        "sign_index": 6,
+        "degree_in_sign": 10.109983,
+        "is_retrograde": false,
+        "speed": 1.201267
+      },
+      "Saturn": {
+        "longitude": 229.556455,
+        "sign_index": 7,
+        "degree_in_sign": 19.556455,
+        "is_retrograde": false,
+        "speed": 0.056616
+      },
+      "Rahu": {
+        "longitude": 102.779518,
+        "sign_index": 3,
+        "degree_in_sign": 12.779518,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 282.779518,
+        "sign_index": 9,
+        "degree_in_sign": 12.779518,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

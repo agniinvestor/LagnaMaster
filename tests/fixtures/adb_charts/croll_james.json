@@ -1,0 +1,108 @@
+{
+  "adb_id": 58874,
+  "name": "Croll, James",
+  "given_name": "James Croll",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2386168.467704,
+    "year": 1821,
+    "month": 1,
+    "day": 2,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Wolfhill",
+    "country": "Scotland",
+    "lat": 56.485,
+    "lon": -3.373611
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Croll,_James",
+  "source_notes": "Sy Scholfield quotes \"Autobiographical Sketch of James Croll\" by James Campbell Irons (Stanford, 1896), p. 45: \"At Little Whitefield, a small hamlet in this charming county, James Croll was born on Tuesday the 2nd of January 1821, at eleven o'clock at night.\" \\n",
+  "categories": [
+    "Vocation : Science : Geology"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.476424,
+    "lagna": 135.476424,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.35777,
+    "jd_ut": 2386168.467704,
+    "planets": {
+      "Sun": {
+        "longitude": 260.976019,
+        "sign_index": 8,
+        "degree_in_sign": 20.976019,
+        "is_retrograde": false,
+        "speed": 1.019743
+      },
+      "Moon": {
+        "longitude": 244.571963,
+        "sign_index": 8,
+        "degree_in_sign": 4.571963,
+        "is_retrograde": false,
+        "speed": 16.636466
+      },
+      "Mars": {
+        "longitude": 263.172545,
+        "sign_index": 8,
+        "degree_in_sign": 23.172545,
+        "is_retrograde": false,
+        "speed": 0.771763
+      },
+      "Mercury": {
+        "longitude": 240.045824,
+        "sign_index": 8,
+        "degree_in_sign": 0.045824,
+        "is_retrograde": false,
+        "speed": 1.309341
+      },
+      "Jupiter": {
+        "longitude": 326.875168,
+        "sign_index": 10,
+        "degree_in_sign": 26.875168,
+        "is_retrograde": false,
+        "speed": 0.16185
+      },
+      "Venus": {
+        "longitude": 226.940802,
+        "sign_index": 7,
+        "degree_in_sign": 16.940802,
+        "is_retrograde": false,
+        "speed": 1.229483
+      },
+      "Saturn": {
+        "longitude": 345.931458,
+        "sign_index": 11,
+        "degree_in_sign": 15.931458,
+        "is_retrograde": false,
+        "speed": 0.043081
+      },
+      "Rahu": {
+        "longitude": 325.627016,
+        "sign_index": 10,
+        "degree_in_sign": 25.627016,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 145.627016,
+        "sign_index": 4,
+        "degree_in_sign": 25.627016,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 58157,
+  "name": "Czapek, Rudolf",
+  "given_name": "Rudolf Czapek",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404610.761991,
+    "year": 1871,
+    "month": 7,
+    "day": 2,
+    "calendar": "g",
+    "time": "07:15",
+    "time_type": "s",
+    "hour": 7.25,
+    "time_unknown": false,
+    "place": "Prague",
+    "country": "Czech Republic",
+    "lat": 50.083333,
+    "lon": 14.433333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Czapek,_Rudolf",
+  "source_notes": "Taeger quotes Michael Keller quoting \"Sterne und Mensch\" 1935\\n\\nvia Dr.O.Kellner in \"Sterne und Mensch\" (Jg. XI, Heft 7/8)\\n",
+  "categories": [
+    "Personal : Death : Suicide",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Critic"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 2.058627,
+    "lagna": 92.058627,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.062613,
+    "jd_ut": 2404610.761991,
+    "planets": {
+      "Sun": {
+        "longitude": 77.818085,
+        "sign_index": 2,
+        "degree_in_sign": 17.818085,
+        "is_retrograde": false,
+        "speed": 0.952922
+      },
+      "Moon": {
+        "longitude": 252.89657,
+        "sign_index": 8,
+        "degree_in_sign": 12.89657,
+        "is_retrograde": false,
+        "speed": 16.584107
+      },
+      "Mars": {
+        "longitude": 165.058552,
+        "sign_index": 5,
+        "degree_in_sign": 15.058552,
+        "is_retrograde": false,
+        "speed": 0.483462
+      },
+      "Mercury": {
+        "longitude": 66.945265,
+        "sign_index": 2,
+        "degree_in_sign": 6.945265,
+        "is_retrograde": false,
+        "speed": 2.042282
+      },
+      "Jupiter": {
+        "longitude": 76.667304,
+        "sign_index": 2,
+        "degree_in_sign": 16.667304,
+        "is_retrograde": false,
+        "speed": 0.22691
+      },
+      "Venus": {
+        "longitude": 122.570509,
+        "sign_index": 4,
+        "degree_in_sign": 2.570509,
+        "is_retrograde": false,
+        "speed": 1.046729
+      },
+      "Saturn": {
+        "longitude": 254.279017,
+        "sign_index": 8,
+        "degree_in_sign": 14.279017,
+        "is_retrograde": true,
+        "speed": -0.073633
+      },
+      "Rahu": {
+        "longitude": 68.330031,
+        "sign_index": 2,
+        "degree_in_sign": 8.330031,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 248.330031,
+        "sign_index": 8,
+        "degree_in_sign": 8.330031,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

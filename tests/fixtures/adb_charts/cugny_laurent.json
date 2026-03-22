@@ -1,0 +1,111 @@
+{
+  "adb_id": 63197,
+  "name": "Cugny, Laurent",
+  "given_name": "Laurent Cugny",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435211.625,
+    "year": 1955,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "La Garenne Colombes",
+    "country": "France",
+    "lat": 48.916667,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cugny,_Laurent",
+  "source_notes": "Didier Geslain archive, 'jazz' pdf file, p. 35.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Writers : Critic"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 1.287035,
+    "lagna": 271.287035,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.232489,
+    "jd_ut": 2435211.625,
+    "planets": {
+      "Sun": {
+        "longitude": 0.163184,
+        "sign_index": 0,
+        "degree_in_sign": 0.163184,
+        "is_retrograde": false,
+        "speed": 0.979537
+      },
+      "Moon": {
+        "longitude": 255.6026,
+        "sign_index": 8,
+        "degree_in_sign": 15.6026,
+        "is_retrograde": false,
+        "speed": 8.696293
+      },
+      "Mars": {
+        "longitude": 38.899945,
+        "sign_index": 1,
+        "degree_in_sign": 8.899945,
+        "is_retrograde": false,
+        "speed": 0.675236
+      },
+      "Mercury": {
+        "longitude": 350.516571,
+        "sign_index": 11,
+        "degree_in_sign": 20.516571,
+        "is_retrograde": false,
+        "speed": 1.939185
+      },
+      "Jupiter": {
+        "longitude": 87.887758,
+        "sign_index": 2,
+        "degree_in_sign": 27.887758,
+        "is_retrograde": false,
+        "speed": 0.085156
+      },
+      "Venus": {
+        "longitude": 324.183462,
+        "sign_index": 10,
+        "degree_in_sign": 24.183462,
+        "is_retrograde": false,
+        "speed": 1.194301
+      },
+      "Saturn": {
+        "longitude": 206.429712,
+        "sign_index": 6,
+        "degree_in_sign": 26.429712,
+        "is_retrograde": true,
+        "speed": -0.063154
+      },
+      "Rahu": {
+        "longitude": 246.726185,
+        "sign_index": 8,
+        "degree_in_sign": 6.726185,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 66.726185,
+        "sign_index": 2,
+        "degree_in_sign": 6.726185,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

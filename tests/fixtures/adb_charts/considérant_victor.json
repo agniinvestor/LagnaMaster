@@ -1,0 +1,110 @@
+{
+  "adb_id": 56193,
+  "name": "Considérant, Victor",
+  "given_name": "Victor Considérant",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2381702.816991,
+    "year": 1808,
+    "month": 10,
+    "day": 12,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Salins les Bains",
+    "country": "France",
+    "lat": 46.95,
+    "lon": 5.883333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Considérant,_Victor",
+  "source_notes": "Geslain archive\\nOther source gives 8:00, acte 164.\\n\\n",
+  "categories": [
+    "Traits : Personality : Idealist",
+    "Vocation : Humanities+Social Sciences : Sociologist",
+    "Notable : Famous : Socialite"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 25.158327,
+    "lagna": 175.158327,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.187121,
+    "jd_ut": 2381702.816991,
+    "planets": {
+      "Sun": {
+        "longitude": 177.610673,
+        "sign_index": 5,
+        "degree_in_sign": 27.610673,
+        "is_retrograde": false,
+        "speed": 0.99126
+      },
+      "Moon": {
+        "longitude": 81.849549,
+        "sign_index": 2,
+        "degree_in_sign": 21.849549,
+        "is_retrograde": false,
+        "speed": 9.440911
+      },
+      "Mars": {
+        "longitude": 126.472979,
+        "sign_index": 4,
+        "degree_in_sign": 6.472979,
+        "is_retrograde": false,
+        "speed": 0.599562
+      },
+      "Mercury": {
+        "longitude": 197.515132,
+        "sign_index": 6,
+        "degree_in_sign": 17.515132,
+        "is_retrograde": false,
+        "speed": 1.400643
+      },
+      "Jupiter": {
+        "longitude": 317.76118,
+        "sign_index": 10,
+        "degree_in_sign": 17.76118,
+        "is_retrograde": true,
+        "speed": -0.072497
+      },
+      "Venus": {
+        "longitude": 196.345114,
+        "sign_index": 6,
+        "degree_in_sign": 16.345114,
+        "is_retrograde": false,
+        "speed": 1.241195
+      },
+      "Saturn": {
+        "longitude": 209.514936,
+        "sign_index": 6,
+        "degree_in_sign": 29.514936,
+        "is_retrograde": false,
+        "speed": 0.107019
+      },
+      "Rahu": {
+        "longitude": 202.271625,
+        "sign_index": 6,
+        "degree_in_sign": 22.271625,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 22.271625,
+        "sign_index": 0,
+        "degree_in_sign": 22.271625,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

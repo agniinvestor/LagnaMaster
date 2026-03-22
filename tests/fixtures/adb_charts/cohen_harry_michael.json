@@ -1,0 +1,108 @@
+{
+  "adb_id": 47895,
+  "name": "Cohen, Harry Michael",
+  "given_name": "Harry Michael Cohen",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433261.333333,
+    "year": 1949,
+    "month": 12,
+    "day": 10,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Hackney",
+    "country": "England",
+    "lat": 51.55,
+    "lon": -0.05
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Harry_Michael",
+  "source_notes": "Pulsar collection quotes him, \"I hope this info is helpful.\"\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 24.027747,
+    "lagna": 84.027747,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.157916,
+    "jd_ut": 2433261.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 235.290613,
+        "sign_index": 7,
+        "degree_in_sign": 25.290613,
+        "is_retrograde": false,
+        "speed": 1.016333
+      },
+      "Moon": {
+        "longitude": 117.739588,
+        "sign_index": 3,
+        "degree_in_sign": 27.739588,
+        "is_retrograde": false,
+        "speed": 15.123054
+      },
+      "Mars": {
+        "longitude": 150.207284,
+        "sign_index": 5,
+        "degree_in_sign": 0.207284,
+        "is_retrograde": false,
+        "speed": 0.461346
+      },
+      "Mercury": {
+        "longitude": 245.700249,
+        "sign_index": 8,
+        "degree_in_sign": 5.700249,
+        "is_retrograde": false,
+        "speed": 1.557114
+      },
+      "Jupiter": {
+        "longitude": 278.798613,
+        "sign_index": 9,
+        "degree_in_sign": 8.798613,
+        "is_retrograde": false,
+        "speed": 0.202661
+      },
+      "Venus": {
+        "longitude": 280.725501,
+        "sign_index": 9,
+        "degree_in_sign": 10.725501,
+        "is_retrograde": false,
+        "speed": 0.817674
+      },
+      "Saturn": {
+        "longitude": 145.940236,
+        "sign_index": 4,
+        "degree_in_sign": 25.940236,
+        "is_retrograde": false,
+        "speed": 0.035185
+      },
+      "Rahu": {
+        "longitude": 350.076153,
+        "sign_index": 11,
+        "degree_in_sign": 20.076153,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 170.076153,
+        "sign_index": 5,
+        "degree_in_sign": 20.076153,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

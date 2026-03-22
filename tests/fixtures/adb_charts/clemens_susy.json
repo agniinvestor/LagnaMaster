@@ -1,0 +1,109 @@
+{
+  "adb_id": 60553,
+  "name": "Clemens, Susy",
+  "given_name": "Susy Clemens",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404871.897361,
+    "year": 1872,
+    "month": 3,
+    "day": 19,
+    "calendar": "g",
+    "time": "04:25",
+    "time_type": "l",
+    "hour": 4.416667,
+    "time_unknown": false,
+    "place": "Elmira",
+    "country": "New York",
+    "lat": 42.083333,
+    "lon": -76.8
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clemens,_Susy",
+  "source_notes": "Sy Scholfield quotes a letter by her father to his brother Orion Clemens dated 19 March 1872: \"Born, in Elmira, N. Y., at 4.25 AM March 19, 1872, to the wife of Saml. L. Clemens, of Hartford, Conn., a daughter. Mother & child doing exceedingly well. Five-pounder. In witness whereof, &c, Sam. L. Clemens.\"\\n\\nhttp://www.marktwainproject.org/xtf/view?docId=letters/UCCL00734.xml%3bquery=born%3bsearchAll=%3bsectionType1=%3bsectionType2=%3bsectionType3=%3bsectionType4=%3bsectionType5=%3bstyle=letter%3bbrand=mtp#1 \\n\\nA photo of the document can be seen here: http://digital.lib.lehigh.edu/cdm4/remain_viewer.php?DMTHUMB=1&ptr=1663&view=full\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Writers : Biographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 1.806711,
+    "lagna": 271.806711,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.072595,
+    "jd_ut": 2404871.897361,
+    "planets": {
+      "Sun": {
+        "longitude": 337.046433,
+        "sign_index": 11,
+        "degree_in_sign": 7.046433,
+        "is_retrograde": false,
+        "speed": 0.992519
+      },
+      "Moon": {
+        "longitude": 91.50691,
+        "sign_index": 3,
+        "degree_in_sign": 1.50691,
+        "is_retrograde": false,
+        "speed": 14.614321
+      },
+      "Mars": {
+        "longitude": 351.245572,
+        "sign_index": 11,
+        "degree_in_sign": 21.245572,
+        "is_retrograde": false,
+        "speed": 0.760752
+      },
+      "Mercury": {
+        "longitude": 345.468424,
+        "sign_index": 11,
+        "degree_in_sign": 15.468424,
+        "is_retrograde": false,
+        "speed": 1.992493
+      },
+      "Jupiter": {
+        "longitude": 87.810252,
+        "sign_index": 2,
+        "degree_in_sign": 27.810252,
+        "is_retrograde": false,
+        "speed": 0.011966
+      },
+      "Venus": {
+        "longitude": 306.354985,
+        "sign_index": 10,
+        "degree_in_sign": 6.354985,
+        "is_retrograde": false,
+        "speed": 1.219877
+      },
+      "Saturn": {
+        "longitude": 267.810033,
+        "sign_index": 8,
+        "degree_in_sign": 27.810033,
+        "is_retrograde": false,
+        "speed": 0.064527
+      },
+      "Rahu": {
+        "longitude": 54.49191,
+        "sign_index": 1,
+        "degree_in_sign": 24.49191,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 234.49191,
+        "sign_index": 7,
+        "degree_in_sign": 24.49191,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

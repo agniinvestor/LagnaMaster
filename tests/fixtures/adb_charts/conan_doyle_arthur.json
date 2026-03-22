@@ -1,0 +1,130 @@
+{
+  "adb_id": 2486,
+  "name": "Conan Doyle, Arthur",
+  "given_name": "Arthur Conan Doyle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2400186.704861,
+    "year": 1859,
+    "month": 5,
+    "day": 22,
+    "calendar": "g",
+    "time": "04:55",
+    "time_type": "s",
+    "hour": 4.916667,
+    "time_unknown": false,
+    "place": "Edinburgh",
+    "country": "Scotland",
+    "lat": 55.95,
+    "lon": -3.216667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conan_Doyle,_Arthur",
+  "source_notes": "Paul Wright collection, B.C.\\nChanged to GMT on 13-dec-2013. \\nOn 3 August 2017 Sy Scholfield forwarded birth registry entry and upgraded rating to BC/BR in hand [https://www.nrscotland.gov.uk/research/learning/hall-of-fame/hall-of-fame-a-z/doyle-arthur-conan]. \\nDeath data from ''Sherlock Holmes: The Story Behind the World's Greatest Detective'' by The Editors of LIFE (Time Inc. Books, 2017): \"At 7:30 on the morning of July 7, 1930, Doyle told Denis, Adrian, and Jean that he wanted to look out the window at the countryside.... Two hours later, at age 71, Doyle died.\"\\n",
+  "categories": [
+    "Traits : Personality : Hard worker",
+    "Diagnoses : Major Diseases : Other Major diseases",
+    "Diagnoses : Psychological : Depression",
+    "Diagnoses : Psychological : Sleep disorders",
+    "Family : Childhood : Parent, Single or Step",
+    "Family : Childhood : Other Childhood",
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids -Traumatic event",
+    "Lifestyle : Social Life : Groups",
+    "Lifestyle : Social Life : Sports",
+    "Personal : Religion/Spirituality : Spiritualist",
+    "Vocation : Education : Public speaker",
+    "Vocation : Medical : Physician",
+    "Vocation : Travel : Crew/ Ship, Train, Bus",
+    "Vocation : Writers : Detective/ Mystery",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Knighted",
+    "Notable : Famous : Historic figure",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.998342,
+    "lagna": 35.998342,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.893517,
+    "jd_ut": 2400186.704861,
+    "planets": {
+      "Sun": {
+        "longitude": 38.643449,
+        "sign_index": 1,
+        "degree_in_sign": 8.643449,
+        "is_retrograde": false,
+        "speed": 0.96072
+      },
+      "Moon": {
+        "longitude": 278.50928,
+        "sign_index": 9,
+        "degree_in_sign": 8.50928,
+        "is_retrograde": false,
+        "speed": 8.789001
+      },
+      "Mars": {
+        "longitude": 56.575231,
+        "sign_index": 1,
+        "degree_in_sign": 26.575231,
+        "is_retrograde": false,
+        "speed": 0.673322
+      },
+      "Mercury": {
+        "longitude": 13.505106,
+        "sign_index": 0,
+        "degree_in_sign": 13.505106,
+        "is_retrograde": false,
+        "speed": 1.064726
+      },
+      "Jupiter": {
+        "longitude": 63.923517,
+        "sign_index": 2,
+        "degree_in_sign": 3.923517,
+        "is_retrograde": false,
+        "speed": 0.217258
+      },
+      "Venus": {
+        "longitude": 5.21346,
+        "sign_index": 0,
+        "degree_in_sign": 5.21346,
+        "is_retrograde": false,
+        "speed": 1.189617
+      },
+      "Saturn": {
+        "longitude": 105.274648,
+        "sign_index": 3,
+        "degree_in_sign": 15.274648,
+        "is_retrograde": false,
+        "speed": 0.074525
+      },
+      "Rahu": {
+        "longitude": 302.770284,
+        "sign_index": 10,
+        "degree_in_sign": 2.770284,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 122.770284,
+        "sign_index": 4,
+        "degree_in_sign": 2.770284,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

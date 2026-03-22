@@ -1,0 +1,109 @@
+{
+  "adb_id": 15284,
+  "name": "Cortese, Jack Philip",
+  "given_name": "Jack Philip Cortese",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2447972.147917,
+    "year": 1990,
+    "month": 3,
+    "day": 21,
+    "calendar": "g",
+    "time": "07:33",
+    "time_type": "s",
+    "hour": 7.55,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortese,_Jack_Philip",
+  "source_notes": "Beth Koch quotes his dad in People magazine\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 17.950951,
+    "lagna": 347.950951,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.720453,
+    "jd_ut": 2447972.147917,
+    "planets": {
+      "Sun": {
+        "longitude": 337.030565,
+        "sign_index": 11,
+        "degree_in_sign": 7.030565,
+        "is_retrograde": false,
+        "speed": 0.993067
+      },
+      "Moon": {
+        "longitude": 270.296445,
+        "sign_index": 9,
+        "degree_in_sign": 0.296445,
+        "is_retrograde": false,
+        "speed": 7.990462
+      },
+      "Mars": {
+        "longitude": 283.681184,
+        "sign_index": 9,
+        "degree_in_sign": 13.681184,
+        "is_retrograde": false,
+        "speed": 0.74334
+      },
+      "Mercury": {
+        "longitude": 339.559901,
+        "sign_index": 11,
+        "degree_in_sign": 9.559901,
+        "is_retrograde": false,
+        "speed": 2.006114
+      },
+      "Jupiter": {
+        "longitude": 68.07975,
+        "sign_index": 2,
+        "degree_in_sign": 8.07975,
+        "is_retrograde": false,
+        "speed": 0.077916
+      },
+      "Venus": {
+        "longitude": 290.883029,
+        "sign_index": 9,
+        "degree_in_sign": 20.883029,
+        "is_retrograde": false,
+        "speed": 0.919872
+      },
+      "Saturn": {
+        "longitude": 270.054109,
+        "sign_index": 9,
+        "degree_in_sign": 0.054109,
+        "is_retrograde": false,
+        "speed": 0.067973
+      },
+      "Rahu": {
+        "longitude": 290.520062,
+        "sign_index": 9,
+        "degree_in_sign": 20.520062,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 110.520062,
+        "sign_index": 3,
+        "degree_in_sign": 20.520062,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

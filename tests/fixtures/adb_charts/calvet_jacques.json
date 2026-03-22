@@ -1,0 +1,112 @@
+{
+  "adb_id": 37073,
+  "name": "Calvet, Jacques",
+  "given_name": "Jacques Calvet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426603.541667,
+    "year": 1931,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "d",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Boulogne Billancourt",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvet,_Jacques",
+  "source_notes": "Didier Geslain archive, 'business_men_pdg' pdf file, p. 31.\\nSame data from Petitallot who quoted B.C., Cadran No. 45, October 1997.\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Top executive",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 19.267836,
+    "lagna": 79.267836,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.903357,
+    "jd_ut": 2426603.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 152.233055,
+        "sign_index": 5,
+        "degree_in_sign": 2.233055,
+        "is_retrograde": false,
+        "speed": 0.976586
+      },
+      "Moon": {
+        "longitude": 243.882988,
+        "sign_index": 8,
+        "degree_in_sign": 3.882988,
+        "is_retrograde": false,
+        "speed": 14.262027
+      },
+      "Mars": {
+        "longitude": 188.224408,
+        "sign_index": 6,
+        "degree_in_sign": 8.224408,
+        "is_retrograde": false,
+        "speed": 0.672566
+      },
+      "Mercury": {
+        "longitude": 134.649188,
+        "sign_index": 4,
+        "degree_in_sign": 14.649188,
+        "is_retrograde": false,
+        "speed": 0.708666
+      },
+      "Jupiter": {
+        "longitude": 110.686004,
+        "sign_index": 3,
+        "degree_in_sign": 20.686004,
+        "is_retrograde": false,
+        "speed": 0.190639
+      },
+      "Venus": {
+        "longitude": 155.164845,
+        "sign_index": 5,
+        "degree_in_sign": 5.164845,
+        "is_retrograde": false,
+        "speed": 1.244826
+      },
+      "Saturn": {
+        "longitude": 263.750179,
+        "sign_index": 8,
+        "degree_in_sign": 23.750179,
+        "is_retrograde": true,
+        "speed": -0.004628
+      },
+      "Rahu": {
+        "longitude": 342.886305,
+        "sign_index": 11,
+        "degree_in_sign": 12.886305,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 162.886305,
+        "sign_index": 5,
+        "degree_in_sign": 12.886305,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

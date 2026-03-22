@@ -1,0 +1,108 @@
+{
+  "adb_id": 69791,
+  "name": "Combet, Jacques",
+  "given_name": "Jacques Combet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422641.708333,
+    "year": 1920,
+    "month": 11,
+    "day": 13,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Nîmes",
+    "country": "France",
+    "lat": 43.833333,
+    "lon": 4.35
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Combet,_Jacques",
+  "source_notes": "Didier Geslain archive, 'timbre poste' pdf file, p. 7.\\n",
+  "categories": [
+    "Vocation : Art : Other Art"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 16.176559,
+    "lagna": 166.176559,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.751887,
+    "jd_ut": 2422641.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 207.775321,
+        "sign_index": 6,
+        "degree_in_sign": 27.775321,
+        "is_retrograde": false,
+        "speed": 1.007229
+      },
+      "Moon": {
+        "longitude": 236.802563,
+        "sign_index": 7,
+        "degree_in_sign": 26.802563,
+        "is_retrograde": false,
+        "speed": 14.469565
+      },
+      "Mars": {
+        "longitude": 266.297741,
+        "sign_index": 8,
+        "degree_in_sign": 26.297741,
+        "is_retrograde": false,
+        "speed": 0.756779
+      },
+      "Mercury": {
+        "longitude": 214.800326,
+        "sign_index": 7,
+        "degree_in_sign": 4.800326,
+        "is_retrograde": true,
+        "speed": -1.181712
+      },
+      "Jupiter": {
+        "longitude": 142.222957,
+        "sign_index": 4,
+        "degree_in_sign": 22.222957,
+        "is_retrograde": false,
+        "speed": 0.141325
+      },
+      "Venus": {
+        "longitude": 241.728912,
+        "sign_index": 8,
+        "degree_in_sign": 1.728912,
+        "is_retrograde": false,
+        "speed": 1.22161
+      },
+      "Saturn": {
+        "longitude": 149.687791,
+        "sign_index": 4,
+        "degree_in_sign": 29.687791,
+        "is_retrograde": false,
+        "speed": 0.084894
+      },
+      "Rahu": {
+        "longitude": 192.832104,
+        "sign_index": 6,
+        "degree_in_sign": 12.832104,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 12.832104,
+        "sign_index": 0,
+        "degree_in_sign": 12.832104,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 87877,
+  "name": "Cook, Al",
+  "given_name": "Al Cook",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431513.479861,
+    "year": 1945,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "00:31",
+    "time_type": "s",
+    "hour": 0.516667,
+    "time_unknown": false,
+    "place": "Bad Ischl",
+    "country": "Austria",
+    "lat": 47.716667,
+    "lon": 13.616667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cook,_Al",
+  "source_notes": "An Austrian astrologer visited a concert by Cook on 2 March 2019, and asked his partner about the time of birth. She answered spontaneously 0:31.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 7.252936,
+    "lagna": 187.252936,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.091085,
+    "jd_ut": 2431513.479861,
+    "planets": {
+      "Sun": {
+        "longitude": 314.932307,
+        "sign_index": 10,
+        "degree_in_sign": 14.932307,
+        "is_retrograde": false,
+        "speed": 1.004158
+      },
+      "Moon": {
+        "longitude": 134.837906,
+        "sign_index": 4,
+        "degree_in_sign": 14.837906,
+        "is_retrograde": false,
+        "speed": 8.647972
+      },
+      "Mars": {
+        "longitude": 286.597734,
+        "sign_index": 9,
+        "degree_in_sign": 16.597734,
+        "is_retrograde": false,
+        "speed": 0.772938
+      },
+      "Mercury": {
+        "longitude": 313.299289,
+        "sign_index": 10,
+        "degree_in_sign": 13.299289,
+        "is_retrograde": false,
+        "speed": 1.850379
+      },
+      "Jupiter": {
+        "longitude": 151.330111,
+        "sign_index": 5,
+        "degree_in_sign": 1.330111,
+        "is_retrograde": true,
+        "speed": -0.120139
+      },
+      "Venus": {
+        "longitude": 359.142854,
+        "sign_index": 11,
+        "degree_in_sign": 29.142854,
+        "is_retrograde": false,
+        "speed": 0.745939
+      },
+      "Saturn": {
+        "longitude": 70.790308,
+        "sign_index": 2,
+        "degree_in_sign": 10.790308,
+        "is_retrograde": true,
+        "speed": -0.013017
+      },
+      "Rahu": {
+        "longitude": 82.698513,
+        "sign_index": 2,
+        "degree_in_sign": 22.698513,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 262.698513,
+        "sign_index": 8,
+        "degree_in_sign": 22.698513,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 57068,
+  "name": "Corbiau, Gérard",
+  "given_name": "Gérard Corbiau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430257.3125,
+    "year": 1941,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "d",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Etterbeek",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.383333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corbiau,_Gérard",
+  "source_notes": "André Dekoster, acte 1200.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 5.14915,
+    "lagna": 5.14915,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.043055,
+    "jd_ut": 2430257.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 153.40833,
+        "sign_index": 5,
+        "degree_in_sign": 3.40833,
+        "is_retrograde": false,
+        "speed": 0.977602
+      },
+      "Moon": {
+        "longitude": 134.984482,
+        "sign_index": 4,
+        "degree_in_sign": 14.984482,
+        "is_retrograde": false,
+        "speed": 16.66768
+      },
+      "Mars": {
+        "longitude": 359.453836,
+        "sign_index": 11,
+        "degree_in_sign": 29.453836,
+        "is_retrograde": true,
+        "speed": -0.184404
+      },
+      "Mercury": {
+        "longitude": 176.082138,
+        "sign_index": 5,
+        "degree_in_sign": 26.082138,
+        "is_retrograde": false,
+        "speed": 1.367689
+      },
+      "Jupiter": {
+        "longitude": 57.715849,
+        "sign_index": 1,
+        "degree_in_sign": 27.715849,
+        "is_retrograde": false,
+        "speed": 0.065954
+      },
+      "Venus": {
+        "longitude": 192.445165,
+        "sign_index": 6,
+        "degree_in_sign": 12.445165,
+        "is_retrograde": false,
+        "speed": 1.179399
+      },
+      "Saturn": {
+        "longitude": 35.433104,
+        "sign_index": 1,
+        "degree_in_sign": 5.433104,
+        "is_retrograde": true,
+        "speed": -0.016366
+      },
+      "Rahu": {
+        "longitude": 149.265417,
+        "sign_index": 4,
+        "degree_in_sign": 29.265417,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 329.265417,
+        "sign_index": 10,
+        "degree_in_sign": 29.265417,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

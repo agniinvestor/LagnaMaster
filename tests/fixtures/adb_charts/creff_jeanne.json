@@ -1,0 +1,106 @@
+{
+  "adb_id": 50837,
+  "name": "Creff, Jeanne",
+  "given_name": "Jeanne Creff",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2424263.270833,
+    "year": 1925,
+    "month": 4,
+    "day": 22,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "d",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Creff,_Jeanne",
+  "source_notes": "Steinbrecher collection: Lesc quotes De Marre for birth record\\n",
+  "categories": [],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 13.493042,
+    "lagna": 163.493042,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.813882,
+    "jd_ut": 2424263.270833,
+    "planets": {
+      "Sun": {
+        "longitude": 9.289222,
+        "sign_index": 0,
+        "degree_in_sign": 9.289222,
+        "is_retrograde": false,
+        "speed": 0.974834
+      },
+      "Moon": {
+        "longitude": 4.468028,
+        "sign_index": 0,
+        "degree_in_sign": 4.468028,
+        "is_retrograde": false,
+        "speed": 13.749701
+      },
+      "Mars": {
+        "longitude": 56.250555,
+        "sign_index": 1,
+        "degree_in_sign": 26.250555,
+        "is_retrograde": false,
+        "speed": 0.638429
+      },
+      "Mercury": {
+        "longitude": 2.525442,
+        "sign_index": 0,
+        "degree_in_sign": 2.525442,
+        "is_retrograde": true,
+        "speed": -0.643634
+      },
+      "Jupiter": {
+        "longitude": 269.213167,
+        "sign_index": 8,
+        "degree_in_sign": 29.213167,
+        "is_retrograde": false,
+        "speed": 0.055059
+      },
+      "Venus": {
+        "longitude": 8.955126,
+        "sign_index": 0,
+        "degree_in_sign": 8.955126,
+        "is_retrograde": false,
+        "speed": 1.235912
+      },
+      "Saturn": {
+        "longitude": 198.888196,
+        "sign_index": 6,
+        "degree_in_sign": 18.888196,
+        "is_retrograde": true,
+        "speed": -0.074054
+      },
+      "Rahu": {
+        "longitude": 106.902125,
+        "sign_index": 3,
+        "degree_in_sign": 16.902125,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 286.902125,
+        "sign_index": 9,
+        "degree_in_sign": 16.902125,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

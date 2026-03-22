@@ -1,0 +1,108 @@
+{
+  "adb_id": 59783,
+  "name": "Charles de Bourbon",
+  "given_name": "Charles de Bourbon",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2277688.94963,
+    "year": 1523,
+    "month": 12,
+    "day": 22,
+    "calendar": "j",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "La Ferté sous Jouarre",
+    "country": "France",
+    "lat": 48.95,
+    "lon": 3.133333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_de_Bourbon",
+  "source_notes": "Sy Scholfield quotes \"Bibliothèque de l'École des hautes études, IVe section, Sciences historiques et philologiques\" (1912), p. 1: \"L'an 1523, dans la matinée du 22 décembre, vers les onze heures, naquit au château de La Ferté-sous-Jouarre Charles de Bourbon, fils de Charles de Bourbon, duc de Vendôme, et de Françoise d'Alençon.\" Same data in \"Histoire de la Maison Royale de France, et des grands officiers de la Couronne\" by Anselme de Sainte-Marie, Ange de Sainte-Rosalie (libr. associés, 1726), p. 329: \"Charles II . . . né à Ferté-sous-Jouare en Brie le 22. septembre 1523. sur les onze heures du matin . . .\" \\n",
+  "categories": [
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 14.12901,
+    "lagna": 314.12901,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.214973,
+    "jd_ut": 2277688.94963,
+    "planets": {
+      "Sun": {
+        "longitude": 262.667499,
+        "sign_index": 8,
+        "degree_in_sign": 22.667499,
+        "is_retrograde": false,
+        "speed": 1.019062
+      },
+      "Moon": {
+        "longitude": 80.841888,
+        "sign_index": 2,
+        "degree_in_sign": 20.841888,
+        "is_retrograde": false,
+        "speed": 18.42809
+      },
+      "Mars": {
+        "longitude": 287.135322,
+        "sign_index": 9,
+        "degree_in_sign": 17.135322,
+        "is_retrograde": false,
+        "speed": 0.788262
+      },
+      "Mercury": {
+        "longitude": 242.746731,
+        "sign_index": 8,
+        "degree_in_sign": 2.746731,
+        "is_retrograde": false,
+        "speed": 0.081975
+      },
+      "Jupiter": {
+        "longitude": 313.301189,
+        "sign_index": 10,
+        "degree_in_sign": 13.301189,
+        "is_retrograde": false,
+        "speed": 0.194739
+      },
+      "Venus": {
+        "longitude": 260.8468,
+        "sign_index": 8,
+        "degree_in_sign": 20.8468,
+        "is_retrograde": false,
+        "speed": 1.257821
+      },
+      "Saturn": {
+        "longitude": 317.825668,
+        "sign_index": 10,
+        "degree_in_sign": 17.825668,
+        "is_retrograde": false,
+        "speed": 0.086625
+      },
+      "Rahu": {
+        "longitude": 314.208821,
+        "sign_index": 10,
+        "degree_in_sign": 14.208821,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 134.208821,
+        "sign_index": 4,
+        "degree_in_sign": 14.208821,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

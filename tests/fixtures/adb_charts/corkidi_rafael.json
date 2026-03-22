@@ -1,0 +1,109 @@
+{
+  "adb_id": 74272,
+  "name": "Corkidi, Rafael",
+  "given_name": "Rafael Corkidi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426116.819444,
+    "year": 1930,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "01:40",
+    "time_type": "s",
+    "hour": 1.666667,
+    "time_unknown": false,
+    "place": "Puebla (Puebla)",
+    "country": "Mexico",
+    "lat": 19.05,
+    "lon": -98.166667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corkidi,_Rafael",
+  "source_notes": "Castellanos quotes BC\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 24.00601,
+    "lagna": 294.00601,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.884748,
+    "jd_ut": 2426116.819444,
+    "planets": {
+      "Sun": {
+        "longitude": 35.673714,
+        "sign_index": 1,
+        "degree_in_sign": 5.673714,
+        "is_retrograde": false,
+        "speed": 0.962128
+      },
+      "Moon": {
+        "longitude": 302.368858,
+        "sign_index": 10,
+        "degree_in_sign": 2.368858,
+        "is_retrograde": false,
+        "speed": 10.08422
+      },
+      "Mars": {
+        "longitude": 356.726326,
+        "sign_index": 11,
+        "degree_in_sign": 26.726326,
+        "is_retrograde": false,
+        "speed": 0.757685
+      },
+      "Mercury": {
+        "longitude": 35.512211,
+        "sign_index": 1,
+        "degree_in_sign": 5.512211,
+        "is_retrograde": true,
+        "speed": -0.578612
+      },
+      "Jupiter": {
+        "longitude": 58.568057,
+        "sign_index": 1,
+        "degree_in_sign": 28.568057,
+        "is_retrograde": false,
+        "speed": 0.220939
+      },
+      "Venus": {
+        "longitude": 61.220437,
+        "sign_index": 2,
+        "degree_in_sign": 1.220437,
+        "is_retrograde": false,
+        "speed": 1.211781
+      },
+      "Saturn": {
+        "longitude": 258.350236,
+        "sign_index": 8,
+        "degree_in_sign": 18.350236,
+        "is_retrograde": true,
+        "speed": -0.043774
+      },
+      "Rahu": {
+        "longitude": 8.678727,
+        "sign_index": 0,
+        "degree_in_sign": 8.678727,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 188.678727,
+        "sign_index": 6,
+        "degree_in_sign": 8.678727,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

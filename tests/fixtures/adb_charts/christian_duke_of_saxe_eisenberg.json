@@ -1,0 +1,110 @@
+{
+  "adb_id": 79260,
+  "name": "Christian, Duke of Saxe-Eisenberg",
+  "given_name": "Duke of Saxe-Eisenberg Christian",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2324821.814074,
+    "year": 1653,
+    "month": 1,
+    "day": 6,
+    "calendar": "j",
+    "time": "08:15",
+    "time_type": "l",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Gotha",
+    "country": "Germany",
+    "lat": 50.95,
+    "lon": 10.683333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian,_Duke_of_Saxe-Eisenberg",
+  "source_notes": "Sy Scholfield quotes from \"Ernst der Fromme, Herzog zu Sachsen-Gotha und Altenburg: ein Beitrag zur Geschichte des 17. Jahrhunderts, Part 1\" by August Beck (Böhlau, 1865), p. 782: \"Christian geboren Donnerstags den 6. Januar 1653 früh nach 8 Uhr auf dem Friedensteine\" (Christian [was] born on Thursday, 6 January 1653, in the morning after 8 o'clock at Friedensteine). Thursday was Old Style.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 22.959282,
+    "lagna": 262.959282,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.014297,
+    "jd_ut": 2324821.814074,
+    "planets": {
+      "Sun": {
+        "longitude": 277.72345,
+        "sign_index": 9,
+        "degree_in_sign": 7.72345,
+        "is_retrograde": false,
+        "speed": 1.017318
+      },
+      "Moon": {
+        "longitude": 127.422204,
+        "sign_index": 4,
+        "degree_in_sign": 7.422204,
+        "is_retrograde": false,
+        "speed": 12.666637
+      },
+      "Mars": {
+        "longitude": 195.440405,
+        "sign_index": 6,
+        "degree_in_sign": 15.440405,
+        "is_retrograde": false,
+        "speed": 0.517527
+      },
+      "Mercury": {
+        "longitude": 296.329315,
+        "sign_index": 9,
+        "degree_in_sign": 26.329315,
+        "is_retrograde": false,
+        "speed": 0.908314
+      },
+      "Jupiter": {
+        "longitude": 276.174619,
+        "sign_index": 9,
+        "degree_in_sign": 6.174619,
+        "is_retrograde": false,
+        "speed": 0.23599
+      },
+      "Venus": {
+        "longitude": 236.355319,
+        "sign_index": 7,
+        "degree_in_sign": 26.355319,
+        "is_retrograde": false,
+        "speed": 1.189273
+      },
+      "Saturn": {
+        "longitude": 111.122845,
+        "sign_index": 3,
+        "degree_in_sign": 21.122845,
+        "is_retrograde": true,
+        "speed": -0.078457
+      },
+      "Rahu": {
+        "longitude": 336.525063,
+        "sign_index": 11,
+        "degree_in_sign": 6.525063,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 156.525063,
+        "sign_index": 5,
+        "degree_in_sign": 6.525063,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

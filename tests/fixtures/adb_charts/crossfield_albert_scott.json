@@ -1,0 +1,110 @@
+{
+  "adb_id": 50878,
+  "name": "Crossfield, Albert Scott",
+  "given_name": "Albert Scott Crossfield",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422965.197917,
+    "year": 1921,
+    "month": 10,
+    "day": 2,
+    "calendar": "g",
+    "time": "08:45",
+    "time_type": "s",
+    "hour": 8.75,
+    "time_unknown": false,
+    "place": "Berkeley",
+    "country": "California",
+    "lat": 37.866667,
+    "lon": -122.266667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crossfield,_Albert_Scott",
+  "source_notes": "Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Engineer : Aerospace",
+    "Vocation : Travel : Aviation field",
+    "Vocation : Travel : Aviation field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 24.772741,
+    "lagna": 174.772741,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.764254,
+    "jd_ut": 2422965.197917,
+    "planets": {
+      "Sun": {
+        "longitude": 166.174044,
+        "sign_index": 5,
+        "degree_in_sign": 16.174044,
+        "is_retrograde": false,
+        "speed": 0.984967
+      },
+      "Moon": {
+        "longitude": 182.901566,
+        "sign_index": 6,
+        "degree_in_sign": 2.901566,
+        "is_retrograde": false,
+        "speed": 12.520234
+      },
+      "Mars": {
+        "longitude": 135.532733,
+        "sign_index": 4,
+        "degree_in_sign": 15.532733,
+        "is_retrograde": false,
+        "speed": 0.626103
+      },
+      "Mercury": {
+        "longitude": 190.911274,
+        "sign_index": 6,
+        "degree_in_sign": 10.911274,
+        "is_retrograde": false,
+        "speed": 1.171011
+      },
+      "Jupiter": {
+        "longitude": 158.689119,
+        "sign_index": 5,
+        "degree_in_sign": 8.689119,
+        "is_retrograde": false,
+        "speed": 0.215587
+      },
+      "Venus": {
+        "longitude": 135.141723,
+        "sign_index": 4,
+        "degree_in_sign": 15.141723,
+        "is_retrograde": false,
+        "speed": 1.215691
+      },
+      "Saturn": {
+        "longitude": 156.617992,
+        "sign_index": 5,
+        "degree_in_sign": 6.617992,
+        "is_retrograde": false,
+        "speed": 0.123233
+      },
+      "Rahu": {
+        "longitude": 175.689716,
+        "sign_index": 5,
+        "degree_in_sign": 25.689716,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 355.689716,
+        "sign_index": 11,
+        "degree_in_sign": 25.689716,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

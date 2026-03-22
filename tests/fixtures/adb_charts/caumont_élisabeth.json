@@ -1,0 +1,110 @@
+{
+  "adb_id": 63183,
+  "name": "Caumont, Élisabeth",
+  "given_name": "Élisabeth Caumont",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436168.4375,
+    "year": 1957,
+    "month": 11,
+    "day": 25,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "s",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Cambrai",
+    "country": "France",
+    "lat": 50.166667,
+    "lon": 3.233333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caumont,_Élisabeth",
+  "source_notes": "Didier Geslain archive, 'jazz' pdf file, p. 22.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Jazz",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 11.556502,
+    "lagna": 101.556502,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.269075,
+    "jd_ut": 2436168.4375,
+    "planets": {
+      "Sun": {
+        "longitude": 220.136197,
+        "sign_index": 7,
+        "degree_in_sign": 10.136197,
+        "is_retrograde": false,
+        "speed": 1.012164
+      },
+      "Moon": {
+        "longitude": 271.991524,
+        "sign_index": 9,
+        "degree_in_sign": 1.991524,
+        "is_retrograde": false,
+        "speed": 13.914534
+      },
+      "Mars": {
+        "longitude": 198.189819,
+        "sign_index": 6,
+        "degree_in_sign": 18.189819,
+        "is_retrograde": false,
+        "speed": 0.676226
+      },
+      "Mercury": {
+        "longitude": 237.785445,
+        "sign_index": 7,
+        "degree_in_sign": 27.785445,
+        "is_retrograde": false,
+        "speed": 1.425704
+      },
+      "Jupiter": {
+        "longitude": 179.509538,
+        "sign_index": 5,
+        "degree_in_sign": 29.509538,
+        "is_retrograde": false,
+        "speed": 0.18822
+      },
+      "Venus": {
+        "longitude": 267.076163,
+        "sign_index": 8,
+        "degree_in_sign": 27.076163,
+        "is_retrograde": false,
+        "speed": 0.954238
+      },
+      "Saturn": {
+        "longitude": 231.947284,
+        "sign_index": 7,
+        "degree_in_sign": 21.947284,
+        "is_retrograde": false,
+        "speed": 0.116591
+      },
+      "Rahu": {
+        "longitude": 196.022725,
+        "sign_index": 6,
+        "degree_in_sign": 16.022725,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 16.022725,
+        "sign_index": 0,
+        "degree_in_sign": 16.022725,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

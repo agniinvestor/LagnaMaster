@@ -1,0 +1,108 @@
+{
+  "adb_id": 53452,
+  "name": "Cerrano, Jacqueline",
+  "given_name": "Jacqueline Cerrano",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422627.541667,
+    "year": 1920,
+    "month": 10,
+    "day": 30,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Nice",
+    "country": "France",
+    "lat": 43.7,
+    "lon": 7.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cerrano,_Jacqueline",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin ns 3/0288\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 21.666301,
+    "lagna": 111.666301,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.751345,
+    "jd_ut": 2422627.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 193.55737,
+        "sign_index": 6,
+        "degree_in_sign": 13.55737,
+        "is_retrograde": false,
+        "speed": 0.999572
+      },
+      "Moon": {
+        "longitude": 46.34572,
+        "sign_index": 1,
+        "degree_in_sign": 16.34572,
+        "is_retrograde": false,
+        "speed": 10.243758
+      },
+      "Mars": {
+        "longitude": 255.680679,
+        "sign_index": 8,
+        "degree_in_sign": 15.680679,
+        "is_retrograde": false,
+        "speed": 0.741498
+      },
+      "Mercury": {
+        "longitude": 216.91051,
+        "sign_index": 7,
+        "degree_in_sign": 6.91051,
+        "is_retrograde": false,
+        "speed": 0.710109
+      },
+      "Jupiter": {
+        "longitude": 140.031692,
+        "sign_index": 4,
+        "degree_in_sign": 20.031692,
+        "is_retrograde": false,
+        "speed": 0.166942
+      },
+      "Venus": {
+        "longitude": 224.391555,
+        "sign_index": 7,
+        "degree_in_sign": 14.391555,
+        "is_retrograde": false,
+        "speed": 1.225692
+      },
+      "Saturn": {
+        "longitude": 148.368779,
+        "sign_index": 4,
+        "degree_in_sign": 28.368779,
+        "is_retrograde": false,
+        "speed": 0.100628
+      },
+      "Rahu": {
+        "longitude": 193.582826,
+        "sign_index": 6,
+        "degree_in_sign": 13.582826,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 13.582826,
+        "sign_index": 0,
+        "degree_in_sign": 13.582826,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

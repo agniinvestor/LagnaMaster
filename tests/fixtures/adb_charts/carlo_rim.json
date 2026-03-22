@@ -1,0 +1,112 @@
+{
+  "adb_id": 48181,
+  "name": "Carlo-Rim",
+  "given_name": "Carlo-Rim",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417199.285174,
+    "year": 1905,
+    "month": 12,
+    "day": 19,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Nîmes",
+    "country": "France",
+    "lat": 43.833333,
+    "lon": 4.35
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlo-Rim",
+  "source_notes": "B.R. in hand from Steinbrecher (7:00 PM Paris time)\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Humor",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 17.363675,
+    "lagna": 77.363675,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.543822,
+    "jd_ut": 2417199.285174,
+    "planets": {
+      "Sun": {
+        "longitude": 244.691003,
+        "sign_index": 8,
+        "degree_in_sign": 4.691003,
+        "is_retrograde": false,
+        "speed": 1.01834
+      },
+      "Moon": {
+        "longitude": 158.707452,
+        "sign_index": 5,
+        "degree_in_sign": 8.707452,
+        "is_retrograde": false,
+        "speed": 17.720422
+      },
+      "Mars": {
+        "longitude": 301.494489,
+        "sign_index": 10,
+        "degree_in_sign": 1.494489,
+        "is_retrograde": false,
+        "speed": 0.765104
+      },
+      "Mercury": {
+        "longitude": 235.837741,
+        "sign_index": 7,
+        "degree_in_sign": 25.837741,
+        "is_retrograde": true,
+        "speed": -1.077211
+      },
+      "Jupiter": {
+        "longitude": 35.702994,
+        "sign_index": 1,
+        "degree_in_sign": 5.702994,
+        "is_retrograde": true,
+        "speed": -0.103337
+      },
+      "Venus": {
+        "longitude": 231.136776,
+        "sign_index": 7,
+        "degree_in_sign": 21.136776,
+        "is_retrograde": false,
+        "speed": 1.256905
+      },
+      "Saturn": {
+        "longitude": 305.687819,
+        "sign_index": 10,
+        "degree_in_sign": 5.687819,
+        "is_retrograde": false,
+        "speed": 0.078119
+      },
+      "Rahu": {
+        "longitude": 121.237517,
+        "sign_index": 4,
+        "degree_in_sign": 1.237517,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 301.237517,
+        "sign_index": 10,
+        "degree_in_sign": 1.237517,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "adb_id": 436,
+  "name": "Chapman, Mark David",
+  "given_name": "Mark David Chapman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435238.5625,
+    "year": 1955,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "s",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "Fort Worth",
+    "country": "Texas",
+    "lat": 32.733333,
+    "lon": -97.316667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "cap",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapman,_Mark_David",
+  "source_notes": "Darrell Martinie quotes hospital records.\\n",
+  "categories": [
+    "Diagnoses : Psychological : Depression",
+    "Diagnoses : Psychological : Psychotic Episode",
+    "Diagnoses : Psychological : Schizophrenia",
+    "Family : Childhood : Family distant",
+    "Family : Childhood : Parents divorced",
+    "Family : Relationship : Mate - Interracial",
+    "Family : Relationship : Stress - Distant",
+    "Family : Parenting : Kids none",
+    "Lifestyle : Work : Many job changes",
+    "Passions : Criminal Perpetrator : Homicide single",
+    "Passions : Criminal Perpetrator : Kidnapper",
+    "Passions : Criminal Perpetrator : Prison sentence",
+    "Passions : Criminal Perpetrator : Thief/ Financial crime",
+    "Personal : Religion/Spirituality : Western",
+    "Personal : Death : Suicide Attempt",
+    "Vocation : Law : Legal system employee",
+    "Vocation : Misc. : Cleaning service",
+    "Vocation : Misc. : Outdoor vocations",
+    "Notable : Famous : Criminal cases",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 6.70218,
+    "lagna": 186.70218,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.233519,
+    "jd_ut": 2435238.5625,
+    "planets": {
+      "Sun": {
+        "longitude": 26.362722,
+        "sign_index": 0,
+        "degree_in_sign": 26.362722,
+        "is_retrograde": false,
+        "speed": 0.965832
+      },
+      "Moon": {
+        "longitude": 251.924746,
+        "sign_index": 8,
+        "degree_in_sign": 11.924746,
+        "is_retrograde": false,
+        "speed": 14.212502
+      },
+      "Mars": {
+        "longitude": 56.904263,
+        "sign_index": 1,
+        "degree_in_sign": 26.904263,
+        "is_retrograde": false,
+        "speed": 0.661541
+      },
+      "Mercury": {
+        "longitude": 44.785684,
+        "sign_index": 1,
+        "degree_in_sign": 14.785684,
+        "is_retrograde": false,
+        "speed": 1.653693
+      },
+      "Jupiter": {
+        "longitude": 91.061266,
+        "sign_index": 3,
+        "degree_in_sign": 1.061266,
+        "is_retrograde": false,
+        "speed": 0.146753
+      },
+      "Venus": {
+        "longitude": 356.507396,
+        "sign_index": 11,
+        "degree_in_sign": 26.507396,
+        "is_retrograde": false,
+        "speed": 1.204537
+      },
+      "Saturn": {
+        "longitude": 204.503955,
+        "sign_index": 6,
+        "degree_in_sign": 24.503955,
+        "is_retrograde": true,
+        "speed": -0.075228
+      },
+      "Rahu": {
+        "longitude": 245.298711,
+        "sign_index": 8,
+        "degree_in_sign": 5.298711,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 65.298711,
+        "sign_index": 2,
+        "degree_in_sign": 5.298711,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

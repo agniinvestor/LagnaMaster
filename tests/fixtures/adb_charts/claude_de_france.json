@@ -1,0 +1,109 @@
+{
+  "adb_id": 59298,
+  "name": "Claude de France",
+  "given_name": "Claude de France",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2268853.365972,
+    "year": 1499,
+    "month": 10,
+    "day": 13,
+    "calendar": "j",
+    "time": "20:54",
+    "time_type": "l",
+    "hour": 20.9,
+    "time_unknown": false,
+    "place": "Romorantin Lanthenay",
+    "country": "France",
+    "lat": 47.366667,
+    "lon": 1.75
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claude_de_France",
+  "source_notes": "Sy Scholfield quotes \"Annales de la monarchie française\" by Henri-Philippe de Limiers (L'Honoré et Chatelain, 1724), p. 72: \"née à Romorantin le 13 Octobre 1499 à 8 heures 54 minutes du soir;\" same data in \"Histoire de la Maison Royale de France, et des grands officiers de la Couronne\" by Anselme de Sainte-Marie, Ange de Sainte-Rosalie (libr. associés, 1726), p. 128.\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.247792,
+    "lagna": 67.247792,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 16.877783,
+    "jd_ut": 2268853.365972,
+    "planets": {
+      "Sun": {
+        "longitude": 192.321957,
+        "sign_index": 6,
+        "degree_in_sign": 12.321957,
+        "is_retrograde": false,
+        "speed": 0.999885
+      },
+      "Moon": {
+        "longitude": 309.872951,
+        "sign_index": 10,
+        "degree_in_sign": 9.872951,
+        "is_retrograde": false,
+        "speed": 9.659299
+      },
+      "Mars": {
+        "longitude": 344.416825,
+        "sign_index": 11,
+        "degree_in_sign": 14.416825,
+        "is_retrograde": true,
+        "speed": -0.105297
+      },
+      "Mercury": {
+        "longitude": 215.987105,
+        "sign_index": 7,
+        "degree_in_sign": 5.987105,
+        "is_retrograde": false,
+        "speed": 1.006086
+      },
+      "Jupiter": {
+        "longitude": 295.65956,
+        "sign_index": 9,
+        "degree_in_sign": 25.65956,
+        "is_retrograde": false,
+        "speed": 0.047388
+      },
+      "Venus": {
+        "longitude": 171.77054,
+        "sign_index": 5,
+        "degree_in_sign": 21.77054,
+        "is_retrograde": false,
+        "speed": 1.246388
+      },
+      "Saturn": {
+        "longitude": 32.012365,
+        "sign_index": 1,
+        "degree_in_sign": 2.012365,
+        "is_retrograde": true,
+        "speed": -0.074308
+      },
+      "Rahu": {
+        "longitude": 62.428267,
+        "sign_index": 2,
+        "degree_in_sign": 2.428267,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 242.428267,
+        "sign_index": 8,
+        "degree_in_sign": 2.428267,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

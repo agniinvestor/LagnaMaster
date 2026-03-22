@@ -1,0 +1,112 @@
+{
+  "adb_id": 49044,
+  "name": "Caviezel, Jim",
+  "given_name": "Jim Caviezel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440126.259722,
+    "year": 1968,
+    "month": 9,
+    "day": 26,
+    "calendar": "g",
+    "time": "11:14",
+    "time_type": "d",
+    "hour": 11.233333,
+    "time_unknown": false,
+    "place": "Mount Vernon",
+    "country": "Washington",
+    "lat": 48.416667,
+    "lon": -122.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caviezel,_Jim",
+  "source_notes": "PT quotes b/c in hand as of 1/3/2005\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Traits : Personality : Principled strongly",
+    "Family : Childhood : Family close",
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.759516,
+    "lagna": 181.759516,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.420416,
+    "jd_ut": 2440126.259722,
+    "planets": {
+      "Sun": {
+        "longitude": 160.289581,
+        "sign_index": 5,
+        "degree_in_sign": 10.289581,
+        "is_retrograde": false,
+        "speed": 0.981315
+      },
+      "Moon": {
+        "longitude": 218.411507,
+        "sign_index": 7,
+        "degree_in_sign": 8.411507,
+        "is_retrograde": false,
+        "speed": 14.172695
+      },
+      "Mars": {
+        "longitude": 129.706793,
+        "sign_index": 4,
+        "degree_in_sign": 9.706793,
+        "is_retrograde": false,
+        "speed": 0.626381
+      },
+      "Mercury": {
+        "longitude": 185.548518,
+        "sign_index": 6,
+        "degree_in_sign": 5.548518,
+        "is_retrograde": false,
+        "speed": 0.626303
+      },
+      "Jupiter": {
+        "longitude": 146.792782,
+        "sign_index": 4,
+        "degree_in_sign": 26.792782,
+        "is_retrograde": false,
+        "speed": 0.213599
+      },
+      "Venus": {
+        "longitude": 186.655997,
+        "sign_index": 6,
+        "degree_in_sign": 6.655997,
+        "is_retrograde": false,
+        "speed": 1.226556
+      },
+      "Saturn": {
+        "longitude": 0.101219,
+        "sign_index": 0,
+        "degree_in_sign": 0.101219,
+        "is_retrograde": true,
+        "speed": -0.072192
+      },
+      "Rahu": {
+        "longitude": 346.289622,
+        "sign_index": 11,
+        "degree_in_sign": 16.289622,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 166.289622,
+        "sign_index": 5,
+        "degree_in_sign": 16.289622,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

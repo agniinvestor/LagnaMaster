@@ -1,0 +1,119 @@
+{
+  "adb_id": 24336,
+  "name": "Christine of France",
+  "given_name": "Christine of France",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2307680.014352,
+    "year": 1606,
+    "month": 2,
+    "day": 10,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "l",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christine_of_France",
+  "source_notes": "Martin Harvey in ''Nativitas I'' quotes 12:30 PM from the Latin records of Dr. Jean Heroard, (noted as NS).\\n\\nSy Scholfield quotes 2 PM from the book ''Henri IV, roi de cœur'' by Jacques de Laprade and Juliette Rigal (Musée national du Château de Pau, Société des amis du Château de Pau, Les Amis du château de Pau, 1971), p. 91: \"Madame Chrétienne [sic] de France naît le 10 février 1606 à deux heures après midi, au Louvre à Paris.\"\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family traumatic event",
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Married early less than 18",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids -Traumatic event",
+    "Vocation : Business : Middle Management",
+    "Notable : Famous : Royal family",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 21.110199,
+    "lagna": 51.110199,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 18.359781,
+    "jd_ut": 2307680.014352,
+    "planets": {
+      "Sun": {
+        "longitude": 303.333841,
+        "sign_index": 10,
+        "degree_in_sign": 3.333841,
+        "is_retrograde": false,
+        "speed": 1.009867
+      },
+      "Moon": {
+        "longitude": 343.862113,
+        "sign_index": 11,
+        "degree_in_sign": 13.862113,
+        "is_retrograde": false,
+        "speed": 10.203685
+      },
+      "Mars": {
+        "longitude": 211.468181,
+        "sign_index": 7,
+        "degree_in_sign": 1.468181,
+        "is_retrograde": false,
+        "speed": 0.481561
+      },
+      "Mercury": {
+        "longitude": 314.034732,
+        "sign_index": 10,
+        "degree_in_sign": 14.034732,
+        "is_retrograde": true,
+        "speed": -0.579052
+      },
+      "Jupiter": {
+        "longitude": 294.043607,
+        "sign_index": 9,
+        "degree_in_sign": 24.043607,
+        "is_retrograde": false,
+        "speed": 0.237265
+      },
+      "Venus": {
+        "longitude": 348.814119,
+        "sign_index": 11,
+        "degree_in_sign": 18.814119,
+        "is_retrograde": false,
+        "speed": 1.098524
+      },
+      "Saturn": {
+        "longitude": 255.887013,
+        "sign_index": 8,
+        "degree_in_sign": 15.887013,
+        "is_retrograde": false,
+        "speed": 0.091685
+      },
+      "Rahu": {
+        "longitude": 164.909575,
+        "sign_index": 5,
+        "degree_in_sign": 14.909575,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 344.909575,
+        "sign_index": 11,
+        "degree_in_sign": 14.909575,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

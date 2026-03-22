@@ -1,0 +1,110 @@
+{
+  "adb_id": 98017,
+  "name": "Cook, Clyde",
+  "given_name": "Clyde Cook",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427955.020833,
+    "year": 1935,
+    "month": 6,
+    "day": 1,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Hong Kong",
+    "country": "Hong Kong",
+    "lat": 22.283333,
+    "lon": 114.15
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cook,_Clyde",
+  "source_notes": "U.S. Consular Report of Birth in hand from Sy Scholfield, copy on file; he was born at \"War Memorial Hospital, Hong Kong.\"\\n",
+  "categories": [
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Education : Administrator",
+    "Vocation : Religion : Missionary"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.522136,
+    "lagna": 224.522136,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.955029,
+    "jd_ut": 2427955.020833,
+    "planets": {
+      "Sun": {
+        "longitude": 47.124249,
+        "sign_index": 1,
+        "degree_in_sign": 17.124249,
+        "is_retrograde": false,
+        "speed": 0.958553
+      },
+      "Moon": {
+        "longitude": 48.684577,
+        "sign_index": 1,
+        "degree_in_sign": 18.684577,
+        "is_retrograde": false,
+        "speed": 15.761844
+      },
+      "Mars": {
+        "longitude": 164.380631,
+        "sign_index": 5,
+        "degree_in_sign": 14.380631,
+        "is_retrograde": false,
+        "speed": 0.170812
+      },
+      "Mercury": {
+        "longitude": 68.879757,
+        "sign_index": 2,
+        "degree_in_sign": 8.879757,
+        "is_retrograde": false,
+        "speed": 0.581398
+      },
+      "Jupiter": {
+        "longitude": 202.762485,
+        "sign_index": 6,
+        "degree_in_sign": 22.762485,
+        "is_retrograde": true,
+        "speed": -0.106612
+      },
+      "Venus": {
+        "longitude": 90.218978,
+        "sign_index": 3,
+        "degree_in_sign": 0.218978,
+        "is_retrograde": false,
+        "speed": 1.097003
+      },
+      "Saturn": {
+        "longitude": 316.933068,
+        "sign_index": 10,
+        "degree_in_sign": 16.933068,
+        "is_retrograde": false,
+        "speed": 0.032768
+      },
+      "Rahu": {
+        "longitude": 271.26862,
+        "sign_index": 9,
+        "degree_in_sign": 1.26862,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 91.26862,
+        "sign_index": 3,
+        "degree_in_sign": 1.26862,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

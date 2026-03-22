@@ -1,0 +1,111 @@
+{
+  "adb_id": 100573,
+  "name": "Clutterbuck, Cal",
+  "given_name": "Cal Clutterbuck",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2447118.541667,
+    "year": 1987,
+    "month": 11,
+    "day": 18,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Welland",
+    "country": "Ontario (CAN)",
+    "lat": 42.983333,
+    "lon": -79.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clutterbuck,_Cal",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Niagara Falls Review'' (Niagara Falls, Ontario), 24 November 1987, page 24; born at Welland County General Hospital. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Hockey",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 27.482755,
+    "lagna": 57.482755,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.687808,
+    "jd_ut": 2447118.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 212.46226,
+        "sign_index": 7,
+        "degree_in_sign": 2.46226,
+        "is_retrograde": false,
+        "speed": 1.009147
+      },
+      "Moon": {
+        "longitude": 184.060766,
+        "sign_index": 6,
+        "degree_in_sign": 4.060766,
+        "is_retrograde": false,
+        "speed": 16.355843
+      },
+      "Mars": {
+        "longitude": 182.985363,
+        "sign_index": 6,
+        "degree_in_sign": 2.985363,
+        "is_retrograde": false,
+        "speed": 0.652124
+      },
+      "Mercury": {
+        "longitude": 194.54396,
+        "sign_index": 6,
+        "degree_in_sign": 14.54396,
+        "is_retrograde": false,
+        "speed": 1.363536
+      },
+      "Jupiter": {
+        "longitude": 357.262907,
+        "sign_index": 11,
+        "degree_in_sign": 27.262907,
+        "is_retrograde": true,
+        "speed": -0.08692
+      },
+      "Venus": {
+        "longitude": 235.076772,
+        "sign_index": 7,
+        "degree_in_sign": 25.076772,
+        "is_retrograde": false,
+        "speed": 1.243915
+      },
+      "Saturn": {
+        "longitude": 236.76964,
+        "sign_index": 7,
+        "degree_in_sign": 26.76964,
+        "is_retrograde": false,
+        "speed": 0.111265
+      },
+      "Rahu": {
+        "longitude": 335.754383,
+        "sign_index": 11,
+        "degree_in_sign": 5.754383,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 155.754383,
+        "sign_index": 5,
+        "degree_in_sign": 5.754383,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 66625,
+  "name": "Caristan, Stéphane",
+  "given_name": "Stéphane Caristan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438546.847222,
+    "year": 1964,
+    "month": 5,
+    "day": 31,
+    "calendar": "g",
+    "time": "09:20",
+    "time_type": "s",
+    "hour": 9.333333,
+    "time_unknown": false,
+    "place": "Créteil",
+    "country": "France",
+    "lat": 48.8,
+    "lon": 2.466667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caristan,_Stéphane",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Sports : Track and Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 19.872097,
+    "lagna": 79.872097,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.360021,
+    "jd_ut": 2438546.847222,
+    "planets": {
+      "Sun": {
+        "longitude": 46.542853,
+        "sign_index": 1,
+        "degree_in_sign": 16.542853,
+        "is_retrograde": false,
+        "speed": 0.95819
+      },
+      "Moon": {
+        "longitude": 279.845003,
+        "sign_index": 9,
+        "degree_in_sign": 9.845003,
+        "is_retrograde": false,
+        "speed": 11.146947
+      },
+      "Mars": {
+        "longitude": 24.251089,
+        "sign_index": 0,
+        "degree_in_sign": 24.251089,
+        "is_retrograde": false,
+        "speed": 0.731004
+      },
+      "Mercury": {
+        "longitude": 22.689615,
+        "sign_index": 0,
+        "degree_in_sign": 22.689615,
+        "is_retrograde": false,
+        "speed": 1.285846
+      },
+      "Jupiter": {
+        "longitude": 18.210074,
+        "sign_index": 0,
+        "degree_in_sign": 18.210074,
+        "is_retrograde": false,
+        "speed": 0.22425
+      },
+      "Venus": {
+        "longitude": 73.446651,
+        "sign_index": 2,
+        "degree_in_sign": 13.446651,
+        "is_retrograde": true,
+        "speed": -0.075623
+      },
+      "Saturn": {
+        "longitude": 311.503061,
+        "sign_index": 10,
+        "degree_in_sign": 11.503061,
+        "is_retrograde": false,
+        "speed": 0.024304
+      },
+      "Rahu": {
+        "longitude": 69.98592,
+        "sign_index": 2,
+        "degree_in_sign": 9.98592,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 249.98592,
+        "sign_index": 8,
+        "degree_in_sign": 9.98592,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

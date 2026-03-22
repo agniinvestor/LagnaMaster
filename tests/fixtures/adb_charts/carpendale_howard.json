@@ -1,0 +1,108 @@
+{
+  "adb_id": 55323,
+  "name": "Carpendale, Howard",
+  "given_name": "Howard Carpendale",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431834.452083,
+    "year": 1946,
+    "month": 1,
+    "day": 14,
+    "calendar": "g",
+    "time": "00:51",
+    "time_type": "s",
+    "hour": 0.85,
+    "time_unknown": false,
+    "place": "Durban",
+    "country": "South Africa",
+    "lat": -29.916667,
+    "lon": 30.933333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpendale,_Howard",
+  "source_notes": "Manfred Gregor quotes him für 1:00 a.m. Rectification by Gregor.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 3.257755,
+    "lagna": 183.257755,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.103358,
+    "jd_ut": 2431834.452083,
+    "planets": {
+      "Sun": {
+        "longitude": 270.07791,
+        "sign_index": 9,
+        "degree_in_sign": 0.07791,
+        "is_retrograde": false,
+        "speed": 1.018307
+      },
+      "Moon": {
+        "longitude": 40.540662,
+        "sign_index": 1,
+        "degree_in_sign": 10.540662,
+        "is_retrograde": false,
+        "speed": 11.869192
+      },
+      "Mars": {
+        "longitude": 90.19683,
+        "sign_index": 3,
+        "degree_in_sign": 0.19683,
+        "is_retrograde": true,
+        "speed": -0.399923
+      },
+      "Mercury": {
+        "longitude": 253.190485,
+        "sign_index": 8,
+        "degree_in_sign": 13.190485,
+        "is_retrograde": false,
+        "speed": 1.466741
+      },
+      "Jupiter": {
+        "longitude": 183.028174,
+        "sign_index": 6,
+        "degree_in_sign": 3.028174,
+        "is_retrograde": false,
+        "speed": 0.084921
+      },
+      "Venus": {
+        "longitude": 265.608974,
+        "sign_index": 8,
+        "degree_in_sign": 25.608974,
+        "is_retrograde": false,
+        "speed": 1.257311
+      },
+      "Saturn": {
+        "longitude": 88.195658,
+        "sign_index": 2,
+        "degree_in_sign": 28.195658,
+        "is_retrograde": true,
+        "speed": -0.082442
+      },
+      "Rahu": {
+        "longitude": 65.689532,
+        "sign_index": 2,
+        "degree_in_sign": 5.689532,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 245.689532,
+        "sign_index": 8,
+        "degree_in_sign": 5.689532,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

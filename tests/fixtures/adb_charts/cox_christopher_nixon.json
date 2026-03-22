@@ -1,0 +1,109 @@
+{
+  "adb_id": 14750,
+  "name": "Cox, Christopher Nixon",
+  "given_name": "Christopher Nixon Cox",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2443946.831944,
+    "year": 1979,
+    "month": 3,
+    "day": 14,
+    "calendar": "g",
+    "time": "02:58",
+    "time_type": "s",
+    "hour": 2.966667,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cox,_Christopher_Nixon",
+  "source_notes": "LMR quotes news at the time\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 27.425829,
+    "lagna": 237.425829,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.566516,
+    "jd_ut": 2443946.831944,
+    "planets": {
+      "Sun": {
+        "longitude": 329.577825,
+        "sign_index": 10,
+        "degree_in_sign": 29.577825,
+        "is_retrograde": false,
+        "speed": 0.996666
+      },
+      "Moon": {
+        "longitude": 154.381979,
+        "sign_index": 5,
+        "degree_in_sign": 4.381979,
+        "is_retrograde": false,
+        "speed": 9.124431
+      },
+      "Mars": {
+        "longitude": 317.851049,
+        "sign_index": 10,
+        "degree_in_sign": 17.851049,
+        "is_retrograde": false,
+        "speed": 0.787105
+      },
+      "Mercury": {
+        "longitude": 344.919087,
+        "sign_index": 11,
+        "degree_in_sign": 14.919087,
+        "is_retrograde": false,
+        "speed": 0.103357
+      },
+      "Jupiter": {
+        "longitude": 95.659891,
+        "sign_index": 3,
+        "degree_in_sign": 5.659891,
+        "is_retrograde": true,
+        "speed": -0.037476
+      },
+      "Venus": {
+        "longitude": 288.874384,
+        "sign_index": 9,
+        "degree_in_sign": 18.874384,
+        "is_retrograde": false,
+        "speed": 1.178789
+      },
+      "Saturn": {
+        "longitude": 135.98568,
+        "sign_index": 4,
+        "degree_in_sign": 15.98568,
+        "is_retrograde": true,
+        "speed": -0.076612
+      },
+      "Rahu": {
+        "longitude": 143.829714,
+        "sign_index": 4,
+        "degree_in_sign": 23.829714,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 323.829714,
+        "sign_index": 10,
+        "degree_in_sign": 23.829714,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "adb_id": 4439,
+  "name": "Cartier-Bresson, Henri",
+  "given_name": "Henri Cartier-Bresson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418176.118507,
+    "year": 1908,
+    "month": 8,
+    "day": 22,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Chanteloup",
+    "country": "France",
+    "lat": 48.85,
+    "lon": 2.733333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cartier-Bresson,_Henri",
+  "source_notes": "Gauquelin Vol 3/0264  (3:00 PM Paris time)\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Art : Photography",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Military : Combat",
+    "Vocation : Military : Military service",
+    "Vocation : Military : POW/ MIA",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 2.86475,
+    "lagna": 212.86475,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.581166,
+    "jd_ut": 2418176.118507,
+    "planets": {
+      "Sun": {
+        "longitude": 126.494795,
+        "sign_index": 4,
+        "degree_in_sign": 6.494795,
+        "is_retrograde": false,
+        "speed": 0.964181
+      },
+      "Moon": {
+        "longitude": 78.662329,
+        "sign_index": 2,
+        "degree_in_sign": 18.662329,
+        "is_retrograde": false,
+        "speed": 12.42223
+      },
+      "Mars": {
+        "longitude": 126.365699,
+        "sign_index": 4,
+        "degree_in_sign": 6.365699,
+        "is_retrograde": false,
+        "speed": 0.636228
+      },
+      "Mercury": {
+        "longitude": 128.513088,
+        "sign_index": 4,
+        "degree_in_sign": 8.513088,
+        "is_retrograde": false,
+        "speed": 1.956654
+      },
+      "Jupiter": {
+        "longitude": 122.934766,
+        "sign_index": 4,
+        "degree_in_sign": 2.934766,
+        "is_retrograde": false,
+        "speed": 0.218264
+      },
+      "Venus": {
+        "longitude": 83.151632,
+        "sign_index": 2,
+        "degree_in_sign": 23.151632,
+        "is_retrograde": false,
+        "speed": 0.705837
+      },
+      "Saturn": {
+        "longitude": 346.808931,
+        "sign_index": 11,
+        "degree_in_sign": 16.808931,
+        "is_retrograde": true,
+        "speed": -0.049531
+      },
+      "Rahu": {
+        "longitude": 69.473065,
+        "sign_index": 2,
+        "degree_in_sign": 9.473065,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 249.473065,
+        "sign_index": 8,
+        "degree_in_sign": 9.473065,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 65107,
+  "name": "Cristau, Pierre",
+  "given_name": "Pierre Cristau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426732.916667,
+    "year": 1932,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Boulogne Billancourt",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cristau,_Pierre",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 285.\\n",
+  "categories": [
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 28.632304,
+    "lagna": 328.632304,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.908303,
+    "jd_ut": 2426732.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 282.339904,
+        "sign_index": 9,
+        "degree_in_sign": 12.339904,
+        "is_retrograde": false,
+        "speed": 1.016233
+      },
+      "Moon": {
+        "longitude": 139.461901,
+        "sign_index": 4,
+        "degree_in_sign": 19.461901,
+        "is_retrograde": false,
+        "speed": 15.928723
+      },
+      "Mars": {
+        "longitude": 283.672052,
+        "sign_index": 9,
+        "degree_in_sign": 13.672052,
+        "is_retrograde": false,
+        "speed": 0.785577
+      },
+      "Mercury": {
+        "longitude": 262.659067,
+        "sign_index": 8,
+        "degree_in_sign": 22.659067,
+        "is_retrograde": false,
+        "speed": 1.423248
+      },
+      "Jupiter": {
+        "longitude": 116.332206,
+        "sign_index": 3,
+        "degree_in_sign": 26.332206,
+        "is_retrograde": true,
+        "speed": -0.125665
+      },
+      "Venus": {
+        "longitude": 316.093222,
+        "sign_index": 10,
+        "degree_in_sign": 16.093222,
+        "is_retrograde": false,
+        "speed": 1.223252
+      },
+      "Saturn": {
+        "longitude": 273.852319,
+        "sign_index": 9,
+        "degree_in_sign": 3.852319,
+        "is_retrograde": false,
+        "speed": 0.117983
+      },
+      "Rahu": {
+        "longitude": 336.030456,
+        "sign_index": 11,
+        "degree_in_sign": 6.030456,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 156.030456,
+        "sign_index": 5,
+        "degree_in_sign": 6.030456,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

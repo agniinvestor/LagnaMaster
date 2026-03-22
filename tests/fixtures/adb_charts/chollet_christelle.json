@@ -1,0 +1,108 @@
+{
+  "adb_id": 101112,
+  "name": "Chollet, Christelle",
+  "given_name": "Christelle Chollet",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441656.666667,
+    "year": 1972,
+    "month": 12,
+    "day": 5,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Toulouse",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chollet,_Christelle",
+  "source_notes": "Lepoivre quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertainment : Live Stage"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 17.942323,
+    "lagna": 167.942323,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.478938,
+    "jd_ut": 2441656.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 229.641455,
+        "sign_index": 7,
+        "degree_in_sign": 19.641455,
+        "is_retrograde": false,
+        "speed": 1.015398
+      },
+      "Moon": {
+        "longitude": 222.940487,
+        "sign_index": 7,
+        "degree_in_sign": 12.940487,
+        "is_retrograde": false,
+        "speed": 13.299415
+      },
+      "Mars": {
+        "longitude": 199.313794,
+        "sign_index": 6,
+        "degree_in_sign": 19.313794,
+        "is_retrograde": false,
+        "speed": 0.669219
+      },
+      "Mercury": {
+        "longitude": 212.776819,
+        "sign_index": 7,
+        "degree_in_sign": 2.776819,
+        "is_retrograde": true,
+        "speed": -0.091528
+      },
+      "Jupiter": {
+        "longitude": 258.252023,
+        "sign_index": 8,
+        "degree_in_sign": 18.252023,
+        "is_retrograde": false,
+        "speed": 0.217924
+      },
+      "Venus": {
+        "longitude": 199.616904,
+        "sign_index": 6,
+        "degree_in_sign": 19.616904,
+        "is_retrograde": false,
+        "speed": 1.23859
+      },
+      "Saturn": {
+        "longitude": 53.938029,
+        "sign_index": 1,
+        "degree_in_sign": 23.938029,
+        "is_retrograde": true,
+        "speed": -0.082301
+      },
+      "Rahu": {
+        "longitude": 265.190235,
+        "sign_index": 8,
+        "degree_in_sign": 25.190235,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 85.190235,
+        "sign_index": 2,
+        "degree_in_sign": 25.190235,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

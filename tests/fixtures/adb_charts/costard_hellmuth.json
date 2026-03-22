@@ -1,0 +1,108 @@
+{
+  "adb_id": 47628,
+  "name": "Costard, Hellmuth",
+  "given_name": "Hellmuth Costard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429934.854167,
+    "year": 1940,
+    "month": 11,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "d",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Holzhausen (Sachsen)",
+    "country": "Germany",
+    "lat": 51.3,
+    "lon": 12.466667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costard,_Hellmuth",
+  "source_notes": "Steinbrecher quotes B.R.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.856164,
+    "lagna": 197.856164,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.030726,
+    "jd_ut": 2429934.854167,
+    "planets": {
+      "Sun": {
+        "longitude": 195.745155,
+        "sign_index": 6,
+        "degree_in_sign": 15.745155,
+        "is_retrograde": false,
+        "speed": 1.001405
+      },
+      "Moon": {
+        "longitude": 216.532151,
+        "sign_index": 7,
+        "degree_in_sign": 6.532151,
+        "is_retrograde": false,
+        "speed": 12.944522
+      },
+      "Mars": {
+        "longitude": 174.295434,
+        "sign_index": 5,
+        "degree_in_sign": 24.295434,
+        "is_retrograde": false,
+        "speed": 0.651555
+      },
+      "Mercury": {
+        "longitude": 215.083151,
+        "sign_index": 7,
+        "degree_in_sign": 5.083151,
+        "is_retrograde": true,
+        "speed": -0.040347
+      },
+      "Jupiter": {
+        "longitude": 17.822851,
+        "sign_index": 0,
+        "degree_in_sign": 17.822851,
+        "is_retrograde": true,
+        "speed": -0.136124
+      },
+      "Venus": {
+        "longitude": 156.527787,
+        "sign_index": 5,
+        "degree_in_sign": 6.527787,
+        "is_retrograde": false,
+        "speed": 1.190111
+      },
+      "Saturn": {
+        "longitude": 18.475167,
+        "sign_index": 0,
+        "degree_in_sign": 18.475167,
+        "is_retrograde": true,
+        "speed": -0.080669
+      },
+      "Rahu": {
+        "longitude": 166.353152,
+        "sign_index": 5,
+        "degree_in_sign": 16.353152,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.353152,
+        "sign_index": 11,
+        "degree_in_sign": 16.353152,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

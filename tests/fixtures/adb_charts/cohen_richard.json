@@ -1,0 +1,109 @@
+{
+  "adb_id": 60555,
+  "name": "Cohen, Richard",
+  "given_name": "Richard Cohen",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430032.267361,
+    "year": 1941,
+    "month": 2,
+    "day": 6,
+    "calendar": "g",
+    "time": "13:25",
+    "time_type": "s",
+    "hour": 13.416667,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Richard",
+  "source_notes": "Sy Scholfield cites his mother quoted in \"A Consternation of Constellations\" by Richard Cohen, Washington Post, 24 January 1988, p. SM3.\\n",
+  "categories": [
+    "Personal : Birth : Twin, triplet, etc.",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 14.532468,
+    "lagna": 44.532468,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.034451,
+    "jd_ut": 2430032.267361,
+    "planets": {
+      "Sun": {
+        "longitude": 294.565278,
+        "sign_index": 9,
+        "degree_in_sign": 24.565278,
+        "is_retrograde": false,
+        "speed": 1.012798
+      },
+      "Moon": {
+        "longitude": 50.480923,
+        "sign_index": 1,
+        "degree_in_sign": 20.480923,
+        "is_retrograde": false,
+        "speed": 12.909193
+      },
+      "Mars": {
+        "longitude": 239.294203,
+        "sign_index": 7,
+        "degree_in_sign": 29.294203,
+        "is_retrograde": false,
+        "speed": 0.682411
+      },
+      "Mercury": {
+        "longitude": 311.827492,
+        "sign_index": 10,
+        "degree_in_sign": 11.827492,
+        "is_retrograde": false,
+        "speed": 1.411501
+      },
+      "Jupiter": {
+        "longitude": 14.985949,
+        "sign_index": 0,
+        "degree_in_sign": 14.985949,
+        "is_retrograde": false,
+        "speed": 0.118714
+      },
+      "Venus": {
+        "longitude": 276.78807,
+        "sign_index": 9,
+        "degree_in_sign": 6.78807,
+        "is_retrograde": false,
+        "speed": 1.249158
+      },
+      "Saturn": {
+        "longitude": 15.59366,
+        "sign_index": 0,
+        "degree_in_sign": 15.59366,
+        "is_retrograde": false,
+        "speed": 0.051088
+      },
+      "Rahu": {
+        "longitude": 161.191025,
+        "sign_index": 5,
+        "degree_in_sign": 11.191025,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 341.191025,
+        "sign_index": 11,
+        "degree_in_sign": 11.191025,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

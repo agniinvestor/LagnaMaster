@@ -1,0 +1,109 @@
+{
+  "adb_id": 72723,
+  "name": "Comas Llaberia, Cesar",
+  "given_name": "Cesar Comas Llaberia",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405808.243935,
+    "year": 1874,
+    "month": 10,
+    "day": 11,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Barcelona",
+    "country": "Spain",
+    "lat": 41.383333,
+    "lon": 2.183333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comas_Llaberia,_Cesar",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 19.792369,
+    "lagna": 349.792369,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.108385,
+    "jd_ut": 2405808.243935,
+    "planets": {
+      "Sun": {
+        "longitude": 176.138452,
+        "sign_index": 5,
+        "degree_in_sign": 26.138452,
+        "is_retrograde": false,
+        "speed": 0.990736
+      },
+      "Moon": {
+        "longitude": 189.588275,
+        "sign_index": 6,
+        "degree_in_sign": 9.588275,
+        "is_retrograde": false,
+        "speed": 10.823002
+      },
+      "Mars": {
+        "longitude": 143.928121,
+        "sign_index": 4,
+        "degree_in_sign": 23.928121,
+        "is_retrograde": false,
+        "speed": 0.62552
+      },
+      "Mercury": {
+        "longitude": 197.549523,
+        "sign_index": 6,
+        "degree_in_sign": 17.549523,
+        "is_retrograde": false,
+        "speed": 1.35083
+      },
+      "Jupiter": {
+        "longitude": 171.372225,
+        "sign_index": 5,
+        "degree_in_sign": 21.372225,
+        "is_retrograde": false,
+        "speed": 0.216388
+      },
+      "Venus": {
+        "longitude": 222.048963,
+        "sign_index": 7,
+        "degree_in_sign": 12.048963,
+        "is_retrograde": false,
+        "speed": 0.881003
+      },
+      "Saturn": {
+        "longitude": 285.553702,
+        "sign_index": 9,
+        "degree_in_sign": 15.553702,
+        "is_retrograde": true,
+        "speed": -0.001031
+      },
+      "Rahu": {
+        "longitude": 4.872909,
+        "sign_index": 0,
+        "degree_in_sign": 4.872909,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 184.872909,
+        "sign_index": 6,
+        "degree_in_sign": 4.872909,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

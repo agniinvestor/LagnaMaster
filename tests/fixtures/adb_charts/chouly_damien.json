@@ -1,0 +1,108 @@
+{
+  "adb_id": 65002,
+  "name": "Chouly, Damien",
+  "given_name": "Damien Chouly",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446396.753472,
+    "year": 1985,
+    "month": 11,
+    "day": 27,
+    "calendar": "g",
+    "time": "07:05",
+    "time_type": "s",
+    "hour": 7.083333,
+    "time_unknown": false,
+    "place": "Limoges",
+    "country": "France",
+    "lat": 45.833333,
+    "lon": 1.266667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chouly,_Damien",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 159.\\n",
+  "categories": [
+    "Vocation : Sports : Rugby"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.055963,
+    "lagna": 184.055963,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.660205,
+    "jd_ut": 2446396.753472,
+    "planets": {
+      "Sun": {
+        "longitude": 221.281871,
+        "sign_index": 7,
+        "degree_in_sign": 11.281871,
+        "is_retrograde": false,
+        "speed": 1.011864
+      },
+      "Moon": {
+        "longitude": 37.554979,
+        "sign_index": 1,
+        "degree_in_sign": 7.554979,
+        "is_retrograde": false,
+        "speed": 12.240655
+      },
+      "Mars": {
+        "longitude": 175.471933,
+        "sign_index": 5,
+        "degree_in_sign": 25.471933,
+        "is_retrograde": false,
+        "speed": 0.62176
+      },
+      "Mercury": {
+        "longitude": 225.220475,
+        "sign_index": 7,
+        "degree_in_sign": 15.220475,
+        "is_retrograde": true,
+        "speed": -1.321341
+      },
+      "Jupiter": {
+        "longitude": 288.074834,
+        "sign_index": 9,
+        "degree_in_sign": 18.074834,
+        "is_retrograde": false,
+        "speed": 0.156432
+      },
+      "Venus": {
+        "longitude": 208.442117,
+        "sign_index": 6,
+        "degree_in_sign": 28.442117,
+        "is_retrograde": false,
+        "speed": 1.25583
+      },
+      "Saturn": {
+        "longitude": 217.552186,
+        "sign_index": 7,
+        "degree_in_sign": 7.552186,
+        "is_retrograde": false,
+        "speed": 0.118854
+      },
+      "Rahu": {
+        "longitude": 14.003401,
+        "sign_index": 0,
+        "degree_in_sign": 14.003401,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 194.003401,
+        "sign_index": 6,
+        "degree_in_sign": 14.003401,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

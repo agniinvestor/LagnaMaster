@@ -1,0 +1,110 @@
+{
+  "adb_id": 97320,
+  "name": "Craik, Dinah",
+  "given_name": "Dinah Craik",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388102.318519,
+    "year": 1826,
+    "month": 4,
+    "day": 20,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "l",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "Stoke-On-Trent",
+    "country": "England",
+    "lat": 53.0,
+    "lon": -2.166667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Craik,_Dinah",
+  "source_notes": "Sy Scholfield  quotes from ''Victorian Bestseller: The Life of Dinah Craik'' by Karen Bourrier (University of Michigan Press, 19 June 2019), page 7:\\n\\n\"Dinah Maria Mulock, named for her mother and paternal grandmother, was born at half past seven in the evening on April 20, 1826, three days before her mother's thirty-second birthday. Her father noted down Psalm 27:3, “Lo, children are an heritage of the lord: and the fruit of the womb is his reward,” next to the time of her birth in the family Bible.\"\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 22.136178,
+    "lagna": 172.136178,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.431672,
+    "jd_ut": 2388102.318519,
+    "planets": {
+      "Sun": {
+        "longitude": 8.726182,
+        "sign_index": 0,
+        "degree_in_sign": 8.726182,
+        "is_retrograde": false,
+        "speed": 0.974183
+      },
+      "Moon": {
+        "longitude": 168.270984,
+        "sign_index": 5,
+        "degree_in_sign": 18.270984,
+        "is_retrograde": false,
+        "speed": 12.856696
+      },
+      "Mars": {
+        "longitude": 207.472206,
+        "sign_index": 6,
+        "degree_in_sign": 27.472206,
+        "is_retrograde": true,
+        "speed": -0.265553
+      },
+      "Mercury": {
+        "longitude": 14.762555,
+        "sign_index": 0,
+        "degree_in_sign": 14.762555,
+        "is_retrograde": true,
+        "speed": -0.549083
+      },
+      "Jupiter": {
+        "longitude": 133.20959,
+        "sign_index": 4,
+        "degree_in_sign": 13.20959,
+        "is_retrograde": true,
+        "speed": -0.032736
+      },
+      "Venus": {
+        "longitude": 19.222623,
+        "sign_index": 0,
+        "degree_in_sign": 19.222623,
+        "is_retrograde": false,
+        "speed": 1.233135
+      },
+      "Saturn": {
+        "longitude": 57.13507,
+        "sign_index": 1,
+        "degree_in_sign": 27.13507,
+        "is_retrograde": false,
+        "speed": 0.100826
+      },
+      "Rahu": {
+        "longitude": 223.148046,
+        "sign_index": 7,
+        "degree_in_sign": 13.148046,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 43.148046,
+        "sign_index": 1,
+        "degree_in_sign": 13.148046,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

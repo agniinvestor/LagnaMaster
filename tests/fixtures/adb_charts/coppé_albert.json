@@ -1,0 +1,110 @@
+{
+  "adb_id": 53443,
+  "name": "Coppé, Albert",
+  "given_name": "Albert Coppé",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419367.25,
+    "year": 1911,
+    "month": 11,
+    "day": 26,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Bruges",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 3.233333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coppé,_Albert",
+  "source_notes": "Steinbrecher collection: Gauquelin 5/2149\\nIn December 2016, Sy Scholfield submitted birth certificate no. 1173 from the online Bruges municipal archives (Albert-Leona Louis Coppé): \"om zes ure 's avonds\" (at six o'clock in the evening).\\n\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 23.852925,
+    "lagna": 53.852925,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.626702,
+    "jd_ut": 2419367.25,
+    "planets": {
+      "Sun": {
+        "longitude": 220.751877,
+        "sign_index": 7,
+        "degree_in_sign": 10.751877,
+        "is_retrograde": false,
+        "speed": 1.012403
+      },
+      "Moon": {
+        "longitude": 284.509506,
+        "sign_index": 9,
+        "degree_in_sign": 14.509506,
+        "is_retrograde": false,
+        "speed": 9.040674
+      },
+      "Mars": {
+        "longitude": 38.615922,
+        "sign_index": 1,
+        "degree_in_sign": 8.615922,
+        "is_retrograde": true,
+        "speed": -0.370191
+      },
+      "Mercury": {
+        "longitude": 238.857051,
+        "sign_index": 7,
+        "degree_in_sign": 28.857051,
+        "is_retrograde": false,
+        "speed": 1.410417
+      },
+      "Jupiter": {
+        "longitude": 214.35613,
+        "sign_index": 7,
+        "degree_in_sign": 4.35613,
+        "is_retrograde": false,
+        "speed": 0.221623
+      },
+      "Venus": {
+        "longitude": 174.029365,
+        "sign_index": 5,
+        "degree_in_sign": 24.029365,
+        "is_retrograde": false,
+        "speed": 1.017039
+      },
+      "Saturn": {
+        "longitude": 22.801309,
+        "sign_index": 0,
+        "degree_in_sign": 22.801309,
+        "is_retrograde": true,
+        "speed": -0.075151
+      },
+      "Rahu": {
+        "longitude": 6.352506,
+        "sign_index": 0,
+        "degree_in_sign": 6.352506,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 186.352506,
+        "sign_index": 6,
+        "degree_in_sign": 6.352506,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

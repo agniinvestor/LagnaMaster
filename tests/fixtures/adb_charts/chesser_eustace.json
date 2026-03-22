@@ -1,0 +1,112 @@
+{
+  "adb_id": 47861,
+  "name": "Chesser, Eustace",
+  "given_name": "Eustace Chesser",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415830.513889,
+    "year": 1902,
+    "month": 3,
+    "day": 22,
+    "calendar": "g",
+    "time": "00:20",
+    "time_type": "s",
+    "hour": 0.333333,
+    "time_unknown": false,
+    "place": "Edinburgh",
+    "country": "Scotland",
+    "lat": 55.95,
+    "lon": -3.216667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chesser,_Eustace",
+  "source_notes": "Paul Wright collection, B.C.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Education : Public speaker",
+    "Vocation : Healing Fields : Psychologist",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 14.765187,
+    "lagna": 194.765187,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.491496,
+    "jd_ut": 2415830.513889,
+    "planets": {
+      "Sun": {
+        "longitude": 337.962603,
+        "sign_index": 11,
+        "degree_in_sign": 7.962603,
+        "is_retrograde": false,
+        "speed": 0.991887
+      },
+      "Moon": {
+        "longitude": 132.601966,
+        "sign_index": 4,
+        "degree_in_sign": 12.601966,
+        "is_retrograde": false,
+        "speed": 10.519073
+      },
+      "Mars": {
+        "longitude": 339.699287,
+        "sign_index": 11,
+        "degree_in_sign": 9.699287,
+        "is_retrograde": false,
+        "speed": 0.77553
+      },
+      "Mercury": {
+        "longitude": 310.744087,
+        "sign_index": 10,
+        "degree_in_sign": 10.744087,
+        "is_retrograde": false,
+        "speed": 1.175888
+      },
+      "Jupiter": {
+        "longitude": 286.708137,
+        "sign_index": 9,
+        "degree_in_sign": 16.708137,
+        "is_retrograde": false,
+        "speed": 0.188211
+      },
+      "Venus": {
+        "longitude": 298.771946,
+        "sign_index": 9,
+        "degree_in_sign": 28.771946,
+        "is_retrograde": false,
+        "speed": 0.481651
+      },
+      "Saturn": {
+        "longitude": 273.548977,
+        "sign_index": 9,
+        "degree_in_sign": 3.548977,
+        "is_retrograde": false,
+        "speed": 0.071426
+      },
+      "Rahu": {
+        "longitude": 193.77159,
+        "sign_index": 6,
+        "degree_in_sign": 13.77159,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 13.77159,
+        "sign_index": 0,
+        "degree_in_sign": 13.77159,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

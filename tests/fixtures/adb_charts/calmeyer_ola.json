@@ -1,0 +1,109 @@
+{
+  "adb_id": 97916,
+  "name": "Calmeyer, Ola",
+  "given_name": "Ola Calmeyer",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426081.28125,
+    "year": 1930,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "19:45",
+    "time_type": "s",
+    "hour": 19.75,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calmeyer,_Ola",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 11.647968,
+    "lagna": 161.647968,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.883389,
+    "jd_ut": 2426081.28125,
+    "planets": {
+      "Sun": {
+        "longitude": 1.201717,
+        "sign_index": 0,
+        "degree_in_sign": 1.201717,
+        "is_retrograde": false,
+        "speed": 0.978591
+      },
+      "Moon": {
+        "longitude": 201.346309,
+        "sign_index": 6,
+        "degree_in_sign": 21.346309,
+        "is_retrograde": false,
+        "speed": 13.426906
+      },
+      "Mars": {
+        "longitude": 329.404325,
+        "sign_index": 10,
+        "degree_in_sign": 29.404325,
+        "is_retrograde": false,
+        "speed": 0.777475
+      },
+      "Mercury": {
+        "longitude": 15.123157,
+        "sign_index": 0,
+        "degree_in_sign": 15.123157,
+        "is_retrograde": false,
+        "speed": 1.888069
+      },
+      "Jupiter": {
+        "longitude": 51.250292,
+        "sign_index": 1,
+        "degree_in_sign": 21.250292,
+        "is_retrograde": false,
+        "speed": 0.185761
+      },
+      "Venus": {
+        "longitude": 17.796553,
+        "sign_index": 0,
+        "degree_in_sign": 17.796553,
+        "is_retrograde": false,
+        "speed": 1.230973
+      },
+      "Saturn": {
+        "longitude": 258.964374,
+        "sign_index": 8,
+        "degree_in_sign": 18.964374,
+        "is_retrograde": false,
+        "speed": 0.011164
+      },
+      "Rahu": {
+        "longitude": 10.56197,
+        "sign_index": 0,
+        "degree_in_sign": 10.56197,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 190.56197,
+        "sign_index": 6,
+        "degree_in_sign": 10.56197,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 37069,
+  "name": "Cohen-Tannoudji, Claude",
+  "given_name": "Claude Cohen-Tannoudji",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427164.083333,
+    "year": 1933,
+    "month": 4,
+    "day": 1,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Constantine",
+    "country": "Algeria",
+    "lat": 36.366667,
+    "lon": 6.616667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen-Tannoudji,_Claude",
+  "source_notes": "Petitallot quotes B.C., Cadran No. 45, October 1997\\n",
+  "categories": [
+    "Traits : Mind : Exceptional mind",
+    "Vocation : Education : Teacher",
+    "Notable : Extraordinary Talents : For Abstract thought",
+    "Notable : Awards : Nobel prize",
+    "Notable : Famous : Founder/ originator",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 8.133947,
+    "lagna": 98.133947,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.924788,
+    "jd_ut": 2427164.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 348.46761,
+        "sign_index": 11,
+        "degree_in_sign": 18.46761,
+        "is_retrograde": false,
+        "speed": 0.986308
+      },
+      "Moon": {
+        "longitude": 60.645371,
+        "sign_index": 2,
+        "degree_in_sign": 0.645371,
+        "is_retrograde": false,
+        "speed": 8.359553
+      },
+      "Mars": {
+        "longitude": 128.634999,
+        "sign_index": 4,
+        "degree_in_sign": 8.634999,
+        "is_retrograde": true,
+        "speed": -0.135169
+      },
+      "Mercury": {
+        "longitude": 332.600486,
+        "sign_index": 11,
+        "degree_in_sign": 2.600486,
+        "is_retrograde": true,
+        "speed": -0.408443
+      },
+      "Jupiter": {
+        "longitude": 142.569632,
+        "sign_index": 4,
+        "degree_in_sign": 22.569632,
+        "is_retrograde": true,
+        "speed": -0.106619
+      },
+      "Venus": {
+        "longitude": 343.283636,
+        "sign_index": 11,
+        "degree_in_sign": 13.283636,
+        "is_retrograde": false,
+        "speed": 1.240932
+      },
+      "Saturn": {
+        "longitude": 291.057386,
+        "sign_index": 9,
+        "degree_in_sign": 21.057386,
+        "is_retrograde": false,
+        "speed": 0.08154
+      },
+      "Rahu": {
+        "longitude": 313.182039,
+        "sign_index": 10,
+        "degree_in_sign": 13.182039,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 133.182039,
+        "sign_index": 4,
+        "degree_in_sign": 13.182039,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

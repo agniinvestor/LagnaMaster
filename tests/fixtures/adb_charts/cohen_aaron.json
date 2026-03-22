@@ -1,0 +1,109 @@
+{
+  "adb_id": 72832,
+  "name": "Cohen, Aaron",
+  "given_name": "Aaron Cohen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426347.458333,
+    "year": 1931,
+    "month": 1,
+    "day": 5,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Corsicana",
+    "country": "Texas",
+    "lat": 32.1,
+    "lon": -96.466667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Aaron",
+  "source_notes": "Sy Scholfield quotes birth certificate [https://familysearch.org/ark:/61903/1:1:KHNR-8XM].\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 22.210576,
+    "lagna": 52.210576,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.893566,
+    "jd_ut": 2426347.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 261.771212,
+        "sign_index": 8,
+        "degree_in_sign": 21.771212,
+        "is_retrograde": false,
+        "speed": 1.018871
+      },
+      "Moon": {
+        "longitude": 101.872722,
+        "sign_index": 3,
+        "degree_in_sign": 11.872722,
+        "is_retrograde": false,
+        "speed": 18.066111
+      },
+      "Mars": {
+        "longitude": 111.629606,
+        "sign_index": 3,
+        "degree_in_sign": 21.629606,
+        "is_retrograde": true,
+        "speed": -0.247244
+      },
+      "Mercury": {
+        "longitude": 262.197673,
+        "sign_index": 8,
+        "degree_in_sign": 22.197673,
+        "is_retrograde": true,
+        "speed": -1.346244
+      },
+      "Jupiter": {
+        "longitude": 82.680402,
+        "sign_index": 2,
+        "degree_in_sign": 22.680402,
+        "is_retrograde": true,
+        "speed": -0.135192
+      },
+      "Venus": {
+        "longitude": 218.556408,
+        "sign_index": 7,
+        "degree_in_sign": 8.556408,
+        "is_retrograde": false,
+        "speed": 0.702787
+      },
+      "Saturn": {
+        "longitude": 261.402213,
+        "sign_index": 8,
+        "degree_in_sign": 21.402213,
+        "is_retrograde": false,
+        "speed": 0.118409
+      },
+      "Rahu": {
+        "longitude": 356.456693,
+        "sign_index": 11,
+        "degree_in_sign": 26.456693,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 176.456693,
+        "sign_index": 5,
+        "degree_in_sign": 26.456693,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

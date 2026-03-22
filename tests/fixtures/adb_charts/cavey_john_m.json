@@ -1,0 +1,111 @@
+{
+  "adb_id": 98745,
+  "name": "Cavey, John M.",
+  "given_name": "John M. Cavey",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417725.8125,
+    "year": 1907,
+    "month": 5,
+    "day": 30,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Milwaukee",
+    "country": "Wisconsin",
+    "lat": 43.033333,
+    "lon": -87.9
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavey,_John_M.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 17.191248,
+    "lagna": 317.191248,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.563951,
+    "jd_ut": 2417725.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 45.17635,
+        "sign_index": 1,
+        "degree_in_sign": 15.17635,
+        "is_retrograde": false,
+        "speed": 0.958408
+      },
+      "Moon": {
+        "longitude": 263.481371,
+        "sign_index": 8,
+        "degree_in_sign": 23.481371,
+        "is_retrograde": false,
+        "speed": 10.400035
+      },
+      "Mars": {
+        "longitude": 266.118501,
+        "sign_index": 8,
+        "degree_in_sign": 26.118501,
+        "is_retrograde": false,
+        "speed": 0.073032
+      },
+      "Mercury": {
+        "longitude": 52.434626,
+        "sign_index": 1,
+        "degree_in_sign": 22.434626,
+        "is_retrograde": false,
+        "speed": 2.141397
+      },
+      "Jupiter": {
+        "longitude": 79.830273,
+        "sign_index": 2,
+        "degree_in_sign": 19.830273,
+        "is_retrograde": false,
+        "speed": 0.203303
+      },
+      "Venus": {
+        "longitude": 16.656807,
+        "sign_index": 0,
+        "degree_in_sign": 16.656807,
+        "is_retrograde": false,
+        "speed": 1.202302
+      },
+      "Saturn": {
+        "longitude": 333.552167,
+        "sign_index": 11,
+        "degree_in_sign": 3.552167,
+        "is_retrograde": false,
+        "speed": 0.064027
+      },
+      "Rahu": {
+        "longitude": 93.335727,
+        "sign_index": 3,
+        "degree_in_sign": 3.335727,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 273.335727,
+        "sign_index": 9,
+        "degree_in_sign": 3.335727,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

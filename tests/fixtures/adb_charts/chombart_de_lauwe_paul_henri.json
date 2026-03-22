@@ -1,0 +1,108 @@
+{
+  "adb_id": 57109,
+  "name": "Chombart de Lauwe, Paul-Henri",
+  "given_name": "Paul-Henri Chombart de Lauwe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419983.916667,
+    "year": 1913,
+    "month": 8,
+    "day": 4,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Cambrai",
+    "country": "France",
+    "lat": 50.166667,
+    "lon": 3.233333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chombart_de_Lauwe,_Paul-Henri",
+  "source_notes": "Geslain archive\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Sociologist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.87552,
+    "lagna": 145.87552,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.650277,
+    "jd_ut": 2419983.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 108.744416,
+        "sign_index": 3,
+        "degree_in_sign": 18.744416,
+        "is_retrograde": false,
+        "speed": 0.958004
+      },
+      "Moon": {
+        "longitude": 135.753384,
+        "sign_index": 4,
+        "degree_in_sign": 15.753384,
+        "is_retrograde": false,
+        "speed": 12.645129
+      },
+      "Mars": {
+        "longitude": 41.35338,
+        "sign_index": 1,
+        "degree_in_sign": 11.35338,
+        "is_retrograde": false,
+        "speed": 0.663928
+      },
+      "Mercury": {
+        "longitude": 108.848275,
+        "sign_index": 3,
+        "degree_in_sign": 18.848275,
+        "is_retrograde": true,
+        "speed": -0.766279
+      },
+      "Jupiter": {
+        "longitude": 256.844735,
+        "sign_index": 8,
+        "degree_in_sign": 16.844735,
+        "is_retrograde": true,
+        "speed": -0.091279
+      },
+      "Venus": {
+        "longitude": 65.627782,
+        "sign_index": 2,
+        "degree_in_sign": 5.627782,
+        "is_retrograde": false,
+        "speed": 1.097928
+      },
+      "Saturn": {
+        "longitude": 52.705271,
+        "sign_index": 1,
+        "degree_in_sign": 22.705271,
+        "is_retrograde": false,
+        "speed": 0.091059
+      },
+      "Rahu": {
+        "longitude": 333.674046,
+        "sign_index": 11,
+        "degree_in_sign": 3.674046,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 153.674046,
+        "sign_index": 5,
+        "degree_in_sign": 3.674046,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

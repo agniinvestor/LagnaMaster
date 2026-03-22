@@ -1,0 +1,108 @@
+{
+  "adb_id": 105160,
+  "name": "Cler, Louis",
+  "given_name": "Louis Cler",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417210.07684,
+    "year": 1905,
+    "month": 12,
+    "day": 30,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Saint-Raphaël",
+    "country": "France",
+    "lat": 43.416667,
+    "lon": 6.766667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cler,_Louis",
+  "source_notes": "quoted BC from Bordoni database\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 21.285618,
+    "lagna": 21.285618,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.544235,
+    "jd_ut": 2417210.07684,
+    "planets": {
+      "Sun": {
+        "longitude": 255.689593,
+        "sign_index": 8,
+        "degree_in_sign": 15.689593,
+        "is_retrograde": false,
+        "speed": 1.019475
+      },
+      "Moon": {
+        "longitude": 311.356216,
+        "sign_index": 10,
+        "degree_in_sign": 11.356216,
+        "is_retrograde": false,
+        "speed": 9.036854
+      },
+      "Mars": {
+        "longitude": 309.756118,
+        "sign_index": 10,
+        "degree_in_sign": 9.756118,
+        "is_retrograde": false,
+        "speed": 0.765593
+      },
+      "Mercury": {
+        "longitude": 233.857126,
+        "sign_index": 7,
+        "degree_in_sign": 23.857126,
+        "is_retrograde": false,
+        "speed": 0.587021
+      },
+      "Jupiter": {
+        "longitude": 34.742603,
+        "sign_index": 1,
+        "degree_in_sign": 4.742603,
+        "is_retrograde": true,
+        "speed": -0.073442
+      },
+      "Venus": {
+        "longitude": 244.705471,
+        "sign_index": 8,
+        "degree_in_sign": 4.705471,
+        "is_retrograde": false,
+        "speed": 1.257447
+      },
+      "Saturn": {
+        "longitude": 306.602179,
+        "sign_index": 10,
+        "degree_in_sign": 6.602179,
+        "is_retrograde": false,
+        "speed": 0.090981
+      },
+      "Rahu": {
+        "longitude": 120.665644,
+        "sign_index": 4,
+        "degree_in_sign": 0.665644,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 300.665644,
+        "sign_index": 10,
+        "degree_in_sign": 0.665644,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

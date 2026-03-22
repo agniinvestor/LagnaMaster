@@ -1,0 +1,109 @@
+{
+  "adb_id": 3171,
+  "name": "Campana, Dino",
+  "given_name": "Dino Campana",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409774.059074,
+    "year": 1885,
+    "month": 8,
+    "day": 20,
+    "calendar": "g",
+    "time": "14:15",
+    "time_type": "s",
+    "hour": 14.25,
+    "time_unknown": false,
+    "place": "Marradi",
+    "country": "Italy",
+    "lat": 44.066667,
+    "lon": 11.616667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campana,_Dino",
+  "source_notes": "Bordoni quotes B.C.  (2:15 PM Rome time)\\n",
+  "categories": [
+    "Diagnoses : Psychological : Institutionalized",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 25.956864,
+    "lagna": 205.956864,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.259977,
+    "jd_ut": 2409774.059074,
+    "planets": {
+      "Sun": {
+        "longitude": 125.37127,
+        "sign_index": 4,
+        "degree_in_sign": 5.37127,
+        "is_retrograde": false,
+        "speed": 0.963345
+      },
+      "Moon": {
+        "longitude": 249.175233,
+        "sign_index": 8,
+        "degree_in_sign": 9.175233,
+        "is_retrograde": false,
+        "speed": 11.791771
+      },
+      "Mars": {
+        "longitude": 80.491749,
+        "sign_index": 2,
+        "degree_in_sign": 20.491749,
+        "is_retrograde": false,
+        "speed": 0.646914
+      },
+      "Mercury": {
+        "longitude": 146.331977,
+        "sign_index": 4,
+        "degree_in_sign": 26.331977,
+        "is_retrograde": true,
+        "speed": -0.041705
+      },
+      "Jupiter": {
+        "longitude": 139.938804,
+        "sign_index": 4,
+        "degree_in_sign": 19.938804,
+        "is_retrograde": false,
+        "speed": 0.212625
+      },
+      "Venus": {
+        "longitude": 154.125949,
+        "sign_index": 5,
+        "degree_in_sign": 4.125949,
+        "is_retrograde": false,
+        "speed": 1.212432
+      },
+      "Saturn": {
+        "longitude": 72.962257,
+        "sign_index": 2,
+        "degree_in_sign": 12.962257,
+        "is_retrograde": false,
+        "speed": 0.095869
+      },
+      "Rahu": {
+        "longitude": 154.715933,
+        "sign_index": 5,
+        "degree_in_sign": 4.715933,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 334.715933,
+        "sign_index": 11,
+        "degree_in_sign": 4.715933,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

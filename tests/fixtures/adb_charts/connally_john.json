@@ -1,0 +1,118 @@
+{
+  "adb_id": 26438,
+  "name": "Connally, John",
+  "given_name": "John Connally",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421286.833333,
+    "year": 1917,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Floresville",
+    "country": "Texas",
+    "lat": 29.133333,
+    "lon": -98.15
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connally,_John",
+  "source_notes": "Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Heart",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids -Traumatic event",
+    "Lifestyle : Financial : Loss - Bankruptcy",
+    "Lifestyle : Financial : Rags to riches",
+    "Passions : Criminal Victim : Assault/ Battery victim",
+    "Vocation : Military : Combat",
+    "Vocation : Politics : Candidate and lost",
+    "Vocation : Politics : Government employee",
+    "Vocation : Politics : Heads of state"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.721352,
+    "lagna": 210.721352,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.700088,
+    "jd_ut": 2421286.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 315.469569,
+        "sign_index": 10,
+        "degree_in_sign": 15.469569,
+        "is_retrograde": false,
+        "speed": 1.00435
+      },
+      "Moon": {
+        "longitude": 28.692416,
+        "sign_index": 0,
+        "degree_in_sign": 28.692416,
+        "is_retrograde": false,
+        "speed": 15.81928
+      },
+      "Mars": {
+        "longitude": 315.802603,
+        "sign_index": 10,
+        "degree_in_sign": 15.802603,
+        "is_retrograde": false,
+        "speed": 0.788943
+      },
+      "Mercury": {
+        "longitude": 293.071714,
+        "sign_index": 9,
+        "degree_in_sign": 23.071714,
+        "is_retrograde": false,
+        "speed": 1.436912
+      },
+      "Jupiter": {
+        "longitude": 9.812825,
+        "sign_index": 0,
+        "degree_in_sign": 9.812825,
+        "is_retrograde": false,
+        "speed": 0.184895
+      },
+      "Venus": {
+        "longitude": 300.797056,
+        "sign_index": 10,
+        "degree_in_sign": 0.797056,
+        "is_retrograde": false,
+        "speed": 1.246507
+      },
+      "Saturn": {
+        "longitude": 91.595334,
+        "sign_index": 3,
+        "degree_in_sign": 1.595334,
+        "is_retrograde": true,
+        "speed": -0.047075
+      },
+      "Rahu": {
+        "longitude": 264.629763,
+        "sign_index": 8,
+        "degree_in_sign": 24.629763,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 84.629763,
+        "sign_index": 2,
+        "degree_in_sign": 24.629763,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

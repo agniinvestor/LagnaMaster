@@ -1,0 +1,110 @@
+{
+  "adb_id": 54870,
+  "name": "Cerrone, Jean-Marc",
+  "given_name": "Jean-Marc Cerrone",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434157.3125,
+    "year": 1952,
+    "month": 5,
+    "day": 24,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Vitry",
+    "country": "France",
+    "lat": 48.8,
+    "lon": 2.4
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cerrone,_Jean-Marc",
+  "source_notes": "Paddy de Jabrun quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.077033,
+    "lagna": 197.077033,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.192175,
+    "jd_ut": 2434157.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 40.348295,
+        "sign_index": 1,
+        "degree_in_sign": 10.348295,
+        "is_retrograde": false,
+        "speed": 0.960762
+      },
+      "Moon": {
+        "longitude": 51.377201,
+        "sign_index": 1,
+        "degree_in_sign": 21.377201,
+        "is_retrograde": false,
+        "speed": 13.320061
+      },
+      "Mars": {
+        "longitude": 189.771256,
+        "sign_index": 6,
+        "degree_in_sign": 9.771256,
+        "is_retrograde": true,
+        "speed": -0.21938
+      },
+      "Mercury": {
+        "longitude": 23.518251,
+        "sign_index": 0,
+        "degree_in_sign": 23.518251,
+        "is_retrograde": false,
+        "speed": 1.825262
+      },
+      "Jupiter": {
+        "longitude": 12.869836,
+        "sign_index": 0,
+        "degree_in_sign": 12.869836,
+        "is_retrograde": false,
+        "speed": 0.226059
+      },
+      "Venus": {
+        "longitude": 31.904562,
+        "sign_index": 1,
+        "degree_in_sign": 1.904562,
+        "is_retrograde": false,
+        "speed": 1.227644
+      },
+      "Saturn": {
+        "longitude": 165.231651,
+        "sign_index": 5,
+        "degree_in_sign": 15.231651,
+        "is_retrograde": true,
+        "speed": -0.027753
+      },
+      "Rahu": {
+        "longitude": 302.596372,
+        "sign_index": 10,
+        "degree_in_sign": 2.596372,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 122.596372,
+        "sign_index": 4,
+        "degree_in_sign": 2.596372,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

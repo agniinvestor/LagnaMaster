@@ -1,0 +1,110 @@
+{
+  "adb_id": 79173,
+  "name": "Carolina, Princess of Parma",
+  "given_name": "Princess of Parma Carolina",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2367864.49213,
+    "year": 1770,
+    "month": 11,
+    "day": 22,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "l",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Parma",
+    "country": "Italy",
+    "lat": 44.8,
+    "lon": 10.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carolina,_Princess_of_Parma",
+  "source_notes": "Sy Scholfield quotes from \"Augsburgische Ordinari Postzeitung von Staats-, gelehrten, historisch- u. ökonomischen Neuigkeiten: 1770\": \"Parma, Den 28. Nov. Den 22. dies zwischen 12. und 1. Uhr seyn unsere gnädigste Landesfürstin zu allgemeiner Freude glücklich mit einer Prinzeßin entbunden worden.\" (\"Parma, Nov. 28th. On the 22nd, between 12 and 1 o'clock, our most gracious sovereign happily gave birth to a princess).\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 2.320613,
+    "lagna": 122.320613,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.658368,
+    "jd_ut": 2367864.49213,
+    "planets": {
+      "Sun": {
+        "longitude": 219.126341,
+        "sign_index": 7,
+        "degree_in_sign": 9.126341,
+        "is_retrograde": false,
+        "speed": 1.012135
+      },
+      "Moon": {
+        "longitude": 270.061457,
+        "sign_index": 9,
+        "degree_in_sign": 0.061457,
+        "is_retrograde": false,
+        "speed": 14.770539
+      },
+      "Mars": {
+        "longitude": 70.316431,
+        "sign_index": 2,
+        "degree_in_sign": 10.316431,
+        "is_retrograde": true,
+        "speed": -0.233122
+      },
+      "Mercury": {
+        "longitude": 203.8418,
+        "sign_index": 6,
+        "degree_in_sign": 23.8418,
+        "is_retrograde": false,
+        "speed": 1.503772
+      },
+      "Jupiter": {
+        "longitude": 247.074445,
+        "sign_index": 8,
+        "degree_in_sign": 7.074445,
+        "is_retrograde": false,
+        "speed": 0.216232
+      },
+      "Venus": {
+        "longitude": 263.774102,
+        "sign_index": 8,
+        "degree_in_sign": 23.774102,
+        "is_retrograde": false,
+        "speed": 0.772743
+      },
+      "Saturn": {
+        "longitude": 115.462889,
+        "sign_index": 3,
+        "degree_in_sign": 25.462889,
+        "is_retrograde": false,
+        "speed": 0.009509
+      },
+      "Rahu": {
+        "longitude": 215.595085,
+        "sign_index": 7,
+        "degree_in_sign": 5.595085,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 35.595085,
+        "sign_index": 1,
+        "degree_in_sign": 5.595085,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

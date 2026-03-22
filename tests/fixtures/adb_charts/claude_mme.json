@@ -1,0 +1,109 @@
+{
+  "adb_id": 53379,
+  "name": "Claude, Mme.",
+  "given_name": "Mme. Claude",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423606.833333,
+    "year": 1923,
+    "month": 7,
+    "day": 6,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "d",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Angers",
+    "country": "France",
+    "lat": 47.466667,
+    "lon": -0.55
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claude,_Mme.",
+  "source_notes": "Steinbrecher collection: Lescaut quotes ca 192 for birth record\\n",
+  "categories": [
+    "Vocation : Sex Business : Prostitute/ Pimp",
+    "Vocation : Sex Business : Other Sex Bus"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 9.606431,
+    "lagna": 99.606431,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.788785,
+    "jd_ut": 2423606.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 80.436606,
+        "sign_index": 2,
+        "degree_in_sign": 20.436606,
+        "is_retrograde": false,
+        "speed": 0.953257
+      },
+      "Moon": {
+        "longitude": 352.691072,
+        "sign_index": 11,
+        "degree_in_sign": 22.691072,
+        "is_retrograde": false,
+        "speed": 8.74024
+      },
+      "Mars": {
+        "longitude": 90.949974,
+        "sign_index": 3,
+        "degree_in_sign": 0.949974,
+        "is_retrograde": false,
+        "speed": 0.64503
+      },
+      "Mercury": {
+        "longitude": 63.27527,
+        "sign_index": 2,
+        "degree_in_sign": 3.27527,
+        "is_retrograde": false,
+        "speed": 1.732253
+      },
+      "Jupiter": {
+        "longitude": 196.273515,
+        "sign_index": 6,
+        "degree_in_sign": 16.273515,
+        "is_retrograde": true,
+        "speed": -0.003084
+      },
+      "Venus": {
+        "longitude": 62.510737,
+        "sign_index": 2,
+        "degree_in_sign": 2.510737,
+        "is_retrograde": false,
+        "speed": 1.217708
+      },
+      "Saturn": {
+        "longitude": 170.880758,
+        "sign_index": 5,
+        "degree_in_sign": 20.880758,
+        "is_retrograde": false,
+        "speed": 0.031902
+      },
+      "Rahu": {
+        "longitude": 141.688117,
+        "sign_index": 4,
+        "degree_in_sign": 21.688117,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 321.688117,
+        "sign_index": 10,
+        "degree_in_sign": 21.688117,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

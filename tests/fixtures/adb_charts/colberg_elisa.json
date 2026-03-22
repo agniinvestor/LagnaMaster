@@ -1,0 +1,106 @@
+{
+  "adb_id": 74970,
+  "name": "Colberg, Elisa",
+  "given_name": "Elisa Colberg",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416229.875,
+    "year": 1903,
+    "month": 4,
+    "day": 25,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Cabo Rojo",
+    "country": "Puerto Rico",
+    "lat": 18.083333,
+    "lon": -67.15
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colberg,_Elisa",
+  "source_notes": "Castellanos quotes BC\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 27.703186,
+    "lagna": 327.703186,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.506763,
+    "jd_ut": 2416229.875,
+    "planets": {
+      "Sun": {
+        "longitude": 11.473128,
+        "sign_index": 0,
+        "degree_in_sign": 11.473128,
+        "is_retrograde": false,
+        "speed": 0.973705
+      },
+      "Moon": {
+        "longitude": 344.681747,
+        "sign_index": 11,
+        "degree_in_sign": 14.681747,
+        "is_retrograde": false,
+        "speed": 12.97858
+      },
+      "Mars": {
+        "longitude": 156.264818,
+        "sign_index": 5,
+        "degree_in_sign": 6.264818,
+        "is_retrograde": true,
+        "speed": -0.188249
+      },
+      "Mercury": {
+        "longitude": 24.909531,
+        "sign_index": 0,
+        "degree_in_sign": 24.909531,
+        "is_retrograde": false,
+        "speed": 1.936699
+      },
+      "Jupiter": {
+        "longitude": 321.944868,
+        "sign_index": 10,
+        "degree_in_sign": 21.944868,
+        "is_retrograde": false,
+        "speed": 0.195714
+      },
+      "Venus": {
+        "longitude": 45.960435,
+        "sign_index": 1,
+        "degree_in_sign": 15.960435,
+        "is_retrograde": false,
+        "speed": 1.189067
+      },
+      "Saturn": {
+        "longitude": 286.30429,
+        "sign_index": 9,
+        "degree_in_sign": 16.30429,
+        "is_retrograde": false,
+        "speed": 0.040236
+      },
+      "Rahu": {
+        "longitude": 172.608603,
+        "sign_index": 5,
+        "degree_in_sign": 22.608603,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 352.608603,
+        "sign_index": 11,
+        "degree_in_sign": 22.608603,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 72631,
+  "name": "Coto Alban, Fernando",
+  "given_name": "Fernando Coto Alban",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422262.441817,
+    "year": 1919,
+    "month": 10,
+    "day": 30,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Cartago",
+    "country": "Costa Rica",
+    "lat": 9.866667,
+    "lon": -83.916667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coto_Alban,_Fernando",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 11.637468,
+    "lagna": 341.637468,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.737387,
+    "jd_ut": 2422262.441817,
+    "planets": {
+      "Sun": {
+        "longitude": 193.718055,
+        "sign_index": 6,
+        "degree_in_sign": 13.718055,
+        "is_retrograde": false,
+        "speed": 1.000006
+      },
+      "Moon": {
+        "longitude": 270.783011,
+        "sign_index": 9,
+        "degree_in_sign": 0.783011,
+        "is_retrograde": false,
+        "speed": 6.687929
+      },
+      "Mars": {
+        "longitude": 139.731434,
+        "sign_index": 4,
+        "degree_in_sign": 19.731434,
+        "is_retrograde": false,
+        "speed": 0.590552
+      },
+      "Mercury": {
+        "longitude": 213.389517,
+        "sign_index": 7,
+        "degree_in_sign": 3.389517,
+        "is_retrograde": false,
+        "speed": 1.3781
+      },
+      "Jupiter": {
+        "longitude": 113.443541,
+        "sign_index": 3,
+        "degree_in_sign": 23.443541,
+        "is_retrograde": false,
+        "speed": 0.105733
+      },
+      "Venus": {
+        "longitude": 149.620634,
+        "sign_index": 4,
+        "degree_in_sign": 29.620634,
+        "is_retrograde": false,
+        "speed": 0.742103
+      },
+      "Saturn": {
+        "longitude": 136.459572,
+        "sign_index": 4,
+        "degree_in_sign": 16.459572,
+        "is_retrograde": false,
+        "speed": 0.086949
+      },
+      "Rahu": {
+        "longitude": 212.930229,
+        "sign_index": 7,
+        "degree_in_sign": 2.930229,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 32.930229,
+        "sign_index": 1,
+        "degree_in_sign": 2.930229,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

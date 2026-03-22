@@ -1,0 +1,108 @@
+{
+  "adb_id": 71588,
+  "name": "Carré, Marguerite",
+  "given_name": "Marguerite Carré",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407943.583704,
+    "year": 1880,
+    "month": 8,
+    "day": 16,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Cabourg",
+    "country": "France",
+    "lat": 49.283333,
+    "lon": -0.133333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carré,_Marguerite",
+  "source_notes": "Sy Scholfield quotes from birth certificate n° 16 in the online Calvados archive, p. 596/699. \\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/Opera"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 6.501502,
+    "lagna": 66.501502,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.190007,
+    "jd_ut": 2407943.583704,
+    "planets": {
+      "Sun": {
+        "longitude": 121.338557,
+        "sign_index": 4,
+        "degree_in_sign": 1.338557,
+        "is_retrograde": false,
+        "speed": 0.961585
+      },
+      "Moon": {
+        "longitude": 244.588968,
+        "sign_index": 8,
+        "degree_in_sign": 4.588968,
+        "is_retrograde": false,
+        "speed": 14.224346
+      },
+      "Mars": {
+        "longitude": 144.174713,
+        "sign_index": 4,
+        "degree_in_sign": 24.174713,
+        "is_retrograde": false,
+        "speed": 0.634511
+      },
+      "Mercury": {
+        "longitude": 106.131358,
+        "sign_index": 3,
+        "degree_in_sign": 16.131358,
+        "is_retrograde": false,
+        "speed": 0.076
+      },
+      "Jupiter": {
+        "longitude": 357.2628,
+        "sign_index": 11,
+        "degree_in_sign": 27.2628,
+        "is_retrograde": true,
+        "speed": -0.024831
+      },
+      "Venus": {
+        "longitude": 130.468624,
+        "sign_index": 4,
+        "degree_in_sign": 10.468624,
+        "is_retrograde": false,
+        "speed": 1.235645
+      },
+      "Saturn": {
+        "longitude": 6.734541,
+        "sign_index": 0,
+        "degree_in_sign": 6.734541,
+        "is_retrograde": true,
+        "speed": -0.010009
+      },
+      "Rahu": {
+        "longitude": 251.71671,
+        "sign_index": 8,
+        "degree_in_sign": 11.71671,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 71.71671,
+        "sign_index": 2,
+        "degree_in_sign": 11.71671,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

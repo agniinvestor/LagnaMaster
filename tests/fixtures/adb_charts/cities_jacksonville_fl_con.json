@@ -1,0 +1,108 @@
+{
+  "adb_id": 27057,
+  "name": "Cities: Jacksonville FL (con)",
+  "given_name": "Cities: Jacksonville FL (con)",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440131.052083,
+    "year": 1968,
+    "month": 10,
+    "day": 1,
+    "calendar": "g",
+    "time": "09:15",
+    "time_type": "d",
+    "hour": 9.25,
+    "time_unknown": false,
+    "place": "Jacksonville",
+    "country": "Florida",
+    "lat": 30.333333,
+    "lon": -81.65
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cities:_Jacksonville_FL_(con)",
+  "source_notes": "Date and time from City Commission.\\n",
+  "categories": [
+    "Mundane : City Population : more than 500,000 population"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 15.46367,
+    "lagna": 165.46367,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.420599,
+    "jd_ut": 2440131.052083,
+    "planets": {
+      "Sun": {
+        "longitude": 164.997864,
+        "sign_index": 5,
+        "degree_in_sign": 14.997864,
+        "is_retrograde": false,
+        "speed": 0.983604
+      },
+      "Moon": {
+        "longitude": 285.09259,
+        "sign_index": 9,
+        "degree_in_sign": 15.09259,
+        "is_retrograde": false,
+        "speed": 18.462347
+      },
+      "Mars": {
+        "longitude": 132.70396,
+        "sign_index": 4,
+        "degree_in_sign": 12.70396,
+        "is_retrograde": false,
+        "speed": 0.624446
+      },
+      "Mercury": {
+        "longitude": 187.621829,
+        "sign_index": 6,
+        "degree_in_sign": 7.621829,
+        "is_retrograde": false,
+        "speed": 0.213027
+      },
+      "Jupiter": {
+        "longitude": 147.811769,
+        "sign_index": 4,
+        "degree_in_sign": 27.811769,
+        "is_retrograde": false,
+        "speed": 0.211577
+      },
+      "Venus": {
+        "longitude": 192.531193,
+        "sign_index": 6,
+        "degree_in_sign": 12.531193,
+        "is_retrograde": false,
+        "speed": 1.225311
+      },
+      "Saturn": {
+        "longitude": 359.747111,
+        "sign_index": 11,
+        "degree_in_sign": 29.747111,
+        "is_retrograde": true,
+        "speed": -0.075435
+      },
+      "Rahu": {
+        "longitude": 346.035665,
+        "sign_index": 11,
+        "degree_in_sign": 16.035665,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 166.035665,
+        "sign_index": 5,
+        "degree_in_sign": 16.035665,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

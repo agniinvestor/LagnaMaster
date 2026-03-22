@@ -1,0 +1,111 @@
+{
+  "adb_id": 90284,
+  "name": "Carte, Anto",
+  "given_name": "Anto Carte",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410248.529514,
+    "year": 1886,
+    "month": 12,
+    "day": 8,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Mons",
+    "country": "Belgium",
+    "lat": 50.45,
+    "lon": 3.933333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carte,_Anto",
+  "source_notes": "Sy Scholfield provided birth registry entry from Hainaut archives (no. 551). \\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Education : Teacher",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 16.346661,
+    "lagna": 136.346661,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.278113,
+    "jd_ut": 2410248.529514,
+    "planets": {
+      "Sun": {
+        "longitude": 233.623443,
+        "sign_index": 7,
+        "degree_in_sign": 23.623443,
+        "is_retrograde": false,
+        "speed": 1.015841
+      },
+      "Moon": {
+        "longitude": 11.950882,
+        "sign_index": 0,
+        "degree_in_sign": 11.950882,
+        "is_retrograde": false,
+        "speed": 10.657145
+      },
+      "Mars": {
+        "longitude": 264.987424,
+        "sign_index": 8,
+        "degree_in_sign": 24.987424,
+        "is_retrograde": false,
+        "speed": 0.774981
+      },
+      "Mercury": {
+        "longitude": 223.455508,
+        "sign_index": 7,
+        "degree_in_sign": 13.455508,
+        "is_retrograde": true,
+        "speed": -0.946572
+      },
+      "Jupiter": {
+        "longitude": 186.188101,
+        "sign_index": 6,
+        "degree_in_sign": 6.188101,
+        "is_retrograde": false,
+        "speed": 0.177972
+      },
+      "Venus": {
+        "longitude": 234.790393,
+        "sign_index": 7,
+        "degree_in_sign": 24.790393,
+        "is_retrograde": false,
+        "speed": 1.257902
+      },
+      "Saturn": {
+        "longitude": 89.201259,
+        "sign_index": 2,
+        "degree_in_sign": 29.201259,
+        "is_retrograde": true,
+        "speed": -0.058638
+      },
+      "Rahu": {
+        "longitude": 129.572738,
+        "sign_index": 4,
+        "degree_in_sign": 9.572738,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.572738,
+        "sign_index": 10,
+        "degree_in_sign": 9.572738,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

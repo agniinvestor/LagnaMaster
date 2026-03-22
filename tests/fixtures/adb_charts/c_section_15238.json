@@ -1,0 +1,108 @@
+{
+  "adb_id": 15238,
+  "name": "C-Section 15238",
+  "given_name": "C-Section 15238",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2447697.78125,
+    "year": 1989,
+    "month": 6,
+    "day": 20,
+    "calendar": "g",
+    "time": "09:45",
+    "time_type": "d",
+    "hour": 9.75,
+    "time_unknown": false,
+    "place": "Athens",
+    "country": "Greece",
+    "lat": 37.966667,
+    "lon": 23.716667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:C-Section_15238",
+  "source_notes": "Panagiotopoulos quotes anaesthetist\\n",
+  "categories": [
+    "Personal : Birth : Cesarean"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 26.928407,
+    "lagna": 86.928407,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.70996,
+    "jd_ut": 2447697.78125,
+    "planets": {
+      "Sun": {
+        "longitude": 65.209077,
+        "sign_index": 2,
+        "degree_in_sign": 5.209077,
+        "is_retrograde": false,
+        "speed": 0.953952
+      },
+      "Moon": {
+        "longitude": 256.529767,
+        "sign_index": 8,
+        "degree_in_sign": 16.529767,
+        "is_retrograde": false,
+        "speed": 15.003553
+      },
+      "Mars": {
+        "longitude": 98.58267,
+        "sign_index": 3,
+        "degree_in_sign": 8.58267,
+        "is_retrograde": false,
+        "speed": 0.62192
+      },
+      "Mercury": {
+        "longitude": 42.547623,
+        "sign_index": 1,
+        "degree_in_sign": 12.547623,
+        "is_retrograde": false,
+        "speed": 1.049241
+      },
+      "Jupiter": {
+        "longitude": 57.320319,
+        "sign_index": 1,
+        "degree_in_sign": 27.320319,
+        "is_retrograde": false,
+        "speed": 0.230292
+      },
+      "Venus": {
+        "longitude": 85.296789,
+        "sign_index": 2,
+        "degree_in_sign": 25.296789,
+        "is_retrograde": false,
+        "speed": 1.219072
+      },
+      "Saturn": {
+        "longitude": 257.803134,
+        "sign_index": 8,
+        "degree_in_sign": 17.803134,
+        "is_retrograde": true,
+        "speed": -0.071077
+      },
+      "Rahu": {
+        "longitude": 305.059306,
+        "sign_index": 10,
+        "degree_in_sign": 5.059306,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 125.059306,
+        "sign_index": 4,
+        "degree_in_sign": 5.059306,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

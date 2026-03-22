@@ -1,0 +1,111 @@
+{
+  "adb_id": 99444,
+  "name": "Carstensen, Claus",
+  "given_name": "Claus Carstensen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436009.013889,
+    "year": 1957,
+    "month": 6,
+    "day": 19,
+    "calendar": "g",
+    "time": "13:20",
+    "time_type": "s",
+    "hour": 13.333333,
+    "time_unknown": false,
+    "place": "Sønderborg",
+    "country": "Denmark",
+    "lat": 54.916667,
+    "lon": 9.783333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carstensen,_Claus",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file (born at \"tretten, tyve\"/ thirteen-twenty o'clock). \\n",
+  "categories": [
+    "Lifestyle : Financial : Gain - Grant, Scholarship, etc.",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Education : Teacher",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.71828,
+    "lagna": 141.71828,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.262979,
+    "jd_ut": 2436009.013889,
+    "planets": {
+      "Sun": {
+        "longitude": 64.665716,
+        "sign_index": 2,
+        "degree_in_sign": 4.665716,
+        "is_retrograde": false,
+        "speed": 0.954225
+      },
+      "Moon": {
+        "longitude": 323.874186,
+        "sign_index": 10,
+        "degree_in_sign": 23.874186,
+        "is_retrograde": false,
+        "speed": 13.164345
+      },
+      "Mars": {
+        "longitude": 95.481593,
+        "sign_index": 3,
+        "degree_in_sign": 5.481593,
+        "is_retrograde": false,
+        "speed": 0.626307
+      },
+      "Mercury": {
+        "longitude": 48.292966,
+        "sign_index": 1,
+        "degree_in_sign": 18.292966,
+        "is_retrograde": false,
+        "speed": 1.825844
+      },
+      "Jupiter": {
+        "longitude": 150.004115,
+        "sign_index": 5,
+        "degree_in_sign": 0.004115,
+        "is_retrograde": false,
+        "speed": 0.088155
+      },
+      "Venus": {
+        "longitude": 82.166618,
+        "sign_index": 2,
+        "degree_in_sign": 22.166618,
+        "is_retrograde": false,
+        "speed": 1.221996
+      },
+      "Saturn": {
+        "longitude": 226.476249,
+        "sign_index": 7,
+        "degree_in_sign": 16.476249,
+        "is_retrograde": true,
+        "speed": -0.068411
+      },
+      "Rahu": {
+        "longitude": 204.47091,
+        "sign_index": 6,
+        "degree_in_sign": 24.47091,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 24.47091,
+        "sign_index": 0,
+        "degree_in_sign": 24.47091,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

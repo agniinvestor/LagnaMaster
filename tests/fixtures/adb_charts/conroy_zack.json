@@ -1,0 +1,109 @@
+{
+  "adb_id": 54975,
+  "name": "Conroy, Zack",
+  "given_name": "Zack Conroy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446175.470833,
+    "year": 1985,
+    "month": 4,
+    "day": 19,
+    "calendar": "g",
+    "time": "18:18",
+    "time_type": "s",
+    "hour": 18.3,
+    "time_unknown": false,
+    "place": "Portsmouth",
+    "country": "New Hampshire",
+    "lat": 43.066667,
+    "lon": -70.766667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conroy,_Zack",
+  "source_notes": "Stephen Przybylowski quotes birth record\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 11.075037,
+    "lagna": 161.075037,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.651743,
+    "jd_ut": 2446175.470833,
+    "planets": {
+      "Sun": {
+        "longitude": 6.184111,
+        "sign_index": 0,
+        "degree_in_sign": 6.184111,
+        "is_retrograde": false,
+        "speed": 0.97663
+      },
+      "Moon": {
+        "longitude": 2.624211,
+        "sign_index": 0,
+        "degree_in_sign": 2.624211,
+        "is_retrograde": false,
+        "speed": 12.355342
+      },
+      "Mars": {
+        "longitude": 31.874369,
+        "sign_index": 1,
+        "degree_in_sign": 1.874369,
+        "is_retrograde": false,
+        "speed": 0.700506
+      },
+      "Mercury": {
+        "longitude": 343.394916,
+        "sign_index": 11,
+        "degree_in_sign": 13.394916,
+        "is_retrograde": false,
+        "speed": 0.22952
+      },
+      "Jupiter": {
+        "longitude": 290.155563,
+        "sign_index": 9,
+        "degree_in_sign": 20.155563,
+        "is_retrograde": false,
+        "speed": 0.130528
+      },
+      "Venus": {
+        "longitude": 342.860787,
+        "sign_index": 11,
+        "degree_in_sign": 12.860787,
+        "is_retrograde": true,
+        "speed": -0.202632
+      },
+      "Saturn": {
+        "longitude": 213.005018,
+        "sign_index": 7,
+        "degree_in_sign": 3.005018,
+        "is_retrograde": true,
+        "speed": -0.062393
+      },
+      "Rahu": {
+        "longitude": 25.729616,
+        "sign_index": 0,
+        "degree_in_sign": 25.729616,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 205.729616,
+        "sign_index": 6,
+        "degree_in_sign": 25.729616,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

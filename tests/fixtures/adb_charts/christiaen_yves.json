@@ -1,0 +1,109 @@
+{
+  "adb_id": 62905,
+  "name": "Christiaen, Yves",
+  "given_name": "Yves Christiaen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419455.0,
+    "year": 1912,
+    "month": 2,
+    "day": 22,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Noyers",
+    "country": "France",
+    "lat": 47.7,
+    "lon": 4.0
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christiaen,_Yves",
+  "source_notes": "Didier Geslain archive, 'Astrologues' pdf file, p. 58.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.911362,
+    "lagna": 47.911362,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.630057,
+    "jd_ut": 2419455.0,
+    "planets": {
+      "Sun": {
+        "longitude": 309.894039,
+        "sign_index": 10,
+        "degree_in_sign": 9.894039,
+        "is_retrograde": false,
+        "speed": 1.007098
+      },
+      "Moon": {
+        "longitude": 359.199738,
+        "sign_index": 11,
+        "degree_in_sign": 29.199738,
+        "is_retrograde": false,
+        "speed": 10.562487
+      },
+      "Mars": {
+        "longitude": 46.035955,
+        "sign_index": 1,
+        "degree_in_sign": 16.035955,
+        "is_retrograde": false,
+        "speed": 0.436336
+      },
+      "Mercury": {
+        "longitude": 302.472427,
+        "sign_index": 10,
+        "degree_in_sign": 2.472427,
+        "is_retrograde": false,
+        "speed": 1.744895
+      },
+      "Jupiter": {
+        "longitude": 230.488796,
+        "sign_index": 7,
+        "degree_in_sign": 20.488796,
+        "is_retrograde": false,
+        "speed": 0.112153
+      },
+      "Venus": {
+        "longitude": 275.973742,
+        "sign_index": 9,
+        "degree_in_sign": 5.973742,
+        "is_retrograde": false,
+        "speed": 1.220303
+      },
+      "Saturn": {
+        "longitude": 21.971528,
+        "sign_index": 0,
+        "degree_in_sign": 21.971528,
+        "is_retrograde": false,
+        "speed": 0.066477
+      },
+      "Rahu": {
+        "longitude": 1.702449,
+        "sign_index": 0,
+        "degree_in_sign": 1.702449,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 181.702449,
+        "sign_index": 6,
+        "degree_in_sign": 1.702449,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

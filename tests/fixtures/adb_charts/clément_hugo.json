@@ -1,0 +1,108 @@
+{
+  "adb_id": 89077,
+  "name": "Clément, Hugo",
+  "given_name": "Hugo Clément",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2447806.930556,
+    "year": 1989,
+    "month": 10,
+    "day": 7,
+    "calendar": "g",
+    "time": "11:20",
+    "time_type": "s",
+    "hour": 11.333333,
+    "time_unknown": false,
+    "place": "Strasbourg",
+    "country": "France",
+    "lat": 48.583333,
+    "lon": 7.75
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clément,_Hugo",
+  "source_notes": "Lepoivre quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.377405,
+    "lagna": 197.377405,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.714134,
+    "jd_ut": 2447806.930556,
+    "planets": {
+      "Sun": {
+        "longitude": 170.414527,
+        "sign_index": 5,
+        "degree_in_sign": 20.414527,
+        "is_retrograde": false,
+        "speed": 0.986825
+      },
+      "Moon": {
+        "longitude": 253.920361,
+        "sign_index": 8,
+        "degree_in_sign": 13.920361,
+        "is_retrograde": false,
+        "speed": 13.040737
+      },
+      "Mars": {
+        "longitude": 167.880083,
+        "sign_index": 5,
+        "degree_in_sign": 17.880083,
+        "is_retrograde": false,
+        "speed": 0.654852
+      },
+      "Mercury": {
+        "longitude": 153.039854,
+        "sign_index": 5,
+        "degree_in_sign": 3.039854,
+        "is_retrograde": false,
+        "speed": 0.578509
+      },
+      "Jupiter": {
+        "longitude": 76.400877,
+        "sign_index": 2,
+        "degree_in_sign": 16.400877,
+        "is_retrograde": false,
+        "speed": 0.068844
+      },
+      "Venus": {
+        "longitude": 214.892809,
+        "sign_index": 7,
+        "degree_in_sign": 4.892809,
+        "is_retrograde": false,
+        "speed": 1.126443
+      },
+      "Saturn": {
+        "longitude": 254.138767,
+        "sign_index": 8,
+        "degree_in_sign": 14.138767,
+        "is_retrograde": false,
+        "speed": 0.042031
+      },
+      "Rahu": {
+        "longitude": 299.275264,
+        "sign_index": 9,
+        "degree_in_sign": 29.275264,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 119.275264,
+        "sign_index": 3,
+        "degree_in_sign": 29.275264,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "adb_id": 75381,
+  "name": "Carlmar, Edith",
+  "given_name": "Edith Carlmar",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419355.885417,
+    "year": 1911,
+    "month": 11,
+    "day": 15,
+    "calendar": "g",
+    "time": "10:15",
+    "time_type": "s",
+    "hour": 10.25,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlmar,_Edith",
+  "source_notes": "Viktor E. quotes certificate of live birth in hand.\\n",
+  "categories": [
+    "Traits : Personality : Optimist",
+    "Family : Childhood : Disadvantaged",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 24.998524,
+    "lagna": 204.998524,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.626268,
+    "jd_ut": 2419355.885417,
+    "planets": {
+      "Sun": {
+        "longitude": 209.270122,
+        "sign_index": 6,
+        "degree_in_sign": 29.270122,
+        "is_retrograde": false,
+        "speed": 1.007775
+      },
+      "Moon": {
+        "longitude": 145.484631,
+        "sign_index": 4,
+        "degree_in_sign": 25.484631,
+        "is_retrograde": false,
+        "speed": 11.097647
+      },
+      "Mars": {
+        "longitude": 42.840365,
+        "sign_index": 1,
+        "degree_in_sign": 12.840365,
+        "is_retrograde": true,
+        "speed": -0.354124
+      },
+      "Mercury": {
+        "longitude": 222.192136,
+        "sign_index": 7,
+        "degree_in_sign": 12.192136,
+        "is_retrograde": false,
+        "speed": 1.505934
+      },
+      "Jupiter": {
+        "longitude": 211.833161,
+        "sign_index": 7,
+        "degree_in_sign": 1.833161,
+        "is_retrograde": false,
+        "speed": 0.221875
+      },
+      "Venus": {
+        "longitude": 162.985588,
+        "sign_index": 5,
+        "degree_in_sign": 12.985588,
+        "is_retrograde": false,
+        "speed": 0.919829
+      },
+      "Saturn": {
+        "longitude": 23.693188,
+        "sign_index": 0,
+        "degree_in_sign": 23.693188,
+        "is_retrograde": true,
+        "speed": -0.080798
+      },
+      "Rahu": {
+        "longitude": 6.954739,
+        "sign_index": 0,
+        "degree_in_sign": 6.954739,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 186.954739,
+        "sign_index": 6,
+        "degree_in_sign": 6.954739,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 95043,
+  "name": "Cosquer, Henri",
+  "given_name": "Henri Cosquer",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433559.375,
+    "year": 1950,
+    "month": 10,
+    "day": 4,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Martigues",
+    "country": "France",
+    "lat": 43.4,
+    "lon": 5.05
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cosquer,_Henri",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Science : Anthropology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 11.103041,
+    "lagna": 41.103041,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.169312,
+    "jd_ut": 2433559.375,
+    "planets": {
+      "Sun": {
+        "longitude": 167.889383,
+        "sign_index": 5,
+        "degree_in_sign": 17.889383,
+        "is_retrograde": false,
+        "speed": 0.985438
+      },
+      "Moon": {
+        "longitude": 84.600123,
+        "sign_index": 2,
+        "degree_in_sign": 24.600123,
+        "is_retrograde": false,
+        "speed": 15.136207
+      },
+      "Mars": {
+        "longitude": 223.171798,
+        "sign_index": 7,
+        "degree_in_sign": 13.171798,
+        "is_retrograde": false,
+        "speed": 0.70774
+      },
+      "Mercury": {
+        "longitude": 150.238287,
+        "sign_index": 5,
+        "degree_in_sign": 0.238287,
+        "is_retrograde": false,
+        "speed": 1.20004
+      },
+      "Jupiter": {
+        "longitude": 305.046678,
+        "sign_index": 10,
+        "degree_in_sign": 5.046678,
+        "is_retrograde": true,
+        "speed": -0.063621
+      },
+      "Venus": {
+        "longitude": 157.618054,
+        "sign_index": 5,
+        "degree_in_sign": 7.618054,
+        "is_retrograde": false,
+        "speed": 1.247
+      },
+      "Saturn": {
+        "longitude": 151.835072,
+        "sign_index": 5,
+        "degree_in_sign": 1.835072,
+        "is_retrograde": false,
+        "speed": 0.121721
+      },
+      "Rahu": {
+        "longitude": 334.282311,
+        "sign_index": 11,
+        "degree_in_sign": 4.282311,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 154.282311,
+        "sign_index": 5,
+        "degree_in_sign": 4.282311,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 54251,
+  "name": "Crouse, Jay",
+  "given_name": "Jay Crouse",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433020.304861,
+    "year": 1949,
+    "month": 4,
+    "day": 13,
+    "calendar": "g",
+    "time": "14:19",
+    "time_type": "s",
+    "hour": 14.316667,
+    "time_unknown": false,
+    "place": "Lima (Allen County)",
+    "country": "Ohio",
+    "lat": 40.75,
+    "lon": -84.1
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crouse,_Jay",
+  "source_notes": "Steinbrecher collection: Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Art : Other Art",
+    "Vocation : Business : Business owner",
+    "Vocation : Business/Marketing : Sales"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 10.004562,
+    "lagna": 100.004562,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.1487,
+    "jd_ut": 2433020.304861,
+    "planets": {
+      "Sun": {
+        "longitude": 0.37947,
+        "sign_index": 0,
+        "degree_in_sign": 0.37947,
+        "is_retrograde": false,
+        "speed": 0.978995
+      },
+      "Moon": {
+        "longitude": 189.640035,
+        "sign_index": 6,
+        "degree_in_sign": 9.640035,
+        "is_retrograde": false,
+        "speed": 19.148573
+      },
+      "Mars": {
+        "longitude": 354.507923,
+        "sign_index": 11,
+        "degree_in_sign": 24.507923,
+        "is_retrograde": false,
+        "speed": 0.763393
+      },
+      "Mercury": {
+        "longitude": 0.912908,
+        "sign_index": 0,
+        "degree_in_sign": 0.912908,
+        "is_retrograde": false,
+        "speed": 2.096341
+      },
+      "Jupiter": {
+        "longitude": 276.962981,
+        "sign_index": 9,
+        "degree_in_sign": 6.962981,
+        "is_retrograde": false,
+        "speed": 0.107953
+      },
+      "Venus": {
+        "longitude": 359.564041,
+        "sign_index": 11,
+        "degree_in_sign": 29.564041,
+        "is_retrograde": false,
+        "speed": 1.237801
+      },
+      "Saturn": {
+        "longitude": 126.43699,
+        "sign_index": 4,
+        "degree_in_sign": 6.43699,
+        "is_retrograde": true,
+        "speed": -0.030567
+      },
+      "Rahu": {
+        "longitude": 2.848748,
+        "sign_index": 0,
+        "degree_in_sign": 2.848748,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.848748,
+        "sign_index": 6,
+        "degree_in_sign": 2.848748,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 102286,
+  "name": "Chirault, Thomas",
+  "given_name": "Thomas Chirault",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2450707.013889,
+    "year": 1997,
+    "month": 9,
+    "day": 15,
+    "calendar": "g",
+    "time": "14:20",
+    "time_type": "d",
+    "hour": 14.333333,
+    "time_unknown": false,
+    "place": "Corbie",
+    "country": "France",
+    "lat": 49.916667,
+    "lon": 2.5
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chirault,_Thomas",
+  "source_notes": "Marc Brun quoted bc.\\n",
+  "categories": [
+    "Vocation : Sports : Archery"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 18.560641,
+    "lagna": 198.560641,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.825044,
+    "jd_ut": 2450707.013889,
+    "planets": {
+      "Sun": {
+        "longitude": 148.869274,
+        "sign_index": 4,
+        "degree_in_sign": 28.869274,
+        "is_retrograde": false,
+        "speed": 0.9743
+      },
+      "Moon": {
+        "longitude": 310.816526,
+        "sign_index": 10,
+        "degree_in_sign": 10.816526,
+        "is_retrograde": false,
+        "speed": 18.264737
+      },
+      "Mars": {
+        "longitude": 206.957124,
+        "sign_index": 6,
+        "degree_in_sign": 26.957124,
+        "is_retrograde": false,
+        "speed": 0.676044
+      },
+      "Mercury": {
+        "longitude": 131.103845,
+        "sign_index": 4,
+        "degree_in_sign": 11.103845,
+        "is_retrograde": false,
+        "speed": 0.803937
+      },
+      "Jupiter": {
+        "longitude": 289.105579,
+        "sign_index": 9,
+        "degree_in_sign": 19.105579,
+        "is_retrograde": true,
+        "speed": -0.071857
+      },
+      "Venus": {
+        "longitude": 190.144636,
+        "sign_index": 6,
+        "degree_in_sign": 10.144636,
+        "is_retrograde": false,
+        "speed": 1.158399
+      },
+      "Saturn": {
+        "longitude": 354.926549,
+        "sign_index": 11,
+        "degree_in_sign": 24.926549,
+        "is_retrograde": true,
+        "speed": -0.066328
+      },
+      "Rahu": {
+        "longitude": 145.593994,
+        "sign_index": 4,
+        "degree_in_sign": 25.593994,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.593994,
+        "sign_index": 10,
+        "degree_in_sign": 25.593994,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

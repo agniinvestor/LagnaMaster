@@ -1,0 +1,108 @@
+{
+  "adb_id": 61275,
+  "name": "Caroline, Queen Consort of Great Britain",
+  "given_name": "Queen Consort of Great Britain Caroline",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2335832.845648,
+    "year": 1683,
+    "month": 3,
+    "day": 1,
+    "calendar": "j",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Ansbach",
+    "country": "Germany",
+    "lat": 49.283333,
+    "lon": 10.566667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caroline,_Queen_Consort_of_Great_Britain",
+  "source_notes": "Sy Scholfield quotes \"Burg- und Marggräfflich-Brandenburgische Landes- und Regenten-Historie\" by Johann Matthias Groß (Enderes, 1749), p. 502: \"Prinzeßin Wilhelmina Carolina, trat ao. 1683. den 1. Martii zu Onolzbach, früh um 9. Uhr zur Welt.\"\\nTranslation: Princess Wilhelmina Carolina came into the world in 1683 on the first of March at Onolzbach [Ansbach] early at nine o'clock.\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 23.230071,
+    "lagna": 23.230071,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.434796,
+    "jd_ut": 2335832.845648,
+    "planets": {
+      "Sun": {
+        "longitude": 331.490782,
+        "sign_index": 11,
+        "degree_in_sign": 1.490782,
+        "is_retrograde": false,
+        "speed": 0.99512
+      },
+      "Moon": {
+        "longitude": 127.530087,
+        "sign_index": 4,
+        "degree_in_sign": 7.530087,
+        "is_retrograde": false,
+        "speed": 18.651627
+      },
+      "Mars": {
+        "longitude": 190.271335,
+        "sign_index": 6,
+        "degree_in_sign": 10.271335,
+        "is_retrograde": true,
+        "speed": -0.080801
+      },
+      "Mercury": {
+        "longitude": 347.071525,
+        "sign_index": 11,
+        "degree_in_sign": 17.071525,
+        "is_retrograde": false,
+        "speed": 0.142977
+      },
+      "Jupiter": {
+        "longitude": 113.854866,
+        "sign_index": 3,
+        "degree_in_sign": 23.854866,
+        "is_retrograde": true,
+        "speed": -0.082792
+      },
+      "Venus": {
+        "longitude": 292.464479,
+        "sign_index": 9,
+        "degree_in_sign": 22.464479,
+        "is_retrograde": false,
+        "speed": 0.47441
+      },
+      "Saturn": {
+        "longitude": 115.108128,
+        "sign_index": 3,
+        "degree_in_sign": 25.108128,
+        "is_retrograde": true,
+        "speed": -0.056827
+      },
+      "Rahu": {
+        "longitude": 113.024857,
+        "sign_index": 3,
+        "degree_in_sign": 23.024857,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 293.024857,
+        "sign_index": 9,
+        "degree_in_sign": 23.024857,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 93198,
+  "name": "Colruyt, Franz",
+  "given_name": "Franz Colruyt",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415732.666667,
+    "year": 1901,
+    "month": 12,
+    "day": 14,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Lembeek",
+    "country": "Belgium",
+    "lat": 50.716667,
+    "lon": 4.216667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colruyt,_Franz",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_ef_entreprise.pdf]. \\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Business : Top executive",
+    "Vocation : Business/Marketing : Sales"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 24.941586,
+    "lagna": 174.941586,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.487755,
+    "jd_ut": 2415732.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 238.998361,
+        "sign_index": 7,
+        "degree_in_sign": 28.998361,
+        "is_retrograde": false,
+        "speed": 1.017713
+      },
+      "Moon": {
+        "longitude": 273.183625,
+        "sign_index": 9,
+        "degree_in_sign": 3.183625,
+        "is_retrograde": false,
+        "speed": 15.296604
+      },
+      "Mars": {
+        "longitude": 262.823541,
+        "sign_index": 8,
+        "degree_in_sign": 22.823541,
+        "is_retrograde": false,
+        "speed": 0.774541
+      },
+      "Mercury": {
+        "longitude": 228.471362,
+        "sign_index": 7,
+        "degree_in_sign": 18.471362,
+        "is_retrograde": false,
+        "speed": 1.539075
+      },
+      "Jupiter": {
+        "longitude": 264.837265,
+        "sign_index": 8,
+        "degree_in_sign": 24.837265,
+        "is_retrograde": false,
+        "speed": 0.222191
+      },
+      "Venus": {
+        "longitude": 285.971272,
+        "sign_index": 9,
+        "degree_in_sign": 15.971272,
+        "is_retrograde": false,
+        "speed": 0.949143
+      },
+      "Saturn": {
+        "longitude": 263.157181,
+        "sign_index": 8,
+        "degree_in_sign": 23.157181,
+        "is_retrograde": false,
+        "speed": 0.111407
+      },
+      "Rahu": {
+        "longitude": 198.95672,
+        "sign_index": 6,
+        "degree_in_sign": 18.95672,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.95672,
+        "sign_index": 0,
+        "degree_in_sign": 18.95672,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

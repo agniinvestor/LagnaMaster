@@ -1,0 +1,113 @@
+{
+  "adb_id": 10938,
+  "name": "Cole, Robert",
+  "given_name": "Robert Cole",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432679.0125,
+    "year": 1948,
+    "month": 5,
+    "day": 7,
+    "calendar": "g",
+    "time": "05:18",
+    "time_type": "d",
+    "hour": 5.3,
+    "time_unknown": false,
+    "place": "Henderson",
+    "country": "Nevada",
+    "lat": 36.033333,
+    "lon": -114.983333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cole,_Robert",
+  "source_notes": "Given in his \"Book of Houses\"  (WTPE obit gives 5:12 AM) Cole confirmed the time, telling his class that he was a triple Taurus.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : AIDS/ HIV",
+    "Family : Relationship : Mate - Same sex",
+    "Family : Parenting : Kids 1-3",
+    "Passions : Sexuality : Bi-Sexual",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 21.347881,
+    "lagna": 351.347881,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.13565,
+    "jd_ut": 2432679.0125,
+    "planets": {
+      "Sun": {
+        "longitude": 23.700386,
+        "sign_index": 0,
+        "degree_in_sign": 23.700386,
+        "is_retrograde": false,
+        "speed": 0.96761
+      },
+      "Moon": {
+        "longitude": 4.974369,
+        "sign_index": 0,
+        "degree_in_sign": 4.974369,
+        "is_retrograde": false,
+        "speed": 13.278869
+      },
+      "Mars": {
+        "longitude": 122.577381,
+        "sign_index": 4,
+        "degree_in_sign": 2.577381,
+        "is_retrograde": false,
+        "speed": 0.346722
+      },
+      "Mercury": {
+        "longitude": 33.407966,
+        "sign_index": 1,
+        "degree_in_sign": 3.407966,
+        "is_retrograde": false,
+        "speed": 2.083679
+      },
+      "Jupiter": {
+        "longitude": 245.054992,
+        "sign_index": 8,
+        "degree_in_sign": 5.054992,
+        "is_retrograde": true,
+        "speed": -0.06688
+      },
+      "Venus": {
+        "longitude": 66.984387,
+        "sign_index": 2,
+        "degree_in_sign": 6.984387,
+        "is_retrograde": false,
+        "speed": 0.725088
+      },
+      "Saturn": {
+        "longitude": 112.992085,
+        "sign_index": 3,
+        "degree_in_sign": 22.992085,
+        "is_retrograde": false,
+        "speed": 0.035782
+      },
+      "Rahu": {
+        "longitude": 20.934534,
+        "sign_index": 0,
+        "degree_in_sign": 20.934534,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 200.934534,
+        "sign_index": 6,
+        "degree_in_sign": 20.934534,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

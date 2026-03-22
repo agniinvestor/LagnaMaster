@@ -1,0 +1,109 @@
+{
+  "adb_id": 64916,
+  "name": "Canseliet, Eugène",
+  "given_name": "Eugène Canseliet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415007.32684,
+    "year": 1899,
+    "month": 12,
+    "day": 18,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Sarcelles",
+    "country": "France",
+    "lat": 49.0,
+    "lon": 2.383333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canseliet,_Eugène",
+  "source_notes": "Birth certificate n° 130 submitted by Sy Scholfield.\\nSame data in Didier Geslain archive, 'C' pdf file, p. 34.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Other Occult Fields",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 29.713643,
+    "lagna": 89.713643,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.460027,
+    "jd_ut": 2415007.32684,
+    "planets": {
+      "Sun": {
+        "longitude": 244.264345,
+        "sign_index": 8,
+        "degree_in_sign": 4.264345,
+        "is_retrograde": false,
+        "speed": 1.017949
+      },
+      "Moon": {
+        "longitude": 85.331422,
+        "sign_index": 2,
+        "degree_in_sign": 25.331422,
+        "is_retrograde": false,
+        "speed": 11.732976
+      },
+      "Mars": {
+        "longitude": 251.316172,
+        "sign_index": 8,
+        "degree_in_sign": 11.316172,
+        "is_retrograde": false,
+        "speed": 0.760741
+      },
+      "Mercury": {
+        "longitude": 223.954627,
+        "sign_index": 7,
+        "degree_in_sign": 13.954627,
+        "is_retrograde": false,
+        "speed": 0.411451
+      },
+      "Jupiter": {
+        "longitude": 216.007193,
+        "sign_index": 7,
+        "degree_in_sign": 6.007193,
+        "is_retrograde": false,
+        "speed": 0.208047
+      },
+      "Venus": {
+        "longitude": 267.506824,
+        "sign_index": 8,
+        "degree_in_sign": 27.506824,
+        "is_retrograde": false,
+        "speed": 1.246609
+      },
+      "Saturn": {
+        "longitude": 243.704574,
+        "sign_index": 8,
+        "degree_in_sign": 3.704574,
+        "is_retrograde": false,
+        "speed": 0.117963
+      },
+      "Rahu": {
+        "longitude": 237.394007,
+        "sign_index": 7,
+        "degree_in_sign": 27.394007,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 57.394007,
+        "sign_index": 1,
+        "degree_in_sign": 27.394007,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 50734,
+  "name": "Calvert, James F.",
+  "given_name": "James F. Calvert",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422576.0625,
+    "year": 1920,
+    "month": 9,
+    "day": 8,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Cleveland",
+    "country": "Ohio",
+    "lat": 41.5,
+    "lon": -81.7
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvert,_James_F.",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 28.744779,
+    "lagna": 148.744779,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.749377,
+    "jd_ut": 2422576.0625,
+    "planets": {
+      "Sun": {
+        "longitude": 142.816572,
+        "sign_index": 4,
+        "degree_in_sign": 22.816572,
+        "is_retrograde": false,
+        "speed": 0.971874
+      },
+      "Moon": {
+        "longitude": 89.822273,
+        "sign_index": 2,
+        "degree_in_sign": 29.822273,
+        "is_retrograde": false,
+        "speed": 9.96643
+      },
+      "Mars": {
+        "longitude": 219.629983,
+        "sign_index": 7,
+        "degree_in_sign": 9.629983,
+        "is_retrograde": false,
+        "speed": 0.647001
+      },
+      "Mercury": {
+        "longitude": 142.340613,
+        "sign_index": 4,
+        "degree_in_sign": 22.340613,
+        "is_retrograde": false,
+        "speed": 1.896276
+      },
+      "Jupiter": {
+        "longitude": 129.920691,
+        "sign_index": 4,
+        "degree_in_sign": 9.920691,
+        "is_retrograde": false,
+        "speed": 0.215182
+      },
+      "Venus": {
+        "longitude": 161.032691,
+        "sign_index": 5,
+        "degree_in_sign": 11.032691,
+        "is_retrograde": false,
+        "speed": 1.233981
+      },
+      "Saturn": {
+        "longitude": 142.330638,
+        "sign_index": 4,
+        "degree_in_sign": 22.330638,
+        "is_retrograde": false,
+        "speed": 0.125641
+      },
+      "Rahu": {
+        "longitude": 196.310814,
+        "sign_index": 6,
+        "degree_in_sign": 16.310814,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 16.310814,
+        "sign_index": 0,
+        "degree_in_sign": 16.310814,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

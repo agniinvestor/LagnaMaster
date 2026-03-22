@@ -1,0 +1,109 @@
+{
+  "adb_id": 44390,
+  "name": "Coudert, Louis",
+  "given_name": "Louis Coudert",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423170.875,
+    "year": 1922,
+    "month": 4,
+    "day": 26,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "d",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Signy l'Abbaye",
+    "country": "France",
+    "lat": 49.7,
+    "lon": 4.416667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coudert,_Louis",
+  "source_notes": "French astrologer Vianney Harpet, Astralis magazine #23 (1988), from civil records, translated by James Elliot.\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide many at once",
+    "Personal : Death : Suicide"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 4.254697,
+    "lagna": 64.254697,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.772118,
+    "jd_ut": 2423170.875,
+    "planets": {
+      "Sun": {
+        "longitude": 12.567695,
+        "sign_index": 0,
+        "degree_in_sign": 12.567695,
+        "is_retrograde": false,
+        "speed": 0.973109
+      },
+      "Moon": {
+        "longitude": 3.133452,
+        "sign_index": 0,
+        "degree_in_sign": 3.133452,
+        "is_retrograde": false,
+        "speed": 9.495682
+      },
+      "Mars": {
+        "longitude": 241.673529,
+        "sign_index": 8,
+        "degree_in_sign": 1.673529,
+        "is_retrograde": false,
+        "speed": 0.136019
+      },
+      "Mercury": {
+        "longitude": 14.474512,
+        "sign_index": 0,
+        "degree_in_sign": 14.474512,
+        "is_retrograde": false,
+        "speed": 2.145526
+      },
+      "Jupiter": {
+        "longitude": 168.576897,
+        "sign_index": 5,
+        "degree_in_sign": 18.576897,
+        "is_retrograde": true,
+        "speed": -0.108544
+      },
+      "Venus": {
+        "longitude": 31.4923,
+        "sign_index": 1,
+        "degree_in_sign": 1.4923,
+        "is_retrograde": false,
+        "speed": 1.226214
+      },
+      "Saturn": {
+        "longitude": 159.217532,
+        "sign_index": 5,
+        "degree_in_sign": 9.217532,
+        "is_retrograde": true,
+        "speed": -0.058438
+      },
+      "Rahu": {
+        "longitude": 164.790458,
+        "sign_index": 5,
+        "degree_in_sign": 14.790458,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 344.790458,
+        "sign_index": 11,
+        "degree_in_sign": 14.790458,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

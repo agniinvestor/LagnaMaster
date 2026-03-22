@@ -1,0 +1,108 @@
+{
+  "adb_id": 36787,
+  "name": "Clervoy, Jean-François",
+  "given_name": "Jean-François Clervoy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436526.902778,
+    "year": 1958,
+    "month": 11,
+    "day": 19,
+    "calendar": "g",
+    "time": "10:40",
+    "time_type": "s",
+    "hour": 10.666667,
+    "time_unknown": false,
+    "place": "Longeville-lès-Metz",
+    "country": "France",
+    "lat": 49.116667,
+    "lon": 6.133333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clervoy,_Jean-François",
+  "source_notes": "Petitallot quotes B.C., Cadran No.14, 12/1994. Was GMT until August 2019, corrected to CET.\\n",
+  "categories": [
+    "Vocation : Travel : Astronaut"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 12.51092,
+    "lagna": 222.51092,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.282782,
+    "jd_ut": 2436526.902778,
+    "planets": {
+      "Sun": {
+        "longitude": 213.273538,
+        "sign_index": 7,
+        "degree_in_sign": 3.273538,
+        "is_retrograde": false,
+        "speed": 1.009135
+      },
+      "Moon": {
+        "longitude": 316.984154,
+        "sign_index": 10,
+        "degree_in_sign": 16.984154,
+        "is_retrograde": false,
+        "speed": 14.287309
+      },
+      "Mars": {
+        "longitude": 29.443896,
+        "sign_index": 0,
+        "degree_in_sign": 29.443896,
+        "is_retrograde": true,
+        "speed": -0.354963
+      },
+      "Mercury": {
+        "longitude": 235.28674,
+        "sign_index": 7,
+        "degree_in_sign": 25.28674,
+        "is_retrograde": false,
+        "speed": 1.088926
+      },
+      "Jupiter": {
+        "longitude": 201.976646,
+        "sign_index": 6,
+        "degree_in_sign": 21.976646,
+        "is_retrograde": false,
+        "speed": 0.217747
+      },
+      "Venus": {
+        "longitude": 215.233539,
+        "sign_index": 7,
+        "degree_in_sign": 5.233539,
+        "is_retrograde": false,
+        "speed": 1.256275
+      },
+      "Saturn": {
+        "longitude": 241.256147,
+        "sign_index": 8,
+        "degree_in_sign": 1.256147,
+        "is_retrograde": false,
+        "speed": 0.108767
+      },
+      "Rahu": {
+        "longitude": 177.026915,
+        "sign_index": 5,
+        "degree_in_sign": 27.026915,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 357.026915,
+        "sign_index": 11,
+        "degree_in_sign": 27.026915,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

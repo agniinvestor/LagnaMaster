@@ -1,0 +1,109 @@
+{
+  "adb_id": 105337,
+  "name": "Caprino, Remo",
+  "given_name": "Remo Caprino",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431202.809028,
+    "year": 1944,
+    "month": 4,
+    "day": 22,
+    "calendar": "g",
+    "time": "09:25",
+    "time_type": "d",
+    "hour": 9.416667,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caprino,_Remo",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.183417,
+    "lagna": 60.183417,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.079206,
+    "jd_ut": 2431202.809028,
+    "planets": {
+      "Sun": {
+        "longitude": 8.962672,
+        "sign_index": 0,
+        "degree_in_sign": 8.962672,
+        "is_retrograde": false,
+        "speed": 0.9751
+      },
+      "Moon": {
+        "longitude": 1.473928,
+        "sign_index": 0,
+        "degree_in_sign": 1.473928,
+        "is_retrograde": false,
+        "speed": 13.035615
+      },
+      "Mars": {
+        "longitude": 79.954176,
+        "sign_index": 2,
+        "degree_in_sign": 19.954176,
+        "is_retrograde": false,
+        "speed": 0.543128
+      },
+      "Mercury": {
+        "longitude": 23.336521,
+        "sign_index": 0,
+        "degree_in_sign": 23.336521,
+        "is_retrograde": true,
+        "speed": -0.027175
+      },
+      "Jupiter": {
+        "longitude": 114.090588,
+        "sign_index": 3,
+        "degree_in_sign": 24.090588,
+        "is_retrograde": false,
+        "speed": 0.028431
+      },
+      "Venus": {
+        "longitude": 351.434451,
+        "sign_index": 11,
+        "degree_in_sign": 21.434451,
+        "is_retrograde": false,
+        "speed": 1.229056
+      },
+      "Saturn": {
+        "longitude": 59.893015,
+        "sign_index": 1,
+        "degree_in_sign": 29.893015,
+        "is_retrograde": false,
+        "speed": 0.09771
+      },
+      "Rahu": {
+        "longitude": 99.161602,
+        "sign_index": 3,
+        "degree_in_sign": 9.161602,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 279.161602,
+        "sign_index": 9,
+        "degree_in_sign": 9.161602,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

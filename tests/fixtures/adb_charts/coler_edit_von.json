@@ -1,0 +1,119 @@
+{
+  "adb_id": 90634,
+  "name": "Coler, Edit von",
+  "given_name": "Edit von Coler",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413384.208333,
+    "year": 1895,
+    "month": 7,
+    "day": 9,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Berlin-Charlottenb.",
+    "country": "Germany",
+    "lat": 52.533333,
+    "lon": 13.266667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coler,_Edit_von",
+  "source_notes": "Sy Scholfield provided birth registry entry (no. 2136) from Berlin archives.\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Traits : Body : Hair",
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Parents divorced",
+    "Lifestyle : Financial : Wealthy",
+    "Vocation : Business/Marketing : Public relations",
+    "Vocation : Education : Administrator",
+    "Vocation : Law : Spy/ Counter agent",
+    "Vocation : Politics : Nazi party",
+    "Vocation : Writers : Columnist/ journalist",
+    "Notable : Famous : Socialite"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 29.431978,
+    "lagna": 209.431978,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.397979,
+    "jd_ut": 2413384.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 84.774672,
+        "sign_index": 2,
+        "degree_in_sign": 24.774672,
+        "is_retrograde": false,
+        "speed": 0.953208
+      },
+      "Moon": {
+        "longitude": 295.508578,
+        "sign_index": 9,
+        "degree_in_sign": 25.508578,
+        "is_retrograde": false,
+        "speed": 13.443111
+      },
+      "Mars": {
+        "longitude": 115.502622,
+        "sign_index": 3,
+        "degree_in_sign": 25.502622,
+        "is_retrograde": false,
+        "speed": 0.620493
+      },
+      "Mercury": {
+        "longitude": 73.175293,
+        "sign_index": 2,
+        "degree_in_sign": 13.175293,
+        "is_retrograde": true,
+        "speed": -0.251667
+      },
+      "Jupiter": {
+        "longitude": 85.387583,
+        "sign_index": 2,
+        "degree_in_sign": 25.387583,
+        "is_retrograde": false,
+        "speed": 0.224829
+      },
+      "Venus": {
+        "longitude": 130.281133,
+        "sign_index": 4,
+        "degree_in_sign": 10.281133,
+        "is_retrograde": false,
+        "speed": 0.966148
+      },
+      "Saturn": {
+        "longitude": 188.167123,
+        "sign_index": 6,
+        "degree_in_sign": 8.167123,
+        "is_retrograde": false,
+        "speed": 0.009012
+      },
+      "Rahu": {
+        "longitude": 323.406483,
+        "sign_index": 10,
+        "degree_in_sign": 23.406483,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 143.406483,
+        "sign_index": 4,
+        "degree_in_sign": 23.406483,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

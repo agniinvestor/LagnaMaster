@@ -1,0 +1,108 @@
+{
+  "adb_id": 72263,
+  "name": "Cossio, Manuel Bartolomé",
+  "given_name": "Manuel Bartolomé Cossio",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2399368.46625,
+    "year": 1857,
+    "month": 2,
+    "day": 22,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Haro",
+    "country": "Spain",
+    "lat": 42.583333,
+    "lon": -2.85
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cossio,_Manuel_Bartolomé",
+  "source_notes": "Castellanos quotes birth certificate from:\\nLa Institución Libre de Enseñanza y su ambiente: Periodo parauniversitario\\nde Antonio Jiménez-Landi\\nEdicions Universitat Barcelona, 1996 \\n",
+  "categories": [
+    "Vocation : Art : Art critic"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 23.302855,
+    "lagna": 173.302855,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.862243,
+    "jd_ut": 2399368.46625,
+    "planets": {
+      "Sun": {
+        "longitude": 312.472508,
+        "sign_index": 10,
+        "degree_in_sign": 12.472508,
+        "is_retrograde": false,
+        "speed": 1.00603
+      },
+      "Moon": {
+        "longitude": 292.093668,
+        "sign_index": 9,
+        "degree_in_sign": 22.093668,
+        "is_retrograde": false,
+        "speed": 18.064321
+      },
+      "Mars": {
+        "longitude": 338.624913,
+        "sign_index": 11,
+        "degree_in_sign": 8.624913,
+        "is_retrograde": false,
+        "speed": 0.767901
+      },
+      "Mercury": {
+        "longitude": 285.698782,
+        "sign_index": 9,
+        "degree_in_sign": 15.698782,
+        "is_retrograde": false,
+        "speed": 0.869705
+      },
+      "Jupiter": {
+        "longitude": 349.083385,
+        "sign_index": 11,
+        "degree_in_sign": 19.083385,
+        "is_retrograde": false,
+        "speed": 0.217376
+      },
+      "Venus": {
+        "longitude": 358.807722,
+        "sign_index": 11,
+        "degree_in_sign": 28.807722,
+        "is_retrograde": false,
+        "speed": 1.03469
+      },
+      "Saturn": {
+        "longitude": 75.598835,
+        "sign_index": 2,
+        "degree_in_sign": 15.598835,
+        "is_retrograde": true,
+        "speed": -0.026085
+      },
+      "Rahu": {
+        "longitude": 346.130505,
+        "sign_index": 11,
+        "degree_in_sign": 16.130505,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 166.130505,
+        "sign_index": 5,
+        "degree_in_sign": 16.130505,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 61507,
+  "name": "Chrisman, Robert",
+  "given_name": "Robert Chrisman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428681.850694,
+    "year": 1937,
+    "month": 5,
+    "day": 28,
+    "calendar": "g",
+    "time": "01:25",
+    "time_type": "s",
+    "hour": 1.416667,
+    "time_unknown": false,
+    "place": "Yuma",
+    "country": "Arizona",
+    "lat": 32.733333,
+    "lon": -114.616667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "cap",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chrisman,_Robert",
+  "source_notes": "Sy Scholfield quotes birth certificate: http://genealogy.az.gov/azbirth/1041/10410995.pdf\\n",
+  "categories": [
+    "Vocation : Education : Other Education",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 24.750921,
+    "lagna": 294.750921,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.982818,
+    "jd_ut": 2428681.850694,
+    "planets": {
+      "Sun": {
+        "longitude": 43.591937,
+        "sign_index": 1,
+        "degree_in_sign": 13.591937,
+        "is_retrograde": false,
+        "speed": 0.958938
+      },
+      "Moon": {
+        "longitude": 257.033965,
+        "sign_index": 8,
+        "degree_in_sign": 17.033965,
+        "is_retrograde": false,
+        "speed": 7.652198
+      },
+      "Mars": {
+        "longitude": 212.355525,
+        "sign_index": 7,
+        "degree_in_sign": 2.355525,
+        "is_retrograde": true,
+        "speed": -0.340115
+      },
+      "Mercury": {
+        "longitude": 22.929211,
+        "sign_index": 0,
+        "degree_in_sign": 22.929211,
+        "is_retrograde": false,
+        "speed": 0.306002
+      },
+      "Jupiter": {
+        "longitude": 274.072701,
+        "sign_index": 9,
+        "degree_in_sign": 4.072701,
+        "is_retrograde": true,
+        "speed": -0.039931
+      },
+      "Venus": {
+        "longitude": 2.535279,
+        "sign_index": 0,
+        "degree_in_sign": 2.535279,
+        "is_retrograde": false,
+        "speed": 0.57852
+      },
+      "Saturn": {
+        "longitude": 340.139075,
+        "sign_index": 11,
+        "degree_in_sign": 10.139075,
+        "is_retrograde": false,
+        "speed": 0.076611
+      },
+      "Rahu": {
+        "longitude": 232.752399,
+        "sign_index": 7,
+        "degree_in_sign": 22.752399,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 52.752399,
+        "sign_index": 1,
+        "degree_in_sign": 22.752399,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

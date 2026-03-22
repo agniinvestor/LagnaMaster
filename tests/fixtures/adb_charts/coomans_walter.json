@@ -1,0 +1,108 @@
+{
+  "adb_id": 50822,
+  "name": "Coomans, Walter",
+  "given_name": "Walter Coomans",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428551.708333,
+    "year": 1937,
+    "month": 1,
+    "day": 18,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Antwerp",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 4.416667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coomans,_Walter",
+  "source_notes": "Steinbrecher collection: Lescaut quotes birth record in his collection\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/Opera"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.372701,
+    "lagna": 210.372701,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.977842,
+    "jd_ut": 2428551.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 274.725999,
+        "sign_index": 9,
+        "degree_in_sign": 4.725999,
+        "is_retrograde": false,
+        "speed": 1.018239
+      },
+      "Moon": {
+        "longitude": 343.318091,
+        "sign_index": 11,
+        "degree_in_sign": 13.318091,
+        "is_retrograde": false,
+        "speed": 17.319636
+      },
+      "Mars": {
+        "longitude": 193.57941,
+        "sign_index": 6,
+        "degree_in_sign": 13.57941,
+        "is_retrograde": false,
+        "speed": 0.519267
+      },
+      "Mercury": {
+        "longitude": 267.256242,
+        "sign_index": 8,
+        "degree_in_sign": 27.256242,
+        "is_retrograde": true,
+        "speed": -1.153378
+      },
+      "Jupiter": {
+        "longitude": 257.713979,
+        "sign_index": 8,
+        "degree_in_sign": 17.713979,
+        "is_retrograde": false,
+        "speed": 0.22584
+      },
+      "Venus": {
+        "longitude": 320.662091,
+        "sign_index": 10,
+        "degree_in_sign": 20.662091,
+        "is_retrograde": false,
+        "speed": 1.109496
+      },
+      "Saturn": {
+        "longitude": 325.781018,
+        "sign_index": 10,
+        "degree_in_sign": 25.781018,
+        "is_retrograde": false,
+        "speed": 0.092483
+      },
+      "Rahu": {
+        "longitude": 239.648913,
+        "sign_index": 7,
+        "degree_in_sign": 29.648913,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 59.648913,
+        "sign_index": 1,
+        "degree_in_sign": 29.648913,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

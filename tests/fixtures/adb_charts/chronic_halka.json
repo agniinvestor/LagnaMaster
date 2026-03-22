@@ -1,0 +1,114 @@
+{
+  "adb_id": 88641,
+  "name": "Chronic, Halka",
+  "given_name": "Halka Chronic",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423477.427083,
+    "year": 1923,
+    "month": 2,
+    "day": 26,
+    "calendar": "g",
+    "time": "15:15",
+    "time_type": "s",
+    "hour": 15.25,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chronic,_Halka",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Parenting : Kids more than 3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Consultant",
+    "Vocation : Science : Geology",
+    "Vocation : Writers : Publisher/ Editor",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.214654,
+    "lagna": 74.214654,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.783838,
+    "jd_ut": 2423477.427083,
+    "planets": {
+      "Sun": {
+        "longitude": 314.524311,
+        "sign_index": 10,
+        "degree_in_sign": 14.524311,
+        "is_retrograde": false,
+        "speed": 1.004486
+      },
+      "Moon": {
+        "longitude": 79.73569,
+        "sign_index": 2,
+        "degree_in_sign": 19.73569,
+        "is_retrograde": false,
+        "speed": 12.786961
+      },
+      "Mars": {
+        "longitude": 3.58875,
+        "sign_index": 0,
+        "degree_in_sign": 3.58875,
+        "is_retrograde": false,
+        "speed": 0.712714
+      },
+      "Mercury": {
+        "longitude": 288.104246,
+        "sign_index": 9,
+        "degree_in_sign": 18.104246,
+        "is_retrograde": false,
+        "speed": 1.151124
+      },
+      "Jupiter": {
+        "longitude": 206.08236,
+        "sign_index": 6,
+        "degree_in_sign": 26.08236,
+        "is_retrograde": false,
+        "speed": 0.02134
+      },
+      "Venus": {
+        "longitude": 269.0235,
+        "sign_index": 8,
+        "degree_in_sign": 29.0235,
+        "is_retrograde": false,
+        "speed": 1.110985
+      },
+      "Saturn": {
+        "longitude": 176.646119,
+        "sign_index": 5,
+        "degree_in_sign": 26.646119,
+        "is_retrograde": true,
+        "speed": -0.046687
+      },
+      "Rahu": {
+        "longitude": 148.545624,
+        "sign_index": 4,
+        "degree_in_sign": 28.545624,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 328.545624,
+        "sign_index": 10,
+        "degree_in_sign": 28.545624,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

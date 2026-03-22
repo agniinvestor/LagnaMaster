@@ -1,0 +1,108 @@
+{
+  "adb_id": 58169,
+  "name": "Couture, Charlélie",
+  "given_name": "Charlélie Couture",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435529.465278,
+    "year": 1956,
+    "month": 2,
+    "day": 26,
+    "calendar": "g",
+    "time": "00:10",
+    "time_type": "s",
+    "hour": 0.166667,
+    "time_unknown": false,
+    "place": "Nancy",
+    "country": "France",
+    "lat": 48.683333,
+    "lon": 6.2
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couture,_Charlélie",
+  "source_notes": "Patrice Petitallot quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 25.95736,
+    "lagna": 175.95736,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.244642,
+    "jd_ut": 2435529.465278,
+    "planets": {
+      "Sun": {
+        "longitude": 313.088021,
+        "sign_index": 10,
+        "degree_in_sign": 13.088021,
+        "is_retrograde": false,
+        "speed": 1.005073
+      },
+      "Moon": {
+        "longitude": 131.98578,
+        "sign_index": 4,
+        "degree_in_sign": 11.98578,
+        "is_retrograde": false,
+        "speed": 10.815588
+      },
+      "Mars": {
+        "longitude": 244.867375,
+        "sign_index": 8,
+        "degree_in_sign": 4.867375,
+        "is_retrograde": false,
+        "speed": 0.655836
+      },
+      "Mercury": {
+        "longitude": 286.932172,
+        "sign_index": 9,
+        "degree_in_sign": 16.932172,
+        "is_retrograde": false,
+        "speed": 1.178573
+      },
+      "Jupiter": {
+        "longitude": 122.012311,
+        "sign_index": 4,
+        "degree_in_sign": 2.012311,
+        "is_retrograde": true,
+        "speed": -0.127544
+      },
+      "Venus": {
+        "longitude": 354.099787,
+        "sign_index": 11,
+        "degree_in_sign": 24.099787,
+        "is_retrograde": false,
+        "speed": 1.170215
+      },
+      "Saturn": {
+        "longitude": 219.368127,
+        "sign_index": 7,
+        "degree_in_sign": 9.368127,
+        "is_retrograde": false,
+        "speed": 0.02568
+      },
+      "Rahu": {
+        "longitude": 229.883175,
+        "sign_index": 7,
+        "degree_in_sign": 19.883175,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 49.883175,
+        "sign_index": 1,
+        "degree_in_sign": 19.883175,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

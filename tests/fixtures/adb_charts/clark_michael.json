@@ -1,0 +1,108 @@
+{
+  "adb_id": 47868,
+  "name": "Clark, Michael",
+  "given_name": "Michael Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2428022.84375,
+    "year": 1935,
+    "month": 8,
+    "day": 8,
+    "calendar": "g",
+    "time": "09:15",
+    "time_type": "d",
+    "hour": 9.25,
+    "time_unknown": false,
+    "place": "Worksop",
+    "country": "England",
+    "lat": 53.3,
+    "lon": -1.116667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sco",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Michael",
+  "source_notes": "Pulsar collection quotes him, \"around breakfast time, the precise time was 9:15 AM.\"\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.191219,
+    "lagna": 126.191219,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.957622,
+    "jd_ut": 2428022.84375,
+    "planets": {
+      "Sun": {
+        "longitude": 111.896048,
+        "sign_index": 3,
+        "degree_in_sign": 21.896048,
+        "is_retrograde": false,
+        "speed": 0.958431
+      },
+      "Moon": {
+        "longitude": 211.443636,
+        "sign_index": 7,
+        "degree_in_sign": 1.443636,
+        "is_retrograde": false,
+        "speed": 15.765845
+      },
+      "Mars": {
+        "longitude": 192.412028,
+        "sign_index": 6,
+        "degree_in_sign": 12.412028,
+        "is_retrograde": false,
+        "speed": 0.575153
+      },
+      "Mercury": {
+        "longitude": 110.026146,
+        "sign_index": 3,
+        "degree_in_sign": 20.026146,
+        "is_retrograde": false,
+        "speed": 2.067145
+      },
+      "Jupiter": {
+        "longitude": 201.584472,
+        "sign_index": 6,
+        "degree_in_sign": 21.584472,
+        "is_retrograde": false,
+        "speed": 0.079486
+      },
+      "Venus": {
+        "longitude": 148.098928,
+        "sign_index": 4,
+        "degree_in_sign": 28.098928,
+        "is_retrograde": false,
+        "speed": 0.33725
+      },
+      "Saturn": {
+        "longitude": 315.532581,
+        "sign_index": 10,
+        "degree_in_sign": 15.532581,
+        "is_retrograde": true,
+        "speed": -0.06607
+      },
+      "Rahu": {
+        "longitude": 267.674543,
+        "sign_index": 8,
+        "degree_in_sign": 27.674543,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 87.674543,
+        "sign_index": 2,
+        "degree_in_sign": 27.674543,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

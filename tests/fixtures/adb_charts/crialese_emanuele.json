@@ -1,0 +1,109 @@
+{
+  "adb_id": 71885,
+  "name": "Crialese, Emanuele",
+  "given_name": "Emanuele Crialese",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438908.0,
+    "year": 1965,
+    "month": 5,
+    "day": 27,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crialese,_Emanuele",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes him.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 3.308477,
+    "lagna": 123.308477,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.373831,
+    "jd_ut": 2438908.0,
+    "planets": {
+      "Sun": {
+        "longitude": 42.6026,
+        "sign_index": 1,
+        "degree_in_sign": 12.6026,
+        "is_retrograde": false,
+        "speed": 0.959947
+      },
+      "Moon": {
+        "longitude": 357.495237,
+        "sign_index": 11,
+        "degree_in_sign": 27.495237,
+        "is_retrograde": false,
+        "speed": 11.074597
+      },
+      "Mars": {
+        "longitude": 142.617569,
+        "sign_index": 4,
+        "degree_in_sign": 22.617569,
+        "is_retrograde": false,
+        "speed": 0.346617
+      },
+      "Mercury": {
+        "longitude": 25.734711,
+        "sign_index": 0,
+        "degree_in_sign": 25.734711,
+        "is_retrograde": false,
+        "speed": 1.823713
+      },
+      "Jupiter": {
+        "longitude": 44.634937,
+        "sign_index": 1,
+        "degree_in_sign": 14.634937,
+        "is_retrograde": false,
+        "speed": 0.233681
+      },
+      "Venus": {
+        "longitude": 54.541784,
+        "sign_index": 1,
+        "degree_in_sign": 24.541784,
+        "is_retrograde": false,
+        "speed": 1.22709
+      },
+      "Saturn": {
+        "longitude": 323.029521,
+        "sign_index": 10,
+        "degree_in_sign": 23.029521,
+        "is_retrograde": false,
+        "speed": 0.05086
+      },
+      "Rahu": {
+        "longitude": 50.847695,
+        "sign_index": 1,
+        "degree_in_sign": 20.847695,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 230.847695,
+        "sign_index": 7,
+        "degree_in_sign": 20.847695,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

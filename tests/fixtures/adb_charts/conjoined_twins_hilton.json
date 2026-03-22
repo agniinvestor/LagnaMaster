@@ -1,0 +1,109 @@
+{
+  "adb_id": 57724,
+  "name": "Conjoined Twins: Hilton",
+  "given_name": "Conjoined Twins: Hilton",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417977.375,
+    "year": 1908,
+    "month": 2,
+    "day": 5,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Brighton",
+    "country": "England",
+    "lat": 50.833333,
+    "lon": -0.133333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Hilton",
+  "source_notes": "Sy Scholfield quotes from an article in the British Medical Journal, 23 Sept 1911, where the doctor assisting the birth describes details.\\n",
+  "categories": [
+    "Personal : Birth : Conjoined twins",
+    "Vocation : Entertainment : Circus/ Animal acts"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 14.489118,
+    "lagna": 134.489118,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.573568,
+    "jd_ut": 2417977.375,
+    "planets": {
+      "Sun": {
+        "longitude": 293.115678,
+        "sign_index": 9,
+        "degree_in_sign": 23.115678,
+        "is_retrograde": false,
+        "speed": 1.013818
+      },
+      "Moon": {
+        "longitude": 341.016029,
+        "sign_index": 11,
+        "degree_in_sign": 11.016029,
+        "is_retrograde": false,
+        "speed": 13.995663
+      },
+      "Mars": {
+        "longitude": 355.431765,
+        "sign_index": 11,
+        "degree_in_sign": 25.431765,
+        "is_retrograde": false,
+        "speed": 0.698149
+      },
+      "Mercury": {
+        "longitude": 308.554708,
+        "sign_index": 10,
+        "degree_in_sign": 8.554708,
+        "is_retrograde": false,
+        "speed": 1.61146
+      },
+      "Jupiter": {
+        "longitude": 105.10669,
+        "sign_index": 3,
+        "degree_in_sign": 15.10669,
+        "is_retrograde": true,
+        "speed": -0.131175
+      },
+      "Venus": {
+        "longitude": 327.417576,
+        "sign_index": 10,
+        "degree_in_sign": 27.417576,
+        "is_retrograde": false,
+        "speed": 1.21902
+      },
+      "Saturn": {
+        "longitude": 332.390734,
+        "sign_index": 11,
+        "degree_in_sign": 2.390734,
+        "is_retrograde": false,
+        "speed": 0.105588
+      },
+      "Rahu": {
+        "longitude": 80.004901,
+        "sign_index": 2,
+        "degree_in_sign": 20.004901,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 260.004901,
+        "sign_index": 8,
+        "degree_in_sign": 20.004901,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

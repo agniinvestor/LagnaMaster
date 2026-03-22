@@ -1,0 +1,109 @@
+{
+  "adb_id": 59779,
+  "name": "Cavendish, William",
+  "given_name": "William Cavendish",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2374984.535185,
+    "year": 1790,
+    "month": 5,
+    "day": 21,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavendish,_William",
+  "source_notes": "Sy Scholfield quotes \"Georgiana, Duchess of Devonshire\" by Brian Masters (Hamish Hamilton, 1981), p. 185: \"letters home to his mother throughout the period from April to August 1790, ... On 21 May, the doctor scribbled a very quick note to his mother.  'About an hour after I sealed my letter of last night', he said, 'Her Grace's labour came on pretty violent, and after one of the best times I ever attended she was delivered at one o'clock this morning of a remarkable fine boy.'\" \\n",
+  "categories": [
+    "Vocation : Politics : Other Politics",
+    "Notable : Famous : Other Famous"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 14.934849,
+    "lagna": 284.934849,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.930409,
+    "jd_ut": 2374984.535185,
+    "planets": {
+      "Sun": {
+        "longitude": 39.1383,
+        "sign_index": 1,
+        "degree_in_sign": 9.1383,
+        "is_retrograde": false,
+        "speed": 0.960588
+      },
+      "Moon": {
+        "longitude": 120.315839,
+        "sign_index": 4,
+        "degree_in_sign": 0.315839,
+        "is_retrograde": false,
+        "speed": 15.339167
+      },
+      "Mars": {
+        "longitude": 126.897491,
+        "sign_index": 4,
+        "degree_in_sign": 6.897491,
+        "is_retrograde": false,
+        "speed": 0.440205
+      },
+      "Mercury": {
+        "longitude": 59.918722,
+        "sign_index": 1,
+        "degree_in_sign": 29.918722,
+        "is_retrograde": false,
+        "speed": 1.501749
+      },
+      "Jupiter": {
+        "longitude": 122.008795,
+        "sign_index": 4,
+        "degree_in_sign": 2.008795,
+        "is_retrograde": false,
+        "speed": 0.09608
+      },
+      "Venus": {
+        "longitude": 353.444323,
+        "sign_index": 11,
+        "degree_in_sign": 23.444323,
+        "is_retrograde": false,
+        "speed": 0.90918
+      },
+      "Saturn": {
+        "longitude": 342.355632,
+        "sign_index": 11,
+        "degree_in_sign": 12.355632,
+        "is_retrograde": false,
+        "speed": 0.085845
+      },
+      "Rahu": {
+        "longitude": 198.288181,
+        "sign_index": 6,
+        "degree_in_sign": 18.288181,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.288181,
+        "sign_index": 0,
+        "degree_in_sign": 18.288181,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

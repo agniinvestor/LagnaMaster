@@ -1,0 +1,109 @@
+{
+  "adb_id": 103154,
+  "name": "Castagner, Ilario",
+  "given_name": "Ilario Castagner",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429981.895833,
+    "year": 1940,
+    "month": 12,
+    "day": 18,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "d",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Vittorio Veneto",
+    "country": "Italy",
+    "lat": 45.983333,
+    "lon": 12.3
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castagner,_Ilario",
+  "source_notes": "Quoted BC from Bordoni database.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 23.727927,
+    "lagna": 263.727927,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.032525,
+    "jd_ut": 2429981.895833,
+    "planets": {
+      "Sun": {
+        "longitude": 243.300843,
+        "sign_index": 8,
+        "degree_in_sign": 3.300843,
+        "is_retrograde": false,
+        "speed": 1.017789
+      },
+      "Moon": {
+        "longitude": 106.162378,
+        "sign_index": 3,
+        "degree_in_sign": 16.162378,
+        "is_retrograde": false,
+        "speed": 15.159153
+      },
+      "Mars": {
+        "longitude": 205.295017,
+        "sign_index": 6,
+        "degree_in_sign": 25.295017,
+        "is_retrograde": false,
+        "speed": 0.666786
+      },
+      "Mercury": {
+        "longitude": 230.063365,
+        "sign_index": 7,
+        "degree_in_sign": 20.063365,
+        "is_retrograde": false,
+        "speed": 1.51068
+      },
+      "Jupiter": {
+        "longitude": 12.9222,
+        "sign_index": 0,
+        "degree_in_sign": 12.9222,
+        "is_retrograde": true,
+        "speed": -0.043819
+      },
+      "Venus": {
+        "longitude": 213.961032,
+        "sign_index": 7,
+        "degree_in_sign": 3.961032,
+        "is_retrograde": false,
+        "speed": 1.240889
+      },
+      "Saturn": {
+        "longitude": 15.310626,
+        "sign_index": 0,
+        "degree_in_sign": 15.310626,
+        "is_retrograde": true,
+        "speed": -0.03981
+      },
+      "Rahu": {
+        "longitude": 163.860316,
+        "sign_index": 5,
+        "degree_in_sign": 13.860316,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 343.860316,
+        "sign_index": 11,
+        "degree_in_sign": 13.860316,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

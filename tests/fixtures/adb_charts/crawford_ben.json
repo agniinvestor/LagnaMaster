@@ -1,0 +1,111 @@
+{
+  "adb_id": 100031,
+  "name": "Crawford, Ben",
+  "given_name": "Ben Crawford",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2445112.641667,
+    "year": 1982,
+    "month": 5,
+    "day": 22,
+    "calendar": "g",
+    "time": "20:24",
+    "time_type": "s",
+    "hour": 20.4,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crawford,_Ben",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Tucson Citizen'', 25 May 1982, page D5; born at Tucson Medical Center. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 29.130044,
+    "lagna": 209.130044,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.611098,
+    "jd_ut": 2445112.641667,
+    "planets": {
+      "Sun": {
+        "longitude": 38.078214,
+        "sign_index": 1,
+        "degree_in_sign": 8.078214,
+        "is_retrograde": false,
+        "speed": 0.961706
+      },
+      "Moon": {
+        "longitude": 36.479251,
+        "sign_index": 1,
+        "degree_in_sign": 6.479251,
+        "is_retrograde": false,
+        "speed": 17.517232
+      },
+      "Mars": {
+        "longitude": 157.555316,
+        "sign_index": 5,
+        "degree_in_sign": 7.555316,
+        "is_retrograde": false,
+        "speed": 0.134517
+      },
+      "Mercury": {
+        "longitude": 51.408854,
+        "sign_index": 1,
+        "degree_in_sign": 21.408854,
+        "is_retrograde": true,
+        "speed": -0.155469
+      },
+      "Jupiter": {
+        "longitude": 188.663883,
+        "sign_index": 6,
+        "degree_in_sign": 8.663883,
+        "is_retrograde": true,
+        "speed": -0.097767
+      },
+      "Venus": {
+        "longitude": 357.479785,
+        "sign_index": 11,
+        "degree_in_sign": 27.479785,
+        "is_retrograde": false,
+        "speed": 1.147636
+      },
+      "Saturn": {
+        "longitude": 172.454559,
+        "sign_index": 5,
+        "degree_in_sign": 22.454559,
+        "is_retrograde": true,
+        "speed": -0.041885
+      },
+      "Rahu": {
+        "longitude": 82.051089,
+        "sign_index": 2,
+        "degree_in_sign": 22.051089,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 262.051089,
+        "sign_index": 8,
+        "degree_in_sign": 22.051089,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

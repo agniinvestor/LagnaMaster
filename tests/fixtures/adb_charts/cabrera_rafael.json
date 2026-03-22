@@ -1,0 +1,109 @@
+{
+  "adb_id": 74271,
+  "name": "Cabrera, Rafael",
+  "given_name": "Rafael Cabrera",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409241.281389,
+    "year": 1884,
+    "month": 3,
+    "day": 5,
+    "calendar": "g",
+    "time": "12:15",
+    "time_type": "l",
+    "hour": 12.25,
+    "time_unknown": false,
+    "place": "Zaragoza (Puebla)",
+    "country": "Mexico",
+    "lat": 19.766667,
+    "lon": -97.55
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabrera,_Rafael",
+  "source_notes": "Castellanos quotes BC.\\n",
+  "categories": [
+    "Vocation : Politics : Diplomat",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 12.41507,
+    "lagna": 42.41507,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.239611,
+    "jd_ut": 2409241.281389,
+    "planets": {
+      "Sun": {
+        "longitude": 323.398297,
+        "sign_index": 10,
+        "degree_in_sign": 23.398297,
+        "is_retrograde": false,
+        "speed": 1.000119
+      },
+      "Moon": {
+        "longitude": 70.074943,
+        "sign_index": 2,
+        "degree_in_sign": 10.074943,
+        "is_retrograde": false,
+        "speed": 15.294875
+      },
+      "Mars": {
+        "longitude": 100.540996,
+        "sign_index": 3,
+        "degree_in_sign": 10.540996,
+        "is_retrograde": true,
+        "speed": -0.086557
+      },
+      "Mercury": {
+        "longitude": 303.673083,
+        "sign_index": 10,
+        "degree_in_sign": 3.673083,
+        "is_retrograde": false,
+        "speed": 1.551609
+      },
+      "Jupiter": {
+        "longitude": 92.593811,
+        "sign_index": 3,
+        "degree_in_sign": 2.593811,
+        "is_retrograde": true,
+        "speed": -0.046826
+      },
+      "Venus": {
+        "longitude": 2.036077,
+        "sign_index": 0,
+        "degree_in_sign": 2.036077,
+        "is_retrograde": false,
+        "speed": 1.184639
+      },
+      "Saturn": {
+        "longitude": 41.854078,
+        "sign_index": 1,
+        "degree_in_sign": 11.854078,
+        "is_retrograde": false,
+        "speed": 0.056176
+      },
+      "Rahu": {
+        "longitude": 182.948953,
+        "sign_index": 6,
+        "degree_in_sign": 2.948953,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 2.948953,
+        "sign_index": 0,
+        "degree_in_sign": 2.948953,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

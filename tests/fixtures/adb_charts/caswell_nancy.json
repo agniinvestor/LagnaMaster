@@ -1,0 +1,114 @@
+{
+  "adb_id": 90567,
+  "name": "Caswell, Nancy",
+  "given_name": "Nancy Caswell",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420069.434028,
+    "year": 1913,
+    "month": 10,
+    "day": 28,
+    "calendar": "g",
+    "time": "14:25",
+    "time_type": "s",
+    "hour": 14.416667,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caswell,_Nancy",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Family : Relationship : Number of Marriages",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Child performer",
+    "Vocation : Entertainment : Child performer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 21.431635,
+    "lagna": 291.431635,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.653547,
+    "jd_ut": 2420069.434028,
+    "planets": {
+      "Sun": {
+        "longitude": 192.247165,
+        "sign_index": 6,
+        "degree_in_sign": 12.247165,
+        "is_retrograde": false,
+        "speed": 0.999606
+      },
+      "Moon": {
+        "longitude": 182.566579,
+        "sign_index": 6,
+        "degree_in_sign": 2.566579,
+        "is_retrograde": false,
+        "speed": 11.689108
+      },
+      "Mars": {
+        "longitude": 86.911345,
+        "sign_index": 2,
+        "degree_in_sign": 26.911345,
+        "is_retrograde": false,
+        "speed": 0.317961
+      },
+      "Mercury": {
+        "longitude": 215.271419,
+        "sign_index": 7,
+        "degree_in_sign": 5.271419,
+        "is_retrograde": false,
+        "speed": 1.170539
+      },
+      "Jupiter": {
+        "longitude": 259.718588,
+        "sign_index": 8,
+        "degree_in_sign": 19.718588,
+        "is_retrograde": false,
+        "speed": 0.150438
+      },
+      "Venus": {
+        "longitude": 166.844269,
+        "sign_index": 5,
+        "degree_in_sign": 16.844269,
+        "is_retrograde": false,
+        "speed": 1.239262
+      },
+      "Saturn": {
+        "longitude": 54.815158,
+        "sign_index": 1,
+        "degree_in_sign": 24.815158,
+        "is_retrograde": true,
+        "speed": -0.04898
+      },
+      "Rahu": {
+        "longitude": 329.142302,
+        "sign_index": 10,
+        "degree_in_sign": 29.142302,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 149.142302,
+        "sign_index": 4,
+        "degree_in_sign": 29.142302,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

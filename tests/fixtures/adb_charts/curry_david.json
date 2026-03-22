@@ -1,0 +1,108 @@
+{
+  "adb_id": 47933,
+  "name": "Curry, David",
+  "given_name": "David Curry",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431255.274306,
+    "year": 1944,
+    "month": 6,
+    "day": 13,
+    "calendar": "g",
+    "time": "20:35",
+    "time_type": "d",
+    "hour": 20.583333,
+    "time_unknown": false,
+    "place": "Winshill",
+    "country": "England",
+    "lat": 52.8,
+    "lon": -1.6
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curry,_David",
+  "source_notes": "Pulsar collection quotes him, \"I hope this is of help..\"\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 15.527111,
+    "lagna": 195.527111,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.081212,
+    "jd_ut": 2431255.274306,
+    "planets": {
+      "Sun": {
+        "longitude": 59.505172,
+        "sign_index": 1,
+        "degree_in_sign": 29.505172,
+        "is_retrograde": false,
+        "speed": 0.955127
+      },
+      "Moon": {
+        "longitude": 330.709099,
+        "sign_index": 11,
+        "degree_in_sign": 0.709099,
+        "is_retrograde": false,
+        "speed": 17.443602
+      },
+      "Mars": {
+        "longitude": 109.873031,
+        "sign_index": 3,
+        "degree_in_sign": 19.873031,
+        "is_retrograde": false,
+        "speed": 0.591821
+      },
+      "Mercury": {
+        "longitude": 40.667621,
+        "sign_index": 1,
+        "degree_in_sign": 10.667621,
+        "is_retrograde": false,
+        "speed": 1.692294
+      },
+      "Jupiter": {
+        "longitude": 119.199732,
+        "sign_index": 3,
+        "degree_in_sign": 29.199732,
+        "is_retrograde": false,
+        "speed": 0.154158
+      },
+      "Venus": {
+        "longitude": 55.838533,
+        "sign_index": 1,
+        "degree_in_sign": 25.838533,
+        "is_retrograde": false,
+        "speed": 1.227633
+      },
+      "Saturn": {
+        "longitude": 66.071977,
+        "sign_index": 2,
+        "degree_in_sign": 6.071977,
+        "is_retrograde": false,
+        "speed": 0.129531
+      },
+      "Rahu": {
+        "longitude": 96.381359,
+        "sign_index": 3,
+        "degree_in_sign": 6.381359,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 276.381359,
+        "sign_index": 9,
+        "degree_in_sign": 6.381359,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

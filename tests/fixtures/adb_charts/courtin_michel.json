@@ -1,0 +1,110 @@
+{
+  "adb_id": 65550,
+  "name": "Courtin, Michel",
+  "given_name": "Michel Courtin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425321.916667,
+    "year": 1928,
+    "month": 3,
+    "day": 16,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Villers-Guislain",
+    "country": "France",
+    "lat": 50.040833,
+    "lon": 3.156389
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courtin,_Michel",
+  "source_notes": "Didier Geslain archive, 'Condamnés à mort' pdf file, p. 43+\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide serial",
+    "Personal : Death : Other Death",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 12.513784,
+    "lagna": 42.513784,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.854356,
+    "jd_ut": 2425321.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 332.727844,
+        "sign_index": 11,
+        "degree_in_sign": 2.727844,
+        "is_retrograde": false,
+        "speed": 0.99542
+      },
+      "Moon": {
+        "longitude": 262.435931,
+        "sign_index": 8,
+        "degree_in_sign": 22.435931,
+        "is_retrograde": false,
+        "speed": 9.905027
+      },
+      "Mars": {
+        "longitude": 290.179586,
+        "sign_index": 9,
+        "degree_in_sign": 20.179586,
+        "is_retrograde": false,
+        "speed": 0.76293
+      },
+      "Mercury": {
+        "longitude": 305.940526,
+        "sign_index": 10,
+        "degree_in_sign": 5.940526,
+        "is_retrograde": false,
+        "speed": 0.658077
+      },
+      "Jupiter": {
+        "longitude": 348.602682,
+        "sign_index": 11,
+        "degree_in_sign": 18.602682,
+        "is_retrograde": false,
+        "speed": 0.237513
+      },
+      "Venus": {
+        "longitude": 305.030293,
+        "sign_index": 10,
+        "degree_in_sign": 5.030293,
+        "is_retrograde": false,
+        "speed": 1.228038
+      },
+      "Saturn": {
+        "longitude": 236.151901,
+        "sign_index": 7,
+        "degree_in_sign": 26.151901,
+        "is_retrograde": false,
+        "speed": 0.020773
+      },
+      "Rahu": {
+        "longitude": 50.802278,
+        "sign_index": 1,
+        "degree_in_sign": 20.802278,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 230.802278,
+        "sign_index": 7,
+        "degree_in_sign": 20.802278,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 65112,
+  "name": "Crouzet, François (1931)",
+  "given_name": "François (1931) Crouzet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426362.390972,
+    "year": 1931,
+    "month": 1,
+    "day": 20,
+    "calendar": "g",
+    "time": "21:23",
+    "time_type": "s",
+    "hour": 21.383333,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crouzet,_François_(1931)",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 291.\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 8.657404,
+    "lagna": 128.657404,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.894137,
+    "jd_ut": 2426362.390972,
+    "planets": {
+      "Sun": {
+        "longitude": 276.983622,
+        "sign_index": 9,
+        "degree_in_sign": 6.983622,
+        "is_retrograde": false,
+        "speed": 1.017984
+      },
+      "Moon": {
+        "longitude": 299.701002,
+        "sign_index": 9,
+        "degree_in_sign": 29.701002,
+        "is_retrograde": false,
+        "speed": 13.735891
+      },
+      "Mars": {
+        "longitude": 106.748311,
+        "sign_index": 3,
+        "degree_in_sign": 16.748311,
+        "is_retrograde": true,
+        "speed": -0.3869
+      },
+      "Mercury": {
+        "longitude": 254.060547,
+        "sign_index": 8,
+        "degree_in_sign": 14.060547,
+        "is_retrograde": false,
+        "speed": 0.454502
+      },
+      "Jupiter": {
+        "longitude": 80.709891,
+        "sign_index": 2,
+        "degree_in_sign": 20.709891,
+        "is_retrograde": true,
+        "speed": -0.12493
+      },
+      "Venus": {
+        "longitude": 230.780276,
+        "sign_index": 7,
+        "degree_in_sign": 20.780276,
+        "is_retrograde": false,
+        "speed": 0.912675
+      },
+      "Saturn": {
+        "longitude": 263.159531,
+        "sign_index": 8,
+        "degree_in_sign": 23.159531,
+        "is_retrograde": false,
+        "speed": 0.116214
+      },
+      "Rahu": {
+        "longitude": 355.665382,
+        "sign_index": 11,
+        "degree_in_sign": 25.665382,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 175.665382,
+        "sign_index": 5,
+        "degree_in_sign": 25.665382,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

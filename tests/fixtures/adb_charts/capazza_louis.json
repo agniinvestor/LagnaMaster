@@ -1,0 +1,110 @@
+{
+  "adb_id": 69569,
+  "name": "Capazza, Louis",
+  "given_name": "Louis Capazza",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2401157.59875,
+    "year": 1862,
+    "month": 1,
+    "day": 17,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "l",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Bastia",
+    "country": "France",
+    "lat": 42.7,
+    "lon": 9.45
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capazza,_Louis",
+  "source_notes": "Didier Geslain archive, 'sport auto moto' pdf file, p. 32.\\n",
+  "categories": [
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Travel : Aviation field",
+    "Vocation : Travel : Pilot/ private"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 11.173388,
+    "lagna": 191.173388,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.930625,
+    "jd_ut": 2401157.59875,
+    "planets": {
+      "Sun": {
+        "longitude": 274.849725,
+        "sign_index": 9,
+        "degree_in_sign": 4.849725,
+        "is_retrograde": false,
+        "speed": 1.017632
+      },
+      "Moon": {
+        "longitude": 106.701421,
+        "sign_index": 3,
+        "degree_in_sign": 16.701421,
+        "is_retrograde": false,
+        "speed": 9.655351
+      },
+      "Mars": {
+        "longitude": 225.347982,
+        "sign_index": 7,
+        "degree_in_sign": 15.347982,
+        "is_retrograde": false,
+        "speed": 0.674629
+      },
+      "Mercury": {
+        "longitude": 278.043249,
+        "sign_index": 9,
+        "degree_in_sign": 8.043249,
+        "is_retrograde": false,
+        "speed": 1.691311
+      },
+      "Jupiter": {
+        "longitude": 155.482328,
+        "sign_index": 5,
+        "degree_in_sign": 5.482328,
+        "is_retrograde": true,
+        "speed": -0.01625
+      },
+      "Venus": {
+        "longitude": 316.971569,
+        "sign_index": 10,
+        "degree_in_sign": 16.971569,
+        "is_retrograde": false,
+        "speed": 0.611039
+      },
+      "Saturn": {
+        "longitude": 150.546024,
+        "sign_index": 5,
+        "degree_in_sign": 0.546024,
+        "is_retrograde": true,
+        "speed": -0.027082
+      },
+      "Rahu": {
+        "longitude": 251.320534,
+        "sign_index": 8,
+        "degree_in_sign": 11.320534,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 71.320534,
+        "sign_index": 2,
+        "degree_in_sign": 11.320534,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

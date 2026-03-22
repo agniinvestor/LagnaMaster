@@ -1,0 +1,113 @@
+{
+  "adb_id": 104140,
+  "name": "Cartola",
+  "given_name": "Cartola",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418226.328354,
+    "year": 1908,
+    "month": 10,
+    "day": 11,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Rio de Janeiro (Rio de Janeiro)",
+    "country": "Brazil",
+    "lat": -22.902778,
+    "lon": -43.2075
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cartola",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Folk Music",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 19.439719,
+    "lagna": 319.439719,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.583085,
+    "jd_ut": 2418226.328354,
+    "planets": {
+      "Sun": {
+        "longitude": 175.512888,
+        "sign_index": 5,
+        "degree_in_sign": 25.512888,
+        "is_retrograde": false,
+        "speed": 0.989559
+      },
+      "Moon": {
+        "longitude": 22.582181,
+        "sign_index": 0,
+        "degree_in_sign": 22.582181,
+        "is_retrograde": false,
+        "speed": 17.607787
+      },
+      "Mars": {
+        "longitude": 158.433614,
+        "sign_index": 5,
+        "degree_in_sign": 8.433614,
+        "is_retrograde": false,
+        "speed": 0.642395
+      },
+      "Mercury": {
+        "longitude": 199.546258,
+        "sign_index": 6,
+        "degree_in_sign": 19.546258,
+        "is_retrograde": false,
+        "speed": 0.55407
+      },
+      "Jupiter": {
+        "longitude": 133.333754,
+        "sign_index": 4,
+        "degree_in_sign": 13.333754,
+        "is_retrograde": false,
+        "speed": 0.186655
+      },
+      "Venus": {
+        "longitude": 131.375007,
+        "sign_index": 4,
+        "degree_in_sign": 11.375007,
+        "is_retrograde": false,
+        "speed": 1.114404
+      },
+      "Saturn": {
+        "longitude": 343.267303,
+        "sign_index": 11,
+        "degree_in_sign": 13.267303,
+        "is_retrograde": true,
+        "speed": -0.075641
+      },
+      "Rahu": {
+        "longitude": 66.81234,
+        "sign_index": 2,
+        "degree_in_sign": 6.81234,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 246.81234,
+        "sign_index": 8,
+        "degree_in_sign": 6.81234,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

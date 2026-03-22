@@ -1,0 +1,108 @@
+{
+  "adb_id": 60441,
+  "name": "Cot, Pierre",
+  "given_name": "Pierre Cot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413518.285174,
+    "year": 1895,
+    "month": 11,
+    "day": 20,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Grenoble",
+    "country": "France",
+    "lat": 45.166667,
+    "lon": 5.716667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cot,_Pierre",
+  "source_notes": "Gauquelin vol 5\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 27.213397,
+    "lagna": 57.213397,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.403105,
+    "jd_ut": 2413518.285174,
+    "planets": {
+      "Sun": {
+        "longitude": 215.83246,
+        "sign_index": 7,
+        "degree_in_sign": 5.83246,
+        "is_retrograde": false,
+        "speed": 1.010592
+      },
+      "Moon": {
+        "longitude": 265.876389,
+        "sign_index": 8,
+        "degree_in_sign": 25.876389,
+        "is_retrograde": false,
+        "speed": 10.712705
+      },
+      "Mars": {
+        "longitude": 202.690883,
+        "sign_index": 6,
+        "degree_in_sign": 22.690883,
+        "is_retrograde": false,
+        "speed": 0.688857
+      },
+      "Mercury": {
+        "longitude": 199.713751,
+        "sign_index": 6,
+        "degree_in_sign": 19.713751,
+        "is_retrograde": false,
+        "speed": 1.47956
+      },
+      "Jupiter": {
+        "longitude": 106.701555,
+        "sign_index": 3,
+        "degree_in_sign": 16.701555,
+        "is_retrograde": false,
+        "speed": 0.016227
+      },
+      "Venus": {
+        "longitude": 169.388544,
+        "sign_index": 5,
+        "degree_in_sign": 19.388544,
+        "is_retrograde": false,
+        "speed": 0.93773
+      },
+      "Saturn": {
+        "longitude": 199.756411,
+        "sign_index": 6,
+        "degree_in_sign": 19.756411,
+        "is_retrograde": false,
+        "speed": 0.117191
+      },
+      "Rahu": {
+        "longitude": 316.301468,
+        "sign_index": 10,
+        "degree_in_sign": 16.301468,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 136.301468,
+        "sign_index": 4,
+        "degree_in_sign": 16.301468,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

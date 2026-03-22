@@ -1,0 +1,109 @@
+{
+  "adb_id": 104254,
+  "name": "Collins, Bobby",
+  "given_name": "Bobby Collins",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426388.732639,
+    "year": 1931,
+    "month": 2,
+    "day": 16,
+    "calendar": "g",
+    "time": "05:35",
+    "time_type": "s",
+    "hour": 5.583333,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland (UK)",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Bobby",
+  "source_notes": "Grazia Bordoni database quotes who?\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 18.916857,
+    "lagna": 228.916857,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.895144,
+    "jd_ut": 2426388.732639,
+    "planets": {
+      "Sun": {
+        "longitude": 303.695965,
+        "sign_index": 10,
+        "degree_in_sign": 3.695965,
+        "is_retrograde": false,
+        "speed": 1.009925
+      },
+      "Moon": {
+        "longitude": 289.610602,
+        "sign_index": 9,
+        "degree_in_sign": 19.610602,
+        "is_retrograde": false,
+        "speed": 11.68391
+      },
+      "Mars": {
+        "longitude": 97.202018,
+        "sign_index": 3,
+        "degree_in_sign": 7.202018,
+        "is_retrograde": true,
+        "speed": -0.262522
+      },
+      "Mercury": {
+        "longitude": 283.908473,
+        "sign_index": 9,
+        "degree_in_sign": 13.908473,
+        "is_retrograde": false,
+        "speed": 1.483099
+      },
+      "Jupiter": {
+        "longitude": 78.153007,
+        "sign_index": 2,
+        "degree_in_sign": 18.153007,
+        "is_retrograde": true,
+        "speed": -0.062079
+      },
+      "Venus": {
+        "longitude": 257.43696,
+        "sign_index": 8,
+        "degree_in_sign": 17.43696,
+        "is_retrograde": false,
+        "speed": 1.08468
+      },
+      "Saturn": {
+        "longitude": 266.060134,
+        "sign_index": 8,
+        "degree_in_sign": 26.060134,
+        "is_retrograde": false,
+        "speed": 0.10191
+      },
+      "Rahu": {
+        "longitude": 354.269482,
+        "sign_index": 11,
+        "degree_in_sign": 24.269482,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 174.269482,
+        "sign_index": 5,
+        "degree_in_sign": 24.269482,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

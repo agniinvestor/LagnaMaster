@@ -1,0 +1,110 @@
+{
+  "adb_id": 38596,
+  "name": "Creuz, Serge",
+  "given_name": "Serge Creuz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423909.541667,
+    "year": 1924,
+    "month": 5,
+    "day": 4,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "d",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Molenbeek St.Jean",
+    "country": "Belgium",
+    "lat": 50.85,
+    "lon": 4.316667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Creuz,_Serge",
+  "source_notes": "Jany Bessiere quotes J. B. for B.C.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Stage/ Set design",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 17.242645,
+    "lagna": 257.242645,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.800358,
+    "jd_ut": 2423909.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 20.490049,
+        "sign_index": 0,
+        "degree_in_sign": 20.490049,
+        "is_retrograde": false,
+        "speed": 0.96911
+      },
+      "Moon": {
+        "longitude": 21.344464,
+        "sign_index": 0,
+        "degree_in_sign": 21.344464,
+        "is_retrograde": false,
+        "speed": 15.228738
+      },
+      "Mars": {
+        "longitude": 282.623503,
+        "sign_index": 9,
+        "degree_in_sign": 12.623503,
+        "is_retrograde": false,
+        "speed": 0.568581
+      },
+      "Mercury": {
+        "longitude": 26.688798,
+        "sign_index": 0,
+        "degree_in_sign": 26.688798,
+        "is_retrograde": true,
+        "speed": -0.502355
+      },
+      "Jupiter": {
+        "longitude": 235.917459,
+        "sign_index": 7,
+        "degree_in_sign": 25.917459,
+        "is_retrograde": true,
+        "speed": -0.08208
+      },
+      "Venus": {
+        "longitude": 65.468308,
+        "sign_index": 2,
+        "degree_in_sign": 5.468308,
+        "is_retrograde": false,
+        "speed": 0.864201
+      },
+      "Saturn": {
+        "longitude": 185.122041,
+        "sign_index": 6,
+        "degree_in_sign": 5.122041,
+        "is_retrograde": true,
+        "speed": -0.072265
+      },
+      "Rahu": {
+        "longitude": 125.646971,
+        "sign_index": 4,
+        "degree_in_sign": 5.646971,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 305.646971,
+        "sign_index": 10,
+        "degree_in_sign": 5.646971,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

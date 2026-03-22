@@ -1,0 +1,110 @@
+{
+  "adb_id": 891,
+  "name": "Crawford, Laurel",
+  "given_name": "Laurel Crawford",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2414520.750694,
+    "year": 1898,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "00:01",
+    "time_type": "s",
+    "hour": 0.016667,
+    "time_unknown": false,
+    "place": "Scandia",
+    "country": "USA",
+    "lat": 39.8,
+    "lon": -97.783333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crawford,_Laurel",
+  "source_notes": "Benjamine quotes his mom in Today's Astrology 6/40 for midnight of August 18/19\\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Passions : Criminal Perpetrator : Homicide many at once",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 26.577809,
+    "lagna": 26.577809,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.441426,
+    "jd_ut": 2414520.750694,
+    "planets": {
+      "Sun": {
+        "longitude": 123.793273,
+        "sign_index": 4,
+        "degree_in_sign": 3.793273,
+        "is_retrograde": false,
+        "speed": 0.963224
+      },
+      "Moon": {
+        "longitude": 144.597201,
+        "sign_index": 4,
+        "degree_in_sign": 24.597201,
+        "is_retrograde": false,
+        "speed": 16.26503
+      },
+      "Mars": {
+        "longitude": 58.385413,
+        "sign_index": 1,
+        "degree_in_sign": 28.385413,
+        "is_retrograde": false,
+        "speed": 0.64113
+      },
+      "Mercury": {
+        "longitude": 148.283652,
+        "sign_index": 4,
+        "degree_in_sign": 28.283652,
+        "is_retrograde": false,
+        "speed": 0.337809
+      },
+      "Jupiter": {
+        "longitude": 166.720639,
+        "sign_index": 5,
+        "degree_in_sign": 16.720639,
+        "is_retrograde": false,
+        "speed": 0.183631
+      },
+      "Venus": {
+        "longitude": 167.359597,
+        "sign_index": 5,
+        "degree_in_sign": 17.359597,
+        "is_retrograde": false,
+        "speed": 1.112993
+      },
+      "Saturn": {
+        "longitude": 223.27933,
+        "sign_index": 7,
+        "degree_in_sign": 13.27933,
+        "is_retrograde": false,
+        "speed": 0.015584
+      },
+      "Rahu": {
+        "longitude": 263.178704,
+        "sign_index": 8,
+        "degree_in_sign": 23.178704,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 83.178704,
+        "sign_index": 2,
+        "degree_in_sign": 23.178704,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

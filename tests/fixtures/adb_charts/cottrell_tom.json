@@ -1,0 +1,111 @@
+{
+  "adb_id": 52199,
+  "name": "Cottrell, Tom",
+  "given_name": "Tom Cottrell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423578.6875,
+    "year": 1923,
+    "month": 6,
+    "day": 8,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "d",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Edinburgh",
+    "country": "Scotland",
+    "lat": 55.95,
+    "lon": -3.216667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cottrell,_Tom",
+  "source_notes": "Steinbrecher collection: Paul Wright quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Politics : Government employee",
+    "Vocation : Science : Chemistry",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 14.192297,
+    "lagna": 44.192297,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.787709,
+    "jd_ut": 2423578.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 53.579261,
+        "sign_index": 1,
+        "degree_in_sign": 23.579261,
+        "is_retrograde": false,
+        "speed": 0.956478
+      },
+      "Moon": {
+        "longitude": 343.418213,
+        "sign_index": 11,
+        "degree_in_sign": 13.418213,
+        "is_retrograde": false,
+        "speed": 9.895058
+      },
+      "Mars": {
+        "longitude": 72.663789,
+        "sign_index": 2,
+        "degree_in_sign": 12.663789,
+        "is_retrograde": false,
+        "speed": 0.654959
+      },
+      "Mercury": {
+        "longitude": 39.687325,
+        "sign_index": 1,
+        "degree_in_sign": 9.687325,
+        "is_retrograde": true,
+        "speed": -0.158498
+      },
+      "Jupiter": {
+        "longitude": 197.520542,
+        "sign_index": 6,
+        "degree_in_sign": 17.520542,
+        "is_retrograde": true,
+        "speed": -0.082969
+      },
+      "Venus": {
+        "longitude": 28.383346,
+        "sign_index": 0,
+        "degree_in_sign": 28.383346,
+        "is_retrograde": false,
+        "speed": 1.207945
+      },
+      "Saturn": {
+        "longitude": 170.632609,
+        "sign_index": 5,
+        "degree_in_sign": 20.632609,
+        "is_retrograde": true,
+        "speed": -0.014604
+      },
+      "Rahu": {
+        "longitude": 143.179623,
+        "sign_index": 4,
+        "degree_in_sign": 23.179623,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 323.179623,
+        "sign_index": 10,
+        "degree_in_sign": 23.179623,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

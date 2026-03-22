@@ -1,0 +1,108 @@
+{
+  "adb_id": 93918,
+  "name": "Colin, Georges",
+  "given_name": "Georges Colin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407784.618677,
+    "year": 1880,
+    "month": 3,
+    "day": 10,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "l",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 16",
+    "country": "France",
+    "lat": 48.862778,
+    "lon": 2.276111
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colin,_Georges",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_acteurs_muet-2.pdf]. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 18.780123,
+    "lagna": 228.780123,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.18393,
+    "jd_ut": 2407784.618677,
+    "planets": {
+      "Sun": {
+        "longitude": 327.758517,
+        "sign_index": 10,
+        "degree_in_sign": 27.758517,
+        "is_retrograde": false,
+        "speed": 0.998323
+      },
+      "Moon": {
+        "longitude": 316.780901,
+        "sign_index": 10,
+        "degree_in_sign": 16.780901,
+        "is_retrograde": false,
+        "speed": 15.286211
+      },
+      "Mars": {
+        "longitude": 50.030303,
+        "sign_index": 1,
+        "degree_in_sign": 20.030303,
+        "is_retrograde": false,
+        "speed": 0.524189
+      },
+      "Mercury": {
+        "longitude": 345.862012,
+        "sign_index": 11,
+        "degree_in_sign": 15.862012,
+        "is_retrograde": false,
+        "speed": 1.186412
+      },
+      "Jupiter": {
+        "longitude": 332.074288,
+        "sign_index": 11,
+        "degree_in_sign": 2.074288,
+        "is_retrograde": false,
+        "speed": 0.242188
+      },
+      "Venus": {
+        "longitude": 295.529925,
+        "sign_index": 9,
+        "degree_in_sign": 25.529925,
+        "is_retrograde": false,
+        "speed": 1.219743
+      },
+      "Saturn": {
+        "longitude": 352.941418,
+        "sign_index": 11,
+        "degree_in_sign": 22.941418,
+        "is_retrograde": false,
+        "speed": 0.118366
+      },
+      "Rahu": {
+        "longitude": 260.140605,
+        "sign_index": 8,
+        "degree_in_sign": 20.140605,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 80.140605,
+        "sign_index": 2,
+        "degree_in_sign": 20.140605,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

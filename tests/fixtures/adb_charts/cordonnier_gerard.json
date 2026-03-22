@@ -1,0 +1,113 @@
+{
+  "adb_id": 4337,
+  "name": "Cordonnier, Gerard",
+  "given_name": "Gerard Cordonnier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417684.847674,
+    "year": 1907,
+    "month": 4,
+    "day": 19,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Bailleul",
+    "country": "France",
+    "lat": 50.733333,
+    "lon": 2.733333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cordonnier,_Gerard",
+  "source_notes": "B.C. in hand from Steinbrecher  (8:30 AM Paris time)\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Education : Teacher",
+    "Vocation : Engineer : Other Engineer",
+    "Vocation : Occult Fields : Parapsychology",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 20.415776,
+    "lagna": 50.415776,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.562385,
+    "jd_ut": 2417684.847674,
+    "planets": {
+      "Sun": {
+        "longitude": 5.573663,
+        "sign_index": 0,
+        "degree_in_sign": 5.573663,
+        "is_retrograde": false,
+        "speed": 0.976617
+      },
+      "Moon": {
+        "longitude": 79.649591,
+        "sign_index": 2,
+        "degree_in_sign": 19.649591,
+        "is_retrograde": false,
+        "speed": 13.951452
+      },
+      "Mars": {
+        "longitude": 255.290071,
+        "sign_index": 8,
+        "degree_in_sign": 15.290071,
+        "is_retrograde": false,
+        "speed": 0.407808
+      },
+      "Mercury": {
+        "longitude": 338.47932,
+        "sign_index": 11,
+        "degree_in_sign": 8.47932,
+        "is_retrograde": false,
+        "speed": 1.167997
+      },
+      "Jupiter": {
+        "longitude": 72.550917,
+        "sign_index": 2,
+        "degree_in_sign": 12.550917,
+        "is_retrograde": false,
+        "speed": 0.144678
+      },
+      "Venus": {
+        "longitude": 327.757122,
+        "sign_index": 10,
+        "degree_in_sign": 27.757122,
+        "is_retrograde": false,
+        "speed": 1.182414
+      },
+      "Saturn": {
+        "longitude": 329.942225,
+        "sign_index": 10,
+        "degree_in_sign": 29.942225,
+        "is_retrograde": false,
+        "speed": 0.107831
+      },
+      "Rahu": {
+        "longitude": 95.506539,
+        "sign_index": 3,
+        "degree_in_sign": 5.506539,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 275.506539,
+        "sign_index": 9,
+        "degree_in_sign": 5.506539,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

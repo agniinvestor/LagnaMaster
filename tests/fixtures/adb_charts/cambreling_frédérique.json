@@ -1,0 +1,108 @@
+{
+  "adb_id": 64913,
+  "name": "Cambreling, Frédérique",
+  "given_name": "Frédérique Cambreling",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435493.965278,
+    "year": 1956,
+    "month": 1,
+    "day": 21,
+    "calendar": "g",
+    "time": "12:10",
+    "time_type": "s",
+    "hour": 12.166667,
+    "time_unknown": false,
+    "place": "Amiens",
+    "country": "France",
+    "lat": 49.9,
+    "lon": 2.3
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cambreling,_Frédérique",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 27.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 24.085985,
+    "lagna": 354.085985,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.243285,
+    "jd_ut": 2435493.965278,
+    "planets": {
+      "Sun": {
+        "longitude": 277.148802,
+        "sign_index": 9,
+        "degree_in_sign": 7.148802,
+        "is_retrograde": false,
+        "speed": 1.017575
+      },
+      "Moon": {
+        "longitude": 13.849052,
+        "sign_index": 0,
+        "degree_in_sign": 13.849052,
+        "is_retrograde": false,
+        "speed": 14.938237
+      },
+      "Mars": {
+        "longitude": 221.574889,
+        "sign_index": 7,
+        "degree_in_sign": 11.574889,
+        "is_retrograde": false,
+        "speed": 0.655246
+      },
+      "Mercury": {
+        "longitude": 289.438593,
+        "sign_index": 9,
+        "degree_in_sign": 19.438593,
+        "is_retrograde": true,
+        "speed": -0.541861
+      },
+      "Jupiter": {
+        "longitude": 126.421825,
+        "sign_index": 4,
+        "degree_in_sign": 6.421825,
+        "is_retrograde": true,
+        "speed": -0.101584
+      },
+      "Venus": {
+        "longitude": 311.487552,
+        "sign_index": 10,
+        "degree_in_sign": 11.487552,
+        "is_retrograde": false,
+        "speed": 1.22293
+      },
+      "Saturn": {
+        "longitude": 217.476635,
+        "sign_index": 7,
+        "degree_in_sign": 7.476635,
+        "is_retrograde": false,
+        "speed": 0.078259
+      },
+      "Rahu": {
+        "longitude": 231.764393,
+        "sign_index": 7,
+        "degree_in_sign": 21.764393,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 51.764393,
+        "sign_index": 1,
+        "degree_in_sign": 21.764393,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 51763,
+  "name": "Carraher, Patrick",
+  "given_name": "Patrick Carraher",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417503.239583,
+    "year": 1906,
+    "month": 10,
+    "day": 19,
+    "calendar": "g",
+    "time": "17:45",
+    "time_type": "s",
+    "hour": 17.75,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carraher,_Patrick",
+  "source_notes": "Steinbrecher Collection: Paul Wright quotes birth certificate\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Assault/ Battery",
+    "Passions : Criminal Perpetrator : Homicide serial"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 4.751691,
+    "lagna": 4.751691,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.555442,
+    "jd_ut": 2417503.239583,
+    "planets": {
+      "Sun": {
+        "longitude": 182.878849,
+        "sign_index": 6,
+        "degree_in_sign": 2.878849,
+        "is_retrograde": false,
+        "speed": 0.994435
+      },
+      "Moon": {
+        "longitude": 207.56453,
+        "sign_index": 6,
+        "degree_in_sign": 27.56453,
+        "is_retrograde": false,
+        "speed": 13.049688
+      },
+      "Mars": {
+        "longitude": 150.903495,
+        "sign_index": 5,
+        "degree_in_sign": 0.903495,
+        "is_retrograde": false,
+        "speed": 0.627577
+      },
+      "Mercury": {
+        "longitude": 199.23857,
+        "sign_index": 6,
+        "degree_in_sign": 19.23857,
+        "is_retrograde": false,
+        "speed": 1.47715
+      },
+      "Jupiter": {
+        "longitude": 78.342563,
+        "sign_index": 2,
+        "degree_in_sign": 18.342563,
+        "is_retrograde": false,
+        "speed": 0.033739
+      },
+      "Venus": {
+        "longitude": 224.857135,
+        "sign_index": 7,
+        "degree_in_sign": 14.857135,
+        "is_retrograde": false,
+        "speed": 0.629706
+      },
+      "Saturn": {
+        "longitude": 316.240388,
+        "sign_index": 10,
+        "degree_in_sign": 16.240388,
+        "is_retrograde": true,
+        "speed": -0.039805
+      },
+      "Rahu": {
+        "longitude": 105.130333,
+        "sign_index": 3,
+        "degree_in_sign": 15.130333,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 285.130333,
+        "sign_index": 9,
+        "degree_in_sign": 15.130333,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

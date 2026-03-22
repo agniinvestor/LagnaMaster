@@ -1,0 +1,109 @@
+{
+  "adb_id": 50803,
+  "name": "Collins, Harold Edward",
+  "given_name": "Harold Edward Collins",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424100.645833,
+    "year": 1924,
+    "month": 11,
+    "day": 10,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "s",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Port Arthur",
+    "country": "Texas",
+    "lat": 29.9,
+    "lon": -93.933333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Harold_Edward",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 4.673753,
+    "lagna": 64.673753,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.807664,
+    "jd_ut": 2424100.645833,
+    "planets": {
+      "Sun": {
+        "longitude": 205.671668,
+        "sign_index": 6,
+        "degree_in_sign": 25.671668,
+        "is_retrograde": false,
+        "speed": 1.005615
+      },
+      "Moon": {
+        "longitude": 21.809506,
+        "sign_index": 0,
+        "degree_in_sign": 21.809506,
+        "is_retrograde": false,
+        "speed": 8.602709
+      },
+      "Mars": {
+        "longitude": 316.23451,
+        "sign_index": 10,
+        "degree_in_sign": 16.23451,
+        "is_retrograde": false,
+        "speed": 0.475007
+      },
+      "Mercury": {
+        "longitude": 215.107442,
+        "sign_index": 7,
+        "degree_in_sign": 5.107442,
+        "is_retrograde": false,
+        "speed": 1.539835
+      },
+      "Jupiter": {
+        "longitude": 238.98502,
+        "sign_index": 7,
+        "degree_in_sign": 28.98502,
+        "is_retrograde": false,
+        "speed": 0.208015
+      },
+      "Venus": {
+        "longitude": 167.375421,
+        "sign_index": 5,
+        "degree_in_sign": 17.375421,
+        "is_retrograde": false,
+        "speed": 1.200524
+      },
+      "Saturn": {
+        "longitude": 193.944982,
+        "sign_index": 6,
+        "degree_in_sign": 13.944982,
+        "is_retrograde": false,
+        "speed": 0.119097
+      },
+      "Rahu": {
+        "longitude": 115.519963,
+        "sign_index": 3,
+        "degree_in_sign": 25.519963,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 295.519963,
+        "sign_index": 9,
+        "degree_in_sign": 25.519963,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

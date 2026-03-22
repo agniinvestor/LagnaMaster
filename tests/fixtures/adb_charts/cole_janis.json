@@ -1,0 +1,110 @@
+{
+  "adb_id": 26232,
+  "name": "Cole, Janis",
+  "given_name": "Janis Cole",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2434888.833333,
+    "year": 1954,
+    "month": 5,
+    "day": 26,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Chatham",
+    "country": "New Brunswick (CAN)",
+    "lat": 47.033333,
+    "lon": -65.466667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cole,_Janis",
+  "source_notes": "John McKay-Clements quotes her 1997, given in The Canadian Astrology Collection\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Politics : Activist/ feminist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 4.196327,
+    "lagna": 4.196327,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.220146,
+    "jd_ut": 2434888.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 41.308051,
+        "sign_index": 1,
+        "degree_in_sign": 11.308051,
+        "is_retrograde": false,
+        "speed": 0.960196
+      },
+      "Moon": {
+        "longitude": 321.248089,
+        "sign_index": 10,
+        "degree_in_sign": 21.248089,
+        "is_retrograde": false,
+        "speed": 11.321884
+      },
+      "Mars": {
+        "longitude": 255.258257,
+        "sign_index": 8,
+        "degree_in_sign": 15.258257,
+        "is_retrograde": true,
+        "speed": -0.035342
+      },
+      "Mercury": {
+        "longitude": 59.811453,
+        "sign_index": 1,
+        "degree_in_sign": 29.811453,
+        "is_retrograde": false,
+        "speed": 1.711648
+      },
+      "Jupiter": {
+        "longitude": 67.235641,
+        "sign_index": 2,
+        "degree_in_sign": 7.235641,
+        "is_retrograde": false,
+        "speed": 0.216007
+      },
+      "Venus": {
+        "longitude": 70.035599,
+        "sign_index": 2,
+        "degree_in_sign": 10.035599,
+        "is_retrograde": false,
+        "speed": 1.203864
+      },
+      "Saturn": {
+        "longitude": 190.735809,
+        "sign_index": 6,
+        "degree_in_sign": 10.735809,
+        "is_retrograde": true,
+        "speed": -0.059769
+      },
+      "Rahu": {
+        "longitude": 263.831579,
+        "sign_index": 8,
+        "degree_in_sign": 23.831579,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 83.831579,
+        "sign_index": 2,
+        "degree_in_sign": 23.831579,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

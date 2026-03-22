@@ -1,0 +1,108 @@
+{
+  "adb_id": 61874,
+  "name": "Christian Heinrich, Margrave of Brandenburg-Bayreu",
+  "given_name": "Margrave of Brandenburg-Bayreu Christian Heinrich",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2327938.176157,
+    "year": 1661,
+    "month": 7,
+    "day": 19,
+    "calendar": "j",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Bayreuth",
+    "country": "Germany",
+    "lat": 49.95,
+    "lon": 11.583333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian_Heinrich,_Margrave_of_Brandenburg-Bayreu",
+  "source_notes": "Sy Scholfield quotes from the German book \"Burg- und Marggräfflich-Brandenburgische Landes- und Regenten-Historie\" by Johann Matthias Groß (Enderes, 1749), p. 437: \"Christian Heinrich ... zu Bayreuth den 19. Julii 1661. Nachmittag um 5. Uhr auf diese Welt.\"\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.339806,
+    "lagna": 224.339806,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.133302,
+    "jd_ut": 2327938.176157,
+    "planets": {
+      "Sun": {
+        "longitude": 107.625625,
+        "sign_index": 3,
+        "degree_in_sign": 17.625625,
+        "is_retrograde": false,
+        "speed": 0.957609
+      },
+      "Moon": {
+        "longitude": 146.845312,
+        "sign_index": 4,
+        "degree_in_sign": 26.845312,
+        "is_retrograde": false,
+        "speed": 9.254726
+      },
+      "Mars": {
+        "longitude": 44.915337,
+        "sign_index": 1,
+        "degree_in_sign": 14.915337,
+        "is_retrograde": false,
+        "speed": 0.668034
+      },
+      "Mercury": {
+        "longitude": 132.124686,
+        "sign_index": 4,
+        "degree_in_sign": 12.124686,
+        "is_retrograde": false,
+        "speed": 1.403865
+      },
+      "Jupiter": {
+        "longitude": 169.641697,
+        "sign_index": 5,
+        "degree_in_sign": 19.641697,
+        "is_retrograde": false,
+        "speed": 0.148584
+      },
+      "Venus": {
+        "longitude": 114.410312,
+        "sign_index": 3,
+        "degree_in_sign": 24.410312,
+        "is_retrograde": false,
+        "speed": 1.233862
+      },
+      "Saturn": {
+        "longitude": 207.927255,
+        "sign_index": 6,
+        "degree_in_sign": 27.927255,
+        "is_retrograde": false,
+        "speed": 0.014189
+      },
+      "Rahu": {
+        "longitude": 171.381747,
+        "sign_index": 5,
+        "degree_in_sign": 21.381747,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 351.381747,
+        "sign_index": 11,
+        "degree_in_sign": 21.381747,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

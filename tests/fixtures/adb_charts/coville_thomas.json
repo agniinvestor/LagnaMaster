@@ -1,0 +1,109 @@
+{
+  "adb_id": 67993,
+  "name": "Coville, Thomas",
+  "given_name": "Thomas Coville",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439986.774306,
+    "year": 1968,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "07:35",
+    "time_type": "s",
+    "hour": 7.583333,
+    "time_unknown": false,
+    "place": "Rennes",
+    "country": "France",
+    "lat": 48.083333,
+    "lon": -1.683333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coville,_Thomas",
+  "source_notes": "Didier Geslain archive, 'navigateurs' pdf file, p. 16.\\n",
+  "categories": [
+    "Vocation : Sports : Sailing/ Boating",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 7.570442,
+    "lagna": 37.570442,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.415082,
+    "jd_ut": 2439986.774306,
+    "planets": {
+      "Sun": {
+        "longitude": 26.246601,
+        "sign_index": 0,
+        "degree_in_sign": 26.246601,
+        "is_retrograde": false,
+        "speed": 0.965748
+      },
+      "Moon": {
+        "longitude": 174.022485,
+        "sign_index": 5,
+        "degree_in_sign": 24.022485,
+        "is_retrograde": false,
+        "speed": 16.911913
+      },
+      "Mars": {
+        "longitude": 37.769091,
+        "sign_index": 1,
+        "degree_in_sign": 7.769091,
+        "is_retrograde": false,
+        "speed": 0.702696
+      },
+      "Mercury": {
+        "longitude": 42.81311,
+        "sign_index": 1,
+        "degree_in_sign": 12.81311,
+        "is_retrograde": false,
+        "speed": 1.795143
+      },
+      "Jupiter": {
+        "longitude": 122.926469,
+        "sign_index": 4,
+        "degree_in_sign": 2.926469,
+        "is_retrograde": false,
+        "speed": 0.05482
+      },
+      "Venus": {
+        "longitude": 15.171014,
+        "sign_index": 0,
+        "degree_in_sign": 15.171014,
+        "is_retrograde": false,
+        "speed": 1.228521
+      },
+      "Saturn": {
+        "longitude": 356.25235,
+        "sign_index": 11,
+        "degree_in_sign": 26.25235,
+        "is_retrograde": false,
+        "speed": 0.114922
+      },
+      "Rahu": {
+        "longitude": 353.681239,
+        "sign_index": 11,
+        "degree_in_sign": 23.681239,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 173.681239,
+        "sign_index": 5,
+        "degree_in_sign": 23.681239,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

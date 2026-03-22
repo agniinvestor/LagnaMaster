@@ -1,0 +1,109 @@
+{
+  "adb_id": 75678,
+  "name": "Christopher, John",
+  "given_name": "John Christopher",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418636.0,
+    "year": 1909,
+    "month": 11,
+    "day": 25,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Salt Lake City",
+    "country": "Utah",
+    "lat": 40.766667,
+    "lon": -111.883333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christopher,_John",
+  "source_notes": "Birth certificate submitted by Sy Scholfield.\\n",
+  "categories": [
+    "Vocation : Healing Fields : Alternative methods",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 17.872243,
+    "lagna": 167.872243,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.598747,
+    "jd_ut": 2418636.0,
+    "planets": {
+      "Sun": {
+        "longitude": 220.004049,
+        "sign_index": 7,
+        "degree_in_sign": 10.004049,
+        "is_retrograde": false,
+        "speed": 1.011573
+      },
+      "Moon": {
+        "longitude": 13.312585,
+        "sign_index": 0,
+        "degree_in_sign": 13.312585,
+        "is_retrograde": false,
+        "speed": 15.164454
+      },
+      "Mars": {
+        "longitude": 338.920489,
+        "sign_index": 11,
+        "degree_in_sign": 8.920489,
+        "is_retrograde": false,
+        "speed": 0.344893
+      },
+      "Mercury": {
+        "longitude": 215.62819,
+        "sign_index": 7,
+        "degree_in_sign": 5.62819,
+        "is_retrograde": false,
+        "speed": 1.582064
+      },
+      "Jupiter": {
+        "longitude": 165.969718,
+        "sign_index": 5,
+        "degree_in_sign": 15.969718,
+        "is_retrograde": false,
+        "speed": 0.165183
+      },
+      "Venus": {
+        "longitude": 267.075907,
+        "sign_index": 8,
+        "degree_in_sign": 27.075907,
+        "is_retrograde": false,
+        "speed": 1.056813
+      },
+      "Saturn": {
+        "longitude": 354.314614,
+        "sign_index": 11,
+        "degree_in_sign": 24.314614,
+        "is_retrograde": true,
+        "speed": -0.04265
+      },
+      "Rahu": {
+        "longitude": 45.102978,
+        "sign_index": 1,
+        "degree_in_sign": 15.102978,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 225.102978,
+        "sign_index": 7,
+        "degree_in_sign": 15.102978,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

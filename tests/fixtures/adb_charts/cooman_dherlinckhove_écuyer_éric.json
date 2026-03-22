@@ -1,0 +1,111 @@
+{
+  "adb_id": 93210,
+  "name": "Cooman d'Herlinckhove, Écuyer Éric",
+  "given_name": "Écuyer Éric Cooman d'Herlinckhove",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429356.4375,
+    "year": 1939,
+    "month": 4,
+    "day": 2,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Brussels",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooman_d'Herlinckhove,_Écuyer_Éric",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_ef_entreprise.pdf]. \\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Business : Consultant",
+    "Vocation : Business : CPA/ Auditor/ Accountant",
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.235517,
+    "lagna": 192.235517,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.008611,
+    "jd_ut": 2429356.4375,
+    "planets": {
+      "Sun": {
+        "longitude": 349.275351,
+        "sign_index": 11,
+        "degree_in_sign": 19.275351,
+        "is_retrograde": false,
+        "speed": 0.985501
+      },
+      "Moon": {
+        "longitude": 152.898174,
+        "sign_index": 5,
+        "degree_in_sign": 2.898174,
+        "is_retrograde": false,
+        "speed": 11.044827
+      },
+      "Mars": {
+        "longitude": 253.906446,
+        "sign_index": 8,
+        "degree_in_sign": 13.906446,
+        "is_retrograde": false,
+        "speed": 0.535251
+      },
+      "Mercury": {
+        "longitude": 349.993205,
+        "sign_index": 11,
+        "degree_in_sign": 19.993205,
+        "is_retrograde": true,
+        "speed": -0.802738
+      },
+      "Jupiter": {
+        "longitude": 328.58426,
+        "sign_index": 10,
+        "degree_in_sign": 28.58426,
+        "is_retrograde": false,
+        "speed": 0.233841
+      },
+      "Venus": {
+        "longitude": 310.032394,
+        "sign_index": 10,
+        "degree_in_sign": 10.032394,
+        "is_retrograde": false,
+        "speed": 1.180847
+      },
+      "Saturn": {
+        "longitude": 356.881584,
+        "sign_index": 11,
+        "degree_in_sign": 26.881584,
+        "is_retrograde": false,
+        "speed": 0.1257
+      },
+      "Rahu": {
+        "longitude": 197.004648,
+        "sign_index": 6,
+        "degree_in_sign": 17.004648,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 17.004648,
+        "sign_index": 0,
+        "degree_in_sign": 17.004648,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

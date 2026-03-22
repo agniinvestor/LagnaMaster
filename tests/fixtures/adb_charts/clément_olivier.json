@@ -1,0 +1,108 @@
+{
+  "adb_id": 65018,
+  "name": "Clément, Olivier",
+  "given_name": "Olivier Clément",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423010.666667,
+    "year": 1921,
+    "month": 11,
+    "day": 17,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Aniane",
+    "country": "France",
+    "lat": 43.686111,
+    "lon": 3.586667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clément,_Olivier",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 177.\\n",
+  "categories": [
+    "Vocation : Education : Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 6.958265,
+    "lagna": 156.958265,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.765993,
+    "jd_ut": 2423010.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 211.508953,
+        "sign_index": 7,
+        "degree_in_sign": 1.508953,
+        "is_retrograde": false,
+        "speed": 1.008185
+      },
+      "Moon": {
+        "longitude": 51.152588,
+        "sign_index": 1,
+        "degree_in_sign": 21.152588,
+        "is_retrograde": false,
+        "speed": 10.80168
+      },
+      "Mars": {
+        "longitude": 163.655602,
+        "sign_index": 5,
+        "degree_in_sign": 13.655602,
+        "is_retrograde": false,
+        "speed": 0.610038
+      },
+      "Mercury": {
+        "longitude": 192.214076,
+        "sign_index": 6,
+        "degree_in_sign": 12.214076,
+        "is_retrograde": false,
+        "speed": 1.049567
+      },
+      "Jupiter": {
+        "longitude": 167.945416,
+        "sign_index": 5,
+        "degree_in_sign": 17.945416,
+        "is_retrograde": false,
+        "speed": 0.183426
+      },
+      "Venus": {
+        "longitude": 191.33652,
+        "sign_index": 6,
+        "degree_in_sign": 11.33652,
+        "is_retrograde": false,
+        "speed": 1.250149
+      },
+      "Saturn": {
+        "longitude": 161.713809,
+        "sign_index": 5,
+        "degree_in_sign": 11.713809,
+        "is_retrograde": false,
+        "speed": 0.094331
+      },
+      "Rahu": {
+        "longitude": 173.280232,
+        "sign_index": 5,
+        "degree_in_sign": 23.280232,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 353.280232,
+        "sign_index": 11,
+        "degree_in_sign": 23.280232,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

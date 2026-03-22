@@ -1,0 +1,108 @@
+{
+  "adb_id": 65093,
+  "name": "Coutant, André",
+  "given_name": "André Coutant",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417504.660174,
+    "year": 1906,
+    "month": 10,
+    "day": 21,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coutant,_André",
+  "source_notes": "Birth and death certificates in Didier Geslain archive, 'C' pdf file, pp. 266-267.\\n",
+  "categories": [
+    "Vocation : Misc. : Other Vocation Misc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.933205,
+    "lagna": 133.933205,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.555496,
+    "jd_ut": 2417504.660174,
+    "planets": {
+      "Sun": {
+        "longitude": 184.292048,
+        "sign_index": 6,
+        "degree_in_sign": 4.292048,
+        "is_retrograde": false,
+        "speed": 0.99515
+      },
+      "Moon": {
+        "longitude": 229.224143,
+        "sign_index": 7,
+        "degree_in_sign": 19.224143,
+        "is_retrograde": false,
+        "speed": 18.491393
+      },
+      "Mars": {
+        "longitude": 151.794833,
+        "sign_index": 5,
+        "degree_in_sign": 1.794833,
+        "is_retrograde": false,
+        "speed": 0.627305
+      },
+      "Mercury": {
+        "longitude": 201.325672,
+        "sign_index": 6,
+        "degree_in_sign": 21.325672,
+        "is_retrograde": false,
+        "speed": 1.461152
+      },
+      "Jupiter": {
+        "longitude": 78.387221,
+        "sign_index": 2,
+        "degree_in_sign": 18.387221,
+        "is_retrograde": false,
+        "speed": 0.02913
+      },
+      "Venus": {
+        "longitude": 225.73115,
+        "sign_index": 7,
+        "degree_in_sign": 15.73115,
+        "is_retrograde": false,
+        "speed": 0.600491
+      },
+      "Saturn": {
+        "longitude": 316.185367,
+        "sign_index": 10,
+        "degree_in_sign": 16.185367,
+        "is_retrograde": true,
+        "speed": -0.03765
+      },
+      "Rahu": {
+        "longitude": 105.055053,
+        "sign_index": 3,
+        "degree_in_sign": 15.055053,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 285.055053,
+        "sign_index": 9,
+        "degree_in_sign": 15.055053,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

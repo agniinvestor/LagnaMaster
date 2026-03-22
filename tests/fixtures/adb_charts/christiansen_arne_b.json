@@ -1,0 +1,111 @@
+{
+  "adb_id": 105031,
+  "name": "Christiansen, Arne B.",
+  "given_name": "Arne B. Christiansen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418580.875,
+    "year": 1909,
+    "month": 10,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christiansen,_Arne_B.",
+  "source_notes": "Certificate of live birth in hand from Viktor E.\\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Sports : Skiing",
+    "Notable : Awards : Medals",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 25.076656,
+    "lagna": 175.076656,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.596639,
+    "jd_ut": 2418580.875,
+    "planets": {
+      "Sun": {
+        "longitude": 164.94279,
+        "sign_index": 5,
+        "degree_in_sign": 14.94279,
+        "is_retrograde": false,
+        "speed": 0.983497
+      },
+      "Moon": {
+        "longitude": 10.319507,
+        "sign_index": 0,
+        "degree_in_sign": 10.319507,
+        "is_retrograde": false,
+        "speed": 16.54055
+      },
+      "Mars": {
+        "longitude": 336.175802,
+        "sign_index": 11,
+        "degree_in_sign": 6.175802,
+        "is_retrograde": true,
+        "speed": -0.262378
+      },
+      "Mercury": {
+        "longitude": 184.915839,
+        "sign_index": 6,
+        "degree_in_sign": 4.915839,
+        "is_retrograde": true,
+        "speed": -0.120364
+      },
+      "Jupiter": {
+        "longitude": 155.147517,
+        "sign_index": 5,
+        "degree_in_sign": 5.147517,
+        "is_retrograde": false,
+        "speed": 0.21477
+      },
+      "Venus": {
+        "longitude": 204.457352,
+        "sign_index": 6,
+        "degree_in_sign": 24.457352,
+        "is_retrograde": false,
+        "speed": 1.180703
+      },
+      "Saturn": {
+        "longitude": 358.139775,
+        "sign_index": 11,
+        "degree_in_sign": 28.139775,
+        "is_retrograde": true,
+        "speed": -0.076119
+      },
+      "Rahu": {
+        "longitude": 48.024168,
+        "sign_index": 1,
+        "degree_in_sign": 18.024168,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 228.024168,
+        "sign_index": 7,
+        "degree_in_sign": 18.024168,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

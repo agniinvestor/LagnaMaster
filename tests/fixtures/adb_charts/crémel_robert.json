@@ -1,0 +1,109 @@
+{
+  "adb_id": 65395,
+  "name": "Crémel, Robert",
+  "given_name": "Robert Crémel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422073.916667,
+    "year": 1919,
+    "month": 4,
+    "day": 25,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "d",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Blainville sur l'Eau",
+    "country": "France",
+    "lat": 48.55,
+    "lon": 6.4
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crémel,_Robert",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 83.\\n",
+  "categories": [
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Vocation : Military : Honors"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 15.390317,
+    "lagna": 75.390317,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.730179,
+    "jd_ut": 2422073.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 11.408512,
+        "sign_index": 0,
+        "degree_in_sign": 11.408512,
+        "is_retrograde": false,
+        "speed": 0.973582
+      },
+      "Moon": {
+        "longitude": 304.715574,
+        "sign_index": 10,
+        "degree_in_sign": 4.715574,
+        "is_retrograde": false,
+        "speed": 11.019958
+      },
+      "Mars": {
+        "longitude": 14.835268,
+        "sign_index": 0,
+        "degree_in_sign": 14.835268,
+        "is_retrograde": false,
+        "speed": 0.737307
+      },
+      "Mercury": {
+        "longitude": 348.412379,
+        "sign_index": 11,
+        "degree_in_sign": 18.412379,
+        "is_retrograde": false,
+        "speed": 0.285192
+      },
+      "Jupiter": {
+        "longitude": 77.303586,
+        "sign_index": 2,
+        "degree_in_sign": 17.303586,
+        "is_retrograde": false,
+        "speed": 0.146404
+      },
+      "Venus": {
+        "longitude": 46.924941,
+        "sign_index": 1,
+        "degree_in_sign": 16.924941,
+        "is_retrograde": false,
+        "speed": 1.183812
+      },
+      "Saturn": {
+        "longitude": 118.619565,
+        "sign_index": 3,
+        "degree_in_sign": 28.619565,
+        "is_retrograde": false,
+        "speed": 0.002712
+      },
+      "Rahu": {
+        "longitude": 222.920571,
+        "sign_index": 7,
+        "degree_in_sign": 12.920571,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 42.920571,
+        "sign_index": 1,
+        "degree_in_sign": 12.920571,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 67991,
+  "name": "Cléris, Hervé",
+  "given_name": "Hervé Cléris",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432673.847222,
+    "year": 1948,
+    "month": 5,
+    "day": 2,
+    "calendar": "g",
+    "time": "09:20",
+    "time_type": "s",
+    "hour": 9.333333,
+    "time_unknown": false,
+    "place": "Plozévet",
+    "country": "France",
+    "lat": 47.9875,
+    "lon": -4.423889
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cléris,_Hervé",
+  "source_notes": "Didier Geslain archive, 'navigateurs' pdf file, p. 13.\\n",
+  "categories": [
+    "Vocation : Sports : Sailing/ Boating"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 22.10854,
+    "lagna": 52.10854,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.135453,
+    "jd_ut": 2432673.847222,
+    "planets": {
+      "Sun": {
+        "longitude": 18.696861,
+        "sign_index": 0,
+        "degree_in_sign": 18.696861,
+        "is_retrograde": false,
+        "speed": 0.969745
+      },
+      "Moon": {
+        "longitude": 300.815138,
+        "sign_index": 10,
+        "degree_in_sign": 0.815138,
+        "is_retrograde": false,
+        "speed": 8.516741
+      },
+      "Mars": {
+        "longitude": 120.867831,
+        "sign_index": 4,
+        "degree_in_sign": 0.867831,
+        "is_retrograde": false,
+        "speed": 0.314695
+      },
+      "Mercury": {
+        "longitude": 22.392696,
+        "sign_index": 0,
+        "degree_in_sign": 22.392696,
+        "is_retrograde": false,
+        "speed": 2.159727
+      },
+      "Jupiter": {
+        "longitude": 245.362633,
+        "sign_index": 8,
+        "degree_in_sign": 5.362633,
+        "is_retrograde": true,
+        "speed": -0.052097
+      },
+      "Venus": {
+        "longitude": 63.036228,
+        "sign_index": 2,
+        "degree_in_sign": 3.036228,
+        "is_retrograde": false,
+        "speed": 0.801221
+      },
+      "Saturn": {
+        "longitude": 112.830074,
+        "sign_index": 3,
+        "degree_in_sign": 22.830074,
+        "is_retrograde": false,
+        "speed": 0.026914
+      },
+      "Rahu": {
+        "longitude": 21.208253,
+        "sign_index": 0,
+        "degree_in_sign": 21.208253,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 201.208253,
+        "sign_index": 6,
+        "degree_in_sign": 21.208253,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 48198,
+  "name": "Carrière, Eugène",
+  "given_name": "Eugène Carrière",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2396409.11787,
+    "year": 1849,
+    "month": 1,
+    "day": 16,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Gournay sur Marne",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.566667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrière,_Eugène",
+  "source_notes": "Gauquelin  Vol 4/194\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Education : Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 25.872011,
+    "lagna": 55.872011,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.749136,
+    "jd_ut": 2396409.11787,
+    "planets": {
+      "Sun": {
+        "longitude": 274.698217,
+        "sign_index": 9,
+        "degree_in_sign": 4.698217,
+        "is_retrograde": false,
+        "speed": 1.018083
+      },
+      "Moon": {
+        "longitude": 188.119613,
+        "sign_index": 6,
+        "degree_in_sign": 8.119613,
+        "is_retrograde": false,
+        "speed": 14.076497
+      },
+      "Mars": {
+        "longitude": 246.273257,
+        "sign_index": 8,
+        "degree_in_sign": 6.273257,
+        "is_retrograde": false,
+        "speed": 0.733623
+      },
+      "Mercury": {
+        "longitude": 279.753058,
+        "sign_index": 9,
+        "degree_in_sign": 9.753058,
+        "is_retrograde": false,
+        "speed": 1.699698
+      },
+      "Jupiter": {
+        "longitude": 118.414551,
+        "sign_index": 3,
+        "degree_in_sign": 28.414551,
+        "is_retrograde": true,
+        "speed": -0.112314
+      },
+      "Venus": {
+        "longitude": 316.739665,
+        "sign_index": 10,
+        "degree_in_sign": 16.739665,
+        "is_retrograde": false,
+        "speed": 1.178334
+      },
+      "Saturn": {
+        "longitude": 329.420819,
+        "sign_index": 10,
+        "degree_in_sign": 29.420819,
+        "is_retrograde": false,
+        "speed": 0.088203
+      },
+      "Rahu": {
+        "longitude": 142.952746,
+        "sign_index": 4,
+        "degree_in_sign": 22.952746,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 322.952746,
+        "sign_index": 10,
+        "degree_in_sign": 22.952746,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

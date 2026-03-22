@@ -1,0 +1,113 @@
+{
+  "adb_id": 67846,
+  "name": "Celestial: Jupiter-Uranus Conjunction, 1789",
+  "given_name": "1789 Celestial: Jupiter-Uranus Conjunction",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2374659.177778,
+    "year": 1789,
+    "month": 6,
+    "day": 29,
+    "calendar": "g",
+    "time": "16:16",
+    "time_type": "u",
+    "hour": 16.266667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celestial:_Jupiter-Uranus_Conjunction,_1789",
+  "source_notes": "Astro.com (exact time of conjunction).\\n",
+  "categories": [
+    "Lifestyle : Social Life : Groups",
+    "Personal : Death : Other Death",
+    "Vocation : Politics : Activist/ political",
+    "Notable : Famous : Historic figure",
+    "Mundane : Disasters : Deranged Actions",
+    "Mundane : Political : Battles"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.117281,
+    "lagna": 192.117281,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.917977,
+    "jd_ut": 2374659.177778,
+    "planets": {
+      "Sun": {
+        "longitude": 77.272015,
+        "sign_index": 2,
+        "degree_in_sign": 17.272015,
+        "is_retrograde": false,
+        "speed": 0.953237
+      },
+      "Moon": {
+        "longitude": 163.370484,
+        "sign_index": 5,
+        "degree_in_sign": 13.370484,
+        "is_retrograde": false,
+        "speed": 10.692393
+      },
+      "Mars": {
+        "longitude": 36.887553,
+        "sign_index": 1,
+        "degree_in_sign": 6.887553,
+        "is_retrograde": false,
+        "speed": 0.708767
+      },
+      "Mercury": {
+        "longitude": 97.766254,
+        "sign_index": 3,
+        "degree_in_sign": 7.766254,
+        "is_retrograde": false,
+        "speed": 0.154851
+      },
+      "Jupiter": {
+        "longitude": 102.562934,
+        "sign_index": 3,
+        "degree_in_sign": 12.562934,
+        "is_retrograde": false,
+        "speed": 0.209234
+      },
+      "Venus": {
+        "longitude": 85.330397,
+        "sign_index": 2,
+        "degree_in_sign": 25.330397,
+        "is_retrograde": false,
+        "speed": 1.22864
+      },
+      "Saturn": {
+        "longitude": 332.327893,
+        "sign_index": 11,
+        "degree_in_sign": 2.327893,
+        "is_retrograde": false,
+        "speed": 0.007137
+      },
+      "Rahu": {
+        "longitude": 215.52959,
+        "sign_index": 7,
+        "degree_in_sign": 5.52959,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 35.52959,
+        "sign_index": 1,
+        "degree_in_sign": 5.52959,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

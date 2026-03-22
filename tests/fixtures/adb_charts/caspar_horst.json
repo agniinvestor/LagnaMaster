@@ -1,0 +1,108 @@
+{
+  "adb_id": 56574,
+  "name": "Caspar, Horst",
+  "given_name": "Horst Caspar",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419787.739583,
+    "year": 1913,
+    "month": 1,
+    "day": 20,
+    "calendar": "g",
+    "time": "06:45",
+    "time_type": "s",
+    "hour": 6.75,
+    "time_unknown": false,
+    "place": "Radegast",
+    "country": "Germany",
+    "lat": 51.65,
+    "lon": 12.083333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caspar,_Horst",
+  "source_notes": "Arno Müller, vol 2\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 18.550413,
+    "lagna": 228.550413,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.642777,
+    "jd_ut": 2419787.739583,
+    "planets": {
+      "Sun": {
+        "longitude": 276.951876,
+        "sign_index": 9,
+        "degree_in_sign": 6.951876,
+        "is_retrograde": false,
+        "speed": 1.017354
+      },
+      "Moon": {
+        "longitude": 62.942186,
+        "sign_index": 2,
+        "degree_in_sign": 2.942186,
+        "is_retrograde": false,
+        "speed": 17.029672
+      },
+      "Mars": {
+        "longitude": 254.564966,
+        "sign_index": 8,
+        "degree_in_sign": 14.564966,
+        "is_retrograde": false,
+        "speed": 0.748487
+      },
+      "Mercury": {
+        "longitude": 261.972076,
+        "sign_index": 8,
+        "degree_in_sign": 21.972076,
+        "is_retrograde": false,
+        "speed": 1.513778
+      },
+      "Jupiter": {
+        "longitude": 251.239504,
+        "sign_index": 8,
+        "degree_in_sign": 11.239504,
+        "is_retrograde": false,
+        "speed": 0.217716
+      },
+      "Venus": {
+        "longitude": 322.27092,
+        "sign_index": 10,
+        "degree_in_sign": 22.27092,
+        "is_retrograde": false,
+        "speed": 1.12597
+      },
+      "Saturn": {
+        "longitude": 34.590422,
+        "sign_index": 1,
+        "degree_in_sign": 4.590422,
+        "is_retrograde": true,
+        "speed": -0.016006
+      },
+      "Rahu": {
+        "longitude": 344.069881,
+        "sign_index": 11,
+        "degree_in_sign": 14.069881,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 164.069881,
+        "sign_index": 5,
+        "degree_in_sign": 14.069881,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

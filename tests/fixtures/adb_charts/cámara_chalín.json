@@ -1,0 +1,112 @@
+{
+  "adb_id": 86650,
+  "name": "Cámara, Chalín",
+  "given_name": "Chalín Cámara",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416904.967685,
+    "year": 1905,
+    "month": 2,
+    "day": 28,
+    "calendar": "g",
+    "time": "05:15",
+    "time_type": "l",
+    "hour": 5.25,
+    "time_unknown": false,
+    "place": "Mérida (Yucatan)",
+    "country": "Mexico",
+    "lat": 20.966667,
+    "lon": -89.616667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cámara,_Chalín",
+  "source_notes": "Sy Scholfield provided birth registry entry from Yucatán state archives.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 2.744185,
+    "lagna": 272.744185,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.532571,
+    "jd_ut": 2416904.967685,
+    "planets": {
+      "Sun": {
+        "longitude": 316.682118,
+        "sign_index": 10,
+        "degree_in_sign": 16.682118,
+        "is_retrograde": false,
+        "speed": 1.003783
+      },
+      "Moon": {
+        "longitude": 252.275231,
+        "sign_index": 8,
+        "degree_in_sign": 12.275231,
+        "is_retrograde": false,
+        "speed": 8.598562
+      },
+      "Mars": {
+        "longitude": 206.787157,
+        "sign_index": 6,
+        "degree_in_sign": 26.787157,
+        "is_retrograde": false,
+        "speed": 0.31393
+      },
+      "Mercury": {
+        "longitude": 308.429461,
+        "sign_index": 10,
+        "degree_in_sign": 8.429461,
+        "is_retrograde": false,
+        "speed": 1.764453
+      },
+      "Jupiter": {
+        "longitude": 6.006279,
+        "sign_index": 0,
+        "degree_in_sign": 6.006279,
+        "is_retrograde": false,
+        "speed": 0.195121
+      },
+      "Venus": {
+        "longitude": 2.583578,
+        "sign_index": 0,
+        "degree_in_sign": 2.583578,
+        "is_retrograde": false,
+        "speed": 0.883428
+      },
+      "Saturn": {
+        "longitude": 302.809444,
+        "sign_index": 10,
+        "degree_in_sign": 2.809444,
+        "is_retrograde": false,
+        "speed": 0.118407
+      },
+      "Rahu": {
+        "longitude": 136.83402,
+        "sign_index": 4,
+        "degree_in_sign": 16.83402,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 316.83402,
+        "sign_index": 10,
+        "degree_in_sign": 16.83402,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

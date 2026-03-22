@@ -1,0 +1,110 @@
+{
+  "adb_id": 50735,
+  "name": "Camm, Frank Ambler",
+  "given_name": "Frank Ambler Camm",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423127.708333,
+    "year": 1922,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Fort Knox",
+    "country": "Kentucky",
+    "lat": 37.9,
+    "lon": -85.95
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camm,_Frank_Ambler",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Engineer : Civil",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 10.958468,
+    "lagna": 190.958468,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.770467,
+    "jd_ut": 2423127.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 330.06819,
+        "sign_index": 11,
+        "degree_in_sign": 0.06819,
+        "is_retrograde": false,
+        "speed": 0.996206
+      },
+      "Moon": {
+        "longitude": 161.094774,
+        "sign_index": 5,
+        "degree_in_sign": 11.094774,
+        "is_retrograde": false,
+        "speed": 10.968034
+      },
+      "Mars": {
+        "longitude": 228.366688,
+        "sign_index": 7,
+        "degree_in_sign": 18.366688,
+        "is_retrograde": false,
+        "speed": 0.433301
+      },
+      "Mercury": {
+        "longitude": 302.599929,
+        "sign_index": 10,
+        "degree_in_sign": 2.599929,
+        "is_retrograde": false,
+        "speed": 1.061452
+      },
+      "Jupiter": {
+        "longitude": 173.834545,
+        "sign_index": 5,
+        "degree_in_sign": 23.834545,
+        "is_retrograde": true,
+        "speed": -0.108066
+      },
+      "Venus": {
+        "longitude": 338.136582,
+        "sign_index": 11,
+        "degree_in_sign": 8.136582,
+        "is_retrograde": false,
+        "speed": 1.244807
+      },
+      "Saturn": {
+        "longitude": 162.372123,
+        "sign_index": 5,
+        "degree_in_sign": 12.372123,
+        "is_retrograde": true,
+        "speed": -0.075444
+      },
+      "Rahu": {
+        "longitude": 167.07795,
+        "sign_index": 5,
+        "degree_in_sign": 17.07795,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 347.07795,
+        "sign_index": 11,
+        "degree_in_sign": 17.07795,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

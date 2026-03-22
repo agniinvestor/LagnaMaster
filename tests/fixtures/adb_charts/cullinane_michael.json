@@ -1,0 +1,109 @@
+{
+  "adb_id": 38599,
+  "name": "Cullinane, Michael",
+  "given_name": "Michael Cullinane",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436664.040278,
+    "year": 1959,
+    "month": 4,
+    "day": 5,
+    "calendar": "g",
+    "time": "07:58",
+    "time_type": "s",
+    "hour": 7.966667,
+    "time_unknown": false,
+    "place": "Winchester",
+    "country": "Massachusetts",
+    "lat": 42.45,
+    "lon": -71.133333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cullinane,_Michael",
+  "source_notes": "Frances McEvoy quotes B.C.\\n",
+  "categories": [
+    "Personal : Death : Accidental",
+    "Personal : Death : Short Life less than 29 Yrs"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 23.114385,
+    "lagna": 23.114385,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.288025,
+    "jd_ut": 2436664.040278,
+    "planets": {
+      "Sun": {
+        "longitude": 351.707528,
+        "sign_index": 11,
+        "degree_in_sign": 21.707528,
+        "is_retrograde": false,
+        "speed": 0.984763
+      },
+      "Moon": {
+        "longitude": 322.685779,
+        "sign_index": 10,
+        "degree_in_sign": 22.685779,
+        "is_retrograde": false,
+        "speed": 8.954704
+      },
+      "Mars": {
+        "longitude": 63.998089,
+        "sign_index": 2,
+        "degree_in_sign": 3.998089,
+        "is_retrograde": false,
+        "speed": 0.554581
+      },
+      "Mercury": {
+        "longitude": 339.25805,
+        "sign_index": 11,
+        "degree_in_sign": 9.25805,
+        "is_retrograde": true,
+        "speed": -0.572439
+      },
+      "Jupiter": {
+        "longitude": 218.221175,
+        "sign_index": 7,
+        "degree_in_sign": 8.221175,
+        "is_retrograde": true,
+        "speed": -0.053957
+      },
+      "Venus": {
+        "longitude": 25.574704,
+        "sign_index": 0,
+        "degree_in_sign": 25.574704,
+        "is_retrograde": false,
+        "speed": 1.19831
+      },
+      "Saturn": {
+        "longitude": 253.673962,
+        "sign_index": 8,
+        "degree_in_sign": 13.673962,
+        "is_retrograde": false,
+        "speed": 0.01828
+      },
+      "Rahu": {
+        "longitude": 169.759717,
+        "sign_index": 5,
+        "degree_in_sign": 19.759717,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 349.759717,
+        "sign_index": 11,
+        "degree_in_sign": 19.759717,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

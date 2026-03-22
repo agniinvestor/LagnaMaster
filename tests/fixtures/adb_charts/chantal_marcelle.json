@@ -1,0 +1,109 @@
+{
+  "adb_id": 79497,
+  "name": "Chantal, Marcelle",
+  "given_name": "Marcelle Chantal",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415425.222674,
+    "year": 1901,
+    "month": 2,
+    "day": 9,
+    "calendar": "g",
+    "time": "17:30",
+    "time_type": "s",
+    "hour": 17.5,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 9",
+    "country": "France",
+    "lat": 48.8725,
+    "lon": 2.340278
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chantal,_Marcelle",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 9.96791,
+    "lagna": 99.96791,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.476002,
+    "jd_ut": 2415425.222674,
+    "planets": {
+      "Sun": {
+        "longitude": 297.821821,
+        "sign_index": 9,
+        "degree_in_sign": 27.821821,
+        "is_retrograde": false,
+        "speed": 1.011711
+      },
+      "Moon": {
+        "longitude": 186.093632,
+        "sign_index": 6,
+        "degree_in_sign": 6.093632,
+        "is_retrograde": false,
+        "speed": 15.068963
+      },
+      "Mars": {
+        "longitude": 135.208309,
+        "sign_index": 4,
+        "degree_in_sign": 15.208309,
+        "is_retrograde": true,
+        "speed": -0.337886
+      },
+      "Mercury": {
+        "longitude": 311.491972,
+        "sign_index": 10,
+        "degree_in_sign": 11.491972,
+        "is_retrograde": false,
+        "speed": 1.717047
+      },
+      "Jupiter": {
+        "longitude": 251.871077,
+        "sign_index": 8,
+        "degree_in_sign": 11.871077,
+        "is_retrograde": false,
+        "speed": 0.19126
+      },
+      "Venus": {
+        "longitude": 277.739731,
+        "sign_index": 9,
+        "degree_in_sign": 7.739731,
+        "is_retrograde": false,
+        "speed": 1.246885
+      },
+      "Saturn": {
+        "longitude": 259.675074,
+        "sign_index": 8,
+        "degree_in_sign": 19.675074,
+        "is_retrograde": false,
+        "speed": 0.101124
+      },
+      "Rahu": {
+        "longitude": 215.248826,
+        "sign_index": 7,
+        "degree_in_sign": 5.248826,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 35.248826,
+        "sign_index": 1,
+        "degree_in_sign": 5.248826,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "adb_id": 3139,
+  "name": "Case, Paul Foster",
+  "given_name": "Paul Foster Case",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2409453.166667,
+    "year": 1884,
+    "month": 10,
+    "day": 3,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Fairport",
+    "country": "New York",
+    "lat": 43.1,
+    "lon": -77.45
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Case,_Paul_Foster",
+  "source_notes": "Rudhyar quotes him for 11:00 AM.  (Sabian Symbols No.180 gives 6:00 AM).\\n\\nHis Wikipedia bio has \"5:28 p.m.\", no source given.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Personal : Birth : Unusual circumstances",
+    "Vocation : Occult Fields : Tarot / I Ching",
+    "Vocation : Religion : Spiritual Leader/ Guru",
+    "Vocation : Writers : Astrology",
+    "Notable : Book Collection : Occult/ Misc. Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 21.324628,
+    "lagna": 201.324628,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.24771,
+    "jd_ut": 2409453.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 168.588973,
+        "sign_index": 5,
+        "degree_in_sign": 18.588973,
+        "is_retrograde": false,
+        "speed": 0.985602
+      },
+      "Moon": {
+        "longitude": 331.98975,
+        "sign_index": 11,
+        "degree_in_sign": 1.98975,
+        "is_retrograde": false,
+        "speed": 17.765156
+      },
+      "Mars": {
+        "longitude": 201.976402,
+        "sign_index": 6,
+        "degree_in_sign": 21.976402,
+        "is_retrograde": false,
+        "speed": 0.69416
+      },
+      "Mercury": {
+        "longitude": 150.815814,
+        "sign_index": 5,
+        "degree_in_sign": 0.815814,
+        "is_retrograde": false,
+        "speed": 0.793205
+      },
+      "Jupiter": {
+        "longitude": 125.1912,
+        "sign_index": 4,
+        "degree_in_sign": 5.1912,
+        "is_retrograde": false,
+        "speed": 0.185604
+      },
+      "Venus": {
+        "longitude": 122.964905,
+        "sign_index": 4,
+        "degree_in_sign": 2.964905,
+        "is_retrograde": false,
+        "speed": 1.055472
+      },
+      "Saturn": {
+        "longitude": 61.98432,
+        "sign_index": 2,
+        "degree_in_sign": 1.98432,
+        "is_retrograde": false,
+        "speed": 0.004421
+      },
+      "Rahu": {
+        "longitude": 171.720703,
+        "sign_index": 5,
+        "degree_in_sign": 21.720703,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 351.720703,
+        "sign_index": 11,
+        "degree_in_sign": 21.720703,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

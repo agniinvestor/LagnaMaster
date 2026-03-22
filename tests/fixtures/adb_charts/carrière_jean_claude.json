@@ -1,0 +1,116 @@
+{
+  "adb_id": 71590,
+  "name": "Carrière, Jean-Claude",
+  "given_name": "Jean-Claude Carrière",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426603.916667,
+    "year": 1931,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "d",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Colombières-sur-Orb",
+    "country": "France",
+    "lat": 43.581111,
+    "lon": 3.010556
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrière,_Jean-Claude",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes from Xavier Ego's \"Recueil de 4200 personnalités\"\\nde Jabrun quoted bc\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Awards : Oscar",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 0.428653,
+    "lagna": 180.428653,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.903371,
+    "jd_ut": 2426603.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 152.599307,
+        "sign_index": 5,
+        "degree_in_sign": 2.599307,
+        "is_retrograde": false,
+        "speed": 0.976757
+      },
+      "Moon": {
+        "longitude": 249.962377,
+        "sign_index": 8,
+        "degree_in_sign": 9.962377,
+        "is_retrograde": false,
+        "speed": 15.212344
+      },
+      "Mars": {
+        "longitude": 188.476699,
+        "sign_index": 6,
+        "degree_in_sign": 8.476699,
+        "is_retrograde": false,
+        "speed": 0.672986
+      },
+      "Mercury": {
+        "longitude": 134.924865,
+        "sign_index": 4,
+        "degree_in_sign": 14.924865,
+        "is_retrograde": false,
+        "speed": 0.761429
+      },
+      "Jupiter": {
+        "longitude": 110.757409,
+        "sign_index": 3,
+        "degree_in_sign": 20.757409,
+        "is_retrograde": false,
+        "speed": 0.190186
+      },
+      "Venus": {
+        "longitude": 155.631665,
+        "sign_index": 5,
+        "degree_in_sign": 5.631665,
+        "is_retrograde": false,
+        "speed": 1.244881
+      },
+      "Saturn": {
+        "longitude": 263.748559,
+        "sign_index": 8,
+        "degree_in_sign": 23.748559,
+        "is_retrograde": true,
+        "speed": -0.004011
+      },
+      "Rahu": {
+        "longitude": 342.866433,
+        "sign_index": 11,
+        "degree_in_sign": 12.866433,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 162.866433,
+        "sign_index": 5,
+        "degree_in_sign": 12.866433,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

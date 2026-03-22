@@ -1,0 +1,110 @@
+{
+  "adb_id": 69148,
+  "name": "Courchay, Claude",
+  "given_name": "Claude Courchay",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427381.958333,
+    "year": 1933,
+    "month": 11,
+    "day": 5,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Dakar",
+    "country": "Senegal",
+    "lat": 14.666667,
+    "lon": -17.433333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courchay,_Claude",
+  "source_notes": "Didier Geslain archive, 'romans noirs (religion3)' pdf file, p. 34.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Writers : Fiction",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 18.99623,
+    "lagna": 228.99623,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.933118,
+    "jd_ut": 2427381.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 199.651417,
+        "sign_index": 6,
+        "degree_in_sign": 19.651417,
+        "is_retrograde": false,
+        "speed": 1.002746
+      },
+      "Moon": {
+        "longitude": 53.812121,
+        "sign_index": 1,
+        "degree_in_sign": 23.812121,
+        "is_retrograde": false,
+        "speed": 14.125819
+      },
+      "Mars": {
+        "longitude": 236.679538,
+        "sign_index": 7,
+        "degree_in_sign": 26.679538,
+        "is_retrograde": false,
+        "speed": 0.742648
+      },
+      "Mercury": {
+        "longitude": 221.262227,
+        "sign_index": 7,
+        "degree_in_sign": 11.262227,
+        "is_retrograde": false,
+        "speed": 0.378208
+      },
+      "Jupiter": {
+        "longitude": 169.014333,
+        "sign_index": 5,
+        "degree_in_sign": 19.014333,
+        "is_retrograde": false,
+        "speed": 0.200351
+      },
+      "Venus": {
+        "longitude": 245.732061,
+        "sign_index": 8,
+        "degree_in_sign": 5.732061,
+        "is_retrograde": false,
+        "speed": 1.103387
+      },
+      "Saturn": {
+        "longitude": 287.181124,
+        "sign_index": 9,
+        "degree_in_sign": 17.181124,
+        "is_retrograde": false,
+        "speed": 0.036441
+      },
+      "Rahu": {
+        "longitude": 301.63639,
+        "sign_index": 10,
+        "degree_in_sign": 1.63639,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 121.63639,
+        "sign_index": 4,
+        "degree_in_sign": 1.63639,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

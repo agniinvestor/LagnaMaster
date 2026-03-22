@@ -1,0 +1,112 @@
+{
+  "adb_id": 98341,
+  "name": "Caruso, Chico",
+  "given_name": "Chico Caruso",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433256.892361,
+    "year": 1949,
+    "month": 12,
+    "day": 6,
+    "calendar": "g",
+    "time": "07:25",
+    "time_type": "d",
+    "hour": 7.416667,
+    "time_unknown": false,
+    "place": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5525,
+    "lon": -46.624722
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caruso,_Chico",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Personal : Birth : Twin, triplet, etc.",
+    "Vocation : Art : Cartoonist",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Writers : Humor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.014032,
+    "lagna": 224.014032,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.157746,
+    "jd_ut": 2433256.892361,
+    "planets": {
+      "Sun": {
+        "longitude": 230.780142,
+        "sign_index": 7,
+        "degree_in_sign": 20.780142,
+        "is_retrograde": false,
+        "speed": 1.014983
+      },
+      "Moon": {
+        "longitude": 58.621573,
+        "sign_index": 1,
+        "degree_in_sign": 28.621573,
+        "is_retrograde": false,
+        "speed": 12.215025
+      },
+      "Mars": {
+        "longitude": 148.125336,
+        "sign_index": 4,
+        "degree_in_sign": 28.125336,
+        "is_retrograde": false,
+        "speed": 0.476032
+      },
+      "Mercury": {
+        "longitude": 238.780676,
+        "sign_index": 7,
+        "degree_in_sign": 28.780676,
+        "is_retrograde": false,
+        "speed": 1.558803
+      },
+      "Jupiter": {
+        "longitude": 277.912138,
+        "sign_index": 9,
+        "degree_in_sign": 7.912138,
+        "is_retrograde": false,
+        "speed": 0.196487
+      },
+      "Venus": {
+        "longitude": 276.964864,
+        "sign_index": 9,
+        "degree_in_sign": 6.964864,
+        "is_retrograde": false,
+        "speed": 0.874343
+      },
+      "Saturn": {
+        "longitude": 145.766926,
+        "sign_index": 4,
+        "degree_in_sign": 25.766926,
+        "is_retrograde": false,
+        "speed": 0.042826
+      },
+      "Rahu": {
+        "longitude": 350.311489,
+        "sign_index": 11,
+        "degree_in_sign": 20.311489,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 170.311489,
+        "sign_index": 5,
+        "degree_in_sign": 20.311489,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

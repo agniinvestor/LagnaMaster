@@ -1,0 +1,109 @@
+{
+  "adb_id": 3050,
+  "name": "Churchill, Vernita",
+  "given_name": "Vernita Churchill",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2408560.8875,
+    "year": 1882,
+    "month": 4,
+    "day": 25,
+    "calendar": "g",
+    "time": "09:18",
+    "time_type": "s",
+    "hour": 9.3,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Churchill,_Vernita",
+  "source_notes": "AA 10/1977 obit\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 6.66199,
+    "lagna": 66.66199,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.213603,
+    "jd_ut": 2408560.8875,
+    "planets": {
+      "Sun": {
+        "longitude": 12.827312,
+        "sign_index": 0,
+        "degree_in_sign": 12.827312,
+        "is_retrograde": false,
+        "speed": 0.972582
+      },
+      "Moon": {
+        "longitude": 104.496806,
+        "sign_index": 3,
+        "degree_in_sign": 14.496806,
+        "is_retrograde": false,
+        "speed": 14.284629
+      },
+      "Mars": {
+        "longitude": 91.054224,
+        "sign_index": 3,
+        "degree_in_sign": 1.054224,
+        "is_retrograde": false,
+        "speed": 0.50095
+      },
+      "Mercury": {
+        "longitude": 5.013333,
+        "sign_index": 0,
+        "degree_in_sign": 5.013333,
+        "is_retrograde": false,
+        "speed": 2.026693
+      },
+      "Jupiter": {
+        "longitude": 38.511466,
+        "sign_index": 1,
+        "degree_in_sign": 8.511466,
+        "is_retrograde": false,
+        "speed": 0.222851
+      },
+      "Venus": {
+        "longitude": 28.754356,
+        "sign_index": 0,
+        "degree_in_sign": 28.754356,
+        "is_retrograde": false,
+        "speed": 1.228956
+      },
+      "Saturn": {
+        "longitude": 22.039456,
+        "sign_index": 0,
+        "degree_in_sign": 22.039456,
+        "is_retrograde": false,
+        "speed": 0.127468
+      },
+      "Rahu": {
+        "longitude": 219.00447,
+        "sign_index": 7,
+        "degree_in_sign": 9.00447,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 39.00447,
+        "sign_index": 1,
+        "degree_in_sign": 9.00447,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 6340,
+  "name": "Conjoined Twins: Dodgson",
+  "given_name": "Conjoined Twins: Dodgson",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2425224.8125,
+    "year": 1927,
+    "month": 12,
+    "day": 10,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "s",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Derby",
+    "country": "England",
+    "lat": 52.916667,
+    "lon": -1.5
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Dodgson",
+  "source_notes": "A correspondent quotes news in AQ Spring/1928\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Surgery",
+    "Personal : Birth : Conjoined twins",
+    "Personal : Birth : Infant mortality",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 23.134863,
+    "lagna": 203.134863,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.850644,
+    "jd_ut": 2425224.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 234.39972,
+        "sign_index": 7,
+        "degree_in_sign": 24.39972,
+        "is_retrograde": false,
+        "speed": 1.015888
+      },
+      "Moon": {
+        "longitude": 75.146318,
+        "sign_index": 2,
+        "degree_in_sign": 15.146318,
+        "is_retrograde": false,
+        "speed": 14.414217
+      },
+      "Mars": {
+        "longitude": 218.464031,
+        "sign_index": 7,
+        "degree_in_sign": 8.464031,
+        "is_retrograde": false,
+        "speed": 0.707209
+      },
+      "Mercury": {
+        "longitude": 218.503235,
+        "sign_index": 7,
+        "degree_in_sign": 8.503235,
+        "is_retrograde": false,
+        "speed": 1.471943
+      },
+      "Jupiter": {
+        "longitude": 331.484354,
+        "sign_index": 11,
+        "degree_in_sign": 1.484354,
+        "is_retrograde": false,
+        "speed": 0.069045
+      },
+      "Venus": {
+        "longitude": 188.730026,
+        "sign_index": 6,
+        "degree_in_sign": 8.730026,
+        "is_retrograde": false,
+        "speed": 1.11296
+      },
+      "Saturn": {
+        "longitude": 228.151838,
+        "sign_index": 7,
+        "degree_in_sign": 18.151838,
+        "is_retrograde": false,
+        "speed": 0.118112
+      },
+      "Rahu": {
+        "longitude": 55.94803,
+        "sign_index": 1,
+        "degree_in_sign": 25.94803,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 235.94803,
+        "sign_index": 7,
+        "degree_in_sign": 25.94803,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

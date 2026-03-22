@@ -1,0 +1,108 @@
+{
+  "adb_id": 93722,
+  "name": "Carlier, Richard",
+  "given_name": "Richard Carlier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424976.833333,
+    "year": 1927,
+    "month": 4,
+    "day": 6,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Chapelle-lez-Herlaimont",
+    "country": "Belgium",
+    "lat": 50.466667,
+    "lon": 4.283333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlier,_Richard",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_po_politique-2.pdf].\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 4.163204,
+    "lagna": 34.163204,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.841163,
+    "jd_ut": 2424976.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 352.692815,
+        "sign_index": 11,
+        "degree_in_sign": 22.692815,
+        "is_retrograde": false,
+        "speed": 0.984131
+      },
+      "Moon": {
+        "longitude": 50.297906,
+        "sign_index": 1,
+        "degree_in_sign": 20.297906,
+        "is_retrograde": false,
+        "speed": 15.613108
+      },
+      "Mars": {
+        "longitude": 60.956372,
+        "sign_index": 2,
+        "degree_in_sign": 0.956372,
+        "is_retrograde": false,
+        "speed": 0.574664
+      },
+      "Mercury": {
+        "longitude": 325.408176,
+        "sign_index": 10,
+        "degree_in_sign": 25.408176,
+        "is_retrograde": false,
+        "speed": 0.781336
+      },
+      "Jupiter": {
+        "longitude": 325.528557,
+        "sign_index": 10,
+        "degree_in_sign": 25.528557,
+        "is_retrograde": false,
+        "speed": 0.227844
+      },
+      "Venus": {
+        "longitude": 24.600164,
+        "sign_index": 0,
+        "degree_in_sign": 24.600164,
+        "is_retrograde": false,
+        "speed": 1.205527
+      },
+      "Saturn": {
+        "longitude": 224.524292,
+        "sign_index": 7,
+        "degree_in_sign": 14.524292,
+        "is_retrograde": true,
+        "speed": -0.031351
+      },
+      "Rahu": {
+        "longitude": 69.088962,
+        "sign_index": 2,
+        "degree_in_sign": 9.088962,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 249.088962,
+        "sign_index": 8,
+        "degree_in_sign": 9.088962,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 105005,
+  "name": "Capelle, Jean",
+  "given_name": "Jean Capelle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420066.541667,
+    "year": 1913,
+    "month": 10,
+    "day": 26,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Liège",
+    "country": "Belgium",
+    "lat": 50.633333,
+    "lon": 5.566667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capelle,_Jean",
+  "source_notes": "Grazia Bordoni database quotes ?\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 19.362308,
+    "lagna": 109.362308,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.653436,
+    "jd_ut": 2420066.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 189.358333,
+        "sign_index": 6,
+        "degree_in_sign": 9.358333,
+        "is_retrograde": false,
+        "speed": 0.997922
+      },
+      "Moon": {
+        "longitude": 140.81874,
+        "sign_index": 4,
+        "degree_in_sign": 20.81874,
+        "is_retrograde": false,
+        "speed": 15.713806
+      },
+      "Mars": {
+        "longitude": 85.957566,
+        "sign_index": 2,
+        "degree_in_sign": 25.957566,
+        "is_retrograde": false,
+        "speed": 0.341308
+      },
+      "Mercury": {
+        "longitude": 211.76405,
+        "sign_index": 7,
+        "degree_in_sign": 1.76405,
+        "is_retrograde": false,
+        "speed": 1.25108
+      },
+      "Jupiter": {
+        "longitude": 259.292488,
+        "sign_index": 8,
+        "degree_in_sign": 19.292488,
+        "is_retrograde": false,
+        "speed": 0.144162
+      },
+      "Venus": {
+        "longitude": 163.262943,
+        "sign_index": 5,
+        "degree_in_sign": 13.262943,
+        "is_retrograde": false,
+        "speed": 1.237098
+      },
+      "Saturn": {
+        "longitude": 54.950258,
+        "sign_index": 1,
+        "degree_in_sign": 24.950258,
+        "is_retrograde": true,
+        "speed": -0.044406
+      },
+      "Rahu": {
+        "longitude": 329.295574,
+        "sign_index": 10,
+        "degree_in_sign": 29.295574,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 149.295574,
+        "sign_index": 4,
+        "degree_in_sign": 29.295574,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

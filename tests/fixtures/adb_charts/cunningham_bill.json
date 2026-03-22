@@ -1,0 +1,111 @@
+{
+  "adb_id": 97450,
+  "name": "Cunningham, Bill",
+  "given_name": "Bill Cunningham",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433305.009722,
+    "year": 1950,
+    "month": 1,
+    "day": 23,
+    "calendar": "g",
+    "time": "06:14",
+    "time_type": "s",
+    "hour": 6.233333,
+    "time_unknown": false,
+    "place": "Memphis",
+    "country": "Tennessee",
+    "lat": 35.15,
+    "lon": -90.05
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cunningham,_Bill",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Memphis Press-Scimitar'' (Memphis, Tennessee), 24 January 1950, page 16, born at Methodist Hospital. \\n",
+  "categories": [
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Awards : Hall of Fame"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 1.137238,
+    "lagna": 241.137238,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.159586,
+    "jd_ut": 2433305.009722,
+    "planets": {
+      "Sun": {
+        "longitude": 279.77705,
+        "sign_index": 9,
+        "degree_in_sign": 9.77705,
+        "is_retrograde": false,
+        "speed": 1.017313
+      },
+      "Moon": {
+        "longitude": 340.814433,
+        "sign_index": 11,
+        "degree_in_sign": 10.814433,
+        "is_retrograde": false,
+        "speed": 15.545221
+      },
+      "Mars": {
+        "longitude": 165.697975,
+        "sign_index": 5,
+        "degree_in_sign": 15.697975,
+        "is_retrograde": false,
+        "speed": 0.209241
+      },
+      "Mercury": {
+        "longitude": 267.213608,
+        "sign_index": 8,
+        "degree_in_sign": 27.213608,
+        "is_retrograde": true,
+        "speed": -0.828618
+      },
+      "Jupiter": {
+        "longitude": 288.571437,
+        "sign_index": 9,
+        "degree_in_sign": 18.571437,
+        "is_retrograde": false,
+        "speed": 0.237059
+      },
+      "Venus": {
+        "longitude": 292.183744,
+        "sign_index": 9,
+        "degree_in_sign": 22.183744,
+        "is_retrograde": true,
+        "speed": -0.50174
+      },
+      "Saturn": {
+        "longitude": 145.750019,
+        "sign_index": 4,
+        "degree_in_sign": 25.750019,
+        "is_retrograde": true,
+        "speed": -0.042709
+      },
+      "Rahu": {
+        "longitude": 347.761651,
+        "sign_index": 11,
+        "degree_in_sign": 17.761651,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 167.761651,
+        "sign_index": 5,
+        "degree_in_sign": 17.761651,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

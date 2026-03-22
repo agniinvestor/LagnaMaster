@@ -1,0 +1,113 @@
+{
+  "adb_id": 100719,
+  "name": "Charles Manners, 6th Duke of Rutland",
+  "given_name": "6th Duke of Rutland Charles Manners",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2384110.29213,
+    "year": 1815,
+    "month": 5,
+    "day": 16,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_Manners,_6th_Duke_of_Rutland",
+  "source_notes": "Sy Scholfield quotes birth news, ''Leicester Chronicle'', 20 May 1815, page 4; ''The Leeds Intelligencer and Yorkshire General Advertiser'', 22 May 1815, page 3; born in Grosvenor-street, London. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Married late/never",
+    "Family : Parenting : Kids none",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 5.562058,
+    "lagna": 185.562058,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.279118,
+    "jd_ut": 2384110.29213,
+    "planets": {
+      "Sun": {
+        "longitude": 33.70709,
+        "sign_index": 1,
+        "degree_in_sign": 3.70709,
+        "is_retrograde": false,
+        "speed": 0.962637
+      },
+      "Moon": {
+        "longitude": 132.860653,
+        "sign_index": 4,
+        "degree_in_sign": 12.860653,
+        "is_retrograde": false,
+        "speed": 10.636153
+      },
+      "Mars": {
+        "longitude": 311.405397,
+        "sign_index": 10,
+        "degree_in_sign": 11.405397,
+        "is_retrograde": false,
+        "speed": 0.689286
+      },
+      "Mercury": {
+        "longitude": 27.468916,
+        "sign_index": 0,
+        "degree_in_sign": 27.468916,
+        "is_retrograde": false,
+        "speed": 2.118705
+      },
+      "Jupiter": {
+        "longitude": 159.199924,
+        "sign_index": 5,
+        "degree_in_sign": 9.199924,
+        "is_retrograde": true,
+        "speed": -0.034913
+      },
+      "Venus": {
+        "longitude": 67.452257,
+        "sign_index": 2,
+        "degree_in_sign": 7.452257,
+        "is_retrograde": false,
+        "speed": 1.187557
+      },
+      "Saturn": {
+        "longitude": 291.017164,
+        "sign_index": 9,
+        "degree_in_sign": 21.017164,
+        "is_retrograde": false,
+        "speed": 0.010582
+      },
+      "Rahu": {
+        "longitude": 74.694239,
+        "sign_index": 2,
+        "degree_in_sign": 14.694239,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 254.694239,
+        "sign_index": 8,
+        "degree_in_sign": 14.694239,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

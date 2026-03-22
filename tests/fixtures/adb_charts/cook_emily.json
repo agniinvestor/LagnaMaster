@@ -1,0 +1,110 @@
+{
+  "adb_id": 19642,
+  "name": "Cook, Emily",
+  "given_name": "Emily Cook",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444056.25,
+    "year": 1979,
+    "month": 7,
+    "day": 1,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "d",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Boston",
+    "country": "Massachusetts",
+    "lat": 42.366667,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cook,_Emily",
+  "source_notes": "Frances McEvoy quotes B.C.\\n",
+  "categories": [
+    "Family : Childhood : Family extraordinarily supportive",
+    "Vocation : Sports : Skiing",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 4.772488,
+    "lagna": 154.772488,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.5707,
+    "jd_ut": 2444056.25,
+    "planets": {
+      "Sun": {
+        "longitude": 75.734815,
+        "sign_index": 2,
+        "degree_in_sign": 15.734815,
+        "is_retrograde": false,
+        "speed": 0.953438
+      },
+      "Moon": {
+        "longitude": 156.656898,
+        "sign_index": 5,
+        "degree_in_sign": 6.656898,
+        "is_retrograde": false,
+        "speed": 10.177813
+      },
+      "Mars": {
+        "longitude": 40.460111,
+        "sign_index": 1,
+        "degree_in_sign": 10.460111,
+        "is_retrograde": false,
+        "speed": 0.707523
+      },
+      "Mercury": {
+        "longitude": 101.514346,
+        "sign_index": 3,
+        "degree_in_sign": 11.514346,
+        "is_retrograde": false,
+        "speed": 1.066807
+      },
+      "Jupiter": {
+        "longitude": 107.356358,
+        "sign_index": 3,
+        "degree_in_sign": 17.356358,
+        "is_retrograde": false,
+        "speed": 0.20208
+      },
+      "Venus": {
+        "longitude": 60.780061,
+        "sign_index": 2,
+        "degree_in_sign": 0.780061,
+        "is_retrograde": false,
+        "speed": 1.220712
+      },
+      "Saturn": {
+        "longitude": 135.825135,
+        "sign_index": 4,
+        "degree_in_sign": 15.825135,
+        "is_retrograde": false,
+        "speed": 0.082188
+      },
+      "Rahu": {
+        "longitude": 138.031429,
+        "sign_index": 4,
+        "degree_in_sign": 18.031429,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 318.031429,
+        "sign_index": 10,
+        "degree_in_sign": 18.031429,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

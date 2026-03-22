@@ -1,0 +1,108 @@
+{
+  "adb_id": 6304,
+  "name": "Clark, Donald",
+  "given_name": "Donald Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2425132.609722,
+    "year": 1927,
+    "month": 9,
+    "day": 8,
+    "calendar": "g",
+    "time": "22:38",
+    "time_type": "d",
+    "hour": 22.633333,
+    "time_unknown": false,
+    "place": "Englewood",
+    "country": "New Jersey",
+    "lat": 40.9,
+    "lon": -73.966667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Donald",
+  "source_notes": "Astrological Pioneers of America file\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 18.379974,
+    "lagna": 18.379974,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.847119,
+    "jd_ut": 2425132.609722,
+    "planets": {
+      "Sun": {
+        "longitude": 142.583998,
+        "sign_index": 4,
+        "degree_in_sign": 22.583998,
+        "is_retrograde": false,
+        "speed": 0.971088
+      },
+      "Moon": {
+        "longitude": 289.077559,
+        "sign_index": 9,
+        "degree_in_sign": 19.077559,
+        "is_retrograde": false,
+        "speed": 9.746459
+      },
+      "Mars": {
+        "longitude": 156.196871,
+        "sign_index": 5,
+        "degree_in_sign": 6.196871,
+        "is_retrograde": false,
+        "speed": 0.64576
+      },
+      "Mercury": {
+        "longitude": 148.417449,
+        "sign_index": 4,
+        "degree_in_sign": 28.417449,
+        "is_retrograde": false,
+        "speed": 1.809837
+      },
+      "Jupiter": {
+        "longitude": 337.415257,
+        "sign_index": 11,
+        "degree_in_sign": 7.415257,
+        "is_retrograde": true,
+        "speed": -0.124808
+      },
+      "Venus": {
+        "longitude": 145.181146,
+        "sign_index": 4,
+        "degree_in_sign": 25.181146,
+        "is_retrograde": true,
+        "speed": -0.613387
+      },
+      "Saturn": {
+        "longitude": 219.117854,
+        "sign_index": 7,
+        "degree_in_sign": 9.117854,
+        "is_retrograde": false,
+        "speed": 0.053496
+      },
+      "Rahu": {
+        "longitude": 60.834047,
+        "sign_index": 2,
+        "degree_in_sign": 0.834047,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 240.834047,
+        "sign_index": 8,
+        "degree_in_sign": 0.834047,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

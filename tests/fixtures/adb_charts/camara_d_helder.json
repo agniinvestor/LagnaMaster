@@ -1,0 +1,110 @@
+{
+  "adb_id": 47741,
+  "name": "Camara, D. Helder",
+  "given_name": "D. Helder Camara",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2418345.523731,
+    "year": 1909,
+    "month": 2,
+    "day": 7,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Fortaleza (Ceará)",
+    "country": "Brazil",
+    "lat": -3.717222,
+    "lon": -38.543056
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camara,_D._Helder",
+  "source_notes": "Marcello Borges quotes his biography.\\n",
+  "categories": [
+    "Traits : Personality : Loved by all",
+    "Passions : Sexuality : Celibacy/ Minimal",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 4.30973,
+    "lagna": 154.30973,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.587642,
+    "jd_ut": 2418345.523731,
+    "planets": {
+      "Sun": {
+        "longitude": 296.046969,
+        "sign_index": 9,
+        "degree_in_sign": 26.046969,
+        "is_retrograde": false,
+        "speed": 1.012167
+      },
+      "Moon": {
+        "longitude": 145.95553,
+        "sign_index": 4,
+        "degree_in_sign": 25.95553,
+        "is_retrograde": false,
+        "speed": 9.325552
+      },
+      "Mars": {
+        "longitude": 236.650407,
+        "sign_index": 7,
+        "degree_in_sign": 26.650407,
+        "is_retrograde": false,
+        "speed": 0.668858
+      },
+      "Mercury": {
+        "longitude": 303.453405,
+        "sign_index": 10,
+        "degree_in_sign": 3.453405,
+        "is_retrograde": true,
+        "speed": -0.901946
+      },
+      "Jupiter": {
+        "longitude": 139.576656,
+        "sign_index": 4,
+        "degree_in_sign": 19.576656,
+        "is_retrograde": true,
+        "speed": -0.110958
+      },
+      "Venus": {
+        "longitude": 276.163756,
+        "sign_index": 9,
+        "degree_in_sign": 6.163756,
+        "is_retrograde": false,
+        "speed": 1.247284
+      },
+      "Saturn": {
+        "longitude": 344.135574,
+        "sign_index": 11,
+        "degree_in_sign": 14.135574,
+        "is_retrograde": false,
+        "speed": 0.097458
+      },
+      "Rahu": {
+        "longitude": 60.495926,
+        "sign_index": 2,
+        "degree_in_sign": 0.495926,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 240.495926,
+        "sign_index": 8,
+        "degree_in_sign": 0.495926,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

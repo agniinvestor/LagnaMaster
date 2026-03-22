@@ -1,0 +1,112 @@
+{
+  "adb_id": 58166,
+  "name": "Carter, John",
+  "given_name": "John Carter",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425878.958333,
+    "year": 1929,
+    "month": 9,
+    "day": 24,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Fort Worth",
+    "country": "Texas",
+    "lat": 32.733333,
+    "lon": -97.316667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carter,_John",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz",
+    "Notable : Awards : Hall of Fame"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 27.642607,
+    "lagna": 117.642607,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.875654,
+    "jd_ut": 2425878.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 158.030858,
+        "sign_index": 5,
+        "degree_in_sign": 8.030858,
+        "is_retrograde": false,
+        "speed": 0.979707
+      },
+      "Moon": {
+        "longitude": 46.667056,
+        "sign_index": 1,
+        "degree_in_sign": 16.667056,
+        "is_retrograde": false,
+        "speed": 8.936257
+      },
+      "Mars": {
+        "longitude": 179.019025,
+        "sign_index": 5,
+        "degree_in_sign": 29.019025,
+        "is_retrograde": false,
+        "speed": 0.666835
+      },
+      "Mercury": {
+        "longitude": 180.395933,
+        "sign_index": 6,
+        "degree_in_sign": 0.395933,
+        "is_retrograde": false,
+        "speed": 0.140701
+      },
+      "Jupiter": {
+        "longitude": 53.332675,
+        "sign_index": 1,
+        "degree_in_sign": 23.332675,
+        "is_retrograde": false,
+        "speed": 0.036338
+      },
+      "Venus": {
+        "longitude": 125.656942,
+        "sign_index": 4,
+        "degree_in_sign": 5.656942,
+        "is_retrograde": false,
+        "speed": 1.20711
+      },
+      "Saturn": {
+        "longitude": 241.584378,
+        "sign_index": 8,
+        "degree_in_sign": 1.584378,
+        "is_retrograde": false,
+        "speed": 0.04212
+      },
+      "Rahu": {
+        "longitude": 21.283482,
+        "sign_index": 0,
+        "degree_in_sign": 21.283482,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 201.283482,
+        "sign_index": 6,
+        "degree_in_sign": 21.283482,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

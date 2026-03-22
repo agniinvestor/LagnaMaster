@@ -1,0 +1,109 @@
+{
+  "adb_id": 65022,
+  "name": "Clévenot, Philippe",
+  "given_name": "Philippe Clévenot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430613.052083,
+    "year": 1942,
+    "month": 9,
+    "day": 10,
+    "calendar": "g",
+    "time": "15:15",
+    "time_type": "d",
+    "hour": 15.25,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clévenot,_Philippe",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 179.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 27.165529,
+    "lagna": 207.165529,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.056657,
+    "jd_ut": 2430613.052083,
+    "planets": {
+      "Sun": {
+        "longitude": 144.138459,
+        "sign_index": 4,
+        "degree_in_sign": 24.138459,
+        "is_retrograde": false,
+        "speed": 0.972601
+      },
+      "Moon": {
+        "longitude": 142.849795,
+        "sign_index": 4,
+        "degree_in_sign": 22.849795,
+        "is_retrograde": false,
+        "speed": 9.821054
+      },
+      "Mars": {
+        "longitude": 152.508164,
+        "sign_index": 5,
+        "degree_in_sign": 2.508164,
+        "is_retrograde": false,
+        "speed": 0.644145
+      },
+      "Mercury": {
+        "longitude": 170.220692,
+        "sign_index": 5,
+        "degree_in_sign": 20.220692,
+        "is_retrograde": false,
+        "speed": 1.157643
+      },
+      "Jupiter": {
+        "longitude": 86.38921,
+        "sign_index": 2,
+        "degree_in_sign": 26.38921,
+        "is_retrograde": false,
+        "speed": 0.165825
+      },
+      "Venus": {
+        "longitude": 126.874504,
+        "sign_index": 4,
+        "degree_in_sign": 6.874504,
+        "is_retrograde": false,
+        "speed": 1.234082
+      },
+      "Saturn": {
+        "longitude": 49.272994,
+        "sign_index": 1,
+        "degree_in_sign": 19.272994,
+        "is_retrograde": false,
+        "speed": 0.026527
+      },
+      "Rahu": {
+        "longitude": 130.414041,
+        "sign_index": 4,
+        "degree_in_sign": 10.414041,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 310.414041,
+        "sign_index": 10,
+        "degree_in_sign": 10.414041,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

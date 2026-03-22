@@ -1,0 +1,109 @@
+{
+  "adb_id": 879,
+  "name": "Conneau-Symours, Edouard",
+  "given_name": "Edouard Conneau-Symours",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416229.910174,
+    "year": 1903,
+    "month": 4,
+    "day": 25,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Alger",
+    "country": "Algeria",
+    "lat": 36.783333,
+    "lon": 3.05
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conneau-Symours,_Edouard",
+  "source_notes": "Sy Scholfield provided birth certificate, born at 10 AM in Mustapha, Algiers.\\nLescaut quotes L'Astrologue 14 for B.R. (9:00 AM Paris time). \\nExtract from birth certificate in Didier Geslain archive, 'astrologues3' pdf file, p. 22, states 15:00 (3pm) in Mustapha. This was the time (3pm) that the birth was registered.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 4.028995,
+    "lagna": 64.028995,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.506764,
+    "jd_ut": 2416229.910174,
+    "planets": {
+      "Sun": {
+        "longitude": 11.507377,
+        "sign_index": 0,
+        "degree_in_sign": 11.507377,
+        "is_retrograde": false,
+        "speed": 0.973688
+      },
+      "Moon": {
+        "longitude": 344.260061,
+        "sign_index": 11,
+        "degree_in_sign": 14.260061,
+        "is_retrograde": false,
+        "speed": 8.889392
+      },
+      "Mars": {
+        "longitude": 156.258204,
+        "sign_index": 5,
+        "degree_in_sign": 6.258204,
+        "is_retrograde": true,
+        "speed": -0.187794
+      },
+      "Mercury": {
+        "longitude": 24.977626,
+        "sign_index": 0,
+        "degree_in_sign": 24.977626,
+        "is_retrograde": false,
+        "speed": 1.935188
+      },
+      "Jupiter": {
+        "longitude": 321.951751,
+        "sign_index": 10,
+        "degree_in_sign": 21.951751,
+        "is_retrograde": false,
+        "speed": 0.195664
+      },
+      "Venus": {
+        "longitude": 46.002258,
+        "sign_index": 1,
+        "degree_in_sign": 16.002258,
+        "is_retrograde": false,
+        "speed": 1.189023
+      },
+      "Saturn": {
+        "longitude": 286.305704,
+        "sign_index": 9,
+        "degree_in_sign": 16.305704,
+        "is_retrograde": false,
+        "speed": 0.040182
+      },
+      "Rahu": {
+        "longitude": 172.606739,
+        "sign_index": 5,
+        "degree_in_sign": 22.606739,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 352.606739,
+        "sign_index": 11,
+        "degree_in_sign": 22.606739,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

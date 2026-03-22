@@ -1,0 +1,108 @@
+{
+  "adb_id": 65275,
+  "name": "Colin, Armand",
+  "given_name": "Armand Colin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2394078.551481,
+    "year": 1842,
+    "month": 8,
+    "day": 31,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "l",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Tonnerre",
+    "country": "France",
+    "lat": 47.85,
+    "lon": 3.966667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colin,_Armand",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'éditeurs' pdf file, p. 10.\\n",
+  "categories": [
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 11.423122,
+    "lagna": 71.423122,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.660065,
+    "jd_ut": 2394078.551481,
+    "planets": {
+      "Sun": {
+        "longitude": 135.520391,
+        "sign_index": 4,
+        "degree_in_sign": 15.520391,
+        "is_retrograde": false,
+        "speed": 0.968249
+      },
+      "Moon": {
+        "longitude": 69.455967,
+        "sign_index": 2,
+        "degree_in_sign": 9.455967,
+        "is_retrograde": false,
+        "speed": 13.723928
+      },
+      "Mars": {
+        "longitude": 115.096632,
+        "sign_index": 3,
+        "degree_in_sign": 25.096632,
+        "is_retrograde": false,
+        "speed": 0.63593
+      },
+      "Mercury": {
+        "longitude": 142.266009,
+        "sign_index": 4,
+        "degree_in_sign": 22.266009,
+        "is_retrograde": false,
+        "speed": 1.831855
+      },
+      "Jupiter": {
+        "longitude": 261.306805,
+        "sign_index": 8,
+        "degree_in_sign": 21.306805,
+        "is_retrograde": true,
+        "speed": -0.029579
+      },
+      "Venus": {
+        "longitude": 178.560116,
+        "sign_index": 5,
+        "degree_in_sign": 28.560116,
+        "is_retrograde": false,
+        "speed": 1.129268
+      },
+      "Saturn": {
+        "longitude": 256.27565,
+        "sign_index": 8,
+        "degree_in_sign": 16.27565,
+        "is_retrograde": true,
+        "speed": -0.019726
+      },
+      "Rahu": {
+        "longitude": 266.454493,
+        "sign_index": 8,
+        "degree_in_sign": 26.454493,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 86.454493,
+        "sign_index": 2,
+        "degree_in_sign": 26.454493,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

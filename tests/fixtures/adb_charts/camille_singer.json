@@ -1,0 +1,108 @@
+{
+  "adb_id": 63743,
+  "name": "Camille (singer)",
+  "given_name": "Camille (singer)",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443577.895833,
+    "year": 1978,
+    "month": 3,
+    "day": 10,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "s",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 14",
+    "country": "France",
+    "lat": 48.833056,
+    "lon": 2.326667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camille_(singer)",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 24.778017,
+    "lagna": 24.778017,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.552407,
+    "jd_ut": 2443577.895833,
+    "planets": {
+      "Sun": {
+        "longitude": 325.901638,
+        "sign_index": 10,
+        "degree_in_sign": 25.901638,
+        "is_retrograde": false,
+        "speed": 0.999314
+      },
+      "Moon": {
+        "longitude": 342.515406,
+        "sign_index": 11,
+        "degree_in_sign": 12.515406,
+        "is_retrograde": false,
+        "speed": 11.462482
+      },
+      "Mars": {
+        "longitude": 89.10211,
+        "sign_index": 2,
+        "degree_in_sign": 29.10211,
+        "is_retrograde": false,
+        "speed": 0.093356
+      },
+      "Mercury": {
+        "longitude": 336.233479,
+        "sign_index": 11,
+        "degree_in_sign": 6.233479,
+        "is_retrograde": false,
+        "speed": 1.91709
+      },
+      "Jupiter": {
+        "longitude": 63.068753,
+        "sign_index": 2,
+        "degree_in_sign": 3.068753,
+        "is_retrograde": false,
+        "speed": 0.05903
+      },
+      "Venus": {
+        "longitude": 337.329931,
+        "sign_index": 11,
+        "degree_in_sign": 7.329931,
+        "is_retrograde": false,
+        "speed": 1.245035
+      },
+      "Saturn": {
+        "longitude": 121.860704,
+        "sign_index": 4,
+        "degree_in_sign": 1.860704,
+        "is_retrograde": true,
+        "speed": -0.070122
+      },
+      "Rahu": {
+        "longitude": 163.380389,
+        "sign_index": 5,
+        "degree_in_sign": 13.380389,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 343.380389,
+        "sign_index": 11,
+        "degree_in_sign": 13.380389,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

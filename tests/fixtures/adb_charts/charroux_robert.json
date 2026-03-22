@@ -1,0 +1,108 @@
+{
+  "adb_id": 47849,
+  "name": "Charroux, Robert",
+  "given_name": "Robert Charroux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418403.841424,
+    "year": 1909,
+    "month": 4,
+    "day": 7,
+    "calendar": "g",
+    "time": "08:21",
+    "time_type": "s",
+    "hour": 8.35,
+    "time_unknown": false,
+    "place": "Charroux",
+    "country": "France",
+    "lat": 46.15,
+    "lon": 0.4
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charroux,_Robert",
+  "source_notes": "Gauquelin quotes B.C. Vol 3/0317.\\n",
+  "categories": [
+    "Vocation : Writers : Sci-Fi/ Fantasy/ Horror"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 0.087863,
+    "lagna": 30.087863,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.589871,
+    "jd_ut": 2418403.841424,
+    "planets": {
+      "Sun": {
+        "longitude": 354.287028,
+        "sign_index": 11,
+        "degree_in_sign": 24.287028,
+        "is_retrograde": false,
+        "speed": 0.98248
+      },
+      "Moon": {
+        "longitude": 190.410385,
+        "sign_index": 6,
+        "degree_in_sign": 10.410385,
+        "is_retrograde": false,
+        "speed": 12.903612
+      },
+      "Mars": {
+        "longitude": 275.736911,
+        "sign_index": 9,
+        "degree_in_sign": 5.736911,
+        "is_retrograde": false,
+        "speed": 0.667454
+      },
+      "Mercury": {
+        "longitude": 339.70067,
+        "sign_index": 11,
+        "degree_in_sign": 9.70067,
+        "is_retrograde": false,
+        "speed": 1.799581
+      },
+      "Jupiter": {
+        "longitude": 132.842363,
+        "sign_index": 4,
+        "degree_in_sign": 12.842363,
+        "is_retrograde": true,
+        "speed": -0.072599
+      },
+      "Venus": {
+        "longitude": 348.729565,
+        "sign_index": 11,
+        "degree_in_sign": 18.729565,
+        "is_retrograde": false,
+        "speed": 1.238936
+      },
+      "Saturn": {
+        "longitude": 350.962024,
+        "sign_index": 11,
+        "degree_in_sign": 20.962024,
+        "is_retrograde": false,
+        "speed": 0.125664
+      },
+      "Rahu": {
+        "longitude": 57.405549,
+        "sign_index": 1,
+        "degree_in_sign": 27.405549,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 237.405549,
+        "sign_index": 7,
+        "degree_in_sign": 27.405549,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

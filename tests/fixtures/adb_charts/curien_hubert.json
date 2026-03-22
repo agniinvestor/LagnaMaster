@@ -1,0 +1,109 @@
+{
+  "adb_id": 68163,
+  "name": "Curien, Hubert",
+  "given_name": "Hubert Curien",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424089.375,
+    "year": 1924,
+    "month": 10,
+    "day": 30,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Cornimont",
+    "country": "France",
+    "lat": 47.963889,
+    "lon": 6.839722
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curien,_Hubert",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'politique a-f' pdf file, p. 10.\\n",
+  "categories": [
+    "Vocation : Politics : Public office",
+    "Vocation : Science : Physics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 8.765732,
+    "lagna": 68.765732,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.807234,
+    "jd_ut": 2424089.375,
+    "planets": {
+      "Sun": {
+        "longitude": 194.365396,
+        "sign_index": 6,
+        "degree_in_sign": 14.365396,
+        "is_retrograde": false,
+        "speed": 1.00069
+      },
+      "Moon": {
+        "longitude": 229.642092,
+        "sign_index": 7,
+        "degree_in_sign": 19.642092,
+        "is_retrograde": false,
+        "speed": 15.954681
+      },
+      "Mars": {
+        "longitude": 311.241483,
+        "sign_index": 10,
+        "degree_in_sign": 11.241483,
+        "is_retrograde": false,
+        "speed": 0.40719
+      },
+      "Mercury": {
+        "longitude": 197.371983,
+        "sign_index": 6,
+        "degree_in_sign": 17.371983,
+        "is_retrograde": false,
+        "speed": 1.612691
+      },
+      "Jupiter": {
+        "longitude": 236.708516,
+        "sign_index": 7,
+        "degree_in_sign": 26.708516,
+        "is_retrograde": false,
+        "speed": 0.19542
+      },
+      "Venus": {
+        "longitude": 153.958089,
+        "sign_index": 5,
+        "degree_in_sign": 3.958089,
+        "is_retrograde": false,
+        "speed": 1.179669
+      },
+      "Saturn": {
+        "longitude": 192.591039,
+        "sign_index": 6,
+        "degree_in_sign": 12.591039,
+        "is_retrograde": false,
+        "speed": 0.120769
+      },
+      "Rahu": {
+        "longitude": 116.117228,
+        "sign_index": 3,
+        "degree_in_sign": 26.117228,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 296.117228,
+        "sign_index": 9,
+        "degree_in_sign": 26.117228,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

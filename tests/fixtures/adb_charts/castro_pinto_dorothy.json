@@ -1,0 +1,108 @@
+{
+  "adb_id": 71293,
+  "name": "Castro Pinto, Dorothy",
+  "given_name": "Dorothy Castro Pinto",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420364.441817,
+    "year": 1914,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "San José",
+    "country": "Costa Rica",
+    "lat": 9.933333,
+    "lon": -84.083333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro_Pinto,_Dorothy",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Writers : Children's literature"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 21.290454,
+    "lagna": 261.290454,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.664825,
+    "jd_ut": 2420364.441817,
+    "planets": {
+      "Sun": {
+        "longitude": 123.401537,
+        "sign_index": 4,
+        "degree_in_sign": 3.401537,
+        "is_retrograde": false,
+        "speed": 0.963053
+      },
+      "Moon": {
+        "longitude": 101.992644,
+        "sign_index": 3,
+        "degree_in_sign": 11.992644,
+        "is_retrograde": false,
+        "speed": 14.732494
+      },
+      "Mars": {
+        "longitude": 160.729402,
+        "sign_index": 5,
+        "degree_in_sign": 10.729402,
+        "is_retrograde": false,
+        "speed": 0.637273
+      },
+      "Mercury": {
+        "longitude": 112.439111,
+        "sign_index": 3,
+        "degree_in_sign": 22.439111,
+        "is_retrograde": false,
+        "speed": 1.939726
+      },
+      "Jupiter": {
+        "longitude": 293.511175,
+        "sign_index": 9,
+        "degree_in_sign": 23.511175,
+        "is_retrograde": true,
+        "speed": -0.12693
+      },
+      "Venus": {
+        "longitude": 167.537353,
+        "sign_index": 5,
+        "degree_in_sign": 17.537353,
+        "is_retrograde": false,
+        "speed": 1.099593
+      },
+      "Saturn": {
+        "longitude": 66.912913,
+        "sign_index": 2,
+        "degree_in_sign": 6.912913,
+        "is_retrograde": false,
+        "speed": 0.090684
+      },
+      "Rahu": {
+        "longitude": 313.509221,
+        "sign_index": 10,
+        "degree_in_sign": 13.509221,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 133.509221,
+        "sign_index": 4,
+        "degree_in_sign": 13.509221,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

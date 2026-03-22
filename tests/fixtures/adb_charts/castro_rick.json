@@ -1,0 +1,109 @@
+{
+  "adb_id": 54400,
+  "name": "Castro, Rick",
+  "given_name": "Rick Castro",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2436405.25,
+    "year": 1958,
+    "month": 7,
+    "day": 20,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "d",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro,_Rick",
+  "source_notes": "Sy Scholfield quotes from the autobiographical chronology in his book, \"13 Years of Bondage: The Photography of Rick Castro\" (Los Angeles: Fluxion, 2004).\\n",
+  "categories": [
+    "Vocation : Art : Photography",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.237501,
+    "lagna": 133.237501,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.27813,
+    "jd_ut": 2436405.25,
+    "planets": {
+      "Sun": {
+        "longitude": 94.219342,
+        "sign_index": 3,
+        "degree_in_sign": 4.219342,
+        "is_retrograde": false,
+        "speed": 0.954701
+      },
+      "Moon": {
+        "longitude": 147.464711,
+        "sign_index": 4,
+        "degree_in_sign": 27.464711,
+        "is_retrograde": false,
+        "speed": 13.493348
+      },
+      "Mars": {
+        "longitude": 6.374587,
+        "sign_index": 0,
+        "degree_in_sign": 6.374587,
+        "is_retrograde": false,
+        "speed": 0.634888
+      },
+      "Mercury": {
+        "longitude": 120.481426,
+        "sign_index": 4,
+        "degree_in_sign": 0.481426,
+        "is_retrograde": false,
+        "speed": 1.220135
+      },
+      "Jupiter": {
+        "longitude": 179.924996,
+        "sign_index": 5,
+        "degree_in_sign": 29.924996,
+        "is_retrograde": false,
+        "speed": 0.088821
+      },
+      "Venus": {
+        "longitude": 64.95153,
+        "sign_index": 2,
+        "degree_in_sign": 4.95153,
+        "is_retrograde": false,
+        "speed": 1.1969
+      },
+      "Saturn": {
+        "longitude": 236.720592,
+        "sign_index": 7,
+        "degree_in_sign": 26.720592,
+        "is_retrograde": true,
+        "speed": -0.050377
+      },
+      "Rahu": {
+        "longitude": 183.473545,
+        "sign_index": 6,
+        "degree_in_sign": 3.473545,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 3.473545,
+        "sign_index": 0,
+        "degree_in_sign": 3.473545,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

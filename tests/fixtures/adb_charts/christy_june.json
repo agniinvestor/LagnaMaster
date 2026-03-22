@@ -1,0 +1,110 @@
+{
+  "adb_id": 92120,
+  "name": "Christy, June",
+  "given_name": "June Christy",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424475.34375,
+    "year": 1925,
+    "month": 11,
+    "day": 20,
+    "calendar": "g",
+    "time": "14:15",
+    "time_type": "s",
+    "hour": 14.25,
+    "time_unknown": false,
+    "place": "Springfield",
+    "country": "Illinois",
+    "lat": 39.8,
+    "lon": -89.65
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christy,_June",
+  "source_notes": "Stephen Przybylowski quotes birth certificate. \\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Kidney",
+    "Vocation : Entertain/Music : Jazz",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 20.192668,
+    "lagna": 320.192668,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.82199,
+    "jd_ut": 2424475.34375,
+    "planets": {
+      "Sun": {
+        "longitude": 215.189061,
+        "sign_index": 7,
+        "degree_in_sign": 5.189061,
+        "is_retrograde": false,
+        "speed": 1.01028
+      },
+      "Moon": {
+        "longitude": 275.8412,
+        "sign_index": 9,
+        "degree_in_sign": 5.8412,
+        "is_retrograde": false,
+        "speed": 10.025078
+      },
+      "Mars": {
+        "longitude": 192.021036,
+        "sign_index": 6,
+        "degree_in_sign": 12.021036,
+        "is_retrograde": false,
+        "speed": 0.668036
+      },
+      "Mercury": {
+        "longitude": 237.012877,
+        "sign_index": 7,
+        "degree_in_sign": 27.012877,
+        "is_retrograde": false,
+        "speed": 1.106461
+      },
+      "Jupiter": {
+        "longitude": 267.338544,
+        "sign_index": 8,
+        "degree_in_sign": 27.338544,
+        "is_retrograde": false,
+        "speed": 0.18519
+      },
+      "Venus": {
+        "longitude": 262.243787,
+        "sign_index": 8,
+        "degree_in_sign": 22.243787,
+        "is_retrograde": false,
+        "speed": 1.054599
+      },
+      "Saturn": {
+        "longitude": 205.498152,
+        "sign_index": 6,
+        "degree_in_sign": 25.498152,
+        "is_retrograde": false,
+        "speed": 0.118762
+      },
+      "Rahu": {
+        "longitude": 95.663939,
+        "sign_index": 3,
+        "degree_in_sign": 5.663939,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 275.663939,
+        "sign_index": 9,
+        "degree_in_sign": 5.663939,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

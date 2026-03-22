@@ -1,0 +1,112 @@
+{
+  "adb_id": 100167,
+  "name": "Crioulo, Comandante",
+  "given_name": "Comandante Crioulo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430969.770833,
+    "year": 1943,
+    "month": 9,
+    "day": 2,
+    "calendar": "g",
+    "time": "03:30",
+    "time_type": "s",
+    "hour": 3.5,
+    "time_unknown": false,
+    "place": "Recife (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.053889,
+    "lon": -34.881111
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crioulo,_Comandante",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Passions : Criminal Victim : Assault/ Battery victim",
+    "Passions : Criminal Victim : Homicide victim",
+    "Passions : Criminal Victim : Torture victim",
+    "Vocation : Military : Other Military",
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 21.925047,
+    "lagna": 81.925047,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.070296,
+    "jd_ut": 2430969.770833,
+    "planets": {
+      "Sun": {
+        "longitude": 135.855115,
+        "sign_index": 4,
+        "degree_in_sign": 15.855115,
+        "is_retrograde": false,
+        "speed": 0.968427
+      },
+      "Moon": {
+        "longitude": 163.483773,
+        "sign_index": 5,
+        "degree_in_sign": 13.483773,
+        "is_retrograde": false,
+        "speed": 16.381607
+      },
+      "Mars": {
+        "longitude": 41.969046,
+        "sign_index": 1,
+        "degree_in_sign": 11.969046,
+        "is_retrograde": false,
+        "speed": 0.520967
+      },
+      "Mercury": {
+        "longitude": 162.589455,
+        "sign_index": 5,
+        "degree_in_sign": 12.589455,
+        "is_retrograde": false,
+        "speed": 0.74577
+      },
+      "Jupiter": {
+        "longitude": 110.753091,
+        "sign_index": 3,
+        "degree_in_sign": 20.753091,
+        "is_retrograde": false,
+        "speed": 0.209768
+      },
+      "Venus": {
+        "longitude": 141.741343,
+        "sign_index": 4,
+        "degree_in_sign": 21.741343,
+        "is_retrograde": true,
+        "speed": -0.587772
+      },
+      "Saturn": {
+        "longitude": 62.309421,
+        "sign_index": 2,
+        "degree_in_sign": 2.309421,
+        "is_retrograde": false,
+        "speed": 0.064623
+      },
+      "Rahu": {
+        "longitude": 111.510777,
+        "sign_index": 3,
+        "degree_in_sign": 21.510777,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 291.510777,
+        "sign_index": 9,
+        "degree_in_sign": 21.510777,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

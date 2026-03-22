@@ -1,0 +1,111 @@
+{
+  "adb_id": 38705,
+  "name": "Chaban-Delmas, Jacques",
+  "given_name": "Jacques Chaban-Delmas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420564.486111,
+    "year": 1915,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "23:40",
+    "time_type": "s",
+    "hour": 23.666667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaban-Delmas,_Jacques",
+  "source_notes": "Didier Geslain quotes B.C. January 2000\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Lifestyle : Social Life : Sports",
+    "Vocation : Politics : Public office",
+    "Vocation : Sports : Rugby"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 6.749819,
+    "lagna": 186.749819,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.672473,
+    "jd_ut": 2420564.486111,
+    "planets": {
+      "Sun": {
+        "longitude": 323.652961,
+        "sign_index": 10,
+        "degree_in_sign": 23.652961,
+        "is_retrograde": false,
+        "speed": 1.000135
+      },
+      "Moon": {
+        "longitude": 227.394879,
+        "sign_index": 7,
+        "degree_in_sign": 17.394879,
+        "is_retrograde": false,
+        "speed": 14.110318
+      },
+      "Mars": {
+        "longitude": 306.103551,
+        "sign_index": 10,
+        "degree_in_sign": 6.103551,
+        "is_retrograde": false,
+        "speed": 0.786296
+      },
+      "Mercury": {
+        "longitude": 300.67201,
+        "sign_index": 10,
+        "degree_in_sign": 0.67201,
+        "is_retrograde": false,
+        "speed": 0.128758
+      },
+      "Jupiter": {
+        "longitude": 314.995989,
+        "sign_index": 10,
+        "degree_in_sign": 14.995989,
+        "is_retrograde": false,
+        "speed": 0.239816
+      },
+      "Venus": {
+        "longitude": 278.940449,
+        "sign_index": 9,
+        "degree_in_sign": 8.940449,
+        "is_retrograde": false,
+        "speed": 1.128373
+      },
+      "Saturn": {
+        "longitude": 62.782158,
+        "sign_index": 2,
+        "degree_in_sign": 2.782158,
+        "is_retrograde": false,
+        "speed": 0.018363
+      },
+      "Rahu": {
+        "longitude": 302.908454,
+        "sign_index": 10,
+        "degree_in_sign": 2.908454,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 122.908454,
+        "sign_index": 4,
+        "degree_in_sign": 2.908454,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

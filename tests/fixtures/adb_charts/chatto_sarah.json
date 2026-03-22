@@ -1,0 +1,113 @@
+{
+  "adb_id": 13982,
+  "name": "Chatto, Sarah",
+  "given_name": "Sarah Chatto",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438516.805556,
+    "year": 1964,
+    "month": 5,
+    "day": 1,
+    "calendar": "g",
+    "time": "08:20",
+    "time_type": "d",
+    "hour": 8.333333,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chatto,_Sarah",
+  "source_notes": "Roger Elliot quotes Times of 5/02/1064.\\nSy Scholfield provides the full reference: \"Daughter Born to Princess Margaret\" & \"Court Circular\" (Times, 2 May 1964, pp. 8 & 10), quoting the official bulletin board placed outside the palace.\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Number of Marriages",
+    "Vocation : Art : Fine art artist",
+    "Notable : Famous : Royal family",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 15.209645,
+    "lagna": 45.209645,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.358872,
+    "jd_ut": 2438516.805556,
+    "planets": {
+      "Sun": {
+        "longitude": 17.586652,
+        "sign_index": 0,
+        "degree_in_sign": 17.586652,
+        "is_retrograde": false,
+        "speed": 0.970106
+      },
+      "Moon": {
+        "longitude": 246.962996,
+        "sign_index": 8,
+        "degree_in_sign": 6.962996,
+        "is_retrograde": false,
+        "speed": 9.957123
+      },
+      "Mars": {
+        "longitude": 1.887254,
+        "sign_index": 0,
+        "degree_in_sign": 1.887254,
+        "is_retrograde": false,
+        "speed": 0.757072
+      },
+      "Mercury": {
+        "longitude": 11.303793,
+        "sign_index": 0,
+        "degree_in_sign": 11.303793,
+        "is_retrograde": true,
+        "speed": -0.605269
+      },
+      "Jupiter": {
+        "longitude": 11.206812,
+        "sign_index": 0,
+        "degree_in_sign": 11.206812,
+        "is_retrograde": false,
+        "speed": 0.239004
+      },
+      "Venus": {
+        "longitude": 61.288638,
+        "sign_index": 2,
+        "degree_in_sign": 1.288638,
+        "is_retrograde": false,
+        "speed": 0.750731
+      },
+      "Saturn": {
+        "longitude": 310.081783,
+        "sign_index": 10,
+        "degree_in_sign": 10.081783,
+        "is_retrograde": false,
+        "speed": 0.068811
+      },
+      "Rahu": {
+        "longitude": 71.577889,
+        "sign_index": 2,
+        "degree_in_sign": 11.577889,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 251.577889,
+        "sign_index": 8,
+        "degree_in_sign": 11.577889,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

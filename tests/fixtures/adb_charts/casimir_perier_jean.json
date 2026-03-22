@@ -1,0 +1,109 @@
+{
+  "adb_id": 47810,
+  "name": "Casimir-Perier, Jean",
+  "given_name": "Jean Casimir-Perier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2395973.826852,
+    "year": 1847,
+    "month": 11,
+    "day": 8,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casimir-Perier,_Jean",
+  "source_notes": "Gauquelin  NS Vol. 3/0268\\n",
+  "categories": [
+    "Lifestyle : Home : Same location lifetime",
+    "Vocation : Politics : Heads of state"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.25003,
+    "lagna": 192.25003,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.7325,
+    "jd_ut": 2395973.826852,
+    "planets": {
+      "Sun": {
+        "longitude": 203.585129,
+        "sign_index": 6,
+        "degree_in_sign": 23.585129,
+        "is_retrograde": false,
+        "speed": 1.005399
+      },
+      "Moon": {
+        "longitude": 206.435534,
+        "sign_index": 6,
+        "degree_in_sign": 26.435534,
+        "is_retrograde": false,
+        "speed": 10.505396
+      },
+      "Mars": {
+        "longitude": 13.006096,
+        "sign_index": 0,
+        "degree_in_sign": 13.006096,
+        "is_retrograde": true,
+        "speed": -0.305008
+      },
+      "Mercury": {
+        "longitude": 226.455381,
+        "sign_index": 7,
+        "degree_in_sign": 16.455381,
+        "is_retrograde": false,
+        "speed": 0.844811
+      },
+      "Jupiter": {
+        "longitude": 88.841842,
+        "sign_index": 2,
+        "degree_in_sign": 28.841842,
+        "is_retrograde": true,
+        "speed": -0.001243
+      },
+      "Venus": {
+        "longitude": 163.922119,
+        "sign_index": 5,
+        "degree_in_sign": 13.922119,
+        "is_retrograde": false,
+        "speed": 0.49358
+      },
+      "Saturn": {
+        "longitude": 314.465993,
+        "sign_index": 10,
+        "degree_in_sign": 14.465993,
+        "is_retrograde": true,
+        "speed": -0.003477
+      },
+      "Rahu": {
+        "longitude": 166.019756,
+        "sign_index": 5,
+        "degree_in_sign": 16.019756,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.019756,
+        "sign_index": 11,
+        "degree_in_sign": 16.019756,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

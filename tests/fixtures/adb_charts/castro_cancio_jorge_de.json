@@ -1,0 +1,109 @@
+{
+  "adb_id": 85970,
+  "name": "Castro Cancio, Jorge de",
+  "given_name": "Jorge de Castro Cancio",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410445.270324,
+    "year": 1887,
+    "month": 6,
+    "day": 22,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Papantla",
+    "country": "Mexico",
+    "lat": 20.45,
+    "lon": -97.316667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro_Cancio,_Jorge_de",
+  "source_notes": "Sy Scholfield provided birth registry entry: \"a los doce del dia\" (at twelve in the day).\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 16.01168,
+    "lagna": 136.01168,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.285634,
+    "jd_ut": 2410445.270324,
+    "planets": {
+      "Sun": {
+        "longitude": 68.672898,
+        "sign_index": 2,
+        "degree_in_sign": 8.672898,
+        "is_retrograde": false,
+        "speed": 0.954131
+      },
+      "Moon": {
+        "longitude": 85.422311,
+        "sign_index": 2,
+        "degree_in_sign": 25.422311,
+        "is_retrograde": false,
+        "speed": 8.281543
+      },
+      "Mars": {
+        "longitude": 54.257393,
+        "sign_index": 1,
+        "degree_in_sign": 24.257393,
+        "is_retrograde": false,
+        "speed": 0.691012
+      },
+      "Mercury": {
+        "longitude": 92.662062,
+        "sign_index": 3,
+        "degree_in_sign": 2.662062,
+        "is_retrograde": false,
+        "speed": 1.369089
+      },
+      "Jupiter": {
+        "longitude": 183.694878,
+        "sign_index": 6,
+        "degree_in_sign": 3.694878,
+        "is_retrograde": true,
+        "speed": -0.001445
+      },
+      "Venus": {
+        "longitude": 112.884004,
+        "sign_index": 3,
+        "degree_in_sign": 22.884004,
+        "is_retrograde": false,
+        "speed": 1.067081
+      },
+      "Saturn": {
+        "longitude": 90.469979,
+        "sign_index": 3,
+        "degree_in_sign": 0.469979,
+        "is_retrograde": false,
+        "speed": 0.123472
+      },
+      "Rahu": {
+        "longitude": 119.147026,
+        "sign_index": 3,
+        "degree_in_sign": 29.147026,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 299.147026,
+        "sign_index": 9,
+        "degree_in_sign": 29.147026,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

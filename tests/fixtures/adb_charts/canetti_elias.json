@@ -1,0 +1,111 @@
+{
+  "adb_id": 56850,
+  "name": "Canetti, Elias",
+  "given_name": "Elias Canetti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417051.458333,
+    "year": 1905,
+    "month": 7,
+    "day": 25,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Ruse",
+    "country": "Bulgaria",
+    "lat": 43.833333,
+    "lon": 25.95
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canetti,_Elias",
+  "source_notes": "Thanks to Yuliana Angelova we have received a copy of the original birth certificate. It is in Bulgarian. He was born on 12 July 1905 (Julian calendar) which makes 25 July (Gregorian calendar). The literal translation sounds: \"... born at 1:00 before noon\". This does surely not mean 'an hour before noon' but it means 'at 1:00 a(nte) m(eridiem)'.\\n\\nThere had been other quotes of the BC published before with 11 am and 1 pm birth times. Both are now considered as misunderstandings of the actual wording.\\n\\nPersonal note by Alois Treindl: During some years in the mid 1980ies, I used to have lunch in the Zürich restaurant ''Vier Linden'' a few times a week, meeting friends. Canetti was a regular lunch customer, often dining with a child which we took for his grandson, but which in fact must have been his only child Johanna, born 1972, when Canetti was already 67 years old. Of course we left the nobel prize winner alone, as is customary in Switzerland. I lived at the time on Scheuchzerstrasse, a street which plays some role in Canettis masterpiece of autobiography. Many years later I met Johanna Canetti in the Literaturhaus Zürich, at the book vernissage of Canetti's biographer, and realized only then that the child at Canetti's lunch table had been this woman.\\n",
+  "categories": [
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Religion/ Philosophy",
+    "Notable : Awards : Nobel prize"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 21.898525,
+    "lagna": 21.898525,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.538171,
+    "jd_ut": 2417051.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 98.786758,
+        "sign_index": 3,
+        "degree_in_sign": 8.786758,
+        "is_retrograde": false,
+        "speed": 0.955288
+      },
+      "Moon": {
+        "longitude": 13.703632,
+        "sign_index": 0,
+        "degree_in_sign": 13.703632,
+        "is_retrograde": false,
+        "speed": 11.681077
+      },
+      "Mars": {
+        "longitude": 204.012412,
+        "sign_index": 6,
+        "degree_in_sign": 24.012412,
+        "is_retrograde": false,
+        "speed": 0.395846
+      },
+      "Mercury": {
+        "longitude": 124.533619,
+        "sign_index": 4,
+        "degree_in_sign": 4.533619,
+        "is_retrograde": false,
+        "speed": 1.30209
+      },
+      "Jupiter": {
+        "longitude": 38.140716,
+        "sign_index": 1,
+        "degree_in_sign": 8.140716,
+        "is_retrograde": false,
+        "speed": 0.168162
+      },
+      "Venus": {
+        "longitude": 54.133311,
+        "sign_index": 1,
+        "degree_in_sign": 24.133311,
+        "is_retrograde": false,
+        "speed": 1.053
+      },
+      "Saturn": {
+        "longitude": 309.047756,
+        "sign_index": 10,
+        "degree_in_sign": 9.047756,
+        "is_retrograde": true,
+        "speed": -0.059451
+      },
+      "Rahu": {
+        "longitude": 129.071172,
+        "sign_index": 4,
+        "degree_in_sign": 9.071172,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.071172,
+        "sign_index": 10,
+        "degree_in_sign": 9.071172,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

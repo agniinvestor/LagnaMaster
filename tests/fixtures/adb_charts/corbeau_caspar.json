@@ -1,0 +1,111 @@
+{
+  "adb_id": 101254,
+  "name": "Corbeau, Caspar",
+  "given_name": "Caspar Corbeau",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2452003.397917,
+    "year": 2001,
+    "month": 4,
+    "day": 3,
+    "calendar": "g",
+    "time": "14:33",
+    "time_type": "d",
+    "hour": 14.55,
+    "time_unknown": false,
+    "place": "Santa Cruz",
+    "country": "California",
+    "lat": 36.966667,
+    "lon": -122.033333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corbeau,_Caspar",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Santa Cruz Sentinel'', 22 April 2001, page B6: born at Dominican Hospital. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Swimming",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 26.266569,
+    "lagna": 86.266569,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.874624,
+    "jd_ut": 2452003.397917,
+    "planets": {
+      "Sun": {
+        "longitude": 350.315383,
+        "sign_index": 11,
+        "degree_in_sign": 20.315383,
+        "is_retrograde": false,
+        "speed": 0.985053
+      },
+      "Moon": {
+        "longitude": 113.58993,
+        "sign_index": 3,
+        "degree_in_sign": 23.58993,
+        "is_retrograde": false,
+        "speed": 15.415631
+      },
+      "Mars": {
+        "longitude": 237.833511,
+        "sign_index": 7,
+        "degree_in_sign": 27.833511,
+        "is_retrograde": false,
+        "speed": 0.34753
+      },
+      "Mercury": {
+        "longitude": 332.015676,
+        "sign_index": 11,
+        "degree_in_sign": 2.015676,
+        "is_retrograde": false,
+        "speed": 1.683273
+      },
+      "Jupiter": {
+        "longitude": 44.259162,
+        "sign_index": 1,
+        "degree_in_sign": 14.259162,
+        "is_retrograde": false,
+        "speed": 0.179757
+      },
+      "Venus": {
+        "longitude": 342.761286,
+        "sign_index": 11,
+        "degree_in_sign": 12.761286,
+        "is_retrograde": true,
+        "speed": -0.582805
+      },
+      "Saturn": {
+        "longitude": 34.215093,
+        "sign_index": 1,
+        "degree_in_sign": 4.215093,
+        "is_retrograde": false,
+        "speed": 0.105359
+      },
+      "Rahu": {
+        "longitude": 76.895996,
+        "sign_index": 2,
+        "degree_in_sign": 16.895996,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 256.895996,
+        "sign_index": 8,
+        "degree_in_sign": 16.895996,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 104238,
+  "name": "Chambers, Shirley",
+  "given_name": "Shirley Chambers",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420122.291667,
+    "year": 1913,
+    "month": 12,
+    "day": 20,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Seattle",
+    "country": "Washington",
+    "lat": 47.6,
+    "lon": -122.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chambers,_Shirley",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 8.383106,
+    "lagna": 278.383106,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.655567,
+    "jd_ut": 2420122.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 245.66359,
+        "sign_index": 8,
+        "degree_in_sign": 5.66359,
+        "is_retrograde": false,
+        "speed": 1.018467
+      },
+      "Moon": {
+        "longitude": 156.863263,
+        "sign_index": 5,
+        "degree_in_sign": 6.863263,
+        "is_retrograde": false,
+        "speed": 12.931129
+      },
+      "Mars": {
+        "longitude": 87.952015,
+        "sign_index": 2,
+        "degree_in_sign": 27.952015,
+        "is_retrograde": true,
+        "speed": -0.319088
+      },
+      "Mercury": {
+        "longitude": 226.844791,
+        "sign_index": 7,
+        "degree_in_sign": 16.844791,
+        "is_retrograde": false,
+        "speed": 1.378437
+      },
+      "Jupiter": {
+        "longitude": 269.949233,
+        "sign_index": 8,
+        "degree_in_sign": 29.949233,
+        "is_retrograde": false,
+        "speed": 0.224466
+      },
+      "Venus": {
+        "longitude": 232.963449,
+        "sign_index": 7,
+        "degree_in_sign": 22.963449,
+        "is_retrograde": false,
+        "speed": 1.257181
+      },
+      "Saturn": {
+        "longitude": 50.930304,
+        "sign_index": 1,
+        "degree_in_sign": 20.930304,
+        "is_retrograde": true,
+        "speed": -0.078314
+      },
+      "Rahu": {
+        "longitude": 326.341265,
+        "sign_index": 10,
+        "degree_in_sign": 26.341265,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 146.341265,
+        "sign_index": 4,
+        "degree_in_sign": 26.341265,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 65015,
+  "name": "Clavel, Robert",
+  "given_name": "Robert Clavel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419690.75,
+    "year": 1912,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clavel,_Robert",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 174.\\n",
+  "categories": [
+    "Vocation : Art : Stage/ Set design"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 3.433346,
+    "lagna": 153.433346,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.639069,
+    "jd_ut": 2419690.75,
+    "planets": {
+      "Sun": {
+        "longitude": 178.877234,
+        "sign_index": 5,
+        "degree_in_sign": 28.877234,
+        "is_retrograde": false,
+        "speed": 0.992037
+      },
+      "Moon": {
+        "longitude": 237.408039,
+        "sign_index": 7,
+        "degree_in_sign": 27.408039,
+        "is_retrograde": false,
+        "speed": 15.559746
+      },
+      "Mars": {
+        "longitude": 185.427577,
+        "sign_index": 6,
+        "degree_in_sign": 5.427577,
+        "is_retrograde": false,
+        "speed": 0.675301
+      },
+      "Mercury": {
+        "longitude": 186.490355,
+        "sign_index": 6,
+        "degree_in_sign": 6.490355,
+        "is_retrograde": false,
+        "speed": 1.616008
+      },
+      "Jupiter": {
+        "longitude": 230.250763,
+        "sign_index": 7,
+        "degree_in_sign": 20.250763,
+        "is_retrograde": false,
+        "speed": 0.1791
+      },
+      "Venus": {
+        "longitude": 205.711508,
+        "sign_index": 6,
+        "degree_in_sign": 25.711508,
+        "is_retrograde": false,
+        "speed": 1.230574
+      },
+      "Saturn": {
+        "longitude": 40.735379,
+        "sign_index": 1,
+        "degree_in_sign": 10.735379,
+        "is_retrograde": true,
+        "speed": -0.049703
+      },
+      "Rahu": {
+        "longitude": 349.209562,
+        "sign_index": 11,
+        "degree_in_sign": 19.209562,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 169.209562,
+        "sign_index": 5,
+        "degree_in_sign": 19.209562,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

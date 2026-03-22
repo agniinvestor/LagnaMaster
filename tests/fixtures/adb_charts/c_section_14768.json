@@ -1,0 +1,108 @@
+{
+  "adb_id": 14768,
+  "name": "C-Section 14768",
+  "given_name": "C-Section 14768",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2444099.311111,
+    "year": 1979,
+    "month": 8,
+    "day": 13,
+    "calendar": "g",
+    "time": "14:28",
+    "time_type": "d",
+    "hour": 14.466667,
+    "time_unknown": false,
+    "place": "Fort Walton Beach",
+    "country": "Florida",
+    "lat": 30.4,
+    "lon": -86.616667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:C-Section_14768",
+  "source_notes": "Given by his grandmother, Frances Howton, in MH Ext. 1/1980\\n",
+  "categories": [
+    "Personal : Birth : Cesarean"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 18.581639,
+    "lagna": 198.581639,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.572347,
+    "jd_ut": 2444099.311111,
+    "planets": {
+      "Sun": {
+        "longitude": 116.874759,
+        "sign_index": 3,
+        "degree_in_sign": 26.874759,
+        "is_retrograde": false,
+        "speed": 0.960074
+      },
+      "Moon": {
+        "longitude": 13.764133,
+        "sign_index": 0,
+        "degree_in_sign": 13.764133,
+        "is_retrograde": false,
+        "speed": 16.633871
+      },
+      "Mars": {
+        "longitude": 69.904204,
+        "sign_index": 2,
+        "degree_in_sign": 9.904204,
+        "is_retrograde": false,
+        "speed": 0.658851
+      },
+      "Mercury": {
+        "longitude": 100.025555,
+        "sign_index": 3,
+        "degree_in_sign": 10.025555,
+        "is_retrograde": false,
+        "speed": 0.321363
+      },
+      "Jupiter": {
+        "longitude": 116.5576,
+        "sign_index": 3,
+        "degree_in_sign": 26.5576,
+        "is_retrograde": false,
+        "speed": 0.219191
+      },
+      "Venus": {
+        "longitude": 113.656306,
+        "sign_index": 3,
+        "degree_in_sign": 23.656306,
+        "is_retrograde": false,
+        "speed": 1.235283
+      },
+      "Saturn": {
+        "longitude": 140.260809,
+        "sign_index": 4,
+        "degree_in_sign": 20.260809,
+        "is_retrograde": false,
+        "speed": 0.118669
+      },
+      "Rahu": {
+        "longitude": 135.749533,
+        "sign_index": 4,
+        "degree_in_sign": 15.749533,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 315.749533,
+        "sign_index": 10,
+        "degree_in_sign": 15.749533,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 82071,
+  "name": "Chatiliez, Etienne",
+  "given_name": "Etienne Chatiliez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434180.864583,
+    "year": 1952,
+    "month": 6,
+    "day": 17,
+    "calendar": "g",
+    "time": "09:45",
+    "time_type": "s",
+    "hour": 9.75,
+    "time_unknown": false,
+    "place": "Roubaix",
+    "country": "France",
+    "lat": 50.7,
+    "lon": 3.166667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chatiliez,_Etienne",
+  "source_notes": "Lepoivre quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 8.134725,
+    "lagna": 98.134725,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.193075,
+    "jd_ut": 2434180.864583,
+    "planets": {
+      "Sun": {
+        "longitude": 62.888071,
+        "sign_index": 2,
+        "degree_in_sign": 2.888071,
+        "is_retrograde": false,
+        "speed": 0.954726
+      },
+      "Moon": {
+        "longitude": 4.012252,
+        "sign_index": 0,
+        "degree_in_sign": 4.012252,
+        "is_retrograde": false,
+        "speed": 9.801642
+      },
+      "Mars": {
+        "longitude": 188.310052,
+        "sign_index": 6,
+        "degree_in_sign": 8.310052,
+        "is_retrograde": false,
+        "speed": 0.092948
+      },
+      "Mercury": {
+        "longitude": 72.791872,
+        "sign_index": 2,
+        "degree_in_sign": 12.791872,
+        "is_retrograde": false,
+        "speed": 2.062047
+      },
+      "Jupiter": {
+        "longitude": 17.933998,
+        "sign_index": 0,
+        "degree_in_sign": 17.933998,
+        "is_retrograde": false,
+        "speed": 0.202115
+      },
+      "Venus": {
+        "longitude": 60.814915,
+        "sign_index": 2,
+        "degree_in_sign": 0.814915,
+        "is_retrograde": false,
+        "speed": 1.228118
+      },
+      "Saturn": {
+        "longitude": 165.035307,
+        "sign_index": 5,
+        "degree_in_sign": 15.035307,
+        "is_retrograde": false,
+        "speed": 0.011338
+      },
+      "Rahu": {
+        "longitude": 301.348299,
+        "sign_index": 10,
+        "degree_in_sign": 1.348299,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 121.348299,
+        "sign_index": 4,
+        "degree_in_sign": 1.348299,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

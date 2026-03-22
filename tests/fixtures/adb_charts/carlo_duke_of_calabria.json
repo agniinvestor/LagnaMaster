@@ -1,0 +1,109 @@
+{
+  "adb_id": 59289,
+  "name": "Carlo, Duke of Calabria",
+  "given_name": "Duke of Calabria Carlo",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2369368.835324,
+    "year": 1775,
+    "month": 1,
+    "day": 4,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Naples",
+    "country": "Italy",
+    "lat": 40.85,
+    "lon": 14.283333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlo,_Duke_of_Calabria",
+  "source_notes": "Sy Scholfield quotes \"Foreign Intelligence,\" Sentimental Magazine, or, General assemblage of science, taste, and entertainment, February 1775, p. 96: \"Caserta, near Naples, Jan. 10. On Wednesday morning last, about nine o'clock, her Sicilian Majesty was safely delivered of a Prince. . . . by the names of Carolus Francifcus, &c. &c.\"\\nSame data in The London Gazette: https://www.thegazette.co.uk/London/issue/11531/page/1\\n",
+  "categories": [
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 28.853208,
+    "lagna": 268.853208,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.715843,
+    "jd_ut": 2369368.835324,
+    "planets": {
+      "Sun": {
+        "longitude": 263.185953,
+        "sign_index": 8,
+        "degree_in_sign": 23.185953,
+        "is_retrograde": false,
+        "speed": 1.019585
+      },
+      "Moon": {
+        "longitude": 296.609852,
+        "sign_index": 9,
+        "degree_in_sign": 26.609852,
+        "is_retrograde": false,
+        "speed": 13.744939
+      },
+      "Mars": {
+        "longitude": 143.245686,
+        "sign_index": 4,
+        "degree_in_sign": 23.245686,
+        "is_retrograde": false,
+        "speed": 0.12401
+      },
+      "Mercury": {
+        "longitude": 243.116207,
+        "sign_index": 8,
+        "degree_in_sign": 3.116207,
+        "is_retrograde": false,
+        "speed": 1.362243
+      },
+      "Jupiter": {
+        "longitude": 15.443892,
+        "sign_index": 0,
+        "degree_in_sign": 15.443892,
+        "is_retrograde": false,
+        "speed": 0.013959
+      },
+      "Venus": {
+        "longitude": 262.457267,
+        "sign_index": 8,
+        "degree_in_sign": 22.457267,
+        "is_retrograde": false,
+        "speed": 1.25824
+      },
+      "Saturn": {
+        "longitude": 167.993364,
+        "sign_index": 5,
+        "degree_in_sign": 17.993364,
+        "is_retrograde": false,
+        "speed": 0.024104
+      },
+      "Rahu": {
+        "longitude": 135.876585,
+        "sign_index": 4,
+        "degree_in_sign": 15.876585,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 315.876585,
+        "sign_index": 10,
+        "degree_in_sign": 15.876585,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

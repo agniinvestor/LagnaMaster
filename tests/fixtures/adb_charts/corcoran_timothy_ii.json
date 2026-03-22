@@ -1,0 +1,110 @@
+{
+  "adb_id": 101212,
+  "name": "Corcoran, Timothy II",
+  "given_name": "Timothy II Corcoran",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441758.977083,
+    "year": 1973,
+    "month": 3,
+    "day": 17,
+    "calendar": "g",
+    "time": "06:27",
+    "time_type": "s",
+    "hour": 6.45,
+    "time_unknown": false,
+    "place": "Bennington",
+    "country": "Vermont",
+    "lat": 42.883333,
+    "lon": -73.2
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corcoran,_Timothy_II",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 19.310464,
+    "lagna": 319.310464,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.482851,
+    "jd_ut": 2441758.977083,
+    "planets": {
+      "Sun": {
+        "longitude": 333.251569,
+        "sign_index": 11,
+        "degree_in_sign": 3.251569,
+        "is_retrograde": false,
+        "speed": 0.994608
+      },
+      "Moon": {
+        "longitude": 134.454083,
+        "sign_index": 4,
+        "degree_in_sign": 14.454083,
+        "is_retrograde": false,
+        "speed": 15.26567
+      },
+      "Mars": {
+        "longitude": 269.857383,
+        "sign_index": 8,
+        "degree_in_sign": 29.857383,
+        "is_retrograde": false,
+        "speed": 0.706993
+      },
+      "Mercury": {
+        "longitude": 326.213929,
+        "sign_index": 10,
+        "degree_in_sign": 26.213929,
+        "is_retrograde": true,
+        "speed": -0.88566
+      },
+      "Jupiter": {
+        "longitude": 280.930905,
+        "sign_index": 9,
+        "degree_in_sign": 10.930905,
+        "is_retrograde": false,
+        "speed": 0.185084
+      },
+      "Venus": {
+        "longitude": 327.330868,
+        "sign_index": 10,
+        "degree_in_sign": 27.330868,
+        "is_retrograde": false,
+        "speed": 1.244906
+      },
+      "Saturn": {
+        "longitude": 51.085232,
+        "sign_index": 1,
+        "degree_in_sign": 21.085232,
+        "is_retrograde": false,
+        "speed": 0.057358
+      },
+      "Rahu": {
+        "longitude": 259.768597,
+        "sign_index": 8,
+        "degree_in_sign": 19.768597,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 79.768597,
+        "sign_index": 2,
+        "degree_in_sign": 19.768597,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

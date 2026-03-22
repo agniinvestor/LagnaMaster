@@ -1,0 +1,109 @@
+{
+  "adb_id": 55860,
+  "name": "Chardin, Germain",
+  "given_name": "Germain Chardin",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2445469.881944,
+    "year": 1983,
+    "month": 5,
+    "day": 15,
+    "calendar": "g",
+    "time": "11:10",
+    "time_type": "d",
+    "hour": 11.166667,
+    "time_unknown": false,
+    "place": "Verdun",
+    "country": "France",
+    "lat": 49.166667,
+    "lon": 5.383333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chardin,_Germain",
+  "source_notes": "Marc Brun's \"Les médailles français aux JO 2012\" collection.\\n",
+  "categories": [
+    "Vocation : Sports : Rowing/ Kayaking",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 18.902904,
+    "lagna": 78.902904,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.62476,
+    "jd_ut": 2445469.881944,
+    "planets": {
+      "Sun": {
+        "longitude": 30.362184,
+        "sign_index": 1,
+        "degree_in_sign": 0.362184,
+        "is_retrograde": false,
+        "speed": 0.964709
+      },
+      "Moon": {
+        "longitude": 64.831486,
+        "sign_index": 2,
+        "degree_in_sign": 4.831486,
+        "is_retrograde": false,
+        "speed": 13.222774
+      },
+      "Mars": {
+        "longitude": 35.299609,
+        "sign_index": 1,
+        "degree_in_sign": 5.299609,
+        "is_retrograde": false,
+        "speed": 0.710085
+      },
+      "Mercury": {
+        "longitude": 26.167592,
+        "sign_index": 0,
+        "degree_in_sign": 26.167592,
+        "is_retrograde": true,
+        "speed": -0.575723
+      },
+      "Jupiter": {
+        "longitude": 224.006255,
+        "sign_index": 7,
+        "degree_in_sign": 14.006255,
+        "is_retrograde": true,
+        "speed": -0.120202
+      },
+      "Venus": {
+        "longitude": 73.005013,
+        "sign_index": 2,
+        "degree_in_sign": 13.005013,
+        "is_retrograde": false,
+        "speed": 1.109401
+      },
+      "Saturn": {
+        "longitude": 185.788977,
+        "sign_index": 6,
+        "degree_in_sign": 5.788977,
+        "is_retrograde": true,
+        "speed": -0.06566
+      },
+      "Rahu": {
+        "longitude": 63.120202,
+        "sign_index": 2,
+        "degree_in_sign": 3.120202,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 243.120202,
+        "sign_index": 8,
+        "degree_in_sign": 3.120202,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

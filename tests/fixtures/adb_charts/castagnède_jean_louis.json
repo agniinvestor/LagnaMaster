@@ -1,0 +1,108 @@
+{
+  "adb_id": 68081,
+  "name": "Castagnède, Jean-Louis",
+  "given_name": "Jean-Louis Castagnède",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431524.65625,
+    "year": 1945,
+    "month": 3,
+    "day": 10,
+    "calendar": "g",
+    "time": "04:45",
+    "time_type": "s",
+    "hour": 4.75,
+    "time_unknown": false,
+    "place": "Rochefort",
+    "country": "France",
+    "lat": 45.95,
+    "lon": -0.966667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castagnède,_Jean-Louis",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'police justice' pdf file, p. 19.\\n",
+  "categories": [
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 29.875814,
+    "lagna": 239.875814,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.091512,
+    "jd_ut": 2431524.65625,
+    "planets": {
+      "Sun": {
+        "longitude": 326.1264,
+        "sign_index": 10,
+        "degree_in_sign": 26.1264,
+        "is_retrograde": false,
+        "speed": 0.999063
+      },
+      "Moon": {
+        "longitude": 272.313464,
+        "sign_index": 9,
+        "degree_in_sign": 2.313464,
+        "is_retrograde": false,
+        "speed": 12.279957
+      },
+      "Mars": {
+        "longitude": 295.255887,
+        "sign_index": 9,
+        "degree_in_sign": 25.255887,
+        "is_retrograde": false,
+        "speed": 0.776215
+      },
+      "Mercury": {
+        "longitude": 334.729549,
+        "sign_index": 11,
+        "degree_in_sign": 4.729549,
+        "is_retrograde": false,
+        "speed": 1.945427
+      },
+      "Jupiter": {
+        "longitude": 149.924098,
+        "sign_index": 4,
+        "degree_in_sign": 29.924098,
+        "is_retrograde": true,
+        "speed": -0.129636
+      },
+      "Venus": {
+        "longitude": 6.262414,
+        "sign_index": 0,
+        "degree_in_sign": 6.262414,
+        "is_retrograde": false,
+        "speed": 0.512075
+      },
+      "Saturn": {
+        "longitude": 70.761241,
+        "sign_index": 2,
+        "degree_in_sign": 10.761241,
+        "is_retrograde": false,
+        "speed": 0.007863
+      },
+      "Rahu": {
+        "longitude": 82.106253,
+        "sign_index": 2,
+        "degree_in_sign": 22.106253,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 262.106253,
+        "sign_index": 8,
+        "degree_in_sign": 22.106253,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

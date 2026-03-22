@@ -1,0 +1,108 @@
+{
+  "adb_id": 93926,
+  "name": "Canolle, Pierre de",
+  "given_name": "Pierre de Canolle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412855.149757,
+    "year": 1894,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "15:45",
+    "time_type": "s",
+    "hour": 15.75,
+    "time_unknown": false,
+    "place": "Vannes",
+    "country": "France",
+    "lat": 47.65,
+    "lon": -2.766667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canolle,_Pierre_de",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_acteurs_muet-2.pdf]. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 6.555494,
+    "lagna": 66.555494,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.377755,
+    "jd_ut": 2412855.149757,
+    "planets": {
+      "Sun": {
+        "longitude": 284.350071,
+        "sign_index": 9,
+        "degree_in_sign": 14.350071,
+        "is_retrograde": false,
+        "speed": 1.015811
+      },
+      "Moon": {
+        "longitude": 170.592072,
+        "sign_index": 5,
+        "degree_in_sign": 20.592072,
+        "is_retrograde": false,
+        "speed": 16.406276
+      },
+      "Mars": {
+        "longitude": 235.125647,
+        "sign_index": 7,
+        "degree_in_sign": 25.125647,
+        "is_retrograde": false,
+        "speed": 0.689336
+      },
+      "Mercury": {
+        "longitude": 282.354221,
+        "sign_index": 9,
+        "degree_in_sign": 12.354221,
+        "is_retrograde": false,
+        "speed": 1.693346
+      },
+      "Jupiter": {
+        "longitude": 29.256316,
+        "sign_index": 0,
+        "degree_in_sign": 29.256316,
+        "is_retrograde": false,
+        "speed": 0.037643
+      },
+      "Venus": {
+        "longitude": 313.373965,
+        "sign_index": 10,
+        "degree_in_sign": 13.373965,
+        "is_retrograde": true,
+        "speed": -0.004652
+      },
+      "Saturn": {
+        "longitude": 182.742533,
+        "sign_index": 6,
+        "degree_in_sign": 2.742533,
+        "is_retrograde": false,
+        "speed": 0.012497
+      },
+      "Rahu": {
+        "longitude": 351.442415,
+        "sign_index": 11,
+        "degree_in_sign": 21.442415,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 171.442415,
+        "sign_index": 5,
+        "degree_in_sign": 21.442415,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

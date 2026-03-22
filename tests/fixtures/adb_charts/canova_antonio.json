@@ -1,0 +1,109 @@
+{
+  "adb_id": 62344,
+  "name": "Canova, Antonio",
+  "given_name": "Antonio Canova",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2363095.88375,
+    "year": 1757,
+    "month": 11,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Possagno",
+    "country": "Italy",
+    "lat": 45.85,
+    "lon": 11.85
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canova,_Antonio",
+  "source_notes": "Sy Scholfield quotes from \"Notizie intorno alla vita di Antonio Canova: giuntovi il catalogo chronologico di tutte le sue opere\" by Pier Alessandro Paravia (Presso G. Orlandelli editore, Company' tipi Picottiani, 1822), p. 5: Possagno, povera ed oscura villetta posta in fra' colli Asolani , fu la patria di Antonio Canova; Egli vi nacque alle ore dieci del di primo novembre dell'anno 1757.\"\\nTranslation: Possagno, a poor and obscure little villa situated in between the Asolani hills, was the home of Antonio Canova; he was born at the tenth hour [AM] on the first of November 1757.\\nThe biography, \"Canova e Possagno\" by Elide Paolin (Comunità Montana del Grappa, 1987), p. 23, states \"nato in questa mattina\" (translation: born this morning).\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Education : Teacher"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 5.428644,
+    "lagna": 215.428644,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.476182,
+    "jd_ut": 2363095.88375,
+    "planets": {
+      "Sun": {
+        "longitude": 198.693603,
+        "sign_index": 6,
+        "degree_in_sign": 18.693603,
+        "is_retrograde": false,
+        "speed": 1.002758
+      },
+      "Moon": {
+        "longitude": 79.872364,
+        "sign_index": 2,
+        "degree_in_sign": 19.872364,
+        "is_retrograde": false,
+        "speed": 12.21391
+      },
+      "Mars": {
+        "longitude": 109.662345,
+        "sign_index": 3,
+        "degree_in_sign": 19.662345,
+        "is_retrograde": false,
+        "speed": 0.446548
+      },
+      "Mercury": {
+        "longitude": 181.811909,
+        "sign_index": 6,
+        "degree_in_sign": 1.811909,
+        "is_retrograde": false,
+        "speed": 0.201922
+      },
+      "Jupiter": {
+        "longitude": 214.414361,
+        "sign_index": 7,
+        "degree_in_sign": 4.414361,
+        "is_retrograde": false,
+        "speed": 0.218031
+      },
+      "Venus": {
+        "longitude": 235.764376,
+        "sign_index": 7,
+        "degree_in_sign": 25.764376,
+        "is_retrograde": false,
+        "speed": 1.207334
+      },
+      "Saturn": {
+        "longitude": 295.132709,
+        "sign_index": 9,
+        "degree_in_sign": 25.132709,
+        "is_retrograde": false,
+        "speed": 0.021367
+      },
+      "Rahu": {
+        "longitude": 108.294316,
+        "sign_index": 3,
+        "degree_in_sign": 18.294316,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 288.294316,
+        "sign_index": 9,
+        "degree_in_sign": 18.294316,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

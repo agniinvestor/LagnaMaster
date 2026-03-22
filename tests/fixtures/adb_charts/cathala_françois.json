@@ -1,0 +1,108 @@
+{
+  "adb_id": 64954,
+  "name": "Cathala, François",
+  "given_name": "François Cathala",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420567.75,
+    "year": 1915,
+    "month": 3,
+    "day": 11,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Bordeaux",
+    "country": "France",
+    "lat": 44.833333,
+    "lon": -0.566667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cathala,_François",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 82.\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Historian"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 20.800574,
+    "lagna": 290.800574,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.672597,
+    "jd_ut": 2420567.75,
+    "planets": {
+      "Sun": {
+        "longitude": 326.914925,
+        "sign_index": 10,
+        "degree_in_sign": 26.914925,
+        "is_retrograde": false,
+        "speed": 0.998669
+      },
+      "Moon": {
+        "longitude": 272.17808,
+        "sign_index": 9,
+        "degree_in_sign": 2.17808,
+        "is_retrograde": false,
+        "speed": 10.096247
+      },
+      "Mars": {
+        "longitude": 308.670028,
+        "sign_index": 10,
+        "degree_in_sign": 8.670028,
+        "is_retrograde": false,
+        "speed": 0.786324
+      },
+      "Mercury": {
+        "longitude": 301.592622,
+        "sign_index": 10,
+        "degree_in_sign": 1.592622,
+        "is_retrograde": false,
+        "speed": 0.425639
+      },
+      "Jupiter": {
+        "longitude": 315.777396,
+        "sign_index": 10,
+        "degree_in_sign": 15.777396,
+        "is_retrograde": false,
+        "speed": 0.238963
+      },
+      "Venus": {
+        "longitude": 282.635961,
+        "sign_index": 9,
+        "degree_in_sign": 12.635961,
+        "is_retrograde": false,
+        "speed": 1.13595
+      },
+      "Saturn": {
+        "longitude": 62.851952,
+        "sign_index": 2,
+        "degree_in_sign": 2.851952,
+        "is_retrograde": false,
+        "speed": 0.024396
+      },
+      "Rahu": {
+        "longitude": 302.735494,
+        "sign_index": 10,
+        "degree_in_sign": 2.735494,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 122.735494,
+        "sign_index": 4,
+        "degree_in_sign": 2.735494,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

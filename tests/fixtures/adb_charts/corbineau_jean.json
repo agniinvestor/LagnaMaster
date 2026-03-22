@@ -1,0 +1,108 @@
+{
+  "adb_id": 64156,
+  "name": "Corbineau, Jean",
+  "given_name": "Jean Corbineau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2369943.86588,
+    "year": 1776,
+    "month": 8,
+    "day": 1,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Marchiennes",
+    "country": "France",
+    "lat": 50.4,
+    "lon": 3.283333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corbineau,_Jean",
+  "source_notes": "Didier Geslain archive, 'armée' pdf file, p. 4. \\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.322709,
+    "lagna": 135.322709,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.737813,
+    "jd_ut": 2369943.86588,
+    "planets": {
+      "Sun": {
+        "longitude": 108.795062,
+        "sign_index": 3,
+        "degree_in_sign": 18.795062,
+        "is_retrograde": false,
+        "speed": 0.957279
+      },
+      "Moon": {
+        "longitude": 306.890132,
+        "sign_index": 10,
+        "degree_in_sign": 6.890132,
+        "is_retrograde": false,
+        "speed": 16.680898
+      },
+      "Mars": {
+        "longitude": 79.049816,
+        "sign_index": 2,
+        "degree_in_sign": 19.049816,
+        "is_retrograde": false,
+        "speed": 0.659098
+      },
+      "Mercury": {
+        "longitude": 89.575774,
+        "sign_index": 2,
+        "degree_in_sign": 29.575774,
+        "is_retrograde": false,
+        "speed": 0.985022
+      },
+      "Jupiter": {
+        "longitude": 81.256169,
+        "sign_index": 2,
+        "degree_in_sign": 21.256169,
+        "is_retrograde": false,
+        "speed": 0.212746
+      },
+      "Venus": {
+        "longitude": 106.110221,
+        "sign_index": 3,
+        "degree_in_sign": 16.110221,
+        "is_retrograde": false,
+        "speed": 1.233446
+      },
+      "Saturn": {
+        "longitude": 175.465272,
+        "sign_index": 5,
+        "degree_in_sign": 25.465272,
+        "is_retrograde": false,
+        "speed": 0.070035
+      },
+      "Rahu": {
+        "longitude": 105.404435,
+        "sign_index": 3,
+        "degree_in_sign": 15.404435,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 285.404435,
+        "sign_index": 9,
+        "degree_in_sign": 15.404435,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

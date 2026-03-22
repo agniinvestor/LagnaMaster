@@ -1,0 +1,108 @@
+{
+  "adb_id": 4531,
+  "name": "Caudle, Hal M. Sr.",
+  "given_name": "Hal M. Sr. Caudle",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2418672.697917,
+    "year": 1909,
+    "month": 12,
+    "day": 31,
+    "calendar": "g",
+    "time": "23:45",
+    "time_type": "s",
+    "hour": 23.75,
+    "time_unknown": false,
+    "place": "Randleman",
+    "country": "North Carolina",
+    "lat": 35.816667,
+    "lon": -79.8
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caudle,_Hal_M._Sr.",
+  "source_notes": "Astrological Pioneers of America file\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.973802,
+    "lagna": 135.973802,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.600149,
+    "jd_ut": 2418672.697917,
+    "planets": {
+      "Sun": {
+        "longitude": 257.312479,
+        "sign_index": 8,
+        "degree_in_sign": 17.312479,
+        "is_retrograde": false,
+        "speed": 1.019099
+      },
+      "Moon": {
+        "longitude": 142.190744,
+        "sign_index": 4,
+        "degree_in_sign": 22.190744,
+        "is_retrograde": false,
+        "speed": 10.955768
+      },
+      "Mars": {
+        "longitude": 355.369492,
+        "sign_index": 11,
+        "degree_in_sign": 25.369492,
+        "is_retrograde": false,
+        "speed": 0.523444
+      },
+      "Mercury": {
+        "longitude": 273.402842,
+        "sign_index": 9,
+        "degree_in_sign": 3.402842,
+        "is_retrograde": false,
+        "speed": 1.516557
+      },
+      "Jupiter": {
+        "longitude": 170.696291,
+        "sign_index": 5,
+        "degree_in_sign": 20.696291,
+        "is_retrograde": false,
+        "speed": 0.08573
+      },
+      "Venus": {
+        "longitude": 300.326378,
+        "sign_index": 10,
+        "degree_in_sign": 0.326378,
+        "is_retrograde": false,
+        "speed": 0.663681
+      },
+      "Saturn": {
+        "longitude": 353.917133,
+        "sign_index": 11,
+        "degree_in_sign": 23.917133,
+        "is_retrograde": false,
+        "speed": 0.022529
+      },
+      "Rahu": {
+        "longitude": 43.158279,
+        "sign_index": 1,
+        "degree_in_sign": 13.158279,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 223.158279,
+        "sign_index": 7,
+        "degree_in_sign": 13.158279,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

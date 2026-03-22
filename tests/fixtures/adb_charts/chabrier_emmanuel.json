@@ -1,0 +1,112 @@
+{
+  "adb_id": 2284,
+  "name": "Chabrier, Emmanuel",
+  "given_name": "Emmanuel Chabrier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393489.15625,
+    "year": 1841,
+    "month": 1,
+    "day": 18,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "l",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Ambert",
+    "country": "France",
+    "lat": 45.55,
+    "lon": 3.75
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chabrier,_Emmanuel",
+  "source_notes": "Gauquelin Vol 4/1682.\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Lifestyle : Work : Same Job more than 10 yrs",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Writers : Autobiographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.131893,
+    "lagna": 67.131893,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.637539,
+    "jd_ut": 2393489.15625,
+    "planets": {
+      "Sun": {
+        "longitude": 276.83076,
+        "sign_index": 9,
+        "degree_in_sign": 6.83076,
+        "is_retrograde": false,
+        "speed": 1.017988
+      },
+      "Moon": {
+        "longitude": 232.345095,
+        "sign_index": 7,
+        "degree_in_sign": 22.345095,
+        "is_retrograde": false,
+        "speed": 12.638755
+      },
+      "Mars": {
+        "longitude": 181.834506,
+        "sign_index": 6,
+        "degree_in_sign": 1.834506,
+        "is_retrograde": false,
+        "speed": 0.412638
+      },
+      "Mercury": {
+        "longitude": 265.359056,
+        "sign_index": 8,
+        "degree_in_sign": 25.359056,
+        "is_retrograde": false,
+        "speed": 1.564083
+      },
+      "Jupiter": {
+        "longitude": 230.094051,
+        "sign_index": 7,
+        "degree_in_sign": 20.094051,
+        "is_retrograde": false,
+        "speed": 0.185709
+      },
+      "Venus": {
+        "longitude": 318.774081,
+        "sign_index": 10,
+        "degree_in_sign": 18.774081,
+        "is_retrograde": false,
+        "speed": 1.178753
+      },
+      "Saturn": {
+        "longitude": 246.363176,
+        "sign_index": 8,
+        "degree_in_sign": 6.363176,
+        "is_retrograde": false,
+        "speed": 0.107142
+      },
+      "Rahu": {
+        "longitude": 297.687821,
+        "sign_index": 9,
+        "degree_in_sign": 27.687821,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 117.687821,
+        "sign_index": 3,
+        "degree_in_sign": 27.687821,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

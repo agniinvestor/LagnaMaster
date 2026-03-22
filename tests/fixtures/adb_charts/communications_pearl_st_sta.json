@@ -1,0 +1,108 @@
+{
+  "adb_id": 48893,
+  "name": "Communications: Pearl St. Sta.",
+  "given_name": "Communications: Pearl St. Sta.",
+  "gender": "e",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2408693.330556,
+    "year": 1882,
+    "month": 9,
+    "day": 4,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Brooklyn Heights",
+    "country": "New York",
+    "lat": 40.7,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Communications:_Pearl_St._Sta.",
+  "source_notes": "Tim Rubald submitted this data From \"Edison: His life and Inventions\" by Frank Lewis Dyer, General Counsel of the Edison Laboratory and Allied Interests and Thomas Commerford Martin, Ex-President of the American Institute of Electrical Engineers, Harper Brothers, NY 1929:  \"On Monday, September 4, 1882, at 3 o'clock, P.M., Edison realized the consummation of his broad and original scheme. The Pearl Street station was officially started by admitting steam to the engine of one of the \"Jumbos,\" current was generated, turned into the network of underground conductors, and was transformed into light by the incandescent lamps that had thus far been installed.\"\\n",
+  "categories": [
+    "Mundane : Civic/Entertainment : Foundings"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.073307,
+    "lagna": 232.073307,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.218665,
+    "jd_ut": 2408693.330556,
+    "planets": {
+      "Sun": {
+        "longitude": 139.913185,
+        "sign_index": 4,
+        "degree_in_sign": 19.913185,
+        "is_retrograde": false,
+        "speed": 0.970188
+      },
+      "Moon": {
+        "longitude": 52.596474,
+        "sign_index": 1,
+        "degree_in_sign": 22.596474,
+        "is_retrograde": false,
+        "speed": 16.044126
+      },
+      "Mars": {
+        "longitude": 168.929378,
+        "sign_index": 5,
+        "degree_in_sign": 18.929378,
+        "is_retrograde": false,
+        "speed": 0.652283
+      },
+      "Mercury": {
+        "longitude": 157.337057,
+        "sign_index": 5,
+        "degree_in_sign": 7.337057,
+        "is_retrograde": false,
+        "speed": 1.583833
+      },
+      "Jupiter": {
+        "longitude": 66.076496,
+        "sign_index": 2,
+        "degree_in_sign": 6.076496,
+        "is_retrograde": false,
+        "speed": 0.130797
+      },
+      "Venus": {
+        "longitude": 185.097467,
+        "sign_index": 6,
+        "degree_in_sign": 5.097467,
+        "is_retrograde": false,
+        "speed": 1.081044
+      },
+      "Saturn": {
+        "longitude": 33.944467,
+        "sign_index": 1,
+        "degree_in_sign": 3.944467,
+        "is_retrograde": false,
+        "speed": 0.005727
+      },
+      "Rahu": {
+        "longitude": 211.986031,
+        "sign_index": 7,
+        "degree_in_sign": 1.986031,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 31.986031,
+        "sign_index": 1,
+        "degree_in_sign": 1.986031,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 26003,
+  "name": "Campanella, Vincenzo",
+  "given_name": "Vincenzo Campanella",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442294.145833,
+    "year": 1974,
+    "month": 9,
+    "day": 3,
+    "calendar": "g",
+    "time": "17:30",
+    "time_type": "d",
+    "hour": 17.5,
+    "time_unknown": false,
+    "place": "Palermo",
+    "country": "Italy",
+    "lat": 38.116667,
+    "lon": 13.366667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campanella,_Vincenzo",
+  "source_notes": "Bordoni quotes B.C. in a letter 4/1992\\n",
+  "categories": [
+    "Diagnoses : Psychological : Psychotic Episode",
+    "Passions : Criminal Perpetrator : Homicide single"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 12.204322,
+    "lagna": 252.204322,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.503316,
+    "jd_ut": 2442294.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 137.239992,
+        "sign_index": 4,
+        "degree_in_sign": 17.239992,
+        "is_retrograde": false,
+        "speed": 0.968382
+      },
+      "Moon": {
+        "longitude": 338.045929,
+        "sign_index": 11,
+        "degree_in_sign": 8.045929,
+        "is_retrograde": false,
+        "speed": 15.018857
+      },
+      "Mars": {
+        "longitude": 150.597242,
+        "sign_index": 5,
+        "degree_in_sign": 0.597242,
+        "is_retrograde": false,
+        "speed": 0.641701
+      },
+      "Mercury": {
+        "longitude": 152.265075,
+        "sign_index": 5,
+        "degree_in_sign": 2.265075,
+        "is_retrograde": false,
+        "speed": 1.654274
+      },
+      "Jupiter": {
+        "longitude": 319.663189,
+        "sign_index": 10,
+        "degree_in_sign": 19.663189,
+        "is_retrograde": true,
+        "speed": -0.132199
+      },
+      "Venus": {
+        "longitude": 120.583156,
+        "sign_index": 4,
+        "degree_in_sign": 0.583156,
+        "is_retrograde": false,
+        "speed": 1.232006
+      },
+      "Saturn": {
+        "longitude": 82.49539,
+        "sign_index": 2,
+        "degree_in_sign": 22.49539,
+        "is_retrograde": false,
+        "speed": 0.092849
+      },
+      "Rahu": {
+        "longitude": 231.408914,
+        "sign_index": 7,
+        "degree_in_sign": 21.408914,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 51.408914,
+        "sign_index": 1,
+        "degree_in_sign": 21.408914,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

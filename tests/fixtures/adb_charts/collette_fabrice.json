@@ -1,0 +1,109 @@
+{
+  "adb_id": 69902,
+  "name": "Collette, Fabrice",
+  "given_name": "Fabrice Collette",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440221.631944,
+    "year": 1968,
+    "month": 12,
+    "day": 31,
+    "calendar": "g",
+    "time": "04:10",
+    "time_type": "s",
+    "hour": 4.166667,
+    "time_unknown": false,
+    "place": "Caen",
+    "country": "France",
+    "lat": 49.183333,
+    "lon": -0.35
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collette,_Fabrice",
+  "source_notes": "Didier Geslain archive, 'hippisme drivers' pdf file, p. 43.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses",
+    "Vocation : Sports Business : Other Sports Business"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 24.112016,
+    "lagna": 174.112016,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.424063,
+    "jd_ut": 2440221.631944,
+    "planets": {
+      "Sun": {
+        "longitude": 256.094377,
+        "sign_index": 8,
+        "degree_in_sign": 16.094377,
+        "is_retrograde": false,
+        "speed": 1.018951
+      },
+      "Moon": {
+        "longitude": 35.852958,
+        "sign_index": 1,
+        "degree_in_sign": 5.852958,
+        "is_retrograde": false,
+        "speed": 11.611514
+      },
+      "Mars": {
+        "longitude": 187.265875,
+        "sign_index": 6,
+        "degree_in_sign": 7.265875,
+        "is_retrograde": false,
+        "speed": 0.569124
+      },
+      "Mercury": {
+        "longitude": 269.746006,
+        "sign_index": 8,
+        "degree_in_sign": 29.746006,
+        "is_retrograde": false,
+        "speed": 1.583402
+      },
+      "Jupiter": {
+        "longitude": 161.978332,
+        "sign_index": 5,
+        "degree_in_sign": 11.978332,
+        "is_retrograde": false,
+        "speed": 0.063005
+      },
+      "Venus": {
+        "longitude": 301.248291,
+        "sign_index": 10,
+        "degree_in_sign": 1.248291,
+        "is_retrograde": false,
+        "speed": 1.139416
+      },
+      "Saturn": {
+        "longitude": 355.357797,
+        "sign_index": 11,
+        "degree_in_sign": 25.357797,
+        "is_retrograde": false,
+        "speed": 0.017774
+      },
+      "Rahu": {
+        "longitude": 341.235653,
+        "sign_index": 11,
+        "degree_in_sign": 11.235653,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 161.235653,
+        "sign_index": 5,
+        "degree_in_sign": 11.235653,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

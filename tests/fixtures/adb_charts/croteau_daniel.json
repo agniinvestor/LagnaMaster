@@ -1,0 +1,111 @@
+{
+  "adb_id": 1373,
+  "name": "Croteau, Daniel",
+  "given_name": "Daniel Croteau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436715.925,
+    "year": 1959,
+    "month": 5,
+    "day": 27,
+    "calendar": "g",
+    "time": "06:12",
+    "time_type": "d",
+    "hour": 6.2,
+    "time_unknown": false,
+    "place": "Springfield",
+    "country": "Massachusetts",
+    "lat": 42.1,
+    "lon": -72.583333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Croteau,_Daniel",
+  "source_notes": "Frances McEvoy quotes B.C.\\n",
+  "categories": [
+    "Family : Childhood : Abuse-Sexual (outside of family)",
+    "Family : Childhood : Family large",
+    "Passions : Criminal Victim : Homicide victim",
+    "Notable : Famous : Criminal cases"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 1.543431,
+    "lagna": 31.543431,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.290009,
+    "jd_ut": 2436715.925,
+    "planets": {
+      "Sun": {
+        "longitude": 42.092174,
+        "sign_index": 1,
+        "degree_in_sign": 12.092174,
+        "is_retrograde": false,
+        "speed": 0.959661
+      },
+      "Moon": {
+        "longitude": 288.42986,
+        "sign_index": 9,
+        "degree_in_sign": 18.42986,
+        "is_retrograde": false,
+        "speed": 9.422781
+      },
+      "Mars": {
+        "longitude": 93.92803,
+        "sign_index": 3,
+        "degree_in_sign": 3.92803,
+        "is_retrograde": false,
+        "speed": 0.593506
+      },
+      "Mercury": {
+        "longitude": 33.944297,
+        "sign_index": 1,
+        "degree_in_sign": 3.944297,
+        "is_retrograde": false,
+        "speed": 2.097709
+      },
+      "Jupiter": {
+        "longitude": 212.749444,
+        "sign_index": 7,
+        "degree_in_sign": 2.749444,
+        "is_retrograde": true,
+        "speed": -0.124381
+      },
+      "Venus": {
+        "longitude": 85.432218,
+        "sign_index": 2,
+        "degree_in_sign": 25.432218,
+        "is_retrograde": false,
+        "speed": 1.091079
+      },
+      "Saturn": {
+        "longitude": 252.508821,
+        "sign_index": 8,
+        "degree_in_sign": 12.508821,
+        "is_retrograde": true,
+        "speed": -0.057847
+      },
+      "Rahu": {
+        "longitude": 167.010239,
+        "sign_index": 5,
+        "degree_in_sign": 17.010239,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 347.010239,
+        "sign_index": 11,
+        "degree_in_sign": 17.010239,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

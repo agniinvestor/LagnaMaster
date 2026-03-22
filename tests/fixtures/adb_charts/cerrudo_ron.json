@@ -1,0 +1,108 @@
+{
+  "adb_id": 50762,
+  "name": "Cerrudo, Ron",
+  "given_name": "Ron Cerrudo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431491.183333,
+    "year": 1945,
+    "month": 2,
+    "day": 4,
+    "calendar": "g",
+    "time": "09:24",
+    "time_type": "w",
+    "hour": 9.4,
+    "time_unknown": false,
+    "place": "Palo Alto",
+    "country": "California",
+    "lat": 37.45,
+    "lon": -122.15
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cerrudo,_Ron",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Sports : Golf"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 24.986997,
+    "lagna": 294.986997,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.090233,
+    "jd_ut": 2431491.183333,
+    "planets": {
+      "Sun": {
+        "longitude": 292.424178,
+        "sign_index": 9,
+        "degree_in_sign": 22.424178,
+        "is_retrograde": false,
+        "speed": 1.013662
+      },
+      "Moon": {
+        "longitude": 194.132391,
+        "sign_index": 6,
+        "degree_in_sign": 14.132391,
+        "is_retrograde": false,
+        "speed": 8.646594
+      },
+      "Mars": {
+        "longitude": 269.45806,
+        "sign_index": 8,
+        "degree_in_sign": 29.45806,
+        "is_retrograde": false,
+        "speed": 0.763604
+      },
+      "Mercury": {
+        "longitude": 275.835683,
+        "sign_index": 9,
+        "degree_in_sign": 5.835683,
+        "is_retrograde": false,
+        "speed": 1.523674
+      },
+      "Jupiter": {
+        "longitude": 153.5399,
+        "sign_index": 5,
+        "degree_in_sign": 3.5399,
+        "is_retrograde": true,
+        "speed": -0.07248
+      },
+      "Venus": {
+        "longitude": 339.280286,
+        "sign_index": 11,
+        "degree_in_sign": 9.280286,
+        "is_retrograde": false,
+        "speed": 1.000353
+      },
+      "Saturn": {
+        "longitude": 71.524383,
+        "sign_index": 2,
+        "degree_in_sign": 11.524383,
+        "is_retrograde": true,
+        "speed": -0.051557
+      },
+      "Rahu": {
+        "longitude": 83.880052,
+        "sign_index": 2,
+        "degree_in_sign": 23.880052,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 263.880052,
+        "sign_index": 8,
+        "degree_in_sign": 23.880052,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

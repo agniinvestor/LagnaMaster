@@ -1,0 +1,109 @@
+{
+  "adb_id": 64959,
+  "name": "Cazeaux, Monique",
+  "given_name": "Monique Cazeaux",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422668.0,
+    "year": 1920,
+    "month": 12,
+    "day": 9,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cazeaux,_Monique",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 93.\\n",
+  "categories": [
+    "Vocation : Education : Librarian",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 23.824586,
+    "lagna": 293.824586,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.752892,
+    "jd_ut": 2422668.0,
+    "planets": {
+      "Sun": {
+        "longitude": 234.383138,
+        "sign_index": 7,
+        "degree_in_sign": 24.383138,
+        "is_retrograde": false,
+        "speed": 1.016675
+      },
+      "Moon": {
+        "longitude": 224.230521,
+        "sign_index": 7,
+        "degree_in_sign": 14.230521,
+        "is_retrograde": false,
+        "speed": 8.479598
+      },
+      "Mars": {
+        "longitude": 286.436491,
+        "sign_index": 9,
+        "degree_in_sign": 16.436491,
+        "is_retrograde": false,
+        "speed": 0.773174
+      },
+      "Mercury": {
+        "longitude": 214.989115,
+        "sign_index": 7,
+        "degree_in_sign": 4.989115,
+        "is_retrograde": false,
+        "speed": 1.308266
+      },
+      "Jupiter": {
+        "longitude": 145.148027,
+        "sign_index": 4,
+        "degree_in_sign": 25.148027,
+        "is_retrograde": false,
+        "speed": 0.07776
+      },
+      "Venus": {
+        "longitude": 273.647472,
+        "sign_index": 9,
+        "degree_in_sign": 3.647472,
+        "is_retrograde": false,
+        "speed": 1.204463
+      },
+      "Saturn": {
+        "longitude": 151.436109,
+        "sign_index": 5,
+        "degree_in_sign": 1.436109,
+        "is_retrograde": false,
+        "speed": 0.04624
+      },
+      "Rahu": {
+        "longitude": 191.438854,
+        "sign_index": 6,
+        "degree_in_sign": 11.438854,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 11.438854,
+        "sign_index": 0,
+        "degree_in_sign": 11.438854,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

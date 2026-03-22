@@ -1,0 +1,111 @@
+{
+  "adb_id": 47557,
+  "name": "Charles VI, King of France",
+  "given_name": "King of France Charles VI",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2221056.613657,
+    "year": 1368,
+    "month": 12,
+    "day": 3,
+    "calendar": "j",
+    "time": "02:53",
+    "time_type": "l",
+    "hour": 2.883333,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_VI,_King_of_France",
+  "source_notes": "Martin Harvey in Nativitas I quotes B.R.; same from Barbault as \"recorded.\"  December 3, 1368 OS, 3:00 AM LAT.\\nSy Scholfield quotes same data in \"Annales de la monarchie française\" by Henri-Philippe de Limiers (L'Honoré et Chatelain, 1724), p. 63: \"trois heures apres minuit.\"\\n",
+  "categories": [
+    "Diagnoses : Psychological : Psychotic Episode",
+    "Lifestyle : Work : Same Job more than 10 yrs",
+    "Lifestyle : Social Life : Sports",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 24.178549,
+    "lagna": 174.178549,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 15.05435,
+    "jd_ut": 2221056.613657,
+    "planets": {
+      "Sun": {
+        "longitude": 244.742817,
+        "sign_index": 8,
+        "degree_in_sign": 4.742817,
+        "is_retrograde": false,
+        "speed": 1.018987
+      },
+      "Moon": {
+        "longitude": 154.497562,
+        "sign_index": 5,
+        "degree_in_sign": 4.497562,
+        "is_retrograde": false,
+        "speed": 9.587974
+      },
+      "Mars": {
+        "longitude": 178.035154,
+        "sign_index": 5,
+        "degree_in_sign": 28.035154,
+        "is_retrograde": false,
+        "speed": 0.571259
+      },
+      "Mercury": {
+        "longitude": 232.351757,
+        "sign_index": 7,
+        "degree_in_sign": 22.351757,
+        "is_retrograde": false,
+        "speed": 1.519677
+      },
+      "Jupiter": {
+        "longitude": 286.853297,
+        "sign_index": 9,
+        "degree_in_sign": 16.853297,
+        "is_retrograde": false,
+        "speed": 0.206132
+      },
+      "Venus": {
+        "longitude": 245.34596,
+        "sign_index": 8,
+        "degree_in_sign": 5.34596,
+        "is_retrograde": false,
+        "speed": 1.258596
+      },
+      "Saturn": {
+        "longitude": 236.75085,
+        "sign_index": 7,
+        "degree_in_sign": 26.75085,
+        "is_retrograde": false,
+        "speed": 0.116853
+      },
+      "Rahu": {
+        "longitude": 75.300018,
+        "sign_index": 2,
+        "degree_in_sign": 15.300018,
+        "is_retrograde": true,
+        "speed": -0.052993
+      },
+      "Ketu": {
+        "longitude": 255.300018,
+        "sign_index": 8,
+        "degree_in_sign": 15.300018,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

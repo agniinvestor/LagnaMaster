@@ -1,0 +1,109 @@
+{
+  "adb_id": 58173,
+  "name": "Couch, Orville",
+  "given_name": "Orville Couch",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427855.09375,
+    "year": 1935,
+    "month": 2,
+    "day": 21,
+    "calendar": "g",
+    "time": "08:15",
+    "time_type": "s",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Grapevine",
+    "country": "Texas",
+    "lat": 32.933333,
+    "lon": -97.083333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couch,_Orville",
+  "source_notes": "Sy Scholfield from BC in hand.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Country-Western",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 9.908175,
+    "lagna": 309.908175,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.951208,
+    "jd_ut": 2427855.09375,
+    "planets": {
+      "Sun": {
+        "longitude": 309.075242,
+        "sign_index": 10,
+        "degree_in_sign": 9.075242,
+        "is_retrograde": false,
+        "speed": 1.006935
+      },
+      "Moon": {
+        "longitude": 162.673967,
+        "sign_index": 5,
+        "degree_in_sign": 12.673967,
+        "is_retrograde": false,
+        "speed": 11.410408
+      },
+      "Mars": {
+        "longitude": 181.451534,
+        "sign_index": 6,
+        "degree_in_sign": 1.451534,
+        "is_retrograde": false,
+        "speed": 0.069839
+      },
+      "Mercury": {
+        "longitude": 300.006222,
+        "sign_index": 10,
+        "degree_in_sign": 0.006222,
+        "is_retrograde": true,
+        "speed": -0.962952
+      },
+      "Jupiter": {
+        "longitude": 209.915854,
+        "sign_index": 6,
+        "degree_in_sign": 29.915854,
+        "is_retrograde": false,
+        "speed": 0.050959
+      },
+      "Venus": {
+        "longitude": 331.56171,
+        "sign_index": 11,
+        "degree_in_sign": 1.56171,
+        "is_retrograde": false,
+        "speed": 1.239774
+      },
+      "Saturn": {
+        "longitude": 307.894068,
+        "sign_index": 10,
+        "degree_in_sign": 7.894068,
+        "is_retrograde": false,
+        "speed": 0.121356
+      },
+      "Rahu": {
+        "longitude": 276.563963,
+        "sign_index": 9,
+        "degree_in_sign": 6.563963,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 96.563963,
+        "sign_index": 3,
+        "degree_in_sign": 6.563963,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

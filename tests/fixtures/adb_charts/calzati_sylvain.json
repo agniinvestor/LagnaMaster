@@ -1,0 +1,109 @@
+{
+  "adb_id": 64911,
+  "name": "Calzati, Sylvain",
+  "given_name": "Sylvain Calzati",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444056.159722,
+    "year": 1979,
+    "month": 7,
+    "day": 1,
+    "calendar": "g",
+    "time": "17:50",
+    "time_type": "d",
+    "hour": 17.833333,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calzati,_Sylvain",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 24.\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes",
+    "Vocation : Sports : Race Bikes"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 6.413766,
+    "lagna": 186.413766,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.570697,
+    "jd_ut": 2444056.159722,
+    "planets": {
+      "Sun": {
+        "longitude": 75.64874,
+        "sign_index": 2,
+        "degree_in_sign": 15.64874,
+        "is_retrograde": false,
+        "speed": 0.953447
+      },
+      "Moon": {
+        "longitude": 155.22194,
+        "sign_index": 5,
+        "degree_in_sign": 5.22194,
+        "is_retrograde": false,
+        "speed": 8.507267
+      },
+      "Mars": {
+        "longitude": 40.396233,
+        "sign_index": 1,
+        "degree_in_sign": 10.396233,
+        "is_retrograde": false,
+        "speed": 0.707621
+      },
+      "Mercury": {
+        "longitude": 101.417833,
+        "sign_index": 3,
+        "degree_in_sign": 11.417833,
+        "is_retrograde": false,
+        "speed": 1.071326
+      },
+      "Jupiter": {
+        "longitude": 107.338118,
+        "sign_index": 3,
+        "degree_in_sign": 17.338118,
+        "is_retrograde": false,
+        "speed": 0.202006
+      },
+      "Venus": {
+        "longitude": 60.669859,
+        "sign_index": 2,
+        "degree_in_sign": 0.669859,
+        "is_retrograde": false,
+        "speed": 1.220688
+      },
+      "Saturn": {
+        "longitude": 135.81772,
+        "sign_index": 4,
+        "degree_in_sign": 15.81772,
+        "is_retrograde": false,
+        "speed": 0.08208
+      },
+      "Rahu": {
+        "longitude": 138.036213,
+        "sign_index": 4,
+        "degree_in_sign": 18.036213,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 318.036213,
+        "sign_index": 10,
+        "degree_in_sign": 18.036213,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

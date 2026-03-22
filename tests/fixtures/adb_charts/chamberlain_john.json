@@ -1,0 +1,111 @@
+{
+  "adb_id": 85530,
+  "name": "Chamberlain, John",
+  "given_name": "John Chamberlain",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424986.885417,
+    "year": 1927,
+    "month": 4,
+    "day": 16,
+    "calendar": "g",
+    "time": "03:15",
+    "time_type": "s",
+    "hour": 3.25,
+    "time_unknown": false,
+    "place": "Rochester",
+    "country": "Indiana",
+    "lat": 41.066667,
+    "lon": -86.216667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamberlain,_John",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Photography",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 20.413415,
+    "lagna": 290.413415,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.841547,
+    "jd_ut": 2424986.885417,
+    "planets": {
+      "Sun": {
+        "longitude": 2.553525,
+        "sign_index": 0,
+        "degree_in_sign": 2.553525,
+        "is_retrograde": false,
+        "speed": 0.977941
+      },
+      "Moon": {
+        "longitude": 173.870086,
+        "sign_index": 5,
+        "degree_in_sign": 23.870086,
+        "is_retrograde": false,
+        "speed": 9.845361
+      },
+      "Mars": {
+        "longitude": 66.770038,
+        "sign_index": 2,
+        "degree_in_sign": 6.770038,
+        "is_retrograde": false,
+        "speed": 0.581716
+      },
+      "Mercury": {
+        "longitude": 335.738584,
+        "sign_index": 11,
+        "degree_in_sign": 5.738584,
+        "is_retrograde": false,
+        "speed": 1.239239
+      },
+      "Jupiter": {
+        "longitude": 327.776278,
+        "sign_index": 10,
+        "degree_in_sign": 27.776278,
+        "is_retrograde": false,
+        "speed": 0.219044
+      },
+      "Venus": {
+        "longitude": 36.65787,
+        "sign_index": 1,
+        "degree_in_sign": 6.65787,
+        "is_retrograde": false,
+        "speed": 1.193223
+      },
+      "Saturn": {
+        "longitude": 224.135833,
+        "sign_index": 7,
+        "degree_in_sign": 14.135833,
+        "is_retrograde": true,
+        "speed": -0.045608
+      },
+      "Rahu": {
+        "longitude": 68.556281,
+        "sign_index": 2,
+        "degree_in_sign": 8.556281,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 248.556281,
+        "sign_index": 8,
+        "degree_in_sign": 8.556281,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 62566,
+  "name": "Chancel, Jacques",
+  "given_name": "Jacques Chancel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425430.333333,
+    "year": 1928,
+    "month": 7,
+    "day": 2,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "d",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Argelès Gazost",
+    "country": "France",
+    "lat": 43.016667,
+    "lon": 0.1
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chancel,_Jacques",
+  "source_notes": "Collection Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 0.95675,
+    "lagna": 240.95675,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.858502,
+    "jd_ut": 2425430.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 77.78824,
+        "sign_index": 2,
+        "degree_in_sign": 17.78824,
+        "is_retrograde": false,
+        "speed": 0.952897
+      },
+      "Moon": {
+        "longitude": 255.099461,
+        "sign_index": 8,
+        "degree_in_sign": 15.099461,
+        "is_retrograde": false,
+        "speed": 9.95631
+      },
+      "Mars": {
+        "longitude": 11.768395,
+        "sign_index": 0,
+        "degree_in_sign": 11.768395,
+        "is_retrograde": false,
+        "speed": 0.711665
+      },
+      "Mercury": {
+        "longitude": 72.779246,
+        "sign_index": 2,
+        "degree_in_sign": 12.779246,
+        "is_retrograde": true,
+        "speed": -0.528791
+      },
+      "Jupiter": {
+        "longitude": 12.442693,
+        "sign_index": 0,
+        "degree_in_sign": 12.442693,
+        "is_retrograde": false,
+        "speed": 0.160579
+      },
+      "Venus": {
+        "longitude": 78.115752,
+        "sign_index": 2,
+        "degree_in_sign": 18.115752,
+        "is_retrograde": false,
+        "speed": 1.22895
+      },
+      "Saturn": {
+        "longitude": 231.164295,
+        "sign_index": 7,
+        "degree_in_sign": 21.164295,
+        "is_retrograde": true,
+        "speed": -0.061928
+      },
+      "Rahu": {
+        "longitude": 45.057054,
+        "sign_index": 1,
+        "degree_in_sign": 15.057054,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 225.057054,
+        "sign_index": 7,
+        "degree_in_sign": 15.057054,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 60396,
+  "name": "Casparie, Johannes",
+  "given_name": "Johannes Casparie",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405443.502593,
+    "year": 1873,
+    "month": 10,
+    "day": 12,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "l",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Groningen",
+    "country": "Netherlands",
+    "lat": 53.216667,
+    "lon": 6.566667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casparie,_Johannes",
+  "source_notes": "Gauquelin series A Vol 2 #2491\\nhttp://www.dbnl.org/arch/_wie002wiei02_01/pag/_wie002wiei02_01.pdf\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Military : Other Military"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 3.395848,
+    "lagna": 93.395848,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.094443,
+    "jd_ut": 2405443.502593,
+    "planets": {
+      "Sun": {
+        "longitude": 176.647807,
+        "sign_index": 5,
+        "degree_in_sign": 26.647807,
+        "is_retrograde": false,
+        "speed": 0.990563
+      },
+      "Moon": {
+        "longitude": 72.495838,
+        "sign_index": 2,
+        "degree_in_sign": 12.495838,
+        "is_retrograde": false,
+        "speed": 11.468652
+      },
+      "Mars": {
+        "longitude": 246.61943,
+        "sign_index": 8,
+        "degree_in_sign": 6.61943,
+        "is_retrograde": false,
+        "speed": 0.714279
+      },
+      "Mercury": {
+        "longitude": 188.311518,
+        "sign_index": 6,
+        "degree_in_sign": 8.311518,
+        "is_retrograde": false,
+        "speed": 1.568425
+      },
+      "Jupiter": {
+        "longitude": 147.923398,
+        "sign_index": 4,
+        "degree_in_sign": 27.923398,
+        "is_retrograde": false,
+        "speed": 0.202527
+      },
+      "Venus": {
+        "longitude": 144.672086,
+        "sign_index": 4,
+        "degree_in_sign": 24.672086,
+        "is_retrograde": false,
+        "speed": 1.217202
+      },
+      "Saturn": {
+        "longitude": 274.109437,
+        "sign_index": 9,
+        "degree_in_sign": 4.109437,
+        "is_retrograde": false,
+        "speed": 0.01926
+      },
+      "Rahu": {
+        "longitude": 24.20133,
+        "sign_index": 0,
+        "degree_in_sign": 24.20133,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 204.20133,
+        "sign_index": 6,
+        "degree_in_sign": 24.20133,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

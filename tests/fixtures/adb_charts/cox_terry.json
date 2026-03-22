@@ -1,0 +1,109 @@
+{
+  "adb_id": 104165,
+  "name": "Cox, Terry",
+  "given_name": "Terry Cox",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433006.690278,
+    "year": 1949,
+    "month": 3,
+    "day": 30,
+    "calendar": "g",
+    "time": "22:34",
+    "time_type": "s",
+    "hour": 22.566667,
+    "time_unknown": false,
+    "place": "Odessa",
+    "country": "Texas",
+    "lat": 31.85,
+    "lon": -102.366667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cox,_Terry",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Odessa American'' (Odessa, Texas), 31 March 1949, page 5.\\n",
+  "categories": [
+    "Vocation : Sports : Baseball",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 8.155002,
+    "lagna": 188.155002,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.148179,
+    "jd_ut": 2433006.690278,
+    "planets": {
+      "Sun": {
+        "longitude": 346.994256,
+        "sign_index": 11,
+        "degree_in_sign": 16.994256,
+        "is_retrograde": false,
+        "speed": 0.987405
+      },
+      "Moon": {
+        "longitude": 3.166029,
+        "sign_index": 0,
+        "degree_in_sign": 3.166029,
+        "is_retrograde": false,
+        "speed": 14.459267
+      },
+      "Mars": {
+        "longitude": 344.047632,
+        "sign_index": 11,
+        "degree_in_sign": 14.047632,
+        "is_retrograde": false,
+        "speed": 0.773039
+      },
+      "Mercury": {
+        "longitude": 334.149022,
+        "sign_index": 11,
+        "degree_in_sign": 4.149022,
+        "is_retrograde": false,
+        "speed": 1.813542
+      },
+      "Jupiter": {
+        "longitude": 275.269424,
+        "sign_index": 9,
+        "degree_in_sign": 5.269424,
+        "is_retrograde": false,
+        "speed": 0.140097
+      },
+      "Venus": {
+        "longitude": 342.685777,
+        "sign_index": 11,
+        "degree_in_sign": 12.685777,
+        "is_retrograde": false,
+        "speed": 1.241651
+      },
+      "Saturn": {
+        "longitude": 127.001034,
+        "sign_index": 4,
+        "degree_in_sign": 7.001034,
+        "is_retrograde": true,
+        "speed": -0.05177
+      },
+      "Rahu": {
+        "longitude": 3.570213,
+        "sign_index": 0,
+        "degree_in_sign": 3.570213,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 183.570213,
+        "sign_index": 6,
+        "degree_in_sign": 3.570213,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

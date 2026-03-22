@@ -1,0 +1,115 @@
+{
+  "adb_id": 1620,
+  "name": "Charles IX, King of France",
+  "given_name": "King of France Charles IX",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2287372.712963,
+    "year": 1550,
+    "month": 6,
+    "day": 27,
+    "calendar": "j",
+    "time": "05:15",
+    "time_type": "l",
+    "hour": 5.25,
+    "time_unknown": false,
+    "place": "St.Germain",
+    "country": "France",
+    "lat": 48.9,
+    "lon": 2.083333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_IX,_King_of_France",
+  "source_notes": "Arthur Blackwell quotes biographer Anselme, \"Histoire\" which gives the data from a letter from his father, Henri II.  (June 27 OS)\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Tuberculosis",
+    "Diagnoses : Psychological : Schizophrenia",
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids 1-3",
+    "Passions : Sexuality : Bi-Sexual",
+    "Passions : Criminal Perpetrator : Homicide many at once",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 21.834683,
+    "lagna": 81.834683,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.584573,
+    "jd_ut": 2287372.712963,
+    "planets": {
+      "Sun": {
+        "longitude": 86.598261,
+        "sign_index": 2,
+        "degree_in_sign": 26.598261,
+        "is_retrograde": false,
+        "speed": 0.953079
+      },
+      "Moon": {
+        "longitude": 246.045501,
+        "sign_index": 8,
+        "degree_in_sign": 6.045501,
+        "is_retrograde": false,
+        "speed": 13.264915
+      },
+      "Mars": {
+        "longitude": 25.226521,
+        "sign_index": 0,
+        "degree_in_sign": 25.226521,
+        "is_retrograde": false,
+        "speed": 0.699984
+      },
+      "Mercury": {
+        "longitude": 105.819405,
+        "sign_index": 3,
+        "degree_in_sign": 15.819405,
+        "is_retrograde": false,
+        "speed": 1.699558
+      },
+      "Jupiter": {
+        "longitude": 59.309448,
+        "sign_index": 1,
+        "degree_in_sign": 29.309448,
+        "is_retrograde": false,
+        "speed": 0.217322
+      },
+      "Venus": {
+        "longitude": 45.296836,
+        "sign_index": 1,
+        "degree_in_sign": 15.296836,
+        "is_retrograde": false,
+        "speed": 0.588639
+      },
+      "Saturn": {
+        "longitude": 290.877909,
+        "sign_index": 9,
+        "degree_in_sign": 20.877909,
+        "is_retrograde": true,
+        "speed": -0.064222
+      },
+      "Rahu": {
+        "longitude": 161.042469,
+        "sign_index": 5,
+        "degree_in_sign": 11.042469,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 341.042469,
+        "sign_index": 11,
+        "degree_in_sign": 11.042469,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

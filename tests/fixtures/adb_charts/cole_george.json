@@ -1,0 +1,114 @@
+{
+  "adb_id": 43925,
+  "name": "Cole, George",
+  "given_name": "George Cole",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2424262.916667,
+    "year": 1925,
+    "month": 4,
+    "day": 22,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "d",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cole,_George",
+  "source_notes": "Frank C. Clifford quotes him, given in British Entertainers, Flare Pub. 1997.  Cole was born in Tooting, a suburb of London\\n",
+  "categories": [
+    "Family : Childhood : Adopted",
+    "Family : Childhood : Family traumatic event",
+    "Family : Relationship : Marriage less than 3 Yrs",
+    "Family : Relationship : Number of Divorces",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Live Stage"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 10.788646,
+    "lagna": 70.788646,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.813868,
+    "jd_ut": 2424262.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 8.943937,
+        "sign_index": 0,
+        "degree_in_sign": 8.943937,
+        "is_retrograde": false,
+        "speed": 0.975017
+      },
+      "Moon": {
+        "longitude": 0.619507,
+        "sign_index": 0,
+        "degree_in_sign": 0.619507,
+        "is_retrograde": false,
+        "speed": 10.123218
+      },
+      "Mars": {
+        "longitude": 56.024436,
+        "sign_index": 1,
+        "degree_in_sign": 26.024436,
+        "is_retrograde": false,
+        "speed": 0.638481
+      },
+      "Mercury": {
+        "longitude": 2.755774,
+        "sign_index": 0,
+        "degree_in_sign": 2.755774,
+        "is_retrograde": true,
+        "speed": -0.656848
+      },
+      "Jupiter": {
+        "longitude": 269.193479,
+        "sign_index": 8,
+        "degree_in_sign": 29.193479,
+        "is_retrograde": false,
+        "speed": 0.056116
+      },
+      "Venus": {
+        "longitude": 8.517395,
+        "sign_index": 0,
+        "degree_in_sign": 8.517395,
+        "is_retrograde": false,
+        "speed": 1.235993
+      },
+      "Saturn": {
+        "longitude": 198.9144,
+        "sign_index": 6,
+        "degree_in_sign": 18.9144,
+        "is_retrograde": true,
+        "speed": -0.073922
+      },
+      "Rahu": {
+        "longitude": 106.920893,
+        "sign_index": 3,
+        "degree_in_sign": 16.920893,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 286.920893,
+        "sign_index": 9,
+        "degree_in_sign": 16.920893,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

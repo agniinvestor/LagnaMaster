@@ -1,0 +1,113 @@
+{
+  "adb_id": 8210,
+  "name": "Colussi, Alberto",
+  "given_name": "Alberto Colussi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429094.145833,
+    "year": 1938,
+    "month": 7,
+    "day": 14,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "s",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "Venice",
+    "country": "Italy",
+    "lat": 45.433333,
+    "lon": 12.35
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colussi,_Alberto",
+  "source_notes": "Bordoni quotes B.C. Vol 4\\n",
+  "categories": [
+    "Lifestyle : Social Life : Sports",
+    "Vocation : Business : Consultant",
+    "Vocation : Business : Top executive",
+    "Vocation : Business/Marketing : Public relations",
+    "Vocation : Travel : Adventurer",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 19.405521,
+    "lagna": 199.405521,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.998582,
+    "jd_ut": 2429094.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 88.510317,
+        "sign_index": 2,
+        "degree_in_sign": 28.510317,
+        "is_retrograde": false,
+        "speed": 0.953441
+      },
+      "Moon": {
+        "longitude": 290.918791,
+        "sign_index": 9,
+        "degree_in_sign": 20.918791,
+        "is_retrograde": false,
+        "speed": 14.573857
+      },
+      "Mars": {
+        "longitude": 91.638318,
+        "sign_index": 3,
+        "degree_in_sign": 1.638318,
+        "is_retrograde": false,
+        "speed": 0.647793
+      },
+      "Mercury": {
+        "longitude": 109.928823,
+        "sign_index": 3,
+        "degree_in_sign": 19.928823,
+        "is_retrograde": false,
+        "speed": 1.59832
+      },
+      "Jupiter": {
+        "longitude": 308.410636,
+        "sign_index": 10,
+        "degree_in_sign": 8.410636,
+        "is_retrograde": true,
+        "speed": -0.071339
+      },
+      "Venus": {
+        "longitude": 127.467911,
+        "sign_index": 4,
+        "degree_in_sign": 7.467911,
+        "is_retrograde": false,
+        "speed": 1.157094
+      },
+      "Saturn": {
+        "longitude": 354.816338,
+        "sign_index": 11,
+        "degree_in_sign": 24.816338,
+        "is_retrograde": false,
+        "speed": 0.027793
+      },
+      "Rahu": {
+        "longitude": 210.904026,
+        "sign_index": 7,
+        "degree_in_sign": 0.904026,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 30.904026,
+        "sign_index": 1,
+        "degree_in_sign": 0.904026,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

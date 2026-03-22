@@ -1,0 +1,116 @@
+{
+  "adb_id": 8652,
+  "name": "Carr, Vikki",
+  "given_name": "Vikki Carr",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429830.416667,
+    "year": 1940,
+    "month": 7,
+    "day": 19,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "El Paso",
+    "country": "Texas",
+    "lat": 31.766667,
+    "lon": -106.483333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carr,_Vikki",
+  "source_notes": "Steinbrecher quotes B.C.\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Family : Childhood : Family large",
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Number of Marriages",
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 14.03108,
+    "lagna": 194.03108,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.026733,
+    "jd_ut": 2429830.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 94.006683,
+        "sign_index": 3,
+        "degree_in_sign": 4.006683,
+        "is_retrograde": false,
+        "speed": 0.954
+      },
+      "Moon": {
+        "longitude": 280.360638,
+        "sign_index": 9,
+        "degree_in_sign": 10.360638,
+        "is_retrograde": false,
+        "speed": 16.267186
+      },
+      "Mars": {
+        "longitude": 107.44579,
+        "sign_index": 3,
+        "degree_in_sign": 17.44579,
+        "is_retrograde": false,
+        "speed": 0.634839
+      },
+      "Mercury": {
+        "longitude": 97.768065,
+        "sign_index": 3,
+        "degree_in_sign": 7.768065,
+        "is_retrograde": true,
+        "speed": -0.683435
+      },
+      "Jupiter": {
+        "longitude": 19.286897,
+        "sign_index": 0,
+        "degree_in_sign": 19.286897,
+        "is_retrograde": false,
+        "speed": 0.135476
+      },
+      "Venus": {
+        "longitude": 63.792803,
+        "sign_index": 2,
+        "degree_in_sign": 3.792803,
+        "is_retrograde": false,
+        "speed": 0.052258
+      },
+      "Saturn": {
+        "longitude": 20.492119,
+        "sign_index": 0,
+        "degree_in_sign": 20.492119,
+        "is_retrograde": false,
+        "speed": 0.063546
+      },
+      "Rahu": {
+        "longitude": 171.887511,
+        "sign_index": 5,
+        "degree_in_sign": 21.887511,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 351.887511,
+        "sign_index": 11,
+        "degree_in_sign": 21.887511,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

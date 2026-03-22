@@ -1,0 +1,109 @@
+{
+  "adb_id": 62407,
+  "name": "Chávez, Jorge",
+  "given_name": "Jorge Chávez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410436.410185,
+    "year": 1887,
+    "month": 6,
+    "day": 13,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chávez,_Jorge",
+  "source_notes": "Sy Scholfield quotes birth record in \"Jorge Chávez Dartnell: centenario de la hazaña del cruce de los Alpes (1910 - 2010)\" by Oscar Gregorio Gagliardi Kindlimann (Universidad Alas Peruanas, 2010), p. 253: \"la nascita di Jorge Antonio venne iscritta nell'Atto di nascita che fu registrato dall'Assistente del Sindaco, ... che diedero fede della nascita di Jorge Antonio Chávez Dartnell, avvenuta il 13 giugno 1887, alle 10 di notte.\"\\n",
+  "categories": [
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Vocation : Travel : Aviation field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 8.754583,
+    "lagna": 248.754583,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.285295,
+    "jd_ut": 2410436.410185,
+    "planets": {
+      "Sun": {
+        "longitude": 60.215296,
+        "sign_index": 2,
+        "degree_in_sign": 0.215296,
+        "is_retrograde": false,
+        "speed": 0.954975
+      },
+      "Moon": {
+        "longitude": 334.146335,
+        "sign_index": 11,
+        "degree_in_sign": 4.146335,
+        "is_retrograde": false,
+        "speed": 13.689743
+      },
+      "Mars": {
+        "longitude": 48.10185,
+        "sign_index": 1,
+        "degree_in_sign": 18.10185,
+        "is_retrograde": false,
+        "speed": 0.698431
+      },
+      "Mercury": {
+        "longitude": 78.86646,
+        "sign_index": 2,
+        "degree_in_sign": 18.86646,
+        "is_retrograde": false,
+        "speed": 1.740813
+      },
+      "Jupiter": {
+        "longitude": 183.826123,
+        "sign_index": 6,
+        "degree_in_sign": 3.826123,
+        "is_retrograde": true,
+        "speed": -0.028093
+      },
+      "Venus": {
+        "longitude": 103.291157,
+        "sign_index": 3,
+        "degree_in_sign": 13.291157,
+        "is_retrograde": false,
+        "speed": 1.097152
+      },
+      "Saturn": {
+        "longitude": 89.396161,
+        "sign_index": 2,
+        "degree_in_sign": 29.396161,
+        "is_retrograde": false,
+        "speed": 0.118682
+      },
+      "Rahu": {
+        "longitude": 119.616543,
+        "sign_index": 3,
+        "degree_in_sign": 29.616543,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 299.616543,
+        "sign_index": 9,
+        "degree_in_sign": 29.616543,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

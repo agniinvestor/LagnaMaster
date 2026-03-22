@@ -1,0 +1,109 @@
+{
+  "adb_id": 71649,
+  "name": "Chiara, Maria",
+  "given_name": "Maria Chiara",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429591.5,
+    "year": 1939,
+    "month": 11,
+    "day": 24,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Oderzo",
+    "country": "Italy",
+    "lat": 45.783333,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiara,_Maria",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes her.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Music teacher",
+    "Vocation : Entertain/Music : Vocalist/Opera"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 2.31256,
+    "lagna": 122.31256,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.017598,
+    "jd_ut": 2429591.5,
+    "planets": {
+      "Sun": {
+        "longitude": 217.781658,
+        "sign_index": 7,
+        "degree_in_sign": 7.781658,
+        "is_retrograde": false,
+        "speed": 1.010685
+      },
+      "Moon": {
+        "longitude": 2.454188,
+        "sign_index": 0,
+        "degree_in_sign": 2.454188,
+        "is_retrograde": false,
+        "speed": 9.957417
+      },
+      "Mars": {
+        "longitude": 309.741151,
+        "sign_index": 10,
+        "degree_in_sign": 9.741151,
+        "is_retrograde": false,
+        "speed": 0.64052
+      },
+      "Mercury": {
+        "longitude": 228.34406,
+        "sign_index": 7,
+        "degree_in_sign": 18.34406,
+        "is_retrograde": true,
+        "speed": -0.947579
+      },
+      "Jupiter": {
+        "longitude": 335.852952,
+        "sign_index": 11,
+        "degree_in_sign": 5.852952,
+        "is_retrograde": true,
+        "speed": -0.003107
+      },
+      "Venus": {
+        "longitude": 238.001251,
+        "sign_index": 7,
+        "degree_in_sign": 28.001251,
+        "is_retrograde": false,
+        "speed": 1.246997
+      },
+      "Saturn": {
+        "longitude": 2.416984,
+        "sign_index": 0,
+        "degree_in_sign": 2.416984,
+        "is_retrograde": true,
+        "speed": -0.056889
+      },
+      "Rahu": {
+        "longitude": 184.548199,
+        "sign_index": 6,
+        "degree_in_sign": 4.548199,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 4.548199,
+        "sign_index": 0,
+        "degree_in_sign": 4.548199,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

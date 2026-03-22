@@ -1,0 +1,110 @@
+{
+  "adb_id": 63070,
+  "name": "Cerquiglini, Bernard",
+  "given_name": "Bernard Cerquiglini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432283.770833,
+    "year": 1947,
+    "month": 4,
+    "day": 8,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "s",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cerquiglini,_Bernard",
+  "source_notes": "Didier Geslain archive, 'Philosophes' pdf file, p. 25.\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Humanities+Social Sciences : Linguist",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 3.259379,
+    "lagna": 3.259379,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.120538,
+    "jd_ut": 2432283.770833,
+    "planets": {
+      "Sun": {
+        "longitude": 354.471664,
+        "sign_index": 11,
+        "degree_in_sign": 24.471664,
+        "is_retrograde": false,
+        "speed": 0.982505
+      },
+      "Moon": {
+        "longitude": 205.302689,
+        "sign_index": 6,
+        "degree_in_sign": 25.302689,
+        "is_retrograde": false,
+        "speed": 10.961341
+      },
+      "Mars": {
+        "longitude": 334.012179,
+        "sign_index": 11,
+        "degree_in_sign": 4.012179,
+        "is_retrograde": false,
+        "speed": 0.779176
+      },
+      "Mercury": {
+        "longitude": 326.916911,
+        "sign_index": 10,
+        "degree_in_sign": 26.916911,
+        "is_retrograde": false,
+        "speed": 1.112471
+      },
+      "Jupiter": {
+        "longitude": 213.503485,
+        "sign_index": 7,
+        "degree_in_sign": 3.503485,
+        "is_retrograde": true,
+        "speed": -0.073948
+      },
+      "Venus": {
+        "longitude": 316.769563,
+        "sign_index": 10,
+        "degree_in_sign": 16.769563,
+        "is_retrograde": false,
+        "speed": 1.188006
+      },
+      "Saturn": {
+        "longitude": 98.851434,
+        "sign_index": 3,
+        "degree_in_sign": 8.851434,
+        "is_retrograde": false,
+        "speed": 0.008106
+      },
+      "Rahu": {
+        "longitude": 41.879205,
+        "sign_index": 1,
+        "degree_in_sign": 11.879205,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 221.879205,
+        "sign_index": 7,
+        "degree_in_sign": 11.879205,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

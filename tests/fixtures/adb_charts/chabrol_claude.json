@@ -1,0 +1,112 @@
+{
+  "adb_id": 50764,
+  "name": "Chabrol, Claude",
+  "given_name": "Claude Chabrol",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426152.375,
+    "year": 1930,
+    "month": 6,
+    "day": 24,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "d",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 10",
+    "country": "France",
+    "lat": 48.871944,
+    "lon": 2.3575
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chabrol,_Claude",
+  "source_notes": "BC in hand Didier Geslain archive; extract of BC in Didier Geslain archive, 'Cinema Realisateurs' pdf file, p. 56.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 4.82576,
+    "lagna": 244.82576,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.886107,
+    "jd_ut": 2426152.375,
+    "planets": {
+      "Sun": {
+        "longitude": 69.705542,
+        "sign_index": 2,
+        "degree_in_sign": 9.705542,
+        "is_retrograde": false,
+        "speed": 0.954159
+      },
+      "Moon": {
+        "longitude": 46.198517,
+        "sign_index": 1,
+        "degree_in_sign": 16.198517,
+        "is_retrograde": false,
+        "speed": 17.981796
+      },
+      "Mars": {
+        "longitude": 23.105039,
+        "sign_index": 0,
+        "degree_in_sign": 23.105039,
+        "is_retrograde": false,
+        "speed": 0.724303
+      },
+      "Mercury": {
+        "longitude": 49.369525,
+        "sign_index": 1,
+        "degree_in_sign": 19.369525,
+        "is_retrograde": false,
+        "speed": 1.50725
+      },
+      "Jupiter": {
+        "longitude": 66.641801,
+        "sign_index": 2,
+        "degree_in_sign": 6.641801,
+        "is_retrograde": false,
+        "speed": 0.229177
+      },
+      "Venus": {
+        "longitude": 103.861625,
+        "sign_index": 3,
+        "degree_in_sign": 13.861625,
+        "is_retrograde": false,
+        "speed": 1.184668
+      },
+      "Saturn": {
+        "longitude": 256.155515,
+        "sign_index": 8,
+        "degree_in_sign": 16.155515,
+        "is_retrograde": true,
+        "speed": -0.073222
+      },
+      "Rahu": {
+        "longitude": 6.794564,
+        "sign_index": 0,
+        "degree_in_sign": 6.794564,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 186.794564,
+        "sign_index": 6,
+        "degree_in_sign": 6.794564,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

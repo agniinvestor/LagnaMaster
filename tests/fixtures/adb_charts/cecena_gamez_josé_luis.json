@@ -1,0 +1,108 @@
+{
+  "adb_id": 74059,
+  "name": "Cecena Gamez, José Luis",
+  "given_name": "José Luis Cecena Gamez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420752.628935,
+    "year": 1915,
+    "month": 9,
+    "day": 11,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Mazatlán (Sinaloa)",
+    "country": "Mexico",
+    "lat": 23.216667,
+    "lon": -106.416667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cecena_Gamez,_José_Luis",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Economics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 11.016074,
+    "lagna": 341.016074,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.679665,
+    "jd_ut": 2420752.628935,
+    "planets": {
+      "Sun": {
+        "longitude": 145.591571,
+        "sign_index": 4,
+        "degree_in_sign": 25.591571,
+        "is_retrograde": false,
+        "speed": 0.973325
+      },
+      "Moon": {
+        "longitude": 179.437126,
+        "sign_index": 5,
+        "degree_in_sign": 29.437126,
+        "is_retrograde": false,
+        "speed": 13.78074
+      },
+      "Mars": {
+        "longitude": 82.298924,
+        "sign_index": 2,
+        "degree_in_sign": 22.298924,
+        "is_retrograde": false,
+        "speed": 0.610249
+      },
+      "Mercury": {
+        "longitude": 167.423303,
+        "sign_index": 5,
+        "degree_in_sign": 17.423303,
+        "is_retrograde": false,
+        "speed": 1.428396
+      },
+      "Jupiter": {
+        "longitude": 331.533852,
+        "sign_index": 11,
+        "degree_in_sign": 1.533852,
+        "is_retrograde": true,
+        "speed": -0.132089
+      },
+      "Venus": {
+        "longitude": 145.42024,
+        "sign_index": 4,
+        "degree_in_sign": 25.42024,
+        "is_retrograde": false,
+        "speed": 1.243577
+      },
+      "Saturn": {
+        "longitude": 81.801765,
+        "sign_index": 2,
+        "degree_in_sign": 21.801765,
+        "is_retrograde": false,
+        "speed": 0.080129
+      },
+      "Rahu": {
+        "longitude": 292.938372,
+        "sign_index": 9,
+        "degree_in_sign": 22.938372,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 112.938372,
+        "sign_index": 3,
+        "degree_in_sign": 22.938372,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

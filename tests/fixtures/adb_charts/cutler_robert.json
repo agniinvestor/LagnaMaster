@@ -1,0 +1,114 @@
+{
+  "adb_id": 60250,
+  "name": "Cutler, Robert",
+  "given_name": "Robert Cutler",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2413356.916667,
+    "year": 1895,
+    "month": 6,
+    "day": 12,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Brookline",
+    "country": "Massachusetts",
+    "lat": 42.333333,
+    "lon": -71.116667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cutler,_Robert",
+  "source_notes": "Sy Scholfield quotes \"No Time for Rest - Part 23\" by Robert Cutler (Little, Brown, 1966), p. 18: \"I was born in June, 1895, at five o'clock in the morning, at my family's home on Walnut Street in Brookline, half a block from where Dr. Harvey Cushing later dwelt.\"\\n",
+  "categories": [
+    "Vocation : Business : Banker/ Financier",
+    "Vocation : Law : Attorney",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Government employee",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.607522,
+    "lagna": 47.607522,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.396936,
+    "jd_ut": 2413356.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 58.741622,
+        "sign_index": 1,
+        "degree_in_sign": 28.741622,
+        "is_retrograde": false,
+        "speed": 0.955105
+      },
+      "Moon": {
+        "longitude": 294.996567,
+        "sign_index": 9,
+        "degree_in_sign": 24.996567,
+        "is_retrograde": false,
+        "speed": 8.277313
+      },
+      "Mars": {
+        "longitude": 98.668436,
+        "sign_index": 3,
+        "degree_in_sign": 8.668436,
+        "is_retrograde": false,
+        "speed": 0.613067
+      },
+      "Mercury": {
+        "longitude": 80.685916,
+        "sign_index": 2,
+        "degree_in_sign": 20.685916,
+        "is_retrograde": false,
+        "speed": 0.465052
+      },
+      "Jupiter": {
+        "longitude": 79.315672,
+        "sign_index": 2,
+        "degree_in_sign": 19.315672,
+        "is_retrograde": false,
+        "speed": 0.21781
+      },
+      "Venus": {
+        "longitude": 101.923187,
+        "sign_index": 3,
+        "degree_in_sign": 11.923187,
+        "is_retrograde": false,
+        "speed": 1.094599
+      },
+      "Saturn": {
+        "longitude": 188.52625,
+        "sign_index": 6,
+        "degree_in_sign": 8.52625,
+        "is_retrograde": true,
+        "speed": -0.034621
+      },
+      "Rahu": {
+        "longitude": 324.852726,
+        "sign_index": 10,
+        "degree_in_sign": 24.852726,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 144.852726,
+        "sign_index": 4,
+        "degree_in_sign": 24.852726,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 73446,
+  "name": "Calmettes, André",
+  "given_name": "André Calmettes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2401006.035185,
+    "year": 1861,
+    "month": 8,
+    "day": 18,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "l",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calmettes,_André",
+  "source_notes": "Sy Scholfield cites birth data from registry (\"Paris 1er/acte n°1538\") quoted in \"Henri de Toulouse-Lautrec ou les labyrinthes du Temps: Art et géométrie temporelle\" by Gérard and Julie Conton (Mémoires du Monde, 2015), p. 403; death data on same page (\"Paris XVIeme/acte n°721\").\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 8.191184,
+    "lagna": 188.191184,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.924832,
+    "jd_ut": 2401006.035185,
+    "planets": {
+      "Sun": {
+        "longitude": 123.566078,
+        "sign_index": 4,
+        "degree_in_sign": 3.566078,
+        "is_retrograde": false,
+        "speed": 0.962455
+      },
+      "Moon": {
+        "longitude": 280.307332,
+        "sign_index": 9,
+        "degree_in_sign": 10.307332,
+        "is_retrograde": false,
+        "speed": 15.845599
+      },
+      "Mars": {
+        "longitude": 126.438872,
+        "sign_index": 4,
+        "degree_in_sign": 6.438872,
+        "is_retrograde": false,
+        "speed": 0.63568
+      },
+      "Mercury": {
+        "longitude": 107.411631,
+        "sign_index": 3,
+        "degree_in_sign": 17.411631,
+        "is_retrograde": false,
+        "speed": 1.630659
+      },
+      "Jupiter": {
+        "longitude": 133.014162,
+        "sign_index": 4,
+        "degree_in_sign": 13.014162,
+        "is_retrograde": false,
+        "speed": 0.215509
+      },
+      "Venus": {
+        "longitude": 150.119736,
+        "sign_index": 5,
+        "degree_in_sign": 0.119736,
+        "is_retrograde": false,
+        "speed": 1.216893
+      },
+      "Saturn": {
+        "longitude": 138.7025,
+        "sign_index": 4,
+        "degree_in_sign": 18.7025,
+        "is_retrograde": false,
+        "speed": 0.122905
+      },
+      "Rahu": {
+        "longitude": 259.352212,
+        "sign_index": 8,
+        "degree_in_sign": 19.352212,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 79.352212,
+        "sign_index": 2,
+        "degree_in_sign": 19.352212,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

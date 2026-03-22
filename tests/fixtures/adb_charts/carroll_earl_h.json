@@ -1,0 +1,111 @@
+{
+  "adb_id": 61502,
+  "name": "Carroll, Earl H.",
+  "given_name": "Earl H. Carroll",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424236.729167,
+    "year": 1925,
+    "month": 3,
+    "day": 26,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carroll,_Earl_H.",
+  "source_notes": "Sy Scholfield quotes birth certificate: http://genealogy.az.gov/azbirth/451/451-0785.pdf; http://genealogy.az.gov/azbirth/451/451-0784.pdf\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 9.796934,
+    "lagna": 189.796934,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.812867,
+    "jd_ut": 2424236.729167,
+    "planets": {
+      "Sun": {
+        "longitude": 343.233588,
+        "sign_index": 11,
+        "degree_in_sign": 13.233588,
+        "is_retrograde": false,
+        "speed": 0.989533
+      },
+      "Moon": {
+        "longitude": 14.979976,
+        "sign_index": 0,
+        "degree_in_sign": 14.979976,
+        "is_retrograde": false,
+        "speed": 14.88676
+      },
+      "Mars": {
+        "longitude": 39.248653,
+        "sign_index": 1,
+        "degree_in_sign": 9.248653,
+        "is_retrograde": false,
+        "speed": 0.642863
+      },
+      "Mercury": {
+        "longitude": 1.37716,
+        "sign_index": 0,
+        "degree_in_sign": 1.37716,
+        "is_retrograde": false,
+        "speed": 1.346184
+      },
+      "Jupiter": {
+        "longitude": 266.773622,
+        "sign_index": 8,
+        "degree_in_sign": 26.773622,
+        "is_retrograde": false,
+        "speed": 0.125893
+      },
+      "Venus": {
+        "longitude": 336.074775,
+        "sign_index": 11,
+        "degree_in_sign": 6.074775,
+        "is_retrograde": false,
+        "speed": 1.242098
+      },
+      "Saturn": {
+        "longitude": 200.609209,
+        "sign_index": 6,
+        "degree_in_sign": 20.609209,
+        "is_retrograde": true,
+        "speed": -0.051724
+      },
+      "Rahu": {
+        "longitude": 108.308623,
+        "sign_index": 3,
+        "degree_in_sign": 18.308623,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 288.308623,
+        "sign_index": 9,
+        "degree_in_sign": 18.308623,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

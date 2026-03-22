@@ -1,0 +1,108 @@
+{
+  "adb_id": 57419,
+  "name": "Christian-Jaque",
+  "given_name": "Christian-Jaque",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416727.82684,
+    "year": 1904,
+    "month": 9,
+    "day": 4,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 19",
+    "country": "France",
+    "lat": 48.882778,
+    "lon": 2.381944
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian-Jaque",
+  "source_notes": "from Geslain archive, same data by Taeger IHL update 3.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.447062,
+    "lagna": 144.447062,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.525799,
+    "jd_ut": 2416727.82684,
+    "planets": {
+      "Sun": {
+        "longitude": 138.802658,
+        "sign_index": 4,
+        "degree_in_sign": 18.802658,
+        "is_retrograde": false,
+        "speed": 0.969685
+      },
+      "Moon": {
+        "longitude": 63.355824,
+        "sign_index": 2,
+        "degree_in_sign": 3.355824,
+        "is_retrograde": false,
+        "speed": 9.792171
+      },
+      "Mars": {
+        "longitude": 110.38862,
+        "sign_index": 3,
+        "degree_in_sign": 20.38862,
+        "is_retrograde": false,
+        "speed": 0.634404
+      },
+      "Mercury": {
+        "longitude": 158.695253,
+        "sign_index": 5,
+        "degree_in_sign": 8.695253,
+        "is_retrograde": true,
+        "speed": -0.158238
+      },
+      "Jupiter": {
+        "longitude": 7.311584,
+        "sign_index": 0,
+        "degree_in_sign": 7.311584,
+        "is_retrograde": true,
+        "speed": -0.049738
+      },
+      "Venus": {
+        "longitude": 154.695694,
+        "sign_index": 5,
+        "degree_in_sign": 4.695694,
+        "is_retrograde": false,
+        "speed": 1.235283
+      },
+      "Saturn": {
+        "longitude": 293.385926,
+        "sign_index": 9,
+        "degree_in_sign": 23.385926,
+        "is_retrograde": true,
+        "speed": -0.063637
+      },
+      "Rahu": {
+        "longitude": 146.221086,
+        "sign_index": 4,
+        "degree_in_sign": 26.221086,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 326.221086,
+        "sign_index": 10,
+        "degree_in_sign": 26.221086,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

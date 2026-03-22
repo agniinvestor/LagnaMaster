@@ -1,0 +1,116 @@
+{
+  "adb_id": 87547,
+  "name": "Cleveland, Ruth",
+  "given_name": "Ruth Cleveland",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2412008.7125,
+    "year": 1891,
+    "month": 10,
+    "day": 3,
+    "calendar": "g",
+    "time": "00:06",
+    "time_type": "s",
+    "hour": 0.1,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cleveland,_Ruth",
+  "source_notes": "Sy Scholfield quotes The Sun (New York, New York), 4 Oct 1891, p. 1: \"[Y]esterday morning... Mrs. Grover Cleveland ... gave birth to a blue-eyed girl baby. The event occurred on the second floor of their residence, 816 Madison avenue... The doorkeeper hadn't much to tell. 'All there is,' he said, 'is that Mrs. Cleveland gave birth to a daughter about six minutes after midnight this morning.'\"\\n",
+  "categories": [
+    "Traits : Body : Constitution sensitive",
+    "Traits : Body : Other body",
+    "Diagnoses : Major Diseases : Other Major diseases",
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family large",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Personal : Death : Illness/ Disease",
+    "Personal : Death : Short Life less than 29 Yrs"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 15.598046,
+    "lagna": 75.598046,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.345398,
+    "jd_ut": 2412008.7125,
+    "planets": {
+      "Sun": {
+        "longitude": 167.356592,
+        "sign_index": 5,
+        "degree_in_sign": 17.356592,
+        "is_retrograde": false,
+        "speed": 0.985532
+      },
+      "Moon": {
+        "longitude": 169.472081,
+        "sign_index": 5,
+        "degree_in_sign": 19.472081,
+        "is_retrograde": false,
+        "speed": 15.635107
+      },
+      "Mars": {
+        "longitude": 145.776434,
+        "sign_index": 4,
+        "degree_in_sign": 25.776434,
+        "is_retrograde": false,
+        "speed": 0.634372
+      },
+      "Mercury": {
+        "longitude": 150.494133,
+        "sign_index": 5,
+        "degree_in_sign": 0.494133,
+        "is_retrograde": false,
+        "speed": 1.406771
+      },
+      "Jupiter": {
+        "longitude": 317.398778,
+        "sign_index": 10,
+        "degree_in_sign": 17.398778,
+        "is_retrograde": true,
+        "speed": -0.097405
+      },
+      "Venus": {
+        "longitude": 171.217958,
+        "sign_index": 5,
+        "degree_in_sign": 21.217958,
+        "is_retrograde": false,
+        "speed": 1.248385
+      },
+      "Saturn": {
+        "longitude": 150.5398,
+        "sign_index": 5,
+        "degree_in_sign": 0.5398,
+        "is_retrograde": false,
+        "speed": 0.121617
+      },
+      "Rahu": {
+        "longitude": 36.296914,
+        "sign_index": 1,
+        "degree_in_sign": 6.296914,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 216.296914,
+        "sign_index": 7,
+        "degree_in_sign": 6.296914,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

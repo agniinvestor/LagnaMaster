@@ -1,0 +1,110 @@
+{
+  "adb_id": 47647,
+  "name": "Curren, Catherine",
+  "given_name": "Catherine Curren",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446509.977778,
+    "year": 1986,
+    "month": 3,
+    "day": 20,
+    "calendar": "g",
+    "time": "06:28",
+    "time_type": "s",
+    "hour": 6.466667,
+    "time_unknown": false,
+    "place": "Stoneham",
+    "country": "Massachusetts",
+    "lat": 42.483333,
+    "lon": -71.1
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curren,_Catherine",
+  "source_notes": "Frances McEvoy quotes B.C.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Family traumatic event",
+    "Family : Childhood : Order of birth"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 28.079482,
+    "lagna": 328.079482,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.664535,
+    "jd_ut": 2446509.977778,
+    "planets": {
+      "Sun": {
+        "longitude": 335.900041,
+        "sign_index": 11,
+        "degree_in_sign": 5.900041,
+        "is_retrograde": false,
+        "speed": 0.993408
+      },
+      "Moon": {
+        "longitude": 85.787695,
+        "sign_index": 2,
+        "degree_in_sign": 25.787695,
+        "is_retrograde": false,
+        "speed": 16.48856
+      },
+      "Mars": {
+        "longitude": 242.375178,
+        "sign_index": 8,
+        "degree_in_sign": 2.375178,
+        "is_retrograde": false,
+        "speed": 0.524957
+      },
+      "Mercury": {
+        "longitude": 328.879035,
+        "sign_index": 10,
+        "degree_in_sign": 28.879035,
+        "is_retrograde": true,
+        "speed": -0.86763
+      },
+      "Jupiter": {
+        "longitude": 312.92595,
+        "sign_index": 10,
+        "degree_in_sign": 12.92595,
+        "is_retrograde": false,
+        "speed": 0.230706
+      },
+      "Venus": {
+        "longitude": 350.420468,
+        "sign_index": 11,
+        "degree_in_sign": 20.420468,
+        "is_retrograde": false,
+        "speed": 1.240146
+      },
+      "Saturn": {
+        "longitude": 226.040777,
+        "sign_index": 7,
+        "degree_in_sign": 16.040777,
+        "is_retrograde": true,
+        "speed": -0.001874
+      },
+      "Rahu": {
+        "longitude": 8.003416,
+        "sign_index": 0,
+        "degree_in_sign": 8.003416,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 188.003416,
+        "sign_index": 6,
+        "degree_in_sign": 8.003416,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

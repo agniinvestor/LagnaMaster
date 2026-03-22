@@ -1,0 +1,113 @@
+{
+  "adb_id": 103624,
+  "name": "Cezar de Cerqueira Leite, Rogério",
+  "given_name": "Rogério Cezar de Cerqueira Leite",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426536.75,
+    "year": 1931,
+    "month": 7,
+    "day": 14,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Santo Anastácio (São Paulo)",
+    "country": "Brazil",
+    "lat": -21.838333,
+    "lon": -51.610278
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "can",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cezar_de_Cerqueira_Leite,_Rogério",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Engineer : Electrical",
+    "Vocation : Science : Physics",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Publisher/ Editor",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 8.268898,
+    "lagna": 8.268898,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.900803,
+    "jd_ut": 2426536.75,
+    "planets": {
+      "Sun": {
+        "longitude": 87.938036,
+        "sign_index": 2,
+        "degree_in_sign": 27.938036,
+        "is_retrograde": false,
+        "speed": 0.954097
+      },
+      "Moon": {
+        "longitude": 72.129271,
+        "sign_index": 2,
+        "degree_in_sign": 12.129271,
+        "is_retrograde": false,
+        "speed": 16.927462
+      },
+      "Mars": {
+        "longitude": 146.001768,
+        "sign_index": 4,
+        "degree_in_sign": 26.001768,
+        "is_retrograde": false,
+        "speed": 0.588935
+      },
+      "Mercury": {
+        "longitude": 103.545139,
+        "sign_index": 3,
+        "degree_in_sign": 13.545139,
+        "is_retrograde": false,
+        "speed": 1.831223
+      },
+      "Jupiter": {
+        "longitude": 96.417549,
+        "sign_index": 3,
+        "degree_in_sign": 6.417549,
+        "is_retrograde": false,
+        "speed": 0.221322
+      },
+      "Venus": {
+        "longitude": 72.71661,
+        "sign_index": 2,
+        "degree_in_sign": 12.71661,
+        "is_retrograde": false,
+        "speed": 1.221725
+      },
+      "Saturn": {
+        "longitude": 266.993094,
+        "sign_index": 8,
+        "degree_in_sign": 26.993094,
+        "is_retrograde": true,
+        "speed": -0.074088
+      },
+      "Rahu": {
+        "longitude": 346.425735,
+        "sign_index": 11,
+        "degree_in_sign": 16.425735,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 166.425735,
+        "sign_index": 5,
+        "degree_in_sign": 16.425735,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

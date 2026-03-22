@@ -1,0 +1,110 @@
+{
+  "adb_id": 105134,
+  "name": "Cizek, Roy",
+  "given_name": "Roy Cizek",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430753.416667,
+    "year": 1943,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "w",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Terre Haute",
+    "country": "Indiana",
+    "lat": 39.466667,
+    "lon": -87.416667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cizek,_Roy",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. (Indiana State Board of Health, no. 5737). \\nThe U.S. Social Security Death Index and Find-A-Grave have \"29 January 1943.\"\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Eyes",
+    "Family : Parenting : Kids 1-3",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 10.083663,
+    "lagna": 70.083663,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.062024,
+    "jd_ut": 2430753.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 285.059597,
+        "sign_index": 9,
+        "degree_in_sign": 15.059597,
+        "is_retrograde": false,
+        "speed": 1.015834
+      },
+      "Moon": {
+        "longitude": 189.69685,
+        "sign_index": 6,
+        "degree_in_sign": 9.69685,
+        "is_retrograde": false,
+        "speed": 17.05557
+      },
+      "Mars": {
+        "longitude": 248.478742,
+        "sign_index": 8,
+        "degree_in_sign": 8.478742,
+        "is_retrograde": false,
+        "speed": 0.726883
+      },
+      "Mercury": {
+        "longitude": 275.922234,
+        "sign_index": 9,
+        "degree_in_sign": 5.922234,
+        "is_retrograde": true,
+        "speed": -1.046931
+      },
+      "Jupiter": {
+        "longitude": 84.85324,
+        "sign_index": 2,
+        "degree_in_sign": 24.85324,
+        "is_retrograde": true,
+        "speed": -0.119229
+      },
+      "Venus": {
+        "longitude": 302.618075,
+        "sign_index": 10,
+        "degree_in_sign": 2.618075,
+        "is_retrograde": false,
+        "speed": 1.249914
+      },
+      "Saturn": {
+        "longitude": 42.593506,
+        "sign_index": 1,
+        "degree_in_sign": 12.593506,
+        "is_retrograde": true,
+        "speed": -0.015898
+      },
+      "Rahu": {
+        "longitude": 122.975832,
+        "sign_index": 4,
+        "degree_in_sign": 2.975832,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 302.975832,
+        "sign_index": 10,
+        "degree_in_sign": 2.975832,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

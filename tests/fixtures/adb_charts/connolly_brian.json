@@ -1,0 +1,111 @@
+{
+  "adb_id": 44574,
+  "name": "Connolly, Brian",
+  "given_name": "Brian Connolly",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431734.430556,
+    "year": 1945,
+    "month": 10,
+    "day": 5,
+    "calendar": "g",
+    "time": "23:20",
+    "time_type": "d",
+    "hour": 23.333333,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connolly,_Brian",
+  "source_notes": "Caroline Gerard quotes B.C. in Astrology Quarterly Summer/1997\\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 3.695402,
+    "lagna": 63.695402,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.099533,
+    "jd_ut": 2431734.430556,
+    "planets": {
+      "Sun": {
+        "longitude": 169.211268,
+        "sign_index": 5,
+        "degree_in_sign": 19.211268,
+        "is_retrograde": false,
+        "speed": 0.986629
+      },
+      "Moon": {
+        "longitude": 166.075664,
+        "sign_index": 5,
+        "degree_in_sign": 16.075664,
+        "is_retrograde": false,
+        "speed": 14.568904
+      },
+      "Mars": {
+        "longitude": 82.3193,
+        "sign_index": 2,
+        "degree_in_sign": 22.3193,
+        "is_retrograde": false,
+        "speed": 0.497847
+      },
+      "Mercury": {
+        "longitude": 171.841407,
+        "sign_index": 5,
+        "degree_in_sign": 21.841407,
+        "is_retrograde": false,
+        "speed": 1.717536
+      },
+      "Jupiter": {
+        "longitude": 165.73653,
+        "sign_index": 5,
+        "degree_in_sign": 15.73653,
+        "is_retrograde": false,
+        "speed": 0.216267
+      },
+      "Venus": {
+        "longitude": 140.617568,
+        "sign_index": 4,
+        "degree_in_sign": 20.617568,
+        "is_retrograde": false,
+        "speed": 1.223981
+      },
+      "Saturn": {
+        "longitude": 90.893241,
+        "sign_index": 3,
+        "degree_in_sign": 0.893241,
+        "is_retrograde": false,
+        "speed": 0.056365
+      },
+      "Rahu": {
+        "longitude": 70.98988,
+        "sign_index": 2,
+        "degree_in_sign": 10.98988,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 250.98988,
+        "sign_index": 8,
+        "degree_in_sign": 10.98988,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

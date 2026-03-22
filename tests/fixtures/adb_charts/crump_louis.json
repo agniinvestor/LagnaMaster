@@ -1,0 +1,111 @@
+{
+  "adb_id": 83966,
+  "name": "Crump, Louis",
+  "given_name": "Louis Crump",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421005.5,
+    "year": 1916,
+    "month": 5,
+    "day": 21,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Santa Anna (Coleman County)",
+    "country": "Texas",
+    "lat": 31.75,
+    "lon": -99.316667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crump,_Louis",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 27.093372,
+    "lagna": 177.093372,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.689333,
+    "jd_ut": 2421005.5,
+    "planets": {
+      "Sun": {
+        "longitude": 37.863696,
+        "sign_index": 1,
+        "degree_in_sign": 7.863696,
+        "is_retrograde": false,
+        "speed": 0.961054
+      },
+      "Moon": {
+        "longitude": 278.956008,
+        "sign_index": 9,
+        "degree_in_sign": 8.956008,
+        "is_retrograde": false,
+        "speed": 18.988511
+      },
+      "Mars": {
+        "longitude": 124.187325,
+        "sign_index": 4,
+        "degree_in_sign": 4.187325,
+        "is_retrograde": false,
+        "speed": 0.448196
+      },
+      "Mercury": {
+        "longitude": 56.20383,
+        "sign_index": 1,
+        "degree_in_sign": 26.20383,
+        "is_retrograde": false,
+        "speed": 0.245131
+      },
+      "Jupiter": {
+        "longitude": 0.568364,
+        "sign_index": 0,
+        "degree_in_sign": 0.568364,
+        "is_retrograde": false,
+        "speed": 0.215262
+      },
+      "Venus": {
+        "longitude": 79.577817,
+        "sign_index": 2,
+        "degree_in_sign": 19.577817,
+        "is_retrograde": false,
+        "speed": 0.627134
+      },
+      "Saturn": {
+        "longitude": 81.085667,
+        "sign_index": 2,
+        "degree_in_sign": 21.085667,
+        "is_retrograde": false,
+        "speed": 0.106371
+      },
+      "Rahu": {
+        "longitude": 279.538205,
+        "sign_index": 9,
+        "degree_in_sign": 9.538205,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 99.538205,
+        "sign_index": 3,
+        "degree_in_sign": 9.538205,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

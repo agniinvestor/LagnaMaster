@@ -1,0 +1,109 @@
+{
+  "adb_id": 47121,
+  "name": "Celestial: Neptune Discovery",
+  "given_name": "Celestial: Neptune Discovery",
+  "gender": "e",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2395563.462971,
+    "year": 1846,
+    "month": 9,
+    "day": 24,
+    "calendar": "g",
+    "time": "00:00:15",
+    "time_type": "l",
+    "hour": 0.004167,
+    "time_unknown": false,
+    "place": "Berlin Obseratory",
+    "country": "Germany",
+    "lat": 52.503333,
+    "lon": 13.393056
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celestial:_Neptune_Discovery",
+  "source_notes": "ISAR website newsletter March/2003 quotes Joylyn Hill's \"The Discovery of the Outer Planets.\"  On Astro.com, Bjorkstrand quotes \"The Neptune File\" by Tom Standage, Page 120: Shortly before midnight, after checking a few stars in this way, Galle described a faint star in a particular position, and d'Arrest found that there was no corresponding star in the catalog. \"That star,\" he declared, is not on the map!\"\\nWikipedia gives 'Neptune was discovered just after midnight (of the 24th) after less than an hour of searching and less than 1 degree from the position Le Verrier had predicted', with this reference: Kollerstrom, N. (2001). \"A Neptune Discovery Chronology\". The British Case for Co-prediction. University College London. Archived from the original. In this paper the time 00:00:14.6 (12.00.15 am) is given. The notation of time is by the astronomicals standards of that time, as 12h00m14.6s on 23 September. The astronomical day began at noon, 12 hours later than the day in civil time reckoning. The reason for this practice, which ended in 1925, was that during an observation night there would be no change of date.\\nThe confirmation that the object was really Neptune was reached in the following night from 24th to 25th September.\\n",
+  "categories": [
+    "Mundane : Medical/Science : Space",
+    "Mundane : Misc. Mundane : Historic milestones"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 15.765454,
+    "lagna": 75.765454,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.716816,
+    "jd_ut": 2395563.462971,
+    "planets": {
+      "Sun": {
+        "longitude": 158.795532,
+        "sign_index": 5,
+        "degree_in_sign": 8.795532,
+        "is_retrograde": false,
+        "speed": 0.980648
+      },
+      "Moon": {
+        "longitude": 196.048658,
+        "sign_index": 6,
+        "degree_in_sign": 16.048658,
+        "is_retrograde": false,
+        "speed": 15.038102
+      },
+      "Mars": {
+        "longitude": 154.254292,
+        "sign_index": 5,
+        "degree_in_sign": 4.254292,
+        "is_retrograde": false,
+        "speed": 0.644938
+      },
+      "Mercury": {
+        "longitude": 147.513,
+        "sign_index": 4,
+        "degree_in_sign": 27.513,
+        "is_retrograde": false,
+        "speed": 1.794157
+      },
+      "Jupiter": {
+        "longitude": 54.721632,
+        "sign_index": 1,
+        "degree_in_sign": 24.721632,
+        "is_retrograde": false,
+        "speed": 0.037949
+      },
+      "Venus": {
+        "longitude": 138.033616,
+        "sign_index": 4,
+        "degree_in_sign": 18.033616,
+        "is_retrograde": false,
+        "speed": 1.234877
+      },
+      "Saturn": {
+        "longitude": 303.412839,
+        "sign_index": 10,
+        "degree_in_sign": 3.412839,
+        "is_retrograde": true,
+        "speed": -0.053978
+      },
+      "Rahu": {
+        "longitude": 187.765824,
+        "sign_index": 6,
+        "degree_in_sign": 7.765824,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 7.765824,
+        "sign_index": 0,
+        "degree_in_sign": 7.765824,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

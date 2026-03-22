@@ -1,0 +1,113 @@
+{
+  "adb_id": 5001,
+  "name": "Cerdan, Marcel",
+  "given_name": "Marcel Cerdan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421067.333333,
+    "year": 1916,
+    "month": 7,
+    "day": 22,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "d",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Sidi bel Abbès",
+    "country": "Algeria",
+    "lat": 35.216667,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cerdan,_Marcel",
+  "source_notes": "Sy Scholfield quotes birth certificate n° 639 found on his official website [http://www.marcelcerdan.com/4.aspx?ProdID=2896a9b4-c415-45c9-aa4b-bacb45813534&CatID=cc01822b-9539-431b-b1f7-9df662db86a5&sr=0]. Death date and place in margin.\\nSame data in Gauquelin Vol 1/584\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Family : Relationship : Mate - Noted",
+    "Vocation : Sports : Boxing",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 0.46689,
+    "lagna": 270.46689,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.691697,
+    "jd_ut": 2421067.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 96.931793,
+        "sign_index": 3,
+        "degree_in_sign": 6.931793,
+        "is_retrograde": false,
+        "speed": 0.954883
+      },
+      "Moon": {
+        "longitude": 17.010399,
+        "sign_index": 0,
+        "degree_in_sign": 17.010399,
+        "is_retrograde": false,
+        "speed": 16.764096
+      },
+      "Mars": {
+        "longitude": 157.07116,
+        "sign_index": 5,
+        "degree_in_sign": 7.07116,
+        "is_retrograde": false,
+        "speed": 0.595071
+      },
+      "Mercury": {
+        "longitude": 90.452995,
+        "sign_index": 3,
+        "degree_in_sign": 0.452995,
+        "is_retrograde": false,
+        "speed": 2.106763
+      },
+      "Jupiter": {
+        "longitude": 10.921648,
+        "sign_index": 0,
+        "degree_in_sign": 10.921648,
+        "is_retrograde": false,
+        "speed": 0.102891
+      },
+      "Venus": {
+        "longitude": 70.648207,
+        "sign_index": 2,
+        "degree_in_sign": 10.648207,
+        "is_retrograde": true,
+        "speed": -0.103145
+      },
+      "Saturn": {
+        "longitude": 88.707749,
+        "sign_index": 2,
+        "degree_in_sign": 28.707749,
+        "is_retrograde": false,
+        "speed": 0.128984
+      },
+      "Rahu": {
+        "longitude": 276.261527,
+        "sign_index": 9,
+        "degree_in_sign": 6.261527,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 96.261527,
+        "sign_index": 3,
+        "degree_in_sign": 6.261527,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

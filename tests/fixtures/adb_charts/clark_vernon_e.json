@@ -1,0 +1,112 @@
+{
+  "adb_id": 4638,
+  "name": "Clark, Vernon E.",
+  "given_name": "Vernon E. Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2419278.266667,
+    "year": 1911,
+    "month": 8,
+    "day": 29,
+    "calendar": "g",
+    "time": "13:24",
+    "time_type": "s",
+    "hour": 13.4,
+    "time_unknown": false,
+    "place": "Baltimore",
+    "country": "USA",
+    "lat": 39.283333,
+    "lon": -76.616667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Vernon_E.",
+  "source_notes": "Astrological Pioneers of America file\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Healing Fields : Psychologist",
+    "Vocation : Military : Military service",
+    "Vocation : Occult Fields : Astrologer",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 23.606382,
+    "lagna": 203.606382,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.6233,
+    "jd_ut": 2419278.266667,
+    "planets": {
+      "Sun": {
+        "longitude": 132.657876,
+        "sign_index": 4,
+        "degree_in_sign": 12.657876,
+        "is_retrograde": false,
+        "speed": 0.966766
+      },
+      "Moon": {
+        "longitude": 202.125229,
+        "sign_index": 6,
+        "degree_in_sign": 22.125229,
+        "is_retrograde": false,
+        "speed": 9.589376
+      },
+      "Mars": {
+        "longitude": 34.117859,
+        "sign_index": 1,
+        "degree_in_sign": 4.117859,
+        "is_retrograde": false,
+        "speed": 0.49522
+      },
+      "Mercury": {
+        "longitude": 151.201616,
+        "sign_index": 5,
+        "degree_in_sign": 1.201616,
+        "is_retrograde": true,
+        "speed": -0.265396
+      },
+      "Jupiter": {
+        "longitude": 196.637,
+        "sign_index": 6,
+        "degree_in_sign": 16.637,
+        "is_retrograde": false,
+        "speed": 0.147075
+      },
+      "Venus": {
+        "longitude": 156.470959,
+        "sign_index": 5,
+        "degree_in_sign": 6.470959,
+        "is_retrograde": true,
+        "speed": -0.175108
+      },
+      "Saturn": {
+        "longitude": 27.59091,
+        "sign_index": 0,
+        "degree_in_sign": 27.59091,
+        "is_retrograde": false,
+        "speed": 0.007285
+      },
+      "Rahu": {
+        "longitude": 11.067919,
+        "sign_index": 0,
+        "degree_in_sign": 11.067919,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 191.067919,
+        "sign_index": 6,
+        "degree_in_sign": 11.067919,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 865,
+  "name": "Colby, Barbara",
+  "given_name": "Barbara Colby",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429446.988194,
+    "year": 1939,
+    "month": 7,
+    "day": 2,
+    "calendar": "g",
+    "time": "07:43",
+    "time_type": "d",
+    "hour": 7.716667,
+    "time_unknown": false,
+    "place": "Bronx",
+    "country": "USA",
+    "lat": 40.85,
+    "lon": -73.9
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colby,_Barbara",
+  "source_notes": "Steinbrecher quotes her for B.C.\\n",
+  "categories": [
+    "Passions : Criminal Victim : Financial crime victim",
+    "Passions : Criminal Victim : Homicide victim",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 20.118968,
+    "lagna": 80.118968,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.012073,
+    "jd_ut": 2429446.988194,
+    "planets": {
+      "Sun": {
+        "longitude": 76.68022,
+        "sign_index": 2,
+        "degree_in_sign": 16.68022,
+        "is_retrograde": false,
+        "speed": 0.952909
+      },
+      "Moon": {
+        "longitude": 265.047462,
+        "sign_index": 8,
+        "degree_in_sign": 25.047462,
+        "is_retrograde": false,
+        "speed": 12.469558
+      },
+      "Mars": {
+        "longitude": 281.10753,
+        "sign_index": 9,
+        "degree_in_sign": 11.10753,
+        "is_retrograde": true,
+        "speed": -0.119307
+      },
+      "Mercury": {
+        "longitude": 100.282112,
+        "sign_index": 3,
+        "degree_in_sign": 10.282112,
+        "is_retrograde": false,
+        "speed": 1.448925
+      },
+      "Jupiter": {
+        "longitude": 344.58129,
+        "sign_index": 11,
+        "degree_in_sign": 14.58129,
+        "is_retrograde": false,
+        "speed": 0.085134
+      },
+      "Venus": {
+        "longitude": 58.925981,
+        "sign_index": 1,
+        "degree_in_sign": 28.925981,
+        "is_retrograde": false,
+        "speed": 1.217441
+      },
+      "Saturn": {
+        "longitude": 6.737323,
+        "sign_index": 0,
+        "degree_in_sign": 6.737323,
+        "is_retrograde": false,
+        "speed": 0.068583
+      },
+      "Rahu": {
+        "longitude": 192.206179,
+        "sign_index": 6,
+        "degree_in_sign": 12.206179,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 12.206179,
+        "sign_index": 0,
+        "degree_in_sign": 12.206179,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

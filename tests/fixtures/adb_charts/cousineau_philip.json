@@ -1,0 +1,109 @@
+{
+  "adb_id": 39568,
+  "name": "Cousineau, Philip",
+  "given_name": "Philip Cousineau",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2434342.754861,
+    "year": 1952,
+    "month": 11,
+    "day": 26,
+    "calendar": "g",
+    "time": "01:07",
+    "time_type": "s",
+    "hour": 1.116667,
+    "time_unknown": false,
+    "place": "Columbia",
+    "country": "South Carolina",
+    "lat": 34.0,
+    "lon": -81.033333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cousineau,_Philip",
+  "source_notes": "Linda Clark quotes him at a lecture\\n",
+  "categories": [
+    "Vocation : Education : Public speaker",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 1.663097,
+    "lagna": 121.663097,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.199266,
+    "jd_ut": 2434342.754861,
+    "planets": {
+      "Sun": {
+        "longitude": 220.739297,
+        "sign_index": 7,
+        "degree_in_sign": 10.739297,
+        "is_retrograde": false,
+        "speed": 1.012003
+      },
+      "Moon": {
+        "longitude": 332.902972,
+        "sign_index": 11,
+        "degree_in_sign": 2.902972,
+        "is_retrograde": false,
+        "speed": 13.236435
+      },
+      "Mars": {
+        "longitude": 280.173003,
+        "sign_index": 9,
+        "degree_in_sign": 10.173003,
+        "is_retrograde": false,
+        "speed": 0.762203
+      },
+      "Mercury": {
+        "longitude": 230.252531,
+        "sign_index": 7,
+        "degree_in_sign": 20.252531,
+        "is_retrograde": true,
+        "speed": -1.026955
+      },
+      "Jupiter": {
+        "longitude": 20.377967,
+        "sign_index": 0,
+        "degree_in_sign": 20.377967,
+        "is_retrograde": true,
+        "speed": -0.11913
+      },
+      "Venus": {
+        "longitude": 259.401711,
+        "sign_index": 8,
+        "degree_in_sign": 19.401711,
+        "is_retrograde": false,
+        "speed": 1.205628
+      },
+      "Saturn": {
+        "longitude": 180.068166,
+        "sign_index": 6,
+        "degree_in_sign": 0.068166,
+        "is_retrograde": false,
+        "speed": 0.102384
+      },
+      "Rahu": {
+        "longitude": 292.7694,
+        "sign_index": 9,
+        "degree_in_sign": 22.7694,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 112.7694,
+        "sign_index": 3,
+        "degree_in_sign": 22.7694,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

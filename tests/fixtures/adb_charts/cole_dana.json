@@ -1,0 +1,108 @@
+{
+  "adb_id": 54365,
+  "name": "Cole, Dana",
+  "given_name": "Dana Cole",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438247.029861,
+    "year": 1963,
+    "month": 8,
+    "day": 5,
+    "calendar": "g",
+    "time": "05:43",
+    "time_type": "d",
+    "hour": 5.716667,
+    "time_unknown": false,
+    "place": "Calexico",
+    "country": "California",
+    "lat": 32.683333,
+    "lon": -115.5
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cole,_Dana",
+  "source_notes": "Steinbrecher quotes him/birth certificate 4-99\\n",
+  "categories": [
+    "Vocation : Medical : Chiropractor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 21.646593,
+    "lagna": 81.646593,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.348556,
+    "jd_ut": 2438247.029861,
+    "planets": {
+      "Sun": {
+        "longitude": 109.033692,
+        "sign_index": 3,
+        "degree_in_sign": 19.033692,
+        "is_retrograde": false,
+        "speed": 0.957247
+      },
+      "Moon": {
+        "longitude": 289.799929,
+        "sign_index": 9,
+        "degree_in_sign": 19.799929,
+        "is_retrograde": false,
+        "speed": 12.467133
+      },
+      "Mars": {
+        "longitude": 162.361187,
+        "sign_index": 5,
+        "degree_in_sign": 12.361187,
+        "is_retrograde": false,
+        "speed": 0.616449
+      },
+      "Mercury": {
+        "longitude": 130.091012,
+        "sign_index": 4,
+        "degree_in_sign": 10.091012,
+        "is_retrograde": false,
+        "speed": 1.575018
+      },
+      "Jupiter": {
+        "longitude": 356.110256,
+        "sign_index": 11,
+        "degree_in_sign": 26.110256,
+        "is_retrograde": false,
+        "speed": 0.013507
+      },
+      "Venus": {
+        "longitude": 102.301599,
+        "sign_index": 3,
+        "degree_in_sign": 12.301599,
+        "is_retrograde": false,
+        "speed": 1.23177
+      },
+      "Saturn": {
+        "longitude": 296.988944,
+        "sign_index": 9,
+        "degree_in_sign": 26.988944,
+        "is_retrograde": true,
+        "speed": -0.073764
+      },
+      "Rahu": {
+        "longitude": 85.873856,
+        "sign_index": 2,
+        "degree_in_sign": 25.873856,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 265.873856,
+        "sign_index": 8,
+        "degree_in_sign": 25.873856,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "adb_id": 52718,
+  "name": "Conterno, Angelo",
+  "given_name": "Angelo Conterno",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424222.798611,
+    "year": 1925,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "08:10",
+    "time_type": "s",
+    "hour": 8.166667,
+    "time_unknown": false,
+    "place": "Turin",
+    "country": "Italy",
+    "lat": 45.05,
+    "lon": 7.666667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conterno,_Angelo",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/923\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 13.330027,
+    "lagna": 343.330027,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.812335,
+    "jd_ut": 2424222.798611,
+    "planets": {
+      "Sun": {
+        "longitude": 329.396714,
+        "sign_index": 10,
+        "degree_in_sign": 29.396714,
+        "is_retrograde": false,
+        "speed": 0.996697
+      },
+      "Moon": {
+        "longitude": 182.030699,
+        "sign_index": 6,
+        "degree_in_sign": 2.030699,
+        "is_retrograde": false,
+        "speed": 12.74702
+      },
+      "Mars": {
+        "longitude": 30.285065,
+        "sign_index": 1,
+        "degree_in_sign": 0.285065,
+        "is_retrograde": false,
+        "speed": 0.643989
+      },
+      "Mercury": {
+        "longitude": 336.745247,
+        "sign_index": 11,
+        "degree_in_sign": 6.745247,
+        "is_retrograde": false,
+        "speed": 1.970753
+      },
+      "Jupiter": {
+        "longitude": 264.805119,
+        "sign_index": 8,
+        "degree_in_sign": 24.805119,
+        "is_retrograde": false,
+        "speed": 0.155733
+      },
+      "Venus": {
+        "longitude": 318.752602,
+        "sign_index": 10,
+        "degree_in_sign": 18.752602,
+        "is_retrograde": false,
+        "speed": 1.244563
+      },
+      "Saturn": {
+        "longitude": 201.195871,
+        "sign_index": 6,
+        "degree_in_sign": 21.195871,
+        "is_retrograde": true,
+        "speed": -0.031826
+      },
+      "Rahu": {
+        "longitude": 109.046832,
+        "sign_index": 3,
+        "degree_in_sign": 19.046832,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 289.046832,
+        "sign_index": 9,
+        "degree_in_sign": 19.046832,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

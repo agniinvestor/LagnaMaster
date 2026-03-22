@@ -1,0 +1,108 @@
+{
+  "adb_id": 47610,
+  "name": "Conn, David",
+  "given_name": "David Conn",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433560.309028,
+    "year": 1950,
+    "month": 10,
+    "day": 5,
+    "calendar": "g",
+    "time": "14:25",
+    "time_type": "s",
+    "hour": 14.416667,
+    "time_unknown": false,
+    "place": "Bronx",
+    "country": "New York",
+    "lat": 40.85,
+    "lon": -73.9
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conn,_David",
+  "source_notes": "Dana Holliday quotes him, reading his B.C. over the phone\\n",
+  "categories": [
+    "Vocation : Law : Attorney"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 14.341466,
+    "lagna": 254.341466,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.169348,
+    "jd_ut": 2433560.309028,
+    "planets": {
+      "Sun": {
+        "longitude": 168.810089,
+        "sign_index": 5,
+        "degree_in_sign": 18.810089,
+        "is_retrograde": false,
+        "speed": 0.986037
+      },
+      "Moon": {
+        "longitude": 95.135651,
+        "sign_index": 3,
+        "degree_in_sign": 5.135651,
+        "is_retrograde": false,
+        "speed": 14.409675
+      },
+      "Mars": {
+        "longitude": 223.83352,
+        "sign_index": 7,
+        "degree_in_sign": 13.83352,
+        "is_retrograde": false,
+        "speed": 0.709182
+      },
+      "Mercury": {
+        "longitude": 151.400866,
+        "sign_index": 5,
+        "degree_in_sign": 1.400866,
+        "is_retrograde": false,
+        "speed": 1.2876
+      },
+      "Jupiter": {
+        "longitude": 304.988576,
+        "sign_index": 10,
+        "degree_in_sign": 4.988576,
+        "is_retrograde": true,
+        "speed": -0.060785
+      },
+      "Venus": {
+        "longitude": 158.782974,
+        "sign_index": 5,
+        "degree_in_sign": 8.782974,
+        "is_retrograde": false,
+        "speed": 1.247402
+      },
+      "Saturn": {
+        "longitude": 151.948614,
+        "sign_index": 5,
+        "degree_in_sign": 1.948614,
+        "is_retrograde": false,
+        "speed": 0.1214
+      },
+      "Rahu": {
+        "longitude": 334.232815,
+        "sign_index": 11,
+        "degree_in_sign": 4.232815,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 154.232815,
+        "sign_index": 5,
+        "degree_in_sign": 4.232815,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

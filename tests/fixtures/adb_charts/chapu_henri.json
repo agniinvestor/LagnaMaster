@@ -1,0 +1,109 @@
+{
+  "adb_id": 78165,
+  "name": "Chapu, Henri",
+  "given_name": "Henri Chapu",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2390821.367685,
+    "year": 1833,
+    "month": 9,
+    "day": 29,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "l",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Le Mée sur Seine",
+    "country": "France",
+    "lat": 48.533333,
+    "lon": 2.633333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapu,_Henri",
+  "source_notes": "Sy Scholfield quotes from birth certificate transcribed in \"Chapu: sa vie et son oeuvre\" by Octave Fidière (E. Plon, Nourrit, 1894), p. 215: \"ACTE DE NAISSANCE DE CHAPU: Extrait des registres de l'état civil de la commune de Mée. L'an mil huit cent trente-trois, le lundi trente septembre, quatre heures du soir, devant nous Denis-Alexandre Viard, adjoint de la commune de Mée, ... est comparu le sieur Julien Chapu, cocher, âgé de vingt et un ans, demeurant au Mée, lequel nous a présenté un enfant du sexe masculin, né audit Mée, le 29 présent mois, à neuf heures du soir, de son légitime mariage avec Claire-Philippe Lecoq, sa femme, ...\"\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 10.054599,
+    "lagna": 40.054599,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.535584,
+    "jd_ut": 2390821.367685,
+    "planets": {
+      "Sun": {
+        "longitude": 164.917561,
+        "sign_index": 5,
+        "degree_in_sign": 14.917561,
+        "is_retrograde": false,
+        "speed": 0.983607
+      },
+      "Moon": {
+        "longitude": 355.102061,
+        "sign_index": 11,
+        "degree_in_sign": 25.102061,
+        "is_retrograde": false,
+        "speed": 10.201386
+      },
+      "Mars": {
+        "longitude": 175.337995,
+        "sign_index": 5,
+        "degree_in_sign": 25.337995,
+        "is_retrograde": false,
+        "speed": 0.664308
+      },
+      "Mercury": {
+        "longitude": 160.988205,
+        "sign_index": 5,
+        "degree_in_sign": 10.988205,
+        "is_retrograde": false,
+        "speed": 1.800181
+      },
+      "Jupiter": {
+        "longitude": 12.084574,
+        "sign_index": 0,
+        "degree_in_sign": 12.084574,
+        "is_retrograde": true,
+        "speed": -0.106914
+      },
+      "Venus": {
+        "longitude": 127.708257,
+        "sign_index": 4,
+        "degree_in_sign": 7.708257,
+        "is_retrograde": false,
+        "speed": 1.187207
+      },
+      "Saturn": {
+        "longitude": 160.35225,
+        "sign_index": 5,
+        "degree_in_sign": 10.35225,
+        "is_retrograde": false,
+        "speed": 0.123641
+      },
+      "Rahu": {
+        "longitude": 79.05972,
+        "sign_index": 2,
+        "degree_in_sign": 19.05972,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 259.05972,
+        "sign_index": 8,
+        "degree_in_sign": 19.05972,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

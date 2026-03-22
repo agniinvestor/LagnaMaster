@@ -1,0 +1,112 @@
+{
+  "adb_id": 71599,
+  "name": "Casale, Rossana",
+  "given_name": "Rossana Casale",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2436771.59375,
+    "year": 1959,
+    "month": 7,
+    "day": 21,
+    "calendar": "g",
+    "time": "22:15",
+    "time_type": "d",
+    "hour": 22.25,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casale,_Rossana",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from her.\\n",
+  "categories": [
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 24.281003,
+    "lagna": 294.281003,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.292138,
+    "jd_ut": 2436771.59375,
+    "planets": {
+      "Sun": {
+        "longitude": 95.255099,
+        "sign_index": 3,
+        "degree_in_sign": 5.255099,
+        "is_retrograde": false,
+        "speed": 0.954238
+      },
+      "Moon": {
+        "longitude": 301.210972,
+        "sign_index": 10,
+        "degree_in_sign": 1.210972,
+        "is_retrograde": false,
+        "speed": 11.746602
+      },
+      "Mars": {
+        "longitude": 127.718796,
+        "sign_index": 4,
+        "degree_in_sign": 7.718796,
+        "is_retrograde": false,
+        "speed": 0.61993
+      },
+      "Mercury": {
+        "longitude": 116.050691,
+        "sign_index": 3,
+        "degree_in_sign": 26.050691,
+        "is_retrograde": false,
+        "speed": 0.064285
+      },
+      "Jupiter": {
+        "longitude": 208.836337,
+        "sign_index": 6,
+        "degree_in_sign": 28.836337,
+        "is_retrograde": false,
+        "speed": 0.005258
+      },
+      "Venus": {
+        "longitude": 136.352512,
+        "sign_index": 4,
+        "degree_in_sign": 16.352512,
+        "is_retrograde": false,
+        "speed": 0.58959
+      },
+      "Saturn": {
+        "longitude": 248.671103,
+        "sign_index": 8,
+        "degree_in_sign": 8.671103,
+        "is_retrograde": true,
+        "speed": -0.061581
+      },
+      "Rahu": {
+        "longitude": 164.060238,
+        "sign_index": 5,
+        "degree_in_sign": 14.060238,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 344.060238,
+        "sign_index": 11,
+        "degree_in_sign": 14.060238,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

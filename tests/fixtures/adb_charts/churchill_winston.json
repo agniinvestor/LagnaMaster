@@ -1,110 +1,130 @@
 {
-  "adb_slug": "Churchill,_Winston",
-  "name": "Winston Churchill",
-  "source": "astro-databank-stub",
-  "rodden_rating": "AA",
-  "adb_url": "https://www.astro.com/astro-databank/Churchill,_Winston",
+  "adb_id": 2821,
+  "name": "Churchill, Winston",
+  "given_name": "Winston Churchill",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
   "birth_data": {
+    "jd_ut": 2405857.5625,
     "year": 1874,
     "month": 11,
     "day": 30,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
     "hour": 1.5,
-    "lat": 51.8467,
-    "lon": -1.3414,
-    "tz_offset": 0.0,
-    "ayanamsha": "lahiri"
+    "time_unknown": false,
+    "place": "Woodstock",
+    "country": "England",
+    "lat": 51.866667,
+    "lon": -1.35
   },
-  "birth_place": "Blenheim Palace, UK",
-  "country": "UK",
-  "data_trust_level": "low",
-  "assert_lagna": false,
-  "trust_note": "UK 1874 — low trust (cross-referenced)",
-  "expected": {},
-  "chart": {
-    "lagna": 157.8304214335731,
-    "lagna_sign": "Virgo",
-    "lagna_sign_index": 5,
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Churchill,_Winston",
+  "source_notes": "T. Pat Davis quotes R.G. Martin \"Jennie,\" rectified to 1:19 AM.  John Addey quotes his dad's letter for 1:30 AM, AJ/67\\nSy Scholfield quotes father's letter to his mother-in-law written on the day of Winston's birth: \"We telegraphed for the London man Dr Hope but he did not arrive till this morning. The country Dr is however a clever man, & the baby was safely born at 1.30 this morning after about 8 hrs labour.\" (\"Winston S. Churchill. Companion Volume: pt. 1. 1874-1896\" by Randolph Spencer Churchill, Houghton Mifflin, 1967, p. 2). \\nStarkman rectified to 1.15.50 GMT\\n",
+  "categories": [
+    "Traits : Personality : Principled strongly",
+    "Diagnoses : Psychological : Depression",
+    "Diagnoses : Psychological : Dyslexia",
+    "Diagnoses : Psychological : Stutter, Tics",
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids -Traumatic event",
+    "Passions : Criminal Victim : Financial crime victim",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Heads of state",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Extraordinary Talents : For Leadership",
+    "Notable : Extraordinary Talents : For Meritorious achievement",
+    "Notable : Awards : Knighted",
+    "Notable : Awards : Nobel prize",
+    "Notable : Famous : Historic figure",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.716242,
+    "lagna": 135.716242,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.11027,
+    "jd_ut": 2405857.5625,
     "planets": {
       "Sun": {
-        "longitude": 225.61106693600536,
+        "longitude": 225.611073,
         "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 15.611066936005358,
-        "is_retrograde": false
+        "degree_in_sign": 15.611073,
+        "is_retrograde": false,
+        "speed": 1.01384
       },
       "Moon": {
-        "longitude": 127.50752664608301,
+        "longitude": 128.221769,
         "sign_index": 4,
-        "sign": "Leo",
-        "degree_in_sign": 7.507526646083008,
-        "is_retrograde": false
+        "degree_in_sign": 8.221769,
+        "is_retrograde": false,
+        "speed": 10.854504
       },
       "Mars": {
-        "longitude": 174.44127849230026,
+        "longitude": 174.44129,
         "sign_index": 5,
-        "sign": "Virgo",
-        "degree_in_sign": 24.441278492300256,
-        "is_retrograde": false
+        "degree_in_sign": 24.44129,
+        "is_retrograde": false,
+        "speed": 0.610745
       },
       "Mercury": {
-        "longitude": 205.48379893761347,
+        "longitude": 205.483808,
         "sign_index": 6,
-        "sign": "Libra",
-        "degree_in_sign": 25.48379893761347,
-        "is_retrograde": false
+        "degree_in_sign": 25.483808,
+        "is_retrograde": false,
+        "speed": 0.812515
       },
       "Jupiter": {
-        "longitude": 181.45933439147618,
+        "longitude": 181.459341,
         "sign_index": 6,
-        "sign": "Libra",
-        "degree_in_sign": 1.459334391476176,
-        "is_retrograde": false
+        "degree_in_sign": 1.459341,
+        "is_retrograde": false,
+        "speed": 0.183077
       },
       "Venus": {
-        "longitude": 239.920200262661,
+        "longitude": 239.920291,
         "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 29.920200262661012,
-        "is_retrograde": true
+        "degree_in_sign": 29.920291,
+        "is_retrograde": true,
+        "speed": -0.446497
       },
       "Saturn": {
-        "longitude": 287.48545201675984,
+        "longitude": 287.485489,
         "sign_index": 9,
-        "sign": "Capricorn",
-        "degree_in_sign": 17.485452016759837,
-        "is_retrograde": false
+        "degree_in_sign": 17.485489,
+        "is_retrograde": false,
+        "speed": 0.075782
       },
       "Rahu": {
-        "longitude": 2.2594130207269236,
+        "longitude": 2.259413,
         "sign_index": 0,
-        "sign": "Aries",
-        "degree_in_sign": 2.2594130207269236,
-        "is_retrograde": true
+        "degree_in_sign": 2.259413,
+        "is_retrograde": true,
+        "speed": -0.052992
       },
       "Ketu": {
-        "longitude": 182.25941302072692,
+        "longitude": 182.259413,
         "sign_index": 6,
-        "sign": "Libra",
-        "degree_in_sign": 2.2594130207269245,
-        "is_retrograde": true
+        "degree_in_sign": 2.259413,
+        "is_retrograde": true,
+        "speed": 0.0
       }
     }
-  },
-  "scores": {
-    "1": -2.5,
-    "2": -3.75,
-    "3": 2.0,
-    "4": -2.0,
-    "5": -0.25,
-    "6": 3.75,
-    "7": -1.75,
-    "8": 1.0,
-    "9": -3.125,
-    "10": 1.125,
-    "11": -2.5,
-    "12": 3.25
-  },
-  "fetch_status": "stub",
-  "engine_version": "v3.0.0",
-  "computed_date": "2026-03-22"
+  }
 }

@@ -1,0 +1,109 @@
+{
+  "adb_id": 51672,
+  "name": "Cavallon, Giorgio",
+  "given_name": "Giorgio Cavallon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416542.583333,
+    "year": 1904,
+    "month": 3,
+    "day": 3,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Gambellara",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 11.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavallon,_Giorgio",
+  "source_notes": "Ed Steinbrecher collection: Steinbrecher has memo quoting birth record in hand from Gambellara.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 10.992837,
+    "lagna": 220.992837,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.518717,
+    "jd_ut": 2416542.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 319.566841,
+        "sign_index": 10,
+        "degree_in_sign": 19.566841,
+        "is_retrograde": false,
+        "speed": 1.001862
+      },
+      "Moon": {
+        "longitude": 153.187711,
+        "sign_index": 5,
+        "degree_in_sign": 3.187711,
+        "is_retrograde": false,
+        "speed": 11.433838
+      },
+      "Mars": {
+        "longitude": 341.288947,
+        "sign_index": 11,
+        "degree_in_sign": 11.288947,
+        "is_retrograde": false,
+        "speed": 0.767657
+      },
+      "Mercury": {
+        "longitude": 300.675877,
+        "sign_index": 10,
+        "degree_in_sign": 0.675877,
+        "is_retrograde": false,
+        "speed": 1.560926
+      },
+      "Jupiter": {
+        "longitude": 337.943013,
+        "sign_index": 11,
+        "degree_in_sign": 7.943013,
+        "is_retrograde": false,
+        "speed": 0.236306
+      },
+      "Venus": {
+        "longitude": 287.186771,
+        "sign_index": 9,
+        "degree_in_sign": 17.186771,
+        "is_retrograde": false,
+        "speed": 1.22159
+      },
+      "Saturn": {
+        "longitude": 292.725224,
+        "sign_index": 9,
+        "degree_in_sign": 22.725224,
+        "is_retrograde": false,
+        "speed": 0.111145
+      },
+      "Rahu": {
+        "longitude": 156.03753,
+        "sign_index": 5,
+        "degree_in_sign": 6.03753,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 336.03753,
+        "sign_index": 11,
+        "degree_in_sign": 6.03753,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

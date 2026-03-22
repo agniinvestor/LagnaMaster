@@ -1,0 +1,108 @@
+{
+  "adb_id": 103333,
+  "name": "Chorda, Andre",
+  "given_name": "Andre Chorda",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428950.375,
+    "year": 1938,
+    "month": 2,
+    "day": 20,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Charleval",
+    "country": "France",
+    "lat": 49.371667,
+    "lon": 1.383889
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chorda,_Andre",
+  "source_notes": "quoted BC from Bordoni database\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.958334,
+    "lagna": 145.958334,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.993085,
+    "jd_ut": 2428950.375,
+    "planets": {
+      "Sun": {
+        "longitude": 308.584225,
+        "sign_index": 10,
+        "degree_in_sign": 8.584225,
+        "is_retrograde": false,
+        "speed": 1.00739
+      },
+      "Moon": {
+        "longitude": 204.857396,
+        "sign_index": 6,
+        "degree_in_sign": 24.857396,
+        "is_retrograde": false,
+        "speed": 14.045929
+      },
+      "Mars": {
+        "longitude": 352.829046,
+        "sign_index": 11,
+        "degree_in_sign": 22.829046,
+        "is_retrograde": false,
+        "speed": 0.734935
+      },
+      "Mercury": {
+        "longitude": 296.314346,
+        "sign_index": 9,
+        "degree_in_sign": 26.314346,
+        "is_retrograde": false,
+        "speed": 1.659623
+      },
+      "Jupiter": {
+        "longitude": 291.591687,
+        "sign_index": 9,
+        "degree_in_sign": 21.591687,
+        "is_retrograde": false,
+        "speed": 0.232575
+      },
+      "Venus": {
+        "longitude": 312.635595,
+        "sign_index": 10,
+        "degree_in_sign": 12.635595,
+        "is_retrograde": false,
+        "speed": 1.251369
+      },
+      "Saturn": {
+        "longitude": 340.556121,
+        "sign_index": 11,
+        "degree_in_sign": 10.556121,
+        "is_retrograde": false,
+        "speed": 0.112518
+      },
+      "Rahu": {
+        "longitude": 218.52274,
+        "sign_index": 7,
+        "degree_in_sign": 8.52274,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 38.52274,
+        "sign_index": 1,
+        "degree_in_sign": 8.52274,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

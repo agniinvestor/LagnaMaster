@@ -1,0 +1,108 @@
+{
+  "adb_id": 53451,
+  "name": "Carbonell, Marguerite",
+  "given_name": "Marguerite Carbonell",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418695.118507,
+    "year": 1910,
+    "month": 1,
+    "day": 23,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Meudon",
+    "country": "France",
+    "lat": 48.8,
+    "lon": 2.233333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carbonell,_Marguerite",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin ns 3/0253\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 29.05809,
+    "lagna": 59.05809,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.601007,
+    "jd_ut": 2418695.118507,
+    "planets": {
+      "Sun": {
+        "longitude": 280.151511,
+        "sign_index": 9,
+        "degree_in_sign": 10.151511,
+        "is_retrograde": false,
+        "speed": 1.016613
+      },
+      "Moon": {
+        "longitude": 77.587576,
+        "sign_index": 2,
+        "degree_in_sign": 17.587576,
+        "is_retrograde": false,
+        "speed": 15.109558
+      },
+      "Mars": {
+        "longitude": 7.711632,
+        "sign_index": 0,
+        "degree_in_sign": 7.711632,
+        "is_retrograde": false,
+        "speed": 0.572367
+      },
+      "Mercury": {
+        "longitude": 286.246664,
+        "sign_index": 9,
+        "degree_in_sign": 16.246664,
+        "is_retrograde": true,
+        "speed": -1.076633
+      },
+      "Jupiter": {
+        "longitude": 171.892547,
+        "sign_index": 5,
+        "degree_in_sign": 21.892547,
+        "is_retrograde": false,
+        "speed": 0.019362
+      },
+      "Venus": {
+        "longitude": 308.317237,
+        "sign_index": 10,
+        "degree_in_sign": 8.317237,
+        "is_retrograde": true,
+        "speed": -0.037302
+      },
+      "Saturn": {
+        "longitude": 354.863645,
+        "sign_index": 11,
+        "degree_in_sign": 24.863645,
+        "is_retrograde": false,
+        "speed": 0.060913
+      },
+      "Rahu": {
+        "longitude": 41.970165,
+        "sign_index": 1,
+        "degree_in_sign": 11.970165,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 221.970165,
+        "sign_index": 7,
+        "degree_in_sign": 11.970165,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 2244,
+  "name": "Carnot, Sadi",
+  "given_name": "Sadi Carnot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2392233.246481,
+    "year": 1837,
+    "month": 8,
+    "day": 11,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Limoges",
+    "country": "France",
+    "lat": 45.833333,
+    "lon": 1.266667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carnot,_Sadi",
+  "source_notes": "Taeger quotes Lescaut quoting Chisnard, B.R.\\nSabian Symbols No.171\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Passions : Criminal Victim : Homicide victim",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 11.296358,
+    "lagna": 251.296358,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.589541,
+    "jd_ut": 2392233.246481,
+    "planets": {
+      "Sun": {
+        "longitude": 117.183039,
+        "sign_index": 3,
+        "degree_in_sign": 27.183039,
+        "is_retrograde": false,
+        "speed": 0.960189
+      },
+      "Moon": {
+        "longitude": 235.047559,
+        "sign_index": 7,
+        "degree_in_sign": 25.047559,
+        "is_retrograde": false,
+        "speed": 10.269463
+      },
+      "Mars": {
+        "longitude": 169.312436,
+        "sign_index": 5,
+        "degree_in_sign": 19.312436,
+        "is_retrograde": false,
+        "speed": 0.628385
+      },
+      "Mercury": {
+        "longitude": 130.936424,
+        "sign_index": 4,
+        "degree_in_sign": 10.936424,
+        "is_retrograde": false,
+        "speed": 1.773423
+      },
+      "Jupiter": {
+        "longitude": 125.002319,
+        "sign_index": 4,
+        "degree_in_sign": 5.002319,
+        "is_retrograde": false,
+        "speed": 0.216654
+      },
+      "Venus": {
+        "longitude": 140.253312,
+        "sign_index": 4,
+        "degree_in_sign": 20.253312,
+        "is_retrograde": false,
+        "speed": 1.222008
+      },
+      "Saturn": {
+        "longitude": 199.521161,
+        "sign_index": 6,
+        "degree_in_sign": 19.521161,
+        "is_retrograde": false,
+        "speed": 0.0447
+      },
+      "Rahu": {
+        "longitude": 4.2412,
+        "sign_index": 0,
+        "degree_in_sign": 4.2412,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 184.2412,
+        "sign_index": 6,
+        "degree_in_sign": 4.2412,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 62160,
+  "name": "Costa, Diego",
+  "given_name": "Diego Costa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2447441.9375,
+    "year": 1988,
+    "month": 10,
+    "day": 7,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "s",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Lagarto (Sergipe)",
+    "country": "Brazil",
+    "lat": -10.917222,
+    "lon": -37.65
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costa,_Diego",
+  "source_notes": "Sy Scholfield quotes birth certificate, copy found online: http://app.globoesporte.globo.com/especial-diego-costa/images/certidao_nascimento.jpg; http://app.globoesporte.globo.com/especial-diego-costa/\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.813556,
+    "lagna": 184.813556,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.700176,
+    "jd_ut": 2447441.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 170.671486,
+        "sign_index": 5,
+        "degree_in_sign": 20.671486,
+        "is_retrograde": false,
+        "speed": 0.987245
+      },
+      "Moon": {
+        "longitude": 133.114985,
+        "sign_index": 4,
+        "degree_in_sign": 13.114985,
+        "is_retrograde": false,
+        "speed": 6.956802
+      },
+      "Mars": {
+        "longitude": 338.945129,
+        "sign_index": 11,
+        "degree_in_sign": 8.945129,
+        "is_retrograde": true,
+        "speed": -0.250137
+      },
+      "Mercury": {
+        "longitude": 178.859464,
+        "sign_index": 5,
+        "degree_in_sign": 28.859464,
+        "is_retrograde": true,
+        "speed": -1.031053
+      },
+      "Jupiter": {
+        "longitude": 42.152108,
+        "sign_index": 1,
+        "degree_in_sign": 12.152108,
+        "is_retrograde": true,
+        "speed": -0.043032
+      },
+      "Venus": {
+        "longitude": 129.634116,
+        "sign_index": 4,
+        "degree_in_sign": 9.634116,
+        "is_retrograde": false,
+        "speed": 1.159509
+      },
+      "Saturn": {
+        "longitude": 243.381995,
+        "sign_index": 8,
+        "degree_in_sign": 3.381995,
+        "is_retrograde": false,
+        "speed": 0.05912
+      },
+      "Rahu": {
+        "longitude": 318.616984,
+        "sign_index": 10,
+        "degree_in_sign": 18.616984,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 138.616984,
+        "sign_index": 4,
+        "degree_in_sign": 18.616984,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 70354,
+  "name": "Consuegra Sosa, Hugo",
+  "given_name": "Hugo Consuegra Sosa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425911.145833,
+    "year": 1929,
+    "month": 10,
+    "day": 26,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "s",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Havana",
+    "country": "Cuba",
+    "lat": 23.133333,
+    "lon": -82.366667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Consuegra_Sosa,_Hugo",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 8.768503,
+    "lagna": 218.768503,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.876884,
+    "jd_ut": 2425911.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 189.860962,
+        "sign_index": 6,
+        "degree_in_sign": 9.860962,
+        "is_retrograde": false,
+        "speed": 0.997995
+      },
+      "Moon": {
+        "longitude": 116.338972,
+        "sign_index": 3,
+        "degree_in_sign": 26.338972,
+        "is_retrograde": false,
+        "speed": 10.506407
+      },
+      "Mars": {
+        "longitude": 200.946217,
+        "sign_index": 6,
+        "degree_in_sign": 20.946217,
+        "is_retrograde": false,
+        "speed": 0.695701
+      },
+      "Mercury": {
+        "longitude": 171.999468,
+        "sign_index": 5,
+        "degree_in_sign": 21.999468,
+        "is_retrograde": false,
+        "speed": 1.263955
+      },
+      "Jupiter": {
+        "longitude": 52.782997,
+        "sign_index": 1,
+        "degree_in_sign": 22.782997,
+        "is_retrograde": true,
+        "speed": -0.06961
+      },
+      "Venus": {
+        "longitude": 165.079064,
+        "sign_index": 5,
+        "degree_in_sign": 15.079064,
+        "is_retrograde": false,
+        "speed": 1.239453
+      },
+      "Saturn": {
+        "longitude": 243.663733,
+        "sign_index": 8,
+        "degree_in_sign": 3.663733,
+        "is_retrograde": false,
+        "speed": 0.084727
+      },
+      "Rahu": {
+        "longitude": 19.577799,
+        "sign_index": 0,
+        "degree_in_sign": 19.577799,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 199.577799,
+        "sign_index": 6,
+        "degree_in_sign": 19.577799,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

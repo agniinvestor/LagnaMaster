@@ -1,0 +1,108 @@
+{
+  "adb_id": 54322,
+  "name": "Clemens, Wim",
+  "given_name": "Wim Clemens",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416056.153102,
+    "year": 1902,
+    "month": 11,
+    "day": 2,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Utrecht",
+    "country": "Netherlands",
+    "lat": 52.1,
+    "lon": 5.116667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clemens,_Wim",
+  "source_notes": "Steinbrecher collection: Koppejans quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 11.562416,
+    "lagna": 341.562416,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.500122,
+    "jd_ut": 2416056.153102,
+    "planets": {
+      "Sun": {
+        "longitude": 196.787569,
+        "sign_index": 6,
+        "degree_in_sign": 16.787569,
+        "is_retrograde": false,
+        "speed": 1.001859
+      },
+      "Moon": {
+        "longitude": 222.450573,
+        "sign_index": 7,
+        "degree_in_sign": 12.450573,
+        "is_retrograde": false,
+        "speed": 9.178103
+      },
+      "Mars": {
+        "longitude": 133.047063,
+        "sign_index": 4,
+        "degree_in_sign": 13.047063,
+        "is_retrograde": false,
+        "speed": 0.564578
+      },
+      "Mercury": {
+        "longitude": 178.274264,
+        "sign_index": 5,
+        "degree_in_sign": 28.274264,
+        "is_retrograde": false,
+        "speed": 0.788248
+      },
+      "Jupiter": {
+        "longitude": 286.28978,
+        "sign_index": 9,
+        "degree_in_sign": 16.28978,
+        "is_retrograde": false,
+        "speed": 0.092209
+      },
+      "Venus": {
+        "longitude": 190.207346,
+        "sign_index": 6,
+        "degree_in_sign": 10.207346,
+        "is_retrograde": false,
+        "speed": 1.254706
+      },
+      "Saturn": {
+        "longitude": 269.809085,
+        "sign_index": 8,
+        "degree_in_sign": 29.809085,
+        "is_retrograde": false,
+        "speed": 0.059035
+      },
+      "Rahu": {
+        "longitude": 181.814492,
+        "sign_index": 6,
+        "degree_in_sign": 1.814492,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 1.814492,
+        "sign_index": 0,
+        "degree_in_sign": 1.814492,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

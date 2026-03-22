@@ -1,0 +1,111 @@
+{
+  "adb_id": 58461,
+  "name": "Coase, Ronald",
+  "given_name": "Ronald Coase",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419035.142361,
+    "year": 1910,
+    "month": 12,
+    "day": 29,
+    "calendar": "g",
+    "time": "15:25",
+    "time_type": "s",
+    "hour": 15.416667,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coase,_Ronald",
+  "source_notes": "Sy Scholfield quotes Torsten Persson's book, \"Nobel Lectures in Economic Sciences 1991-1995\" (1997), p. 7: \"RONALD H. COASE: My father, a methodical man, recorded in his diary that I was born at 3:25 pm on December 29th, 1910 ... in London.\"\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Economist",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Nobel prize"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 15.992962,
+    "lagna": 45.992962,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.614006,
+    "jd_ut": 2419035.142361,
+    "planets": {
+      "Sun": {
+        "longitude": 254.447795,
+        "sign_index": 8,
+        "degree_in_sign": 14.447795,
+        "is_retrograde": false,
+        "speed": 1.019516
+      },
+      "Moon": {
+        "longitude": 231.57808,
+        "sign_index": 7,
+        "degree_in_sign": 21.57808,
+        "is_retrograde": false,
+        "speed": 10.811273
+      },
+      "Mars": {
+        "longitude": 223.765266,
+        "sign_index": 7,
+        "degree_in_sign": 13.765266,
+        "is_retrograde": false,
+        "speed": 0.700965
+      },
+      "Mercury": {
+        "longitude": 273.114781,
+        "sign_index": 9,
+        "degree_in_sign": 3.114781,
+        "is_retrograde": false,
+        "speed": 0.464354
+      },
+      "Jupiter": {
+        "longitude": 196.542718,
+        "sign_index": 6,
+        "degree_in_sign": 16.542718,
+        "is_retrograde": false,
+        "speed": 0.159581
+      },
+      "Venus": {
+        "longitude": 262.413906,
+        "sign_index": 8,
+        "degree_in_sign": 22.413906,
+        "is_retrograde": false,
+        "speed": 1.257093
+      },
+      "Saturn": {
+        "longitude": 7.09434,
+        "sign_index": 0,
+        "degree_in_sign": 7.09434,
+        "is_retrograde": true,
+        "speed": -0.006783
+      },
+      "Rahu": {
+        "longitude": 23.951587,
+        "sign_index": 0,
+        "degree_in_sign": 23.951587,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 203.951587,
+        "sign_index": 6,
+        "degree_in_sign": 23.951587,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

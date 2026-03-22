@@ -1,0 +1,111 @@
+{
+  "adb_id": 104342,
+  "name": "Carman, Nancy",
+  "given_name": "Nancy Carman",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433593.653472,
+    "year": 1950,
+    "month": 11,
+    "day": 7,
+    "calendar": "g",
+    "time": "20:41",
+    "time_type": "s",
+    "hour": 20.683333,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carman,_Nancy",
+  "source_notes": "Sy Scholfield quoted birth notice, ''Tucson Citizen'' (Tucson, Arizona), 8 November 1950, page 28: born at St. Mary's Hospital, name misspelled as Carmen.\\n\\n(Her full name, year, date and place of birth are given in the book ''Contemporary American Women Sculptors'', by Virginia Watson-Jones, Bloomsbury Academic, 1986, page 90).\\n\\nIn November 2025 Scholfield provided birth certificate, copy on file.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Lifestyle : Financial : Gain - Grant, Scholarship, etc.",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Misc. : Crafts"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 19.92597,
+    "lagna": 49.92597,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.170623,
+    "jd_ut": 2433593.653472,
+    "planets": {
+      "Sun": {
+        "longitude": 201.994997,
+        "sign_index": 6,
+        "degree_in_sign": 21.994997,
+        "is_retrograde": false,
+        "speed": 1.004406
+      },
+      "Moon": {
+        "longitude": 176.225014,
+        "sign_index": 5,
+        "degree_in_sign": 26.225014,
+        "is_retrograde": false,
+        "speed": 18.797467
+      },
+      "Mars": {
+        "longitude": 248.238084,
+        "sign_index": 8,
+        "degree_in_sign": 8.238084,
+        "is_retrograde": false,
+        "speed": 0.75205
+      },
+      "Mercury": {
+        "longitude": 205.891187,
+        "sign_index": 6,
+        "degree_in_sign": 25.891187,
+        "is_retrograde": false,
+        "speed": 1.586503
+      },
+      "Jupiter": {
+        "longitude": 304.789627,
+        "sign_index": 10,
+        "degree_in_sign": 4.789627,
+        "is_retrograde": false,
+        "speed": 0.049621
+      },
+      "Venus": {
+        "longitude": 200.532945,
+        "sign_index": 6,
+        "degree_in_sign": 20.532945,
+        "is_retrograde": false,
+        "speed": 1.255573
+      },
+      "Saturn": {
+        "longitude": 155.678404,
+        "sign_index": 5,
+        "degree_in_sign": 5.678404,
+        "is_retrograde": false,
+        "speed": 0.098796
+      },
+      "Rahu": {
+        "longitude": 332.465824,
+        "sign_index": 11,
+        "degree_in_sign": 2.465824,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 152.465824,
+        "sign_index": 5,
+        "degree_in_sign": 2.465824,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

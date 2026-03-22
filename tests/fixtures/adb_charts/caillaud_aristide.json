@@ -1,0 +1,108 @@
+{
+  "adb_id": 64903,
+  "name": "Caillaud, Aristide",
+  "given_name": "Aristide Caillaud",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415777.722674,
+    "year": 1902,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Moulins",
+    "country": "France",
+    "lat": 46.566667,
+    "lon": 3.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caillaud,_Aristide",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 11.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 17.590108,
+    "lagna": 227.590108,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.489478,
+    "jd_ut": 2415777.722674,
+    "planets": {
+      "Sun": {
+        "longitude": 284.882828,
+        "sign_index": 9,
+        "degree_in_sign": 14.882828,
+        "is_retrograde": false,
+        "speed": 1.015693
+      },
+      "Moon": {
+        "longitude": 157.686393,
+        "sign_index": 5,
+        "degree_in_sign": 7.686393,
+        "is_retrograde": false,
+        "speed": 9.556549
+      },
+      "Mars": {
+        "longitude": 298.193769,
+        "sign_index": 9,
+        "degree_in_sign": 28.193769,
+        "is_retrograde": false,
+        "speed": 0.790893
+      },
+      "Mercury": {
+        "longitude": 301.394066,
+        "sign_index": 10,
+        "degree_in_sign": 1.394066,
+        "is_retrograde": false,
+        "speed": 1.514086
+      },
+      "Jupiter": {
+        "longitude": 275.279942,
+        "sign_index": 9,
+        "degree_in_sign": 5.279942,
+        "is_retrograde": false,
+        "speed": 0.233691
+      },
+      "Venus": {
+        "longitude": 310.665238,
+        "sign_index": 10,
+        "degree_in_sign": 10.665238,
+        "is_retrograde": true,
+        "speed": -0.129374
+      },
+      "Saturn": {
+        "longitude": 268.407692,
+        "sign_index": 8,
+        "degree_in_sign": 28.407692,
+        "is_retrograde": false,
+        "speed": 0.11516
+      },
+      "Rahu": {
+        "longitude": 196.569108,
+        "sign_index": 6,
+        "degree_in_sign": 16.569108,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 16.569108,
+        "sign_index": 0,
+        "degree_in_sign": 16.569108,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

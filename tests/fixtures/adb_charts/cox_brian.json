@@ -1,0 +1,118 @@
+{
+  "adb_id": 47632,
+  "name": "Cox, Brian",
+  "given_name": "Brian Cox",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431973.052083,
+    "year": 1946,
+    "month": 6,
+    "day": 1,
+    "calendar": "g",
+    "time": "14:15",
+    "time_type": "d",
+    "hour": 14.25,
+    "time_unknown": false,
+    "place": "Dundee",
+    "country": "Scotland",
+    "lat": 56.466667,
+    "lon": -3.0
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cox,_Brian",
+  "source_notes": "Paul Wright collection, B.C. directly from Scotland birth registry, with 2:15 pm.\\nHis autobiography ''Putting the Rabbit in the Hat'' says \"about 1:45 pm\" at the beginning of chapter 1.\\n",
+  "categories": [
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Vocation : Entertainment : Voice-Over",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Awards : Emmy",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 10.603786,
+    "lagna": 130.603786,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.108657,
+    "jd_ut": 2431973.052083,
+    "planets": {
+      "Sun": {
+        "longitude": 47.324438,
+        "sign_index": 1,
+        "degree_in_sign": 17.324438,
+        "is_retrograde": false,
+        "speed": 0.958499
+      },
+      "Moon": {
+        "longitude": 71.224822,
+        "sign_index": 2,
+        "degree_in_sign": 11.224822,
+        "is_retrograde": false,
+        "speed": 11.576411
+      },
+      "Mars": {
+        "longitude": 116.509406,
+        "sign_index": 3,
+        "degree_in_sign": 26.509406,
+        "is_retrograde": false,
+        "speed": 0.537254
+      },
+      "Mercury": {
+        "longitude": 48.649585,
+        "sign_index": 1,
+        "degree_in_sign": 18.649585,
+        "is_retrograde": false,
+        "speed": 2.200941
+      },
+      "Jupiter": {
+        "longitude": 174.609786,
+        "sign_index": 5,
+        "degree_in_sign": 24.609786,
+        "is_retrograde": true,
+        "speed": -0.039579
+      },
+      "Venus": {
+        "longitude": 77.009802,
+        "sign_index": 2,
+        "degree_in_sign": 17.009802,
+        "is_retrograde": false,
+        "speed": 1.20105
+      },
+      "Saturn": {
+        "longitude": 89.239907,
+        "sign_index": 2,
+        "degree_in_sign": 29.239907,
+        "is_retrograde": false,
+        "speed": 0.107375
+      },
+      "Rahu": {
+        "longitude": 58.344832,
+        "sign_index": 1,
+        "degree_in_sign": 28.344832,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 238.344832,
+        "sign_index": 7,
+        "degree_in_sign": 28.344832,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

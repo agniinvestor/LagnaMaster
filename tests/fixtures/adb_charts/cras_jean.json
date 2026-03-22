@@ -1,0 +1,109 @@
+{
+  "adb_id": 2944,
+  "name": "Cras, Jean",
+  "given_name": "Jean Cras",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407491.92912,
+    "year": 1879,
+    "month": 5,
+    "day": 22,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Brest",
+    "country": "France",
+    "lat": 48.4,
+    "lon": -4.483333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cras,_Jean",
+  "source_notes": "Gauquelin Vol 4/1736\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 1.736385,
+    "lagna": 91.736385,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.172742,
+    "jd_ut": 2407491.92912,
+    "planets": {
+      "Sun": {
+        "longitude": 38.743414,
+        "sign_index": 1,
+        "degree_in_sign": 8.743414,
+        "is_retrograde": false,
+        "speed": 0.961226
+      },
+      "Moon": {
+        "longitude": 52.216419,
+        "sign_index": 1,
+        "degree_in_sign": 22.216419,
+        "is_retrograde": false,
+        "speed": 9.553653
+      },
+      "Mars": {
+        "longitude": 325.22826,
+        "sign_index": 10,
+        "degree_in_sign": 25.22826,
+        "is_retrograde": false,
+        "speed": 0.724375
+      },
+      "Mercury": {
+        "longitude": 14.367653,
+        "sign_index": 0,
+        "degree_in_sign": 14.367653,
+        "is_retrograde": false,
+        "speed": 1.308038
+      },
+      "Jupiter": {
+        "longitude": 317.972712,
+        "sign_index": 10,
+        "degree_in_sign": 17.972712,
+        "is_retrograde": false,
+        "speed": 0.119883
+      },
+      "Venus": {
+        "longitude": 77.568155,
+        "sign_index": 2,
+        "degree_in_sign": 17.568155,
+        "is_retrograde": false,
+        "speed": 1.155956
+      },
+      "Saturn": {
+        "longitude": 350.086664,
+        "sign_index": 11,
+        "degree_in_sign": 20.086664,
+        "is_retrograde": false,
+        "speed": 0.096464
+      },
+      "Rahu": {
+        "longitude": 275.650847,
+        "sign_index": 9,
+        "degree_in_sign": 5.650847,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 95.650847,
+        "sign_index": 3,
+        "degree_in_sign": 5.650847,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

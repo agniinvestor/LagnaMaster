@@ -1,0 +1,110 @@
+{
+  "adb_id": 71608,
+  "name": "Casiraghi, Paolo",
+  "given_name": "Paolo Casiraghi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441356.756944,
+    "year": 1972,
+    "month": 2,
+    "day": 9,
+    "calendar": "g",
+    "time": "07:10",
+    "time_type": "s",
+    "hour": 7.166667,
+    "time_unknown": false,
+    "place": "Bergamo",
+    "country": "Italy",
+    "lat": 45.683333,
+    "lon": 9.716667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casiraghi,_Paolo",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Night Club/ Vaudeville"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 21.751267,
+    "lagna": 261.751267,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.46747,
+    "jd_ut": 2441356.756944,
+    "planets": {
+      "Sun": {
+        "longitude": 296.123353,
+        "sign_index": 9,
+        "degree_in_sign": 26.123353,
+        "is_retrograde": false,
+        "speed": 1.01268
+      },
+      "Moon": {
+        "longitude": 226.124934,
+        "sign_index": 7,
+        "degree_in_sign": 16.124934,
+        "is_retrograde": false,
+        "speed": 8.340139
+      },
+      "Mars": {
+        "longitude": 5.650812,
+        "sign_index": 0,
+        "degree_in_sign": 5.650812,
+        "is_retrograde": false,
+        "speed": 0.660101
+      },
+      "Mercury": {
+        "longitude": 290.151251,
+        "sign_index": 9,
+        "degree_in_sign": 20.151251,
+        "is_retrograde": false,
+        "speed": 1.70075
+      },
+      "Jupiter": {
+        "longitude": 246.983278,
+        "sign_index": 8,
+        "degree_in_sign": 6.983278,
+        "is_retrograde": false,
+        "speed": 0.184687
+      },
+      "Venus": {
+        "longitude": 335.136918,
+        "sign_index": 11,
+        "degree_in_sign": 5.136918,
+        "is_retrograde": false,
+        "speed": 1.19469
+      },
+      "Saturn": {
+        "longitude": 36.180735,
+        "sign_index": 1,
+        "degree_in_sign": 6.180735,
+        "is_retrograde": false,
+        "speed": 0.016613
+      },
+      "Rahu": {
+        "longitude": 281.083063,
+        "sign_index": 9,
+        "degree_in_sign": 11.083063,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 101.083063,
+        "sign_index": 3,
+        "degree_in_sign": 11.083063,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

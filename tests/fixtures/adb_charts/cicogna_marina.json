@@ -1,0 +1,123 @@
+{
+  "adb_id": 71660,
+  "name": "Cicogna, Marina",
+  "given_name": "Marina Cicogna",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427587.0625,
+    "year": 1934,
+    "month": 5,
+    "day": 29,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "s",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cicogna,_Marina",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\nUpdate 5 Nov. 2023: birth year was 1934, not 1937 as previously recorded.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Cohabitation more than 3 yrs",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Mate - Same sex",
+    "Passions : Sexuality : Bi-Sexual",
+    "Passions : Sexuality : Lesbian",
+    "Personal : Death : Illness/ Disease",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Photography",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 23.031472,
+    "lagna": 143.031472,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.94096,
+    "jd_ut": 2427587.0625,
+    "planets": {
+      "Sun": {
+        "longitude": 44.532835,
+        "sign_index": 1,
+        "degree_in_sign": 14.532835,
+        "is_retrograde": false,
+        "speed": 0.95858
+      },
+      "Moon": {
+        "longitude": 233.986386,
+        "sign_index": 7,
+        "degree_in_sign": 23.986386,
+        "is_retrograde": false,
+        "speed": 18.857657
+      },
+      "Mars": {
+        "longitude": 34.111741,
+        "sign_index": 1,
+        "degree_in_sign": 4.111741,
+        "is_retrograde": false,
+        "speed": 0.71656
+      },
+      "Mercury": {
+        "longitude": 62.316948,
+        "sign_index": 2,
+        "degree_in_sign": 2.316948,
+        "is_retrograde": false,
+        "speed": 1.765926
+      },
+      "Jupiter": {
+        "longitude": 170.547086,
+        "sign_index": 5,
+        "degree_in_sign": 20.547086,
+        "is_retrograde": true,
+        "speed": -0.035949
+      },
+      "Venus": {
+        "longitude": 2.678187,
+        "sign_index": 0,
+        "degree_in_sign": 2.678187,
+        "is_retrograde": false,
+        "speed": 1.130051
+      },
+      "Saturn": {
+        "longitude": 305.156676,
+        "sign_index": 10,
+        "degree_in_sign": 5.156676,
+        "is_retrograde": false,
+        "speed": 0.016616
+      },
+      "Rahu": {
+        "longitude": 290.767495,
+        "sign_index": 9,
+        "degree_in_sign": 20.767495,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 110.767495,
+        "sign_index": 3,
+        "degree_in_sign": 20.767495,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

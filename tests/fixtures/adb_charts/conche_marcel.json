@@ -1,0 +1,110 @@
+{
+  "adb_id": 65058,
+  "name": "Conche, Marcel",
+  "given_name": "Marcel Conche",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423140.833333,
+    "year": 1922,
+    "month": 3,
+    "day": 27,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "d",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Altillac",
+    "country": "France",
+    "lat": 44.977778,
+    "lon": 1.846667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conche,_Marcel",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 214.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Humanities+Social Sciences : Philosopher",
+    "Vocation : Writers : Religion/ Philosophy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 13.837579,
+    "lagna": 13.837579,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.770969,
+    "jd_ut": 2423140.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 343.100758,
+        "sign_index": 11,
+        "degree_in_sign": 13.100758,
+        "is_retrograde": false,
+        "speed": 0.989624
+      },
+      "Moon": {
+        "longitude": 330.0732,
+        "sign_index": 11,
+        "degree_in_sign": 0.0732,
+        "is_retrograde": false,
+        "speed": 9.362337
+      },
+      "Mars": {
+        "longitude": 233.669188,
+        "sign_index": 7,
+        "degree_in_sign": 23.669188,
+        "is_retrograde": false,
+        "speed": 0.371137
+      },
+      "Mercury": {
+        "longitude": 319.425203,
+        "sign_index": 10,
+        "degree_in_sign": 19.425203,
+        "is_retrograde": false,
+        "speed": 1.468622
+      },
+      "Jupiter": {
+        "longitude": 172.286149,
+        "sign_index": 5,
+        "degree_in_sign": 22.286149,
+        "is_retrograde": true,
+        "speed": -0.125553
+      },
+      "Venus": {
+        "longitude": 354.444758,
+        "sign_index": 11,
+        "degree_in_sign": 24.444758,
+        "is_retrograde": false,
+        "speed": 1.240145
+      },
+      "Saturn": {
+        "longitude": 161.354977,
+        "sign_index": 5,
+        "degree_in_sign": 11.354977,
+        "is_retrograde": true,
+        "speed": -0.078326
+      },
+      "Rahu": {
+        "longitude": 166.382429,
+        "sign_index": 5,
+        "degree_in_sign": 16.382429,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.382429,
+        "sign_index": 11,
+        "degree_in_sign": 16.382429,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 70204,
+  "name": "Chazelle, Ervan",
+  "given_name": "Ervan Chazelle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445795.791667,
+    "year": 1984,
+    "month": 4,
+    "day": 5,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "d",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chazelle,_Ervan",
+  "source_notes": "Didier Geslain archive, 'hippisme jockeys' pdf file, p. 47.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 10.01127,
+    "lagna": 10.01127,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.637223,
+    "jd_ut": 2445795.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 352.0497,
+        "sign_index": 11,
+        "degree_in_sign": 22.0497,
+        "is_retrograde": false,
+        "speed": 0.984492
+      },
+      "Moon": {
+        "longitude": 35.184606,
+        "sign_index": 1,
+        "degree_in_sign": 5.184606,
+        "is_retrograde": false,
+        "speed": 14.41167
+      },
+      "Mars": {
+        "longitude": 214.71429,
+        "sign_index": 7,
+        "degree_in_sign": 4.71429,
+        "is_retrograde": false,
+        "speed": 0.00269
+      },
+      "Mercury": {
+        "longitude": 10.679054,
+        "sign_index": 0,
+        "degree_in_sign": 10.679054,
+        "is_retrograde": false,
+        "speed": 0.73203
+      },
+      "Jupiter": {
+        "longitude": 258.404188,
+        "sign_index": 8,
+        "degree_in_sign": 18.404188,
+        "is_retrograde": false,
+        "speed": 0.074122
+      },
+      "Venus": {
+        "longitude": 333.222459,
+        "sign_index": 11,
+        "degree_in_sign": 3.222459,
+        "is_retrograde": false,
+        "speed": 1.233055
+      },
+      "Saturn": {
+        "longitude": 201.425546,
+        "sign_index": 6,
+        "degree_in_sign": 21.425546,
+        "is_retrograde": true,
+        "speed": -0.060496
+      },
+      "Rahu": {
+        "longitude": 45.849585,
+        "sign_index": 1,
+        "degree_in_sign": 15.849585,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 225.849585,
+        "sign_index": 7,
+        "degree_in_sign": 15.849585,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

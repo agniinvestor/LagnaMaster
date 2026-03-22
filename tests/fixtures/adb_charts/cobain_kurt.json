@@ -1,111 +1,136 @@
 {
-  "adb_slug": "Cobain,_Kurt",
-  "name": "Kurt Cobain",
-  "source": "astro-databank",
-  "rodden_rating": "Unknown",
-  "adb_url": "https://www.astro.com/astro-databank/Cobain,_Kurt",
+  "adb_id": 19568,
+  "name": "Cobain, Kurt",
+  "given_name": "Kurt Cobain",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
   "birth_data": {
+    "jd_ut": 2439542.651389,
     "year": 1967,
     "month": 2,
     "day": 20,
-    "hour": 8.18,
-    "lat": 0,
-    "lon": 0,
-    "tz_offset": 0,
-    "ayanamsha": "lahiri"
+    "calendar": "g",
+    "time": "19:38",
+    "time_type": "s",
+    "hour": 19.633333,
+    "time_unknown": false,
+    "place": "Aberdeen",
+    "country": "Washington",
+    "lat": 46.983333,
+    "lon": -123.816667
   },
-  "birth_place": "USA",
-  "country": "USA",
-  "data_trust_level": "medium",
-  "assert_lagna": false,
-  "trust_note": "USA 1967 — medium trust",
-  "expected": {},
-  "chart": {
-    "lagna": 339.0824626869638,
-    "lagna_sign": "Pisces",
-    "lagna_sign_index": 11,
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cobain,_Kurt",
+  "source_notes": "\\nCraft quotes birth certificate shown in Kurt Cobain documentary \"Montage of Heck\" (2015).\\n\\nMuriel Foltz quotes his mom in WTPE Gemini/1994 for 7:20 pm\\n(Thomas Germine obtained the B.C., same date, no time given.  He rectifies the time to 7:26 AM PST.)\\nBiography: Charles R. Cross \"Heavier Than Heaven,\" 2001\\n",
+  "categories": [
+    "Traits : Mind : Education limited",
+    "Traits : Personality : Creative",
+    "Traits : Personality : Personality vulnerable",
+    "Diagnoses : Body Part Problems : Lung",
+    "Diagnoses : Body Part Problems : Gastrointestinal",
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Diagnoses : Psychological : ADHD",
+    "Diagnoses : Psychological : Anxiety Disorder",
+    "Diagnoses : Psychological : Depression",
+    "Family : Childhood : Order of birth",
+    "Family : Childhood : Parents divorced",
+    "Family : Childhood : Sibling circumstances",
+    "Family : Relationship : Marriage less than 3 Yrs",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Personal : Death : Suicide",
+    "Vocation : Art : Other Art",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Awards : Grammy",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Famous : Notable extremes"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.554345,
+    "lagna": 126.554345,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.398099,
+    "jd_ut": 2439542.651389,
     "planets": {
       "Sun": {
-        "longitude": 307.6036904396459,
+        "longitude": 308.420336,
         "sign_index": 10,
-        "sign": "Aquarius",
-        "degree_in_sign": 7.603690439645902,
-        "is_retrograde": false
+        "degree_in_sign": 8.420336,
+        "is_retrograde": false,
+        "speed": 1.007297
       },
       "Moon": {
-        "longitude": 69.03225716711103,
+        "longitude": 80.306728,
         "sign_index": 2,
-        "sign": "Gemini",
-        "degree_in_sign": 9.032257167111027,
-        "is_retrograde": false
+        "degree_in_sign": 20.306728,
+        "is_retrograde": false,
+        "speed": 9.995204
       },
       "Mars": {
-        "longitude": 188.26918736736377,
+        "longitude": 188.410367,
         "sign_index": 6,
-        "sign": "Libra",
-        "degree_in_sign": 8.26918736736377,
-        "is_retrograde": false
+        "degree_in_sign": 8.410367,
+        "is_retrograde": false,
+        "speed": 0.170353
       },
       "Mercury": {
-        "longitude": 324.73769823284084,
+        "longitude": 325.065705,
         "sign_index": 10,
-        "sign": "Aquarius",
-        "degree_in_sign": 24.73769823284084,
-        "is_retrograde": false
+        "degree_in_sign": 25.065705,
+        "is_retrograde": false,
+        "speed": 0.338806
       },
       "Jupiter": {
-        "longitude": 92.36886038141597,
+        "longitude": 92.297402,
         "sign_index": 3,
-        "sign": "Cancer",
-        "degree_in_sign": 2.3688603814159706,
-        "is_retrograde": true
+        "degree_in_sign": 2.297402,
+        "is_retrograde": true,
+        "speed": -0.08703
       },
       "Venus": {
-        "longitude": 332.15845850513483,
+        "longitude": 333.161307,
         "sign_index": 11,
-        "sign": "Pisces",
-        "degree_in_sign": 2.1584585051348313,
-        "is_retrograde": false
+        "degree_in_sign": 3.161307,
+        "is_retrograde": false,
+        "speed": 1.236958
       },
       "Saturn": {
-        "longitude": 335.23797048850196,
+        "longitude": 335.331566,
         "sign_index": 11,
-        "sign": "Pisces",
-        "degree_in_sign": 5.237970488501958,
-        "is_retrograde": false
+        "degree_in_sign": 5.331566,
+        "is_retrograde": false,
+        "speed": 0.115671
       },
       "Rahu": {
-        "longitude": 17.259173345398146,
+        "longitude": 17.21622,
         "sign_index": 0,
-        "sign": "Aries",
-        "degree_in_sign": 17.259173345398146,
-        "is_retrograde": true
+        "degree_in_sign": 17.21622,
+        "is_retrograde": true,
+        "speed": -0.052992
       },
       "Ketu": {
-        "longitude": 197.25917334539815,
+        "longitude": 197.21622,
         "sign_index": 6,
-        "sign": "Libra",
-        "degree_in_sign": 17.259173345398153,
-        "is_retrograde": true
+        "degree_in_sign": 17.21622,
+        "is_retrograde": true,
+        "speed": 0.0
       }
     }
-  },
-  "scores": {
-    "1": -0.625,
-    "2": -5.75,
-    "3": -2.25,
-    "4": -2.0,
-    "5": 4.5,
-    "6": -0.875,
-    "7": -4.125,
-    "8": -1.75,
-    "9": -2.375,
-    "10": 2.125,
-    "11": 2.125,
-    "12": 1.5
-  },
-  "fetch_status": "ok",
-  "fetched_date": "2026-03-22",
-  "engine_version": "v3.0.0",
-  "computed_date": "2026-03-22"
+  }
 }

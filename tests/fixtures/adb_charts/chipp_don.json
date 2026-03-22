@@ -1,0 +1,116 @@
+{
+  "adb_id": 44770,
+  "name": "Chipp, Don",
+  "given_name": "Don Chipp",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2424383.354167,
+    "year": 1925,
+    "month": 8,
+    "day": 21,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Northcote",
+    "country": "Australia",
+    "lat": -37.766667,
+    "lon": 145.0
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chipp,_Don",
+  "source_notes": "Dennis Sutton quotes Susan Alexander from Chipp, given in Sutton's 50 Australian charts, published 1996\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Government employee",
+    "Vocation : Politics : Public office",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 0.118381,
+    "lagna": 90.118381,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.818473,
+    "jd_ut": 2424383.354167,
+    "planets": {
+      "Sun": {
+        "longitude": 124.45208,
+        "sign_index": 4,
+        "degree_in_sign": 4.45208,
+        "is_retrograde": false,
+        "speed": 0.963393
+      },
+      "Moon": {
+        "longitude": 139.379992,
+        "sign_index": 4,
+        "degree_in_sign": 19.379992,
+        "is_retrograde": false,
+        "speed": 12.832608
+      },
+      "Mars": {
+        "longitude": 132.245989,
+        "sign_index": 4,
+        "degree_in_sign": 12.245989,
+        "is_retrograde": false,
+        "speed": 0.635661
+      },
+      "Mercury": {
+        "longitude": 132.770295,
+        "sign_index": 4,
+        "degree_in_sign": 12.770295,
+        "is_retrograde": true,
+        "speed": -0.788093
+      },
+      "Jupiter": {
+        "longitude": 260.464947,
+        "sign_index": 8,
+        "degree_in_sign": 20.464947,
+        "is_retrograde": true,
+        "speed": -0.060403
+      },
+      "Venus": {
+        "longitude": 155.781159,
+        "sign_index": 5,
+        "degree_in_sign": 5.781159,
+        "is_retrograde": false,
+        "speed": 1.205165
+      },
+      "Saturn": {
+        "longitude": 196.083706,
+        "sign_index": 6,
+        "degree_in_sign": 16.083706,
+        "is_retrograde": false,
+        "speed": 0.061724
+      },
+      "Rahu": {
+        "longitude": 100.538659,
+        "sign_index": 3,
+        "degree_in_sign": 10.538659,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 280.538659,
+        "sign_index": 9,
+        "degree_in_sign": 10.538659,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

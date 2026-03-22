@@ -1,0 +1,109 @@
+{
+  "adb_id": 70524,
+  "name": "Charner, Léonard",
+  "given_name": "Léonard Charner",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2377445.299398,
+    "year": 1797,
+    "month": 2,
+    "day": 13,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "St.Brieuc",
+    "country": "France",
+    "lat": 48.516667,
+    "lon": -2.783333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charner,_Léonard",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 66.\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 2.825916,
+    "lagna": 122.825916,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.024435,
+    "jd_ut": 2377445.299398,
+    "planets": {
+      "Sun": {
+        "longitude": 304.637867,
+        "sign_index": 10,
+        "degree_in_sign": 4.637867,
+        "is_retrograde": false,
+        "speed": 1.008783
+      },
+      "Moon": {
+        "longitude": 156.988267,
+        "sign_index": 5,
+        "degree_in_sign": 6.988267,
+        "is_retrograde": false,
+        "speed": 15.409938
+      },
+      "Mars": {
+        "longitude": 358.713435,
+        "sign_index": 11,
+        "degree_in_sign": 28.713435,
+        "is_retrograde": false,
+        "speed": 0.709984
+      },
+      "Mercury": {
+        "longitude": 302.101734,
+        "sign_index": 10,
+        "degree_in_sign": 2.101734,
+        "is_retrograde": true,
+        "speed": -1.141914
+      },
+      "Jupiter": {
+        "longitude": 327.702239,
+        "sign_index": 10,
+        "degree_in_sign": 27.702239,
+        "is_retrograde": false,
+        "speed": 0.232716
+      },
+      "Venus": {
+        "longitude": 278.333478,
+        "sign_index": 9,
+        "degree_in_sign": 8.333478,
+        "is_retrograde": false,
+        "speed": 1.238038
+      },
+      "Saturn": {
+        "longitude": 59.955726,
+        "sign_index": 1,
+        "degree_in_sign": 29.955726,
+        "is_retrograde": true,
+        "speed": -0.011967
+      },
+      "Rahu": {
+        "longitude": 67.886849,
+        "sign_index": 2,
+        "degree_in_sign": 7.886849,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 247.886849,
+        "sign_index": 8,
+        "degree_in_sign": 7.886849,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

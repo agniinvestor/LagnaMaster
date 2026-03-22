@@ -1,0 +1,114 @@
+{
+  "adb_id": 67523,
+  "name": "Conti, Anita",
+  "given_name": "Anita Conti",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414792.035174,
+    "year": 1899,
+    "month": 5,
+    "day": 17,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Ermont",
+    "country": "France",
+    "lat": 48.983333,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conti,_Anita",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 63.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Photography",
+    "Vocation : Education : Researcher",
+    "Vocation : Politics : Activist/ social",
+    "Vocation : Science : Other Science",
+    "Vocation : Travel : Explorer",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 0.512118,
+    "lagna": 120.512118,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.451797,
+    "jd_ut": 2414792.035174,
+    "planets": {
+      "Sun": {
+        "longitude": 33.915175,
+        "sign_index": 1,
+        "degree_in_sign": 3.915175,
+        "is_retrograde": false,
+        "speed": 0.962752
+      },
+      "Moon": {
+        "longitude": 122.685701,
+        "sign_index": 4,
+        "degree_in_sign": 2.685701,
+        "is_retrograde": false,
+        "speed": 10.90285
+      },
+      "Mars": {
+        "longitude": 111.894576,
+        "sign_index": 3,
+        "degree_in_sign": 21.894576,
+        "is_retrograde": false,
+        "speed": 0.496378
+      },
+      "Mercury": {
+        "longitude": 9.147763,
+        "sign_index": 0,
+        "degree_in_sign": 9.147763,
+        "is_retrograde": false,
+        "speed": 1.305565
+      },
+      "Jupiter": {
+        "longitude": 190.248029,
+        "sign_index": 6,
+        "degree_in_sign": 10.248029,
+        "is_retrograde": true,
+        "speed": -0.108062
+      },
+      "Venus": {
+        "longitude": 2.037188,
+        "sign_index": 0,
+        "degree_in_sign": 2.037188,
+        "is_retrograde": false,
+        "speed": 1.196275
+      },
+      "Saturn": {
+        "longitude": 239.691986,
+        "sign_index": 7,
+        "degree_in_sign": 29.691986,
+        "is_retrograde": true,
+        "speed": -0.062371
+      },
+      "Rahu": {
+        "longitude": 248.802767,
+        "sign_index": 8,
+        "degree_in_sign": 8.802767,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 68.802767,
+        "sign_index": 2,
+        "degree_in_sign": 8.802767,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

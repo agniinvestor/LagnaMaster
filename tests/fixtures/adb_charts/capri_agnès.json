@@ -1,0 +1,111 @@
+{
+  "adb_id": 50744,
+  "name": "Capri, Agnès",
+  "given_name": "Agnès Capri",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417681.035174,
+    "year": 1907,
+    "month": 4,
+    "day": 15,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "L'Arbresle",
+    "country": "France",
+    "lat": 45.833333,
+    "lon": 4.616667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capri,_Agnès",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'chanteuses' pdf file, p. 12.\\n\\nSame data from Steinbrecher collection: Lescaut quotes her De Marre from her\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 7.26701,
+    "lagna": 97.26701,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.562239,
+    "jd_ut": 2417681.035174,
+    "planets": {
+      "Sun": {
+        "longitude": 1.845931,
+        "sign_index": 0,
+        "degree_in_sign": 1.845931,
+        "is_retrograde": false,
+        "speed": 0.978902
+      },
+      "Moon": {
+        "longitude": 33.655032,
+        "sign_index": 1,
+        "degree_in_sign": 3.655032,
+        "is_retrograde": false,
+        "speed": 8.637096
+      },
+      "Mars": {
+        "longitude": 253.700008,
+        "sign_index": 8,
+        "degree_in_sign": 13.700008,
+        "is_retrograde": false,
+        "speed": 0.426085
+      },
+      "Mercury": {
+        "longitude": 334.331588,
+        "sign_index": 11,
+        "degree_in_sign": 4.331588,
+        "is_retrograde": false,
+        "speed": 1.003555
+      },
+      "Jupiter": {
+        "longitude": 72.014189,
+        "sign_index": 2,
+        "degree_in_sign": 12.014189,
+        "is_retrograde": false,
+        "speed": 0.136803
+      },
+      "Venus": {
+        "longitude": 323.254327,
+        "sign_index": 10,
+        "degree_in_sign": 23.254327,
+        "is_retrograde": false,
+        "speed": 1.179661
+      },
+      "Saturn": {
+        "longitude": 329.525871,
+        "sign_index": 10,
+        "degree_in_sign": 29.525871,
+        "is_retrograde": false,
+        "speed": 0.110542
+      },
+      "Rahu": {
+        "longitude": 95.708571,
+        "sign_index": 3,
+        "degree_in_sign": 5.708571,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 275.708571,
+        "sign_index": 9,
+        "degree_in_sign": 5.708571,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

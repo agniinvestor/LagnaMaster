@@ -1,0 +1,109 @@
+{
+  "adb_id": 15156,
+  "name": "Conjoined Twins:Tedesco",
+  "given_name": "Conjoined Twins:Tedesco",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2447224.875,
+    "year": 1988,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Naples",
+    "country": "Italy",
+    "lat": 40.85,
+    "lon": 14.283333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:Tedesco",
+  "source_notes": "Bordoni quotes Corriere, Vol 4\\n",
+  "categories": [
+    "Personal : Birth : Conjoined twins",
+    "Personal : Death : Short Life less than 29 Yrs"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 15.387487,
+    "lagna": 15.387487,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.691875,
+    "jd_ut": 2447224.875,
+    "planets": {
+      "Sun": {
+        "longitude": 320.315375,
+        "sign_index": 10,
+        "degree_in_sign": 20.315375,
+        "is_retrograde": false,
+        "speed": 1.001613
+      },
+      "Moon": {
+        "longitude": 147.877912,
+        "sign_index": 4,
+        "degree_in_sign": 27.877912,
+        "is_retrograde": false,
+        "speed": 14.911039
+      },
+      "Mars": {
+        "longitude": 253.687716,
+        "sign_index": 8,
+        "degree_in_sign": 13.687716,
+        "is_retrograde": false,
+        "speed": 0.674687
+      },
+      "Mercury": {
+        "longitude": 293.31287,
+        "sign_index": 9,
+        "degree_in_sign": 23.31287,
+        "is_retrograde": false,
+        "speed": 0.8063
+      },
+      "Jupiter": {
+        "longitude": 5.427614,
+        "sign_index": 0,
+        "degree_in_sign": 5.427614,
+        "is_retrograde": false,
+        "speed": 0.202773
+      },
+      "Venus": {
+        "longitude": 3.991831,
+        "sign_index": 0,
+        "degree_in_sign": 3.991831,
+        "is_retrograde": false,
+        "speed": 1.129585
+      },
+      "Saturn": {
+        "longitude": 247.709545,
+        "sign_index": 8,
+        "degree_in_sign": 7.709545,
+        "is_retrograde": false,
+        "speed": 0.059513
+      },
+      "Rahu": {
+        "longitude": 330.119565,
+        "sign_index": 11,
+        "degree_in_sign": 0.119565,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 150.119565,
+        "sign_index": 5,
+        "degree_in_sign": 0.119565,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

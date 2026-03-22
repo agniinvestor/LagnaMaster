@@ -1,0 +1,108 @@
+{
+  "adb_id": 65867,
+  "name": "Cornillet, Bruno",
+  "given_name": "Bruno Cornillet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438069.131944,
+    "year": 1963,
+    "month": 2,
+    "day": 8,
+    "calendar": "g",
+    "time": "16:10",
+    "time_type": "s",
+    "hour": 16.166667,
+    "time_unknown": false,
+    "place": "Lamballe",
+    "country": "France",
+    "lat": 48.466667,
+    "lon": -2.516667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornillet,_Bruno",
+  "source_notes": "Didier Geslain archive, 'Cyclisme' pdf file, p. 79.\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 9.776151,
+    "lagna": 69.776151,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.341754,
+    "jd_ut": 2438069.131944,
+    "planets": {
+      "Sun": {
+        "longitude": 295.800335,
+        "sign_index": 9,
+        "degree_in_sign": 25.800335,
+        "is_retrograde": false,
+        "speed": 1.012277
+      },
+      "Moon": {
+        "longitude": 116.5813,
+        "sign_index": 3,
+        "degree_in_sign": 26.5813,
+        "is_retrograde": false,
+        "speed": 15.198553
+      },
+      "Mars": {
+        "longitude": 109.971035,
+        "sign_index": 3,
+        "degree_in_sign": 19.971035,
+        "is_retrograde": true,
+        "speed": -0.391916
+      },
+      "Mercury": {
+        "longitude": 270.391963,
+        "sign_index": 9,
+        "degree_in_sign": 0.391963,
+        "is_retrograde": false,
+        "speed": 0.730243
+      },
+      "Jupiter": {
+        "longitude": 323.63905,
+        "sign_index": 10,
+        "degree_in_sign": 23.63905,
+        "is_retrograde": false,
+        "speed": 0.228299
+      },
+      "Venus": {
+        "longitude": 249.688035,
+        "sign_index": 8,
+        "degree_in_sign": 9.688035,
+        "is_retrograde": false,
+        "speed": 1.096144
+      },
+      "Saturn": {
+        "longitude": 291.104718,
+        "sign_index": 9,
+        "degree_in_sign": 21.104718,
+        "is_retrograde": false,
+        "speed": 0.119541
+      },
+      "Rahu": {
+        "longitude": 95.301031,
+        "sign_index": 3,
+        "degree_in_sign": 5.301031,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 275.301031,
+        "sign_index": 9,
+        "degree_in_sign": 5.301031,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

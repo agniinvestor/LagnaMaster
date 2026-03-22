@@ -1,0 +1,112 @@
+{
+  "adb_id": 85775,
+  "name": "Cathcart, Dick",
+  "given_name": "Dick Cathcart",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424096.5,
+    "year": 1924,
+    "month": 11,
+    "day": 6,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Michigan City",
+    "country": "Indiana",
+    "lat": 41.7,
+    "lon": -86.9
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cathcart,_Dick",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana Archives.\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 26.258451,
+    "lagna": 26.258451,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.807506,
+    "jd_ut": 2424096.5,
+    "planets": {
+      "Sun": {
+        "longitude": 201.506439,
+        "sign_index": 6,
+        "degree_in_sign": 21.506439,
+        "is_retrograde": false,
+        "speed": 1.003766
+      },
+      "Moon": {
+        "longitude": 329.431034,
+        "sign_index": 10,
+        "degree_in_sign": 29.431034,
+        "is_retrograde": false,
+        "speed": 9.587934
+      },
+      "Mars": {
+        "longitude": 314.31054,
+        "sign_index": 10,
+        "degree_in_sign": 14.31054,
+        "is_retrograde": false,
+        "speed": 0.452688
+      },
+      "Mercury": {
+        "longitude": 208.676947,
+        "sign_index": 6,
+        "degree_in_sign": 28.676947,
+        "is_retrograde": false,
+        "speed": 1.562924
+      },
+      "Jupiter": {
+        "longitude": 238.131344,
+        "sign_index": 7,
+        "degree_in_sign": 28.131344,
+        "is_retrograde": false,
+        "speed": 0.203745
+      },
+      "Venus": {
+        "longitude": 162.412986,
+        "sign_index": 5,
+        "degree_in_sign": 12.412986,
+        "is_retrograde": false,
+        "speed": 1.193329
+      },
+      "Saturn": {
+        "longitude": 193.449292,
+        "sign_index": 6,
+        "degree_in_sign": 13.449292,
+        "is_retrograde": false,
+        "speed": 0.11998
+      },
+      "Rahu": {
+        "longitude": 115.739659,
+        "sign_index": 3,
+        "degree_in_sign": 25.739659,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 295.739659,
+        "sign_index": 9,
+        "degree_in_sign": 25.739659,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

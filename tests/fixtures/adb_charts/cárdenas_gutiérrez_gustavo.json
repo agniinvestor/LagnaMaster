@@ -1,0 +1,109 @@
+{
+  "adb_id": 75674,
+  "name": "Cárdenas Gutiérrez, Gustavo",
+  "given_name": "Gustavo Cárdenas Gutiérrez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436229.020833,
+    "year": 1958,
+    "month": 1,
+    "day": 25,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Matamoros (Tamaulipas)",
+    "country": "Mexico",
+    "lat": 25.883333,
+    "lon": -97.5
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cárdenas_Gutiérrez,_Gustavo",
+  "source_notes": "Sy Scholfield submitted birth record from the online Tamaulipas state archive [http://servicios.tamaulipas.gob.mx/servicios/crct/actas/detalle1.asp?cve_ref=100017151&mpio=22].\\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 4.877366,
+    "lagna": 244.877366,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.271391,
+    "jd_ut": 2436229.020833,
+    "planets": {
+      "Sun": {
+        "longitude": 281.771379,
+        "sign_index": 9,
+        "degree_in_sign": 11.771379,
+        "is_retrograde": false,
+        "speed": 1.016774
+      },
+      "Moon": {
+        "longitude": 344.002832,
+        "sign_index": 11,
+        "degree_in_sign": 14.002832,
+        "is_retrograde": false,
+        "speed": 15.806015
+      },
+      "Mars": {
+        "longitude": 240.137608,
+        "sign_index": 8,
+        "degree_in_sign": 0.137608,
+        "is_retrograde": false,
+        "speed": 0.708478
+      },
+      "Mercury": {
+        "longitude": 259.495423,
+        "sign_index": 8,
+        "degree_in_sign": 19.495423,
+        "is_retrograde": false,
+        "speed": 1.316417
+      },
+      "Jupiter": {
+        "longitude": 187.699032,
+        "sign_index": 6,
+        "degree_in_sign": 7.699032,
+        "is_retrograde": false,
+        "speed": 0.064415
+      },
+      "Venus": {
+        "longitude": 287.150611,
+        "sign_index": 9,
+        "degree_in_sign": 17.150611,
+        "is_retrograde": true,
+        "speed": -0.59742
+      },
+      "Saturn": {
+        "longitude": 238.763772,
+        "sign_index": 7,
+        "degree_in_sign": 28.763772,
+        "is_retrograde": false,
+        "speed": 0.096712
+      },
+      "Rahu": {
+        "longitude": 192.81229,
+        "sign_index": 6,
+        "degree_in_sign": 12.81229,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 12.81229,
+        "sign_index": 0,
+        "degree_in_sign": 12.81229,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

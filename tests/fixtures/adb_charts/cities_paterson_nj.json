@@ -1,0 +1,108 @@
+{
+  "adb_id": 27141,
+  "name": "Cities: Paterson NJ",
+  "given_name": "Cities: Paterson NJ",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2397227.206019,
+    "year": 1851,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Paterson",
+    "country": "New Jersey",
+    "lat": 40.916667,
+    "lon": -74.166667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cities:_Paterson_NJ",
+  "source_notes": "Dates from legislation.\\n",
+  "categories": [
+    "Mundane : City Population : 100,000-200,000 population"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 23.256345,
+    "lagna": 83.256345,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.780403,
+    "jd_ut": 2397227.206019,
+    "planets": {
+      "Sun": {
+        "longitude": 2.362604,
+        "sign_index": 0,
+        "degree_in_sign": 2.362604,
+        "is_retrograde": false,
+        "speed": 0.977821
+      },
+      "Moon": {
+        "longitude": 165.797621,
+        "sign_index": 5,
+        "degree_in_sign": 15.797621,
+        "is_retrograde": false,
+        "speed": 18.848043
+      },
+      "Mars": {
+        "longitude": 329.543317,
+        "sign_index": 10,
+        "degree_in_sign": 29.543317,
+        "is_retrograde": false,
+        "speed": 0.776879
+      },
+      "Mercury": {
+        "longitude": 15.926192,
+        "sign_index": 0,
+        "degree_in_sign": 15.926192,
+        "is_retrograde": false,
+        "speed": 1.909745
+      },
+      "Jupiter": {
+        "longitude": 175.560436,
+        "sign_index": 5,
+        "degree_in_sign": 25.560436,
+        "is_retrograde": true,
+        "speed": -0.126787
+      },
+      "Venus": {
+        "longitude": 320.743651,
+        "sign_index": 10,
+        "degree_in_sign": 20.743651,
+        "is_retrograde": false,
+        "speed": 1.15405
+      },
+      "Saturn": {
+        "longitude": 2.245701,
+        "sign_index": 0,
+        "degree_in_sign": 2.245701,
+        "is_retrograde": false,
+        "speed": 0.126961
+      },
+      "Rahu": {
+        "longitude": 99.600491,
+        "sign_index": 3,
+        "degree_in_sign": 9.600491,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 279.600491,
+        "sign_index": 9,
+        "degree_in_sign": 9.600491,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 59640,
+  "name": "Chenal, Joël",
+  "given_name": "Joël Chenal",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441966.159722,
+    "year": 1973,
+    "month": 10,
+    "day": 10,
+    "calendar": "g",
+    "time": "16:50",
+    "time_type": "s",
+    "hour": 16.833333,
+    "time_unknown": false,
+    "place": "Moûtiers",
+    "country": "France",
+    "lat": 45.483333,
+    "lon": 6.533333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chenal,_Joël",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 145.\\nSame data from Dominique Fontugne quoted bc in \"L'Astrologue\".\\n",
+  "categories": [
+    "Vocation : Sports : Skiing"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 29.738069,
+    "lagna": 299.738069,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.490774,
+    "jd_ut": 2441966.159722,
+    "planets": {
+      "Sun": {
+        "longitude": 173.701635,
+        "sign_index": 5,
+        "degree_in_sign": 23.701635,
+        "is_retrograde": false,
+        "speed": 0.988339
+      },
+      "Moon": {
+        "longitude": 335.365779,
+        "sign_index": 11,
+        "degree_in_sign": 5.365779,
+        "is_retrograde": false,
+        "speed": 13.810457
+      },
+      "Mars": {
+        "longitude": 12.714896,
+        "sign_index": 0,
+        "degree_in_sign": 12.714896,
+        "is_retrograde": true,
+        "speed": -0.276445
+      },
+      "Mercury": {
+        "longitude": 196.978692,
+        "sign_index": 6,
+        "degree_in_sign": 16.978692,
+        "is_retrograde": false,
+        "speed": 1.259277
+      },
+      "Jupiter": {
+        "longitude": 279.034874,
+        "sign_index": 9,
+        "degree_in_sign": 9.034874,
+        "is_retrograde": false,
+        "speed": 0.039493
+      },
+      "Venus": {
+        "longitude": 218.001853,
+        "sign_index": 7,
+        "degree_in_sign": 8.001853,
+        "is_retrograde": false,
+        "speed": 1.131818
+      },
+      "Saturn": {
+        "longitude": 71.218233,
+        "sign_index": 2,
+        "degree_in_sign": 11.218233,
+        "is_retrograde": false,
+        "speed": 0.012138
+      },
+      "Rahu": {
+        "longitude": 248.789567,
+        "sign_index": 8,
+        "degree_in_sign": 8.789567,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 68.789567,
+        "sign_index": 2,
+        "degree_in_sign": 8.789567,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

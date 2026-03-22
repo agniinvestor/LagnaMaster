@@ -1,0 +1,110 @@
+{
+  "adb_id": 81880,
+  "name": "Chabrand, Raúl",
+  "given_name": "Raúl Chabrand",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443062.760417,
+    "year": 1976,
+    "month": 10,
+    "day": 11,
+    "calendar": "g",
+    "time": "00:15",
+    "time_type": "s",
+    "hour": 0.25,
+    "time_unknown": false,
+    "place": "Ciudad Mante",
+    "country": "Mexico",
+    "lat": 22.733333,
+    "lon": -98.95
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chabrand,_Raúl",
+  "source_notes": "Extract from birth certificate in hand from Sy Scholfield.\\n\\nEnglish Wikipedia incorrectly has 11 August.\\n",
+  "categories": [
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 5.430916,
+    "lagna": 65.430916,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.532708,
+    "jd_ut": 2443062.760417,
+    "planets": {
+      "Sun": {
+        "longitude": 174.522805,
+        "sign_index": 5,
+        "degree_in_sign": 24.522805,
+        "is_retrograde": false,
+        "speed": 0.988896
+      },
+      "Moon": {
+        "longitude": 28.044052,
+        "sign_index": 0,
+        "degree_in_sign": 28.044052,
+        "is_retrograde": false,
+        "speed": 7.958217
+      },
+      "Mars": {
+        "longitude": 188.098405,
+        "sign_index": 6,
+        "degree_in_sign": 8.098405,
+        "is_retrograde": false,
+        "speed": 0.678575
+      },
+      "Mercury": {
+        "longitude": 157.317606,
+        "sign_index": 5,
+        "degree_in_sign": 7.317606,
+        "is_retrograde": false,
+        "speed": 1.347973
+      },
+      "Jupiter": {
+        "longitude": 36.903948,
+        "sign_index": 1,
+        "degree_in_sign": 6.903948,
+        "is_retrograde": true,
+        "speed": -0.070309
+      },
+      "Venus": {
+        "longitude": 204.918452,
+        "sign_index": 6,
+        "degree_in_sign": 24.918452,
+        "is_retrograde": false,
+        "speed": 1.221355
+      },
+      "Saturn": {
+        "longitude": 111.332294,
+        "sign_index": 3,
+        "degree_in_sign": 21.332294,
+        "is_retrograde": false,
+        "speed": 0.080087
+      },
+      "Rahu": {
+        "longitude": 190.678463,
+        "sign_index": 6,
+        "degree_in_sign": 10.678463,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 10.678463,
+        "sign_index": 0,
+        "degree_in_sign": 10.678463,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

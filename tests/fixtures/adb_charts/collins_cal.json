@@ -1,0 +1,112 @@
+{
+  "adb_id": 86032,
+  "name": "Collins, Cal",
+  "given_name": "Cal Collins",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427197.78125,
+    "year": 1933,
+    "month": 5,
+    "day": 5,
+    "calendar": "g",
+    "time": "00:45",
+    "time_type": "s",
+    "hour": 0.75,
+    "time_unknown": false,
+    "place": "Owen",
+    "country": "Indiana",
+    "lat": 38.45,
+    "lon": -85.55
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Cal",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana archives. \\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Liver/Pancreas/Spleen",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 25.744638,
+    "lagna": 265.744638,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.926077,
+    "jd_ut": 2427197.78125,
+    "planets": {
+      "Sun": {
+        "longitude": 21.388812,
+        "sign_index": 0,
+        "degree_in_sign": 21.388812,
+        "is_retrograde": false,
+        "speed": 0.968092
+      },
+      "Moon": {
+        "longitude": 138.683211,
+        "sign_index": 4,
+        "degree_in_sign": 18.683211,
+        "is_retrograde": false,
+        "speed": 12.48814
+      },
+      "Mars": {
+        "longitude": 130.896021,
+        "sign_index": 4,
+        "degree_in_sign": 10.896021,
+        "is_retrograde": false,
+        "speed": 0.240202
+      },
+      "Mercury": {
+        "longitude": 358.812616,
+        "sign_index": 11,
+        "degree_in_sign": 28.812616,
+        "is_retrograde": false,
+        "speed": 1.55602
+      },
+      "Jupiter": {
+        "longitude": 140.402954,
+        "sign_index": 4,
+        "degree_in_sign": 20.402954,
+        "is_retrograde": true,
+        "speed": -0.015757
+      },
+      "Venus": {
+        "longitude": 24.961045,
+        "sign_index": 0,
+        "degree_in_sign": 24.961045,
+        "is_retrograde": false,
+        "speed": 1.232631
+      },
+      "Saturn": {
+        "longitude": 293.064005,
+        "sign_index": 9,
+        "degree_in_sign": 23.064005,
+        "is_retrograde": false,
+        "speed": 0.035165
+      },
+      "Rahu": {
+        "longitude": 311.396316,
+        "sign_index": 10,
+        "degree_in_sign": 11.396316,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 131.396316,
+        "sign_index": 4,
+        "degree_in_sign": 11.396316,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

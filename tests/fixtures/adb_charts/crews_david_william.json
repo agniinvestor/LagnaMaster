@@ -1,0 +1,110 @@
+{
+  "adb_id": 83981,
+  "name": "Crews, David William",
+  "given_name": "David William Crews",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427122.270833,
+    "year": 1933,
+    "month": 2,
+    "day": 18,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Karnes City",
+    "country": "Texas",
+    "lat": 28.883333,
+    "lon": -97.9
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crews,_David_William",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 26.560892,
+    "lagna": 26.560892,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.92319,
+    "jd_ut": 2427122.270833,
+    "planets": {
+      "Sun": {
+        "longitude": 306.748271,
+        "sign_index": 10,
+        "degree_in_sign": 6.748271,
+        "is_retrograde": false,
+        "speed": 1.008355
+      },
+      "Moon": {
+        "longitude": 231.579732,
+        "sign_index": 7,
+        "degree_in_sign": 21.579732,
+        "is_retrograde": false,
+        "speed": 12.556044
+      },
+      "Mars": {
+        "longitude": 142.099355,
+        "sign_index": 4,
+        "degree_in_sign": 22.099355,
+        "is_retrograde": true,
+        "speed": -0.346934
+      },
+      "Mercury": {
+        "longitude": 315.507395,
+        "sign_index": 10,
+        "degree_in_sign": 15.507395,
+        "is_retrograde": false,
+        "speed": 1.855685
+      },
+      "Jupiter": {
+        "longitude": 147.73698,
+        "sign_index": 4,
+        "degree_in_sign": 27.73698,
+        "is_retrograde": true,
+        "speed": -0.114406
+      },
+      "Venus": {
+        "longitude": 291.224375,
+        "sign_index": 9,
+        "degree_in_sign": 21.224375,
+        "is_retrograde": false,
+        "speed": 1.248264
+      },
+      "Saturn": {
+        "longitude": 286.845268,
+        "sign_index": 9,
+        "degree_in_sign": 16.845268,
+        "is_retrograde": false,
+        "speed": 0.114837
+      },
+      "Rahu": {
+        "longitude": 315.39777,
+        "sign_index": 10,
+        "degree_in_sign": 15.39777,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 135.39777,
+        "sign_index": 4,
+        "degree_in_sign": 15.39777,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

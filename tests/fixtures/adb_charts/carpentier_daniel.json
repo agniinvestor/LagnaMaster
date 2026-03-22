@@ -1,0 +1,108 @@
+{
+  "adb_id": 52861,
+  "name": "Carpentier, Daniel",
+  "given_name": "Daniel Carpentier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424930.517361,
+    "year": 1927,
+    "month": 2,
+    "day": 19,
+    "calendar": "g",
+    "time": "00:25",
+    "time_type": "s",
+    "hour": 0.416667,
+    "time_unknown": false,
+    "place": "Hirson",
+    "country": "France",
+    "lat": 49.916667,
+    "lon": 4.083333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpentier,_Daniel",
+  "source_notes": "Steinbrecher collection: Gauquelin 1/1274\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 3.169452,
+    "lagna": 183.169452,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.839392,
+    "jd_ut": 2424930.517361,
+    "planets": {
+      "Sun": {
+        "longitude": 306.528562,
+        "sign_index": 10,
+        "degree_in_sign": 6.528562,
+        "is_retrograde": false,
+        "speed": 1.008105
+      },
+      "Moon": {
+        "longitude": 152.592791,
+        "sign_index": 5,
+        "degree_in_sign": 2.592791,
+        "is_retrograde": false,
+        "speed": 8.749288
+      },
+      "Mars": {
+        "longitude": 35.626647,
+        "sign_index": 1,
+        "degree_in_sign": 5.626647,
+        "is_retrograde": false,
+        "speed": 0.507197
+      },
+      "Mercury": {
+        "longitude": 322.501011,
+        "sign_index": 10,
+        "degree_in_sign": 22.501011,
+        "is_retrograde": false,
+        "speed": 1.58756
+      },
+      "Jupiter": {
+        "longitude": 314.511979,
+        "sign_index": 10,
+        "degree_in_sign": 14.511979,
+        "is_retrograde": false,
+        "speed": 0.240252
+      },
+      "Venus": {
+        "longitude": 327.821429,
+        "sign_index": 10,
+        "degree_in_sign": 27.821429,
+        "is_retrograde": false,
+        "speed": 1.241932
+      },
+      "Saturn": {
+        "longitude": 224.220566,
+        "sign_index": 7,
+        "degree_in_sign": 14.220566,
+        "is_retrograde": false,
+        "speed": 0.044679
+      },
+      "Rahu": {
+        "longitude": 71.543342,
+        "sign_index": 2,
+        "degree_in_sign": 11.543342,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 251.543342,
+        "sign_index": 8,
+        "degree_in_sign": 11.543342,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 50765,
+  "name": "Chadwick, Florence",
+  "given_name": "Florence Chadwick",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421907.642361,
+    "year": 1918,
+    "month": 11,
+    "day": 9,
+    "calendar": "g",
+    "time": "19:25",
+    "time_type": "s",
+    "hour": 19.416667,
+    "time_unknown": false,
+    "place": "San Diego",
+    "country": "California",
+    "lat": 32.716667,
+    "lon": -117.15
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chadwick,_Florence",
+  "source_notes": "Steinbrecher Collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Business : Banker/ Financier",
+    "Vocation : Sports : Swimming",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 13.407522,
+    "lagna": 43.407522,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.723822,
+    "jd_ut": 2421907.642361,
+    "planets": {
+      "Sun": {
+        "longitude": 204.202333,
+        "sign_index": 6,
+        "degree_in_sign": 24.202333,
+        "is_retrograde": false,
+        "speed": 1.005273
+      },
+      "Moon": {
+        "longitude": 274.423931,
+        "sign_index": 9,
+        "degree_in_sign": 4.423931,
+        "is_retrograde": false,
+        "speed": 9.71238
+      },
+      "Mars": {
+        "longitude": 246.304902,
+        "sign_index": 8,
+        "degree_in_sign": 6.304902,
+        "is_retrograde": false,
+        "speed": 0.752814
+      },
+      "Mercury": {
+        "longitude": 219.085763,
+        "sign_index": 7,
+        "degree_in_sign": 9.085763,
+        "is_retrograde": false,
+        "speed": 1.48034
+      },
+      "Jupiter": {
+        "longitude": 83.028107,
+        "sign_index": 2,
+        "degree_in_sign": 23.028107,
+        "is_retrograde": true,
+        "speed": -0.02203
+      },
+      "Venus": {
+        "longitude": 200.749004,
+        "sign_index": 6,
+        "degree_in_sign": 20.749004,
+        "is_retrograde": false,
+        "speed": 1.255867
+      },
+      "Saturn": {
+        "longitude": 124.709609,
+        "sign_index": 4,
+        "degree_in_sign": 4.709609,
+        "is_retrograde": false,
+        "speed": 0.053316
+      },
+      "Rahu": {
+        "longitude": 231.731794,
+        "sign_index": 7,
+        "degree_in_sign": 21.731794,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 51.731794,
+        "sign_index": 1,
+        "degree_in_sign": 21.731794,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

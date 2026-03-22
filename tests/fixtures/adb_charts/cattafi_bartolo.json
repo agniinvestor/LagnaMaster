@@ -1,0 +1,108 @@
+{
+  "adb_id": 100834,
+  "name": "Cattafi, Bartolo",
+  "given_name": "Bartolo Cattafi",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2423241.666667,
+    "year": 1922,
+    "month": 7,
+    "day": 6,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Barcellona Pozzo di Gotto",
+    "country": "Italy",
+    "lat": 38.15,
+    "lon": 15.216667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cattafi,_Bartolo",
+  "source_notes": "He writes in a poem: \"July 6th at five in the morning the steam tram left for Messina, smoke emitted from the funnel sparks and a long whistle. As soon as I was born I turned my head towards that first greeting of life.\" His birth town is about 50 km from Messina, and there was a steam tram in operation at that time. If the smoke was seen, the birth cannot have been long after the departure of the train.\\n\\n",
+  "categories": [
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.610419,
+    "lagna": 60.610419,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.774824,
+    "jd_ut": 2423241.666667,
+    "planets": {
+      "Sun": {
+        "longitude": 80.518855,
+        "sign_index": 2,
+        "degree_in_sign": 20.518855,
+        "is_retrograde": false,
+        "speed": 0.95301
+      },
+      "Moon": {
+        "longitude": 223.865809,
+        "sign_index": 7,
+        "degree_in_sign": 13.865809,
+        "is_retrograde": false,
+        "speed": 14.920778
+      },
+      "Mars": {
+        "longitude": 229.153775,
+        "sign_index": 7,
+        "degree_in_sign": 19.153775,
+        "is_retrograde": true,
+        "speed": -0.150147
+      },
+      "Mercury": {
+        "longitude": 60.919958,
+        "sign_index": 2,
+        "degree_in_sign": 0.919958,
+        "is_retrograde": false,
+        "speed": 0.510243
+      },
+      "Jupiter": {
+        "longitude": 167.492787,
+        "sign_index": 5,
+        "degree_in_sign": 17.492787,
+        "is_retrograde": false,
+        "speed": 0.08429
+      },
+      "Venus": {
+        "longitude": 116.730979,
+        "sign_index": 3,
+        "degree_in_sign": 26.730979,
+        "is_retrograde": false,
+        "speed": 1.174926
+      },
+      "Saturn": {
+        "longitude": 158.919842,
+        "sign_index": 5,
+        "degree_in_sign": 8.919842,
+        "is_retrograde": false,
+        "speed": 0.0528
+      },
+      "Rahu": {
+        "longitude": 161.03906,
+        "sign_index": 5,
+        "degree_in_sign": 11.03906,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 341.03906,
+        "sign_index": 11,
+        "degree_in_sign": 11.03906,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

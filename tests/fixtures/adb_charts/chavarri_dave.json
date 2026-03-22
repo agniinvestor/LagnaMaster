@@ -1,0 +1,113 @@
+{
+  "adb_id": 92913,
+  "name": "Chavarri, Dave",
+  "given_name": "Dave Chavarri",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439795.34375,
+    "year": 1967,
+    "month": 10,
+    "day": 31,
+    "calendar": "g",
+    "time": "15:15",
+    "time_type": "s",
+    "hour": 15.25,
+    "time_unknown": false,
+    "place": "Bellavista",
+    "country": "Peru",
+    "lat": -12.066667,
+    "lon": -77.133333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chavarri,_Dave",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Other Entertain/Music",
+    "Vocation : Entertain/Business : Manager/ Agent",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 9.25487,
+    "lagna": 309.25487,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.407762,
+    "jd_ut": 2439795.34375,
+    "planets": {
+      "Sun": {
+        "longitude": 194.31165,
+        "sign_index": 6,
+        "degree_in_sign": 14.31165,
+        "is_retrograde": false,
+        "speed": 1.000572
+      },
+      "Moon": {
+        "longitude": 173.54301,
+        "sign_index": 5,
+        "degree_in_sign": 23.54301,
+        "is_retrograde": false,
+        "speed": 12.961768
+      },
+      "Mars": {
+        "longitude": 253.058289,
+        "sign_index": 8,
+        "degree_in_sign": 13.058289,
+        "is_retrograde": false,
+        "speed": 0.744211
+      },
+      "Mercury": {
+        "longitude": 196.150667,
+        "sign_index": 6,
+        "degree_in_sign": 16.150667,
+        "is_retrograde": true,
+        "speed": -1.292736
+      },
+      "Jupiter": {
+        "longitude": 128.496894,
+        "sign_index": 4,
+        "degree_in_sign": 8.496894,
+        "is_retrograde": false,
+        "speed": 0.14168
+      },
+      "Venus": {
+        "longitude": 148.006448,
+        "sign_index": 4,
+        "degree_in_sign": 28.006448,
+        "is_retrograde": false,
+        "speed": 0.931928
+      },
+      "Saturn": {
+        "longitude": 343.507149,
+        "sign_index": 11,
+        "degree_in_sign": 13.507149,
+        "is_retrograde": true,
+        "speed": -0.061354
+      },
+      "Rahu": {
+        "longitude": 3.825536,
+        "sign_index": 0,
+        "degree_in_sign": 3.825536,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 183.825536,
+        "sign_index": 6,
+        "degree_in_sign": 3.825536,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

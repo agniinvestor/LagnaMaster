@@ -1,0 +1,108 @@
+{
+  "adb_id": 73563,
+  "name": "Capitanich, Jorge",
+  "given_name": "Jorge Capitanich",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438727.997917,
+    "year": 1964,
+    "month": 11,
+    "day": 28,
+    "calendar": "g",
+    "time": "08:57",
+    "time_type": "d",
+    "hour": 8.95,
+    "time_unknown": false,
+    "place": "Resistencia (Chaco)",
+    "country": "Argentina",
+    "lat": -27.45,
+    "lon": -58.983333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capitanich,_Jorge",
+  "source_notes": "Castellanos: \"data provided by a source close to him\".\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 1.649273,
+    "lagna": 241.649273,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.366948,
+    "jd_ut": 2438727.997917,
+    "planets": {
+      "Sun": {
+        "longitude": 222.931869,
+        "sign_index": 7,
+        "degree_in_sign": 12.931869,
+        "is_retrograde": false,
+        "speed": 1.013049
+      },
+      "Moon": {
+        "longitude": 159.680304,
+        "sign_index": 5,
+        "degree_in_sign": 9.680304,
+        "is_retrograde": false,
+        "speed": 8.23052
+      },
+      "Mars": {
+        "longitude": 137.723825,
+        "sign_index": 4,
+        "degree_in_sign": 17.723825,
+        "is_retrograde": false,
+        "speed": 0.459765
+      },
+      "Mercury": {
+        "longitude": 244.170475,
+        "sign_index": 8,
+        "degree_in_sign": 4.170475,
+        "is_retrograde": false,
+        "speed": 1.12942
+      },
+      "Jupiter": {
+        "longitude": 25.691182,
+        "sign_index": 0,
+        "degree_in_sign": 25.691182,
+        "is_retrograde": true,
+        "speed": -0.124074
+      },
+      "Venus": {
+        "longitude": 190.871147,
+        "sign_index": 6,
+        "degree_in_sign": 10.871147,
+        "is_retrograde": false,
+        "speed": 1.232428
+      },
+      "Saturn": {
+        "longitude": 305.593269,
+        "sign_index": 10,
+        "degree_in_sign": 5.593269,
+        "is_retrograde": false,
+        "speed": 0.045227
+      },
+      "Rahu": {
+        "longitude": 60.386374,
+        "sign_index": 2,
+        "degree_in_sign": 0.386374,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 240.386374,
+        "sign_index": 8,
+        "degree_in_sign": 0.386374,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

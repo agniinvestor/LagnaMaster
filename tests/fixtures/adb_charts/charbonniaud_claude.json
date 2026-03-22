@@ -1,0 +1,108 @@
+{
+  "adb_id": 66364,
+  "name": "Charbonniaud, Claude",
+  "given_name": "Claude Charbonniaud",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424172.541667,
+    "year": 1925,
+    "month": 1,
+    "day": 22,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Limoges",
+    "country": "France",
+    "lat": 45.833333,
+    "lon": 1.266667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charbonniaud,_Claude",
+  "source_notes": "Didier Geslain archive, 'francs masons' pdf file, p. 10.\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Other Rel/Spirituality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 19.718805,
+    "lagna": 169.718805,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.810413,
+    "jd_ut": 2424172.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 278.705307,
+        "sign_index": 9,
+        "degree_in_sign": 8.705307,
+        "is_retrograde": false,
+        "speed": 1.017711
+      },
+      "Moon": {
+        "longitude": 243.160938,
+        "sign_index": 8,
+        "degree_in_sign": 3.160938,
+        "is_retrograde": false,
+        "speed": 17.553128
+      },
+      "Mars": {
+        "longitude": 358.00448,
+        "sign_index": 11,
+        "degree_in_sign": 28.00448,
+        "is_retrograde": false,
+        "speed": 0.634875
+      },
+      "Mercury": {
+        "longitude": 255.000233,
+        "sign_index": 8,
+        "degree_in_sign": 15.000233,
+        "is_retrograde": false,
+        "speed": 1.175791
+      },
+      "Jupiter": {
+        "longitude": 255.085713,
+        "sign_index": 8,
+        "degree_in_sign": 15.085713,
+        "is_retrograde": false,
+        "speed": 0.220304
+      },
+      "Venus": {
+        "longitude": 256.059381,
+        "sign_index": 8,
+        "degree_in_sign": 16.059381,
+        "is_retrograde": false,
+        "speed": 1.248331
+      },
+      "Saturn": {
+        "longitude": 200.676353,
+        "sign_index": 6,
+        "degree_in_sign": 20.676353,
+        "is_retrograde": false,
+        "speed": 0.052291
+      },
+      "Rahu": {
+        "longitude": 111.710053,
+        "sign_index": 3,
+        "degree_in_sign": 21.710053,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 291.710053,
+        "sign_index": 9,
+        "degree_in_sign": 21.710053,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 103104,
+  "name": "Claes, Ernest",
+  "given_name": "Ernest Claes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409838.987847,
+    "year": 1885,
+    "month": 10,
+    "day": 24,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Brussels",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claes,_Ernest",
+  "source_notes": "Taeger Vol. 1, p. 306, GAQ-8\\n",
+  "categories": [
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 16.232344,
+    "lagna": 226.232344,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.262458,
+    "jd_ut": 2409838.987847,
+    "planets": {
+      "Sun": {
+        "longitude": 188.98347,
+        "sign_index": 6,
+        "degree_in_sign": 8.98347,
+        "is_retrograde": false,
+        "speed": 0.997173
+      },
+      "Moon": {
+        "longitude": 16.241882,
+        "sign_index": 0,
+        "degree_in_sign": 16.241882,
+        "is_retrograde": false,
+        "speed": 17.285911
+      },
+      "Mars": {
+        "longitude": 119.698269,
+        "sign_index": 3,
+        "degree_in_sign": 29.698269,
+        "is_retrograde": false,
+        "speed": 0.55033
+      },
+      "Mercury": {
+        "longitude": 194.235414,
+        "sign_index": 6,
+        "degree_in_sign": 14.235414,
+        "is_retrograde": false,
+        "speed": 1.608514
+      },
+      "Jupiter": {
+        "longitude": 153.648721,
+        "sign_index": 5,
+        "degree_in_sign": 3.648721,
+        "is_retrograde": false,
+        "speed": 0.19473
+      },
+      "Venus": {
+        "longitude": 231.625918,
+        "sign_index": 7,
+        "degree_in_sign": 21.625918,
+        "is_retrograde": false,
+        "speed": 1.164603
+      },
+      "Saturn": {
+        "longitude": 76.122637,
+        "sign_index": 2,
+        "degree_in_sign": 16.122637,
+        "is_retrograde": true,
+        "speed": -0.007365
+      },
+      "Rahu": {
+        "longitude": 151.27522,
+        "sign_index": 5,
+        "degree_in_sign": 1.27522,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 331.27522,
+        "sign_index": 11,
+        "degree_in_sign": 1.27522,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

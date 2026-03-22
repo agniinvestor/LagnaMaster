@@ -1,0 +1,108 @@
+{
+  "adb_id": 69389,
+  "name": "Cavaillé-Col, Aristide",
+  "given_name": "Aristide Cavaillé-Col",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2382547.65588,
+    "year": 1811,
+    "month": 2,
+    "day": 4,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Montpellier",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 3.883333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavaillé-Col,_Aristide",
+  "source_notes": "Paddy de Jabrun quoted bc (FDAF).\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Production jobs"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 7.856099,
+    "lagna": 217.856099,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.219405,
+    "jd_ut": 2382547.65588,
+    "planets": {
+      "Sun": {
+        "longitude": 293.276423,
+        "sign_index": 9,
+        "degree_in_sign": 23.276423,
+        "is_retrograde": false,
+        "speed": 1.013122
+      },
+      "Moon": {
+        "longitude": 65.276206,
+        "sign_index": 2,
+        "degree_in_sign": 5.276206,
+        "is_retrograde": false,
+        "speed": 13.382588
+      },
+      "Mars": {
+        "longitude": 205.121957,
+        "sign_index": 6,
+        "degree_in_sign": 25.121957,
+        "is_retrograde": false,
+        "speed": 0.494738
+      },
+      "Mercury": {
+        "longitude": 284.458813,
+        "sign_index": 9,
+        "degree_in_sign": 14.458813,
+        "is_retrograde": true,
+        "speed": -1.038604
+      },
+      "Jupiter": {
+        "longitude": 30.751698,
+        "sign_index": 1,
+        "degree_in_sign": 0.751698,
+        "is_retrograde": false,
+        "speed": 0.062642
+      },
+      "Venus": {
+        "longitude": 252.949407,
+        "sign_index": 8,
+        "degree_in_sign": 12.949407,
+        "is_retrograde": false,
+        "speed": 0.546376
+      },
+      "Saturn": {
+        "longitude": 242.5546,
+        "sign_index": 8,
+        "degree_in_sign": 2.5546,
+        "is_retrograde": false,
+        "speed": 0.088449
+      },
+      "Rahu": {
+        "longitude": 157.501758,
+        "sign_index": 5,
+        "degree_in_sign": 7.501758,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 337.501758,
+        "sign_index": 11,
+        "degree_in_sign": 7.501758,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

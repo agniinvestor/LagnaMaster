@@ -1,0 +1,110 @@
+{
+  "adb_id": 56716,
+  "name": "Caro, Elme",
+  "given_name": "Elme Caro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388054.749074,
+    "year": 1826,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Poitiers",
+    "country": "France",
+    "lat": 46.583333,
+    "lon": 0.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caro,_Elme",
+  "source_notes": "Chisnard, \"Langage astral\"\\n",
+  "categories": [
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Religion/ Philosophy",
+    "Notable : Awards : Other Awards"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 11.841673,
+    "lagna": 281.841673,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.429854,
+    "jd_ut": 2388054.749074,
+    "planets": {
+      "Sun": {
+        "longitude": 321.736654,
+        "sign_index": 10,
+        "degree_in_sign": 21.736654,
+        "is_retrograde": false,
+        "speed": 1.001159
+      },
+      "Moon": {
+        "longitude": 270.036906,
+        "sign_index": 9,
+        "degree_in_sign": 0.036906,
+        "is_retrograde": false,
+        "speed": 9.942078
+      },
+      "Mars": {
+        "longitude": 206.785261,
+        "sign_index": 6,
+        "degree_in_sign": 26.785261,
+        "is_retrograde": false,
+        "speed": 0.260288
+      },
+      "Mercury": {
+        "longitude": 316.04126,
+        "sign_index": 10,
+        "degree_in_sign": 16.04126,
+        "is_retrograde": false,
+        "speed": 1.831221
+      },
+      "Jupiter": {
+        "longitude": 137.608792,
+        "sign_index": 4,
+        "degree_in_sign": 17.608792,
+        "is_retrograde": true,
+        "speed": -0.130443
+      },
+      "Venus": {
+        "longitude": 320.169334,
+        "sign_index": 10,
+        "degree_in_sign": 20.169334,
+        "is_retrograde": false,
+        "speed": 1.248622
+      },
+      "Saturn": {
+        "longitude": 53.83537,
+        "sign_index": 1,
+        "degree_in_sign": 23.83537,
+        "is_retrograde": false,
+        "speed": 0.031612
+      },
+      "Rahu": {
+        "longitude": 225.668854,
+        "sign_index": 7,
+        "degree_in_sign": 15.668854,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 45.668854,
+        "sign_index": 1,
+        "degree_in_sign": 15.668854,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

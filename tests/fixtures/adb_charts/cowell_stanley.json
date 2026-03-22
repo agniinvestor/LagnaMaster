@@ -1,0 +1,112 @@
+{
+  "adb_id": 54007,
+  "name": "Cowell, Stanley",
+  "given_name": "Stanley Cowell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430120.364583,
+    "year": 1941,
+    "month": 5,
+    "day": 5,
+    "calendar": "g",
+    "time": "15:45",
+    "time_type": "s",
+    "hour": 15.75,
+    "time_unknown": false,
+    "place": "Toledo",
+    "country": "Ohio",
+    "lat": 41.666667,
+    "lon": -83.55
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowell,_Stanley",
+  "source_notes": "Steinbrecher collection: Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz",
+    "Vocation : Entertain/Music : Music teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 14.730747,
+    "lagna": 134.730747,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.037819,
+    "jd_ut": 2430120.364583,
+    "planets": {
+      "Sun": {
+        "longitude": 21.905491,
+        "sign_index": 0,
+        "degree_in_sign": 21.905491,
+        "is_retrograde": false,
+        "speed": 0.968008
+      },
+      "Moon": {
+        "longitude": 129.2877,
+        "sign_index": 4,
+        "degree_in_sign": 9.2877,
+        "is_retrograde": false,
+        "speed": 11.588549
+      },
+      "Mars": {
+        "longitude": 299.939019,
+        "sign_index": 9,
+        "degree_in_sign": 29.939019,
+        "is_retrograde": false,
+        "speed": 0.682019
+      },
+      "Mercury": {
+        "longitude": 21.464962,
+        "sign_index": 0,
+        "degree_in_sign": 21.464962,
+        "is_retrograde": false,
+        "speed": 2.160224
+      },
+      "Jupiter": {
+        "longitude": 32.093063,
+        "sign_index": 1,
+        "degree_in_sign": 2.093063,
+        "is_retrograde": false,
+        "speed": 0.23452
+      },
+      "Venus": {
+        "longitude": 26.246546,
+        "sign_index": 0,
+        "degree_in_sign": 26.246546,
+        "is_retrograde": false,
+        "speed": 1.232519
+      },
+      "Saturn": {
+        "longitude": 24.57607,
+        "sign_index": 0,
+        "degree_in_sign": 24.57607,
+        "is_retrograde": false,
+        "speed": 0.128549
+      },
+      "Rahu": {
+        "longitude": 156.522571,
+        "sign_index": 5,
+        "degree_in_sign": 6.522571,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 336.522571,
+        "sign_index": 11,
+        "degree_in_sign": 6.522571,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

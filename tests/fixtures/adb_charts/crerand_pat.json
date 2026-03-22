@@ -1,0 +1,109 @@
+{
+  "adb_id": 103264,
+  "name": "Crerand, Pat",
+  "given_name": "Pat Crerand",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429313.6875,
+    "year": 1939,
+    "month": 2,
+    "day": 19,
+    "calendar": "g",
+    "time": "04:30",
+    "time_type": "s",
+    "hour": 4.5,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland (UK)",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crerand,_Pat",
+  "source_notes": "Quoted BC from Bordoni database.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Writers : Autobiographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 6.751182,
+    "lagna": 216.751182,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.006976,
+    "jd_ut": 2429313.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 306.625639,
+        "sign_index": 10,
+        "degree_in_sign": 6.625639,
+        "is_retrograde": false,
+        "speed": 1.008796
+      },
+      "Moon": {
+        "longitude": 304.997887,
+        "sign_index": 10,
+        "degree_in_sign": 4.997887,
+        "is_retrograde": false,
+        "speed": 13.1159
+      },
+      "Mars": {
+        "longitude": 229.528338,
+        "sign_index": 7,
+        "degree_in_sign": 19.528338,
+        "is_retrograde": false,
+        "speed": 0.59581
+      },
+      "Mercury": {
+        "longitude": 306.710998,
+        "sign_index": 10,
+        "degree_in_sign": 6.710998,
+        "is_retrograde": false,
+        "speed": 1.825671
+      },
+      "Jupiter": {
+        "longitude": 318.328562,
+        "sign_index": 10,
+        "degree_in_sign": 18.328562,
+        "is_retrograde": false,
+        "speed": 0.239523
+      },
+      "Venus": {
+        "longitude": 260.821672,
+        "sign_index": 8,
+        "degree_in_sign": 20.821672,
+        "is_retrograde": false,
+        "speed": 1.105039
+      },
+      "Saturn": {
+        "longitude": 351.904277,
+        "sign_index": 11,
+        "degree_in_sign": 21.904277,
+        "is_retrograde": false,
+        "speed": 0.101239
+      },
+      "Rahu": {
+        "longitude": 199.270059,
+        "sign_index": 6,
+        "degree_in_sign": 19.270059,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 19.270059,
+        "sign_index": 0,
+        "degree_in_sign": 19.270059,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

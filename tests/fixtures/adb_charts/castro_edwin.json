@@ -1,0 +1,108 @@
+{
+  "adb_id": 101369,
+  "name": "Castro, Edwin",
+  "given_name": "Edwin Castro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2448663.722222,
+    "year": 1992,
+    "month": 2,
+    "day": 10,
+    "calendar": "g",
+    "time": "21:20",
+    "time_type": "s",
+    "hour": 21.333333,
+    "time_unknown": false,
+    "place": "Glendale (Los Angeles County)",
+    "country": "California",
+    "lat": 34.15,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro,_Edwin",
+  "source_notes": "Isaac Starkman quotes birth certificate in hand.\\n",
+  "categories": [
+    "Lifestyle : Financial : Gain - Winnings/ Lottery"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 22.845553,
+    "lagna": 142.845553,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.746901,
+    "jd_ut": 2448663.722222,
+    "planets": {
+      "Sun": {
+        "longitude": 297.983184,
+        "sign_index": 9,
+        "degree_in_sign": 27.983184,
+        "is_retrograde": false,
+        "speed": 1.011847
+      },
+      "Moon": {
+        "longitude": 21.624913,
+        "sign_index": 0,
+        "degree_in_sign": 21.624913,
+        "is_retrograde": false,
+        "speed": 10.526707
+      },
+      "Mars": {
+        "longitude": 270.928215,
+        "sign_index": 9,
+        "degree_in_sign": 0.928215,
+        "is_retrograde": false,
+        "speed": 0.76151
+      },
+      "Mercury": {
+        "longitude": 297.109725,
+        "sign_index": 9,
+        "degree_in_sign": 27.109725,
+        "is_retrograde": false,
+        "speed": 1.769531
+      },
+      "Jupiter": {
+        "longitude": 138.174866,
+        "sign_index": 4,
+        "degree_in_sign": 18.174866,
+        "is_retrograde": true,
+        "speed": -0.116389
+      },
+      "Venus": {
+        "longitude": 267.041238,
+        "sign_index": 8,
+        "degree_in_sign": 27.041238,
+        "is_retrograde": false,
+        "speed": 1.231342
+      },
+      "Saturn": {
+        "longitude": 286.953026,
+        "sign_index": 9,
+        "degree_in_sign": 16.953026,
+        "is_retrograde": false,
+        "speed": 0.118218
+      },
+      "Rahu": {
+        "longitude": 253.872142,
+        "sign_index": 8,
+        "degree_in_sign": 13.872142,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 73.872142,
+        "sign_index": 2,
+        "degree_in_sign": 13.872142,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 103105,
+  "name": "Clavé, Antoni",
+  "given_name": "Antoni Clavé",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419863.0,
+    "year": 1913,
+    "month": 4,
+    "day": 5,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Barcelona",
+    "country": "Spain",
+    "lat": 41.383333,
+    "lon": 2.183333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clavé,_Antoni",
+  "source_notes": "Taeger Vol. 1, p. 310, LES-14\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 16.331677,
+    "lagna": 76.331677,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.645655,
+    "jd_ut": 2419863.0,
+    "planets": {
+      "Sun": {
+        "longitude": 352.453254,
+        "sign_index": 11,
+        "degree_in_sign": 22.453254,
+        "is_retrograde": false,
+        "speed": 0.984218
+      },
+      "Moon": {
+        "longitude": 338.280177,
+        "sign_index": 11,
+        "degree_in_sign": 8.280177,
+        "is_retrograde": false,
+        "speed": 8.269398
+      },
+      "Mars": {
+        "longitude": 312.19923,
+        "sign_index": 10,
+        "degree_in_sign": 12.19923,
+        "is_retrograde": false,
+        "speed": 0.774368
+      },
+      "Mercury": {
+        "longitude": 338.170869,
+        "sign_index": 11,
+        "degree_in_sign": 8.170869,
+        "is_retrograde": true,
+        "speed": -0.476195
+      },
+      "Jupiter": {
+        "longitude": 263.787218,
+        "sign_index": 8,
+        "degree_in_sign": 23.787218,
+        "is_retrograde": false,
+        "speed": 0.090457
+      },
+      "Venus": {
+        "longitude": 19.796397,
+        "sign_index": 0,
+        "degree_in_sign": 19.796397,
+        "is_retrograde": true,
+        "speed": -0.067674
+      },
+      "Saturn": {
+        "longitude": 38.332788,
+        "sign_index": 1,
+        "degree_in_sign": 8.332788,
+        "is_retrograde": false,
+        "speed": 0.103524
+      },
+      "Rahu": {
+        "longitude": 340.081674,
+        "sign_index": 11,
+        "degree_in_sign": 10.081674,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 160.081674,
+        "sign_index": 5,
+        "degree_in_sign": 10.081674,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

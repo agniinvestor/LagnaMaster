@@ -1,0 +1,109 @@
+{
+  "adb_id": 64993,
+  "name": "Chesnais, Patrick",
+  "given_name": "Patrick Chesnais",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431897.944444,
+    "year": 1946,
+    "month": 3,
+    "day": 18,
+    "calendar": "g",
+    "time": "11:40",
+    "time_type": "s",
+    "hour": 11.666667,
+    "time_unknown": false,
+    "place": "La Garenne Colombes",
+    "country": "France",
+    "lat": 48.916667,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chesnais,_Patrick",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 147.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Notable : Awards : Other Awards"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 20.413591,
+    "lagna": 50.413591,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.105785,
+    "jd_ut": 2431897.944444,
+    "planets": {
+      "Sun": {
+        "longitude": 334.131031,
+        "sign_index": 11,
+        "degree_in_sign": 4.131031,
+        "is_retrograde": false,
+        "speed": 0.994031
+      },
+      "Moon": {
+        "longitude": 161.617637,
+        "sign_index": 5,
+        "degree_in_sign": 11.617637,
+        "is_retrograde": false,
+        "speed": 15.472552
+      },
+      "Mars": {
+        "longitude": 84.304422,
+        "sign_index": 2,
+        "degree_in_sign": 24.304422,
+        "is_retrograde": false,
+        "speed": 0.248963
+      },
+      "Mercury": {
+        "longitude": 346.935654,
+        "sign_index": 11,
+        "degree_in_sign": 16.935654,
+        "is_retrograde": true,
+        "speed": -0.224197
+      },
+      "Jupiter": {
+        "longitude": 182.412816,
+        "sign_index": 6,
+        "degree_in_sign": 2.412816,
+        "is_retrograde": true,
+        "speed": -0.09947
+      },
+      "Venus": {
+        "longitude": 345.095311,
+        "sign_index": 11,
+        "degree_in_sign": 15.095311,
+        "is_retrograde": false,
+        "speed": 1.24252
+      },
+      "Saturn": {
+        "longitude": 84.852229,
+        "sign_index": 2,
+        "degree_in_sign": 24.852229,
+        "is_retrograde": true,
+        "speed": -0.003611
+      },
+      "Rahu": {
+        "longitude": 62.324941,
+        "sign_index": 2,
+        "degree_in_sign": 2.324941,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 242.324941,
+        "sign_index": 8,
+        "degree_in_sign": 2.324941,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

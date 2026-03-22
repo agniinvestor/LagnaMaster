@@ -1,0 +1,108 @@
+{
+  "adb_id": 73721,
+  "name": "Caruso, Juan",
+  "given_name": "Juan Caruso",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416116.697731,
+    "year": 1903,
+    "month": 1,
+    "day": 2,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Montevideo",
+    "country": "Uruguay",
+    "lat": -34.883333,
+    "lon": -56.183333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caruso,_Juan",
+  "source_notes": "Castellanos quotes birth certificate in:\\nhttp://www.autoresdeluruguay.uy/…/juan_caruso/documentos.htm\\n",
+  "categories": [
+    "Vocation : Art : Photography"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 23.218824,
+    "lagna": 173.218824,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.502436,
+    "jd_ut": 2416116.697731,
+    "planets": {
+      "Sun": {
+        "longitude": 258.121045,
+        "sign_index": 8,
+        "degree_in_sign": 18.121045,
+        "is_retrograde": false,
+        "speed": 1.019606
+      },
+      "Moon": {
+        "longitude": 294.089015,
+        "sign_index": 9,
+        "degree_in_sign": 24.089015,
+        "is_retrograde": false,
+        "speed": 16.159806
+      },
+      "Mars": {
+        "longitude": 163.00942,
+        "sign_index": 5,
+        "degree_in_sign": 13.00942,
+        "is_retrograde": false,
+        "speed": 0.393189
+      },
+      "Mercury": {
+        "longitude": 270.105156,
+        "sign_index": 9,
+        "degree_in_sign": 0.105156,
+        "is_retrograde": false,
+        "speed": 1.6145
+      },
+      "Jupiter": {
+        "longitude": 296.087672,
+        "sign_index": 9,
+        "degree_in_sign": 26.087672,
+        "is_retrograde": false,
+        "speed": 0.213843
+      },
+      "Venus": {
+        "longitude": 266.316381,
+        "sign_index": 8,
+        "degree_in_sign": 26.316381,
+        "is_retrograde": false,
+        "speed": 1.256987
+      },
+      "Saturn": {
+        "longitude": 275.410305,
+        "sign_index": 9,
+        "degree_in_sign": 5.410305,
+        "is_retrograde": false,
+        "speed": 0.115318
+      },
+      "Rahu": {
+        "longitude": 178.606105,
+        "sign_index": 5,
+        "degree_in_sign": 28.606105,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 358.606105,
+        "sign_index": 11,
+        "degree_in_sign": 28.606105,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

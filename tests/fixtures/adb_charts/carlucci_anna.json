@@ -1,0 +1,109 @@
+{
+  "adb_id": 50997,
+  "name": "Carlucci, Anna",
+  "given_name": "Anna Carlucci",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437445.777778,
+    "year": 1961,
+    "month": 5,
+    "day": 26,
+    "calendar": "g",
+    "time": "07:40",
+    "time_type": "s",
+    "hour": 7.666667,
+    "time_unknown": false,
+    "place": "Udine",
+    "country": "Italy",
+    "lat": 46.05,
+    "lon": 13.233333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlucci,_Anna",
+  "source_notes": "Ed Steinbrecher collection: Bordoni quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 3.292466,
+    "lagna": 63.292466,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.317917,
+    "jd_ut": 2437445.777778,
+    "planets": {
+      "Sun": {
+        "longitude": 41.460468,
+        "sign_index": 1,
+        "degree_in_sign": 11.460468,
+        "is_retrograde": false,
+        "speed": 0.959743
+      },
+      "Moon": {
+        "longitude": 172.134474,
+        "sign_index": 5,
+        "degree_in_sign": 22.134474,
+        "is_retrograde": false,
+        "speed": 16.183498
+      },
+      "Mars": {
+        "longitude": 107.471436,
+        "sign_index": 3,
+        "degree_in_sign": 17.471436,
+        "is_retrograde": false,
+        "speed": 0.549047
+      },
+      "Mercury": {
+        "longitude": 63.630346,
+        "sign_index": 2,
+        "degree_in_sign": 3.630346,
+        "is_retrograde": false,
+        "speed": 1.31945
+      },
+      "Jupiter": {
+        "longitude": 283.838198,
+        "sign_index": 9,
+        "degree_in_sign": 13.838198,
+        "is_retrograde": true,
+        "speed": -0.001608
+      },
+      "Venus": {
+        "longitude": 358.710832,
+        "sign_index": 11,
+        "degree_in_sign": 28.710832,
+        "is_retrograde": false,
+        "speed": 0.676462
+      },
+      "Saturn": {
+        "longitude": 276.318444,
+        "sign_index": 9,
+        "degree_in_sign": 6.318444,
+        "is_retrograde": true,
+        "speed": -0.02635
+      },
+      "Rahu": {
+        "longitude": 128.333845,
+        "sign_index": 4,
+        "degree_in_sign": 8.333845,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 308.333845,
+        "sign_index": 10,
+        "degree_in_sign": 8.333845,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

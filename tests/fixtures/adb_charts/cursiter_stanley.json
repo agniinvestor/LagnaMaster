@@ -1,0 +1,111 @@
+{
+  "adb_id": 82073,
+  "name": "Cursiter, Stanley",
+  "given_name": "Stanley Cursiter",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410390.875,
+    "year": 1887,
+    "month": 4,
+    "day": 29,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Kirkwall",
+    "country": "Scotland",
+    "lat": 58.983333,
+    "lon": -2.966667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cursiter,_Stanley",
+  "source_notes": "Sy Scholfield forwarded copy of birth registry entry\\n[https://www.nrscotland.gov.uk/research/learning/hall-of-fame/hall-of-fame-a-z/cursiter-stanley].\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 11.840572,
+    "lagna": 71.840572,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.283555,
+    "jd_ut": 2410390.875,
+    "planets": {
+      "Sun": {
+        "longitude": 16.431049,
+        "sign_index": 0,
+        "degree_in_sign": 16.431049,
+        "is_retrograde": false,
+        "speed": 0.97085
+      },
+      "Moon": {
+        "longitude": 87.122527,
+        "sign_index": 2,
+        "degree_in_sign": 27.122527,
+        "is_retrograde": false,
+        "speed": 14.800688
+      },
+      "Mars": {
+        "longitude": 15.398554,
+        "sign_index": 0,
+        "degree_in_sign": 15.398554,
+        "is_retrograde": false,
+        "speed": 0.738175
+      },
+      "Mercury": {
+        "longitude": 351.464566,
+        "sign_index": 11,
+        "degree_in_sign": 21.464566,
+        "is_retrograde": false,
+        "speed": 1.398441
+      },
+      "Jupiter": {
+        "longitude": 187.717052,
+        "sign_index": 6,
+        "degree_in_sign": 7.717052,
+        "is_retrograde": true,
+        "speed": -0.125312
+      },
+      "Venus": {
+        "longitude": 50.97297,
+        "sign_index": 1,
+        "degree_in_sign": 20.97297,
+        "is_retrograde": false,
+        "speed": 1.187544
+      },
+      "Saturn": {
+        "longitude": 84.905663,
+        "sign_index": 2,
+        "degree_in_sign": 24.905663,
+        "is_retrograde": false,
+        "speed": 0.072445
+      },
+      "Rahu": {
+        "longitude": 122.029549,
+        "sign_index": 4,
+        "degree_in_sign": 2.029549,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 302.029549,
+        "sign_index": 10,
+        "degree_in_sign": 2.029549,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

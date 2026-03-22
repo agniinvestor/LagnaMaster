@@ -1,0 +1,116 @@
+{
+  "adb_id": 102635,
+  "name": "Coover, Robert",
+  "given_name": "Robert Coover",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426742.152778,
+    "year": 1932,
+    "month": 2,
+    "day": 4,
+    "calendar": "g",
+    "time": "09:40",
+    "time_type": "s",
+    "hour": 9.666667,
+    "time_unknown": false,
+    "place": "Charles City",
+    "country": "Iowa",
+    "lat": 43.066667,
+    "lon": -92.666667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coover,_Robert",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Parenting : Kids 1-3",
+    "Family : Parenting : Kids - Noted",
+    "Lifestyle : Financial : Gain - Grant, Scholarship, etc.",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Military : Military service",
+    "Vocation : Writers : Fiction",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 25.009627,
+    "lagna": 325.009627,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.908656,
+    "jd_ut": 2426742.152778,
+    "planets": {
+      "Sun": {
+        "longitude": 291.7179,
+        "sign_index": 9,
+        "degree_in_sign": 21.7179,
+        "is_retrograde": false,
+        "speed": 1.014317
+      },
+      "Moon": {
+        "longitude": 268.336653,
+        "sign_index": 8,
+        "degree_in_sign": 28.336653,
+        "is_retrograde": false,
+        "speed": 9.038183
+      },
+      "Mars": {
+        "longitude": 290.941413,
+        "sign_index": 9,
+        "degree_in_sign": 20.941413,
+        "is_retrograde": false,
+        "speed": 0.788355
+      },
+      "Mercury": {
+        "longitude": 276.38507,
+        "sign_index": 9,
+        "degree_in_sign": 6.38507,
+        "is_retrograde": false,
+        "speed": 1.545764
+      },
+      "Jupiter": {
+        "longitude": 115.132943,
+        "sign_index": 3,
+        "degree_in_sign": 25.132943,
+        "is_retrograde": true,
+        "speed": -0.132655
+      },
+      "Venus": {
+        "longitude": 327.350635,
+        "sign_index": 10,
+        "degree_in_sign": 27.350635,
+        "is_retrograde": false,
+        "speed": 1.214155
+      },
+      "Saturn": {
+        "longitude": 274.932175,
+        "sign_index": 9,
+        "degree_in_sign": 4.932175,
+        "is_retrograde": false,
+        "speed": 0.11557
+      },
+      "Rahu": {
+        "longitude": 335.541015,
+        "sign_index": 11,
+        "degree_in_sign": 5.541015,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 155.541015,
+        "sign_index": 5,
+        "degree_in_sign": 5.541015,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

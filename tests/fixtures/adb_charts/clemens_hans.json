@@ -1,0 +1,108 @@
+{
+  "adb_id": 84783,
+  "name": "Clemens, Hans",
+  "given_name": "Hans Clemens",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415789.78125,
+    "year": 1902,
+    "month": 2,
+    "day": 9,
+    "calendar": "g",
+    "time": "07:45",
+    "time_type": "s",
+    "hour": 7.75,
+    "time_unknown": false,
+    "place": "Dresden",
+    "country": "Germany",
+    "lat": 51.05,
+    "lon": 13.733333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clemens,_Hans",
+  "source_notes": "Sy Scholfield provided birth record. \\n",
+  "categories": [
+    "Vocation : Politics : Nazi party"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 8.592092,
+    "lagna": 278.592092,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.489939,
+    "jd_ut": 2415789.78125,
+    "planets": {
+      "Sun": {
+        "longitude": 297.113623,
+        "sign_index": 9,
+        "degree_in_sign": 27.113623,
+        "is_retrograde": false,
+        "speed": 1.012503
+      },
+      "Moon": {
+        "longitude": 306.277977,
+        "sign_index": 10,
+        "degree_in_sign": 6.277977,
+        "is_retrograde": false,
+        "speed": 12.303519
+      },
+      "Mars": {
+        "longitude": 307.732643,
+        "sign_index": 10,
+        "degree_in_sign": 7.732643,
+        "is_retrograde": false,
+        "speed": 0.790816
+      },
+      "Mercury": {
+        "longitude": 312.940942,
+        "sign_index": 10,
+        "degree_in_sign": 12.940942,
+        "is_retrograde": false,
+        "speed": 0.115939
+      },
+      "Jupiter": {
+        "longitude": 278.073888,
+        "sign_index": 9,
+        "degree_in_sign": 8.073888,
+        "is_retrograde": false,
+        "speed": 0.229118
+      },
+      "Venus": {
+        "longitude": 306.271333,
+        "sign_index": 10,
+        "degree_in_sign": 6.271333,
+        "is_retrograde": true,
+        "speed": -0.559798
+      },
+      "Saturn": {
+        "longitude": 269.765854,
+        "sign_index": 8,
+        "degree_in_sign": 29.765854,
+        "is_retrograde": false,
+        "speed": 0.109617
+      },
+      "Rahu": {
+        "longitude": 195.930098,
+        "sign_index": 6,
+        "degree_in_sign": 15.930098,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 15.930098,
+        "sign_index": 0,
+        "degree_in_sign": 15.930098,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

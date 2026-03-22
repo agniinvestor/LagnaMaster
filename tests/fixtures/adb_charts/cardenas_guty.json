@@ -1,0 +1,108 @@
+{
+  "adb_id": 73101,
+  "name": "Cardenas, Guty",
+  "given_name": "Guty Cardenas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417192.457269,
+    "year": 1905,
+    "month": 12,
+    "day": 12,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Mérida (Yucatan)",
+    "country": "Mexico",
+    "lat": 20.966667,
+    "lon": -89.616667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardenas,_Guty",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 1.303053,
+    "lagna": 31.303053,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.543561,
+    "jd_ut": 2417192.457269,
+    "planets": {
+      "Sun": {
+        "longitude": 237.743462,
+        "sign_index": 7,
+        "degree_in_sign": 27.743462,
+        "is_retrograde": false,
+        "speed": 1.016715
+      },
+      "Moon": {
+        "longitude": 69.658595,
+        "sign_index": 2,
+        "degree_in_sign": 9.658595,
+        "is_retrograde": false,
+        "speed": 14.770053
+      },
+      "Mars": {
+        "longitude": 296.274013,
+        "sign_index": 9,
+        "degree_in_sign": 26.274013,
+        "is_retrograde": false,
+        "speed": 0.763989
+      },
+      "Mercury": {
+        "longitude": 244.680698,
+        "sign_index": 8,
+        "degree_in_sign": 4.680698,
+        "is_retrograde": true,
+        "speed": -1.179342
+      },
+      "Jupiter": {
+        "longitude": 36.460684,
+        "sign_index": 1,
+        "degree_in_sign": 6.460684,
+        "is_retrograde": true,
+        "speed": -0.117998
+      },
+      "Venus": {
+        "longitude": 222.55814,
+        "sign_index": 7,
+        "degree_in_sign": 12.55814,
+        "is_retrograde": false,
+        "speed": 1.25589
+      },
+      "Saturn": {
+        "longitude": 305.185127,
+        "sign_index": 10,
+        "degree_in_sign": 5.185127,
+        "is_retrograde": false,
+        "speed": 0.069015
+      },
+      "Rahu": {
+        "longitude": 121.599342,
+        "sign_index": 4,
+        "degree_in_sign": 1.599342,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 301.599342,
+        "sign_index": 10,
+        "degree_in_sign": 1.599342,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

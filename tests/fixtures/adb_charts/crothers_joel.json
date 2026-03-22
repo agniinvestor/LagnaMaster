@@ -1,0 +1,108 @@
+{
+  "adb_id": 53129,
+  "name": "Crothers, Joel",
+  "given_name": "Joel Crothers",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430023.020833,
+    "year": 1941,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "s",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Cincinnati",
+    "country": "Ohio",
+    "lat": 39.166667,
+    "lon": -84.45
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crothers,_Joel",
+  "source_notes": "Steinbrecher collection: Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 14.953384,
+    "lagna": 254.953384,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.034097,
+    "jd_ut": 2430023.020833,
+    "planets": {
+      "Sun": {
+        "longitude": 285.183871,
+        "sign_index": 9,
+        "degree_in_sign": 15.183871,
+        "is_retrograde": false,
+        "speed": 1.01617
+      },
+      "Moon": {
+        "longitude": 298.409924,
+        "sign_index": 9,
+        "degree_in_sign": 28.409924,
+        "is_retrograde": false,
+        "speed": 12.694972
+      },
+      "Mars": {
+        "longitude": 232.995199,
+        "sign_index": 7,
+        "degree_in_sign": 22.995199,
+        "is_retrograde": false,
+        "speed": 0.680063
+      },
+      "Mercury": {
+        "longitude": 296.871071,
+        "sign_index": 9,
+        "degree_in_sign": 26.871071,
+        "is_retrograde": false,
+        "speed": 1.724222
+      },
+      "Jupiter": {
+        "longitude": 14.004744,
+        "sign_index": 0,
+        "degree_in_sign": 14.004744,
+        "is_retrograde": false,
+        "speed": 0.093017
+      },
+      "Venus": {
+        "longitude": 265.235091,
+        "sign_index": 8,
+        "degree_in_sign": 25.235091,
+        "is_retrograde": false,
+        "speed": 1.249633
+      },
+      "Saturn": {
+        "longitude": 15.19448,
+        "sign_index": 0,
+        "degree_in_sign": 15.19448,
+        "is_retrograde": false,
+        "speed": 0.035056
+      },
+      "Rahu": {
+        "longitude": 161.681017,
+        "sign_index": 5,
+        "degree_in_sign": 11.681017,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 341.681017,
+        "sign_index": 11,
+        "degree_in_sign": 11.681017,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 104638,
+  "name": "Chiodo, Ned",
+  "given_name": "Ned Chiodo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430574.052083,
+    "year": 1942,
+    "month": 8,
+    "day": 2,
+    "calendar": "g",
+    "time": "08:15",
+    "time_type": "w",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Des Moines",
+    "country": "Iowa",
+    "lat": 41.6,
+    "lon": -93.616667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiodo,_Ned",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Family : Parenting : Kids - Noted",
+    "Lifestyle : Social Life : Sports",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 16.946686,
+    "lagna": 106.946686,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.055166,
+    "jd_ut": 2430574.052083,
+    "planets": {
+      "Sun": {
+        "longitude": 106.548061,
+        "sign_index": 3,
+        "degree_in_sign": 16.548061,
+        "is_retrograde": false,
+        "speed": 0.956933
+      },
+      "Moon": {
+        "longitude": 359.822294,
+        "sign_index": 11,
+        "degree_in_sign": 29.822294,
+        "is_retrograde": false,
+        "speed": 9.234498
+      },
+      "Mars": {
+        "longitude": 127.70112,
+        "sign_index": 4,
+        "degree_in_sign": 7.70112,
+        "is_retrograde": false,
+        "speed": 0.628955
+      },
+      "Mercury": {
+        "longitude": 106.111451,
+        "sign_index": 3,
+        "degree_in_sign": 16.111451,
+        "is_retrograde": false,
+        "speed": 2.081479
+      },
+      "Jupiter": {
+        "longitude": 78.871269,
+        "sign_index": 2,
+        "degree_in_sign": 18.871269,
+        "is_retrograde": false,
+        "speed": 0.213495
+      },
+      "Venus": {
+        "longitude": 79.300567,
+        "sign_index": 2,
+        "degree_in_sign": 19.300567,
+        "is_retrograde": false,
+        "speed": 1.204503
+      },
+      "Saturn": {
+        "longitude": 47.010281,
+        "sign_index": 1,
+        "degree_in_sign": 17.010281,
+        "is_retrograde": false,
+        "speed": 0.085951
+      },
+      "Rahu": {
+        "longitude": 132.480732,
+        "sign_index": 4,
+        "degree_in_sign": 12.480732,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 312.480732,
+        "sign_index": 10,
+        "degree_in_sign": 12.480732,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

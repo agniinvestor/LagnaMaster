@@ -1,0 +1,110 @@
+{
+  "adb_id": 65597,
+  "name": "Cruickshank, Helen",
+  "given_name": "Helen Cruickshank",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410042.25,
+    "year": 1886,
+    "month": 5,
+    "day": 15,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Montrose",
+    "country": "Scotland",
+    "lat": 56.716667,
+    "lon": -2.483333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cruickshank,_Helen",
+  "source_notes": "Paul Wright quotes birth record\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Activist/ feminist",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 18.685745,
+    "lagna": 168.685745,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.270228,
+    "jd_ut": 2410042.25,
+    "planets": {
+      "Sun": {
+        "longitude": 32.509943,
+        "sign_index": 1,
+        "degree_in_sign": 2.509943,
+        "is_retrograde": false,
+        "speed": 0.962969
+      },
+      "Moon": {
+        "longitude": 183.955565,
+        "sign_index": 6,
+        "degree_in_sign": 3.955565,
+        "is_retrograde": false,
+        "speed": 12.590203
+      },
+      "Mars": {
+        "longitude": 138.106854,
+        "sign_index": 4,
+        "degree_in_sign": 18.106854,
+        "is_retrograde": false,
+        "speed": 0.286796
+      },
+      "Mercury": {
+        "longitude": 8.015508,
+        "sign_index": 0,
+        "degree_in_sign": 8.015508,
+        "is_retrograde": false,
+        "speed": 1.356889
+      },
+      "Jupiter": {
+        "longitude": 153.86675,
+        "sign_index": 5,
+        "degree_in_sign": 3.86675,
+        "is_retrograde": true,
+        "speed": -0.022655
+      },
+      "Venus": {
+        "longitude": 347.143302,
+        "sign_index": 11,
+        "degree_in_sign": 17.143302,
+        "is_retrograde": false,
+        "speed": 1.052114
+      },
+      "Saturn": {
+        "longitude": 73.65231,
+        "sign_index": 2,
+        "degree_in_sign": 13.65231,
+        "is_retrograde": false,
+        "speed": 0.108658
+      },
+      "Rahu": {
+        "longitude": 140.503927,
+        "sign_index": 4,
+        "degree_in_sign": 20.503927,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 320.503927,
+        "sign_index": 10,
+        "degree_in_sign": 20.503927,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

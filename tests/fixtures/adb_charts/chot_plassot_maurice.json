@@ -1,0 +1,108 @@
+{
+  "adb_id": 53459,
+  "name": "Chot-Plassot, Maurice",
+  "given_name": "Maurice Chot-Plassot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425724.125,
+    "year": 1929,
+    "month": 4,
+    "day": 22,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "d",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Neuilly sur Seine",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chot-Plassot,_Maurice",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin ns 3/0341\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 5.127534,
+    "lagna": 125.127534,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.869734,
+    "jd_ut": 2425724.125,
+    "planets": {
+      "Sun": {
+        "longitude": 9.117668,
+        "sign_index": 0,
+        "degree_in_sign": 9.117668,
+        "is_retrograde": false,
+        "speed": 0.974281
+      },
+      "Moon": {
+        "longitude": 174.955174,
+        "sign_index": 5,
+        "degree_in_sign": 24.955174,
+        "is_retrograde": false,
+        "speed": 14.534014
+      },
+      "Mars": {
+        "longitude": 86.333232,
+        "sign_index": 2,
+        "degree_in_sign": 26.333232,
+        "is_retrograde": false,
+        "speed": 0.509175
+      },
+      "Mercury": {
+        "longitude": 14.814938,
+        "sign_index": 0,
+        "degree_in_sign": 14.814938,
+        "is_retrograde": false,
+        "speed": 2.125412
+      },
+      "Jupiter": {
+        "longitude": 25.196158,
+        "sign_index": 0,
+        "degree_in_sign": 25.196158,
+        "is_retrograde": false,
+        "speed": 0.232843
+      },
+      "Venus": {
+        "longitude": 5.537721,
+        "sign_index": 0,
+        "degree_in_sign": 5.537721,
+        "is_retrograde": true,
+        "speed": -0.621303
+      },
+      "Saturn": {
+        "longitude": 247.516286,
+        "sign_index": 8,
+        "degree_in_sign": 7.516286,
+        "is_retrograde": true,
+        "speed": -0.020962
+      },
+      "Rahu": {
+        "longitude": 29.488422,
+        "sign_index": 0,
+        "degree_in_sign": 29.488422,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 209.488422,
+        "sign_index": 6,
+        "degree_in_sign": 29.488422,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

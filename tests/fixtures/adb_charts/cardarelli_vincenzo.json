@@ -1,0 +1,108 @@
+{
+  "adb_id": 103046,
+  "name": "Cardarelli, Vincenzo",
+  "given_name": "Vincenzo Cardarelli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410392.881991,
+    "year": 1887,
+    "month": 5,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Tarquinia",
+    "country": "Italy",
+    "lat": 42.25,
+    "lon": 11.75
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardarelli,_Vincenzo",
+  "source_notes": "Taeger Vol. 1, p 254, BOR-1\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 11.921383,
+    "lagna": 71.921383,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.283631,
+    "jd_ut": 2410392.881991,
+    "planets": {
+      "Sun": {
+        "longitude": 18.37839,
+        "sign_index": 0,
+        "degree_in_sign": 18.37839,
+        "is_retrograde": false,
+        "speed": 0.969706
+      },
+      "Moon": {
+        "longitude": 114.563466,
+        "sign_index": 3,
+        "degree_in_sign": 24.563466,
+        "is_retrograde": false,
+        "speed": 16.373735
+      },
+      "Mars": {
+        "longitude": 16.87825,
+        "sign_index": 0,
+        "degree_in_sign": 16.87825,
+        "is_retrograde": false,
+        "speed": 0.736366
+      },
+      "Mercury": {
+        "longitude": 354.340321,
+        "sign_index": 11,
+        "degree_in_sign": 24.340321,
+        "is_retrograde": false,
+        "speed": 1.46696
+      },
+      "Jupiter": {
+        "longitude": 187.467079,
+        "sign_index": 6,
+        "degree_in_sign": 7.467079,
+        "is_retrograde": true,
+        "speed": -0.123733
+      },
+      "Venus": {
+        "longitude": 53.353687,
+        "sign_index": 1,
+        "degree_in_sign": 23.353687,
+        "is_retrograde": false,
+        "speed": 1.184861
+      },
+      "Saturn": {
+        "longitude": 85.053884,
+        "sign_index": 2,
+        "degree_in_sign": 25.053884,
+        "is_retrograde": false,
+        "speed": 0.075247
+      },
+      "Rahu": {
+        "longitude": 121.923194,
+        "sign_index": 4,
+        "degree_in_sign": 1.923194,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 301.923194,
+        "sign_index": 10,
+        "degree_in_sign": 1.923194,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 79734,
+  "name": "Czartoryski, Adam Ludwik",
+  "given_name": "Adam Ludwik Czartoryski",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405102.722685,
+    "year": 1872,
+    "month": 11,
+    "day": 5,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "l",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Czartoryski,_Adam_Ludwik",
+  "source_notes": "Sy Scholfield submitted birth certificate no. 2940 from the online Paris archives (4th arr., image 20/31): \"cinq heures et demie du matin\" (five-thirty in the morning).\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Financial : Philanthropist",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 12.879316,
+    "lagna": 162.879316,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.081418,
+    "jd_ut": 2405102.722685,
+    "planets": {
+      "Sun": {
+        "longitude": 201.059921,
+        "sign_index": 6,
+        "degree_in_sign": 21.059921,
+        "is_retrograde": false,
+        "speed": 1.004055
+      },
+      "Moon": {
+        "longitude": 252.67557,
+        "sign_index": 8,
+        "degree_in_sign": 12.67557,
+        "is_retrograde": false,
+        "speed": 17.323245
+      },
+      "Mars": {
+        "longitude": 146.333979,
+        "sign_index": 4,
+        "degree_in_sign": 26.333979,
+        "is_retrograde": false,
+        "speed": 0.589157
+      },
+      "Mercury": {
+        "longitude": 214.679186,
+        "sign_index": 7,
+        "degree_in_sign": 4.679186,
+        "is_retrograde": false,
+        "speed": 1.499415
+      },
+      "Jupiter": {
+        "longitude": 126.737513,
+        "sign_index": 4,
+        "degree_in_sign": 6.737513,
+        "is_retrograde": false,
+        "speed": 0.120705
+      },
+      "Venus": {
+        "longitude": 230.177848,
+        "sign_index": 7,
+        "degree_in_sign": 20.177848,
+        "is_retrograde": false,
+        "speed": 1.231872
+      },
+      "Saturn": {
+        "longitude": 264.377721,
+        "sign_index": 8,
+        "degree_in_sign": 24.377721,
+        "is_retrograde": false,
+        "speed": 0.072902
+      },
+      "Rahu": {
+        "longitude": 42.259984,
+        "sign_index": 1,
+        "degree_in_sign": 12.259984,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 222.259984,
+        "sign_index": 7,
+        "degree_in_sign": 12.259984,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

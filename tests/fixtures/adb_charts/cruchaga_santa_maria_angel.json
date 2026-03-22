@@ -1,0 +1,108 @@
+{
+  "adb_id": 69806,
+  "name": "Cruchaga Santa Maria, Angel",
+  "given_name": "Angel Cruchaga Santa Maria",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412546.592188,
+    "year": 1893,
+    "month": 3,
+    "day": 23,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "s",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Santiago",
+    "country": "Chile",
+    "lat": -33.45,
+    "lon": -70.666667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cruchaga_Santa_Maria,_Angel",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 26.731454,
+    "lagna": 206.731454,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.36596,
+    "jd_ut": 2412546.592188,
+    "planets": {
+      "Sun": {
+        "longitude": 341.316697,
+        "sign_index": 11,
+        "degree_in_sign": 11.316697,
+        "is_retrograde": false,
+        "speed": 0.990395
+      },
+      "Moon": {
+        "longitude": 60.078477,
+        "sign_index": 2,
+        "degree_in_sign": 0.078477,
+        "is_retrograde": false,
+        "speed": 11.686639
+      },
+      "Mars": {
+        "longitude": 34.561012,
+        "sign_index": 1,
+        "degree_in_sign": 4.561012,
+        "is_retrograde": false,
+        "speed": 0.656199
+      },
+      "Mercury": {
+        "longitude": 353.931472,
+        "sign_index": 11,
+        "degree_in_sign": 23.931472,
+        "is_retrograde": true,
+        "speed": -0.223154
+      },
+      "Jupiter": {
+        "longitude": 7.315299,
+        "sign_index": 0,
+        "degree_in_sign": 7.315299,
+        "is_retrograde": false,
+        "speed": 0.228036
+      },
+      "Venus": {
+        "longitude": 331.170411,
+        "sign_index": 11,
+        "degree_in_sign": 1.170411,
+        "is_retrograde": false,
+        "speed": 1.241505
+      },
+      "Saturn": {
+        "longitude": 167.545739,
+        "sign_index": 5,
+        "degree_in_sign": 17.545739,
+        "is_retrograde": true,
+        "speed": -0.077329
+      },
+      "Rahu": {
+        "longitude": 7.793532,
+        "sign_index": 0,
+        "degree_in_sign": 7.793532,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 187.793532,
+        "sign_index": 6,
+        "degree_in_sign": 7.793532,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 91458,
+  "name": "Casanova, José",
+  "given_name": "José Casanova",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438527.75,
+    "year": 1964,
+    "month": 5,
+    "day": 12,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casanova,_José",
+  "source_notes": "Birth certificate in hand from Sy Scholfield.\\n",
+  "categories": [
+    "Personal : Death : Accidental",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 16.567651,
+    "lagna": 286.567651,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.35929,
+    "jd_ut": 2438527.75,
+    "planets": {
+      "Sun": {
+        "longitude": 28.179901,
+        "sign_index": 0,
+        "degree_in_sign": 28.179901,
+        "is_retrograde": false,
+        "speed": 0.96572
+      },
+      "Moon": {
+        "longitude": 33.587604,
+        "sign_index": 1,
+        "degree_in_sign": 3.587604,
+        "is_retrograde": false,
+        "speed": 20.903877
+      },
+      "Mars": {
+        "longitude": 10.12596,
+        "sign_index": 0,
+        "degree_in_sign": 10.12596,
+        "is_retrograde": false,
+        "speed": 0.748284
+      },
+      "Mercury": {
+        "longitude": 8.262674,
+        "sign_index": 0,
+        "degree_in_sign": 8.262674,
+        "is_retrograde": false,
+        "speed": 0.122235
+      },
+      "Jupiter": {
+        "longitude": 13.807108,
+        "sign_index": 0,
+        "degree_in_sign": 13.807108,
+        "is_retrograde": false,
+        "speed": 0.235762
+      },
+      "Venus": {
+        "longitude": 68.444716,
+        "sign_index": 2,
+        "degree_in_sign": 8.444716,
+        "is_retrograde": false,
+        "speed": 0.542952
+      },
+      "Saturn": {
+        "longitude": 310.753778,
+        "sign_index": 10,
+        "degree_in_sign": 10.753778,
+        "is_retrograde": false,
+        "speed": 0.053699
+      },
+      "Rahu": {
+        "longitude": 70.997921,
+        "sign_index": 2,
+        "degree_in_sign": 10.997921,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 250.997921,
+        "sign_index": 8,
+        "degree_in_sign": 10.997921,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

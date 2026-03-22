@@ -1,0 +1,109 @@
+{
+  "adb_id": 47596,
+  "name": "Cohen, Jared",
+  "given_name": "Jared Cohen",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2449276.890278,
+    "year": 1993,
+    "month": 10,
+    "day": 16,
+    "calendar": "g",
+    "time": "05:22",
+    "time_type": "d",
+    "hour": 5.366667,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Jared",
+  "source_notes": "Clippings in hand from Adria Wight.\\n\\nIn July 2024 Sy Scholfield corrected the place of birth. Cohen was not born in Los Angeles, California. He was born at New York Hospital-Cornell Medical Center. Birth time reported as 5:30 AM (''Daily News'', New York, New York, 17 October 1993). Birth time reported as 5:22 AM in ''The Modesto Bee'' (Modesto, California), 19 October 1993.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.572905,
+    "lagna": 133.572905,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.77035,
+    "jd_ut": 2449276.890278,
+    "planets": {
+      "Sun": {
+        "longitude": 179.25628,
+        "sign_index": 5,
+        "degree_in_sign": 29.25628,
+        "is_retrograde": false,
+        "speed": 0.992324
+      },
+      "Moon": {
+        "longitude": 192.914181,
+        "sign_index": 6,
+        "degree_in_sign": 12.914181,
+        "is_retrograde": false,
+        "speed": 17.726833
+      },
+      "Mars": {
+        "longitude": 199.418989,
+        "sign_index": 6,
+        "degree_in_sign": 19.418989,
+        "is_retrograde": false,
+        "speed": 0.693474
+      },
+      "Mercury": {
+        "longitude": 203.966247,
+        "sign_index": 6,
+        "degree_in_sign": 23.966247,
+        "is_retrograde": false,
+        "speed": 0.871845
+      },
+      "Jupiter": {
+        "longitude": 180.836206,
+        "sign_index": 6,
+        "degree_in_sign": 0.836206,
+        "is_retrograde": false,
+        "speed": 0.217415
+      },
+      "Venus": {
+        "longitude": 156.698275,
+        "sign_index": 5,
+        "degree_in_sign": 6.698275,
+        "is_retrograde": false,
+        "speed": 1.239461
+      },
+      "Saturn": {
+        "longitude": 299.976708,
+        "sign_index": 9,
+        "degree_in_sign": 29.976708,
+        "is_retrograde": true,
+        "speed": -0.019948
+      },
+      "Rahu": {
+        "longitude": 221.379128,
+        "sign_index": 7,
+        "degree_in_sign": 11.379128,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 41.379128,
+        "sign_index": 1,
+        "degree_in_sign": 11.379128,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

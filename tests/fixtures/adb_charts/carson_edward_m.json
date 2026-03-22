@@ -1,0 +1,111 @@
+{
+  "adb_id": 45414,
+  "name": "Carson, Edward M.",
+  "given_name": "Edward M. Carson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425922.520833,
+    "year": 1929,
+    "month": 11,
+    "day": 6,
+    "calendar": "g",
+    "time": "17:30",
+    "time_type": "s",
+    "hour": 17.5,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carson,_Edward_M.",
+  "source_notes": "Paul Hewitt collection, rated X. PT found birth certificate online in AZ records\\n",
+  "categories": [
+    "Traits : Personality : Passive/ Bland",
+    "Lifestyle : Social Life : Hobbies, games",
+    "Vocation : Business : Banker/ Financier",
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 29.765869,
+    "lagna": 359.765869,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.877319,
+    "jd_ut": 2425922.520833,
+    "planets": {
+      "Sun": {
+        "longitude": 201.249297,
+        "sign_index": 6,
+        "degree_in_sign": 21.249297,
+        "is_retrograde": false,
+        "speed": 1.003949
+      },
+      "Moon": {
+        "longitude": 262.98845,
+        "sign_index": 8,
+        "degree_in_sign": 22.98845,
+        "is_retrograde": false,
+        "speed": 7.346537
+      },
+      "Mars": {
+        "longitude": 208.919382,
+        "sign_index": 6,
+        "degree_in_sign": 28.919382,
+        "is_retrograde": false,
+        "speed": 0.70604
+      },
+      "Mercury": {
+        "longitude": 189.069794,
+        "sign_index": 6,
+        "degree_in_sign": 9.069794,
+        "is_retrograde": false,
+        "speed": 1.611037
+      },
+      "Jupiter": {
+        "longitude": 51.80368,
+        "sign_index": 1,
+        "degree_in_sign": 21.80368,
+        "is_retrograde": true,
+        "speed": -0.101381
+      },
+      "Venus": {
+        "longitude": 179.219793,
+        "sign_index": 5,
+        "degree_in_sign": 29.219793,
+        "is_retrograde": false,
+        "speed": 1.246303
+      },
+      "Saturn": {
+        "longitude": 244.694594,
+        "sign_index": 8,
+        "degree_in_sign": 4.694594,
+        "is_retrograde": false,
+        "speed": 0.096138
+      },
+      "Rahu": {
+        "longitude": 18.975014,
+        "sign_index": 0,
+        "degree_in_sign": 18.975014,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 198.975014,
+        "sign_index": 6,
+        "degree_in_sign": 18.975014,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

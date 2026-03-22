@@ -1,0 +1,111 @@
+{
+  "adb_id": 104446,
+  "name": "Cancelier, Urbain",
+  "given_name": "Urbain Cancelier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436782.572917,
+    "year": 1959,
+    "month": 8,
+    "day": 2,
+    "calendar": "g",
+    "time": "02:45",
+    "time_type": "s",
+    "hour": 2.75,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 8",
+    "country": "France",
+    "lat": 48.877778,
+    "lon": 2.317778
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cancelier,_Urbain",
+  "source_notes": "Marc Brun quoted birth certificate (\"EC n°544\").\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 20.712683,
+    "lagna": 50.712683,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.292558,
+    "jd_ut": 2436782.572917,
+    "planets": {
+      "Sun": {
+        "longitude": 105.746572,
+        "sign_index": 3,
+        "degree_in_sign": 15.746572,
+        "is_retrograde": false,
+        "speed": 0.957086
+      },
+      "Moon": {
+        "longitude": 76.668556,
+        "sign_index": 2,
+        "degree_in_sign": 16.668556,
+        "is_retrograde": false,
+        "speed": 14.308202
+      },
+      "Mars": {
+        "longitude": 134.556069,
+        "sign_index": 4,
+        "degree_in_sign": 14.556069,
+        "is_retrograde": false,
+        "speed": 0.62567
+      },
+      "Mercury": {
+        "longitude": 112.024878,
+        "sign_index": 3,
+        "degree_in_sign": 22.024878,
+        "is_retrograde": true,
+        "speed": -0.719412
+      },
+      "Jupiter": {
+        "longitude": 209.074933,
+        "sign_index": 6,
+        "degree_in_sign": 29.074933,
+        "is_retrograde": false,
+        "speed": 0.038082
+      },
+      "Venus": {
+        "longitude": 141.391723,
+        "sign_index": 4,
+        "degree_in_sign": 21.391723,
+        "is_retrograde": false,
+        "speed": 0.310399
+      },
+      "Saturn": {
+        "longitude": 248.05507,
+        "sign_index": 8,
+        "degree_in_sign": 8.05507,
+        "is_retrograde": true,
+        "speed": -0.050077
+      },
+      "Rahu": {
+        "longitude": 163.47843,
+        "sign_index": 5,
+        "degree_in_sign": 13.47843,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 343.47843,
+        "sign_index": 11,
+        "degree_in_sign": 13.47843,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

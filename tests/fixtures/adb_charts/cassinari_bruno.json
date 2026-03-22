@@ -1,0 +1,110 @@
+{
+  "adb_id": 47813,
+  "name": "Cassinari, Bruno",
+  "given_name": "Bruno Cassinari",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419704.854167,
+    "year": 1912,
+    "month": 10,
+    "day": 29,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "s",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Piacenza",
+    "country": "Italy",
+    "lat": 45.016667,
+    "lon": 9.666667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassinari,_Bruno",
+  "source_notes": "Bordoni quotes B.C. Vol. 1\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Stage/ Set design"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 18.668095,
+    "lagna": 198.668095,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.639609,
+    "jd_ut": 2419704.854167,
+    "planets": {
+      "Sun": {
+        "longitude": 192.918814,
+        "sign_index": 6,
+        "degree_in_sign": 12.918814,
+        "is_retrograde": false,
+        "speed": 0.99931
+      },
+      "Moon": {
+        "longitude": 52.667998,
+        "sign_index": 1,
+        "degree_in_sign": 22.667998,
+        "is_retrograde": false,
+        "speed": 14.446026
+      },
+      "Mars": {
+        "longitude": 195.026175,
+        "sign_index": 6,
+        "degree_in_sign": 15.026175,
+        "is_retrograde": false,
+        "speed": 0.68597
+      },
+      "Mercury": {
+        "longitude": 208.285208,
+        "sign_index": 6,
+        "degree_in_sign": 28.285208,
+        "is_retrograde": false,
+        "speed": 1.479819
+      },
+      "Jupiter": {
+        "longitude": 232.917112,
+        "sign_index": 7,
+        "degree_in_sign": 22.917112,
+        "is_retrograde": false,
+        "speed": 0.198179
+      },
+      "Venus": {
+        "longitude": 223.044464,
+        "sign_index": 7,
+        "degree_in_sign": 13.044464,
+        "is_retrograde": false,
+        "speed": 1.227192
+      },
+      "Saturn": {
+        "longitude": 39.898416,
+        "sign_index": 1,
+        "degree_in_sign": 9.898416,
+        "is_retrograde": true,
+        "speed": -0.067998
+      },
+      "Rahu": {
+        "longitude": 348.462153,
+        "sign_index": 11,
+        "degree_in_sign": 18.462153,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 168.462153,
+        "sign_index": 5,
+        "degree_in_sign": 18.462153,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

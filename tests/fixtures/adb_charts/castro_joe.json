@@ -1,0 +1,109 @@
+{
+  "adb_id": 61504,
+  "name": "Castro, Joe",
+  "given_name": "Joe Castro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425108.274306,
+    "year": 1927,
+    "month": 8,
+    "day": 15,
+    "calendar": "g",
+    "time": "11:35",
+    "time_type": "s",
+    "hour": 11.583333,
+    "time_unknown": false,
+    "place": "Miami",
+    "country": "Arizona",
+    "lat": 33.4,
+    "lon": -110.866667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro,_Joe",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 18.849102,
+    "lagna": 168.849102,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.846188,
+    "jd_ut": 2425108.274306,
+    "planets": {
+      "Sun": {
+        "longitude": 119.076621,
+        "sign_index": 3,
+        "degree_in_sign": 29.076621,
+        "is_retrograde": false,
+        "speed": 0.960624
+      },
+      "Moon": {
+        "longitude": 333.70141,
+        "sign_index": 11,
+        "degree_in_sign": 3.70141,
+        "is_retrograde": false,
+        "speed": 18.013926
+      },
+      "Mars": {
+        "longitude": 140.636439,
+        "sign_index": 4,
+        "degree_in_sign": 20.636439,
+        "is_retrograde": false,
+        "speed": 0.633062
+      },
+      "Mercury": {
+        "longitude": 102.402099,
+        "sign_index": 3,
+        "degree_in_sign": 12.402099,
+        "is_retrograde": false,
+        "speed": 1.592086
+      },
+      "Jupiter": {
+        "longitude": 339.876731,
+        "sign_index": 11,
+        "degree_in_sign": 9.876731,
+        "is_retrograde": true,
+        "speed": -0.070701
+      },
+      "Venus": {
+        "longitude": 151.740898,
+        "sign_index": 5,
+        "degree_in_sign": 1.740898,
+        "is_retrograde": false,
+        "speed": 0.172778
+      },
+      "Saturn": {
+        "longitude": 218.261655,
+        "sign_index": 7,
+        "degree_in_sign": 8.261655,
+        "is_retrograde": false,
+        "speed": 0.016095
+      },
+      "Rahu": {
+        "longitude": 62.123631,
+        "sign_index": 2,
+        "degree_in_sign": 2.123631,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 242.123631,
+        "sign_index": 8,
+        "degree_in_sign": 2.123631,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

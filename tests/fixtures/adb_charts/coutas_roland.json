@@ -1,0 +1,109 @@
+{
+  "adb_id": 65094,
+  "name": "Coutas, Roland",
+  "given_name": "Roland Coutas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439477.010417,
+    "year": 1966,
+    "month": 12,
+    "day": 17,
+    "calendar": "g",
+    "time": "13:15",
+    "time_type": "s",
+    "hour": 13.25,
+    "time_unknown": false,
+    "place": "Strasbourg",
+    "country": "France",
+    "lat": 48.583333,
+    "lon": 7.75
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coutas,_Roland",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 271.\\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 28.428836,
+    "lagna": 328.428836,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.395589,
+    "jd_ut": 2439477.010417,
+    "planets": {
+      "Sun": {
+        "longitude": 241.719823,
+        "sign_index": 8,
+        "degree_in_sign": 1.719823,
+        "is_retrograde": false,
+        "speed": 1.017893
+      },
+      "Moon": {
+        "longitude": 305.781773,
+        "sign_index": 10,
+        "degree_in_sign": 5.781773,
+        "is_retrograde": false,
+        "speed": 9.841811
+      },
+      "Mars": {
+        "longitude": 163.648486,
+        "sign_index": 5,
+        "degree_in_sign": 13.648486,
+        "is_retrograde": false,
+        "speed": 0.507394
+      },
+      "Mercury": {
+        "longitude": 224.799839,
+        "sign_index": 7,
+        "degree_in_sign": 14.799839,
+        "is_retrograde": false,
+        "speed": 1.443616
+      },
+      "Jupiter": {
+        "longitude": 99.986805,
+        "sign_index": 3,
+        "degree_in_sign": 9.986805,
+        "is_retrograde": true,
+        "speed": -0.082602
+      },
+      "Venus": {
+        "longitude": 251.116055,
+        "sign_index": 8,
+        "degree_in_sign": 11.116055,
+        "is_retrograde": false,
+        "speed": 1.256383
+      },
+      "Saturn": {
+        "longitude": 329.90939,
+        "sign_index": 10,
+        "degree_in_sign": 29.90939,
+        "is_retrograde": false,
+        "speed": 0.036938
+      },
+      "Rahu": {
+        "longitude": 20.69467,
+        "sign_index": 0,
+        "degree_in_sign": 20.69467,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 200.69467,
+        "sign_index": 6,
+        "degree_in_sign": 20.69467,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

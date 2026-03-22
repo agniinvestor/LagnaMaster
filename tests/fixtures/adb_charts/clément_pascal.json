@@ -1,0 +1,111 @@
+{
+  "adb_id": 68332,
+  "name": "Clément, Pascal",
+  "given_name": "Pascal Clément",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431587.833333,
+    "year": 1945,
+    "month": 5,
+    "day": 12,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "d",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Boulogne Billancourt",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clément,_Pascal",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 197.\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Lung",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 2.09145,
+    "lagna": 62.09145,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.093928,
+    "jd_ut": 2431587.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 28.131563,
+        "sign_index": 0,
+        "degree_in_sign": 28.131563,
+        "is_retrograde": false,
+        "speed": 0.965642
+      },
+      "Moon": {
+        "longitude": 35.378221,
+        "sign_index": 1,
+        "degree_in_sign": 5.378221,
+        "is_retrograde": false,
+        "speed": 13.536856
+      },
+      "Mars": {
+        "longitude": 344.184122,
+        "sign_index": 11,
+        "degree_in_sign": 14.184122,
+        "is_retrograde": false,
+        "speed": 0.764522
+      },
+      "Mercury": {
+        "longitude": 2.111137,
+        "sign_index": 0,
+        "degree_in_sign": 2.111137,
+        "is_retrograde": false,
+        "speed": 1.011544
+      },
+      "Jupiter": {
+        "longitude": 144.445053,
+        "sign_index": 4,
+        "degree_in_sign": 24.445053,
+        "is_retrograde": true,
+        "speed": -0.007412
+      },
+      "Venus": {
+        "longitude": 354.669077,
+        "sign_index": 11,
+        "degree_in_sign": 24.669077,
+        "is_retrograde": false,
+        "speed": 0.202255
+      },
+      "Saturn": {
+        "longitude": 74.570958,
+        "sign_index": 2,
+        "degree_in_sign": 14.570958,
+        "is_retrograde": false,
+        "speed": 0.102912
+      },
+      "Rahu": {
+        "longitude": 78.758369,
+        "sign_index": 2,
+        "degree_in_sign": 18.758369,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 258.758369,
+        "sign_index": 8,
+        "degree_in_sign": 18.758369,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

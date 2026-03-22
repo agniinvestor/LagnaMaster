@@ -1,0 +1,113 @@
+{
+  "adb_id": 26422,
+  "name": "Carion, Johannes",
+  "given_name": "Johannes Carion",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2268648.050046,
+    "year": 1499,
+    "month": 3,
+    "day": 22,
+    "calendar": "j",
+    "time": "13:45",
+    "time_type": "l",
+    "hour": 13.75,
+    "time_unknown": false,
+    "place": "Bietigheim (Baden-Württemberg)",
+    "country": "Germany",
+    "lat": 48.9,
+    "lon": 8.233333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carion,_Johannes",
+  "source_notes": "Taeger Archives (March 22, 1499 OS); Jurben G.H. Hoppmann quotes a historic chart, given in The Celtic Astrologer April/1999 for March 31, 1499 same time (13:45) but with name spelled \"Carion\"\\n",
+  "categories": [
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Vocation : Medical : Physician",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Vocation : Science : Physics",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 16.335826,
+    "lagna": 106.335826,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 16.869948,
+    "jd_ut": 2268648.050046,
+    "planets": {
+      "Sun": {
+        "longitude": 353.641581,
+        "sign_index": 11,
+        "degree_in_sign": 23.641581,
+        "is_retrograde": false,
+        "speed": 0.982232
+      },
+      "Moon": {
+        "longitude": 112.02789,
+        "sign_index": 3,
+        "degree_in_sign": 22.02789,
+        "is_retrograde": false,
+        "speed": 13.277724
+      },
+      "Mars": {
+        "longitude": 278.772214,
+        "sign_index": 9,
+        "degree_in_sign": 8.772214,
+        "is_retrograde": false,
+        "speed": 0.687518
+      },
+      "Mercury": {
+        "longitude": 332.727614,
+        "sign_index": 11,
+        "degree_in_sign": 2.727614,
+        "is_retrograde": true,
+        "speed": -0.00908
+      },
+      "Jupiter": {
+        "longitude": 298.007127,
+        "sign_index": 9,
+        "degree_in_sign": 28.007127,
+        "is_retrograde": false,
+        "speed": 0.181079
+      },
+      "Venus": {
+        "longitude": 352.417016,
+        "sign_index": 11,
+        "degree_in_sign": 22.417016,
+        "is_retrograde": true,
+        "speed": -0.631292
+      },
+      "Saturn": {
+        "longitude": 19.584858,
+        "sign_index": 0,
+        "degree_in_sign": 19.584858,
+        "is_retrograde": false,
+        "speed": 0.120917
+      },
+      "Rahu": {
+        "longitude": 73.308468,
+        "sign_index": 2,
+        "degree_in_sign": 13.308468,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 253.308468,
+        "sign_index": 8,
+        "degree_in_sign": 13.308468,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 63973,
+  "name": "Creation conjunctions: Saturn-Pluto (1947)",
+  "given_name": "Creation conjunctions: Saturn-Pluto (1947)",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432408.555556,
+    "year": 1947,
+    "month": 8,
+    "day": 11,
+    "calendar": "g",
+    "time": "01:20",
+    "time_type": "u",
+    "hour": 1.333333,
+    "time_unknown": false,
+    "place": "Tel Aviv",
+    "country": "Israel",
+    "lat": 32.066667,
+    "lon": 34.766667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Creation_conjunctions:_Saturn-Pluto_(1947)",
+  "source_notes": "Collection of conjunctions (mik),generally calculated to UT\\n",
+  "categories": [
+    "Mundane : Political : Birth of State or Country"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 9.184593,
+    "lagna": 69.184593,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.125309,
+    "jd_ut": 2432408.555556,
+    "planets": {
+      "Sun": {
+        "longitude": 114.421738,
+        "sign_index": 3,
+        "degree_in_sign": 24.421738,
+        "is_retrograde": false,
+        "speed": 0.959421
+      },
+      "Moon": {
+        "longitude": 40.348839,
+        "sign_index": 1,
+        "degree_in_sign": 10.348839,
+        "is_retrograde": false,
+        "speed": 10.882348
+      },
+      "Mars": {
+        "longitude": 65.003361,
+        "sign_index": 2,
+        "degree_in_sign": 5.003361,
+        "is_retrograde": false,
+        "speed": 0.66265
+      },
+      "Mercury": {
+        "longitude": 97.376653,
+        "sign_index": 3,
+        "degree_in_sign": 7.376653,
+        "is_retrograde": false,
+        "speed": 1.571383
+      },
+      "Jupiter": {
+        "longitude": 205.578788,
+        "sign_index": 6,
+        "degree_in_sign": 25.578788,
+        "is_retrograde": false,
+        "speed": 0.075509
+      },
+      "Venus": {
+        "longitude": 107.975413,
+        "sign_index": 3,
+        "degree_in_sign": 17.975413,
+        "is_retrograde": false,
+        "speed": 1.233547
+      },
+      "Saturn": {
+        "longitude": 109.997301,
+        "sign_index": 3,
+        "degree_in_sign": 19.997301,
+        "is_retrograde": false,
+        "speed": 0.128252
+      },
+      "Rahu": {
+        "longitude": 35.266605,
+        "sign_index": 1,
+        "degree_in_sign": 5.266605,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 215.266605,
+        "sign_index": 7,
+        "degree_in_sign": 5.266605,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

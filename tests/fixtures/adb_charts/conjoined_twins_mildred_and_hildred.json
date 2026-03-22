@@ -1,0 +1,109 @@
+{
+  "adb_id": 50107,
+  "name": "Conjoined Twins: Mildred and Hildred",
+  "given_name": "Conjoined Twins: Mildred and Hildred",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2441778.216667,
+    "year": 1973,
+    "month": 4,
+    "day": 5,
+    "calendar": "g",
+    "time": "12:12",
+    "time_type": "s",
+    "hour": 12.2,
+    "time_unknown": false,
+    "place": "Brooklyn (Kings County)",
+    "country": "New York",
+    "lat": 40.633333,
+    "lon": -73.933333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conjoined_Twins:_Mildred_and_Hildred",
+  "source_notes": "Sy Scholfield quotes newspaper article, \"Siamese Twin Girls Are Born at Brooklyn St. Johns Hospital\" by Lawrence Van Gelder, New York Times, 26 April 1973, p. 29.\\n",
+  "categories": [
+    "Personal : Birth : Cesarean",
+    "Personal : Birth : Conjoined twins"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 16.278351,
+    "lagna": 76.278351,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.483587,
+    "jd_ut": 2441778.216667,
+    "planets": {
+      "Sun": {
+        "longitude": 352.290276,
+        "sign_index": 11,
+        "degree_in_sign": 22.290276,
+        "is_retrograde": false,
+        "speed": 0.984432
+      },
+      "Moon": {
+        "longitude": 22.691323,
+        "sign_index": 0,
+        "degree_in_sign": 22.691323,
+        "is_retrograde": false,
+        "speed": 10.833047
+      },
+      "Mars": {
+        "longitude": 283.498644,
+        "sign_index": 9,
+        "degree_in_sign": 13.498644,
+        "is_retrograde": false,
+        "speed": 0.710127
+      },
+      "Mercury": {
+        "longitude": 325.212165,
+        "sign_index": 10,
+        "degree_in_sign": 25.212165,
+        "is_retrograde": false,
+        "speed": 0.730312
+      },
+      "Jupiter": {
+        "longitude": 284.177511,
+        "sign_index": 9,
+        "degree_in_sign": 14.177511,
+        "is_retrograde": false,
+        "speed": 0.150633
+      },
+      "Venus": {
+        "longitude": 351.241743,
+        "sign_index": 11,
+        "degree_in_sign": 21.241743,
+        "is_retrograde": false,
+        "speed": 1.240504
+      },
+      "Saturn": {
+        "longitude": 52.46837,
+        "sign_index": 1,
+        "degree_in_sign": 22.46837,
+        "is_retrograde": false,
+        "speed": 0.085438
+      },
+      "Rahu": {
+        "longitude": 258.749052,
+        "sign_index": 8,
+        "degree_in_sign": 18.749052,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 78.749052,
+        "sign_index": 2,
+        "degree_in_sign": 18.749052,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 103776,
+  "name": "Charlton, Jane C.",
+  "given_name": "Jane C. Charlton",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438917.629167,
+    "year": 1965,
+    "month": 6,
+    "day": 5,
+    "calendar": "g",
+    "time": "23:06",
+    "time_type": "d",
+    "hour": 23.1,
+    "time_unknown": false,
+    "place": "Monongahela",
+    "country": "Pennsylvania",
+    "lat": 40.2,
+    "lon": -79.933333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlton,_Jane_C.",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Daily Herald'' (Monongahela, Pennsylvania), 7 June 1965, page 2: born at Monongahela Memorial Hospital. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Astronomy"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 2.528575,
+    "lagna": 242.528575,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.374199,
+    "jd_ut": 2438917.629167,
+    "planets": {
+      "Sun": {
+        "longitude": 51.832423,
+        "sign_index": 1,
+        "degree_in_sign": 21.832423,
+        "is_retrograde": false,
+        "speed": 0.956964
+      },
+      "Moon": {
+        "longitude": 136.54585,
+        "sign_index": 4,
+        "degree_in_sign": 16.54585,
+        "is_retrograde": false,
+        "speed": 12.05285
+      },
+      "Mars": {
+        "longitude": 146.23148,
+        "sign_index": 4,
+        "degree_in_sign": 26.23148,
+        "is_retrograde": false,
+        "speed": 0.402183
+      },
+      "Mercury": {
+        "longitude": 44.903143,
+        "sign_index": 1,
+        "degree_in_sign": 14.903143,
+        "is_retrograde": false,
+        "speed": 2.135557
+      },
+      "Jupiter": {
+        "longitude": 46.882949,
+        "sign_index": 1,
+        "degree_in_sign": 16.882949,
+        "is_retrograde": false,
+        "speed": 0.232928
+      },
+      "Venus": {
+        "longitude": 66.347436,
+        "sign_index": 2,
+        "degree_in_sign": 6.347436,
+        "is_retrograde": false,
+        "speed": 1.224815
+      },
+      "Saturn": {
+        "longitude": 323.448684,
+        "sign_index": 10,
+        "degree_in_sign": 23.448684,
+        "is_retrograde": false,
+        "speed": 0.036055
+      },
+      "Rahu": {
+        "longitude": 50.337426,
+        "sign_index": 1,
+        "degree_in_sign": 20.337426,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 230.337426,
+        "sign_index": 7,
+        "degree_in_sign": 20.337426,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

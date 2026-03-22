@@ -1,0 +1,111 @@
+{
+  "adb_id": 2658,
+  "name": "Cumont, Franz",
+  "given_name": "Franz Cumont",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403334.530463,
+    "year": 1868,
+    "month": 1,
+    "day": 3,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Aalst",
+    "country": "Belgium",
+    "lat": 50.933333,
+    "lon": 4.033333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cumont,_Franz",
+  "source_notes": "Lescaut quotes De Marre for B.R.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Science : Other Science",
+    "Vocation : Writers : Astrology",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 5.074832,
+    "lagna": 155.074832,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.013832,
+    "jd_ut": 2403334.530463,
+    "planets": {
+      "Sun": {
+        "longitude": 259.964754,
+        "sign_index": 8,
+        "degree_in_sign": 19.964754,
+        "is_retrograde": false,
+        "speed": 1.019333
+      },
+      "Moon": {
+        "longitude": 347.53564,
+        "sign_index": 11,
+        "degree_in_sign": 17.53564,
+        "is_retrograde": false,
+        "speed": 13.66421
+      },
+      "Mars": {
+        "longitude": 259.763005,
+        "sign_index": 8,
+        "degree_in_sign": 19.763005,
+        "is_retrograde": false,
+        "speed": 0.767338
+      },
+      "Mercury": {
+        "longitude": 247.632207,
+        "sign_index": 8,
+        "degree_in_sign": 7.632207,
+        "is_retrograde": false,
+        "speed": 1.524316
+      },
+      "Jupiter": {
+        "longitude": 313.143753,
+        "sign_index": 10,
+        "degree_in_sign": 13.143753,
+        "is_retrograde": false,
+        "speed": 0.189669
+      },
+      "Venus": {
+        "longitude": 284.308959,
+        "sign_index": 9,
+        "degree_in_sign": 14.308959,
+        "is_retrograde": false,
+        "speed": 1.245745
+      },
+      "Saturn": {
+        "longitude": 219.721217,
+        "sign_index": 7,
+        "degree_in_sign": 9.721217,
+        "is_retrograde": false,
+        "speed": 0.100102
+      },
+      "Rahu": {
+        "longitude": 135.960264,
+        "sign_index": 4,
+        "degree_in_sign": 15.960264,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 315.960264,
+        "sign_index": 10,
+        "degree_in_sign": 15.960264,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

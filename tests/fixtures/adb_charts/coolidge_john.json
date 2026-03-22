@@ -1,0 +1,111 @@
+{
+  "adb_id": 43645,
+  "name": "Coolidge, John",
+  "given_name": "John Coolidge",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2417461.458333,
+    "year": 1906,
+    "month": 9,
+    "day": 7,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Northampton",
+    "country": "Massachusetts",
+    "lat": 42.333333,
+    "lon": -72.65
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coolidge,_John",
+  "source_notes": "David Dozier quotes \"Grace Coolidge and Her Era,\" given in AFA DX  No.205\\n",
+  "categories": [
+    "Traits : Personality : Passive/ Bland",
+    "Family : Childhood : Family noted",
+    "Vocation : Business : Business owner",
+    "Vocation : Food and Beverage : Other Food and Beverage"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 24.431098,
+    "lagna": 294.431098,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.553845,
+    "jd_ut": 2417461.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 141.831906,
+        "sign_index": 4,
+        "degree_in_sign": 21.831906,
+        "is_retrograde": false,
+        "speed": 0.97093
+      },
+      "Moon": {
+        "longitude": 20.127882,
+        "sign_index": 0,
+        "degree_in_sign": 20.127882,
+        "is_retrograde": false,
+        "speed": 15.382119
+      },
+      "Mars": {
+        "longitude": 124.546681,
+        "sign_index": 4,
+        "degree_in_sign": 4.546681,
+        "is_retrograde": false,
+        "speed": 0.6344
+      },
+      "Mercury": {
+        "longitude": 127.528933,
+        "sign_index": 4,
+        "degree_in_sign": 7.528933,
+        "is_retrograde": false,
+        "speed": 1.728281
+      },
+      "Jupiter": {
+        "longitude": 74.420399,
+        "sign_index": 2,
+        "degree_in_sign": 14.420399,
+        "is_retrograde": false,
+        "speed": 0.145707
+      },
+      "Venus": {
+        "longitude": 187.773965,
+        "sign_index": 6,
+        "degree_in_sign": 7.773965,
+        "is_retrograde": false,
+        "speed": 1.042258
+      },
+      "Saturn": {
+        "longitude": 318.870884,
+        "sign_index": 10,
+        "degree_in_sign": 18.870884,
+        "is_retrograde": true,
+        "speed": -0.076324
+      },
+      "Rahu": {
+        "longitude": 107.34441,
+        "sign_index": 3,
+        "degree_in_sign": 17.34441,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 287.34441,
+        "sign_index": 9,
+        "degree_in_sign": 17.34441,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

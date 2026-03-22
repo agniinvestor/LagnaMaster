@@ -1,0 +1,110 @@
+{
+  "adb_id": 58679,
+  "name": "Cabrel, Francis",
+  "given_name": "Francis Cabrel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434705.291667,
+    "year": 1953,
+    "month": 11,
+    "day": 23,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Agen",
+    "country": "France",
+    "lat": 44.2,
+    "lon": 0.616667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabrel,_Francis",
+  "source_notes": "Didier Geslain archive, 'chanteurs' pdf file, p. 41.\\nSame data in Collection Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.967385,
+    "lagna": 54.967385,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.213128,
+    "jd_ut": 2434705.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 217.988606,
+        "sign_index": 7,
+        "degree_in_sign": 7.988606,
+        "is_retrograde": false,
+        "speed": 1.010764
+      },
+      "Moon": {
+        "longitude": 75.713462,
+        "sign_index": 2,
+        "degree_in_sign": 15.713462,
+        "is_retrograde": false,
+        "speed": 15.026249
+      },
+      "Mars": {
+        "longitude": 170.509485,
+        "sign_index": 5,
+        "degree_in_sign": 20.509485,
+        "is_retrograde": false,
+        "speed": 0.615035
+      },
+      "Mercury": {
+        "longitude": 201.37453,
+        "sign_index": 6,
+        "degree_in_sign": 21.37453,
+        "is_retrograde": true,
+        "speed": -0.029919
+      },
+      "Jupiter": {
+        "longitude": 60.764384,
+        "sign_index": 2,
+        "degree_in_sign": 0.764384,
+        "is_retrograde": true,
+        "speed": -0.11656
+      },
+      "Venus": {
+        "longitude": 201.851695,
+        "sign_index": 6,
+        "degree_in_sign": 21.851695,
+        "is_retrograde": false,
+        "speed": 1.254041
+      },
+      "Saturn": {
+        "longitude": 190.585945,
+        "sign_index": 6,
+        "degree_in_sign": 10.585945,
+        "is_retrograde": false,
+        "speed": 0.112111
+      },
+      "Rahu": {
+        "longitude": 273.557829,
+        "sign_index": 9,
+        "degree_in_sign": 3.557829,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 93.557829,
+        "sign_index": 3,
+        "degree_in_sign": 3.557829,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

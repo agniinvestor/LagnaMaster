@@ -1,0 +1,111 @@
+{
+  "adb_id": 47848,
+  "name": "Charrier-Bardot, Nicolas",
+  "given_name": "Nicolas Charrier-Bardot",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2436944.548611,
+    "year": 1960,
+    "month": 1,
+    "day": 11,
+    "calendar": "g",
+    "time": "02:10",
+    "time_type": "s",
+    "hour": 2.166667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charrier-Bardot,_Nicolas",
+  "source_notes": "DATAsophia (No. 4, 1997) quotes news on date, with 2:10 AM.\\nSy Scholfield quotes \"2:30 a.m.\" in \"Brigitte Bardot Gives Birth To Boy,\" ''Daily Defender'' (Chicago, Illinois), 12 January 1960, page 4. \\nGeslain database (Excel file) has 2:00 AM.\\nA [https://www.youtube.com/watch?v=E9wAJYF8Cqg Youtube video] published on 1 May 2025 claims a birth time of 13:45 (1.45 PM) without naming a source.\\nBorn in 16th arrondissement of Paris (Paddy de Jabrun).\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Only child",
+    "Family : Childhood : Parents divorced",
+    "Family : Parenting : Kids 1-3"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 11.995153,
+    "lagna": 161.995153,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.298751,
+    "jd_ut": 2436944.548611,
+    "planets": {
+      "Sun": {
+        "longitude": 266.51878,
+        "sign_index": 8,
+        "degree_in_sign": 26.51878,
+        "is_retrograde": false,
+        "speed": 1.018743
+      },
+      "Moon": {
+        "longitude": 53.660794,
+        "sign_index": 1,
+        "degree_in_sign": 23.660794,
+        "is_retrograde": false,
+        "speed": 9.641155
+      },
+      "Mars": {
+        "longitude": 244.371872,
+        "sign_index": 8,
+        "degree_in_sign": 4.371872,
+        "is_retrograde": false,
+        "speed": 0.736175
+      },
+      "Mercury": {
+        "longitude": 257.0118,
+        "sign_index": 8,
+        "degree_in_sign": 17.0118,
+        "is_retrograde": false,
+        "speed": 1.562482
+      },
+      "Jupiter": {
+        "longitude": 237.603196,
+        "sign_index": 7,
+        "degree_in_sign": 27.603196,
+        "is_retrograde": false,
+        "speed": 0.211556
+      },
+      "Venus": {
+        "longitude": 227.119402,
+        "sign_index": 7,
+        "degree_in_sign": 17.119402,
+        "is_retrograde": false,
+        "speed": 1.204639
+      },
+      "Saturn": {
+        "longitude": 257.341692,
+        "sign_index": 8,
+        "degree_in_sign": 17.341692,
+        "is_retrograde": false,
+        "speed": 0.117123
+      },
+      "Rahu": {
+        "longitude": 154.895006,
+        "sign_index": 5,
+        "degree_in_sign": 4.895006,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 334.895006,
+        "sign_index": 11,
+        "degree_in_sign": 4.895006,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

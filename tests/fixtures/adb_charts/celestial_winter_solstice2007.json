@@ -1,0 +1,106 @@
+{
+  "adb_id": 54432,
+  "name": "Celestial: Winter Solstice2007",
+  "given_name": "Celestial: Winter Solstice2007",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2454456.755556,
+    "year": 2007,
+    "month": 12,
+    "day": 22,
+    "calendar": "g",
+    "time": "01:08",
+    "time_type": "s",
+    "hour": 1.133333,
+    "time_unknown": false,
+    "place": "Washington Monument",
+    "country": "District of Columbia",
+    "lat": 38.883333,
+    "lon": -77.033333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celestial:_Winter_Solstice2007",
+  "source_notes": "PT quotes Solar Fire for calculation\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.480678,
+    "lagna": 144.480678,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.968454,
+    "jd_ut": 2454456.755556,
+    "planets": {
+      "Sun": {
+        "longitude": 246.029469,
+        "sign_index": 8,
+        "degree_in_sign": 6.029469,
+        "is_retrograde": false,
+        "speed": 1.018074
+      },
+      "Moon": {
+        "longitude": 40.365441,
+        "sign_index": 1,
+        "degree_in_sign": 10.365441,
+        "is_retrograde": false,
+        "speed": 11.358921
+      },
+      "Mars": {
+        "longitude": 69.659022,
+        "sign_index": 2,
+        "degree_in_sign": 9.659022,
+        "is_retrograde": true,
+        "speed": -0.395225
+      },
+      "Mercury": {
+        "longitude": 248.636973,
+        "sign_index": 8,
+        "degree_in_sign": 8.636973,
+        "is_retrograde": false,
+        "speed": 1.590053
+      },
+      "Jupiter": {
+        "longitude": 246.811805,
+        "sign_index": 8,
+        "degree_in_sign": 6.811805,
+        "is_retrograde": false,
+        "speed": 0.229325
+      },
+      "Venus": {
+        "longitude": 205.797557,
+        "sign_index": 6,
+        "degree_in_sign": 25.797557,
+        "is_retrograde": false,
+        "speed": 1.198341
+      },
+      "Saturn": {
+        "longitude": 134.590519,
+        "sign_index": 4,
+        "degree_in_sign": 14.590519,
+        "is_retrograde": true,
+        "speed": -0.00497
+      },
+      "Rahu": {
+        "longitude": 306.887651,
+        "sign_index": 10,
+        "degree_in_sign": 6.887651,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 126.887651,
+        "sign_index": 4,
+        "degree_in_sign": 6.887651,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 68326,
+  "name": "Chavrier, Christian",
+  "given_name": "Christian Chavrier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438835.270833,
+    "year": 1965,
+    "month": 3,
+    "day": 15,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "s",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "Les Mées",
+    "country": "France",
+    "lat": 44.033333,
+    "lon": 5.983333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chavrier,_Christian",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 189.\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.352414,
+    "lagna": 138.352414,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.37105,
+    "jd_ut": 2438835.270833,
+    "planets": {
+      "Sun": {
+        "longitude": 331.597682,
+        "sign_index": 11,
+        "degree_in_sign": 1.597682,
+        "is_retrograde": false,
+        "speed": 0.995469
+      },
+      "Moon": {
+        "longitude": 129.588931,
+        "sign_index": 4,
+        "degree_in_sign": 9.588931,
+        "is_retrograde": false,
+        "speed": 12.140723
+      },
+      "Mars": {
+        "longitude": 142.91713,
+        "sign_index": 4,
+        "degree_in_sign": 22.91713,
+        "is_retrograde": true,
+        "speed": -0.383246
+      },
+      "Mercury": {
+        "longitude": 348.296905,
+        "sign_index": 11,
+        "degree_in_sign": 18.296905,
+        "is_retrograde": false,
+        "speed": 1.557639
+      },
+      "Jupiter": {
+        "longitude": 29.019422,
+        "sign_index": 0,
+        "degree_in_sign": 29.019422,
+        "is_retrograde": false,
+        "speed": 0.175209
+      },
+      "Venus": {
+        "longitude": 324.638205,
+        "sign_index": 10,
+        "degree_in_sign": 24.638205,
+        "is_retrograde": false,
+        "speed": 1.245086
+      },
+      "Saturn": {
+        "longitude": 316.3284,
+        "sign_index": 10,
+        "degree_in_sign": 16.3284,
+        "is_retrograde": false,
+        "speed": 0.119176
+      },
+      "Rahu": {
+        "longitude": 54.701763,
+        "sign_index": 1,
+        "degree_in_sign": 24.701763,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 234.701763,
+        "sign_index": 7,
+        "degree_in_sign": 24.701763,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

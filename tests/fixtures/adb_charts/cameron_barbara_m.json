@@ -1,0 +1,111 @@
+{
+  "adb_id": 50607,
+  "name": "Cameron, Barbara M.",
+  "given_name": "Barbara M. Cameron",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2427642.634028,
+    "year": 1934,
+    "month": 7,
+    "day": 23,
+    "calendar": "g",
+    "time": "23:13",
+    "time_type": "d",
+    "hour": 23.216667,
+    "time_unknown": false,
+    "place": "Dalton",
+    "country": "Massachusetts",
+    "lat": 42.466667,
+    "lon": -73.166667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cameron,_Barbara_M.",
+  "source_notes": "Steinbrecher collection: L.Welsh quotes her g-c news\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 25.340155,
+    "lagna": 325.340155,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.943085,
+    "jd_ut": 2427642.634028,
+    "planets": {
+      "Sun": {
+        "longitude": 97.590691,
+        "sign_index": 3,
+        "degree_in_sign": 7.590691,
+        "is_retrograde": false,
+        "speed": 0.954684
+      },
+      "Moon": {
+        "longitude": 243.952747,
+        "sign_index": 8,
+        "degree_in_sign": 3.952747,
+        "is_retrograde": false,
+        "speed": 10.256453
+      },
+      "Mars": {
+        "longitude": 72.588708,
+        "sign_index": 2,
+        "degree_in_sign": 12.588708,
+        "is_retrograde": false,
+        "speed": 0.668545
+      },
+      "Mercury": {
+        "longitude": 81.305946,
+        "sign_index": 2,
+        "degree_in_sign": 21.305946,
+        "is_retrograde": false,
+        "speed": 0.16357
+      },
+      "Jupiter": {
+        "longitude": 173.000764,
+        "sign_index": 5,
+        "degree_in_sign": 23.000764,
+        "is_retrograde": false,
+        "speed": 0.116465
+      },
+      "Venus": {
+        "longitude": 67.493927,
+        "sign_index": 2,
+        "degree_in_sign": 7.493927,
+        "is_retrograde": false,
+        "speed": 1.194482
+      },
+      "Saturn": {
+        "longitude": 303.676641,
+        "sign_index": 10,
+        "degree_in_sign": 3.676641,
+        "is_retrograde": true,
+        "speed": -0.063295
+      },
+      "Rahu": {
+        "longitude": 287.822645,
+        "sign_index": 9,
+        "degree_in_sign": 17.822645,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 107.822645,
+        "sign_index": 3,
+        "degree_in_sign": 17.822645,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

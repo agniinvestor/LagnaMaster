@@ -1,0 +1,111 @@
+{
+  "adb_id": 100356,
+  "name": "Christensen, Jeff",
+  "given_name": "Jeff Christensen",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2436942.027083,
+    "year": 1960,
+    "month": 1,
+    "day": 8,
+    "calendar": "g",
+    "time": "06:39",
+    "time_type": "s",
+    "hour": 6.65,
+    "time_unknown": false,
+    "place": "Gibson City",
+    "country": "Illinois",
+    "lat": 40.466667,
+    "lon": -88.383333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christensen,_Jeff",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Gibson City Courier'' (Gibson City, Illinois), 14 January 1960, page 4.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Football",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 19.739304,
+    "lagna": 229.739304,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.298655,
+    "jd_ut": 2436942.027083,
+    "planets": {
+      "Sun": {
+        "longitude": 263.949612,
+        "sign_index": 8,
+        "degree_in_sign": 23.949612,
+        "is_retrograde": false,
+        "speed": 1.019042
+      },
+      "Moon": {
+        "longitude": 23.901367,
+        "sign_index": 0,
+        "degree_in_sign": 23.901367,
+        "is_retrograde": false,
+        "speed": 15.668993
+      },
+      "Mars": {
+        "longitude": 242.51773,
+        "sign_index": 8,
+        "degree_in_sign": 2.51773,
+        "is_retrograde": false,
+        "speed": 0.734477
+      },
+      "Mercury": {
+        "longitude": 253.094539,
+        "sign_index": 8,
+        "degree_in_sign": 13.094539,
+        "is_retrograde": false,
+        "speed": 1.544726
+      },
+      "Jupiter": {
+        "longitude": 237.067225,
+        "sign_index": 7,
+        "degree_in_sign": 27.067225,
+        "is_retrograde": false,
+        "speed": 0.213537
+      },
+      "Venus": {
+        "longitude": 224.085483,
+        "sign_index": 7,
+        "degree_in_sign": 14.085483,
+        "is_retrograde": false,
+        "speed": 1.201748
+      },
+      "Saturn": {
+        "longitude": 257.045781,
+        "sign_index": 8,
+        "degree_in_sign": 17.045781,
+        "is_retrograde": false,
+        "speed": 0.117565
+      },
+      "Rahu": {
+        "longitude": 155.028626,
+        "sign_index": 5,
+        "degree_in_sign": 5.028626,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 335.028626,
+        "sign_index": 11,
+        "degree_in_sign": 5.028626,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

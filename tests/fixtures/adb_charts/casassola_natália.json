@@ -1,0 +1,110 @@
+{
+  "adb_id": 103548,
+  "name": "Casassola, Natália",
+  "given_name": "Natália Casassola",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2446255.604167,
+    "year": 1985,
+    "month": 7,
+    "day": 8,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "s",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Passo Fundo (Rio Grande do Sul)",
+    "country": "Brazil",
+    "lat": -28.262778,
+    "lon": -52.406667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casassola,_Natália",
+  "source_notes": "Sy Scholfield found her natal chart on the BBB13 section of the Globo website. The chart does not display degrees but the Ascendant is in the first couple of degrees of Aries and the MC in the first couple of degrees of Capricorn, corresponding with a birth time of about 11:30 PM. [https://gshow.globo.com/bbb/bbb13/noticias/noticia/2013/02/bbb-astral-veja-mapa-de-natalia-e-saiba-os-que-astros-dizem-sobre-sister.html]. \\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Vocation : Beauty : Model",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 14.52506,
+    "lagna": 314.52506,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.654807,
+    "jd_ut": 2446255.604167,
+    "planets": {
+      "Sun": {
+        "longitude": 83.182979,
+        "sign_index": 2,
+        "degree_in_sign": 23.182979,
+        "is_retrograde": false,
+        "speed": 0.953355
+      },
+      "Moon": {
+        "longitude": 343.871277,
+        "sign_index": 11,
+        "degree_in_sign": 13.871277,
+        "is_retrograde": false,
+        "speed": 12.483211
+      },
+      "Mars": {
+        "longitude": 85.912799,
+        "sign_index": 2,
+        "degree_in_sign": 25.912799,
+        "is_retrograde": false,
+        "speed": 0.652613
+      },
+      "Mercury": {
+        "longitude": 109.1442,
+        "sign_index": 3,
+        "degree_in_sign": 19.1442,
+        "is_retrograde": false,
+        "speed": 1.185327
+      },
+      "Jupiter": {
+        "longitude": 291.529218,
+        "sign_index": 9,
+        "degree_in_sign": 21.529218,
+        "is_retrograde": true,
+        "speed": -0.098801
+      },
+      "Venus": {
+        "longitude": 39.327765,
+        "sign_index": 1,
+        "degree_in_sign": 9.327765,
+        "is_retrograde": false,
+        "speed": 1.080254
+      },
+      "Saturn": {
+        "longitude": 208.040663,
+        "sign_index": 6,
+        "degree_in_sign": 28.040663,
+        "is_retrograde": true,
+        "speed": -0.026621
+      },
+      "Rahu": {
+        "longitude": 21.483189,
+        "sign_index": 0,
+        "degree_in_sign": 21.483189,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 201.483189,
+        "sign_index": 6,
+        "degree_in_sign": 21.483189,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

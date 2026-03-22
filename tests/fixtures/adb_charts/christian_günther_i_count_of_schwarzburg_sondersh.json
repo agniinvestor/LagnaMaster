@@ -1,0 +1,108 @@
+{
+  "adb_id": 61316,
+  "name": "Christian Günther I, Count of Schwarzburg-Sondersh",
+  "given_name": "Count of Schwarzburg-Sondersh Christian Günther I",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2297553.448981,
+    "year": 1578,
+    "month": 5,
+    "day": 11,
+    "calendar": "j",
+    "time": "23:30",
+    "time_type": "l",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Sondershausen",
+    "country": "Germany",
+    "lat": 51.366667,
+    "lon": 10.866667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian_Günther_I,_Count_of_Schwarzburg-Sondersh",
+  "source_notes": "Sy Scholfield quotes \"Diplomataria et scriptores historiae Germanicae medii aevi\" by Georges Christoph Kreysig, Buder (Typis et sumtibus Pauli Emanuel Richteri, 1753), p. 710: \"Von Christan Günthern Graffen zu Schwartzburg ... ist anno 1578. Sonntags nach Exaudi den 11. Maii zwischen 11. und 12. Uhr in der Nacht zu Sondershausen gebohren.\"\\nTranslation: Christian Günther, Count of Schwarzburg ... was born on Sunday after Exaudi, 11 May 1578 between 11 and 12 o'clock at night in Sondershausen.\\nNote: 11 May 1578 OS was a Sunday.\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 13.548445,
+    "lagna": 253.548445,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.973187,
+    "jd_ut": 2297553.448981,
+    "planets": {
+      "Sun": {
+        "longitude": 42.264358,
+        "sign_index": 1,
+        "degree_in_sign": 12.264358,
+        "is_retrograde": false,
+        "speed": 0.959221
+      },
+      "Moon": {
+        "longitude": 99.694653,
+        "sign_index": 3,
+        "degree_in_sign": 9.694653,
+        "is_retrograde": false,
+        "speed": 14.52337
+      },
+      "Mars": {
+        "longitude": 313.934089,
+        "sign_index": 10,
+        "degree_in_sign": 13.934089,
+        "is_retrograde": false,
+        "speed": 0.66196
+      },
+      "Mercury": {
+        "longitude": 41.069219,
+        "sign_index": 1,
+        "degree_in_sign": 11.069219,
+        "is_retrograde": false,
+        "speed": 2.193085
+      },
+      "Jupiter": {
+        "longitude": 165.76385,
+        "sign_index": 5,
+        "degree_in_sign": 15.76385,
+        "is_retrograde": true,
+        "speed": -0.02862
+      },
+      "Venus": {
+        "longitude": 42.505785,
+        "sign_index": 1,
+        "degree_in_sign": 12.505785,
+        "is_retrograde": false,
+        "speed": 1.229466
+      },
+      "Saturn": {
+        "longitude": 275.577371,
+        "sign_index": 9,
+        "degree_in_sign": 5.577371,
+        "is_retrograde": true,
+        "speed": -0.028773
+      },
+      "Rahu": {
+        "longitude": 341.540575,
+        "sign_index": 11,
+        "degree_in_sign": 11.540575,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 161.540575,
+        "sign_index": 5,
+        "degree_in_sign": 11.540575,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

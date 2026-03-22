@@ -1,0 +1,117 @@
+{
+  "adb_id": 849,
+  "name": "Cenci, Beatrice",
+  "given_name": "Beatrice Cenci",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2297094.159769,
+    "year": 1577,
+    "month": 2,
+    "day": 6,
+    "calendar": "j",
+    "time": "16:40",
+    "time_type": "l",
+    "hour": 16.666667,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cenci,_Beatrice",
+  "source_notes": "LMR quotes biographer Corrado Ricci, \"Beatrice Cenci,\" (translated from the Italian, 1925, Vol 1 p.8) \"Beatrice, the fifth child, was born at the 23rd hour on Wednesday, the 6th day of February, 1577.\"  By Florentine time, the 23rd hour is one hour before sunset on the 6th.\\n(MA quotes Fagan for February 7, 1577, about sunset.  Eshelman has February 2 from another source.\\n",
+  "categories": [
+    "Family : Childhood : Abuse - Incest",
+    "Family : Childhood : Abuse - Physical/ Verbal",
+    "Family : Childhood : Family distant",
+    "Passions : Criminal Perpetrator : Executed",
+    "Passions : Criminal Perpetrator : Homicide involvement",
+    "Passions : Criminal Victim : Assault/ Battery victim",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Personal : Death : Unusual",
+    "Notable : Famous : Criminal cases",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 12.347153,
+    "lagna": 102.347153,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.955654,
+    "jd_ut": 2297094.159769,
+    "planets": {
+      "Sun": {
+        "longitude": 309.963363,
+        "sign_index": 10,
+        "degree_in_sign": 9.963363,
+        "is_retrograde": false,
+        "speed": 1.006287
+      },
+      "Moon": {
+        "longitude": 180.90969,
+        "sign_index": 6,
+        "degree_in_sign": 0.90969,
+        "is_retrograde": false,
+        "speed": 18.34981
+      },
+      "Mars": {
+        "longitude": 10.468211,
+        "sign_index": 0,
+        "degree_in_sign": 10.468211,
+        "is_retrograde": false,
+        "speed": 0.675326
+      },
+      "Mercury": {
+        "longitude": 307.179318,
+        "sign_index": 10,
+        "degree_in_sign": 7.179318,
+        "is_retrograde": false,
+        "speed": 1.812971
+      },
+      "Jupiter": {
+        "longitude": 142.0622,
+        "sign_index": 4,
+        "degree_in_sign": 22.0622,
+        "is_retrograde": true,
+        "speed": -0.125244
+      },
+      "Venus": {
+        "longitude": 341.38379,
+        "sign_index": 11,
+        "degree_in_sign": 11.38379,
+        "is_retrograde": false,
+        "speed": 1.221776
+      },
+      "Saturn": {
+        "longitude": 261.402051,
+        "sign_index": 8,
+        "degree_in_sign": 21.402051,
+        "is_retrograde": false,
+        "speed": 0.090498
+      },
+      "Rahu": {
+        "longitude": 5.879419,
+        "sign_index": 0,
+        "degree_in_sign": 5.879419,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 185.879419,
+        "sign_index": 6,
+        "degree_in_sign": 5.879419,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

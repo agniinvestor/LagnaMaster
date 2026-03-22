@@ -1,0 +1,108 @@
+{
+  "adb_id": 65813,
+  "name": "Chany, Pierre",
+  "given_name": "Pierre Chany",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423405.166667,
+    "year": 1922,
+    "month": 12,
+    "day": 16,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Langeac",
+    "country": "France",
+    "lat": 45.1,
+    "lon": 3.5
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chany,_Pierre",
+  "source_notes": "Didier Geslain archive, 'Cyclisme' pdf file, p. 9.\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 8.596727,
+    "lagna": 38.596727,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.781075,
+    "jd_ut": 2423405.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 241.152281,
+        "sign_index": 8,
+        "degree_in_sign": 1.152281,
+        "is_retrograde": false,
+        "speed": 1.018102
+      },
+      "Moon": {
+        "longitude": 216.402872,
+        "sign_index": 7,
+        "degree_in_sign": 6.402872,
+        "is_retrograde": false,
+        "speed": 13.975639
+      },
+      "Mars": {
+        "longitude": 310.97333,
+        "sign_index": 10,
+        "degree_in_sign": 10.97333,
+        "is_retrograde": false,
+        "speed": 0.734144
+      },
+      "Mercury": {
+        "longitude": 246.661723,
+        "sign_index": 8,
+        "degree_in_sign": 6.661723,
+        "is_retrograde": false,
+        "speed": 1.583047
+      },
+      "Jupiter": {
+        "longitude": 197.753013,
+        "sign_index": 6,
+        "degree_in_sign": 17.753013,
+        "is_retrograde": false,
+        "speed": 0.185864
+      },
+      "Venus": {
+        "longitude": 211.74348,
+        "sign_index": 7,
+        "degree_in_sign": 1.74348,
+        "is_retrograde": false,
+        "speed": 0.038484
+      },
+      "Saturn": {
+        "longitude": 175.655873,
+        "sign_index": 5,
+        "degree_in_sign": 25.655873,
+        "is_retrograde": false,
+        "speed": 0.072736
+      },
+      "Rahu": {
+        "longitude": 152.374854,
+        "sign_index": 5,
+        "degree_in_sign": 2.374854,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 332.374854,
+        "sign_index": 11,
+        "degree_in_sign": 2.374854,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

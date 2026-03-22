@@ -1,0 +1,108 @@
+{
+  "adb_id": 70814,
+  "name": "Cabre, Manuel",
+  "given_name": "Manuel Cabre",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411393.327269,
+    "year": 1890,
+    "month": 1,
+    "day": 25,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Barcelona",
+    "country": "Spain",
+    "lat": 41.383333,
+    "lon": 2.183333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabre,_Manuel",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 25.740531,
+    "lagna": 115.740531,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.321874,
+    "jd_ut": 2411393.327269,
+    "planets": {
+      "Sun": {
+        "longitude": 283.54862,
+        "sign_index": 9,
+        "degree_in_sign": 13.54862,
+        "is_retrograde": false,
+        "speed": 1.016447
+      },
+      "Moon": {
+        "longitude": 348.376268,
+        "sign_index": 11,
+        "degree_in_sign": 18.376268,
+        "is_retrograde": false,
+        "speed": 11.14971
+      },
+      "Mars": {
+        "longitude": 201.203643,
+        "sign_index": 6,
+        "degree_in_sign": 21.203643,
+        "is_retrograde": false,
+        "speed": 0.523405
+      },
+      "Mercury": {
+        "longitude": 291.89245,
+        "sign_index": 9,
+        "degree_in_sign": 21.89245,
+        "is_retrograde": true,
+        "speed": -0.903213
+      },
+      "Jupiter": {
+        "longitude": 271.309619,
+        "sign_index": 9,
+        "degree_in_sign": 1.309619,
+        "is_retrograde": false,
+        "speed": 0.231767
+      },
+      "Venus": {
+        "longitude": 277.827538,
+        "sign_index": 9,
+        "degree_in_sign": 7.827538,
+        "is_retrograde": false,
+        "speed": 1.255921
+      },
+      "Saturn": {
+        "longitude": 130.041174,
+        "sign_index": 4,
+        "degree_in_sign": 10.041174,
+        "is_retrograde": true,
+        "speed": -0.067683
+      },
+      "Rahu": {
+        "longitude": 68.90748,
+        "sign_index": 2,
+        "degree_in_sign": 8.90748,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 248.90748,
+        "sign_index": 8,
+        "degree_in_sign": 8.90748,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

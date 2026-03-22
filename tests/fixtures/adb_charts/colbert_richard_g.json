@@ -1,0 +1,114 @@
+{
+  "adb_id": 103786,
+  "name": "Colbert, Richard G.",
+  "given_name": "Richard G. Colbert",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420541.28125,
+    "year": 1915,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "13:45",
+    "time_type": "s",
+    "hour": 13.75,
+    "time_unknown": false,
+    "place": "Luzerne (Fayette County)",
+    "country": "Pennsylvania",
+    "lat": 40.0,
+    "lon": -79.966667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colbert,_Richard_G.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Teacher",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 18.597828,
+    "lagna": 48.597828,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.671585,
+    "jd_ut": 2420541.28125,
+    "planets": {
+      "Sun": {
+        "longitude": 300.313527,
+        "sign_index": 10,
+        "degree_in_sign": 0.313527,
+        "is_retrograde": false,
+        "speed": 1.01135
+      },
+      "Moon": {
+        "longitude": 282.187662,
+        "sign_index": 9,
+        "degree_in_sign": 12.187662,
+        "is_retrograde": false,
+        "speed": 10.240009
+      },
+      "Mars": {
+        "longitude": 287.883992,
+        "sign_index": 9,
+        "degree_in_sign": 17.883992,
+        "is_retrograde": false,
+        "speed": 0.783177
+      },
+      "Mercury": {
+        "longitude": 315.447773,
+        "sign_index": 10,
+        "degree_in_sign": 15.447773,
+        "is_retrograde": true,
+        "speed": -0.002747
+      },
+      "Jupiter": {
+        "longitude": 309.410693,
+        "sign_index": 10,
+        "degree_in_sign": 9.410693,
+        "is_retrograde": false,
+        "speed": 0.239714
+      },
+      "Venus": {
+        "longitude": 253.611644,
+        "sign_index": 8,
+        "degree_in_sign": 13.611644,
+        "is_retrograde": false,
+        "speed": 1.044875
+      },
+      "Saturn": {
+        "longitude": 62.86046,
+        "sign_index": 2,
+        "degree_in_sign": 2.86046,
+        "is_retrograde": true,
+        "speed": -0.025063
+      },
+      "Rahu": {
+        "longitude": 304.138129,
+        "sign_index": 10,
+        "degree_in_sign": 4.138129,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 124.138129,
+        "sign_index": 4,
+        "degree_in_sign": 4.138129,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

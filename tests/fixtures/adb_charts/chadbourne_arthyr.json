@@ -1,0 +1,109 @@
+{
+  "adb_id": 47320,
+  "name": "Chadbourne, Arthyr",
+  "given_name": "Arthyr Chadbourne",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429833.720139,
+    "year": 1940,
+    "month": 7,
+    "day": 23,
+    "calendar": "g",
+    "time": "01:17",
+    "time_type": "d",
+    "hour": 1.283333,
+    "time_unknown": false,
+    "place": "York Beach",
+    "country": "Maine",
+    "lat": 43.166667,
+    "lon": -70.616667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chadbourne,_Arthyr",
+  "source_notes": "LMR quotes him from email (ACT) 6/2000\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 16.102998,
+    "lagna": 16.102998,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.026859,
+    "jd_ut": 2429833.720139,
+    "planets": {
+      "Sun": {
+        "longitude": 97.159148,
+        "sign_index": 3,
+        "degree_in_sign": 7.159148,
+        "is_retrograde": false,
+        "speed": 0.954616
+      },
+      "Moon": {
+        "longitude": 320.837844,
+        "sign_index": 10,
+        "degree_in_sign": 20.837844,
+        "is_retrograde": false,
+        "speed": 8.822367
+      },
+      "Mars": {
+        "longitude": 109.542763,
+        "sign_index": 3,
+        "degree_in_sign": 19.542763,
+        "is_retrograde": false,
+        "speed": 0.634738
+      },
+      "Mercury": {
+        "longitude": 95.483499,
+        "sign_index": 3,
+        "degree_in_sign": 5.483499,
+        "is_retrograde": true,
+        "speed": -0.677428
+      },
+      "Jupiter": {
+        "longitude": 19.721879,
+        "sign_index": 0,
+        "degree_in_sign": 19.721879,
+        "is_retrograde": false,
+        "speed": 0.127818
+      },
+      "Venus": {
+        "longitude": 64.167352,
+        "sign_index": 2,
+        "degree_in_sign": 4.167352,
+        "is_retrograde": false,
+        "speed": 0.172992
+      },
+      "Saturn": {
+        "longitude": 20.694104,
+        "sign_index": 0,
+        "degree_in_sign": 20.694104,
+        "is_retrograde": false,
+        "speed": 0.058715
+      },
+      "Rahu": {
+        "longitude": 171.712453,
+        "sign_index": 5,
+        "degree_in_sign": 21.712453,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 351.712453,
+        "sign_index": 11,
+        "degree_in_sign": 21.712453,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

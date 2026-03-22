@@ -1,0 +1,115 @@
+{
+  "adb_id": 2609,
+  "name": "Cavell, Edith",
+  "given_name": "Edith Cavell",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2402574.604167,
+    "year": 1865,
+    "month": 12,
+    "day": 4,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "s",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Swardeston",
+    "country": "England",
+    "lat": 52.578889,
+    "lon": 1.249722
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavell,_Edith",
+  "source_notes": "Modern Astrology magazine quotes data supplied by family, 3/1933.  (Same in Sabian Symbols No.183)\\n",
+  "categories": [
+    "Family : Parenting : Primary care of elderly",
+    "Passions : Criminal Perpetrator : Civil/ Political",
+    "Passions : Criminal Perpetrator : Executed",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Nurse/ Nurse's Aids",
+    "Vocation : Travel : Adventurer",
+    "Notable : Famous : Historic figure",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 1.085679,
+    "lagna": 151.085679,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.984786,
+    "jd_ut": 2402574.604167,
+    "planets": {
+      "Sun": {
+        "longitude": 230.02501,
+        "sign_index": 7,
+        "degree_in_sign": 20.02501,
+        "is_retrograde": false,
+        "speed": 1.014906
+      },
+      "Moon": {
+        "longitude": 67.842781,
+        "sign_index": 2,
+        "degree_in_sign": 7.842781,
+        "is_retrograde": false,
+        "speed": 11.062014
+      },
+      "Mars": {
+        "longitude": 223.200936,
+        "sign_index": 7,
+        "degree_in_sign": 13.200936,
+        "is_retrograde": false,
+        "speed": 0.719844
+      },
+      "Mercury": {
+        "longitude": 250.85663,
+        "sign_index": 8,
+        "degree_in_sign": 10.85663,
+        "is_retrograde": false,
+        "speed": 1.115809
+      },
+      "Jupiter": {
+        "longitude": 252.102309,
+        "sign_index": 8,
+        "degree_in_sign": 12.102309,
+        "is_retrograde": false,
+        "speed": 0.222058
+      },
+      "Venus": {
+        "longitude": 209.933255,
+        "sign_index": 6,
+        "degree_in_sign": 29.933255,
+        "is_retrograde": false,
+        "speed": 1.252442
+      },
+      "Saturn": {
+        "longitude": 195.650286,
+        "sign_index": 6,
+        "degree_in_sign": 15.650286,
+        "is_retrograde": false,
+        "speed": 0.106742
+      },
+      "Rahu": {
+        "longitude": 176.230382,
+        "sign_index": 5,
+        "degree_in_sign": 26.230382,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 356.230382,
+        "sign_index": 11,
+        "degree_in_sign": 26.230382,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

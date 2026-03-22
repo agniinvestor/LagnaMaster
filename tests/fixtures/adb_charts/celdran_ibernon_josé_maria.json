@@ -1,0 +1,108 @@
+{
+  "adb_id": 75117,
+  "name": "Celdran Ibernon, José Maria",
+  "given_name": "José Maria Celdran Ibernon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404315.211435,
+    "year": 1870,
+    "month": 9,
+    "day": 9,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "l",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Murcia",
+    "country": "Spain",
+    "lat": 37.983333,
+    "lon": -1.116667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celdran_Ibernon,_José_Maria",
+  "source_notes": "Castellanos quotes BC [https://dl.dropboxusercontent.com/u/74292393/datos%20natales/Partida%20%20de%20nacimiento%20de%20Jos%C3%A9%20Mar%C3%ADa%20Celdr%C3%A1n%20Ibern%C3%B3n.jpg]\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 4.786175,
+    "lagna": 274.786175,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.051316,
+    "jd_ut": 2404315.211435,
+    "planets": {
+      "Sun": {
+        "longitude": 144.730915,
+        "sign_index": 4,
+        "degree_in_sign": 24.730915,
+        "is_retrograde": false,
+        "speed": 0.972277
+      },
+      "Moon": {
+        "longitude": 322.712051,
+        "sign_index": 10,
+        "degree_in_sign": 22.712051,
+        "is_retrograde": false,
+        "speed": 13.230136
+      },
+      "Mars": {
+        "longitude": 98.530253,
+        "sign_index": 3,
+        "degree_in_sign": 8.530253,
+        "is_retrograde": false,
+        "speed": 0.625928
+      },
+      "Mercury": {
+        "longitude": 171.48662,
+        "sign_index": 5,
+        "degree_in_sign": 21.48662,
+        "is_retrograde": false,
+        "speed": 0.902301
+      },
+      "Jupiter": {
+        "longitude": 62.438455,
+        "sign_index": 2,
+        "degree_in_sign": 2.438455,
+        "is_retrograde": false,
+        "speed": 0.107372
+      },
+      "Venus": {
+        "longitude": 122.126492,
+        "sign_index": 4,
+        "degree_in_sign": 2.126492,
+        "is_retrograde": false,
+        "speed": 1.226367
+      },
+      "Saturn": {
+        "longitude": 240.031448,
+        "sign_index": 8,
+        "degree_in_sign": 0.031448,
+        "is_retrograde": false,
+        "speed": 0.022643
+      },
+      "Rahu": {
+        "longitude": 83.991885,
+        "sign_index": 2,
+        "degree_in_sign": 23.991885,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 263.991885,
+        "sign_index": 8,
+        "degree_in_sign": 23.991885,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

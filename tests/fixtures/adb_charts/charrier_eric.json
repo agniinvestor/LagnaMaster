@@ -1,0 +1,109 @@
+{
+  "adb_id": 69595,
+  "name": "Charrier, Eric",
+  "given_name": "Eric Charrier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438339.416667,
+    "year": 1963,
+    "month": 11,
+    "day": 5,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Draguignan",
+    "country": "France",
+    "lat": 43.533333,
+    "lon": 6.466667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charrier,_Eric",
+  "source_notes": "Didier Geslain archive, 'sports divers' pdf file, p. 34.\\n",
+  "categories": [
+    "Personal : Death : Suicide",
+    "Vocation : Sports : Water sports"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 20.331862,
+    "lagna": 80.331862,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.352089,
+    "jd_ut": 2438339.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 199.414894,
+        "sign_index": 6,
+        "degree_in_sign": 19.414894,
+        "is_retrograde": false,
+        "speed": 1.002558
+      },
+      "Moon": {
+        "longitude": 80.469707,
+        "sign_index": 2,
+        "degree_in_sign": 20.469707,
+        "is_retrograde": false,
+        "speed": 13.542493
+      },
+      "Mars": {
+        "longitude": 224.741372,
+        "sign_index": 7,
+        "degree_in_sign": 14.741372,
+        "is_retrograde": false,
+        "speed": 0.728948
+      },
+      "Mercury": {
+        "longitude": 199.950365,
+        "sign_index": 6,
+        "degree_in_sign": 19.950365,
+        "is_retrograde": false,
+        "speed": 1.614913
+      },
+      "Jupiter": {
+        "longitude": 347.650566,
+        "sign_index": 11,
+        "degree_in_sign": 17.650566,
+        "is_retrograde": true,
+        "speed": -0.09474
+      },
+      "Venus": {
+        "longitude": 217.098656,
+        "sign_index": 7,
+        "degree_in_sign": 7.098656,
+        "is_retrograde": false,
+        "speed": 1.246208
+      },
+      "Saturn": {
+        "longitude": 293.298644,
+        "sign_index": 9,
+        "degree_in_sign": 23.298644,
+        "is_retrograde": false,
+        "speed": 0.025816
+      },
+      "Rahu": {
+        "longitude": 80.97809,
+        "sign_index": 2,
+        "degree_in_sign": 20.97809,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 260.97809,
+        "sign_index": 8,
+        "degree_in_sign": 20.97809,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

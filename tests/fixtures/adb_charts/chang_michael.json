@@ -1,0 +1,115 @@
+{
+  "adb_id": 852,
+  "name": "Chang, Michael",
+  "given_name": "Michael Chang",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441370.270833,
+    "year": 1972,
+    "month": 2,
+    "day": 22,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "s",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Hoboken",
+    "country": "New Jersey",
+    "lat": 40.75,
+    "lon": -74.033333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chang,_Michael",
+  "source_notes": "B.C. in hand from Eugene Moore 7/l990\\n",
+  "categories": [
+    "Traits : Personality : Principled strongly",
+    "Family : Childhood : Family extraordinarily supportive",
+    "Family : Childhood : Order of birth",
+    "Lifestyle : Social Life : Family",
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Politics : Activist/ social",
+    "Vocation : Sports : Tennis",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 28.038319,
+    "lagna": 58.038319,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.467987,
+    "jd_ut": 2441370.270833,
+    "planets": {
+      "Sun": {
+        "longitude": 309.774356,
+        "sign_index": 10,
+        "degree_in_sign": 9.774356,
+        "is_retrograde": false,
+        "speed": 1.006944
+      },
+      "Moon": {
+        "longitude": 53.94272,
+        "sign_index": 1,
+        "degree_in_sign": 23.94272,
+        "is_retrograde": false,
+        "speed": 13.265655
+      },
+      "Mars": {
+        "longitude": 14.573676,
+        "sign_index": 0,
+        "degree_in_sign": 14.573676,
+        "is_retrograde": false,
+        "speed": 0.659956
+      },
+      "Mercury": {
+        "longitude": 314.376086,
+        "sign_index": 10,
+        "degree_in_sign": 14.376086,
+        "is_retrograde": false,
+        "speed": 1.875816
+      },
+      "Jupiter": {
+        "longitude": 249.33487,
+        "sign_index": 8,
+        "degree_in_sign": 9.33487,
+        "is_retrograde": false,
+        "speed": 0.162468
+      },
+      "Venus": {
+        "longitude": 351.121029,
+        "sign_index": 11,
+        "degree_in_sign": 21.121029,
+        "is_retrograde": false,
+        "speed": 1.169168
+      },
+      "Saturn": {
+        "longitude": 36.574325,
+        "sign_index": 1,
+        "degree_in_sign": 6.574325,
+        "is_retrograde": false,
+        "speed": 0.04135
+      },
+      "Rahu": {
+        "longitude": 280.366934,
+        "sign_index": 9,
+        "degree_in_sign": 10.366934,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 100.366934,
+        "sign_index": 3,
+        "degree_in_sign": 10.366934,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

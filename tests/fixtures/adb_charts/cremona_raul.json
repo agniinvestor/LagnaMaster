@@ -1,0 +1,111 @@
+{
+  "adb_id": 71882,
+  "name": "Cremona, Raul",
+  "given_name": "Raul Cremona",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435788.444444,
+    "year": 1956,
+    "month": 11,
+    "day": 10,
+    "calendar": "g",
+    "time": "23:40",
+    "time_type": "s",
+    "hour": 23.666667,
+    "time_unknown": false,
+    "place": "Milan",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cremona,_Raul",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Magic",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 5.314067,
+    "lagna": 95.314067,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.254545,
+    "jd_ut": 2435788.444444,
+    "planets": {
+      "Sun": {
+        "longitude": 205.268964,
+        "sign_index": 6,
+        "degree_in_sign": 25.268964,
+        "is_retrograde": false,
+        "speed": 1.00566
+      },
+      "Moon": {
+        "longitude": 297.882849,
+        "sign_index": 9,
+        "degree_in_sign": 27.882849,
+        "is_retrograde": false,
+        "speed": 11.285714
+      },
+      "Mars": {
+        "longitude": 325.817061,
+        "sign_index": 10,
+        "degree_in_sign": 25.817061,
+        "is_retrograde": false,
+        "speed": 0.346034
+      },
+      "Mercury": {
+        "longitude": 204.102854,
+        "sign_index": 6,
+        "degree_in_sign": 24.102854,
+        "is_retrograde": false,
+        "speed": 1.607673
+      },
+      "Jupiter": {
+        "longitude": 152.343361,
+        "sign_index": 5,
+        "degree_in_sign": 2.343361,
+        "is_retrograde": false,
+        "speed": 0.16726
+      },
+      "Venus": {
+        "longitude": 168.930959,
+        "sign_index": 5,
+        "degree_in_sign": 18.930959,
+        "is_retrograde": false,
+        "speed": 1.211112
+      },
+      "Saturn": {
+        "longitude": 220.126638,
+        "sign_index": 7,
+        "degree_in_sign": 10.126638,
+        "is_retrograde": false,
+        "speed": 0.116008
+      },
+      "Rahu": {
+        "longitude": 216.159338,
+        "sign_index": 7,
+        "degree_in_sign": 6.159338,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 36.159338,
+        "sign_index": 1,
+        "degree_in_sign": 6.159338,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 19436,
+  "name": "Custer, Vin",
+  "given_name": "Vin Custer",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2422238.083333,
+    "year": 1919,
+    "month": 10,
+    "day": 6,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "d",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Jersey City",
+    "country": "New Jersey",
+    "lat": 40.733333,
+    "lon": -74.083333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Custer,_Vin",
+  "source_notes": "Edith Custer in Mercury Hour (4/1989).\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.818343,
+    "lagna": 181.818343,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.736456,
+    "jd_ut": 2422238.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 169.523077,
+        "sign_index": 5,
+        "degree_in_sign": 19.523077,
+        "is_retrograde": false,
+        "speed": 0.986089
+      },
+      "Moon": {
+        "longitude": 309.473566,
+        "sign_index": 10,
+        "degree_in_sign": 9.473566,
+        "is_retrograde": false,
+        "speed": 17.84196
+      },
+      "Mars": {
+        "longitude": 125.076329,
+        "sign_index": 4,
+        "degree_in_sign": 5.076329,
+        "is_retrograde": false,
+        "speed": 0.611524
+      },
+      "Mercury": {
+        "longitude": 176.371648,
+        "sign_index": 5,
+        "degree_in_sign": 26.371648,
+        "is_retrograde": false,
+        "speed": 1.661707
+      },
+      "Jupiter": {
+        "longitude": 110.188552,
+        "sign_index": 3,
+        "degree_in_sign": 20.188552,
+        "is_retrograde": false,
+        "speed": 0.158353
+      },
+      "Venus": {
+        "longitude": 138.468963,
+        "sign_index": 4,
+        "degree_in_sign": 18.468963,
+        "is_retrograde": false,
+        "speed": 0.081562
+      },
+      "Saturn": {
+        "longitude": 134.02167,
+        "sign_index": 4,
+        "degree_in_sign": 14.02167,
+        "is_retrograde": false,
+        "speed": 0.111246
+      },
+      "Rahu": {
+        "longitude": 214.221036,
+        "sign_index": 7,
+        "degree_in_sign": 4.221036,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 34.221036,
+        "sign_index": 1,
+        "degree_in_sign": 4.221036,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 56366,
+  "name": "Cratère, Marc-André",
+  "given_name": "Marc-André Cratère",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441716.857639,
+    "year": 1973,
+    "month": 2,
+    "day": 3,
+    "calendar": "g",
+    "time": "04:35",
+    "time_type": "s",
+    "hour": 4.583333,
+    "time_unknown": false,
+    "place": "Le Robert",
+    "country": "Martinique",
+    "lat": 14.683333,
+    "lon": -60.95
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cratère,_Marc-André",
+  "source_notes": "Marc Brun quoted BC.\\n",
+  "categories": [
+    "Vocation : Sports : Fencing"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 26.730381,
+    "lagna": 236.730381,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.48124,
+    "jd_ut": 2441716.857639,
+    "planets": {
+      "Sun": {
+        "longitude": 290.901343,
+        "sign_index": 9,
+        "degree_in_sign": 20.901343,
+        "is_retrograde": false,
+        "speed": 1.014635
+      },
+      "Moon": {
+        "longitude": 291.255951,
+        "sign_index": 9,
+        "degree_in_sign": 21.255951,
+        "is_retrograde": false,
+        "speed": 14.600309
+      },
+      "Mars": {
+        "longitude": 240.335368,
+        "sign_index": 8,
+        "degree_in_sign": 0.335368,
+        "is_retrograde": false,
+        "speed": 0.693785
+      },
+      "Mercury": {
+        "longitude": 294.918419,
+        "sign_index": 9,
+        "degree_in_sign": 24.918419,
+        "is_retrograde": false,
+        "speed": 1.773481
+      },
+      "Jupiter": {
+        "longitude": 272.081509,
+        "sign_index": 9,
+        "degree_in_sign": 2.081509,
+        "is_retrograde": false,
+        "speed": 0.227968
+      },
+      "Venus": {
+        "longitude": 274.734323,
+        "sign_index": 9,
+        "degree_in_sign": 4.734323,
+        "is_retrograde": false,
+        "speed": 1.251326
+      },
+      "Saturn": {
+        "longitude": 50.245326,
+        "sign_index": 1,
+        "degree_in_sign": 20.245326,
+        "is_retrograde": true,
+        "speed": -0.019294
+      },
+      "Rahu": {
+        "longitude": 262.000592,
+        "sign_index": 8,
+        "degree_in_sign": 22.000592,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 82.000592,
+        "sign_index": 2,
+        "degree_in_sign": 22.000592,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

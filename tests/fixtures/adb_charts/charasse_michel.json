@@ -1,0 +1,108 @@
+{
+  "adb_id": 90159,
+  "name": "Charasse, Michel",
+  "given_name": "Michel Charasse",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430183.489583,
+    "year": 1941,
+    "month": 7,
+    "day": 8,
+    "calendar": "g",
+    "time": "01:45",
+    "time_type": "d",
+    "hour": 1.75,
+    "time_unknown": false,
+    "place": "Chamalieres",
+    "country": "France",
+    "lat": 45.766667,
+    "lon": 3.15
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charasse,_Michel",
+  "source_notes": "Didier Geslain quoted bc.\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 12.277552,
+    "lagna": 342.277552,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.040233,
+    "jd_ut": 2430183.489583,
+    "planets": {
+      "Sun": {
+        "longitude": 82.384753,
+        "sign_index": 2,
+        "degree_in_sign": 22.384753,
+        "is_retrograde": false,
+        "speed": 0.952986
+      },
+      "Moon": {
+        "longitude": 250.688698,
+        "sign_index": 8,
+        "degree_in_sign": 10.688698,
+        "is_retrograde": false,
+        "speed": 10.286771
+      },
+      "Mars": {
+        "longitude": 340.245319,
+        "sign_index": 11,
+        "degree_in_sign": 10.245319,
+        "is_retrograde": false,
+        "speed": 0.558156
+      },
+      "Mercury": {
+        "longitude": 74.707101,
+        "sign_index": 2,
+        "degree_in_sign": 14.707101,
+        "is_retrograde": true,
+        "speed": -0.449393
+      },
+      "Jupiter": {
+        "longitude": 46.560844,
+        "sign_index": 1,
+        "degree_in_sign": 16.560844,
+        "is_retrograde": false,
+        "speed": 0.210934
+      },
+      "Venus": {
+        "longitude": 103.627503,
+        "sign_index": 3,
+        "degree_in_sign": 13.627503,
+        "is_retrograde": false,
+        "speed": 1.218767
+      },
+      "Saturn": {
+        "longitude": 32.071457,
+        "sign_index": 1,
+        "degree_in_sign": 2.071457,
+        "is_retrograde": false,
+        "speed": 0.097404
+      },
+      "Rahu": {
+        "longitude": 153.177446,
+        "sign_index": 5,
+        "degree_in_sign": 3.177446,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 333.177446,
+        "sign_index": 11,
+        "degree_in_sign": 3.177446,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

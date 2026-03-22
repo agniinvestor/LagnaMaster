@@ -1,0 +1,108 @@
+{
+  "adb_id": 64057,
+  "name": "Constantin, Alphonse",
+  "given_name": "Alphonse Constantin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425280.125,
+    "year": 1928,
+    "month": 2,
+    "day": 3,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Montluçon",
+    "country": "France",
+    "lat": 46.35,
+    "lon": 2.6
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Constantin,_Alphonse",
+  "source_notes": "Didier Geslain archive, 'Algérie' pdf file, p. 21.\\n",
+  "categories": [
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.060759,
+    "lagna": 67.060759,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.852759,
+    "jd_ut": 2425280.125,
+    "planets": {
+      "Sun": {
+        "longitude": 290.703735,
+        "sign_index": 9,
+        "degree_in_sign": 20.703735,
+        "is_retrograde": false,
+        "speed": 1.01394
+      },
+      "Moon": {
+        "longitude": 83.755725,
+        "sign_index": 2,
+        "degree_in_sign": 23.755725,
+        "is_retrograde": false,
+        "speed": 14.819317
+      },
+      "Mars": {
+        "longitude": 258.645685,
+        "sign_index": 8,
+        "degree_in_sign": 18.645685,
+        "is_retrograde": false,
+        "speed": 0.744082
+      },
+      "Mercury": {
+        "longitude": 307.439946,
+        "sign_index": 10,
+        "degree_in_sign": 7.439946,
+        "is_retrograde": false,
+        "speed": 1.490549
+      },
+      "Jupiter": {
+        "longitude": 339.333154,
+        "sign_index": 11,
+        "degree_in_sign": 9.333154,
+        "is_retrograde": false,
+        "speed": 0.198728
+      },
+      "Venus": {
+        "longitude": 253.911285,
+        "sign_index": 8,
+        "degree_in_sign": 13.911285,
+        "is_retrograde": false,
+        "speed": 1.214496
+      },
+      "Saturn": {
+        "longitude": 233.941686,
+        "sign_index": 7,
+        "degree_in_sign": 23.941686,
+        "is_retrograde": false,
+        "speed": 0.081535
+      },
+      "Rahu": {
+        "longitude": 53.016906,
+        "sign_index": 1,
+        "degree_in_sign": 23.016906,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 233.016906,
+        "sign_index": 7,
+        "degree_in_sign": 23.016906,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

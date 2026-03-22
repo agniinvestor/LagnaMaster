@@ -1,0 +1,108 @@
+{
+  "adb_id": 62975,
+  "name": "Chardonne, Jacques",
+  "given_name": "Jacques Chardonne",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409178.14625,
+    "year": 1884,
+    "month": 1,
+    "day": 2,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "l",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Barbezieux",
+    "country": "France",
+    "lat": 45.466667,
+    "lon": -0.15
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chardonne,_Jacques",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 90.\\n",
+  "categories": [
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 15.843389,
+    "lagna": 45.843389,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.237198,
+    "jd_ut": 2409178.14625,
+    "planets": {
+      "Sun": {
+        "longitude": 259.46915,
+        "sign_index": 8,
+        "degree_in_sign": 19.46915,
+        "is_retrograde": false,
+        "speed": 1.019587
+      },
+      "Moon": {
+        "longitude": 308.132524,
+        "sign_index": 10,
+        "degree_in_sign": 8.132524,
+        "is_retrograde": false,
+        "speed": 9.462362
+      },
+      "Mars": {
+        "longitude": 118.98027,
+        "sign_index": 3,
+        "degree_in_sign": 28.98027,
+        "is_retrograde": true,
+        "speed": -0.140493
+      },
+      "Mercury": {
+        "longitude": 278.499625,
+        "sign_index": 9,
+        "degree_in_sign": 8.499625,
+        "is_retrograde": false,
+        "speed": 1.205132
+      },
+      "Jupiter": {
+        "longitude": 99.545833,
+        "sign_index": 3,
+        "degree_in_sign": 9.545833,
+        "is_retrograde": true,
+        "speed": -0.119491
+      },
+      "Venus": {
+        "longitude": 284.896625,
+        "sign_index": 9,
+        "degree_in_sign": 14.896625,
+        "is_retrograde": false,
+        "speed": 1.244492
+      },
+      "Saturn": {
+        "longitude": 41.889179,
+        "sign_index": 1,
+        "degree_in_sign": 11.889179,
+        "is_retrograde": true,
+        "speed": -0.055692
+      },
+      "Rahu": {
+        "longitude": 186.294618,
+        "sign_index": 6,
+        "degree_in_sign": 6.294618,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 6.294618,
+        "sign_index": 0,
+        "degree_in_sign": 6.294618,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

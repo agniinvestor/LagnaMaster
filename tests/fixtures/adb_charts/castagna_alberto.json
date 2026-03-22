@@ -1,0 +1,111 @@
+{
+  "adb_id": 49752,
+  "name": "Castagna, Alberto",
+  "given_name": "Alberto Castagna",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431813.416667,
+    "year": 1945,
+    "month": 12,
+    "day": 23,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Castiglion Fiorentino",
+    "country": "Italy",
+    "lat": 43.333333,
+    "lon": 11.916667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castagna,_Alberto",
+  "source_notes": "Grazia Bordoni quotes birth certificate, DataNotizie #61\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : News journalist/ Anchor",
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 1.426473,
+    "lagna": 121.426473,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.102553,
+    "jd_ut": 2431813.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 248.639389,
+        "sign_index": 8,
+        "degree_in_sign": 8.639389,
+        "is_retrograde": false,
+        "speed": 1.018496
+      },
+      "Moon": {
+        "longitude": 131.705956,
+        "sign_index": 4,
+        "degree_in_sign": 11.705956,
+        "is_retrograde": false,
+        "speed": 12.184581
+      },
+      "Mars": {
+        "longitude": 97.64965,
+        "sign_index": 3,
+        "degree_in_sign": 7.64965,
+        "is_retrograde": true,
+        "speed": -0.259059
+      },
+      "Mercury": {
+        "longitude": 226.798656,
+        "sign_index": 7,
+        "degree_in_sign": 16.798656,
+        "is_retrograde": false,
+        "speed": 0.817395
+      },
+      "Jupiter": {
+        "longitude": 180.685124,
+        "sign_index": 6,
+        "degree_in_sign": 0.685124,
+        "is_retrograde": false,
+        "speed": 0.135695
+      },
+      "Venus": {
+        "longitude": 239.147445,
+        "sign_index": 7,
+        "degree_in_sign": 29.147445,
+        "is_retrograde": false,
+        "speed": 1.257836
+      },
+      "Saturn": {
+        "longitude": 89.874949,
+        "sign_index": 2,
+        "degree_in_sign": 29.874949,
+        "is_retrograde": true,
+        "speed": -0.073691
+      },
+      "Rahu": {
+        "longitude": 66.804242,
+        "sign_index": 2,
+        "degree_in_sign": 6.804242,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 246.804242,
+        "sign_index": 8,
+        "degree_in_sign": 6.804242,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 75183,
+  "name": "Cachimbal",
+  "given_name": "Cachimbal",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423889.097222,
+    "year": 1924,
+    "month": 4,
+    "day": 13,
+    "calendar": "g",
+    "time": "08:20",
+    "time_type": "s",
+    "hour": 8.333333,
+    "time_unknown": false,
+    "place": "Cartago",
+    "country": "Costa Rica",
+    "lat": 9.866667,
+    "lon": -83.916667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cachimbal",
+  "source_notes": "Castellanos quotes BC [https://dl.dropboxusercontent.com/u/74292393/datos%20natales/partida%20de%20bautismo%20de%20Cachimbal.jpg]\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 22.695569,
+    "lagna": 22.695569,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.799576,
+    "jd_ut": 2423889.097222,
+    "planets": {
+      "Sun": {
+        "longitude": 0.581095,
+        "sign_index": 0,
+        "degree_in_sign": 0.581095,
+        "is_retrograde": false,
+        "speed": 0.979198
+      },
+      "Moon": {
+        "longitude": 103.951951,
+        "sign_index": 3,
+        "degree_in_sign": 13.951951,
+        "is_retrograde": false,
+        "speed": 17.316732
+      },
+      "Mars": {
+        "longitude": 270.62002,
+        "sign_index": 9,
+        "degree_in_sign": 0.62002,
+        "is_retrograde": false,
+        "speed": 0.602004
+      },
+      "Mercury": {
+        "longitude": 19.748548,
+        "sign_index": 0,
+        "degree_in_sign": 19.748548,
+        "is_retrograde": false,
+        "speed": 1.284087
+      },
+      "Jupiter": {
+        "longitude": 237.016039,
+        "sign_index": 7,
+        "degree_in_sign": 27.016039,
+        "is_retrograde": true,
+        "speed": -0.02354
+      },
+      "Venus": {
+        "longitude": 45.942582,
+        "sign_index": 1,
+        "degree_in_sign": 15.942582,
+        "is_retrograde": false,
+        "speed": 1.028808
+      },
+      "Saturn": {
+        "longitude": 186.663289,
+        "sign_index": 6,
+        "degree_in_sign": 6.663289,
+        "is_retrograde": true,
+        "speed": -0.075787
+      },
+      "Rahu": {
+        "longitude": 126.730365,
+        "sign_index": 4,
+        "degree_in_sign": 6.730365,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.730365,
+        "sign_index": 10,
+        "degree_in_sign": 6.730365,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

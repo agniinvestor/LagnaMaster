@@ -1,0 +1,111 @@
+{
+  "adb_id": 52741,
+  "name": "Chiara, Piero",
+  "given_name": "Piero Chiara",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419850.0,
+    "year": 1913,
+    "month": 3,
+    "day": 23,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Luino",
+    "country": "Italy",
+    "lat": 46.0,
+    "lon": 8.733333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiara,_Piero",
+  "source_notes": "Ed Steinbrecher collection: Bordoni/2 errata of bordoni/1 from birth certificate\\nSy Scholfield quotes him for 12:30pm in a letter dated 27/1/1982 in \"Piero Chiara\" by Ciro Discepolo (Ricerca '90, 2011), p. 9: \"Ma quel che mi ha sorpreso di più nel Suo scritto, è la supposizione di una mia nascita \"un po' posteriori alle dodici\". In effetti, benché io dica solitamente d'essere nato il 23 marzo 1913 alle ore 12, sono nato, per la precisione, verso le 12 e mezza, almeno da quanto ho saputo da mio padre, che in attesa della mia nascita stava fuori dalla camera con l'orologio in mano.\"\\nAbridged translation: Although I usually say that I was born on 23 March 1913 at 12:00 [noon], I was born, to be precise, at about 12:30, at least from what I heard from my father who was waiting at my birth outside the room with the clock in his hand.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Law : Legal system employee",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.148211,
+    "lagna": 74.148211,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.645158,
+    "jd_ut": 2419850.0,
+    "planets": {
+      "Sun": {
+        "longitude": 339.614982,
+        "sign_index": 11,
+        "degree_in_sign": 9.614982,
+        "is_retrograde": false,
+        "speed": 0.990862
+      },
+      "Moon": {
+        "longitude": 173.749808,
+        "sign_index": 5,
+        "degree_in_sign": 23.749808,
+        "is_retrograde": false,
+        "speed": 18.570933
+      },
+      "Mars": {
+        "longitude": 302.133509,
+        "sign_index": 10,
+        "degree_in_sign": 2.133509,
+        "is_retrograde": false,
+        "speed": 0.773731
+      },
+      "Mercury": {
+        "longitude": 347.760772,
+        "sign_index": 11,
+        "degree_in_sign": 17.760772,
+        "is_retrograde": true,
+        "speed": -0.588643
+      },
+      "Jupiter": {
+        "longitude": 262.392167,
+        "sign_index": 8,
+        "degree_in_sign": 22.392167,
+        "is_retrograde": false,
+        "speed": 0.123345
+      },
+      "Venus": {
+        "longitude": 17.488132,
+        "sign_index": 0,
+        "degree_in_sign": 17.488132,
+        "is_retrograde": false,
+        "speed": 0.397978
+      },
+      "Saturn": {
+        "longitude": 37.078587,
+        "sign_index": 1,
+        "degree_in_sign": 7.078587,
+        "is_retrograde": false,
+        "speed": 0.088926
+      },
+      "Rahu": {
+        "longitude": 340.770571,
+        "sign_index": 11,
+        "degree_in_sign": 10.770571,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 160.770571,
+        "sign_index": 5,
+        "degree_in_sign": 10.770571,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

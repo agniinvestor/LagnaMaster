@@ -1,0 +1,110 @@
+{
+  "adb_id": 95135,
+  "name": "Campbell, Dave (1925)",
+  "given_name": "Dave (1925) Campbell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424224.21875,
+    "year": 1925,
+    "month": 3,
+    "day": 14,
+    "calendar": "g",
+    "time": "11:15",
+    "time_type": "s",
+    "hour": 11.25,
+    "time_unknown": false,
+    "place": "Waco",
+    "country": "Texas",
+    "lat": 31.55,
+    "lon": -97.15
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campbell,_Dave_(1925)",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 3.833994,
+    "lagna": 33.833994,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.812389,
+    "jd_ut": 2424224.21875,
+    "planets": {
+      "Sun": {
+        "longitude": 330.811662,
+        "sign_index": 11,
+        "degree_in_sign": 0.811662,
+        "is_retrograde": false,
+        "speed": 0.995998
+      },
+      "Moon": {
+        "longitude": 201.200723,
+        "sign_index": 6,
+        "degree_in_sign": 21.200723,
+        "is_retrograde": false,
+        "speed": 15.132249
+      },
+      "Mars": {
+        "longitude": 31.199524,
+        "sign_index": 1,
+        "degree_in_sign": 1.199524,
+        "is_retrograde": false,
+        "speed": 0.643859
+      },
+      "Mercury": {
+        "longitude": 339.539727,
+        "sign_index": 11,
+        "degree_in_sign": 9.539727,
+        "is_retrograde": false,
+        "speed": 1.963261
+      },
+      "Jupiter": {
+        "longitude": 265.024321,
+        "sign_index": 8,
+        "degree_in_sign": 25.024321,
+        "is_retrograde": false,
+        "speed": 0.152963
+      },
+      "Venus": {
+        "longitude": 320.519905,
+        "sign_index": 10,
+        "degree_in_sign": 20.519905,
+        "is_retrograde": false,
+        "speed": 1.244358
+      },
+      "Saturn": {
+        "longitude": 201.149113,
+        "sign_index": 6,
+        "degree_in_sign": 21.149113,
+        "is_retrograde": true,
+        "speed": -0.03402
+      },
+      "Rahu": {
+        "longitude": 108.971576,
+        "sign_index": 3,
+        "degree_in_sign": 18.971576,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 288.971576,
+        "sign_index": 9,
+        "degree_in_sign": 18.971576,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

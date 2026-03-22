@@ -1,0 +1,116 @@
+{
+  "adb_id": 210,
+  "name": "Colby, William Egan",
+  "given_name": "William Egan Colby",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422328.494444,
+    "year": 1920,
+    "month": 1,
+    "day": 4,
+    "calendar": "g",
+    "time": "17:52",
+    "time_type": "s",
+    "hour": 17.866667,
+    "time_unknown": false,
+    "place": "St.Paul",
+    "country": "Minnesota",
+    "lat": 44.95,
+    "lon": -93.1
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colby,_William_Egan",
+  "source_notes": "Contemporary American Horoscopes, Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Home : Many moves",
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Law : Attorney",
+    "Vocation : Law : CIA",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Government employee",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Awards : Medals"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 12.591661,
+    "lagna": 72.591661,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.739912,
+    "jd_ut": 2422328.494444,
+    "planets": {
+      "Sun": {
+        "longitude": 260.608202,
+        "sign_index": 8,
+        "degree_in_sign": 20.608202,
+        "is_retrograde": false,
+        "speed": 1.018908
+      },
+      "Moon": {
+        "longitude": 68.952388,
+        "sign_index": 2,
+        "degree_in_sign": 8.952388,
+        "is_retrograde": false,
+        "speed": 14.621469
+      },
+      "Mars": {
+        "longitude": 175.692395,
+        "sign_index": 5,
+        "degree_in_sign": 25.692395,
+        "is_retrograde": false,
+        "speed": 0.477181
+      },
+      "Mercury": {
+        "longitude": 242.555801,
+        "sign_index": 8,
+        "degree_in_sign": 2.555801,
+        "is_retrograde": false,
+        "speed": 1.426259
+      },
+      "Jupiter": {
+        "longitude": 113.905037,
+        "sign_index": 3,
+        "degree_in_sign": 23.905037,
+        "is_retrograde": true,
+        "speed": -0.093713
+      },
+      "Venus": {
+        "longitude": 217.968707,
+        "sign_index": 7,
+        "degree_in_sign": 7.968707,
+        "is_retrograde": false,
+        "speed": 1.177194
+      },
+      "Saturn": {
+        "longitude": 138.788996,
+        "sign_index": 4,
+        "degree_in_sign": 18.788996,
+        "is_retrograde": true,
+        "speed": -0.023174
+      },
+      "Rahu": {
+        "longitude": 209.429963,
+        "sign_index": 6,
+        "degree_in_sign": 29.429963,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 29.429963,
+        "sign_index": 0,
+        "degree_in_sign": 29.429963,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

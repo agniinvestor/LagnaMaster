@@ -1,0 +1,115 @@
+{
+  "adb_id": 54787,
+  "name": "Cassel, Vincent",
+  "given_name": "Vincent Cassel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439453.395833,
+    "year": 1966,
+    "month": 11,
+    "day": 23,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassel,_Vincent",
+  "source_notes": "Didier Geslain archive, 'acteurs et comédiens' pdf file, p. 51.\\nPaddy de Jabrun quotes birth certificate\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Mate - Age difference more than 15 yrs",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Number of Divorces",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 27.767102,
+    "lagna": 87.767102,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.394686,
+    "jd_ut": 2439453.395833,
+    "planets": {
+      "Sun": {
+        "longitude": 217.757002,
+        "sign_index": 7,
+        "degree_in_sign": 7.757002,
+        "is_retrograde": false,
+        "speed": 1.010668
+      },
+      "Moon": {
+        "longitude": 349.593331,
+        "sign_index": 11,
+        "degree_in_sign": 19.593331,
+        "is_retrograde": false,
+        "speed": 8.658822
+      },
+      "Mars": {
+        "longitude": 151.07964,
+        "sign_index": 5,
+        "degree_in_sign": 1.07964,
+        "is_retrograde": false,
+        "speed": 0.553431
+      },
+      "Mercury": {
+        "longitude": 204.492004,
+        "sign_index": 6,
+        "degree_in_sign": 24.492004,
+        "is_retrograde": true,
+        "speed": -0.543187
+      },
+      "Jupiter": {
+        "longitude": 101.081405,
+        "sign_index": 3,
+        "degree_in_sign": 11.081405,
+        "is_retrograde": true,
+        "speed": -0.008154
+      },
+      "Venus": {
+        "longitude": 221.445106,
+        "sign_index": 7,
+        "degree_in_sign": 11.445106,
+        "is_retrograde": false,
+        "speed": 1.256209
+      },
+      "Saturn": {
+        "longitude": 329.529232,
+        "sign_index": 10,
+        "degree_in_sign": 29.529232,
+        "is_retrograde": true,
+        "speed": -0.004955
+      },
+      "Rahu": {
+        "longitude": 21.946055,
+        "sign_index": 0,
+        "degree_in_sign": 21.946055,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 201.946055,
+        "sign_index": 6,
+        "degree_in_sign": 21.946055,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

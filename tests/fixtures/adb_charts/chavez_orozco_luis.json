@@ -1,0 +1,109 @@
+{
+  "adb_id": 72181,
+  "name": "Chavez Orozco, Luis",
+  "given_name": "Luis Chavez Orozco",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415532.698194,
+    "year": 1901,
+    "month": 5,
+    "day": 27,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Irapuato",
+    "country": "Mexico",
+    "lat": 20.683333,
+    "lon": -101.35
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chavez_Orozco,_Luis",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 9.724037,
+    "lagna": 249.724037,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.480111,
+    "jd_ut": 2415532.698194,
+    "planets": {
+      "Sun": {
+        "longitude": 43.665108,
+        "sign_index": 1,
+        "degree_in_sign": 13.665108,
+        "is_retrograde": false,
+        "speed": 0.95894
+      },
+      "Moon": {
+        "longitude": 166.457031,
+        "sign_index": 5,
+        "degree_in_sign": 16.457031,
+        "is_retrograde": false,
+        "speed": 7.517066
+      },
+      "Mars": {
+        "longitude": 134.007577,
+        "sign_index": 4,
+        "degree_in_sign": 14.007577,
+        "is_retrograde": false,
+        "speed": 0.424866
+      },
+      "Mercury": {
+        "longitude": 58.954352,
+        "sign_index": 1,
+        "degree_in_sign": 28.954352,
+        "is_retrograde": false,
+        "speed": 1.894815
+      },
+      "Jupiter": {
+        "longitude": 259.432572,
+        "sign_index": 8,
+        "degree_in_sign": 19.432572,
+        "is_retrograde": true,
+        "speed": -0.080951
+      },
+      "Venus": {
+        "longitude": 50.899877,
+        "sign_index": 1,
+        "degree_in_sign": 20.899877,
+        "is_retrograde": false,
+        "speed": 1.22861
+      },
+      "Saturn": {
+        "longitude": 263.112372,
+        "sign_index": 8,
+        "degree_in_sign": 23.112372,
+        "is_retrograde": true,
+        "speed": -0.047758
+      },
+      "Rahu": {
+        "longitude": 209.553471,
+        "sign_index": 6,
+        "degree_in_sign": 29.553471,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 29.553471,
+        "sign_index": 0,
+        "degree_in_sign": 29.553471,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

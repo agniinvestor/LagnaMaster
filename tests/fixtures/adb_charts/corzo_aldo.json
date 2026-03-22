@@ -1,0 +1,109 @@
+{
+  "adb_id": 96303,
+  "name": "Corzo, Aldo",
+  "given_name": "Aldo Corzo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2447666.850694,
+    "year": 1989,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "03:25",
+    "time_type": "s",
+    "hour": 3.416667,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corzo,_Aldo",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 29.653117,
+    "lagna": 329.653117,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.708777,
+    "jd_ut": 2447666.850694,
+    "planets": {
+      "Sun": {
+        "longitude": 35.588929,
+        "sign_index": 1,
+        "degree_in_sign": 5.588929,
+        "is_retrograde": false,
+        "speed": 0.961897
+      },
+      "Moon": {
+        "longitude": 210.184723,
+        "sign_index": 7,
+        "degree_in_sign": 0.184723,
+        "is_retrograde": false,
+        "speed": 8.937158
+      },
+      "Mars": {
+        "longitude": 79.385152,
+        "sign_index": 2,
+        "degree_in_sign": 19.385152,
+        "is_retrograde": false,
+        "speed": 0.61942
+      },
+      "Mercury": {
+        "longitude": 40.941409,
+        "sign_index": 1,
+        "degree_in_sign": 10.941409,
+        "is_retrograde": true,
+        "speed": -0.501484
+      },
+      "Jupiter": {
+        "longitude": 50.174982,
+        "sign_index": 1,
+        "degree_in_sign": 20.174982,
+        "is_retrograde": false,
+        "speed": 0.228602
+      },
+      "Venus": {
+        "longitude": 47.449739,
+        "sign_index": 1,
+        "degree_in_sign": 17.449739,
+        "is_retrograde": false,
+        "speed": 1.227575
+      },
+      "Saturn": {
+        "longitude": 259.623904,
+        "sign_index": 8,
+        "degree_in_sign": 19.623904,
+        "is_retrograde": true,
+        "speed": -0.041974
+      },
+      "Rahu": {
+        "longitude": 306.698379,
+        "sign_index": 10,
+        "degree_in_sign": 6.698379,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 126.698379,
+        "sign_index": 4,
+        "degree_in_sign": 6.698379,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

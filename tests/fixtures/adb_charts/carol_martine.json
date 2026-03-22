@@ -1,0 +1,111 @@
+{
+  "adb_id": 19554,
+  "name": "Carol, Martine",
+  "given_name": "Martine Carol",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422461.125,
+    "year": 1920,
+    "month": 5,
+    "day": 16,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "d",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Saint-Mandé",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.416667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carol,_Martine",
+  "source_notes": "Weiss Band I quotes B.C.\\nSy Scholfield quotes same data from an online transcription of the BC: \"Acte de naissance, 16 mai 1920, Saint-Mandé: Mourer Marie Louise Jeanne Nicolle, 16 mai 1920,  Légitime:  Le seize mai mil neuf cent vingt à seize heures est née au domicile de ses père et mère, 5 avenue Gambetta, Marie-Louise, Jeanne, Nicolle, du sexe féminin, fille de Mourer Jean Emile Arthur, trente quatre ans entrepreneur de transport et de Marguerite Louise Juliette Boué Debat son épouse, trente trois ans, sans profession. (. . . born at 16:00 hours . . .) https://web.archive.org/web/20100315200617/http://cgma2.wordpress.com/2009/05/16/16-mai-2/\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Number of Marriages",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 22.835924,
+    "lagna": 142.835924,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.744983,
+    "jd_ut": 2422461.125,
+    "planets": {
+      "Sun": {
+        "longitude": 32.664328,
+        "sign_index": 1,
+        "degree_in_sign": 2.664328,
+        "is_retrograde": false,
+        "speed": 0.963613
+      },
+      "Moon": {
+        "longitude": 9.097104,
+        "sign_index": 0,
+        "degree_in_sign": 9.097104,
+        "is_retrograde": false,
+        "speed": 13.129437
+      },
+      "Mars": {
+        "longitude": 180.07486,
+        "sign_index": 6,
+        "degree_in_sign": 0.07486,
+        "is_retrograde": true,
+        "speed": -0.205819
+      },
+      "Mercury": {
+        "longitude": 21.671945,
+        "sign_index": 0,
+        "degree_in_sign": 21.671945,
+        "is_retrograde": false,
+        "speed": 2.010284
+      },
+      "Jupiter": {
+        "longitude": 108.013248,
+        "sign_index": 3,
+        "degree_in_sign": 18.013248,
+        "is_retrograde": false,
+        "speed": 0.11795
+      },
+      "Venus": {
+        "longitude": 19.621925,
+        "sign_index": 0,
+        "degree_in_sign": 19.621925,
+        "is_retrograde": false,
+        "speed": 1.226332
+      },
+      "Saturn": {
+        "longitude": 132.146922,
+        "sign_index": 4,
+        "degree_in_sign": 12.146922,
+        "is_retrograde": false,
+        "speed": 0.016762
+      },
+      "Rahu": {
+        "longitude": 202.401592,
+        "sign_index": 6,
+        "degree_in_sign": 22.401592,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 22.401592,
+        "sign_index": 0,
+        "degree_in_sign": 22.401592,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 50827,
+  "name": "Cordy, Annie",
+  "given_name": "Annie Cordy",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425414.375,
+    "year": 1928,
+    "month": 6,
+    "day": 16,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "d",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Laeken",
+    "country": "Belgium",
+    "lat": 50.883333,
+    "lon": 4.35
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cordy,_Annie",
+  "source_notes": "Steinbrecher collection: Gauquelin ns vol 3 no 0385\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertain/Music : Dancer/ Teacher",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 26.149709,
+    "lagna": 236.149709,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.857891,
+    "jd_ut": 2425414.375,
+    "planets": {
+      "Sun": {
+        "longitude": 62.567878,
+        "sign_index": 2,
+        "degree_in_sign": 2.567878,
+        "is_retrograde": false,
+        "speed": 0.954963
+      },
+      "Moon": {
+        "longitude": 48.351355,
+        "sign_index": 1,
+        "degree_in_sign": 18.351355,
+        "is_retrograde": false,
+        "speed": 18.429452
+      },
+      "Mars": {
+        "longitude": 0.245405,
+        "sign_index": 0,
+        "degree_in_sign": 0.245405,
+        "is_retrograde": false,
+        "speed": 0.731914
+      },
+      "Mercury": {
+        "longitude": 79.64629,
+        "sign_index": 2,
+        "degree_in_sign": 19.64629,
+        "is_retrograde": true,
+        "speed": -0.015189
+      },
+      "Jupiter": {
+        "longitude": 9.649696,
+        "sign_index": 0,
+        "degree_in_sign": 9.649696,
+        "is_retrograde": false,
+        "speed": 0.18843
+      },
+      "Venus": {
+        "longitude": 58.514814,
+        "sign_index": 1,
+        "degree_in_sign": 28.514814,
+        "is_retrograde": false,
+        "speed": 1.22767
+      },
+      "Saturn": {
+        "longitude": 232.246919,
+        "sign_index": 7,
+        "degree_in_sign": 22.246919,
+        "is_retrograde": true,
+        "speed": -0.072346
+      },
+      "Rahu": {
+        "longitude": 45.902719,
+        "sign_index": 1,
+        "degree_in_sign": 15.902719,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 225.902719,
+        "sign_index": 7,
+        "degree_in_sign": 15.902719,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

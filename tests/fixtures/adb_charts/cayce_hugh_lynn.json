@@ -1,0 +1,111 @@
+{
+  "adb_id": 40896,
+  "name": "Cayce, Hugh Lynn",
+  "given_name": "Hugh Lynn Cayce",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2417651.385417,
+    "year": 1907,
+    "month": 3,
+    "day": 16,
+    "calendar": "g",
+    "time": "15:15",
+    "time_type": "s",
+    "hour": 15.25,
+    "time_unknown": false,
+    "place": "Bowling Green",
+    "country": "Kentucky",
+    "lat": 36.983333,
+    "lon": -86.45
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cayce,_Hugh_Lynn",
+  "source_notes": "Marcello Borges quotes a Cayce biography\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Family traumatic event",
+    "Family : Childhood : Order of birth",
+    "Vocation : Writers : Biographer"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 8.663141,
+    "lagna": 98.663141,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.561105,
+    "jd_ut": 2417651.385417,
+    "planets": {
+      "Sun": {
+        "longitude": 332.584277,
+        "sign_index": 11,
+        "degree_in_sign": 2.584277,
+        "is_retrograde": false,
+        "speed": 0.995597
+      },
+      "Moon": {
+        "longitude": 4.41879,
+        "sign_index": 0,
+        "degree_in_sign": 4.41879,
+        "is_retrograde": false,
+        "speed": 8.7149
+      },
+      "Mars": {
+        "longitude": 239.458249,
+        "sign_index": 7,
+        "degree_in_sign": 29.458249,
+        "is_retrograde": false,
+        "speed": 0.522971
+      },
+      "Mercury": {
+        "longitude": 335.328828,
+        "sign_index": 11,
+        "degree_in_sign": 5.328828,
+        "is_retrograde": true,
+        "speed": -0.875284
+      },
+      "Jupiter": {
+        "longitude": 69.024849,
+        "sign_index": 2,
+        "degree_in_sign": 9.024849,
+        "is_retrograde": false,
+        "speed": 0.060524
+      },
+      "Venus": {
+        "longitude": 288.77111,
+        "sign_index": 9,
+        "degree_in_sign": 18.77111,
+        "is_retrograde": false,
+        "speed": 1.141074
+      },
+      "Saturn": {
+        "longitude": 326.030844,
+        "sign_index": 10,
+        "degree_in_sign": 26.030844,
+        "is_retrograde": false,
+        "speed": 0.122626
+      },
+      "Rahu": {
+        "longitude": 97.279774,
+        "sign_index": 3,
+        "degree_in_sign": 7.279774,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 277.279774,
+        "sign_index": 9,
+        "degree_in_sign": 7.279774,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

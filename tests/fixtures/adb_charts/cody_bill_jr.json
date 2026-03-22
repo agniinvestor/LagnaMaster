@@ -1,0 +1,114 @@
+{
+  "adb_id": 99977,
+  "name": "Cody, Bill Jr.",
+  "given_name": "Bill Jr. Cody",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424259.752778,
+    "year": 1925,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "22:04",
+    "time_type": "s",
+    "hour": 22.066667,
+    "time_unknown": false,
+    "place": "Hollywood",
+    "country": "California",
+    "lat": 34.1,
+    "lon": -118.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cody,_Bill_Jr.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file, born at Hollywood Hospital.\\n",
+  "categories": [
+    "Diagnoses : Psychological : Depression",
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Widowed",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Child performer",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 28.864476,
+    "lagna": 208.864476,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.813747,
+    "jd_ut": 2424259.752778,
+    "planets": {
+      "Sun": {
+        "longitude": 5.856593,
+        "sign_index": 0,
+        "degree_in_sign": 5.856593,
+        "is_retrograde": false,
+        "speed": 0.976575
+      },
+      "Moon": {
+        "longitude": 318.151909,
+        "sign_index": 10,
+        "degree_in_sign": 18.151909,
+        "is_retrograde": false,
+        "speed": 17.864027
+      },
+      "Mars": {
+        "longitude": 54.003656,
+        "sign_index": 1,
+        "degree_in_sign": 24.003656,
+        "is_retrograde": false,
+        "speed": 0.638916
+      },
+      "Mercury": {
+        "longitude": 4.950729,
+        "sign_index": 0,
+        "degree_in_sign": 4.950729,
+        "is_retrograde": true,
+        "speed": -0.710342
+      },
+      "Jupiter": {
+        "longitude": 269.001118,
+        "sign_index": 8,
+        "degree_in_sign": 29.001118,
+        "is_retrograde": false,
+        "speed": 0.065447
+      },
+      "Venus": {
+        "longitude": 4.605755,
+        "sign_index": 0,
+        "degree_in_sign": 4.605755,
+        "is_retrograde": false,
+        "speed": 1.236677
+      },
+      "Saturn": {
+        "longitude": 199.146154,
+        "sign_index": 6,
+        "degree_in_sign": 19.146154,
+        "is_retrograde": true,
+        "speed": -0.07251
+      },
+      "Rahu": {
+        "longitude": 107.088554,
+        "sign_index": 3,
+        "degree_in_sign": 17.088554,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 287.088554,
+        "sign_index": 9,
+        "degree_in_sign": 17.088554,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

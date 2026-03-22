@@ -1,0 +1,109 @@
+{
+  "adb_id": 42836,
+  "name": "Caso, Laura",
+  "given_name": "Laura Caso",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2447725.14375,
+    "year": 1989,
+    "month": 7,
+    "day": 17,
+    "calendar": "g",
+    "time": "11:27",
+    "time_type": "d",
+    "hour": 11.45,
+    "time_unknown": false,
+    "place": "Waltham",
+    "country": "Massachusetts",
+    "lat": 42.383333,
+    "lon": -71.233333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caso,_Laura",
+  "source_notes": "McEvoy quotes B.C.\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Writers : Children's literature"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 17.220085,
+    "lagna": 137.220085,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.711006,
+    "jd_ut": 2447725.14375,
+    "planets": {
+      "Sun": {
+        "longitude": 91.304371,
+        "sign_index": 3,
+        "degree_in_sign": 1.304371,
+        "is_retrograde": false,
+        "speed": 0.953743
+      },
+      "Moon": {
+        "longitude": 257.453658,
+        "sign_index": 8,
+        "degree_in_sign": 17.453658,
+        "is_retrograde": false,
+        "speed": 17.532988
+      },
+      "Mars": {
+        "longitude": 115.656377,
+        "sign_index": 3,
+        "degree_in_sign": 25.656377,
+        "is_retrograde": false,
+        "speed": 0.626144
+      },
+      "Mercury": {
+        "longitude": 90.474604,
+        "sign_index": 3,
+        "degree_in_sign": 0.474604,
+        "is_retrograde": false,
+        "speed": 2.140973
+      },
+      "Jupiter": {
+        "longitude": 63.469847,
+        "sign_index": 2,
+        "degree_in_sign": 3.469847,
+        "is_retrograde": false,
+        "speed": 0.21663
+      },
+      "Venus": {
+        "longitude": 118.533601,
+        "sign_index": 3,
+        "degree_in_sign": 28.533601,
+        "is_retrograde": false,
+        "speed": 1.20913
+      },
+      "Saturn": {
+        "longitude": 255.812442,
+        "sign_index": 8,
+        "degree_in_sign": 15.812442,
+        "is_retrograde": true,
+        "speed": -0.069719
+      },
+      "Rahu": {
+        "longitude": 303.609312,
+        "sign_index": 10,
+        "degree_in_sign": 3.609312,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.609312,
+        "sign_index": 4,
+        "degree_in_sign": 3.609312,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

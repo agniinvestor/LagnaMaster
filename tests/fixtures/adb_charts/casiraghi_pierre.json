@@ -1,0 +1,112 @@
+{
+  "adb_id": 15118,
+  "name": "Casiraghi, Pierre",
+  "given_name": "Pierre Casiraghi",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2447043.531944,
+    "year": 1987,
+    "month": 9,
+    "day": 5,
+    "calendar": "g",
+    "time": "02:46",
+    "time_type": "d",
+    "hour": 2.766667,
+    "time_unknown": false,
+    "place": "Monte Carlo",
+    "country": "Monaco",
+    "lat": 43.75,
+    "lon": 7.416667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casiraghi,_Pierre",
+  "source_notes": "LMR quotes news on date. Sy Scholfield also quotes 2:46AM from \"People in The News,\" 5 September 1987, The Associated Press.\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family traumatic event",
+    "Family : Childhood : Order of birth",
+    "Family : Parenting : Kids 1-3",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 5.488044,
+    "lagna": 65.488044,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.68494,
+    "jd_ut": 2447043.531944,
+    "planets": {
+      "Sun": {
+        "longitude": 138.259552,
+        "sign_index": 4,
+        "degree_in_sign": 18.259552,
+        "is_retrograde": false,
+        "speed": 0.968837
+      },
+      "Moon": {
+        "longitude": 279.502745,
+        "sign_index": 9,
+        "degree_in_sign": 9.502745,
+        "is_retrograde": false,
+        "speed": 12.767151
+      },
+      "Mars": {
+        "longitude": 134.720441,
+        "sign_index": 4,
+        "degree_in_sign": 14.720441,
+        "is_retrograde": false,
+        "speed": 0.636876
+      },
+      "Mercury": {
+        "longitude": 152.111034,
+        "sign_index": 5,
+        "degree_in_sign": 2.111034,
+        "is_retrograde": false,
+        "speed": 1.676849
+      },
+      "Jupiter": {
+        "longitude": 5.612019,
+        "sign_index": 0,
+        "degree_in_sign": 5.612019,
+        "is_retrograde": true,
+        "speed": -0.053191
+      },
+      "Venus": {
+        "longitude": 141.749781,
+        "sign_index": 4,
+        "degree_in_sign": 21.749781,
+        "is_retrograde": false,
+        "speed": 1.241003
+      },
+      "Saturn": {
+        "longitude": 231.074079,
+        "sign_index": 7,
+        "degree_in_sign": 21.074079,
+        "is_retrograde": false,
+        "speed": 0.026895
+      },
+      "Rahu": {
+        "longitude": 339.7293,
+        "sign_index": 11,
+        "degree_in_sign": 9.7293,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 159.7293,
+        "sign_index": 5,
+        "degree_in_sign": 9.7293,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 58871,
+  "name": "Cortez, Jayne",
+  "given_name": "Jayne Cortez",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427567.822917,
+    "year": 1934,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "00:45",
+    "time_type": "s",
+    "hour": 0.75,
+    "time_unknown": false,
+    "place": "Fort Huachuca",
+    "country": "Arizona",
+    "lat": 31.55,
+    "lon": -110.35
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortez,_Jayne",
+  "source_notes": "Sy Scholfield quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ social",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 23.561994,
+    "lagna": 263.561994,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.940225,
+    "jd_ut": 2427567.822917,
+    "planets": {
+      "Sun": {
+        "longitude": 26.016163,
+        "sign_index": 0,
+        "degree_in_sign": 26.016163,
+        "is_retrograde": false,
+        "speed": 0.9665
+      },
+      "Moon": {
+        "longitude": 347.757431,
+        "sign_index": 11,
+        "degree_in_sign": 17.757431,
+        "is_retrograde": false,
+        "speed": 16.710359
+      },
+      "Mars": {
+        "longitude": 20.15752,
+        "sign_index": 0,
+        "degree_in_sign": 20.15752,
+        "is_retrograde": false,
+        "speed": 0.733926
+      },
+      "Mercury": {
+        "longitude": 22.56526,
+        "sign_index": 0,
+        "degree_in_sign": 22.56526,
+        "is_retrograde": false,
+        "speed": 2.142246
+      },
+      "Jupiter": {
+        "longitude": 171.759775,
+        "sign_index": 5,
+        "degree_in_sign": 21.759775,
+        "is_retrograde": true,
+        "speed": -0.088287
+      },
+      "Venus": {
+        "longitude": 341.325093,
+        "sign_index": 11,
+        "degree_in_sign": 11.325093,
+        "is_retrograde": false,
+        "speed": 1.086132
+      },
+      "Saturn": {
+        "longitude": 304.541801,
+        "sign_index": 10,
+        "degree_in_sign": 4.541801,
+        "is_retrograde": false,
+        "speed": 0.046934
+      },
+      "Rahu": {
+        "longitude": 291.787041,
+        "sign_index": 9,
+        "degree_in_sign": 21.787041,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 111.787041,
+        "sign_index": 3,
+        "degree_in_sign": 21.787041,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

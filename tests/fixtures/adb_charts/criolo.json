@@ -1,0 +1,112 @@
+{
+  "adb_id": 98881,
+  "name": "Criolo",
+  "given_name": "Criolo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442661.291667,
+    "year": 1975,
+    "month": 9,
+    "day": 5,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5525,
+    "lon": -46.624722
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Criolo",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Music : Vocalist/ Rapper"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 0.175241,
+    "lagna": 270.175241,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.517356,
+    "jd_ut": 2442661.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 139.07001,
+        "sign_index": 4,
+        "degree_in_sign": 19.07001,
+        "is_retrograde": false,
+        "speed": 0.970005
+      },
+      "Moon": {
+        "longitude": 137.955918,
+        "sign_index": 4,
+        "degree_in_sign": 17.955918,
+        "is_retrograde": false,
+        "speed": 12.873578
+      },
+      "Mars": {
+        "longitude": 49.224939,
+        "sign_index": 1,
+        "degree_in_sign": 19.224939,
+        "is_retrograde": false,
+        "speed": 0.538836
+      },
+      "Mercury": {
+        "longitude": 164.55305,
+        "sign_index": 5,
+        "degree_in_sign": 14.55305,
+        "is_retrograde": false,
+        "speed": 1.249153
+      },
+      "Jupiter": {
+        "longitude": 0.391557,
+        "sign_index": 0,
+        "degree_in_sign": 0.391557,
+        "is_retrograde": true,
+        "speed": -0.070934
+      },
+      "Venus": {
+        "longitude": 124.872263,
+        "sign_index": 4,
+        "degree_in_sign": 4.872263,
+        "is_retrograde": true,
+        "speed": -0.466499
+      },
+      "Saturn": {
+        "longitude": 95.336914,
+        "sign_index": 3,
+        "degree_in_sign": 5.336914,
+        "is_retrograde": false,
+        "speed": 0.105757
+      },
+      "Rahu": {
+        "longitude": 211.953109,
+        "sign_index": 7,
+        "degree_in_sign": 1.953109,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 31.953109,
+        "sign_index": 1,
+        "degree_in_sign": 1.953109,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

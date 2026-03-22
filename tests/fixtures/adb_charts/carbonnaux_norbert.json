@@ -1,0 +1,111 @@
+{
+  "adb_id": 2090,
+  "name": "Carbonnaux, Norbert",
+  "given_name": "Norbert Carbonnaux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421680.694444,
+    "year": 1918,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "05:40",
+    "time_type": "d",
+    "hour": 5.666667,
+    "time_unknown": false,
+    "place": "Neuilly sur Seine",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carbonnaux,_Norbert",
+  "source_notes": "B.R. in hand from Ed Steinbrecher. Petitallot quotes B.C., Cadran No. 46, November 1997\\nSame data from extract of BC in Didier Geslain archive, 'Cinema Realisateurs' pdf file, p. 51.\\n",
+  "categories": [
+    "Family : Relationship : Number of Divorces",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 17.492398,
+    "lagna": 287.492398,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.715146,
+    "jd_ut": 2421680.694444,
+    "planets": {
+      "Sun": {
+        "longitude": 343.975511,
+        "sign_index": 11,
+        "degree_in_sign": 13.975511,
+        "is_retrograde": false,
+        "speed": 0.98844
+      },
+      "Moon": {
+        "longitude": 169.717918,
+        "sign_index": 5,
+        "degree_in_sign": 19.717918,
+        "is_retrograde": false,
+        "speed": 10.409349
+      },
+      "Mars": {
+        "longitude": 146.288516,
+        "sign_index": 4,
+        "degree_in_sign": 26.288516,
+        "is_retrograde": true,
+        "speed": -0.342265
+      },
+      "Mercury": {
+        "longitude": 358.531568,
+        "sign_index": 11,
+        "degree_in_sign": 28.531568,
+        "is_retrograde": false,
+        "speed": 1.801574
+      },
+      "Jupiter": {
+        "longitude": 44.308737,
+        "sign_index": 1,
+        "degree_in_sign": 14.308737,
+        "is_retrograde": false,
+        "speed": 0.165829
+      },
+      "Venus": {
+        "longitude": 300.525016,
+        "sign_index": 10,
+        "degree_in_sign": 0.525016,
+        "is_retrograde": false,
+        "speed": 0.716312
+      },
+      "Saturn": {
+        "longitude": 105.032172,
+        "sign_index": 3,
+        "degree_in_sign": 15.032172,
+        "is_retrograde": true,
+        "speed": -0.022272
+      },
+      "Rahu": {
+        "longitude": 243.758239,
+        "sign_index": 8,
+        "degree_in_sign": 3.758239,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 63.758239,
+        "sign_index": 2,
+        "degree_in_sign": 3.758239,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

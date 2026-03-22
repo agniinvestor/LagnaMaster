@@ -1,0 +1,108 @@
+{
+  "adb_id": 98454,
+  "name": "Cody, Eddie",
+  "given_name": "Eddie Cody",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2435046.745139,
+    "year": 1954,
+    "month": 10,
+    "day": 30,
+    "calendar": "g",
+    "time": "23:53",
+    "time_type": "s",
+    "hour": 23.883333,
+    "time_unknown": false,
+    "place": "Memphis",
+    "country": "Tennessee",
+    "lat": 35.15,
+    "lon": -90.05
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cody,_Eddie",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Commercial Appeal'' (Memphis, Tennessee), 1 November 1954, page 31, born at Methodist Hospital, son of Mr. and Mrs. J. E. Cody.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 29.891071,
+    "lagna": 89.891071,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.226184,
+    "jd_ut": 2435046.745139,
+    "planets": {
+      "Sun": {
+        "longitude": 194.047537,
+        "sign_index": 6,
+        "degree_in_sign": 14.047537,
+        "is_retrograde": false,
+        "speed": 1.000257
+      },
+      "Moon": {
+        "longitude": 242.376047,
+        "sign_index": 8,
+        "degree_in_sign": 2.376047,
+        "is_retrograde": false,
+        "speed": 14.863544
+      },
+      "Mars": {
+        "longitude": 283.166596,
+        "sign_index": 9,
+        "degree_in_sign": 13.166596,
+        "is_retrograde": false,
+        "speed": 0.667601
+      },
+      "Mercury": {
+        "longitude": 190.968689,
+        "sign_index": 6,
+        "degree_in_sign": 10.968689,
+        "is_retrograde": true,
+        "speed": -1.230332
+      },
+      "Jupiter": {
+        "longitude": 96.249299,
+        "sign_index": 3,
+        "degree_in_sign": 6.249299,
+        "is_retrograde": false,
+        "speed": 0.054126
+      },
+      "Venus": {
+        "longitude": 216.213304,
+        "sign_index": 7,
+        "degree_in_sign": 6.213304,
+        "is_retrograde": true,
+        "speed": -0.223273
+      },
+      "Saturn": {
+        "longitude": 198.275747,
+        "sign_index": 6,
+        "degree_in_sign": 18.275747,
+        "is_retrograde": false,
+        "speed": 0.11994
+      },
+      "Rahu": {
+        "longitude": 255.463507,
+        "sign_index": 8,
+        "degree_in_sign": 15.463507,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 75.463507,
+        "sign_index": 2,
+        "degree_in_sign": 15.463507,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

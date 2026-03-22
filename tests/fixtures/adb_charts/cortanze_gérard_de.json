@@ -1,0 +1,111 @@
+{
+  "adb_id": 62981,
+  "name": "Cortanze, Gérard de",
+  "given_name": "Gérard de Cortanze",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432755.052083,
+    "year": 1948,
+    "month": 7,
+    "day": 22,
+    "calendar": "g",
+    "time": "14:15",
+    "time_type": "s",
+    "hour": 14.25,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortanze,_Gérard_de",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 107.\\n",
+  "categories": [
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Translator",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 20.882554,
+    "lagna": 170.882554,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.138558,
+    "jd_ut": 2432755.052083,
+    "planets": {
+      "Sun": {
+        "longitude": 96.471361,
+        "sign_index": 3,
+        "degree_in_sign": 6.471361,
+        "is_retrograde": false,
+        "speed": 0.954437
+      },
+      "Moon": {
+        "longitude": 292.381997,
+        "sign_index": 9,
+        "degree_in_sign": 22.381997,
+        "is_retrograde": false,
+        "speed": 15.320115
+      },
+      "Mars": {
+        "longitude": 159.975963,
+        "sign_index": 5,
+        "degree_in_sign": 9.975963,
+        "is_retrograde": false,
+        "speed": 0.589038
+      },
+      "Mercury": {
+        "longitude": 77.454505,
+        "sign_index": 2,
+        "degree_in_sign": 17.454505,
+        "is_retrograde": false,
+        "speed": 1.41765
+      },
+      "Jupiter": {
+        "longitude": 236.87964,
+        "sign_index": 7,
+        "degree_in_sign": 26.87964,
+        "is_retrograde": true,
+        "speed": -0.072809
+      },
+      "Venus": {
+        "longitude": 62.24288,
+        "sign_index": 2,
+        "degree_in_sign": 2.24288,
+        "is_retrograde": false,
+        "speed": 0.22902
+      },
+      "Saturn": {
+        "longitude": 119.540154,
+        "sign_index": 3,
+        "degree_in_sign": 29.540154,
+        "is_retrograde": false,
+        "speed": 0.120712
+      },
+      "Rahu": {
+        "longitude": 16.90504,
+        "sign_index": 0,
+        "degree_in_sign": 16.90504,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 196.90504,
+        "sign_index": 6,
+        "degree_in_sign": 16.90504,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

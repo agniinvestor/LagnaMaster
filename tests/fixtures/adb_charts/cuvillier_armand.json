@@ -1,0 +1,111 @@
+{
+  "adb_id": 63074,
+  "name": "Cuvillier, Armand",
+  "given_name": "Armand Cuvillier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2410548.076852,
+    "year": 1887,
+    "month": 10,
+    "day": 3,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuvillier,_Armand",
+  "source_notes": "\\nBirth and death certificates in Didier Geslain archive, 'Philosophes' pdf file, p. 34-35.\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Philosopher/ Humanist",
+    "Vocation : Humanities+Social Sciences : Philosopher",
+    "Vocation : Humanities+Social Sciences : Sociologist",
+    "Vocation : Writers : Religion/ Philosophy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 27.385675,
+    "lagna": 237.385675,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.289564,
+    "jd_ut": 2410548.076852,
+    "planets": {
+      "Sun": {
+        "longitude": 167.740234,
+        "sign_index": 5,
+        "degree_in_sign": 17.740234,
+        "is_retrograde": false,
+        "speed": 0.985137
+      },
+      "Moon": {
+        "longitude": 3.064312,
+        "sign_index": 0,
+        "degree_in_sign": 3.064312,
+        "is_retrograde": false,
+        "speed": 15.133584
+      },
+      "Mars": {
+        "longitude": 121.11682,
+        "sign_index": 4,
+        "degree_in_sign": 1.11682,
+        "is_retrograde": false,
+        "speed": 0.609744
+      },
+      "Mercury": {
+        "longitude": 183.927019,
+        "sign_index": 6,
+        "degree_in_sign": 3.927019,
+        "is_retrograde": false,
+        "speed": 1.51579
+      },
+      "Jupiter": {
+        "longitude": 196.238548,
+        "sign_index": 6,
+        "degree_in_sign": 16.238548,
+        "is_retrograde": false,
+        "speed": 0.204875
+      },
+      "Venus": {
+        "longitude": 149.697682,
+        "sign_index": 4,
+        "degree_in_sign": 29.697682,
+        "is_retrograde": true,
+        "speed": -0.372912
+      },
+      "Saturn": {
+        "longitude": 102.405221,
+        "sign_index": 3,
+        "degree_in_sign": 12.405221,
+        "is_retrograde": false,
+        "speed": 0.077191
+      },
+      "Rahu": {
+        "longitude": 113.69909,
+        "sign_index": 3,
+        "degree_in_sign": 23.69909,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 293.69909,
+        "sign_index": 9,
+        "degree_in_sign": 23.69909,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

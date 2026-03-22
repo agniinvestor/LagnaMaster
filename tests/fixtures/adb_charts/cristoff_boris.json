@@ -1,0 +1,116 @@
+{
+  "adb_id": 44628,
+  "name": "Cristoff, Boris",
+  "given_name": "Boris Cristoff",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2424415.875,
+    "year": 1925,
+    "month": 9,
+    "day": 22,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Sofia",
+    "country": "Bulgaria",
+    "lat": 42.683333,
+    "lon": 23.316667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cristoff,_Boris",
+  "source_notes": "LMR quotes him by email 3/2002, \"9:09 GMT with the legal corrections made.\" (Boris writes he was born at 11:00 AM in Sofia but Varna time was in use (minus 00:18; then convert to Greenwich with a minus 1h33m12s = 9:08 AM, rectified by one minute to 9:09 AM.)\\nEstadella email on 28 July 2016:  9.08 GMT is given in his website [http://www.boriscristoff.com.uy/]\\nIn fact EET was in use in Sofia in 1925.\\n",
+  "categories": [
+    "Traits : Mind : I.Q. high/ Mensa level",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Business : Consultant",
+    "Vocation : Computer : Web site design",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Teacher",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 7.687584,
+    "lagna": 187.687584,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.819716,
+    "jd_ut": 2424415.875,
+    "planets": {
+      "Sun": {
+        "longitude": 156.012594,
+        "sign_index": 5,
+        "degree_in_sign": 6.012594,
+        "is_retrograde": false,
+        "speed": 0.978924
+      },
+      "Moon": {
+        "longitude": 207.176401,
+        "sign_index": 6,
+        "degree_in_sign": 27.176401,
+        "is_retrograde": false,
+        "speed": 12.183823
+      },
+      "Mars": {
+        "longitude": 153.043916,
+        "sign_index": 5,
+        "degree_in_sign": 3.043916,
+        "is_retrograde": false,
+        "speed": 0.644244
+      },
+      "Mercury": {
+        "longitude": 143.786601,
+        "sign_index": 4,
+        "degree_in_sign": 23.786601,
+        "is_retrograde": false,
+        "speed": 1.779733
+      },
+      "Jupiter": {
+        "longitude": 260.141604,
+        "sign_index": 8,
+        "degree_in_sign": 20.141604,
+        "is_retrograde": false,
+        "speed": 0.041583
+      },
+      "Venus": {
+        "longitude": 194.641981,
+        "sign_index": 6,
+        "degree_in_sign": 14.641981,
+        "is_retrograde": false,
+        "speed": 1.183301
+      },
+      "Saturn": {
+        "longitude": 198.728061,
+        "sign_index": 6,
+        "degree_in_sign": 18.728061,
+        "is_retrograde": false,
+        "speed": 0.098293
+      },
+      "Rahu": {
+        "longitude": 98.815312,
+        "sign_index": 3,
+        "degree_in_sign": 8.815312,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 278.815312,
+        "sign_index": 9,
+        "degree_in_sign": 8.815312,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

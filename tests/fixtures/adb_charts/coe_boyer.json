@@ -1,0 +1,111 @@
+{
+  "adb_id": 10292,
+  "name": "Coe, Boyer",
+  "given_name": "Boyer Coe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432051.649306,
+    "year": 1946,
+    "month": 8,
+    "day": 18,
+    "calendar": "g",
+    "time": "21:35",
+    "time_type": "s",
+    "hour": 21.583333,
+    "time_unknown": false,
+    "place": "Lake Charles",
+    "country": "Louisiana",
+    "lat": 30.233333,
+    "lon": -93.216667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coe,_Boyer",
+  "source_notes": "B.C. in hand from Bob Landry\\n",
+  "categories": [
+    "Traits : Body : Body builder",
+    "Lifestyle : Work : Skills - singular/specialist",
+    "Vocation : Beauty : Beauty Queen/ King",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 8.732217,
+    "lagna": 338.732217,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.111662,
+    "jd_ut": 2432051.649306,
+    "planets": {
+      "Sun": {
+        "longitude": 122.442931,
+        "sign_index": 4,
+        "degree_in_sign": 2.442931,
+        "is_retrograde": false,
+        "speed": 0.962227
+      },
+      "Moon": {
+        "longitude": 21.182122,
+        "sign_index": 0,
+        "degree_in_sign": 21.182122,
+        "is_retrograde": false,
+        "speed": 16.466919
+      },
+      "Mars": {
+        "longitude": 162.947655,
+        "sign_index": 5,
+        "degree_in_sign": 12.947655,
+        "is_retrograde": false,
+        "speed": 0.636028
+      },
+      "Mercury": {
+        "longitude": 104.132528,
+        "sign_index": 3,
+        "degree_in_sign": 14.132528,
+        "is_retrograde": false,
+        "speed": 0.754831
+      },
+      "Jupiter": {
+        "longitude": 180.03924,
+        "sign_index": 6,
+        "degree_in_sign": 0.03924,
+        "is_retrograde": false,
+        "speed": 0.158427
+      },
+      "Venus": {
+        "longitude": 167.510609,
+        "sign_index": 5,
+        "degree_in_sign": 17.510609,
+        "is_retrograde": false,
+        "speed": 1.068034
+      },
+      "Saturn": {
+        "longitude": 98.970821,
+        "sign_index": 3,
+        "degree_in_sign": 8.970821,
+        "is_retrograde": false,
+        "speed": 0.122361
+      },
+      "Rahu": {
+        "longitude": 54.179803,
+        "sign_index": 1,
+        "degree_in_sign": 24.179803,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 234.179803,
+        "sign_index": 7,
+        "degree_in_sign": 24.179803,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

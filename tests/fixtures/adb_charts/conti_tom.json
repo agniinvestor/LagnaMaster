@@ -1,0 +1,114 @@
+{
+  "adb_id": 45700,
+  "name": "Conti, Tom",
+  "given_name": "Tom Conti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430320.895833,
+    "year": 1941,
+    "month": 11,
+    "day": 22,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "d",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Paisley",
+    "country": "Scotland",
+    "lat": 55.833333,
+    "lon": -4.433333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conti,_Tom",
+  "source_notes": "Frank C. Clifford quotes Caroline Gerard from B.C., \"British Entertainers,\" 1997.\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids 1-3",
+    "Family : Parenting : Kids - Noted",
+    "Lifestyle : Social Life : Hobbies, games",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Notable : Awards : Tony"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 27.031902,
+    "lagna": 207.031902,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.045486,
+    "jd_ut": 2430320.895833,
+    "planets": {
+      "Sun": {
+        "longitude": 216.655415,
+        "sign_index": 7,
+        "degree_in_sign": 6.655415,
+        "is_retrograde": false,
+        "speed": 1.010905
+      },
+      "Moon": {
+        "longitude": 264.786476,
+        "sign_index": 8,
+        "degree_in_sign": 24.786476,
+        "is_retrograde": false,
+        "speed": 14.219334
+      },
+      "Mars": {
+        "longitude": 348.9566,
+        "sign_index": 11,
+        "degree_in_sign": 18.9566,
+        "is_retrograde": false,
+        "speed": 0.150755
+      },
+      "Mercury": {
+        "longitude": 200.693358,
+        "sign_index": 6,
+        "degree_in_sign": 20.693358,
+        "is_retrograde": false,
+        "speed": 1.484937
+      },
+      "Jupiter": {
+        "longitude": 55.489945,
+        "sign_index": 1,
+        "degree_in_sign": 25.489945,
+        "is_retrograde": true,
+        "speed": -0.123006
+      },
+      "Venus": {
+        "longitude": 263.841494,
+        "sign_index": 8,
+        "degree_in_sign": 23.841494,
+        "is_retrograde": false,
+        "speed": 1.017204
+      },
+      "Saturn": {
+        "longitude": 31.644468,
+        "sign_index": 1,
+        "degree_in_sign": 1.644468,
+        "is_retrograde": true,
+        "speed": -0.081094
+      },
+      "Rahu": {
+        "longitude": 145.896005,
+        "sign_index": 4,
+        "degree_in_sign": 25.896005,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.896005,
+        "sign_index": 10,
+        "degree_in_sign": 25.896005,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

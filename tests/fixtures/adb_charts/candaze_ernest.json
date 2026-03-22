@@ -1,0 +1,109 @@
+{
+  "adb_id": 2159,
+  "name": "Candaze, Ernest",
+  "given_name": "Ernest Candaze",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388409.734537,
+    "year": 1827,
+    "month": 2,
+    "day": 22,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Liège",
+    "country": "Belgium",
+    "lat": 50.633333,
+    "lon": 5.566667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Candaze,_Ernest",
+  "source_notes": "Gauquelin Vol 2/2310\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 20.821977,
+    "lagna": 260.821977,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.44342,
+    "jd_ut": 2388409.734537,
+    "planets": {
+      "Sun": {
+        "longitude": 311.429453,
+        "sign_index": 10,
+        "degree_in_sign": 11.429453,
+        "is_retrograde": false,
+        "speed": 1.006347
+      },
+      "Moon": {
+        "longitude": 263.601649,
+        "sign_index": 8,
+        "degree_in_sign": 23.601649,
+        "is_retrograde": false,
+        "speed": 11.338044
+      },
+      "Mars": {
+        "longitude": 350.531548,
+        "sign_index": 11,
+        "degree_in_sign": 20.531548,
+        "is_retrograde": false,
+        "speed": 0.743704
+      },
+      "Mercury": {
+        "longitude": 312.120903,
+        "sign_index": 10,
+        "degree_in_sign": 12.120903,
+        "is_retrograde": false,
+        "speed": 1.858497
+      },
+      "Jupiter": {
+        "longitude": 172.106272,
+        "sign_index": 5,
+        "degree_in_sign": 22.106272,
+        "is_retrograde": true,
+        "speed": -0.072389
+      },
+      "Venus": {
+        "longitude": 265.272719,
+        "sign_index": 8,
+        "degree_in_sign": 25.272719,
+        "is_retrograde": false,
+        "speed": 0.91384
+      },
+      "Saturn": {
+        "longitude": 67.769211,
+        "sign_index": 2,
+        "degree_in_sign": 7.769211,
+        "is_retrograde": true,
+        "speed": -0.013955
+      },
+      "Rahu": {
+        "longitude": 206.857402,
+        "sign_index": 6,
+        "degree_in_sign": 26.857402,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 26.857402,
+        "sign_index": 0,
+        "degree_in_sign": 26.857402,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

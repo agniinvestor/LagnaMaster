@@ -1,0 +1,112 @@
+{
+  "adb_id": 90562,
+  "name": "Casey, Sue",
+  "given_name": "Sue Casey",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424614.614583,
+    "year": 1926,
+    "month": 4,
+    "day": 8,
+    "calendar": "g",
+    "time": "18:45",
+    "time_type": "s",
+    "hour": 18.75,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casey,_Sue",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Family : Parenting : Kids more than 3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Beauty : Model",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 9.193094,
+    "lagna": 159.193094,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.827315,
+    "jd_ut": 2424614.614583,
+    "planets": {
+      "Sun": {
+        "longitude": 355.678111,
+        "sign_index": 11,
+        "degree_in_sign": 25.678111,
+        "is_retrograde": false,
+        "speed": 0.98241
+      },
+      "Moon": {
+        "longitude": 308.239022,
+        "sign_index": 10,
+        "degree_in_sign": 8.239022,
+        "is_retrograde": false,
+        "speed": 18.648477
+      },
+      "Mars": {
+        "longitude": 289.394487,
+        "sign_index": 9,
+        "degree_in_sign": 19.394487,
+        "is_retrograde": false,
+        "speed": 0.723466
+      },
+      "Mercury": {
+        "longitude": 340.753344,
+        "sign_index": 11,
+        "degree_in_sign": 10.753344,
+        "is_retrograde": true,
+        "speed": -0.4217
+      },
+      "Jupiter": {
+        "longitude": 297.712624,
+        "sign_index": 9,
+        "degree_in_sign": 27.712624,
+        "is_retrograde": false,
+        "speed": 0.176055
+      },
+      "Venus": {
+        "longitude": 309.79005,
+        "sign_index": 10,
+        "degree_in_sign": 9.79005,
+        "is_retrograde": false,
+        "speed": 0.90048
+      },
+      "Saturn": {
+        "longitude": 212.324699,
+        "sign_index": 7,
+        "degree_in_sign": 2.324699,
+        "is_retrograde": true,
+        "speed": -0.052104
+      },
+      "Rahu": {
+        "longitude": 88.283688,
+        "sign_index": 2,
+        "degree_in_sign": 28.283688,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 268.283688,
+        "sign_index": 8,
+        "degree_in_sign": 28.283688,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 65011,
+  "name": "Clapeyron, Émile",
+  "given_name": "Émile Clapeyron",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2378157.076852,
+    "year": 1799,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clapeyron,_Émile",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 170.\\n\\nBorn on \"7 pluviôse an 7\" which is \"26 January 1799.\"\\n",
+  "categories": [
+    "Vocation : Engineer : Other Engineer",
+    "Vocation : Science : Physics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 22.9488,
+    "lagna": 52.9488,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.051632,
+    "jd_ut": 2378157.076852,
+    "planets": {
+      "Sun": {
+        "longitude": 285.662349,
+        "sign_index": 9,
+        "degree_in_sign": 15.662349,
+        "is_retrograde": false,
+        "speed": 1.015436
+      },
+      "Moon": {
+        "longitude": 170.855911,
+        "sign_index": 5,
+        "degree_in_sign": 20.855911,
+        "is_retrograde": false,
+        "speed": 17.215158
+      },
+      "Mars": {
+        "longitude": 4.974124,
+        "sign_index": 0,
+        "degree_in_sign": 4.974124,
+        "is_retrograde": false,
+        "speed": 0.620601
+      },
+      "Mercury": {
+        "longitude": 262.143305,
+        "sign_index": 8,
+        "degree_in_sign": 22.143305,
+        "is_retrograde": false,
+        "speed": 0.447113
+      },
+      "Jupiter": {
+        "longitude": 25.754822,
+        "sign_index": 0,
+        "degree_in_sign": 25.754822,
+        "is_retrograde": false,
+        "speed": 0.054235
+      },
+      "Venus": {
+        "longitude": 292.107381,
+        "sign_index": 9,
+        "degree_in_sign": 22.107381,
+        "is_retrograde": false,
+        "speed": 1.254795
+      },
+      "Saturn": {
+        "longitude": 90.638643,
+        "sign_index": 3,
+        "degree_in_sign": 0.638643,
+        "is_retrograde": true,
+        "speed": -0.078071
+      },
+      "Rahu": {
+        "longitude": 30.168193,
+        "sign_index": 1,
+        "degree_in_sign": 0.168193,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 210.168193,
+        "sign_index": 7,
+        "degree_in_sign": 0.168193,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

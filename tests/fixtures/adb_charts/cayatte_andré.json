@@ -1,0 +1,111 @@
+{
+  "adb_id": 50760,
+  "name": "Cayatte, André",
+  "given_name": "André Cayatte",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418341.20184,
+    "year": 1909,
+    "month": 2,
+    "day": 3,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Carcassonne",
+    "country": "France",
+    "lat": 43.216667,
+    "lon": 2.35
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cayatte,_André",
+  "source_notes": "Didier Geslain archive, 'Cinema Realisateurs' pdf file, p. 53.\\nSame data in Steinbrecher collection\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 27.35089,
+    "lagna": 87.35089,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.587477,
+    "jd_ut": 2418341.20184,
+    "planets": {
+      "Sun": {
+        "longitude": 291.66942,
+        "sign_index": 9,
+        "degree_in_sign": 21.66942,
+        "is_retrograde": false,
+        "speed": 1.013607
+      },
+      "Moon": {
+        "longitude": 94.12198,
+        "sign_index": 3,
+        "degree_in_sign": 4.12198,
+        "is_retrograde": false,
+        "speed": 12.008271
+      },
+      "Mars": {
+        "longitude": 233.761421,
+        "sign_index": 7,
+        "degree_in_sign": 23.761421,
+        "is_retrograde": false,
+        "speed": 0.668053
+      },
+      "Mercury": {
+        "longitude": 305.912404,
+        "sign_index": 10,
+        "degree_in_sign": 5.912404,
+        "is_retrograde": true,
+        "speed": -0.193178
+      },
+      "Jupiter": {
+        "longitude": 140.037887,
+        "sign_index": 4,
+        "degree_in_sign": 20.037887,
+        "is_retrograde": true,
+        "speed": -0.102269
+      },
+      "Venus": {
+        "longitude": 270.773302,
+        "sign_index": 9,
+        "degree_in_sign": 0.773302,
+        "is_retrograde": false,
+        "speed": 1.24721
+      },
+      "Saturn": {
+        "longitude": 343.724397,
+        "sign_index": 11,
+        "degree_in_sign": 13.724397,
+        "is_retrograde": false,
+        "speed": 0.092763
+      },
+      "Rahu": {
+        "longitude": 60.724952,
+        "sign_index": 2,
+        "degree_in_sign": 0.724952,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 240.724952,
+        "sign_index": 8,
+        "degree_in_sign": 0.724952,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

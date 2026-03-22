@@ -1,0 +1,110 @@
+{
+  "adb_id": 5569,
+  "name": "Celi, Adolfo",
+  "given_name": "Adolfo Celi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423263.145833,
+    "year": 1922,
+    "month": 7,
+    "day": 27,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "s",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "Messina",
+    "country": "Italy",
+    "lat": 38.183333,
+    "lon": 15.55
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celi,_Adolfo",
+  "source_notes": "Bordoni quotes B.C.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 7.834333,
+    "lagna": 217.834333,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.775645,
+    "jd_ut": 2423263.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 101.013813,
+        "sign_index": 3,
+        "degree_in_sign": 11.013813,
+        "is_retrograde": false,
+        "speed": 0.956014
+      },
+      "Moon": {
+        "longitude": 143.794191,
+        "sign_index": 4,
+        "degree_in_sign": 23.794191,
+        "is_retrograde": false,
+        "speed": 10.722841
+      },
+      "Mars": {
+        "longitude": 229.090859,
+        "sign_index": 7,
+        "degree_in_sign": 19.090859,
+        "is_retrograde": false,
+        "speed": 0.14323
+      },
+      "Mercury": {
+        "longitude": 89.27463,
+        "sign_index": 2,
+        "degree_in_sign": 29.27463,
+        "is_retrograde": false,
+        "speed": 1.976299
+      },
+      "Jupiter": {
+        "longitude": 169.843828,
+        "sign_index": 5,
+        "degree_in_sign": 19.843828,
+        "is_retrograde": false,
+        "speed": 0.132841
+      },
+      "Venus": {
+        "longitude": 141.664708,
+        "sign_index": 4,
+        "degree_in_sign": 21.664708,
+        "is_retrograde": false,
+        "speed": 1.145072
+      },
+      "Saturn": {
+        "longitude": 160.371851,
+        "sign_index": 5,
+        "degree_in_sign": 10.371851,
+        "is_retrograde": false,
+        "speed": 0.081405
+      },
+      "Rahu": {
+        "longitude": 159.900834,
+        "sign_index": 5,
+        "degree_in_sign": 9.900834,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 339.900834,
+        "sign_index": 11,
+        "degree_in_sign": 9.900834,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

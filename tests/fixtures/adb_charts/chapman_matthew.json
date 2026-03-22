@@ -1,0 +1,108 @@
+{
+  "adb_id": 15120,
+  "name": "Chapman, Matthew",
+  "given_name": "Matthew Chapman",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2447064.304861,
+    "year": 1987,
+    "month": 9,
+    "day": 25,
+    "calendar": "g",
+    "time": "14:19",
+    "time_type": "d",
+    "hour": 14.316667,
+    "time_unknown": false,
+    "place": "Nashville",
+    "country": "Tennessee",
+    "lat": 36.166667,
+    "lon": -86.783333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapman,_Matthew",
+  "source_notes": "Aaron Fischer quotes Grant's record label spokesperson in news the following day.\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 20.698735,
+    "lagna": 230.698735,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.685734,
+    "jd_ut": 2447064.304861,
+    "planets": {
+      "Sun": {
+        "longitude": 158.501049,
+        "sign_index": 5,
+        "degree_in_sign": 8.501049,
+        "is_retrograde": false,
+        "speed": 0.980268
+      },
+      "Moon": {
+        "longitude": 190.314979,
+        "sign_index": 6,
+        "degree_in_sign": 10.314979,
+        "is_retrograde": false,
+        "speed": 8.661412
+      },
+      "Mars": {
+        "longitude": 147.979291,
+        "sign_index": 4,
+        "degree_in_sign": 27.979291,
+        "is_retrograde": false,
+        "speed": 0.639881
+      },
+      "Mercury": {
+        "longitude": 182.749866,
+        "sign_index": 6,
+        "degree_in_sign": 2.749866,
+        "is_retrograde": false,
+        "speed": 1.260019
+      },
+      "Jupiter": {
+        "longitude": 3.879725,
+        "sign_index": 0,
+        "degree_in_sign": 3.879725,
+        "is_retrograde": true,
+        "speed": -0.110116
+      },
+      "Venus": {
+        "longitude": 167.567616,
+        "sign_index": 5,
+        "degree_in_sign": 17.567616,
+        "is_retrograde": false,
+        "speed": 1.244375
+      },
+      "Saturn": {
+        "longitude": 231.962508,
+        "sign_index": 7,
+        "degree_in_sign": 21.962508,
+        "is_retrograde": false,
+        "speed": 0.058052
+      },
+      "Rahu": {
+        "longitude": 338.628501,
+        "sign_index": 11,
+        "degree_in_sign": 8.628501,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 158.628501,
+        "sign_index": 5,
+        "degree_in_sign": 8.628501,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

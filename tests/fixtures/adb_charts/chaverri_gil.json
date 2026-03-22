@@ -1,0 +1,108 @@
+{
+  "adb_id": 69266,
+  "name": "Chaverri, Gil",
+  "given_name": "Gil Chaverri",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422764.3125,
+    "year": 1921,
+    "month": 3,
+    "day": 15,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "s",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Heredia",
+    "country": "Costa Rica",
+    "lat": 10.0,
+    "lon": -84.116667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaverri,_Gil",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Science : Chemistry"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.839766,
+    "lagna": 67.839766,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.756574,
+    "jd_ut": 2422764.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 331.924917,
+        "sign_index": 11,
+        "degree_in_sign": 1.924917,
+        "is_retrograde": false,
+        "speed": 0.995719
+      },
+      "Moon": {
+        "longitude": 45.308072,
+        "sign_index": 1,
+        "degree_in_sign": 15.308072,
+        "is_retrograde": false,
+        "speed": 9.843195
+      },
+      "Mars": {
+        "longitude": 0.262931,
+        "sign_index": 0,
+        "degree_in_sign": 0.262931,
+        "is_retrograde": false,
+        "speed": 0.741779
+      },
+      "Mercury": {
+        "longitude": 310.728666,
+        "sign_index": 10,
+        "degree_in_sign": 10.728666,
+        "is_retrograde": true,
+        "speed": -0.056851
+      },
+      "Jupiter": {
+        "longitude": 139.835426,
+        "sign_index": 4,
+        "degree_in_sign": 19.835426,
+        "is_retrograde": true,
+        "speed": -0.125472
+      },
+      "Venus": {
+        "longitude": 12.609019,
+        "sign_index": 0,
+        "degree_in_sign": 12.609019,
+        "is_retrograde": false,
+        "speed": 0.544633
+      },
+      "Saturn": {
+        "longitude": 148.410321,
+        "sign_index": 4,
+        "degree_in_sign": 28.410321,
+        "is_retrograde": true,
+        "speed": -0.079101
+      },
+      "Rahu": {
+        "longitude": 186.335054,
+        "sign_index": 6,
+        "degree_in_sign": 6.335054,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 6.335054,
+        "sign_index": 0,
+        "degree_in_sign": 6.335054,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

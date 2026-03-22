@@ -1,0 +1,112 @@
+{
+  "adb_id": 87417,
+  "name": "Coelho, Fernando",
+  "given_name": "Fernando Coelho",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445759.065972,
+    "year": 1984,
+    "month": 2,
+    "day": 28,
+    "calendar": "g",
+    "time": "10:35",
+    "time_type": "s",
+    "hour": 10.583333,
+    "time_unknown": false,
+    "place": "Recife (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.053889,
+    "lon": -34.881111
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coelho,_Fernando",
+  "source_notes": "Sy Scholfield provided birth entry from civil registry. \\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Business : Middle Management",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office",
+    "Notable : Famous : Criminal cases"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 8.661677,
+    "lagna": 8.661677,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.635819,
+    "jd_ut": 2445759.065972,
+    "planets": {
+      "Sun": {
+        "longitude": 315.523525,
+        "sign_index": 10,
+        "degree_in_sign": 15.523525,
+        "is_retrograde": false,
+        "speed": 1.004592
+      },
+      "Moon": {
+        "longitude": 280.294349,
+        "sign_index": 9,
+        "degree_in_sign": 10.294349,
+        "is_retrograde": false,
+        "speed": 7.050651
+      },
+      "Mars": {
+        "longitude": 207.761976,
+        "sign_index": 6,
+        "degree_in_sign": 27.761976,
+        "is_retrograde": false,
+        "speed": 0.336415
+      },
+      "Mercury": {
+        "longitude": 307.795542,
+        "sign_index": 10,
+        "degree_in_sign": 7.795542,
+        "is_retrograde": false,
+        "speed": 1.7668
+      },
+      "Jupiter": {
+        "longitude": 253.980227,
+        "sign_index": 8,
+        "degree_in_sign": 13.980227,
+        "is_retrograde": false,
+        "speed": 0.160775
+      },
+      "Venus": {
+        "longitude": 287.911703,
+        "sign_index": 9,
+        "degree_in_sign": 17.911703,
+        "is_retrograde": false,
+        "speed": 1.233596
+      },
+      "Saturn": {
+        "longitude": 202.739016,
+        "sign_index": 6,
+        "degree_in_sign": 22.739016,
+        "is_retrograde": true,
+        "speed": -0.006901
+      },
+      "Rahu": {
+        "longitude": 47.795754,
+        "sign_index": 1,
+        "degree_in_sign": 17.795754,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 227.795754,
+        "sign_index": 7,
+        "degree_in_sign": 17.795754,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

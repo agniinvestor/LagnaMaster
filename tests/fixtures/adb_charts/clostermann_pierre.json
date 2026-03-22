@@ -1,0 +1,112 @@
+{
+  "adb_id": 65388,
+  "name": "Clostermann, Pierre",
+  "given_name": "Pierre Clostermann",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422749.489583,
+    "year": 1921,
+    "month": 2,
+    "day": 28,
+    "calendar": "g",
+    "time": "20:45",
+    "time_type": "s",
+    "hour": 20.75,
+    "time_unknown": false,
+    "place": "Curitiba (Paraná)",
+    "country": "Brazil",
+    "lat": -25.427778,
+    "lon": -49.273056
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clostermann,_Pierre",
+  "source_notes": "Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 76.\\n",
+  "categories": [
+    "Vocation : Military : Honors",
+    "Vocation : Politics : Other Politics",
+    "Vocation : Sports : Other Sports",
+    "Vocation : Travel : Pilot/ military",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 5.151098,
+    "lagna": 155.151098,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.756007,
+    "jd_ut": 2422749.489583,
+    "planets": {
+      "Sun": {
+        "longitude": 317.104384,
+        "sign_index": 10,
+        "degree_in_sign": 17.104384,
+        "is_retrograde": false,
+        "speed": 1.003382
+      },
+      "Moon": {
+        "longitude": 220.861298,
+        "sign_index": 7,
+        "degree_in_sign": 10.861298,
+        "is_retrograde": false,
+        "speed": 16.188146
+      },
+      "Mars": {
+        "longitude": 349.186691,
+        "sign_index": 11,
+        "degree_in_sign": 19.186691,
+        "is_retrograde": false,
+        "speed": 0.752368
+      },
+      "Mercury": {
+        "longitude": 321.305432,
+        "sign_index": 10,
+        "degree_in_sign": 21.305432,
+        "is_retrograde": true,
+        "speed": -0.936697
+      },
+      "Jupiter": {
+        "longitude": 141.754659,
+        "sign_index": 4,
+        "degree_in_sign": 21.754659,
+        "is_retrograde": true,
+        "speed": -0.129934
+      },
+      "Venus": {
+        "longitude": 2.303538,
+        "sign_index": 0,
+        "degree_in_sign": 2.303538,
+        "is_retrograde": false,
+        "speed": 0.81956
+      },
+      "Saturn": {
+        "longitude": 149.574846,
+        "sign_index": 4,
+        "degree_in_sign": 29.574846,
+        "is_retrograde": true,
+        "speed": -0.076353
+      },
+      "Rahu": {
+        "longitude": 187.120551,
+        "sign_index": 6,
+        "degree_in_sign": 7.120551,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 7.120551,
+        "sign_index": 0,
+        "degree_in_sign": 7.120551,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

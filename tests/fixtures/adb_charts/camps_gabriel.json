@@ -1,0 +1,109 @@
+{
+  "adb_id": 63122,
+  "name": "Camps, Gabriel",
+  "given_name": "Gabriel Camps",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425020.833333,
+    "year": 1927,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Misserghin",
+    "country": "Algeria",
+    "lat": 35.616667,
+    "lon": -0.75
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camps,_Gabriel",
+  "source_notes": "Didier Geslain archive, 'Historiens' pdf file, p. 15.\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 27.01319,
+    "lagna": 57.01319,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.842845,
+    "jd_ut": 2425020.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 35.473971,
+        "sign_index": 1,
+        "degree_in_sign": 5.473971,
+        "is_retrograde": false,
+        "speed": 0.96195
+      },
+      "Moon": {
+        "longitude": 255.948496,
+        "sign_index": 8,
+        "degree_in_sign": 15.948496,
+        "is_retrograde": false,
+        "speed": 11.965138
+      },
+      "Mars": {
+        "longitude": 86.834287,
+        "sign_index": 2,
+        "degree_in_sign": 26.834287,
+        "is_retrograde": false,
+        "speed": 0.598689
+      },
+      "Mercury": {
+        "longitude": 35.696091,
+        "sign_index": 1,
+        "degree_in_sign": 5.696091,
+        "is_retrograde": false,
+        "speed": 2.190632
+      },
+      "Jupiter": {
+        "longitude": 334.499573,
+        "sign_index": 11,
+        "degree_in_sign": 4.499573,
+        "is_retrograde": false,
+        "speed": 0.172387
+      },
+      "Venus": {
+        "longitude": 76.290532,
+        "sign_index": 2,
+        "degree_in_sign": 16.290532,
+        "is_retrograde": false,
+        "speed": 1.135475
+      },
+      "Saturn": {
+        "longitude": 222.004777,
+        "sign_index": 7,
+        "degree_in_sign": 12.004777,
+        "is_retrograde": true,
+        "speed": -0.073712
+      },
+      "Rahu": {
+        "longitude": 66.757311,
+        "sign_index": 2,
+        "degree_in_sign": 6.757311,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 246.757311,
+        "sign_index": 8,
+        "degree_in_sign": 6.757311,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

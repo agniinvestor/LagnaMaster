@@ -1,0 +1,112 @@
+{
+  "adb_id": 47728,
+  "name": "Callender, Thomas",
+  "given_name": "Thomas Callender",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2398682.583333,
+    "year": 1855,
+    "month": 4,
+    "day": 9,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Callender,_Thomas",
+  "source_notes": "Paul Wright collection, B.C.\\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Financial : Wealthy",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Business : Top executive",
+    "Notable : Awards : Knighted"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 18.831226,
+    "lagna": 228.831226,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.836028,
+    "jd_ut": 2398682.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 356.826612,
+        "sign_index": 11,
+        "degree_in_sign": 26.826612,
+        "is_retrograde": false,
+        "speed": 0.981269
+      },
+      "Moon": {
+        "longitude": 256.580958,
+        "sign_index": 8,
+        "degree_in_sign": 16.580958,
+        "is_retrograde": false,
+        "speed": 11.942664
+      },
+      "Mars": {
+        "longitude": 357.062728,
+        "sign_index": 11,
+        "degree_in_sign": 27.062728,
+        "is_retrograde": false,
+        "speed": 0.759158
+      },
+      "Mercury": {
+        "longitude": 329.904295,
+        "sign_index": 10,
+        "degree_in_sign": 29.904295,
+        "is_retrograde": false,
+        "speed": 1.238171
+      },
+      "Jupiter": {
+        "longitude": 303.104462,
+        "sign_index": 10,
+        "degree_in_sign": 3.104462,
+        "is_retrograde": false,
+        "speed": 0.185754
+      },
+      "Venus": {
+        "longitude": 24.602851,
+        "sign_index": 0,
+        "degree_in_sign": 24.602851,
+        "is_retrograde": false,
+        "speed": 1.215345
+      },
+      "Saturn": {
+        "longitude": 50.10629,
+        "sign_index": 1,
+        "degree_in_sign": 20.10629,
+        "is_retrograde": false,
+        "speed": 0.094826
+      },
+      "Rahu": {
+        "longitude": 22.476914,
+        "sign_index": 0,
+        "degree_in_sign": 22.476914,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 202.476914,
+        "sign_index": 6,
+        "degree_in_sign": 22.476914,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

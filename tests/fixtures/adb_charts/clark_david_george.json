@@ -1,0 +1,108 @@
+{
+  "adb_id": 47867,
+  "name": "Clark, David George",
+  "given_name": "David George Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429556.305556,
+    "year": 1939,
+    "month": 10,
+    "day": 19,
+    "calendar": "g",
+    "time": "20:20",
+    "time_type": "d",
+    "hour": 20.333333,
+    "time_unknown": false,
+    "place": "Borrowstounness",
+    "country": "Scotland",
+    "lat": 56.016667,
+    "lon": -3.6
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_David_George",
+  "source_notes": "Pulsar collection quotes B.C.  (Kelton, Nr Dumbries, Scotland)\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 7.995079,
+    "lagna": 37.995079,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.016252,
+    "jd_ut": 2429556.305556,
+    "planets": {
+      "Sun": {
+        "longitude": 182.486721,
+        "sign_index": 6,
+        "degree_in_sign": 2.486721,
+        "is_retrograde": false,
+        "speed": 0.993791
+      },
+      "Moon": {
+        "longitude": 268.414443,
+        "sign_index": 8,
+        "degree_in_sign": 28.414443,
+        "is_retrograde": false,
+        "speed": 9.293565
+      },
+      "Mars": {
+        "longitude": 288.777764,
+        "sign_index": 9,
+        "degree_in_sign": 18.777764,
+        "is_retrograde": false,
+        "speed": 0.534373
+      },
+      "Mercury": {
+        "longitude": 199.908077,
+        "sign_index": 6,
+        "degree_in_sign": 19.908077,
+        "is_retrograde": false,
+        "speed": 1.455918
+      },
+      "Jupiter": {
+        "longitude": 337.979722,
+        "sign_index": 11,
+        "degree_in_sign": 7.979722,
+        "is_retrograde": true,
+        "speed": -0.10974
+      },
+      "Venus": {
+        "longitude": 194.086686,
+        "sign_index": 6,
+        "degree_in_sign": 14.086686,
+        "is_retrograde": false,
+        "speed": 1.247866
+      },
+      "Saturn": {
+        "longitude": 4.970509,
+        "sign_index": 0,
+        "degree_in_sign": 4.970509,
+        "is_retrograde": true,
+        "speed": -0.07974
+      },
+      "Rahu": {
+        "longitude": 186.413226,
+        "sign_index": 6,
+        "degree_in_sign": 6.413226,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 6.413226,
+        "sign_index": 0,
+        "degree_in_sign": 6.413226,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

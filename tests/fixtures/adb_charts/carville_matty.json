@@ -1,0 +1,110 @@
+{
+  "adb_id": 24328,
+  "name": "Carville, Matty",
+  "given_name": "Matty Carville",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2449919.0875,
+    "year": 1995,
+    "month": 7,
+    "day": 20,
+    "calendar": "g",
+    "time": "10:06",
+    "time_type": "d",
+    "hour": 10.1,
+    "time_unknown": false,
+    "place": "Washington",
+    "country": "District of Columbia",
+    "lat": 38.9,
+    "lon": -77.033333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carville,_Matty",
+  "source_notes": "Marjorie Rosen sends news clipping.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 28.176076,
+    "lagna": 118.176076,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.79491,
+    "jd_ut": 2449919.0875,
+    "planets": {
+      "Sun": {
+        "longitude": 93.600937,
+        "sign_index": 3,
+        "degree_in_sign": 3.600937,
+        "is_retrograde": false,
+        "speed": 0.954387
+      },
+      "Moon": {
+        "longitude": 15.677596,
+        "sign_index": 0,
+        "degree_in_sign": 15.677596,
+        "is_retrograde": false,
+        "speed": 8.47367
+      },
+      "Mars": {
+        "longitude": 155.730518,
+        "sign_index": 5,
+        "degree_in_sign": 5.730518,
+        "is_retrograde": false,
+        "speed": 0.587575
+      },
+      "Mercury": {
+        "longitude": 84.918165,
+        "sign_index": 2,
+        "degree_in_sign": 24.918165,
+        "is_retrograde": false,
+        "speed": 2.078769
+      },
+      "Jupiter": {
+        "longitude": 221.996279,
+        "sign_index": 7,
+        "degree_in_sign": 11.996279,
+        "is_retrograde": true,
+        "speed": -0.039978
+      },
+      "Venus": {
+        "longitude": 84.96113,
+        "sign_index": 2,
+        "degree_in_sign": 24.96113,
+        "is_retrograde": false,
+        "speed": 1.227844
+      },
+      "Saturn": {
+        "longitude": 330.786453,
+        "sign_index": 11,
+        "degree_in_sign": 0.786453,
+        "is_retrograde": true,
+        "speed": -0.023468
+      },
+      "Rahu": {
+        "longitude": 187.347802,
+        "sign_index": 6,
+        "degree_in_sign": 7.347802,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 7.347802,
+        "sign_index": 0,
+        "degree_in_sign": 7.347802,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

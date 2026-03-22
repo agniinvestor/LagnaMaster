@@ -1,0 +1,110 @@
+{
+  "adb_id": 59299,
+  "name": "Cheever, Abijah",
+  "given_name": "Abijah Cheever",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2364030.363935,
+    "year": 1760,
+    "month": 5,
+    "day": 23,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "l",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Saugus",
+    "country": "Massachusetts",
+    "lat": 42.466667,
+    "lon": -71.016667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cheever,_Abijah",
+  "source_notes": "Sy Scholfield quotes the Cheever family bible in \"The New England Historical and Genealogical Register,\" Volume 32, 1878, p. 90: \"March ye 23, 1760 on Friday in the afternune my twins Abijah at 4 o Clock & Ann at 5 of the Clok was Born.\"\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Medical : Surgeon",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 13.779113,
+    "lagna": 163.779113,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.511883,
+    "jd_ut": 2364030.363935,
+    "planets": {
+      "Sun": {
+        "longitude": 42.524461,
+        "sign_index": 1,
+        "degree_in_sign": 12.524461,
+        "is_retrograde": false,
+        "speed": 0.959146
+      },
+      "Moon": {
+        "longitude": 157.152895,
+        "sign_index": 5,
+        "degree_in_sign": 7.152895,
+        "is_retrograde": false,
+        "speed": 10.138783
+      },
+      "Mars": {
+        "longitude": 144.115385,
+        "sign_index": 4,
+        "degree_in_sign": 24.115385,
+        "is_retrograde": false,
+        "speed": 0.333725
+      },
+      "Mercury": {
+        "longitude": 17.945944,
+        "sign_index": 0,
+        "degree_in_sign": 17.945944,
+        "is_retrograde": false,
+        "speed": 0.8992
+      },
+      "Jupiter": {
+        "longitude": 306.051103,
+        "sign_index": 10,
+        "degree_in_sign": 6.051103,
+        "is_retrograde": false,
+        "speed": 0.07017
+      },
+      "Venus": {
+        "longitude": 19.994533,
+        "sign_index": 0,
+        "degree_in_sign": 19.994533,
+        "is_retrograde": false,
+        "speed": 1.21389
+      },
+      "Saturn": {
+        "longitude": 336.439233,
+        "sign_index": 11,
+        "degree_in_sign": 6.439233,
+        "is_retrograde": false,
+        "speed": 0.072365
+      },
+      "Rahu": {
+        "longitude": 58.774115,
+        "sign_index": 1,
+        "degree_in_sign": 28.774115,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 238.774115,
+        "sign_index": 7,
+        "degree_in_sign": 28.774115,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

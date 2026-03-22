@@ -1,0 +1,111 @@
+{
+  "adb_id": 10946,
+  "name": "Casarotto, Renato",
+  "given_name": "Renato Casarotto",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432686.9375,
+    "year": 1948,
+    "month": 5,
+    "day": 15,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "d",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Vicenza",
+    "country": "Italy",
+    "lat": 45.55,
+    "lon": 11.55
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casarotto,_Renato",
+  "source_notes": "Grazia Bordoni quotes B.C., Vol. 3.\\n",
+  "categories": [
+    "Lifestyle : Social Life : Outdoors",
+    "Personal : Death : Unusual",
+    "Vocation : Medical : Nurse/ Nurse's Aids",
+    "Vocation : Travel : Adventurer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 7.722811,
+    "lagna": 97.722811,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.135953,
+    "jd_ut": 2432686.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 31.354391,
+        "sign_index": 1,
+        "degree_in_sign": 1.354391,
+        "is_retrograde": false,
+        "speed": 0.963901
+      },
+      "Moon": {
+        "longitude": 114.252891,
+        "sign_index": 3,
+        "degree_in_sign": 24.252891,
+        "is_retrograde": false,
+        "speed": 14.471407
+      },
+      "Mars": {
+        "longitude": 125.500795,
+        "sign_index": 4,
+        "degree_in_sign": 5.500795,
+        "is_retrograde": false,
+        "speed": 0.389809
+      },
+      "Mercury": {
+        "longitude": 48.748078,
+        "sign_index": 1,
+        "degree_in_sign": 18.748078,
+        "is_retrograde": false,
+        "speed": 1.755766
+      },
+      "Jupiter": {
+        "longitude": 244.441593,
+        "sign_index": 8,
+        "degree_in_sign": 4.441593,
+        "is_retrograde": true,
+        "speed": -0.087396
+      },
+      "Venus": {
+        "longitude": 72.164606,
+        "sign_index": 2,
+        "degree_in_sign": 12.164606,
+        "is_retrograde": false,
+        "speed": 0.574318
+      },
+      "Saturn": {
+        "longitude": 113.327961,
+        "sign_index": 3,
+        "degree_in_sign": 23.327961,
+        "is_retrograde": false,
+        "speed": 0.048847
+      },
+      "Rahu": {
+        "longitude": 20.514572,
+        "sign_index": 0,
+        "degree_in_sign": 20.514572,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 200.514572,
+        "sign_index": 6,
+        "degree_in_sign": 20.514572,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

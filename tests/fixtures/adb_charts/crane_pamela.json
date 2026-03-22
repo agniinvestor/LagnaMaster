@@ -1,0 +1,111 @@
+{
+  "adb_id": 26357,
+  "name": "Crane, Pamela",
+  "given_name": "Pamela Crane",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430744.3875,
+    "year": 1943,
+    "month": 1,
+    "day": 19,
+    "calendar": "g",
+    "time": "22:18",
+    "time_type": "d",
+    "hour": 22.3,
+    "time_unknown": false,
+    "place": "Selly Oak (Birmingham)",
+    "country": "England (UK)",
+    "lat": 52.438333,
+    "lon": -1.941667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crane,_Pamela",
+  "source_notes": "LMR quotes her by letter 9/1987, Same data in her book\\n",
+  "categories": [
+    "Traits : Personality : Gracious/ sociable",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Religion : Ecclesiastics/ western",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 4.090375,
+    "lagna": 124.090375,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.061679,
+    "jd_ut": 2430744.3875,
+    "planets": {
+      "Sun": {
+        "longitude": 275.880248,
+        "sign_index": 9,
+        "degree_in_sign": 5.880248,
+        "is_retrograde": false,
+        "speed": 1.017464
+      },
+      "Moon": {
+        "longitude": 79.275031,
+        "sign_index": 2,
+        "degree_in_sign": 19.275031,
+        "is_retrograde": false,
+        "speed": 8.817048
+      },
+      "Mars": {
+        "longitude": 241.940923,
+        "sign_index": 8,
+        "degree_in_sign": 1.940923,
+        "is_retrograde": false,
+        "speed": 0.721281
+      },
+      "Mercury": {
+        "longitude": 286.217694,
+        "sign_index": 9,
+        "degree_in_sign": 16.217694,
+        "is_retrograde": true,
+        "speed": -0.766752
+      },
+      "Jupiter": {
+        "longitude": 85.98827,
+        "sign_index": 2,
+        "degree_in_sign": 25.98827,
+        "is_retrograde": true,
+        "speed": -0.130976
+      },
+      "Venus": {
+        "longitude": 291.321142,
+        "sign_index": 9,
+        "degree_in_sign": 21.321142,
+        "is_retrograde": false,
+        "speed": 1.25239
+      },
+      "Saturn": {
+        "longitude": 42.811413,
+        "sign_index": 1,
+        "degree_in_sign": 12.811413,
+        "is_retrograde": true,
+        "speed": -0.032215
+      },
+      "Rahu": {
+        "longitude": 123.454306,
+        "sign_index": 4,
+        "degree_in_sign": 3.454306,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 303.454306,
+        "sign_index": 10,
+        "degree_in_sign": 3.454306,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

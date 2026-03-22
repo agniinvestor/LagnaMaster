@@ -1,0 +1,111 @@
+{
+  "adb_id": 9062,
+  "name": "Carraway, Nancy",
+  "given_name": "Nancy Carraway",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430432.072917,
+    "year": 1942,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "07:45",
+    "time_type": "w",
+    "hour": 7.75,
+    "time_unknown": false,
+    "place": "Denver",
+    "country": "Colorado",
+    "lat": 39.733333,
+    "lon": -104.983333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "aqu",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carraway,_Nancy",
+  "source_notes": "LMR quotes her, 12/1985\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Traits : Mind : I.Q. high/ Mensa level",
+    "Vocation : Science : Biology",
+    "Notable : Extraordinary Talents : For Languages"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 17.011845,
+    "lagna": 317.011845,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.049737,
+    "jd_ut": 2430432.072917,
+    "planets": {
+      "Sun": {
+        "longitude": 329.302932,
+        "sign_index": 10,
+        "degree_in_sign": 29.302932,
+        "is_retrograde": false,
+        "speed": 0.997376
+      },
+      "Moon": {
+        "longitude": 287.143056,
+        "sign_index": 9,
+        "degree_in_sign": 17.143056,
+        "is_retrograde": false,
+        "speed": 10.117344
+      },
+      "Mars": {
+        "longitude": 40.631584,
+        "sign_index": 1,
+        "degree_in_sign": 10.631584,
+        "is_retrograde": false,
+        "speed": 0.592307
+      },
+      "Mercury": {
+        "longitude": 302.602199,
+        "sign_index": 10,
+        "degree_in_sign": 2.602199,
+        "is_retrograde": false,
+        "speed": 1.213564
+      },
+      "Jupiter": {
+        "longitude": 50.436606,
+        "sign_index": 1,
+        "degree_in_sign": 20.436606,
+        "is_retrograde": false,
+        "speed": 0.110803
+      },
+      "Venus": {
+        "longitude": 288.298332,
+        "sign_index": 9,
+        "degree_in_sign": 18.298332,
+        "is_retrograde": false,
+        "speed": 0.579789
+      },
+      "Saturn": {
+        "longitude": 30.749961,
+        "sign_index": 1,
+        "degree_in_sign": 0.749961,
+        "is_retrograde": false,
+        "speed": 0.082981
+      },
+      "Rahu": {
+        "longitude": 140.004502,
+        "sign_index": 4,
+        "degree_in_sign": 20.004502,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 320.004502,
+        "sign_index": 10,
+        "degree_in_sign": 20.004502,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

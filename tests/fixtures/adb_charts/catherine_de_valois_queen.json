@@ -1,0 +1,112 @@
+{
+  "adb_id": 19526,
+  "name": "Catherine de Valois, Queen",
+  "given_name": "Queen Catherine de Valois",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2233072.89213,
+    "year": 1401,
+    "month": 10,
+    "day": 27,
+    "calendar": "j",
+    "time": "09:34",
+    "time_type": "l",
+    "hour": 9.566667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Catherine_de_Valois,_Queen",
+  "source_notes": "Martin Harvey in Nativitas I quotes Latin records,  (October 27 OS.  9:50 AM LAT)  Harvey suggests 10:00 AM Sundial but his chart with 13 Sag ASC computes to 9:43 AM LMT.\\nSy Scholfield quotes ten o'clock in the morning on 27 October in \"Annales de la monarchie française\" by Henri-Philippe de Limiers (L'Honoré et Chatelain, 1724), p. 65: \"née en l'Hôtel de S. Paul à Paris le 27. Octobre sur les dix heures du matin 1401.\"\\n",
+  "categories": [
+    "Family : Childhood : Family large",
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Mate - Noted",
+    "Notable : Famous : Royal family",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 10.210847,
+    "lagna": 220.210847,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 15.512669,
+    "jd_ut": 2233072.89213,
+    "planets": {
+      "Sun": {
+        "longitude": 207.028809,
+        "sign_index": 6,
+        "degree_in_sign": 27.028809,
+        "is_retrograde": false,
+        "speed": 1.007453
+      },
+      "Moon": {
+        "longitude": 81.56268,
+        "sign_index": 2,
+        "degree_in_sign": 21.56268,
+        "is_retrograde": false,
+        "speed": 12.327991
+      },
+      "Mars": {
+        "longitude": 284.198609,
+        "sign_index": 9,
+        "degree_in_sign": 14.198609,
+        "is_retrograde": false,
+        "speed": 0.720625
+      },
+      "Mercury": {
+        "longitude": 200.044331,
+        "sign_index": 6,
+        "degree_in_sign": 20.044331,
+        "is_retrograde": true,
+        "speed": -1.100454
+      },
+      "Jupiter": {
+        "longitude": 212.215091,
+        "sign_index": 7,
+        "degree_in_sign": 2.215091,
+        "is_retrograde": false,
+        "speed": 0.221923
+      },
+      "Venus": {
+        "longitude": 162.582677,
+        "sign_index": 5,
+        "degree_in_sign": 12.582677,
+        "is_retrograde": false,
+        "speed": 0.766918
+      },
+      "Saturn": {
+        "longitude": 268.623858,
+        "sign_index": 8,
+        "degree_in_sign": 28.623858,
+        "is_retrograde": false,
+        "speed": 0.074969
+      },
+      "Rahu": {
+        "longitude": 158.526227,
+        "sign_index": 5,
+        "degree_in_sign": 8.526227,
+        "is_retrograde": true,
+        "speed": -0.052993
+      },
+      "Ketu": {
+        "longitude": 338.526227,
+        "sign_index": 11,
+        "degree_in_sign": 8.526227,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

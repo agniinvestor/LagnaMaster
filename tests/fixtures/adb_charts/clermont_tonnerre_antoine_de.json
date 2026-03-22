@@ -1,0 +1,108 @@
+{
+  "adb_id": 67519,
+  "name": "Clermont-Tonnerre, Antoine de",
+  "given_name": "Antoine de Clermont-Tonnerre",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430163.833333,
+    "year": 1941,
+    "month": 6,
+    "day": 18,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "d",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clermont-Tonnerre,_Antoine_de",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 57.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 29.719409,
+    "lagna": 89.719409,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.039481,
+    "jd_ut": 2430163.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 63.637858,
+        "sign_index": 2,
+        "degree_in_sign": 3.637858,
+        "is_retrograde": false,
+        "speed": 0.954566
+      },
+      "Moon": {
+        "longitude": 351.758245,
+        "sign_index": 11,
+        "degree_in_sign": 21.758245,
+        "is_retrograde": false,
+        "speed": 8.40845
+      },
+      "Mars": {
+        "longitude": 328.590099,
+        "sign_index": 10,
+        "degree_in_sign": 28.590099,
+        "is_retrograde": false,
+        "speed": 0.622827
+      },
+      "Mercury": {
+        "longitude": 82.538152,
+        "sign_index": 2,
+        "degree_in_sign": 22.538152,
+        "is_retrograde": false,
+        "speed": 0.117885
+      },
+      "Jupiter": {
+        "longitude": 42.24627,
+        "sign_index": 1,
+        "degree_in_sign": 12.24627,
+        "is_retrograde": false,
+        "speed": 0.226694
+      },
+      "Venus": {
+        "longitude": 79.619185,
+        "sign_index": 2,
+        "degree_in_sign": 19.619185,
+        "is_retrograde": false,
+        "speed": 1.223477
+      },
+      "Saturn": {
+        "longitude": 29.977585,
+        "sign_index": 0,
+        "degree_in_sign": 29.977585,
+        "is_retrograde": false,
+        "speed": 0.114535
+      },
+      "Rahu": {
+        "longitude": 154.219072,
+        "sign_index": 5,
+        "degree_in_sign": 4.219072,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 334.219072,
+        "sign_index": 11,
+        "degree_in_sign": 4.219072,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

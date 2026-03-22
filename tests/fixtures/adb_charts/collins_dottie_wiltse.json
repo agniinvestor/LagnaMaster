@@ -1,0 +1,113 @@
+{
+  "adb_id": 90127,
+  "name": "Collins, Dottie Wiltse",
+  "given_name": "Dottie Wiltse Collins",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423686.034722,
+    "year": 1923,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "04:50",
+    "time_type": "s",
+    "hour": 4.833333,
+    "time_unknown": false,
+    "place": "Inglewood",
+    "country": "California",
+    "lat": 33.966667,
+    "lon": -118.35
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Dottie_Wiltse",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Traits : Body : Constitution hardy",
+    "Traits : Body : Handedness",
+    "Diagnoses : Major Diseases : Stroke",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Sports : Baseball",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 2.194219,
+    "lagna": 122.194219,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.791813,
+    "jd_ut": 2423686.034722,
+    "planets": {
+      "Sun": {
+        "longitude": 156.670438,
+        "sign_index": 5,
+        "degree_in_sign": 6.670438,
+        "is_retrograde": false,
+        "speed": 0.978711
+      },
+      "Moon": {
+        "longitude": 318.664874,
+        "sign_index": 10,
+        "degree_in_sign": 18.664874,
+        "is_retrograde": false,
+        "speed": 12.793178
+      },
+      "Mars": {
+        "longitude": 141.518147,
+        "sign_index": 4,
+        "degree_in_sign": 21.518147,
+        "is_retrograde": false,
+        "speed": 0.635955
+      },
+      "Mercury": {
+        "longitude": 168.018469,
+        "sign_index": 5,
+        "degree_in_sign": 18.018469,
+        "is_retrograde": true,
+        "speed": -0.824574
+      },
+      "Jupiter": {
+        "longitude": 204.225904,
+        "sign_index": 6,
+        "degree_in_sign": 24.225904,
+        "is_retrograde": false,
+        "speed": 0.180494
+      },
+      "Venus": {
+        "longitude": 160.186268,
+        "sign_index": 5,
+        "degree_in_sign": 10.186268,
+        "is_retrograde": false,
+        "speed": 1.245585
+      },
+      "Saturn": {
+        "longitude": 177.385751,
+        "sign_index": 5,
+        "degree_in_sign": 27.385751,
+        "is_retrograde": false,
+        "speed": 0.116574
+      },
+      "Rahu": {
+        "longitude": 137.49107,
+        "sign_index": 4,
+        "degree_in_sign": 17.49107,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 317.49107,
+        "sign_index": 10,
+        "degree_in_sign": 17.49107,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

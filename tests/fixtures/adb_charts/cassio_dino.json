@@ -1,0 +1,113 @@
+{
+  "adb_id": 71610,
+  "name": "Cassio, Dino",
+  "given_name": "Dino Cassio",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427529.5,
+    "year": 1934,
+    "month": 4,
+    "day": 2,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Bari",
+    "country": "Italy",
+    "lat": 41.116667,
+    "lon": 16.866667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassio,_Dino",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Alzheimer's/ Senility",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 18.097071,
+    "lagna": 228.097071,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.938759,
+    "jd_ut": 2427529.5,
+    "planets": {
+      "Sun": {
+        "longitude": 348.622012,
+        "sign_index": 11,
+        "degree_in_sign": 18.622012,
+        "is_retrograde": false,
+        "speed": 0.985816
+      },
+      "Moon": {
+        "longitude": 193.342824,
+        "sign_index": 6,
+        "degree_in_sign": 13.342824,
+        "is_retrograde": false,
+        "speed": 9.54896
+      },
+      "Mars": {
+        "longitude": 351.418983,
+        "sign_index": 11,
+        "degree_in_sign": 21.418983,
+        "is_retrograde": false,
+        "speed": 0.764867
+      },
+      "Mercury": {
+        "longitude": 320.847843,
+        "sign_index": 10,
+        "degree_in_sign": 20.847843,
+        "is_retrograde": false,
+        "speed": 0.971257
+      },
+      "Jupiter": {
+        "longitude": 176.243578,
+        "sign_index": 5,
+        "degree_in_sign": 26.243578,
+        "is_retrograde": true,
+        "speed": -0.126145
+      },
+      "Venus": {
+        "longitude": 303.211052,
+        "sign_index": 10,
+        "degree_in_sign": 3.211052,
+        "is_retrograde": false,
+        "speed": 0.852399
+      },
+      "Saturn": {
+        "longitude": 301.762949,
+        "sign_index": 10,
+        "degree_in_sign": 1.762949,
+        "is_retrograde": false,
+        "speed": 0.09462
+      },
+      "Rahu": {
+        "longitude": 293.817851,
+        "sign_index": 9,
+        "degree_in_sign": 23.817851,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 113.817851,
+        "sign_index": 3,
+        "degree_in_sign": 23.817851,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

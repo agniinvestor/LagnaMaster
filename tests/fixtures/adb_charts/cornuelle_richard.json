@@ -1,0 +1,110 @@
+{
+  "adb_id": 85834,
+  "name": "Cornuelle, Richard",
+  "given_name": "Richard Cornuelle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424980.958333,
+    "year": 1927,
+    "month": 4,
+    "day": 10,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Elwood",
+    "country": "Indiana",
+    "lat": 40.283333,
+    "lon": -85.85
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornuelle,_Richard",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana Archives. \\n",
+  "categories": [
+    "Vocation : Healing Fields : Social worker",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 26.032234,
+    "lagna": 326.032234,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.841321,
+    "jd_ut": 2424980.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 356.746896,
+        "sign_index": 11,
+        "degree_in_sign": 26.746896,
+        "is_retrograde": false,
+        "speed": 0.981488
+      },
+      "Moon": {
+        "longitude": 103.161654,
+        "sign_index": 3,
+        "degree_in_sign": 13.161654,
+        "is_retrograde": false,
+        "speed": 16.016922
+      },
+      "Mars": {
+        "longitude": 63.333487,
+        "sign_index": 2,
+        "degree_in_sign": 3.333487,
+        "is_retrograde": false,
+        "speed": 0.577804
+      },
+      "Mercury": {
+        "longitude": 329.08771,
+        "sign_index": 10,
+        "degree_in_sign": 29.08771,
+        "is_retrograde": false,
+        "speed": 0.995163
+      },
+      "Jupiter": {
+        "longitude": 326.461572,
+        "sign_index": 10,
+        "degree_in_sign": 26.461572,
+        "is_retrograde": false,
+        "speed": 0.22447
+      },
+      "Venus": {
+        "longitude": 29.563131,
+        "sign_index": 0,
+        "degree_in_sign": 29.563131,
+        "is_retrograde": false,
+        "speed": 1.200698
+      },
+      "Saturn": {
+        "longitude": 224.382301,
+        "sign_index": 7,
+        "degree_in_sign": 14.382301,
+        "is_retrograde": true,
+        "speed": -0.03744
+      },
+      "Rahu": {
+        "longitude": 68.87037,
+        "sign_index": 2,
+        "degree_in_sign": 8.87037,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 248.87037,
+        "sign_index": 8,
+        "degree_in_sign": 8.87037,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

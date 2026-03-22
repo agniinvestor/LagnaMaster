@@ -1,0 +1,109 @@
+{
+  "adb_id": 72867,
+  "name": "Cammell, Donald",
+  "given_name": "Donald Cammell",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2427455.277778,
+    "year": 1934,
+    "month": 1,
+    "day": 17,
+    "calendar": "g",
+    "time": "18:40",
+    "time_type": "s",
+    "hour": 18.666667,
+    "time_unknown": false,
+    "place": "Edinburgh",
+    "country": "Scotland",
+    "lat": 55.95,
+    "lon": -3.216667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cammell,_Donald",
+  "source_notes": "Jan Harris sent extract of the Umland's biography \"Donald Cammell: A Life on the Wild Side\", which gives the time of birth on page 23.\\n",
+  "categories": [
+    "Personal : Death : Suicide",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 6.692819,
+    "lagna": 96.692819,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.935922,
+    "jd_ut": 2427455.277778,
+    "planets": {
+      "Sun": {
+        "longitude": 274.050992,
+        "sign_index": 9,
+        "degree_in_sign": 4.050992,
+        "is_retrograde": false,
+        "speed": 1.018442
+      },
+      "Moon": {
+        "longitude": 304.092899,
+        "sign_index": 10,
+        "degree_in_sign": 4.092899,
+        "is_retrograde": false,
+        "speed": 13.403389
+      },
+      "Mars": {
+        "longitude": 293.30509,
+        "sign_index": 9,
+        "degree_in_sign": 23.30509,
+        "is_retrograde": false,
+        "speed": 0.790317
+      },
+      "Mercury": {
+        "longitude": 272.539509,
+        "sign_index": 9,
+        "degree_in_sign": 2.539509,
+        "is_retrograde": false,
+        "speed": 1.655117
+      },
+      "Jupiter": {
+        "longitude": 179.604154,
+        "sign_index": 5,
+        "degree_in_sign": 29.604154,
+        "is_retrograde": false,
+        "speed": 0.062751
+      },
+      "Venus": {
+        "longitude": 300.595249,
+        "sign_index": 10,
+        "degree_in_sign": 0.595249,
+        "is_retrograde": true,
+        "speed": -0.095111
+      },
+      "Saturn": {
+        "longitude": 293.31809,
+        "sign_index": 9,
+        "degree_in_sign": 23.31809,
+        "is_retrograde": false,
+        "speed": 0.115876
+      },
+      "Rahu": {
+        "longitude": 297.751041,
+        "sign_index": 9,
+        "degree_in_sign": 27.751041,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 117.751041,
+        "sign_index": 3,
+        "degree_in_sign": 27.751041,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

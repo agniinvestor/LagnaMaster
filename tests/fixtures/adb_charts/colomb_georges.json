@@ -1,0 +1,110 @@
+{
+  "adb_id": 67089,
+  "name": "Colomb, Georges",
+  "given_name": "Georges Colomb",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2399095.065278,
+    "year": 1856,
+    "month": 5,
+    "day": 25,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Lure",
+    "country": "France",
+    "lat": 47.683333,
+    "lon": 6.5
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colomb,_Georges",
+  "source_notes": "Patrick de Jabrun (info FDAF), acte 38.\\n\\nSy Scholfield cites same data from birth certificate quoted in \"Christophe\" by François Caradec (P. Horay, 1981), p. 13: \"L'an mil huit cent cinquante six, le vingt-six mai, à neuf heures du matin, devant nous Joseph Grosbert, notaire, maire, ... nous a présenté un enfant de sexe masculin, né à Lure, en son domicile, le jour d'hier, à deux heures de l'après-midi...\"\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist",
+    "Vocation : Science : Biology",
+    "Vocation : Science : Other Science"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.749052,
+    "lagna": 138.749052,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.851793,
+    "jd_ut": 2399095.065278,
+    "planets": {
+      "Sun": {
+        "longitude": 42.612151,
+        "sign_index": 1,
+        "degree_in_sign": 12.612151,
+        "is_retrograde": false,
+        "speed": 0.959292
+      },
+      "Moon": {
+        "longitude": 290.395321,
+        "sign_index": 9,
+        "degree_in_sign": 20.395321,
+        "is_retrograde": false,
+        "speed": 16.821909
+      },
+      "Mars": {
+        "longitude": 162.04413,
+        "sign_index": 5,
+        "degree_in_sign": 12.04413,
+        "is_retrograde": false,
+        "speed": 0.140054
+      },
+      "Mercury": {
+        "longitude": 65.52211,
+        "sign_index": 2,
+        "degree_in_sign": 5.52211,
+        "is_retrograde": false,
+        "speed": 1.028952
+      },
+      "Jupiter": {
+        "longitude": 341.242799,
+        "sign_index": 11,
+        "degree_in_sign": 11.242799,
+        "is_retrograde": false,
+        "speed": 0.171608
+      },
+      "Venus": {
+        "longitude": 27.36293,
+        "sign_index": 0,
+        "degree_in_sign": 27.36293,
+        "is_retrograde": false,
+        "speed": 1.222469
+      },
+      "Saturn": {
+        "longitude": 67.886005,
+        "sign_index": 2,
+        "degree_in_sign": 7.886005,
+        "is_retrograde": false,
+        "speed": 0.122157
+      },
+      "Rahu": {
+        "longitude": 0.618609,
+        "sign_index": 0,
+        "degree_in_sign": 0.618609,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 180.618609,
+        "sign_index": 6,
+        "degree_in_sign": 0.618609,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

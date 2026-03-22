@@ -1,0 +1,111 @@
+{
+  "adb_id": 47656,
+  "name": "Carl XII, King of Sweden",
+  "given_name": "King of Sweden Carl XII",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2335575.731111,
+    "year": 1682,
+    "month": 6,
+    "day": 17,
+    "calendar": "j",
+    "time": "06:45",
+    "time_type": "l",
+    "hour": 6.75,
+    "time_unknown": false,
+    "place": "Stockholm",
+    "country": "Sweden",
+    "lat": 59.333333,
+    "lon": 18.05
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carl_XII,_King_of_Sweden",
+  "source_notes": "Sy Scholfield quotes \"One year in Sweden; including a visit to the isle of Götland\" by Horace Marryat (London: Murray, 1862), p. 484: \"Charles XI. notes down, '17th June, 1682, as was a Saturday, three quarters before seven, was my wife taken ill, and bore a son.' . . . And he dates these entries 'Stockholm'\"\\nOriginal source notes (data rated B): Steinbrecher quotes the Astrology Magazine of India 3/1971, \"birth time given in a recently published biography by R.M. Hatton.\" (June 17 OS)\\nScholfield checked the source: \"Charles XII of Sweden\" by Ragnhild Marie Hatton (Weybright and Talley, 1968), p. 24: \"On 17 June came the great news. Warwick wrote on that day to the Earl of Conway . . . 'the birth of a young Prince who came into this cold climatt [sic] this morning at three quarters past six.'\" \\n",
+  "categories": [
+    "Family : Childhood : Family supportive",
+    "Family : Relationship : Married late/never",
+    "Passions : Criminal Victim : Homicide victim",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 5.604197,
+    "lagna": 95.604197,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.424977,
+    "jd_ut": 2335575.731111,
+    "planets": {
+      "Sun": {
+        "longitude": 76.288631,
+        "sign_index": 2,
+        "degree_in_sign": 16.288631,
+        "is_retrograde": false,
+        "speed": 0.953083
+      },
+      "Moon": {
+        "longitude": 335.251659,
+        "sign_index": 11,
+        "degree_in_sign": 5.251659,
+        "is_retrograde": false,
+        "speed": 9.765454
+      },
+      "Mars": {
+        "longitude": 60.722117,
+        "sign_index": 2,
+        "degree_in_sign": 0.722117,
+        "is_retrograde": false,
+        "speed": 0.681674
+      },
+      "Mercury": {
+        "longitude": 93.3749,
+        "sign_index": 3,
+        "degree_in_sign": 3.3749,
+        "is_retrograde": false,
+        "speed": 1.803166
+      },
+      "Jupiter": {
+        "longitude": 96.181152,
+        "sign_index": 3,
+        "degree_in_sign": 6.181152,
+        "is_retrograde": false,
+        "speed": 0.214838
+      },
+      "Venus": {
+        "longitude": 94.316698,
+        "sign_index": 3,
+        "degree_in_sign": 4.316698,
+        "is_retrograde": false,
+        "speed": 1.222148
+      },
+      "Saturn": {
+        "longitude": 106.256374,
+        "sign_index": 3,
+        "degree_in_sign": 16.256374,
+        "is_retrograde": false,
+        "speed": 0.117315
+      },
+      "Rahu": {
+        "longitude": 126.649952,
+        "sign_index": 4,
+        "degree_in_sign": 6.649952,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.649952,
+        "sign_index": 10,
+        "degree_in_sign": 6.649952,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

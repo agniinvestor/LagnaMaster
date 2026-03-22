@@ -1,0 +1,115 @@
+{
+  "adb_id": 54910,
+  "name": "Cremer, Bruno",
+  "given_name": "Bruno Cremer",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425890.75,
+    "year": 1929,
+    "month": 10,
+    "day": 6,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "St.Mandé",
+    "country": "France",
+    "lat": 48.833333,
+    "lon": 2.416667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cremer,_Bruno",
+  "source_notes": "Paddy de Jabrun quotes birth certificate\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Illness/ Disease",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Writers : Autobiographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 26.504082,
+    "lagna": 146.504082,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.876105,
+    "jd_ut": 2425890.75,
+    "planets": {
+      "Sun": {
+        "longitude": 169.626496,
+        "sign_index": 5,
+        "degree_in_sign": 19.626496,
+        "is_retrograde": false,
+        "speed": 0.986764
+      },
+      "Moon": {
+        "longitude": 210.342439,
+        "sign_index": 7,
+        "degree_in_sign": 0.342439,
+        "is_retrograde": false,
+        "speed": 14.724009
+      },
+      "Mars": {
+        "longitude": 186.945416,
+        "sign_index": 6,
+        "degree_in_sign": 6.945416,
+        "is_retrograde": false,
+        "speed": 0.677502
+      },
+      "Mercury": {
+        "longitude": 173.96408,
+        "sign_index": 5,
+        "degree_in_sign": 23.96408,
+        "is_retrograde": true,
+        "speed": -1.146201
+      },
+      "Jupiter": {
+        "longitude": 53.531946,
+        "sign_index": 1,
+        "degree_in_sign": 23.531946,
+        "is_retrograde": true,
+        "speed": -0.002843
+      },
+      "Venus": {
+        "longitude": 139.977805,
+        "sign_index": 4,
+        "degree_in_sign": 19.977805,
+        "is_retrograde": false,
+        "speed": 1.221177
+      },
+      "Saturn": {
+        "longitude": 242.18412,
+        "sign_index": 8,
+        "degree_in_sign": 2.18412,
+        "is_retrograde": false,
+        "speed": 0.059363
+      },
+      "Rahu": {
+        "longitude": 20.658617,
+        "sign_index": 0,
+        "degree_in_sign": 20.658617,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 200.658617,
+        "sign_index": 6,
+        "degree_in_sign": 20.658617,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

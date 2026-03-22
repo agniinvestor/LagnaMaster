@@ -1,0 +1,108 @@
+{
+  "adb_id": 52244,
+  "name": "Carraro, Tino",
+  "given_name": "Tino Carraro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419007.333333,
+    "year": 1910,
+    "month": 12,
+    "day": 1,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Milano",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carraro,_Tino",
+  "source_notes": "Ed Steinbrecher collection: Bordoni quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 21.410606,
+    "lagna": 81.410606,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.612942,
+    "jd_ut": 2419007.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 226.160439,
+        "sign_index": 7,
+        "degree_in_sign": 16.160439,
+        "is_retrograde": false,
+        "speed": 1.01436
+      },
+      "Moon": {
+        "longitude": 225.244738,
+        "sign_index": 7,
+        "degree_in_sign": 15.244738,
+        "is_retrograde": false,
+        "speed": 14.163962
+      },
+      "Mars": {
+        "longitude": 204.503231,
+        "sign_index": 6,
+        "degree_in_sign": 24.503231,
+        "is_retrograde": false,
+        "speed": 0.684669
+      },
+      "Mercury": {
+        "longitude": 236.782227,
+        "sign_index": 7,
+        "degree_in_sign": 26.782227,
+        "is_retrograde": false,
+        "speed": 1.539632
+      },
+      "Jupiter": {
+        "longitude": 191.529894,
+        "sign_index": 6,
+        "degree_in_sign": 11.529894,
+        "is_retrograde": false,
+        "speed": 0.197474
+      },
+      "Venus": {
+        "longitude": 227.444019,
+        "sign_index": 7,
+        "degree_in_sign": 17.444019,
+        "is_retrograde": false,
+        "speed": 1.257813
+      },
+      "Saturn": {
+        "longitude": 7.965252,
+        "sign_index": 0,
+        "degree_in_sign": 7.965252,
+        "is_retrograde": true,
+        "speed": -0.053825
+      },
+      "Rahu": {
+        "longitude": 25.425245,
+        "sign_index": 0,
+        "degree_in_sign": 25.425245,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 205.425245,
+        "sign_index": 6,
+        "degree_in_sign": 25.425245,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

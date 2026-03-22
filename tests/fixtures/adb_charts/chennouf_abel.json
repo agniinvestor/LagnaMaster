@@ -1,0 +1,108 @@
+{
+  "adb_id": 56914,
+  "name": "Chennouf, Abel",
+  "given_name": "Abel Chennouf",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446767.947917,
+    "year": 1986,
+    "month": 12,
+    "day": 3,
+    "calendar": "g",
+    "time": "11:45",
+    "time_type": "s",
+    "hour": 11.75,
+    "time_unknown": false,
+    "place": "Martigues",
+    "country": "France",
+    "lat": 43.4,
+    "lon": 5.05
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chennouf,_Abel",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Passions : Criminal Victim : Homicide victim"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 20.191749,
+    "lagna": 260.191749,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.674401,
+    "jd_ut": 2446767.947917,
+    "planets": {
+      "Sun": {
+        "longitude": 227.297809,
+        "sign_index": 7,
+        "degree_in_sign": 17.297809,
+        "is_retrograde": false,
+        "speed": 1.014586
+      },
+      "Moon": {
+        "longitude": 252.631815,
+        "sign_index": 8,
+        "degree_in_sign": 12.631815,
+        "is_retrograde": false,
+        "speed": 11.518825
+      },
+      "Mars": {
+        "longitude": 311.310853,
+        "sign_index": 10,
+        "degree_in_sign": 11.310853,
+        "is_retrograde": false,
+        "speed": 0.683003
+      },
+      "Mercury": {
+        "longitude": 207.574347,
+        "sign_index": 6,
+        "degree_in_sign": 27.574347,
+        "is_retrograde": false,
+        "speed": 1.213997
+      },
+      "Jupiter": {
+        "longitude": 320.348836,
+        "sign_index": 10,
+        "degree_in_sign": 20.348836,
+        "is_retrograde": false,
+        "speed": 0.082508
+      },
+      "Venus": {
+        "longitude": 192.266913,
+        "sign_index": 6,
+        "degree_in_sign": 12.266913,
+        "is_retrograde": false,
+        "speed": 0.276809
+      },
+      "Saturn": {
+        "longitude": 228.387729,
+        "sign_index": 7,
+        "degree_in_sign": 18.387729,
+        "is_retrograde": false,
+        "speed": 0.118569
+      },
+      "Rahu": {
+        "longitude": 354.333056,
+        "sign_index": 11,
+        "degree_in_sign": 24.333056,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 174.333056,
+        "sign_index": 5,
+        "degree_in_sign": 24.333056,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 60556,
+  "name": "Colonna-Walewski, Alexandre",
+  "given_name": "Alexandre Colonna-Walewski",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2382272.112037,
+    "year": 1810,
+    "month": 5,
+    "day": 4,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "l",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Walewice",
+    "country": "Poland",
+    "lat": 52.1,
+    "lon": 19.666667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colonna-Walewski,_Alexandre",
+  "source_notes": "Sy Scholfield quotes \"Marie Walewska: Napoleon's great love‎\" (Robin Clark Limited, 1979), p. 147: \"On 4 May 1810, at four o'clock in the afternoon, Alexander Florian Joseph Colonna Walewski, a perfectly formed, robust little boy, opened his eyes on a world in which he was to enjoy a prominent and tempestuous career. 'I was born at the castle of Walewice in Poland, in the middle of a thunderstorm,' the future Foreign Minister of France wrote in his Memoirs some thirty-five years later.\" The source of the time of birth is unclear but the birth certificate is mentioned on the same page. \\n\\nPTA quotes same data from B.C. provided by Jaroslaw Gronert [http://www.astrolog.org.pl/baza-horoskopow/Colonna-Walewski_Aleksander]. \\n",
+  "categories": [
+    "Vocation : Politics : Diplomat"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.853689,
+    "lagna": 145.853689,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.208876,
+    "jd_ut": 2382272.112037,
+    "planets": {
+      "Sun": {
+        "longitude": 22.219805,
+        "sign_index": 0,
+        "degree_in_sign": 22.219805,
+        "is_retrograde": false,
+        "speed": 0.968091
+      },
+      "Moon": {
+        "longitude": 33.265312,
+        "sign_index": 1,
+        "degree_in_sign": 3.265312,
+        "is_retrograde": false,
+        "speed": 10.116528
+      },
+      "Mars": {
+        "longitude": 33.464251,
+        "sign_index": 1,
+        "degree_in_sign": 3.464251,
+        "is_retrograde": false,
+        "speed": 0.708064
+      },
+      "Mercury": {
+        "longitude": 31.577232,
+        "sign_index": 1,
+        "degree_in_sign": 1.577232,
+        "is_retrograde": false,
+        "speed": 2.090697
+      },
+      "Jupiter": {
+        "longitude": 18.039177,
+        "sign_index": 0,
+        "degree_in_sign": 18.039177,
+        "is_retrograde": false,
+        "speed": 0.238717
+      },
+      "Venus": {
+        "longitude": 35.084445,
+        "sign_index": 1,
+        "degree_in_sign": 5.084445,
+        "is_retrograde": false,
+        "speed": 1.229343
+      },
+      "Saturn": {
+        "longitude": 232.841791,
+        "sign_index": 7,
+        "degree_in_sign": 22.841791,
+        "is_retrograde": true,
+        "speed": -0.058123
+      },
+      "Rahu": {
+        "longitude": 172.103431,
+        "sign_index": 5,
+        "degree_in_sign": 22.103431,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 352.103431,
+        "sign_index": 11,
+        "degree_in_sign": 22.103431,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

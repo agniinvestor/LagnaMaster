@@ -1,0 +1,108 @@
+{
+  "adb_id": 47897,
+  "name": "Cola, Barbara",
+  "given_name": "Barbara Cola",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440625.958333,
+    "year": 1970,
+    "month": 2,
+    "day": 8,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Bologna",
+    "country": "Italy",
+    "lat": 44.483333,
+    "lon": 11.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cola,_Barbara",
+  "source_notes": "Bordoni quotes B.C. Datanotizie No.3 9/1995\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 22.475858,
+    "lagna": 22.475858,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.439524,
+    "jd_ut": 2440625.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 295.83465,
+        "sign_index": 9,
+        "degree_in_sign": 25.83465,
+        "is_retrograde": false,
+        "speed": 1.012879
+      },
+      "Moon": {
+        "longitude": 326.170538,
+        "sign_index": 10,
+        "degree_in_sign": 26.170538,
+        "is_retrograde": false,
+        "speed": 11.359842
+      },
+      "Mars": {
+        "longitude": 347.278634,
+        "sign_index": 11,
+        "degree_in_sign": 17.278634,
+        "is_retrograde": false,
+        "speed": 0.732703
+      },
+      "Mercury": {
+        "longitude": 270.457941,
+        "sign_index": 9,
+        "degree_in_sign": 0.457941,
+        "is_retrograde": false,
+        "speed": 1.116683
+      },
+      "Jupiter": {
+        "longitude": 192.323443,
+        "sign_index": 6,
+        "degree_in_sign": 12.323443,
+        "is_retrograde": false,
+        "speed": 0.035679
+      },
+      "Venus": {
+        "longitude": 299.347524,
+        "sign_index": 9,
+        "degree_in_sign": 29.347524,
+        "is_retrograde": false,
+        "speed": 1.254239
+      },
+      "Saturn": {
+        "longitude": 9.768042,
+        "sign_index": 0,
+        "degree_in_sign": 9.768042,
+        "is_retrograde": false,
+        "speed": 0.062954
+      },
+      "Rahu": {
+        "longitude": 319.809572,
+        "sign_index": 10,
+        "degree_in_sign": 19.809572,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 139.809572,
+        "sign_index": 4,
+        "degree_in_sign": 19.809572,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

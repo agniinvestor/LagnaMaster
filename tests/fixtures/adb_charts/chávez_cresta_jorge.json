@@ -1,0 +1,110 @@
+{
+  "adb_id": 96499,
+  "name": "Chávez Cresta, Jorge",
+  "given_name": "Jorge Chávez Cresta",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437430.770833,
+    "year": 1961,
+    "month": 5,
+    "day": 11,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Pueblo Libre",
+    "country": "Peru",
+    "lat": -12.083333,
+    "lon": -77.066667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chávez_Cresta,_Jorge",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 22.767655,
+    "lagna": 292.767655,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.317344,
+    "jd_ut": 2437430.770833,
+    "planets": {
+      "Sun": {
+        "longitude": 27.009985,
+        "sign_index": 0,
+        "degree_in_sign": 27.009985,
+        "is_retrograde": false,
+        "speed": 0.966029
+      },
+      "Moon": {
+        "longitude": 344.773946,
+        "sign_index": 11,
+        "degree_in_sign": 14.773946,
+        "is_retrograde": false,
+        "speed": 16.389815
+      },
+      "Mars": {
+        "longitude": 99.401865,
+        "sign_index": 3,
+        "degree_in_sign": 9.401865,
+        "is_retrograde": false,
+        "speed": 0.525226
+      },
+      "Mercury": {
+        "longitude": 37.883294,
+        "sign_index": 1,
+        "degree_in_sign": 7.883294,
+        "is_retrograde": false,
+        "speed": 2.054278
+      },
+      "Jupiter": {
+        "longitude": 283.507402,
+        "sign_index": 9,
+        "degree_in_sign": 13.507402,
+        "is_retrograde": false,
+        "speed": 0.045456
+      },
+      "Venus": {
+        "longitude": 350.955128,
+        "sign_index": 11,
+        "degree_in_sign": 20.955128,
+        "is_retrograde": false,
+        "speed": 0.323462
+      },
+      "Saturn": {
+        "longitude": 276.538312,
+        "sign_index": 9,
+        "degree_in_sign": 6.538312,
+        "is_retrograde": true,
+        "speed": -0.002615
+      },
+      "Rahu": {
+        "longitude": 129.129093,
+        "sign_index": 4,
+        "degree_in_sign": 9.129093,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.129093,
+        "sign_index": 10,
+        "degree_in_sign": 9.129093,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 53504,
+  "name": "Coffe, Jean-Pierre",
+  "given_name": "Jean-Pierre Coffe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428981.625,
+    "year": 1938,
+    "month": 3,
+    "day": 24,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Lunéville",
+    "country": "France",
+    "lat": 48.6,
+    "lon": 6.5
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coffe,_Jean-Pierre",
+  "source_notes": "Steinbrecher collection: Infosophia quotes daisy van de vin/birth record\\n",
+  "categories": [
+    "Vocation : Food and Beverage : Restaurateur"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 8.354413,
+    "lagna": 248.354413,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.99428,
+    "jd_ut": 2428981.625,
+    "planets": {
+      "Sun": {
+        "longitude": 339.823797,
+        "sign_index": 11,
+        "degree_in_sign": 9.823797,
+        "is_retrograde": false,
+        "speed": 0.99123
+      },
+      "Moon": {
+        "longitude": 251.057692,
+        "sign_index": 8,
+        "degree_in_sign": 11.057692,
+        "is_retrograde": false,
+        "speed": 9.006173
+      },
+      "Mars": {
+        "longitude": 15.469387,
+        "sign_index": 0,
+        "degree_in_sign": 15.469387,
+        "is_retrograde": false,
+        "speed": 0.713371
+      },
+      "Mercury": {
+        "longitude": 354.535449,
+        "sign_index": 11,
+        "degree_in_sign": 24.535449,
+        "is_retrograde": false,
+        "speed": 1.77866
+      },
+      "Jupiter": {
+        "longitude": 298.517826,
+        "sign_index": 9,
+        "degree_in_sign": 28.517826,
+        "is_retrograde": false,
+        "speed": 0.207016
+      },
+      "Venus": {
+        "longitude": 351.588373,
+        "sign_index": 11,
+        "degree_in_sign": 21.588373,
+        "is_retrograde": false,
+        "speed": 1.240652
+      },
+      "Saturn": {
+        "longitude": 344.315689,
+        "sign_index": 11,
+        "degree_in_sign": 14.315689,
+        "is_retrograde": false,
+        "speed": 0.124931
+      },
+      "Rahu": {
+        "longitude": 216.866738,
+        "sign_index": 7,
+        "degree_in_sign": 6.866738,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 36.866738,
+        "sign_index": 1,
+        "degree_in_sign": 6.866738,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

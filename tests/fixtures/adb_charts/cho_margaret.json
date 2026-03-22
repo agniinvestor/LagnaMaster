@@ -1,0 +1,112 @@
+{
+  "adb_id": 49998,
+  "name": "Cho, Margaret",
+  "given_name": "Margaret Cho",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440196.103472,
+    "year": 1968,
+    "month": 12,
+    "day": 5,
+    "calendar": "g",
+    "time": "06:29",
+    "time_type": "s",
+    "hour": 6.483333,
+    "time_unknown": false,
+    "place": "San Francisco",
+    "country": "California",
+    "lat": 37.783333,
+    "lon": -122.416667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cho,_Margaret",
+  "source_notes": "PT quotes birth certificate in hand\\n",
+  "categories": [
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Writers : Autobiographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.163218,
+    "lagna": 197.163218,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.423087,
+    "jd_ut": 2440196.103472,
+    "planets": {
+      "Sun": {
+        "longitude": 230.111979,
+        "sign_index": 7,
+        "degree_in_sign": 20.111979,
+        "is_retrograde": false,
+        "speed": 1.014768
+      },
+      "Moon": {
+        "longitude": 56.309361,
+        "sign_index": 1,
+        "degree_in_sign": 26.309361,
+        "is_retrograde": false,
+        "speed": 11.815272
+      },
+      "Mars": {
+        "longitude": 172.413035,
+        "sign_index": 5,
+        "degree_in_sign": 22.413035,
+        "is_retrograde": false,
+        "speed": 0.592491
+      },
+      "Mercury": {
+        "longitude": 229.278238,
+        "sign_index": 7,
+        "degree_in_sign": 19.278238,
+        "is_retrograde": false,
+        "speed": 1.570288
+      },
+      "Jupiter": {
+        "longitude": 159.492539,
+        "sign_index": 5,
+        "degree_in_sign": 9.492539,
+        "is_retrograde": false,
+        "speed": 0.128607
+      },
+      "Venus": {
+        "longitude": 271.425967,
+        "sign_index": 9,
+        "degree_in_sign": 1.425967,
+        "is_retrograde": false,
+        "speed": 1.189692
+      },
+      "Saturn": {
+        "longitude": 355.504216,
+        "sign_index": 11,
+        "degree_in_sign": 25.504216,
+        "is_retrograde": true,
+        "speed": -0.028712
+      },
+      "Rahu": {
+        "longitude": 342.588459,
+        "sign_index": 11,
+        "degree_in_sign": 12.588459,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 162.588459,
+        "sign_index": 5,
+        "degree_in_sign": 12.588459,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

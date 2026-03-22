@@ -1,0 +1,108 @@
+{
+  "adb_id": 70449,
+  "name": "Cambon, Camille",
+  "given_name": "Camille Cambon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407143.364213,
+    "year": 1878,
+    "month": 6,
+    "day": 7,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "l",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Montpellier",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 3.883333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cambon,_Camille",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 53.\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.003039,
+    "lagna": 232.003039,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.159419,
+    "jd_ut": 2407143.364213,
+    "planets": {
+      "Sun": {
+        "longitude": 54.738366,
+        "sign_index": 1,
+        "degree_in_sign": 24.738366,
+        "is_retrograde": false,
+        "speed": 0.956093
+      },
+      "Moon": {
+        "longitude": 140.553198,
+        "sign_index": 4,
+        "degree_in_sign": 20.553198,
+        "is_retrograde": false,
+        "speed": 11.530683
+      },
+      "Mars": {
+        "longitude": 88.313771,
+        "sign_index": 2,
+        "degree_in_sign": 28.313771,
+        "is_retrograde": false,
+        "speed": 0.627486
+      },
+      "Mercury": {
+        "longitude": 31.429808,
+        "sign_index": 1,
+        "degree_in_sign": 1.429808,
+        "is_retrograde": false,
+        "speed": 1.236338
+      },
+      "Jupiter": {
+        "longitude": 284.72816,
+        "sign_index": 9,
+        "degree_in_sign": 14.72816,
+        "is_retrograde": true,
+        "speed": -0.041429
+      },
+      "Venus": {
+        "longitude": 12.014895,
+        "sign_index": 0,
+        "degree_in_sign": 12.014895,
+        "is_retrograde": false,
+        "speed": 1.112627
+      },
+      "Saturn": {
+        "longitude": 339.634086,
+        "sign_index": 11,
+        "degree_in_sign": 9.634086,
+        "is_retrograde": false,
+        "speed": 0.058825
+      },
+      "Rahu": {
+        "longitude": 294.122042,
+        "sign_index": 9,
+        "degree_in_sign": 24.122042,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 114.122042,
+        "sign_index": 3,
+        "degree_in_sign": 24.122042,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

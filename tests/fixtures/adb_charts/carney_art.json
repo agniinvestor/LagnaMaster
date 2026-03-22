@@ -1,0 +1,116 @@
+{
+  "adb_id": 5178,
+  "name": "Carney, Art",
+  "given_name": "Art Carney",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421902.440972,
+    "year": 1918,
+    "month": 11,
+    "day": 4,
+    "calendar": "g",
+    "time": "17:35",
+    "time_type": "s",
+    "hour": 17.583333,
+    "time_unknown": false,
+    "place": "Mount Vernon (Erie County)",
+    "country": "New York",
+    "lat": 42.75,
+    "lon": -78.883333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sco",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carney,_Art",
+  "source_notes": "B.C. in hand from Steinbrecher.  (Same in Contemporary American Horoscopes)\\n",
+  "categories": [
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Diagnoses : Psychological : Depression",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Military : Wounded",
+    "Notable : Awards : Emmy",
+    "Notable : Awards : Oscar"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 8.441027,
+    "lagna": 8.441027,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.723624,
+    "jd_ut": 2421902.440972,
+    "planets": {
+      "Sun": {
+        "longitude": 198.979294,
+        "sign_index": 6,
+        "degree_in_sign": 18.979294,
+        "is_retrograde": false,
+        "speed": 1.002972
+      },
+      "Moon": {
+        "longitude": 210.175205,
+        "sign_index": 7,
+        "degree_in_sign": 0.175205,
+        "is_retrograde": false,
+        "speed": 10.449717
+      },
+      "Mars": {
+        "longitude": 242.403307,
+        "sign_index": 8,
+        "degree_in_sign": 2.403307,
+        "is_retrograde": false,
+        "speed": 0.747307
+      },
+      "Mercury": {
+        "longitude": 211.289368,
+        "sign_index": 7,
+        "degree_in_sign": 1.289368,
+        "is_retrograde": false,
+        "speed": 1.517008
+      },
+      "Jupiter": {
+        "longitude": 83.097435,
+        "sign_index": 2,
+        "degree_in_sign": 23.097435,
+        "is_retrograde": true,
+        "speed": -0.004605
+      },
+      "Venus": {
+        "longitude": 194.218273,
+        "sign_index": 6,
+        "degree_in_sign": 14.218273,
+        "is_retrograde": false,
+        "speed": 1.255227
+      },
+      "Saturn": {
+        "longitude": 124.410407,
+        "sign_index": 4,
+        "degree_in_sign": 4.410407,
+        "is_retrograde": false,
+        "speed": 0.061666
+      },
+      "Rahu": {
+        "longitude": 232.007427,
+        "sign_index": 7,
+        "degree_in_sign": 22.007427,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 52.007427,
+        "sign_index": 1,
+        "degree_in_sign": 22.007427,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 2290,
+  "name": "Clemenceau, Georges",
+  "given_name": "Georges Clemenceau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393742.398194,
+    "year": 1841,
+    "month": 9,
+    "day": 28,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "l",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Mouilleron-en-Pareds",
+    "country": "France",
+    "lat": 46.676667,
+    "lon": -0.85
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clemenceau,_Georges",
+  "source_notes": "Gauquelin Vol 2/162\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Physician",
+    "Vocation : Politics : Heads of state",
+    "Vocation : Politics : Public office",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 14.270961,
+    "lagna": 44.270961,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.647218,
+    "jd_ut": 2393742.398194,
+    "planets": {
+      "Sun": {
+        "longitude": 163.911355,
+        "sign_index": 5,
+        "degree_in_sign": 13.911355,
+        "is_retrograde": false,
+        "speed": 0.983028
+      },
+      "Moon": {
+        "longitude": 323.205875,
+        "sign_index": 10,
+        "degree_in_sign": 23.205875,
+        "is_retrograde": false,
+        "speed": 8.830229
+      },
+      "Mars": {
+        "longitude": 233.282328,
+        "sign_index": 7,
+        "degree_in_sign": 23.282328,
+        "is_retrograde": false,
+        "speed": 0.696795
+      },
+      "Mercury": {
+        "longitude": 178.213138,
+        "sign_index": 5,
+        "degree_in_sign": 28.213138,
+        "is_retrograde": false,
+        "speed": 1.564446
+      },
+      "Jupiter": {
+        "longitude": 232.399059,
+        "sign_index": 7,
+        "degree_in_sign": 22.399059,
+        "is_retrograde": false,
+        "speed": 0.142744
+      },
+      "Venus": {
+        "longitude": 127.000061,
+        "sign_index": 4,
+        "degree_in_sign": 7.000061,
+        "is_retrograde": false,
+        "speed": 1.188391
+      },
+      "Saturn": {
+        "longitude": 245.483878,
+        "sign_index": 8,
+        "degree_in_sign": 5.483878,
+        "is_retrograde": false,
+        "speed": 0.045263
+      },
+      "Rahu": {
+        "longitude": 284.267983,
+        "sign_index": 9,
+        "degree_in_sign": 14.267983,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 104.267983,
+        "sign_index": 3,
+        "degree_in_sign": 14.267983,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

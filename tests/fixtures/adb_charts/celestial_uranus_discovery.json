@@ -1,0 +1,112 @@
+{
+  "adb_id": 37777,
+  "name": "Celestial: Uranus Discovery",
+  "given_name": "Celestial: Uranus Discovery",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2371629.444074,
+    "year": 1781,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "l",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Bath",
+    "country": "England",
+    "lat": 51.383333,
+    "lon": -2.366667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celestial:_Uranus_Discovery",
+  "source_notes": "Steinbrecher quotes a notation in Herschel's notebook, \"Between 10 and 11 in the evening.\"\\n",
+  "categories": [
+    "Notable : Famous : First in Field",
+    "Notable : Famous : Newsmaker",
+    "Notable : Famous : Notable extremes",
+    "Mundane : Medical/Science : Space",
+    "Mundane : Misc. Mundane : Discoveries"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 0.116428,
+    "lagna": 180.116428,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.802215,
+    "jd_ut": 2371629.444074,
+    "planets": {
+      "Sun": {
+        "longitude": 332.95409,
+        "sign_index": 11,
+        "degree_in_sign": 2.95409,
+        "is_retrograde": false,
+        "speed": 0.994547
+      },
+      "Moon": {
+        "longitude": 204.987036,
+        "sign_index": 6,
+        "degree_in_sign": 24.987036,
+        "is_retrograde": false,
+        "speed": 13.622568
+      },
+      "Mars": {
+        "longitude": 242.618535,
+        "sign_index": 8,
+        "degree_in_sign": 2.618535,
+        "is_retrograde": false,
+        "speed": 0.549328
+      },
+      "Mercury": {
+        "longitude": 350.943147,
+        "sign_index": 11,
+        "degree_in_sign": 20.943147,
+        "is_retrograde": false,
+        "speed": 1.294384
+      },
+      "Jupiter": {
+        "longitude": 216.618027,
+        "sign_index": 7,
+        "degree_in_sign": 6.618027,
+        "is_retrograde": true,
+        "speed": -0.002383
+      },
+      "Venus": {
+        "longitude": 312.10651,
+        "sign_index": 10,
+        "degree_in_sign": 12.10651,
+        "is_retrograde": false,
+        "speed": 1.236602
+      },
+      "Saturn": {
+        "longitude": 238.900109,
+        "sign_index": 7,
+        "degree_in_sign": 28.900109,
+        "is_retrograde": false,
+        "speed": 0.024951
+      },
+      "Rahu": {
+        "longitude": 16.081898,
+        "sign_index": 0,
+        "degree_in_sign": 16.081898,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 196.081898,
+        "sign_index": 6,
+        "degree_in_sign": 16.081898,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

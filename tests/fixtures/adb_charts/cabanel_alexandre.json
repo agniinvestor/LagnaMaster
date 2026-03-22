@@ -1,0 +1,110 @@
+{
+  "adb_id": 47712,
+  "name": "Cabanel, Alexandre",
+  "given_name": "Alexandre Cabanel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2387166.489213,
+    "year": 1823,
+    "month": 9,
+    "day": 28,
+    "calendar": "g",
+    "time": "00:00",
+    "time_type": "l",
+    "hour": 0.0,
+    "time_unknown": false,
+    "place": "Montpellier",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 3.883333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabanel,_Alexandre",
+  "source_notes": "Gauquelin  Vol.4/176 has 28 Sept 1824, 0:01, which must be a reading error for the year. \\nThe Geslain archive holds the birth record, 27 September 1823, minuit (midnight). That must be taken as beginning of day 0:00 of 28. September. \\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Business : Top executive",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 12.701849,
+    "lagna": 72.701849,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.395909,
+    "jd_ut": 2387166.489213,
+    "planets": {
+      "Sun": {
+        "longitude": 162.640212,
+        "sign_index": 5,
+        "degree_in_sign": 12.640212,
+        "is_retrograde": false,
+        "speed": 0.982648
+      },
+      "Moon": {
+        "longitude": 79.3811,
+        "sign_index": 2,
+        "degree_in_sign": 19.3811,
+        "is_retrograde": false,
+        "speed": 14.47328
+      },
+      "Mars": {
+        "longitude": 112.110603,
+        "sign_index": 3,
+        "degree_in_sign": 22.110603,
+        "is_retrograde": false,
+        "speed": 0.608145
+      },
+      "Mercury": {
+        "longitude": 188.425459,
+        "sign_index": 6,
+        "degree_in_sign": 8.425459,
+        "is_retrograde": false,
+        "speed": 0.861023
+      },
+      "Jupiter": {
+        "longitude": 78.104113,
+        "sign_index": 2,
+        "degree_in_sign": 18.104113,
+        "is_retrograde": false,
+        "speed": 0.098162
+      },
+      "Venus": {
+        "longitude": 181.97097,
+        "sign_index": 6,
+        "degree_in_sign": 1.97097,
+        "is_retrograde": true,
+        "speed": -0.314923
+      },
+      "Saturn": {
+        "longitude": 32.076135,
+        "sign_index": 1,
+        "degree_in_sign": 2.076135,
+        "is_retrograde": true,
+        "speed": -0.037681
+      },
+      "Rahu": {
+        "longitude": 272.739679,
+        "sign_index": 9,
+        "degree_in_sign": 2.739679,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 92.739679,
+        "sign_index": 3,
+        "degree_in_sign": 2.739679,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

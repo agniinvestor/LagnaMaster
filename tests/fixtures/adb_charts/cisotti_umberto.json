@@ -1,0 +1,111 @@
+{
+  "adb_id": 81049,
+  "name": "Cisotti, Umberto",
+  "given_name": "Umberto Cisotti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408502.881991,
+    "year": 1882,
+    "month": 2,
+    "day": 26,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Voghera",
+    "country": "Italy",
+    "lat": 44.983333,
+    "lon": 9.016667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cisotti,_Umberto",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Vocation : Science : Physics",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 10.79384,
+    "lagna": 10.79384,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.211386,
+    "jd_ut": 2408502.881991,
+    "planets": {
+      "Sun": {
+        "longitude": 315.492662,
+        "sign_index": 10,
+        "degree_in_sign": 15.492662,
+        "is_retrograde": false,
+        "speed": 1.004037
+      },
+      "Moon": {
+        "longitude": 63.019404,
+        "sign_index": 2,
+        "degree_in_sign": 3.019404,
+        "is_retrograde": false,
+        "speed": 15.564025
+      },
+      "Mars": {
+        "longitude": 67.850672,
+        "sign_index": 2,
+        "degree_in_sign": 7.850672,
+        "is_retrograde": false,
+        "speed": 0.244969
+      },
+      "Mercury": {
+        "longitude": 307.322693,
+        "sign_index": 10,
+        "degree_in_sign": 7.322693,
+        "is_retrograde": true,
+        "speed": -0.963088
+      },
+      "Jupiter": {
+        "longitude": 27.523461,
+        "sign_index": 0,
+        "degree_in_sign": 27.523461,
+        "is_retrograde": false,
+        "speed": 0.140418
+      },
+      "Venus": {
+        "longitude": 316.806916,
+        "sign_index": 10,
+        "degree_in_sign": 16.806916,
+        "is_retrograde": false,
+        "speed": 1.249993
+      },
+      "Saturn": {
+        "longitude": 15.58792,
+        "sign_index": 0,
+        "degree_in_sign": 15.58792,
+        "is_retrograde": false,
+        "speed": 0.084278
+      },
+      "Rahu": {
+        "longitude": 222.078305,
+        "sign_index": 7,
+        "degree_in_sign": 12.078305,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 42.078305,
+        "sign_index": 1,
+        "degree_in_sign": 12.078305,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

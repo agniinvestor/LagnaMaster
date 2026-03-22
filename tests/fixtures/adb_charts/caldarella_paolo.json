@@ -1,0 +1,109 @@
+{
+  "adb_id": 47723,
+  "name": "Caldarella, Paolo",
+  "given_name": "Paolo Caldarella",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438658.625,
+    "year": 1964,
+    "month": 9,
+    "day": 20,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Milan",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caldarella,_Paolo",
+  "source_notes": "Bordoni quotes B.C. Vol.6\\n",
+  "categories": [
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Sports : Water sports"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 15.561802,
+    "lagna": 105.561802,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.364295,
+    "jd_ut": 2438658.625,
+    "planets": {
+      "Sun": {
+        "longitude": 153.817883,
+        "sign_index": 5,
+        "degree_in_sign": 3.817883,
+        "is_retrograde": false,
+        "speed": 0.977067
+      },
+      "Moon": {
+        "longitude": 313.155778,
+        "sign_index": 10,
+        "degree_in_sign": 13.155778,
+        "is_retrograde": false,
+        "speed": 12.298273
+      },
+      "Mars": {
+        "longitude": 99.654554,
+        "sign_index": 3,
+        "degree_in_sign": 9.654554,
+        "is_retrograde": false,
+        "speed": 0.611688
+      },
+      "Mercury": {
+        "longitude": 136.127057,
+        "sign_index": 4,
+        "degree_in_sign": 16.127057,
+        "is_retrograde": false,
+        "speed": 1.172108
+      },
+      "Jupiter": {
+        "longitude": 32.721712,
+        "sign_index": 1,
+        "degree_in_sign": 2.721712,
+        "is_retrograde": true,
+        "speed": -0.017868
+      },
+      "Venus": {
+        "longitude": 109.2331,
+        "sign_index": 3,
+        "degree_in_sign": 19.2331,
+        "is_retrograde": false,
+        "speed": 1.083823
+      },
+      "Saturn": {
+        "longitude": 306.432791,
+        "sign_index": 10,
+        "degree_in_sign": 6.432791,
+        "is_retrograde": true,
+        "speed": -0.062451
+      },
+      "Rahu": {
+        "longitude": 64.062587,
+        "sign_index": 2,
+        "degree_in_sign": 4.062587,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 244.062587,
+        "sign_index": 8,
+        "degree_in_sign": 4.062587,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

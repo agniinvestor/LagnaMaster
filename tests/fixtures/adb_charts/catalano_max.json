@@ -1,0 +1,109 @@
+{
+  "adb_id": 71614,
+  "name": "Catalano, Max",
+  "given_name": "Max Catalano",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2428217.541667,
+    "year": 1936,
+    "month": 2,
+    "day": 19,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Catalano,_Max",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from him.\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 20.621101,
+    "lagna": 200.621101,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.965066,
+    "jd_ut": 2428217.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 306.250249,
+        "sign_index": 10,
+        "degree_in_sign": 6.250249,
+        "is_retrograde": false,
+        "speed": 1.008776
+      },
+      "Moon": {
+        "longitude": 256.969016,
+        "sign_index": 8,
+        "degree_in_sign": 16.969016,
+        "is_retrograde": false,
+        "speed": 14.530377
+      },
+      "Mars": {
+        "longitude": 334.619634,
+        "sign_index": 11,
+        "degree_in_sign": 4.619634,
+        "is_retrograde": false,
+        "speed": 0.770541
+      },
+      "Mercury": {
+        "longitude": 280.775895,
+        "sign_index": 9,
+        "degree_in_sign": 10.775895,
+        "is_retrograde": false,
+        "speed": 0.584432
+      },
+      "Jupiter": {
+        "longitude": 237.574769,
+        "sign_index": 7,
+        "degree_in_sign": 27.574769,
+        "is_retrograde": false,
+        "speed": 0.141119
+      },
+      "Venus": {
+        "longitude": 273.190303,
+        "sign_index": 9,
+        "degree_in_sign": 3.190303,
+        "is_retrograde": false,
+        "speed": 1.224221
+      },
+      "Saturn": {
+        "longitude": 318.196768,
+        "sign_index": 10,
+        "degree_in_sign": 18.196768,
+        "is_retrograde": false,
+        "speed": 0.120842
+      },
+      "Rahu": {
+        "longitude": 257.357097,
+        "sign_index": 8,
+        "degree_in_sign": 17.357097,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 77.357097,
+        "sign_index": 2,
+        "degree_in_sign": 17.357097,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

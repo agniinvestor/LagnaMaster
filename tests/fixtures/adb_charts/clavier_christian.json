@@ -1,0 +1,108 @@
+{
+  "adb_id": 57154,
+  "name": "Clavier, Christian",
+  "given_name": "Christian Clavier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434138.965278,
+    "year": 1952,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "12:10",
+    "time_type": "s",
+    "hour": 12.166667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clavier,_Christian",
+  "source_notes": "Paddy de Jabrun quoted bc in Horoscope 534\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 3.115144,
+    "lagna": 93.115144,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.191473,
+    "jd_ut": 2434138.965278,
+    "planets": {
+      "Sun": {
+        "longitude": 22.663855,
+        "sign_index": 0,
+        "degree_in_sign": 22.663855,
+        "is_retrograde": false,
+        "speed": 0.967513
+      },
+      "Moon": {
+        "longitude": 161.335351,
+        "sign_index": 5,
+        "degree_in_sign": 11.335351,
+        "is_retrograde": false,
+        "speed": 15.718019
+      },
+      "Mars": {
+        "longitude": 195.435826,
+        "sign_index": 6,
+        "degree_in_sign": 15.435826,
+        "is_retrograde": true,
+        "speed": -0.366441
+      },
+      "Mercury": {
+        "longitude": 356.305458,
+        "sign_index": 11,
+        "degree_in_sign": 26.305458,
+        "is_retrograde": false,
+        "speed": 1.117796
+      },
+      "Jupiter": {
+        "longitude": 8.614931,
+        "sign_index": 0,
+        "degree_in_sign": 8.614931,
+        "is_retrograde": false,
+        "speed": 0.236638
+      },
+      "Venus": {
+        "longitude": 9.378229,
+        "sign_index": 0,
+        "degree_in_sign": 9.378229,
+        "is_retrograde": false,
+        "speed": 1.228093
+      },
+      "Saturn": {
+        "longitude": 165.992904,
+        "sign_index": 5,
+        "degree_in_sign": 15.992904,
+        "is_retrograde": true,
+        "speed": -0.05416
+      },
+      "Rahu": {
+        "longitude": 303.568629,
+        "sign_index": 10,
+        "degree_in_sign": 3.568629,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.568629,
+        "sign_index": 4,
+        "degree_in_sign": 3.568629,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

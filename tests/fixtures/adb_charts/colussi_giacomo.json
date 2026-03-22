@@ -1,0 +1,109 @@
+{
+  "adb_id": 4886,
+  "name": "Colussi, Giacomo",
+  "given_name": "Giacomo Colussi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420463.25,
+    "year": 1914,
+    "month": 11,
+    "day": 26,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Venedig",
+    "country": "Italy",
+    "lat": 45.45,
+    "lon": 12.35
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colussi,_Giacomo",
+  "source_notes": "Bordoni quotes B.C. Vol 4\\n",
+  "categories": [
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Food and Beverage : Baker/ Confections"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 26.283163,
+    "lagna": 56.283163,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.668602,
+    "jd_ut": 2420463.25,
+    "planets": {
+      "Sun": {
+        "longitude": 220.982105,
+        "sign_index": 7,
+        "degree_in_sign": 10.982105,
+        "is_retrograde": false,
+        "speed": 1.012083
+      },
+      "Moon": {
+        "longitude": 335.319353,
+        "sign_index": 11,
+        "degree_in_sign": 5.319353,
+        "is_retrograde": false,
+        "speed": 8.454215
+      },
+      "Mars": {
+        "longitude": 228.433679,
+        "sign_index": 7,
+        "degree_in_sign": 18.433679,
+        "is_retrograde": false,
+        "speed": 0.732581
+      },
+      "Mercury": {
+        "longitude": 201.501352,
+        "sign_index": 6,
+        "degree_in_sign": 21.501352,
+        "is_retrograde": false,
+        "speed": 1.189354
+      },
+      "Jupiter": {
+        "longitude": 293.432245,
+        "sign_index": 9,
+        "degree_in_sign": 23.432245,
+        "is_retrograde": false,
+        "speed": 0.142827
+      },
+      "Venus": {
+        "longitude": 222.573886,
+        "sign_index": 7,
+        "degree_in_sign": 12.573886,
+        "is_retrograde": true,
+        "speed": -0.606107
+      },
+      "Saturn": {
+        "longitude": 68.104053,
+        "sign_index": 2,
+        "degree_in_sign": 8.104053,
+        "is_retrograde": true,
+        "speed": -0.068532
+      },
+      "Rahu": {
+        "longitude": 308.273168,
+        "sign_index": 10,
+        "degree_in_sign": 8.273168,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 128.273168,
+        "sign_index": 4,
+        "degree_in_sign": 8.273168,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

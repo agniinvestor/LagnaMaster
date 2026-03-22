@@ -1,0 +1,111 @@
+{
+  "adb_id": 105461,
+  "name": "Cooper, Jeff",
+  "given_name": "Jeff Cooper",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422455.177083,
+    "year": 1920,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "08:15",
+    "time_type": "s",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooper,_Jeff",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. (California State Board of Health, no. 3994).\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Military : Military service",
+    "Vocation : Military : Other Military"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.075539,
+    "lagna": 54.075539,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.744755,
+    "jd_ut": 2422455.177083,
+    "planets": {
+      "Sun": {
+        "longitude": 26.926685,
+        "sign_index": 0,
+        "degree_in_sign": 26.926685,
+        "is_retrograde": false,
+        "speed": 0.965683
+      },
+      "Moon": {
+        "longitude": 289.829169,
+        "sign_index": 9,
+        "degree_in_sign": 19.829169,
+        "is_retrograde": false,
+        "speed": 8.97292
+      },
+      "Mars": {
+        "longitude": 181.513774,
+        "sign_index": 6,
+        "degree_in_sign": 1.513774,
+        "is_retrograde": true,
+        "speed": -0.275982
+      },
+      "Mercury": {
+        "longitude": 10.268185,
+        "sign_index": 0,
+        "degree_in_sign": 10.268185,
+        "is_retrograde": false,
+        "speed": 1.822108
+      },
+      "Jupiter": {
+        "longitude": 107.352337,
+        "sign_index": 3,
+        "degree_in_sign": 17.352337,
+        "is_retrograde": false,
+        "speed": 0.104133
+      },
+      "Venus": {
+        "longitude": 12.327865,
+        "sign_index": 0,
+        "degree_in_sign": 12.327865,
+        "is_retrograde": false,
+        "speed": 1.226296
+      },
+      "Saturn": {
+        "longitude": 132.078091,
+        "sign_index": 4,
+        "degree_in_sign": 12.078091,
+        "is_retrograde": false,
+        "speed": 0.006374
+      },
+      "Rahu": {
+        "longitude": 202.716785,
+        "sign_index": 6,
+        "degree_in_sign": 22.716785,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 22.716785,
+        "sign_index": 0,
+        "degree_in_sign": 22.716785,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

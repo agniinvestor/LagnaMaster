@@ -1,0 +1,113 @@
+{
+  "adb_id": 94490,
+  "name": "Cuchet, Jeanne",
+  "given_name": "Jeanne Cuchet",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406020.323454,
+    "year": 1875,
+    "month": 5,
+    "day": 11,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Fresnes-en-Tardenois",
+    "country": "France",
+    "lat": 49.146667,
+    "lon": 3.556667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuchet,_Jeanne",
+  "source_notes": "Birth certificate in hand from Michaël Mandl, copy on file. Same data in his \"DOSSIER SPÉCIAL: HENRI DÉSIRÉ LANDRU\" [http://www.mandlonline.com/IMG/pdf/archives_mm_cr_criminalite_landru-3.pdf].\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Passions : Criminal Victim : Homicide victim",
+    "Vocation : Misc. : Tailor/Seamstress",
+    "Notable : Famous : Criminal cases"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.990224,
+    "lagna": 192.990224,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.116491,
+    "jd_ut": 2406020.323454,
+    "planets": {
+      "Sun": {
+        "longitude": 28.556139,
+        "sign_index": 0,
+        "degree_in_sign": 28.556139,
+        "is_retrograde": false,
+        "speed": 0.965021
+      },
+      "Moon": {
+        "longitude": 112.362016,
+        "sign_index": 3,
+        "degree_in_sign": 22.362016,
+        "is_retrograde": false,
+        "speed": 10.378966
+      },
+      "Mars": {
+        "longitude": 252.130744,
+        "sign_index": 8,
+        "degree_in_sign": 12.130744,
+        "is_retrograde": false,
+        "speed": 0.083825
+      },
+      "Mercury": {
+        "longitude": 31.633339,
+        "sign_index": 1,
+        "degree_in_sign": 1.633339,
+        "is_retrograde": false,
+        "speed": 2.179962
+      },
+      "Jupiter": {
+        "longitude": 181.733858,
+        "sign_index": 6,
+        "degree_in_sign": 1.733858,
+        "is_retrograde": true,
+        "speed": -0.102883
+      },
+      "Venus": {
+        "longitude": 353.808647,
+        "sign_index": 11,
+        "degree_in_sign": 23.808647,
+        "is_retrograde": false,
+        "speed": 1.18779
+      },
+      "Saturn": {
+        "longitude": 303.44765,
+        "sign_index": 10,
+        "degree_in_sign": 3.44765,
+        "is_retrograde": false,
+        "speed": 0.040808
+      },
+      "Rahu": {
+        "longitude": 353.634363,
+        "sign_index": 11,
+        "degree_in_sign": 23.634363,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 173.634363,
+        "sign_index": 5,
+        "degree_in_sign": 23.634363,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

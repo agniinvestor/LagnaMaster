@@ -1,0 +1,116 @@
+{
+  "adb_id": 3545,
+  "name": "Cleveland, Esther",
+  "given_name": "Esther Cleveland",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2412716.208333,
+    "year": 1893,
+    "month": 9,
+    "day": 9,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Washington",
+    "country": "District of Columbia",
+    "lat": 38.9,
+    "lon": -77.033333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cleveland,_Esther",
+  "source_notes": "Broughton quotes news at the time.\\n\\nSy Scholfield confirms data given in \"A Birth in the White House at Noon Today,\" Evening Star (Washington, District of Columbia), 9 Sep 1893, p. 6: \"Exactly at noon the President's second child was born.\"\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Childhood : Family large",
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Top executive",
+    "Vocation : Business/Marketing : Product Marketing",
+    "Vocation : Engineer : Other Engineer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 16.768405,
+    "lagna": 196.768405,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.372444,
+    "jd_ut": 2412716.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 144.82515,
+        "sign_index": 4,
+        "degree_in_sign": 24.82515,
+        "is_retrograde": false,
+        "speed": 0.973041
+      },
+      "Moon": {
+        "longitude": 137.594034,
+        "sign_index": 4,
+        "degree_in_sign": 17.594034,
+        "is_retrograde": false,
+        "speed": 9.37579
+      },
+      "Mars": {
+        "longitude": 143.051672,
+        "sign_index": 4,
+        "degree_in_sign": 23.051672,
+        "is_retrograde": false,
+        "speed": 0.639699
+      },
+      "Mercury": {
+        "longitude": 135.243526,
+        "sign_index": 4,
+        "degree_in_sign": 15.243526,
+        "is_retrograde": false,
+        "speed": 1.887896
+      },
+      "Jupiter": {
+        "longitude": 38.914794,
+        "sign_index": 1,
+        "degree_in_sign": 8.914794,
+        "is_retrograde": false,
+        "speed": 0.033702
+      },
+      "Venus": {
+        "longitude": 178.938445,
+        "sign_index": 5,
+        "degree_in_sign": 28.938445,
+        "is_retrograde": false,
+        "speed": 1.201376
+      },
+      "Saturn": {
+        "longitude": 169.930818,
+        "sign_index": 5,
+        "degree_in_sign": 19.930818,
+        "is_retrograde": false,
+        "speed": 0.114826
+      },
+      "Rahu": {
+        "longitude": 358.805214,
+        "sign_index": 11,
+        "degree_in_sign": 28.805214,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 178.805214,
+        "sign_index": 5,
+        "degree_in_sign": 28.805214,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

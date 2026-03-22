@@ -1,0 +1,113 @@
+{
+  "adb_id": 1077,
+  "name": "Campion, Nick",
+  "given_name": "Nick Campion",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2434440.506944,
+    "year": 1953,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "00:10",
+    "time_type": "s",
+    "hour": 0.166667,
+    "time_unknown": false,
+    "place": "Bristol",
+    "country": "England",
+    "lat": 51.45,
+    "lon": -2.583333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campion,_Nick",
+  "source_notes": "LMR quotes his letter 4/l993.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Lifestyle : Social Life : Travel",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 3.695336,
+    "lagna": 183.695336,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.203003,
+    "jd_ut": 2434440.506944,
+    "planets": {
+      "Sun": {
+        "longitude": 319.920997,
+        "sign_index": 10,
+        "degree_in_sign": 19.920997,
+        "is_retrograde": false,
+        "speed": 1.001759
+      },
+      "Moon": {
+        "longitude": 175.594162,
+        "sign_index": 5,
+        "degree_in_sign": 25.594162,
+        "is_retrograde": false,
+        "speed": 9.5405
+      },
+      "Mars": {
+        "longitude": 354.790898,
+        "sign_index": 11,
+        "degree_in_sign": 24.790898,
+        "is_retrograde": false,
+        "speed": 0.742949
+      },
+      "Mercury": {
+        "longitude": 337.803705,
+        "sign_index": 11,
+        "degree_in_sign": 7.803705,
+        "is_retrograde": false,
+        "speed": 0.760305
+      },
+      "Jupiter": {
+        "longitude": 22.946948,
+        "sign_index": 0,
+        "degree_in_sign": 22.946948,
+        "is_retrograde": false,
+        "speed": 0.163728
+      },
+      "Venus": {
+        "longitude": 1.7709,
+        "sign_index": 0,
+        "degree_in_sign": 1.7709,
+        "is_retrograde": false,
+        "speed": 0.603402
+      },
+      "Saturn": {
+        "longitude": 183.473018,
+        "sign_index": 6,
+        "degree_in_sign": 3.473018,
+        "is_retrograde": true,
+        "speed": -0.044497
+      },
+      "Rahu": {
+        "longitude": 287.589316,
+        "sign_index": 9,
+        "degree_in_sign": 17.589316,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 107.589316,
+        "sign_index": 3,
+        "degree_in_sign": 17.589316,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

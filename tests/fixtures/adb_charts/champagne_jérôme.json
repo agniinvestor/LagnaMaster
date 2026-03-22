@@ -1,0 +1,106 @@
+{
+  "adb_id": 67644,
+  "name": "Champagne, Jérôme",
+  "given_name": "Jérôme Champagne",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436370.45625,
+    "year": 1958,
+    "month": 6,
+    "day": 15,
+    "calendar": "g",
+    "time": "23:57",
+    "time_type": "s",
+    "hour": 23.95,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 14",
+    "country": "France",
+    "lat": 48.833056,
+    "lon": 2.326667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Champagne,_Jérôme",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 3.918629,
+    "lagna": 273.918629,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.276799,
+    "jd_ut": 2436370.45625,
+    "planets": {
+      "Sun": {
+        "longitude": 61.031765,
+        "sign_index": 2,
+        "degree_in_sign": 1.031765,
+        "is_retrograde": false,
+        "speed": 0.955264
+      },
+      "Moon": {
+        "longitude": 44.663343,
+        "sign_index": 1,
+        "degree_in_sign": 14.663343,
+        "is_retrograde": false,
+        "speed": 16.315023
+      },
+      "Mars": {
+        "longitude": 342.897558,
+        "sign_index": 11,
+        "degree_in_sign": 12.897558,
+        "is_retrograde": false,
+        "speed": 0.705268
+      },
+      "Mercury": {
+        "longitude": 57.633634,
+        "sign_index": 1,
+        "degree_in_sign": 27.633634,
+        "is_retrograde": false,
+        "speed": 2.187351
+      },
+      "Jupiter": {
+        "longitude": 178.491152,
+        "sign_index": 5,
+        "degree_in_sign": 28.491152,
+        "is_retrograde": true,
+        "speed": -0.009488
+      },
+      "Venus": {
+        "longitude": 23.829329,
+        "sign_index": 0,
+        "degree_in_sign": 23.829329,
+        "is_retrograde": false,
+        "speed": 1.165819
+      },
+      "Saturn": {
+        "longitude": 238.99493,
+        "sign_index": 7,
+        "degree_in_sign": 28.99493,
+        "is_retrograde": true,
+        "speed": -0.073831
+      },
+      "Rahu": {
+        "longitude": 185.317337,
+        "sign_index": 6,
+        "degree_in_sign": 5.317337,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 5.317337,
+        "sign_index": 0,
+        "degree_in_sign": 5.317337,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

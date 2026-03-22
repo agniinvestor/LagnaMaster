@@ -1,0 +1,108 @@
+{
+  "adb_id": 49147,
+  "name": "Caruso, Steven",
+  "given_name": "Steven Caruso",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435190.988889,
+    "year": 1955,
+    "month": 3,
+    "day": 24,
+    "calendar": "g",
+    "time": "06:44",
+    "time_type": "s",
+    "hour": 6.733333,
+    "time_unknown": false,
+    "place": "Medford",
+    "country": "Massachusetts",
+    "lat": 42.416667,
+    "lon": -71.1
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caruso,_Steven",
+  "source_notes": "PT quotes birth certificate\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide single"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 11.659854,
+    "lagna": 341.659854,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.2317,
+    "jd_ut": 2435190.988889,
+    "planets": {
+      "Sun": {
+        "longitude": 339.829984,
+        "sign_index": 11,
+        "degree_in_sign": 9.829984,
+        "is_retrograde": false,
+        "speed": 0.991665
+      },
+      "Moon": {
+        "longitude": 344.7467,
+        "sign_index": 11,
+        "degree_in_sign": 14.7467,
+        "is_retrograde": false,
+        "speed": 14.000526
+      },
+      "Mars": {
+        "longitude": 24.845954,
+        "sign_index": 0,
+        "degree_in_sign": 24.845954,
+        "is_retrograde": false,
+        "speed": 0.686929
+      },
+      "Mercury": {
+        "longitude": 315.700736,
+        "sign_index": 10,
+        "degree_in_sign": 15.700736,
+        "is_retrograde": false,
+        "speed": 1.438163
+      },
+      "Jupiter": {
+        "longitude": 86.737831,
+        "sign_index": 2,
+        "degree_in_sign": 26.737831,
+        "is_retrograde": false,
+        "speed": 0.024494
+      },
+      "Venus": {
+        "longitude": 299.684411,
+        "sign_index": 9,
+        "degree_in_sign": 29.684411,
+        "is_retrograde": false,
+        "speed": 1.179149
+      },
+      "Saturn": {
+        "longitude": 207.491131,
+        "sign_index": 6,
+        "degree_in_sign": 27.491131,
+        "is_retrograde": true,
+        "speed": -0.037867
+      },
+      "Rahu": {
+        "longitude": 247.819735,
+        "sign_index": 8,
+        "degree_in_sign": 7.819735,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 67.819735,
+        "sign_index": 2,
+        "degree_in_sign": 7.819735,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

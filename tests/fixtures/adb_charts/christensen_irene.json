@@ -1,0 +1,108 @@
+{
+  "adb_id": 5666,
+  "name": "Christensen, Irene",
+  "given_name": "Irene Christensen",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2423496.5,
+    "year": 1923,
+    "month": 3,
+    "day": 18,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Stenstrup",
+    "country": "Denmark",
+    "lat": 55.116667,
+    "lon": 10.516667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christensen,_Irene",
+  "source_notes": "Lescaut quotes her. Same in arcicle of SOPHIE No. 26, May 2008 (Informationsbrev fra Astrologisk Museum) [http://asmu.dk/pub/Download/nyhedsbrev/6.aar/Sophie26.pdf PDF].\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 18.2376,
+    "lagna": 198.2376,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.784567,
+    "jd_ut": 2423496.5,
+    "planets": {
+      "Sun": {
+        "longitude": 333.592967,
+        "sign_index": 11,
+        "degree_in_sign": 3.592967,
+        "is_retrograde": false,
+        "speed": 0.995091
+      },
+      "Moon": {
+        "longitude": 338.39078,
+        "sign_index": 11,
+        "degree_in_sign": 8.39078,
+        "is_retrograde": false,
+        "speed": 14.722848
+      },
+      "Mars": {
+        "longitude": 17.069616,
+        "sign_index": 0,
+        "degree_in_sign": 17.069616,
+        "is_retrograde": false,
+        "speed": 0.701102
+      },
+      "Mercury": {
+        "longitude": 314.871872,
+        "sign_index": 10,
+        "degree_in_sign": 14.871872,
+        "is_retrograde": false,
+        "speed": 1.615803
+      },
+      "Jupiter": {
+        "longitude": 205.92176,
+        "sign_index": 6,
+        "degree_in_sign": 25.92176,
+        "is_retrograde": true,
+        "speed": -0.038129
+      },
+      "Venus": {
+        "longitude": 290.6678,
+        "sign_index": 9,
+        "degree_in_sign": 20.6678,
+        "is_retrograde": false,
+        "speed": 1.154095
+      },
+      "Saturn": {
+        "longitude": 175.52905,
+        "sign_index": 5,
+        "degree_in_sign": 25.52905,
+        "is_retrograde": true,
+        "speed": -0.06864
+      },
+      "Rahu": {
+        "longitude": 147.53491,
+        "sign_index": 4,
+        "degree_in_sign": 27.53491,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 327.53491,
+        "sign_index": 10,
+        "degree_in_sign": 27.53491,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

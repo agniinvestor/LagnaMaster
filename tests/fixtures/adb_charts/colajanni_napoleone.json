@@ -1,0 +1,111 @@
+{
+  "adb_id": 81056,
+  "name": "Colajanni, Napoleone",
+  "given_name": "Napoleone Colajanni",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2395779.71037,
+    "year": 1847,
+    "month": 4,
+    "day": 28,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Enna",
+    "country": "Italy",
+    "lat": 37.566667,
+    "lon": 14.266667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colajanni,_Napoleone",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin. \\n",
+  "categories": [
+    "Vocation : Law : Other Law",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 9.42097,
+    "lagna": 9.42097,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.725081,
+    "jd_ut": 2395779.71037,
+    "planets": {
+      "Sun": {
+        "longitude": 15.544789,
+        "sign_index": 0,
+        "degree_in_sign": 15.544789,
+        "is_retrograde": false,
+        "speed": 0.970823
+      },
+      "Moon": {
+        "longitude": 168.968237,
+        "sign_index": 5,
+        "degree_in_sign": 18.968237,
+        "is_retrograde": false,
+        "speed": 13.546061
+      },
+      "Mars": {
+        "longitude": 303.153266,
+        "sign_index": 10,
+        "degree_in_sign": 3.153266,
+        "is_retrograde": false,
+        "speed": 0.718965
+      },
+      "Mercury": {
+        "longitude": 348.734278,
+        "sign_index": 11,
+        "degree_in_sign": 18.734278,
+        "is_retrograde": false,
+        "speed": 0.944399
+      },
+      "Jupiter": {
+        "longitude": 55.202266,
+        "sign_index": 1,
+        "degree_in_sign": 25.202266,
+        "is_retrograde": false,
+        "speed": 0.201859
+      },
+      "Venus": {
+        "longitude": 47.197072,
+        "sign_index": 1,
+        "degree_in_sign": 17.197072,
+        "is_retrograde": false,
+        "speed": 1.199106
+      },
+      "Saturn": {
+        "longitude": 318.661313,
+        "sign_index": 10,
+        "degree_in_sign": 18.661313,
+        "is_retrograde": false,
+        "speed": 0.083847
+      },
+      "Rahu": {
+        "longitude": 176.306408,
+        "sign_index": 5,
+        "degree_in_sign": 26.306408,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 356.306408,
+        "sign_index": 11,
+        "degree_in_sign": 26.306408,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

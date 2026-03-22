@@ -1,0 +1,109 @@
+{
+  "adb_id": 68162,
+  "name": "Craipeau, Yvan",
+  "given_name": "Yvan Craipeau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419303.875,
+    "year": 1911,
+    "month": 9,
+    "day": 24,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "La Roche sur Yon",
+    "country": "France",
+    "lat": 46.666667,
+    "lon": -1.433333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Craipeau,_Yvan",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 9.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 18.675852,
+    "lagna": 168.675852,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.624279,
+    "jd_ut": 2419303.875,
+    "planets": {
+      "Sun": {
+        "longitude": 157.570538,
+        "sign_index": 5,
+        "degree_in_sign": 7.570538,
+        "is_retrograde": false,
+        "speed": 0.97995
+      },
+      "Moon": {
+        "longitude": 180.017498,
+        "sign_index": 6,
+        "degree_in_sign": 0.017498,
+        "is_retrograde": false,
+        "speed": 11.592927
+      },
+      "Mars": {
+        "longitude": 44.52396,
+        "sign_index": 1,
+        "degree_in_sign": 14.52396,
+        "is_retrograde": false,
+        "speed": 0.298588
+      },
+      "Mercury": {
+        "longitude": 139.811902,
+        "sign_index": 4,
+        "degree_in_sign": 19.811902,
+        "is_retrograde": false,
+        "speed": 0.836873
+      },
+      "Jupiter": {
+        "longitude": 200.946288,
+        "sign_index": 6,
+        "degree_in_sign": 20.946288,
+        "is_retrograde": false,
+        "speed": 0.186965
+      },
+      "Venus": {
+        "longitude": 143.839354,
+        "sign_index": 4,
+        "degree_in_sign": 23.839354,
+        "is_retrograde": true,
+        "speed": -0.474798
+      },
+      "Saturn": {
+        "longitude": 27.197199,
+        "sign_index": 0,
+        "degree_in_sign": 27.197199,
+        "is_retrograde": true,
+        "speed": -0.037452
+      },
+      "Rahu": {
+        "longitude": 9.71088,
+        "sign_index": 0,
+        "degree_in_sign": 9.71088,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 189.71088,
+        "sign_index": 6,
+        "degree_in_sign": 9.71088,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

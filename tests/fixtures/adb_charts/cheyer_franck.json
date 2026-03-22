@@ -1,0 +1,108 @@
+{
+  "adb_id": 70208,
+  "name": "Cheyer, Franck",
+  "given_name": "Franck Cheyer",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437258.40625,
+    "year": 1960,
+    "month": 11,
+    "day": 19,
+    "calendar": "g",
+    "time": "22:45",
+    "time_type": "s",
+    "hour": 22.75,
+    "time_unknown": false,
+    "place": "Compiègne",
+    "country": "France",
+    "lat": 49.416667,
+    "lon": 2.833333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cheyer,_Franck",
+  "source_notes": "Didier Geslain archive, 'hippisme jockeys' pdf file, p. 51.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 28.772389,
+    "lagna": 88.772389,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.310753,
+    "jd_ut": 2437258.40625,
+    "planets": {
+      "Sun": {
+        "longitude": 214.267669,
+        "sign_index": 7,
+        "degree_in_sign": 4.267669,
+        "is_retrograde": false,
+        "speed": 1.010063
+      },
+      "Moon": {
+        "longitude": 226.435159,
+        "sign_index": 7,
+        "degree_in_sign": 16.435159,
+        "is_retrograde": false,
+        "speed": 17.503493
+      },
+      "Mars": {
+        "longitude": 85.3406,
+        "sign_index": 2,
+        "degree_in_sign": 25.3406,
+        "is_retrograde": false,
+        "speed": 0.011076
+      },
+      "Mercury": {
+        "longitude": 195.530898,
+        "sign_index": 6,
+        "degree_in_sign": 15.530898,
+        "is_retrograde": false,
+        "speed": 0.51271
+      },
+      "Jupiter": {
+        "longitude": 251.399032,
+        "sign_index": 8,
+        "degree_in_sign": 11.399032,
+        "is_retrograde": false,
+        "speed": 0.206445
+      },
+      "Venus": {
+        "longitude": 252.174731,
+        "sign_index": 8,
+        "degree_in_sign": 12.174731,
+        "is_retrograde": false,
+        "speed": 1.2082
+      },
+      "Saturn": {
+        "longitude": 261.745852,
+        "sign_index": 8,
+        "degree_in_sign": 21.745852,
+        "is_retrograde": false,
+        "speed": 0.092136
+      },
+      "Rahu": {
+        "longitude": 138.263046,
+        "sign_index": 4,
+        "degree_in_sign": 18.263046,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 318.263046,
+        "sign_index": 10,
+        "degree_in_sign": 18.263046,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

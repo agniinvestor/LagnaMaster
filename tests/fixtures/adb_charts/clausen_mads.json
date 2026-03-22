@@ -1,0 +1,113 @@
+{
+  "adb_id": 105156,
+  "name": "Clausen, Mads",
+  "given_name": "Mads Clausen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417140.416667,
+    "year": 1905,
+    "month": 10,
+    "day": 21,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Nordborg",
+    "country": "Denmark",
+    "lat": 55.05,
+    "lon": 9.75
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clausen,_Mads",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file (Danish Archives, no. 40).\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids more than 3",
+    "Family : Parenting : Kids - Noted",
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Entrepreneur",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 21.026447,
+    "lagna": 81.026447,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.541572,
+    "jd_ut": 2417140.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 185.29745,
+        "sign_index": 6,
+        "degree_in_sign": 5.29745,
+        "is_retrograde": false,
+        "speed": 0.995512
+      },
+      "Moon": {
+        "longitude": 100.542498,
+        "sign_index": 3,
+        "degree_in_sign": 10.542498,
+        "is_retrograde": false,
+        "speed": 14.312487
+      },
+      "Mars": {
+        "longitude": 257.334628,
+        "sign_index": 8,
+        "degree_in_sign": 17.334628,
+        "is_retrograde": false,
+        "speed": 0.720989
+      },
+      "Mercury": {
+        "longitude": 191.66785,
+        "sign_index": 6,
+        "degree_in_sign": 11.66785,
+        "is_retrograde": false,
+        "speed": 1.608861
+      },
+      "Jupiter": {
+        "longitude": 42.841368,
+        "sign_index": 1,
+        "degree_in_sign": 12.841368,
+        "is_retrograde": true,
+        "speed": -0.083994
+      },
+      "Venus": {
+        "longitude": 157.639861,
+        "sign_index": 5,
+        "degree_in_sign": 7.639861,
+        "is_retrograde": false,
+        "speed": 1.232474
+      },
+      "Saturn": {
+        "longitude": 303.741177,
+        "sign_index": 10,
+        "degree_in_sign": 3.741177,
+        "is_retrograde": true,
+        "speed": -0.01626
+      },
+      "Rahu": {
+        "longitude": 124.357083,
+        "sign_index": 4,
+        "degree_in_sign": 4.357083,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 304.357083,
+        "sign_index": 10,
+        "degree_in_sign": 4.357083,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

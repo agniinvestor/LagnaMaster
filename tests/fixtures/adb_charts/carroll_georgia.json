@@ -1,0 +1,110 @@
+{
+  "adb_id": 58165,
+  "name": "Carroll, Georgia",
+  "given_name": "Georgia Carroll",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422281.229167,
+    "year": 1919,
+    "month": 11,
+    "day": 18,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Fort Worth",
+    "country": "Texas",
+    "lat": 32.733333,
+    "lon": -97.316667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carroll,_Georgia",
+  "source_notes": "Sy Scholfield from BC in hand.\\n",
+  "categories": [
+    "Vocation : Beauty : Model",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 10.125819,
+    "lagna": 250.125819,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.738105,
+    "jd_ut": 2422281.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 212.5891,
+        "sign_index": 7,
+        "degree_in_sign": 2.5891,
+        "is_retrograde": false,
+        "speed": 1.009234
+      },
+      "Moon": {
+        "longitude": 169.841577,
+        "sign_index": 5,
+        "degree_in_sign": 19.841577,
+        "is_retrograde": false,
+        "speed": 8.284075
+      },
+      "Mars": {
+        "longitude": 150.640466,
+        "sign_index": 5,
+        "degree_in_sign": 0.640466,
+        "is_retrograde": false,
+        "speed": 0.569972
+      },
+      "Mercury": {
+        "longitude": 234.066921,
+        "sign_index": 7,
+        "degree_in_sign": 24.066921,
+        "is_retrograde": false,
+        "speed": 0.553467
+      },
+      "Jupiter": {
+        "longitude": 114.952301,
+        "sign_index": 3,
+        "degree_in_sign": 24.952301,
+        "is_retrograde": false,
+        "speed": 0.053224
+      },
+      "Venus": {
+        "longitude": 165.970786,
+        "sign_index": 5,
+        "degree_in_sign": 15.970786,
+        "is_retrograde": false,
+        "speed": 0.972896
+      },
+      "Saturn": {
+        "longitude": 137.856564,
+        "sign_index": 4,
+        "degree_in_sign": 17.856564,
+        "is_retrograde": false,
+        "speed": 0.060749
+      },
+      "Rahu": {
+        "longitude": 211.934648,
+        "sign_index": 7,
+        "degree_in_sign": 1.934648,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 31.934648,
+        "sign_index": 1,
+        "degree_in_sign": 1.934648,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 12911,
+  "name": "C-Section 12911",
+  "given_name": "C-Section 12911",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435405.340278,
+    "year": 1955,
+    "month": 10,
+    "day": 24,
+    "calendar": "g",
+    "time": "12:10",
+    "time_type": "s",
+    "hour": 12.166667,
+    "time_unknown": false,
+    "place": "Tonasket",
+    "country": "Washington",
+    "lat": 48.7,
+    "lon": -119.433333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "aqu",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:C-Section_12911",
+  "source_notes": "Janet Ingersoll in MH 1/1980, B.C.\\n",
+  "categories": [
+    "Personal : Birth : Cesarean"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 19.137986,
+    "lagna": 229.137986,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.239896,
+    "jd_ut": 2435405.340278,
+    "planets": {
+      "Sun": {
+        "longitude": 187.397043,
+        "sign_index": 6,
+        "degree_in_sign": 7.397043,
+        "is_retrograde": false,
+        "speed": 0.996378
+      },
+      "Moon": {
+        "longitude": 287.609348,
+        "sign_index": 9,
+        "degree_in_sign": 17.609348,
+        "is_retrograde": false,
+        "speed": 12.401768
+      },
+      "Mars": {
+        "longitude": 164.043109,
+        "sign_index": 5,
+        "degree_in_sign": 14.043109,
+        "is_retrograde": false,
+        "speed": 0.641713
+      },
+      "Mercury": {
+        "longitude": 170.29279,
+        "sign_index": 5,
+        "degree_in_sign": 20.29279,
+        "is_retrograde": false,
+        "speed": 0.363639
+      },
+      "Jupiter": {
+        "longitude": 123.90956,
+        "sign_index": 4,
+        "degree_in_sign": 3.90956,
+        "is_retrograde": false,
+        "speed": 0.14735
+      },
+      "Venus": {
+        "longitude": 201.488291,
+        "sign_index": 6,
+        "degree_in_sign": 21.488291,
+        "is_retrograde": false,
+        "speed": 1.247046
+      },
+      "Saturn": {
+        "longitude": 207.839487,
+        "sign_index": 6,
+        "degree_in_sign": 27.839487,
+        "is_retrograde": false,
+        "speed": 0.114271
+      },
+      "Rahu": {
+        "longitude": 236.460814,
+        "sign_index": 7,
+        "degree_in_sign": 26.460814,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 56.460814,
+        "sign_index": 1,
+        "degree_in_sign": 26.460814,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

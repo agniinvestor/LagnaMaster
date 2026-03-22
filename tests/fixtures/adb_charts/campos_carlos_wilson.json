@@ -1,0 +1,111 @@
+{
+  "adb_id": 87407,
+  "name": "Campos, Carlos Wilson",
+  "given_name": "Carlos Wilson Campos",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433351.979167,
+    "year": 1950,
+    "month": 3,
+    "day": 11,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "d",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Recife (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.053889,
+    "lon": -34.881111
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campos,_Carlos_Wilson",
+  "source_notes": "Sy Scholfield provided birth registry entry. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 20.207088,
+    "lagna": 350.207088,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.161382,
+    "jd_ut": 2433351.979167,
+    "planets": {
+      "Sun": {
+        "longitude": 327.166438,
+        "sign_index": 10,
+        "degree_in_sign": 27.166438,
+        "is_retrograde": false,
+        "speed": 0.99834
+      },
+      "Moon": {
+        "longitude": 241.265525,
+        "sign_index": 8,
+        "degree_in_sign": 1.265525,
+        "is_retrograde": false,
+        "speed": 9.336537
+      },
+      "Mars": {
+        "longitude": 163.196496,
+        "sign_index": 5,
+        "degree_in_sign": 13.196496,
+        "is_retrograde": true,
+        "speed": -0.329203
+      },
+      "Mercury": {
+        "longitude": 312.754116,
+        "sign_index": 10,
+        "degree_in_sign": 12.754116,
+        "is_retrograde": false,
+        "speed": 1.695547
+      },
+      "Jupiter": {
+        "longitude": 299.614666,
+        "sign_index": 9,
+        "degree_in_sign": 29.614666,
+        "is_retrograde": false,
+        "speed": 0.225178
+      },
+      "Venus": {
+        "longitude": 285.996435,
+        "sign_index": 9,
+        "degree_in_sign": 15.996435,
+        "is_retrograde": false,
+        "speed": 0.588625
+      },
+      "Saturn": {
+        "longitude": 142.549579,
+        "sign_index": 4,
+        "degree_in_sign": 22.549579,
+        "is_retrograde": true,
+        "speed": -0.079496
+      },
+      "Rahu": {
+        "longitude": 345.272643,
+        "sign_index": 11,
+        "degree_in_sign": 15.272643,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 165.272643,
+        "sign_index": 5,
+        "degree_in_sign": 15.272643,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

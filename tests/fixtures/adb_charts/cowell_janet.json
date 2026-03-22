@@ -1,0 +1,111 @@
+{
+  "adb_id": 97713,
+  "name": "Cowell, Janet",
+  "given_name": "Janet Cowell",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2440057.697222,
+    "year": 1968,
+    "month": 7,
+    "day": 19,
+    "calendar": "g",
+    "time": "23:44",
+    "time_type": "d",
+    "hour": 23.733333,
+    "time_unknown": false,
+    "place": "Memphis",
+    "country": "Tennessee",
+    "lat": 35.15,
+    "lon": -90.05
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowell,_Janet",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Commercial Appeal'' (Memphis, Tennessee), 20 July 1968, page 30, born at Methodist Hospital, daughter of Mr. and Mrs. James Cowell.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Business : Consultant",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 27.165483,
+    "lagna": 327.165483,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.417794,
+    "jd_ut": 2440057.697222,
+    "planets": {
+      "Sun": {
+        "longitude": 94.100603,
+        "sign_index": 3,
+        "degree_in_sign": 4.100603,
+        "is_retrograde": false,
+        "speed": 0.954614
+      },
+      "Moon": {
+        "longitude": 35.209788,
+        "sign_index": 1,
+        "degree_in_sign": 5.209788,
+        "is_retrograde": false,
+        "speed": 15.317102
+      },
+      "Mars": {
+        "longitude": 85.823789,
+        "sign_index": 2,
+        "degree_in_sign": 25.823789,
+        "is_retrograde": false,
+        "speed": 0.655615
+      },
+      "Mercury": {
+        "longitude": 75.963259,
+        "sign_index": 2,
+        "degree_in_sign": 15.963259,
+        "is_retrograde": false,
+        "speed": 1.569131
+      },
+      "Jupiter": {
+        "longitude": 132.398345,
+        "sign_index": 4,
+        "degree_in_sign": 12.398345,
+        "is_retrograde": false,
+        "speed": 0.190614
+      },
+      "Venus": {
+        "longitude": 102.312677,
+        "sign_index": 3,
+        "degree_in_sign": 12.312677,
+        "is_retrograde": false,
+        "speed": 1.230743
+      },
+      "Saturn": {
+        "longitude": 1.859713,
+        "sign_index": 0,
+        "degree_in_sign": 1.859713,
+        "is_retrograde": false,
+        "speed": 0.03061
+      },
+      "Rahu": {
+        "longitude": 349.922889,
+        "sign_index": 11,
+        "degree_in_sign": 19.922889,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 169.922889,
+        "sign_index": 5,
+        "degree_in_sign": 19.922889,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

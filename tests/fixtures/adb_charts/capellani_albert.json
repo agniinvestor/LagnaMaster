@@ -1,0 +1,112 @@
+{
+  "adb_id": 79478,
+  "name": "Capellani, Albert",
+  "given_name": "Albert Capellani",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405758.535185,
+    "year": 1874,
+    "month": 8,
+    "day": 23,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capellani,_Albert",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Diabetes/ Hypoglycemia",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 29.462112,
+    "lagna": 59.462112,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.106485,
+    "jd_ut": 2405758.535185,
+    "planets": {
+      "Sun": {
+        "longitude": 127.584111,
+        "sign_index": 4,
+        "degree_in_sign": 7.584111,
+        "is_retrograde": false,
+        "speed": 0.964268
+      },
+      "Moon": {
+        "longitude": 248.519489,
+        "sign_index": 8,
+        "degree_in_sign": 8.519489,
+        "is_retrograde": false,
+        "speed": 11.919899
+      },
+      "Mars": {
+        "longitude": 112.536468,
+        "sign_index": 3,
+        "degree_in_sign": 22.536468,
+        "is_retrograde": false,
+        "speed": 0.638057
+      },
+      "Mercury": {
+        "longitude": 112.728822,
+        "sign_index": 3,
+        "degree_in_sign": 22.728822,
+        "is_retrograde": false,
+        "speed": 1.734441
+      },
+      "Jupiter": {
+        "longitude": 160.906034,
+        "sign_index": 5,
+        "degree_in_sign": 10.906034,
+        "is_retrograde": false,
+        "speed": 0.196341
+      },
+      "Venus": {
+        "longitude": 170.736504,
+        "sign_index": 5,
+        "degree_in_sign": 20.736504,
+        "is_retrograde": false,
+        "speed": 1.122858
+      },
+      "Saturn": {
+        "longitude": 287.459525,
+        "sign_index": 9,
+        "degree_in_sign": 17.459525,
+        "is_retrograde": true,
+        "speed": -0.067548
+      },
+      "Rahu": {
+        "longitude": 7.507081,
+        "sign_index": 0,
+        "degree_in_sign": 7.507081,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 187.507081,
+        "sign_index": 6,
+        "degree_in_sign": 7.507081,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

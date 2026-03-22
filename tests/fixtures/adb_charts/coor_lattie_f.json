@@ -1,0 +1,109 @@
+{
+  "adb_id": 61511,
+  "name": "Coor, Lattie F.",
+  "given_name": "Lattie F. Coor",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428438.191667,
+    "year": 1936,
+    "month": 9,
+    "day": 26,
+    "calendar": "g",
+    "time": "09:36",
+    "time_type": "s",
+    "hour": 9.6,
+    "time_unknown": false,
+    "place": "Phoenix",
+    "country": "Arizona",
+    "lat": 33.45,
+    "lon": -112.066667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coor,_Lattie_F.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Education : Administrator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 27.834504,
+    "lagna": 177.834504,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.973502,
+    "jd_ut": 2428438.191667,
+    "planets": {
+      "Sun": {
+        "longitude": 160.418288,
+        "sign_index": 5,
+        "degree_in_sign": 10.418288,
+        "is_retrograde": false,
+        "speed": 0.980928
+      },
+      "Moon": {
+        "longitude": 283.721268,
+        "sign_index": 9,
+        "degree_in_sign": 13.721268,
+        "is_retrograde": false,
+        "speed": 18.043269
+      },
+      "Mars": {
+        "longitude": 127.067226,
+        "sign_index": 4,
+        "degree_in_sign": 7.067226,
+        "is_retrograde": false,
+        "speed": 0.624294
+      },
+      "Mercury": {
+        "longitude": 169.353318,
+        "sign_index": 5,
+        "degree_in_sign": 19.353318,
+        "is_retrograde": true,
+        "speed": -0.958174
+      },
+      "Jupiter": {
+        "longitude": 234.716872,
+        "sign_index": 7,
+        "degree_in_sign": 24.716872,
+        "is_retrograde": false,
+        "speed": 0.128116
+      },
+      "Venus": {
+        "longitude": 184.459172,
+        "sign_index": 6,
+        "degree_in_sign": 4.459172,
+        "is_retrograde": false,
+        "speed": 1.230298
+      },
+      "Saturn": {
+        "longitude": 325.039793,
+        "sign_index": 10,
+        "degree_in_sign": 25.039793,
+        "is_retrograde": true,
+        "speed": -0.072631
+      },
+      "Rahu": {
+        "longitude": 245.664396,
+        "sign_index": 8,
+        "degree_in_sign": 5.664396,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 65.664396,
+        "sign_index": 2,
+        "degree_in_sign": 5.664396,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

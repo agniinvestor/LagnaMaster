@@ -1,0 +1,110 @@
+{
+  "adb_id": 95059,
+  "name": "Cauvin, Thibault",
+  "given_name": "Thibault Cauvin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445897.545139,
+    "year": 1984,
+    "month": 7,
+    "day": 16,
+    "calendar": "g",
+    "time": "03:05",
+    "time_type": "d",
+    "hour": 3.083333,
+    "time_unknown": false,
+    "place": "Bordeaux",
+    "country": "France",
+    "lat": 44.833333,
+    "lon": -0.566667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cauvin,_Thibault",
+  "source_notes": "Paddy de Jabrun quoted BC.\\n",
+  "categories": [
+    "Traits : Mind : Child prodigy",
+    "Family : Childhood : Family noted",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 16.856989,
+    "lagna": 16.856989,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.641114,
+    "jd_ut": 2445897.545139,
+    "planets": {
+      "Sun": {
+        "longitude": 90.045726,
+        "sign_index": 3,
+        "degree_in_sign": 0.045726,
+        "is_retrograde": false,
+        "speed": 0.953578
+      },
+      "Moon": {
+        "longitude": 303.742447,
+        "sign_index": 10,
+        "degree_in_sign": 3.742447,
+        "is_retrograde": false,
+        "speed": 8.481802
+      },
+      "Mars": {
+        "longitude": 202.330126,
+        "sign_index": 6,
+        "degree_in_sign": 22.330126,
+        "is_retrograde": false,
+        "speed": 0.304325
+      },
+      "Mercury": {
+        "longitude": 112.206898,
+        "sign_index": 3,
+        "degree_in_sign": 22.206898,
+        "is_retrograde": false,
+        "speed": 1.558543
+      },
+      "Jupiter": {
+        "longitude": 252.40302,
+        "sign_index": 8,
+        "degree_in_sign": 12.40302,
+        "is_retrograde": true,
+        "speed": -0.116594
+      },
+      "Venus": {
+        "longitude": 98.339553,
+        "sign_index": 3,
+        "degree_in_sign": 8.339553,
+        "is_retrograde": false,
+        "speed": 1.229813
+      },
+      "Saturn": {
+        "longitude": 196.070019,
+        "sign_index": 6,
+        "degree_in_sign": 16.070019,
+        "is_retrograde": false,
+        "speed": 0.00446
+      },
+      "Rahu": {
+        "longitude": 40.457462,
+        "sign_index": 1,
+        "degree_in_sign": 10.457462,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 220.457462,
+        "sign_index": 7,
+        "degree_in_sign": 10.457462,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

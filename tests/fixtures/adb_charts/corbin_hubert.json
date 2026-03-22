@@ -1,0 +1,109 @@
+{
+  "adb_id": 69147,
+  "name": "Corbin, Hubert",
+  "given_name": "Hubert Corbin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433695.4375,
+    "year": 1951,
+    "month": 2,
+    "day": 17,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "s",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "La Tronche",
+    "country": "France",
+    "lat": 45.2,
+    "lon": 5.733333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corbin,_Hubert",
+  "source_notes": "Didier Geslain archive, 'romans noirs (religion3)' pdf file, p. 33.\\n",
+  "categories": [
+    "Vocation : Writers : Detective/ Mystery",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 14.111634,
+    "lagna": 164.111634,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.174514,
+    "jd_ut": 2433695.4375,
+    "planets": {
+      "Sun": {
+        "longitude": 305.283958,
+        "sign_index": 10,
+        "degree_in_sign": 5.283958,
+        "is_retrograde": false,
+        "speed": 1.008709
+      },
+      "Moon": {
+        "longitude": 79.441994,
+        "sign_index": 2,
+        "degree_in_sign": 19.441994,
+        "is_retrograde": false,
+        "speed": 8.693297
+      },
+      "Mars": {
+        "longitude": 327.521868,
+        "sign_index": 10,
+        "degree_in_sign": 27.521868,
+        "is_retrograde": false,
+        "speed": 0.779453
+      },
+      "Mercury": {
+        "longitude": 289.228471,
+        "sign_index": 9,
+        "degree_in_sign": 19.228471,
+        "is_retrograde": false,
+        "speed": 1.575679
+      },
+      "Jupiter": {
+        "longitude": 321.911374,
+        "sign_index": 10,
+        "degree_in_sign": 21.911374,
+        "is_retrograde": false,
+        "speed": 0.237362
+      },
+      "Venus": {
+        "longitude": 328.107149,
+        "sign_index": 10,
+        "degree_in_sign": 28.107149,
+        "is_retrograde": false,
+        "speed": 1.240549
+      },
+      "Saturn": {
+        "longitude": 158.024636,
+        "sign_index": 5,
+        "degree_in_sign": 8.024636,
+        "is_retrograde": true,
+        "speed": -0.059483
+      },
+      "Rahu": {
+        "longitude": 327.072079,
+        "sign_index": 10,
+        "degree_in_sign": 27.072079,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 147.072079,
+        "sign_index": 4,
+        "degree_in_sign": 27.072079,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

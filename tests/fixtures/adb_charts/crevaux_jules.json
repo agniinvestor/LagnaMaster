@@ -1,0 +1,110 @@
+{
+  "adb_id": 70538,
+  "name": "Crevaux, Jules",
+  "given_name": "Jules Crevaux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2395752.980556,
+    "year": 1847,
+    "month": 4,
+    "day": 1,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Lorquin",
+    "country": "France",
+    "lat": 48.666667,
+    "lon": 7.0
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crevaux,_Jules",
+  "source_notes": "Didier Geslain archive, 'marins a-g' pdf file, p. 78.\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Military : Military career",
+    "Vocation : Travel : Explorer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 17.814686,
+    "lagna": 77.814686,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.724059,
+    "jd_ut": 2395752.980556,
+    "planets": {
+      "Sun": {
+        "longitude": 349.396695,
+        "sign_index": 11,
+        "degree_in_sign": 19.396695,
+        "is_retrograde": false,
+        "speed": 0.985219
+      },
+      "Moon": {
+        "longitude": 176.056997,
+        "sign_index": 5,
+        "degree_in_sign": 26.056997,
+        "is_retrograde": false,
+        "speed": 15.225932
+      },
+      "Mars": {
+        "longitude": 283.901174,
+        "sign_index": 9,
+        "degree_in_sign": 13.901174,
+        "is_retrograde": false,
+        "speed": 0.719679
+      },
+      "Mercury": {
+        "longitude": 348.233794,
+        "sign_index": 11,
+        "degree_in_sign": 18.233794,
+        "is_retrograde": true,
+        "speed": -0.820672
+      },
+      "Jupiter": {
+        "longitude": 50.277245,
+        "sign_index": 1,
+        "degree_in_sign": 20.277245,
+        "is_retrograde": false,
+        "speed": 0.163284
+      },
+      "Venus": {
+        "longitude": 14.810066,
+        "sign_index": 0,
+        "degree_in_sign": 14.810066,
+        "is_retrograde": false,
+        "speed": 1.222559
+      },
+      "Saturn": {
+        "longitude": 316.065069,
+        "sign_index": 10,
+        "degree_in_sign": 16.065069,
+        "is_retrograde": false,
+        "speed": 0.108372
+      },
+      "Rahu": {
+        "longitude": 177.722878,
+        "sign_index": 5,
+        "degree_in_sign": 27.722878,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 357.722878,
+        "sign_index": 11,
+        "degree_in_sign": 27.722878,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

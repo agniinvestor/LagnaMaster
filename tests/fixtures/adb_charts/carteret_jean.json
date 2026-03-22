@@ -1,0 +1,119 @@
+{
+  "adb_id": 62899,
+  "name": "Carteret, Jean",
+  "given_name": "Jean Carteret",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417296.910174,
+    "year": 1906,
+    "month": 3,
+    "day": 27,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Charleville Mézières",
+    "country": "France",
+    "lat": 49.766667,
+    "lon": 4.716667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carteret,_Jean",
+  "source_notes": "Scofield: oDidier Geslain archive, 'Astrologues' pdf file, p. 44. Himself said 9:40.\\n\\n\\n[http://www.facebook.com/invisible.luminaries Astrology of the Invisible Luminaries]\\n[http://wiki.astro.com/astrowiki/de/Jean_Carteret Jean Carteret – Astrowiki-de]\\nGeorge Bode: Het poëtische denken van Jean Carteret.\\n\\n",
+  "categories": [
+    "Traits : Mind : I.Q. high/ Mensa level",
+    "Passions : Sexuality : Celibacy/ Minimal",
+    "Vocation : Humanities+Social Sciences : Linguist",
+    "Vocation : Humanities+Social Sciences : Philosopher",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Occult Fields : Graphologist",
+    "Vocation : Occult Fields : Tarot / I Ching",
+    "Vocation : Occult Fields : Other Occult Fields",
+    "Vocation : Science : Anthropology",
+    "Vocation : Writers : Astrology",
+    "Vocation : Writers : Religion/ Philosophy",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 21.237641,
+    "lagna": 51.237641,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.547554,
+    "jd_ut": 2417296.910174,
+    "planets": {
+      "Sun": {
+        "longitude": 343.277314,
+        "sign_index": 11,
+        "degree_in_sign": 13.277314,
+        "is_retrograde": false,
+        "speed": 0.989471
+      },
+      "Moon": {
+        "longitude": 10.38991,
+        "sign_index": 0,
+        "degree_in_sign": 10.38991,
+        "is_retrograde": false,
+        "speed": 10.256018
+      },
+      "Mars": {
+        "longitude": 14.622499,
+        "sign_index": 0,
+        "degree_in_sign": 14.622499,
+        "is_retrograde": false,
+        "speed": 0.719235
+      },
+      "Mercury": {
+        "longitude": 356.707147,
+        "sign_index": 11,
+        "degree_in_sign": 26.707147,
+        "is_retrograde": true,
+        "speed": -0.13292
+      },
+      "Jupiter": {
+        "longitude": 40.214433,
+        "sign_index": 1,
+        "degree_in_sign": 10.214433,
+        "is_retrograde": false,
+        "speed": 0.174115
+      },
+      "Venus": {
+        "longitude": 353.41551,
+        "sign_index": 11,
+        "degree_in_sign": 23.41551,
+        "is_retrograde": false,
+        "speed": 1.240667
+      },
+      "Saturn": {
+        "longitude": 316.512063,
+        "sign_index": 10,
+        "degree_in_sign": 16.512063,
+        "is_retrograde": false,
+        "speed": 0.113266
+      },
+      "Rahu": {
+        "longitude": 116.064163,
+        "sign_index": 3,
+        "degree_in_sign": 26.064163,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 296.064163,
+        "sign_index": 9,
+        "degree_in_sign": 26.064163,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

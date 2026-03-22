@@ -1,0 +1,113 @@
+{
+  "adb_id": 47630,
+  "name": "Coulthard, David",
+  "given_name": "David Coulthard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441037.489583,
+    "year": 1971,
+    "month": 3,
+    "day": 27,
+    "calendar": "g",
+    "time": "00:45",
+    "time_type": "s",
+    "hour": 0.75,
+    "time_unknown": false,
+    "place": "Dumfries",
+    "country": "Scotland",
+    "lat": 55.066667,
+    "lon": -3.616667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coulthard,_David",
+  "source_notes": "Caroline Gerad quotes B.C. in Transit 5/1997\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Bone",
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Lifestyle : Work : Hazardous work",
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Sports : Race Cars",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 10.93586,
+    "lagna": 190.93586,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.455261,
+    "jd_ut": 2441037.489583,
+    "planets": {
+      "Sun": {
+        "longitude": 342.208518,
+        "sign_index": 11,
+        "degree_in_sign": 12.208518,
+        "is_retrograde": false,
+        "speed": 0.990334
+      },
+      "Moon": {
+        "longitude": 344.353961,
+        "sign_index": 11,
+        "degree_in_sign": 14.353961,
+        "is_retrograde": false,
+        "speed": 18.39301
+      },
+      "Mars": {
+        "longitude": 255.280563,
+        "sign_index": 8,
+        "degree_in_sign": 15.280563,
+        "is_retrograde": false,
+        "speed": 0.592202
+      },
+      "Mercury": {
+        "longitude": 359.752114,
+        "sign_index": 11,
+        "degree_in_sign": 29.752114,
+        "is_retrograde": false,
+        "speed": 1.473655
+      },
+      "Jupiter": {
+        "longitude": 222.979306,
+        "sign_index": 7,
+        "degree_in_sign": 12.979306,
+        "is_retrograde": true,
+        "speed": -0.011104
+      },
+      "Venus": {
+        "longitude": 303.457571,
+        "sign_index": 10,
+        "degree_in_sign": 3.457571,
+        "is_retrograde": false,
+        "speed": 1.187679
+      },
+      "Saturn": {
+        "longitude": 26.225193,
+        "sign_index": 0,
+        "degree_in_sign": 26.225193,
+        "is_retrograde": false,
+        "speed": 0.105088
+      },
+      "Rahu": {
+        "longitude": 298.001691,
+        "sign_index": 9,
+        "degree_in_sign": 28.001691,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 118.001691,
+        "sign_index": 3,
+        "degree_in_sign": 28.001691,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

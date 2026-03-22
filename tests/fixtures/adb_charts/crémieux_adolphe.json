@@ -1,0 +1,108 @@
+{
+  "adb_id": 65106,
+  "name": "Crémieux, Adolphe",
+  "given_name": "Adolphe Crémieux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2377155.737917,
+    "year": 1796,
+    "month": 4,
+    "day": 30,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Nîmes",
+    "country": "France",
+    "lat": 43.833333,
+    "lon": 4.35
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crémieux,_Adolphe",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 282.\\n",
+  "categories": [
+    "Vocation : Law : Attorney"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 20.11527,
+    "lagna": 20.11527,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.01337,
+    "jd_ut": 2377155.737917,
+    "planets": {
+      "Sun": {
+        "longitude": 19.527855,
+        "sign_index": 0,
+        "degree_in_sign": 19.527855,
+        "is_retrograde": false,
+        "speed": 0.969026
+      },
+      "Moon": {
+        "longitude": 288.339831,
+        "sign_index": 9,
+        "degree_in_sign": 18.339831,
+        "is_retrograde": false,
+        "speed": 8.286697
+      },
+      "Mars": {
+        "longitude": 248.629868,
+        "sign_index": 8,
+        "degree_in_sign": 8.629868,
+        "is_retrograde": false,
+        "speed": 0.151372
+      },
+      "Mercury": {
+        "longitude": 9.979762,
+        "sign_index": 0,
+        "degree_in_sign": 9.979762,
+        "is_retrograde": false,
+        "speed": 2.011803
+      },
+      "Jupiter": {
+        "longitude": 316.354338,
+        "sign_index": 10,
+        "degree_in_sign": 16.354338,
+        "is_retrograde": false,
+        "speed": 0.166502
+      },
+      "Venus": {
+        "longitude": 62.801544,
+        "sign_index": 2,
+        "degree_in_sign": 2.801544,
+        "is_retrograde": false,
+        "speed": 1.098377
+      },
+      "Saturn": {
+        "longitude": 51.416676,
+        "sign_index": 1,
+        "degree_in_sign": 21.416676,
+        "is_retrograde": false,
+        "speed": 0.117432
+      },
+      "Rahu": {
+        "longitude": 83.231351,
+        "sign_index": 2,
+        "degree_in_sign": 23.231351,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 263.231351,
+        "sign_index": 8,
+        "degree_in_sign": 23.231351,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

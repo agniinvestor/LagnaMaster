@@ -1,0 +1,109 @@
+{
+  "adb_id": 64891,
+  "name": "Cabanne, Pierre",
+  "given_name": "Pierre Cabanne",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422956.291667,
+    "year": 1921,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "d",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Carcassonne",
+    "country": "France",
+    "lat": 43.216667,
+    "lon": 2.35
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabanne,_Pierre",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 2.\\n",
+  "categories": [
+    "Vocation : Art : Art critic",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 18.567738,
+    "lagna": 348.567738,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.763914,
+    "jd_ut": 2422956.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 157.425248,
+        "sign_index": 5,
+        "degree_in_sign": 7.425248,
+        "is_retrograde": false,
+        "speed": 0.979525
+      },
+      "Moon": {
+        "longitude": 53.820306,
+        "sign_index": 1,
+        "degree_in_sign": 23.820306,
+        "is_retrograde": false,
+        "speed": 17.192279
+      },
+      "Mars": {
+        "longitude": 129.944337,
+        "sign_index": 4,
+        "degree_in_sign": 9.944337,
+        "is_retrograde": false,
+        "speed": 0.628735
+      },
+      "Mercury": {
+        "longitude": 179.482083,
+        "sign_index": 5,
+        "degree_in_sign": 29.482083,
+        "is_retrograde": false,
+        "speed": 1.380493
+      },
+      "Jupiter": {
+        "longitude": 156.764213,
+        "sign_index": 5,
+        "degree_in_sign": 6.764213,
+        "is_retrograde": false,
+        "speed": 0.216337
+      },
+      "Venus": {
+        "longitude": 124.363329,
+        "sign_index": 4,
+        "degree_in_sign": 4.363329,
+        "is_retrograde": false,
+        "speed": 1.20429
+      },
+      "Saturn": {
+        "longitude": 155.514678,
+        "sign_index": 5,
+        "degree_in_sign": 5.514678,
+        "is_retrograde": false,
+        "speed": 0.124262
+      },
+      "Rahu": {
+        "longitude": 176.161677,
+        "sign_index": 5,
+        "degree_in_sign": 26.161677,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 356.161677,
+        "sign_index": 11,
+        "degree_in_sign": 26.161677,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

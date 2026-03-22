@@ -1,0 +1,110 @@
+{
+  "adb_id": 71566,
+  "name": "Caputo, Sergio",
+  "given_name": "Sergio Caputo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434985.5,
+    "year": 1954,
+    "month": 8,
+    "day": 31,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caputo,_Sergio",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 25.845892,
+    "lagna": 55.845892,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.223842,
+    "jd_ut": 2434985.5,
+    "planets": {
+      "Sun": {
+        "longitude": 133.830761,
+        "sign_index": 4,
+        "degree_in_sign": 13.830761,
+        "is_retrograde": false,
+        "speed": 0.967495
+      },
+      "Moon": {
+        "longitude": 163.365109,
+        "sign_index": 5,
+        "degree_in_sign": 13.365109,
+        "is_retrograde": false,
+        "speed": 15.797856
+      },
+      "Mars": {
+        "longitude": 249.032568,
+        "sign_index": 8,
+        "degree_in_sign": 9.032568,
+        "is_retrograde": false,
+        "speed": 0.38069
+      },
+      "Mercury": {
+        "longitude": 142.418112,
+        "sign_index": 4,
+        "degree_in_sign": 22.418112,
+        "is_retrograde": false,
+        "speed": 1.807697
+      },
+      "Jupiter": {
+        "longitude": 88.266646,
+        "sign_index": 2,
+        "degree_in_sign": 28.266646,
+        "is_retrograde": false,
+        "speed": 0.18815
+      },
+      "Venus": {
+        "longitude": 179.909495,
+        "sign_index": 5,
+        "degree_in_sign": 29.909495,
+        "is_retrograde": false,
+        "speed": 1.004141
+      },
+      "Saturn": {
+        "longitude": 191.791293,
+        "sign_index": 6,
+        "degree_in_sign": 11.791293,
+        "is_retrograde": false,
+        "speed": 0.081093
+      },
+      "Rahu": {
+        "longitude": 258.709013,
+        "sign_index": 8,
+        "degree_in_sign": 18.709013,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 78.709013,
+        "sign_index": 2,
+        "degree_in_sign": 18.709013,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

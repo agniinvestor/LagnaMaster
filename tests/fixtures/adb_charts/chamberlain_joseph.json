@@ -1,0 +1,110 @@
+{
+  "adb_id": 2235,
+  "name": "Chamberlain, Joseph",
+  "given_name": "Joseph Chamberlain",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2391833.615046,
+    "year": 1836,
+    "month": 7,
+    "day": 8,
+    "calendar": "g",
+    "time": "02:45",
+    "time_type": "l",
+    "hour": 2.75,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamberlain,_Joseph",
+  "source_notes": "Old Moore 5/08 quotes \"a well-known astrologer who obtained data from a personal friend of Mr. Chamberlain, stated as about a quarter to three in the morning\".  (\"Fowler's\" quotes NN No.107 for 2:36 AM.  MA 11/04 gave \"about 8:00 AM\".)\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Stroke",
+    "Vocation : Politics : Government employee",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.228393,
+    "lagna": 47.228393,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.574269,
+    "jd_ut": 2391833.615046,
+    "planets": {
+      "Sun": {
+        "longitude": 84.319128,
+        "sign_index": 2,
+        "degree_in_sign": 24.319128,
+        "is_retrograde": false,
+        "speed": 0.953553
+      },
+      "Moon": {
+        "longitude": 21.87076,
+        "sign_index": 0,
+        "degree_in_sign": 21.87076,
+        "is_retrograde": false,
+        "speed": 11.455819
+      },
+      "Mars": {
+        "longitude": 39.477848,
+        "sign_index": 1,
+        "degree_in_sign": 9.477848,
+        "is_retrograde": false,
+        "speed": 0.702808
+      },
+      "Mercury": {
+        "longitude": 69.467433,
+        "sign_index": 2,
+        "degree_in_sign": 9.467433,
+        "is_retrograde": true,
+        "speed": -0.011808
+      },
+      "Jupiter": {
+        "longitude": 93.084303,
+        "sign_index": 3,
+        "degree_in_sign": 3.084303,
+        "is_retrograde": false,
+        "speed": 0.221451
+      },
+      "Venus": {
+        "longitude": 109.330022,
+        "sign_index": 3,
+        "degree_in_sign": 19.330022,
+        "is_retrograde": true,
+        "speed": -0.140771
+      },
+      "Saturn": {
+        "longitude": 187.021956,
+        "sign_index": 6,
+        "degree_in_sign": 7.021956,
+        "is_retrograde": false,
+        "speed": 0.010206
+      },
+      "Rahu": {
+        "longitude": 25.418536,
+        "sign_index": 0,
+        "degree_in_sign": 25.418536,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 205.418536,
+        "sign_index": 6,
+        "degree_in_sign": 25.418536,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

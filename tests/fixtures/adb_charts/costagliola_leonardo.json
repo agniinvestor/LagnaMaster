@@ -1,0 +1,108 @@
+{
+  "adb_id": 53265,
+  "name": "Costagliola, Leonardo",
+  "given_name": "Leonardo Costagliola",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422989.916667,
+    "year": 1921,
+    "month": 10,
+    "day": 27,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Taranto",
+    "country": "Italy",
+    "lat": 40.466667,
+    "lon": 17.25
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costagliola,_Leonardo",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/1486\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 15.162358,
+    "lagna": 225.162358,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.765199,
+    "jd_ut": 2422989.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 190.682309,
+        "sign_index": 6,
+        "degree_in_sign": 10.682309,
+        "is_retrograde": false,
+        "speed": 0.998679
+      },
+      "Moon": {
+        "longitude": 143.41528,
+        "sign_index": 4,
+        "degree_in_sign": 23.41528,
+        "is_retrograde": false,
+        "speed": 11.00293
+      },
+      "Mars": {
+        "longitude": 150.910246,
+        "sign_index": 5,
+        "degree_in_sign": 0.910246,
+        "is_retrograde": false,
+        "speed": 0.618281
+      },
+      "Mercury": {
+        "longitude": 199.606765,
+        "sign_index": 6,
+        "degree_in_sign": 19.606765,
+        "is_retrograde": true,
+        "speed": -1.052953
+      },
+      "Jupiter": {
+        "longitude": 163.904585,
+        "sign_index": 5,
+        "degree_in_sign": 13.904585,
+        "is_retrograde": false,
+        "speed": 0.204265
+      },
+      "Venus": {
+        "longitude": 165.498992,
+        "sign_index": 5,
+        "degree_in_sign": 15.498992,
+        "is_retrograde": false,
+        "speed": 1.239174
+      },
+      "Saturn": {
+        "longitude": 159.554078,
+        "sign_index": 5,
+        "degree_in_sign": 9.554078,
+        "is_retrograde": false,
+        "speed": 0.112482
+      },
+      "Rahu": {
+        "longitude": 174.379818,
+        "sign_index": 5,
+        "degree_in_sign": 24.379818,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 354.379818,
+        "sign_index": 11,
+        "degree_in_sign": 24.379818,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

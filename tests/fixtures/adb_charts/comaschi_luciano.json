@@ -1,0 +1,108 @@
+{
+  "adb_id": 53259,
+  "name": "Comaschi, Luciano",
+  "given_name": "Luciano Comaschi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426526.166667,
+    "year": 1931,
+    "month": 7,
+    "day": 3,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Melzo",
+    "country": "Italy",
+    "lat": 45.5,
+    "lon": 9.416667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comaschi,_Luciano",
+  "source_notes": "Steinbrecher collection: Gauquelin 1/1480\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 14.487803,
+    "lagna": 194.487803,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.900398,
+    "jd_ut": 2426526.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 77.846742,
+        "sign_index": 2,
+        "degree_in_sign": 17.846742,
+        "is_retrograde": false,
+        "speed": 0.953048
+      },
+      "Moon": {
+        "longitude": 300.535015,
+        "sign_index": 10,
+        "degree_in_sign": 0.535015,
+        "is_retrograde": false,
+        "speed": 15.359091
+      },
+      "Mars": {
+        "longitude": 139.853758,
+        "sign_index": 4,
+        "degree_in_sign": 19.853758,
+        "is_retrograde": false,
+        "speed": 0.572775
+      },
+      "Mercury": {
+        "longitude": 82.489431,
+        "sign_index": 2,
+        "degree_in_sign": 22.489431,
+        "is_retrograde": false,
+        "speed": 2.129015
+      },
+      "Jupiter": {
+        "longitude": 94.090914,
+        "sign_index": 3,
+        "degree_in_sign": 4.090914,
+        "is_retrograde": false,
+        "speed": 0.218002
+      },
+      "Venus": {
+        "longitude": 59.810159,
+        "sign_index": 1,
+        "degree_in_sign": 29.810159,
+        "is_retrograde": false,
+        "speed": 1.217276
+      },
+      "Saturn": {
+        "longitude": 267.771165,
+        "sign_index": 8,
+        "degree_in_sign": 27.771165,
+        "is_retrograde": true,
+        "speed": -0.072251
+      },
+      "Rahu": {
+        "longitude": 346.986567,
+        "sign_index": 11,
+        "degree_in_sign": 16.986567,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 166.986567,
+        "sign_index": 5,
+        "degree_in_sign": 16.986567,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

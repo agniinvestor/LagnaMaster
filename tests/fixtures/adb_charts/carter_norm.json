@@ -1,0 +1,114 @@
+{
+  "adb_id": 100125,
+  "name": "Carter, Norm",
+  "given_name": "Norm Carter",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2425247.128472,
+    "year": 1928,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "08:05",
+    "time_type": "s",
+    "hour": 8.083333,
+    "time_unknown": false,
+    "place": "Calgary",
+    "country": "Alberta",
+    "lat": 51.05,
+    "lon": -114.083333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carter,_Norm",
+  "source_notes": "Sy Scholfield quotes birth news, ''Calgary Herald'' (Calgary, Alberta), 3 January 1928, page 10; born at General Hospital, son of Mr and Mrs H. G. Carter.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Personal : Death : Accidental",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Vocation : Sports : Football",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Newsmaker"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.066042,
+    "lagna": 224.066042,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.851497,
+    "jd_ut": 2425247.128472,
+    "planets": {
+      "Sun": {
+        "longitude": 257.12414,
+        "sign_index": 8,
+        "degree_in_sign": 17.12414,
+        "is_retrograde": false,
+        "speed": 1.019167
+      },
+      "Moon": {
+        "longitude": 2.080161,
+        "sign_index": 0,
+        "degree_in_sign": 2.080161,
+        "is_retrograde": false,
+        "speed": 17.753328
+      },
+      "Mars": {
+        "longitude": 234.427139,
+        "sign_index": 7,
+        "degree_in_sign": 24.427139,
+        "is_retrograde": false,
+        "speed": 0.723001
+      },
+      "Mercury": {
+        "longitude": 252.752747,
+        "sign_index": 8,
+        "degree_in_sign": 12.752747,
+        "is_retrograde": false,
+        "speed": 1.584783
+      },
+      "Jupiter": {
+        "longitude": 333.765841,
+        "sign_index": 11,
+        "degree_in_sign": 3.765841,
+        "is_retrograde": false,
+        "speed": 0.133039
+      },
+      "Venus": {
+        "longitude": 214.355394,
+        "sign_index": 7,
+        "degree_in_sign": 4.355394,
+        "is_retrograde": false,
+        "speed": 1.175516
+      },
+      "Saturn": {
+        "longitude": 230.719884,
+        "sign_index": 7,
+        "degree_in_sign": 20.719884,
+        "is_retrograde": false,
+        "speed": 0.110356
+      },
+      "Rahu": {
+        "longitude": 54.76546,
+        "sign_index": 1,
+        "degree_in_sign": 24.76546,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 234.76546,
+        "sign_index": 7,
+        "degree_in_sign": 24.76546,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

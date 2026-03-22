@@ -1,0 +1,114 @@
+{
+  "adb_id": 88571,
+  "name": "Collins, James Lawton Jr.",
+  "given_name": "James Lawton Jr. Collins",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421538.25,
+    "year": 1917,
+    "month": 11,
+    "day": 5,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "El Paso",
+    "country": "Texas",
+    "lat": 31.766667,
+    "lon": -106.483333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_James_Lawton_Jr.",
+  "source_notes": "Sy Scholfield provided birth certificate (11 AM is clearly written but the smudges after the 11 may or may not be a number of minutes).\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Parenting : Kids more than 3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Wounded"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 26.273852,
+    "lagna": 236.273852,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.7097,
+    "jd_ut": 2421538.25,
+    "planets": {
+      "Sun": {
+        "longitude": 200.043374,
+        "sign_index": 6,
+        "degree_in_sign": 20.043374,
+        "is_retrograde": false,
+        "speed": 1.003159
+      },
+      "Moon": {
+        "longitude": 98.79548,
+        "sign_index": 3,
+        "degree_in_sign": 8.79548,
+        "is_retrograde": false,
+        "speed": 12.04936
+      },
+      "Mars": {
+        "longitude": 129.071166,
+        "sign_index": 4,
+        "degree_in_sign": 9.071166,
+        "is_retrograde": false,
+        "speed": 0.538847
+      },
+      "Mercury": {
+        "longitude": 201.262194,
+        "sign_index": 6,
+        "degree_in_sign": 21.262194,
+        "is_retrograde": false,
+        "speed": 1.608779
+      },
+      "Jupiter": {
+        "longitude": 46.711423,
+        "sign_index": 1,
+        "degree_in_sign": 16.711423,
+        "is_retrograde": true,
+        "speed": -0.109344
+      },
+      "Venus": {
+        "longitude": 245.656419,
+        "sign_index": 8,
+        "degree_in_sign": 5.656419,
+        "is_retrograde": false,
+        "speed": 1.118971
+      },
+      "Saturn": {
+        "longitude": 111.437548,
+        "sign_index": 3,
+        "degree_in_sign": 21.437548,
+        "is_retrograde": false,
+        "speed": 0.037674
+      },
+      "Rahu": {
+        "longitude": 251.306668,
+        "sign_index": 8,
+        "degree_in_sign": 11.306668,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 71.306668,
+        "sign_index": 2,
+        "degree_in_sign": 11.306668,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

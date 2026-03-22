@@ -1,0 +1,108 @@
+{
+  "adb_id": 53158,
+  "name": "Chevalier, Guy",
+  "given_name": "Guy Chevalier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419010.95184,
+    "year": 1910,
+    "month": 12,
+    "day": 5,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Sens",
+    "country": "France",
+    "lat": 48.2,
+    "lon": 3.283333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevalier,_Guy",
+  "source_notes": "Steinbrecher collection: Gauquelin 1/1733\\n",
+  "categories": [
+    "Vocation : Sports : Hockey"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 18.732132,
+    "lagna": 258.732132,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.613081,
+    "jd_ut": 2419010.95184,
+    "planets": {
+      "Sun": {
+        "longitude": 229.832826,
+        "sign_index": 7,
+        "degree_in_sign": 19.832826,
+        "is_retrograde": false,
+        "speed": 1.015371
+      },
+      "Moon": {
+        "longitude": 269.354531,
+        "sign_index": 8,
+        "degree_in_sign": 29.354531,
+        "is_retrograde": false,
+        "speed": 9.826009
+      },
+      "Mars": {
+        "longitude": 206.984406,
+        "sign_index": 6,
+        "degree_in_sign": 26.984406,
+        "is_retrograde": false,
+        "speed": 0.686703
+      },
+      "Mercury": {
+        "longitude": 242.338655,
+        "sign_index": 8,
+        "degree_in_sign": 2.338655,
+        "is_retrograde": false,
+        "speed": 1.530814
+      },
+      "Jupiter": {
+        "longitude": 192.23773,
+        "sign_index": 6,
+        "degree_in_sign": 12.23773,
+        "is_retrograde": false,
+        "speed": 0.193697
+      },
+      "Venus": {
+        "longitude": 231.995541,
+        "sign_index": 7,
+        "degree_in_sign": 21.995541,
+        "is_retrograde": false,
+        "speed": 1.257855
+      },
+      "Saturn": {
+        "longitude": 7.779974,
+        "sign_index": 0,
+        "degree_in_sign": 7.779974,
+        "is_retrograde": true,
+        "speed": -0.048519
+      },
+      "Rahu": {
+        "longitude": 25.233493,
+        "sign_index": 0,
+        "degree_in_sign": 25.233493,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 205.233493,
+        "sign_index": 6,
+        "degree_in_sign": 25.233493,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

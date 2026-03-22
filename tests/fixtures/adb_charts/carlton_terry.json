@@ -1,0 +1,110 @@
+{
+  "adb_id": 44630,
+  "name": "Carlton, Terry",
+  "given_name": "Terry Carlton",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2436241.8125,
+    "year": 1958,
+    "month": 2,
+    "day": 7,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Ponca City",
+    "country": "Oklahoma",
+    "lat": 36.7,
+    "lon": -97.083333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlton,_Terry",
+  "source_notes": "T.Pat Davis quotes data from Henrietta \"Mike\" Cramton, April's astrologer for years\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Assault/ Battery",
+    "Passions : Criminal Victim : Homicide victim",
+    "Vocation : Business : Service Rep."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.245496,
+    "lagna": 184.245496,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.27188,
+    "jd_ut": 2436241.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 294.750555,
+        "sign_index": 9,
+        "degree_in_sign": 24.750555,
+        "is_retrograde": false,
+        "speed": 1.012591
+      },
+      "Moon": {
+        "longitude": 156.763948,
+        "sign_index": 5,
+        "degree_in_sign": 6.763948,
+        "is_retrograde": false,
+        "speed": 10.776946
+      },
+      "Mars": {
+        "longitude": 249.240555,
+        "sign_index": 8,
+        "degree_in_sign": 9.240555,
+        "is_retrograde": false,
+        "speed": 0.714938
+      },
+      "Mercury": {
+        "longitude": 277.746065,
+        "sign_index": 9,
+        "degree_in_sign": 7.746065,
+        "is_retrograde": false,
+        "speed": 1.521739
+      },
+      "Jupiter": {
+        "longitude": 188.280712,
+        "sign_index": 6,
+        "degree_in_sign": 8.280712,
+        "is_retrograde": false,
+        "speed": 0.026108
+      },
+      "Venus": {
+        "longitude": 279.855185,
+        "sign_index": 9,
+        "degree_in_sign": 9.855185,
+        "is_retrograde": true,
+        "speed": -0.437422
+      },
+      "Saturn": {
+        "longitude": 239.920512,
+        "sign_index": 7,
+        "degree_in_sign": 29.920512,
+        "is_retrograde": false,
+        "speed": 0.083711
+      },
+      "Rahu": {
+        "longitude": 192.134434,
+        "sign_index": 6,
+        "degree_in_sign": 12.134434,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 12.134434,
+        "sign_index": 0,
+        "degree_in_sign": 12.134434,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

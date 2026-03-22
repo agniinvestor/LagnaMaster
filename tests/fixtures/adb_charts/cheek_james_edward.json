@@ -1,0 +1,111 @@
+{
+  "adb_id": 50772,
+  "name": "Cheek, James Edward",
+  "given_name": "James Edward Cheek",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427046.3125,
+    "year": 1932,
+    "month": 12,
+    "day": 4,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "s",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Roanoke Rapids",
+    "country": "North Carolina",
+    "lat": 36.466667,
+    "lon": -77.65
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "pis",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cheek,_James_Edward",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Eyes",
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Teacher",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 12.635602,
+    "lagna": 342.635602,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.920285,
+    "jd_ut": 2427046.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 229.548361,
+        "sign_index": 7,
+        "degree_in_sign": 19.548361,
+        "is_retrograde": false,
+        "speed": 1.015047
+      },
+      "Moon": {
+        "longitude": 318.804178,
+        "sign_index": 10,
+        "degree_in_sign": 18.804178,
+        "is_retrograde": false,
+        "speed": 9.967796
+      },
+      "Mars": {
+        "longitude": 136.435907,
+        "sign_index": 4,
+        "degree_in_sign": 16.435907,
+        "is_retrograde": false,
+        "speed": 0.401001
+      },
+      "Mercury": {
+        "longitude": 229.276212,
+        "sign_index": 7,
+        "degree_in_sign": 19.276212,
+        "is_retrograde": true,
+        "speed": -1.383629
+      },
+      "Jupiter": {
+        "longitude": 148.537697,
+        "sign_index": 4,
+        "degree_in_sign": 28.537697,
+        "is_retrograde": false,
+        "speed": 0.101362
+      },
+      "Venus": {
+        "longitude": 196.665195,
+        "sign_index": 6,
+        "degree_in_sign": 16.665195,
+        "is_retrograde": false,
+        "speed": 1.230895
+      },
+      "Saturn": {
+        "longitude": 278.306816,
+        "sign_index": 9,
+        "degree_in_sign": 8.306816,
+        "is_retrograde": false,
+        "speed": 0.091572
+      },
+      "Rahu": {
+        "longitude": 319.42296,
+        "sign_index": 10,
+        "degree_in_sign": 19.42296,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 139.42296,
+        "sign_index": 4,
+        "degree_in_sign": 19.42296,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

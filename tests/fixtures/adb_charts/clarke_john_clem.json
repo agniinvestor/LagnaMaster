@@ -1,0 +1,109 @@
+{
+  "adb_id": 50790,
+  "name": "Clarke, John Clem",
+  "given_name": "John Clem Clarke",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428691.710417,
+    "year": 1937,
+    "month": 6,
+    "day": 6,
+    "calendar": "g",
+    "time": "21:03",
+    "time_type": "s",
+    "hour": 21.05,
+    "time_unknown": false,
+    "place": "Bend",
+    "country": "Oregon",
+    "lat": 44.066667,
+    "lon": -121.316667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "tau",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarke,_John_Clem",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Photography"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 18.515289,
+    "lagna": 228.515289,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.983195,
+    "jd_ut": 2428691.710417,
+    "planets": {
+      "Sun": {
+        "longitude": 53.036023,
+        "sign_index": 1,
+        "degree_in_sign": 23.036023,
+        "is_retrograde": false,
+        "speed": 0.956893
+      },
+      "Moon": {
+        "longitude": 29.179735,
+        "sign_index": 0,
+        "degree_in_sign": 29.179735,
+        "is_retrograde": false,
+        "speed": 18.97728
+      },
+      "Mars": {
+        "longitude": 209.31993,
+        "sign_index": 6,
+        "degree_in_sign": 29.31993,
+        "is_retrograde": true,
+        "speed": -0.265449
+      },
+      "Mercury": {
+        "longitude": 29.290731,
+        "sign_index": 0,
+        "degree_in_sign": 29.290731,
+        "is_retrograde": false,
+        "speed": 0.959062
+      },
+      "Jupiter": {
+        "longitude": 273.534183,
+        "sign_index": 9,
+        "degree_in_sign": 3.534183,
+        "is_retrograde": true,
+        "speed": -0.068897
+      },
+      "Venus": {
+        "longitude": 9.155265,
+        "sign_index": 0,
+        "degree_in_sign": 9.155265,
+        "is_retrograde": false,
+        "speed": 0.752691
+      },
+      "Saturn": {
+        "longitude": 340.831541,
+        "sign_index": 11,
+        "degree_in_sign": 10.831541,
+        "is_retrograde": false,
+        "speed": 0.063595
+      },
+      "Rahu": {
+        "longitude": 232.229912,
+        "sign_index": 7,
+        "degree_in_sign": 22.229912,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 52.229912,
+        "sign_index": 1,
+        "degree_in_sign": 22.229912,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

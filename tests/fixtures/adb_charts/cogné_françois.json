@@ -1,0 +1,108 @@
+{
+  "adb_id": 67436,
+  "name": "Cogné, François",
+  "given_name": "François Cogné",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406477.285463,
+    "year": 1876,
+    "month": 8,
+    "day": 10,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Aubin",
+    "country": "France",
+    "lat": 44.533333,
+    "lon": 2.233333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cogné,_François",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'sculpteurs' pdf file, p. 24.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 1.249065,
+    "lagna": 271.249065,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.133958,
+    "jd_ut": 2406477.285463,
+    "planets": {
+      "Sun": {
+        "longitude": 116.265282,
+        "sign_index": 3,
+        "degree_in_sign": 26.265282,
+        "is_retrograde": false,
+        "speed": 0.959796
+      },
+      "Moon": {
+        "longitude": 359.89888,
+        "sign_index": 11,
+        "degree_in_sign": 29.89888,
+        "is_retrograde": false,
+        "speed": 15.986227
+      },
+      "Mars": {
+        "longitude": 116.98836,
+        "sign_index": 3,
+        "degree_in_sign": 26.98836,
+        "is_retrograde": false,
+        "speed": 0.636782
+      },
+      "Mercury": {
+        "longitude": 122.259803,
+        "sign_index": 4,
+        "degree_in_sign": 2.259803,
+        "is_retrograde": false,
+        "speed": 1.946987
+      },
+      "Jupiter": {
+        "longitude": 210.756333,
+        "sign_index": 7,
+        "degree_in_sign": 0.756333,
+        "is_retrograde": false,
+        "speed": 0.065979
+      },
+      "Venus": {
+        "longitude": 82.40137,
+        "sign_index": 2,
+        "degree_in_sign": 22.40137,
+        "is_retrograde": false,
+        "speed": 0.209395
+      },
+      "Saturn": {
+        "longitude": 313.822124,
+        "sign_index": 10,
+        "degree_in_sign": 13.822124,
+        "is_retrograde": true,
+        "speed": -0.070363
+      },
+      "Rahu": {
+        "longitude": 329.418973,
+        "sign_index": 10,
+        "degree_in_sign": 29.418973,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 149.418973,
+        "sign_index": 4,
+        "degree_in_sign": 29.418973,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

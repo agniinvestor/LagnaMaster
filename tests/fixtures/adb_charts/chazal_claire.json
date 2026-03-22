@@ -1,0 +1,108 @@
+{
+  "adb_id": 56857,
+  "name": "Chazal, Claire",
+  "given_name": "Claire Chazal",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435808.833333,
+    "year": 1956,
+    "month": 12,
+    "day": 1,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Thiers",
+    "country": "France",
+    "lat": 45.85,
+    "lon": 3.566667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chazal,_Claire",
+  "source_notes": "Paddy de Jabrun quoted bc in Horoscope (1989).\\n",
+  "categories": [
+    "Vocation : Entertainment : News journalist/ Anchor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 2.292448,
+    "lagna": 212.292448,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.255324,
+    "jd_ut": 2435808.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 225.860046,
+        "sign_index": 7,
+        "degree_in_sign": 15.860046,
+        "is_retrograde": false,
+        "speed": 1.01423
+      },
+      "Moon": {
+        "longitude": 214.695674,
+        "sign_index": 7,
+        "degree_in_sign": 4.695674,
+        "is_retrograde": false,
+        "speed": 10.048538
+      },
+      "Mars": {
+        "longitude": 334.256883,
+        "sign_index": 11,
+        "degree_in_sign": 4.256883,
+        "is_retrograde": false,
+        "speed": 0.471291
+      },
+      "Mercury": {
+        "longitude": 236.05841,
+        "sign_index": 7,
+        "degree_in_sign": 26.05841,
+        "is_retrograde": false,
+        "speed": 1.541782
+      },
+      "Jupiter": {
+        "longitude": 155.384392,
+        "sign_index": 5,
+        "degree_in_sign": 5.384392,
+        "is_retrograde": false,
+        "speed": 0.128945
+      },
+      "Venus": {
+        "longitude": 193.868494,
+        "sign_index": 6,
+        "degree_in_sign": 13.868494,
+        "is_retrograde": false,
+        "speed": 1.233185
+      },
+      "Saturn": {
+        "longitude": 222.530792,
+        "sign_index": 7,
+        "degree_in_sign": 12.530792,
+        "is_retrograde": false,
+        "speed": 0.118582
+      },
+      "Rahu": {
+        "longitude": 215.078889,
+        "sign_index": 7,
+        "degree_in_sign": 5.078889,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 35.078889,
+        "sign_index": 1,
+        "degree_in_sign": 5.078889,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

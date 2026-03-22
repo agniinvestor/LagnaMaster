@@ -1,0 +1,108 @@
+{
+  "adb_id": 54105,
+  "name": "Chetkovich, Mitch",
+  "given_name": "Mitch Chetkovich",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421431.333333,
+    "year": 1917,
+    "month": 7,
+    "day": 21,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Fairpoint",
+    "country": "Ohio",
+    "lat": 40.116667,
+    "lon": -80.933333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chetkovich,_Mitch",
+  "source_notes": "Steinbrecher collection: Steinbrecher has birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Sports : Baseball"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 8.428502,
+    "lagna": 188.428502,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.705613,
+    "jd_ut": 2421431.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 95.732169,
+        "sign_index": 3,
+        "degree_in_sign": 5.732169,
+        "is_retrograde": false,
+        "speed": 0.954996
+      },
+      "Moon": {
+        "longitude": 125.448037,
+        "sign_index": 4,
+        "degree_in_sign": 5.448037,
+        "is_retrograde": false,
+        "speed": 7.93545
+      },
+      "Mars": {
+        "longitude": 63.014895,
+        "sign_index": 2,
+        "degree_in_sign": 3.014895,
+        "is_retrograde": false,
+        "speed": 0.678088
+      },
+      "Mercury": {
+        "longitude": 105.891414,
+        "sign_index": 3,
+        "degree_in_sign": 15.891414,
+        "is_retrograde": false,
+        "speed": 1.955914
+      },
+      "Jupiter": {
+        "longitude": 41.586284,
+        "sign_index": 1,
+        "degree_in_sign": 11.586284,
+        "is_retrograde": false,
+        "speed": 0.181413
+      },
+      "Venus": {
+        "longitude": 118.87843,
+        "sign_index": 3,
+        "degree_in_sign": 28.87843,
+        "is_retrograde": false,
+        "speed": 1.218112
+      },
+      "Saturn": {
+        "longitude": 100.704782,
+        "sign_index": 3,
+        "degree_in_sign": 10.704782,
+        "is_retrograde": false,
+        "speed": 0.128854
+      },
+      "Rahu": {
+        "longitude": 256.972405,
+        "sign_index": 8,
+        "degree_in_sign": 16.972405,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 76.972405,
+        "sign_index": 2,
+        "degree_in_sign": 16.972405,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

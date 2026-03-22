@@ -1,0 +1,111 @@
+{
+  "adb_id": 60249,
+  "name": "Covel, John",
+  "given_name": "John Covel",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2319428.581343,
+    "year": 1638,
+    "month": 4,
+    "day": 2,
+    "calendar": "j",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Bury St.Edmunds",
+    "country": "England",
+    "lat": 52.25,
+    "lon": 0.716667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Covel,_John",
+  "source_notes": "Sy Scholfield quotes him in \"Early Voyages and Travels in the Levant\" by J. Theodore Bent (Cambridge University Press, 2010), p. 282: \"On April 2nd, 1677, Dr. Covel left Constantinople for good, and his return to England forms another MS. volume. He thus begins it : 'This day in the year 1638, I was born at two o'clock in the morning, being Monday, and it pleased me to see so many things meet this day, whereby I might reckon it my second birth.'\"\\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Politics : Diplomat",
+    "Vocation : Religion : Ecclesiastics/ western",
+    "Vocation : Science : Geology"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 8.985713,
+    "lagna": 248.985713,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 18.808355,
+    "jd_ut": 2319428.581343,
+    "planets": {
+      "Sun": {
+        "longitude": 3.326235,
+        "sign_index": 0,
+        "degree_in_sign": 3.326235,
+        "is_retrograde": false,
+        "speed": 0.977504
+      },
+      "Moon": {
+        "longitude": 336.967021,
+        "sign_index": 11,
+        "degree_in_sign": 6.967021,
+        "is_retrograde": false,
+        "speed": 14.362954
+      },
+      "Mars": {
+        "longitude": 241.116864,
+        "sign_index": 8,
+        "degree_in_sign": 1.116864,
+        "is_retrograde": false,
+        "speed": 0.246673
+      },
+      "Mercury": {
+        "longitude": 338.66009,
+        "sign_index": 11,
+        "degree_in_sign": 8.66009,
+        "is_retrograde": false,
+        "speed": 1.440903
+      },
+      "Jupiter": {
+        "longitude": 192.588638,
+        "sign_index": 6,
+        "degree_in_sign": 12.588638,
+        "is_retrograde": true,
+        "speed": -0.124495
+      },
+      "Venus": {
+        "longitude": 30.189503,
+        "sign_index": 1,
+        "degree_in_sign": 0.189503,
+        "is_retrograde": true,
+        "speed": -0.084127
+      },
+      "Saturn": {
+        "longitude": 287.152584,
+        "sign_index": 9,
+        "degree_in_sign": 17.152584,
+        "is_retrograde": false,
+        "speed": 0.054435
+      },
+      "Rahu": {
+        "longitude": 262.32514,
+        "sign_index": 8,
+        "degree_in_sign": 22.32514,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 82.32514,
+        "sign_index": 2,
+        "degree_in_sign": 22.32514,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 50752,
+  "name": "Carter (boxer), Jimmy",
+  "given_name": "Jimmy Carter (boxer)",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423768.75,
+    "year": 1923,
+    "month": 12,
+    "day": 15,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Aiken",
+    "country": "South Carolina",
+    "lat": 33.566667,
+    "lon": -81.716667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carter_(boxer),_Jimmy",
+  "source_notes": "Steinbrecher Collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Sports : Boxing",
+    "Notable : Awards : Hall of Fame",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.389448,
+    "lagna": 135.389448,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.794975,
+    "jd_ut": 2423768.75,
+    "planets": {
+      "Sun": {
+        "longitude": 239.450025,
+        "sign_index": 7,
+        "degree_in_sign": 29.450025,
+        "is_retrograde": false,
+        "speed": 1.017488
+      },
+      "Moon": {
+        "longitude": 330.135391,
+        "sign_index": 11,
+        "degree_in_sign": 0.135391,
+        "is_retrograde": false,
+        "speed": 12.948345
+      },
+      "Mars": {
+        "longitude": 194.370495,
+        "sign_index": 6,
+        "degree_in_sign": 14.370495,
+        "is_retrograde": false,
+        "speed": 0.642009
+      },
+      "Mercury": {
+        "longitude": 255.164429,
+        "sign_index": 8,
+        "degree_in_sign": 15.164429,
+        "is_retrograde": false,
+        "speed": 1.499076
+      },
+      "Jupiter": {
+        "longitude": 221.743932,
+        "sign_index": 7,
+        "degree_in_sign": 11.743932,
+        "is_retrograde": false,
+        "speed": 0.217754
+      },
+      "Venus": {
+        "longitude": 263.413195,
+        "sign_index": 8,
+        "degree_in_sign": 23.413195,
+        "is_retrograde": false,
+        "speed": 1.245834
+      },
+      "Saturn": {
+        "longitude": 186.782108,
+        "sign_index": 6,
+        "degree_in_sign": 6.782108,
+        "is_retrograde": false,
+        "speed": 0.088967
+      },
+      "Rahu": {
+        "longitude": 133.107815,
+        "sign_index": 4,
+        "degree_in_sign": 13.107815,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 313.107815,
+        "sign_index": 10,
+        "degree_in_sign": 13.107815,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

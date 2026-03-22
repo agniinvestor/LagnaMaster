@@ -1,0 +1,111 @@
+{
+  "adb_id": 103639,
+  "name": "Caudillo, Luke",
+  "given_name": "Luke Caudillo",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2444573.763889,
+    "year": 1980,
+    "month": 11,
+    "day": 30,
+    "calendar": "g",
+    "time": "00:20",
+    "time_type": "s",
+    "hour": 0.333333,
+    "time_unknown": false,
+    "place": "North Platte",
+    "country": "Nebraska",
+    "lat": 41.116667,
+    "lon": -100.766667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caudillo,_Luke",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Telegraph'' (North Platte, Nebraska), 2 December 1980, page 6: born at Great Plains Medical Center.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Martial arts",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 21.927746,
+    "lagna": 111.927746,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.590491,
+    "jd_ut": 2444573.763889,
+    "planets": {
+      "Sun": {
+        "longitude": 224.619151,
+        "sign_index": 7,
+        "degree_in_sign": 14.619151,
+        "is_retrograde": false,
+        "speed": 1.013473
+      },
+      "Moon": {
+        "longitude": 144.876903,
+        "sign_index": 4,
+        "degree_in_sign": 24.876903,
+        "is_retrograde": false,
+        "speed": 12.944733
+      },
+      "Mars": {
+        "longitude": 252.641994,
+        "sign_index": 8,
+        "degree_in_sign": 12.641994,
+        "is_retrograde": false,
+        "speed": 0.763872
+      },
+      "Mercury": {
+        "longitude": 208.115801,
+        "sign_index": 6,
+        "degree_in_sign": 28.115801,
+        "is_retrograde": false,
+        "speed": 1.459597
+      },
+      "Jupiter": {
+        "longitude": 162.335175,
+        "sign_index": 5,
+        "degree_in_sign": 12.335175,
+        "is_retrograde": false,
+        "speed": 0.148287
+      },
+      "Venus": {
+        "longitude": 194.062033,
+        "sign_index": 6,
+        "degree_in_sign": 14.062033,
+        "is_retrograde": false,
+        "speed": 1.236516
+      },
+      "Saturn": {
+        "longitude": 164.09657,
+        "sign_index": 5,
+        "degree_in_sign": 14.09657,
+        "is_retrograde": false,
+        "speed": 0.080508
+      },
+      "Rahu": {
+        "longitude": 110.607317,
+        "sign_index": 3,
+        "degree_in_sign": 20.607317,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 290.607317,
+        "sign_index": 9,
+        "degree_in_sign": 20.607317,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

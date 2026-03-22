@@ -1,0 +1,109 @@
+{
+  "adb_id": 47748,
+  "name": "Capparelli, Gloria",
+  "given_name": "Gloria Capparelli",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2424583.930556,
+    "year": 1926,
+    "month": 3,
+    "day": 9,
+    "calendar": "g",
+    "time": "05:20",
+    "time_type": "s",
+    "hour": 5.333333,
+    "time_unknown": false,
+    "place": "Brooklyn (Kings County)",
+    "country": "New York",
+    "lat": 40.633333,
+    "lon": -73.933333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capparelli,_Gloria",
+  "source_notes": "Given by her in Mercury Hour Extra 7/1992.\\n",
+  "categories": [
+    "Lifestyle : Financial : Gambler",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 7.134637,
+    "lagna": 277.134637,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.826141,
+    "jd_ut": 2424583.930556,
+    "planets": {
+      "Sun": {
+        "longitude": 325.276275,
+        "sign_index": 10,
+        "degree_in_sign": 25.276275,
+        "is_retrograde": false,
+        "speed": 0.999492
+      },
+      "Moon": {
+        "longitude": 260.538748,
+        "sign_index": 8,
+        "degree_in_sign": 20.538748,
+        "is_retrograde": false,
+        "speed": 10.381382
+      },
+      "Mars": {
+        "longitude": 267.289743,
+        "sign_index": 8,
+        "degree_in_sign": 27.289743,
+        "is_retrograde": false,
+        "speed": 0.71656
+      },
+      "Mercury": {
+        "longitude": 342.421608,
+        "sign_index": 11,
+        "degree_in_sign": 12.421608,
+        "is_retrograde": false,
+        "speed": 1.4639
+      },
+      "Jupiter": {
+        "longitude": 291.629716,
+        "sign_index": 9,
+        "degree_in_sign": 21.629716,
+        "is_retrograde": false,
+        "speed": 0.216673
+      },
+      "Venus": {
+        "longitude": 289.126347,
+        "sign_index": 9,
+        "degree_in_sign": 19.126347,
+        "is_retrograde": false,
+        "speed": 0.335902
+      },
+      "Saturn": {
+        "longitude": 213.246496,
+        "sign_index": 7,
+        "degree_in_sign": 3.246496,
+        "is_retrograde": true,
+        "speed": -0.005542
+      },
+      "Rahu": {
+        "longitude": 89.909698,
+        "sign_index": 2,
+        "degree_in_sign": 29.909698,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 269.909698,
+        "sign_index": 8,
+        "degree_in_sign": 29.909698,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

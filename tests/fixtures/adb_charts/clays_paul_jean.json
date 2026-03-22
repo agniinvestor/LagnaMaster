@@ -1,0 +1,108 @@
+{
+  "adb_id": 60493,
+  "name": "Clays, Paul Jean",
+  "given_name": "Paul Jean Clays",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2385028.991019,
+    "year": 1817,
+    "month": 11,
+    "day": 20,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Bruges",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 3.233333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clays,_Paul_Jean",
+  "source_notes": "Gauquelin vol 4\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 17.003895,
+    "lagna": 257.003895,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.314225,
+    "jd_ut": 2385028.991019,
+    "planets": {
+      "Sun": {
+        "longitude": 216.546696,
+        "sign_index": 7,
+        "degree_in_sign": 6.546696,
+        "is_retrograde": false,
+        "speed": 1.010576
+      },
+      "Moon": {
+        "longitude": 359.710468,
+        "sign_index": 11,
+        "degree_in_sign": 29.710468,
+        "is_retrograde": false,
+        "speed": 14.493288
+      },
+      "Mars": {
+        "longitude": 61.688972,
+        "sign_index": 2,
+        "degree_in_sign": 1.688972,
+        "is_retrograde": true,
+        "speed": -0.287556
+      },
+      "Mercury": {
+        "longitude": 210.784516,
+        "sign_index": 7,
+        "degree_in_sign": 0.784516,
+        "is_retrograde": false,
+        "speed": 1.589978
+      },
+      "Jupiter": {
+        "longitude": 235.225205,
+        "sign_index": 7,
+        "degree_in_sign": 25.225205,
+        "is_retrograde": false,
+        "speed": 0.220685
+      },
+      "Venus": {
+        "longitude": 189.698977,
+        "sign_index": 6,
+        "degree_in_sign": 9.698977,
+        "is_retrograde": false,
+        "speed": 1.242546
+      },
+      "Saturn": {
+        "longitude": 308.261738,
+        "sign_index": 10,
+        "degree_in_sign": 8.261738,
+        "is_retrograde": false,
+        "speed": 0.029967
+      },
+      "Rahu": {
+        "longitude": 26.010375,
+        "sign_index": 0,
+        "degree_in_sign": 26.010375,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 206.010375,
+        "sign_index": 6,
+        "degree_in_sign": 26.010375,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

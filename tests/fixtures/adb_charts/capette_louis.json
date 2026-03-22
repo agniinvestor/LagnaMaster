@@ -1,0 +1,109 @@
+{
+  "adb_id": 2934,
+  "name": "Capette, Louis",
+  "given_name": "Louis Capette",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407366.764352,
+    "year": 1879,
+    "month": 1,
+    "day": 17,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "l",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capette,_Louis",
+  "source_notes": "Gauquelin NS Vol 1/0317\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Medical : Surgeon"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 19.420269,
+    "lagna": 229.420269,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.167958,
+    "jd_ut": 2407366.764352,
+    "planets": {
+      "Sun": {
+        "longitude": 274.647864,
+        "sign_index": 9,
+        "degree_in_sign": 4.647864,
+        "is_retrograde": false,
+        "speed": 1.018233
+      },
+      "Moon": {
+        "longitude": 208.745167,
+        "sign_index": 6,
+        "degree_in_sign": 28.745167,
+        "is_retrograde": false,
+        "speed": 10.423778
+      },
+      "Mars": {
+        "longitude": 234.468289,
+        "sign_index": 7,
+        "degree_in_sign": 24.468289,
+        "is_retrograde": false,
+        "speed": 0.703528
+      },
+      "Mercury": {
+        "longitude": 250.648393,
+        "sign_index": 8,
+        "degree_in_sign": 10.648393,
+        "is_retrograde": false,
+        "speed": 1.037082
+      },
+      "Jupiter": {
+        "longitude": 292.038052,
+        "sign_index": 9,
+        "degree_in_sign": 22.038052,
+        "is_retrograde": false,
+        "speed": 0.233572
+      },
+      "Venus": {
+        "longitude": 284.805928,
+        "sign_index": 9,
+        "degree_in_sign": 14.805928,
+        "is_retrograde": false,
+        "speed": 1.255259
+      },
+      "Saturn": {
+        "longitude": 336.014043,
+        "sign_index": 11,
+        "degree_in_sign": 6.014043,
+        "is_retrograde": false,
+        "speed": 0.079862
+      },
+      "Rahu": {
+        "longitude": 282.283594,
+        "sign_index": 9,
+        "degree_in_sign": 12.283594,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 102.283594,
+        "sign_index": 3,
+        "degree_in_sign": 12.283594,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

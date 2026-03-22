@@ -1,0 +1,111 @@
+{
+  "adb_id": 100925,
+  "name": "Coste, Charles",
+  "given_name": "Charles Coste",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423823.708333,
+    "year": 1924,
+    "month": 2,
+    "day": 8,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Ollioules",
+    "country": "France",
+    "lat": 43.133333,
+    "lon": 5.85
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coste,_Charles",
+  "source_notes": "Paddy de Jabrun quoted BC.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Sports : Race Bikes",
+    "Notable : Awards : Olympics",
+    "Notable : Awards : Public Service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 27.990155,
+    "lagna": 237.990155,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.797077,
+    "jd_ut": 2423823.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 295.379845,
+        "sign_index": 9,
+        "degree_in_sign": 25.379845,
+        "is_retrograde": false,
+        "speed": 1.01307
+      },
+      "Moon": {
+        "longitude": 333.8819,
+        "sign_index": 11,
+        "degree_in_sign": 3.8819,
+        "is_retrograde": false,
+        "speed": 15.520929
+      },
+      "Mars": {
+        "longitude": 229.652399,
+        "sign_index": 7,
+        "degree_in_sign": 19.652399,
+        "is_retrograde": false,
+        "speed": 0.639707
+      },
+      "Mercury": {
+        "longitude": 270.028569,
+        "sign_index": 9,
+        "degree_in_sign": 0.028569,
+        "is_retrograde": false,
+        "speed": 1.116374
+      },
+      "Jupiter": {
+        "longitude": 232.306297,
+        "sign_index": 7,
+        "degree_in_sign": 22.306297,
+        "is_retrograde": false,
+        "speed": 0.153374
+      },
+      "Venus": {
+        "longitude": 331.201429,
+        "sign_index": 11,
+        "degree_in_sign": 1.201429,
+        "is_retrograde": false,
+        "speed": 1.212289
+      },
+      "Saturn": {
+        "longitude": 189.534331,
+        "sign_index": 6,
+        "degree_in_sign": 9.534331,
+        "is_retrograde": false,
+        "speed": 0.005001
+      },
+      "Rahu": {
+        "longitude": 130.195458,
+        "sign_index": 4,
+        "degree_in_sign": 10.195458,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 310.195458,
+        "sign_index": 10,
+        "degree_in_sign": 10.195458,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

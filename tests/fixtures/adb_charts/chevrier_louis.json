@@ -1,0 +1,108 @@
+{
+  "adb_id": 2870,
+  "name": "Chevrier, Louis",
+  "given_name": "Louis Chevrier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406646.648056,
+    "year": 1877,
+    "month": 1,
+    "day": 27,
+    "calendar": "g",
+    "time": "03:30",
+    "time_type": "l",
+    "hour": 3.5,
+    "time_unknown": false,
+    "place": "Fontenay le Comte",
+    "country": "France",
+    "lat": 46.466667,
+    "lon": -0.8
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevrier,_Louis",
+  "source_notes": "Gauquelin Vol 2/892\\n",
+  "categories": [
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 22.22124,
+    "lagna": 202.22124,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.140432,
+    "jd_ut": 2406646.648056,
+    "planets": {
+      "Sun": {
+        "longitude": 285.232193,
+        "sign_index": 9,
+        "degree_in_sign": 15.232193,
+        "is_retrograde": false,
+        "speed": 1.015494
+      },
+      "Moon": {
+        "longitude": 73.132837,
+        "sign_index": 2,
+        "degree_in_sign": 13.132837,
+        "is_retrograde": false,
+        "speed": 14.65751
+      },
+      "Mars": {
+        "longitude": 226.01453,
+        "sign_index": 7,
+        "degree_in_sign": 16.01453,
+        "is_retrograde": false,
+        "speed": 0.653245
+      },
+      "Mercury": {
+        "longitude": 284.796905,
+        "sign_index": 9,
+        "degree_in_sign": 14.796905,
+        "is_retrograde": true,
+        "speed": -1.254594
+      },
+      "Jupiter": {
+        "longitude": 242.270028,
+        "sign_index": 8,
+        "degree_in_sign": 2.270028,
+        "is_retrograde": false,
+        "speed": 0.193797
+      },
+      "Venus": {
+        "longitude": 260.459114,
+        "sign_index": 8,
+        "degree_in_sign": 20.459114,
+        "is_retrograde": false,
+        "speed": 1.244307
+      },
+      "Saturn": {
+        "longitude": 314.604327,
+        "sign_index": 10,
+        "degree_in_sign": 14.604327,
+        "is_retrograde": false,
+        "speed": 0.111813
+      },
+      "Rahu": {
+        "longitude": 320.444089,
+        "sign_index": 10,
+        "degree_in_sign": 20.444089,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 140.444089,
+        "sign_index": 4,
+        "degree_in_sign": 20.444089,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

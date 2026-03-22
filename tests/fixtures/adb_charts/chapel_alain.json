@@ -1,0 +1,110 @@
+{
+  "adb_id": 65204,
+  "name": "Chapel, Alain",
+  "given_name": "Alain Chapel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428898.159722,
+    "year": 1937,
+    "month": 12,
+    "day": 30,
+    "calendar": "g",
+    "time": "15:50",
+    "time_type": "s",
+    "hour": 15.833333,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapel,_Alain",
+  "source_notes": "Didier Geslain archive, 'cuisine' pdf file, p. 18.\\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Food and Beverage : Chef/ Cook",
+    "Vocation : Food and Beverage : Restaurateur"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 20.648653,
+    "lagna": 50.648653,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.991089,
+    "jd_ut": 2428898.159722,
+    "planets": {
+      "Sun": {
+        "longitude": 255.55977,
+        "sign_index": 8,
+        "degree_in_sign": 15.55977,
+        "is_retrograde": false,
+        "speed": 1.019597
+      },
+      "Moon": {
+        "longitude": 231.970634,
+        "sign_index": 7,
+        "degree_in_sign": 21.970634,
+        "is_retrograde": false,
+        "speed": 11.379391
+      },
+      "Mars": {
+        "longitude": 313.756185,
+        "sign_index": 10,
+        "degree_in_sign": 13.756185,
+        "is_retrograde": false,
+        "speed": 0.756864
+      },
+      "Mercury": {
+        "longitude": 254.272004,
+        "sign_index": 8,
+        "degree_in_sign": 14.272004,
+        "is_retrograde": true,
+        "speed": -1.362994
+      },
+      "Jupiter": {
+        "longitude": 279.337533,
+        "sign_index": 9,
+        "degree_in_sign": 9.337533,
+        "is_retrograde": false,
+        "speed": 0.226624
+      },
+      "Venus": {
+        "longitude": 247.063608,
+        "sign_index": 8,
+        "degree_in_sign": 7.063608,
+        "is_retrograde": false,
+        "speed": 1.258147
+      },
+      "Saturn": {
+        "longitude": 336.089798,
+        "sign_index": 11,
+        "degree_in_sign": 6.089798,
+        "is_retrograde": false,
+        "speed": 0.050285
+      },
+      "Rahu": {
+        "longitude": 221.289736,
+        "sign_index": 7,
+        "degree_in_sign": 11.289736,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 41.289736,
+        "sign_index": 1,
+        "degree_in_sign": 11.289736,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

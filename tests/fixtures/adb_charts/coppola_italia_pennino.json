@@ -1,0 +1,106 @@
+{
+  "adb_id": 50952,
+  "name": "Coppola, Italia Pennino",
+  "given_name": "Italia Pennino Coppola",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2419749.135417,
+    "year": 1912,
+    "month": 12,
+    "day": 12,
+    "calendar": "g",
+    "time": "10:15",
+    "time_type": "s",
+    "hour": 10.25,
+    "time_unknown": false,
+    "place": "Brooklyn (Kings County)",
+    "country": "New York",
+    "lat": 40.633333,
+    "lon": -73.933333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coppola,_Italia_Pennino",
+  "source_notes": "Steinbrecher collection: Steinbrecher quotes her daughter from her 12-92\\n",
+  "categories": [],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 21.261306,
+    "lagna": 261.261306,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.641302,
+    "jd_ut": 2419749.135417,
+    "planets": {
+      "Sun": {
+        "longitude": 237.625149,
+        "sign_index": 7,
+        "degree_in_sign": 27.625149,
+        "is_retrograde": false,
+        "speed": 1.017401
+      },
+      "Moon": {
+        "longitude": 282.547286,
+        "sign_index": 9,
+        "degree_in_sign": 12.547286,
+        "is_retrograde": false,
+        "speed": 10.327597
+      },
+      "Mars": {
+        "longitude": 226.181689,
+        "sign_index": 7,
+        "degree_in_sign": 16.181689,
+        "is_retrograde": false,
+        "speed": 0.721068
+      },
+      "Mercury": {
+        "longitude": 229.148899,
+        "sign_index": 7,
+        "degree_in_sign": 19.148899,
+        "is_retrograde": true,
+        "speed": -1.090007
+      },
+      "Jupiter": {
+        "longitude": 242.523014,
+        "sign_index": 8,
+        "degree_in_sign": 2.523014,
+        "is_retrograde": false,
+        "speed": 0.228158
+      },
+      "Venus": {
+        "longitude": 277.001452,
+        "sign_index": 9,
+        "degree_in_sign": 7.001452,
+        "is_retrograde": false,
+        "speed": 1.20424
+      },
+      "Saturn": {
+        "longitude": 36.438519,
+        "sign_index": 1,
+        "degree_in_sign": 6.438519,
+        "is_retrograde": true,
+        "speed": -0.073392
+      },
+      "Rahu": {
+        "longitude": 346.115597,
+        "sign_index": 11,
+        "degree_in_sign": 16.115597,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 166.115597,
+        "sign_index": 5,
+        "degree_in_sign": 16.115597,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

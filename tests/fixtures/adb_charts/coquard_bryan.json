@@ -1,0 +1,109 @@
+{
+  "adb_id": 55861,
+  "name": "Coquard, Bryan",
+  "given_name": "Bryan Coquard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2448738.260417,
+    "year": 1992,
+    "month": 4,
+    "day": 25,
+    "calendar": "g",
+    "time": "20:15",
+    "time_type": "d",
+    "hour": 20.25,
+    "time_unknown": false,
+    "place": "St.Nazaire",
+    "country": "France",
+    "lat": 47.283333,
+    "lon": -2.2
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coquard,_Bryan",
+  "source_notes": "Marc Brun's \"Les médailles français aux JO 2012\" collection.\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 8.785489,
+    "lagna": 158.785489,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.749751,
+    "jd_ut": 2448738.260417,
+    "planets": {
+      "Sun": {
+        "longitude": 12.024429,
+        "sign_index": 0,
+        "degree_in_sign": 12.024429,
+        "is_retrograde": false,
+        "speed": 0.973225
+      },
+      "Moon": {
+        "longitude": 291.079497,
+        "sign_index": 9,
+        "degree_in_sign": 21.079497,
+        "is_retrograde": false,
+        "speed": 15.333549
+      },
+      "Mars": {
+        "longitude": 328.442485,
+        "sign_index": 10,
+        "degree_in_sign": 28.442485,
+        "is_retrograde": false,
+        "speed": 0.771428
+      },
+      "Mercury": {
+        "longitude": 344.974993,
+        "sign_index": 11,
+        "degree_in_sign": 14.974993,
+        "is_retrograde": false,
+        "speed": 1.081951
+      },
+      "Jupiter": {
+        "longitude": 130.917093,
+        "sign_index": 4,
+        "degree_in_sign": 10.917093,
+        "is_retrograde": true,
+        "speed": -0.01564
+      },
+      "Venus": {
+        "longitude": 358.990447,
+        "sign_index": 11,
+        "degree_in_sign": 28.990447,
+        "is_retrograde": false,
+        "speed": 1.231352
+      },
+      "Saturn": {
+        "longitude": 293.866742,
+        "sign_index": 9,
+        "degree_in_sign": 23.866742,
+        "is_retrograde": false,
+        "speed": 0.051895
+      },
+      "Rahu": {
+        "longitude": 249.922212,
+        "sign_index": 8,
+        "degree_in_sign": 9.922212,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 69.922212,
+        "sign_index": 2,
+        "degree_in_sign": 9.922212,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

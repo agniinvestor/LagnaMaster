@@ -1,0 +1,109 @@
+{
+  "adb_id": 88249,
+  "name": "Coster, Dirk",
+  "given_name": "Dirk Coster",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411280.903102,
+    "year": 1889,
+    "month": 10,
+    "day": 5,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.366667,
+    "lon": 4.9
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coster,_Dirk",
+  "source_notes": "Svi retrieved BC from the online Amsterdam municipality.\\n\\n[http://resources.huygens.knaw.nl/bwn1880-2000/lemmata/bwn3/coster Coster, Dirk (1889-1950)] KNAW biography, the obvious source of the cited English Wikipedia.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Physics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 6.89845,
+    "lagna": 186.89845,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.317577,
+    "jd_ut": 2411280.903102,
+    "planets": {
+      "Sun": {
+        "longitude": 170.022781,
+        "sign_index": 5,
+        "degree_in_sign": 20.022781,
+        "is_retrograde": false,
+        "speed": 0.986525
+      },
+      "Moon": {
+        "longitude": 303.583865,
+        "sign_index": 10,
+        "degree_in_sign": 3.583865,
+        "is_retrograde": false,
+        "speed": 17.076257
+      },
+      "Mars": {
+        "longitude": 135.245375,
+        "sign_index": 4,
+        "degree_in_sign": 15.245375,
+        "is_retrograde": false,
+        "speed": 0.621932
+      },
+      "Mercury": {
+        "longitude": 189.310794,
+        "sign_index": 6,
+        "degree_in_sign": 9.310794,
+        "is_retrograde": true,
+        "speed": -0.180736
+      },
+      "Jupiter": {
+        "longitude": 248.681251,
+        "sign_index": 8,
+        "degree_in_sign": 8.681251,
+        "is_retrograde": false,
+        "speed": 0.119058
+      },
+      "Venus": {
+        "longitude": 137.645938,
+        "sign_index": 4,
+        "degree_in_sign": 17.645938,
+        "is_retrograde": false,
+        "speed": 1.212387
+      },
+      "Saturn": {
+        "longitude": 127.505339,
+        "sign_index": 4,
+        "degree_in_sign": 7.505339,
+        "is_retrograde": false,
+        "speed": 0.105096
+      },
+      "Rahu": {
+        "longitude": 74.865074,
+        "sign_index": 2,
+        "degree_in_sign": 14.865074,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 254.865074,
+        "sign_index": 8,
+        "degree_in_sign": 14.865074,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

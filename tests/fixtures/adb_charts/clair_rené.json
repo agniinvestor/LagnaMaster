@@ -1,0 +1,110 @@
+{
+  "adb_id": 3821,
+  "name": "Clair, René",
+  "given_name": "René Clair",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414605.07684,
+    "year": 1898,
+    "month": 11,
+    "day": 11,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clair,_René",
+  "source_notes": "Cirkels quotes an astrology magazine for 2 pm.  Bordoni quotes l'Astrologue for 10:00 PM.\\nIn the Didier Geslain archive, file has \"14:00\" but extract shows only \"2 heures\" in 'Cinema Realisateurs' pdf file, p. 58.\\nSy Scholfield checked the online Paris archive and birth certificate #846 (dated 12 November) has \"né hier soir à deux heures\" (born yesterday at two o'clock in the evening, i.e., 2 p.m.). The surname \"Chomette\" is crossed out and overwritten with \"Clair.\"\\n",
+  "categories": [
+    "Lifestyle : Social Life : Hobbies, games",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 25.383935,
+    "lagna": 295.383935,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.44465,
+    "jd_ut": 2414605.07684,
+    "planets": {
+      "Sun": {
+        "longitude": 206.77935,
+        "sign_index": 6,
+        "degree_in_sign": 26.77935,
+        "is_retrograde": false,
+        "speed": 1.006843
+      },
+      "Moon": {
+        "longitude": 174.644352,
+        "sign_index": 5,
+        "degree_in_sign": 24.644352,
+        "is_retrograde": false,
+        "speed": 11.94184
+      },
+      "Mars": {
+        "longitude": 101.590672,
+        "sign_index": 3,
+        "degree_in_sign": 11.590672,
+        "is_retrograde": false,
+        "speed": 0.303149
+      },
+      "Mercury": {
+        "longitude": 220.055432,
+        "sign_index": 7,
+        "degree_in_sign": 10.055432,
+        "is_retrograde": false,
+        "speed": 1.501899
+      },
+      "Jupiter": {
+        "longitude": 184.323733,
+        "sign_index": 6,
+        "degree_in_sign": 4.323733,
+        "is_retrograde": false,
+        "speed": 0.208985
+      },
+      "Venus": {
+        "longitude": 234.776304,
+        "sign_index": 7,
+        "degree_in_sign": 24.776304,
+        "is_retrograde": true,
+        "speed": -0.015684
+      },
+      "Saturn": {
+        "longitude": 229.364303,
+        "sign_index": 7,
+        "degree_in_sign": 19.364303,
+        "is_retrograde": false,
+        "speed": 0.112189
+      },
+      "Rahu": {
+        "longitude": 258.710084,
+        "sign_index": 8,
+        "degree_in_sign": 18.710084,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 78.710084,
+        "sign_index": 2,
+        "degree_in_sign": 18.710084,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

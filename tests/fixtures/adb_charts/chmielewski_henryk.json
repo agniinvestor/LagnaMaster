@@ -1,0 +1,110 @@
+{
+  "adb_id": 76753,
+  "name": "Chmielewski, Henryk",
+  "given_name": "Henryk Chmielewski",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423578.0,
+    "year": 1923,
+    "month": 6,
+    "day": 7,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Warszawa",
+    "country": "Poland",
+    "lat": 52.25,
+    "lon": 21.0
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chmielewski,_Henryk",
+  "source_notes": "PTA quotes B.C. in the official website of the author, submitted by Cuba Ruszkowski. [http://tytusromekiatomek.pl/galeria/metryka_1.gif]\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Humor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.519565,
+    "lagna": 138.519565,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.787683,
+    "jd_ut": 2423578.0,
+    "planets": {
+      "Sun": {
+        "longitude": 52.921643,
+        "sign_index": 1,
+        "degree_in_sign": 22.921643,
+        "is_retrograde": false,
+        "speed": 0.956592
+      },
+      "Moon": {
+        "longitude": 334.421039,
+        "sign_index": 11,
+        "degree_in_sign": 4.421039,
+        "is_retrograde": false,
+        "speed": 12.39672
+      },
+      "Mars": {
+        "longitude": 72.213413,
+        "sign_index": 2,
+        "degree_in_sign": 12.213413,
+        "is_retrograde": false,
+        "speed": 0.655226
+      },
+      "Mercury": {
+        "longitude": 39.812572,
+        "sign_index": 1,
+        "degree_in_sign": 9.812572,
+        "is_retrograde": true,
+        "speed": -0.205603
+      },
+      "Jupiter": {
+        "longitude": 197.578153,
+        "sign_index": 6,
+        "degree_in_sign": 17.578153,
+        "is_retrograde": true,
+        "speed": -0.084623
+      },
+      "Venus": {
+        "longitude": 27.552967,
+        "sign_index": 0,
+        "degree_in_sign": 27.552967,
+        "is_retrograde": false,
+        "speed": 1.207703
+      },
+      "Saturn": {
+        "longitude": 170.643037,
+        "sign_index": 5,
+        "degree_in_sign": 20.643037,
+        "is_retrograde": true,
+        "speed": -0.015732
+      },
+      "Rahu": {
+        "longitude": 143.216055,
+        "sign_index": 4,
+        "degree_in_sign": 23.216055,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 323.216055,
+        "sign_index": 10,
+        "degree_in_sign": 23.216055,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

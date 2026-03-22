@@ -1,0 +1,110 @@
+{
+  "adb_id": 55202,
+  "name": "Carteri, Rosanna",
+  "given_name": "Rosanna Carteri",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426324.770833,
+    "year": 1930,
+    "month": 12,
+    "day": 14,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "s",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Verona",
+    "country": "Italy",
+    "lat": 45.45,
+    "lon": 11.0
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carteri,_Rosanna",
+  "source_notes": "Grazia Bordoni.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Vocalist/Opera",
+    "Vocation : Misc. : Homemaker/Care provider"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.830979,
+    "lagna": 210.830979,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.892698,
+    "jd_ut": 2426324.770833,
+    "planets": {
+      "Sun": {
+        "longitude": 238.658662,
+        "sign_index": 7,
+        "degree_in_sign": 28.658662,
+        "is_retrograde": false,
+        "speed": 1.017332
+      },
+      "Moon": {
+        "longitude": 167.471606,
+        "sign_index": 5,
+        "degree_in_sign": 17.471606,
+        "is_retrograde": false,
+        "speed": 9.963671
+      },
+      "Mars": {
+        "longitude": 113.800918,
+        "sign_index": 3,
+        "degree_in_sign": 23.800918,
+        "is_retrograde": false,
+        "speed": 0.05543
+      },
+      "Mercury": {
+        "longitude": 257.645605,
+        "sign_index": 8,
+        "degree_in_sign": 17.645605,
+        "is_retrograde": false,
+        "speed": 1.341696
+      },
+      "Jupiter": {
+        "longitude": 85.538964,
+        "sign_index": 2,
+        "degree_in_sign": 25.538964,
+        "is_retrograde": true,
+        "speed": -0.108583
+      },
+      "Venus": {
+        "longitude": 209.162376,
+        "sign_index": 6,
+        "degree_in_sign": 29.162376,
+        "is_retrograde": false,
+        "speed": 0.040817
+      },
+      "Saturn": {
+        "longitude": 258.751868,
+        "sign_index": 8,
+        "degree_in_sign": 18.751868,
+        "is_retrograde": false,
+        "speed": 0.113566
+      },
+      "Rahu": {
+        "longitude": 357.658951,
+        "sign_index": 11,
+        "degree_in_sign": 27.658951,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 177.658951,
+        "sign_index": 5,
+        "degree_in_sign": 27.658951,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

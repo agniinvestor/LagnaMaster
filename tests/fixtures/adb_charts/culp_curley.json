@@ -1,0 +1,117 @@
+{
+  "adb_id": 94846,
+  "name": "Culp, Curley",
+  "given_name": "Curley Culp",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431890.166667,
+    "year": 1946,
+    "month": 3,
+    "day": 10,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Yuma",
+    "country": "Arizona",
+    "lat": 32.733333,
+    "lon": -114.616667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Culp,_Curley",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. His older twin sister Shirley was born at 8:45 AM.\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Birth : Twin, triplet, etc.",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Sports : Football",
+    "Vocation : Sports : Wrestling",
+    "Notable : Awards : Sports Championship",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 17.50906,
+    "lagna": 347.50906,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.105488,
+    "jd_ut": 2431890.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 326.382192,
+        "sign_index": 10,
+        "degree_in_sign": 26.382192,
+        "is_retrograde": false,
+        "speed": 0.998636
+      },
+      "Moon": {
+        "longitude": 58.906403,
+        "sign_index": 1,
+        "degree_in_sign": 28.906403,
+        "is_retrograde": false,
+        "speed": 18.297809
+      },
+      "Mars": {
+        "longitude": 82.615956,
+        "sign_index": 2,
+        "degree_in_sign": 22.615956,
+        "is_retrograde": false,
+        "speed": 0.183184
+      },
+      "Mercury": {
+        "longitude": 344.480578,
+        "sign_index": 11,
+        "degree_in_sign": 14.480578,
+        "is_retrograde": false,
+        "speed": 0.852336
+      },
+      "Jupiter": {
+        "longitude": 183.118273,
+        "sign_index": 6,
+        "degree_in_sign": 3.118273,
+        "is_retrograde": true,
+        "speed": -0.081375
+      },
+      "Venus": {
+        "longitude": 335.418752,
+        "sign_index": 11,
+        "degree_in_sign": 5.418752,
+        "is_retrograde": false,
+        "speed": 1.245755
+      },
+      "Saturn": {
+        "longitude": 84.936095,
+        "sign_index": 2,
+        "degree_in_sign": 24.936095,
+        "is_retrograde": true,
+        "speed": -0.017933
+      },
+      "Rahu": {
+        "longitude": 62.737102,
+        "sign_index": 2,
+        "degree_in_sign": 2.737102,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 242.737102,
+        "sign_index": 8,
+        "degree_in_sign": 2.737102,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

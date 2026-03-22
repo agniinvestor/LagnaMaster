@@ -1,0 +1,120 @@
+{
+  "adb_id": 81,
+  "name": "Casals, Pablo",
+  "given_name": "Pablo Casals",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2406618.329074,
+    "year": 1876,
+    "month": 12,
+    "day": 29,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Vendrell",
+    "country": "Spain",
+    "lat": 41.216667,
+    "lon": 1.533333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casals,_Pablo",
+  "source_notes": "Charles Harvey quotes him in AQ, Spring/1968. Philip Lucas quotes B.R. for December 30, 1876, 8:00 PM.  Casals himself said that the December 30 date is wrong, that it was the 29th.  (For some unknown reason Pablo's father was two days late reporting Pablo's birth to the Roman Catholic Church, and so the official registered date of his birth is December 31.)\\nUpdate 14-jun-2012: The biography ''Pablo Casals'' by Robert Baldock, Page 21, says: \"The infant born to Dona Pilar Defillo i Amiguet and her husband Carlos Casals in the late afternoon of Friday, 29 December 1876 emerged with its umbilical cord twisted around its neck, its face turning blue from the constriction.\"\\nWhat is meant by 'late afternoon' in the context of Spain is not clear. \\n",
+  "categories": [
+    "Family : Childhood : Family large",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids none",
+    "Lifestyle : Work : Job-Related Injury",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 5.409625,
+    "lagna": 95.409625,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.13935,
+    "jd_ut": 2406618.329074,
+    "planets": {
+      "Sun": {
+        "longitude": 256.393905,
+        "sign_index": 8,
+        "degree_in_sign": 16.393905,
+        "is_retrograde": false,
+        "speed": 1.019005
+      },
+      "Moon": {
+        "longitude": 61.511904,
+        "sign_index": 2,
+        "degree_in_sign": 1.511904,
+        "is_retrograde": false,
+        "speed": 11.851106
+      },
+      "Mars": {
+        "longitude": 207.533474,
+        "sign_index": 6,
+        "degree_in_sign": 27.533474,
+        "is_retrograde": false,
+        "speed": 0.651192
+      },
+      "Mercury": {
+        "longitude": 270.734491,
+        "sign_index": 9,
+        "degree_in_sign": 0.734491,
+        "is_retrograde": false,
+        "speed": 1.570584
+      },
+      "Jupiter": {
+        "longitude": 236.374965,
+        "sign_index": 7,
+        "degree_in_sign": 26.374965,
+        "is_retrograde": false,
+        "speed": 0.219065
+      },
+      "Venus": {
+        "longitude": 225.292383,
+        "sign_index": 7,
+        "degree_in_sign": 15.292383,
+        "is_retrograde": false,
+        "speed": 1.237038
+      },
+      "Saturn": {
+        "longitude": 311.767671,
+        "sign_index": 10,
+        "degree_in_sign": 11.767671,
+        "is_retrograde": false,
+        "speed": 0.085936
+      },
+      "Rahu": {
+        "longitude": 321.944772,
+        "sign_index": 10,
+        "degree_in_sign": 21.944772,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 141.944772,
+        "sign_index": 4,
+        "degree_in_sign": 21.944772,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

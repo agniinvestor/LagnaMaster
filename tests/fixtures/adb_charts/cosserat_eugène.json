@@ -1,0 +1,110 @@
+{
+  "adb_id": 47625,
+  "name": "Cosserat, Eugène",
+  "given_name": "Eugène Cosserat",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402664.806111,
+    "year": 1866,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "l",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Amiens",
+    "country": "France",
+    "lat": 49.9,
+    "lon": 2.3
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cosserat,_Eugène",
+  "source_notes": "Gauquelin Vol 2/2632\\n",
+  "categories": [
+    "Vocation : Science : Astronomy",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 25.709698,
+    "lagna": 325.709698,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.988234,
+    "jd_ut": 2402664.806111,
+    "planets": {
+      "Sun": {
+        "longitude": 321.539516,
+        "sign_index": 10,
+        "degree_in_sign": 21.539516,
+        "is_retrograde": false,
+        "speed": 1.000795
+      },
+      "Moon": {
+        "longitude": 172.919264,
+        "sign_index": 5,
+        "degree_in_sign": 22.919264,
+        "is_retrograde": false,
+        "speed": 11.303805
+      },
+      "Mars": {
+        "longitude": 290.959391,
+        "sign_index": 9,
+        "degree_in_sign": 20.959391,
+        "is_retrograde": false,
+        "speed": 0.774089
+      },
+      "Mercury": {
+        "longitude": 324.195972,
+        "sign_index": 10,
+        "degree_in_sign": 24.195972,
+        "is_retrograde": false,
+        "speed": 1.928585
+      },
+      "Jupiter": {
+        "longitude": 272.049941,
+        "sign_index": 9,
+        "degree_in_sign": 2.049941,
+        "is_retrograde": false,
+        "speed": 0.188681
+      },
+      "Venus": {
+        "longitude": 323.076037,
+        "sign_index": 10,
+        "degree_in_sign": 23.076037,
+        "is_retrograde": false,
+        "speed": 1.248355
+      },
+      "Saturn": {
+        "longitude": 200.207718,
+        "sign_index": 6,
+        "degree_in_sign": 20.207718,
+        "is_retrograde": true,
+        "speed": -0.021092
+      },
+      "Rahu": {
+        "longitude": 171.450388,
+        "sign_index": 5,
+        "degree_in_sign": 21.450388,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 351.450388,
+        "sign_index": 11,
+        "degree_in_sign": 21.450388,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

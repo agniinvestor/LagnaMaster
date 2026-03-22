@@ -1,0 +1,111 @@
+{
+  "adb_id": 58868,
+  "name": "Collins, Joyce",
+  "given_name": "Joyce Collins",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425006.527778,
+    "year": 1927,
+    "month": 5,
+    "day": 5,
+    "calendar": "g",
+    "time": "16:40",
+    "time_type": "s",
+    "hour": 16.666667,
+    "time_unknown": false,
+    "place": "Battle Mountain",
+    "country": "Nevada",
+    "lat": 40.633333,
+    "lon": -116.933333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Joyce",
+  "source_notes": "Sy Scholfield quotes birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Business : Other Entertain/Bus"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 4.882977,
+    "lagna": 154.882977,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.842298,
+    "jd_ut": 2425006.527778,
+    "planets": {
+      "Sun": {
+        "longitude": 21.669784,
+        "sign_index": 0,
+        "degree_in_sign": 21.669784,
+        "is_retrograde": false,
+        "speed": 0.968489
+      },
+      "Moon": {
+        "longitude": 80.91434,
+        "sign_index": 2,
+        "degree_in_sign": 20.91434,
+        "is_retrograde": false,
+        "speed": 8.888457
+      },
+      "Mars": {
+        "longitude": 78.309888,
+        "sign_index": 2,
+        "degree_in_sign": 18.309888,
+        "is_retrograde": false,
+        "speed": 0.592897
+      },
+      "Mercury": {
+        "longitude": 6.323058,
+        "sign_index": 0,
+        "degree_in_sign": 6.323058,
+        "is_retrograde": false,
+        "speed": 1.858111
+      },
+      "Jupiter": {
+        "longitude": 331.862968,
+        "sign_index": 11,
+        "degree_in_sign": 1.862968,
+        "is_retrograde": false,
+        "speed": 0.195448
+      },
+      "Venus": {
+        "longitude": 59.828789,
+        "sign_index": 1,
+        "degree_in_sign": 29.828789,
+        "is_retrograde": false,
+        "speed": 1.164684
+      },
+      "Saturn": {
+        "longitude": 223.016533,
+        "sign_index": 7,
+        "degree_in_sign": 13.016533,
+        "is_retrograde": true,
+        "speed": -0.06653
+      },
+      "Rahu": {
+        "longitude": 67.515392,
+        "sign_index": 2,
+        "degree_in_sign": 7.515392,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 247.515392,
+        "sign_index": 8,
+        "degree_in_sign": 7.515392,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

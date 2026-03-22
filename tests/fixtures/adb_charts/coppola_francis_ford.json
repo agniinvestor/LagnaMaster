@@ -1,0 +1,123 @@
+{
+  "adb_id": 26623,
+  "name": "Coppola, Francis Ford",
+  "given_name": "Francis Ford Coppola",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429360.776389,
+    "year": 1939,
+    "month": 4,
+    "day": 7,
+    "calendar": "g",
+    "time": "01:38",
+    "time_type": "s",
+    "hour": 1.633333,
+    "time_unknown": false,
+    "place": "Detroit",
+    "country": "Michigan",
+    "lat": 42.333333,
+    "lon": -83.05
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coppola,_Francis_Ford",
+  "source_notes": "Contemporary American Horoscopes, Gauquelin Book of American Charts.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Polio",
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Family : Parenting : Kids -Traumatic event",
+    "Lifestyle : Financial : Extreme ups and downs",
+    "Lifestyle : Financial : Loss - Bankruptcy",
+    "Lifestyle : Financial : Wealthy",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Food and Beverage : Alcohol business",
+    "Notable : Awards : Oscar"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 21.385988,
+    "lagna": 231.385988,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.008776,
+    "jd_ut": 2429360.776389,
+    "planets": {
+      "Sun": {
+        "longitude": 353.546023,
+        "sign_index": 11,
+        "degree_in_sign": 23.546023,
+        "is_retrograde": false,
+        "speed": 0.983115
+      },
+      "Moon": {
+        "longitude": 213.543204,
+        "sign_index": 7,
+        "degree_in_sign": 3.543204,
+        "is_retrograde": false,
+        "speed": 9.377235
+      },
+      "Mars": {
+        "longitude": 256.20807,
+        "sign_index": 8,
+        "degree_in_sign": 16.20807,
+        "is_retrograde": false,
+        "speed": 0.525484
+      },
+      "Mercury": {
+        "longitude": 346.534209,
+        "sign_index": 11,
+        "degree_in_sign": 16.534209,
+        "is_retrograde": true,
+        "speed": -0.744513
+      },
+      "Jupiter": {
+        "longitude": 329.593209,
+        "sign_index": 10,
+        "degree_in_sign": 29.593209,
+        "is_retrograde": false,
+        "speed": 0.231175
+      },
+      "Venus": {
+        "longitude": 315.164287,
+        "sign_index": 10,
+        "degree_in_sign": 15.164287,
+        "is_retrograde": false,
+        "speed": 1.184638
+      },
+      "Saturn": {
+        "longitude": 357.428274,
+        "sign_index": 11,
+        "degree_in_sign": 27.428274,
+        "is_retrograde": false,
+        "speed": 0.126244
+      },
+      "Rahu": {
+        "longitude": 196.774721,
+        "sign_index": 6,
+        "degree_in_sign": 16.774721,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 16.774721,
+        "sign_index": 0,
+        "degree_in_sign": 16.774721,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 84552,
+  "name": "Chautemps, Pierre",
+  "given_name": "Pierre Chautemps",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413055.76434,
+    "year": 1894,
+    "month": 8,
+    "day": 15,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Fontaine-la-Guyon",
+    "country": "France",
+    "lat": 48.472778,
+    "lon": 1.313333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chautemps,_Pierre",
+  "source_notes": "Didier Geslain\\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Notable : Famous : Criminal cases"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 23.420918,
+    "lagna": 113.420918,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.385424,
+    "jd_ut": 2413055.76434,
+    "planets": {
+      "Sun": {
+        "longitude": 119.988466,
+        "sign_index": 3,
+        "degree_in_sign": 29.988466,
+        "is_retrograde": false,
+        "speed": 0.961007
+      },
+      "Moon": {
+        "longitude": 285.120603,
+        "sign_index": 9,
+        "degree_in_sign": 15.120603,
+        "is_retrograde": false,
+        "speed": 13.368465
+      },
+      "Mars": {
+        "longitude": 6.110504,
+        "sign_index": 0,
+        "degree_in_sign": 6.110504,
+        "is_retrograde": false,
+        "speed": 0.380495
+      },
+      "Mercury": {
+        "longitude": 102.739197,
+        "sign_index": 3,
+        "degree_in_sign": 12.739197,
+        "is_retrograde": false,
+        "speed": 1.5073
+      },
+      "Jupiter": {
+        "longitude": 66.880211,
+        "sign_index": 2,
+        "degree_in_sign": 6.880211,
+        "is_retrograde": false,
+        "speed": 0.178741
+      },
+      "Venus": {
+        "longitude": 92.738222,
+        "sign_index": 3,
+        "degree_in_sign": 2.738222,
+        "is_retrograde": false,
+        "speed": 1.207744
+      },
+      "Saturn": {
+        "longitude": 178.402072,
+        "sign_index": 5,
+        "degree_in_sign": 28.402072,
+        "is_retrograde": false,
+        "speed": 0.081325
+      },
+      "Rahu": {
+        "longitude": 340.811424,
+        "sign_index": 11,
+        "degree_in_sign": 10.811424,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 160.811424,
+        "sign_index": 5,
+        "degree_in_sign": 10.811424,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

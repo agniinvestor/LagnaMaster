@@ -1,0 +1,113 @@
+{
+  "adb_id": 103757,
+  "name": "Crane, Eli",
+  "given_name": "Eli Crane",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2444242.283333,
+    "year": 1980,
+    "month": 1,
+    "day": 3,
+    "calendar": "g",
+    "time": "11:48",
+    "time_type": "s",
+    "hour": 11.8,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crane,_Eli",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Tucson Citizen'' (Tucson, Arizona), 5 January 1980, page B5: born at Tucson Medical Center.\\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 18.272983,
+    "lagna": 318.272983,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.577814,
+    "jd_ut": 2444242.283333,
+    "planets": {
+      "Sun": {
+        "longitude": 258.975292,
+        "sign_index": 8,
+        "degree_in_sign": 18.975292,
+        "is_retrograde": false,
+        "speed": 1.018894
+      },
+      "Moon": {
+        "longitude": 95.183123,
+        "sign_index": 3,
+        "degree_in_sign": 5.183123,
+        "is_retrograde": false,
+        "speed": 16.826647
+      },
+      "Mars": {
+        "longitude": 140.837573,
+        "sign_index": 4,
+        "degree_in_sign": 20.837573,
+        "is_retrograde": false,
+        "speed": 0.144578
+      },
+      "Mercury": {
+        "longitude": 248.653402,
+        "sign_index": 8,
+        "degree_in_sign": 8.653402,
+        "is_retrograde": false,
+        "speed": 1.543288
+      },
+      "Jupiter": {
+        "longitude": 136.561616,
+        "sign_index": 4,
+        "degree_in_sign": 16.561616,
+        "is_retrograde": true,
+        "speed": -0.026361
+      },
+      "Venus": {
+        "longitude": 291.250781,
+        "sign_index": 9,
+        "degree_in_sign": 21.250781,
+        "is_retrograde": false,
+        "speed": 1.231076
+      },
+      "Saturn": {
+        "longitude": 153.43455,
+        "sign_index": 5,
+        "degree_in_sign": 3.43455,
+        "is_retrograde": false,
+        "speed": 0.005752
+      },
+      "Rahu": {
+        "longitude": 128.173145,
+        "sign_index": 4,
+        "degree_in_sign": 8.173145,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 308.173145,
+        "sign_index": 10,
+        "degree_in_sign": 8.173145,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

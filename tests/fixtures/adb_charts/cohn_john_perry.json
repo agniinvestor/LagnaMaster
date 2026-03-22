@@ -1,0 +1,108 @@
+{
+  "adb_id": 52216,
+  "name": "Cohn, John Perry",
+  "given_name": "John Perry Cohn",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431199.034028,
+    "year": 1944,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "05:49",
+    "time_type": "w",
+    "hour": 5.816667,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohn,_John_Perry",
+  "source_notes": "Steinbrecher collection: Contemporary American Horoscopes quotes birth certificate\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 29.915705,
+    "lagna": 329.915705,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.079062,
+    "jd_ut": 2431199.034028,
+    "planets": {
+      "Sun": {
+        "longitude": 5.278164,
+        "sign_index": 0,
+        "degree_in_sign": 5.278164,
+        "is_retrograde": false,
+        "speed": 0.976923
+      },
+      "Moon": {
+        "longitude": 306.306391,
+        "sign_index": 10,
+        "degree_in_sign": 6.306391,
+        "is_retrograde": false,
+        "speed": 11.167793
+      },
+      "Mars": {
+        "longitude": 77.914058,
+        "sign_index": 2,
+        "degree_in_sign": 17.914058,
+        "is_retrograde": false,
+        "speed": 0.537674
+      },
+      "Mercury": {
+        "longitude": 22.739871,
+        "sign_index": 0,
+        "degree_in_sign": 22.739871,
+        "is_retrograde": false,
+        "speed": 0.347975
+      },
+      "Jupiter": {
+        "longitude": 114.005089,
+        "sign_index": 3,
+        "degree_in_sign": 24.005089,
+        "is_retrograde": false,
+        "speed": 0.016843
+      },
+      "Venus": {
+        "longitude": 346.794306,
+        "sign_index": 11,
+        "degree_in_sign": 16.794306,
+        "is_retrograde": false,
+        "speed": 1.229271
+      },
+      "Saturn": {
+        "longitude": 59.532158,
+        "sign_index": 1,
+        "degree_in_sign": 29.532158,
+        "is_retrograde": false,
+        "speed": 0.093428
+      },
+      "Rahu": {
+        "longitude": 99.361647,
+        "sign_index": 3,
+        "degree_in_sign": 9.361647,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 279.361647,
+        "sign_index": 9,
+        "degree_in_sign": 9.361647,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

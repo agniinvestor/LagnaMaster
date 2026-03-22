@@ -1,0 +1,108 @@
+{
+  "adb_id": 68251,
+  "name": "Casona, Alejandro",
+  "given_name": "Alejandro Casona",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2416196.75,
+    "year": 1903,
+    "month": 3,
+    "day": 23,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Cangas de Narcea",
+    "country": "Spain",
+    "lat": 43.183333,
+    "lon": -6.55
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casona,_Alejandro",
+  "source_notes": "Castellanos quotes biographical data in \\nunpublished work Casona: radio talks \\nAlejandro Casona, Evaristo Arce \\nInstitute of Asturian Studies, 1982\\n",
+  "categories": [
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 2.208627,
+    "lagna": 302.208627,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.505496,
+    "jd_ut": 2416196.75,
+    "planets": {
+      "Sun": {
+        "longitude": 338.92993,
+        "sign_index": 11,
+        "degree_in_sign": 8.92993,
+        "is_retrograde": false,
+        "speed": 0.991886
+      },
+      "Moon": {
+        "longitude": 272.697658,
+        "sign_index": 9,
+        "degree_in_sign": 2.697658,
+        "is_retrograde": false,
+        "speed": 8.400948
+      },
+      "Mars": {
+        "longitude": 167.236817,
+        "sign_index": 5,
+        "degree_in_sign": 17.236817,
+        "is_retrograde": true,
+        "speed": -0.36693
+      },
+      "Mercury": {
+        "longitude": 320.41304,
+        "sign_index": 10,
+        "degree_in_sign": 20.41304,
+        "is_retrograde": false,
+        "speed": 1.640263
+      },
+      "Jupiter": {
+        "longitude": 314.821969,
+        "sign_index": 10,
+        "degree_in_sign": 14.821969,
+        "is_retrograde": false,
+        "speed": 0.230268
+      },
+      "Venus": {
+        "longitude": 5.970811,
+        "sign_index": 0,
+        "degree_in_sign": 5.970811,
+        "is_retrograde": false,
+        "speed": 1.223038
+      },
+      "Saturn": {
+        "longitude": 284.199796,
+        "sign_index": 9,
+        "degree_in_sign": 14.199796,
+        "is_retrograde": false,
+        "speed": 0.084487
+      },
+      "Rahu": {
+        "longitude": 174.363967,
+        "sign_index": 5,
+        "degree_in_sign": 24.363967,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 354.363967,
+        "sign_index": 11,
+        "degree_in_sign": 24.363967,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

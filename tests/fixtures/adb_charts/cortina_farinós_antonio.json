@@ -1,0 +1,109 @@
+{
+  "adb_id": 95156,
+  "name": "Cortina Farinós, Antonio",
+  "given_name": "Antonio Cortina Farinós",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2393518.010231,
+    "year": 1841,
+    "month": 2,
+    "day": 16,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "cap",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortina_Farinós,_Antonio",
+  "source_notes": "Sy Scholfield quotes from the book ''El profesor que trajo las gallinas a la escuela: Antonio Cortina Farinós (1841-1890)'' by Carmen Pinedo Herrero and Elvira Mas Zurita (Institució Alfons el Magnànim, Diputació de València, 2007), page 22:\\n\\n\"Antonio era hijo de Antonio Cortina Roca , original de Meliana , y de María Farinós Capilla , de Almàssera ! 4 . Nacido en el domicilio familiar , situado en la calle del Rey's , de Almàssera , a las doce del mediodía del 16 de febrero de 1841 , fue bautizado al día siguiente en la iglesia parroquial de su localidad natal .\"\\n\\n(Translation: Antonio was the son of Antonio Cortina Roca, originally from Meliana, and María Farinós Capilla, from Almàssera! Four . Born in the family home, located on Calle del Rey's, in Almàssera, at twelve noon on 16 February 1841, he was baptized the next day in the parish church of his hometown.)\\n",
+  "categories": [
+    "Personal : Death : Unusual",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.177177,
+    "lagna": 35.177177,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.638642,
+    "jd_ut": 2393518.010231,
+    "planets": {
+      "Sun": {
+        "longitude": 306.080062,
+        "sign_index": 10,
+        "degree_in_sign": 6.080062,
+        "is_retrograde": false,
+        "speed": 1.008696
+      },
+      "Moon": {
+        "longitude": 250.865778,
+        "sign_index": 8,
+        "degree_in_sign": 10.865778,
+        "is_retrograde": false,
+        "speed": 9.280046
+      },
+      "Mars": {
+        "longitude": 191.480225,
+        "sign_index": 6,
+        "degree_in_sign": 11.480225,
+        "is_retrograde": false,
+        "speed": 0.237995
+      },
+      "Mercury": {
+        "longitude": 315.000884,
+        "sign_index": 10,
+        "degree_in_sign": 15.000884,
+        "is_retrograde": false,
+        "speed": 1.852086
+      },
+      "Jupiter": {
+        "longitude": 234.766729,
+        "sign_index": 7,
+        "degree_in_sign": 24.766729,
+        "is_retrograde": false,
+        "speed": 0.134392
+      },
+      "Venus": {
+        "longitude": 351.68538,
+        "sign_index": 11,
+        "degree_in_sign": 21.68538,
+        "is_retrograde": false,
+        "speed": 1.090767
+      },
+      "Saturn": {
+        "longitude": 249.111245,
+        "sign_index": 8,
+        "degree_in_sign": 9.111245,
+        "is_retrograde": false,
+        "speed": 0.080929
+      },
+      "Rahu": {
+        "longitude": 296.158786,
+        "sign_index": 9,
+        "degree_in_sign": 26.158786,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 116.158786,
+        "sign_index": 3,
+        "degree_in_sign": 26.158786,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

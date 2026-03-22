@@ -1,0 +1,108 @@
+{
+  "adb_id": 64157,
+  "name": "Curial, Philibert Jean-Baptiste",
+  "given_name": "Philibert Jean-Baptiste Curial",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2369233.107917,
+    "year": 1774,
+    "month": 8,
+    "day": 21,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "St.Pierre d'Albigny",
+    "country": "France",
+    "lat": 45.566667,
+    "lon": 6.15
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curial,_Philibert_Jean-Baptiste",
+  "source_notes": "Didier Geslain archive, 'armée' pdf file, p. 4.\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 8.638212,
+    "lagna": 218.638212,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.710658,
+    "jd_ut": 2369233.107917,
+    "planets": {
+      "Sun": {
+        "longitude": 127.779148,
+        "sign_index": 4,
+        "degree_in_sign": 7.779148,
+        "is_retrograde": false,
+        "speed": 0.964209
+      },
+      "Moon": {
+        "longitude": 307.868813,
+        "sign_index": 10,
+        "degree_in_sign": 7.868813,
+        "is_retrograde": false,
+        "speed": 16.969801
+      },
+      "Mars": {
+        "longitude": 78.302002,
+        "sign_index": 2,
+        "degree_in_sign": 18.302002,
+        "is_retrograde": false,
+        "speed": 0.643208
+      },
+      "Mercury": {
+        "longitude": 122.531939,
+        "sign_index": 4,
+        "degree_in_sign": 2.531939,
+        "is_retrograde": true,
+        "speed": -0.753151
+      },
+      "Jupiter": {
+        "longitude": 25.10076,
+        "sign_index": 0,
+        "degree_in_sign": 25.10076,
+        "is_retrograde": false,
+        "speed": 0.046373
+      },
+      "Venus": {
+        "longitude": 94.076096,
+        "sign_index": 3,
+        "degree_in_sign": 4.076096,
+        "is_retrograde": false,
+        "speed": 1.188558
+      },
+      "Saturn": {
+        "longitude": 154.762765,
+        "sign_index": 5,
+        "degree_in_sign": 4.762765,
+        "is_retrograde": false,
+        "speed": 0.115068
+      },
+      "Rahu": {
+        "longitude": 143.069082,
+        "sign_index": 4,
+        "degree_in_sign": 23.069082,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 323.069082,
+        "sign_index": 10,
+        "degree_in_sign": 23.069082,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

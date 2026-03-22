@@ -1,0 +1,111 @@
+{
+  "adb_id": 63484,
+  "name": "Chevrolet, Louis",
+  "given_name": "Louis Chevrolet",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2407344.250162,
+    "year": 1878,
+    "month": 12,
+    "day": 25,
+    "calendar": "g",
+    "time": "18:30",
+    "time_type": "s",
+    "hour": 18.5,
+    "time_unknown": false,
+    "place": "La Chaux-De-Fonds",
+    "country": "Switzerland",
+    "lat": 47.1,
+    "lon": 6.833333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevrolet,_Louis",
+  "source_notes": "Sy Scholfield quotes from \"Louis Chevrolet: der Mann, der dem Chevy seinen Namen gab : die Geschichte des Rennfahrers und Autopioniers -- 1878 bis 1941\" by Martin Sinzig (Huber, 2011), p. 25: \"Am 25. Dezember 1878, um sechseinhalb Uhr nachmittags, wird Louis Joseph Chevrolet an der Rue Du Grenier 22a in La Chaux-de-Fonds geboren.\"\\n\\nTranslation: \"On 25 December 1878 at six-thirty after noon, Louis Joseph Chevrolet was born at 22a Rue Du Grenierin, La Chaux-de-Fonds.\"\\n",
+  "categories": [
+    "Vocation : Business : Business owner",
+    "Vocation : Engineer : Mechanical",
+    "Vocation : Sports : Race Cars",
+    "Vocation : Misc. : Mechanic"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 17.24332,
+    "lagna": 77.24332,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.167097,
+    "jd_ut": 2407344.250162,
+    "planets": {
+      "Sun": {
+        "longitude": 251.707613,
+        "sign_index": 8,
+        "degree_in_sign": 11.707613,
+        "is_retrograde": false,
+        "speed": 1.019451
+      },
+      "Moon": {
+        "longitude": 274.441483,
+        "sign_index": 9,
+        "degree_in_sign": 4.441483,
+        "is_retrograde": false,
+        "speed": 12.367505
+      },
+      "Mars": {
+        "longitude": 218.765938,
+        "sign_index": 7,
+        "degree_in_sign": 8.765938,
+        "is_retrograde": false,
+        "speed": 0.691663
+      },
+      "Mercury": {
+        "longitude": 252.744786,
+        "sign_index": 8,
+        "degree_in_sign": 12.744786,
+        "is_retrograde": true,
+        "speed": -1.36368
+      },
+      "Jupiter": {
+        "longitude": 286.955726,
+        "sign_index": 9,
+        "degree_in_sign": 16.955726,
+        "is_retrograde": false,
+        "speed": 0.215932
+      },
+      "Venus": {
+        "longitude": 256.513198,
+        "sign_index": 8,
+        "degree_in_sign": 16.513198,
+        "is_retrograde": false,
+        "speed": 1.257993
+      },
+      "Saturn": {
+        "longitude": 334.57985,
+        "sign_index": 11,
+        "degree_in_sign": 4.57985,
+        "is_retrograde": false,
+        "speed": 0.046237
+      },
+      "Rahu": {
+        "longitude": 283.476669,
+        "sign_index": 9,
+        "degree_in_sign": 13.476669,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 103.476669,
+        "sign_index": 3,
+        "degree_in_sign": 13.476669,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 39928,
+  "name": "Celestial: Pluto Discovery",
+  "given_name": "Celestial: Pluto Discovery",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2426026.458333,
+    "year": 1930,
+    "month": 2,
+    "day": 18,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Flagstaff",
+    "country": "Arizona",
+    "lat": 35.2,
+    "lon": -111.65
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celestial:_Pluto_Discovery",
+  "source_notes": "Duane Eaks, F.A.A. president, states data in the FAA Journal 12/2001. Same information on the database included with Janus 3 software. (Prier Wintle in Considerations November 2001 gives the discovery date as 21 January 1930, formally announced on 12 March 1930.) In the ISAR International Newsletter of 12 September 2006, vol. 404, Joyce Hoen writes \"Joylynn Hill's book The Discovery of the Outer planets and she too does give 18 February 1930, but at 4.13 pm MST, Flagstaff, AZ.\"\\n",
+  "categories": [
+    "Notable : Famous : Newsmaker",
+    "Mundane : Medical/Science : Space",
+    "Mundane : Misc. Mundane : Discoveries"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 17.808676,
+    "lagna": 77.808676,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.881293,
+    "jd_ut": 2426026.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 306.701333,
+        "sign_index": 10,
+        "degree_in_sign": 6.701333,
+        "is_retrograde": false,
+        "speed": 1.00808
+      },
+      "Moon": {
+        "longitude": 200.226381,
+        "sign_index": 6,
+        "degree_in_sign": 20.226381,
+        "is_retrograde": false,
+        "speed": 16.897339
+      },
+      "Mars": {
+        "longitude": 286.585469,
+        "sign_index": 9,
+        "degree_in_sign": 16.585469,
+        "is_retrograde": false,
+        "speed": 0.77837
+      },
+      "Mercury": {
+        "longitude": 280.730578,
+        "sign_index": 9,
+        "degree_in_sign": 10.730578,
+        "is_retrograde": false,
+        "speed": 1.146621
+      },
+      "Jupiter": {
+        "longitude": 44.049904,
+        "sign_index": 1,
+        "degree_in_sign": 14.049904,
+        "is_retrograde": false,
+        "speed": 0.061135
+      },
+      "Venus": {
+        "longitude": 309.667868,
+        "sign_index": 10,
+        "degree_in_sign": 9.667868,
+        "is_retrograde": false,
+        "speed": 1.251842
+      },
+      "Saturn": {
+        "longitude": 256.072797,
+        "sign_index": 8,
+        "degree_in_sign": 16.072797,
+        "is_retrograde": false,
+        "speed": 0.088683
+      },
+      "Rahu": {
+        "longitude": 13.46715,
+        "sign_index": 0,
+        "degree_in_sign": 13.46715,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 193.46715,
+        "sign_index": 6,
+        "degree_in_sign": 13.46715,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

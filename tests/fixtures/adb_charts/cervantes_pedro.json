@@ -1,0 +1,109 @@
+{
+  "adb_id": 60177,
+  "name": "Cervantes, Pedro",
+  "given_name": "Pedro Cervantes",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2427347.958333,
+    "year": 1933,
+    "month": 10,
+    "day": 2,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4,
+    "lon": -99.15
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cervantes,_Pedro",
+  "source_notes": "Eduardo Castellanos quotes interview material at http://www.eldiariodelosmochis.com.mx/movil/publicacion.php?id=56682 (in Spanish).\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Other Art"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 1.448993,
+    "lagna": 121.448993,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.931818,
+    "jd_ut": 2427347.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 165.860388,
+        "sign_index": 5,
+        "degree_in_sign": 15.860388,
+        "is_retrograde": false,
+        "speed": 0.984011
+      },
+      "Moon": {
+        "longitude": 329.541976,
+        "sign_index": 10,
+        "degree_in_sign": 29.541976,
+        "is_retrograde": false,
+        "speed": 12.914147
+      },
+      "Mars": {
+        "longitude": 212.110705,
+        "sign_index": 7,
+        "degree_in_sign": 2.110705,
+        "is_retrograde": false,
+        "speed": 0.700731
+      },
+      "Mercury": {
+        "longitude": 180.73178,
+        "sign_index": 6,
+        "degree_in_sign": 0.73178,
+        "is_retrograde": false,
+        "speed": 1.547666
+      },
+      "Jupiter": {
+        "longitude": 161.859863,
+        "sign_index": 5,
+        "degree_in_sign": 11.859863,
+        "is_retrograde": false,
+        "speed": 0.216098
+      },
+      "Venus": {
+        "longitude": 206.906403,
+        "sign_index": 6,
+        "degree_in_sign": 26.906403,
+        "is_retrograde": false,
+        "speed": 1.169248
+      },
+      "Saturn": {
+        "longitude": 286.907108,
+        "sign_index": 9,
+        "degree_in_sign": 16.907108,
+        "is_retrograde": true,
+        "speed": -0.0203
+      },
+      "Rahu": {
+        "longitude": 303.438121,
+        "sign_index": 10,
+        "degree_in_sign": 3.438121,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.438121,
+        "sign_index": 4,
+        "degree_in_sign": 3.438121,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 4109,
+  "name": "Cozzens, James",
+  "given_name": "James Cozzens",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2416346.59375,
+    "year": 1903,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "20:15",
+    "time_type": "s",
+    "hour": 20.25,
+    "time_unknown": false,
+    "place": "Chicago",
+    "country": "USA",
+    "lat": 41.85,
+    "lon": -87.65
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cozzens,_James",
+  "source_notes": "LMR quotes Matthew J. Bruccoli \"A Life Apart\"\\n",
+  "categories": [
+    "Lifestyle : Financial : Gain - Financial success in field",
+    "Vocation : Writers : Fiction",
+    "Notable : Awards : Pulitzer prize",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 20.932003,
+    "lagna": 320.932003,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.511225,
+    "jd_ut": 2416346.59375,
+    "planets": {
+      "Sun": {
+        "longitude": 123.373386,
+        "sign_index": 4,
+        "degree_in_sign": 3.373386,
+        "is_retrograde": false,
+        "speed": 0.962953
+      },
+      "Moon": {
+        "longitude": 84.65023,
+        "sign_index": 2,
+        "degree_in_sign": 24.65023,
+        "is_retrograde": false,
+        "speed": 19.418979
+      },
+      "Mars": {
+        "longitude": 195.547664,
+        "sign_index": 6,
+        "degree_in_sign": 15.547664,
+        "is_retrograde": false,
+        "speed": 0.618452
+      },
+      "Mercury": {
+        "longitude": 144.592123,
+        "sign_index": 4,
+        "degree_in_sign": 24.592123,
+        "is_retrograde": false,
+        "speed": 1.525577
+      },
+      "Jupiter": {
+        "longitude": 328.678429,
+        "sign_index": 10,
+        "degree_in_sign": 28.678429,
+        "is_retrograde": true,
+        "speed": -0.107642
+      },
+      "Venus": {
+        "longitude": 158.1532,
+        "sign_index": 5,
+        "degree_in_sign": 8.1532,
+        "is_retrograde": false,
+        "speed": 0.270877
+      },
+      "Saturn": {
+        "longitude": 281.995284,
+        "sign_index": 9,
+        "degree_in_sign": 11.995284,
+        "is_retrograde": true,
+        "speed": -0.066401
+      },
+      "Rahu": {
+        "longitude": 166.423431,
+        "sign_index": 5,
+        "degree_in_sign": 16.423431,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 346.423431,
+        "sign_index": 11,
+        "degree_in_sign": 16.423431,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

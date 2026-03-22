@@ -1,0 +1,108 @@
+{
+  "adb_id": 70095,
+  "name": "Choubersky, Jean-Michel de",
+  "given_name": "Jean-Michel de Choubersky",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429088.40625,
+    "year": 1938,
+    "month": 7,
+    "day": 8,
+    "calendar": "g",
+    "time": "21:45",
+    "time_type": "s",
+    "hour": 21.75,
+    "time_unknown": false,
+    "place": "Casablanca",
+    "country": "Morocco",
+    "lat": 33.65,
+    "lon": -7.583333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Choubersky,_Jean-Michel_de",
+  "source_notes": "Didier Geslain archive, 'hippisme entraîneurs' pdf file, p. 25.\\n",
+  "categories": [
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 7.07705,
+    "lagna": 277.07705,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.998363,
+    "jd_ut": 2429088.40625,
+    "planets": {
+      "Sun": {
+        "longitude": 83.039209,
+        "sign_index": 2,
+        "degree_in_sign": 23.039209,
+        "is_retrograde": false,
+        "speed": 0.953128
+      },
+      "Moon": {
+        "longitude": 222.591087,
+        "sign_index": 7,
+        "degree_in_sign": 12.591087,
+        "is_retrograde": false,
+        "speed": 7.306554
+      },
+      "Mars": {
+        "longitude": 87.914341,
+        "sign_index": 2,
+        "degree_in_sign": 27.914341,
+        "is_retrograde": false,
+        "speed": 0.64991
+      },
+      "Mercury": {
+        "longitude": 100.209138,
+        "sign_index": 3,
+        "degree_in_sign": 10.209138,
+        "is_retrograde": false,
+        "speed": 1.788591
+      },
+      "Jupiter": {
+        "longitude": 308.772671,
+        "sign_index": 10,
+        "degree_in_sign": 8.772671,
+        "is_retrograde": true,
+        "speed": -0.054643
+      },
+      "Venus": {
+        "longitude": 120.802343,
+        "sign_index": 4,
+        "degree_in_sign": 0.802343,
+        "is_retrograde": false,
+        "speed": 1.165461
+      },
+      "Saturn": {
+        "longitude": 354.629881,
+        "sign_index": 11,
+        "degree_in_sign": 24.629881,
+        "is_retrograde": false,
+        "speed": 0.037136
+      },
+      "Rahu": {
+        "longitude": 211.208179,
+        "sign_index": 7,
+        "degree_in_sign": 1.208179,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 31.208179,
+        "sign_index": 1,
+        "degree_in_sign": 1.208179,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

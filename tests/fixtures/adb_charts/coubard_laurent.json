@@ -1,0 +1,108 @@
+{
+  "adb_id": 69905,
+  "name": "Coubard, Laurent",
+  "given_name": "Laurent Coubard",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435709.34375,
+    "year": 1956,
+    "month": 8,
+    "day": 23,
+    "calendar": "g",
+    "time": "21:15",
+    "time_type": "s",
+    "hour": 21.25,
+    "time_unknown": false,
+    "place": "Le Mans",
+    "country": "France",
+    "lat": 48.0,
+    "lon": 0.2
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coubard,_Laurent",
+  "source_notes": "Didier Geslain archive, 'hippisme drivers' pdf file, p. 47.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 26.102851,
+    "lagna": 326.102851,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.25152,
+    "jd_ut": 2435709.34375,
+    "planets": {
+      "Sun": {
+        "longitude": 127.386614,
+        "sign_index": 4,
+        "degree_in_sign": 7.386614,
+        "is_retrograde": false,
+        "speed": 0.96398
+      },
+      "Moon": {
+        "longitude": 333.802205,
+        "sign_index": 11,
+        "degree_in_sign": 3.802205,
+        "is_retrograde": false,
+        "speed": 11.842824
+      },
+      "Mars": {
+        "longitude": 329.257707,
+        "sign_index": 10,
+        "degree_in_sign": 29.257707,
+        "is_retrograde": true,
+        "speed": -0.168695
+      },
+      "Mercury": {
+        "longitude": 153.519651,
+        "sign_index": 5,
+        "degree_in_sign": 3.519651,
+        "is_retrograde": false,
+        "speed": 1.230773
+      },
+      "Jupiter": {
+        "longitude": 136.270908,
+        "sign_index": 4,
+        "degree_in_sign": 16.270908,
+        "is_retrograde": false,
+        "speed": 0.21528
+      },
+      "Venus": {
+        "longitude": 81.818546,
+        "sign_index": 2,
+        "degree_in_sign": 21.818546,
+        "is_retrograde": false,
+        "speed": 0.895208
+      },
+      "Saturn": {
+        "longitude": 213.377095,
+        "sign_index": 7,
+        "degree_in_sign": 3.377095,
+        "is_retrograde": false,
+        "speed": 0.038344
+      },
+      "Rahu": {
+        "longitude": 220.351046,
+        "sign_index": 7,
+        "degree_in_sign": 10.351046,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 40.351046,
+        "sign_index": 1,
+        "degree_in_sign": 10.351046,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "adb_id": 15739,
+  "name": "Cowens, Dave W.",
+  "given_name": "Dave W. Cowens",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432849.894444,
+    "year": 1948,
+    "month": 10,
+    "day": 25,
+    "calendar": "g",
+    "time": "04:28",
+    "time_type": "s",
+    "hour": 4.466667,
+    "time_unknown": false,
+    "place": "Newport",
+    "country": "Kentucky",
+    "lat": 39.083333,
+    "lon": -84.5
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowens,_Dave_W.",
+  "source_notes": "Contemporary American Horoscopes.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Personality : Hard worker",
+    "Traits : Personality : Persistent",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Sports : Basketball",
+    "Vocation : Sports Business : Coach/ Manager/ Owner",
+    "Notable : Awards : Hall of Fame"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 14.666792,
+    "lagna": 134.666792,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.142184,
+    "jd_ut": 2432849.894444,
+    "planets": {
+      "Sun": {
+        "longitude": 188.736712,
+        "sign_index": 6,
+        "degree_in_sign": 8.736712,
+        "is_retrograde": false,
+        "speed": 0.99729
+      },
+      "Moon": {
+        "longitude": 96.917699,
+        "sign_index": 3,
+        "degree_in_sign": 6.917699,
+        "is_retrograde": false,
+        "speed": 9.86152
+      },
+      "Mars": {
+        "longitude": 222.73043,
+        "sign_index": 7,
+        "degree_in_sign": 12.73043,
+        "is_retrograde": false,
+        "speed": 0.724417
+      },
+      "Mercury": {
+        "longitude": 177.831195,
+        "sign_index": 5,
+        "degree_in_sign": 27.831195,
+        "is_retrograde": true,
+        "speed": -0.671689
+      },
+      "Jupiter": {
+        "longitude": 242.820791,
+        "sign_index": 8,
+        "degree_in_sign": 2.820791,
+        "is_retrograde": false,
+        "speed": 0.176431
+      },
+      "Venus": {
+        "longitude": 148.689534,
+        "sign_index": 4,
+        "degree_in_sign": 28.689534,
+        "is_retrograde": false,
+        "speed": 1.179848
+      },
+      "Saturn": {
+        "longitude": 130.649125,
+        "sign_index": 4,
+        "degree_in_sign": 10.649125,
+        "is_retrograde": false,
+        "speed": 0.086221
+      },
+      "Rahu": {
+        "longitude": 11.879147,
+        "sign_index": 0,
+        "degree_in_sign": 11.879147,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 191.879147,
+        "sign_index": 6,
+        "degree_in_sign": 11.879147,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

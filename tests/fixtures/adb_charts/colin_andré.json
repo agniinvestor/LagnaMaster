@@ -1,0 +1,108 @@
+{
+  "adb_id": 53440,
+  "name": "Colin, André",
+  "given_name": "André Colin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418690.82684,
+    "year": 1910,
+    "month": 1,
+    "day": 19,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Brest",
+    "country": "France",
+    "lat": 48.4,
+    "lon": -4.483333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colin,_André",
+  "source_notes": "Steinbrecher Collection: Gauquelin ns 3/0364\\n\\nBirth record in Didier Geslain archive, 'politique a-f' pdf file, p. 193, has 20 January 1910 at 10:30am.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 7.622676,
+    "lagna": 247.622676,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.600843,
+    "jd_ut": 2418690.82684,
+    "planets": {
+      "Sun": {
+        "longitude": 275.78616,
+        "sign_index": 9,
+        "degree_in_sign": 5.78616,
+        "is_retrograde": false,
+        "speed": 1.017734
+      },
+      "Moon": {
+        "longitude": 17.367429,
+        "sign_index": 0,
+        "degree_in_sign": 17.367429,
+        "is_retrograde": false,
+        "speed": 17.81515
+      },
+      "Mars": {
+        "longitude": 5.269661,
+        "sign_index": 0,
+        "degree_in_sign": 5.269661,
+        "is_retrograde": false,
+        "speed": 0.565462
+      },
+      "Mercury": {
+        "longitude": 289.457214,
+        "sign_index": 9,
+        "degree_in_sign": 19.457214,
+        "is_retrograde": true,
+        "speed": -0.363691
+      },
+      "Jupiter": {
+        "longitude": 171.780768,
+        "sign_index": 5,
+        "degree_in_sign": 21.780768,
+        "is_retrograde": false,
+        "speed": 0.0327
+      },
+      "Venus": {
+        "longitude": 308.099521,
+        "sign_index": 10,
+        "degree_in_sign": 8.099521,
+        "is_retrograde": false,
+        "speed": 0.136549
+      },
+      "Saturn": {
+        "longitude": 354.616767,
+        "sign_index": 11,
+        "degree_in_sign": 24.616767,
+        "is_retrograde": false,
+        "speed": 0.054088
+      },
+      "Rahu": {
+        "longitude": 42.197589,
+        "sign_index": 1,
+        "degree_in_sign": 12.197589,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 222.197589,
+        "sign_index": 7,
+        "degree_in_sign": 12.197589,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

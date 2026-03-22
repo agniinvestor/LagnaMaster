@@ -1,0 +1,111 @@
+{
+  "adb_id": 52612,
+  "name": "Clavel, Maurice",
+  "given_name": "Maurice Clavel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422639.208333,
+    "year": 1920,
+    "month": 11,
+    "day": 10,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Frontignan",
+    "country": "France",
+    "lat": 43.45,
+    "lon": 3.75
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clavel,_Maurice",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 98.\\nSteinbrecher collection: Gauquelin 6/204\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 15.525096,
+    "lagna": 15.525096,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.751791,
+    "jd_ut": 2422639.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 205.25861,
+        "sign_index": 6,
+        "degree_in_sign": 25.25861,
+        "is_retrograde": false,
+        "speed": 1.006119
+      },
+      "Moon": {
+        "longitude": 205.232442,
+        "sign_index": 6,
+        "degree_in_sign": 25.232442,
+        "is_retrograde": false,
+        "speed": 11.566125
+      },
+      "Mars": {
+        "longitude": 264.408738,
+        "sign_index": 8,
+        "degree_in_sign": 24.408738,
+        "is_retrograde": false,
+        "speed": 0.754393
+      },
+      "Mercury": {
+        "longitude": 217.342443,
+        "sign_index": 7,
+        "degree_in_sign": 7.342443,
+        "is_retrograde": true,
+        "speed": -0.831643
+      },
+      "Jupiter": {
+        "longitude": 141.863363,
+        "sign_index": 4,
+        "degree_in_sign": 21.863363,
+        "is_retrograde": false,
+        "speed": 0.146318
+      },
+      "Venus": {
+        "longitude": 238.67371,
+        "sign_index": 7,
+        "degree_in_sign": 28.67371,
+        "is_retrograde": false,
+        "speed": 1.222531
+      },
+      "Saturn": {
+        "longitude": 149.471688,
+        "sign_index": 4,
+        "degree_in_sign": 29.471688,
+        "is_retrograde": false,
+        "speed": 0.087969
+      },
+      "Rahu": {
+        "longitude": 192.964585,
+        "sign_index": 6,
+        "degree_in_sign": 12.964585,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 12.964585,
+        "sign_index": 0,
+        "degree_in_sign": 12.964585,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

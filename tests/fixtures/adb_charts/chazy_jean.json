@@ -1,0 +1,111 @@
+{
+  "adb_id": 81040,
+  "name": "Chazy, Jean",
+  "given_name": "Jean Chazy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408673.320231,
+    "year": 1882,
+    "month": 8,
+    "day": 15,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Villefranche-sur-Saône",
+    "country": "France",
+    "lat": 45.983333,
+    "lon": 4.716667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "vir",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chazy,_Jean",
+  "source_notes": "Sy Scholfield submitted birth certificate (acte n°179) from the online Rhône archives: \"huit heures du soir\" (8pm). Marriage and death data in margin. Grazia Bordoni's Science file quotes Lescaut for same data.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Military : Military service",
+    "Vocation : Science : Astronomy",
+    "Vocation : Science : Mathematics/ Statistics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 3.969891,
+    "lagna": 303.969891,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.217901,
+    "jd_ut": 2408673.320231,
+    "planets": {
+      "Sun": {
+        "longitude": 120.591619,
+        "sign_index": 4,
+        "degree_in_sign": 0.591619,
+        "is_retrograde": false,
+        "speed": 0.961947
+      },
+      "Moon": {
+        "longitude": 141.53397,
+        "sign_index": 4,
+        "degree_in_sign": 21.53397,
+        "is_retrograde": false,
+        "speed": 12.603187
+      },
+      "Mars": {
+        "longitude": 156.055106,
+        "sign_index": 5,
+        "degree_in_sign": 6.055106,
+        "is_retrograde": false,
+        "speed": 0.634659
+      },
+      "Mercury": {
+        "longitude": 121.448629,
+        "sign_index": 4,
+        "degree_in_sign": 1.448629,
+        "is_retrograde": false,
+        "speed": 2.002205
+      },
+      "Jupiter": {
+        "longitude": 63.0422,
+        "sign_index": 2,
+        "degree_in_sign": 3.0422,
+        "is_retrograde": false,
+        "speed": 0.170659
+      },
+      "Venus": {
+        "longitude": 162.911155,
+        "sign_index": 5,
+        "degree_in_sign": 12.911155,
+        "is_retrograde": false,
+        "speed": 1.132341
+      },
+      "Saturn": {
+        "longitude": 33.477184,
+        "sign_index": 1,
+        "degree_in_sign": 3.477184,
+        "is_retrograde": false,
+        "speed": 0.04055
+      },
+      "Rahu": {
+        "longitude": 213.046421,
+        "sign_index": 7,
+        "degree_in_sign": 3.046421,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 33.046421,
+        "sign_index": 1,
+        "degree_in_sign": 3.046421,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

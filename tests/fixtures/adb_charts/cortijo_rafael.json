@@ -1,0 +1,108 @@
+{
+  "adb_id": 70489,
+  "name": "Cortijo, Rafael",
+  "given_name": "Rafael Cortijo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425592.145833,
+    "year": 1928,
+    "month": 12,
+    "day": 11,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Santurce",
+    "country": "Puerto Rico",
+    "lat": 18.2,
+    "lon": -67.133333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortijo,_Rafael",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 13.727044,
+    "lagna": 283.727044,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.864688,
+    "jd_ut": 2425592.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 236.511548,
+        "sign_index": 7,
+        "degree_in_sign": 26.511548,
+        "is_retrograde": false,
+        "speed": 1.017147
+      },
+      "Moon": {
+        "longitude": 230.571048,
+        "sign_index": 7,
+        "degree_in_sign": 20.571048,
+        "is_retrograde": false,
+        "speed": 6.588516
+      },
+      "Mars": {
+        "longitude": 70.465799,
+        "sign_index": 2,
+        "degree_in_sign": 10.465799,
+        "is_retrograde": true,
+        "speed": -0.369977
+      },
+      "Mercury": {
+        "longitude": 232.688872,
+        "sign_index": 7,
+        "degree_in_sign": 22.688872,
+        "is_retrograde": false,
+        "speed": 1.567285
+      },
+      "Jupiter": {
+        "longitude": 7.92065,
+        "sign_index": 0,
+        "degree_in_sign": 7.92065,
+        "is_retrograde": true,
+        "speed": -0.049198
+      },
+      "Venus": {
+        "longitude": 276.643758,
+        "sign_index": 9,
+        "degree_in_sign": 6.643758,
+        "is_retrograde": false,
+        "speed": 1.199313
+      },
+      "Saturn": {
+        "longitude": 238.450842,
+        "sign_index": 7,
+        "degree_in_sign": 28.450842,
+        "is_retrograde": false,
+        "speed": 0.118294
+      },
+      "Rahu": {
+        "longitude": 36.482273,
+        "sign_index": 1,
+        "degree_in_sign": 6.482273,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 216.482273,
+        "sign_index": 7,
+        "degree_in_sign": 6.482273,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

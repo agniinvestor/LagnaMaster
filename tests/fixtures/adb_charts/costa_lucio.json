@@ -1,0 +1,112 @@
+{
+  "adb_id": 55717,
+  "name": "Costa, Lucio",
+  "given_name": "Lucio Costa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415807.785174,
+    "year": 1902,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Toulon",
+    "country": "France",
+    "lat": 43.116667,
+    "lon": 5.933333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costa,_Lucio",
+  "source_notes": "Collection Didier Geslain\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Lifestyle : Home : Many moves",
+    "Vocation : Building Trades : Architect/ Planner",
+    "Vocation : Education : Teacher",
+    "Mundane : Misc. Mundane : Achievements"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 5.448017,
+    "lagna": 305.448017,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.490627,
+    "jd_ut": 2415807.785174,
+    "planets": {
+      "Sun": {
+        "longitude": 315.267236,
+        "sign_index": 10,
+        "degree_in_sign": 15.267236,
+        "is_retrograde": false,
+        "speed": 1.004131
+      },
+      "Moon": {
+        "longitude": 190.644369,
+        "sign_index": 6,
+        "degree_in_sign": 10.644369,
+        "is_retrograde": false,
+        "speed": 9.531721
+      },
+      "Mars": {
+        "longitude": 321.935354,
+        "sign_index": 10,
+        "degree_in_sign": 21.935354,
+        "is_retrograde": false,
+        "speed": 0.786345
+      },
+      "Mercury": {
+        "longitude": 299.143784,
+        "sign_index": 9,
+        "degree_in_sign": 29.143784,
+        "is_retrograde": true,
+        "speed": -0.521305
+      },
+      "Jupiter": {
+        "longitude": 282.090378,
+        "sign_index": 9,
+        "degree_in_sign": 12.090378,
+        "is_retrograde": false,
+        "speed": 0.215916
+      },
+      "Venus": {
+        "longitude": 296.425991,
+        "sign_index": 9,
+        "degree_in_sign": 26.425991,
+        "is_retrograde": true,
+        "speed": -0.337471
+      },
+      "Saturn": {
+        "longitude": 271.627277,
+        "sign_index": 9,
+        "degree_in_sign": 1.627277,
+        "is_retrograde": false,
+        "speed": 0.096249
+      },
+      "Rahu": {
+        "longitude": 194.976032,
+        "sign_index": 6,
+        "degree_in_sign": 14.976032,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 14.976032,
+        "sign_index": 0,
+        "degree_in_sign": 14.976032,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

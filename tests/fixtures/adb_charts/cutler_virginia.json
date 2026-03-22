@@ -1,0 +1,110 @@
+{
+  "adb_id": 75702,
+  "name": "Cutler, Virginia",
+  "given_name": "Virginia Cutler",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417197.076389,
+    "year": 1905,
+    "month": 12,
+    "day": 17,
+    "calendar": "g",
+    "time": "06:50",
+    "time_type": "s",
+    "hour": 6.833333,
+    "time_unknown": false,
+    "place": "Park City",
+    "country": "Utah",
+    "lat": 40.65,
+    "lon": -111.5
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cutler,_Virginia",
+  "source_notes": "Birth certificate submitted by Sy Scholfield.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Alzheimer's/ Senility",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Education : Administrator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 27.301565,
+    "lagna": 207.301565,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.543738,
+    "jd_ut": 2417197.076389,
+    "planets": {
+      "Sun": {
+        "longitude": 242.44229,
+        "sign_index": 8,
+        "degree_in_sign": 2.44229,
+        "is_retrograde": false,
+        "speed": 1.017811
+      },
+      "Moon": {
+        "longitude": 128.044364,
+        "sign_index": 4,
+        "degree_in_sign": 8.044364,
+        "is_retrograde": false,
+        "speed": 9.838892
+      },
+      "Mars": {
+        "longitude": 299.804885,
+        "sign_index": 9,
+        "degree_in_sign": 29.804885,
+        "is_retrograde": false,
+        "speed": 0.764785
+      },
+      "Mercury": {
+        "longitude": 238.523234,
+        "sign_index": 7,
+        "degree_in_sign": 28.523234,
+        "is_retrograde": true,
+        "speed": -1.326933
+      },
+      "Jupiter": {
+        "longitude": 35.936985,
+        "sign_index": 1,
+        "degree_in_sign": 5.936985,
+        "is_retrograde": true,
+        "speed": -0.108474
+      },
+      "Venus": {
+        "longitude": 228.360881,
+        "sign_index": 7,
+        "degree_in_sign": 18.360881,
+        "is_retrograde": false,
+        "speed": 1.256595
+      },
+      "Saturn": {
+        "longitude": 305.518429,
+        "sign_index": 10,
+        "degree_in_sign": 5.518429,
+        "is_retrograde": false,
+        "speed": 0.075247
+      },
+      "Rahu": {
+        "longitude": 121.354565,
+        "sign_index": 4,
+        "degree_in_sign": 1.354565,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 301.354565,
+        "sign_index": 10,
+        "degree_in_sign": 1.354565,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

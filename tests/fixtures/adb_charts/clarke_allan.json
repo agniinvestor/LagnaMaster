@@ -1,0 +1,110 @@
+{
+  "adb_id": 10276,
+  "name": "Clarke, Allan",
+  "given_name": "Allan Clarke",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432032.375,
+    "year": 1946,
+    "month": 7,
+    "day": 30,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "d",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Willenhall",
+    "country": "England",
+    "lat": 52.6,
+    "lon": -2.033333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "vir",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clarke,_Allan",
+  "source_notes": "David Fisher quotes BBC Lifelines 2/17/l982\\n",
+  "categories": [
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 21.371359,
+    "lagna": 291.371359,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.110925,
+    "jd_ut": 2432032.375,
+    "planets": {
+      "Sun": {
+        "longitude": 103.959259,
+        "sign_index": 3,
+        "degree_in_sign": 13.959259,
+        "is_retrograde": false,
+        "speed": 0.95674
+      },
+      "Moon": {
+        "longitude": 134.945995,
+        "sign_index": 4,
+        "degree_in_sign": 14.945995,
+        "is_retrograde": false,
+        "speed": 14.531661
+      },
+      "Mars": {
+        "longitude": 150.883639,
+        "sign_index": 5,
+        "degree_in_sign": 0.883639,
+        "is_retrograde": false,
+        "speed": 0.615732
+      },
+      "Mercury": {
+        "longitude": 108.626972,
+        "sign_index": 3,
+        "degree_in_sign": 18.626972,
+        "is_retrograde": true,
+        "speed": -0.732208
+      },
+      "Jupiter": {
+        "longitude": 177.320641,
+        "sign_index": 5,
+        "degree_in_sign": 27.320641,
+        "is_retrograde": false,
+        "speed": 0.122091
+      },
+      "Venus": {
+        "longitude": 146.349152,
+        "sign_index": 4,
+        "degree_in_sign": 26.349152,
+        "is_retrograde": false,
+        "speed": 1.123477
+      },
+      "Saturn": {
+        "longitude": 96.541806,
+        "sign_index": 3,
+        "degree_in_sign": 6.541806,
+        "is_retrograde": false,
+        "speed": 0.128662
+      },
+      "Rahu": {
+        "longitude": 55.201189,
+        "sign_index": 1,
+        "degree_in_sign": 25.201189,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 235.201189,
+        "sign_index": 7,
+        "degree_in_sign": 25.201189,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

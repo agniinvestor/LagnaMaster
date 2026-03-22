@@ -1,0 +1,112 @@
+{
+  "adb_id": 92539,
+  "name": "Carlitz, Leonard",
+  "given_name": "Leonard Carlitz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417935.729167,
+    "year": 1907,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlitz,_Leonard",
+  "source_notes": "Birth certificate in hand from Sy Scholfield. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 23.572232,
+    "lagna": 143.572232,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.571976,
+    "jd_ut": 2417935.729167,
+    "planets": {
+      "Sun": {
+        "longitude": 250.728099,
+        "sign_index": 8,
+        "degree_in_sign": 10.728099,
+        "is_retrograde": false,
+        "speed": 1.018895
+      },
+      "Moon": {
+        "longitude": 141.918005,
+        "sign_index": 4,
+        "degree_in_sign": 21.918005,
+        "is_retrograde": false,
+        "speed": 10.259929
+      },
+      "Mars": {
+        "longitude": 326.220005,
+        "sign_index": 10,
+        "degree_in_sign": 26.220005,
+        "is_retrograde": false,
+        "speed": 0.70079
+      },
+      "Mercury": {
+        "longitude": 239.809477,
+        "sign_index": 7,
+        "degree_in_sign": 29.809477,
+        "is_retrograde": false,
+        "speed": 1.53267
+      },
+      "Jupiter": {
+        "longitude": 110.016506,
+        "sign_index": 3,
+        "degree_in_sign": 20.016506,
+        "is_retrograde": true,
+        "speed": -0.079511
+      },
+      "Venus": {
+        "longitude": 276.013303,
+        "sign_index": 9,
+        "degree_in_sign": 6.013303,
+        "is_retrograde": false,
+        "speed": 1.244392
+      },
+      "Saturn": {
+        "longitude": 328.967843,
+        "sign_index": 10,
+        "degree_in_sign": 28.967843,
+        "is_retrograde": false,
+        "speed": 0.053667
+      },
+      "Rahu": {
+        "longitude": 82.211801,
+        "sign_index": 2,
+        "degree_in_sign": 22.211801,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 262.211801,
+        "sign_index": 8,
+        "degree_in_sign": 22.211801,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

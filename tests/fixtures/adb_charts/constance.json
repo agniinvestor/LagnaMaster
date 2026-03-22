@@ -1,0 +1,110 @@
+{
+  "adb_id": 105556,
+  "name": "Constance",
+  "given_name": "Constance",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446280.809028,
+    "year": 1985,
+    "month": 8,
+    "day": 3,
+    "calendar": "g",
+    "time": "09:25",
+    "time_type": "d",
+    "hour": 9.416667,
+    "time_unknown": false,
+    "place": "Compiègne",
+    "country": "France",
+    "lat": 49.416667,
+    "lon": 2.833333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Constance",
+  "source_notes": "Marc Brun quoted birth certificate (EC n°1322). \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : Live Stage"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 25.281922,
+    "lagna": 115.281922,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.655771,
+    "jd_ut": 2446280.809028,
+    "planets": {
+      "Sun": {
+        "longitude": 107.251231,
+        "sign_index": 3,
+        "degree_in_sign": 17.251231,
+        "is_retrograde": false,
+        "speed": 0.956886
+      },
+      "Moon": {
+        "longitude": 315.608356,
+        "sign_index": 10,
+        "degree_in_sign": 15.608356,
+        "is_retrograde": false,
+        "speed": 12.612025
+      },
+      "Mars": {
+        "longitude": 102.240966,
+        "sign_index": 3,
+        "degree_in_sign": 12.240966,
+        "is_retrograde": false,
+        "speed": 0.643312
+      },
+      "Mercury": {
+        "longitude": 120.001421,
+        "sign_index": 4,
+        "degree_in_sign": 0.001421,
+        "is_retrograde": true,
+        "speed": -0.519699
+      },
+      "Jupiter": {
+        "longitude": 288.531997,
+        "sign_index": 9,
+        "degree_in_sign": 18.531997,
+        "is_retrograde": true,
+        "speed": -0.130006
+      },
+      "Venus": {
+        "longitude": 67.405653,
+        "sign_index": 2,
+        "degree_in_sign": 7.405653,
+        "is_retrograde": false,
+        "speed": 1.14272
+      },
+      "Saturn": {
+        "longitude": 207.873233,
+        "sign_index": 6,
+        "degree_in_sign": 27.873233,
+        "is_retrograde": false,
+        "speed": 0.013706
+      },
+      "Rahu": {
+        "longitude": 20.147532,
+        "sign_index": 0,
+        "degree_in_sign": 20.147532,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 200.147532,
+        "sign_index": 6,
+        "degree_in_sign": 20.147532,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

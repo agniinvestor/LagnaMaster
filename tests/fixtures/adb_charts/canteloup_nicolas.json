@@ -1,0 +1,108 @@
+{
+  "adb_id": 58758,
+  "name": "Canteloup, Nicolas",
+  "given_name": "Nicolas Canteloup",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438337.8125,
+    "year": 1963,
+    "month": 11,
+    "day": 4,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Caudéran",
+    "country": "France",
+    "lat": 44.85,
+    "lon": -0.616667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Canteloup,_Nicolas",
+  "source_notes": "BC in hand from Didier Geslain archive\\n",
+  "categories": [
+    "Vocation : Entertainment : Comedy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 2.238517,
+    "lagna": 182.238517,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.352027,
+    "jd_ut": 2438337.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 197.807366,
+        "sign_index": 6,
+        "degree_in_sign": 17.807366,
+        "is_retrograde": false,
+        "speed": 1.001636
+      },
+      "Moon": {
+        "longitude": 55.745934,
+        "sign_index": 1,
+        "degree_in_sign": 25.745934,
+        "is_retrograde": false,
+        "speed": 13.726214
+      },
+      "Mars": {
+        "longitude": 223.573401,
+        "sign_index": 7,
+        "degree_in_sign": 13.573401,
+        "is_retrograde": false,
+        "speed": 0.727227
+      },
+      "Mercury": {
+        "longitude": 197.350635,
+        "sign_index": 6,
+        "degree_in_sign": 17.350635,
+        "is_retrograde": false,
+        "speed": 1.626125
+      },
+      "Jupiter": {
+        "longitude": 347.805815,
+        "sign_index": 11,
+        "degree_in_sign": 17.805815,
+        "is_retrograde": true,
+        "speed": -0.098789
+      },
+      "Venus": {
+        "longitude": 215.099533,
+        "sign_index": 7,
+        "degree_in_sign": 5.099533,
+        "is_retrograde": false,
+        "speed": 1.24621
+      },
+      "Saturn": {
+        "longitude": 293.259384,
+        "sign_index": 9,
+        "degree_in_sign": 23.259384,
+        "is_retrograde": false,
+        "speed": 0.02313
+      },
+      "Rahu": {
+        "longitude": 81.063098,
+        "sign_index": 2,
+        "degree_in_sign": 21.063098,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 261.063098,
+        "sign_index": 8,
+        "degree_in_sign": 21.063098,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "adb_id": 2919,
+  "name": "Cohan, George M.",
+  "given_name": "George M. Cohan",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2407169.615046,
+    "year": 1878,
+    "month": 7,
+    "day": 3,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Providence",
+    "country": "Rhode Island",
+    "lat": 41.816667,
+    "lon": -71.416667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohan,_George_M.",
+  "source_notes": "LMR quotes biographer Ward Morehouse \"George M. Cohan\" (1943, p.24) \"with the fourth actually only a few hours away.\"\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Awards : Medals",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 14.749596,
+    "lagna": 284.749596,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.160422,
+    "jd_ut": 2407169.615046,
+    "planets": {
+      "Sun": {
+        "longitude": 79.785752,
+        "sign_index": 2,
+        "degree_in_sign": 19.785752,
+        "is_retrograde": false,
+        "speed": 0.953548
+      },
+      "Moon": {
+        "longitude": 126.356648,
+        "sign_index": 4,
+        "degree_in_sign": 6.356648,
+        "is_retrograde": false,
+        "speed": 15.437559
+      },
+      "Mars": {
+        "longitude": 104.786111,
+        "sign_index": 3,
+        "degree_in_sign": 14.786111,
+        "is_retrograde": false,
+        "speed": 0.628167
+      },
+      "Mercury": {
+        "longitude": 79.254667,
+        "sign_index": 2,
+        "degree_in_sign": 19.254667,
+        "is_retrograde": false,
+        "speed": 2.171013
+      },
+      "Jupiter": {
+        "longitude": 282.686324,
+        "sign_index": 9,
+        "degree_in_sign": 12.686324,
+        "is_retrograde": true,
+        "speed": -0.109021
+      },
+      "Venus": {
+        "longitude": 41.865531,
+        "sign_index": 1,
+        "degree_in_sign": 11.865531,
+        "is_retrograde": false,
+        "speed": 1.157681
+      },
+      "Saturn": {
+        "longitude": 340.652886,
+        "sign_index": 11,
+        "degree_in_sign": 10.652886,
+        "is_retrograde": false,
+        "speed": 0.017656
+      },
+      "Rahu": {
+        "longitude": 292.730955,
+        "sign_index": 9,
+        "degree_in_sign": 22.730955,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 112.730955,
+        "sign_index": 3,
+        "degree_in_sign": 22.730955,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

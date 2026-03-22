@@ -1,0 +1,119 @@
+{
+  "adb_id": 6165,
+  "name": "Coltrane, John",
+  "given_name": "John Coltrane",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424782.416667,
+    "year": 1926,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Hamlet",
+    "country": "North Carolina",
+    "lat": 34.883333,
+    "lon": -79.7
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coltrane,_John",
+  "source_notes": "B.R. in hand from Steinbrecher\\n",
+  "categories": [
+    "Traits : Personality : Principled strongly",
+    "Diagnoses : Major Diseases : Cancer",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Lifestyle : Financial : Philanthropist",
+    "Lifestyle : Social Life : Friends",
+    "Personal : Religion/Spirituality : Conversion/ Born again",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz",
+    "Vocation : Politics : Activist/ social",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 17.312985,
+    "lagna": 287.312985,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.83373,
+    "jd_ut": 2424782.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 157.275368,
+        "sign_index": 5,
+        "degree_in_sign": 7.275368,
+        "is_retrograde": false,
+        "speed": 0.978995
+      },
+      "Moon": {
+        "longitude": 6.740057,
+        "sign_index": 0,
+        "degree_in_sign": 6.740057,
+        "is_retrograde": false,
+        "speed": 18.298405
+      },
+      "Mars": {
+        "longitude": 26.420242,
+        "sign_index": 0,
+        "degree_in_sign": 26.420242,
+        "is_retrograde": false,
+        "speed": 0.077353
+      },
+      "Mercury": {
+        "longitude": 160.813853,
+        "sign_index": 5,
+        "degree_in_sign": 10.813853,
+        "is_retrograde": false,
+        "speed": 1.765904
+      },
+      "Jupiter": {
+        "longitude": 295.163476,
+        "sign_index": 9,
+        "degree_in_sign": 25.163476,
+        "is_retrograde": true,
+        "speed": -0.065465
+      },
+      "Venus": {
+        "longitude": 142.291735,
+        "sign_index": 4,
+        "degree_in_sign": 22.291735,
+        "is_retrograde": false,
+        "speed": 1.240446
+      },
+      "Saturn": {
+        "longitude": 209.463182,
+        "sign_index": 6,
+        "degree_in_sign": 29.463182,
+        "is_retrograde": false,
+        "speed": 0.087352
+      },
+      "Rahu": {
+        "longitude": 79.391506,
+        "sign_index": 2,
+        "degree_in_sign": 19.391506,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 259.391506,
+        "sign_index": 8,
+        "degree_in_sign": 19.391506,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

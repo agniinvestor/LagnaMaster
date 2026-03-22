@@ -1,0 +1,112 @@
+{
+  "adb_id": 876,
+  "name": "Commons, Kim",
+  "given_name": "Kim Commons",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433850.906944,
+    "year": 1951,
+    "month": 7,
+    "day": 23,
+    "calendar": "g",
+    "time": "02:46",
+    "time_type": "d",
+    "hour": 2.766667,
+    "time_unknown": false,
+    "place": "Lancaster",
+    "country": "USA",
+    "lat": 34.7,
+    "lon": -118.133333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Commons,_Kim",
+  "source_notes": "Contemporary American Horoscopes\\n",
+  "categories": [
+    "Traits : Mind : Child prodigy",
+    "Lifestyle : Work : Skills - singular/specialist",
+    "Vocation : Education : Teacher",
+    "Vocation : Sports : Games - Bridge/ Chess/ Other",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 0.386929,
+    "lagna": 30.386929,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.180459,
+    "jd_ut": 2433850.906944,
+    "planets": {
+      "Sun": {
+        "longitude": 96.556168,
+        "sign_index": 3,
+        "degree_in_sign": 6.556168,
+        "is_retrograde": false,
+        "speed": 0.954599
+      },
+      "Moon": {
+        "longitude": 338.339767,
+        "sign_index": 11,
+        "degree_in_sign": 8.339767,
+        "is_retrograde": false,
+        "speed": 9.612931
+      },
+      "Mars": {
+        "longitude": 79.799363,
+        "sign_index": 2,
+        "degree_in_sign": 19.799363,
+        "is_retrograde": false,
+        "speed": 0.661712
+      },
+      "Mercury": {
+        "longitude": 121.206895,
+        "sign_index": 4,
+        "degree_in_sign": 1.206895,
+        "is_retrograde": false,
+        "speed": 1.399105
+      },
+      "Jupiter": {
+        "longitude": 350.764893,
+        "sign_index": 11,
+        "degree_in_sign": 20.764893,
+        "is_retrograde": false,
+        "speed": 0.038757
+      },
+      "Venus": {
+        "longitude": 138.032515,
+        "sign_index": 4,
+        "degree_in_sign": 18.032515,
+        "is_retrograde": false,
+        "speed": 0.611131
+      },
+      "Saturn": {
+        "longitude": 154.807791,
+        "sign_index": 5,
+        "degree_in_sign": 4.807791,
+        "is_retrograde": false,
+        "speed": 0.083183
+      },
+      "Rahu": {
+        "longitude": 318.833433,
+        "sign_index": 10,
+        "degree_in_sign": 18.833433,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 138.833433,
+        "sign_index": 4,
+        "degree_in_sign": 18.833433,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

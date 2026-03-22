@@ -1,0 +1,108 @@
+{
+  "adb_id": 67266,
+  "name": "Choulet, Pierre",
+  "given_name": "Pierre Choulet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2449978.65625,
+    "year": 1995,
+    "month": 9,
+    "day": 18,
+    "calendar": "g",
+    "time": "05:45",
+    "time_type": "d",
+    "hour": 5.75,
+    "time_unknown": false,
+    "place": "Vesoul",
+    "country": "France",
+    "lat": 47.633333,
+    "lon": 6.166667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Choulet,_Pierre",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 19.570808,
+    "lagna": 109.570808,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.797189,
+    "jd_ut": 2449978.65625,
+    "planets": {
+      "Sun": {
+        "longitude": 150.968247,
+        "sign_index": 5,
+        "degree_in_sign": 0.968247,
+        "is_retrograde": false,
+        "speed": 0.975862
+      },
+      "Moon": {
+        "longitude": 75.290742,
+        "sign_index": 2,
+        "degree_in_sign": 15.290742,
+        "is_retrograde": false,
+        "speed": 9.037423
+      },
+      "Mars": {
+        "longitude": 193.45242,
+        "sign_index": 6,
+        "degree_in_sign": 13.45242,
+        "is_retrograde": false,
+        "speed": 0.674641
+      },
+      "Mercury": {
+        "longitude": 175.486548,
+        "sign_index": 5,
+        "degree_in_sign": 25.486548,
+        "is_retrograde": false,
+        "speed": 0.406801
+      },
+      "Jupiter": {
+        "longitude": 224.846982,
+        "sign_index": 7,
+        "degree_in_sign": 14.846982,
+        "is_retrograde": false,
+        "speed": 0.127299
+      },
+      "Venus": {
+        "longitude": 158.621189,
+        "sign_index": 5,
+        "degree_in_sign": 8.621189,
+        "is_retrograde": false,
+        "speed": 1.2431
+      },
+      "Saturn": {
+        "longitude": 327.26782,
+        "sign_index": 10,
+        "degree_in_sign": 27.26782,
+        "is_retrograde": true,
+        "speed": -0.076907
+      },
+      "Rahu": {
+        "longitude": 184.191134,
+        "sign_index": 6,
+        "degree_in_sign": 4.191134,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 4.191134,
+        "sign_index": 0,
+        "degree_in_sign": 4.191134,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

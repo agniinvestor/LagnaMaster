@@ -1,0 +1,111 @@
+{
+  "adb_id": 64918,
+  "name": "Cantet, Laurent",
+  "given_name": "Laurent Cantet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437401.0625,
+    "year": 1961,
+    "month": 4,
+    "day": 11,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "s",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Caudéran",
+    "country": "France",
+    "lat": 44.85,
+    "lon": -0.616667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantet,_Laurent",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 37.\\n",
+  "categories": [
+    "Vocation : Art : Photography",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 6.56925,
+    "lagna": 96.56925,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.316208,
+    "jd_ut": 2437401.0625,
+    "planets": {
+      "Sun": {
+        "longitude": 358.105676,
+        "sign_index": 11,
+        "degree_in_sign": 28.105676,
+        "is_retrograde": false,
+        "speed": 0.980994
+      },
+      "Moon": {
+        "longitude": 308.783966,
+        "sign_index": 10,
+        "degree_in_sign": 8.783966,
+        "is_retrograde": false,
+        "speed": 13.020537
+      },
+      "Mars": {
+        "longitude": 84.736042,
+        "sign_index": 2,
+        "degree_in_sign": 24.736042,
+        "is_retrograde": false,
+        "speed": 0.455111
+      },
+      "Mercury": {
+        "longitude": 338.624136,
+        "sign_index": 11,
+        "degree_in_sign": 8.624136,
+        "is_retrograde": false,
+        "speed": 1.668489
+      },
+      "Jupiter": {
+        "longitude": 280.904859,
+        "sign_index": 9,
+        "degree_in_sign": 10.904859,
+        "is_retrograde": false,
+        "speed": 0.126372
+      },
+      "Venus": {
+        "longitude": 357.18883,
+        "sign_index": 11,
+        "degree_in_sign": 27.18883,
+        "is_retrograde": true,
+        "speed": -0.629235
+      },
+      "Saturn": {
+        "longitude": 275.902861,
+        "sign_index": 9,
+        "degree_in_sign": 5.902861,
+        "is_retrograde": false,
+        "speed": 0.04483
+      },
+      "Rahu": {
+        "longitude": 130.703399,
+        "sign_index": 4,
+        "degree_in_sign": 10.703399,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 310.703399,
+        "sign_index": 10,
+        "degree_in_sign": 10.703399,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 62902,
+  "name": "Changeux, Robert",
+  "given_name": "Robert Changeux",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424873.916667,
+    "year": 1926,
+    "month": 12,
+    "day": 24,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Cherbourg",
+    "country": "France",
+    "lat": 49.65,
+    "lon": -1.65
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Changeux,_Robert",
+  "source_notes": "Didier Geslain archive, 'Astrologues' pdf file, p. 53.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 18.200564,
+    "lagna": 258.200564,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.837228,
+    "jd_ut": 2424873.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 249.011101,
+        "sign_index": 8,
+        "degree_in_sign": 9.011101,
+        "is_retrograde": false,
+        "speed": 1.018579
+      },
+      "Moon": {
+        "longitude": 128.337218,
+        "sign_index": 4,
+        "degree_in_sign": 8.337218,
+        "is_retrograde": false,
+        "speed": 12.124534
+      },
+      "Mars": {
+        "longitude": 13.542669,
+        "sign_index": 0,
+        "degree_in_sign": 13.542669,
+        "is_retrograde": false,
+        "speed": 0.202875
+      },
+      "Mercury": {
+        "longitude": 230.190733,
+        "sign_index": 7,
+        "degree_in_sign": 20.190733,
+        "is_retrograde": false,
+        "speed": 1.384023
+      },
+      "Jupiter": {
+        "longitude": 301.981176,
+        "sign_index": 10,
+        "degree_in_sign": 1.981176,
+        "is_retrograde": false,
+        "speed": 0.188911
+      },
+      "Venus": {
+        "longitude": 256.971769,
+        "sign_index": 8,
+        "degree_in_sign": 16.971769,
+        "is_retrograde": false,
+        "speed": 1.256792
+      },
+      "Saturn": {
+        "longitude": 219.62051,
+        "sign_index": 7,
+        "degree_in_sign": 9.62051,
+        "is_retrograde": false,
+        "speed": 0.108904
+      },
+      "Rahu": {
+        "longitude": 74.542731,
+        "sign_index": 2,
+        "degree_in_sign": 14.542731,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 254.542731,
+        "sign_index": 8,
+        "degree_in_sign": 14.542731,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

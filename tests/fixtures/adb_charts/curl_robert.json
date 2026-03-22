@@ -1,0 +1,115 @@
+{
+  "adb_id": 82710,
+  "name": "Curl, Robert",
+  "given_name": "Robert Curl",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427307.760417,
+    "year": 1933,
+    "month": 8,
+    "day": 23,
+    "calendar": "g",
+    "time": "00:15",
+    "time_type": "s",
+    "hour": 0.25,
+    "time_unknown": false,
+    "place": "Alice",
+    "country": "Texas",
+    "lat": 27.75,
+    "lon": -98.066667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curl,_Robert",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Social Life : Hobbies, games",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Chemistry",
+    "Vocation : Science : Physics",
+    "Notable : Awards : Nobel prize"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 24.815599,
+    "lagna": 24.815599,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.930281,
+    "jd_ut": 2427307.760417,
+    "planets": {
+      "Sun": {
+        "longitude": 126.720526,
+        "sign_index": 4,
+        "degree_in_sign": 6.720526,
+        "is_retrograde": false,
+        "speed": 0.964396
+      },
+      "Moon": {
+        "longitude": 150.708204,
+        "sign_index": 5,
+        "degree_in_sign": 0.708204,
+        "is_retrograde": false,
+        "speed": 17.315625
+      },
+      "Mars": {
+        "longitude": 185.132977,
+        "sign_index": 6,
+        "degree_in_sign": 5.132977,
+        "is_retrograde": false,
+        "speed": 0.639261
+      },
+      "Mercury": {
+        "longitude": 109.500386,
+        "sign_index": 3,
+        "degree_in_sign": 19.500386,
+        "is_retrograde": false,
+        "speed": 1.470179
+      },
+      "Jupiter": {
+        "longitude": 153.316707,
+        "sign_index": 5,
+        "degree_in_sign": 3.316707,
+        "is_retrograde": false,
+        "speed": 0.203532
+      },
+      "Venus": {
+        "longitude": 159.164909,
+        "sign_index": 5,
+        "degree_in_sign": 9.164909,
+        "is_retrograde": false,
+        "speed": 1.202184
+      },
+      "Saturn": {
+        "longitude": 288.83681,
+        "sign_index": 9,
+        "degree_in_sign": 18.83681,
+        "is_retrograde": true,
+        "speed": -0.069194
+      },
+      "Rahu": {
+        "longitude": 305.568292,
+        "sign_index": 10,
+        "degree_in_sign": 5.568292,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 125.568292,
+        "sign_index": 4,
+        "degree_in_sign": 5.568292,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

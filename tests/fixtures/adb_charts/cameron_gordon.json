@@ -1,0 +1,108 @@
+{
+  "adb_id": 53347,
+  "name": "Cameron, Gordon",
+  "given_name": "Gordon Cameron",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420981.152778,
+    "year": 1916,
+    "month": 4,
+    "day": 27,
+    "calendar": "g",
+    "time": "15:40",
+    "time_type": "s",
+    "hour": 15.666667,
+    "time_unknown": false,
+    "place": "Aberdeen",
+    "country": "Scotland",
+    "lat": 57.166667,
+    "lon": -2.066667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cameron,_Gordon",
+  "source_notes": "Paul Wright quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.460726,
+    "lagna": 133.460726,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.688402,
+    "jd_ut": 2420981.152778,
+    "planets": {
+      "Sun": {
+        "longitude": 14.337268,
+        "sign_index": 0,
+        "degree_in_sign": 14.337268,
+        "is_retrograde": false,
+        "speed": 0.972108
+      },
+      "Moon": {
+        "longitude": 318.190768,
+        "sign_index": 10,
+        "degree_in_sign": 18.190768,
+        "is_retrograde": false,
+        "speed": 14.440363
+      },
+      "Mars": {
+        "longitude": 114.54976,
+        "sign_index": 3,
+        "degree_in_sign": 24.54976,
+        "is_retrograde": false,
+        "speed": 0.333326
+      },
+      "Mercury": {
+        "longitude": 28.330411,
+        "sign_index": 0,
+        "degree_in_sign": 28.330411,
+        "is_retrograde": false,
+        "speed": 1.915546
+      },
+      "Jupiter": {
+        "longitude": 355.068167,
+        "sign_index": 11,
+        "degree_in_sign": 25.068167,
+        "is_retrograde": false,
+        "speed": 0.234568
+      },
+      "Venus": {
+        "longitude": 59.841635,
+        "sign_index": 1,
+        "degree_in_sign": 29.841635,
+        "is_retrograde": false,
+        "speed": 0.946615
+      },
+      "Saturn": {
+        "longitude": 78.808546,
+        "sign_index": 2,
+        "degree_in_sign": 18.808546,
+        "is_retrograde": false,
+        "speed": 0.078833
+      },
+      "Rahu": {
+        "longitude": 280.828415,
+        "sign_index": 9,
+        "degree_in_sign": 10.828415,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 100.828415,
+        "sign_index": 3,
+        "degree_in_sign": 10.828415,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

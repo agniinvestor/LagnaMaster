@@ -1,0 +1,109 @@
+{
+  "adb_id": 58863,
+  "name": "Christiansen, Larry",
+  "given_name": "Larry Christiansen",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2435652.135417,
+    "year": 1956,
+    "month": 6,
+    "day": 27,
+    "calendar": "g",
+    "time": "08:15",
+    "time_type": "d",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Riverside",
+    "country": "California",
+    "lat": 33.95,
+    "lon": -117.4
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christiansen,_Larry",
+  "source_notes": "Sy Scholfield quotes data from a chart by Joyce Jillson on Christiansen's colleague Jeremy Silman's official website: [http://www.jeremysilman.com/astrology/charts_christiansen.html]. NB: Jillson uses wrong co-ordinates for Riverside (107W23) giving a wrong Ascendant of 15 Leo.\\n",
+  "categories": [
+    "Vocation : Sports : Games - Bridge/ Chess/ Other",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 21.069031,
+    "lagna": 81.069031,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.249333,
+    "jd_ut": 2435652.135417,
+    "planets": {
+      "Sun": {
+        "longitude": 72.659662,
+        "sign_index": 2,
+        "degree_in_sign": 12.659662,
+        "is_retrograde": false,
+        "speed": 0.95324
+      },
+      "Moon": {
+        "longitude": 299.609462,
+        "sign_index": 9,
+        "degree_in_sign": 29.609462,
+        "is_retrograde": false,
+        "speed": 10.201887
+      },
+      "Mars": {
+        "longitude": 319.122185,
+        "sign_index": 10,
+        "degree_in_sign": 19.122185,
+        "is_retrograde": false,
+        "speed": 0.449973
+      },
+      "Mercury": {
+        "longitude": 51.677062,
+        "sign_index": 1,
+        "degree_in_sign": 21.677062,
+        "is_retrograde": false,
+        "speed": 1.386468
+      },
+      "Jupiter": {
+        "longitude": 124.964587,
+        "sign_index": 4,
+        "degree_in_sign": 4.964587,
+        "is_retrograde": false,
+        "speed": 0.168345
+      },
+      "Venus": {
+        "longitude": 64.254353,
+        "sign_index": 2,
+        "degree_in_sign": 4.254353,
+        "is_retrograde": true,
+        "speed": -0.571198
+      },
+      "Saturn": {
+        "longitude": 213.761721,
+        "sign_index": 7,
+        "degree_in_sign": 3.761721,
+        "is_retrograde": true,
+        "speed": -0.049243
+      },
+      "Rahu": {
+        "longitude": 223.382633,
+        "sign_index": 7,
+        "degree_in_sign": 13.382633,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 43.382633,
+        "sign_index": 1,
+        "degree_in_sign": 13.382633,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "adb_id": 6742,
+  "name": "Conrad, Pete",
+  "given_name": "Pete Conrad",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426130.344444,
+    "year": 1930,
+    "month": 6,
+    "day": 2,
+    "calendar": "g",
+    "time": "16:16",
+    "time_type": "d",
+    "hour": 16.266667,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conrad,_Pete",
+  "source_notes": "Contemporary American Horoscopes\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Business : Top executive",
+    "Vocation : Military : Military service",
+    "Vocation : Travel : Astronaut",
+    "Vocation : Travel : Pilot/ military",
+    "Notable : Famous : Historic figure"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 7.668301,
+    "lagna": 157.668301,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.885265,
+    "jd_ut": 2426130.344444,
+    "planets": {
+      "Sun": {
+        "longitude": 48.659083,
+        "sign_index": 1,
+        "degree_in_sign": 18.659083,
+        "is_retrograde": false,
+        "speed": 0.957875
+      },
+      "Moon": {
+        "longitude": 125.064246,
+        "sign_index": 4,
+        "degree_in_sign": 5.064246,
+        "is_retrograde": false,
+        "speed": 10.363881
+      },
+      "Mars": {
+        "longitude": 6.899993,
+        "sign_index": 0,
+        "degree_in_sign": 6.899993,
+        "is_retrograde": false,
+        "speed": 0.746218
+      },
+      "Mercury": {
+        "longitude": 30.955482,
+        "sign_index": 1,
+        "degree_in_sign": 0.955482,
+        "is_retrograde": false,
+        "speed": 0.079316
+      },
+      "Jupiter": {
+        "longitude": 61.601792,
+        "sign_index": 2,
+        "degree_in_sign": 1.601792,
+        "is_retrograde": false,
+        "speed": 0.226985
+      },
+      "Venus": {
+        "longitude": 77.554278,
+        "sign_index": 2,
+        "degree_in_sign": 17.554278,
+        "is_retrograde": false,
+        "speed": 1.203146
+      },
+      "Saturn": {
+        "longitude": 257.646506,
+        "sign_index": 8,
+        "degree_in_sign": 17.646506,
+        "is_retrograde": true,
+        "speed": -0.059491
+      },
+      "Rahu": {
+        "longitude": 7.962009,
+        "sign_index": 0,
+        "degree_in_sign": 7.962009,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 187.962009,
+        "sign_index": 6,
+        "degree_in_sign": 7.962009,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

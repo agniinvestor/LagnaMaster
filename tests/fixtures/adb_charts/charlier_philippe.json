@@ -1,0 +1,109 @@
+{
+  "adb_id": 64984,
+  "name": "Charlier, Philippe",
+  "given_name": "Philippe Charlier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443320.024306,
+    "year": 1977,
+    "month": 6,
+    "day": 25,
+    "calendar": "g",
+    "time": "14:35",
+    "time_type": "d",
+    "hour": 14.583333,
+    "time_unknown": false,
+    "place": "Meaux",
+    "country": "France",
+    "lat": 48.95,
+    "lon": 2.866667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlier,_Philippe",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 128.\\n",
+  "categories": [
+    "Vocation : Education : Researcher",
+    "Vocation : Science : Biology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 23.932708,
+    "lagna": 143.932708,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.542546,
+    "jd_ut": 2443320.024306,
+    "planets": {
+      "Sun": {
+        "longitude": 70.286037,
+        "sign_index": 2,
+        "degree_in_sign": 10.286037,
+        "is_retrograde": false,
+        "speed": 0.953679
+      },
+      "Moon": {
+        "longitude": 173.803841,
+        "sign_index": 5,
+        "degree_in_sign": 23.803841,
+        "is_retrograde": false,
+        "speed": 14.085943
+      },
+      "Mars": {
+        "longitude": 20.721584,
+        "sign_index": 0,
+        "degree_in_sign": 20.721584,
+        "is_retrograde": false,
+        "speed": 0.724771
+      },
+      "Mercury": {
+        "longitude": 64.78176,
+        "sign_index": 2,
+        "degree_in_sign": 4.78176,
+        "is_retrograde": false,
+        "speed": 2.161776
+      },
+      "Jupiter": {
+        "longitude": 54.980161,
+        "sign_index": 1,
+        "degree_in_sign": 24.980161,
+        "is_retrograde": false,
+        "speed": 0.227673
+      },
+      "Venus": {
+        "longitude": 24.894928,
+        "sign_index": 0,
+        "degree_in_sign": 24.894928,
+        "is_retrograde": false,
+        "speed": 1.015791
+      },
+      "Saturn": {
+        "longitude": 110.945464,
+        "sign_index": 3,
+        "degree_in_sign": 20.945464,
+        "is_retrograde": false,
+        "speed": 0.107466
+      },
+      "Rahu": {
+        "longitude": 177.045526,
+        "sign_index": 5,
+        "degree_in_sign": 27.045526,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 357.045526,
+        "sign_index": 11,
+        "degree_in_sign": 27.045526,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

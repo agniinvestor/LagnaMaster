@@ -1,0 +1,108 @@
+{
+  "adb_id": 53261,
+  "name": "Conti, Oliviero",
+  "given_name": "Oliviero Conti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427132.229167,
+    "year": 1933,
+    "month": 2,
+    "day": 28,
+    "calendar": "g",
+    "time": "18:30",
+    "time_type": "s",
+    "hour": 18.5,
+    "time_unknown": false,
+    "place": "Milano",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conti,_Oliviero",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/1482\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 28.873141,
+    "lagna": 118.873141,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.92357,
+    "jd_ut": 2427132.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 316.769186,
+        "sign_index": 10,
+        "degree_in_sign": 16.769186,
+        "is_retrograde": false,
+        "speed": 1.003851
+      },
+      "Moon": {
+        "longitude": 5.532248,
+        "sign_index": 0,
+        "degree_in_sign": 5.532248,
+        "is_retrograde": false,
+        "speed": 9.368042
+      },
+      "Mars": {
+        "longitude": 138.342322,
+        "sign_index": 4,
+        "degree_in_sign": 18.342322,
+        "is_retrograde": true,
+        "speed": -0.395762
+      },
+      "Mercury": {
+        "longitude": 333.093744,
+        "sign_index": 11,
+        "degree_in_sign": 3.093744,
+        "is_retrograde": false,
+        "speed": 1.566471
+      },
+      "Jupiter": {
+        "longitude": 146.527655,
+        "sign_index": 4,
+        "degree_in_sign": 26.527655,
+        "is_retrograde": true,
+        "speed": -0.126979
+      },
+      "Venus": {
+        "longitude": 303.650349,
+        "sign_index": 10,
+        "degree_in_sign": 3.650349,
+        "is_retrograde": false,
+        "speed": 1.247107
+      },
+      "Saturn": {
+        "longitude": 287.965011,
+        "sign_index": 9,
+        "degree_in_sign": 17.965011,
+        "is_retrograde": false,
+        "speed": 0.109715
+      },
+      "Rahu": {
+        "longitude": 314.870057,
+        "sign_index": 10,
+        "degree_in_sign": 14.870057,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 134.870057,
+        "sign_index": 4,
+        "degree_in_sign": 14.870057,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

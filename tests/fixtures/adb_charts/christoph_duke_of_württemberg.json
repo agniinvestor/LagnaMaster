@@ -1,0 +1,109 @@
+{
+  "adb_id": 65123,
+  "name": "Christoph, Duke of Württemberg",
+  "given_name": "Duke of Württemberg Christoph",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2274542.973704,
+    "year": 1515,
+    "month": 5,
+    "day": 12,
+    "calendar": "j",
+    "time": "unknown, 12:00 used",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Bad Urach",
+    "country": "Germany",
+    "lat": 48.433333,
+    "lon": 9.466667
+  },
+  "adb_positions": {
+    "sun_sign": "tau/gem",
+    "moon_sign": "tau",
+    "asc_sign": ""
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christoph,_Duke_of_Württemberg",
+  "source_notes": "Sy Scholfield quotes from \"Allgemeine literatur-zeitung\" [General literature-newspaper], No. 92 (April 1822), p. 734: \"Christoph wurde geboren Donnerstags (den 12ten May 1515) um 1 Uhr 55 Minuten, 38 Sek. Morgens, nach einem alten Mscpt.\"\\n\\nTranslation: Christophe was born on Thursday (the 12th of May 1515) at 1 o'clock 55 min, 38 sec. in the morning, according to an old MS.\"\\n",
+  "categories": [
+    "Family : Parenting : Kids more than 3",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 3.106245,
+    "lagna": 123.106245,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.09491,
+    "jd_ut": 2274542.973704,
+    "planets": {
+      "Sun": {
+        "longitude": 42.905511,
+        "sign_index": 1,
+        "degree_in_sign": 12.905511,
+        "is_retrograde": false,
+        "speed": 0.95919
+      },
+      "Moon": {
+        "longitude": 27.374581,
+        "sign_index": 0,
+        "degree_in_sign": 27.374581,
+        "is_retrograde": false,
+        "speed": 9.200838
+      },
+      "Mars": {
+        "longitude": 80.115732,
+        "sign_index": 2,
+        "degree_in_sign": 20.115732,
+        "is_retrograde": false,
+        "speed": 0.627628
+      },
+      "Mercury": {
+        "longitude": 54.66529,
+        "sign_index": 1,
+        "degree_in_sign": 24.66529,
+        "is_retrograde": true,
+        "speed": -0.258496
+      },
+      "Jupiter": {
+        "longitude": 64.33866,
+        "sign_index": 2,
+        "degree_in_sign": 4.33866,
+        "is_retrograde": false,
+        "speed": 0.220411
+      },
+      "Venus": {
+        "longitude": 357.896393,
+        "sign_index": 11,
+        "degree_in_sign": 27.896393,
+        "is_retrograde": false,
+        "speed": 0.837094
+      },
+      "Saturn": {
+        "longitude": 227.003275,
+        "sign_index": 7,
+        "degree_in_sign": 17.003275,
+        "is_retrograde": true,
+        "speed": -0.073797
+      },
+      "Rahu": {
+        "longitude": 120.921848,
+        "sign_index": 4,
+        "degree_in_sign": 0.921848,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 300.921848,
+        "sign_index": 10,
+        "degree_in_sign": 0.921848,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

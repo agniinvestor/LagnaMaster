@@ -1,0 +1,109 @@
+{
+  "adb_id": 85531,
+  "name": "Cox, John Rogers",
+  "given_name": "John Rogers Cox",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420581.743056,
+    "year": 1915,
+    "month": 3,
+    "day": 24,
+    "calendar": "g",
+    "time": "23:50",
+    "time_type": "s",
+    "hour": 23.833333,
+    "time_unknown": false,
+    "place": "Terre Haute",
+    "country": "Indiana",
+    "lat": 39.466667,
+    "lon": -87.416667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cox,_John_Rogers",
+  "source_notes": "Sy Scholfield provided birth certificate. His twin brother Ben was born at 11:30 PM.\\n",
+  "categories": [
+    "Personal : Birth : Twin, triplet, etc.",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 27.915221,
+    "lagna": 207.915221,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.673132,
+    "jd_ut": 2420581.743056,
+    "planets": {
+      "Sun": {
+        "longitude": 340.835788,
+        "sign_index": 11,
+        "degree_in_sign": 10.835788,
+        "is_retrograde": false,
+        "speed": 0.990577
+      },
+      "Moon": {
+        "longitude": 84.769577,
+        "sign_index": 2,
+        "degree_in_sign": 24.769577,
+        "is_retrograde": false,
+        "speed": 11.376168
+      },
+      "Mars": {
+        "longitude": 319.662267,
+        "sign_index": 10,
+        "degree_in_sign": 19.662267,
+        "is_retrograde": false,
+        "speed": 0.784235
+      },
+      "Mercury": {
+        "longitude": 313.608147,
+        "sign_index": 10,
+        "degree_in_sign": 13.608147,
+        "is_retrograde": false,
+        "speed": 1.183972
+      },
+      "Jupiter": {
+        "longitude": 319.080967,
+        "sign_index": 10,
+        "degree_in_sign": 19.080967,
+        "is_retrograde": false,
+        "speed": 0.23246
+      },
+      "Venus": {
+        "longitude": 298.711402,
+        "sign_index": 9,
+        "degree_in_sign": 28.711402,
+        "is_retrograde": false,
+        "speed": 1.159832
+      },
+      "Saturn": {
+        "longitude": 63.36932,
+        "sign_index": 2,
+        "degree_in_sign": 3.36932,
+        "is_retrograde": false,
+        "speed": 0.049157
+      },
+      "Rahu": {
+        "longitude": 301.993973,
+        "sign_index": 10,
+        "degree_in_sign": 1.993973,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 121.993973,
+        "sign_index": 4,
+        "degree_in_sign": 1.993973,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

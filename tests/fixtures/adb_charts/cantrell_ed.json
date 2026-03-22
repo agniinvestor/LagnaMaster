@@ -1,0 +1,111 @@
+{
+  "adb_id": 86393,
+  "name": "Cantrell, Ed",
+  "given_name": "Ed Cantrell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425235.840278,
+    "year": 1927,
+    "month": 12,
+    "day": 21,
+    "calendar": "g",
+    "time": "02:10",
+    "time_type": "s",
+    "hour": 2.166667,
+    "time_unknown": false,
+    "place": "Bloomington",
+    "country": "Indiana",
+    "lat": 39.166667,
+    "lon": -86.533333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantrell,_Ed",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana archives. Birth place of Perry is part of Bloomington.\\n",
+  "categories": [
+    "Lifestyle : Social Life : Outdoors",
+    "Passions : Criminal Perpetrator : Homicide single",
+    "Vocation : Law : Police",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 12.266461,
+    "lagna": 162.266461,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.851066,
+    "jd_ut": 2425235.840278,
+    "planets": {
+      "Sun": {
+        "longitude": 245.619369,
+        "sign_index": 8,
+        "degree_in_sign": 5.619369,
+        "is_retrograde": false,
+        "speed": 1.018709
+      },
+      "Moon": {
+        "longitude": 214.486126,
+        "sign_index": 7,
+        "degree_in_sign": 4.486126,
+        "is_retrograde": false,
+        "speed": 13.72531
+      },
+      "Mars": {
+        "longitude": 226.308199,
+        "sign_index": 7,
+        "degree_in_sign": 16.308199,
+        "is_retrograde": false,
+        "speed": 0.715361
+      },
+      "Mercury": {
+        "longitude": 235.154901,
+        "sign_index": 7,
+        "degree_in_sign": 25.154901,
+        "is_retrograde": false,
+        "speed": 1.536312
+      },
+      "Jupiter": {
+        "longitude": 332.432659,
+        "sign_index": 11,
+        "degree_in_sign": 2.432659,
+        "is_retrograde": false,
+        "speed": 0.102453
+      },
+      "Venus": {
+        "longitude": 201.220789,
+        "sign_index": 6,
+        "degree_in_sign": 21.220789,
+        "is_retrograde": false,
+        "speed": 1.150006
+      },
+      "Saturn": {
+        "longitude": 229.442411,
+        "sign_index": 7,
+        "degree_in_sign": 19.442411,
+        "is_retrograde": false,
+        "speed": 0.115549
+      },
+      "Rahu": {
+        "longitude": 55.363645,
+        "sign_index": 1,
+        "degree_in_sign": 25.363645,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 235.363645,
+        "sign_index": 7,
+        "degree_in_sign": 25.363645,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

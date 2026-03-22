@@ -1,0 +1,110 @@
+{
+  "adb_id": 81076,
+  "name": "Coste, Jacques Marie Cyprien Victor",
+  "given_name": "Jacques Marie Cyprien Victor Coste",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2381182.072269,
+    "year": 1807,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "l",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Castries",
+    "country": "France",
+    "lat": 43.666667,
+    "lon": 3.983333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coste,_Jacques_Marie_Cyprien_Victor",
+  "source_notes": "Grazia Bordoni's Science file quotes Lescaut.\\n",
+  "categories": [
+    "Family : Relationship : Married late/never",
+    "Family : Parenting : Kids none",
+    "Vocation : Science : Biology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 7.97906,
+    "lagna": 127.97906,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.167222,
+    "jd_ut": 2381182.072269,
+    "planets": {
+      "Sun": {
+        "longitude": 27.760868,
+        "sign_index": 0,
+        "degree_in_sign": 27.760868,
+        "is_retrograde": false,
+        "speed": 0.965463
+      },
+      "Moon": {
+        "longitude": 61.994359,
+        "sign_index": 2,
+        "degree_in_sign": 1.994359,
+        "is_retrograde": false,
+        "speed": 9.040292
+      },
+      "Mars": {
+        "longitude": 135.49732,
+        "sign_index": 4,
+        "degree_in_sign": 15.49732,
+        "is_retrograde": false,
+        "speed": 0.261984
+      },
+      "Mercury": {
+        "longitude": 1.725777,
+        "sign_index": 0,
+        "degree_in_sign": 1.725777,
+        "is_retrograde": false,
+        "speed": 1.060854
+      },
+      "Jupiter": {
+        "longitude": 290.289406,
+        "sign_index": 9,
+        "degree_in_sign": 20.289406,
+        "is_retrograde": false,
+        "speed": 0.065646
+      },
+      "Venus": {
+        "longitude": 59.558989,
+        "sign_index": 1,
+        "degree_in_sign": 29.558989,
+        "is_retrograde": false,
+        "speed": 1.196349
+      },
+      "Saturn": {
+        "longitude": 195.074929,
+        "sign_index": 6,
+        "degree_in_sign": 15.074929,
+        "is_retrograde": true,
+        "speed": -0.072985
+      },
+      "Rahu": {
+        "longitude": 229.867031,
+        "sign_index": 7,
+        "degree_in_sign": 19.867031,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 49.867031,
+        "sign_index": 1,
+        "degree_in_sign": 19.867031,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

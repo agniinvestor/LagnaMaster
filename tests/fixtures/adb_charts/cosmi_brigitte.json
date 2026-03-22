@@ -1,0 +1,108 @@
+{
+  "adb_id": 55716,
+  "name": "Cosmi, Brigitte",
+  "given_name": "Brigitte Cosmi",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435651.083333,
+    "year": 1956,
+    "month": 6,
+    "day": 26,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cosmi,_Brigitte",
+  "source_notes": "Collection Didier Geslain\\n",
+  "categories": [
+    "Vocation : Building Trades : Architect/ Planner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 10.358784,
+    "lagna": 160.358784,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.249292,
+    "jd_ut": 2435651.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 71.656768,
+        "sign_index": 2,
+        "degree_in_sign": 11.656768,
+        "is_retrograde": false,
+        "speed": 0.953256
+      },
+      "Moon": {
+        "longitude": 287.703671,
+        "sign_index": 9,
+        "degree_in_sign": 17.703671,
+        "is_retrograde": false,
+        "speed": 15.290448
+      },
+      "Mars": {
+        "longitude": 318.6455,
+        "sign_index": 10,
+        "degree_in_sign": 18.6455,
+        "is_retrograde": false,
+        "speed": 0.456168
+      },
+      "Mercury": {
+        "longitude": 50.251359,
+        "sign_index": 1,
+        "degree_in_sign": 20.251359,
+        "is_retrograde": false,
+        "speed": 1.323652
+      },
+      "Jupiter": {
+        "longitude": 124.788282,
+        "sign_index": 4,
+        "degree_in_sign": 4.788282,
+        "is_retrograde": false,
+        "speed": 0.166804
+      },
+      "Venus": {
+        "longitude": 64.866072,
+        "sign_index": 2,
+        "degree_in_sign": 4.866072,
+        "is_retrograde": true,
+        "speed": -0.591027
+      },
+      "Saturn": {
+        "longitude": 213.814202,
+        "sign_index": 7,
+        "degree_in_sign": 3.814202,
+        "is_retrograde": true,
+        "speed": -0.05052
+      },
+      "Rahu": {
+        "longitude": 223.438385,
+        "sign_index": 7,
+        "degree_in_sign": 13.438385,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 43.438385,
+        "sign_index": 1,
+        "degree_in_sign": 13.438385,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

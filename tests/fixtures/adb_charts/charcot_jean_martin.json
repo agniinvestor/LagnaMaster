@@ -1,0 +1,108 @@
+{
+  "adb_id": 33,
+  "name": "Charcot, Jean-Martin",
+  "given_name": "Jean-Martin Charcot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2387960.285185,
+    "year": 1825,
+    "month": 11,
+    "day": 29,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charcot,_Jean-Martin",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'psychologues' pdf file, p. 19.\\nSame data in Gauquelin Vol  2/146\\n",
+  "categories": [
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 6.541487,
+    "lagna": 66.541487,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.426244,
+    "jd_ut": 2387960.285185,
+    "planets": {
+      "Sun": {
+        "longitude": 225.903679,
+        "sign_index": 7,
+        "degree_in_sign": 15.903679,
+        "is_retrograde": false,
+        "speed": 1.013844
+      },
+      "Moon": {
+        "longitude": 94.378225,
+        "sign_index": 3,
+        "degree_in_sign": 4.378225,
+        "is_retrograde": false,
+        "speed": 15.019996
+      },
+      "Mars": {
+        "longitude": 162.97732,
+        "sign_index": 5,
+        "degree_in_sign": 12.97732,
+        "is_retrograde": false,
+        "speed": 0.571481
+      },
+      "Mercury": {
+        "longitude": 241.388677,
+        "sign_index": 8,
+        "degree_in_sign": 1.388677,
+        "is_retrograde": false,
+        "speed": 1.483214
+      },
+      "Jupiter": {
+        "longitude": 141.574786,
+        "sign_index": 4,
+        "degree_in_sign": 21.574786,
+        "is_retrograde": false,
+        "speed": 0.09214
+      },
+      "Venus": {
+        "longitude": 201.808742,
+        "sign_index": 6,
+        "degree_in_sign": 21.808742,
+        "is_retrograde": false,
+        "speed": 1.248107
+      },
+      "Saturn": {
+        "longitude": 57.924841,
+        "sign_index": 1,
+        "degree_in_sign": 27.924841,
+        "is_retrograde": true,
+        "speed": -0.079649
+      },
+      "Rahu": {
+        "longitude": 230.674701,
+        "sign_index": 7,
+        "degree_in_sign": 20.674701,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 50.674701,
+        "sign_index": 1,
+        "degree_in_sign": 20.674701,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

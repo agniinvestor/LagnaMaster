@@ -1,0 +1,110 @@
+{
+  "adb_id": 81055,
+  "name": "Cohen, Ernst",
+  "given_name": "Ernst Cohen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403763.715602,
+    "year": 1869,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.366667,
+    "lon": 4.9
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Ernst",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Passions : Criminal Victim : Concentration camp",
+    "Vocation : Science : Chemistry",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 26.79069,
+    "lagna": 266.79069,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.030237,
+    "jd_ut": 2403763.715602,
+    "planets": {
+      "Sun": {
+        "longitude": 324.675993,
+        "sign_index": 10,
+        "degree_in_sign": 24.675993,
+        "is_retrograde": false,
+        "speed": 0.999632
+      },
+      "Moon": {
+        "longitude": 257.863944,
+        "sign_index": 8,
+        "degree_in_sign": 17.863944,
+        "is_retrograde": false,
+        "speed": 9.293536
+      },
+      "Mars": {
+        "longitude": 115.628989,
+        "sign_index": 3,
+        "degree_in_sign": 25.628989,
+        "is_retrograde": true,
+        "speed": -0.247398
+      },
+      "Mercury": {
+        "longitude": 300.530453,
+        "sign_index": 10,
+        "degree_in_sign": 0.530453,
+        "is_retrograde": false,
+        "speed": 0.269142
+      },
+      "Jupiter": {
+        "longitude": 355.565563,
+        "sign_index": 11,
+        "degree_in_sign": 25.565563,
+        "is_retrograde": false,
+        "speed": 0.224135
+      },
+      "Venus": {
+        "longitude": 308.531363,
+        "sign_index": 10,
+        "degree_in_sign": 8.531363,
+        "is_retrograde": false,
+        "speed": 1.243232
+      },
+      "Saturn": {
+        "longitude": 234.827251,
+        "sign_index": 7,
+        "degree_in_sign": 24.827251,
+        "is_retrograde": false,
+        "speed": 0.032107
+      },
+      "Rahu": {
+        "longitude": 113.216827,
+        "sign_index": 3,
+        "degree_in_sign": 23.216827,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 293.216827,
+        "sign_index": 9,
+        "degree_in_sign": 23.216827,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 102952,
+  "name": "Cornic, Antoine",
+  "given_name": "Antoine Cornic",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444242.947917,
+    "year": 1980,
+    "month": 1,
+    "day": 4,
+    "calendar": "g",
+    "time": "11:45",
+    "time_type": "s",
+    "hour": 11.75,
+    "time_unknown": false,
+    "place": "Drancy",
+    "country": "France",
+    "lat": 48.933333,
+    "lon": 2.45
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornic,_Antoine",
+  "source_notes": "Didier Geslain email 22 Nov 2024\\n",
+  "categories": [
+    "Vocation : Sports : Sailing/ Boating"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 6.158365,
+    "lagna": 306.158365,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.57784,
+    "jd_ut": 2444242.947917,
+    "planets": {
+      "Sun": {
+        "longitude": 259.652438,
+        "sign_index": 8,
+        "degree_in_sign": 19.652438,
+        "is_retrograde": false,
+        "speed": 1.018911
+      },
+      "Moon": {
+        "longitude": 103.450382,
+        "sign_index": 3,
+        "degree_in_sign": 13.450382,
+        "is_retrograde": false,
+        "speed": 15.215613
+      },
+      "Mars": {
+        "longitude": 140.931362,
+        "sign_index": 4,
+        "degree_in_sign": 20.931362,
+        "is_retrograde": false,
+        "speed": 0.137654
+      },
+      "Mercury": {
+        "longitude": 249.680365,
+        "sign_index": 8,
+        "degree_in_sign": 9.680365,
+        "is_retrograde": false,
+        "speed": 1.547268
+      },
+      "Jupiter": {
+        "longitude": 136.543389,
+        "sign_index": 4,
+        "degree_in_sign": 16.543389,
+        "is_retrograde": true,
+        "speed": -0.028492
+      },
+      "Venus": {
+        "longitude": 292.068795,
+        "sign_index": 9,
+        "degree_in_sign": 22.068795,
+        "is_retrograde": false,
+        "speed": 1.230658
+      },
+      "Saturn": {
+        "longitude": 153.437969,
+        "sign_index": 5,
+        "degree_in_sign": 3.437969,
+        "is_retrograde": false,
+        "speed": 0.004538
+      },
+      "Rahu": {
+        "longitude": 128.137927,
+        "sign_index": 4,
+        "degree_in_sign": 8.137927,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 308.137927,
+        "sign_index": 10,
+        "degree_in_sign": 8.137927,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

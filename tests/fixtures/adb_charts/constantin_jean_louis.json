@@ -1,0 +1,112 @@
+{
+  "adb_id": 36921,
+  "name": "Constantin, Jean Louis",
+  "given_name": "Jean Louis Constantin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423459.75,
+    "year": 1923,
+    "month": 2,
+    "day": 9,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Constantin,_Jean_Louis",
+  "source_notes": "Didier Geslain archive, 'chanteurs' pdf file, p. 53.\\nPetitallot quotes B.C., Cadran No. 38, 2/1997\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Number of Divorces",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 6.242945,
+    "lagna": 246.242945,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.783162,
+    "jd_ut": 2423459.75,
+    "planets": {
+      "Sun": {
+        "longitude": 296.690731,
+        "sign_index": 9,
+        "degree_in_sign": 26.690731,
+        "is_retrograde": false,
+        "speed": 1.012325
+      },
+      "Moon": {
+        "longitude": 218.080947,
+        "sign_index": 7,
+        "degree_in_sign": 8.080947,
+        "is_retrograde": false,
+        "speed": 9.95011
+      },
+      "Mars": {
+        "longitude": 350.900627,
+        "sign_index": 11,
+        "degree_in_sign": 20.900627,
+        "is_retrograde": false,
+        "speed": 0.722279
+      },
+      "Mercury": {
+        "longitude": 276.464967,
+        "sign_index": 9,
+        "degree_in_sign": 6.464967,
+        "is_retrograde": true,
+        "speed": -0.116331
+      },
+      "Jupiter": {
+        "longitude": 205.231589,
+        "sign_index": 6,
+        "degree_in_sign": 25.231589,
+        "is_retrograde": false,
+        "speed": 0.074081
+      },
+      "Venus": {
+        "longitude": 249.946246,
+        "sign_index": 8,
+        "degree_in_sign": 9.946246,
+        "is_retrograde": false,
+        "speed": 1.04004
+      },
+      "Saturn": {
+        "longitude": 177.230284,
+        "sign_index": 5,
+        "degree_in_sign": 27.230284,
+        "is_retrograde": true,
+        "speed": -0.018453
+      },
+      "Rahu": {
+        "longitude": 149.482369,
+        "sign_index": 4,
+        "degree_in_sign": 29.482369,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 329.482369,
+        "sign_index": 10,
+        "degree_in_sign": 29.482369,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

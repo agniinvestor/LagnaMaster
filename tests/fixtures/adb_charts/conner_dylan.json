@@ -1,0 +1,108 @@
+{
+  "adb_id": 54478,
+  "name": "Conner, Dylan",
+  "given_name": "Dylan Conner",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2453890.143056,
+    "year": 2006,
+    "month": 6,
+    "day": 3,
+    "calendar": "g",
+    "time": "10:26",
+    "time_type": "d",
+    "hour": 10.433333,
+    "time_unknown": false,
+    "place": "Oklahoma City",
+    "country": "Oklahoma",
+    "lat": 35.466667,
+    "lon": -97.516667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conner,_Dylan",
+  "source_notes": "Mihaela Dicu quotes news reports\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 19.384069,
+    "lagna": 79.384069,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.946783,
+    "jd_ut": 2453890.143056,
+    "planets": {
+      "Sun": {
+        "longitude": 48.971672,
+        "sign_index": 1,
+        "degree_in_sign": 18.971672,
+        "is_retrograde": false,
+        "speed": 0.957788
+      },
+      "Moon": {
+        "longitude": 136.204726,
+        "sign_index": 4,
+        "degree_in_sign": 16.204726,
+        "is_retrograde": false,
+        "speed": 14.621503
+      },
+      "Mars": {
+        "longitude": 95.970932,
+        "sign_index": 3,
+        "degree_in_sign": 5.970932,
+        "is_retrograde": false,
+        "speed": 0.602843
+      },
+      "Mercury": {
+        "longitude": 66.359659,
+        "sign_index": 2,
+        "degree_in_sign": 6.359659,
+        "is_retrograde": false,
+        "speed": 1.796313
+      },
+      "Jupiter": {
+        "longitude": 196.588591,
+        "sign_index": 6,
+        "degree_in_sign": 16.588591,
+        "is_retrograde": true,
+        "speed": -0.091225
+      },
+      "Venus": {
+        "longitude": 12.02761,
+        "sign_index": 0,
+        "degree_in_sign": 12.02761,
+        "is_retrograde": false,
+        "speed": 1.170315
+      },
+      "Saturn": {
+        "longitude": 103.362042,
+        "sign_index": 3,
+        "degree_in_sign": 13.362042,
+        "is_retrograde": false,
+        "speed": 0.091977
+      },
+      "Rahu": {
+        "longitude": 336.913583,
+        "sign_index": 11,
+        "degree_in_sign": 6.913583,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 156.913583,
+        "sign_index": 5,
+        "degree_in_sign": 6.913583,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

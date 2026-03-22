@@ -1,0 +1,108 @@
+{
+  "adb_id": 53458,
+  "name": "Cizos-Natou, Pierre",
+  "given_name": "Pierre Cizos-Natou",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425169.458333,
+    "year": 1927,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Bordeaux",
+    "country": "France",
+    "lat": 44.833333,
+    "lon": -0.566667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cizos-Natou,_Pierre",
+  "source_notes": "Steinbrecher collection: Gauquelin ns 3/0345\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 12.089479,
+    "lagna": 72.089479,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.848528,
+    "jd_ut": 2425169.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 178.742561,
+        "sign_index": 5,
+        "degree_in_sign": 28.742561,
+        "is_retrograde": false,
+        "speed": 0.991507
+      },
+      "Moon": {
+        "longitude": 69.092764,
+        "sign_index": 2,
+        "degree_in_sign": 9.092764,
+        "is_retrograde": false,
+        "speed": 13.298215
+      },
+      "Mars": {
+        "longitude": 180.399916,
+        "sign_index": 6,
+        "degree_in_sign": 0.399916,
+        "is_retrograde": false,
+        "speed": 0.668407
+      },
+      "Mercury": {
+        "longitude": 203.124296,
+        "sign_index": 6,
+        "degree_in_sign": 23.124296,
+        "is_retrograde": false,
+        "speed": 1.09837
+      },
+      "Jupiter": {
+        "longitude": 332.74441,
+        "sign_index": 11,
+        "degree_in_sign": 2.74441,
+        "is_retrograde": true,
+        "speed": -0.106551
+      },
+      "Venus": {
+        "longitude": 139.451343,
+        "sign_index": 4,
+        "degree_in_sign": 19.451343,
+        "is_retrograde": false,
+        "speed": 0.468259
+      },
+      "Saturn": {
+        "longitude": 221.945635,
+        "sign_index": 7,
+        "degree_in_sign": 11.945635,
+        "is_retrograde": false,
+        "speed": 0.096638
+      },
+      "Rahu": {
+        "longitude": 58.881363,
+        "sign_index": 1,
+        "degree_in_sign": 28.881363,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 238.881363,
+        "sign_index": 7,
+        "degree_in_sign": 28.881363,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

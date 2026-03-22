@@ -1,0 +1,108 @@
+{
+  "adb_id": 76823,
+  "name": "Czochralski, Jan",
+  "given_name": "Jan Czochralski",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409837.628472,
+    "year": 1885,
+    "month": 10,
+    "day": 23,
+    "calendar": "g",
+    "time": "04:15",
+    "time_type": "l",
+    "hour": 4.25,
+    "time_unknown": false,
+    "place": "Kcynia",
+    "country": "Poland",
+    "lat": 53.0,
+    "lon": 17.5
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Czochralski,_Jan",
+  "source_notes": "PTA quotes birth certificate [ http://www.astrolog.org.pl/baza-horoskopow/Plik:Akt_urodz_Czochralski.jpg] obtained with the help of Paul P. Tomaszewski, editor of \"Bulletin of the Year Czochralski\"\\n",
+  "categories": [
+    "Vocation : Science : Chemistry"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 19.245647,
+    "lagna": 139.245647,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.262407,
+    "jd_ut": 2409837.628472,
+    "planets": {
+      "Sun": {
+        "longitude": 187.628442,
+        "sign_index": 6,
+        "degree_in_sign": 7.628442,
+        "is_retrograde": false,
+        "speed": 0.996437
+      },
+      "Moon": {
+        "longitude": 357.31879,
+        "sign_index": 11,
+        "degree_in_sign": 27.31879,
+        "is_retrograde": false,
+        "speed": 12.474456
+      },
+      "Mars": {
+        "longitude": 118.948259,
+        "sign_index": 3,
+        "degree_in_sign": 28.948259,
+        "is_retrograde": false,
+        "speed": 0.553126
+      },
+      "Mercury": {
+        "longitude": 192.040435,
+        "sign_index": 6,
+        "degree_in_sign": 12.040435,
+        "is_retrograde": false,
+        "speed": 1.620975
+      },
+      "Jupiter": {
+        "longitude": 153.383102,
+        "sign_index": 5,
+        "degree_in_sign": 3.383102,
+        "is_retrograde": false,
+        "speed": 0.196058
+      },
+      "Venus": {
+        "longitude": 230.041456,
+        "sign_index": 7,
+        "degree_in_sign": 20.041456,
+        "is_retrograde": false,
+        "speed": 1.166552
+      },
+      "Saturn": {
+        "longitude": 76.130933,
+        "sign_index": 2,
+        "degree_in_sign": 16.130933,
+        "is_retrograde": true,
+        "speed": -0.004841
+      },
+      "Rahu": {
+        "longitude": 151.347256,
+        "sign_index": 5,
+        "degree_in_sign": 1.347256,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 331.347256,
+        "sign_index": 11,
+        "degree_in_sign": 1.347256,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

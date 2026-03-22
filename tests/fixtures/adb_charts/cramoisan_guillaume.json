@@ -1,0 +1,110 @@
+{
+  "adb_id": 105561,
+  "name": "Cramoisan, Guillaume",
+  "given_name": "Guillaume Cramoisan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440457.697917,
+    "year": 1969,
+    "month": 8,
+    "day": 24,
+    "calendar": "g",
+    "time": "05:45",
+    "time_type": "s",
+    "hour": 5.75,
+    "time_unknown": false,
+    "place": "Vernon",
+    "country": "France",
+    "lat": 49.083333,
+    "lon": 1.483333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cramoisan,_Guillaume",
+  "source_notes": "Marc Brun quoted birth certificate (EC n°790).\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 10.600357,
+    "lagna": 100.600357,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.43309,
+    "jd_ut": 2440457.697917,
+    "planets": {
+      "Sun": {
+        "longitude": 127.410541,
+        "sign_index": 4,
+        "degree_in_sign": 7.410541,
+        "is_retrograde": false,
+        "speed": 0.964037
+      },
+      "Moon": {
+        "longitude": 261.785009,
+        "sign_index": 8,
+        "degree_in_sign": 21.785009,
+        "is_retrograde": false,
+        "speed": 16.755887
+      },
+      "Mars": {
+        "longitude": 231.032047,
+        "sign_index": 7,
+        "degree_in_sign": 21.032047,
+        "is_retrograde": false,
+        "speed": 0.479673
+      },
+      "Mercury": {
+        "longitude": 152.667617,
+        "sign_index": 5,
+        "degree_in_sign": 2.667617,
+        "is_retrograde": false,
+        "speed": 1.308675
+      },
+      "Jupiter": {
+        "longitude": 163.223694,
+        "sign_index": 5,
+        "degree_in_sign": 13.223694,
+        "is_retrograde": false,
+        "speed": 0.193422
+      },
+      "Venus": {
+        "longitude": 90.777115,
+        "sign_index": 3,
+        "degree_in_sign": 0.777115,
+        "is_retrograde": false,
+        "speed": 1.17292
+      },
+      "Saturn": {
+        "longitude": 15.506588,
+        "sign_index": 0,
+        "degree_in_sign": 15.506588,
+        "is_retrograde": true,
+        "speed": -0.005262
+      },
+      "Rahu": {
+        "longitude": 328.726035,
+        "sign_index": 10,
+        "degree_in_sign": 28.726035,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 148.726035,
+        "sign_index": 4,
+        "degree_in_sign": 28.726035,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

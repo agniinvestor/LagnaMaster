@@ -1,0 +1,108 @@
+{
+  "adb_id": 60284,
+  "name": "Cazin, Jean Charles",
+  "given_name": "Jean Charles Cazin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393616.245139,
+    "year": 1841,
+    "month": 5,
+    "day": 25,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Samer",
+    "country": "France",
+    "lat": 50.633333,
+    "lon": 1.75
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cazin,_Jean_Charles",
+  "source_notes": "Gauquelin vol 4\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.468433,
+    "lagna": 181.468433,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.642396,
+    "jd_ut": 2393616.245139,
+    "planets": {
+      "Sun": {
+        "longitude": 42.633625,
+        "sign_index": 1,
+        "degree_in_sign": 12.633625,
+        "is_retrograde": false,
+        "speed": 0.959546
+      },
+      "Moon": {
+        "longitude": 107.846635,
+        "sign_index": 3,
+        "degree_in_sign": 17.846635,
+        "is_retrograde": false,
+        "speed": 11.011901
+      },
+      "Mars": {
+        "longitude": 176.544051,
+        "sign_index": 5,
+        "degree_in_sign": 26.544051,
+        "is_retrograde": true,
+        "speed": -0.039914
+      },
+      "Mercury": {
+        "longitude": 41.834367,
+        "sign_index": 1,
+        "degree_in_sign": 11.834367,
+        "is_retrograde": false,
+        "speed": 2.195532
+      },
+      "Jupiter": {
+        "longitude": 234.752936,
+        "sign_index": 7,
+        "degree_in_sign": 24.752936,
+        "is_retrograde": true,
+        "speed": -0.121788
+      },
+      "Venus": {
+        "longitude": 26.412539,
+        "sign_index": 0,
+        "degree_in_sign": 26.412539,
+        "is_retrograde": true,
+        "speed": -0.419129
+      },
+      "Saturn": {
+        "longitude": 249.996251,
+        "sign_index": 8,
+        "degree_in_sign": 9.996251,
+        "is_retrograde": true,
+        "speed": -0.060816
+      },
+      "Rahu": {
+        "longitude": 290.953106,
+        "sign_index": 9,
+        "degree_in_sign": 20.953106,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 110.953106,
+        "sign_index": 3,
+        "degree_in_sign": 20.953106,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

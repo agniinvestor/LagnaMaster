@@ -1,0 +1,110 @@
+{
+  "adb_id": 101418,
+  "name": "Cámere, Milagros",
+  "given_name": "Milagros Cámere",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441583.288194,
+    "year": 1972,
+    "month": 9,
+    "day": 22,
+    "calendar": "g",
+    "time": "13:55",
+    "time_type": "s",
+    "hour": 13.916667,
+    "time_unknown": false,
+    "place": "Pueblo Libre",
+    "country": "Peru",
+    "lat": -12.083333,
+    "lon": -77.066667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cámere,_Milagros",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Volleyball"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 13.718297,
+    "lagna": 253.718297,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.476132,
+    "jd_ut": 2441583.288194,
+    "planets": {
+      "Sun": {
+        "longitude": 156.371608,
+        "sign_index": 5,
+        "degree_in_sign": 6.371608,
+        "is_retrograde": false,
+        "speed": 0.978416
+      },
+      "Moon": {
+        "longitude": 331.751706,
+        "sign_index": 11,
+        "degree_in_sign": 1.751706,
+        "is_retrograde": false,
+        "speed": 18.924975
+      },
+      "Mars": {
+        "longitude": 151.249589,
+        "sign_index": 5,
+        "degree_in_sign": 1.249589,
+        "is_retrograde": false,
+        "speed": 0.642496
+      },
+      "Mercury": {
+        "longitude": 158.818397,
+        "sign_index": 5,
+        "degree_in_sign": 8.818397,
+        "is_retrograde": false,
+        "speed": 1.785603
+      },
+      "Jupiter": {
+        "longitude": 246.252852,
+        "sign_index": 8,
+        "degree_in_sign": 6.252852,
+        "is_retrograde": false,
+        "speed": 0.085594
+      },
+      "Venus": {
+        "longitude": 112.388415,
+        "sign_index": 3,
+        "degree_in_sign": 22.388415,
+        "is_retrograde": false,
+        "speed": 1.102416
+      },
+      "Saturn": {
+        "longitude": 57.027456,
+        "sign_index": 1,
+        "degree_in_sign": 27.027456,
+        "is_retrograde": false,
+        "speed": 0.018127
+      },
+      "Rahu": {
+        "longitude": 269.07871,
+        "sign_index": 8,
+        "degree_in_sign": 29.07871,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 89.07871,
+        "sign_index": 2,
+        "degree_in_sign": 29.07871,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

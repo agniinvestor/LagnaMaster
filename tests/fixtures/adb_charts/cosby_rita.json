@@ -1,0 +1,109 @@
+{
+  "adb_id": 59144,
+  "name": "Cosby, Rita",
+  "given_name": "Rita Cosby",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2438718.332639,
+    "year": 1964,
+    "month": 11,
+    "day": 18,
+    "calendar": "g",
+    "time": "14:59",
+    "time_type": "s",
+    "hour": 14.983333,
+    "time_unknown": false,
+    "place": "Brooklyn (Kings County)",
+    "country": "New York",
+    "lat": 40.633333,
+    "lon": -73.933333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cosby,_Rita",
+  "source_notes": "by email from Shelley Ackerman, time from Cosby herself.\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Writers : Biographer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 6.574453,
+    "lagna": 336.574453,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.366578,
+    "jd_ut": 2438718.332639,
+    "planets": {
+      "Sun": {
+        "longitude": 213.161306,
+        "sign_index": 7,
+        "degree_in_sign": 3.161306,
+        "is_retrograde": false,
+        "speed": 1.008773
+      },
+      "Moon": {
+        "longitude": 22.239978,
+        "sign_index": 0,
+        "degree_in_sign": 22.239978,
+        "is_retrograde": false,
+        "speed": 17.271328
+      },
+      "Mars": {
+        "longitude": 133.117586,
+        "sign_index": 4,
+        "degree_in_sign": 13.117586,
+        "is_retrograde": false,
+        "speed": 0.492222
+      },
+      "Mercury": {
+        "longitude": 231.698142,
+        "sign_index": 7,
+        "degree_in_sign": 21.698142,
+        "is_retrograde": false,
+        "speed": 1.396857
+      },
+      "Jupiter": {
+        "longitude": 26.948372,
+        "sign_index": 0,
+        "degree_in_sign": 26.948372,
+        "is_retrograde": true,
+        "speed": -0.134539
+      },
+      "Venus": {
+        "longitude": 179.003691,
+        "sign_index": 5,
+        "degree_in_sign": 29.003691,
+        "is_retrograde": false,
+        "speed": 1.222831
+      },
+      "Saturn": {
+        "longitude": 305.232524,
+        "sign_index": 10,
+        "degree_in_sign": 5.232524,
+        "is_retrograde": false,
+        "speed": 0.02931
+      },
+      "Rahu": {
+        "longitude": 60.898557,
+        "sign_index": 2,
+        "degree_in_sign": 0.898557,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 240.898557,
+        "sign_index": 8,
+        "degree_in_sign": 0.898557,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 52740,
+  "name": "Chamson, André",
+  "given_name": "André Chamson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415176.535174,
+    "year": 1900,
+    "month": 6,
+    "day": 6,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Nîmes",
+    "country": "France",
+    "lat": 43.833333,
+    "lon": 4.35
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamson,_André",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 88.\\nEd Steinbrecher collection: Gauquelin 6/186\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Other Politics",
+    "Vocation : Science : Other Science",
+    "Vocation : Writers : Other Writers",
+    "Vocation : Misc. : Other Vocation Misc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 16.923267,
+    "lagna": 316.923267,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.466495,
+    "jd_ut": 2415176.535174,
+    "planets": {
+      "Sun": {
+        "longitude": 52.377486,
+        "sign_index": 1,
+        "degree_in_sign": 22.377486,
+        "is_retrograde": false,
+        "speed": 0.956575
+      },
+      "Moon": {
+        "longitude": 150.167203,
+        "sign_index": 5,
+        "degree_in_sign": 0.167203,
+        "is_retrograde": false,
+        "speed": 12.468192
+      },
+      "Mars": {
+        "longitude": 22.110066,
+        "sign_index": 0,
+        "degree_in_sign": 22.110066,
+        "is_retrograde": false,
+        "speed": 0.732486
+      },
+      "Mercury": {
+        "longitude": 60.586991,
+        "sign_index": 2,
+        "degree_in_sign": 0.586991,
+        "is_retrograde": false,
+        "speed": 2.117143
+      },
+      "Jupiter": {
+        "longitude": 222.366365,
+        "sign_index": 7,
+        "degree_in_sign": 12.366365,
+        "is_retrograde": true,
+        "speed": -0.123912
+      },
+      "Venus": {
+        "longitude": 89.388765,
+        "sign_index": 2,
+        "degree_in_sign": 29.388765,
+        "is_retrograde": false,
+        "speed": 0.375188
+      },
+      "Saturn": {
+        "longitude": 250.544203,
+        "sign_index": 8,
+        "degree_in_sign": 10.544203,
+        "is_retrograde": true,
+        "speed": -0.067906
+      },
+      "Rahu": {
+        "longitude": 228.427301,
+        "sign_index": 7,
+        "degree_in_sign": 18.427301,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 48.427301,
+        "sign_index": 1,
+        "degree_in_sign": 18.427301,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 27150,
+  "name": "Cities: Chesapeake  VA",
+  "given_name": "Cities: Chesapeake  VA",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438030.708333,
+    "year": 1963,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "00:00",
+    "time_type": "s",
+    "hour": 0.0,
+    "time_unknown": false,
+    "place": "Chesapeake (Chesapeake County)",
+    "country": "Virginia",
+    "lat": 36.816667,
+    "lon": -76.283333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cities:_Chesapeake__VA",
+  "source_notes": "Dates from legislation.\\n",
+  "categories": [
+    "Mundane : City Population : 200,000-300,000 population"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 20.601309,
+    "lagna": 140.601309,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.340284,
+    "jd_ut": 2438030.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 256.718691,
+        "sign_index": 8,
+        "degree_in_sign": 16.718691,
+        "is_retrograde": false,
+        "speed": 1.019393
+      },
+      "Moon": {
+        "longitude": 321.839161,
+        "sign_index": 10,
+        "degree_in_sign": 21.839161,
+        "is_retrograde": false,
+        "speed": 15.837574
+      },
+      "Mars": {
+        "longitude": 121.227359,
+        "sign_index": 4,
+        "degree_in_sign": 1.227359,
+        "is_retrograde": true,
+        "speed": -0.079491
+      },
+      "Mercury": {
+        "longitude": 275.62225,
+        "sign_index": 9,
+        "degree_in_sign": 5.62225,
+        "is_retrograde": false,
+        "speed": 1.264846
+      },
+      "Jupiter": {
+        "longitude": 315.707308,
+        "sign_index": 10,
+        "degree_in_sign": 15.707308,
+        "is_retrograde": false,
+        "speed": 0.177735
+      },
+      "Venus": {
+        "longitude": 212.08674,
+        "sign_index": 7,
+        "degree_in_sign": 2.08674,
+        "is_retrograde": false,
+        "speed": 0.789466
+      },
+      "Saturn": {
+        "longitude": 286.620536,
+        "sign_index": 9,
+        "degree_in_sign": 16.620536,
+        "is_retrograde": false,
+        "speed": 0.109102
+      },
+      "Rahu": {
+        "longitude": 97.337176,
+        "sign_index": 3,
+        "degree_in_sign": 7.337176,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 277.337176,
+        "sign_index": 9,
+        "degree_in_sign": 7.337176,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

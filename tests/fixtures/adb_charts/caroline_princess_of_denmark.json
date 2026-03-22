@@ -1,0 +1,110 @@
+{
+  "adb_id": 80088,
+  "name": "Caroline, Princess of Denmark",
+  "given_name": "Princess of Denmark Caroline",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2376240.652546,
+    "year": 1793,
+    "month": 10,
+    "day": 28,
+    "calendar": "g",
+    "time": "04:30",
+    "time_type": "l",
+    "hour": 4.5,
+    "time_unknown": false,
+    "place": "Copenhagen",
+    "country": "Denmark",
+    "lat": 55.666667,
+    "lon": 12.583333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caroline,_Princess_of_Denmark",
+  "source_notes": "Sy Scholfield forwarded news report from \"Wiener Zeitung,\" 16 November 1793, p. 5: \"Dänemark. Am 28. Oktober früh halb 5 Uhr, wurden Ihre Konigl. Hoheit, die Kronprinzessinn, glücklich von einer Tochter entbunden.\" \\n(Denmark. On 28 October, at half-before five (four-thirty) in the morning, Her Highness, the crown princess, was happily delivered of a daughter).\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids none",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 27.657464,
+    "lagna": 147.657464,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.978405,
+    "jd_ut": 2376240.652546,
+    "planets": {
+      "Sun": {
+        "longitude": 194.225894,
+        "sign_index": 6,
+        "degree_in_sign": 14.225894,
+        "is_retrograde": false,
+        "speed": 1.000671
+      },
+      "Moon": {
+        "longitude": 120.184047,
+        "sign_index": 4,
+        "degree_in_sign": 0.184047,
+        "is_retrograde": false,
+        "speed": 9.358939
+      },
+      "Mars": {
+        "longitude": 141.61169,
+        "sign_index": 4,
+        "degree_in_sign": 21.61169,
+        "is_retrograde": false,
+        "speed": 0.594038
+      },
+      "Mercury": {
+        "longitude": 203.13381,
+        "sign_index": 6,
+        "degree_in_sign": 23.13381,
+        "is_retrograde": false,
+        "speed": 1.559716
+      },
+      "Jupiter": {
+        "longitude": 223.646312,
+        "sign_index": 7,
+        "degree_in_sign": 13.646312,
+        "is_retrograde": false,
+        "speed": 0.209379
+      },
+      "Venus": {
+        "longitude": 160.638843,
+        "sign_index": 5,
+        "degree_in_sign": 10.638843,
+        "is_retrograde": false,
+        "speed": 1.219218
+      },
+      "Saturn": {
+        "longitude": 21.906559,
+        "sign_index": 0,
+        "degree_in_sign": 21.906559,
+        "is_retrograde": true,
+        "speed": -0.080089
+      },
+      "Rahu": {
+        "longitude": 131.723745,
+        "sign_index": 4,
+        "degree_in_sign": 11.723745,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 311.723745,
+        "sign_index": 10,
+        "degree_in_sign": 11.723745,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

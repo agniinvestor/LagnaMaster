@@ -1,0 +1,109 @@
+{
+  "adb_id": 8448,
+  "name": "Cirino, Pomicino",
+  "given_name": "Pomicino Cirino",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429509.770833,
+    "year": 1939,
+    "month": 9,
+    "day": 3,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "s",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Naples",
+    "country": "Italy",
+    "lat": 40.85,
+    "lon": 14.283333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cirino,_Pomicino",
+  "source_notes": "Bordoni quotes B.C. Vol 4\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 16.569081,
+    "lagna": 136.569081,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.014473,
+    "jd_ut": 2429509.770833,
+    "planets": {
+      "Sun": {
+        "longitude": 136.842895,
+        "sign_index": 4,
+        "degree_in_sign": 16.842895,
+        "is_retrograde": false,
+        "speed": 0.968302
+      },
+      "Moon": {
+        "longitude": 3.993874,
+        "sign_index": 0,
+        "degree_in_sign": 3.993874,
+        "is_retrograde": false,
+        "speed": 10.524097
+      },
+      "Mars": {
+        "longitude": 271.617954,
+        "sign_index": 9,
+        "degree_in_sign": 1.617954,
+        "is_retrograde": false,
+        "speed": 0.137537
+      },
+      "Mercury": {
+        "longitude": 120.418221,
+        "sign_index": 4,
+        "degree_in_sign": 0.418221,
+        "is_retrograde": false,
+        "speed": 1.54318
+      },
+      "Jupiter": {
+        "longitude": 343.799909,
+        "sign_index": 11,
+        "degree_in_sign": 13.799909,
+        "is_retrograde": true,
+        "speed": -0.105306
+      },
+      "Venus": {
+        "longitude": 136.131198,
+        "sign_index": 4,
+        "degree_in_sign": 16.131198,
+        "is_retrograde": false,
+        "speed": 1.24089
+      },
+      "Saturn": {
+        "longitude": 7.900847,
+        "sign_index": 0,
+        "degree_in_sign": 7.900847,
+        "is_retrograde": true,
+        "speed": -0.034352
+      },
+      "Rahu": {
+        "longitude": 188.879197,
+        "sign_index": 6,
+        "degree_in_sign": 8.879197,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 8.879197,
+        "sign_index": 0,
+        "degree_in_sign": 8.879197,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

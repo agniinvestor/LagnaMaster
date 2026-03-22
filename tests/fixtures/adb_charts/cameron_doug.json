@@ -1,0 +1,108 @@
+{
+  "adb_id": 57200,
+  "name": "Cameron, Doug",
+  "given_name": "Doug Cameron",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433674.0,
+    "year": 1951,
+    "month": 1,
+    "day": 27,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Bellshill",
+    "country": "Scotland",
+    "lat": 55.816667,
+    "lon": -4.016667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cameron,_Doug",
+  "source_notes": "Scholfield quotes an email from Scottish data collector Caroline Gerard: \"Born at 12 noon! In Calderbank House, Baillieston (a nursing home).\" \\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 23.644458,
+    "lagna": 23.644458,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.173695,
+    "jd_ut": 2433674.0,
+    "planets": {
+      "Sun": {
+        "longitude": 283.566524,
+        "sign_index": 9,
+        "degree_in_sign": 13.566524,
+        "is_retrograde": false,
+        "speed": 1.016019
+      },
+      "Moon": {
+        "longitude": 154.10736,
+        "sign_index": 5,
+        "degree_in_sign": 4.10736,
+        "is_retrograde": false,
+        "speed": 14.907732
+      },
+      "Mars": {
+        "longitude": 310.723891,
+        "sign_index": 10,
+        "degree_in_sign": 10.723891,
+        "is_retrograde": false,
+        "speed": 0.78641
+      },
+      "Mercury": {
+        "longitude": 259.328643,
+        "sign_index": 8,
+        "degree_in_sign": 19.328643,
+        "is_retrograde": false,
+        "speed": 1.152924
+      },
+      "Jupiter": {
+        "longitude": 316.968097,
+        "sign_index": 10,
+        "degree_in_sign": 16.968097,
+        "is_retrograde": false,
+        "speed": 0.221826
+      },
+      "Venus": {
+        "longitude": 301.399493,
+        "sign_index": 10,
+        "degree_in_sign": 1.399493,
+        "is_retrograde": false,
+        "speed": 1.249836
+      },
+      "Saturn": {
+        "longitude": 158.976231,
+        "sign_index": 5,
+        "degree_in_sign": 8.976231,
+        "is_retrograde": true,
+        "speed": -0.027453
+      },
+      "Rahu": {
+        "longitude": 328.208096,
+        "sign_index": 10,
+        "degree_in_sign": 28.208096,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 148.208096,
+        "sign_index": 4,
+        "degree_in_sign": 28.208096,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

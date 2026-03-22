@@ -1,0 +1,108 @@
+{
+  "adb_id": 63072,
+  "name": "Crespelle, Alain",
+  "given_name": "Alain Crespelle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426104.375,
+    "year": 1930,
+    "month": 5,
+    "day": 7,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "d",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Nice",
+    "country": "France",
+    "lat": 43.7,
+    "lon": 7.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crespelle,_Alain",
+  "source_notes": "Didier Geslain archive, 'Philosophes' pdf file, p. 31.\\n",
+  "categories": [
+    "Vocation : Healing Fields : Psychologist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 29.281553,
+    "lagna": 209.281553,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.884272,
+    "jd_ut": 2426104.375,
+    "planets": {
+      "Sun": {
+        "longitude": 23.672664,
+        "sign_index": 0,
+        "degree_in_sign": 23.672664,
+        "is_retrograde": false,
+        "speed": 0.967114
+      },
+      "Moon": {
+        "longitude": 142.283665,
+        "sign_index": 4,
+        "degree_in_sign": 22.283665,
+        "is_retrograde": false,
+        "speed": 10.359258
+      },
+      "Mars": {
+        "longitude": 347.244105,
+        "sign_index": 11,
+        "degree_in_sign": 17.244105,
+        "is_retrograde": false,
+        "speed": 0.766071
+      },
+      "Mercury": {
+        "longitude": 39.666089,
+        "sign_index": 1,
+        "degree_in_sign": 9.666089,
+        "is_retrograde": false,
+        "speed": 0.089779
+      },
+      "Jupiter": {
+        "longitude": 55.870679,
+        "sign_index": 1,
+        "degree_in_sign": 25.870679,
+        "is_retrograde": false,
+        "speed": 0.212071
+      },
+      "Venus": {
+        "longitude": 46.095183,
+        "sign_index": 1,
+        "degree_in_sign": 16.095183,
+        "is_retrograde": false,
+        "speed": 1.219166
+      },
+      "Saturn": {
+        "longitude": 258.787128,
+        "sign_index": 8,
+        "degree_in_sign": 18.787128,
+        "is_retrograde": true,
+        "speed": -0.026053
+      },
+      "Rahu": {
+        "longitude": 9.338184,
+        "sign_index": 0,
+        "degree_in_sign": 9.338184,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 189.338184,
+        "sign_index": 6,
+        "degree_in_sign": 9.338184,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

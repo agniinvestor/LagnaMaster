@@ -1,0 +1,108 @@
+{
+  "adb_id": 100869,
+  "name": "Carasso, Isaac",
+  "given_name": "Isaac Carasso",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405525.936296,
+    "year": 1874,
+    "month": 1,
+    "day": 2,
+    "calendar": "g",
+    "time": "unknown, 12:00 used",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Thessaloníki",
+    "country": "Greece",
+    "lat": 40.633333,
+    "lon": 22.933333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": ""
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carasso,_Isaac",
+  "source_notes": "Born 2 January 1874, according to geneanet website, 2 February for wikipedia.\\n",
+  "categories": [
+    "Vocation : Business : Entrepreneur"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 6.136994,
+    "lagna": 336.136994,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.097594,
+    "jd_ut": 2405525.936296,
+    "planets": {
+      "Sun": {
+        "longitude": 259.834771,
+        "sign_index": 8,
+        "degree_in_sign": 19.834771,
+        "is_retrograde": false,
+        "speed": 1.018918
+      },
+      "Moon": {
+        "longitude": 75.613701,
+        "sign_index": 2,
+        "degree_in_sign": 15.613701,
+        "is_retrograde": false,
+        "speed": 17.511362
+      },
+      "Mars": {
+        "longitude": 308.899041,
+        "sign_index": 10,
+        "degree_in_sign": 8.899041,
+        "is_retrograde": false,
+        "speed": 0.771966
+      },
+      "Mercury": {
+        "longitude": 241.687637,
+        "sign_index": 8,
+        "degree_in_sign": 1.687637,
+        "is_retrograde": false,
+        "speed": 1.422699
+      },
+      "Jupiter": {
+        "longitude": 159.391499,
+        "sign_index": 5,
+        "degree_in_sign": 9.391499,
+        "is_retrograde": false,
+        "speed": 0.043421
+      },
+      "Venus": {
+        "longitude": 247.309393,
+        "sign_index": 8,
+        "degree_in_sign": 7.309393,
+        "is_retrograde": false,
+        "speed": 1.256377
+      },
+      "Saturn": {
+        "longitude": 280.331519,
+        "sign_index": 9,
+        "degree_in_sign": 10.331519,
+        "is_retrograde": false,
+        "speed": 0.114218
+      },
+      "Rahu": {
+        "longitude": 19.832992,
+        "sign_index": 0,
+        "degree_in_sign": 19.832992,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 199.832992,
+        "sign_index": 6,
+        "degree_in_sign": 19.832992,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 67433,
+  "name": "Cambos, Jean Jules",
+  "given_name": "Jean Jules Cambos",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388841.285417,
+    "year": 1828,
+    "month": 4,
+    "day": 28,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Castres",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cambos,_Jean_Jules",
+  "source_notes": "Didier Geslain archive, 'sculpteurs' pdf file, p. 19.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 26.717003,
+    "lagna": 176.717003,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.459912,
+    "jd_ut": 2388841.285417,
+    "planets": {
+      "Sun": {
+        "longitude": 16.952174,
+        "sign_index": 0,
+        "degree_in_sign": 16.952174,
+        "is_retrograde": false,
+        "speed": 0.969974
+      },
+      "Moon": {
+        "longitude": 183.156092,
+        "sign_index": 6,
+        "degree_in_sign": 3.156092,
+        "is_retrograde": false,
+        "speed": 11.700431
+      },
+      "Mars": {
+        "longitude": 257.798775,
+        "sign_index": 8,
+        "degree_in_sign": 17.798775,
+        "is_retrograde": false,
+        "speed": 0.315789
+      },
+      "Mercury": {
+        "longitude": 353.644342,
+        "sign_index": 11,
+        "degree_in_sign": 23.644342,
+        "is_retrograde": false,
+        "speed": 1.517492
+      },
+      "Jupiter": {
+        "longitude": 198.227478,
+        "sign_index": 6,
+        "degree_in_sign": 18.227478,
+        "is_retrograde": true,
+        "speed": -0.127446
+      },
+      "Venus": {
+        "longitude": 61.097935,
+        "sign_index": 2,
+        "degree_in_sign": 1.097935,
+        "is_retrograde": false,
+        "speed": 1.075459
+      },
+      "Saturn": {
+        "longitude": 83.622269,
+        "sign_index": 2,
+        "degree_in_sign": 23.622269,
+        "is_retrograde": false,
+        "speed": 0.075311
+      },
+      "Rahu": {
+        "longitude": 183.988582,
+        "sign_index": 6,
+        "degree_in_sign": 3.988582,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 3.988582,
+        "sign_index": 0,
+        "degree_in_sign": 3.988582,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

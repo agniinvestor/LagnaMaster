@@ -1,0 +1,110 @@
+{
+  "adb_id": 19729,
+  "name": "Clery, Raoul",
+  "given_name": "Raoul Clery",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417936.70184,
+    "year": 1907,
+    "month": 12,
+    "day": 27,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Saint-Hilaire-Saint-Florent",
+    "country": "France",
+    "lat": 47.265556,
+    "lon": -0.108056
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clery,_Raoul",
+  "source_notes": "Gauquelin Vol 1/1232  (5:00 AM Paris time)\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Sports : Fencing",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 11.741367,
+    "lagna": 191.741367,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.572013,
+    "jd_ut": 2417936.70184,
+    "planets": {
+      "Sun": {
+        "longitude": 251.719224,
+        "sign_index": 8,
+        "degree_in_sign": 11.719224,
+        "is_retrograde": false,
+        "speed": 1.019045
+      },
+      "Moon": {
+        "longitude": 153.345226,
+        "sign_index": 5,
+        "degree_in_sign": 3.345226,
+        "is_retrograde": false,
+        "speed": 8.838216
+      },
+      "Mars": {
+        "longitude": 326.901762,
+        "sign_index": 10,
+        "degree_in_sign": 26.901762,
+        "is_retrograde": false,
+        "speed": 0.70103
+      },
+      "Mercury": {
+        "longitude": 241.302515,
+        "sign_index": 8,
+        "degree_in_sign": 1.302515,
+        "is_retrograde": false,
+        "speed": 1.537304
+      },
+      "Jupiter": {
+        "longitude": 109.937843,
+        "sign_index": 3,
+        "degree_in_sign": 19.937843,
+        "is_retrograde": true,
+        "speed": -0.082228
+      },
+      "Venus": {
+        "longitude": 277.223568,
+        "sign_index": 9,
+        "degree_in_sign": 7.223568,
+        "is_retrograde": false,
+        "speed": 1.244144
+      },
+      "Saturn": {
+        "longitude": 329.020792,
+        "sign_index": 10,
+        "degree_in_sign": 29.020792,
+        "is_retrograde": false,
+        "speed": 0.055206
+      },
+      "Rahu": {
+        "longitude": 82.160257,
+        "sign_index": 2,
+        "degree_in_sign": 22.160257,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 262.160257,
+        "sign_index": 8,
+        "degree_in_sign": 22.160257,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

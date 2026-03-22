@@ -1,0 +1,108 @@
+{
+  "adb_id": 81340,
+  "name": "Calle, Sophie",
+  "given_name": "Sophie Calle",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434660.09375,
+    "year": 1953,
+    "month": 10,
+    "day": 9,
+    "calendar": "g",
+    "time": "15:15",
+    "time_type": "s",
+    "hour": 15.25,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 16",
+    "country": "France",
+    "lat": 48.862778,
+    "lon": 2.276111
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calle,_Sophie",
+  "source_notes": "Lepoivre quotes civil registrar, acte n° 2331\\n",
+  "categories": [
+    "Vocation : Art : Photography"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 9.481005,
+    "lagna": 249.481005,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.2114,
+    "jd_ut": 2434660.09375,
+    "planets": {
+      "Sun": {
+        "longitude": 172.776261,
+        "sign_index": 5,
+        "degree_in_sign": 22.776261,
+        "is_retrograde": false,
+        "speed": 0.98858
+      },
+      "Moon": {
+        "longitude": 189.992531,
+        "sign_index": 6,
+        "degree_in_sign": 9.992531,
+        "is_retrograde": false,
+        "speed": 8.702133
+      },
+      "Mars": {
+        "longitude": 142.426883,
+        "sign_index": 4,
+        "degree_in_sign": 22.426883,
+        "is_retrograde": false,
+        "speed": 0.626895
+      },
+      "Mercury": {
+        "longitude": 193.727258,
+        "sign_index": 6,
+        "degree_in_sign": 13.727258,
+        "is_retrograde": false,
+        "speed": 1.377921
+      },
+      "Jupiter": {
+        "longitude": 63.211528,
+        "sign_index": 2,
+        "degree_in_sign": 3.211528,
+        "is_retrograde": false,
+        "speed": 0.018404
+      },
+      "Venus": {
+        "longitude": 145.63033,
+        "sign_index": 4,
+        "degree_in_sign": 25.63033,
+        "is_retrograde": false,
+        "speed": 1.228758
+      },
+      "Saturn": {
+        "longitude": 185.211705,
+        "sign_index": 6,
+        "degree_in_sign": 5.211705,
+        "is_retrograde": false,
+        "speed": 0.119295
+      },
+      "Rahu": {
+        "longitude": 275.952959,
+        "sign_index": 9,
+        "degree_in_sign": 5.952959,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 95.952959,
+        "sign_index": 3,
+        "degree_in_sign": 5.952959,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

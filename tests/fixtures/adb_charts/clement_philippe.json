@@ -1,0 +1,111 @@
+{
+  "adb_id": 93539,
+  "name": "Clement, Philippe",
+  "given_name": "Philippe Clement",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442129.368056,
+    "year": 1974,
+    "month": 3,
+    "day": 22,
+    "calendar": "g",
+    "time": "21:50",
+    "time_type": "s",
+    "hour": 21.833333,
+    "time_unknown": false,
+    "place": "Antwerp",
+    "country": "Belgium",
+    "lat": 51.216667,
+    "lon": 4.416667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clement,_Philippe",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_sp_sports.pdf]. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 16.049008,
+    "lagna": 166.049008,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.497015,
+    "jd_ut": 2442129.368056,
+    "planets": {
+      "Sun": {
+        "longitude": 338.348735,
+        "sign_index": 11,
+        "degree_in_sign": 8.348735,
+        "is_retrograde": false,
+        "speed": 0.992558
+      },
+      "Moon": {
+        "longitude": 325.760155,
+        "sign_index": 10,
+        "degree_in_sign": 25.760155,
+        "is_retrograde": false,
+        "speed": 15.359301
+      },
+      "Mars": {
+        "longitude": 49.769167,
+        "sign_index": 1,
+        "degree_in_sign": 19.769167,
+        "is_retrograde": false,
+        "speed": 0.577934
+      },
+      "Mercury": {
+        "longitude": 310.613749,
+        "sign_index": 10,
+        "degree_in_sign": 10.613749,
+        "is_retrograde": false,
+        "speed": 0.952273
+      },
+      "Jupiter": {
+        "longitude": 309.814478,
+        "sign_index": 10,
+        "degree_in_sign": 9.814478,
+        "is_retrograde": false,
+        "speed": 0.225294
+      },
+      "Venus": {
+        "longitude": 292.58015,
+        "sign_index": 9,
+        "degree_in_sign": 22.58015,
+        "is_retrograde": false,
+        "speed": 0.881791
+      },
+      "Saturn": {
+        "longitude": 64.771836,
+        "sign_index": 2,
+        "degree_in_sign": 4.771836,
+        "is_retrograde": false,
+        "speed": 0.042067
+      },
+      "Rahu": {
+        "longitude": 240.140825,
+        "sign_index": 8,
+        "degree_in_sign": 0.140825,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 60.140825,
+        "sign_index": 2,
+        "degree_in_sign": 0.140825,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

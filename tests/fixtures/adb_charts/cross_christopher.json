@@ -1,0 +1,112 @@
+{
+  "adb_id": 85511,
+  "name": "Cross, Christopher",
+  "given_name": "Christopher Cross",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433769.792361,
+    "year": 1951,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "01:01",
+    "time_type": "s",
+    "hour": 1.016667,
+    "time_unknown": false,
+    "place": "Fort Sam Houston",
+    "country": "Texas",
+    "lat": 29.45,
+    "lon": -98.45
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cross,_Christopher",
+  "source_notes": "Frank Clifford quotes birth certificate in his ''Book of Music Horoscopes'' (Flare UK, 2018).\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Awards : Grammy",
+    "Notable : Awards : Oscar"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 17.042764,
+    "lagna": 257.042764,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.177357,
+    "jd_ut": 2433769.792361,
+    "planets": {
+      "Sun": {
+        "longitude": 18.867949,
+        "sign_index": 0,
+        "degree_in_sign": 18.867949,
+        "is_retrograde": false,
+        "speed": 0.969989
+      },
+      "Moon": {
+        "longitude": 347.43769,
+        "sign_index": 11,
+        "degree_in_sign": 17.43769,
+        "is_retrograde": false,
+        "speed": 16.26502
+      },
+      "Mars": {
+        "longitude": 23.650294,
+        "sign_index": 0,
+        "degree_in_sign": 23.650294,
+        "is_retrograde": false,
+        "speed": 0.725511
+      },
+      "Mercury": {
+        "longitude": 6.209964,
+        "sign_index": 0,
+        "degree_in_sign": 6.209964,
+        "is_retrograde": true,
+        "speed": -0.391405
+      },
+      "Jupiter": {
+        "longitude": 339.379604,
+        "sign_index": 11,
+        "degree_in_sign": 9.379604,
+        "is_retrograde": false,
+        "speed": 0.213179
+      },
+      "Venus": {
+        "longitude": 57.870687,
+        "sign_index": 1,
+        "degree_in_sign": 27.870687,
+        "is_retrograde": false,
+        "speed": 1.158388
+      },
+      "Saturn": {
+        "longitude": 152.919596,
+        "sign_index": 5,
+        "degree_in_sign": 2.919596,
+        "is_retrograde": true,
+        "speed": -0.042327
+      },
+      "Rahu": {
+        "longitude": 323.131862,
+        "sign_index": 10,
+        "degree_in_sign": 23.131862,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 143.131862,
+        "sign_index": 4,
+        "degree_in_sign": 23.131862,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

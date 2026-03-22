@@ -1,0 +1,112 @@
+{
+  "adb_id": 90253,
+  "name": "Cartier, Pierre",
+  "given_name": "Pierre Cartier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407053.535166,
+    "year": 1878,
+    "month": 3,
+    "day": 10,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 9",
+    "country": "France",
+    "lat": 48.8725,
+    "lon": 2.340278
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cartier,_Pierre",
+  "source_notes": "Sy Scholfield provided birth certificate from Paris archives (9th arr., no. 509), marriage and death data in margin.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Business : Middle Management"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 23.138355,
+    "lagna": 203.138355,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.155985,
+    "jd_ut": 2407053.535166,
+    "planets": {
+      "Sun": {
+        "longitude": 327.191253,
+        "sign_index": 10,
+        "degree_in_sign": 27.191253,
+        "is_retrograde": false,
+        "speed": 0.998319
+      },
+      "Moon": {
+        "longitude": 31.46217,
+        "sign_index": 1,
+        "degree_in_sign": 1.46217,
+        "is_retrograde": false,
+        "speed": 14.641977
+      },
+      "Mars": {
+        "longitude": 31.740396,
+        "sign_index": 1,
+        "degree_in_sign": 1.740396,
+        "is_retrograde": false,
+        "speed": 0.630857
+      },
+      "Mercury": {
+        "longitude": 317.185843,
+        "sign_index": 10,
+        "degree_in_sign": 17.185843,
+        "is_retrograde": false,
+        "speed": 1.784179
+      },
+      "Jupiter": {
+        "longitude": 276.891571,
+        "sign_index": 9,
+        "degree_in_sign": 6.891571,
+        "is_retrograde": false,
+        "speed": 0.1881
+      },
+      "Venus": {
+        "longitude": 302.794251,
+        "sign_index": 10,
+        "degree_in_sign": 2.794251,
+        "is_retrograde": true,
+        "speed": -0.158842
+      },
+      "Saturn": {
+        "longitude": 330.422528,
+        "sign_index": 11,
+        "degree_in_sign": 0.422528,
+        "is_retrograde": false,
+        "speed": 0.123525
+      },
+      "Rahu": {
+        "longitude": 298.882275,
+        "sign_index": 9,
+        "degree_in_sign": 28.882275,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 118.882275,
+        "sign_index": 3,
+        "degree_in_sign": 28.882275,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

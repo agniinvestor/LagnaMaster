@@ -1,0 +1,108 @@
+{
+  "adb_id": 52828,
+  "name": "Chiappucci, Claudio",
+  "given_name": "Claudio Chiappucci",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438089.020833,
+    "year": 1963,
+    "month": 2,
+    "day": 28,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "s",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Uboldo",
+    "country": "Italy",
+    "lat": 45.616667,
+    "lon": 9.0
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiappucci,_Claudio",
+  "source_notes": "Ed Steinbrecher collection: Bordoni/6 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.748639,
+    "lagna": 60.748639,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.342514,
+    "jd_ut": 2438089.020833,
+    "planets": {
+      "Sun": {
+        "longitude": 315.862765,
+        "sign_index": 10,
+        "degree_in_sign": 15.862765,
+        "is_retrograde": false,
+        "speed": 1.004406
+      },
+      "Moon": {
+        "longitude": 17.206629,
+        "sign_index": 0,
+        "degree_in_sign": 17.206629,
+        "is_retrograde": false,
+        "speed": 11.87151
+      },
+      "Mars": {
+        "longitude": 103.674092,
+        "sign_index": 3,
+        "degree_in_sign": 13.674092,
+        "is_retrograde": true,
+        "speed": -0.209412
+      },
+      "Mercury": {
+        "longitude": 293.419998,
+        "sign_index": 9,
+        "degree_in_sign": 23.419998,
+        "is_retrograde": false,
+        "speed": 1.436507
+      },
+      "Jupiter": {
+        "longitude": 328.308674,
+        "sign_index": 10,
+        "degree_in_sign": 28.308674,
+        "is_retrograde": false,
+        "speed": 0.239714
+      },
+      "Venus": {
+        "longitude": 272.087235,
+        "sign_index": 9,
+        "degree_in_sign": 2.087235,
+        "is_retrograde": false,
+        "speed": 1.149774
+      },
+      "Saturn": {
+        "longitude": 293.438814,
+        "sign_index": 9,
+        "degree_in_sign": 23.438814,
+        "is_retrograde": false,
+        "speed": 0.113888
+      },
+      "Rahu": {
+        "longitude": 94.247078,
+        "sign_index": 3,
+        "degree_in_sign": 4.247078,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 274.247078,
+        "sign_index": 9,
+        "degree_in_sign": 4.247078,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

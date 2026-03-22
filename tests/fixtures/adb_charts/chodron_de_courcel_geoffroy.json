@@ -1,0 +1,110 @@
+{
+  "adb_id": 65385,
+  "name": "Chodron de Courcel, Geoffroy",
+  "given_name": "Geoffroy Chodron de Courcel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419657.104167,
+    "year": 1912,
+    "month": 9,
+    "day": 11,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "s",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Tours",
+    "country": "France",
+    "lat": 47.383333,
+    "lon": 0.683333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chodron_de_Courcel,_Geoffroy",
+  "source_notes": "Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 73.\\n",
+  "categories": [
+    "Vocation : Military : Combat",
+    "Vocation : Military : Honors",
+    "Vocation : Politics : Diplomat"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.991474,
+    "lagna": 224.991474,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.637783,
+    "jd_ut": 2419657.104167,
+    "planets": {
+      "Sun": {
+        "longitude": 145.824371,
+        "sign_index": 4,
+        "degree_in_sign": 25.824371,
+        "is_retrograde": false,
+        "speed": 0.973545
+      },
+      "Moon": {
+        "longitude": 151.919394,
+        "sign_index": 5,
+        "degree_in_sign": 1.919394,
+        "is_retrograde": false,
+        "speed": 11.597349
+      },
+      "Mars": {
+        "longitude": 163.125895,
+        "sign_index": 5,
+        "degree_in_sign": 13.125895,
+        "is_retrograde": false,
+        "speed": 0.651033
+      },
+      "Mercury": {
+        "longitude": 128.525924,
+        "sign_index": 4,
+        "degree_in_sign": 8.525924,
+        "is_retrograde": false,
+        "speed": 1.34732
+      },
+      "Jupiter": {
+        "longitude": 225.259827,
+        "sign_index": 7,
+        "degree_in_sign": 15.259827,
+        "is_retrograde": false,
+        "speed": 0.112759
+      },
+      "Venus": {
+        "longitude": 164.236849,
+        "sign_index": 5,
+        "degree_in_sign": 14.236849,
+        "is_retrograde": false,
+        "speed": 1.234585
+      },
+      "Saturn": {
+        "longitude": 41.45433,
+        "sign_index": 1,
+        "degree_in_sign": 11.45433,
+        "is_retrograde": false,
+        "speed": 0.008629
+      },
+      "Rahu": {
+        "longitude": 350.992526,
+        "sign_index": 11,
+        "degree_in_sign": 20.992526,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 170.992526,
+        "sign_index": 5,
+        "degree_in_sign": 20.992526,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

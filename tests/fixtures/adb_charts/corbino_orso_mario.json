@@ -1,0 +1,109 @@
+{
+  "adb_id": 60437,
+  "name": "Corbino, Orso Mario",
+  "given_name": "Orso Mario Corbino",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406374.504537,
+    "year": 1876,
+    "month": 4,
+    "day": 30,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Augusta",
+    "country": "Italy",
+    "lat": 37.216667,
+    "lon": 15.216667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corbino,_Orso_Mario",
+  "source_notes": "Gauquelin vol 2\\n",
+  "categories": [
+    "Vocation : Science : Physics",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 23.967016,
+    "lagna": 263.967016,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.13003,
+    "jd_ut": 2406374.504537,
+    "planets": {
+      "Sun": {
+        "longitude": 17.841978,
+        "sign_index": 0,
+        "degree_in_sign": 17.841978,
+        "is_retrograde": false,
+        "speed": 0.970088
+      },
+      "Moon": {
+        "longitude": 95.088179,
+        "sign_index": 3,
+        "degree_in_sign": 5.088179,
+        "is_retrograde": false,
+        "speed": 16.606852
+      },
+      "Mars": {
+        "longitude": 50.373403,
+        "sign_index": 1,
+        "degree_in_sign": 20.373403,
+        "is_retrograde": false,
+        "speed": 0.667437
+      },
+      "Mercury": {
+        "longitude": 26.534856,
+        "sign_index": 0,
+        "degree_in_sign": 26.534856,
+        "is_retrograde": false,
+        "speed": 2.09975
+      },
+      "Jupiter": {
+        "longitude": 217.180151,
+        "sign_index": 7,
+        "degree_in_sign": 7.180151,
+        "is_retrograde": true,
+        "speed": -0.113211
+      },
+      "Venus": {
+        "longitude": 63.188867,
+        "sign_index": 2,
+        "degree_in_sign": 3.188867,
+        "is_retrograde": false,
+        "speed": 1.003077
+      },
+      "Saturn": {
+        "longitude": 314.04908,
+        "sign_index": 10,
+        "degree_in_sign": 14.04908,
+        "is_retrograde": false,
+        "speed": 0.074265
+      },
+      "Rahu": {
+        "longitude": 334.865553,
+        "sign_index": 11,
+        "degree_in_sign": 4.865553,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 154.865553,
+        "sign_index": 5,
+        "degree_in_sign": 4.865553,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

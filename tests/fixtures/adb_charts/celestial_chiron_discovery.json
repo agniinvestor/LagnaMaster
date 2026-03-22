@@ -1,0 +1,109 @@
+{
+  "adb_id": 41781,
+  "name": "Celestial: Chiron Discovery",
+  "given_name": "Celestial: Chiron Discovery",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2443449.25,
+    "year": 1977,
+    "month": 11,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Pasadena",
+    "country": "California",
+    "lat": 34.15,
+    "lon": -118.15
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celestial:_Chiron_Discovery",
+  "source_notes": "Various astrologers give these data for the first sighting by Charles Kowall of the asteroid Chiron.\\n",
+  "categories": [
+    "Mundane : Medical/Science : Space",
+    "Mundane : Misc. Mundane : Discoveries"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 8.960654,
+    "lagna": 218.960654,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.547488,
+    "jd_ut": 2443449.25,
+    "planets": {
+      "Sun": {
+        "longitude": 195.656095,
+        "sign_index": 6,
+        "degree_in_sign": 15.656095,
+        "is_retrograde": false,
+        "speed": 1.00068
+      },
+      "Moon": {
+        "longitude": 78.266978,
+        "sign_index": 2,
+        "degree_in_sign": 18.266978,
+        "is_retrograde": false,
+        "speed": 12.084892
+      },
+      "Mars": {
+        "longitude": 98.899719,
+        "sign_index": 3,
+        "degree_in_sign": 8.899719,
+        "is_retrograde": false,
+        "speed": 0.393133
+      },
+      "Mercury": {
+        "longitude": 204.224438,
+        "sign_index": 6,
+        "degree_in_sign": 24.224438,
+        "is_retrograde": false,
+        "speed": 1.560453
+      },
+      "Jupiter": {
+        "longitude": 72.47819,
+        "sign_index": 2,
+        "degree_in_sign": 12.47819,
+        "is_retrograde": true,
+        "speed": -0.027798
+      },
+      "Venus": {
+        "longitude": 175.942841,
+        "sign_index": 5,
+        "degree_in_sign": 25.942841,
+        "is_retrograde": false,
+        "speed": 1.247376
+      },
+      "Saturn": {
+        "longitude": 125.577524,
+        "sign_index": 4,
+        "degree_in_sign": 5.577524,
+        "is_retrograde": false,
+        "speed": 0.068868
+      },
+      "Rahu": {
+        "longitude": 170.197593,
+        "sign_index": 5,
+        "degree_in_sign": 20.197593,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 350.197593,
+        "sign_index": 11,
+        "degree_in_sign": 20.197593,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

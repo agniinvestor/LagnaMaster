@@ -1,0 +1,110 @@
+{
+  "adb_id": 96503,
+  "name": "Carrillo, José Fernando",
+  "given_name": "José Fernando Carrillo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432983.902778,
+    "year": 1949,
+    "month": 3,
+    "day": 8,
+    "calendar": "g",
+    "time": "04:40",
+    "time_type": "s",
+    "hour": 4.666667,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrillo,_José_Fernando",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Education : Teacher",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 8.033924,
+    "lagna": 278.033924,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.147308,
+    "jd_ut": 2432983.902778,
+    "planets": {
+      "Sun": {
+        "longitude": 324.356479,
+        "sign_index": 10,
+        "degree_in_sign": 24.356479,
+        "is_retrograde": false,
+        "speed": 0.999692
+      },
+      "Moon": {
+        "longitude": 58.381204,
+        "sign_index": 1,
+        "degree_in_sign": 28.381204,
+        "is_retrograde": false,
+        "speed": 17.872083
+      },
+      "Mars": {
+        "longitude": 326.290622,
+        "sign_index": 10,
+        "degree_in_sign": 26.290622,
+        "is_retrograde": false,
+        "speed": 0.784745
+      },
+      "Mercury": {
+        "longitude": 298.640573,
+        "sign_index": 9,
+        "degree_in_sign": 28.640573,
+        "is_retrograde": false,
+        "speed": 1.28928
+      },
+      "Jupiter": {
+        "longitude": 271.565986,
+        "sign_index": 9,
+        "degree_in_sign": 1.565986,
+        "is_retrograde": false,
+        "speed": 0.182518
+      },
+      "Venus": {
+        "longitude": 314.338104,
+        "sign_index": 10,
+        "degree_in_sign": 14.338104,
+        "is_retrograde": false,
+        "speed": 1.246279
+      },
+      "Saturn": {
+        "longitude": 128.489529,
+        "sign_index": 4,
+        "degree_in_sign": 8.489529,
+        "is_retrograde": true,
+        "speed": -0.075954
+      },
+      "Rahu": {
+        "longitude": 4.77777,
+        "sign_index": 0,
+        "degree_in_sign": 4.77777,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 184.77777,
+        "sign_index": 6,
+        "degree_in_sign": 4.77777,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

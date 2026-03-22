@@ -1,0 +1,110 @@
+{
+  "adb_id": 71548,
+  "name": "Cannuli, Mariolina",
+  "given_name": "Mariolina Cannuli",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429917.854167,
+    "year": 1940,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "d",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Siena",
+    "country": "Italy",
+    "lat": 43.316667,
+    "lon": 11.35
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cannuli,_Mariolina",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from birth certificate.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertainment : Voice-Over"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 9.6768,
+    "lagna": 189.6768,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.030076,
+    "jd_ut": 2429917.854167,
+    "planets": {
+      "Sun": {
+        "longitude": 178.80545,
+        "sign_index": 5,
+        "degree_in_sign": 28.80545,
+        "is_retrograde": false,
+        "speed": 0.991382
+      },
+      "Moon": {
+        "longitude": 347.576339,
+        "sign_index": 11,
+        "degree_in_sign": 17.576339,
+        "is_retrograde": false,
+        "speed": 14.977947
+      },
+      "Mars": {
+        "longitude": 163.263487,
+        "sign_index": 5,
+        "degree_in_sign": 13.263487,
+        "is_retrograde": false,
+        "speed": 0.646341
+      },
+      "Mercury": {
+        "longitude": 202.596174,
+        "sign_index": 6,
+        "degree_in_sign": 22.596174,
+        "is_retrograde": false,
+        "speed": 1.185404
+      },
+      "Jupiter": {
+        "longitude": 20.026359,
+        "sign_index": 0,
+        "degree_in_sign": 20.026359,
+        "is_retrograde": true,
+        "speed": -0.11841
+      },
+      "Venus": {
+        "longitude": 136.609475,
+        "sign_index": 4,
+        "degree_in_sign": 16.609475,
+        "is_retrograde": false,
+        "speed": 1.150354
+      },
+      "Saturn": {
+        "longitude": 19.792363,
+        "sign_index": 0,
+        "degree_in_sign": 19.792363,
+        "is_retrograde": true,
+        "speed": -0.072248
+      },
+      "Rahu": {
+        "longitude": 167.254017,
+        "sign_index": 5,
+        "degree_in_sign": 17.254017,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 347.254017,
+        "sign_index": 11,
+        "degree_in_sign": 17.254017,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

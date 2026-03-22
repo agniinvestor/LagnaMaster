@@ -1,0 +1,110 @@
+{
+  "adb_id": 93540,
+  "name": "Crasson, Bertrand",
+  "given_name": "Bertrand Crasson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441230.302083,
+    "year": 1971,
+    "month": 10,
+    "day": 5,
+    "calendar": "g",
+    "time": "20:15",
+    "time_type": "s",
+    "hour": 20.25,
+    "time_unknown": false,
+    "place": "Ixelles",
+    "country": "Belgium",
+    "lat": 50.833333,
+    "lon": 4.366667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crasson,_Bertrand",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_sp_sports.pdf]. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 20.88462,
+    "lagna": 20.88462,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.462634,
+    "jd_ut": 2441230.302083,
+    "planets": {
+      "Sun": {
+        "longitude": 168.422086,
+        "sign_index": 5,
+        "degree_in_sign": 18.422086,
+        "is_retrograde": false,
+        "speed": 0.985275
+      },
+      "Moon": {
+        "longitude": 7.223936,
+        "sign_index": 0,
+        "degree_in_sign": 7.223936,
+        "is_retrograde": false,
+        "speed": 15.031661
+      },
+      "Mars": {
+        "longitude": 292.78572,
+        "sign_index": 9,
+        "degree_in_sign": 22.78572,
+        "is_retrograde": false,
+        "speed": 0.314064
+      },
+      "Mercury": {
+        "longitude": 166.264662,
+        "sign_index": 5,
+        "degree_in_sign": 16.264662,
+        "is_retrograde": false,
+        "speed": 1.76985
+      },
+      "Jupiter": {
+        "longitude": 220.280022,
+        "sign_index": 7,
+        "degree_in_sign": 10.280022,
+        "is_retrograde": false,
+        "speed": 0.175991
+      },
+      "Venus": {
+        "longitude": 178.880504,
+        "sign_index": 5,
+        "degree_in_sign": 28.880504,
+        "is_retrograde": false,
+        "speed": 1.245369
+      },
+      "Saturn": {
+        "longitude": 42.810612,
+        "sign_index": 1,
+        "degree_in_sign": 12.810612,
+        "is_retrograde": true,
+        "speed": -0.02988
+      },
+      "Rahu": {
+        "longitude": 287.784164,
+        "sign_index": 9,
+        "degree_in_sign": 17.784164,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 107.784164,
+        "sign_index": 3,
+        "degree_in_sign": 17.784164,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

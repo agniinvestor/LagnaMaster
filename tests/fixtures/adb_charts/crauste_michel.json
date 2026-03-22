@@ -1,0 +1,112 @@
+{
+  "adb_id": 38706,
+  "name": "Crauste, Michel",
+  "given_name": "Michel Crauste",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427624.5,
+    "year": 1934,
+    "month": 7,
+    "day": 6,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "d",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "St.Laurent",
+    "country": "France",
+    "lat": 48.15,
+    "lon": 6.45
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crauste,_Michel",
+  "source_notes": "Didier Geslain quotes B.C. record No.5, 1/2000\\n",
+  "categories": [
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Sports : Rugby",
+    "Vocation : Sports Business : Coach/ Manager/ Owner",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 22.963165,
+    "lagna": 352.963165,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.942392,
+    "jd_ut": 2427624.5,
+    "planets": {
+      "Sun": {
+        "longitude": 80.289575,
+        "sign_index": 2,
+        "degree_in_sign": 20.289575,
+        "is_retrograde": false,
+        "speed": 0.95346
+      },
+      "Moon": {
+        "longitude": 16.583554,
+        "sign_index": 0,
+        "degree_in_sign": 16.583554,
+        "is_retrograde": false,
+        "speed": 14.131925
+      },
+      "Mars": {
+        "longitude": 60.324541,
+        "sign_index": 2,
+        "degree_in_sign": 0.324541,
+        "is_retrograde": false,
+        "speed": 0.684016
+      },
+      "Mercury": {
+        "longitude": 88.878638,
+        "sign_index": 2,
+        "degree_in_sign": 28.878638,
+        "is_retrograde": true,
+        "speed": -0.520907
+      },
+      "Jupiter": {
+        "longitude": 171.273922,
+        "sign_index": 5,
+        "degree_in_sign": 21.273922,
+        "is_retrograde": false,
+        "speed": 0.072563
+      },
+      "Venus": {
+        "longitude": 45.976996,
+        "sign_index": 1,
+        "degree_in_sign": 15.976996,
+        "is_retrograde": false,
+        "speed": 1.178216
+      },
+      "Saturn": {
+        "longitude": 304.646813,
+        "sign_index": 10,
+        "degree_in_sign": 4.646813,
+        "is_retrograde": true,
+        "speed": -0.042247
+      },
+      "Rahu": {
+        "longitude": 288.783604,
+        "sign_index": 9,
+        "degree_in_sign": 18.783604,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 108.783604,
+        "sign_index": 3,
+        "degree_in_sign": 18.783604,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

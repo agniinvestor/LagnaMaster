@@ -1,0 +1,109 @@
+{
+  "adb_id": 68980,
+  "name": "Carvajal Quiroz, Armando",
+  "given_name": "Armando Carvajal Quiroz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412621.800521,
+    "year": 1893,
+    "month": 6,
+    "day": 7,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "s",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Santiago",
+    "country": "Chile",
+    "lat": -33.45,
+    "lon": -70.666667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "pis",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carvajal_Quiroz,_Armando",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Conductor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 5.061559,
+    "lagna": 335.061559,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.368835,
+    "jd_ut": 2412621.800521,
+    "planets": {
+      "Sun": {
+        "longitude": 54.342115,
+        "sign_index": 1,
+        "degree_in_sign": 24.342115,
+        "is_retrograde": false,
+        "speed": 0.956171
+      },
+      "Moon": {
+        "longitude": 321.792407,
+        "sign_index": 10,
+        "degree_in_sign": 21.792407,
+        "is_retrograde": false,
+        "speed": 10.204166
+      },
+      "Mars": {
+        "longitude": 83.108549,
+        "sign_index": 2,
+        "degree_in_sign": 23.108549,
+        "is_retrograde": false,
+        "speed": 0.63652
+      },
+      "Mercury": {
+        "longitude": 56.954317,
+        "sign_index": 1,
+        "degree_in_sign": 26.954317,
+        "is_retrograde": false,
+        "speed": 2.193213
+      },
+      "Jupiter": {
+        "longitude": 24.951865,
+        "sign_index": 0,
+        "degree_in_sign": 24.951865,
+        "is_retrograde": false,
+        "speed": 0.222326
+      },
+      "Venus": {
+        "longitude": 63.96754,
+        "sign_index": 2,
+        "degree_in_sign": 3.96754,
+        "is_retrograde": false,
+        "speed": 1.22726
+      },
+      "Saturn": {
+        "longitude": 163.648978,
+        "sign_index": 5,
+        "degree_in_sign": 13.648978,
+        "is_retrograde": true,
+        "speed": -0.001317
+      },
+      "Rahu": {
+        "longitude": 3.808084,
+        "sign_index": 0,
+        "degree_in_sign": 3.808084,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 183.808084,
+        "sign_index": 6,
+        "degree_in_sign": 3.808084,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 47522,
+  "name": "Carl XV, King of Sweden",
+  "given_name": "King of Sweden Carl XV",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388115.043611,
+    "year": 1826,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "14:15",
+    "time_type": "l",
+    "hour": 14.25,
+    "time_unknown": false,
+    "place": "Stockholm",
+    "country": "Sweden",
+    "lat": 59.333333,
+    "lon": 18.05
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carl_XV,_King_of_Sweden",
+  "source_notes": "Lescaut quotes L'Astrologue 15 for B.R. (2:15pm).\\n\\nSy Scholfield forwarded news reports from \"Der Friedens- u. Kriegs-Kurier,\" 18 May 1826: \"am 3. [Mai] Nachmittags um 2 Uhr in Stockholm\" (On 3 May at 2pm); and \"Lemberger Zeitung,\" 26 May 1826, p. 3: \"Stockholm, den 4. Mai. Ihre k. Höh. die Frau Kronprinzessinn sind am 3. Mai um 2 1/4 Uhr Nachmittags glücklich von einem Prinzen entbunden worden\" (on 3 May at 2:15 pm).\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Family : Parenting : Kids 1-3",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 7.474321,
+    "lagna": 127.474321,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.432158,
+    "jd_ut": 2388115.043611,
+    "planets": {
+      "Sun": {
+        "longitude": 21.084819,
+        "sign_index": 0,
+        "degree_in_sign": 21.084819,
+        "is_retrograde": false,
+        "speed": 0.968509
+      },
+      "Moon": {
+        "longitude": 341.800228,
+        "sign_index": 11,
+        "degree_in_sign": 11.800228,
+        "is_retrograde": false,
+        "speed": 11.123762
+      },
+      "Mars": {
+        "longitude": 203.402979,
+        "sign_index": 6,
+        "degree_in_sign": 23.402979,
+        "is_retrograde": true,
+        "speed": -0.359055
+      },
+      "Mercury": {
+        "longitude": 7.414915,
+        "sign_index": 0,
+        "degree_in_sign": 7.414915,
+        "is_retrograde": true,
+        "speed": -0.328965
+      },
+      "Jupiter": {
+        "longitude": 133.040028,
+        "sign_index": 4,
+        "degree_in_sign": 13.040028,
+        "is_retrograde": false,
+        "speed": 0.006166
+      },
+      "Venus": {
+        "longitude": 34.886059,
+        "sign_index": 1,
+        "degree_in_sign": 4.886059,
+        "is_retrograde": false,
+        "speed": 1.228814
+      },
+      "Saturn": {
+        "longitude": 58.495523,
+        "sign_index": 1,
+        "degree_in_sign": 28.495523,
+        "is_retrograde": false,
+        "speed": 0.112538
+      },
+      "Rahu": {
+        "longitude": 222.473715,
+        "sign_index": 7,
+        "degree_in_sign": 12.473715,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 42.473715,
+        "sign_index": 1,
+        "degree_in_sign": 12.473715,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

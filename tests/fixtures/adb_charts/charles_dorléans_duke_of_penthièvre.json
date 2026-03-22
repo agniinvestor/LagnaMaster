@@ -1,0 +1,109 @@
+{
+  "adb_id": 77441,
+  "name": "Charles d'Orléans, Duke of Penthièvre",
+  "given_name": "Duke of Penthièvre Charles d'Orléans",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2385801.410185,
+    "year": 1820,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_d'Orléans,_Duke_of_Penthièvre",
+  "source_notes": "Sy Scholfield quotes from \"L'Ami de la religion et du roi - Volume 22\" (Le Clere, 1820), p. 254: \"Le 1er janvier [1820], S. A. S. Madame la duchesse d'Orléans est accouchée à dix heures du soir, d'un prince qui doit porter le nom de duc de Penthièvre, et les noms de baptême de Charles-Ferdinand-Louis-Philippe-Emmanuel.\" \\n",
+  "categories": [
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 3.102447,
+    "lagna": 123.102447,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.343743,
+    "jd_ut": 2385801.410185,
+    "planets": {
+      "Sun": {
+        "longitude": 259.136931,
+        "sign_index": 8,
+        "degree_in_sign": 19.136931,
+        "is_retrograde": false,
+        "speed": 1.019058
+      },
+      "Moon": {
+        "longitude": 95.751769,
+        "sign_index": 3,
+        "degree_in_sign": 5.751769,
+        "is_retrograde": false,
+        "speed": 9.497188
+      },
+      "Mars": {
+        "longitude": 100.096531,
+        "sign_index": 3,
+        "degree_in_sign": 10.096531,
+        "is_retrograde": true,
+        "speed": -0.327296
+      },
+      "Mercury": {
+        "longitude": 240.800309,
+        "sign_index": 8,
+        "degree_in_sign": 0.800309,
+        "is_retrograde": true,
+        "speed": -0.125524
+      },
+      "Jupiter": {
+        "longitude": 297.162444,
+        "sign_index": 9,
+        "degree_in_sign": 27.162444,
+        "is_retrograde": false,
+        "speed": 0.213735
+      },
+      "Venus": {
+        "longitude": 279.668102,
+        "sign_index": 9,
+        "degree_in_sign": 9.668102,
+        "is_retrograde": false,
+        "speed": 1.249536
+      },
+      "Saturn": {
+        "longitude": 333.704946,
+        "sign_index": 11,
+        "degree_in_sign": 3.704946,
+        "is_retrograde": false,
+        "speed": 0.059832
+      },
+      "Rahu": {
+        "longitude": 345.078195,
+        "sign_index": 11,
+        "degree_in_sign": 15.078195,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 165.078195,
+        "sign_index": 5,
+        "degree_in_sign": 15.078195,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

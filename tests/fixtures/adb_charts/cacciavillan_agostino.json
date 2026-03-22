@@ -1,0 +1,110 @@
+{
+  "adb_id": 43005,
+  "name": "Cacciavillan, Agostino",
+  "given_name": "Agostino Cacciavillan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424741.875,
+    "year": 1926,
+    "month": 8,
+    "day": 14,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Montecchio Maggiore",
+    "country": "Italy",
+    "lat": 45.5,
+    "lon": 11.4
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cacciavillan,_Agostino",
+  "source_notes": "Grazia Bordoni quotes B.C. in Datanotizie No.38, 7/2001.\\n",
+  "categories": [
+    "Passions : Sexuality : Celibacy/ Minimal",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Religion : Ecclesiastics/ eastern"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 28.260962,
+    "lagna": 148.260962,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.83218,
+    "jd_ut": 2424741.875,
+    "planets": {
+      "Sun": {
+        "longitude": 117.982053,
+        "sign_index": 3,
+        "degree_in_sign": 27.982053,
+        "is_retrograde": false,
+        "speed": 0.960728
+      },
+      "Moon": {
+        "longitude": 182.267262,
+        "sign_index": 6,
+        "degree_in_sign": 2.267262,
+        "is_retrograde": false,
+        "speed": 12.675077
+      },
+      "Mars": {
+        "longitude": 13.941371,
+        "sign_index": 0,
+        "degree_in_sign": 13.941371,
+        "is_retrograde": false,
+        "speed": 0.483469
+      },
+      "Mercury": {
+        "longitude": 107.193997,
+        "sign_index": 3,
+        "degree_in_sign": 17.193997,
+        "is_retrograde": true,
+        "speed": -0.374848
+      },
+      "Jupiter": {
+        "longitude": 299.579584,
+        "sign_index": 9,
+        "degree_in_sign": 29.579584,
+        "is_retrograde": true,
+        "speed": -0.130917
+      },
+      "Venus": {
+        "longitude": 92.543104,
+        "sign_index": 3,
+        "degree_in_sign": 2.543104,
+        "is_retrograde": false,
+        "speed": 1.211664
+      },
+      "Saturn": {
+        "longitude": 206.940314,
+        "sign_index": 6,
+        "degree_in_sign": 26.940314,
+        "is_retrograde": false,
+        "speed": 0.033623
+      },
+      "Rahu": {
+        "longitude": 81.539893,
+        "sign_index": 2,
+        "degree_in_sign": 21.539893,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 261.539893,
+        "sign_index": 8,
+        "degree_in_sign": 21.539893,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

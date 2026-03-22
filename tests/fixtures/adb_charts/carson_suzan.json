@@ -1,0 +1,108 @@
+{
+  "adb_id": 60532,
+  "name": "Carson, Suzan",
+  "given_name": "Suzan Carson",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2430616.996528,
+    "year": 1942,
+    "month": 9,
+    "day": 14,
+    "calendar": "g",
+    "time": "05:55",
+    "time_type": "w",
+    "hour": 5.916667,
+    "time_unknown": false,
+    "place": "Scottsdale",
+    "country": "Arizona",
+    "lat": 33.516667,
+    "lon": -111.9
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carson,_Suzan",
+  "source_notes": "Sy Scholfield quotes \"Cry for War: The Story of Suzan and Michael Carson\" by Richard D. Reynolds (Squibob, 1988), p. 55: \"Suzan Thornell Carson had been born on September 14, 1941 — at 5:55 am — which meant that her sun, Mars, and her Rising sign Venus were all in Virgo.\" This must be a misprint as this date in 1942 gives this delineation, not 1941.\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Homicide serial"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 18.324514,
+    "lagna": 108.324514,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.056808,
+    "jd_ut": 2430616.996528,
+    "planets": {
+      "Sun": {
+        "longitude": 147.978631,
+        "sign_index": 4,
+        "degree_in_sign": 27.978631,
+        "is_retrograde": false,
+        "speed": 0.974494
+      },
+      "Moon": {
+        "longitude": 196.338433,
+        "sign_index": 6,
+        "degree_in_sign": 16.338433,
+        "is_retrograde": false,
+        "speed": 18.266467
+      },
+      "Mars": {
+        "longitude": 155.05249,
+        "sign_index": 5,
+        "degree_in_sign": 5.05249,
+        "is_retrograde": false,
+        "speed": 0.645926
+      },
+      "Mercury": {
+        "longitude": 174.515541,
+        "sign_index": 5,
+        "degree_in_sign": 24.515541,
+        "is_retrograde": false,
+        "speed": 1.014507
+      },
+      "Jupiter": {
+        "longitude": 87.029456,
+        "sign_index": 2,
+        "degree_in_sign": 27.029456,
+        "is_retrograde": false,
+        "speed": 0.158729
+      },
+      "Venus": {
+        "longitude": 131.746925,
+        "sign_index": 4,
+        "degree_in_sign": 11.746925,
+        "is_retrograde": false,
+        "speed": 1.236399
+      },
+      "Saturn": {
+        "longitude": 49.363741,
+        "sign_index": 1,
+        "degree_in_sign": 19.363741,
+        "is_retrograde": false,
+        "speed": 0.019469
+      },
+      "Rahu": {
+        "longitude": 130.205017,
+        "sign_index": 4,
+        "degree_in_sign": 10.205017,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 310.205017,
+        "sign_index": 10,
+        "degree_in_sign": 10.205017,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

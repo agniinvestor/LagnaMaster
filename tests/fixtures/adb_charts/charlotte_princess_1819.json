@@ -1,0 +1,109 @@
+{
+  "adb_id": 59484,
+  "name": "Charlotte, Princess (1819)",
+  "given_name": "Princess (1819) Charlotte",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2385520.743796,
+    "year": 1819,
+    "month": 3,
+    "day": 27,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "l",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Hanover",
+    "country": "Germany",
+    "lat": 52.4,
+    "lon": 9.733333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlotte,_Princess_(1819)",
+  "source_notes": "Sy Scholfield quotes \"La Belle assemblée: or Court and fashionable magazine\" (May 1819), p. 194: \"the Duchess of Clarence . . . on Saturday morning, the 27th of March, at half-past six o'clock, her Royal Highness gave birth to a female child. The infant lived till one o'clock, and then expired.\"\\n",
+  "categories": [
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 14.521729,
+    "lagna": 344.521729,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.333017,
+    "jd_ut": 2385520.743796,
+    "planets": {
+      "Sun": {
+        "longitude": 344.413735,
+        "sign_index": 11,
+        "degree_in_sign": 14.413735,
+        "is_retrograde": false,
+        "speed": 0.988802
+      },
+      "Moon": {
+        "longitude": 0.66823,
+        "sign_index": 0,
+        "degree_in_sign": 0.66823,
+        "is_retrograde": false,
+        "speed": 14.170636
+      },
+      "Mars": {
+        "longitude": 311.696597,
+        "sign_index": 10,
+        "degree_in_sign": 11.696597,
+        "is_retrograde": false,
+        "speed": 0.779574
+      },
+      "Mercury": {
+        "longitude": 353.769247,
+        "sign_index": 11,
+        "degree_in_sign": 23.769247,
+        "is_retrograde": false,
+        "speed": 2.004642
+      },
+      "Jupiter": {
+        "longitude": 288.790114,
+        "sign_index": 9,
+        "degree_in_sign": 18.790114,
+        "is_retrograde": false,
+        "speed": 0.17983
+      },
+      "Venus": {
+        "longitude": 298.861463,
+        "sign_index": 9,
+        "degree_in_sign": 28.861463,
+        "is_retrograde": false,
+        "speed": 1.089072
+      },
+      "Saturn": {
+        "longitude": 331.406222,
+        "sign_index": 11,
+        "degree_in_sign": 1.406222,
+        "is_retrograde": false,
+        "speed": 0.121404
+      },
+      "Rahu": {
+        "longitude": 359.951321,
+        "sign_index": 11,
+        "degree_in_sign": 29.951321,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 179.951321,
+        "sign_index": 5,
+        "degree_in_sign": 29.951321,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

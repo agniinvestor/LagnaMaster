@@ -1,0 +1,118 @@
+{
+  "adb_id": 37149,
+  "name": "Catherine, Saint",
+  "given_name": "Saint Catherine",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2380809.236852,
+    "year": 1806,
+    "month": 5,
+    "day": 2,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Aignay le Duc",
+    "country": "France",
+    "lat": 47.666667,
+    "lon": 4.733333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Catherine,_Saint",
+  "source_notes": "Petitallot quotes B.C., Cadran No.25, 12/1995\\n",
+  "categories": [
+    "Traits : Personality : Mystical",
+    "Family : Childhood : Family large",
+    "Family : Childhood : Family traumatic event",
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Married late/never",
+    "Passions : Sexuality : Celibacy/ Minimal",
+    "Personal : Religion/Spirituality : Mystical experience",
+    "Vocation : Religion : Ecclesiastics/ western",
+    "Vocation : Religion : Saint/ Stigmatist",
+    "Vocation : Misc. : Cleaning service",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 17.072534,
+    "lagna": 167.072534,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.152975,
+    "jd_ut": 2380809.236852,
+    "planets": {
+      "Sun": {
+        "longitude": 20.431313,
+        "sign_index": 0,
+        "degree_in_sign": 20.431313,
+        "is_retrograde": false,
+        "speed": 0.968166
+      },
+      "Moon": {
+        "longitude": 200.436817,
+        "sign_index": 6,
+        "degree_in_sign": 20.436817,
+        "is_retrograde": false,
+        "speed": 13.48556
+      },
+      "Mars": {
+        "longitude": 2.669844,
+        "sign_index": 0,
+        "degree_in_sign": 2.669844,
+        "is_retrograde": false,
+        "speed": 0.755301
+      },
+      "Mercury": {
+        "longitude": 15.838101,
+        "sign_index": 0,
+        "degree_in_sign": 15.838101,
+        "is_retrograde": true,
+        "speed": -0.615918
+      },
+      "Jupiter": {
+        "longitude": 257.028349,
+        "sign_index": 8,
+        "degree_in_sign": 17.028349,
+        "is_retrograde": true,
+        "speed": -0.021633
+      },
+      "Venus": {
+        "longitude": 336.573313,
+        "sign_index": 11,
+        "degree_in_sign": 6.573313,
+        "is_retrograde": false,
+        "speed": 0.744502
+      },
+      "Saturn": {
+        "longitude": 182.704396,
+        "sign_index": 6,
+        "degree_in_sign": 2.704396,
+        "is_retrograde": true,
+        "speed": -0.07093
+      },
+      "Rahu": {
+        "longitude": 249.624399,
+        "sign_index": 8,
+        "degree_in_sign": 9.624399,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 69.624399,
+        "sign_index": 2,
+        "degree_in_sign": 9.624399,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

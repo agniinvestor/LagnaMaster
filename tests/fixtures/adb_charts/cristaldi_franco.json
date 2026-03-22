@@ -1,0 +1,110 @@
+{
+  "adb_id": 50836,
+  "name": "Cristaldi, Franco",
+  "given_name": "Franco Cristaldi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424062.208333,
+    "year": 1924,
+    "month": 10,
+    "day": 3,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Turin",
+    "country": "Italy",
+    "lat": 45.05,
+    "lon": 7.666667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sag",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cristaldi,_Franco",
+  "source_notes": "Steinbrecher collection: Bordoni quotes birth certificate.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 23.576962,
+    "lagna": 323.576962,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.806195,
+    "jd_ut": 2424062.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 167.392814,
+        "sign_index": 5,
+        "degree_in_sign": 17.392814,
+        "is_retrograde": false,
+        "speed": 0.985376
+      },
+      "Moon": {
+        "longitude": 232.122881,
+        "sign_index": 7,
+        "degree_in_sign": 22.122881,
+        "is_retrograde": false,
+        "speed": 10.245187
+      },
+      "Mars": {
+        "longitude": 303.372707,
+        "sign_index": 10,
+        "degree_in_sign": 3.372707,
+        "is_retrograde": false,
+        "speed": 0.147795
+      },
+      "Mercury": {
+        "longitude": 151.588857,
+        "sign_index": 5,
+        "degree_in_sign": 1.588857,
+        "is_retrograde": false,
+        "speed": 1.543292
+      },
+      "Jupiter": {
+        "longitude": 231.95207,
+        "sign_index": 7,
+        "degree_in_sign": 21.95207,
+        "is_retrograde": false,
+        "speed": 0.151759
+      },
+      "Venus": {
+        "longitude": 122.899374,
+        "sign_index": 4,
+        "degree_in_sign": 2.899374,
+        "is_retrograde": false,
+        "speed": 1.098401
+      },
+      "Saturn": {
+        "longitude": 189.359561,
+        "sign_index": 6,
+        "degree_in_sign": 9.359561,
+        "is_retrograde": false,
+        "speed": 0.114951
+      },
+      "Rahu": {
+        "longitude": 117.556846,
+        "sign_index": 3,
+        "degree_in_sign": 27.556846,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 297.556846,
+        "sign_index": 9,
+        "degree_in_sign": 27.556846,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

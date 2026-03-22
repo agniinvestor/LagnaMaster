@@ -1,0 +1,108 @@
+{
+  "adb_id": 53249,
+  "name": "Castigliano, Eusebio",
+  "given_name": "Eusebio Castigliano",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422729.875,
+    "year": 1921,
+    "month": 2,
+    "day": 9,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Vercelli",
+    "country": "Italy",
+    "lat": 45.316667,
+    "lon": 8.416667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castigliano,_Eusebio",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/1469\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 7.863502,
+    "lagna": 337.863502,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.755257,
+    "jd_ut": 2422729.875,
+    "planets": {
+      "Sun": {
+        "longitude": 297.336283,
+        "sign_index": 9,
+        "degree_in_sign": 27.336283,
+        "is_retrograde": false,
+        "speed": 1.012376
+      },
+      "Moon": {
+        "longitude": 312.49528,
+        "sign_index": 10,
+        "degree_in_sign": 12.49528,
+        "is_retrograde": false,
+        "speed": 9.81008
+      },
+      "Mars": {
+        "longitude": 334.302932,
+        "sign_index": 11,
+        "degree_in_sign": 4.302932,
+        "is_retrograde": false,
+        "speed": 0.764846
+      },
+      "Mercury": {
+        "longitude": 313.666844,
+        "sign_index": 10,
+        "degree_in_sign": 13.666844,
+        "is_retrograde": false,
+        "speed": 1.539497
+      },
+      "Jupiter": {
+        "longitude": 144.112818,
+        "sign_index": 4,
+        "degree_in_sign": 24.112818,
+        "is_retrograde": true,
+        "speed": -0.105117
+      },
+      "Venus": {
+        "longitude": 344.085162,
+        "sign_index": 11,
+        "degree_in_sign": 14.085162,
+        "is_retrograde": false,
+        "speed": 1.015617
+      },
+      "Saturn": {
+        "longitude": 150.924149,
+        "sign_index": 5,
+        "degree_in_sign": 0.924149,
+        "is_retrograde": true,
+        "speed": -0.05883
+      },
+      "Rahu": {
+        "longitude": 188.159969,
+        "sign_index": 6,
+        "degree_in_sign": 8.159969,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 8.159969,
+        "sign_index": 0,
+        "degree_in_sign": 8.159969,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

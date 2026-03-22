@@ -1,0 +1,112 @@
+{
+  "adb_id": 94494,
+  "name": "Collomb, Anna",
+  "given_name": "Anna Collomb",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404483.118487,
+    "year": 1871,
+    "month": 2,
+    "day": 24,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 5",
+    "country": "France",
+    "lat": 48.846111,
+    "lon": 2.344722
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collomb,_Anna",
+  "source_notes": "Birth certificate in hand from Michaël Mandl, copy on file. Same data in his \"DOSSIER SPÉCIAL: HENRI DÉSIRÉ LANDRU\" [http://www.mandlonline.com/IMG/pdf/archives_mm_cr_criminalite_landru-3.pdf].\\n",
+  "categories": [
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Passions : Criminal Victim : Homicide victim",
+    "Vocation : Business : Clerk/ Typist",
+    "Notable : Famous : Criminal cases"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 24.490114,
+    "lagna": 84.490114,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.057734,
+    "jd_ut": 2404483.118487,
+    "planets": {
+      "Sun": {
+        "longitude": 313.540272,
+        "sign_index": 10,
+        "degree_in_sign": 13.540272,
+        "is_retrograde": false,
+        "speed": 1.005287
+      },
+      "Moon": {
+        "longitude": 12.728532,
+        "sign_index": 0,
+        "degree_in_sign": 12.728532,
+        "is_retrograde": false,
+        "speed": 8.782171
+      },
+      "Mars": {
+        "longitude": 164.558028,
+        "sign_index": 5,
+        "degree_in_sign": 14.558028,
+        "is_retrograde": true,
+        "speed": -0.200222
+      },
+      "Mercury": {
+        "longitude": 290.549804,
+        "sign_index": 9,
+        "degree_in_sign": 20.549804,
+        "is_retrograde": false,
+        "speed": 1.406155
+      },
+      "Jupiter": {
+        "longitude": 54.687271,
+        "sign_index": 1,
+        "degree_in_sign": 24.687271,
+        "is_retrograde": false,
+        "speed": 0.047243
+      },
+      "Venus": {
+        "longitude": 332.193938,
+        "sign_index": 11,
+        "degree_in_sign": 2.193938,
+        "is_retrograde": false,
+        "speed": 1.243101
+      },
+      "Saturn": {
+        "longitude": 255.585663,
+        "sign_index": 8,
+        "degree_in_sign": 15.585663,
+        "is_retrograde": false,
+        "speed": 0.079785
+      },
+      "Rahu": {
+        "longitude": 75.094132,
+        "sign_index": 2,
+        "degree_in_sign": 15.094132,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 255.094132,
+        "sign_index": 8,
+        "degree_in_sign": 15.094132,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

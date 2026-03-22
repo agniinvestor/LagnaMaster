@@ -1,0 +1,110 @@
+{
+  "adb_id": 65104,
+  "name": "Cravenne, Georges",
+  "given_name": "Georges Cravenne",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420156.75,
+    "year": 1914,
+    "month": 1,
+    "day": 24,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Kairouan",
+    "country": "Tunisia",
+    "lat": 35.683333,
+    "lon": 10.116667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "cap",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cravenne,_Georges",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 280.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Business : Manager/ Agent",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 9.42276,
+    "lagna": 249.42276,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.656885,
+    "jd_ut": 2420156.75,
+    "planets": {
+      "Sun": {
+        "longitude": 280.767717,
+        "sign_index": 9,
+        "degree_in_sign": 10.767717,
+        "is_retrograde": false,
+        "speed": 1.017238
+      },
+      "Moon": {
+        "longitude": 257.318936,
+        "sign_index": 8,
+        "degree_in_sign": 17.318936,
+        "is_retrograde": false,
+        "speed": 10.470072
+      },
+      "Mars": {
+        "longitude": 75.566827,
+        "sign_index": 2,
+        "degree_in_sign": 15.566827,
+        "is_retrograde": true,
+        "speed": -0.259275
+      },
+      "Mercury": {
+        "longitude": 280.014635,
+        "sign_index": 9,
+        "degree_in_sign": 10.014635,
+        "is_retrograde": false,
+        "speed": 1.689242
+      },
+      "Jupiter": {
+        "longitude": 277.95941,
+        "sign_index": 9,
+        "degree_in_sign": 7.95941,
+        "is_retrograde": false,
+        "speed": 0.235966
+      },
+      "Venus": {
+        "longitude": 276.286397,
+        "sign_index": 9,
+        "degree_in_sign": 6.286397,
+        "is_retrograde": false,
+        "speed": 1.256567
+      },
+      "Saturn": {
+        "longitude": 48.876862,
+        "sign_index": 1,
+        "degree_in_sign": 18.876862,
+        "is_retrograde": true,
+        "speed": -0.034459
+      },
+      "Rahu": {
+        "longitude": 324.515245,
+        "sign_index": 10,
+        "degree_in_sign": 24.515245,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 144.515245,
+        "sign_index": 4,
+        "degree_in_sign": 24.515245,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

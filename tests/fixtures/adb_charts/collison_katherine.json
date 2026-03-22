@@ -1,0 +1,108 @@
+{
+  "adb_id": 15312,
+  "name": "Collison, Katherine",
+  "given_name": "Katherine Collison",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2448309.967361,
+    "year": 1991,
+    "month": 2,
+    "day": 22,
+    "calendar": "g",
+    "time": "06:13",
+    "time_type": "s",
+    "hour": 6.216667,
+    "time_unknown": false,
+    "place": "Buffalo",
+    "country": "New York",
+    "lat": 42.883333,
+    "lon": -78.883333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collison,_Katherine",
+  "source_notes": "LMR quotes news at the time\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 24.620392,
+    "lagna": 264.620392,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.733372,
+    "jd_ut": 2448309.967361,
+    "planets": {
+      "Sun": {
+        "longitude": 309.590245,
+        "sign_index": 10,
+        "degree_in_sign": 9.590245,
+        "is_retrograde": false,
+        "speed": 1.00704
+      },
+      "Moon": {
+        "longitude": 46.062212,
+        "sign_index": 1,
+        "degree_in_sign": 16.062212,
+        "is_retrograde": false,
+        "speed": 18.473797
+      },
+      "Mars": {
+        "longitude": 47.098455,
+        "sign_index": 1,
+        "degree_in_sign": 17.098455,
+        "is_retrograde": false,
+        "speed": 0.423818
+      },
+      "Mercury": {
+        "longitude": 303.352915,
+        "sign_index": 10,
+        "degree_in_sign": 3.352915,
+        "is_retrograde": false,
+        "speed": 1.760275
+      },
+      "Jupiter": {
+        "longitude": 101.816803,
+        "sign_index": 3,
+        "degree_in_sign": 11.816803,
+        "is_retrograde": true,
+        "speed": -0.10523
+      },
+      "Venus": {
+        "longitude": 336.374465,
+        "sign_index": 11,
+        "degree_in_sign": 6.374465,
+        "is_retrograde": false,
+        "speed": 1.233373
+      },
+      "Saturn": {
+        "longitude": 278.014455,
+        "sign_index": 9,
+        "degree_in_sign": 8.014455,
+        "is_retrograde": false,
+        "speed": 0.107223
+      },
+      "Rahu": {
+        "longitude": 272.618327,
+        "sign_index": 9,
+        "degree_in_sign": 2.618327,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 92.618327,
+        "sign_index": 3,
+        "degree_in_sign": 2.618327,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 65632,
+  "name": "Crémieux-Brilhac, Jean-Louis",
+  "given_name": "Jean-Louis Crémieux-Brilhac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421251.482639,
+    "year": 1917,
+    "month": 1,
+    "day": 22,
+    "calendar": "g",
+    "time": "23:35",
+    "time_type": "s",
+    "hour": 23.583333,
+    "time_unknown": false,
+    "place": "Colombes",
+    "country": "France",
+    "lat": 48.916667,
+    "lon": 2.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crémieux-Brilhac,_Jean-Louis",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 4.748624,
+    "lagna": 154.748624,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.698737,
+    "jd_ut": 2421251.482639,
+    "planets": {
+      "Sun": {
+        "longitude": 279.711973,
+        "sign_index": 9,
+        "degree_in_sign": 9.711973,
+        "is_retrograde": false,
+        "speed": 1.017486
+      },
+      "Moon": {
+        "longitude": 274.812455,
+        "sign_index": 9,
+        "degree_in_sign": 4.812455,
+        "is_retrograde": false,
+        "speed": 19.085854
+      },
+      "Mars": {
+        "longitude": 287.870432,
+        "sign_index": 9,
+        "degree_in_sign": 17.870432,
+        "is_retrograde": false,
+        "speed": 0.788718
+      },
+      "Mercury": {
+        "longitude": 271.323988,
+        "sign_index": 9,
+        "degree_in_sign": 1.323988,
+        "is_retrograde": true,
+        "speed": -1.097348
+      },
+      "Jupiter": {
+        "longitude": 4.544499,
+        "sign_index": 0,
+        "degree_in_sign": 4.544499,
+        "is_retrograde": false,
+        "speed": 0.106417
+      },
+      "Venus": {
+        "longitude": 256.694128,
+        "sign_index": 8,
+        "degree_in_sign": 16.694128,
+        "is_retrograde": false,
+        "speed": 1.247718
+      },
+      "Saturn": {
+        "longitude": 94.012862,
+        "sign_index": 3,
+        "degree_in_sign": 4.012862,
+        "is_retrograde": true,
+        "speed": -0.081867
+      },
+      "Rahu": {
+        "longitude": 266.50307,
+        "sign_index": 8,
+        "degree_in_sign": 26.50307,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 86.50307,
+        "sign_index": 2,
+        "degree_in_sign": 26.50307,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

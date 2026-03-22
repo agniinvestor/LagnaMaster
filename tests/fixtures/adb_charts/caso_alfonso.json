@@ -1,0 +1,111 @@
+{
+  "adb_id": 86619,
+  "name": "Caso, Alfonso",
+  "given_name": "Alfonso Caso",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413591.004583,
+    "year": 1896,
+    "month": 2,
+    "day": 1,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "l",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4,
+    "lon": -99.15
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caso,_Alfonso",
+  "source_notes": "Sy Scholfield provided birth registry entry from Federal District, Mexico archives.\\n",
+  "categories": [
+    "Vocation : Science : Anthropology",
+    "Vocation : Travel : Explorer",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 9.102658,
+    "lagna": 249.102658,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.405884,
+    "jd_ut": 2413591.004583,
+    "planets": {
+      "Sun": {
+        "longitude": 289.777484,
+        "sign_index": 9,
+        "degree_in_sign": 19.777484,
+        "is_retrograde": false,
+        "speed": 1.014198
+      },
+      "Moon": {
+        "longitude": 138.656174,
+        "sign_index": 4,
+        "degree_in_sign": 18.656174,
+        "is_retrograde": false,
+        "speed": 11.726806
+      },
+      "Mars": {
+        "longitude": 254.5428,
+        "sign_index": 8,
+        "degree_in_sign": 14.5428,
+        "is_retrograde": false,
+        "speed": 0.736171
+      },
+      "Mercury": {
+        "longitude": 303.304509,
+        "sign_index": 10,
+        "degree_in_sign": 3.304509,
+        "is_retrograde": true,
+        "speed": -0.31039
+      },
+      "Jupiter": {
+        "longitude": 100.668912,
+        "sign_index": 3,
+        "degree_in_sign": 10.668912,
+        "is_retrograde": true,
+        "speed": -0.130614
+      },
+      "Venus": {
+        "longitude": 250.803621,
+        "sign_index": 8,
+        "degree_in_sign": 10.803621,
+        "is_retrograde": false,
+        "speed": 1.203914
+      },
+      "Saturn": {
+        "longitude": 206.146382,
+        "sign_index": 6,
+        "degree_in_sign": 26.146382,
+        "is_retrograde": false,
+        "speed": 0.042913
+      },
+      "Rahu": {
+        "longitude": 312.447913,
+        "sign_index": 10,
+        "degree_in_sign": 12.447913,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 132.447913,
+        "sign_index": 4,
+        "degree_in_sign": 12.447913,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

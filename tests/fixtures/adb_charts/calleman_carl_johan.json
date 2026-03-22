@@ -1,0 +1,110 @@
+{
+  "adb_id": 60543,
+  "name": "Calleman, Carl Johan",
+  "given_name": "Carl Johan Calleman",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2433416.958333,
+    "year": 1950,
+    "month": 5,
+    "day": 15,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Stockholm",
+    "country": "Sweden",
+    "lat": 59.333333,
+    "lon": 18.05
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calleman,_Carl_Johan",
+  "source_notes": "Sy Scholfield quotes the biography on his official website: \"I was born in Stockholm, Sweden at noon May 15, 1950...\" http://www.calleman.com/content/biographical.htm. \\n",
+  "categories": [
+    "Vocation : Occult Fields : Other Occult Fields",
+    "Vocation : Science : Chemistry",
+    "Vocation : Writers : Metaphysics/ Parapsychology"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 22.121387,
+    "lagna": 112.121387,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.163866,
+    "jd_ut": 2433416.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 30.878688,
+        "sign_index": 1,
+        "degree_in_sign": 0.878688,
+        "is_retrograde": false,
+        "speed": 0.964436
+      },
+      "Moon": {
+        "longitude": 13.356862,
+        "sign_index": 0,
+        "degree_in_sign": 13.356862,
+        "is_retrograde": false,
+        "speed": 9.264018
+      },
+      "Mars": {
+        "longitude": 149.671594,
+        "sign_index": 4,
+        "degree_in_sign": 29.671594,
+        "is_retrograde": false,
+        "speed": 0.137128
+      },
+      "Mercury": {
+        "longitude": 29.794335,
+        "sign_index": 0,
+        "degree_in_sign": 29.794335,
+        "is_retrograde": true,
+        "speed": -0.59275
+      },
+      "Jupiter": {
+        "longitude": 311.527514,
+        "sign_index": 10,
+        "degree_in_sign": 11.527514,
+        "is_retrograde": false,
+        "speed": 0.123718
+      },
+      "Venus": {
+        "longitude": 347.47363,
+        "sign_index": 11,
+        "degree_in_sign": 17.47363,
+        "is_retrograde": false,
+        "speed": 1.113688
+      },
+      "Saturn": {
+        "longitude": 139.416467,
+        "sign_index": 4,
+        "degree_in_sign": 19.416467,
+        "is_retrograde": false,
+        "speed": 8.7e-05
+      },
+      "Rahu": {
+        "longitude": 341.829264,
+        "sign_index": 11,
+        "degree_in_sign": 11.829264,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 161.829264,
+        "sign_index": 5,
+        "degree_in_sign": 11.829264,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 50750,
+  "name": "Carroll, Julian",
+  "given_name": "Julian Carroll",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426448.083333,
+    "year": 1931,
+    "month": 4,
+    "day": 16,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Paducah",
+    "country": "Kentucky",
+    "lat": 37.083333,
+    "lon": -88.6
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carroll,_Julian",
+  "source_notes": "Steinbrecher collection quotes \"Gauquelin Book of American Charts.\"\\n",
+  "categories": [
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids more than 3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 28.975574,
+    "lagna": 28.975574,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.897413,
+    "jd_ut": 2426448.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 2.719925,
+        "sign_index": 0,
+        "degree_in_sign": 2.719925,
+        "is_retrograde": false,
+        "speed": 0.978481
+      },
+      "Moon": {
+        "longitude": 346.876198,
+        "sign_index": 11,
+        "degree_in_sign": 16.876198,
+        "is_retrograde": false,
+        "speed": 9.08115
+      },
+      "Mars": {
+        "longitude": 102.113089,
+        "sign_index": 3,
+        "degree_in_sign": 12.113089,
+        "is_retrograde": false,
+        "speed": 0.343774
+      },
+      "Mercury": {
+        "longitude": 19.980776,
+        "sign_index": 0,
+        "degree_in_sign": 19.980776,
+        "is_retrograde": false,
+        "speed": 0.331977
+      },
+      "Jupiter": {
+        "longitude": 80.031171,
+        "sign_index": 2,
+        "degree_in_sign": 20.031171,
+        "is_retrograde": false,
+        "speed": 0.116672
+      },
+      "Venus": {
+        "longitude": 325.778054,
+        "sign_index": 10,
+        "degree_in_sign": 25.778054,
+        "is_retrograde": false,
+        "speed": 1.188762
+      },
+      "Saturn": {
+        "longitude": 270.146904,
+        "sign_index": 9,
+        "degree_in_sign": 0.146904,
+        "is_retrograde": false,
+        "speed": 0.027628
+      },
+      "Rahu": {
+        "longitude": 351.124365,
+        "sign_index": 11,
+        "degree_in_sign": 21.124365,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 171.124365,
+        "sign_index": 5,
+        "degree_in_sign": 21.124365,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

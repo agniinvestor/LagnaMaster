@@ -1,0 +1,115 @@
+{
+  "adb_id": 86574,
+  "name": "Christian, Linda",
+  "given_name": "Linda Christian",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423737.3125,
+    "year": 1923,
+    "month": 11,
+    "day": 13,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Tampico",
+    "country": "Mexico",
+    "lat": 22.216667,
+    "lon": -97.85
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian,_Linda",
+  "source_notes": "Sy Scholfield provided birth registry entry from Tamaulipas state archives.\\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Notable : Extraordinary Talents : For Languages",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 14.027538,
+    "lagna": 284.027538,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.793773,
+    "jd_ut": 2423737.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 207.608352,
+        "sign_index": 6,
+        "degree_in_sign": 27.608352,
+        "is_retrograde": false,
+        "speed": 1.007011
+      },
+      "Moon": {
+        "longitude": 278.873835,
+        "sign_index": 9,
+        "degree_in_sign": 8.873835,
+        "is_retrograde": false,
+        "speed": 10.25966
+      },
+      "Mars": {
+        "longitude": 174.217573,
+        "sign_index": 5,
+        "degree_in_sign": 24.217573,
+        "is_retrograde": false,
+        "speed": 0.639749
+      },
+      "Mercury": {
+        "longitude": 206.306091,
+        "sign_index": 6,
+        "degree_in_sign": 26.306091,
+        "is_retrograde": false,
+        "speed": 1.602132
+      },
+      "Jupiter": {
+        "longitude": 214.78191,
+        "sign_index": 7,
+        "degree_in_sign": 4.78191,
+        "is_retrograde": false,
+        "speed": 0.221471
+      },
+      "Venus": {
+        "longitude": 224.188553,
+        "sign_index": 7,
+        "degree_in_sign": 14.188553,
+        "is_retrograde": false,
+        "speed": 1.248948
+      },
+      "Saturn": {
+        "longitude": 183.528064,
+        "sign_index": 6,
+        "degree_in_sign": 3.528064,
+        "is_retrograde": false,
+        "speed": 0.114844
+      },
+      "Rahu": {
+        "longitude": 134.773753,
+        "sign_index": 4,
+        "degree_in_sign": 14.773753,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 314.773753,
+        "sign_index": 10,
+        "degree_in_sign": 14.773753,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

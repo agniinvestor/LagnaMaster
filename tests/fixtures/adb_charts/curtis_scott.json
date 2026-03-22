@@ -1,0 +1,111 @@
+{
+  "adb_id": 95345,
+  "name": "Curtis, Scott",
+  "given_name": "Scott Curtis",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2449713.45625,
+    "year": 1994,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "17:57",
+    "time_type": "s",
+    "hour": 17.95,
+    "time_unknown": false,
+    "place": "Burlington",
+    "country": "Vermont",
+    "lat": 44.483333,
+    "lon": -73.216667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curtis,_Scott",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Sports : Football",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 8.679976,
+    "lagna": 68.679976,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.787046,
+    "jd_ut": 2449713.45625,
+    "planets": {
+      "Sun": {
+        "longitude": 251.157554,
+        "sign_index": 8,
+        "degree_in_sign": 11.157554,
+        "is_retrograde": false,
+        "speed": 1.019086
+      },
+      "Moon": {
+        "longitude": 176.090911,
+        "sign_index": 5,
+        "degree_in_sign": 26.090911,
+        "is_retrograde": false,
+        "speed": 17.736152
+      },
+      "Mars": {
+        "longitude": 128.576423,
+        "sign_index": 4,
+        "degree_in_sign": 8.576423,
+        "is_retrograde": false,
+        "speed": 0.085751
+      },
+      "Mercury": {
+        "longitude": 258.488833,
+        "sign_index": 8,
+        "degree_in_sign": 18.488833,
+        "is_retrograde": false,
+        "speed": 1.609526
+      },
+      "Jupiter": {
+        "longitude": 219.917001,
+        "sign_index": 7,
+        "degree_in_sign": 9.917001,
+        "is_retrograde": false,
+        "speed": 0.205389
+      },
+      "Venus": {
+        "longitude": 205.60399,
+        "sign_index": 6,
+        "degree_in_sign": 25.60399,
+        "is_retrograde": false,
+        "speed": 0.854334
+      },
+      "Saturn": {
+        "longitude": 313.797335,
+        "sign_index": 10,
+        "degree_in_sign": 13.797335,
+        "is_retrograde": false,
+        "speed": 0.076572
+      },
+      "Rahu": {
+        "longitude": 198.244617,
+        "sign_index": 6,
+        "degree_in_sign": 18.244617,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.244617,
+        "sign_index": 0,
+        "degree_in_sign": 18.244617,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

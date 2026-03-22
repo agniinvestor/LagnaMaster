@@ -1,0 +1,111 @@
+{
+  "adb_id": 79673,
+  "name": "Carl, Prince of Prussia",
+  "given_name": "Prince of Prussia Carl",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2379040.67125,
+    "year": 1801,
+    "month": 6,
+    "day": 29,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carl,_Prince_of_Prussia",
+  "source_notes": "Sy Scholfield forwarded news report from \"Wiener Zeitung,\" 18 July 1801, p. 2: \"Am 29. Jun. Morgens um 5 Uhr ward Ihro Majestät, die regierende Königin, zur Freude des Königl. Hauses und des ganzen Landes, in Charlottenburg von einem Prinzen entbunden.\" (On 29 June, at five o'clock in the morning, Her Majesty, the reigning Queen, to the delight of the Royal House and the whole country, in Charlottenburg, was delivered of a prince).\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Military : Military career",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 9.198098,
+    "lagna": 69.198098,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.085395,
+    "jd_ut": 2379040.67125,
+    "planets": {
+      "Sun": {
+        "longitude": 75.762125,
+        "sign_index": 2,
+        "degree_in_sign": 15.762125,
+        "is_retrograde": false,
+        "speed": 0.952927
+      },
+      "Moon": {
+        "longitude": 295.526729,
+        "sign_index": 9,
+        "degree_in_sign": 25.526729,
+        "is_retrograde": false,
+        "speed": 11.899277
+      },
+      "Mars": {
+        "longitude": 113.854319,
+        "sign_index": 3,
+        "degree_in_sign": 23.854319,
+        "is_retrograde": false,
+        "speed": 0.612072
+      },
+      "Mercury": {
+        "longitude": 99.492851,
+        "sign_index": 3,
+        "degree_in_sign": 9.492851,
+        "is_retrograde": false,
+        "speed": 1.434952
+      },
+      "Jupiter": {
+        "longitude": 105.708825,
+        "sign_index": 3,
+        "degree_in_sign": 15.708825,
+        "is_retrograde": false,
+        "speed": 0.204036
+      },
+      "Venus": {
+        "longitude": 38.021526,
+        "sign_index": 1,
+        "degree_in_sign": 8.021526,
+        "is_retrograde": false,
+        "speed": 0.401445
+      },
+      "Saturn": {
+        "longitude": 120.10151,
+        "sign_index": 4,
+        "degree_in_sign": 0.10151,
+        "is_retrograde": false,
+        "speed": 0.102938
+      },
+      "Rahu": {
+        "longitude": 343.344579,
+        "sign_index": 11,
+        "degree_in_sign": 13.344579,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 163.344579,
+        "sign_index": 5,
+        "degree_in_sign": 13.344579,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

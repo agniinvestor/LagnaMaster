@@ -1,0 +1,109 @@
+{
+  "adb_id": 102922,
+  "name": "Carbone, Fernando",
+  "given_name": "Fernando Carbone",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436641.954861,
+    "year": 1959,
+    "month": 3,
+    "day": 14,
+    "calendar": "g",
+    "time": "05:55",
+    "time_type": "s",
+    "hour": 5.916667,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carbone,_Fernando",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Medical : Surgeon",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 1.488598,
+    "lagna": 301.488598,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.287181,
+    "jd_ut": 2436641.954861,
+    "planets": {
+      "Sun": {
+        "longitude": 329.830225,
+        "sign_index": 10,
+        "degree_in_sign": 29.830225,
+        "is_retrograde": false,
+        "speed": 0.997052
+      },
+      "Moon": {
+        "longitude": 25.532657,
+        "sign_index": 0,
+        "degree_in_sign": 25.532657,
+        "is_retrograde": false,
+        "speed": 16.373757
+      },
+      "Mars": {
+        "longitude": 52.082376,
+        "sign_index": 1,
+        "degree_in_sign": 22.082376,
+        "is_retrograde": false,
+        "speed": 0.522017
+      },
+      "Mercury": {
+        "longitude": 347.781753,
+        "sign_index": 11,
+        "degree_in_sign": 17.781753,
+        "is_retrograde": false,
+        "speed": 0.732242
+      },
+      "Jupiter": {
+        "longitude": 218.670461,
+        "sign_index": 7,
+        "degree_in_sign": 8.670461,
+        "is_retrograde": false,
+        "speed": 0.013939
+      },
+      "Venus": {
+        "longitude": 358.839061,
+        "sign_index": 11,
+        "degree_in_sign": 28.839061,
+        "is_retrograde": false,
+        "speed": 1.222015
+      },
+      "Saturn": {
+        "longitude": 252.881994,
+        "sign_index": 8,
+        "degree_in_sign": 12.881994,
+        "is_retrograde": false,
+        "speed": 0.052781
+      },
+      "Rahu": {
+        "longitude": 170.930069,
+        "sign_index": 5,
+        "degree_in_sign": 20.930069,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 350.930069,
+        "sign_index": 11,
+        "degree_in_sign": 20.930069,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

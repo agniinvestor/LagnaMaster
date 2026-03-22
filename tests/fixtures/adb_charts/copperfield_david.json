@@ -1,0 +1,119 @@
+{
+  "adb_id": 13047,
+  "name": "Copperfield, David",
+  "given_name": "David Copperfield",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435732.959722,
+    "year": 1956,
+    "month": 9,
+    "day": 16,
+    "calendar": "g",
+    "time": "07:02",
+    "time_type": "d",
+    "hour": 7.033333,
+    "time_unknown": false,
+    "place": "Metuchen",
+    "country": "New Jersey",
+    "lat": 40.55,
+    "lon": -74.366667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Copperfield,_David",
+  "source_notes": "B.C. in hand, LMR\\n",
+  "categories": [
+    "Traits : Personality : Hard worker",
+    "Traits : Personality : Perfectionist",
+    "Traits : Personality : Persistent",
+    "Family : Relationship : Mate - Noted",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Financial : Gain - Financial success in field",
+    "Passions : Criminal Perpetrator : Lawsuit instigated",
+    "Vocation : Business : Business owner",
+    "Vocation : Entertainment : Magic",
+    "Vocation : Entertainment : Night Club/ Vaudeville",
+    "Notable : Extraordinary Talents : For Eye-hand coordination",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 10.710079,
+    "lagna": 130.710079,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.252423,
+    "jd_ut": 2435732.959722,
+    "planets": {
+      "Sun": {
+        "longitude": 150.288949,
+        "sign_index": 5,
+        "degree_in_sign": 0.288949,
+        "is_retrograde": false,
+        "speed": 0.975282
+      },
+      "Moon": {
+        "longitude": 288.314468,
+        "sign_index": 9,
+        "degree_in_sign": 18.314468,
+        "is_retrograde": false,
+        "speed": 14.867545
+      },
+      "Mars": {
+        "longitude": 323.395348,
+        "sign_index": 10,
+        "degree_in_sign": 23.395348,
+        "is_retrograde": true,
+        "speed": -0.258464
+      },
+      "Mercury": {
+        "longitude": 168.478723,
+        "sign_index": 5,
+        "degree_in_sign": 18.478723,
+        "is_retrograde": true,
+        "speed": -0.318413
+      },
+      "Jupiter": {
+        "longitude": 141.379537,
+        "sign_index": 4,
+        "degree_in_sign": 21.379537,
+        "is_retrograde": false,
+        "speed": 0.215394
+      },
+      "Venus": {
+        "longitude": 105.109877,
+        "sign_index": 3,
+        "degree_in_sign": 15.109877,
+        "is_retrograde": false,
+        "speed": 1.05791
+      },
+      "Saturn": {
+        "longitude": 214.686145,
+        "sign_index": 7,
+        "degree_in_sign": 4.686145,
+        "is_retrograde": false,
+        "speed": 0.071419
+      },
+      "Rahu": {
+        "longitude": 219.099587,
+        "sign_index": 7,
+        "degree_in_sign": 9.099587,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 39.099587,
+        "sign_index": 1,
+        "degree_in_sign": 9.099587,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

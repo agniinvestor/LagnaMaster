@@ -1,0 +1,116 @@
+{
+  "adb_id": 5996,
+  "name": "Connors, Mike",
+  "given_name": "Mike Connors",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424378.451389,
+    "year": 1925,
+    "month": 8,
+    "day": 15,
+    "calendar": "g",
+    "time": "14:50",
+    "time_type": "s",
+    "hour": 14.833333,
+    "time_unknown": false,
+    "place": "Fresno",
+    "country": "California",
+    "lat": 36.75,
+    "lon": -119.766667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connors,_Mike",
+  "source_notes": "B.R. in hand from Steinbrecher. (Same in Contemporary Sidereal Horoscopes.)\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Work : Job-Related Injury",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Vocation : Military : Military career",
+    "Notable : Awards : Emmy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 3.405351,
+    "lagna": 213.405351,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.818286,
+    "jd_ut": 2424378.451389,
+    "planets": {
+      "Sun": {
+        "longitude": 119.733412,
+        "sign_index": 3,
+        "degree_in_sign": 29.733412,
+        "is_retrograde": false,
+        "speed": 0.961478
+      },
+      "Moon": {
+        "longitude": 79.899386,
+        "sign_index": 2,
+        "degree_in_sign": 19.899386,
+        "is_retrograde": false,
+        "speed": 11.439008
+      },
+      "Mars": {
+        "longitude": 129.131922,
+        "sign_index": 4,
+        "degree_in_sign": 9.131922,
+        "is_retrograde": false,
+        "speed": 0.634662
+      },
+      "Mercury": {
+        "longitude": 135.757565,
+        "sign_index": 4,
+        "degree_in_sign": 15.757565,
+        "is_retrograde": true,
+        "speed": -0.403413
+      },
+      "Jupiter": {
+        "longitude": 260.795299,
+        "sign_index": 8,
+        "degree_in_sign": 20.795299,
+        "is_retrograde": true,
+        "speed": -0.074188
+      },
+      "Venus": {
+        "longitude": 149.866875,
+        "sign_index": 4,
+        "degree_in_sign": 29.866875,
+        "is_retrograde": false,
+        "speed": 1.207406
+      },
+      "Saturn": {
+        "longitude": 195.797748,
+        "sign_index": 6,
+        "degree_in_sign": 15.797748,
+        "is_retrograde": false,
+        "speed": 0.054878
+      },
+      "Rahu": {
+        "longitude": 100.798467,
+        "sign_index": 3,
+        "degree_in_sign": 10.798467,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 280.798467,
+        "sign_index": 9,
+        "degree_in_sign": 10.798467,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

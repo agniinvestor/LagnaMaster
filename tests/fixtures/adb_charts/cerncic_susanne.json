@@ -1,0 +1,109 @@
+{
+  "adb_id": 84767,
+  "name": "Cerncic, Susanne",
+  "given_name": "Susanne Cerncic",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439281.0625,
+    "year": 1966,
+    "month": 6,
+    "day": 4,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "s",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Wien",
+    "country": "Austria",
+    "lat": 48.208333,
+    "lon": 16.373056
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cerncic,_Susanne",
+  "source_notes": "Liefeld quotes her, birth record.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 28.922831,
+    "lagna": 148.922831,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.388096,
+    "jd_ut": 2439281.0625,
+    "planets": {
+      "Sun": {
+        "longitude": 50.087696,
+        "sign_index": 1,
+        "degree_in_sign": 20.087696,
+        "is_retrograde": false,
+        "speed": 0.957063
+      },
+      "Moon": {
+        "longitude": 245.426983,
+        "sign_index": 8,
+        "degree_in_sign": 5.426983,
+        "is_retrograde": false,
+        "speed": 16.361824
+      },
+      "Mars": {
+        "longitude": 41.328444,
+        "sign_index": 1,
+        "degree_in_sign": 11.328444,
+        "is_retrograde": false,
+        "speed": 0.7067
+      },
+      "Mercury": {
+        "longitude": 60.059718,
+        "sign_index": 2,
+        "degree_in_sign": 0.059718,
+        "is_retrograde": false,
+        "speed": 2.07818
+      },
+      "Jupiter": {
+        "longitude": 72.778485,
+        "sign_index": 2,
+        "degree_in_sign": 12.778485,
+        "is_retrograde": false,
+        "speed": 0.217535
+      },
+      "Venus": {
+        "longitude": 11.012541,
+        "sign_index": 0,
+        "degree_in_sign": 11.012541,
+        "is_retrograde": false,
+        "speed": 1.155686
+      },
+      "Saturn": {
+        "longitude": 335.181592,
+        "sign_index": 11,
+        "degree_in_sign": 5.181592,
+        "is_retrograde": false,
+        "speed": 0.059001
+      },
+      "Rahu": {
+        "longitude": 31.07835,
+        "sign_index": 1,
+        "degree_in_sign": 1.07835,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 211.07835,
+        "sign_index": 7,
+        "degree_in_sign": 1.07835,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

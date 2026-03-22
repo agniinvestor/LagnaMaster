@@ -1,0 +1,110 @@
+{
+  "adb_id": 79491,
+  "name": "Carré, Michel",
+  "given_name": "Michel Carré",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2386458.618657,
+    "year": 1821,
+    "month": 10,
+    "day": 20,
+    "calendar": "g",
+    "time": "03:15",
+    "time_type": "l",
+    "hour": 3.25,
+    "time_unknown": false,
+    "place": "Besançon",
+    "country": "France",
+    "lat": 47.25,
+    "lon": 6.033333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carré,_Michel",
+  "source_notes": "Sy Scholfield submitted birth certificate from the online Besançon archives (image 268/358): \"trois heures et quart du matin\" (3:15 AM). No data in margin.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 7.61671,
+    "lagna": 127.61671,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.368858,
+    "jd_ut": 2386458.618657,
+    "planets": {
+      "Sun": {
+        "longitude": 185.031269,
+        "sign_index": 6,
+        "degree_in_sign": 5.031269,
+        "is_retrograde": false,
+        "speed": 0.995625
+      },
+      "Moon": {
+        "longitude": 120.769973,
+        "sign_index": 4,
+        "degree_in_sign": 0.769973,
+        "is_retrograde": false,
+        "speed": 10.772919
+      },
+      "Mars": {
+        "longitude": 110.639022,
+        "sign_index": 3,
+        "degree_in_sign": 20.639022,
+        "is_retrograde": false,
+        "speed": 0.535136
+      },
+      "Mercury": {
+        "longitude": 206.492283,
+        "sign_index": 6,
+        "degree_in_sign": 26.492283,
+        "is_retrograde": false,
+        "speed": 1.323458
+      },
+      "Jupiter": {
+        "longitude": 3.657091,
+        "sign_index": 0,
+        "degree_in_sign": 3.657091,
+        "is_retrograde": true,
+        "speed": -0.13553
+      },
+      "Venus": {
+        "longitude": 223.32987,
+        "sign_index": 7,
+        "degree_in_sign": 13.32987,
+        "is_retrograde": false,
+        "speed": 1.196716
+      },
+      "Saturn": {
+        "longitude": 1.629013,
+        "sign_index": 0,
+        "degree_in_sign": 1.629013,
+        "is_retrograde": true,
+        "speed": -0.079436
+      },
+      "Rahu": {
+        "longitude": 310.251284,
+        "sign_index": 10,
+        "degree_in_sign": 10.251284,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 130.251284,
+        "sign_index": 4,
+        "degree_in_sign": 10.251284,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

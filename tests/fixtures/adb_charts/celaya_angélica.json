@@ -1,0 +1,112 @@
+{
+  "adb_id": 89104,
+  "name": "Celaya, Angélica",
+  "given_name": "Angélica Celaya",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2445160.0,
+    "year": 1982,
+    "month": 7,
+    "day": 9,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celaya,_Angélica",
+  "source_notes": "Sy Scholfield provided copy of birth notice, Tucson Citizen (Tucson, Arizona), 10 July 1982, page C1, born at Tucson Medical Center. \\n",
+  "categories": [
+    "Traits : Body : Appearance gorgeous",
+    "Traits : Body : Race",
+    "Vocation : Beauty : Model",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 23.52162,
+    "lagna": 53.52162,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.612909,
+    "jd_ut": 2445160.0,
+    "planets": {
+      "Sun": {
+        "longitude": 83.341071,
+        "sign_index": 2,
+        "degree_in_sign": 23.341071,
+        "is_retrograde": false,
+        "speed": 0.953137
+      },
+      "Moon": {
+        "longitude": 297.849172,
+        "sign_index": 9,
+        "degree_in_sign": 27.849172,
+        "is_retrograde": false,
+        "speed": 8.547896
+      },
+      "Mars": {
+        "longitude": 173.242758,
+        "sign_index": 5,
+        "degree_in_sign": 23.242758,
+        "is_retrograde": false,
+        "speed": 0.47659
+      },
+      "Mercury": {
+        "longitude": 66.432399,
+        "sign_index": 2,
+        "degree_in_sign": 6.432399,
+        "is_retrograde": false,
+        "speed": 1.740127
+      },
+      "Jupiter": {
+        "longitude": 187.033551,
+        "sign_index": 6,
+        "degree_in_sign": 7.033551,
+        "is_retrograde": false,
+        "speed": 0.034707
+      },
+      "Venus": {
+        "longitude": 53.003713,
+        "sign_index": 1,
+        "degree_in_sign": 23.003713,
+        "is_retrograde": false,
+        "speed": 1.192835
+      },
+      "Saturn": {
+        "longitude": 172.256712,
+        "sign_index": 5,
+        "degree_in_sign": 22.256712,
+        "is_retrograde": false,
+        "speed": 0.03448
+      },
+      "Rahu": {
+        "longitude": 79.541475,
+        "sign_index": 2,
+        "degree_in_sign": 19.541475,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 259.541475,
+        "sign_index": 8,
+        "degree_in_sign": 19.541475,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

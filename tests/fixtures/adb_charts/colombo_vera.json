@@ -1,0 +1,110 @@
+{
+  "adb_id": 19634,
+  "name": "Colombo, Vera",
+  "given_name": "Vera Colombo",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426563.833333,
+    "year": 1931,
+    "month": 8,
+    "day": 10,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Milan",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colombo,_Vera",
+  "source_notes": "Bordoni quotes B.C.\\n",
+  "categories": [
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Entertain/Music : Dancer/ Teacher",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 11.956983,
+    "lagna": 131.956983,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.901839,
+    "jd_ut": 2426563.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 113.827099,
+        "sign_index": 3,
+        "degree_in_sign": 23.827099,
+        "is_retrograde": false,
+        "speed": 0.95945
+      },
+      "Moon": {
+        "longitude": 67.033702,
+        "sign_index": 2,
+        "degree_in_sign": 7.033702,
+        "is_retrograde": false,
+        "speed": 9.426212
+      },
+      "Mars": {
+        "longitude": 162.450673,
+        "sign_index": 5,
+        "degree_in_sign": 12.450673,
+        "is_retrograde": false,
+        "speed": 0.624982
+      },
+      "Mercury": {
+        "longitude": 141.081748,
+        "sign_index": 4,
+        "degree_in_sign": 21.081748,
+        "is_retrograde": false,
+        "speed": 0.86217
+      },
+      "Jupiter": {
+        "longitude": 102.421367,
+        "sign_index": 3,
+        "degree_in_sign": 12.421367,
+        "is_retrograde": false,
+        "speed": 0.21984
+      },
+      "Venus": {
+        "longitude": 105.948569,
+        "sign_index": 3,
+        "degree_in_sign": 15.948569,
+        "is_retrograde": false,
+        "speed": 1.232782
+      },
+      "Saturn": {
+        "longitude": 265.120969,
+        "sign_index": 8,
+        "degree_in_sign": 25.120969,
+        "is_retrograde": true,
+        "speed": -0.059981
+      },
+      "Rahu": {
+        "longitude": 344.990533,
+        "sign_index": 11,
+        "degree_in_sign": 14.990533,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 164.990533,
+        "sign_index": 5,
+        "degree_in_sign": 14.990533,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

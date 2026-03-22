@@ -1,0 +1,112 @@
+{
+  "adb_id": 81106,
+  "name": "Crutzen, Paul J.",
+  "given_name": "Paul J. Crutzen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427410.340602,
+    "year": 1933,
+    "month": 12,
+    "day": 3,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.366667,
+    "lon": 4.9
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crutzen,_Paul_J.",
+  "source_notes": "Grazia Bordoni's Science file quotes Sterren Tijd.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Education : Researcher",
+    "Vocation : Science : Chemistry",
+    "Vocation : Science : Physics",
+    "Notable : Awards : Nobel prize"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 25.381088,
+    "lagna": 85.381088,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.934203,
+    "jd_ut": 2427410.340602,
+    "planets": {
+      "Sun": {
+        "longitude": 228.29887,
+        "sign_index": 7,
+        "degree_in_sign": 18.29887,
+        "is_retrograde": false,
+        "speed": 1.014317
+      },
+      "Moon": {
+        "longitude": 68.231859,
+        "sign_index": 2,
+        "degree_in_sign": 8.231859,
+        "is_retrograde": false,
+        "speed": 10.827101
+      },
+      "Mars": {
+        "longitude": 258.159972,
+        "sign_index": 8,
+        "degree_in_sign": 18.159972,
+        "is_retrograde": false,
+        "speed": 0.769159
+      },
+      "Mercury": {
+        "longitude": 208.041182,
+        "sign_index": 6,
+        "degree_in_sign": 28.041182,
+        "is_retrograde": false,
+        "speed": 0.780761
+      },
+      "Jupiter": {
+        "longitude": 174.25694,
+        "sign_index": 5,
+        "degree_in_sign": 24.25694,
+        "is_retrograde": false,
+        "speed": 0.165408
+      },
+      "Venus": {
+        "longitude": 275.263957,
+        "sign_index": 9,
+        "degree_in_sign": 5.263957,
+        "is_retrograde": false,
+        "speed": 0.950812
+      },
+      "Saturn": {
+        "longitude": 288.827031,
+        "sign_index": 9,
+        "degree_in_sign": 18.827031,
+        "is_retrograde": false,
+        "speed": 0.077738
+      },
+      "Rahu": {
+        "longitude": 300.132355,
+        "sign_index": 10,
+        "degree_in_sign": 0.132355,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 120.132355,
+        "sign_index": 4,
+        "degree_in_sign": 0.132355,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

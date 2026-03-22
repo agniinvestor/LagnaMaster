@@ -1,0 +1,112 @@
+{
+  "adb_id": 94844,
+  "name": "Carr, Fred",
+  "given_name": "Fred Carr",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432052.4375,
+    "year": 1946,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "s",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Phoenix",
+    "country": "Arizona",
+    "lat": 33.45,
+    "lon": -112.066667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carr,_Fred",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Alzheimer's/ Senility",
+    "Diagnoses : Major Diseases : Cancer",
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Vocation : Sports : Football",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 10.550686,
+    "lagna": 220.550686,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.111692,
+    "jd_ut": 2432052.4375,
+    "planets": {
+      "Sun": {
+        "longitude": 123.201496,
+        "sign_index": 4,
+        "degree_in_sign": 3.201496,
+        "is_retrograde": false,
+        "speed": 0.962595
+      },
+      "Moon": {
+        "longitude": 31.004853,
+        "sign_index": 1,
+        "degree_in_sign": 1.004853,
+        "is_retrograde": false,
+        "speed": 17.620577
+      },
+      "Mars": {
+        "longitude": 163.449303,
+        "sign_index": 5,
+        "degree_in_sign": 13.449303,
+        "is_retrograde": false,
+        "speed": 0.63688
+      },
+      "Mercury": {
+        "longitude": 104.763948,
+        "sign_index": 3,
+        "degree_in_sign": 14.763948,
+        "is_retrograde": false,
+        "speed": 0.847061
+      },
+      "Jupiter": {
+        "longitude": 180.164624,
+        "sign_index": 6,
+        "degree_in_sign": 0.164624,
+        "is_retrograde": false,
+        "speed": 0.159727
+      },
+      "Venus": {
+        "longitude": 168.351317,
+        "sign_index": 5,
+        "degree_in_sign": 18.351317,
+        "is_retrograde": false,
+        "speed": 1.065211
+      },
+      "Saturn": {
+        "longitude": 99.067112,
+        "sign_index": 3,
+        "degree_in_sign": 9.067112,
+        "is_retrograde": false,
+        "speed": 0.121971
+      },
+      "Rahu": {
+        "longitude": 54.138035,
+        "sign_index": 1,
+        "degree_in_sign": 24.138035,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 234.138035,
+        "sign_index": 7,
+        "degree_in_sign": 24.138035,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

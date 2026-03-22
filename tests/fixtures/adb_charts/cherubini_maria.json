@@ -1,0 +1,111 @@
+{
+  "adb_id": 47850,
+  "name": "Cherubini, Maria",
+  "given_name": "Maria Cherubini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2364143.469444,
+    "year": 1760,
+    "month": 9,
+    "day": 14,
+    "calendar": "g",
+    "time": "00:01",
+    "time_type": "l",
+    "hour": 0.016667,
+    "time_unknown": false,
+    "place": "Florence",
+    "country": "Italy",
+    "lat": 43.766667,
+    "lon": 11.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cherubini,_Maria",
+  "source_notes": "Barbault quotes E. Sanchez for baptism certificate.\\n",
+  "categories": [
+    "Lifestyle : Work : Same Job more than 10 yrs",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 4.684567,
+    "lagna": 64.684567,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.516205,
+    "jd_ut": 2364143.469444,
+    "planets": {
+      "Sun": {
+        "longitude": 151.012619,
+        "sign_index": 5,
+        "degree_in_sign": 1.012619,
+        "is_retrograde": false,
+        "speed": 0.976378
+      },
+      "Moon": {
+        "longitude": 202.556511,
+        "sign_index": 6,
+        "degree_in_sign": 22.556511,
+        "is_retrograde": false,
+        "speed": 14.297536
+      },
+      "Mars": {
+        "longitude": 206.19073,
+        "sign_index": 6,
+        "degree_in_sign": 26.19073,
+        "is_retrograde": false,
+        "speed": 0.681605
+      },
+      "Mercury": {
+        "longitude": 134.284089,
+        "sign_index": 4,
+        "degree_in_sign": 14.284089,
+        "is_retrograde": false,
+        "speed": 0.404346
+      },
+      "Jupiter": {
+        "longitude": 298.37748,
+        "sign_index": 9,
+        "degree_in_sign": 28.37748,
+        "is_retrograde": true,
+        "speed": -0.090368
+      },
+      "Venus": {
+        "longitude": 158.999433,
+        "sign_index": 5,
+        "degree_in_sign": 8.999433,
+        "is_retrograde": false,
+        "speed": 1.243462
+      },
+      "Saturn": {
+        "longitude": 335.086117,
+        "sign_index": 11,
+        "degree_in_sign": 5.086117,
+        "is_retrograde": true,
+        "speed": -0.077246
+      },
+      "Rahu": {
+        "longitude": 52.7804,
+        "sign_index": 1,
+        "degree_in_sign": 22.7804,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 232.7804,
+        "sign_index": 7,
+        "degree_in_sign": 22.7804,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

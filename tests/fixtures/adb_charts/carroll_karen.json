@@ -1,0 +1,111 @@
+{
+  "adb_id": 105500,
+  "name": "Carroll, Karen",
+  "given_name": "Karen Carroll",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438068.124306,
+    "year": 1963,
+    "month": 2,
+    "day": 7,
+    "calendar": "g",
+    "time": "09:59",
+    "time_type": "s",
+    "hour": 9.983333,
+    "time_unknown": false,
+    "place": "Newport",
+    "country": "Vermont",
+    "lat": 44.933333,
+    "lon": -72.2
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carroll,_Karen",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file (State of Vermont Department of Health, no. 58).\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Law : Attorney",
+    "Vocation : Law : Jurist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 18.922849,
+    "lagna": 348.922849,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.341715,
+    "jd_ut": 2438068.124306,
+    "planets": {
+      "Sun": {
+        "longitude": 294.780146,
+        "sign_index": 9,
+        "degree_in_sign": 24.780146,
+        "is_retrograde": false,
+        "speed": 1.012636
+      },
+      "Moon": {
+        "longitude": 103.065124,
+        "sign_index": 3,
+        "degree_in_sign": 13.065124,
+        "is_retrograde": false,
+        "speed": 16.726925
+      },
+      "Mars": {
+        "longitude": 110.367607,
+        "sign_index": 3,
+        "degree_in_sign": 20.367607,
+        "is_retrograde": true,
+        "speed": -0.395094
+      },
+      "Mercury": {
+        "longitude": 269.692038,
+        "sign_index": 8,
+        "degree_in_sign": 29.692038,
+        "is_retrograde": false,
+        "speed": 0.657911
+      },
+      "Jupiter": {
+        "longitude": 323.409416,
+        "sign_index": 10,
+        "degree_in_sign": 23.409416,
+        "is_retrograde": false,
+        "speed": 0.227484
+      },
+      "Venus": {
+        "longitude": 248.585439,
+        "sign_index": 8,
+        "degree_in_sign": 8.585439,
+        "is_retrograde": false,
+        "speed": 1.092315
+      },
+      "Saturn": {
+        "longitude": 290.984217,
+        "sign_index": 9,
+        "degree_in_sign": 20.984217,
+        "is_retrograde": false,
+        "speed": 0.119633
+      },
+      "Rahu": {
+        "longitude": 95.354427,
+        "sign_index": 3,
+        "degree_in_sign": 5.354427,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 275.354427,
+        "sign_index": 9,
+        "degree_in_sign": 5.354427,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 24264,
+  "name": "Currie, Phillip",
+  "given_name": "Phillip Currie",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2432988.71875,
+    "year": 1949,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "00:15",
+    "time_type": "s",
+    "hour": 0.25,
+    "time_unknown": false,
+    "place": "Brampton",
+    "country": "Ontario (CAN)",
+    "lat": 43.683333,
+    "lon": -79.766667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "leo",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Currie,_Phillip",
+  "source_notes": "John McKay-Clements quotes him in a postcard, 1997, \"I seem to remember ... just after midnight.\"\\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Science : Other Science"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 14.603205,
+    "lagna": 194.603205,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.147492,
+    "jd_ut": 2432988.71875,
+    "planets": {
+      "Sun": {
+        "longitude": 329.163896,
+        "sign_index": 10,
+        "degree_in_sign": 29.163896,
+        "is_retrograde": false,
+        "speed": 0.996777
+      },
+      "Moon": {
+        "longitude": 126.743752,
+        "sign_index": 4,
+        "degree_in_sign": 6.743752,
+        "is_retrograde": false,
+        "speed": 11.19438
+      },
+      "Mars": {
+        "longitude": 330.064699,
+        "sign_index": 11,
+        "degree_in_sign": 0.064699,
+        "is_retrograde": false,
+        "speed": 0.782543
+      },
+      "Mercury": {
+        "longitude": 305.154073,
+        "sign_index": 10,
+        "degree_in_sign": 5.154073,
+        "is_retrograde": false,
+        "speed": 1.412461
+      },
+      "Jupiter": {
+        "longitude": 272.426391,
+        "sign_index": 9,
+        "degree_in_sign": 2.426391,
+        "is_retrograde": false,
+        "speed": 0.174708
+      },
+      "Venus": {
+        "longitude": 320.337553,
+        "sign_index": 10,
+        "degree_in_sign": 20.337553,
+        "is_retrograde": false,
+        "speed": 1.245216
+      },
+      "Saturn": {
+        "longitude": 128.1321,
+        "sign_index": 4,
+        "degree_in_sign": 8.1321,
+        "is_retrograde": true,
+        "speed": -0.072333
+      },
+      "Rahu": {
+        "longitude": 4.522561,
+        "sign_index": 0,
+        "degree_in_sign": 4.522561,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 184.522561,
+        "sign_index": 6,
+        "degree_in_sign": 4.522561,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

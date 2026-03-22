@@ -1,0 +1,108 @@
+{
+  "adb_id": 102251,
+  "name": "Ceulemans, Raymond",
+  "given_name": "Raymond Ceulemans",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428727.416667,
+    "year": 1937,
+    "month": 7,
+    "day": 12,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "d",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Lier",
+    "country": "Belgium",
+    "lat": 51.133333,
+    "lon": 4.566667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ceulemans,_Raymond",
+  "source_notes": "Taeger Vol. 4, p. 90, TAE (JAE via registry office (d)).\\n",
+  "categories": [
+    "Vocation : Sports : Other Sports"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 2.173231,
+    "lagna": 302.173231,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.98456,
+    "jd_ut": 2428727.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 87.107137,
+        "sign_index": 2,
+        "degree_in_sign": 27.107137,
+        "is_retrograde": false,
+        "speed": 0.953843
+      },
+      "Moon": {
+        "longitude": 148.180217,
+        "sign_index": 4,
+        "degree_in_sign": 28.180217,
+        "is_retrograde": false,
+        "speed": 13.217388
+      },
+      "Mars": {
+        "longitude": 208.11379,
+        "sign_index": 6,
+        "degree_in_sign": 28.11379,
+        "is_retrograde": false,
+        "speed": 0.197638
+      },
+      "Mercury": {
+        "longitude": 92.351838,
+        "sign_index": 3,
+        "degree_in_sign": 2.351838,
+        "is_retrograde": false,
+        "speed": 2.090133
+      },
+      "Jupiter": {
+        "longitude": 269.735269,
+        "sign_index": 8,
+        "degree_in_sign": 29.735269,
+        "is_retrograde": true,
+        "speed": -0.128718
+      },
+      "Venus": {
+        "longitude": 42.193649,
+        "sign_index": 1,
+        "degree_in_sign": 12.193649,
+        "is_retrograde": false,
+        "speed": 1.040952
+      },
+      "Saturn": {
+        "longitude": 342.129113,
+        "sign_index": 11,
+        "degree_in_sign": 12.129113,
+        "is_retrograde": false,
+        "speed": 0.007239
+      },
+      "Rahu": {
+        "longitude": 230.337764,
+        "sign_index": 7,
+        "degree_in_sign": 20.337764,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 50.337764,
+        "sign_index": 1,
+        "degree_in_sign": 20.337764,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

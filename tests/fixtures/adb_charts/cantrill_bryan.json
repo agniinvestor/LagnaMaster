@@ -1,0 +1,110 @@
+{
+  "adb_id": 91669,
+  "name": "Cantrill, Bryan",
+  "given_name": "Bryan Cantrill",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442020.444444,
+    "year": 1973,
+    "month": 12,
+    "day": 3,
+    "calendar": "g",
+    "time": "17:40",
+    "time_type": "s",
+    "hour": 17.666667,
+    "time_unknown": false,
+    "place": "Burlington",
+    "country": "Vermont",
+    "lat": 44.483333,
+    "lon": -73.216667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantrill,_Bryan",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Computer : Programmer",
+    "Vocation : Engineer : Other Engineer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.155235,
+    "lagna": 47.155235,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.492849,
+    "jd_ut": 2442020.444444,
+    "planets": {
+      "Sun": {
+        "longitude": 228.140756,
+        "sign_index": 7,
+        "degree_in_sign": 18.140756,
+        "is_retrograde": false,
+        "speed": 1.01443
+      },
+      "Moon": {
+        "longitude": 328.229446,
+        "sign_index": 10,
+        "degree_in_sign": 28.229446,
+        "is_retrograde": false,
+        "speed": 9.035625
+      },
+      "Mars": {
+        "longitude": 2.219778,
+        "sign_index": 0,
+        "degree_in_sign": 2.219778,
+        "is_retrograde": false,
+        "speed": 0.102128
+      },
+      "Mercury": {
+        "longitude": 209.535785,
+        "sign_index": 6,
+        "degree_in_sign": 29.535785,
+        "is_retrograde": false,
+        "speed": 1.350326
+      },
+      "Jupiter": {
+        "longitude": 285.304576,
+        "sign_index": 9,
+        "degree_in_sign": 15.304576,
+        "is_retrograde": false,
+        "speed": 0.178426
+      },
+      "Venus": {
+        "longitude": 273.414426,
+        "sign_index": 9,
+        "degree_in_sign": 3.414426,
+        "is_retrograde": false,
+        "speed": 0.810208
+      },
+      "Saturn": {
+        "longitude": 69.304226,
+        "sign_index": 2,
+        "degree_in_sign": 9.304226,
+        "is_retrograde": true,
+        "speed": -0.074034
+      },
+      "Rahu": {
+        "longitude": 245.912909,
+        "sign_index": 8,
+        "degree_in_sign": 5.912909,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 65.912909,
+        "sign_index": 2,
+        "degree_in_sign": 5.912909,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

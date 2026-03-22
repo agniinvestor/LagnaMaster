@@ -1,0 +1,113 @@
+{
+  "adb_id": 47907,
+  "name": "Colpi, Henri Enrico",
+  "given_name": "Henri Enrico Colpi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422886.291667,
+    "year": 1921,
+    "month": 7,
+    "day": 15,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Brig",
+    "country": "Switzerland",
+    "lat": 46.316667,
+    "lon": 8.0
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colpi,_Henri_Enrico",
+  "source_notes": "B.R. in hand from Steinbrecher.\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Publisher/ Editor",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 3.873724,
+    "lagna": 243.873724,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.761237,
+    "jd_ut": 2422886.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 89.94129,
+        "sign_index": 2,
+        "degree_in_sign": 29.94129,
+        "is_retrograde": false,
+        "speed": 0.953691
+      },
+      "Moon": {
+        "longitude": 223.235902,
+        "sign_index": 7,
+        "degree_in_sign": 13.235902,
+        "is_retrograde": false,
+        "speed": 8.747489
+      },
+      "Mars": {
+        "longitude": 85.08509,
+        "sign_index": 2,
+        "degree_in_sign": 25.08509,
+        "is_retrograde": false,
+        "speed": 0.655261
+      },
+      "Mercury": {
+        "longitude": 78.901493,
+        "sign_index": 2,
+        "degree_in_sign": 18.901493,
+        "is_retrograde": true,
+        "speed": -0.291599
+      },
+      "Jupiter": {
+        "longitude": 142.765547,
+        "sign_index": 4,
+        "degree_in_sign": 22.765547,
+        "is_retrograde": false,
+        "speed": 0.166572
+      },
+      "Venus": {
+        "longitude": 44.885963,
+        "sign_index": 1,
+        "degree_in_sign": 14.885963,
+        "is_retrograde": false,
+        "speed": 1.032475
+      },
+      "Saturn": {
+        "longitude": 147.722856,
+        "sign_index": 4,
+        "degree_in_sign": 27.722856,
+        "is_retrograde": false,
+        "speed": 0.084435
+      },
+      "Rahu": {
+        "longitude": 179.871123,
+        "sign_index": 5,
+        "degree_in_sign": 29.871123,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 359.871123,
+        "sign_index": 11,
+        "degree_in_sign": 29.871123,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

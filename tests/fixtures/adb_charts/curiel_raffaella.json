@@ -1,0 +1,108 @@
+{
+  "adb_id": 53684,
+  "name": "Curiel, Raffaella",
+  "given_name": "Raffaella Curiel",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430733.513889,
+    "year": 1943,
+    "month": 1,
+    "day": 9,
+    "calendar": "g",
+    "time": "01:20",
+    "time_type": "s",
+    "hour": 1.333333,
+    "time_unknown": false,
+    "place": "Gardone Riviera",
+    "country": "Italy",
+    "lat": 45.616667,
+    "lon": 10.566667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curiel,_Raffaella",
+  "source_notes": "Steinbrecher collection: Bordoni/7 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Beauty : Designer/ Fashion"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 8.909875,
+    "lagna": 158.909875,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.061263,
+    "jd_ut": 2430733.513889,
+    "planets": {
+      "Sun": {
+        "longitude": 264.805355,
+        "sign_index": 8,
+        "degree_in_sign": 24.805355,
+        "is_retrograde": false,
+        "speed": 1.019434
+      },
+      "Moon": {
+        "longitude": 299.387727,
+        "sign_index": 9,
+        "degree_in_sign": 29.387727,
+        "is_retrograde": false,
+        "speed": 18.502073
+      },
+      "Mars": {
+        "longitude": 234.13325,
+        "sign_index": 7,
+        "degree_in_sign": 24.13325,
+        "is_retrograde": false,
+        "speed": 0.714856
+      },
+      "Mercury": {
+        "longitude": 283.927458,
+        "sign_index": 9,
+        "degree_in_sign": 13.927458,
+        "is_retrograde": false,
+        "speed": 1.016331
+      },
+      "Jupiter": {
+        "longitude": 87.44437,
+        "sign_index": 2,
+        "degree_in_sign": 27.44437,
+        "is_retrograde": true,
+        "speed": -0.134865
+      },
+      "Venus": {
+        "longitude": 277.688232,
+        "sign_index": 9,
+        "degree_in_sign": 7.688232,
+        "is_retrograde": false,
+        "speed": 1.254987
+      },
+      "Saturn": {
+        "longitude": 43.261803,
+        "sign_index": 1,
+        "degree_in_sign": 13.261803,
+        "is_retrograde": true,
+        "speed": -0.050252
+      },
+      "Rahu": {
+        "longitude": 124.030521,
+        "sign_index": 4,
+        "degree_in_sign": 4.030521,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 304.030521,
+        "sign_index": 10,
+        "degree_in_sign": 4.030521,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

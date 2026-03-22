@@ -1,0 +1,109 @@
+{
+  "adb_id": 101477,
+  "name": "Castroneves, Hélio",
+  "given_name": "Hélio Castroneves",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442543.059028,
+    "year": 1975,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "10:25",
+    "time_type": "s",
+    "hour": 10.416667,
+    "time_unknown": false,
+    "place": "São Paulo",
+    "country": "Brazil",
+    "lat": -23.5525,
+    "lon": -46.624722
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castroneves,_Hélio",
+  "source_notes": "Birth certificate in hand from Guilherme Salviano, copy on file. \\n",
+  "categories": [
+    "Vocation : Sports : Race Cars",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 23.713457,
+    "lagna": 53.713457,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.512834,
+    "jd_ut": 2442543.059028,
+    "planets": {
+      "Sun": {
+        "longitude": 25.756199,
+        "sign_index": 0,
+        "degree_in_sign": 25.756199,
+        "is_retrograde": false,
+        "speed": 0.966837
+      },
+      "Moon": {
+        "longitude": 17.518124,
+        "sign_index": 0,
+        "degree_in_sign": 17.518124,
+        "is_retrograde": false,
+        "speed": 7.938017
+      },
+      "Mars": {
+        "longitude": 328.347223,
+        "sign_index": 10,
+        "degree_in_sign": 28.347223,
+        "is_retrograde": false,
+        "speed": 0.757053
+      },
+      "Mercury": {
+        "longitude": 46.158846,
+        "sign_index": 1,
+        "degree_in_sign": 16.158846,
+        "is_retrograde": false,
+        "speed": 1.408302
+      },
+      "Jupiter": {
+        "longitude": 348.858574,
+        "sign_index": 11,
+        "degree_in_sign": 18.858574,
+        "is_retrograde": false,
+        "speed": 0.216512
+      },
+      "Venus": {
+        "longitude": 67.29427,
+        "sign_index": 2,
+        "degree_in_sign": 7.29427,
+        "is_retrograde": false,
+        "speed": 1.12872
+      },
+      "Saturn": {
+        "longitude": 81.249212,
+        "sign_index": 2,
+        "degree_in_sign": 21.249212,
+        "is_retrograde": false,
+        "speed": 0.091578
+      },
+      "Rahu": {
+        "longitude": 218.218497,
+        "sign_index": 7,
+        "degree_in_sign": 8.218497,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 38.218497,
+        "sign_index": 1,
+        "degree_in_sign": 8.218497,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

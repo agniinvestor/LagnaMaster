@@ -1,0 +1,111 @@
+{
+  "adb_id": 49696,
+  "name": "Conigliaro, Tony",
+  "given_name": "Tony Conigliaro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431463.536111,
+    "year": 1945,
+    "month": 1,
+    "day": 7,
+    "calendar": "g",
+    "time": "20:52",
+    "time_type": "w",
+    "hour": 20.866667,
+    "time_unknown": false,
+    "place": "Revere",
+    "country": "Massachusetts",
+    "lat": 42.416667,
+    "lon": -71.016667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conigliaro,_Tony",
+  "source_notes": "Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Family : Childhood : Family close",
+    "Vocation : Sports : Baseball"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 12.12557,
+    "lagna": 102.12557,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.089175,
+    "jd_ut": 2431463.536111,
+    "planets": {
+      "Sun": {
+        "longitude": 264.305887,
+        "sign_index": 8,
+        "degree_in_sign": 24.305887,
+        "is_retrograde": false,
+        "speed": 1.019242
+      },
+      "Moon": {
+        "longitude": 191.094333,
+        "sign_index": 6,
+        "degree_in_sign": 11.094333,
+        "is_retrograde": false,
+        "speed": 15.77747
+      },
+      "Mars": {
+        "longitude": 248.573029,
+        "sign_index": 8,
+        "degree_in_sign": 8.573029,
+        "is_retrograde": false,
+        "speed": 0.746544
+      },
+      "Mercury": {
+        "longitude": 241.550264,
+        "sign_index": 8,
+        "degree_in_sign": 1.550264,
+        "is_retrograde": false,
+        "speed": 0.660082
+      },
+      "Jupiter": {
+        "longitude": 154.384327,
+        "sign_index": 5,
+        "degree_in_sign": 4.384327,
+        "is_retrograde": false,
+        "speed": 0.013335
+      },
+      "Venus": {
+        "longitude": 309.458918,
+        "sign_index": 10,
+        "degree_in_sign": 9.458918,
+        "is_retrograde": false,
+        "speed": 1.136379
+      },
+      "Saturn": {
+        "longitude": 73.414147,
+        "sign_index": 2,
+        "degree_in_sign": 13.414147,
+        "is_retrograde": true,
+        "speed": -0.080357
+      },
+      "Rahu": {
+        "longitude": 85.345135,
+        "sign_index": 2,
+        "degree_in_sign": 25.345135,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 265.345135,
+        "sign_index": 8,
+        "degree_in_sign": 25.345135,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

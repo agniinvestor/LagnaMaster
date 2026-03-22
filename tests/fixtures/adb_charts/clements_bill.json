@@ -1,0 +1,110 @@
+{
+  "adb_id": 73783,
+  "name": "Clements, Bill",
+  "given_name": "Bill Clements",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421332.027778,
+    "year": 1917,
+    "month": 4,
+    "day": 13,
+    "calendar": "g",
+    "time": "06:40",
+    "time_type": "s",
+    "hour": 6.666667,
+    "time_unknown": false,
+    "place": "Highland Park",
+    "country": "Texas",
+    "lat": 32.833333,
+    "lon": -96.8
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clements,_Bill",
+  "source_notes": "Sy Scholfield quotes birth certificates for 6:40 am [https://familysearch.org/ark:/61903/1:1:X2KP-V9B] and 7am (filed 28 Aug. 1943) [https://familysearch.org/ark:/61903/1:1:X2KP-V9R]. The time on the original certificate is used.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 20.018017,
+    "lagna": 350.018017,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.701816,
+    "jd_ut": 2421332.027778,
+    "planets": {
+      "Sun": {
+        "longitude": 0.302242,
+        "sign_index": 0,
+        "degree_in_sign": 0.302242,
+        "is_retrograde": false,
+        "speed": 0.979349
+      },
+      "Moon": {
+        "longitude": 253.040525,
+        "sign_index": 8,
+        "degree_in_sign": 13.040525,
+        "is_retrograde": false,
+        "speed": 8.973636
+      },
+      "Mars": {
+        "longitude": 351.04576,
+        "sign_index": 11,
+        "degree_in_sign": 21.04576,
+        "is_retrograde": false,
+        "speed": 0.7672
+      },
+      "Mercury": {
+        "longitude": 15.481352,
+        "sign_index": 0,
+        "degree_in_sign": 15.481352,
+        "is_retrograde": false,
+        "speed": 1.809083
+      },
+      "Jupiter": {
+        "longitude": 19.421952,
+        "sign_index": 0,
+        "degree_in_sign": 19.421952,
+        "is_retrograde": false,
+        "speed": 0.231654
+      },
+      "Venus": {
+        "longitude": 356.953909,
+        "sign_index": 11,
+        "degree_in_sign": 26.953909,
+        "is_retrograde": false,
+        "speed": 1.237798
+      },
+      "Saturn": {
+        "longitude": 91.259187,
+        "sign_index": 3,
+        "degree_in_sign": 1.259187,
+        "is_retrograde": false,
+        "speed": 0.03336
+      },
+      "Rahu": {
+        "longitude": 262.234815,
+        "sign_index": 8,
+        "degree_in_sign": 22.234815,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 82.234815,
+        "sign_index": 2,
+        "degree_in_sign": 22.234815,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

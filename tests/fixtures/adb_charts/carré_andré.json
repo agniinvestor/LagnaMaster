@@ -1,0 +1,108 @@
+{
+  "adb_id": 93906,
+  "name": "Carré, André",
+  "given_name": "André Carré",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403804.736528,
+    "year": 1869,
+    "month": 4,
+    "day": 17,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carré,_André",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_acteurs_muet-2.pdf]. \\n",
+  "categories": [
+    "Vocation : Art : Photography"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 1.524646,
+    "lagna": 1.524646,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.031805,
+    "jd_ut": 2403804.736528,
+    "planets": {
+      "Sun": {
+        "longitude": 5.212004,
+        "sign_index": 0,
+        "degree_in_sign": 5.212004,
+        "is_retrograde": false,
+        "speed": 0.976816
+      },
+      "Moon": {
+        "longitude": 65.672917,
+        "sign_index": 2,
+        "degree_in_sign": 5.672917,
+        "is_retrograde": false,
+        "speed": 16.790945
+      },
+      "Mars": {
+        "longitude": 115.859073,
+        "sign_index": 3,
+        "degree_in_sign": 25.859073,
+        "is_retrograde": false,
+        "speed": 0.225796
+      },
+      "Mercury": {
+        "longitude": 352.178779,
+        "sign_index": 11,
+        "degree_in_sign": 22.178779,
+        "is_retrograde": false,
+        "speed": 1.87878
+      },
+      "Jupiter": {
+        "longitude": 5.224219,
+        "sign_index": 0,
+        "degree_in_sign": 5.224219,
+        "is_retrograde": false,
+        "speed": 0.240601
+      },
+      "Venus": {
+        "longitude": 359.392255,
+        "sign_index": 11,
+        "degree_in_sign": 29.392255,
+        "is_retrograde": false,
+        "speed": 1.236065
+      },
+      "Saturn": {
+        "longitude": 234.75677,
+        "sign_index": 7,
+        "degree_in_sign": 24.75677,
+        "is_retrograde": true,
+        "speed": -0.034552
+      },
+      "Rahu": {
+        "longitude": 111.04304,
+        "sign_index": 3,
+        "degree_in_sign": 21.04304,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 291.04304,
+        "sign_index": 9,
+        "degree_in_sign": 21.04304,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 71624,
+  "name": "Cavallo, Mimmo",
+  "given_name": "Mimmo Cavallo",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433647.854167,
+    "year": 1951,
+    "month": 1,
+    "day": 1,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "s",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Taranto",
+    "country": "Italy",
+    "lat": 40.466667,
+    "lon": 17.25
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cavallo,_Mimmo",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from him.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 2.901212,
+    "lagna": 272.901212,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.172695,
+    "jd_ut": 2433647.854167,
+    "planets": {
+      "Sun": {
+        "longitude": 256.94109,
+        "sign_index": 8,
+        "degree_in_sign": 16.94109,
+        "is_retrograde": false,
+        "speed": 1.01927
+      },
+      "Moon": {
+        "longitude": 168.379079,
+        "sign_index": 5,
+        "degree_in_sign": 18.379079,
+        "is_retrograde": false,
+        "speed": 11.04422
+      },
+      "Mars": {
+        "longitude": 290.137183,
+        "sign_index": 9,
+        "degree_in_sign": 20.137183,
+        "is_retrograde": false,
+        "speed": 0.786351
+      },
+      "Mercury": {
+        "longitude": 258.135021,
+        "sign_index": 8,
+        "degree_in_sign": 18.135021,
+        "is_retrograde": true,
+        "speed": -1.35038
+      },
+      "Jupiter": {
+        "longitude": 311.584348,
+        "sign_index": 10,
+        "degree_in_sign": 11.584348,
+        "is_retrograde": false,
+        "speed": 0.186695
+      },
+      "Venus": {
+        "longitude": 268.632299,
+        "sign_index": 8,
+        "degree_in_sign": 28.632299,
+        "is_retrograde": false,
+        "speed": 1.255506
+      },
+      "Saturn": {
+        "longitude": 159.08623,
+        "sign_index": 5,
+        "degree_in_sign": 9.08623,
+        "is_retrograde": false,
+        "speed": 0.019537
+      },
+      "Rahu": {
+        "longitude": 329.593618,
+        "sign_index": 10,
+        "degree_in_sign": 29.593618,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 149.593618,
+        "sign_index": 4,
+        "degree_in_sign": 29.593618,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

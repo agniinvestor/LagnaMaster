@@ -1,0 +1,109 @@
+{
+  "adb_id": 69597,
+  "name": "Chiaroni, Jean-Paul",
+  "given_name": "Jean-Paul Chiaroni",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437809.5,
+    "year": 1962,
+    "month": 5,
+    "day": 25,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Ajaccio",
+    "country": "France",
+    "lat": 41.916667,
+    "lon": 8.733333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiaroni,_Jean-Paul",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'sports divers' pdf file, p. 36.\\n",
+  "categories": [
+    "Vocation : Sports : Race Cars",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 10.536567,
+    "lagna": 280.536567,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.331826,
+    "jd_ut": 2437809.5,
+    "planets": {
+      "Sun": {
+        "longitude": 39.984308,
+        "sign_index": 1,
+        "degree_in_sign": 9.984308,
+        "is_retrograde": false,
+        "speed": 0.960405
+      },
+      "Moon": {
+        "longitude": 287.103866,
+        "sign_index": 9,
+        "degree_in_sign": 17.103866,
+        "is_retrograde": false,
+        "speed": 11.42178
+      },
+      "Mars": {
+        "longitude": 3.675491,
+        "sign_index": 0,
+        "degree_in_sign": 3.675491,
+        "is_retrograde": false,
+        "speed": 0.752391
+      },
+      "Mercury": {
+        "longitude": 56.995062,
+        "sign_index": 1,
+        "degree_in_sign": 26.995062,
+        "is_retrograde": false,
+        "speed": 0.107608
+      },
+      "Jupiter": {
+        "longitude": 317.089123,
+        "sign_index": 10,
+        "degree_in_sign": 17.089123,
+        "is_retrograde": false,
+        "speed": 0.11367
+      },
+      "Venus": {
+        "longitude": 68.94098,
+        "sign_index": 2,
+        "degree_in_sign": 8.94098,
+        "is_retrograde": false,
+        "speed": 1.203219
+      },
+      "Saturn": {
+        "longitude": 288.062534,
+        "sign_index": 9,
+        "degree_in_sign": 18.062534,
+        "is_retrograde": true,
+        "speed": -0.004976
+      },
+      "Rahu": {
+        "longitude": 109.059459,
+        "sign_index": 3,
+        "degree_in_sign": 19.059459,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 289.059459,
+        "sign_index": 9,
+        "degree_in_sign": 19.059459,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 50737,
+  "name": "Campbell, Allan McCullogh",
+  "given_name": "Allan McCullogh Campbell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425729.333333,
+    "year": 1929,
+    "month": 4,
+    "day": 27,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Berkeley",
+    "country": "California",
+    "lat": 37.866667,
+    "lon": -122.266667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campbell,_Allan_McCullogh",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Education : Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 28.272543,
+    "lagna": 88.272543,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.869933,
+    "jd_ut": 2425729.333333,
+    "planets": {
+      "Sun": {
+        "longitude": 14.185141,
+        "sign_index": 0,
+        "degree_in_sign": 14.185141,
+        "is_retrograde": false,
+        "speed": 0.971709
+      },
+      "Moon": {
+        "longitude": 237.407623,
+        "sign_index": 7,
+        "degree_in_sign": 27.407623,
+        "is_retrograde": false,
+        "speed": 14.693388
+      },
+      "Mars": {
+        "longitude": 89.010965,
+        "sign_index": 2,
+        "degree_in_sign": 29.010965,
+        "is_retrograde": false,
+        "speed": 0.518939
+      },
+      "Mercury": {
+        "longitude": 25.668302,
+        "sign_index": 0,
+        "degree_in_sign": 25.668302,
+        "is_retrograde": false,
+        "speed": 2.018916
+      },
+      "Jupiter": {
+        "longitude": 26.413797,
+        "sign_index": 0,
+        "degree_in_sign": 26.413797,
+        "is_retrograde": false,
+        "speed": 0.234651
+      },
+      "Venus": {
+        "longitude": 2.523571,
+        "sign_index": 0,
+        "degree_in_sign": 2.523571,
+        "is_retrograde": true,
+        "speed": -0.519975
+      },
+      "Saturn": {
+        "longitude": 247.386192,
+        "sign_index": 8,
+        "degree_in_sign": 7.386192,
+        "is_retrograde": true,
+        "speed": -0.028946
+      },
+      "Rahu": {
+        "longitude": 29.212422,
+        "sign_index": 0,
+        "degree_in_sign": 29.212422,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 209.212422,
+        "sign_index": 6,
+        "degree_in_sign": 29.212422,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

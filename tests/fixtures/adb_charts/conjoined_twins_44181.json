@@ -1,0 +1,110 @@
+{
+  "adb_id": 44181,
+  "name": "Conjoined Twins 44181",
+  "given_name": "Conjoined Twins 44181",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2452190.8125,
+    "year": 2001,
+    "month": 10,
+    "day": 8,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "d",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Palermo",
+    "country": "Italy",
+    "lat": 38.116667,
+    "lon": 13.366667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Conjoined_Twins_44181",
+  "source_notes": "Bordoni quotes news, Datanotizie No.41 1/2001\\n",
+  "categories": [
+    "Personal : Birth : Conjoined twins",
+    "Personal : Death : Accidental",
+    "Personal : Death : Short Life less than 29 Yrs"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 24.875348,
+    "lagna": 174.875348,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.881791,
+    "jd_ut": 2452190.8125,
+    "planets": {
+      "Sun": {
+        "longitude": 171.208936,
+        "sign_index": 5,
+        "degree_in_sign": 21.208936,
+        "is_retrograde": false,
+        "speed": 0.987092
+      },
+      "Moon": {
+        "longitude": 57.236086,
+        "sign_index": 1,
+        "degree_in_sign": 27.236086,
+        "is_retrograde": false,
+        "speed": 10.994636
+      },
+      "Mars": {
+        "longitude": 263.275959,
+        "sign_index": 8,
+        "degree_in_sign": 23.275959,
+        "is_retrograde": false,
+        "speed": 0.636153
+      },
+      "Mercury": {
+        "longitude": 183.148377,
+        "sign_index": 6,
+        "degree_in_sign": 3.148377,
+        "is_retrograde": true,
+        "speed": -0.828415
+      },
+      "Jupiter": {
+        "longitude": 80.77977,
+        "sign_index": 2,
+        "degree_in_sign": 20.77977,
+        "is_retrograde": false,
+        "speed": 0.079762
+      },
+      "Venus": {
+        "longitude": 147.247384,
+        "sign_index": 4,
+        "degree_in_sign": 27.247384,
+        "is_retrograde": false,
+        "speed": 1.234153
+      },
+      "Saturn": {
+        "longitude": 50.976359,
+        "sign_index": 1,
+        "degree_in_sign": 20.976359,
+        "is_retrograde": true,
+        "speed": -0.020533
+      },
+      "Rahu": {
+        "longitude": 66.964521,
+        "sign_index": 2,
+        "degree_in_sign": 6.964521,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 246.964521,
+        "sign_index": 8,
+        "degree_in_sign": 6.964521,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

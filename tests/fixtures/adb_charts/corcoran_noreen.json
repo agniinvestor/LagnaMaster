@@ -1,0 +1,110 @@
+{
+  "adb_id": 55113,
+  "name": "Corcoran, Noreen",
+  "given_name": "Noreen Corcoran",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431018.613889,
+    "year": 1943,
+    "month": 10,
+    "day": 20,
+    "calendar": "g",
+    "time": "22:44",
+    "time_type": "w",
+    "hour": 22.733333,
+    "time_unknown": false,
+    "place": "Quincy",
+    "country": "Massachusetts",
+    "lat": 42.25,
+    "lon": -71.0
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corcoran,_Noreen",
+  "source_notes": "Stephen Przybylowski quotes birth certificate\\n",
+  "categories": [
+    "Family : Relationship : Married late/never",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 2.654822,
+    "lagna": 62.654822,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.072164,
+    "jd_ut": 2431018.613889,
+    "planets": {
+      "Sun": {
+        "longitude": 183.762601,
+        "sign_index": 6,
+        "degree_in_sign": 3.762601,
+        "is_retrograde": false,
+        "speed": 0.994467
+      },
+      "Moon": {
+        "longitude": 94.931724,
+        "sign_index": 3,
+        "degree_in_sign": 4.931724,
+        "is_retrograde": false,
+        "speed": 13.739818
+      },
+      "Mars": {
+        "longitude": 58.804819,
+        "sign_index": 1,
+        "degree_in_sign": 28.804819,
+        "is_retrograde": false,
+        "speed": 0.099654
+      },
+      "Mercury": {
+        "longitude": 170.406513,
+        "sign_index": 5,
+        "degree_in_sign": 20.406513,
+        "is_retrograde": false,
+        "speed": 1.644498
+      },
+      "Jupiter": {
+        "longitude": 119.709857,
+        "sign_index": 3,
+        "degree_in_sign": 29.709857,
+        "is_retrograde": false,
+        "speed": 0.146731
+      },
+      "Venus": {
+        "longitude": 140.482802,
+        "sign_index": 4,
+        "degree_in_sign": 20.482802,
+        "is_retrograde": false,
+        "speed": 0.69061
+      },
+      "Saturn": {
+        "longitude": 63.445044,
+        "sign_index": 2,
+        "degree_in_sign": 3.445044,
+        "is_retrograde": true,
+        "speed": -0.020834
+      },
+      "Rahu": {
+        "longitude": 108.922483,
+        "sign_index": 3,
+        "degree_in_sign": 18.922483,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 288.922483,
+        "sign_index": 9,
+        "degree_in_sign": 18.922483,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

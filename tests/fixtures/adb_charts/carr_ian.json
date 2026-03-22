@@ -1,0 +1,116 @@
+{
+  "adb_id": 47537,
+  "name": "Carr, Ian",
+  "given_name": "Ian Carr",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427184.291667,
+    "year": 1933,
+    "month": 4,
+    "day": 21,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "d",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Dumfries",
+    "country": "Scotland",
+    "lat": 55.066667,
+    "lon": -3.616667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carr,_Ian",
+  "source_notes": "Paul Wright collection, B.C.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Pneumonia",
+    "Diagnoses : Major Diseases : Stroke",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Education : Teacher",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 11.464926,
+    "lagna": 161.464926,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.925561,
+    "jd_ut": 2427184.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 8.27991,
+        "sign_index": 0,
+        "degree_in_sign": 8.27991,
+        "is_retrograde": false,
+        "speed": 0.975318
+      },
+      "Moon": {
+        "longitude": 333.68068,
+        "sign_index": 11,
+        "degree_in_sign": 3.68068,
+        "is_retrograde": false,
+        "speed": 14.652938
+      },
+      "Mars": {
+        "longitude": 128.485725,
+        "sign_index": 4,
+        "degree_in_sign": 8.485725,
+        "is_retrograde": false,
+        "speed": 0.111499
+      },
+      "Mercury": {
+        "longitude": 341.029385,
+        "sign_index": 11,
+        "degree_in_sign": 11.029385,
+        "is_retrograde": false,
+        "speed": 1.053637
+      },
+      "Jupiter": {
+        "longitude": 140.892016,
+        "sign_index": 4,
+        "degree_in_sign": 20.892016,
+        "is_retrograde": true,
+        "speed": -0.056377
+      },
+      "Venus": {
+        "longitude": 8.30888,
+        "sign_index": 0,
+        "degree_in_sign": 8.30888,
+        "is_retrograde": false,
+        "speed": 1.236147
+      },
+      "Saturn": {
+        "longitude": 292.450962,
+        "sign_index": 9,
+        "degree_in_sign": 22.450962,
+        "is_retrograde": false,
+        "speed": 0.055448
+      },
+      "Rahu": {
+        "longitude": 312.111157,
+        "sign_index": 10,
+        "degree_in_sign": 12.111157,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 132.111157,
+        "sign_index": 4,
+        "degree_in_sign": 12.111157,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

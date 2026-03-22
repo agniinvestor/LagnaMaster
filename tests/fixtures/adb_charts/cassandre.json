@@ -1,0 +1,111 @@
+{
+  "adb_id": 64779,
+  "name": "Cassandre",
+  "given_name": "Cassandre",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415409.107639,
+    "year": 1901,
+    "month": 1,
+    "day": 24,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Khar'kov",
+    "country": "Ukraine",
+    "lat": 50.0,
+    "lon": 36.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassandre",
+  "source_notes": "Birth and death records in Didier Geslain archive, 'bd_pub_affichistes' pdf file, pp. 40-42.\\n",
+  "categories": [
+    "Personal : Death : Suicide",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Art : Other Art"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 23.748115,
+    "lagna": 83.748115,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.475386,
+    "jd_ut": 2415409.107639,
+    "planets": {
+      "Sun": {
+        "longitude": 281.476318,
+        "sign_index": 9,
+        "degree_in_sign": 11.476318,
+        "is_retrograde": false,
+        "speed": 1.017011
+      },
+      "Moon": {
+        "longitude": 333.907615,
+        "sign_index": 11,
+        "degree_in_sign": 3.907615,
+        "is_retrograde": false,
+        "speed": 11.055677
+      },
+      "Mars": {
+        "longitude": 139.228518,
+        "sign_index": 4,
+        "degree_in_sign": 19.228518,
+        "is_retrograde": true,
+        "speed": -0.149571
+      },
+      "Mercury": {
+        "longitude": 283.178628,
+        "sign_index": 9,
+        "degree_in_sign": 13.178628,
+        "is_retrograde": false,
+        "speed": 1.712198
+      },
+      "Jupiter": {
+        "longitude": 248.633338,
+        "sign_index": 8,
+        "degree_in_sign": 8.633338,
+        "is_retrograde": false,
+        "speed": 0.209564
+      },
+      "Venus": {
+        "longitude": 257.650301,
+        "sign_index": 8,
+        "degree_in_sign": 17.650301,
+        "is_retrograde": false,
+        "speed": 1.246411
+      },
+      "Saturn": {
+        "longitude": 257.955082,
+        "sign_index": 8,
+        "degree_in_sign": 17.955082,
+        "is_retrograde": false,
+        "speed": 0.111594
+      },
+      "Rahu": {
+        "longitude": 216.102795,
+        "sign_index": 7,
+        "degree_in_sign": 6.102795,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 36.102795,
+        "sign_index": 1,
+        "degree_in_sign": 6.102795,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

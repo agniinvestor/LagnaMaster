@@ -1,0 +1,108 @@
+{
+  "adb_id": 74949,
+  "name": "Charlin Correa, Carlos",
+  "given_name": "Carlos Charlin Correa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409653.987963,
+    "year": 1885,
+    "month": 4,
+    "day": 22,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "l",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Santiago",
+    "country": "Chile",
+    "lat": -33.45,
+    "lon": -70.666667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charlin_Correa,_Carlos",
+  "source_notes": "Castellanos quotes BC\\n",
+  "categories": [
+    "Vocation : Medical : Physician"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 23.865176,
+    "lagna": 353.865176,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.255387,
+    "jd_ut": 2409653.987963,
+    "planets": {
+      "Sun": {
+        "longitude": 10.233164,
+        "sign_index": 0,
+        "degree_in_sign": 10.233164,
+        "is_retrograde": false,
+        "speed": 0.973844
+      },
+      "Moon": {
+        "longitude": 106.959854,
+        "sign_index": 3,
+        "degree_in_sign": 16.959854,
+        "is_retrograde": false,
+        "speed": 18.632552
+      },
+      "Mars": {
+        "longitude": 355.425017,
+        "sign_index": 11,
+        "degree_in_sign": 25.425017,
+        "is_retrograde": false,
+        "speed": 0.76326
+      },
+      "Mercury": {
+        "longitude": 18.942318,
+        "sign_index": 0,
+        "degree_in_sign": 18.942318,
+        "is_retrograde": true,
+        "speed": -0.424776
+      },
+      "Jupiter": {
+        "longitude": 123.580471,
+        "sign_index": 4,
+        "degree_in_sign": 3.580471,
+        "is_retrograde": false,
+        "speed": 0.001953
+      },
+      "Venus": {
+        "longitude": 7.010236,
+        "sign_index": 0,
+        "degree_in_sign": 7.010236,
+        "is_retrograde": false,
+        "speed": 1.235128
+      },
+      "Saturn": {
+        "longitude": 58.606402,
+        "sign_index": 1,
+        "degree_in_sign": 28.606402,
+        "is_retrograde": false,
+        "speed": 0.100846
+      },
+      "Rahu": {
+        "longitude": 161.078756,
+        "sign_index": 5,
+        "degree_in_sign": 11.078756,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 341.078756,
+        "sign_index": 11,
+        "degree_in_sign": 11.078756,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

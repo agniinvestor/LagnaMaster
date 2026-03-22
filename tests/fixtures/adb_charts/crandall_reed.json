@@ -1,0 +1,114 @@
+{
+  "adb_id": 86204,
+  "name": "Crandall, Reed",
+  "given_name": "Reed Crandall",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421282.208333,
+    "year": 1917,
+    "month": 2,
+    "day": 22,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Patoka",
+    "country": "Indiana",
+    "lat": 38.4,
+    "lon": -87.583333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crandall,_Reed",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana archives. \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Diagnoses : Major Diseases : Stroke",
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Vocation : Art : Cartoonist",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Notable : Awards : Hall of Fame"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 24.291096,
+    "lagna": 24.291096,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.699912,
+    "jd_ut": 2421282.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 310.818594,
+        "sign_index": 10,
+        "degree_in_sign": 10.818594,
+        "is_retrograde": false,
+        "speed": 1.006818
+      },
+      "Moon": {
+        "longitude": 324.340796,
+        "sign_index": 10,
+        "degree_in_sign": 24.340796,
+        "is_retrograde": false,
+        "speed": 11.000691
+      },
+      "Mars": {
+        "longitude": 312.151205,
+        "sign_index": 10,
+        "degree_in_sign": 12.151205,
+        "is_retrograde": false,
+        "speed": 0.789971
+      },
+      "Mercury": {
+        "longitude": 286.65111,
+        "sign_index": 9,
+        "degree_in_sign": 16.65111,
+        "is_retrograde": false,
+        "speed": 1.337092
+      },
+      "Jupiter": {
+        "longitude": 8.975856,
+        "sign_index": 0,
+        "degree_in_sign": 8.975856,
+        "is_retrograde": false,
+        "speed": 0.176913
+      },
+      "Venus": {
+        "longitude": 295.030281,
+        "sign_index": 9,
+        "degree_in_sign": 25.030281,
+        "is_retrograde": false,
+        "speed": 1.247205
+      },
+      "Saturn": {
+        "longitude": 91.829529,
+        "sign_index": 3,
+        "degree_in_sign": 1.829529,
+        "is_retrograde": true,
+        "speed": -0.05411
+      },
+      "Rahu": {
+        "longitude": 264.874851,
+        "sign_index": 8,
+        "degree_in_sign": 24.874851,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 84.874851,
+        "sign_index": 2,
+        "degree_in_sign": 24.874851,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

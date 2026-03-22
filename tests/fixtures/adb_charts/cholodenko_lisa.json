@@ -1,0 +1,110 @@
+{
+  "adb_id": 48930,
+  "name": "Cholodenko, Lisa",
+  "given_name": "Lisa Cholodenko",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438552.597222,
+    "year": 1964,
+    "month": 6,
+    "day": 5,
+    "calendar": "g",
+    "time": "19:20",
+    "time_type": "d",
+    "hour": 19.333333,
+    "time_unknown": false,
+    "place": "Van Nuys",
+    "country": "California",
+    "lat": 34.183333,
+    "lon": -118.45
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cholodenko,_Lisa",
+  "source_notes": "Sy Scholfield quotes birth certificate in hand\\n",
+  "categories": [
+    "Passions : Sexuality : Lesbian",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 20.622056,
+    "lagna": 200.622056,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.360241,
+    "jd_ut": 2438552.597222,
+    "planets": {
+      "Sun": {
+        "longitude": 52.049051,
+        "sign_index": 1,
+        "degree_in_sign": 22.049051,
+        "is_retrograde": false,
+        "speed": 0.957069
+      },
+      "Moon": {
+        "longitude": 354.725383,
+        "sign_index": 11,
+        "degree_in_sign": 24.725383,
+        "is_retrograde": false,
+        "speed": 18.148842
+      },
+      "Mars": {
+        "longitude": 28.43945,
+        "sign_index": 0,
+        "degree_in_sign": 28.43945,
+        "is_retrograde": false,
+        "speed": 0.725793
+      },
+      "Mercury": {
+        "longitude": 30.848268,
+        "sign_index": 1,
+        "degree_in_sign": 0.848268,
+        "is_retrograde": false,
+        "speed": 1.549498
+      },
+      "Jupiter": {
+        "longitude": 19.486029,
+        "sign_index": 0,
+        "degree_in_sign": 19.486029,
+        "is_retrograde": false,
+        "speed": 0.219439
+      },
+      "Venus": {
+        "longitude": 72.351469,
+        "sign_index": 2,
+        "degree_in_sign": 12.351469,
+        "is_retrograde": true,
+        "speed": -0.303892
+      },
+      "Saturn": {
+        "longitude": 311.615977,
+        "sign_index": 10,
+        "degree_in_sign": 11.615977,
+        "is_retrograde": false,
+        "speed": 0.014936
+      },
+      "Rahu": {
+        "longitude": 69.681216,
+        "sign_index": 2,
+        "degree_in_sign": 9.681216,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 249.681216,
+        "sign_index": 8,
+        "degree_in_sign": 9.681216,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

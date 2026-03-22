@@ -1,0 +1,114 @@
+{
+  "adb_id": 86338,
+  "name": "Corbin, Robert K.",
+  "given_name": "Robert K. Corbin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425568.131944,
+    "year": 1928,
+    "month": 11,
+    "day": 17,
+    "calendar": "g",
+    "time": "09:10",
+    "time_type": "s",
+    "hour": 9.166667,
+    "time_unknown": false,
+    "place": "Worthington",
+    "country": "Indiana",
+    "lat": 39.133333,
+    "lon": -86.983333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corbin,_Robert_K.",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana archives, copy on file. \\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 10.899569,
+    "lagna": 220.899569,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.86377,
+    "jd_ut": 2425568.131944,
+    "planets": {
+      "Sun": {
+        "longitude": 212.182297,
+        "sign_index": 7,
+        "degree_in_sign": 2.182297,
+        "is_retrograde": false,
+        "speed": 1.009001
+      },
+      "Moon": {
+        "longitude": 269.444976,
+        "sign_index": 8,
+        "degree_in_sign": 29.444976,
+        "is_retrograde": false,
+        "speed": 12.247389
+      },
+      "Mars": {
+        "longitude": 76.217492,
+        "sign_index": 2,
+        "degree_in_sign": 16.217492,
+        "is_retrograde": true,
+        "speed": -0.078469
+      },
+      "Mercury": {
+        "longitude": 195.536837,
+        "sign_index": 6,
+        "degree_in_sign": 15.536837,
+        "is_retrograde": false,
+        "speed": 1.45655
+      },
+      "Jupiter": {
+        "longitude": 9.964736,
+        "sign_index": 0,
+        "degree_in_sign": 9.964736,
+        "is_retrograde": true,
+        "speed": -0.115691
+      },
+      "Venus": {
+        "longitude": 247.598661,
+        "sign_index": 8,
+        "degree_in_sign": 7.598661,
+        "is_retrograde": false,
+        "speed": 1.217855
+      },
+      "Saturn": {
+        "longitude": 235.668038,
+        "sign_index": 7,
+        "degree_in_sign": 25.668038,
+        "is_retrograde": false,
+        "speed": 0.111731
+      },
+      "Rahu": {
+        "longitude": 37.754819,
+        "sign_index": 1,
+        "degree_in_sign": 7.754819,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 217.754819,
+        "sign_index": 7,
+        "degree_in_sign": 7.754819,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

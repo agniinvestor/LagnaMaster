@@ -1,0 +1,109 @@
+{
+  "adb_id": 70531,
+  "name": "Cloué, Georges",
+  "given_name": "Georges Cloué",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2384936.618519,
+    "year": 1817,
+    "month": 8,
+    "day": 20,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "l",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cloué,_Georges",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 70.\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 21.646443,
+    "lagna": 81.646443,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.310695,
+    "jd_ut": 2384936.618519,
+    "planets": {
+      "Sun": {
+        "longitude": 125.358908,
+        "sign_index": 4,
+        "degree_in_sign": 5.358908,
+        "is_retrograde": false,
+        "speed": 0.963492
+      },
+      "Moon": {
+        "longitude": 220.445282,
+        "sign_index": 7,
+        "degree_in_sign": 10.445282,
+        "is_retrograde": false,
+        "speed": 16.40154
+      },
+      "Mars": {
+        "longitude": 38.996038,
+        "sign_index": 1,
+        "degree_in_sign": 8.996038,
+        "is_retrograde": false,
+        "speed": 0.582658
+      },
+      "Mercury": {
+        "longitude": 141.894652,
+        "sign_index": 4,
+        "degree_in_sign": 21.894652,
+        "is_retrograde": false,
+        "speed": 1.665663
+      },
+      "Jupiter": {
+        "longitude": 220.366489,
+        "sign_index": 7,
+        "degree_in_sign": 10.366489,
+        "is_retrograde": false,
+        "speed": 0.065852
+      },
+      "Venus": {
+        "longitude": 80.781873,
+        "sign_index": 2,
+        "degree_in_sign": 20.781873,
+        "is_retrograde": false,
+        "speed": 1.063992
+      },
+      "Saturn": {
+        "longitude": 311.792857,
+        "sign_index": 10,
+        "degree_in_sign": 11.792857,
+        "is_retrograde": true,
+        "speed": -0.07511
+      },
+      "Rahu": {
+        "longitude": 30.905396,
+        "sign_index": 1,
+        "degree_in_sign": 0.905396,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 210.905396,
+        "sign_index": 7,
+        "degree_in_sign": 0.905396,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

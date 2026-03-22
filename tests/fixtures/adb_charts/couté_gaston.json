@@ -1,0 +1,110 @@
+{
+  "adb_id": 71446,
+  "name": "Couté, Gaston",
+  "given_name": "Gaston Couté",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2407981.620463,
+    "year": 1880,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "l",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Beaugency",
+    "country": "France",
+    "lat": 47.783333,
+    "lon": 1.633333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couté,_Gaston",
+  "source_notes": "Sy Scholfield quotes from birth certificate no. 70 in the online Loiret archives, p. 215/271.\\nGrazia Bordoni database, 'entertainment' file, p. 48, has 9 AM.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Other Entertain/Music",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 14.281559,
+    "lagna": 104.281559,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.19146,
+    "jd_ut": 2407981.620463,
+    "planets": {
+      "Sun": {
+        "longitude": 158.243894,
+        "sign_index": 5,
+        "degree_in_sign": 8.243894,
+        "is_retrograde": false,
+        "speed": 0.979789
+      },
+      "Moon": {
+        "longitude": 31.565044,
+        "sign_index": 1,
+        "degree_in_sign": 1.565044,
+        "is_retrograde": false,
+        "speed": 8.596613
+      },
+      "Mars": {
+        "longitude": 168.730731,
+        "sign_index": 5,
+        "degree_in_sign": 18.730731,
+        "is_retrograde": false,
+        "speed": 0.65729
+      },
+      "Mercury": {
+        "longitude": 162.910002,
+        "sign_index": 5,
+        "degree_in_sign": 12.910002,
+        "is_retrograde": false,
+        "speed": 1.744964
+      },
+      "Jupiter": {
+        "longitude": 354.190958,
+        "sign_index": 11,
+        "degree_in_sign": 24.190958,
+        "is_retrograde": true,
+        "speed": -0.124687
+      },
+      "Venus": {
+        "longitude": 177.502252,
+        "sign_index": 5,
+        "degree_in_sign": 27.502252,
+        "is_retrograde": false,
+        "speed": 1.236125
+      },
+      "Saturn": {
+        "longitude": 5.20349,
+        "sign_index": 0,
+        "degree_in_sign": 5.20349,
+        "is_retrograde": true,
+        "speed": -0.066042
+      },
+      "Rahu": {
+        "longitude": 249.701061,
+        "sign_index": 8,
+        "degree_in_sign": 9.701061,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 69.701061,
+        "sign_index": 2,
+        "degree_in_sign": 9.701061,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

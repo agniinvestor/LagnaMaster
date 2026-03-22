@@ -1,0 +1,110 @@
+{
+  "adb_id": 44961,
+  "name": "Connolly, Maureen",
+  "given_name": "Maureen Connolly",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427698.338194,
+    "year": 1934,
+    "month": 9,
+    "day": 17,
+    "calendar": "g",
+    "time": "12:07",
+    "time_type": "s",
+    "hour": 12.116667,
+    "time_unknown": false,
+    "place": "San Diego",
+    "country": "California",
+    "lat": 32.716667,
+    "lon": -117.15
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connolly,_Maureen",
+  "source_notes": "Frank C. Clifford quotes B.C., Data Plus July/1998\\n",
+  "categories": [
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Sports : Tennis",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.338975,
+    "lagna": 210.338975,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.945215,
+    "jd_ut": 2427698.338194,
+    "planets": {
+      "Sun": {
+        "longitude": 151.282915,
+        "sign_index": 5,
+        "degree_in_sign": 1.282915,
+        "is_retrograde": false,
+        "speed": 0.975969
+      },
+      "Moon": {
+        "longitude": 259.289279,
+        "sign_index": 8,
+        "degree_in_sign": 19.289279,
+        "is_retrograde": false,
+        "speed": 15.068791
+      },
+      "Mars": {
+        "longitude": 108.5712,
+        "sign_index": 3,
+        "degree_in_sign": 18.5712,
+        "is_retrograde": false,
+        "speed": 0.622601
+      },
+      "Mercury": {
+        "longitude": 168.852609,
+        "sign_index": 5,
+        "degree_in_sign": 18.852609,
+        "is_retrograde": false,
+        "speed": 1.538199
+      },
+      "Jupiter": {
+        "longitude": 182.172613,
+        "sign_index": 6,
+        "degree_in_sign": 2.172613,
+        "is_retrograde": false,
+        "speed": 0.200563
+      },
+      "Venus": {
+        "longitude": 135.319472,
+        "sign_index": 4,
+        "degree_in_sign": 15.319472,
+        "is_retrograde": false,
+        "speed": 1.237601
+      },
+      "Saturn": {
+        "longitude": 299.757571,
+        "sign_index": 9,
+        "degree_in_sign": 29.757571,
+        "is_retrograde": true,
+        "speed": -0.058089
+      },
+      "Rahu": {
+        "longitude": 284.870765,
+        "sign_index": 9,
+        "degree_in_sign": 14.870765,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 104.870765,
+        "sign_index": 3,
+        "degree_in_sign": 14.870765,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

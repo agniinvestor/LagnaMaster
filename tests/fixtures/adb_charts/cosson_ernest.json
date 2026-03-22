@@ -1,0 +1,111 @@
+{
+  "adb_id": 81074,
+  "name": "Cosson, Ernest",
+  "given_name": "Ernest Cosson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2385638.285185,
+    "year": 1819,
+    "month": 7,
+    "day": 22,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "leo",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cosson,_Ernest",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Education : Researcher",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 2.218727,
+    "lagna": 242.218727,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.337509,
+    "jd_ut": 2385638.285185,
+    "planets": {
+      "Sun": {
+        "longitude": 97.70736,
+        "sign_index": 3,
+        "degree_in_sign": 7.70736,
+        "is_retrograde": false,
+        "speed": 0.955356
+      },
+      "Moon": {
+        "longitude": 103.18031,
+        "sign_index": 3,
+        "degree_in_sign": 13.18031,
+        "is_retrograde": false,
+        "speed": 12.672142
+      },
+      "Mars": {
+        "longitude": 39.487711,
+        "sign_index": 1,
+        "degree_in_sign": 9.487711,
+        "is_retrograde": false,
+        "speed": 0.68658
+      },
+      "Mercury": {
+        "longitude": 118.33013,
+        "sign_index": 3,
+        "degree_in_sign": 28.33013,
+        "is_retrograde": false,
+        "speed": 1.620736
+      },
+      "Jupiter": {
+        "longitude": 292.670359,
+        "sign_index": 9,
+        "degree_in_sign": 22.670359,
+        "is_retrograde": true,
+        "speed": -0.121412
+      },
+      "Venus": {
+        "longitude": 76.667143,
+        "sign_index": 2,
+        "degree_in_sign": 16.667143,
+        "is_retrograde": false,
+        "speed": 1.215494
+      },
+      "Saturn": {
+        "longitude": 339.331068,
+        "sign_index": 11,
+        "degree_in_sign": 9.331068,
+        "is_retrograde": true,
+        "speed": -0.016252
+      },
+      "Rahu": {
+        "longitude": 353.722546,
+        "sign_index": 11,
+        "degree_in_sign": 23.722546,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 173.722546,
+        "sign_index": 5,
+        "degree_in_sign": 23.722546,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

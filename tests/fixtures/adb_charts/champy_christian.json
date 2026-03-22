@@ -1,0 +1,111 @@
+{
+  "adb_id": 81031,
+  "name": "Champy, Christian",
+  "given_name": "Christian Champy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409649.732373,
+    "year": 1885,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Uzemain",
+    "country": "France",
+    "lat": 48.086389,
+    "lon": 6.345556
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Champy,_Christian",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Medical : Physician",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 5.245687,
+    "lagna": 5.245687,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.255224,
+    "jd_ut": 2409649.732373,
+    "planets": {
+      "Sun": {
+        "longitude": 6.083365,
+        "sign_index": 0,
+        "degree_in_sign": 6.083365,
+        "is_retrograde": false,
+        "speed": 0.976426
+      },
+      "Moon": {
+        "longitude": 46.323649,
+        "sign_index": 1,
+        "degree_in_sign": 16.323649,
+        "is_retrograde": false,
+        "speed": 17.356423
+      },
+      "Mars": {
+        "longitude": 352.169966,
+        "sign_index": 11,
+        "degree_in_sign": 22.169966,
+        "is_retrograde": false,
+        "speed": 0.766491
+      },
+      "Mercury": {
+        "longitude": 20.026078,
+        "sign_index": 0,
+        "degree_in_sign": 20.026078,
+        "is_retrograde": true,
+        "speed": -0.065378
+      },
+      "Jupiter": {
+        "longitude": 123.600347,
+        "sign_index": 4,
+        "degree_in_sign": 3.600347,
+        "is_retrograde": true,
+        "speed": -0.011316
+      },
+      "Venus": {
+        "longitude": 1.751708,
+        "sign_index": 0,
+        "degree_in_sign": 1.751708,
+        "is_retrograde": false,
+        "speed": 1.236219
+      },
+      "Saturn": {
+        "longitude": 58.186816,
+        "sign_index": 1,
+        "degree_in_sign": 28.186816,
+        "is_retrograde": false,
+        "speed": 0.096283
+      },
+      "Rahu": {
+        "longitude": 161.304269,
+        "sign_index": 5,
+        "degree_in_sign": 11.304269,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 341.304269,
+        "sign_index": 11,
+        "degree_in_sign": 11.304269,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

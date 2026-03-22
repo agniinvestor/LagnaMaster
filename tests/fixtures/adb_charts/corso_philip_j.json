@@ -1,0 +1,110 @@
+{
+  "adb_id": 103782,
+  "name": "Corso, Philip J.",
+  "given_name": "Philip J. Corso",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420639.958333,
+    "year": 1915,
+    "month": 5,
+    "day": 22,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "California (Washington County)",
+    "country": "Pennsylvania",
+    "lat": 40.066667,
+    "lon": -79.9
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corso,_Philip_J.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military service",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 0.554848,
+    "lagna": 30.554848,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.675358,
+    "jd_ut": 2420639.958333,
+    "planets": {
+      "Sun": {
+        "longitude": 37.595465,
+        "sign_index": 1,
+        "degree_in_sign": 7.595465,
+        "is_retrograde": false,
+        "speed": 0.961299
+      },
+      "Moon": {
+        "longitude": 130.829013,
+        "sign_index": 4,
+        "degree_in_sign": 10.829013,
+        "is_retrograde": false,
+        "speed": 17.160193
+      },
+      "Mars": {
+        "longitude": 4.565621,
+        "sign_index": 0,
+        "degree_in_sign": 4.565621,
+        "is_retrograde": false,
+        "speed": 0.752181
+      },
+      "Mercury": {
+        "longitude": 58.083135,
+        "sign_index": 1,
+        "degree_in_sign": 28.083135,
+        "is_retrograde": false,
+        "speed": 1.521175
+      },
+      "Jupiter": {
+        "longitude": 330.853833,
+        "sign_index": 11,
+        "degree_in_sign": 0.853833,
+        "is_retrograde": false,
+        "speed": 0.158494
+      },
+      "Venus": {
+        "longitude": 7.725724,
+        "sign_index": 0,
+        "degree_in_sign": 7.725724,
+        "is_retrograde": false,
+        "speed": 1.200889
+      },
+      "Saturn": {
+        "longitude": 68.530736,
+        "sign_index": 2,
+        "degree_in_sign": 8.530736,
+        "is_retrograde": false,
+        "speed": 0.11812
+      },
+      "Rahu": {
+        "longitude": 298.909023,
+        "sign_index": 9,
+        "degree_in_sign": 28.909023,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 118.909023,
+        "sign_index": 3,
+        "degree_in_sign": 28.909023,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 84094,
+  "name": "Chicharrín",
+  "given_name": "Chicharrín",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2441806.041667,
+    "year": 1973,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Ciudad Juárez",
+    "country": "Mexico",
+    "lat": 31.733333,
+    "lon": -106.483333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chicharrín",
+  "source_notes": "Sy Scholfield quotes him on Twitter: \"Dato curioso: Nací el 7:00 de mayo en el ańo 3 a las 1973 de la mańana\" (Curious fact: I was born on 3 May 1973 at 7:00 am) [https://twitter.com/CHICHARRlN/status/904502170053210113].\\n",
+  "categories": [
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertainment : TV host/ Personality",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 7.396493,
+    "lagna": 7.396493,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.484651,
+    "jd_ut": 2441806.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 19.460584,
+        "sign_index": 0,
+        "degree_in_sign": 19.460584,
+        "is_retrograde": false,
+        "speed": 0.969715
+      },
+      "Moon": {
+        "longitude": 29.524542,
+        "sign_index": 0,
+        "degree_in_sign": 29.524542,
+        "is_retrograde": false,
+        "speed": 16.424279
+      },
+      "Mars": {
+        "longitude": 303.241218,
+        "sign_index": 10,
+        "degree_in_sign": 3.241218,
+        "is_retrograde": false,
+        "speed": 0.707003
+      },
+      "Mercury": {
+        "longitude": 1.82701,
+        "sign_index": 0,
+        "degree_in_sign": 1.82701,
+        "is_retrograde": false,
+        "speed": 1.776437
+      },
+      "Jupiter": {
+        "longitude": 287.476937,
+        "sign_index": 9,
+        "degree_in_sign": 17.476937,
+        "is_retrograde": false,
+        "speed": 0.08307
+      },
+      "Venus": {
+        "longitude": 25.646615,
+        "sign_index": 0,
+        "degree_in_sign": 25.646615,
+        "is_retrograde": false,
+        "speed": 1.232917
+      },
+      "Saturn": {
+        "longitude": 55.276376,
+        "sign_index": 1,
+        "degree_in_sign": 25.276376,
+        "is_retrograde": false,
+        "speed": 0.11405
+      },
+      "Rahu": {
+        "longitude": 257.274549,
+        "sign_index": 8,
+        "degree_in_sign": 17.274549,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 77.274549,
+        "sign_index": 2,
+        "degree_in_sign": 17.274549,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

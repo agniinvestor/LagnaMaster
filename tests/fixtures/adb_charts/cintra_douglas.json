@@ -1,0 +1,110 @@
+{
+  "adb_id": 100252,
+  "name": "Cintra, Douglas",
+  "given_name": "Douglas Cintra",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439200.916667,
+    "year": 1966,
+    "month": 3,
+    "day": 16,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Caruaru (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.283333,
+    "lon": -35.976111
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cintra,_Douglas",
+  "source_notes": "Birth entry from civil registry book in hand from Sy Scholfield, copy on file (Pernambuco Archives). \\n",
+  "categories": [
+    "Vocation : Business : Other Business",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 1.168416,
+    "lagna": 331.168416,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.385032,
+    "jd_ut": 2439200.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 331.982005,
+        "sign_index": 11,
+        "degree_in_sign": 1.982005,
+        "is_retrograde": false,
+        "speed": 0.995808
+      },
+      "Moon": {
+        "longitude": 268.945264,
+        "sign_index": 8,
+        "degree_in_sign": 28.945264,
+        "is_retrograde": false,
+        "speed": 6.461822
+      },
+      "Mars": {
+        "longitude": 341.943597,
+        "sign_index": 11,
+        "degree_in_sign": 11.943597,
+        "is_retrograde": false,
+        "speed": 0.772106
+      },
+      "Mercury": {
+        "longitude": 341.081879,
+        "sign_index": 11,
+        "degree_in_sign": 11.081879,
+        "is_retrograde": true,
+        "speed": -0.565256
+      },
+      "Jupiter": {
+        "longitude": 59.236751,
+        "sign_index": 1,
+        "degree_in_sign": 29.236751,
+        "is_retrograde": false,
+        "speed": 0.090801
+      },
+      "Venus": {
+        "longitude": 287.706686,
+        "sign_index": 9,
+        "degree_in_sign": 17.706686,
+        "is_retrograde": false,
+        "speed": 0.769839
+      },
+      "Saturn": {
+        "longitude": 327.169987,
+        "sign_index": 10,
+        "degree_in_sign": 27.169987,
+        "is_retrograde": false,
+        "speed": 0.123048
+      },
+      "Rahu": {
+        "longitude": 35.325442,
+        "sign_index": 1,
+        "degree_in_sign": 5.325442,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 215.325442,
+        "sign_index": 7,
+        "degree_in_sign": 5.325442,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

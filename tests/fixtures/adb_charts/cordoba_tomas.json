@@ -1,0 +1,108 @@
+{
+  "adb_id": 75700,
+  "name": "Cordoba, Tomas",
+  "given_name": "Tomas Cordoba",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446805.399306,
+    "year": 1987,
+    "month": 1,
+    "day": 9,
+    "calendar": "g",
+    "time": "15:35",
+    "time_type": "s",
+    "hour": 15.583333,
+    "time_unknown": false,
+    "place": "Ciudad Mante",
+    "country": "Mexico",
+    "lat": 22.733333,
+    "lon": -98.95
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cordoba,_Tomas",
+  "source_notes": "Sy Scholfield submitted birth record from the online Tamaulipas state archive [http://servicios.tamaulipas.gob.mx/servicios/crct/actas/detalle1.asp?cve_ref=3200010500&mpio=21].\\n",
+  "categories": [
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 27.658906,
+    "lagna": 27.658906,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.675833,
+    "jd_ut": 2446805.399306,
+    "planets": {
+      "Sun": {
+        "longitude": 265.417457,
+        "sign_index": 8,
+        "degree_in_sign": 25.417457,
+        "is_retrograde": false,
+        "speed": 1.018874
+      },
+      "Moon": {
+        "longitude": 29.537378,
+        "sign_index": 0,
+        "degree_in_sign": 29.537378,
+        "is_retrograde": false,
+        "speed": 11.322993
+      },
+      "Mars": {
+        "longitude": 337.29372,
+        "sign_index": 11,
+        "degree_in_sign": 7.29372,
+        "is_retrograde": false,
+        "speed": 0.699109
+      },
+      "Mercury": {
+        "longitude": 263.688957,
+        "sign_index": 8,
+        "degree_in_sign": 23.688957,
+        "is_retrograde": false,
+        "speed": 1.622707
+      },
+      "Jupiter": {
+        "longitude": 325.3209,
+        "sign_index": 10,
+        "degree_in_sign": 25.3209,
+        "is_retrograde": false,
+        "speed": 0.175787
+      },
+      "Venus": {
+        "longitude": 218.699674,
+        "sign_index": 7,
+        "degree_in_sign": 8.699674,
+        "is_retrograde": false,
+        "speed": 0.972169
+      },
+      "Saturn": {
+        "longitude": 232.676365,
+        "sign_index": 7,
+        "degree_in_sign": 22.676365,
+        "is_retrograde": false,
+        "speed": 0.105934
+      },
+      "Rahu": {
+        "longitude": 352.348431,
+        "sign_index": 11,
+        "degree_in_sign": 22.348431,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 172.348431,
+        "sign_index": 5,
+        "degree_in_sign": 22.348431,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

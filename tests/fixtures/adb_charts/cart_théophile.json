@@ -1,0 +1,108 @@
+{
+  "adb_id": 78997,
+  "name": "Cart, Théophile",
+  "given_name": "Théophile Cart",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2398674.457901,
+    "year": 1855,
+    "month": 3,
+    "day": 31,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Saint-Antoine-de-Breuilh",
+    "country": "France",
+    "lat": 44.845,
+    "lon": 0.155556
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cart,_Théophile",
+  "source_notes": "Sy Scholfield forwarded birth certificate n°1 from the online Dordogne archives, image 1/10: \"onze heures du soir\" (11pm).\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Linguist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 19.820451,
+    "lagna": 199.820451,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.835717,
+    "jd_ut": 2398674.457901,
+    "planets": {
+      "Sun": {
+        "longitude": 348.836594,
+        "sign_index": 11,
+        "degree_in_sign": 18.836594,
+        "is_retrograde": false,
+        "speed": 0.985572
+      },
+      "Moon": {
+        "longitude": 150.278427,
+        "sign_index": 5,
+        "degree_in_sign": 0.278427,
+        "is_retrograde": false,
+        "speed": 8.58981
+      },
+      "Mars": {
+        "longitude": 350.869923,
+        "sign_index": 11,
+        "degree_in_sign": 20.869923,
+        "is_retrograde": false,
+        "speed": 0.765112
+      },
+      "Mercury": {
+        "longitude": 321.166307,
+        "sign_index": 10,
+        "degree_in_sign": 21.166307,
+        "is_retrograde": false,
+        "speed": 0.891132
+      },
+      "Jupiter": {
+        "longitude": 301.546004,
+        "sign_index": 10,
+        "degree_in_sign": 1.546004,
+        "is_retrograde": false,
+        "speed": 0.19758
+      },
+      "Venus": {
+        "longitude": 14.700989,
+        "sign_index": 0,
+        "degree_in_sign": 14.700989,
+        "is_retrograde": false,
+        "speed": 1.22192
+      },
+      "Saturn": {
+        "longitude": 49.375278,
+        "sign_index": 1,
+        "degree_in_sign": 19.375278,
+        "is_retrograde": false,
+        "speed": 0.08492
+      },
+      "Rahu": {
+        "longitude": 22.907499,
+        "sign_index": 0,
+        "degree_in_sign": 22.907499,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 202.907499,
+        "sign_index": 6,
+        "degree_in_sign": 22.907499,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

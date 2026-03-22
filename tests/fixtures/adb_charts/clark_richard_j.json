@@ -1,0 +1,110 @@
+{
+  "adb_id": 91868,
+  "name": "Clark, Richard J.",
+  "given_name": "Richard J. Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429379.578472,
+    "year": 1939,
+    "month": 4,
+    "day": 25,
+    "calendar": "g",
+    "time": "18:53",
+    "time_type": "s",
+    "hour": 18.883333,
+    "time_unknown": false,
+    "place": "Tucson",
+    "country": "Arizona",
+    "lat": 32.216667,
+    "lon": -110.933333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Richard_J.",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertain/Music : Vocalist/Opera"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 18.37463,
+    "lagna": 168.37463,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.009495,
+    "jd_ut": 2429379.578472,
+    "planets": {
+      "Sun": {
+        "longitude": 11.94157,
+        "sign_index": 0,
+        "degree_in_sign": 11.94157,
+        "is_retrograde": false,
+        "speed": 0.973249
+      },
+      "Moon": {
+        "longitude": 92.69179,
+        "sign_index": 3,
+        "degree_in_sign": 2.69179,
+        "is_retrograde": false,
+        "speed": 9.330829
+      },
+      "Mars": {
+        "longitude": 265.576669,
+        "sign_index": 8,
+        "degree_in_sign": 25.576669,
+        "is_retrograde": false,
+        "speed": 0.466288
+      },
+      "Mercury": {
+        "longitude": 345.892188,
+        "sign_index": 11,
+        "degree_in_sign": 15.892188,
+        "is_retrograde": false,
+        "speed": 0.683028
+      },
+      "Jupiter": {
+        "longitude": 333.799158,
+        "sign_index": 11,
+        "degree_in_sign": 3.799158,
+        "is_retrograde": false,
+        "speed": 0.21481
+      },
+      "Venus": {
+        "longitude": 337.556431,
+        "sign_index": 11,
+        "degree_in_sign": 7.556431,
+        "is_retrograde": false,
+        "speed": 1.195766
+      },
+      "Saturn": {
+        "longitude": 359.797441,
+        "sign_index": 11,
+        "degree_in_sign": 29.797441,
+        "is_retrograde": false,
+        "speed": 0.124645
+      },
+      "Rahu": {
+        "longitude": 195.77836,
+        "sign_index": 6,
+        "degree_in_sign": 15.77836,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 15.77836,
+        "sign_index": 0,
+        "degree_in_sign": 15.77836,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

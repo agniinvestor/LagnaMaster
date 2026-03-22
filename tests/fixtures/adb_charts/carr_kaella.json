@@ -1,0 +1,109 @@
+{
+  "adb_id": 88409,
+  "name": "Carr, Kaella",
+  "given_name": "Kaella Carr",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2445586.075,
+    "year": 1983,
+    "month": 9,
+    "day": 8,
+    "calendar": "g",
+    "time": "09:48",
+    "time_type": "d",
+    "hour": 9.8,
+    "time_unknown": false,
+    "place": "Windsor",
+    "country": "Ontario (CAN)",
+    "lat": 42.3,
+    "lon": -83.016667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carr,_Kaella",
+  "source_notes": "Sy Scholfield provided birth notice, The Windsor Star (Windsor, Ontario), 16 Sept 1983, page 28.\\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Entertainment : News journalist/ Anchor"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 29.166836,
+    "lagna": 149.166836,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.629203,
+    "jd_ut": 2445586.075,
+    "planets": {
+      "Sun": {
+        "longitude": 141.717941,
+        "sign_index": 4,
+        "degree_in_sign": 21.717941,
+        "is_retrograde": false,
+        "speed": 0.971302
+      },
+      "Moon": {
+        "longitude": 163.240168,
+        "sign_index": 5,
+        "degree_in_sign": 13.240168,
+        "is_retrograde": false,
+        "speed": 13.799437
+      },
+      "Mars": {
+        "longitude": 112.928601,
+        "sign_index": 3,
+        "degree_in_sign": 22.928601,
+        "is_retrograde": false,
+        "speed": 0.633104
+      },
+      "Mercury": {
+        "longitude": 155.073219,
+        "sign_index": 5,
+        "degree_in_sign": 5.073219,
+        "is_retrograde": true,
+        "speed": -0.654314
+      },
+      "Jupiter": {
+        "longitude": 219.924355,
+        "sign_index": 7,
+        "degree_in_sign": 9.924355,
+        "is_retrograde": false,
+        "speed": 0.115048
+      },
+      "Venus": {
+        "longitude": 120.587686,
+        "sign_index": 4,
+        "degree_in_sign": 0.587686,
+        "is_retrograde": true,
+        "speed": -0.283766
+      },
+      "Saturn": {
+        "longitude": 187.701776,
+        "sign_index": 6,
+        "degree_in_sign": 7.701776,
+        "is_retrograde": false,
+        "speed": 0.095595
+      },
+      "Rahu": {
+        "longitude": 56.962896,
+        "sign_index": 1,
+        "degree_in_sign": 26.962896,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 236.962896,
+        "sign_index": 7,
+        "degree_in_sign": 26.962896,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

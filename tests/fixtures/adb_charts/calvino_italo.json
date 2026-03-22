@@ -1,0 +1,110 @@
+{
+  "adb_id": 5739,
+  "name": "Calvino, Italo",
+  "given_name": "Italo Calvino",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2423708.096944,
+    "year": 1923,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "08:50",
+    "time_type": "s",
+    "hour": 8.833333,
+    "time_unknown": false,
+    "place": "Santiago de las Vegas",
+    "country": "Cuba",
+    "lat": 22.977778,
+    "lon": -82.377778
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvino,_Italo",
+  "source_notes": "Bordoni quotes Mirti, his publisher, from him\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Stroke",
+    "Vocation : Writers : Fiction",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 13.402412,
+    "lagna": 193.402412,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.792656,
+    "jd_ut": 2423708.096944,
+    "planets": {
+      "Sun": {
+        "longitude": 178.408687,
+        "sign_index": 5,
+        "degree_in_sign": 28.408687,
+        "is_retrograde": false,
+        "speed": 0.991665
+      },
+      "Moon": {
+        "longitude": 253.017644,
+        "sign_index": 8,
+        "degree_in_sign": 13.017644,
+        "is_retrograde": false,
+        "speed": 16.602402
+      },
+      "Mars": {
+        "longitude": 155.563788,
+        "sign_index": 5,
+        "degree_in_sign": 5.563788,
+        "is_retrograde": false,
+        "speed": 0.637272
+      },
+      "Mercury": {
+        "longitude": 160.430483,
+        "sign_index": 5,
+        "degree_in_sign": 10.430483,
+        "is_retrograde": false,
+        "speed": 1.09987
+      },
+      "Jupiter": {
+        "longitude": 208.502548,
+        "sign_index": 6,
+        "degree_in_sign": 28.502548,
+        "is_retrograde": false,
+        "speed": 0.205364
+      },
+      "Venus": {
+        "longitude": 187.704455,
+        "sign_index": 6,
+        "degree_in_sign": 7.704455,
+        "is_retrograde": false,
+        "speed": 1.248469
+      },
+      "Saturn": {
+        "longitude": 180.031792,
+        "sign_index": 6,
+        "degree_in_sign": 0.031792,
+        "is_retrograde": false,
+        "speed": 0.121815
+      },
+      "Rahu": {
+        "longitude": 136.321947,
+        "sign_index": 4,
+        "degree_in_sign": 16.321947,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 316.321947,
+        "sign_index": 10,
+        "degree_in_sign": 16.321947,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

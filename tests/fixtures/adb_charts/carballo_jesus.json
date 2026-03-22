@@ -1,0 +1,108 @@
+{
+  "adb_id": 73132,
+  "name": "Carballo, Jesus",
+  "given_name": "Jesus Carballo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405233.044583,
+    "year": 1873,
+    "month": 3,
+    "day": 15,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "l",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Santiago",
+    "country": "Spain",
+    "lat": 42.883333,
+    "lon": -8.55
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carballo,_Jesus",
+  "source_notes": "Castellanos quotes birth certificate:\\nhttp://www.academia.edu/2337665/El_Dr._Jesus_Carballo_una_figura_clave_en_la_evolucion_de_la_arqueologia_cantabra_a_lo_largo_del_Siglo_XX._Rasgos_biograficos\\n",
+  "categories": [
+    "Vocation : Science : Other Science"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 6.684854,
+    "lagna": 66.684854,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.086399,
+    "jd_ut": 2405233.044583,
+    "planets": {
+      "Sun": {
+        "longitude": 332.958959,
+        "sign_index": 11,
+        "degree_in_sign": 2.958959,
+        "is_retrograde": false,
+        "speed": 0.994624
+      },
+      "Moon": {
+        "longitude": 167.628952,
+        "sign_index": 5,
+        "degree_in_sign": 17.628952,
+        "is_retrograde": false,
+        "speed": 15.845262
+      },
+      "Mars": {
+        "longitude": 202.963819,
+        "sign_index": 6,
+        "degree_in_sign": 22.963819,
+        "is_retrograde": false,
+        "speed": 0.075039
+      },
+      "Mercury": {
+        "longitude": 350.684337,
+        "sign_index": 11,
+        "degree_in_sign": 20.684337,
+        "is_retrograde": false,
+        "speed": 1.373315
+      },
+      "Jupiter": {
+        "longitude": 121.027402,
+        "sign_index": 4,
+        "degree_in_sign": 1.027402,
+        "is_retrograde": true,
+        "speed": -0.095771
+      },
+      "Venus": {
+        "longitude": 17.622145,
+        "sign_index": 0,
+        "degree_in_sign": 17.622145,
+        "is_retrograde": false,
+        "speed": 0.791199
+      },
+      "Saturn": {
+        "longitude": 278.06293,
+        "sign_index": 9,
+        "degree_in_sign": 8.06293,
+        "is_retrograde": false,
+        "speed": 0.084052
+      },
+      "Rahu": {
+        "longitude": 35.353949,
+        "sign_index": 1,
+        "degree_in_sign": 5.353949,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 215.353949,
+        "sign_index": 7,
+        "degree_in_sign": 5.353949,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

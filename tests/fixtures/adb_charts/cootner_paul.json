@@ -1,0 +1,111 @@
+{
+  "adb_id": 88129,
+  "name": "Cootner, Paul",
+  "given_name": "Paul Cootner",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426121.291667,
+    "year": 1930,
+    "month": 5,
+    "day": 24,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Logansport",
+    "country": "Indiana",
+    "lat": 40.75,
+    "lon": -86.35
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cootner,_Paul",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Business : Economist",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 6.536968,
+    "lagna": 126.536968,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.884919,
+    "jd_ut": 2426121.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 39.973649,
+        "sign_index": 1,
+        "degree_in_sign": 9.973649,
+        "is_retrograde": false,
+        "speed": 0.960836
+      },
+      "Moon": {
+        "longitude": 355.841198,
+        "sign_index": 11,
+        "degree_in_sign": 25.841198,
+        "is_retrograde": false,
+        "speed": 10.881744
+      },
+      "Mars": {
+        "longitude": 0.107307,
+        "sign_index": 0,
+        "degree_in_sign": 0.107307,
+        "is_retrograde": false,
+        "speed": 0.754252
+      },
+      "Mercury": {
+        "longitude": 33.051895,
+        "sign_index": 1,
+        "degree_in_sign": 3.051895,
+        "is_retrograde": true,
+        "speed": -0.490486
+      },
+      "Jupiter": {
+        "longitude": 59.561776,
+        "sign_index": 1,
+        "degree_in_sign": 29.561776,
+        "is_retrograde": false,
+        "speed": 0.223389
+      },
+      "Venus": {
+        "longitude": 66.633992,
+        "sign_index": 2,
+        "degree_in_sign": 6.633992,
+        "is_retrograde": false,
+        "speed": 1.209177
+      },
+      "Saturn": {
+        "longitude": 258.141541,
+        "sign_index": 8,
+        "degree_in_sign": 18.141541,
+        "is_retrograde": true,
+        "speed": -0.049485
+      },
+      "Rahu": {
+        "longitude": 8.441735,
+        "sign_index": 0,
+        "degree_in_sign": 8.441735,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 188.441735,
+        "sign_index": 6,
+        "degree_in_sign": 8.441735,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

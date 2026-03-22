@@ -1,0 +1,108 @@
+{
+  "adb_id": 67516,
+  "name": "Chaisemartin, Yves de",
+  "given_name": "Yves de Chaisemartin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432789.510417,
+    "year": 1948,
+    "month": 8,
+    "day": 26,
+    "calendar": "g",
+    "time": "01:15",
+    "time_type": "s",
+    "hour": 1.25,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaisemartin,_Yves_de",
+  "source_notes": "Didier Geslain archive, 'diverses' pdf file, p. 50.\\n",
+  "categories": [
+    "Vocation : Business : Other Business"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 22.510526,
+    "lagna": 52.510526,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.139875,
+    "jd_ut": 2432789.510417,
+    "planets": {
+      "Sun": {
+        "longitude": 129.523363,
+        "sign_index": 4,
+        "degree_in_sign": 9.523363,
+        "is_retrograde": false,
+        "speed": 0.965068
+      },
+      "Moon": {
+        "longitude": 19.067113,
+        "sign_index": 0,
+        "degree_in_sign": 19.067113,
+        "is_retrograde": false,
+        "speed": 10.921566
+      },
+      "Mars": {
+        "longitude": 181.278185,
+        "sign_index": 6,
+        "degree_in_sign": 1.278185,
+        "is_retrograde": false,
+        "speed": 0.645101
+      },
+      "Mercury": {
+        "longitude": 142.684983,
+        "sign_index": 4,
+        "degree_in_sign": 22.684983,
+        "is_retrograde": false,
+        "speed": 1.732144
+      },
+      "Jupiter": {
+        "longitude": 236.116787,
+        "sign_index": 7,
+        "degree_in_sign": 26.116787,
+        "is_retrograde": false,
+        "speed": 0.030705
+      },
+      "Venus": {
+        "longitude": 83.947465,
+        "sign_index": 2,
+        "degree_in_sign": 23.947465,
+        "is_retrograde": false,
+        "speed": 0.894869
+      },
+      "Saturn": {
+        "longitude": 123.867802,
+        "sign_index": 4,
+        "degree_in_sign": 3.867802,
+        "is_retrograde": false,
+        "speed": 0.127006
+      },
+      "Rahu": {
+        "longitude": 15.079021,
+        "sign_index": 0,
+        "degree_in_sign": 15.079021,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 195.079021,
+        "sign_index": 6,
+        "degree_in_sign": 15.079021,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

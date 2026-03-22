@@ -1,0 +1,108 @@
+{
+  "adb_id": 86840,
+  "name": "Counter, Nick",
+  "given_name": "Nick Counter",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429710.097222,
+    "year": 1940,
+    "month": 3,
+    "day": 21,
+    "calendar": "g",
+    "time": "07:20",
+    "time_type": "s",
+    "hour": 7.333333,
+    "time_unknown": false,
+    "place": "Phoenix",
+    "country": "Arizona",
+    "lat": 33.45,
+    "lon": -112.066667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Counter,_Nick",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Vocation : Law : Attorney"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 1.919526,
+    "lagna": 331.919526,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.022133,
+    "jd_ut": 2429710.097222,
+    "planets": {
+      "Sun": {
+        "longitude": 337.800469,
+        "sign_index": 11,
+        "degree_in_sign": 7.800469,
+        "is_retrograde": false,
+        "speed": 0.99211
+      },
+      "Moon": {
+        "longitude": 125.971627,
+        "sign_index": 4,
+        "degree_in_sign": 5.971627,
+        "is_retrograde": false,
+        "speed": 18.426251
+      },
+      "Mars": {
+        "longitude": 29.540219,
+        "sign_index": 0,
+        "degree_in_sign": 29.540219,
+        "is_retrograde": false,
+        "speed": 0.667262
+      },
+      "Mercury": {
+        "longitude": 326.557441,
+        "sign_index": 10,
+        "degree_in_sign": 26.557441,
+        "is_retrograde": true,
+        "speed": -0.713397
+      },
+      "Jupiter": {
+        "longitude": 353.699346,
+        "sign_index": 11,
+        "degree_in_sign": 23.699346,
+        "is_retrograde": false,
+        "speed": 0.237211
+      },
+      "Venus": {
+        "longitude": 21.616495,
+        "sign_index": 0,
+        "degree_in_sign": 21.616495,
+        "is_retrograde": false,
+        "speed": 1.112979
+      },
+      "Saturn": {
+        "longitude": 7.115171,
+        "sign_index": 0,
+        "degree_in_sign": 7.115171,
+        "is_retrograde": false,
+        "speed": 0.11684
+      },
+      "Rahu": {
+        "longitude": 178.263487,
+        "sign_index": 5,
+        "degree_in_sign": 28.263487,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 358.263487,
+        "sign_index": 11,
+        "degree_in_sign": 28.263487,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

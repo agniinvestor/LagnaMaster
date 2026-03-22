@@ -1,0 +1,109 @@
+{
+  "adb_id": 79495,
+  "name": "Chambreuil, Maurice",
+  "given_name": "Maurice Chambreuil",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409006.326853,
+    "year": 1883,
+    "month": 7,
+    "day": 14,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 6",
+    "country": "France",
+    "lat": 48.850556,
+    "lon": 2.332778
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chambreuil,_Maurice",
+  "source_notes": "Birth certificate quoted in Michaël Mandl's CINÉMA MUET collection. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 9.433076,
+    "lagna": 249.433076,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.23063,
+    "jd_ut": 2409006.326853,
+    "planets": {
+      "Sun": {
+        "longitude": 89.730916,
+        "sign_index": 2,
+        "degree_in_sign": 29.730916,
+        "is_retrograde": false,
+        "speed": 0.953716
+      },
+      "Moon": {
+        "longitude": 207.190177,
+        "sign_index": 6,
+        "degree_in_sign": 27.190177,
+        "is_retrograde": false,
+        "speed": 8.404613
+      },
+      "Mars": {
+        "longitude": 40.775236,
+        "sign_index": 1,
+        "degree_in_sign": 10.775236,
+        "is_retrograde": false,
+        "speed": 0.697235
+      },
+      "Mercury": {
+        "longitude": 73.562045,
+        "sign_index": 2,
+        "degree_in_sign": 13.562045,
+        "is_retrograde": false,
+        "speed": 1.769817
+      },
+      "Jupiter": {
+        "longitude": 83.034714,
+        "sign_index": 2,
+        "degree_in_sign": 23.034714,
+        "is_retrograde": false,
+        "speed": 0.224759
+      },
+      "Venus": {
+        "longitude": 71.335487,
+        "sign_index": 2,
+        "degree_in_sign": 11.335487,
+        "is_retrograde": false,
+        "speed": 1.217812
+      },
+      "Saturn": {
+        "longitude": 43.924689,
+        "sign_index": 1,
+        "degree_in_sign": 13.924689,
+        "is_retrograde": false,
+        "speed": 0.103245
+      },
+      "Rahu": {
+        "longitude": 195.399693,
+        "sign_index": 6,
+        "degree_in_sign": 15.399693,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 15.399693,
+        "sign_index": 0,
+        "degree_in_sign": 15.399693,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

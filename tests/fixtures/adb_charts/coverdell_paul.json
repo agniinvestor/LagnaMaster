@@ -1,0 +1,111 @@
+{
+  "adb_id": 94078,
+  "name": "Coverdell, Paul",
+  "given_name": "Paul Coverdell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429284.709028,
+    "year": 1939,
+    "month": 1,
+    "day": 20,
+    "calendar": "g",
+    "time": "23:01",
+    "time_type": "s",
+    "hour": 23.016667,
+    "time_unknown": false,
+    "place": "Des Moines",
+    "country": "Iowa",
+    "lat": 41.6,
+    "lon": -93.616667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coverdell,_Paul",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Brain",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 22.873594,
+    "lagna": 142.873594,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.005868,
+    "jd_ut": 2429284.709028,
+    "planets": {
+      "Sun": {
+        "longitude": 277.252211,
+        "sign_index": 9,
+        "degree_in_sign": 7.252211,
+        "is_retrograde": false,
+        "speed": 1.018002
+      },
+      "Moon": {
+        "longitude": 283.889754,
+        "sign_index": 9,
+        "degree_in_sign": 13.889754,
+        "is_retrograde": false,
+        "speed": 15.458673
+      },
+      "Mars": {
+        "longitude": 211.972495,
+        "sign_index": 7,
+        "degree_in_sign": 1.972495,
+        "is_retrograde": false,
+        "speed": 0.614064
+      },
+      "Mercury": {
+        "longitude": 259.386917,
+        "sign_index": 8,
+        "degree_in_sign": 19.386917,
+        "is_retrograde": false,
+        "speed": 1.459355
+      },
+      "Jupiter": {
+        "longitude": 311.62099,
+        "sign_index": 10,
+        "degree_in_sign": 11.62099,
+        "is_retrograde": false,
+        "speed": 0.220167
+      },
+      "Venus": {
+        "longitude": 230.785388,
+        "sign_index": 7,
+        "degree_in_sign": 20.785388,
+        "is_retrograde": false,
+        "speed": 0.940553
+      },
+      "Saturn": {
+        "longitude": 349.464334,
+        "sign_index": 11,
+        "degree_in_sign": 19.464334,
+        "is_retrograde": false,
+        "speed": 0.064634
+      },
+      "Rahu": {
+        "longitude": 200.805688,
+        "sign_index": 6,
+        "degree_in_sign": 20.805688,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 20.805688,
+        "sign_index": 0,
+        "degree_in_sign": 20.805688,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

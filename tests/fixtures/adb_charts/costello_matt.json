@@ -1,0 +1,109 @@
+{
+  "adb_id": 54989,
+  "name": "Costello, Matt",
+  "given_name": "Matt Costello",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2446782.270833,
+    "year": 1986,
+    "month": 12,
+    "day": 17,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "s",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Norwood",
+    "country": "Massachusetts",
+    "lat": 42.2,
+    "lon": -71.2
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costello,_Matt",
+  "source_notes": "Stephen Przybylowski quotes birth certificate\\n",
+  "categories": [
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Sports : Baseball"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 20.647544,
+    "lagna": 350.647544,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.674948,
+    "jd_ut": 2446782.270833,
+    "planets": {
+      "Sun": {
+        "longitude": 241.850528,
+        "sign_index": 8,
+        "degree_in_sign": 1.850528,
+        "is_retrograde": false,
+        "speed": 1.017386
+      },
+      "Moon": {
+        "longitude": 78.057751,
+        "sign_index": 2,
+        "degree_in_sign": 18.057751,
+        "is_retrograde": false,
+        "speed": 15.889973
+      },
+      "Mars": {
+        "longitude": 321.174626,
+        "sign_index": 10,
+        "degree_in_sign": 21.174626,
+        "is_retrograde": false,
+        "speed": 0.692975
+      },
+      "Mercury": {
+        "longitude": 227.671638,
+        "sign_index": 7,
+        "degree_in_sign": 17.671638,
+        "is_retrograde": false,
+        "speed": 1.499054
+      },
+      "Jupiter": {
+        "longitude": 321.830141,
+        "sign_index": 10,
+        "degree_in_sign": 21.830141,
+        "is_retrograde": false,
+        "speed": 0.123244
+      },
+      "Venus": {
+        "longitude": 199.234755,
+        "sign_index": 6,
+        "degree_in_sign": 19.234755,
+        "is_retrograde": false,
+        "speed": 0.663596
+      },
+      "Saturn": {
+        "longitude": 230.078621,
+        "sign_index": 7,
+        "degree_in_sign": 20.078621,
+        "is_retrograde": false,
+        "speed": 0.116904
+      },
+      "Rahu": {
+        "longitude": 353.574055,
+        "sign_index": 11,
+        "degree_in_sign": 23.574055,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 173.574055,
+        "sign_index": 5,
+        "degree_in_sign": 23.574055,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

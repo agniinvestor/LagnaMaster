@@ -1,0 +1,108 @@
+{
+  "adb_id": 54363,
+  "name": "Crom, Scott",
+  "given_name": "Scott Crom",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2425224.632639,
+    "year": 1927,
+    "month": 12,
+    "day": 9,
+    "calendar": "g",
+    "time": "20:11",
+    "time_type": "s",
+    "hour": 20.183333,
+    "time_unknown": false,
+    "place": "Grand Junction",
+    "country": "Colorado",
+    "lat": 39.066667,
+    "lon": -108.55
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crom,_Scott",
+  "source_notes": "Steinbrecher collection: Steinbrecher quotes him\\n",
+  "categories": [
+    "Vocation : Education : Teacher"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 16.074474,
+    "lagna": 76.074474,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.850637,
+    "jd_ut": 2425224.632639,
+    "planets": {
+      "Sun": {
+        "longitude": 234.217006,
+        "sign_index": 7,
+        "degree_in_sign": 24.217006,
+        "is_retrograde": false,
+        "speed": 1.015837
+      },
+      "Moon": {
+        "longitude": 73.921804,
+        "sign_index": 2,
+        "degree_in_sign": 13.921804,
+        "is_retrograde": false,
+        "speed": 13.444525
+      },
+      "Mars": {
+        "longitude": 218.336844,
+        "sign_index": 7,
+        "degree_in_sign": 8.336844,
+        "is_retrograde": false,
+        "speed": 0.707076
+      },
+      "Mercury": {
+        "longitude": 218.238663,
+        "sign_index": 7,
+        "degree_in_sign": 8.238663,
+        "is_retrograde": false,
+        "speed": 1.470018
+      },
+      "Jupiter": {
+        "longitude": 331.471986,
+        "sign_index": 11,
+        "degree_in_sign": 1.471986,
+        "is_retrograde": false,
+        "speed": 0.068477
+      },
+      "Venus": {
+        "longitude": 188.529913,
+        "sign_index": 6,
+        "degree_in_sign": 8.529913,
+        "is_retrograde": false,
+        "speed": 1.112236
+      },
+      "Saturn": {
+        "longitude": 228.130592,
+        "sign_index": 7,
+        "degree_in_sign": 18.130592,
+        "is_retrograde": false,
+        "speed": 0.118135
+      },
+      "Rahu": {
+        "longitude": 55.957561,
+        "sign_index": 1,
+        "degree_in_sign": 25.957561,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 235.957561,
+        "sign_index": 7,
+        "degree_in_sign": 25.957561,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

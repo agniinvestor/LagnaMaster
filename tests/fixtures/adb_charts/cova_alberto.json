@@ -1,0 +1,113 @@
+{
+  "adb_id": 13363,
+  "name": "Cova, Alberto",
+  "given_name": "Alberto Cova",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436538.736111,
+    "year": 1958,
+    "month": 12,
+    "day": 1,
+    "calendar": "g",
+    "time": "06:40",
+    "time_type": "s",
+    "hour": 6.666667,
+    "time_unknown": false,
+    "place": "Como",
+    "country": "Italy",
+    "lat": 45.783333,
+    "lon": 9.083333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cova,_Alberto",
+  "source_notes": "Bordoni quotes B.C. 1984\\n",
+  "categories": [
+    "Traits : Personality : Ambitious",
+    "Traits : Personality : Hard worker",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Business : Top executive",
+    "Vocation : Sports : Track and Field",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 8.631893,
+    "lagna": 188.631893,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.283234,
+    "jd_ut": 2436538.736111,
+    "planets": {
+      "Sun": {
+        "longitude": 225.2398,
+        "sign_index": 7,
+        "degree_in_sign": 15.2398,
+        "is_retrograde": false,
+        "speed": 1.013442
+      },
+      "Moon": {
+        "longitude": 100.198178,
+        "sign_index": 3,
+        "degree_in_sign": 10.198178,
+        "is_retrograde": false,
+        "speed": 10.10033
+      },
+      "Mars": {
+        "longitude": 25.76107,
+        "sign_index": 0,
+        "degree_in_sign": 25.76107,
+        "is_retrograde": true,
+        "speed": -0.25396
+      },
+      "Mercury": {
+        "longitude": 242.344021,
+        "sign_index": 8,
+        "degree_in_sign": 2.344021,
+        "is_retrograde": true,
+        "speed": -0.15982
+      },
+      "Jupiter": {
+        "longitude": 204.526596,
+        "sign_index": 6,
+        "degree_in_sign": 24.526596,
+        "is_retrograde": false,
+        "speed": 0.212745
+      },
+      "Venus": {
+        "longitude": 230.101035,
+        "sign_index": 7,
+        "degree_in_sign": 20.101035,
+        "is_retrograde": false,
+        "speed": 1.25661
+      },
+      "Saturn": {
+        "longitude": 242.579132,
+        "sign_index": 8,
+        "degree_in_sign": 2.579132,
+        "is_retrograde": false,
+        "speed": 0.114428
+      },
+      "Rahu": {
+        "longitude": 176.399842,
+        "sign_index": 5,
+        "degree_in_sign": 26.399842,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 356.399842,
+        "sign_index": 11,
+        "degree_in_sign": 26.399842,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

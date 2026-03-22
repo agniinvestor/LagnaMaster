@@ -1,0 +1,109 @@
+{
+  "adb_id": 57777,
+  "name": "Capaldi, Peter",
+  "given_name": "Peter Capaldi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436308.354167,
+    "year": 1958,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Balornock (Glasgow)",
+    "country": "Scotland",
+    "lat": 55.891667,
+    "lon": -4.208333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capaldi,_Peter",
+  "source_notes": "Frank Clifford cites BC quoted to him by Caroline Gerard, on page 65 of his book 'British Entertainers'.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 20.307211,
+    "lagna": 170.307211,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.274425,
+    "jd_ut": 2436308.354167,
+    "planets": {
+      "Sun": {
+        "longitude": 1.102386,
+        "sign_index": 0,
+        "degree_in_sign": 1.102386,
+        "is_retrograde": false,
+        "speed": 0.979357
+      },
+      "Moon": {
+        "longitude": 314.250988,
+        "sign_index": 10,
+        "degree_in_sign": 14.250988,
+        "is_retrograde": false,
+        "speed": 14.678271
+      },
+      "Mars": {
+        "longitude": 297.697103,
+        "sign_index": 9,
+        "degree_in_sign": 27.697103,
+        "is_retrograde": false,
+        "speed": 0.736981
+      },
+      "Mercury": {
+        "longitude": 4.341312,
+        "sign_index": 0,
+        "degree_in_sign": 4.341312,
+        "is_retrograde": true,
+        "speed": -0.674796
+      },
+      "Jupiter": {
+        "longitude": 183.825198,
+        "sign_index": 6,
+        "degree_in_sign": 3.825198,
+        "is_retrograde": true,
+        "speed": -0.127856
+      },
+      "Venus": {
+        "longitude": 314.842189,
+        "sign_index": 10,
+        "degree_in_sign": 14.842189,
+        "is_retrograde": false,
+        "speed": 1.015922
+      },
+      "Saturn": {
+        "longitude": 242.348831,
+        "sign_index": 8,
+        "degree_in_sign": 2.348831,
+        "is_retrograde": true,
+        "speed": -0.016402
+      },
+      "Rahu": {
+        "longitude": 188.608254,
+        "sign_index": 6,
+        "degree_in_sign": 8.608254,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 8.608254,
+        "sign_index": 0,
+        "degree_in_sign": 8.608254,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

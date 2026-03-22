@@ -1,0 +1,113 @@
+{
+  "adb_id": 4381,
+  "name": "Clouzot, Henri-Georges",
+  "given_name": "Henri-Georges Clouzot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417900.174757,
+    "year": 1907,
+    "month": 11,
+    "day": 20,
+    "calendar": "g",
+    "time": "16:21",
+    "time_type": "s",
+    "hour": 16.35,
+    "time_unknown": false,
+    "place": "Niort",
+    "country": "France",
+    "lat": 46.316667,
+    "lon": -0.45
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clouzot,_Henri-Georges",
+  "source_notes": "B.R. in hand from Steinbrecher.  (4:30 PM Paris time)\\n",
+  "categories": [
+    "Traits : Body : Constitution sensitive",
+    "Traits : Personality : Pessimist",
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Diagnoses : Body Part Problems : Eyes",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 9.17324,
+    "lagna": 9.17324,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.570616,
+    "jd_ut": 2417900.174757,
+    "planets": {
+      "Sun": {
+        "longitude": 214.628282,
+        "sign_index": 7,
+        "degree_in_sign": 4.628282,
+        "is_retrograde": false,
+        "speed": 1.009447
+      },
+      "Moon": {
+        "longitude": 42.763674,
+        "sign_index": 1,
+        "degree_in_sign": 12.763674,
+        "is_retrograde": false,
+        "speed": 14.766486
+      },
+      "Mars": {
+        "longitude": 301.646855,
+        "sign_index": 10,
+        "degree_in_sign": 1.646855,
+        "is_retrograde": false,
+        "speed": 0.674758
+      },
+      "Mercury": {
+        "longitude": 201.864488,
+        "sign_index": 6,
+        "degree_in_sign": 21.864488,
+        "is_retrograde": true,
+        "speed": -0.589816
+      },
+      "Jupiter": {
+        "longitude": 110.868387,
+        "sign_index": 3,
+        "degree_in_sign": 20.868387,
+        "is_retrograde": false,
+        "speed": 0.033672
+      },
+      "Venus": {
+        "longitude": 231.652317,
+        "sign_index": 7,
+        "degree_in_sign": 21.652317,
+        "is_retrograde": false,
+        "speed": 1.249255
+      },
+      "Saturn": {
+        "longitude": 328.136028,
+        "sign_index": 10,
+        "degree_in_sign": 28.136028,
+        "is_retrograde": true,
+        "speed": -0.00803
+      },
+      "Rahu": {
+        "longitude": 84.095904,
+        "sign_index": 2,
+        "degree_in_sign": 24.095904,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 264.095904,
+        "sign_index": 8,
+        "degree_in_sign": 24.095904,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

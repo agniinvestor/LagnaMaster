@@ -1,0 +1,108 @@
+{
+  "adb_id": 70765,
+  "name": "Chacon Solares, Juan Rafael",
+  "given_name": "Juan Rafael Chacon Solares",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412938.65015,
+    "year": 1894,
+    "month": 4,
+    "day": 19,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Heredia",
+    "country": "Costa Rica",
+    "lat": 10.0,
+    "lon": -84.116667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chacon_Solares,_Juan_Rafael",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 9.537354,
+    "lagna": 219.537354,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.380947,
+    "jd_ut": 2412938.65015,
+    "planets": {
+      "Sun": {
+        "longitude": 7.652084,
+        "sign_index": 0,
+        "degree_in_sign": 7.652084,
+        "is_retrograde": false,
+        "speed": 0.975023
+      },
+      "Moon": {
+        "longitude": 188.494036,
+        "sign_index": 6,
+        "degree_in_sign": 8.494036,
+        "is_retrograde": false,
+        "speed": 8.525766
+      },
+      "Mars": {
+        "longitude": 293.669475,
+        "sign_index": 9,
+        "degree_in_sign": 23.669475,
+        "is_retrograde": false,
+        "speed": 0.705951
+      },
+      "Mercury": {
+        "longitude": 341.84189,
+        "sign_index": 11,
+        "degree_in_sign": 11.84189,
+        "is_retrograde": false,
+        "speed": 1.345094
+      },
+      "Jupiter": {
+        "longitude": 41.21508,
+        "sign_index": 1,
+        "degree_in_sign": 11.21508,
+        "is_retrograde": false,
+        "speed": 0.213385
+      },
+      "Venus": {
+        "longitude": 321.690649,
+        "sign_index": 10,
+        "degree_in_sign": 21.690649,
+        "is_retrograde": false,
+        "speed": 0.916013
+      },
+      "Saturn": {
+        "longitude": 178.810854,
+        "sign_index": 5,
+        "degree_in_sign": 28.810854,
+        "is_retrograde": true,
+        "speed": -0.075602
+      },
+      "Rahu": {
+        "longitude": 347.017552,
+        "sign_index": 11,
+        "degree_in_sign": 17.017552,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 167.017552,
+        "sign_index": 5,
+        "degree_in_sign": 17.017552,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

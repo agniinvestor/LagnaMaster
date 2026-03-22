@@ -1,0 +1,109 @@
+{
+  "adb_id": 65030,
+  "name": "Cogny, René",
+  "given_name": "René Cogny",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416595.743507,
+    "year": 1904,
+    "month": 4,
+    "day": 25,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "St.Valéry en Caux",
+    "country": "France",
+    "lat": 49.866667,
+    "lon": 0.733333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cogny,_René",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 192.\\n",
+  "categories": [
+    "Personal : Death : Accidental",
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 13.860391,
+    "lagna": 13.860391,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.520749,
+    "jd_ut": 2416595.743507,
+    "planets": {
+      "Sun": {
+        "longitude": 12.073026,
+        "sign_index": 0,
+        "degree_in_sign": 12.073026,
+        "is_retrograde": false,
+        "speed": 0.972845
+      },
+      "Moon": {
+        "longitude": 129.056839,
+        "sign_index": 4,
+        "degree_in_sign": 9.056839,
+        "is_retrograde": false,
+        "speed": 17.581422
+      },
+      "Mars": {
+        "longitude": 21.059194,
+        "sign_index": 0,
+        "degree_in_sign": 21.059194,
+        "is_retrograde": false,
+        "speed": 0.726485
+      },
+      "Mercury": {
+        "longitude": 31.546338,
+        "sign_index": 1,
+        "degree_in_sign": 1.546338,
+        "is_retrograde": false,
+        "speed": 0.659675
+      },
+      "Jupiter": {
+        "longitude": 350.682845,
+        "sign_index": 11,
+        "degree_in_sign": 20.682845,
+        "is_retrograde": false,
+        "speed": 0.233168
+      },
+      "Venus": {
+        "longitude": 352.313997,
+        "sign_index": 11,
+        "degree_in_sign": 22.313997,
+        "is_retrograde": false,
+        "speed": 1.225542
+      },
+      "Saturn": {
+        "longitude": 297.406358,
+        "sign_index": 9,
+        "degree_in_sign": 27.406358,
+        "is_retrograde": false,
+        "speed": 0.057325
+      },
+      "Rahu": {
+        "longitude": 153.22046,
+        "sign_index": 5,
+        "degree_in_sign": 3.22046,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 333.22046,
+        "sign_index": 11,
+        "degree_in_sign": 3.22046,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

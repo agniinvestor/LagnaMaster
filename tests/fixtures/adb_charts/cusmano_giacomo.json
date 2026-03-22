@@ -1,0 +1,109 @@
+{
+  "adb_id": 62409,
+  "name": "Cusmano, Giacomo",
+  "given_name": "Giacomo Cusmano",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2390988.233704,
+    "year": 1834,
+    "month": 3,
+    "day": 15,
+    "calendar": "g",
+    "time": "18:30",
+    "time_type": "l",
+    "hour": 18.5,
+    "time_unknown": false,
+    "place": "Palermo",
+    "country": "Italy",
+    "lat": 38.116667,
+    "lon": 13.366667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cusmano,_Giacomo",
+  "source_notes": "Sy Scholfield cites birth record as quoted in \"Giacomo Cusmano: poveri chiesa e società nella Sicilia dell'ottocento (1834-1971)\" by Maria Teresa Falzone (S.F. Flaccovio, 1986), p. 43: \"Giacomo nacque il 15 marzo 1834 alle 18,30.\"\\n",
+  "categories": [
+    "Vocation : Medical : Physician",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 17.197618,
+    "lagna": 137.197618,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.541961,
+    "jd_ut": 2390988.233704,
+    "planets": {
+      "Sun": {
+        "longitude": 333.14605,
+        "sign_index": 11,
+        "degree_in_sign": 3.14605,
+        "is_retrograde": false,
+        "speed": 0.994977
+      },
+      "Moon": {
+        "longitude": 30.208193,
+        "sign_index": 1,
+        "degree_in_sign": 0.208193,
+        "is_retrograde": false,
+        "speed": 8.71778
+      },
+      "Mars": {
+        "longitude": 296.332316,
+        "sign_index": 9,
+        "degree_in_sign": 26.332316,
+        "is_retrograde": false,
+        "speed": 0.771974
+      },
+      "Mercury": {
+        "longitude": 350.301204,
+        "sign_index": 11,
+        "degree_in_sign": 20.301204,
+        "is_retrograde": false,
+        "speed": 0.455539
+      },
+      "Jupiter": {
+        "longitude": 14.398289,
+        "sign_index": 0,
+        "degree_in_sign": 14.398289,
+        "is_retrograde": false,
+        "speed": 0.207842
+      },
+      "Venus": {
+        "longitude": 335.057319,
+        "sign_index": 11,
+        "degree_in_sign": 5.057319,
+        "is_retrograde": false,
+        "speed": 1.245503
+      },
+      "Saturn": {
+        "longitude": 166.869028,
+        "sign_index": 5,
+        "degree_in_sign": 16.869028,
+        "is_retrograde": true,
+        "speed": -0.07465
+      },
+      "Rahu": {
+        "longitude": 70.217127,
+        "sign_index": 2,
+        "degree_in_sign": 10.217127,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 250.217127,
+        "sign_index": 8,
+        "degree_in_sign": 10.217127,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

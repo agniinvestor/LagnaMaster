@@ -1,0 +1,114 @@
+{
+  "adb_id": 98058,
+  "name": "Chapman, Anne MacKaye",
+  "given_name": "Anne MacKaye Chapman",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423082.815972,
+    "year": 1922,
+    "month": 1,
+    "day": 27,
+    "calendar": "g",
+    "time": "23:35",
+    "time_type": "s",
+    "hour": 23.583333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapman,_Anne_MacKaye",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file; born at Hospital of the Good Samaritan.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Financial : Gain - Grant, Scholarship, etc.",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Humanities+Social Sciences : Ethnologist",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 11.545743,
+    "lagna": 161.545743,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.768751,
+    "jd_ut": 2423082.815972,
+    "planets": {
+      "Sun": {
+        "longitude": 284.848409,
+        "sign_index": 9,
+        "degree_in_sign": 14.848409,
+        "is_retrograde": false,
+        "speed": 1.016203
+      },
+      "Moon": {
+        "longitude": 288.197005,
+        "sign_index": 9,
+        "degree_in_sign": 18.197005,
+        "is_retrograde": false,
+        "speed": 16.271277
+      },
+      "Mars": {
+        "longitude": 205.921861,
+        "sign_index": 6,
+        "degree_in_sign": 25.921861,
+        "is_retrograde": false,
+        "speed": 0.548657
+      },
+      "Mercury": {
+        "longitude": 303.086769,
+        "sign_index": 10,
+        "degree_in_sign": 3.086769,
+        "is_retrograde": false,
+        "speed": 1.188756
+      },
+      "Jupiter": {
+        "longitude": 176.074536,
+        "sign_index": 5,
+        "degree_in_sign": 26.074536,
+        "is_retrograde": false,
+        "speed": 0.017963
+      },
+      "Venus": {
+        "longitude": 281.960289,
+        "sign_index": 9,
+        "degree_in_sign": 11.960289,
+        "is_retrograde": false,
+        "speed": 1.256116
+      },
+      "Saturn": {
+        "longitude": 164.725865,
+        "sign_index": 5,
+        "degree_in_sign": 14.725865,
+        "is_retrograde": true,
+        "speed": -0.019858
+      },
+      "Rahu": {
+        "longitude": 169.45689,
+        "sign_index": 5,
+        "degree_in_sign": 19.45689,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 349.45689,
+        "sign_index": 11,
+        "degree_in_sign": 19.45689,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

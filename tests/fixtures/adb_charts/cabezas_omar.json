@@ -1,0 +1,110 @@
+{
+  "adb_id": 104260,
+  "name": "Cabezas, Omar",
+  "given_name": "Omar Cabezas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433575.0,
+    "year": 1950,
+    "month": 10,
+    "day": 20,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "León",
+    "country": "Nicaragua",
+    "lat": 12.433333,
+    "lon": -86.883333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabezas,_Omar",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Writers : Autobiographer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 14.643689,
+    "lagna": 164.643689,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.169909,
+    "jd_ut": 2433575.0,
+    "planets": {
+      "Sun": {
+        "longitude": 183.358451,
+        "sign_index": 6,
+        "degree_in_sign": 3.358451,
+        "is_retrograde": false,
+        "speed": 0.994034
+      },
+      "Moon": {
+        "longitude": 301.66192,
+        "sign_index": 10,
+        "degree_in_sign": 1.66192,
+        "is_retrograde": false,
+        "speed": 17.872595
+      },
+      "Mars": {
+        "longitude": 234.410833,
+        "sign_index": 7,
+        "degree_in_sign": 24.410833,
+        "is_retrograde": false,
+        "speed": 0.730046
+      },
+      "Mercury": {
+        "longitude": 175.053708,
+        "sign_index": 5,
+        "degree_in_sign": 25.053708,
+        "is_retrograde": false,
+        "speed": 1.714715
+      },
+      "Jupiter": {
+        "longitude": 304.442594,
+        "sign_index": 10,
+        "degree_in_sign": 4.442594,
+        "is_retrograde": true,
+        "speed": -0.012752
+      },
+      "Venus": {
+        "longitude": 177.145378,
+        "sign_index": 5,
+        "degree_in_sign": 27.145378,
+        "is_retrograde": false,
+        "speed": 1.251842
+      },
+      "Saturn": {
+        "longitude": 153.683191,
+        "sign_index": 5,
+        "degree_in_sign": 3.683191,
+        "is_retrograde": false,
+        "speed": 0.114015
+      },
+      "Rahu": {
+        "longitude": 333.45431,
+        "sign_index": 11,
+        "degree_in_sign": 3.45431,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 153.45431,
+        "sign_index": 5,
+        "degree_in_sign": 3.45431,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

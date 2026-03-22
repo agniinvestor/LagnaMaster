@@ -1,0 +1,110 @@
+{
+  "adb_id": 96010,
+  "name": "Charles of Mount Argus",
+  "given_name": "Charles of Mount Argus",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2386510.942037,
+    "year": 1821,
+    "month": 12,
+    "day": 11,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Sittard",
+    "country": "Netherlands",
+    "lat": 51.0,
+    "lon": 5.866667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_of_Mount_Argus",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file [https://commons.wikimedia.org/wiki/File:Geboorteakte_Karel_Houben.jpg].\\n\\nHe was born in Munstergeleen, a village in the Dutch province of Limburg, now located in the municipality of Sittard-Geleen [https://en.wikipedia.org/wiki/Munstergeleen].\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 25.75002,
+    "lagna": 265.75002,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.370857,
+    "jd_ut": 2386510.942037,
+    "planets": {
+      "Sun": {
+        "longitude": 237.766929,
+        "sign_index": 7,
+        "degree_in_sign": 27.766929,
+        "is_retrograde": false,
+        "speed": 1.016845
+      },
+      "Moon": {
+        "longitude": 88.347692,
+        "sign_index": 2,
+        "degree_in_sign": 28.347692,
+        "is_retrograde": false,
+        "speed": 16.917577
+      },
+      "Mars": {
+        "longitude": 133.493018,
+        "sign_index": 4,
+        "degree_in_sign": 13.493018,
+        "is_retrograde": false,
+        "speed": 0.298722
+      },
+      "Mercury": {
+        "longitude": 217.130873,
+        "sign_index": 7,
+        "degree_in_sign": 7.130873,
+        "is_retrograde": false,
+        "speed": 1.169803
+      },
+      "Jupiter": {
+        "longitude": 358.938477,
+        "sign_index": 11,
+        "degree_in_sign": 28.938477,
+        "is_retrograde": true,
+        "speed": -0.015059
+      },
+      "Venus": {
+        "longitude": 284.194869,
+        "sign_index": 9,
+        "degree_in_sign": 14.194869,
+        "is_retrograde": false,
+        "speed": 1.10451
+      },
+      "Saturn": {
+        "longitude": 358.616572,
+        "sign_index": 11,
+        "degree_in_sign": 28.616572,
+        "is_retrograde": true,
+        "speed": -0.021077
+      },
+      "Rahu": {
+        "longitude": 307.478554,
+        "sign_index": 10,
+        "degree_in_sign": 7.478554,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 127.478554,
+        "sign_index": 4,
+        "degree_in_sign": 7.478554,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

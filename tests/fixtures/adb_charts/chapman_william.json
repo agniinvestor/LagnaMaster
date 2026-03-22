@@ -1,0 +1,112 @@
+{
+  "adb_id": 90082,
+  "name": "Chapman, William",
+  "given_name": "William Chapman",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423539.899306,
+    "year": 1923,
+    "month": 4,
+    "day": 30,
+    "calendar": "g",
+    "time": "01:35",
+    "time_type": "s",
+    "hour": 1.583333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapman,_William",
+  "source_notes": "Birth certificate on file from Sy Scholfield. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertain/Music : Music teacher",
+    "Vocation : Entertain/Music : Vocalist/Opera"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 4.557838,
+    "lagna": 274.557838,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.786226,
+    "jd_ut": 2423539.899306,
+    "planets": {
+      "Sun": {
+        "longitude": 16.23658,
+        "sign_index": 0,
+        "degree_in_sign": 16.23658,
+        "is_retrograde": false,
+        "speed": 0.97049
+      },
+      "Moon": {
+        "longitude": 188.954937,
+        "sign_index": 6,
+        "degree_in_sign": 8.954937,
+        "is_retrograde": false,
+        "speed": 10.943348
+      },
+      "Mars": {
+        "longitude": 46.904126,
+        "sign_index": 1,
+        "degree_in_sign": 16.904126,
+        "is_retrograde": false,
+        "speed": 0.674174
+      },
+      "Mercury": {
+        "longitude": 36.113424,
+        "sign_index": 1,
+        "degree_in_sign": 6.113424,
+        "is_retrograde": false,
+        "speed": 1.371274
+      },
+      "Jupiter": {
+        "longitude": 201.949997,
+        "sign_index": 6,
+        "degree_in_sign": 21.949997,
+        "is_retrograde": true,
+        "speed": -0.126102
+      },
+      "Venus": {
+        "longitude": 341.785882,
+        "sign_index": 11,
+        "degree_in_sign": 11.785882,
+        "is_retrograde": false,
+        "speed": 1.193609
+      },
+      "Saturn": {
+        "longitude": 172.311363,
+        "sign_index": 5,
+        "degree_in_sign": 22.311363,
+        "is_retrograde": true,
+        "speed": -0.066989
+      },
+      "Rahu": {
+        "longitude": 145.23509,
+        "sign_index": 4,
+        "degree_in_sign": 25.23509,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.23509,
+        "sign_index": 10,
+        "degree_in_sign": 25.23509,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

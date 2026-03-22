@@ -1,0 +1,109 @@
+{
+  "adb_id": 74082,
+  "name": "Cranner, Alf",
+  "given_name": "Alf Cranner",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428466.881944,
+    "year": 1936,
+    "month": 10,
+    "day": 25,
+    "calendar": "g",
+    "time": "10:10",
+    "time_type": "s",
+    "hour": 10.166667,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cranner,_Alf",
+  "source_notes": "Viktor E. quotes certificate of live birth in hand. AM or PM not specified. (Before noon is most likely correct as it's somewhat unlikely that a midwife in Norway would have written 10:10 for a time of 22:10.)\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Folk Music"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 10.703404,
+    "lagna": 190.703404,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.974599,
+    "jd_ut": 2428466.881944,
+    "planets": {
+      "Sun": {
+        "longitude": 188.801286,
+        "sign_index": 6,
+        "degree_in_sign": 8.801286,
+        "is_retrograde": false,
+        "speed": 0.997159
+      },
+      "Moon": {
+        "longitude": 301.656156,
+        "sign_index": 10,
+        "degree_in_sign": 1.656156,
+        "is_retrograde": false,
+        "speed": 15.905379
+      },
+      "Mars": {
+        "longitude": 144.786744,
+        "sign_index": 4,
+        "degree_in_sign": 24.786744,
+        "is_retrograde": false,
+        "speed": 0.610206
+      },
+      "Mercury": {
+        "longitude": 173.88182,
+        "sign_index": 5,
+        "degree_in_sign": 23.88182,
+        "is_retrograde": false,
+        "speed": 1.570284
+      },
+      "Jupiter": {
+        "longitude": 239.222325,
+        "sign_index": 7,
+        "degree_in_sign": 29.222325,
+        "is_retrograde": false,
+        "speed": 0.182432
+      },
+      "Venus": {
+        "longitude": 219.683465,
+        "sign_index": 7,
+        "degree_in_sign": 9.683465,
+        "is_retrograde": false,
+        "speed": 1.224596
+      },
+      "Saturn": {
+        "longitude": 323.337492,
+        "sign_index": 10,
+        "degree_in_sign": 23.337492,
+        "is_retrograde": true,
+        "speed": -0.041646
+      },
+      "Rahu": {
+        "longitude": 244.144039,
+        "sign_index": 8,
+        "degree_in_sign": 4.144039,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 64.144039,
+        "sign_index": 2,
+        "degree_in_sign": 4.144039,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

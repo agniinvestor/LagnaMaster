@@ -1,0 +1,109 @@
+{
+  "adb_id": 69594,
+  "name": "Chapelle, Thibault",
+  "given_name": "Thibault Chapelle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2443272.600694,
+    "year": 1977,
+    "month": 5,
+    "day": 9,
+    "calendar": "g",
+    "time": "04:25",
+    "time_type": "d",
+    "hour": 4.416667,
+    "time_unknown": false,
+    "place": "Bron",
+    "country": "France",
+    "lat": 45.733333,
+    "lon": 4.916667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chapelle,_Thibault",
+  "source_notes": "Didier Geslain archive, 'sports divers' pdf file, p. 33.\\n",
+  "categories": [
+    "Vocation : Sports : Rowing/ Kayaking",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 8.914969,
+    "lagna": 308.914969,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.540733,
+    "jd_ut": 2443272.600694,
+    "planets": {
+      "Sun": {
+        "longitude": 24.809453,
+        "sign_index": 0,
+        "degree_in_sign": 24.809453,
+        "is_retrograde": false,
+        "speed": 0.966746
+      },
+      "Moon": {
+        "longitude": 281.542486,
+        "sign_index": 9,
+        "degree_in_sign": 11.542486,
+        "is_retrograde": false,
+        "speed": 10.388093
+      },
+      "Mars": {
+        "longitude": 345.261667,
+        "sign_index": 11,
+        "degree_in_sign": 15.261667,
+        "is_retrograde": false,
+        "speed": 0.766313
+      },
+      "Mercury": {
+        "longitude": 12.02541,
+        "sign_index": 0,
+        "degree_in_sign": 12.02541,
+        "is_retrograde": true,
+        "speed": -0.351807
+      },
+      "Jupiter": {
+        "longitude": 44.031992,
+        "sign_index": 1,
+        "degree_in_sign": 14.031992,
+        "is_retrograde": false,
+        "speed": 0.226796
+      },
+      "Venus": {
+        "longitude": 347.16969,
+        "sign_index": 11,
+        "degree_in_sign": 17.16969,
+        "is_retrograde": false,
+        "speed": 0.400318
+      },
+      "Saturn": {
+        "longitude": 107.100587,
+        "sign_index": 3,
+        "degree_in_sign": 17.100587,
+        "is_retrograde": false,
+        "speed": 0.048519
+      },
+      "Rahu": {
+        "longitude": 179.558599,
+        "sign_index": 5,
+        "degree_in_sign": 29.558599,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 359.558599,
+        "sign_index": 11,
+        "degree_in_sign": 29.558599,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 85418,
+  "name": "Carstens, Lina",
+  "given_name": "Lina Carstens",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412438.831296,
+    "year": 1892,
+    "month": 12,
+    "day": 6,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "l",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Wiesbaden",
+    "country": "Germany",
+    "lat": 50.083333,
+    "lon": 8.233333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carstens,_Lina",
+  "source_notes": "Sy Scholfield provided birth registry entry from Hesse Archives. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Voice-Over",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 8.072674,
+    "lagna": 218.072674,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.36184,
+    "jd_ut": 2412438.831296,
+    "planets": {
+      "Sun": {
+        "longitude": 232.361046,
+        "sign_index": 7,
+        "degree_in_sign": 22.361046,
+        "is_retrograde": false,
+        "speed": 1.015482
+      },
+      "Moon": {
+        "longitude": 82.742944,
+        "sign_index": 2,
+        "degree_in_sign": 22.742944,
+        "is_retrograde": false,
+        "speed": 15.191273
+      },
+      "Mars": {
+        "longitude": 323.777522,
+        "sign_index": 10,
+        "degree_in_sign": 23.777522,
+        "is_retrograde": false,
+        "speed": 0.62702
+      },
+      "Mercury": {
+        "longitude": 245.02783,
+        "sign_index": 8,
+        "degree_in_sign": 5.02783,
+        "is_retrograde": true,
+        "speed": -0.707979
+      },
+      "Jupiter": {
+        "longitude": 352.641643,
+        "sign_index": 11,
+        "degree_in_sign": 22.641643,
+        "is_retrograde": true,
+        "speed": -0.011615
+      },
+      "Venus": {
+        "longitude": 197.329627,
+        "sign_index": 6,
+        "degree_in_sign": 17.329627,
+        "is_retrograde": false,
+        "speed": 1.224219
+      },
+      "Saturn": {
+        "longitude": 168.622849,
+        "sign_index": 5,
+        "degree_in_sign": 18.622849,
+        "is_retrograde": false,
+        "speed": 0.075681
+      },
+      "Rahu": {
+        "longitude": 13.50401,
+        "sign_index": 0,
+        "degree_in_sign": 13.50401,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 193.50401,
+        "sign_index": 6,
+        "degree_in_sign": 13.50401,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

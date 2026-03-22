@@ -1,0 +1,111 @@
+{
+  "adb_id": 105646,
+  "name": "Creason, Sammy",
+  "given_name": "Sammy Creason",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431422.365278,
+    "year": 1944,
+    "month": 11,
+    "day": 27,
+    "calendar": "g",
+    "time": "15:46",
+    "time_type": "w",
+    "hour": 15.766667,
+    "time_unknown": false,
+    "place": "Jonesboro",
+    "country": "Arkansas",
+    "lat": 35.85,
+    "lon": -90.7
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "tau",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Creason,_Sammy",
+  "source_notes": "Sy Scholfield provided birth notice, ''The Sun/ Jonesboro Evening Sun'' (Jonesboro, Arkansas), 28 November 1944, page 2: born yesterday at St. Bernard's Hospital. \\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Brain",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 10.838373,
+    "lagna": 340.838373,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.087601,
+    "jd_ut": 2431422.365278,
+    "planets": {
+      "Sun": {
+        "longitude": 222.423797,
+        "sign_index": 7,
+        "degree_in_sign": 12.423797,
+        "is_retrograde": false,
+        "speed": 1.012377
+      },
+      "Moon": {
+        "longitude": 13.783087,
+        "sign_index": 0,
+        "degree_in_sign": 13.783087,
+        "is_retrograde": false,
+        "speed": 16.389859
+      },
+      "Mars": {
+        "longitude": 218.480617,
+        "sign_index": 7,
+        "degree_in_sign": 8.480617,
+        "is_retrograde": false,
+        "speed": 0.714438
+      },
+      "Mercury": {
+        "longitude": 242.099553,
+        "sign_index": 8,
+        "degree_in_sign": 2.099553,
+        "is_retrograde": false,
+        "speed": 1.329785
+      },
+      "Jupiter": {
+        "longitude": 151.343002,
+        "sign_index": 5,
+        "degree_in_sign": 1.343002,
+        "is_retrograde": false,
+        "speed": 0.127443
+      },
+      "Venus": {
+        "longitude": 260.912105,
+        "sign_index": 8,
+        "degree_in_sign": 20.912105,
+        "is_retrograde": false,
+        "speed": 1.206623
+      },
+      "Saturn": {
+        "longitude": 76.572353,
+        "sign_index": 2,
+        "degree_in_sign": 16.572353,
+        "is_retrograde": true,
+        "speed": -0.06045
+      },
+      "Rahu": {
+        "longitude": 87.526863,
+        "sign_index": 2,
+        "degree_in_sign": 27.526863,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 267.526863,
+        "sign_index": 8,
+        "degree_in_sign": 27.526863,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

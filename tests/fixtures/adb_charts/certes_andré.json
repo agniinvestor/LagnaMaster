@@ -1,0 +1,108 @@
+{
+  "adb_id": 71636,
+  "name": "Certes, André",
+  "given_name": "André Certes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418639.57684,
+    "year": 1909,
+    "month": 11,
+    "day": 29,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Bagnolet",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.416667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Certes,_André",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file: from Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 20.189701,
+    "lagna": 140.189701,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.598883,
+    "jd_ut": 2418639.57684,
+    "planets": {
+      "Sun": {
+        "longitude": 223.624487,
+        "sign_index": 7,
+        "degree_in_sign": 13.624487,
+        "is_retrograde": false,
+        "speed": 1.012834
+      },
+      "Moon": {
+        "longitude": 66.370094,
+        "sign_index": 2,
+        "degree_in_sign": 6.370094,
+        "is_retrograde": false,
+        "speed": 10.21121
+      },
+      "Mars": {
+        "longitude": 340.2003,
+        "sign_index": 11,
+        "degree_in_sign": 10.2003,
+        "is_retrograde": false,
+        "speed": 0.370311
+      },
+      "Mercury": {
+        "longitude": 221.27373,
+        "sign_index": 7,
+        "degree_in_sign": 11.27373,
+        "is_retrograde": false,
+        "speed": 1.575065
+      },
+      "Jupiter": {
+        "longitude": 166.550024,
+        "sign_index": 5,
+        "degree_in_sign": 16.550024,
+        "is_retrograde": false,
+        "speed": 0.15924
+      },
+      "Venus": {
+        "longitude": 270.822542,
+        "sign_index": 9,
+        "degree_in_sign": 0.822542,
+        "is_retrograde": false,
+        "speed": 1.037761
+      },
+      "Saturn": {
+        "longitude": 354.17217,
+        "sign_index": 11,
+        "degree_in_sign": 24.17217,
+        "is_retrograde": true,
+        "speed": -0.036959
+      },
+      "Rahu": {
+        "longitude": 44.913434,
+        "sign_index": 1,
+        "degree_in_sign": 14.913434,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 224.913434,
+        "sign_index": 7,
+        "degree_in_sign": 14.913434,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

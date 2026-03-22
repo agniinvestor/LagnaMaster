@@ -1,0 +1,109 @@
+{
+  "adb_id": 62731,
+  "name": "Cabu",
+  "given_name": "Cabu",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428912.388889,
+    "year": 1938,
+    "month": 1,
+    "day": 13,
+    "calendar": "g",
+    "time": "21:20",
+    "time_type": "s",
+    "hour": 21.333333,
+    "time_unknown": false,
+    "place": "Châlons sur Marne",
+    "country": "France",
+    "lat": 48.95,
+    "lon": 4.366667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabu",
+  "source_notes": "Didier Geslain quotes BC.\\n",
+  "categories": [
+    "Passions : Criminal Victim : Terrorism victim",
+    "Vocation : Art : Cartoonist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 4.599848,
+    "lagna": 124.599848,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.991633,
+    "jd_ut": 2428912.388889,
+    "planets": {
+      "Sun": {
+        "longitude": 270.063184,
+        "sign_index": 9,
+        "degree_in_sign": 0.063184,
+        "is_retrograde": false,
+        "speed": 1.018336
+      },
+      "Moon": {
+        "longitude": 56.983832,
+        "sign_index": 1,
+        "degree_in_sign": 26.983832,
+        "is_retrograde": false,
+        "speed": 10.92134
+      },
+      "Mars": {
+        "longitude": 324.509901,
+        "sign_index": 10,
+        "degree_in_sign": 24.509901,
+        "is_retrograde": false,
+        "speed": 0.75388
+      },
+      "Mercury": {
+        "longitude": 247.434754,
+        "sign_index": 8,
+        "degree_in_sign": 7.434754,
+        "is_retrograde": false,
+        "speed": 0.502694
+      },
+      "Jupiter": {
+        "longitude": 282.622782,
+        "sign_index": 9,
+        "degree_in_sign": 12.622782,
+        "is_retrograde": false,
+        "speed": 0.234281
+      },
+      "Venus": {
+        "longitude": 264.961655,
+        "sign_index": 8,
+        "degree_in_sign": 24.961655,
+        "is_retrograde": false,
+        "speed": 1.257267
+      },
+      "Saturn": {
+        "longitude": 336.964028,
+        "sign_index": 11,
+        "degree_in_sign": 6.964028,
+        "is_retrograde": false,
+        "speed": 0.072034
+      },
+      "Rahu": {
+        "longitude": 220.535703,
+        "sign_index": 7,
+        "degree_in_sign": 10.535703,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 40.535703,
+        "sign_index": 1,
+        "degree_in_sign": 10.535703,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

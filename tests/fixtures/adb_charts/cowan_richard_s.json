@@ -1,0 +1,115 @@
+{
+  "adb_id": 98044,
+  "name": "Cowan, Richard S.",
+  "given_name": "Richard S. Cowan",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422713.25,
+    "year": 1921,
+    "month": 1,
+    "day": 23,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Union",
+    "country": "Indiana",
+    "lat": 38.466667,
+    "lon": -87.433333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowan,_Richard_S.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file, \"born alive at 12 M.\" \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Foster, Step, or Adopted Kids",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Accidental",
+    "Vocation : Science : Biology",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 7.403535,
+    "lagna": 7.403535,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.754622,
+    "jd_ut": 2422713.25,
+    "planets": {
+      "Sun": {
+        "longitude": 280.466617,
+        "sign_index": 9,
+        "degree_in_sign": 10.466617,
+        "is_retrograde": false,
+        "speed": 1.01653
+      },
+      "Moon": {
+        "longitude": 97.624458,
+        "sign_index": 3,
+        "degree_in_sign": 7.624458,
+        "is_retrograde": false,
+        "speed": 20.119401
+      },
+      "Mars": {
+        "longitude": 321.524269,
+        "sign_index": 10,
+        "degree_in_sign": 21.524269,
+        "is_retrograde": false,
+        "speed": 0.772056
+      },
+      "Mercury": {
+        "longitude": 285.165069,
+        "sign_index": 9,
+        "degree_in_sign": 15.165069,
+        "is_retrograde": false,
+        "speed": 1.724557
+      },
+      "Jupiter": {
+        "longitude": 145.525912,
+        "sign_index": 4,
+        "degree_in_sign": 25.525912,
+        "is_retrograde": true,
+        "speed": -0.062516
+      },
+      "Venus": {
+        "longitude": 326.402308,
+        "sign_index": 10,
+        "degree_in_sign": 26.402308,
+        "is_retrograde": false,
+        "speed": 1.104264
+      },
+      "Saturn": {
+        "longitude": 151.707035,
+        "sign_index": 5,
+        "degree_in_sign": 1.707035,
+        "is_retrograde": true,
+        "speed": -0.034259
+      },
+      "Rahu": {
+        "longitude": 189.040962,
+        "sign_index": 6,
+        "degree_in_sign": 9.040962,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 9.040962,
+        "sign_index": 0,
+        "degree_in_sign": 9.040962,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

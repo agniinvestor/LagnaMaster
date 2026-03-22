@@ -1,0 +1,110 @@
+{
+  "adb_id": 56194,
+  "name": "Courths-Mahler, Hedwig",
+  "given_name": "Hedwig Courths-Mahler",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403016.03037,
+    "year": 1867,
+    "month": 2,
+    "day": 18,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "l",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Nebra",
+    "country": "Germany",
+    "lat": 51.283333,
+    "lon": 11.566667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courths-Mahler,_Hedwig",
+  "source_notes": "Arno Müller, vol.3, via Church Register: \"Mittag ein einhalb\" (Taeger update bulletin no.3).\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Writers : Fiction",
+    "Notable : Extraordinary Talents : For Creativity"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 5.289098,
+    "lagna": 65.289098,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.001658,
+    "jd_ut": 2403016.03037,
+    "planets": {
+      "Sun": {
+        "longitude": 307.441888,
+        "sign_index": 10,
+        "degree_in_sign": 7.441888,
+        "is_retrograde": false,
+        "speed": 1.007602
+      },
+      "Moon": {
+        "longitude": 124.181797,
+        "sign_index": 4,
+        "degree_in_sign": 4.181797,
+        "is_retrograde": false,
+        "speed": 17.221578
+      },
+      "Mars": {
+        "longitude": 79.167273,
+        "sign_index": 2,
+        "degree_in_sign": 19.167273,
+        "is_retrograde": true,
+        "speed": -0.001073
+      },
+      "Mercury": {
+        "longitude": 313.064565,
+        "sign_index": 10,
+        "degree_in_sign": 13.064565,
+        "is_retrograde": false,
+        "speed": 1.867228
+      },
+      "Jupiter": {
+        "longitude": 296.013916,
+        "sign_index": 9,
+        "degree_in_sign": 26.013916,
+        "is_retrograde": false,
+        "speed": 0.236288
+      },
+      "Venus": {
+        "longitude": 260.739577,
+        "sign_index": 8,
+        "degree_in_sign": 20.739577,
+        "is_retrograde": false,
+        "speed": 0.989236
+      },
+      "Saturn": {
+        "longitude": 211.952449,
+        "sign_index": 7,
+        "degree_in_sign": 1.952449,
+        "is_retrograde": false,
+        "speed": 0.022804
+      },
+      "Rahu": {
+        "longitude": 152.838264,
+        "sign_index": 5,
+        "degree_in_sign": 2.838264,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 332.838264,
+        "sign_index": 11,
+        "degree_in_sign": 2.838264,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

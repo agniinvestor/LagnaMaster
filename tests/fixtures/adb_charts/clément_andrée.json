@@ -1,0 +1,109 @@
+{
+  "adb_id": 52535,
+  "name": "Clément, Andrée",
+  "given_name": "Andrée Clément",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421812.791667,
+    "year": 1918,
+    "month": 8,
+    "day": 7,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "d",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clément,_Andrée",
+  "source_notes": "Steinbrecher collection: Gauquelin 5/179\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 25.551603,
+    "lagna": 115.551603,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.720196,
+    "jd_ut": 2421812.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 111.230914,
+        "sign_index": 3,
+        "degree_in_sign": 21.230914,
+        "is_retrograde": false,
+        "speed": 0.958754
+      },
+      "Moon": {
+        "longitude": 117.094025,
+        "sign_index": 3,
+        "degree_in_sign": 27.094025,
+        "is_retrograde": false,
+        "speed": 11.266418
+      },
+      "Mars": {
+        "longitude": 181.226787,
+        "sign_index": 6,
+        "degree_in_sign": 1.226787,
+        "is_retrograde": false,
+        "speed": 0.600548
+      },
+      "Mercury": {
+        "longitude": 138.455506,
+        "sign_index": 4,
+        "degree_in_sign": 18.455506,
+        "is_retrograde": false,
+        "speed": 0.862413
+      },
+      "Jupiter": {
+        "longitude": 72.612443,
+        "sign_index": 2,
+        "degree_in_sign": 12.612443,
+        "is_retrograde": false,
+        "speed": 0.201805
+      },
+      "Venus": {
+        "longitude": 83.464703,
+        "sign_index": 2,
+        "degree_in_sign": 23.464703,
+        "is_retrograde": false,
+        "speed": 1.204426
+      },
+      "Saturn": {
+        "longitude": 114.79936,
+        "sign_index": 3,
+        "degree_in_sign": 24.79936,
+        "is_retrograde": false,
+        "speed": 0.128029
+      },
+      "Rahu": {
+        "longitude": 236.758131,
+        "sign_index": 7,
+        "degree_in_sign": 26.758131,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 56.758131,
+        "sign_index": 1,
+        "degree_in_sign": 26.758131,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

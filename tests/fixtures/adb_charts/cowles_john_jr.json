@@ -1,0 +1,112 @@
+{
+  "adb_id": 94094,
+  "name": "Cowles, John Jr.",
+  "given_name": "John Jr. Cowles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425759.579861,
+    "year": 1929,
+    "month": 5,
+    "day": 27,
+    "calendar": "g",
+    "time": "19:55",
+    "time_type": "s",
+    "hour": 19.916667,
+    "time_unknown": false,
+    "place": "Des Moines",
+    "country": "Iowa",
+    "lat": 41.6,
+    "lon": -93.616667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cowles,_John_Jr.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Parenting : Kids more than 3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Top executive",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 25.014074,
+    "lagna": 205.014074,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.87109,
+    "jd_ut": 2425759.579861,
+    "planets": {
+      "Sun": {
+        "longitude": 43.378949,
+        "sign_index": 1,
+        "degree_in_sign": 13.378949,
+        "is_retrograde": false,
+        "speed": 0.959149
+      },
+      "Moon": {
+        "longitude": 273.479501,
+        "sign_index": 9,
+        "degree_in_sign": 3.479501,
+        "is_retrograde": false,
+        "speed": 13.507365
+      },
+      "Mars": {
+        "longitude": 105.420428,
+        "sign_index": 3,
+        "degree_in_sign": 15.420428,
+        "is_retrograde": false,
+        "speed": 0.562353
+      },
+      "Mercury": {
+        "longitude": 59.574548,
+        "sign_index": 1,
+        "degree_in_sign": 29.574548,
+        "is_retrograde": false,
+        "speed": 0.023466
+      },
+      "Jupiter": {
+        "longitude": 33.556148,
+        "sign_index": 1,
+        "degree_in_sign": 3.556148,
+        "is_retrograde": false,
+        "speed": 0.234614
+      },
+      "Venus": {
+        "longitude": 3.408079,
+        "sign_index": 0,
+        "degree_in_sign": 3.408079,
+        "is_retrograde": false,
+        "speed": 0.519509
+      },
+      "Saturn": {
+        "longitude": 245.908431,
+        "sign_index": 8,
+        "degree_in_sign": 5.908431,
+        "is_retrograde": true,
+        "speed": -0.065061
+      },
+      "Rahu": {
+        "longitude": 27.609595,
+        "sign_index": 0,
+        "degree_in_sign": 27.609595,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 207.609595,
+        "sign_index": 6,
+        "degree_in_sign": 27.609595,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 62804,
+  "name": "Chevassu, François",
+  "given_name": "François Chevassu",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425781.625,
+    "year": 1929,
+    "month": 6,
+    "day": 19,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "d",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Angoulême",
+    "country": "France",
+    "lat": 45.65,
+    "lon": 0.15
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevassu,_François",
+  "source_notes": "Didier Geslain archive\\n",
+  "categories": [
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Critic"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 21.94673,
+    "lagna": 21.94673,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.871932,
+    "jd_ut": 2425781.625,
+    "planets": {
+      "Sun": {
+        "longitude": 64.468301,
+        "sign_index": 2,
+        "degree_in_sign": 4.468301,
+        "is_retrograde": false,
+        "speed": 0.954074
+      },
+      "Moon": {
+        "longitude": 210.681153,
+        "sign_index": 7,
+        "degree_in_sign": 0.681153,
+        "is_retrograde": false,
+        "speed": 11.033257
+      },
+      "Mars": {
+        "longitude": 118.079671,
+        "sign_index": 3,
+        "degree_in_sign": 28.079671,
+        "is_retrograde": false,
+        "speed": 0.585069
+      },
+      "Mercury": {
+        "longitude": 51.184351,
+        "sign_index": 1,
+        "degree_in_sign": 21.184351,
+        "is_retrograde": true,
+        "speed": -0.164327
+      },
+      "Jupiter": {
+        "longitude": 38.624546,
+        "sign_index": 1,
+        "degree_in_sign": 8.624546,
+        "is_retrograde": false,
+        "speed": 0.223514
+      },
+      "Venus": {
+        "longitude": 19.232151,
+        "sign_index": 0,
+        "degree_in_sign": 19.232151,
+        "is_retrograde": false,
+        "speed": 0.866262
+      },
+      "Saturn": {
+        "longitude": 244.343232,
+        "sign_index": 8,
+        "degree_in_sign": 4.343232,
+        "is_retrograde": true,
+        "speed": -0.073929
+      },
+      "Rahu": {
+        "longitude": 26.441378,
+        "sign_index": 0,
+        "degree_in_sign": 26.441378,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 206.441378,
+        "sign_index": 6,
+        "degree_in_sign": 26.441378,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

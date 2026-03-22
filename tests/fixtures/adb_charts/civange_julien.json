@@ -1,0 +1,112 @@
+{
+  "adb_id": 65007,
+  "name": "Civange, Julien",
+  "given_name": "Julien Civange",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440299.944444,
+    "year": 1969,
+    "month": 3,
+    "day": 19,
+    "calendar": "g",
+    "time": "11:40",
+    "time_type": "s",
+    "hour": 11.666667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Civange,_Julien",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 165.\\n",
+  "categories": [
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Business : Entertain Producer",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 20.994059,
+    "lagna": 50.994059,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.427058,
+    "jd_ut": 2440299.944444,
+    "planets": {
+      "Sun": {
+        "longitude": 335.228464,
+        "sign_index": 11,
+        "degree_in_sign": 5.228464,
+        "is_retrograde": false,
+        "speed": 0.994215
+      },
+      "Moon": {
+        "longitude": 350.61983,
+        "sign_index": 11,
+        "degree_in_sign": 20.61983,
+        "is_retrograde": false,
+        "speed": 10.310083
+      },
+      "Mars": {
+        "longitude": 225.601813,
+        "sign_index": 7,
+        "degree_in_sign": 15.601813,
+        "is_retrograde": false,
+        "speed": 0.351892
+      },
+      "Mercury": {
+        "longitude": 317.266872,
+        "sign_index": 10,
+        "degree_in_sign": 17.266872,
+        "is_retrograde": false,
+        "speed": 1.642018
+      },
+      "Jupiter": {
+        "longitude": 158.046234,
+        "sign_index": 5,
+        "degree_in_sign": 8.046234,
+        "is_retrograde": true,
+        "speed": -0.129337
+      },
+      "Venus": {
+        "longitude": 3.382845,
+        "sign_index": 0,
+        "degree_in_sign": 3.382845,
+        "is_retrograde": true,
+        "speed": -0.038669
+      },
+      "Saturn": {
+        "longitude": 1.380783,
+        "sign_index": 0,
+        "degree_in_sign": 1.380783,
+        "is_retrograde": false,
+        "speed": 0.118748
+      },
+      "Rahu": {
+        "longitude": 337.085714,
+        "sign_index": 11,
+        "degree_in_sign": 7.085714,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 157.085714,
+        "sign_index": 5,
+        "degree_in_sign": 7.085714,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

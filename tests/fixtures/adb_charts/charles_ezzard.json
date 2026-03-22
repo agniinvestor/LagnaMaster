@@ -1,0 +1,115 @@
+{
+  "adb_id": 25929,
+  "name": "Charles, Ezzard",
+  "given_name": "Ezzard Charles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422878.583333,
+    "year": 1921,
+    "month": 7,
+    "day": 7,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Lawrenceville",
+    "country": "Georgia (US)",
+    "lat": 33.95,
+    "lon": -83.983333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "leo",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles,_Ezzard",
+  "source_notes": "Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Traits : Personality : Passive/ Bland",
+    "Diagnoses : Major Diseases : Multiple Sclerosis",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Business/Marketing : Sales",
+    "Vocation : Politics : Government employee",
+    "Vocation : Sports : Boxing",
+    "Notable : Extraordinary Talents : For Eye-hand coordination",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 20.34613,
+    "lagna": 260.34613,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.760943,
+    "jd_ut": 2422878.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 82.590208,
+        "sign_index": 2,
+        "degree_in_sign": 22.590208,
+        "is_retrograde": false,
+        "speed": 0.95371
+      },
+      "Moon": {
+        "longitude": 117.659663,
+        "sign_index": 3,
+        "degree_in_sign": 27.659663,
+        "is_retrograde": false,
+        "speed": 15.328043
+      },
+      "Mars": {
+        "longitude": 80.018089,
+        "sign_index": 2,
+        "degree_in_sign": 20.018089,
+        "is_retrograde": false,
+        "speed": 0.659469
+      },
+      "Mercury": {
+        "longitude": 82.806743,
+        "sign_index": 2,
+        "degree_in_sign": 22.806743,
+        "is_retrograde": true,
+        "speed": -0.628846
+      },
+      "Jupiter": {
+        "longitude": 141.526914,
+        "sign_index": 4,
+        "degree_in_sign": 21.526914,
+        "is_retrograde": false,
+        "speed": 0.15453
+      },
+      "Venus": {
+        "longitude": 37.073225,
+        "sign_index": 1,
+        "degree_in_sign": 7.073225,
+        "is_retrograde": false,
+        "speed": 0.993313
+      },
+      "Saturn": {
+        "longitude": 147.107314,
+        "sign_index": 4,
+        "degree_in_sign": 27.107314,
+        "is_retrograde": false,
+        "speed": 0.075102
+      },
+      "Rahu": {
+        "longitude": 180.279604,
+        "sign_index": 6,
+        "degree_in_sign": 0.279604,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 0.279604,
+        "sign_index": 0,
+        "degree_in_sign": 0.279604,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

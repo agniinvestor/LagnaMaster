@@ -1,0 +1,111 @@
+{
+  "adb_id": 95987,
+  "name": "Campos, José Carlos",
+  "given_name": "José Carlos Campos",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435995.111111,
+    "year": 1957,
+    "month": 6,
+    "day": 5,
+    "calendar": "g",
+    "time": "09:40",
+    "time_type": "s",
+    "hour": 9.666667,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campos,_José_Carlos",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Lifestyle : Financial : Gain - Grant, Scholarship, etc.",
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Music teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 13.503397,
+    "lagna": 73.503397,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.262447,
+    "jd_ut": 2435995.111111,
+    "planets": {
+      "Sun": {
+        "longitude": 51.385384,
+        "sign_index": 1,
+        "degree_in_sign": 21.385384,
+        "is_retrograde": false,
+        "speed": 0.956933
+      },
+      "Moon": {
+        "longitude": 146.10264,
+        "sign_index": 4,
+        "degree_in_sign": 26.10264,
+        "is_retrograde": false,
+        "speed": 17.676719
+      },
+      "Mars": {
+        "longitude": 86.775493,
+        "sign_index": 2,
+        "degree_in_sign": 26.775493,
+        "is_retrograde": false,
+        "speed": 0.626378
+      },
+      "Mercury": {
+        "longitude": 27.505401,
+        "sign_index": 0,
+        "degree_in_sign": 27.505401,
+        "is_retrograde": false,
+        "speed": 1.148931
+      },
+      "Jupiter": {
+        "longitude": 149.028138,
+        "sign_index": 4,
+        "degree_in_sign": 29.028138,
+        "is_retrograde": false,
+        "speed": 0.051513
+      },
+      "Venus": {
+        "longitude": 65.156238,
+        "sign_index": 2,
+        "degree_in_sign": 5.156238,
+        "is_retrograde": false,
+        "speed": 1.225262
+      },
+      "Saturn": {
+        "longitude": 227.473244,
+        "sign_index": 7,
+        "degree_in_sign": 17.473244,
+        "is_retrograde": true,
+        "speed": -0.073907
+      },
+      "Rahu": {
+        "longitude": 205.207647,
+        "sign_index": 6,
+        "degree_in_sign": 25.207647,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 25.207647,
+        "sign_index": 0,
+        "degree_in_sign": 25.207647,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

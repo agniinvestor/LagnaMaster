@@ -1,0 +1,109 @@
+{
+  "adb_id": 91103,
+  "name": "Carey, George Washington",
+  "given_name": "George Washington Carey",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2395182.446481,
+    "year": 1845,
+    "month": 9,
+    "day": 7,
+    "calendar": "g",
+    "time": "16:45",
+    "time_type": "l",
+    "hour": 16.75,
+    "time_unknown": false,
+    "place": "Dixon",
+    "country": "Illinois",
+    "lat": 41.833333,
+    "lon": -89.483333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carey,_George_Washington",
+  "source_notes": "Starkman quotes the astrologer Edith Painton in the book The Zodiac and the Salts of Salvation [https://www.academia.edu/42112274/The_Zodiac_and_the_Salts_of_Salvation_George_W_Carey]\\n",
+  "categories": [
+    "Vocation : Healing Fields : Alternative methods",
+    "Vocation : Occult Fields : Other Occult Fields"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 25.249858,
+    "lagna": 265.249858,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.702254,
+    "jd_ut": 2395182.446481,
+    "planets": {
+      "Sun": {
+        "longitude": 143.406141,
+        "sign_index": 4,
+        "degree_in_sign": 23.406141,
+        "is_retrograde": false,
+        "speed": 0.972078
+      },
+      "Moon": {
+        "longitude": 217.086738,
+        "sign_index": 7,
+        "degree_in_sign": 7.086738,
+        "is_retrograde": false,
+        "speed": 9.326441
+      },
+      "Mars": {
+        "longitude": 299.397267,
+        "sign_index": 9,
+        "degree_in_sign": 29.397267,
+        "is_retrograde": true,
+        "speed": -0.122345
+      },
+      "Mercury": {
+        "longitude": 151.365625,
+        "sign_index": 5,
+        "degree_in_sign": 1.365625,
+        "is_retrograde": true,
+        "speed": -0.911118
+      },
+      "Jupiter": {
+        "longitude": 19.016472,
+        "sign_index": 0,
+        "degree_in_sign": 19.016472,
+        "is_retrograde": true,
+        "speed": -0.02784
+      },
+      "Venus": {
+        "longitude": 173.895616,
+        "sign_index": 5,
+        "degree_in_sign": 23.895616,
+        "is_retrograde": false,
+        "speed": 1.212799
+      },
+      "Saturn": {
+        "longitude": 291.805495,
+        "sign_index": 9,
+        "degree_in_sign": 21.805495,
+        "is_retrograde": true,
+        "speed": -0.057614
+      },
+      "Rahu": {
+        "longitude": 207.956711,
+        "sign_index": 6,
+        "degree_in_sign": 27.956711,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 27.956711,
+        "sign_index": 0,
+        "degree_in_sign": 27.956711,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 60898,
+  "name": "Carlos III, King of Spain",
+  "given_name": "King of Spain Carlos III",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2347834.666481,
+    "year": 1716,
+    "month": 1,
+    "day": 20,
+    "calendar": "g",
+    "time": "03:45",
+    "time_type": "l",
+    "hour": 3.75,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlos_III,_King_of_Spain",
+  "source_notes": "Sy Scholfield quotes \"Histoire généalogique et chronologique de la maison royale de France\" by Anselme de Sainte-Marie (par la compagnie des libraires associez, 1726), p. 186: \"Charles infant d'Espagne, né à Madrid à 3. heures & 3. quarts du matin le 20. janvier 1716.\" \\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 27.319665,
+    "lagna": 207.319665,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.893196,
+    "jd_ut": 2347834.666481,
+    "planets": {
+      "Sun": {
+        "longitude": 279.439972,
+        "sign_index": 9,
+        "degree_in_sign": 9.439972,
+        "is_retrograde": false,
+        "speed": 1.017381
+      },
+      "Moon": {
+        "longitude": 229.006109,
+        "sign_index": 7,
+        "degree_in_sign": 19.006109,
+        "is_retrograde": false,
+        "speed": 10.874469
+      },
+      "Mars": {
+        "longitude": 322.121624,
+        "sign_index": 10,
+        "degree_in_sign": 22.121624,
+        "is_retrograde": false,
+        "speed": 0.769291
+      },
+      "Mercury": {
+        "longitude": 268.497645,
+        "sign_index": 8,
+        "degree_in_sign": 28.497645,
+        "is_retrograde": false,
+        "speed": 1.578032
+      },
+      "Jupiter": {
+        "longitude": 26.667208,
+        "sign_index": 0,
+        "degree_in_sign": 26.667208,
+        "is_retrograde": false,
+        "speed": 0.029894
+      },
+      "Venus": {
+        "longitude": 296.602593,
+        "sign_index": 9,
+        "degree_in_sign": 26.602593,
+        "is_retrograde": false,
+        "speed": 1.250922
+      },
+      "Saturn": {
+        "longitude": 167.218843,
+        "sign_index": 5,
+        "degree_in_sign": 17.218843,
+        "is_retrograde": true,
+        "speed": -0.006215
+      },
+      "Rahu": {
+        "longitude": 197.020776,
+        "sign_index": 6,
+        "degree_in_sign": 17.020776,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 17.020776,
+        "sign_index": 0,
+        "degree_in_sign": 17.020776,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

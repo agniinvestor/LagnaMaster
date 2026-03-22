@@ -1,0 +1,109 @@
+{
+  "adb_id": 44357,
+  "name": "Casey, Riley",
+  "given_name": "Riley Casey",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2451959.657639,
+    "year": 2001,
+    "month": 2,
+    "day": 18,
+    "calendar": "g",
+    "time": "22:47",
+    "time_type": "s",
+    "hour": 22.783333,
+    "time_unknown": false,
+    "place": "Boston",
+    "country": "Massachusetts",
+    "lat": 42.366667,
+    "lon": -71.066667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casey,_Riley",
+  "source_notes": "McEvoy quotes B.C.\\n",
+  "categories": [
+    "Family : Childhood : Family traumatic event",
+    "Family : Childhood : Only child"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 17.094779,
+    "lagna": 167.094779,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.872951,
+    "jd_ut": 2451959.657639,
+    "planets": {
+      "Sun": {
+        "longitude": 306.69157,
+        "sign_index": 10,
+        "degree_in_sign": 6.69157,
+        "is_retrograde": false,
+        "speed": 1.00856
+      },
+      "Moon": {
+        "longitude": 261.629262,
+        "sign_index": 8,
+        "degree_in_sign": 21.629262,
+        "is_retrograde": false,
+        "speed": 15.195398
+      },
+      "Mars": {
+        "longitude": 218.377037,
+        "sign_index": 7,
+        "degree_in_sign": 8.377037,
+        "is_retrograde": false,
+        "speed": 0.514975
+      },
+      "Mercury": {
+        "longitude": 294.072623,
+        "sign_index": 9,
+        "degree_in_sign": 24.072623,
+        "is_retrograde": true,
+        "speed": -0.786369
+      },
+      "Jupiter": {
+        "longitude": 38.343805,
+        "sign_index": 1,
+        "degree_in_sign": 8.343805,
+        "is_retrograde": false,
+        "speed": 0.080499
+      },
+      "Venus": {
+        "longitude": 348.179555,
+        "sign_index": 11,
+        "degree_in_sign": 18.179555,
+        "is_retrograde": false,
+        "speed": 0.579829
+      },
+      "Saturn": {
+        "longitude": 30.779659,
+        "sign_index": 1,
+        "degree_in_sign": 0.779659,
+        "is_retrograde": false,
+        "speed": 0.046027
+      },
+      "Rahu": {
+        "longitude": 79.213881,
+        "sign_index": 2,
+        "degree_in_sign": 19.213881,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 259.213881,
+        "sign_index": 8,
+        "degree_in_sign": 19.213881,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

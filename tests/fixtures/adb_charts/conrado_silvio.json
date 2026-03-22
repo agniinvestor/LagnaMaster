@@ -1,0 +1,111 @@
+{
+  "adb_id": 104215,
+  "name": "Conrado, Silvio",
+  "given_name": "Silvio Conrado",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431505.076389,
+    "year": 1945,
+    "month": 2,
+    "day": 18,
+    "calendar": "g",
+    "time": "07:50",
+    "time_type": "s",
+    "hour": 7.833333,
+    "time_unknown": false,
+    "place": "Managua",
+    "country": "Nicaragua",
+    "lat": 12.15,
+    "lon": -86.283333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conrado,_Silvio",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Business : Banker/ Financier",
+    "Vocation : Business : Economist",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 13.072115,
+    "lagna": 313.072115,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.090764,
+    "jd_ut": 2431505.076389,
+    "planets": {
+      "Sun": {
+        "longitude": 306.475992,
+        "sign_index": 10,
+        "degree_in_sign": 6.475992,
+        "is_retrograde": false,
+        "speed": 1.008478
+      },
+      "Moon": {
+        "longitude": 26.888494,
+        "sign_index": 0,
+        "degree_in_sign": 26.888494,
+        "is_retrograde": false,
+        "speed": 18.515858
+      },
+      "Mars": {
+        "longitude": 280.114619,
+        "sign_index": 9,
+        "degree_in_sign": 10.114619,
+        "is_retrograde": false,
+        "speed": 0.76999
+      },
+      "Mercury": {
+        "longitude": 298.312077,
+        "sign_index": 9,
+        "degree_in_sign": 28.312077,
+        "is_retrograde": false,
+        "speed": 1.717218
+      },
+      "Jupiter": {
+        "longitude": 152.285084,
+        "sign_index": 5,
+        "degree_in_sign": 2.285084,
+        "is_retrograde": true,
+        "speed": -0.106238
+      },
+      "Venus": {
+        "longitude": 352.335401,
+        "sign_index": 11,
+        "degree_in_sign": 22.335401,
+        "is_retrograde": false,
+        "speed": 0.867777
+      },
+      "Saturn": {
+        "longitude": 70.964507,
+        "sign_index": 2,
+        "degree_in_sign": 10.964507,
+        "is_retrograde": true,
+        "speed": -0.028362
+      },
+      "Rahu": {
+        "longitude": 83.14383,
+        "sign_index": 2,
+        "degree_in_sign": 23.14383,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 263.14383,
+        "sign_index": 8,
+        "degree_in_sign": 23.14383,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 105497,
+  "name": "Carow, Bill",
+  "given_name": "Bill Carow",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436380.867361,
+    "year": 1958,
+    "month": 6,
+    "day": 26,
+    "calendar": "g",
+    "time": "04:49",
+    "time_type": "d",
+    "hour": 4.816667,
+    "time_unknown": false,
+    "place": "Brattleboro",
+    "country": "Vermont",
+    "lat": 42.85,
+    "lon": -72.566667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sco",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carow,_Bill",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file (State of Vermont Department of Health, no. 5473).\\n",
+  "categories": [
+    "Vocation : Sports : Shooting",
+    "Vocation : Sports : Skiing",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 11.011557,
+    "lagna": 41.011557,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.277197,
+    "jd_ut": 2436380.867361,
+    "planets": {
+      "Sun": {
+        "longitude": 70.968028,
+        "sign_index": 2,
+        "degree_in_sign": 10.968028,
+        "is_retrograde": false,
+        "speed": 0.953471
+      },
+      "Moon": {
+        "longitude": 186.554013,
+        "sign_index": 6,
+        "degree_in_sign": 6.554013,
+        "is_retrograde": false,
+        "speed": 16.315217
+      },
+      "Mars": {
+        "longitude": 350.160231,
+        "sign_index": 11,
+        "degree_in_sign": 20.160231,
+        "is_retrograde": false,
+        "speed": 0.689391
+      },
+      "Mercury": {
+        "longitude": 80.111402,
+        "sign_index": 2,
+        "degree_in_sign": 20.111402,
+        "is_retrograde": false,
+        "speed": 2.062579
+      },
+      "Jupiter": {
+        "longitude": 178.555821,
+        "sign_index": 5,
+        "degree_in_sign": 28.555821,
+        "is_retrograde": false,
+        "speed": 0.02178
+      },
+      "Venus": {
+        "longitude": 36.018846,
+        "sign_index": 1,
+        "degree_in_sign": 6.018846,
+        "is_retrograde": false,
+        "speed": 1.175583
+      },
+      "Saturn": {
+        "longitude": 238.237412,
+        "sign_index": 7,
+        "degree_in_sign": 28.237412,
+        "is_retrograde": true,
+        "speed": -0.071002
+      },
+      "Rahu": {
+        "longitude": 184.765631,
+        "sign_index": 6,
+        "degree_in_sign": 4.765631,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 4.765631,
+        "sign_index": 0,
+        "degree_in_sign": 4.765631,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 64980,
+  "name": "Chaput, Jean",
+  "given_name": "Jean Chaput",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412723.82684,
+    "year": 1893,
+    "month": 9,
+    "day": 17,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaput,_Jean",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'C' pdf file, p. 123.\\n",
+  "categories": [
+    "Vocation : Travel : Pilot/ military"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 4.496961,
+    "lagna": 154.496961,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.372735,
+    "jd_ut": 2412723.82684,
+    "planets": {
+      "Sun": {
+        "longitude": 152.252539,
+        "sign_index": 5,
+        "degree_in_sign": 2.252539,
+        "is_retrograde": false,
+        "speed": 0.976717
+      },
+      "Moon": {
+        "longitude": 233.414826,
+        "sign_index": 7,
+        "degree_in_sign": 23.414826,
+        "is_retrograde": false,
+        "speed": 14.573011
+      },
+      "Mars": {
+        "longitude": 147.931626,
+        "sign_index": 4,
+        "degree_in_sign": 27.931626,
+        "is_retrograde": false,
+        "speed": 0.641373
+      },
+      "Mercury": {
+        "longitude": 149.634949,
+        "sign_index": 4,
+        "degree_in_sign": 29.634949,
+        "is_retrograde": false,
+        "speed": 1.862127
+      },
+      "Jupiter": {
+        "longitude": 39.076008,
+        "sign_index": 1,
+        "degree_in_sign": 9.076008,
+        "is_retrograde": false,
+        "speed": 0.008524
+      },
+      "Venus": {
+        "longitude": 188.07437,
+        "sign_index": 6,
+        "degree_in_sign": 8.07437,
+        "is_retrograde": false,
+        "speed": 1.196775
+      },
+      "Saturn": {
+        "longitude": 170.819462,
+        "sign_index": 5,
+        "degree_in_sign": 20.819462,
+        "is_retrograde": false,
+        "speed": 0.118275
+      },
+      "Rahu": {
+        "longitude": 358.401494,
+        "sign_index": 11,
+        "degree_in_sign": 28.401494,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 178.401494,
+        "sign_index": 5,
+        "degree_in_sign": 28.401494,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

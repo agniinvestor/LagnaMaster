@@ -1,0 +1,112 @@
+{
+  "adb_id": 6555,
+  "name": "Clerical 6555",
+  "given_name": "Clerical 6555",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2425639.3875,
+    "year": 1929,
+    "month": 1,
+    "day": 27,
+    "calendar": "g",
+    "time": "13:18",
+    "time_type": "s",
+    "hour": 13.3,
+    "time_unknown": false,
+    "place": "Everett",
+    "country": "Washington",
+    "lat": 47.983333,
+    "lon": -122.2
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Clerical_6555",
+  "source_notes": "LMR quotes her 1971\\n",
+  "categories": [
+    "Traits : Mind : I.Q. high/ Mensa level",
+    "Vocation : Business : Banker/ Financier",
+    "Vocation : Business : Clerical/ Secretarial",
+    "Vocation : Business : Office Worker",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 7.355585,
+    "lagna": 37.355585,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.866494,
+    "jd_ut": 2425639.3875,
+    "planets": {
+      "Sun": {
+        "longitude": 284.616809,
+        "sign_index": 9,
+        "degree_in_sign": 14.616809,
+        "is_retrograde": false,
+        "speed": 1.015603
+      },
+      "Moon": {
+        "longitude": 139.210817,
+        "sign_index": 4,
+        "degree_in_sign": 19.210817,
+        "is_retrograde": false,
+        "speed": 17.313309
+      },
+      "Mars": {
+        "longitude": 58.126309,
+        "sign_index": 1,
+        "degree_in_sign": 28.126309,
+        "is_retrograde": false,
+        "speed": 0.004832
+      },
+      "Mercury": {
+        "longitude": 301.354461,
+        "sign_index": 10,
+        "degree_in_sign": 1.354461,
+        "is_retrograde": false,
+        "speed": 0.2483
+      },
+      "Jupiter": {
+        "longitude": 9.385903,
+        "sign_index": 0,
+        "degree_in_sign": 9.385903,
+        "is_retrograde": false,
+        "speed": 0.106146
+      },
+      "Venus": {
+        "longitude": 331.073074,
+        "sign_index": 11,
+        "degree_in_sign": 1.073074,
+        "is_retrograde": false,
+        "speed": 1.075364
+      },
+      "Saturn": {
+        "longitude": 243.746692,
+        "sign_index": 8,
+        "degree_in_sign": 3.746692,
+        "is_retrograde": false,
+        "speed": 0.098807
+      },
+      "Rahu": {
+        "longitude": 33.978838,
+        "sign_index": 1,
+        "degree_in_sign": 3.978838,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 213.978838,
+        "sign_index": 7,
+        "degree_in_sign": 3.978838,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

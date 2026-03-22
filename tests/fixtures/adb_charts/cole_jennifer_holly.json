@@ -1,0 +1,108 @@
+{
+  "adb_id": 14572,
+  "name": "Cole, Jennifer Holly",
+  "given_name": "Jennifer Holly Cole",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441668.597222,
+    "year": 1972,
+    "month": 12,
+    "day": 16,
+    "calendar": "g",
+    "time": "18:20",
+    "time_type": "s",
+    "hour": 18.333333,
+    "time_unknown": false,
+    "place": "Van Nuys",
+    "country": "California",
+    "lat": 34.183333,
+    "lon": -118.45
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cole,_Jennifer_Holly",
+  "source_notes": "B.C. in hand from the Wilsons\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 0.172112,
+    "lagna": 60.172112,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.479395,
+    "jd_ut": 2441668.597222,
+    "planets": {
+      "Sun": {
+        "longitude": 241.771008,
+        "sign_index": 8,
+        "degree_in_sign": 1.771008,
+        "is_retrograde": false,
+        "speed": 1.017546
+      },
+      "Moon": {
+        "longitude": 15.610722,
+        "sign_index": 0,
+        "degree_in_sign": 15.610722,
+        "is_retrograde": false,
+        "speed": 11.036811
+      },
+      "Mars": {
+        "longitude": 207.325576,
+        "sign_index": 6,
+        "degree_in_sign": 27.325576,
+        "is_retrograde": false,
+        "speed": 0.673852
+      },
+      "Mercury": {
+        "longitude": 220.849893,
+        "sign_index": 7,
+        "degree_in_sign": 10.849893,
+        "is_retrograde": false,
+        "speed": 1.164828
+      },
+      "Jupiter": {
+        "longitude": 260.906303,
+        "sign_index": 8,
+        "degree_in_sign": 20.906303,
+        "is_retrograde": false,
+        "speed": 0.226418
+      },
+      "Venus": {
+        "longitude": 214.430165,
+        "sign_index": 7,
+        "degree_in_sign": 4.430165,
+        "is_retrograde": false,
+        "speed": 1.244209
+      },
+      "Saturn": {
+        "longitude": 52.956695,
+        "sign_index": 1,
+        "degree_in_sign": 22.956695,
+        "is_retrograde": true,
+        "speed": -0.081041
+      },
+      "Rahu": {
+        "longitude": 264.55801,
+        "sign_index": 8,
+        "degree_in_sign": 24.55801,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 84.55801,
+        "sign_index": 2,
+        "degree_in_sign": 24.55801,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

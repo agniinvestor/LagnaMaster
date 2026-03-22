@@ -1,0 +1,114 @@
+{
+  "adb_id": 90074,
+  "name": "Carreón, Phil",
+  "given_name": "Phil Carreón",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423545.923611,
+    "year": 1923,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "02:10",
+    "time_type": "s",
+    "hour": 2.166667,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "cap",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carreón,_Phil",
+  "source_notes": "Sy Scholfield provided birth certificate (\"Alfonzo Carreon\").\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 25.36869,
+    "lagna": 295.36869,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.786456,
+    "jd_ut": 2423545.923611,
+    "planets": {
+      "Sun": {
+        "longitude": 22.074887,
+        "sign_index": 0,
+        "degree_in_sign": 22.074887,
+        "is_retrograde": false,
+        "speed": 0.967884
+      },
+      "Moon": {
+        "longitude": 276.562977,
+        "sign_index": 9,
+        "degree_in_sign": 6.562977,
+        "is_retrograde": false,
+        "speed": 9.42661
+      },
+      "Mars": {
+        "longitude": 50.955211,
+        "sign_index": 1,
+        "degree_in_sign": 20.955211,
+        "is_retrograde": false,
+        "speed": 0.670814
+      },
+      "Mercury": {
+        "longitude": 43.019685,
+        "sign_index": 1,
+        "degree_in_sign": 13.019685,
+        "is_retrograde": false,
+        "speed": 0.914123
+      },
+      "Jupiter": {
+        "longitude": 201.184551,
+        "sign_index": 6,
+        "degree_in_sign": 21.184551,
+        "is_retrograde": true,
+        "speed": -0.127506
+      },
+      "Venus": {
+        "longitude": 348.98585,
+        "sign_index": 11,
+        "degree_in_sign": 18.98585,
+        "is_retrograde": false,
+        "speed": 1.196659
+      },
+      "Saturn": {
+        "longitude": 171.924773,
+        "sign_index": 5,
+        "degree_in_sign": 21.924773,
+        "is_retrograde": true,
+        "speed": -0.061171
+      },
+      "Rahu": {
+        "longitude": 144.91585,
+        "sign_index": 4,
+        "degree_in_sign": 24.91585,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 324.91585,
+        "sign_index": 10,
+        "degree_in_sign": 24.91585,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

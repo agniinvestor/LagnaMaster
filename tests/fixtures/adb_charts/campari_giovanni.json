@@ -1,0 +1,108 @@
+{
+  "adb_id": 104561,
+  "name": "Campari, Giovanni",
+  "given_name": "Giovanni Campari",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424891.229167,
+    "year": 1927,
+    "month": 1,
+    "day": 10,
+    "calendar": "g",
+    "time": "18:30",
+    "time_type": "s",
+    "hour": 18.5,
+    "time_unknown": false,
+    "place": "Reggio nell'Emilia",
+    "country": "Italy",
+    "lat": 44.716667,
+    "lon": 10.6
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campari,_Giovanni",
+  "source_notes": "Grazia Bordoni database.\\n",
+  "categories": [
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 23.091162,
+    "lagna": 83.091162,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.83789,
+    "jd_ut": 2424891.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 266.658403,
+        "sign_index": 8,
+        "degree_in_sign": 26.658403,
+        "is_retrograde": false,
+        "speed": 1.018988
+      },
+      "Moon": {
+        "longitude": 357.914801,
+        "sign_index": 11,
+        "degree_in_sign": 27.914801,
+        "is_retrograde": false,
+        "speed": 10.094687
+      },
+      "Mars": {
+        "longitude": 18.364173,
+        "sign_index": 0,
+        "degree_in_sign": 18.364173,
+        "is_retrograde": false,
+        "speed": 0.344955
+      },
+      "Mercury": {
+        "longitude": 255.799835,
+        "sign_index": 8,
+        "degree_in_sign": 15.799835,
+        "is_retrograde": false,
+        "speed": 1.54917
+      },
+      "Jupiter": {
+        "longitude": 305.476932,
+        "sign_index": 10,
+        "degree_in_sign": 5.476932,
+        "is_retrograde": false,
+        "speed": 0.213481
+      },
+      "Venus": {
+        "longitude": 278.720235,
+        "sign_index": 9,
+        "degree_in_sign": 8.720235,
+        "is_retrograde": false,
+        "speed": 1.255092
+      },
+      "Saturn": {
+        "longitude": 221.395422,
+        "sign_index": 7,
+        "degree_in_sign": 11.395422,
+        "is_retrograde": false,
+        "speed": 0.095129
+      },
+      "Rahu": {
+        "longitude": 73.625305,
+        "sign_index": 2,
+        "degree_in_sign": 13.625305,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 253.625305,
+        "sign_index": 8,
+        "degree_in_sign": 13.625305,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

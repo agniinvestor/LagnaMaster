@@ -1,0 +1,116 @@
+{
+  "adb_id": 47571,
+  "name": "Chisholm, George",
+  "given_name": "George Chisholm",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420585.795139,
+    "year": 1915,
+    "month": 3,
+    "day": 29,
+    "calendar": "g",
+    "time": "07:05",
+    "time_type": "s",
+    "hour": 7.083333,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chisholm,_George",
+  "source_notes": "Paul Wright collection, B.C.\\n",
+  "categories": [
+    "Lifestyle : Work : Travel for work",
+    "Lifestyle : Work : Work in team/ Tandem",
+    "Vocation : Entertainment : Radio/ D.J./ Announcer",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz",
+    "Vocation : Military : Military service",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 1.155592,
+    "lagna": 1.155592,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.673287,
+    "jd_ut": 2420585.795139,
+    "planets": {
+      "Sun": {
+        "longitude": 344.844463,
+        "sign_index": 11,
+        "degree_in_sign": 14.844463,
+        "is_retrograde": false,
+        "speed": 0.988019
+      },
+      "Moon": {
+        "longitude": 138.702162,
+        "sign_index": 4,
+        "degree_in_sign": 18.702162,
+        "is_retrograde": false,
+        "speed": 15.961105
+      },
+      "Mars": {
+        "longitude": 322.83792,
+        "sign_index": 10,
+        "degree_in_sign": 22.83792,
+        "is_retrograde": false,
+        "speed": 0.783166
+      },
+      "Mercury": {
+        "longitude": 318.681038,
+        "sign_index": 10,
+        "degree_in_sign": 18.681038,
+        "is_retrograde": false,
+        "speed": 1.316452
+      },
+      "Jupiter": {
+        "longitude": 320.01762,
+        "sign_index": 10,
+        "degree_in_sign": 20.01762,
+        "is_retrograde": false,
+        "speed": 0.229796
+      },
+      "Venus": {
+        "longitude": 303.422112,
+        "sign_index": 10,
+        "degree_in_sign": 3.422112,
+        "is_retrograde": false,
+        "speed": 1.165183
+      },
+      "Saturn": {
+        "longitude": 63.582085,
+        "sign_index": 2,
+        "degree_in_sign": 3.582085,
+        "is_retrograde": false,
+        "speed": 0.055813
+      },
+      "Rahu": {
+        "longitude": 301.779244,
+        "sign_index": 10,
+        "degree_in_sign": 1.779244,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 121.779244,
+        "sign_index": 4,
+        "degree_in_sign": 1.779244,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

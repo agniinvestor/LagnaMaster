@@ -1,0 +1,108 @@
+{
+  "adb_id": 74043,
+  "name": "Chang Escobedo, José Antonio",
+  "given_name": "José Antonio Chang Escobedo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436496.0625,
+    "year": 1958,
+    "month": 10,
+    "day": 19,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chang_Escobedo,_José_Antonio",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 22.989549,
+    "lagna": 202.989549,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.281602,
+    "jd_ut": 2436496.0625,
+    "planets": {
+      "Sun": {
+        "longitude": 182.377513,
+        "sign_index": 6,
+        "degree_in_sign": 2.377513,
+        "is_retrograde": false,
+        "speed": 0.993728
+      },
+      "Moon": {
+        "longitude": 272.678805,
+        "sign_index": 9,
+        "degree_in_sign": 2.678805,
+        "is_retrograde": false,
+        "speed": 17.391485
+      },
+      "Mars": {
+        "longitude": 38.624043,
+        "sign_index": 1,
+        "degree_in_sign": 8.624043,
+        "is_retrograde": true,
+        "speed": -0.136702
+      },
+      "Mercury": {
+        "longitude": 191.823251,
+        "sign_index": 6,
+        "degree_in_sign": 11.823251,
+        "is_retrograde": false,
+        "speed": 1.582284
+      },
+      "Jupiter": {
+        "longitude": 195.232104,
+        "sign_index": 6,
+        "degree_in_sign": 15.232104,
+        "is_retrograde": false,
+        "speed": 0.216202
+      },
+      "Venus": {
+        "longitude": 176.542665,
+        "sign_index": 5,
+        "degree_in_sign": 26.542665,
+        "is_retrograde": false,
+        "speed": 1.251821
+      },
+      "Saturn": {
+        "longitude": 238.270739,
+        "sign_index": 7,
+        "degree_in_sign": 28.270739,
+        "is_retrograde": false,
+        "speed": 0.082136
+      },
+      "Rahu": {
+        "longitude": 178.661204,
+        "sign_index": 5,
+        "degree_in_sign": 28.661204,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 358.661204,
+        "sign_index": 11,
+        "degree_in_sign": 28.661204,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

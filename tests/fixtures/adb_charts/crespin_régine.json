@@ -1,0 +1,111 @@
+{
+  "adb_id": 6221,
+  "name": "Crespin, Régine",
+  "given_name": "Régine Crespin",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424934.583333,
+    "year": 1927,
+    "month": 2,
+    "day": 23,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crespin,_Régine",
+  "source_notes": "Didier Geslain archive, 'musique' pdf file, p. 42.\\nGauquelin Vol 3/408\\n",
+  "categories": [
+    "Family : Parenting : Kids none",
+    "Vocation : Entertain/Music : Vocalist/Opera",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 29.780392,
+    "lagna": 209.780392,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.839548,
+    "jd_ut": 2424934.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 310.624219,
+        "sign_index": 10,
+        "degree_in_sign": 10.624219,
+        "is_retrograde": false,
+        "speed": 1.006506
+      },
+      "Moon": {
+        "longitude": 201.169638,
+        "sign_index": 6,
+        "degree_in_sign": 21.169638,
+        "is_retrograde": false,
+        "speed": 9.011105
+      },
+      "Mars": {
+        "longitude": 37.707838,
+        "sign_index": 1,
+        "degree_in_sign": 7.707838,
+        "is_retrograde": false,
+        "speed": 0.516383
+      },
+      "Mercury": {
+        "longitude": 328.374204,
+        "sign_index": 10,
+        "degree_in_sign": 28.374204,
+        "is_retrograde": false,
+        "speed": 1.272556
+      },
+      "Jupiter": {
+        "longitude": 315.490511,
+        "sign_index": 10,
+        "degree_in_sign": 15.490511,
+        "is_retrograde": false,
+        "speed": 0.241022
+      },
+      "Venus": {
+        "longitude": 332.866738,
+        "sign_index": 11,
+        "degree_in_sign": 2.866738,
+        "is_retrograde": false,
+        "speed": 1.239784
+      },
+      "Saturn": {
+        "longitude": 224.38926,
+        "sign_index": 7,
+        "degree_in_sign": 14.38926,
+        "is_retrograde": false,
+        "speed": 0.038269
+      },
+      "Rahu": {
+        "longitude": 71.327878,
+        "sign_index": 2,
+        "degree_in_sign": 11.327878,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 251.327878,
+        "sign_index": 8,
+        "degree_in_sign": 11.327878,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

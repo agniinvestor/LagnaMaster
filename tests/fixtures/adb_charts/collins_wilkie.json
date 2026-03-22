@@ -1,0 +1,111 @@
+{
+  "adb_id": 59307,
+  "name": "Collins, Wilkie",
+  "given_name": "Wilkie Collins",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2387269.323333,
+    "year": 1824,
+    "month": 1,
+    "day": 8,
+    "calendar": "g",
+    "time": "19:45",
+    "time_type": "l",
+    "hour": 19.75,
+    "time_unknown": false,
+    "place": "Westminster",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.15
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Wilkie",
+  "source_notes": "Sy Scholfield quotes family bible transcribed in \"Family Genealogica\" by F. A. Crisp, Vol. X (1889), p. 8: \"William Wilkie Collins. Born January 8th 1824 ¼ before 8 in the afternoon at No 11 New cavendish Street, Parish of St: Mary-le-bone.\"\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Other Major diseases",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 14.589301,
+    "lagna": 104.589301,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.399839,
+    "jd_ut": 2387269.323333,
+    "planets": {
+      "Sun": {
+        "longitude": 266.164244,
+        "sign_index": 8,
+        "degree_in_sign": 26.164244,
+        "is_retrograde": false,
+        "speed": 1.019146
+      },
+      "Moon": {
+        "longitude": 347.375382,
+        "sign_index": 11,
+        "degree_in_sign": 17.375382,
+        "is_retrograde": false,
+        "speed": 9.807843
+      },
+      "Mars": {
+        "longitude": 164.80485,
+        "sign_index": 5,
+        "degree_in_sign": 14.80485,
+        "is_retrograde": false,
+        "speed": 0.340031
+      },
+      "Mercury": {
+        "longitude": 281.591784,
+        "sign_index": 9,
+        "degree_in_sign": 11.591784,
+        "is_retrograde": false,
+        "speed": 1.561267
+      },
+      "Jupiter": {
+        "longitude": 73.159694,
+        "sign_index": 2,
+        "degree_in_sign": 13.159694,
+        "is_retrograde": true,
+        "speed": -0.128858
+      },
+      "Venus": {
+        "longitude": 220.244688,
+        "sign_index": 7,
+        "degree_in_sign": 10.244688,
+        "is_retrograde": false,
+        "speed": 1.111011
+      },
+      "Saturn": {
+        "longitude": 25.672612,
+        "sign_index": 0,
+        "degree_in_sign": 25.672612,
+        "is_retrograde": true,
+        "speed": -0.019158
+      },
+      "Rahu": {
+        "longitude": 267.290275,
+        "sign_index": 8,
+        "degree_in_sign": 27.290275,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 87.290275,
+        "sign_index": 2,
+        "degree_in_sign": 27.290275,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

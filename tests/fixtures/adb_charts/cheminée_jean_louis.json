@@ -1,0 +1,108 @@
+{
+  "adb_id": 69307,
+  "name": "Cheminée, Jean-Louis",
+  "given_name": "Jean-Louis Cheminée",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428599.541667,
+    "year": 1937,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Rouillé",
+    "country": "France",
+    "lat": 46.421389,
+    "lon": 0.040278
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cheminée,_Jean-Louis",
+  "source_notes": "Didier Geslain archive, 'sciences' pdf file, p. 18.\\n",
+  "categories": [
+    "Vocation : Science : Geology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 20.855985,
+    "lagna": 200.855985,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.979671,
+    "jd_ut": 2428599.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 323.068784,
+        "sign_index": 10,
+        "degree_in_sign": 23.068784,
+        "is_retrograde": false,
+        "speed": 1.000568
+      },
+      "Moon": {
+        "longitude": 252.023917,
+        "sign_index": 8,
+        "degree_in_sign": 12.023917,
+        "is_retrograde": false,
+        "speed": 12.592382
+      },
+      "Mars": {
+        "longitude": 215.012004,
+        "sign_index": 7,
+        "degree_in_sign": 5.012004,
+        "is_retrograde": false,
+        "speed": 0.34757
+      },
+      "Mercury": {
+        "longitude": 307.767252,
+        "sign_index": 10,
+        "degree_in_sign": 7.767252,
+        "is_retrograde": false,
+        "speed": 1.659659
+      },
+      "Jupiter": {
+        "longitude": 267.554091,
+        "sign_index": 8,
+        "degree_in_sign": 27.554091,
+        "is_retrograde": false,
+        "speed": 0.17622
+      },
+      "Venus": {
+        "longitude": 5.479755,
+        "sign_index": 0,
+        "degree_in_sign": 5.479755,
+        "is_retrograde": false,
+        "speed": 0.637891
+      },
+      "Saturn": {
+        "longitude": 331.112881,
+        "sign_index": 11,
+        "degree_in_sign": 1.112881,
+        "is_retrograde": false,
+        "speed": 0.123071
+      },
+      "Rahu": {
+        "longitude": 237.114125,
+        "sign_index": 7,
+        "degree_in_sign": 27.114125,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 57.114125,
+        "sign_index": 1,
+        "degree_in_sign": 27.114125,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

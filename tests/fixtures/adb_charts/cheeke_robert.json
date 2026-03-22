@@ -1,0 +1,118 @@
+{
+  "adb_id": 87728,
+  "name": "Cheeke, Robert",
+  "given_name": "Robert Cheeke",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2444301.654861,
+    "year": 1980,
+    "month": 3,
+    "day": 2,
+    "calendar": "g",
+    "time": "19:43",
+    "time_type": "s",
+    "hour": 19.716667,
+    "time_unknown": false,
+    "place": "Corvallis",
+    "country": "Oregon",
+    "lat": 44.566667,
+    "lon": -123.266667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cheeke,_Robert",
+  "source_notes": "Sy Scholfield provided birth report, \"Births, Good Samaritan Hospital,\" Corvallis Gazette-Times (Corvallis, Oregon), 3 March 1980, p. 16.\\n",
+  "categories": [
+    "Traits : Body : Body builder",
+    "Traits : Body : Diet unusual",
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Vocation : Business : Business owner",
+    "Vocation : Business : Entrepreneur",
+    "Vocation : Business/Marketing : Product Marketing",
+    "Vocation : Education : Public speaker",
+    "Vocation : Politics : Activist/ social",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.559342,
+    "lagna": 135.559342,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.580085,
+    "jd_ut": 2444301.654861,
+    "planets": {
+      "Sun": {
+        "longitude": 319.14523,
+        "sign_index": 10,
+        "degree_in_sign": 19.14523,
+        "is_retrograde": false,
+        "speed": 1.002177
+      },
+      "Moon": {
+        "longitude": 153.838272,
+        "sign_index": 5,
+        "degree_in_sign": 3.838272,
+        "is_retrograde": false,
+        "speed": 11.420723
+      },
+      "Mars": {
+        "longitude": 129.489393,
+        "sign_index": 4,
+        "degree_in_sign": 9.489393,
+        "is_retrograde": true,
+        "speed": -0.380957
+      },
+      "Mercury": {
+        "longitude": 325.138231,
+        "sign_index": 10,
+        "degree_in_sign": 25.138231,
+        "is_retrograde": true,
+        "speed": -0.840435
+      },
+      "Jupiter": {
+        "longitude": 130.744269,
+        "sign_index": 4,
+        "degree_in_sign": 10.744269,
+        "is_retrograde": true,
+        "speed": -0.128873
+      },
+      "Venus": {
+        "longitude": 2.303032,
+        "sign_index": 0,
+        "degree_in_sign": 2.303032,
+        "is_retrograde": false,
+        "speed": 1.139468
+      },
+      "Saturn": {
+        "longitude": 150.927289,
+        "sign_index": 5,
+        "degree_in_sign": 0.927289,
+        "is_retrograde": true,
+        "speed": -0.076529
+      },
+      "Rahu": {
+        "longitude": 125.026927,
+        "sign_index": 4,
+        "degree_in_sign": 5.026927,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 305.026927,
+        "sign_index": 10,
+        "degree_in_sign": 5.026927,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

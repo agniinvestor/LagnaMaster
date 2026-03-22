@@ -1,0 +1,113 @@
+{
+  "adb_id": 252,
+  "name": "Chávez, César",
+  "given_name": "César Chávez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424971.458333,
+    "year": 1927,
+    "month": 3,
+    "day": 31,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Yuma",
+    "country": "Arizona",
+    "lat": 32.733333,
+    "lon": -114.616667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chávez,_César",
+  "source_notes": "Data quoted by Stephen Przybylowski from birth certificate in hand.  Linda Clark quotes him for 15:10.  (Another astrologer quotes him for 3:28 PM)\\nSy Scholfield notes (7/7/2005) that the birth certificate is published online: http://genealogy.az.gov/azbirth/0980/bc0913.pdf; http://genealogy.az.gov/azbirth/0980/bc0912.pdf\\n",
+  "categories": [
+    "Traits : Mind : Education limited",
+    "Family : Childhood : Family large",
+    "Lifestyle : Home : Many moves",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Activist/ social"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 17.770761,
+    "lagna": 107.770761,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.840958,
+    "jd_ut": 2424971.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 347.394233,
+        "sign_index": 11,
+        "degree_in_sign": 17.394233,
+        "is_retrograde": false,
+        "speed": 0.987342
+      },
+      "Moon": {
+        "longitude": 328.880874,
+        "sign_index": 10,
+        "degree_in_sign": 28.880874,
+        "is_retrograde": false,
+        "speed": 13.43322
+      },
+      "Mars": {
+        "longitude": 57.880142,
+        "sign_index": 1,
+        "degree_in_sign": 27.880142,
+        "is_retrograde": false,
+        "speed": 0.56984
+      },
+      "Mercury": {
+        "longitude": 322.128525,
+        "sign_index": 10,
+        "degree_in_sign": 22.128525,
+        "is_retrograde": false,
+        "speed": 0.421384
+      },
+      "Jupiter": {
+        "longitude": 324.293285,
+        "sign_index": 10,
+        "degree_in_sign": 24.293285,
+        "is_retrograde": false,
+        "speed": 0.231675
+      },
+      "Venus": {
+        "longitude": 18.105012,
+        "sign_index": 0,
+        "degree_in_sign": 18.105012,
+        "is_retrograde": false,
+        "speed": 1.211133
+      },
+      "Saturn": {
+        "longitude": 224.670478,
+        "sign_index": 7,
+        "degree_in_sign": 14.670478,
+        "is_retrograde": true,
+        "speed": -0.022968
+      },
+      "Rahu": {
+        "longitude": 69.373795,
+        "sign_index": 2,
+        "degree_in_sign": 9.373795,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 249.373795,
+        "sign_index": 8,
+        "degree_in_sign": 9.373795,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

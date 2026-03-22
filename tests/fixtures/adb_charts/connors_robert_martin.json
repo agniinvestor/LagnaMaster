@@ -1,0 +1,109 @@
+{
+  "adb_id": 50946,
+  "name": "Connors, Robert Martin",
+  "given_name": "Robert Martin Connors",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426579.072917,
+    "year": 1931,
+    "month": 8,
+    "day": 25,
+    "calendar": "g",
+    "time": "07:45",
+    "time_type": "s",
+    "hour": 7.75,
+    "time_unknown": false,
+    "place": "Chicago",
+    "country": "Illinois",
+    "lat": 41.85,
+    "lon": -87.65
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connors,_Robert_Martin",
+  "source_notes": "Ed Steinbrecher collection: Steinbrecher has birth certificate in hand; cst?\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Liver/Pancreas/Spleen",
+    "Diagnoses : Psychological : Abuse Alcohol"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.341897,
+    "lagna": 135.341897,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.902421,
+    "jd_ut": 2426579.072917,
+    "planets": {
+      "Sun": {
+        "longitude": 128.487091,
+        "sign_index": 4,
+        "degree_in_sign": 8.487091,
+        "is_retrograde": false,
+        "speed": 0.964444
+      },
+      "Moon": {
+        "longitude": 279.299001,
+        "sign_index": 9,
+        "degree_in_sign": 9.299001,
+        "is_retrograde": false,
+        "speed": 15.938648
+      },
+      "Mars": {
+        "longitude": 172.1202,
+        "sign_index": 5,
+        "degree_in_sign": 22.1202,
+        "is_retrograde": false,
+        "speed": 0.643621
+      },
+      "Mercury": {
+        "longitude": 146.289529,
+        "sign_index": 4,
+        "degree_in_sign": 26.289529,
+        "is_retrograde": true,
+        "speed": -0.3133
+      },
+      "Jupiter": {
+        "longitude": 105.722795,
+        "sign_index": 3,
+        "degree_in_sign": 15.722795,
+        "is_retrograde": false,
+        "speed": 0.21261
+      },
+      "Venus": {
+        "longitude": 124.778203,
+        "sign_index": 4,
+        "degree_in_sign": 4.778203,
+        "is_retrograde": false,
+        "speed": 1.23807
+      },
+      "Saturn": {
+        "longitude": 264.336431,
+        "sign_index": 8,
+        "degree_in_sign": 24.336431,
+        "is_retrograde": true,
+        "speed": -0.042018
+      },
+      "Rahu": {
+        "longitude": 344.182955,
+        "sign_index": 11,
+        "degree_in_sign": 14.182955,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 164.182955,
+        "sign_index": 5,
+        "degree_in_sign": 14.182955,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

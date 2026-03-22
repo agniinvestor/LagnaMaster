@@ -1,0 +1,108 @@
+{
+  "adb_id": 64893,
+  "name": "Cabrol, Henri",
+  "given_name": "Henri Cabrol",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432227.541667,
+    "year": 1947,
+    "month": 2,
+    "day": 11,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Bize-Minervois",
+    "country": "France",
+    "lat": 43.318611,
+    "lon": 2.871111
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabrol,_Henri",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 4.\\n",
+  "categories": [
+    "Vocation : Sports : Rugby"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 6.076498,
+    "lagna": 186.076498,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.118388,
+    "jd_ut": 2432227.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 298.347054,
+        "sign_index": 9,
+        "degree_in_sign": 28.347054,
+        "is_retrograde": false,
+        "speed": 1.011498
+      },
+      "Moon": {
+        "longitude": 187.909609,
+        "sign_index": 6,
+        "degree_in_sign": 7.909609,
+        "is_retrograde": false,
+        "speed": 10.366229
+      },
+      "Mars": {
+        "longitude": 289.840748,
+        "sign_index": 9,
+        "degree_in_sign": 19.840748,
+        "is_retrograde": false,
+        "speed": 0.785226
+      },
+      "Mercury": {
+        "longitude": 312.084832,
+        "sign_index": 10,
+        "degree_in_sign": 12.084832,
+        "is_retrograde": false,
+        "speed": 1.71562
+      },
+      "Jupiter": {
+        "longitude": 212.949021,
+        "sign_index": 7,
+        "degree_in_sign": 2.949021,
+        "is_retrograde": false,
+        "speed": 0.092771
+      },
+      "Venus": {
+        "longitude": 252.050489,
+        "sign_index": 8,
+        "degree_in_sign": 12.050489,
+        "is_retrograde": false,
+        "speed": 1.085263
+      },
+      "Saturn": {
+        "longitude": 101.058456,
+        "sign_index": 3,
+        "degree_in_sign": 11.058456,
+        "is_retrograde": true,
+        "speed": -0.076337
+      },
+      "Rahu": {
+        "longitude": 44.858904,
+        "sign_index": 1,
+        "degree_in_sign": 14.858904,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 224.858904,
+        "sign_index": 7,
+        "degree_in_sign": 14.858904,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 62705,
+  "name": "Carré, Ferdinand",
+  "given_name": "Ferdinand Carré",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2387331.450098,
+    "year": 1824,
+    "month": 3,
+    "day": 10,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Moislains",
+    "country": "France",
+    "lat": 49.990556,
+    "lon": 2.964722
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carré,_Ferdinand",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_in_inventeurs-2.pdf]. \\n\\nPreviously Paddy de Jabrun had \"10 March on bc, time missing. Born around midnight.\"\\n\\nWikipedia and other references give 11 March in error.\\n",
+  "categories": [
+    "Vocation : Engineer : Industrial",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 2.590025,
+    "lagna": 182.590025,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.402213,
+    "jd_ut": 2387331.450098,
+    "planets": {
+      "Sun": {
+        "longitude": 328.948356,
+        "sign_index": 10,
+        "degree_in_sign": 28.948356,
+        "is_retrograde": false,
+        "speed": 0.996907
+      },
+      "Moon": {
+        "longitude": 89.333935,
+        "sign_index": 2,
+        "degree_in_sign": 29.333935,
+        "is_retrograde": false,
+        "speed": 11.709161
+      },
+      "Mars": {
+        "longitude": 168.14511,
+        "sign_index": 5,
+        "degree_in_sign": 18.14511,
+        "is_retrograde": true,
+        "speed": -0.302738
+      },
+      "Mercury": {
+        "longitude": 304.254401,
+        "sign_index": 10,
+        "degree_in_sign": 4.254401,
+        "is_retrograde": false,
+        "speed": 1.375932
+      },
+      "Jupiter": {
+        "longitude": 69.976821,
+        "sign_index": 2,
+        "degree_in_sign": 9.976821,
+        "is_retrograde": false,
+        "speed": 0.045605
+      },
+      "Venus": {
+        "longitude": 293.218392,
+        "sign_index": 9,
+        "degree_in_sign": 23.218392,
+        "is_retrograde": false,
+        "speed": 1.207111
+      },
+      "Saturn": {
+        "longitude": 27.958419,
+        "sign_index": 0,
+        "degree_in_sign": 27.958419,
+        "is_retrograde": false,
+        "speed": 0.086419
+      },
+      "Rahu": {
+        "longitude": 263.998042,
+        "sign_index": 8,
+        "degree_in_sign": 23.998042,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 83.998042,
+        "sign_index": 2,
+        "degree_in_sign": 23.998042,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 68331,
+  "name": "Cochet, Yves",
+  "given_name": "Yves Cochet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431866.861111,
+    "year": 1946,
+    "month": 2,
+    "day": 15,
+    "calendar": "g",
+    "time": "09:40",
+    "time_type": "s",
+    "hour": 9.666667,
+    "time_unknown": false,
+    "place": "Rennes",
+    "country": "France",
+    "lat": 48.083333,
+    "lon": -1.683333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "leo",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cochet,_Yves",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 196.\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 20.251256,
+    "lagna": 320.251256,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.104597,
+    "jd_ut": 2431866.861111,
+    "planets": {
+      "Sun": {
+        "longitude": 302.971336,
+        "sign_index": 10,
+        "degree_in_sign": 2.971336,
+        "is_retrograde": false,
+        "speed": 1.009407
+      },
+      "Moon": {
+        "longitude": 112.525719,
+        "sign_index": 3,
+        "degree_in_sign": 22.525719,
+        "is_retrograde": false,
+        "speed": 16.442746
+      },
+      "Mars": {
+        "longitude": 81.27589,
+        "sign_index": 2,
+        "degree_in_sign": 21.27589,
+        "is_retrograde": true,
+        "speed": -0.083322
+      },
+      "Mercury": {
+        "longitude": 306.361369,
+        "sign_index": 10,
+        "degree_in_sign": 6.361369,
+        "is_retrograde": false,
+        "speed": 1.833061
+      },
+      "Jupiter": {
+        "longitude": 184.240936,
+        "sign_index": 6,
+        "degree_in_sign": 4.240936,
+        "is_retrograde": true,
+        "speed": -0.012678
+      },
+      "Venus": {
+        "longitude": 306.298713,
+        "sign_index": 10,
+        "degree_in_sign": 6.298713,
+        "is_retrograde": false,
+        "speed": 1.252472
+      },
+      "Saturn": {
+        "longitude": 85.82447,
+        "sign_index": 2,
+        "degree_in_sign": 25.82447,
+        "is_retrograde": true,
+        "speed": -0.056578
+      },
+      "Rahu": {
+        "longitude": 63.972111,
+        "sign_index": 2,
+        "degree_in_sign": 3.972111,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 243.972111,
+        "sign_index": 8,
+        "degree_in_sign": 3.972111,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

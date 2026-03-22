@@ -1,0 +1,112 @@
+{
+  "adb_id": 55990,
+  "name": "Capitini, Aldo",
+  "given_name": "Aldo Capitini",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415012.416667,
+    "year": 1899,
+    "month": 12,
+    "day": 23,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Perugia",
+    "country": "Italy",
+    "lat": 43.133333,
+    "lon": 12.366667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capitini,_Aldo",
+  "source_notes": "Arno Müller, vol 1.\\n",
+  "categories": [
+    "Traits : Personality : Active",
+    "Personal : Religion/Spirituality : Philosopher/ Humanist",
+    "Vocation : Education : Teacher",
+    "Vocation : Religion : Spiritual Leader/ Guru",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 3.139148,
+    "lagna": 123.139148,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.460222,
+    "jd_ut": 2415012.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 249.447832,
+        "sign_index": 8,
+        "degree_in_sign": 9.447832,
+        "is_retrograde": false,
+        "speed": 1.018848
+      },
+      "Moon": {
+        "longitude": 146.667463,
+        "sign_index": 4,
+        "degree_in_sign": 26.667463,
+        "is_retrograde": false,
+        "speed": 12.121261
+      },
+      "Mars": {
+        "longitude": 255.198103,
+        "sign_index": 8,
+        "degree_in_sign": 15.198103,
+        "is_retrograde": false,
+        "speed": 0.764611
+      },
+      "Mercury": {
+        "longitude": 227.448402,
+        "sign_index": 7,
+        "degree_in_sign": 17.448402,
+        "is_retrograde": false,
+        "speed": 0.911933
+      },
+      "Jupiter": {
+        "longitude": 217.055484,
+        "sign_index": 7,
+        "degree_in_sign": 7.055484,
+        "is_retrograde": false,
+        "speed": 0.203763
+      },
+      "Venus": {
+        "longitude": 273.84909,
+        "sign_index": 9,
+        "degree_in_sign": 3.84909,
+        "is_retrograde": false,
+        "speed": 1.245518
+      },
+      "Saturn": {
+        "longitude": 244.304745,
+        "sign_index": 8,
+        "degree_in_sign": 4.304745,
+        "is_retrograde": false,
+        "speed": 0.117739
+      },
+      "Rahu": {
+        "longitude": 237.124287,
+        "sign_index": 7,
+        "degree_in_sign": 27.124287,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 57.124287,
+        "sign_index": 1,
+        "degree_in_sign": 27.124287,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

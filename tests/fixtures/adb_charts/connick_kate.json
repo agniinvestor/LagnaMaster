@@ -1,0 +1,110 @@
+{
+  "adb_id": 96379,
+  "name": "Connick, Kate",
+  "given_name": "Kate Connick",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2450704.004167,
+    "year": 1997,
+    "month": 9,
+    "day": 12,
+    "calendar": "g",
+    "time": "08:06",
+    "time_type": "d",
+    "hour": 8.1,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Connick,_Kate",
+  "source_notes": "Sy Scholfield quotes birth news, ''Ellwood City Ledger'' (Ellwood City, Pennsylvania), 13 September 1997, page 6.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Vocation : Business : Business owner"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 19.520178,
+    "lagna": 139.520178,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.824929,
+    "jd_ut": 2450704.004167,
+    "planets": {
+      "Sun": {
+        "longitude": 145.939031,
+        "sign_index": 4,
+        "degree_in_sign": 25.939031,
+        "is_retrograde": false,
+        "speed": 0.972914
+      },
+      "Moon": {
+        "longitude": 266.435942,
+        "sign_index": 8,
+        "degree_in_sign": 26.435942,
+        "is_retrograde": false,
+        "speed": 18.398794
+      },
+      "Mars": {
+        "longitude": 204.929935,
+        "sign_index": 6,
+        "degree_in_sign": 24.929935,
+        "is_retrograde": false,
+        "speed": 0.671027
+      },
+      "Mercury": {
+        "longitude": 129.326018,
+        "sign_index": 4,
+        "degree_in_sign": 9.326018,
+        "is_retrograde": false,
+        "speed": 0.36953
+      },
+      "Jupiter": {
+        "longitude": 289.334512,
+        "sign_index": 9,
+        "degree_in_sign": 19.334512,
+        "is_retrograde": true,
+        "speed": -0.08021
+      },
+      "Venus": {
+        "longitude": 186.651777,
+        "sign_index": 6,
+        "degree_in_sign": 6.651777,
+        "is_retrograde": false,
+        "speed": 1.162611
+      },
+      "Saturn": {
+        "longitude": 355.121621,
+        "sign_index": 11,
+        "degree_in_sign": 25.121621,
+        "is_retrograde": true,
+        "speed": -0.063253
+      },
+      "Rahu": {
+        "longitude": 145.753486,
+        "sign_index": 4,
+        "degree_in_sign": 25.753486,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.753486,
+        "sign_index": 10,
+        "degree_in_sign": 25.753486,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

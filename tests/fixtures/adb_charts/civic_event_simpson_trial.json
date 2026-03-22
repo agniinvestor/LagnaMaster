@@ -1,0 +1,109 @@
+{
+  "adb_id": 42756,
+  "name": "Civic Event: Simpson trial",
+  "given_name": "Civic Event: Simpson trial",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2449742.274306,
+    "year": 1995,
+    "month": 1,
+    "day": 24,
+    "calendar": "g",
+    "time": "10:35",
+    "time_type": "s",
+    "hour": 10.583333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Civic_Event:_Simpson_trial",
+  "source_notes": "Marjorie Rosen timed the moment as 10:34:29 AM when Judge Ito said \"Good Morning\" as the preliminary entry into the murder trial of O.J. Simpson\\n",
+  "categories": [
+    "Notable : Famous : Criminal cases",
+    "Mundane : Misc. Mundane : Contests"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 3.856232,
+    "lagna": 333.856232,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.788148,
+    "jd_ut": 2449742.274306,
+    "planets": {
+      "Sun": {
+        "longitude": 280.513914,
+        "sign_index": 9,
+        "degree_in_sign": 10.513914,
+        "is_retrograde": false,
+        "speed": 1.017014
+      },
+      "Moon": {
+        "longitude": 197.362887,
+        "sign_index": 6,
+        "degree_in_sign": 17.362887,
+        "is_retrograde": false,
+        "speed": 11.667238
+      },
+      "Mars": {
+        "longitude": 125.71976,
+        "sign_index": 4,
+        "degree_in_sign": 5.71976,
+        "is_retrograde": true,
+        "speed": -0.284592
+      },
+      "Mercury": {
+        "longitude": 297.321099,
+        "sign_index": 9,
+        "degree_in_sign": 27.321099,
+        "is_retrograde": false,
+        "speed": 0.235968
+      },
+      "Jupiter": {
+        "longitude": 225.363917,
+        "sign_index": 7,
+        "degree_in_sign": 15.363917,
+        "is_retrograde": false,
+        "speed": 0.16903
+      },
+      "Venus": {
+        "longitude": 234.022605,
+        "sign_index": 7,
+        "degree_in_sign": 24.022605,
+        "is_retrograde": false,
+        "speed": 1.079516
+      },
+      "Saturn": {
+        "longitude": 316.480996,
+        "sign_index": 10,
+        "degree_in_sign": 16.480996,
+        "is_retrograde": false,
+        "speed": 0.107054
+      },
+      "Rahu": {
+        "longitude": 196.71749,
+        "sign_index": 6,
+        "degree_in_sign": 16.71749,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 16.71749,
+        "sign_index": 0,
+        "degree_in_sign": 16.71749,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

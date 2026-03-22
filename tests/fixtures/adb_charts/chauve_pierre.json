@@ -1,0 +1,109 @@
+{
+  "adb_id": 65548,
+  "name": "Chauve, Pierre",
+  "given_name": "Pierre Chauve",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418715.035174,
+    "year": 1910,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Demigny",
+    "country": "France",
+    "lat": 46.928056,
+    "lon": 4.834722
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chauve,_Pierre",
+  "source_notes": "Didier Geslain archive, 'Condamnés à mort' pdf file, p. 38.\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Other Criminal",
+    "Personal : Death : Other Death"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 20.890766,
+    "lagna": 50.890766,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.601768,
+    "jd_ut": 2418715.035174,
+    "planets": {
+      "Sun": {
+        "longitude": 300.351137,
+        "sign_index": 10,
+        "degree_in_sign": 0.351137,
+        "is_retrograde": false,
+        "speed": 1.011183
+      },
+      "Moon": {
+        "longitude": 333.7462,
+        "sign_index": 11,
+        "degree_in_sign": 3.7462,
+        "is_retrograde": false,
+        "speed": 10.933764
+      },
+      "Mars": {
+        "longitude": 19.365764,
+        "sign_index": 0,
+        "degree_in_sign": 19.365764,
+        "is_retrograde": false,
+        "speed": 0.596218
+      },
+      "Mercury": {
+        "longitude": 275.433516,
+        "sign_index": 9,
+        "degree_in_sign": 5.433516,
+        "is_retrograde": false,
+        "speed": 0.538664
+      },
+      "Jupiter": {
+        "longitude": 171.650409,
+        "sign_index": 5,
+        "degree_in_sign": 21.650409,
+        "is_retrograde": true,
+        "speed": -0.04353
+      },
+      "Venus": {
+        "longitude": 300.318871,
+        "sign_index": 10,
+        "degree_in_sign": 0.318871,
+        "is_retrograde": true,
+        "speed": -0.621819
+      },
+      "Saturn": {
+        "longitude": 356.365236,
+        "sign_index": 11,
+        "degree_in_sign": 26.365236,
+        "is_retrograde": false,
+        "speed": 0.088791
+      },
+      "Rahu": {
+        "longitude": 40.914739,
+        "sign_index": 1,
+        "degree_in_sign": 10.914739,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 220.914739,
+        "sign_index": 7,
+        "degree_in_sign": 10.914739,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

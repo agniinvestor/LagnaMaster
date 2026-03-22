@@ -1,0 +1,110 @@
+{
+  "adb_id": 63185,
+  "name": "Charles, Jean-Jacques",
+  "given_name": "Jean-Jacques Charles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439175.322917,
+    "year": 1966,
+    "month": 2,
+    "day": 18,
+    "calendar": "g",
+    "time": "20:45",
+    "time_type": "s",
+    "hour": 20.75,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles,_Jean-Jacques",
+  "source_notes": "Didier Geslain archive, 'jazz' pdf file, p. 24.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Conductor",
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 10.978616,
+    "lagna": 130.978616,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.384053,
+    "jd_ut": 2439175.322917,
+    "planets": {
+      "Sun": {
+        "longitude": 306.330444,
+        "sign_index": 10,
+        "degree_in_sign": 6.330444,
+        "is_retrograde": false,
+        "speed": 1.008786
+      },
+      "Moon": {
+        "longitude": 288.095697,
+        "sign_index": 9,
+        "degree_in_sign": 18.095697,
+        "is_retrograde": false,
+        "speed": 14.399465
+      },
+      "Mars": {
+        "longitude": 322.004043,
+        "sign_index": 10,
+        "degree_in_sign": 22.004043,
+        "is_retrograde": false,
+        "speed": 0.785116
+      },
+      "Mercury": {
+        "longitude": 316.553846,
+        "sign_index": 10,
+        "degree_in_sign": 16.553846,
+        "is_retrograde": false,
+        "speed": 1.8377
+      },
+      "Jupiter": {
+        "longitude": 57.889494,
+        "sign_index": 1,
+        "degree_in_sign": 27.889494,
+        "is_retrograde": false,
+        "speed": 0.011818
+      },
+      "Venus": {
+        "longitude": 275.041503,
+        "sign_index": 9,
+        "degree_in_sign": 5.041503,
+        "is_retrograde": false,
+        "speed": 0.119531
+      },
+      "Saturn": {
+        "longitude": 324.04098,
+        "sign_index": 10,
+        "degree_in_sign": 24.04098,
+        "is_retrograde": false,
+        "speed": 0.119439
+      },
+      "Rahu": {
+        "longitude": 36.681707,
+        "sign_index": 1,
+        "degree_in_sign": 6.681707,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 216.681707,
+        "sign_index": 7,
+        "degree_in_sign": 6.681707,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

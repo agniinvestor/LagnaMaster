@@ -1,0 +1,106 @@
+{
+  "adb_id": 48596,
+  "name": "Christian, Matthew",
+  "given_name": "Matthew Christian",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445472.085417,
+    "year": 1983,
+    "month": 5,
+    "day": 17,
+    "calendar": "g",
+    "time": "10:03",
+    "time_type": "d",
+    "hour": 10.05,
+    "time_unknown": false,
+    "place": "Newton Lower Falls",
+    "country": "Massachusetts",
+    "lat": 42.333333,
+    "lon": -71.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "can",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian,_Matthew",
+  "source_notes": "pt quotes birth certificate\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 13.973501,
+    "lagna": 73.973501,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.624844,
+    "jd_ut": 2445472.085417,
+    "planets": {
+      "Sun": {
+        "longitude": 32.486757,
+        "sign_index": 1,
+        "degree_in_sign": 2.486757,
+        "is_retrograde": false,
+        "speed": 0.963671
+      },
+      "Moon": {
+        "longitude": 96.638396,
+        "sign_index": 3,
+        "degree_in_sign": 6.638396,
+        "is_retrograde": false,
+        "speed": 15.417809
+      },
+      "Mars": {
+        "longitude": 36.862195,
+        "sign_index": 1,
+        "degree_in_sign": 6.862195,
+        "is_retrograde": false,
+        "speed": 0.708206
+      },
+      "Mercury": {
+        "longitude": 24.970554,
+        "sign_index": 0,
+        "degree_in_sign": 24.970554,
+        "is_retrograde": true,
+        "speed": -0.503624
+      },
+      "Jupiter": {
+        "longitude": 223.738851,
+        "sign_index": 7,
+        "degree_in_sign": 13.738851,
+        "is_retrograde": true,
+        "speed": -0.122438
+      },
+      "Venus": {
+        "longitude": 75.442069,
+        "sign_index": 2,
+        "degree_in_sign": 15.442069,
+        "is_retrograde": false,
+        "speed": 1.102536
+      },
+      "Saturn": {
+        "longitude": 185.646519,
+        "sign_index": 6,
+        "degree_in_sign": 5.646519,
+        "is_retrograde": true,
+        "speed": -0.063617
+      },
+      "Rahu": {
+        "longitude": 63.003435,
+        "sign_index": 2,
+        "degree_in_sign": 3.003435,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 243.003435,
+        "sign_index": 8,
+        "degree_in_sign": 3.003435,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

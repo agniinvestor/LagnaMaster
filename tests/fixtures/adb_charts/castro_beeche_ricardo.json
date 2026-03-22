@@ -1,0 +1,109 @@
+{
+  "adb_id": 72855,
+  "name": "Castro Beeche, Ricardo",
+  "given_name": "Ricardo Castro Beeche",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412930.233484,
+    "year": 1894,
+    "month": 4,
+    "day": 11,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "San José",
+    "country": "Costa Rica",
+    "lat": 9.933333,
+    "lon": -84.083333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro_Beeche,_Ricardo",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.336802,
+    "lagna": 67.336802,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.380625,
+    "jd_ut": 2412930.233484,
+    "planets": {
+      "Sun": {
+        "longitude": 359.425126,
+        "sign_index": 11,
+        "degree_in_sign": 29.425126,
+        "is_retrograde": false,
+        "speed": 0.980064
+      },
+      "Moon": {
+        "longitude": 73.273919,
+        "sign_index": 2,
+        "degree_in_sign": 13.273919,
+        "is_retrograde": false,
+        "speed": 12.78004
+      },
+      "Mars": {
+        "longitude": 287.724706,
+        "sign_index": 9,
+        "degree_in_sign": 17.724706,
+        "is_retrograde": false,
+        "speed": 0.706648
+      },
+      "Mercury": {
+        "longitude": 331.836656,
+        "sign_index": 11,
+        "degree_in_sign": 1.836656,
+        "is_retrograde": false,
+        "speed": 1.016052
+      },
+      "Jupiter": {
+        "longitude": 39.453075,
+        "sign_index": 1,
+        "degree_in_sign": 9.453075,
+        "is_retrograde": false,
+        "speed": 0.205021
+      },
+      "Venus": {
+        "longitude": 314.325129,
+        "sign_index": 10,
+        "degree_in_sign": 14.325129,
+        "is_retrograde": false,
+        "speed": 0.829927
+      },
+      "Saturn": {
+        "longitude": 179.455365,
+        "sign_index": 5,
+        "degree_in_sign": 29.455365,
+        "is_retrograde": true,
+        "speed": -0.077089
+      },
+      "Rahu": {
+        "longitude": 347.463569,
+        "sign_index": 11,
+        "degree_in_sign": 17.463569,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 167.463569,
+        "sign_index": 5,
+        "degree_in_sign": 17.463569,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

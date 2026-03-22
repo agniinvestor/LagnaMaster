@@ -1,0 +1,108 @@
+{
+  "adb_id": 53456,
+  "name": "Chauvet, Guy",
+  "given_name": "Guy Chauvet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427347.538194,
+    "year": 1933,
+    "month": 10,
+    "day": 2,
+    "calendar": "g",
+    "time": "01:55",
+    "time_type": "d",
+    "hour": 1.916667,
+    "time_unknown": false,
+    "place": "Montluçon",
+    "country": "France",
+    "lat": 46.35,
+    "lon": 2.6
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chauvet,_Guy",
+  "source_notes": "Steinbrecher collection: Gauquelin ns 3/0322\\nGrazia Bordoni database, 'entertainment' file, quotes Gauquelin for 11:55 AM.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 26.967948,
+    "lagna": 86.967948,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.931802,
+    "jd_ut": 2427347.538194,
+    "planets": {
+      "Sun": {
+        "longitude": 165.447014,
+        "sign_index": 5,
+        "degree_in_sign": 15.447014,
+        "is_retrograde": false,
+        "speed": 0.983784
+      },
+      "Moon": {
+        "longitude": 324.193769,
+        "sign_index": 10,
+        "degree_in_sign": 24.193769,
+        "is_retrograde": false,
+        "speed": 10.610751
+      },
+      "Mars": {
+        "longitude": 211.816419,
+        "sign_index": 7,
+        "degree_in_sign": 1.816419,
+        "is_retrograde": false,
+        "speed": 0.70017
+      },
+      "Mercury": {
+        "longitude": 180.080318,
+        "sign_index": 6,
+        "degree_in_sign": 0.080318,
+        "is_retrograde": false,
+        "speed": 1.553521
+      },
+      "Jupiter": {
+        "longitude": 161.769064,
+        "sign_index": 5,
+        "degree_in_sign": 11.769064,
+        "is_retrograde": false,
+        "speed": 0.216137
+      },
+      "Venus": {
+        "longitude": 206.415047,
+        "sign_index": 6,
+        "degree_in_sign": 26.415047,
+        "is_retrograde": false,
+        "speed": 1.169765
+      },
+      "Saturn": {
+        "longitude": 286.915778,
+        "sign_index": 9,
+        "degree_in_sign": 16.915778,
+        "is_retrograde": true,
+        "speed": -0.020974
+      },
+      "Rahu": {
+        "longitude": 303.460385,
+        "sign_index": 10,
+        "degree_in_sign": 3.460385,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.460385,
+        "sign_index": 4,
+        "degree_in_sign": 3.460385,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

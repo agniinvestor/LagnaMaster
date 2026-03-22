@@ -1,0 +1,112 @@
+{
+  "adb_id": 86643,
+  "name": "Cabrera Lobato, Luis",
+  "given_name": "Luis Cabrera Lobato",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406452.938796,
+    "year": 1876,
+    "month": 7,
+    "day": 17,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Zacatlán",
+    "country": "Mexico",
+    "lat": 19.933333,
+    "lon": -97.966667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cabrera_Lobato,_Luis",
+  "source_notes": "Sy Scholfield provided birth registry entry from Puebla state archives.\\n",
+  "categories": [
+    "Vocation : Law : Attorney",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Vocation : Writers : Translator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 19.968304,
+    "lagna": 49.968304,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.133028,
+    "jd_ut": 2406452.938796,
+    "planets": {
+      "Sun": {
+        "longitude": 92.974144,
+        "sign_index": 3,
+        "degree_in_sign": 2.974144,
+        "is_retrograde": false,
+        "speed": 0.954439
+      },
+      "Moon": {
+        "longitude": 40.7698,
+        "sign_index": 1,
+        "degree_in_sign": 10.7698,
+        "is_retrograde": false,
+        "speed": 12.574454
+      },
+      "Mars": {
+        "longitude": 101.453756,
+        "sign_index": 3,
+        "degree_in_sign": 11.453756,
+        "is_retrograde": false,
+        "speed": 0.639796
+      },
+      "Mercury": {
+        "longitude": 74.600385,
+        "sign_index": 2,
+        "degree_in_sign": 14.600385,
+        "is_retrograde": false,
+        "speed": 1.547073
+      },
+      "Jupiter": {
+        "longitude": 210.007021,
+        "sign_index": 7,
+        "degree_in_sign": 0.007021,
+        "is_retrograde": true,
+        "speed": -0.005751
+      },
+      "Venus": {
+        "longitude": 88.209408,
+        "sign_index": 2,
+        "degree_in_sign": 28.209408,
+        "is_retrograde": true,
+        "speed": -0.606476
+      },
+      "Saturn": {
+        "longitude": 315.266124,
+        "sign_index": 10,
+        "degree_in_sign": 15.266124,
+        "is_retrograde": true,
+        "speed": -0.045393
+      },
+      "Rahu": {
+        "longitude": 330.709155,
+        "sign_index": 11,
+        "degree_in_sign": 0.709155,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 150.709155,
+        "sign_index": 5,
+        "degree_in_sign": 0.709155,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

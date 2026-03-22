@@ -1,0 +1,110 @@
+{
+  "adb_id": 3007,
+  "name": "Coli, Francois",
+  "given_name": "Francois Coli",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408116.943333,
+    "year": 1881,
+    "month": 2,
+    "day": 5,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coli,_Francois",
+  "source_notes": "B.C. in hand from Steinbrecher\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Vocation : Travel : Adventurer",
+    "Vocation : Travel : Pilot/ private"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 6.603404,
+    "lagna": 6.603404,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.196633,
+    "jd_ut": 2408116.943333,
+    "planets": {
+      "Sun": {
+        "longitude": 294.628624,
+        "sign_index": 9,
+        "degree_in_sign": 24.628624,
+        "is_retrograde": false,
+        "speed": 1.013032
+      },
+      "Moon": {
+        "longitude": 18.25218,
+        "sign_index": 0,
+        "degree_in_sign": 18.25218,
+        "is_retrograde": false,
+        "speed": 13.465349
+      },
+      "Mars": {
+        "longitude": 264.244518,
+        "sign_index": 8,
+        "degree_in_sign": 24.244518,
+        "is_retrograde": false,
+        "speed": 0.752267
+      },
+      "Mercury": {
+        "longitude": 302.196379,
+        "sign_index": 10,
+        "degree_in_sign": 2.196379,
+        "is_retrograde": false,
+        "speed": 1.801761
+      },
+      "Jupiter": {
+        "longitude": 353.578305,
+        "sign_index": 11,
+        "degree_in_sign": 23.578305,
+        "is_retrograde": false,
+        "speed": 0.177164
+      },
+      "Venus": {
+        "longitude": 340.515736,
+        "sign_index": 11,
+        "degree_in_sign": 10.515736,
+        "is_retrograde": false,
+        "speed": 1.092984
+      },
+      "Saturn": {
+        "longitude": 1.553538,
+        "sign_index": 0,
+        "degree_in_sign": 1.553538,
+        "is_retrograde": false,
+        "speed": 0.073504
+      },
+      "Rahu": {
+        "longitude": 242.530015,
+        "sign_index": 8,
+        "degree_in_sign": 2.530015,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 62.530015,
+        "sign_index": 2,
+        "degree_in_sign": 2.530015,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

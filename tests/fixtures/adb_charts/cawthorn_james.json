@@ -1,0 +1,110 @@
+{
+  "adb_id": 81286,
+  "name": "Cawthorn, James",
+  "given_name": "James Cawthorn",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2349229.615278,
+    "year": 1719,
+    "month": 11,
+    "day": 4,
+    "calendar": "j",
+    "time": "02:40",
+    "time_type": "l",
+    "hour": 2.666667,
+    "time_unknown": false,
+    "place": "Sheffield",
+    "country": "England",
+    "lat": 53.383333,
+    "lon": -1.5
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cawthorn,_James",
+  "source_notes": "Sy Scholfield quotes from \"Original Memoirs of Mr. James Cawthrone. By Mr. Goodwin\" in ''Gentleman's Magazine and Historical Chronicle'', Part 2 (E. Cave, 1791), p. 1081: \"'James was born Wednesday, Nov. 4, 1719, 2 hours and 40 minutes A. M.' Entry, by his father, in a book of Annotations on the New Testament, published by H. Overton, without date.\"\\n",
+  "categories": [
+    "Vocation : Education : Administrator",
+    "Vocation : Education : Teacher",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 22.567685,
+    "lagna": 142.567685,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.94648,
+    "jd_ut": 2349229.615278,
+    "planets": {
+      "Sun": {
+        "longitude": 212.258294,
+        "sign_index": 7,
+        "degree_in_sign": 2.258294,
+        "is_retrograde": false,
+        "speed": 1.009518
+      },
+      "Moon": {
+        "longitude": 257.245742,
+        "sign_index": 8,
+        "degree_in_sign": 17.245742,
+        "is_retrograde": false,
+        "speed": 17.420834
+      },
+      "Mars": {
+        "longitude": 322.581043,
+        "sign_index": 10,
+        "degree_in_sign": 22.581043,
+        "is_retrograde": false,
+        "speed": 0.468473
+      },
+      "Mercury": {
+        "longitude": 211.508475,
+        "sign_index": 7,
+        "degree_in_sign": 1.508475,
+        "is_retrograde": false,
+        "speed": 1.589139
+      },
+      "Jupiter": {
+        "longitude": 159.42379,
+        "sign_index": 5,
+        "degree_in_sign": 9.42379,
+        "is_retrograde": false,
+        "speed": 0.16742
+      },
+      "Venus": {
+        "longitude": 205.446789,
+        "sign_index": 6,
+        "degree_in_sign": 25.446789,
+        "is_retrograde": true,
+        "speed": -0.571924
+      },
+      "Saturn": {
+        "longitude": 207.004596,
+        "sign_index": 6,
+        "degree_in_sign": 27.004596,
+        "is_retrograde": false,
+        "speed": 0.119115
+      },
+      "Rahu": {
+        "longitude": 123.099256,
+        "sign_index": 4,
+        "degree_in_sign": 3.099256,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 303.099256,
+        "sign_index": 10,
+        "degree_in_sign": 3.099256,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

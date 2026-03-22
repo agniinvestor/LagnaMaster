@@ -1,0 +1,114 @@
+{
+  "adb_id": 83976,
+  "name": "Calhoun, Charles Jr.",
+  "given_name": "Charles Jr. Calhoun",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426508.388889,
+    "year": 1931,
+    "month": 6,
+    "day": 15,
+    "calendar": "g",
+    "time": "15:20",
+    "time_type": "s",
+    "hour": 15.333333,
+    "time_unknown": false,
+    "place": "Tyler",
+    "country": "Texas",
+    "lat": 32.35,
+    "lon": -95.3
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "gem",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calhoun,_Charles_Jr.",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Law : Attorney",
+    "Vocation : Law : Jurist",
+    "Vocation : Law : Other Law",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 16.379947,
+    "lagna": 166.379947,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.899719,
+    "jd_ut": 2426508.388889,
+    "planets": {
+      "Sun": {
+        "longitude": 60.890065,
+        "sign_index": 2,
+        "degree_in_sign": 0.890065,
+        "is_retrograde": false,
+        "speed": 0.955279
+      },
+      "Moon": {
+        "longitude": 57.300596,
+        "sign_index": 1,
+        "degree_in_sign": 27.300596,
+        "is_retrograde": false,
+        "speed": 10.042374
+      },
+      "Mars": {
+        "longitude": 129.929883,
+        "sign_index": 4,
+        "degree_in_sign": 9.929883,
+        "is_retrograde": false,
+        "speed": 0.54242
+      },
+      "Mercury": {
+        "longitude": 45.186102,
+        "sign_index": 1,
+        "degree_in_sign": 15.186102,
+        "is_retrograde": false,
+        "speed": 1.86505
+      },
+      "Jupiter": {
+        "longitude": 90.296732,
+        "sign_index": 3,
+        "degree_in_sign": 0.296732,
+        "is_retrograde": false,
+        "speed": 0.207774
+      },
+      "Venus": {
+        "longitude": 38.225071,
+        "sign_index": 1,
+        "degree_in_sign": 8.225071,
+        "is_retrograde": false,
+        "speed": 1.211476
+      },
+      "Saturn": {
+        "longitude": 268.966373,
+        "sign_index": 8,
+        "degree_in_sign": 28.966373,
+        "is_retrograde": true,
+        "speed": -0.060453
+      },
+      "Rahu": {
+        "longitude": 347.928649,
+        "sign_index": 11,
+        "degree_in_sign": 17.928649,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 167.928649,
+        "sign_index": 5,
+        "degree_in_sign": 17.928649,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

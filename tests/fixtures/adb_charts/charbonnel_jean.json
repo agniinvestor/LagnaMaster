@@ -1,0 +1,109 @@
+{
+  "adb_id": 53436,
+  "name": "Charbonnel, Jean",
+  "given_name": "Jean Charbonnel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424993.447917,
+    "year": 1927,
+    "month": 4,
+    "day": 22,
+    "calendar": "g",
+    "time": "23:45",
+    "time_type": "d",
+    "hour": 23.75,
+    "time_unknown": false,
+    "place": "La Fère",
+    "country": "France",
+    "lat": 49.666667,
+    "lon": 3.366667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charbonnel,_Jean",
+  "source_notes": "Steinbrecher collection: Gauquelin ns 3/0308\\n",
+  "categories": [
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Other Politics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 0.541444,
+    "lagna": 210.541444,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.841798,
+    "jd_ut": 2424993.447917,
+    "planets": {
+      "Sun": {
+        "longitude": 8.960063,
+        "sign_index": 0,
+        "degree_in_sign": 8.960063,
+        "is_retrograde": false,
+        "speed": 0.974644
+      },
+      "Moon": {
+        "longitude": 255.281536,
+        "sign_index": 8,
+        "degree_in_sign": 15.281536,
+        "is_retrograde": false,
+        "speed": 12.357418
+      },
+      "Mars": {
+        "longitude": 70.600557,
+        "sign_index": 2,
+        "degree_in_sign": 10.600557,
+        "is_retrograde": false,
+        "speed": 0.585647
+      },
+      "Mercury": {
+        "longitude": 344.61437,
+        "sign_index": 11,
+        "degree_in_sign": 14.61437,
+        "is_retrograde": false,
+        "speed": 1.460064
+      },
+      "Jupiter": {
+        "longitude": 329.191857,
+        "sign_index": 10,
+        "degree_in_sign": 29.191857,
+        "is_retrograde": false,
+        "speed": 0.21222
+      },
+      "Venus": {
+        "longitude": 44.459855,
+        "sign_index": 1,
+        "degree_in_sign": 14.459855,
+        "is_retrograde": false,
+        "speed": 1.184457
+      },
+      "Saturn": {
+        "longitude": 223.809212,
+        "sign_index": 7,
+        "degree_in_sign": 13.809212,
+        "is_retrograde": true,
+        "speed": -0.05377
+      },
+      "Rahu": {
+        "longitude": 68.208521,
+        "sign_index": 2,
+        "degree_in_sign": 8.208521,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 248.208521,
+        "sign_index": 8,
+        "degree_in_sign": 8.208521,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 67166,
+  "name": "Coolen, Antoon",
+  "given_name": "Antoon Coolen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414031.736435,
+    "year": 1897,
+    "month": 4,
+    "day": 17,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Wijlre",
+    "country": "Netherlands",
+    "lat": 50.833333,
+    "lon": 5.9
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coolen,_Antoon",
+  "source_notes": "Koppejan retrieved 6 AM from BC. \\n\\n[http://www.dbnl.org/auteurs/auteur.php?id=cool004 Antoon Coolen · dbnl]\\n[http://www.deurnewiki.nl/wiki/index.php?title=Johannes_Hendrikus_Antonius_Coolen_%281858-1934%29 Deurne wiki]\\n[http://resources.huygens.knaw.nl/bwn1880-2000/lemmata/b/bwn3/coolen Coolen, Antonius Franciscus (1897-1961): KNAW biography]\\n\\n[http://www.thuisinbrabant.nl/personen/c/coolen,-antoon Antoon Coolen | Thuis in Brabant]\\n",
+  "categories": [
+    "Traits : Personality : Principled strongly",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 8.670565,
+    "lagna": 8.670565,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.422732,
+    "jd_ut": 2414031.736435,
+    "planets": {
+      "Sun": {
+        "longitude": 5.035368,
+        "sign_index": 0,
+        "degree_in_sign": 5.035368,
+        "is_retrograde": false,
+        "speed": 0.976322
+      },
+      "Moon": {
+        "longitude": 184.265219,
+        "sign_index": 6,
+        "degree_in_sign": 4.265219,
+        "is_retrograde": false,
+        "speed": 15.088733
+      },
+      "Mars": {
+        "longitude": 80.541638,
+        "sign_index": 2,
+        "degree_in_sign": 20.541638,
+        "is_retrograde": false,
+        "speed": 0.522006
+      },
+      "Mercury": {
+        "longitude": 20.646824,
+        "sign_index": 0,
+        "degree_in_sign": 20.646824,
+        "is_retrograde": false,
+        "speed": 1.793617
+      },
+      "Jupiter": {
+        "longitude": 127.922687,
+        "sign_index": 4,
+        "degree_in_sign": 7.922687,
+        "is_retrograde": true,
+        "speed": -0.027983
+      },
+      "Venus": {
+        "longitude": 22.55786,
+        "sign_index": 0,
+        "degree_in_sign": 22.55786,
+        "is_retrograde": true,
+        "speed": -0.393885
+      },
+      "Saturn": {
+        "longitude": 217.173673,
+        "sign_index": 7,
+        "degree_in_sign": 7.173673,
+        "is_retrograde": true,
+        "speed": -0.056884
+      },
+      "Rahu": {
+        "longitude": 289.092602,
+        "sign_index": 9,
+        "degree_in_sign": 19.092602,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 109.092602,
+        "sign_index": 3,
+        "degree_in_sign": 19.092602,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

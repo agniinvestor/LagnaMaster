@@ -1,0 +1,109 @@
+{
+  "adb_id": 77804,
+  "name": "Chance, Janet",
+  "given_name": "Janet Chance",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409947.645833,
+    "year": 1886,
+    "month": 2,
+    "day": 10,
+    "calendar": "g",
+    "time": "03:30",
+    "time_type": "s",
+    "hour": 3.5,
+    "time_unknown": false,
+    "place": "Edinburgh",
+    "country": "Scotland",
+    "lat": 55.95,
+    "lon": -3.216667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chance,_Janet",
+  "source_notes": "Paul Wright quotes B.C.\\n",
+  "categories": [
+    "Personal : Death : Suicide",
+    "Vocation : Humanities+Social Sciences : Gender Studies"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 21.490767,
+    "lagna": 201.490767,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.266612,
+    "jd_ut": 2409947.645833,
+    "planets": {
+      "Sun": {
+        "longitude": 299.103986,
+        "sign_index": 9,
+        "degree_in_sign": 29.103986,
+        "is_retrograde": false,
+        "speed": 1.011425
+      },
+      "Moon": {
+        "longitude": 5.143124,
+        "sign_index": 0,
+        "degree_in_sign": 5.143124,
+        "is_retrograde": false,
+        "speed": 15.423809
+      },
+      "Mars": {
+        "longitude": 151.463396,
+        "sign_index": 5,
+        "degree_in_sign": 1.463396,
+        "is_retrograde": true,
+        "speed": -0.198431
+      },
+      "Mercury": {
+        "longitude": 288.299037,
+        "sign_index": 9,
+        "degree_in_sign": 18.299037,
+        "is_retrograde": false,
+        "speed": 1.645742
+      },
+      "Jupiter": {
+        "longitude": 163.054925,
+        "sign_index": 5,
+        "degree_in_sign": 13.054925,
+        "is_retrograde": true,
+        "speed": -0.06457
+      },
+      "Venus": {
+        "longitude": 312.853205,
+        "sign_index": 10,
+        "degree_in_sign": 12.853205,
+        "is_retrograde": true,
+        "speed": -0.481056
+      },
+      "Saturn": {
+        "longitude": 69.584691,
+        "sign_index": 2,
+        "degree_in_sign": 9.584691,
+        "is_retrograde": true,
+        "speed": -0.038394
+      },
+      "Rahu": {
+        "longitude": 145.517203,
+        "sign_index": 4,
+        "degree_in_sign": 25.517203,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 325.517203,
+        "sign_index": 10,
+        "degree_in_sign": 25.517203,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

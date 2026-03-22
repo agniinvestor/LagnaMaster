@@ -1,0 +1,112 @@
+{
+  "adb_id": 95749,
+  "name": "Christian, Chris",
+  "given_name": "Chris Christian",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433685.0,
+    "year": 1951,
+    "month": 2,
+    "day": 7,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Abilene",
+    "country": "Texas",
+    "lat": 32.45,
+    "lon": -99.733333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian,_Chris",
+  "source_notes": "Sy Scholfield quotes birth notice, ''Abilene Reporter-News'' (Abilene, Texas), 8 February 1951, page 16: born at St. Ann Hospital. \\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Music : Other Entertain/Music",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 4.252392,
+    "lagna": 244.252392,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.174115,
+    "jd_ut": 2433685.0,
+    "planets": {
+      "Sun": {
+        "longitude": 294.730216,
+        "sign_index": 9,
+        "degree_in_sign": 24.730216,
+        "is_retrograde": false,
+        "speed": 1.013382
+      },
+      "Moon": {
+        "longitude": 310.540221,
+        "sign_index": 10,
+        "degree_in_sign": 10.540221,
+        "is_retrograde": false,
+        "speed": 15.755421
+      },
+      "Mars": {
+        "longitude": 319.361915,
+        "sign_index": 10,
+        "degree_in_sign": 19.361915,
+        "is_retrograde": false,
+        "speed": 0.783853
+      },
+      "Mercury": {
+        "longitude": 273.611792,
+        "sign_index": 9,
+        "degree_in_sign": 3.611792,
+        "is_retrograde": false,
+        "speed": 1.413358
+      },
+      "Jupiter": {
+        "longitude": 319.463133,
+        "sign_index": 10,
+        "degree_in_sign": 19.463133,
+        "is_retrograde": false,
+        "speed": 0.231309
+      },
+      "Venus": {
+        "longitude": 315.128471,
+        "sign_index": 10,
+        "degree_in_sign": 15.128471,
+        "is_retrograde": false,
+        "speed": 1.246092
+      },
+      "Saturn": {
+        "longitude": 158.574175,
+        "sign_index": 5,
+        "degree_in_sign": 8.574175,
+        "is_retrograde": true,
+        "speed": -0.045287
+      },
+      "Rahu": {
+        "longitude": 327.625184,
+        "sign_index": 10,
+        "degree_in_sign": 27.625184,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 147.625184,
+        "sign_index": 4,
+        "degree_in_sign": 27.625184,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

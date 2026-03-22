@@ -1,0 +1,108 @@
+{
+  "adb_id": 13355,
+  "name": "Construction Worker 13355",
+  "given_name": "Construction Worker 13355",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436520.120833,
+    "year": 1958,
+    "month": 11,
+    "day": 12,
+    "calendar": "g",
+    "time": "06:54",
+    "time_type": "s",
+    "hour": 6.9,
+    "time_unknown": false,
+    "place": "Santa Barbara",
+    "country": "California",
+    "lat": 34.416667,
+    "lon": -119.7
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Research:Construction_Worker_13355",
+  "source_notes": "Dona Shaw  quotes B.C.\\n",
+  "categories": [
+    "Vocation : Building Trades : Construction work"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 7.381984,
+    "lagna": 187.381984,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.282522,
+    "jd_ut": 2436520.120833,
+    "planets": {
+      "Sun": {
+        "longitude": 206.437933,
+        "sign_index": 6,
+        "degree_in_sign": 26.437933,
+        "is_retrograde": false,
+        "speed": 1.006593
+      },
+      "Moon": {
+        "longitude": 226.260536,
+        "sign_index": 7,
+        "degree_in_sign": 16.260536,
+        "is_retrograde": false,
+        "speed": 15.373492
+      },
+      "Mars": {
+        "longitude": 31.916227,
+        "sign_index": 1,
+        "degree_in_sign": 1.916227,
+        "is_retrograde": true,
+        "speed": -0.367464
+      },
+      "Mercury": {
+        "longitude": 227.045575,
+        "sign_index": 7,
+        "degree_in_sign": 17.045575,
+        "is_retrograde": false,
+        "speed": 1.311352
+      },
+      "Jupiter": {
+        "longitude": 200.494154,
+        "sign_index": 6,
+        "degree_in_sign": 20.494154,
+        "is_retrograde": false,
+        "speed": 0.219264
+      },
+      "Venus": {
+        "longitude": 206.714222,
+        "sign_index": 6,
+        "degree_in_sign": 26.714222,
+        "is_retrograde": false,
+        "speed": 1.256041
+      },
+      "Saturn": {
+        "longitude": 240.532916,
+        "sign_index": 8,
+        "degree_in_sign": 0.532916,
+        "is_retrograde": false,
+        "speed": 0.104363
+      },
+      "Rahu": {
+        "longitude": 177.386304,
+        "sign_index": 5,
+        "degree_in_sign": 27.386304,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 357.386304,
+        "sign_index": 11,
+        "degree_in_sign": 27.386304,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

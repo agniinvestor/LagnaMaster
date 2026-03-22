@@ -1,0 +1,110 @@
+{
+  "adb_id": 97485,
+  "name": "Clauser, John",
+  "given_name": "John Clauser",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430695.047222,
+    "year": 1942,
+    "month": 12,
+    "day": 1,
+    "calendar": "g",
+    "time": "06:08",
+    "time_type": "w",
+    "hour": 6.133333,
+    "time_unknown": false,
+    "place": "Pasadena",
+    "country": "California",
+    "lat": 34.15,
+    "lon": -118.15
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clauser,_John",
+  "source_notes": "Starkman quotes birth certificate in hand\\n",
+  "categories": [
+    "Vocation : Science : Physics",
+    "Notable : Awards : Nobel prize",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 2.664399,
+    "lagna": 182.664399,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.059792,
+    "jd_ut": 2430695.047222,
+    "planets": {
+      "Sun": {
+        "longitude": 225.656443,
+        "sign_index": 7,
+        "degree_in_sign": 15.656443,
+        "is_retrograde": false,
+        "speed": 1.013804
+      },
+      "Moon": {
+        "longitude": 141.510256,
+        "sign_index": 4,
+        "degree_in_sign": 21.510256,
+        "is_retrograde": false,
+        "speed": 8.276526
+      },
+      "Mars": {
+        "longitude": 207.105955,
+        "sign_index": 6,
+        "degree_in_sign": 27.105955,
+        "is_retrograde": false,
+        "speed": 0.690372
+      },
+      "Mercury": {
+        "longitude": 225.916087,
+        "sign_index": 7,
+        "degree_in_sign": 15.916087,
+        "is_retrograde": false,
+        "speed": 1.570978
+      },
+      "Jupiter": {
+        "longitude": 91.589252,
+        "sign_index": 3,
+        "degree_in_sign": 1.589252,
+        "is_retrograde": true,
+        "speed": -0.061862
+      },
+      "Venus": {
+        "longitude": 229.354551,
+        "sign_index": 7,
+        "degree_in_sign": 19.354551,
+        "is_retrograde": false,
+        "speed": 1.257075
+      },
+      "Saturn": {
+        "longitude": 46.002443,
+        "sign_index": 1,
+        "degree_in_sign": 16.002443,
+        "is_retrograde": true,
+        "speed": -0.082158
+      },
+      "Rahu": {
+        "longitude": 126.068949,
+        "sign_index": 4,
+        "degree_in_sign": 6.068949,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.068949,
+        "sign_index": 10,
+        "degree_in_sign": 6.068949,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

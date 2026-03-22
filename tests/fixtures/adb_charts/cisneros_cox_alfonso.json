@@ -1,0 +1,109 @@
+{
+  "adb_id": 77874,
+  "name": "Cisneros Cox, Alfonso",
+  "given_name": "Alfonso Cisneros Cox",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434442.388889,
+    "year": 1953,
+    "month": 3,
+    "day": 5,
+    "calendar": "g",
+    "time": "16:20",
+    "time_type": "s",
+    "hour": 16.333333,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cisneros_Cox,_Alfonso",
+  "source_notes": "Sy Scholfield submitted birth record: \"cuatro i veinte de la tarde\" (four-twenty in the afternoon).\\n",
+  "categories": [
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 23.491444,
+    "lagna": 83.491444,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.203075,
+    "jd_ut": 2434442.388889,
+    "planets": {
+      "Sun": {
+        "longitude": 321.805435,
+        "sign_index": 10,
+        "degree_in_sign": 21.805435,
+        "is_retrograde": false,
+        "speed": 1.000894
+      },
+      "Moon": {
+        "longitude": 197.945627,
+        "sign_index": 6,
+        "degree_in_sign": 17.945627,
+        "is_retrograde": false,
+        "speed": 17.557597
+      },
+      "Mars": {
+        "longitude": 356.187835,
+        "sign_index": 11,
+        "degree_in_sign": 26.187835,
+        "is_retrograde": false,
+        "speed": 0.741621
+      },
+      "Mercury": {
+        "longitude": 338.983993,
+        "sign_index": 11,
+        "degree_in_sign": 8.983993,
+        "is_retrograde": false,
+        "speed": 0.490904
+      },
+      "Jupiter": {
+        "longitude": 23.258492,
+        "sign_index": 0,
+        "degree_in_sign": 23.258492,
+        "is_retrograde": false,
+        "speed": 0.167342
+      },
+      "Venus": {
+        "longitude": 2.865982,
+        "sign_index": 0,
+        "degree_in_sign": 2.865982,
+        "is_retrograde": false,
+        "speed": 0.559876
+      },
+      "Saturn": {
+        "longitude": 183.38675,
+        "sign_index": 6,
+        "degree_in_sign": 3.38675,
+        "is_retrograde": true,
+        "speed": -0.04717
+      },
+      "Rahu": {
+        "longitude": 287.489588,
+        "sign_index": 9,
+        "degree_in_sign": 17.489588,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 107.489588,
+        "sign_index": 3,
+        "degree_in_sign": 17.489588,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

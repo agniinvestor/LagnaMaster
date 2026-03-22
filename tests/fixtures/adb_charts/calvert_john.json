@@ -1,0 +1,110 @@
+{
+  "adb_id": 85439,
+  "name": "Calvert, John",
+  "given_name": "John Calvert",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419254.447917,
+    "year": 1911,
+    "month": 8,
+    "day": 5,
+    "calendar": "g",
+    "time": "16:45",
+    "time_type": "s",
+    "hour": 16.75,
+    "time_unknown": false,
+    "place": "Whitewater",
+    "country": "Indiana",
+    "lat": 39.95,
+    "lon": -84.833333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calvert,_John",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Magic"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 22.77466,
+    "lagna": 232.77466,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.62239,
+    "jd_ut": 2419254.447917,
+    "planets": {
+      "Sun": {
+        "longitude": 109.745769,
+        "sign_index": 3,
+        "degree_in_sign": 19.745769,
+        "is_retrograde": false,
+        "speed": 0.957641
+      },
+      "Moon": {
+        "longitude": 243.818277,
+        "sign_index": 8,
+        "degree_in_sign": 3.818277,
+        "is_retrograde": false,
+        "speed": 9.488839
+      },
+      "Mars": {
+        "longitude": 20.9195,
+        "sign_index": 0,
+        "degree_in_sign": 20.9195,
+        "is_retrograde": false,
+        "speed": 0.6033
+      },
+      "Mercury": {
+        "longitude": 136.02326,
+        "sign_index": 4,
+        "degree_in_sign": 16.02326,
+        "is_retrograde": false,
+        "speed": 1.248779
+      },
+      "Jupiter": {
+        "longitude": 193.723704,
+        "sign_index": 6,
+        "degree_in_sign": 13.723704,
+        "is_retrograde": false,
+        "speed": 0.09531
+      },
+      "Venus": {
+        "longitude": 150.6833,
+        "sign_index": 5,
+        "degree_in_sign": 0.6833,
+        "is_retrograde": false,
+        "speed": 0.579743
+      },
+      "Saturn": {
+        "longitude": 26.921629,
+        "sign_index": 0,
+        "degree_in_sign": 26.921629,
+        "is_retrograde": false,
+        "speed": 0.048055
+      },
+      "Rahu": {
+        "longitude": 12.330125,
+        "sign_index": 0,
+        "degree_in_sign": 12.330125,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 192.330125,
+        "sign_index": 6,
+        "degree_in_sign": 12.330125,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

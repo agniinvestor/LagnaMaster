@@ -1,0 +1,109 @@
+{
+  "adb_id": 62909,
+  "name": "Costesèque, André",
+  "given_name": "André Costesèque",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416395.410174,
+    "year": 1903,
+    "month": 10,
+    "day": 7,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "s",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Nantes",
+    "country": "France",
+    "lat": 47.216667,
+    "lon": -1.55
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costesèque,_André",
+  "source_notes": "Didier Geslain archive, 'Astrologues' pdf file, p. 65.\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 23.28286,
+    "lagna": 53.28286,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.513091,
+    "jd_ut": 2416395.410174,
+    "planets": {
+      "Sun": {
+        "longitude": 170.929452,
+        "sign_index": 5,
+        "degree_in_sign": 20.929452,
+        "is_retrograde": false,
+        "speed": 0.986874
+      },
+      "Moon": {
+        "longitude": 6.224252,
+        "sign_index": 0,
+        "degree_in_sign": 6.224252,
+        "is_retrograde": false,
+        "speed": 10.65669
+      },
+      "Mars": {
+        "longitude": 228.235484,
+        "sign_index": 7,
+        "degree_in_sign": 18.235484,
+        "is_retrograde": false,
+        "speed": 0.713009
+      },
+      "Mercury": {
+        "longitude": 162.343545,
+        "sign_index": 5,
+        "degree_in_sign": 12.343545,
+        "is_retrograde": true,
+        "speed": -0.800201
+      },
+      "Jupiter": {
+        "longitude": 322.661998,
+        "sign_index": 10,
+        "degree_in_sign": 22.661998,
+        "is_retrograde": true,
+        "speed": -0.101213
+      },
+      "Venus": {
+        "longitude": 143.177599,
+        "sign_index": 4,
+        "degree_in_sign": 23.177599,
+        "is_retrograde": true,
+        "speed": -0.051745
+      },
+      "Saturn": {
+        "longitude": 280.174707,
+        "sign_index": 9,
+        "degree_in_sign": 10.174707,
+        "is_retrograde": true,
+        "speed": -0.000725
+      },
+      "Rahu": {
+        "longitude": 163.836545,
+        "sign_index": 5,
+        "degree_in_sign": 13.836545,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 343.836545,
+        "sign_index": 11,
+        "degree_in_sign": 13.836545,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

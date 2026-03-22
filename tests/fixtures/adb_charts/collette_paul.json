@@ -1,0 +1,108 @@
+{
+  "adb_id": 65034,
+  "name": "Collette, Paul",
+  "given_name": "Paul Collette",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422549.083333,
+    "year": 1920,
+    "month": 8,
+    "day": 12,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "d",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Caen",
+    "country": "France",
+    "lat": 49.183333,
+    "lon": -0.35
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "can",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collette,_Paul",
+  "source_notes": "Birth and death records in Didier Geslain archive, 'C' pdf file, pp. 199-200.\\n",
+  "categories": [
+    "Vocation : Military : Other Military"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.574804,
+    "lagna": 192.574804,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.748346,
+    "jd_ut": 2422549.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 116.767905,
+        "sign_index": 3,
+        "degree_in_sign": 26.767905,
+        "is_retrograde": false,
+        "speed": 0.960553
+      },
+      "Moon": {
+        "longitude": 94.563783,
+        "sign_index": 3,
+        "degree_in_sign": 4.563783,
+        "is_retrograde": false,
+        "speed": 12.699962
+      },
+      "Mars": {
+        "longitude": 203.235292,
+        "sign_index": 6,
+        "degree_in_sign": 23.235292,
+        "is_retrograde": false,
+        "speed": 0.562521
+      },
+      "Mercury": {
+        "longitude": 98.44443,
+        "sign_index": 3,
+        "degree_in_sign": 8.44443,
+        "is_retrograde": false,
+        "speed": 0.67069
+      },
+      "Jupiter": {
+        "longitude": 124.057113,
+        "sign_index": 4,
+        "degree_in_sign": 4.057113,
+        "is_retrograde": false,
+        "speed": 0.217224
+      },
+      "Venus": {
+        "longitude": 127.736241,
+        "sign_index": 4,
+        "degree_in_sign": 7.736241,
+        "is_retrograde": false,
+        "speed": 1.234082
+      },
+      "Saturn": {
+        "longitude": 138.995087,
+        "sign_index": 4,
+        "degree_in_sign": 18.995087,
+        "is_retrograde": false,
+        "speed": 0.119544
+      },
+      "Rahu": {
+        "longitude": 197.740497,
+        "sign_index": 6,
+        "degree_in_sign": 17.740497,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 17.740497,
+        "sign_index": 0,
+        "degree_in_sign": 17.740497,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

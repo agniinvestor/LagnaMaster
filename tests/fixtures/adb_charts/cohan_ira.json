@@ -1,0 +1,108 @@
+{
+  "adb_id": 50799,
+  "name": "Cohan, Ira",
+  "given_name": "Ira Cohan",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430771.1875,
+    "year": 1943,
+    "month": 2,
+    "day": 15,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "w",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Passaic",
+    "country": "New Jersey",
+    "lat": 40.85,
+    "lon": -74.133333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohan,_Ira",
+  "source_notes": "Steinbrecher collection: Connie grippo quotes him 1983\\n",
+  "categories": [
+    "Vocation : Law : Attorney"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 24.108057,
+    "lagna": 24.108057,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.062703,
+    "jd_ut": 2430771.1875,
+    "planets": {
+      "Sun": {
+        "longitude": 303.065675,
+        "sign_index": 10,
+        "degree_in_sign": 3.065675,
+        "is_retrograde": false,
+        "speed": 1.009597
+      },
+      "Moon": {
+        "longitude": 73.875887,
+        "sign_index": 2,
+        "degree_in_sign": 13.875887,
+        "is_retrograde": false,
+        "speed": 14.963644
+      },
+      "Mars": {
+        "longitude": 261.483607,
+        "sign_index": 8,
+        "degree_in_sign": 21.483607,
+        "is_retrograde": false,
+        "speed": 0.736377
+      },
+      "Mercury": {
+        "longitude": 276.848827,
+        "sign_index": 9,
+        "degree_in_sign": 6.848827,
+        "is_retrograde": false,
+        "speed": 0.871875
+      },
+      "Jupiter": {
+        "longitude": 83.075867,
+        "sign_index": 2,
+        "degree_in_sign": 23.075867,
+        "is_retrograde": true,
+        "speed": -0.077291
+      },
+      "Venus": {
+        "longitude": 324.772229,
+        "sign_index": 10,
+        "degree_in_sign": 24.772229,
+        "is_retrograde": false,
+        "speed": 1.242451
+      },
+      "Saturn": {
+        "longitude": 42.6092,
+        "sign_index": 1,
+        "degree_in_sign": 12.6092,
+        "is_retrograde": false,
+        "speed": 0.01768
+      },
+      "Rahu": {
+        "longitude": 122.034119,
+        "sign_index": 4,
+        "degree_in_sign": 2.034119,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 302.034119,
+        "sign_index": 10,
+        "degree_in_sign": 2.034119,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

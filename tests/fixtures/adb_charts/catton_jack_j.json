@@ -1,0 +1,109 @@
+{
+  "adb_id": 50758,
+  "name": "Catton, Jack J.",
+  "given_name": "Jack J. Catton",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422360.0625,
+    "year": 1920,
+    "month": 2,
+    "day": 5,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Berkeley",
+    "country": "California",
+    "lat": 37.866667,
+    "lon": -122.266667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Catton,_Jack_J.",
+  "source_notes": "Steinbrecher Collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 28.969562,
+    "lagna": 238.969562,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.741119,
+    "jd_ut": 2422360.0625,
+    "planets": {
+      "Sun": {
+        "longitude": 292.72164,
+        "sign_index": 9,
+        "degree_in_sign": 22.72164,
+        "is_retrograde": false,
+        "speed": 1.013248
+      },
+      "Moon": {
+        "longitude": 128.083211,
+        "sign_index": 4,
+        "degree_in_sign": 8.083211,
+        "is_retrograde": false,
+        "speed": 12.236128
+      },
+      "Mars": {
+        "longitude": 188.894537,
+        "sign_index": 6,
+        "degree_in_sign": 8.894537,
+        "is_retrograde": false,
+        "speed": 0.344336
+      },
+      "Mercury": {
+        "longitude": 292.498129,
+        "sign_index": 9,
+        "degree_in_sign": 22.498129,
+        "is_retrograde": false,
+        "speed": 1.749813
+      },
+      "Jupiter": {
+        "longitude": 110.094048,
+        "sign_index": 3,
+        "degree_in_sign": 20.094048,
+        "is_retrograde": true,
+        "speed": -0.132918
+      },
+      "Venus": {
+        "longitude": 255.81277,
+        "sign_index": 8,
+        "degree_in_sign": 15.81277,
+        "is_retrograde": false,
+        "speed": 1.213643
+      },
+      "Saturn": {
+        "longitude": 137.268097,
+        "sign_index": 4,
+        "degree_in_sign": 17.268097,
+        "is_retrograde": true,
+        "speed": -0.068883
+      },
+      "Rahu": {
+        "longitude": 207.757105,
+        "sign_index": 6,
+        "degree_in_sign": 27.757105,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 27.757105,
+        "sign_index": 0,
+        "degree_in_sign": 27.757105,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

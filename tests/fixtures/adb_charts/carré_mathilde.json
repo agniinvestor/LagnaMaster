@@ -1,0 +1,108 @@
+{
+  "adb_id": 842,
+  "name": "Carré, Mathilde",
+  "given_name": "Mathilde Carré",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418122.535174,
+    "year": 1908,
+    "month": 6,
+    "day": 30,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Le Creusot",
+    "country": "France",
+    "lat": 46.8,
+    "lon": 4.433333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "can",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carré,_Mathilde",
+  "source_notes": "EC Didier Geslain\\n",
+  "categories": [
+    "Vocation : Law : Spy/ Counter agent"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 0.550337,
+    "lagna": 0.550337,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.579117,
+    "jd_ut": 2418122.535174,
+    "planets": {
+      "Sun": {
+        "longitude": 75.236409,
+        "sign_index": 2,
+        "degree_in_sign": 15.236409,
+        "is_retrograde": false,
+        "speed": 0.953663
+      },
+      "Moon": {
+        "longitude": 90.386088,
+        "sign_index": 3,
+        "degree_in_sign": 0.386088,
+        "is_retrograde": false,
+        "speed": 15.77949
+      },
+      "Mars": {
+        "longitude": 92.227315,
+        "sign_index": 3,
+        "degree_in_sign": 2.227315,
+        "is_retrograde": false,
+        "speed": 0.640357
+      },
+      "Mercury": {
+        "longitude": 82.7749,
+        "sign_index": 2,
+        "degree_in_sign": 22.7749,
+        "is_retrograde": true,
+        "speed": -0.524695
+      },
+      "Jupiter": {
+        "longitude": 111.599595,
+        "sign_index": 3,
+        "degree_in_sign": 21.599595,
+        "is_retrograde": false,
+        "speed": 0.19549
+      },
+      "Venus": {
+        "longitude": 84.728696,
+        "sign_index": 2,
+        "degree_in_sign": 24.728696,
+        "is_retrograde": true,
+        "speed": -0.551094
+      },
+      "Saturn": {
+        "longitude": 347.182,
+        "sign_index": 11,
+        "degree_in_sign": 17.182,
+        "is_retrograde": false,
+        "speed": 0.037503
+      },
+      "Rahu": {
+        "longitude": 72.312558,
+        "sign_index": 2,
+        "degree_in_sign": 12.312558,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 252.312558,
+        "sign_index": 8,
+        "degree_in_sign": 12.312558,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

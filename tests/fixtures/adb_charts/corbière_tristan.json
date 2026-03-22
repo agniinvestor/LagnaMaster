@@ -1,0 +1,110 @@
+{
+  "adb_id": 55902,
+  "name": "Corbière, Tristan",
+  "given_name": "Tristan Corbière",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2395131.260648,
+    "year": 1845,
+    "month": 7,
+    "day": 18,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Ploujean",
+    "country": "France",
+    "lat": 48.6,
+    "lon": -3.833333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "cap",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corbière,_Tristan",
+  "source_notes": "Collection Didier Geslain \\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Tuberculosis",
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 13.816736,
+    "lagna": 223.816736,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.700298,
+    "jd_ut": 2395131.260648,
+    "planets": {
+      "Sun": {
+        "longitude": 94.183139,
+        "sign_index": 3,
+        "degree_in_sign": 4.183139,
+        "is_retrograde": false,
+        "speed": 0.953968
+      },
+      "Moon": {
+        "longitude": 267.725449,
+        "sign_index": 8,
+        "degree_in_sign": 27.725449,
+        "is_retrograde": false,
+        "speed": 14.56273
+      },
+      "Mars": {
+        "longitude": 308.768817,
+        "sign_index": 10,
+        "degree_in_sign": 8.768817,
+        "is_retrograde": false,
+        "speed": 0.009648
+      },
+      "Mercury": {
+        "longitude": 107.927485,
+        "sign_index": 3,
+        "degree_in_sign": 17.927485,
+        "is_retrograde": false,
+        "speed": 1.866909
+      },
+      "Jupiter": {
+        "longitude": 16.266143,
+        "sign_index": 0,
+        "degree_in_sign": 16.266143,
+        "is_retrograde": false,
+        "speed": 0.126519
+      },
+      "Venus": {
+        "longitude": 111.446185,
+        "sign_index": 3,
+        "degree_in_sign": 21.446185,
+        "is_retrograde": false,
+        "speed": 1.224898
+      },
+      "Saturn": {
+        "longitude": 295.402222,
+        "sign_index": 9,
+        "degree_in_sign": 25.402222,
+        "is_retrograde": true,
+        "speed": -0.066771
+      },
+      "Rahu": {
+        "longitude": 210.669159,
+        "sign_index": 7,
+        "degree_in_sign": 0.669159,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 30.669159,
+        "sign_index": 1,
+        "degree_in_sign": 0.669159,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

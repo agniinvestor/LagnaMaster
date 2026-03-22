@@ -1,0 +1,110 @@
+{
+  "adb_id": 53896,
+  "name": "Capone, John A.",
+  "given_name": "John A. Capone",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2417126.934722,
+    "year": 1905,
+    "month": 10,
+    "day": 8,
+    "calendar": "g",
+    "time": "05:26",
+    "time_type": "s",
+    "hour": 5.433333,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capone,_John_A.",
+  "source_notes": "Steinbrecher collection: Cl quotes him for 5:29 am lmt; city approximate\\n",
+  "categories": [
+    "Vocation : Building Trades : Architect/ Planner",
+    "Vocation : Education : Teacher",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.969148,
+    "lagna": 141.969148,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.541056,
+    "jd_ut": 2417126.934722,
+    "planets": {
+      "Sun": {
+        "longitude": 171.931052,
+        "sign_index": 5,
+        "degree_in_sign": 21.931052,
+        "is_retrograde": false,
+        "speed": 0.987666
+      },
+      "Moon": {
+        "longitude": 295.728328,
+        "sign_index": 9,
+        "degree_in_sign": 25.728328,
+        "is_retrograde": false,
+        "speed": 15.632994
+      },
+      "Mars": {
+        "longitude": 247.762154,
+        "sign_index": 8,
+        "degree_in_sign": 7.762154,
+        "is_retrograde": false,
+        "speed": 0.698266
+      },
+      "Mercury": {
+        "longitude": 169.000397,
+        "sign_index": 5,
+        "degree_in_sign": 19.000397,
+        "is_retrograde": false,
+        "speed": 1.75698
+      },
+      "Jupiter": {
+        "longitude": 43.699114,
+        "sign_index": 1,
+        "degree_in_sign": 13.699114,
+        "is_retrograde": true,
+        "speed": -0.042334
+      },
+      "Venus": {
+        "longitude": 141.115237,
+        "sign_index": 4,
+        "degree_in_sign": 21.115237,
+        "is_retrograde": false,
+        "speed": 1.21846
+      },
+      "Saturn": {
+        "longitude": 304.107157,
+        "sign_index": 10,
+        "degree_in_sign": 4.107157,
+        "is_retrograde": true,
+        "speed": -0.037624
+      },
+      "Rahu": {
+        "longitude": 125.07152,
+        "sign_index": 4,
+        "degree_in_sign": 5.07152,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 305.07152,
+        "sign_index": 10,
+        "degree_in_sign": 5.07152,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

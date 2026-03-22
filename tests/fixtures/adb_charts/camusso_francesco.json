@@ -1,0 +1,108 @@
+{
+  "adb_id": 52738,
+  "name": "Camusso, Francesco",
+  "given_name": "Francesco Camusso",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2418009.791667,
+    "year": 1908,
+    "month": 3,
+    "day": 9,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Cumiana",
+    "country": "Italy",
+    "lat": 44.983333,
+    "lon": 7.366667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camusso,_Francesco",
+  "source_notes": "Ed Steinbrecher collection: Bordoni/4 quotes him personally\\n",
+  "categories": [
+    "Vocation : Sports : Race Bikes"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 1.836169,
+    "lagna": 331.836169,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.574807,
+    "jd_ut": 2418009.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 325.754079,
+        "sign_index": 10,
+        "degree_in_sign": 25.754079,
+        "is_retrograde": false,
+        "speed": 0.999094
+      },
+      "Moon": {
+        "longitude": 49.035259,
+        "sign_index": 1,
+        "degree_in_sign": 19.035259,
+        "is_retrograde": false,
+        "speed": 16.00814
+      },
+      "Mars": {
+        "longitude": 17.855977,
+        "sign_index": 0,
+        "degree_in_sign": 17.855977,
+        "is_retrograde": false,
+        "speed": 0.684883
+      },
+      "Mercury": {
+        "longitude": 308.945554,
+        "sign_index": 10,
+        "degree_in_sign": 8.945554,
+        "is_retrograde": true,
+        "speed": -0.443153
+      },
+      "Jupiter": {
+        "longitude": 101.707459,
+        "sign_index": 3,
+        "degree_in_sign": 11.707459,
+        "is_retrograde": true,
+        "speed": -0.066383
+      },
+      "Venus": {
+        "longitude": 6.208389,
+        "sign_index": 0,
+        "degree_in_sign": 6.208389,
+        "is_retrograde": false,
+        "speed": 1.168923
+      },
+      "Saturn": {
+        "longitude": 336.15233,
+        "sign_index": 11,
+        "degree_in_sign": 6.15233,
+        "is_retrograde": false,
+        "speed": 0.123116
+      },
+      "Rahu": {
+        "longitude": 78.287074,
+        "sign_index": 2,
+        "degree_in_sign": 18.287074,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 258.287074,
+        "sign_index": 8,
+        "degree_in_sign": 18.287074,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 61505,
+  "name": "Chase, Ben",
+  "given_name": "Ben Chase",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423497.586806,
+    "year": 1923,
+    "month": 3,
+    "day": 18,
+    "calendar": "g",
+    "time": "19:05",
+    "time_type": "s",
+    "hour": 19.083333,
+    "time_unknown": false,
+    "place": "Bisbee",
+    "country": "Arizona",
+    "lat": 31.45,
+    "lon": -109.933333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chase,_Ben",
+  "source_notes": "Sy Scholfield quotes birth certificate:  http://genealogy.az.gov/azbirth/442/4420090.pdf\\n",
+  "categories": [
+    "Vocation : Sports : Football"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 20.389757,
+    "lagna": 140.389757,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.784608,
+    "jd_ut": 2423497.586806,
+    "planets": {
+      "Sun": {
+        "longitude": 334.674103,
+        "sign_index": 11,
+        "degree_in_sign": 4.674103,
+        "is_retrograde": false,
+        "speed": 0.994471
+      },
+      "Moon": {
+        "longitude": 350.635304,
+        "sign_index": 11,
+        "degree_in_sign": 20.635304,
+        "is_retrograde": false,
+        "speed": 11.240566
+      },
+      "Mars": {
+        "longitude": 17.831217,
+        "sign_index": 0,
+        "degree_in_sign": 17.831217,
+        "is_retrograde": false,
+        "speed": 0.700437
+      },
+      "Mercury": {
+        "longitude": 316.640182,
+        "sign_index": 10,
+        "degree_in_sign": 16.640182,
+        "is_retrograde": false,
+        "speed": 1.638356
+      },
+      "Jupiter": {
+        "longitude": 205.878524,
+        "sign_index": 6,
+        "degree_in_sign": 25.878524,
+        "is_retrograde": true,
+        "speed": -0.041431
+      },
+      "Venus": {
+        "longitude": 291.922993,
+        "sign_index": 9,
+        "degree_in_sign": 21.922993,
+        "is_retrograde": false,
+        "speed": 1.155771
+      },
+      "Saturn": {
+        "longitude": 175.453966,
+        "sign_index": 5,
+        "degree_in_sign": 25.453966,
+        "is_retrograde": true,
+        "speed": -0.069525
+      },
+      "Rahu": {
+        "longitude": 147.477318,
+        "sign_index": 4,
+        "degree_in_sign": 27.477318,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 327.477318,
+        "sign_index": 10,
+        "degree_in_sign": 27.477318,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

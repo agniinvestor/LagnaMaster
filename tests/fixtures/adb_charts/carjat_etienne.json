@@ -1,0 +1,109 @@
+{
+  "adb_id": 56901,
+  "name": "Carjat, Etienne",
+  "given_name": "Etienne Carjat",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2388810.153426,
+    "year": 1828,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "l",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Fareins",
+    "country": "France",
+    "lat": 46.016667,
+    "lon": 4.766667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carjat,_Etienne",
+  "source_notes": "from Didier Geslain archive\\n",
+  "categories": [
+    "Vocation : Art : Cartoonist",
+    "Vocation : Art : Photography"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 29.083738,
+    "lagna": 119.083738,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.458722,
+    "jd_ut": 2388810.153426,
+    "planets": {
+      "Sun": {
+        "longitude": 346.487788,
+        "sign_index": 11,
+        "degree_in_sign": 16.487788,
+        "is_retrograde": false,
+        "speed": 0.986902
+      },
+      "Moon": {
+        "longitude": 134.895473,
+        "sign_index": 4,
+        "degree_in_sign": 14.895473,
+        "is_retrograde": false,
+        "speed": 12.254766
+      },
+      "Mars": {
+        "longitude": 245.231712,
+        "sign_index": 8,
+        "degree_in_sign": 5.231712,
+        "is_retrograde": false,
+        "speed": 0.472351
+      },
+      "Mercury": {
+        "longitude": 328.360595,
+        "sign_index": 10,
+        "degree_in_sign": 28.360595,
+        "is_retrograde": true,
+        "speed": -0.266376
+      },
+      "Jupiter": {
+        "longitude": 201.708274,
+        "sign_index": 6,
+        "degree_in_sign": 21.708274,
+        "is_retrograde": true,
+        "speed": -0.083718
+      },
+      "Venus": {
+        "longitude": 26.044074,
+        "sign_index": 0,
+        "degree_in_sign": 26.044074,
+        "is_retrograde": false,
+        "speed": 1.165705
+      },
+      "Saturn": {
+        "longitude": 82.026502,
+        "sign_index": 2,
+        "degree_in_sign": 22.026502,
+        "is_retrograde": false,
+        "speed": 0.025007
+      },
+      "Rahu": {
+        "longitude": 185.638334,
+        "sign_index": 6,
+        "degree_in_sign": 5.638334,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 5.638334,
+        "sign_index": 0,
+        "degree_in_sign": 5.638334,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

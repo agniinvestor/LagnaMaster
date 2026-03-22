@@ -1,0 +1,108 @@
+{
+  "adb_id": 63073,
+  "name": "Crozier, Michel",
+  "given_name": "Michel Crozier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423365.375,
+    "year": 1922,
+    "month": 11,
+    "day": 6,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "s",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Ste.Menehould",
+    "country": "France",
+    "lat": 49.083333,
+    "lon": 4.9
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "gem",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crozier,_Michel",
+  "source_notes": "Didier Geslain archive, 'Philosophes' pdf file, p. 32.\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Sociologist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 12.998673,
+    "lagna": 72.998673,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.779554,
+    "jd_ut": 2423365.375,
+    "planets": {
+      "Sun": {
+        "longitude": 200.89315,
+        "sign_index": 6,
+        "degree_in_sign": 20.89315,
+        "is_retrograde": false,
+        "speed": 1.003331
+      },
+      "Moon": {
+        "longitude": 45.180617,
+        "sign_index": 1,
+        "degree_in_sign": 15.180617,
+        "is_retrograde": false,
+        "speed": 11.021241
+      },
+      "Mars": {
+        "longitude": 282.183573,
+        "sign_index": 9,
+        "degree_in_sign": 12.183573,
+        "is_retrograde": false,
+        "speed": 0.70513
+      },
+      "Mercury": {
+        "longitude": 184.166004,
+        "sign_index": 6,
+        "degree_in_sign": 4.166004,
+        "is_retrograde": false,
+        "speed": 1.448775
+      },
+      "Jupiter": {
+        "longitude": 189.626679,
+        "sign_index": 6,
+        "degree_in_sign": 9.626679,
+        "is_retrograde": false,
+        "speed": 0.21608
+      },
+      "Venus": {
+        "longitude": 226.9593,
+        "sign_index": 7,
+        "degree_in_sign": 16.9593,
+        "is_retrograde": true,
+        "speed": -0.090207
+      },
+      "Saturn": {
+        "longitude": 171.86559,
+        "sign_index": 5,
+        "degree_in_sign": 21.86559,
+        "is_retrograde": false,
+        "speed": 0.112768
+      },
+      "Rahu": {
+        "longitude": 154.483497,
+        "sign_index": 5,
+        "degree_in_sign": 4.483497,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 334.483497,
+        "sign_index": 11,
+        "degree_in_sign": 4.483497,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

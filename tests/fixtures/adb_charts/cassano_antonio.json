@@ -1,0 +1,108 @@
+{
+  "adb_id": 101452,
+  "name": "Cassano, Antonio",
+  "given_name": "Antonio Cassano",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2445163.302083,
+    "year": 1982,
+    "month": 7,
+    "day": 12,
+    "calendar": "g",
+    "time": "21:15",
+    "time_type": "d",
+    "hour": 21.25,
+    "time_unknown": false,
+    "place": "Bari",
+    "country": "Italy",
+    "lat": 41.116667,
+    "lon": 16.866667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassano,_Antonio",
+  "source_notes": "Grazia Bordoni database.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 19.212493,
+    "lagna": 259.212493,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.613036,
+    "jd_ut": 2445163.302083,
+    "planets": {
+      "Sun": {
+        "longitude": 86.48898,
+        "sign_index": 2,
+        "degree_in_sign": 26.48898,
+        "is_retrograde": false,
+        "speed": 0.953519
+      },
+      "Moon": {
+        "longitude": 340.132618,
+        "sign_index": 11,
+        "degree_in_sign": 10.132618,
+        "is_retrograde": false,
+        "speed": 15.434858
+      },
+      "Mars": {
+        "longitude": 174.840314,
+        "sign_index": 5,
+        "degree_in_sign": 24.840314,
+        "is_retrograde": false,
+        "speed": 0.490903
+      },
+      "Mercury": {
+        "longitude": 72.462077,
+        "sign_index": 2,
+        "degree_in_sign": 12.462077,
+        "is_retrograde": false,
+        "speed": 1.906857
+      },
+      "Jupiter": {
+        "longitude": 187.163826,
+        "sign_index": 6,
+        "degree_in_sign": 7.163826,
+        "is_retrograde": false,
+        "speed": 0.044173
+      },
+      "Venus": {
+        "longitude": 56.94698,
+        "sign_index": 1,
+        "degree_in_sign": 26.94698,
+        "is_retrograde": false,
+        "speed": 1.195518
+      },
+      "Saturn": {
+        "longitude": 172.37909,
+        "sign_index": 5,
+        "degree_in_sign": 22.37909,
+        "is_retrograde": false,
+        "speed": 0.039628
+      },
+      "Rahu": {
+        "longitude": 79.366491,
+        "sign_index": 2,
+        "degree_in_sign": 19.366491,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 259.366491,
+        "sign_index": 8,
+        "degree_in_sign": 19.366491,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

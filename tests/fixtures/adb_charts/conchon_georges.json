@@ -1,0 +1,110 @@
+{
+  "adb_id": 55925,
+  "name": "Conchon, Georges",
+  "given_name": "Georges Conchon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424280.041667,
+    "year": 1925,
+    "month": 5,
+    "day": 9,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "d",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Saint Avit",
+    "country": "France",
+    "lat": 45.866667,
+    "lon": 2.516667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conchon,_Georges",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 104.\\n",
+  "categories": [
+    "Vocation : Writers : Fiction",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Awards : Other Awards"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 25.082533,
+    "lagna": 115.082533,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.814523,
+    "jd_ut": 2424280.041667,
+    "planets": {
+      "Sun": {
+        "longitude": 25.561294,
+        "sign_index": 0,
+        "degree_in_sign": 25.561294,
+        "is_retrograde": false,
+        "speed": 0.965932
+      },
+      "Moon": {
+        "longitude": 218.882441,
+        "sign_index": 7,
+        "degree_in_sign": 8.882441,
+        "is_retrograde": false,
+        "speed": 18.664588
+      },
+      "Mars": {
+        "longitude": 66.932221,
+        "sign_index": 2,
+        "degree_in_sign": 6.932221,
+        "is_retrograde": false,
+        "speed": 0.635275
+      },
+      "Mercury": {
+        "longitude": 1.295666,
+        "sign_index": 0,
+        "degree_in_sign": 1.295666,
+        "is_retrograde": false,
+        "speed": 0.55161
+      },
+      "Jupiter": {
+        "longitude": 269.706671,
+        "sign_index": 8,
+        "degree_in_sign": 29.706671,
+        "is_retrograde": false,
+        "speed": 0.003398
+      },
+      "Venus": {
+        "longitude": 29.645891,
+        "sign_index": 0,
+        "degree_in_sign": 29.645891,
+        "is_retrograde": false,
+        "speed": 1.231626
+      },
+      "Saturn": {
+        "longitude": 197.626807,
+        "sign_index": 6,
+        "degree_in_sign": 17.626807,
+        "is_retrograde": true,
+        "speed": -0.074522
+      },
+      "Rahu": {
+        "longitude": 106.013404,
+        "sign_index": 3,
+        "degree_in_sign": 16.013404,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 286.013404,
+        "sign_index": 9,
+        "degree_in_sign": 16.013404,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

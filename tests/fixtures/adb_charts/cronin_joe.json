@@ -1,0 +1,109 @@
+{
+  "adb_id": 50874,
+  "name": "Cronin, Joe",
+  "given_name": "Joe Cronin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2417496.832639,
+    "year": 1906,
+    "month": 10,
+    "day": 12,
+    "calendar": "g",
+    "time": "23:59",
+    "time_type": "s",
+    "hour": 23.983333,
+    "time_unknown": false,
+    "place": "San Francisco",
+    "country": "California",
+    "lat": 37.783333,
+    "lon": -122.416667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cronin,_Joe",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Sports : Baseball",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 17.039487,
+    "lagna": 77.039487,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.555197,
+    "jd_ut": 2417496.832639,
+    "planets": {
+      "Sun": {
+        "longitude": 176.519194,
+        "sign_index": 5,
+        "degree_in_sign": 26.519194,
+        "is_retrograde": false,
+        "speed": 0.990672
+      },
+      "Moon": {
+        "longitude": 117.896607,
+        "sign_index": 3,
+        "degree_in_sign": 27.896607,
+        "is_retrograde": false,
+        "speed": 15.021588
+      },
+      "Mars": {
+        "longitude": 146.879172,
+        "sign_index": 4,
+        "degree_in_sign": 26.879172,
+        "is_retrograde": false,
+        "speed": 0.628602
+      },
+      "Mercury": {
+        "longitude": 189.547439,
+        "sign_index": 6,
+        "degree_in_sign": 9.547439,
+        "is_retrograde": false,
+        "speed": 1.548332
+      },
+      "Jupiter": {
+        "longitude": 78.060801,
+        "sign_index": 2,
+        "degree_in_sign": 18.060801,
+        "is_retrograde": false,
+        "speed": 0.054066
+      },
+      "Venus": {
+        "longitude": 220.447924,
+        "sign_index": 7,
+        "degree_in_sign": 10.447924,
+        "is_retrograde": false,
+        "speed": 0.741731
+      },
+      "Saturn": {
+        "longitude": 316.525236,
+        "sign_index": 10,
+        "degree_in_sign": 16.525236,
+        "is_retrograde": true,
+        "speed": -0.048941
+      },
+      "Rahu": {
+        "longitude": 105.469851,
+        "sign_index": 3,
+        "degree_in_sign": 15.469851,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 285.469851,
+        "sign_index": 9,
+        "degree_in_sign": 15.469851,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

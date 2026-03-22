@@ -1,0 +1,109 @@
+{
+  "adb_id": 5291,
+  "name": "Cadou, René Guy",
+  "given_name": "René Guy Cadou",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422370.375,
+    "year": 1920,
+    "month": 2,
+    "day": 15,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "d",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Sainte-Reine-de-Bretagne",
+    "country": "France",
+    "lat": 47.441389,
+    "lon": -2.1925
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cadou,_René_Guy",
+  "source_notes": "Gauquelin Vol 6/165\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 19.97542,
+    "lagna": 139.97542,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.741513,
+    "jd_ut": 2422370.375,
+    "planets": {
+      "Sun": {
+        "longitude": 303.154794,
+        "sign_index": 10,
+        "degree_in_sign": 3.154794,
+        "is_retrograde": false,
+        "speed": 1.010056
+      },
+      "Moon": {
+        "longitude": 256.585358,
+        "sign_index": 8,
+        "degree_in_sign": 16.585358,
+        "is_retrograde": false,
+        "speed": 15.734288
+      },
+      "Mars": {
+        "longitude": 192.111773,
+        "sign_index": 6,
+        "degree_in_sign": 12.111773,
+        "is_retrograde": false,
+        "speed": 0.276792
+      },
+      "Mercury": {
+        "longitude": 311.110712,
+        "sign_index": 10,
+        "degree_in_sign": 11.110712,
+        "is_retrograde": false,
+        "speed": 1.843136
+      },
+      "Jupiter": {
+        "longitude": 108.752886,
+        "sign_index": 3,
+        "degree_in_sign": 18.752886,
+        "is_retrograde": true,
+        "speed": -0.125497
+      },
+      "Venus": {
+        "longitude": 268.361712,
+        "sign_index": 8,
+        "degree_in_sign": 28.361712,
+        "is_retrograde": false,
+        "speed": 1.219655
+      },
+      "Saturn": {
+        "longitude": 136.512839,
+        "sign_index": 4,
+        "degree_in_sign": 16.512839,
+        "is_retrograde": true,
+        "speed": -0.076882
+      },
+      "Rahu": {
+        "longitude": 207.210624,
+        "sign_index": 6,
+        "degree_in_sign": 27.210624,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 27.210624,
+        "sign_index": 0,
+        "degree_in_sign": 27.210624,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

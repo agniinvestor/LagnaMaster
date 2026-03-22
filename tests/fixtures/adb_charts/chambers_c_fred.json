@@ -1,0 +1,114 @@
+{
+  "adb_id": 82705,
+  "name": "Chambers, C. Fred",
+  "given_name": "C. Fred Chambers",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421675.208333,
+    "year": 1918,
+    "month": 3,
+    "day": 22,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Dallas",
+    "country": "Texas",
+    "lat": 32.783333,
+    "lon": -96.8
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chambers,_C._Fred",
+  "source_notes": "Birth certificate in hand from Sy Scholfield.\\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Misc. : Mining",
+    "Notable : Awards : Hall of Fame"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 8.787363,
+    "lagna": 38.787363,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.714936,
+    "jd_ut": 2421675.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 338.544052,
+        "sign_index": 11,
+        "degree_in_sign": 8.544052,
+        "is_retrograde": false,
+        "speed": 0.991694
+      },
+      "Moon": {
+        "longitude": 105.074374,
+        "sign_index": 3,
+        "degree_in_sign": 15.074374,
+        "is_retrograde": false,
+        "speed": 15.928085
+      },
+      "Mars": {
+        "longitude": 148.271893,
+        "sign_index": 4,
+        "degree_in_sign": 28.271893,
+        "is_retrograde": true,
+        "speed": -0.377754
+      },
+      "Mercury": {
+        "longitude": 348.066701,
+        "sign_index": 11,
+        "degree_in_sign": 18.066701,
+        "is_retrograde": false,
+        "speed": 1.980316
+      },
+      "Jupiter": {
+        "longitude": 43.426939,
+        "sign_index": 1,
+        "degree_in_sign": 13.426939,
+        "is_retrograde": false,
+        "speed": 0.155482
+      },
+      "Venus": {
+        "longitude": 296.866882,
+        "sign_index": 9,
+        "degree_in_sign": 26.866882,
+        "is_retrograde": false,
+        "speed": 0.613629
+      },
+      "Saturn": {
+        "longitude": 105.180605,
+        "sign_index": 3,
+        "degree_in_sign": 15.180605,
+        "is_retrograde": true,
+        "speed": -0.031792
+      },
+      "Rahu": {
+        "longitude": 244.048959,
+        "sign_index": 8,
+        "degree_in_sign": 4.048959,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 64.048959,
+        "sign_index": 2,
+        "degree_in_sign": 4.048959,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

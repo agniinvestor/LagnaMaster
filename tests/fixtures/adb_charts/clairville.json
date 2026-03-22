@@ -1,0 +1,114 @@
+{
+  "adb_id": 77396,
+  "name": "Clairville",
+  "given_name": "Clairville",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2382540.778194,
+    "year": 1811,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "l",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clairville",
+  "source_notes": "Sy Scholfield submitted birth certificate n°359 from the online Lyon municipal archives, image 25/328.\\n\\nThe birth certificate is quoted in \"La Revue du siècle, littéraire, artistique & scientifique - Volume 3\"  (Bureau de la revue, 1889), pp. 405-406:  \"Son extrait de naissance est curieux, le voici : « Le 29janvier 1811, par devant nous, maire de Lyon, a comparu sieur Alexandre-Henrî Nicola'ie, dit Clairville, artiste dramatique, ... demeurant rue du Confort, lequel a présenté un enfant mâle, né hier matin, à sept heures, de lui comparant et de demoiselle Joséphine Degreville, son épouse, auquel enfant on a donné les prénoms de Louis-François-Marie...\"\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Pneumonia",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : Comedy",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Writers : Playwright/ script",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 14.140637,
+    "lagna": 254.140637,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.219142,
+    "jd_ut": 2382540.778194,
+    "planets": {
+      "Sun": {
+        "longitude": 286.299241,
+        "sign_index": 9,
+        "degree_in_sign": 16.299241,
+        "is_retrograde": false,
+        "speed": 1.015762
+      },
+      "Moon": {
+        "longitude": 335.93326,
+        "sign_index": 11,
+        "degree_in_sign": 5.93326,
+        "is_retrograde": false,
+        "speed": 16.650355
+      },
+      "Mars": {
+        "longitude": 201.660896,
+        "sign_index": 6,
+        "degree_in_sign": 21.660896,
+        "is_retrograde": false,
+        "speed": 0.51143
+      },
+      "Mercury": {
+        "longitude": 292.476805,
+        "sign_index": 9,
+        "degree_in_sign": 22.476805,
+        "is_retrograde": true,
+        "speed": -1.035985
+      },
+      "Jupiter": {
+        "longitude": 30.396609,
+        "sign_index": 1,
+        "degree_in_sign": 0.396609,
+        "is_retrograde": false,
+        "speed": 0.040401
+      },
+      "Venus": {
+        "longitude": 249.817621,
+        "sign_index": 8,
+        "degree_in_sign": 9.817621,
+        "is_retrograde": false,
+        "speed": 0.356463
+      },
+      "Saturn": {
+        "longitude": 241.922273,
+        "sign_index": 8,
+        "degree_in_sign": 1.922273,
+        "is_retrograde": false,
+        "speed": 0.095301
+      },
+      "Rahu": {
+        "longitude": 157.866222,
+        "sign_index": 5,
+        "degree_in_sign": 7.866222,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 337.866222,
+        "sign_index": 11,
+        "degree_in_sign": 7.866222,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

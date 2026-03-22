@@ -1,0 +1,110 @@
+{
+  "adb_id": 64034,
+  "name": "Cassagnac, Paul de",
+  "given_name": "Paul de Cassagnac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2394172.035185,
+    "year": 1842,
+    "month": 12,
+    "day": 2,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "l",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cassagnac,_Paul_de",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'acteurs et comédiens' pdf file, p. 226.\\n",
+  "categories": [
+    "Vocation : Politics : Other Politics",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 7.933377,
+    "lagna": 307.933377,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.663638,
+    "jd_ut": 2394172.035185,
+    "planets": {
+      "Sun": {
+        "longitude": 228.325023,
+        "sign_index": 7,
+        "degree_in_sign": 18.325023,
+        "is_retrograde": false,
+        "speed": 1.015217
+      },
+      "Moon": {
+        "longitude": 232.852273,
+        "sign_index": 7,
+        "degree_in_sign": 22.852273,
+        "is_retrograde": false,
+        "speed": 9.808346
+      },
+      "Mars": {
+        "longitude": 173.02235,
+        "sign_index": 5,
+        "degree_in_sign": 23.02235,
+        "is_retrograde": false,
+        "speed": 0.599974
+      },
+      "Mercury": {
+        "longitude": 214.281912,
+        "sign_index": 7,
+        "degree_in_sign": 4.281912,
+        "is_retrograde": false,
+        "speed": 1.516103
+      },
+      "Jupiter": {
+        "longitude": 270.94012,
+        "sign_index": 9,
+        "degree_in_sign": 0.94012,
+        "is_retrograde": false,
+        "speed": 0.202786
+      },
+      "Venus": {
+        "longitude": 252.612216,
+        "sign_index": 8,
+        "degree_in_sign": 12.612216,
+        "is_retrograde": true,
+        "speed": -0.158491
+      },
+      "Saturn": {
+        "longitude": 260.991627,
+        "sign_index": 8,
+        "degree_in_sign": 20.991627,
+        "is_retrograde": false,
+        "speed": 0.105622
+      },
+      "Rahu": {
+        "longitude": 261.500589,
+        "sign_index": 8,
+        "degree_in_sign": 21.500589,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 81.500589,
+        "sign_index": 2,
+        "degree_in_sign": 21.500589,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

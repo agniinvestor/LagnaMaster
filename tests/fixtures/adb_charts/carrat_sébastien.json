@@ -1,0 +1,109 @@
+{
+  "adb_id": 69409,
+  "name": "Carrat, Sébastien",
+  "given_name": "Sébastien Carrat",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442188.166667,
+    "year": 1974,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Nègrepelisse",
+    "country": "France",
+    "lat": 44.076111,
+    "lon": 1.521944
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "tau",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrat,_Sébastien",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'sport athlétisme' pdf file, p. 23.\\n",
+  "categories": [
+    "Vocation : Sports : Rugby",
+    "Vocation : Sports : Track and Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 5.545188,
+    "lagna": 155.545188,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.499263,
+    "jd_ut": 2442188.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 35.750431,
+        "sign_index": 1,
+        "degree_in_sign": 5.750431,
+        "is_retrograde": false,
+        "speed": 0.962563
+      },
+      "Moon": {
+        "longitude": 19.285207,
+        "sign_index": 0,
+        "degree_in_sign": 19.285207,
+        "is_retrograde": false,
+        "speed": 12.80689
+      },
+      "Mars": {
+        "longitude": 84.712144,
+        "sign_index": 2,
+        "degree_in_sign": 24.712144,
+        "is_retrograde": false,
+        "speed": 0.605679
+      },
+      "Mercury": {
+        "longitude": 53.060141,
+        "sign_index": 1,
+        "degree_in_sign": 23.060141,
+        "is_retrograde": false,
+        "speed": 1.774535
+      },
+      "Jupiter": {
+        "longitude": 320.880827,
+        "sign_index": 10,
+        "degree_in_sign": 20.880827,
+        "is_retrograde": false,
+        "speed": 0.136845
+      },
+      "Venus": {
+        "longitude": 354.293691,
+        "sign_index": 11,
+        "degree_in_sign": 24.293691,
+        "is_retrograde": false,
+        "speed": 1.139657
+      },
+      "Saturn": {
+        "longitude": 69.704173,
+        "sign_index": 2,
+        "degree_in_sign": 9.704173,
+        "is_retrograde": false,
+        "speed": 0.115613
+      },
+      "Rahu": {
+        "longitude": 237.024966,
+        "sign_index": 7,
+        "degree_in_sign": 27.024966,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 57.024966,
+        "sign_index": 1,
+        "degree_in_sign": 27.024966,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

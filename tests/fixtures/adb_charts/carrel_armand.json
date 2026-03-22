@@ -1,0 +1,111 @@
+{
+  "adb_id": 1982,
+  "name": "Carrel, Armand",
+  "given_name": "Armand Carrel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2378626.455324,
+    "year": 1800,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Rouen",
+    "country": "France",
+    "lat": 49.433333,
+    "lon": 1.083333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrel,_Armand",
+  "source_notes": "Gauquelin Vol 6/173\\n",
+  "categories": [
+    "Passions : Criminal Victim : Homicide victim",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Writers : Columnist/ journalist",
+    "Vocation : Writers : Publisher/ Editor"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 20.675297,
+    "lagna": 230.675297,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.069568,
+    "jd_ut": 2378626.455324,
+    "planets": {
+      "Sun": {
+        "longitude": 28.896428,
+        "sign_index": 0,
+        "degree_in_sign": 28.896428,
+        "is_retrograde": false,
+        "speed": 0.964303
+      },
+      "Moon": {
+        "longitude": 236.789623,
+        "sign_index": 7,
+        "degree_in_sign": 26.789623,
+        "is_retrograde": false,
+        "speed": 12.166839
+      },
+      "Mars": {
+        "longitude": 316.841103,
+        "sign_index": 10,
+        "degree_in_sign": 16.841103,
+        "is_retrograde": false,
+        "speed": 0.727103
+      },
+      "Mercury": {
+        "longitude": 4.057083,
+        "sign_index": 0,
+        "degree_in_sign": 4.057083,
+        "is_retrograde": false,
+        "speed": 0.682184
+      },
+      "Jupiter": {
+        "longitude": 70.066094,
+        "sign_index": 2,
+        "degree_in_sign": 10.066094,
+        "is_retrograde": false,
+        "speed": 0.19633
+      },
+      "Venus": {
+        "longitude": 5.746101,
+        "sign_index": 0,
+        "degree_in_sign": 5.746101,
+        "is_retrograde": false,
+        "speed": 1.216313
+      },
+      "Saturn": {
+        "longitude": 103.423986,
+        "sign_index": 3,
+        "degree_in_sign": 13.423986,
+        "is_retrograde": false,
+        "speed": 0.062014
+      },
+      "Rahu": {
+        "longitude": 5.294793,
+        "sign_index": 0,
+        "degree_in_sign": 5.294793,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 185.294793,
+        "sign_index": 6,
+        "degree_in_sign": 5.294793,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

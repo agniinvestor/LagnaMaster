@@ -1,0 +1,108 @@
+{
+  "adb_id": 58256,
+  "name": "Cormann, Mathias",
+  "given_name": "Mathias Cormann",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440849.833333,
+    "year": 1970,
+    "month": 9,
+    "day": 20,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Eupen",
+    "country": "Belgium",
+    "lat": 50.633333,
+    "lon": 6.033333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cormann,_Mathias",
+  "source_notes": "BC in hand from André Dekoster, acte 344, written in German, because Eupen belong to the German speaking small corner of Belgium.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 7.869072,
+    "lagna": 157.869072,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.448085,
+    "jd_ut": 2440849.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 153.493831,
+        "sign_index": 5,
+        "degree_in_sign": 3.493831,
+        "is_retrograde": false,
+        "speed": 0.977087
+      },
+      "Moon": {
+        "longitude": 38.099633,
+        "sign_index": 1,
+        "degree_in_sign": 8.099633,
+        "is_retrograde": false,
+        "speed": 11.653419
+      },
+      "Mars": {
+        "longitude": 137.430333,
+        "sign_index": 4,
+        "degree_in_sign": 17.430333,
+        "is_retrograde": false,
+        "speed": 0.634856
+      },
+      "Mercury": {
+        "longitude": 140.552219,
+        "sign_index": 4,
+        "degree_in_sign": 20.552219,
+        "is_retrograde": true,
+        "speed": -0.271436
+      },
+      "Jupiter": {
+        "longitude": 192.501914,
+        "sign_index": 6,
+        "degree_in_sign": 12.501914,
+        "is_retrograde": false,
+        "speed": 0.191894
+      },
+      "Venus": {
+        "longitude": 197.877753,
+        "sign_index": 6,
+        "degree_in_sign": 17.877753,
+        "is_retrograde": false,
+        "speed": 0.777001
+      },
+      "Saturn": {
+        "longitude": 28.952608,
+        "sign_index": 0,
+        "degree_in_sign": 28.952608,
+        "is_retrograde": true,
+        "speed": -0.027768
+      },
+      "Rahu": {
+        "longitude": 307.945979,
+        "sign_index": 10,
+        "degree_in_sign": 7.945979,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 127.945979,
+        "sign_index": 4,
+        "degree_in_sign": 7.945979,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

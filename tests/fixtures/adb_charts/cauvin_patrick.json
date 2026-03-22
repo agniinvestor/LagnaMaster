@@ -1,0 +1,108 @@
+{
+  "adb_id": 57845,
+  "name": "Cauvin, Patrick",
+  "given_name": "Patrick Cauvin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426987.458333,
+    "year": 1932,
+    "month": 10,
+    "day": 6,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cauvin,_Patrick",
+  "source_notes": "Didier Geslain archive, 'Ecrivains' pdf file, p. 76.\\nSame data from CEDRA quotes état civil/acte officiel, Informateur : CATHERINE GUTIERREZ, Source : LE PETIT LOGOSCOPE, n° 4.\\n",
+  "categories": [
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 10.715593,
+    "lagna": 70.715593,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.918035,
+    "jd_ut": 2426987.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 170.551974,
+        "sign_index": 5,
+        "degree_in_sign": 20.551974,
+        "is_retrograde": false,
+        "speed": 0.987061
+      },
+      "Moon": {
+        "longitude": 261.392909,
+        "sign_index": 8,
+        "degree_in_sign": 21.392909,
+        "is_retrograde": false,
+        "speed": 12.903951
+      },
+      "Mars": {
+        "longitude": 106.664773,
+        "sign_index": 3,
+        "degree_in_sign": 16.664773,
+        "is_retrograde": false,
+        "speed": 0.579808
+      },
+      "Mercury": {
+        "longitude": 176.155116,
+        "sign_index": 5,
+        "degree_in_sign": 26.155116,
+        "is_retrograde": false,
+        "speed": 1.674174
+      },
+      "Jupiter": {
+        "longitude": 139.170531,
+        "sign_index": 4,
+        "degree_in_sign": 19.170531,
+        "is_retrograde": false,
+        "speed": 0.200292
+      },
+      "Venus": {
+        "longitude": 126.765839,
+        "sign_index": 4,
+        "degree_in_sign": 6.765839,
+        "is_retrograde": false,
+        "speed": 1.118062
+      },
+      "Saturn": {
+        "longitude": 275.211317,
+        "sign_index": 9,
+        "degree_in_sign": 5.211317,
+        "is_retrograde": false,
+        "speed": 0.007057
+      },
+      "Rahu": {
+        "longitude": 322.541764,
+        "sign_index": 10,
+        "degree_in_sign": 22.541764,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 142.541764,
+        "sign_index": 4,
+        "degree_in_sign": 22.541764,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 73172,
+  "name": "Corley, Pat",
+  "given_name": "Pat Corley",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426129.201389,
+    "year": 1930,
+    "month": 6,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:50",
+    "time_type": "s",
+    "hour": 10.833333,
+    "time_unknown": false,
+    "place": "Dallas",
+    "country": "Texas",
+    "lat": 32.783333,
+    "lon": -96.8
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corley,_Pat",
+  "source_notes": "Sy Scholfield quotes birth certificate [https://familysearch.org/ark:/61903/1:1:K6LH-3BM].\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Heart",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 6.350131,
+    "lagna": 96.350131,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.885221,
+    "jd_ut": 2426129.201389,
+    "planets": {
+      "Sun": {
+        "longitude": 47.563945,
+        "sign_index": 1,
+        "degree_in_sign": 17.563945,
+        "is_retrograde": false,
+        "speed": 0.958285
+      },
+      "Moon": {
+        "longitude": 109.026347,
+        "sign_index": 3,
+        "degree_in_sign": 19.026347,
+        "is_retrograde": false,
+        "speed": 14.026496
+      },
+      "Mars": {
+        "longitude": 6.046411,
+        "sign_index": 0,
+        "degree_in_sign": 6.046411,
+        "is_retrograde": false,
+        "speed": 0.747293
+      },
+      "Mercury": {
+        "longitude": 30.91344,
+        "sign_index": 1,
+        "degree_in_sign": 0.91344,
+        "is_retrograde": true,
+        "speed": -0.005591
+      },
+      "Jupiter": {
+        "longitude": 61.342532,
+        "sign_index": 2,
+        "degree_in_sign": 1.342532,
+        "is_retrograde": false,
+        "speed": 0.226636
+      },
+      "Venus": {
+        "longitude": 76.178527,
+        "sign_index": 2,
+        "degree_in_sign": 16.178527,
+        "is_retrograde": false,
+        "speed": 1.203999
+      },
+      "Saturn": {
+        "longitude": 257.713866,
+        "sign_index": 8,
+        "degree_in_sign": 17.713866,
+        "is_retrograde": true,
+        "speed": -0.058361
+      },
+      "Rahu": {
+        "longitude": 8.022582,
+        "sign_index": 0,
+        "degree_in_sign": 8.022582,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 188.022582,
+        "sign_index": 6,
+        "degree_in_sign": 8.022582,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

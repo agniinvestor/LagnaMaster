@@ -1,0 +1,109 @@
+{
+  "adb_id": 89460,
+  "name": "Celestial: Pallas Discovery",
+  "given_name": "Celestial: Pallas Discovery",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2379313.340093,
+    "year": 1802,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "20:45",
+    "time_type": "l",
+    "hour": 20.75,
+    "time_unknown": false,
+    "place": "Bremen",
+    "country": "Germany",
+    "lat": 53.066667,
+    "lon": 8.816667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celestial:_Pallas_Discovery",
+  "source_notes": "Sy Scholfield quotes from Baron Franz von Zach's account published in May 1802, \"On March 31 we got a letter from our esteemed friend Dr. Olbers from Bremen ... telling us that he had been so lucky as to discover on March 28 a moving star in the northern wing of Virgo ... His first thought was that this might be a variable star ... He immediately compared the stranger to 20 Virgo and continued his observations from 8:45 to 11 o'clock ... That evening he was already almost convinced of the motion of the new star,\" published in ''Studies of Pallas in the Early Nineteenth Century: Historical Studies in Asteroid Research'' by Clifford J. Cunningham (Springer, 2016), page 271.\\n",
+  "categories": [
+    "Mundane : Medical/Science : Space",
+    "Mundane : Misc. Mundane : Discoveries"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 19.983514,
+    "lagna": 169.983514,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.095815,
+    "jd_ut": 2379313.340093,
+    "planets": {
+      "Sun": {
+        "longitude": 346.337899,
+        "sign_index": 11,
+        "degree_in_sign": 16.337899,
+        "is_retrograde": false,
+        "speed": 0.987367
+      },
+      "Moon": {
+        "longitude": 281.027856,
+        "sign_index": 9,
+        "degree_in_sign": 11.027856,
+        "is_retrograde": false,
+        "speed": 17.672235
+      },
+      "Mars": {
+        "longitude": 302.868298,
+        "sign_index": 10,
+        "degree_in_sign": 2.868298,
+        "is_retrograde": false,
+        "speed": 0.769302
+      },
+      "Mercury": {
+        "longitude": 322.731989,
+        "sign_index": 10,
+        "degree_in_sign": 22.731989,
+        "is_retrograde": false,
+        "speed": 0.221191
+      },
+      "Jupiter": {
+        "longitude": 125.560104,
+        "sign_index": 4,
+        "degree_in_sign": 5.560104,
+        "is_retrograde": true,
+        "speed": -0.074675
+      },
+      "Venus": {
+        "longitude": 349.089079,
+        "sign_index": 11,
+        "degree_in_sign": 19.089079,
+        "is_retrograde": false,
+        "speed": 1.241674
+      },
+      "Saturn": {
+        "longitude": 130.60327,
+        "sign_index": 4,
+        "degree_in_sign": 10.60327,
+        "is_retrograde": true,
+        "speed": -0.057087
+      },
+      "Rahu": {
+        "longitude": 328.895257,
+        "sign_index": 10,
+        "degree_in_sign": 28.895257,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 148.895257,
+        "sign_index": 4,
+        "degree_in_sign": 28.895257,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

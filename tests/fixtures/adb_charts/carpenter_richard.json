@@ -1,0 +1,117 @@
+{
+  "adb_id": 10342,
+  "name": "Carpenter, Richard",
+  "given_name": "Richard Carpenter",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432108.745139,
+    "year": 1946,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "00:53",
+    "time_type": "s",
+    "hour": 0.883333,
+    "time_unknown": false,
+    "place": "New Haven",
+    "country": "Connecticut",
+    "lat": 41.3,
+    "lon": -72.933333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpenter,_Richard",
+  "source_notes": "Steinbrecher quotes birth record.\\n",
+  "categories": [
+    "Family : Childhood : Sibling circumstances",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids more than 3",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Awards : Grammy",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 3.395606,
+    "lagna": 93.395606,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.113845,
+    "jd_ut": 2432108.745139,
+    "planets": {
+      "Sun": {
+        "longitude": 178.164762,
+        "sign_index": 5,
+        "degree_in_sign": 28.164762,
+        "is_retrograde": false,
+        "speed": 0.991173
+      },
+      "Moon": {
+        "longitude": 58.098767,
+        "sign_index": 1,
+        "degree_in_sign": 28.098767,
+        "is_retrograde": false,
+        "speed": 11.130055
+      },
+      "Mars": {
+        "longitude": 200.969148,
+        "sign_index": 6,
+        "degree_in_sign": 20.969148,
+        "is_retrograde": false,
+        "speed": 0.695347
+      },
+      "Mercury": {
+        "longitude": 197.64777,
+        "sign_index": 6,
+        "degree_in_sign": 17.64777,
+        "is_retrograde": false,
+        "speed": 1.412293
+      },
+      "Jupiter": {
+        "longitude": 191.060188,
+        "sign_index": 6,
+        "degree_in_sign": 11.060188,
+        "is_retrograde": false,
+        "speed": 0.21548
+      },
+      "Venus": {
+        "longitude": 216.387077,
+        "sign_index": 7,
+        "degree_in_sign": 6.387077,
+        "is_retrograde": false,
+        "speed": 0.435612
+      },
+      "Saturn": {
+        "longitude": 104.575903,
+        "sign_index": 3,
+        "degree_in_sign": 14.575903,
+        "is_retrograde": false,
+        "speed": 0.06402
+      },
+      "Rahu": {
+        "longitude": 51.154177,
+        "sign_index": 1,
+        "degree_in_sign": 21.154177,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 231.154177,
+        "sign_index": 7,
+        "degree_in_sign": 21.154177,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

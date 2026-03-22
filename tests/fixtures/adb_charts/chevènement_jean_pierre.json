@@ -1,0 +1,114 @@
+{
+  "adb_id": 44407,
+  "name": "Chevènement, Jean-Pierre",
+  "given_name": "Jean-Pierre Chevènement",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429332.458333,
+    "year": 1939,
+    "month": 3,
+    "day": 9,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Belfort",
+    "country": "France",
+    "lat": 47.633333,
+    "lon": 6.866667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sco",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevènement,_Jean-Pierre",
+  "source_notes": "Maison III (Cedra):  Suzanne Maurice quotes civil record in L'Astrologue #58\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Allergies",
+    "Diagnoses : Major Diseases : Heart disease/attack",
+    "Diagnoses : Body Part Problems : Surgery",
+    "Lifestyle : Social Life : Groups",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Candidate and lost",
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 4.351675,
+    "lagna": 184.351675,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.007694,
+    "jd_ut": 2429332.458333,
+    "planets": {
+      "Sun": {
+        "longitude": 325.470321,
+        "sign_index": 10,
+        "degree_in_sign": 25.470321,
+        "is_retrograde": false,
+        "speed": 0.99904
+      },
+      "Moon": {
+        "longitude": 201.843975,
+        "sign_index": 6,
+        "degree_in_sign": 21.843975,
+        "is_retrograde": false,
+        "speed": 11.851923
+      },
+      "Mars": {
+        "longitude": 240.536918,
+        "sign_index": 8,
+        "degree_in_sign": 0.536918,
+        "is_retrograde": false,
+        "speed": 0.5763
+      },
+      "Mercury": {
+        "longitude": 341.381914,
+        "sign_index": 11,
+        "degree_in_sign": 11.381914,
+        "is_retrograde": false,
+        "speed": 1.634362
+      },
+      "Jupiter": {
+        "longitude": 322.85682,
+        "sign_index": 10,
+        "degree_in_sign": 22.85682,
+        "is_retrograde": false,
+        "speed": 0.24174
+      },
+      "Venus": {
+        "longitude": 282.029547,
+        "sign_index": 9,
+        "degree_in_sign": 12.029547,
+        "is_retrograde": false,
+        "speed": 1.150734
+      },
+      "Saturn": {
+        "longitude": 353.95703,
+        "sign_index": 11,
+        "degree_in_sign": 23.95703,
+        "is_retrograde": false,
+        "speed": 0.116309
+      },
+      "Rahu": {
+        "longitude": 198.275353,
+        "sign_index": 6,
+        "degree_in_sign": 18.275353,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.275353,
+        "sign_index": 0,
+        "degree_in_sign": 18.275353,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

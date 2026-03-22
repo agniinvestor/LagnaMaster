@@ -1,0 +1,110 @@
+{
+  "adb_id": 81030,
+  "name": "Chamberland, Charles",
+  "given_name": "Charles Chamberland",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2397193.901387,
+    "year": 1851,
+    "month": 3,
+    "day": 12,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Chilly-le-Vignoble",
+    "country": "France",
+    "lat": 46.658333,
+    "lon": 5.500556
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chamberland,_Charles",
+  "source_notes": "Grazia Bordoni's Science file quotes Lescaut.\\n",
+  "categories": [
+    "Vocation : Science : Biology",
+    "Notable : Famous : Founder/ originator",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 3.496078,
+    "lagna": 33.496078,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.77913,
+    "jd_ut": 2397193.901387,
+    "planets": {
+      "Sun": {
+        "longitude": 329.473547,
+        "sign_index": 10,
+        "degree_in_sign": 29.473547,
+        "is_retrograde": false,
+        "speed": 0.996755
+      },
+      "Moon": {
+        "longitude": 78.940159,
+        "sign_index": 2,
+        "degree_in_sign": 18.940159,
+        "is_retrograde": false,
+        "speed": 17.196492
+      },
+      "Mars": {
+        "longitude": 303.543429,
+        "sign_index": 10,
+        "degree_in_sign": 3.543429,
+        "is_retrograde": false,
+        "speed": 0.781872
+      },
+      "Mercury": {
+        "longitude": 311.946651,
+        "sign_index": 10,
+        "degree_in_sign": 11.946651,
+        "is_retrograde": false,
+        "speed": 1.632454
+      },
+      "Jupiter": {
+        "longitude": 179.533983,
+        "sign_index": 5,
+        "degree_in_sign": 29.533983,
+        "is_retrograde": true,
+        "speed": -0.096209
+      },
+      "Venus": {
+        "longitude": 283.388904,
+        "sign_index": 9,
+        "degree_in_sign": 13.388904,
+        "is_retrograde": false,
+        "speed": 1.075181
+      },
+      "Saturn": {
+        "longitude": 358.128776,
+        "sign_index": 11,
+        "degree_in_sign": 28.128776,
+        "is_retrograde": false,
+        "speed": 0.116735
+      },
+      "Rahu": {
+        "longitude": 101.365375,
+        "sign_index": 3,
+        "degree_in_sign": 11.365375,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 281.365375,
+        "sign_index": 9,
+        "degree_in_sign": 11.365375,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

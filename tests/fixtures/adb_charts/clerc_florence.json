@@ -1,0 +1,108 @@
+{
+  "adb_id": 64196,
+  "name": "Clerc, Florence",
+  "given_name": "Florence Clerc",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433851.423611,
+    "year": 1951,
+    "month": 7,
+    "day": 23,
+    "calendar": "g",
+    "time": "23:10",
+    "time_type": "s",
+    "hour": 23.166667,
+    "time_unknown": false,
+    "place": "Houilles",
+    "country": "France",
+    "lat": 48.933333,
+    "lon": 2.183333
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clerc,_Florence",
+  "source_notes": "Didier Geslain archive, 'danseurs' pdf file, p. 38.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Dancer/ Teacher"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 25.53391,
+    "lagna": 325.53391,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.180479,
+    "jd_ut": 2433851.423611,
+    "planets": {
+      "Sun": {
+        "longitude": 97.04941,
+        "sign_index": 3,
+        "degree_in_sign": 7.04941,
+        "is_retrograde": false,
+        "speed": 0.954723
+      },
+      "Moon": {
+        "longitude": 345.289183,
+        "sign_index": 11,
+        "degree_in_sign": 15.289183,
+        "is_retrograde": false,
+        "speed": 13.350288
+      },
+      "Mars": {
+        "longitude": 80.141163,
+        "sign_index": 2,
+        "degree_in_sign": 20.141163,
+        "is_retrograde": false,
+        "speed": 0.661383
+      },
+      "Mercury": {
+        "longitude": 121.9252,
+        "sign_index": 4,
+        "degree_in_sign": 1.9252,
+        "is_retrograde": false,
+        "speed": 1.381405
+      },
+      "Jupiter": {
+        "longitude": 350.784495,
+        "sign_index": 11,
+        "degree_in_sign": 20.784495,
+        "is_retrograde": false,
+        "speed": 0.037117
+      },
+      "Venus": {
+        "longitude": 138.345602,
+        "sign_index": 4,
+        "degree_in_sign": 18.345602,
+        "is_retrograde": false,
+        "speed": 0.600786
+      },
+      "Saturn": {
+        "longitude": 154.850923,
+        "sign_index": 5,
+        "degree_in_sign": 4.850923,
+        "is_retrograde": false,
+        "speed": 0.08378
+      },
+      "Rahu": {
+        "longitude": 318.806054,
+        "sign_index": 10,
+        "degree_in_sign": 18.806054,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 138.806054,
+        "sign_index": 4,
+        "degree_in_sign": 18.806054,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

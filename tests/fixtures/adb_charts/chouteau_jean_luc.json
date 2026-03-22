@@ -1,0 +1,108 @@
+{
+  "adb_id": 70209,
+  "name": "Chouteau, Jean-Luc",
+  "given_name": "Jean-Luc Chouteau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437790.5625,
+    "year": 1962,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "s",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Le Lude",
+    "country": "France",
+    "lat": 47.65,
+    "lon": 0.15
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chouteau,_Jean-Luc",
+  "source_notes": "Didier Geslain archive, 'hippisme jockeys' pdf file, p. 53.\\n",
+  "categories": [
+    "Vocation : Sports : Race Horses"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 28.115149,
+    "lagna": 268.115149,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.331101,
+    "jd_ut": 2437790.5625,
+    "planets": {
+      "Sun": {
+        "longitude": 21.72696,
+        "sign_index": 0,
+        "degree_in_sign": 21.72696,
+        "is_retrograde": false,
+        "speed": 0.968614
+      },
+      "Moon": {
+        "longitude": 46.641024,
+        "sign_index": 1,
+        "degree_in_sign": 16.641024,
+        "is_retrograde": false,
+        "speed": 17.965711
+      },
+      "Mars": {
+        "longitude": 349.289989,
+        "sign_index": 11,
+        "degree_in_sign": 19.289989,
+        "is_retrograde": false,
+        "speed": 0.766603
+      },
+      "Mercury": {
+        "longitude": 41.164172,
+        "sign_index": 1,
+        "degree_in_sign": 11.164172,
+        "is_retrograde": false,
+        "speed": 1.510804
+      },
+      "Jupiter": {
+        "longitude": 314.515928,
+        "sign_index": 10,
+        "degree_in_sign": 14.515928,
+        "is_retrograde": false,
+        "speed": 0.156581
+      },
+      "Venus": {
+        "longitude": 46.024572,
+        "sign_index": 1,
+        "degree_in_sign": 16.024572,
+        "is_retrograde": false,
+        "speed": 1.216721
+      },
+      "Saturn": {
+        "longitude": 287.865786,
+        "sign_index": 9,
+        "degree_in_sign": 17.865786,
+        "is_retrograde": false,
+        "speed": 0.025723
+      },
+      "Rahu": {
+        "longitude": 110.062996,
+        "sign_index": 3,
+        "degree_in_sign": 20.062996,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 290.062996,
+        "sign_index": 9,
+        "degree_in_sign": 20.062996,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

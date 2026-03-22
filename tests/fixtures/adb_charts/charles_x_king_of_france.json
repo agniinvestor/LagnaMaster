@@ -1,0 +1,111 @@
+{
+  "adb_id": 47560,
+  "name": "Charles X, King of France",
+  "given_name": "King of France Charles X",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2363072.785741,
+    "year": 1757,
+    "month": 10,
+    "day": 9,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "l",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Versailles",
+    "country": "France",
+    "lat": 48.8,
+    "lon": 2.133333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charles_X,_King_of_France",
+  "source_notes": "Sy Scholfield quotes \"Charles X of France: His Life and Times\" by Vincent Woodrow Beach (Pruett, 1971), p. 2: \"In a letter written to her husband on October 9, 1757, the sister of the dauphine described the events surrounding the birth of the future king. The dauphine felt the first labor pains at 6:00 o'clock in the morning, and an hour later the Comte d'Artois was born.\"\\n\\nOriginal source notes for data of 9 October 1757, 6:30 PM, Versailles, rated C (Orig source not known): NN No.696. The date is given as NS and the time as LMT.\\nAndre Barbault's Traite Pratique de Astrologique gives 7:00 PM \"according to D'apres Barbier et La Gazette de France.\"\\n",
+  "categories": [
+    "Family : Childhood : Order of birth",
+    "Personal : Death : Unusual",
+    "Vocation : Science : Anthropology",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 13.076541,
+    "lagna": 163.076541,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.4753,
+    "jd_ut": 2363072.785741,
+    "planets": {
+      "Sun": {
+        "longitude": 175.670588,
+        "sign_index": 5,
+        "degree_in_sign": 25.670588,
+        "is_retrograde": false,
+        "speed": 0.9906
+      },
+      "Moon": {
+        "longitude": 131.329513,
+        "sign_index": 4,
+        "degree_in_sign": 11.329513,
+        "is_retrograde": false,
+        "speed": 8.958115
+      },
+      "Mars": {
+        "longitude": 98.287385,
+        "sign_index": 3,
+        "degree_in_sign": 8.287385,
+        "is_retrograde": false,
+        "speed": 0.532895
+      },
+      "Mercury": {
+        "longitude": 197.377268,
+        "sign_index": 6,
+        "degree_in_sign": 17.377268,
+        "is_retrograde": false,
+        "speed": 0.156686
+      },
+      "Jupiter": {
+        "longitude": 209.548219,
+        "sign_index": 6,
+        "degree_in_sign": 29.548219,
+        "is_retrograde": false,
+        "speed": 0.20131
+      },
+      "Venus": {
+        "longitude": 207.739924,
+        "sign_index": 6,
+        "degree_in_sign": 27.739924,
+        "is_retrograde": false,
+        "speed": 1.217993
+      },
+      "Saturn": {
+        "longitude": 295.092647,
+        "sign_index": 9,
+        "degree_in_sign": 25.092647,
+        "is_retrograde": true,
+        "speed": -0.017795
+      },
+      "Rahu": {
+        "longitude": 109.518331,
+        "sign_index": 3,
+        "degree_in_sign": 19.518331,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 289.518331,
+        "sign_index": 9,
+        "degree_in_sign": 19.518331,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

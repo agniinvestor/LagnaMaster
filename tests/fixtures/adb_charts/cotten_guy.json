@@ -1,0 +1,106 @@
+{
+  "adb_id": 79163,
+  "name": "Cotten, Guy",
+  "given_name": "Guy Cotten",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428456.125,
+    "year": 1936,
+    "month": 10,
+    "day": 14,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Brest",
+    "country": "France",
+    "lat": 48.4,
+    "lon": -4.483333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cotten,_Guy",
+  "source_notes": "Paddy de Jabrun quoted bc. Born exactly in St Yvi.\\n\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 23.919395,
+    "lagna": 263.919395,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.974188,
+    "jd_ut": 2428456.125,
+    "planets": {
+      "Sun": {
+        "longitude": 178.103117,
+        "sign_index": 5,
+        "degree_in_sign": 28.103117,
+        "is_retrograde": false,
+        "speed": 0.991695
+      },
+      "Moon": {
+        "longitude": 169.154137,
+        "sign_index": 5,
+        "degree_in_sign": 19.154137,
+        "is_retrograde": false,
+        "speed": 9.742221
+      },
+      "Mars": {
+        "longitude": 138.190653,
+        "sign_index": 4,
+        "degree_in_sign": 18.190653,
+        "is_retrograde": false,
+        "speed": 0.616092
+      },
+      "Mercury": {
+        "longitude": 160.221727,
+        "sign_index": 5,
+        "degree_in_sign": 10.221727,
+        "is_retrograde": false,
+        "speed": 0.759808
+      },
+      "Jupiter": {
+        "longitude": 237.352931,
+        "sign_index": 7,
+        "degree_in_sign": 27.352931,
+        "is_retrograde": false,
+        "speed": 0.164585
+      },
+      "Venus": {
+        "longitude": 206.49441,
+        "sign_index": 6,
+        "degree_in_sign": 26.49441,
+        "is_retrograde": false,
+        "speed": 1.22733
+      },
+      "Saturn": {
+        "longitude": 323.866986,
+        "sign_index": 10,
+        "degree_in_sign": 23.866986,
+        "is_retrograde": true,
+        "speed": -0.056309
+      },
+      "Rahu": {
+        "longitude": 244.714072,
+        "sign_index": 8,
+        "degree_in_sign": 4.714072,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 64.714072,
+        "sign_index": 2,
+        "degree_in_sign": 4.714072,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "adb_id": 89882,
+  "name": "Croil, George",
+  "given_name": "George Croil",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412620.0625,
+    "year": 1893,
+    "month": 6,
+    "day": 5,
+    "calendar": "g",
+    "time": "07:30",
+    "time_type": "s",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Milwaukee",
+    "country": "Wisconsin",
+    "lat": 43.033333,
+    "lon": -87.9
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Croil,_George",
+  "source_notes": "Sy Scholfield provided birth certificate (no. 3663).\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Vocation : Military : Honors",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service",
+    "Vocation : Travel : Pilot/ military",
+    "Notable : Awards : Public Service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 12.648633,
+    "lagna": 72.648633,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.368768,
+    "jd_ut": 2412620.0625,
+    "planets": {
+      "Sun": {
+        "longitude": 52.680041,
+        "sign_index": 1,
+        "degree_in_sign": 22.680041,
+        "is_retrograde": false,
+        "speed": 0.956442
+      },
+      "Moon": {
+        "longitude": 298.016932,
+        "sign_index": 9,
+        "degree_in_sign": 28.016932,
+        "is_retrograde": false,
+        "speed": 10.052942
+      },
+      "Mars": {
+        "longitude": 82.002052,
+        "sign_index": 2,
+        "degree_in_sign": 22.002052,
+        "is_retrograde": false,
+        "speed": 0.636769
+      },
+      "Mercury": {
+        "longitude": 53.132937,
+        "sign_index": 1,
+        "degree_in_sign": 23.132937,
+        "is_retrograde": false,
+        "speed": 2.201933
+      },
+      "Jupiter": {
+        "longitude": 24.56426,
+        "sign_index": 0,
+        "degree_in_sign": 24.56426,
+        "is_retrograde": false,
+        "speed": 0.223693
+      },
+      "Venus": {
+        "longitude": 61.8344,
+        "sign_index": 2,
+        "degree_in_sign": 1.8344,
+        "is_retrograde": false,
+        "speed": 1.227423
+      },
+      "Saturn": {
+        "longitude": 163.653807,
+        "sign_index": 5,
+        "degree_in_sign": 13.653807,
+        "is_retrograde": true,
+        "speed": -0.004238
+      },
+      "Rahu": {
+        "longitude": 3.900185,
+        "sign_index": 0,
+        "degree_in_sign": 3.900185,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 183.900185,
+        "sign_index": 6,
+        "degree_in_sign": 3.900185,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

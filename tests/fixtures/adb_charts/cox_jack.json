@@ -1,0 +1,112 @@
+{
+  "adb_id": 102047,
+  "name": "Cox, Jack",
+  "given_name": "Jack Cox",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422921.822917,
+    "year": 1921,
+    "month": 8,
+    "day": 20,
+    "calendar": "g",
+    "time": "01:45",
+    "time_type": "s",
+    "hour": 1.75,
+    "time_unknown": false,
+    "place": "Breckenridge",
+    "country": "Texas",
+    "lat": 32.75,
+    "lon": -98.9
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cox,_Jack",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. Place of birth recorded as Breckwalker, a former place \"located nine miles south of Breckenridge\" [https://www.tshaonline.org/handbook/entries/walker-breckenridge-stephens].\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Military : Military service",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 15.982922,
+    "lagna": 45.982922,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.762596,
+    "jd_ut": 2422921.822917,
+    "planets": {
+      "Sun": {
+        "longitude": 123.963884,
+        "sign_index": 4,
+        "degree_in_sign": 3.963884,
+        "is_retrograde": false,
+        "speed": 0.962615
+      },
+      "Moon": {
+        "longitude": 322.133854,
+        "sign_index": 10,
+        "degree_in_sign": 22.133854,
+        "is_retrograde": false,
+        "speed": 7.618203
+      },
+      "Mars": {
+        "longitude": 108.084611,
+        "sign_index": 3,
+        "degree_in_sign": 18.084611,
+        "is_retrograde": false,
+        "speed": 0.639955
+      },
+      "Mercury": {
+        "longitude": 120.728222,
+        "sign_index": 4,
+        "degree_in_sign": 0.728222,
+        "is_retrograde": false,
+        "speed": 2.016844
+      },
+      "Jupiter": {
+        "longitude": 149.441364,
+        "sign_index": 4,
+        "degree_in_sign": 29.441364,
+        "is_retrograde": false,
+        "speed": 0.204522
+      },
+      "Venus": {
+        "longitude": 83.80821,
+        "sign_index": 2,
+        "degree_in_sign": 23.80821,
+        "is_retrograde": false,
+        "speed": 1.144116
+      },
+      "Saturn": {
+        "longitude": 151.329549,
+        "sign_index": 5,
+        "degree_in_sign": 1.329549,
+        "is_retrograde": false,
+        "speed": 0.11507
+      },
+      "Rahu": {
+        "longitude": 177.988248,
+        "sign_index": 5,
+        "degree_in_sign": 27.988248,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 357.988248,
+        "sign_index": 11,
+        "degree_in_sign": 27.988248,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

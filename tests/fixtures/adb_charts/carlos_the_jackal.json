@@ -1,0 +1,116 @@
+{
+  "adb_id": 36471,
+  "name": "Carlos the Jackal",
+  "given_name": "Carlos the Jackal",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2433201.895833,
+    "year": 1949,
+    "month": 10,
+    "day": 12,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Caracas",
+    "country": "Venezuela",
+    "lat": 10.5,
+    "lon": -66.933333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlos_the_Jackal",
+  "source_notes": "Marc Penfield gave 12 noon and quoted the biography by John Follain, \"Jackel: The Compete Story of the Legendary Terrorist,\" Arcade publications, NY 1998: confirmed by LMR.\\natr: A forum user pointed out that the book says 'five o'clock in the morning'.\\n",
+  "categories": [
+    "Diagnoses : Psychological : Borderline Personality Disorder",
+    "Family : Childhood : Advantaged",
+    "Family : Childhood : Order of birth",
+    "Family : Childhood : Parents divorced",
+    "Passions : Criminal Perpetrator : Homicide serial",
+    "Passions : Criminal Perpetrator : Terrorist",
+    "Vocation : Politics : Activist/ political",
+    "Notable : Famous : Criminal cases",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 19.935879,
+    "lagna": 139.935879,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.155643,
+    "jd_ut": 2433201.895833,
+    "planets": {
+      "Sun": {
+        "longitude": 175.566049,
+        "sign_index": 5,
+        "degree_in_sign": 25.566049,
+        "is_retrograde": false,
+        "speed": 0.989671
+      },
+      "Moon": {
+        "longitude": 52.936908,
+        "sign_index": 1,
+        "degree_in_sign": 22.936908,
+        "is_retrograde": false,
+        "speed": 6.987528
+      },
+      "Mars": {
+        "longitude": 118.357964,
+        "sign_index": 3,
+        "degree_in_sign": 28.357964,
+        "is_retrograde": false,
+        "speed": 0.590039
+      },
+      "Mercury": {
+        "longitude": 160.805677,
+        "sign_index": 5,
+        "degree_in_sign": 10.805677,
+        "is_retrograde": true,
+        "speed": -0.078051
+      },
+      "Jupiter": {
+        "longitude": 270.075974,
+        "sign_index": 9,
+        "degree_in_sign": 0.075974,
+        "is_retrograde": false,
+        "speed": 0.074298
+      },
+      "Venus": {
+        "longitude": 219.102572,
+        "sign_index": 7,
+        "degree_in_sign": 9.102572,
+        "is_retrograde": false,
+        "speed": 1.145735
+      },
+      "Saturn": {
+        "longitude": 141.271642,
+        "sign_index": 4,
+        "degree_in_sign": 21.271642,
+        "is_retrograde": false,
+        "speed": 0.11163
+      },
+      "Rahu": {
+        "longitude": 353.225868,
+        "sign_index": 11,
+        "degree_in_sign": 23.225868,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 173.225868,
+        "sign_index": 5,
+        "degree_in_sign": 23.225868,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 59785,
+  "name": "Chula, Prince of Siam",
+  "given_name": "Prince of Siam Chula",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2418029.219398,
+    "year": 1908,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "23:58",
+    "time_type": "s",
+    "hour": 23.966667,
+    "time_unknown": false,
+    "place": "Bangkok",
+    "country": "Thailand",
+    "lat": 13.75,
+    "lon": 100.516667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chula,_Prince_of_Siam",
+  "source_notes": "Sy Scholfield quotes \"The twain have met: Or, an Eastern Prince Came West\" by Prince Chula (Foulis, 1957), p. 63: \"On Saturday, March 28, 1908, at 11.58 pm I was born.\"\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Historian",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Biographer",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 14.049145,
+    "lagna": 224.049145,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.57555,
+    "jd_ut": 2418029.219398,
+    "planets": {
+      "Sun": {
+        "longitude": 345.05571,
+        "sign_index": 11,
+        "degree_in_sign": 15.05571,
+        "is_retrograde": false,
+        "speed": 0.988471
+      },
+      "Moon": {
+        "longitude": 298.11083,
+        "sign_index": 9,
+        "degree_in_sign": 28.11083,
+        "is_retrograde": false,
+        "speed": 18.327607
+      },
+      "Mars": {
+        "longitude": 31.066575,
+        "sign_index": 1,
+        "degree_in_sign": 1.066575,
+        "is_retrograde": false,
+        "speed": 0.675331
+      },
+      "Mercury": {
+        "longitude": 317.317272,
+        "sign_index": 10,
+        "degree_in_sign": 17.317272,
+        "is_retrograde": false,
+        "speed": 1.053845
+      },
+      "Jupiter": {
+        "longitude": 100.998143,
+        "sign_index": 3,
+        "degree_in_sign": 10.998143,
+        "is_retrograde": true,
+        "speed": -0.005868
+      },
+      "Venus": {
+        "longitude": 28.440906,
+        "sign_index": 0,
+        "degree_in_sign": 28.440906,
+        "is_retrograde": false,
+        "speed": 1.116598
+      },
+      "Saturn": {
+        "longitude": 338.563338,
+        "sign_index": 11,
+        "degree_in_sign": 8.563338,
+        "is_retrograde": false,
+        "speed": 0.123988
+      },
+      "Rahu": {
+        "longitude": 77.257557,
+        "sign_index": 2,
+        "degree_in_sign": 17.257557,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 257.257557,
+        "sign_index": 8,
+        "degree_in_sign": 17.257557,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

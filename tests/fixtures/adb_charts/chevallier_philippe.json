@@ -1,0 +1,109 @@
+{
+  "adb_id": 63917,
+  "name": "Chevallier, Philippe",
+  "given_name": "Philippe Chevallier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435483.597222,
+    "year": 1956,
+    "month": 1,
+    "day": 11,
+    "calendar": "g",
+    "time": "03:20",
+    "time_type": "s",
+    "hour": 3.333333,
+    "time_unknown": false,
+    "place": "Redon",
+    "country": "France",
+    "lat": 47.65,
+    "lon": -2.083333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevallier,_Philippe",
+  "source_notes": "Didier Geslain archive, 'acteurs et comédiens' pdf file, p. 56.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 22.07846,
+    "lagna": 172.07846,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.242888,
+    "jd_ut": 2435483.597222,
+    "planets": {
+      "Sun": {
+        "longitude": 266.58729,
+        "sign_index": 8,
+        "degree_in_sign": 26.58729,
+        "is_retrograde": false,
+        "speed": 1.019347
+      },
+      "Moon": {
+        "longitude": 245.176906,
+        "sign_index": 8,
+        "degree_in_sign": 5.176906,
+        "is_retrograde": false,
+        "speed": 13.883412
+      },
+      "Mars": {
+        "longitude": 214.784501,
+        "sign_index": 7,
+        "degree_in_sign": 4.784501,
+        "is_retrograde": false,
+        "speed": 0.654555
+      },
+      "Mercury": {
+        "longitude": 285.575811,
+        "sign_index": 9,
+        "degree_in_sign": 15.575811,
+        "is_retrograde": false,
+        "speed": 1.091161
+      },
+      "Jupiter": {
+        "longitude": 127.343152,
+        "sign_index": 4,
+        "degree_in_sign": 7.343152,
+        "is_retrograde": true,
+        "speed": -0.075074
+      },
+      "Venus": {
+        "longitude": 298.762782,
+        "sign_index": 9,
+        "degree_in_sign": 28.762782,
+        "is_retrograde": false,
+        "speed": 1.231089
+      },
+      "Saturn": {
+        "longitude": 216.601738,
+        "sign_index": 7,
+        "degree_in_sign": 6.601738,
+        "is_retrograde": false,
+        "speed": 0.090193
+      },
+      "Rahu": {
+        "longitude": 232.313818,
+        "sign_index": 7,
+        "degree_in_sign": 22.313818,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 52.313818,
+        "sign_index": 1,
+        "degree_in_sign": 22.313818,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

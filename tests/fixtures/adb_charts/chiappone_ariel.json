@@ -1,0 +1,108 @@
+{
+  "adb_id": 53736,
+  "name": "Chiappone, Ariel",
+  "given_name": "Ariel Chiappone",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2426650.354167,
+    "year": 1931,
+    "month": 11,
+    "day": 4,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "s",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Rochester",
+    "country": "New York",
+    "lat": 43.15,
+    "lon": -77.616667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chiappone,_Ariel",
+  "source_notes": "Steinbrecher collection: Steinbrecher quotes her\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 19.697758,
+    "lagna": 319.697758,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.905147,
+    "jd_ut": 2426650.354167,
+    "planets": {
+      "Sun": {
+        "longitude": 198.5552,
+        "sign_index": 6,
+        "degree_in_sign": 18.5552,
+        "is_retrograde": false,
+        "speed": 1.002549
+      },
+      "Moon": {
+        "longitude": 128.162576,
+        "sign_index": 4,
+        "degree_in_sign": 8.162576,
+        "is_retrograde": false,
+        "speed": 16.445038
+      },
+      "Mars": {
+        "longitude": 220.934808,
+        "sign_index": 7,
+        "degree_in_sign": 10.934808,
+        "is_retrograde": false,
+        "speed": 0.724223
+      },
+      "Mercury": {
+        "longitude": 208.989402,
+        "sign_index": 6,
+        "degree_in_sign": 28.989402,
+        "is_retrograde": false,
+        "speed": 1.537705
+      },
+      "Jupiter": {
+        "longitude": 117.837816,
+        "sign_index": 3,
+        "degree_in_sign": 27.837816,
+        "is_retrograde": false,
+        "speed": 0.104269
+      },
+      "Venus": {
+        "longitude": 213.556252,
+        "sign_index": 7,
+        "degree_in_sign": 3.556252,
+        "is_retrograde": false,
+        "speed": 1.248451
+      },
+      "Saturn": {
+        "longitude": 265.296528,
+        "sign_index": 8,
+        "degree_in_sign": 25.296528,
+        "is_retrograde": false,
+        "speed": 0.068151
+      },
+      "Rahu": {
+        "longitude": 340.405614,
+        "sign_index": 11,
+        "degree_in_sign": 10.405614,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 160.405614,
+        "sign_index": 5,
+        "degree_in_sign": 10.405614,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

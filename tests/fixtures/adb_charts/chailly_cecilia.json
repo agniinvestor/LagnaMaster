@@ -1,0 +1,110 @@
+{
+  "adb_id": 59080,
+  "name": "Chailly, Cecilia",
+  "given_name": "Cecilia Chailly",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436966.875,
+    "year": 1960,
+    "month": 2,
+    "day": 2,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Milano",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chailly,_Cecilia",
+  "source_notes": "from Bordoni database\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 24.58577,
+    "lagna": 324.58577,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.299605,
+    "jd_ut": 2436966.875,
+    "planets": {
+      "Sun": {
+        "longitude": 289.232293,
+        "sign_index": 9,
+        "degree_in_sign": 19.232293,
+        "is_retrograde": false,
+        "speed": 1.014927
+      },
+      "Moon": {
+        "longitude": 354.42822,
+        "sign_index": 11,
+        "degree_in_sign": 24.42822,
+        "is_retrograde": false,
+        "speed": 13.517265
+      },
+      "Mars": {
+        "longitude": 260.97464,
+        "sign_index": 8,
+        "degree_in_sign": 20.97464,
+        "is_retrograde": false,
+        "speed": 0.75051
+      },
+      "Mercury": {
+        "longitude": 294.093105,
+        "sign_index": 9,
+        "degree_in_sign": 24.093105,
+        "is_retrograde": false,
+        "speed": 1.769048
+      },
+      "Jupiter": {
+        "longitude": 242.078967,
+        "sign_index": 8,
+        "degree_in_sign": 2.078967,
+        "is_retrograde": false,
+        "speed": 0.18714
+      },
+      "Venus": {
+        "longitude": 254.239858,
+        "sign_index": 8,
+        "degree_in_sign": 14.239858,
+        "is_retrograde": false,
+        "speed": 1.222104
+      },
+      "Saturn": {
+        "longitude": 259.873359,
+        "sign_index": 8,
+        "degree_in_sign": 19.873359,
+        "is_retrograde": false,
+        "speed": 0.108039
+      },
+      "Rahu": {
+        "longitude": 153.711884,
+        "sign_index": 5,
+        "degree_in_sign": 3.711884,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 333.711884,
+        "sign_index": 11,
+        "degree_in_sign": 3.711884,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

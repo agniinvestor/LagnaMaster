@@ -1,0 +1,109 @@
+{
+  "adb_id": 69596,
+  "name": "Cherdieu, Gilles",
+  "given_name": "Gilles Cherdieu",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440409.697917,
+    "year": 1969,
+    "month": 7,
+    "day": 7,
+    "calendar": "g",
+    "time": "00:45",
+    "time_type": "s",
+    "hour": 0.75,
+    "time_unknown": false,
+    "place": "Pointe a Pitre",
+    "country": "Guadeloupe",
+    "lat": 16.233333,
+    "lon": -61.533333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cherdieu,_Gilles",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'sports divers' pdf file, p. 35.\\n",
+  "categories": [
+    "Vocation : Sports : Martial arts",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 13.344051,
+    "lagna": 343.344051,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.431255,
+    "jd_ut": 2440409.697917,
+    "planets": {
+      "Sun": {
+        "longitude": 81.457918,
+        "sign_index": 2,
+        "degree_in_sign": 21.457918,
+        "is_retrograde": false,
+        "speed": 0.953394
+      },
+      "Moon": {
+        "longitude": 359.867566,
+        "sign_index": 11,
+        "degree_in_sign": 29.867566,
+        "is_retrograde": false,
+        "speed": 12.787023
+      },
+      "Mars": {
+        "longitude": 218.274667,
+        "sign_index": 7,
+        "degree_in_sign": 8.274667,
+        "is_retrograde": true,
+        "speed": -0.014724
+      },
+      "Mercury": {
+        "longitude": 64.834199,
+        "sign_index": 2,
+        "degree_in_sign": 4.834199,
+        "is_retrograde": false,
+        "speed": 1.767413
+      },
+      "Jupiter": {
+        "longitude": 155.498585,
+        "sign_index": 5,
+        "degree_in_sign": 5.498585,
+        "is_retrograde": false,
+        "speed": 0.119104
+      },
+      "Venus": {
+        "longitude": 36.862698,
+        "sign_index": 1,
+        "degree_in_sign": 6.862698,
+        "is_retrograde": false,
+        "speed": 1.056898
+      },
+      "Saturn": {
+        "longitude": 13.806019,
+        "sign_index": 0,
+        "degree_in_sign": 13.806019,
+        "is_retrograde": false,
+        "speed": 0.072651
+      },
+      "Rahu": {
+        "longitude": 331.269653,
+        "sign_index": 11,
+        "degree_in_sign": 1.269653,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 151.269653,
+        "sign_index": 5,
+        "degree_in_sign": 1.269653,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 8785,
+  "name": "Capra, Thomas",
+  "given_name": "Thomas Capra",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2430038.640278,
+    "year": 1941,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "19:22",
+    "time_type": "s",
+    "hour": 19.366667,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capra,_Thomas",
+  "source_notes": "B.C. in hand from the Wilsons\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 1.320674,
+    "lagna": 121.320674,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.034694,
+    "jd_ut": 2430038.640278,
+    "planets": {
+      "Sun": {
+        "longitude": 301.011409,
+        "sign_index": 10,
+        "degree_in_sign": 1.011409,
+        "is_retrograde": false,
+        "speed": 1.010226
+      },
+      "Moon": {
+        "longitude": 136.93372,
+        "sign_index": 4,
+        "degree_in_sign": 16.93372,
+        "is_retrograde": false,
+        "speed": 13.905257
+      },
+      "Mars": {
+        "longitude": 243.648859,
+        "sign_index": 8,
+        "degree_in_sign": 3.648859,
+        "is_retrograde": false,
+        "speed": 0.684249
+      },
+      "Mercury": {
+        "longitude": 318.842896,
+        "sign_index": 10,
+        "degree_in_sign": 18.842896,
+        "is_retrograde": false,
+        "speed": 0.708378
+      },
+      "Jupiter": {
+        "longitude": 15.794079,
+        "sign_index": 0,
+        "degree_in_sign": 15.794079,
+        "is_retrograde": false,
+        "speed": 0.134667
+      },
+      "Venus": {
+        "longitude": 284.747494,
+        "sign_index": 9,
+        "degree_in_sign": 14.747494,
+        "is_retrograde": false,
+        "speed": 1.248768
+      },
+      "Saturn": {
+        "longitude": 15.952401,
+        "sign_index": 0,
+        "degree_in_sign": 15.952401,
+        "is_retrograde": false,
+        "speed": 0.061389
+      },
+      "Rahu": {
+        "longitude": 160.853311,
+        "sign_index": 5,
+        "degree_in_sign": 10.853311,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 340.853311,
+        "sign_index": 11,
+        "degree_in_sign": 10.853311,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

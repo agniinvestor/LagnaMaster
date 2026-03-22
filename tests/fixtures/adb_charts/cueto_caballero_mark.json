@@ -1,0 +1,108 @@
+{
+  "adb_id": 70838,
+  "name": "Cueto Caballero, Mark",
+  "given_name": "Mark Cueto Caballero",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435944.96875,
+    "year": 1957,
+    "month": 4,
+    "day": 16,
+    "calendar": "g",
+    "time": "06:15",
+    "time_type": "s",
+    "hour": 6.25,
+    "time_unknown": false,
+    "place": "Lima",
+    "country": "Peru",
+    "lat": -12.05,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cueto_Caballero,_Mark",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Historian"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 9.24175,
+    "lagna": 339.24175,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.26053,
+    "jd_ut": 2435944.96875,
+    "planets": {
+      "Sun": {
+        "longitude": 2.933268,
+        "sign_index": 0,
+        "degree_in_sign": 2.933268,
+        "is_retrograde": false,
+        "speed": 0.977661
+      },
+      "Moon": {
+        "longitude": 207.699581,
+        "sign_index": 6,
+        "degree_in_sign": 27.699581,
+        "is_retrograde": false,
+        "speed": 11.112785
+      },
+      "Mars": {
+        "longitude": 55.323108,
+        "sign_index": 1,
+        "degree_in_sign": 25.323108,
+        "is_retrograde": false,
+        "speed": 0.628313
+      },
+      "Mercury": {
+        "longitude": 22.424002,
+        "sign_index": 0,
+        "degree_in_sign": 22.424002,
+        "is_retrograde": false,
+        "speed": 0.862371
+      },
+      "Jupiter": {
+        "longitude": 150.143222,
+        "sign_index": 5,
+        "degree_in_sign": 0.143222,
+        "is_retrograde": true,
+        "speed": -0.092475
+      },
+      "Venus": {
+        "longitude": 3.425988,
+        "sign_index": 0,
+        "degree_in_sign": 3.425988,
+        "is_retrograde": false,
+        "speed": 1.237195
+      },
+      "Saturn": {
+        "longitude": 230.596838,
+        "sign_index": 7,
+        "degree_in_sign": 20.596838,
+        "is_retrograde": true,
+        "speed": -0.037163
+      },
+      "Rahu": {
+        "longitude": 207.864793,
+        "sign_index": 6,
+        "degree_in_sign": 27.864793,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 27.864793,
+        "sign_index": 0,
+        "degree_in_sign": 27.864793,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

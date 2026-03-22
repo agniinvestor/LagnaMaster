@@ -1,0 +1,110 @@
+{
+  "adb_id": 59315,
+  "name": "Cournos, John",
+  "given_name": "John Cournos",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2408145.670139,
+    "year": 1881,
+    "month": 3,
+    "day": 6,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Zhitomir",
+    "country": "Ukraine",
+    "lat": 50.266667,
+    "lon": 28.666667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cournos,_John",
+  "source_notes": "Sy Scholfield quotes \"Autobiography\" by John Cournos (G. P. Putnam's Sons, 1935), p. 3: \"I was born in Zhitomir, Russia, at six o'clock in the morning, on the sixth day of the third month, in the year 1881. . . . By the Russian calendar, however, I was born on February 22.\"\\n",
+  "categories": [
+    "Vocation : Writers : Critic",
+    "Vocation : Writers : Poet",
+    "Vocation : Writers : Translator"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 11.12697,
+    "lagna": 281.12697,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.197731,
+    "jd_ut": 2408145.670139,
+    "planets": {
+      "Sun": {
+        "longitude": 323.555768,
+        "sign_index": 10,
+        "degree_in_sign": 23.555768,
+        "is_retrograde": false,
+        "speed": 1.000273
+      },
+      "Moon": {
+        "longitude": 34.967333,
+        "sign_index": 1,
+        "degree_in_sign": 4.967333,
+        "is_retrograde": false,
+        "speed": 15.850775
+      },
+      "Mars": {
+        "longitude": 286.054917,
+        "sign_index": 9,
+        "degree_in_sign": 16.054917,
+        "is_retrograde": false,
+        "speed": 0.765039
+      },
+      "Mercury": {
+        "longitude": 333.018498,
+        "sign_index": 11,
+        "degree_in_sign": 3.018498,
+        "is_retrograde": true,
+        "speed": -0.582632
+      },
+      "Jupiter": {
+        "longitude": 359.307879,
+        "sign_index": 11,
+        "degree_in_sign": 29.307879,
+        "is_retrograde": false,
+        "speed": 0.217902
+      },
+      "Venus": {
+        "longitude": 9.369571,
+        "sign_index": 0,
+        "degree_in_sign": 9.369571,
+        "is_retrograde": false,
+        "speed": 0.884624
+      },
+      "Saturn": {
+        "longitude": 4.182151,
+        "sign_index": 0,
+        "degree_in_sign": 4.182151,
+        "is_retrograde": false,
+        "speed": 0.106965
+      },
+      "Rahu": {
+        "longitude": 241.00772,
+        "sign_index": 8,
+        "degree_in_sign": 1.00772,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 61.00772,
+        "sign_index": 2,
+        "degree_in_sign": 1.00772,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "adb_id": 25401,
+  "name": "Capra, Frank",
+  "given_name": "Frank Capra",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414062.541667,
+    "year": 1897,
+    "month": 5,
+    "day": 18,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Bisacquino",
+    "country": "Italy",
+    "lat": 37.7,
+    "lon": 13.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capra,_Frank",
+  "source_notes": "B.C. in hand from Bordoni\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Stroke",
+    "Diagnoses : Psychological : Depression",
+    "Family : Childhood : Disadvantaged",
+    "Family : Childhood : Family large",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Foster, Step, or Adopted Kids",
+    "Family : Parenting : Kids 1-3",
+    "Lifestyle : Financial : Gain - Financial success in field",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Engineer : Chemical",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director",
+    "Vocation : Military : Military service",
+    "Vocation : Writers : Autobiographer",
+    "Vocation : Writers : Playwright/ script",
+    "Notable : Awards : Oscar",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 5.712305,
+    "lagna": 305.712305,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.42391,
+    "jd_ut": 2414062.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 34.888405,
+        "sign_index": 1,
+        "degree_in_sign": 4.888405,
+        "is_retrograde": false,
+        "speed": 0.961925
+      },
+      "Moon": {
+        "longitude": 235.708782,
+        "sign_index": 7,
+        "degree_in_sign": 25.708782,
+        "is_retrograde": false,
+        "speed": 10.084721
+      },
+      "Mars": {
+        "longitude": 97.31783,
+        "sign_index": 3,
+        "degree_in_sign": 7.31783,
+        "is_retrograde": false,
+        "speed": 0.563426
+      },
+      "Mercury": {
+        "longitude": 39.837896,
+        "sign_index": 1,
+        "degree_in_sign": 9.837896,
+        "is_retrograde": true,
+        "speed": -0.512246
+      },
+      "Jupiter": {
+        "longitude": 128.50424,
+        "sign_index": 4,
+        "degree_in_sign": 8.50424,
+        "is_retrograde": false,
+        "speed": 0.063925
+      },
+      "Venus": {
+        "longitude": 8.131256,
+        "sign_index": 0,
+        "degree_in_sign": 8.131256,
+        "is_retrograde": true,
+        "speed": -0.081791
+      },
+      "Saturn": {
+        "longitude": 215.059633,
+        "sign_index": 7,
+        "degree_in_sign": 5.059633,
+        "is_retrograde": true,
+        "speed": -0.074657
+      },
+      "Rahu": {
+        "longitude": 287.460167,
+        "sign_index": 9,
+        "degree_in_sign": 17.460167,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 107.460167,
+        "sign_index": 3,
+        "degree_in_sign": 17.460167,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 64978,
+  "name": "Chaplin, François",
+  "given_name": "François Chaplin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438377.572917,
+    "year": 1963,
+    "month": 12,
+    "day": 14,
+    "calendar": "g",
+    "time": "02:45",
+    "time_type": "s",
+    "hour": 2.75,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaplin,_François",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 119.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 28.28438,
+    "lagna": 148.28438,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.353548,
+    "jd_ut": 2438377.572917,
+    "planets": {
+      "Sun": {
+        "longitude": 237.985032,
+        "sign_index": 7,
+        "degree_in_sign": 27.985032,
+        "is_retrograde": false,
+        "speed": 1.017361
+      },
+      "Moon": {
+        "longitude": 216.6608,
+        "sign_index": 7,
+        "degree_in_sign": 6.6608,
+        "is_retrograde": false,
+        "speed": 14.123487
+      },
+      "Mars": {
+        "longitude": 253.268755,
+        "sign_index": 8,
+        "degree_in_sign": 13.268755,
+        "is_retrograde": false,
+        "speed": 0.76456
+      },
+      "Mercury": {
+        "longitude": 257.561302,
+        "sign_index": 8,
+        "degree_in_sign": 17.561302,
+        "is_retrograde": false,
+        "speed": 1.281358
+      },
+      "Jupiter": {
+        "longitude": 346.318435,
+        "sign_index": 11,
+        "degree_in_sign": 16.318435,
+        "is_retrograde": false,
+        "speed": 0.029876
+      },
+      "Venus": {
+        "longitude": 264.59766,
+        "sign_index": 8,
+        "degree_in_sign": 24.59766,
+        "is_retrograde": false,
+        "speed": 1.24215
+      },
+      "Saturn": {
+        "longitude": 295.417718,
+        "sign_index": 9,
+        "degree_in_sign": 25.417718,
+        "is_retrograde": false,
+        "speed": 0.082178
+      },
+      "Rahu": {
+        "longitude": 78.956112,
+        "sign_index": 2,
+        "degree_in_sign": 18.956112,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 258.956112,
+        "sign_index": 8,
+        "degree_in_sign": 18.956112,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

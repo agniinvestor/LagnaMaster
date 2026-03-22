@@ -1,0 +1,108 @@
+{
+  "adb_id": 59146,
+  "name": "Coquerel, Flora",
+  "given_name": "Flora Coquerel",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2449456.815278,
+    "year": 1994,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "09:34",
+    "time_type": "d",
+    "hour": 9.566667,
+    "time_unknown": false,
+    "place": "Mont St.Aignan",
+    "country": "France",
+    "lat": 49.466667,
+    "lon": 1.083333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "tau",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coquerel,_Flora",
+  "source_notes": "Marc Brun circular of 16 Dec 2013, quoting acte EC n°1109 \\n",
+  "categories": [
+    "Vocation : Beauty : Beauty Queen/ King"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 29.882372,
+    "lagna": 29.882372,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.777231,
+    "jd_ut": 2449456.815278,
+    "planets": {
+      "Sun": {
+        "longitude": 0.349241,
+        "sign_index": 0,
+        "degree_in_sign": 0.349241,
+        "is_retrograde": false,
+        "speed": 0.979851
+      },
+      "Moon": {
+        "longitude": 36.527807,
+        "sign_index": 1,
+        "degree_in_sign": 6.527807,
+        "is_retrograde": false,
+        "speed": 12.859869
+      },
+      "Mars": {
+        "longitude": 335.880169,
+        "sign_index": 11,
+        "degree_in_sign": 5.880169,
+        "is_retrograde": false,
+        "speed": 0.77762
+      },
+      "Mercury": {
+        "longitude": 344.168314,
+        "sign_index": 11,
+        "degree_in_sign": 14.168314,
+        "is_retrograde": false,
+        "speed": 1.7769
+      },
+      "Jupiter": {
+        "longitude": 197.991079,
+        "sign_index": 6,
+        "degree_in_sign": 17.991079,
+        "is_retrograde": true,
+        "speed": -0.116044
+      },
+      "Venus": {
+        "longitude": 21.60687,
+        "sign_index": 0,
+        "degree_in_sign": 21.60687,
+        "is_retrograde": false,
+        "speed": 1.226552
+      },
+      "Saturn": {
+        "longitude": 314.915229,
+        "sign_index": 10,
+        "degree_in_sign": 14.915229,
+        "is_retrograde": false,
+        "speed": 0.09721
+      },
+      "Rahu": {
+        "longitude": 211.844539,
+        "sign_index": 7,
+        "degree_in_sign": 1.844539,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 31.844539,
+        "sign_index": 1,
+        "degree_in_sign": 1.844539,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 3728,
+  "name": "Champion, Maude",
+  "given_name": "Maude Champion",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2413951.020833,
+    "year": 1897,
+    "month": 1,
+    "day": 26,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Emporia",
+    "country": "USA",
+    "lat": 38.4,
+    "lon": -96.183333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Champion,_Maude",
+  "source_notes": "Sabian Symbols No.188\\n",
+  "categories": [
+    "Vocation : Business : Top executive",
+    "Vocation : Business/Marketing : Product Marketing",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 2.054214,
+    "lagna": 242.054214,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.419647,
+    "jd_ut": 2413951.020833,
+    "planets": {
+      "Sun": {
+        "longitude": 284.455482,
+        "sign_index": 9,
+        "degree_in_sign": 14.455482,
+        "is_retrograde": false,
+        "speed": 1.016073
+      },
+      "Moon": {
+        "longitude": 203.748866,
+        "sign_index": 6,
+        "degree_in_sign": 23.748866,
+        "is_retrograde": false,
+        "speed": 9.662838
+      },
+      "Mars": {
+        "longitude": 49.772969,
+        "sign_index": 1,
+        "degree_in_sign": 19.772969,
+        "is_retrograde": false,
+        "speed": 0.12035
+      },
+      "Mercury": {
+        "longitude": 275.708692,
+        "sign_index": 9,
+        "degree_in_sign": 5.708692,
+        "is_retrograde": true,
+        "speed": -1.068289
+      },
+      "Jupiter": {
+        "longitude": 136.193206,
+        "sign_index": 4,
+        "degree_in_sign": 16.193206,
+        "is_retrograde": true,
+        "speed": -0.095726
+      },
+      "Venus": {
+        "longitude": 329.959531,
+        "sign_index": 10,
+        "degree_in_sign": 29.959531,
+        "is_retrograde": false,
+        "speed": 1.115263
+      },
+      "Saturn": {
+        "longitude": 216.865468,
+        "sign_index": 7,
+        "degree_in_sign": 6.865468,
+        "is_retrograde": false,
+        "speed": 0.067465
+      },
+      "Rahu": {
+        "longitude": 293.369892,
+        "sign_index": 9,
+        "degree_in_sign": 23.369892,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 113.369892,
+        "sign_index": 3,
+        "degree_in_sign": 23.369892,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

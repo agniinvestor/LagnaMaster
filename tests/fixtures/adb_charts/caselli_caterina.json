@@ -1,0 +1,110 @@
+{
+  "adb_id": 55216,
+  "name": "Caselli, Caterina",
+  "given_name": "Caterina Caselli",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431920.916667,
+    "year": 1946,
+    "month": 4,
+    "day": 10,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "d",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Modena",
+    "country": "Italy",
+    "lat": 44.666667,
+    "lon": 10.916667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caselli,_Caterina",
+  "source_notes": "from Grazia Bordoni\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Vocation : Entertain/Business : Entertain Producer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 4.422722,
+    "lagna": 64.422722,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.106664,
+    "jd_ut": 2431920.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 356.827917,
+        "sign_index": 11,
+        "degree_in_sign": 26.827917,
+        "is_retrograde": false,
+        "speed": 0.981342
+      },
+      "Moon": {
+        "longitude": 107.252908,
+        "sign_index": 3,
+        "degree_in_sign": 17.252908,
+        "is_retrograde": false,
+        "speed": 15.794463
+      },
+      "Mars": {
+        "longitude": 91.760069,
+        "sign_index": 3,
+        "degree_in_sign": 1.760069,
+        "is_retrograde": false,
+        "speed": 0.388546
+      },
+      "Mercury": {
+        "longitude": 334.600865,
+        "sign_index": 11,
+        "degree_in_sign": 4.600865,
+        "is_retrograde": false,
+        "speed": 0.122243
+      },
+      "Jupiter": {
+        "longitude": 179.717362,
+        "sign_index": 5,
+        "degree_in_sign": 29.717362,
+        "is_retrograde": true,
+        "speed": -0.127912
+      },
+      "Venus": {
+        "longitude": 13.52918,
+        "sign_index": 0,
+        "degree_in_sign": 13.52918,
+        "is_retrograde": false,
+        "speed": 1.232319
+      },
+      "Saturn": {
+        "longitude": 85.253881,
+        "sign_index": 2,
+        "degree_in_sign": 25.253881,
+        "is_retrograde": false,
+        "speed": 0.038128
+      },
+      "Rahu": {
+        "longitude": 61.107596,
+        "sign_index": 2,
+        "degree_in_sign": 1.107596,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 241.107596,
+        "sign_index": 8,
+        "degree_in_sign": 1.107596,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 63439,
+  "name": "Clay, Philippe",
+  "given_name": "Philippe Clay",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424946.559028,
+    "year": 1927,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "01:25",
+    "time_type": "s",
+    "hour": 1.416667,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "tau",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clay,_Philippe",
+  "source_notes": "Didier Geslain archive, 'chanteurs' pdf file, p. 51.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Mime",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 25.497616,
+    "lagna": 205.497616,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.840006,
+    "jd_ut": 2424946.559028,
+    "planets": {
+      "Sun": {
+        "longitude": 322.647613,
+        "sign_index": 10,
+        "degree_in_sign": 22.647613,
+        "is_retrograde": false,
+        "speed": 1.001027
+      },
+      "Moon": {
+        "longitude": 8.048558,
+        "sign_index": 0,
+        "degree_in_sign": 8.048558,
+        "is_retrograde": false,
+        "speed": 18.120267
+      },
+      "Mars": {
+        "longitude": 44.036091,
+        "sign_index": 1,
+        "degree_in_sign": 14.036091,
+        "is_retrograde": false,
+        "speed": 0.539499
+      },
+      "Mercury": {
+        "longitude": 334.107987,
+        "sign_index": 11,
+        "degree_in_sign": 4.107987,
+        "is_retrograde": true,
+        "speed": -0.407667
+      },
+      "Jupiter": {
+        "longitude": 318.381177,
+        "sign_index": 10,
+        "degree_in_sign": 18.381177,
+        "is_retrograde": false,
+        "speed": 0.241177
+      },
+      "Venus": {
+        "longitude": 347.672994,
+        "sign_index": 11,
+        "degree_in_sign": 17.672994,
+        "is_retrograde": false,
+        "speed": 1.232552
+      },
+      "Saturn": {
+        "longitude": 224.730205,
+        "sign_index": 7,
+        "degree_in_sign": 14.730205,
+        "is_retrograde": false,
+        "speed": 0.018487
+      },
+      "Rahu": {
+        "longitude": 70.693261,
+        "sign_index": 2,
+        "degree_in_sign": 10.693261,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 250.693261,
+        "sign_index": 8,
+        "degree_in_sign": 10.693261,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

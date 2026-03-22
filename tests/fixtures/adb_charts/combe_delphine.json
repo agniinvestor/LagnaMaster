@@ -1,0 +1,108 @@
+{
+  "adb_id": 69414,
+  "name": "Combe, Delphine",
+  "given_name": "Delphine Combe",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442387.576389,
+    "year": 1974,
+    "month": 12,
+    "day": 6,
+    "calendar": "g",
+    "time": "02:50",
+    "time_type": "s",
+    "hour": 2.833333,
+    "time_unknown": false,
+    "place": "Aubenas",
+    "country": "France",
+    "lat": 44.616667,
+    "lon": 4.383333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Combe,_Delphine",
+  "source_notes": "Didier Geslain archive, 'sport athlétisme' pdf file, p. 29.\\n",
+  "categories": [
+    "Vocation : Sports : Track and Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 25.458085,
+    "lagna": 145.458085,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.506889,
+    "jd_ut": 2442387.576389,
+    "planets": {
+      "Sun": {
+        "longitude": 230.040217,
+        "sign_index": 7,
+        "degree_in_sign": 20.040217,
+        "is_retrograde": false,
+        "speed": 1.014949
+      },
+      "Moon": {
+        "longitude": 136.252403,
+        "sign_index": 4,
+        "degree_in_sign": 16.252403,
+        "is_retrograde": false,
+        "speed": 11.719216
+      },
+      "Mars": {
+        "longitude": 213.093504,
+        "sign_index": 7,
+        "degree_in_sign": 3.093504,
+        "is_retrograde": false,
+        "speed": 0.699154
+      },
+      "Mercury": {
+        "longitude": 222.447291,
+        "sign_index": 7,
+        "degree_in_sign": 12.447291,
+        "is_retrograde": false,
+        "speed": 1.562817
+      },
+      "Jupiter": {
+        "longitude": 316.230268,
+        "sign_index": 10,
+        "degree_in_sign": 16.230268,
+        "is_retrograde": false,
+        "speed": 0.10434
+      },
+      "Venus": {
+        "longitude": 237.313972,
+        "sign_index": 7,
+        "degree_in_sign": 27.313972,
+        "is_retrograde": false,
+        "speed": 1.25625
+      },
+      "Saturn": {
+        "longitude": 84.269681,
+        "sign_index": 2,
+        "degree_in_sign": 24.269681,
+        "is_retrograde": true,
+        "speed": -0.06042
+      },
+      "Rahu": {
+        "longitude": 226.457839,
+        "sign_index": 7,
+        "degree_in_sign": 16.457839,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 46.457839,
+        "sign_index": 1,
+        "degree_in_sign": 16.457839,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

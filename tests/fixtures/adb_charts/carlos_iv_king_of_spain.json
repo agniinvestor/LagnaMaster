@@ -1,0 +1,110 @@
+{
+  "adb_id": 66031,
+  "name": "Carlos IV, King of Spain",
+  "given_name": "King of Spain Carlos IV",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2359818.585185,
+    "year": 1748,
+    "month": 11,
+    "day": 11,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "l",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Portici",
+    "country": "Italy",
+    "lat": 40.816667,
+    "lon": 14.333333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "can",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlos_IV,_King_of_Spain",
+  "source_notes": "Eduardo Castellanos quotes [http://boe.es/datos/pdfs/BOE//1748/052/A00410-00411.pdf Official Gazette]\\n\"De Nápoles se avisa que el día 11 de este mes a las 3 de la mañana  la Reina de las Dos Sicilias había dado a luz  con toda felicidad un  Príncipe, a quien había bautizado al día siguiente ... poniéndole los nombres de Carlos Antonio\" (From Naples is notified that the 11th of this month at 3 am the Queen of the Two Sicilies had given birth to all happiness a Prince, who had baptized the next day ... putting the names of Carlos Antonio) \\n",
+  "categories": [
+    "Traits : Mind : I.Q. low",
+    "Vocation : Politics : Heads of state",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 23.707945,
+    "lagna": 143.707945,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.350979,
+    "jd_ut": 2359818.585185,
+    "planets": {
+      "Sun": {
+        "longitude": 208.75449,
+        "sign_index": 6,
+        "degree_in_sign": 28.75449,
+        "is_retrograde": false,
+        "speed": 1.00751
+      },
+      "Moon": {
+        "longitude": 95.496854,
+        "sign_index": 3,
+        "degree_in_sign": 5.496854,
+        "is_retrograde": false,
+        "speed": 7.901738
+      },
+      "Mars": {
+        "longitude": 165.746663,
+        "sign_index": 5,
+        "degree_in_sign": 15.746663,
+        "is_retrograde": false,
+        "speed": 0.620691
+      },
+      "Mercury": {
+        "longitude": 231.287396,
+        "sign_index": 7,
+        "degree_in_sign": 21.287396,
+        "is_retrograde": false,
+        "speed": 0.941357
+      },
+      "Jupiter": {
+        "longitude": 293.897149,
+        "sign_index": 9,
+        "degree_in_sign": 23.897149,
+        "is_retrograde": false,
+        "speed": 0.106324
+      },
+      "Venus": {
+        "longitude": 162.642789,
+        "sign_index": 5,
+        "degree_in_sign": 12.642789,
+        "is_retrograde": false,
+        "speed": 1.075546
+      },
+      "Saturn": {
+        "longitude": 201.991815,
+        "sign_index": 6,
+        "degree_in_sign": 21.991815,
+        "is_retrograde": false,
+        "speed": 0.119415
+      },
+      "Rahu": {
+        "longitude": 281.965737,
+        "sign_index": 9,
+        "degree_in_sign": 11.965737,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 101.965737,
+        "sign_index": 3,
+        "degree_in_sign": 11.965737,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

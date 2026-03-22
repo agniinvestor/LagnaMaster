@@ -1,0 +1,114 @@
+{
+  "adb_id": 91501,
+  "name": "Cohen, Stephen F.",
+  "given_name": "Stephen F. Cohen",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2429228.611111,
+    "year": 1938,
+    "month": 11,
+    "day": 25,
+    "calendar": "g",
+    "time": "20:40",
+    "time_type": "s",
+    "hour": 20.666667,
+    "time_unknown": false,
+    "place": "Indianapolis",
+    "country": "Indiana",
+    "lat": 39.766667,
+    "lon": -86.15
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Stephen_F.",
+  "source_notes": "Birth certificate in hand from Sy Scholfield. \\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Politics : Other Politics",
+    "Vocation : Writers : Biographer",
+    "Vocation : Writers : Publisher/ Editor",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 17.039371,
+    "lagna": 77.039371,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.003723,
+    "jd_ut": 2429228.611111,
+    "planets": {
+      "Sun": {
+        "longitude": 220.178371,
+        "sign_index": 7,
+        "degree_in_sign": 10.178371,
+        "is_retrograde": false,
+        "speed": 1.012146
+      },
+      "Moon": {
+        "longitude": 265.201512,
+        "sign_index": 8,
+        "degree_in_sign": 25.201512,
+        "is_retrograde": false,
+        "speed": 11.963355
+      },
+      "Mars": {
+        "longitude": 177.045703,
+        "sign_index": 5,
+        "degree_in_sign": 27.045703,
+        "is_retrograde": false,
+        "speed": 0.628126
+      },
+      "Mercury": {
+        "longitude": 241.896553,
+        "sign_index": 8,
+        "degree_in_sign": 1.896553,
+        "is_retrograde": false,
+        "speed": 0.980271
+      },
+      "Jupiter": {
+        "longitude": 301.708194,
+        "sign_index": 10,
+        "degree_in_sign": 1.708194,
+        "is_retrograde": false,
+        "speed": 0.117895
+      },
+      "Venus": {
+        "longitude": 210.860332,
+        "sign_index": 7,
+        "degree_in_sign": 0.860332,
+        "is_retrograde": true,
+        "speed": -0.539808
+      },
+      "Saturn": {
+        "longitude": 348.537575,
+        "sign_index": 11,
+        "degree_in_sign": 18.537575,
+        "is_retrograde": true,
+        "speed": -0.033216
+      },
+      "Rahu": {
+        "longitude": 203.778433,
+        "sign_index": 6,
+        "degree_in_sign": 23.778433,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 23.778433,
+        "sign_index": 0,
+        "degree_in_sign": 23.778433,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

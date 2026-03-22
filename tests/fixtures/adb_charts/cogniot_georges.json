@@ -1,0 +1,110 @@
+{
+  "adb_id": 68329,
+  "name": "Cogniot, Georges",
+  "given_name": "Georges Cogniot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415734.160174,
+    "year": 1901,
+    "month": 12,
+    "day": 15,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Montigny-lès-Cherlieu",
+    "country": "France",
+    "lat": 47.799722,
+    "lon": 5.812222
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cogniot,_Georges",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 192.\\n",
+  "categories": [
+    "Vocation : Humanities+Social Sciences : Philosopher",
+    "Vocation : Politics : Other Politics",
+    "Vocation : Writers : Other Writers"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 10.951434,
+    "lagna": 40.951434,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.487812,
+    "jd_ut": 2415734.160174,
+    "planets": {
+      "Sun": {
+        "longitude": 240.518488,
+        "sign_index": 8,
+        "degree_in_sign": 0.518488,
+        "is_retrograde": false,
+        "speed": 1.017925
+      },
+      "Moon": {
+        "longitude": 291.414313,
+        "sign_index": 9,
+        "degree_in_sign": 21.414313,
+        "is_retrograde": false,
+        "speed": 9.107103
+      },
+      "Mars": {
+        "longitude": 263.981056,
+        "sign_index": 8,
+        "degree_in_sign": 23.981056,
+        "is_retrograde": false,
+        "speed": 0.775514
+      },
+      "Mercury": {
+        "longitude": 230.77304,
+        "sign_index": 7,
+        "degree_in_sign": 20.77304,
+        "is_retrograde": false,
+        "speed": 1.543139
+      },
+      "Jupiter": {
+        "longitude": 265.169959,
+        "sign_index": 8,
+        "degree_in_sign": 25.169959,
+        "is_retrograde": false,
+        "speed": 0.22332
+      },
+      "Venus": {
+        "longitude": 287.378613,
+        "sign_index": 9,
+        "degree_in_sign": 17.378613,
+        "is_retrograde": false,
+        "speed": 0.935327
+      },
+      "Saturn": {
+        "longitude": 263.324133,
+        "sign_index": 8,
+        "degree_in_sign": 23.324133,
+        "is_retrograde": false,
+        "speed": 0.112155
+      },
+      "Rahu": {
+        "longitude": 198.877576,
+        "sign_index": 6,
+        "degree_in_sign": 18.877576,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 18.877576,
+        "sign_index": 0,
+        "degree_in_sign": 18.877576,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

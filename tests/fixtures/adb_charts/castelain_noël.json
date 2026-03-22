@@ -1,0 +1,110 @@
+{
+  "adb_id": 65371,
+  "name": "Castelain, Noël",
+  "given_name": "Noël Castelain",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421531.541667,
+    "year": 1917,
+    "month": 10,
+    "day": 30,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Niort",
+    "country": "France",
+    "lat": 46.316667,
+    "lon": -0.45
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castelain,_Noël",
+  "source_notes": "Didier Geslain archive, 'Compagnes de la Libération' pdf file, p. 65.\\n",
+  "categories": [
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Vocation : Military : Honors",
+    "Vocation : Travel : Pilot/ military"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 16.441195,
+    "lagna": 106.441195,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.709444,
+    "jd_ut": 2421531.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 193.326685,
+        "sign_index": 6,
+        "degree_in_sign": 13.326685,
+        "is_retrograde": false,
+        "speed": 0.999389
+      },
+      "Moon": {
+        "longitude": 9.897825,
+        "sign_index": 0,
+        "degree_in_sign": 9.897825,
+        "is_retrograde": false,
+        "speed": 10.781147
+      },
+      "Mars": {
+        "longitude": 125.40982,
+        "sign_index": 4,
+        "degree_in_sign": 5.40982,
+        "is_retrograde": false,
+        "speed": 0.552461
+      },
+      "Mercury": {
+        "longitude": 190.310268,
+        "sign_index": 6,
+        "degree_in_sign": 10.310268,
+        "is_retrograde": false,
+        "speed": 1.657373
+      },
+      "Jupiter": {
+        "longitude": 47.391454,
+        "sign_index": 1,
+        "degree_in_sign": 17.391454,
+        "is_retrograde": true,
+        "speed": -0.092935
+      },
+      "Venus": {
+        "longitude": 238.093939,
+        "sign_index": 7,
+        "degree_in_sign": 28.093939,
+        "is_retrograde": false,
+        "speed": 1.135238
+      },
+      "Saturn": {
+        "longitude": 111.145939,
+        "sign_index": 3,
+        "degree_in_sign": 21.145939,
+        "is_retrograde": false,
+        "speed": 0.04916
+      },
+      "Rahu": {
+        "longitude": 251.662156,
+        "sign_index": 8,
+        "degree_in_sign": 11.662156,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 71.662156,
+        "sign_index": 2,
+        "degree_in_sign": 11.662156,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

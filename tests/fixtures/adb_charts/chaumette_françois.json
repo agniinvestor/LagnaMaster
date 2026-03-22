@@ -1,0 +1,112 @@
+{
+  "adb_id": 71642,
+  "name": "Chaumette, François",
+  "given_name": "François Chaumette",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423670.541667,
+    "year": 1923,
+    "month": 9,
+    "day": 8,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "d",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "leo",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chaumette,_François",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes CADRAN.\\n",
+  "categories": [
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : TV series/ Soap star",
+    "Vocation : Entertainment : Voice-Over",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 11.486138,
+    "lagna": 71.486138,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.791221,
+    "jd_ut": 2423670.541667,
+    "planets": {
+      "Sun": {
+        "longitude": 141.564476,
+        "sign_index": 4,
+        "degree_in_sign": 21.564476,
+        "is_retrograde": false,
+        "speed": 0.971234
+      },
+      "Moon": {
+        "longitude": 105.237537,
+        "sign_index": 3,
+        "degree_in_sign": 15.237537,
+        "is_retrograde": false,
+        "speed": 15.581616
+      },
+      "Mars": {
+        "longitude": 131.664524,
+        "sign_index": 4,
+        "degree_in_sign": 11.664524,
+        "is_retrograde": false,
+        "speed": 0.636117
+      },
+      "Mercury": {
+        "longitude": 167.909892,
+        "sign_index": 5,
+        "degree_in_sign": 17.909892,
+        "is_retrograde": false,
+        "speed": 0.687231
+      },
+      "Jupiter": {
+        "longitude": 201.60909,
+        "sign_index": 6,
+        "degree_in_sign": 21.60909,
+        "is_retrograde": false,
+        "speed": 0.15623
+      },
+      "Venus": {
+        "longitude": 140.909522,
+        "sign_index": 4,
+        "degree_in_sign": 20.909522,
+        "is_retrograde": false,
+        "speed": 1.242468
+      },
+      "Saturn": {
+        "longitude": 175.641661,
+        "sign_index": 5,
+        "degree_in_sign": 25.641661,
+        "is_retrograde": false,
+        "speed": 0.107832
+      },
+      "Rahu": {
+        "longitude": 138.312079,
+        "sign_index": 4,
+        "degree_in_sign": 18.312079,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 318.312079,
+        "sign_index": 10,
+        "degree_in_sign": 18.312079,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

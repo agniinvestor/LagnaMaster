@@ -1,0 +1,108 @@
+{
+  "adb_id": 64814,
+  "name": "Crozemarie, Jacques",
+  "given_name": "Jacques Crozemarie",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424431.09375,
+    "year": 1925,
+    "month": 10,
+    "day": 7,
+    "calendar": "g",
+    "time": "14:15",
+    "time_type": "s",
+    "hour": 14.25,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crozemarie,_Jacques",
+  "source_notes": "Didier Geslain archive, 'business_men_pdg' pdf file, p. 35.\\n",
+  "categories": [
+    "Vocation : Medical : Other Medical Vocations"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 7.575794,
+    "lagna": 247.575794,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.820298,
+    "jd_ut": 2424431.09375,
+    "planets": {
+      "Sun": {
+        "longitude": 170.968651,
+        "sign_index": 5,
+        "degree_in_sign": 20.968651,
+        "is_retrograde": false,
+        "speed": 0.987073
+      },
+      "Moon": {
+        "longitude": 56.543948,
+        "sign_index": 1,
+        "degree_in_sign": 26.543948,
+        "is_retrograde": false,
+        "speed": 15.593985
+      },
+      "Mars": {
+        "longitude": 162.885309,
+        "sign_index": 5,
+        "degree_in_sign": 12.885309,
+        "is_retrograde": false,
+        "speed": 0.649395
+      },
+      "Mercury": {
+        "longitude": 171.142066,
+        "sign_index": 5,
+        "degree_in_sign": 21.142066,
+        "is_retrograde": false,
+        "speed": 1.73521
+      },
+      "Jupiter": {
+        "longitude": 261.124214,
+        "sign_index": 8,
+        "degree_in_sign": 21.124214,
+        "is_retrograde": false,
+        "speed": 0.086715
+      },
+      "Venus": {
+        "longitude": 212.530461,
+        "sign_index": 7,
+        "degree_in_sign": 2.530461,
+        "is_retrograde": false,
+        "speed": 1.166792
+      },
+      "Saturn": {
+        "longitude": 200.314075,
+        "sign_index": 6,
+        "degree_in_sign": 20.314075,
+        "is_retrograde": false,
+        "speed": 0.1095
+      },
+      "Rahu": {
+        "longitude": 98.008839,
+        "sign_index": 3,
+        "degree_in_sign": 8.008839,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 278.008839,
+        "sign_index": 9,
+        "degree_in_sign": 8.008839,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

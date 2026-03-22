@@ -1,0 +1,108 @@
+{
+  "adb_id": 59260,
+  "name": "Christian von Brandenburg-Bayreuth",
+  "given_name": "Christian von Brandenburg-Bayreuth",
+  "gender": "m",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2298548.143472,
+    "year": 1581,
+    "month": 1,
+    "day": 30,
+    "calendar": "j",
+    "time": "16:20",
+    "time_type": "l",
+    "hour": 16.333333,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian_von_Brandenburg-Bayreuth",
+  "source_notes": "Sy Scholfield quotes from \"Les vies des Electeurs de Brandenbourg de la maison des burgraves de Nurenberg, avec leurs portraits et leurs généalogies\" by Jean Cernitius and Antoine Teissier (J.M. Rudiger, 1707), p. 64: \"15[8]1. 30. Janv. à 4. heures 20. minutes après midy, Le Lundi après la Conversion de S. Paul.\" Note: 30/1/1581 OS was indeed a Monday.\\n\\nScholfield also quotes from the chronicle of events in \"Allgemeine preussische staats-geschichte, samt aller dazu gehörigen königreichs, churfürstenthums, herzogthümer, fürstenthümer, graf- und herrschaften, aus bewährten schriftstellern und urkunden bis auf gegenwärtige regierung,\" Volumes 3-4, by Karl Friedrich Pauli (C. P. Francken, 1762), p. 296: \"Christian, geboren zu Berlin 1581 den 30ten Jan. Abends zwischen 4 und 5 Uhr.\" [Translation: Christian, born in Berlin in 1581 on Jan. 30th in the evening between 4 and 5 o'clock.]\\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 8.66039,
+    "lagna": 98.66039,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 18.011159,
+    "jd_ut": 2298548.143472,
+    "planets": {
+      "Sun": {
+        "longitude": 302.871465,
+        "sign_index": 10,
+        "degree_in_sign": 2.871465,
+        "is_retrograde": false,
+        "speed": 1.009946
+      },
+      "Moon": {
+        "longitude": 245.924718,
+        "sign_index": 8,
+        "degree_in_sign": 5.924718,
+        "is_retrograde": false,
+        "speed": 15.895851
+      },
+      "Mars": {
+        "longitude": 48.013326,
+        "sign_index": 1,
+        "degree_in_sign": 18.013326,
+        "is_retrograde": false,
+        "speed": 0.348992
+      },
+      "Mercury": {
+        "longitude": 278.745397,
+        "sign_index": 9,
+        "degree_in_sign": 8.745397,
+        "is_retrograde": false,
+        "speed": 0.369268
+      },
+      "Jupiter": {
+        "longitude": 259.741552,
+        "sign_index": 8,
+        "degree_in_sign": 19.741552,
+        "is_retrograde": false,
+        "speed": 0.197675
+      },
+      "Venus": {
+        "longitude": 261.834833,
+        "sign_index": 8,
+        "degree_in_sign": 21.834833,
+        "is_retrograde": false,
+        "speed": 1.186274
+      },
+      "Saturn": {
+        "longitude": 301.512679,
+        "sign_index": 10,
+        "degree_in_sign": 1.512679,
+        "is_retrograde": false,
+        "speed": 0.120419
+      },
+      "Rahu": {
+        "longitude": 288.829316,
+        "sign_index": 9,
+        "degree_in_sign": 18.829316,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 108.829316,
+        "sign_index": 3,
+        "degree_in_sign": 18.829316,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

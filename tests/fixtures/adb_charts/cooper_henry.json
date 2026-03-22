@@ -1,0 +1,118 @@
+{
+  "adb_id": 7422,
+  "name": "Cooper, Henry",
+  "given_name": "Henry Cooper",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427560.729167,
+    "year": 1934,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "d",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "cap",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooper,_Henry",
+  "source_notes": "Fowler's quotes B.C. in their errata correction list.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Personal : Birth : Twin, triplet, etc.",
+    "Vocation : Sports : Boxing",
+    "Vocation : Sports Business : Coach/ Manager/ Owner",
+    "Notable : Awards : Knighted",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 17.502118,
+    "lagna": 17.502118,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.939953,
+    "jd_ut": 2427560.729167,
+    "planets": {
+      "Sun": {
+        "longitude": 19.150527,
+        "sign_index": 0,
+        "degree_in_sign": 19.150527,
+        "is_retrograde": false,
+        "speed": 0.969208
+      },
+      "Moon": {
+        "longitude": 248.294301,
+        "sign_index": 8,
+        "degree_in_sign": 8.294301,
+        "is_retrograde": false,
+        "speed": 11.134592
+      },
+      "Mars": {
+        "longitude": 14.930029,
+        "sign_index": 0,
+        "degree_in_sign": 14.930029,
+        "is_retrograde": false,
+        "speed": 0.739872
+      },
+      "Mercury": {
+        "longitude": 7.936713,
+        "sign_index": 0,
+        "degree_in_sign": 7.936713,
+        "is_retrograde": false,
+        "speed": 1.969567
+      },
+      "Jupiter": {
+        "longitude": 172.441872,
+        "sign_index": 5,
+        "degree_in_sign": 22.441872,
+        "is_retrograde": true,
+        "speed": -0.103518
+      },
+      "Venus": {
+        "longitude": 333.702357,
+        "sign_index": 11,
+        "degree_in_sign": 3.702357,
+        "is_retrograde": false,
+        "speed": 1.06199
+      },
+      "Saturn": {
+        "longitude": 304.171843,
+        "sign_index": 10,
+        "degree_in_sign": 4.171843,
+        "is_retrograde": false,
+        "speed": 0.057258
+      },
+      "Rahu": {
+        "longitude": 292.162953,
+        "sign_index": 9,
+        "degree_in_sign": 22.162953,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 112.162953,
+        "sign_index": 3,
+        "degree_in_sign": 22.162953,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

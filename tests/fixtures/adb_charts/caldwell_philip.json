@@ -1,0 +1,109 @@
+{
+  "adb_id": 50731,
+  "name": "Caldwell, Philip",
+  "given_name": "Philip Caldwell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422351.083333,
+    "year": 1920,
+    "month": 1,
+    "day": 27,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Bourneville",
+    "country": "Ohio",
+    "lat": 39.283333,
+    "lon": -83.15
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caldwell,_Philip",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 15.680584,
+    "lagna": 285.680584,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.740776,
+    "jd_ut": 2422351.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 283.609959,
+        "sign_index": 9,
+        "degree_in_sign": 13.609959,
+        "is_retrograde": false,
+        "speed": 1.016325
+      },
+      "Moon": {
+        "longitude": 0.28099,
+        "sign_index": 0,
+        "degree_in_sign": 0.28099,
+        "is_retrograde": false,
+        "speed": 16.532494
+      },
+      "Mars": {
+        "longitude": 185.585249,
+        "sign_index": 6,
+        "degree_in_sign": 5.585249,
+        "is_retrograde": false,
+        "speed": 0.391351
+      },
+      "Mercury": {
+        "longitude": 277.267716,
+        "sign_index": 9,
+        "degree_in_sign": 7.267716,
+        "is_retrograde": false,
+        "speed": 1.644798
+      },
+      "Jupiter": {
+        "longitude": 111.285417,
+        "sign_index": 3,
+        "degree_in_sign": 21.285417,
+        "is_retrograde": true,
+        "speed": -0.131158
+      },
+      "Venus": {
+        "longitude": 244.944808,
+        "sign_index": 8,
+        "degree_in_sign": 4.944808,
+        "is_retrograde": false,
+        "speed": 1.206914
+      },
+      "Saturn": {
+        "longitude": 137.843188,
+        "sign_index": 4,
+        "degree_in_sign": 17.843188,
+        "is_retrograde": true,
+        "speed": -0.05875
+      },
+      "Rahu": {
+        "longitude": 208.23293,
+        "sign_index": 6,
+        "degree_in_sign": 28.23293,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 28.23293,
+        "sign_index": 0,
+        "degree_in_sign": 28.23293,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

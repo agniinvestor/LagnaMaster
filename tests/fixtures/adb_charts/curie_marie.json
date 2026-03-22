@@ -1,110 +1,123 @@
 {
-  "adb_slug": "Curie,_Marie",
-  "name": "Marie Curie",
-  "source": "astro-databank-stub",
+  "adb_id": 64,
+  "name": "Curie, Marie",
+  "given_name": "Marie Curie",
+  "gender": "f",
   "rodden_rating": "AA",
-  "adb_url": "https://www.astro.com/astro-databank/Curie,_Marie",
+  "rodden_rank": 5,
   "birth_data": {
+    "jd_ut": 2403277.941667,
     "year": 1867,
     "month": 11,
     "day": 7,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
     "hour": 12.0,
-    "lat": 52.2297,
-    "lon": 21.0122,
-    "tz_offset": 1.0,
-    "ayanamsha": "lahiri"
+    "time_unknown": false,
+    "place": "Warsaw",
+    "country": "Poland",
+    "lat": 52.25,
+    "lon": 21.0
   },
-  "birth_place": "Warsaw, Poland",
-  "country": "France",
-  "data_trust_level": "low",
-  "assert_lagna": false,
-  "trust_note": "France 1867 — low trust (cross-referenced)",
-  "expected": {},
-  "chart": {
-    "lagna": 266.98912141672673,
-    "lagna_sign": "Sagittarius",
-    "lagna_sign_index": 8,
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curie,_Marie",
+  "source_notes": "Dariuxz Proskurnicki quotes Baptism Certificate, 12:00 PM Warsaw time.\\n(Frances McEvoy quotes Grant Lewi from Eve Curie as \"soon after sunrise.\"  ???)\\nBiography: Susan Quinn, \"Marie Curie, A Life,\" 1995. Biography: Eve Curie, \"Madame Curie.\"\\n",
+  "categories": [
+    "Traits : Mind : Exceptional mind",
+    "Diagnoses : Major Diseases : Cancer",
+    "Family : Childhood : Memories Bad",
+    "Family : Childhood : Order of birth",
+    "Family : Relationship : Marriage - Compatible",
+    "Family : Relationship : Mate - Noted",
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Science : Chemistry",
+    "Vocation : Science : Physics",
+    "Notable : Extraordinary Talents : For Abstract thought",
+    "Notable : Awards : Nobel prize",
+    "Notable : Famous : Historic figure",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 28.012439,
+    "lagna": 238.012439,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.011669,
+    "jd_ut": 2403277.941667,
     "planets": {
       "Sun": {
-        "longitude": 202.5829216793111,
+        "longitude": 202.566183,
         "sign_index": 6,
-        "sign": "Libra",
-        "degree_in_sign": 22.582921679311113,
-        "is_retrograde": false
+        "degree_in_sign": 22.566183,
+        "is_retrograde": false,
+        "speed": 1.004261
       },
       "Moon": {
-        "longitude": 324.68126790817877,
+        "longitude": 324.646147,
         "sign_index": 10,
-        "sign": "Aquarius",
-        "degree_in_sign": 24.681267908178768,
-        "is_retrograde": false
+        "degree_in_sign": 24.646147,
+        "is_retrograde": false,
+        "speed": 14.210032
       },
       "Mars": {
-        "longitude": 217.6188718607665,
+        "longitude": 217.606871,
         "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 7.61887186076649,
-        "is_retrograde": false
+        "degree_in_sign": 7.606871,
+        "is_retrograde": false,
+        "speed": 0.71948
       },
       "Mercury": {
-        "longitude": 224.63309336074474,
+        "longitude": 224.62436,
         "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 14.633093360744738,
-        "is_retrograde": false
+        "degree_in_sign": 14.62436,
+        "is_retrograde": false,
+        "speed": 0.524353
       },
       "Jupiter": {
-        "longitude": 305.9961357769142,
+        "longitude": 305.995333,
         "sign_index": 10,
-        "sign": "Aquarius",
-        "degree_in_sign": 5.996135776914173,
-        "is_retrograde": false
+        "degree_in_sign": 5.995333,
+        "is_retrograde": false,
+        "speed": 0.047503
       },
       "Venus": {
-        "longitude": 213.58547823026575,
+        "longitude": 213.564606,
         "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 3.5854782302657497,
-        "is_retrograde": false
+        "degree_in_sign": 3.564606,
+        "is_retrograde": false,
+        "speed": 1.251575
       },
       "Saturn": {
-        "longitude": 213.26723646838,
+        "longitude": 213.265297,
         "sign_index": 7,
-        "sign": "Scorpio",
-        "degree_in_sign": 3.2672364683799913,
-        "is_retrograde": false
+        "degree_in_sign": 3.265297,
+        "is_retrograde": false,
+        "speed": 0.117753
       },
       "Rahu": {
-        "longitude": 138.95814158264145,
+        "longitude": 138.959025,
         "sign_index": 4,
-        "sign": "Leo",
-        "degree_in_sign": 18.958141582641446,
-        "is_retrograde": true
+        "degree_in_sign": 18.959025,
+        "is_retrograde": true,
+        "speed": -0.052992
       },
       "Ketu": {
-        "longitude": 318.9581415826415,
+        "longitude": 318.959025,
         "sign_index": 10,
-        "sign": "Aquarius",
-        "degree_in_sign": 18.958141582641474,
-        "is_retrograde": true
+        "degree_in_sign": 18.959025,
+        "is_retrograde": true,
+        "speed": 0.0
       }
     }
-  },
-  "scores": {
-    "1": -1.0,
-    "2": -4.75,
-    "3": -6.5,
-    "4": -1.0,
-    "5": -3.75,
-    "6": -6.0,
-    "7": -5.375,
-    "8": -0.25,
-    "9": -1.5,
-    "10": -6.5,
-    "11": -3.875,
-    "12": -5.75
-  },
-  "fetch_status": "stub",
-  "engine_version": "v3.0.0",
-  "computed_date": "2026-03-22"
+  }
 }

@@ -1,0 +1,109 @@
+{
+  "adb_id": 63126,
+  "name": "Coppens, Yves",
+  "given_name": "Yves Coppens",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427658.947917,
+    "year": 1934,
+    "month": 8,
+    "day": 9,
+    "calendar": "g",
+    "time": "11:45",
+    "time_type": "d",
+    "hour": 11.75,
+    "time_unknown": false,
+    "place": "Vannes",
+    "country": "France",
+    "lat": 47.65,
+    "lon": -2.766667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coppens,_Yves",
+  "source_notes": "Didier Geslain archive, 'Historiens' pdf file, p. 20.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Science : Anthropology"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 3.073084,
+    "lagna": 153.073084,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.943709,
+    "jd_ut": 2427658.947917,
+    "planets": {
+      "Sun": {
+        "longitude": 113.198885,
+        "sign_index": 3,
+        "degree_in_sign": 23.198885,
+        "is_retrograde": false,
+        "speed": 0.959321
+      },
+      "Moon": {
+        "longitude": 103.492226,
+        "sign_index": 3,
+        "degree_in_sign": 13.492226,
+        "is_retrograde": false,
+        "speed": 8.224181
+      },
+      "Mars": {
+        "longitude": 83.389249,
+        "sign_index": 2,
+        "degree_in_sign": 23.389249,
+        "is_retrograde": false,
+        "speed": 0.655541
+      },
+      "Mercury": {
+        "longitude": 96.839967,
+        "sign_index": 3,
+        "degree_in_sign": 6.839967,
+        "is_retrograde": false,
+        "speed": 1.656507
+      },
+      "Jupiter": {
+        "longitude": 175.173153,
+        "sign_index": 5,
+        "degree_in_sign": 25.173153,
+        "is_retrograde": false,
+        "speed": 0.148853
+      },
+      "Venus": {
+        "longitude": 87.101369,
+        "sign_index": 2,
+        "degree_in_sign": 27.101369,
+        "is_retrograde": false,
+        "speed": 1.209062
+      },
+      "Saturn": {
+        "longitude": 302.545747,
+        "sign_index": 10,
+        "degree_in_sign": 2.545747,
+        "is_retrograde": true,
+        "speed": -0.07385
+      },
+      "Rahu": {
+        "longitude": 286.958138,
+        "sign_index": 9,
+        "degree_in_sign": 16.958138,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 106.958138,
+        "sign_index": 3,
+        "degree_in_sign": 16.958138,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

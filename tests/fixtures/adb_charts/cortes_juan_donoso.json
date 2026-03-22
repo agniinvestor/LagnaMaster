@@ -1,0 +1,109 @@
+{
+  "adb_id": 67422,
+  "name": "Cortes, Juan Donoso",
+  "given_name": "Juan Donoso Cortes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2381908.724398,
+    "year": 1809,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Valle de la Serena",
+    "country": "Spain",
+    "lat": 38.7,
+    "lon": -5.783333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cortes,_Juan_Donoso",
+  "source_notes": "Castellanos quotes Birth Certificate in\\nThe century future. 22/9/1894, n. Th 5.879, page 3.\\nhttp://hemerotecadigital.bne.es/issue.vm…\\n",
+  "categories": [
+    "Vocation : Politics : Diplomat",
+    "Vocation : Writers : Fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 2.220622,
+    "lagna": 2.220622,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.19499,
+    "jd_ut": 2381908.724398,
+    "planets": {
+      "Sun": {
+        "longitude": 24.030231,
+        "sign_index": 0,
+        "degree_in_sign": 24.030231,
+        "is_retrograde": false,
+        "speed": 0.966797
+      },
+      "Moon": {
+        "longitude": 288.740642,
+        "sign_index": 9,
+        "degree_in_sign": 18.740642,
+        "is_retrograde": false,
+        "speed": 9.159285
+      },
+      "Mars": {
+        "longitude": 168.971582,
+        "sign_index": 5,
+        "degree_in_sign": 18.971582,
+        "is_retrograde": true,
+        "speed": -0.184393
+      },
+      "Mercury": {
+        "longitude": 16.875425,
+        "sign_index": 0,
+        "degree_in_sign": 16.875425,
+        "is_retrograde": false,
+        "speed": 2.076523
+      },
+      "Jupiter": {
+        "longitude": 350.42483,
+        "sign_index": 11,
+        "degree_in_sign": 20.42483,
+        "is_retrograde": false,
+        "speed": 0.220866
+      },
+      "Venus": {
+        "longitude": 49.507827,
+        "sign_index": 1,
+        "degree_in_sign": 19.507827,
+        "is_retrograde": true,
+        "speed": -0.13347
+      },
+      "Saturn": {
+        "longitude": 220.517192,
+        "sign_index": 7,
+        "degree_in_sign": 10.517192,
+        "is_retrograde": true,
+        "speed": -0.069734
+      },
+      "Rahu": {
+        "longitude": 191.360139,
+        "sign_index": 6,
+        "degree_in_sign": 11.360139,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 11.360139,
+        "sign_index": 0,
+        "degree_in_sign": 11.360139,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

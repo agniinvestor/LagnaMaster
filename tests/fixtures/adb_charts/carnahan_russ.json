@@ -1,0 +1,111 @@
+{
+  "adb_id": 100778,
+  "name": "Carnahan, Russ",
+  "given_name": "Russ Carnahan",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2436394.784028,
+    "year": 1958,
+    "month": 7,
+    "day": 10,
+    "calendar": "g",
+    "time": "00:49",
+    "time_type": "s",
+    "hour": 0.816667,
+    "time_unknown": false,
+    "place": "Columbia",
+    "country": "Missouri",
+    "lat": 38.95,
+    "lon": -92.333333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carnahan,_Russ",
+  "source_notes": "Sy Scholfield quotes news report, ''Columbia Daily Tribune'' (Columbia, Missouri), 10 July 1958, page 1: born \"at 12:49 a.m. yesterday at University Hospital here.\" However the Congress website [https://bioguide.congress.gov/search/bio/c001060] and other resources give his birth date as 10 July 1958 so apparently he was born on that date just after midnight and the news was published in the ''Columbia Daily Tribune'' later the same day.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 26.764081,
+    "lagna": 356.764081,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.27773,
+    "jd_ut": 2436394.784028,
+    "planets": {
+      "Sun": {
+        "longitude": 84.232944,
+        "sign_index": 2,
+        "degree_in_sign": 24.232944,
+        "is_retrograde": false,
+        "speed": 0.95355
+      },
+      "Moon": {
+        "longitude": 8.507451,
+        "sign_index": 0,
+        "degree_in_sign": 8.507451,
+        "is_retrograde": false,
+        "speed": 12.365743
+      },
+      "Mars": {
+        "longitude": 359.578733,
+        "sign_index": 11,
+        "degree_in_sign": 29.578733,
+        "is_retrograde": false,
+        "speed": 0.662614
+      },
+      "Mercury": {
+        "longitude": 105.672808,
+        "sign_index": 3,
+        "degree_in_sign": 15.672808,
+        "is_retrograde": false,
+        "speed": 1.600285
+      },
+      "Jupiter": {
+        "longitude": 179.137378,
+        "sign_index": 5,
+        "degree_in_sign": 29.137378,
+        "is_retrograde": false,
+        "speed": 0.061302
+      },
+      "Venus": {
+        "longitude": 52.468245,
+        "sign_index": 1,
+        "degree_in_sign": 22.468245,
+        "is_retrograde": false,
+        "speed": 1.188361
+      },
+      "Saturn": {
+        "longitude": 237.308587,
+        "sign_index": 7,
+        "degree_in_sign": 27.308587,
+        "is_retrograde": true,
+        "speed": -0.061462
+      },
+      "Rahu": {
+        "longitude": 184.028158,
+        "sign_index": 6,
+        "degree_in_sign": 4.028158,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 4.028158,
+        "sign_index": 0,
+        "degree_in_sign": 4.028158,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

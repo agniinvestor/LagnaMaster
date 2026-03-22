@@ -1,0 +1,112 @@
+{
+  "adb_id": 85844,
+  "name": "Campbell, Joe",
+  "given_name": "Joe Campbell",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428112.229167,
+    "year": 1935,
+    "month": 11,
+    "day": 5,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Anderson",
+    "country": "Indiana",
+    "lat": 40.1,
+    "lon": -85.683333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "pis",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Campbell,_Joe",
+  "source_notes": "Sy Scholfield provided birth certificate from Indiana Archives, copy on file.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Sports : Golf",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 3.360761,
+    "lagna": 243.360761,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.961039,
+    "jd_ut": 2428112.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 199.409766,
+        "sign_index": 6,
+        "degree_in_sign": 19.409766,
+        "is_retrograde": false,
+        "speed": 1.00275
+      },
+      "Moon": {
+        "longitude": 312.920164,
+        "sign_index": 10,
+        "degree_in_sign": 12.920164,
+        "is_retrograde": false,
+        "speed": 16.006715
+      },
+      "Mars": {
+        "longitude": 252.978826,
+        "sign_index": 8,
+        "degree_in_sign": 12.978826,
+        "is_retrograde": false,
+        "speed": 0.750703
+      },
+      "Mercury": {
+        "longitude": 181.153113,
+        "sign_index": 6,
+        "degree_in_sign": 1.153113,
+        "is_retrograde": false,
+        "speed": 1.241074
+      },
+      "Jupiter": {
+        "longitude": 216.293692,
+        "sign_index": 7,
+        "degree_in_sign": 6.293692,
+        "is_retrograde": false,
+        "speed": 0.217631
+      },
+      "Venus": {
+        "longitude": 153.433982,
+        "sign_index": 5,
+        "degree_in_sign": 3.433982,
+        "is_retrograde": false,
+        "speed": 0.887199
+      },
+      "Saturn": {
+        "longitude": 310.546383,
+        "sign_index": 10,
+        "degree_in_sign": 10.546383,
+        "is_retrograde": true,
+        "speed": -0.003816
+      },
+      "Rahu": {
+        "longitude": 262.937825,
+        "sign_index": 8,
+        "degree_in_sign": 22.937825,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 82.937825,
+        "sign_index": 2,
+        "degree_in_sign": 22.937825,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

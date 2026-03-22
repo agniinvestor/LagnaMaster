@@ -1,0 +1,117 @@
+{
+  "adb_id": 94328,
+  "name": "Cheney, Liz",
+  "given_name": "Liz Cheney",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439335.70625,
+    "year": 1966,
+    "month": 7,
+    "day": 28,
+    "calendar": "g",
+    "time": "23:57",
+    "time_type": "d",
+    "hour": 23.95,
+    "time_unknown": false,
+    "place": "Madison",
+    "country": "Wisconsin",
+    "lat": 43.066667,
+    "lon": -89.4
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "sag",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cheney,_Liz",
+  "source_notes": "Birth record in hand from Viktor E.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Parenting : Kids more than 3",
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Education : Teacher",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Activist/ political",
+    "Vocation : Politics : Government employee",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 20.096197,
+    "lagna": 350.096197,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.390186,
+    "jd_ut": 2439335.70625,
+    "planets": {
+      "Sun": {
+        "longitude": 102.248545,
+        "sign_index": 3,
+        "degree_in_sign": 12.248545,
+        "is_retrograde": false,
+        "speed": 0.955727
+      },
+      "Moon": {
+        "longitude": 245.771777,
+        "sign_index": 8,
+        "degree_in_sign": 5.771777,
+        "is_retrograde": false,
+        "speed": 8.696896
+      },
+      "Mars": {
+        "longitude": 78.709838,
+        "sign_index": 2,
+        "degree_in_sign": 18.709838,
+        "is_retrograde": false,
+        "speed": 0.662177
+      },
+      "Mercury": {
+        "longitude": 101.18518,
+        "sign_index": 3,
+        "degree_in_sign": 11.18518,
+        "is_retrograde": true,
+        "speed": -0.71428
+      },
+      "Jupiter": {
+        "longitude": 84.995704,
+        "sign_index": 2,
+        "degree_in_sign": 24.995704,
+        "is_retrograde": false,
+        "speed": 0.220038
+      },
+      "Venus": {
+        "longitude": 75.616874,
+        "sign_index": 2,
+        "degree_in_sign": 15.616874,
+        "is_retrograde": false,
+        "speed": 1.204875
+      },
+      "Saturn": {
+        "longitude": 336.041079,
+        "sign_index": 11,
+        "degree_in_sign": 6.041079,
+        "is_retrograde": true,
+        "speed": -0.029123
+      },
+      "Rahu": {
+        "longitude": 28.182666,
+        "sign_index": 0,
+        "degree_in_sign": 28.182666,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 208.182666,
+        "sign_index": 6,
+        "degree_in_sign": 28.182666,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

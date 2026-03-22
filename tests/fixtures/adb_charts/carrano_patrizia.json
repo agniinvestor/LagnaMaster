@@ -1,0 +1,110 @@
+{
+  "adb_id": 10187,
+  "name": "Carrano, Patrizia",
+  "given_name": "Patrizia Carrano",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2431937.75,
+    "year": 1946,
+    "month": 4,
+    "day": 27,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "d",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Crespano del Grappa",
+    "country": "Italy",
+    "lat": 45.816667,
+    "lon": 11.833333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrano,_Patrizia",
+  "source_notes": "Bordoni quotes B.C. Vol 4\\n",
+  "categories": [
+    "Lifestyle : Social Life : Animals, pets",
+    "Vocation : Writers : Columnist/ journalist",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 26.715894,
+    "lagna": 26.715894,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.107307,
+    "jd_ut": 2431937.75,
+    "planets": {
+      "Sun": {
+        "longitude": 13.268858,
+        "sign_index": 0,
+        "degree_in_sign": 13.268858,
+        "is_retrograde": false,
+        "speed": 0.972672
+      },
+      "Moon": {
+        "longitude": 314.78874,
+        "sign_index": 10,
+        "degree_in_sign": 14.78874,
+        "is_retrograde": false,
+        "speed": 9.996237
+      },
+      "Mars": {
+        "longitude": 98.875648,
+        "sign_index": 3,
+        "degree_in_sign": 8.875648,
+        "is_retrograde": false,
+        "speed": 0.453189
+      },
+      "Mercury": {
+        "longitude": 346.456316,
+        "sign_index": 11,
+        "degree_in_sign": 16.456316,
+        "is_retrograde": false,
+        "speed": 1.15708
+      },
+      "Jupiter": {
+        "longitude": 177.599399,
+        "sign_index": 5,
+        "degree_in_sign": 27.599399,
+        "is_retrograde": true,
+        "speed": -0.119711
+      },
+      "Venus": {
+        "longitude": 34.197676,
+        "sign_index": 1,
+        "degree_in_sign": 4.197676,
+        "is_retrograde": false,
+        "speed": 1.223509
+      },
+      "Saturn": {
+        "longitude": 86.129131,
+        "sign_index": 2,
+        "degree_in_sign": 26.129131,
+        "is_retrograde": false,
+        "speed": 0.065245
+      },
+      "Rahu": {
+        "longitude": 60.215563,
+        "sign_index": 2,
+        "degree_in_sign": 0.215563,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 240.215563,
+        "sign_index": 8,
+        "degree_in_sign": 0.215563,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

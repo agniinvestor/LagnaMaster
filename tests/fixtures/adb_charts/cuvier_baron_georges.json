@@ -1,0 +1,111 @@
+{
+  "adb_id": 1925,
+  "name": "Cuvier, Baron Georges",
+  "given_name": "Baron Georges Cuvier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2367408.647778,
+    "year": 1769,
+    "month": 8,
+    "day": 23,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Montbéliard",
+    "country": "France",
+    "lat": 47.516667,
+    "lon": 6.8
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "tau",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cuvier,_Baron_Georges",
+  "source_notes": "Vic Shaw quotes Gauquelin \"Spheres,\" p.73.\\nSy Scholfield quotes same data from a transcript of the birth certificate in Georges-Frédéric Goguel's book, \"Hommes connus dans le monde savant, en France et à l'étranger, nés ou élevés à Montbéliard\" (Grassart, 1864), p. 22.\\n",
+  "categories": [
+    "Personal : Religion/Spirituality : Western",
+    "Vocation : Science : Biology",
+    "Notable : Famous : Founder/ originator",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 5.848681,
+    "lagna": 95.848681,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.640951,
+    "jd_ut": 2367408.647778,
+    "planets": {
+      "Sun": {
+        "longitude": 129.530646,
+        "sign_index": 4,
+        "degree_in_sign": 9.530646,
+        "is_retrograde": false,
+        "speed": 0.965255
+      },
+      "Moon": {
+        "longitude": 21.592515,
+        "sign_index": 0,
+        "degree_in_sign": 21.592515,
+        "is_retrograde": false,
+        "speed": 10.278582
+      },
+      "Mars": {
+        "longitude": 146.314608,
+        "sign_index": 4,
+        "degree_in_sign": 26.314608,
+        "is_retrograde": false,
+        "speed": 0.638683
+      },
+      "Mercury": {
+        "longitude": 119.329742,
+        "sign_index": 3,
+        "degree_in_sign": 29.329742,
+        "is_retrograde": false,
+        "speed": 1.937175
+      },
+      "Jupiter": {
+        "longitude": 205.223994,
+        "sign_index": 6,
+        "degree_in_sign": 25.223994,
+        "is_retrograde": false,
+        "speed": 0.119518
+      },
+      "Venus": {
+        "longitude": 84.0722,
+        "sign_index": 2,
+        "degree_in_sign": 24.0722,
+        "is_retrograde": false,
+        "speed": 1.021159
+      },
+      "Saturn": {
+        "longitude": 96.17132,
+        "sign_index": 3,
+        "degree_in_sign": 6.17132,
+        "is_retrograde": false,
+        "speed": 0.115676
+      },
+      "Rahu": {
+        "longitude": 239.751295,
+        "sign_index": 7,
+        "degree_in_sign": 29.751295,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 59.751295,
+        "sign_index": 1,
+        "degree_in_sign": 29.751295,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

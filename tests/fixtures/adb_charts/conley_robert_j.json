@@ -1,0 +1,111 @@
+{
+  "adb_id": 96671,
+  "name": "Conley, Robert J.",
+  "given_name": "Robert J. Conley",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429992.84375,
+    "year": 1940,
+    "month": 12,
+    "day": 29,
+    "calendar": "g",
+    "time": "02:15",
+    "time_type": "s",
+    "hour": 2.25,
+    "time_unknown": false,
+    "place": "Cushing",
+    "country": "Oklahoma",
+    "lat": 35.983333,
+    "lon": -96.766667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Conley,_Robert_J.",
+  "source_notes": "Sy Scholfield quotes birth report, ''The Cushing Daily Citizen'' (Cushing, Oklahoma), 30 December 1940, page 4: born at Payne County Masonic Hospital.\\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Vocation : Writers : Fiction",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 12.489476,
+    "lagna": 162.489476,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.032943,
+    "jd_ut": 2429992.84375,
+    "planets": {
+      "Sun": {
+        "longitude": 254.455218,
+        "sign_index": 8,
+        "degree_in_sign": 14.455218,
+        "is_retrograde": false,
+        "speed": 1.019583
+      },
+      "Moon": {
+        "longitude": 260.779307,
+        "sign_index": 8,
+        "degree_in_sign": 20.779307,
+        "is_retrograde": false,
+        "speed": 18.156372
+      },
+      "Mars": {
+        "longitude": 212.616529,
+        "sign_index": 7,
+        "degree_in_sign": 2.616529,
+        "is_retrograde": false,
+        "speed": 0.670582
+      },
+      "Mercury": {
+        "longitude": 246.879522,
+        "sign_index": 8,
+        "degree_in_sign": 6.879522,
+        "is_retrograde": false,
+        "speed": 1.560594
+      },
+      "Jupiter": {
+        "longitude": 12.647459,
+        "sign_index": 0,
+        "degree_in_sign": 12.647459,
+        "is_retrograde": true,
+        "speed": -0.006063
+      },
+      "Venus": {
+        "longitude": 227.573641,
+        "sign_index": 7,
+        "degree_in_sign": 17.573641,
+        "is_retrograde": false,
+        "speed": 1.245409
+      },
+      "Saturn": {
+        "longitude": 14.976819,
+        "sign_index": 0,
+        "degree_in_sign": 14.976819,
+        "is_retrograde": true,
+        "speed": -0.020817
+      },
+      "Rahu": {
+        "longitude": 163.280164,
+        "sign_index": 5,
+        "degree_in_sign": 13.280164,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 343.280164,
+        "sign_index": 11,
+        "degree_in_sign": 13.280164,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

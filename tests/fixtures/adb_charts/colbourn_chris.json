@@ -1,0 +1,109 @@
+{
+  "adb_id": 91714,
+  "name": "Colbourn, Chris",
+  "given_name": "Chris Colbourn",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2448280.195833,
+    "year": 1991,
+    "month": 1,
+    "day": 23,
+    "calendar": "g",
+    "time": "11:42",
+    "time_type": "s",
+    "hour": 11.7,
+    "time_unknown": false,
+    "place": "Burlington",
+    "country": "Vermont",
+    "lat": 44.483333,
+    "lon": -73.216667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colbourn,_Chris",
+  "source_notes": "Sy Scholfield provided birth certificate from public records. \\n",
+  "categories": [
+    "Traits : Body : Other body",
+    "Vocation : Sports : Other Sports"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 3.326013,
+    "lagna": 3.326013,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.732233,
+    "jd_ut": 2448280.195833,
+    "planets": {
+      "Sun": {
+        "longitude": 279.43966,
+        "sign_index": 9,
+        "degree_in_sign": 9.43966,
+        "is_retrograde": false,
+        "speed": 1.01712
+      },
+      "Moon": {
+        "longitude": 11.12559,
+        "sign_index": 0,
+        "degree_in_sign": 11.12559,
+        "is_retrograde": false,
+        "speed": 14.44391
+      },
+      "Mars": {
+        "longitude": 36.871728,
+        "sign_index": 1,
+        "degree_in_sign": 6.871728,
+        "is_retrograde": false,
+        "speed": 0.241812
+      },
+      "Mercury": {
+        "longitude": 257.353314,
+        "sign_index": 8,
+        "degree_in_sign": 17.353314,
+        "is_retrograde": false,
+        "speed": 1.316747
+      },
+      "Jupiter": {
+        "longitude": 105.558186,
+        "sign_index": 3,
+        "degree_in_sign": 15.558186,
+        "is_retrograde": true,
+        "speed": -0.132424
+      },
+      "Venus": {
+        "longitude": 299.398261,
+        "sign_index": 9,
+        "degree_in_sign": 29.398261,
+        "is_retrograde": false,
+        "speed": 1.248887
+      },
+      "Saturn": {
+        "longitude": 274.609555,
+        "sign_index": 9,
+        "degree_in_sign": 4.609555,
+        "is_retrograde": false,
+        "speed": 0.118698
+      },
+      "Rahu": {
+        "longitude": 274.19598,
+        "sign_index": 9,
+        "degree_in_sign": 4.19598,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 94.19598,
+        "sign_index": 3,
+        "degree_in_sign": 4.19598,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

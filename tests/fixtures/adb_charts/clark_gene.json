@@ -1,0 +1,114 @@
+{
+  "adb_id": 9789,
+  "name": "Clark, Gene",
+  "given_name": "Gene Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2431412.170139,
+    "year": 1944,
+    "month": 11,
+    "day": 17,
+    "calendar": "g",
+    "time": "11:05",
+    "time_type": "w",
+    "hour": 11.083333,
+    "time_unknown": false,
+    "place": "Tipton",
+    "country": "Missouri",
+    "lat": 38.65,
+    "lon": -92.783333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Gene",
+  "source_notes": "Arthur Blackwell quotes Toni Lamb from Clark\\n",
+  "categories": [
+    "Diagnoses : Psychological : Abuse Alcohol",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Diagnoses : Psychological : Phobias",
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 18.267499,
+    "lagna": 228.267499,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.087211,
+    "jd_ut": 2431412.170139,
+    "planets": {
+      "Sun": {
+        "longitude": 212.11828,
+        "sign_index": 7,
+        "degree_in_sign": 2.11828,
+        "is_retrograde": false,
+        "speed": 1.009101
+      },
+      "Moon": {
+        "longitude": 232.906498,
+        "sign_index": 7,
+        "degree_in_sign": 22.906498,
+        "is_retrograde": false,
+        "speed": 10.009468
+      },
+      "Mars": {
+        "longitude": 211.238157,
+        "sign_index": 7,
+        "degree_in_sign": 1.238157,
+        "is_retrograde": false,
+        "speed": 0.706321
+      },
+      "Mercury": {
+        "longitude": 227.684079,
+        "sign_index": 7,
+        "degree_in_sign": 17.684079,
+        "is_retrograde": false,
+        "speed": 1.470332
+      },
+      "Jupiter": {
+        "longitude": 149.933983,
+        "sign_index": 4,
+        "degree_in_sign": 29.933983,
+        "is_retrograde": false,
+        "speed": 0.14849
+      },
+      "Venus": {
+        "longitude": 248.570115,
+        "sign_index": 8,
+        "degree_in_sign": 8.570115,
+        "is_retrograde": false,
+        "speed": 1.21396
+      },
+      "Saturn": {
+        "longitude": 77.114841,
+        "sign_index": 2,
+        "degree_in_sign": 17.114841,
+        "is_retrograde": true,
+        "speed": -0.045471
+      },
+      "Rahu": {
+        "longitude": 88.067124,
+        "sign_index": 2,
+        "degree_in_sign": 28.067124,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 268.067124,
+        "sign_index": 8,
+        "degree_in_sign": 28.067124,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

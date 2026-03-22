@@ -1,0 +1,108 @@
+{
+  "adb_id": 98287,
+  "name": "Chameroy, Bertrand",
+  "given_name": "Bertrand Chameroy",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2447555.416667,
+    "year": 1989,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Nice",
+    "country": "France",
+    "lat": 43.7,
+    "lon": 7.25
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chameroy,_Bertrand",
+  "source_notes": "Lepoivre quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertainment : TV host/ Personality"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.439917,
+    "lagna": 144.439917,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.704516,
+    "jd_ut": 2447555.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 285.267914,
+        "sign_index": 9,
+        "degree_in_sign": 15.267914,
+        "is_retrograde": false,
+        "speed": 1.015696
+      },
+      "Moon": {
+        "longitude": 183.224607,
+        "sign_index": 6,
+        "degree_in_sign": 3.224607,
+        "is_retrograde": false,
+        "speed": 12.789756
+      },
+      "Mars": {
+        "longitude": 11.69218,
+        "sign_index": 0,
+        "degree_in_sign": 11.69218,
+        "is_retrograde": false,
+        "speed": 0.571447
+      },
+      "Mercury": {
+        "longitude": 276.561347,
+        "sign_index": 9,
+        "degree_in_sign": 6.561347,
+        "is_retrograde": true,
+        "speed": -1.068982
+      },
+      "Jupiter": {
+        "longitude": 32.511856,
+        "sign_index": 1,
+        "degree_in_sign": 2.511856,
+        "is_retrograde": false,
+        "speed": 0.029346
+      },
+      "Venus": {
+        "longitude": 269.028649,
+        "sign_index": 8,
+        "degree_in_sign": 29.028649,
+        "is_retrograde": false,
+        "speed": 1.252018
+      },
+      "Saturn": {
+        "longitude": 255.07173,
+        "sign_index": 8,
+        "degree_in_sign": 15.07173,
+        "is_retrograde": false,
+        "speed": 0.107603
+      },
+      "Rahu": {
+        "longitude": 312.603493,
+        "sign_index": 10,
+        "degree_in_sign": 12.603493,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 132.603493,
+        "sign_index": 4,
+        "degree_in_sign": 12.603493,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

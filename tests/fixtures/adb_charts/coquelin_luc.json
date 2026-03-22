@@ -1,0 +1,108 @@
+{
+  "adb_id": 67992,
+  "name": "Coquelin, Luc",
+  "given_name": "Luc Coquelin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436267.3125,
+    "year": 1958,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Rennes",
+    "country": "France",
+    "lat": 48.083333,
+    "lon": -1.683333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coquelin,_Luc",
+  "source_notes": "Didier Geslain archive, 'navigateurs' pdf file, p. 15.\\n",
+  "categories": [
+    "Vocation : Sports : Sailing/ Boating"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 15.55892,
+    "lagna": 135.55892,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.272855,
+    "jd_ut": 2436267.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 320.44857,
+        "sign_index": 10,
+        "degree_in_sign": 20.44857,
+        "is_retrograde": false,
+        "speed": 1.001399
+      },
+      "Moon": {
+        "longitude": 127.674815,
+        "sign_index": 4,
+        "degree_in_sign": 7.674815,
+        "is_retrograde": false,
+        "speed": 12.946926
+      },
+      "Mars": {
+        "longitude": 267.623249,
+        "sign_index": 8,
+        "degree_in_sign": 27.623249,
+        "is_retrograde": false,
+        "speed": 0.726239
+      },
+      "Mercury": {
+        "longitude": 321.321324,
+        "sign_index": 10,
+        "degree_in_sign": 21.321324,
+        "is_retrograde": false,
+        "speed": 1.907392
+      },
+      "Jupiter": {
+        "longitude": 187.925526,
+        "sign_index": 6,
+        "degree_in_sign": 7.925526,
+        "is_retrograde": true,
+        "speed": -0.053185
+      },
+      "Venus": {
+        "longitude": 281.20716,
+        "sign_index": 9,
+        "degree_in_sign": 11.20716,
+        "is_retrograde": false,
+        "speed": 0.486916
+      },
+      "Saturn": {
+        "longitude": 241.644636,
+        "sign_index": 8,
+        "degree_in_sign": 1.644636,
+        "is_retrograde": false,
+        "speed": 0.049925
+      },
+      "Rahu": {
+        "longitude": 190.783136,
+        "sign_index": 6,
+        "degree_in_sign": 10.783136,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 10.783136,
+        "sign_index": 0,
+        "degree_in_sign": 10.783136,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 89482,
+  "name": "Carl Gustav, Duke of Småland",
+  "given_name": "Duke of Småland Carl Gustav",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2372158.634344,
+    "year": 1782,
+    "month": 8,
+    "day": 25,
+    "calendar": "g",
+    "time": "04:25",
+    "time_type": "l",
+    "hour": 4.416667,
+    "time_unknown": false,
+    "place": "Drottningholm Palace",
+    "country": "Sweden",
+    "lat": 59.321667,
+    "lon": 17.886111
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carl_Gustav,_Duke_of_Småland",
+  "source_notes": "Sy Scholfield quotes his father's letter on the day, \"Drottningholm ce 25 Aout 1782 ... ma Femme d'accoucher d'un Fils, 4 heures et 25 minutes ce matin, ... elle est accouchée sans le secours de la sage femme, qui n'eut pas le tems d'arriver de l'autre chambre,\" published in ''Collection des écrits politiques, littéraires et dramatiques de Gustave III, roi de Suède, suivie de sa correspondance...'' (Charles Delen, 1805, p. 123).\\nTranslation: \"Drottningholm, 25 August 1782 ... my wife gave birth to a son, at 4:25 this morning, ... she gave birth without the help of the midwife, who did not have the time to arrive from the other room.\"\\n",
+  "categories": [
+    "Family : Childhood : Advantaged",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 16.921492,
+    "lagna": 106.921492,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.822435,
+    "jd_ut": 2372158.634344,
+    "planets": {
+      "Sun": {
+        "longitude": 131.132732,
+        "sign_index": 4,
+        "degree_in_sign": 11.132732,
+        "is_retrograde": false,
+        "speed": 0.96572
+      },
+      "Moon": {
+        "longitude": 335.736372,
+        "sign_index": 11,
+        "degree_in_sign": 5.736372,
+        "is_retrograde": false,
+        "speed": 10.826549
+      },
+      "Mars": {
+        "longitude": 130.82262,
+        "sign_index": 4,
+        "degree_in_sign": 10.82262,
+        "is_retrograde": false,
+        "speed": 0.636444
+      },
+      "Mercury": {
+        "longitude": 120.194637,
+        "sign_index": 4,
+        "degree_in_sign": 0.194637,
+        "is_retrograde": false,
+        "speed": 1.912107
+      },
+      "Jupiter": {
+        "longitude": 238.461074,
+        "sign_index": 7,
+        "degree_in_sign": 28.461074,
+        "is_retrograde": false,
+        "speed": 0.028776
+      },
+      "Venus": {
+        "longitude": 98.760252,
+        "sign_index": 3,
+        "degree_in_sign": 8.760252,
+        "is_retrograde": false,
+        "speed": 1.195452
+      },
+      "Saturn": {
+        "longitude": 243.812182,
+        "sign_index": 8,
+        "degree_in_sign": 3.812182,
+        "is_retrograde": true,
+        "speed": -0.006644
+      },
+      "Rahu": {
+        "longitude": 348.03893,
+        "sign_index": 11,
+        "degree_in_sign": 18.03893,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 168.03893,
+        "sign_index": 5,
+        "degree_in_sign": 18.03893,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

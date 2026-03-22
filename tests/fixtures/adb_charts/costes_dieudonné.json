@@ -1,0 +1,108 @@
+{
+  "adb_id": 64243,
+  "name": "Costes, Dieudonné",
+  "given_name": "Dieudonné Costes",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412407.07684,
+    "year": 1892,
+    "month": 11,
+    "day": 4,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Septfonds",
+    "country": "France",
+    "lat": 44.179444,
+    "lon": 1.619167
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "tau",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costes,_Dieudonné",
+  "source_notes": "Didier Geslain archive, 'aviation' pdf file, p. 40.\\n",
+  "categories": [
+    "Vocation : Travel : Aviation field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 15.408429,
+    "lagna": 285.408429,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.360627,
+    "jd_ut": 2412407.07684,
+    "planets": {
+      "Sun": {
+        "longitude": 200.282251,
+        "sign_index": 6,
+        "degree_in_sign": 20.282251,
+        "is_retrograde": false,
+        "speed": 1.002985
+      },
+      "Moon": {
+        "longitude": 19.242629,
+        "sign_index": 0,
+        "degree_in_sign": 19.242629,
+        "is_retrograde": false,
+        "speed": 18.971247
+      },
+      "Mars": {
+        "longitude": 304.982069,
+        "sign_index": 10,
+        "degree_in_sign": 4.982069,
+        "is_retrograde": false,
+        "speed": 0.544435
+      },
+      "Mercury": {
+        "longitude": 216.339516,
+        "sign_index": 7,
+        "degree_in_sign": 6.339516,
+        "is_retrograde": false,
+        "speed": 1.461906
+      },
+      "Jupiter": {
+        "longitude": 354.655743,
+        "sign_index": 11,
+        "degree_in_sign": 24.655743,
+        "is_retrograde": true,
+        "speed": -0.108444
+      },
+      "Venus": {
+        "longitude": 159.114859,
+        "sign_index": 5,
+        "degree_in_sign": 9.114859,
+        "is_retrograde": false,
+        "speed": 1.175349
+      },
+      "Saturn": {
+        "longitude": 165.638045,
+        "sign_index": 5,
+        "degree_in_sign": 15.638045,
+        "is_retrograde": false,
+        "speed": 0.109092
+      },
+      "Rahu": {
+        "longitude": 15.186746,
+        "sign_index": 0,
+        "degree_in_sign": 15.186746,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 195.186746,
+        "sign_index": 6,
+        "degree_in_sign": 15.186746,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

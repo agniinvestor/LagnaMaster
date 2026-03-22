@@ -1,0 +1,108 @@
+{
+  "adb_id": 68160,
+  "name": "Courson, Charles de",
+  "given_name": "Charles de Courson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434104.583333,
+    "year": 1952,
+    "month": 4,
+    "day": 2,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courson,_Charles_de",
+  "source_notes": "Didier Geslain archive, 'politique a-f' pdf file, p. 7.\\n",
+  "categories": [
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 26.381954,
+    "lagna": 236.381954,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.190159,
+    "jd_ut": 2434104.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 349.088014,
+        "sign_index": 11,
+        "degree_in_sign": 19.088014,
+        "is_retrograde": false,
+        "speed": 0.985996
+      },
+      "Moon": {
+        "longitude": 75.536206,
+        "sign_index": 2,
+        "degree_in_sign": 15.536206,
+        "is_retrograde": false,
+        "speed": 14.079028
+      },
+      "Mars": {
+        "longitude": 204.919159,
+        "sign_index": 6,
+        "degree_in_sign": 24.919159,
+        "is_retrograde": true,
+        "speed": -0.096
+      },
+      "Mercury": {
+        "longitude": 354.872067,
+        "sign_index": 11,
+        "degree_in_sign": 24.872067,
+        "is_retrograde": true,
+        "speed": -0.657502
+      },
+      "Jupiter": {
+        "longitude": 0.371364,
+        "sign_index": 0,
+        "degree_in_sign": 0.371364,
+        "is_retrograde": false,
+        "speed": 0.238958
+      },
+      "Venus": {
+        "longitude": 327.103724,
+        "sign_index": 10,
+        "degree_in_sign": 27.103724,
+        "is_retrograde": false,
+        "speed": 1.230624
+      },
+      "Saturn": {
+        "longitude": 168.386578,
+        "sign_index": 5,
+        "degree_in_sign": 18.386578,
+        "is_retrograde": true,
+        "speed": -0.077937
+      },
+      "Rahu": {
+        "longitude": 305.390599,
+        "sign_index": 10,
+        "degree_in_sign": 5.390599,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 125.390599,
+        "sign_index": 4,
+        "degree_in_sign": 5.390599,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

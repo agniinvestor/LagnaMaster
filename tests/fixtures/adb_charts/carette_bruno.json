@@ -1,0 +1,108 @@
+{
+  "adb_id": 74121,
+  "name": "Carette, Bruno",
+  "given_name": "Bruno Carette",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435803.708333,
+    "year": 1956,
+    "month": 11,
+    "day": 26,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Alger",
+    "country": "Algeria",
+    "lat": 36.783333,
+    "lon": 3.05
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carette,_Bruno",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertainment : Comedy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 26.83759,
+    "lagna": 176.83759,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.255128,
+    "jd_ut": 2435803.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 220.667096,
+        "sign_index": 7,
+        "degree_in_sign": 10.667096,
+        "is_retrograde": false,
+        "speed": 1.012191
+      },
+      "Moon": {
+        "longitude": 146.245838,
+        "sign_index": 4,
+        "degree_in_sign": 26.245838,
+        "is_retrograde": false,
+        "speed": 9.894666
+      },
+      "Mars": {
+        "longitude": 331.906958,
+        "sign_index": 11,
+        "degree_in_sign": 1.906958,
+        "is_retrograde": false,
+        "speed": 0.44526
+      },
+      "Mercury": {
+        "longitude": 228.133788,
+        "sign_index": 7,
+        "degree_in_sign": 18.133788,
+        "is_retrograde": false,
+        "speed": 1.5509
+      },
+      "Jupiter": {
+        "longitude": 154.695337,
+        "sign_index": 5,
+        "degree_in_sign": 4.695337,
+        "is_retrograde": false,
+        "speed": 0.139807
+      },
+      "Venus": {
+        "longitude": 187.559184,
+        "sign_index": 6,
+        "degree_in_sign": 7.559184,
+        "is_retrograde": false,
+        "speed": 1.22882
+      },
+      "Saturn": {
+        "longitude": 221.922724,
+        "sign_index": 7,
+        "degree_in_sign": 11.922724,
+        "is_retrograde": false,
+        "speed": 0.118645
+      },
+      "Rahu": {
+        "longitude": 215.350473,
+        "sign_index": 7,
+        "degree_in_sign": 5.350473,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 35.350473,
+        "sign_index": 1,
+        "degree_in_sign": 5.350473,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

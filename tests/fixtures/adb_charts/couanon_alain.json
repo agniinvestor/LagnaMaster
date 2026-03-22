@@ -1,0 +1,108 @@
+{
+  "adb_id": 91879,
+  "name": "Couanon, Alain",
+  "given_name": "Alain Couanon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432323.833333,
+    "year": 1947,
+    "month": 5,
+    "day": 18,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Couanon,_Alain",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Politics : Diplomat"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 4.768139,
+    "lagna": 64.768139,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.122069,
+    "jd_ut": 2432323.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 33.42654,
+        "sign_index": 1,
+        "degree_in_sign": 3.42654,
+        "is_retrograde": false,
+        "speed": 0.963373
+      },
+      "Moon": {
+        "longitude": 3.541583,
+        "sign_index": 0,
+        "degree_in_sign": 3.541583,
+        "is_retrograde": false,
+        "speed": 10.382765
+      },
+      "Mars": {
+        "longitude": 4.761758,
+        "sign_index": 0,
+        "degree_in_sign": 4.761758,
+        "is_retrograde": false,
+        "speed": 0.753422
+      },
+      "Mercury": {
+        "longitude": 36.376364,
+        "sign_index": 1,
+        "degree_in_sign": 6.376364,
+        "is_retrograde": false,
+        "speed": 2.186892
+      },
+      "Jupiter": {
+        "longitude": 209.073228,
+        "sign_index": 6,
+        "degree_in_sign": 29.073228,
+        "is_retrograde": true,
+        "speed": -0.126938
+      },
+      "Venus": {
+        "longitude": 4.767742,
+        "sign_index": 0,
+        "degree_in_sign": 4.767742,
+        "is_retrograde": false,
+        "speed": 1.205543
+      },
+      "Saturn": {
+        "longitude": 100.556298,
+        "sign_index": 3,
+        "degree_in_sign": 10.556298,
+        "is_retrograde": false,
+        "speed": 0.073886
+      },
+      "Rahu": {
+        "longitude": 39.75621,
+        "sign_index": 1,
+        "degree_in_sign": 9.75621,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 219.75621,
+        "sign_index": 7,
+        "degree_in_sign": 9.75621,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

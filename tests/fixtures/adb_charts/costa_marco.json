@@ -1,0 +1,109 @@
+{
+  "adb_id": 885,
+  "name": "Costa, Marco",
+  "given_name": "Marco Costa",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435242.784722,
+    "year": 1955,
+    "month": 5,
+    "day": 15,
+    "calendar": "g",
+    "time": "07:50",
+    "time_type": "s",
+    "hour": 7.833333,
+    "time_unknown": false,
+    "place": "Milan",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Costa,_Marco",
+  "source_notes": "Bordoni quotes B.C. Vol 3\\n",
+  "categories": [
+    "Passions : Criminal Perpetrator : Terrorist",
+    "Notable : Book Collection : Crime Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 22.425617,
+    "lagna": 52.425617,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.23368,
+    "jd_ut": 2435242.784722,
+    "planets": {
+      "Sun": {
+        "longitude": 30.437421,
+        "sign_index": 1,
+        "degree_in_sign": 0.437421,
+        "is_retrograde": false,
+        "speed": 0.964328
+      },
+      "Moon": {
+        "longitude": 302.529077,
+        "sign_index": 10,
+        "degree_in_sign": 2.529077,
+        "is_retrograde": false,
+        "speed": 9.226536
+      },
+      "Mars": {
+        "longitude": 59.693463,
+        "sign_index": 1,
+        "degree_in_sign": 29.693463,
+        "is_retrograde": false,
+        "speed": 0.659686
+      },
+      "Mercury": {
+        "longitude": 51.243667,
+        "sign_index": 1,
+        "degree_in_sign": 21.243667,
+        "is_retrograde": false,
+        "speed": 1.401999
+      },
+      "Jupiter": {
+        "longitude": 91.697383,
+        "sign_index": 3,
+        "degree_in_sign": 1.697383,
+        "is_retrograde": false,
+        "speed": 0.15449
+      },
+      "Venus": {
+        "longitude": 1.596126,
+        "sign_index": 0,
+        "degree_in_sign": 1.596126,
+        "is_retrograde": false,
+        "speed": 1.205903
+      },
+      "Saturn": {
+        "longitude": 204.187343,
+        "sign_index": 6,
+        "degree_in_sign": 24.187343,
+        "is_retrograde": true,
+        "speed": -0.074633
+      },
+      "Rahu": {
+        "longitude": 245.074967,
+        "sign_index": 8,
+        "degree_in_sign": 5.074967,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 65.074967,
+        "sign_index": 2,
+        "degree_in_sign": 5.074967,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 101341,
+  "name": "Carrillo, Trinidad",
+  "given_name": "Trinidad Carrillo",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2442483.149306,
+    "year": 1975,
+    "month": 3,
+    "day": 11,
+    "calendar": "g",
+    "time": "10:35",
+    "time_type": "s",
+    "hour": 10.583333,
+    "time_unknown": false,
+    "place": "San Isidro",
+    "country": "Peru",
+    "lat": -12.116667,
+    "lon": -77.05
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrillo,_Trinidad",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Art : Photography",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 6.573857,
+    "lagna": 6.573857,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.510543,
+    "jd_ut": 2442483.149306,
+    "planets": {
+      "Sun": {
+        "longitude": 326.92316,
+        "sign_index": 10,
+        "degree_in_sign": 26.92316,
+        "is_retrograde": false,
+        "speed": 0.998889
+      },
+      "Moon": {
+        "longitude": 312.494912,
+        "sign_index": 10,
+        "degree_in_sign": 12.494912,
+        "is_retrograde": false,
+        "speed": 6.853874
+      },
+      "Mars": {
+        "longitude": 282.830938,
+        "sign_index": 9,
+        "degree_in_sign": 12.830938,
+        "is_retrograde": false,
+        "speed": 0.755354
+      },
+      "Mercury": {
+        "longitude": 300.278782,
+        "sign_index": 10,
+        "degree_in_sign": 0.278782,
+        "is_retrograde": false,
+        "speed": 1.208375
+      },
+      "Jupiter": {
+        "longitude": 334.779677,
+        "sign_index": 11,
+        "degree_in_sign": 4.779677,
+        "is_retrograde": false,
+        "speed": 0.241319
+      },
+      "Venus": {
+        "longitude": 356.430952,
+        "sign_index": 11,
+        "degree_in_sign": 26.430952,
+        "is_retrograde": false,
+        "speed": 1.221837
+      },
+      "Saturn": {
+        "longitude": 78.435051,
+        "sign_index": 2,
+        "degree_in_sign": 18.435051,
+        "is_retrograde": true,
+        "speed": -0.005085
+      },
+      "Rahu": {
+        "longitude": 221.393235,
+        "sign_index": 7,
+        "degree_in_sign": 11.393235,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 41.393235,
+        "sign_index": 1,
+        "degree_in_sign": 11.393235,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "adb_id": 19511,
+  "name": "Cardoso, Ruth",
+  "given_name": "Ruth Cardoso",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426238.90625,
+    "year": 1930,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "06:45",
+    "time_type": "s",
+    "hour": 6.75,
+    "time_unknown": false,
+    "place": "Araraquara (São Paulo)",
+    "country": "Brazil",
+    "lat": -21.794444,
+    "lon": -48.175556
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardoso,_Ruth",
+  "source_notes": "Marcello Borges quotes Raul Varela for B.C. in hand\\n",
+  "categories": [
+    "Traits : Personality : Solitary/ Introvert",
+    "Family : Relationship : Mate - Noted",
+    "Notable : Famous : Newsmaker",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.662556,
+    "lagna": 141.662556,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.889416,
+    "jd_ut": 2426238.90625,
+    "planets": {
+      "Sun": {
+        "longitude": 152.837694,
+        "sign_index": 5,
+        "degree_in_sign": 2.837694,
+        "is_retrograde": false,
+        "speed": 0.977245
+      },
+      "Moon": {
+        "longitude": 110.078808,
+        "sign_index": 3,
+        "degree_in_sign": 20.078808,
+        "is_retrograde": false,
+        "speed": 10.274033
+      },
+      "Mars": {
+        "longitude": 80.419878,
+        "sign_index": 2,
+        "degree_in_sign": 20.419878,
+        "is_retrograde": false,
+        "speed": 0.581812
+      },
+      "Mercury": {
+        "longitude": 157.837103,
+        "sign_index": 5,
+        "degree_in_sign": 7.837103,
+        "is_retrograde": true,
+        "speed": -1.040225
+      },
+      "Jupiter": {
+        "longitude": 83.874607,
+        "sign_index": 2,
+        "degree_in_sign": 23.874607,
+        "is_retrograde": false,
+        "speed": 0.140511
+      },
+      "Venus": {
+        "longitude": 198.971216,
+        "sign_index": 6,
+        "degree_in_sign": 18.971216,
+        "is_retrograde": false,
+        "speed": 0.925721
+      },
+      "Saturn": {
+        "longitude": 252.442596,
+        "sign_index": 8,
+        "degree_in_sign": 12.442596,
+        "is_retrograde": false,
+        "speed": 0.015388
+      },
+      "Rahu": {
+        "longitude": 2.209094,
+        "sign_index": 0,
+        "degree_in_sign": 2.209094,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 182.209094,
+        "sign_index": 6,
+        "degree_in_sign": 2.209094,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

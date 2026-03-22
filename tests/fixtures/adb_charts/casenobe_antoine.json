@@ -1,0 +1,109 @@
+{
+  "adb_id": 64236,
+  "name": "Casenobe, Antoine",
+  "given_name": "Antoine Casenobe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420438.625,
+    "year": 1914,
+    "month": 11,
+    "day": 2,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Saleilles",
+    "country": "France",
+    "lat": 42.655278,
+    "lon": 2.9525
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "ari",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Casenobe,_Antoine",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'aviation' pdf file, p. 31.\\n",
+  "categories": [
+    "Vocation : Military : Military service",
+    "Vocation : Travel : Pilot/ military"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 13.4936,
+    "lagna": 133.4936,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.667661,
+    "jd_ut": 2420438.625,
+    "planets": {
+      "Sun": {
+        "longitude": 196.182601,
+        "sign_index": 6,
+        "degree_in_sign": 16.182601,
+        "is_retrograde": false,
+        "speed": 1.000855
+      },
+      "Moon": {
+        "longitude": 6.031408,
+        "sign_index": 0,
+        "degree_in_sign": 6.031408,
+        "is_retrograde": false,
+        "speed": 9.833647
+      },
+      "Mars": {
+        "longitude": 210.674195,
+        "sign_index": 7,
+        "degree_in_sign": 0.674195,
+        "is_retrograde": false,
+        "speed": 0.709349
+      },
+      "Mercury": {
+        "longitude": 207.841489,
+        "sign_index": 6,
+        "degree_in_sign": 27.841489,
+        "is_retrograde": true,
+        "speed": -0.873736
+      },
+      "Jupiter": {
+        "longitude": 290.698922,
+        "sign_index": 9,
+        "degree_in_sign": 20.698922,
+        "is_retrograde": false,
+        "speed": 0.076431
+      },
+      "Venus": {
+        "longitude": 229.135755,
+        "sign_index": 7,
+        "degree_in_sign": 19.135755,
+        "is_retrograde": false,
+        "speed": 0.189952
+      },
+      "Saturn": {
+        "longitude": 69.377615,
+        "sign_index": 2,
+        "degree_in_sign": 9.377615,
+        "is_retrograde": true,
+        "speed": -0.032249
+      },
+      "Rahu": {
+        "longitude": 309.578098,
+        "sign_index": 10,
+        "degree_in_sign": 9.578098,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 129.578098,
+        "sign_index": 4,
+        "degree_in_sign": 9.578098,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

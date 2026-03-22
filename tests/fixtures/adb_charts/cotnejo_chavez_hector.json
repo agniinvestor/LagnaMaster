@@ -1,0 +1,108 @@
+{
+  "adb_id": 73572,
+  "name": "Cotnejo Chavez, Hector",
+  "given_name": "Hector Cotnejo Chavez",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421913.09375,
+    "year": 1918,
+    "month": 11,
+    "day": 15,
+    "calendar": "g",
+    "time": "09:15",
+    "time_type": "s",
+    "hour": 9.25,
+    "time_unknown": false,
+    "place": "Arequipa",
+    "country": "Peru",
+    "lat": -16.4,
+    "lon": -71.55
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "ari",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cotnejo_Chavez,_Hector",
+  "source_notes": "Castellanos quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 5.648315,
+    "lagna": 245.648315,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.724031,
+    "jd_ut": 2421913.09375,
+    "planets": {
+      "Sun": {
+        "longitude": 209.688183,
+        "sign_index": 6,
+        "degree_in_sign": 29.688183,
+        "is_retrograde": false,
+        "speed": 1.007354
+      },
+      "Moon": {
+        "longitude": 351.625521,
+        "sign_index": 11,
+        "degree_in_sign": 21.625521,
+        "is_retrograde": false,
+        "speed": 20.245199
+      },
+      "Mars": {
+        "longitude": 250.423162,
+        "sign_index": 8,
+        "degree_in_sign": 10.423162,
+        "is_retrograde": false,
+        "speed": 0.758
+      },
+      "Mercury": {
+        "longitude": 227.033501,
+        "sign_index": 7,
+        "degree_in_sign": 17.033501,
+        "is_retrograde": false,
+        "speed": 1.432722
+      },
+      "Jupiter": {
+        "longitude": 82.858852,
+        "sign_index": 2,
+        "degree_in_sign": 22.858852,
+        "is_retrograde": true,
+        "speed": -0.039991
+      },
+      "Venus": {
+        "longitude": 207.596377,
+        "sign_index": 6,
+        "degree_in_sign": 27.596377,
+        "is_retrograde": false,
+        "speed": 1.256275
+      },
+      "Saturn": {
+        "longitude": 124.975546,
+        "sign_index": 4,
+        "degree_in_sign": 4.975546,
+        "is_retrograde": false,
+        "speed": 0.044195
+      },
+      "Rahu": {
+        "longitude": 231.442914,
+        "sign_index": 7,
+        "degree_in_sign": 21.442914,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 51.442914,
+        "sign_index": 1,
+        "degree_in_sign": 21.442914,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

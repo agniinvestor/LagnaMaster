@@ -1,0 +1,110 @@
+{
+  "adb_id": 105266,
+  "name": "Castryck, Titouan",
+  "given_name": "Titouan Castryck",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2453246.269444,
+    "year": 2004,
+    "month": 8,
+    "day": 28,
+    "calendar": "g",
+    "time": "20:28",
+    "time_type": "d",
+    "hour": 20.466667,
+    "time_unknown": false,
+    "place": "Saint Malo",
+    "country": "France",
+    "lat": 48.65,
+    "lon": -2.016667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "aqu",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castryck,_Titouan",
+  "source_notes": "Marc Brun quoted birth certificate.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Sports : Rowing/ Kayaking",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 6.376689,
+    "lagna": 276.376689,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.922158,
+    "jd_ut": 2453246.269444,
+    "planets": {
+      "Sun": {
+        "longitude": 131.852249,
+        "sign_index": 4,
+        "degree_in_sign": 11.852249,
+        "is_retrograde": false,
+        "speed": 0.96586
+      },
+      "Moon": {
+        "longitude": 294.301698,
+        "sign_index": 9,
+        "degree_in_sign": 24.301698,
+        "is_retrograde": false,
+        "speed": 12.789083
+      },
+      "Mars": {
+        "longitude": 137.731828,
+        "sign_index": 4,
+        "degree_in_sign": 17.731828,
+        "is_retrograde": false,
+        "speed": 0.637005
+      },
+      "Mercury": {
+        "longitude": 123.322178,
+        "sign_index": 4,
+        "degree_in_sign": 3.322178,
+        "is_retrograde": true,
+        "speed": -0.596403
+      },
+      "Jupiter": {
+        "longitude": 150.212536,
+        "sign_index": 5,
+        "degree_in_sign": 0.212536,
+        "is_retrograde": false,
+        "speed": 0.209971
+      },
+      "Venus": {
+        "longitude": 86.458449,
+        "sign_index": 2,
+        "degree_in_sign": 26.458449,
+        "is_retrograde": false,
+        "speed": 1.027265
+      },
+      "Saturn": {
+        "longitude": 89.156351,
+        "sign_index": 2,
+        "degree_in_sign": 29.156351,
+        "is_retrograde": false,
+        "speed": 0.106877
+      },
+      "Rahu": {
+        "longitude": 11.033738,
+        "sign_index": 0,
+        "degree_in_sign": 11.033738,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 191.033738,
+        "sign_index": 6,
+        "degree_in_sign": 11.033738,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

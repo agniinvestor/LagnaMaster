@@ -1,0 +1,108 @@
+{
+  "adb_id": 49039,
+  "name": "Clark, Wesley (2003)",
+  "given_name": "Wesley (2003) Clark",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2452999.555556,
+    "year": 2003,
+    "month": 12,
+    "day": 25,
+    "calendar": "g",
+    "time": "17:20",
+    "time_type": "s",
+    "hour": 17.333333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Wesley_(2003)",
+  "source_notes": "PT quotes press release on General Clark's 2004 presidential campaign website\\n",
+  "categories": [
+    "Family : Childhood : Family noted"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 23.682344,
+    "lagna": 53.682344,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.912722,
+    "jd_ut": 2452999.555556,
+    "planets": {
+      "Sun": {
+        "longitude": 249.923707,
+        "sign_index": 8,
+        "degree_in_sign": 9.923707,
+        "is_retrograde": false,
+        "speed": 1.019151
+      },
+      "Moon": {
+        "longitude": 285.661482,
+        "sign_index": 9,
+        "degree_in_sign": 15.661482,
+        "is_retrograde": false,
+        "speed": 11.076643
+      },
+      "Mars": {
+        "longitude": 341.677117,
+        "sign_index": 11,
+        "degree_in_sign": 11.677117,
+        "is_retrograde": false,
+        "speed": 0.597349
+      },
+      "Mercury": {
+        "longitude": 252.291001,
+        "sign_index": 8,
+        "degree_in_sign": 12.291001,
+        "is_retrograde": true,
+        "speed": -1.344632
+      },
+      "Jupiter": {
+        "longitude": 144.866452,
+        "sign_index": 4,
+        "degree_in_sign": 24.866452,
+        "is_retrograde": false,
+        "speed": 0.028508
+      },
+      "Venus": {
+        "longitude": 281.991102,
+        "sign_index": 9,
+        "degree_in_sign": 11.991102,
+        "is_retrograde": false,
+        "speed": 1.232399
+      },
+      "Saturn": {
+        "longitude": 76.332187,
+        "sign_index": 2,
+        "degree_in_sign": 16.332187,
+        "is_retrograde": true,
+        "speed": -0.081879
+      },
+      "Rahu": {
+        "longitude": 24.107602,
+        "sign_index": 0,
+        "degree_in_sign": 24.107602,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 204.107602,
+        "sign_index": 6,
+        "degree_in_sign": 24.107602,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

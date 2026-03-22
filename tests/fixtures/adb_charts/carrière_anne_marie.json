@@ -1,0 +1,109 @@
+{
+  "adb_id": 51915,
+  "name": "Carrière, Anne Marie",
+  "given_name": "Anne Marie Carrière",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424167.1875,
+    "year": 1925,
+    "month": 1,
+    "day": 16,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "s",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carrière,_Anne_Marie",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin ns 3/0261\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Comedy"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 12.960945,
+    "lagna": 72.960945,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.810208,
+    "jd_ut": 2424167.1875,
+    "planets": {
+      "Sun": {
+        "longitude": 273.254724,
+        "sign_index": 9,
+        "degree_in_sign": 3.254724,
+        "is_retrograde": false,
+        "speed": 1.018238
+      },
+      "Moon": {
+        "longitude": 167.616934,
+        "sign_index": 5,
+        "degree_in_sign": 17.616934,
+        "is_retrograde": false,
+        "speed": 16.46879
+      },
+      "Mars": {
+        "longitude": 354.614876,
+        "sign_index": 11,
+        "degree_in_sign": 24.614876,
+        "is_retrograde": false,
+        "speed": 0.631229
+      },
+      "Mercury": {
+        "longitude": 249.270064,
+        "sign_index": 8,
+        "degree_in_sign": 9.270064,
+        "is_retrograde": false,
+        "speed": 0.943991
+      },
+      "Jupiter": {
+        "longitude": 253.897533,
+        "sign_index": 8,
+        "degree_in_sign": 13.897533,
+        "is_retrograde": false,
+        "speed": 0.223407
+      },
+      "Venus": {
+        "longitude": 249.377439,
+        "sign_index": 8,
+        "degree_in_sign": 9.377439,
+        "is_retrograde": false,
+        "speed": 1.247576
+      },
+      "Saturn": {
+        "longitude": 200.374545,
+        "sign_index": 6,
+        "degree_in_sign": 20.374545,
+        "is_retrograde": false,
+        "speed": 0.06037
+      },
+      "Rahu": {
+        "longitude": 111.993781,
+        "sign_index": 3,
+        "degree_in_sign": 21.993781,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 291.993781,
+        "sign_index": 9,
+        "degree_in_sign": 21.993781,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

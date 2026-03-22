@@ -1,0 +1,110 @@
+{
+  "adb_id": 103269,
+  "name": "Castro de Andrade, Luiz",
+  "given_name": "Luiz Castro de Andrade",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436490.6875,
+    "year": 1958,
+    "month": 10,
+    "day": 14,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Bela Vista (São Paulo)",
+    "country": "Brazil",
+    "lat": -23.083333,
+    "lon": -47.9
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castro_de_Andrade,_Luiz",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Politics : Candidate and lost",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 14.117876,
+    "lagna": 74.117876,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.281397,
+    "jd_ut": 2436490.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 177.043233,
+        "sign_index": 5,
+        "degree_in_sign": 27.043233,
+        "is_retrograde": false,
+        "speed": 0.991068
+      },
+      "Moon": {
+        "longitude": 195.640449,
+        "sign_index": 6,
+        "degree_in_sign": 15.640449,
+        "is_retrograde": false,
+        "speed": 20.457009
+      },
+      "Mars": {
+        "longitude": 39.145427,
+        "sign_index": 1,
+        "degree_in_sign": 9.145427,
+        "is_retrograde": true,
+        "speed": -0.05684
+      },
+      "Mercury": {
+        "longitude": 183.163651,
+        "sign_index": 6,
+        "degree_in_sign": 3.163651,
+        "is_retrograde": false,
+        "speed": 1.641231
+      },
+      "Jupiter": {
+        "longitude": 194.075924,
+        "sign_index": 6,
+        "degree_in_sign": 14.075924,
+        "is_retrograde": false,
+        "speed": 0.21389
+      },
+      "Venus": {
+        "longitude": 169.817337,
+        "sign_index": 5,
+        "degree_in_sign": 19.817337,
+        "is_retrograde": false,
+        "speed": 1.25057
+      },
+      "Saturn": {
+        "longitude": 237.845864,
+        "sign_index": 7,
+        "degree_in_sign": 27.845864,
+        "is_retrograde": false,
+        "speed": 0.075872
+      },
+      "Rahu": {
+        "longitude": 178.946037,
+        "sign_index": 5,
+        "degree_in_sign": 28.946037,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 358.946037,
+        "sign_index": 11,
+        "degree_in_sign": 28.946037,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

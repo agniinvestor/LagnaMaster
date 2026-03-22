@@ -1,0 +1,109 @@
+{
+  "adb_id": 85290,
+  "name": "Cristiani, Mateo",
+  "given_name": "Mateo Cristiani",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411646.371759,
+    "year": 1890,
+    "month": 10,
+    "day": 5,
+    "calendar": "g",
+    "time": "21:30",
+    "time_type": "l",
+    "hour": 21.5,
+    "time_unknown": false,
+    "place": "Frankfurt am Main",
+    "country": "Germany",
+    "lat": 50.116667,
+    "lon": 8.666667
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cristiani,_Mateo",
+  "source_notes": "Sy Scholfield provided birth registry entry from Hesse Archives. Marriage and death data in margin.\\n",
+  "categories": [
+    "Lifestyle : Financial : Invest/ Collectibles",
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 22.619734,
+    "lagna": 52.619734,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.331547,
+    "jd_ut": 2411646.371759,
+    "planets": {
+      "Sun": {
+        "longitude": 170.229103,
+        "sign_index": 5,
+        "degree_in_sign": 20.229103,
+        "is_retrograde": false,
+        "speed": 0.98686
+      },
+      "Moon": {
+        "longitude": 81.0152,
+        "sign_index": 2,
+        "degree_in_sign": 21.0152,
+        "is_retrograde": false,
+        "speed": 14.130216
+      },
+      "Mars": {
+        "longitude": 255.574148,
+        "sign_index": 8,
+        "degree_in_sign": 15.574148,
+        "is_retrograde": false,
+        "speed": 0.667422
+      },
+      "Mercury": {
+        "longitude": 158.759279,
+        "sign_index": 5,
+        "degree_in_sign": 8.759279,
+        "is_retrograde": true,
+        "speed": -0.518356
+      },
+      "Jupiter": {
+        "longitude": 280.090531,
+        "sign_index": 9,
+        "degree_in_sign": 10.090531,
+        "is_retrograde": false,
+        "speed": 0.024197
+      },
+      "Venus": {
+        "longitude": 216.161685,
+        "sign_index": 7,
+        "degree_in_sign": 6.161685,
+        "is_retrograde": false,
+        "speed": 0.886099
+      },
+      "Saturn": {
+        "longitude": 139.386901,
+        "sign_index": 4,
+        "degree_in_sign": 19.386901,
+        "is_retrograde": false,
+        "speed": 0.114583
+      },
+      "Rahu": {
+        "longitude": 55.498117,
+        "sign_index": 1,
+        "degree_in_sign": 25.498117,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 235.498117,
+        "sign_index": 7,
+        "degree_in_sign": 25.498117,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

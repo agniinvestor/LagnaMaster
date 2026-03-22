@@ -1,0 +1,112 @@
+{
+  "adb_id": 1972,
+  "name": "Corot, Jean-Baptiste",
+  "given_name": "Jean-Baptiste Corot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2377232.556019,
+    "year": 1796,
+    "month": 7,
+    "day": 16,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "l",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corot,_Jean-Baptiste",
+  "source_notes": "Gauquelin Vol. 4/250\\nSy Scholfield cites same data from birth certificate quoted in \"Corot, 1796-1875: expositions Paris, Galeries nationales du Grand Palais, 28 février-27 mai 1996\" by Michael Pantazzi et al (Réunion des musées nationaux, 1996), p. 66: \"Du vingt huit messidor de l'an 4 de la République, naissance de J.B.C. du sexe masculin, né ce jour d'huy, a une heure trente du matin.\"\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Circulatory problems",
+    "Lifestyle : Financial : Gain - Inheritance",
+    "Vocation : Art : Fine art artist",
+    "Notable : Awards : Vocational award",
+    "Notable : Book Collection : American Book"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.010915,
+    "lagna": 35.010915,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.016306,
+    "jd_ut": 2377232.556019,
+    "planets": {
+      "Sun": {
+        "longitude": 93.089977,
+        "sign_index": 3,
+        "degree_in_sign": 3.089977,
+        "is_retrograde": false,
+        "speed": 0.953941
+      },
+      "Moon": {
+        "longitude": 228.95549,
+        "sign_index": 7,
+        "degree_in_sign": 18.95549,
+        "is_retrograde": false,
+        "speed": 10.265843
+      },
+      "Mars": {
+        "longitude": 236.372226,
+        "sign_index": 7,
+        "degree_in_sign": 26.372226,
+        "is_retrograde": true,
+        "speed": -0.063379
+      },
+      "Mercury": {
+        "longitude": 79.897722,
+        "sign_index": 2,
+        "degree_in_sign": 19.897722,
+        "is_retrograde": true,
+        "speed": -0.142464
+      },
+      "Jupiter": {
+        "longitude": 321.67765,
+        "sign_index": 10,
+        "degree_in_sign": 21.67765,
+        "is_retrograde": true,
+        "speed": -0.046476
+      },
+      "Venus": {
+        "longitude": 120.935505,
+        "sign_index": 4,
+        "degree_in_sign": 0.935505,
+        "is_retrograde": true,
+        "speed": -0.031979
+      },
+      "Saturn": {
+        "longitude": 61.099686,
+        "sign_index": 2,
+        "degree_in_sign": 1.099686,
+        "is_retrograde": false,
+        "speed": 0.117356
+      },
+      "Rahu": {
+        "longitude": 79.16059,
+        "sign_index": 2,
+        "degree_in_sign": 19.16059,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 259.16059,
+        "sign_index": 8,
+        "degree_in_sign": 19.16059,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

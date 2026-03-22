@@ -1,0 +1,108 @@
+{
+  "adb_id": 103052,
+  "name": "Castéra, René de",
+  "given_name": "René de Castéra",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2405251.58625,
+    "year": 1873,
+    "month": 4,
+    "day": 3,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Dax",
+    "country": "France",
+    "lat": 43.716667,
+    "lon": -1.05
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castéra,_René_de",
+  "source_notes": "Taeger Vol. 1, p. 271 LES-14\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Composer/ Arranger"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 2.682208,
+    "lagna": 242.682208,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.087108,
+    "jd_ut": 2405251.58625,
+    "planets": {
+      "Sun": {
+        "longitude": 351.31247,
+        "sign_index": 11,
+        "degree_in_sign": 21.31247,
+        "is_retrograde": false,
+        "speed": 0.984602
+      },
+      "Moon": {
+        "longitude": 61.625317,
+        "sign_index": 2,
+        "degree_in_sign": 1.625317,
+        "is_retrograde": false,
+        "speed": 15.682237
+      },
+      "Mars": {
+        "longitude": 202.269183,
+        "sign_index": 6,
+        "degree_in_sign": 22.269183,
+        "is_retrograde": true,
+        "speed": -0.155031
+      },
+      "Mercury": {
+        "longitude": 356.411667,
+        "sign_index": 11,
+        "degree_in_sign": 26.411667,
+        "is_retrograde": true,
+        "speed": -0.671528
+      },
+      "Jupiter": {
+        "longitude": 119.704884,
+        "sign_index": 3,
+        "degree_in_sign": 29.704884,
+        "is_retrograde": true,
+        "speed": -0.044599
+      },
+      "Venus": {
+        "longitude": 29.066256,
+        "sign_index": 0,
+        "degree_in_sign": 29.066256,
+        "is_retrograde": false,
+        "speed": 0.397872
+      },
+      "Saturn": {
+        "longitude": 279.415085,
+        "sign_index": 9,
+        "degree_in_sign": 9.415085,
+        "is_retrograde": false,
+        "speed": 0.060892
+      },
+      "Rahu": {
+        "longitude": 34.371386,
+        "sign_index": 1,
+        "degree_in_sign": 4.371386,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 214.371386,
+        "sign_index": 7,
+        "degree_in_sign": 4.371386,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

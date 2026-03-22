@@ -1,0 +1,110 @@
+{
+  "adb_id": 60423,
+  "name": "Cornu, Marie Alfred",
+  "given_name": "Marie Alfred Cornu",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2393536.869722,
+    "year": 1841,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Orléans",
+    "country": "France",
+    "lat": 47.916667,
+    "lon": 1.9
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "vir",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornu,_Marie_Alfred",
+  "source_notes": "Gauquelin vol 2\\n",
+  "categories": [
+    "Vocation : Science : Physics",
+    "Notable : Famous : Founder/ originator",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 11.317377,
+    "lagna": 11.317377,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.639363,
+    "jd_ut": 2393536.869722,
+    "planets": {
+      "Sun": {
+        "longitude": 325.017132,
+        "sign_index": 10,
+        "degree_in_sign": 25.017132,
+        "is_retrograde": false,
+        "speed": 0.998856
+      },
+      "Moon": {
+        "longitude": 142.27376,
+        "sign_index": 4,
+        "degree_in_sign": 22.27376,
+        "is_retrograde": false,
+        "speed": 16.95977
+      },
+      "Mars": {
+        "longitude": 194.309364,
+        "sign_index": 6,
+        "degree_in_sign": 14.309364,
+        "is_retrograde": false,
+        "speed": 0.052063
+      },
+      "Mercury": {
+        "longitude": 342.512051,
+        "sign_index": 11,
+        "degree_in_sign": 12.512051,
+        "is_retrograde": false,
+        "speed": 0.579702
+      },
+      "Jupiter": {
+        "longitude": 236.879564,
+        "sign_index": 7,
+        "degree_in_sign": 26.879564,
+        "is_retrograde": false,
+        "speed": 0.088166
+      },
+      "Venus": {
+        "longitude": 11.300732,
+        "sign_index": 0,
+        "degree_in_sign": 11.300732,
+        "is_retrograde": false,
+        "speed": 0.977658
+      },
+      "Saturn": {
+        "longitude": 250.413247,
+        "sign_index": 8,
+        "degree_in_sign": 10.413247,
+        "is_retrograde": false,
+        "speed": 0.056322
+      },
+      "Rahu": {
+        "longitude": 295.159381,
+        "sign_index": 9,
+        "degree_in_sign": 25.159381,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 115.159381,
+        "sign_index": 3,
+        "degree_in_sign": 25.159381,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

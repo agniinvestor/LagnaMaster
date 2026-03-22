@@ -1,0 +1,111 @@
+{
+  "adb_id": 37330,
+  "name": "Christophe, Father",
+  "given_name": "Father Christophe",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433556.0625,
+    "year": 1950,
+    "month": 10,
+    "day": 1,
+    "calendar": "g",
+    "time": "14:30",
+    "time_type": "s",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "Blois",
+    "country": "France",
+    "lat": 47.583333,
+    "lon": 1.333333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christophe,_Father",
+  "source_notes": "Petitallot quotes B.C., Cadran No.33, 9/1996\\n",
+  "categories": [
+    "Passions : Sexuality : Celibacy/ Minimal",
+    "Passions : Criminal Victim : Homicide victim",
+    "Passions : Criminal Victim : Kidnapping victim",
+    "Vocation : Religion : Ecclesiastics/ western"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 18.5605,
+    "lagna": 228.5605,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.169185,
+    "jd_ut": 2433556.0625,
+    "planets": {
+      "Sun": {
+        "longitude": 164.628621,
+        "sign_index": 5,
+        "degree_in_sign": 14.628621,
+        "is_retrograde": false,
+        "speed": 0.983333
+      },
+      "Moon": {
+        "longitude": 43.813949,
+        "sign_index": 1,
+        "degree_in_sign": 13.813949,
+        "is_retrograde": false,
+        "speed": 14.899362
+      },
+      "Mars": {
+        "longitude": 220.83593,
+        "sign_index": 7,
+        "degree_in_sign": 10.83593,
+        "is_retrograde": false,
+        "speed": 0.702586
+      },
+      "Mercury": {
+        "longitude": 146.881935,
+        "sign_index": 4,
+        "degree_in_sign": 26.881935,
+        "is_retrograde": false,
+        "speed": 0.80462
+      },
+      "Jupiter": {
+        "longitude": 305.273717,
+        "sign_index": 10,
+        "degree_in_sign": 5.273717,
+        "is_retrograde": true,
+        "speed": -0.073378
+      },
+      "Venus": {
+        "longitude": 153.489823,
+        "sign_index": 5,
+        "degree_in_sign": 3.489823,
+        "is_retrograde": false,
+        "speed": 1.245504
+      },
+      "Saturn": {
+        "longitude": 151.430147,
+        "sign_index": 5,
+        "degree_in_sign": 1.430147,
+        "is_retrograde": false,
+        "speed": 0.122727
+      },
+      "Rahu": {
+        "longitude": 334.457847,
+        "sign_index": 11,
+        "degree_in_sign": 4.457847,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 154.457847,
+        "sign_index": 5,
+        "degree_in_sign": 4.457847,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

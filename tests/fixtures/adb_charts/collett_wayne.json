@@ -1,0 +1,111 @@
+{
+  "adb_id": 50802,
+  "name": "Collett, Wayne",
+  "given_name": "Wayne Collett",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433210.588889,
+    "year": 1949,
+    "month": 10,
+    "day": 20,
+    "calendar": "g",
+    "time": "18:08",
+    "time_type": "s",
+    "hour": 18.133333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "lib",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collett,_Wayne",
+  "source_notes": "Steinbrecher Collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Cancer",
+    "Personal : Death : Illness/ Disease",
+    "Vocation : Sports : Track and Field",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 1.038509,
+    "lagna": 1.038509,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.155976,
+    "jd_ut": 2433210.588889,
+    "planets": {
+      "Sun": {
+        "longitude": 184.193429,
+        "sign_index": 6,
+        "degree_in_sign": 4.193429,
+        "is_retrograde": false,
+        "speed": 0.995145
+      },
+      "Moon": {
+        "longitude": 172.260224,
+        "sign_index": 5,
+        "degree_in_sign": 22.260224,
+        "is_retrograde": false,
+        "speed": 16.467504
+      },
+      "Mars": {
+        "longitude": 123.435162,
+        "sign_index": 4,
+        "degree_in_sign": 3.435162,
+        "is_retrograde": false,
+        "speed": 0.57773
+      },
+      "Mercury": {
+        "longitude": 166.221844,
+        "sign_index": 5,
+        "degree_in_sign": 16.221844,
+        "is_retrograde": false,
+        "speed": 1.179457
+      },
+      "Jupiter": {
+        "longitude": 270.831069,
+        "sign_index": 9,
+        "degree_in_sign": 0.831069,
+        "is_retrograde": false,
+        "speed": 0.099173
+      },
+      "Venus": {
+        "longitude": 228.993403,
+        "sign_index": 7,
+        "degree_in_sign": 18.993403,
+        "is_retrograde": false,
+        "speed": 1.129251
+      },
+      "Saturn": {
+        "longitude": 142.212255,
+        "sign_index": 4,
+        "degree_in_sign": 22.212255,
+        "is_retrograde": false,
+        "speed": 0.104512
+      },
+      "Rahu": {
+        "longitude": 352.765206,
+        "sign_index": 11,
+        "degree_in_sign": 22.765206,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 172.765206,
+        "sign_index": 5,
+        "degree_in_sign": 22.765206,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

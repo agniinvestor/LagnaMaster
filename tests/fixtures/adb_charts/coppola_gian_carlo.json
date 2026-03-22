@@ -1,0 +1,108 @@
+{
+  "adb_id": 50944,
+  "name": "Coppola, Gian-Carlo",
+  "given_name": "Gian-Carlo Coppola",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438290.213889,
+    "year": 1963,
+    "month": 9,
+    "day": 17,
+    "calendar": "g",
+    "time": "10:08",
+    "time_type": "d",
+    "hour": 10.133333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coppola,_Gian-Carlo",
+  "source_notes": "Steinbrecher collection: Steinbrecher quotes mother from birth certificate\\n",
+  "categories": [
+    "Personal : Death : Accidental"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 20.643033,
+    "lagna": 170.643033,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.350207,
+    "jd_ut": 2438290.213889,
+    "planets": {
+      "Sun": {
+        "longitude": 150.737366,
+        "sign_index": 5,
+        "degree_in_sign": 0.737366,
+        "is_retrograde": false,
+        "speed": 0.976062
+      },
+      "Moon": {
+        "longitude": 149.594119,
+        "sign_index": 4,
+        "degree_in_sign": 29.594119,
+        "is_retrograde": false,
+        "speed": 9.058481
+      },
+      "Mars": {
+        "longitude": 190.223149,
+        "sign_index": 6,
+        "degree_in_sign": 10.223149,
+        "is_retrograde": false,
+        "speed": 0.67275
+      },
+      "Mercury": {
+        "longitude": 155.789598,
+        "sign_index": 5,
+        "degree_in_sign": 5.789598,
+        "is_retrograde": true,
+        "speed": -1.02624
+      },
+      "Jupiter": {
+        "longitude": 353.743437,
+        "sign_index": 11,
+        "degree_in_sign": 23.743437,
+        "is_retrograde": true,
+        "speed": -0.113895
+      },
+      "Venus": {
+        "longitude": 155.794947,
+        "sign_index": 5,
+        "degree_in_sign": 5.794947,
+        "is_retrograde": false,
+        "speed": 1.244163
+      },
+      "Saturn": {
+        "longitude": 294.031998,
+        "sign_index": 9,
+        "degree_in_sign": 24.031998,
+        "is_retrograde": true,
+        "speed": -0.052035
+      },
+      "Rahu": {
+        "longitude": 83.585446,
+        "sign_index": 2,
+        "degree_in_sign": 23.585446,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 263.585446,
+        "sign_index": 8,
+        "degree_in_sign": 23.585446,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

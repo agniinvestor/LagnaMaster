@@ -1,0 +1,112 @@
+{
+  "adb_id": 90596,
+  "name": "Clark, Dick (1933)",
+  "given_name": "Dick (1933) Clark",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427202.125,
+    "year": 1933,
+    "month": 5,
+    "day": 9,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "San Antonio",
+    "country": "Texas",
+    "lat": 29.416667,
+    "lon": -98.5
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clark,_Dick_(1933)",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Traits : Body : Hair",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Building Trades : Contractor",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 21.037642,
+    "lagna": 51.037642,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.926243,
+    "jd_ut": 2427202.125,
+    "planets": {
+      "Sun": {
+        "longitude": 25.589088,
+        "sign_index": 0,
+        "degree_in_sign": 25.589088,
+        "is_retrograde": false,
+        "speed": 0.965914
+      },
+      "Moon": {
+        "longitude": 200.867414,
+        "sign_index": 6,
+        "degree_in_sign": 20.867414,
+        "is_retrograde": false,
+        "speed": 18.160581
+      },
+      "Mars": {
+        "longitude": 132.014863,
+        "sign_index": 4,
+        "degree_in_sign": 12.014863,
+        "is_retrograde": false,
+        "speed": 0.274381
+      },
+      "Mercury": {
+        "longitude": 5.881634,
+        "sign_index": 0,
+        "degree_in_sign": 5.881634,
+        "is_retrograde": false,
+        "speed": 1.698667
+      },
+      "Jupiter": {
+        "longitude": 140.363313,
+        "sign_index": 4,
+        "degree_in_sign": 20.363313,
+        "is_retrograde": true,
+        "speed": -0.002513
+      },
+      "Venus": {
+        "longitude": 30.312789,
+        "sign_index": 1,
+        "degree_in_sign": 0.312789,
+        "is_retrograde": false,
+        "speed": 1.231515
+      },
+      "Saturn": {
+        "longitude": 293.201986,
+        "sign_index": 9,
+        "degree_in_sign": 23.201986,
+        "is_retrograde": false,
+        "speed": 0.028349
+      },
+      "Rahu": {
+        "longitude": 311.166132,
+        "sign_index": 10,
+        "degree_in_sign": 11.166132,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 131.166132,
+        "sign_index": 4,
+        "degree_in_sign": 11.166132,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 74853,
+  "name": "Carlos, Count of Montemolin",
+  "given_name": "Count of Montemolin Carlos",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2385100.784537,
+    "year": 1818,
+    "month": 1,
+    "day": 31,
+    "calendar": "g",
+    "time": "06:35",
+    "time_type": "l",
+    "hour": 6.583333,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlos,_Count_of_Montemolin",
+  "source_notes": "Castellanos quotes BC\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids none",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 15.256362,
+    "lagna": 255.256362,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.316969,
+    "jd_ut": 2385100.784537,
+    "planets": {
+      "Sun": {
+        "longitude": 289.562475,
+        "sign_index": 9,
+        "degree_in_sign": 19.562475,
+        "is_retrograde": false,
+        "speed": 1.01472
+      },
+      "Moon": {
+        "longitude": 220.57504,
+        "sign_index": 7,
+        "degree_in_sign": 10.57504,
+        "is_retrograde": false,
+        "speed": 9.7978
+      },
+      "Mars": {
+        "longitude": 48.806637,
+        "sign_index": 1,
+        "degree_in_sign": 18.806637,
+        "is_retrograde": false,
+        "speed": 0.19548
+      },
+      "Mercury": {
+        "longitude": 274.493733,
+        "sign_index": 9,
+        "degree_in_sign": 4.493733,
+        "is_retrograde": true,
+        "speed": -0.624296
+      },
+      "Jupiter": {
+        "longitude": 251.130028,
+        "sign_index": 8,
+        "degree_in_sign": 11.130028,
+        "is_retrograde": false,
+        "speed": 0.202573
+      },
+      "Venus": {
+        "longitude": 279.600953,
+        "sign_index": 9,
+        "degree_in_sign": 9.600953,
+        "is_retrograde": false,
+        "speed": 1.254015
+      },
+      "Saturn": {
+        "longitude": 313.974845,
+        "sign_index": 10,
+        "degree_in_sign": 13.974845,
+        "is_retrograde": false,
+        "speed": 0.114833
+      },
+      "Rahu": {
+        "longitude": 22.20588,
+        "sign_index": 0,
+        "degree_in_sign": 22.20588,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 202.20588,
+        "sign_index": 6,
+        "degree_in_sign": 22.20588,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

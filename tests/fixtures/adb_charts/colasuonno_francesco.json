@@ -1,0 +1,106 @@
+{
+  "adb_id": 49664,
+  "name": "Colasuonno, Francesco",
+  "given_name": "Francesco Colasuonno",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424153.454861,
+    "year": 1925,
+    "month": 1,
+    "day": 2,
+    "calendar": "g",
+    "time": "23:55",
+    "time_type": "s",
+    "hour": 23.916667,
+    "time_unknown": false,
+    "place": "Grumo Appula",
+    "country": "Italy",
+    "lat": 41.016667,
+    "lon": 16.7
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colasuonno,_Francesco",
+  "source_notes": "Grazia Bordoni quotes birth certificate\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.273935,
+    "lagna": 144.273935,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.809683,
+    "jd_ut": 2424153.454861,
+    "planets": {
+      "Sun": {
+        "longitude": 259.264469,
+        "sign_index": 8,
+        "degree_in_sign": 19.264469,
+        "is_retrograde": false,
+        "speed": 1.019337
+      },
+      "Moon": {
+        "longitude": 359.797943,
+        "sign_index": 11,
+        "degree_in_sign": 29.797943,
+        "is_retrograde": false,
+        "speed": 11.712725
+      },
+      "Mars": {
+        "longitude": 346.022271,
+        "sign_index": 11,
+        "degree_in_sign": 16.022271,
+        "is_retrograde": false,
+        "speed": 0.619248
+      },
+      "Mercury": {
+        "longitude": 245.245059,
+        "sign_index": 8,
+        "degree_in_sign": 5.245059,
+        "is_retrograde": true,
+        "speed": -0.659115
+      },
+      "Jupiter": {
+        "longitude": 250.790441,
+        "sign_index": 8,
+        "degree_in_sign": 10.790441,
+        "is_retrograde": false,
+        "speed": 0.228453
+      },
+      "Venus": {
+        "longitude": 232.264059,
+        "sign_index": 7,
+        "degree_in_sign": 22.264059,
+        "is_retrograde": false,
+        "speed": 1.24467
+      },
+      "Saturn": {
+        "longitude": 199.413946,
+        "sign_index": 6,
+        "degree_in_sign": 19.413946,
+        "is_retrograde": false,
+        "speed": 0.07905
+      },
+      "Rahu": {
+        "longitude": 112.721502,
+        "sign_index": 3,
+        "degree_in_sign": 22.721502,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 292.721502,
+        "sign_index": 9,
+        "degree_in_sign": 22.721502,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

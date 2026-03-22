@@ -1,0 +1,114 @@
+{
+  "adb_id": 87448,
+  "name": "Cordeiro, Gauss Moutinho",
+  "given_name": "Gauss Moutinho Cordeiro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434119.6875,
+    "year": 1952,
+    "month": 4,
+    "day": 17,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "s",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Recife (Pernambuco)",
+    "country": "Brazil",
+    "lat": -8.053889,
+    "lon": -34.881111
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cordeiro,_Gauss_Moutinho",
+  "source_notes": "Sy Scholfield provided birth entry from civil registry.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Education : Researcher",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Mathematics/ Statistics",
+    "Vocation : Writers : Publisher/ Editor",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 11.064605,
+    "lagna": 281.064605,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.190736,
+    "jd_ut": 2434119.6875,
+    "planets": {
+      "Sun": {
+        "longitude": 3.912511,
+        "sign_index": 0,
+        "degree_in_sign": 3.912511,
+        "is_retrograde": false,
+        "speed": 0.977525
+      },
+      "Moon": {
+        "longitude": 272.198164,
+        "sign_index": 9,
+        "degree_in_sign": 2.198164,
+        "is_retrograde": false,
+        "speed": 10.798921
+      },
+      "Mars": {
+        "longitude": 202.053788,
+        "sign_index": 6,
+        "degree_in_sign": 22.053788,
+        "is_retrograde": true,
+        "speed": -0.277817
+      },
+      "Mercury": {
+        "longitude": 345.638731,
+        "sign_index": 11,
+        "degree_in_sign": 15.638731,
+        "is_retrograde": true,
+        "speed": -0.16171
+      },
+      "Jupiter": {
+        "longitude": 3.999943,
+        "sign_index": 0,
+        "degree_in_sign": 3.999943,
+        "is_retrograde": false,
+        "speed": 0.240765
+      },
+      "Venus": {
+        "longitude": 345.683874,
+        "sign_index": 11,
+        "degree_in_sign": 15.683874,
+        "is_retrograde": false,
+        "speed": 1.229843
+      },
+      "Saturn": {
+        "longitude": 167.236745,
+        "sign_index": 5,
+        "degree_in_sign": 17.236745,
+        "is_retrograde": true,
+        "speed": -0.072843
+      },
+      "Rahu": {
+        "longitude": 304.590198,
+        "sign_index": 10,
+        "degree_in_sign": 4.590198,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 124.590198,
+        "sign_index": 4,
+        "degree_in_sign": 4.590198,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

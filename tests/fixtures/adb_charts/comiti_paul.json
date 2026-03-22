@@ -1,0 +1,108 @@
+{
+  "adb_id": 68083,
+  "name": "Comiti, Paul",
+  "given_name": "Paul Comiti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423023.625,
+    "year": 1921,
+    "month": 11,
+    "day": 30,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Sotta",
+    "country": "France",
+    "lat": 41.545556,
+    "lon": 9.195556
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comiti,_Paul",
+  "source_notes": "Didier Geslain archive, 'police justice' pdf file, p. 22.\\n",
+  "categories": [
+    "Vocation : Law : Security guard"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 10.077109,
+    "lagna": 160.077109,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.766488,
+    "jd_ut": 2423023.625,
+    "planets": {
+      "Sun": {
+        "longitude": 224.612412,
+        "sign_index": 7,
+        "degree_in_sign": 14.612412,
+        "is_retrograde": false,
+        "speed": 1.013889
+      },
+      "Moon": {
+        "longitude": 232.008042,
+        "sign_index": 7,
+        "degree_in_sign": 22.008042,
+        "is_retrograde": false,
+        "speed": 15.85114
+      },
+      "Mars": {
+        "longitude": 171.523928,
+        "sign_index": 5,
+        "degree_in_sign": 21.523928,
+        "is_retrograde": false,
+        "speed": 0.603972
+      },
+      "Mercury": {
+        "longitude": 209.775368,
+        "sign_index": 6,
+        "degree_in_sign": 29.775368,
+        "is_retrograde": false,
+        "speed": 1.50692
+      },
+      "Jupiter": {
+        "longitude": 170.206448,
+        "sign_index": 5,
+        "degree_in_sign": 20.206448,
+        "is_retrograde": false,
+        "speed": 0.164681
+      },
+      "Venus": {
+        "longitude": 207.568105,
+        "sign_index": 6,
+        "degree_in_sign": 27.568105,
+        "is_retrograde": false,
+        "speed": 1.254565
+      },
+      "Saturn": {
+        "longitude": 162.839804,
+        "sign_index": 5,
+        "degree_in_sign": 12.839804,
+        "is_retrograde": false,
+        "speed": 0.078889
+      },
+      "Rahu": {
+        "longitude": 172.593543,
+        "sign_index": 5,
+        "degree_in_sign": 22.593543,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 352.593543,
+        "sign_index": 11,
+        "degree_in_sign": 22.593543,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

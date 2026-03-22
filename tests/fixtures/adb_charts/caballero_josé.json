@@ -1,0 +1,108 @@
+{
+  "adb_id": 71836,
+  "name": "Caballero, José",
+  "given_name": "José Caballero",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419929.583333,
+    "year": 1913,
+    "month": 6,
+    "day": 11,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Huelva",
+    "country": "Spain",
+    "lat": 37.266667,
+    "lon": -6.95
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caballero,_José",
+  "source_notes": "Castellanos cites birth certificate quoted in ''LA MEMORIA NO ES NOSTALGIA: JOSÉ CABALLERO'' by Marián Madrigal Neira (UNIVERSIDAD COMPLUTENSE DE MADRID FACULTAD DE GEOGRAFÍA E HISTORIA, Departamento de Arte Contemporáneo Madrid, 2001).\\nWikipedia has 1915 and gives date of death as 26 May 1991.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 3.757809,
+    "lagna": 333.757809,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.6482,
+    "jd_ut": 2419929.583333,
+    "planets": {
+      "Sun": {
+        "longitude": 56.885934,
+        "sign_index": 1,
+        "degree_in_sign": 26.885934,
+        "is_retrograde": false,
+        "speed": 0.955679
+      },
+      "Moon": {
+        "longitude": 138.467169,
+        "sign_index": 4,
+        "degree_in_sign": 18.467169,
+        "is_retrograde": false,
+        "speed": 16.527758
+      },
+      "Mars": {
+        "longitude": 2.969638,
+        "sign_index": 0,
+        "degree_in_sign": 2.969638,
+        "is_retrograde": false,
+        "speed": 0.740376
+      },
+      "Mercury": {
+        "longitude": 67.734482,
+        "sign_index": 2,
+        "degree_in_sign": 7.734482,
+        "is_retrograde": false,
+        "speed": 2.046706
+      },
+      "Jupiter": {
+        "longitude": 263.225209,
+        "sign_index": 8,
+        "degree_in_sign": 23.225209,
+        "is_retrograde": true,
+        "speed": -0.101855
+      },
+      "Venus": {
+        "longitude": 13.768299,
+        "sign_index": 0,
+        "degree_in_sign": 13.768299,
+        "is_retrograde": false,
+        "speed": 0.700842
+      },
+      "Saturn": {
+        "longitude": 46.506172,
+        "sign_index": 1,
+        "degree_in_sign": 16.506172,
+        "is_retrograde": false,
+        "speed": 0.128552
+      },
+      "Rahu": {
+        "longitude": 336.553283,
+        "sign_index": 11,
+        "degree_in_sign": 6.553283,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 156.553283,
+        "sign_index": 5,
+        "degree_in_sign": 6.553283,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 327,
+  "name": "Cooper, Marie",
+  "given_name": "Marie Cooper",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2428791.941667,
+    "year": 1937,
+    "month": 9,
+    "day": 15,
+    "calendar": "g",
+    "time": "02:36",
+    "time_type": "s",
+    "hour": 2.6,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "USA",
+    "lat": 34.066667,
+    "lon": -118.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooper,_Marie",
+  "source_notes": "B.C. in hand from the Wilsons\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 27.946357,
+    "lagna": 87.946357,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.987027,
+    "jd_ut": 2428791.941667,
+    "planets": {
+      "Sun": {
+        "longitude": 149.169403,
+        "sign_index": 4,
+        "degree_in_sign": 29.169403,
+        "is_retrograde": false,
+        "speed": 0.974735
+      },
+      "Moon": {
+        "longitude": 266.756794,
+        "sign_index": 8,
+        "degree_in_sign": 26.756794,
+        "is_retrograde": false,
+        "speed": 13.580132
+      },
+      "Mars": {
+        "longitude": 237.36441,
+        "sign_index": 7,
+        "degree_in_sign": 27.36441,
+        "is_retrograde": false,
+        "speed": 0.623177
+      },
+      "Mercury": {
+        "longitude": 147.16987,
+        "sign_index": 4,
+        "degree_in_sign": 27.16987,
+        "is_retrograde": true,
+        "speed": -0.999421
+      },
+      "Jupiter": {
+        "longitude": 264.492897,
+        "sign_index": 8,
+        "degree_in_sign": 24.492897,
+        "is_retrograde": false,
+        "speed": 0.004703
+      },
+      "Venus": {
+        "longitude": 115.303605,
+        "sign_index": 3,
+        "degree_in_sign": 25.303605,
+        "is_retrograde": false,
+        "speed": 1.196625
+      },
+      "Saturn": {
+        "longitude": 339.466215,
+        "sign_index": 11,
+        "degree_in_sign": 9.466215,
+        "is_retrograde": true,
+        "speed": -0.075902
+      },
+      "Rahu": {
+        "longitude": 226.918451,
+        "sign_index": 7,
+        "degree_in_sign": 16.918451,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 46.918451,
+        "sign_index": 1,
+        "degree_in_sign": 16.918451,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

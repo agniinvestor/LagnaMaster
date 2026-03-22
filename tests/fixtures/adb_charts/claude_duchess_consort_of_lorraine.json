@@ -1,0 +1,108 @@
+{
+  "adb_id": 60087,
+  "name": "Claude, Duchess Consort of Lorraine",
+  "given_name": "Duchess Consort of Lorraine Claude",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2286414.805,
+    "year": 1547,
+    "month": 11,
+    "day": 12,
+    "calendar": "j",
+    "time": "07:30",
+    "time_type": "l",
+    "hour": 7.5,
+    "time_unknown": false,
+    "place": "Fontainebleau",
+    "country": "France",
+    "lat": 48.4,
+    "lon": 2.7
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Claude,_Duchess_Consort_of_Lorraine",
+  "source_notes": "Sy Scholfield quotes \"Histoire de la Maison Royale de France, et des grands officiers de la Couronne\" by Anselme de Sainte-Marie, Ange de Sainte-Rosalie (libr. associés, 1726), pp. 135-136: \"Claude de France, née à Fontainebleau le samedi 12. novembre 1547. entre 7. & 8. du matin.\" \\n",
+  "categories": [
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 25.306731,
+    "lagna": 205.306731,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 17.54801,
+    "jd_ut": 2286414.805,
+    "planets": {
+      "Sun": {
+        "longitude": 221.655102,
+        "sign_index": 7,
+        "degree_in_sign": 11.655102,
+        "is_retrograde": false,
+        "speed": 1.013459
+      },
+      "Moon": {
+        "longitude": 219.758832,
+        "sign_index": 7,
+        "degree_in_sign": 9.758832,
+        "is_retrograde": false,
+        "speed": 10.360968
+      },
+      "Mars": {
+        "longitude": 201.111357,
+        "sign_index": 6,
+        "degree_in_sign": 21.111357,
+        "is_retrograde": false,
+        "speed": 0.683454
+      },
+      "Mercury": {
+        "longitude": 213.725398,
+        "sign_index": 7,
+        "degree_in_sign": 3.725398,
+        "is_retrograde": false,
+        "speed": 1.576106
+      },
+      "Jupiter": {
+        "longitude": 316.328286,
+        "sign_index": 10,
+        "degree_in_sign": 16.328286,
+        "is_retrograde": false,
+        "speed": 0.077058
+      },
+      "Venus": {
+        "longitude": 212.028129,
+        "sign_index": 7,
+        "degree_in_sign": 2.028129,
+        "is_retrograde": false,
+        "speed": 1.257781
+      },
+      "Saturn": {
+        "longitude": 256.321206,
+        "sign_index": 8,
+        "degree_in_sign": 16.321206,
+        "is_retrograde": false,
+        "speed": 0.103627
+      },
+      "Rahu": {
+        "longitude": 211.804349,
+        "sign_index": 7,
+        "degree_in_sign": 1.804349,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 31.804349,
+        "sign_index": 1,
+        "degree_in_sign": 1.804349,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 50732,
+  "name": "Cagle, Malcolm Winfield",
+  "given_name": "Malcolm Winfield Cagle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2421863.708333,
+    "year": 1918,
+    "month": 9,
+    "day": 26,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "w",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Grand Junction",
+    "country": "Colorado",
+    "lat": 39.066667,
+    "lon": -108.55
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "can",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cagle,_Malcolm_Winfield",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 7.237021,
+    "lagna": 37.237021,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.722143,
+    "jd_ut": 2421863.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 160.550387,
+        "sign_index": 5,
+        "degree_in_sign": 10.550387,
+        "is_retrograde": false,
+        "speed": 0.98122
+      },
+      "Moon": {
+        "longitude": 71.381679,
+        "sign_index": 2,
+        "degree_in_sign": 11.381679,
+        "is_retrograde": false,
+        "speed": 15.68021
+      },
+      "Mars": {
+        "longitude": 214.398238,
+        "sign_index": 7,
+        "degree_in_sign": 4.398238,
+        "is_retrograde": false,
+        "speed": 0.695879
+      },
+      "Mercury": {
+        "longitude": 146.457085,
+        "sign_index": 4,
+        "degree_in_sign": 26.457085,
+        "is_retrograde": false,
+        "speed": 1.684556
+      },
+      "Jupiter": {
+        "longitude": 80.906895,
+        "sign_index": 2,
+        "degree_in_sign": 20.906895,
+        "is_retrograde": false,
+        "speed": 0.112059
+      },
+      "Venus": {
+        "longitude": 145.814891,
+        "sign_index": 4,
+        "degree_in_sign": 25.814891,
+        "is_retrograde": false,
+        "speed": 1.241948
+      },
+      "Saturn": {
+        "longitude": 121.022792,
+        "sign_index": 4,
+        "degree_in_sign": 1.022792,
+        "is_retrograde": false,
+        "speed": 0.10866
+      },
+      "Rahu": {
+        "longitude": 234.05995,
+        "sign_index": 7,
+        "degree_in_sign": 24.05995,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 54.05995,
+        "sign_index": 1,
+        "degree_in_sign": 24.05995,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

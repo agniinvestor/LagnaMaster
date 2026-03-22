@@ -1,0 +1,110 @@
+{
+  "adb_id": 2507,
+  "name": "Charpentier, Gustave",
+  "given_name": "Gustave Charpentier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2400587.439676,
+    "year": 1860,
+    "month": 6,
+    "day": 25,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "l",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Dieuze",
+    "country": "France",
+    "lat": 48.816667,
+    "lon": 6.716667
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charpentier,_Gustave",
+  "source_notes": "Gauquelin Vol 4/1691\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Vocalist/Opera"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 23.554673,
+    "lagna": 293.554673,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.908833,
+    "jd_ut": 2400587.439676,
+    "planets": {
+      "Sun": {
+        "longitude": 72.572376,
+        "sign_index": 2,
+        "degree_in_sign": 12.572376,
+        "is_retrograde": false,
+        "speed": 0.953433
+      },
+      "Moon": {
+        "longitude": 161.15743,
+        "sign_index": 5,
+        "degree_in_sign": 11.15743,
+        "is_retrograde": false,
+        "speed": 13.286132
+      },
+      "Mars": {
+        "longitude": 277.846624,
+        "sign_index": 9,
+        "degree_in_sign": 7.846624,
+        "is_retrograde": true,
+        "speed": -0.113044
+      },
+      "Mercury": {
+        "longitude": 92.585087,
+        "sign_index": 3,
+        "degree_in_sign": 2.585087,
+        "is_retrograde": false,
+        "speed": 1.676033
+      },
+      "Jupiter": {
+        "longitude": 97.266986,
+        "sign_index": 3,
+        "degree_in_sign": 7.266986,
+        "is_retrograde": false,
+        "speed": 0.210861
+      },
+      "Venus": {
+        "longitude": 102.755447,
+        "sign_index": 3,
+        "degree_in_sign": 12.755447,
+        "is_retrograde": false,
+        "speed": 0.062623
+      },
+      "Saturn": {
+        "longitude": 120.851316,
+        "sign_index": 4,
+        "degree_in_sign": 0.851316,
+        "is_retrograde": false,
+        "speed": 0.098497
+      },
+      "Rahu": {
+        "longitude": 281.534486,
+        "sign_index": 9,
+        "degree_in_sign": 11.534486,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 101.534486,
+        "sign_index": 3,
+        "degree_in_sign": 11.534486,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

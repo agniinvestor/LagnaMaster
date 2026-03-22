@@ -1,0 +1,111 @@
+{
+  "adb_id": 90639,
+  "name": "Caro, Walter",
+  "given_name": "Walter Caro",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414797.572917,
+    "year": 1899,
+    "month": 5,
+    "day": 23,
+    "calendar": "g",
+    "time": "02:45",
+    "time_type": "s",
+    "hour": 2.75,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sco",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caro,_Walter",
+  "source_notes": "Sy Scholfield provided birth registry entry (no. 1921) from Berlin archives. \\n",
+  "categories": [
+    "Passions : Criminal Victim : Concentration camp",
+    "Passions : Criminal Victim : Homicide victim",
+    "Passions : Criminal Victim : Torture victim",
+    "Vocation : Law : Spy/ Counter agent"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 9.500929,
+    "lagna": 339.500929,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.452009,
+    "jd_ut": 2414797.572917,
+    "planets": {
+      "Sun": {
+        "longitude": 39.239851,
+        "sign_index": 1,
+        "degree_in_sign": 9.239851,
+        "is_retrograde": false,
+        "speed": 0.960362
+      },
+      "Moon": {
+        "longitude": 191.132253,
+        "sign_index": 6,
+        "degree_in_sign": 11.132253,
+        "is_retrograde": false,
+        "speed": 11.925545
+      },
+      "Mars": {
+        "longitude": 114.679839,
+        "sign_index": 3,
+        "degree_in_sign": 24.679839,
+        "is_retrograde": false,
+        "speed": 0.509299
+      },
+      "Mercury": {
+        "longitude": 17.006251,
+        "sign_index": 0,
+        "degree_in_sign": 17.006251,
+        "is_retrograde": false,
+        "speed": 1.530239
+      },
+      "Jupiter": {
+        "longitude": 189.678622,
+        "sign_index": 6,
+        "degree_in_sign": 9.678622,
+        "is_retrograde": true,
+        "speed": -0.097278
+      },
+      "Venus": {
+        "longitude": 8.667649,
+        "sign_index": 0,
+        "degree_in_sign": 8.667649,
+        "is_retrograde": false,
+        "speed": 1.19839
+      },
+      "Saturn": {
+        "longitude": 239.334008,
+        "sign_index": 7,
+        "degree_in_sign": 29.334008,
+        "is_retrograde": true,
+        "speed": -0.066751
+      },
+      "Rahu": {
+        "longitude": 248.50931,
+        "sign_index": 8,
+        "degree_in_sign": 8.50931,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 68.50931,
+        "sign_index": 2,
+        "degree_in_sign": 8.50931,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

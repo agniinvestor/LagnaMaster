@@ -1,0 +1,112 @@
+{
+  "adb_id": 87318,
+  "name": "Cochran, Bill",
+  "given_name": "Bill Cochran",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2427674.854167,
+    "year": 1934,
+    "month": 8,
+    "day": 25,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "s",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "New Albany",
+    "country": "Indiana",
+    "lat": 38.283333,
+    "lon": -85.816667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cochran,_Bill",
+  "source_notes": "Sy Scholfield provided birth certificate. \\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Clerk/ Typist",
+    "Vocation : Business/Marketing : Real estate",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 13.511435,
+    "lagna": 73.511435,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.944317,
+    "jd_ut": 2427674.854167,
+    "planets": {
+      "Sun": {
+        "longitude": 128.4965,
+        "sign_index": 4,
+        "degree_in_sign": 8.4965,
+        "is_retrograde": false,
+        "speed": 0.964378
+      },
+      "Moon": {
+        "longitude": 315.337777,
+        "sign_index": 10,
+        "degree_in_sign": 15.337777,
+        "is_retrograde": false,
+        "speed": 11.377701
+      },
+      "Mars": {
+        "longitude": 93.710833,
+        "sign_index": 3,
+        "degree_in_sign": 3.710833,
+        "is_retrograde": false,
+        "speed": 0.642353
+      },
+      "Mercury": {
+        "longitude": 127.563427,
+        "sign_index": 4,
+        "degree_in_sign": 7.563427,
+        "is_retrograde": false,
+        "speed": 1.979081
+      },
+      "Jupiter": {
+        "longitude": 177.749735,
+        "sign_index": 5,
+        "degree_in_sign": 27.749735,
+        "is_retrograde": false,
+        "speed": 0.174004
+      },
+      "Venus": {
+        "longitude": 106.431814,
+        "sign_index": 3,
+        "degree_in_sign": 16.431814,
+        "is_retrograde": false,
+        "speed": 1.221413
+      },
+      "Saturn": {
+        "longitude": 301.353152,
+        "sign_index": 10,
+        "degree_in_sign": 1.353152,
+        "is_retrograde": true,
+        "speed": -0.074452
+      },
+      "Rahu": {
+        "longitude": 286.115233,
+        "sign_index": 9,
+        "degree_in_sign": 16.115233,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 106.115233,
+        "sign_index": 3,
+        "degree_in_sign": 16.115233,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

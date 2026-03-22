@@ -1,0 +1,120 @@
+{
+  "adb_id": 3432,
+  "name": "Carnap, Rudolf",
+  "given_name": "Rudolf Carnap",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2411871.355046,
+    "year": 1891,
+    "month": 5,
+    "day": 18,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "l",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Wuppertal",
+    "country": "Germany",
+    "lat": 51.266667,
+    "lon": 7.183333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carnap,_Rudolf",
+  "source_notes": "Gauquelin Vol 2/3240\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Family : Relationship : Number of Divorces",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Lifestyle : Social Life : Hobbies, games",
+    "Lifestyle : Social Life : Outdoors",
+    "Lifestyle : Home : Expatriate",
+    "Personal : Religion/Spirituality : Philosopher/ Humanist",
+    "Vocation : Business : Consultant",
+    "Vocation : Business : Economist",
+    "Vocation : Business : Top executive",
+    "Vocation : Military : Military service",
+    "Vocation : Writers : Textbook/ Non-fiction"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 27.386912,
+    "lagna": 207.386912,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.340148,
+    "jd_ut": 2411871.355046,
+    "planets": {
+      "Sun": {
+        "longitude": 35.237131,
+        "sign_index": 1,
+        "degree_in_sign": 5.237131,
+        "is_retrograde": false,
+        "speed": 0.961993
+      },
+      "Moon": {
+        "longitude": 158.929687,
+        "sign_index": 5,
+        "degree_in_sign": 8.929687,
+        "is_retrograde": false,
+        "speed": 8.822744
+      },
+      "Mars": {
+        "longitude": 57.123569,
+        "sign_index": 1,
+        "degree_in_sign": 27.123569,
+        "is_retrograde": false,
+        "speed": 0.669634
+      },
+      "Mercury": {
+        "longitude": 22.438873,
+        "sign_index": 0,
+        "degree_in_sign": 22.438873,
+        "is_retrograde": true,
+        "speed": -0.295395
+      },
+      "Jupiter": {
+        "longitude": 321.925851,
+        "sign_index": 10,
+        "degree_in_sign": 21.925851,
+        "is_retrograde": false,
+        "speed": 0.141218
+      },
+      "Venus": {
+        "longitude": 3.133543,
+        "sign_index": 0,
+        "degree_in_sign": 3.133543,
+        "is_retrograde": false,
+        "speed": 1.195021
+      },
+      "Saturn": {
+        "longitude": 138.017599,
+        "sign_index": 4,
+        "degree_in_sign": 18.017599,
+        "is_retrograde": false,
+        "speed": 0.010626
+      },
+      "Rahu": {
+        "longitude": 43.575776,
+        "sign_index": 1,
+        "degree_in_sign": 13.575776,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 223.575776,
+        "sign_index": 7,
+        "degree_in_sign": 13.575776,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

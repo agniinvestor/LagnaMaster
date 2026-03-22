@@ -1,0 +1,112 @@
+{
+  "adb_id": 98465,
+  "name": "Collins, Ian",
+  "given_name": "Ian Collins",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416227.725694,
+    "year": 1903,
+    "month": 4,
+    "day": 23,
+    "calendar": "g",
+    "time": "05:25",
+    "time_type": "s",
+    "hour": 5.416667,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Collins,_Ian",
+  "source_notes": "Birth registry entry in hand from Sy Scholfield, copy on file, originally published on the Scotland's People website [https://www.scotlandspeople.gov.uk/article/our-records-ian-glen-collins-1903-1975-tennis-player].\\n",
+  "categories": [
+    "Diagnoses : Body Part Problems : Accident/Injury",
+    "Family : Childhood : Family noted",
+    "Vocation : Sports : Tennis",
+    "Vocation : Writers : Publisher/ Editor",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 0.399839,
+    "lagna": 0.399839,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.506681,
+    "jd_ut": 2416227.725694,
+    "planets": {
+      "Sun": {
+        "longitude": 9.379251,
+        "sign_index": 0,
+        "degree_in_sign": 9.379251,
+        "is_retrograde": false,
+        "speed": 0.974712
+      },
+      "Moon": {
+        "longitude": 316.5467,
+        "sign_index": 10,
+        "degree_in_sign": 16.5467,
+        "is_retrograde": false,
+        "speed": 10.547962
+      },
+      "Mars": {
+        "longitude": 156.69899,
+        "sign_index": 5,
+        "degree_in_sign": 6.69899,
+        "is_retrograde": true,
+        "speed": -0.215608
+      },
+      "Mercury": {
+        "longitude": 20.655808,
+        "sign_index": 0,
+        "degree_in_sign": 20.655808,
+        "is_retrograde": false,
+        "speed": 2.017747
+      },
+      "Jupiter": {
+        "longitude": 321.520948,
+        "sign_index": 10,
+        "degree_in_sign": 21.520948,
+        "is_retrograde": false,
+        "speed": 0.198736
+      },
+      "Venus": {
+        "longitude": 43.401975,
+        "sign_index": 1,
+        "degree_in_sign": 13.401975,
+        "is_retrograde": false,
+        "speed": 1.191652
+      },
+      "Saturn": {
+        "longitude": 286.214275,
+        "sign_index": 9,
+        "degree_in_sign": 16.214275,
+        "is_retrograde": false,
+        "speed": 0.043517
+      },
+      "Rahu": {
+        "longitude": 172.722499,
+        "sign_index": 5,
+        "degree_in_sign": 22.722499,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 352.722499,
+        "sign_index": 11,
+        "degree_in_sign": 22.722499,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

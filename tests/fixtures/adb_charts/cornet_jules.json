@@ -1,0 +1,111 @@
+{
+  "adb_id": 81072,
+  "name": "Cornet, Jules",
+  "given_name": "Jules Cornet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2402299.696713,
+    "year": 1865,
+    "month": 3,
+    "day": 4,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "La Louvière",
+    "country": "Belgium",
+    "lat": 50.466667,
+    "lon": 4.183333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cornet,_Jules",
+  "source_notes": "Grazia Bordoni's Science file quotes Lescaut. Born in Saint-Vaast, today merged into La Louvière.\\n",
+  "categories": [
+    "Lifestyle : Work : Travel for work",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Geology",
+    "Vocation : Travel : Explorer"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 13.791006,
+    "lagna": 253.791006,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.974278,
+    "jd_ut": 2402299.696713,
+    "planets": {
+      "Sun": {
+        "longitude": 321.690752,
+        "sign_index": 10,
+        "degree_in_sign": 21.690752,
+        "is_retrograde": false,
+        "speed": 1.001095
+      },
+      "Moon": {
+        "longitude": 47.540557,
+        "sign_index": 1,
+        "degree_in_sign": 17.540557,
+        "is_retrograde": false,
+        "speed": 17.018373
+      },
+      "Mars": {
+        "longitude": 55.043092,
+        "sign_index": 1,
+        "degree_in_sign": 25.043092,
+        "is_retrograde": false,
+        "speed": 0.442927
+      },
+      "Mercury": {
+        "longitude": 309.605261,
+        "sign_index": 10,
+        "degree_in_sign": 9.605261,
+        "is_retrograde": false,
+        "speed": 1.719738
+      },
+      "Jupiter": {
+        "longitude": 244.386055,
+        "sign_index": 8,
+        "degree_in_sign": 4.386055,
+        "is_retrograde": false,
+        "speed": 0.119907
+      },
+      "Venus": {
+        "longitude": 7.966998,
+        "sign_index": 0,
+        "degree_in_sign": 7.966998,
+        "is_retrograde": false,
+        "speed": 0.949508
+      },
+      "Saturn": {
+        "longitude": 187.842244,
+        "sign_index": 6,
+        "degree_in_sign": 7.842244,
+        "is_retrograde": true,
+        "speed": -0.040646
+      },
+      "Rahu": {
+        "longitude": 190.798316,
+        "sign_index": 6,
+        "degree_in_sign": 10.798316,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 10.798316,
+        "sign_index": 0,
+        "degree_in_sign": 10.798316,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "adb_id": 91426,
+  "name": "Carranza, Luis",
+  "given_name": "Luis Carranza",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439480.743056,
+    "year": 1966,
+    "month": 12,
+    "day": 21,
+    "calendar": "g",
+    "time": "00:50",
+    "time_type": "s",
+    "hour": 0.833333,
+    "time_unknown": false,
+    "place": "Pueblo Libre",
+    "country": "Peru",
+    "lat": -12.083333,
+    "lon": -77.066667
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "ari",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carranza,_Luis",
+  "source_notes": "Sy Scholfield provided birth certificate.\\n",
+  "categories": [
+    "Traits : Mind : Education extensive",
+    "Vocation : Business : Banker/ Financier",
+    "Vocation : Business : Economist",
+    "Vocation : Business : Top executive",
+    "Vocation : Politics : Public office"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.93976,
+    "lagna": 144.93976,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.395732,
+    "jd_ut": 2439480.743056,
+    "planets": {
+      "Sun": {
+        "longitude": 245.5199,
+        "sign_index": 8,
+        "degree_in_sign": 5.5199,
+        "is_retrograde": false,
+        "speed": 1.018214
+      },
+      "Moon": {
+        "longitude": 349.273459,
+        "sign_index": 11,
+        "degree_in_sign": 19.273459,
+        "is_retrograde": false,
+        "speed": 11.51737
+      },
+      "Mars": {
+        "longitude": 165.525129,
+        "sign_index": 5,
+        "degree_in_sign": 15.525129,
+        "is_retrograde": false,
+        "speed": 0.498048
+      },
+      "Mercury": {
+        "longitude": 230.261629,
+        "sign_index": 7,
+        "degree_in_sign": 20.261629,
+        "is_retrograde": false,
+        "speed": 1.480284
+      },
+      "Jupiter": {
+        "longitude": 99.659636,
+        "sign_index": 3,
+        "degree_in_sign": 9.659636,
+        "is_retrograde": true,
+        "speed": -0.092568
+      },
+      "Venus": {
+        "longitude": 255.805028,
+        "sign_index": 8,
+        "degree_in_sign": 15.805028,
+        "is_retrograde": false,
+        "speed": 1.256022
+      },
+      "Saturn": {
+        "longitude": 330.059099,
+        "sign_index": 11,
+        "degree_in_sign": 0.059099,
+        "is_retrograde": false,
+        "speed": 0.04325
+      },
+      "Rahu": {
+        "longitude": 20.496869,
+        "sign_index": 0,
+        "degree_in_sign": 20.496869,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 200.496869,
+        "sign_index": 6,
+        "degree_in_sign": 20.496869,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

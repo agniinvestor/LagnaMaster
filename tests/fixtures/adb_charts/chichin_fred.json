@@ -1,0 +1,110 @@
+{
+  "adb_id": 63604,
+  "name": "Chichin, Fred",
+  "given_name": "Fred Chichin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434863.895833,
+    "year": 1954,
+    "month": 5,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "s",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Clichy",
+    "country": "France",
+    "lat": 48.9,
+    "lon": 2.3
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chichin,_Fred",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'chanteurs' pdf file, p. 181.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 10.777099,
+    "lagna": 70.777099,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.219192,
+    "jd_ut": 2434863.895833,
+    "planets": {
+      "Sun": {
+        "longitude": 17.245666,
+        "sign_index": 0,
+        "degree_in_sign": 17.245666,
+        "is_retrograde": false,
+        "speed": 0.970825
+      },
+      "Moon": {
+        "longitude": 356.373804,
+        "sign_index": 11,
+        "degree_in_sign": 26.373804,
+        "is_retrograde": false,
+        "speed": 11.619171
+      },
+      "Mars": {
+        "longitude": 252.543077,
+        "sign_index": 8,
+        "degree_in_sign": 12.543077,
+        "is_retrograde": false,
+        "speed": 0.236437
+      },
+      "Mercury": {
+        "longitude": 8.627574,
+        "sign_index": 0,
+        "degree_in_sign": 8.627574,
+        "is_retrograde": false,
+        "speed": 2.024921
+      },
+      "Jupiter": {
+        "longitude": 62.113077,
+        "sign_index": 2,
+        "degree_in_sign": 2.113077,
+        "is_retrograde": false,
+        "speed": 0.192418
+      },
+      "Venus": {
+        "longitude": 39.801457,
+        "sign_index": 1,
+        "degree_in_sign": 9.801457,
+        "is_retrograde": false,
+        "speed": 1.220457
+      },
+      "Saturn": {
+        "longitude": 192.46977,
+        "sign_index": 6,
+        "degree_in_sign": 12.46977,
+        "is_retrograde": true,
+        "speed": -0.075737
+      },
+      "Rahu": {
+        "longitude": 265.153068,
+        "sign_index": 8,
+        "degree_in_sign": 25.153068,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 85.153068,
+        "sign_index": 2,
+        "degree_in_sign": 25.153068,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

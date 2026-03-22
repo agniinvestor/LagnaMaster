@@ -1,0 +1,109 @@
+{
+  "adb_id": 67988,
+  "name": "Carpentier, Patrice",
+  "given_name": "Patrice Carpentier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433291.638889,
+    "year": 1950,
+    "month": 1,
+    "day": 10,
+    "calendar": "g",
+    "time": "04:20",
+    "time_type": "s",
+    "hour": 4.333333,
+    "time_unknown": false,
+    "place": "Falaise",
+    "country": "France",
+    "lat": 48.9,
+    "lon": -0.2
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "lib",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carpentier,_Patrice",
+  "source_notes": "Didier Geslain archive, 'navigateurs' pdf file, p. 10.\\n",
+  "categories": [
+    "Vocation : Sports : Sailing/ Boating",
+    "Vocation : Writers : Columnist/ journalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 3.541645,
+    "lagna": 183.541645,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.159075,
+    "jd_ut": 2433291.638889,
+    "planets": {
+      "Sun": {
+        "longitude": 266.158986,
+        "sign_index": 8,
+        "degree_in_sign": 26.158986,
+        "is_retrograde": false,
+        "speed": 1.018943
+      },
+      "Moon": {
+        "longitude": 159.817686,
+        "sign_index": 5,
+        "degree_in_sign": 9.817686,
+        "is_retrograde": false,
+        "speed": 10.656147
+      },
+      "Mars": {
+        "longitude": 162.17317,
+        "sign_index": 5,
+        "degree_in_sign": 12.17317,
+        "is_retrograde": false,
+        "speed": 0.313082
+      },
+      "Mercury": {
+        "longitude": 280.760594,
+        "sign_index": 9,
+        "degree_in_sign": 10.760594,
+        "is_retrograde": true,
+        "speed": -0.279386
+      },
+      "Jupiter": {
+        "longitude": 285.43478,
+        "sign_index": 9,
+        "degree_in_sign": 15.43478,
+        "is_retrograde": false,
+        "speed": 0.231364
+      },
+      "Venus": {
+        "longitude": 295.578296,
+        "sign_index": 9,
+        "degree_in_sign": 25.578296,
+        "is_retrograde": false,
+        "speed": 0.017386
+      },
+      "Saturn": {
+        "longitude": 146.172427,
+        "sign_index": 4,
+        "degree_in_sign": 26.172427,
+        "is_retrograde": true,
+        "speed": -0.019984
+      },
+      "Rahu": {
+        "longitude": 348.470199,
+        "sign_index": 11,
+        "degree_in_sign": 18.470199,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 168.470199,
+        "sign_index": 5,
+        "degree_in_sign": 18.470199,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

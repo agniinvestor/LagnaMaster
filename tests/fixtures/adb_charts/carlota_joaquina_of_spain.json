@@ -1,0 +1,112 @@
+{
+  "adb_id": 68009,
+  "name": "Carlota Joaquina of Spain",
+  "given_name": "Carlota Joaquina of Spain",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2369479.843333,
+    "year": 1775,
+    "month": 4,
+    "day": 25,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Aranjuez",
+    "country": "Spain",
+    "lat": 40.033333,
+    "lon": -3.6
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlota_Joaquina_of_Spain",
+  "source_notes": "Filipe Fereira reports: Official announcement published in Gaceta de Madrid, nº 18, 2 May 1775, pg. 182-184 \\n",
+  "categories": [
+    "Family : Relationship : Marriage more than 15 Yrs",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Notable : Famous : Royal family",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 13.457934,
+    "lagna": 43.457934,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 20.720085,
+    "jd_ut": 2369479.843333,
+    "planets": {
+      "Sun": {
+        "longitude": 14.17206,
+        "sign_index": 0,
+        "degree_in_sign": 14.17206,
+        "is_retrograde": false,
+        "speed": 0.971903
+      },
+      "Moon": {
+        "longitude": 316.731885,
+        "sign_index": 10,
+        "degree_in_sign": 16.731885,
+        "is_retrograde": false,
+        "speed": 9.693244
+      },
+      "Mars": {
+        "longitude": 126.565132,
+        "sign_index": 4,
+        "degree_in_sign": 6.565132,
+        "is_retrograde": false,
+        "speed": 0.205541
+      },
+      "Mercury": {
+        "longitude": 347.421051,
+        "sign_index": 11,
+        "degree_in_sign": 17.421051,
+        "is_retrograde": false,
+        "speed": 1.157393
+      },
+      "Jupiter": {
+        "longitude": 32.304353,
+        "sign_index": 1,
+        "degree_in_sign": 2.304353,
+        "is_retrograde": false,
+        "speed": 0.230016
+      },
+      "Venus": {
+        "longitude": 40.374775,
+        "sign_index": 1,
+        "degree_in_sign": 10.374775,
+        "is_retrograde": false,
+        "speed": 1.214251
+      },
+      "Saturn": {
+        "longitude": 162.63939,
+        "sign_index": 5,
+        "degree_in_sign": 12.63939,
+        "is_retrograde": true,
+        "speed": -0.060368
+      },
+      "Rahu": {
+        "longitude": 129.994023,
+        "sign_index": 4,
+        "degree_in_sign": 9.994023,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.994023,
+        "sign_index": 10,
+        "degree_in_sign": 9.994023,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 94484,
+  "name": "Corcoran, Annette",
+  "given_name": "Annette Corcoran",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2426306.219444,
+    "year": 1930,
+    "month": 11,
+    "day": 25,
+    "calendar": "g",
+    "time": "09:16",
+    "time_type": "s",
+    "hour": 9.266667,
+    "time_unknown": false,
+    "place": "Lennox",
+    "country": "California",
+    "lat": 33.933333,
+    "lon": -118.35
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corcoran,_Annette",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file.\\n",
+  "categories": [
+    "Vocation : Art : Commercial artist",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Misc. : Crafts"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 21.345934,
+    "lagna": 231.345934,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.891989,
+    "jd_ut": 2426306.219444,
+    "planets": {
+      "Sun": {
+        "longitude": 219.83682,
+        "sign_index": 7,
+        "degree_in_sign": 9.83682,
+        "is_retrograde": false,
+        "speed": 1.011969
+      },
+      "Moon": {
+        "longitude": 282.720438,
+        "sign_index": 9,
+        "degree_in_sign": 12.720438,
+        "is_retrograde": false,
+        "speed": 12.715807
+      },
+      "Mars": {
+        "longitude": 110.836988,
+        "sign_index": 3,
+        "degree_in_sign": 20.836988,
+        "is_retrograde": false,
+        "speed": 0.252816
+      },
+      "Mercury": {
+        "longitude": 230.239714,
+        "sign_index": 7,
+        "degree_in_sign": 20.239714,
+        "is_retrograde": false,
+        "speed": 1.533795
+      },
+      "Jupiter": {
+        "longitude": 87.111046,
+        "sign_index": 2,
+        "degree_in_sign": 27.111046,
+        "is_retrograde": true,
+        "speed": -0.058041
+      },
+      "Venus": {
+        "longitude": 215.06555,
+        "sign_index": 7,
+        "degree_in_sign": 5.06555,
+        "is_retrograde": true,
+        "speed": -0.589952
+      },
+      "Saturn": {
+        "longitude": 256.739721,
+        "sign_index": 8,
+        "degree_in_sign": 16.739721,
+        "is_retrograde": false,
+        "speed": 0.102343
+      },
+      "Rahu": {
+        "longitude": 358.642028,
+        "sign_index": 11,
+        "degree_in_sign": 28.642028,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 178.642028,
+        "sign_index": 5,
+        "degree_in_sign": 28.642028,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

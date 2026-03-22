@@ -1,0 +1,112 @@
+{
+  "adb_id": 102314,
+  "name": "Crawford, Brad",
+  "given_name": "Brad Crawford",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2446831.363194,
+    "year": 1987,
+    "month": 2,
+    "day": 4,
+    "calendar": "g",
+    "time": "15:43",
+    "time_type": "s",
+    "hour": 15.716667,
+    "time_unknown": false,
+    "place": "Hamilton",
+    "country": "Ontario (CAN)",
+    "lat": 43.25,
+    "lon": -79.85
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crawford,_Brad",
+  "source_notes": "Sy Scholfield quotes birth notice, ''The Hamilton Spectator'' (Hamilton, Ontario), 9 February 1987, page C4: born at McMaster Medical Centre. \\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Traits : Body : Weight",
+    "Family : Childhood : Sibling circumstances",
+    "Vocation : Sports : Football",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 7.455663,
+    "lagna": 67.455663,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.676826,
+    "jd_ut": 2446831.363194,
+    "planets": {
+      "Sun": {
+        "longitude": 291.825005,
+        "sign_index": 9,
+        "degree_in_sign": 21.825005,
+        "is_retrograde": false,
+        "speed": 1.014071
+      },
+      "Moon": {
+        "longitude": 12.681978,
+        "sign_index": 0,
+        "degree_in_sign": 12.681978,
+        "is_retrograde": false,
+        "speed": 9.231955
+      },
+      "Mars": {
+        "longitude": 355.411037,
+        "sign_index": 11,
+        "degree_in_sign": 25.411037,
+        "is_retrograde": false,
+        "speed": 0.695579
+      },
+      "Mercury": {
+        "longitude": 307.540207,
+        "sign_index": 10,
+        "degree_in_sign": 7.540207,
+        "is_retrograde": false,
+        "speed": 1.588838
+      },
+      "Jupiter": {
+        "longitude": 330.437654,
+        "sign_index": 11,
+        "degree_in_sign": 0.437654,
+        "is_retrograde": false,
+        "speed": 0.215179
+      },
+      "Venus": {
+        "longitude": 246.030597,
+        "sign_index": 8,
+        "degree_in_sign": 6.030597,
+        "is_retrograde": false,
+        "speed": 1.111153
+      },
+      "Saturn": {
+        "longitude": 235.138484,
+        "sign_index": 7,
+        "degree_in_sign": 25.138484,
+        "is_retrograde": false,
+        "speed": 0.081622
+      },
+      "Rahu": {
+        "longitude": 350.972552,
+        "sign_index": 11,
+        "degree_in_sign": 20.972552,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 170.972552,
+        "sign_index": 5,
+        "degree_in_sign": 20.972552,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

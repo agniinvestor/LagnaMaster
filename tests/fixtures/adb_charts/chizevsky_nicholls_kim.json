@@ -1,0 +1,110 @@
+{
+  "adb_id": 88550,
+  "name": "Chizevsky-Nicholls, Kim",
+  "given_name": "Kim Chizevsky-Nicholls",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2439970.365278,
+    "year": 1968,
+    "month": 4,
+    "day": 23,
+    "calendar": "g",
+    "time": "14:46",
+    "time_type": "s",
+    "hour": 14.766667,
+    "time_unknown": false,
+    "place": "Mattoon",
+    "country": "Illinois",
+    "lat": 39.483333,
+    "lon": -88.366667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chizevsky-Nicholls,_Kim",
+  "source_notes": "Sy Scholfield provided birth report, Journal Gazette (Mattoon, Illinois), 26 April 1968, page 10; born at Memorial Hospital.\\n",
+  "categories": [
+    "Traits : Body : Body builder",
+    "Traits : Body : Size",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 1.205025,
+    "lagna": 121.205025,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.414455,
+    "jd_ut": 2439970.365278,
+    "planets": {
+      "Sun": {
+        "longitude": 10.328711,
+        "sign_index": 0,
+        "degree_in_sign": 10.328711,
+        "is_retrograde": false,
+        "speed": 0.974265
+      },
+      "Moon": {
+        "longitude": 327.645711,
+        "sign_index": 10,
+        "degree_in_sign": 27.645711,
+        "is_retrograde": false,
+        "speed": 11.976846
+      },
+      "Mars": {
+        "longitude": 26.127694,
+        "sign_index": 0,
+        "degree_in_sign": 26.127694,
+        "is_retrograde": false,
+        "speed": 0.716097
+      },
+      "Mercury": {
+        "longitude": 9.088625,
+        "sign_index": 0,
+        "degree_in_sign": 9.088625,
+        "is_retrograde": false,
+        "speed": 2.11852
+      },
+      "Jupiter": {
+        "longitude": 122.422293,
+        "sign_index": 4,
+        "degree_in_sign": 2.422293,
+        "is_retrograde": false,
+        "speed": 0.005835
+      },
+      "Venus": {
+        "longitude": 354.996344,
+        "sign_index": 11,
+        "degree_in_sign": 24.996344,
+        "is_retrograde": false,
+        "speed": 1.230374
+      },
+      "Saturn": {
+        "longitude": 354.294676,
+        "sign_index": 11,
+        "degree_in_sign": 24.294676,
+        "is_retrograde": false,
+        "speed": 0.122884
+      },
+      "Rahu": {
+        "longitude": 354.550787,
+        "sign_index": 11,
+        "degree_in_sign": 24.550787,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 174.550787,
+        "sign_index": 5,
+        "degree_in_sign": 24.550787,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

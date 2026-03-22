@@ -1,0 +1,113 @@
+{
+  "adb_id": 95454,
+  "name": "Chevrolet, Gaston",
+  "given_name": "Gaston Chevrolet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412376.431007,
+    "year": 1892,
+    "month": 10,
+    "day": 4,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Beaune",
+    "country": "France",
+    "lat": 47.033333,
+    "lon": 4.833333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevrolet,_Gaston",
+  "source_notes": "Civil birth registry entry in hand from Sy Scholfield, copy on file. (Côte-d'Or archives, no. 162).\\n",
+  "categories": [
+    "Lifestyle : Home : Expatriate",
+    "Personal : Death : Accidental",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Vocation : Sports : Race Cars",
+    "Vocation : Misc. : Mechanic",
+    "Notable : Awards : Sports Championship"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 3.761513,
+    "lagna": 63.761513,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.359455,
+    "jd_ut": 2412376.431007,
+    "planets": {
+      "Sun": {
+        "longitude": 169.78386,
+        "sign_index": 5,
+        "degree_in_sign": 19.78386,
+        "is_retrograde": false,
+        "speed": 0.986248
+      },
+      "Moon": {
+        "longitude": 330.956383,
+        "sign_index": 11,
+        "degree_in_sign": 0.956383,
+        "is_retrograde": false,
+        "speed": 10.915418
+      },
+      "Mars": {
+        "longitude": 290.763961,
+        "sign_index": 9,
+        "degree_in_sign": 20.763961,
+        "is_retrograde": false,
+        "speed": 0.360398
+      },
+      "Mercury": {
+        "longitude": 167.285399,
+        "sign_index": 5,
+        "degree_in_sign": 17.285399,
+        "is_retrograde": false,
+        "speed": 1.764823
+      },
+      "Jupiter": {
+        "longitude": 358.583777,
+        "sign_index": 11,
+        "degree_in_sign": 28.583777,
+        "is_retrograde": true,
+        "speed": -0.132111
+      },
+      "Venus": {
+        "longitude": 124.469047,
+        "sign_index": 4,
+        "degree_in_sign": 4.469047,
+        "is_retrograde": false,
+        "speed": 1.0722
+      },
+      "Saturn": {
+        "longitude": 162.035054,
+        "sign_index": 5,
+        "degree_in_sign": 12.035054,
+        "is_retrograde": false,
+        "speed": 0.12299
+      },
+      "Rahu": {
+        "longitude": 16.810733,
+        "sign_index": 0,
+        "degree_in_sign": 16.810733,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 196.810733,
+        "sign_index": 6,
+        "degree_in_sign": 16.810733,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

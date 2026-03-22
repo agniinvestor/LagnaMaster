@@ -1,0 +1,108 @@
+{
+  "adb_id": 71445,
+  "name": "Corne, Léonce",
+  "given_name": "Léonce Corne",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2412906.378924,
+    "year": 1894,
+    "month": 3,
+    "day": 18,
+    "calendar": "g",
+    "time": "21:15",
+    "time_type": "s",
+    "hour": 21.25,
+    "time_unknown": false,
+    "place": "Beauvais",
+    "country": "France",
+    "lat": 49.433333,
+    "lon": 2.083333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Corne,_Léonce",
+  "source_notes": "Sy Scholfield quotes from birth certificate no. 228 in the online Oise archives, p. 88/516.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 17.584541,
+    "lagna": 167.584541,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.379713,
+    "jd_ut": 2412906.378924,
+    "planets": {
+      "Sun": {
+        "longitude": 335.888431,
+        "sign_index": 11,
+        "degree_in_sign": 5.888431,
+        "is_retrograde": false,
+        "speed": 0.993058
+      },
+      "Moon": {
+        "longitude": 120.87087,
+        "sign_index": 4,
+        "degree_in_sign": 0.87087,
+        "is_retrograde": false,
+        "speed": 10.572262
+      },
+      "Mars": {
+        "longitude": 270.874737,
+        "sign_index": 9,
+        "degree_in_sign": 0.874737,
+        "is_retrograde": false,
+        "speed": 0.704612
+      },
+      "Mercury": {
+        "longitude": 327.250048,
+        "sign_index": 10,
+        "degree_in_sign": 27.250048,
+        "is_retrograde": true,
+        "speed": -0.822514
+      },
+      "Jupiter": {
+        "longitude": 34.941404,
+        "sign_index": 1,
+        "degree_in_sign": 4.941404,
+        "is_retrograde": false,
+        "speed": 0.170653
+      },
+      "Venus": {
+        "longitude": 299.328544,
+        "sign_index": 9,
+        "degree_in_sign": 29.328544,
+        "is_retrograde": false,
+        "speed": 0.351429
+      },
+      "Saturn": {
+        "longitude": 181.200916,
+        "sign_index": 6,
+        "degree_in_sign": 1.200916,
+        "is_retrograde": true,
+        "speed": -0.065501
+      },
+      "Rahu": {
+        "longitude": 348.727673,
+        "sign_index": 11,
+        "degree_in_sign": 18.727673,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 168.727673,
+        "sign_index": 5,
+        "degree_in_sign": 18.727673,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

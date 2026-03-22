@@ -1,0 +1,111 @@
+{
+  "adb_id": 93453,
+  "name": "Champsavin, Louis de",
+  "given_name": "Louis de Champsavin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2403294.83997,
+    "year": 1867,
+    "month": 11,
+    "day": 24,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "l",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Assérac",
+    "country": "France",
+    "lat": 47.43,
+    "lon": -2.389167
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Champsavin,_Louis_de",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_sp_sports.pdf].\\n",
+  "categories": [
+    "Vocation : Military : Military service",
+    "Vocation : Military : Wounded",
+    "Vocation : Sports : Equestrian",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 24.737138,
+    "lagna": 204.737138,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.012315,
+    "jd_ut": 2403294.83997,
+    "planets": {
+      "Sun": {
+        "longitude": 219.602476,
+        "sign_index": 7,
+        "degree_in_sign": 9.602476,
+        "is_retrograde": false,
+        "speed": 1.012145
+      },
+      "Moon": {
+        "longitude": 198.694,
+        "sign_index": 6,
+        "degree_in_sign": 18.694,
+        "is_retrograde": false,
+        "speed": 9.792169
+      },
+      "Mars": {
+        "longitude": 229.901515,
+        "sign_index": 7,
+        "degree_in_sign": 19.901515,
+        "is_retrograde": false,
+        "speed": 0.735696
+      },
+      "Mercury": {
+        "longitude": 214.274471,
+        "sign_index": 7,
+        "degree_in_sign": 4.274471,
+        "is_retrograde": true,
+        "speed": -1.234697
+      },
+      "Jupiter": {
+        "longitude": 307.245746,
+        "sign_index": 10,
+        "degree_in_sign": 7.245746,
+        "is_retrograde": false,
+        "speed": 0.099476
+      },
+      "Venus": {
+        "longitude": 234.713886,
+        "sign_index": 7,
+        "degree_in_sign": 24.713886,
+        "is_retrograde": false,
+        "speed": 1.25169
+      },
+      "Saturn": {
+        "longitude": 215.272696,
+        "sign_index": 7,
+        "degree_in_sign": 5.272696,
+        "is_retrograde": false,
+        "speed": 0.118984
+      },
+      "Rahu": {
+        "longitude": 138.063548,
+        "sign_index": 4,
+        "degree_in_sign": 18.063548,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 318.063548,
+        "sign_index": 10,
+        "degree_in_sign": 18.063548,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

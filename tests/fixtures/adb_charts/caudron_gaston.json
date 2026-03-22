@@ -1,0 +1,110 @@
+{
+  "adb_id": 69570,
+  "name": "Caudron, Gaston",
+  "given_name": "Gaston Caudron",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2408463.575602,
+    "year": 1882,
+    "month": 1,
+    "day": 18,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "l",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Favières",
+    "country": "France",
+    "lat": 48.766667,
+    "lon": 2.783333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "cap",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Caudron,_Gaston",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'sport auto moto' pdf file, p. 33.\\n",
+  "categories": [
+    "Vocation : Travel : Adventurer",
+    "Vocation : Travel : Pilot/ private",
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 27.171517,
+    "lagna": 177.171517,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.209883,
+    "jd_ut": 2408463.575602,
+    "planets": {
+      "Sun": {
+        "longitude": 275.712454,
+        "sign_index": 9,
+        "degree_in_sign": 5.712454,
+        "is_retrograde": false,
+        "speed": 1.01818
+      },
+      "Moon": {
+        "longitude": 253.687329,
+        "sign_index": 8,
+        "degree_in_sign": 13.687329,
+        "is_retrograde": false,
+        "speed": 17.068483
+      },
+      "Mars": {
+        "longitude": 66.367567,
+        "sign_index": 2,
+        "degree_in_sign": 6.367567,
+        "is_retrograde": true,
+        "speed": -0.209266
+      },
+      "Mercury": {
+        "longitude": 283.090361,
+        "sign_index": 9,
+        "degree_in_sign": 13.090361,
+        "is_retrograde": false,
+        "speed": 1.709285
+      },
+      "Jupiter": {
+        "longitude": 24.097228,
+        "sign_index": 0,
+        "degree_in_sign": 24.097228,
+        "is_retrograde": false,
+        "speed": 0.026414
+      },
+      "Venus": {
+        "longitude": 267.523639,
+        "sign_index": 8,
+        "degree_in_sign": 27.523639,
+        "is_retrograde": false,
+        "speed": 1.25656
+      },
+      "Saturn": {
+        "longitude": 13.451088,
+        "sign_index": 0,
+        "degree_in_sign": 13.451088,
+        "is_retrograde": false,
+        "speed": 0.020779
+      },
+      "Rahu": {
+        "longitude": 224.161234,
+        "sign_index": 7,
+        "degree_in_sign": 14.161234,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 44.161234,
+        "sign_index": 1,
+        "degree_in_sign": 14.161234,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

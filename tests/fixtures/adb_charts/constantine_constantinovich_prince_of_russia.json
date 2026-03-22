@@ -1,0 +1,109 @@
+{
+  "adb_id": 56060,
+  "name": "Constantine Constantinovich, Prince of Russia",
+  "given_name": "Prince of Russia Constantine Constantinovich",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2411734.020139,
+    "year": 1890,
+    "month": 12,
+    "day": 20,
+    "calendar": "j",
+    "time": "14:30",
+    "time_type": "s",
+    "hour": 14.5,
+    "time_unknown": false,
+    "place": "St.Petersburg",
+    "country": "Russian Federation",
+    "lat": 59.916667,
+    "lon": 30.3
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Constantine_Constantinovich,_Prince_of_Russia",
+  "source_notes": "Dimitry Macedonsky quotes a medical bulletin, published in the Governmental Herald, 1890, # 279, December 21 (January 2, 1891), page 1, on his Russian succession website:\\nhttp://macedonsky.narod.ru/agnates/a28.html\\nhttp://macedonsky.narod.ru/sources/a28s.html\\n",
+  "categories": [
+    "Passions : Criminal Victim : Terrorism victim",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 21.305382,
+    "lagna": 51.305382,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.334898,
+    "jd_ut": 2411734.020139,
+    "planets": {
+      "Sun": {
+        "longitude": 258.52657,
+        "sign_index": 8,
+        "degree_in_sign": 18.52657,
+        "is_retrograde": false,
+        "speed": 1.019251
+      },
+      "Moon": {
+        "longitude": 147.671547,
+        "sign_index": 4,
+        "degree_in_sign": 27.671547,
+        "is_retrograde": false,
+        "speed": 14.088836
+      },
+      "Mars": {
+        "longitude": 319.250774,
+        "sign_index": 10,
+        "degree_in_sign": 19.250774,
+        "is_retrograde": false,
+        "speed": 0.747576
+      },
+      "Mercury": {
+        "longitude": 277.248661,
+        "sign_index": 9,
+        "degree_in_sign": 7.248661,
+        "is_retrograde": false,
+        "speed": 0.543311
+      },
+      "Jupiter": {
+        "longitude": 292.272284,
+        "sign_index": 9,
+        "degree_in_sign": 22.272284,
+        "is_retrograde": false,
+        "speed": 0.218764
+      },
+      "Venus": {
+        "longitude": 223.261032,
+        "sign_index": 7,
+        "degree_in_sign": 13.261032,
+        "is_retrograde": false,
+        "speed": 0.296818
+      },
+      "Saturn": {
+        "longitude": 144.835082,
+        "sign_index": 4,
+        "degree_in_sign": 24.835082,
+        "is_retrograde": true,
+        "speed": -0.008963
+      },
+      "Rahu": {
+        "longitude": 50.853444,
+        "sign_index": 1,
+        "degree_in_sign": 20.853444,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 230.853444,
+        "sign_index": 7,
+        "degree_in_sign": 20.853444,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

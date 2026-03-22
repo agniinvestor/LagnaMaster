@@ -1,0 +1,108 @@
+{
+  "adb_id": 73499,
+  "name": "Chédal, Cathy",
+  "given_name": "Cathy Chédal",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2440021.461806,
+    "year": 1968,
+    "month": 6,
+    "day": 14,
+    "calendar": "g",
+    "time": "00:05",
+    "time_type": "s",
+    "hour": 0.083333,
+    "time_unknown": false,
+    "place": "Albertville",
+    "country": "France",
+    "lat": 45.683333,
+    "lon": 6.383333
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "aqu",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chédal,_Cathy",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Sports : Skiing"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 14.677253,
+    "lagna": 284.677253,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.416409,
+    "jd_ut": 2440021.461806,
+    "planets": {
+      "Sun": {
+        "longitude": 59.539626,
+        "sign_index": 1,
+        "degree_in_sign": 29.539626,
+        "is_retrograde": false,
+        "speed": 0.954819
+      },
+      "Moon": {
+        "longitude": 283.068587,
+        "sign_index": 9,
+        "degree_in_sign": 13.068587,
+        "is_retrograde": false,
+        "speed": 11.444101
+      },
+      "Mars": {
+        "longitude": 61.692789,
+        "sign_index": 2,
+        "degree_in_sign": 1.692789,
+        "is_retrograde": false,
+        "speed": 0.67716
+      },
+      "Mercury": {
+        "longitude": 66.573932,
+        "sign_index": 2,
+        "degree_in_sign": 6.573932,
+        "is_retrograde": true,
+        "speed": -0.480736
+      },
+      "Jupiter": {
+        "longitude": 126.354959,
+        "sign_index": 4,
+        "degree_in_sign": 6.354959,
+        "is_retrograde": false,
+        "speed": 0.137537
+      },
+      "Venus": {
+        "longitude": 57.768901,
+        "sign_index": 1,
+        "degree_in_sign": 27.768901,
+        "is_retrograde": false,
+        "speed": 1.227928
+      },
+      "Saturn": {
+        "longitude": 359.746927,
+        "sign_index": 11,
+        "degree_in_sign": 29.746927,
+        "is_retrograde": false,
+        "speed": 0.083205
+      },
+      "Rahu": {
+        "longitude": 351.843078,
+        "sign_index": 11,
+        "degree_in_sign": 21.843078,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 171.843078,
+        "sign_index": 5,
+        "degree_in_sign": 21.843078,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "adb_id": 90252,
+  "name": "Cartier, Louis",
+  "given_name": "Louis Cartier",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2406046.347717,
+    "year": 1875,
+    "month": 6,
+    "day": 6,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "l",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 17",
+    "country": "France",
+    "lat": 48.884444,
+    "lon": 2.321944
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cartier,_Louis",
+  "source_notes": "Sy Scholfield provided birth certificate from Paris archives (17th arr., no. 1287). \\n\\nRounded-off time of 8pm is given in ''The Cartiers: The Untold Story of the Family Behind the Jewelry Empire'' by Francesca Cartier Brickell (Random House, 2019), page 30: \"Named after both his grandfathers, Louis-Joseph Cartier was born at home, on Sunday, June 6, 1875, at eight o'clock in the evening.\"\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Business : Top executive"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 9.13851,
+    "lagna": 219.13851,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.117486,
+    "jd_ut": 2406046.347717,
+    "planets": {
+      "Sun": {
+        "longitude": 53.544361,
+        "sign_index": 1,
+        "degree_in_sign": 23.544361,
+        "is_retrograde": false,
+        "speed": 0.956625
+      },
+      "Moon": {
+        "longitude": 93.557828,
+        "sign_index": 3,
+        "degree_in_sign": 3.557828,
+        "is_retrograde": false,
+        "speed": 14.306742
+      },
+      "Mars": {
+        "longitude": 250.213309,
+        "sign_index": 8,
+        "degree_in_sign": 10.213309,
+        "is_retrograde": true,
+        "speed": -0.228109
+      },
+      "Mercury": {
+        "longitude": 77.399714,
+        "sign_index": 2,
+        "degree_in_sign": 17.399714,
+        "is_retrograde": false,
+        "speed": 1.139958
+      },
+      "Jupiter": {
+        "longitude": 179.865488,
+        "sign_index": 5,
+        "degree_in_sign": 29.865488,
+        "is_retrograde": true,
+        "speed": -0.03639
+      },
+      "Venus": {
+        "longitude": 24.891794,
+        "sign_index": 0,
+        "degree_in_sign": 24.891794,
+        "is_retrograde": false,
+        "speed": 1.200375
+      },
+      "Saturn": {
+        "longitude": 303.971897,
+        "sign_index": 10,
+        "degree_in_sign": 3.971897,
+        "is_retrograde": true,
+        "speed": -0.001076
+      },
+      "Rahu": {
+        "longitude": 352.255282,
+        "sign_index": 11,
+        "degree_in_sign": 22.255282,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 172.255282,
+        "sign_index": 5,
+        "degree_in_sign": 22.255282,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

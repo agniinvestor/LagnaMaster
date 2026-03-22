@@ -1,0 +1,117 @@
+{
+  "adb_id": 40737,
+  "name": "Cazuza",
+  "given_name": "Cazuza",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436298.506944,
+    "year": 1958,
+    "month": 4,
+    "day": 4,
+    "calendar": "g",
+    "time": "21:10",
+    "time_type": "s",
+    "hour": 21.166667,
+    "time_unknown": false,
+    "place": "Rio de Janeiro (Rio de Janeiro)",
+    "country": "Brazil",
+    "lat": -22.902778,
+    "lon": -43.2075
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "lib",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cazuza",
+  "source_notes": "Birth record in hand from Guilherme Salviano has 9 PM.\\nMarcello Borges quotes his mother in her biography for 9:10 PM.\\n",
+  "categories": [
+    "Traits : Body : Size",
+    "Diagnoses : Major Diseases : AIDS/ HIV",
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Family : Childhood : Family noted",
+    "Lifestyle : Home : Expatriate",
+    "Passions : Sexuality : Bi-Sexual",
+    "Vocation : Entertain/Music : Composer/ Arranger",
+    "Vocation : Entertain/Music : Group/ Duo",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 26.971987,
+    "lagna": 206.971987,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.274048,
+    "jd_ut": 2436298.506944,
+    "planets": {
+      "Sun": {
+        "longitude": 351.434886,
+        "sign_index": 11,
+        "degree_in_sign": 21.434886,
+        "is_retrograde": false,
+        "speed": 0.984208
+      },
+      "Moon": {
+        "longitude": 184.114763,
+        "sign_index": 6,
+        "degree_in_sign": 4.114763,
+        "is_retrograde": false,
+        "speed": 12.251338
+      },
+      "Mars": {
+        "longitude": 290.445393,
+        "sign_index": 9,
+        "degree_in_sign": 20.445393,
+        "is_retrograde": false,
+        "speed": 0.735554
+      },
+      "Mercury": {
+        "longitude": 7.414773,
+        "sign_index": 0,
+        "degree_in_sign": 7.414773,
+        "is_retrograde": false,
+        "speed": 0.183438
+      },
+      "Jupiter": {
+        "longitude": 185.057281,
+        "sign_index": 6,
+        "degree_in_sign": 5.057281,
+        "is_retrograde": true,
+        "speed": -0.120985
+      },
+      "Venus": {
+        "longitude": 305.133236,
+        "sign_index": 10,
+        "degree_in_sign": 5.133236,
+        "is_retrograde": false,
+        "speed": 0.952031
+      },
+      "Saturn": {
+        "longitude": 242.431457,
+        "sign_index": 8,
+        "degree_in_sign": 2.431457,
+        "is_retrograde": true,
+        "speed": -0.000321
+      },
+      "Rahu": {
+        "longitude": 189.130079,
+        "sign_index": 6,
+        "degree_in_sign": 9.130079,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 9.130079,
+        "sign_index": 0,
+        "degree_in_sign": 9.130079,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

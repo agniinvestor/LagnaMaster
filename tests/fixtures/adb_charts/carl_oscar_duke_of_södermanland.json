@@ -1,0 +1,111 @@
+{
+  "adb_id": 79667,
+  "name": "Carl Oscar, Duke of Södermanland",
+  "given_name": "Duke of Södermanland Carl Oscar",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2397836.949861,
+    "year": 1852,
+    "month": 12,
+    "day": 14,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Stockholm",
+    "country": "Sweden",
+    "lat": 59.333333,
+    "lon": 18.05
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "aqu",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carl_Oscar,_Duke_of_Södermanland",
+  "source_notes": "Sy Scholfield forwarded news report from \"Leipziger Zeitung,\" 24 Dec. 1852, p. 5: \"Schweden und Norwegen. Stockholm, 14. Decbr. Ihre königliche Hoheit die Kron-prinzessin von Schweden und Norwegen ist heute Mittags um 12 Uhr von einem Prinzen glücklich entbunden worden. DerPrinz hat die Namen Karl Oscar Wilhelm Frederik erhalten.\" (Sweden and Norway. Stockholm, Dec. 14. Her Royal Highness, the crown princess of Sweden and Norway, was happily delivered of a prince at 12 o'clock noon. The prince has received the names Karl Oscar Wilhelm Frederik).\\nSame data (12 noon) in Swedish newspaper, ''Stockholms Dagblad'', 15 Dec 1852, page 1.\\n",
+  "categories": [
+    "Diagnoses : Major Diseases : Other Major diseases",
+    "Personal : Death : Illness/ Disease",
+    "Personal : Death : Short Life less than 29 Yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 20.303671,
+    "lagna": 290.303671,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.803708,
+    "jd_ut": 2397836.949861,
+    "planets": {
+      "Sun": {
+        "longitude": 240.884575,
+        "sign_index": 8,
+        "degree_in_sign": 0.884575,
+        "is_retrograde": false,
+        "speed": 1.018154
+      },
+      "Moon": {
+        "longitude": 284.771897,
+        "sign_index": 9,
+        "degree_in_sign": 14.771897,
+        "is_retrograde": false,
+        "speed": 11.332266
+      },
+      "Mars": {
+        "longitude": 251.395665,
+        "sign_index": 8,
+        "degree_in_sign": 11.395665,
+        "is_retrograde": false,
+        "speed": 0.762256
+      },
+      "Mercury": {
+        "longitude": 254.12697,
+        "sign_index": 8,
+        "degree_in_sign": 14.12697,
+        "is_retrograde": true,
+        "speed": -0.604263
+      },
+      "Jupiter": {
+        "longitude": 226.275652,
+        "sign_index": 7,
+        "degree_in_sign": 16.275652,
+        "is_retrograde": false,
+        "speed": 0.220845
+      },
+      "Venus": {
+        "longitude": 204.912776,
+        "sign_index": 6,
+        "degree_in_sign": 24.912776,
+        "is_retrograde": false,
+        "speed": 1.22198
+      },
+      "Saturn": {
+        "longitude": 19.985761,
+        "sign_index": 0,
+        "degree_in_sign": 19.985761,
+        "is_retrograde": true,
+        "speed": -0.050639
+      },
+      "Rahu": {
+        "longitude": 67.288852,
+        "sign_index": 2,
+        "degree_in_sign": 7.288852,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 247.288852,
+        "sign_index": 8,
+        "degree_in_sign": 7.288852,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "adb_id": 25385,
+  "name": "Custer, Edith",
+  "given_name": "Edith Custer",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423425.25,
+    "year": 1923,
+    "month": 1,
+    "day": 5,
+    "calendar": "g",
+    "time": "13:00",
+    "time_type": "s",
+    "hour": 13.0,
+    "time_unknown": false,
+    "place": "Whitestone",
+    "country": "New York",
+    "lat": 40.8,
+    "lon": -73.816667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "leo",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Custer,_Edith",
+  "source_notes": "LMR quotes her in 1978.  She later had the time rectified to 1:19 PM from a recorded 1:00 PM.  At the time of her death, the rectification was 12:53 PM, or, according to Lorraine Welsh, 12:59 PM.\\n",
+  "categories": [
+    "Family : Relationship : Number of Marriages",
+    "Family : Relationship : Widowed",
+    "Lifestyle : Home : Neighborhood",
+    "Vocation : Occult Fields : Astrologer",
+    "Vocation : Writers : Astrology",
+    "Vocation : Writers : Humor",
+    "Vocation : Writers : Publisher/ Editor",
+    "Notable : Awards : Vocational award",
+    "Notable : Famous : Founder/ originator",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Profiles Of Women"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 3.045044,
+    "lagna": 3.045044,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.781843,
+    "jd_ut": 2423425.25,
+    "planets": {
+      "Sun": {
+        "longitude": 261.614111,
+        "sign_index": 8,
+        "degree_in_sign": 21.614111,
+        "is_retrograde": false,
+        "speed": 1.018949
+      },
+      "Moon": {
+        "longitude": 115.500519,
+        "sign_index": 3,
+        "degree_in_sign": 25.500519,
+        "is_retrograde": false,
+        "speed": 18.19966
+      },
+      "Mars": {
+        "longitude": 325.734823,
+        "sign_index": 10,
+        "degree_in_sign": 25.734823,
+        "is_retrograde": false,
+        "speed": 0.734272
+      },
+      "Mercury": {
+        "longitude": 278.362448,
+        "sign_index": 9,
+        "degree_in_sign": 8.362448,
+        "is_retrograde": false,
+        "speed": 1.486829
+      },
+      "Jupiter": {
+        "longitude": 201.190397,
+        "sign_index": 6,
+        "degree_in_sign": 21.190397,
+        "is_retrograde": false,
+        "speed": 0.154648
+      },
+      "Venus": {
+        "longitude": 219.325469,
+        "sign_index": 7,
+        "degree_in_sign": 9.325469,
+        "is_retrograde": false,
+        "speed": 0.650185
+      },
+      "Saturn": {
+        "longitude": 176.817308,
+        "sign_index": 5,
+        "degree_in_sign": 26.817308,
+        "is_retrograde": false,
+        "speed": 0.042037
+      },
+      "Rahu": {
+        "longitude": 151.310596,
+        "sign_index": 5,
+        "degree_in_sign": 1.310596,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 331.310596,
+        "sign_index": 11,
+        "degree_in_sign": 1.310596,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

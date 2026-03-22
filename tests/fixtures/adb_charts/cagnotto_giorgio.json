@@ -1,0 +1,110 @@
+{
+  "adb_id": 39652,
+  "name": "Cagnotto, Giorgio",
+  "given_name": "Giorgio Cagnotto",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432338.833333,
+    "year": 1947,
+    "month": 6,
+    "day": 2,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "d",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Torino",
+    "country": "Italy",
+    "lat": 45.05,
+    "lon": 7.666667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sco",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cagnotto,_Giorgio",
+  "source_notes": "Bordoni quotes B.C., Datanotizie No. 35, 1/2001\\n",
+  "categories": [
+    "Family : Parenting : Kids 1-3",
+    "Vocation : Sports : Swimming",
+    "Notable : Awards : Olympics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 19.115251,
+    "lagna": 79.115251,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.122643,
+    "jd_ut": 2432338.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 47.833218,
+        "sign_index": 1,
+        "degree_in_sign": 17.833218,
+        "is_retrograde": false,
+        "speed": 0.957615
+      },
+      "Moon": {
+        "longitude": 211.096347,
+        "sign_index": 7,
+        "degree_in_sign": 1.096347,
+        "is_retrograde": false,
+        "speed": 15.137967
+      },
+      "Mars": {
+        "longitude": 15.963198,
+        "sign_index": 0,
+        "degree_in_sign": 15.963198,
+        "is_retrograde": false,
+        "speed": 0.73989
+      },
+      "Mercury": {
+        "longitude": 66.476595,
+        "sign_index": 2,
+        "degree_in_sign": 6.476595,
+        "is_retrograde": false,
+        "speed": 1.720831
+      },
+      "Jupiter": {
+        "longitude": 207.255389,
+        "sign_index": 6,
+        "degree_in_sign": 27.255389,
+        "is_retrograde": true,
+        "speed": -0.112335
+      },
+      "Venus": {
+        "longitude": 22.877009,
+        "sign_index": 0,
+        "degree_in_sign": 22.877009,
+        "is_retrograde": false,
+        "speed": 1.209056
+      },
+      "Saturn": {
+        "longitude": 101.809941,
+        "sign_index": 3,
+        "degree_in_sign": 11.809941,
+        "is_retrograde": false,
+        "speed": 0.092567
+      },
+      "Rahu": {
+        "longitude": 38.961329,
+        "sign_index": 1,
+        "degree_in_sign": 8.961329,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 218.961329,
+        "sign_index": 7,
+        "degree_in_sign": 8.961329,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

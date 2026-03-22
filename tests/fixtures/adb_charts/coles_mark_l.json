@@ -1,0 +1,111 @@
+{
+  "adb_id": 47598,
+  "name": "Coles, Mark L.",
+  "given_name": "Mark L. Coles",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2441415.242361,
+    "year": 1972,
+    "month": 4,
+    "day": 7,
+    "calendar": "g",
+    "time": "12:49",
+    "time_type": "s",
+    "hour": 12.816667,
+    "time_unknown": false,
+    "place": "Cambridge (Middlesex County)",
+    "country": "Massachusetts",
+    "lat": 42.366667,
+    "lon": -71.1
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Coles,_Mark_L.",
+  "source_notes": "Frances McEvoy quotes B.C. 7/1997\\n",
+  "categories": [
+    "Traits : Personality : Gracious/ sociable",
+    "Personal : Death : Suicide",
+    "Personal : Death : Unusual",
+    "Vocation : Business : Banker/ Financier"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 28.279285,
+    "lagna": 88.279285,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.469706,
+    "jd_ut": 2441415.242361,
+    "planets": {
+      "Sun": {
+        "longitude": 354.532288,
+        "sign_index": 11,
+        "degree_in_sign": 24.532288,
+        "is_retrograde": false,
+        "speed": 0.982912
+      },
+      "Moon": {
+        "longitude": 272.602759,
+        "sign_index": 9,
+        "degree_in_sign": 2.602759,
+        "is_retrograde": false,
+        "speed": 13.426696
+      },
+      "Mars": {
+        "longitude": 44.055776,
+        "sign_index": 1,
+        "degree_in_sign": 14.055776,
+        "is_retrograde": false,
+        "speed": 0.650064
+      },
+      "Mercury": {
+        "longitude": 342.008843,
+        "sign_index": 11,
+        "degree_in_sign": 12.008843,
+        "is_retrograde": true,
+        "speed": -0.551697
+      },
+      "Jupiter": {
+        "longitude": 254.385255,
+        "sign_index": 8,
+        "degree_in_sign": 14.385255,
+        "is_retrograde": false,
+        "speed": 0.053337
+      },
+      "Venus": {
+        "longitude": 40.298733,
+        "sign_index": 1,
+        "degree_in_sign": 10.298733,
+        "is_retrograde": false,
+        "speed": 0.981342
+      },
+      "Saturn": {
+        "longitude": 39.974384,
+        "sign_index": 1,
+        "degree_in_sign": 9.974384,
+        "is_retrograde": false,
+        "speed": 0.104007
+      },
+      "Rahu": {
+        "longitude": 277.983801,
+        "sign_index": 9,
+        "degree_in_sign": 7.983801,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 97.983801,
+        "sign_index": 3,
+        "degree_in_sign": 7.983801,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

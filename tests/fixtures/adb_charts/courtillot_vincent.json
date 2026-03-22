@@ -1,0 +1,109 @@
+{
+  "adb_id": 65088,
+  "name": "Courtillot, Vincent",
+  "given_name": "Vincent Courtillot",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2432616.802083,
+    "year": 1948,
+    "month": 3,
+    "day": 6,
+    "calendar": "g",
+    "time": "08:15",
+    "time_type": "s",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Neuilly sur Seine",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "cap",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courtillot,_Vincent",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 261.\\n",
+  "categories": [
+    "Vocation : Science : Geology",
+    "Vocation : Science : Physics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 24.394437,
+    "lagna": 324.394437,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.133271,
+    "jd_ut": 2432616.802083,
+    "planets": {
+      "Sun": {
+        "longitude": 322.507551,
+        "sign_index": 10,
+        "degree_in_sign": 22.507551,
+        "is_retrograde": false,
+        "speed": 1.000976
+      },
+      "Moon": {
+        "longitude": 272.508429,
+        "sign_index": 9,
+        "degree_in_sign": 2.508429,
+        "is_retrograde": false,
+        "speed": 8.38787
+      },
+      "Mars": {
+        "longitude": 118.417413,
+        "sign_index": 3,
+        "degree_in_sign": 28.417413,
+        "is_retrograde": true,
+        "speed": -0.293061
+      },
+      "Mercury": {
+        "longitude": 298.691768,
+        "sign_index": 9,
+        "degree_in_sign": 28.691768,
+        "is_retrograde": false,
+        "speed": 0.231928
+      },
+      "Jupiter": {
+        "longitude": 243.408019,
+        "sign_index": 8,
+        "degree_in_sign": 3.408019,
+        "is_retrograde": false,
+        "speed": 0.115049
+      },
+      "Venus": {
+        "longitude": 4.581629,
+        "sign_index": 0,
+        "degree_in_sign": 4.581629,
+        "is_retrograde": false,
+        "speed": 1.152922
+      },
+      "Saturn": {
+        "longitude": 114.113793,
+        "sign_index": 3,
+        "degree_in_sign": 24.113793,
+        "is_retrograde": true,
+        "speed": -0.066341
+      },
+      "Rahu": {
+        "longitude": 24.231192,
+        "sign_index": 0,
+        "degree_in_sign": 24.231192,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 204.231192,
+        "sign_index": 6,
+        "degree_in_sign": 24.231192,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

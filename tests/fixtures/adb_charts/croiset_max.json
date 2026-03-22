@@ -1,0 +1,108 @@
+{
+  "adb_id": 71894,
+  "name": "Croiset, Max",
+  "given_name": "Max Croiset",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419627.861435,
+    "year": 1912,
+    "month": 8,
+    "day": 13,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Blaricum",
+    "country": "Netherlands",
+    "lat": 52.266667,
+    "lon": 5.25
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "leo",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Croiset,_Max",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 19.464752,
+    "lagna": 139.464752,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.636665,
+    "jd_ut": 2419627.861435,
+    "planets": {
+      "Sun": {
+        "longitude": 117.565801,
+        "sign_index": 3,
+        "degree_in_sign": 27.565801,
+        "is_retrograde": false,
+        "speed": 0.960796
+      },
+      "Moon": {
+        "longitude": 125.839053,
+        "sign_index": 4,
+        "degree_in_sign": 5.839053,
+        "is_retrograde": false,
+        "speed": 12.87008
+      },
+      "Mars": {
+        "longitude": 144.372481,
+        "sign_index": 4,
+        "degree_in_sign": 24.372481,
+        "is_retrograde": false,
+        "speed": 0.632262
+      },
+      "Mercury": {
+        "longitude": 132.907344,
+        "sign_index": 4,
+        "degree_in_sign": 12.907344,
+        "is_retrograde": true,
+        "speed": -0.435592
+      },
+      "Jupiter": {
+        "longitude": 223.088889,
+        "sign_index": 7,
+        "degree_in_sign": 13.088889,
+        "is_retrograde": false,
+        "speed": 0.032761
+      },
+      "Venus": {
+        "longitude": 128.133898,
+        "sign_index": 4,
+        "degree_in_sign": 8.133898,
+        "is_retrograde": false,
+        "speed": 1.234454
+      },
+      "Saturn": {
+        "longitude": 40.454472,
+        "sign_index": 1,
+        "degree_in_sign": 10.454472,
+        "is_retrograde": false,
+        "speed": 0.058355
+      },
+      "Rahu": {
+        "longitude": 352.542159,
+        "sign_index": 11,
+        "degree_in_sign": 22.542159,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 172.542159,
+        "sign_index": 5,
+        "degree_in_sign": 22.542159,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

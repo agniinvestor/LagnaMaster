@@ -1,0 +1,110 @@
+{
+  "adb_id": 83002,
+  "name": "Cruz, Tirso III",
+  "given_name": "Tirso III Cruz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434103.281944,
+    "year": 1952,
+    "month": 4,
+    "day": 1,
+    "calendar": "g",
+    "time": "02:46",
+    "time_type": "s",
+    "hour": 2.766667,
+    "time_unknown": false,
+    "place": "Manila",
+    "country": "Philippines",
+    "lat": 14.583333,
+    "lon": 121.0
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "gem",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cruz,_Tirso_III",
+  "source_notes": "His Wikipedia entry cites birth certificate [https://en.wikipedia.org/wiki/Tirso_Cruz_III].\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 28.330934,
+    "lagna": 268.330934,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.190109,
+    "jd_ut": 2434103.281944,
+    "planets": {
+      "Sun": {
+        "longitude": 347.804305,
+        "sign_index": 11,
+        "degree_in_sign": 17.804305,
+        "is_retrograde": false,
+        "speed": 0.986831
+      },
+      "Moon": {
+        "longitude": 59.811978,
+        "sign_index": 1,
+        "degree_in_sign": 29.811978,
+        "is_retrograde": false,
+        "speed": 16.777691
+      },
+      "Mars": {
+        "longitude": 205.033305,
+        "sign_index": 6,
+        "degree_in_sign": 25.033305,
+        "is_retrograde": true,
+        "speed": -0.079425
+      },
+      "Mercury": {
+        "longitude": 355.667564,
+        "sign_index": 11,
+        "degree_in_sign": 25.667564,
+        "is_retrograde": true,
+        "speed": -0.56124
+      },
+      "Jupiter": {
+        "longitude": 0.060621,
+        "sign_index": 0,
+        "degree_in_sign": 0.060621,
+        "is_retrograde": false,
+        "speed": 0.238592
+      },
+      "Venus": {
+        "longitude": 325.502135,
+        "sign_index": 10,
+        "degree_in_sign": 25.502135,
+        "is_retrograde": false,
+        "speed": 1.230731
+      },
+      "Saturn": {
+        "longitude": 168.48802,
+        "sign_index": 5,
+        "degree_in_sign": 18.48802,
+        "is_retrograde": true,
+        "speed": -0.077949
+      },
+      "Rahu": {
+        "longitude": 305.459563,
+        "sign_index": 10,
+        "degree_in_sign": 5.459563,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 125.459563,
+        "sign_index": 4,
+        "degree_in_sign": 5.459563,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

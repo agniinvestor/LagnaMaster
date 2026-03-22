@@ -1,0 +1,114 @@
+{
+  "adb_id": 8313,
+  "name": "Capra, Fritjof",
+  "given_name": "Fritjof Capra",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2429295.913194,
+    "year": 1939,
+    "month": 2,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:55",
+    "time_type": "s",
+    "hour": 10.916667,
+    "time_unknown": false,
+    "place": "Vienna",
+    "country": "Austria",
+    "lat": 48.216667,
+    "lon": 16.373056
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "can",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capra,_Fritjof",
+  "source_notes": "Tony Joseph quotes Arthur Young, from Capra.\\n",
+  "categories": [
+    "Traits : Mind : Exceptional mind",
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Physics",
+    "Vocation : Writers : Textbook/ Non-fiction",
+    "Notable : Extraordinary Talents : For Abstract thought",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 2.856367,
+    "lagna": 2.856367,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.006296,
+    "jd_ut": 2429295.913194,
+    "planets": {
+      "Sun": {
+        "longitude": 288.640989,
+        "sign_index": 9,
+        "degree_in_sign": 18.640989,
+        "is_retrograde": false,
+        "speed": 1.014628
+      },
+      "Moon": {
+        "longitude": 67.619383,
+        "sign_index": 2,
+        "degree_in_sign": 7.619383,
+        "is_retrograde": false,
+        "speed": 18.503564
+      },
+      "Mars": {
+        "longitude": 218.81944,
+        "sign_index": 7,
+        "degree_in_sign": 8.81944,
+        "is_retrograde": false,
+        "speed": 0.608036
+      },
+      "Mercury": {
+        "longitude": 276.458154,
+        "sign_index": 9,
+        "degree_in_sign": 6.458154,
+        "is_retrograde": false,
+        "speed": 1.587066
+      },
+      "Jupiter": {
+        "longitude": 314.145873,
+        "sign_index": 10,
+        "degree_in_sign": 14.145873,
+        "is_retrograde": false,
+        "speed": 0.229963
+      },
+      "Venus": {
+        "longitude": 241.822809,
+        "sign_index": 8,
+        "degree_in_sign": 1.822809,
+        "is_retrograde": false,
+        "speed": 1.024032
+      },
+      "Saturn": {
+        "longitude": 350.280085,
+        "sign_index": 11,
+        "degree_in_sign": 20.280085,
+        "is_retrograde": false,
+        "speed": 0.080588
+      },
+      "Rahu": {
+        "longitude": 200.211956,
+        "sign_index": 6,
+        "degree_in_sign": 20.211956,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 20.211956,
+        "sign_index": 0,
+        "degree_in_sign": 20.211956,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

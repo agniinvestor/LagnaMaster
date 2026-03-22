@@ -1,0 +1,111 @@
+{
+  "adb_id": 42692,
+  "name": "Consuelos, Lola",
+  "given_name": "Lola Consuelos",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2452076.9375,
+    "year": 2001,
+    "month": 6,
+    "day": 16,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "d",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "New York",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "ari",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Consuelos,_Lola",
+  "source_notes": "LMR quotes ''People'' website, 19 June 2001.\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Family : Childhood : Order of birth",
+    "Vocation : Entertain/Music : Song writer",
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc."
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 21.282325,
+    "lagna": 51.282325,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.877436,
+    "jd_ut": 2452076.9375,
+    "planets": {
+      "Sun": {
+        "longitude": 61.466964,
+        "sign_index": 2,
+        "degree_in_sign": 1.466964,
+        "is_retrograde": false,
+        "speed": 0.955116
+      },
+      "Moon": {
+        "longitude": 357.688639,
+        "sign_index": 11,
+        "degree_in_sign": 27.688639,
+        "is_retrograde": false,
+        "speed": 9.361566
+      },
+      "Mars": {
+        "longitude": 238.013418,
+        "sign_index": 7,
+        "degree_in_sign": 28.013418,
+        "is_retrograde": true,
+        "speed": -0.326105
+      },
+      "Mercury": {
+        "longitude": 61.652932,
+        "sign_index": 2,
+        "degree_in_sign": 1.652932,
+        "is_retrograde": true,
+        "speed": -0.5673
+      },
+      "Jupiter": {
+        "longitude": 60.082232,
+        "sign_index": 2,
+        "degree_in_sign": 0.082232,
+        "is_retrograde": false,
+        "speed": 0.230692
+      },
+      "Venus": {
+        "longitude": 15.915573,
+        "sign_index": 0,
+        "degree_in_sign": 15.915573,
+        "is_retrograde": false,
+        "speed": 1.007953
+      },
+      "Saturn": {
+        "longitude": 43.296289,
+        "sign_index": 1,
+        "degree_in_sign": 13.296289,
+        "is_retrograde": false,
+        "speed": 0.125368
+      },
+      "Rahu": {
+        "longitude": 72.998986,
+        "sign_index": 2,
+        "degree_in_sign": 12.998986,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 252.998986,
+        "sign_index": 8,
+        "degree_in_sign": 12.998986,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

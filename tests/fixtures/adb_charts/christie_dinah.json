@@ -1,0 +1,110 @@
+{
+  "adb_id": 43161,
+  "name": "Christie, Dinah",
+  "given_name": "Dinah Christie",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2430722.791667,
+    "year": 1942,
+    "month": 12,
+    "day": 29,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "d",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christie,_Dinah",
+  "source_notes": "John McKay-Clements quotes her \"8:00 AM-ish,\" 1997, given in The Canadian Astrology Collection, 1998\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertainment : Live Stage",
+    "Vocation : Entertainment : TV series/ Soap star"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 4.248497,
+    "lagna": 214.248497,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.060853,
+    "jd_ut": 2430722.791667,
+    "planets": {
+      "Sun": {
+        "longitude": 253.874432,
+        "sign_index": 8,
+        "degree_in_sign": 13.874432,
+        "is_retrograde": false,
+        "speed": 1.019036
+      },
+      "Moon": {
+        "longitude": 146.644993,
+        "sign_index": 4,
+        "degree_in_sign": 26.644993,
+        "is_retrograde": false,
+        "speed": 9.667744
+      },
+      "Mars": {
+        "longitude": 226.503915,
+        "sign_index": 7,
+        "degree_in_sign": 16.503915,
+        "is_retrograde": false,
+        "speed": 0.708062
+      },
+      "Mercury": {
+        "longitude": 269.48772,
+        "sign_index": 8,
+        "degree_in_sign": 29.48772,
+        "is_retrograde": false,
+        "speed": 1.528644
+      },
+      "Jupiter": {
+        "longitude": 88.856697,
+        "sign_index": 2,
+        "degree_in_sign": 28.856697,
+        "is_retrograde": true,
+        "speed": -0.126601
+      },
+      "Venus": {
+        "longitude": 264.225177,
+        "sign_index": 8,
+        "degree_in_sign": 24.225177,
+        "is_retrograde": false,
+        "speed": 1.25603
+      },
+      "Saturn": {
+        "longitude": 43.883011,
+        "sign_index": 1,
+        "degree_in_sign": 13.883011,
+        "is_retrograde": true,
+        "speed": -0.064976
+      },
+      "Rahu": {
+        "longitude": 124.598714,
+        "sign_index": 4,
+        "degree_in_sign": 4.598714,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 304.598714,
+        "sign_index": 10,
+        "degree_in_sign": 4.598714,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

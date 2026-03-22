@@ -1,0 +1,108 @@
+{
+  "adb_id": 3146,
+  "name": "Councel, Paul",
+  "given_name": "Paul Councel",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2409539.103472,
+    "year": 1884,
+    "month": 12,
+    "day": 28,
+    "calendar": "g",
+    "time": "09:29",
+    "time_type": "s",
+    "hour": 9.483333,
+    "time_unknown": false,
+    "place": "Danville",
+    "country": "Virginia",
+    "lat": 36.583333,
+    "lon": -79.4
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Councel,_Paul",
+  "source_notes": "Given by him in AA 12/l941\\n",
+  "categories": [
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 24.380116,
+    "lagna": 264.380116,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.250995,
+    "jd_ut": 2409539.103472,
+    "planets": {
+      "Sun": {
+        "longitude": 255.090891,
+        "sign_index": 8,
+        "degree_in_sign": 15.090891,
+        "is_retrograde": false,
+        "speed": 1.018995
+      },
+      "Moon": {
+        "longitude": 24.045912,
+        "sign_index": 0,
+        "degree_in_sign": 24.045912,
+        "is_retrograde": false,
+        "speed": 19.168635
+      },
+      "Mars": {
+        "longitude": 265.479017,
+        "sign_index": 8,
+        "degree_in_sign": 25.479017,
+        "is_retrograde": false,
+        "speed": 0.775609
+      },
+      "Mercury": {
+        "longitude": 268.210396,
+        "sign_index": 8,
+        "degree_in_sign": 28.210396,
+        "is_retrograde": true,
+        "speed": -0.551409
+      },
+      "Jupiter": {
+        "longitude": 133.506709,
+        "sign_index": 4,
+        "degree_in_sign": 13.506709,
+        "is_retrograde": true,
+        "speed": -0.024002
+      },
+      "Venus": {
+        "longitude": 224.280269,
+        "sign_index": 7,
+        "degree_in_sign": 14.280269,
+        "is_retrograde": false,
+        "speed": 1.237661
+      },
+      "Saturn": {
+        "longitude": 57.187968,
+        "sign_index": 1,
+        "degree_in_sign": 27.187968,
+        "is_retrograde": true,
+        "speed": -0.076211
+      },
+      "Rahu": {
+        "longitude": 167.166729,
+        "sign_index": 5,
+        "degree_in_sign": 17.166729,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 347.166729,
+        "sign_index": 11,
+        "degree_in_sign": 17.166729,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

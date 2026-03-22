@@ -1,0 +1,108 @@
+{
+  "adb_id": 95510,
+  "name": "Chevalier-Bouchet, Anais",
+  "given_name": "Anais Chevalier-Bouchet",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2449031.059722,
+    "year": 1993,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "14:26",
+    "time_type": "s",
+    "hour": 14.433333,
+    "time_unknown": false,
+    "place": "St.Martin d'Hères",
+    "country": "France",
+    "lat": 45.166667,
+    "lon": 5.766667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chevalier-Bouchet,_Anais",
+  "source_notes": "Wikipedia.\\n",
+  "categories": [
+    "Vocation : Sports : Skiing"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 26.107757,
+    "lagna": 56.107757,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.760949,
+    "jd_ut": 2449031.059722,
+    "planets": {
+      "Sun": {
+        "longitude": 300.083723,
+        "sign_index": 10,
+        "degree_in_sign": 0.083723,
+        "is_retrograde": false,
+        "speed": 1.010887
+      },
+      "Moon": {
+        "longitude": 196.419936,
+        "sign_index": 6,
+        "degree_in_sign": 16.419936,
+        "is_retrograde": false,
+        "speed": 16.136283
+      },
+      "Mars": {
+        "longitude": 74.957452,
+        "sign_index": 2,
+        "degree_in_sign": 14.957452,
+        "is_retrograde": true,
+        "speed": -0.034974
+      },
+      "Mercury": {
+        "longitude": 314.710304,
+        "sign_index": 10,
+        "degree_in_sign": 14.710304,
+        "is_retrograde": false,
+        "speed": 1.676825
+      },
+      "Jupiter": {
+        "longitude": 170.594004,
+        "sign_index": 5,
+        "degree_in_sign": 20.594004,
+        "is_retrograde": true,
+        "speed": -0.045745
+      },
+      "Venus": {
+        "longitude": 344.560714,
+        "sign_index": 11,
+        "degree_in_sign": 14.560714,
+        "is_retrograde": false,
+        "speed": 0.756118
+      },
+      "Saturn": {
+        "longitude": 297.512832,
+        "sign_index": 9,
+        "degree_in_sign": 27.512832,
+        "is_retrograde": false,
+        "speed": 0.120467
+      },
+      "Rahu": {
+        "longitude": 234.406186,
+        "sign_index": 7,
+        "degree_in_sign": 24.406186,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 54.406186,
+        "sign_index": 1,
+        "degree_in_sign": 24.406186,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 63186,
+  "name": "Charmasson, Rémi",
+  "given_name": "Rémi Charmasson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437423.208333,
+    "year": 1961,
+    "month": 5,
+    "day": 3,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Avignon",
+    "country": "France",
+    "lat": 43.95,
+    "lon": 4.816667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Charmasson,_Rémi",
+  "source_notes": "Didier Geslain archive, 'jazz' pdf file, p. 25.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist",
+    "Vocation : Entertain/Music : Jazz"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 7.257399,
+    "lagna": 157.257399,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.317054,
+    "jd_ut": 2437423.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 19.693831,
+        "sign_index": 0,
+        "degree_in_sign": 19.693831,
+        "is_retrograde": false,
+        "speed": 0.968881
+      },
+      "Moon": {
+        "longitude": 237.947698,
+        "sign_index": 7,
+        "degree_in_sign": 27.947698,
+        "is_retrograde": false,
+        "speed": 17.347782
+      },
+      "Mars": {
+        "longitude": 95.483458,
+        "sign_index": 3,
+        "degree_in_sign": 5.483458,
+        "is_retrograde": false,
+        "speed": 0.510848
+      },
+      "Mercury": {
+        "longitude": 21.761932,
+        "sign_index": 0,
+        "degree_in_sign": 21.761932,
+        "is_retrograde": false,
+        "speed": 2.16398
+      },
+      "Jupiter": {
+        "longitude": 283.077656,
+        "sign_index": 9,
+        "degree_in_sign": 13.077656,
+        "is_retrograde": false,
+        "speed": 0.067973
+      },
+      "Venus": {
+        "longitude": 349.469137,
+        "sign_index": 11,
+        "degree_in_sign": 19.469137,
+        "is_retrograde": false,
+        "speed": 0.059738
+      },
+      "Saturn": {
+        "longitude": 276.511345,
+        "sign_index": 9,
+        "degree_in_sign": 6.511345,
+        "is_retrograde": false,
+        "speed": 0.009734
+      },
+      "Rahu": {
+        "longitude": 129.529846,
+        "sign_index": 4,
+        "degree_in_sign": 9.529846,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 309.529846,
+        "sign_index": 10,
+        "degree_in_sign": 9.529846,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

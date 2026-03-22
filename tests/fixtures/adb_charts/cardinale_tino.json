@@ -1,0 +1,108 @@
+{
+  "adb_id": 52579,
+  "name": "Cardinale, Tino",
+  "given_name": "Tino Cardinale",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423973.930556,
+    "year": 1924,
+    "month": 7,
+    "day": 7,
+    "calendar": "g",
+    "time": "11:20",
+    "time_type": "s",
+    "hour": 11.333333,
+    "time_unknown": false,
+    "place": "Deliceto",
+    "country": "Italy",
+    "lat": 41.216667,
+    "lon": 15.383333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "vir",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cardinale,_Tino",
+  "source_notes": "Steinbrecher collection: Gauquelin vol 1 no 701\\n",
+  "categories": [
+    "Vocation : Sports : Boxing"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 18.733094,
+    "lagna": 138.733094,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.80282,
+    "jd_ut": 2423973.930556,
+    "planets": {
+      "Sun": {
+        "longitude": 82.193544,
+        "sign_index": 2,
+        "degree_in_sign": 22.193544,
+        "is_retrograde": false,
+        "speed": 0.953449
+      },
+      "Moon": {
+        "longitude": 142.45798,
+        "sign_index": 4,
+        "degree_in_sign": 22.45798,
+        "is_retrograde": false,
+        "speed": 11.469046
+      },
+      "Mars": {
+        "longitude": 310.673386,
+        "sign_index": 10,
+        "degree_in_sign": 10.673386,
+        "is_retrograde": false,
+        "speed": 0.20807
+      },
+      "Mercury": {
+        "longitude": 84.221806,
+        "sign_index": 2,
+        "degree_in_sign": 24.221806,
+        "is_retrograde": false,
+        "speed": 2.148464
+      },
+      "Jupiter": {
+        "longitude": 228.655196,
+        "sign_index": 7,
+        "degree_in_sign": 18.655196,
+        "is_retrograde": true,
+        "speed": -0.087731
+      },
+      "Venus": {
+        "longitude": 72.987382,
+        "sign_index": 2,
+        "degree_in_sign": 12.987382,
+        "is_retrograde": true,
+        "speed": -0.558534
+      },
+      "Saturn": {
+        "longitude": 182.875317,
+        "sign_index": 6,
+        "degree_in_sign": 2.875317,
+        "is_retrograde": false,
+        "speed": 0.013876
+      },
+      "Rahu": {
+        "longitude": 122.234869,
+        "sign_index": 4,
+        "degree_in_sign": 2.234869,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 302.234869,
+        "sign_index": 10,
+        "degree_in_sign": 2.234869,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

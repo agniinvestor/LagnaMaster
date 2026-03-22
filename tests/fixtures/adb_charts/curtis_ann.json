@@ -1,0 +1,108 @@
+{
+  "adb_id": 50881,
+  "name": "Curtis, Ann",
+  "given_name": "Ann Curtis",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424581.832639,
+    "year": 1926,
+    "month": 3,
+    "day": 6,
+    "calendar": "g",
+    "time": "23:59",
+    "time_type": "s",
+    "hour": 23.983333,
+    "time_unknown": false,
+    "place": "San Francisco",
+    "country": "California",
+    "lat": 37.783333,
+    "lon": -122.416667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Curtis,_Ann",
+  "source_notes": "Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Sports : Swimming"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 12.142361,
+    "lagna": 192.142361,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.826061,
+    "jd_ut": 2424581.832639,
+    "planets": {
+      "Sun": {
+        "longitude": 323.178446,
+        "sign_index": 10,
+        "degree_in_sign": 23.178446,
+        "is_retrograde": false,
+        "speed": 1.000421
+      },
+      "Moon": {
+        "longitude": 232.002303,
+        "sign_index": 7,
+        "degree_in_sign": 22.002303,
+        "is_retrograde": false,
+        "speed": 13.763258
+      },
+      "Mars": {
+        "longitude": 265.787231,
+        "sign_index": 8,
+        "degree_in_sign": 25.787231,
+        "is_retrograde": false,
+        "speed": 0.715814
+      },
+      "Mercury": {
+        "longitude": 339.181202,
+        "sign_index": 11,
+        "degree_in_sign": 9.181202,
+        "is_retrograde": false,
+        "speed": 1.618679
+      },
+      "Jupiter": {
+        "longitude": 291.173119,
+        "sign_index": 9,
+        "degree_in_sign": 21.173119,
+        "is_retrograde": false,
+        "speed": 0.218594
+      },
+      "Venus": {
+        "longitude": 288.492836,
+        "sign_index": 9,
+        "degree_in_sign": 18.492836,
+        "is_retrograde": false,
+        "speed": 0.267215
+      },
+      "Saturn": {
+        "longitude": 213.254369,
+        "sign_index": 7,
+        "degree_in_sign": 3.254369,
+        "is_retrograde": true,
+        "speed": -0.001962
+      },
+      "Rahu": {
+        "longitude": 90.020871,
+        "sign_index": 3,
+        "degree_in_sign": 0.020871,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 270.020871,
+        "sign_index": 9,
+        "degree_in_sign": 0.020871,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

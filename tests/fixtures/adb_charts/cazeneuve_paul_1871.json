@@ -1,0 +1,110 @@
+{
+  "adb_id": 93907,
+  "name": "Cazeneuve, Paul (1871)",
+  "given_name": "Paul (1871) Cazeneuve",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2404559.317037,
+    "year": 1871,
+    "month": 5,
+    "day": 11,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "l",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Revel",
+    "country": "France",
+    "lat": 45.183333,
+    "lon": 5.866667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "aqu",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cazeneuve,_Paul_(1871)",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_acteurs_muet-2.pdf]. \\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Vocation : Entertainment : Actor/ Actress",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 15.604816,
+    "lagna": 195.604816,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.060647,
+    "jd_ut": 2404559.317037,
+    "planets": {
+      "Sun": {
+        "longitude": 28.56456,
+        "sign_index": 0,
+        "degree_in_sign": 28.56456,
+        "is_retrograde": false,
+        "speed": 0.96498
+      },
+      "Moon": {
+        "longitude": 301.345243,
+        "sign_index": 10,
+        "degree_in_sign": 1.345243,
+        "is_retrograde": false,
+        "speed": 16.671671
+      },
+      "Mars": {
+        "longitude": 147.78071,
+        "sign_index": 4,
+        "degree_in_sign": 27.78071,
+        "is_retrograde": false,
+        "speed": 0.130638
+      },
+      "Mercury": {
+        "longitude": 34.234502,
+        "sign_index": 1,
+        "degree_in_sign": 4.234502,
+        "is_retrograde": true,
+        "speed": -0.501588
+      },
+      "Jupiter": {
+        "longitude": 65.353023,
+        "sign_index": 2,
+        "degree_in_sign": 5.353023,
+        "is_retrograde": false,
+        "speed": 0.204003
+      },
+      "Venus": {
+        "longitude": 64.764899,
+        "sign_index": 2,
+        "degree_in_sign": 4.764899,
+        "is_retrograde": false,
+        "speed": 1.17571
+      },
+      "Saturn": {
+        "longitude": 257.433815,
+        "sign_index": 8,
+        "degree_in_sign": 17.433815,
+        "is_retrograde": true,
+        "speed": -0.035269
+      },
+      "Rahu": {
+        "longitude": 71.056208,
+        "sign_index": 2,
+        "degree_in_sign": 11.056208,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 251.056208,
+        "sign_index": 8,
+        "degree_in_sign": 11.056208,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

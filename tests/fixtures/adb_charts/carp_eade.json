@@ -1,0 +1,112 @@
+{
+  "adb_id": 60389,
+  "name": "Carp, E.A.D.E.",
+  "given_name": "E.A.D.E. Carp",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2413349.423935,
+    "year": 1895,
+    "month": 6,
+    "day": 4,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Den Haag",
+    "country": "Netherlands",
+    "lat": 52.083333,
+    "lon": 4.316667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "sco",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carp,_E.A.D.E.",
+  "source_notes": "Gauquelin serie A Vol 2 #2490. Also Koppenjan in Beeldgids van de dierenriem gives 22h30. Koppejan (a student of Carp in Leiden) and Scheps expected (rectified to) Asc 17.42 cap.   \\n\\nThesis by Johannes Wilschut: Tussen psychiatrie en filosofie, de dynamische psychiatrie van Eugène A.D.E. Carp.\\n\\n\\n",
+  "categories": [
+    "Traits : Personality : Private",
+    "Vocation : Education : Teacher",
+    "Vocation : Medical : Physician",
+    "Vocation : Writers : Religion/ Philosophy",
+    "Notable : Famous : Top 5% of Profession"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 1.8476,
+    "lagna": 241.8476,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.39665,
+    "jd_ut": 2413349.423935,
+    "planets": {
+      "Sun": {
+        "longitude": 51.580432,
+        "sign_index": 1,
+        "degree_in_sign": 21.580432,
+        "is_retrograde": false,
+        "speed": 0.956609
+      },
+      "Moon": {
+        "longitude": 200.504924,
+        "sign_index": 6,
+        "degree_in_sign": 20.504924,
+        "is_retrograde": false,
+        "speed": 10.033443
+      },
+      "Mars": {
+        "longitude": 94.081711,
+        "sign_index": 3,
+        "degree_in_sign": 4.081711,
+        "is_retrograde": false,
+        "speed": 0.611315
+      },
+      "Mercury": {
+        "longitude": 75.278463,
+        "sign_index": 2,
+        "degree_in_sign": 15.278463,
+        "is_retrograde": false,
+        "speed": 0.964363
+      },
+      "Jupiter": {
+        "longitude": 77.699632,
+        "sign_index": 2,
+        "degree_in_sign": 17.699632,
+        "is_retrograde": false,
+        "speed": 0.213387
+      },
+      "Venus": {
+        "longitude": 93.637231,
+        "sign_index": 3,
+        "degree_in_sign": 3.637231,
+        "is_retrograde": false,
+        "speed": 1.116606
+      },
+      "Saturn": {
+        "longitude": 188.825792,
+        "sign_index": 6,
+        "degree_in_sign": 8.825792,
+        "is_retrograde": true,
+        "speed": -0.045179
+      },
+      "Rahu": {
+        "longitude": 325.249782,
+        "sign_index": 10,
+        "degree_in_sign": 25.249782,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 145.249782,
+        "sign_index": 4,
+        "degree_in_sign": 25.249782,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

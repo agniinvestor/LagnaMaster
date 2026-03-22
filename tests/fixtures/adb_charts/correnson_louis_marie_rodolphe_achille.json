@@ -1,0 +1,108 @@
+{
+  "adb_id": 70534,
+  "name": "Correnson, Louis Marie Rodolphe Achille",
+  "given_name": "Louis Marie Rodolphe Achille Correnson",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2391037.653549,
+    "year": 1834,
+    "month": 5,
+    "day": 4,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "l",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Saint-Geniès-de-Comolas",
+    "country": "France",
+    "lat": 44.066667,
+    "lon": 4.7225
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "pis",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Correnson,_Louis_Marie_Rodolphe_Achille",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'marins a-g' pdf file, p. 73.\\n",
+  "categories": [
+    "Vocation : Military : Military career"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 8.224143,
+    "lagna": 338.224143,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.543849,
+    "jd_ut": 2391037.653549,
+    "planets": {
+      "Sun": {
+        "longitude": 21.626354,
+        "sign_index": 0,
+        "degree_in_sign": 21.626354,
+        "is_retrograde": false,
+        "speed": 0.968296
+      },
+      "Moon": {
+        "longitude": 330.165695,
+        "sign_index": 11,
+        "degree_in_sign": 0.165695,
+        "is_retrograde": false,
+        "speed": 10.556467
+      },
+      "Mars": {
+        "longitude": 334.468424,
+        "sign_index": 11,
+        "degree_in_sign": 4.468424,
+        "is_retrograde": false,
+        "speed": 0.766355
+      },
+      "Mercury": {
+        "longitude": 356.293735,
+        "sign_index": 11,
+        "degree_in_sign": 26.293735,
+        "is_retrograde": false,
+        "speed": 1.336688
+      },
+      "Jupiter": {
+        "longitude": 25.618995,
+        "sign_index": 0,
+        "degree_in_sign": 25.618995,
+        "is_retrograde": false,
+        "speed": 0.237269
+      },
+      "Venus": {
+        "longitude": 36.19185,
+        "sign_index": 1,
+        "degree_in_sign": 6.19185,
+        "is_retrograde": false,
+        "speed": 1.228183
+      },
+      "Saturn": {
+        "longitude": 163.34873,
+        "sign_index": 5,
+        "degree_in_sign": 13.34873,
+        "is_retrograde": true,
+        "speed": -0.052349
+      },
+      "Rahu": {
+        "longitude": 67.598262,
+        "sign_index": 2,
+        "degree_in_sign": 7.598262,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 247.598262,
+        "sign_index": 8,
+        "degree_in_sign": 7.598262,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

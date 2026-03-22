@@ -1,0 +1,109 @@
+{
+  "adb_id": 2565,
+  "name": "Clemens, Marie Louise",
+  "given_name": "Marie Louise Clemens",
+  "gender": "f",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2401650.911713,
+    "year": 1863,
+    "month": 5,
+    "day": 25,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "l",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Burlington",
+    "country": "Vermont",
+    "lat": 44.483333,
+    "lon": -73.216667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "leo",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clemens,_Marie_Louise",
+  "source_notes": "Astrological Pioneers of America file\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Occult Fields : Astrologer"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 28.841219,
+    "lagna": 28.841219,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.949481,
+    "jd_ut": 2401650.911713,
+    "planets": {
+      "Sun": {
+        "longitude": 41.701707,
+        "sign_index": 1,
+        "degree_in_sign": 11.701707,
+        "is_retrograde": false,
+        "speed": 0.959823
+      },
+      "Moon": {
+        "longitude": 126.696711,
+        "sign_index": 4,
+        "degree_in_sign": 6.696711,
+        "is_retrograde": false,
+        "speed": 15.895729
+      },
+      "Mars": {
+        "longitude": 84.891086,
+        "sign_index": 2,
+        "degree_in_sign": 24.891086,
+        "is_retrograde": false,
+        "speed": 0.615934
+      },
+      "Mercury": {
+        "longitude": 62.730105,
+        "sign_index": 2,
+        "degree_in_sign": 2.730105,
+        "is_retrograde": false,
+        "speed": 0.538705
+      },
+      "Jupiter": {
+        "longitude": 176.107604,
+        "sign_index": 5,
+        "degree_in_sign": 26.107604,
+        "is_retrograde": true,
+        "speed": -0.059598
+      },
+      "Venus": {
+        "longitude": 80.212029,
+        "sign_index": 2,
+        "degree_in_sign": 20.212029,
+        "is_retrograde": false,
+        "speed": 1.158167
+      },
+      "Saturn": {
+        "longitude": 156.818471,
+        "sign_index": 5,
+        "degree_in_sign": 6.818471,
+        "is_retrograde": true,
+        "speed": -0.01136
+      },
+      "Rahu": {
+        "longitude": 225.178822,
+        "sign_index": 7,
+        "degree_in_sign": 15.178822,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 45.178822,
+        "sign_index": 1,
+        "degree_in_sign": 15.178822,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

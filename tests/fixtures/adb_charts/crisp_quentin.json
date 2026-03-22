@@ -1,0 +1,116 @@
+{
+  "adb_id": 4462,
+  "name": "Crisp, Quentin",
+  "given_name": "Quentin Crisp",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2418301.020833,
+    "year": 1908,
+    "month": 12,
+    "day": 25,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Carshalton",
+    "country": "England",
+    "lat": 51.366667,
+    "lon": -0.166667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "aqu",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crisp,_Quentin",
+  "source_notes": "David Fisher quotes Zerda Barlow  for \"about 1:00 PM\" from Crisp, AFA DX 1984.  Richard Geyman  quotes  him for \"between Noon and 1:00 PM.\"\\n",
+  "categories": [
+    "Traits : Personality : Attention seeking",
+    "Family : Childhood : Order of birth",
+    "Lifestyle : Work : Many job changes",
+    "Lifestyle : Home : Same location lifetime",
+    "Passions : Sexuality : Gay",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Commercial artist",
+    "Vocation : Writers : Autobiographer",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 10.081041,
+    "lagna": 340.081041,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.58594,
+    "jd_ut": 2418301.020833,
+    "planets": {
+      "Sun": {
+        "longitude": 250.771572,
+        "sign_index": 8,
+        "degree_in_sign": 10.771572,
+        "is_retrograde": false,
+        "speed": 1.019357
+      },
+      "Moon": {
+        "longitude": 277.734736,
+        "sign_index": 9,
+        "degree_in_sign": 7.734736,
+        "is_retrograde": false,
+        "speed": 10.845613
+      },
+      "Mars": {
+        "longitude": 207.066115,
+        "sign_index": 6,
+        "degree_in_sign": 27.066115,
+        "is_retrograde": false,
+        "speed": 0.660163
+      },
+      "Mercury": {
+        "longitude": 251.528004,
+        "sign_index": 8,
+        "degree_in_sign": 11.528004,
+        "is_retrograde": false,
+        "speed": 1.596325
+      },
+      "Jupiter": {
+        "longitude": 141.899613,
+        "sign_index": 4,
+        "degree_in_sign": 21.899613,
+        "is_retrograde": false,
+        "speed": 0.016357
+      },
+      "Venus": {
+        "longitude": 220.748694,
+        "sign_index": 7,
+        "degree_in_sign": 10.748694,
+        "is_retrograde": false,
+        "speed": 1.239845
+      },
+      "Saturn": {
+        "longitude": 341.102496,
+        "sign_index": 11,
+        "degree_in_sign": 11.102496,
+        "is_retrograde": false,
+        "speed": 0.033532
+      },
+      "Rahu": {
+        "longitude": 62.854228,
+        "sign_index": 2,
+        "degree_in_sign": 2.854228,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 242.854228,
+        "sign_index": 8,
+        "degree_in_sign": 2.854228,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

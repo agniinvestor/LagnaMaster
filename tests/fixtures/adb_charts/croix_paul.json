@@ -1,0 +1,108 @@
+{
+  "adb_id": 65108,
+  "name": "Croix, Paul",
+  "given_name": "Paul Croix",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423875.208333,
+    "year": 1924,
+    "month": 3,
+    "day": 30,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "d",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Savigneux",
+    "country": "France",
+    "lat": 45.607778,
+    "lon": 4.083333
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "aqu",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Croix,_Paul",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 286.\\n",
+  "categories": [
+    "Vocation : Misc. : Outdoor vocations"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 12.051149,
+    "lagna": 132.051149,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.799045,
+    "jd_ut": 2423875.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 346.922446,
+        "sign_index": 11,
+        "degree_in_sign": 16.922446,
+        "is_retrograde": false,
+        "speed": 0.98733
+      },
+      "Moon": {
+        "longitude": 292.25747,
+        "sign_index": 9,
+        "degree_in_sign": 22.25747,
+        "is_retrograde": false,
+        "speed": 15.876722
+      },
+      "Mars": {
+        "longitude": 262.149507,
+        "sign_index": 8,
+        "degree_in_sign": 22.149507,
+        "is_retrograde": false,
+        "speed": 0.616969
+      },
+      "Mercury": {
+        "longitude": 355.552379,
+        "sign_index": 11,
+        "degree_in_sign": 25.552379,
+        "is_retrograde": false,
+        "speed": 2.025097
+      },
+      "Jupiter": {
+        "longitude": 237.041711,
+        "sign_index": 7,
+        "degree_in_sign": 27.041711,
+        "is_retrograde": false,
+        "speed": 0.019941
+      },
+      "Venus": {
+        "longitude": 31.16572,
+        "sign_index": 1,
+        "degree_in_sign": 1.16572,
+        "is_retrograde": false,
+        "speed": 1.094452
+      },
+      "Saturn": {
+        "longitude": 187.675804,
+        "sign_index": 6,
+        "degree_in_sign": 7.675804,
+        "is_retrograde": true,
+        "speed": -0.068705
+      },
+      "Rahu": {
+        "longitude": 127.466366,
+        "sign_index": 4,
+        "degree_in_sign": 7.466366,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 307.466366,
+        "sign_index": 10,
+        "degree_in_sign": 7.466366,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

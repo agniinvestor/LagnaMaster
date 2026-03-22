@@ -1,0 +1,113 @@
+{
+  "adb_id": 5656,
+  "name": "Courrèges, André",
+  "given_name": "André Courrèges",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423487.947917,
+    "year": 1923,
+    "month": 3,
+    "day": 9,
+    "calendar": "g",
+    "time": "10:45",
+    "time_type": "s",
+    "hour": 10.75,
+    "time_unknown": false,
+    "place": "Pau",
+    "country": "France",
+    "lat": 43.3,
+    "lon": -0.366667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "sag",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Courrèges,_André",
+  "source_notes": "B.C. in hand from Steinbrecher, time 10.45.  Didier Geslain gave different, quoting Barbault. On 27 May 2013 a phone call to the birth registry confirmen 10.45\\n",
+  "categories": [
+    "Family : Relationship : Mate - Noted",
+    "Lifestyle : Financial : Wealthy",
+    "Vocation : Beauty : Designer/ Fashion",
+    "Vocation : Business : Entrepreneur",
+    "Notable : Famous : Top 5% of Profession",
+    "Notable : Book Collection : Culture Collection"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 5.958845,
+    "lagna": 35.958845,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.78424,
+    "jd_ut": 2423487.947917,
+    "planets": {
+      "Sun": {
+        "longitude": 325.063978,
+        "sign_index": 10,
+        "degree_in_sign": 25.063978,
+        "is_retrograde": false,
+        "speed": 0.999333
+      },
+      "Moon": {
+        "longitude": 230.358899,
+        "sign_index": 7,
+        "degree_in_sign": 20.358899,
+        "is_retrograde": false,
+        "speed": 12.408739
+      },
+      "Mars": {
+        "longitude": 11.052021,
+        "sign_index": 0,
+        "degree_in_sign": 11.052021,
+        "is_retrograde": false,
+        "speed": 0.706149
+      },
+      "Mercury": {
+        "longitude": 301.816991,
+        "sign_index": 10,
+        "degree_in_sign": 1.816991,
+        "is_retrograde": false,
+        "speed": 1.435021
+      },
+      "Jupiter": {
+        "longitude": 206.134586,
+        "sign_index": 6,
+        "degree_in_sign": 26.134586,
+        "is_retrograde": true,
+        "speed": -0.011509
+      },
+      "Venus": {
+        "longitude": 280.862127,
+        "sign_index": 9,
+        "degree_in_sign": 10.862127,
+        "is_retrograde": false,
+        "speed": 1.138195
+      },
+      "Saturn": {
+        "longitude": 176.081603,
+        "sign_index": 5,
+        "degree_in_sign": 26.081603,
+        "is_retrograde": true,
+        "speed": -0.06015
+      },
+      "Rahu": {
+        "longitude": 147.988103,
+        "sign_index": 4,
+        "degree_in_sign": 27.988103,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 327.988103,
+        "sign_index": 10,
+        "degree_in_sign": 27.988103,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "adb_id": 93022,
+  "name": "Colinet, Paul",
+  "given_name": "Paul Colinet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414412.291667,
+    "year": 1898,
+    "month": 5,
+    "day": 2,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Seneffe",
+    "country": "Belgium",
+    "lat": 50.516667,
+    "lon": 4.25
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colinet,_Paul",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_am_arts_medias-3.pdf]. He was born in Arquennes, a district of Seneffe.\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 27.692171,
+    "lagna": 177.692171,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.43728,
+    "jd_ut": 2414412.291667,
+    "planets": {
+      "Sun": {
+        "longitude": 19.917237,
+        "sign_index": 0,
+        "degree_in_sign": 19.917237,
+        "is_retrograde": false,
+        "speed": 0.968696
+      },
+      "Moon": {
+        "longitude": 154.134243,
+        "sign_index": 5,
+        "degree_in_sign": 4.134243,
+        "is_retrograde": false,
+        "speed": 10.457946
+      },
+      "Mars": {
+        "longitude": 340.601081,
+        "sign_index": 11,
+        "degree_in_sign": 10.601081,
+        "is_retrograde": false,
+        "speed": 0.768871
+      },
+      "Mercury": {
+        "longitude": 17.734278,
+        "sign_index": 0,
+        "degree_in_sign": 17.734278,
+        "is_retrograde": true,
+        "speed": -0.636798
+      },
+      "Jupiter": {
+        "longitude": 158.817402,
+        "sign_index": 5,
+        "degree_in_sign": 8.817402,
+        "is_retrograde": true,
+        "speed": -0.072324
+      },
+      "Venus": {
+        "longitude": 38.938178,
+        "sign_index": 1,
+        "degree_in_sign": 8.938178,
+        "is_retrograde": false,
+        "speed": 1.224195
+      },
+      "Saturn": {
+        "longitude": 228.465746,
+        "sign_index": 7,
+        "degree_in_sign": 18.465746,
+        "is_retrograde": true,
+        "speed": -0.06011
+      },
+      "Rahu": {
+        "longitude": 268.926177,
+        "sign_index": 8,
+        "degree_in_sign": 28.926177,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 88.926177,
+        "sign_index": 2,
+        "degree_in_sign": 28.926177,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

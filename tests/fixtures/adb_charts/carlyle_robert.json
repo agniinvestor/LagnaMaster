@@ -1,0 +1,108 @@
+{
+  "adb_id": 43663,
+  "name": "Carlyle, Robert",
+  "given_name": "Robert Carlyle",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2437403.677083,
+    "year": 1961,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "05:15",
+    "time_type": "d",
+    "hour": 5.25,
+    "time_unknown": false,
+    "place": "Glasgow",
+    "country": "Scotland",
+    "lat": 55.883333,
+    "lon": -4.25
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "ari",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carlyle,_Robert",
+  "source_notes": "Astrology Quarterly website Oct/2001 quotes B.C.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 18.862021,
+    "lagna": 288.862021,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.316308,
+    "jd_ut": 2437403.677083,
+    "planets": {
+      "Sun": {
+        "longitude": 0.66885,
+        "sign_index": 0,
+        "degree_in_sign": 0.66885,
+        "is_retrograde": false,
+        "speed": 0.979664
+      },
+      "Moon": {
+        "longitude": 347.072928,
+        "sign_index": 11,
+        "degree_in_sign": 17.072928,
+        "is_retrograde": false,
+        "speed": 15.15148
+      },
+      "Mars": {
+        "longitude": 85.936674,
+        "sign_index": 2,
+        "degree_in_sign": 25.936674,
+        "is_retrograde": false,
+        "speed": 0.463233
+      },
+      "Mercury": {
+        "longitude": 343.074866,
+        "sign_index": 11,
+        "degree_in_sign": 13.074866,
+        "is_retrograde": false,
+        "speed": 1.736171
+      },
+      "Jupiter": {
+        "longitude": 281.227117,
+        "sign_index": 9,
+        "degree_in_sign": 11.227117,
+        "is_retrograde": false,
+        "speed": 0.120101
+      },
+      "Venus": {
+        "longitude": 355.566823,
+        "sign_index": 11,
+        "degree_in_sign": 25.566823,
+        "is_retrograde": true,
+        "speed": -0.606966
+      },
+      "Saturn": {
+        "longitude": 276.014878,
+        "sign_index": 9,
+        "degree_in_sign": 6.014878,
+        "is_retrograde": false,
+        "speed": 0.040844
+      },
+      "Rahu": {
+        "longitude": 130.564847,
+        "sign_index": 4,
+        "degree_in_sign": 10.564847,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 310.564847,
+        "sign_index": 10,
+        "degree_in_sign": 10.564847,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

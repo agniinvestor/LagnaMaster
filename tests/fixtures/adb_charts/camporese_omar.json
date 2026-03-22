@@ -1,0 +1,108 @@
+{
+  "adb_id": 52826,
+  "name": "Camporese, Omar",
+  "given_name": "Omar Camporese",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439984.902778,
+    "year": 1968,
+    "month": 5,
+    "day": 8,
+    "calendar": "g",
+    "time": "10:40",
+    "time_type": "s",
+    "hour": 10.666667,
+    "time_unknown": false,
+    "place": "Bologna",
+    "country": "Italy",
+    "lat": 44.483333,
+    "lon": 11.333333
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "vir",
+    "asc_sign": "leo"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Camporese,_Omar",
+  "source_notes": "Ed Steinbrecher collection: Bordoni/6 quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Sports : Tennis"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree_in_sign": 22.021484,
+    "lagna": 82.021484,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.415011,
+    "jd_ut": 2439984.902778,
+    "planets": {
+      "Sun": {
+        "longitude": 24.4383,
+        "sign_index": 0,
+        "degree_in_sign": 24.4383,
+        "is_retrograde": false,
+        "speed": 0.966696
+      },
+      "Moon": {
+        "longitude": 147.994953,
+        "sign_index": 4,
+        "degree_in_sign": 27.994953,
+        "is_retrograde": false,
+        "speed": 17.229081
+      },
+      "Mars": {
+        "longitude": 36.452541,
+        "sign_index": 1,
+        "degree_in_sign": 6.452541,
+        "is_retrograde": false,
+        "speed": 0.704234
+      },
+      "Mercury": {
+        "longitude": 39.365904,
+        "sign_index": 1,
+        "degree_in_sign": 9.365904,
+        "is_retrograde": false,
+        "speed": 1.887245
+      },
+      "Jupiter": {
+        "longitude": 122.828825,
+        "sign_index": 4,
+        "degree_in_sign": 2.828825,
+        "is_retrograde": false,
+        "speed": 0.049511
+      },
+      "Venus": {
+        "longitude": 12.871629,
+        "sign_index": 0,
+        "degree_in_sign": 12.871629,
+        "is_retrograde": false,
+        "speed": 1.228716
+      },
+      "Saturn": {
+        "longitude": 356.036194,
+        "sign_index": 11,
+        "degree_in_sign": 26.036194,
+        "is_retrograde": false,
+        "speed": 0.116063
+      },
+      "Rahu": {
+        "longitude": 353.780415,
+        "sign_index": 11,
+        "degree_in_sign": 23.780415,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 173.780415,
+        "sign_index": 5,
+        "degree_in_sign": 23.780415,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

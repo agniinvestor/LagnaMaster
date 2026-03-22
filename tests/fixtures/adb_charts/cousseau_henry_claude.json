@@ -1,0 +1,108 @@
+{
+  "adb_id": 65092,
+  "name": "Cousseau, Henry-Claude",
+  "given_name": "Henry-Claude Cousseau",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2435507.416667,
+    "year": 1956,
+    "month": 2,
+    "day": 3,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "s",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Cholet",
+    "country": "France",
+    "lat": 47.066667,
+    "lon": -0.883333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cousseau,_Henry-Claude",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 265.\\n",
+  "categories": [
+    "Vocation : Politics : Government employee"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 22.558822,
+    "lagna": 142.558822,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.243799,
+    "jd_ut": 2435507.416667,
+    "planets": {
+      "Sun": {
+        "longitude": 290.81314,
+        "sign_index": 9,
+        "degree_in_sign": 20.81314,
+        "is_retrograde": false,
+        "speed": 1.014272
+      },
+      "Moon": {
+        "longitude": 204.219619,
+        "sign_index": 6,
+        "degree_in_sign": 24.219619,
+        "is_retrograde": false,
+        "speed": 14.406732
+      },
+      "Mars": {
+        "longitude": 230.396853,
+        "sign_index": 7,
+        "degree_in_sign": 20.396853,
+        "is_retrograde": false,
+        "speed": 0.656453
+      },
+      "Mercury": {
+        "longitude": 275.735972,
+        "sign_index": 9,
+        "degree_in_sign": 5.735972,
+        "is_retrograde": true,
+        "speed": -0.624621
+      },
+      "Jupiter": {
+        "longitude": 124.883116,
+        "sign_index": 4,
+        "degree_in_sign": 4.883116,
+        "is_retrograde": true,
+        "speed": -0.124904
+      },
+      "Venus": {
+        "longitude": 327.840144,
+        "sign_index": 10,
+        "degree_in_sign": 27.840144,
+        "is_retrograde": false,
+        "speed": 1.207877
+      },
+      "Saturn": {
+        "longitude": 218.411565,
+        "sign_index": 7,
+        "degree_in_sign": 8.411565,
+        "is_retrograde": false,
+        "speed": 0.060301
+      },
+      "Rahu": {
+        "longitude": 231.051577,
+        "sign_index": 7,
+        "degree_in_sign": 21.051577,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 51.051577,
+        "sign_index": 1,
+        "degree_in_sign": 21.051577,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

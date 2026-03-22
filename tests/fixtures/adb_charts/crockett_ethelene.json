@@ -1,0 +1,114 @@
+{
+  "adb_id": 103724,
+  "name": "Crockett, Ethelene",
+  "given_name": "Ethelene Crockett",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2420402.145833,
+    "year": 1914,
+    "month": 9,
+    "day": 26,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "s",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "St.Joseph",
+    "country": "Michigan",
+    "lat": 42.116667,
+    "lon": -86.483333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "cap",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crockett,_Ethelene",
+  "source_notes": "Birth certificate in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Traits : Body : Race",
+    "Family : Relationship : Mate - Noted",
+    "Family : Parenting : Kids 1-3",
+    "Family : Parenting : Kids - Noted",
+    "Vocation : Medical : Physician",
+    "Vocation : Politics : Activist/ social",
+    "Notable : Famous : First in Field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 1.750108,
+    "lagna": 181.750108,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.666266,
+    "jd_ut": 2420402.145833,
+    "planets": {
+      "Sun": {
+        "longitude": 160.025319,
+        "sign_index": 5,
+        "degree_in_sign": 10.025319,
+        "is_retrograde": false,
+        "speed": 0.98099
+      },
+      "Moon": {
+        "longitude": 252.421125,
+        "sign_index": 8,
+        "degree_in_sign": 12.421125,
+        "is_retrograde": false,
+        "speed": 15.960758
+      },
+      "Mars": {
+        "longitude": 185.442964,
+        "sign_index": 6,
+        "degree_in_sign": 5.442964,
+        "is_retrograde": false,
+        "speed": 0.673858
+      },
+      "Mercury": {
+        "longitude": 179.409656,
+        "sign_index": 5,
+        "degree_in_sign": 29.409656,
+        "is_retrograde": false,
+        "speed": 1.462275
+      },
+      "Jupiter": {
+        "longitude": 290.048838,
+        "sign_index": 9,
+        "degree_in_sign": 20.048838,
+        "is_retrograde": true,
+        "speed": -0.041928
+      },
+      "Venus": {
+        "longitude": 206.09102,
+        "sign_index": 6,
+        "degree_in_sign": 26.09102,
+        "is_retrograde": false,
+        "speed": 0.909113
+      },
+      "Saturn": {
+        "longitude": 69.338968,
+        "sign_index": 2,
+        "degree_in_sign": 9.338968,
+        "is_retrograde": false,
+        "speed": 0.034345
+      },
+      "Rahu": {
+        "longitude": 311.511206,
+        "sign_index": 10,
+        "degree_in_sign": 11.511206,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 131.511206,
+        "sign_index": 4,
+        "degree_in_sign": 11.511206,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

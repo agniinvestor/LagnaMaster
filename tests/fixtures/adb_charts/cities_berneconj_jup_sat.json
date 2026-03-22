@@ -1,0 +1,112 @@
+{
+  "adb_id": 67741,
+  "name": "Cities: Berne:Conj. Jup-Sat",
+  "given_name": "Cities: Berne:Conj. Jup-Sat",
+  "gender": "e",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2154555.855046,
+    "year": 1186,
+    "month": 11,
+    "day": 8,
+    "calendar": "j",
+    "time": "08:31:16",
+    "time_type": "u",
+    "hour": 8.521111,
+    "time_unknown": false,
+    "place": "Bern",
+    "country": "Switzerland",
+    "lat": 46.95,
+    "lon": 7.433333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cities:_Berne:Conj._Jup-Sat",
+  "source_notes": "Emanuel Friedli: Geschichte  Berns (3 Bde)\\n",
+  "categories": [
+    "Family : Parenting : Kids none",
+    "Vocation : Military : Honors",
+    "Notable : Famous : Founder/ originator",
+    "Mundane : City Population : Birth of City or Town",
+    "Mundane : Political : Battles"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 19.045867,
+    "lagna": 229.045867,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 12.519104,
+    "jd_ut": 2154555.855046,
+    "planets": {
+      "Sun": {
+        "longitude": 220.264954,
+        "sign_index": 7,
+        "degree_in_sign": 10.264954,
+        "is_retrograde": false,
+        "speed": 1.013541
+      },
+      "Moon": {
+        "longitude": 164.177776,
+        "sign_index": 5,
+        "degree_in_sign": 14.177776,
+        "is_retrograde": false,
+        "speed": 9.90747
+      },
+      "Mars": {
+        "longitude": 213.346279,
+        "sign_index": 7,
+        "degree_in_sign": 3.346279,
+        "is_retrograde": false,
+        "speed": 0.710786
+      },
+      "Mercury": {
+        "longitude": 218.864879,
+        "sign_index": 7,
+        "degree_in_sign": 8.864879,
+        "is_retrograde": false,
+        "speed": 1.577556
+      },
+      "Jupiter": {
+        "longitude": 179.546232,
+        "sign_index": 5,
+        "degree_in_sign": 29.546232,
+        "is_retrograde": false,
+        "speed": 0.18884
+      },
+      "Venus": {
+        "longitude": 238.278103,
+        "sign_index": 7,
+        "degree_in_sign": 28.278103,
+        "is_retrograde": false,
+        "speed": 1.249941
+      },
+      "Saturn": {
+        "longitude": 179.546453,
+        "sign_index": 5,
+        "degree_in_sign": 29.546453,
+        "is_retrograde": false,
+        "speed": 0.10174
+      },
+      "Rahu": {
+        "longitude": 359.35457,
+        "sign_index": 11,
+        "degree_in_sign": 29.35457,
+        "is_retrograde": true,
+        "speed": -0.052993
+      },
+      "Ketu": {
+        "longitude": 179.35457,
+        "sign_index": 5,
+        "degree_in_sign": 29.35457,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

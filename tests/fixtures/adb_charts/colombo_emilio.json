@@ -1,0 +1,111 @@
+{
+  "adb_id": 50804,
+  "name": "Colombo, Emilio",
+  "given_name": "Emilio Colombo",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2422426.083333,
+    "year": 1920,
+    "month": 4,
+    "day": 11,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "d",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Potenza",
+    "country": "Italy",
+    "lat": 40.633333,
+    "lon": 15.816667
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Colombo,_Emilio",
+  "source_notes": "Steinbrecher collection: Gauquelin 5/1629\\n",
+  "categories": [
+    "Diagnoses : Psychological : Abuse Drugs",
+    "Vocation : Law : Attorney",
+    "Vocation : Politics : Party Affiliation",
+    "Vocation : Politics : Other Politics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 24.929136,
+    "lagna": 114.929136,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.743643,
+    "jd_ut": 2422426.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 358.626019,
+        "sign_index": 11,
+        "degree_in_sign": 28.626019,
+        "is_retrograde": false,
+        "speed": 0.980388
+      },
+      "Moon": {
+        "longitude": 268.340523,
+        "sign_index": 8,
+        "degree_in_sign": 28.340523,
+        "is_retrograde": false,
+        "speed": 14.983166
+      },
+      "Mars": {
+        "longitude": 191.666691,
+        "sign_index": 6,
+        "degree_in_sign": 11.666691,
+        "is_retrograde": true,
+        "speed": -0.324363
+      },
+      "Mercury": {
+        "longitude": 332.003867,
+        "sign_index": 11,
+        "degree_in_sign": 2.003867,
+        "is_retrograde": false,
+        "speed": 0.674411
+      },
+      "Jupiter": {
+        "longitude": 105.444961,
+        "sign_index": 3,
+        "degree_in_sign": 15.444961,
+        "is_retrograde": false,
+        "speed": 0.023436
+      },
+      "Venus": {
+        "longitude": 336.633467,
+        "sign_index": 11,
+        "degree_in_sign": 6.633467,
+        "is_retrograde": false,
+        "speed": 1.227573
+      },
+      "Saturn": {
+        "longitude": 132.623435,
+        "sign_index": 4,
+        "degree_in_sign": 12.623435,
+        "is_retrograde": true,
+        "speed": -0.042862
+      },
+      "Rahu": {
+        "longitude": 204.258524,
+        "sign_index": 6,
+        "degree_in_sign": 24.258524,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 24.258524,
+        "sign_index": 0,
+        "degree_in_sign": 24.258524,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

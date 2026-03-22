@@ -1,0 +1,108 @@
+{
+  "adb_id": 54321,
+  "name": "Cantor, Joop",
+  "given_name": "Joop Cantor",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419810.684352,
+    "year": 1913,
+    "month": 2,
+    "day": 12,
+    "calendar": "g",
+    "time": "04:45",
+    "time_type": "s",
+    "hour": 4.75,
+    "time_unknown": false,
+    "place": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.366667,
+    "lon": 4.9
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "ari",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cantor,_Joop",
+  "source_notes": "Steinbrecher collection: Koppejans quotes birth certificate\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree_in_sign": 13.476742,
+    "lagna": 223.476742,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.643655,
+    "jd_ut": 2419810.684352,
+    "planets": {
+      "Sun": {
+        "longitude": 300.235251,
+        "sign_index": 10,
+        "degree_in_sign": 0.235251,
+        "is_retrograde": false,
+        "speed": 1.011093
+      },
+      "Moon": {
+        "longitude": 4.902337,
+        "sign_index": 0,
+        "degree_in_sign": 4.902337,
+        "is_retrograde": false,
+        "speed": 15.441993
+      },
+      "Mars": {
+        "longitude": 271.899607,
+        "sign_index": 9,
+        "degree_in_sign": 1.899607,
+        "is_retrograde": false,
+        "speed": 0.761681
+      },
+      "Mercury": {
+        "longitude": 299.632224,
+        "sign_index": 9,
+        "degree_in_sign": 29.632224,
+        "is_retrograde": false,
+        "speed": 1.784739
+      },
+      "Jupiter": {
+        "longitude": 255.998957,
+        "sign_index": 8,
+        "degree_in_sign": 15.998957,
+        "is_retrograde": false,
+        "speed": 0.194841
+      },
+      "Venus": {
+        "longitude": 346.944549,
+        "sign_index": 11,
+        "degree_in_sign": 16.944549,
+        "is_retrograde": false,
+        "speed": 1.011537
+      },
+      "Saturn": {
+        "longitude": 34.71839,
+        "sign_index": 1,
+        "degree_in_sign": 4.71839,
+        "is_retrograde": false,
+        "speed": 0.027154
+      },
+      "Rahu": {
+        "longitude": 342.853989,
+        "sign_index": 11,
+        "degree_in_sign": 12.853989,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 162.853989,
+        "sign_index": 5,
+        "degree_in_sign": 12.853989,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

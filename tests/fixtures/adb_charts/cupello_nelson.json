@@ -1,0 +1,109 @@
+{
+  "adb_id": 100401,
+  "name": "Cupello, Nelson",
+  "given_name": "Nelson Cupello",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2433887.083333,
+    "year": 1951,
+    "month": 8,
+    "day": 28,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Rio de Janeiro (Rio de Janeiro)",
+    "country": "Brazil",
+    "lat": -22.902778,
+    "lon": -43.2075
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "can",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cupello,_Nelson",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. He was born in the São Cristóvão district of Rio de Janeiro city.\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)",
+    "Vocation : Sports Business : Coach/ Manager/ Owner"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 17.721558,
+    "lagna": 197.721558,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.181842,
+    "jd_ut": 2433887.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 131.269183,
+        "sign_index": 4,
+        "degree_in_sign": 11.269183,
+        "is_retrograde": false,
+        "speed": 0.966194
+      },
+      "Moon": {
+        "longitude": 86.23107,
+        "sign_index": 2,
+        "degree_in_sign": 26.23107,
+        "is_retrograde": false,
+        "speed": 7.72012
+      },
+      "Mars": {
+        "longitude": 103.319592,
+        "sign_index": 3,
+        "degree_in_sign": 13.319592,
+        "is_retrograde": false,
+        "speed": 0.639113
+      },
+      "Mercury": {
+        "longitude": 136.491667,
+        "sign_index": 4,
+        "degree_in_sign": 16.491667,
+        "is_retrograde": true,
+        "speed": -0.901421
+      },
+      "Jupiter": {
+        "longitude": 350.037851,
+        "sign_index": 11,
+        "degree_in_sign": 20.037851,
+        "is_retrograde": true,
+        "speed": -0.077239
+      },
+      "Venus": {
+        "longitude": 140.703388,
+        "sign_index": 4,
+        "degree_in_sign": 20.703388,
+        "is_retrograde": true,
+        "speed": -0.544064
+      },
+      "Saturn": {
+        "longitude": 158.4497,
+        "sign_index": 5,
+        "degree_in_sign": 8.4497,
+        "is_retrograde": false,
+        "speed": 0.114531
+      },
+      "Rahu": {
+        "longitude": 316.916372,
+        "sign_index": 10,
+        "degree_in_sign": 16.916372,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 136.916372,
+        "sign_index": 4,
+        "degree_in_sign": 16.916372,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

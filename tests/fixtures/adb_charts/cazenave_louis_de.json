@@ -1,0 +1,106 @@
+{
+  "adb_id": 63390,
+  "name": "Cazenave, Louis (de)",
+  "given_name": "Louis (de) Cazenave",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414213.910174,
+    "year": 1897,
+    "month": 10,
+    "day": 16,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Brioude",
+    "country": "France",
+    "lat": 45.3,
+    "lon": 3.383333
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "gem",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cazenave,_Louis_(de)",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 20.260286,
+    "lagna": 200.260286,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.429697,
+    "jd_ut": 2414213.910174,
+    "planets": {
+      "Sun": {
+        "longitude": 180.870638,
+        "sign_index": 6,
+        "degree_in_sign": 0.870638,
+        "is_retrograde": false,
+        "speed": 0.992871
+      },
+      "Moon": {
+        "longitude": 63.044993,
+        "sign_index": 2,
+        "degree_in_sign": 3.044993,
+        "is_retrograde": false,
+        "speed": 11.909026
+      },
+      "Mars": {
+        "longitude": 191.818551,
+        "sign_index": 6,
+        "degree_in_sign": 11.818551,
+        "is_retrograde": false,
+        "speed": 0.683583
+      },
+      "Mercury": {
+        "longitude": 165.969573,
+        "sign_index": 5,
+        "degree_in_sign": 15.969573,
+        "is_retrograde": false,
+        "speed": 1.58767
+      },
+      "Jupiter": {
+        "longitude": 155.312679,
+        "sign_index": 5,
+        "degree_in_sign": 5.312679,
+        "is_retrograde": false,
+        "speed": 0.205148
+      },
+      "Venus": {
+        "longitude": 151.580037,
+        "sign_index": 5,
+        "degree_in_sign": 1.580037,
+        "is_retrograde": false,
+        "speed": 1.226825
+      },
+      "Saturn": {
+        "longitude": 216.343418,
+        "sign_index": 7,
+        "degree_in_sign": 6.343418,
+        "is_retrograde": false,
+        "speed": 0.103787
+      },
+      "Rahu": {
+        "longitude": 279.438831,
+        "sign_index": 9,
+        "degree_in_sign": 9.438831,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 99.438831,
+        "sign_index": 3,
+        "degree_in_sign": 9.438831,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

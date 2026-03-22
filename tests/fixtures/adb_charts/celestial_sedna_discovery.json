@@ -1,0 +1,110 @@
+{
+  "adb_id": 49097,
+  "name": "Celestial: Sedna Discovery",
+  "given_name": "Celestial: Sedna Discovery",
+  "gender": "e",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2452963.284722,
+    "year": 2003,
+    "month": 11,
+    "day": 19,
+    "calendar": "g",
+    "time": "10:50",
+    "time_type": "s",
+    "hour": 10.833333,
+    "time_unknown": false,
+    "place": "Palomar Mountain (P O)",
+    "country": "California",
+    "lat": 33.316667,
+    "lon": -116.883333
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "vir",
+    "asc_sign": "cap"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Celestial:_Sedna_Discovery",
+  "source_notes": "From a scientific paper by Michael Brown about its discovery.  In addition, Tony Louis writes, \"I wrote to Chad Trujillo, one of the discoverers of Sedna at Cal Tech.  Here is his response about the time of the discovery: 'The location was Palomar Mountain in Southern California.  The time was 2003 Nov 14, 06:32:57 Universal Time.'\" PT notes that this is equivalent to November 13, 2003 at 10:32 PM PST.  Susan Sarkes writes on 4/27/2004 that she had the following by e-mail from Michael Brown: \"Susan --\\nThere are 2 answers, since the pictures are taken robotically and looked at a few days later. The pictures were taken on 14Nov 2003 6:32, 8:03, 9:38 GMT.  But I didn't see them and thus \"discover\" Sedna until 10:50am PST 19 Nov 2003.--Mike\"\\n",
+  "categories": [
+    "Notable : Famous : Newsmaker",
+    "Mundane : Medical/Science : Space",
+    "Mundane : Misc. Mundane : Discoveries"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree_in_sign": 9.771305,
+    "lagna": 249.771305,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.911335,
+    "jd_ut": 2452963.284722,
+    "planets": {
+      "Sun": {
+        "longitude": 213.109406,
+        "sign_index": 7,
+        "degree_in_sign": 3.109406,
+        "is_retrograde": false,
+        "speed": 1.009263
+      },
+      "Moon": {
+        "longitude": 155.267578,
+        "sign_index": 5,
+        "degree_in_sign": 5.267578,
+        "is_retrograde": false,
+        "speed": 10.766256
+      },
+      "Mars": {
+        "longitude": 321.637697,
+        "sign_index": 10,
+        "degree_in_sign": 21.637697,
+        "is_retrograde": false,
+        "speed": 0.489725
+      },
+      "Mercury": {
+        "longitude": 227.392768,
+        "sign_index": 7,
+        "degree_in_sign": 17.392768,
+        "is_retrograde": false,
+        "speed": 1.490212
+      },
+      "Jupiter": {
+        "longitude": 141.928846,
+        "sign_index": 4,
+        "degree_in_sign": 21.928846,
+        "is_retrograde": false,
+        "speed": 0.127696
+      },
+      "Venus": {
+        "longitude": 237.073157,
+        "sign_index": 7,
+        "degree_in_sign": 27.073157,
+        "is_retrograde": false,
+        "speed": 1.242262
+      },
+      "Saturn": {
+        "longitude": 78.770297,
+        "sign_index": 2,
+        "degree_in_sign": 18.770297,
+        "is_retrograde": true,
+        "speed": -0.044393
+      },
+      "Rahu": {
+        "longitude": 26.029666,
+        "sign_index": 0,
+        "degree_in_sign": 26.029666,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 206.029666,
+        "sign_index": 6,
+        "degree_in_sign": 26.029666,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

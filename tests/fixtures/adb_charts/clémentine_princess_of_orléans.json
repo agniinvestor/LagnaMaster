@@ -1,0 +1,112 @@
+{
+  "adb_id": 79211,
+  "name": "Clémentine, Princess of Orléans",
+  "given_name": "Princess of Orléans Clémentine",
+  "gender": "f",
+  "rodden_rating": "B",
+  "rodden_rank": 3,
+  "birth_data": {
+    "jd_ut": 2384858.545787,
+    "year": 1817,
+    "month": 6,
+    "day": 3,
+    "calendar": "g",
+    "time": "01:15",
+    "time_type": "l",
+    "hour": 1.25,
+    "time_unknown": false,
+    "place": "Neuilly sur Seine",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.266667
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "cap",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clémentine,_Princess_of_Orléans",
+  "source_notes": "Sy Scholfield quotes from \"Généalogie de la maison de Bourbon: de 1256 à 1871\"  by Louis Dussieux (Lecoffre fils et cie, 1872), p. 149: \"Marie-Clémentine-Caroline-Léopoldine-Clotilde d'Orléans ... la princesse Clémentine. Née au château de Neuilly le 3 juin 1817, à une heure quarante minutes du matin.\" Source given on same page as \"Moniteur universal, 1817, p. 614.\"\\n\\nScholfield also quotes news report from \"The Morning Chronicle\" (London, England), 9 June 1817: \"Paris, June 4... The Duchess of Orleans was safely delivered yesterday morning of a princess.\"\\nEnglish Wikipedia incorrectly has 6 March.\\n",
+  "categories": [
+    "Traits : Personality : Other Personality",
+    "Family : Relationship : Number of Marriages",
+    "Family : Parenting : Kids more than 3",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden B — medium trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 17.129404,
+    "lagna": 317.129404,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.307712,
+    "jd_ut": 2384858.545787,
+    "planets": {
+      "Sun": {
+        "longitude": 50.730118,
+        "sign_index": 1,
+        "degree_in_sign": 20.730118,
+        "is_retrograde": false,
+        "speed": 0.956631
+      },
+      "Moon": {
+        "longitude": 276.616518,
+        "sign_index": 9,
+        "degree_in_sign": 6.616518,
+        "is_retrograde": false,
+        "speed": 10.198318
+      },
+      "Mars": {
+        "longitude": 346.062161,
+        "sign_index": 11,
+        "degree_in_sign": 16.062161,
+        "is_retrograde": false,
+        "speed": 0.738369
+      },
+      "Mercury": {
+        "longitude": 63.799193,
+        "sign_index": 2,
+        "degree_in_sign": 3.799193,
+        "is_retrograde": true,
+        "speed": -0.212137
+      },
+      "Jupiter": {
+        "longitude": 223.807373,
+        "sign_index": 7,
+        "degree_in_sign": 13.807373,
+        "is_retrograde": true,
+        "speed": -0.125714
+      },
+      "Venus": {
+        "longitude": 32.719761,
+        "sign_index": 1,
+        "degree_in_sign": 2.719761,
+        "is_retrograde": true,
+        "speed": -0.372996
+      },
+      "Saturn": {
+        "longitude": 314.557007,
+        "sign_index": 10,
+        "degree_in_sign": 14.557007,
+        "is_retrograde": false,
+        "speed": 0.022323
+      },
+      "Rahu": {
+        "longitude": 35.042641,
+        "sign_index": 1,
+        "degree_in_sign": 5.042641,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 215.042641,
+        "sign_index": 7,
+        "degree_in_sign": 5.042641,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 80183,
+  "name": "Comas, Erik",
+  "given_name": "Erik Comas",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2438301.208333,
+    "year": 1963,
+    "month": 9,
+    "day": 28,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Romans sur Isère",
+    "country": "France",
+    "lat": 45.05,
+    "lon": 5.05
+  },
+  "adb_positions": {
+    "sun_sign": "lib",
+    "moon_sign": "aqu",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comas,_Erik",
+  "source_notes": "Paddy de Jabrun quoted bc.\\n",
+  "categories": [
+    "Vocation : Sports : Race Cars"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 7.142667,
+    "lagna": 307.142667,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.350628,
+    "jd_ut": 2438301.208333,
+    "planets": {
+      "Sun": {
+        "longitude": 161.498948,
+        "sign_index": 5,
+        "degree_in_sign": 11.498948,
+        "is_retrograde": false,
+        "speed": 0.981489
+      },
+      "Moon": {
+        "longitude": 282.815322,
+        "sign_index": 9,
+        "degree_in_sign": 12.815322,
+        "is_retrograde": false,
+        "speed": 9.84656
+      },
+      "Mars": {
+        "longitude": 197.69297,
+        "sign_index": 6,
+        "degree_in_sign": 17.69297,
+        "is_retrograde": false,
+        "speed": 0.685912
+      },
+      "Mercury": {
+        "longitude": 147.231105,
+        "sign_index": 4,
+        "degree_in_sign": 27.231105,
+        "is_retrograde": true,
+        "speed": -0.107434
+      },
+      "Jupiter": {
+        "longitude": 352.392156,
+        "sign_index": 11,
+        "degree_in_sign": 22.392156,
+        "is_retrograde": true,
+        "speed": -0.130055
+      },
+      "Venus": {
+        "longitude": 169.481107,
+        "sign_index": 5,
+        "degree_in_sign": 19.481107,
+        "is_retrograde": false,
+        "speed": 1.245289
+      },
+      "Saturn": {
+        "longitude": 293.539505,
+        "sign_index": 9,
+        "degree_in_sign": 23.539505,
+        "is_retrograde": true,
+        "speed": -0.037112
+      },
+      "Rahu": {
+        "longitude": 83.002828,
+        "sign_index": 2,
+        "degree_in_sign": 23.002828,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 263.002828,
+        "sign_index": 8,
+        "degree_in_sign": 23.002828,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

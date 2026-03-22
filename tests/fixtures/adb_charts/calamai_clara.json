@@ -1,0 +1,108 @@
+{
+  "adb_id": 71521,
+  "name": "Calamai, Clara",
+  "given_name": "Clara Calamai",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2418556.833333,
+    "year": 1909,
+    "month": 9,
+    "day": 7,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "s",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Florence",
+    "country": "Italy",
+    "lat": 43.766667,
+    "lon": 11.25
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Calamai,_Clara",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file, from birth certificate. \\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 5.563411,
+    "lagna": 155.563411,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.59572,
+    "jd_ut": 2418556.833333,
+    "planets": {
+      "Sun": {
+        "longitude": 141.446377,
+        "sign_index": 4,
+        "degree_in_sign": 21.446377,
+        "is_retrograde": false,
+        "speed": 0.970988
+      },
+      "Moon": {
+        "longitude": 57.320067,
+        "sign_index": 1,
+        "degree_in_sign": 27.320067,
+        "is_retrograde": false,
+        "speed": 9.894506
+      },
+      "Mars": {
+        "longitude": 342.631002,
+        "sign_index": 11,
+        "degree_in_sign": 12.631002,
+        "is_retrograde": true,
+        "speed": -0.199841
+      },
+      "Mercury": {
+        "longitude": 166.13066,
+        "sign_index": 5,
+        "degree_in_sign": 16.13066,
+        "is_retrograde": false,
+        "speed": 1.300509
+      },
+      "Jupiter": {
+        "longitude": 149.957693,
+        "sign_index": 4,
+        "degree_in_sign": 29.957693,
+        "is_retrograde": false,
+        "speed": 0.214942
+      },
+      "Venus": {
+        "longitude": 175.829236,
+        "sign_index": 5,
+        "degree_in_sign": 25.829236,
+        "is_retrograde": false,
+        "speed": 1.198892
+      },
+      "Saturn": {
+        "longitude": 359.73041,
+        "sign_index": 11,
+        "degree_in_sign": 29.73041,
+        "is_retrograde": true,
+        "speed": -0.052863
+      },
+      "Rahu": {
+        "longitude": 49.298186,
+        "sign_index": 1,
+        "degree_in_sign": 19.298186,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 229.298186,
+        "sign_index": 7,
+        "degree_in_sign": 19.298186,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

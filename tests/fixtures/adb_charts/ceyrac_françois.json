@@ -1,0 +1,110 @@
+{
+  "adb_id": 64965,
+  "name": "Ceyrac, François",
+  "given_name": "François Ceyrac",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2419658.25,
+    "year": 1912,
+    "month": 9,
+    "day": 12,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Meyssac",
+    "country": "France",
+    "lat": 45.056111,
+    "lon": 1.676667
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "lib",
+    "asc_sign": "pis"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ceyrac,_François",
+  "source_notes": "Didier Geslain archive, 'C' pdf file, p. 103.\\n",
+  "categories": [
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Business : Top executive",
+    "Vocation : Politics : Labor unions"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 1.416579,
+    "lagna": 301.416579,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.637827,
+    "jd_ut": 2419658.25,
+    "planets": {
+      "Sun": {
+        "longitude": 146.940218,
+        "sign_index": 4,
+        "degree_in_sign": 26.940218,
+        "is_retrograde": false,
+        "speed": 0.974111
+      },
+      "Moon": {
+        "longitude": 168.313533,
+        "sign_index": 5,
+        "degree_in_sign": 18.313533,
+        "is_retrograde": false,
+        "speed": 13.068468
+      },
+      "Mars": {
+        "longitude": 163.87232,
+        "sign_index": 5,
+        "degree_in_sign": 13.87232,
+        "is_retrograde": false,
+        "speed": 0.651817
+      },
+      "Mercury": {
+        "longitude": 130.127944,
+        "sign_index": 4,
+        "degree_in_sign": 10.127944,
+        "is_retrograde": false,
+        "speed": 1.44682
+      },
+      "Jupiter": {
+        "longitude": 225.390613,
+        "sign_index": 7,
+        "degree_in_sign": 15.390613,
+        "is_retrograde": false,
+        "speed": 0.115517
+      },
+      "Venus": {
+        "longitude": 165.65144,
+        "sign_index": 5,
+        "degree_in_sign": 15.65144,
+        "is_retrograde": false,
+        "speed": 1.234519
+      },
+      "Saturn": {
+        "longitude": 41.46302,
+        "sign_index": 1,
+        "degree_in_sign": 11.46302,
+        "is_retrograde": false,
+        "speed": 0.006538
+      },
+      "Rahu": {
+        "longitude": 350.931805,
+        "sign_index": 11,
+        "degree_in_sign": 20.931805,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 170.931805,
+        "sign_index": 5,
+        "degree_in_sign": 20.931805,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

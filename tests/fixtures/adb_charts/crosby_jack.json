@@ -1,0 +1,109 @@
+{
+  "adb_id": 47930,
+  "name": "Crosby, Jack",
+  "given_name": "Jack Crosby",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2424943.3125,
+    "year": 1927,
+    "month": 3,
+    "day": 3,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Spokane",
+    "country": "Washington",
+    "lat": 47.666667,
+    "lon": -117.433333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "pis",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Crosby,_Jack",
+  "source_notes": "Victoria Shaw quotes his mom\\n",
+  "categories": [
+    "Family : Childhood : Family noted",
+    "Vocation : Entertain/Business : Director"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 17.993098,
+    "lagna": 47.993098,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.839881,
+    "jd_ut": 2424943.3125,
+    "planets": {
+      "Sun": {
+        "longitude": 319.394781,
+        "sign_index": 10,
+        "degree_in_sign": 19.394781,
+        "is_retrograde": false,
+        "speed": 1.002812
+      },
+      "Moon": {
+        "longitude": 319.218301,
+        "sign_index": 10,
+        "degree_in_sign": 19.218301,
+        "is_retrograde": false,
+        "speed": 11.359128
+      },
+      "Mars": {
+        "longitude": 42.293649,
+        "sign_index": 1,
+        "degree_in_sign": 12.293649,
+        "is_retrograde": false,
+        "speed": 0.533829
+      },
+      "Mercury": {
+        "longitude": 334.658997,
+        "sign_index": 11,
+        "degree_in_sign": 4.658997,
+        "is_retrograde": false,
+        "speed": 0.0786
+      },
+      "Jupiter": {
+        "longitude": 317.597611,
+        "sign_index": 10,
+        "degree_in_sign": 17.597611,
+        "is_retrograde": false,
+        "speed": 0.241489
+      },
+      "Venus": {
+        "longitude": 343.667799,
+        "sign_index": 11,
+        "degree_in_sign": 13.667799,
+        "is_retrograde": false,
+        "speed": 1.234776
+      },
+      "Saturn": {
+        "longitude": 224.661314,
+        "sign_index": 7,
+        "degree_in_sign": 14.661314,
+        "is_retrograde": false,
+        "speed": 0.023947
+      },
+      "Rahu": {
+        "longitude": 70.865301,
+        "sign_index": 2,
+        "degree_in_sign": 10.865301,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 250.865301,
+        "sign_index": 8,
+        "degree_in_sign": 10.865301,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

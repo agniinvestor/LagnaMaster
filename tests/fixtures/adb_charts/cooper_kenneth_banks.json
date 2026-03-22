@@ -1,0 +1,109 @@
+{
+  "adb_id": 50825,
+  "name": "Cooper, Kenneth Banks",
+  "given_name": "Kenneth Banks Cooper",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423735.972222,
+    "year": 1923,
+    "month": 11,
+    "day": 12,
+    "calendar": "g",
+    "time": "05:20",
+    "time_type": "s",
+    "hour": 5.333333,
+    "time_unknown": false,
+    "place": "Leavenworth",
+    "country": "Kansas",
+    "lat": 39.316667,
+    "lon": -94.916667
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cooper,_Kenneth_Banks",
+  "source_notes": "Steinbrecher collection: Gauquelin Book of American Charts\\n",
+  "categories": [
+    "Vocation : Military : Military career",
+    "Vocation : Military : Military service"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree_in_sign": 12.959095,
+    "lagna": 162.959095,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.793722,
+    "jd_ut": 2423735.972222,
+    "planets": {
+      "Sun": {
+        "longitude": 206.25902,
+        "sign_index": 6,
+        "degree_in_sign": 26.25902,
+        "is_retrograde": false,
+        "speed": 1.006495
+      },
+      "Moon": {
+        "longitude": 259.9106,
+        "sign_index": 8,
+        "degree_in_sign": 19.9106,
+        "is_retrograde": false,
+        "speed": 18.321067
+      },
+      "Mars": {
+        "longitude": 173.360179,
+        "sign_index": 5,
+        "degree_in_sign": 23.360179,
+        "is_retrograde": false,
+        "speed": 0.639679
+      },
+      "Mercury": {
+        "longitude": 204.154144,
+        "sign_index": 6,
+        "degree_in_sign": 24.154144,
+        "is_retrograde": false,
+        "speed": 1.609117
+      },
+      "Jupiter": {
+        "longitude": 214.485284,
+        "sign_index": 7,
+        "degree_in_sign": 4.485284,
+        "is_retrograde": false,
+        "speed": 0.221155
+      },
+      "Venus": {
+        "longitude": 222.51456,
+        "sign_index": 7,
+        "degree_in_sign": 12.51456,
+        "is_retrograde": false,
+        "speed": 1.249032
+      },
+      "Saturn": {
+        "longitude": 183.373676,
+        "sign_index": 6,
+        "degree_in_sign": 3.373676,
+        "is_retrograde": false,
+        "speed": 0.115532
+      },
+      "Rahu": {
+        "longitude": 134.844778,
+        "sign_index": 4,
+        "degree_in_sign": 14.844778,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 314.844778,
+        "sign_index": 10,
+        "degree_in_sign": 14.844778,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

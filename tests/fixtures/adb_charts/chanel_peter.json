@@ -1,0 +1,108 @@
+{
+  "adb_id": 79387,
+  "name": "Chanel, Peter",
+  "given_name": "Peter Chanel",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2379783.527407,
+    "year": 1803,
+    "month": 7,
+    "day": 12,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Montrevel en Bresse",
+    "country": "France",
+    "lat": 46.333333,
+    "lon": 5.133333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "ari",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chanel,_Peter",
+  "source_notes": "Janine Tissot quoted bc (FDAF).\\n",
+  "categories": [
+    "Vocation : Religion : Missionary"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 16.169787,
+    "lagna": 16.169787,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.113781,
+    "jd_ut": 2379783.527407,
+    "planets": {
+      "Sun": {
+        "longitude": 87.532223,
+        "sign_index": 2,
+        "degree_in_sign": 27.532223,
+        "is_retrograde": false,
+        "speed": 0.953626
+      },
+      "Moon": {
+        "longitude": 1.432911,
+        "sign_index": 0,
+        "degree_in_sign": 1.432911,
+        "is_retrograde": false,
+        "speed": 13.564153
+      },
+      "Mars": {
+        "longitude": 134.011722,
+        "sign_index": 4,
+        "degree_in_sign": 14.011722,
+        "is_retrograde": false,
+        "speed": 0.604491
+      },
+      "Mercury": {
+        "longitude": 71.865954,
+        "sign_index": 2,
+        "degree_in_sign": 11.865954,
+        "is_retrograde": false,
+        "speed": 0.069527
+      },
+      "Jupiter": {
+        "longitude": 158.16557,
+        "sign_index": 5,
+        "degree_in_sign": 8.16557,
+        "is_retrograde": false,
+        "speed": 0.127736
+      },
+      "Venus": {
+        "longitude": 62.569253,
+        "sign_index": 2,
+        "degree_in_sign": 2.569253,
+        "is_retrograde": false,
+        "speed": 1.206891
+      },
+      "Saturn": {
+        "longitude": 145.282122,
+        "sign_index": 4,
+        "degree_in_sign": 25.282122,
+        "is_retrograde": false,
+        "speed": 0.084672
+      },
+      "Rahu": {
+        "longitude": 303.978997,
+        "sign_index": 10,
+        "degree_in_sign": 3.978997,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 123.978997,
+        "sign_index": 4,
+        "degree_in_sign": 3.978997,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

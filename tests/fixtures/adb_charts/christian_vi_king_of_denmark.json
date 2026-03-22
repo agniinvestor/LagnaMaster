@@ -1,0 +1,110 @@
+{
+  "adb_id": 62196,
+  "name": "Christian VI, King of Denmark",
+  "given_name": "King of Denmark Christian VI",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2341950.715046,
+    "year": 1699,
+    "month": 11,
+    "day": 30,
+    "calendar": "j",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Copenhagen",
+    "country": "Denmark",
+    "lat": 55.666667,
+    "lon": 12.583333
+  },
+  "adb_positions": {
+    "sun_sign": "sag",
+    "moon_sign": "leo",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Christian_VI,_King_of_Denmark",
+  "source_notes": "Sy Scholfield cites church records: \"Anno 1699 d. 30 Novembr: ved 6 Slet om morgenen blef hendis Majt. dronning Louise forlöst med en ung Printz, som om eftermiddagen ved 5 Slet blef döbt af hans Majt. Confessionario D. Peter Jespersön, og kaldet Christian. Hendis Majs. Enke=dronningen, Charlotta Amalia holt ham over daaben. Gud lade ham gaae frem fra dyd til dyd, og blive en Printz efter hans eget hierte. (Anno 1746 d. 6 August behagede det den Allerhöyeste Gud at henkalde denne Höysalige Herre til et bedre og lyckeligere Rige i Himmelen paa Hirschholms Slot)\"\\n\\nhttp://www.historie-online.dk/special/daab/kirkeboeger.htm\\n",
+  "categories": [
+    "Traits : Personality : Disciplined",
+    "Vocation : Politics : Other Politics",
+    "Notable : Famous : Royal family"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 13.076639,
+    "lagna": 193.076639,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 19.668455,
+    "jd_ut": 2341950.715046,
+    "planets": {
+      "Sun": {
+        "longitude": 238.845609,
+        "sign_index": 7,
+        "degree_in_sign": 28.845609,
+        "is_retrograde": false,
+        "speed": 1.017332
+      },
+      "Moon": {
+        "longitude": 103.791163,
+        "sign_index": 3,
+        "degree_in_sign": 13.791163,
+        "is_retrograde": false,
+        "speed": 12.575846
+      },
+      "Mars": {
+        "longitude": 171.946777,
+        "sign_index": 5,
+        "degree_in_sign": 21.946777,
+        "is_retrograde": false,
+        "speed": 0.563832
+      },
+      "Mercury": {
+        "longitude": 249.420051,
+        "sign_index": 8,
+        "degree_in_sign": 9.420051,
+        "is_retrograde": false,
+        "speed": 1.56562
+      },
+      "Jupiter": {
+        "longitude": 255.684231,
+        "sign_index": 8,
+        "degree_in_sign": 15.684231,
+        "is_retrograde": false,
+        "speed": 0.226743
+      },
+      "Venus": {
+        "longitude": 245.347677,
+        "sign_index": 8,
+        "degree_in_sign": 5.347677,
+        "is_retrograde": false,
+        "speed": 1.257032
+      },
+      "Saturn": {
+        "longitude": 307.30099,
+        "sign_index": 10,
+        "degree_in_sign": 7.30099,
+        "is_retrograde": false,
+        "speed": 0.067488
+      },
+      "Rahu": {
+        "longitude": 148.824845,
+        "sign_index": 4,
+        "degree_in_sign": 28.824845,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 328.824845,
+        "sign_index": 10,
+        "degree_in_sign": 28.824845,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 93806,
+  "name": "Carmien, Pierre",
+  "given_name": "Pierre Carmien",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2391077.93961,
+    "year": 1834,
+    "month": 6,
+    "day": 13,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Luze",
+    "country": "France",
+    "lat": 47.597778,
+    "lon": 6.740278
+  },
+  "adb_positions": {
+    "sun_sign": "gem",
+    "moon_sign": "vir",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carmien,_Pierre",
+  "source_notes": "Michaël Mandl quotes birth record [http://www.mandlonline.com/IMG/pdf/archives_mm_in_inventeurs-2.pdf]. \\n",
+  "categories": [
+    "Notable : Famous : Founder/ originator"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 29.397859,
+    "lagna": 119.397859,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.545389,
+    "jd_ut": 2391077.93961,
+    "planets": {
+      "Sun": {
+        "longitude": 60.324075,
+        "sign_index": 2,
+        "degree_in_sign": 0.324075,
+        "is_retrograde": false,
+        "speed": 0.954986
+      },
+      "Moon": {
+        "longitude": 136.657416,
+        "sign_index": 4,
+        "degree_in_sign": 16.657416,
+        "is_retrograde": false,
+        "speed": 14.096688
+      },
+      "Mars": {
+        "longitude": 4.815613,
+        "sign_index": 0,
+        "degree_in_sign": 4.815613,
+        "is_retrograde": false,
+        "speed": 0.736292
+      },
+      "Mercury": {
+        "longitude": 73.324836,
+        "sign_index": 2,
+        "degree_in_sign": 13.324836,
+        "is_retrograde": false,
+        "speed": 1.976097
+      },
+      "Jupiter": {
+        "longitude": 35.02573,
+        "sign_index": 1,
+        "degree_in_sign": 5.02573,
+        "is_retrograde": false,
+        "speed": 0.224552
+      },
+      "Venus": {
+        "longitude": 85.347273,
+        "sign_index": 2,
+        "degree_in_sign": 25.347273,
+        "is_retrograde": false,
+        "speed": 1.211641
+      },
+      "Saturn": {
+        "longitude": 162.474957,
+        "sign_index": 5,
+        "degree_in_sign": 12.474957,
+        "is_retrograde": false,
+        "speed": 0.011485
+      },
+      "Rahu": {
+        "longitude": 65.463417,
+        "sign_index": 2,
+        "degree_in_sign": 5.463417,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 245.463417,
+        "sign_index": 8,
+        "degree_in_sign": 5.463417,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

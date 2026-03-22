@@ -1,0 +1,108 @@
+{
+  "adb_id": 53069,
+  "name": "Chassin, Lionel-Max",
+  "given_name": "Lionel-Max Chassin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415866.181007,
+    "year": 1902,
+    "month": 4,
+    "day": 26,
+    "calendar": "g",
+    "time": "16:30",
+    "time_type": "s",
+    "hour": 16.5,
+    "time_unknown": false,
+    "place": "Bordeaux",
+    "country": "France",
+    "lat": 44.833333,
+    "lon": -0.566667
+  },
+  "adb_positions": {
+    "sun_sign": "tau",
+    "moon_sign": "sag",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Chassin,_Lionel-Max",
+  "source_notes": "Steinbrecher collection: Gauquelin 1/149\\n",
+  "categories": [
+    "Vocation : Travel : Aviation field"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.350788,
+    "lagna": 141.350788,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.492859,
+    "jd_ut": 2415866.181007,
+    "planets": {
+      "Sun": {
+        "longitude": 12.992711,
+        "sign_index": 0,
+        "degree_in_sign": 12.992711,
+        "is_retrograde": false,
+        "speed": 0.972251
+      },
+      "Moon": {
+        "longitude": 235.877003,
+        "sign_index": 7,
+        "degree_in_sign": 25.877003,
+        "is_retrograde": false,
+        "speed": 15.416127
+      },
+      "Mars": {
+        "longitude": 6.928052,
+        "sign_index": 0,
+        "degree_in_sign": 6.928052,
+        "is_retrograde": false,
+        "speed": 0.749698
+      },
+      "Mercury": {
+        "longitude": 10.273698,
+        "sign_index": 0,
+        "degree_in_sign": 10.273698,
+        "is_retrograde": false,
+        "speed": 2.111403
+      },
+      "Jupiter": {
+        "longitude": 292.268891,
+        "sign_index": 9,
+        "degree_in_sign": 22.268891,
+        "is_retrograde": false,
+        "speed": 0.117871
+      },
+      "Venus": {
+        "longitude": 326.803789,
+        "sign_index": 10,
+        "degree_in_sign": 26.803789,
+        "is_retrograde": false,
+        "speed": 0.977255
+      },
+      "Saturn": {
+        "longitude": 275.196991,
+        "sign_index": 9,
+        "degree_in_sign": 5.196991,
+        "is_retrograde": false,
+        "speed": 0.018865
+      },
+      "Rahu": {
+        "longitude": 191.881514,
+        "sign_index": 6,
+        "degree_in_sign": 11.881514,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 11.881514,
+        "sign_index": 0,
+        "degree_in_sign": 11.881514,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

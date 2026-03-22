@@ -1,0 +1,109 @@
+{
+  "adb_id": 2570,
+  "name": "Cottet, Charles",
+  "given_name": "Charles Cottet",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2401698.864213,
+    "year": 1863,
+    "month": 7,
+    "day": 12,
+    "calendar": "g",
+    "time": "09:00",
+    "time_type": "l",
+    "hour": 9.0,
+    "time_unknown": false,
+    "place": "Le Puy",
+    "country": "France",
+    "lat": 45.033333,
+    "lon": 3.883333
+  },
+  "adb_positions": {
+    "sun_sign": "can",
+    "moon_sign": "gem",
+    "asc_sign": "vir"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cottet,_Charles",
+  "source_notes": "Gauquelin Vol 4/252\\n",
+  "categories": [
+    "Vocation : Art : Fine art artist",
+    "Notable : Awards : Other Awards"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree_in_sign": 26.942815,
+    "lagna": 116.942815,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 21.951313,
+    "jd_ut": 2401698.864213,
+    "planets": {
+      "Sun": {
+        "longitude": 87.496463,
+        "sign_index": 2,
+        "degree_in_sign": 27.496463,
+        "is_retrograde": false,
+        "speed": 0.953908
+      },
+      "Moon": {
+        "longitude": 48.367374,
+        "sign_index": 1,
+        "degree_in_sign": 18.367374,
+        "is_retrograde": false,
+        "speed": 8.101136
+      },
+      "Mars": {
+        "longitude": 114.598448,
+        "sign_index": 3,
+        "degree_in_sign": 24.598448,
+        "is_retrograde": false,
+        "speed": 0.624132
+      },
+      "Mercury": {
+        "longitude": 67.414701,
+        "sign_index": 2,
+        "degree_in_sign": 7.414701,
+        "is_retrograde": false,
+        "speed": 1.325958
+      },
+      "Jupiter": {
+        "longitude": 176.611349,
+        "sign_index": 5,
+        "degree_in_sign": 26.611349,
+        "is_retrograde": false,
+        "speed": 0.078552
+      },
+      "Venus": {
+        "longitude": 132.852513,
+        "sign_index": 4,
+        "degree_in_sign": 12.852513,
+        "is_retrograde": false,
+        "speed": 1.009144
+      },
+      "Saturn": {
+        "longitude": 158.172281,
+        "sign_index": 5,
+        "degree_in_sign": 8.172281,
+        "is_retrograde": false,
+        "speed": 0.065132
+      },
+      "Rahu": {
+        "longitude": 222.637717,
+        "sign_index": 7,
+        "degree_in_sign": 12.637717,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 42.637717,
+        "sign_index": 1,
+        "degree_in_sign": 12.637717,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

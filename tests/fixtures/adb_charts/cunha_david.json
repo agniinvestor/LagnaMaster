@@ -1,0 +1,109 @@
+{
+  "adb_id": 100950,
+  "name": "Cunha, David",
+  "given_name": "David Cunha",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2436161.083333,
+    "year": 1957,
+    "month": 11,
+    "day": 18,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Natal (Rio Grande do Norte)",
+    "country": "Brazil",
+    "lat": -5.795,
+    "lon": -35.209444
+  },
+  "adb_positions": {
+    "sun_sign": "sco",
+    "moon_sign": "lib",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cunha,_David",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file. \\n",
+  "categories": [
+    "Vocation : Entertainment : Comedy",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 4.707293,
+    "lagna": 274.707293,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.268793,
+    "jd_ut": 2436161.083333,
+    "planets": {
+      "Sun": {
+        "longitude": 212.70224,
+        "sign_index": 7,
+        "degree_in_sign": 2.70224,
+        "is_retrograde": false,
+        "speed": 1.009308
+      },
+      "Moon": {
+        "longitude": 170.935102,
+        "sign_index": 5,
+        "degree_in_sign": 20.935102,
+        "is_retrograde": false,
+        "speed": 9.961334
+      },
+      "Mars": {
+        "longitude": 193.230327,
+        "sign_index": 6,
+        "degree_in_sign": 13.230327,
+        "is_retrograde": false,
+        "speed": 0.672483
+      },
+      "Mercury": {
+        "longitude": 227.036798,
+        "sign_index": 7,
+        "degree_in_sign": 17.036798,
+        "is_retrograde": false,
+        "speed": 1.489475
+      },
+      "Jupiter": {
+        "longitude": 178.094959,
+        "sign_index": 5,
+        "degree_in_sign": 28.094959,
+        "is_retrograde": false,
+        "speed": 0.196223
+      },
+      "Venus": {
+        "longitude": 259.85181,
+        "sign_index": 8,
+        "degree_in_sign": 19.85181,
+        "is_retrograde": false,
+        "speed": 1.007757
+      },
+      "Saturn": {
+        "longitude": 231.09793,
+        "sign_index": 7,
+        "degree_in_sign": 21.09793,
+        "is_retrograde": false,
+        "speed": 0.114208
+      },
+      "Rahu": {
+        "longitude": 196.412438,
+        "sign_index": 6,
+        "degree_in_sign": 16.412438,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 16.412438,
+        "sign_index": 0,
+        "degree_in_sign": 16.412438,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

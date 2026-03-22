@@ -1,0 +1,108 @@
+{
+  "adb_id": 71907,
+  "name": "Cusin, Georges",
+  "given_name": "Georges Cusin",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2415840.23309,
+    "year": 1902,
+    "month": 3,
+    "day": 31,
+    "calendar": "g",
+    "time": "17:45",
+    "time_type": "s",
+    "hour": 17.75,
+    "time_unknown": false,
+    "place": "Lunéville",
+    "country": "France",
+    "lat": 48.6,
+    "lon": 6.5
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "cap",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cusin,_Georges",
+  "source_notes": "Grazia Bordoni database, 'entertainment' file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 21.27065,
+    "lagna": 141.27065,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.491867,
+    "jd_ut": 2415840.23309,
+    "planets": {
+      "Sun": {
+        "longitude": 347.576826,
+        "sign_index": 11,
+        "degree_in_sign": 17.576826,
+        "is_retrograde": false,
+        "speed": 0.986682
+      },
+      "Moon": {
+        "longitude": 251.71579,
+        "sign_index": 8,
+        "degree_in_sign": 11.71579,
+        "is_retrograde": false,
+        "speed": 15.547019
+      },
+      "Mars": {
+        "longitude": 347.207687,
+        "sign_index": 11,
+        "degree_in_sign": 17.207687,
+        "is_retrograde": false,
+        "speed": 0.769485
+      },
+      "Mercury": {
+        "longitude": 323.657195,
+        "sign_index": 10,
+        "degree_in_sign": 23.657195,
+        "is_retrograde": false,
+        "speed": 1.466658
+      },
+      "Jupiter": {
+        "longitude": 288.463137,
+        "sign_index": 9,
+        "degree_in_sign": 18.463137,
+        "is_retrograde": false,
+        "speed": 0.172522
+      },
+      "Venus": {
+        "longitude": 304.541751,
+        "sign_index": 10,
+        "degree_in_sign": 4.541751,
+        "is_retrograde": false,
+        "speed": 0.692173
+      },
+      "Saturn": {
+        "longitude": 274.181494,
+        "sign_index": 9,
+        "degree_in_sign": 4.181494,
+        "is_retrograde": false,
+        "speed": 0.058516
+      },
+      "Rahu": {
+        "longitude": 193.256549,
+        "sign_index": 6,
+        "degree_in_sign": 13.256549,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 13.256549,
+        "sign_index": 0,
+        "degree_in_sign": 13.256549,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

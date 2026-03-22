@@ -1,0 +1,109 @@
+{
+  "adb_id": 85479,
+  "name": "Cohen, Izhar",
+  "given_name": "Izhar Cohen",
+  "gender": "m",
+  "rodden_rating": "A",
+  "rodden_rank": 4,
+  "birth_data": {
+    "jd_ut": 2433719.229167,
+    "year": 1951,
+    "month": 3,
+    "day": 13,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "s",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "Tel Aviv",
+    "country": "Israel",
+    "lat": 32.066667,
+    "lon": 34.766667
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "gem",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cohen,_Izhar",
+  "source_notes": "Starkman quotes The Eastern Horizon (in Hebrew) 1982, data obtained by Dan Herman from the native.\\nEyal quotes the newspaper Lahiton for 7.30 pm with drawing chart for this birth time.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Vocalist/ Pop, Rock, etc.",
+    "Notable : Awards : Other Awards"
+  ],
+  "trust_note": "Rodden A — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 28.882239,
+    "lagna": 148.882239,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.175424,
+    "jd_ut": 2433719.229167,
+    "planets": {
+      "Sun": {
+        "longitude": 329.156133,
+        "sign_index": 10,
+        "degree_in_sign": 29.156133,
+        "is_retrograde": false,
+        "speed": 0.99743
+      },
+      "Moon": {
+        "longitude": 36.633249,
+        "sign_index": 1,
+        "degree_in_sign": 6.633249,
+        "is_retrograde": false,
+        "speed": 8.753005
+      },
+      "Mars": {
+        "longitude": 345.914849,
+        "sign_index": 11,
+        "degree_in_sign": 15.914849,
+        "is_retrograde": false,
+        "speed": 0.765887
+      },
+      "Mercury": {
+        "longitude": 331.350318,
+        "sign_index": 11,
+        "degree_in_sign": 1.350318,
+        "is_retrograde": false,
+        "speed": 1.964919
+      },
+      "Jupiter": {
+        "longitude": 327.641672,
+        "sign_index": 10,
+        "degree_in_sign": 27.641672,
+        "is_retrograde": false,
+        "speed": 0.242296
+      },
+      "Venus": {
+        "longitude": 357.437312,
+        "sign_index": 11,
+        "degree_in_sign": 27.437312,
+        "is_retrograde": false,
+        "speed": 1.223971
+      },
+      "Saturn": {
+        "longitude": 156.346015,
+        "sign_index": 5,
+        "degree_in_sign": 6.346015,
+        "is_retrograde": true,
+        "speed": -0.077969
+      },
+      "Rahu": {
+        "longitude": 325.81131,
+        "sign_index": 10,
+        "degree_in_sign": 25.81131,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 145.81131,
+        "sign_index": 4,
+        "degree_in_sign": 25.81131,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

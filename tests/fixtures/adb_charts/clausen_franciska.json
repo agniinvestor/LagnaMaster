@@ -1,0 +1,112 @@
+{
+  "adb_id": 98979,
+  "name": "Clausen, Franciska",
+  "given_name": "Franciska Clausen",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2414661.708333,
+    "year": 1899,
+    "month": 1,
+    "day": 7,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Åbenrå",
+    "country": "Denmark",
+    "lat": 55.033333,
+    "lon": 9.433333
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "sco",
+    "asc_sign": "sag"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Clausen,_Franciska",
+  "source_notes": "Civil registry birth entry in hand from Sy Scholfield, copy on file (no. 6).\\n",
+  "categories": [
+    "Lifestyle : Social Life : Groups",
+    "Personal : Death : Long life  more than 80 yrs",
+    "Vocation : Art : Fine art artist",
+    "Vocation : Education : Teacher",
+    "Notable : Awards : Vocational award"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 23.214971,
+    "lagna": 203.214971,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.446815,
+    "jd_ut": 2414661.708333,
+    "planets": {
+      "Sun": {
+        "longitude": 264.277433,
+        "sign_index": 8,
+        "degree_in_sign": 24.277433,
+        "is_retrograde": false,
+        "speed": 1.019344
+      },
+      "Moon": {
+        "longitude": 200.151991,
+        "sign_index": 6,
+        "degree_in_sign": 20.151991,
+        "is_retrograde": false,
+        "speed": 10.981448
+      },
+      "Mars": {
+        "longitude": 100.8391,
+        "sign_index": 3,
+        "degree_in_sign": 10.8391,
+        "is_retrograde": true,
+        "speed": -0.356729
+      },
+      "Mercury": {
+        "longitude": 241.415838,
+        "sign_index": 8,
+        "degree_in_sign": 1.415838,
+        "is_retrograde": false,
+        "speed": 0.694942
+      },
+      "Jupiter": {
+        "longitude": 194.397473,
+        "sign_index": 6,
+        "degree_in_sign": 14.397473,
+        "is_retrograde": false,
+        "speed": 0.132229
+      },
+      "Venus": {
+        "longitude": 224.132986,
+        "sign_index": 7,
+        "degree_in_sign": 14.132986,
+        "is_retrograde": false,
+        "speed": 0.537072
+      },
+      "Saturn": {
+        "longitude": 235.911383,
+        "sign_index": 7,
+        "degree_in_sign": 25.911383,
+        "is_retrograde": false,
+        "speed": 0.108837
+      },
+      "Rahu": {
+        "longitude": 255.709061,
+        "sign_index": 8,
+        "degree_in_sign": 15.709061,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 75.709061,
+        "sign_index": 2,
+        "degree_in_sign": 15.709061,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

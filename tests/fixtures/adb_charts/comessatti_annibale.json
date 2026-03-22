@@ -1,0 +1,109 @@
+{
+  "adb_id": 81066,
+  "name": "Comessatti, Annibale",
+  "given_name": "Annibale Comessatti",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2409936.548657,
+    "year": 1886,
+    "month": 1,
+    "day": 30,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Udine",
+    "country": "Italy",
+    "lat": 46.05,
+    "lon": 13.233333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "sag",
+    "asc_sign": "sco"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Comessatti,_Annibale",
+  "source_notes": "Grazia Bordoni's Science file quotes Gauquelin.\\n",
+  "categories": [
+    "Vocation : Education : Teacher",
+    "Vocation : Science : Mathematics/ Statistics"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree_in_sign": 7.71834,
+    "lagna": 187.71834,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.266188,
+    "jd_ut": 2409936.548657,
+    "planets": {
+      "Sun": {
+        "longitude": 287.856475,
+        "sign_index": 9,
+        "degree_in_sign": 17.856475,
+        "is_retrograde": false,
+        "speed": 1.015235
+      },
+      "Moon": {
+        "longitude": 233.030832,
+        "sign_index": 7,
+        "degree_in_sign": 23.030832,
+        "is_retrograde": false,
+        "speed": 12.587132
+      },
+      "Mars": {
+        "longitude": 152.859428,
+        "sign_index": 5,
+        "degree_in_sign": 2.859428,
+        "is_retrograde": true,
+        "speed": -0.05268
+      },
+      "Mercury": {
+        "longitude": 270.84062,
+        "sign_index": 9,
+        "degree_in_sign": 0.84062,
+        "is_retrograde": false,
+        "speed": 1.502707
+      },
+      "Jupiter": {
+        "longitude": 163.587594,
+        "sign_index": 5,
+        "degree_in_sign": 13.587594,
+        "is_retrograde": true,
+        "speed": -0.030878
+      },
+      "Venus": {
+        "longitude": 315.864414,
+        "sign_index": 10,
+        "degree_in_sign": 15.864414,
+        "is_retrograde": true,
+        "speed": -0.044551
+      },
+      "Saturn": {
+        "longitude": 70.11102,
+        "sign_index": 2,
+        "degree_in_sign": 10.11102,
+        "is_retrograde": true,
+        "speed": -0.055953
+      },
+      "Rahu": {
+        "longitude": 146.105265,
+        "sign_index": 4,
+        "degree_in_sign": 26.105265,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 326.105265,
+        "sign_index": 10,
+        "degree_in_sign": 26.105265,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

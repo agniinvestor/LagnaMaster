@@ -1,0 +1,108 @@
+{
+  "adb_id": 77487,
+  "name": "Czechowicz, Josef",
+  "given_name": "Josef Czechowicz",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2416188.8375,
+    "year": 1903,
+    "month": 3,
+    "day": 15,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "s",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Lublin",
+    "country": "Poland",
+    "lat": 51.25,
+    "lon": 22.583333
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "lib",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Czechowicz,_Josef",
+  "source_notes": "PTA quotes the Lublin archives of the state  reported by Mirosław Czylek and Wojciech Suchomski .\\n",
+  "categories": [
+    "Vocation : Writers : Poet"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 3.688949,
+    "lagna": 33.688949,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.505194,
+    "jd_ut": 2416188.8375,
+    "planets": {
+      "Sun": {
+        "longitude": 331.06626,
+        "sign_index": 11,
+        "degree_in_sign": 1.06626,
+        "is_retrograde": false,
+        "speed": 0.995792
+      },
+      "Moon": {
+        "longitude": 174.332225,
+        "sign_index": 5,
+        "degree_in_sign": 24.332225,
+        "is_retrograde": false,
+        "speed": 15.036838
+      },
+      "Mars": {
+        "longitude": 169.912382,
+        "sign_index": 5,
+        "degree_in_sign": 19.912382,
+        "is_retrograde": true,
+        "speed": -0.303715
+      },
+      "Mercury": {
+        "longitude": 308.116225,
+        "sign_index": 10,
+        "degree_in_sign": 8.116225,
+        "is_retrograde": false,
+        "speed": 1.46677
+      },
+      "Jupiter": {
+        "longitude": 312.981085,
+        "sign_index": 10,
+        "degree_in_sign": 12.981085,
+        "is_retrograde": false,
+        "speed": 0.234817
+      },
+      "Venus": {
+        "longitude": 356.269911,
+        "sign_index": 11,
+        "degree_in_sign": 26.269911,
+        "is_retrograde": false,
+        "speed": 1.22896
+      },
+      "Saturn": {
+        "longitude": 283.498302,
+        "sign_index": 9,
+        "degree_in_sign": 13.498302,
+        "is_retrograde": false,
+        "speed": 0.092646
+      },
+      "Rahu": {
+        "longitude": 174.783267,
+        "sign_index": 5,
+        "degree_in_sign": 24.783267,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 354.783267,
+        "sign_index": 11,
+        "degree_in_sign": 24.783267,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "adb_id": 84207,
+  "name": "Capuçon, Gautier",
+  "given_name": "Gautier Capuçon",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444850.826389,
+    "year": 1981,
+    "month": 9,
+    "day": 3,
+    "calendar": "g",
+    "time": "09:50",
+    "time_type": "d",
+    "hour": 9.833333,
+    "time_unknown": false,
+    "place": "Chambéry",
+    "country": "France",
+    "lat": 45.566667,
+    "lon": 5.933333
+  },
+  "adb_positions": {
+    "sun_sign": "vir",
+    "moon_sign": "sco",
+    "asc_sign": "lib"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capuçon,_Gautier",
+  "source_notes": "Lepoivre quoted bc.\\n",
+  "categories": [
+    "Vocation : Entertain/Music : Instrumentalist"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree_in_sign": 24.730126,
+    "lagna": 144.730126,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.601086,
+    "jd_ut": 2444850.826389,
+    "planets": {
+      "Sun": {
+        "longitude": 137.12381,
+        "sign_index": 4,
+        "degree_in_sign": 17.12381,
+        "is_retrograde": false,
+        "speed": 0.968969
+      },
+      "Moon": {
+        "longitude": 192.541194,
+        "sign_index": 6,
+        "degree_in_sign": 12.541194,
+        "is_retrograde": false,
+        "speed": 13.437186
+      },
+      "Mars": {
+        "longitude": 97.196903,
+        "sign_index": 3,
+        "degree_in_sign": 7.196903,
+        "is_retrograde": false,
+        "speed": 0.63515
+      },
+      "Mercury": {
+        "longitude": 156.987216,
+        "sign_index": 5,
+        "degree_in_sign": 6.987216,
+        "is_retrograde": false,
+        "speed": 1.525362
+      },
+      "Jupiter": {
+        "longitude": 168.532476,
+        "sign_index": 5,
+        "degree_in_sign": 18.532476,
+        "is_retrograde": false,
+        "speed": 0.199031
+      },
+      "Venus": {
+        "longitude": 175.094396,
+        "sign_index": 5,
+        "degree_in_sign": 25.094396,
+        "is_retrograde": false,
+        "speed": 1.179876
+      },
+      "Saturn": {
+        "longitude": 165.306899,
+        "sign_index": 5,
+        "degree_in_sign": 15.306899,
+        "is_retrograde": false,
+        "speed": 0.113184
+      },
+      "Rahu": {
+        "longitude": 95.925212,
+        "sign_index": 3,
+        "degree_in_sign": 5.925212,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 275.925212,
+        "sign_index": 9,
+        "degree_in_sign": 5.925212,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

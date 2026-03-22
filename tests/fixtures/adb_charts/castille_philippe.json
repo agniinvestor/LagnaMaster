@@ -1,0 +1,109 @@
+{
+  "adb_id": 64056,
+  "name": "Castille, Philippe",
+  "given_name": "Philippe Castille",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2424597.916667,
+    "year": 1926,
+    "month": 3,
+    "day": 23,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Mailly-Champagne",
+    "country": "France",
+    "lat": 49.156389,
+    "lon": 4.112778
+  },
+  "adb_positions": {
+    "sun_sign": "ari",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castille,_Philippe",
+  "source_notes": "Birth certificate in Didier Geslain archive, 'Algérie' pdf file, p. 19.\\n",
+  "categories": [
+    "Vocation : Military : Other Military",
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 18.269008,
+    "lagna": 48.269008,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.826676,
+    "jd_ut": 2424597.916667,
+    "planets": {
+      "Sun": {
+        "longitude": 339.202604,
+        "sign_index": 11,
+        "degree_in_sign": 9.202604,
+        "is_retrograde": false,
+        "speed": 0.991459
+      },
+      "Moon": {
+        "longitude": 93.932413,
+        "sign_index": 3,
+        "degree_in_sign": 3.932413,
+        "is_retrograde": false,
+        "speed": 14.615469
+      },
+      "Mars": {
+        "longitude": 277.338271,
+        "sign_index": 9,
+        "degree_in_sign": 7.338271,
+        "is_retrograde": false,
+        "speed": 0.720146
+      },
+      "Mercury": {
+        "longitude": 351.706089,
+        "sign_index": 11,
+        "degree_in_sign": 21.706089,
+        "is_retrograde": true,
+        "speed": -0.240707
+      },
+      "Jupiter": {
+        "longitude": 294.555654,
+        "sign_index": 9,
+        "degree_in_sign": 24.555654,
+        "is_retrograde": false,
+        "speed": 0.200914
+      },
+      "Venus": {
+        "longitude": 296.422139,
+        "sign_index": 9,
+        "degree_in_sign": 26.422139,
+        "is_retrograde": false,
+        "speed": 0.676318
+      },
+      "Saturn": {
+        "longitude": 213.005509,
+        "sign_index": 7,
+        "degree_in_sign": 3.005509,
+        "is_retrograde": true,
+        "speed": -0.028561
+      },
+      "Rahu": {
+        "longitude": 89.168545,
+        "sign_index": 2,
+        "degree_in_sign": 29.168545,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 269.168545,
+        "sign_index": 8,
+        "degree_in_sign": 29.168545,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

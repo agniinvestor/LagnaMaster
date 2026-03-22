@@ -1,0 +1,108 @@
+{
+  "adb_id": 89951,
+  "name": "Carnimolla, William",
+  "given_name": "William Carnimolla",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2444266.902778,
+    "year": 1980,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "10:40",
+    "time_type": "s",
+    "hour": 10.666667,
+    "time_unknown": false,
+    "place": "Perpignan",
+    "country": "France",
+    "lat": 42.683333,
+    "lon": 2.883333
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "gem",
+    "asc_sign": "ari"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carnimolla,_William",
+  "source_notes": "Marc Brun quoted bc.\\n",
+  "categories": [
+    "Vocation : Beauty : Designer/ Fashion"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree_in_sign": 21.364205,
+    "lagna": 321.364205,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.578756,
+    "jd_ut": 2444266.902778,
+    "planets": {
+      "Sun": {
+        "longitude": 284.044905,
+        "sign_index": 9,
+        "degree_in_sign": 14.044905,
+        "is_retrograde": false,
+        "speed": 1.015863
+      },
+      "Moon": {
+        "longitude": 61.472599,
+        "sign_index": 2,
+        "degree_in_sign": 1.472599,
+        "is_retrograde": false,
+        "speed": 17.157235
+      },
+      "Mars": {
+        "longitude": 140.808599,
+        "sign_index": 4,
+        "degree_in_sign": 20.808599,
+        "is_retrograde": true,
+        "speed": -0.159185
+      },
+      "Mercury": {
+        "longitude": 288.916054,
+        "sign_index": 9,
+        "degree_in_sign": 18.916054,
+        "is_retrograde": false,
+        "speed": 1.742455
+      },
+      "Jupiter": {
+        "longitude": 134.991029,
+        "sign_index": 4,
+        "degree_in_sign": 14.991029,
+        "is_retrograde": true,
+        "speed": -0.097501
+      },
+      "Venus": {
+        "longitude": 321.324353,
+        "sign_index": 10,
+        "degree_in_sign": 21.324353,
+        "is_retrograde": false,
+        "speed": 1.208963
+      },
+      "Saturn": {
+        "longitude": 153.029383,
+        "sign_index": 5,
+        "degree_in_sign": 3.029383,
+        "is_retrograde": true,
+        "speed": -0.037759
+      },
+      "Rahu": {
+        "longitude": 126.86851,
+        "sign_index": 4,
+        "degree_in_sign": 6.86851,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 306.86851,
+        "sign_index": 10,
+        "degree_in_sign": 6.86851,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

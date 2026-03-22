@@ -1,0 +1,108 @@
+{
+  "adb_id": 80908,
+  "name": "Castaner, Christophe",
+  "given_name": "Christophe Castaner",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2439129.166667,
+    "year": 1966,
+    "month": 1,
+    "day": 3,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Ollioules",
+    "country": "France",
+    "lat": 43.133333,
+    "lon": 5.85
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "tau",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Castaner,_Christophe",
+  "source_notes": "Didier Excoffon quoted bc.\\n",
+  "categories": [
+    "Vocation : Politics : Activist/ political"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 24.350469,
+    "lagna": 54.350469,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.382288,
+    "jd_ut": 2439129.166667,
+    "planets": {
+      "Sun": {
+        "longitude": 259.46051,
+        "sign_index": 8,
+        "degree_in_sign": 19.46051,
+        "is_retrograde": false,
+        "speed": 1.018968
+      },
+      "Moon": {
+        "longitude": 32.502676,
+        "sign_index": 1,
+        "degree_in_sign": 2.502676,
+        "is_retrograde": false,
+        "speed": 12.191063
+      },
+      "Mars": {
+        "longitude": 285.602848,
+        "sign_index": 9,
+        "degree_in_sign": 15.602848,
+        "is_retrograde": false,
+        "speed": 0.787273
+      },
+      "Mercury": {
+        "longitude": 240.752179,
+        "sign_index": 8,
+        "degree_in_sign": 0.752179,
+        "is_retrograde": false,
+        "speed": 1.404855
+      },
+      "Jupiter": {
+        "longitude": 60.725333,
+        "sign_index": 2,
+        "degree_in_sign": 0.725333,
+        "is_retrograde": true,
+        "speed": -0.121971
+      },
+      "Venus": {
+        "longitude": 290.371266,
+        "sign_index": 9,
+        "degree_in_sign": 20.371266,
+        "is_retrograde": false,
+        "speed": 0.081804
+      },
+      "Saturn": {
+        "longitude": 319.262105,
+        "sign_index": 10,
+        "degree_in_sign": 19.262105,
+        "is_retrograde": false,
+        "speed": 0.080838
+      },
+      "Rahu": {
+        "longitude": 39.127621,
+        "sign_index": 1,
+        "degree_in_sign": 9.127621,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 219.127621,
+        "sign_index": 7,
+        "degree_in_sign": 9.127621,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

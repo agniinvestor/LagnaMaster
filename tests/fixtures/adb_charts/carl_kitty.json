@@ -1,0 +1,108 @@
+{
+  "adb_id": 95262,
+  "name": "Carl, Kitty",
+  "given_name": "Kitty Carl",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2434058.104167,
+    "year": 1952,
+    "month": 2,
+    "day": 15,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "La Mesa",
+    "country": "California",
+    "lat": 32.766667,
+    "lon": -117.016667
+  },
+  "adb_positions": {
+    "sun_sign": "aqu",
+    "moon_sign": "lib",
+    "asc_sign": "aqu"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Carl,_Kitty",
+  "source_notes": "Birth certificate in hand from Alexander Angel, copy on file.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree_in_sign": 7.367562,
+    "lagna": 277.367562,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 23.188382,
+    "jd_ut": 2434058.104167,
+    "planets": {
+      "Sun": {
+        "longitude": 302.66971,
+        "sign_index": 10,
+        "degree_in_sign": 2.66971,
+        "is_retrograde": false,
+        "speed": 1.009798
+      },
+      "Moon": {
+        "longitude": 174.016512,
+        "sign_index": 5,
+        "degree_in_sign": 24.016512,
+        "is_retrograde": false,
+        "speed": 9.629151
+      },
+      "Mars": {
+        "longitude": 197.698309,
+        "sign_index": 6,
+        "degree_in_sign": 17.698309,
+        "is_retrograde": false,
+        "speed": 0.346912
+      },
+      "Mercury": {
+        "longitude": 297.576029,
+        "sign_index": 9,
+        "degree_in_sign": 27.576029,
+        "is_retrograde": false,
+        "speed": 1.74272
+      },
+      "Jupiter": {
+        "longitude": 349.947377,
+        "sign_index": 11,
+        "degree_in_sign": 19.947377,
+        "is_retrograde": false,
+        "speed": 0.200698
+      },
+      "Venus": {
+        "longitude": 269.948385,
+        "sign_index": 8,
+        "degree_in_sign": 29.948385,
+        "is_retrograde": false,
+        "speed": 1.225847
+      },
+      "Saturn": {
+        "longitude": 171.366889,
+        "sign_index": 5,
+        "degree_in_sign": 21.366889,
+        "is_retrograde": true,
+        "speed": -0.037596
+      },
+      "Rahu": {
+        "longitude": 307.853626,
+        "sign_index": 10,
+        "degree_in_sign": 7.853626,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 127.853626,
+        "sign_index": 4,
+        "degree_in_sign": 7.853626,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

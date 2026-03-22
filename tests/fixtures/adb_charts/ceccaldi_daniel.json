@@ -1,0 +1,108 @@
+{
+  "adb_id": 53460,
+  "name": "Ceccaldi, Daniel",
+  "given_name": "Daniel Ceccaldi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425086.510417,
+    "year": 1927,
+    "month": 7,
+    "day": 25,
+    "calendar": "g",
+    "time": "01:15",
+    "time_type": "d",
+    "hour": 1.25,
+    "time_unknown": false,
+    "place": "Meaux",
+    "country": "France",
+    "lat": 48.95,
+    "lon": 2.866667
+  },
+  "adb_positions": {
+    "sun_sign": "leo",
+    "moon_sign": "gem",
+    "asc_sign": "gem"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Ceccaldi,_Daniel",
+  "source_notes": "Extract from birth certificate (1:15 a.m.) in Didier Geslain archive, 'acteurs et comédiens' pdf file, p. 54.\\nEd Steinbrecher collection: Gauquelin ns 3/0287, quoted for 21:15.\\n",
+  "categories": [
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree_in_sign": 21.3602,
+    "lagna": 21.3602,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.845356,
+    "jd_ut": 2425086.510417,
+    "planets": {
+      "Sun": {
+        "longitude": 98.23272,
+        "sign_index": 3,
+        "degree_in_sign": 8.23272,
+        "is_retrograde": false,
+        "speed": 0.955367
+      },
+      "Moon": {
+        "longitude": 52.757892,
+        "sign_index": 1,
+        "degree_in_sign": 22.757892,
+        "is_retrograde": false,
+        "speed": 16.116523
+      },
+      "Mars": {
+        "longitude": 126.963228,
+        "sign_index": 4,
+        "degree_in_sign": 6.963228,
+        "is_retrograde": false,
+        "speed": 0.623507
+      },
+      "Mercury": {
+        "longitude": 90.39012,
+        "sign_index": 3,
+        "degree_in_sign": 0.39012,
+        "is_retrograde": true,
+        "speed": -0.486417
+      },
+      "Jupiter": {
+        "longitude": 340.679309,
+        "sign_index": 11,
+        "degree_in_sign": 10.679309,
+        "is_retrograde": true,
+        "speed": -0.001592
+      },
+      "Venus": {
+        "longitude": 141.348904,
+        "sign_index": 4,
+        "degree_in_sign": 21.348904,
+        "is_retrograde": false,
+        "speed": 0.711296
+      },
+      "Saturn": {
+        "longitude": 218.293633,
+        "sign_index": 7,
+        "degree_in_sign": 8.293633,
+        "is_retrograde": true,
+        "speed": -0.018934
+      },
+      "Rahu": {
+        "longitude": 63.276945,
+        "sign_index": 2,
+        "degree_in_sign": 3.276945,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 243.276945,
+        "sign_index": 8,
+        "degree_in_sign": 3.276945,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

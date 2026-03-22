@@ -1,0 +1,108 @@
+{
+  "adb_id": 53251,
+  "name": "Cecconi, Flavio",
+  "given_name": "Flavio Cecconi",
+  "gender": "m",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2423478.010417,
+    "year": 1923,
+    "month": 2,
+    "day": 27,
+    "calendar": "g",
+    "time": "13:15",
+    "time_type": "s",
+    "hour": 13.25,
+    "time_unknown": false,
+    "place": "Verona",
+    "country": "Italy",
+    "lat": 45.45,
+    "lon": 11.0
+  },
+  "adb_positions": {
+    "sun_sign": "pis",
+    "moon_sign": "can",
+    "asc_sign": "can"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Cecconi,_Flavio",
+  "source_notes": "Ed Steinbrecher collection: Gauquelin 1/1471\\n",
+  "categories": [
+    "Vocation : Sports : Soccer (Eur.Football)"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree_in_sign": 29.263663,
+    "lagna": 59.263663,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.78386,
+    "jd_ut": 2423478.010417,
+    "planets": {
+      "Sun": {
+        "longitude": 315.110168,
+        "sign_index": 10,
+        "degree_in_sign": 15.110168,
+        "is_retrograde": false,
+        "speed": 1.004165
+      },
+      "Moon": {
+        "longitude": 87.437477,
+        "sign_index": 2,
+        "degree_in_sign": 27.437477,
+        "is_retrograde": false,
+        "speed": 15.561375
+      },
+      "Mars": {
+        "longitude": 4.004392,
+        "sign_index": 0,
+        "degree_in_sign": 4.004392,
+        "is_retrograde": false,
+        "speed": 0.712343
+      },
+      "Mercury": {
+        "longitude": 288.78152,
+        "sign_index": 9,
+        "degree_in_sign": 18.78152,
+        "is_retrograde": false,
+        "speed": 1.170839
+      },
+      "Jupiter": {
+        "longitude": 206.094282,
+        "sign_index": 6,
+        "degree_in_sign": 26.094282,
+        "is_retrograde": false,
+        "speed": 0.019534
+      },
+      "Venus": {
+        "longitude": 269.672077,
+        "sign_index": 8,
+        "degree_in_sign": 29.672077,
+        "is_retrograde": false,
+        "speed": 1.112699
+      },
+      "Saturn": {
+        "longitude": 176.618645,
+        "sign_index": 5,
+        "degree_in_sign": 26.618645,
+        "is_retrograde": true,
+        "speed": -0.047507
+      },
+      "Rahu": {
+        "longitude": 148.514712,
+        "sign_index": 4,
+        "degree_in_sign": 28.514712,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 328.514712,
+        "sign_index": 10,
+        "degree_in_sign": 28.514712,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}

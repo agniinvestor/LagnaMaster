@@ -1,0 +1,110 @@
+{
+  "adb_id": 57791,
+  "name": "Capucine",
+  "given_name": "Capucine",
+  "gender": "f",
+  "rodden_rating": "AA",
+  "rodden_rank": 5,
+  "birth_data": {
+    "jd_ut": 2425252.0,
+    "year": 1928,
+    "month": 1,
+    "day": 6,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Draguignan",
+    "country": "France",
+    "lat": 43.533333,
+    "lon": 6.466667
+  },
+  "adb_positions": {
+    "sun_sign": "cap",
+    "moon_sign": "can",
+    "asc_sign": "tau"
+  },
+  "adb_link": "https://www.astro.com/astro-databank/Capucine",
+  "source_notes": "BC in hand, Acte n°4 - Source  : Marc BRUN. Data requested from Brun by Sy Scholfield and first published on Scholfield's blog on 20 July 2013. \\n",
+  "categories": [
+    "Personal : Death : Suicide",
+    "Vocation : Beauty : Model",
+    "Vocation : Entertainment : Actor/ Actress"
+  ],
+  "trust_note": "Rodden AA — high trust",
+  "computed": {
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree_in_sign": 21.605686,
+    "lagna": 351.605686,
+    "ayanamsha_name": "lahiri",
+    "ayanamsha_value": 22.851683,
+    "jd_ut": 2425252.0,
+    "planets": {
+      "Sun": {
+        "longitude": 262.088228,
+        "sign_index": 8,
+        "degree_in_sign": 22.088228,
+        "is_retrograde": false,
+        "speed": 1.018851
+      },
+      "Moon": {
+        "longitude": 72.437276,
+        "sign_index": 2,
+        "degree_in_sign": 12.437276,
+        "is_retrograde": false,
+        "speed": 18.388985
+      },
+      "Mars": {
+        "longitude": 237.957163,
+        "sign_index": 7,
+        "degree_in_sign": 27.957163,
+        "is_retrograde": false,
+        "speed": 0.726271
+      },
+      "Mercury": {
+        "longitude": 260.541686,
+        "sign_index": 8,
+        "degree_in_sign": 20.541686,
+        "is_retrograde": false,
+        "speed": 1.613979
+      },
+      "Jupiter": {
+        "longitude": 334.443056,
+        "sign_index": 11,
+        "degree_in_sign": 4.443056,
+        "is_retrograde": false,
+        "speed": 0.144856
+      },
+      "Venus": {
+        "longitude": 220.103583,
+        "sign_index": 7,
+        "degree_in_sign": 10.103583,
+        "is_retrograde": false,
+        "speed": 1.184245
+      },
+      "Saturn": {
+        "longitude": 231.250379,
+        "sign_index": 7,
+        "degree_in_sign": 21.250379,
+        "is_retrograde": false,
+        "speed": 0.10737
+      },
+      "Rahu": {
+        "longitude": 54.507308,
+        "sign_index": 1,
+        "degree_in_sign": 24.507308,
+        "is_retrograde": true,
+        "speed": -0.052992
+      },
+      "Ketu": {
+        "longitude": 234.507308,
+        "sign_index": 7,
+        "degree_in_sign": 24.507308,
+        "is_retrograde": true,
+        "speed": 0.0
+      }
+    }
+  }
+}
