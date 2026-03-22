@@ -125,7 +125,6 @@ def generate_north_indian_svg(
         cell_fill = "#F8F4EE"
         cell_stroke = "#8B4513"
         lagna_fill = "#FFF0D0"
-        text_color = "#1A1A2E"
         sign_color = "#8B4513"
         planet_color = "#1A5276"
         title_color = "#7B1E2A"
@@ -249,7 +248,7 @@ def generate_south_indian_svg(
         sign_planets[psi].append(abbrev)
 
     if color_scheme == "color":
-        bg = "#FFFEF5"; stroke = "#8B4513"; text_c = "#1A1A2E"
+        bg = "#FFFEF5"; stroke = "#8B4513"
         sign_c = "#8B4513"; planet_c = "#1A5276"; lagna_fill = "#FFF0D0"
     else:
         bg = "white"; stroke = "black"
