@@ -617,3 +617,272 @@ def fixtures_by_section() -> dict[str, int]:
         "Shadbala":          len(SHADBALA_CHARTS),
         "KP System":         len(KP_CHARTS),
     }
+
+
+# ─── SECTION B: Neecha Bhanga fixtures ────────────────────────────────────────
+# Source: BPHS Ch.49 v.12-18 — all 6 NB conditions
+
+NEECHA_BHANGA_CHARTS = {
+
+    "nb_condition_1": {
+        # Mars debilitated in Cancer; lord of Cancer (Moon) in Kendra from Lagna
+        # Condition 1: lord of debilitation sign in Kendra from Lagna
+        "lagna": CA + 5,           # Cancer Lagna
+        "planets": _p(
+            Sun=LE + 15, Moon=CA + 2,   # Moon in H1 (Kendra) — NB condition 1
+            Mars=CA + 20,               # Mars debilitated in Cancer
+            Mercury=VI + 10, Jupiter=SA + 5, Venus=LI + 8, Saturn=AQ + 12,
+        ),
+        "rule_triggers": ["NEECHA_BHANGA_C1", "NBRY_potential"],
+        "description": "Mars debilitated Cancer; Moon (Cancer lord) in H1 Kendra — NB C1",
+        "expected": {"mars_dignity": "NEECHA_BHANGA", "nb_condition_1": True},
+    },
+
+    "nb_condition_2": {
+        # Venus debilitated in Virgo; lord of Virgo (Mercury) in Kendra from Moon
+        # Condition 2: lord of debilitation sign in Kendra from Moon
+        "lagna": TA + 10,
+        "planets": _p(
+            Sun=LE + 5, Moon=SA + 3,    # Moon in Sagittarius
+            Mercury=PI + 2,             # Mercury in H10 from Moon (Kendra) — NB C2
+            Venus=VI + 20,              # Venus debilitated in Virgo
+            Mars=AR + 8, Jupiter=CA + 5, Saturn=CP + 15,
+        ),
+        "rule_triggers": ["NEECHA_BHANGA_C2"],
+        "description": "Venus debilitated Virgo; Mercury (Virgo lord) in Kendra from Moon — NB C2",
+        "expected": {"venus_dignity": "NEECHA_BHANGA", "nb_condition_2": True},
+    },
+
+    "nb_condition_3": {
+        # Saturn debilitated in Aries; planet exalted in Aries (Sun) in Kendra from Lagna
+        # Condition 3: planet that exalts in debilitation sign in Kendra from Lagna
+        "lagna": CA + 15,
+        "planets": _p(
+            Sun=CA + 8,                 # Sun in H1 (Kendra) — exalts in Aries — NB C3
+            Moon=TA + 12, Mars=CP + 5,
+            Saturn=AR + 18,             # Saturn debilitated in Aries
+            Mercury=GE + 10, Jupiter=SC + 3, Venus=LI + 20,
+        ),
+        "rule_triggers": ["NEECHA_BHANGA_C3"],
+        "description": "Saturn debilitated Aries; Sun (exalted in Aries) in H1 Kendra — NB C3",
+        "expected": {"saturn_dignity": "NEECHA_BHANGA", "nb_condition_3": True},
+    },
+
+    "nbry_two_conditions": {
+        # Mars debilitated in Cancer; BOTH Moon in Kendra from Lagna AND
+        # Jupiter (exalts in Cancer) in Kendra from Moon → NBRY
+        "lagna": LI + 5,
+        "planets": _p(
+            Sun=LE + 10,
+            Moon=LI + 8,                # Moon (Cancer lord) in H1 from Lagna (Kendra) — C1
+            Mars=CA + 22,               # Mars debilitated
+            Jupiter=CA + 5,             # Jupiter exalts in Cancer, conjunct Mars — C3 partial
+            Mercury=VI + 14, Venus=SC + 6, Saturn=AQ + 20,
+        ),
+        "rule_triggers": ["NBRY", "NEECHA_BHANGA_C1", "NEECHA_BHANGA_C3"],
+        "description": "Mars debilitated Cancer; ≥2 NB conditions → Neecha Bhanga Raja Yoga",
+        "expected": {"mars_dignity": "NEECHA_BHANGA_RAJA", "nbry": True},
+    },
+}
+
+
+# ─── SECTION C: Graha Yuddha (Planetary War) fixtures ─────────────────────────
+# Source: Saravali Ch.4 v.12-22; BPHS Ch.3
+
+
+
+# ─── SECTION D: Parivartana Yoga fixtures ─────────────────────────────────────
+# Source: BPHS Ch.7; BV Raman — Three Hundred Important Combinations
+
+
+
+# ─── SECTION E: Kemadruma Yoga fixtures ───────────────────────────────────────
+# Source: Phaladeepika Ch.6 v.56-60; BPHS Ch.38
+
+KEMADRUMA_CHARTS = {
+
+    "pure_kemadruma": {
+        # Moon isolated: no planets in 2nd or 12th from Moon, not in Kendra
+        # Moon in Aries; 2nd = Taurus (empty), 12th = Pisces (empty)
+        "lagna": VI + 5,
+        "planets": _p(
+            Sun=LE + 10,
+            Moon=AR + 15,               # Moon isolated in Aries
+            Mars=CA + 8,                # NOT in Taurus or Pisces
+            Mercury=VI + 18, Jupiter=SA + 5, Venus=SC + 12, Saturn=AQ + 20,
+        ),
+        "rule_triggers": ["KEMADRUMA", "KEMADRUMA_PURE"],
+        "description": "Moon isolated in Aries — pure Kemadruma Yoga",
+        "expected": {"kemadruma": True, "kemadruma_cancelled": False},
+    },
+
+    "kemadruma_cancelled": {
+        # Kemadruma cancelled: Moon in Kendra from Lagna (cancellation condition 1)
+        "lagna": CA + 8,
+        "planets": _p(
+            Sun=LE + 5,
+            Moon=CA + 20,               # Moon in H1 (Kendra) — cancels Kemadruma
+            Mars=LE + 15,               # NOT adjacent to Moon's sign
+            Mercury=VI + 10, Jupiter=PI + 3, Venus=SC + 5, Saturn=AQ + 18,
+        ),
+        "rule_triggers": ["KEMADRUMA_CANCELLED"],
+        "description": "Moon in Kendra from Lagna — Kemadruma cancelled",
+        "expected": {"kemadruma": False, "kemadruma_cancelled": True},
+    },
+}
+
+
+# ─── SECTION F: Nakshatra boundary charts ─────────────────────────────────────
+# Critical: nakshatra changes at 13°20' intervals. Charts near boundaries test
+# Vimshottari dasha boundary accuracy. SE precision now ensures correctness.
+
+NAK_BOUNDARY_CHARTS = {
+
+    "moon_at_nakshatra_cusp": {
+        # Moon at exactly 13°20' (Ashwini/Bharani boundary)
+        # Vimshottari dasha lord changes here: Ketu→Venus
+        "lagna": AR + 5,
+        "planets": _p(
+            Sun=LE + 10, Moon=AR + 13.333,  # Moon at exact Ashwini/Bharani boundary
+            Mars=CP + 8, Mercury=VI + 15,
+            Jupiter=SA + 5, Venus=TA + 20, Saturn=AQ + 10,
+        ),
+        "rule_triggers": ["NAK_BOUNDARY", "DASHA_BOUNDARY"],
+        "description": "Moon at 13°20' Aries — Ashwini/Bharani nakshatra boundary (Ketu→Venus MD)",
+        "expected": {"moon_nakshatra": "Bharani", "md_lord": "Venus"},
+    },
+
+    "lagna_at_sign_boundary": {
+        # Lagna within 0.5° of sign boundary — ayanamsha-sensitive
+        # Tests confidence model boundary warning
+        "lagna": TA + 29.7,            # Lagna at 29°42' Taurus — near Gemini boundary
+        "planets": _p(
+            Sun=LE + 8, Moon=CA + 15,
+            Mars=AR + 10, Mercury=VI + 5,
+            Jupiter=SA + 12, Venus=LI + 20, Saturn=CP + 3,
+        ),
+        "rule_triggers": ["LAGNA_BOUNDARY_WARNING", "CONFIDENCE_LOW"],
+        "description": "Lagna at 29°42' Taurus — within 0.3° of Gemini; confidence model should warn",
+        "expected": {"lagna_boundary_warning": True, "margin_deg": "< 1.0"},
+    },
+
+    "year_boundary_jan1": {
+        # Birth on January 1 — tests year-lord computation in Kala Bala
+        # Abda Bala uses weekday of Jan 1 for year lord
+        "lagna": CP + 10,              # Capricorn Lagna (Jan 1 births common here)
+        "planets": _p(
+            Sun=SA + 17,               # Sun in Sagittarius (Jan 1 position)
+            Moon=TA + 8,
+            Mars=AR + 15, Mercury=SA + 5, Jupiter=PI + 20,
+            Venus=SC + 12, Saturn=AQ + 3,
+        ),
+        "birth_date": "1990-01-01",    # Year boundary test vector
+        "rule_triggers": ["ABDA_BALA_YEAR_LORD", "KALA_BALA"],
+        "description": "Jan 1 birth chart — tests Abda Bala year-lord computation at year boundary",
+        "expected": {"kala_bala_computed": True},
+    },
+}
+
+
+# ─── SECTION G: High-latitude charts ──────────────────────────────────────────
+# Tests Bhava Chalita divergence and topocentric Moon correction at extremes
+# Oslo (59.9°N), Helsinki (60.2°N) — Bhava Chalita diverges significantly from D1
+
+HIGH_LATITUDE_CHARTS = {
+
+    "oslo_chart": {
+        # High latitude: Bhava Chalita houses diverge from D1 sign houses
+        "lagna": GE + 15,              # Gemini Lagna computed for Oslo, 59.9°N
+        "lat": 59.91,                  # Oslo latitude
+        "lon": 10.75,                  # Oslo longitude
+        "planets": _p(
+            Sun=LE + 5, Moon=SA + 12,
+            Mars=AR + 8, Mercury=GE + 20,
+            Jupiter=LI + 3, Venus=CA + 15, Saturn=AQ + 18,
+        ),
+        "rule_triggers": ["HIGH_LATITUDE", "BHAVA_CHALITA_DIVERGENCE", "TOPOCENTRIC_MOON"],
+        "description": "Oslo 59.9°N — high latitude Bhava Chalita divergence test",
+        "expected": {"bhava_chalita_differs_from_d1": True},
+    },
+
+    "helsinki_chart": {
+        "lagna": VI + 20,
+        "lat": 60.17,
+        "lon": 24.94,
+        "planets": _p(
+            Sun=CP + 10, Moon=TA + 5,
+            Mars=SC + 8, Mercury=SA + 15,
+            Jupiter=AR + 3, Venus=AQ + 12, Saturn=LI + 25,
+        ),
+        "rule_triggers": ["HIGH_LATITUDE", "TOPOCENTRIC_MOON"],
+        "description": "Helsinki 60.2°N — high latitude topocentric Moon correction test",
+        "expected": {"topocentric_correction_applied": True},
+    },
+}
+
+
+# ─── SECTION H: Female chart fixtures ─────────────────────────────────────────
+# Tests Mahabhagya Yoga (gender-specific), Upapada Lagna analysis,
+# and spouse-related H7 interpretations
+# Source: BPHS Ch.25 (Mahabhagya); Phaladeepika Ch.6 (female chart rules)
+
+FEMALE_CHART_FIXTURES = {
+
+    "mahabhagya_female": {
+        # Mahabhagya for female: night birth + Moon/Lagna/Sun in even signs
+        "lagna": TA + 12,              # Taurus (even sign) Lagna
+        "birth_hour": 22.5,            # Night birth (after sunset)
+        "gender": "female",
+        "planets": _p(
+            Sun=CA + 8,                # Cancer (even sign) — night birth condition
+            Moon=VI + 15,              # Virgo (even sign) — Mahabhagya condition
+            Mars=SC + 5, Mercury=GE + 10,
+            Jupiter=PI + 3, Venus=TA + 20, Saturn=CP + 8,
+        ),
+        "rule_triggers": ["MAHABHAGYA_FEMALE", "UPAPADA_LAGNA"],
+        "description": "Female night birth — Lagna/Moon/Sun all in even signs → Mahabhagya Yoga",
+        "expected": {"mahabhagya": True, "gender": "female"},
+    },
+
+    "upapada_strong": {
+        # Upapada Lagna with lord in strong position — marriage indicated clearly
+        "lagna": SC + 8,               # Scorpio Lagna
+        "gender": "female",
+        "planets": _p(
+            Sun=LE + 5, Moon=TA + 18,
+            Mars=CP + 12,              # Mars (Scorpio lord) exalted in Capricorn
+            Mercury=VI + 14, Jupiter=CA + 5,
+            Venus=LI + 8,              # Venus strong (own sign Libra)
+            Saturn=LI + 20,
+        ),
+        "rule_triggers": ["UPAPADA_LAGNA", "MARRIAGE_YOGA"],
+        "description": "Female chart: Scorpio Lagna, Mars exalted — strong Upapada Lagna for marriage",
+        "expected": {"upapada_lord_strong": True},
+    },
+}
+
+
+# ─── Master fixture registry ───────────────────────────────────────────────────
+ALL_DIVERSE_FIXTURES = {
+    **{f"nb_{k}": v for k, v in NEECHA_BHANGA_CHARTS.items()},
+    **{f"gy_{k}": v for k, v in GRAHA_YUDDHA_CHARTS.items()},
+    **{f"pv_{k}": v for k, v in PARIVARTANA_CHARTS.items()},
+    **{f"km_{k}": v for k, v in KEMADRUMA_CHARTS.items()},
+    **{f"nk_{k}": v for k, v in NAK_BOUNDARY_CHARTS.items()},
+    **{f"hl_{k}": v for k, v in HIGH_LATITUDE_CHARTS.items()},
+    **{f"fe_{k}": v for k, v in FEMALE_CHART_FIXTURES.items()},
+}
+
+
+def get_fixture(key: str) -> dict:
+    """Retrieve a diverse chart fixture by key."""
+    return ALL_DIVERSE_FIXTURES.get(key, {})
+
+
+def list_fixtures_by_rule(rule_trigger: str) -> list[str]:
+    """Return all fixture keys that test a given rule trigger."""
+    return [
+        k for k, v in ALL_DIVERSE_FIXTURES.items()
+        if rule_trigger in v.get("rule_triggers", [])
+    ]
+

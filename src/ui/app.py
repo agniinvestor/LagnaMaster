@@ -1108,3 +1108,8 @@ with tab_rules:
         ]
         st.dataframe(rule_rows, hide_index=True, use_container_width=True)
         st.caption("WC = Worth Considering rules count at 0.5× weight")
+
+# ── S189: Confidence model panel (appended) ──────────────────────────────────
+# Full confidence + guidance UI is in the tabbed interface above.
+# If running legacy single-page UI, call compute_uncertainty_flags(chart)
+# and display flags.lagna_boundary_margin_deg with a warning if < 1.0 degrees.
