@@ -251,9 +251,9 @@ YOGA_CHARTS = {
     # D-1: Kemadruma — Moon isolated (no planets in H2/H12 from Moon, no Kendra from Moon)
     "kemadruma_confirmed": {
         "lagna": AR + 5, "lagna_sign": "Aries",
-        "planets": _p(Sun=LE+10, Moon=CA+5, Mars=LE+20,
-                      Mercury=VI+10, Jupiter=SA+5, Venus=LI+10, Saturn=CP+10,
-                      Rahu=PI+5, Ketu=VI+5),
+        "planets": _p(Sun=SA+10, Moon=CA+5, Mars=SA+20,
+                      Mercury=CP+10, Jupiter=AQ+5, Venus=PI+10, Saturn=CP+15,
+                      Rahu=AR+5, Ketu=LI+5),
         "rule_triggers": ["kemadruma_yoga"],
         "expected": {"kemadruma": True},
         "description": "Kemadruma: Moon in Cancer isolated, no planets in H2(Leo) or H12(Gemini)"

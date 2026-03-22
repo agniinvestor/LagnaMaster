@@ -255,7 +255,7 @@ def _rating(score: float) -> str:
 # Main scoring engine
 # ---------------------------------------------------------------------------
 
-def score_chart(chart: BirthChart) -> ChartScores:
+def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
     """
     Apply 22 BPHS rules across all 12 houses.
     Returns ChartScores with per-house breakdown.

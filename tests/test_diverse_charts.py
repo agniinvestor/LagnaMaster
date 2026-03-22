@@ -78,12 +78,11 @@ class TestDignityRules:
             pass  # Mock chart may not support full dignity
 
     def test_mercury_mooltrikona_range(self):
-        from src.calculations.nakshatra import get_sign_and_degree
-        # Mercury at Virgo 17° should be MT
         f = DIGNITY_CHARTS["mercury_mooltrikona"]
         planets = f["planets"]
         assert 150 <= planets["Mercury"] < 180  # in Virgo
-        assert 16 <= (planets["Mercury"] - 150) <= 20  # 16-20° in Virgo
+        deg_in_sign = planets["Mercury"] - 150
+        assert 16 <= deg_in_sign <= 20  # MT range 16-20° in Virgo (BPHS Ch.3)
 
     def test_mercury_own_sign_not_mt(self):
         # Mercury at Virgo 21° — outside MT range
