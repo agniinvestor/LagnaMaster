@@ -200,9 +200,11 @@ def compute_chart(
 
     planets_out: dict[str, PlanetPosition] = {}
 
-    swe.set_topo(lon, lat, 0)  # S161: topocentric Moon correction (Swiss Ephemeris Manual §2.3)
+    swe.set_topo(lon, lat, 0)  # S161: topocentric Moon (Swiss Ephemeris Manual §2.3)
     for name, planet_id in _PLANET_IDS.items():
-        result, _ = swe.calc_ut(jd_ut, planet_id, flags)
+        # Moon requires FLG_TOPOCTR — set_topo() alone is not sufficient (SE Manual §2.3)
+        planet_flags = flags | swe.FLG_TOPOCTR if name == "Moon" else flags
+        result, _ = swe.calc_ut(jd_ut, planet_id, planet_flags)
         lon_sid = result[0] % 360
         speed   = result[3]          # longitude speed, deg/day
         sign, sign_idx, deg_in_sign = _sign_from_lon(lon_sid)
