@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Washington,_George",
+  "name": "George Washington",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Washington,_George",
+  "birth_data": {
+    "year": 1732,
+    "month": 2,
+    "day": 22,
+    "hour": 10.0,
+    "lat": 38.1938,
+    "lon": -76.4614,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Pope's Creek VA, USA",
+  "country": "USA",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "USA 1732 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 26.384,
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "ayanamsha_value": 20.117706,
+    "planets": {
+      "Sun": {
+        "longitude": 313.1934,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 13.1934,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 266.7538,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 26.7538,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 213.1079,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 3.1079,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 286.4386,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 16.4386,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 168.4948,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 18.4948,
+        "is_retrograde": true
+      },
+      "Venus": {
+        "longitude": 339.2861,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 9.2861,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 342.5717,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 12.5717,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 245.5609,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 5.5609,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 65.5609,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 5.5609,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -2.0,
+    "2": -4.625,
+    "3": -0.375,
+    "4": 1.875,
+    "5": -0.5,
+    "6": 0.375,
+    "7": -2.5,
+    "8": -4.75,
+    "9": -3.75,
+    "10": -1.625,
+    "11": -3.0,
+    "12": -1.375
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

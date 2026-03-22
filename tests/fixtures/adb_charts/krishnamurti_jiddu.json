@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Krishnamurti,_Jiddu",
+  "name": "Jiddu Krishnamurti",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Krishnamurti,_Jiddu",
+  "birth_data": {
+    "year": 1895,
+    "month": 5,
+    "day": 12,
+    "hour": 0.5,
+    "lat": 13.6288,
+    "lon": 79.4192,
+    "tz_offset": 5.5,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Madanapalle, India",
+  "country": "India",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "India 1895 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 294.9893,
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "ayanamsha_value": 22.395727,
+    "planets": {
+      "Sun": {
+        "longitude": 28.3954,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 28.3954,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 242.8243,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 2.8243,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 79.4007,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 19.4007,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 36.468,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 6.468,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 72.7956,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 12.7956,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 66.0348,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 6.0348,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 190.2527,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 10.2527,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 326.5286,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 26.5286,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 146.5286,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 26.5286,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 1.75,
+    "2": 0.125,
+    "3": -2.25,
+    "4": -4.25,
+    "5": -4.0,
+    "6": 1.625,
+    "7": -3.75,
+    "8": 0.75,
+    "9": -1.25,
+    "10": -2.625,
+    "11": -0.625,
+    "12": -0.75
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

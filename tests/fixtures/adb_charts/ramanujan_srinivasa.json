@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Ramanujan,_Srinivasa",
+  "name": "Srinivasa Ramanujan",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Ramanujan,_Srinivasa",
+  "birth_data": {
+    "year": 1887,
+    "month": 12,
+    "day": 22,
+    "hour": 9.0,
+    "lat": 11.1271,
+    "lon": 77.9401,
+    "tz_offset": 5.5,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Erode, India",
+  "country": "India",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "India 1887 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 282.2696,
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "ayanamsha_value": 22.292605,
+    "planets": {
+      "Sun": {
+        "longitude": 247.7288,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 7.7288,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 336.1257,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 6.1257,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 165.722,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 15.722,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 232.4578,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 22.4578,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 213.3105,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 3.3105,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 202.0559,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 22.0559,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 103.1971,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 13.1971,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 109.4826,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 19.4826,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 289.4826,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 19.4826,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -1.75,
+    "2": 1.75,
+    "3": 1.625,
+    "4": 0.375,
+    "5": 2.75,
+    "6": 0.5,
+    "7": -1.625,
+    "8": -2.0,
+    "9": -1.625,
+    "10": 3.5,
+    "11": 1.5,
+    "12": -2.0
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

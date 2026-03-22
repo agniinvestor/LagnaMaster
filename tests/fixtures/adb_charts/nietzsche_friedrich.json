@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Nietzsche,_Friedrich",
+  "name": "Friedrich Nietzsche",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Nietzsche,_Friedrich",
+  "birth_data": {
+    "year": 1844,
+    "month": 10,
+    "day": 15,
+    "hour": 10.0,
+    "lat": 51.3167,
+    "lon": 12.1333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Röcken, Germany",
+  "country": "Germany",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "Germany 1844 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 215.4303,
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "ayanamsha_value": 21.689735,
+    "planets": {
+      "Sun": {
+        "longitude": 180.4218,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 0.4218,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 227.2339,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 17.2339,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 156.227,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 6.227,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 162.4512,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 12.4512,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 334.3334,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 4.3334,
+        "is_retrograde": true
+      },
+      "Venus": {
+        "longitude": 134.6635,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 14.6635,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 279.077,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 9.077,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 225.3154,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 15.3154,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 45.3154,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 15.3154,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -0.875,
+    "2": 1.25,
+    "3": -1.0,
+    "4": 0.875,
+    "5": 2.375,
+    "6": -1.75,
+    "7": 0.875,
+    "8": -1.0,
+    "9": 1.375,
+    "10": -1.25,
+    "11": -3.125,
+    "12": -0.25
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

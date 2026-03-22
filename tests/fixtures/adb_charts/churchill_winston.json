@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Churchill,_Winston",
+  "name": "Winston Churchill",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Churchill,_Winston",
+  "birth_data": {
+    "year": 1874,
+    "month": 11,
+    "day": 30,
+    "hour": 1.5,
+    "lat": 51.8467,
+    "lon": -1.3414,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Blenheim Palace, UK",
+  "country": "UK",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "UK 1874 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 157.8304,
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "ayanamsha_value": 22.11027,
+    "planets": {
+      "Sun": {
+        "longitude": 225.6111,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 15.6111,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 127.5075,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 7.5075,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 174.4413,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 24.4413,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 205.4838,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 25.4838,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 181.4593,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 1.4593,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 239.9202,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 29.9202,
+        "is_retrograde": true
+      },
+      "Saturn": {
+        "longitude": 287.4855,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 17.4855,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 2.2594,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 2.2594,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 182.2594,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 2.2594,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -2.5,
+    "2": -3.75,
+    "3": 2.0,
+    "4": -2.0,
+    "5": -0.25,
+    "6": 3.75,
+    "7": -1.75,
+    "8": 1.0,
+    "9": -3.125,
+    "10": 1.125,
+    "11": -2.5,
+    "12": 3.25
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

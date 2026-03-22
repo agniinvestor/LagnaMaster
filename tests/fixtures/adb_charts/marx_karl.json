@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Marx,_Karl",
+  "name": "Karl Marx",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Marx,_Karl",
+  "birth_data": {
+    "year": 1818,
+    "month": 5,
+    "day": 5,
+    "hour": 2.0,
+    "lat": 49.75,
+    "lon": 6.6333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Trier, Germany",
+  "country": "Germany",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "Germany 1818 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 287.5135,
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "ayanamsha_value": 21.320552,
+    "planets": {
+      "Sun": {
+        "longitude": 22.5889,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 22.5889,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 19.6693,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 19.6693,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 89.4455,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 29.4455,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 42.3078,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 12.3078,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 261.6274,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 21.6274,
+        "is_retrograde": true
+      },
+      "Venus": {
+        "longitude": 36.1719,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 6.1719,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 324.475,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 24.475,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 17.2375,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 17.2375,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 197.2375,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 17.2375,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -0.5,
+    "2": -1.5,
+    "3": -2.75,
+    "4": -5.125,
+    "5": 1.75,
+    "6": 2.625,
+    "7": -0.75,
+    "8": 1.875,
+    "9": 1.75,
+    "10": 0.625,
+    "11": -2.5,
+    "12": -2.75
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

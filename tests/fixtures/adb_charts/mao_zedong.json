@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Mao_Zedong",
+  "name": "Mao Zedong",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Mao_Zedong",
+  "birth_data": {
+    "year": 1893,
+    "month": 12,
+    "day": 26,
+    "hour": 7.5,
+    "lat": 27.85,
+    "lon": 112.6,
+    "tz_offset": 8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Shaoshan, China",
+  "country": "China",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "China 1893 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 253.7124,
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "ayanamsha_value": 22.376544,
+    "planets": {
+      "Sun": {
+        "longitude": 252.097,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 12.097,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 111.4656,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 21.4656,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 213.4899,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 3.4899,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 233.3666,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 23.3666,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 29.7715,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 29.7715,
+        "is_retrograde": true
+      },
+      "Venus": {
+        "longitude": 297.7938,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 27.7938,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 181.4934,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 1.4934,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 353.1207,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 23.1207,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 173.1207,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 23.1207,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 1.375,
+    "2": 0.875,
+    "3": -1.25,
+    "4": 0.0,
+    "5": -0.25,
+    "6": -0.875,
+    "7": -5.25,
+    "8": -2.375,
+    "9": 4.125,
+    "10": -5.25,
+    "11": -0.125,
+    "12": -2.75
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

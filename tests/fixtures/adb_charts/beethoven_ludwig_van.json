@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Beethoven,_Ludwig_van",
+  "name": "Ludwig van Beethoven",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Beethoven,_Ludwig_van",
+  "birth_data": {
+    "year": 1770,
+    "month": 12,
+    "day": 17,
+    "hour": 1.0,
+    "lat": 50.7333,
+    "lon": 7.1,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Bonn, Germany",
+  "country": "Germany",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "Germany 1770 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 161.2939,
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "ayanamsha_value": 20.659323,
+    "planets": {
+      "Sun": {
+        "longitude": 244.5251,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 4.5251,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 242.9461,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 2.9461,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 61.6665,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 1.6665,
+        "is_retrograde": true
+      },
+      "Mercury": {
+        "longitude": 242.6699,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 2.6699,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 252.6819,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 12.6819,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 276.165,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 6.165,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 115.119,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 25.119,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 214.2699,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 4.2699,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 34.2699,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 4.2699,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -0.5,
+    "2": 2.5,
+    "3": 1.0,
+    "4": 1.75,
+    "5": 0.0,
+    "6": 1.0,
+    "7": 2.0,
+    "8": 1.875,
+    "9": 0.0,
+    "10": 0.125,
+    "11": 0.625,
+    "12": 5.875
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

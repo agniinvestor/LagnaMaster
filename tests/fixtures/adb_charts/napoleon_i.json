@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Napoleon_I",
+  "name": "Napoleon I",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Napoleon_I",
+  "birth_data": {
+    "year": 1769,
+    "month": 8,
+    "day": 15,
+    "hour": 11.5,
+    "lat": 41.9194,
+    "lon": 8.7386,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Ajaccio, Corsica",
+  "country": "France",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "France 1769 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 190.8439,
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "ayanamsha_value": 20.640657,
+    "planets": {
+      "Sun": {
+        "longitude": 122.1021,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 2.1021,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 278.0752,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 8.0752,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 141.405,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 21.405,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 105.4879,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 15.4879,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 204.3709,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 24.3709,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 76.3803,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 16.3803,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 95.26,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 5.26,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 240.1599,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 0.1599,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 60.1599,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 0.1599,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 1.25,
+    "2": -1.5,
+    "3": 1.375,
+    "4": 3.375,
+    "5": 1.375,
+    "6": 2.5,
+    "7": -1.125,
+    "8": 1.5,
+    "9": 0.625,
+    "10": 2.875,
+    "11": -1.75,
+    "12": 1.0
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

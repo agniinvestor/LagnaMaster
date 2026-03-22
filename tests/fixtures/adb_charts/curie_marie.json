@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Curie,_Marie",
+  "name": "Marie Curie",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Curie,_Marie",
+  "birth_data": {
+    "year": 1867,
+    "month": 11,
+    "day": 7,
+    "hour": 12.0,
+    "lat": 52.2297,
+    "lon": 21.0122,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Warsaw, Poland",
+  "country": "France",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "France 1867 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 266.9891,
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "ayanamsha_value": 22.01167,
+    "planets": {
+      "Sun": {
+        "longitude": 202.5829,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 22.5829,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 324.6813,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 24.6813,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 217.6189,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 7.6189,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 224.6331,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 14.6331,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 305.9961,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 5.9961,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 213.5855,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 3.5855,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 213.2672,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 3.2672,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 138.9581,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 18.9581,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 318.9581,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 18.9581,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -1.0,
+    "2": -4.75,
+    "3": -6.5,
+    "4": -1.0,
+    "5": -3.75,
+    "6": -6.0,
+    "7": -5.375,
+    "8": -0.25,
+    "9": -1.5,
+    "10": -6.5,
+    "11": -3.875,
+    "12": -5.75
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

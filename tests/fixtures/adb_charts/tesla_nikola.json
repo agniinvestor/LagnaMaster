@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Tesla,_Nikola",
+  "name": "Nikola Tesla",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Tesla,_Nikola",
+  "birth_data": {
+    "year": 1856,
+    "month": 7,
+    "day": 10,
+    "hour": 0.0,
+    "lat": 44.2719,
+    "lon": 15.9517,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Smiljan, Croatia",
+  "country": "USA",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "USA 1856 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 12.3585,
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "ayanamsha_value": 21.853528,
+    "planets": {
+      "Sun": {
+        "longitude": 85.963,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 25.963,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 172.1703,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 22.1703,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 177.0959,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 27.0959,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 66.2667,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 6.2667,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 346.7391,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 16.7391,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 82.985,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 22.985,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 73.709,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 13.709,
+        "is_retrograde": false
+      },
+      "Rahu": {
+        "longitude": 358.2131,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 28.2131,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 178.2131,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 28.2131,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -2.75,
+    "2": -3.25,
+    "3": -2.0,
+    "4": -4.375,
+    "5": -0.75,
+    "6": -4.125,
+    "7": -2.25,
+    "8": -1.375,
+    "9": -5.75,
+    "10": -1.25,
+    "11": -1.25,
+    "12": -6.875
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

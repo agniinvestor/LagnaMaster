@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Elizabeth_II",
+  "name": "Queen Elizabeth II",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Elizabeth_II",
+  "birth_data": {
+    "year": 1926,
+    "month": 4,
+    "day": 21,
+    "hour": 2.75,
+    "lat": 51.5,
+    "lon": -0.1167,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Mayfair, London, UK",
+  "country": "UK",
+  "data_trust_level": "medium",
+  "assert_lagna": false,
+  "trust_note": "UK 1926 — medium trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 292.985,
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "ayanamsha_value": 22.827773,
+    "planets": {
+      "Sun": {
+        "longitude": 7.4269,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 7.4269,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 109.8318,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 19.8318,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 298.0758,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 28.0758,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 341.8645,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 11.8645,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 299.6936,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 29.6936,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 321.1778,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 21.1778,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 211.6191,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 1.6191,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 87.6478,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 27.6478,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 267.6478,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 27.6478,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -1.125,
+    "2": 1.75,
+    "3": 2.5,
+    "4": -0.75,
+    "5": -0.125,
+    "6": -1.0,
+    "7": 2.875,
+    "8": 0.625,
+    "9": 1.25,
+    "10": 1.25,
+    "11": 1.5,
+    "12": -0.5
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

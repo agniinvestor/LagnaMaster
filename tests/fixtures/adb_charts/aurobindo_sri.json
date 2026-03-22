@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Aurobindo,_Sri",
+  "name": "Sri Aurobindo",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Aurobindo,_Sri",
+  "birth_data": {
+    "year": 1872,
+    "month": 8,
+    "day": 15,
+    "hour": 5.0,
+    "lat": 22.5726,
+    "lon": 88.3639,
+    "tz_offset": 5.53,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Kolkata, India",
+  "country": "India",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "India 1872 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 116.1453,
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "ayanamsha_value": 22.078274,
+    "planets": {
+      "Sun": {
+        "longitude": 120.3206,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 0.3206,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 245.7302,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 5.7302,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 95.385,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 5.385,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 143.5122,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 23.5122,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 111.5865,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 21.5865,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 128.5335,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 8.5335,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 263.4999,
+        "sign_index": 8,
+        "sign": "Sagittarius",
+        "degree_in_sign": 23.4999,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 46.6183,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 16.6183,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 226.6183,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 16.6183,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -4.5,
+    "2": 3.0,
+    "3": 0.25,
+    "4": -3.0,
+    "5": 1.125,
+    "6": 0.0,
+    "7": -1.125,
+    "8": -3.25,
+    "9": 2.125,
+    "10": 2.25,
+    "11": -3.5,
+    "12": -0.625
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

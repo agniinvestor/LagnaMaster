@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Lennon,_John",
+  "name": "John Lennon",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Lennon,_John",
+  "birth_data": {
+    "year": 1940,
+    "month": 10,
+    "day": 9,
+    "hour": 18.5,
+    "lat": 53.4084,
+    "lon": -2.9916,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Liverpool, UK",
+  "country": "UK",
+  "data_trust_level": "medium",
+  "assert_lagna": false,
+  "trust_note": "UK 1940 — medium trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 28.1977,
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "ayanamsha_value": 23.029863,
+    "planets": {
+      "Sun": {
+        "longitude": 173.2785,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 23.2785,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 281.0378,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 11.0378,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 159.6588,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 9.6588,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 195.5826,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 15.5826,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 20.6566,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 20.6566,
+        "is_retrograde": true
+      },
+      "Venus": {
+        "longitude": 130.2321,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 10.2321,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 20.1817,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 20.1817,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 167.5499,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 17.5499,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 347.5499,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 17.5499,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -6.625,
+    "2": 2.75,
+    "3": 1.0,
+    "4": 3.125,
+    "5": -1.875,
+    "6": -3.25,
+    "7": 2.375,
+    "8": -3.75,
+    "9": 2.375,
+    "10": 3.5,
+    "11": 3.375,
+    "12": -1.0
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

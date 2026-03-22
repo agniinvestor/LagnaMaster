@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Diana,_Princess_of_Wales",
+  "name": "Princess Diana",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Diana,_Princess_of_Wales",
+  "birth_data": {
+    "year": 1961,
+    "month": 7,
+    "day": 1,
+    "hour": 19.75,
+    "lat": 52.8328,
+    "lon": 0.5027,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Sandringham, UK",
+  "country": "UK",
+  "data_trust_level": "medium",
+  "assert_lagna": false,
+  "trust_note": "UK 1961 — medium trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 235.092,
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "ayanamsha_value": 23.319313,
+    "planets": {
+      "Sun": {
+        "longitude": 76.346,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 16.346,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 301.7207,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 1.7207,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 128.3287,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 8.3287,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 69.8844,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 9.8844,
+        "is_retrograde": true
+      },
+      "Jupiter": {
+        "longitude": 281.78,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 11.78,
+        "is_retrograde": true
+      },
+      "Venus": {
+        "longitude": 31.0828,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 1.0828,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 274.497,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 4.497,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 126.3995,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 6.3995,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 306.3995,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 6.3995,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 0.375,
+    "2": -0.625,
+    "3": 2.0,
+    "4": 0.0,
+    "5": -2.0,
+    "6": 2.0,
+    "7": 2.875,
+    "8": -4.5,
+    "9": 0.125,
+    "10": -6.375,
+    "11": -3.375,
+    "12": 1.75
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

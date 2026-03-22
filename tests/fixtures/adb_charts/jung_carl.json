@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Jung,_Carl",
+  "name": "Carl Jung",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Jung,_Carl",
+  "birth_data": {
+    "year": 1875,
+    "month": 7,
+    "day": 26,
+    "hour": 19.5,
+    "lat": 47.555,
+    "lon": 8.0667,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Kesswil, Switzerland",
+  "country": "Switzerland",
+  "data_trust_level": "low",
+  "assert_lagna": false,
+  "trust_note": "Switzerland 1875 — low trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 270.0017,
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "ayanamsha_value": 22.119394,
+    "planets": {
+      "Sun": {
+        "longitude": 101.1756,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 11.1756,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 23.1496,
+        "sign_index": 0,
+        "sign": "Aries",
+        "degree_in_sign": 23.1496,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 239.2533,
+        "sign_index": 7,
+        "sign": "Scorpio",
+        "degree_in_sign": 29.2533,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 81.6358,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 21.6358,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 181.6786,
+        "sign_index": 6,
+        "sign": "Libra",
+        "degree_in_sign": 1.6786,
+        "is_retrograde": false
+      },
+      "Venus": {
+        "longitude": 85.3592,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 25.3592,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 302.0776,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 2.0776,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 349.6097,
+        "sign_index": 11,
+        "sign": "Pisces",
+        "degree_in_sign": 19.6097,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 169.6097,
+        "sign_index": 5,
+        "sign": "Virgo",
+        "degree_in_sign": 19.6097,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": -0.25,
+    "2": -0.875,
+    "3": 0.75,
+    "4": 0.625,
+    "5": -2.25,
+    "6": -0.125,
+    "7": 0.25,
+    "8": 0.75,
+    "9": -2.25,
+    "10": -1.375,
+    "11": -1.75,
+    "12": 3.5
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}

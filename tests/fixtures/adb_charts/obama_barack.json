@@ -1,0 +1,111 @@
+{
+  "adb_slug": "Obama,_Barack",
+  "name": "Barack Obama",
+  "source": "astro-databank-stub",
+  "rodden_rating": "AA",
+  "adb_url": "https://www.astro.com/astro-databank/Obama,_Barack",
+  "birth_data": {
+    "year": 1961,
+    "month": 8,
+    "day": 4,
+    "hour": 19.24,
+    "lat": 21.3069,
+    "lon": -157.8583,
+    "tz_offset": -10.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Honolulu HI, USA",
+  "country": "USA",
+  "data_trust_level": "medium",
+  "assert_lagna": false,
+  "trust_note": "USA 1961 — medium trust (cross-referenced)",
+  "expected": {},
+  "chart": {
+    "lagna": 291.9454,
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "ayanamsha_value": 23.32063,
+    "planets": {
+      "Sun": {
+        "longitude": 109.2232,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 19.2232,
+        "is_retrograde": false
+      },
+      "Moon": {
+        "longitude": 39.9547,
+        "sign_index": 1,
+        "sign": "Taurus",
+        "degree_in_sign": 9.9547,
+        "is_retrograde": false
+      },
+      "Mars": {
+        "longitude": 149.2541,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 29.2541,
+        "is_retrograde": false
+      },
+      "Mercury": {
+        "longitude": 98.9999,
+        "sign_index": 3,
+        "sign": "Cancer",
+        "degree_in_sign": 8.9999,
+        "is_retrograde": false
+      },
+      "Jupiter": {
+        "longitude": 277.5411,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 7.5411,
+        "is_retrograde": true
+      },
+      "Venus": {
+        "longitude": 68.4635,
+        "sign_index": 2,
+        "sign": "Gemini",
+        "degree_in_sign": 8.4635,
+        "is_retrograde": false
+      },
+      "Saturn": {
+        "longitude": 272.0129,
+        "sign_index": 9,
+        "sign": "Capricorn",
+        "degree_in_sign": 2.0129,
+        "is_retrograde": true
+      },
+      "Rahu": {
+        "longitude": 124.5746,
+        "sign_index": 4,
+        "sign": "Leo",
+        "degree_in_sign": 4.5746,
+        "is_retrograde": true
+      },
+      "Ketu": {
+        "longitude": 304.5746,
+        "sign_index": 10,
+        "sign": "Aquarius",
+        "degree_in_sign": 4.5746,
+        "is_retrograde": true
+      }
+    }
+  },
+  "scores": {
+    "1": 0.875,
+    "2": -0.25,
+    "3": 0.0,
+    "4": -2.75,
+    "5": 0.625,
+    "6": 0.5,
+    "7": -0.875,
+    "8": 0.25,
+    "9": -0.125,
+    "10": 0.25,
+    "11": -3.375,
+    "12": 3.375
+  },
+  "fetch_status": "stub",
+  "engine_version": "v3.0.0",
+  "computed_date": "2026-03-22"
+}
