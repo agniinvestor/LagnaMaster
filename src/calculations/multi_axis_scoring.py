@@ -135,6 +135,24 @@ _DIG_BALA = {
     "Saturn": 7,
 }
 
+# R17/R18 — Naisargika (natural) karakas per house (BPHS Ch.32; Phala Deepika Ch.2)
+# R17: karaka in or aspecting own house  → +W["R17"]
+# R18: karaka in dusthana from its own signified house → +W["R18"] (negative weight)
+_STHIR_KARAK: dict[int, set[str]] = {
+    1:  {"Sun"},
+    2:  {"Jupiter"},
+    3:  {"Mars"},
+    4:  {"Moon", "Venus"},
+    5:  {"Jupiter"},
+    6:  {"Mars", "Saturn"},
+    7:  {"Venus"},
+    8:  {"Saturn"},
+    9:  {"Sun", "Jupiter"},
+    10: {"Sun", "Mercury", "Saturn"},
+    11: {"Jupiter"},
+    12: {"Saturn"},
+}
+
 # D10 formula: sign = (si*10 + floor(deg/3)) % 12  for odd sign
 # D9 uses existing panchanga._d9_sign_index
 
@@ -317,7 +335,20 @@ def _score_one_house(
     if any(p in dusthana_lords for p in bh_cotenants):
         total += W["R16"]
 
-    # R17/R18 sthir karak — skipped (not exported from scoring.py)
+    # R17 sthir karak in or aspecting its signified house (BPHS Ch.32)
+    # R18 sthir karak in dusthana FROM its signified house
+    for karak in _STHIR_KARAK.get(house, set()):
+        if karak not in chart.planets:
+            continue
+        karak_si = chart.planets[karak].sign_index
+        karak_house = (karak_si - frame_lagna_si) % 12 + 1
+        if karak_house == house or _aspects(karak, karak_house, house):
+            total += W["R17"]
+        else:
+            dist = (house - karak_house) % 12 + 1
+            if dist in _DUSTHANA:
+                total += W["R18"]
+
     # R19 combustion
     if bh_cazimi:
         total += 0.5
