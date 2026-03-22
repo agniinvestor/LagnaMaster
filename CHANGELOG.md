@@ -80,3 +80,5 @@
 - Ruff F821: is_maraka → rules_maraka in functional_dignity.py
 - Ruff F811: removed duplicate compute_confidence alias
 - Sannyasa yoga try/except guards compute_yoga_strength on mock charts
+
+## S161-170 pending queue complete

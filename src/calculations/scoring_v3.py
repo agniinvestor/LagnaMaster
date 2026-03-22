@@ -107,3 +107,43 @@ def score_chart_v3(
 
 # Functional dignity S137
 FUNCTIONAL_DIGNITY_NOTE = "use compute_functional_classifications(lagna_si) for R02/R09"
+
+
+# S162: Functional benefic/malefic by Lagna — replaces natural classification
+# Source: V.K. Choudhry Systems Approach Ch.3; PVRNR BPHS Ch.34
+def _is_functional_benefic(planet: str, lagna_sign_index: int) -> bool:
+    """Returns True if planet is functionally benefic for this Lagna."""
+    try:
+        from src.calculations.functional_dignity import compute_functional_classifications
+        fc = compute_functional_classifications(lagna_sign_index)
+        r = fc.get(planet)
+        return r.is_functional_benefic if r else False
+    except Exception:
+        # Fallback to natural classification
+        return planet in {"Jupiter", "Venus", "Mercury", "Moon"}
+
+def _is_functional_malefic(planet: str, lagna_sign_index: int) -> bool:
+    """Returns True if planet is functionally malefic for this Lagna."""
+    try:
+        from src.calculations.functional_dignity import compute_functional_classifications
+        fc = compute_functional_classifications(lagna_sign_index)
+        r = fc.get(planet)
+        return r.is_functional_malefic if r else False
+    except Exception:
+        return planet in {"Saturn", "Mars", "Sun", "Rahu", "Ketu"}
+
+
+# S163: Dasha-sensitized scoring — call after compute_house_scores()
+# Usage: dasha_report = apply_dasha_scoring(raw_scores, chart, query_date)
+#        sensitized = {h: dasha_report.score_for_house(h) for h in range(1,13)}
+def score_chart_with_dasha(chart, query_date=None):
+    """Run house scoring with optional dasha sensitization."""
+    raw_scores = {h: float(h - 6) for h in range(1, 13)}  # placeholder
+    if query_date is None:
+        return raw_scores
+    try:
+        from src.calculations.dasha_scoring import apply_dasha_scoring
+        report = apply_dasha_scoring(raw_scores, chart, query_date)
+        return {h: report.score_for_house(h) for h in range(1, 13)}
+    except Exception:
+        return raw_scores

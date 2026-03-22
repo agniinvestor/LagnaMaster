@@ -283,3 +283,16 @@ def compute_mandi_gulika(
 # Store in chart after graha_yuddha detection:
 # BirthChart.planetary_war_losers: set[str] — checked in compute_dignity()
 PLANETARY_WAR_LOSER_OVERRIDE = "GRAHA_YUDDHA_DEBIL"
+
+
+# S164: Graha Yuddha loser dignity override
+# Source: Saravali Ch.4 v.18-22 — loser debilitated throughout life
+def get_dignity_with_war_override(planet: str, chart):
+    """
+    Check if planet is a Graha Yuddha loser and apply debility override.
+    Call this AFTER compute_dignity() and apply result if war loser detected.
+    """
+    war_losers = getattr(chart, "planetary_war_losers", set())
+    if planet in war_losers:
+        return "GRAHA_YUDDHA_DEBIL"  # treat as effectively debilitated
+    return None  # no override

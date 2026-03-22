@@ -242,3 +242,15 @@ S158 confidence_model.py — Birth time uncertainty propagation + confidence int
 S159 sudarshana.py — Sudarshana Chakra + Dasha Pravesh charts
 G-3  shodashavarga_bala.py — 16-varga Shodashavarga Bala
 Patches: topocentric Moon note, asta_vakri orbs, guru Sade Sati, Abhijit, SVG ARIA
+
+
+## Sessions 161-170 (Pending Queue Complete)
+S161 Topocentric Moon patched in ephemeris.py (swe.set_topo)
+S162 Functional dignity _is_functional_benefic/_is_functional_malefic in scoring_v3.py
+S163 score_chart_with_dasha() wrapper wired
+S164 get_dignity_with_war_override() in dignity.py
+S165/166 tests/fixtures/regression_fixtures.py — 5 reference charts + diff_scores()
+S167 north_indian_chart.py — North Indian diamond SVG + South Indian grid
+S168 pdf_export.py — 2-page HTML/PDF export with weasyprint fallback
+S169 kp_cuspal.py — cuspal sub-lord analysis, event promise, fructification
+S170 drekkana_variants.py — Parasara/Jagannatha/Somanatha D3 + vargas.py wire

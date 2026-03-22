@@ -666,3 +666,16 @@ COMBUSTION_ORBS_RETROGRADE = {
     "Moon": 12.0, "Mars": 17.0, "Mercury": 12.0,  # Rx Mercury: 12° not 14°
     "Jupiter": 11.0, "Venus": 8.0, "Saturn": 15.0,  # Rx Venus: 8° not 10°
 }
+
+
+# S164: Graha Yuddha loser dignity override
+# Source: Saravali Ch.4 v.18-22 — loser debilitated throughout life
+def get_dignity_with_war_override(planet: str, chart):
+    """
+    Check if planet is a Graha Yuddha loser and apply debility override.
+    Call this AFTER compute_dignity() and apply result if war loser detected.
+    """
+    war_losers = getattr(chart, "planetary_war_losers", set())
+    if planet in war_losers:
+        return "GRAHA_YUDDHA_DEBIL"  # treat as effectively debilitated
+    return None  # no override
