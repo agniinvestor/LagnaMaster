@@ -262,3 +262,34 @@ S170 drekkana_variants.py — Parasara/Jagannatha/Somanatha D3 + vargas.py wire
 - weasyprint in requirements.txt
 - ACTIVE_DREKKANA_METHOD = "parasara" declared in vargas.py
 - baseline_india_1947.json stub created for regression testing
+
+## Session 186 — School-Mixing Fix (Audit I-B) + Regression Snapshot (J-2)
+
+### school_rules.py (src/calculations/school_rules.py)
+- SCHOOL_RULE_MAP: 22 rules tagged — R17/R18 = "jaimini", R01-R16/R19-R22 = "parashari"
+- is_rule_active(rule_id, school, strict) — strict=True enforces hard boundaries
+- filter_rules_by_school(rules, school, strict) — filters RuleResult list
+- school_score_adjustment(raw, rules, school, strict) — deducts forbidden-school contributions
+- Invariant #35: In strict parashari mode, R17/R18 contributions are deducted from house scores
+- Invariant #36: R17/R18 are Jaimini Sthir Karak rules (BPHS Ch.32 vs Jaimini Sutras Adhyaya 1 Pada 4)
+
+### regression_snap.py (src/regression_snap.py)
+- compute_snapshot() — runs scoring on all reference charts
+- save_snapshot() / load_snapshot() — JSON persistence at tests/fixtures/snap_v3.json
+- diff_against_snapshot(tolerance=0.05) — returns list of regression diffs
+- assert_no_regression() — raises AssertionError in CI if any score changed > tolerance
+- REFERENCE_CHARTS: india_1947, einstein_1879, bohr_1885
+
+### Wiring
+- scoring_v3.py: SCHOOL_RULE_DECLARATIONS_LOADED guard + documentation comment
+- scoring.py: score_chart_strict(chart, school, query_date) wrapper available
+
+### Still pending (wiring to main pipeline)
+- score_chart() does not yet call school_score_adjustment() by default
+- Requires CalcConfig to be passed through to scoring call site
+- Recommended: add `strict_school: bool = False` to score_chart() signature
+  and call school_score_adjustment() at the end of each house computation
+
+### Gap Register Update
+- I-B (school-mixing) → ⚡ WIRED (infrastructure complete, not yet default-on)
+- J-2 (regression snapshot) → ✅ COMPLETE (compute_snapshot + diff + assert_no_regression)

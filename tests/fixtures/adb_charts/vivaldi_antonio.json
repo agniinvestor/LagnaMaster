@@ -2,26 +2,23 @@
   "adb_slug": "Vivaldi,_Antonio",
   "name": "Antonio Vivaldi",
   "source": "astro-databank",
-  "rodden_rating": "AA",
+  "rodden_rating": "Unknown",
   "adb_url": "https://www.astro.com/astro-databank/Vivaldi,_Antonio",
   "birth_data": {
     "year": 1678,
     "month": 3,
     "day": 4,
-    "hour": 9.0,
-    "lat": 45.4408,
-    "lon": 12.3155,
-    "tz_offset": 1.0,
-    "ayanamsha": "lahiri",
-    "place": "Venice, Italy",
-    "trust": "medium",
-    "note": "Venice baptism register — 4 March 1678"
+    "hour": 13.45,
+    "lat": 0,
+    "lon": 0,
+    "tz_offset": 1,
+    "ayanamsha": "lahiri"
   },
-  "birth_place": "Venice, Italy",
+  "birth_place": "Italy",
   "country": "Italy",
-  "data_trust_level": "medium",
+  "data_trust_level": "low",
   "assert_lagna": false,
-  "trust_note": "Venice baptism register — 4 March 1678",
+  "trust_note": "Italy 1678 — low trust",
   "expected": {},
   "chart": {
     "lagna": 24.9031,
@@ -95,20 +92,21 @@
     }
   },
   "scores": {
-    "1": 0.0,
-    "2": -2.0,
+    "1": 0,
+    "2": -2,
     "3": -2.625,
     "4": 3.25,
     "5": -2.75,
     "6": -4.5,
     "7": 3.75,
-    "8": -4.0,
+    "8": -4,
     "9": -3.5,
     "10": -1.125,
     "11": -6.25,
     "12": -3.5
   },
-  "fetch_status": "stub_updated",
+  "fetch_status": "ok",
   "engine_version": "v3.0.0",
-  "computed_date": "2026-03-22"
+  "computed_date": "2026-03-22",
+  "fetched_date": "2026-03-22"
 }

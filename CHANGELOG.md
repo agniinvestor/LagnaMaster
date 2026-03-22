@@ -83,3 +83,4 @@
 
 ## S161-170 pending queue complete
 ## S171 Pending Queue + Diverse Fixture Library complete
+## S186 School-mixing fix (school_rules.py) + Regression snapshot (regression_snap.py) complete

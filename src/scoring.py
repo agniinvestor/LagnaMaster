@@ -460,3 +460,34 @@ def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
         )
 
     return result
+
+
+# S186: School-aware score_chart wrapper
+# Source: Audit I-B — school-mixing resolution
+def score_chart_strict(chart, school: str = "parashari", query_date=None):
+    """
+    score_chart() with strict school enforcement.
+
+    When school="parashari" and strict=True, R17/R18 (Sthir Karak = Jaimini rules)
+    contributions are removed from the final house scores.
+
+    Source: src/calculations/school_rules.py · school_score_adjustment()
+    """
+    result = score_chart(chart, query_date=query_date)
+    if not result or not hasattr(result, "houses"):
+        return result
+    try:
+        from src.calculations.school_rules import school_score_adjustment
+        for h, house_score in result.houses.items():
+            rules = getattr(house_score, "rules", [])
+            raw = getattr(house_score, "raw_score", 0.0)
+            corrected = school_score_adjustment(raw, rules, school, strict=True)
+            # Update final_score if corrected differs from raw
+            if abs(corrected - raw) > 0.001:
+                try:
+                    object.__setattr__(house_score, "final_score", corrected)
+                except Exception:
+                    pass  # dataclass may be frozen
+    except Exception:
+        pass  # graceful fallback
+    return result

@@ -147,3 +147,17 @@ def score_chart_with_dasha(chart, query_date=None):
         return {h: report.score_for_house(h) for h in range(1, 13)}
     except Exception:
         return raw_scores
+
+
+# S186: School-rule declarations — Audit I-B
+# R17 and R18 are Jaimini-school rules (Sthir Karak).
+# To enforce strict school separation, use:
+#   from src.calculations.school_rules import school_score_adjustment, filter_rules_by_school
+#   corrected = school_score_adjustment(raw_score, rules, calc_config.school, strict=calc_config.strict_school)
+#
+# Source: Sanjay Rath · Crux of Vedic Astrology, Preface;
+#         PVRNR · BPHS Ch.32 (naisargika karakatva) vs Jaimini Sutras Adhyaya 1 Pada 4
+#
+# The school_rules module (src/calculations/school_rules.py) is the canonical
+# reference for which rules belong to which tradition.
+SCHOOL_RULE_DECLARATIONS_LOADED = True  # guard

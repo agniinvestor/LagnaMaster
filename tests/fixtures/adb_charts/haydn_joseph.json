@@ -2,25 +2,26 @@
   "adb_slug": "Haydn,_Joseph",
   "name": "Joseph Haydn",
   "source": "astro-databank",
-  "rodden_rating": "AA",
+  "rodden_rating": "Unknown",
   "adb_url": "https://www.astro.com/astro-databank/Haydn,_Joseph",
   "birth_data": {
     "year": 1732,
     "month": 1,
     "day": 1,
-    "hour": 12.0,
-    "lat": 0.0,
-    "lon": 0.0,
-    "tz_offset": 0.0,
+    "hour": 6.08,
+    "lat": 0,
+    "lon": 0,
+    "tz_offset": 1,
     "ayanamsha": "lahiri"
   },
   "birth_place": "Austria",
   "country": "Austria",
   "data_trust_level": "low",
   "assert_lagna": false,
-  "trust_note": "Stub — fetch blocked",
+  "trust_note": "Austria 1732 — low trust",
   "expected": {},
   "chart": null,
   "scores": null,
-  "fetch_status": "blocked"
+  "fetch_status": "ok",
+  "fetched_date": "2026-03-22"
 }
