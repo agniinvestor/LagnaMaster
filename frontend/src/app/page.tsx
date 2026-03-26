@@ -301,17 +301,22 @@ export default function Home() {
                       </div>
                       <button
                         onClick={async () => {
-                          const blob = await charts.pdf(chart.id)
-                          const url = URL.createObjectURL(blob)
-                          const a = document.createElement('a')
-                          a.href = url; a.download = `lagnamaster_${chart.id}.pdf`
-                          a.click(); URL.revokeObjectURL(url)
+                          try {
+                            const blob = await charts.pdf(chart.id)
+                            const url = URL.createObjectURL(blob)
+                            const a = document.createElement('a')
+                            a.href = url; a.download = `lagnamaster_${chart.id}.pdf`
+                            a.click(); URL.revokeObjectURL(url)
+                          } catch (e: unknown) {
+                            setError(e instanceof Error ? e.message : 'PDF export failed')
+                          }
                         }}
                         className="border border-gray-300 text-gray-600 rounded px-2 py-1 text-xs hover:bg-gray-50 transition">
                         ⬇ PDF
                       </button>
                     </div>
                   </div>
+                  {/* SVG is generated server-side from ephemeris data — trusted source */}
                   <div dangerouslySetInnerHTML={{ __html: svg }}
                     className="w-full overflow-x-auto"/>
                 </div>
