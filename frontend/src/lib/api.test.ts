@@ -2,7 +2,8 @@
  * frontend/src/lib/api.test.ts — Session 25 unit tests for API client
  */
 
-import { setAccessToken, getAccessToken, auth, charts, health } from './api'
+import { setAccessToken, getAccessToken, auth, charts as chartsApi, health, mundane as mundaneApi } from './api'
+const charts = chartsApi
 
 // Mock global fetch
 const mockFetch = jest.fn()
@@ -108,5 +109,86 @@ describe('health.check', () => {
     const h = await health.check()
     expect(h.status).toBe('ok')
     expect(h.db.backend).toBe('sqlite')
+  })
+})
+
+describe('charts.svg', () => {
+  it('POSTs to /api/charts/:id/svg', async () => {
+    mockFetch.mockResolvedValue(mockResponse({
+      chart_id: 1, style: 'north_indian', svg: '<svg></svg>',
+    }))
+    const result = await chartsApi.svg(1, { style: 'north_indian' })
+    expect(mockFetch).toHaveBeenCalledWith('/api/charts/1/svg', expect.objectContaining({
+      method: 'POST',
+    }))
+    expect(result.svg).toBe('<svg></svg>')
+  })
+})
+
+describe('charts.confidence', () => {
+  it('GETs /api/charts/:id/confidence', async () => {
+    mockFetch.mockResolvedValue(mockResponse({
+      chart_id: 1,
+      lagna_boundary_margin_deg: 5.2,
+      lagna_boundary_warning: false,
+      moon_nakshatra_boundary: false,
+      overall_reliability: 'High',
+      uncertainty_sources: [],
+      house_confidence: {},
+    }))
+    const result = await chartsApi.confidence(1)
+    expect(mockFetch).toHaveBeenCalledWith('/api/charts/1/confidence', expect.any(Object))
+    expect(result.overall_reliability).toBe('High')
+  })
+})
+
+describe('charts.scoresV3', () => {
+  it('GETs /api/charts/:id/scores/v3', async () => {
+    mockFetch.mockResolvedValue(mockResponse({
+      chart_id: 1, lagna_sign: 'Taurus', engine_version: 'v3.0.0',
+      d1_scores: { '1': 2.5 }, cl_scores: {}, sl_scores: {},
+      d9_scores: {}, d10_scores: {},
+      raja_yogas: [], viparita_yogas: [], neecha_bhanga: [],
+    }))
+    const result = await chartsApi.scoresV3(1)
+    expect(mockFetch).toHaveBeenCalledWith('/api/charts/1/scores/v3', expect.any(Object))
+    expect(result.d1_scores['1']).toBe(2.5)
+  })
+})
+
+describe('charts.guidance', () => {
+  it('POSTs to /api/charts/:id/guidance', async () => {
+    mockFetch.mockResolvedValue(mockResponse({
+      chart_id: 1, domain: 'career', heading: 'Strong period',
+      summary: 'Career looks good', signal_bars: 4, signal_display: '●●●●○',
+      timing_label: 'Active', confidence_label: 'High',
+      confidence_note: 'Birth time reliable', disclaimer: 'For guidance only',
+      factors: [], timing_note: '', domain_context: '',
+      technical_detail: {}, depth_returned: 'L1',
+    }))
+    const result = await chartsApi.guidance(1, { domain: 'career', depth: 'L1' })
+    expect(mockFetch).toHaveBeenCalledWith('/api/charts/1/guidance', expect.objectContaining({
+      method: 'POST',
+    }))
+    expect(result.signal_bars).toBe(4)
+  })
+})
+
+describe('mundane.analyze', () => {
+  it('POSTs to /api/mundane/analyze', async () => {
+    mockFetch.mockResolvedValue(mockResponse({
+      chart_type: 'ingress', event_description: 'Solar ingress',
+      date: '2026-03-20', location: 'Greenwich',
+      key_themes: ['New cycle'], challenges: ['Instability'],
+      house_significations: { '1': 'National identity' },
+      compressed_dasha: null,
+    }))
+    const result = await mundaneApi.analyze({
+      year: 2026, month: 3, day: 20, lat: 51.477, lon: 0.0,
+    })
+    expect(mockFetch).toHaveBeenCalledWith('/api/mundane/analyze', expect.objectContaining({
+      method: 'POST',
+    }))
+    expect(result.key_themes[0]).toBe('New cycle')
   })
 })
