@@ -142,10 +142,6 @@ export default function Home() {
     }
   }
 
-  // suppress unused-variable warnings for state setters used by future tasks
-  void guidance; void guidanceDomain; void guidanceDepth; void guidanceLoading
-  void fetchGuidance
-
   return (
     <main className="min-h-screen bg-gray-50">
       <header className="bg-indigo-900 text-white px-6 py-4 flex items-center gap-3">
@@ -434,7 +430,82 @@ export default function Home() {
                 </div>
               )}
 
-              {/* PLACEHOLDER_GUIDANCE */}
+              {/* Guidance panel */}
+              {chart && (
+                <div className="bg-white rounded-xl shadow p-6 space-y-4">
+                  <h2 className="font-semibold text-gray-800">Guidance</h2>
+
+                  <div className="flex gap-2 flex-wrap">
+                    {(['career','relationships','health','finance'] as const).map(d => (
+                      <button key={d}
+                        onClick={() => setGuidanceDomain(d)}
+                        className={`px-3 py-1 rounded-full text-xs font-medium border transition ${
+                          guidanceDomain === d
+                            ? 'bg-indigo-700 text-white border-indigo-700'
+                            : 'text-gray-600 border-gray-300 hover:bg-gray-50'
+                        }`}>
+                        {d.charAt(0).toUpperCase() + d.slice(1)}
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-2">
+                    {(['L1','L2','L3'] as const).map(d => (
+                      <button key={d}
+                        onClick={() => setGuidanceDepth(d)}
+                        className={`px-3 py-1 rounded text-xs font-medium border transition ${
+                          guidanceDepth === d
+                            ? 'bg-indigo-100 text-indigo-800 border-indigo-300'
+                            : 'text-gray-500 border-gray-200 hover:bg-gray-50'
+                        }`}>
+                        {d === 'L1' ? 'Overview' : d === 'L2' ? 'Detail' : 'Technical'}
+                      </button>
+                    ))}
+                  </div>
+
+                  <button onClick={fetchGuidance} disabled={guidanceLoading}
+                    className="bg-indigo-700 text-white rounded-lg px-4 py-2 text-sm font-medium hover:bg-indigo-800 disabled:opacity-50 transition">
+                    {guidanceLoading ? 'Loading…' : '✨ Get Guidance'}
+                  </button>
+
+                  {guidance && (
+                    <div className="space-y-3 border-t pt-4">
+                      <div className="flex items-center justify-between">
+                        <h3 className="font-medium text-gray-800">{guidance.heading}</h3>
+                        <div className="flex items-center gap-2">
+                          <span className="text-lg tracking-tight" title={`${guidance.signal_bars}/5`}>
+                            {guidance.signal_display}
+                          </span>
+                          <span className="text-xs text-gray-500">{guidance.confidence_label}</span>
+                        </div>
+                      </div>
+
+                      <p className="text-sm text-gray-700">{guidance.summary}</p>
+
+                      {guidance.timing_label && (
+                        <div className="text-xs text-indigo-700 font-medium">⏱ {guidance.timing_label}</div>
+                      )}
+
+                      {guidance.factors.length > 0 && (
+                        <ul className="text-xs text-gray-600 space-y-0.5 list-disc list-inside">
+                          {guidance.factors.map((f, i) => <li key={i}>{f}</li>)}
+                        </ul>
+                      )}
+
+                      {guidanceDepth === 'L3' && Object.keys(guidance.technical_detail).length > 0 && (
+                        <details className="text-xs">
+                          <summary className="cursor-pointer text-gray-500 hover:text-gray-700">Technical detail</summary>
+                          <pre className="mt-2 bg-gray-50 rounded p-2 overflow-x-auto text-xs">
+                            {JSON.stringify(guidance.technical_detail, null, 2)}
+                          </pre>
+                        </details>
+                      )}
+
+                      <p className="text-xs text-gray-400 italic">{guidance.disclaimer}</p>
+                    </div>
+                  )}
+                </div>
+              )}
 
             </div>
           )}
