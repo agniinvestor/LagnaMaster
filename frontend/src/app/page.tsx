@@ -143,7 +143,7 @@ export default function Home() {
   }
 
   // suppress unused-variable warnings for state setters used by future tasks
-  void confidence; void v3; void v3Open
+  void v3; void v3Open
   void guidance; void guidanceDomain; void guidanceDepth; void guidanceLoading
   void fetchGuidance
 
@@ -322,7 +322,27 @@ export default function Home() {
                 </div>
               )}
 
-              {/* PLACEHOLDER_CONFIDENCE */}
+              {/* Confidence badge */}
+              {confidence && (
+                <div className={`rounded-xl shadow p-4 text-sm ${
+                  confidence.lagna_boundary_warning
+                    ? 'bg-amber-50 border border-amber-200'
+                    : 'bg-white'
+                }`}>
+                  <div className="flex items-center gap-2">
+                    <span className="font-medium text-gray-700">Reliability:</span>
+                    <span className="font-semibold text-indigo-700">{confidence.overall_reliability}</span>
+                    {confidence.lagna_boundary_warning && (
+                      <span className="text-amber-700 ml-2">
+                        ⚠ Lagna within {confidence.lagna_boundary_margin_deg.toFixed(1)}° of sign boundary — birth time sensitive
+                      </span>
+                    )}
+                    {confidence.moon_nakshatra_boundary && (
+                      <span className="text-amber-600 ml-2 text-xs">Moon near nakshatra boundary</span>
+                    )}
+                  </div>
+                </div>
+              )}
 
               {/* Domain scores */}
               {scores && (
