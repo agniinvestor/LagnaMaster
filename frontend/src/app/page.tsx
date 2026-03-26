@@ -143,9 +143,9 @@ export default function Home() {
   }
 
   // suppress unused-variable warnings for state setters used by future tasks
-  void svg; void svgStyle; void confidence; void v3; void v3Open
+  void confidence; void v3; void v3Open
   void guidance; void guidanceDomain; void guidanceDepth; void guidanceLoading
-  void fetchGuidance; void toggleSvgStyle
+  void fetchGuidance
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -289,7 +289,38 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* PLACEHOLDER_SVG */}
+              {/* SVG chart */}
+              {svg && (
+                <div className="bg-white rounded-xl shadow p-6">
+                  <div className="flex items-center justify-between mb-3">
+                    <h2 className="font-semibold text-gray-800">Chart Diagram</h2>
+                    <div className="flex items-center gap-2">
+                      <div className="flex rounded-lg border overflow-hidden text-xs">
+                        {(['north_indian', 'south_indian'] as const).map(s => (
+                          <button key={s}
+                            onClick={() => toggleSvgStyle(s)}
+                            className={`px-2 py-1 transition ${svgStyle === s ? 'bg-indigo-700 text-white' : 'text-gray-600 hover:bg-gray-50'}`}>
+                            {s === 'north_indian' ? 'North' : 'South'}
+                          </button>
+                        ))}
+                      </div>
+                      <button
+                        onClick={async () => {
+                          const blob = await charts.pdf(chart.id)
+                          const url = URL.createObjectURL(blob)
+                          const a = document.createElement('a')
+                          a.href = url; a.download = `lagnamaster_${chart.id}.pdf`
+                          a.click(); URL.revokeObjectURL(url)
+                        }}
+                        className="border border-gray-300 text-gray-600 rounded px-2 py-1 text-xs hover:bg-gray-50 transition">
+                        ⬇ PDF
+                      </button>
+                    </div>
+                  </div>
+                  <div dangerouslySetInnerHTML={{ __html: svg }}
+                    className="w-full overflow-x-auto"/>
+                </div>
+              )}
 
               {/* PLACEHOLDER_CONFIDENCE */}
 
