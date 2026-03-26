@@ -143,7 +143,6 @@ export default function Home() {
   }
 
   // suppress unused-variable warnings for state setters used by future tasks
-  void v3; void v3Open
   void guidance; void guidanceDomain; void guidanceDepth; void guidanceLoading
   void fetchGuidance
 
@@ -368,7 +367,72 @@ export default function Home() {
                 </div>
               )}
 
-              {/* PLACEHOLDER_V3 */}
+              {/* V3 multi-axis scores (collapsible) */}
+              {v3 && (
+                <div className="bg-white rounded-xl shadow">
+                  <button
+                    onClick={() => setV3Open(!v3Open)}
+                    className="w-full flex items-center justify-between px-6 py-4 text-sm font-semibold text-gray-800 hover:bg-gray-50 rounded-xl transition">
+                    <span>Multi-axis Scores <span className="text-xs font-normal text-gray-400 ml-1">(heuristic estimate — {v3.engine_version})</span></span>
+                    <span className="text-gray-400">{v3Open ? '▲' : '▼'}</span>
+                  </button>
+
+                  {v3Open && (
+                    <div className="px-6 pb-6 space-y-4">
+                      {/* D1, D9, D10 grids */}
+                      {([['D1 (Rashi)', v3.d1_scores], ['D9 (Navamsha)', v3.d9_scores], ['D10 (Dasamsha)', v3.d10_scores]] as [string, Record<string, number>][]).map(([label, scores]) => (
+                        <div key={label}>
+                          <h3 className="text-xs font-semibold text-gray-500 uppercase mb-2">{label}</h3>
+                          <div className="grid grid-cols-4 sm:grid-cols-6 gap-1">
+                            {Object.entries(scores).map(([h, s]) => (
+                              <div key={h} className="border rounded p-1 text-center text-xs">
+                                <div className="text-gray-500">H{h}</div>
+                                <div className={`font-bold ${s >= 0 ? 'text-emerald-700' : 'text-red-600'}`}>
+                                  {s > 0 ? '+' : ''}{s.toFixed(1)}
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+
+                      {/* Yoga lists */}
+                      {v3.raja_yogas.length > 0 && (
+                        <div>
+                          <h3 className="text-xs font-semibold text-gray-500 uppercase mb-1">Raja Yogas</h3>
+                          <div className="flex flex-wrap gap-1">
+                            {v3.raja_yogas.map((y, i) => (
+                              <span key={i} className="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded-full">{y}</span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {v3.viparita_yogas.length > 0 && (
+                        <div>
+                          <h3 className="text-xs font-semibold text-gray-500 uppercase mb-1">Viparita Yogas</h3>
+                          <div className="flex flex-wrap gap-1">
+                            {v3.viparita_yogas.map((y, i) => (
+                              <span key={i} className="bg-blue-100 text-blue-800 text-xs px-2 py-0.5 rounded-full">{y}</span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {v3.neecha_bhanga.length > 0 && (
+                        <div>
+                          <h3 className="text-xs font-semibold text-gray-500 uppercase mb-1">Neecha Bhanga</h3>
+                          <div className="flex flex-wrap gap-1">
+                            {v3.neecha_bhanga.map((y, i) => (
+                              <span key={i} className="bg-yellow-100 text-yellow-800 text-xs px-2 py-0.5 rounded-full">{y}</span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
 
               {/* PLACEHOLDER_GUIDANCE */}
 
