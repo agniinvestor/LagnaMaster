@@ -1,4 +1,31 @@
 # LagnaMaster — CHANGELOG.md
+## S190 + Frontend Update — Naisargika Karakas + UI (March 2026)
+
+### S190 — Naisargika Karaka Rules
+- **school_rules.py**: R17/R18 implemented as Jaimini Sthir Karak rules (BPHS Ch.32)
+- Strict Parashari mode deducts R17/R18 contributions via `school_score_adjustment()`
+
+### Frontend Update (Sessions S167-S190 surface)
+- **frontend/src/lib/api.ts**: 8 new types + 6 new fetch functions (svg, pdf, confidence,
+  scoresV3, guidance, mundane.analyze); 13 tests passing
+- **frontend/src/app/page.tsx**: Two-tab layout (Birth Chart | Mundane)
+  - SVG chart with North/South Indian toggle + PDF download
+  - Confidence badge with lagna boundary warning (amber tint when < 1°)
+  - Collapsible V3 multi-axis scores (D1/D9/D10 grids + yoga chip lists, labelled "heuristic estimate")
+  - Lazy-fetch guidance panel (career/health/finance/relationships × L1/L2/L3 depth)
+  - Mundane analysis tab (nation/ingress/swearing-in form + themes/challenges/house significations)
+
+### Deployment — /lagnamaster base path (March 2026)
+- **Nginx** (`/etc/nginx/sites-available/docker_proxy`): all routes prefixed `/lagnamaster`;
+  `/_stcore/` and `/static/` proxied to Streamlit (port 8501); `/lagnamaster/api/` to FastAPI (port 8000)
+- **docker-compose.yml**: Streamlit `--server.baseUrlPath /lagnamaster`;
+  uvicorn `--root-path /lagnamaster/api` (enables correct Swagger UI paths)
+- **URLs**: App → `ip/lagnamaster` · API docs → `ip/lagnamaster/api/docs`
+
+### Test Status: 1338 backend + 13 frontend passing, CI green
+
+---
+
 ## S187-S189 — Scoring Gaps + XIX Output API (March 2026)
 
 ### S187 — Wiring Gaps Closed

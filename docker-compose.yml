@@ -14,9 +14,9 @@ services:
 
   api:
     build: .
-    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload
+    command: uvicorn src.api.main:app --host 0.0.0.0 --port 8000 --reload --root-path /lagnamaster/api
     ports:
-      - "8000:8000"
+      - "127.0.0.1:8000:8000"
     volumes:
       - chart_data:/app/data        # SQLite persists across restarts
       - ./src:/app/src               # live-reload source in dev
@@ -37,9 +37,10 @@ services:
       --server.port 8501
       --server.address 0.0.0.0
       --server.headless true
+      --server.baseUrlPath /lagnamaster
       --browser.gatherUsageStats false
     ports:
-      - "8501:8501"
+      - "127.0.0.1:8501:8501"
     volumes:
       - chart_data:/app/data        # shared SQLite with api service
       - ./src:/app/src               # live-reload source in dev
