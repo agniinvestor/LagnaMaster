@@ -5,7 +5,10 @@
 'use client'
 
 import { useState } from 'react'
-import { charts, ChartOut, ChartScoresOut, setAccessToken } from '@/lib/api'
+import {
+  charts, ChartOut, ChartScoresOut, ChartV3Out, ConfidenceOut,
+  GuidanceOut, MundaneOut, mundane,
+} from '@/lib/api'
 
 const INDIA_1947 = {
   year: 1947, month: 8, day: 15, hour: 0,
@@ -32,15 +35,52 @@ export default function Home() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
+  // Tab
+  const [tab, setTab] = useState<'chart' | 'mundane'>('chart')
+
+  // New chart-result state
+  const [svg, setSvg] = useState<string | null>(null)
+  const [svgStyle, setSvgStyle] = useState<'north_indian' | 'south_indian'>('north_indian')
+  const [confidence, setConfidence] = useState<ConfidenceOut | null>(null)
+  const [v3, setV3] = useState<ChartV3Out | null>(null)
+  const [v3Open, setV3Open] = useState(false)
+  const [guidance, setGuidance] = useState<GuidanceOut | null>(null)
+  const [guidanceDomain, setGuidanceDomain] = useState('career')
+  const [guidanceDepth, setGuidanceDepth] = useState<'L1' | 'L2' | 'L3'>('L1')
+  const [guidanceLoading, setGuidanceLoading] = useState(false)
+
+  // Mundane tab state
+  const [mundaneForm, setMundaneForm] = useState<{
+    year: number; month: number; day: number; hour: number;
+    lat: number; lon: number; tz_offset: number;
+    chart_type: 'ingress' | 'nation' | 'lunar_new_year' | 'swearing_in';
+    event_description: string; location: string;
+  }>({
+    year: 2026, month: 3, day: 20, hour: 0,
+    lat: 51.477, lon: 0.0, tz_offset: 0.0,
+    chart_type: 'ingress',
+    event_description: '', location: '',
+  })
+  const [mundaneResult, setMundaneResult] = useState<MundaneOut | null>(null)
+  const [mundaneLoading, setMundaneLoading] = useState(false)
+  const [mundaneError, setMundaneError] = useState<string | null>(null)
+
   const compute = async () => {
     setLoading(true); setError(null)
+    setSvg(null); setConfidence(null); setV3(null); setGuidance(null)
     try {
       const c = await charts.create({
         ...form,
         ayanamsha: form.ayanamsha as 'lahiri' | 'raman' | 'krishnamurti',
       })
-      const s = await charts.scores(c.id)
+      const [s, svgRes, conf, v3Res] = await Promise.all([
+        charts.scores(c.id),
+        charts.svg(c.id, { style: svgStyle }),
+        charts.confidence(c.id),
+        charts.scoresV3(c.id),
+      ])
       setChart(c); setScores(s)
+      setSvg(svgRes.svg); setConfidence(conf); setV3(v3Res)
     } catch (e: unknown) {
       setError(e instanceof Error ? e.message : 'Unknown error')
     } finally {
@@ -52,6 +92,61 @@ export default function Home() {
     setForm({ ...INDIA_1947, ayanamsha: 'lahiri', name: 'India Independence' })
   }
 
+  const fetchGuidance = async () => {
+    if (!chart) return
+    setGuidanceLoading(true)
+    try {
+      const g = await charts.guidance(chart.id, {
+        domain: guidanceDomain,
+        depth: guidanceDepth,
+      })
+      setGuidance(g)
+    } catch {
+      // guidance errors are non-fatal; panel stays blank
+    } finally {
+      setGuidanceLoading(false)
+    }
+  }
+
+  const toggleSvgStyle = async (style: 'north_indian' | 'south_indian') => {
+    if (!chart) return
+    setSvgStyle(style)
+    try {
+      const res = await charts.svg(chart.id, { style })
+      setSvg(res.svg)
+    } catch {
+      // keep existing svg on error
+    }
+  }
+
+  const analyzeMundane = async () => {
+    setMundaneLoading(true); setMundaneError(null)
+    try {
+      const result = await mundane.analyze({
+        year: mundaneForm.year,
+        month: mundaneForm.month,
+        day: mundaneForm.day,
+        hour: mundaneForm.hour,
+        lat: mundaneForm.lat,
+        lon: mundaneForm.lon,
+        tz_offset: mundaneForm.tz_offset,
+        chart_type: mundaneForm.chart_type,
+        event_description: mundaneForm.event_description || undefined,
+        location: mundaneForm.location || undefined,
+      })
+      setMundaneResult(result)
+    } catch (e: unknown) {
+      setMundaneError(e instanceof Error ? e.message : 'Unknown error')
+    } finally {
+      setMundaneLoading(false)
+    }
+  }
+
+  // suppress unused-variable warnings for state setters used by future tasks
+  void svg; void svgStyle; void confidence; void v3; void v3Open
+  void guidance; void guidanceDomain; void guidanceDepth; void guidanceLoading
+  void fetchGuidance; void toggleSvgStyle
+
   return (
     <main className="min-h-screen bg-gray-50">
       <header className="bg-indigo-900 text-white px-6 py-4 flex items-center gap-3">
@@ -60,149 +155,314 @@ export default function Home() {
         <span className="text-indigo-300 text-sm ml-2">Vedic Jyotish Chart Engine</span>
       </header>
 
-      <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+      {/* Tab bar */}
+      <div className="bg-white border-b px-6 flex gap-6">
+        {(['chart', 'mundane'] as const).map(t => (
+          <button key={t}
+            onClick={() => setTab(t)}
+            className={`py-3 text-sm font-medium border-b-2 transition ${
+              tab === t
+                ? 'border-indigo-700 text-indigo-700'
+                : 'border-transparent text-gray-500 hover:text-gray-700'
+            }`}>
+            {t === 'chart' ? 'Birth Chart' : 'Mundane'}
+          </button>
+        ))}
+      </div>
 
-        {/* Birth data form */}
-        <div className="bg-white rounded-xl shadow p-6 space-y-4">
-          <h2 className="font-semibold text-gray-800">Birth Data</h2>
+      {/* Birth Chart tab */}
+      {tab === 'chart' && (
+        <div className="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-          <div className="grid grid-cols-3 gap-2">
-            {(['year','month','day'] as const).map(f => (
-              <div key={f}>
-                <label className="text-xs text-gray-500 capitalize">{f}</label>
-                <input type="number" value={form[f]}
-                  onChange={e => setForm({...form, [f]: +e.target.value})}
+          {/* Birth data form */}
+          <div className="bg-white rounded-xl shadow p-6 space-y-4">
+            <h2 className="font-semibold text-gray-800">Birth Data</h2>
+
+            <div className="grid grid-cols-3 gap-2">
+              {(['year','month','day'] as const).map(f => (
+                <div key={f}>
+                  <label className="text-xs text-gray-500 capitalize">{f}</label>
+                  <input type="number" value={form[f]}
+                    onChange={e => setForm({...form, [f]: +e.target.value})}
+                    className="w-full border rounded px-2 py-1 text-sm mt-1"/>
+                </div>
+              ))}
+            </div>
+
+            <div>
+              <label className="text-xs text-gray-500">Hour (decimal)</label>
+              <input type="number" step="0.1" value={form.hour}
+                onChange={e => setForm({...form, hour: +e.target.value})}
+                className="w-full border rounded px-2 py-1 text-sm mt-1"/>
+            </div>
+
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <label className="text-xs text-gray-500">Latitude °N</label>
+                <input type="number" step="0.0001" value={form.lat}
+                  onChange={e => setForm({...form, lat: +e.target.value})}
                   className="w-full border rounded px-2 py-1 text-sm mt-1"/>
               </div>
-            ))}
-          </div>
-
-          <div>
-            <label className="text-xs text-gray-500">Hour (decimal)</label>
-            <input type="number" step="0.1" value={form.hour}
-              onChange={e => setForm({...form, hour: +e.target.value})}
-              className="w-full border rounded px-2 py-1 text-sm mt-1"/>
-          </div>
-
-          <div className="grid grid-cols-2 gap-2">
-            <div>
-              <label className="text-xs text-gray-500">Latitude °N</label>
-              <input type="number" step="0.0001" value={form.lat}
-                onChange={e => setForm({...form, lat: +e.target.value})}
-                className="w-full border rounded px-2 py-1 text-sm mt-1"/>
-            </div>
-            <div>
-              <label className="text-xs text-gray-500">Longitude °E</label>
-              <input type="number" step="0.0001" value={form.lon}
-                onChange={e => setForm({...form, lon: +e.target.value})}
-                className="w-full border rounded px-2 py-1 text-sm mt-1"/>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-2">
-            <div>
-              <label className="text-xs text-gray-500">Timezone offset</label>
-              <input type="number" step="0.5" value={form.tz_offset}
-                onChange={e => setForm({...form, tz_offset: +e.target.value})}
-                className="w-full border rounded px-2 py-1 text-sm mt-1"/>
-            </div>
-            <div>
-              <label className="text-xs text-gray-500">Ayanamsha</label>
-              <select value={form.ayanamsha}
-                onChange={e => setForm({...form, ayanamsha: e.target.value})}
-                className="w-full border rounded px-2 py-1 text-sm mt-1">
-                <option value="lahiri">Lahiri</option>
-                <option value="raman">Raman</option>
-                <option value="krishnamurti">Krishnamurti</option>
-              </select>
-            </div>
-          </div>
-
-          <div>
-            <label className="text-xs text-gray-500">Label (optional)</label>
-            <input type="text" value={form.name}
-              onChange={e => setForm({...form, name: e.target.value})}
-              className="w-full border rounded px-2 py-1 text-sm mt-1"
-              placeholder="e.g. My Chart"/>
-          </div>
-
-          <button onClick={demo}
-            className="w-full border border-indigo-300 text-indigo-700 rounded-lg py-2 text-sm hover:bg-indigo-50 transition">
-            🇮🇳 Demo: India 1947
-          </button>
-
-          <button onClick={compute} disabled={loading}
-            className="w-full bg-indigo-700 text-white rounded-lg py-2 text-sm font-medium hover:bg-indigo-800 disabled:opacity-50 transition">
-            {loading ? 'Computing…' : '⚡ Compute Chart'}
-          </button>
-
-          {error && (
-            <p className="text-red-600 text-sm bg-red-50 rounded p-2">{error}</p>
-          )}
-        </div>
-
-        {/* Chart result */}
-        {chart && (
-          <div className="lg:col-span-2 space-y-6">
-
-            {/* Lagna + planets */}
-            <div className="bg-white rounded-xl shadow p-6">
-              <h2 className="font-semibold text-gray-800 mb-3">
-                {chart.lagna_sign} Lagna — {chart.lagna_degree.toFixed(2)}°
-                <span className="text-xs text-gray-400 ml-2">
-                  {chart.ayanamsha_name} · JD {chart.jd_ut.toFixed(4)}
-                </span>
-              </h2>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="text-left text-xs text-gray-500 border-b">
-                      <th className="pb-1">Planet</th>
-                      <th>Sign</th>
-                      <th>Degree</th>
-                      <th>Rx</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {Object.values(chart.planets).map(p => (
-                      <tr key={p.name} className="border-b border-gray-50">
-                        <td className="py-1 font-medium">{p.name}</td>
-                        <td>{p.sign}</td>
-                        <td>{p.degree_in_sign.toFixed(2)}°</td>
-                        <td>{p.is_retrograde ? '℞' : ''}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+              <div>
+                <label className="text-xs text-gray-500">Longitude °E</label>
+                <input type="number" step="0.0001" value={form.lon}
+                  onChange={e => setForm({...form, lon: +e.target.value})}
+                  className="w-full border rounded px-2 py-1 text-sm mt-1"/>
               </div>
             </div>
 
-            {/* Domain scores */}
-            {scores && (
-              <div className="bg-white rounded-xl shadow p-6">
-                <h2 className="font-semibold text-gray-800 mb-3">Domain Scores</h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                  {Object.values(scores.houses).map(h => (
-                    <div key={h.house}
-                      className="border rounded-lg p-2 text-sm">
-                      <div className="flex items-center justify-between mb-1">
-                        <span className="font-medium text-gray-700">H{h.house}</span>
-                        <span className={`text-xs px-1.5 py-0.5 rounded-full font-medium ${RATING_COLOR[h.rating] ?? ''}`}>
-                          {h.rating}
-                        </span>
-                      </div>
-                      <div className="text-xs text-gray-500">{h.domain}</div>
-                      <div className="text-base font-bold text-indigo-700 mt-0.5">
-                        {h.final_score > 0 ? '+' : ''}{h.final_score.toFixed(1)}
-                      </div>
-                    </div>
-                  ))}
-                </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <label className="text-xs text-gray-500">Timezone offset</label>
+                <input type="number" step="0.5" value={form.tz_offset}
+                  onChange={e => setForm({...form, tz_offset: +e.target.value})}
+                  className="w-full border rounded px-2 py-1 text-sm mt-1"/>
               </div>
+              <div>
+                <label className="text-xs text-gray-500">Ayanamsha</label>
+                <select value={form.ayanamsha}
+                  onChange={e => setForm({...form, ayanamsha: e.target.value})}
+                  className="w-full border rounded px-2 py-1 text-sm mt-1">
+                  <option value="lahiri">Lahiri</option>
+                  <option value="raman">Raman</option>
+                  <option value="krishnamurti">Krishnamurti</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label className="text-xs text-gray-500">Label (optional)</label>
+              <input type="text" value={form.name}
+                onChange={e => setForm({...form, name: e.target.value})}
+                className="w-full border rounded px-2 py-1 text-sm mt-1"
+                placeholder="e.g. My Chart"/>
+            </div>
+
+            <button onClick={demo}
+              className="w-full border border-indigo-300 text-indigo-700 rounded-lg py-2 text-sm hover:bg-indigo-50 transition">
+              🇮🇳 Demo: India 1947
+            </button>
+
+            <button onClick={compute} disabled={loading}
+              className="w-full bg-indigo-700 text-white rounded-lg py-2 text-sm font-medium hover:bg-indigo-800 disabled:opacity-50 transition">
+              {loading ? 'Computing…' : '⚡ Compute Chart'}
+            </button>
+
+            {error && (
+              <p className="text-red-600 text-sm bg-red-50 rounded p-2">{error}</p>
             )}
           </div>
-        )}
-      </div>
+
+          {/* Chart result */}
+          {chart && (
+            <div className="lg:col-span-2 space-y-6">
+
+              {/* Lagna + planets */}
+              <div className="bg-white rounded-xl shadow p-6">
+                <h2 className="font-semibold text-gray-800 mb-3">
+                  {chart.lagna_sign} Lagna — {chart.lagna_degree.toFixed(2)}°
+                  <span className="text-xs text-gray-400 ml-2">
+                    {chart.ayanamsha_name} · JD {chart.jd_ut.toFixed(4)}
+                  </span>
+                </h2>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="text-left text-xs text-gray-500 border-b">
+                        <th className="pb-1">Planet</th>
+                        <th>Sign</th>
+                        <th>Degree</th>
+                        <th>Rx</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {Object.values(chart.planets).map(p => (
+                        <tr key={p.name} className="border-b border-gray-50">
+                          <td className="py-1 font-medium">{p.name}</td>
+                          <td>{p.sign}</td>
+                          <td>{p.degree_in_sign.toFixed(2)}°</td>
+                          <td>{p.is_retrograde ? '℞' : ''}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* PLACEHOLDER_SVG */}
+
+              {/* PLACEHOLDER_CONFIDENCE */}
+
+              {/* Domain scores */}
+              {scores && (
+                <div className="bg-white rounded-xl shadow p-6">
+                  <h2 className="font-semibold text-gray-800 mb-3">Domain Scores</h2>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                    {Object.values(scores.houses).map(h => (
+                      <div key={h.house}
+                        className="border rounded-lg p-2 text-sm">
+                        <div className="flex items-center justify-between mb-1">
+                          <span className="font-medium text-gray-700">H{h.house}</span>
+                          <span className={`text-xs px-1.5 py-0.5 rounded-full font-medium ${RATING_COLOR[h.rating] ?? ''}`}>
+                            {h.rating}
+                          </span>
+                        </div>
+                        <div className="text-xs text-gray-500">{h.domain}</div>
+                        <div className="text-base font-bold text-indigo-700 mt-0.5">
+                          {h.final_score > 0 ? '+' : ''}{h.final_score.toFixed(1)}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* PLACEHOLDER_V3 */}
+
+              {/* PLACEHOLDER_GUIDANCE */}
+
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Mundane tab */}
+      {tab === 'mundane' && (
+        <div className="max-w-4xl mx-auto px-4 py-8 space-y-6">
+          <div className="bg-white rounded-xl shadow p-6 space-y-4">
+            <h2 className="font-semibold text-gray-800">Mundane Analysis</h2>
+            <p className="text-xs text-gray-500">Nation charts, solar ingresses, swearing-in events. Source: PVRNR Ch.35.</p>
+
+            <div className="grid grid-cols-3 gap-2">
+              {(['year','month','day'] as const).map(f => (
+                <div key={f}>
+                  <label className="text-xs text-gray-500 capitalize">{f}</label>
+                  <input type="number" value={mundaneForm[f]}
+                    onChange={e => setMundaneForm({...mundaneForm, [f]: +e.target.value})}
+                    className="w-full border rounded px-2 py-1 text-sm mt-1"/>
+                </div>
+              ))}
+            </div>
+
+            <div>
+              <label className="text-xs text-gray-500">Hour (decimal)</label>
+              <input type="number" step="0.1" value={mundaneForm.hour}
+                onChange={e => setMundaneForm({...mundaneForm, hour: +e.target.value})}
+                className="w-full border rounded px-2 py-1 text-sm mt-1"/>
+            </div>
+
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <label className="text-xs text-gray-500">Latitude °N</label>
+                <input type="number" step="0.0001" value={mundaneForm.lat}
+                  onChange={e => setMundaneForm({...mundaneForm, lat: +e.target.value})}
+                  className="w-full border rounded px-2 py-1 text-sm mt-1"/>
+              </div>
+              <div>
+                <label className="text-xs text-gray-500">Longitude °E</label>
+                <input type="number" step="0.0001" value={mundaneForm.lon}
+                  onChange={e => setMundaneForm({...mundaneForm, lon: +e.target.value})}
+                  className="w-full border rounded px-2 py-1 text-sm mt-1"/>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <label className="text-xs text-gray-500">Timezone offset</label>
+                <input type="number" step="0.5" value={mundaneForm.tz_offset}
+                  onChange={e => setMundaneForm({...mundaneForm, tz_offset: +e.target.value})}
+                  className="w-full border rounded px-2 py-1 text-sm mt-1"/>
+              </div>
+              <div>
+                <label className="text-xs text-gray-500">Chart Type</label>
+                <select value={mundaneForm.chart_type}
+                  onChange={e => setMundaneForm({...mundaneForm, chart_type: e.target.value as 'ingress' | 'nation' | 'lunar_new_year' | 'swearing_in'})}
+                  className="w-full border rounded px-2 py-1 text-sm mt-1">
+                  <option value="ingress">Solar Ingress</option>
+                  <option value="nation">Nation Chart</option>
+                  <option value="lunar_new_year">Lunar New Year</option>
+                  <option value="swearing_in">Swearing-In</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label className="text-xs text-gray-500">Event Description (optional)</label>
+              <input type="text" value={mundaneForm.event_description}
+                onChange={e => setMundaneForm({...mundaneForm, event_description: e.target.value})}
+                className="w-full border rounded px-2 py-1 text-sm mt-1"
+                placeholder="e.g. Aries ingress 2026"/>
+            </div>
+
+            <div>
+              <label className="text-xs text-gray-500">Location (optional)</label>
+              <input type="text" value={mundaneForm.location}
+                onChange={e => setMundaneForm({...mundaneForm, location: e.target.value})}
+                className="w-full border rounded px-2 py-1 text-sm mt-1"
+                placeholder="e.g. New Delhi"/>
+            </div>
+
+            <button onClick={analyzeMundane} disabled={mundaneLoading}
+              className="w-full bg-indigo-700 text-white rounded-lg py-2 text-sm font-medium hover:bg-indigo-800 disabled:opacity-50 transition">
+              {mundaneLoading ? 'Analyzing…' : '🌍 Analyze'}
+            </button>
+
+            {mundaneError && (
+              <p className="text-red-600 text-sm bg-red-50 rounded p-2">{mundaneError}</p>
+            )}
+          </div>
+
+          {mundaneResult && (
+            <div className="bg-white rounded-xl shadow p-6 space-y-4">
+              <h2 className="font-semibold text-gray-800">
+                {mundaneResult.chart_type} · {mundaneResult.date}
+                {mundaneResult.location && <span className="text-gray-500 text-sm ml-2">{mundaneResult.location}</span>}
+              </h2>
+
+              <div>
+                <h3 className="text-xs font-semibold text-gray-500 uppercase mb-1">Key Themes</h3>
+                <ul className="list-disc list-inside text-sm space-y-0.5">
+                  {mundaneResult.key_themes.map((t, i) => <li key={i}>{t}</li>)}
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-xs font-semibold text-gray-500 uppercase mb-1">Challenges</h3>
+                <ul className="list-disc list-inside text-sm space-y-0.5">
+                  {mundaneResult.challenges.map((c, i) => <li key={i}>{c}</li>)}
+                </ul>
+              </div>
+
+              {Object.keys(mundaneResult.house_significations).length > 0 && (
+                <div>
+                  <h3 className="text-xs font-semibold text-gray-500 uppercase mb-1">House Significations</h3>
+                  <table className="w-full text-sm">
+                    <tbody>
+                      {Object.entries(mundaneResult.house_significations).map(([h, sig]) => (
+                        <tr key={h} className="border-b border-gray-50">
+                          <td className="py-1 font-medium w-8">H{h}</td>
+                          <td className="text-gray-600">{sig}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+
+              {mundaneResult.compressed_dasha && mundaneResult.compressed_dasha.length > 0 && (
+                <div>
+                  <h3 className="text-xs font-semibold text-gray-500 uppercase mb-1">Dasha Periods</h3>
+                  <div className="text-sm space-y-0.5">
+                    {mundaneResult.compressed_dasha.map((d, i) => (
+                      <div key={i} className="text-gray-600">{JSON.stringify(d)}</div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      )}
     </main>
   )
 }
