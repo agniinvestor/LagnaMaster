@@ -49,6 +49,45 @@
 
 ## S187-S188 — Scoring Gaps + XIX Output API (March 2026)
 
+## S189 — Living Documentation Folder (March 2026)
+
+### docs/ folder created — 11 markdown files
+
+| File | Lines | Content |
+|------|-------|---------|
+| `docs/MEMORY.md` | 187 | Session state, startup checklist, next session, wiring gaps, bug status |
+| `docs/ARCHITECTURE.md` | 613 | Full module reference with exact function signatures, data classes, all tacit knowledge from DOCS.md |
+| `docs/BUGS.md` | 108 | Accurate bug status (all fixed S1–S188), active issues C-18/PG-1/SK-1/UI-1/FX-1/EPH-1/R21-1 |
+| `docs/CHANGELOG.md` | 179 | Session history S1–S188 with S189 template |
+| `docs/GUARDRAILS.md` | 266 | All 24 guardrails G01–G24 with severity and compliance status |
+| `docs/CLASSICAL_CORPUS.md` | 185 | Text inventory, encoding plan, yoga expansion, library ecosystem |
+| `docs/KPIS.md` | 86 | All 8 KPI domains with baselines and targets |
+| `docs/RESEARCH.md` | 113 | OB-3 calibration, OSF status, SHAP framework, data quality biases |
+| `docs/ROADMAP.md` | 141 | Complete phase plan S189–S1050+ with gate criteria |
+| `docs/PREDICTION_PIPELINE.md` | 178 | 10-layer prediction quality architecture vs competitors |
+| `docs/SESSION_TEMPLATE.md` | 189 | Reusable planning template with pre/post checklists |
+
+**Key tacit knowledge preserved from DOCS.md:**
+- `_SENTINEL` pattern in `db.py`; WAL mode on every connection
+- `flags=258` = FLG_SWIEPH + FLG_SPEED (confirms real SE files active)
+- Ketu = `Rahu.longitude + 180° mod 360`
+- 22 asymmetric pairs in Naisargika matrix
+- AntarDasha formula: `maha_years × VIMSHOTTARI_YEARS[antar_lord] / 120`
+- AV fixed totals: Sun=50, Moon=48, Mars=42, Mercury=55, Jupiter=57, Venus=52, Saturn=40, Sarva=344
+- South Indian SVG: CELL=130px, 520×520px, exact cell position dict
+- Cazimi = +0.5 override; Asta Vakri = −0.5 (not −1.0); Rx_orb = direct_orb − 2°
+- `fastapi` not `fastapi[standard]` in requirements.txt
+- `asynccontextmanager` lifespan; `/scores` always recomputed from birth data
+- War loser: `getattr(chart, 'planetary_war_losers', set())`; `axes.d1.scores` mutated in-place
+- R17/R18 score 0.0 — strict_school has no numeric effect yet
+
+**Ground truth methodology:**
+- update_docs_s188.py was used as the source of truth (not the GitHub web UI)
+- All bug statuses, session numbers, and test counts verified against that script
+- GitHub UI shows stale cached data — always use `git log` instead
+
+
+
 ### S187 — Wiring Gaps Closed
 - **multi_axis_scoring.py**: Graha Yuddha war loser −1.5 bhavesh penalty
   (Saravali Ch.4 v.18-22); `strict_school` param on `score_axis`/`score_all_axes`;

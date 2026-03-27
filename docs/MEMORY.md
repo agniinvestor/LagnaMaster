@@ -1,295 +1,176 @@
-# LagnaMaster — Project Memory
-
-> Last updated: 2026-03-21
-> Sessions complete locally: 1–100
-> Sessions 101–108: committed on remote — run `git pull` before next session
+# MEMORY.md — LagnaMaster Session State
+> **⚠️ MANDATORY: Update this file at the END of every session without fail.**
+> Ground truth = git commits + update_docs_s*.py scripts, NOT the GitHub UI (known caching issue).
 
 ---
 
-## Current State
+## ⚠️ Git Caching Warning
 
-| Item | Value |
-|------|-------|
-| Sessions (local) | 1–100 complete |
-| Sessions (remote) | 101–108 committed (Phase 0 classical correctness) |
-| Tests passing | 963 |
-| Engine version | 3.0.0 |
-| Stack | pyswisseph · FastAPI + Celery + Redis · PostgreSQL · Next.js 14 · K8s Helm · JWT · GitHub Actions |
-| Next action | `git pull` then continue Phase 0 (Sessions 109+) per AUDIT.md |
+The GitHub web interface shows stale data (Sessions 1–10, 222 tests). This is a known caching issue.
+**Always verify via `git log --oneline -5 && git status` — never trust the GitHub UI.**
+
+The `update_docs_s188.py` in the repo root is the canonical documentation-sync artifact.
+When in doubt, read that file to reconstruct state.
 
 ---
 
-## Repository Layout
+## Actual Current State (Sessions 1–188 complete — March 2026)
 
-```
-src/
-  ephemeris.py              BirthChart, PlanetPosition (pyswisseph wrapper)
-  scoring.py                22-rule pilot heuristic (Sessions 1–10)
-  scoring_v2.py             Declarative engine + ENGINE_VERSION (S32)
-  scoring_v3.py             Full 23-rule × 5-axis engine — current production
-  multi_axis_scoring.py     5-axis composite: D1/D9/D10/Chandra/AL
-  db.py                     SQLite (pilot)
-  db_pg.py                  PostgreSQL immutable inserts (production)
-  cache.py                  Redis 3-tier
-  report.py                 reportlab PDF
-  worker.py                 Celery workers
-  auth.py                   JWT + bcrypt
-  config.py                 CalcConfig dataclass
-  montecarlo.py             ±30 min birth time rectification
+### Repository
+- **Repo:** `github.com/agniinvestor/LagnaMaster`
+- **Engine version:** `v3.0.0`
+- **Python:** `3.14`
+- **Ephemeris:** pyswisseph **JPL DE431** real files (`sepl_18.se1` + `semo_18.se1`) — Moshier fallback **retired**
+- **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
-  calculations/             63 modules (full list below)
-  guidance/                 8 modules — consumer safety pipeline
-  privacy/                  3 modules — GDPR/DPDP/CCPA
-  feedback/                 3 modules — governance
-  api/
-    main.py                 FastAPI v1 (pilot)
-    main_v2.py              FastAPI v2 — production (include all routers here)
-    auth_router.py
-    school_router.py        Parashari / Jaimini / KP school gate
-    empirica_router.py      Accuracy event logging
-    mobile_router.py        /mobile lightweight endpoints
-    models.py               Pydantic v2
+### Test Status
+- **1338 passing, 3 skipped, 0 lint errors, CI green**
+- The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
+- 200+ ADB fixture charts covering all 12 Lagnas
 
-frontend/                   Next.js 14 + TypeScript + Tailwind
-  src/components/guidance/  DomainCard.tsx, SignalBar.tsx
-  src/components/timing/    TimingCalendar.tsx
-  src/components/onboarding/ OnboardingFlow.tsx
-  src/app/api/guidance/     route.ts
+### Session Progress
+- **Sessions 1–10:** Pilot build — 12 calculation modules, 222 tests, Docker, Streamlit UI
+- **Sessions 11–160:** Classical depth — all major calculation modules, 1000+ tests
+- **Sessions 161–162:** Wiring fixes — Topocentric Moon, functional dignity in R02/R09
+- **Sessions 163–186:** Scoring depth, school-mixing fix, regression snapshot
+- **Sessions 187–188:** Final wiring gaps + XIX output API + Postgres routing + Swiss Ephemeris upgrade
+- **Next session:** S189
 
-helm/lagnamaster/           Kubernetes Helm chart
-migrations/                 Alembic PostgreSQL migrations
+---
+
+## Session Startup Checklist (Run BEFORE Every Session)
+
+```bash
+# Step 1: Verify actual state — ignore GitHub UI
+cd ~/LagnaMaster && git log --oneline -5 && git status
+
+# Step 2: Lint check (must be 0)
+.venv/bin/ruff check src/ tests/ tools/ 2>&1 | grep -c 'error'
+
+# Step 3: Test count (must match or exceed 1338)
+PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=no 2>&1 | tail -3
+
+# Step 4: Read docs/MEMORY.md — check "Next Session"
+# Step 5: Read docs/CHANGELOG.md — last 30 lines
+# Step 6: Read session entry in docs/ROADMAP.md
+# Step 7: Check docs/GUARDRAILS.md for applicable guardrails
+# Step 8: If running empirical analysis → verify OSF timestamp first (G22)
 ```
 
 ---
 
-## Calculation Module Inventory (63 modules)
+## Next Session: S189
 
-### Astronomical Foundation
-- `ephemeris.py` — BirthChart; ayanamshas: Lahiri(1)/Raman(3)/KP(5)/Fagan-Bradley(0)
-- `nakshatra.py` — 27 nakshatras, padas, D9 navamsha, Ganda Mool
-- `house_lord.py` — whole-sign, Kendra/Trikona/Dusthana/Upachaya
-- `friendship.py` — Naisargika + Tatkalik friendships
-- `panchadha_maitri.py` — full 7×7 PanchadhaMatrix; wired to scoring (S50)
-- `dignity.py` — dignity levels, combustion, Cazimi, Neecha Bhanga
-- `shadbala.py` — 6-component Virupas (partial — Phase 0 fixes pending)
-- `dig_bala.py` — continuous 0.0–1.0 score; all 7 planets verified (S52)
-- `sayanadi_full.py` — 12-state Avastha; full priority chain (S49)
-- `avastha.py` — Deeptadi/Baladi/Lajjitadi states (S29)
-- `graha_yuddha.py` — planetary war; 5 planets only (Mars/Merc/Jup/Ven/Sat) (S32)
-- `orb_strength.py` — orb-sensitive strength; pvrnr_close ≤6°; reduces_yoga >8° (S57)
-- `config_toggles.py` — CalcConfig; ayanamsha/node/retro toggles (S55)
+### Immediate Priority Queue
 
-### Divisional Charts
-- `vargas.py` — 20 divisional charts D1–D60
-- `varga_agreement.py` — ★★/★/○ per-house D1/D9/D10 confidence (S56)
-
-### Dasha Systems (9)
-- `vimshottari_dasa.py` — 120yr; MD × AD × PD
-- `narayana_dasha.py` — 81yr Rasi dasha
-- `yogini_dasha.py` — 36yr, 8 Yoginis
-- `chara_dasha.py` — Jaimini sign dasha
-- `kalachakra_dasha.py` — 100yr; Moon D9 pada; Savya/Apasavya; Deha/Jeeva (S94)
-- `ashtottari_dasha.py` — 108yr, 8 planets; conditional (S100)
-- `shoola_dasha.py` — Shoola (longevity) + Sudasa (material success) (S95)
-- `tara_dasha.py` — 9-category nakshatra: Janma→Ati-Mitra (S96)
-- `narayana_argala.py` — Argala modifier on active Narayana Dasha sign (S54)
-
-### Yoga Detection (200+)
-- `yogas.py` — core 13 types
-- `extended_yogas.py` — 200+ yogas including Nabhasa and Viparita Raja
-- `yogas_graha.py` — YOGA_Graha sheet; Budhaditya/Saraswati/Chandra-Mangal/Kahala (S53)
-- `yogas_pvrnr.py` — PVRNR Ch.11: Guru-Mangala/Amala/Sankha/Vasumati etc. (S62)
-- `yoga_fructification.py` — 3-condition check; Amsa levels; Full/Partial/Weak/Minimal (S58)
-
-### Scoring Engines
-- `scoring.py` — 22-rule pilot; clamped [−10,+10]
-- `scoring_v2.py` — declarative; ENGINE_VERSION audit trail
-- `scoring_v3.py` — 23-rule; 5 lagna axes; current production
-- `multi_axis_scoring.py` — D1/D9/D10/Chandra/AL composite
-- `rule_interactions.py` — named compound interactions
-
-### Synthesis & Judgment (Phase 9)
-- `functional_roles.py` — per-lagna functional maleficence matrix (S28)
-- `pressure_engine.py` — Life Pressure Index composite (S30)
-- `argala.py` — Argala + Arudha Lagna (S31)
-- `arudha_perception.py` — AL reality vs perception 2×2 model (S61)
-- `lagnesh_strength.py` — 9-condition cross-cutting modifier for all 12 houses (S51)
-- `stronger_of_two.py` — PVRNR p194 5-condition hierarchy (S59)
-- `planet_chains.py` — stelliums, dispositor chains, mutual reception (S67)
-- `planet_effectiveness.py` — 7-measure 0.0–1.0 effectiveness (S63)
-- `av_transit.py` — AV-weighted transit; SAV/BAV thresholds (S60)
-- `dominance_engine.py` — classical override rules: kendra suppression, combust blocking (S64)
-- `promise_engine.py` — Promise/Capacity/Delivery 3-level timing (S65)
-- `domain_weighting.py` — 7 domains; per-domain varga weights (S66)
-- `house_modulation.py` — Upachaya age maturation; malefics in 3/6/10/11 beneficial (S68)
-- `confidence_model.py` — 5-component: varga/conflict/sensitivity/boundary/role (S69)
-- `chart_exceptions.py` — 7 exception checks with severity (S70)
-
-### Specialised Branches (Sessions 91–100)
-- `panchanga.py` — 5-limb almanac; Hora; Choghadiya; Amrita/Sarvaartha Siddhi
-- `muhurta.py` — 7 task types; PVRNR Table 79; Tarabala/Chandrabala; 0–7 score
-- `prashna.py` — horary; 10 query types; Yes/Possible/Unlikely/No verdict
-- `upaya.py` — remedial; PVRNR Tables 77–78; auto-detect afflictions
-- `mundane.py` — nation/ingress/swearing-in; compress_vimshottari()
-- `contextual.py` — partial DKP; era-aware profession mapping; practitioner note required
-
-### Consumer Safety Pipeline (Phases 10–14)
-- `guidance/score_to_language.py` — numerical → human-safe; 5-tier; raw scores gated
-- `guidance/fatalism_filter.py` — rewrites deterministic language post-processing
-- `guidance/explainability_tiers.py` — L1/L2/L3 (L3 opt-in resets each session)
-- `guidance/guidance_api.py` — single consumer contract; POST /guidance
-- `guidance/disclaimer_engine.py` — domain-specific disclaimers; dependency prevention
-- `guidance/educational_layer.py` — Learn mode; classical reasoning
-- `guidance/reflection_prompts.py` — Socratic framing
-- `guidance/practitioner_handoff.py` — referral logic; sanitised chart summary
-
-### Privacy & Compliance
-- `privacy/consent_engine.py` — GDPR Art.7+17; DPDP; CCPA; right to erasure cascade
-- `privacy/family_consent.py` — per-member consent; Kundali Milan requires both
-- `privacy/data_minimisation.py` — birth time to minute; IP hashed; 90-day retention
-
-### Feedback Governance
-- `feedback/feedback_loop.py` — human-supervised queue; reproducibility lock
-- `feedback/harm_escalation.py` — pattern detection; gentle prompt only
-- `feedback/dependency_prevention.py` — session frequency monitor; no streaks
+| Priority | Item | Effort |
+|----------|------|--------|
+| 🟠 HIGH | C-18: 8 diverse stress-test fixtures (Neecha Bhanga, Graha Yuddha, nakshatra cusp, Parivartana, female, high-lat >55°N, year-boundary, BC date) | 1 day |
+| 🟠 HIGH | Verify Shadbala Kala Bala all 8 sub-components complete | 2 hr |
+| 🟠 HIGH | PostgreSQL live test (PG_DSN, run the 3 skipped tests) | 2 hr |
+| 🟡 MED | Confidence model surfaced in Streamlit UI | 2 hr |
+| 🟡 MED | Nehru Capricorn Lagna skip — investigate root cause | 1 hr |
+| 🟡 MED | BC date charts: `seplm_18.se1` + `semom_18.se1` in `ephe/` | 30 min |
+| 🔵 FUTURE | OB-3: Empirical calibration ML pipeline (500+ charts) | weeks |
+| 🔵 FUTURE | Mundane astrology consumer pipeline | 3–4 days |
 
 ---
 
-## Critical Invariants
+## All Wiring Gaps — Status (as of S188)
 
-1. `compute_chart()`: `hour=0` is valid (midnight) — NEVER treat as falsy
-2. Ketu = Rahu + 180° mod 360 — always derived, never from ephemeris
-3. Whole-sign houses for Parashari natal; Bhava Chalita is a pending overlay
-4. `scoring_v3.ENGINE_VERSION` must be stored in `score_runs.engine_version` for audit
-5. `functional_roles.py` requires full `chart` object — needs planet positions for house occupancy
-6. `pressure_engine.py` is additive approximation — label as "heuristic" in all UI output
-7. `graha_yuddha.py` applies to 5 planets ONLY: Mars/Mercury/Jupiter/Venus/Saturn — never luminaries or nodes
-8. The scoring engine is a heuristic — additive weights are non-classical; never present as authoritative verdicts
-9. `upaya.py` recommendations ALWAYS carry disclaimer — never stripped in any response
-10. Consumer API L1/L2 must NEVER expose raw house scores or Shadbala virupas
-11. L3 opt-in resets each session — not persisted — prevents normalisation of raw scores
-12. Right to erasure is a cascade: birth data + outputs + event logs → tombstone record
-13. `qualifies_for_ashtottari()` MUST be called before using ashtottari dasha — Rahu not in H1/H7
-14. `panchanga.py` supersedes `panchang.py` — never call the old module
-15. `config_toggles.py` CalcConfig must use `to_dict()`/`from_dict()` for API reproducibility
-16. `varga_agreement.py` ★★/★/○ flags feed into `confidence_model.py` as the 30% component
-17. `montecarlo.py` only runs after all modules pass India 1947 regression
-18. `db_pg.py` immutable inserts — chart records never updated; only new `score_runs` rows
-19. Ashtottari is conditional — if chart doesn't qualify, fall back to Vimshottari
-20. `contextual.py` is explicitly partial DKP — practitioner note is not optional
+All critical wiring gaps are **CLOSED**. No outstanding gaps.
+
+| Gap | Closed In | How Fixed |
+|-----|-----------|-----------|
+| Topocentric Moon (`FLG_TOPOCTR`) | S161 | `swe.set_topo()` + `SEFLG_TOPOCTR` in `ephemeris.py` |
+| Functional dignity in R02/R09 | S162 | `compute_functional_classifications(lagna_si)` replacing natural classification |
+| Dasha scoring wired to `score_chart_v3` | S187 | Real implementation replacing stub; mutates `axes.d1.scores` when `on_date` supplied |
+| War loser penalty in `_score_one_house` | S187 | `getattr(chart, 'planetary_war_losers', set())`; −1.5 penalty (Saravali Ch.4 v.18-22) |
+| `strict_school` param on `score_axis`/`score_all_axes` | S187 | Wire live; `school_score_adjustment()` called in strict mode |
+| XIX SVG/PDF/guidance/confidence API | S188 | 5 new endpoints in `src/api/main.py` |
+| Postgres routing (`db_pg` replaces `db`) | S188 | `db_pg` with automatic SQLite fallback when `PG_DSN` unset |
+| Swiss Ephemeris real files | S188 | `sepl_18.se1` + `semo_18.se1` from `github.com/aloistr/swisseph` |
 
 ---
 
-## Regression Fixture
+## Bug Status (all resolved as of S188)
+
+| ID | Status |
+|----|--------|
+| P-1 (midnight falsy) | ✅ FIXED S1-S2: `if hour is None` in `ephemeris.py` |
+| P-4 (ayanamsha silent fail) | ✅ FIXED S1-S2: raises `ValueError` immediately |
+| N-1 (Taurus=4yr) | ✅ FIXED S1-S2: corrected to 7yr in `narayana_dasa.py` |
+| S-2 (J14=3851) | ✅ FIXED S8: `min(60, mean_motion/|speed|×60)` |
+| E-1 | ✅ NOT PRESENT in Python — `swe.julday` handles it; regression test added |
+| A-2 | ✅ NOT PRESENT in Python — `speed < 0` used directly; regression test added |
+
+---
+
+## Active Scoring Invariants (live as of S188)
+
+| # | Invariant | Source |
+|---|-----------|--------|
+| 35 | War loser bhavesh = −1.5 penalty to house score (permanent) | Saravali Ch.4 v.18-22 |
+| 36 | `strict_school=True` deducts Jaimini contributions in Parashari mode | Architecture decision |
+
+Note: R17/R18 currently score 0.0 — so Invariant #36 has no numeric effect yet.
+
+---
+
+## India 1947 Reference Chart (Frozen Regression Fixture)
 
 ```python
 INDIA_1947 = {
-    "year": 1947, "month": 8, "day": 15, "hour": 0.0,
+    "year": 1947, "month": 8, "day": 15,
+    "hour": 0.0,           # midnight IST — tests P-1 fix
     "lat": 28.6139, "lon": 77.2090,
-    "tz_offset": 5.5, "ayanamsha": "lahiri"
+    "tz_offset": 5.5,
+    "ayanamsha": "lahiri",
 }
-# Lagna: Taurus 7.7286° (±0.05°)
-# Sun: Cancer 27.989° | Moon: Cancer 3.9835°
-# Pancha-graha yoga: Sun/Moon/Mercury/Venus/Saturn in Cancer
-# H2 Wealth: D1=−5.25, D9=−2.0, D10=−2.5 → ★★ varga agreement
-# Ashtottari: does NOT qualify (Rahu in H1 from Taurus lagna)
+# Lagna: 7.7286° Taurus (tolerance ±0.05°)
+# Sun:   27.989° Cancer
+# Moon:  3.9835° Cancer → Pushya nakshatra (index 7) → Saturn birth dasha (19yr)
+# Pancha-graha yoga: Sun/Moon/Mercury/Venus/Saturn all in Cancer
+# Narayana Dasha: Taurus (7yr) → Aries (6yr) → Pisces (3yr)...
 ```
 
 ---
 
-## Phase 0 Correctness Issues (Sessions 101–108 on Remote)
+## Key Metrics (Post-S188)
 
-These were identified by the March 2026 classical audit. See `AUDIT.md` for full citations.
-
-| ID | Module | Issue | Status |
-|----|--------|-------|--------|
-| C-01 | `dignity.py` | MT degree ranges approximate; Mercury MT = 16°–20° only | 🔄 S101+ |
-| C-02 | `dignity.py` | Exaltation binary flag; needs Paramotcha gradient | 🔄 S101+ |
-| C-03 | `dignity.py` | Rahu/Ketu NEUTRAL everywhere; wrong under all schools | 🔄 S101+ |
-| C-04 | `dignity.py` | 5 Neecha Bhanga conditions missing (only 1 of 6 coded) | 🔄 S101+ |
-| C-05 | `scoring.py` | WC-halving (0.5×) non-classical; replace with BPHS ¾-strength | 🔄 S101+ |
-| C-06 | `vimshottari_dasa.py` | Nakshatra float: `int(lon/13.333)` → use `int(lon*3/40)` | 🔄 S101+ |
-| C-07 | `ashtakavarga.py` | Trikona Shodhana missing; raw bindus meaningless | 🔄 S101+ |
-| C-08 | `ashtakavarga.py` | Ekadhipatya Shodhana missing | 🔄 S101+ |
-| C-09 | `shadbala.py` | 7 of 8 Kala Bala sub-components missing | 🔄 S101+ |
-| C-10 | `shadbala.py` | Drik Bala = 0 in all charts | 🔄 S101+ |
+| Metric | Current | 2030 Target |
+|--------|---------|------------|
+| Tests passing | **1338** (3 skipped) | 8,000+ |
+| Lint errors | **0** | 0 |
+| Classical rules | 23 (R01–R23) | 3,000+ |
+| Ephemeris | **DE431 real files** | DE431 maintained |
+| ADB fixtures | **200+** (all 12 Lagnas) | 5,000+ |
+| API endpoints | **10** (5 new in S188) | — |
+| Brier score | Pre-baseline | ≤0.10 |
+| Signal isolation | Pre-baseline | +0.22 |
 
 ---
 
-## Genuinely Excluded (Theoretical Limits)
+## Session End Protocol (MANDATORY)
 
-| Item | Reason |
-|------|--------|
-| Kalachakra full textual variants | Contradictory commentators; BPHS version implemented |
-| Desha-Kala-Patra in full | Practitioner situational judgment — not parameterisable |
-| Gestalt synthesis | Named rules encoded; nonlinear expert weighting is not |
-| Prashna Marga full corpus | Separate text, different framework |
-| Medical/financial astrology | Separate disciplines with liability implications |
+```bash
+# 1. Full test suite
+PYTHONPATH=. .venv/bin/pytest tests/ -q 2>&1 | tail -5
 
-# Sessions 109-124 additions added — see PLAN.md for full detail
+# 2. Lint
+.venv/bin/ruff check src/ tests/ tools/
 
+# 3. Commit
+git add -A && git commit -m "feat(S[N]): [description]"
+git push
 
-## Sessions 135-160
-S135 Rashi Drishti. S137 functional_dignity. S138 avasthas. S142 transit_quality_advanced. S146 upagrahas_derived. S147 shadbala_patches. S149 varshaphala. S150 karakamsha. S140/145 yoga_strength. S154 dasha_activation.
+# 4. Run documentation sync:
+#    .venv/bin/python3 update_docs_s[N].py
+#    git add docs/ MEMORY.md PLAN.md CHANGELOG.md README.md
+#    git commit -m "docs(S[N]): sync documentation"
 
-
-## Sessions 139-160 Pending Build
-S139 dasha_scoring.py — dasha-sensitized scoring with query_date
-S148 muhurtha_complete.py — Tarabala+Chandrabala+Panchaka+Siddha+Vishti+Abhijit
-S155 kp_sublord.py — KP 249 sub-lord table + significators + ruling planets
-S156 calc_config.py — CalcConfig.school declaration (Parashari/Jaimini/KP/Tajika)
-S158 confidence_model.py — Birth time uncertainty propagation + confidence intervals
-S159 sudarshana.py — Sudarshana Chakra + Dasha Pravesh charts
-G-3  shodashavarga_bala.py — 16-varga Shodashavarga Bala
-Patches: topocentric Moon note, asta_vakri orbs, guru Sade Sati, Abhijit, SVG ARIA
-
-
-## Sessions 161-170 (Pending Queue Complete)
-S161 Topocentric Moon patched in ephemeris.py (swe.set_topo)
-S162 Functional dignity _is_functional_benefic/_is_functional_malefic in scoring_v3.py
-S163 score_chart_with_dasha() wrapper wired
-S164 get_dignity_with_war_override() in dignity.py
-S165/166 tests/fixtures/regression_fixtures.py — 5 reference charts + diff_scores()
-S167 north_indian_chart.py — North Indian diamond SVG + South Indian grid
-S168 pdf_export.py — 2-page HTML/PDF export with weasyprint fallback
-S169 kp_cuspal.py — cuspal sub-lord analysis, event promise, fructification
-S170 drekkana_variants.py — Parasara/Jagannatha/Somanatha D3 + vargas.py wire
-
-## S171+ Pending Queue Completion
-- diverse_chart_fixtures.py: 70+ synthetic fixtures covering all 12 Lagnas, Graha Yuddha, Parivartana, Neecha Bhanga, Kemadruma, Sannyasa, nakshatra boundaries, transits, Tarabala, Vedha, functional dignity
-- test_diverse_charts.py: parametric tests using diverse fixtures; 34-module smoke test
-- TOPOCENTRIC_MOON_ENABLED = True (was False)
-- weasyprint in requirements.txt
-- ACTIVE_DREKKANA_METHOD = "parasara" declared in vargas.py
-- baseline_india_1947.json stub created for regression testing
-
-## Session 186 — School-Mixing Fix (Audit I-B) + Regression Snapshot (J-2)
-
-### school_rules.py (src/calculations/school_rules.py)
-- SCHOOL_RULE_MAP: 22 rules tagged — R17/R18 = "jaimini", R01-R16/R19-R22 = "parashari"
-- is_rule_active(rule_id, school, strict) — strict=True enforces hard boundaries
-- filter_rules_by_school(rules, school, strict) — filters RuleResult list
-- school_score_adjustment(raw, rules, school, strict) — deducts forbidden-school contributions
-- Invariant #35: In strict parashari mode, R17/R18 contributions are deducted from house scores
-- Invariant #36: R17/R18 are Jaimini Sthir Karak rules (BPHS Ch.32 vs Jaimini Sutras Adhyaya 1 Pada 4)
-
-### regression_snap.py (src/regression_snap.py)
-- compute_snapshot() — runs scoring on all reference charts
-- save_snapshot() / load_snapshot() — JSON persistence at tests/fixtures/snap_v3.json
-- diff_against_snapshot(tolerance=0.05) — returns list of regression diffs
-- assert_no_regression() — raises AssertionError in CI if any score changed > tolerance
-- REFERENCE_CHARTS: india_1947, einstein_1879, bohr_1885
-
-### Wiring
-- scoring_v3.py: SCHOOL_RULE_DECLARATIONS_LOADED guard + documentation comment
-- scoring.py: score_chart_strict(chart, school, query_date) wrapper available
-
-### Still pending (wiring to main pipeline)
-- score_chart() does not yet call school_score_adjustment() by default
-- Requires CalcConfig to be passed through to scoring call site
-- Recommended: add `strict_school: bool = False` to score_chart() signature
-  and call school_score_adjustment() at the end of each house computation
-
-### Gap Register Update
-- I-B (school-mixing) → ⚡ WIRED (infrastructure complete, not yet default-on)
-- J-2 (regression snapshot) → ✅ COMPLETE (compute_snapshot + diff + assert_no_regression)
+# 5. Update docs/MEMORY.md — change "Next Session", update metrics
+# 6. Append to docs/CHANGELOG.md — use SESSION_TEMPLATE.md format
+# 7. Mark fixed bugs in docs/BUGS.md
+# 8. Update docs/KPIS.md if any metric moved
+```

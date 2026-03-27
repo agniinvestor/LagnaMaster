@@ -10,6 +10,26 @@ Vedic Jyotish computation engine + consumer guidance platform.
 > correctness fixes are complete (Sessions 101–188). Swiss Ephemeris (JPL DE431)
 > active — Moshier fallback retired. See [`AUDIT.md`](AUDIT.md) and [`PLAN.md`](PLAN.md).
 
+### Living Documentation
+
+A structured `docs/` folder contains all development documentation:
+
+```
+docs/
+├── MEMORY.md           Session state — read this first each session
+├── ARCHITECTURE.md     Module APIs, function signatures, tacit knowledge
+├── BUGS.md             Bug status and active issues
+├── CHANGELOG.md        Full session history
+├── GUARDRAILS.md       24 guardrails G01–G24
+├── CLASSICAL_CORPUS.md Text inventory and encoding plan
+├── KPIS.md             KPI scorecard
+├── RESEARCH.md         Calibration, OSF, SHAP framework
+├── ROADMAP.md          Phase plan S189–S1050+
+├── PREDICTION_PIPELINE.md  10-layer prediction architecture
+└── SESSION_TEMPLATE.md Reusable session template
+```
+
+
 ---
 
 ## What This Is

@@ -98,6 +98,19 @@ Not feasible without chart corpus collection. Track as separate research project
 
 ## Sessions 189+ — Remaining Roadmap
 
+## Living Documentation (docs/ folder — added S189)
+
+All structured documentation now lives in `docs/`. See `docs/ROADMAP.md` for
+the full session plan, `docs/ARCHITECTURE.md` for module reference, and
+`docs/GUARDRAILS.md` for the 24 guardrails that govern all future sessions.
+
+**Reading order for a new session:**
+1. `git log --oneline -5` — verify actual state (GitHub UI shows stale data)
+2. `docs/MEMORY.md` — current state + next session
+3. `docs/ROADMAP.md` — find session entry
+4. `docs/GUARDRAILS.md` — check applicable guardrails
+
+
 | Priority | Item | Effort |
 |----------|------|--------|
 | 🟠 | C-18: 8 diverse stress-test fixtures (Neecha Bhanga, Graha Yuddha, nakshatra cusp, Parivartana, female, high-lat, year-boundary) | 1 day |

@@ -148,6 +148,28 @@ S170 drekkana_variants.py — Parasara/Jagannatha/Somanatha D3 + vargas.py wire
 
 ## Session 188 — XIX Output/API + Postgres Routing (S188)
 
+## Documentation Folder (Added S189)
+
+A structured `docs/` folder now contains all living documentation:
+
+| File | Purpose |
+|------|---------|
+| `docs/MEMORY.md` | Primary session state — update every session |
+| `docs/ARCHITECTURE.md` | All module APIs, tacit knowledge, data classes |
+| `docs/BUGS.md` | Bug status — all fixed as of S188; active issues listed |
+| `docs/CHANGELOG.md` | Session history with full tacit knowledge |
+| `docs/GUARDRAILS.md` | All 24 guardrails G01–G24 with compliance status |
+| `docs/CLASSICAL_CORPUS.md` | Corpus status, library ecosystem, encoding plan |
+| `docs/KPIS.md` | KPI scorecard with baselines and targets |
+| `docs/RESEARCH.md` | OB-3 calibration, OSF status, SHAP framework |
+| `docs/ROADMAP.md` | Complete phase plan S189–S1050+ |
+| `docs/PREDICTION_PIPELINE.md` | 10-layer prediction quality architecture |
+| `docs/SESSION_TEMPLATE.md` | Reusable session planning template |
+
+**At session start:** Read `docs/MEMORY.md` first.
+**At session end:** Update `docs/MEMORY.md`, `docs/CHANGELOG.md`, and any other affected files.
+
+
 ### src/api/main.py
 - Version bumped to `3.0.0`
 - `src.db` → `src.db_pg` (Postgres routing with automatic SQLite fallback)
