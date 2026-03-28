@@ -228,12 +228,28 @@ def test_ruff_toml_tid251_enabled():
     assert "TID" in content, "ruff.toml must enable TID rules for import banning"
 
 
+def _ruff_exe() -> str:
+    """Find ruff: prefer venv, fall back to PATH (CI installs ruff globally)."""
+    import shutil
+    import sys
+
+    venv_ruff = ROOT / ".venv" / "bin" / "ruff"
+    if venv_ruff.exists():
+        return str(venv_ruff)
+    # CI: ruff installed globally alongside Python
+    global_ruff = shutil.which("ruff")
+    if global_ruff:
+        return global_ruff
+    # Last resort: same bin dir as the current Python interpreter
+    return str(Path(sys.executable).parent / "ruff")
+
+
 def test_ruff_passes_on_src():
     """ruff check src/ must return 0 errors."""
     import subprocess
 
     result = subprocess.run(
-        [".venv/bin/ruff", "check", "src/"],
+        [_ruff_exe(), "check", "src/"],
         capture_output=True,
         text=True,
         cwd=ROOT,
@@ -252,7 +268,7 @@ def test_ruff_blocks_pyjhora_import_in_src(tmp_path):
     test_file.write_text("import pyjhora\n")
 
     result = subprocess.run(
-        [".venv/bin/ruff", "check", "--select", "TID", str(test_file)],
+        [_ruff_exe(), "check", "--select", "TID", str(test_file)],
         capture_output=True,
         text=True,
         cwd=ROOT,
