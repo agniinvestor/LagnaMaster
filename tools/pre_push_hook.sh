@@ -13,6 +13,9 @@ set -e
 ROOT="$(git rev-parse --show-toplevel)"
 cd "$ROOT"
 
+# Raise file descriptor limit — macOS default (256) exhausts under 1300+ test suite
+ulimit -n 4096 2>/dev/null || true
+
 PYTHON=".venv/bin/python3"
 PYTEST=".venv/bin/pytest"
 RUFF=".venv/bin/ruff"

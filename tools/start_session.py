@@ -146,7 +146,8 @@ def read_roadmap(session_id: str) -> dict:
             break
 
     if session_num < 191:
-        result["phase"] = "Immediate / Pre-Phase-0"
+        result["phase"] = "Immediate / S190 queue"
+        result["convergence_layer"] = "Layer I + II — immediate fixes and wiring"
 
     # Convergence layer by phase
     convergence_map = {
@@ -208,33 +209,32 @@ def read_roadmap(session_id: str) -> dict:
 
 
 def read_active_guardrails(session_id: str) -> list[tuple[str, str]]:
-    """Return guardrails with Fix-by matching this session."""
+    """Return guardrails with Fix-by matching this session.
+    Uses heading-bounded blocks to avoid cross-block contamination."""
     text = (DOCS / "GUARDRAILS.md").read_text()
     session_num = int(re.search(r"\d+", session_id).group())
     active = []
 
-    # Find all guardrail blocks
-    blocks = re.split(r"\n(?=### G\d+|## G\d+)", text)
-    for block in blocks:
-        # Extract G-number
-        g_match = re.match(r"#{2,3} (G\d+)", block)
-        if not g_match:
-            continue
-        g_id = g_match.group(1)
+    # Find all ### G\d+ headings and their positions
+    heading_positions = [
+        (m.group(1), m.start())
+        for m in re.finditer(r"### (G\d+)", text)
+    ]
 
-        # Extract Fix-by session
-        fix_match = re.search(r"\*\*Fix by:\*\*.*?S(\d+)", block)
-        if fix_match:
-            fix_session = int(fix_match.group(1))
-            if fix_session == session_num:
-                # Get title (first non-empty line after the heading)
-                lines = block.splitlines()
-                title = ""
-                for line in lines[1:]:
-                    if line.strip() and not line.startswith(">"):
-                        title = line.strip().lstrip("*").rstrip("*").strip()
-                        break
-                active.append((g_id, title[:80]))
+    for i, (g_id, pos) in enumerate(heading_positions):
+        # Block ends at next heading or end of file
+        end = heading_positions[i + 1][1] if i + 1 < len(heading_positions) else len(text)
+        block = text[pos:end]
+
+        # Find FIRST Fix-by in this block only
+        fix_match = re.search(r"\*\*Fix by:\*\*\s*S(\d+)", block)
+        if fix_match and int(fix_match.group(1)) == session_num:
+            # Extract title from heading line (strip emoji and severity marker)
+            title_match = re.match(
+                r"### G\d+\s*[🔴🟠🟡🟢]?\s*(.*?)$", block, re.MULTILINE
+            )
+            title = title_match.group(1).strip() if title_match else g_id
+            active.append((g_id, title[:80]))
 
     return active
 
