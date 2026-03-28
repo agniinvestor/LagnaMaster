@@ -894,3 +894,16 @@ S251 — Remedies and Upayas (classical astrological remedies)
 
 ### Next session
 S252 — BPHS Yoga Exhaustive (all 500+ yoga combinations from Ch.35-45)
+---
+
+## S252 — 2026-03-28 — BPHS Yoga Exhaustive (150 rules)
+
+**Tests:** 2028 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_yoga_exhaustive.py`: 150 rules (YEX001-YEX150) — Exhaustive encoding of BPHS Ch.35-56 yoga catalog: Pancha Mahapurusha (5), Nabhasa yogas — Ashraya/Dala/Sankhya (15+), Raja Yogas from kendra-trikona lords (11), Dhana Yogas (10), Neechabhanga Raja Yoga (8 cancellation conditions), Viparita Raja Yoga — Harsha/Sarala/Vimala (3), Parivartana yogas (12), Lunar yogas — Sunapha/Anapha/Durudhara/Kemadruma/Gaja-Kesari (10+), Solar yogas — Veshi/Voshi/Ubhayachari/Budha-Aditya (4), Named yogas — Saraswati/Lakshmi/Parijata/Mahabhagya/Adhi/Amala/Vasumati (15+), Sanyasa/Moksha/Pravrajya/Bandhana/Kala Sarpa (8), Dosha yogas — Mangal/Pitru/Matru/Putra/Vivaha (6), Graha Bala yogas — all 7 planets (8), Nabhasa patterns (10+).
+
+**Corpus total: 1334 rules**
+
+### Next session
+S253 — BPHS Bhava Exhaustive (all 12 houses, deep significations)
