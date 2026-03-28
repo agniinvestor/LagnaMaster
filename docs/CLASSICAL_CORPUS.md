@@ -93,9 +93,9 @@ should be weighted by which convergence layer they strengthen and how:
 
 | Library | Key Features | Integration |
 |---------|-------------|-------------|
-| **VedAstro** | 1,000+ yogas, all planets/houses, Muhurtha, Life predictor | S191: Install + cross-validate |
+| **VedAstro** | 1,000+ yogas, all planets/houses, Muhurtha, Life predictor | ✅ S191: Installed (v1.23.20), cross-validate script in tools/ |
 | **VedAstro MCP Server** | MCP server — Claude directly to Vedic calculations in real-time | S191: Dev tool only, NOT production |
-| **VedAstro DOB Dataset** | 15,800 records, Rodden AA, accurate timezone+DST | S191: Download to `data/vedastro/` |
+| **VedAstro DOB Dataset** | 15,800 records, Rodden AA, accurate timezone+DST | ✅ S191: data/vedastro/ created, download pending |
 | **VedAstro Marriage Dataset** | 15,000 records, marriage type/divorce dates/outcome | S611: H7 validation |
 | **jyotishganit** | D1–D60, Shadbala 6-fold, Vimshottari, Panchanga | Cross-validate D1–D60 |
 | **pyswisseph** | Swiss Ephemeris Python binding, DE431 | Already integrated (S188: real files active) |

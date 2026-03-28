@@ -1,0 +1,16 @@
+# ruff.toml — LagnaMaster lint configuration
+# S191 Phase 0: G17 enforcement — pyjhora banned in src/
+
+[lint]
+# Extend ruff defaults (E4, E7, E9, F) with TID for import banning
+extend-select = ["TID"]
+
+# TID251: ban pyjhora from src/ — AGPL-3.0 algorithm-study only (G17)
+[lint.flake8-tidy-imports.banned-api]
+"pyjhora" = {msg = "G17: pyjhora is AGPL-3.0 — study-only, never import in production src/. See CLASSICAL_CORPUS.md."}
+"jhora" = {msg = "G17: jhora is pyjhora's internal module — AGPL-3.0, banned in src/. See CLASSICAL_CORPUS.md."}
+
+# Allow pyjhora/jhora in tests/ and tools/ (algorithm study permitted there)
+[lint.per-file-ignores]
+"tests/*" = ["TID251"]
+"tools/*" = ["TID251"]
