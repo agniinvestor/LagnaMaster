@@ -70,8 +70,8 @@ def run_ruff() -> int:
         [".venv/bin/ruff", "check", "src/", "tests/", "tools/"],
         capture_output=True, text=True, cwd=ROOT
     )
-    lines = [l for l in r.stdout.splitlines() if l.strip()]
-    return len([l for l in lines if ": E" in l or ": W" in l or ": F" in l])
+    lines = [line for line in r.stdout.splitlines() if line.strip()]
+    return len([line for line in lines if ": E" in line or ": W" in line or ": F" in line])
 
 
 def read_memory() -> dict:
@@ -246,7 +246,6 @@ def build_read_list(session_id: str, roadmap: dict) -> list[tuple[str, str]]:
     File specs use line ranges where possible: 'docs/MEMORY.md:1-30'
     """
     reads = []
-    session_num = int(re.search(r"\d+", session_id).group())
     deliverable = (roadmap.get("deliverable") or "").lower()
 
     # Always: ROADMAP.md entry for this session (already extracted, but Claude needs context)

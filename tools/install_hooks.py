@@ -8,7 +8,6 @@ Sets up:
 Run once after cloning or after tools/pre_push_hook.sh is updated:
     .venv/bin/python3 tools/install_hooks.py
 """
-import os
 import shutil
 import stat
 import sys

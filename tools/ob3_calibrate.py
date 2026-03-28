@@ -31,7 +31,6 @@ import time
 from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -172,8 +171,7 @@ def build_labels(fixtures: list[dict]) -> dict[tuple[int, str], list[float]]:
     Returns {(house, category_key): [label per fixture]}
     label = +direction if category present, else NaN (skip)
     """
-    import math
-    NaN = float("nan")
+    float("nan")
 
     # Map fixture index → set of categories
     cat_sets = [set(d.get("categories", [])) for d in fixtures]
