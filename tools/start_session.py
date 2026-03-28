@@ -11,7 +11,11 @@ Usage:
     .venv/bin/python3 tools/start_session.py --session S193
     .venv/bin/python3 tools/start_session.py --no-test-run
 """
-import argparse, os, re, subprocess, sys
+import argparse
+import os
+import re
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -58,7 +62,7 @@ def git_sha():
 
 def git_status_clean():
     r = subprocess.run(["git","status","--porcelain"], capture_output=True, text=True, cwd=ROOT)
-    tracked = [l for l in r.stdout.splitlines() if l and not l.startswith("??")]
+    tracked = [ln for ln in r.stdout.splitlines() if ln and not ln.startswith("??")]
     return len(tracked) == 0
 
 
@@ -93,8 +97,8 @@ def run_ruff():
         [str(ROOT / ".venv/bin/ruff"), "check", "src/", "tests/", "tools/"],
         capture_output=True, text=True, cwd=ROOT,
     )
-    lines = [l for l in r.stdout.splitlines() if l.strip()]
-    return len([l for l in lines if ": E" in l or ": W" in l or ": F" in l])
+    lines = [ln for ln in r.stdout.splitlines() if ln.strip()]
+    return len([ln for ln in lines if ": E" in ln or ": W" in ln or ": F" in ln])
 
 
 def read_memory():
@@ -272,9 +276,12 @@ def predict_output_files(session_id, deliverable):
 
 def estimate_test_delta(session_id, roadmap):
     session_num = int(re.search(r"\d+", session_id).group())
-    if 191 <= session_num <= 215: return "+15 to +30"
-    elif 216 <= session_num <= 410: return "+10 to +25"
-    elif 411 <= session_num <= 530: return "+20 to +50"
+    if 191 <= session_num <= 215:
+        return "+15 to +30"
+    elif 216 <= session_num <= 410:
+        return "+10 to +25"
+    elif 411 <= session_num <= 530:
+        return "+20 to +50"
     return "+10 to +25"
 
 
@@ -314,9 +321,11 @@ def format_packet(session_id, sha, live_tests, ruff_errors, roadmap, active_guar
         lines.append("")
 
     lines.append("FILES TO CREATE:")
-    for f in new_files: lines.append(f"  {f}")
+    for f in new_files:
+        lines.append(f"  {f}")
     lines.append("FILES TO MODIFY:")
-    for f in modified_files: lines.append(f"  {f}")
+    for f in modified_files:
+        lines.append(f"  {f}")
     lines.append("")
 
     _CALC = {"ephemeris.py","varga.py","narayana_dasa.py","nakshatra.py","dignity.py"}
@@ -331,7 +340,8 @@ def format_packet(session_id, sha, live_tests, ruff_errors, roadmap, active_guar
     lines.append("COMMIT WHEN DONE:")
     if len(" ".join(tracked)) > 70:
         lines.append("  git add \\")
-        for p in tracked[:-1]: lines.append(f"    {p} \\")
+        for p in tracked[:-1]:
+            lines.append(f"    {p} \\")
         lines.append(f"    {tracked[-1]}")
     else:
         lines.append(f"  git add {chr(32).join(tracked)}")
