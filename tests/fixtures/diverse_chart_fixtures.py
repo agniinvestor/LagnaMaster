@@ -1177,6 +1177,68 @@ FEMALE_CHART_FIXTURES = {
 }
 
 
+# ─── SECTION I (C-18): BC date fixtures ───────────────────────────────────────
+# Tests Swiss Ephemeris handling of negative (proleptic Julian) years.
+# Source: SE manual §2.1 (proleptic Julian calendar for dates before 1 AD).
+# Relevant: BPHS timeless rules must apply regardless of era.
+
+BC_DATE_CHARTS = {
+    "julius_caesar_era": {
+        # 100 BCE — proleptic Julian year -99
+        # Representative Aries-rising chart for classical era stress test.
+        # Planets placed in typical mid-year positions for 100 BCE.
+        "lagna": AR + 8,  # Aries Lagna
+        "planets": _p(
+            Sun=GE + 12,   # Sun in Gemini (summer)
+            Moon=SC + 5,   # Moon in Scorpio
+            Mars=CA + 20,  # Mars debilitated in Cancer — NB check
+            Mercury=GE + 5,
+            Jupiter=PI + 10,  # Jupiter in Pisces (own sign)
+            Venus=TA + 18,    # Venus exalted in Taurus
+            Saturn=LI + 3,    # Saturn exalted in Libra
+        ),
+        "birth_date": "-0099-06-15",  # proleptic ISO (100 BCE = year -99)
+        "birth_year": -99,
+        "rule_triggers": ["BC_DATE", "NEGATIVE_YEAR", "SWISS_EPHEM_PROLEPTIC"],
+        "description": (
+            "100 BCE chart — negative proleptic year. "
+            "Swiss Ephemeris must handle year -99 correctly. "
+            "Tests that scoring/yoga detection is era-agnostic."
+        ),
+        "expected": {
+            "era": "BCE",
+            "scoring_runs": True,
+            "yoga_detection_runs": True,
+        },
+    },
+    "archimedes_era": {
+        # 287 BCE — proleptic Julian year -286
+        # Extreme negative year: tests ephemeris boundary at classical antiquity.
+        "lagna": VI + 15,  # Virgo Lagna
+        "planets": _p(
+            Sun=CP + 10,   # Sun in Capricorn (winter)
+            Moon=TA + 22,  # Moon exalted in Taurus
+            Mars=AR + 5,   # Mars in own sign Aries
+            Mercury=SA + 8,
+            Jupiter=CA + 12,
+            Venus=AQ + 3,
+            Saturn=SC + 18,
+        ),
+        "birth_date": "-0286-12-01",
+        "birth_year": -286,
+        "rule_triggers": ["BC_DATE", "NEGATIVE_YEAR", "EXTREME_ANCIENT"],
+        "description": (
+            "287 BCE chart — deep antiquity negative year. "
+            "Tests engine stability at extreme date range."
+        ),
+        "expected": {
+            "era": "BCE",
+            "scoring_runs": True,
+        },
+    },
+}
+
+
 # ─── Master fixture registry ───────────────────────────────────────────────────
 ALL_DIVERSE_FIXTURES = {
     **{f"nb_{k}": v for k, v in NEECHA_BHANGA_CHARTS.items()},
@@ -1186,6 +1248,7 @@ ALL_DIVERSE_FIXTURES = {
     **{f"nk_{k}": v for k, v in NAK_BOUNDARY_CHARTS.items()},
     **{f"hl_{k}": v for k, v in HIGH_LATITUDE_CHARTS.items()},
     **{f"fe_{k}": v for k, v in FEMALE_CHART_FIXTURES.items()},
+    **{f"bc_{k}": v for k, v in BC_DATE_CHARTS.items()},
 }
 
 

@@ -64,7 +64,7 @@ S189–S190 (immediate fixes)
 
 | Session | Deliverable | Guardrails | Status |
 |---------|-------------|-----------|--------|
-| S190 | Verify Shadbala Kala Bala 8 sub-components + PostgreSQL live test + Confidence model in Streamlit UI + Nehru Capricorn Lagna skip investigation | — | 🔴 |
+| S190 | Verify Shadbala Kala Bala 8 sub-components ✅ + PostgreSQL live test (PG_DSN env-gated, skipped) + Confidence model in Streamlit UI ✅ + Nehru Capricorn Lagna skip root cause documented ✅ | — | 🟡 |
 
 | Priority | Item | Effort |
 |----------|------|--------|
