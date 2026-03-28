@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–246 complete — March 2026)
+## Actual Current State (Sessions 1–247 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1958 passing, 3 skipped, 0 lint errors, CI green**
+- **1969 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -76,7 +76,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 244:** Jaimini Sutras + Upagrahas — Chara Karakas/Rashi Drishti/Arudha/Chara Dasha/Gulika; 30 rules; corpus 896; 1936 tests
 - **Session 245:** Shadbala rules — 6-fold strength/Sthana/Dig/Kala/Chesta/Naisargika/Drik; 30 rules; corpus 926; 1947 tests
 - **Session 246:** Dasha systems — Vimshottari/Ashtottari/Yogini/Kalachakra/Maraka/planet results; 30 rules; corpus 956; 1958 tests
-- **Next session:** S247
+- **Session 247:** Extended yoga rules — Pancha Mahapurusha/Nabhasa/Viparita/Moon yogas/Kartari; 30 rules; corpus 986; 1969 tests
+- **Next session:** S248
 
 ---
 

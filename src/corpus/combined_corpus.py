@@ -86,6 +86,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.jaimini_sutras_rules import JAIMINI_SUTRAS_RULES_REGISTRY  # S244
     from src.corpus.shadbala_rules import SHADBALA_RULES_REGISTRY  # S245
     from src.corpus.dasha_systems_rules import DASHA_SYSTEMS_RULES_REGISTRY  # S246
+    from src.corpus.yoga_extended_rules import YOGA_EXTENDED_RULES_REGISTRY  # S247
 
     registry = CorpusRegistry()
     sources = [
@@ -129,6 +130,7 @@ def build_corpus() -> CorpusRegistry:
         JAIMINI_SUTRAS_RULES_REGISTRY,
         SHADBALA_RULES_REGISTRY,
         DASHA_SYSTEMS_RULES_REGISTRY,
+        YOGA_EXTENDED_RULES_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():

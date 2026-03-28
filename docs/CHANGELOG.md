@@ -829,3 +829,16 @@ S246 — Dasha systems (Vimshotari, Ashtottari, Yogini)
 
 ### Next session
 S247 — Yoga extended (Pancha Mahapurusha, Dhana, Raja yogas expansion)
+---
+
+## S247 — 2026-03-28 — Extended Yoga Rules
+
+**Tests:** 1969 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `yoga_extended_rules.py`: 30 rules (YGE001-YGE030) — Extended yoga rules from BPHS Ch.35-45 (parashari), Phala Deepika Ch.6 (mantreswara), Brihat Jataka Ch.12 (varahamihira): All 5 Pancha Mahapurusha yogas (Ruchaka/Bhadra/Hamsa/Malavya/Shasha), Nabhasa yogas (Rajju/Musala/Nala/Mala/Sarpa/Shula/Yava/Kamala), Viparita Raja Yoga, Mahabhagya, Parijata, Kesari, Amala, Lakshmi, Saraswati, Kahala, Chandra-Mangala Dhana yogas, Pravrajya/Moksha/Sanyasa/Bandhana spiritual yogas, Anapha/Sunapha/Durudhara Moon yogas, Kartari Yoga.
+
+**Corpus total: 986 rules**
+
+### Next session
+S248 — Lagna (Ascendant) extended rules
