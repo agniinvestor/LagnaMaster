@@ -842,3 +842,16 @@ S247 — Yoga extended (Pancha Mahapurusha, Dhana, Raja yogas expansion)
 
 ### Next session
 S248 — Lagna (Ascendant) extended rules
+---
+
+## S248 — 2026-03-28 — Lagna Extended Rules
+
+**Tests:** 1979 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `lagna_extended_rules.py`: 30 rules (LGE001-LGE030) — All 12 Lagna (Ascendant) characteristics from BPHS Ch.7-18 (parashari), Phala Deepika Ch.1 (mantreswara), Brihat Jataka Ch.1 (varahamihira): All 12 lagna personality/body/planet profiles, Yogakaraka by element group (fire/earth/air/water), Kendra Adhipati Dosha, Trikona Adhipati Shubha, Chandra Lagna, Surya Lagna, lagna strength indicators, lagna lord in 12 houses, planets in lagna, physical characteristics, Vargottama Lagna, 8th lord in lagna, multiple planets in lagna.
+
+**Corpus total: 1016 rules — 1000+ MILESTONE ACHIEVED!**
+
+### Next session
+S249 — House significations extended (Bhava Phala)
