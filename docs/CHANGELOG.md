@@ -751,3 +751,16 @@ S240 — Uttara Kalamrita extended rules
 
 ### Next session
 S241 — Jataka Parijata extended rules
+---
+
+## S241 — 2026-03-28 — Jataka Parijata Extended Rules
+
+**Tests:** 1904 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `jataka_parijata_ext.py`: 30 rules (JPE001-JPE030) — Vaidyanatha Dikshita's Jataka Parijata (14th cent CE): all 12 lagna analyses (10 rules, grouping last 3), Parivartana yoga classifications, Neecha Bhanga Raja Yoga, Vesi/Vasi/Obhayachari/Chandra Mangala/Shakata/Kemadruma yogas, all 9 Vimshottari Mahadasha results.
+
+**Corpus total: 806 rules — 800+ MILESTONE ACHIEVED!**
+
+### Next session
+S242 — Sarvartha Chintamani / transit rules
