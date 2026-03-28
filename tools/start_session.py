@@ -16,6 +16,7 @@ Output: paste the printed brief as your FIRST message to Claude.
 """
 
 import argparse
+import os
 import re
 import subprocess
 import sys
@@ -38,19 +39,28 @@ def git_sha() -> str:
 
 
 def git_status_clean() -> bool:
+    """Returns True if no tracked files have uncommitted changes.
+    Ignores untracked files (update_docs scripts etc.) intentionally."""
     r = subprocess.run(
         ["git", "status", "--porcelain"],
         capture_output=True, text=True, cwd=ROOT
     )
-    return r.stdout.strip() == ""
+    # Only flag modified/deleted tracked files, not untracked (lines starting with ??)
+    tracked_changes = [
+        line for line in r.stdout.splitlines()
+        if line and not line.startswith("??")
+    ]
+    return len(tracked_changes) == 0
 
 
 def run_tests() -> tuple[int, int, int]:
     """Returns (passed, skipped, failed). Runs full suite."""
     print("  Running test suite...", end="", flush=True)
+    env = os.environ.copy()
+    env["PYTHONPATH"] = str(ROOT)
     r = subprocess.run(
         [".venv/bin/pytest", "tests/", "-q", "--tb=no", "--no-header"],
-        capture_output=True, text=True, cwd=ROOT
+        capture_output=True, text=True, cwd=ROOT, env=env
     )
     output = r.stdout + r.stderr
     # Parse: "1338 passed, 3 skipped"
