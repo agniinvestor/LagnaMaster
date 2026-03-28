@@ -310,3 +310,17 @@ S198 — pushkara_nav + war_loser extractors → 13 × 12 = 156 features
 
 ### Next session
 S199 — contract tests: feature_count ≥ 150, array/dict consistency
+---
+
+## S199 — 2026-03-28 — Feature Contract Tests
+
+**Tests:** 1545 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `tests/test_s199_feature_contracts.py`: 10 contract tests ensuring
+  internal consistency of ChartFeatureVector — to_array/to_dict length,
+  unique names, order consistency, all-float, 12 houses, finite values,
+  G22 Phase 6 gate (feature_count ≥ 150).
+
+### Next session
+S200 — final G22 wiring, ChartScoresV3 integration, session log export
