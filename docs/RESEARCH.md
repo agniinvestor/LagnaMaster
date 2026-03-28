@@ -4,6 +4,53 @@
 ---
 
 ## OSF Pre-Registration Status
+### Primary Research Hypothesis (must be the OSF filing at S461)
+
+The primary scientific question is NOT "does rule R04 predict career outcomes?"
+That question tests a tiny fragment of a 5,000-year tradition and produces findings
+that can be dismissed as testing an unrepresentative sample.
+
+**The primary hypothesis is:**
+> Multi-factor classical convergence — specifically, the simultaneous agreement of
+> Parashari house scoring, KP sublord analysis, and Jaimini karakamsha, combined with
+> Layer II structural activation (dasha capacity × transit delivery) — predicts
+> life outcome domains at a statistically validated rate **above any single school's
+> baseline**, as measured by Brier score improvement and signal isolation above user
+> prior probability.
+
+**Why this is the right hypothesis:**
+1. It is novel — no published study has tested whether cross-school concordance
+   is itself a predictive signal, independent of any single school's accuracy
+2. It is directly testable — the concordance score is a computed number; outcomes
+   are binary confirmed/disconfirmed events; the signal isolation formula cleanly
+   separates planetary signal from base rate
+3. It is defensible if negative — a null result (concordance not predictive above
+   individual schools) is a genuine scientific contribution that constrains future
+   astrology research
+4. It is the question that justifies the architecture — if multi-factor convergence
+   is NOT more predictive than single-school analysis, the entire convergence model
+   needs rethinking before Phase 7 product launch
+
+**Secondary hypotheses (also pre-registered, tested after primary):**
+- Category A: Individual rules that survive BH FDR correction at q<0.05
+- Category C: Classical rules with significant negative predictive validity
+  (fire when outcome doesn't occur more than expected by chance)
+- Interaction hypothesis: Does Layer I × Layer II interaction predict better than
+  either layer alone? (Tests whether structural activation adds information above
+  classical concordance)
+
+**OSF filing must specify:**
+- Primary hypothesis stated above
+- Convergence score computation (exact formula as implemented)
+- Signal isolation formula (`confidence_mean − user_prior_prob_pre`)
+- BH FDR correction at q<0.05 for all secondary hypotheses
+- Time-split cross-validation: pre-2010 train, 2010+ test
+- Minimum sample: 1,000 training-eligible confirmed events
+- Stopping rule: no analysis before minimum sample reached, regardless of schedule
+
+---
+
+
 
 | Registration | Status | Covers |
 |-------------|--------|--------|
@@ -69,6 +116,34 @@
 ---
 
 ## Signal Isolation Architecture
+### Convergence State Must Be Recorded at Prediction Time
+
+The feedback schema (Phase 3) must capture not just the user's prior probability and
+the outcome — it must also capture the **convergence state at the time of prediction**.
+This is the schema addition that makes Phase 6 Bayesian updates scientifically valid:
+
+```sql
+-- Required additions to predictions table (Phase 3 schema):
+ALTER TABLE predictions ADD COLUMN layer1_concordance_score FLOAT;    -- e.g., 0.82
+ALTER TABLE predictions ADD COLUMN layer1_varga_agreement   TEXT;      -- "★★", "★", "○"
+ALTER TABLE predictions ADD COLUMN layer2_promise_strength  TEXT;      -- "Strong", "Moderate", "Weak", "Negated"
+ALTER TABLE predictions ADD COLUMN layer2_capacity_met      BOOLEAN;   -- dasha lord check passed
+ALTER TABLE predictions ADD COLUMN layer2_delivery_met      BOOLEAN;   -- transit gate passed
+ALTER TABLE predictions ADD COLUMN convergence_tier         TEXT;      -- "Full", "L1+L2", "L1_only"
+
+-- "Full" = all three layers active (not available until Phase 6)
+-- "L1+L2" = classical + structural convergence (available from Phase 2)
+-- "L1_only" = classical concordance only (current state)
+```
+
+Without `convergence_tier` recorded at prediction time, the Bayesian update pipeline
+in Phase 6 will average together:
+- Confirmed predictions that succeeded because all layers agreed (signal)
+- Confirmed predictions that succeeded despite low concordance (possibly noise)
+
+These produce opposite training signals and must not be averaged.
+
+
 
 ```
 user_prior_prob_pre (captured BEFORE prediction shown)

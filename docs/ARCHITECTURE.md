@@ -73,6 +73,67 @@ src/ui/chart_visual.py       South Indian SVG (D1 + D9 Navamsha)
 ---
 
 ## Key Tacit Knowledge (from DOCS.md)
+> Before reading the module inventory, understand which convergence layer each module
+> contributes to. A module is not complete when it passes tests — it is complete when
+> it is correctly wired into its convergence layer and that layer's output is used
+> by downstream modules. See `docs/PREDICTION_PIPELINE.md` for the full convergence model.
+
+### Convergence Layer → Module Mapping
+
+**Layer I — Classical Convergence** (what the classical tradition says about this chart)
+```
+multi_axis_scoring.py    — 23 rules × 5 axes (D1/Chandra/Surya/D9/D10)
+rule_interaction.py      — 30 rule-pair modifiers
+lpi.py                   — 7-layer weighted integration (D1×35% + ...)
+varga_agreement.py       — ★★/★/○ cross-varga confirmation
+kp_full.py               — KP sublord school contribution
+jaimini_full.py          — Jaimini school contribution
+scoring_v3.py            — multi-school concordance output
+dominance_engine.py      — classical priority overrides
+promise_engine.py L1     — D1 score threshold → promise_present
+```
+
+**Layer II — Structural Convergence** (is the promise activation-ready right now)
+```
+promise_engine.py L2+L3  — Capacity (dasha lord) + Delivery (AV transit)
+dasha_scoring.py         — dasha-sensitized score adjustments
+yoga_fructification.py   — PVRNR three conditions (strength, orb, dignity)
+narayana_argala.py       — argala contribution to capacity
+av_transit.py            — AV bindu delivery gate
+confidence_model.py      — birth time sensitivity (precision of promise)
+vimshottari_dasa.py      — timing cascade MD→AD→PD
+narayana_dasa.py         — sign-based timing layer
+stronger_of_two.py       — disambiguation of competing activations
+```
+
+**Layer III — Empirical Convergence** (do confirmed outcomes validate the model — Phase 3+)
+```
+feedback schema          — user_prior_prob_pre + signal isolation (S491)
+Bayesian update pipeline — posterior weight updates (S746)
+HDBSCAN clustering       — chart similarity + social proof (S731)
+XGBoost + SHAP           — feature importance validation (S701)
+```
+
+**Supporting (contributes to multiple layers)**
+```
+ephemeris.py             — raw calculation substrate for all layers
+shadbala.py / dig_bala.py — strength signal feeding into L1 weight functions
+ashtakavarga.py          — AV bindus used in L1 (SAV rule) and L2 (delivery gate)
+divisional_charts.py     — varga data feeding L1 concordance and L2 promise depth
+confidence_model.py      — birth time sensitivity constrains confidence in all layers
+```
+
+### Critical Architectural Principle
+
+A module that scores correctly in isolation but is not wired to its convergence layer
+output produces no improvement to prediction quality. The four unresolved wiring gaps
+(all closed as of S188) were architectural failures of this type — functionally correct
+code producing zero downstream effect. When adding new modules, the first question is:
+**which convergence layer does this belong to, and what is its output consumed by?**
+
+---
+
+
 
 ### src/ephemeris.py
 

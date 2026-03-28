@@ -19,6 +19,40 @@
 
 ---
 
+## Domain 1b — Convergence Health Metrics
+
+These measure whether the convergence model itself is behaving correctly, independent
+of whether individual predictions turn out to be right. They are diagnostic metrics —
+deviations from expected ranges indicate architectural problems, not just prediction errors.
+
+| Metric | Current | Expected Range | Alert Condition |
+|--------|---------|---------------|----------------|
+| **Anti-prediction zone rate** | Not active | 15–28% of predictions suppressed | <10%: system overconfident (concordance thresholds too loose). >35%: corpus too thin to produce concordance. |
+| **School concordance distribution** | Not measured | ≥40% of active predictions at concordance ≥0.75 | <20% at high concordance → Phase 1 corpus is insufficient for Layer I to work |
+| **Varga agreement distribution** | Not measured | ≥30% of active predictions at ★★ (all vargas agree) | <15% at ★★ → varga calculation or encoding problem |
+| **Layer II activation rate** | Not measured | 40–60% of Layer I predictions reach Layer II push threshold | <30%: capacity/delivery gates too strict. >75%: gates not discriminating enough |
+| **Convergence state capture rate** | Not measured (schema not built) | 100% of issued predictions have convergence state recorded | <100%: Phase 6 Bayesian updates will be uninterpretable |
+| **Layer I–III agreement rate** | Not measurable until Phase 6 | Target ≥60% of high-convergence predictions confirmed | <40%: classical convergence not predicting empirical outcomes — investigate rules |
+
+**Why anti-prediction zone rate matters:** Too low means the engine is issuing predictions
+when schools genuinely disagree (epistemic overconfidence). Too high means the classical
+corpus is too thin to generate sufficient concordance for any prediction to meet the
+threshold (corpus gap). The 15–28% target band is the working hypothesis; it will be
+refined empirically once Phase 1 corpus is in place.
+
+**Why convergence state capture rate must be 100%:** If the feedback schema (Phase 3)
+doesn't record what the concordance score and Promise/Capacity/Delivery state was when
+a prediction was issued, the Phase 6 Bayesian update cannot distinguish signal from noise.
+A confirmed prediction with concordance=0.9 and full structural activation is evidence
+that the convergence model works. A confirmed prediction with concordance=0.4 and no
+structural activation is evidence that the event happened for reasons the model didn't
+identify. These are completely different training signals and must not be averaged together.
+
+---
+
+
+---
+
 ## Domain 2 — Personality Protocol
 
 | Metric | Post-S188 | After Ph.4 | 2030 Target |

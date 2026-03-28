@@ -14,6 +14,63 @@
 ---
 
 ## Current State (Post-S188)
+### Modules Built vs Rules Encoded
+
+Having a module is not the same as having the rules within it encoded correctly or completely.
+This distinction matters for sessions building on top of existing modules.
+
+| Domain | Module | Module Status | Rules Encoded | Known Gap |
+|--------|--------|---------------|---------------|-----------|
+| Shadbala | `shadbala.py` | ✅ Built | Partial | Kala Bala 8 sub-components unverified (SK-1) |
+| Yogas | `yogas.py` + `extended_yogas.py` + `yogas_graha.py` + `yogas_pvrnr.py` | ✅ Built | ~35 of 300+ | 265+ named yogas missing |
+| Varga | `divisional_charts.py` + `varga.py` | ✅ Built | D1–D60 formulas | Drekkana variants (Jagannatha, Somanatha) missing |
+| Ashtakavarga | `ashtakavarga.py` | ✅ Built | SAV correct (fixed totals verified) | Full Prastarashtakavarga missing |
+| Dasha | `vimshottari_dasa.py` + `narayana_dasa.py` | ✅ Built | 2 of 44 systems | 42 additional systems (Ashtottari, Yogini, Kalachakra, Chara, Shoola...) |
+| Jaimini | `jaimini_full.py` | ✅ Built | Brahma/Maheshvara/Rudra, Pada | Chara dashas, full karakamsha system incomplete |
+| KP | `kp.py` + `kp_full.py` | ✅ Built | Sub-lord table (249 entries) | Cusps are whole-sign, not Placidus; Krishnamurti ayanamsha not used (G06) |
+| Classical strength | `orb_strength.py` | ✅ Built | PVRNR orb decay | Full Bala framework not yet driving concordance weights |
+| Avastha | `avastha_v2.py` + `sayanadi_full.py` | ✅ Built | 12-state Sayanadi | Jagradadi, Deeptadi partial |
+| Longevity | `longevity.py` + `ayurdaya.py` | ✅ Built | 3 methods | Never user-facing (G02) |
+
+**Reading this table:** A session that touches `shadbala.py` cannot assume Kala Bala
+sub-components are correct. A session using yoga output cannot assume 265+ missing yogas
+don't affect the result. The module existing does not mean the domain is done.
+
+---
+
+### Corpus Encoding Priorities by Convergence Layer
+
+Not all corpus work has equal impact on the convergence model. Encoding priorities
+should be weighted by which convergence layer they strengthen and how:
+
+**Highest priority — directly strengthens Layer I concordance:**
+- BPHS Chapters that apply to ALL three schools (Parashari/KP/Jaimini) — encoding
+  these creates rules that can fire independently from multiple schools, raising the
+  maximum achievable concordance score
+- Rules that distinguish yogakaraka behavior by lagna — these address the root cause
+  of OB-3's low axis-specific r (~0.02) because Saturn in H7 from Cancer ≠ Saturn in H7
+  from Capricorn, and the corpus needs to encode this distinction explicitly
+
+**High priority — strengthens Layer II capacity/delivery:**
+- Dasha interpretation rules (BPHS Ch.46, Uttara Kalamrita timing sutras) — these
+  directly govern the Capacity check in `promise_engine.py`
+- Argala and virodha argala rules — these affect the activation weight in `narayana_argala.py`
+- Transit interaction rules (Gochar chapter BPHS) — these govern the Delivery gate
+
+**Medium priority — deepens Layer I but doesn't increase school count:**
+- Additional yoga rules within Parashari only — these add rules to a school already
+  present, raising rule depth but not concordance potential
+- Nabhasa Sankhya expansion — structural yogas that describe chart patterns, not
+  cross-school signals
+
+**Lower priority (research layer, Phase 6+):**
+- Medical/longevity texts (Ayurveda-adjacent) — governed by G02, internal research only
+- Lal Kitab — requires separate schema, doesn't contribute to main concordance model
+- Nadi texts — Chandra Kala Nadi schema is fundamentally different, separate pipeline
+
+---
+
+
 
 | Component | Status | Gap |
 |-----------|--------|-----|

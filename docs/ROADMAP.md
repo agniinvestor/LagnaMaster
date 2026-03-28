@@ -4,6 +4,42 @@
 ---
 
 ## Critical Path
+### Why This Phase Order (Convergence Layer Reasoning)
+
+The phase order is not arbitrary. Each phase builds the foundation that the next phase
+requires, organized around the three convergence layers:
+
+**Phases 0–2 (S191–S470): Classical Convergence depth + infrastructure.**
+You cannot build a meaningful empirical validation system (Layer III) until the classical
+convergence model (Layer I) is deep enough to generate meaningful priors. Testing 23
+rules with SHAP analysis will produce noise. Testing 1,500+ rules with proper school
+attribution and concordance scoring will produce publishable findings. Phase 0 builds
+the infrastructure. Phase 1 fills the classical corpus. Phase 2 rebuilds the engine
+with the full corpus, producing the first meaningful Layer I concordance scores.
+
+**Phases 3–4 (S471–S610): Structural convergence inputs + person-specific calibration.**
+The 20Q personality protocol (Phase 4) is not primarily an onboarding feature — it is
+a structural convergence calibration mechanism. It verifies whether the engine's Layer I
+signals are correctly calibrated to this specific person's birth chart. Without it, the
+engine issues Layer II assessments (Capacity/Delivery) for a chart it has never verified
+against the person. Phase 3 builds the feedback schema that will eventually feed Layer III.
+
+**Phases 5–6 (S611–S790): Temporal model + empirical convergence.**
+Phase 5 builds the full temporal cascade (Layer II delivery). Phase 6 builds empirical
+convergence (Layer III). These are deliberately sequenced: you need the temporal model
+to generate predictions with proper timing windows before you can close those windows
+and collect confirmed outcomes.
+
+**Phases 7–10 (S791+): Product, multigenerational, extraction, research.**
+Only at this point does the full three-layer model exist. Product monetization (Phase 7)
+is built on all three layers being operational. The multigenerational map (Phase 8) is
+a Layer I extension — family dasha cascade adds additional classical convergence signals
+from related charts. Research frontiers (Phase 10) are what the empirical convergence
+layer produces as scientific output.
+
+---
+
+
 
 ```
 S189–S190 (immediate fixes)
@@ -58,6 +94,21 @@ No user-facing code ships until Phase 0 is complete. No empirical analysis runs 
 ---
 
 ## Phase 1 — Classical Knowledge Foundation (S216–S410) ⭐ MOST CRITICAL
+**Convergence layer:** Phase 1 deepens **Layer I (Classical Convergence)** exclusively.
+
+**The right encoding priority within Phase 1:**
+Not all rules have equal impact. Rules that can fire independently from multiple schools
+(Parashari AND KP AND Jaimini) raise the maximum achievable concordance score more than
+rules that are Parashari-only. Rules that encode the lagna-conditional behavior of each
+planet directly address the root cause of OB-3's low axis-specific r (~0.02). These
+should be prioritized within each text encoding session.
+
+**Phase 1 gate (expanded):** Not just rule count — the gate is whether the Layer I
+concordance model is producing meaningful multi-school agreement signals. Target:
+after Phase 1, ≥20% of predictions should reach concordance ≥0.75 across all three
+schools. Below this, Phase 2 feature vector expansion will not have enough signal to work with.
+
+
 
 | Sessions | Deliverable | Target |
 |----------|-------------|--------|
@@ -79,6 +130,16 @@ Feature vectors 150 → 500+. Muhurtha engine. OB-3 rerun (target r > 0.05 on �
 ---
 
 ## Phase 3 — Feedback Architecture & Privacy (S471–S530)
+**Convergence layer:** Phase 3 builds the infrastructure for **Layer III (Empirical Convergence)**.
+
+**Critical schema addition:** The feedback schema must capture not just whether a
+prediction was confirmed, but the convergence state at the time of prediction — specifically:
+what was the school concordance score, what was the varga agreement grade, what was the
+Promise/Capacity/Delivery status. Without this, the Layer III Bayesian updates (Phase 6)
+cannot distinguish a confirmed high-concordance prediction (strong signal) from a confirmed
+low-concordance prediction that happened to be correct (possibly noise).
+
+
 
 **The feedback schema is the most irreversible decision in the project. It ships complete or not at all.**
 
@@ -87,6 +148,21 @@ DPDP/GDPR compliance (S471–S490). Complete feedback schema with `user_prior_pr
 ---
 
 ## Phase 4 — Personality Protocol & Onboarding (S531–S610)
+**Convergence layer:** Phase 4 is **Layer II structural calibration** — person-specific.
+
+The 20Q personality protocol is not primarily an onboarding feature. It is the mechanism
+by which Layer I's classical signals are verified against the specific person. If the
+engine predicts assertiveness (Mars functional benefic in H3) but the person consistently
+disconfirms it, the Layer I concordance for that person's chart should be reduced, not the
+rule weight globally. This person-specific calibration is what separates structural
+convergence from the raw classical model.
+
+**Implication for 20Q design:** Questions must be designed to independently verify
+Layer I convergence signals, not the scoring engine's outputs. See G07 (circular validation
+risk). The adversarial control question design (10% of questions from different house's
+prediction set) is a direct check on whether Layer I concordance is genuinely person-specific.
+
+
 
 Natal 20Q + adversarial controls (S531–S555). Dasha 20Q + autobiography + birth time sensitivity (S556–S580). Progressive onboarding Day 0→Day 21 + failed 20Q UX (S581–S610).
 
@@ -99,6 +175,21 @@ XGBoost MD/AD temporal engine (S611–S640). PD/SD/PrD + daily tone + confidence
 ---
 
 ## Phase 6 — ML Pipeline (S701–S790)
+**Convergence layer:** Phase 6 builds and validates **Layer III (Empirical Convergence)**.
+
+**Primary OSF research hypothesis (must be pre-registered at S461 before Phase 6 begins):**
+Does multi-factor convergence (Layer I classical concordance × Layer II structural
+activation) predict life outcomes at a statistically validated rate above any single
+factor's baseline? This is the novel scientific question — not whether individual
+classical rules predict outcomes, but whether the *agreement* between independent
+classical frameworks is itself a predictive signal.
+
+This reframes the SHAP analysis: the most important features are not individual rules
+(Category A/C) but convergence interaction terms — does high-concordance + strong
+capacity predict outcomes better than high-concordance alone? The answer to this question
+is what justifies the entire convergence architecture.
+
+
 
 XGBoost + SHAP (pre-registered, FDR-corrected) — Categories A/B/C (S701–S730). HDBSCAN clustering (S731–S745). Bayesian weight updates after 1,000+ events (S746–S760). Cox survival analysis — **internal only, never user-facing** (S761–S775). Chart embeddings pgvector (S776–S790).
 

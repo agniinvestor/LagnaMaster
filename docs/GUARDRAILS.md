@@ -264,3 +264,45 @@ VedAstro MCP Server connects Claude directly to Vedic calculations during develo
 - `vedastro-org/15000-Famous-People-Marriage-Divorce-Info` — 15,000 marriage/divorce records
 
 **Fix by:** S191 — download to `data/vedastro/`
+
+---
+
+## G25 🟠 CONVERGENCE COMMUNICATION: Never present Layer I as fully calibrated before Layer III is active
+
+**Rule:** The user interface must distinguish what convergence layer is active when a
+prediction is issued. This does not require technical language — but it does require
+honest framing.
+
+**Before Phase 6 (Layer III not yet active):**
+> "This assessment is based on agreement across multiple classical frameworks
+> [what percentage of the time this chart configuration points in the same direction].
+> It has not yet been validated against confirmed outcomes from similar charts."
+
+**After Phase 6 (Layer III active, Brier score < 0.20):**
+> "This assessment is supported by classical analysis AND has been validated against
+> [N] confirmed outcomes from charts with similar configurations."
+
+**Why this is a guardrail and not just a design note:**
+The convergence model is architecturally more sophisticated than any competitor.
+But presenting high Layer I concordance to users as though it represents empirically
+calibrated probability — before Layer III exists — is the same epistemic error as
+the competitors we are trying to distinguish from. The pre-decision oracle guardrail
+(G18) covers the Brier score context for specific predictions. G25 covers the ongoing
+framing of the entire system's confidence basis.
+
+**Anti-pattern to prevent:**
+> "Our multi-school convergence model gives this prediction 85% confidence."
+
+This is misleading before Phase 6, because the "confidence" is entirely classical
+(Layer I) and partially structural (Layer II), with no empirical calibration (Layer III).
+The number 85% implies a validated probability that does not yet exist.
+
+**Correct framing before Phase 6:**
+> "Three independent classical frameworks agree on this outcome [with specifics].
+> Classical agreement at this level is associated with strong predictive signal —
+> we will be able to quantify exactly how strong once our empirical validation is complete."
+
+**Status:** 🟠 Not yet implemented — required before any convergence score is user-facing.
+**Fix by:** Before any convergence score is surfaced in the product (Phase 2 at earliest,
+but the language must be designed before any score is shown).
+

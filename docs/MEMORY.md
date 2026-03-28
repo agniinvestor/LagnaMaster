@@ -54,6 +54,13 @@ PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=no 2>&1 | tail -3
 # Step 5: Read docs/CHANGELOG.md — last 30 lines
 # Step 6: Read session entry in docs/ROADMAP.md
 # Step 7: Check docs/GUARDRAILS.md for applicable guardrails
+
+**Before any session that builds or modifies a calculation module, also read:**
+`docs/PREDICTION_PIPELINE.md` — specifically "The Three Convergence Layers" section.
+Ask: which convergence layer does this module belong to, and what consumes its output?
+A module not wired to its convergence layer's downstream consumer produces no
+improvement to prediction quality regardless of how correct it is in isolation.
+
 # Step 8: If running empirical analysis → verify OSF timestamp first (G22)
 ```
 

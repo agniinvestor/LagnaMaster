@@ -4,6 +4,119 @@
 
 ---
 
+## The Three Convergence Layers
+
+> The GPT formula `Event = Promise × Dasha × Transit × Strength` is a first-year
+> textbook simplification. LagnaMaster's actual model has three distinct convergence
+> layers that interact. Understanding which layer a module belongs to governs how
+> sessions should build, test, and interpret it.
+
+---
+
+### Layer I — Classical Convergence
+
+**What it is:** Agreement across independent classical frameworks pointing at the same outcome.
+A prediction gains confidence when Parashari scoring, KP significators, Jaimini karakamsha,
+multi-axis LPI, and varga analysis all agree. The anti-prediction zone (concordance < 0.35)
+is not a product limitation — it is the correct classical behavior: when three independent
+schools genuinely disagree, the truthful answer is "uncertain."
+
+**Modules that contribute (already built):**
+`multi_axis_scoring.py` (23 rules × 5 axes), `rule_interaction.py` (30 pairs),
+`varga_agreement.py` (★★/★/○ system), `lpi.py` (7-layer weighted score),
+`kp_full.py` (sublord school), `jaimini_full.py` (Jaimini school),
+`scoring_v3.py` (multi-school concordance output), `school concordance` field in HouseScore.
+
+**Critical principle:** Classical convergence sets the prior. It does not determine
+whether the prior is activation-ready. That is Layer II's job.
+
+---
+
+### Layer II — Structural Convergence
+
+**What it is:** Whether the classical promise is activation-ready at this point in time
+for this specific person. Three independent structural checks must align:
+
+- **Promise** — D1 score + multi-varga agreement + multi-school concordance confirm
+  the theme exists in the natal chart
+- **Capacity** — The active dasha lord's natal placement, functional role, argala, and
+  AV strength determine whether the dasha can actually deliver the promise
+- **Delivery** — Transit trigger, dasha-transit timing alignment, and pratyantar timing
+  determine whether the window is open
+
+**Modules that contribute (built):**
+`promise_engine.py` (3-level Promise/Capacity/Delivery), `yoga_fructification.py`
+(PVRNR p147-148 three conditions), `stronger_of_two.py` (PVRNR p194),
+`dasha_scoring.py` (dasha-sensitized scoring), `narayana_argala.py` (argala capacity),
+`av_transit.py` (AV transit delivery), `confidence_model.py` (birth time sensitivity),
+`vimshottari_dasa.py` + `narayana_dasa.py` (timing cascade).
+
+**Critical principle:** A yoga that exists in Layer I (classically strong) but fails
+Layer II (dasha lord weak, no transit trigger, capacity missing) cannot manifest.
+The failure is not permanent — the next dasha may activate it.
+
+---
+
+### Layer III — Empirical Convergence
+
+**What it is:** Agreement between the classical model's posterior distributions and
+confirmed outcomes from structurally similar charts. This layer is **not yet built**
+(Phase 3–6). When operational, it will answer: "Do charts like this, with this
+combination of classical convergence signals, actually produce outcomes like this
+at a statistically validated rate above base rates?"
+
+**Modules that will contribute (planned):**
+Feedback schema with `user_prior_prob_pre` (S491–S515), Bayesian weight update pipeline
+(S746–S760), HDBSCAN chart clustering with social proof (S731–S745),
+XGBoost + SHAP feature importance analysis (S701–S730).
+
+**Critical principle:** Empirical convergence does not replace classical convergence —
+it calibrates it. A classically high-convergence prediction that consistently fails
+empirical validation is a Category C finding: a 2,000-year-old rule worth challenging
+with intellectual honesty, not abandoning without replication.
+
+---
+
+### Convergence Interaction: The Full Formula
+
+```
+Confidence(prediction) =
+    f(
+        classical_concordance(Parashari, KP, Jaimini, varga),   # Layer I
+        structural_activation(promise, capacity, delivery),      # Layer II
+        empirical_calibration(posterior, cluster_evidence)       # Layer III [Phase 3+]
+    )
+
+Push threshold: signal_to_noise ≥ 2.0
+Anti-prediction zone: classical_concordance < 0.35 → SUPPRESS regardless of Layer II
+```
+
+**The anti-prediction zone fires on Layer I alone.** Even perfect structural activation
+cannot override genuine multi-school classical disagreement. This is intentional: it
+would be epistemically dishonest to issue a confident prediction when the classical
+tradition itself is divided.
+
+---
+
+### How the 10 Build Layers Map to Convergence Layers
+
+| Build Layer | Convergence Layer |
+|-------------|------------------|
+| L1: Birth time sensitivity | Layer II — precision of promise |
+| L2: 20Q personality verification | Layer II — person-specific calibration of Layer I signals |
+| L3: Conditional weight functions | Layer I — depth of classical weight model |
+| L4: Multi-school concordance | Layer I — core concordance signal |
+| L5: Bayesian posterior distributions | Layer I → III bridge — posteriors updated by Layer III |
+| L6: Dasha temporal model | Layer II — capacity and delivery cascade |
+| L7: Dasha autobiography | Layer III seed — cold-start training events |
+| L8: Signal isolation via prior prob | Layer III — empirical signal above base rate |
+| L9: Chart cluster social proof | Layer III — outcome evidence from similar charts |
+| L10: Closed-loop weight update | Layer III — recalibration of Layer I weights |
+
+---
+
+
+
 ## Root Cause of Competitor Failure
 
 All major competitors share the same structural failure: **predictions issued into a void with zero accountability.**
