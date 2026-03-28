@@ -177,3 +177,37 @@ Added: `SVGRequest`, `SVGOut`, `GuidanceRequest`, `GuidanceOut`, `ConfidenceOut`
 
 ### Next session
 S190 — [FILL IN]
+
+---
+
+## S193 — 2026-03-28 — HouseScore Distribution Dataclass
+
+**Commit:** (see git log)
+**Tests:** 1490 passing, 3 skipped (require live PG_DSN), 0 lint errors, CI green
+
+### What was built
+- `src/calculations/house_score.py`: `HouseScore` dataclass with fields
+  `house`, `score`, `mean`, `std`, `p10`, `p90` plus `to_dict()` for JSON
+  serialisation.  `compute_house_scores(chart, school)` wraps D1 scoring and
+  confidence-interval propagation to produce `dict[int, HouseScore]`.
+- `tests/test_s193_housescore_distribution.py`: 6 tests covering dataclass
+  fields, JSON serialisation, distribution ordering (p10 ≤ mean ≤ p90),
+  full dict shape, and India 1947 H2-negative regression.
+
+### What was wired
+- `ChartScoresV3` gains a `house_distributions: dict` field (backward-compat)
+  populated by `compute_house_scores()` inside `score_chart_v3()`.
+
+### New invariants
+- #37: `HouseScore.p10 <= HouseScore.mean <= HouseScore.p90` — always enforced
+  by construction (normal-distribution percentile derivation from 95 % CI).
+
+### Three-Lens Notes
+- Tech: House scores are now typed objects — consumers can extract uncertainty
+  bands without re-running the confidence model.
+- Astrology: Distribution width reflects birth-time uncertainty (±5 min) and
+  Lagna/Moon nakshatra boundary proximity.
+- Research: p10/p90 bands enable ensemble-style prediction intervals.
+
+### Next session
+S194 — [TBD]

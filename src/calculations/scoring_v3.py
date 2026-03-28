@@ -35,6 +35,7 @@ class ChartScoresV3:
     lpi: object = None  # LPIResult
     vimshopaka: object = None  # VimshopakaBala
     avasthas: object = None  # AvasthaReportV2
+    house_distributions: dict = field(default_factory=dict)  # dict[int, HouseScore]
     raja_yogas: list = field(default_factory=list)
     viparita_yogas: list = field(default_factory=list)
     neecha_bhanga: list = field(default_factory=list)
@@ -104,6 +105,13 @@ def score_chart_v3(
     except Exception:
         kk = None
 
+    from src.calculations.house_score import compute_house_scores
+
+    try:
+        house_dists = compute_house_scores(chart, school)
+    except Exception:
+        house_dists = {}
+
     return ChartScoresV3(
         lagna_sign=chart.lagna_sign,
         engine_version=ENGINE_VERSION,
@@ -122,6 +130,7 @@ def score_chart_v3(
         bhavat_bhavam=bb,
         arudha_padas=ap,
         karakamsha=kk,
+        house_distributions=house_dists,
     )
 
 
