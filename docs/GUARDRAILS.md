@@ -22,7 +22,7 @@
 | G03 | 🔴 | Privacy: DPDP 2023 + GDPR before first user | 🔴 Not yet implemented |
 | G04 | 🔴 | Signal isolation: prior probability captured BEFORE prediction shown | 🔴 Schema not built |
 | G05 | 🔴 | Birth time: Never use 'certificate' — use 'Sensitivity Analysis' | 🔴 Not yet implemented |
-| G06 | 🔴 | Ayanamsha: KP school requires Krishnamurti — Lahiri produces wrong KP | 🔴 **CURRENTLY VIOLATING** |
+| G06 | 🔴 | Ayanamsha: KP school requires Krishnamurti — Lahiri produces wrong KP | 🟡 **S212: kp_ayanamsha.py added; compute_kp_chart() enforces krishnamurti; existing charts not retroactively fixed** |
 | G07 | 🔴 | 20Q: Adversarial control questions mandatory (circular validation risk) | 🔴 Not yet built |
 | G08 | 🔴 | Autobiography: Date anchoring interface mandatory (3–6 month misdate avg) | 🔴 Not yet built |
 | G09 | 🔴 | Prediction ledger: Research context only — not commercial guarantee | 🔴 Not yet built |

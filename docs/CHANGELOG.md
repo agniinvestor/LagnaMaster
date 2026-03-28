@@ -527,3 +527,21 @@ S211 — Redis + pgvector + TimescaleDB + MLflow + family schema
 
 ### Next session
 S212 — Ayanamsha selection + KP school fix (G06 compliance)
+---
+
+## S212 — 2026-03-28 — Ayanamsha Selection + KP G06 Compliance
+
+**Tests:** 1660 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/calculations/kp_ayanamsha.py`: `KP_AYANAMSHA` constant, `get_kp_ayanamsha()`,
+  `validate_kp_chart()` (returns g06_compliant bool + warning), `compute_kp_chart()`
+  wrapper that defaults to krishnamurti ayanamsha.
+- `GUARDRAILS.md`: G06 updated to 🟡 — enforcement mechanism in place;
+  existing charts not retroactively fixed (would require data migration).
+
+### G06 status
+New KP analysis using `compute_kp_chart()` is compliant. Existing charts stored with Lahiri ayanamsha must be flagged separately (Phase 1 data migration).
+
+### Next session
+S213 — Protocol verification + CI observability
