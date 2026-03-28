@@ -608,3 +608,16 @@ S229 — Continue Phase 1: BPHS graha in rashis + KP sublord rules
 
 ### Next session
 S230 — BPHS graha in rashis part 2 (Mars + Mercury)
+---
+
+## S230 — 2026-03-28 — BPHS Graha in Rashis Part 2
+
+**Tests:** 1799 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_graha_rashis_p2.py`: 24 rules — Mars in 12 rashis (MAR001-MAR012) + Mercury in 12 rashis (BUR001-BUR012). BPHS Ch.19-20. Mars own-sign Aries+Scorpio, exaltation Capricorn, debilitation Cancer. Mercury own-sign+exaltation Virgo, moolatrikona Gemini, debilitation Sagittarius.
+
+**Corpus total: 482 rules**
+
+### Next session
+S231 — BPHS graha in rashis part 3 (Jupiter + Venus)
