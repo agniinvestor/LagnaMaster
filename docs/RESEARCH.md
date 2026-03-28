@@ -54,7 +54,7 @@ that can be dismissed as testing an unrepresentative sample.
 
 | Registration | Status | Covers |
 |-------------|--------|--------|
-| OB-3 XGBoost analysis | 🔴 **NOT YET FILED** | Feature V1, hypotheses, BH FDR at q<0.05, time-split CV |
+| OB-3 XGBoost analysis | 🟡 **Draft in docs/research/osf_draft_ob3.json** | Feature V1, hypotheses, BH FDR at q<0.05, time-split CV |
 | Full corpus SHAP analysis | 🔴 **NOT YET FILED** | Feature V2, yoga hypotheses, 1,500+ rules |
 
 **Rule:** Every empirical analysis must be filed on OSF BEFORE execution. Analyses without prior registration labeled 'exploratory only' and cannot promote rules to the engine.

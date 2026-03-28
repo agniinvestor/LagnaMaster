@@ -349,3 +349,18 @@ S200 — final G22 wiring, ChartScoresV3 integration, session log export
 
 ### Next session
 S201 — OSF pre-registration + ADB license + corpus extractor pipeline
+---
+
+## S201 — 2026-03-28 — OSF Pre-Registration Schema (G22)
+
+**Tests:** 1558 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/research/osf_registration.py`: `HypothesisSpec`, `CVStrategy`, `OSFRegistration`
+  dataclasses + `to_dict()` / `to_json()` serialization.
+- `docs/research/osf_draft_ob3.json`: Draft OB-3 filing — primary H1 (concordance
+  predicts above single-school baseline), 3 secondary hypotheses, BH-FDR q<0.05,
+  time-split CV (pre-2010 train / 2010+ test), minimum_sample=1000.
+
+### Next session
+S202 — RuleRecord + CorpusRegistry infrastructure
