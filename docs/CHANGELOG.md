@@ -394,3 +394,17 @@ S203 — ADB license compliance module + data source tracking
 
 ### Next session
 S204 — corpus extractor base class + BPHS text extractor
+---
+
+## S204 — 2026-03-28 — TextExtractor Protocol + TimeBasedSplit CV
+
+**Tests:** 1592 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/extractor_base.py`: `TextExtractor` Protocol + `BaseExtractor` base class.
+  `load_into(registry)` convenience method — skips duplicate rule IDs.
+- `src/research/cv_splitter.py`: `TimeBasedSplit` — `is_train/is_test/split()`,
+  validates no look-ahead, parameters match OB-3 OSF draft (train≤2009, test≥2010).
+
+### Next session
+S205 — corpus audit script + BPHS new rule encoding (30 rules)
