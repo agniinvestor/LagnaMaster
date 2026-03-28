@@ -55,6 +55,12 @@ def git_status_clean() -> bool:
 
 def run_tests() -> tuple[int, int, int]:
     """Returns (passed, skipped, failed). Runs full suite."""
+    # Raise macOS fd limit (default 256 is too low for 1300+ test suite)
+    try:
+        import resource
+        resource.setrlimit(resource.RLIMIT_NOFILE, (4096, 4096))
+    except Exception:
+        pass  # Non-macOS or already high enough
     print("  Running test suite...", end="", flush=True)
     env = os.environ.copy()
     env["PYTHONPATH"] = str(ROOT)
