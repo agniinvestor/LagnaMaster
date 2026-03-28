@@ -660,3 +660,16 @@ S233 — KP sublord rules + nakshatra lords
 
 ### Next session
 S234 — BPHS nakshatra-based rules (nakshatras 1-9)
+---
+
+## S234 — 2026-03-28 — BPHS Nakshatra Rules Part 1
+
+**Tests:** 1843 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_nakshatra_rules_p1.py`: 28 rules (NAK001-NAK028) — Nakshatras 1-14 (Ashwini through Chitra): nature, deity, symbol, keywords (14 rules) + Moon in nakshatras 1-14 (14 rules). BPHS Ch.3-4.
+
+**Corpus total: 600 rules**
+
+### Next session
+S235 — BPHS nakshatra rules part 2 (nakshatras 15-27)
