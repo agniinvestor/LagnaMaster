@@ -790,3 +790,16 @@ S243 — Ashtakavarga rules / Jaimini Sutras
 
 ### Next session
 S244 — Jaimini Sutras / Upagraha rules
+---
+
+## S244 — 2026-03-28 — Jaimini Sutras + Upagraha Rules
+
+**Tests:** 1936 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `jaimini_sutras_rules.py`: 30 rules (JMS001-JMS030) — Jaimini Sutras (Maharishi Jaimini) + BPHS Ch.24: Chara Karaka system (AK/AmK/BK/MK/PK/GK/DK by degree), Karakamsha lagna, Rashi Drishti sign aspects, Argala intervention, Arudha/Pada system (AL/UL/GL/HL), Chara Dasha structure and interpretation, Sthira Dasha periods, Jaimini yogas (Raja/Dhana), longevity assessment, Upagrahas (Gulika/Mandi/Dhuma/Vyatipata).
+
+**Corpus total: 896 rules**
+
+### Next session
+S245 — Shadbala rules

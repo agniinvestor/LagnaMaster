@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–243 complete — March 2026)
+## Actual Current State (Sessions 1–244 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1925 passing, 3 skipped, 0 lint errors, CI green**
+- **1936 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -73,7 +73,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 241:** Jataka Parijata extended — lagnas+yogas+all 9 Maha Dasha results; 30 rules; corpus 806; 1904 tests ✅ 800+ MILESTONE
 - **Session 242:** Classical transit rules — Gochara/Vedha/Ashtakavarga/Sade Sati/double transit; 30 rules; corpus 836; 1914 tests
 - **Session 243:** Ashtakavarga rules — BAV structure/Shodhana/Kakshya/planet BAVs/transit assessment; 30 rules; corpus 866; 1925 tests
-- **Next session:** S244
+- **Session 244:** Jaimini Sutras + Upagrahas — Chara Karakas/Rashi Drishti/Arudha/Chara Dasha/Gulika; 30 rules; corpus 896; 1936 tests
+- **Next session:** S245
 
 ---
 
