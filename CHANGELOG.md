@@ -120,6 +120,50 @@ Script fixed: git pull --rebase before push to prevent rejection.
 
 ## v3.0.0 — Sessions 1–160 (March 2026)
 
+## S189 — Immediate Fixes (March 2026)
+
+### Kala Bala 8 Sub-components Verified (tests/test_s189_kala_bala.py)
+- All 8 sub-components already implemented in `shadbala.py:234–369` (S111)
+- Added 37 targeted tests verifying each sub-component analytically:
+  - Nathonnata Bala (day/night — Sun/Venus/Jupiter vs Moon/Mars/Saturn vs Mercury)
+  - Paksha Bala (lunar phase — benefic waxing, malefic waning)
+  - Tribhaga Bala (day thirds Jupiter/Sun/Saturn; night thirds Moon/Venus/Mars)
+  - Vara Bala (weekday lord = 45 virupas)
+  - Hora Bala (planetary hour lord = 60 virupas)
+  - Masa Bala (solar month lord = 30 virupas)
+  - Abda Bala (year lord from Jan 1 weekday = 15 virupas)
+  - Ayana Bala (Uttarayana Sun/Mars/Jupiter=48, Moon/Venus/Saturn=12; reversed Dakshinayana)
+- Total/sum consistency and per-component range bounds verified
+
+### C-18: 8 Diverse Stress-Test Fixtures Complete (tests/test_s189_diverse_stress.py)
+- Added `BC_DATE_CHARTS` to `diverse_chart_fixtures.py`:
+  - `julius_caesar_era`: 100 BCE (proleptic year -99) — Swiss Ephemeris negative year test
+  - `archimedes_era`: 287 BCE (proleptic year -286) — extreme antiquity boundary test
+  - Both wired into `ALL_DIVERSE_FIXTURES` with prefix `bc_`
+- All 8 C-18 categories now covered in `ALL_DIVERSE_FIXTURES`:
+  1. Neecha Bhanga ✅  2. Graha Yuddha ✅  3. Nakshatra cusp ✅
+  4. Parivartana ✅    5. Female chart ✅  6. High-lat >55°N ✅ (Oslo 59.9°, Helsinki 60.2°)
+  7. Year-boundary ✅  8. BC date ✅
+- Added structural tests for each category + omnibus test_all_8_categories_covered
+
+### Confidence Model Surfaced in Streamlit UI (src/ui/app.py)
+- Added 14th tab "🔮 Confidence" wiring `confidence_model.compute_confidence()`
+- Tab displays: severity banner (high/medium/low), lagna boundary flag,
+  Moon/nakshatra boundary flag, sign-boundary planet list,
+  per-house confidence interval table with uncertainty sources,
+  adjustable birth-time uncertainty slider (1–30 minutes)
+
+### Nehru Capricorn Lagna Skip — Root Cause Documented
+- Root cause: `assert_lagna=False`, `data_trust_level="low"`, `trust_note="Indian 1889 — family memory"`
+- Engine computes Cancer Lagna (111.72°); traditional Capricorn is unverified historical claim
+- Skip is CORRECT — no code change required; documented in test_s189_diverse_stress.py
+  (class TestNehruLagnaSkipRootCause)
+
+### PostgreSQL Live Tests
+- 3 tests in test_session20.py remain env-gated (@pytest.mark.skipif not PG_DSN)
+- Cannot provision PG_DSN in this environment — deferred to S190 environment setup
+
+
 ### Phase 0 — Classical Correctness (S109-114)
 - **dignity.py**: Mooltrikona exact BPHS Ch.3 ranges; Paramotcha continuous gradient;
   Rahu/Ketu school-specific exaltation; Neecha Bhanga all 6 conditions; NBRY when ≥2;

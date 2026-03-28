@@ -74,7 +74,7 @@
 | kp_sublord.py | 155 | KP 249 sub-lord table, significators |
 | calc_config.py | 156 | School/authority declaration |
 | sudarshana.py | 159 | Sudarshana Chakra + Dasha Pravesh |
-| confidence_model.py | 158 | Birth time uncertainty, confidence intervals |
+| confidence_model.py | 158 | Birth time uncertainty, confidence intervals — Streamlit tab added S189 |
 | shodashavarga_bala.py | 147/G-3 | 16-varga Shodashavarga Bala |
 
 ### Known Remaining Wiring Gaps
@@ -100,7 +100,7 @@ All critical wiring gaps CLOSED as of S188. No outstanding gaps.
 - test_comprehensive_build.py: 76 tests — Sessions 135-160
 - test_pending_build.py: ~45 tests — Sessions 139-160
 - test_phase9.py + all others: ~750 tests
-- TOTAL: 1338 passing, 3 skipped, CI green
+- TOTAL: 1360+ passing, 3 skipped, CI green
 
 
 ## Sessions 161-170 (Pending Queue Complete)
