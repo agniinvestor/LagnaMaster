@@ -673,3 +673,16 @@ S234 — BPHS nakshatra-based rules (nakshatras 1-9)
 
 ### Next session
 S235 — BPHS nakshatra rules part 2 (nakshatras 15-27)
+---
+
+## S235 — 2026-03-28 — BPHS Nakshatra Rules Part 2
+
+**Tests:** 1851 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_nakshatra_rules_p2.py`: 26 rules (NAK029-NAK054) — Nakshatras 15-27 (Swati through Revati): characteristics (13 rules) + Moon in nakshatras 15-27 (13 rules). BPHS Ch.5. Completes full 27-nakshatra catalog (54 characteristic rules + 54 Moon rules).
+
+**Corpus total: 626 rules**
+
+### Next session
+S236 — BPHS Bhava Karakas (house significators)
