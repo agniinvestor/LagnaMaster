@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1934 passing, 3 skipped, 0 lint errors, CI green**
+- **1914 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -71,7 +71,7 @@ When in doubt, read that file to reconstruct state.
 - **Session 239:** Phala Deepika extended — planets in houses+yogas+health; 30 rules; corpus 746; 1886 tests
 - **Session 240:** Uttara Kalamrita extended — house+planet significations+principles; 30 rules; corpus 776; 1895 tests
 - **Session 241:** Jataka Parijata extended — lagnas+yogas+all 9 Maha Dasha results; 30 rules; corpus 806; 1904 tests ✅ 800+ MILESTONE
-- **Session 242:** Classical transit rules — Gochara/Vedha/Ashtakavarga/Sade Sati/double transit; 30 rules; corpus 836; 1934 tests
+- **Session 242:** Classical transit rules — Gochara/Vedha/Ashtakavarga/Sade Sati/double transit; 30 rules; corpus 836; 1914 tests
 - **Next session:** S243
 
 ---
