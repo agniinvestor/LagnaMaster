@@ -738,3 +738,16 @@ S239 — Phala Deepika extended rules
 
 ### Next session
 S240 — Uttara Kalamrita extended rules
+---
+
+## S240 — 2026-03-28 — Uttara Kalamrita Extended Rules
+
+**Tests:** 1895 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `uttara_kalamrita_ext.py`: 30 rules (UKE001-UKE030) — Kalidasa's Uttara Kalamrita (17th cent CE): all 12 house extended significations (12), all 9 planetary gemstones/directions/deities (9), bhavat bhavam, kartari yogas, combustion degrees, retrograde strength, temporal malefic/benefic classification (9).
+
+**Corpus total: 776 rules**
+
+### Next session
+S241 — Jataka Parijata extended rules
