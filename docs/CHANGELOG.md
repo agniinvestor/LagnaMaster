@@ -764,3 +764,16 @@ S241 — Jataka Parijata extended rules
 
 ### Next session
 S242 — Sarvartha Chintamani / transit rules
+---
+
+## S242 — 2026-03-28 — Classical Transit (Gochara) Rules
+
+**Tests:** 1934 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `transit_rules.py`: 30 rules (TRN001-TRN030) — Classical Gochara (transit) rules from BPHS Ch.90 (parashari) and Sarvartha Chintamani Ch.10 (sarvartha): fundamental transit-from-Moon principle, Vedha obstruction, Ashtakavarga bindus, per-planet transit results (Sun/Moon/Mars/Mercury/Jupiter/Venus/Saturn/Rahu/Ketu), Sade Sati (7.5 years), Ashtama Shani, double transit (Jupiter+Saturn), triple trigger, retrograde three-pass, Tajika.
+
+**Corpus total: 836 rules**
+
+### Next session
+S243 — Ashtakavarga rules / Jaimini Sutras
