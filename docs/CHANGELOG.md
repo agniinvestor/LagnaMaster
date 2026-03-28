@@ -469,3 +469,16 @@ S208 — BirthRecord + Sarwarthachintamani + combined corpus loader
 
 ### Next session
 S209 — corpus pipeline integration tests
+---
+
+## S209 — 2026-03-28 — Corpus Pipeline Integration Tests
+
+**Tests:** 1638 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `tests/test_s209_corpus_pipeline_integration.py`: 9 integration tests covering
+  the full pipeline: OSF schema → CV split → corpus load → audit → extractor
+  → BirthRecord → ADB license check → G22 gate.
+
+### Next session
+S210 — corpus checkpoint: ROADMAP S201-S210 ✅, CLASSICAL_CORPUS.md update

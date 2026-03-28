@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–208 complete — March 2026)
+## Actual Current State (Sessions 1–209 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1629 passing, 3 skipped, 0 lint errors, CI green**
+- **1638 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -52,7 +52,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 206:** Phaladeepika (21) + Brihat Jataka (26) rules; 101 total corpus rules; 1610 tests
 - **Session 207:** Uttara Kalamrita (17) + Jataka Parijata (17); 135 total corpus rules; 1618 tests
 - **Session 208:** BirthRecord + COMBINED_CORPUS (135+ rules, 6 texts); 1629 tests
-- **Next session:** S209
+- **Session 209:** Corpus pipeline integration tests (9 tests); 1638 tests
+- **Next session:** S210
 
 ---
 
