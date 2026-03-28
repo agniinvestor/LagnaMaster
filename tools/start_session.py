@@ -59,25 +59,27 @@ def run_tests() -> tuple[int, int, int]:
     env = os.environ.copy()
     env["PYTHONPATH"] = str(ROOT)
     r = subprocess.run(
-        [str(ROOT / ".venv/bin/pytest"), "tests/", "-q", "--tb=no", "--no-header"],
+        [sys.executable, "-m", "pytest", "tests/", "-q", "--tb=no", "--no-header"],
         capture_output=True, text=True, cwd=ROOT, env=env
     )
     output = r.stdout + r.stderr
-    # Parse: "1338 passed, 3 skipped"
     m = re.search(r"(\d+) passed", output)
     passed = int(m.group(1)) if m else 0
     m = re.search(r"(\d+) skipped", output)
     skipped = int(m.group(1)) if m else 0
     m = re.search(r"(\d+) failed", output)
     failed = int(m.group(1)) if m else 0
-    print(f" {passed} passed, {skipped} skipped, {failed} failed")
+    if passed == 0:
+        print(f"\n  pytest rc={r.returncode}, output: {output[:200]!r}")
+    else:
+        print(f" {passed} passed, {skipped} skipped, {failed} failed")
     return passed, skipped, failed
 
 
 def run_ruff() -> int:
     """Returns error count."""
     r = subprocess.run(
-        [str(ROOT / ".venv/bin/ruff"), "check", "src/", "tests/", "tools/"],
+        [sys.executable, "-m", "ruff", "check", "src/", "tests/", "tools/"],
         capture_output=True, text=True, cwd=ROOT
     )
     lines = [line for line in r.stdout.splitlines() if line.strip()]
