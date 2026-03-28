@@ -378,3 +378,19 @@ S202 — RuleRecord + CorpusRegistry infrastructure
 
 ### Next session
 S203 — ADB license compliance module + data source tracking
+---
+
+## S203 — 2026-03-28 — ADB License Compliance + R01-R23 Corpus Encoding
+
+**Tests:** 1582 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/research/data_license.py`: `DataSourceLicense` dataclass, `KNOWN_SOURCES`
+  (ADB non-commercial, PUBLIC_DOMAIN, BPHS_TEXT, SELF_REPORTED),
+  `check_source_license(source_id, commercial)` — raises PermissionError for ADB+commercial.
+- `src/corpus/existing_rules.py`: All 23 engine rules (R01-R23) encoded as
+  `RuleRecord` objects in `EXISTING_RULES_REGISTRY`. All marked `implemented=True`,
+  confidence ≥ 0.8, full classical source citations.
+
+### Next session
+S204 — corpus extractor base class + BPHS text extractor
