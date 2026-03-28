@@ -59,7 +59,7 @@ def run_tests() -> tuple[int, int, int]:
     env = os.environ.copy()
     env["PYTHONPATH"] = str(ROOT)
     r = subprocess.run(
-        [".venv/bin/pytest", "tests/", "-q", "--tb=no", "--no-header"],
+        [str(ROOT / ".venv/bin/pytest"), "tests/", "-q", "--tb=no", "--no-header"],
         capture_output=True, text=True, cwd=ROOT, env=env
     )
     output = r.stdout + r.stderr
@@ -77,7 +77,7 @@ def run_tests() -> tuple[int, int, int]:
 def run_ruff() -> int:
     """Returns error count."""
     r = subprocess.run(
-        [".venv/bin/ruff", "check", "src/", "tests/", "tools/"],
+        [str(ROOT / ".venv/bin/ruff"), "check", "src/", "tests/", "tools/"],
         capture_output=True, text=True, cwd=ROOT
     )
     lines = [line for line in r.stdout.splitlines() if line.strip()]
