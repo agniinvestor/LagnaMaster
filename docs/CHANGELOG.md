@@ -881,3 +881,16 @@ S250 — Planets in houses extended (Graha Phala)
 
 ### Next session
 S251 — Remedies and Upayas (classical astrological remedies)
+---
+
+## S251 — 2026-03-28 — BPHS Graha-Bhava Complete (Exhaustive Planet-in-House)
+
+**Tests:** 2012 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_graha_bhava_complete.py`: 108 rules (GBC001-GBC108) — Exhaustive one-rule-per-planet-per-house encoding from BPHS Ch.23-31: Sun in all 12 houses (GBC001-012), Moon (GBC013-024), Mars (GBC025-036), Mercury (GBC037-048), Jupiter (GBC049-060), Venus (GBC061-072), Saturn (GBC073-084), Rahu (GBC085-096), Ketu (GBC097-108). Each rule captures primary BPHS effects, house quality (Kendra/Trikona/Dusthana/Upachaya), health significations, relationship indicators, and career themes. New exhaustive approach: no arbitrary caps — full chapter coverage.
+
+**Corpus total: 1184 rules**
+
+### Next session
+S252 — BPHS Yoga Exhaustive (all 500+ yoga combinations from Ch.35-45)
