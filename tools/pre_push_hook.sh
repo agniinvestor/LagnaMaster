@@ -53,14 +53,15 @@ fi
 # ── 2. ruff ───────────────────────────────────────────────────────────────────
 echo ""
 echo "2/3  Running ruff lint..."
-RUFF_OUT=$("$RUFF" check src/ tests/ tools/ 2>&1)
-RUFF_EXIT=$?
+# Disable set -e around ruff so we can capture output before deciding pass/fail
+RUFF_EXIT=0
+RUFF_OUT=$("$RUFF" check src/ tests/ tools/ 2>&1) || RUFF_EXIT=$?
 
 if [ $RUFF_EXIT -eq 0 ]; then
     pass "Ruff: 0 errors"
 else
     fail "Ruff lint errors — push blocked"
-    echo "$RUFF_OUT" | head -20
+    echo "$RUFF_OUT"
     FAILED=1
 fi
 
