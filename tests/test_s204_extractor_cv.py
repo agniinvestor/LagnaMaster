@@ -17,14 +17,13 @@ def test_text_extractor_import():
 
 def test_null_extractor_is_valid_extractor():
     """A concrete no-op extractor must satisfy the Protocol."""
-    from src.corpus.extractor_base import TextExtractor
-    from src.corpus.rule_record import RuleRecord
+    from src.corpus.rule_record import RuleRecord  # noqa: F401
 
     class NullExtractor:
         @property
         def source_name(self) -> str:
             return "NULL"
-        def extract(self) -> list[RuleRecord]:
+        def extract(self) -> list:
             return []
 
     e = NullExtractor()
