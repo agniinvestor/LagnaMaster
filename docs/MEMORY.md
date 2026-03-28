@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–189 complete — March 2026)
+## Actual Current State (Sessions 1–188 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -34,20 +34,11 @@ When in doubt, read that file to reconstruct state.
 - **Sessions 161–162:** Wiring fixes — Topocentric Moon, functional dignity in R02/R09
 - **Sessions 163–186:** Scoring depth, school-mixing fix, regression snapshot
 - **Sessions 187–188:** Final wiring gaps + XIX output API + Postgres routing + Swiss Ephemeris upgrade
-- **Session 189:** ADB XML importer, diverse fixtures (B-H), CI guard, mundane endpoint, semom_18.se1
-- **Next session:** S190
+- **Next session:** S189
 
 ---
 
-## Session Startup Checklist
-
-> **The manual checklist below is replaced by `tools/start_session.py`.**
-> Run `start_session.py` instead — it does all of the below automatically,
-> runs the test suite live, and outputs a ready-to-paste Claude brief.
->
-> Manual fallback only (if script unavailable):
-
- (Run BEFORE Every Session)
+## Session Startup Checklist (Run BEFORE Every Session)
 
 ```bash
 # Step 1: Verify actual state — ignore GitHub UI
@@ -63,13 +54,6 @@ PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=no 2>&1 | tail -3
 # Step 5: Read docs/CHANGELOG.md — last 30 lines
 # Step 6: Read session entry in docs/ROADMAP.md
 # Step 7: Check docs/GUARDRAILS.md for applicable guardrails
-
-**Before any session that builds or modifies a calculation module, also read:**
-`docs/PREDICTION_PIPELINE.md` — specifically "The Three Convergence Layers" section.
-Ask: which convergence layer does this module belong to, and what consumes its output?
-A module not wired to its convergence layer's downstream consumer produces no
-improvement to prediction quality regardless of how correct it is in isolation.
-
 # Step 8: If running empirical analysis → verify OSF timestamp first (G22)
 ```
 
@@ -133,21 +117,30 @@ Note: R17/R18 currently score 0.0 — so Invariant #36 has no numeric effect yet
 
 ---
 
-## India 1947 Reference Chart (Frozen Regression Fixture)
+## Regression Standard
 
+The regression suite is the **200+ ADB diverse fixture charts** (all 12 Lagnas,
+Sections A–H of diverse_chart_fixtures.py). The pre-push hook runs the full
+1338+ test suite. This is the quality gate for every session.
+
+**India 1947 position verification** is NOT the standard regression gate.
+It is only relevant in sessions where `ephemeris.py`, `varga.py`,
+`narayana_dasa.py`, `nakshatra.py`, or `dignity.py` appear in the READ LIST
+(i.e., sessions that touch the calculation substrate). The `start_session.py`
+brief will call this out explicitly when relevant.
+
+When India 1947 position verification IS needed:
 ```python
 INDIA_1947 = {
     "year": 1947, "month": 8, "day": 15,
     "hour": 0.0,           # midnight IST — tests P-1 fix
     "lat": 28.6139, "lon": 77.2090,
-    "tz_offset": 5.5,
-    "ayanamsha": "lahiri",
+    "tz_offset": 5.5, "ayanamsha": "lahiri",
 }
 # Lagna: 7.7286° Taurus (tolerance ±0.05°)
 # Sun:   27.989° Cancer
 # Moon:  3.9835° Cancer → Pushya nakshatra (index 7) → Saturn birth dasha (19yr)
 # Pancha-graha yoga: Sun/Moon/Mercury/Venus/Saturn all in Cancer
-# Narayana Dasha: Taurus (7yr) → Aries (6yr) → Pisces (3yr)...
 ```
 
 ---
@@ -167,22 +160,7 @@ INDIA_1947 = {
 
 ---
 
-## Session End Protocol (AUTOMATED)
-
-```bash
-# NEW AUTOMATED LOOP — replaces the manual checklist below
-.venv/bin/python3 tools/start_session.py   # run BEFORE opening Claude
-# [paste brief to Claude — Claude writes tests + impl + update_docs_s[N].py]
-.venv/bin/python3 update_docs_s[N].py      # run AFTER Claude session
-git push                                    # pre-push hook: tests + ruff + docs
-```
-
-The pre-push hook is the single quality gate. If it passes, the session is done.
-
----
-
-**Manual equivalent (if automation unavailable):**
-
+## Session End Protocol (MANDATORY)
 
 ```bash
 # 1. Full test suite

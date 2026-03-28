@@ -413,11 +413,18 @@ def format_brief(
         lines.append(f"  {spec:<45} # {reason}")
     lines.append("")
 
+    # Modules that require India 1947 position verification when touched
+    _CALC_SUBSTRATE = {"ephemeris.py", "varga.py", "narayana_dasa.py", "nakshatra.py", "dignity.py"}
+    read_specs = [spec for spec, _ in read_list]
+    needs_1947 = any(m in " ".join(read_specs) for m in _CALC_SUBSTRATE)
+
     lines.append("ACCEPTANCE CRITERIA:")
-    lines.append(f"  - Full test suite passes: {passed} → {passed}+N")
+    lines.append(f"  - Full test suite passes: {passed} → {passed}+N  (200+ diverse fixtures)")
     lines.append(f"  - Test delta estimate: {test_delta}")
     lines.append(f"  - Ruff errors: {ruff_errors} → 0")
     lines.append(f"  - Convergence layer: {roadmap.get('convergence_layer', '?')} wired correctly")
+    if needs_1947:
+        lines.append("  - India 1947 positions: Lagna=7.7286°Tau ±0.05°, Sun=27.989°Can, Moon=3.9835°Can")
     lines.append("")
     lines.append("═" * 60)
     lines.append("INSTRUCTIONS FOR CLAUDE:")
