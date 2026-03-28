@@ -855,3 +855,16 @@ S248 — Lagna (Ascendant) extended rules
 
 ### Next session
 S249 — House significations extended (Bhava Phala)
+---
+
+## S249 — 2026-03-28 — Bhava Phala (House Results) Extended Rules
+
+**Tests:** 1990 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bhava_phala_rules.py`: 30 rules (BPH001-BPH030) — Extended house results from BPHS Ch.11-22 (parashari), Uttara Kalamrita Ch.4 (kalidasa), Phala Deepika Ch.7 (mantreswara): All 12 bhava extended significations, Bhavat Bhavam principle, Upachaya houses (3/6/10/11), Dusthana houses (6/8/12), Trikona houses (1/5/9), Maraka principle (2nd/7th lords), house occupation effects, Parivartana between house lords, empty/vacant house rules, Bhava Chalita, health-body part correlations, specific house combinations.
+
+**Corpus total: 1046 rules**
+
+### Next session
+S250 — Planets in houses extended (Graha Phala)
