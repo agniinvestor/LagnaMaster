@@ -211,3 +211,49 @@ S190 — [FILL IN]
 
 ### Next session
 S194 — [TBD]
+
+---
+
+## S194 — 2026-03-28 — Conditional Weight Functions W(planet, house, lagna, functional_role)
+
+**Commit:** (see git log)
+**Tests:** 1503 passing, 3 skipped (require live PG_DSN), 0 lint errors, CI green
+
+### What was built
+- `src/calculations/conditional_weights.py`: `WeightContext` dataclass and
+  `W(ctx) -> float` function that replaces flat static rule weights with
+  context-conditional modifiers:
+  - Yogakaraka × YK_MULT (1.5 Parashari/KP, 1.25 Jaimini) — early-return
+  - Functional benefic + positive rule × 1.2
+  - Functional malefic + negative rule × 1.2 (stronger affliction)
+  - Role mismatch × 0.75 (cross-direction mitigation)
+  - Kendra/Trikona house + positive rule × 1.1
+  - Dusthana house + negative rule × 1.1
+  - `g06_compliant` property: KP school requires Krishnamurti ayanamsha (G06)
+- `tests/test_s194_conditional_weights.py`: 13 tests covering all modifiers,
+  G06 compliance flags, and role-alignment logic.
+
+### What was wired
+- `build_context()` convenience constructor for downstream callers.
+- Module ready for Phase 2 engine rebuild — not yet wired into live scoring
+  to preserve regression stability.
+
+### New invariants
+- #38: W(yogakaraka) = base × YK_MULT and returns immediately — no further
+  house or role modifiers stack on top of yogakaraka status.
+- #39: W(neutral, non-kendra/dusthana) = base_weight exactly (no noise added).
+
+### Guardrail compliance
+- G06: WeightContext.g06_compliant flags KP+Lahiri as non-compliant.
+  Full fix deferred to S212 (ayanamsha selection).
+
+### Three-Lens Notes
+- Tech: Introduces the Layer I weight infrastructure that Phase 2 will wire
+  into the full engine. All existing scores are unchanged (not yet wired).
+- Astrology: Encodes functional dignity primacy (V.K. Choudhry Systems Approach
+  Ch.3) and house-type promise hierarchy (BPHS Ch.11) as computable functions.
+- Research: Context-conditional weights are a prerequisite for SHAP analysis
+  (Phase 6) — static weights produce uninterpretable attribution.
+
+### Next session
+S195 — Feature decomposition: 23 binary rules → 150+ continuous features (G22)

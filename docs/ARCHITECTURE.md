@@ -452,3 +452,5 @@ def score_chart_v3(chart, on_date=None) -> ChartV3Out
 # When on_date supplied: score_chart_with_dasha() called after score_all_axes()
 # MUTATES axes.d1.scores in-place (does not create a new object)
 ```
+## S194 — New module
+- `src/calculations/conditional_weights.py` — `WeightContext` + `W()` conditional weight function (G06-aware, Phase 2 engine rebuild ready)

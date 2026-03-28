@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–193 complete — March 2026)
+## Actual Current State (Sessions 1–194 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1490 passing, 3 skipped, 0 lint errors, CI green**
+- **1503 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -37,8 +37,8 @@ When in doubt, read that file to reconstruct state.
 - **Sessions 189–191:** Phase 0 bootstrap — Kala Bala verification, C-18 stress fixtures, VedAstro install, Protocol stubs, ruff G17 rule
 - **Session 192:** Protocol adapters — ScoringEngineAdapter, VimshottariDasaAdapter, NullFeedbackService, NullMLService
 - **Session 193:** HouseScore distribution dataclass — `house_score.py`, `compute_house_scores()`, `ChartScoresV3.house_distributions`; 1490 tests
-- **Session 193:** HouseScore distribution dataclass — `house_score.py`, `compute_house_scores()`, `ChartScoresV3.house_distributions`; 1490 tests
-- **Next session:** S194
+- **Session 194:** Conditional weight functions W(planet, house, lagna, functional_role) — `conditional_weights.py`, G06 g06_compliant flag; 1503 tests
+- **Next session:** S195
 
 ---
 
@@ -153,7 +153,7 @@ INDIA_1947 = {
 
 | Metric | Current | 2030 Target |
 |--------|---------|------------|
-| Tests passing | **1338** (3 skipped) | 8,000+ |
+| Tests passing | **1503** (3 skipped) | 8,000+ |
 | Lint errors | **0** | 0 |
 | Classical rules | 23 (R01–R23) | 3,000+ |
 | Ephemeris | **DE431 real files** | DE431 maintained |
