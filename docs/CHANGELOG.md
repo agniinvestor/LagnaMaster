@@ -712,3 +712,16 @@ S237 — Varga chart rules (D9 Navamsha + D10 Dashamsha)
 
 ### Next session
 S238 — Brihat Jataka: planetary natures and results
+---
+
+## S238 — 2026-03-28 — Brihat Jataka Extended Rules
+
+**Tests:** 1877 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `brihat_jataka_ext.py`: 30 rules (BJE001-BJE030) — Varahamihira's Brihat Jataka (6th cent CE): planetary natures for all 9 grahas (9 rules), hora/drekkana/navamsha systems (3 rules), aspects (3 rules), raja/dhana yogas (3 rules), life events (5 rules), dasha timing (3 rules).
+
+**Corpus total: 716 rules**
+
+### Next session
+S239 — Phala Deepika extended rules

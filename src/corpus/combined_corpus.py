@@ -77,6 +77,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.bphs_nakshatra_rules_p2 import BPHS_NAKSHATRA_RULES_P2_REGISTRY  # S235
     from src.corpus.bphs_bhava_karakas import BPHS_BHAVA_KARAKAS_REGISTRY  # S236
     from src.corpus.bphs_varga_rules import BPHS_VARGA_RULES_REGISTRY  # S237
+    from src.corpus.brihat_jataka_ext import BRIHAT_JATAKA_EXT_REGISTRY  # S238
 
     registry = CorpusRegistry()
     sources = [
@@ -111,6 +112,7 @@ def build_corpus() -> CorpusRegistry:
         BPHS_NAKSHATRA_RULES_P2_REGISTRY,
         BPHS_BHAVA_KARAKAS_REGISTRY,
         BPHS_VARGA_RULES_REGISTRY,
+        BRIHAT_JATAKA_EXT_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():
