@@ -324,3 +324,28 @@ S199 — contract tests: feature_count ≥ 150, array/dict consistency
 
 ### Next session
 S200 — final G22 wiring, ChartScoresV3 integration, session log export
+---
+
+## S200 — 2026-03-28 — G22 Integration + ChartScoresV3 Feature Vector
+
+**Tests:** 1550 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `scoring_v3.py`: Added `feature_vector: ChartFeatureVector` field to `ChartScoresV3`.
+  `score_chart_v3()` now calls `extract_features(chart, school)` and populates it.
+- `ROADMAP.md`: S193–S200 marked ✅. Feature decomposition phase complete.
+- **Phase 0 feature decomposition milestone:** 13 × 12 = 156 continuous features,
+  all G22 compliant. Phase 6 (ML Pipeline) feature space requirement satisfied.
+
+### Phase summary (S195–S200)
+| Session | Added | Running total |
+|---------|-------|---------------|
+| S195 | gentle_sign, bhavesh_dignity, dig_bala, sav_bindus_norm | 48 |
+| S196 | kartari_score, combust_score, retrograde_score, bhavesh_house_type | 96 |
+| S197 | benefic_net_score, malefic_net_score, karak_score | 132 |
+| S198 | pushkara_nav, war_loser | **156** |
+| S199 | Contract tests (G22 gate) | — |
+| S200 | ChartScoresV3 wiring, ROADMAP ✅ | — |
+
+### Next session
+S201 — OSF pre-registration + ADB license + corpus extractor pipeline

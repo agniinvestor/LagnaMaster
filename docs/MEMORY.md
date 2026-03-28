@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–199 complete — March 2026)
+## Actual Current State (Sessions 1–200 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1545 passing, 3 skipped, 0 lint errors, CI green**
+- **1550 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -43,7 +43,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 197:** +3 feature extractors (benefic_net_score, malefic_net_score, karak_score); 1530 tests
 - **Session 198:** +2 extractors (pushkara_nav, war_loser); 156 features (≥150 ✅); 1535 tests
 - **Session 199:** feature contract tests (10 tests, G22 gate); 1545 tests
-- **Next session:** S200
+- **Session 200:** ChartScoresV3 feature_vector field; ROADMAP S195–S200 ✅; 1550 tests
+- **Next session:** S201
 
 ---
 
