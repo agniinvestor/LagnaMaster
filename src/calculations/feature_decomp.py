@@ -1,5 +1,5 @@
 """
-src/calculations/feature_decomp.py — Sessions 195–196
+src/calculations/feature_decomp.py — Sessions 195–197
 
 Feature decomposition: replaces 23 binary rule triggers with continuous
 feature vectors suitable for ML analysis (Phase 6).
@@ -9,7 +9,8 @@ ChartFeatureVector aggregates all 12 houses into a flat feature space.
 
 S195: 4 extractors (gentle_sign, bhavesh_dignity, dig_bala, sav_bindus_norm)
 S196: +4 extractors (kartari_score, combust_score, retrograde_score, bhavesh_house_type)
-      = 8 × 12 = 96 features
+S197: +3 extractors (benefic_net_score, malefic_net_score, karak_score)
+      = 11 × 12 = 132 features
 
 GUARDRAIL G22: No SHAP analysis or statistical inference without OSF
 pre-registration (S201–S210). This module provides feature extraction
@@ -339,6 +340,138 @@ def _extract_bhavesh_house_type(
     return RuleFeature("bhavesh_house_type", val, "R04", house)
 
 
+# ── S197 extractors ──────────────────────────────────────────────────────────
+
+def _aspects(planet: str, p_house: int, t_house: int) -> bool:
+    """Basic aspect check (mirrors multi_axis_scoring)."""
+    diff = (t_house - p_house) % 12
+    if diff == 6:
+        return True
+    extras = {"Mars": {3, 9}, "Jupiter": {4, 8}, "Saturn": {2, 9}}
+    return diff in extras.get(planet, set())
+
+
+def _extract_benefic_net_score(
+    house: int, house_si: int, chart, frame_lagna_si: int,
+    is_fb, sign_planets: dict[int, list[str]]
+) -> RuleFeature:
+    """
+    R02 + R03 + R06 + R07 combined: net functional-benefic strength for house.
+    Score = (benefics_in_house + 0.5*fb_aspects_house + fb_with_bhavesh
+             + 0.5*fb_aspects_bhavesh) / 5.0  → [0, 1]
+    Source: PVRNR BPHS — benefic placement, aspect, and association all count.
+    """
+    bhavesh = _SIGN_LORD[house_si]
+    p_house = {p: (pos.sign_index - frame_lagna_si) % 12 + 1
+               for p, pos in chart.planets.items()}
+    bh_house = p_house.get(bhavesh, house)
+    in_house = sign_planets.get(house_si, [])
+
+    score = 0.0
+    for p in in_house:
+        if is_fb(p):
+            score += 1.0
+    for p, pos in chart.planets.items():
+        ph = p_house.get(p, 1)
+        if is_fb(p) and p not in in_house and _aspects(p, ph, house):
+            score += 0.5
+    bh_si = chart.planets[bhavesh].sign_index if bhavesh in chart.planets else house_si
+    bh_cotenants = [p for p in sign_planets.get(bh_si, []) if p != bhavesh]
+    for p in bh_cotenants:
+        if is_fb(p):
+            score += 1.0
+    for p, pos in chart.planets.items():
+        ph = p_house.get(p, 1)
+        if is_fb(p) and _aspects(p, ph, bh_house):
+            score += 0.5
+
+    return RuleFeature("benefic_net_score", round(min(1.0, score / 5.0), 4), "R02-R07", house)
+
+
+def _extract_malefic_net_score(
+    house: int, house_si: int, chart, frame_lagna_si: int,
+    is_fm, sign_planets: dict[int, list[str]]
+) -> RuleFeature:
+    """
+    R09 + R10 + R13 + R14 combined: net functional-malefic affliction for house.
+    Score = (malefics_in_house + 0.5*fm_aspects_house + fm_with_bhavesh
+             + 0.5*fm_aspects_bhavesh) / 5.0  → [0, 1]
+    Source: PVRNR BPHS — malefic association and aspect reduce house promise.
+    """
+    bhavesh = _SIGN_LORD[house_si]
+    p_house = {p: (pos.sign_index - frame_lagna_si) % 12 + 1
+               for p, pos in chart.planets.items()}
+    bh_house = p_house.get(bhavesh, house)
+    in_house = sign_planets.get(house_si, [])
+
+    score = 0.0
+    for p in in_house:
+        if is_fm(p):
+            score += 1.0
+    for p, pos in chart.planets.items():
+        ph = p_house.get(p, 1)
+        if is_fm(p) and p not in in_house and _aspects(p, ph, house):
+            score += 0.5
+    bh_si = chart.planets[bhavesh].sign_index if bhavesh in chart.planets else house_si
+    bh_cotenants = [p for p in sign_planets.get(bh_si, []) if p != bhavesh]
+    for p in bh_cotenants:
+        if is_fm(p):
+            score += 1.0
+    for p, pos in chart.planets.items():
+        ph = p_house.get(p, 1)
+        if is_fm(p) and _aspects(p, ph, bh_house):
+            score += 0.5
+
+    return RuleFeature("malefic_net_score", round(min(1.0, score / 5.0), 4), "R09-R14", house)
+
+
+_STHIR_KARAK: dict[int, set[str]] = {
+    1: {"Sun"}, 2: {"Jupiter"}, 3: {"Mars"}, 4: {"Moon", "Venus"},
+    5: {"Jupiter"}, 6: {"Mars", "Saturn"}, 7: {"Venus"}, 8: {"Saturn"},
+    9: {"Sun", "Jupiter"}, 10: {"Sun", "Mercury", "Saturn"},
+    11: {"Jupiter"}, 12: {"Saturn"},
+}
+
+
+def _extract_karak_score(
+    house: int, house_si: int, chart, frame_lagna_si: int
+) -> RuleFeature:
+    """
+    R17 + R18: Sthira Karak score for this house.
+    +1.0 = all karakas for this house are in/aspecting it.
+    -1.0 = all karakas are in dusthana from this house.
+     0.0 = balanced / no karakas.
+    Source: BPHS Ch.32 — Naisargika Karakatva (natural significators).
+    """
+    _DUSTHANA_SET = {6, 8, 12}
+    karakas = _STHIR_KARAK.get(house, set())
+    if not karakas:
+        return RuleFeature("karak_score", 0.0, "R17/R18", house)
+
+    pos_count = 0
+    neg_count = 0
+    total = 0
+
+    for karak in karakas:
+        if karak not in chart.planets:
+            continue
+        total += 1
+        ksi = chart.planets[karak].sign_index
+        kh = (ksi - frame_lagna_si) % 12 + 1
+        if kh == house or _aspects(karak, kh, house):
+            pos_count += 1
+        else:
+            dist = (house - kh) % 12 + 1
+            if dist in _DUSTHANA_SET:
+                neg_count += 1
+
+    if total == 0:
+        return RuleFeature("karak_score", 0.0, "R17/R18", house)
+
+    val = round((pos_count - neg_count) / total, 4)
+    return RuleFeature("karak_score", max(-1.0, min(1.0, val)), "R17/R18", house)
+
+
 # ── Top-level extractor ───────────────────────────────────────────────────────
 
 def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
@@ -371,6 +504,26 @@ def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
 
     sign_planets = _build_sign_planets(chart, lagna_si)
 
+    # S197: functional benefic/malefic callables for this lagna
+    try:
+        import types
+        from src.calculations.functional_roles import compute_functional_roles
+        _SIGN_NAMES = [
+            "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+            "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces",
+        ]
+        _fake = types.SimpleNamespace(
+            lagna_sign_index=lagna_si,
+            lagna_sign=_SIGN_NAMES[lagna_si],
+            planets=chart.planets,
+        )
+        _roles = compute_functional_roles(_fake)
+        is_fb = _roles.is_functional_benefic
+        is_fm = _roles.is_functional_malefic
+    except Exception:
+        is_fb = lambda p: False  # noqa: E731
+        is_fm = lambda p: False  # noqa: E731
+
     houses: dict[int, HouseFeatureVector] = {}
     for h in range(1, 13):
         house_si = (lagna_si + h - 1) % 12
@@ -385,6 +538,10 @@ def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
             _extract_combust_score(h, house_si, chart),
             _extract_retrograde_score(h, house_si, chart),
             _extract_bhavesh_house_type(h, house_si, chart, lagna_si),
+            # S197
+            _extract_benefic_net_score(h, house_si, chart, lagna_si, is_fb, sign_planets),
+            _extract_malefic_net_score(h, house_si, chart, lagna_si, is_fm, sign_planets),
+            _extract_karak_score(h, house_si, chart, lagna_si),
         ]
         houses[h] = HouseFeatureVector(house=h, features=features)
 

@@ -76,12 +76,12 @@ def test_bhavesh_house_type_in_range():
 
 # ─── Feature count grows to 8 per house ───────────────────────────────────────
 
-def test_feature_count_is_96():
-    """After S196: 8 features × 12 houses = 96 total features."""
+def test_feature_count_at_least_96():
+    """After S196: at least 8 features × 12 houses = 96 total features."""
     from src.calculations.feature_decomp import extract_features
     cfv = extract_features(_india_chart())
-    assert cfv.feature_count() == 96, (
-        f"Expected 96 features (8×12), got {cfv.feature_count()}"
+    assert cfv.feature_count() >= 96, (
+        f"Expected ≥96 features (8×12), got {cfv.feature_count()}"
     )
 
 
@@ -94,6 +94,6 @@ def test_all_8_feature_names_present_per_house():
     cfv = extract_features(_india_chart())
     for h, hfv in cfv.houses.items():
         names_short = {rf.name for rf in hfv.features}
-        assert names_short == EXPECTED, (
-            f"H{h} features mismatch: {names_short ^ EXPECTED}"
+        assert EXPECTED.issubset(names_short), (
+            f"H{h} missing S196 features: {EXPECTED - names_short}"
         )

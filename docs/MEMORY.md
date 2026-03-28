@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–196 complete — March 2026)
+## Actual Current State (Sessions 1–197 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1525 passing, 3 skipped, 0 lint errors, CI green**
+- **1530 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -40,7 +40,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 194:** Conditional weight functions W(planet, house, lagna, functional_role) — `conditional_weights.py`, G06 g06_compliant flag; 1503 tests
 - **Session 195:** Feature decomp infrastructure — `feature_decomp.py`, 4 extractors, 48 features; 1517 tests
 - **Session 196:** +4 feature extractors (kartari, combust, retrograde, bhavesh_house_type); 1525 tests
-- **Next session:** S197
+- **Session 197:** +3 feature extractors (benefic_net_score, malefic_net_score, karak_score); 1530 tests
+- **Next session:** S198
 
 ---
 

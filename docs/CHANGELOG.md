@@ -284,3 +284,16 @@ S196 — kartari_score, combust_score, retrograde_score, bhavesh_house_type
 
 ### Next session
 S197 — benefic_net_score, malefic_net_score, karak_score
+---
+
+## S197 — 2026-03-28 — Feature Extractors: benefic_net_score, malefic_net_score, karak_score
+
+**Tests:** 1530 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `feature_decomp.py` +3 extractors: `benefic_net_score` (R02-R07), `malefic_net_score` (R09-R14),
+  `karak_score` (R17/R18 Sthira Karak). 11 × 12 = 132 features.
+- Wired `compute_functional_roles` into `extract_features()` for is_fb/is_fm.
+
+### Next session
+S198 — pushkara_nav + war_loser extractors → 13 × 12 = 156 features
