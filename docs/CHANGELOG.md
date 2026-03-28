@@ -509,3 +509,21 @@ S210 — corpus checkpoint: ROADMAP S201-S210 ✅, CLASSICAL_CORPUS.md update
 
 ### Next session
 S211 — Redis + pgvector + TimescaleDB + MLflow + family schema
+---
+
+## S211 — 2026-03-28 — ML Infrastructure Schema (pgvector + TimescaleDB + MLflow + Family)
+
+**Tests:** 1651 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/db_vector.py`: pgvector schema — `chart_embeddings` table for 156-dim feature
+  vectors, IVFFlat cosine index, `feature_schema_versions`.
+- `src/db_timescale.py`: TimescaleDB schema — `dasha_periods`, `outcome_confirmations`
+  (G04: user_prior_prob_pre field), `transit_activations` hypertables.
+- `src/ml/mlflow_config.py`: MLflow experiment registry — OB-3 / OB-3-SHAP /
+  EXPLORATORY configs with G22 guardrail notes.
+- `src/db_family.py`: `FamilyRelation` enum + family_groups / family_members /
+  family_relations / family_patterns schema (G03/G16 compliance notes).
+
+### Next session
+S212 — Ayanamsha selection + KP school fix (G06 compliance)

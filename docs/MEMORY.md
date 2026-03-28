@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–210 complete — March 2026)
+## Actual Current State (Sessions 1–211 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1638 passing, 3 skipped, 0 lint errors, CI green (S210 checkpoint)**
+- **1651 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -54,7 +54,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 208:** BirthRecord + COMBINED_CORPUS (135+ rules, 6 texts); 1629 tests
 - **Session 209:** Corpus pipeline integration tests (9 tests); 1638 tests
 - **Session 210:** Corpus checkpoint; ROADMAP S201-S210 ✅; 135 rules across 6 texts
-- **Next session:** S211
+- **Session 211:** pgvector + TimescaleDB + MLflow + family schema; 1651 tests
+- **Next session:** S212
 
 ---
 
