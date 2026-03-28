@@ -686,3 +686,16 @@ S235 — BPHS nakshatra rules part 2 (nakshatras 15-27)
 
 ### Next session
 S236 — BPHS Bhava Karakas (house significators)
+---
+
+## S236 — 2026-03-28 — BPHS Bhava Karakas
+
+**Tests:** 1860 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_bhava_karakas.py`: 30 rules (BHK001-BHK030) — Naisargika karakas for all 12 houses (12 rules), Jaimini Chara Karakas AK/AmK/BK/MK/PK/GK/DK (8 rules), special karaka rules including Karaka-Bhava-Nashta, gender-based spouse karakas, dasha activation (10 rules).
+
+**Corpus total: 656 rules**
+
+### Next session
+S237 — Varga chart rules (D9 Navamsha + D10 Dashamsha)
