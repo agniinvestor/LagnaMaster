@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–201 complete — March 2026)
+## Actual Current State (Sessions 1–202 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1558 passing, 3 skipped, 0 lint errors, CI green**
+- **1570 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -45,7 +45,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 199:** feature contract tests (10 tests, G22 gate); 1545 tests
 - **Session 200:** ChartScoresV3 feature_vector field; ROADMAP S195–S200 ✅; 1550 tests
 - **Session 201:** OSF schema (HypothesisSpec, CVStrategy, OSFRegistration) + OB-3 draft; 1558 tests
-- **Next session:** S202
+- **Session 202:** RuleRecord + CorpusRegistry corpus infrastructure; 1570 tests
+- **Next session:** S203
 
 ---
 

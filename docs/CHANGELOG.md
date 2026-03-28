@@ -364,3 +364,17 @@ S201 — OSF pre-registration + ADB license + corpus extractor pipeline
 
 ### Next session
 S202 — RuleRecord + CorpusRegistry infrastructure
+---
+
+## S202 — 2026-03-28 — Corpus Infrastructure: RuleRecord + CorpusRegistry
+
+**Tests:** 1570 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/rule_record.py`: `RuleRecord` dataclass — rule_id, source, chapter,
+  school, category, description, confidence (0–1), verse, tags, implemented, engine_ref.
+- `src/corpus/registry.py`: `CorpusRegistry` — add/get/filter/count/summary;
+  raises ValueError on duplicate rule_id.
+
+### Next session
+S203 — ADB license compliance module + data source tracking
