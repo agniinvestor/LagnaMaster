@@ -272,3 +272,15 @@ S195 — Feature decomposition: 23 binary rules → 150+ continuous features (G2
 
 ### Next session
 S196 — kartari_score, combust_score, retrograde_score, bhavesh_house_type
+---
+
+## S196 — 2026-03-28 — Feature Extractors: kartari, combust, retrograde, bhavesh_house_type
+
+**Tests:** 1525 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `feature_decomp.py` +4 extractors: `kartari_score` (R08/R12), `combust_score` (R19),
+  `retrograde_score` (R22), `bhavesh_house_type` (R04 placement). 8 × 12 = 96 features.
+
+### Next session
+S197 — benefic_net_score, malefic_net_score, karak_score

@@ -1,5 +1,5 @@
 """
-src/calculations/feature_decomp.py — Session 195
+src/calculations/feature_decomp.py — Sessions 195–196
 
 Feature decomposition: replaces 23 binary rule triggers with continuous
 feature vectors suitable for ML analysis (Phase 6).
@@ -8,7 +8,8 @@ Each house yields a HouseFeatureVector of named float features.
 ChartFeatureVector aggregates all 12 houses into a flat feature space.
 
 S195: 4 extractors (gentle_sign, bhavesh_dignity, dig_bala, sav_bindus_norm)
-      = 4 × 12 = 48 features
+S196: +4 extractors (kartari_score, combust_score, retrograde_score, bhavesh_house_type)
+      = 8 × 12 = 96 features
 
 GUARDRAIL G22: No SHAP analysis or statistical inference without OSF
 pre-registration (S201–S210). This module provides feature extraction
@@ -24,9 +25,12 @@ Public API
 Classical sources
 -----------------
   R01: BPHS Ch.11 — gentle/benefic signs for house placement
-  R04: PVRNR BPHS Ch.47 — bhavesh dignity (exaltation, own, enemy, debilitation)
+  R04: PVRNR BPHS Ch.47 — bhavesh dignity and house placement
+  R08/R12: Phaladeepika Ch.6 — Shubha / Paapa Kartari Yoga
+  R19: BPHS Ch.3 v.51-59 — combustion (near Sun) diminishes planet's power
   R20: BPHS Ch.3 — Dig Bala (directional strength)
-  R23: Brihat Parasara Hora Sastra Ch.66 — Ashtakavarga SAV bindus
+  R22: Phaladeepika Ch.2 v.9 — retrograde planets have altered significations
+  R23: BPHS Ch.66 — Ashtakavarga SAV bindus
 """
 
 from __future__ import annotations
@@ -42,6 +46,25 @@ _SIGN_LORD: dict[int, str] = {
 
 # R01 — gentle / benefic-natured signs (Cancer, Taurus, Libra, Pisces, Sag)
 _GENTLE_SIGNS: frozenset[int] = frozenset({3, 1, 6, 11, 8})
+
+# House-type placement scores for bhavesh (R04 house placement aspect)
+_HOUSE_TYPE_SCORE: dict[int, float] = {
+    1: 1.0,   # kendra + trikona
+    5: 0.9, 9: 0.9,          # trikona
+    4: 0.75, 7: 0.75, 10: 0.75,  # kendra
+    11: 0.5,                  # upachaya (gains)
+    3: 0.4,                   # upachaya (growth)
+    2: 0.3,                   # neutral (wealth)
+    6: 0.1, 8: 0.1, 12: 0.1, # dusthana
+}
+
+# R22 retrograde scores by planet category
+_OUTER_PLANETS = {"Jupiter", "Saturn"}
+_INNER_PLANETS = {"Mercury", "Venus", "Mars"}
+
+# Natural benefics / malefics for kartari (natural, not functional)
+_NAT_BENEFIC_SET = frozenset({"Jupiter", "Venus", "Mercury", "Moon"})
+_NAT_MALEFIC_SET = frozenset({"Sun", "Mars", "Saturn", "Rahu", "Ketu"})
 
 # R20 — Dig Bala: planet → house of directional strength
 _DIG_BALA: dict[str, int] = {
@@ -199,6 +222,123 @@ def _extract_sav_bindus_norm(house: int, house_si: int, av_bindus: dict | None) 
     return RuleFeature("sav_bindus_norm", round(min(1.0, raw / 8.0), 4), "R23", house)
 
 
+# ── S196 extractors ──────────────────────────────────────────────────────────
+
+def _build_sign_planets(chart, frame_lagna_si: int) -> dict[int, list[str]]:
+    """Map sign_index → list of planet names in that sign."""
+    sp: dict[int, list[str]] = {}
+    for p, pos in chart.planets.items():
+        sp.setdefault(pos.sign_index, []).append(p)
+    return sp
+
+
+def _extract_kartari_score(
+    house: int, house_si: int, sign_planets: dict[int, list[str]]
+) -> RuleFeature:
+    """
+    R08 + R12: Kartari Yoga score.
+    +1.0 = Shubha Kartari (benefics flank house on both sides).
+    -1.0 = Paapa Kartari (malefics flank house on both sides).
+     0.0 = no kartari.
+    Source: Phaladeepika Ch.6 — flanking planets have strong influence on bhava.
+    """
+    prev_si = (house_si - 1) % 12
+    next_si = (house_si + 1) % 12
+    prev_pl = sign_planets.get(prev_si, [])
+    next_pl = sign_planets.get(next_si, [])
+    shubh = (
+        any(p in _NAT_BENEFIC_SET for p in prev_pl)
+        and any(p in _NAT_BENEFIC_SET for p in next_pl)
+    )
+    paap = (
+        any(p in _NAT_MALEFIC_SET for p in prev_pl)
+        and any(p in _NAT_MALEFIC_SET for p in next_pl)
+    )
+    if shubh:
+        val = 1.0
+    elif paap:
+        val = -1.0
+    else:
+        val = 0.0
+    return RuleFeature("kartari_score", val, "R08/R12", house)
+
+
+def _extract_combust_score(house: int, house_si: int, chart) -> RuleFeature:
+    """
+    R19: Combustion score for the bhavesh.
+    +0.5 = cazimi (within 1° of Sun — actually strengthened).
+     0.0 = not combust.
+    -0.5 = combust.
+    -1.0 = combust AND retrograde (worst).
+    Source: BPHS Ch.3 v.51-59; Phaladeepika Ch.2 — combustion reduces planet significations.
+    """
+    bhavesh = _SIGN_LORD[house_si]
+    if bhavesh not in chart.planets:
+        return RuleFeature("combust_score", 0.0, "R19", house)
+
+    try:
+        from src.calculations.dignity import compute_all_dignities
+        digs = compute_all_dignities(chart)
+        dig = digs.get(bhavesh)
+        if dig is None:
+            return RuleFeature("combust_score", 0.0, "R19", house)
+        if dig.cazimi:
+            val = 0.5
+        elif dig.combust and chart.planets[bhavesh].is_retrograde:
+            val = -1.0
+        elif dig.combust:
+            val = -0.5
+        else:
+            val = 0.0
+    except Exception:
+        val = 0.0
+
+    return RuleFeature("combust_score", val, "R19", house)
+
+
+def _extract_retrograde_score(house: int, house_si: int, chart) -> RuleFeature:
+    """
+    R22: Retrograde score for the bhavesh.
+    Outer planets (Jupiter/Saturn) rx → +0.25 (inner strength, slower but potent).
+    Inner planets (Mercury/Venus/Mars) rx → -0.5 (disrupted significations).
+    Sun/Moon never retrograde → 0.0.
+    Source: Phaladeepika Ch.2 v.9; BPHS Ch.3 — vakra (retrograde) planets behave unusually.
+    """
+    bhavesh = _SIGN_LORD[house_si]
+    if bhavesh not in chart.planets:
+        return RuleFeature("retrograde_score", 0.0, "R22", house)
+
+    is_rx = chart.planets[bhavesh].is_retrograde
+    if not is_rx:
+        return RuleFeature("retrograde_score", 0.0, "R22", house)
+
+    if bhavesh in _OUTER_PLANETS:
+        val = 0.25
+    elif bhavesh in _INNER_PLANETS:
+        val = -0.5
+    else:
+        val = 0.0
+
+    return RuleFeature("retrograde_score", val, "R22", house)
+
+
+def _extract_bhavesh_house_type(
+    house: int, house_si: int, chart, frame_lagna_si: int
+) -> RuleFeature:
+    """
+    R04 (house placement): Where is the bhavesh placed? [0, 1].
+    1.0 = H1 (kendra + trikona), 0.75 = kendra, 0.9 = trikona, 0.1 = dusthana.
+    Source: BPHS Ch.11 — house of bhavesh placement determines house promise.
+    """
+    bhavesh = _SIGN_LORD[house_si]
+    if bhavesh not in chart.planets:
+        return RuleFeature("bhavesh_house_type", 0.3, "R04", house)  # neutral default
+
+    bh_house = (chart.planets[bhavesh].sign_index - frame_lagna_si) % 12 + 1
+    val = _HOUSE_TYPE_SCORE.get(bh_house, 0.3)
+    return RuleFeature("bhavesh_house_type", val, "R04", house)
+
+
 # ── Top-level extractor ───────────────────────────────────────────────────────
 
 def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
@@ -229,14 +369,22 @@ def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
     except Exception:
         av_bindus = None
 
+    sign_planets = _build_sign_planets(chart, lagna_si)
+
     houses: dict[int, HouseFeatureVector] = {}
     for h in range(1, 13):
         house_si = (lagna_si + h - 1) % 12
         features = [
+            # S195
             _extract_gentle_sign(h, house_si),
             _extract_bhavesh_dignity(h, house_si, chart),
             _extract_dig_bala(h, house_si, chart, lagna_si),
             _extract_sav_bindus_norm(h, house_si, av_bindus),
+            # S196
+            _extract_kartari_score(h, house_si, sign_planets),
+            _extract_combust_score(h, house_si, chart),
+            _extract_retrograde_score(h, house_si, chart),
+            _extract_bhavesh_house_type(h, house_si, chart, lagna_si),
         ]
         houses[h] = HouseFeatureVector(house=h, features=features)
 
