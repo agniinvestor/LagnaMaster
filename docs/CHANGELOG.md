@@ -257,3 +257,18 @@ S194 — [TBD]
 
 ### Next session
 S195 — Feature decomposition: 23 binary rules → 150+ continuous features (G22)
+---
+
+## S195 — 2026-03-28 — Feature Decomposition Infrastructure
+
+**Tests:** 1517 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/calculations/feature_decomp.py`: `RuleFeature`, `HouseFeatureVector`,
+  `ChartFeatureVector` dataclasses + `extract_features(chart, school)`.
+  Four extractors: `gentle_sign` (R01), `bhavesh_dignity` (R04 continuous),
+  `dig_bala` (R20), `sav_bindus_norm` (R23 continuous).
+  4 features × 12 houses = 48 features. G22 compliance note in module docstring.
+
+### Next session
+S196 — kartari_score, combust_score, retrograde_score, bhavesh_house_type
