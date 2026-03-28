@@ -34,7 +34,8 @@ When in doubt, read that file to reconstruct state.
 - **Sessions 161–162:** Wiring fixes — Topocentric Moon, functional dignity in R02/R09
 - **Sessions 163–186:** Scoring depth, school-mixing fix, regression snapshot
 - **Sessions 187–188:** Final wiring gaps + XIX output API + Postgres routing + Swiss Ephemeris upgrade
-- **Next session:** S191
+- **Sessions 189–191:** Phase 0 bootstrap — Kala Bala verification, C-18 stress fixtures, VedAstro install, Protocol stubs, ruff G17 rule
+- **Next session:** S192
 
 ---
 
