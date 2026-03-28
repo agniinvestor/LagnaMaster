@@ -482,3 +482,30 @@ S209 — corpus pipeline integration tests
 
 ### Next session
 S210 — corpus checkpoint: ROADMAP S201-S210 ✅, CLASSICAL_CORPUS.md update
+---
+
+## S210 — 2026-03-28 — Corpus Checkpoint (S201–S210 complete)
+
+**Tests:** 1638 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `CLASSICAL_CORPUS.md` updated: 135-rule corpus status, OSF filing status,
+  pipeline infrastructure summary.
+- `ROADMAP.md`: S201–S210 marked ✅.
+
+### Phase 0 corpus pipeline summary (S201–S210)
+| Session | Built |
+|---------|-------|
+| S201 | OSF pre-registration schema + OB-3 draft filing |
+| S202 | RuleRecord + CorpusRegistry infrastructure |
+| S203 | ADB license compliance + R01-R23 encoded |
+| S204 | TextExtractor Protocol + TimeBasedSplit CV |
+| S205 | CorpusAudit + 31 BPHS rules |
+| S206 | Phaladeepika (21) + Brihat Jataka (26) rules; 101 total |
+| S207 | Uttara Kalamrita (17) + Jataka Parijata (17); 135 total |
+| S208 | BirthRecord + COMBINED_CORPUS singleton |
+| S209 | Pipeline integration tests |
+| S210 | Corpus checkpoint + docs |
+
+### Next session
+S211 — Redis + pgvector + TimescaleDB + MLflow + family schema

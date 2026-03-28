@@ -74,16 +74,19 @@ should be weighted by which convergence layer they strengthen and how:
 
 | Component | Status | Gap |
 |-----------|--------|-----|
-| Classical rules active | 23 (R01–R23, all wired as of S188) | ~1,477+ rules missing from 1,500+ target |
-| BPHS chapters encoded | ~15 of 97 | 82 chapters unencoded |
+| Classical rules active (engine) | 23 (R01–R23) | ~1,477+ rules missing from 1,500+ target |
+| Classical rules encoded (corpus) | **135** (R01-R23 + BPHS + Phala + BJ + UK + JP) | ~1,365+ rules to encode in Phase 1 |
+| BPHS chapters encoded (corpus) | 54 rules across Ch.3,6,11,24,26,27,28,32,34,47,50,66 | 83+ chapters remaining |
 | Named yogas | 13 types (detect_yogas) | VedAstro has 1,000+; target 310+ at Phase 1 |
 | Dasha systems | 2 (Vimshottari + Narayana) | 42 more systems (target 44) |
 | Divisional charts | D1–D9 confirmed, D10 partial | D12 (ancestral) + D16-D60 missing |
 | Shadbala | 6 components present | Kala Bala sub-components unverified (SK-1) |
 | Ashtakavarga | SAV implemented, fixed totals verified | Full Prastarashtakavarga missing |
-| Ayanamsha | Lahiri only | Krishnamurti for KP (G06 violation), True Chitrapaksha missing |
+| Ayanamsha | Lahiri only | Krishnamurti for KP (G06 violation — S212 target), True Chitrapaksha missing |
 | Jaimini calculations | Chara Karakas (7) in chara_karak.py | Pada lagnas, Jaimini aspects incomplete |
 | Functional dignity | Wired to R02/R09 as of S162 | Schema in place, yogakaraka weight variant active |
+| OSF pre-registration | Draft in docs/research/osf_draft_ob3.json | NOT YET FILED on OSF — file at S461 |
+| Corpus pipeline | COMBINED_CORPUS (135 rules), ADB license, CV splitter, audit | 6 texts encoded; Phase 1 target: 1,500+ |
 
 ---
 
