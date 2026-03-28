@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–249 complete — March 2026)
+## Actual Current State (Sessions 1–250 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1990 passing, 3 skipped, 0 lint errors, CI green**
+- **2001 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -79,7 +79,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 247:** Extended yoga rules — Pancha Mahapurusha/Nabhasa/Viparita/Moon yogas/Kartari; 30 rules; corpus 986; 1969 tests
 - **Session 248:** Lagna extended — all 12 lagna profiles/Yogakaraka/Kendra Adhipati/Vargottama; 30 rules; corpus 1016; 1979 tests ✅ 1000+ MILESTONE
 - **Session 249:** Bhava Phala extended — all 12 house significations/Upachaya/Dusthana/Maraka; 30 rules; corpus 1046; 1990 tests
-- **Next session:** S250
+- **Session 250:** Graha Phala — planets in houses (all 7 planets + Rahu/Ketu, Mangal Dosha, combust); 30 rules; corpus 1076; 2001 tests
+- **Next session:** S251
 
 ---
 

@@ -868,3 +868,16 @@ S249 — House significations extended (Bhava Phala)
 
 ### Next session
 S250 — Planets in houses extended (Graha Phala)
+---
+
+## S250 — 2026-03-28 — Graha Phala (Planets in Houses) Rules
+
+**Tests:** 2001 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `graha_phala_rules.py`: 30 rules (GPH001-GPH030) — Planet-in-house effects from BPHS Ch.23-31 (parashari), Phala Deepika Ch.3 (mantreswara), Brihat Jataka Ch.2 (varahamihira): Sun in all houses (Kendra/Trikona/Dusthana), Moon (waxing/waning effects), Mars (Mangal Dosha 1/4/7, Upachaya 3/6/11), Mercury (intellect/communication), Jupiter (wisdom/prosperity in all houses), Venus (beauty/happiness), Saturn (discipline/delay, excellent in Upachaya), Rahu/Ketu in houses, combust planets (Asta), exalted in dusthana, debilitated in Kendra, Swakshetra.
+
+**Corpus total: 1076 rules**
+
+### Next session
+S251 — Remedies and Upayas (classical astrological remedies)

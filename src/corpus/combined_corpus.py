@@ -89,6 +89,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.yoga_extended_rules import YOGA_EXTENDED_RULES_REGISTRY  # S247
     from src.corpus.lagna_extended_rules import LAGNA_EXTENDED_RULES_REGISTRY  # S248
     from src.corpus.bhava_phala_rules import BHAVA_PHALA_RULES_REGISTRY  # S249
+    from src.corpus.graha_phala_rules import GRAHA_PHALA_RULES_REGISTRY  # S250
 
     registry = CorpusRegistry()
     sources = [
@@ -135,6 +136,7 @@ def build_corpus() -> CorpusRegistry:
         YOGA_EXTENDED_RULES_REGISTRY,
         LAGNA_EXTENDED_RULES_REGISTRY,
         BHAVA_PHALA_RULES_REGISTRY,
+        GRAHA_PHALA_RULES_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():
