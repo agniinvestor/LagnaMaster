@@ -32,7 +32,7 @@ jobs:
         run: pip install ruff --quiet
 
       - name: Run ruff
-        run: ruff check src/ tests/ --select E,F,W --ignore E501,E402,E701,E702,F401
+        run: ruff check src/ tests/ tools/
 
   test:
     name: pytest
