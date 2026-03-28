@@ -364,6 +364,7 @@ if chart is None:
     tab_kundali,
     tab_muhurta,
     tab_rules,
+    tab_confidence,
 ) = st.tabs(
     [
         "📊 Chart",
@@ -379,6 +380,7 @@ if chart is None:
         "💑 Kundali Milan",
         "🕐 Muhurta",
         "📋 Rule Detail",
+        "🔮 Confidence",
     ]
 )
 
@@ -1302,7 +1304,112 @@ with tab_rules:
         st.dataframe(rule_rows, hide_index=True, use_container_width=True)
         st.caption("WC = Worth Considering rules count at 0.5× weight")
 
-# ── S189: Confidence model panel (appended) ──────────────────────────────────
-# Full confidence + guidance UI is in the tabbed interface above.
-# If running legacy single-page UI, call compute_uncertainty_flags(chart)
-# and display flags.lagna_boundary_margin_deg with a warning if < 1.0 degrees.
+# ╔═══════════════════════════════════════════════════════════════════════════╗
+# ║  TAB 14 — CONFIDENCE                                                      ║
+# ╚═══════════════════════════════════════════════════════════════════════════╝
+with tab_confidence:
+    st.markdown("### 🔮 Birth Time Confidence & Uncertainty Flags")
+    st.caption(
+        "Birth time uncertainty propagates into Lagna, dasha lord, and house scores. "
+        "This panel surfaces flags from `confidence_model.py` so you can see how "
+        "sensitive this chart is to birth time errors."
+    )
+
+    try:
+        from src.calculations.confidence_model import (
+            compute_uncertainty_flags,
+            compute_confidence,
+        )
+
+        unc_min = st.slider(
+            "Birth time uncertainty (minutes)",
+            min_value=1,
+            max_value=30,
+            value=5,
+            step=1,
+            key="conf_uncertainty_min",
+            help="Typical: ±5 min for hospital records, ±15-30 min for family memory.",
+        )
+
+        flags = compute_uncertainty_flags(chart)
+        result = compute_confidence(chart, birth_time_uncertainty_minutes=float(unc_min))
+
+        # ── Severity banner ───────────────────────────────────────────────────
+        severity = flags.severity
+        if severity == "high":
+            st.error(
+                "⚠️ HIGH uncertainty — multiple boundary conditions active. "
+                "Lagna sign or dasha lord may change within the birth time window."
+            )
+        elif severity == "medium":
+            st.warning(
+                "⚡ MEDIUM uncertainty — at least one boundary condition active."
+            )
+        else:
+            st.success("✅ LOW uncertainty — chart is stable within the birth time window.")
+
+        # ── Flag detail ───────────────────────────────────────────────────────
+        col_a, col_b = st.columns(2)
+        with col_a:
+            st.markdown("**Lagna boundary**")
+            if flags.lagna_near_sign_boundary:
+                st.metric(
+                    "Margin from sign cusp",
+                    f"{flags.lagna_boundary_margin_deg:.2f}°",
+                    delta="⚠️ within 1°",
+                    delta_color="inverse",
+                )
+            else:
+                st.metric("Lagna boundary", "Stable", delta="✅ safe")
+
+            st.markdown("**Moon / Dasha lord**")
+            if flags.moon_near_nakshatra_cusp:
+                st.metric(
+                    "Moon margin from nak boundary",
+                    f"{flags.moon_boundary_margin_deg:.2f}°",
+                    delta="⚠️ dasha lord may change",
+                    delta_color="inverse",
+                )
+            else:
+                st.metric("Moon nak boundary", "Stable", delta="✅ safe")
+
+        with col_b:
+            st.markdown("**Sign-boundary planets**")
+            if flags.sign_boundary_planets:
+                for pl in flags.sign_boundary_planets:
+                    st.warning(f"⚡ {pl} near sign boundary")
+            else:
+                st.success("No planets near sign boundaries")
+
+        # ── Confidence intervals table ────────────────────────────────────────
+        st.markdown("---")
+        st.markdown("#### House Score Confidence Intervals")
+        st.caption(
+            f"Score ranges assuming ±{unc_min} min birth time uncertainty. "
+            "Wider ranges indicate scores sensitive to birth time."
+        )
+
+        if hasattr(result, "intervals") and result.intervals:
+            ci_rows = [
+                {
+                    "House": f"H{ci.house}",
+                    "Score": f"{ci.point_estimate:+.2f}",
+                    "Lower": f"{ci.lower_bound:+.2f}",
+                    "Upper": f"{ci.upper_bound:+.2f}",
+                    "Confidence %": f"{ci.confidence_pct:.0f}%",
+                    "Uncertainty sources": ", ".join(ci.uncertainty_sources) or "—",
+                }
+                for ci in result.intervals
+            ]
+            st.dataframe(ci_rows, hide_index=True, use_container_width=True)
+        else:
+            st.info("No interval data available — chart may lack planetary positions.")
+
+        # ── Summary notes ─────────────────────────────────────────────────────
+        if hasattr(result, "notes") and result.notes:
+            st.markdown("#### Notes")
+            for note in result.notes:
+                st.info(note)
+
+    except Exception as _conf_err:
+        st.error(f"Confidence model error: {_conf_err}")
