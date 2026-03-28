@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–238 complete — March 2026)
+## Actual Current State (Sessions 1–239 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1877 passing, 3 skipped, 0 lint errors, CI green**
+- **1886 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -68,7 +68,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 236:** Bhava karakas — naisargika+Jaimini chara+special; 30 rules; corpus 656; 1860 tests
 - **Session 237:** Varga rules — D9/D10/D4/D7/D12+others; 30 rules; corpus 686; 1869 tests
 - **Session 238:** Brihat Jataka extended — planetary natures+aspects+yogas+timing; 30 rules; corpus 716; 1877 tests
-- **Next session:** S239
+- **Session 239:** Phala Deepika extended — planets in houses+yogas+health; 30 rules; corpus 746; 1886 tests
+- **Next session:** S240
 
 ---
 

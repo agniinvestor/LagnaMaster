@@ -725,3 +725,16 @@ S238 — Brihat Jataka: planetary natures and results
 
 ### Next session
 S239 — Phala Deepika extended rules
+---
+
+## S239 — 2026-03-28 — Phala Deepika Extended Rules
+
+**Tests:** 1886 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `phala_deepika_ext.py`: 30 rules (PDE001-PDE030) — Mantreswara's Phala Deepika (13th cent CE): planets in 1st/7th/10th/4th houses (12), Pancha Mahapurusha yoga details (5), special yogas (5), health/disease (4), yoga cancellation/timing/Graha Yuddha (4).
+
+**Corpus total: 746 rules**
+
+### Next session
+S240 — Uttara Kalamrita extended rules
