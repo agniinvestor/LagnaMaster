@@ -297,3 +297,16 @@ S197 — benefic_net_score, malefic_net_score, karak_score
 
 ### Next session
 S198 — pushkara_nav + war_loser extractors → 13 × 12 = 156 features
+---
+
+## S198 — 2026-03-28 — Feature Extractors: pushkara_nav, war_loser
+
+**Tests:** 1535 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `feature_decomp.py` +2 extractors: `pushkara_nav` (R21 Pushkara Navamsha),
+  `war_loser` (Graha Yuddha Saravali Ch.4). 13 × 12 = 156 features.
+- **Crosses 150-feature threshold** — feature space ready for Phase 6 (G22).
+
+### Next session
+S199 — contract tests: feature_count ≥ 150, array/dict consistency

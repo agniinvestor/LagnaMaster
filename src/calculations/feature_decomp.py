@@ -1,5 +1,5 @@
 """
-src/calculations/feature_decomp.py — Sessions 195–197
+src/calculations/feature_decomp.py — Sessions 195–198
 
 Feature decomposition: replaces 23 binary rule triggers with continuous
 feature vectors suitable for ML analysis (Phase 6).
@@ -11,6 +11,8 @@ S195: 4 extractors (gentle_sign, bhavesh_dignity, dig_bala, sav_bindus_norm)
 S196: +4 extractors (kartari_score, combust_score, retrograde_score, bhavesh_house_type)
 S197: +3 extractors (benefic_net_score, malefic_net_score, karak_score)
       = 11 × 12 = 132 features
+S198: +2 extractors (pushkara_nav, war_loser)
+      = 13 × 12 = 156 features  ← crosses 150 threshold (G22 Phase 6 ready)
 
 GUARDRAIL G22: No SHAP analysis or statistical inference without OSF
 pre-registration (S201–S210). This module provides feature extraction
@@ -472,6 +474,40 @@ def _extract_karak_score(
     return RuleFeature("karak_score", max(-1.0, min(1.0, val)), "R17/R18", house)
 
 
+# ── S198 extractors ──────────────────────────────────────────────────────────
+
+def _extract_pushkara_nav(house: int, house_si: int, chart) -> RuleFeature:
+    """
+    R21: Pushkara Navamsha for the bhavesh.
+    1.0 = bhavesh is in a Pushkara Navamsha zone (auspicious degree band).
+    0.0 = not in Pushkara Navamsha.
+    Source: BPHS — planets in Pushkara Navamsha confer special benefic results.
+    """
+    bhavesh = _SIGN_LORD[house_si]
+    if bhavesh not in chart.planets:
+        return RuleFeature("pushkara_nav", 0.0, "R21", house)
+    try:
+        from src.calculations.pushkara_navamsha import is_pushkara_navamsha
+        pos = chart.planets[bhavesh]
+        val = 1.0 if is_pushkara_navamsha(pos.sign_index, pos.degree_in_sign) else 0.0
+    except Exception:
+        val = 0.0
+    return RuleFeature("pushkara_nav", val, "R21", house)
+
+
+def _extract_war_loser(house: int, house_si: int, chart) -> RuleFeature:
+    """
+    Graha Yuddha loser penalty for bhavesh.
+    -1.0 = bhavesh lost a planetary war (effectively debilitated for life).
+     0.0 = not a war loser.
+    Source: Saravali Ch.4 v.18-22 — war-losing planet loses its significations.
+    """
+    bhavesh = _SIGN_LORD[house_si]
+    war_losers = getattr(chart, "planetary_war_losers", set()) or set()
+    val = -1.0 if bhavesh in war_losers else 0.0
+    return RuleFeature("war_loser", val, "YUDDHA", house)
+
+
 # ── Top-level extractor ───────────────────────────────────────────────────────
 
 def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
@@ -542,6 +578,9 @@ def extract_features(chart, school: str = "parashari") -> ChartFeatureVector:
             _extract_benefic_net_score(h, house_si, chart, lagna_si, is_fb, sign_planets),
             _extract_malefic_net_score(h, house_si, chart, lagna_si, is_fm, sign_planets),
             _extract_karak_score(h, house_si, chart, lagna_si),
+            # S198
+            _extract_pushkara_nav(h, house_si, chart),
+            _extract_war_loser(h, house_si, chart),
         ]
         houses[h] = HouseFeatureVector(house=h, features=features)
 

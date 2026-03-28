@@ -37,11 +37,11 @@ def test_karak_score_in_range():
         assert -1.0 <= val <= 1.0, f"H{h} karak_score={val}"
 
 
-def test_feature_count_is_132():
-    """After S197: 11 features × 12 houses = 132 total."""
+def test_feature_count_at_least_132():
+    """After S197: at least 11 features × 12 houses = 132 total."""
     from src.calculations.feature_decomp import extract_features
     cfv = extract_features(_india_chart())
-    assert cfv.feature_count() == 132, f"Expected 132, got {cfv.feature_count()}"
+    assert cfv.feature_count() >= 132, f"Expected ≥132, got {cfv.feature_count()}"
 
 
 def test_all_11_feature_names_present():
@@ -54,4 +54,4 @@ def test_all_11_feature_names_present():
     cfv = extract_features(_india_chart())
     for h, hfv in cfv.houses.items():
         names = {rf.name for rf in hfv.features}
-        assert names == EXPECTED, f"H{h}: {names ^ EXPECTED}"
+        assert EXPECTED.issubset(names), f"H{h} missing S197 features: {EXPECTED - names}"
