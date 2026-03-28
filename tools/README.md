@@ -102,6 +102,66 @@ Installs `pre_push_hook.sh` → `.git/hooks/pre-push` with executable permission
 
 ---
 
+---
+
+## Debugging Protocol — Read Before Attempting Any Fix
+
+**Rule: Read the actual error before guessing at the cause. One diagnosis, one fix.**
+Three wrong fixes cost more tokens than one correct diagnosis would have.
+
+### pytest exit codes
+
+| rc | Meaning | Correct action |
+|----|---------|---------------|
+| 0 | All tests passed | Nothing |
+| **1** | **Tests ran, some failed** | Read the FAILED lines — fix the code |
+| 2 | Interrupted or collection error | Check import errors or bad test syntax |
+| 3 | Internal pytest error | Check conftest.py or upgrade pytest |
+| 4 | CLI usage error | Check pytest flags |
+| 5 | No tests collected | Check test file names and PYTHONPATH |
+
+**rc=1 means tests ran and failed. It does NOT mean the environment is broken.**
+If progress dots appear (`...........`) before rc=1, pytest invoked correctly —
+the failures are in the test output, not in the invocation. Read the FAILED lines.
+
+### macOS "Too many open files" (Errno 24)
+
+**Cause:** macOS defaults to 256 open file descriptors. The 1300+ test suite
+exhausts this when pytest runs twice in quick succession (pre-push hook +
+start_session.py back to back).
+
+**Symptom:** Tests fail midway through, with `OSError: [Errno 24]` in the output.
+The test count in FAILED will be much lower than expected — not zero.
+
+**Fix in bash:**
+```bash
+ulimit -n 4096  # top of the script, before pytest runs
+```
+
+**Fix in Python subprocess callers:**
+```python
+import resource
+resource.setrlimit(resource.RLIMIT_NOFILE, (4096, 4096))
+# Call this before subprocess.run(["pytest", ...])
+```
+
+### Diagnostic checklist (run through before writing any fix)
+
+1. **What is the exact exit code and error message?**
+   Read the output literally. Do not infer.
+
+2. **What is the unique difference between the failing path and a known-working path?**
+   Example: pre-push hook passes, start_session.py fails.
+   The unique difference is `ulimit -n 4096` in the hook. That IS the fix.
+
+3. **Does the error message name a file, line, or known condition?**
+   If yes, address that exact thing. Not a hypothesised related thing.
+
+4. **Only after 1–3: write the minimal fix for the diagnosed cause.**
+   If you cannot state which of the above three points led you to the fix,
+   you have not diagnosed — you are guessing.
+
+
 ## Design Principles
 
 **One quality gate, not many.** The pre-push hook is the single point where tests,
