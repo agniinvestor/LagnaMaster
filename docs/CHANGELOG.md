@@ -439,3 +439,18 @@ S206 — Phaladeepika rules + Brihat Jataka rules (30 rules each)
 
 ### Next session
 S207 — Uttara Kalamrita + Jataka Parijata rules (30 rules)
+---
+
+## S207 — 2026-03-28 — Uttara Kalamrita + Jataka Parijata Rule Encoding
+
+**Tests:** 1618 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/uttara_kalamrita_rules.py`: 17 rules (UK001-UK017) — Arudha Lagna,
+  special lagnas (Hora, Ghati), Mahapurusha yogas, dasha fructification.
+- `src/corpus/jataka_parijata_rules.py`: 17 rules (JP001-JP017) — Raja Yoga,
+  Dhana Yoga, Viparita Raja, Gajakesari, Chara Karakas, Chandra-Mangala.
+- **Corpus: 135 rules across 6 texts** (R01-R23 + BPHS + Phala + BJ + UK + JP).
+
+### Next session
+S208 — BirthRecord + Sarwarthachintamani + combined corpus loader
