@@ -39,7 +39,15 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Session Startup Checklist (Run BEFORE Every Session)
+## Session Startup Checklist
+
+> **The manual checklist below is replaced by `tools/start_session.py`.**
+> Run `start_session.py` instead — it does all of the below automatically,
+> runs the test suite live, and outputs a ready-to-paste Claude brief.
+>
+> Manual fallback only (if script unavailable):
+
+ (Run BEFORE Every Session)
 
 ```bash
 # Step 1: Verify actual state — ignore GitHub UI
