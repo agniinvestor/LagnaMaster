@@ -19,10 +19,6 @@ import pytest
 
 ROOT = Path(__file__).parent.parent
 
-# G23: VedAstro is a dev/cross-validation tool — skip gracefully if not installed.
-# In CI it must be installed (vedastro in requirements.txt). Skip = bug in requirements.
-vedastro = pytest.importorskip("vedastro", reason="vedastro not installed — add to requirements.txt")
-
 
 # ─────────────────────────────────────────────────────────────
 # 1. VedAstro installation
@@ -30,8 +26,8 @@ vedastro = pytest.importorskip("vedastro", reason="vedastro not installed — ad
 
 
 def test_vedastro_importable():
-    """VedAstro must be importable — verified by module-level importorskip."""
-    import vedastro as _va  # noqa: F401
+    """VedAstro must be importable from the project venv."""
+    import vedastro  # noqa: F401
 
 
 def test_vedastro_calculate_class_exists():
@@ -229,19 +225,11 @@ def test_ruff_toml_tid251_enabled():
 
 
 def _ruff_exe() -> str:
-    """Find ruff: prefer venv, fall back to PATH (CI installs ruff globally)."""
+    """Return the ruff executable path — works in venv (local) and CI (global)."""
     import shutil
-    import sys
 
-    venv_ruff = ROOT / ".venv" / "bin" / "ruff"
-    if venv_ruff.exists():
-        return str(venv_ruff)
-    # CI: ruff installed globally alongside Python
-    global_ruff = shutil.which("ruff")
-    if global_ruff:
-        return global_ruff
-    # Last resort: same bin dir as the current Python interpreter
-    return str(Path(sys.executable).parent / "ruff")
+    # CI installs ruff globally; local dev uses .venv/bin/ruff
+    return shutil.which("ruff") or str(ROOT / ".venv" / "bin" / "ruff")
 
 
 def test_ruff_passes_on_src():
