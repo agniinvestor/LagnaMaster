@@ -595,3 +595,16 @@ S216 — BPHS all 97 chapters AI-assisted encoding (Phase 1 start)
 
 ### Next session
 S229 — Continue Phase 1: BPHS graha in rashis + KP sublord rules
+---
+
+## S229 — 2026-03-28 — BPHS Graha in Rashis Part 1
+
+**Tests:** 1788 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_graha_rashis_p1.py`: 24 rules — Sun in 12 rashis (SUR001-SUR012) + Moon in 12 rashis (MOR001-MOR012). Encodes BPHS Ch.17-18 graha-rashi phala. Exaltation/own/debilitation tags on key placements.
+
+**Corpus total: 458 rules**
+
+### Next session
+S230 — BPHS graha in rashis part 2 (Mars + Mercury)

@@ -29,6 +29,9 @@ Current sources loaded:
   - DAR001-DAR020 (20 rules) bphs_dasha_results
   - SL001-SL020 (20 rules) bphs_special_lagnas
 
+  Phase 1 (S229+):
+  - SUR001-SUR012, MOR001-MOR012 (24 rules) bphs_graha_rashis_p1
+
 Public API
 ----------
   COMBINED_CORPUS   — pre-populated CorpusRegistry singleton
@@ -63,7 +66,8 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.bphs_dignities_ext import BPHS_DIGNITIES_EXT_REGISTRY   # S225
     from src.corpus.bphs_aspects import BPHS_ASPECTS_REGISTRY               # S226
     from src.corpus.bphs_dasha_results import BPHS_DASHA_RESULTS_REGISTRY   # S227
-    from src.corpus.bphs_special_lagnas import BPHS_SPECIAL_LAGNAS_REGISTRY # S228
+    from src.corpus.bphs_special_lagnas import BPHS_SPECIAL_LAGNAS_REGISTRY   # S228
+    from src.corpus.bphs_graha_rashis_p1 import BPHS_GRAHA_RASHIS_P1_REGISTRY  # S229
 
     registry = CorpusRegistry()
     sources = [
@@ -88,6 +92,8 @@ def build_corpus() -> CorpusRegistry:
         BPHS_ASPECTS_REGISTRY,
         BPHS_DASHA_RESULTS_REGISTRY,
         BPHS_SPECIAL_LAGNAS_REGISTRY,
+        # Phase 1 — S229+
+        BPHS_GRAHA_RASHIS_P1_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():

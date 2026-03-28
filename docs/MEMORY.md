@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–228 complete — March 2026)
+## Actual Current State (Sessions 1–229 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1777 passing, 3 skipped, 0 lint errors, CI green**
+- **1788 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -58,7 +58,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 212:** KP ayanamsha enforcement (G06 🟡); compute_kp_chart(); 1660 tests
 - **Sessions 213–215:** Protocol verification + CI observability + Phase 0 checkpoint; src/ci/ package; 1722 tests
 - **Sessions 216–228:** Phase 1 Batch 1 — 299 new BPHS rules encoded (lords-in-houses 144, yogas 75, dignities/aspects/dasha/special-lagnas 80); corpus 135→434 rules; 1777 tests
-- **Next session:** S229
+- **Session 229:** Graha in rashis p1 — Sun+Moon in 12 rashis; 24 rules; corpus 458; 1788 tests
+- **Next session:** S230
 
 ---
 
