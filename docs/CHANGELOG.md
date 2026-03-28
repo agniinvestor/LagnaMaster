@@ -816,3 +816,16 @@ S245 — Shadbala rules
 
 ### Next session
 S246 — Dasha systems (Vimshotari, Ashtottari, Yogini)
+---
+
+## S246 — 2026-03-28 — Dasha Systems Rules
+
+**Tests:** 1958 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `dasha_systems_rules.py`: 30 rules (DSY001-DSY030) — Classical Dasha systems from BPHS Ch.46-64 (parashari), Uttara Kalamrita Ch.4 (kalidasa), Sarvartha Chintamani Ch.8 (sarvartha), Jaimini Sutras (jaimini): Vimshottari extended (birth balance/Antardasha/results), Ashtottari (108yr), Yogini (36yr), Kalachakra (100yr), Shodashottari (116yr), Dwisaptati (72yr), conditional dasha selection, Narayana/Padakrama Jaimini dashas, Sookshma/Prana micro-dashas, transit confirmation, Maraka, yogakaraka dasha, Sun/Jupiter/Saturn/Rahu/Ketu Mahadasha results.
+
+**Corpus total: 956 rules**
+
+### Next session
+S247 — Yoga extended (Pancha Mahapurusha, Dhana, Raja yogas expansion)
