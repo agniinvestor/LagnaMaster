@@ -424,3 +424,18 @@ S205 — corpus audit script + BPHS new rule encoding (30 rules)
 
 ### Next session
 S206 — Phaladeepika rules + Brihat Jataka rules (30 rules each)
+---
+
+## S206 — 2026-03-28 — Phaladeepika + Brihat Jataka Rule Encoding
+
+**Tests:** 1610 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/phaladeepika_rules.py`: 21 rules (PH001-PH021) — planetary states,
+  Kartari, house judgment, Graha Yuddha, dasha activation, Dig Bala, Paksha Bala.
+- `src/corpus/brihat_jataka_rules.py`: 26 rules (BJ001-BJ026) — exaltation degrees,
+  natural benefic/malefic, house significations (H1-H12), aspects, Moon yogas.
+- **Corpus milestone:** 23 + 31 + 21 + 26 = **101 rules** — exceeds 100.
+
+### Next session
+S207 — Uttara Kalamrita + Jataka Parijata rules (30 rules)
