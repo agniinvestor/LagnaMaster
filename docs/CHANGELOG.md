@@ -634,3 +634,16 @@ S231 — BPHS graha in rashis part 3 (Jupiter + Venus)
 
 ### Next session
 S232 — BPHS graha in rashis part 4 (Saturn + Rahu + Ketu)
+---
+
+## S232 — 2026-03-28 — BPHS Graha in Rashis Part 4
+
+**Tests:** 1823 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_graha_rashis_p4.py`: 36 rules — Saturn in 12 rashis (SAR001-SAR012) + Rahu in 12 rashis (RHR001-RHR012) + Ketu in 12 rashis (KTR001-KTR012). BPHS Ch.23, Ch.45-46. Saturn: own Capricorn+Aquarius, exalt Libra, neecha Aries. Rahu/Ketu: exaltation/debilitation per traditional commentary.
+
+**Corpus total: 542 rules** (108 graha-in-rashi rules complete for all 9 grahas)
+
+### Next session
+S233 — KP sublord rules + nakshatra lords
