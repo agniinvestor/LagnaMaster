@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–232 complete — March 2026)
+## Actual Current State (Sessions 1–233 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1823 passing, 3 skipped, 0 lint errors, CI green**
+- **1833 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -62,7 +62,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 230:** Graha in rashis p2 — Mars+Mercury in 12 rashis; 24 rules; corpus 482; 1799 tests
 - **Session 231:** Graha in rashis p3 — Jupiter+Venus in 12 rashis; 24 rules; corpus 506; 1811 tests
 - **Session 232:** Graha in rashis p4 — Saturn+Rahu+Ketu in 12 rashis; 36 rules; corpus 542; 1823 tests
-- **Next session:** S233
+- **Session 233:** KP Sublord system — 30 rules (KPS001-030); corpus 572; 1833 tests
+- **Next session:** S234
 
 ---
 

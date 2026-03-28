@@ -72,6 +72,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.bphs_graha_rashis_p2 import BPHS_GRAHA_RASHIS_P2_REGISTRY  # S230
     from src.corpus.bphs_graha_rashis_p3 import BPHS_GRAHA_RASHIS_P3_REGISTRY  # S231
     from src.corpus.bphs_graha_rashis_p4 import BPHS_GRAHA_RASHIS_P4_REGISTRY  # S232
+    from src.corpus.kp_sublord_rules import KP_SUBLORD_RULES_REGISTRY  # S233
 
     registry = CorpusRegistry()
     sources = [
@@ -101,6 +102,7 @@ def build_corpus() -> CorpusRegistry:
         BPHS_GRAHA_RASHIS_P2_REGISTRY,
         BPHS_GRAHA_RASHIS_P3_REGISTRY,
         BPHS_GRAHA_RASHIS_P4_REGISTRY,
+        KP_SUBLORD_RULES_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():

@@ -647,3 +647,16 @@ S232 — BPHS graha in rashis part 4 (Saturn + Rahu + Ketu)
 
 ### Next session
 S233 — KP sublord rules + nakshatra lords
+---
+
+## S233 — 2026-03-28 — KP Sublord System Rules
+
+**Tests:** 1833 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `kp_sublord_rules.py`: 30 rules (KPS001-KPS030) — KP Sublord system from K.S. Krishnamurti's Reader Vol.1-6. Covers: nakshatra sublord structure (6), marriage (4), finance (4), career (4), health (4), education/travel/spirituality (4), horary/prashna (4).
+
+**Corpus total: 572 rules**
+
+### Next session
+S234 — BPHS nakshatra-based rules (nakshatras 1-9)
