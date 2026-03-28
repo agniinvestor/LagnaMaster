@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1457 passing, 3 skipped, 0 lint errors, CI green**
+- **1484 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -35,7 +35,8 @@ When in doubt, read that file to reconstruct state.
 - **Sessions 163–186:** Scoring depth, school-mixing fix, regression snapshot
 - **Sessions 187–188:** Final wiring gaps + XIX output API + Postgres routing + Swiss Ephemeris upgrade
 - **Sessions 189–191:** Phase 0 bootstrap — Kala Bala verification, C-18 stress fixtures, VedAstro install, Protocol stubs, ruff G17 rule
-- **Next session:** S192
+- **Session 192:** Protocol adapters — ScoringEngineAdapter, VimshottariDasaAdapter, NullFeedbackService, NullMLService
+- **Next session:** S193
 
 ---
 
