@@ -699,3 +699,16 @@ S236 — BPHS Bhava Karakas (house significators)
 
 ### Next session
 S237 — Varga chart rules (D9 Navamsha + D10 Dashamsha)
+---
+
+## S237 — 2026-03-28 — BPHS Varga (Divisional Chart) Rules
+
+**Tests:** 1869 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_varga_rules.py`: 30 rules (VAR001-VAR030) — D9 Navamsha (10 rules): vargottama, karakamsha, timing, pushkara; D10 Dashamsha (8 rules): lagna, Sun/Saturn, career timing; Other vargas D4/D7/D12/D16/D20/D24/D30/D60/D5 (12 rules): specific house significations + panchamsha/saptavargaja bala.
+
+**Corpus total: 686 rules**
+
+### Next session
+S238 — Brihat Jataka: planetary natures and results
