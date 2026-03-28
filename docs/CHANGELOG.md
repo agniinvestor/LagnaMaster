@@ -454,3 +454,18 @@ S207 — Uttara Kalamrita + Jataka Parijata rules (30 rules)
 
 ### Next session
 S208 — BirthRecord + Sarwarthachintamani + combined corpus loader
+---
+
+## S208 — 2026-03-28 — BirthRecord + CombinedCorpus
+
+**Tests:** 1629 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/birth_record.py`: `BirthRecord` ML data schema — record_id,
+  birth date/time, lat/lon, data_source, Rodden rating, confirmed_events.
+- `src/corpus/combined_corpus.py`: `COMBINED_CORPUS` singleton — loads all 6
+  text registries (135+ rules) into one searchable CorpusRegistry.
+  `build_corpus()` for fresh rebuild.
+
+### Next session
+S209 — corpus pipeline integration tests
