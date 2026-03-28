@@ -565,3 +565,33 @@ All 25 Phase 0 sessions (S191–S215) verified complete. `run_phase0_audit()` re
 
 ### Next session
 S216 — BPHS all 97 chapters AI-assisted encoding (Phase 1 start)
+---
+
+## S216–S228 — 2026-03-28 — Phase 1 Classical Knowledge Foundation (Batch 1)
+
+**Tests:** 1777 passing, 3 skipped, 0 lint errors
+
+### What was built
+**Lord-in-Houses (144 rules, S216-S221):** Complete 12×12 matrix of house lord positions encoded from BPHS Ch.24-35:
+- `bphs_lords_h1_h2.py`: H1L001-H1L012 + H2L001-H2L012 (lagna + 2nd lord)
+- `bphs_lords_h3_h4.py`: H3L/H4L series (3rd + 4th lord)
+- `bphs_lords_h5_h6.py`: H5L/H6L series (5th + 6th lord) — includes viparita yoga
+- `bphs_lords_h7_h8.py`: H7L/H8L series (7th + 8th lord)
+- `bphs_lords_h9_h10.py`: H9L/H10L series (9th + 10th lord) — dharma karma adhipati
+- `bphs_lords_h11_h12.py`: H11L/H12L series (11th + 12th lord)
+
+**Yoga encoding (S222-S224):**
+- `bphs_yogas_basic.py`: 25 rules — Pancha Mahapurusha, Gajakesari, Neecha Bhanga, Viparita, Parivartana, sun/moon-based yogas
+- `bphs_raja_yoga.py`: 25 rules — kendra-trikona combinations, yogakaraka rules per lagna, cancellation rules
+- `bphs_dhana_yoga.py`: 25 rules — wealth yogas, daridra, vasumati, parivartana dhana
+
+**Supporting rules (S225-S228):**
+- `bphs_dignities_ext.py`: 20 rules — exaltation, moolatrikona, own sign, vargottama, digbala, combustion, graha yuddha
+- `bphs_aspects.py`: 20 rules — special aspects (Jupiter/Saturn/Mars), mangal dosha, argala
+- `bphs_dasha_results.py`: 20 rules — all 9 planet dasha themes, lordship modification
+- `bphs_special_lagnas.py`: 20 rules — Chandra/Surya/Arudha/Upapada/Hora/Ghati lagnas
+
+**Total corpus: 434 rules** (from 135 at end of Phase 0)
+
+### Next session
+S229 — Continue Phase 1: BPHS graha in rashis + KP sublord rules
