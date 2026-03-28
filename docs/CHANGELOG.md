@@ -777,3 +777,16 @@ S242 — Sarvartha Chintamani / transit rules
 
 ### Next session
 S243 — Ashtakavarga rules / Jaimini Sutras
+---
+
+## S243 — 2026-03-28 — Ashtakavarga Rules
+
+**Tests:** 1925 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `ashtakavarga_rules.py`: 30 rules (AST001-AST030) — Classical Ashtakavarga system from BPHS Ch.66-76 (parashari), Brihat Jataka Ch.19 (varahamihira), Sarvartha Chintamani Ch.10 (sarvartha): Prasthara BAV structure, Sarvashtakavarga, Trikona + Ekadhipatya Shodhana, all 7 planet BAVs (Sun/Moon/Mars/Mercury/Jupiter/Venus/Saturn), Kakshya timing divisions, Pinda/Yoga/Rashi Saham, transit assessment by bindus (0-8 scale), longevity, career/wealth/travel/compatibility applications.
+
+**Corpus total: 866 rules**
+
+### Next session
+S244 — Jaimini Sutras / Upagraha rules
