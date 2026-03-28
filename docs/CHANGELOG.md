@@ -408,3 +408,19 @@ S204 — corpus extractor base class + BPHS text extractor
 
 ### Next session
 S205 — corpus audit script + BPHS new rule encoding (30 rules)
+---
+
+## S205 — 2026-03-28 — CorpusAudit + 31 BPHS Extended Rules
+
+**Tests:** 1602 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/corpus_audit.py`: `CorpusAudit` — run()/text_report() for completeness
+  checking (total, implemented, unimplemented, by school/category/source).
+- `src/corpus/bphs_extended.py`: 31 new BPHS rule encodings (B001-B031) covering
+  lagna-lord placement, 9th/10th yoga, vargottama, exaltation/debilitation,
+  aspects (Jupiter/Saturn/Mars), yogakaraka, argala, transits, upachaya.
+  All `implemented=False` — Phase 1 (S216-S250) encoding targets.
+
+### Next session
+S206 — Phaladeepika rules + Brihat Jataka rules (30 rules each)
