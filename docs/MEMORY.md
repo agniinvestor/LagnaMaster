@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–188 complete — March 2026)
+## Actual Current State (Sessions 1–189 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -34,7 +34,8 @@ When in doubt, read that file to reconstruct state.
 - **Sessions 161–162:** Wiring fixes — Topocentric Moon, functional dignity in R02/R09
 - **Sessions 163–186:** Scoring depth, school-mixing fix, regression snapshot
 - **Sessions 187–188:** Final wiring gaps + XIX output API + Postgres routing + Swiss Ephemeris upgrade
-- **Next session:** S189
+- **Session 189:** ADB XML importer, diverse fixtures (B-H), CI guard, mundane endpoint, semom_18.se1
+- **Next session:** S190
 
 ---
 
@@ -158,7 +159,22 @@ INDIA_1947 = {
 
 ---
 
-## Session End Protocol (MANDATORY)
+## Session End Protocol (AUTOMATED)
+
+```bash
+# NEW AUTOMATED LOOP — replaces the manual checklist below
+.venv/bin/python3 tools/start_session.py   # run BEFORE opening Claude
+# [paste brief to Claude — Claude writes tests + impl + update_docs_s[N].py]
+.venv/bin/python3 update_docs_s[N].py      # run AFTER Claude session
+git push                                    # pre-push hook: tests + ruff + docs
+```
+
+The pre-push hook is the single quality gate. If it passes, the session is done.
+
+---
+
+**Manual equivalent (if automation unavailable):**
+
 
 ```bash
 # 1. Full test suite

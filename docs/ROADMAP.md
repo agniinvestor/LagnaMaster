@@ -60,18 +60,20 @@ S189–S190 (immediate fixes)
 
 ---
 
-## Immediate: S189–S190
+## Immediate: S190
 
-| Priority | Item | Effort | Session |
-|----------|------|--------|---------|
-| 🟠 | C-18: 8 stress-test fixtures (Neecha Bhanga, Graha Yuddha, nakshatra cusp, Parivartana, female, high-lat >55°N, year-boundary, BC date) | 1 day | S189 |
-| 🟠 | Verify Shadbala Kala Bala all 8 sub-components | 2 hr | S189 |
-| 🟠 | PostgreSQL live test (PG_DSN, run 3 skipped tests) | 2 hr | S189 |
-| 🟡 | Confidence model in Streamlit UI | 2 hr | S189 |
-| 🟡 | Nehru Capricorn Lagna skip — investigate | 1 hr | S189 |
-| 🟡 | BC date charts: `seplm_18.se1` + `semom_18.se1` in `ephe/` | 30 min | S189 |
-| 🔵 | OB-3: Empirical calibration ML pipeline (500+ charts) | weeks | S190+ |
-| 🔵 | Mundane astrology consumer pipeline | 3–4 days | S190+ |
+| Session | Deliverable | Guardrails | Status |
+|---------|-------------|-----------|--------|
+| S190 | Verify Shadbala Kala Bala 8 sub-components + PostgreSQL live test + Confidence model in Streamlit UI + Nehru Capricorn Lagna skip investigation | — | 🔴 |
+
+| Priority | Item | Effort |
+|----------|------|--------|
+| 🟠 | Verify Shadbala Kala Bala all 8 sub-components (cross-check vs PyJHora algorithm) | 2 hr |
+| 🟠 | PostgreSQL live test (spin up PG_DSN, run 3 skipped tests) | 2 hr |
+| 🟡 | Confidence model surfaced in Streamlit UI (endpoint exists, no tab yet) | 2 hr |
+| 🟡 | Nehru Capricorn Lagna fixture skip — investigate root cause | 1 hr |
+| 🔵 | OB-3: Empirical calibration ML pipeline (500+ charts needed) | weeks |
+| 🔵 | Mundane astrology consumer pipeline | 3–4 days |
 
 ---
 
