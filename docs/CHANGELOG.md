@@ -803,3 +803,16 @@ S244 — Jaimini Sutras / Upagraha rules
 
 ### Next session
 S245 — Shadbala rules
+---
+
+## S245 — 2026-03-28 — Shadbala Rules
+
+**Tests:** 1947 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `shadbala_rules.py`: 30 rules (SDB001-SDB030) — Classical Shadbala 6-fold strength system from BPHS Ch.27-38 (parashari), Brihat Jataka Ch.1 (varahamihira), Sarvartha Chintamani Ch.2 (sarvartha): Sthana Bala (Uchcha/Sapta-Vargaja/Ojayugma/Kendradi/Drekkana), Dig Bala (directional), Kala Bala (Paksha/Tribhaga/Vara/Ayana/Yuddha), Chesta Bala (retrograde=60), Naisargika Bala (fixed values), Drik Bala (aspectual), Ishta/Kashta Phala, Vimshopaka (5/7/10-Varga), minimum thresholds, Dasha applications.
+
+**Corpus total: 926 rules**
+
+### Next session
+S246 — Dasha systems (Vimshotari, Ashtottari, Yogini)
