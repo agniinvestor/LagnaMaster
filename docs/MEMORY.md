@@ -117,20 +117,30 @@ PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=no 2>&1 | tail -3
 
 ---
 
-## Next Session: S189
+## Next Session: S263 — Phase 1B Schema Definition (non-coding)
 
-### Immediate Priority Queue
+S263 is a planning and schema session. No rules are encoded. It produces four
+foundational documents that gate all Phase 1B encoding — no Phase 1B session begins
+without all four committed:
 
-| Priority | Item | Effort |
-|----------|------|--------|
-| 🟠 HIGH | C-18: 8 diverse stress-test fixtures (Neecha Bhanga, Graha Yuddha, nakshatra cusp, Parivartana, female, high-lat >55°N, year-boundary, BC date) | 1 day |
-| 🟠 HIGH | Verify Shadbala Kala Bala all 8 sub-components complete | 2 hr |
-| 🟠 HIGH | PostgreSQL live test (PG_DSN, run the 3 skipped tests) | 2 hr |
-| 🟡 MED | Confidence model surfaced in Streamlit UI | 2 hr |
-| 🟡 MED | Nehru Capricorn Lagna skip — investigate root cause | 1 hr |
-| 🟡 MED | BC date charts: `seplm_18.se1` + `semom_18.se1` in `ephe/` | 30 min |
-| 🔵 FUTURE | OB-3: Empirical calibration ML pipeline (500+ charts) | weeks |
-| 🔵 FUTURE | Mundane astrology consumer pipeline | 3–4 days |
+| Deliverable | File | Purpose |
+|-------------|------|---------|
+| Rule Contract | `docs/PHASE1B_RULE_CONTRACT.md` | 12 mandatory fields + rejection criteria |
+| Outcome Taxonomy | `docs/PHASE1B_OUTCOME_TAXONOMY.md` | 15 domains, fixed vocabulary |
+| Coverage Map (Laghu Parashari) | `docs/coverage_maps/laghu_parashari.md` | First text, highest priority |
+| Concordance Workflow | `docs/PHASE1B_CONCORDANCE_WORKFLOW.md` | Step-by-step real-time protocol |
+
+**Why S263 exists:** Phase 1A (S216–S262, 2,634 rules) produced representative samplings
+labeled "exhaustive." The failure mode: definition-of-done was a rule count, not a coverage
+specification. Encoding produced prose descriptions, not structured predictions. S263
+installs the gates that prevent this from recurring.
+
+**Phase 1B overview:**
+- Target: ~9,200 structured predictions total (2,634 Phase 1A + ~6,600 Phase 1B)
+- Encoding sessions: S264–S309 (~46 encoding sessions)
+- Verification sessions: S310–S316 (one per text after completion)
+- First text: Laghu Parashari (S264–S266) — functional nature table 9×12 is foundational
+- Full plan: `docs/CLASSICAL_CORPUS.md` → Phase 1B Session Plan section
 
 ---
 
@@ -203,18 +213,22 @@ INDIA_1947 = {
 
 ---
 
-## Key Metrics (Post-S188)
+## Key Metrics (Post-S262)
 
-| Metric | Current | 2030 Target |
-|--------|---------|------------|
-| Tests passing | **1503** (3 skipped) | 8,000+ |
-| Lint errors | **0** | 0 |
-| Classical rules | 23 (R01–R23) | 3,000+ |
-| Ephemeris | **DE431 real files** | DE431 maintained |
-| ADB fixtures | **200+** (all 12 Lagnas) | 5,000+ |
-| API endpoints | **10** (5 new in S188) | — |
-| Brier score | Pre-baseline | ≤0.10 |
-| Signal isolation | Pre-baseline | +0.22 |
+| Metric | Current | Phase 1B Target | 2030 Target |
+|--------|---------|-----------------|------------|
+| Tests passing | **2,227** (3 skipped) | 4,000+ | 8,000+ |
+| Lint errors | **0** | 0 | 0 |
+| Corpus — Phase 1A representative | **2,634 rules** | complete | — |
+| Corpus — Phase 1B sutra-level | **0 rules** | ~6,600 new | — |
+| Corpus — combined target | 2,634 | **~9,200** | ~9,200+ |
+| Phase 1B Rule Contract compliance | 0% | ≥90% of Phase 1B rules | 100% |
+| Concordance ≥0.75 rules | 0 | ≥20% of Phase 1B | — |
+| Ephemeris | **DE431 real files** | DE431 maintained | DE431 maintained |
+| ADB fixtures | **200+** (all 12 Lagnas) | 200+ | 5,000+ |
+| API endpoints | **10** | — | — |
+| Brier score | Pre-baseline | Pre-baseline | ≤0.10 |
+| Signal isolation | Pre-baseline | Pre-baseline | +0.22 |
 
 ---
 

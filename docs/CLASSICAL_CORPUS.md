@@ -4,89 +4,240 @@
 
 ---
 
-## Core Insight (from GPT Corpus Analysis)
+## Core Insight (Revised After Corpus Quality Audit — S262)
 
-> "The 42 Laghu Parashari sutras represent ~25-35% of full Parashari Jyotish.
-> Our current 23 rules represent perhaps **1-2%** of the classical predictive system."
+> "Sessions S216–S262 produced 2,634 rules labeled 'exhaustive' that were actually
+> representative samplings — undershooting true text depth by 5.7× on average.
+> A rule with only a prose description is a catalog entry, not a structured prediction.
+> Phase 1B replaces count targets with coverage maps and replaces descriptions with
+> machine-readable condition/outcome pairs."
 
-23 rules cannot capture 1,500+ needed. Every downstream feature (feature vectors, temporal model, SHAP analysis) changes accordingly once Phase 1 closes the gap.
+**Phase 1A (S216–S262) is complete and relabeled: Representative Layer — 2,634 rules.**
+**Phase 1B (S263+) is the research-grade corpus — target ~9,200 structured predictions.**
 
----
-
-## Current State (Post-S188)
-### Modules Built vs Rules Encoded
-
-Having a module is not the same as having the rules within it encoded correctly or completely.
-This distinction matters for sessions building on top of existing modules.
-
-| Domain | Module | Module Status | Rules Encoded | Known Gap |
-|--------|--------|---------------|---------------|-----------|
-| Shadbala | `shadbala.py` | ✅ Built | Partial | Kala Bala 8 sub-components unverified (SK-1) |
-| Yogas | `yogas.py` + `extended_yogas.py` + `yogas_graha.py` + `yogas_pvrnr.py` | ✅ Built | ~35 of 300+ | 265+ named yogas missing |
-| Varga | `divisional_charts.py` + `varga.py` | ✅ Built | D1–D60 formulas | Drekkana variants (Jagannatha, Somanatha) missing |
-| Ashtakavarga | `ashtakavarga.py` | ✅ Built | SAV correct (fixed totals verified) | Full Prastarashtakavarga missing |
-| Dasha | `vimshottari_dasa.py` + `narayana_dasa.py` | ✅ Built | 2 of 44 systems | 42 additional systems (Ashtottari, Yogini, Kalachakra, Chara, Shoola...) |
-| Jaimini | `jaimini_full.py` | ✅ Built | Brahma/Maheshvara/Rudra, Pada | Chara dashas, full karakamsha system incomplete |
-| KP | `kp.py` + `kp_full.py` | ✅ Built | Sub-lord table (249 entries) | Cusps are whole-sign, not Placidus; Krishnamurti ayanamsha not used (G06) |
-| Classical strength | `orb_strength.py` | ✅ Built | PVRNR orb decay | Full Bala framework not yet driving concordance weights |
-| Avastha | `avastha_v2.py` + `sayanadi_full.py` | ✅ Built | 12-state Sayanadi | Jagradadi, Deeptadi partial |
-| Longevity | `longevity.py` + `ayurdaya.py` | ✅ Built | 3 methods | Never user-facing (G02) |
-
-**Reading this table:** A session that touches `shadbala.py` cannot assume Kala Bala
-sub-components are correct. A session using yoga output cannot assume 265+ missing yogas
-don't affect the result. The module existing does not mean the domain is done.
+The distinction matters for every downstream use:
+- Phase 1A: valid as a topic index and breadth coverage check
+- Phase 1B: required for SHAP analysis, concordance scoring, and feature engineering
 
 ---
 
-### Corpus Encoding Priorities by Convergence Layer
+## Phase 1A — Representative Layer (COMPLETE, S216–S262)
 
-Not all corpus work has equal impact on the convergence model. Encoding priorities
-should be weighted by which convergence layer they strengthen and how:
+Phase 1A is the breadth pass. It is complete and should not be extended. Its function
+is a coverage index — confirming which topics each text addresses. It is not suitable
+as primary ML input because its rules are prose descriptions, not structured predictions.
+
+| Metric | Actual |
+|--------|--------|
+| Total rules | 2,634 (corpus 2514 + 120 PHX from S262) |
+| Tests passing | 2,227 |
+| Files | 49 source files across `src/corpus/` |
+| Rule structure | Prose descriptions — `category`, `description`, `tags` only |
+| Verse attribution | Chapter-level only (not verse-specific) |
+| Outcome structure | None — all outcomes in prose `description` field |
+| Concordance | None — no cross-text linking |
+| Lagna scope | Implicit — no `lagna_scope` field |
+| ML readiness | Not directly; requires Phase 1B structured layer |
+
+**Phase 1A files encode (representative, not exhaustive):**
+BPHS (S216–S254) · Brihat Jataka (S255) · Uttara Kalamrita (S256) · Jataka Parijata (S257)
+· Sarvartha Chintamani (S258) · Jaimini Sutras (S259) · Lal Kitab (S260)
+· Chandra Kala Nadi (S261) · Phaladeepika (S262)
+
+---
+
+## Phase 1B — Sutra-Level Encoding (S263+)
+
+Phase 1B is the research-grade corpus. It does not replace Phase 1A — it builds a
+structured prediction layer on top of it. The claim Phase 1B must support:
+
+> "9,200 structured predictions with source attribution, outcome taxonomy, and
+> cross-text confidence calibration — traceable to original Sanskrit/Tamil verses,
+> uncontestable on coverage, and analytically ready for feature engineering."
+
+Phase 1B is gated behind four protocols that must be completed in S263 before any
+encoding begins. These protocols are what prevent Phase 1A's failure mode from recurring.
+
+---
+
+### Protocol 1 — The Rule Contract (Phase 1B only)
+
+Every Phase 1B rule must satisfy this contract. A rule missing any mandatory field
+is rejected — not committed, not counted. No exceptions.
+
+**Mandatory fields beyond current RuleRecord:**
+
+| Field | Type | Description | Example |
+|-------|------|-------------|---------|
+| `primary_condition` | structured | `{planet, placement_type, placement_value}` | `{planet: Jupiter, placement_type: house, placement_value: 7}` |
+| `modifiers` | list | Each: `{condition, effect: amplifies\|negates\|conditionalizes, strength}` | `{condition: "aspected_by_saturn", effect: negates, strength: strong}` |
+| `exceptions` | list | Conditions that fully cancel the rule | `["if_lagna_lord_in_6_8_12"]` |
+| `outcome_domains` | list | From fixed taxonomy only — no free-form | `["marriage", "wealth"]` |
+| `outcome_direction` | enum | `favorable \| unfavorable \| neutral \| mixed` | `favorable` |
+| `outcome_intensity` | enum | `strong \| moderate \| weak \| conditional` | `moderate` |
+| `lagna_scope` | str or list | `"universal"` or explicit lagna list | `["scorpio", "cancer"]` |
+| `dasha_scope` | str or list | `"universal"` or dasha lord list | `"universal"` |
+| `verse_ref` | str | Chapter AND verse — not chapter only | `"Ch.14 v.23"` |
+| `concordance_texts` | list | Populated at encoding time — not retroactive | `["BPHS", "Saravali"]` |
+| `divergence_notes` | str | What other texts say differently | `"Saravali says moderate, BPHS says strong"` |
+| `phase` | enum | `1B_matrix \| 1B_conditional \| 1B_compound` | `1B_matrix` |
+
+**Rule types:**
+- `1B_matrix`: systematic placement rules (9×12 grids, nakshatra series) — 120-150/session
+- `1B_conditional`: lagna-conditional or dasha-conditional rules — 80-100/session
+- `1B_compound`: multi-planet combinations, yoga triggers, exception overrides — 80-100/session
+
+**Confidence formula (mechanical, not editorial):**
+`confidence = 0.5 + (0.1 × len(concordance_texts)) − (0.05 × len(divergence_notes))`
+A rule corroborated by 3 texts across different schools reaches confidence ≥ 0.8 automatically.
+
+**Known limitation to document:** Verse citations are best-effort from training knowledge,
+not from primary philological verification. They are navigation aids for human verification,
+not independently verified citations. The corpus documentation must state this explicitly.
+
+---
+
+### Protocol 2 — The Outcome Taxonomy
+
+Fixed before any Phase 1B encoding begins. Not extensible during encoding sessions.
+Any outcome that doesn't map to this taxonomy means the taxonomy needs revision
+— done in S263 schema session, never mid-encoding.
+
+**15 Primary Domains:**
+`longevity` · `physical_health` · `mental_health` · `wealth` · `career_status`
+· `marriage` · `progeny` · `spirituality` · `intelligence_education`
+· `character_temperament` · `physical_appearance` · `foreign_travel`
+· `enemies_litigation` · `property_vehicles` · `fame_reputation`
+
+**4 Outcome Directions:** `favorable` · `unfavorable` · `neutral` · `mixed`
+
+**4 Intensities:** `strong` · `moderate` · `weak` · `conditional`
+
+**5 Timing Qualifiers:** `early_life` (before 30) · `middle_life` (30–60)
+· `late_life` (60+) · `dasha_dependent` · `unspecified`
+
+---
+
+### Protocol 3 — Coverage Maps
+
+For every text in Phase 1B, a coverage map is committed before the first encoding
+session for that text. The coverage map defines what "exhaustively encoded" means
+for that specific text. A text is not marked complete until all sections in its
+coverage map reach their minimum rule count.
+
+**Coverage map structure:**
+1. Chapter inventory — every chapter listed with topic
+2. Section map per chapter — what prediction categories exist
+3. Expected rule count per section — pre-encoding estimate
+4. Completion tracking — actual vs. expected, flagged if below minimum
+
+Sessions are scoped to "complete these sections of this coverage map" — not
+"write N rules." The count follows from the coverage map, not vice versa.
+
+---
+
+### Protocol 4 — Real-Time Concordance Workflow
+
+Concordance is not a retroactive exercise. Every Phase 1B rule follows this sequence:
+
+1. Identify the prediction in the source text
+2. **Before encoding:** query existing corpus for rules with same `primary_condition`
+3. If match found — determine: same prediction (concordance) or different prediction
+   about same configuration (divergence)?
+4. Concordance → populate `concordance_texts`, update existing rule's `concordance_texts`
+5. Divergence → populate `divergence_notes` with what the existing rule claims and why they differ
+6. No match → encode normally, `concordance_texts` empty (this becomes the primary source)
+
+This workflow produces concordance-calibrated confidence automatically. It also identifies
+where schools genuinely disagree — analytically more valuable than where they agree.
+
+---
+
+### Phase 1B Priority Order
+
+Priority is determined by analytical value, not by what's easiest to encode.
+
+**Priority 1 — Laghu Parashari (S264–S266, ~306 rules)**
+Reason: The 9×12 functional nature table (is Saturn a yogakaraka/benefic/malefic/maraka
+for each of 12 lagnas?) is the master lookup that makes all other Parashari yoga rules
+interpretable. Every subsequent text's yoga predictions are modified by functional nature.
+Encode this before any other text's yoga rules.
+
+**Priority 2 — Bhavartha Ratnakara (S267–S272, ~800 rules)**
+Reason: Lagna-conditional rules are the highest-discrimination signal in the corpus.
+"For Scorpio lagna, if Saturn occupies H5..." distinguishes Scorpio lagna charts from
+all others — these rules create the analytical signal that generic rules can't provide.
+The entire text is lagna-specific by design. `lagna_scope` will be fully populated.
+
+**Priority 3 — Saravali: Conjunctions first (S273–S276 of full Saravali run)**
+Reason: The 2-planet through multi-planet conjunction matrix is where Saravali differs
+most from BPHS. Encode the divergent content before the concordant content.
+
+**Priority 4 — Full Saravali systematic (S277–S281)**
+Planet-in-house matrix, planet-in-sign matrix, dasha results — systematic Phase 1B_matrix.
+
+**Priority 5 — Chamatkara Chintamani (S282–S285, ~550 rules)**
+Priority 6 — Hora Ratnam (S286–S290, ~600 rules)
+Priority 7 — Prasna Marga (S291–S297, ~950 rules) — horary system, `system: horary` flag
+Priority 8 — Tajika Neelakanthi (S298–S300, ~255 rules) — annual charts, `system: varshaphala`
+Priority 9 — Mansagari (S301–S302, ~300 rules)
+Priority 10 — KP Comprehensive (S303–S304, ~300 rules)
+Priority 11 — Bhrigu/Suka/Dhruva Nadi (S305–S307, ~240 rules)
+Priority 12 — Jataka Tattva + Stri Jataka (S308–S309, ~270 rules)
+
+**Note on Prasna Marga and Tajika:** These are separate astrological systems (horary
+and annual charts respectively), not extensions of natal astrology. All rules from
+these texts must carry a `system` field (`horary` / `varshaphala`) to prevent
+contamination of natal chart analyses.
+
+---
+
+## Phase 1B Session Plan
+
+| Sessions | Text | Type | Rules | Notes |
+|----------|------|------|-------|-------|
+| S263 | Schema definition | Planning | 0 | Rule contract + taxonomy + concordance workflow committed |
+| S264–S266 | Laghu Parashari (8 chapters) | 1B_matrix + 1B_conditional | ~306 | Functional nature table 9×12 = 108 core rules |
+| S267–S272 | Bhavartha Ratnakara (20 chapters) | 1B_conditional | ~800 | All lagna-conditional; lagna_scope fully populated |
+| S273–S281 | Saravali (68 chapters) | 1B_matrix + 1B_compound | ~1,400 | Conjunctions first, then placement matrices |
+| S282–S285 | Chamatkara Chintamani (28 chapters) | 1B_matrix | ~550 | Short-verse formulation; ~108 placement rules |
+| S286–S290 | Hora Ratnam (22 chapters) | 1B_matrix + 1B_conditional | ~600 | Includes Tajika bridge rules in final session |
+| S291–S297 | Prasna Marga (32 chapters) | 1B_matrix + 1B_compound | ~950 | system=horary on all rules |
+| S298–S300 | Tajika Neelakanthi (16 chapters) | 1B_matrix + 1B_conditional | ~255 | system=varshaphala; 50 Sahams in S299 |
+| S301–S302 | Mansagari (30 chapters) | 1B_matrix + 1B_conditional | ~300 | Cross-concordance with Saravali |
+| S303–S304 | KP Comprehensive | 1B_conditional + 1B_compound | ~300 | Sublord chains; school=kp on all rules |
+| S305–S307 | Bhrigu/Suka/Dhruva Nadi | 1B_compound | ~240 | Nadi pair-reading; school=nadi |
+| S308–S309 | Jataka Tattva + Stri Jataka | 1B_matrix + 1B_compound | ~270 | Female-specific rules flagged |
+| S310–S316 | Verification sessions (one per text after completion) | Audit | 0 | Coverage map check + contract compliance spot check |
+
+**Phase 1B corpus total: ~9,200 rules** (2,634 Phase 1A + ~6,600 Phase 1B)
+**Phase 1B gate:** Every text has a committed coverage map, all sections complete,
+≥90% of Phase 1B rules have all mandatory fields, verse_ref populated on all rules.
+
+---
+
+### Phase 1B Convergence Layer Priority
+
+Not all Phase 1B work has equal analytical impact:
 
 **Highest priority — directly strengthens Layer I concordance:**
-- BPHS Chapters that apply to ALL three schools (Parashari/KP/Jaimini) — encoding
-  these creates rules that can fire independently from multiple schools, raising the
-  maximum achievable concordance score
-- Rules that distinguish yogakaraka behavior by lagna — these address the root cause
-  of OB-3's low axis-specific r (~0.02) because Saturn in H7 from Cancer ≠ Saturn in H7
-  from Capricorn, and the corpus needs to encode this distinction explicitly
+- Laghu Parashari functional nature table (9×12) — unlocks correct yogakaraka weighting
+  for every subsequent yoga rule; addresses root cause of OB-3 low axis-specific r
+- Any rule where `concordance_texts` will reach 3+ entries — these are the high-confidence
+  anchor rules that the SHAP model will identify as strongest features
+- Rules with `lagna_scope` populated — these are the discrimination signals
 
 **High priority — strengthens Layer II capacity/delivery:**
-- Dasha interpretation rules (BPHS Ch.46, Uttara Kalamrita timing sutras) — these
-  directly govern the Capacity check in `promise_engine.py`
-- Argala and virodha argala rules — these affect the activation weight in `narayana_argala.py`
-- Transit interaction rules (Gochar chapter BPHS) — these govern the Delivery gate
+- Dasha-conditional rules (`dasha_scope` populated) — directly govern `promise_engine.py`
+- Transit-conditional rules from Prasna Marga and Hora Ratnam
 
-**Medium priority — deepens Layer I but doesn't increase school count:**
-- Additional yoga rules within Parashari only — these add rules to a school already
-  present, raising rule depth but not concordance potential
-- Nabhasa Sankhya expansion — structural yogas that describe chart patterns, not
-  cross-school signals
+**Medium priority — deepens Layer I but single-school:**
+- Additional Parashari placement rules where concordance will remain at 1 text
+- Nabhasa and structural yogas — valid but lower concordance potential
 
-**Lower priority (research layer, Phase 6+):**
-- Medical/longevity texts (Ayurveda-adjacent) — governed by G02, internal research only
-- Lal Kitab — requires separate schema, doesn't contribute to main concordance model
-- Nadi texts — Chandra Kala Nadi schema is fundamentally different, separate pipeline
-
----
-
-
-
-| Component | Status | Gap |
-|-----------|--------|-----|
-| Classical rules active (engine) | 23 (R01–R23) | ~1,477+ rules missing from 1,500+ target |
-| Classical rules encoded (corpus) | **135** (R01-R23 + BPHS + Phala + BJ + UK + JP) | ~1,365+ rules to encode in Phase 1 |
-| BPHS chapters encoded (corpus) | 54 rules across Ch.3,6,11,24,26,27,28,32,34,47,50,66 | 83+ chapters remaining |
-| Named yogas | 13 types (detect_yogas) | VedAstro has 1,000+; target 310+ at Phase 1 |
-| Dasha systems | 2 (Vimshottari + Narayana) | 42 more systems (target 44) |
-| Divisional charts | D1–D9 confirmed, D10 partial | D12 (ancestral) + D16-D60 missing |
-| Shadbala | 6 components present | Kala Bala sub-components unverified (SK-1) |
-| Ashtakavarga | SAV implemented, fixed totals verified | Full Prastarashtakavarga missing |
-| Ayanamsha | Lahiri only | Krishnamurti for KP (G06 violation — S212 target), True Chitrapaksha missing |
-| Jaimini calculations | Chara Karakas (7) in chara_karak.py | Pada lagnas, Jaimini aspects incomplete |
-| Functional dignity | Wired to R02/R09 as of S162 | Schema in place, yogakaraka weight variant active |
-| OSF pre-registration | Draft in docs/research/osf_draft_ob3.json | NOT YET FILED on OSF — file at S461 |
-| Corpus pipeline | COMBINED_CORPUS (135 rules), ADB license, CV splitter, audit | 6 texts encoded; Phase 1 target: 1,500+ |
+**Research layer (horary/annual, Phase 6+ primary use):**
+- Prasna Marga rules (`system: horary`) — not wired to natal engine; Phase 6 research
+- Tajika Neelakanthi rules (`system: varshaphala`) — annual chart system, separate pipeline
 
 ---
 
@@ -135,13 +286,21 @@ should be weighted by which convergence layer they strengthen and how:
 | Uttara Kalamrita | — | ~80 (timing-focused) | 7 |
 | Jataka Parijata Vol I+II | V. Subrahmanya Sastri | ~200 | ~30 |
 
-### Check Online
+### Phase 1B New Texts (sutra-level estimates)
 
-| Text | Source | Est. Rules |
-|------|--------|-----------|
-| Saravali | pdfcoffee.com / scribd | ~150 |
-| Phala Deepika | archive.org | ~120 |
-| Bhavartha Ratnakara | archive.org | ~100 |
+| Text | Chapters | Phase 1B Rules | Error vs. Phase 1A estimate |
+|------|----------|---------------|------------------------------|
+| Saravali (Kalyana Varma) | 68 | ~1,400 | 7.5× more than Phase 1A assumption |
+| Chamatkara Chintamani | 28 | ~550 | 6× more |
+| Bhavartha Ratnakara | 20 | ~800 | 7× more (lagna-conditional multiplier) |
+| Laghu Parashari | 8 | ~306 | 4× more |
+| Hora Ratnam | 22 | ~600 | 5× more |
+| Prasna Marga | 32 | ~950 | 5× more |
+| Tajika Neelakanthi | 16 | ~255 | 2.5× more |
+| Mansagari | 30 | ~300 | new |
+| KP Comprehensive | — | ~300 | new |
+| Bhrigu/Suka/Dhruva Nadi | — | ~240 | new |
+| Jataka Tattva + Stri Jataka | — | ~270 | new |
 
 ---
 
@@ -175,24 +334,26 @@ should be weighted by which convergence layer they strengthen and how:
 
 ---
 
-## Phase 1 Encoding Plan (S216–S410)
+## Phase 1 Complete Picture
 
-| Sessions | Text | Target Rules | Priority |
-|----------|------|-------------|---------|
-| S216–S250 | BPHS all 97 chapters | 800+ | Ch.36-45 (Yogas) → Ch.16-25 (Dashas) → Ch.26-35 (House results) |
-| S251–S290 | Brihat Jataka + Uttara Kalamrita + Jataka Parijata + Sarwarthachintamani | 630+ | Uttara Kalamrita Bindu 2 (timing) = highest priority |
-| S291–S325 | Jaimini Sutras + Lal Kitab + Chandra Kala Nadi | 370+ | Separate schemas; Jaimini first |
-| S326–S360 | Yoga expansion: 13 → 310+ | 310 yogas | Pancha Mahapurusha (5), Rajayogas (50+), Nabhasa (32), Arishta (30+) |
-| S361–S380 | Complete Shadbala + 10 Dasha Systems + D12–D60 + Full Ashtakavarga | 4 major gaps | Shadbala first (unblocks full concordance in HouseScore) |
-| S381–S410 | Corpus finalization + Jaimini + Special Lagnas + V1.0 lock | 1,500+ total | Lock before OSF pre-registration |
+| Phase | Sessions | Rules | Status |
+|-------|----------|-------|--------|
+| Phase 1A — Representative | S216–S262 | 2,634 | ✅ Complete |
+| Phase 1B — Sutra-Level | S263–S316+ | ~6,600 new | 🔲 Gated on S263 schema session |
+| **Combined Phase 1 target** | — | **~9,200** | — |
 
-**AI-assisted extraction prompt template:**
-```
-Extract astrological rules from this BPHS chapter as JSON with fields:
-rule_id, source_text, chapter, verse, planet, condition, effect_domain,
-effect_direction, effect_magnitude, classical_weight, school, notes.
-```
-**⚠️ Human review required for EVERY extracted rule before commit. Never commit without verification.**
+**Phase 1 gate (updated):** Not rule count alone. The gate is:
+1. Every Phase 1B text has a committed coverage map with all sections complete
+2. ≥90% of Phase 1B rules satisfy the full Rule Contract (all 12 mandatory fields)
+3. `verse_ref` populated on all Phase 1B rules (chapter + verse, not chapter only)
+4. `concordance_texts` populated in real-time for all Phase 1B rules
+5. Outcome taxonomy used consistently — no free-form `outcome_domains` values
+6. Prasna Marga and Tajika rules have `system` field set (`horary` / `varshaphala`)
+
+**Failure mode prevention:** Phase 1A failed because the definition of done was a
+rule count target. Phase 1B sessions are scoped to coverage map sections, not counts.
+A session is not done until its targeted sections are complete to minimum count.
+The count follows from the map, not from a pre-set target.
 
 ---
 
