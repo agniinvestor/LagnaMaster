@@ -1037,3 +1037,23 @@ S262 — Phaladeepika Exhaustive (~120 rules)
 
 ### Next session
 S263 — BPHS Uncovered Chapters (~120 rules)
+---
+
+## S263 — 2026-03-30 — Phase 1B Schema Definition
+
+**Tests:** 2227 passing, 3 skipped, 0 lint errors
+
+### What was built
+Phase 1B gating session — no rules encoded, four protocol documents committed:
+
+- `docs/PHASE1B_RULE_CONTRACT.md`: 12 mandatory fields per Phase 1B rule, rejection criteria, confidence formula (mechanical not editorial)
+- `docs/PHASE1B_OUTCOME_TAXONOMY.md`: 15 fixed outcome domains, 4 directions, 4 intensities, 5 timing qualifiers — not extensible during encoding
+- `docs/PHASE1B_CONCORDANCE_WORKFLOW.md`: 5-step real-time concordance protocol, match/divergence/scope-refinement classification, bidirectional update requirement
+- `docs/coverage_maps/laghu_parashari.md`: Full coverage map for first encoding target — 6 sections, 266 minimum rules, section-by-section completion tracking
+- `src/corpus/rule_record.py`: Extended with 14 Phase 1B fields (primary_condition, modifiers, exceptions, outcome_domains, outcome_direction, outcome_intensity, outcome_timing, lagna_scope, dasha_scope, verse_ref, concordance_texts, divergence_notes, phase, system) — all with safe defaults, Phase 1A rules unaffected
+
+**Phase 1A relabeled:** S216–S262 (2,634 rules) is the Representative Layer.
+**Phase 1B target:** ~9,200 structured predictions total.
+
+### Next session
+S264 — Laghu Parashari Part 1: Functional Nature Table (9×12 = 108 rules, Section A of coverage map)

@@ -92,7 +92,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 260:** Lal Kitab Exhaustive — 1939-1952 editions (LKX001-120); 120 rules; corpus 2394; 2185 tests
 - **Session 261:** Chandra Kala Nadi Exhaustive — Deva Keralam (CKN001-120); 120 rules; corpus 2514; 2206 tests
 - **Session 262:** Phaladeepika Exhaustive — Mantreswara 14th century (PHX001-120); 120 rules; corpus 2634; 2227 tests
-- **Next session:** S263
+- **Session 263:** Phase 1B Schema Definition — Rule Contract + Outcome Taxonomy + Coverage Map + Concordance Workflow; RuleRecord +14 fields; corpus unchanged; 2227 tests
+- **Next session:** S264
 
 ---
 
