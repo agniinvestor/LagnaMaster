@@ -907,3 +907,16 @@ S252 — BPHS Yoga Exhaustive (all 500+ yoga combinations from Ch.35-45)
 
 ### Next session
 S253 — BPHS Bhava Exhaustive (all 12 houses, deep significations)
+---
+
+## S253 — 2026-03-29 — BPHS Bhava Exhaustive (120 rules)
+
+**Tests:** 2042 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_bhava_exhaustive.py`: 120 rules (BVX001-BVX120) — Exhaustive encoding of all 12 bhava significations from BPHS Ch.11-22: Each house primary significations + karakas, all 9 planets in each house, Marana Karaka Sthana placements, Dig Bala, Bhavat Bhavam principle, house anatomy/body mapping, longevity classification (Alpayu/Madhyayu/Purnayu), Maraka analysis, lagna lord in dusthanas, cross-house lord interactions.
+
+**Corpus total: 1454 rules**
+
+### Next session
+S254 — BPHS Graha Characteristics Exhaustive (planet natures, elements, karakas)
