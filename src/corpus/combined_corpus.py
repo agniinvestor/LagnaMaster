@@ -93,6 +93,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.bphs_graha_bhava_complete import BPHS_GRAHA_BHAVA_COMPLETE_REGISTRY  # S251
     from src.corpus.bphs_yoga_exhaustive import BPHS_YOGA_EXHAUSTIVE_REGISTRY  # S252
     from src.corpus.bphs_bhava_exhaustive import BPHS_BHAVA_EXHAUSTIVE_REGISTRY  # S253
+    from src.corpus.bphs_graha_characteristics import BPHS_GRAHA_CHARACTERISTICS_REGISTRY  # S254
 
     registry = CorpusRegistry()
     sources = [
@@ -143,6 +144,7 @@ def build_corpus() -> CorpusRegistry:
         BPHS_GRAHA_BHAVA_COMPLETE_REGISTRY,
         BPHS_YOGA_EXHAUSTIVE_REGISTRY,
         BPHS_BHAVA_EXHAUSTIVE_REGISTRY,
+        BPHS_GRAHA_CHARACTERISTICS_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():

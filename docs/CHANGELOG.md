@@ -920,3 +920,16 @@ S253 — BPHS Bhava Exhaustive (all 12 houses, deep significations)
 
 ### Next session
 S254 — BPHS Graha Characteristics Exhaustive (planet natures, elements, karakas)
+---
+
+## S254 — 2026-03-29 — BPHS Graha Characteristics (100 rules)
+
+**Tests:** 2057 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `bphs_graha_characteristics.py`: 100 rules (GCH001-GCH100) — Exhaustive encoding of all 9 planet natures/attributes from BPHS Ch.3-10: Nature/element/dosha/body for all 7 planets + Rahu/Ketu, full karakatva (significator roles), exaltation/debilitation/own signs, special aspects (Mars 4/8, Jupiter 5/9, Saturn 3/10), combustion degrees, Graha Yuddha (planetary war), rising types (Sheershodaya/Prishtodaya/Ubhayodaya), Vimshottari dasha periods + nakshatra sequence, Rashi modality/elements/gender, Nakshatra trikonas + ganas, temporal friendship rules, Saptavarga/Vargottama, retrograde/stationary states, medical astrology (8 planets), gems/metals/mantras for all 9 planets, planetary cabinet, objects, tastes, deities, maturation ages, seasonal/hourly strengths.
+
+**Corpus total: 1554 rules**
+
+### Next session
+S255 — Brihat Jataka Exhaustive (all 25 chapters deep encoding)
