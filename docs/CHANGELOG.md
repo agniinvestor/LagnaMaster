@@ -959,3 +959,16 @@ S256 — Uttara Kalamrita Exhaustive (all chapters deep encoding)
 
 ### Next session
 S257 — Jataka Parijata Exhaustive (all chapters deep encoding)
+---
+
+## S257 — 2026-03-29 — Jataka Parijata Exhaustive (150 rules)
+
+**Tests:** 2121 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `jataka_parijata_exhaustive.py`: 150 rules (JPX001-JPX150) — Exhaustive encoding of Vaidyanatha Dikshita's Jataka Parijata (14th century CE): All 9 planet natures (element/dosha/taste/color/direction), all 12 rashi characteristics, complete dignity system (exaltation/Moolatrikona/Vargottama/combustion/retrograde), Dig Bala for all 7 planets, Shadbala 6-component system, house analysis (all 12 houses with planet placements), Raja Yoga (kendra-trikona, Yoga Karaka, lagna-specific), Pancha Mahapurusha, Viparita Raja Yoga (Harsha/Sarala/Vimala), Nabhasa Yogas, Dhana/Daridra Yogas, Lakshmi/Saraswati Yogas, Parijata Yoga (namesake), Brahma/Vishnu/Shiva Yogas, longevity (Alpayu/Madhyayu/Purnayu, Maraka, Balarishta), marriage (three pillars, Mangal Dosha, timing), children, travel, female charts, medical (Tridosha, disease), dasha timing, transits, varga charts (D2/D3/D7/D9/D10/D12/D30/D60), muhurta.
+
+**Corpus total: 1974 rules**
+
+### Next session
+S258 — Sarvartha Chintamani Exhaustive (all chapters deep encoding)
