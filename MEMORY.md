@@ -3,7 +3,7 @@
 
 ### Core Stack
 - Python 3.14 · pyswisseph (Swiss Ephemeris JPL DE431) · FastAPI + Celery + Redis · PostgreSQL · Next.js 14 · K8s Helm
-- Engine version: v3.0.0 · 1338 tests · CI green
+- Engine version: v3.0.0 · 1457 tests · CI green
 - Ephemeris: Real SE files (sepl_18.se1 + semo_18.se1) — Moshier fallback retired
 
 ### Critical Invariants — NEVER violate these

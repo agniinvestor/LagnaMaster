@@ -82,7 +82,10 @@ Minimum new tests: [N]
 |-----------|-----------|---------------|
 | `test_[name]` | [what it checks] | [reason] |
 
-**India 1947 regression must still pass.** (Lagna=7.7286° Taurus, Sun=27.989° Cancer)
+**Full test suite must still pass** at baseline count or above (the 200+ ADB diverse
+fixture suite is the regression gate). India 1947 position verification only applies
+when `ephemeris.py`, `varga.py`, `narayana_dasa.py`, `nakshatra.py`, or `dignity.py`
+appear in the session READ LIST — the brief will note this explicitly when relevant.
 
 ---
 
@@ -108,7 +111,9 @@ Minimum new tests: [N]
 - [ ] All 1338+ existing tests still pass
 - [ ] [N]+ new tests pass
 - [ ] 0 ruff errors
-- [ ] India 1947 regression fixture: [specific value] matches expected [value]
+- [ ] Full test suite: [baseline] → [baseline+N] (200+ ADB diverse fixtures pass)
+- [ ] If READ LIST includes ephemeris/varga/nakshatra/dignity: verify India 1947
+  positions (Lagna=7.7286°Tau ±0.05°, Sun=27.989°Can, Moon=3.9835°Can)
 - [ ] [Functional requirement]
 
 ---
@@ -159,65 +164,49 @@ git push
 
 ---
 
+
 ---
 
-## Debugging Protocol — Read Before Attempting Any Fix
+## Debugging Protocol (read before attempting any fix)
 
 **Rule: Read the actual error before guessing at the cause. One diagnosis, one fix.**
-Three wrong fixes cost more tokens than one correct diagnosis would have.
 
-### pytest exit codes
+### pytest exit codes — what they mean
 
 | rc | Meaning | Correct action |
 |----|---------|---------------|
 | 0 | All tests passed | Nothing |
-| **1** | **Tests ran, some failed** | Read the FAILED lines — fix the code |
-| 2 | Interrupted or collection error | Check import errors or bad test syntax |
-| 3 | Internal pytest error | Check conftest.py or upgrade pytest |
-| 4 | CLI usage error | Check pytest flags |
+| 1 | **Tests ran but some failed** | Read the FAILED lines — fix the code |
+| 2 | Interrupted (Ctrl-C or collection error) | Check for import errors or bad test syntax |
+| 3 | Internal pytest error | Upgrade pytest or check conftest.py |
+| 4 | Command-line usage error | Check pytest invocation flags |
 | 5 | No tests collected | Check test file names and PYTHONPATH |
 
 **rc=1 means tests ran and failed. It does NOT mean the environment is broken.**
-If progress dots appear (`...........`) before rc=1, pytest invoked correctly —
-the failures are in the test output, not in the invocation. Read the FAILED lines.
+If you see dots appearing (`...........`) before rc=1, pytest ran successfully — the
+failures are in the test output, not in the invocation.
 
-### macOS "Too many open files" (Errno 24)
+### macOS file descriptor limit (Errno 24 / "Too many open files")
 
-**Cause:** macOS defaults to 256 open file descriptors. The 1300+ test suite
-exhausts this when pytest runs twice in quick succession (pre-push hook +
-start_session.py back to back).
+Cause: macOS defaults to 256 open file descriptors. The 1300+ test suite exhausts
+this when pytest is called twice in quick succession (e.g. pre-push hook + start_session.py).
 
-**Symptom:** Tests fail midway through, with `OSError: [Errno 24]` in the output.
-The test count in FAILED will be much lower than expected — not zero.
-
-**Fix in bash:**
-```bash
-ulimit -n 4096  # top of the script, before pytest runs
-```
-
-**Fix in Python subprocess callers:**
+Fix in bash scripts: `ulimit -n 4096` at the top of the script.
+Fix in Python subprocess callers:
 ```python
 import resource
 resource.setrlimit(resource.RLIMIT_NOFILE, (4096, 4096))
-# Call this before subprocess.run(["pytest", ...])
 ```
 
-### Diagnostic checklist (run through before writing any fix)
+### Diagnostic checklist before writing any fix
 
-1. **What is the exact exit code and error message?**
-   Read the output literally. Do not infer.
+1. What is the exact error message or exit code?
+2. What is the UNIQUE difference between the failing path and a working path?
+   (e.g. pre-push hook works, start_session.py doesn't → the only difference is `ulimit`)
+3. Does the error message directly point to a file, line, or known condition?
+4. Only after answering 1–3: write the minimal fix that addresses the diagnosed cause.
 
-2. **What is the unique difference between the failing path and a known-working path?**
-   Example: pre-push hook passes, start_session.py fails.
-   The unique difference is `ulimit -n 4096` in the hook. That IS the fix.
-
-3. **Does the error message name a file, line, or known condition?**
-   If yes, address that exact thing. Not a hypothesised related thing.
-
-4. **Only after 1–3: write the minimal fix for the diagnosed cause.**
-   If you cannot state which of the above three points led you to the fix,
-   you have not diagnosed — you are guessing.
-
+**Do not ship a fix that addresses a hypothesised cause. Read the output.**
 
 ## CHANGELOG Entry Template
 

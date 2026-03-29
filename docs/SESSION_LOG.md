@@ -553,3 +553,37 @@ Root cause of 103 CI failures identified and fixed:
 
 **Final numbers**: 1338 passed, 3 skipped | ruff: 0 errors | CI: green
 104 historical failed runs deleted.
+
+---
+
+## Phase 0 — Guardrails & Infrastructure (Sessions 191–215)
+
+### Session 193 — HouseScore Distribution Dataclass
+**Files:** `src/calculations/house_score.py`, `tests/test_s193_housescore_distribution.py`
+- `HouseScore` dataclass: `house`, `score`, `mean`, `std`, `p10`, `p90` + `to_dict()`
+- `compute_house_scores(chart, school)` → `dict[int, HouseScore]` via D1 axis scoring
+  and confidence-interval propagation (birth-time uncertainty ±5 min)
+- `ChartScoresV3.house_distributions` field added (backward-compat, populated by
+  `score_chart_v3()`)
+- Invariant #37: `p10 ≤ mean ≤ p90` enforced by construction (normal-distribution
+  percentile derivation from 95 % CI width)
+- 6 new tests (fields, JSON serialisation, distribution ordering, dict shape,
+  India 1947 H2-negative regression)
+- **1484 → 1490 passing**
+
+### Session 194 — Conditional Weight Functions W(planet, house, lagna, functional_role)
+**Files:** `src/calculations/conditional_weights.py`, `tests/test_s194_conditional_weights.py`
+- `WeightContext` dataclass: `planet`, `house`, `lagna_sign`, `functional_role`,
+  `rule_id`, `school`, `base_weight`, `ayanamsha`
+- `W(ctx: WeightContext) -> float` with classical modifiers:
+  - Yogakaraka early-return × YK_MULT (1.5 Parashari/KP, 1.25 Jaimini) — BPHS Ch.34
+  - Functional benefic + positive rule × 1.2 (amplifies promise) — Phaladeepika Ch.3
+  - Functional malefic + negative rule × 1.2 (amplifies affliction)
+  - Role mismatch × 0.75 (cross-direction mitigation) — Systems Approach Ch.3
+  - Kendra/Trikona + positive rule × 1.1 — BPHS Ch.11
+  - Dusthana + negative rule × 1.1 — BPHS Ch.37
+- `g06_compliant` property: KP school requires Krishnamurti ayanamsha (G06)
+- `build_context()` convenience constructor
+- Invariants #38 (yogakaraka early-return) + #39 (neutral/non-special → exact passthrough)
+- Ready for Phase 2 engine rebuild — not yet wired into live scoring
+- 13 new tests; **1490 → 1503 passing**

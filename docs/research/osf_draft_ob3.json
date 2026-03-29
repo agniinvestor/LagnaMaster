@@ -1,0 +1,66 @@
+{
+  "study_id": "OB-3",
+  "title": "Multi-factor classical convergence as a predictive signal above single-school baseline in Jyotish",
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "description": "Multi-factor classical convergence — simultaneous agreement of Parashari house scoring, KP sublord analysis, and Jaimini karakamsha combined with Layer II structural activation (dasha capacity x transit delivery) — predicts life outcome domains at a statistically validated rate above any single school's baseline, as measured by Brier score improvement and signal isolation above user prior probability.",
+      "type": "primary",
+      "feature_set": ["convergence_score", "layer2_activation", "dasha_capacity", "transit_delivery"],
+      "metric": "brier_score_improvement",
+      "notes": "Primary hypothesis — must be tested first; secondary hypotheses only if H1 shows signal"
+    },
+    {
+      "hypothesis_id": "H2",
+      "description": "Individual rules that survive BH FDR correction at q<0.05 in the training set.",
+      "type": "secondary",
+      "feature_set": ["all_R01_to_R23_features"],
+      "metric": "brier_score_improvement",
+      "notes": "Category A: rules with positive predictive validity"
+    },
+    {
+      "hypothesis_id": "H3",
+      "description": "Classical rules with significant negative predictive validity — fire when outcome does NOT occur more than expected by chance.",
+      "type": "secondary",
+      "feature_set": ["all_R01_to_R23_features"],
+      "metric": "brier_score",
+      "notes": "Category C: rules that act as contraindications"
+    },
+    {
+      "hypothesis_id": "H4",
+      "description": "Layer I x Layer II interaction predicts better than either layer alone.",
+      "type": "secondary",
+      "feature_set": ["convergence_score", "layer2_activation"],
+      "metric": "brier_score_improvement",
+      "notes": "Interaction hypothesis — tests whether structural activation adds information above classical concordance"
+    }
+  ],
+  "cv_strategy": {
+    "train_cutoff_year": 2009,
+    "test_from_year": 2010,
+    "description": "Pre-2010 train, 2010+ test — no look-ahead leakage. Events confirmed after 2010 are held out entirely until final test run.",
+    "stratify_by": ["outcome_domain"]
+  },
+  "significance_threshold": 0.05,
+  "correction_method": "BH-FDR",
+  "minimum_sample": 1000,
+  "stopping_rule": "No analysis is run before 1,000 confirmed training-eligible events exist, regardless of project schedule. This number may only be revised upward.",
+  "feature_definitions": {
+    "convergence_score": "Mean of (parashari_score + kp_score + jaimini_score) normalized to [-1,1] per house",
+    "layer2_activation": "dasha_capacity_score x transit_delivery_score — both must be positive for activation",
+    "dasha_capacity": "Promise engine capacity check: vimshottari MD/AD lord strength in D1 and D9",
+    "transit_delivery": "Gochar delivery gate: current transit lords activating natal promise",
+    "signal_isolation": "confidence_mean - user_prior_prob_pre (G04 compliance)"
+  },
+  "planned_analyses": [
+    "1. Descriptive statistics on feature distributions (no inference)",
+    "2. Test H1: convergence_score Brier improvement vs. single-school baselines",
+    "3. Test H2: per-rule BH-FDR correction across R01-R23",
+    "4. Test H3: negative predictive validity scan",
+    "5. Test H4: Layer I x Layer II interaction term",
+    "6. Robustness: time-split cross-validation on held-out 2010+ data"
+  ],
+  "filed_date": null,
+  "osf_url": null,
+  "schema_version": "1.0"
+}

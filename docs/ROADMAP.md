@@ -83,15 +83,15 @@ No user-facing code ships until Phase 0 is complete. No empirical analysis runs 
 
 | Session | Deliverable | Guardrails | Status |
 |---------|-------------|-----------|--------|
-| S191 | VedAstro install + cross-validation, ruff no-jhora rule, Protocol interface stubs, classical texts download | G17, G23, G24 | 🔴 |
-| S192 | Python Protocol interfaces — module boundary formalization | — | 🔴 |
-| S193 | HouseScore distribution dataclass replaces float | G04, G18 | 🔴 |
-| S194 | Conditional weight functions W(planet, house, lagna, functional_role) | G06 | 🔴 |
-| S195–S200 | Feature decomposition — 23 binary → 150+ continuous features | G22 | 🔴 |
-| S201–S210 | OSF pre-registration + ADB license + corpus extractor pipeline | G22 | 🔴 |
-| S211 | Redis + pgvector + TimescaleDB + MLflow + family schema | — | 🔴 |
-| S212 | Ayanamsha selection + KP school fix (G06 compliance) | G06 | 🔴 |
-| S213–S215 | Protocol verification + CI observability + Phase 0 checkpoint | All Phase 0 | 🔴 |
+| S191 | VedAstro install + cross-validation, ruff no-jhora rule, Protocol interface stubs, classical texts download | G17, G23, G24 | ✅ |
+| S192 | Python Protocol interfaces — module boundary formalization | — | ✅ |
+| S193 | HouseScore distribution dataclass replaces float | G04, G18 | ✅ |
+| S194 | Conditional weight functions W(planet, house, lagna, functional_role) | G06 | ✅ |
+| S195–S200 | Feature decomposition — 23 binary → 150+ continuous features | G22 | ✅ |
+| S201–S210 | OSF pre-registration + ADB license + corpus extractor pipeline | G22 | ✅ |
+| S211 | Redis + pgvector + TimescaleDB + MLflow + family schema | — | ✅ |
+| S212 | Ayanamsha selection + KP school fix (G06 compliance) | G06 | ✅ |
+| S213–S215 | Protocol verification + CI observability + Phase 0 checkpoint | All Phase 0 | ✅ |
 
 ---
 

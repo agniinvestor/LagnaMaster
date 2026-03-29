@@ -239,6 +239,28 @@ def nakshatra_position(longitude: float) -> NakshatraPosition
 
 ### src/calculations/shadbala.py
 
+### src/calculations/kala_bala.py (NEW — S190)
+
+All 8 Kala Bala temporal strength sub-components from BPHS Ch.27.
+Convergence layer: **Layer I — classical strength signal**.
+
+| Sub-component | Formula / Rule | Max Virupas |
+|--------------|---------------|-------------|
+| Nathonnathabala | Sun/Jup/Ven=day, Moon/Mars/Sat=night, Merc=always | 60V |
+| Paksha Bala | min(diff,360-diff)/180*60; malefics inverse | 60V |
+| Tribhaga Bala | Day: Merc/Sun/Sat; Night: Moon/Ven/Mars; Jup always | 60V |
+| Abda Bala | Weekday lord of Mesha Sankranti | 15V |
+| Masa Bala | Weekday lord of preceding new moon | 30V |
+| Vara Bala | Weekday lord of birth | 45V |
+| Hora Bala | Hora lord at birth (Chaldean sequence from day lord) | 60V |
+| Ayana Bala | 30 + 30*cos(angle_from_preferred_peak) | 0–60V |
+
+Public API: `compute_kala_bala(jd_ut, lat, lon_geo, planet_longitudes, birth_year) → KalaBalaResult`
+
+**India 1947 verified:** Vara=Venus(45V), Hora=Jupiter(60V), Natho=Moon/Mars/Sat(60V)
+
+
+
 | Component | Formula |
 |-----------|---------|
 | Uchcha Bala | `60 × (180 − dist_from_exalt) / 180` |
@@ -380,7 +402,21 @@ def navamsha_svg(d9_data: dict[str, int], lagna_d9_si: int, label="D9 Navamsha")
 
 ---
 
-### src/ui/app.py — Critical Import Names
+### src/ui/app.py
+
+### src/ui/confidence_tab.py (NEW — S190)
+
+Streamlit Birth Time Sensitivity tab. Closes **UI-1** (open since S188).
+Surfaces the existing `GET /charts/{id}/confidence` endpoint.
+
+Wire into app.py:
+```python
+from src.ui.confidence_tab import render_confidence_tab
+with tab_confidence:
+    render_confidence_tab(chart_id=st.session_state.get("chart_id"))
+```
+
+ — Critical Import Names
 
 ```python
 from src.calculations.nakshatra import nakshatra_position
@@ -416,3 +452,5 @@ def score_chart_v3(chart, on_date=None) -> ChartV3Out
 # When on_date supplied: score_chart_with_dasha() called after score_all_axes()
 # MUTATES axes.d1.scores in-place (does not create a new object)
 ```
+## S194 — New module
+- `src/calculations/conditional_weights.py` — `WeightContext` + `W()` conditional weight function (G06-aware, Phase 2 engine rebuild ready)

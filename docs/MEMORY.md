@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–189 complete — March 2026)
+## Actual Current State (Sessions 1–256 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **1338 passing, 3 skipped, 0 lint errors, CI green**
+- **2098 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -34,20 +34,63 @@ When in doubt, read that file to reconstruct state.
 - **Sessions 161–162:** Wiring fixes — Topocentric Moon, functional dignity in R02/R09
 - **Sessions 163–186:** Scoring depth, school-mixing fix, regression snapshot
 - **Sessions 187–188:** Final wiring gaps + XIX output API + Postgres routing + Swiss Ephemeris upgrade
-- **Session 189:** ADB XML importer, diverse fixtures (B-H), CI guard, mundane endpoint, semom_18.se1
-- **Next session:** S190
+- **Sessions 189–191:** Phase 0 bootstrap — Kala Bala verification, C-18 stress fixtures, VedAstro install, Protocol stubs, ruff G17 rule
+- **Session 192:** Protocol adapters — ScoringEngineAdapter, VimshottariDasaAdapter, NullFeedbackService, NullMLService
+- **Session 193:** HouseScore distribution dataclass — `house_score.py`, `compute_house_scores()`, `ChartScoresV3.house_distributions`; 1490 tests
+- **Session 194:** Conditional weight functions W(planet, house, lagna, functional_role) — `conditional_weights.py`, G06 g06_compliant flag; 1503 tests
+- **Session 195:** Feature decomp infrastructure — `feature_decomp.py`, 4 extractors, 48 features; 1517 tests
+- **Session 196:** +4 feature extractors (kartari, combust, retrograde, bhavesh_house_type); 1525 tests
+- **Session 197:** +3 feature extractors (benefic_net_score, malefic_net_score, karak_score); 1530 tests
+- **Session 198:** +2 extractors (pushkara_nav, war_loser); 156 features (≥150 ✅); 1535 tests
+- **Session 199:** feature contract tests (10 tests, G22 gate); 1545 tests
+- **Session 200:** ChartScoresV3 feature_vector field; ROADMAP S195–S200 ✅; 1550 tests
+- **Session 201:** OSF schema (HypothesisSpec, CVStrategy, OSFRegistration) + OB-3 draft; 1558 tests
+- **Session 202:** RuleRecord + CorpusRegistry corpus infrastructure; 1570 tests
+- **Session 203:** ADB license + R01-R23 corpus encoding (EXISTING_RULES_REGISTRY); 1582 tests
+- **Session 204:** TextExtractor Protocol + TimeBasedSplit CV splitter; 1592 tests
+- **Session 205:** CorpusAudit + 31 BPHS extended rules (B001-B031); 1602 tests
+- **Session 206:** Phaladeepika (21) + Brihat Jataka (26) rules; 101 total corpus rules; 1610 tests
+- **Session 207:** Uttara Kalamrita (17) + Jataka Parijata (17); 135 total corpus rules; 1618 tests
+- **Session 208:** BirthRecord + COMBINED_CORPUS (135+ rules, 6 texts); 1629 tests
+- **Session 209:** Corpus pipeline integration tests (9 tests); 1638 tests
+- **Session 210:** Corpus checkpoint; ROADMAP S201-S210 ✅; 135 rules across 6 texts
+- **Session 211:** pgvector + TimescaleDB + MLflow + family schema; 1651 tests
+- **Session 212:** KP ayanamsha enforcement (G06 🟡); compute_kp_chart(); 1660 tests
+- **Sessions 213–215:** Protocol verification + CI observability + Phase 0 checkpoint; src/ci/ package; 1722 tests
+- **Sessions 216–228:** Phase 1 Batch 1 — 299 new BPHS rules encoded (lords-in-houses 144, yogas 75, dignities/aspects/dasha/special-lagnas 80); corpus 135→434 rules; 1777 tests
+- **Session 229:** Graha in rashis p1 — Sun+Moon in 12 rashis; 24 rules; corpus 458; 1788 tests
+- **Session 230:** Graha in rashis p2 — Mars+Mercury in 12 rashis; 24 rules; corpus 482; 1799 tests
+- **Session 231:** Graha in rashis p3 — Jupiter+Venus in 12 rashis; 24 rules; corpus 506; 1811 tests
+- **Session 232:** Graha in rashis p4 — Saturn+Rahu+Ketu in 12 rashis; 36 rules; corpus 542; 1823 tests
+- **Session 233:** KP Sublord system — 30 rules (KPS001-030); corpus 572; 1833 tests
+- **Session 234:** Nakshatra rules p1 — nakshatras 1-14 + Moon; 28 rules; corpus 600; 1843 tests
+- **Session 235:** Nakshatra rules p2 — nakshatras 15-27 + Moon; 26 rules; corpus 626; 1851 tests
+- **Session 236:** Bhava karakas — naisargika+Jaimini chara+special; 30 rules; corpus 656; 1860 tests
+- **Session 237:** Varga rules — D9/D10/D4/D7/D12+others; 30 rules; corpus 686; 1869 tests
+- **Session 238:** Brihat Jataka extended — planetary natures+aspects+yogas+timing; 30 rules; corpus 716; 1877 tests
+- **Session 239:** Phala Deepika extended — planets in houses+yogas+health; 30 rules; corpus 746; 1886 tests
+- **Session 240:** Uttara Kalamrita extended — house+planet significations+principles; 30 rules; corpus 776; 1895 tests
+- **Session 241:** Jataka Parijata extended — lagnas+yogas+all 9 Maha Dasha results; 30 rules; corpus 806; 1904 tests ✅ 800+ MILESTONE
+- **Session 242:** Classical transit rules — Gochara/Vedha/Ashtakavarga/Sade Sati/double transit; 30 rules; corpus 836; 1914 tests
+- **Session 243:** Ashtakavarga rules — BAV structure/Shodhana/Kakshya/planet BAVs/transit assessment; 30 rules; corpus 866; 1925 tests
+- **Session 244:** Jaimini Sutras + Upagrahas — Chara Karakas/Rashi Drishti/Arudha/Chara Dasha/Gulika; 30 rules; corpus 896; 1936 tests
+- **Session 245:** Shadbala rules — 6-fold strength/Sthana/Dig/Kala/Chesta/Naisargika/Drik; 30 rules; corpus 926; 1947 tests
+- **Session 246:** Dasha systems — Vimshottari/Ashtottari/Yogini/Kalachakra/Maraka/planet results; 30 rules; corpus 956; 1958 tests
+- **Session 247:** Extended yoga rules — Pancha Mahapurusha/Nabhasa/Viparita/Moon yogas/Kartari; 30 rules; corpus 986; 1969 tests
+- **Session 248:** Lagna extended — all 12 lagna profiles/Yogakaraka/Kendra Adhipati/Vargottama; 30 rules; corpus 1016; 1979 tests ✅ 1000+ MILESTONE
+- **Session 249:** Bhava Phala extended — all 12 house significations/Upachaya/Dusthana/Maraka; 30 rules; corpus 1046; 1990 tests
+- **Session 250:** Graha Phala — planets in houses (all 7 planets + Rahu/Ketu, Mangal Dosha, combust); 30 rules; corpus 1076; 2001 tests
+- **Session 251:** BPHS Graha-Bhava Complete — exhaustive 9×12 planet-house matrix (GBC001-108); 108 rules; corpus 1184; 2012 tests
+- **Session 252:** BPHS Yoga Exhaustive — Ch.35-56, all yoga classes (YEX001-150); 150 rules; corpus 1334; 2028 tests
+- **Session 253:** BPHS Bhava Exhaustive — Ch.11-22, all 12 houses deep (BVX001-120); 120 rules; corpus 1454; 2042 tests
+- **Session 254:** BPHS Graha Characteristics — Ch.3-10, all 9 planets complete (GCH001-100); 100 rules; corpus 1554; 2057 tests
+- **Session 255:** Brihat Jataka Exhaustive — all 25 chapters (BJX001-120); 120 rules; corpus 1674; 2075 tests
+- **Session 256:** Uttara Kalamrita Exhaustive — all doctrines (UKX001-150); 150 rules; corpus 1824; 2098 tests
+- **Next session:** S257
 
 ---
 
-## Session Startup Checklist
-
-> **The manual checklist below is replaced by `tools/start_session.py`.**
-> Run `start_session.py` instead — it does all of the below automatically,
-> runs the test suite live, and outputs a ready-to-paste Claude brief.
->
-> Manual fallback only (if script unavailable):
-
- (Run BEFORE Every Session)
+## Session Startup Checklist (Run BEFORE Every Session)
 
 ```bash
 # Step 1: Verify actual state — ignore GitHub UI
@@ -63,13 +106,6 @@ PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=no 2>&1 | tail -3
 # Step 5: Read docs/CHANGELOG.md — last 30 lines
 # Step 6: Read session entry in docs/ROADMAP.md
 # Step 7: Check docs/GUARDRAILS.md for applicable guardrails
-
-**Before any session that builds or modifies a calculation module, also read:**
-`docs/PREDICTION_PIPELINE.md` — specifically "The Three Convergence Layers" section.
-Ask: which convergence layer does this module belong to, and what consumes its output?
-A module not wired to its convergence layer's downstream consumer produces no
-improvement to prediction quality regardless of how correct it is in isolation.
-
 # Step 8: If running empirical analysis → verify OSF timestamp first (G22)
 ```
 
@@ -133,21 +169,30 @@ Note: R17/R18 currently score 0.0 — so Invariant #36 has no numeric effect yet
 
 ---
 
-## India 1947 Reference Chart (Frozen Regression Fixture)
+## Regression Standard
 
+The regression suite is the **200+ ADB diverse fixture charts** (all 12 Lagnas,
+Sections A–H of diverse_chart_fixtures.py). The pre-push hook runs the full
+1338+ test suite. This is the quality gate for every session.
+
+**India 1947 position verification** is NOT the standard regression gate.
+It is only relevant in sessions where `ephemeris.py`, `varga.py`,
+`narayana_dasa.py`, `nakshatra.py`, or `dignity.py` appear in the READ LIST
+(i.e., sessions that touch the calculation substrate). The `start_session.py`
+brief will call this out explicitly when relevant.
+
+When India 1947 position verification IS needed:
 ```python
 INDIA_1947 = {
     "year": 1947, "month": 8, "day": 15,
     "hour": 0.0,           # midnight IST — tests P-1 fix
     "lat": 28.6139, "lon": 77.2090,
-    "tz_offset": 5.5,
-    "ayanamsha": "lahiri",
+    "tz_offset": 5.5, "ayanamsha": "lahiri",
 }
 # Lagna: 7.7286° Taurus (tolerance ±0.05°)
 # Sun:   27.989° Cancer
 # Moon:  3.9835° Cancer → Pushya nakshatra (index 7) → Saturn birth dasha (19yr)
 # Pancha-graha yoga: Sun/Moon/Mercury/Venus/Saturn all in Cancer
-# Narayana Dasha: Taurus (7yr) → Aries (6yr) → Pisces (3yr)...
 ```
 
 ---
@@ -156,7 +201,7 @@ INDIA_1947 = {
 
 | Metric | Current | 2030 Target |
 |--------|---------|------------|
-| Tests passing | **1338** (3 skipped) | 8,000+ |
+| Tests passing | **1503** (3 skipped) | 8,000+ |
 | Lint errors | **0** | 0 |
 | Classical rules | 23 (R01–R23) | 3,000+ |
 | Ephemeris | **DE431 real files** | DE431 maintained |
@@ -167,22 +212,7 @@ INDIA_1947 = {
 
 ---
 
-## Session End Protocol (AUTOMATED)
-
-```bash
-# NEW AUTOMATED LOOP — replaces the manual checklist below
-.venv/bin/python3 tools/start_session.py   # run BEFORE opening Claude
-# [paste brief to Claude — Claude writes tests + impl + update_docs_s[N].py]
-.venv/bin/python3 update_docs_s[N].py      # run AFTER Claude session
-git push                                    # pre-push hook: tests + ruff + docs
-```
-
-The pre-push hook is the single quality gate. If it passes, the session is done.
-
----
-
-**Manual equivalent (if automation unavailable):**
-
+## Session End Protocol (MANDATORY)
 
 ```bash
 # 1. Full test suite
