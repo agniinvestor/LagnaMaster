@@ -933,3 +933,16 @@ S254 — BPHS Graha Characteristics Exhaustive (planet natures, elements, karaka
 
 ### Next session
 S255 — Brihat Jataka Exhaustive (all 25 chapters deep encoding)
+---
+
+## S255 — 2026-03-29 — Brihat Jataka Exhaustive (120 rules)
+
+**Tests:** 2075 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `brihat_jataka_exhaustive.py`: 120 rules (BJX001-BJX120) — Exhaustive encoding of all 25 chapters of Varahamihira's Brihat Jataka (6th century CE): Planet natures/colors/tastes, aspect rules (7th/3rd/10th/4th/8th/5th/9th), all 12 rashi characteristics, bhava significations in BJ system, Avastha planetary states (5 states + 9 avasthas), divisional charts D2/D3/D7/D9/D10/D12/D30, Pancha Mahapurusha/Raja/Dhana/Nabhasa/Pravrajya yogas, nakshatra characteristics (Ashwini to Revati + Abhijit), planets in signs/houses, birth analysis, physical traits, wealth rules, female horoscopy, Pindayu/Amsayu longevity, death indicators, dasha phala, transit rules (Sade Sati/Jupiter transit). All rules: school=varahamihira, source=BrihatJataka.
+
+**Corpus total: 1674 rules**
+
+### Next session
+S256 — Uttara Kalamrita Exhaustive (all chapters deep encoding)
