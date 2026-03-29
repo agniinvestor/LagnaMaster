@@ -946,3 +946,16 @@ S255 — Brihat Jataka Exhaustive (all 25 chapters deep encoding)
 
 ### Next session
 S256 — Uttara Kalamrita Exhaustive (all chapters deep encoding)
+---
+
+## S256 — 2026-03-29 — Uttara Kalamrita Exhaustive (150 rules)
+
+**Tests:** 2098 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `uttara_kalamrita_exhaustive.py`: 150 rules (UKX001-UKX150) — Exhaustive encoding of Kalidasa's Uttara Kalamrita (17th century CE): All 7 special lagnas (Hora/Ghati/Bhava/Sree/Pranapada/Indu/Yogi), Argala doctrine (primary/secondary/obstruction), all 12 Arudha Padas (A1-A12 including UL/Upapada), extended house significations (all 12 houses), planet karakatva for all 9 planets, Upagrahas (Dhuma/Vyatipata/Parivesha/Indrachapa/Gulika/Mrityu), dasha timing (exalted/debilitated/retrograde dashas), Karakamsha and Atmakaraka analysis, Chara Karakas (AK/AMK/BK/DK), yogas (Subhakartari/Papakartari/Adhi/Kemadruma/Shakata/Parivartana), medical astrology, wealth/poverty combinations, marriage/divorce indicators, moksha/Pravrajya yogas, Prashna (horary), transit rules, varga analysis. All rules: school=kalidasa, source=UttaraKalamrita.
+
+**Corpus total: 1824 rules**
+
+### Next session
+S257 — Jataka Parijata Exhaustive (all chapters deep encoding)
