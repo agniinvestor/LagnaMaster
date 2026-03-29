@@ -972,3 +972,16 @@ S257 — Jataka Parijata Exhaustive (all chapters deep encoding)
 
 ### Next session
 S258 — Sarvartha Chintamani Exhaustive (all chapters deep encoding)
+---
+
+## S258 — 2026-03-29 — Sarvartha Chintamani Exhaustive (150 rules)
+
+**Tests:** 2141 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `sarvartha_chintamani_exhaustive.py`: 150 rules (SCX001-SCX150) — Exhaustive encoding of Venkatesha Daivagna's Sarvartha Chintamani (16th century CE): All 12 lagna results (SCX005-016), house significations (all 12 houses), 3-tier Raja Yoga grading (Maha/Madhyama/Alpa), Dhana Yoga Chakra, Neecha Bhanga Raja Yoga, Parivartana (66 combos), fame yogas, longevity (3 pillars, death timing, cause), children, marriage (5-factor), education, career (by dominant planet), Wealth Trikona (2/6/10 lords), travel directions, medical (Ayurvedic constitution), dasha timing, transit (Sade Sati 3 phases, Ashtakavarga), moksha paths, Shodasavarga grading (Para/Uttama/Madhyama), functional planet system, Gaja Kesari conditions, Marana Karaka Sthana, Mahabhagya, Dharmakarmadhipati (SCX118), three-chart synthesis (SCX150), Varshaphala.
+
+**Corpus total: 2124 rules**
+
+### Next session
+S259 — Jaimini Sutras Exhaustive (deep encoding)

@@ -14,7 +14,7 @@ When in doubt, read that file to reconstruct state.
 
 ---
 
-## Actual Current State (Sessions 1–257 complete — March 2026)
+## Actual Current State (Sessions 1–258 complete — March 2026)
 
 ### Repository
 - **Repo:** `github.com/agniinvestor/LagnaMaster`
@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **2121 passing, 3 skipped, 0 lint errors, CI green**
+- **2141 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -87,7 +87,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 255:** Brihat Jataka Exhaustive — all 25 chapters (BJX001-120); 120 rules; corpus 1674; 2075 tests
 - **Session 256:** Uttara Kalamrita Exhaustive — all doctrines (UKX001-150); 150 rules; corpus 1824; 2098 tests
 - **Session 257:** Jataka Parijata Exhaustive — all 18 chapters (JPX001-150); 150 rules; corpus 1974; 2121 tests
-- **Next session:** S258
+- **Session 258:** Sarvartha Chintamani Exhaustive — all chapters (SCX001-150); 150 rules; corpus 2124; 2141 tests
+- **Next session:** S259
 
 ---
 
