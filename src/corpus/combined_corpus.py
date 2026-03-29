@@ -102,6 +102,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY  # S260
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY  # S261
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY  # S262
+    from src.corpus.laghu_parashari_functional import LAGHU_PARASHARI_FUNCTIONAL_REGISTRY  # S264
 
     registry = CorpusRegistry()
     sources = [
@@ -161,6 +162,7 @@ def build_corpus() -> CorpusRegistry:
         LAL_KITAB_RULES_REGISTRY,
         CHANDRA_KALA_NADI_REGISTRY,
         PHALADEEPIKA_EXHAUSTIVE_REGISTRY,
+        LAGHU_PARASHARI_FUNCTIONAL_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():

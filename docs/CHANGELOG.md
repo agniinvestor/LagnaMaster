@@ -1057,3 +1057,21 @@ Phase 1B gating session — no rules encoded, four protocol documents committed:
 
 ### Next session
 S264 — Laghu Parashari Part 1: Functional Nature Table (9×12 = 108 rules, Section A of coverage map)
+---
+
+## S264 — 2026-03-30 — Laghu Parashari Functional Nature Table
+
+**Tests:** 2250 passing, 3 skipped, 0 lint errors
+
+### What was built
+Section A of the Laghu Parashari coverage map — 108 rules (LPF001–LPF108):
+
+- `src/corpus/laghu_parashari_functional.py`: Functional nature classification for 9 planets × 12 lagnas. Data-driven via `_TABLE` dict. All Phase 1B fields populated: `primary_condition`, `lagna_scope`, `outcome_direction`, `outcome_intensity`, `outcome_domains`, `verse_ref`, `phase='1B_conditional'`, `system='natal'`, `outcome_timing='dasha_dependent'`.
+- 6 yogakaraka rules tagged: Taurus=Saturn (LPF016), Cancer=Mars (LPF030), Leo=Mars (LPF039), Libra=Saturn (LPF061), Capricorn=Venus (LPF087), Aquarius=Venus (LPF096).
+- `src/corpus/combined_corpus.py`: Added `LAGHU_PARASHARI_FUNCTIONAL_REGISTRY`.
+- `tests/test_s264_laghu_parashari_functional.py`: 23 tests — count, IDs, all 12 lagnas × 9 rules, yogakaraka count, spot-checks on 6 specific rules, combined corpus count ≥ 2742.
+
+**Corpus:** 2742 rules (2634 Phase 1A + 108 Phase 1B)
+
+### Next session
+S265 — Laghu Parashari Sections B, C, D: Yogakaraka (~12), Kendradhipati (~20), Dasha Results by lordship (~42)

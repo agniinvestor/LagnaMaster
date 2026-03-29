@@ -182,13 +182,13 @@ malefics may serve as secondary marakas in specific configurations.
 
 | Section | Description | Min Rules | Status |
 |---------|-------------|-----------|--------|
-| A | Functional Nature Table (9×12) | 108 | 🔲 |
+| A | Functional Nature Table (9×12) | 108 | ✅ S264 |
 | B | Yogakaraka Designations | 12 | 🔲 |
 | C | Kendradhipati Dosha | 20 | 🔲 |
 | D | Dasha Results by Lordship | 42 | 🔲 |
 | E | Antardasha Combinations | 60 | 🔲 |
 | F | Maraka by Lagna | 24 | 🔲 |
-| **TOTAL** | | **266** | **0/266** |
+| **TOTAL** | | **266** | **108/266** |
 
 *Actual encoding will likely produce 290–320 rules as sub-distinctions within sections
 are encoded. The minimum count is the floor; going above it is expected and correct.*
