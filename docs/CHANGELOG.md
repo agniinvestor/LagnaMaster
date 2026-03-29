@@ -1011,3 +1011,16 @@ S260 — Lal Kitab Encoding (~120 rules)
 
 ### Next session
 S261 — Chandra Kala Nadi Encoding (~120 rules)
+---
+
+## S261 — 2026-03-29 — Chandra Kala Nadi Exhaustive (120 rules)
+
+**Tests:** 2206 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `chandra_kala_nadi_rules.py`: 120 rules (CKN001-CKN120) — Exhaustive encoding of Chandra Kala Nadi (Deva Keralam), Tamil Nadi text: All 27 nakshatra Moon results in 1st house with unique CKN interpretations, 9 Tara system (Janma/Sampat/Vipat/Kshema/Pratyak/Sadhana/Naidhana/Mitra/Parama Mitra), complete transit (Gochara) analysis by nakshatra, Vimshottari Dasha results modified by natal Moon nakshatra for all 9 planets, nakshatra-level yoga combinations (Nakshatra Sandhi, Raja Yoga, Parivartana), Gandanta nakshatra analysis (3 junction points), Nakshatra Pada (quarter) analysis, Pushkara Navamsha, medical analysis by nakshatra, Chandravela muhurta system, Abhijit nakshatra, Yogi/Avayogi, Nakshatra Shadbala, philosophy of Nadi astrology (27 nakshatras = cosmic alphabet).
+
+**Corpus total: 2514 rules**
+
+### Next session
+S262 — Phaladeepika Exhaustive (~120 rules)

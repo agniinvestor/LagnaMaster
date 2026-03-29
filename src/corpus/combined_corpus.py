@@ -100,6 +100,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.sarvartha_chintamani_exhaustive import SARVARTHA_CHINTAMANI_EXHAUSTIVE_REGISTRY  # S258
     from src.corpus.jaimini_sutras_exhaustive import JAIMINI_SUTRAS_EXHAUSTIVE_REGISTRY  # S259
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY  # S260
+    from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY  # S261
 
     registry = CorpusRegistry()
     sources = [
@@ -157,6 +158,7 @@ def build_corpus() -> CorpusRegistry:
         SARVARTHA_CHINTAMANI_EXHAUSTIVE_REGISTRY,
         JAIMINI_SUTRAS_EXHAUSTIVE_REGISTRY,
         LAL_KITAB_RULES_REGISTRY,
+        CHANDRA_KALA_NADI_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():
