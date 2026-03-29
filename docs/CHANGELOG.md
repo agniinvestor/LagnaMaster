@@ -985,3 +985,16 @@ S258 — Sarvartha Chintamani Exhaustive (all chapters deep encoding)
 
 ### Next session
 S259 — Jaimini Sutras Exhaustive (deep encoding)
+---
+
+## S259 — 2026-03-29 — Jaimini Sutras Exhaustive (150 rules)
+
+**Tests:** 2166 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `jaimini_sutras_exhaustive.py`: 150 rules (JMX001-JMX150) — Exhaustive encoding of Maharishi Jaimini's Jaimini Sutras (4 Adhyayas): Complete Chara Karaka system (AK/AMK/BK/PK/MK/GK/DK, 8-karaka system), Rashi Drishti complete table (movable/fixed/dual sign aspects, exception rule), Arudha/Pada system (AL, UL/Upapada, A2-A12, Darapada, Rajyapada), Chara Dasha (odd-sign forward, even-sign backward, year calculation), Sthira/Shoola Dasha (longevity analysis, Brahma/Rudra/Maheshvara), Karakamsha Lagna (all 12 houses from KL, all 9 planets in KL), Ishta Devata, Palana Devata, Atma Devata (spiritual planets), Jaimini Raja Yoga (AK-AMK, Karakamsha yogas, Chamara, Bandha, Daridra), Moksha Yoga and Kevalya/Kaivalya Yoga, Pravrajya (renunciation), Argala and Virodha-Argala, special lagnas (Hora/Ghati/Varnada), advanced timing (Narayana Dasha, Mandooka Dasha, 3-point verification), final synthesis (karma vs free will, Sampoorna Jyotisha teaching).
+
+**Corpus total: 2274 rules**
+
+### Next session
+S260 — Lal Kitab Encoding (~120 rules)
