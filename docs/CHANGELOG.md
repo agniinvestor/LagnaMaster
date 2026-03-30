@@ -1244,3 +1244,35 @@ First conjunction batch — 130 rules (SAV001-SAV130):
 
 ### Next session
 S274 — Saravali Conjunctions Part 2: Sun-Jupiter, Sun-Venus, Sun-Saturn
+---
+
+## S274 — 2026-03-30 — Saravali Conjunctions Part 2: Sun-Jupiter, Sun-Venus, Sun-Saturn
+
+**Tests:** 2403 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/saravali_conjunctions_2.py`: SARAVALI_CONJUNCTIONS_2_REGISTRY (130 rules SAV131-SAV260)
+  - Sun-Jupiter (Ch.16-17, 43 rules): Guru-Aditya yoga, combust Jupiter
+  - Sun-Venus (Ch.17, 43 rules): combust Venus marriage effects, artistic tension
+  - Sun-Saturn (Ch.17-18, 44 rules): karmic conjunction, father-son conflict, delays
+
+**Corpus:** 3947 rules (3817 + 130)
+
+### Next session
+S275 — Saravali Conjunctions Part 3: Moon-Mars, Moon-Mercury, Moon-Jupiter
+---
+
+## S275 — 2026-03-30 — Saravali Conjunctions Part 3: Moon-Mars, Moon-Mercury, Moon-Jupiter
+
+**Tests:** 2413 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/saravali_conjunctions_3.py`: SARAVALI_CONJUNCTIONS_3_REGISTRY (130 rules SAV261-SAV390)
+  - Moon-Mars (Ch.17-18, 43 rules): Chandra-Mangal yoga, emotional courage/volatility
+  - Moon-Mercury (Ch.18, 43 rules): eloquent speech, commercial mind, writing
+  - Moon-Jupiter (Ch.18-19, 44 rules): Gajakesari variant, wisdom-wealth expansion
+
+**Corpus:** 4077 rules (3947 + 130)
+
+### Next session
+S276 — Saravali Conjunctions Part 4: Moon-Venus, Moon-Saturn, Mars-Mercury
