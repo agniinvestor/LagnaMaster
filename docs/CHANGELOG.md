@@ -1075,3 +1075,39 @@ Section A of the Laghu Parashari coverage map — 108 rules (LPF001–LPF108):
 
 ### Next session
 S265 — Laghu Parashari Sections B, C, D: Yogakaraka (~12), Kendradhipati (~20), Dasha Results by lordship (~42)
+---
+
+## S265 — 2026-03-30 — Laghu Parashari Sections B, C, D
+
+**Tests:** 2270 passing, 3 skipped, 0 lint errors
+
+### What was built
+Sections B, C, D of the Laghu Parashari coverage map — 81 rules (LPY001-LPY012, LPK001-LPK024, LPD001-LPD045):
+
+- `src/corpus/laghu_parashari_bcd.py`: Three registries:
+  - Section B (Yogakaraka): 12 rules — one per lagna, 6 yogakaraka + 6 no_yogakaraka. Yogakarakas: Taurus=Saturn, Cancer=Mars, Leo=Mars, Libra=Saturn, Capricorn=Venus, Aquarius=Venus.
+  - Section C (Kendradhipati): 24 rules — full KD dosha, maraka+KD overlap, lagna lord partial cases, trikona-exempt cases. Phase 1B_conditional.
+  - Section D (Dasha Results): 45 rules — 12 base house-lord dashas + 33 special category rules (trikona/kendra enhancements, yogakaraka, maraka, badhaka, upachaya, dignity modifiers, combo lordships). Phase 1B_matrix.
+
+**Corpus:** 2823 rules (2742 + 81)
+
+### Next session
+S266 — Laghu Parashari Sections E, F: Antardasha combinations (~60 rules) + Maraka by lagna (~24 rules)
+---
+
+## S266 — 2026-03-30 — Laghu Parashari Sections E, F + LP Complete
+
+**Tests:** 2295 passing, 3 skipped, 0 lint errors
+
+### What was built
+Sections E, F completing the Laghu Parashari coverage map — 84 rules (LPA001-LPA060, LPM001-LPM024):
+
+- `src/corpus/laghu_parashari_ef.py`: Two registries:
+  - Section E (Antardasha): 60 rules — key operative combinations of mahadasha lordship type × antardasha lordship type. Covers trikona, kendra, yogakaraka, lagna lord, dusthana, maraka, kendradhipati, badhaka, and 8th lord combinations. Phase 1B_matrix for generic; 1B_conditional for lagna-specific yogakaraka AD rules (6 lagnas).
+  - Section F (Maraka): 24 rules — H2 lord and H7 lord per lagna. Double maraka: Aries=Venus (H2+H7), Libra=Mars (H2+H7). Phase 1B_conditional.
+- Combined LP coverage: 273 rules across 6 sections (A-F). Coverage map complete for Laghu Parashari.
+
+**Corpus:** 2907 rules (2823 + 84)
+
+### Next session
+S267 — Bhavartha Ratnakara Part 1: Lagna-conditional results (1B_conditional, lagna_scope fully populated). Highest discrimination signal text.

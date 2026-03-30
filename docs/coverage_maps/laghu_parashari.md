@@ -1,5 +1,5 @@
 # Coverage Map — Laghu Parashari
-> **Status: ENCODING NOT STARTED** (target: S264–S266)
+> **Status: ✅ COMPLETE** — S264 (A), S265 (B, C, D), S266 (E, F)
 > Update status and actual counts as each section is encoded.
 > A section is complete when actual count ≥ minimum count.
 
@@ -183,12 +183,12 @@ malefics may serve as secondary marakas in specific configurations.
 | Section | Description | Min Rules | Status |
 |---------|-------------|-----------|--------|
 | A | Functional Nature Table (9×12) | 108 | ✅ S264 |
-| B | Yogakaraka Designations | 12 | 🔲 |
-| C | Kendradhipati Dosha | 20 | 🔲 |
-| D | Dasha Results by Lordship | 42 | 🔲 |
-| E | Antardasha Combinations | 60 | 🔲 |
-| F | Maraka by Lagna | 24 | 🔲 |
-| **TOTAL** | | **266** | **108/266** |
+| B | Yogakaraka Designations | 12 | ✅ S265 |
+| C | Kendradhipati Dosha | 20 | ✅ S265 |
+| D | Dasha Results by Lordship | 42 | ✅ S265 |
+| E | Antardasha Combinations | 60 | ✅ S266 |
+| F | Maraka by Lagna | 24 | ✅ S266 |
+| **TOTAL** | | **266** | **273/266** ✅ |
 
 *Actual encoding will likely produce 290–320 rules as sub-distinctions within sections
 are encoded. The minimum count is the floor; going above it is expected and correct.*
