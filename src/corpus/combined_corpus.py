@@ -277,7 +277,20 @@ def build_corpus() -> CorpusRegistry:
     _apply_derived_fields(registry)
     # Apply modifiers/exceptions from descriptions
     _apply_modifiers(registry)
+    # Apply direction fixes for mixed-polarity rules
+    _apply_direction_fixes(registry)
     return registry
+
+
+def _apply_direction_fixes(registry: CorpusRegistry) -> None:
+    """Fix rules where direction conflicts with description sentiment."""
+    try:
+        from src.corpus.direction_fixes import DIRECTION_FIXES
+        for rule in registry.all():
+            if rule.rule_id in DIRECTION_FIXES:
+                rule.outcome_direction = "mixed"
+    except ImportError:
+        pass
 
 
 def _apply_modifiers(registry: CorpusRegistry) -> None:
