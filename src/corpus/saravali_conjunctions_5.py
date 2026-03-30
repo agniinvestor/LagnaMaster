@@ -1056,6 +1056,14 @@ def _make_conjunction_rules(
             verse_ref=vref,
             phase="1B_compound",
             system="natal",
+            prediction_type="event",
+            gender_scope="universal",
+            certainty_level="definite",
+            strength_condition="any",
+            house_system="sign_based",
+            ayanamsha_sensitive=False,
+            evaluation_method="placement_check",
+            last_modified_session="S305",
         ))
         num += 1
     return rules

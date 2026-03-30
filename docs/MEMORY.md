@@ -25,6 +25,7 @@ When in doubt, read that file to reconstruct state.
 
 ### Test Status
 - **2562 passing, 3 skipped, 0 lint errors, CI green**
+- **S305 extensions:** RuleRecord has 10 new fields, contract tests enforce all, corpus health dashboard in pre-push
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 

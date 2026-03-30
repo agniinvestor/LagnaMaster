@@ -273,7 +273,97 @@ def build_corpus() -> CorpusRegistry:
                 rule.confidence = mechanical_confidence(rule.rule_id, bool(rule.verse_ref))
     except ImportError:
         pass  # concordance_map not yet generated
+    # Apply S305 derived fields from descriptions
+    _apply_derived_fields(registry)
     return registry
+
+
+def _apply_derived_fields(registry: CorpusRegistry) -> None:
+    """Derive S305 fields from rule descriptions at build time.
+
+    Machine-derivable: prediction_type, gender_scope, certainty_level,
+    strength_condition, ayanamsha_sensitive, evaluation_method, dasha_scope.
+    """
+    import re
+
+    trait_words = {'personality', 'nature', 'character', 'temperament', 'appearance',
+        'build', 'complexion', 'demeanor', 'disposition', 'constitution', 'bearing',
+        'body', 'physique', 'stature'}
+    event_words = {'marriage', 'death', 'accident', 'promotion', 'birth of child',
+        'travel abroad', 'job loss', 'inheritance', 'litigation', 'surgery',
+        'divorce'}
+    female_words = {'female', 'woman', 'wife', 'stri jataka'}
+    vague_pats = [re.compile(p) for p in [r'\bmay\b', r'\bmight\b', r'\bpossibly\b', r'\btends\b']]
+    strength_map = [
+        ('exalted', 'exalted'), ('debilitated', 'debilitated'),
+        ('own sign', 'own_sign'), ('moolatrikona', 'moolatrikona'),
+        ('combust', 'combust'),
+    ]
+    eval_map = {
+        'house_placement': 'placement_check', 'sign_placement': 'placement_check',
+        'conjunction_in_house': 'placement_check', 'conjunction_condition': 'placement_check',
+        'multi_conjunction': 'placement_check', 'yoga': 'yoga_detection',
+        'yogakaraka_designation': 'lordship_check', 'kendradhipati_doctrine': 'lordship_check',
+        'maraka_designation': 'lordship_check', 'house_lordship': 'lordship_check',
+        'house_lordship_dasha': 'dasha_activation', 'antardasha_combination': 'dasha_activation',
+        'sign_condition': 'placement_check', 'house_condition': 'placement_check',
+        'special': 'placement_check', 'general_condition': 'placement_check',
+    }
+
+    for rule in registry.all():
+        if not rule.phase.startswith("1B"):
+            continue
+
+        desc = rule.description.lower()
+        pc = rule.primary_condition
+        ptype = pc.get("placement_type", "")
+        planet = pc.get("planet", "")
+
+        # prediction_type
+        t_score = sum(1 for w in trait_words if w in desc)
+        e_score = sum(1 for w in event_words if w in desc)
+        if t_score > e_score:
+            rule.prediction_type = "trait"
+            # Fix outcome_timing: traits should not be dasha_dependent
+            if rule.outcome_timing == "dasha_dependent":
+                rule.outcome_timing = "natal_permanent"
+        else:
+            rule.prediction_type = "event"
+
+        # gender_scope
+        if any(w in desc for w in female_words):
+            rule.gender_scope = "female"
+        else:
+            rule.gender_scope = "universal"
+
+        # certainty_level
+        if any(p.search(desc) for p in vague_pats):
+            rule.certainty_level = "possible"
+        else:
+            rule.certainty_level = "definite"
+
+        # strength_condition
+        for keyword, value in strength_map:
+            if keyword in desc:
+                rule.strength_condition = value
+                break
+
+        # ayanamsha_sensitive
+        rule.ayanamsha_sensitive = (ptype == "sign_placement")
+
+        # evaluation_method
+        rule.evaluation_method = eval_map.get(ptype, "placement_check")
+
+        # dasha_scope — derive from planet in primary_condition
+        if rule.outcome_timing == "dasha_dependent" and not rule.dasha_scope:
+            if planet and planet not in ("general", "house_lord", "none", "nodes"):
+                # For conjunction rules (sun_moon), both planets are dasha lords
+                if "_" in planet:
+                    parts = [p.strip() for p in planet.split("_")
+                             if p.strip() not in ("general", "planet", "conjunction")]
+                    rule.dasha_scope = parts
+                else:
+                    rule.dasha_scope = [planet]
 
 
 # Module-level singleton — import this for general use

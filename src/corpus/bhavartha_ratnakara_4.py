@@ -893,6 +893,14 @@ def _make_rules(lagna: str, data: list, start_num: int, chapter: str) -> list:
             verse_ref=vref,
             phase="1B_conditional",
             system="natal",
+            prediction_type="event",
+            gender_scope="universal",
+            certainty_level="definite",
+            strength_condition="any",
+            house_system="sign_based",
+            ayanamsha_sensitive=False,
+            evaluation_method="placement_check",
+            last_modified_session="S305",
         ))
         num += 1
     return rules

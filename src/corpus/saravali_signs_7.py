@@ -207,6 +207,14 @@ def _make_sign_rules(data: list, start_id: int) -> list[RuleRecord]:
             lagna_scope=[], dasha_scope=[], verse_ref=vref,
             concordance_texts=[], divergence_notes="",
             phase="1B_matrix", system="natal",
+            prediction_type="event",
+            gender_scope="universal",
+            certainty_level="definite",
+            strength_condition="any",
+            house_system="sign_based",
+            ayanamsha_sensitive=False,
+            evaluation_method="placement_check",
+            last_modified_session="S305",
         ))
     return rules
 
