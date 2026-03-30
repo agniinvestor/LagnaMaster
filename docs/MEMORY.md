@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **3842 passing, 3 skipped, 0 lint errors, CI green**
+- **5047 passing, 3 skipped, 0 lint errors, CI green**
 - **S305 extensions:** RuleRecord 10 new fields, 18 contract tests, corpus dashboard, modifier extractor, planet normalization, diverse 12-lagna test suite, 140 scripts archived to tools/archive/
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
@@ -116,7 +116,8 @@ When in doubt, read that file to reconstruct state.
 - **Sessions 289-296:** Saravali Houses all planets — SAV2133-2628; corpus 6315; 2491 tests — **Block C COMPLETE (496 actual)**
 - **Sessions 297-305:** Saravali Special Topics — SAV2629-2898; corpus 6585; 2501 tests — **SARAVALI COMPLETE (2898 rules, all 68 chapters)**
 - **Session 306:** BPHS Phase 1B Re-encode Start — Ch.12-15 (1st-4th House Effects); BPHS0001-BPHS0325; 85 rules; corpus 6670; 3842 tests — **BPHS Block A: 85/218 predictive slokas encoded**
-- **Next session:** S307
+- **Session 307:** BPHS Phase 1B Ch.16-19 (5th-8th House Effects); BPHS0400-BPHS0719; 75 rules; corpus 6745; 3842+ tests — **BPHS Block A: 160/218 slokas**
+- **Next session:** S308
 
 ---
 
@@ -141,26 +142,14 @@ PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=no 2>&1 | tail -3
 
 ---
 
-## Next Session: S307 — BPHS Phase 1B Ch.16-19 (5th-8th House Effects)
+## Next Session: S308 — BPHS Phase 1B Ch.20-23 (9th-12th House Effects)
 
-S307 continues the BPHS Phase 1B re-encode (Block A: House Effects).
-Chapters 16-19 cover: 5th House (Putra/Children), 6th House (Ari/Enemies),
-7th House (Yuvati/Marriage), 8th House (Randhra/Longevity).
-
-**S306 completed:**
-- 82 Phase 1B rules from BPHS Ch.12-15 (BPHS0001-BPHS0382)
-- 50/82 rules (61%) have concordance texts populated
-- 25 rules at high confidence (>=0.81)
-- Coverage map updated: 82/218 Block A predictive slokas encoded
-- Fixed combined_corpus.py concordance_map confidence override bug
-- 3797 tests passing, 0 lint errors
-
-**S307 targets:**
-- Ch.16: Effects of 5th House (26 predictive slokas)
-- Ch.17: Effects of 6th House (14 predictive slokas)
-- Ch.18: Effects of 7th House (18 predictive slokas)
-- Ch.19: Effects of 8th House (19 predictive slokas)
-- Total: 77 predictive slokas → rule count determined by source text
+S308 completes Block A (House Effects) with the final 4 chapters:
+- Ch.20: Effects of 9th House (Dharma — 13 predictive slokas)
+- Ch.21: Effects of 10th House (Karma — 14 predictive slokas)
+- Ch.22: Effects of 11th House (Labha — 14 predictive slokas)
+- Ch.23: Effects of 12th House (Vyaya — 16 predictive slokas)
+- Total: 57 predictive slokas → Block A complete after this session
 
 ---
 
@@ -237,7 +226,7 @@ INDIA_1947 = {
 
 | Metric | Current | Phase 1B Target | 2030 Target |
 |--------|---------|-----------------|------------|
-| Tests passing | **3,842** (3 skipped) | 4,000+ | 8,000+ |
+| Tests passing | **5,047** (3 skipped) | 4,000+ | 8,000+ |
 | Lint errors | **0** | 0 | 0 |
 | Corpus — Phase 1A representative | **2,634 rules** | complete | — |
 | Corpus — Phase 1B sutra-level | **0 rules** | ~6,600 new | — |

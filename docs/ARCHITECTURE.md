@@ -550,14 +550,15 @@ def score_chart_v3(chart, on_date=None) -> ChartV3Out
 #### BPHS Phase 1B Re-encode (S306+)
 | File | Rules | Description |
 |------|-------|-------------|
-| `bphs_1b_houses_1.py` | 82 | Ch.12-15: 1st-4th House Effects (Tanu/Dhana/Sahaj/Sukha Bhava) |
+| `bphs_1b_houses_1.py` | 85 | Ch.12-15: 1st-4th House Effects (Tanu/Dhana/Sahaj/Sukha Bhava) |
+| `bphs_1b_houses_2.py` | 75 | Ch.16-19: 5th-8th House Effects (Putra/Ari/Yuvati/Randhra Bhava) |
 
-### Corpus Totals (as of S306)
+### Corpus Totals (as of S307)
 | Source | Rules | Status |
 |--------|-------|--------|
 | Phase 1A (representative) | ~2,600 | Complete |
 | Laghu Parashari | 306 | Complete |
 | Bhavartha Ratnakara | 780 | Complete (12/12 lagnas) |
 | Saravali | 2,898 | Complete (68/68 chapters) |
-| BPHS Phase 1B | 82 | In progress (Ch.12-15 of 97) |
-| **TOTAL** | **~6,667** | — |
+| BPHS Phase 1B | 160 | In progress (Ch.12-19 of 97) |
+| **TOTAL** | **~6,745** | — |

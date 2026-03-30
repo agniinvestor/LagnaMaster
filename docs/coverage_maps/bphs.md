@@ -33,15 +33,15 @@ Verse counts from R. Santhanam translation (Ranjan Publications, 2 vols).
 | 13 | Effects of 2nd House (Dhana Bhava) | 12 | 12 | 14 | ✅ S306 |
 | 14 | Effects of 3rd House (Sahaj Bhava) | 22 | 20 | 19 | ✅ S306 |
 | 15 | Effects of 4th House (Sukha Bhava) | 31 | 28 | 26 | ✅ S306 |
-| 16 | Effects of 5th House (Putra Bhava) | 28 | 26 | 0 | 🔲 |
-| 17 | Effects of 6th House (Ari Bhava) | 14 | 14 | 0 | 🔲 |
-| 18 | Effects of 7th House (Yuvati Bhava) | 18 | 18 | 0 | 🔲 |
-| 19 | Effects of 8th House (Randhra Bhava) | 19 | 19 | 0 | 🔲 |
+| 16 | Effects of 5th House (Putra Bhava) | 28 | 26 | 24 | ✅ S307 |
+| 17 | Effects of 6th House (Ari Bhava) | 14 | 14 | 14 | ✅ S307 |
+| 18 | Effects of 7th House (Yuvati Bhava) | 18 | 18 | 18 | ✅ S307 |
+| 19 | Effects of 8th House (Randhra Bhava) | 19 | 19 | 19 | ✅ S307 |
 | 20 | Effects of 9th House (Dharma Bhava) | 13 | 13 | 0 | 🔲 |
 | 21 | Effects of 10th House (Karma Bhava) | 14 | 14 | 0 | 🔲 |
 | 22 | Effects of 11th House (Labha Bhava) | 14 | 14 | 0 | 🔲 |
 | 23 | Effects of 12th House (Vyaya Bhava) | 17 | 16 | 0 | 🔲 |
-| **TOTAL** | | **234** | **218** | **85** | S306: Ch.12-15 |
+| **TOTAL** | | **234** | **218** | **160** | S306-S307: Ch.12-19 |
 
 Note: Predictive count excludes purely definitional slokas (e.g., Ch.11 general
 principles on how to assess bhava strength). Each predictive sloka produces 1+

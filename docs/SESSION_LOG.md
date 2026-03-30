@@ -662,4 +662,8 @@ Root cause of 103 CI failures identified and fixed:
   - Ch.12 Tanu Bhava: 23 rules, Ch.13 Dhana Bhava: 14 rules
   - Ch.14 Sahaj Bhava: 19 rules, Ch.15 Sukha Bhava: 26 rules
   - 61% concordance populated, 25 high-confidence rules (>=0.81)
-  - Coverage map: 82/218 Block A predictive slokas encoded
+  - Coverage map: 85/218 Block A predictive slokas encoded
+- S307: Ch.16-19 (5th-8th House Effects) — 75 rules (BPHS0400-BPHS0719)
+  - Ch.16 Putra Bhava: 24 rules, Ch.17 Ari Bhava: 14 rules
+  - Ch.18 Yuvati Bhava: 18 rules, Ch.19 Randhra Bhava: 19 rules
+  - 55% concordance, Option B modifier protocol, coverage map 160/218

@@ -152,6 +152,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.saravali_special_8 import SARAVALI_SPECIAL_8_REGISTRY  # S304
     from src.corpus.saravali_special_9 import SARAVALI_SPECIAL_9_REGISTRY  # S305
     from src.corpus.bphs_1b_houses_1 import BPHS_1B_HOUSES_1_REGISTRY  # S306
+    from src.corpus.bphs_1b_houses_2 import BPHS_1B_HOUSES_2_REGISTRY  # S307
 
     registry = CorpusRegistry()
     sources = [
@@ -257,6 +258,7 @@ def build_corpus() -> CorpusRegistry:
         SARAVALI_SPECIAL_8_REGISTRY,
         SARAVALI_SPECIAL_9_REGISTRY,
         BPHS_1B_HOUSES_1_REGISTRY,
+        BPHS_1B_HOUSES_2_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():

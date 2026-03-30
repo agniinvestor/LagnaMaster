@@ -1490,3 +1490,37 @@ S306 — BPHS Phase 1B re-encode start
 
 ### Next session
 S307 — BPHS Phase 1B Ch.16-19 (5th-8th House Effects)
+
+---
+
+## S307 — 2026-03-31 — BPHS Phase 1B Re-encode: Ch.16-19 (5th-8th House Effects)
+
+**Tests:** 3842+ passing / 3 skipped / 0 lint errors
+
+### What was built
+- `src/corpus/bphs_1b_houses_2.py`: 75 Phase 1B rules from BPHS Ch.16-19
+  - Ch.16 (Putra Bhava / 5th House): 24 rules from 26 slokas
+  - Ch.17 (Ari Bhava / 6th House): 14 rules from 14 slokas
+  - Ch.18 (Yuvati Bhava / 7th House): 18 rules from 18 slokas
+  - Ch.19 (Randhra Bhava / 8th House): 19 rules from 19 slokas
+- `tests/test_s307_bphs_1b_houses_2.py`: contract compliance tests with anti-redundancy check
+
+### What was wired
+- BPHS_1B_HOUSES_2_REGISTRY in combined_corpus.py
+- Concordance: 41/75 rules (55%) linked to Saravali/Phaladeepika/Brihat Jataka
+- Modifier protocol Option B maintained: zero redundancy between primary_condition and modifiers
+- Compound rules: Sun+Jupiter in 5th (raj yoga), Saturn+Rahu in 5th (putradosha),
+  karaka affliction rules for Jupiter/Venus/Saturn as house karakas
+
+### Three-Lens Notes
+- **Tech:** Block A now 160/218 slokas encoded. Anti-redundancy test added to enforce
+  Option B modifier protocol going forward.
+- **Astrology:** Ch.16 covers children/intelligence (purva punya) — the 5th house is
+  critical for predictive accuracy as it intersects with intelligence, creativity, and
+  progeny. Ch.17 encodes the upachaya principle (malefics do well in 3/6/10/11).
+  Ch.18 covers Mangal Dosha and marriage — high-concordance with existing BVR rules.
+  Ch.19 establishes longevity framework and Viparita Raja Yoga.
+- **ML:** 75 new structured predictions. Corpus total: ~6,745.
+
+### Next session
+S308 — BPHS Phase 1B Ch.20-23 (9th-12th House Effects) — completes Block A
