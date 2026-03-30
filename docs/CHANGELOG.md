@@ -1367,3 +1367,24 @@ Four planet-in-sign modules (520 rules total):
 
 ### Next session
 S285 — Jupiter in 12 signs
+---
+
+## S285–S288 — 2026-03-30 — Saravali Block B Complete: All planets in 12 signs
+
+**Tests:** 2482 passing, 3 skipped, 0 lint errors
+
+### What was built
+Four planet-in-sign modules at EXHAUSTIVE depth (572 rules total):
+- `saravali_signs_5.py` (S285): Jupiter in 12 signs — SAV1561-1702 (142 rules, Ch.29)
+- `saravali_signs_6.py` (S286): Venus in 12 signs — SAV1703-1861 (159 rules, Ch.30)
+- `saravali_signs_7.py` (S287): Saturn in 12 signs — SAV1862-2002 (141 rules, Ch.31)
+- `saravali_signs_8.py` (S288): Rahu+Ketu in 12 signs — SAV2003-2132 (130 rules, Ch.32-33)
+
+Rule counts are now driven by text depth, not session targets.
+
+**Block B COMPLETE:** 1,092 actual rules (was estimated ~1,050)
+
+**Corpus:** 5819 rules
+
+### Next session
+S289 — Block C: Sun in 12 houses
