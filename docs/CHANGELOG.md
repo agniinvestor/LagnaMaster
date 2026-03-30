@@ -1222,3 +1222,25 @@ Bhavartha Ratnakara Sections K (Aquarius) + L (Pisces) — 130 rules (BVR651-BVR
 
 ### Next session
 S273 — Saravali sutra-level re-encode (conjunctions)
+---
+
+## S273 — 2026-03-30 — Saravali Conjunctions Part 1: Sun-Moon, Sun-Mars, Sun-Mercury
+
+**Tests:** 2393 passing, 3 skipped, 0 lint errors
+
+### What was built
+Saravali sutra-level re-encode begins. Coverage map created for all 68 chapters.
+First conjunction batch — 130 rules (SAV001-SAV130):
+
+- `src/corpus/saravali_conjunctions_1.py`: SARAVALI_CONJUNCTIONS_1_REGISTRY
+  - Sun-Moon conjunction (Ch.15, 43 rules): house placements + waxing/waning/sign modifiers
+  - Sun-Mars conjunction (Ch.16, 43 rules): fiery/martial outcomes per house + dignity conditions
+  - Sun-Mercury conjunction (Ch.16-17, 44 rules): Budhaditya yoga, combust vs cazimi
+- phase=1B_compound, lagna_scope=[] (universal), source=Saravali
+- Coverage map: docs/coverage_maps/saravali.md — 4 blocks, ~4,100 rules planned
+- Wired into combined_corpus.py.
+
+**Corpus:** 3817 rules (3687 + 130)
+
+### Next session
+S274 — Saravali Conjunctions Part 2: Sun-Jupiter, Sun-Venus, Sun-Saturn

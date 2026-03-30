@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **2379 passing, 3 skipped, 0 lint errors, CI green**
+- **2393 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -102,7 +102,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 270:** Bhavartha Ratnakara Libra + Scorpio — BVR391-520; corpus 3427; 2351 tests
 - **Session 271:** Bhavartha Ratnakara Sagittarius + Capricorn — BVR521-650; corpus 3557; 2365 tests
 - **Session 272:** Bhavartha Ratnakara Aquarius + Pisces — BVR651-780; corpus 3687; 2379 tests — **BVR COMPLETE (780/780)**
-- **Next session:** S273
+- **Session 273:** Saravali Conjunctions 1 (Sun-Moon/Mars/Mercury) — SAV001-130; corpus 3817; 2393 tests
+- **Next session:** S274
 
 ---
 
