@@ -114,6 +114,7 @@ def build_corpus() -> CorpusRegistry:
     )
     from src.corpus.bhavartha_ratnakara_1 import BHAVARTHA_RATNAKARA_1_REGISTRY  # S267
     from src.corpus.bhavartha_ratnakara_2 import BHAVARTHA_RATNAKARA_2_REGISTRY  # S268
+    from src.corpus.bhavartha_ratnakara_3 import BHAVARTHA_RATNAKARA_3_REGISTRY  # S269
 
     registry = CorpusRegistry()
     sources = [
@@ -181,6 +182,7 @@ def build_corpus() -> CorpusRegistry:
         LAGHU_PARASHARI_MARAKA_REGISTRY,
         BHAVARTHA_RATNAKARA_1_REGISTRY,
         BHAVARTHA_RATNAKARA_2_REGISTRY,
+        BHAVARTHA_RATNAKARA_3_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():

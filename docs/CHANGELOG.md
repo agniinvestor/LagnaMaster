@@ -1149,3 +1149,21 @@ Bhavartha Ratnakara Sections C (Gemini) + D (Cancer) — 130 rules (BVR131-BVR26
 
 ### Next session
 S269 — Bhavartha Ratnakara Part 3: Leo + Virgo (~130 rules, BVR261-BVR390)
+---
+
+## S269 — 2026-03-30 — Bhavartha Ratnakara Part 3: Leo + Virgo
+
+**Tests:** 2337 passing, 3 skipped, 0 lint errors
+
+### What was built
+Bhavartha Ratnakara Sections E (Leo) + F (Virgo) — 130 rules (BVR261-BVR390):
+
+- `src/corpus/bhavartha_ratnakara_3.py`: One registry (BHAVARTHA_RATNAKARA_3_REGISTRY):
+  - Section E (Leo, 65 rules BVR261-BVR325): Mars yogakaraka (H4+H9) highlighted. Sun as lagna lord, Saturn as double malefic (H6+H7). All 7 planets + yogas covered.
+  - Section F (Virgo, 65 rules BVR326-BVR390): Mercury owns H1+H10 (lagna + career). Jupiter full KD dosha. Venus as H9 trikona + H2 maraka lord. Saturn H5 trikona.
+- lagna_scope=['leo'] and lagna_scope=['virgo'] on all respective rules.
+
+**Corpus:** 3297 rules (3167 + 130)
+
+### Next session
+S270 — Bhavartha Ratnakara Part 4: Libra + Scorpio (~130 rules, BVR391-BVR520)
