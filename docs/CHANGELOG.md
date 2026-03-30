@@ -1350,3 +1350,20 @@ S280 — Three+ planet conjunctions (Block A complete)
 
 ### Next session
 S281 — Block B: Sun in 12 signs
+---
+
+## S281–S284 — 2026-03-30 — Saravali Block B (Part 1): Sun/Moon/Mars/Mercury in 12 signs
+
+**Tests:** 2477 passing, 3 skipped, 0 lint errors
+
+### What was built
+Four planet-in-sign modules (520 rules total):
+- `saravali_signs_1.py` (S281): Sun in 12 signs — SAV1041-1170 (Ch.25)
+- `saravali_signs_2.py` (S282): Moon in 12 signs — SAV1171-1300 (Ch.26)
+- `saravali_signs_3.py` (S283): Mars in 12 signs — SAV1301-1430 (Ch.27)
+- `saravali_signs_4.py` (S284): Mercury in 12 signs — SAV1431-1560 (Ch.28)
+
+**Corpus:** 5247 rules
+
+### Next session
+S285 — Jupiter in 12 signs

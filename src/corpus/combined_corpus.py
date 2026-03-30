@@ -126,6 +126,10 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.saravali_conjunctions_6 import SARAVALI_CONJUNCTIONS_6_REGISTRY  # S278
     from src.corpus.saravali_conjunctions_7 import SARAVALI_CONJUNCTIONS_7_REGISTRY  # S279
     from src.corpus.saravali_conjunctions_8 import SARAVALI_CONJUNCTIONS_8_REGISTRY  # S280
+    from src.corpus.saravali_signs_1 import SARAVALI_SIGNS_1_REGISTRY  # S281
+    from src.corpus.saravali_signs_2 import SARAVALI_SIGNS_2_REGISTRY  # S282
+    from src.corpus.saravali_signs_3 import SARAVALI_SIGNS_3_REGISTRY  # S283
+    from src.corpus.saravali_signs_4 import SARAVALI_SIGNS_4_REGISTRY  # S284
 
     registry = CorpusRegistry()
     sources = [
@@ -205,6 +209,10 @@ def build_corpus() -> CorpusRegistry:
         SARAVALI_CONJUNCTIONS_6_REGISTRY,
         SARAVALI_CONJUNCTIONS_7_REGISTRY,
         SARAVALI_CONJUNCTIONS_8_REGISTRY,
+        SARAVALI_SIGNS_1_REGISTRY,
+        SARAVALI_SIGNS_2_REGISTRY,
+        SARAVALI_SIGNS_3_REGISTRY,
+        SARAVALI_SIGNS_4_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():

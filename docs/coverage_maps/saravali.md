@@ -33,15 +33,15 @@ Each planet placed in each of 12 signs with multiple stated outcomes.
 
 | Section | Chapters | Topic | Est. Rules | Session | Status |
 |---------|----------|-------|-----------|---------|--------|
-| B1 | Ch.25 | Sun in 12 signs | ~130 | S281 | 🔲 |
-| B2 | Ch.26 | Moon in 12 signs | ~130 | S282 | 🔲 |
-| B3 | Ch.27 | Mars in 12 signs | ~130 | S283 | 🔲 |
-| B4 | Ch.28 | Mercury in 12 signs | ~130 | S284 | 🔲 |
+| B1 | Ch.25 | Sun in 12 signs | ~130 | S281 | ✅ |
+| B2 | Ch.26 | Moon in 12 signs | ~130 | S282 | ✅ |
+| B3 | Ch.27 | Mars in 12 signs | ~130 | S283 | ✅ |
+| B4 | Ch.28 | Mercury in 12 signs | ~130 | S284 | ✅ |
 | B5 | Ch.29 | Jupiter in 12 signs | ~130 | S285 | 🔲 |
 | B6 | Ch.30 | Venus in 12 signs | ~130 | S286 | 🔲 |
 | B7 | Ch.31 | Saturn in 12 signs | ~130 | S287 | 🔲 |
 | B8 | Ch.32–33 | Rahu/Ketu in 12 signs | ~140 | S288 | 🔲 |
-| **TOTAL B** | | | **~1,050** | **S281–S288** | **0/1050** |
+| **TOTAL B** | | | **~1,050** | **S281–S288** | **520/1050** |
 
 ### Block C: Planet-in-House Matrix (S289–S296, ~1,050 rules)
 
@@ -81,7 +81,7 @@ Each planet placed in each of 12 houses (bhava) with outcomes.
 | Block | Sessions | Rules | Status |
 |-------|----------|-------|--------|
 | A — Conjunctions | S273–S280 | ~1,040 | 1040/1040 ✅ |
-| B — Planet-in-Sign | S281–S288 | ~1,050 | 0/1050 |
+| B — Planet-in-Sign | S281–S288 | ~1,050 | 520/1050 |
 | C — Planet-in-House | S289–S296 | ~1,050 | 0/1050 |
 | D — Special Topics | S297–S305 | ~960 | 0/960 |
-| **TOTAL** | **S273–S305** | **~4,100** | **1040/4100** |
+| **TOTAL** | **S273–S305** | **~4,100** | **1560/4100** |
