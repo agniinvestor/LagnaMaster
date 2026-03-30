@@ -128,7 +128,14 @@ encoding begins without these four documents committed.
    outcome = 1 rule), Saravali contains ~4,100–4,200 discrete rules. 68 chapters,
    ~33 sessions at ~130 rules/session. Conjunctions first (S273–S280), then
    placement matrices (S281–S300), then special topics (S301–S305).
-4. **Chamatkara Chintamani (S306–S312) → Hora Ratnam (S313–S320)**
+4. **BPHS Phase 1B re-encode (S306–S340)** — 97 chapters at sutra-level depth.
+   BPHS is the concordance anchor. Without structured BPHS rules, all
+   concordance scoring is incomplete. HIGHEST PRIORITY.
+5. **Brihat Jataka + Phaladeepika re-encode (S341–S365)** — second and third
+   most cited texts. Critical for concordance depth.
+6. **Remaining primary text re-encode: Uttara Kalamrita, Jataka Parijata,
+   Sarvartha Chintamani, Jaimini Sutras (S366–S400)**
+7. **Chamatkara Chintamani (S401–S407) → Hora Ratnam (S313–S320)**
 5. **Prasna Marga (S321–S332)** — horary system, `system: horary` on all rules,
    separate analytical pipeline from natal.
 6. **Tajika Neelakanthi (S333–S338)** — annual charts, `system: varshaphala`.
@@ -148,7 +155,10 @@ encoding begins without these four documents committed.
 | S264–S266 | Laghu Parashari (8 chapters, 1B_matrix + 1B_conditional) | ~306 | Coverage map complete |
 | S267–S272 | Bhavartha Ratnakara (20 chapters, 1B_conditional) | ~800 | All lagna_scope populated |
 | S273–S305 | Saravali (68 chapters, sutra-level re-encode) | 2,898 | ✅ COMPLETE |
-| S306–S312 | Chamatkara Chintamani (28 chapters, 1B_matrix) | ~550 | verse_ref all populated |
+| S306–S340 | BPHS Phase 1B re-encode (97 chapters, concordance anchor) | ~4,500 | CRITICAL — enables concordance |
+| S341–S365 | Brihat Jataka + Phaladeepika re-encode | ~1,500 | Concordance depth |
+| S366–S400 | Remaining primary texts re-encode (UK, JP, SC, Jaimini) | ~2,500 | Concordance breadth |
+| S401–S407 | Chamatkara Chintamani (28 chapters, 1B_matrix) | ~550 | verse_ref all populated |
 | S313–S320 | Hora Ratnam (22 chapters, 1B_matrix + 1B_conditional) | ~600 | — |
 | S321–S332 | Prasna Marga (32 chapters, 1B_matrix + 1B_compound, system=horary) | ~950 | system field on all rules |
 | S333–S338 | Tajika Neelakanthi (16 chapters, system=varshaphala) | ~255 | system field on all rules |

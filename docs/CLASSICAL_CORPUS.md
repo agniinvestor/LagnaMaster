@@ -199,18 +199,19 @@ contamination of natal chart analyses.
 | S263 | Schema definition | Planning | 0 | Rule contract + taxonomy + concordance workflow committed |
 | S264–S266 | Laghu Parashari (8 chapters) | 1B_matrix + 1B_conditional | ~306 | Functional nature table 9×12 = 108 core rules |
 | S267–S272 | Bhavartha Ratnakara (20 chapters) | 1B_conditional | ~800 | All lagna-conditional; lagna_scope fully populated |
-| S273–S281 | Saravali (68 chapters) | 1B_matrix + 1B_compound | ~1,400 | Conjunctions first, then placement matrices |
+| S273–S305 | Saravali (68 chapters) | 1B_matrix + 1B_compound | 2,898 | ✅ COMPLETE |
 | S282–S285 | Chamatkara Chintamani (28 chapters) | 1B_matrix | ~550 | Short-verse formulation; ~108 placement rules |
 | S286–S290 | Hora Ratnam (22 chapters) | 1B_matrix + 1B_conditional | ~600 | Includes Tajika bridge rules in final session |
 | S291–S297 | Prasna Marga (32 chapters) | 1B_matrix + 1B_compound | ~950 | system=horary on all rules |
 | S298–S300 | Tajika Neelakanthi (16 chapters) | 1B_matrix + 1B_conditional | ~255 | system=varshaphala; 50 Sahams in S299 |
-| S301–S302 | Mansagari (30 chapters) | 1B_matrix + 1B_conditional | ~300 | Cross-concordance with Saravali |
+| S339–S360 | Mansagari (30 chapters) | 1B_matrix + 1B_conditional | ~3,300 | sutra-level depth |
 | S303–S304 | KP Comprehensive | 1B_conditional + 1B_compound | ~300 | Sublord chains; school=kp on all rules |
 | S305–S307 | Bhrigu/Suka/Dhruva Nadi | 1B_compound | ~240 | Nadi pair-reading; school=nadi |
-| S308–S309 | Jataka Tattva + Stri Jataka | 1B_matrix + 1B_compound | ~270 | Female-specific rules flagged |
+| S361–S390 | Jataka Tattva (22 tarangas) | 1B_matrix + 1B_compound | ~4,700 | sutra-level depth |
+| S391–S400 | Stri Jataka (13 chapters) | 1B_conditional | ~1,500 | Female-specific rules |
 | S310–S316 | Verification sessions (one per text after completion) | Audit | 0 | Coverage map check + contract compliance spot check |
 
-**Phase 1B corpus total: ~9,200 rules** (2,634 Phase 1A + ~6,600 Phase 1B)
+**Phase 1B corpus total: ~25,000+ rules** (Phase 1A re-encode ~7,500 + new texts ~14,000 + existing 3,955)
 **Phase 1B gate:** Every text has a committed coverage map, all sections complete,
 ≥90% of Phase 1B rules have all mandatory fields, verse_ref populated on all rules.
 
@@ -290,17 +291,19 @@ Not all Phase 1B work has equal analytical impact:
 
 | Text | Chapters | Phase 1B Rules | Error vs. Phase 1A estimate |
 |------|----------|---------------|------------------------------|
-| Saravali (Kalyana Varma) | 68 | ~1,400 | 7.5× more than Phase 1A assumption |
+| Saravali (Kalyana Varma) | 68 | 2,898 (actual) | ✅ COMPLETE |
 | Chamatkara Chintamani | 28 | ~550 | 6× more |
 | Bhavartha Ratnakara | 20 | ~800 | 7× more (lagna-conditional multiplier) |
 | Laghu Parashari | 8 | ~306 | 4× more |
 | Hora Ratnam | 22 | ~600 | 5× more |
 | Prasna Marga | 32 | ~950 | 5× more |
 | Tajika Neelakanthi | 16 | ~255 | 2.5× more |
-| Mansagari | 30 | ~300 | new |
+| Muhurtha Chintamani | 20 ullasas | ~2,700 | NEW — system=muhurtha |
+| Mansagari | 30 | ~3,300 (revised) | sutra-level estimate |
 | KP Comprehensive | — | ~300 | new |
 | Bhrigu/Suka/Dhruva Nadi | — | ~240 | new |
-| Jataka Tattva + Stri Jataka | — | ~270 | new |
+| Jataka Tattva | 22 tarangas | ~4,700 (revised) | sutra-level estimate |
+| Stri Jataka | 13 | ~1,500 (revised) | sutra-level estimate |
 
 ---
 
@@ -404,3 +407,38 @@ The count follows from the map, not from a pre-set target.
 ### Software Validation Reference
 - **Jagannatha Hora 8.0** (PVRNR) — free; gold standard cross-validation
 - **Swiss Ephemeris Manual** — ayanamshas and planet flags
+
+
+---
+
+## Phase 1A Re-Encode Plan (CRITICAL — before new text encoding)
+
+The 7 primary Parashari texts have Phase 1A encodings (prose descriptions, no structured
+fields). These MUST be re-encoded at Phase 1B depth because:
+1. BPHS is the concordance anchor — without structured BPHS rules, concordance is incomplete
+2. These texts' rules can't fire in rule_firing.py (empty primary_condition)
+3. They represent ~7,500-9,500 rules at sutra-level that are invisible to the ML pipeline
+
+| Text | Current 1A Rules | Est. 1B Rules | Priority |
+|------|-----------------|---------------|----------|
+| BPHS (97 chapters) | 1,239 | ~4,000-5,000 | HIGHEST — concordance anchor |
+| Brihat Jataka (28 ch) | 190 | ~800-1,000 | HIGH — second most cited |
+| Phaladeepika (27 ch) | 189 | ~500-700 | HIGH — third most cited |
+| Uttara Kalamrita (7 ch) | 201 | ~600-800 | MEDIUM |
+| Jataka Parijata (30 ch) | 197 | ~600-800 | MEDIUM |
+| Sarvartha Chintamani | 170 | ~500-600 | MEDIUM |
+| Jaimini Sutras | 178 | ~400-500 | MEDIUM (school=jaimini) |
+
+**Re-encode happens BEFORE new text encoding (Chamatkara Chintamani etc.)**
+
+### Texts Requiring Schema Extension (school_specific field)
+
+| Text | School | Extra Fields Needed |
+|------|--------|-------------------|
+| Jaimini Sutras | jaimini | chara_karaka, pada_lagna, house_system=whole_sign |
+| KP Comprehensive | kp | sublord, significator, cusp |
+| Lal Kitab | lal_kitab | house_position (not sign-based), remedy |
+| Nadi texts | nadi | nadi_sequence, planetary_combination |
+| Muhurtha Chintamani | muhurtha | panchanga_element, activity, election_quality, system=muhurtha |
+
+These fields go in the `school_specific` dict on RuleRecord (added S305).

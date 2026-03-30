@@ -264,3 +264,45 @@ by 3 texts from different schools automatically reaches confidence ≥ 0.84.
 | `concordance_texts` | YES (`[]` = unique source) | Source text names |
 | `phase` | NO | 3 values |
 | `system` | NO | 3 values |
+
+
+---
+
+## S305 Extensions — Additional Fields
+
+These fields were added to RuleRecord in S305 to prevent future rework.
+All have backward-compatible defaults. Machine-derived at build time where possible.
+
+| Field | Type | Default | Populated By |
+|-------|------|---------|-------------|
+| `prediction_type` | str | "event" | Machine: description keyword scan for trait/event words |
+| `gender_scope` | str | "universal" | Machine: description scan for gendered language |
+| `certainty_level` | str | "definite" | Machine: description scan for vague words (may/might) |
+| `strength_condition` | str | "any" | Machine: description scan for exalted/debilitated/combust |
+| `house_system` | str | "sign_based" | Manual: set during encoding per text's house system |
+| `ayanamsha_sensitive` | bool | False | Auto: True when placement_type == "sign_placement" |
+| `school_specific` | dict | {} | Manual: non-Parashari fields (Jaimini/KP/Lal Kitab/Nadi/Muhurtha) |
+| `remedy` | list[str] | [] | Manual: remedial measures from verse |
+| `evaluation_method` | str | "placement_check" | Auto: mapped from placement_type |
+| `last_modified_session` | str | "" | Auto: stamped by builder function |
+
+### New Valid Values
+
+- `outcome_timing`: added `"natal_permanent"` for traits (personality, appearance)
+- `system`: added `"transit"` and `"muhurtha"`
+- `phase`: added `"1A_deprecated"` for Phase 1A rules replaced by Phase 1B
+
+### Modifier Extraction (Machine-Enforced)
+
+The `modifier_extractor.py` module parses conditional language from descriptions:
+
+| Pattern | Extracted Modifier |
+|---------|-------------------|
+| "aspected by Saturn" | `{condition: "aspected_by_saturn", effect: "modifies", strength: "strong"}` |
+| "if exalted" | `{condition: "if_exalted", effect: "amplifies", strength: "strong"}` |
+| "combust" | `{condition: "if_combust", effect: "negates", strength: "moderate"}` |
+| "unless retrograde" | Added to `exceptions` list |
+| "neecha bhanga" | Added to `exceptions` list |
+
+Applied automatically at build time in `combined_corpus.py`.
+Pre-push dashboard shows modifier population percentage.

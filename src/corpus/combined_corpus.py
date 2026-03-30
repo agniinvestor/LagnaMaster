@@ -275,7 +275,24 @@ def build_corpus() -> CorpusRegistry:
         pass  # concordance_map not yet generated
     # Apply S305 derived fields from descriptions
     _apply_derived_fields(registry)
+    # Apply modifiers/exceptions from descriptions
+    _apply_modifiers(registry)
     return registry
+
+
+def _apply_modifiers(registry: CorpusRegistry) -> None:
+    """Extract modifiers and exceptions from descriptions at build time."""
+    from src.corpus.modifier_extractor import extract_modifiers_from_description
+    for rule in registry.all():
+        if not rule.phase.startswith("1B"):
+            continue
+        if rule.modifiers:  # already populated manually — don't overwrite
+            continue
+        mods, excs = extract_modifiers_from_description(rule.description)
+        if mods:
+            rule.modifiers = mods
+        if excs and not rule.exceptions:
+            rule.exceptions = excs
 
 
 def _apply_derived_fields(registry: CorpusRegistry) -> None:
