@@ -656,3 +656,10 @@ Root cause of 103 CI failures identified and fixed:
 - S305: Nimitta, Planetary war, Summary (Ch.66-68) — 24 rules
 - 270 rules total, phase=1B_matrix
 - **SARAVALI COMPLETE: 2,898 rules across all 68 chapters**
+
+### BPHS Phase 1B Re-encode (S306–S340)
+- S306: Ch.12-15 (1st-4th House Effects) — 82 rules (BPHS0001-BPHS0382)
+  - Ch.12 Tanu Bhava: 23 rules, Ch.13 Dhana Bhava: 14 rules
+  - Ch.14 Sahaj Bhava: 19 rules, Ch.15 Sukha Bhava: 26 rules
+  - 61% concordance populated, 25 high-confidence rules (>=0.81)
+  - Coverage map: 82/218 Block A predictive slokas encoded

@@ -1438,4 +1438,55 @@ Nine special topic modules (270 rules total):
 **Corpus:** 6,585 rules
 
 ### Next session
-S306 — Chamatkara Chintamani
+S306 — BPHS Phase 1B re-encode start
+
+---
+
+## S306 — 2026-03-31 — BPHS Phase 1B Re-encode: Ch.12-15 (1st-4th House Effects)
+
+**Tests:** 3797 passing / 3 skipped / 0 lint errors
+
+### What was built
+- `src/corpus/bphs_1b_houses_1.py`: 85 Phase 1B rules from BPHS Ch.12-15
+  - Ch.12 (Tanu Bhava / 1st House): 26 rules from 16 slokas
+  - Ch.13 (Dhana Bhava / 2nd House): 14 rules from 12 slokas
+  - Ch.14 (Sahaj Bhava / 3rd House): 19 rules from 20 slokas
+  - Ch.15 (Sukha Bhava / 4th House): 26 rules from 28 slokas
+- `tests/test_s306_bphs_1b_houses_1.py`: 1280 tests — contract compliance, concordance, taxonomy
+
+### What was wired
+- BPHS_1B_HOUSES_1_REGISTRY registered in combined_corpus.py
+- Concordance populated at encoding time (not retroactive):
+  Rules with concordance linked to Saravali/Phaladeepika/Brihat Jataka
+  High confidence rules at >=0.81, multi-text corroboration at >=0.89
+
+### Structural fix: Modifier protocol (Option B)
+- **Before:** Modifiers were redundant with primary_condition (e.g., "lagna lord in
+  kendra" appeared in BOTH primary_condition.yoga_label AND modifier.condition).
+  44/82 rules had empty modifiers despite verse text stating conditions.
+- **After (Option B):** primary_condition = simplest atomic placement (planet in house,
+  lord in house list). Modifiers = verse-stated conditions that CHANGE the outcome
+  (dignity, aspects, strength, combustion, waxing/waning). Zero redundancy.
+  Dignity-modified outcomes (Hamsa Yoga, Sasa Yoga, Ketu+Jupiter) split into
+  separate rules instead of being buried in description prose.
+- This is now the BPHS encoding standard for all subsequent sessions.
+
+### Bugs fixed
+- combined_corpus.py: concordance_map.mechanical_confidence() was overwriting
+  builder-calculated confidence to 0.65 for rules not in the concordance_map.
+  Fixed to only override when concordance_map has explicit data for the rule.
+- bphs_1b_houses_1.py: placement_value for house_placement rules wrapped in list
+  to match rule_firing.py expectations (Saravali convention: [house_num] not int).
+
+### Three-Lens Notes
+- **Tech:** BPHS Phase 1B re-encode begins. First 4 chapters (of 97) encoded at
+  sutra-level depth. Coverage map updated with actual verse counts for all 13 Block A
+  chapters (234 slokas total). Fixed concordance confidence override bug.
+- **Astrology:** BPHS is the concordance anchor. These 82 rules now bidirectionally
+  link to existing Saravali house rules, Phaladeepika, and Brihat Jataka encodings.
+  Jupiter in H1/H2/H3/H4 all reach 0.89+ confidence (3-text corroboration).
+- **ML:** 82 new structured predictions with machine-readable primary_conditions,
+  wired into rule_firing.py via combined_corpus. Corpus: 6,667 rules total.
+
+### Next session
+S307 — BPHS Phase 1B Ch.16-19 (5th-8th House Effects)

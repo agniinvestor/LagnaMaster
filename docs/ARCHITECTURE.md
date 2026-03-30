@@ -547,11 +547,17 @@ def score_chart_v3(chart, on_date=None) -> ChartV3Out
 | `saravali_special_8.py` | 20 | Death, Lost horoscopy, Drekkana (Ch.61-65) |
 | `saravali_special_9.py` | 24 | Nimitta, Planetary war, Summary (Ch.66-68) |
 
-### Corpus Totals (as of S305)
+#### BPHS Phase 1B Re-encode (S306+)
+| File | Rules | Description |
+|------|-------|-------------|
+| `bphs_1b_houses_1.py` | 82 | Ch.12-15: 1st-4th House Effects (Tanu/Dhana/Sahaj/Sukha Bhava) |
+
+### Corpus Totals (as of S306)
 | Source | Rules | Status |
 |--------|-------|--------|
 | Phase 1A (representative) | ~2,600 | Complete |
 | Laghu Parashari | 306 | Complete |
 | Bhavartha Ratnakara | 780 | Complete (12/12 lagnas) |
 | Saravali | 2,898 | Complete (68/68 chapters) |
-| **TOTAL** | **~6,585** | — |
+| BPHS Phase 1B | 82 | In progress (Ch.12-15 of 97) |
+| **TOTAL** | **~6,667** | — |

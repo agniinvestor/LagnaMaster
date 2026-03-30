@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **2562 passing, 3 skipped, 0 lint errors, CI green**
+- **3842 passing, 3 skipped, 0 lint errors, CI green**
 - **S305 extensions:** RuleRecord 10 new fields, 18 contract tests, corpus dashboard, modifier extractor, planet normalization, diverse 12-lagna test suite, 140 scripts archived to tools/archive/
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
@@ -115,7 +115,8 @@ When in doubt, read that file to reconstruct state.
 - **Sessions 285-288:** Saravali Signs Jupiter/Venus/Saturn/Rahu-Ketu — SAV1561-2132; corpus 5819; 2482 tests — **Block B COMPLETE (1092 actual)**
 - **Sessions 289-296:** Saravali Houses all planets — SAV2133-2628; corpus 6315; 2491 tests — **Block C COMPLETE (496 actual)**
 - **Sessions 297-305:** Saravali Special Topics — SAV2629-2898; corpus 6585; 2501 tests — **SARAVALI COMPLETE (2898 rules, all 68 chapters)**
-- **Next session:** S306
+- **Session 306:** BPHS Phase 1B Re-encode Start — Ch.12-15 (1st-4th House Effects); BPHS0001-BPHS0325; 85 rules; corpus 6670; 3842 tests — **BPHS Block A: 85/218 predictive slokas encoded**
+- **Next session:** S307
 
 ---
 
@@ -140,30 +141,26 @@ PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=no 2>&1 | tail -3
 
 ---
 
-## Next Session: S263 — Phase 1B Schema Definition (non-coding)
+## Next Session: S307 — BPHS Phase 1B Ch.16-19 (5th-8th House Effects)
 
-S263 is a planning and schema session. No rules are encoded. It produces four
-foundational documents that gate all Phase 1B encoding — no Phase 1B session begins
-without all four committed:
+S307 continues the BPHS Phase 1B re-encode (Block A: House Effects).
+Chapters 16-19 cover: 5th House (Putra/Children), 6th House (Ari/Enemies),
+7th House (Yuvati/Marriage), 8th House (Randhra/Longevity).
 
-| Deliverable | File | Purpose |
-|-------------|------|---------|
-| Rule Contract | `docs/PHASE1B_RULE_CONTRACT.md` | 12 mandatory fields + rejection criteria |
-| Outcome Taxonomy | `docs/PHASE1B_OUTCOME_TAXONOMY.md` | 15 domains, fixed vocabulary |
-| Coverage Map (Laghu Parashari) | `docs/coverage_maps/laghu_parashari.md` | First text, highest priority |
-| Concordance Workflow | `docs/PHASE1B_CONCORDANCE_WORKFLOW.md` | Step-by-step real-time protocol |
+**S306 completed:**
+- 82 Phase 1B rules from BPHS Ch.12-15 (BPHS0001-BPHS0382)
+- 50/82 rules (61%) have concordance texts populated
+- 25 rules at high confidence (>=0.81)
+- Coverage map updated: 82/218 Block A predictive slokas encoded
+- Fixed combined_corpus.py concordance_map confidence override bug
+- 3797 tests passing, 0 lint errors
 
-**Why S263 exists:** Phase 1A (S216–S262, 2,634 rules) produced representative samplings
-labeled "exhaustive." The failure mode: definition-of-done was a rule count, not a coverage
-specification. Encoding produced prose descriptions, not structured predictions. S263
-installs the gates that prevent this from recurring.
-
-**Phase 1B overview:**
-- Target: ~9,200 structured predictions total (2,634 Phase 1A + ~6,600 Phase 1B)
-- Encoding sessions: S264–S309 (~46 encoding sessions)
-- Verification sessions: S310–S316 (one per text after completion)
-- First text: Laghu Parashari (S264–S266) — functional nature table 9×12 is foundational
-- Full plan: `docs/CLASSICAL_CORPUS.md` → Phase 1B Session Plan section
+**S307 targets:**
+- Ch.16: Effects of 5th House (26 predictive slokas)
+- Ch.17: Effects of 6th House (14 predictive slokas)
+- Ch.18: Effects of 7th House (18 predictive slokas)
+- Ch.19: Effects of 8th House (19 predictive slokas)
+- Total: 77 predictive slokas → rule count determined by source text
 
 ---
 
@@ -240,7 +237,7 @@ INDIA_1947 = {
 
 | Metric | Current | Phase 1B Target | 2030 Target |
 |--------|---------|-----------------|------------|
-| Tests passing | **2,227** (3 skipped) | 4,000+ | 8,000+ |
+| Tests passing | **3,842** (3 skipped) | 4,000+ | 8,000+ |
 | Lint errors | **0** | 0 | 0 |
 | Corpus — Phase 1A representative | **2,634 rules** | complete | — |
 | Corpus — Phase 1B sutra-level | **0 rules** | ~6,600 new | — |

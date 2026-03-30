@@ -24,24 +24,28 @@
 ## Block A: House Effects (Ch.11-23) — ENCODE FIRST
 
 These chapters directly concordance with BVR and Saravali house rules.
+Verse counts from R. Santhanam translation (Ranjan Publications, 2 vols).
 
-| Ch | Title | Pages (Santhanam) | Source Verses | Rules Encoded | Status |
-|----|-------|-------------------|---------------|---------------|--------|
-| 11 | Judgement of Houses | 5 | TBD | 0 | 🔲 |
-| 12 | Effects of 1st House | 5 | 16 (counted) | 0 | 🔲 |
-| 13 | Effects of 2nd House | 3 | TBD | 0 | 🔲 |
-| 14 | Effects of 3rd House | 7 | TBD | 0 | 🔲 |
-| 15 | Effects of 4th House | 8 | TBD | 0 | 🔲 |
-| 16 | Effects of 5th House | 9 | TBD | 0 | 🔲 |
-| 17 | Effects of 6th House | 4 | TBD | 0 | 🔲 |
-| 18 | Effects of 7th House | 5 | TBD | 0 | 🔲 |
-| 19 | Effects of 8th House | 5 | TBD | 0 | 🔲 |
-| 20 | Effects of 9th House | 3 | TBD | 0 | 🔲 |
-| 21 | Effects of 10th House | 3 | TBD | 0 | 🔲 |
-| 22 | Effects of 11th House | 47* | TBD | 0 | 🔲 |
-| 23 | Effects of 12th House | 15 | TBD | 0 | 🔲 |
+| Ch | Title | Slokas | Predictive | Rules Encoded | Status |
+|----|-------|--------|------------|---------------|--------|
+| 11 | Judgement of Houses (Bhava Svarupa) | 16 | 8 | 0 | 🔲 |
+| 12 | Effects of 1st House (Tanu Bhava) | 16 | 16 | 26 | ✅ S306 |
+| 13 | Effects of 2nd House (Dhana Bhava) | 12 | 12 | 14 | ✅ S306 |
+| 14 | Effects of 3rd House (Sahaj Bhava) | 22 | 20 | 19 | ✅ S306 |
+| 15 | Effects of 4th House (Sukha Bhava) | 31 | 28 | 26 | ✅ S306 |
+| 16 | Effects of 5th House (Putra Bhava) | 28 | 26 | 0 | 🔲 |
+| 17 | Effects of 6th House (Ari Bhava) | 14 | 14 | 0 | 🔲 |
+| 18 | Effects of 7th House (Yuvati Bhava) | 18 | 18 | 0 | 🔲 |
+| 19 | Effects of 8th House (Randhra Bhava) | 19 | 19 | 0 | 🔲 |
+| 20 | Effects of 9th House (Dharma Bhava) | 13 | 13 | 0 | 🔲 |
+| 21 | Effects of 10th House (Karma Bhava) | 14 | 14 | 0 | 🔲 |
+| 22 | Effects of 11th House (Labha Bhava) | 14 | 14 | 0 | 🔲 |
+| 23 | Effects of 12th House (Vyaya Bhava) | 17 | 16 | 0 | 🔲 |
+| **TOTAL** | | **234** | **218** | **85** | S306: Ch.12-15 |
 
-*Ch.22 page count may include Ch.23 due to TOC numbering. Verify during read.
+Note: Predictive count excludes purely definitional slokas (e.g., Ch.11 general
+principles on how to assess bhava strength). Each predictive sloka produces 1+
+rules depending on number of distinct outcomes and conditional clauses stated.
 
 ## Block B: Bhava Lords & Upagrahas (Ch.24-25)
 
