@@ -123,28 +123,40 @@ encoding begins without these four documents committed.
    correct yogakaraka weighting. Directly addresses OB-3's low axis-specific r (~0.02).
 2. **Bhavartha Ratnakara second (S267–S272)** — lagna-conditional rules are the
    highest-discrimination signal; `lagna_scope` fully populated throughout.
-3. **Saravali: conjunctions first (S273–S276), then matrices (S277–S281)** — unique
-   conjunction formulations before concordant placement matrices.
-4. **Chamatkara Chintamani (S282–S285) → Hora Ratnam (S286–S290)**
-5. **Prasna Marga (S291–S297)** — horary system, `system: horary` on all rules,
+3. **Saravali sutra-level re-encode (S273–S305)** — the original ~1,400 estimate was
+   a verse count, not a rule count. At sutra-level (each condition → each stated
+   outcome = 1 rule), Saravali contains ~4,100–4,200 discrete rules. 68 chapters,
+   ~33 sessions at ~130 rules/session. Conjunctions first (S273–S280), then
+   placement matrices (S281–S300), then special topics (S301–S305).
+4. **Chamatkara Chintamani (S306–S312) → Hora Ratnam (S313–S320)**
+5. **Prasna Marga (S321–S332)** — horary system, `system: horary` on all rules,
    separate analytical pipeline from natal.
-6. **Tajika Neelakanthi (S298–S300)** — annual charts, `system: varshaphala`.
-7. **Mansagari + KP + Nadi + Jataka Tattva + Stri Jataka (S301–S309)**
-8. **Verification sessions (S310–S316)** — one per text, coverage map audit,
-   contract compliance spot check.
+6. **Tajika Neelakanthi (S333–S338)** — annual charts, `system: varshaphala`.
+7. **Mansagari (S339–S360)** — 30 chapters, ~2,755–3,850 rules at sutra-level.
+8. **Jataka Tattva (S361–S390)** — 22 tarangas, ~3,940–5,460 rules at sutra-level.
+   Taranga 11 alone (Dasha × Lagna matrix) = ~400 rules.
+9. **Stri Jataka (S391–S400)** — 13 chapters, ~1,300–1,840 rules at sutra-level.
+10. **Muhurtha Chintamani (S401–S410)** — 20 ullasas, ~2,310–3,120 rules.
+    Structurally different: `(panchanga_element, value, activity) → election_quality`.
+    All rules tagged `system: muhurtha`, separate pipeline from natal scoring.
+11. **Verification sessions (S411–S420)** — one per text, coverage map audit,
+    contract compliance spot check.
 
 | Sessions | Deliverable | Rules | Gate |
 |----------|-------------|-------|------|
 | S263 | Schema definition session — Rule Contract + Taxonomy + Coverage Map + Concordance Workflow | 0 | All four docs committed |
 | S264–S266 | Laghu Parashari (8 chapters, 1B_matrix + 1B_conditional) | ~306 | Coverage map complete |
 | S267–S272 | Bhavartha Ratnakara (20 chapters, 1B_conditional) | ~800 | All lagna_scope populated |
-| S273–S281 | Saravali (68 chapters, 1B_matrix + 1B_compound) | ~1,400 | Concordance vs. BPHS tracked |
-| S282–S285 | Chamatkara Chintamani (28 chapters, 1B_matrix) | ~550 | verse_ref all populated |
-| S286–S290 | Hora Ratnam (22 chapters, 1B_matrix + 1B_conditional) | ~600 | — |
-| S291–S297 | Prasna Marga (32 chapters, 1B_matrix + 1B_compound, system=horary) | ~950 | system field on all rules |
-| S298–S300 | Tajika Neelakanthi (16 chapters, system=varshaphala) | ~255 | system field on all rules |
-| S301–S309 | Mansagari + KP + Nadi + Jataka Tattva + Stri Jataka | ~1,110 | School fields correct |
-| S310–S316 | Verification sessions (one per text) | 0 | All sections in coverage maps complete |
+| S273–S305 | Saravali (68 chapters, sutra-level re-encode) | ~4,100 | Concordance vs. BPHS tracked |
+| S306–S312 | Chamatkara Chintamani (28 chapters, 1B_matrix) | ~550 | verse_ref all populated |
+| S313–S320 | Hora Ratnam (22 chapters, 1B_matrix + 1B_conditional) | ~600 | — |
+| S321–S332 | Prasna Marga (32 chapters, 1B_matrix + 1B_compound, system=horary) | ~950 | system field on all rules |
+| S333–S338 | Tajika Neelakanthi (16 chapters, system=varshaphala) | ~255 | system field on all rules |
+| S339–S360 | Mansagari (30 chapters, sutra-level) | ~3,300 | School fields correct |
+| S361–S390 | Jataka Tattva (22 tarangas, sutra-level) | ~4,700 | School fields correct |
+| S391–S400 | Stri Jataka (13 chapters, sutra-level) | ~1,500 | School fields correct |
+| S401–S410 | Muhurtha Chintamani (20 ullasas, system=muhurtha) | ~2,700 | system=muhurtha on all rules |
+| S411–S420 | Verification sessions (one per text) | 0 | All sections in coverage maps complete |
 
 **Phase 1 gate (final):**
 - Every Phase 1B text has a committed coverage map with all sections complete

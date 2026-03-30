@@ -1185,3 +1185,40 @@ Bhavartha Ratnakara Sections G (Libra) + H (Scorpio) — 130 rules (BVR391-BVR52
 
 ### Next session
 S271 — Bhavartha Ratnakara Part 5: Sagittarius + Capricorn (~130 rules, BVR521-BVR650)
+---
+
+## S271 — 2026-03-30 — Bhavartha Ratnakara Part 5: Sagittarius + Capricorn
+
+**Tests:** 2365 passing, 3 skipped, 0 lint errors
+
+### What was built
+Bhavartha Ratnakara Sections I (Sagittarius) + J (Capricorn) — 130 rules (BVR521-BVR650):
+
+- `src/corpus/bhavartha_ratnakara_5.py`: One registry (BHAVARTHA_RATNAKARA_5_REGISTRY):
+  - Section I (Sagittarius, 65 rules BVR521-BVR585): Sun H9 trikona (functional benefic). Mars H5+H12 (trikona dominates). Venus H6+H11 (functional malefic). No yogakaraka.
+  - Section J (Capricorn, 65 rules BVR586-BVR650): Venus yogakaraka (H5+H10). Jupiter H3+H12 (functional malefic despite natural benefic). Saturn lagna+H2 lord.
+- Wired into combined_corpus.py.
+
+**Corpus:** 3557 rules (3427 + 130)
+
+### Next session
+S272 — Bhavartha Ratnakara Part 6: Aquarius + Pisces (~130 rules, BVR651-BVR780, completing all 12 lagnas)
+---
+
+## S272 — 2026-03-30 — Bhavartha Ratnakara Part 6: Aquarius + Pisces
+
+**Tests:** 2379 passing, 3 skipped, 0 lint errors
+
+### What was built
+Bhavartha Ratnakara Sections K (Aquarius) + L (Pisces) — 130 rules (BVR651-BVR780):
+
+- `src/corpus/bhavartha_ratnakara_6.py`: One registry (BHAVARTHA_RATNAKARA_6_REGISTRY):
+  - Section K (Aquarius, 65 rules BVR651-BVR715): Venus yogakaraka (H4+H9). Moon H6 (functional malefic). Jupiter H2+H11 (maraka + upachaya).
+  - Section L (Pisces, 65 rules BVR716-BVR780): Mars H9 trikona (functional benefic). Moon H5 trikona (functional benefic). Mercury H4+H7 (KD dosha). No yogakaraka.
+- Wired into combined_corpus.py.
+- **Bhavartha Ratnakara COMPLETE**: all 12 lagnas encoded, 780/780 rules.
+
+**Corpus:** 3687 rules (3557 + 130)
+
+### Next session
+S273 — Saravali sutra-level re-encode (conjunctions)

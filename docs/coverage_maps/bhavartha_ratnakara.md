@@ -44,11 +44,11 @@ Each of the 12 chapters encodes:
 | F | Virgo (Kanya) | 65 | S269 | ✅ |
 | G | Libra (Tula) | 65 | S270 | ✅ |
 | H | Scorpio (Vrischika) | 65 | S270 | ✅ |
-| I | Sagittarius (Dhanus) | 65 | S271 | 🔲 |
-| J | Capricorn (Makara) | 65 | S271 | 🔲 |
-| K | Aquarius (Kumbha) | 65 | S272 | 🔲 |
-| L | Pisces (Meena) | 65 | S272 | 🔲 |
-| **TOTAL** | | **780** | **S267–S272** | **520/780** |
+| I | Sagittarius (Dhanus) | 65 | S271 | ✅ |
+| J | Capricorn (Makara) | 65 | S271 | ✅ |
+| K | Aquarius (Kumbha) | 65 | S272 | ✅ |
+| L | Pisces (Meena) | 65 | S272 | ✅ |
+| **TOTAL** | | **780** | **S267–S272** | **780/780 ✅** |
 
 *Actual encoding typically produces 800–900 rules as sub-distinctions are captured.*
 
