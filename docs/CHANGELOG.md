@@ -1130,3 +1130,22 @@ Bhavartha Ratnakara Sections A (Aries) + B (Taurus) — 130 rules (BVR001-BVR130
 
 ### Next session
 S268 — Bhavartha Ratnakara Part 2: Gemini + Cancer (~130 rules, BVR131-BVR260)
+---
+
+## S268 — 2026-03-30 — Bhavartha Ratnakara Part 2: Gemini + Cancer
+
+**Tests:** 2323 passing, 3 skipped, 0 lint errors
+
+### What was built
+Bhavartha Ratnakara Sections C (Gemini) + D (Cancer) — 130 rules (BVR131-BVR260):
+
+- `src/corpus/bhavartha_ratnakara_2.py`: One registry (BHAVARTHA_RATNAKARA_2_REGISTRY):
+  - Section C (Gemini, 65 rules BVR131-BVR195): Sun (7), Moon (6), Mars (7), Mercury (6), Jupiter (6), Venus (6), Saturn (6), yogas (10) + extra placements (11). lagna_scope=['gemini'] on all rules.
+  - Section D (Cancer, 65 rules BVR196-BVR260): Sun (5), Moon (6), Mars (6), Mercury (5), Jupiter (5), Venus (6), Saturn (6), yogas (14) + extra placements (12). lagna_scope=['cancer'] on all rules. Yogakaraka Mars highlighted.
+- All 7 classical planets covered for both lagnas.
+- phase=1B_conditional, source=BhavarthaRatnakara, school=parashari on every rule.
+
+**Corpus:** 3167 rules (3037 + 130)
+
+### Next session
+S269 — Bhavartha Ratnakara Part 3: Leo + Virgo (~130 rules, BVR261-BVR390)
