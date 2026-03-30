@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **2434 passing, 3 skipped, 0 lint errors, CI green**
+- **2449 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -108,7 +108,9 @@ When in doubt, read that file to reconstruct state.
 - **Session 276:** Saravali Conjunctions 4 (Moon-Venus/Saturn, Mars-Mercury) — SAV391-520; corpus 4207; 2420 tests
 - **Session 277:** Saravali Conjunctions 5 (Mars-Jupiter/Venus/Saturn) — SAV521-650; corpus 4337; 2427 tests
 - **Session 278:** Saravali Conjunctions 6 (Mercury-Jupiter/Venus/Saturn) — SAV651-780; corpus 4467; 2434 tests
-- **Next session:** S279
+- **Session 279:** Saravali Conjunctions 7 (Jupiter-Venus/Saturn, Venus-Saturn) — SAV781-910; corpus 4597; 2441 tests
+- **Session 280:** Saravali Conjunctions 8 (3+ planet) — SAV911-1040; corpus 4727; 2449 tests — **Block A COMPLETE (1040/1040)**
+- **Next session:** S281
 
 ---
 

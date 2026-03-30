@@ -1318,3 +1318,35 @@ S278
 
 ### Next session
 S279
+---
+
+## S279 — 2026-03-30 — Saravali Conjunctions Part 7: Jupiter-Venus, Jupiter-Saturn, Venus-Saturn
+
+**Tests:** 2441 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/saravali_conjunctions_7.py`: SARAVALI_CONJUNCTIONS_7_REGISTRY (130 rules SAV781-SAV910)
+  - Jupiter-Venus: supreme beneficence; Jupiter-Saturn: dharma vs karma; Venus-Saturn: artistic discipline
+
+**Corpus:** 4597 rules
+
+### Next session
+S280 — Three+ planet conjunctions (Block A complete)
+---
+
+## S280 — 2026-03-30 — Saravali Conjunctions Part 8: Three+ planet conjunctions
+
+**Tests:** 2449 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/saravali_conjunctions_8.py`: SARAVALI_CONJUNCTIONS_8_REGISTRY (130 rules SAV911-SAV1040)
+  - 80 three-planet conjunction rules (15 groups × 5 rules + 5 general)
+  - 30 four+ planet stellium rules
+  - 20 special conditions (graha yuddha, combustion, retrograde, sandhi, gandanta, nodes)
+
+**Block A COMPLETE:** 1,040/1,040 conjunction rules (SAV001-SAV1040)
+
+**Corpus:** 4727 rules
+
+### Next session
+S281 — Block B: Sun in 12 signs
