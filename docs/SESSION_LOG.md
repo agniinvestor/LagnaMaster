@@ -587,3 +587,72 @@ Root cause of 103 CI failures identified and fixed:
 - Invariants #38 (yogakaraka early-return) + #39 (neutral/non-special → exact passthrough)
 - Ready for Phase 2 engine rebuild — not yet wired into live scoring
 - 13 new tests; **1490 → 1503 passing**
+
+## Phase 1B — Sutra-Level Corpus Encoding (Sessions 263–305+)
+
+### Sessions 263–266 — Schema + Laghu Parashari
+**Files:** `docs/PHASE1B_RULE_CONTRACT.md`, `docs/PHASE1B_OUTCOME_TAXONOMY.md`, `docs/PHASE1B_CONCORDANCE_WORKFLOW.md`, `src/corpus/laghu_parashari_*.py`
+- S263: Schema definition — Rule Contract, Outcome Taxonomy, Coverage Map, Concordance Workflow
+- S264: Laghu Parashari Functional Nature Table — LPF001-108 (9×12 matrix)
+- S265: Laghu Parashari Sections B, C, D — LPY/LPK/LPD (81 rules)
+- S266: Laghu Parashari Sections E, F — LPA/LPM coverage complete
+
+### Sessions 267–272 — Bhavartha Ratnakara (COMPLETE)
+**Files:** `src/corpus/bhavartha_ratnakara_1.py` through `bhavartha_ratnakara_6.py`
+- S267: Aries + Taurus — BVR001-130
+- S268: Gemini + Cancer — BVR131-260
+- S269: Leo + Virgo — BVR261-390
+- S270: Libra + Scorpio — BVR391-520
+- S271: Sagittarius + Capricorn — BVR521-650
+- S272: Aquarius + Pisces — BVR651-780 (ALL 12 LAGNAS COMPLETE)
+- 780 rules total, 65 per lagna, phase=1B_conditional, lagna_scope populated
+
+### Sessions 273–280 — Saravali Block A: Conjunctions (COMPLETE)
+**Files:** `src/corpus/saravali_conjunctions_1.py` through `saravali_conjunctions_8.py`
+- S273: Sun-Moon, Sun-Mars, Sun-Mercury — SAV001-130
+- S274: Sun-Jupiter, Sun-Venus, Sun-Saturn — SAV131-260
+- S275: Moon-Mars, Moon-Mercury, Moon-Jupiter — SAV261-390
+- S276: Moon-Venus, Moon-Saturn, Mars-Mercury — SAV391-520
+- S277: Mars-Jupiter, Mars-Venus, Mars-Saturn — SAV521-650
+- S278: Mercury-Jupiter, Mercury-Venus, Mercury-Saturn — SAV651-780
+- S279: Jupiter-Venus, Jupiter-Saturn, Venus-Saturn — SAV781-910
+- S280: Three+ planet conjunctions, special conditions — SAV911-1040
+- 1,040 rules total, phase=1B_compound, lagna_scope=[] (universal)
+
+### Sessions 281–288 — Saravali Block B: Planet-in-Sign (COMPLETE)
+**Files:** `src/corpus/saravali_signs_1.py` through `saravali_signs_8.py`
+- S281: Sun in 12 signs (Ch.25) — SAV1041-1170 (130 rules)
+- S282: Moon in 12 signs (Ch.26) — SAV1171-1300 (130 rules)
+- S283: Mars in 12 signs (Ch.27) — SAV1301-1430 (130 rules)
+- S284: Mercury in 12 signs (Ch.28) — SAV1431-1560 (130 rules)
+- S285: Jupiter in 12 signs (Ch.29) — SAV1561-1702 (142 rules)
+- S286: Venus in 12 signs (Ch.30) — SAV1703-1861 (159 rules)
+- S287: Saturn in 12 signs (Ch.31) — SAV1862-2002 (141 rules)
+- S288: Rahu/Ketu in 12 signs (Ch.32-33) — SAV2003-2132 (130 rules)
+- 1,092 rules total, phase=1B_matrix, rule counts driven by text depth
+
+### Sessions 289–296 — Saravali Block C: Planet-in-House (COMPLETE)
+**Files:** `src/corpus/saravali_houses_1.py` through `saravali_houses_8.py`
+- S289: Sun in 12 houses (Ch.34) — 68 rules
+- S290: Moon in 12 houses (Ch.35) — 60 rules
+- S291: Mars in 12 houses (Ch.36) — 57 rules
+- S292: Mercury in 12 houses (Ch.37) — 57 rules
+- S293: Jupiter in 12 houses (Ch.38) — 60 rules
+- S294: Venus in 12 houses (Ch.39) — 56 rules
+- S295: Saturn in 12 houses (Ch.40) — 57 rules
+- S296: Rahu/Ketu in 12 houses (Ch.41-42) — 81 rules
+- 496 rules total, phase=1B_matrix
+
+### Sessions 297–305 — Saravali Block D: Special Topics (COMPLETE)
+**Files:** `src/corpus/saravali_special_1.py` through `saravali_special_9.py`
+- S297: Planet natures, signs, houses (Ch.1-5) — 45 rules
+- S298: Longevity, Arishta, Ayurdaya (Ch.6-8) — 32 rules
+- S299: Raja Yogas, Ava Yogas (Ch.9-10) — 30 rules
+- S300: Nabhasa/Solar/Lunar/Chandra Yogas (Ch.11-14) — 38 rules
+- S301: Bhava effects detailed (Ch.43-48) — 30 rules
+- S302: Female horoscopy, Marriage, Progeny (Ch.49-53) — 28 rules
+- S303: Dasha results, AV, Transits (Ch.54-60) — 23 rules
+- S304: Death, Lost horoscopy, Drekkana (Ch.61-65) — 20 rules
+- S305: Nimitta, Planetary war, Summary (Ch.66-68) — 24 rules
+- 270 rules total, phase=1B_matrix
+- **SARAVALI COMPLETE: 2,898 rules across all 68 chapters**

@@ -147,7 +147,7 @@ encoding begins without these four documents committed.
 | S263 | Schema definition session — Rule Contract + Taxonomy + Coverage Map + Concordance Workflow | 0 | All four docs committed |
 | S264–S266 | Laghu Parashari (8 chapters, 1B_matrix + 1B_conditional) | ~306 | Coverage map complete |
 | S267–S272 | Bhavartha Ratnakara (20 chapters, 1B_conditional) | ~800 | All lagna_scope populated |
-| S273–S305 | Saravali (68 chapters, sutra-level re-encode) | ~4,100 | Concordance vs. BPHS tracked |
+| S273–S305 | Saravali (68 chapters, sutra-level re-encode) | 2,898 | ✅ COMPLETE |
 | S306–S312 | Chamatkara Chintamani (28 chapters, 1B_matrix) | ~550 | verse_ref all populated |
 | S313–S320 | Hora Ratnam (22 chapters, 1B_matrix + 1B_conditional) | ~600 | — |
 | S321–S332 | Prasna Marga (32 chapters, 1B_matrix + 1B_compound, system=horary) | ~950 | system field on all rules |

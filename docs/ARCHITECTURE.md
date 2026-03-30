@@ -454,3 +454,104 @@ def score_chart_v3(chart, on_date=None) -> ChartV3Out
 ```
 ## S194 — New module
 - `src/calculations/conditional_weights.py` — `WeightContext` + `W()` conditional weight function (G06-aware, Phase 2 engine rebuild ready)
+
+---
+
+## Corpus Module Inventory (src/corpus/)
+
+### Infrastructure
+| Module | Session | Purpose |
+|--------|---------|---------|
+| `registry.py` | S202 | `CorpusRegistry` — add/query/count/all operations |
+| `rule_record.py` | S202/S263 | `RuleRecord` dataclass — 26 fields (12 Phase 1B mandatory) |
+| `combined_corpus.py` | S202+ | `build_corpus()` → aggregated `CorpusRegistry` singleton |
+
+### Phase 1A — Representative Rules
+| Module | Session | Rules | Source Text |
+|--------|---------|-------|-------------|
+| `existing_rules.py` | S202 | 23 | Engine rules R01-R23 |
+| `bphs_extended.py` | S206 | ~50 | BPHS extended |
+| `phaladeepika_rules.py` | S206 | ~40 | Phaladeepika |
+| `brihat_jataka_rules.py` | S206 | ~40 | Brihat Jataka |
+| `uttara_kalamrita_rules.py` | S207 | ~40 | Uttara Kalamrita |
+| `jataka_parijata_rules.py` | S207 | ~40 | Jataka Parijata |
+| *...25+ additional Phase 1A modules...* | S216-S262 | ~2,600 | BPHS lords/yogas/dignities, KP, Jaimini, Lal Kitab, etc. |
+
+### Phase 1B — Sutra-Level Encoding
+
+#### Laghu Parashari (S264-S266, 306 rules)
+| Module | Rules | Content |
+|--------|-------|---------|
+| `laghu_parashari_functional.py` | 108 | LPF001-108: 9×12 functional nature table |
+| `laghu_parashari_bcd.py` | 81 | LPY/LPK/LPD: yogakaraka, kendradhipati, dasha rules |
+| `laghu_parashari_ef.py` | ~117 | LPA/LPM: antardasha, maraka rules |
+
+#### Bhavartha Ratnakara (S267-S272, 780 rules, COMPLETE)
+| Module | Rules | Content |
+|--------|-------|---------|
+| `bhavartha_ratnakara_1.py` | 130 | BVR001-130: Aries + Taurus |
+| `bhavartha_ratnakara_2.py` | 130 | BVR131-260: Gemini + Cancer |
+| `bhavartha_ratnakara_3.py` | 130 | BVR261-390: Leo + Virgo |
+| `bhavartha_ratnakara_4.py` | 130 | BVR391-520: Libra + Scorpio |
+| `bhavartha_ratnakara_5.py` | 130 | BVR521-650: Sagittarius + Capricorn |
+| `bhavartha_ratnakara_6.py` | 130 | BVR651-780: Aquarius + Pisces |
+
+#### Saravali (S273-S305, 2,898 rules, COMPLETE — all 68 chapters)
+
+**Block A — Conjunctions (1,040 rules)**
+| Module | Rules | Content |
+|--------|-------|---------|
+| `saravali_conjunctions_1.py` | 130 | SAV001-130: Sun-Moon/Mars/Mercury |
+| `saravali_conjunctions_2.py` | 130 | SAV131-260: Sun-Jupiter/Venus/Saturn |
+| `saravali_conjunctions_3.py` | 130 | SAV261-390: Moon-Mars/Mercury/Jupiter |
+| `saravali_conjunctions_4.py` | 130 | SAV391-520: Moon-Venus/Saturn, Mars-Mercury |
+| `saravali_conjunctions_5.py` | 130 | SAV521-650: Mars-Jupiter/Venus/Saturn |
+| `saravali_conjunctions_6.py` | 130 | SAV651-780: Mercury-Jupiter/Venus/Saturn |
+| `saravali_conjunctions_7.py` | 130 | SAV781-910: Jupiter-Venus/Saturn, Venus-Saturn |
+| `saravali_conjunctions_8.py` | 130 | SAV911-1040: Three+ planet conjunctions |
+
+**Block B — Planet-in-Sign (1,092 rules)**
+| Module | Rules | Content |
+|--------|-------|---------|
+| `saravali_signs_1.py` | 130 | SAV1041-1170: Sun in 12 signs (Ch.25) |
+| `saravali_signs_2.py` | 130 | SAV1171-1300: Moon in 12 signs (Ch.26) |
+| `saravali_signs_3.py` | 130 | SAV1301-1430: Mars in 12 signs (Ch.27) |
+| `saravali_signs_4.py` | 130 | SAV1431-1560: Mercury in 12 signs (Ch.28) |
+| `saravali_signs_5.py` | 142 | SAV1561-1702: Jupiter in 12 signs (Ch.29) |
+| `saravali_signs_6.py` | 159 | SAV1703-1861: Venus in 12 signs (Ch.30) |
+| `saravali_signs_7.py` | 141 | SAV1862-2002: Saturn in 12 signs (Ch.31) |
+| `saravali_signs_8.py` | 130 | SAV2003-2132: Rahu/Ketu in 12 signs (Ch.32-33) |
+
+**Block C — Planet-in-House (496 rules)**
+| Module | Rules | Content |
+|--------|-------|---------|
+| `saravali_houses_1.py` | 68 | Sun in 12 houses (Ch.34) |
+| `saravali_houses_2.py` | 60 | Moon in 12 houses (Ch.35) |
+| `saravali_houses_3.py` | 57 | Mars in 12 houses (Ch.36) |
+| `saravali_houses_4.py` | 57 | Mercury in 12 houses (Ch.37) |
+| `saravali_houses_5.py` | 60 | Jupiter in 12 houses (Ch.38) |
+| `saravali_houses_6.py` | 56 | Venus in 12 houses (Ch.39) |
+| `saravali_houses_7.py` | 57 | Saturn in 12 houses (Ch.40) |
+| `saravali_houses_8.py` | 81 | Rahu/Ketu in 12 houses (Ch.41-42) |
+
+**Block D — Special Topics (270 rules)**
+| Module | Rules | Content |
+|--------|-------|---------|
+| `saravali_special_1.py` | 45 | Planet natures, signs, houses (Ch.1-5) |
+| `saravali_special_2.py` | 32 | Longevity, Arishta, Ayurdaya (Ch.6-8) |
+| `saravali_special_3.py` | 30 | Raja Yogas, Ava Yogas (Ch.9-10) |
+| `saravali_special_4.py` | 38 | Nabhasa/Solar/Lunar/Chandra Yogas (Ch.11-14) |
+| `saravali_special_5.py` | 30 | Bhava effects detailed (Ch.43-48) |
+| `saravali_special_6.py` | 28 | Female horoscopy, Marriage, Progeny (Ch.49-53) |
+| `saravali_special_7.py` | 23 | Dasha results, AV, Transits (Ch.54-60) |
+| `saravali_special_8.py` | 20 | Death, Lost horoscopy, Drekkana (Ch.61-65) |
+| `saravali_special_9.py` | 24 | Nimitta, Planetary war, Summary (Ch.66-68) |
+
+### Corpus Totals (as of S305)
+| Source | Rules | Status |
+|--------|-------|--------|
+| Phase 1A (representative) | ~2,600 | Complete |
+| Laghu Parashari | 306 | Complete |
+| Bhavartha Ratnakara | 780 | Complete (12/12 lagnas) |
+| Saravali | 2,898 | Complete (68/68 chapters) |
+| **TOTAL** | **~6,585** | — |
