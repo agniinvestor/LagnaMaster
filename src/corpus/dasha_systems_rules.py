@@ -243,7 +243,7 @@ _DASHA_RULES = [
             "Malefics in Jeeva sign = threats to life energy. "
             "Benefics in both = vitality and protection."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="BPHS Ch.51 v.25-36",
         tags=["dasha", "kalachakra", "deha_jeeva", "health", "life_force"],
         implemented=False,
@@ -278,7 +278,7 @@ _DASHA_RULES = [
             "Sequence from lagna lord's nakshatra. Used alongside Vimshottari for "
             "charts with strong mutual lagna-7th house connection (marriage-focused charts)."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="BPHS Ch.53 v.1-10",
         tags=["dasha", "dwisaptati", "72_years", "7th_lord_lagna", "8_years_each"],
         implemented=False,
@@ -295,7 +295,7 @@ _DASHA_RULES = [
             "Sign periods in Shatabdika: same as Kalachakra periods. "
             "Primarily used to pinpoint dangerous periods in longevity assessment."
         ),
-        confidence=0.77,
+        confidence=0.657,
         verse="BPHS Ch.54 v.1-8",
         tags=["dasha", "shatabdika", "100_years", "longevity", "navamsha"],
         implemented=False,
@@ -312,7 +312,7 @@ _DASHA_RULES = [
             "Career-focused dasha; used to time professional achievements. "
             "Strong 10th house = this dasha very relevant for timing career peaks."
         ),
-        confidence=0.77,
+        confidence=0.657,
         verse="BPHS Ch.55 v.1-8",
         tags=["dasha", "chaturashiti", "84_years", "10th_lord_10th", "career"],
         implemented=False,

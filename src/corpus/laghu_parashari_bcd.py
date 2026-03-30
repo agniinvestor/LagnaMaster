@@ -137,7 +137,7 @@ def _build_yogakaraka_rules() -> list[RuleRecord]:
                 "placement_value": [],
                 "for_lagna": lagna,
             }
-            odoms = []
+            odoms = ["career_status"]
         rules.append(RuleRecord(
             rule_id=rid,
             source="LaghuParashari",
@@ -145,7 +145,7 @@ def _build_yogakaraka_rules() -> list[RuleRecord]:
             school="parashari",
             category="yogakaraka",
             description=f"[LP — {lagna} lagna, yogakaraka section] {desc}",
-            confidence=0.70,
+            confidence=0.650,
             tags=tags,
             implemented=False,
             primary_condition=primary,
@@ -395,7 +395,7 @@ def _build_kendradhipati_rules() -> list[RuleRecord]:
             school="parashari",
             category="kendradhipati",
             description=f"[LP — {lagna} lagna, {planet}] {desc}",
-            confidence=0.68,
+            confidence=0.65,
             tags=tags,
             implemented=False,
             primary_condition=primary,
@@ -899,6 +899,7 @@ def _build_dasha_rules() -> list[RuleRecord]:
             tags=list(dict.fromkeys(tags)),
             implemented=False,
             primary_condition={
+                "planet": "house_lord",
                 "placement_type": "house_lordship_dasha",
                 "placement_value": houses,
                 "lordship_label": label,

@@ -111,7 +111,7 @@ _RULES = [
             "or competitive fields. Enemies ultimately defeated. Income "
             "from struggle or litigation."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.34 v.12-13",
         tags=["11th_lord", "6th_house", "service_gains", "dusthana"],
         implemented=False,
@@ -143,7 +143,7 @@ _RULES = [
             "occult, or inheritance. Unexpected financial windfalls. "
             "Elder siblings may face challenges."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.34 v.16-17",
         tags=["11th_lord", "8th_house", "sudden_gains", "dusthana"],
         implemented=False,
@@ -207,7 +207,7 @@ _RULES = [
             "spiritual pursuits, or charity. Gains through overseas networks. "
             "Elder siblings settle in foreign lands."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.34 v.24-25",
         tags=["11th_lord", "12th_house", "foreign_gains", "expenditure", "dusthana"],
         implemented=False,
@@ -225,7 +225,7 @@ _RULES = [
             "spiritual tendencies. Foreign residence or withdrawal likely. "
             "Expenses tied to identity and health."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.35 v.1-3",
         tags=["12th_lord", "1st_house", "isolation", "expenses", "dusthana"],
         implemented=False,
@@ -241,7 +241,7 @@ _RULES = [
             "carries hidden costs. Family wealth subject to losses. "
             "Income from secluded or foreign sources."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.35 v.4-5",
         tags=["12th_lord", "2nd_house", "wealth_loss", "dusthana"],
         implemented=False,
@@ -257,7 +257,7 @@ _RULES = [
             "spiritual paths. Communication with distant places. Short "
             "journeys end in isolation or foreign experiences."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.35 v.6-7",
         tags=["12th_lord", "3rd_house", "foreign_siblings"],
         implemented=False,
@@ -273,7 +273,7 @@ _RULES = [
             "Mother may settle abroad. Property in distant places. "
             "Emotional isolation at home."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.35 v.8-9",
         tags=["12th_lord", "4th_house", "foreign_home", "domestic_loss"],
         implemented=False,
@@ -289,7 +289,7 @@ _RULES = [
             "paths. Intelligence turned toward liberation. Speculative "
             "losses; creativity in isolation."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.35 v.10-11",
         tags=["12th_lord", "5th_house", "children_abroad", "spiritual_merit"],
         implemented=False,
@@ -321,7 +321,7 @@ _RULES = [
             "Losses through partnerships. Bed pleasures and foreign "
             "partnerships are significant."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.35 v.14-15",
         tags=["12th_lord", "7th_house", "foreign_spouse", "partnership_loss"],
         implemented=False,
@@ -353,7 +353,7 @@ _RULES = [
             "spiritual renunciation. Long pilgrimages to foreign holy sites. "
             "Moksha path through dharmic loss."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.35 v.18-19",
         tags=["12th_lord", "9th_house", "liberation", "pilgrimage", "trikona"],
         implemented=False,
@@ -369,7 +369,7 @@ _RULES = [
             "lands, spiritual institutions, or behind-the-scenes. "
             "Professional isolation or voluntary withdrawal."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.35 v.20-21",
         tags=["12th_lord", "10th_house", "foreign_career", "kendra"],
         implemented=False,
@@ -385,7 +385,7 @@ _RULES = [
             "networks, or charitable activities. Expenses through elder "
             "siblings. Income from secluded or foreign places."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.35 v.22-23",
         tags=["12th_lord", "11th_house", "foreign_gains", "expenditure"],
         implemented=False,

@@ -1396,7 +1396,7 @@ _RULES = [
             "sunrise and the Lagna nakshatra. When Pranapada coincides with a planet's nakshatra "
             "in transit → that planet's results intensify dramatically for that day."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Chandra Kala Nadi, Pranapada",
         tags=["ckn", "pranapada", "nakshatra", "transit", "daily_timing", "nadi"],
         implemented=False,

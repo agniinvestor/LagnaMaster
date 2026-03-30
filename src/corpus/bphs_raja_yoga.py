@@ -358,7 +358,7 @@ _RULES = [
             "lords meet, if they are natural malefics (Saturn, Mars) for a "
             "given lagna AND in mutual enmity, yoga quality is reduced."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.41 v.5-8",
         tags=["yoga", "raja_yoga", "malefic_reduction"],
         implemented=False,
@@ -406,7 +406,7 @@ _RULES = [
             "trikona lord (but not directly conjunct) forms a partial raja "
             "yoga — moderate rise and authority, not full."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.41 v.16-18",
         tags=["yoga", "raja_yoga", "partial", "aspect"],
         implemented=False,
@@ -422,7 +422,7 @@ _RULES = [
             "planet, Jaimini system) is involved in a raja yoga, the "
             "soul-level ambition powerfully manifests the yoga."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.41 v.19-21",
         tags=["yoga", "raja_yoga", "atma_karaka", "jaimini", "cross_school"],
         implemented=False,

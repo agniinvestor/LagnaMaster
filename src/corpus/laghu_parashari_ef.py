@@ -642,6 +642,7 @@ def _build_antardasha_rules() -> list[RuleRecord]:
         rid = f"LPA{idx:03d}"
         tags = ["lpa", "parashari", "laghu_parashari", "antardasha"] + extra_tags
         primary = {
+            "planet": "house_lord",
             "placement_type": "antardasha_combination",
             "md_type": md_type,
             "ad_type": ad_type,
@@ -653,7 +654,7 @@ def _build_antardasha_rules() -> list[RuleRecord]:
             school="parashari",
             category="antardasha_results",
             description=f"[LP antardasha — {md_type} MD + {ad_type} AD] {desc}",
-            confidence=0.63,
+            confidence=0.65,
             tags=list(dict.fromkeys(tags)),
             implemented=False,
             primary_condition=primary,
@@ -892,7 +893,7 @@ def _build_maraka_rules() -> list[RuleRecord]:
             school="parashari",
             category="maraka",
             description=f"[LP — {lagna} lagna, {planet} {maraka_type}] {desc}",
-            confidence=0.70,
+            confidence=0.650,
             tags=list(dict.fromkeys(tags)),
             implemented=False,
             primary_condition=primary,

@@ -1404,7 +1404,7 @@ _RULES = [
             "Jupiter in 5th = mixed, possibly twins. "
             "5th lord in male sign = male child first. "
             "5th lord in female sign = female child first.",
-        confidence=0.78, verse="SC Ch.6 v.23-32",
+        confidence=0.658, verse="SC Ch.6 v.23-32",
         tags=["sc", "children", "gender", "sun_mars_5th", "moon_venus_5th"],
         implemented=False,
     ),
@@ -1809,7 +1809,7 @@ _RULES = [
             "SC: Kedar natives are grounded, focused, agricultural or natural connection. "
             "Productive in fixed, tangible work. "
             "Often have concentration of energy in fewer life areas.",
-        confidence=0.78, verse="SC Ch.4 v.261-268",
+        confidence=0.658, verse="SC Ch.4 v.261-268",
         tags=["sc", "yoga", "kedar_yoga", "four_signs", "grounded", "productive"],
         implemented=False,
     ),
@@ -1820,7 +1820,7 @@ _RULES = [
             "SC: intense, penetrating, sharp-natured individuals. "
             "Often specialists in one area. "
             "Three angular positions = Shiva-like creative-destructive energy.",
-        confidence=0.78, verse="SC Ch.4 v.269-276",
+        confidence=0.658, verse="SC Ch.4 v.269-276",
         tags=["sc", "yoga", "shoola_yoga", "three_signs", "specialist", "intense"],
         implemented=False,
     ),
@@ -1831,7 +1831,7 @@ _RULES = [
             "SC: extreme concentration of energy. "
             "Very specialized, limited in scope but powerful in that domain. "
             "Often prodigies or extremists.",
-        confidence=0.78, verse="SC Ch.4 v.277-284",
+        confidence=0.658, verse="SC Ch.4 v.277-284",
         tags=["sc", "yoga", "yuga_yoga", "two_signs", "prodigy", "concentrated"],
         implemented=False,
     ),
@@ -1842,7 +1842,7 @@ _RULES = [
             "Extremely rare. All energy concentrated in one sign. "
             "SC: native has one consuming passion in life. "
             "Success or failure in that one domain determines entire life.",
-        confidence=0.78, verse="SC Ch.4 v.285-292",
+        confidence=0.658, verse="SC Ch.4 v.285-292",
         tags=["sc", "yoga", "gola_yoga", "one_sign", "consuming_passion", "rare"],
         implemented=False,
     ),

@@ -111,7 +111,7 @@ _RULES = [
             "troubles. Intelligence tested through competition. Speculative "
             "ventures suffer setbacks."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.28 v.12-13",
         tags=["5th_lord", "6th_house", "children_trouble", "dusthana"],
         implemented=False,
@@ -143,7 +143,7 @@ _RULES = [
             "hidden knowledge. Children fewer or facing difficulties. "
             "Speculative risks lead to sudden transformations."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.28 v.16-17",
         tags=["5th_lord", "8th_house", "occult_intelligence", "dusthana"],
         implemented=False,
@@ -207,7 +207,7 @@ _RULES = [
             "spiritual path. Intelligence turned toward liberation. "
             "Past-merit expressed through renunciation."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.28 v.24-25",
         tags=["5th_lord", "12th_house", "liberation", "children_abroad", "dusthana"],
         implemented=False,
@@ -241,7 +241,7 @@ _RULES = [
             "Debt or litigation affects family finances. Enemies attempt to "
             "disrupt speech or income."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.29 v.4-5",
         tags=["6th_lord", "2nd_house", "service_wealth", "debt"],
         implemented=False,
@@ -257,7 +257,7 @@ _RULES = [
             "Communication used in competitive contexts. Short journeys "
             "involve dispute or difficulty."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.29 v.6-7",
         tags=["6th_lord", "3rd_house", "siblings_dispute"],
         implemented=False,
@@ -273,7 +273,7 @@ _RULES = [
             "mother's health affected. Vehicles prone to accidents or damage. "
             "Home may become a source of stress."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.29 v.8-9",
         tags=["6th_lord", "4th_house", "property_dispute", "mother_health"],
         implemented=False,
@@ -289,7 +289,7 @@ _RULES = [
             "Intelligence applied to competitive pursuits. Speculative "
             "ventures involve high risk."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.29 v.10-11",
         tags=["6th_lord", "5th_house", "children_health"],
         implemented=False,
@@ -321,7 +321,7 @@ _RULES = [
             "partnerships. Litigation in business. Marriage may involve "
             "legal complications."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.29 v.14-15",
         tags=["6th_lord", "7th_house", "spouse_health", "partnership_dispute"],
         implemented=False,
@@ -353,7 +353,7 @@ _RULES = [
             "Father faces health challenges. Long journeys involve hardship. "
             "Service performed as religious duty."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.29 v.18-19",
         tags=["6th_lord", "9th_house", "dharma_challenge", "father_health"],
         implemented=False,

@@ -78,7 +78,7 @@ _RULES = [
             "since sunrise. Indicates the native's material prosperity and "
             "fortune from a temporal perspective."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.57 v.12-14",
         tags=["special_lagna", "bhava_lagna", "temporal", "prosperity"],
         implemented=False,
@@ -94,7 +94,7 @@ _RULES = [
             "Used for wealth analysis; benefics in kendra from Hora Lagna "
             "indicate strong financial outcomes."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.57 v.15-17",
         tags=["special_lagna", "hora_lagna", "wealth"],
         implemented=False,
@@ -110,7 +110,7 @@ _RULES = [
             "Planets in kendra from Ghati Lagna give political power, "
             "administrative authority, and dominance."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.57 v.18-20",
         tags=["special_lagna", "ghati_lagna", "power", "authority"],
         implemented=False,
@@ -174,7 +174,7 @@ _RULES = [
             "public image of the spouse and how partnerships appear to others. "
             "A7 with benefics = popular, well-regarded partner."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.58 v.13-15",
         tags=["special_lagna", "darapada", "a7", "partner_image"],
         implemented=False,
@@ -190,7 +190,7 @@ _RULES = [
             "and mother are perceived publicly. Strong A4 = visible domestic "
             "happiness and social comfort."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.59 v.1-3",
         tags=["special_lagna", "matru_pada", "a4", "home_image"],
         implemented=False,
@@ -206,7 +206,7 @@ _RULES = [
             "children and creative works. Strong A5 = well-known children "
             "or famous creative output."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.59 v.4-6",
         tags=["special_lagna", "putrapada", "a5", "children_image"],
         implemented=False,
@@ -238,7 +238,7 @@ _RULES = [
             "longitude in the day/night chart. Benefics in kendra from "
             "Shree Lagna give exceptional material prosperity."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.59 v.10-12",
         tags=["special_lagna", "shree_lagna", "wealth"],
         implemented=False,
@@ -254,7 +254,7 @@ _RULES = [
             "health analysis; afflictions to Prana Lagna correlate with "
             "specific health vulnerabilities."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.60 v.1-3",
         tags=["special_lagna", "prana_lagna", "health", "vitality"],
         implemented=False,
@@ -270,7 +270,7 @@ _RULES = [
             "Connects to birth lagna for double confirmation of physical "
             "health themes."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.60 v.4-6",
         tags=["special_lagna", "deha_lagna", "body", "health"],
         implemented=False,
@@ -334,7 +334,7 @@ _RULES = [
             "Planets in kendra from Varnada give social recognition and "
             "professional position matching birth background."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.60 v.16-18",
         tags=["special_lagna", "varnada_lagna", "social_status"],
         implemented=False,

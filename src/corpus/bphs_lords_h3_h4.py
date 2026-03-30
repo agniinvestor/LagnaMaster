@@ -143,7 +143,7 @@ _RULES = [
             "short life. Courage faces hidden obstacles. Occult writing "
             "or research is possible."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.26 v.16-17",
         tags=["3rd_lord", "8th_house", "siblings_health", "dusthana"],
         implemented=False,
@@ -207,7 +207,7 @@ _RULES = [
             "face isolation. Short travels end in distant or spiritual places. "
             "Courage used for liberation."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.26 v.24-25",
         tags=["3rd_lord", "12th_house", "foreign", "dusthana"],
         implemented=False,
@@ -337,7 +337,7 @@ _RULES = [
             "instability, property subject to loss or hidden encumbrances. "
             "Emotional transformation through crisis."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.27 v.16-17",
         tags=["4th_lord", "8th_house", "mother_health", "property_loss", "dusthana"],
         implemented=False,
@@ -401,7 +401,7 @@ _RULES = [
             "residence. Mother settles abroad or in ashram. Property in "
             "distant places; comfort through solitude."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.27 v.24-25",
         tags=["4th_lord", "12th_house", "foreign_home", "dusthana"],
         implemented=False,

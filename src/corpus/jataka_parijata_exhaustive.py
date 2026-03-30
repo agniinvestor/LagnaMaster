@@ -1876,7 +1876,7 @@ _RULES = [
             "Sun in 5th, Saturn in 6th, Mars in 7th = Vallaki (lute) yoga. "
             "Extremely rare. Native is a musician or associated with divine arts. "
             "Celebrated for melodious speech and artistic ability.",
-        confidence=0.78, verse="JP Ch.6 v.205-214",
+        confidence=0.658, verse="JP Ch.6 v.205-214",
         tags=["jp", "yoga", "vallaki_yoga", "music", "arts", "rare"],
         implemented=False,
     ),

@@ -1659,7 +1659,7 @@ _RULES = [
             "Starts from Lagna, skips alternating signs. "
             "Used for timing of events that occur in leaps (sudden opportunities)."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Jaimini Sutras 4.1.1",
         tags=["jmx", "mandooka_dasha", "dasha", "timing", "jaimini"],
         implemented=False,
@@ -1675,7 +1675,7 @@ _RULES = [
             "Used specifically for examining fortuna and dharmic life arc. "
             "Each trikona sign = 1/3 of total life arc for that trinal theme."
         ),
-        confidence=0.77,
+        confidence=0.657,
         verse="Jaimini Sutras 4.1.5",
         tags=["jmx", "trikona_dasha", "dasha", "dharma", "timing", "jaimini"],
         implemented=False,
@@ -1691,7 +1691,7 @@ _RULES = [
             "is in 7th from Lagna or vice versa. 9 planets, 8 years each = 72 total. "
             "Used as alternative to Vimshottari in specific charts."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Jaimini Sutras 4.2.1",
         tags=["jmx", "dwisaptati_dasha", "dasha", "72_years", "jaimini"],
         implemented=False,
@@ -1707,7 +1707,7 @@ _RULES = [
             "Each sage corresponds to a nakshatra cluster. Used for spiritual timing. "
             "Rare system mentioned in commentaries by Raghava Bhatta."
         ),
-        confidence=0.72,
+        confidence=0.652,
         verse="Jaimini Sutras 4.2.5",
         tags=["jmx", "saptarishi_dasha", "dasha", "nakshatras", "spiritual", "jaimini"],
         implemented=False,
@@ -1835,7 +1835,7 @@ _RULES = [
             "when Sun returns to its natal degree within the natal tithi. "
             "Used as yearly timing chart in some Jaimini traditions."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Jaimini Sutras 4.5.5",
         tags=["jmx", "tithi_pravesh", "annual_chart", "timing", "jaimini"],
         implemented=False,

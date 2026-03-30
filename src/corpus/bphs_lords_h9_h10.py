@@ -111,7 +111,7 @@ _RULES = [
             "enmity. Father faces challenges. Long journeys involve hardship. "
             "Karma confronts obstacles before fortune manifests."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.32 v.12-13",
         tags=["9th_lord", "6th_house", "dharma_tested", "dusthana"],
         implemented=False,
@@ -143,7 +143,7 @@ _RULES = [
             "confronted by hidden obstacles. Long journeys involve danger. "
             "Occult or esoteric philosophical path."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.32 v.16-17",
         tags=["9th_lord", "8th_house", "father_longevity", "dusthana"],
         implemented=False,
@@ -305,7 +305,7 @@ _RULES = [
             "enemies or litigation. Service in competitive fields. Authority "
             "in medicine, military, or law."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.33 v.12-13",
         tags=["10th_lord", "6th_house", "service_career", "dusthana"],
         implemented=False,
@@ -337,7 +337,7 @@ _RULES = [
             "sudden professional changes. Occult or research-based career. "
             "Authority in matters of legacy or transformation."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.33 v.16-17",
         tags=["10th_lord", "8th_house", "career_disruption", "dusthana"],
         implemented=False,
@@ -401,7 +401,7 @@ _RULES = [
             "lands, spiritual institutions, or behind-the-scenes work. "
             "Professional isolation or voluntary withdrawal."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.33 v.24-25",
         tags=["10th_lord", "12th_house", "foreign_career", "dusthana"],
         implemented=False,

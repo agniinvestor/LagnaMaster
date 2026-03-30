@@ -80,7 +80,7 @@ _RULES = [
             "dusthana has minimal negative impact on positive houses. "
             "The debilitation harms dusthana themes instead."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.45 v.10-12",
         tags=["dignity", "debilitation", "dusthana"],
         implemented=False,

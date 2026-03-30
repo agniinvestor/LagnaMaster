@@ -1484,7 +1484,7 @@ _RULES = [
         description="Pakshi Yoga (Bird full): All planets in two houses only in one half of zodiac. "
             "Native is expert in trade and commerce, clever, and has few children. "
             "Focused but narrow life area.",
-        confidence=0.78, verse="BPHS Ch.52 v.5-8",
+        confidence=0.658, verse="BPHS Ch.52 v.5-8",
         tags=["yoga", "pakshi", "2_houses_only", "trade", "clever"],
         implemented=False,
     ),

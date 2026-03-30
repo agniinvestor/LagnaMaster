@@ -489,7 +489,7 @@ _RULES = [
             "the native faces severe hardship until all 3+ debts are identified and addressed. "
             "Priority order: Pitru Rin > Matru Rin > others."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="Lal Kitab 1942 Ed., Rin Chapter",
         tags=["lkx", "rin_karma", "cascade", "multiple_debts", "lal_kitab"],
         implemented=False,
@@ -1299,7 +1299,7 @@ _RULES = [
             "2nd house → age 12-24. 3rd house → age 24-36. 4th house → age 36-48. "
             "Each house activates for 12-year periods in sequence."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Lal Kitab 1942 Ed., House Timing",
         tags=["lkx", "timing", "houses", "age", "activation", "lal_kitab"],
         implemented=False,
@@ -1316,7 +1316,7 @@ _RULES = [
             "that house's planet and significations are activated. "
             "Afflicted house in that year → problems in that year."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Lal Kitab 1943 Ed., Annual Prediction",
         tags=["lkx", "timing", "annual", "varshaphala", "lal_kitab"],
         implemented=False,
@@ -1399,7 +1399,7 @@ _RULES = [
             "7th → silver/white, 8th → black, 9th → golden, 10th → blue, "
             "11th → mixed, 12th → white/pink."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Lal Kitab 1952 Ed., Color Chapter",
         tags=["lkx", "colors", "houses", "remedy", "lal_kitab"],
         implemented=False,
@@ -1415,7 +1415,7 @@ _RULES = [
             "Rahu=4, Mercury=5, Venus=6, Ketu=7, Saturn=8, Mars=9. "
             "House number and planet number matching → direct results."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="Lal Kitab 1943 Ed., Number System",
         tags=["lkx", "numbers", "planets", "houses", "numerology", "lal_kitab"],
         implemented=False,
@@ -1447,7 +1447,7 @@ _RULES = [
             "find what planet afflicted that planet first — that is the root cause. "
             "Remedy the root cause planet, not just the symptom planet."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Lal Kitab 1943 Ed., Root Cause",
         tags=["lkx", "root_cause", "karan_ka_kaaran", "remedy", "lal_kitab"],
         implemented=False,
@@ -1463,7 +1463,7 @@ _RULES = [
             "Jupiter sleeps in 3rd house. Venus sleeps in 6th house. Moon sleeps in 8th. "
             "A sleeping planet gives no results until awakened by remedy."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="Lal Kitab 1943 Ed., Sleeping Planets",
         tags=["lkx", "sleeping_planet", "neend", "delayed_results", "lal_kitab"],
         implemented=False,
@@ -1707,7 +1707,7 @@ _RULES = [
             "The remedy is personal and loses power if disclosed or replicated by others. "
             "This maintains the remedy's karmic specificity to the native."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Lal Kitab 1952 Ed., Remedy Secrecy",
         tags=["lkx", "remedy", "secrecy", "personal", "karma", "lal_kitab"],
         implemented=False,

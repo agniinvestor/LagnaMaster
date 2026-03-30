@@ -278,7 +278,7 @@ _RULES = [
             "learned, lazy (but intellectually capable), moderate wealth. "
             "Complements Vesi."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.38 v.18-20",
         tags=["yoga", "sun_based", "vosi"],
         implemented=False,
@@ -422,7 +422,7 @@ _RULES = [
             "(bhavat bhavam connection). Strengthens both home and career "
             "simultaneously. Authority in domestic or real-estate fields."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.38 v.46-48",
         tags=["yoga", "4th_lord", "10th_lord", "bhavat_bhavam"],
         implemented=False,

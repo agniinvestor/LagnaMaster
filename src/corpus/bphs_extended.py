@@ -427,7 +427,7 @@ _BPHS_RULES = [
             "(strong 8th) or serious health challenges depending on dignity. "
             "Mixed results depending on school interpretation."
         ),
-        confidence=0.75,
+        confidence=0.655,
         tags=["8th_lord", "8th_house", "longevity", "transformation"],
         implemented=False,
     ),

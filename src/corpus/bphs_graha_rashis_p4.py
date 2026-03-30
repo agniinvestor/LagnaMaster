@@ -252,7 +252,7 @@ _RAHU_IN_RASHIS = [
             "Strong accumulation drive; possible obsessive relationship "
             "with wealth and beauty."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Ch.45 v.3-4",
         tags=["rahu_in_rashi", "taurus", "exaltation_debated", "material", "wealth", "desire"],
         implemented=False,
@@ -284,7 +284,7 @@ _RAHU_IN_RASHIS = [
             "obsessive nurturing or abandonment themes. Mother relationship "
             "complex or foreign. Deep psychological transformation through family."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="Ch.45 v.7-8",
         tags=["rahu_in_rashi", "cancer", "emotional", "family", "mother", "psychology"],
         implemented=False,
@@ -300,7 +300,7 @@ _RAHU_IN_RASHIS = [
             "Foreign or non-traditional leadership. Fame through unusual means. "
             "Can generate magnetic charisma or arrogant self-promotion."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="Ch.45 v.9-10",
         tags=["rahu_in_rashi", "leo", "fame", "authority", "charisma", "unconventional"],
         implemented=False,
@@ -316,7 +316,7 @@ _RAHU_IN_RASHIS = [
             "compulsive analysis. Foreign medicine or unusual service. "
             "Technology and data analysis. Perfectionist anxiety."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="Ch.45 v.11-12",
         tags=["rahu_in_rashi", "virgo", "analysis", "healing", "technology", "obsessive"],
         implemented=False,
@@ -333,7 +333,7 @@ _RAHU_IN_RASHIS = [
             "Foreign spouse or business partners. Social manipulation possible; "
             "also diplomatic innovation."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Ch.45 v.13-14",
         tags=["rahu_in_rashi", "libra", "exaltation_debated", "partnership", "foreign", "social"],
         implemented=False,
@@ -365,7 +365,7 @@ _RAHU_IN_RASHIS = [
             "religion, foreign teachers. Intense pursuit of higher knowledge. "
             "Pseudo-guru tendencies possible; also genuine spiritual quest."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="Ch.45 v.17-18",
         tags=["rahu_in_rashi", "sagittarius", "philosophy", "foreign_teacher", "spiritual"],
         implemented=False,
@@ -381,7 +381,7 @@ _RAHU_IN_RASHIS = [
             "professional path. Foreign corporations or government. "
             "Obsessive work ethic; unconventional rise to authority."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="Ch.45 v.19-20",
         tags=["rahu_in_rashi", "capricorn", "career", "ambition", "foreign", "government"],
         implemented=False,
@@ -398,7 +398,7 @@ _RAHU_IN_RASHIS = [
             "Social media, mass movements, science. Humanitarian goals "
             "pursued through unusual means."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Ch.45 v.21-22",
         tags=["rahu_in_rashi", "aquarius", "technology", "innovation", "social_movement"],
         implemented=False,
@@ -415,7 +415,7 @@ _RAHU_IN_RASHIS = [
             "sensitivity. Possible deception in spiritual matters or "
             "extraordinary spiritual attainment."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Ch.45 v.23-24",
         tags=["rahu_in_rashi", "pisces", "spiritual", "mysticism", "dissolution"],
         implemented=False,
@@ -434,7 +434,7 @@ _KETU_IN_RASHIS = [
             "personal initiatives in this life. Spiritual courage; may lack "
             "self-assertion. Moksha through selfless action."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Ch.46 v.1-2",
         tags=["ketu_in_rashi", "aries", "past_life", "detachment", "moksha"],
         implemented=False,
@@ -450,7 +450,7 @@ _KETU_IN_RASHIS = [
             "detachment from material comfort and sensory pleasure. "
             "Past life wealth now surrendered. Spiritual value over material value."
         ),
-        confidence=0.76,
+        confidence=0.656,
         verse="Ch.46 v.3-4",
         tags=["ketu_in_rashi", "taurus", "detachment", "material_renunciation", "spiritual"],
         implemented=False,
@@ -466,7 +466,7 @@ _KETU_IN_RASHIS = [
             "lifetime of communication mastery. Deeper silence over words. "
             "Spiritual insight through transcending mental chatter."
         ),
-        confidence=0.77,
+        confidence=0.657,
         verse="Ch.46 v.5-6",
         tags=["ketu_in_rashi", "gemini", "detachment", "silence", "past_life_intellect"],
         implemented=False,
@@ -482,7 +482,7 @@ _KETU_IN_RASHIS = [
             "Past-life nurturing now renounced. Spiritual home-seeking. "
             "May feel emotionally homeless; transcendence through compassion."
         ),
-        confidence=0.77,
+        confidence=0.657,
         verse="Ch.46 v.7-8",
         tags=["ketu_in_rashi", "cancer", "detachment", "mother", "emotional_release"],
         implemented=False,
@@ -498,7 +498,7 @@ _KETU_IN_RASHIS = [
             "or leadership mastery now surrendered. Spiritual humility. "
             "Fame may come unexpectedly but is not sought."
         ),
-        confidence=0.77,
+        confidence=0.657,
         verse="Ch.46 v.9-10",
         tags=["ketu_in_rashi", "leo", "ego_detachment", "humility", "past_life_authority"],
         implemented=False,
@@ -515,7 +515,7 @@ _KETU_IN_RASHIS = [
             "Spiritual discrimination; selfless healing or craft. "
             "Detachment from perfectionism enables deeper wisdom."
         ),
-        confidence=0.77,
+        confidence=0.657,
         verse="Ch.46 v.11-12",
         tags=["ketu_in_rashi", "virgo", "exaltation_debated", "healing", "discrimination", "service"],
         implemented=False,
@@ -532,7 +532,7 @@ _KETU_IN_RASHIS = [
             "partnership mastery; solitary path in this life. "
             "Spiritual through aloneness."
         ),
-        confidence=0.76,
+        confidence=0.656,
         verse="Ch.46 v.13-14",
         tags=["ketu_in_rashi", "libra", "debilitation_debated", "detachment", "solitary"],
         implemented=False,
@@ -549,7 +549,7 @@ _KETU_IN_RASHIS = [
             "Natural psychic ability; detachment from death-fear. "
             "Powerful moksha indicator."
         ),
-        confidence=0.79,
+        confidence=0.659,
         verse="Ch.46 v.15-16",
         tags=["ketu_in_rashi", "scorpio", "moksha", "occult", "psychic", "liberation"],
         implemented=False,
@@ -565,7 +565,7 @@ _KETU_IN_RASHIS = [
             "inner spiritual quest over external rituals. Past-life philosophical "
             "mastery. Direct experience of truth over textbook knowledge."
         ),
-        confidence=0.78,
+        confidence=0.658,
         verse="Ch.46 v.17-18",
         tags=["ketu_in_rashi", "sagittarius", "spiritual_quest", "anti_dogma", "past_life_philosophy"],
         implemented=False,
@@ -581,7 +581,7 @@ _KETU_IN_RASHIS = [
             "status. Past-life professional mastery; this life points toward "
             "spiritual work. Service without recognition."
         ),
-        confidence=0.77,
+        confidence=0.657,
         verse="Ch.46 v.19-20",
         tags=["ketu_in_rashi", "capricorn", "career_detachment", "spiritual_service"],
         implemented=False,
@@ -597,7 +597,7 @@ _KETU_IN_RASHIS = [
             "Past-life humanitarian mastery. Individual spiritual path over "
             "collective movements. Inner freedom over social belonging."
         ),
-        confidence=0.76,
+        confidence=0.656,
         verse="Ch.46 v.21-22",
         tags=["ketu_in_rashi", "aquarius", "group_detachment", "individual_path", "inner_freedom"],
         implemented=False,

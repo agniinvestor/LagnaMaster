@@ -560,7 +560,7 @@ _RULES = [
         description="Upaketu: Indrachapa + 16°40' = Upaketu (Ketu's secondary). "
             "Similar effects to Ketu — separation, spiritual tendencies. "
             "Upaketu conjunct natal Moon = emotional detachment or spiritual awakening.",
-        confidence=0.78, verse="UK Ch.7 v.17-20",
+        confidence=0.658, verse="UK Ch.7 v.17-20",
         tags=["uk", "upagraha", "upaketu", "separation", "spiritual"],
         implemented=False,
     ),
@@ -1309,7 +1309,7 @@ _RULES = [
             "Each nadiamsha = 12 minutes of arc. "
             "Used when birth time is uncertain within 1-2 hours. "
             "The AK planet's nadiamsha reflects exact birth moment.",
-        confidence=0.78, verse="UK Ch.20 v.9-16",
+        confidence=0.658, verse="UK Ch.20 v.9-16",
         tags=["uk", "rectification", "nadiamsha", "d150", "precision"],
         implemented=False,
     ),

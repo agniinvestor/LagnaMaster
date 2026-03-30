@@ -162,7 +162,7 @@ _RULES = [
             "houses brings fluctuating but ultimately supportive wealth. "
             "Income through trade, public, or maternal sources."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.42 v.26-28",
         tags=["yoga", "dhana_yoga", "moon", "2nd_house", "11th_house"],
         implemented=False,
@@ -180,7 +180,7 @@ _RULES = [
             "lagna based on 9th lord from lagna + 9th lord from Moon). "
             "Planets in kendra from Indu Lagna bring wealth."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.43 v.1-5",
         tags=["yoga", "dhana_yoga", "indu_lagna", "wealth_lagna"],
         implemented=False,
@@ -342,7 +342,7 @@ _RULES = [
             "strength; wealth house lord unable to protect treasury. "
             "Financial setbacks during Sun periods."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.44 v.12-14",
         tags=["yoga", "arishta", "combust", "2nd_lord", "wealth_reduction"],
         implemented=False,
@@ -390,7 +390,7 @@ _RULES = [
             "aspecting. Wealth through arts, fashion, beauty, trade, or "
             "maternal sources."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.44 v.21-23",
         tags=["yoga", "dhana_yoga", "moon", "venus", "chandra_shukra"],
         implemented=False,
@@ -422,7 +422,7 @@ _RULES = [
             "faces ups and downs, wheel of fortune. Prosperity comes and "
             "goes; emotional instability affects wealth."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.44 v.27-29",
         tags=["yoga", "moon", "jupiter", "shakata", "fluctuating_wealth"],
         implemented=False,

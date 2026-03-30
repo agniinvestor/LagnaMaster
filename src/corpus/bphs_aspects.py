@@ -303,7 +303,7 @@ _RULES = [
             "about specific planet energy; rashi (sign) aspects reflect the "
             "natural sign relationships used in Jaimini analysis."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.50 v.15-17",
         tags=["aspect", "graha_drishti", "rashi_drishti", "jaimini"],
         implemented=False,

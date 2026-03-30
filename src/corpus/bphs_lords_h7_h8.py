@@ -111,7 +111,7 @@ _RULES = [
             "partnerships. Spouse may face health challenges. Business "
             "partnerships involve conflicts."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.30 v.12-13",
         tags=["7th_lord", "6th_house", "marital_discord", "dusthana"],
         implemented=False,
@@ -143,7 +143,7 @@ _RULES = [
             "hidden challenges in partnerships. Sudden changes in marriage. "
             "Occult or transformative relationship."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.30 v.16-17",
         tags=["7th_lord", "8th_house", "spouse_longevity", "dusthana"],
         implemented=False,
@@ -207,7 +207,7 @@ _RULES = [
             "institutions. Foreign partnerships. Bed pleasures, liberation "
             "themes in marriage."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.30 v.24-25",
         tags=["7th_lord", "12th_house", "foreign_spouse", "dusthana"],
         implemented=False,
@@ -225,7 +225,7 @@ _RULES = [
             "chronic ailments, interest in occult. Transformative experiences "
             "define personality. Longevity ambiguous."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.31 v.1-3",
         tags=["8th_lord", "1st_house", "health", "occult", "dusthana"],
         implemented=False,
@@ -241,7 +241,7 @@ _RULES = [
             "inheritance disputes. Speech affected by hidden tensions. "
             "Wealth through legacy, occult, or taboo trades."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.31 v.4-5",
         tags=["8th_lord", "2nd_house", "legacy_wealth", "family_disruption"],
         implemented=False,
@@ -257,7 +257,7 @@ _RULES = [
             "Courage tested through hidden dangers. Writing about occult or "
             "research subjects."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.31 v.6-7",
         tags=["8th_lord", "3rd_house", "siblings_longevity"],
         implemented=False,
@@ -273,7 +273,7 @@ _RULES = [
             "property subject to hidden encumbrances. Sudden changes in home. "
             "Emotional transformation through family crises."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.31 v.8-9",
         tags=["8th_lord", "4th_house", "mother_longevity", "property_issues"],
         implemented=False,
@@ -289,7 +289,7 @@ _RULES = [
             "concerns. Intelligence drawn to taboo or hidden subjects. "
             "Speculation involves high risk."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.31 v.10-11",
         tags=["8th_lord", "5th_house", "children_longevity", "occult"],
         implemented=False,
@@ -321,7 +321,7 @@ _RULES = [
             "changes in marriage. Occult or hidden aspects to partnerships. "
             "Transformative marital experiences."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.31 v.14-15",
         tags=["8th_lord", "7th_house", "spouse_longevity"],
         implemented=False,
@@ -353,7 +353,7 @@ _RULES = [
             "challenged. Dharma confronts hidden obstacles. Long journeys "
             "involve dangers. Research into dharmic or occult subjects."
         ),
-        confidence=0.7,
+        confidence=0.65,
         verse="Ch.31 v.18-19",
         tags=["8th_lord", "9th_house", "father_longevity", "dusthana"],
         implemented=False,
@@ -369,7 +369,7 @@ _RULES = [
             "hidden services. Professional transformation through crises. "
             "Authority in matters of death, inheritance, or legacy."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.31 v.20-21",
         tags=["8th_lord", "10th_house", "research_career", "kendra"],
         implemented=False,
@@ -385,7 +385,7 @@ _RULES = [
             "occult practice. Elder siblings may face challenges. Unexpected "
             "financial windfalls and losses alternate."
         ),
-        confidence=0.75,
+        confidence=0.655,
         verse="Ch.31 v.22-23",
         tags=["8th_lord", "11th_house", "sudden_gains", "legacy"],
         implemented=False,
