@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **2491 passing, 3 skipped, 0 lint errors, CI green**
+- **2501 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -113,7 +113,8 @@ When in doubt, read that file to reconstruct state.
 - **Sessions 281-284:** Saravali Signs Sun/Moon/Mars/Mercury — SAV1041-1560; corpus 5247; 2477 tests
 - **Sessions 285-288:** Saravali Signs Jupiter/Venus/Saturn/Rahu-Ketu — SAV1561-2132; corpus 5819; 2482 tests — **Block B COMPLETE (1092 actual)**
 - **Sessions 289-296:** Saravali Houses all planets — SAV2133-2628; corpus 6315; 2491 tests — **Block C COMPLETE (496 actual)**
-- **Next session:** S297
+- **Sessions 297-305:** Saravali Special Topics — SAV2629-2898; corpus 6585; 2501 tests — **SARAVALI COMPLETE (2898 rules, all 68 chapters)**
+- **Next session:** S306
 
 ---
 

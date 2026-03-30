@@ -1411,3 +1411,31 @@ Eight planet-in-house modules at exhaustive depth (496 rules total):
 
 ### Next session
 S297 — Block D: Special Topics
+---
+
+## S297–S305 — 2026-03-30 — Saravali Block D Complete: Special Topics (SARAVALI COMPLETE)
+
+**Tests:** 2501 passing, 3 skipped, 0 lint errors
+
+### What was built
+Nine special topic modules (270 rules total):
+- D1 (S297): Planet natures, signs, houses — 45 rules (Ch.1-5)
+- D2 (S298): Longevity, Arishta, Ayurdaya — 32 rules (Ch.6-8)
+- D3 (S299): Raja Yogas, Ava Yogas — 30 rules (Ch.9-10)
+- D4 (S300): Nabhasa/Solar/Lunar/Chandra Yogas — 38 rules (Ch.11-14)
+- D5 (S301): Bhava effects detailed — 30 rules (Ch.43-48)
+- D6 (S302): Female horoscopy, Marriage, Progeny — 28 rules (Ch.49-53)
+- D7 (S303): Dasha results, AV, Transits — 23 rules (Ch.54-60)
+- D8 (S304): Death, Lost horoscopy, Drekkana — 20 rules (Ch.61-65)
+- D9 (S305): Nimitta, Planetary war, Summary — 24 rules (Ch.66-68)
+
+**SARAVALI COMPLETE:** 2,898 total rules across all 68 chapters
+  - Block A (Conjunctions): 1,040 rules
+  - Block B (Planet-in-Sign): 1,092 rules
+  - Block C (Planet-in-House): 496 rules
+  - Block D (Special Topics): 270 rules
+
+**Corpus:** 6,585 rules
+
+### Next session
+S306 — Chamatkara Chintamani

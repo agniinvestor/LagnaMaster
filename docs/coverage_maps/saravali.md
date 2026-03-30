@@ -63,16 +63,16 @@ Each planet placed in each of 12 houses (bhava) with outcomes.
 
 | Section | Chapters | Topic | Est. Rules | Session | Status |
 |---------|----------|-------|-----------|---------|--------|
-| D1 | Ch.1–5 | Planet natures, signs, houses, basics | ~100 | S297 | 🔲 |
-| D2 | Ch.6–8 | Longevity, Arishta (infant death), Ayurdaya | ~130 | S298 | 🔲 |
-| D3 | Ch.9–10 | Raja Yogas, Ava Yogas | ~130 | S299 | 🔲 |
-| D4 | Ch.11–14 | Nabhasa Yogas, Solar/Lunar Yogas, Chandra Yogas | ~130 | S300 | 🔲 |
-| D5 | Ch.43–48 | Effects of Bhavas (detailed house results) | ~130 | S301 | 🔲 |
-| D6 | Ch.49–53 | Female horoscopy, Marriage, Progeny | ~120 | S302 | 🔲 |
-| D7 | Ch.54–60 | Dasha results, Ashtakavarga, Transits | ~130 | S303 | 🔲 |
-| D8 | Ch.61–65 | Death circumstances, Lost horoscopy, Drekkana | ~100 | S304 | 🔲 |
-| D9 | Ch.66–68 | Misc: Nimitta (omens), Planetary war, Summary | ~90 | S305 | 🔲 |
-| **TOTAL D** | | | **~960** | **S297–S305** | **0/960** |
+| D1 | Ch.1–5 | Planet natures, signs, houses, basics | 45 | S297 | ✅ |
+| D2 | Ch.6–8 | Longevity, Arishta, Ayurdaya | 32 | S298 | ✅ |
+| D3 | Ch.9–10 | Raja Yogas, Ava Yogas | 30 | S299 | ✅ |
+| D4 | Ch.11–14 | Nabhasa/Solar/Lunar/Chandra Yogas | 38 | S300 | ✅ |
+| D5 | Ch.43–48 | Bhava effects detailed | 30 | S301 | ✅ |
+| D6 | Ch.49–53 | Female horoscopy, Marriage, Progeny | 28 | S302 | ✅ |
+| D7 | Ch.54–60 | Dasha results, AV, Transits | 23 | S303 | ✅ |
+| D8 | Ch.61–65 | Death, Lost horoscopy, Drekkana | 20 | S304 | ✅ |
+| D9 | Ch.66–68 | Nimitta, Planetary war, Summary | 24 | S305 | ✅ |
+| **TOTAL D** | | | **270** | **S297–S305** | **270/270 ✅** |
 
 ---
 
@@ -83,5 +83,5 @@ Each planet placed in each of 12 houses (bhava) with outcomes.
 | A — Conjunctions | S273–S280 | ~1,040 | 1040/1040 ✅ |
 | B — Planet-in-Sign | S281–S288 | 1,092 | 1092/1092 ✅ |
 | C — Planet-in-House | S289–S296 | 496 | 496/496 ✅ |
-| D — Special Topics | S297–S305 | ~960 | 0/960 |
-| **TOTAL** | **S273–S305** | **~4,100** | **2628/4100** |
+| D — Special Topics | S297–S305 | 270 | 270/270 ✅ |
+| **TOTAL** | **S273–S305** | **2,898** | **2898/2898 ✅** |

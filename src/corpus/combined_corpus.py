@@ -142,6 +142,15 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.saravali_houses_6 import SARAVALI_HOUSES_6_REGISTRY  # S294
     from src.corpus.saravali_houses_7 import SARAVALI_HOUSES_7_REGISTRY  # S295
     from src.corpus.saravali_houses_8 import SARAVALI_HOUSES_8_REGISTRY  # S296
+    from src.corpus.saravali_special_1 import SARAVALI_SPECIAL_1_REGISTRY  # S297
+    from src.corpus.saravali_special_2 import SARAVALI_SPECIAL_2_REGISTRY  # S298
+    from src.corpus.saravali_special_3 import SARAVALI_SPECIAL_3_REGISTRY  # S299
+    from src.corpus.saravali_special_4 import SARAVALI_SPECIAL_4_REGISTRY  # S300
+    from src.corpus.saravali_special_5 import SARAVALI_SPECIAL_5_REGISTRY  # S301
+    from src.corpus.saravali_special_6 import SARAVALI_SPECIAL_6_REGISTRY  # S302
+    from src.corpus.saravali_special_7 import SARAVALI_SPECIAL_7_REGISTRY  # S303
+    from src.corpus.saravali_special_8 import SARAVALI_SPECIAL_8_REGISTRY  # S304
+    from src.corpus.saravali_special_9 import SARAVALI_SPECIAL_9_REGISTRY  # S305
 
     registry = CorpusRegistry()
     sources = [
@@ -237,6 +246,15 @@ def build_corpus() -> CorpusRegistry:
         SARAVALI_HOUSES_6_REGISTRY,
         SARAVALI_HOUSES_7_REGISTRY,
         SARAVALI_HOUSES_8_REGISTRY,
+        SARAVALI_SPECIAL_1_REGISTRY,
+        SARAVALI_SPECIAL_2_REGISTRY,
+        SARAVALI_SPECIAL_3_REGISTRY,
+        SARAVALI_SPECIAL_4_REGISTRY,
+        SARAVALI_SPECIAL_5_REGISTRY,
+        SARAVALI_SPECIAL_6_REGISTRY,
+        SARAVALI_SPECIAL_7_REGISTRY,
+        SARAVALI_SPECIAL_8_REGISTRY,
+        SARAVALI_SPECIAL_9_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():
