@@ -49,15 +49,15 @@ Each planet placed in each of 12 houses (bhava) with outcomes.
 
 | Section | Chapters | Topic | Est. Rules | Session | Status |
 |---------|----------|-------|-----------|---------|--------|
-| C1 | Ch.34 | Sun in 12 houses | ~130 | S289 | 🔲 |
-| C2 | Ch.35 | Moon in 12 houses | ~130 | S290 | 🔲 |
-| C3 | Ch.36 | Mars in 12 houses | ~130 | S291 | 🔲 |
-| C4 | Ch.37 | Mercury in 12 houses | ~130 | S292 | 🔲 |
-| C5 | Ch.38 | Jupiter in 12 houses | ~130 | S293 | 🔲 |
-| C6 | Ch.39 | Venus in 12 houses | ~130 | S294 | 🔲 |
-| C7 | Ch.40 | Saturn in 12 houses | ~130 | S295 | 🔲 |
-| C8 | Ch.41–42 | Rahu/Ketu in 12 houses | ~140 | S296 | 🔲 |
-| **TOTAL C** | | | **~1,050** | **S289–S296** | **0/1050** |
+| C1 | Ch.34 | Sun in 12 houses | 68 | S289 | ✅ |
+| C2 | Ch.35 | Moon in 12 houses | 60 | S290 | ✅ |
+| C3 | Ch.36 | Mars in 12 houses | 57 | S291 | ✅ |
+| C4 | Ch.37 | Mercury in 12 houses | 57 | S292 | ✅ |
+| C5 | Ch.38 | Jupiter in 12 houses | 60 | S293 | ✅ |
+| C6 | Ch.39 | Venus in 12 houses | 56 | S294 | ✅ |
+| C7 | Ch.40 | Saturn in 12 houses | 57 | S295 | ✅ |
+| C8 | Ch.41–42 | Rahu/Ketu in 12 houses | 81 | S296 | ✅ |
+| **TOTAL C** | | | **496** | **S289–S296** | **496/496 ✅** |
 
 ### Block D: Special Topics (S297–S305, ~960 rules)
 
@@ -82,6 +82,6 @@ Each planet placed in each of 12 houses (bhava) with outcomes.
 |-------|----------|-------|--------|
 | A — Conjunctions | S273–S280 | ~1,040 | 1040/1040 ✅ |
 | B — Planet-in-Sign | S281–S288 | 1,092 | 1092/1092 ✅ |
-| C — Planet-in-House | S289–S296 | ~1,050 | 0/1050 |
+| C — Planet-in-House | S289–S296 | 496 | 496/496 ✅ |
 | D — Special Topics | S297–S305 | ~960 | 0/960 |
-| **TOTAL** | **S273–S305** | **~4,100** | **2132/4100** |
+| **TOTAL** | **S273–S305** | **~4,100** | **2628/4100** |

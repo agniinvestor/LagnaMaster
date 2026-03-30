@@ -1388,3 +1388,26 @@ Rule counts are now driven by text depth, not session targets.
 
 ### Next session
 S289 — Block C: Sun in 12 houses
+---
+
+## S289–S296 — 2026-03-30 — Saravali Block C Complete: All planets in 12 houses
+
+**Tests:** 2491 passing, 3 skipped, 0 lint errors
+
+### What was built
+Eight planet-in-house modules at exhaustive depth (496 rules total):
+- `saravali_houses_1.py` (S289): Sun in 12 houses — 68 rules (Ch.34)
+- `saravali_houses_2.py` (S290): Moon in 12 houses — 60 rules (Ch.35)
+- `saravali_houses_3.py` (S291): Mars in 12 houses — 57 rules (Ch.36)
+- `saravali_houses_4.py` (S292): Mercury in 12 houses — 57 rules (Ch.37)
+- `saravali_houses_5.py` (S293): Jupiter in 12 houses — 60 rules (Ch.38)
+- `saravali_houses_6.py` (S294): Venus in 12 houses — 56 rules (Ch.39)
+- `saravali_houses_7.py` (S295): Saturn in 12 houses — 57 rules (Ch.40)
+- `saravali_houses_8.py` (S296): Rahu+Ketu in 12 houses — 81 rules (Ch.41-42)
+
+**Block C COMPLETE:** 496 actual rules
+
+**Corpus:** 6315 rules
+
+### Next session
+S297 — Block D: Special Topics
