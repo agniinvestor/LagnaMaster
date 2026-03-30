@@ -104,47 +104,97 @@ No user-facing code ships until Phase 0 is complete. No empirical analysis runs 
 these are breadth-coverage entries with prose descriptions. Valid as a topic index.
 Not suitable as primary ML input. See `docs/CLASSICAL_CORPUS.md` for full Phase 1A inventory.
 
-### Phase 1B — Sutra-Level Encoding (S263–S316+)
+### Phase 1B — Sutra-Level Encoding (S263–S410)
 
-Phase 1B is the research-grade corpus. Target: ~9,200 structured predictions total
-(Phase 1A + ~6,600 new Phase 1B rules). Every Phase 1B rule satisfies a formal contract:
-structured `primary_condition`, `modifiers`, `exceptions`, `outcome_domains` (from fixed
-taxonomy), `outcome_direction`, `outcome_intensity`, `lagna_scope`, `verse_ref` (chapter
-+ verse), `concordance_texts` (populated at encoding time). See `docs/CLASSICAL_CORPUS.md`
-for the full Rule Contract and Outcome Taxonomy.
+Phase 1B is the research-grade corpus. **Revised target: ~19,800 structured predictions
+total** (Phase 1A 3,301 + ~16,500 new Phase 1B rules). Every Phase 1B rule satisfies a
+formal contract: structured `primary_condition`, `modifiers`, `exceptions`,
+`outcome_domains` (from fixed taxonomy), `outcome_direction`, `outcome_intensity`,
+`lagna_scope`, `verse_ref` (chapter+verse), `concordance_texts` (populated at encoding
+time). See `docs/CLASSICAL_CORPUS.md` for the full Rule Contract and Outcome Taxonomy.
 
 **Phase 1B is gated on S263** — the schema definition session that produces the Rule
 Contract, Outcome Taxonomy, coverage map template, and concordance workflow. No Phase 1B
 encoding begins without these four documents committed.
 
+**Original S301–S309 estimate of ~1,110 rules was a 10x underestimate.** Research-grade
+chapter-by-chapter analysis (conducted S270 planning pass) shows the correct totals:
+Mansagari = 2,755–3,850 rules (30 chapters), Jataka Tattva = 3,940–5,460 rules
+(22 tarangas), Stri Jataka = 1,300–1,840 rules (13 chapters), Muhurtha Chintamani =
+2,310–3,120 rules (20 ullasas, separate schema), Yoga Expansion = ~1,649 rules.
+
 **Priority order within Phase 1B:**
-1. **Laghu Parashari first (S264–S266)** — the 9×12 functional nature table is the
-   master lookup that makes all other Parashari yoga rules interpretable. Unblocks
-   correct yogakaraka weighting. Directly addresses OB-3's low axis-specific r (~0.02).
-2. **Bhavartha Ratnakara second (S267–S272)** — lagna-conditional rules are the
-   highest-discrimination signal; `lagna_scope` fully populated throughout.
-3. **Saravali: conjunctions first (S273–S276), then matrices (S277–S281)** — unique
-   conjunction formulations before concordant placement matrices.
-4. **Chamatkara Chintamani (S282–S285) → Hora Ratnam (S286–S290)**
-5. **Prasna Marga (S291–S297)** — horary system, `system: horary` on all rules,
-   separate analytical pipeline from natal.
-6. **Tajika Neelakanthi (S298–S300)** — annual charts, `system: varshaphala`.
-7. **Mansagari + KP + Nadi + Jataka Tattva + Stri Jataka (S301–S309)**
-8. **Verification sessions (S310–S316)** — one per text, coverage map audit,
-   contract compliance spot check.
+1. **Laghu Parashari first (S264–S266)** ✅ — 9×12 functional nature table. 306 rules.
+2. **Bhavartha Ratnakara (S267–S272)** — 12 lagnas × all houses. ~800 rules total.
+   S267–S269 done (Aries→Virgo, BVR001–390). S270–S272 complete Libra→Pisces.
+3. **Saravali (S273–S281)** — 68 chapters, ~1,400 rules. Conjunctions block first
+   (Ch.31–51: 21 pairs × 12 signs = 252 rules), then house matrices, then yogas.
+4. **Chamatkara Chintamani (S282–S285)** — 28 chapters, ~550 rules. 1B_matrix.
+5. **Hora Ratnam (S286–S290)** — 22 chapters, ~600 rules. 1B_matrix + 1B_conditional.
+6. **Prasna Marga (S291–S297)** — 32 chapters, ~950 rules. `system: horary` on all rules.
+7. **Tajika Neelakanthi (S298–S300)** — 16 chapters, ~255 rules. `system: varshaphala`.
+8. **Mansagari (S301–S313)** — 30 chapters, 2,755–3,300 rules. Densest natal text after
+   BPHS. Priority: Ch.11 (Rashi phalam — denser than BPHS), Ch.14 (Yogas, 180–250 rules),
+   Ch.16 (Antardasha 9×9=81 combinations), Ch.23–27 (Muhurtha within Mansagari).
+9. **Jataka Tattva (S314–S331)** — 22 Tarangas, 3,940–5,000 rules. Highest total of any
+   single text. Priority: Taranga 11 (Dasha × Ascendant matrix, unique cross-ref),
+   Taranga 15 (Medical astrology, systematic), Taranga 17 (Prenatal — nearly unique),
+   Taranga 20 (Yoga cancellation rules). `source: JatakaTattva` on all rules.
+10. **Stri Jataka (S332–S337)** — 13 chapters, 1,300–1,840 rules. Unique female
+    horoscopy domain. ALL rules flagged `domain: female_nativity`. Priority: Ch.4
+    (Husband from wife's chart — nowhere else in classical literature), Ch.6 (Widowhood),
+    Ch.7 (Chastity/character). ~600–900 rules with zero overlap with other texts.
+11. **Muhurtha Chintamani (S338–S347)** — 20 Ullasas, 2,310–3,120 rules. **Separate
+    schema** — muhurtha rules have structure `(panchanga_element, value, activity) →
+    quality_outcome`, NOT `(planet, house, lagna) → life_outcome`. All rules flagged
+    `system: muhurtha`. Priority: Ullasa 2 (tithi × activity, 30×N rules), Ullasa 4–5
+    (nakshatra × activity, 27×N rules). Never served to natal engine.
+12. **Yoga Expansion (S348–S355)** — ~1,649 rules completing the yoga universe:
+    - Nabhasa (37): 3 Ashraya + 2 Dala + 20 Aakruti + 12 Sankhya
+    - Moon yogas (32): Sunapha/Anapha/Durudhura/Kemadruma + named variants
+    - Solar yogas (25): Vesi/Vasi/Ubhayachari + Budhaditya variants
+    - Pancha Mahapurusha (19): 5 base + 14 sign variants
+    - Raja yogas (150): 36 generic + 84 lagna-specific + 30 special named
+    - Dhana yogas (80): 12 generic + 60 lagna-specific + 8 special
+    - Arishta yogas (40): Kala Sarpa 12 variants + Chandal/Shrapit/Angarak
+    - Multi-planet conjunctions (120): Saravali Ch.52–56 complete enumeration
+    - Viparita Raja (15): 3 base × 3 placements + 3 enhanced
+    - Parivartana (66): all 66 house-pair exchanges (Maha/Dainya/Khala classified)
+    - Neecha Bhanga (83): 7 planets × 9 cancellation conditions + compound
+13. **Verification sessions (S356–S370)** — one per major text, coverage map audit,
+    Rule Contract compliance spot-check.
 
 | Sessions | Deliverable | Rules | Gate |
 |----------|-------------|-------|------|
-| S263 | Schema definition session — Rule Contract + Taxonomy + Coverage Map + Concordance Workflow | 0 | All four docs committed |
-| S264–S266 | Laghu Parashari (8 chapters, 1B_matrix + 1B_conditional) | ~306 | Coverage map complete |
-| S267–S272 | Bhavartha Ratnakara (20 chapters, 1B_conditional) | ~800 | All lagna_scope populated |
-| S273–S281 | Saravali (68 chapters, 1B_matrix + 1B_compound) | ~1,400 | Concordance vs. BPHS tracked |
+| S263 | Schema definition — Rule Contract + Taxonomy + Coverage Map + Concordance Workflow | 0 | All four docs committed ✅ |
+| S264–S266 | Laghu Parashari (8 chapters) | ~306 | Coverage map complete ✅ |
+| S267–S269 | Bhavartha Ratnakara Aries→Virgo (BVR001–390) | 390 | 6/12 lagnas done ✅ |
+| S270–S272 | Bhavartha Ratnakara Libra→Pisces (BVR391–800) | ~410 | All 12 lagnas, all lagna_scope populated |
+| S273–S276 | Saravali: Two-planet conjunctions (Ch.31–51, 21 pairs × 12 signs) | ~252 | Concordance vs. BPHS tracked |
+| S277–S279 | Saravali: Planet-in-sign (Ch.6–13) + Planet-in-house (Ch.14–22) | ~240 | verse_ref Ch/V populated |
+| S280–S281 | Saravali: Dignities + House-lord matrix + Yogas (Ch.23–30, 57–61) | ~550 | Coverage map complete |
 | S282–S285 | Chamatkara Chintamani (28 chapters, 1B_matrix) | ~550 | verse_ref all populated |
 | S286–S290 | Hora Ratnam (22 chapters, 1B_matrix + 1B_conditional) | ~600 | — |
-| S291–S297 | Prasna Marga (32 chapters, 1B_matrix + 1B_compound, system=horary) | ~950 | system field on all rules |
-| S298–S300 | Tajika Neelakanthi (16 chapters, system=varshaphala) | ~255 | system field on all rules |
-| S301–S309 | Mansagari + KP + Nadi + Jataka Tattva + Stri Jataka | ~1,110 | School fields correct |
-| S310–S316 | Verification sessions (one per text) | 0 | All sections in coverage maps complete |
+| S291–S297 | Prasna Marga (32 chapters, 1B_matrix + 1B_compound) | ~950 | system=horary on all rules |
+| S298–S300 | Tajika Neelakanthi (16 chapters) | ~255 | system=varshaphala on all rules |
+| S301–S304 | Mansagari Part A: Ch.1–10 (Graha in bhava, all 9 planets × 12 houses) | ~620 | 108 bhava placements done |
+| S305–S308 | Mansagari Part B: Ch.11–17 (Rashi phalam + Yogas + Dasha + Antardasha 9×9) | ~760 | 81 AD combos done |
+| S309–S313 | Mansagari Part C: Ch.18–30 (Ashtakavarga + Graha Bala + Stri + Longevity + Muhurtha) | ~900 | Coverage map complete |
+| S314–S318 | Jataka Tattva Part A: Taranga 1–5 (Graha nature + Rashi + Bhava placements) | ~650 | Taranga coverage begun |
+| S319–S323 | Jataka Tattva Part B: Taranga 6–11 (Yogas + Dhana + Raja + Dasha × Ascendant matrix) | ~850 | T11 dasha×ascendant matrix done |
+| S324–S328 | Jataka Tattva Part C: Taranga 12–17 (Longevity + Arishta + Medical + Prenatal) | ~900 | T15 medical + T17 prenatal done |
+| S329–S331 | Jataka Tattva Part D: Taranga 18–22 (Female + Stri + Yoga cancellations + Conclusion) | ~650 | T20 yoga cancellations done |
+| S332–S334 | Stri Jataka Part A: Ch.1–7 (Appearance + Character + Marriage + Widowhood + Chastity) | ~900 | Ch.4 husband-from-wife + Ch.6 widowhood done |
+| S335–S337 | Stri Jataka Part B: Ch.8–13 (Progeny + Profession + Longevity + Special yogas) | ~700 | Coverage map complete |
+| S338–S341 | Muhurtha Chintamani Part A: Ullasa 1–8 (Tithi × activity + Vara + Nakshatra matrices) | ~850 | system=muhurtha, panchanga schema used |
+| S342–S345 | Muhurtha Chintamani Part B: Ullasa 9–16 (Specific muhurtha types: Vivaha, Griha, Yatra) | ~900 | All activity types tagged |
+| S346–S347 | Muhurtha Chintamani Part C: Ullasa 17–20 + Muhurtha Martanda unique chapters | ~570 | Coverage map complete |
+| S348–S350 | Yoga Expansion A: Nabhasa (37) + Moon yogas (32) + Solar yogas (25) + Pancha Mahapurusha (19) | ~113 | All source texts cited |
+| S351–S353 | Yoga Expansion B: Raja yogas (150) + Dhana yogas (80) | ~230 | lagna_scope on lagna-specific rules |
+| S354–S355 | Yoga Expansion C: Arishta (40) + Parivartana (66) + Neecha Bhanga (83) + Viparita (15) | ~204 | All 66 Parivartana classified |
+| S356–S370 | Verification sessions (one per major text, coverage map audit, contract compliance) | 0 | All sections in coverage maps complete |
+
+**Phase 1B total rule target: ~16,500 new rules (19,800 corpus total)**
 
 **Phase 1 gate (final):**
 - Every Phase 1B text has a committed coverage map with all sections complete
@@ -154,10 +204,12 @@ encoding begins without these four documents committed.
 - Outcome taxonomy used consistently — no free-form values
 - `corpus_audit.py` 0 errors
 - ≥20% of rules reach concordance ≥0.75 across 2+ schools
+- Muhurtha rules isolated in separate pipeline — never fed to natal engine
 
 ---
 
 ## Phase 2 — Engine Rebuild (S411–S470)
+*(Phase 2 start held at S411 — Phase 1B verification sessions S356–S370 complete by S410)*
 
 Feature vectors 150 → 500+. Muhurtha engine. OB-3 rerun (target r > 0.05 on ≥2 axes). Observability stack (OpenTelemetry + Prometheus).
 
