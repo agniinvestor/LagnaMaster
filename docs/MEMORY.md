@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **2295 passing, 3 skipped, 0 lint errors, CI green**
+- **2309 passing, 3 skipped, 0 lint errors, CI green**
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
 
@@ -96,7 +96,8 @@ When in doubt, read that file to reconstruct state.
 - **Session 264:** Laghu Parashari Functional Nature Table — LPF001-108 (9×12); Phase 1B conditional; 6 yogakarakas; corpus 2742; 2250 tests
 - **Session 265:** Laghu Parashari Sections B, C, D — LPY001-012 + LPK001-024 + LPD001-045; corpus 2823; 2270 tests
 - **Session 266:** Laghu Parashari Sections E, F (complete) — LPA001-060 + LPM001-024; LP coverage map done; corpus 2907; 2295 tests
-- **Next session:** S267
+- **Session 267:** Bhavartha Ratnakara Aries + Taurus — BVR001-130; corpus 3037; 2309 tests
+- **Next session:** S268
 
 ---
 

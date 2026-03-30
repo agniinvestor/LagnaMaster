@@ -1111,3 +1111,22 @@ Sections E, F completing the Laghu Parashari coverage map — 84 rules (LPA001-L
 
 ### Next session
 S267 — Bhavartha Ratnakara Part 1: Lagna-conditional results (1B_conditional, lagna_scope fully populated). Highest discrimination signal text.
+---
+
+## S267 — 2026-03-30 — Bhavartha Ratnakara Part 1: Aries + Taurus
+
+**Tests:** 2309 passing, 3 skipped, 0 lint errors
+
+### What was built
+Bhavartha Ratnakara Sections A (Aries) + B (Taurus) — 130 rules (BVR001-BVR130):
+
+- `src/corpus/bhavartha_ratnakara_1.py`: One registry (BHAVARTHA_RATNAKARA_1_REGISTRY):
+  - Section A (Aries, 65 rules BVR001-BVR065): Sun (8), Moon (6), Mars (9), Mercury (6), Jupiter (7), Venus (8), Saturn (6), yogas (11). Lagna-conditional with lagna_scope=['aries'] on all rules.
+  - Section B (Taurus, 65 rules BVR066-BVR130): Sun (5), Moon (4), Mars (6), Mercury (8), Jupiter (6), Venus (7), Saturn (9), yogas (10). Lagna-conditional with lagna_scope=['taurus'] on all rules.
+- All 7 classical planets covered for both lagnas.
+- phase=1B_conditional, source=BhavarthaRatnakara, school=parashari on every rule.
+
+**Corpus:** 3037 rules (2907 + 130)
+
+### Next session
+S268 — Bhavartha Ratnakara Part 2: Gemini + Cancer (~130 rules, BVR131-BVR260)
