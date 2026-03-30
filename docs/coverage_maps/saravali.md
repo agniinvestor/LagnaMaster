@@ -20,12 +20,12 @@ Each conjunction = 2 planets × multiple houses/outcomes = multiple rules.
 | A1 | Ch.15–16 | Sun-Moon, Sun-Mars, Sun-Mercury conjunctions | ~130 | S273 | ✅ |
 | A2 | Ch.16–17 | Sun-Jupiter, Sun-Venus, Sun-Saturn conjunctions | ~130 | S274 | ✅ |
 | A3 | Ch.17–18 | Moon-Mars, Moon-Mercury, Moon-Jupiter conjunctions | ~130 | S275 | ✅ |
-| A4 | Ch.18–19 | Moon-Venus, Moon-Saturn, Mars-Mercury conjunctions | ~130 | S276 | 🔲 |
-| A5 | Ch.19–20 | Mars-Jupiter, Mars-Venus, Mars-Saturn conjunctions | ~130 | S277 | 🔲 |
-| A6 | Ch.20–21 | Mercury-Jupiter, Mercury-Venus, Mercury-Saturn | ~130 | S278 | 🔲 |
+| A4 | Ch.18–19 | Moon-Venus, Moon-Saturn, Mars-Mercury conjunctions | ~130 | S276 | ✅ |
+| A5 | Ch.19–20 | Mars-Jupiter, Mars-Venus, Mars-Saturn conjunctions | ~130 | S277 | ✅ |
+| A6 | Ch.20–21 | Mercury-Jupiter, Mercury-Venus, Mercury-Saturn | ~130 | S278 | ✅ |
 | A7 | Ch.21–22 | Jupiter-Venus, Jupiter-Saturn, Venus-Saturn | ~130 | S279 | 🔲 |
 | A8 | Ch.23–24 | Three+ planet conjunctions, special combinations | ~130 | S280 | 🔲 |
-| **TOTAL A** | | | **~1,040** | **S273–S280** | **390/1040** |
+| **TOTAL A** | | | **~1,040** | **S273–S280** | **780/1040** |
 
 ### Block B: Planet-in-Sign Matrix (S281–S288, ~1,050 rules)
 
@@ -84,4 +84,4 @@ Each planet placed in each of 12 houses (bhava) with outcomes.
 | B — Planet-in-Sign | S281–S288 | ~1,050 | 0/1050 |
 | C — Planet-in-House | S289–S296 | ~1,050 | 0/1050 |
 | D — Special Topics | S297–S305 | ~960 | 0/960 |
-| **TOTAL** | **S273–S305** | **~4,100** | **390/4100** |
+| **TOTAL** | **S273–S305** | **~4,100** | **780/4100** |

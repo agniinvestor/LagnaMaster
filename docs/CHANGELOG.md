@@ -1276,3 +1276,45 @@ S275 — Saravali Conjunctions Part 3: Moon-Mars, Moon-Mercury, Moon-Jupiter
 
 ### Next session
 S276 — Saravali Conjunctions Part 4: Moon-Venus, Moon-Saturn, Mars-Mercury
+---
+
+## S276 — 2026-03-30 — Saravali Conjunctions Part 4: Moon-Venus, Moon-Saturn, Mars-Mercury
+
+**Tests:** 2420 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/saravali_conjunctions_4.py`: SARAVALI_CONJUNCTIONS_4_REGISTRY (130 rules SAV391-SAV520)
+  - Moon-Venus: romantic/artistic luxury; Moon-Saturn: Vish yoga, melancholy; Mars-Mercury: technical skills
+
+**Corpus:** 4207 rules
+
+### Next session
+S277
+---
+
+## S277 — 2026-03-30 — Saravali Conjunctions Part 5: Mars-Jupiter, Mars-Venus, Mars-Saturn
+
+**Tests:** 2427 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/saravali_conjunctions_5.py`: SARAVALI_CONJUNCTIONS_5_REGISTRY (130 rules SAV521-SAV650)
+  - Mars-Jupiter: dharma-karma warrior; Mars-Venus: passionate intensity; Mars-Saturn: most malefic pair
+
+**Corpus:** 4337 rules
+
+### Next session
+S278
+---
+
+## S278 — 2026-03-30 — Saravali Conjunctions Part 6: Mercury-Jupiter, Mercury-Venus, Mercury-Saturn
+
+**Tests:** 2434 passing, 3 skipped, 0 lint errors
+
+### What was built
+- `src/corpus/saravali_conjunctions_6.py`: SARAVALI_CONJUNCTIONS_6_REGISTRY (130 rules SAV651-SAV780)
+  - Mercury-Jupiter: scholarly philosophy; Mercury-Venus: artistic intelligence; Mercury-Saturn: research depth
+
+**Corpus:** 4467 rules
+
+### Next session
+S279
