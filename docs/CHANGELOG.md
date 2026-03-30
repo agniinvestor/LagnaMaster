@@ -1167,3 +1167,21 @@ Bhavartha Ratnakara Sections E (Leo) + F (Virgo) — 130 rules (BVR261-BVR390):
 
 ### Next session
 S270 — Bhavartha Ratnakara Part 4: Libra + Scorpio (~130 rules, BVR391-BVR520)
+---
+
+## S270 — 2026-03-30 — Bhavartha Ratnakara Part 4: Libra + Scorpio
+
+**Tests:** 2351 passing, 3 skipped, 0 lint errors
+
+### What was built
+Bhavartha Ratnakara Sections G (Libra) + H (Scorpio) — 130 rules (BVR391-BVR520):
+
+- `src/corpus/bhavartha_ratnakara_4.py`: One registry (BHAVARTHA_RATNAKARA_4_REGISTRY):
+  - Section G (Libra, 65 rules BVR391-BVR455): Saturn yogakaraka (H4+H5). Mars double maraka (H2+H7). Jupiter functional malefic (H3+H6). Venus lagna+H8 lord.
+  - Section H (Scorpio, 65 rules BVR456-BVR520): Moon H9 trikona (functional benefic). Jupiter H2+H5 (maraka softened by trikona). Mars lagna+H6 lord. No yogakaraka.
+- Wired into combined_corpus.py (BHAVARTHA_RATNAKARA_4_REGISTRY).
+
+**Corpus:** 3427 rules (3297 + 130)
+
+### Next session
+S271 — Bhavartha Ratnakara Part 5: Sagittarius + Capricorn (~130 rules, BVR521-BVR650)
