@@ -73,4 +73,28 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 1, "house": 12},
       predictions=[{"entity": "native", "claim": "expenses_on_religious_grounds", "domain": "spirituality", "direction": "favorable", "magnitude": 0.5}],
       verse_ref="Ch.23 v.14", commentary_context="No separate note. Venus in 12th = one of Venus's best placements (bed pleasures, luxury). Combined with lagna lord = dharmic spending.", description="Ascendant lord in 12th + Venus in 12th: expenses on religious grounds.")
 
+
+# ═══ v.7: Bhavat bhavam principle for relatives ══════════════════════════════
+b.add(conditions=[],
+      signal_group="bhavat_bhavam_relatives_principle", direction="neutral", intensity="moderate",
+      domains=["progeny"],
+      predictions=[{"entity": "general", "claim": "predict_relative_events_from_derived_houses", "domain": "progeny", "direction": "neutral", "magnitude": 0.5}],
+      entity_target="general",
+      verse_ref="Ch.23 v.7",
+      commentary_context="Santhanam: Hints for co-born, uncles etc. Brother\'s finances = 4th (2nd from 3rd). Brother\'s marriage = 9th (7th from 3rd). Father\'s health = 2nd (6th from 9th). Mother\'s health = 9th (6th from 4th). Wife\'s spending = 6th (12th from 7th). Proceeding on these lines, we can predict events for all relatives from the native\'s horoscope.",
+      description="Effects derived from ascendant apply similarly to co-born (3rd), mother (4th), etc. through bhavat bhavam.",
+      cross_chapter_refs=["Ch.14 (siblings)", "Ch.15 (mother)", "Ch.18 (spouse)", "Ch.20 (father)"],
+      prediction_type="trait")
+
+# ═══ v.8: Visible vs invisible half ══════════════════════════════════════════
+b.add(conditions=[],
+      signal_group="visible_invisible_half_principle", direction="neutral", intensity="moderate",
+      domains=["fame_reputation"],
+      predictions=[{"entity": "native", "claim": "visible_half_explicit_results_invisible_secret", "domain": "fame_reputation", "direction": "neutral", "magnitude": 0.4}],
+      entity_target="native",
+      verse_ref="Ch.23 v.8",
+      commentary_context="Santhanam: Visible half = 180 degrees from ascendant cusp backwards (via 10th cusp). A planet in visible half has more potential in effects — results are manifest and publicly recognized. Invisible half = less potential, unmanifest.",
+      description="Planets in visible half of zodiac give explicit results; invisible half gives secret results.",
+      prediction_type="trait")
+
 BPHS_V2_CH23_REGISTRY = b.build()
