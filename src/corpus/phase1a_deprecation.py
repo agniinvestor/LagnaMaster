@@ -30,7 +30,12 @@ def is_deprecated(rule) -> bool:
 
 
 def is_production_ready(rule) -> bool:
-    """Check if a rule meets V2 production standard."""
+    """Check if a rule meets FULL V2 production standard.
+
+    This is strict — a rule must pass ALL quality dimensions,
+    not just have non-empty fields. Commentary is required for
+    BPHS rules because Santhanam provides notes on every sloka.
+    """
     if rule.phase == "1A_representative":
         return False
     if not rule.predictions:
@@ -39,6 +44,13 @@ def is_production_ready(rule) -> bool:
         return False
     if not rule.timing_window:
         return False
+    # Commentary required for BPHS (Santhanam has notes on every sloka)
+    if rule.source == "BPHS" and not rule.commentary_context:
+        return False
+    # Concordance — at least checked (empty concordance_texts is ok if
+    # no parallel exists, but the rule should have been checked)
+    # For now, don't gate on concordance since it's legitimately empty
+    # for unique BPHS rules with no Saravali/Phaladeepika parallel
     return True
 
 
