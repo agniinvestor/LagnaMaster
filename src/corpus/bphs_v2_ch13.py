@@ -571,4 +571,93 @@ b.add(
     prediction_type="trait",
 )
 
+
+# ═══ v.1-2 MISSING: Jupiter ruling 2nd in 2nd → smooth finances (Scorpio/Aquarius)
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 2}],
+    signal_group="jupiter_rules_h2_in_h2_smooth",
+    direction="favorable", intensity="moderate", domains=["wealth"],
+    predictions=[{"entity": "native", "claim": "financial_aspects_smooth_jupiter_rules_2nd", "domain": "wealth", "direction": "favorable", "magnitude": 0.6}],
+    verse_ref="Ch.13 v.1-2",
+    commentary_context="Santhanam: Jupiter will not be wholly auspicious in 2nd UNLESS he rules it. This applies to Scorpio and Aquarius ascendants only.",
+    description="Jupiter in 2nd AS RULER of 2nd (Scorpio/Aquarius lagna): financial aspects smooth.",
+    lagna_scope=["scorpio", "aquarius"])
+
+# ═══ v.3 MISSING: Jupiter conjunct Mars anywhere → wealth
+b.add(
+    conditions=[{"type": "planets_conjunct", "planets": ["Jupiter", "Mars"]}],
+    signal_group="jupiter_mars_conjunct_wealth",
+    direction="favorable", intensity="moderate", domains=["wealth"],
+    predictions=[{"entity": "native", "claim": "wealth_acquired_through_jupiter_mars_conjunction", "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
+    verse_ref="Ch.13 v.3",
+    commentary_context="Santhanam: Whether or not Jupiter owns the 2nd, if he is conjunct Mars, wealth will be acquired — house occupied by them not standing for consideration.",
+    description="Jupiter conjunct Mars in any house: wealth acquired. House position irrelevant.",
+    concordance_texts=["Saravali"])
+
+# ═══ v.4 MISSING: 2nd + 11th lords joining in kendra/trikona → gains
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 2, "house": [1, 4, 5, 7, 9, 10]},
+                {"type": "lord_in_house", "lord_of": 11, "house": [1, 4, 5, 7, 9, 10]}],
+    signal_group="h2_h11_lords_kendra_trikona_gains",
+    direction="favorable", intensity="moderate", domains=["wealth"],
+    predictions=[{"entity": "native", "claim": "financial_gains_through_wealth_lords_in_kendra", "domain": "wealth", "direction": "favorable", "magnitude": 0.6}],
+    verse_ref="Ch.13 v.4",
+    commentary_context="Santhanam: The 11th lord has a say in financial matters apart from 2nd lord. These two joining in ascendant, 4th, 7th, 10th, 5th or 9th will also lead to financial gains.",
+    description="2nd and 11th lords joining in any kendra or trine: financial gains.")
+
+# ═══ v.12 MISSING: Jupiter in 2nd or 2nd lord exalted → beautiful eyes
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 2}],
+    signal_group="jupiter_h2_beautiful_eyes",
+    direction="favorable", intensity="moderate", domains=["physical_appearance"],
+    predictions=[{"entity": "native", "claim": "beautiful_eyes_from_jupiter_in_2nd", "domain": "physical_appearance", "direction": "favorable", "magnitude": 0.6}],
+    verse_ref="Ch.13 v.12",
+    commentary_context="Santhanam: Jupiter well placed in 2nd, or 2nd lord in exaltation, or with benefic = beautiful eyes. Jupiter's position in 2nd is a safe bet for strong sight and beauty of eyes.",
+    description="Jupiter in 2nd: beautiful eyes and strong sight.",
+    prediction_type="trait")
+
+# ═══ v.12 MISSING: Venus/Full Moon in 2nd → beautiful eyes
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Venus", "house": 2}],
+    signal_group="venus_full_moon_h2_beautiful_eyes",
+    direction="favorable", intensity="moderate", domains=["physical_appearance"],
+    predictions=[{"entity": "native", "claim": "beautiful_eyes_venus_or_full_moon_in_2nd", "domain": "physical_appearance", "direction": "favorable", "magnitude": 0.5}],
+    verse_ref="Ch.13 v.12",
+    commentary_context="Santhanam: Venus in 2nd or Full Moon in 2nd will not deprive one of beautiful eyes.",
+    description="Venus or Full Moon in 2nd: will not deprive of beautiful eyes.",
+    prediction_type="trait")
+
+# ═══ v.12 MISSING: Mercury in 2nd → speech not sight
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 2}],
+    signal_group="mercury_h2_speech_not_sight",
+    direction="neutral", intensity="moderate", domains=["intelligence_education"],
+    predictions=[{"entity": "native", "claim": "mercury_2nd_affects_speech_more_than_sight", "domain": "intelligence_education", "direction": "neutral", "magnitude": 0.4}],
+    verse_ref="Ch.13 v.12",
+    commentary_context="Santhanam: Mercury in 2nd will have a say on the speech rather than on the sight. Hence Jupiter's position in the 2nd is a safe bet for strong sight.",
+    description="Mercury in 2nd: affects speech more than sight.",
+    prediction_type="trait")
+
+# ═══ v.13 MISSING: Saturn/Mercury association → rheumatism
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 2}],
+    signal_group="saturn_mercury_h2_rheumatism",
+    direction="unfavorable", intensity="moderate", domains=["physical_health"],
+    predictions=[{"entity": "native", "claim": "rheumatism_and_windy_disorders", "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5}],
+    verse_ref="Ch.13 v.13",
+    commentary_context="Santhanam: If 2nd house or its lord is associated with Saturn or Mercury = rheumatism and such other windy disorders.",
+    description="2nd house or lord with Saturn or Mercury: rheumatism and windy disorders.",
+    modifiers=[{"condition": "mercury_association", "effect": "amplifies", "strength": "moderate"}])
+
+# ═══ v.13 MISSING: Jupiter in affliction → gastric
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 2}],
+    signal_group="jupiter_h2_afflicted_gastric",
+    direction="unfavorable", intensity="moderate", domains=["physical_health"],
+    predictions=[{"entity": "native", "claim": "gastric_troubles_from_afflicted_jupiter", "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5}],
+    verse_ref="Ch.13 v.13",
+    commentary_context="Santhanam: If Jupiter is in affliction so related, gastric troubles will come to pass.",
+    description="Jupiter in 2nd in affliction: gastric troubles.",
+    modifiers=[{"condition": "jupiter_afflicted", "effect": "conditionalizes", "strength": "moderate"}])
+
 BPHS_V2_CH13_REGISTRY = b.build()

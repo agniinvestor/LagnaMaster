@@ -1,0 +1,220 @@
+{
+  "chapter": 13,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312",
+  "audit_date": "2026-03-31",
+  "status": "complete",
+  "verses": {
+    "1-2": {
+      "page": "132-133",
+      "claims": [
+        {
+          "claim": "2nd lord in 2nd or kendra/trikona \u2192 promotes wealth",
+          "type": "condition",
+          "encoded": "BPHS1300"
+        },
+        {
+          "claim": "2nd lord in 6/8/12 \u2192 financial decline",
+          "type": "contrary",
+          "encoded": "BPHS1301"
+        },
+        {
+          "claim": "Benefic in 2nd \u2192 gives wealth",
+          "type": "condition",
+          "encoded": "BPHS1302"
+        },
+        {
+          "claim": "Malefic in 2nd \u2192 destroys wealth",
+          "type": "contrary",
+          "encoded": "BPHS1303"
+        },
+        {
+          "claim": "Venus/Mercury in 2nd favourable; Jupiter NOT wholly auspicious",
+          "type": "distinct_condition",
+          "encoded": "commentary_in_BPHS1302"
+        },
+        {
+          "claim": "Jupiter ruling 2nd (Scorpio/Aquarius) in 2nd \u2192 financial aspects smooth",
+          "type": "exception_to_jupiter",
+          "encoded": "NOT_ENCODED"
+        }
+      ]
+    },
+    "3": {
+      "page": "133",
+      "claims": [
+        {
+          "claim": "Jupiter in 2nd as ruler of 2nd \u2192 wealthy (Scorpio/Aquarius lagna)",
+          "type": "condition",
+          "encoded": "BPHS1304"
+        },
+        {
+          "claim": "Jupiter conjunct Mars (anywhere) \u2192 wealth through house acquisition",
+          "type": "distinct_condition",
+          "encoded": "NOT_ENCODED"
+        }
+      ]
+    },
+    "4": {
+      "page": "133-134",
+      "claims": [
+        {
+          "claim": "2nd lord in 11th + 11th lord in 2nd (exchange) \u2192 wealth acquired",
+          "type": "condition",
+          "encoded": "BPHS1305"
+        },
+        {
+          "claim": "These two lords joining in kendra/trikona \u2192 also financial gains",
+          "type": "distinct_condition",
+          "encoded": "NOT_ENCODED"
+        }
+      ]
+    },
+    "5": {
+      "page": "134",
+      "claims": [
+        {
+          "claim": "2nd lord in angle + 11th lord in trine + Jupiter/Venus aspect \u2192 wealthy",
+          "type": "condition",
+          "encoded": "BPHS1306"
+        },
+        {
+          "claim": "2nd lord related to Jupiter AND/OR Venus by conjunction/aspect \u2192 wealth",
+          "type": "distinct_condition",
+          "encoded": "commentary_in_BPHS1306"
+        }
+      ]
+    },
+    "6-7": {
+      "page": "134",
+      "claims": [
+        {
+          "claim": "2nd lord in evil house + malefic in 2nd \u2192 penniless from birth",
+          "type": "condition",
+          "encoded": "BPHS1307"
+        },
+        {
+          "claim": "2nd + 11th lords both combust \u2192 beg for food",
+          "type": "condition",
+          "encoded": "BPHS1308"
+        },
+        {
+          "claim": "EXCEPTION: 2nd lord with Yogakaraka (though malefic) \u2192 auspicious, not adverse",
+          "type": "exception",
+          "encoded": "BPHS1309"
+        },
+        {
+          "claim": "Example: Mercury (2nd lord) joining Saturn for Taurus \u2192 superior finances",
+          "type": "lagna_specific_example",
+          "encoded": "commentary_in_BPHS1309"
+        }
+      ]
+    },
+    "8": {
+      "page": "135",
+      "claims": [
+        {
+          "claim": "2nd + 11th lords in 6/8/12 + Mars in 11th + Rahu in 2nd \u2192 lose wealth through king/government",
+          "type": "condition",
+          "encoded": "BPHS1310"
+        }
+      ]
+    },
+    "9": {
+      "page": "135",
+      "claims": [
+        {
+          "claim": "Jupiter in 11th + Venus in 2nd + benefic in 12th + 2nd lord with benefic \u2192 religious/charitable expenses",
+          "type": "condition",
+          "encoded": "BPHS1311"
+        }
+      ]
+    },
+    "10": {
+      "page": "135-136",
+      "claims": [
+        {
+          "claim": "2nd lord exalted or own sign \u2192 look after people, help others, famous",
+          "type": "condition",
+          "encoded": "BPHS1312"
+        },
+        {
+          "claim": "Chaukhamba edition: deep exaltation or own sign + aspect to Jupiter \u2192 fame and liked by all",
+          "type": "variant_reading",
+          "encoded": "commentary_in_BPHS1312"
+        }
+      ]
+    },
+    "11": {
+      "page": "136",
+      "claims": [
+        {
+          "claim": "2nd lord + benefic in Paravatamsa \u2192 effortless wealth of all kinds",
+          "type": "condition",
+          "encoded": "BPHS1313"
+        },
+        {
+          "claim": "2nd lord's dignity + Jupiter's disposition decide financial status",
+          "type": "general_principle",
+          "encoded": "commentary_in_BPHS1313"
+        }
+      ]
+    },
+    "12": {
+      "page": "136",
+      "claims": [
+        {
+          "claim": "2nd lord strong \u2192 beautiful eyes",
+          "type": "condition",
+          "encoded": "BPHS1314"
+        },
+        {
+          "claim": "2nd lord in 6/8/12 \u2192 eye disease/deformity",
+          "type": "contrary",
+          "encoded": "BPHS1315"
+        },
+        {
+          "claim": "Jupiter in 2nd or 2nd lord exalted \u2192 beautiful eyes",
+          "type": "distinct_condition",
+          "encoded": "NOT_ENCODED"
+        },
+        {
+          "claim": "Venus/Full Moon in 2nd \u2192 beautiful eyes",
+          "type": "distinct_condition",
+          "encoded": "NOT_ENCODED"
+        },
+        {
+          "claim": "Mercury in 2nd \u2192 say on speech rather than sight",
+          "type": "distinct_condition",
+          "encoded": "NOT_ENCODED"
+        },
+        {
+          "claim": "2nd lord = right eye, 12th lord = left eye",
+          "type": "reference",
+          "encoded": "commentary_in_BPHS1314"
+        }
+      ]
+    },
+    "13": {
+      "page": "137",
+      "claims": [
+        {
+          "claim": "2nd house + lord conjunct malefics \u2192 tale-bearer, untruth, windy diseases",
+          "type": "condition",
+          "encoded": "BPHS1316"
+        },
+        {
+          "claim": "Saturn/Mercury association \u2192 rheumatism, windy disorders",
+          "type": "distinct_condition",
+          "encoded": "NOT_ENCODED"
+        },
+        {
+          "claim": "Jupiter in affliction \u2192 gastric troubles",
+          "type": "distinct_condition",
+          "encoded": "NOT_ENCODED"
+        }
+      ]
+    }
+  }
+}
