@@ -177,6 +177,15 @@ class RuleRecord:
     convergence_signals: list[str] = field(default_factory=list)
     rule_relationship: dict = field(default_factory=dict)
 
+    # ── S311 extensions (Governance Framework — Tier 2 Foundations) ──────────
+    translator: str = ""                    # Which translator's edition (e.g., "santhanam", "gc_sharma")
+    schema_version: int = 2                 # Schema version (1=S202, 2=S309+)
+    health_sensitive: bool = False           # G02: longevity/death/disease predictions flagged
+    safety_tier: str = "standard"            # standard | restricted | research_only
+    falsifiable: bool = True                 # Can a user confirm/deny this prediction?
+    requires_entity_consent: bool = False    # G03: needs family member consent before display
+    deprecated_reason: str = ""              # Non-empty = rule is deprecated, reason given
+
     def __post_init__(self) -> None:
         if not (0.0 <= self.confidence <= 1.0):
             raise ValueError(

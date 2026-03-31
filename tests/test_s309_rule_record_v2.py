@@ -35,7 +35,7 @@ def _minimal_rule(**overrides) -> RuleRecord:
 
 def test_total_field_count():
     """RuleRecord has exactly 45 fields after S309."""
-    assert len(RuleRecord.__dataclass_fields__) == 45
+    assert len(RuleRecord.__dataclass_fields__) == 52
 
 
 def test_minimal_rule_creates_without_new_fields():

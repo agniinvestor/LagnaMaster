@@ -117,6 +117,9 @@ class V2ChapterBuilder:
         lagna_scope: list[str] | None = None,
     ) -> str:
         """Add a rule. Returns the generated rule_id."""
+        # ── Tier 1 validation (build-time) ──────────────────────────────
+        self._validate_add(conditions, direction, intensity, domains, predictions)
+
         rid = f"BPHS{self._num:04d}"
         self._num += 1
 
@@ -160,6 +163,13 @@ class V2ChapterBuilder:
             derived_house_chains=derived_house_chains if derived_house_chains is not None else self._auto_bb_chains(conditions),
             convergence_signals=convergence_signals or [],
             rule_relationship=rule_relationship or {},
+            # Governance Tier 2 auto-derived fields
+            translator=getattr(self, '_translator', ''),
+            schema_version=2,
+            health_sensitive=self._derive_health_sensitive(domains, direction),
+            safety_tier="restricted" if self._derive_health_sensitive(domains, direction) else "standard",
+            falsifiable=True,
+            requires_entity_consent=self._derive_requires_consent(ent),
         ))
         return rid
 
@@ -359,6 +369,64 @@ class V2ChapterBuilder:
     def rules(self) -> list[RuleRecord]:
         """Return the raw list of rules."""
         return list(self._rules)
+
+    @staticmethod
+    def _validate_add(conditions, direction, intensity, domains, predictions):
+        """Tier 1 build-time validation for all controlled vocabularies and primitives."""
+        from src.corpus.taxonomy import (
+            VALID_OUTCOME_DOMAINS, VALID_OUTCOME_DIRECTIONS,
+            VALID_OUTCOME_INTENSITIES, VALID_CONDITION_PRIMITIVES,
+        )
+        errors = []
+
+        # Validate outcome domains
+        for d in domains:
+            if d not in VALID_OUTCOME_DOMAINS:
+                errors.append(f"outcome_domain '{d}' not in taxonomy — valid: {sorted(VALID_OUTCOME_DOMAINS)}")
+
+        # Validate direction
+        if direction not in VALID_OUTCOME_DIRECTIONS:
+            errors.append(f"direction '{direction}' not valid — use: {sorted(VALID_OUTCOME_DIRECTIONS)}")
+
+        # Validate intensity
+        if intensity not in VALID_OUTCOME_INTENSITIES:
+            errors.append(f"intensity '{intensity}' not valid — use: {sorted(VALID_OUTCOME_INTENSITIES)}")
+
+        # Validate condition primitives
+        for i, cond in enumerate(conditions):
+            ctype = cond.get("type", "")
+            if ctype and ctype not in VALID_CONDITION_PRIMITIVES:
+                errors.append(
+                    f"conditions[{i}].type='{ctype}' not a valid primitive — "
+                    f"use: {sorted(VALID_CONDITION_PRIMITIVES)}"
+                )
+
+        # Validate prediction claims
+        for i, pred in enumerate(predictions):
+            if not isinstance(pred, dict):
+                continue
+            claim = pred.get("claim", "")
+            if len(claim) < 10:
+                errors.append(f"predictions[{i}].claim='{claim}' too short ({len(claim)} < 10)")
+
+        if errors:
+            raise ValueError(
+                "V2 BUILD VALIDATION FAILED:\n" +
+                "\n".join(f"  ✗ {e}" for e in errors)
+            )
+
+    @staticmethod
+    def _derive_health_sensitive(domains, direction):
+        """Derive health_sensitive flag from domains and direction (G02)."""
+        health_domains = {"longevity", "physical_health", "mental_health"}
+        has_health = bool(set(domains) & health_domains)
+        is_negative = direction in ("unfavorable", "mixed")
+        return has_health and is_negative
+
+    @staticmethod
+    def _derive_requires_consent(entity_target):
+        """Derive requires_entity_consent from entity_target (G03)."""
+        return entity_target in ("father", "mother", "spouse", "children", "siblings")
 
     @staticmethod
     def _auto_bb_chains(conditions: list[dict]) -> list[dict]:
