@@ -138,6 +138,108 @@ class V2ChapterBuilder:
         ))
         return rid
 
+    def mirror(self, source_rid: str, *,
+               direction: str | None = None,
+               predictions: list[dict] | None = None,
+               description: str | None = None,
+               signal_group: str | None = None) -> str:
+        """Generate a contrary mirror rule from an existing rule.
+
+        Inverts direction and prediction directions. Links both rules
+        via rule_relationship. Returns the new mirror's rule_id.
+
+        Args:
+            source_rid: rule_id of the source rule to mirror
+            direction: override direction (default: auto-invert)
+            predictions: override predictions (default: auto-invert)
+            description: override description (default: prefix with 'Contrary:')
+            signal_group: override signal_group (default: source + '_mirror')
+        """
+        # Find source rule
+        source = None
+        for r in self._rules:
+            if r.rule_id == source_rid:
+                source = r
+                break
+        if source is None:
+            raise ValueError(f"mirror(): source rule {source_rid} not found")
+
+        # Invert direction
+        _DIR_INVERT = {
+            "favorable": "unfavorable",
+            "unfavorable": "favorable",
+            "mixed": "mixed",
+            "neutral": "neutral",
+        }
+        new_dir = direction or _DIR_INVERT.get(source.outcome_direction, "mixed")
+
+        # Invert predictions
+        if predictions is not None:
+            new_preds = predictions
+        else:
+            new_preds = []
+            for p in source.predictions:
+                inv_p = dict(p)
+                inv_p["direction"] = _DIR_INVERT.get(p.get("direction", ""), "mixed")
+                inv_p["claim"] = "contrary_" + inv_p.get("claim", "")
+                new_preds.append(inv_p)
+
+        # Generate new description
+        new_desc = description or f"Contrary: {source.description.replace('[BPHS — ' + self.category + '] ', '')}"
+
+        # Generate new signal group
+        new_sg = signal_group or source.signal_group + "_mirror"
+
+        rid = f"BPHS{self._num:04d}"
+        self._num += 1
+
+        # Link both rules
+        mirror_rel = {"type": "contrary_mirror", "related_rules": [source_rid]}
+
+        # Update source rule's relationship too
+        if not source.rule_relationship:
+            source.rule_relationship = {"type": "alternative", "related_rules": [rid]}
+        else:
+            existing = source.rule_relationship.get("related_rules", [])
+            if rid not in existing:
+                existing.append(rid)
+                source.rule_relationship["related_rules"] = existing
+
+        self._rules.append(RuleRecord(
+            rule_id=rid, source=source.source, chapter=source.chapter,
+            school=source.school, category=source.category,
+            description=f"[BPHS — {self.category}] {new_desc}",
+            confidence=source.confidence, tags=source.tags, implemented=False,
+            primary_condition=source.primary_condition,
+            modifiers=source.modifiers, exceptions=source.exceptions,
+            outcome_domains=source.outcome_domains,
+            outcome_direction=new_dir, outcome_intensity=source.outcome_intensity,
+            outcome_timing=source.outcome_timing,
+            lagna_scope=source.lagna_scope, dasha_scope=source.dasha_scope,
+            verse_ref=source.verse_ref,
+            concordance_texts=source.concordance_texts,
+            divergence_notes=source.divergence_notes,
+            phase=source.phase, system=source.system,
+            prediction_type=source.prediction_type,
+            gender_scope=source.gender_scope,
+            certainty_level=source.certainty_level,
+            strength_condition=source.strength_condition,
+            house_system=source.house_system,
+            ayanamsha_sensitive=source.ayanamsha_sensitive,
+            evaluation_method=source.evaluation_method,
+            last_modified_session=self.session,
+            predictions=new_preds, entity_target=source.entity_target,
+            signal_group=new_sg,
+            commentary_context=source.commentary_context,
+            cross_chapter_refs=source.cross_chapter_refs,
+            timing_window=source.timing_window,
+            functional_modulation=source.functional_modulation,
+            derived_house_chains=source.derived_house_chains,
+            convergence_signals=source.convergence_signals,
+            rule_relationship=mirror_rel,
+        ))
+        return rid
+
     def build(self) -> CorpusRegistry:
         """Build and return a CorpusRegistry with all added rules."""
         reg = CorpusRegistry()

@@ -193,6 +193,24 @@ class CorpusAudit:
         except ImportError:
             pass
 
+        # --- SLIP-THROUGH CHECK 5: Contrary mirror detection ─────────────
+        # If a rule's description or commentary mentions contrary/opposite
+        # results, a mirror rule should exist.
+        contrary_keywords = ("contrary", "opposite results", "conversely",
+                             "in a contrary situation", "contrary situation")
+        combined_text = (rule.description + " " + rule.commentary_context).lower()
+        has_contrary_language = any(kw in combined_text for kw in contrary_keywords)
+        has_mirror_link = (
+            rule.rule_relationship.get("type") in ("alternative", "contrary_mirror")
+            if rule.rule_relationship else False
+        )
+        if has_contrary_language and not has_mirror_link:
+            errors.append(
+                f"{rid}: description/commentary mentions contrary results but "
+                f"no rule_relationship linking to a mirror rule — generate "
+                f"mirror with builder.mirror('{rid}') (Protocol B)"
+            )
+
         # --- SLIP-THROUGH CHECK 3: Commentary minimum for BPHS ---
         # Santhanam provides notes on almost every BPHS sloka.
         # A BPHS rule with no commentary is likely missing the notes.
