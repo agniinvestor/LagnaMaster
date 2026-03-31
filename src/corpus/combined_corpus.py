@@ -157,6 +157,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.bphs_v2_ch12 import BPHS_V2_CH12_REGISTRY  # S311 V2
     from src.corpus.bphs_v2_ch13 import BPHS_V2_CH13_REGISTRY  # S311 V2
     from src.corpus.bphs_v2_ch14 import BPHS_V2_CH14_REGISTRY  # S311 V2
+    from src.corpus.bphs_v2_ch15 import BPHS_V2_CH15_REGISTRY  # S311 V2
 
     registry = CorpusRegistry()
     sources = [
@@ -267,6 +268,7 @@ def build_corpus() -> CorpusRegistry:
         BPHS_V2_CH12_REGISTRY,
         BPHS_V2_CH13_REGISTRY,
         BPHS_V2_CH14_REGISTRY,
+        BPHS_V2_CH15_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():
