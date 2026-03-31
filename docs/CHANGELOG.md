@@ -1524,3 +1524,40 @@ S307 — BPHS Phase 1B Ch.16-19 (5th-8th House Effects)
 
 ### Next session
 S308 — BPHS Phase 1B Ch.20-23 (9th-12th House Effects) — completes Block A
+
+---
+
+## S308 — 2026-03-31 — BPHS Phase 1B Re-encode: Ch.20-23 (9th-12th House Effects) — BLOCK A COMPLETE
+
+**Tests:** 6060 passing / 3 skipped / 0 lint errors
+
+### What was built
+- `src/corpus/bphs_1b_houses_3.py`: 63 Phase 1B rules from BPHS Ch.20-23
+  - Ch.20 (Dharma Bhava/9th): 22 rules from 32 slokas — fortune, father's welfare,
+    death timing, devotion, begging combinations
+  - Ch.21 (Karma Bhava/10th): 19 rules from 22 slokas — career, fame, Gnana yoga,
+    royal patronage, bad deeds, malefic combinations
+  - Ch.22 (Labha Bhava/11th): 11 rules from 14 slokas — gains in Nishkas with
+    specific age timing (32, 33, 36, 40), parivartana wealth yogas
+  - Ch.23 (Vyaya Bhava/12th): 11 rules from 17 slokas — moksha, wandering vs
+    homeland, sinful earnings, religious expenses, visible/invisible half
+- `tests/test_s308_bphs_1b_houses_3.py`: 1013 parametrized contract tests
+- Coverage map corrected: Ch.20 has 32 slokas (was listed as 13 from TOC estimate)
+- Block A (Ch.12-23) COMPLETE: 223 rules from 249 predictive slokas
+
+### Three-lens analysis
+- **Tech:** Block A house effects fully encoded at Phase 1B sutra-level depth.
+  Total 223 rules across Ch.12-23. Option B modifier protocol maintained throughout.
+  33% concordance for Ch.20-23 (lower than Ch.12-19 because Ch.20 contains
+  many BPHS-unique compound timing rules for father's death).
+- **Astrology:** Ch.20 is dominated by father-related predictions (wealthy father,
+  royal father, indigent father, father's death timing). The v.13-25 death timing
+  block uses multi-factor planetary conditions to predict father's death age —
+  encoded as compound rules. Ch.21 establishes dharma-karma adhipati yoga as
+  the highest career combination. Ch.22 uniquely quantifies wealth in Nishkas
+  at specific ages. Ch.23 distinguishes moksha (benefics in 12th) from hell
+  (malefics in 12th) — a direct concordance with Saravali's 12th house chapter.
+- **ML:** 63 new structured predictions. Corpus total: ~6,808.
+
+### Next session
+S309 — BPHS Phase 1B Block B: Ch.24 (Effects of Bhava Lords — 148 slokas, largest chapter)

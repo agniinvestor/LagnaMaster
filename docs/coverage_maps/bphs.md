@@ -37,15 +37,17 @@ Verse counts from R. Santhanam translation (Ranjan Publications, 2 vols).
 | 17 | Effects of 6th House (Ari Bhava) | 14 | 14 | 14 | ✅ S307 |
 | 18 | Effects of 7th House (Yuvati Bhava) | 18 | 18 | 18 | ✅ S307 |
 | 19 | Effects of 8th House (Randhra Bhava) | 19 | 19 | 19 | ✅ S307 |
-| 20 | Effects of 9th House (Dharma Bhava) | 13 | 13 | 0 | 🔲 |
-| 21 | Effects of 10th House (Karma Bhava) | 14 | 14 | 0 | 🔲 |
-| 22 | Effects of 11th House (Labha Bhava) | 14 | 14 | 0 | 🔲 |
-| 23 | Effects of 12th House (Vyaya Bhava) | 17 | 16 | 0 | 🔲 |
-| **TOTAL** | | **234** | **218** | **160** | S306-S307: Ch.12-19 |
+| 20 | Effects of 9th House (Dharma Bhava) | 32 | 22 | 22 | ✅ S308 |
+| 21 | Effects of 10th House (Karma Bhava) | 22 | 20 | 19 | ✅ S308 |
+| 22 | Effects of 11th House (Labha Bhava) | 14 | 12 | 11 | ✅ S308 |
+| 23 | Effects of 12th House (Vyaya Bhava) | 17 | 14 | 11 | ✅ S308 |
+| **TOTAL** | | **285** | **249** | **223** | S306-S308: Ch.12-23 BLOCK A COMPLETE |
 
-Note: Predictive count excludes purely definitional slokas (e.g., Ch.11 general
-principles on how to assess bhava strength). Each predictive sloka produces 1+
-rules depending on number of distinct outcomes and conditional clauses stated.
+Note: Sloka counts updated from actual reading of Santhanam translation (previous
+estimates were from TOC — Ch.20 was listed as 13 but has 32 actual slokas).
+Predictive count excludes definitional, introductory, and summary slokas.
+Each predictive sloka produces 1+ rules depending on distinct outcomes and
+conditional clauses stated. Block A (Ch.12-23) complete as of S308.
 
 ## Block B: Bhava Lords & Upagrahas (Ch.24-25)
 

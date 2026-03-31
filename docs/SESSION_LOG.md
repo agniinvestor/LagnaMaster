@@ -667,3 +667,10 @@ Root cause of 103 CI failures identified and fixed:
   - Ch.16 Putra Bhava: 24 rules, Ch.17 Ari Bhava: 14 rules
   - Ch.18 Yuvati Bhava: 18 rules, Ch.19 Randhra Bhava: 19 rules
   - 55% concordance, Option B modifier protocol, coverage map 160/218
+- S308: Ch.20-23 (9th-12th House Effects) — 63 rules (BPHS0800-BPHS1110)
+  - Ch.20 Dharma Bhava: 22 rules (fortune, father, dharma, timing)
+  - Ch.21 Karma Bhava: 19 rules (career, fame, deeds, patronage)
+  - Ch.22 Labha Bhava: 11 rules (gains, Nishka timing, exchanges)
+  - Ch.23 Vyaya Bhava: 11 rules (expenses, moksha, foreign, wandering)
+  - 33% concordance, Block A (Ch.12-23) COMPLETE: 223/249 predictive slokas
+  - Sloka counts corrected from actual reading (Ch.20 has 32 slokas, not 13)

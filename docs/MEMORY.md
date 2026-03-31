@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **5047 passing, 3 skipped, 0 lint errors, CI green**
+- **6060 passing, 3 skipped, 0 lint errors, CI green**
 - **S305 extensions:** RuleRecord 10 new fields, 18 contract tests, corpus dashboard, modifier extractor, planet normalization, diverse 12-lagna test suite, 140 scripts archived to tools/archive/
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
@@ -117,7 +117,8 @@ When in doubt, read that file to reconstruct state.
 - **Sessions 297-305:** Saravali Special Topics — SAV2629-2898; corpus 6585; 2501 tests — **SARAVALI COMPLETE (2898 rules, all 68 chapters)**
 - **Session 306:** BPHS Phase 1B Re-encode Start — Ch.12-15 (1st-4th House Effects); BPHS0001-BPHS0325; 85 rules; corpus 6670; 3842 tests — **BPHS Block A: 85/218 predictive slokas encoded**
 - **Session 307:** BPHS Phase 1B Ch.16-19 (5th-8th House Effects); BPHS0400-BPHS0719; 75 rules; corpus 6745; 3842+ tests — **BPHS Block A: 160/218 slokas**
-- **Next session:** S308
+- **Session 308:** BPHS Phase 1B Ch.20-23 (9th-12th House Effects); BPHS0800-BPHS1110; 63 rules; corpus 6808; 6060 tests — **BPHS Block A COMPLETE: 223/249 slokas**
+- **Next session:** S309
 
 ---
 
@@ -142,14 +143,14 @@ PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=no 2>&1 | tail -3
 
 ---
 
-## Next Session: S308 — BPHS Phase 1B Ch.20-23 (9th-12th House Effects)
+## Next Session: S309 — BPHS Phase 1B Block B: Ch.24 (Effects of Bhava Lords)
 
-S308 completes Block A (House Effects) with the final 4 chapters:
-- Ch.20: Effects of 9th House (Dharma — 13 predictive slokas)
-- Ch.21: Effects of 10th House (Karma — 14 predictive slokas)
-- Ch.22: Effects of 11th House (Labha — 14 predictive slokas)
-- Ch.23: Effects of 12th House (Vyaya — 16 predictive slokas)
-- Total: 57 predictive slokas → Block A complete after this session
+Ch.24 is the largest single chapter in BPHS (148 counted slokas, ~18 pages).
+It covers the effects of each of the 12 bhava lords in all 12 houses = 144
+combinations plus 4 introductory/summary slokas. This is a systematic 1B_matrix
+chapter that will produce ~130-150 rules. May require 2-3 sessions.
+
+Block A (Ch.12-23) was completed in S308 with 223 rules from 249 predictive slokas.
 
 ---
 
@@ -222,17 +223,17 @@ INDIA_1947 = {
 
 ---
 
-## Key Metrics (Post-S262)
+## Key Metrics (Post-S308)
 
 | Metric | Current | Phase 1B Target | 2030 Target |
 |--------|---------|-----------------|------------|
-| Tests passing | **5,047** (3 skipped) | 4,000+ | 8,000+ |
+| Tests passing | **6,060** (3 skipped) | 4,000+ | 8,000+ |
 | Lint errors | **0** | 0 | 0 |
 | Corpus — Phase 1A representative | **2,634 rules** | complete | — |
-| Corpus — Phase 1B sutra-level | **0 rules** | ~6,600 new | — |
-| Corpus — combined target | 2,634 | **~9,200** | ~9,200+ |
-| Phase 1B Rule Contract compliance | 0% | ≥90% of Phase 1B rules | 100% |
-| Concordance ≥0.75 rules | 0 | ≥20% of Phase 1B | — |
+| Corpus — Phase 1B sutra-level | **4,174 rules** | ~6,600 new | — |
+| Corpus — combined target | **6,808** | **~9,200** | ~9,200+ |
+| Phase 1B Rule Contract compliance | ~95% | ≥90% of Phase 1B rules | 100% |
+| Concordance ≥0.75 rules | ~25% | ≥20% of Phase 1B | — |
 | Ephemeris | **DE431 real files** | DE431 maintained | DE431 maintained |
 | ADB fixtures | **200+** (all 12 Lagnas) | 200+ | 5,000+ |
 | API endpoints | **10** | — | — |

@@ -155,7 +155,7 @@ encoding begins without these four documents committed.
 | S264–S266 | Laghu Parashari (8 chapters, 1B_matrix + 1B_conditional) | ~306 | Coverage map complete |
 | S267–S272 | Bhavartha Ratnakara (20 chapters, 1B_conditional) | ~800 | All lagna_scope populated |
 | S273–S305 | Saravali (68 chapters, sutra-level re-encode) | 2,898 | ✅ COMPLETE |
-| S306–S340 | BPHS Phase 1B re-encode (97 chapters, concordance anchor) | ~4,500 | 🚧 S306: Ch.12-15 (82 rules) |
+| S306–S340 | BPHS Phase 1B re-encode (97 chapters, concordance anchor) | ~4,500 | 🚧 S308: Block A complete (223 rules, Ch.12-23) |
 | S341–S365 | Brihat Jataka + Phaladeepika re-encode | ~1,500 | Concordance depth |
 | S366–S400 | Remaining primary texts re-encode (UK, JP, SC, Jaimini) | ~2,500 | Concordance breadth |
 | S401–S407 | Chamatkara Chintamani (28 chapters, 1B_matrix) | ~550 | verse_ref all populated |
