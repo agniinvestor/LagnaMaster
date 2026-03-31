@@ -447,7 +447,7 @@ b.add(
         {"type": "planets_conjunct", "planets": ["Sun", "Moon"]},
         # Additional: must be in same Navamsa (Vargottama-like)
     ],
-    entity_target="mother",
+    entity_target="general",
     signal_group="sun_moon_conjunct_mother",
     direction="unfavorable", intensity="strong",
     domains=["longevity"],

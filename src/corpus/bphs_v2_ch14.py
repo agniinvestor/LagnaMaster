@@ -20,6 +20,7 @@ b = V2ChapterBuilder(
 
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "any_benefic", "house": 3}],
+    entity_target="general",
     signal_group="benefic_h3_coborn", direction="favorable", intensity="moderate",
     domains=["character_temperament"],
     predictions=[

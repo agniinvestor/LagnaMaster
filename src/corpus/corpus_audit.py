@@ -139,7 +139,61 @@ class CorpusAudit:
                     f"not in valid set {VALID_RELATIONSHIP_TYPES}"
                 )
 
+        # --- SLIP-THROUGH CHECK 1: Predictions entity vs entity_target ---
+        # If predictions list entities that differ from entity_target,
+        # the rule likely needs splitting or entity_target is wrong.
+        if rule.predictions:
+            pred_entities = {p.get("entity", "") for p in rule.predictions
+                            if isinstance(p, dict)}
+            non_target = pred_entities - {rule.entity_target, ""}
+            if non_target and rule.entity_target != "general":
+                errors.append(
+                    f"{rid}: entity_target='{rule.entity_target}' but predictions "
+                    f"reference different entities {non_target} — split into "
+                    f"separate rules per entity, or set entity_target='general'"
+                )
+
+        # --- SLIP-THROUGH CHECK 2: Description mentions age but timing unspecified ---
+        # Catches timing data buried in prose that wasn't extracted.
+        import re
+        desc = rule.description.lower()
+        age_patterns = re.findall(
+            r'(?:age|year)(?:\s+(?:of|at))?\s+(\d{1,2})', desc
+        )
+        age_patterns += re.findall(r'(\d{1,2})(?:th|st|nd|rd)\s+year', desc)
+        if age_patterns and rule.timing_window.get("type") == "unspecified":
+            errors.append(
+                f"{rid}: description mentions age(s) {age_patterns} but "
+                f"timing_window is 'unspecified' — extract timing (Protocol F)"
+            )
+
+        # --- SLIP-THROUGH CHECK 3: Commentary minimum for BPHS ---
+        # Santhanam provides notes on almost every BPHS sloka.
+        # A BPHS rule with no commentary is likely missing the notes.
+        # This is a WARNING (returned separately), not a hard error —
+        # some slokas genuinely have brief/no notes.
+
         return errors
+
+    def audit_v2_warnings(self, rule) -> list[str]:
+        """Non-blocking warnings for V2 rules. Returned separately from errors."""
+        warnings: list[str] = []
+        rid = rule.rule_id
+        session = rule.last_modified_session
+        if not session or session < V2_ENFORCEMENT_START:
+            return warnings
+        if rule.phase == "1A_representative":
+            return warnings
+
+        # BPHS commentary check
+        if (rule.source == "BPHS" and not rule.commentary_context
+                and rule.verse_ref and "v." in rule.verse_ref):
+            warnings.append(
+                f"{rid}: BPHS rule with no commentary_context — did you "
+                f"read Santhanam's notes for {rule.verse_ref}? (Protocol D)"
+            )
+
+        return warnings
 
     def run(self) -> dict:
         """Return a structured audit report."""
@@ -155,6 +209,7 @@ class CorpusAudit:
 
         # V2 enforcement
         v2_errors: list[str] = []
+        v2_warnings: list[str] = []
         v2_rules_checked = 0
         v2_rules_compliant = 0
 
@@ -167,11 +222,13 @@ class CorpusAudit:
 
             # V2 compliance check
             rule_errors = self.audit_v2_compliance(r)
+            rule_warnings = self.audit_v2_warnings(r)
             if r.last_modified_session and r.last_modified_session >= V2_ENFORCEMENT_START:
                 v2_rules_checked += 1
                 if not rule_errors:
                     v2_rules_compliant += 1
             v2_errors.extend(rule_errors)
+            v2_warnings.extend(rule_warnings)
 
         return {
             "total_rules": total,
@@ -185,6 +242,7 @@ class CorpusAudit:
             "v2_rules_checked": v2_rules_checked,
             "v2_rules_compliant": v2_rules_compliant,
             "v2_errors": v2_errors,
+            "v2_warnings": v2_warnings,
             "errors": v2_errors,  # backward compat: errors now includes v2
         }
 
