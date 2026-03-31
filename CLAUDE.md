@@ -13,6 +13,13 @@
 9. **Exhaust the problem before proposing** — when analysing gaps, designing controls, or planning work, assume your first pass is incomplete. Push yourself to find what you're missing before presenting. The user should not have to repeatedly ask "is that everything?" to get a thorough answer.
 10. **Close the feedback loop** — when a mistake happens, it must flow through: Pattern → Lesson (lessons_learned.md) → Principle update (if systemic) → Control built (code enforcement) → Governance framework updated. A lesson without a corresponding control is an open loop. An open loop WILL recur.
 
+## Session Types (NEVER MIX)
+
+**Governance session:** Build controls, update protocols, add lessons, write tools. No encoding.
+**Encoding session:** Read PDF, audit verses, encode rules, push. No framework debates, no tool building, no lessons updates. Use existing infrastructure only.
+
+If an encoding session discovers a gap that needs a new control: NOTE IT and finish encoding. Build the control in the next governance session. Do not stop encoding to build infrastructure.
+
 ## Encoding Protocol (MANDATORY — before ANY encoding)
 
 1. **Verse audit FIRST** — read every sloka + commentary from the PDF. Create `data/verse_audits/chN_audit.json` listing every claim per verse. No encoding without an audit file.
