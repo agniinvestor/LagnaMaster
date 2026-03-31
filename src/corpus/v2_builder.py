@@ -87,9 +87,12 @@ class V2ChapterBuilder:
                            f"Valid: {sorted(VALID_SOURCE_NAMES)}")
         source_info = get_source_info(source)
         self._translator = source_info.get("translator", "") if source_info else ""
+        # Per-text thresholds from source_texts.py (override globals)
         self._min_ratio = min_ratio if min_ratio is not None else self.MIN_RATIO
-        self._min_commentary = min_commentary if min_commentary is not None else self.MIN_COMMENTARY
-        self._min_concordance = min_concordance if min_concordance is not None else self.MIN_CONCORDANCE
+        text_min_comm = source_info.get("min_commentary", self.MIN_COMMENTARY) if source_info else self.MIN_COMMENTARY
+        text_min_conc = source_info.get("min_concordance", self.MIN_CONCORDANCE) if source_info else self.MIN_CONCORDANCE
+        self._min_commentary = min_commentary if min_commentary is not None else text_min_comm
+        self._min_concordance = min_concordance if min_concordance is not None else text_min_conc
         self.chapter_tags = chapter_tags or []
         self._default_entity = entity_target
         self._default_pred_type = prediction_type

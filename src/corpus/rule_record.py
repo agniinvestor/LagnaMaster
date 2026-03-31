@@ -185,6 +185,7 @@ class RuleRecord:
     falsifiable: bool = True                 # Can a user confirm/deny this prediction?
     requires_entity_consent: bool = False    # G03: needs family member consent before display
     deprecated_reason: str = ""              # Non-empty = rule is deprecated, reason given
+    encoding_session_context: str = ""      # Brief note on encoding context (e.g., "batch with Ch.15-19, PDF pp.142-169")
 
     def __post_init__(self) -> None:
         if not (0.0 <= self.confidence <= 1.0):
