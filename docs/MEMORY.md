@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **7016 passing, 3 skipped, 0 lint errors, CI green**
+- **7153 passing, 3 skipped, 0 lint errors, CI green**
 - **S305 extensions:** RuleRecord 10 new fields, 18 contract tests, corpus dashboard, modifier extractor, planet normalization, diverse 12-lagna test suite, 140 scripts archived to tools/archive/
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
