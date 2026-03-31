@@ -163,7 +163,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.bphs_v2_ch18 import BPHS_V2_CH18_REGISTRY  # S312 production-ready
     from src.corpus.bphs_v2_ch19 import BPHS_V2_CH19_REGISTRY  # S312 production-ready
     from src.corpus.bphs_v2_ch20 import BPHS_V2_CH20_REGISTRY  # S312 production-ready
-    # AWAITING RE-ENCODING: from src.corpus.bphs_v2_ch21 import BPHS_V2_CH21_REGISTRY
+    from src.corpus.bphs_v2_ch21 import BPHS_V2_CH21_REGISTRY  # S312 fully re-encoded
     from src.corpus.bphs_v2_ch22 import BPHS_V2_CH22_REGISTRY  # S312 production-ready
     from src.corpus.bphs_v2_ch23 import BPHS_V2_CH23_REGISTRY  # S312 production-ready
 
@@ -282,7 +282,7 @@ def build_corpus() -> CorpusRegistry:
         BPHS_V2_CH18_REGISTRY,
         BPHS_V2_CH19_REGISTRY,
         BPHS_V2_CH20_REGISTRY,
-        # AWAITING RE-ENCODING: BPHS_V2_CH21_REGISTRY,
+        BPHS_V2_CH21_REGISTRY,
         BPHS_V2_CH22_REGISTRY,
         BPHS_V2_CH23_REGISTRY,
     ]
