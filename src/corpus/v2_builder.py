@@ -84,7 +84,7 @@ class V2ChapterBuilder:
         divergence_notes: str = "",
         cross_chapter_refs: list[str] | None = None,
         rule_relationship: dict | None = None,
-        derived_house_chain: dict | None = None,
+        derived_house_chains: list[dict] | None = None,
         convergence_signals: list[str] | None = None,
         tags: list[str] | None = None,
         modifiers: list[dict] | None = None,
@@ -132,7 +132,7 @@ class V2ChapterBuilder:
             signal_group=signal_group, commentary_context=commentary_context,
             cross_chapter_refs=cross_chapter_refs or [],
             timing_window=tw, functional_modulation={},
-            derived_house_chain=derived_house_chain or {},
+            derived_house_chains=derived_house_chains or [],
             convergence_signals=convergence_signals or [],
             rule_relationship=rule_relationship or {},
         ))

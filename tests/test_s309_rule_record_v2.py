@@ -3,7 +3,7 @@
 Validates the 10 new S309 fields (Corpus Standard Upgrade):
   predictions, entity_target, signal_group, commentary_context,
   cross_chapter_refs, timing_window, functional_modulation,
-  derived_house_chain, convergence_signals, rule_relationship
+  derived_house_chains, convergence_signals, rule_relationship
 
 Tests confirm:
   1. Backward compatibility (existing rules unaffected)
@@ -94,8 +94,8 @@ def test_functional_modulation_default_empty():
     assert _minimal_rule().functional_modulation == {}
 
 
-def test_derived_house_chain_default_empty():
-    assert _minimal_rule().derived_house_chain == {}
+def test_derived_house_chains_default_empty():
+    assert _minimal_rule().derived_house_chains == []
 
 
 def test_convergence_signals_default_empty():
@@ -187,13 +187,13 @@ def test_functional_modulation_populated():
     assert "yogakaraka" in r.functional_modulation
 
 
-def test_derived_house_chain_populated():
-    r = _minimal_rule(derived_house_chain={
+def test_derived_house_chains_populated():
+    r = _minimal_rule(derived_house_chains=[{
         "base_house": 9, "derivative": "2nd_from",
         "effective_house": 10, "entity": "father", "domain": "wealth",
-    })
-    assert r.derived_house_chain["entity"] == "father"
-    assert r.derived_house_chain["base_house"] == 9
+    }])
+    assert r.derived_house_chains[0]["entity"] == "father"
+    assert r.derived_house_chains[0]["base_house"] == 9
 
 
 def test_convergence_signals_populated():
@@ -231,7 +231,7 @@ def test_to_dict_includes_s309_fields():
     assert "predictions" in d
     assert "timing_window" in d
     assert "functional_modulation" in d
-    assert "derived_house_chain" in d
+    assert "derived_house_chains" in d
     assert "convergence_signals" in d
     assert "rule_relationship" in d
     assert "commentary_context" in d

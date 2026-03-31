@@ -64,7 +64,7 @@ _HOUSE_ENTITY_MAP = {
 
 # Bhavat bhavam: derivative houses and their expected entity/domain
 _BHAVAT_BHAVAM = {
-    # (house, category) → expected derived_house_chain fields
+    # (house, category) → expected derived_house_chains fields
     (10, "9th_house_effects"): {"base_house": 9, "derivative": "2nd_from", "entity": "father", "domain": "wealth"},
     (12, "9th_house_effects"): {"base_house": 9, "derivative": "4th_from", "entity": "father", "domain": "property_vehicles"},
     (3, "9th_house_effects"): {"base_house": 9, "derivative": "7th_from", "entity": "father", "domain": "marriage"},
@@ -140,8 +140,8 @@ class V2Scorecard:
     functional_modulation_empty: int = 0
 
     # ── I. Bhavat Bhavam / Derived House Chain (Gap 9) ────────────────────
-    derived_house_chain_populated: int = 0
-    derived_house_chain_empty: int = 0
+    derived_house_chains_populated: int = 0
+    derived_house_chains_empty: int = 0
     bhavat_bhavam_expected: int = 0  # rules WHERE a chain is expected
     bhavat_bhavam_missing: int = 0   # expected but not populated
 
@@ -331,16 +331,16 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
             sc.functional_modulation_empty += 1
 
         # ── I. Bhavat Bhavam ──────────────────────────────────────────────
-        if r.derived_house_chain:
-            sc.derived_house_chain_populated += 1
+        if r.derived_house_chains:
+            sc.derived_house_chains_populated += 1
         else:
-            sc.derived_house_chain_empty += 1
+            sc.derived_house_chains_empty += 1
 
         # Check if bhavat bhavam is expected
         house_num = _extract_house_from_rule(r)
         if (house_num, cat) in _BHAVAT_BHAVAM:
             sc.bhavat_bhavam_expected += 1
-            if not r.derived_house_chain:
+            if not r.derived_house_chains:
                 sc.bhavat_bhavam_missing += 1
                 expected_chain = _BHAVAT_BHAVAM[(house_num, cat)]
                 flags.append(RedFlag(
@@ -348,7 +348,7 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
                     f"House {house_num} in '{cat}' — bhavat bhavam chain expected "
                     f"(this is {expected_chain['derivative']} of H{expected_chain['base_house']}, "
                     f"about {expected_chain['entity']}'s {expected_chain['domain']})",
-                    f"Add derived_house_chain: {json.dumps(expected_chain)}",
+                    f"Add derived_house_chains: {json.dumps(expected_chain)}",
                 ))
 
         # ── J. Convergence Signals ────────────────────────────────────────
@@ -495,7 +495,7 @@ def format_scorecard(sc: V2Scorecard) -> str:
 
     # I. Bhavat Bhavam
     lines.append("I. BHAVAT BHAVAM (derived house chains)")
-    lines.append(f"  Populated:              {sc.derived_house_chain_populated}/{n}")
+    lines.append(f"  Populated:              {sc.derived_house_chains_populated}/{n}")
     if sc.bhavat_bhavam_expected > 0:
         lines.append(f"  Expected (by house):    {sc.bhavat_bhavam_expected}")
         lines.append(f"  Missing:                {sc.bhavat_bhavam_missing}")

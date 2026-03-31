@@ -39,7 +39,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
       direction="favorable", intensity="strong", domains=["wealth"],
       predictions=[{"entity": "father", "claim": "father_is_fortunate_affluent", "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
       verse_ref="Ch.20 v.3", description="9th lord with strength + Venus in 9th + Jupiter in kendra: father fortunate.",
-      derived_house_chain={"base_house": 9, "derivative": "self", "effective_house": 9, "entity": "father", "domain": "wealth"})
+      derived_house_chains=[{"base_house": 9, "derivative": "self", "effective_house": 9, "entity": "father", "domain": "wealth"}])
 
 # ═══ v.4: Indigent father ════════════════════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
@@ -49,7 +49,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
       predictions=[{"entity": "father", "claim": "father_is_poor", "domain": "wealth", "direction": "unfavorable", "magnitude": 0.7}],
       verse_ref="Ch.20 v.4", description="9th lord debilitated: father is poor. Mars in 10th/12th (not own/exaltation) → patrimony lost through litigation.",
       commentary_context="Mars in 10th or 12th = 2nd or 4th from 9th. Patrimony will not come to hands easily.",
-      derived_house_chain={"base_house": 9, "derivative": "2nd_from", "effective_house": 10, "entity": "father", "domain": "wealth"},
+      derived_house_chains=[{"base_house": 9, "derivative": "2nd_from", "effective_house": 10, "entity": "father", "domain": "wealth"}],
       concordance_texts=["Saravali"], exceptions=["if_neecha_bhanga_raja_yoga"])
 
 # ═══ v.5: Long-living father ═════════════════════════════════════════════════
@@ -74,7 +74,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 10}],
       direction="favorable", intensity="strong", domains=["wealth", "fame_reputation"],
       predictions=[{"entity": "father", "claim": "father_very_rich_and_famous", "domain": "wealth", "direction": "favorable", "magnitude": 0.8}],
       verse_ref="Ch.20 v.7", description="9th lord in 10th + 10th lord aspected by benefic: father very rich and famous.",
-      derived_house_chain={"base_house": 9, "derivative": "2nd_from", "effective_house": 10, "entity": "father", "domain": "career_status"})
+      derived_house_chains=[{"base_house": 9, "derivative": "2nd_from", "effective_house": 10, "entity": "father", "domain": "career_status"}])
 
 # ═══ v.10: Fortune at age 32 ═════════════════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 2},
@@ -139,7 +139,7 @@ for vref, age_label, desc_suffix, conds, tw in _FATHER_DEATH:
         timing_window=tw,
         verse_ref=vref,
         description=f"Father death timing: {desc_suffix} → father passes at native's age {age_label}.",
-        derived_house_chain={"base_house": 9, "derivative": "8th_from", "effective_house": 4, "entity": "father", "domain": "longevity"},
+        derived_house_chains=[{"base_house": 9, "derivative": "8th_from", "effective_house": 4, "entity": "father", "domain": "longevity"}],
     )
 
 # ═══ v.26-28: Fortune timing ═════════════════════════════════════════════════

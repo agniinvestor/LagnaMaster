@@ -193,6 +193,28 @@ class CorpusAudit:
                 f"read Santhanam's notes for {rule.verse_ref}? (Protocol D)"
             )
 
+        # Bhavat Bhavam chains check
+        try:
+            from src.corpus.bb_reference import get_primary_bb_chains
+            pc = rule.primary_condition
+            conditions = pc.get("conditions", [])
+            for cond in conditions:
+                ctype = cond.get("type", "")
+                house_val = None
+                if ctype in ("planet_in_house", "lord_in_house"):
+                    house_val = cond.get("house", None)
+                if isinstance(house_val, int) and 1 <= house_val <= 12:
+                    expected = get_primary_bb_chains(house_val, max_chains=3)
+                    if expected and not rule.derived_house_chains:
+                        chain_labels = [c["label"] for c in expected[:2]]
+                        warnings.append(
+                            f"{rid}: house {house_val} has BB chains "
+                            f"{chain_labels} but derived_house_chains is empty"
+                        )
+                    break
+        except ImportError:
+            pass
+
         return warnings
 
     def run(self) -> dict:

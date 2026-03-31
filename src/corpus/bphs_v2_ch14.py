@@ -149,10 +149,10 @@ b.add(
         "friendly = prosperity."
     ),
     concordance_texts=["Saravali"],
-    derived_house_chain={
+    derived_house_chains=[{
         "base_house": 3, "derivative": "6th_from",
         "effective_house": 8, "entity": "siblings", "domain": "longevity",
-    },
+    }],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1405"]},
 )
 

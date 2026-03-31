@@ -26,7 +26,7 @@ Three tiers:
     cross_chapter_refs   — explicit links to other chapters
     timing_window        — structured timing (age, dasha, event)
     functional_modulation — how prediction changes by lagna functional role
-    derived_house_chain  — bhavat bhavam causal chain
+    derived_house_chains — bhavat bhavam causal chains (list — a rule can participate in multiple)
     convergence_signals  — independent chart conditions that confirm prediction
     rule_relationship    — alternatives/overrides/additions between rules
 
@@ -114,7 +114,8 @@ class RuleRecord:
                          "value": ..., "precision": "exact"|"approximate"|"unspecified"}
     functional_modulation  How prediction changes by lagna functional role. Dict keyed by
                         functional role: {"yogakaraka": "...", "benefic": "...", "malefic": "..."}
-    derived_house_chain    Bhavat bhavam causal chain. Dict:
+    derived_house_chains   Bhavat bhavam causal chains. List of dicts — a rule can
+                        participate in multiple BB chains simultaneously. Each:
                         {"base_house": int, "derivative": str, "effective_house": int,
                          "entity": str, "domain": str}
     convergence_signals    Independent chart conditions that confirm this prediction:
@@ -172,7 +173,7 @@ class RuleRecord:
     cross_chapter_refs: list[str] = field(default_factory=list)
     timing_window: dict = field(default_factory=dict)
     functional_modulation: dict = field(default_factory=dict)
-    derived_house_chain: dict = field(default_factory=dict)
+    derived_house_chains: list[dict] = field(default_factory=list)
     convergence_signals: list[str] = field(default_factory=list)
     rule_relationship: dict = field(default_factory=dict)
 
