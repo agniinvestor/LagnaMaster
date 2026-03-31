@@ -5,7 +5,7 @@ Source: R. Santhanam, BPHS Vol 1, pp.183-186. Slokas: 11. Gains/Nishka timing.
 from __future__ import annotations
 from src.corpus.v2_builder import V2ChapterBuilder
 
-b = V2ChapterBuilder(chapter="Ch.22", category="11th_house_effects", id_start=2200, session="S311", min_commentary=0.0, min_concordance=0.0, sloka_count=11,
+b = V2ChapterBuilder(chapter="Ch.22", category="11th_house_effects", id_start=2200, session="S311", sloka_count=11,
                       chapter_tags=["11th_house", "labha_bhava"], entity_target="native")
 
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": [1, 4, 5, 7, 9, 10, 11]}],

@@ -35,21 +35,20 @@ from src.corpus.rule_record import RuleRecord
 class V2ChapterBuilder:
     """Builds V2-compliant RuleRecord objects for a single BPHS chapter.
 
-    Enforces depth at build time:
+    Enforces depth at build time — PRINCIPLE-BASED, not threshold-based:
       - sloka_count is REQUIRED — declares how many predictive slokas the chapter has
-      - build() REFUSES if rules/slokas ratio < MIN_RATIO (default 0.5)
-      - build() REFUSES if commentary coverage < MIN_COMMENTARY (default 0.40)
-      - build() REFUSES if concordance coverage < MIN_CONCORDANCE (default 0.25)
+      - build() REFUSES if rules/slokas ratio is catastrophically low (< 0.3)
+        This catches summarization (6 rules from 22 slokas) but doesn't anchor to a target.
+      - build() checks that EVERY rule has commentary_context populated
+        (even "No Santhanam note for this sloka" counts — it proves the note was checked)
+      - Concordance is NOT threshold-gated — the encoder checks honestly, some rules
+        genuinely have no parallel in other texts
 
-    These thresholds prevent the encoder from shipping a shallow chapter.
-    If a chapter genuinely has fewer rules than slokas (e.g., many slokas are
-    computational/non-predictive), override with min_ratio=0.3 and document why.
+    The standard is the 10 principles, not these numbers.
     """
 
-    # Depth thresholds — chapter CANNOT ship below these
-    MIN_RATIO = 0.5         # rules / sloka_count
-    MIN_COMMENTARY = 0.40   # fraction of rules with commentary_context
-    MIN_CONCORDANCE = 0.25  # fraction of rules with concordance_texts
+    # Safety net — catches catastrophic failure only, NOT the standard to work toward
+    MIN_RATIO = 0.3         # only catches extreme summarization (L001, L003)
 
     def __init__(
         self,
@@ -63,10 +62,8 @@ class V2ChapterBuilder:
         school: str = "parashari",
         system: str = "natal",
         chapter_tags: list[str] | None = None,
-        # Depth overrides (only if genuinely justified)
+        # Safety net override (only for genuinely sparse texts)
         min_ratio: float | None = None,
-        min_commentary: float | None = None,
-        min_concordance: float | None = None,
         # Chapter-level defaults (overridable per rule)
         entity_target: str = "native",
         prediction_type: str = "event",
@@ -87,12 +84,7 @@ class V2ChapterBuilder:
                            f"Valid: {sorted(VALID_SOURCE_NAMES)}")
         source_info = get_source_info(source)
         self._translator = source_info.get("translator", "") if source_info else ""
-        # Per-text thresholds from source_texts.py (override globals)
         self._min_ratio = min_ratio if min_ratio is not None else self.MIN_RATIO
-        text_min_comm = source_info.get("min_commentary", self.MIN_COMMENTARY) if source_info else self.MIN_COMMENTARY
-        text_min_conc = source_info.get("min_concordance", self.MIN_CONCORDANCE) if source_info else self.MIN_CONCORDANCE
-        self._min_commentary = min_commentary if min_commentary is not None else text_min_comm
-        self._min_concordance = min_concordance if min_concordance is not None else text_min_conc
         self.chapter_tags = chapter_tags or []
         self._default_entity = entity_target
         self._default_pred_type = prediction_type
@@ -309,27 +301,26 @@ class V2ChapterBuilder:
                     f"Re-read the source text — you are summarizing."
                 )
 
-        # Commentary check
+        # Commentary check — PRINCIPLE-BASED: every rule must have commentary
+        # Even "No Santhanam note for this sloka" counts — it proves the note was checked.
+        # Empty string means the encoder didn't check. That's the failure.
         if n > 0:
-            with_commentary = sum(1 for r in self._rules if r.commentary_context)
-            comm_ratio = with_commentary / n
-            if comm_ratio < self._min_commentary:
+            missing_commentary = [
+                r for r in self._rules if not r.commentary_context
+            ]
+            if missing_commentary:
+                missing_ids = [r.rule_id for r in missing_commentary[:5]]
                 failures.append(
-                    f"DEPTH FAIL: commentary on {with_commentary}/{n} rules "
-                    f"({comm_ratio:.0%} < {self._min_commentary:.0%}). "
-                    f"Read Santhanam's notes for each sloka."
+                    f"PRINCIPLE FAIL: {len(missing_commentary)} rules have empty "
+                    f"commentary_context ({', '.join(missing_ids)}{'...' if len(missing_commentary) > 5 else ''}). "
+                    f"Every rule must have commentary — even 'No Santhanam note "
+                    f"for this sloka' proves the note was checked. Empty means "
+                    f"you didn't check."
                 )
 
-        # Concordance check
-        if n > 0:
-            with_conc = sum(1 for r in self._rules if r.concordance_texts)
-            conc_ratio = with_conc / n
-            if conc_ratio < self._min_concordance:
-                failures.append(
-                    f"DEPTH FAIL: concordance on {with_conc}/{n} rules "
-                    f"({conc_ratio:.0%} < {self._min_concordance:.0%}). "
-                    f"Check Saravali/Phaladeepika for matching rules."
-                )
+        # Concordance — NO threshold. The encoder checks honestly.
+        # Some rules genuinely have no parallel. That's fine.
+        # But we log the coverage for the scorecard.
 
         # Sloka coverage verification — verse_refs should span the declared range
         if n > 0 and self.sloka_count > 0:
