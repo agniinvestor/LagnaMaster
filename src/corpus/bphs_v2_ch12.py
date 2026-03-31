@@ -409,6 +409,36 @@ b.add(
     tags=["lagna_lord", "movable_sign", "rajalakshana", "royal"],
 )
 
+
+# v.5-7c: Mercury/Jupiter/Venus in angle or with Moon → royal fortunes
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Jupiter", "house": [1, 4, 7, 10]},
+    ],
+    signal_group="mercury_jupiter_venus_kendra_moon_royal",
+    direction="favorable", intensity="strong",
+    domains=["fame_reputation", "wealth"],
+    predictions=[
+        {"entity": "native", "claim": "royal_fortunes_through_benefics_in_kendra",
+         "domain": "fame_reputation", "direction": "favorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.12 v.5-7",
+    description=(
+        "If Mercury, Jupiter or Venus be in the ascendant along with the "
+        "Moon, or be in angle from the ascendant, the native will enjoy "
+        "royal fortunes."
+    ),
+    commentary_context=(
+        "Santhanam: Distinct from BPHS1209 (lagna lord in kendra). This "
+        "is about the NATURAL BENEFICS being in kendra or with Moon — "
+        "regardless of lagna lordship."
+    ),
+    concordance_texts=["Saravali"],
+    modifiers=[
+        {"condition": "mercury_or_venus_also_in_kendra_or_with_moon", "effect": "amplifies", "strength": "moderate"},
+    ],
+)
+
 # ═════════════════════════════════════════════════════════════════════════
 # SLOKA 8: Coiled Birth
 # "If there be a birth in one of Aries, Taurus and Leo ascendants
@@ -555,6 +585,35 @@ b.add(
     ),
     tags=["sun", "moon", "conjunction", "mother_loss", "early_life"],
     prediction_type="event",
+)
+
+
+# v.10 exception: Vargottama luminaries → excepted from 3-mothers rule
+b.add(
+    conditions=[
+        {"type": "planets_conjunct", "planets": ["Sun", "Moon"]},
+    ],
+    entity_target="general",
+    signal_group="sun_moon_vargottama_exception",
+    direction="neutral", intensity="moderate",
+    domains=["longevity"],
+    predictions=[
+        {"entity": "native", "claim": "vargottama_luminaries_exception_to_three_mothers",
+         "domain": "physical_health", "direction": "neutral", "magnitude": 0.3},
+    ],
+    verse_ref="Ch.12 v.10",
+    description=(
+        "Exception: Vargottama position of the luminaries in conjunction "
+        "seems to be excepted from the 3-mothers rule. They should be in "
+        "the same quarter of a constellation."
+    ),
+    commentary_context=(
+        "Santhanam: In my opinion, the Vargothama position of the luminaries "
+        "in conjunction seems to be excepted. They should be in the same "
+        "quarter of a constellation and will naturally be in one Navamsa."
+    ),
+    rule_relationship={"type": "override", "related_rules": ["BPHS1214"]},
+    exceptions=["vargottama_position_of_luminaries"],
 )
 
 # ═════════════════════════════════════════════════════════════════════════

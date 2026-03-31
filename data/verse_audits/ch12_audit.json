@@ -1,0 +1,195 @@
+{
+  "chapter": 12,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312",
+  "audit_date": "2026-03-31",
+  "status": "complete",
+  "verses": {
+    "1-2": {
+      "page": "126-127",
+      "claims": [
+        {
+          "claim": "Lagna lord in dusthana \u2192 felicity diminishes",
+          "type": "condition",
+          "encoded": "BPHS1200"
+        },
+        {
+          "claim": "Lagna lord in kendra/trikona \u2192 felicity",
+          "type": "contrary",
+          "encoded": "BPHS1201"
+        },
+        {
+          "claim": "Lagna lord debilitated/combust/enemy sign \u2192 diseases",
+          "type": "condition",
+          "encoded": "BPHS1202"
+        },
+        {
+          "claim": "Benefic in angle/trine \u2192 diseases disappear",
+          "type": "remedy",
+          "encoded": "BPHS1203"
+        },
+        {
+          "claim": "Lagna lord CONJUNCT MALEFIC in evil house \u2192 dire defect health AND luck/progress",
+          "type": "distinct_condition",
+          "encoded": "BPHS1204"
+        },
+        {
+          "claim": "Lagna lord is benefic/exalted in dusthana \u2192 relief over time",
+          "type": "exception",
+          "encoded": "BPHS1205"
+        },
+        {
+          "claim": "Benefic in kendra/trikona = powerful remedy for ALL health ills",
+          "type": "amplifier_of_1203",
+          "encoded": "commentary_in_BPHS1203"
+        }
+      ]
+    },
+    "3": {
+      "page": "127",
+      "claims": [
+        {
+          "claim": "Moon/ascendant aspected by malefic + no benefic aspect \u2192 no bodily health",
+          "type": "condition",
+          "encoded": "BPHS1206"
+        }
+      ]
+    },
+    "4": {
+      "page": "127",
+      "claims": [
+        {
+          "claim": "Benefic in ascendant \u2192 pleasing appearance",
+          "type": "condition",
+          "encoded": "BPHS1207"
+        },
+        {
+          "claim": "Malefic in ascendant \u2192 bereft of good appearance",
+          "type": "contrary",
+          "encoded": "BPHS1208"
+        },
+        {
+          "claim": "Ascendant ASPECTED by or conjunct benefic \u2192 felicity of body",
+          "type": "amplifier_of_1207",
+          "encoded": "commentary_in_BPHS1207"
+        }
+      ]
+    },
+    "5-7": {
+      "page": "127-128",
+      "claims": [
+        {
+          "claim": "Lagna lord + Mercury/Jupiter/Venus in angle/trine \u2192 longlived, wealthy, intelligent, liked by king",
+          "type": "condition",
+          "encoded": "BPHS1209"
+        },
+        {
+          "claim": "Lagna lord aspected by benefic in MOVABLE SIGN \u2192 royal marks of fortune (Rajalakshana)",
+          "type": "distinct_condition",
+          "encoded": "BPHS1210"
+        },
+        {
+          "claim": "Mercury/Jupiter/Venus in angle or with Moon in ascendant \u2192 royal fortunes",
+          "type": "distinct_condition",
+          "encoded": "NOT_ENCODED"
+        }
+      ]
+    },
+    "8": {
+      "page": "128",
+      "claims": [
+        {
+          "claim": "Aries/Taurus/Leo ascendant + Saturn in ascendant \u2192 coiled birth",
+          "type": "condition",
+          "encoded": "BPHS1211"
+        },
+        {
+          "claim": "Same lagnas + Mars in ascendant \u2192 coiled birth",
+          "type": "condition",
+          "encoded": "BPHS1212"
+        },
+        {
+          "claim": "Corresponding limb per Rasi/Navamsa rising",
+          "type": "modifier",
+          "encoded": "commentary_in_BPHS1211"
+        }
+      ]
+    },
+    "9": {
+      "page": "128",
+      "claims": [
+        {
+          "claim": "Sun in quadruped sign + others in dual with strength \u2192 born as twin",
+          "type": "condition",
+          "encoded": "BPHS1213"
+        }
+      ]
+    },
+    "10": {
+      "page": "129",
+      "claims": [
+        {
+          "claim": "Sun+Moon in same bhava and Navamsa \u2192 nurtured by 3 mothers for first 3 months",
+          "type": "condition",
+          "encoded": "BPHS1214"
+        },
+        {
+          "claim": "Obviously implies loss of mother within first 3 months",
+          "type": "commentary_implication",
+          "encoded": "prediction_in_BPHS1214"
+        },
+        {
+          "claim": "Vargottama position of luminaries seems excepted",
+          "type": "exception",
+          "encoded": "NOT_ENCODED"
+        }
+      ]
+    },
+    "11": {
+      "page": "129",
+      "claims": [
+        {
+          "claim": "Effects on Moon also applicable to ascendant (methodological)",
+          "type": "principle",
+          "encoded": "BPHS1215"
+        }
+      ]
+    },
+    "12-14": {
+      "page": "129-131",
+      "claims": [
+        {
+          "claim": "Decanate body mapping (1st/2nd/3rd decanate \u2192 head/trunk/lower)",
+          "type": "reference",
+          "encoded": "BPHS1216"
+        },
+        {
+          "claim": "Visible half = left side, invisible half = right side",
+          "type": "reference",
+          "encoded": "in_description_BPHS1216"
+        }
+      ]
+    },
+    "15": {
+      "page": "132",
+      "claims": [
+        {
+          "claim": "Malefic by occupation \u2192 ulcers/scars on corresponding limb",
+          "type": "condition",
+          "encoded": "BPHS1217"
+        },
+        {
+          "claim": "Benefic by occupation \u2192 moles/marks on corresponding limb",
+          "type": "contrary",
+          "encoded": "BPHS1218"
+        },
+        {
+          "claim": "Own Rasi/Navamsa \u2192 effects from birth; otherwise \u2192 during life",
+          "type": "timing_condition",
+          "encoded": "BPHS1219"
+        }
+      ]
+    }
+  }
+}
