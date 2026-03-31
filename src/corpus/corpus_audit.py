@@ -167,6 +167,32 @@ class CorpusAudit:
                 f"timing_window is 'unspecified' — extract timing (Protocol F)"
             )
 
+        # --- SLIP-THROUGH CHECK 4: Bhavat Bhavam chains (HARD ERROR) ─────
+        # Rules with a specific single house must carry BB chains.
+        # Auto-computed by V2ChapterBuilder — if still empty, something is wrong.
+        try:
+            from src.corpus.bb_reference import get_primary_bb_chains
+            pc = rule.primary_condition
+            conditions = pc.get("conditions", [])
+            for cond in conditions:
+                ctype = cond.get("type", "")
+                if ctype in ("planet_in_house", "lord_in_house"):
+                    house_val = cond.get("house", None)
+                    if isinstance(house_val, int) and 1 <= house_val <= 12:
+                        expected = get_primary_bb_chains(house_val, max_chains=3)
+                        if expected and not rule.derived_house_chains:
+                            chain_labels = [c["label"] for c in expected[:2]]
+                            errors.append(
+                                f"{rid}: house {house_val} has BB chains "
+                                f"{chain_labels} but derived_house_chains is "
+                                f"empty — V2ChapterBuilder should auto-compute "
+                                f"these; if conditions use house lists, override "
+                                f"manually"
+                            )
+                        break
+        except ImportError:
+            pass
+
         # --- SLIP-THROUGH CHECK 3: Commentary minimum for BPHS ---
         # Santhanam provides notes on almost every BPHS sloka.
         # A BPHS rule with no commentary is likely missing the notes.
@@ -192,28 +218,6 @@ class CorpusAudit:
                 f"{rid}: BPHS rule with no commentary_context — did you "
                 f"read Santhanam's notes for {rule.verse_ref}? (Protocol D)"
             )
-
-        # Bhavat Bhavam chains check
-        try:
-            from src.corpus.bb_reference import get_primary_bb_chains
-            pc = rule.primary_condition
-            conditions = pc.get("conditions", [])
-            for cond in conditions:
-                ctype = cond.get("type", "")
-                house_val = None
-                if ctype in ("planet_in_house", "lord_in_house"):
-                    house_val = cond.get("house", None)
-                if isinstance(house_val, int) and 1 <= house_val <= 12:
-                    expected = get_primary_bb_chains(house_val, max_chains=3)
-                    if expected and not rule.derived_house_chains:
-                        chain_labels = [c["label"] for c in expected[:2]]
-                        warnings.append(
-                            f"{rid}: house {house_val} has BB chains "
-                            f"{chain_labels} but derived_house_chains is empty"
-                        )
-                    break
-        except ImportError:
-            pass
 
         return warnings
 

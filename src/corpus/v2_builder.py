@@ -132,7 +132,7 @@ class V2ChapterBuilder:
             signal_group=signal_group, commentary_context=commentary_context,
             cross_chapter_refs=cross_chapter_refs or [],
             timing_window=tw, functional_modulation={},
-            derived_house_chains=derived_house_chains or [],
+            derived_house_chains=derived_house_chains if derived_house_chains is not None else self._auto_bb_chains(conditions),
             convergence_signals=convergence_signals or [],
             rule_relationship=rule_relationship or {},
         ))
@@ -148,6 +148,27 @@ class V2ChapterBuilder:
     def rules(self) -> list[RuleRecord]:
         """Return the raw list of rules."""
         return list(self._rules)
+
+    @staticmethod
+    def _auto_bb_chains(conditions: list[dict]) -> list[dict]:
+        """Auto-compute BB chains from conditions using bb_reference.
+
+        This is DETERMINISTIC — BB chains are a function of the house number,
+        not the source text. The encoder can override by passing explicit
+        derived_house_chains=[...] to add().
+        """
+        try:
+            from src.corpus.bb_reference import get_primary_bb_chains
+        except ImportError:
+            return []
+
+        for cond in conditions:
+            ct = cond.get("type", "")
+            if ct in ("planet_in_house", "lord_in_house"):
+                hv = cond.get("house", None)
+                if isinstance(hv, int) and 1 <= hv <= 12:
+                    return get_primary_bb_chains(hv, max_chains=3)
+        return []
 
     @staticmethod
     def _build_primary_condition(conditions: list[dict]) -> dict:
