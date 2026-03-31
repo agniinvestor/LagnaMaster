@@ -1,5 +1,18 @@
 # CLAUDE.md — LagnaMaster
 
+## Core Principles (NON-NEGOTIABLE — govern every decision)
+
+1. **Long-term over quick** — evaluate every decision against the 1000+ session roadmap, not this session
+2. **Nullify rework** — build controls BEFORE doing work. If a quality dimension exists, the gate must exist before encoding starts
+3. **Right over easy** — always choose correct over convenient, even at 10× the effort. No shortcuts. No fake automation.
+4. **Controls before work** — governance framework, validation, quality gates must exist BEFORE the work they govern
+5. **Measure before claiming** — run the audit, run the scorecard, show the numbers. Never assume it passes.
+6. **System enforces, not person** — if a standard matters, it's a code check. Markdown protocols are documentation; code is enforcement.
+7. **Radical transparency** — when something is wrong, uncertain, or incomplete, say so immediately. Don't hide problems, optimise reporting, or hope issues self-resolve.
+8. **Source fidelity** — record what the text says, not what you think it means. Interpretation goes in commentary, never in predictions or structured fields.
+
+---
+
 ## /cook — Multi-session batch execution
 
 **Usage:** `/cook S195–S200` or `/cook S[X]–S[Y]`
