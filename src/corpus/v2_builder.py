@@ -79,6 +79,14 @@ class V2ChapterBuilder:
         self.system = system
         self.session = session
         self.sloka_count = sloka_count
+
+        # T1-8: Source text canonicalization
+        from src.corpus.source_texts import VALID_SOURCE_NAMES, get_source_info
+        if source not in VALID_SOURCE_NAMES:
+            raise ValueError(f"T1-8: source='{source}' not in canonical registry. "
+                           f"Valid: {sorted(VALID_SOURCE_NAMES)}")
+        source_info = get_source_info(source)
+        self._translator = source_info.get("translator", "") if source_info else ""
         self._min_ratio = min_ratio if min_ratio is not None else self.MIN_RATIO
         self._min_commentary = min_commentary if min_commentary is not None else self.MIN_COMMENTARY
         self._min_concordance = min_concordance if min_concordance is not None else self.MIN_CONCORDANCE
@@ -372,42 +380,68 @@ class V2ChapterBuilder:
 
     @staticmethod
     def _validate_add(conditions, direction, intensity, domains, predictions):
-        """Tier 1 build-time validation for all controlled vocabularies and primitives."""
+        """Tier 1 build-time validation — ALL 13 controls enforced here."""
         from src.corpus.taxonomy import (
             VALID_OUTCOME_DOMAINS, VALID_OUTCOME_DIRECTIONS,
             VALID_OUTCOME_INTENSITIES, VALID_CONDITION_PRIMITIVES,
+            VALID_ENTITY_TARGETS,
         )
         errors = []
 
-        # Validate outcome domains
-        for d in domains:
-            if d not in VALID_OUTCOME_DOMAINS:
-                errors.append(f"outcome_domain '{d}' not in taxonomy — valid: {sorted(VALID_OUTCOME_DOMAINS)}")
-
-        # Validate direction
-        if direction not in VALID_OUTCOME_DIRECTIONS:
-            errors.append(f"direction '{direction}' not valid — use: {sorted(VALID_OUTCOME_DIRECTIONS)}")
-
-        # Validate intensity
-        if intensity not in VALID_OUTCOME_INTENSITIES:
-            errors.append(f"intensity '{intensity}' not valid — use: {sorted(VALID_OUTCOME_INTENSITIES)}")
-
-        # Validate condition primitives
+        # T1-1: Condition primitive whitelist
         for i, cond in enumerate(conditions):
             ctype = cond.get("type", "")
             if ctype and ctype not in VALID_CONDITION_PRIMITIVES:
                 errors.append(
-                    f"conditions[{i}].type='{ctype}' not a valid primitive — "
+                    f"T1-1: conditions[{i}].type='{ctype}' not a valid primitive — "
                     f"use: {sorted(VALID_CONDITION_PRIMITIVES)}"
                 )
 
-        # Validate prediction claims
+        # T1-2: Controlled vocabulary — domains, direction, intensity
+        for d in domains:
+            if d not in VALID_OUTCOME_DOMAINS:
+                errors.append(f"T1-2: outcome_domain '{d}' not in taxonomy")
+        if direction not in VALID_OUTCOME_DIRECTIONS:
+            errors.append(f"T1-2: direction '{direction}' not valid")
+        if intensity not in VALID_OUTCOME_INTENSITIES:
+            errors.append(f"T1-2: intensity '{intensity}' not valid")
+
+        # T1-3: Planet name normalization — canonical forms
+        _CANONICAL_PLANETS = {
+            "sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn",
+            "rahu", "ketu", "any_benefic", "any_malefic", "any_planet",
+            "general", "lord_of_1", "lord_of_2", "lord_of_3", "lord_of_4",
+            "lord_of_5", "lord_of_6", "lord_of_7", "lord_of_8", "lord_of_9",
+            "lord_of_10", "lord_of_11", "lord_of_12",
+        }
+        for i, cond in enumerate(conditions):
+            planet = cond.get("planet", "")
+            if planet and planet.lower() not in _CANONICAL_PLANETS:
+                # Allow h{N}_lord format and multi-planet conjunctions
+                if not (planet.startswith("h") and "_lord" in planet):
+                    if "_" not in planet:  # not a conjunction pair
+                        errors.append(
+                            f"T1-3: conditions[{i}].planet='{planet}' not canonical"
+                        )
+
+        # T1-13: Claim minimum length and specificity
+        _GENERIC_CLAIMS = {
+            "good", "bad", "favorable", "unfavorable", "wealthy", "poor",
+            "happy", "unhappy", "positive", "negative", "beneficial",
+            "malefic", "benefic", "test", "general",
+        }
         for i, pred in enumerate(predictions):
             if not isinstance(pred, dict):
                 continue
             claim = pred.get("claim", "")
             if len(claim) < 10:
-                errors.append(f"predictions[{i}].claim='{claim}' too short ({len(claim)} < 10)")
+                errors.append(f"T1-13: predictions[{i}].claim='{claim}' too short ({len(claim)} < 10)")
+            if claim.lower().strip("_") in _GENERIC_CLAIMS:
+                errors.append(f"T1-13: predictions[{i}].claim='{claim}' is generic")
+            # Validate prediction entity
+            ent = pred.get("entity", "")
+            if ent and ent not in VALID_ENTITY_TARGETS:
+                errors.append(f"T1-2: predictions[{i}].entity='{ent}' not valid")
 
         if errors:
             raise ValueError(

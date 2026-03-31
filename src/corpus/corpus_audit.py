@@ -245,11 +245,78 @@ class CorpusAudit:
                     f"Santhanam notes or leave empty."
                 )
 
-        # --- SLIP-THROUGH CHECK 3: Commentary minimum for BPHS ---
-        # Santhanam provides notes on almost every BPHS sloka.
-        # A BPHS rule with no commentary is likely missing the notes.
-        # This is a WARNING (returned separately), not a hard error —
-        # some slokas genuinely have brief/no notes.
+        # --- T1-4: Confidence recomputation verification ─────────────────
+        # Confidence must match the mechanical formula. No editorial overrides.
+        conc_count = len(rule.concordance_texts) if rule.concordance_texts else 0
+        div_count = len([x for x in rule.divergence_notes.split(",") if x.strip()]) if rule.divergence_notes else 0
+        verse_bonus = 0.05 if rule.verse_ref else 0.0
+        expected_conf = min(1.0, 0.60 + verse_bonus + (0.08 * conc_count) - (0.05 * div_count))
+        if abs(rule.confidence - expected_conf) > 0.02:
+            errors.append(
+                f"{rid}: T1-4: confidence={rule.confidence:.2f} but formula gives "
+                f"{expected_conf:.2f} — confidence must be mechanically derived, "
+                f"not manually set"
+            )
+
+        # --- T1-6: Direction-description sentiment consistency ────────────
+        _NEGATIVE_KEYWORDS = {"destroy", "loss", "death", "poverty", "disease",
+                              "enemy", "misery", "begging", "penniless", "dumb",
+                              "hell", "sinful", "destroyed", "bereft", "afflict"}
+        _POSITIVE_KEYWORDS = {"wealth", "happiness", "long life", "fame",
+                              "prosperity", "fortunate", "honour", "happy"}
+        desc_lower = rule.description.lower()
+        desc_words = set(desc_lower.split())
+        neg_hits = desc_words & _NEGATIVE_KEYWORDS
+        pos_hits = desc_words & _POSITIVE_KEYWORDS
+        # Check for negation context — "loss of wealth" and "devoid of happiness"
+        # are negative despite containing positive words
+        _NEGATION_PATTERNS = ("loss of", "lose ", "lost ", "devoid of", "bereft of",
+                              "no ", "not ", "without ", "lack of", "deny", "depriv",
+                              "destroy", "will not")
+        has_negation = any(pat in desc_lower for pat in _NEGATION_PATTERNS)
+        if neg_hits and not pos_hits and rule.outcome_direction == "favorable":
+            errors.append(
+                f"{rid}: T1-6: direction='favorable' but description contains "
+                f"negative language {neg_hits} — verify direction"
+            )
+        if pos_hits and not neg_hits and not has_negation and rule.outcome_direction == "unfavorable":
+            errors.append(
+                f"{rid}: T1-6: direction='unfavorable' but description contains "
+                f"positive language {pos_hits} without negation — verify direction"
+            )
+
+        # --- T1-7: Dasha timing regex extension ──────────────────────────
+        import re
+        dasha_patterns = re.findall(
+            r'(?:during|in)\s+(\w+)\s+(?:dasha|mahadasha|period|antardasha)',
+            desc_lower
+        )
+        if dasha_patterns and rule.timing_window.get("type") != "dasha_period":
+            errors.append(
+                f"{rid}: T1-7: description mentions dasha period(s) "
+                f"{dasha_patterns} but timing_window.type is not 'dasha_period'"
+            )
+
+        # --- T1-11: System-source validation ─────────────────────────────
+        try:
+            from src.corpus.source_texts import get_expected_system
+            expected_system = get_expected_system(rule.source)
+            if expected_system and rule.system != expected_system:
+                errors.append(
+                    f"{rid}: T1-11: source='{rule.source}' expects "
+                    f"system='{expected_system}' but rule has "
+                    f"system='{rule.system}'"
+                )
+        except ImportError:
+            pass
+
+        # --- T1-12: Dasha scope completeness ─────────────────────────────
+        if (rule.timing_window.get("type") == "dasha_period"
+                and not rule.dasha_scope):
+            errors.append(
+                f"{rid}: T1-12: timing_window is dasha_period but "
+                f"dasha_scope is empty — specify which dasha lord(s)"
+            )
 
         return errors
 

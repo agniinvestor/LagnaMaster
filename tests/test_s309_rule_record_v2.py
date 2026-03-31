@@ -24,8 +24,9 @@ def _minimal_rule(**overrides) -> RuleRecord:
         "chapter": "Ch.1",
         "school": "parashari",
         "category": "test",
-        "description": "Test rule for contract validation",
-        "confidence": 0.7,
+        "description": "Test rule for contract validation with enough length",
+        "confidence": 0.65,
+        "verse_ref": "Ch.1 v.1",
     }
     defaults.update(overrides)
     return RuleRecord(**defaults)
@@ -42,7 +43,7 @@ def test_minimal_rule_creates_without_new_fields():
     """Existing Phase 1A constructor still works — no new required args."""
     r = _minimal_rule()
     assert r.rule_id == "TEST001"
-    assert r.confidence == 0.7
+    assert r.confidence == 0.65
 
 
 def test_existing_phase1b_constructor_still_works():
