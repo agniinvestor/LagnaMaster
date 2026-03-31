@@ -1,0 +1,521 @@
+"""src/corpus/bphs_v2_ch16.py — BPHS Ch.16 (5th House Effects) V2 Re-encode.
+
+Source: R. Santhanam, BPHS Vol 1, pp.145-151.
+Chapter: 16 — Effects of the Fifth House (Putra Bhava Phala)
+Slokas: 32. Rich timing data (ages 30, 32, 33, 36, 40, 56).
+Entity: children (most), native (some), general (mixed).
+"""
+from __future__ import annotations
+
+from src.corpus.v2_builder import V2ChapterBuilder
+
+b = V2ChapterBuilder(
+    chapter="Ch.16", category="5th_house_effects",
+    id_start=1600, session="S311",
+    chapter_tags=["5th_house", "putra_bhava"],
+    entity_target="children",
+)
+
+# ═══ v.1-3: Lords in own signs → happiness through children ══════════════════
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": [1, 4, 5, 7, 9, 10]},
+    ],
+    signal_group="h5_lord_kendra_children",
+    direction="favorable", intensity="strong",
+    domains=["progeny", "intelligence_education"],
+    predictions=[
+        {"entity": "children", "claim": "happiness_through_children",
+         "domain": "progeny", "direction": "favorable", "magnitude": 0.8},
+    ],
+    verse_ref="Ch.16 v.1-3",
+    description=(
+        "Lords of ascendant and 5th in their own signs or in angle/trine: "
+        "one will enjoy thorough happiness through children."
+    ),
+    commentary_context=(
+        "Santhanam notes: 'Suta' in Sanskrit used in compound word or as "
+        "an adjective does not exclude a female issue for it means 'begotten'. "
+        "The conjunction of the 5th lord with the ascendant lord in a good "
+        "house will ensure early obtainment of children apart from happiness "
+        "through them."
+    ),
+    concordance_texts=["Saravali", "Phaladeepika"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1601"]},
+)
+
+# v.1-3b: 5th lord in dusthana → no offspring (contrary)
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 5, "house": [6, 8, 12]}],
+    signal_group="h5_lord_dusthana_no_children",
+    direction="unfavorable", intensity="strong",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "no_offspring_or_early_loss",
+         "domain": "progeny", "direction": "unfavorable", "magnitude": 0.8},
+    ],
+    verse_ref="Ch.16 v.1-3",
+    description=(
+        "5th lord in 6th, 8th, or 12th: there will be no offspring. If the "
+        "5th lord is combust or be with malefics and be weak, there will be "
+        "no children; even if per chance obtained they will quit the world soon."
+    ),
+    concordance_texts=["Saravali", "Phaladeepika"],
+    rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS1600"]},
+)
+
+# ═══ v.4: 5th lord in 6th + Mars → lose first child ═════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": 6},
+        {"type": "planets_conjunct", "planets": ["lord_of_1", "Mars"]},
+    ],
+    signal_group="h5_lord_h6_mars_child_loss",
+    direction="unfavorable", intensity="strong",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "lose_first_child",
+         "domain": "progeny", "direction": "unfavorable", "magnitude": 0.7},
+        {"entity": "spouse", "claim": "female_not_fertile_thereafter",
+         "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    entity_target="general",
+    verse_ref="Ch.16 v.4",
+    description=(
+        "5th lord in 6th as the ascendant lord is conjunct Mars: the native "
+        "will lose his very first child whereafter his female will not be "
+        "fertile to yield an offspring."
+    ),
+    concordance_texts=[],
+)
+
+# ═══ v.5-6: One child only conditions ════════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": [6, 8, 12]},
+        {"type": "planet_in_house", "planet": "Mercury", "house": 5},
+    ],
+    signal_group="h5_lord_dusthana_mercury_ketu_one_child",
+    direction="unfavorable", intensity="moderate",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "one_child_only",
+         "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.16 v.5-6",
+    description=(
+        "5th lord in fall/6th/8th/12th while Mercury and Ketu are in the "
+        "5th: wife will give birth to one child only. Similarly if 5th lord "
+        "in fall, not aspecting 5th, with Saturn and Mercury in 5th."
+    ),
+    commentary_context=(
+        "Santhanam notes: The very presence of Mercury, or Ketu, or Saturn "
+        "in the 5th will present a doubtful picture of progeny. If two of "
+        "them join in the 5th, then there will be Kakavandhya Dosha "
+        "(obtaining only a single issue) for the wife of the native, or "
+        "even childlessness."
+    ),
+    concordance_texts=[],
+    modifiers=[{"condition": "ketu_also_in_5th", "effect": "amplifies", "strength": "moderate"}],
+)
+
+# ═══ v.8: Difficulty in begetting ════════════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": [6, 8, 12]},
+    ],
+    signal_group="h5_lord_dusthana_difficulty",
+    direction="unfavorable", intensity="moderate",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "beget_issues_with_difficulty",
+         "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.16 v.8",
+    description=(
+        "5th lord in 6th/8th/12th or in an inimical sign or in fall or "
+        "in the 5th itself: the native will beget issues with difficulty."
+    ),
+    concordance_texts=[],
+)
+
+# ═══ v.9: Adopted issues ═════════════════════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Saturn", "house": 5},
+    ],
+    signal_group="saturn_mandi_h5_adoption",
+    direction="mixed", intensity="moderate",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "adopted_issues",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.16 v.9",
+    description=(
+        "5th house owned by Saturn or Mercury and be occupied or aspected "
+        "by Saturn and Mandi: one will have adopted issues."
+    ),
+    commentary_context=(
+        "Santhanam notes: 'Mandi' is the word used in the text which means "
+        "Gulika. The rule applies to Aquarius, Taurus, Virgo and Libra lagnas. "
+        "For the latter two, Saturn though rules the 5th, is helpless due to "
+        "Gulika affliction. Otherwise Saturn related to the 5th house as its "
+        "owner will not deprive one of progeny, making him go in for adoption."
+    ),
+    concordance_texts=[],
+    modifiers=[{"condition": "mandi_aspecting_5th", "effect": "conditionalizes", "strength": "strong"}],
+)
+
+# ═══ v.10: 3 mothers or 2 fathers ════════════════════════════════════════════
+
+b.add(
+    conditions=[{"type": "planets_conjunct", "planets": ["Sun", "Moon"]}],
+    entity_target="general",
+    signal_group="sun_moon_conjunct_rasi_navamsa_parents",
+    direction="unfavorable", intensity="moderate",
+    domains=["longevity"],
+    predictions=[
+        {"entity": "native", "claim": "brought_up_by_3_mothers_or_2_fathers",
+         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.16 v.10",
+    description=(
+        "Sun and Moon together in a Rasi and in the same Navamsa: the "
+        "native will be brought up by 3 mothers or 2 fathers. This hints "
+        "at possible loss of mother or father soon after birth."
+    ),
+    commentary_context=(
+        "Santhanam notes: The luminaries should be in the same Rasi and "
+        "same Navamsa. The child will be brought up by 3 females equal to "
+        "mother or two men as father (i.e. paternal reatives etc.)."
+    ),
+    concordance_texts=[],
+    cross_chapter_refs=["Ch.12 v.10 same combination"],
+)
+
+# ═══ v.11: Adopted issue ═════════════════════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": 12},
+    ],
+    signal_group="h5_lord_h12_adopted",
+    direction="mixed", intensity="moderate",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "adopted_issue_indicated",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.16 v.11",
+    description=(
+        "Adopted issue is indicated if the 5th is tenanted by six planets "
+        "while its lord is in the 12th, and the Moon and ascendant are "
+        "endowed with strength."
+    ),
+    concordance_texts=[],
+)
+
+# ═══ v.12: Many children ═════════════════════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": "any"},
+        {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "strong"},
+    ],
+    signal_group="h5_lord_strong_many_children",
+    direction="favorable", intensity="strong",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "many_children",
+         "domain": "progeny", "direction": "favorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.16 v.12",
+    description=(
+        "There will be many children if the 5th lord is strong while the "
+        "5th is aspected by strong Mercury, Jupiter and Venus."
+    ),
+    concordance_texts=["Saravali"],
+)
+
+# ═══ v.13: Daughters ═════════════════════════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "planets_conjunct", "planets": ["lord_of_5", "Moon"]},
+    ],
+    signal_group="h5_lord_moon_daughters",
+    direction="neutral", intensity="moderate",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "beget_daughters",
+         "domain": "progeny", "direction": "neutral", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.16 v.13",
+    description=(
+        "5th lord with the Moon or in her decanate: the native will beget "
+        "daughters, so say astrologers."
+    ),
+    commentary_context=(
+        "Santhanam notes: The 5th lord's joining the Moon will confer "
+        "daughters rather than sons. The Moon is a planet of multiplicity "
+        "and hence there will be a number of daughters. Moon's decanates "
+        "are: first 10° of Cancer, second 10° of Pisces, third 10° of "
+        "Scorpio."
+    ),
+    concordance_texts=[],
+    prediction_type="trait",
+)
+
+# ═══ v.14: Questionable birth ════════════════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": "any"},
+        {"type": "planet_in_house", "planet": "Saturn", "house": 5},
+    ],
+    signal_group="h5_lord_movable_saturn_rahu_illegitimate",
+    direction="unfavorable", intensity="strong",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "questionable_or_illegitimate_birth",
+         "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.16 v.14",
+    description=(
+        "5th lord in a movable sign while Saturn is in the 5th as Rahu is "
+        "with the Moon: the child (so born) is of questionable birth."
+    ),
+    commentary_context=(
+        "Santhanam notes: 3 conditions — (a) 5th lord in movable sign, "
+        "(b) 5th house occupied by Saturn, (c) Moon with Rahu (anywhere). "
+        "The combinations indicating illegal birth get nullified under "
+        "certain conditions."
+    ),
+    concordance_texts=[],
+    modifiers=[
+        {"condition": "h5_lord_in_movable_sign", "effect": "conditionalizes", "strength": "strong"},
+        {"condition": "moon_with_rahu", "effect": "amplifies", "strength": "moderate"},
+    ],
+)
+
+# ═══ v.16: 5th lord exalted + Jupiter → children assured ════════════════════
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": [2, 5, 9]},
+        {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "exalted"},
+    ],
+    signal_group="h5_lord_exalted_trikona_children",
+    direction="favorable", intensity="strong",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "obtainment_of_children_assured",
+         "domain": "progeny", "direction": "favorable", "magnitude": 0.8},
+    ],
+    verse_ref="Ch.16 v.16",
+    description=(
+        "5th lord exalted or in 2nd/5th/9th from ascendant or conjunct/"
+        "aspected by Jupiter: obtainment of children will be there."
+    ),
+    commentary_context=(
+        "Santhanam notes: Anyone of 3 states ensures children — 1) 5th "
+        "lord in exaltation, 2) 5th lord in 2nd/5th/9th, 3) 5th lord "
+        "related to Jupiter by aspect or conjunction. Even though Jupiter "
+        "may be ruler of the 6th or 8th or 12th, his association with the "
+        "5th lord will ensure obtainment of children."
+    ),
+    concordance_texts=["Saravali"],
+    convergence_signals=["jupiter_aspecting_5th", "h5_lord_strong"],
+)
+
+# ═══ v.18: Offspring at 32nd/33rd year ═══════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Jupiter", "house": 5},
+    ],
+    signal_group="jupiter_h5_offspring_32",
+    direction="favorable", intensity="moderate",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "offspring_at_age_32_or_33",
+         "domain": "progeny", "direction": "favorable", "magnitude": 0.6},
+    ],
+    timing_window={"type": "age_range", "value": [32, 33], "precision": "approximate"},
+    verse_ref="Ch.16 v.18",
+    description=(
+        "If the 5th is occupied by Jupiter while its lord is with Venus, "
+        "one will obtain an offspring in his 32nd/33rd year."
+    ),
+    concordance_texts=[],
+    modifiers=[{"condition": "h5_lord_with_venus", "effect": "conditionalizes", "strength": "moderate"}],
+)
+
+# ═══ v.19: Child at 30 or 36 ═════════════════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": [1, 4, 7, 10]},
+    ],
+    signal_group="h5_lord_kendra_jupiter_child_30_36",
+    direction="favorable", intensity="moderate",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "beget_child_at_age_30_or_36",
+         "domain": "progeny", "direction": "favorable", "magnitude": 0.6},
+    ],
+    timing_window={"type": "age_range", "value": [30, 36], "precision": "approximate"},
+    verse_ref="Ch.16 v.19",
+    description=(
+        "5th lord in an angle along with Jupiter the Karaka: one will "
+        "beget a child at the age of 30 or 36."
+    ),
+    concordance_texts=[],
+)
+
+# ═══ v.20: Child at 40 ══════════════════════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Jupiter", "house": 9},
+    ],
+    signal_group="jupiter_h9_venus_child_40",
+    direction="favorable", intensity="moderate",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "beget_child_at_age_40",
+         "domain": "progeny", "direction": "favorable", "magnitude": 0.5},
+    ],
+    timing_window={"type": "age", "value": 40, "precision": "approximate"},
+    verse_ref="Ch.16 v.20",
+    description=(
+        "Jupiter in the 9th from the ascendant while Venus is in the 9th "
+        "from Jupiter along with the ascendant lord: one will beget a "
+        "child at the age of 40."
+    ),
+    concordance_texts=[],
+    modifiers=[
+        {"condition": "venus_in_9th_from_jupiter", "effect": "conditionalizes", "strength": "moderate"},
+        {"condition": "ascendant_lord_with_venus", "effect": "amplifies", "strength": "moderate"},
+    ],
+)
+
+# ═══ v.21: Lose child at 32 ══════════════════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Rahu", "house": 5},
+    ],
+    signal_group="rahu_h5_child_loss_32",
+    direction="unfavorable", intensity="strong",
+    domains=["progeny", "longevity"],
+    predictions=[
+        {"entity": "children", "claim": "lose_child_at_age_32",
+         "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7},
+    ],
+    timing_window={"type": "age", "value": 32, "precision": "approximate"},
+    verse_ref="Ch.16 v.21",
+    description=(
+        "The native will at the age of 32 lose his child if Rahu is in "
+        "the 5th, the 5th lord is conjunct a malefic and Jupiter is in "
+        "debilitation."
+    ),
+    concordance_texts=[],
+    modifiers=[
+        {"condition": "h5_lord_conjunct_malefic", "effect": "amplifies", "strength": "strong"},
+        {"condition": "jupiter_debilitated", "effect": "amplifies", "strength": "strong"},
+    ],
+)
+
+# ═══ v.22: Loss of children at 33 and 36 ═════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "any_malefic", "house": "any"},
+    ],
+    signal_group="malefic_5th_from_jupiter_child_loss_33_36",
+    direction="unfavorable", intensity="strong",
+    domains=["progeny", "longevity"],
+    predictions=[
+        {"entity": "children", "claim": "loss_of_children_at_33_and_36",
+         "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7},
+    ],
+    timing_window={"type": "age_range", "value": [33, 36], "precision": "approximate"},
+    verse_ref="Ch.16 v.22",
+    description=(
+        "There will be loss of children at 33 and 36 if a malefic is in "
+        "the 5th from Jupiter while another is in the 5th from the ascendant."
+    ),
+    concordance_texts=[],
+)
+
+# ═══ v.23: Grief from child loss at 56 ═══════════════════════════════════════
+
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "any_malefic", "house": 1},
+    ],
+    signal_group="mandi_asc_child_loss_56",
+    direction="unfavorable", intensity="strong",
+    domains=["progeny", "longevity"],
+    predictions=[
+        {"entity": "children", "claim": "grief_loss_of_child_at_56",
+         "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7},
+    ],
+    timing_window={"type": "age", "value": 56, "precision": "approximate"},
+    verse_ref="Ch.16 v.23",
+    description=(
+        "Should Mandi be in the ascendant while the ascendant lord is in "
+        "fall: grief on account of loss of child at the age of 56."
+    ),
+    commentary_context=(
+        "Santhanam notes: Mandi and Gulika are one and the same. The "
+        "placement of Gulika in the ascendant while its lord is in "
+        "debilitation at the native's age of 56 will cause death of an "
+        "offspring. Similarly, the debilitation of Gulika's dispositor "
+        "will cause harm to the bhava concerned."
+    ),
+    concordance_texts=[],
+    modifiers=[{"condition": "ascendant_lord_in_fall", "effect": "conditionalizes", "strength": "strong"}],
+)
+
+# ═══ v.24-32: Number of children (compound rules, key ones) ══════════════════
+
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 5, "house": "any"},
+        {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "exalted"},
+    ],
+    signal_group="h5_lord_deep_exalt_10_sons",
+    direction="favorable", intensity="strong",
+    domains=["progeny"],
+    predictions=[
+        {"entity": "children", "claim": "ten_sons_indicated",
+         "domain": "progeny", "direction": "favorable", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.16 v.24-32",
+    description=(
+        "There will be 10 sons if the 4th and the 6th are occupied by "
+        "malefics while the 5th lord is in deep exaltation joining the "
+        "ascendant lord as Jupiter is with another benefic. Nine sons if "
+        "Jupiter is in deep exaltation with Rahu, 2nd lord, and 9th "
+        "occupied by its own lord. Eight if Jupiter in 5th/9th + 5th lord "
+        "strong + 2nd lord in 10th. Seven including twins born twice if "
+        "Saturn in 9th from ascendant + 5th lord in 5th."
+    ),
+    commentary_context=(
+        "Santhanam: These are indicative numbers for modern interpretation. "
+        "If the 5th lord is with Mars, one will live long but lose his "
+        "children one after the other as they are born."
+    ),
+    concordance_texts=[],
+    prediction_type="trait",
+)
+
+BPHS_V2_CH16_REGISTRY = b.build()
