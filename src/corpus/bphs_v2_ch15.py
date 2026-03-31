@@ -11,7 +11,7 @@ from src.corpus.v2_builder import V2ChapterBuilder
 
 b = V2ChapterBuilder(
     chapter="Ch.15", category="4th_house_effects",
-    id_start=1500, session="S311", min_commentary=0.0, min_concordance=0.0, sloka_count=14,
+    id_start=1500, session="S311", sloka_count=14,
     chapter_tags=["4th_house", "sukha_bhava"],
     entity_target="native",
 )
@@ -28,6 +28,7 @@ b.add(
          "domain": "property_vehicles", "direction": "favorable", "magnitude": 0.8},
     ],
     verse_ref="Ch.15 v.2",
+    commentary_context="No separate Santhanam note. The verse conditions are explicit: 4th occupied by its lord or aspected by benefic.",
     description=(
         "One will have residential comforts in full degree if the 4th is "
         "occupied by its lord or by the ascendant lord and be aspected by "
@@ -52,6 +53,7 @@ b.add(
          "domain": "property_vehicles", "direction": "favorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.15 v.3",
+    commentary_context="No separate Santhanam note. The 5th lord (not 4th) is mentioned — likely a bhavat bhavam reference: 5th = 2nd from 4th (resources of the home).",
     description=(
         "5th lord in own house or own Navamsa or in exaltation: endowed "
         "with comforts related to lands, conveyances, houses etc. and "
@@ -75,6 +77,7 @@ b.add(
          "domain": "property_vehicles", "direction": "favorable", "magnitude": 0.8},
     ],
     verse_ref="Ch.15 v.4",
+    commentary_context="No separate Santhanam note. 10th-4th connection = karma-sukha yoga (career providing domestic happiness).",
     description=(
         "10th lord joins the 4th lord in an angle or in a trine: the "
         "native will acquire beautiful mansions."
@@ -96,6 +99,7 @@ b.add(
          "domain": "fame_reputation", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.15 v.5",
+    commentary_context="No separate Santhanam note. Mercury in ascendant with benefic 4th lord = intelligence earning respect from relatives.",
     description=(
         "Mercury in the ascendant while the 4th lord being a benefic is "
         "aspected by another benefic: the native will be honoured by "
@@ -158,6 +162,7 @@ b.add(
          "domain": "mental_health", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.15 v.7",
+    commentary_context="No separate Santhanam note. Triple benefic condition: 4th lord in kendra + Venus in kendra + Mercury exalted.",
     description=(
         "The native's mother will be happy if the 4th lord is in an "
         "angle while Venus is also in an angle as Mercury is exalted."
@@ -184,6 +189,7 @@ b.add(
          "domain": "property_vehicles", "direction": "favorable", "magnitude": 0.5},
     ],
     verse_ref="Ch.15 v.8",
+    commentary_context="No separate Santhanam note. A specific 3-planet yoga for material possessions (cattle/vehicles in modern context).",
     description=(
         "Sun in the 4th, Moon in the 9th and Saturn and Mars in the "
         "11th — this yoga will confer cows and buffaloes on the native."
@@ -209,6 +215,7 @@ b.add(
          "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.15 v.9",
+    commentary_context="No separate Santhanam note. The movable ascendant condition is critical — does not apply to fixed or dual lagnas.",
     description=(
         "4th lord and Mars together in the 6th or the 8th house with "
         "a movable ascendant: the native will be dumb."
@@ -272,6 +279,7 @@ b.add(
     ],
     timing_window={"type": "age", "value": 32, "precision": "approximate"},
     verse_ref="Ch.15 v.10-14",
+    commentary_context="Santhanam: Sun in 4th + 4th lord exalted + Venus = conveyances at 32. This is the second timing condition in the series.",
     description=(
         "Sun in the 4th house, the 4th lord is exalted and be with Venus: "
         "one will acquire conveyances in his 32nd year."
@@ -294,6 +302,7 @@ b.add(
     ],
     timing_window={"type": "age", "value": 42, "precision": "approximate"},
     verse_ref="Ch.15 v.10-14",
+    commentary_context="Santhanam: 4th lord joins 10th lord in 4th lord's exaltation Navamsa = conveyances at 42. Third timing condition.",
     description=(
         "It will be in the 42nd year that one will be endowed with "
         "conveyances if the 4th lord joins the 10th lord in his (4th "
@@ -317,6 +326,7 @@ b.add(
     ],
     timing_window={"type": "age", "value": 12, "precision": "approximate"},
     verse_ref="Ch.15 v.10-14",
+    commentary_context="Santhanam: Exchange between 4th and 11th lords = another route to conveyances at age 12. The sage prescribes multiple combinations for the same timing.",
     description=(
         "An exchange between the 11th and the 4th lords will confer "
         "conveyances in the 12th year."
@@ -336,6 +346,13 @@ b.add(
          "domain": "property_vehicles", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.15 v.10-14",
+    commentary_context=(
+        "Santhanam: Should a benefic be in the 4th, aspect the 4th, or "
+        "aspect the lord of the 4th house, the native will be happy with "
+        "conveyances and be free from accidents and dangers. A malefic "
+        "replacing the said benefic will cause losses concerning vehicles "
+        "and reduce one to severe accidents."
+    ),
     description=(
         "A benefic be in the 4th, aspect the 4th, or aspect the lord "
         "of the 4th house: the native will be happy with conveyances "
@@ -356,6 +373,7 @@ b.add(
          "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.15 v.10-14",
+    commentary_context="Contrary of BPHS1512. Santhanam explicitly states malefic = losses and severe accidents.",
     description=(
         "A malefic replacing the said benefic will produce only malefic "
         "effects in respect of conveyances and reduce one to severe "

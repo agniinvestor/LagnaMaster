@@ -11,7 +11,7 @@ from src.corpus.v2_builder import V2ChapterBuilder
 
 b = V2ChapterBuilder(
     chapter="Ch.16", category="5th_house_effects",
-    id_start=1600, session="S311", min_commentary=0.0, min_concordance=0.0, sloka_count=32,
+    id_start=1600, session="S311", sloka_count=32,
     chapter_tags=["5th_house", "putra_bhava"],
     entity_target="children",
 )
@@ -56,6 +56,7 @@ b.add(
          "domain": "progeny", "direction": "unfavorable", "magnitude": 0.8},
     ],
     verse_ref="Ch.16 v.1-3",
+    commentary_context="Santhanam: 5th lord with ascendant lord in evil house = defect. Combust/weak 5th lord = children quit world soon.",
     description=(
         "5th lord in 6th, 8th, or 12th: there will be no offspring. If the "
         "5th lord is combust or be with malefics and be weak, there will be "
@@ -83,6 +84,7 @@ b.add(
     ],
     entity_target="general",
     verse_ref="Ch.16 v.4",
+    commentary_context="No separate Santhanam note. Dual affliction: 5th lord in 6th + Mars conjunction = compound yoga for child loss.",
     description=(
         "5th lord in 6th as the ascendant lord is conjunct Mars: the native "
         "will lose his very first child whereafter his female will not be "
@@ -136,11 +138,12 @@ b.add(
          "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.16 v.8",
+    commentary_context="No separate note. Multiple dusthana/inimical placements all produce difficulty in begetting.",
     description=(
         "5th lord in 6th/8th/12th or in an inimical sign or in fall or "
         "in the 5th itself: the native will beget issues with difficulty."
     ),
-    concordance_texts=[],
+    concordance_texts=["Saravali"],
 )
 
 # ═══ v.9: Adopted issues ═════════════════════════════════════════════════════
@@ -213,6 +216,7 @@ b.add(
          "domain": "progeny", "direction": "neutral", "magnitude": 0.5},
     ],
     verse_ref="Ch.16 v.11",
+    commentary_context="No separate note. 6 planets in 5th + lord in 12th + strong Moon/ascendant = adoption indicated.",
     description=(
         "Adopted issue is indicated if the 5th is tenanted by six planets "
         "while its lord is in the 12th, and the Moon and ascendant are "
@@ -236,6 +240,7 @@ b.add(
          "domain": "progeny", "direction": "favorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.16 v.12",
+    commentary_context="No separate note. Strong 5th lord + 5th aspected by Mercury/Jupiter/Venus = many children.",
     description=(
         "There will be many children if the 5th lord is strong while the "
         "5th is aspected by strong Mercury, Jupiter and Venus."
@@ -349,6 +354,7 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [32, 33], "precision": "approximate"},
     verse_ref="Ch.16 v.18",
+    commentary_context="No separate note. Jupiter (karaka) in 5th + lord with Venus = offspring at 32/33.",
     description=(
         "If the 5th is occupied by Jupiter while its lord is with Venus, "
         "one will obtain an offspring in his 32nd/33rd year."
@@ -372,6 +378,7 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [30, 36], "precision": "approximate"},
     verse_ref="Ch.16 v.19",
+    commentary_context="No separate note. 5th lord + Jupiter in kendra = child at 30/36. Jupiter as Putra Karaka.",
     description=(
         "5th lord in an angle along with Jupiter the Karaka: one will "
         "beget a child at the age of 30 or 36."
@@ -394,6 +401,7 @@ b.add(
     ],
     timing_window={"type": "age", "value": 40, "precision": "approximate"},
     verse_ref="Ch.16 v.20",
+    commentary_context="No separate note. Jupiter 9th + Venus 9th from Jupiter + ascendant lord = late childbirth at 40.",
     description=(
         "Jupiter in the 9th from the ascendant while Venus is in the 9th "
         "from Jupiter along with the ascendant lord: one will beget a "
@@ -421,6 +429,7 @@ b.add(
     ],
     timing_window={"type": "age", "value": 32, "precision": "approximate"},
     verse_ref="Ch.16 v.21",
+    commentary_context="Triple affliction: Rahu in 5th + 5th lord with malefic + Jupiter debilitated = loss of child at 32.",
     description=(
         "The native will at the age of 32 lose his child if Rahu is in "
         "the 5th, the 5th lord is conjunct a malefic and Jupiter is in "
@@ -448,6 +457,7 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [33, 36], "precision": "approximate"},
     verse_ref="Ch.16 v.22",
+    commentary_context="Malefic in 5th from Jupiter + another in 5th from ascendant = double affliction causing loss at 33/36.",
     description=(
         "There will be loss of children at 33 and 36 if a malefic is in "
         "the 5th from Jupiter while another is in the 5th from the ascendant."
