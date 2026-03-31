@@ -246,4 +246,98 @@ b.add(
     concordance_texts=[],
 )
 
+
+# ═══ v.7-8½: Miscellaneous — planets in 7th indicate type of female ══════════
+b.add(conditions=[{"type": "planet_in_house", "planet": "Sun", "house": 7}],
+      entity_target="native",
+      signal_group="sun_h7_barren_females", direction="unfavorable", intensity="moderate",
+      domains=["marriage"],
+      predictions=[{"entity": "native", "claim": "befriend_barren_females_for_sexual_union", "domain": "marriage", "direction": "unfavorable", "magnitude": 0.5}],
+      verse_ref="Ch.18 v.7-8",
+      commentary_context="Santhanam: Sun in 7th = native seeks pleasures from barren females. Any planet in 7th (including 7th lord) indicates absence of sterlingness in character regarding sexual union.",
+      description="Sun in 7th: native will befriend barren females for sexual union.")
+
+b.add(conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 7}],
+      entity_target="native",
+      signal_group="mars_h7_marriageable_girls", direction="mixed", intensity="moderate",
+      domains=["marriage"],
+      predictions=[{"entity": "native", "claim": "associate_with_marriageable_age_females", "domain": "marriage", "direction": "mixed", "magnitude": 0.5}],
+      verse_ref="Ch.18 v.7-8",
+      commentary_context="Santhanam: Mars in 7th = female of marriageable age, or one in her monthly course, or one devoid of conceiving ability. Jupiter in 7th is also no exception.",
+      description="Mars in 7th: associate with marriageable girls or those with menses.")
+
+b.add(conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 7}],
+      entity_target="native",
+      signal_group="mercury_h7_traders_community", direction="mixed", intensity="weak",
+      domains=["marriage"],
+      predictions=[{"entity": "native", "claim": "associate_with_mean_females_traders_community", "domain": "marriage", "direction": "mixed", "magnitude": 0.4}],
+      verse_ref="Ch.18 v.7-8",
+      commentary_context="Santhanam: Mercury = harlots, mean females, females of traders' community. The kind corresponds to the sign becoming the 7th house.",
+      description="Mercury in 7th: associate with mean females or those from traders' community.")
+
+# ═══ v.9-9½: Physical features of spouse ══════════════════════════════════════
+b.add(conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 7}],
+      signal_group="mars_h7_spouse_appearance", direction="neutral", intensity="moderate",
+      domains=["marriage", "physical_appearance"],
+      predictions=[{"entity": "spouse", "claim": "female_with_attractive_breasts", "domain": "physical_appearance", "direction": "favorable", "magnitude": 0.4}],
+      verse_ref="Ch.18 v.9",
+      commentary_context="Santhanam: Mars = attractive breasts. Saturn = sick/weak spouse. Jupiter = hard/prominent breasts. Venus = bulky/excellent breasts.",
+      description="Mars indicates female with attractive breasts. Saturn = sick/weak. Jupiter = hard/prominent. Venus = excellent.",
+      prediction_type="trait")
+
+# ═══ v.10-13½: Morality — spouse controlled by others ════════════════════════
+b.add(conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 12}],
+      entity_target="spouse",
+      signal_group="malefics_h12_moon_h5_spouse_controlled", direction="unfavorable", intensity="moderate",
+      domains=["marriage", "character_temperament"],
+      predictions=[{"entity": "spouse", "claim": "spouse_controlled_by_others_inimical_to_race", "domain": "marriage", "direction": "unfavorable", "magnitude": 0.6}],
+      verse_ref="Ch.18 v.10-13",
+      commentary_context="Santhanam: 4 hints in v.10-13: 1) Moon decreasing + 5th house malefic + 12th/7th malefic = high-handed spouse. 2) Saturn/Mars in 7th = questionable character. 3) Venus in Mars Navamsa = unusual sexual habits. 4) Venus related to Saturn = ugly relations with another male.",
+      description="Malefics in 12th + Moon in 5th: spouse controlled by others, inimical to family.",
+      modifiers=[{"condition": "moon_decreasing_in_5th", "effect": "conditionalizes", "strength": "moderate"}])
+
+# ═══ v.16: Evils to spouse ════════════════════════════════════════════════════
+b.add(conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 7}],
+      entity_target="spouse",
+      signal_group="malefic_h7_evils_to_spouse", direction="unfavorable", intensity="moderate",
+      domains=["marriage", "physical_health"],
+      predictions=[{"entity": "spouse", "claim": "wife_incur_evils_especially_if_bereft_of_strength", "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.6}],
+      verse_ref="Ch.18 v.16",
+      commentary_context="Santhanam: 7th house or its lord conjunct malefic + bereft of strength = wife incur evils. Especially if the 7th house/lord is not strong.",
+      description="7th house or its lord conjunct malefic, bereft of strength: wife will incur evils.")
+
+# ═══ v.18: Lack of conjugal felicity ═════════════════════════════════════════
+b.add(conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 7},
+                   {"type": "lord_in_house", "lord_of": 7, "house": 12}],
+      entity_target="native",
+      signal_group="moon_h7_h7_lord_h12_no_marital_happiness", direction="unfavorable", intensity="moderate",
+      domains=["marriage"],
+      predictions=[{"entity": "native", "claim": "not_endowed_with_marital_happiness", "domain": "marriage", "direction": "unfavorable", "magnitude": 0.6}],
+      verse_ref="Ch.18 v.18",
+      commentary_context="Santhanam: Moon in 7th + 7th lord in 12th + Venus (Karaka) bereft of strength = no marital happiness. Moon increasing would stall adversity.",
+      description="Moon in 7th + 7th lord in 12th + Venus weak: not endowed with marital happiness.",
+      modifiers=[{"condition": "venus_bereft_of_strength", "effect": "amplifies", "strength": "moderate"}])
+
+# ═══ v.19-21: Plurality of wives ══════════════════════════════════════════════
+b.add(conditions=[{"type": "lord_in_house", "lord_of": 7, "house": "any"},
+                   {"type": "planet_dignity", "planet": "lord_of_7", "dignity": "debilitated"}],
+      entity_target="native",
+      signal_group="h7_lord_fall_two_wives", direction="neutral", intensity="moderate",
+      domains=["marriage"],
+      predictions=[{"entity": "native", "claim": "two_wives_if_7th_lord_in_fall", "domain": "marriage", "direction": "neutral", "magnitude": 0.5}],
+      verse_ref="Ch.18 v.19-21",
+      commentary_context="Santhanam: 7th lord in fall + malefic sign + 7th Navamsa eunuch planet = 2 wives. Mars+Venus in 7th + Saturn + ascendant lord in 8th = 3 wives. Venus in dual sign + lord exalted + 7th lord strong = many wives. For dual marriage, 7th from natal or Navamsa ascendant should be owned by eunuch planet (Gemini, Virgo, Capricorn, Aquarius).",
+      description="7th lord in fall or malefic sign, 7th Navamsa = eunuch planet: two wives. Mars+Venus+Saturn = three. Venus in dual sign = many.")
+
+# ═══ v.40-41: Three marriages ═════════════════════════════════════════════════
+b.add(conditions=[{"type": "planet_in_house", "planet": "Moon", "house": "any"}],
+      entity_target="native",
+      signal_group="moon_venus_mercury_three_marriages", direction="neutral", intensity="moderate",
+      domains=["marriage"],
+      predictions=[{"entity": "native", "claim": "three_marriages_at_10_22_33", "domain": "marriage", "direction": "neutral", "magnitude": 0.5}],
+      timing_window={"type": "age_range", "value": [10, 33], "precision": "approximate"},
+      verse_ref="Ch.18 v.40-41",
+      commentary_context="Santhanam: Moon in 7th from Venus + Mercury in 7th from Moon + 8th lord in 5th = 3 marriages. Marriage in 10th year, another in 22nd year, another in 33rd year.",
+      description="Moon in 7th from Venus + Mercury in 7th from Moon + 8th lord in 5th: three marriages (10th, 22nd, 33rd year).")
+
 BPHS_V2_CH18_REGISTRY = b.build()
