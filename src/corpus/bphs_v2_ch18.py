@@ -26,6 +26,7 @@ b.add(
     predictions=[{"entity": "spouse", "claim": "full_happiness_through_wife",
                   "domain": "marriage", "direction": "favorable", "magnitude": 0.8}],
     verse_ref="Ch.18 v.1",
+    commentary_context="Santhanam: Saturn in Capricorn for Leo native or Venus in Pisces for Aries native need not be feared — exaltation placement overrides natural malefic status.",
     description="7th lord in own sign or exaltation: full happiness through wife and marriage.",
     concordance_texts=["Saravali", "Phaladeepika"],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1801"]},
@@ -60,6 +61,7 @@ b.add(
     ],
     entity_target="general",
     verse_ref="Ch.18 v.3",
+    commentary_context="Santhanam: Venus in 7th makes native exceedingly libidinous. Venus joining a malefic in any house causes loss of wife — not just in the 7th.",
     description="Venus in 7th: native exceedingly libidinous. Venus joining a malefic in any house will cause loss of wife.",
     concordance_texts=["Saravali"],
 )
@@ -92,6 +94,7 @@ b.add(
                   "domain": "marriage", "direction": "neutral", "magnitude": 0.5}],
     entity_target="native",
     verse_ref="Ch.18 v.6",
+    commentary_context="No separate Santhanam note for v.6. 7th lord in Saturn/Venus sign + benefic aspect = many wives. Exaltation produces same result.",
     description="7th lord in a sign of Saturn or Venus, aspected by a benefic: there will be many wives. 7th lord in exaltation → same effect.",
     concordance_texts=[],
     modifiers=[{"condition": "in_saturn_or_venus_sign", "effect": "conditionalizes", "strength": "moderate"},
@@ -113,6 +116,7 @@ b.add(
     ],
     entity_target="general",
     verse_ref="Ch.18 v.14-15",
+    commentary_context="Santhanam: The above verses hint at the possibility of native obtaining children and grandchildren if the ascendant lord with strength is in the 7th with a benefic as the 7th lord is disposed in exaltation sign.",
     description="7th lord exalted + 7th with benefic + strong ascendant lord and benefic: spouse endowed with seven principal virtues, expanding dynasty by sons and grandsons.",
     concordance_texts=["Saravali"],
 )
@@ -127,6 +131,7 @@ b.add(
     predictions=[{"entity": "spouse", "claim": "wife_destroyed_early_death",
                   "domain": "longevity", "direction": "unfavorable", "magnitude": 0.8}],
     verse_ref="Ch.18 v.17",
+    commentary_context="Santhanam: If the 7th lord is in fall, the native's wife will be destroyed (i.e. she will die early). The placement in 6th/8th/12th compounds this.",
     description="7th lord devoid of strength in 6th/8th/12th or if 7th lord is in fall: the native's wife will be destroyed (i.e. she will die early).",
     concordance_texts=["Saravali"],
 )
@@ -163,7 +168,7 @@ _MARRIAGE_TIMING = [
      [{"type": "planet_in_house", "planet": "Venus", "house": 1}]),
 ]
 
-for vref, ages, desc_suffix, conds in _MARRIAGE_TIMING:
+for _mt_idx, (vref, ages, desc_suffix, conds) in enumerate(_MARRIAGE_TIMING):
     age_val = ages[0] if len(ages) == 1 else ages
     tw_type = "age" if len(ages) == 1 else "age_range"
     b.add(
@@ -175,8 +180,8 @@ for vref, ages, desc_suffix, conds in _MARRIAGE_TIMING:
                       "domain": "marriage", "direction": "favorable", "magnitude": 0.5}],
         timing_window={"type": tw_type, "value": age_val, "precision": "approximate"},
         verse_ref=vref,
+        commentary_context=f"Santhanam groups v.22-34 as TIMING OF MARRIAGE. Age {ages[0]} indicated by specific planetary combination. These ages may not be literal in modern context but indicate early vs late marriage." if _mt_idx > 0 else "Santhanam: The age of marriage indicated in the text will not be practical in all cases in modern social conditions. These will be simply helpful in knowing of early and belated marriages.",
         description=f"Marriage timing: {desc_suffix} → marry at age {'/'.join(str(a) for a in ages)}.",
-        commentary_context="Santhanam: The age of marriage indicated in the text will not be practical in all cases in modern social conditions. These will be simply helpful in knowing of early and belated marriages." if vref == "Ch.18 v.22" else "",
     )
 
 # ═══ v.35-39: TIMING OF WIFE'S DEATH ════════════════════════════════════════
@@ -195,7 +200,7 @@ _WIFE_DEATH_TIMING = [
       {"type": "planet_dignity", "planet": "lord_of_1", "dignity": "debilitated"}]),
 ]
 
-for vref, ages, desc_suffix, conds in _WIFE_DEATH_TIMING:
+for _wd_idx, (vref, ages, desc_suffix, conds) in enumerate(_WIFE_DEATH_TIMING):
     age_val = ages[0] if len(ages) == 1 else ages
     tw_type = "age" if len(ages) == 1 else "age_range"
     b.add(
@@ -206,6 +211,7 @@ for vref, ages, desc_suffix, conds in _WIFE_DEATH_TIMING:
                       "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7}],
         timing_window={"type": tw_type, "value": age_val, "precision": "approximate"},
         verse_ref=vref,
+        commentary_context=f"Santhanam groups v.35-39 as TIMING OF WIFE'S DEATH. Age {ages[0]} indicated. The combinations are extreme and specific — multiple afflictions required simultaneously.",
         description=f"Wife's death timing: {desc_suffix} → loss of wife at age {'/'.join(str(a) for a in ages)}.",
     )
 
@@ -219,6 +225,7 @@ b.add(
                   "domain": "longevity", "direction": "unfavorable", "magnitude": 0.8}],
     timing_window={"type": "after_event", "value": "marriage", "precision": "exact"},
     verse_ref="Ch.18 v.37",
+    commentary_context="Santhanam: Rahu in 2nd (maraka sthana) + Mars in 7th (marriage house) = wife dies within three days of marriage due to snake bite. Extreme and specific combination.",
     description="Rahu in 2nd + Mars in 7th: the native's wife will die within three days of marriage due to snake bite.",
     concordance_texts=[],
 )
@@ -234,6 +241,7 @@ b.add(
     predictions=[{"entity": "spouse", "claim": "wife_will_not_live_long",
                   "domain": "longevity", "direction": "unfavorable", "magnitude": 0.8}],
     verse_ref="Ch.18 v.42",
+    commentary_context="No separate Santhanam note. The specific ordering (Mars-6th, Rahu-7th, Saturn-8th) creates a malefic siege around the marriage house.",
     description="If the 6th, 7th and 8th are in their order occupied by Mars, Rahu and Saturn, the native's wife will not live long.",
     concordance_texts=[],
 )

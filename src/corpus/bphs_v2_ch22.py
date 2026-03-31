@@ -11,7 +11,7 @@ b = V2ChapterBuilder(chapter="Ch.22", category="11th_house_effects", id_start=22
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": [1, 4, 5, 7, 9, 10, 11]}],
       signal_group="h11_lord_kendra_gains", direction="favorable", intensity="strong", domains=["wealth"],
       predictions=[{"entity": "native", "claim": "many_gains", "domain": "wealth", "direction": "favorable", "magnitude": 0.8}],
-      verse_ref="Ch.22 v.2", description="11th lord in 11th or angle/trine: many gains. Even if combust but exalted → abundant gains.",
+      verse_ref="Ch.22 v.2", commentary_context="Santhanam: Even combust 11th lord in exaltation = abundant gains. Exaltation overrides combustion.", description="11th lord in 11th or angle/trine: many gains. Even if combust but exalted → abundant gains.",
       concordance_texts=["Saravali"], rule_relationship={"type": "alternative", "related_rules": ["BPHS2207"]})
 
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 3}],
@@ -25,13 +25,13 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": [1, 4, 5, 7,
       signal_group="h11_lord_kendra_500_nishkas_40", direction="favorable", intensity="moderate", domains=["wealth"],
       predictions=[{"entity": "native", "claim": "acquire_500_nishkas_at_40", "domain": "wealth", "direction": "favorable", "magnitude": 0.5}],
       timing_window={"type": "age", "value": 40, "precision": "approximate"},
-      verse_ref="Ch.22 v.5", description="11th lord conjunct benefic in angle/trine: 500 Nishkas at 40th year.",
+      verse_ref="Ch.22 v.5", commentary_context="No separate note. 11th lord + benefic in kendra/trikona = moderate gains at age 40.", description="11th lord conjunct benefic in angle/trine: 500 Nishkas at 40th year.",
       modifiers=[{"condition": "conjunct_benefic", "effect": "conditionalizes", "strength": "moderate"}])
 
 b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 11}],
       signal_group="jupiter_h11_6000_nishkas", direction="favorable", intensity="strong", domains=["wealth"],
       predictions=[{"entity": "native", "claim": "own_6000_nishkas", "domain": "wealth", "direction": "favorable", "magnitude": 0.8}],
-      verse_ref="Ch.22 v.6", description="Jupiter in 11th + 2nd by Moon + 9th by Venus: 6000 Nishkas.",
+      verse_ref="Ch.22 v.6", commentary_context="No separate note. Three natural benefics in wealth(2nd)/fortune(9th)/gains(11th) = extraordinary dhana yoga.", description="Jupiter in 11th + 2nd by Moon + 9th by Venus: 6000 Nishkas.",
       modifiers=[{"condition": "moon_in_2nd", "effect": "conditionalizes", "strength": "moderate"},
                  {"condition": "venus_in_9th", "effect": "conditionalizes", "strength": "moderate"}])
 
@@ -40,19 +40,19 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 1},
       signal_group="h11_h1_exchange_1000_nishkas_33", direction="favorable", intensity="strong", domains=["wealth"],
       predictions=[{"entity": "native", "claim": "gain_1000_nishkas_at_33", "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
       timing_window={"type": "age", "value": 33, "precision": "approximate"},
-      verse_ref="Ch.22 v.8", description="11th lord in ascendant + ascendant lord in 11th: 1000 Nishkas at 33rd year.")
+      verse_ref="Ch.22 v.8", commentary_context="No separate note. 11th-1st parivartana links personality with gains at age 33.", description="11th lord in ascendant + ascendant lord in 11th: 1000 Nishkas at 33rd year.")
 
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 2},
                    {"type": "lord_in_house", "lord_of": 2, "house": 11}],
       signal_group="h11_h2_exchange_after_marriage", direction="favorable", intensity="moderate", domains=["wealth", "marriage"],
       predictions=[{"entity": "native", "claim": "abundant_fortunes_after_marriage", "domain": "wealth", "direction": "favorable", "magnitude": 0.6}],
       timing_window={"type": "after_event", "value": "marriage", "precision": "approximate"},
-      verse_ref="Ch.22 v.9", description="11th lord in 2nd + 2nd lord in 11th: abundant fortunes after marriage.")
+      verse_ref="Ch.22 v.9", commentary_context="No separate note. 2nd-11th exchange ties wealth accumulation to marriage partnership.", description="11th lord in 2nd + 2nd lord in 11th: abundant fortunes after marriage.")
 
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": [6, 8, 12]}],
       signal_group="h11_lord_dusthana_no_gains", direction="unfavorable", intensity="strong", domains=["wealth"],
       predictions=[{"entity": "native", "claim": "no_gains_despite_efforts", "domain": "wealth", "direction": "unfavorable", "magnitude": 0.8}],
-      verse_ref="Ch.22 v.11", description="11th lord in fall/combustion or 6/8/12 with malefic: no gains despite numerous efforts.",
+      verse_ref="Ch.22 v.11", commentary_context="Santhanam: Dusthana placement + fall/combustion + malefic = complete blockage of gains despite efforts.", description="11th lord in fall/combustion or 6/8/12 with malefic: no gains despite numerous efforts.",
       concordance_texts=["Saravali"], rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS2200"]})
 
 BPHS_V2_CH22_REGISTRY = b.build()

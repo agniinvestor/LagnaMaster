@@ -21,14 +21,14 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 9},
       signal_group="h9_lord_strong_h9_fortune", direction="favorable", intensity="strong",
       domains=["wealth", "spirituality"],
       predictions=[{"entity": "native", "claim": "fortunate_and_affluent", "domain": "wealth", "direction": "favorable", "magnitude": 0.8}],
-      verse_ref="Ch.20 v.1-2", description="9th lord with strength in the 9th: fortunate and affluent.",
+      verse_ref="Ch.20 v.1-2", commentary_context="Santhanam: Bhagyasthana = fortune. One's capacity to retain wealth should be studied from 9th house.", description="9th lord with strength in the 9th: fortunate and affluent.",
       concordance_texts=["Saravali", "Phaladeepika"])
 
 b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 9}],
       signal_group="jupiter_h9_fortune", direction="favorable", intensity="strong",
       domains=["wealth", "spirituality", "fame_reputation"],
       predictions=[{"entity": "native", "claim": "extremely_fortunate", "domain": "wealth", "direction": "favorable", "magnitude": 0.9}],
-      verse_ref="Ch.20 v.2", description="Jupiter in 9th + 9th lord in angle + ascendant lord strong: extremely fortunate.",
+      verse_ref="Ch.20 v.2", commentary_context="Santhanam: Triple combination — Jupiter + 9th lord kendra + strong ascendant lord = highest grade of fortune.", description="Jupiter in 9th + 9th lord in angle + ascendant lord strong: extremely fortunate.",
       concordance_texts=["Saravali"],
       modifiers=[{"condition": "h9_lord_in_kendra", "effect": "amplifies", "strength": "strong"}])
 
@@ -38,7 +38,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
       entity_target="father", signal_group="h9_lord_strong_father_fortunate",
       direction="favorable", intensity="strong", domains=["wealth"],
       predictions=[{"entity": "father", "claim": "father_is_fortunate_affluent", "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
-      verse_ref="Ch.20 v.3", description="9th lord with strength + Venus in 9th + Jupiter in kendra: father fortunate.",
+      verse_ref="Ch.20 v.3", commentary_context="No separate note. Venus + Jupiter supporting 9th house ensure father's wealth.", description="9th lord with strength + Venus in 9th + Jupiter in kendra: father fortunate.",
       derived_house_chains=[{"base_house": 9, "derivative": "self", "effective_house": 9, "entity": "father", "domain": "wealth"}])
 
 # ═══ v.4: Indigent father ════════════════════════════════════════════════════
@@ -58,14 +58,14 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
       entity_target="father", signal_group="h9_lord_exalted_father_long_life",
       direction="favorable", intensity="strong", domains=["longevity"],
       predictions=[{"entity": "father", "claim": "father_enjoys_long_life", "domain": "longevity", "direction": "favorable", "magnitude": 0.7}],
-      verse_ref="Ch.20 v.5", description="9th lord in deep exaltation + Venus in angle + Jupiter 9th from D9 asc: father long-lived.")
+      verse_ref="Ch.20 v.5", commentary_context="Three-factor protection: exalted 9th lord + Venus kendra + Jupiter D9 confirmation.", description="9th lord in deep exaltation + Venus in angle + Jupiter 9th from D9 asc: father long-lived.")
 
 # ═══ v.6: Royal status for father ════════════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": [1, 4, 7, 10]}],
       entity_target="father", signal_group="h9_lord_kendra_father_royal",
       direction="favorable", intensity="strong", domains=["career_status", "wealth"],
       predictions=[{"entity": "father", "claim": "father_like_king_with_conveyances", "domain": "career_status", "direction": "favorable", "magnitude": 0.7}],
-      verse_ref="Ch.20 v.6", description="9th lord in angle in aspect to Jupiter: father will be a king, endowed with conveyances.",
+      verse_ref="Ch.20 v.6", commentary_context="No separate note. Kendra + Jupiter aspect = directional strength + benefic support.", description="9th lord in angle in aspect to Jupiter: father will be a king, endowed with conveyances.",
       modifiers=[{"condition": "aspecting_or_aspected_by_jupiter", "effect": "amplifies", "strength": "moderate"}])
 
 # ═══ v.7: Wealthy and famous father ══════════════════════════════════════════
@@ -73,7 +73,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 10}],
       entity_target="father", signal_group="h9_lord_h10_father_wealthy_famous",
       direction="favorable", intensity="strong", domains=["wealth", "fame_reputation"],
       predictions=[{"entity": "father", "claim": "father_very_rich_and_famous", "domain": "wealth", "direction": "favorable", "magnitude": 0.8}],
-      verse_ref="Ch.20 v.7", description="9th lord in 10th + 10th lord aspected by benefic: father very rich and famous.",
+      verse_ref="Ch.20 v.7", commentary_context="Santhanam: 9th-10th = dharma-karma adhipati yoga. Father benefits from elevated combination.", description="9th lord in 10th + 10th lord aspected by benefic: father very rich and famous.",
       derived_house_chains=[{"base_house": 9, "derivative": "2nd_from", "effective_house": 10, "entity": "father", "domain": "career_status"}])
 
 # ═══ v.10: Fortune at age 32 ═════════════════════════════════════════════════
@@ -83,7 +83,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 2},
       domains=["wealth", "property_vehicles", "fame_reputation"],
       predictions=[{"entity": "native", "claim": "fortune_conveyances_fame_at_32", "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
       timing_window={"type": "age", "value": 32, "precision": "approximate"},
-      verse_ref="Ch.20 v.10", description="9th lord in 2nd + 2nd lord in 9th: fortune, conveyances and fame at age 32.")
+      verse_ref="Ch.20 v.10", commentary_context="Santhanam: Fortune, conveyances and fame at age 32. 9th-2nd exchange links fortune with wealth.", description="9th lord in 2nd + 2nd lord in 9th: fortune, conveyances and fame at age 32.")
 
 # ═══ v.11: Inimical to father ════════════════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 1, "house": 9},
@@ -91,7 +91,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 1, "house": 9},
       entity_target="father", signal_group="lagna_h6_lords_h9_father_enmity",
       direction="unfavorable", intensity="moderate", domains=["character_temperament"],
       predictions=[{"entity": "father", "claim": "mutual_enmity_with_father", "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.6}],
-      verse_ref="Ch.20 v.11", description="Ascendant lord in 9th + 6th lord also in 9th: mutual enmity between father and native.")
+      verse_ref="Ch.20 v.11", commentary_context="No separate note. 6th lord in 9th pollutes dharma-sthana with hostility.", description="Ascendant lord in 9th + 6th lord also in 9th: mutual enmity between father and native.")
 
 # ═══ v.13-25: FATHER DEATH TIMING — one-claim-one-rule ════════════════════════
 _FATHER_DEATH = [
@@ -138,6 +138,7 @@ for vref, age_label, desc_suffix, conds, tw in _FATHER_DEATH:
                       "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7}],
         timing_window=tw,
         verse_ref=vref,
+        commentary_context=f"Santhanam groups v.13-25 as COMBINATIONS FOR FATHER'S DEATH. Each sloka gives specific ages based on different planetary configurations. Age {age_label} indicated by: {desc_suffix}.",
         description=f"Father death timing: {desc_suffix} → father passes at native's age {age_label}.",
         derived_house_chains=[{"base_house": 9, "derivative": "8th_from", "effective_house": 4, "entity": "father", "domain": "longevity"}],
     )
@@ -148,7 +149,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 9}],
       domains=["wealth"],
       predictions=[{"entity": "native", "claim": "abundant_fortunes_after_20", "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
       timing_window={"type": "age", "value": 20, "precision": "approximate"},
-      verse_ref="Ch.20 v.27", description="Jupiter in 9th + lord's dispositor in kendra: abundant fortunes after 20th year.",
+      verse_ref="Ch.20 v.27", commentary_context="Santhanam: Abundant fortunes after 20th year. Time-activated wealth combination.", description="Jupiter in 9th + lord's dispositor in kendra: abundant fortunes after 20th year.",
       concordance_texts=["Saravali"])
 
 b.add(conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 9},
@@ -157,14 +158,14 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 9},
       domains=["wealth"],
       predictions=[{"entity": "native", "claim": "abundant_fortunes_after_36", "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
       timing_window={"type": "age", "value": 36, "precision": "approximate"},
-      verse_ref="Ch.20 v.28", description="Mercury in deep exaltation as 9th lord in 9th: abundant fortunes earned after 36th year.")
+      verse_ref="Ch.20 v.28", commentary_context="Santhanam: Mercury exalted as 9th lord in 9th = fortunes after 36th year. Capricorn/Aquarius lagnas.", description="Mercury in deep exaltation as 9th lord in 9th: abundant fortunes earned after 36th year.")
 
 # ═══ v.30: Lack of fortunes ══════════════════════════════════════════════════
 b.add(conditions=[{"type": "planet_in_house", "planet": "Rahu", "house": 9}],
       signal_group="rahu_h9_no_fortune", direction="unfavorable", intensity="strong",
       domains=["wealth"],
       predictions=[{"entity": "native", "claim": "devoid_of_fortunes", "domain": "wealth", "direction": "unfavorable", "magnitude": 0.8}],
-      verse_ref="Ch.20 v.30", description="Rahu in 9th + dispositor in 8th + 9th lord in fall: devoid of fortunes.",
+      verse_ref="Ch.20 v.30", commentary_context="No separate note. Triple affliction destroys all fortune significations.", description="Rahu in 9th + dispositor in 8th + 9th lord in fall: devoid of fortunes.",
       modifiers=[{"condition": "rahus_dispositor_in_8th", "effect": "amplifies", "strength": "strong"},
                  {"condition": "h9_lord_in_fall", "effect": "amplifies", "strength": "strong"}])
 
@@ -174,7 +175,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 9},
       signal_group="saturn_moon_h9_begging", direction="unfavorable", intensity="strong",
       domains=["wealth"],
       predictions=[{"entity": "native", "claim": "acquire_food_by_begging", "domain": "wealth", "direction": "unfavorable", "magnitude": 0.9}],
-      verse_ref="Ch.20 v.31", description="Saturn in 9th + Moon + ascendant lord in fall: food by begging.",
+      verse_ref="Ch.20 v.31", commentary_context="No separate note. Saturn + Moon + fallen ascendant lord = poverty destroying fortune.", description="Saturn in 9th + Moon + ascendant lord in fall: food by begging.",
       modifiers=[{"condition": "ascendant_lord_in_fall", "effect": "amplifies", "strength": "strong"}])
 
 BPHS_V2_CH20_REGISTRY = b.build()

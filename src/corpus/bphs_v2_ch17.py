@@ -28,6 +28,7 @@ b.add(
          "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.17 v.2",
+    commentary_context="Santhanam: The sign becoming the 6th house will lead to knowledge of the concerned limb. The 6th house indicates diseases, ulcers, bruises.",
     description=(
         "6th lord in the ascendant or 8th: there will be ulcers or bruises "
         "on the body. The sign becoming the 6th house will lead to the "
@@ -110,6 +111,7 @@ b.add(
          "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.17 v.7-8",
+    commentary_context="Santhanam: Moon not in ascendant but with Rahu = white leprosy. Saturn replacing Rahu = black leprosy. Mars = blood-leprosy. Three distinct types by planetary combination.",
     description=(
         "Mars or Mercury having ownership of the ascending sign and "
         "joining the Moon, Rahu and Saturn will cause leprosy. Moon not "
@@ -176,6 +178,7 @@ b.add(
          "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.8},
     ],
     verse_ref="Ch.17 v.13",
+    commentary_context="No separate Santhanam note for v.13. The verse is a general principle: Saturn-Rahu conjunction with malefic 6th lord/house = lifelong illness.",
     description=(
         "The native will be afflicted by illness throughout life if Saturn "
         "is with Rahu while the 6th lord and 6th house are conjunct malefics."
@@ -198,6 +201,7 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [6, 12], "precision": "exact"},
     verse_ref="Ch.17 v.14",
+    commentary_context="Santhanam groups v.13-19 as TIMING OF ILLNESS. Mars in 6th + 6th lord in 8th = specific fever timing at ages 6 and 12.",
     description=(
         "One will suffer from severe fever at the age of 6 and at the age "
         "of 12 if Mars is in the 6th while the 6th lord is in the 8th."
@@ -219,6 +223,7 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [19, 22], "precision": "exact"},
     verse_ref="Ch.17 v.15",
+    commentary_context="Santhanam: Moon in Jupiter signs (Sagittarius/Pisces) + Jupiter in 6th from ascendant = leprosy at specific ages 19 and 22.",
     description=(
         "If the Moon is in Sagittarius/Pisces while Jupiter is in the 6th "
         "from the ascendant, one will suffer from leprosy at the age of "
@@ -242,6 +247,7 @@ b.add(
     ],
     timing_window={"type": "age", "value": 26, "precision": "approximate"},
     verse_ref="Ch.17 v.16",
+    commentary_context="Santhanam: Rahu in 6th + ascendant lord in 8th + Mandi in kendra = consumption at 26. Triple affliction involving Gulika/Mandi.",
     description=(
         "If Rahu is in the 6th, ascendant lord is in the 8th and Mandi "
         "is in an angle, consumption will trouble the native at the age "
@@ -269,6 +275,7 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [29, 30], "precision": "approximate"},
     verse_ref="Ch.17 v.17",
+    commentary_context="Santhanam: 6th-12th lord exchange = spleenary disorders at 29/30. Dusthana lords exchanging signs creates health vulnerability at specific ages.",
     description=(
         "Spleenary disorders will be experienced at the age of 29 and 30 "
         "if the lords of 6th and 12th are in exchange of their signs."
@@ -291,6 +298,7 @@ b.add(
     ],
     timing_window={"type": "age", "value": 45, "precision": "approximate"},
     verse_ref="Ch.17 v.18",
+    commentary_context="Santhanam: Saturn+Moon in 6th = blood leprosy at 45. Saturn (chronic) + Moon (fluids) in disease house = blood-related skin disease.",
     description=(
         "Saturn and the Moon together in the 6th will inflict blood "
         "leprosy at the age of 45."
@@ -312,6 +320,7 @@ b.add(
     ],
     timing_window={"type": "age", "value": 59, "precision": "approximate"},
     verse_ref="Ch.17 v.19",
+    commentary_context="Santhanam: Saturn with inimical planet + ascendant lord in ascendant = windy disorders (rheumatism) at 59. Late-life Saturn affliction.",
     description=(
         "If Saturn is with an inimical planet while the ascendant lord "
         "is in the ascendant itself, windy disorders (like rheumatism) "
@@ -336,6 +345,7 @@ b.add(
     ],
     timing_window={"type": "age", "value": 8, "precision": "approximate"},
     verse_ref="Ch.17 v.20",
+    commentary_context="Santhanam: If Rahu is in the 6th while the 8th from said Rahu has Saturn, the child will have danger from fire at ages 1 and 2, while in the 3rd year birds will bring some evils. The 12th lord in ascendant amplifies.",
     description=(
         "Moon conjuncts 6th lord while the 8th lord is in the 6th and the "
         "12th lord is in the ascendant: the native will be troubled by "
@@ -359,6 +369,7 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [5, 9], "precision": "approximate"},
     verse_ref="Ch.17 v.20-22",
+    commentary_context="Santhanam: Sun in 6th/8th + Moon in 12th from Sun = water danger in 5th/9th year. Part of the UNFORTUNATE YEARS sequence (v.20-25).",
     description=(
         "Danger through water will have to be feared during the 5th and "
         "the 9th years if the Sun is in the 6th or 8th while the Moon "
@@ -382,6 +393,7 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [10, 30], "precision": "approximate"},
     verse_ref="Ch.17 v.22",
+    commentary_context="Santhanam: Saturn in 8th + Mars in 7th = smallpox at ages 10 and 30. Part of UNFORTUNATE YEARS sequence.",
     description=(
         "Saturn in the 8th as Mars is in the 7th will cause smallpox "
         "in the 10th year and 30th year of age."
@@ -403,6 +415,12 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [18, 22], "precision": "approximate"},
     verse_ref="Ch.17 v.22",
+    commentary_context=(
+        "Santhanam: The 8th lord should be conjunct Rahu in the 2nd, 4th, "
+        "5th, 11th or 12th from ascendant AND be in the 8th in Navamsa. "
+        "As a result, the native will incur urinary/blood vessel disorders "
+        "at 18th/22nd year of age."
+    ),
     description=(
         "If 8th lord joins Rahu in an angle/trine from the 8th house and "
         "be in the 8th in Navamsa, the subject will be troubled by urinary "
@@ -427,11 +445,12 @@ b.add(
     ],
     timing_window={"type": "age", "value": 31, "precision": "approximate"},
     verse_ref="Ch.17 v.26",
+    commentary_context="Santhanam: 11th-6th lord exchange = loss of wealth through enemies at 31st year. The exchange links gains house with enemies house.",
     description=(
         "Loss of wealth will come to pass during the 31st year if the "
         "11th and 6th lords exchange their Rasis."
     ),
-    concordance_texts=[],
+    concordance_texts=["Saravali"],
 )
 
 # ═══ v.27: Inimical sons ═════════════════════════════════════════════════════
@@ -450,6 +469,7 @@ b.add(
          "domain": "enemies_litigation", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.17 v.27",
+    commentary_context="Santhanam: 5th lord in 6th + 6th lord with Jupiter + 12th lord in ascendant. All three conditions must be simultaneously satisfied for own sons to become enemies.",
     description=(
         "One's own sons will be his enemies if the 5th lord is in the 6th "
         "while the 6th lord is with Jupiter. Simultaneously the 12th lord "
@@ -475,11 +495,12 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [10, 19], "precision": "approximate"},
     verse_ref="Ch.17 v.28",
+    commentary_context="Santhanam: Ascendant lord and 6th lord in exchange = fear from dogs at 10th and 19th year. The exchange activates enemy (6th) themes through the native (1st).",
     description=(
         "There will be fear from dogs during the 10th and 19th year "
         "if the ascendant lord and the 6th lord are in exchange."
     ),
-    concordance_texts=[],
+    concordance_texts=["Saravali"],
 )
 
 BPHS_V2_CH17_REGISTRY = b.build()

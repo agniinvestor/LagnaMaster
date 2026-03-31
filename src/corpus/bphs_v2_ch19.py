@@ -25,6 +25,7 @@ b.add(
     predictions=[{"entity": "native", "claim": "long_life_indicated",
                   "domain": "longevity", "direction": "favorable", "magnitude": 0.8}],
     verse_ref="Ch.19 v.1",
+    commentary_context="Santhanam: The 8th lord in an angle indicates long life. Read in context with v.2 — short life if 8th lord joins malefic/ascendant lord in 8th itself.",
     description="8th lord in an angle: long life is indicated.",
     concordance_texts=["Saravali", "Phaladeepika"],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1901"]},
@@ -63,13 +64,9 @@ b.add(
     predictions=[{"entity": "native", "claim": "saturn_and_10th_lord_affect_longevity",
                   "domain": "longevity", "direction": "mixed", "magnitude": 0.6}],
     verse_ref="Ch.19 v.3",
+    commentary_context="Santhanam: Consider Saturn and 10th lord similarly. If 10th lord in 8th with malefic/ascendant lord, short life should be declared.",
     description=(
         "Similarly consider Saturn and 10th lord in the matter of longevity."
-    ),
-    commentary_context=(
-        "Santhanam notes: The 10th lord also has a role to play. If the "
-        "10th lord is in the 8th with a malefic planet/ascendant lord, "
-        "short life should be declared."
     ),
     concordance_texts=[],
 )
@@ -83,6 +80,7 @@ b.add(
     predictions=[{"entity": "native", "claim": "long_life_viparita_yoga",
                   "domain": "longevity", "direction": "favorable", "magnitude": 0.7}],
     verse_ref="Ch.19 v.4-7",
+    commentary_context="Santhanam: One of the three long-life yogas from v.4. Dusthana lords in dusthana = Viparita Raja Yoga for longevity.",
     description=(
         "There will be long life if the 6th lord is in the 12th or if "
         "the 6th lord is in the 6th as the 12th lord. Also if the 6th "
@@ -101,21 +99,18 @@ b.add(
     predictions=[{"entity": "native", "claim": "long_span_of_life",
                   "domain": "longevity", "direction": "favorable", "magnitude": 0.7}],
     verse_ref="Ch.19 v.4-7",
+    commentary_context=(
+        "Santhanam: Three yogas for long life: 1) 6th lord in 12th, "
+        "2) 5th/8th/ascendant lords in own navamsas/rasis/friendly signs, "
+        "3) Lords of ascendant/8th/10th + Saturn all in angles/trines/11th. "
+        "The strength and weakness of planets must be estimated."
+    ),
     description=(
         "If the lords of the 5th, 8th and ascendant are in their own "
         "navamsas, own Rasis or in friendly signs, the native will enjoy "
         "a long span of life. Also if the lords of the ascendant, 8th "
         "and 10th and Saturn are all disposed severally in an angle, "
         "in a trine or in the 11th, the subject will live long."
-    ),
-    commentary_context=(
-        "Santhanam notes: In sloka 4, we have three yogas for long life: "
-        "1. The 6th lord in the 12th. 2. The 5th, 8th and ascendant lords "
-        "in own navamsas/rasis/friendly signs. 3. Lords of ascendant, 8th, "
-        "10th and Saturn all in angles/trines/11th. Like these, there are "
-        "many other yogas dealing with the issue of longevity. The strength "
-        "and weakness of the planets concerned be estimated in deciding "
-        "longevity."
     ),
     concordance_texts=["Phaladeepika"],
 )
