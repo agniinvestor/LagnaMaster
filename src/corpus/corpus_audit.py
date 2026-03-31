@@ -361,6 +361,26 @@ class CorpusAudit:
                         f"verify the concordance claim is accurate"
                     )
 
+        # GRANULARITY CHECK: commentary contains unencoded conditions
+        if rule.commentary_context:
+            comm_lower = rule.commentary_context.lower()
+            _COND_KW = (" if ", "should ", "provided ", "in case ", " when ",
+                        "conjunct", "together with", "along with", "joining")
+            _EXC_KW = ("unless", "except", "but if", "however", "relief",
+                       "will not apply", "cancelled")
+            has_cond = any(kw in comm_lower for kw in _COND_KW)
+            has_exc = any(kw in comm_lower for kw in _EXC_KW)
+            if has_cond and not rule.modifiers and not rule.rule_relationship:
+                warnings.append(
+                    f"{rid}: GRANULARITY: commentary has conditional language "
+                    f"but no modifiers/siblings — possible missing rule"
+                )
+            if has_exc and not rule.exceptions and not rule.rule_relationship:
+                warnings.append(
+                    f"{rid}: GRANULARITY: commentary has exception language "
+                    f"but no exceptions/siblings — possible missing exception"
+                )
+
         return warnings
 
     def run(self) -> dict:
