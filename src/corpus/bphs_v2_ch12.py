@@ -166,6 +166,64 @@ b.add(
     tags=["benefic", "kendra", "trikona", "health_remedy"],
 )
 
+
+# v.1-2e: Lagna lord conjunct malefic → dire defect (DISTINCT from dusthana placement)
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 1, "house": [6, 8, 12]},
+    ],
+    signal_group="lagna_lord_dusthana_conjunct_malefic",
+    direction="unfavorable", intensity="strong",
+    domains=["physical_health", "career_status"],
+    predictions=[
+        {"entity": "native", "claim": "dire_defect_health_luck_and_progress",
+         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.8},
+    ],
+    verse_ref="Ch.12 v.1-2",
+    description=(
+        "Lagna lord in evil house TOGETHER WITH a malefic: dire defect "
+        "in not only health but also luck and progress. The conjunction "
+        "with malefic amplifies the dusthana placement."
+    ),
+    commentary_context=(
+        "Santhanam: This is DISTINCT from merely being in a dusthana. "
+        "The lagna lord must be CONJUNCT a malefic. The combination "
+        "affects both health (physical) and progress (career/luck)."
+    ),
+    concordance_texts=["Saravali"],
+    modifiers=[
+        {"condition": "conjunct_malefic_in_dusthana", "effect": "amplifies", "strength": "strong"},
+    ],
+)
+
+# v.1-2f: Lagna lord is benefic or exalted → relief (EXCEPTION to unfavorable rules)
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 1, "house": [6, 8, 12]},
+        {"type": "planet_dignity", "planet": "lord_of_1", "dignity": "strong"},
+    ],
+    signal_group="lagna_lord_dusthana_but_benefic_relief",
+    direction="mixed", intensity="moderate",
+    domains=["physical_health"],
+    predictions=[
+        {"entity": "native", "claim": "relief_from_health_issues_over_time",
+         "domain": "physical_health", "direction": "favorable", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.12 v.1-2",
+    description=(
+        "If the lagna lord in a dusthana is a benefic or is exalted, "
+        "some relief in the course of time can be hoped. The benefic "
+        "nature or exaltation mitigates the dusthana placement."
+    ),
+    commentary_context=(
+        "Santhanam: This is an EXCEPTION to BPHS1200. If the ascendant "
+        "lord in the process is a benefic or is exalted, then some "
+        "relief in the course of time can be hoped."
+    ),
+    concordance_texts=[],
+    rule_relationship={"type": "override", "related_rules": ["BPHS1200"]},
+)
+
 # ═════════════════════════════════════════════════════════════════════════
 # SLOKA 3: Bodily Health (Moon condition)
 # "There will not be bodily health if the ascendant or the Moon be

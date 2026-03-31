@@ -375,7 +375,7 @@ class CorpusAudit:
                     f"{rid}: GRANULARITY: commentary has conditional language "
                     f"but no modifiers/siblings — possible missing rule"
                 )
-            if has_exc and not rule.exceptions and not rule.rule_relationship:
+            if has_exc and not rule.exceptions and not rule.modifiers and not rule.rule_relationship:
                 warnings.append(
                     f"{rid}: GRANULARITY: commentary has exception language "
                     f"but no exceptions/siblings — possible missing exception"
