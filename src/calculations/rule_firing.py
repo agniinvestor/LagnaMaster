@@ -113,15 +113,20 @@ class RuleFiringResult:
         return features
 
 
+def _find_planet(chart, planet_name: str):
+    """Find a PlanetPosition by name (case-insensitive)."""
+    p = chart.planets.get(planet_name)
+    if p:
+        return p
+    for key in chart.planets:
+        if key.lower() == planet_name.lower():
+            return chart.planets[key]
+    return None
+
+
 def _planet_house(chart, planet_name: str) -> int:
     """Get house number (1-12) for a planet using sign-based system."""
-    p = chart.planets.get(planet_name)
-    if not p:
-        # Try capitalized variations
-        for key in chart.planets:
-            if key.lower() == planet_name.lower():
-                p = chart.planets[key]
-                break
+    p = _find_planet(chart, planet_name)
     if not p:
         return 0
     return (p.sign_index - chart.lagna_sign_index) % 12 + 1
@@ -129,12 +134,7 @@ def _planet_house(chart, planet_name: str) -> int:
 
 def _planet_sign(chart, planet_name: str) -> str:
     """Get sign name for a planet."""
-    p = chart.planets.get(planet_name)
-    if not p:
-        for key in chart.planets:
-            if key.lower() == planet_name.lower():
-                p = chart.planets[key]
-                break
+    p = _find_planet(chart, planet_name)
     if not p:
         return ""
     return p.sign.lower()
@@ -143,6 +143,220 @@ def _planet_sign(chart, planet_name: str) -> str:
 def _normalize_planet_name(name: str) -> str:
     """Normalize planet name for lookup."""
     return name.lower().replace(" ", "")
+
+
+# ── Sign lords (0=Aries → Mars, 1=Taurus → Venus, etc.) ──────────────────────
+_SIGN_LORDS = {
+    0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon",
+    4: "Sun", 5: "Mercury", 6: "Venus", 7: "Mars",
+    8: "Jupiter", 9: "Saturn", 10: "Saturn", 11: "Jupiter",
+}
+
+# ── Exaltation/debilitation/own signs (from dignity.py, duplicated for perf) ──
+_EXALT_SIGN = {
+    "Sun": 0, "Moon": 1, "Mars": 9, "Mercury": 5,
+    "Jupiter": 3, "Venus": 11, "Saturn": 6, "Rahu": 1, "Ketu": 7,
+}
+_DEBIL_SIGN = {
+    "Sun": 6, "Moon": 7, "Mars": 3, "Mercury": 11,
+    "Jupiter": 9, "Venus": 5, "Saturn": 0, "Rahu": 7, "Ketu": 1,
+}
+_OWN_SIGNS = {
+    "Sun": [4], "Moon": [3], "Mars": [0, 7], "Mercury": [2, 5],
+    "Jupiter": [8, 11], "Venus": [1, 6], "Saturn": [9, 10],
+    "Rahu": [10], "Ketu": [7],
+}
+_MT_SIGNS = {
+    "Sun": 4, "Moon": 1, "Mars": 0, "Mercury": 5,
+    "Jupiter": 8, "Venus": 6, "Saturn": 10,
+}
+
+# ── Parashari graha drishti (7th always; Mars 4,8; Jupiter 5,9; Saturn 3,10) ──
+_SPECIAL_ASPECTS = {
+    "Mars": {3, 7},      # 4th and 8th (0-indexed diffs: 3, 7)
+    "Jupiter": {4, 8},   # 5th and 9th
+    "Saturn": {2, 9},    # 3rd and 10th
+}
+
+
+def _lord_of_house(chart, house_num: int) -> str:
+    """Return the planet name that lords over a given house (1-12).
+
+    Uses sign-based whole-sign house system:
+      house 1 = lagna sign, house 2 = lagna sign + 1, etc.
+    """
+    sign_index = (chart.lagna_sign_index + house_num - 1) % 12
+    return _SIGN_LORDS.get(sign_index, "")
+
+
+def _planet_dignity_state(chart, planet_name: str) -> str:
+    """Return the dignity state of a planet: exalted|debilitated|own_sign|moolatrikona|neutral.
+
+    Simplified check using sign position. For full dignity with neecha bhanga,
+    combustion etc., use dignity.compute_dignity().
+    """
+    p = _find_planet(chart, planet_name)
+    if not p:
+        return "unknown"
+    name = p.name if hasattr(p, "name") else planet_name
+    # Standardize name for table lookup
+    for std_name in ("Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus",
+                     "Saturn", "Rahu", "Ketu"):
+        if std_name.lower() == name.lower():
+            name = std_name
+            break
+    si = p.sign_index
+    if name in _EXALT_SIGN and si == _EXALT_SIGN[name]:
+        return "exalted"
+    if name in _DEBIL_SIGN and si == _DEBIL_SIGN[name]:
+        return "debilitated"
+    if name in _MT_SIGNS and si == _MT_SIGNS[name]:
+        return "moolatrikona"
+    if name in _OWN_SIGNS and si in _OWN_SIGNS[name]:
+        return "own_sign"
+    return "neutral"
+
+
+def _planet_aspects_house(chart, planet_name: str, target_house: int) -> bool:
+    """Check if a planet aspects a target house via Parashari graha drishti.
+
+    Every planet aspects the 7th house from its position.
+    Mars also aspects 4th and 8th; Jupiter 5th and 9th; Saturn 3rd and 10th.
+    """
+    p_house = _planet_house(chart, planet_name)
+    if p_house == 0:
+        return False
+    diff = (target_house - p_house) % 12
+    # All planets aspect 7th (diff=6 in 0-indexed)
+    if diff == 6:
+        return True
+    # Special aspects
+    name = planet_name.title()
+    for std_name in ("Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus",
+                     "Saturn", "Rahu", "Ketu"):
+        if std_name.lower() == name.lower():
+            name = std_name
+            break
+    return diff in _SPECIAL_ASPECTS.get(name, set())
+
+
+def _check_compound_conditions(conditions: list[dict], chart) -> tuple[bool, int]:
+    """Evaluate a list of computable primitive conditions (AND logic).
+
+    Each condition dict has a "type" key. All must be true for the rule to fire.
+    Returns (fires, house) where house is from the first house-specific condition.
+    """
+    if not conditions:
+        return False, 0
+
+    matched_house = 0
+
+    for cond in conditions:
+        ctype = cond.get("type", "")
+
+        if ctype == "planet_in_house":
+            planet = cond.get("planet", "")
+            target = cond.get("house", 0)
+            actual = _planet_house(chart, planet.title())
+            if isinstance(target, list):
+                if actual not in target:
+                    return False, 0
+            elif actual != target:
+                return False, 0
+            matched_house = matched_house or actual
+
+        elif ctype == "planet_in_sign":
+            planet = cond.get("planet", "")
+            target_sign = cond.get("sign", "").lower()
+            actual_sign = _planet_sign(chart, planet.title())
+            if actual_sign != target_sign:
+                return False, 0
+            matched_house = matched_house or _planet_house(chart, planet.title())
+
+        elif ctype == "lord_in_house":
+            lord_of = cond.get("lord_of", 0)
+            target = cond.get("house", 0)
+            lord_planet = _lord_of_house(chart, lord_of)
+            if not lord_planet:
+                return False, 0
+            actual = _planet_house(chart, lord_planet)
+            if target == "any":
+                pass  # lord exists, any house is fine
+            elif isinstance(target, list):
+                if actual not in target:
+                    return False, 0
+            elif actual != target:
+                return False, 0
+            matched_house = matched_house or actual
+
+        elif ctype == "lord_in_sign":
+            lord_of = cond.get("lord_of", 0)
+            target_sign = cond.get("sign", "").lower()
+            lord_planet = _lord_of_house(chart, lord_of)
+            if not lord_planet:
+                return False, 0
+            actual_sign = _planet_sign(chart, lord_planet)
+            if actual_sign != target_sign:
+                return False, 0
+            matched_house = matched_house or _planet_house(chart, lord_planet)
+
+        elif ctype == "planet_dignity":
+            planet = cond.get("planet", "")
+            target_dignity = cond.get("dignity", "")
+            # Handle "lord_of_N" references
+            if planet.startswith("lord_of_"):
+                house_num = int(planet.split("_")[-1])
+                planet = _lord_of_house(chart, house_num)
+            if not planet:
+                return False, 0
+            actual_dignity = _planet_dignity_state(chart, planet)
+            if target_dignity == "strong":
+                # "strong" = exalted, own_sign, or moolatrikona
+                if actual_dignity not in ("exalted", "own_sign", "moolatrikona"):
+                    return False, 0
+            elif target_dignity == "weak":
+                # "weak" = debilitated or neutral (not strong)
+                if actual_dignity in ("exalted", "own_sign", "moolatrikona"):
+                    return False, 0
+            elif actual_dignity != target_dignity:
+                return False, 0
+
+        elif ctype == "planet_aspecting":
+            planet = cond.get("planet", "")
+            target_house = cond.get("house", 0)
+            if planet.startswith("lord_of_"):
+                house_num = int(planet.split("_")[-1])
+                planet = _lord_of_house(chart, house_num)
+            if not planet:
+                return False, 0
+            if not _planet_aspects_house(chart, planet, target_house):
+                return False, 0
+            matched_house = matched_house or target_house
+
+        elif ctype == "planets_conjunct":
+            planets = cond.get("planets", [])
+            if len(planets) < 2:
+                return False, 0
+            houses = [_planet_house(chart, p.title()) for p in planets]
+            if any(h == 0 for h in houses) or len(set(houses)) != 1:
+                return False, 0
+            matched_house = matched_house or houses[0]
+
+        elif ctype == "planets_conjunct_in_house":
+            planets = cond.get("planets", [])
+            target = cond.get("house", 0)
+            houses = [_planet_house(chart, p.title()) for p in planets]
+            if any(h == 0 for h in houses) or len(set(houses)) != 1:
+                return False, 0
+            if houses[0] != target:
+                return False, 0
+            matched_house = target
+
+        else:
+            # Unknown condition type — can't evaluate, rule doesn't fire
+            return False, 0
+
+    return True, matched_house
 
 
 def _check_rule_fires(rule, chart) -> tuple[bool, int]:
@@ -154,6 +368,13 @@ def _check_rule_fires(rule, chart) -> tuple[bool, int]:
     pc = rule.primary_condition
     if not pc:
         return False, 0
+
+    # V2 computable primitives — use conditions list if present.
+    # V2 conditions is a list of dicts with "type" keys.
+    # Legacy "conditions" (pre-V2) is a single dict — skip those.
+    conditions = pc.get("conditions", [])
+    if isinstance(conditions, list) and conditions and isinstance(conditions[0], dict) and "type" in conditions[0]:
+        return _check_compound_conditions(conditions, chart)
 
     planet = pc.get("planet", "")
     ptype = pc.get("placement_type", "")
