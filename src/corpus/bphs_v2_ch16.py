@@ -528,4 +528,100 @@ b.add(
     prediction_type="trait",
 )
 
+# ═══ v.6: Saturn+Mercury in 5th → one child only ═════════════════════════════
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 5, "house": "any"},
+                {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"}],
+    signal_group="h5_lord_fall_saturn_mercury_one_child",
+    direction="unfavorable", intensity="moderate", domains=["progeny"],
+    predictions=[{"entity": "children", "claim": "one_child_only_saturn_mercury_in_5th", "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6}],
+    verse_ref="Ch.16 v.6",
+    commentary_context="Santhanam: 5th lord in fall and not aspecting 5th while Saturn and Mercury in 5th = wife gives birth to one child only. Kakavandhya Dosha.",
+    description="5th lord in fall, not aspecting 5th, while Saturn and Mercury in 5th: one child only.",
+    modifiers=[{"condition": "saturn_and_mercury_in_5th", "effect": "conditionalizes", "strength": "strong"}])
+
+# ═══ v.7: 9th lord in ascendant + 5th lord fall + Ketu+Mercury → progeny after ordeal
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 1},
+                {"type": "lord_in_house", "lord_of": 5, "house": "any"}],
+    signal_group="h9_lord_h1_h5_lord_fall_progeny_ordeal",
+    direction="unfavorable", intensity="moderate", domains=["progeny"],
+    predictions=[{"entity": "children", "claim": "progeny_after_great_ordeal", "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6}],
+    verse_ref="Ch.16 v.7",
+    commentary_context="Santhanam: Mercury, Ketu, or Saturn in 5th = doubtful progeny. Two of them = Kakavandhya Dosha (single issue) or even childlessness.",
+    description="9th lord in ascendant + 5th lord in fall + Ketu in 5th with Mercury: progeny after great ordeal.",
+    modifiers=[{"condition": "h5_lord_in_fall_ketu_mercury_in_5th", "effect": "conditionalizes", "strength": "strong"}])
+
+# ═══ v.15: Born of other's loins (illegitimate) ══════════════════════════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 8}],
+    entity_target="native",
+    signal_group="moon_h8_jupiter_8th_from_moon_illegitimate",
+    direction="unfavorable", intensity="strong", domains=["progeny"],
+    predictions=[{"entity": "native", "claim": "born_of_others_loins_illegitimate", "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6}],
+    verse_ref="Ch.16 v.15",
+    commentary_context="Santhanam: Moon in 8th from ascendant + Jupiter in 8th from Moon. Malefic's aspect/association is essential in this Yoga.",
+    description="Moon in 8th from ascendant + Jupiter in 8th from Moon: native born of other's loins (illegitimate).",
+    modifiers=[{"condition": "jupiter_in_8th_from_moon", "effect": "conditionalizes", "strength": "strong"}])
+
+# ═══ v.17: Mean deeds — 3-4 malefics in 5th ══════════════════════════════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 5}],
+    signal_group="malefics_h5_mean_deeds_children",
+    direction="unfavorable", intensity="moderate", domains=["progeny", "character_temperament"],
+    predictions=[{"entity": "children", "claim": "children_indulge_in_mean_deeds", "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.5}],
+    verse_ref="Ch.16 v.17",
+    commentary_context="Santhanam: 5th occupied by 3-4 malefics + 5th lord in fall + benefic (including Mercury) excluded from 5th = children who indulge in mean deeds.",
+    description="5th occupied by 3-4 malefics while 5th lord is in fall and benefic excluded: children indulge in mean deeds.",
+    modifiers=[{"condition": "h5_lord_in_fall", "effect": "amplifies", "strength": "strong"},
+               {"condition": "no_benefic_in_5th", "effect": "conditionalizes", "strength": "moderate"}])
+
+# ═══ v.25-28: Number of children (individual slokas from the block) ═══════════
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": [5, 9]},
+                {"type": "lord_in_house", "lord_of": 5, "house": "any"},
+                {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "strong"}],
+    signal_group="jupiter_h5_h9_h5_lord_strong_8_sons",
+    direction="favorable", intensity="strong", domains=["progeny"],
+    predictions=[{"entity": "children", "claim": "eight_sons_indicated", "domain": "progeny", "direction": "favorable", "magnitude": 0.5}],
+    verse_ref="Ch.16 v.26",
+    commentary_context="Santhanam: Eight sons if Jupiter in 5th/9th + 5th lord endowed with strength + 2nd lord in 10th.",
+    description="Jupiter in 5th/9th + 5th lord strong + 2nd lord in 10th: eight sons.",
+    prediction_type="trait")
+
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 9},
+                {"type": "lord_in_house", "lord_of": 5, "house": 5}],
+    signal_group="saturn_h9_h5_lord_h5_7_sons_twins",
+    direction="favorable", intensity="moderate", domains=["progeny"],
+    predictions=[{"entity": "children", "claim": "seven_sons_twins_born_twice", "domain": "progeny", "direction": "favorable", "magnitude": 0.5}],
+    verse_ref="Ch.16 v.27",
+    commentary_context="Santhanam: Saturn in 9th from ascendant + 5th lord in 5th itself = 7 sons, of whom twins will be born twice.",
+    description="Saturn in 9th + 5th lord in 5th: seven sons, twins born twice.",
+    prediction_type="trait")
+
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 5, "house": 5}],
+    signal_group="h5_lord_h5_h2_lord_7_sons_3_die",
+    direction="mixed", intensity="moderate", domains=["progeny", "longevity"],
+    predictions=[
+        {"entity": "children", "claim": "seven_sons_but_three_will_pass", "domain": "progeny", "direction": "mixed", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.16 v.28",
+    commentary_context="Santhanam: 5th lord in 5th in conjunction with 2nd lord = birth of 7 sons out of which 3 will pass away.",
+    description="5th lord in 5th + conjunction with 2nd lord: 7 sons, 3 will pass away.",
+    modifiers=[{"condition": "conjunct_h2_lord", "effect": "conditionalizes", "strength": "moderate"}],
+    prediction_type="trait")
+
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 5, "house": "any"}],
+    signal_group="h5_lord_mars_lose_children_as_born",
+    direction="unfavorable", intensity="strong", domains=["progeny", "longevity"],
+    predictions=[{"entity": "children", "claim": "live_long_but_lose_children_one_after_other", "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7}],
+    verse_ref="Ch.16 v.32",
+    commentary_context="Santhanam: If the 5th lord is with Mars, one will live long but lose his children one after the other as they are born.",
+    description="5th lord with Mars: native lives long but loses children one after the other as born.",
+    modifiers=[{"condition": "conjunct_mars", "effect": "conditionalizes", "strength": "strong"}],
+    prediction_type="trait")
+
 BPHS_V2_CH16_REGISTRY = b.build()
