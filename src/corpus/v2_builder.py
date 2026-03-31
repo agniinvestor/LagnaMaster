@@ -310,6 +310,39 @@ class V2ChapterBuilder:
                     f"Check Saravali/Phaladeepika for matching rules."
                 )
 
+        # Sloka coverage verification — verse_refs should span the declared range
+        if n > 0 and self.sloka_count > 0:
+            import re
+            verse_nums: set[int] = set()
+            for r in self._rules:
+                # Extract verse numbers from "Ch.N v.M" or "Ch.N v.M-P"
+                matches = re.findall(r'v\.(\d+)', r.verse_ref)
+                for m in matches:
+                    verse_nums.add(int(m))
+            if verse_nums:
+                max_verse = max(verse_nums)
+                if max_verse < self.sloka_count * 0.5:
+                    failures.append(
+                        f"SLOKA COVERAGE FAIL: declared {self.sloka_count} slokas "
+                        f"but verse_refs only reach v.{max_verse}. "
+                        f"You are skipping the second half of the chapter."
+                    )
+
+        # Commentary uniqueness — no copy-paste
+        if n > 2:
+            commentaries = [r.commentary_context for r in self._rules
+                           if r.commentary_context]
+            if commentaries:
+                from collections import Counter
+                dupes = Counter(commentaries)
+                repeated = [(c[:50], count) for c, count in dupes.items() if count > 2]
+                if repeated:
+                    failures.append(
+                        f"COMMENTARY FAIL: copy-pasted commentary detected — "
+                        f"'{repeated[0][0]}...' appears {repeated[0][1]} times. "
+                        f"Each sloka has different notes."
+                    )
+
         if failures:
             raise ValueError(
                 f"\n{self.chapter} ({self.category}) CANNOT SHIP:\n"

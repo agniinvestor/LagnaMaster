@@ -274,7 +274,7 @@ def test_audit_rejects_s310_rule_with_empty_signal_group():
     r = _minimal_rule(
         last_modified_session="S310",
         phase="1B_matrix",
-        predictions=[{"entity": "native", "claim": "test", "domain": "wealth",
+        predictions=[{"entity": "native", "claim": "test_prediction_claim", "domain": "wealth",
                       "direction": "favorable"}],
         signal_group="",  # EMPTY — should fail
         timing_window={"type": "unspecified"},
@@ -289,7 +289,7 @@ def test_audit_rejects_s310_rule_with_bare_empty_timing():
     r = _minimal_rule(
         last_modified_session="S310",
         phase="1B_matrix",
-        predictions=[{"entity": "native", "claim": "test", "domain": "wealth",
+        predictions=[{"entity": "native", "claim": "test_prediction_claim", "domain": "wealth",
                       "direction": "favorable"}],
         signal_group="test_group",
         timing_window={},  # UNCHECKED — should fail
@@ -304,7 +304,7 @@ def test_audit_accepts_s310_rule_with_unspecified_timing():
     r = _minimal_rule(
         last_modified_session="S310",
         phase="1B_matrix",
-        predictions=[{"entity": "native", "claim": "test", "domain": "wealth",
+        predictions=[{"entity": "native", "claim": "test_prediction_claim", "domain": "wealth",
                       "direction": "favorable"}],
         signal_group="test_group",
         timing_window={"type": "unspecified"},

@@ -211,6 +211,40 @@ class CorpusAudit:
                 f"mirror with builder.mirror('{rid}') (Protocol B)"
             )
 
+        # --- SLIP-THROUGH CHECK 6: Shallow prediction claims ──────────────
+        # Claims must be specific enough to be falsifiable. Generic one-word
+        # claims pass structural checks but carry no predictive value.
+        _GENERIC_CLAIMS = {
+            "good", "bad", "favorable", "unfavorable", "wealthy", "poor",
+            "happy", "unhappy", "positive", "negative", "beneficial",
+            "malefic", "benefic", "test", "general",
+        }
+        for i, pred in enumerate(rule.predictions):
+            if not isinstance(pred, dict):
+                continue
+            claim = pred.get("claim", "")
+            if len(claim) < 10:
+                errors.append(
+                    f"{rid}: predictions[{i}].claim='{claim}' is too short "
+                    f"({len(claim)} chars < 10) — claims must be specific "
+                    f"and falsifiable, not generic labels"
+                )
+            if claim.lower().strip("_") in _GENERIC_CLAIMS:
+                errors.append(
+                    f"{rid}: predictions[{i}].claim='{claim}' is generic — "
+                    f"use a specific, falsifiable claim"
+                )
+
+        # --- SLIP-THROUGH CHECK 7: Commentary copy-paste detection ────────
+        # Commentary must be substantive when populated — not filler text.
+        if rule.commentary_context:
+            if len(rule.commentary_context) < 30:
+                errors.append(
+                    f"{rid}: commentary_context is only {len(rule.commentary_context)} "
+                    f"chars — too short to be substantive. Include actual "
+                    f"Santhanam notes or leave empty."
+                )
+
         # --- SLIP-THROUGH CHECK 3: Commentary minimum for BPHS ---
         # Santhanam provides notes on almost every BPHS sloka.
         # A BPHS rule with no commentary is likely missing the notes.
@@ -236,6 +270,29 @@ class CorpusAudit:
                 f"{rid}: BPHS rule with no commentary_context — did you "
                 f"read Santhanam's notes for {rule.verse_ref}? (Protocol D)"
             )
+
+        # Concordance cross-verification
+        if rule.concordance_texts and self.registry is not None:
+            pc = rule.primary_condition
+            rule_planet = pc.get("planet", "").lower()
+            for conc_text in rule.concordance_texts:
+                matching = [
+                    r for r in self.registry.all()
+                    if r.source.lower() == conc_text.lower().replace(" ", "")
+                    and r.primary_condition.get("planet", "").lower() == rule_planet
+                    and r.rule_id != rid
+                ]
+                if not matching and rule_planet not in (
+                    "general", "any_benefic", "any_malefic", "any_planet",
+                    "", "h1_lord", "h2_lord", "h3_lord", "h4_lord", "h5_lord",
+                    "h6_lord", "h7_lord", "h8_lord", "h9_lord", "h10_lord",
+                    "h11_lord", "h12_lord",
+                ):
+                    warnings.append(
+                        f"{rid}: claims concordance with '{conc_text}' but no "
+                        f"matching rule found for planet '{rule_planet}' — "
+                        f"verify the concordance claim is accurate"
+                    )
 
         return warnings
 

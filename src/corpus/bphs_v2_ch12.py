@@ -259,9 +259,9 @@ b.add(
     direction="favorable", intensity="strong",
     domains=["longevity", "wealth", "intelligence_education", "fame_reputation"],
     predictions=[
-        {"entity": "native", "claim": "longlived",
+        {"entity": "native", "claim": "longlived_full_span",
          "domain": "longevity", "direction": "favorable", "magnitude": 0.8},
-        {"entity": "native", "claim": "wealthy",
+        {"entity": "native", "claim": "wealthy_and_prosperous",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
         {"entity": "native", "claim": "intelligent_liked_by_authorities",
          "domain": "intelligence_education", "direction": "favorable", "magnitude": 0.7},
