@@ -7,6 +7,21 @@
 
 ## 6 Mandatory Protocols
 
+### Protocol Z: Verse Audit Before Encoding (PREREQUISITE)
+
+Before encoding ANY chapter, create a verse audit file at
+`data/verse_audits/chN_audit.json` by reading the PDF. The audit lists
+every claim per verse using the granularity definition from
+`docs/ENCODING_GRANULARITY.md`. The builder REFUSES to build a chapter
+without this file.
+
+Process: SOURCE (PDF) → AUDIT (JSON) → ENCODE (Python) → VERIFY (scorecard)
+Never: SOURCE → ENCODE → CHECK
+
+**Validation:** `V2ChapterBuilder.build()` checks for audit file existence. Missing = ValueError.
+
+---
+
 ### Protocol A: One-Claim-One-Rule
 
 Every specific claim in the source text produces its own rule. A verse stating

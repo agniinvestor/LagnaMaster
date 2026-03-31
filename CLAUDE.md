@@ -13,6 +13,15 @@
 9. **Exhaust the problem before proposing** — when analysing gaps, designing controls, or planning work, assume your first pass is incomplete. Push yourself to find what you're missing before presenting. The user should not have to repeatedly ask "is that everything?" to get a thorough answer.
 10. **Close the feedback loop** — when a mistake happens, it must flow through: Pattern → Lesson (lessons_learned.md) → Principle update (if systemic) → Control built (code enforcement) → Governance framework updated. A lesson without a corresponding control is an open loop. An open loop WILL recur.
 
+## Encoding Protocol (MANDATORY — before ANY encoding)
+
+1. **Verse audit FIRST** — read every sloka + commentary from the PDF. Create `data/verse_audits/chN_audit.json` listing every claim per verse. No encoding without an audit file.
+2. **Apply granularity definition** (`docs/ENCODING_GRANULARITY.md`) — every distinct condition, exception, contrary, and direction-changing modifier is a separate rule. Every amplifier that doesn't change direction is a modifier field or commentary.
+3. **Encode from the audit file** — the audit file is the spec. Each claim maps to a rule. When done, run `tools/verse_audit.py --compare` to verify zero unencoded claims.
+4. **Run scorecard + audit** — `tools/v2_scorecard.py` + full test suite before commit.
+
+A chapter without a verse audit file CANNOT be encoded. The audit file is the proof that the source text was read at the correct granularity.
+
 ## Session Protocol (MANDATORY)
 
 **At session START:**

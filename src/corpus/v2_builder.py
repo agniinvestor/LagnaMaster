@@ -291,6 +291,22 @@ class V2ChapterBuilder:
         n = len(self._rules)
         failures: list[str] = []
 
+        # Verse audit file check — chapter cannot ship without audit
+        # Enforced from S313 onward. Existing chapters grandfathered until
+        # their verse audits are created.
+        import re as _re
+        ch_num_match = _re.search(r'Ch\.(\d+)', self.chapter)
+        if ch_num_match and self.session >= "S313":
+            from pathlib import Path
+            ch_num = ch_num_match.group(1)
+            audit_path = Path(f"data/verse_audits/ch{ch_num}_audit.json")
+            if not audit_path.exists():
+                failures.append(
+                    f"AUDIT FAIL: No verse audit file at {audit_path}. "
+                    f"Read the PDF, create the audit file listing every claim "
+                    f"per verse, THEN encode. See CLAUDE.md Encoding Protocol."
+                )
+
         # Ratio check
         if self.sloka_count > 0:
             ratio = n / self.sloka_count
