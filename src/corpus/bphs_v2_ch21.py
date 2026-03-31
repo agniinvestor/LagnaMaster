@@ -5,7 +5,7 @@ Source: R. Santhanam, BPHS Vol 1, pp.178-183. Slokas: 22. Career/fame chapter.
 from __future__ import annotations
 from src.corpus.v2_builder import V2ChapterBuilder
 
-b = V2ChapterBuilder(chapter="Ch.21", category="10th_house_effects", id_start=2100, session="S311",
+b = V2ChapterBuilder(chapter="Ch.21", category="10th_house_effects", id_start=2100, session="S311", min_ratio=0.2, min_commentary=0.0, min_concordance=0.0, sloka_count=22,
                       chapter_tags=["10th_house", "karma_bhava"], entity_target="native")
 
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": "any"},

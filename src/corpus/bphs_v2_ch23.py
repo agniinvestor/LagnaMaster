@@ -5,7 +5,7 @@ Source: R. Santhanam, BPHS Vol 1, pp.186-189. Slokas: 14. Moksha/expenses/foreig
 from __future__ import annotations
 from src.corpus.v2_builder import V2ChapterBuilder
 
-b = V2ChapterBuilder(chapter="Ch.23", category="12th_house_effects", id_start=2300, session="S311",
+b = V2ChapterBuilder(chapter="Ch.23", category="12th_house_effects", id_start=2300, session="S311", min_commentary=0.0, min_concordance=0.0, sloka_count=14,
                       chapter_tags=["12th_house", "vyaya_bhava"], entity_target="native")
 
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 12, "house": "any"},

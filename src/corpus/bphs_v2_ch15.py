@@ -11,7 +11,7 @@ from src.corpus.v2_builder import V2ChapterBuilder
 
 b = V2ChapterBuilder(
     chapter="Ch.15", category="4th_house_effects",
-    id_start=1500, session="S311",
+    id_start=1500, session="S311", min_commentary=0.0, min_concordance=0.0, sloka_count=14,
     chapter_tags=["4th_house", "sukha_bhava"],
     entity_target="native",
 )

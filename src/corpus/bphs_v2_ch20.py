@@ -10,7 +10,7 @@ from src.corpus.v2_builder import V2ChapterBuilder
 
 b = V2ChapterBuilder(
     chapter="Ch.20", category="9th_house_effects",
-    id_start=2000, session="S311",
+    id_start=2000, session="S311", min_commentary=0.0, min_concordance=0.0, sloka_count=32,
     chapter_tags=["9th_house", "dharma_bhava"],
     entity_target="native",
 )

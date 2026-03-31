@@ -33,7 +33,23 @@ from src.corpus.rule_record import RuleRecord
 
 
 class V2ChapterBuilder:
-    """Builds V2-compliant RuleRecord objects for a single BPHS chapter."""
+    """Builds V2-compliant RuleRecord objects for a single BPHS chapter.
+
+    Enforces depth at build time:
+      - sloka_count is REQUIRED — declares how many predictive slokas the chapter has
+      - build() REFUSES if rules/slokas ratio < MIN_RATIO (default 0.5)
+      - build() REFUSES if commentary coverage < MIN_COMMENTARY (default 0.40)
+      - build() REFUSES if concordance coverage < MIN_CONCORDANCE (default 0.25)
+
+    These thresholds prevent the encoder from shipping a shallow chapter.
+    If a chapter genuinely has fewer rules than slokas (e.g., many slokas are
+    computational/non-predictive), override with min_ratio=0.3 and document why.
+    """
+
+    # Depth thresholds — chapter CANNOT ship below these
+    MIN_RATIO = 0.5         # rules / sloka_count
+    MIN_COMMENTARY = 0.40   # fraction of rules with commentary_context
+    MIN_CONCORDANCE = 0.25  # fraction of rules with concordance_texts
 
     def __init__(
         self,
@@ -42,10 +58,15 @@ class V2ChapterBuilder:
         category: str,
         id_start: int,
         session: str,
+        sloka_count: int,          # REQUIRED — number of predictive slokas
         source: str = "BPHS",
         school: str = "parashari",
         system: str = "natal",
         chapter_tags: list[str] | None = None,
+        # Depth overrides (only if genuinely justified)
+        min_ratio: float | None = None,
+        min_commentary: float | None = None,
+        min_concordance: float | None = None,
         # Chapter-level defaults (overridable per rule)
         entity_target: str = "native",
         prediction_type: str = "event",
@@ -57,6 +78,10 @@ class V2ChapterBuilder:
         self.school = school
         self.system = system
         self.session = session
+        self.sloka_count = sloka_count
+        self._min_ratio = min_ratio if min_ratio is not None else self.MIN_RATIO
+        self._min_commentary = min_commentary if min_commentary is not None else self.MIN_COMMENTARY
+        self._min_concordance = min_concordance if min_concordance is not None else self.MIN_CONCORDANCE
         self.chapter_tags = chapter_tags or []
         self._default_entity = entity_target
         self._default_pred_type = prediction_type
@@ -241,7 +266,58 @@ class V2ChapterBuilder:
         return rid
 
     def build(self) -> CorpusRegistry:
-        """Build and return a CorpusRegistry with all added rules."""
+        """Build and return a CorpusRegistry with all added rules.
+
+        REFUSES to build if depth thresholds are not met:
+          - rules/slokas ratio >= MIN_RATIO
+          - commentary coverage >= MIN_COMMENTARY
+          - concordance coverage >= MIN_CONCORDANCE
+
+        Raises ValueError with specific failures if thresholds not met.
+        """
+        n = len(self._rules)
+        failures: list[str] = []
+
+        # Ratio check
+        if self.sloka_count > 0:
+            ratio = n / self.sloka_count
+            if ratio < self._min_ratio:
+                failures.append(
+                    f"DEPTH FAIL: {n} rules from {self.sloka_count} slokas "
+                    f"(ratio {ratio:.2f} < {self._min_ratio}). "
+                    f"Re-read the source text — you are summarizing."
+                )
+
+        # Commentary check
+        if n > 0:
+            with_commentary = sum(1 for r in self._rules if r.commentary_context)
+            comm_ratio = with_commentary / n
+            if comm_ratio < self._min_commentary:
+                failures.append(
+                    f"DEPTH FAIL: commentary on {with_commentary}/{n} rules "
+                    f"({comm_ratio:.0%} < {self._min_commentary:.0%}). "
+                    f"Read Santhanam's notes for each sloka."
+                )
+
+        # Concordance check
+        if n > 0:
+            with_conc = sum(1 for r in self._rules if r.concordance_texts)
+            conc_ratio = with_conc / n
+            if conc_ratio < self._min_concordance:
+                failures.append(
+                    f"DEPTH FAIL: concordance on {with_conc}/{n} rules "
+                    f"({conc_ratio:.0%} < {self._min_concordance:.0%}). "
+                    f"Check Saravali/Phaladeepika for matching rules."
+                )
+
+        if failures:
+            raise ValueError(
+                f"\n{self.chapter} ({self.category}) CANNOT SHIP:\n"
+                + "\n".join(f"  ✗ {f}" for f in failures)
+                + f"\n\nThis chapter has {self.sloka_count} predictive slokas. "
+                f"You produced {n} rules. Fix the depth before calling build()."
+            )
+
         reg = CorpusRegistry()
         for rule in self._rules:
             reg.add(rule)

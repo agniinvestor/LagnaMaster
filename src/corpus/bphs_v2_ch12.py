@@ -23,7 +23,7 @@ from src.corpus.v2_builder import V2ChapterBuilder
 
 b = V2ChapterBuilder(
     chapter="Ch.12", category="1st_house_effects",
-    id_start=1200, session="S311",
+    id_start=1200, session="S311", sloka_count=15,
     chapter_tags=["1st_house", "tanu_bhava"],
     entity_target="native",
     prediction_type="trait",
