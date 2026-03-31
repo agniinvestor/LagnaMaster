@@ -11,6 +11,23 @@
 7. **Radical transparency** — when something is wrong, uncertain, or incomplete, say so immediately. Don't hide problems, optimise reporting, or hope issues self-resolve.
 8. **Source fidelity** — record what the text says, not what you think it means. Interpretation goes in commentary, never in predictions or structured fields.
 9. **Exhaust the problem before proposing** — when analysing gaps, designing controls, or planning work, assume your first pass is incomplete. Push yourself to find what you're missing before presenting. The user should not have to repeatedly ask "is that everything?" to get a thorough answer.
+10. **Close the feedback loop** — when a mistake happens, it must flow through: Pattern → Lesson (lessons_learned.md) → Principle update (if systemic) → Control built (code enforcement) → Governance framework updated. A lesson without a corresponding control is an open loop. An open loop WILL recur.
+
+## Session Protocol (MANDATORY)
+
+**At session START:**
+1. Read `lessons_learned.md` — check if any pattern is relevant to today's work
+2. Read `core_principles.md` — refresh the decision-making constraints
+3. Verify all controls exist for the work you're about to do (Principle #4)
+
+**At session END:**
+1. Did any rework happen this session? (amend commits, fix commits, re-encoding) → Add lesson
+2. Did any audit control catch an error? → Add lesson about what the encoding missed
+3. Did the user correct you on anything? → Add lesson about what should have been self-caught
+4. Update lessons_learned.md with any new entries
+5. If a new pattern emerged, update core_principles.md and governance framework
+
+**A lesson without a control is an open loop. Close it before the session ends.**
 
 ---
 
