@@ -674,3 +674,9 @@ Root cause of 103 CI failures identified and fixed:
   - Ch.23 Vyaya Bhava: 11 rules (expenses, moksha, foreign, wandering)
   - 33% concordance, Block A (Ch.12-23) COMPLETE: 223/249 predictive slokas
   - Sloka counts corrected from actual reading (Ch.20 has 32 slokas, not 13)
+- S309: Corpus Standard Upgrade — RuleRecord +10 fields (predictions, entity_target,
+  signal_group, commentary_context, cross_chapter_refs, timing_window,
+  functional_modulation, derived_house_chain, convergence_signals, rule_relationship)
+  - docs/ENCODING_PROTOCOL_V2.md: 6 mandatory protocols (A-F)
+  - 28 contract tests, 0 regressions on 6,060 existing tests
+  - All 10 fields backward-compatible (empty defaults)

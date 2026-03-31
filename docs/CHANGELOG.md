@@ -1560,4 +1560,41 @@ S308 — BPHS Phase 1B Ch.20-23 (9th-12th House Effects) — completes Block A
 - **ML:** 63 new structured predictions. Corpus total: ~6,808.
 
 ### Next session
-S309 — BPHS Phase 1B Block B: Ch.24 (Effects of Bhava Lords — 148 slokas, largest chapter)
+S309 — Corpus Standard Upgrade: Schema + Protocol
+
+---
+
+## S309 — 2026-03-31 — Corpus Standard Upgrade: RuleRecord V2 Schema
+
+**Tests:** 6,088 passing (28 new) / 3 skipped / 0 lint errors
+
+### What was built
+- `src/corpus/rule_record.py`: +10 new fields (45 total) with backward-compatible defaults
+  - `predictions` — atomic machine-parseable claims (entity, claim, domain, direction, magnitude)
+  - `entity_target` — WHO the prediction is about (native/father/spouse/children/...)
+  - `signal_group` — groups rules from same chart signal to prevent overcounting
+  - `commentary_context` — Santhanam's notes and practical interpretation
+  - `cross_chapter_refs` — explicit links to related chapters
+  - `timing_window` — structured timing (age, age_range, after_event, dasha_period)
+  - `functional_modulation` — how prediction changes by lagna functional role
+  - `derived_house_chain` — bhavat bhavam causal chain
+  - `convergence_signals` — independent chart conditions that confirm prediction
+  - `rule_relationship` — alternatives/overrides/additions between rules
+- `docs/ENCODING_PROTOCOL_V2.md`: 6 mandatory protocols (A-F) governing all future encoding
+- `tests/test_s309_rule_record_v2.py`: 28 contract tests
+
+### Three-lens analysis
+- **Tech:** Schema upgrade is 100% backward compatible — 6,060 existing tests pass unchanged.
+  All 10 new fields have empty/falsy defaults. No existing corpus file needs modification.
+  This is the foundation for Waves 2-4 of the Corpus Standard Upgrade.
+- **Astrology:** The 6 protocols address the 12 gaps identified in critical review:
+  one-claim-one-rule (no more summarization), entity targeting (father vs native),
+  functional modulation (Saturn in 7th means different things for different lagnas),
+  structured timing (ages, dashas, events), and computable conditions (8 primitives).
+- **ML:** The predictions field is the key unlock — it transforms rules from classifications
+  ("favorable for marriage") into specific, falsifiable predictions ("learned spouse,
+  marriage after 30, wealth through spouse"). This is what makes the feedback loop
+  in Phases 3-6 possible.
+
+### Next session
+S310 — Primary condition normalization (8 computable primitives + signal_group) then begin V2 re-encoding of BPHS 1B houses from source text

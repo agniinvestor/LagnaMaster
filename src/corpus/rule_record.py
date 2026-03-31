@@ -1,10 +1,10 @@
 """
-src/corpus/rule_record.py — RuleRecord dataclass (S202, extended S263, extended S305)
+src/corpus/rule_record.py — RuleRecord dataclass (S202→S263→S305→S309)
 
 Machine-readable encoding of a classical Jyotish rule.
 Each rule maps a classical text citation to a testable, computable predicate.
 
-Two tiers:
+Three tiers:
   Phase 1A (S216–S262): Representative layer — prose descriptions, topic index.
     Fields: rule_id through engine_ref.
     All Phase 1A rules carry phase="1A_representative" automatically.
@@ -14,17 +14,21 @@ Two tiers:
     Contract defined in docs/PHASE1B_RULE_CONTRACT.md.
     Outcome taxonomy defined in docs/PHASE1B_OUTCOME_TAXONOMY.md.
 
-S305 extensions:
-  prediction_type    — event|trait|capacity (drives temporal activation logic)
-  gender_scope       — universal|male|female (classical texts often assume male)
-  certainty_level    — definite|probable|possible (verse assertiveness)
-  strength_condition — any|strong|weak|exalted|debilitated|own_sign|combust
-  house_system       — sign_based|bhava_chalita|kp (which house system rule assumes)
-  ayanamsha_sensitive — True for sign-placement rules (affected by ayanamsha choice)
-  school_specific    — dict for non-Parashari fields (Jaimini/KP/Lal Kitab/Nadi/Muhurtha)
-  remedy             — remedial measures mentioned in verse
-  evaluation_method  — how the scoring engine should evaluate this rule
-  last_modified_session — session number when rule was last created or changed
+  S305 extensions: prediction_type, gender_scope, certainty_level,
+    strength_condition, house_system, ayanamsha_sensitive, school_specific,
+    remedy, evaluation_method, last_modified_session.
+
+  S309 extensions (Corpus Standard Upgrade):
+    predictions          — list of atomic, machine-parseable prediction claims
+    entity_target        — WHO the prediction is about (native|father|spouse|...)
+    signal_group         — groups rules from the same chart signal
+    commentary_context   — translator's notes and practical interpretation
+    cross_chapter_refs   — explicit links to other chapters
+    timing_window        — structured timing (age, dasha, event)
+    functional_modulation — how prediction changes by lagna functional role
+    derived_house_chain  — bhavat bhavam causal chain
+    convergence_signals  — independent chart conditions that confirm prediction
+    rule_relationship    — alternatives/overrides/additions between rules
 
 Public API
 ----------
@@ -92,6 +96,32 @@ class RuleRecord:
     remedy              Remedial measures mentioned in verse
     evaluation_method   How to evaluate: placement_check|yoga_detection|lordship_check|dasha_activation|transit_check
     last_modified_session  Session number when rule was last created or changed
+
+    S309 extensions (Corpus Standard Upgrade)
+    ------------------------------------------
+    predictions         Atomic machine-parseable claims. Each dict:
+                        {"entity": str, "claim": str, "domain": str,
+                         "direction": str, "magnitude": float}
+    entity_target       WHO this prediction is about:
+                        native|father|mother|spouse|children|siblings|general
+    signal_group        Groups rules from same chart observation, e.g. "jupiter_h7_marriage".
+                        Engine counts each group once, not each rule independently.
+    commentary_context  Translator's notes — practical interpretation not in the verse itself.
+                        Santhanam's notes, edge cases, alternative readings.
+    cross_chapter_refs  Explicit links to related chapters: ["Ch.44 Maraka", "Ch.83 Curses"]
+    timing_window       Structured timing. Dict with:
+                        {"type": "age"|"age_range"|"after_event"|"dasha_period"|"unspecified",
+                         "value": ..., "precision": "exact"|"approximate"|"unspecified"}
+    functional_modulation  How prediction changes by lagna functional role. Dict keyed by
+                        functional role: {"yogakaraka": "...", "benefic": "...", "malefic": "..."}
+    derived_house_chain    Bhavat bhavam causal chain. Dict:
+                        {"base_house": int, "derivative": str, "effective_house": int,
+                         "entity": str, "domain": str}
+    convergence_signals    Independent chart conditions that confirm this prediction:
+                        ["d9_7th_lord_in_jupiter_sign", "h7_ashtakavarga_above_28"]
+    rule_relationship   Alternatives/overrides/additions between rules. Dict:
+                        {"type": "alternative"|"addition"|"override"|"contrary_mirror",
+                         "related_rules": ["BPHS0803"]}
     """
     # ── Phase 1A fields ───────────────────────────────────────────────────────
     rule_id: str
@@ -133,6 +163,18 @@ class RuleRecord:
     remedy: list[str] = field(default_factory=list)
     evaluation_method: str = "placement_check"
     last_modified_session: str = ""
+
+    # ── S309 extensions (Corpus Standard Upgrade) ───────────────────────────
+    predictions: list[dict] = field(default_factory=list)
+    entity_target: str = "native"
+    signal_group: str = ""
+    commentary_context: str = ""
+    cross_chapter_refs: list[str] = field(default_factory=list)
+    timing_window: dict = field(default_factory=dict)
+    functional_modulation: dict = field(default_factory=dict)
+    derived_house_chain: dict = field(default_factory=dict)
+    convergence_signals: list[str] = field(default_factory=list)
+    rule_relationship: dict = field(default_factory=dict)
 
     def __post_init__(self) -> None:
         if not (0.0 <= self.confidence <= 1.0):

@@ -1,20 +1,51 @@
 """
-src/corpus/corpus_audit.py — Corpus Completeness Audit (S205)
+src/corpus/corpus_audit.py — Corpus Completeness Audit (S205, extended S309)
 
 Audits a CorpusRegistry for completeness gaps, unimplemented rules,
 and distribution across schools and categories. Used by CI and the
 S201-S210 checkpoint to verify corpus quality.
 
+S309 extensions: V2 field enforcement for rules with last_modified_session >= "S309".
+Rules created/modified after S309 MUST populate the new fields. Empty defaults
+that silently pass are replaced by hard errors.
+
 Public API
 ----------
   CorpusAudit(registry)   — audit runner
-  .run() -> dict          — structured report
+  .run() -> dict          — structured report (includes v2_errors)
   .text_report() -> str   — human-readable summary
+  .audit_v2_compliance(rule) -> list[str]  — per-rule V2 field checks
 """
 
 from __future__ import annotations
 
 from src.corpus.registry import CorpusRegistry
+
+# Sessions from which V2 enforcement applies.
+# Rules with last_modified_session >= this are held to the new standard.
+V2_ENFORCEMENT_START = "S310"
+
+# House categories where entity_target="native" needs explicit verification.
+# These houses commonly predict about non-native entities.
+ENTITY_CHECK_CATEGORIES = {
+    "9th_house_effects",   # often about father
+    "7th_house_effects",   # often about spouse
+    "5th_house_effects",   # often about children
+    "4th_house_effects",   # often about mother
+    "3rd_house_effects",   # often about siblings
+}
+
+VALID_ENTITY_TARGETS = {
+    "native", "father", "mother", "spouse", "children", "siblings", "general",
+}
+
+VALID_TIMING_TYPES = {
+    "age", "age_range", "after_event", "dasha_period", "unspecified",
+}
+
+VALID_RELATIONSHIP_TYPES = {
+    "alternative", "addition", "override", "contrary_mirror",
+}
 
 
 class CorpusAudit:
@@ -22,6 +53,93 @@ class CorpusAudit:
 
     def __init__(self, registry: CorpusRegistry) -> None:
         self.registry = registry
+
+    def audit_v2_compliance(self, rule) -> list[str]:
+        """Check a single rule for V2 field compliance.
+
+        Returns list of error strings. Empty list = compliant.
+        Only enforced for rules with last_modified_session >= V2_ENFORCEMENT_START.
+        """
+        errors: list[str] = []
+        rid = rule.rule_id
+        session = rule.last_modified_session
+
+        # Only enforce on rules from S310 onward
+        if not session or session < V2_ENFORCEMENT_START:
+            return errors
+
+        # Only enforce on Phase 1B rules (not legacy 1A)
+        if rule.phase == "1A_representative":
+            return errors
+
+        # --- predictions must be non-empty ---
+        if not rule.predictions:
+            errors.append(
+                f"{rid}: predictions is empty — every rule must have at least "
+                f"1 atomic prediction (Protocol A)"
+            )
+
+        # --- entity_target must be from controlled vocabulary ---
+        if rule.entity_target not in VALID_ENTITY_TARGETS:
+            errors.append(
+                f"{rid}: entity_target='{rule.entity_target}' not in "
+                f"valid set {VALID_ENTITY_TARGETS}"
+            )
+
+        # --- signal_group must be non-empty ---
+        if not rule.signal_group:
+            errors.append(
+                f"{rid}: signal_group is empty — must group rules from same "
+                f"chart signal (e.g., 'jupiter_h7_marriage')"
+            )
+
+        # --- timing_window must be explicitly checked ---
+        # Empty dict {} = unchecked (error). {"type": "unspecified"} = checked, no timing (ok).
+        if not rule.timing_window:
+            errors.append(
+                f"{rid}: timing_window is empty dict {{}} — must be explicitly "
+                f"set. Use {{\"type\": \"unspecified\"}} if text states no timing "
+                f"(Protocol F)"
+            )
+        elif "type" not in rule.timing_window:
+            errors.append(
+                f"{rid}: timing_window missing 'type' key — must have "
+                f"type in {VALID_TIMING_TYPES}"
+            )
+        elif rule.timing_window["type"] not in VALID_TIMING_TYPES:
+            errors.append(
+                f"{rid}: timing_window type='{rule.timing_window['type']}' "
+                f"not in valid set {VALID_TIMING_TYPES}"
+            )
+
+        # --- predictions structure check ---
+        for i, pred in enumerate(rule.predictions):
+            if not isinstance(pred, dict):
+                errors.append(f"{rid}: predictions[{i}] is not a dict")
+                continue
+            for key in ("entity", "claim", "domain", "direction"):
+                if key not in pred:
+                    errors.append(
+                        f"{rid}: predictions[{i}] missing required key '{key}'"
+                    )
+            if "entity" in pred and pred["entity"] not in VALID_ENTITY_TARGETS:
+                errors.append(
+                    f"{rid}: predictions[{i}].entity='{pred['entity']}' "
+                    f"not in valid set"
+                )
+
+        # --- rule_relationship structure check ---
+        if rule.rule_relationship:
+            rr = rule.rule_relationship
+            if "type" not in rr:
+                errors.append(f"{rid}: rule_relationship missing 'type' key")
+            elif rr["type"] not in VALID_RELATIONSHIP_TYPES:
+                errors.append(
+                    f"{rid}: rule_relationship type='{rr['type']}' "
+                    f"not in valid set {VALID_RELATIONSHIP_TYPES}"
+                )
+
+        return errors
 
     def run(self) -> dict:
         """Return a structured audit report."""
@@ -35,12 +153,25 @@ class CorpusAudit:
         by_source: dict[str, int] = {}
         low_confidence: list[str] = []
 
+        # V2 enforcement
+        v2_errors: list[str] = []
+        v2_rules_checked = 0
+        v2_rules_compliant = 0
+
         for r in rules:
             by_school[r.school] = by_school.get(r.school, 0) + 1
             by_category[r.category] = by_category.get(r.category, 0) + 1
             by_source[r.source] = by_source.get(r.source, 0) + 1
             if r.confidence < 0.7:
                 low_confidence.append(r.rule_id)
+
+            # V2 compliance check
+            rule_errors = self.audit_v2_compliance(r)
+            if r.last_modified_session and r.last_modified_session >= V2_ENFORCEMENT_START:
+                v2_rules_checked += 1
+                if not rule_errors:
+                    v2_rules_compliant += 1
+            v2_errors.extend(rule_errors)
 
         return {
             "total_rules": total,
@@ -51,7 +182,10 @@ class CorpusAudit:
             "by_category": by_category,
             "by_source": by_source,
             "low_confidence_ids": low_confidence,
-            "errors": [],
+            "v2_rules_checked": v2_rules_checked,
+            "v2_rules_compliant": v2_rules_compliant,
+            "v2_errors": v2_errors,
+            "errors": v2_errors,  # backward compat: errors now includes v2
         }
 
     def text_report(self) -> str:
@@ -76,4 +210,16 @@ class CorpusAudit:
                          + (" ..." if len(r["unimplemented_ids"]) > 10 else ""))
         if r["low_confidence_ids"]:
             lines.append(f"Low confidence (<0.7): {', '.join(r['low_confidence_ids'])}")
+
+        # V2 enforcement summary
+        if r["v2_rules_checked"] > 0:
+            lines.append(f"\nV2 Compliance: {r['v2_rules_compliant']}/{r['v2_rules_checked']} "
+                         f"rules pass ({100*r['v2_rules_compliant']//max(r['v2_rules_checked'],1)}%)")
+        if r["v2_errors"]:
+            lines.append(f"V2 Errors ({len(r['v2_errors'])}):")
+            for err in r["v2_errors"][:20]:
+                lines.append(f"  {err}")
+            if len(r["v2_errors"]) > 20:
+                lines.append(f"  ... and {len(r['v2_errors'])-20} more")
+
         return "\n".join(lines)
