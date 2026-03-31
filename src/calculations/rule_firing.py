@@ -26,6 +26,18 @@ class FiredRule:
     outcome_domains: list[str]
     confidence: float
     concordance_count: int  # how many texts agree
+    # Tier 3 audit trail fields
+    entity_target: str = "native"
+    predictions: list[dict] = field(default_factory=list)
+    signal_group: str = ""
+    health_sensitive: bool = False
+
+
+@dataclass
+class SkippedRule:
+    """A rule that was evaluated but did NOT fire, with the reason."""
+    rule_id: str
+    reason: str  # "condition_not_met" | "lagna_scope_mismatch" | "no_conditions" | "unsupported_type"
 
 
 @dataclass
@@ -47,9 +59,11 @@ class HouseRuleSummary:
 class RuleFiringResult:
     """Complete rule-firing evaluation for a chart."""
     fired_rules: list[FiredRule] = field(default_factory=list)
+    skipped_rules: list[SkippedRule] = field(default_factory=list)  # Tier 3 audit trail
     house_summary: dict[int, HouseRuleSummary] = field(default_factory=dict)
     total_fired: int = 0
     total_evaluated: int = 0
+    corpus_hash: str = ""  # Tier 3 Item 7: model-corpus version pinning
 
     def feature_vector(self) -> dict[str, float]:
         """Return ML-ready features from rule firing.
@@ -467,12 +481,35 @@ def evaluate_chart(chart) -> RuleFiringResult:
     corpus = build_corpus()
     phase1b_rules = [r for r in corpus.all() if r.phase.startswith("1B")]
 
-    result = RuleFiringResult()
+    # Tier 3 Item 7: record corpus hash for model-corpus pinning
+    try:
+        from src.corpus.snapshot import corpus_hash
+        c_hash = corpus_hash()
+    except Exception:
+        c_hash = ""
+
+    result = RuleFiringResult(corpus_hash=c_hash)
     result.total_evaluated = len(phase1b_rules)
 
     for rule in phase1b_rules:
         fires, house = _check_rule_fires(rule, chart)
         if not fires:
+            # Tier 3 Item 1: audit trail for skipped rules
+            reason = "condition_not_met"
+            pc = rule.primary_condition
+            if not pc:
+                reason = "no_conditions"
+            elif not pc.get("conditions"):
+                ptype = pc.get("placement_type", "")
+                if ptype in ("yoga", "special", "sign_condition", "house_condition"):
+                    reason = "unsupported_type"
+            if hasattr(rule, "lagna_scope") and rule.lagna_scope:
+                chart_lagna = getattr(chart, "lagna_sign", "").lower()
+                if chart_lagna not in rule.lagna_scope:
+                    reason = "lagna_scope_mismatch"
+            result.skipped_rules.append(SkippedRule(
+                rule_id=rule.rule_id, reason=reason,
+            ))
             continue
 
         conc_count = len(rule.concordance_texts) if rule.concordance_texts else 0
@@ -486,6 +523,11 @@ def evaluate_chart(chart) -> RuleFiringResult:
             outcome_domains=rule.outcome_domains,
             confidence=rule.confidence,
             concordance_count=conc_count,
+            # Tier 3 audit trail
+            entity_target=getattr(rule, "entity_target", "native"),
+            predictions=getattr(rule, "predictions", []),
+            signal_group=getattr(rule, "signal_group", ""),
+            health_sensitive=getattr(rule, "health_sensitive", False),
         )
         result.fired_rules.append(fired)
 
