@@ -166,6 +166,7 @@ b.add(
          "domain": "longevity", "direction": "favorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.14 v.5-6",
+    commentary_context="Contrary of BPHS1404. Santhanam: significator+lord in exaltation/friendly = significance gains prosperity.",
     description=(
         "Mars or 3rd lord in angle/trine/exaltation/friendly: happiness for coborn."
     ),
@@ -235,6 +236,7 @@ b.add(
          "domain": "progeny", "direction": "favorable", "magnitude": 0.5},
     ],
     verse_ref="Ch.14 v.12-13",
+    commentary_context="No separate Santhanam note for v.12-13. Verse conditions are explicit.",
     description=(
         "11th/12th lord joins Mars+Jupiter + Moon in 3rd → 7 coborn. "
         "Moon alone + male planets → younger brothers; Venus aspect → sisters."
@@ -266,6 +268,7 @@ b.add(
          "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.14 v.14",
+    commentary_context="Part of the Sun/Saturn/Mars triad in v.14. Each planet destroys a different birth-order group.",
     description="Saturn in 3rd: afterborn (younger siblings) destroyed.",
     concordance_texts=["Saravali"],
 )
@@ -299,6 +302,7 @@ b.add(
          "domain": "progeny", "direction": "neutral", "magnitude": 0.5},
     ],
     verse_ref="Ch.14 v.15",
+    commentary_context="Methodological instruction — no Santhanam note. The sage directs assessment before declaration.",
     description="After estimating yoga strength/weakness, announce sibling effects.",
     prediction_type="trait",
 )

@@ -43,6 +43,12 @@ b.add(
          "domain": "wealth", "direction": "favorable", "magnitude": 0.8},
     ],
     verse_ref="Ch.13 v.1-2",
+    commentary_context=(
+        "Santhanam notes for v.1-2 (shared): Venus or Mercury in the 2nd "
+        "will be favourable for wealth while Jupiter will not be wholly "
+        "auspicious. If Jupiter rules the 2nd, financial aspects smooth. "
+        "Otherwise Jupiter in the 2nd denotes a problematic financial situation."
+    ),
     description=(
         "2nd lord in the 2nd or in an angle or trine from the ascendant: "
         "promotes one's wealth (or monetary state). Financial conditions "
@@ -67,6 +73,7 @@ b.add(
          "domain": "wealth", "direction": "unfavorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.13 v.1-2",
+    commentary_context="Contrary of BPHS1300. See shared Santhanam notes on v.1-2.",
     description=(
         "2nd lord in 6th, 8th, or 12th: financial conditions will decline. "
         "Wealth is lost through disease (6th), sudden events (8th), or "
@@ -119,6 +126,7 @@ b.add(
          "domain": "wealth", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.13 v.1-2",
+    commentary_context="Contrary of BPHS1302. Malefic replaces benefic; opposite results.",
     description=(
         "A malefic in the 2nd will destroy wealth instead."
     ),
@@ -359,6 +367,7 @@ b.add(
          "domain": "spirituality", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.13 v.9",
+    commentary_context="No separate Santhanam note for v.9. The conditions are explicit in the verse.",
     description=(
         "Jupiter in the 11th, Venus in the 2nd, and a benefic in the "
         "12th while the 2nd lord is conjunct a benefic: there will be "
@@ -507,6 +516,11 @@ b.add(
          "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.13 v.12",
+    commentary_context=(
+        "Contrary of BPHS1313. Santhanam: Netresa = lord of 2nd = "
+        "significator of eyes. 2nd lord over right eye, 12th lord over "
+        "left eye. Beauty of eyes from 2nd house only."
+    ),
     description=(
         "2nd lord in the 6th, 8th, or 12th: there will be disease or "
         "deformity of eyes."

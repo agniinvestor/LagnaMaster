@@ -126,6 +126,13 @@ b.add(
         "Lagna lord in debilitation, combustion, or enemy's sign: there "
         "will be diseases. All comforts of the body suffer."
     ),
+    commentary_context=(
+        "Santhanam's notes for v.1-2 (shared with BPHS1200/1201): if the "
+        "ascendant lord is in debilitation or combustion or enemy's sign, "
+        "diseases will follow. This is the negative corollary of the kendra/"
+        "trikona placement. If the planet is also with a malefic, both "
+        "health and progress are affected."
+    ),
     concordance_texts=["Saravali"],
     tags=["lagna_lord", "debilitated", "disease"],
     exceptions=["if_neecha_bhanga_raja_yoga"],
@@ -184,6 +191,12 @@ b.add(
         "Moon under malefic influence without benefic relief causes "
         "persistent health problems."
     ),
+    commentary_context=(
+        "No separate Santhanam note for v.3. The verse is self-contained: "
+        "Moon or ascendant aspected/conjunct malefic without benefic "
+        "relief = no bodily health. The condition requires BOTH malefic "
+        "influence AND absence of benefic counterbalance."
+    ),
     concordance_texts=["Saravali"],
     modifiers=[
         {"condition": "aspected_by_malefic", "effect": "negates", "strength": "strong"},
@@ -216,6 +229,12 @@ b.add(
         "Felicity of the body will be enjoyed if the ascendant is "
         "aspected by or conjunct a benefic."
     ),
+    commentary_context=(
+        "No separate Santhanam note for v.4. The verse directly states "
+        "the benefic/malefic contrast. Felicity of the body will be "
+        "enjoyed if the ascendant is aspected by or conjunct a benefic — "
+        "this extends beyond occupation to aspect as well."
+    ),
     concordance_texts=["Saravali", "Phaladeepika"],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1206"]},
     tags=["benefic", "ascendant", "appearance"],
@@ -238,6 +257,7 @@ b.add(
         "A malefic in the ascendant makes one bereft of good appearance. "
         "Physical features are marred or unremarkable."
     ),
+    commentary_context="Contrary of v.4a (BPHS1205). No separate Santhanam note.",
     concordance_texts=["Saravali", "Phaladeepika"],
     rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS1205"]},
     tags=["malefic", "ascendant", "appearance"],
@@ -600,6 +620,11 @@ b.add(
     description=(
         "The limb related to a benefic by occupation (in the "
         "corresponding decanate) will have a mark like moles etc."
+    ),
+    commentary_context=(
+        "Contrary of BPHS1215 (malefic → scars). Santhanam cross-references "
+        "Saravali Ch.4 v.6: if the planet is in own Rasi or Navamsa, effects "
+        "manifest from birth; otherwise during the course of life."
     ),
     concordance_texts=["Saravali"],
     rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS1215"]},
