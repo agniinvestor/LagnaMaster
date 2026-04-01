@@ -249,7 +249,36 @@ matching handles the cross-text join for 80%+ of cases.
 
 ---
 
-## 5. Enforcement
+## 5. Lord-to-Planet Resolution (Design Decision)
+
+Lord-based rules (`lord_5.in_house.7`) and planet-based rules (`mars.in_house.7`)
+describe overlapping configurations for specific lagnas — for Taurus lagna, the
+5th lord IS Jupiter. Detecting this overlap is essential for true concordance and
+contradiction detection across the full rule estate.
+
+**Decision: resolve at engine runtime, not at encoding time.**
+
+Rationale:
+- The resolution table is static (12 lagnas × 12 houses, derivable from
+  `_SIGN_LORD[12]` in `house_lord.py`). No pre-computation needed.
+- The overlap only becomes meaningful when the engine has a real chart — an
+  Aries lagna chart fires `lord_1.in_house.7` AND `mars.in_house.7` AND
+  `lord_8.in_house.7`, and all three resolve to Mars in 7th. The engine
+  holds all fired predictions simultaneously and detects concordance/contradiction
+  at that point.
+- At encoding time, lord-to-lord matching (`lord_5.in_house.7` across texts) is
+  the 80% case and works on abstract fingerprints without resolution.
+- Building the resolution layer now has zero consumers — the rule-firing engine
+  doesn't exist yet (Phase 2, S411+). YAGNI.
+
+**When to build it:** When the rule-firing engine is wired to the V2 corpus
+(estimated Phase 2). At that point, add a `resolve_lord_to_planet(lagna_si, lord_of)`
+call that returns the specific planet, enabling cross-layer overlap detection
+on fired rules for a specific chart.
+
+---
+
+## 6. Enforcement
 
 From S313 onward:
 
@@ -266,7 +295,7 @@ From S313 onward:
 
 ---
 
-## 6. Migration Path for Existing Rules
+## 7. Migration Path for Existing Rules
 
 The 461 existing V2 rules (BPHS Ch.12-25) are the ANCHOR text. They don't need
 concordance/divergence yet because there's nothing to compare against.
