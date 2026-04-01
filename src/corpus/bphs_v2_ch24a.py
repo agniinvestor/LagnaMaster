@@ -396,17 +396,31 @@ b.add(
 # ── Sloka 17: 2nd lord in 5th house ───────────────────────────────────────
 b.add(
     conditions=[{"type": "lord_in_house", "lord_of": 2, "house": 5}],
-    signal_group="h2_lord_in_h5_wealthy_sons",
+    signal_group="h2_lord_in_h5_native_wealthy",
     direction="favorable", intensity="moderate",
-    domains=["wealth", "progeny"],
-    entity_target="children",
+    domains=["wealth"],
     predictions=[
-        {"entity": "children", "claim": "native_and_sons_wealthy_intent_on_earning",
+        {"entity": "native", "claim": "native_wealthy_intent_on_earning",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.24 v.17",
-    description="2nd lord in 5th: not only the native but also his sons will be wealthy. Intent on earning wealth.",
+    description="2nd lord in 5th: the native will be wealthy, intent on earning wealth.",
     commentary_context="Santhanam: The 2nd lord going to the 5th house will make one resort to trickery. His family life will not be happy. He will not be kind to others. He will be very lustful and will be prone to lose a child prematurely.",
+)
+# v.17 split: children's wealth
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 2, "house": 5}],
+    signal_group="h2_lord_in_h5_sons_wealthy",
+    direction="favorable", intensity="moderate",
+    domains=["wealth"],
+    entity_target="children",
+    predictions=[
+        {"entity": "children", "claim": "sons_will_also_be_wealthy",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.24 v.17",
+    description="2nd lord in 5th: not only the native but also his sons will be wealthy.",
+    commentary_context="Santhanam: Same verse as native wealth rule — the text explicitly states both native and sons will be wealthy. Prone to lose a child prematurely.",
 )
 
 # ── Sloka 18: 2nd lord in 6th house ───────────────────────────────────────
@@ -513,16 +527,30 @@ b.add(
     signal_group="h2_lord_in_h12_devoid_wealth",
     direction="unfavorable", intensity="moderate",
     domains=["wealth"],
-    entity_target="children",
     predictions=[
-        {"entity": "children", "claim": "adventurous_devoid_of_wealth_eldest_child_will_not_keep_happy",
+        {"entity": "native", "claim": "adventurous_devoid_of_wealth_interested_in_others_wealth",
          "domain": "wealth", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.24 v.24",
-    description="2nd lord in 12th: adventurous, devoid of wealth, interested in others' wealth, eldest child will not keep him happy.",
+    description="2nd lord in 12th: adventurous, devoid of wealth, interested in others' wealth.",
     commentary_context="Santhanam: According to the saying 'if two or more (favourable) planets, the native will be exit emely wealthy.' This is found to be a sound clue in actual cases. However, the 2nd lord lonely in the 12th is bad for riches, except in the case of Aries ascendant with Venus in the 12th in high dignity.",
     concordance_texts=["Saravali"],
     exceptions=["if_two_or_more_favourable_planets_in_12th_then_wealthy"],
+)
+# v.24 split: eldest child unhappiness
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 2, "house": 12}],
+    signal_group="h2_lord_in_h12_eldest_child_unhappy",
+    direction="unfavorable", intensity="moderate",
+    domains=["progeny"],
+    entity_target="children",
+    predictions=[
+        {"entity": "children", "claim": "eldest_child_will_not_keep_native_happy",
+         "domain": "progeny", "direction": "unfavorable", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.24 v.24",
+    description="2nd lord in 12th: eldest child will not keep the native happy.",
+    commentary_context="Santhanam: Split from native wealth prediction — same verse, distinct entity per granularity principle #2.",
 )
 
 

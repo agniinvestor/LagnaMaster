@@ -19,7 +19,7 @@ from src.corpus.v2_builder import V2ChapterBuilder
 
 b = V2ChapterBuilder(
     chapter="Ch.25", category="upagraha_effects",
-    id_start=2553, session="S312", sloka_count=87,
+    id_start=2557, session="S312", sloka_count=87,
     chapter_tags=["upagraha", "non_luminous"],
     entity_target="native",
     prediction_type="trait",

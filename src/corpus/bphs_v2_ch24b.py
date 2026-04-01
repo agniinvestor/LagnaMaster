@@ -17,7 +17,7 @@ from src.corpus.v2_builder import V2ChapterBuilder
 
 b = V2ChapterBuilder(
     chapter="Ch.24", category="bhava_lord_effects",
-    id_start=2453, session="S310", sloka_count=48,
+    id_start=2455, session="S310", sloka_count=48,
     chapter_tags=["bhava_lords", "lord_placement"],
     entity_target="native",
     prediction_type="trait",
@@ -624,14 +624,28 @@ b.add(
     signal_group="h7_lord_in_h12_penury_miser",
     direction="unfavorable", intensity="moderate",
     domains=["wealth"],
-    entity_target="spouse",
     predictions=[
-        {"entity": "spouse", "claim": "penury_miser_livelihood_related_to_clothes_wife_spendthrift",
+        {"entity": "native", "claim": "penury_miser_livelihood_related_to_clothes",
          "domain": "wealth", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.24 v.84",
-    description="7th lord in 12th: incur penury, be a miser, livelihood related to clothes. Wife will be a spendthrift.",
-    commentary_context="Santhanam: No separate note. The 7th lord in the house of loss creates financial difficulties and a spending-prone spouse.",
+    description="7th lord in 12th: incur penury, be a miser, livelihood related to clothes.",
+    commentary_context="Santhanam: No separate note. The 7th lord in the house of loss creates financial difficulties.",
+)
+# v.84 split: wife spendthrift
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 7, "house": 12}],
+    signal_group="h7_lord_in_h12_wife_spendthrift",
+    direction="unfavorable", intensity="moderate",
+    domains=["wealth"],
+    entity_target="spouse",
+    predictions=[
+        {"entity": "spouse", "claim": "wife_will_be_a_spendthrift",
+         "domain": "wealth", "direction": "unfavorable", "magnitude": 0.5},
+    ],
+    verse_ref="Ch.24 v.84",
+    description="7th lord in 12th: wife will be a spendthrift.",
+    commentary_context="Santhanam: Split from native penury prediction — same verse, distinct entity per granularity principle #2. Spending-prone spouse.",
 )
 
 

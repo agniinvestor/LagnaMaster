@@ -17,7 +17,7 @@ from src.corpus.v2_builder import V2ChapterBuilder
 
 b = V2ChapterBuilder(
     chapter="Ch.24", category="bhava_lord_effects",
-    id_start=2502, session="S311", sloka_count=52,
+    id_start=2505, session="S311", sloka_count=52,
     chapter_tags=["bhava_lords", "lord_placement"],
     entity_target="native",
     prediction_type="trait",
@@ -538,17 +538,32 @@ b.add(
     conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 8}],
     signal_group="h11_lord_in_h8_reversals_longlived",
     direction="mixed", intensity="moderate",
-    domains=["longevity", "marriage"],
-    entity_target="spouse",
+    domains=["longevity"],
     predictions=[
-        {"entity": "spouse", "claim": "reversals_undertakings_long_life_wife_predecease",
+        {"entity": "native", "claim": "reversals_in_all_undertakings_but_longlived",
          "domain": "longevity", "direction": "mixed", "magnitude": 0.5},
     ],
     verse_ref="Ch.24 v.128",
-    description="11th lord in 8th: incur reversals in all undertakings, live long, wife will predecease him.",
+    description="11th lord in 8th: incur reversals in all undertakings, but live long.",
     commentary_context="Santhanam: The 11th lord in the 8th house increases the native's longevity. Mars in the 8th being the 11th lord for Gemini bears ample testimony to this effect. However, this rule should not be applied to Leo ascendant having Mercury (the 11th lord) in the 8th house in debilitation.",
     concordance_texts=["Saravali"],
     exceptions=["leo_ascendant_mercury_11th_lord_in_8th_debilitation_not_apply"],
+)
+# v.128 split: wife will predecease
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 8}],
+    signal_group="h11_lord_in_h8_wife_predecease",
+    direction="unfavorable", intensity="strong",
+    domains=["marriage", "longevity"],
+    entity_target="spouse",
+    predictions=[
+        {"entity": "spouse", "claim": "wife_will_predecease_the_native",
+         "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.24 v.128",
+    description="11th lord in 8th: wife will predecease him.",
+    commentary_context="Santhanam: Split from native longevity prediction — same verse, distinct entity per granularity principle #2.",
+    concordance_texts=["Saravali"],
 )
 
 # ── Sloka 129: 11th lord in 9th ───────────────────────────────────────────
