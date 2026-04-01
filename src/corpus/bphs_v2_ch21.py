@@ -226,6 +226,6 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": 9}],
       commentary_context="Santhanam: Third fame yoga. 10th lord in 9th + ascendant lord in 10th + Moon in 5th = dharma-karma connection + purva punya = lasting renown.",
       description="10th lord in 9th + ascendant lord in 10th + Moon in 5th: fame.",
       modifiers=[{"condition": "ascendant_lord_in_10th", "effect": "amplifies", "strength": "moderate"},
-                 {"condition": "moon_in_5th", "effect": "amplifies", "strength": "moderate"}])
+                 {"condition": "moon_in_5th_house_completes_dharma_karma_triple_combination", "effect": "amplifies", "strength": "moderate"}])
 
 BPHS_V2_CH21_REGISTRY = b.build()

@@ -32,8 +32,8 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 11}]
       signal_group="jupiter_h11_6000_nishkas", direction="favorable", intensity="strong", domains=["wealth"],
       predictions=[{"entity": "native", "claim": "own_6000_nishkas", "domain": "wealth", "direction": "favorable", "magnitude": 0.8}],
       verse_ref="Ch.22 v.6", commentary_context="No separate note. Three natural benefics in wealth(2nd)/fortune(9th)/gains(11th) = extraordinary dhana yoga.", description="Jupiter in 11th + 2nd by Moon + 9th by Venus: 6000 Nishkas.",
-      modifiers=[{"condition": "moon_in_2nd", "effect": "conditionalizes", "strength": "moderate"},
-                 {"condition": "venus_in_9th", "effect": "conditionalizes", "strength": "moderate"}])
+      modifiers=[{"condition": "moon_in_2nd_house_additional_benefic_in_wealth_house", "effect": "conditionalizes", "strength": "moderate"},
+                 {"condition": "venus_in_9th_house_additional_benefic_in_fortune_house", "effect": "conditionalizes", "strength": "moderate"}])
 
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 1},
                    {"type": "lord_in_house", "lord_of": 1, "house": 11}],

@@ -223,7 +223,7 @@ b.add(
         "Santhanam: 12 = indicative number. Mars exalted + Jupiter company "
         "= Jupiter in fall. Some coborn die due to Jupiter's debilitation."
     ),
-    modifiers=[{"condition": "jupiter_in_company_may_be_debilitated", "effect": "modifies", "strength": "moderate"}],
+    modifiers=[{"condition": "jupiter_in_company_of_exalted_mars_may_itself_be_in_debilitation", "effect": "conditionalizes", "strength": "moderate"}],
 )
 
 # ═══ v.12-13: Seven co-born ══════════════════════════════════════════════════

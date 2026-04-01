@@ -305,7 +305,7 @@ b.add(
     concordance_texts=[],
     modifiers=[
         {"condition": "h5_lord_in_movable_sign", "effect": "conditionalizes", "strength": "strong"},
-        {"condition": "moon_with_rahu", "effect": "amplifies", "strength": "moderate"},
+        {"condition": "moon_conjunct_rahu_in_5th_indicates_illegitimate_child", "effect": "amplifies", "strength": "moderate"},
     ],
 )
 
@@ -623,7 +623,7 @@ b.add(
     verse_ref="Ch.16 v.32",
     commentary_context="Santhanam: If the 5th lord is with Mars, one will live long but lose his children one after the other as they are born.",
     description="5th lord with Mars: native lives long but loses children one after the other as born.",
-    modifiers=[{"condition": "conjunct_mars", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "5th_lord_conjunct_mars_children_lost_one_after_another_as_born", "effect": "conditionalizes", "strength": "strong"}],
     prediction_type="trait")
 
 # ═══ GAP FILLS (identified by PDF-first audit 2026-04-01) ═════════════════════
@@ -652,7 +652,7 @@ b.add(
     verse_ref="Ch.16 v.24-32",
     commentary_context="Jupiter in deep exaltation + Rahu with 2nd lord + 9th occupied by own lord → nine sons.",
     description="Jupiter deep exaltation + Rahu with 2nd lord + 9th lord in 9th: nine sons.",
-    modifiers=[{"condition": "h9_lord_in_h9", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "9th_house_occupied_by_its_own_lord_completes_nine_son_yoga", "effect": "conditionalizes", "strength": "moderate"}],
     prediction_type="trait")
 
 # v.24-32 gap: Only 1 son (malefic 5th from asc + Jupiter 5th from Saturn)
