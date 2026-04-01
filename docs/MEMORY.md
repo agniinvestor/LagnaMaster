@@ -147,7 +147,13 @@ PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=no 2>&1 | tail -3
 
 ---
 
-## Next Session: S313 — BPHS Phase 1B Ch.26 (Evaluation of Planetary Aspects)
+## S313 — BPHS Phase 1B Ch.28+ (Ch.26-27 are methodology, 0 rules)
+
+Ch.26 (Planetary Aspects, pp.254-263): Drishti Kona formulas, speculum tables,
+aspect value computation. Pure calculation, no predictions. Verified from PDF.
+Ch.27 (Shadbala, pp.263+): 6-fold strength computation. Same.
+
+S313 starts at Ch.28 (Ishta/Kashta Balas) or Ch.29 (Bhava Padas).
 
 Ch.26 is a methodology chapter (aspects, Drishti Kona calculations, special
 aspects of Saturn/Jupiter/Mars). Likely sparse on predictive rules — may be
