@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **7098+ passing, 3 skipped, 0 lint errors, 0 V2 audit errors, 211 production-ready rules, CI green**
+- **7364 passing, 3 skipped, 0 lint errors, 0 V2 audit errors, 459 L3-complete rules, CI green**
 - **S305 extensions:** RuleRecord 10 new fields, 18 contract tests, corpus dashboard, modifier extractor, planet normalization, diverse 12-lagna test suite, 140 scripts archived to tools/archive/
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas
@@ -232,7 +232,7 @@ INDIA_1947 = {
 
 | Metric | Current | Phase 1B Target | 2030 Target |
 |--------|---------|-----------------|------------|
-| Tests passing | **7,364** (3 skipped) | 4,000+ | 8,000+ |
+| Tests passing | **7364** (3 skipped) | 4,000+ | 8,000+ |
 | Lint errors | **0** | 0 | 0 |
 | Corpus — legacy (non-compliant) | 6,838 rules | deprecated | — |
 | Corpus — V2 compliant (Ch.12-25) | **461 rules** | ~4,500 | — |
