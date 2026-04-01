@@ -118,7 +118,11 @@ When in doubt, read that file to reconstruct state.
 - **Session 306:** BPHS Phase 1B Re-encode Start — Ch.12-15 (1st-4th House Effects); BPHS0001-BPHS0325; 85 rules; corpus 6670; 3842 tests — **BPHS Block A: 85/218 predictive slokas encoded**
 - **Session 307:** BPHS Phase 1B Ch.16-19 (5th-8th House Effects); BPHS0400-BPHS0719; 75 rules; corpus 6745; 3842+ tests — **BPHS Block A: 160/218 slokas**
 - **Session 308:** BPHS Phase 1B Ch.20-23 (9th-12th House Effects); BPHS0800-BPHS1110; 63 rules; corpus 6808; 6060 tests — **BPHS Block A COMPLETE: 223/249 slokas**
-- **Next session:** S309
+- **Session 309:** BPHS Phase 1B Ch.24 Part A (1st-4th Lord Effects); BPHS2400-BPHS2452; 53 rules; corpus 7114; 7364 tests — **BPHS Block B: lords 1-4 of 12**
+- **Session 310:** BPHS Phase 1B Ch.24 Part B (5th-8th Lord Effects); BPHS2453-BPHS2501; 49 rules; corpus 7163; 7364 tests — **BPHS Block B: lords 1-8 of 12**
+- **Session 311:** BPHS Phase 1B Ch.24 Part C (9th-12th Lord + Misc); BPHS2502-BPHS2552; 51 rules; corpus 7214; 7364 tests — **Ch.24 COMPLETE: 153 rules from 148 slokas**
+- **Session 312:** BPHS Phase 1B Ch.25 (Non-Luminous Planets); BPHS2553-BPHS2637; 85 rules; corpus 7299; 7364 tests — **Ch.25 COMPLETE: 85 rules from 87 slokas**
+- **Next session:** S313
 
 ---
 
@@ -143,14 +147,15 @@ PYTHONPATH=. .venv/bin/pytest tests/ -q --tb=no 2>&1 | tail -3
 
 ---
 
-## Next Session: S309 — BPHS Phase 1B Block B: Ch.24 (Effects of Bhava Lords)
+## Next Session: S313 — BPHS Phase 1B Ch.26 (Evaluation of Planetary Aspects)
 
-Ch.24 is the largest single chapter in BPHS (148 counted slokas, ~18 pages).
-It covers the effects of each of the 12 bhava lords in all 12 houses = 144
-combinations plus 4 introductory/summary slokas. This is a systematic 1B_matrix
-chapter that will produce ~130-150 rules. May require 2-3 sessions.
+Ch.26 is a methodology chapter (aspects, Drishti Kona calculations, special
+aspects of Saturn/Jupiter/Mars). Likely sparse on predictive rules — may be
+a short session. Ch.27 (Evaluation of Strengths / Shadbala) follows.
 
-Block A (Ch.12-23) was completed in S308 with 223 rules from 249 predictive slokas.
+Block A (Ch.12-23) completed S308: 223 rules from 249 slokas.
+Block B (Ch.24-25) completed S309-S312: 238 rules from 235 slokas.
+Combined BPHS V2: Ch.12-25 = 461 rules.
 
 ---
 
@@ -223,15 +228,16 @@ INDIA_1947 = {
 
 ---
 
-## Key Metrics (Post-S308)
+## Key Metrics (Post-S312)
 
 | Metric | Current | Phase 1B Target | 2030 Target |
 |--------|---------|-----------------|------------|
-| Tests passing | **6,060** (3 skipped) | 4,000+ | 8,000+ |
+| Tests passing | **7,364** (3 skipped) | 4,000+ | 8,000+ |
 | Lint errors | **0** | 0 | 0 |
 | Corpus — Phase 1A representative | **2,634 rules** | complete | — |
-| Corpus — Phase 1B sutra-level | **4,174 rules** | ~6,600 new | — |
-| Corpus — combined target | **6,808** | **~9,200** | ~9,200+ |
+| Corpus — Phase 1B sutra-level | **4,665 rules** | ~6,600 new | — |
+| Corpus — combined target | **7,299** | **~9,200** | ~9,200+ |
+| BPHS V2 (Ch.12-25) | **461 rules** | ~4,500 | — |
 | Phase 1B Rule Contract compliance | ~95% | ≥90% of Phase 1B rules | 100% |
 | Concordance ≥0.75 rules | ~25% | ≥20% of Phase 1B | — |
 | Ephemeris | **DE431 real files** | DE431 maintained | DE431 maintained |
