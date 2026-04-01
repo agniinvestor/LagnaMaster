@@ -609,18 +609,31 @@ b.add(
 # ── Sloka 28: 3rd lord in 4th house ───────────────────────────────────────
 b.add(
     conditions=[{"type": "lord_in_house", "lord_of": 3, "house": 4}],
-    signal_group="h3_lord_in_h4_happy_wicked_spouse",
-    direction="mixed", intensity="moderate",
-    domains=["wealth", "marriage"],
+    signal_group="h3_lord_in_h4_happy_wealthy",
+    direction="favorable", intensity="moderate",
+    domains=["wealth"],
     predictions=[
-        {"entity": "native", "claim": "happy_wealthy_intelligent_but_wicked_spouse",
+        {"entity": "native", "claim": "happy_wealthy_intelligent",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.6},
+    ],
+    verse_ref="Ch.24 v.28",
+    description="3rd lord in 4th: happy, wealthy, intelligent.",
+    commentary_context="Santhanam: No separate note. Split from spouse prediction — same verse, distinct entities.",
+)
+# v.28 split: wicked spouse
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 3, "house": 4}],
+    signal_group="h3_lord_in_h4_wicked_spouse",
+    direction="unfavorable", intensity="moderate",
+    domains=["marriage"],
+    entity_target="spouse",
+    predictions=[
         {"entity": "spouse", "claim": "spouse_of_wicked_disposition",
          "domain": "marriage", "direction": "unfavorable", "magnitude": 0.5},
     ],
     verse_ref="Ch.24 v.28",
-    description="3rd lord in 4th: happy, wealthy, intelligent but will acquire a wicked spouse.",
-    commentary_context="Santhanam: No separate note. The mixed result combines favourable wealth with problematic marriage.",
+    description="3rd lord in 4th: will acquire a wicked spouse.",
+    commentary_context="Santhanam: No separate note. Split from native wealth prediction — same verse, distinct entities per granularity principle #2.",
 )
 
 # ── Sloka 29: 3rd lord in 5th house ───────────────────────────────────────

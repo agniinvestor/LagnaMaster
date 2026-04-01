@@ -17,7 +17,7 @@ from src.corpus.v2_builder import V2ChapterBuilder
 
 b = V2ChapterBuilder(
     chapter="Ch.24", category="bhava_lord_effects",
-    id_start=2455, session="S310", sloka_count=48,
+    id_start=2456, session="S310", sloka_count=48,
     chapter_tags=["bhava_lords", "lord_placement"],
     entity_target="native",
     prediction_type="trait",

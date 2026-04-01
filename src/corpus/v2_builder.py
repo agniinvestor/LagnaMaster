@@ -121,7 +121,11 @@ class V2ChapterBuilder:
     ) -> str:
         """Add a rule. Returns the generated rule_id."""
         # ── Tier 1 validation (build-time) ──────────────────────────────
-        self._validate_add(conditions, direction, intensity, domains, predictions)
+        ent = entity_target if entity_target is not None else self._default_entity
+        self._validate_add(conditions, direction, intensity, domains, predictions,
+                           description=description, entity_target=ent,
+                           commentary_context=commentary_context,
+                           modifiers=modifiers or [])
 
         rid = f"BPHS{self._num:04d}"
         self._num += 1
@@ -389,8 +393,10 @@ class V2ChapterBuilder:
         return list(self._rules)
 
     @staticmethod
-    def _validate_add(conditions, direction, intensity, domains, predictions):
-        """Tier 1 build-time validation — ALL 13 controls enforced here."""
+    def _validate_add(conditions, direction, intensity, domains, predictions,
+                      *, description="", entity_target="native",
+                      commentary_context="", modifiers=None):
+        """Tier 1 build-time validation — encoding quality gates enforced here."""
         from src.corpus.taxonomy import (
             VALID_OUTCOME_DOMAINS, VALID_OUTCOME_DIRECTIONS,
             VALID_OUTCOME_INTENSITIES, VALID_CONDITION_PRIMITIVES,
@@ -452,6 +458,77 @@ class V2ChapterBuilder:
             ent = pred.get("entity", "")
             if ent and ent not in VALID_ENTITY_TARGETS:
                 errors.append(f"T1-2: predictions[{i}].entity='{ent}' not valid")
+
+        # T1-14: Entity_target vs description — Q6 from encoding checklist
+        # If description says "wife will X" or "sons inimical", entity_target
+        # must match the entity whose fate is being predicted.
+        # Exclusions: patterns that LOOK like other-entity subjects but aren't
+        _POSSESSION_CONTEXT = ["wife will give birth", "wife will bear"]
+        _SUBJECT_PATTERNS = {
+            "spouse": ["wife will", "wife not ", "wife incur", "wife diseased",
+                       "wife destroyed", "wife predecease", "spouse will",
+                       "wife sickly", "wife spendthrift", "wife subdued",
+                       "wife disobedient", "wife wicked"],
+            "father": ["father will", "father pass", "father lost",
+                       "father die", "father destroyed"],
+            "mother": ["mother will", "mother lost", "mother die",
+                       "mother destroyed", "lose mother"],
+            "children": ["sons inimical", "sons hostile", "sons will",
+                         "children will", "lose children", "loss of children",
+                         "child will", "eldest child will"],
+            "siblings": ["co-born destroyed", "co-born will"],
+        }
+        desc_lower = description.lower()
+        # Skip if a possession-context pattern matches (e.g., "wife will give birth" is about progeny, not spouse)
+        is_possession = any(pc in desc_lower for pc in _POSSESSION_CONTEXT)
+        if not is_possession:
+            for target_entity, patterns in _SUBJECT_PATTERNS.items():
+                for p in patterns:
+                    if p in desc_lower:
+                        if entity_target not in (target_entity, "general"):
+                            errors.append(
+                                f"T1-14: description says '{p}' but entity_target='{entity_target}' — "
+                                f"should be '{target_entity}' (Q6: whose fate is predicted?)"
+                            )
+                        break
+
+        # T1-15: Mixed-entity split — Q7 from encoding checklist
+        # If description has subject-verb patterns for TWO different entities,
+        # the rule should be split (granularity principle #2).
+        detected_subjects = set()
+        for target_entity, patterns in _SUBJECT_PATTERNS.items():
+            for p in patterns:
+                if p in desc_lower:
+                    detected_subjects.add(target_entity)
+                    break
+        if len(detected_subjects) > 1:
+            errors.append(
+                f"T1-15: description mentions {detected_subjects} as prediction subjects — "
+                f"split into separate rules per entity (granularity principle #2)"
+            )
+
+        # T1-16: Atomic prediction claims — Q8 from encoding checklist
+        for i, pred in enumerate(predictions):
+            if not isinstance(pred, dict):
+                continue
+            claim = pred.get("claim", "")
+            # Bundled claims with _and_ joining different outcomes
+            if "_and_" in claim and len(claim) > 60:
+                errors.append(
+                    f"T1-16: predictions[{i}].claim is bundled (contains '_and_', "
+                    f"len={len(claim)}) — split into atomic claims"
+                )
+
+        # T1-17: Prediction entity must match entity_target — Q8 consistency
+        for i, pred in enumerate(predictions):
+            if not isinstance(pred, dict):
+                continue
+            pred_ent = pred.get("entity", "")
+            if pred_ent and entity_target != "general" and pred_ent != entity_target:
+                errors.append(
+                    f"T1-17: predictions[{i}].entity='{pred_ent}' does not match "
+                    f"entity_target='{entity_target}' — fix entity or set target='general'"
+                )
 
         if errors:
             raise ValueError(
