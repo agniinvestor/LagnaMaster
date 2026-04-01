@@ -104,7 +104,8 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": [1, 4, 5, 7,
       verse_ref="Ch.21 v.8-10",
       commentary_context="Santhanam: 10th lord in Pisces + Jupiter = obtain robes, ornaments, happiness. If 11th lord in 10th + 10th lord + Jupiter = happy life.",
       description="10th lord exalted in kendra + Jupiter as 9th lord in 10th: honour, wealth, valour, robes, ornaments.",
-      concordance_texts=["Saravali"])
+      concordance_texts=["Saravali"],
+      modifiers=[{"condition": "11th_lord_also_in_10th_with_10th_lord_and_jupiter", "effect": "amplifies", "strength": "strong"}])
 
 # ═══ v.11: 4 malefics in 11th → cessation of duties ═════════════════════════
 b.add(conditions=[{"type": "planet_in_house", "planet": "Rahu", "house": 11},

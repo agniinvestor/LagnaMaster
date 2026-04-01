@@ -526,6 +526,7 @@ b.add(
     ),
     concordance_texts=[],
     prediction_type="trait",
+    modifiers=[{"condition": "5th_lord_conjunct_mars_lose_children_as_born", "effect": "negates", "strength": "strong"}],
 )
 
 # ═══ v.6: Saturn+Mercury in 5th → one child only ═════════════════════════════
@@ -587,7 +588,8 @@ b.add(
     verse_ref="Ch.16 v.26",
     commentary_context="Santhanam: Eight sons if Jupiter in 5th/9th + 5th lord endowed with strength + 2nd lord in 10th.",
     description="Jupiter in 5th/9th + 5th lord strong + 2nd lord in 10th: eight sons.",
-    prediction_type="trait")
+    prediction_type="trait",
+    modifiers=[{"condition": "2nd_lord_must_be_in_10th", "effect": "conditionalizes", "strength": "strong"}])
 
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 9},

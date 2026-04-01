@@ -167,6 +167,8 @@ b.add(
     concordance_texts=["Saravali"],
     convergence_signals=["mars_conjunct_jupiter", "h2_lord_strong"],
     tags=["jupiter", "h2", "mars", "wealth"],
+    modifiers=[{"condition": "jupiter_must_rule_2nd_house_scorpio_aquarius_lagna", "effect": "conditionalizes", "strength": "strong"}],
+    lagna_scope=["scorpio", "aquarius"],
 )
 
 # ═════════════════════════════════════════════════════════════════════════
@@ -199,6 +201,7 @@ b.add(
         "7th, 10th, 5th or 9th will also lead to financial gains."
     ),
     tags=["h2_lord", "h11_lord", "exchange", "parivartana", "wealth"],
+    modifiers=[{"condition": "2nd_and_11th_lords_conjunct_in_kendra_or_trikona_also_gives_wealth", "effect": "amplifies", "strength": "moderate"}],
 )
 
 # ═════════════════════════════════════════════════════════════════════════
@@ -592,7 +595,8 @@ b.add(
     verse_ref="Ch.13 v.3",
     commentary_context="Santhanam: Whether or not Jupiter owns the 2nd, if he is conjunct Mars, wealth will be acquired — house occupied by them not standing for consideration.",
     description="Jupiter conjunct Mars in any house: wealth acquired. House position irrelevant.",
-    concordance_texts=["Saravali"])
+    concordance_texts=["Saravali"],
+    modifiers=[{"condition": "house_occupied_by_them_not_relevant_only_conjunction_matters", "effect": "conditionalizes", "strength": "moderate"}])
 
 # ═══ v.4 MISSING: 2nd + 11th lords joining in kendra/trikona → gains
 b.add(

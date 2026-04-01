@@ -69,6 +69,7 @@ b.add(
         "Similarly consider Saturn and 10th lord in the matter of longevity."
     ),
     concordance_texts=[],
+    modifiers=[{"condition": "10th_lord_in_8th_with_malefic_or_ascendant_lord", "effect": "amplifies", "strength": "strong"}],
 )
 
 # ═══ v.4-7: Long life yogas ══════════════════════════════════════════════════

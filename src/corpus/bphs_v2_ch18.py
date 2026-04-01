@@ -119,6 +119,7 @@ b.add(
     commentary_context="Santhanam: The above verses hint at the possibility of native obtaining children and grandchildren if the ascendant lord with strength is in the 7th with a benefic as the 7th lord is disposed in exaltation sign.",
     description="7th lord exalted + 7th with benefic + strong ascendant lord and benefic: spouse endowed with seven principal virtues, expanding dynasty by sons and grandsons.",
     concordance_texts=["Saravali"],
+    modifiers=[{"condition": "ascendant_lord_with_strength_in_7th_with_benefic", "effect": "conditionalizes", "strength": "strong"}],
 )
 
 # ═══ v.17: Loss of spouse (early death) ══════════════════════════════════════
@@ -134,6 +135,7 @@ b.add(
     commentary_context="Santhanam: If the 7th lord is in fall, the native's wife will be destroyed (i.e. she will die early). The placement in 6th/8th/12th compounds this.",
     description="7th lord devoid of strength in 6th/8th/12th or if 7th lord is in fall: the native's wife will be destroyed (i.e. she will die early).",
     concordance_texts=["Saravali"],
+    modifiers=[{"condition": "7th_lord_in_fall_compounds_dusthana_placement", "effect": "amplifies", "strength": "strong"}],
 )
 
 # ═══ v.22-34: TIMING OF MARRIAGE — each age as its own rule ══════════════════
@@ -264,7 +266,8 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 7}],
       predictions=[{"entity": "native", "claim": "associate_with_marriageable_age_females", "domain": "marriage", "direction": "mixed", "magnitude": 0.5}],
       verse_ref="Ch.18 v.7-8",
       commentary_context="Santhanam: Mars in 7th = female of marriageable age, or one in her monthly course, or one devoid of conceiving ability. Jupiter in 7th is also no exception.",
-      description="Mars in 7th: associate with marriageable girls or those with menses.")
+      description="Mars in 7th: associate with marriageable girls or those with menses.",
+      modifiers=[{"condition": "jupiter_in_7th_produces_similar_effects", "effect": "amplifies", "strength": "moderate"}])
 
 b.add(conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 7}],
       entity_target="native",
@@ -304,7 +307,8 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 
       predictions=[{"entity": "spouse", "claim": "wife_incur_evils_especially_if_bereft_of_strength", "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.6}],
       verse_ref="Ch.18 v.16",
       commentary_context="Santhanam: 7th house or its lord conjunct malefic + bereft of strength = wife incur evils. Especially if the 7th house/lord is not strong.",
-      description="7th house or its lord conjunct malefic, bereft of strength: wife will incur evils.")
+      description="7th house or its lord conjunct malefic, bereft of strength: wife will incur evils.",
+      modifiers=[{"condition": "7th_house_or_lord_not_strong_intensifies_evils", "effect": "amplifies", "strength": "strong"}])
 
 # ═══ v.18: Lack of conjugal felicity ═════════════════════════════════════════
 b.add(conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 7},
@@ -380,7 +384,8 @@ b.add(
     verse_ref="Ch.18 v.10-13",
     commentary_context="Text: 'If Venus is so related to Saturn, the native will have ugly relations with another male.' Venus-Saturn variant produces entirely different prediction direction from Venus-Mars.",
     description="Venus related to Saturn (instead of Mars): ugly relations with another male.",
-    prediction_type="trait")
+    prediction_type="trait",
+    modifiers=[{"condition": "venus_saturn_conjunction_or_aspect_specifically", "effect": "conditionalizes", "strength": "strong"}])
 
 # v.19-21 gap: 3 wives (Mars+Venus in 7th or Saturn in 7th + asc lord in 8th)
 b.add(
@@ -393,7 +398,8 @@ b.add(
                   "domain": "marriage", "direction": "neutral", "magnitude": 0.5}],
     verse_ref="Ch.18 v.19-21",
     commentary_context="Text: 'If Mars and Venus are in the 7th or if Saturn is in the 7th while the lord of the ascendant is in the 8th, the native will have 3 wives.'",
-    description="Mars+Venus in 7th, or Saturn in 7th + ascendant lord in 8th: three wives.")
+    description="Mars+Venus in 7th, or Saturn in 7th + ascendant lord in 8th: three wives.",
+    modifiers=[{"condition": "alternative_saturn_in_7th_plus_ascendant_lord_in_8th_also_gives_3_wives", "effect": "conditionalizes", "strength": "strong"}])
 
 # v.19-21 gap: Many wives (Venus in dual sign + lord exalted + 7th lord strong)
 b.add(

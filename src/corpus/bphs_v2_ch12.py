@@ -541,6 +541,7 @@ b.add(
     ),
     tags=["sun", "twins", "quadruped_sign", "dual_sign"],
     prediction_type="event",
+    modifiers=[{"condition": "other_six_planets_endowed_with_strength", "effect": "conditionalizes", "strength": "strong"}],
 )
 
 # ═════════════════════════════════════════════════════════════════════════
@@ -585,6 +586,7 @@ b.add(
     ),
     tags=["sun", "moon", "conjunction", "mother_loss", "early_life"],
     prediction_type="event",
+    exceptions=["vargottama_position_of_luminaries_excepted"],
 )
 
 

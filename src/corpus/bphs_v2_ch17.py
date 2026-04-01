@@ -68,6 +68,7 @@ b.add(
     concordance_texts=[],
     cross_chapter_refs=["Ch.32 Planetary Karakatvas"],
     prediction_type="trait",
+    modifiers=[{"condition": "6th_and_8th_lords_join_karaka_in_relevant_bhava", "effect": "conditionalizes", "strength": "strong"}],
 )
 
 # ═══ v.6: Facial diseases ════════════════════════════════════════════════════
@@ -352,6 +353,8 @@ b.add(
         "animals at the age of eight."
     ),
     concordance_texts=[],
+    modifiers=[{"condition": "rahu_in_6th_saturn_in_8th_from_rahu_fire_danger_ages_1_2", "effect": "amplifies", "strength": "strong"},
+               {"condition": "12th_lord_in_ascendant", "effect": "amplifies", "strength": "moderate"}],
 )
 
 # ═══ v.20-22: Danger from water at ages 5 and 9 ═════════════════════════════

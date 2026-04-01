@@ -67,6 +67,7 @@ b.add(
         "Aries, is not conducive to brothers. The 3rd house must be "
         "jointly aspected or occupied by Mars and the 3rd lord."
     ),
+    exceptions=["mars_alone_in_3rd_without_3rd_lord_not_conducive_except_capricorn_scorpio_aries"],
 )
 
 # ═══ v.3: Destruction of co-born ═════════════════════════════════════════════

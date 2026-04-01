@@ -103,7 +103,9 @@ def assess_rule(rule) -> RuleAssessment:
     has_conditional_lang = any(kw in comm_lower for kw in
         ["if ", "unless", "except", "however", "but if", "provided", "only when"])
     has_modifiers = bool(getattr(rule, "modifiers", None)) or bool(getattr(rule, "exceptions", None))
-    modifiers_complete = has_modifiers or not has_conditional_lang
+    # Conditional language is also handled by sibling exception rules or lagna_scope
+    has_linked_handling = bool(getattr(rule, "rule_relationship", None)) or bool(getattr(rule, "lagna_scope", None))
+    modifiers_complete = has_modifiers or has_linked_handling or not has_conditional_lang
 
     # Signal_group canonical format?
     sg = ra.signal_group
