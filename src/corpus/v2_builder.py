@@ -530,6 +530,38 @@ class V2ChapterBuilder:
                     f"entity_target='{entity_target}' — fix entity or set target='general'"
                 )
 
+        # T1-18: Modifier quality — effect vocabulary and condition specificity
+        _VALID_EFFECTS = {"amplifies", "negates", "conditionalizes"}
+        if modifiers is None:
+            modifiers = []
+        for i, mod in enumerate(modifiers):
+            if not isinstance(mod, dict):
+                continue
+            effect = mod.get("effect", "")
+            if effect and effect not in _VALID_EFFECTS:
+                errors.append(
+                    f"T1-18: modifiers[{i}].effect='{effect}' not valid — "
+                    f"use: {sorted(_VALID_EFFECTS)}"
+                )
+            cond = mod.get("condition", "")
+            if cond and len(cond) < 15:
+                errors.append(
+                    f"T1-18: modifiers[{i}].condition='{cond}' too short "
+                    f"({len(cond)} < 15) — describe what the text actually states"
+                )
+
+        # T1-19: Conditional language in commentary without modifiers — Q9
+        if commentary_context and not modifiers:
+            comm_lower = commentary_context.lower()
+            _CONDITIONAL_KW = ["if ", "unless ", "except ", "however,", "but if ",
+                               "provided ", "only when "]
+            has_conditional = any(kw in comm_lower for kw in _CONDITIONAL_KW)
+            if has_conditional:
+                # Check if exceptions or rule_relationship handle it
+                # (can't check here — those aren't passed to _validate_add)
+                # So this is advisory, not blocking
+                pass  # Handled by scorecard and maturity grader, not builder
+
         if errors:
             raise ValueError(
                 "V2 BUILD VALIDATION FAILED:\n" +
