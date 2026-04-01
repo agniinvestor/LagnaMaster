@@ -1,0 +1,381 @@
+{
+  "chapter": 18,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312_verified",
+  "audit_date": "2026-04-01",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.160-169. 4 gaps found: 3 in v.10-13 (Saturn/Mars spouse character, Venus-Mars sexual, Venus-Saturn sexual), 1 in v.19-21 (3-wives and many-wives conditions not separately encoded).",
+  "verses": {
+    "1": {
+      "page": "160",
+      "claims": [
+        {
+          "claim": "7th lord in own sign or exaltation -> full happiness through wife",
+          "type": "condition",
+          "encoded": "BPHS1800"
+        }
+      ]
+    },
+    "2": {
+      "page": "160-161",
+      "claims": [
+        {
+          "claim": "7th lord in 6th/8th/12th -> wife will be sickly",
+          "type": "contrary",
+          "encoded": "BPHS1801"
+        }
+      ]
+    },
+    "3": {
+      "page": "161",
+      "claims": [
+        {
+          "claim": "Venus in 7th -> native exceedingly libidinous; Venus joining malefic -> loss of wife",
+          "type": "condition",
+          "encoded": "BPHS1802"
+        }
+      ]
+    },
+    "4-5": {
+      "page": "161",
+      "claims": [
+        {
+          "claim": "7th lord strong in kendra + conjunct/aspected by benefic -> native wealthy, honourable, happy, fortunate",
+          "type": "condition",
+          "encoded": "BPHS1803"
+        }
+      ]
+    },
+    "6": {
+      "page": "161-162",
+      "claims": [
+        {
+          "claim": "7th lord in Saturn/Venus sign aspected by benefic or in exaltation -> many wives",
+          "type": "condition",
+          "encoded": "BPHS1804"
+        }
+      ]
+    },
+    "7-8": {
+      "page": "162",
+      "claims": [
+        {
+          "claim": "Sun in 7th -> befriend barren females",
+          "type": "condition",
+          "encoded": "BPHS1821"
+        },
+        {
+          "claim": "Mars in 7th -> associate with marriageable girls",
+          "type": "condition",
+          "encoded": "BPHS1822"
+        },
+        {
+          "claim": "Mercury in 7th -> associate with mean females/traders' community",
+          "type": "condition",
+          "encoded": "BPHS1823"
+        }
+      ]
+    },
+    "9": {
+      "page": "162-163",
+      "claims": [
+        {
+          "claim": "Physical features of spouse per planet in 7th: Mars=attractive, Saturn=sick, Jupiter=prominent, Venus=excellent",
+          "type": "condition",
+          "encoded": "BPHS1824"
+        }
+      ]
+    },
+    "10-13": {
+      "page": "163-164",
+      "claims": [
+        {
+          "claim": "Malefics in 12th/7th + decreasing Moon in 5th -> spouse controlled by others, inimical to race/family",
+          "type": "condition",
+          "encoded": "BPHS1825"
+        },
+        {
+          "claim": "7th house occupied or owned by Saturn/Mars -> spouse is harlot or attached to other men illegally",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Distinct condition from BPHS1825 (Saturn/Mars in 7th vs malefics in 12th). Stated in verse text, not just commentary."
+        },
+        {
+          "claim": "Venus in Navamsa/Rasi of Mars or aspect/conjunct Mars -> native indulges in unusual sexual gratification from female",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Venus-Mars condition produces distinct prediction about native's sexual behaviour. Stated in verse text."
+        },
+        {
+          "claim": "Venus related to Saturn (instead of Mars) -> native will have ugly relations with another male",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Venus-Saturn variant produces entirely different prediction direction from Venus-Mars. Stated in verse text."
+        }
+      ]
+    },
+    "14-15": {
+      "page": "164",
+      "claims": [
+        {
+          "claim": "7th lord exalted + 7th with benefic + strong ascendant lord -> spouse with seven principal virtues, sons and grandsons",
+          "type": "condition",
+          "encoded": "BPHS1805"
+        }
+      ]
+    },
+    "16": {
+      "page": "164-165",
+      "claims": [
+        {
+          "claim": "7th house/lord conjunct malefic + bereft of strength -> wife will incur evils",
+          "type": "condition",
+          "encoded": "BPHS1826"
+        }
+      ]
+    },
+    "17": {
+      "page": "165",
+      "claims": [
+        {
+          "claim": "7th lord in dusthana + devoid of strength / in fall -> wife destroyed (early death)",
+          "type": "condition",
+          "encoded": "BPHS1806"
+        }
+      ]
+    },
+    "18": {
+      "page": "165",
+      "claims": [
+        {
+          "claim": "Moon in 7th + 7th lord in 12th + Venus weak -> not endowed with marital happiness",
+          "type": "condition",
+          "encoded": "BPHS1827"
+        }
+      ]
+    },
+    "19-21": {
+      "page": "165-166",
+      "claims": [
+        {
+          "claim": "7th lord in fall or malefic sign + 7th Navamsa = eunuch planet -> two wives",
+          "type": "condition",
+          "encoded": "BPHS1828"
+        },
+        {
+          "claim": "Mars+Venus in 7th OR Saturn in 7th + ascendant lord in 8th -> three wives",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Distinct conditions (Mars+Venus or Saturn+asc lord) producing distinct outcome (3 vs 2 wives). Bundled into BPHS1828 description but conditions not captured."
+        },
+        {
+          "claim": "Venus in dual sign + lord in exaltation + 7th lord strong -> many wives",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Distinct conditions from 2-wives and 3-wives. Bundled into BPHS1828 description but not separately encoded."
+        }
+      ]
+    },
+    "22": {
+      "page": "166",
+      "claims": [
+        {
+          "claim": "7th lord in benefic's house + Venus exalted/own sign -> marriage at age 5/9",
+          "type": "timing_condition",
+          "encoded": "BPHS1807"
+        }
+      ]
+    },
+    "23": {
+      "page": "166",
+      "claims": [
+        {
+          "claim": "Sun in 7th + dispositor conjunct Venus -> marriage at age 7/11",
+          "type": "timing_condition",
+          "encoded": "BPHS1808"
+        }
+      ]
+    },
+    "24": {
+      "page": "166-167",
+      "claims": [
+        {
+          "claim": "Venus in 2nd + 7th lord in 11th -> marriage at age 10/16",
+          "type": "timing_condition",
+          "encoded": "BPHS1809"
+        }
+      ]
+    },
+    "25": {
+      "page": "167",
+      "claims": [
+        {
+          "claim": "Venus in angle + ascendant lord in Cap/Aqu -> marriage at age 11",
+          "type": "timing_condition",
+          "encoded": "BPHS1810"
+        }
+      ]
+    },
+    "26": {
+      "page": "167",
+      "claims": [
+        {
+          "claim": "Venus in angle + Saturn in 7th from Venus -> marriage at age 12/19",
+          "type": "timing_condition",
+          "encoded": "BPHS1811"
+        }
+      ]
+    },
+    "27": {
+      "page": "167",
+      "claims": [
+        {
+          "claim": "Venus in 7th from Moon + Saturn in 7th from Venus -> marriage at age 18",
+          "type": "timing_condition",
+          "encoded": "BPHS1812"
+        }
+      ]
+    },
+    "28": {
+      "page": "167",
+      "claims": [
+        {
+          "claim": "2nd lord in 11th + ascendant lord in 10th -> marriage at age 15",
+          "type": "timing_condition",
+          "encoded": "BPHS1813"
+        }
+      ]
+    },
+    "29": {
+      "page": "167-168",
+      "claims": [
+        {
+          "claim": "Exchange of 2nd and 11th lords -> marriage at age 13",
+          "type": "timing_condition",
+          "encoded": "BPHS1814"
+        }
+      ]
+    },
+    "30": {
+      "page": "168",
+      "claims": [
+        {
+          "claim": "Venus in 7th from 8th + dispositor conjunct Mars -> marriage at age 22/27",
+          "type": "timing_condition",
+          "encoded": "BPHS1815"
+        }
+      ]
+    },
+    "31": {
+      "page": "168",
+      "claims": [
+        {
+          "claim": "7th lord in 12th + natal ascendant lord in 7th Navamsa -> marriage at age 23/26",
+          "type": "timing_condition",
+          "encoded": "BPHS1816"
+        }
+      ]
+    },
+    "32": {
+      "page": "168",
+      "claims": [
+        {
+          "claim": "8th lord in 7th + Venus in Navamsa ascendant -> marriage at age 25/33",
+          "type": "timing_condition",
+          "encoded": "BPHS1817"
+        }
+      ]
+    },
+    "33": {
+      "page": "168-169",
+      "claims": [
+        {
+          "claim": "Venus in 9th from 5th + Rahu in one of said houses -> marriage at age 31/33",
+          "type": "timing_condition",
+          "encoded": "BPHS1818"
+        }
+      ]
+    },
+    "34": {
+      "page": "169",
+      "claims": [
+        {
+          "claim": "Venus in ascendant + 7th lord in 7th -> marriage at age 30/27",
+          "type": "timing_condition",
+          "encoded": "BPHS1819"
+        }
+      ]
+    },
+    "35": {
+      "page": "169",
+      "claims": [
+        {
+          "claim": "7th lord in fall + Venus in 8th -> loss of wife at age 18/33",
+          "type": "timing_condition",
+          "encoded": "BPHS1820"
+        }
+      ]
+    },
+    "36": {
+      "page": "169",
+      "claims": [
+        {
+          "claim": "7th lord in 8th + 12th lord in 7th -> loss of wife at age 19",
+          "type": "timing_condition",
+          "encoded": "BPHS1830"
+        }
+      ]
+    },
+    "37": {
+      "page": "169",
+      "claims": [
+        {
+          "claim": "Rahu in 2nd + Mars in 7th -> wife dies within 3 days of marriage (snake bite)",
+          "type": "timing_condition",
+          "encoded": "BPHS1834"
+        }
+      ]
+    },
+    "38": {
+      "page": "169",
+      "claims": [
+        {
+          "claim": "Venus in 8th + dispositor in Saturn sign -> loss of wife at age 17/21",
+          "type": "timing_condition",
+          "encoded": "BPHS1831"
+        }
+      ]
+    },
+    "39": {
+      "page": "169",
+      "claims": [
+        {
+          "claim": "Ascendant lord debilitated + 2nd lord in 8th -> loss of wife at age 13",
+          "type": "timing_condition",
+          "encoded": "BPHS1832"
+        }
+      ]
+    },
+    "40-41": {
+      "page": "169",
+      "claims": [
+        {
+          "claim": "Moon in 7th from Venus + Mercury in 7th from Moon + 8th lord in 5th -> three marriages (10th, 22nd, 33rd year)",
+          "type": "timing_condition",
+          "encoded": "BPHS1829"
+        }
+      ]
+    },
+    "42": {
+      "page": "169",
+      "claims": [
+        {
+          "claim": "Mars in 6th + Rahu in 7th + Saturn in 8th -> wife will not live long",
+          "type": "condition",
+          "encoded": "BPHS1835"
+        }
+      ]
+    }
+  }
+}

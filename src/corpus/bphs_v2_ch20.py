@@ -178,4 +178,102 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 9},
       verse_ref="Ch.20 v.31", commentary_context="No separate note. Saturn + Moon + fallen ascendant lord = poverty destroying fortune.", description="Saturn in 9th + Moon + ascendant lord in fall: food by begging.",
       modifiers=[{"condition": "ascendant_lord_in_fall", "effect": "amplifies", "strength": "strong"}])
 
+# ═══ GAP FILLS (identified by PDF-first audit 2026-04-01) ═════════════════════
+
+# v.8 gap: Sun deep exaltation + 9th lord in 11th → virtuous, dear to king, devoted to father
+b.add(
+    conditions=[{"type": "planet_dignity", "planet": "Sun", "dignity": "exalted"},
+                {"type": "lord_in_house", "lord_of": 9, "house": 11}],
+    signal_group="sun_exalted_h9_lord_h11_virtuous",
+    direction="favorable", intensity="strong", domains=["character_temperament", "fame_reputation"],
+    predictions=[
+        {"entity": "native", "claim": "virtuous_dear_to_king", "domain": "fame_reputation", "direction": "favorable", "magnitude": 0.7},
+        {"entity": "father", "claim": "native_devoted_to_father", "domain": "character_temperament", "direction": "favorable", "magnitude": 0.6},
+    ],
+    entity_target="general",
+    verse_ref="Ch.20 v.8-9",
+    commentary_context="Sun in deep exaltation + 9th lord in 11th = native virtuous, dear to king and devoted to father.",
+    description="Sun in deep exaltation + 9th lord in 11th: virtuous, dear to king, devoted to father.")
+
+# v.9 gap: Sun in trine + 9th lord in 7th + Jupiter → devoted to father
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Sun", "house": [1, 5, 9]},
+                {"type": "lord_in_house", "lord_of": 9, "house": 7}],
+    entity_target="father",
+    signal_group="sun_trine_h9_lord_h7_jupiter_devoted",
+    direction="favorable", intensity="moderate", domains=["character_temperament"],
+    predictions=[{"entity": "father", "claim": "native_devoted_to_father_sun_trine",
+                  "domain": "character_temperament", "direction": "favorable", "magnitude": 0.6}],
+    verse_ref="Ch.20 v.8-9",
+    commentary_context="Sun in trine from ascendant + 9th lord in 7th + conjunction/aspect of Jupiter → native devoted to father.",
+    description="Sun in trine + 9th lord in 7th + Jupiter conjunction/aspect: devoted to father.",
+    modifiers=[{"condition": "jupiter_conjunct_or_aspecting", "effect": "amplifies", "strength": "moderate"}])
+
+# v.23-25 gap: Sun in 8th + 8th lord in 9th → father dies within 1 year
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Sun", "house": 8},
+                {"type": "lord_in_house", "lord_of": 8, "house": 9}],
+    entity_target="father",
+    signal_group="sun_h8_h8_lord_h9_father_death_1yr",
+    direction="unfavorable", intensity="strong", domains=["longevity"],
+    predictions=[{"entity": "father", "claim": "father_dies_within_1_year_of_birth",
+                  "domain": "longevity", "direction": "unfavorable", "magnitude": 0.8}],
+    timing_window={"type": "age", "value": 1, "precision": "approximate"},
+    verse_ref="Ch.20 v.23-25",
+    commentary_context="Distinct from v.13 (BPHS2009) which requires 12th lord in ascendant. This needs only Sun in 8th + 8th lord in 9th.",
+    description="Sun in 8th + 8th lord in 9th: father dies within 1 year of native's birth.")
+
+# v.23-25 gap: 9th-12th lord exchange → father dies at age 44
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 12},
+                {"type": "lord_in_house", "lord_of": 12, "house": 9}],
+    entity_target="father",
+    signal_group="h9_h12_exchange_father_death_44",
+    direction="unfavorable", intensity="strong", domains=["longevity"],
+    predictions=[{"entity": "father", "claim": "father_dies_at_native_age_44_exchange",
+                  "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7}],
+    timing_window={"type": "age", "value": 44, "precision": "approximate"},
+    verse_ref="Ch.20 v.23-25",
+    commentary_context="Second condition for age 44 (distinct from BPHS2013 which has Saturn in 5th). 9th lord in 12th + 12th lord in 9th exchange.",
+    description="9th-12th lord exchange: father dies at native's age 44.")
+
+# v.12 gap: 10th+3rd lord weak + 9th lord fall/combust → begging
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
+                {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"}],
+    signal_group="h10_h3_weak_h9_fall_begging",
+    direction="unfavorable", intensity="strong", domains=["wealth"],
+    predictions=[{"entity": "native", "claim": "go_begging_for_food",
+                  "domain": "wealth", "direction": "unfavorable", "magnitude": 0.8}],
+    verse_ref="Ch.20 v.12",
+    commentary_context="If the 10th lord and 3rd lord are both bereft of strength while the 9th lord is in fall or in combustion, the native will go abegging for his food.",
+    description="10th + 3rd lords both weak + 9th lord in fall/combustion: native begs for food.",
+    modifiers=[{"condition": "h10_lord_and_h3_lord_both_weak", "effect": "conditionalizes", "strength": "strong"}])
+
+# v.26 gap: Venus deep exaltation + 9th lord + Saturn in 3rd → abundant fortunes
+b.add(
+    conditions=[{"type": "planet_dignity", "planet": "Venus", "dignity": "exalted"},
+                {"type": "planet_in_house", "planet": "Saturn", "house": 3}],
+    signal_group="venus_exalted_h9_lord_saturn_h3_fortune",
+    direction="favorable", intensity="strong", domains=["wealth"],
+    predictions=[{"entity": "native", "claim": "abundant_fortunes",
+                  "domain": "wealth", "direction": "favorable", "magnitude": 0.8}],
+    verse_ref="Ch.20 v.26",
+    commentary_context="One will enjoy abundant fortunes if Venus is in deep exaltation and be in the company of the 9th lord as Saturn is in the 3rd.",
+    description="Venus in deep exaltation + company of 9th lord + Saturn in 3rd: abundant fortunes.",
+    modifiers=[{"condition": "venus_in_company_of_9th_lord", "effect": "conditionalizes", "strength": "moderate"}])
+
+# v.29 gap: 9th lord in 9th + asc lord in asc + Jupiter in 7th → wealth/conveyances
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 9},
+                {"type": "lord_in_house", "lord_of": 1, "house": 1},
+                {"type": "planet_in_house", "planet": "Jupiter", "house": 7}],
+    signal_group="h9_lord_h9_asc_lord_h1_jupiter_h7_wealth",
+    direction="favorable", intensity="strong", domains=["wealth", "property_vehicles"],
+    predictions=[{"entity": "native", "claim": "gains_of_wealth_and_conveyances",
+                  "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
+    verse_ref="Ch.20 v.29",
+    commentary_context="9th lord in 9th + ascendant lord in ascendant + Jupiter in 7th = gains of wealth and conveyances.",
+    description="9th lord in 9th + ascendant lord in ascendant + Jupiter in 7th: gains of wealth and conveyances.")
+
 BPHS_V2_CH20_REGISTRY = b.build()

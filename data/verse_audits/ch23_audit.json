@@ -1,0 +1,111 @@
+{
+  "chapter": 23,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312_verified",
+  "audit_date": "2026-04-01",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.186-189. All 14 verses verified, 0 gaps.",
+  "verses": {
+    "1-4": {
+      "page": "186-187",
+      "claims": [
+        {
+          "claim": "12th lord strong / with benefic / in own house / exalted -> expenses on good accounts, beautiful houses, scented articles",
+          "type": "condition",
+          "encoded": "BPHS2300"
+        }
+      ]
+    },
+    "5-6": {
+      "page": "187",
+      "claims": [
+        {
+          "claim": "12th lord in 6th/8th or debilitation Navamsa -> devoid of happiness from wife, troubled by expenses",
+          "type": "contrary",
+          "encoded": "BPHS2301"
+        }
+      ]
+    },
+    "7": {
+      "page": "187-188",
+      "claims": [
+        {
+          "claim": "Bhavat bhavam principle: predict relative events from derived houses (methodological rule)",
+          "type": "principle",
+          "encoded": "BPHS2308"
+        }
+      ]
+    },
+    "8": {
+      "page": "188",
+      "claims": [
+        {
+          "claim": "Planets in visible half give explicit results; invisible half gives secret results",
+          "type": "principle",
+          "encoded": "BPHS2309"
+        }
+      ]
+    },
+    "9": {
+      "page": "188",
+      "claims": [
+        {
+          "claim": "Rahu + Mars + Saturn + Sun in 12th + 12th lord with Sun -> native will go to hell (severe karmic consequences)",
+          "type": "condition",
+          "encoded": "BPHS2302"
+        }
+      ]
+    },
+    "10": {
+      "page": "188",
+      "claims": [
+        {
+          "claim": "Benefic exalted in 12th or conjunct/aspected by benefic -> attain final emancipation (moksha)",
+          "type": "contrary",
+          "encoded": "BPHS2303"
+        }
+      ]
+    },
+    "11": {
+      "page": "188-189",
+      "claims": [
+        {
+          "claim": "12th lord and 12th house with malefics aspected by malefics -> wander from country to country",
+          "type": "condition",
+          "encoded": "BPHS2304"
+        }
+      ]
+    },
+    "12": {
+      "page": "189",
+      "claims": [
+        {
+          "claim": "12th lord and 12th with benefics -> move in own country and progress",
+          "type": "contrary",
+          "encoded": "BPHS2305"
+        }
+      ]
+    },
+    "13": {
+      "page": "189",
+      "claims": [
+        {
+          "claim": "12th occupied by Saturn/Mars + not aspected by benefic -> earnings through sinful measures",
+          "type": "condition",
+          "encoded": "BPHS2306"
+        }
+      ]
+    },
+    "14": {
+      "page": "189",
+      "claims": [
+        {
+          "claim": "Ascendant lord in 12th + Venus in 12th -> expenses on religious grounds",
+          "type": "condition",
+          "encoded": "BPHS2307"
+        }
+      ]
+    }
+  }
+}

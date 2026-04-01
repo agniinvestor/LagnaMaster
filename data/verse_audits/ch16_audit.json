@@ -1,0 +1,275 @@
+{
+  "chapter": 16,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312_verified",
+  "audit_date": "2026-04-01",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.145-151. 4 gaps found: 1 in v.1-3 (combust/weak as distinct condition), 3 in v.24-32 (9-sons, 1-son, offspring-via-2nd-wife not individually encoded).",
+  "verses": {
+    "1-3": {
+      "page": "145-146",
+      "claims": [
+        {
+          "claim": "5th lord + ascendant lord in own signs or angle/trine -> happiness through children",
+          "type": "condition",
+          "encoded": "BPHS1600"
+        },
+        {
+          "claim": "5th lord in 6th/8th/12th -> no offspring",
+          "type": "contrary",
+          "encoded": "BPHS1601"
+        },
+        {
+          "claim": "5th lord combust or with malefics and weak -> no children; if obtained they quit world soon",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Distinct from dusthana placement per granularity rule #1. A chart can have 5th lord in good house but combust. Currently bundled into BPHS1601 description but conditions only check dusthana."
+        }
+      ]
+    },
+    "4": {
+      "page": "146",
+      "claims": [
+        {
+          "claim": "5th lord in 6th + lagna lord conjunct Mars -> lose first child, female not fertile thereafter",
+          "type": "condition",
+          "encoded": "BPHS1602"
+        }
+      ]
+    },
+    "5-6": {
+      "page": "146-147",
+      "claims": [
+        {
+          "claim": "5th lord in dusthana + Mercury and Ketu in 5th -> one child only (Kakavandhya Dosha)",
+          "type": "condition",
+          "encoded": "BPHS1603"
+        },
+        {
+          "claim": "5th lord in fall + not aspecting 5th + Saturn and Mercury in 5th -> one child only",
+          "type": "distinct_condition",
+          "encoded": "BPHS1620"
+        }
+      ]
+    },
+    "7": {
+      "page": "147",
+      "claims": [
+        {
+          "claim": "9th lord in ascendant + 5th lord in fall + Ketu in 5th with Mercury -> progeny after great ordeal",
+          "type": "condition",
+          "encoded": "BPHS1621"
+        }
+      ]
+    },
+    "8": {
+      "page": "147",
+      "claims": [
+        {
+          "claim": "5th lord in dusthana/inimical sign/fall -> beget issues with difficulty",
+          "type": "condition",
+          "encoded": "BPHS1604"
+        }
+      ]
+    },
+    "9": {
+      "page": "147-148",
+      "claims": [
+        {
+          "claim": "5th house owned by Saturn/Mercury + occupied/aspected by Saturn and Mandi -> adopted issues",
+          "type": "condition",
+          "encoded": "BPHS1605"
+        }
+      ]
+    },
+    "10": {
+      "page": "148",
+      "claims": [
+        {
+          "claim": "Sun and Moon in same Rasi and Navamsa -> brought up by 3 mothers or 2 fathers",
+          "type": "condition",
+          "encoded": "BPHS1606"
+        }
+      ]
+    },
+    "11": {
+      "page": "148",
+      "claims": [
+        {
+          "claim": "6 planets in 5th + 5th lord in 12th + strong Moon/ascendant -> adopted issue",
+          "type": "condition",
+          "encoded": "BPHS1607"
+        }
+      ]
+    },
+    "12": {
+      "page": "148",
+      "claims": [
+        {
+          "claim": "5th lord strong + 5th aspected by Mercury/Jupiter/Venus -> many children",
+          "type": "condition",
+          "encoded": "BPHS1608"
+        }
+      ]
+    },
+    "13": {
+      "page": "149",
+      "claims": [
+        {
+          "claim": "5th lord with Moon or in Moon's decanate -> beget daughters",
+          "type": "condition",
+          "encoded": "BPHS1609"
+        }
+      ]
+    },
+    "14": {
+      "page": "149",
+      "claims": [
+        {
+          "claim": "5th lord in movable sign + Saturn in 5th + Rahu with Moon -> child of questionable birth",
+          "type": "condition",
+          "encoded": "BPHS1610"
+        }
+      ]
+    },
+    "15": {
+      "page": "149",
+      "claims": [
+        {
+          "claim": "Moon in 8th + Jupiter in 8th from Moon -> native born of other's loins (illegitimate)",
+          "type": "condition",
+          "encoded": "BPHS1622"
+        }
+      ]
+    },
+    "16": {
+      "page": "149-150",
+      "claims": [
+        {
+          "claim": "5th lord exalted or in 2nd/5th/9th or conjunct/aspected by Jupiter -> children assured",
+          "type": "condition",
+          "encoded": "BPHS1611"
+        }
+      ]
+    },
+    "17": {
+      "page": "150",
+      "claims": [
+        {
+          "claim": "3-4 malefics in 5th + 5th lord in fall + no benefic in 5th -> children indulge in mean deeds",
+          "type": "condition",
+          "encoded": "BPHS1623"
+        }
+      ]
+    },
+    "18": {
+      "page": "150",
+      "claims": [
+        {
+          "claim": "Jupiter in 5th + 5th lord with Venus -> offspring at age 32/33",
+          "type": "timing_condition",
+          "encoded": "BPHS1612"
+        }
+      ]
+    },
+    "19": {
+      "page": "150",
+      "claims": [
+        {
+          "claim": "5th lord in kendra with Jupiter -> beget child at age 30 or 36",
+          "type": "timing_condition",
+          "encoded": "BPHS1613"
+        }
+      ]
+    },
+    "20": {
+      "page": "150",
+      "claims": [
+        {
+          "claim": "Jupiter in 9th + Venus in 9th from Jupiter + lagna lord -> child at age 40",
+          "type": "timing_condition",
+          "encoded": "BPHS1614"
+        }
+      ]
+    },
+    "21": {
+      "page": "150-151",
+      "claims": [
+        {
+          "claim": "Rahu in 5th + 5th lord with malefic + Jupiter debilitated -> lose child at age 32",
+          "type": "timing_condition",
+          "encoded": "BPHS1615"
+        }
+      ]
+    },
+    "22": {
+      "page": "151",
+      "claims": [
+        {
+          "claim": "Malefic in 5th from Jupiter + another in 5th from ascendant -> loss of children at 33 and 36",
+          "type": "timing_condition",
+          "encoded": "BPHS1616"
+        }
+      ]
+    },
+    "23": {
+      "page": "151",
+      "claims": [
+        {
+          "claim": "Mandi in ascendant + ascendant lord in fall -> grief from loss of child at age 56",
+          "type": "timing_condition",
+          "encoded": "BPHS1617"
+        }
+      ]
+    },
+    "24-32": {
+      "page": "150-151",
+      "claims": [
+        {
+          "claim": "Compound yoga for 10 sons: malefics in 4th/6th + 5th lord deep exaltation + lagna lord + Jupiter with benefic",
+          "type": "condition",
+          "encoded": "BPHS1618"
+        },
+        {
+          "claim": "Jupiter in deep exaltation + Rahu with 2nd lord + 9th occupied by own lord -> nine sons",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Distinct conditions from 10-sons yoga. Mentioned in BPHS1618 description but not separately encoded with its own conditions."
+        },
+        {
+          "claim": "Jupiter in 5th/9th + 5th lord strong + 2nd lord in 10th -> eight sons",
+          "type": "condition",
+          "encoded": "BPHS1624"
+        },
+        {
+          "claim": "Saturn in 9th + 5th lord in 5th -> seven sons, twins born twice",
+          "type": "condition",
+          "encoded": "BPHS1625"
+        },
+        {
+          "claim": "5th lord in 5th + conjunction with 2nd lord -> 7 sons, 3 will pass away",
+          "type": "condition",
+          "encoded": "BPHS1626"
+        },
+        {
+          "claim": "Malefic in 5th from ascendant + Jupiter in 5th from Saturn (or vice versa) -> only one son",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Distinct condition with specific planet-from-planet reference. Not encoded."
+        },
+        {
+          "claim": "5th house has malefic or Saturn in 5th from Jupiter -> offspring only through 2nd or 3rd wife",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Separate prediction (offspring via later wife) with distinct conditions. Not encoded."
+        },
+        {
+          "claim": "5th lord with Mars -> native lives long but loses children one after the other",
+          "type": "condition",
+          "encoded": "BPHS1627"
+        }
+      ]
+    }
+  }
+}

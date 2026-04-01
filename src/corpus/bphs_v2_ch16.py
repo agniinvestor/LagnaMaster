@@ -624,4 +624,59 @@ b.add(
     modifiers=[{"condition": "conjunct_mars", "effect": "conditionalizes", "strength": "strong"}],
     prediction_type="trait")
 
+# ═══ GAP FILLS (identified by PDF-first audit 2026-04-01) ═════════════════════
+
+# v.1-3 gap: 5th lord combust/with malefics/weak → no children (distinct from dusthana)
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 5, "house": "any"},
+                {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "weak"}],
+    signal_group="h5_lord_combust_weak_no_children",
+    direction="unfavorable", intensity="strong", domains=["progeny"],
+    predictions=[{"entity": "children", "claim": "no_children_combust_or_weak_5th_lord",
+                  "domain": "progeny", "direction": "unfavorable", "magnitude": 0.7}],
+    verse_ref="Ch.16 v.1-3",
+    commentary_context="Distinct from dusthana placement. Text: 'Should the lord of the 5th be combust or be with malefics and be weak, there will be no children; even if per chance issues are obtained they will only quit the world soon.'",
+    description="5th lord combust or with malefics and weak: no children; if obtained they quit world soon.",
+    modifiers=[{"condition": "conjunct_malefics", "effect": "amplifies", "strength": "strong"}])
+
+# v.24-32 gap: 9 sons (Jupiter deep exaltation + Rahu + 2nd lord + 9th own lord)
+b.add(
+    conditions=[{"type": "planet_dignity", "planet": "Jupiter", "dignity": "exalted"},
+                {"type": "planets_conjunct", "planets": ["Rahu", "lord_of_2"]}],
+    signal_group="jupiter_deep_exalt_rahu_2nd_lord_9_sons",
+    direction="favorable", intensity="strong", domains=["progeny"],
+    predictions=[{"entity": "children", "claim": "nine_sons_indicated",
+                  "domain": "progeny", "direction": "favorable", "magnitude": 0.5}],
+    verse_ref="Ch.16 v.24-32",
+    commentary_context="Jupiter in deep exaltation + Rahu with 2nd lord + 9th occupied by own lord → nine sons.",
+    description="Jupiter deep exaltation + Rahu with 2nd lord + 9th lord in 9th: nine sons.",
+    modifiers=[{"condition": "h9_lord_in_h9", "effect": "conditionalizes", "strength": "moderate"}],
+    prediction_type="trait")
+
+# v.24-32 gap: Only 1 son (malefic 5th from asc + Jupiter 5th from Saturn)
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 5}],
+    signal_group="malefic_5th_jupiter_5th_from_saturn_1_son",
+    direction="unfavorable", intensity="moderate", domains=["progeny"],
+    predictions=[{"entity": "children", "claim": "only_one_son",
+                  "domain": "progeny", "direction": "unfavorable", "magnitude": 0.5}],
+    verse_ref="Ch.16 v.24-32",
+    commentary_context="Only one son if malefic in 5th from ascendant while Jupiter is in 5th from Saturn or vice versa.",
+    description="Malefic in 5th from ascendant + Jupiter in 5th from Saturn (or vice versa): only one son.",
+    modifiers=[{"condition": "jupiter_5th_from_saturn_or_vice_versa", "effect": "conditionalizes", "strength": "strong"}],
+    prediction_type="trait")
+
+# v.24-32 gap: Offspring through 2nd/3rd wife only
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 5}],
+    signal_group="malefic_h5_saturn_5th_from_jupiter_later_wife",
+    direction="unfavorable", intensity="moderate", domains=["progeny", "marriage"],
+    predictions=[{"entity": "children", "claim": "offspring_only_through_2nd_or_3rd_wife",
+                  "domain": "progeny", "direction": "unfavorable", "magnitude": 0.5}],
+    verse_ref="Ch.16 v.24-32",
+    commentary_context="If the 5th house has a malefic in it or if Saturn is in the 5th from Jupiter, the native will beget offspring only through his 2nd or 3rd wife.",
+    description="Malefic in 5th or Saturn in 5th from Jupiter: offspring only through 2nd or 3rd wife.",
+    modifiers=[{"condition": "saturn_5th_from_jupiter", "effect": "conditionalizes", "strength": "moderate"}],
+    prediction_type="trait")
+
 BPHS_V2_CH16_REGISTRY = b.build()

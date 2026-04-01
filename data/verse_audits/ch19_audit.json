@@ -1,0 +1,56 @@
+{
+  "chapter": 19,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312_verified",
+  "audit_date": "2026-04-01",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.169-170. Brief chapter (7 slokas), all claims accounted for. 5 predictive claims, 5 encoded, 0 gaps.",
+  "verses": {
+    "1": {
+      "page": "169-170",
+      "claims": [
+        {
+          "claim": "8th lord in angle -> long life indicated",
+          "type": "condition",
+          "encoded": "BPHS1900"
+        }
+      ]
+    },
+    "2": {
+      "page": "170",
+      "claims": [
+        {
+          "claim": "8th lord joining ascendant lord or malefic in 8th itself -> short-lived",
+          "type": "contrary",
+          "encoded": "BPHS1901"
+        }
+      ]
+    },
+    "3": {
+      "page": "170",
+      "claims": [
+        {
+          "claim": "Saturn and 10th lord similarly affect longevity (10th lord in 8th with malefic -> short life)",
+          "type": "condition",
+          "encoded": "BPHS1902"
+        }
+      ]
+    },
+    "4-7": {
+      "page": "170-172",
+      "claims": [
+        {
+          "claim": "6th lord in 12th (or 6th lord in 6th as 12th lord, or 6th+12th lords in 1st+8th) -> long life (Viparita yoga)",
+          "type": "condition",
+          "encoded": "BPHS1903"
+        },
+        {
+          "claim": "5th/8th/ascendant lords in own navamsas/rasis/friendly signs -> long span of life; also lords of 1st/8th/10th + Saturn in angles/trines/11th -> long life",
+          "type": "condition",
+          "encoded": "BPHS1904"
+        }
+      ]
+    }
+  }
+}

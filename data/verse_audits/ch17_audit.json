@@ -1,0 +1,207 @@
+{
+  "chapter": 17,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312_verified",
+  "audit_date": "2026-04-01",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.152-160. 1 gap found: v.20b fire/birds timing not encoded. Backfill had wrongly marked v.23-25 as preamble — corrected.",
+  "verses": {
+    "1": {
+      "page": "152",
+      "claims": [
+        {
+          "claim": "General introduction to 6th house effects (no predictive content)",
+          "type": "preamble",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "2": {
+      "page": "152",
+      "claims": [
+        {
+          "claim": "6th lord in 6th itself or ascendant or 8th -> ulcers or bruises on body",
+          "type": "condition",
+          "encoded": "BPHS1700"
+        }
+      ]
+    },
+    "3-5": {
+      "page": "152-153",
+      "claims": [
+        {
+          "claim": "Karaka of relative or lord of such house joining 6th lord or in 6th/8th -> ulcers/bruises to that relative; body-part mapping: Sun=head, Moon=face, Mars=neck, Mercury=navel, Jupiter=nose, Venus=eyes, Saturn=feet, Ketu=abdomen",
+          "type": "condition",
+          "encoded": "BPHS1701"
+        }
+      ]
+    },
+    "6": {
+      "page": "153-154",
+      "claims": [
+        {
+          "claim": "Ascendant lord in sign of Mars/Mercury aspected by Mercury -> facial diseases",
+          "type": "condition",
+          "encoded": "BPHS1702"
+        }
+      ]
+    },
+    "7-8": {
+      "page": "154",
+      "claims": [
+        {
+          "claim": "Mars/Mercury as ascendant lord joining Moon+Rahu+Saturn -> leprosy; Moon not in asc + Rahu = white; Saturn replaces Rahu = black; Mars = blood-leprosy",
+          "type": "condition",
+          "encoded": "BPHS1703"
+        }
+      ]
+    },
+    "9-12": {
+      "page": "154-156",
+      "claims": [
+        {
+          "claim": "6th/8th lords in ascendant with planets -> disease by planet: Sun=tumours/fever, Mars=blood/weapons, Mercury=bilious, Jupiter=freedom, Venus=sexual, Saturn=windy, Rahu=low-caste danger, Ketu=navel, Moon=drowning/phlegmatic",
+          "type": "condition",
+          "encoded": "BPHS1704"
+        }
+      ]
+    },
+    "13": {
+      "page": "158",
+      "claims": [
+        {
+          "claim": "Saturn with Rahu + 6th lord and 6th house conjunct malefics -> illness throughout life",
+          "type": "condition",
+          "encoded": "BPHS1705"
+        }
+      ]
+    },
+    "14": {
+      "page": "158",
+      "claims": [
+        {
+          "claim": "Mars in 6th + 6th lord in 8th -> severe fever at age 6 and 12",
+          "type": "timing_condition",
+          "encoded": "BPHS1706"
+        }
+      ]
+    },
+    "15": {
+      "page": "158",
+      "claims": [
+        {
+          "claim": "Moon in Sagittarius/Pisces + Jupiter in 6th -> leprosy at age 19 and 22",
+          "type": "timing_condition",
+          "encoded": "BPHS1707"
+        }
+      ]
+    },
+    "16": {
+      "page": "158",
+      "claims": [
+        {
+          "claim": "Rahu in 6th + ascendant lord in 8th + Mandi in angle -> consumption at age 26",
+          "type": "timing_condition",
+          "encoded": "BPHS1708"
+        }
+      ]
+    },
+    "17": {
+      "page": "158",
+      "claims": [
+        {
+          "claim": "6th and 12th lords in exchange -> spleenary disorders at age 29 and 30",
+          "type": "timing_condition",
+          "encoded": "BPHS1709"
+        }
+      ]
+    },
+    "18": {
+      "page": "158",
+      "claims": [
+        {
+          "claim": "Saturn and Moon together in 6th -> blood leprosy at age 45",
+          "type": "timing_condition",
+          "encoded": "BPHS1710"
+        }
+      ]
+    },
+    "19": {
+      "page": "158",
+      "claims": [
+        {
+          "claim": "Saturn with inimical planet + ascendant lord in ascendant -> windy disorders (rheumatism) at age 59",
+          "type": "timing_condition",
+          "encoded": "BPHS1711"
+        }
+      ]
+    },
+    "20": {
+      "page": "158-159",
+      "claims": [
+        {
+          "claim": "Moon conjunct 6th lord + 8th lord in 6th + 12th lord in ascendant -> troubled by animals at age 8",
+          "type": "timing_condition",
+          "encoded": "BPHS1712"
+        },
+        {
+          "claim": "Rahu in 6th + Saturn in 8th from Rahu -> danger from fire at age 1-2, birds bring evils at age 3",
+          "type": "timing_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Distinct condition (Rahu-Saturn axis) with distinct timing (age 1-3) from the animals-at-8 claim. Mentioned in BPHS1712 commentary but not separately encoded."
+        }
+      ]
+    },
+    "23-25": {
+      "page": "159",
+      "claims": [
+        {
+          "claim": "Sun in 6th/8th + Moon in 12th from Sun -> danger through water at ages 5 and 9",
+          "type": "timing_condition",
+          "encoded": "BPHS1713"
+        },
+        {
+          "claim": "Saturn in 8th + Mars in 7th -> smallpox at age 10 and 30",
+          "type": "timing_condition",
+          "encoded": "BPHS1714"
+        },
+        {
+          "claim": "8th lord conjunct Rahu in angle/trine from 8th + in 8th in Navamsa -> urinary disorders at age 18 and 22",
+          "type": "timing_condition",
+          "encoded": "BPHS1715"
+        }
+      ]
+    },
+    "26": {
+      "page": "159",
+      "claims": [
+        {
+          "claim": "11th and 6th lords in exchange -> loss of wealth through enemies at age 31",
+          "type": "timing_condition",
+          "encoded": "BPHS1716"
+        }
+      ]
+    },
+    "27": {
+      "page": "160",
+      "claims": [
+        {
+          "claim": "5th lord in 6th + 6th lord with Jupiter + 12th lord in ascendant -> own sons will be enemies",
+          "type": "condition",
+          "encoded": "BPHS1717"
+        }
+      ]
+    },
+    "28": {
+      "page": "160",
+      "claims": [
+        {
+          "claim": "Ascendant lord and 6th lord in exchange -> fear from dogs at age 10 and 19",
+          "type": "timing_condition",
+          "encoded": "BPHS1718"
+        }
+      ]
+    }
+  }
+}

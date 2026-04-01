@@ -1,0 +1,136 @@
+{
+  "chapter": 15,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312_verified",
+  "audit_date": "2026-04-01",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.142-144. Every verse read, claims extracted per ENCODING_GRANULARITY.md, then compared against bphs_v2_ch15.py. 14 predictive claims, 14 encoded, 0 gaps.",
+  "verses": {
+    "1": {
+      "page": "142",
+      "claims": [
+        {
+          "claim": "General introduction to 4th house effects (no predictive content)",
+          "type": "preamble",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "2": {
+      "page": "142",
+      "claims": [
+        {
+          "claim": "4th lord in own house or lagna lord in 4th aspected by benefic -> residential comforts in full degree",
+          "type": "condition",
+          "encoded": "BPHS1500"
+        }
+      ]
+    },
+    "3": {
+      "page": "142",
+      "claims": [
+        {
+          "claim": "5th lord in own house/own Navamsa/exaltation -> comforts of lands, conveyances, houses, musical instruments",
+          "type": "condition",
+          "encoded": "BPHS1501"
+        }
+      ]
+    },
+    "4": {
+      "page": "142-143",
+      "claims": [
+        {
+          "claim": "10th lord joins 4th lord in angle or trine -> acquire beautiful mansions",
+          "type": "condition",
+          "encoded": "BPHS1502"
+        }
+      ]
+    },
+    "5": {
+      "page": "143",
+      "claims": [
+        {
+          "claim": "Mercury in ascendant + 4th lord is benefic aspected by another benefic -> honoured by relatives",
+          "type": "condition",
+          "encoded": "BPHS1503"
+        }
+      ]
+    },
+    "6": {
+      "page": "143",
+      "claims": [
+        {
+          "claim": "Benefic in 4th + 4th lord exalted + mother indicator strong -> long-living mother",
+          "type": "condition",
+          "encoded": "BPHS1504"
+        }
+      ]
+    },
+    "7": {
+      "page": "143",
+      "claims": [
+        {
+          "claim": "4th lord in angle + Venus in angle + Mercury exalted -> mother will be happy",
+          "type": "condition",
+          "encoded": "BPHS1505"
+        }
+      ]
+    },
+    "8": {
+      "page": "143",
+      "claims": [
+        {
+          "claim": "Sun in 4th + Moon in 9th + Saturn and Mars in 11th -> confers cows and buffaloes (quadrupeds/vehicles)",
+          "type": "condition",
+          "encoded": "BPHS1506"
+        }
+      ]
+    },
+    "9": {
+      "page": "143-144",
+      "claims": [
+        {
+          "claim": "4th lord + Mars together in 6th or 8th + movable ascendant -> native will be dumb",
+          "type": "condition",
+          "encoded": "BPHS1507"
+        }
+      ]
+    },
+    "10-14": {
+      "page": "144",
+      "claims": [
+        {
+          "claim": "Lagna lord is benefic + 4th lord in fall or 11th + Venus in 12th -> conveyances in 12th year",
+          "type": "timing_condition",
+          "encoded": "BPHS1508"
+        },
+        {
+          "claim": "Sun in 4th + 4th lord exalted + with Venus -> conveyances in 32nd year",
+          "type": "timing_condition",
+          "encoded": "BPHS1509"
+        },
+        {
+          "claim": "4th lord joins 10th lord in 4th lord's exaltation Navamsa -> conveyances in 42nd year",
+          "type": "timing_condition",
+          "encoded": "BPHS1510"
+        },
+        {
+          "claim": "Exchange between 4th and 11th lords -> conveyances in 12th year",
+          "type": "timing_condition",
+          "encoded": "BPHS1511"
+        },
+        {
+          "claim": "Benefic in 4th / aspects 4th / aspects 4th lord -> happy with conveyances, free from accidents",
+          "type": "condition",
+          "encoded": "BPHS1512"
+        },
+        {
+          "claim": "Malefic replacing benefic -> losses concerning vehicles, severe accidents",
+          "type": "contrary",
+          "encoded": "BPHS1513"
+        }
+      ]
+    }
+  }
+}

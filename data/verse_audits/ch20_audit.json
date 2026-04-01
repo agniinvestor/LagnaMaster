@@ -1,0 +1,308 @@
+{
+  "chapter": 20,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312_verified",
+  "audit_date": "2026-04-01",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.172-178. 5 gaps found: v.8-9 (2 virtue/devotion claims), v.12 (begging condition), v.26 (Venus fortune), v.29 (wealth/conveyances). Backfill wrongly marked these as preamble/transitional.",
+  "verses": {
+    "1-2": {
+      "page": "172-173",
+      "claims": [
+        {
+          "claim": "9th lord with strength in 9th -> fortunate and affluent",
+          "type": "condition",
+          "encoded": "BPHS2000"
+        },
+        {
+          "claim": "Jupiter in 9th + 9th lord in angle + ascendant lord strong -> extremely fortunate",
+          "type": "condition",
+          "encoded": "BPHS2001"
+        }
+      ]
+    },
+    "3": {
+      "page": "173",
+      "claims": [
+        {
+          "claim": "9th lord strong + Venus in 9th + Jupiter in kendra -> father is fortunate and affluent",
+          "type": "condition",
+          "encoded": "BPHS2002"
+        }
+      ]
+    },
+    "4": {
+      "page": "173",
+      "claims": [
+        {
+          "claim": "9th lord debilitated -> father is poor; Mars in 10th/12th -> patrimony lost through litigation",
+          "type": "contrary",
+          "encoded": "BPHS2003"
+        }
+      ]
+    },
+    "5": {
+      "page": "173-174",
+      "claims": [
+        {
+          "claim": "9th lord in deep exaltation + Venus in angle + Jupiter 9th from D9 ascendant -> father long-lived",
+          "type": "condition",
+          "encoded": "BPHS2004"
+        }
+      ]
+    },
+    "6": {
+      "page": "174",
+      "claims": [
+        {
+          "claim": "9th lord in angle aspected by Jupiter -> father like a king with conveyances",
+          "type": "condition",
+          "encoded": "BPHS2005"
+        }
+      ]
+    },
+    "7": {
+      "page": "174",
+      "claims": [
+        {
+          "claim": "9th lord in 10th + 10th lord aspected by benefic -> father very rich and famous",
+          "type": "condition",
+          "encoded": "BPHS2006"
+        }
+      ]
+    },
+    "8-9": {
+      "page": "174",
+      "claims": [
+        {
+          "claim": "Sun in deep exaltation + 9th lord in 11th -> native virtuous, dear to king, devoted to father",
+          "type": "condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Distinct condition (Sun exalted + 9th lord 11th) with distinct outcome (virtue + royal favor + filial devotion)."
+        },
+        {
+          "claim": "Sun in trine + 9th lord in 7th + Jupiter conjunction/aspect -> native devoted to father",
+          "type": "condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Second devotion-to-father yoga with different conditions from v.8."
+        }
+      ]
+    },
+    "10": {
+      "page": "175",
+      "claims": [
+        {
+          "claim": "9th lord in 2nd + 2nd lord in 9th -> fortune, conveyances and fame at age 32",
+          "type": "timing_condition",
+          "encoded": "BPHS2007"
+        }
+      ]
+    },
+    "11": {
+      "page": "175",
+      "claims": [
+        {
+          "claim": "Ascendant lord + 6th lord both in 9th -> mutual enmity with father",
+          "type": "condition",
+          "encoded": "BPHS2008"
+        }
+      ]
+    },
+    "12": {
+      "page": "175",
+      "claims": [
+        {
+          "claim": "10th lord and 3rd lord both bereft of strength + 9th lord in fall or combustion -> native goes begging for food",
+          "type": "condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Distinct from v.31 begging claim (which has Saturn+Moon+asc lord fall). Different conditions, same outcome."
+        }
+      ]
+    },
+    "13": {
+      "page": "175-176",
+      "claims": [
+        {
+          "claim": "Sun in 6/8/12 + 8th lord in 9th + 12th lord in ascendant -> father dies before native's birth",
+          "type": "timing_condition",
+          "encoded": "BPHS2009"
+        }
+      ]
+    },
+    "14": {
+      "page": "176",
+      "claims": [
+        {
+          "claim": "9th lord in debilitation Navamsa -> father's death at native's age 3 or 16",
+          "type": "timing_condition",
+          "encoded": "BPHS2010"
+        }
+      ]
+    },
+    "15": {
+      "page": "176",
+      "claims": [
+        {
+          "claim": "Ascendant lord in 2nd + 8th lord in 8th -> father's death at native's age 2 or 12",
+          "type": "timing_condition",
+          "encoded": "BPHS2011"
+        }
+      ]
+    },
+    "16": {
+      "page": "176",
+      "claims": [
+        {
+          "claim": "Rahu in 4th + Sun in 5th -> father's death at native's age 16 or 18",
+          "type": "timing_condition",
+          "encoded": "BPHS2012"
+        }
+      ]
+    },
+    "17": {
+      "page": "176",
+      "claims": [
+        {
+          "claim": "Saturn in 9th from 9th (=5th) + Moon with Sun and Rahu -> father's death at native's age 44",
+          "type": "timing_condition",
+          "encoded": "BPHS2013"
+        }
+      ]
+    },
+    "18": {
+      "page": "176-177",
+      "claims": [
+        {
+          "claim": "Moon in Sun's Navamsa -> father's death at native's age 35 or 41",
+          "type": "timing_condition",
+          "encoded": "BPHS2014"
+        }
+      ]
+    },
+    "19": {
+      "page": "177",
+      "claims": [
+        {
+          "claim": "Sun as 9th lord conjunct Mars and Saturn -> father's death at native's age 50",
+          "type": "timing_condition",
+          "encoded": "BPHS2015"
+        }
+      ]
+    },
+    "20": {
+      "page": "177",
+      "claims": [
+        {
+          "claim": "9th lord debilitated + dispositor in 9th -> father's death at native's age 26 or 30",
+          "type": "timing_condition",
+          "encoded": "BPHS2016"
+        }
+      ]
+    },
+    "21": {
+      "page": "177",
+      "claims": [
+        {
+          "claim": "Saturn in 7th from 8th (=2nd) -> father's death at native's age 6 or 25",
+          "type": "timing_condition",
+          "encoded": "BPHS2017"
+        }
+      ]
+    },
+    "22": {
+      "page": "177",
+      "claims": [
+        {
+          "claim": "Sun in 7th from Saturn (=8th) -> father's death at native's age 21-30",
+          "type": "timing_condition",
+          "encoded": "BPHS2018"
+        }
+      ]
+    },
+    "23-25": {
+      "page": "176-177",
+      "claims": [
+        {
+          "claim": "Sun in 8th + 8th lord in 9th -> father dies within 1 year of native's birth",
+          "type": "timing_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Distinct from v.13 (BPHS2009) which requires 12th lord in asc. This only needs Sun in 8th + 8th lord in 9th."
+        },
+        {
+          "claim": "9th lord in 12th + 12th lord in 9th (exchange) -> father dies at native's age 44",
+          "type": "timing_condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Second condition for age 44 (distinct from BPHS2013 which has Saturn in 5th). 9th-12th exchange."
+        }
+      ]
+    },
+    "26": {
+      "page": "177",
+      "claims": [
+        {
+          "claim": "Venus in deep exaltation + company of 9th lord + Saturn in 3rd -> abundant fortunes",
+          "type": "condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "General fortune claim with specific conditions. No timing stated. Not encoded."
+        }
+      ]
+    },
+    "27-28": {
+      "page": "178",
+      "claims": [
+        {
+          "claim": "Jupiter in 9th + dispositor in kendra -> abundant fortunes after 20th year",
+          "type": "timing_condition",
+          "encoded": "BPHS2019"
+        },
+        {
+          "claim": "Mercury exalted as 9th lord in 9th -> abundant fortunes after 36th year",
+          "type": "timing_condition",
+          "encoded": "BPHS2020"
+        }
+      ]
+    },
+    "29": {
+      "page": "177",
+      "claims": [
+        {
+          "claim": "9th lord in 9th + ascendant lord in ascendant + Jupiter in 7th -> gains of wealth and conveyances",
+          "type": "condition",
+          "encoded": "ENCODED_POST_AUDIT",
+          "gap_note": "Clear predictive claim with 3 conditions. Backfill wrongly marked as transitional."
+        }
+      ]
+    },
+    "30": {
+      "page": "178",
+      "claims": [
+        {
+          "claim": "Rahu in 9th + dispositor in 8th + 9th lord in fall -> devoid of fortunes",
+          "type": "condition",
+          "encoded": "BPHS2021"
+        }
+      ]
+    },
+    "31": {
+      "page": "178",
+      "claims": [
+        {
+          "claim": "Saturn + Moon in 9th + ascendant lord in fall -> food by begging",
+          "type": "condition",
+          "encoded": "BPHS2022"
+        }
+      ]
+    },
+    "32": {
+      "page": "178",
+      "claims": [
+        {
+          "claim": "Closing verse (no separate predictive content)",
+          "type": "preamble",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    }
+  }
+}

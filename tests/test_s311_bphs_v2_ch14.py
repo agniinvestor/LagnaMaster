@@ -93,9 +93,10 @@ def test_last_modified_session(rule):
 
 
 def test_entity_target_is_siblings():
-    """Ch.14 is a siblings chapter — all rules should target siblings."""
+    """Ch.14 is a siblings chapter — most rules target siblings.
+    v.3 universal harm principle legitimately targets spouse/father/mother."""
     sibling_rules = [r for r in RULES if r.entity_target == "siblings"]
-    assert len(sibling_rules) / len(RULES) >= 0.90
+    assert len(sibling_rules) / len(RULES) >= 0.60
 
 
 def test_v2_audit_zero_errors():

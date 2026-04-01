@@ -1,0 +1,121 @@
+{
+  "chapter": 22,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312_verified",
+  "audit_date": "2026-04-01",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.183-186. All 11 verses verified, 0 gaps.",
+  "verses": {
+    "1": {
+      "page": "183",
+      "claims": [
+        {
+          "claim": "General introduction to 11th house effects (no predictive content)",
+          "type": "preamble",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "2": {
+      "page": "183-184",
+      "claims": [
+        {
+          "claim": "11th lord in 11th or angle/trine -> many gains; even combust but exalted -> abundant gains",
+          "type": "condition",
+          "encoded": "BPHS2200"
+        }
+      ]
+    },
+    "3": {
+      "page": "184",
+      "claims": [
+        {
+          "claim": "11th lord in 2nd + 2nd lord in angle + Jupiter -> gains will be great",
+          "type": "condition",
+          "encoded": "BPHS2207"
+        }
+      ]
+    },
+    "4": {
+      "page": "184",
+      "claims": [
+        {
+          "claim": "11th lord in 3rd + 11th occupied by benefic -> 2000 Nishkas at 36th year",
+          "type": "timing_condition",
+          "encoded": "BPHS2201"
+        }
+      ]
+    },
+    "5": {
+      "page": "184",
+      "claims": [
+        {
+          "claim": "11th lord conjunct benefic in angle/trine -> 500 Nishkas at 40th year",
+          "type": "timing_condition",
+          "encoded": "BPHS2202"
+        }
+      ]
+    },
+    "6": {
+      "page": "184-185",
+      "claims": [
+        {
+          "claim": "Jupiter in 11th + Moon in 2nd + Venus in 9th -> 6000 Nishkas",
+          "type": "condition",
+          "encoded": "BPHS2203"
+        }
+      ]
+    },
+    "7": {
+      "page": "185",
+      "claims": [
+        {
+          "claim": "Jupiter + Mercury + Moon in 11th -> wealth, grains, fortunes, diamonds, ornaments",
+          "type": "condition",
+          "encoded": "BPHS2208"
+        }
+      ]
+    },
+    "8": {
+      "page": "185",
+      "claims": [
+        {
+          "claim": "11th lord in ascendant + ascendant lord in 11th (exchange) -> 1000 Nishkas at 33rd year",
+          "type": "timing_condition",
+          "encoded": "BPHS2204"
+        }
+      ]
+    },
+    "9": {
+      "page": "185",
+      "claims": [
+        {
+          "claim": "11th lord in 2nd + 2nd lord in 11th (exchange) -> abundant fortunes after marriage",
+          "type": "timing_condition",
+          "encoded": "BPHS2205"
+        }
+      ]
+    },
+    "10": {
+      "page": "185-186",
+      "claims": [
+        {
+          "claim": "11th lord in 3rd + 3rd lord in 11th (exchange) -> wealth through co-born, excellent ornaments",
+          "type": "condition",
+          "encoded": "BPHS2209"
+        }
+      ]
+    },
+    "11": {
+      "page": "186",
+      "claims": [
+        {
+          "claim": "11th lord in fall/combustion or 6/8/12 with malefic -> no gains despite efforts",
+          "type": "contrary",
+          "encoded": "BPHS2206"
+        }
+      ]
+    }
+  }
+}

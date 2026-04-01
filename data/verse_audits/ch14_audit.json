@@ -1,0 +1,183 @@
+{
+  "chapter": 14,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s312",
+  "audit_date": "2026-03-31",
+  "verified_date": "2026-04-01",
+  "status": "verified",
+  "verification_note": "Re-verified against PDF pp.137-141. Original S312 audit was PDF-first and correct. Gaps remain unencoded in bphs_v2_ch14.py.",
+  "verses": {
+    "1": {
+      "claims": [
+        {
+          "claim": "3rd + benefic \u2192 co-born + courageous",
+          "type": "condition",
+          "encoded": "BPHS1400"
+        }
+      ]
+    },
+    "2": {
+      "claims": [
+        {
+          "claim": "3rd lord + Mars aspects 3rd \u2192 good for co-born",
+          "type": "condition",
+          "encoded": "BPHS1401"
+        },
+        {
+          "claim": "Mars alone in 3rd (except Cap/Sco/Ari) \u2192 not conducive to brothers",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT"
+        }
+      ]
+    },
+    "3": {
+      "claims": [
+        {
+          "claim": "3rd lord + Mars with malefic/in malefic sign \u2192 co-born destroyed",
+          "type": "condition",
+          "encoded": "BPHS1402"
+        },
+        {
+          "claim": "Universal principle: significator+lord in malefic sign \u2192 harm to that relative",
+          "type": "principle",
+          "encoded": "commentary_in_BPHS1402"
+        },
+        {
+          "claim": "Jupiter+11th lord so placed \u2192 elder siblings harmed",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT"
+        },
+        {
+          "claim": "Venus+7th lord so placed \u2192 spouse harmed",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT"
+        },
+        {
+          "claim": "Sun+9th lord so placed \u2192 father harmed",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT"
+        },
+        {
+          "claim": "Moon+4th lord so placed \u2192 mother harmed",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT"
+        }
+      ]
+    },
+    "4": {
+      "claims": [
+        {
+          "claim": "Female planets in 3rd \u2192 sisters born after",
+          "type": "condition",
+          "encoded": "BPHS1403"
+        },
+        {
+          "claim": "Male planets \u2192 brothers",
+          "type": "implied",
+          "encoded": "description_in_BPHS1403"
+        },
+        {
+          "claim": "Saturn/Rahu = male, Mercury/Ketu = female for sex determination",
+          "type": "reference",
+          "encoded": "commentary_in_BPHS1403"
+        }
+      ]
+    },
+    "5-6": {
+      "claims": [
+        {
+          "claim": "3rd lord + Mars in 8th \u2192 destruction of co-born",
+          "type": "condition",
+          "encoded": "BPHS1404"
+        },
+        {
+          "claim": "Mars or 3rd lord in angle/trine/exaltation \u2192 happiness",
+          "type": "contrary",
+          "encoded": "BPHS1405"
+        },
+        {
+          "claim": "Venus+7th lord in 8th \u2192 short married life",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT"
+        },
+        {
+          "claim": "Significator+lord in debilitation/inimical = significance lost",
+          "type": "principle",
+          "encoded": "commentary_in_BPHS1405"
+        }
+      ]
+    },
+    "7-11": {
+      "claims": [
+        {
+          "claim": "Mercury in 3rd + Moon + Mars-Saturn \u2192 elder sister, younger brothers die",
+          "type": "condition",
+          "encoded": "BPHS1406"
+        },
+        {
+          "claim": "3rd lord exalted in trine + Jupiter \u2192 12 total co-born",
+          "type": "condition",
+          "encoded": "BPHS1407"
+        },
+        {
+          "claim": "Mars+Rahu + 3rd lord debilitated \u2192 loss of younger, 3 elders",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT"
+        }
+      ]
+    },
+    "12-13": {
+      "claims": [
+        {
+          "claim": "Moon in 3rd \u2192 7 co-born",
+          "type": "condition",
+          "encoded": "BPHS1408"
+        },
+        {
+          "claim": "Moon alone + male planets \u2192 younger brothers; Venus aspect \u2192 sisters",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT"
+        }
+      ]
+    },
+    "14": {
+      "claims": [
+        {
+          "claim": "Sun in 3rd \u2192 elder siblings destroyed",
+          "type": "condition",
+          "encoded": "BPHS1409"
+        },
+        {
+          "claim": "Saturn in 3rd \u2192 younger siblings destroyed",
+          "type": "condition",
+          "encoded": "BPHS1410"
+        },
+        {
+          "claim": "Mars in 3rd \u2192 both destroyed",
+          "type": "condition",
+          "encoded": "BPHS1411"
+        },
+        {
+          "claim": "Garga: Mars in 3rd = 2 brothers + 2 sisters, all 4 pass early",
+          "type": "distinct_condition",
+          "encoded": "commentary_in_BPHS1411"
+        },
+        {
+          "claim": "Mars in 3rd adverse on native's character",
+          "type": "distinct_condition",
+          "encoded": "ENCODED_POST_AUDIT"
+        }
+      ]
+    },
+    "15": {
+      "claims": [
+        {
+          "claim": "Assess yoga strength before declaring sibling effects",
+          "type": "methodological",
+          "encoded": "BPHS1412"
+        }
+      ]
+    }
+  }
+}

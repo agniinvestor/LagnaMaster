@@ -340,4 +340,73 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Moon", "house": "any"}]
       commentary_context="Santhanam: Moon in 7th from Venus + Mercury in 7th from Moon + 8th lord in 5th = 3 marriages. Marriage in 10th year, another in 22nd year, another in 33rd year.",
       description="Moon in 7th from Venus + Mercury in 7th from Moon + 8th lord in 5th: three marriages (10th, 22nd, 33rd year).")
 
+# ═══ GAP FILLS (identified by PDF-first audit 2026-04-01) ═════════════════════
+
+# v.10-13 gap: Saturn/Mars in 7th → spouse harlot/attached to others
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 7}],
+    entity_target="spouse",
+    signal_group="saturn_mars_h7_spouse_questionable",
+    direction="unfavorable", intensity="strong", domains=["marriage", "character_temperament"],
+    predictions=[{"entity": "spouse", "claim": "spouse_harlot_or_attached_to_others",
+                  "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.6}],
+    verse_ref="Ch.18 v.10-13",
+    commentary_context="Text: 'If the 7th house is occupied or owned by Saturn/Mars, the native will beget a harlot as his spouse or she will be attached to other men illegally.'",
+    description="7th house occupied or owned by Saturn/Mars: spouse of questionable character.",
+    modifiers=[{"condition": "mars_in_7th_or_owning_7th", "effect": "conditionalizes", "strength": "moderate"}])
+
+# v.10-13 gap: Venus in Mars Navamsa/Rasi → unusual sexual gratification
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Venus", "house": "any"}],
+    entity_target="native",
+    signal_group="venus_mars_navamsa_sexual",
+    direction="unfavorable", intensity="moderate", domains=["character_temperament"],
+    predictions=[{"entity": "native", "claim": "unusual_sexual_gratification_from_female",
+                  "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.5}],
+    verse_ref="Ch.18 v.10-13",
+    commentary_context="Text: Venus in Navamsa of Mars or Rasi of Mars or in aspect to/conjunct Mars → native indulges in unusual sexual gratification from female.",
+    description="Venus in Mars Navamsa/Rasi or aspect/conjunct Mars: unusual sexual habits.",
+    modifiers=[{"condition": "venus_in_mars_navamsa_or_rasi_or_conjunct", "effect": "conditionalizes", "strength": "strong"}],
+    prediction_type="trait")
+
+# v.10-13 gap: Venus related to Saturn → ugly relations with male
+b.add(
+    conditions=[{"type": "planets_conjunct", "planets": ["Venus", "Saturn"]}],
+    entity_target="native",
+    signal_group="venus_saturn_ugly_relations_male",
+    direction="unfavorable", intensity="strong", domains=["character_temperament"],
+    predictions=[{"entity": "native", "claim": "ugly_relations_with_another_male",
+                  "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.6}],
+    verse_ref="Ch.18 v.10-13",
+    commentary_context="Text: 'If Venus is so related to Saturn, the native will have ugly relations with another male.' Venus-Saturn variant produces entirely different prediction direction from Venus-Mars.",
+    description="Venus related to Saturn (instead of Mars): ugly relations with another male.",
+    prediction_type="trait")
+
+# v.19-21 gap: 3 wives (Mars+Venus in 7th or Saturn in 7th + asc lord in 8th)
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 7},
+                {"type": "planet_in_house", "planet": "Venus", "house": 7}],
+    entity_target="native",
+    signal_group="mars_venus_h7_three_wives",
+    direction="neutral", intensity="moderate", domains=["marriage"],
+    predictions=[{"entity": "native", "claim": "three_wives",
+                  "domain": "marriage", "direction": "neutral", "magnitude": 0.5}],
+    verse_ref="Ch.18 v.19-21",
+    commentary_context="Text: 'If Mars and Venus are in the 7th or if Saturn is in the 7th while the lord of the ascendant is in the 8th, the native will have 3 wives.'",
+    description="Mars+Venus in 7th, or Saturn in 7th + ascendant lord in 8th: three wives.")
+
+# v.19-21 gap: Many wives (Venus in dual sign + lord exalted + 7th lord strong)
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Venus", "house": "any"}],
+    entity_target="native",
+    signal_group="venus_dual_sign_many_wives",
+    direction="neutral", intensity="moderate", domains=["marriage"],
+    predictions=[{"entity": "native", "claim": "many_wives",
+                  "domain": "marriage", "direction": "neutral", "magnitude": 0.5}],
+    verse_ref="Ch.18 v.19-21",
+    commentary_context="Text: 'There will be many wives if Venus is in a dual sign while its lord is in exaltation as the 7th lord is endowed with strength.'",
+    description="Venus in dual sign + lord in exaltation + 7th lord strong: many wives.",
+    modifiers=[{"condition": "venus_in_dual_sign", "effect": "conditionalizes", "strength": "strong"},
+               {"condition": "dispositor_exalted_h7_lord_strong", "effect": "amplifies", "strength": "moderate"}])
+
 BPHS_V2_CH18_REGISTRY = b.build()

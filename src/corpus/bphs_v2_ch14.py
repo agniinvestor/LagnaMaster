@@ -307,4 +307,127 @@ b.add(
     prediction_type="trait",
 )
 
+# ═══ GAP FILLS (identified by PDF-first audit 2026-04-01) ═════════════════════
+
+# v.2 gap: Mars alone in 3rd (except Cap/Sco/Ari) → not conducive to brothers
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 3}],
+    signal_group="mars_alone_h3_not_conducive",
+    direction="unfavorable", intensity="moderate", domains=["progeny"],
+    predictions=[{"entity": "siblings", "claim": "mars_alone_not_conducive_to_brothers",
+                  "domain": "progeny", "direction": "unfavorable", "magnitude": 0.5}],
+    verse_ref="Ch.14 v.2",
+    commentary_context="Santhanam: Mars alone in 3rd, except in Capricorn/Scorpio/Aries, is not conducive to brothers. The 3rd house must be jointly aspected/occupied by Mars AND the 3rd lord.",
+    description="Mars alone in 3rd (not in Cap/Sco/Ari): not conducive to brothers.",
+    exceptions=["mars_in_capricorn", "mars_in_scorpio", "mars_in_aries"],
+    concordance_texts=["Saravali"])
+
+# v.3 gap: Universal relative-harm principle — elder siblings
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 11, "house": "any"},
+                {"type": "planet_dignity", "planet": "lord_of_11", "dignity": "weak"}],
+    entity_target="siblings",
+    signal_group="jupiter_h11_lord_malefic_elder_harm",
+    direction="unfavorable", intensity="moderate", domains=["longevity"],
+    predictions=[{"entity": "siblings", "claim": "elder_siblings_harmed",
+                  "domain": "longevity", "direction": "unfavorable", "magnitude": 0.6}],
+    verse_ref="Ch.14 v.3",
+    commentary_context="Santhanam: Jupiter + 11th lord together in malefic sign or with malefic → elder siblings harmed. Universal principle applied.",
+    description="Jupiter + 11th lord in malefic sign or with malefic: elder siblings harmed.",
+    modifiers=[{"condition": "jupiter_conjunct_11th_lord_in_malefic_sign", "effect": "conditionalizes", "strength": "strong"}],
+    concordance_texts=["Saravali"])
+
+# v.3 gap: Universal relative-harm principle — spouse
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 7, "house": "any"},
+                {"type": "planet_dignity", "planet": "lord_of_7", "dignity": "weak"}],
+    entity_target="spouse",
+    signal_group="venus_h7_lord_malefic_spouse_harm",
+    direction="unfavorable", intensity="moderate", domains=["marriage", "longevity"],
+    predictions=[{"entity": "spouse", "claim": "spouse_harmed",
+                  "domain": "longevity", "direction": "unfavorable", "magnitude": 0.6}],
+    verse_ref="Ch.14 v.3",
+    commentary_context="Santhanam: Venus + 7th lord in malefic sign or with malefic → spouse harmed.",
+    description="Venus + 7th lord in malefic sign or with malefic: spouse harmed.",
+    modifiers=[{"condition": "venus_conjunct_7th_lord_in_malefic_sign", "effect": "conditionalizes", "strength": "strong"}])
+
+# v.3 gap: Universal relative-harm principle — father
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
+                {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "weak"}],
+    entity_target="father",
+    signal_group="sun_h9_lord_malefic_father_harm",
+    direction="unfavorable", intensity="moderate", domains=["longevity"],
+    predictions=[{"entity": "father", "claim": "father_harmed",
+                  "domain": "longevity", "direction": "unfavorable", "magnitude": 0.6}],
+    verse_ref="Ch.14 v.3",
+    commentary_context="Santhanam: Sun + 9th lord in malefic sign or with malefic → father harmed.",
+    description="Sun + 9th lord in malefic sign or with malefic: father harmed.",
+    modifiers=[{"condition": "sun_conjunct_9th_lord_in_malefic_sign", "effect": "conditionalizes", "strength": "strong"}])
+
+# v.3 gap: Universal relative-harm principle — mother
+b.add(
+    conditions=[{"type": "lord_in_house", "lord_of": 4, "house": "any"},
+                {"type": "planet_dignity", "planet": "lord_of_4", "dignity": "weak"}],
+    entity_target="mother",
+    signal_group="moon_h4_lord_malefic_mother_harm",
+    direction="unfavorable", intensity="moderate", domains=["longevity"],
+    predictions=[{"entity": "mother", "claim": "mother_harmed",
+                  "domain": "longevity", "direction": "unfavorable", "magnitude": 0.6}],
+    verse_ref="Ch.14 v.3",
+    commentary_context="Santhanam: Moon + 4th lord in malefic sign or with malefic → mother harmed.",
+    description="Moon + 4th lord in malefic sign or with malefic: mother harmed.",
+    modifiers=[{"condition": "moon_conjunct_4th_lord_in_malefic_sign", "effect": "conditionalizes", "strength": "strong"}])
+
+# v.5-6 gap: Venus+7th lord in 8th → short married life
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Venus", "house": 8},
+                {"type": "lord_in_house", "lord_of": 7, "house": 8}],
+    entity_target="spouse",
+    signal_group="venus_h7_lord_h8_short_marriage",
+    direction="unfavorable", intensity="strong", domains=["marriage", "longevity"],
+    predictions=[{"entity": "spouse", "claim": "short_married_life",
+                  "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7}],
+    verse_ref="Ch.14 v.5-6",
+    commentary_context="Santhanam: Venus + 7th lord in 8th → short married life. Their conjunction in angle/trine → longlasting benefic effects.",
+    description="Venus + 7th lord together in 8th: short married life.")
+
+# v.7-11 gap: Mars+Rahu + 3rd lord debilitated → loss of younger, 3 elders
+b.add(
+    conditions=[{"type": "planets_conjunct", "planets": ["Mars", "Rahu"]},
+                {"type": "planet_dignity", "planet": "lord_of_3", "dignity": "debilitated"}],
+    signal_group="mars_rahu_h3_lord_fall_sibling_loss",
+    direction="unfavorable", intensity="strong", domains=["longevity"],
+    predictions=[{"entity": "siblings", "claim": "loss_of_younger_three_elders_remain",
+                  "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7}],
+    verse_ref="Ch.14 v.7-11",
+    commentary_context="Mars+Rahu conjunct + 3rd lord debilitated → loss of younger siblings while 3 elders remain.",
+    description="Mars+Rahu conjunct + 3rd lord debilitated: loss of younger, 3 elders survive.")
+
+# v.12-13 gap: Moon alone + Venus aspect → younger sisters
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 3}],
+    signal_group="moon_h3_venus_aspect_sisters",
+    direction="neutral", intensity="moderate", domains=["progeny"],
+    predictions=[{"entity": "siblings", "claim": "younger_sisters_indicated",
+                  "domain": "progeny", "direction": "neutral", "magnitude": 0.5}],
+    verse_ref="Ch.14 v.12-13",
+    commentary_context="Moon alone in 3rd + male planet aspect → younger brothers; Venus aspect → younger sisters.",
+    description="Moon alone in 3rd with Venus aspect: younger sisters.",
+    modifiers=[{"condition": "venus_aspecting_3rd", "effect": "conditionalizes", "strength": "moderate"}],
+    prediction_type="trait")
+
+# v.14 gap: Mars in 3rd → adverse on native's character
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 3}],
+    entity_target="native",
+    signal_group="mars_h3_adverse_character",
+    direction="unfavorable", intensity="moderate", domains=["character_temperament"],
+    predictions=[{"entity": "native", "claim": "adverse_effect_on_character",
+                  "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.5}],
+    verse_ref="Ch.14 v.14",
+    commentary_context="Santhanam: Mars in 3rd has also adverse say on the native's character. See Saravali 'Effects of Planets in Bhavas' for details.",
+    description="Mars in 3rd: adverse effect on native's character.",
+    prediction_type="trait")
+
 BPHS_V2_CH14_REGISTRY = b.build()

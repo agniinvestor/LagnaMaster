@@ -503,4 +503,24 @@ b.add(
     concordance_texts=["Saravali"],
 )
 
+# ═══ GAP FILL (identified by PDF-first audit 2026-04-01) ══════════════════════
+
+# v.20b gap: Rahu in 6th + Saturn in 8th from Rahu → fire at 1-2, birds at 3
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Rahu", "house": 6}],
+    signal_group="rahu_h6_saturn_8th_from_rahu_fire",
+    direction="unfavorable", intensity="moderate",
+    domains=["physical_health"],
+    predictions=[
+        {"entity": "native", "claim": "danger_from_fire_at_age_1_and_2",
+         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.6},
+        {"entity": "native", "claim": "birds_bring_evils_at_age_3",
+         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.4},
+    ],
+    timing_window={"type": "age_range", "value": [1, 3], "precision": "approximate"},
+    verse_ref="Ch.17 v.20",
+    commentary_context="Santhanam: If Rahu is in the 6th while Saturn is in the 8th from said Rahu, the child will have danger from fire at age 1 and 2, while in the 3rd year birds will bring some evils.",
+    description="Rahu in 6th + Saturn in 8th from Rahu: danger from fire at age 1-2, birds bring evils at age 3.",
+    modifiers=[{"condition": "saturn_in_8th_from_rahu", "effect": "conditionalizes", "strength": "strong"}])
+
 BPHS_V2_CH17_REGISTRY = b.build()
