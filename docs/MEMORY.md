@@ -234,11 +234,10 @@ INDIA_1947 = {
 |--------|---------|-----------------|------------|
 | Tests passing | **7,364** (3 skipped) | 4,000+ | 8,000+ |
 | Lint errors | **0** | 0 | 0 |
-| Corpus — Phase 1A representative | **2,634 rules** | complete | — |
-| Corpus — Phase 1B sutra-level | **4,665 rules** | ~6,600 new | — |
-| Corpus — combined target | **7,299** | **~9,200** | ~9,200+ |
-| BPHS V2 (Ch.12-25) | **461 rules** | ~4,500 | — |
-| Phase 1B Rule Contract compliance | ~95% | ≥90% of Phase 1B rules | 100% |
+| Corpus — legacy (non-compliant) | 6,838 rules | deprecated | — |
+| Corpus — V2 compliant (Ch.12-25) | **461 rules** | ~4,500 | — |
+| Corpus — combined (all) | 7,299 | — | ~9,200+ |
+| Phase 1B Rule Contract compliance | 461/461 (100%) | ≥90% | 100% |
 | Concordance ≥0.75 rules | ~25% | ≥20% of Phase 1B | — |
 | Ephemeris | **DE431 real files** | DE431 maintained | DE431 maintained |
 | ADB fixtures | **200+** (all 12 Lagnas) | 200+ | 5,000+ |
