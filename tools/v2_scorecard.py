@@ -174,12 +174,38 @@ class V2Scorecard:
 
 
 def _detect_entity_in_description(description: str) -> set[str]:
-    """Scan description for entity keywords. Return set of likely entities."""
+    """Scan description for entity keywords that indicate the OTHER entity
+    is the SUBJECT of a prediction (not just mentioned as a possession).
+
+    'wife will not live long' → spouse IS the subject → flag
+    'native will have many wives' → native is subject, wives are possessions → no flag
+    'maternal happiness' → native's happiness, mother is context → no flag
+    """
     desc_lower = description.lower()
     entities = set()
-    for keyword, entity in _ENTITY_KEYWORDS.items():
-        if keyword in desc_lower:
-            entities.add(entity)
+
+    # Patterns where OTHER entity is the SUBJECT of a prediction verb
+    subject_patterns = {
+        "spouse": ["wife will", "wife not", "wife incur", "wife diseased",
+                   "wife destroyed", "wife predecease", "spouse will",
+                   "wife sickly", "wife spendthrift", "wife subdued"],
+        "father": ["father will", "father pass", "father lost",
+                   "father destroyed", "father die"],
+        "mother": ["mother will", "mother lost", "mother die",
+                   "mother destroyed", "lose mother"],
+        "children": ["sons inimical", "sons hostile", "sons will",
+                     "children will", "lose children", "loss of children",
+                     "child will"],
+        "siblings": ["co-born destroyed", "co-born will", "siblings will",
+                     "brothers will"],
+    }
+
+    for entity, patterns in subject_patterns.items():
+        for pattern in patterns:
+            if pattern in desc_lower:
+                entities.add(entity)
+                break  # one match per entity is enough
+
     return entities
 
 

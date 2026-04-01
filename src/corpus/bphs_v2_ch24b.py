@@ -132,6 +132,7 @@ b.add(
     signal_group="h5_lord_in_h6_sons_inimical",
     direction="unfavorable", intensity="strong",
     domains=["progeny"],
+    entity_target="general",
     predictions=[
         {"entity": "native", "claim": "sons_inimical_or_lost_acquire_adopted_purchased_son",
          "domain": "progeny", "direction": "unfavorable", "magnitude": 0.7},
@@ -477,6 +478,7 @@ b.add(
     signal_group="h7_lord_in_h3_loss_children",
     direction="unfavorable", intensity="moderate",
     domains=["progeny"],
+    entity_target="general",
     predictions=[
         {"entity": "native", "claim": "loss_of_children_difficulty_living_son_possibility_of_daughter",
          "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6},
@@ -492,6 +494,7 @@ b.add(
     signal_group="h7_lord_in_h4_wife_not_under_control",
     direction="mixed", intensity="moderate",
     domains=["marriage", "character_temperament"],
+    entity_target="general",
     predictions=[
         {"entity": "native", "claim": "wife_not_under_control_fond_of_truth_intelligent_religious_dental",
          "domain": "marriage", "direction": "mixed", "magnitude": 0.5},
@@ -620,6 +623,7 @@ b.add(
     conditions=[{"type": "lord_in_house", "lord_of": 7, "house": 12}],
     signal_group="h7_lord_in_h12_penury_miser",
     direction="unfavorable", intensity="moderate",
+    entity_target="general",
     domains=["wealth"],
     predictions=[
         {"entity": "native", "claim": "penury_miser_livelihood_related_to_clothes_wife_spendthrift",

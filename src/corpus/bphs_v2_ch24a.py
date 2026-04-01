@@ -158,6 +158,7 @@ b.add(
     signal_group="h1_lord_in_h7_wife_short_life",
     direction="unfavorable", intensity="strong",
     domains=["marriage"],
+    entity_target="spouse",
     predictions=[
         {"entity": "spouse", "claim": "wife_will_not_live_long_if_malefic",
          "domain": "marriage", "direction": "unfavorable", "magnitude": 0.7},
@@ -398,6 +399,7 @@ b.add(
     signal_group="h2_lord_in_h5_wealthy_sons",
     direction="favorable", intensity="moderate",
     domains=["wealth", "progeny"],
+    entity_target="general",
     predictions=[
         {"entity": "native", "claim": "native_and_sons_wealthy_intent_on_earning",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.6},
@@ -510,6 +512,7 @@ b.add(
     conditions=[{"type": "lord_in_house", "lord_of": 2, "house": 12}],
     signal_group="h2_lord_in_h12_devoid_wealth",
     direction="unfavorable", intensity="moderate",
+    entity_target="general",
     domains=["wealth"],
     predictions=[
         {"entity": "native", "claim": "adventurous_devoid_of_wealth_interested_in_others_wealth",

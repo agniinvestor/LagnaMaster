@@ -492,6 +492,7 @@ b.add(
     signal_group="h11_lord_in_h5_happy_children",
     direction="favorable", intensity="moderate",
     domains=["progeny"],
+    entity_target="general",
     predictions=[
         {"entity": "native", "claim": "children_happy_educated_virtuous_himself_religious_happy",
          "domain": "progeny", "direction": "favorable", "magnitude": 0.6},
@@ -537,6 +538,7 @@ b.add(
     conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 8}],
     signal_group="h11_lord_in_h8_reversals_longlived",
     direction="mixed", intensity="moderate",
+    entity_target="general",
     domains=["longevity", "marriage"],
     predictions=[
         {"entity": "native", "claim": "reversals_undertakings_long_life_wife_predecease",
