@@ -502,6 +502,7 @@ b.add(
     description="2nd lord in 11th: all kinds of wealth, ever diligent, honourable, famous.",
     commentary_context="Santhanam: The native will undergo miseries due to ill-health during childhood and with the march of time he will be endowed with health throughout, if the 2nd lord is in the 11th house.",
     concordance_texts=["Saravali"],
+    modifiers=[{"condition": "childhood_ill_health_transitions_to_good_health_over_time", "effect": "conditionalizes", "strength": "moderate"}],
 )
 
 # ── Sloka 24: 2nd lord in 12th house ──────────────────────────────────────
@@ -667,6 +668,7 @@ b.add(
     description="3rd lord in 9th: lack paternal bliss, will make fortunes through wife and will enjoy progenic pleasures.",
     commentary_context="Santhanam: Although one may have fortunes and happiness, one will unendingly feel miserable if the 3rd lord occupies the 9th house. His father will be a contemptible person.",
     concordance_texts=["Saravali"],
+    modifiers=[{"condition": "despite_fortunes_native_feels_perpetually_miserable", "effect": "conditionalizes", "strength": "moderate"}],
 )
 
 # ── Sloka 34: 3rd lord in 10th house ──────────────────────────────────────
@@ -713,6 +715,7 @@ b.add(
     description="3rd lord in 12th: spend on evil deeds, have a wicked father, be fortunate through a female (or wife).",
     commentary_context="Santhanam: The 3rd lord going to the 12th will bestow every happiness in life. Yet the native will feel highly miserable. This view is held by Ramadayalu. If Mars also joins the said 3rd lord, sustenance of co-born will be doubtful.",
     concordance_texts=["Saravali"],
+    modifiers=[{"condition": "mars_conjunct_3rd_lord_in_12th_coborn_sustenance_doubtful", "effect": "negates", "strength": "strong"}],
 )
 
 
@@ -735,6 +738,7 @@ b.add(
     description="4th lord in ascendant: endowed with learning, virtues, ornaments, lands, conveyances and maternal happiness.",
     commentary_context="Santhanam: As a result of the 4th lord coming to occupy the ascendant, the subject will acquire incomparable learning in various branches. However, there is an element of risk of being deprived of one's ancestral properties. After leading married life for some time, the native will give up worldly life and may turn into an ascetic.",
     concordance_texts=["Saravali", "Phaladeepika"],
+    modifiers=[{"condition": "risk_of_ancestral_property_deprivation_and_later_asceticism", "effect": "conditionalizes", "strength": "moderate"}],
 )
 
 # ── Sloka 38: 4th lord in 2nd house ───────────────────────────────────────
@@ -875,6 +879,7 @@ b.add(
     description="4th lord in 10th: enjoy royal honours, be an alchemist, extremely pleased, enjoy all pleasures, conquer five senses.",
     commentary_context="Santhanam: One will be professionally happy and prosperous with the 4th lord in the 10th house. He will have abundant self-made properties. He will, however, lack maternal happiness if the 4th lord in the said house is not happily placed.",
     concordance_texts=["Saravali"],
+    modifiers=[{"condition": "4th_lord_not_happily_placed_in_10th_lacks_maternal_happiness", "effect": "negates", "strength": "moderate"}],
 )
 
 # ── Sloka 47: 4th lord in 11th house ──────────────────────────────────────

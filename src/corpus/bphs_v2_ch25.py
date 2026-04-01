@@ -382,7 +382,8 @@ _upa("dhwaja", 12, "sinful_untrustworthy", "unfavorable", "moderate",
 _upa("gulika", 1, "afflicted_diseases", "unfavorable", "strong",
      ["physical_health", "character_temperament"], "afflicted_diseases_lustful_sinful_crafty_wicked_miserable",
      "Ch.25 v.62", "afflicted by diseases, be lustful, sinful, crafty, wicked and very miserable.",
-     "Santhanam: Out of all the non-luminous planets, Gulika deserves a special consideration in natal horoscopy as well as horary astrology. This is also a very important factor in birth time rectification. If Gulika is in the ascendant, the native will incur severe defects of eyes. He will take to bad acts like thieving. He will disregard religion, be deprived of progeny and his longevity will incur a severe cut. He will not have a good house to live in. His last days will be miserable and death will be painful after a long confinement.")
+     "Santhanam: Out of all the non-luminous planets, Gulika deserves a special consideration in natal horoscopy as well as horary astrology. This is also a very important factor in birth time rectification. If Gulika is in the ascendant, the native will incur severe defects of eyes. He will take to bad acts like thieving. He will disregard religion, be deprived of progeny and his longevity will incur a severe cut. He will not have a good house to live in. His last days will be miserable and death will be painful after a long confinement.",
+     modifiers=[{"condition": "severe_eye_defects_thieving_disregard_religion_longevity_cut", "effect": "amplifies", "strength": "strong"}])
 
 _upa("gulika", 2, "unsightly_penniless", "unfavorable", "strong",
      ["wealth", "character_temperament"], "unsightly_miserable_given_vices_shameless_penniless",
@@ -402,12 +403,14 @@ _upa("gulika", 4, "sickly_sinful", "unfavorable", "strong",
 _upa("gulika", 5, "not_praiseworthy", "unfavorable", "strong",
      ["progeny", "longevity"], "not_praiseworthy_poor_short_lived_spiteful_mean_eunuch_subdued_wife",
      "Ch.25 v.66", "not praiseworthy, be poor, short-lived, spiteful, mean, be a eunuch, subdued by his wife and be a heterodox.",
-     "Santhanam: The native's virility or progenic ability will be significantly affected by Gulika's occupying the house of progeny. He will not be in a position to obtain issues unless Jupiter and the 5th lord are favourable. Gulika in this house will make one devoid of God-fearing tendency and be at the disposal of his wife. His personal disposition will not be agreeable.")
+     "Santhanam: The native's virility or progenic ability will be significantly affected by Gulika's occupying the house of progeny. He will not be in a position to obtain issues unless Jupiter and the 5th lord are favourable. Gulika in this house will make one devoid of God-fearing tendency and be at the disposal of his wife. His personal disposition will not be agreeable.",
+     exceptions=["unless_jupiter_and_5th_lord_favourable_then_issues_possible"])
 
 _upa("gulika", 6, "devoid_enemies", "favorable", "moderate",
      ["enemies_litigation"], "devoid_enemies_strong_bodied_spleenorous_liked_wife_enthusiastic_helpful",
      "Ch.25 v.67", "devoid of enemies, be strong-bodied, spleenorous, liked by his wife, enthusiastic, very friendly and helpful in disposition.",
-     "Santhanam: When Gulika is in the 6th house, the native will be interested in controlling evil spirits and make a livelihood from such achievements. He will obtain children. He will be very courageous. There will be freedom from diseases if the 6th house containing Gulika is a benefic sign.")
+     "Santhanam: When Gulika is in the 6th house, the native will be interested in controlling evil spirits and make a livelihood from such achievements. He will obtain children. He will be very courageous. There will be freedom from diseases if the 6th house containing Gulika is a benefic sign.",
+     modifiers=[{"condition": "freedom_from_diseases_if_6th_house_is_benefic_sign", "effect": "conditionalizes", "strength": "moderate"}])
 
 _upa("gulika", 7, "subdue_spouse", "unfavorable", "strong",
      ["marriage"], "subdue_spouse_sinful_others_females_emaciated_devoid_friendship_wife_wealth",
@@ -422,7 +425,8 @@ _upa("gulika", 8, "troubled_hunger", "unfavorable", "strong",
 _upa("gulika", 9, "undergo_ordeals", "unfavorable", "strong",
      ["character_temperament"], "undergo_ordeals_emaciated_evil_acts_very_unkind_sluggish_talebearer",
      "Ch.25 v.70", "undergo many ordeals, be emaciated, will perform evil acts, be very unkind, sluggish and be a tale-bearer.",
-     "Santhanam: If Gulika is in the 9th house one will be devoid of paternal bliss and good fortunes. His father will pass away in the native's childhood itself. None of the native's undertakings will bear fruits.")
+     "Santhanam: If Gulika is in the 9th house one will be devoid of paternal bliss and good fortunes. His father will pass away in the native's childhood itself. None of the native's undertakings will bear fruits.",
+     modifiers=[{"condition": "devoid_paternal_bliss_father_passes_childhood_no_undertakings_bear_fruit", "effect": "amplifies", "strength": "strong"}])
 
 _upa("gulika", 10, "endowed_sons_happy", "favorable", "moderate",
      ["progeny", "spirituality"], "endowed_sons_happy_enjoy_many_things_worship_gods_fire_meditation",
@@ -432,12 +436,14 @@ _upa("gulika", 10, "endowed_sons_happy", "favorable", "moderate",
 _upa("gulika", 11, "enjoy_women_leader", "mixed", "moderate",
      ["wealth", "fame_reputation"], "enjoy_women_class_leader_men_helpful_relatives_short_emperor",
      "Ch.25 v.72", "enjoy women of class, be a leader of men, be helpful to his relatives, be short in stature and be an emperor.",
-     "Santhanam: If Gulika is in the 11th house, the subject will be in the company of many females. He will be devoid of good character. He will enjoy progenic happiness, wealth status etc. and be charming in appearance.")
+     "Santhanam: If Gulika is in the 11th house, the subject will be in the company of many females. He will be devoid of good character. He will enjoy progenic happiness, wealth status etc. and be charming in appearance.",
+     modifiers=[{"condition": "company_many_females_devoid_good_character_but_progenic_happiness", "effect": "conditionalizes", "strength": "moderate"}])
 
 _upa("gulika", 12, "base_deeds_sinful", "unfavorable", "strong",
      ["character_temperament"], "indulge_base_deeds_sinful_defective_limbed_unfortunate_indolent_mean_people",
      "Ch.25 v.73", "indulge in base deeds, be sinful, defective-limbed, unfortunate, indolent, and will join mean people.",
-     "Santhanam: Gulika's tenancy in the 12th house at birth will bring innumerable misfortunes and cause loss of wealth on evil missions. One will, however, enjoy progenic happiness.")
+     "Santhanam: Gulika's tenancy in the 12th house at birth will bring innumerable misfortunes and cause loss of wealth on evil missions. One will, however, enjoy progenic happiness.",
+     modifiers=[{"condition": "innumerable_misfortunes_loss_wealth_but_enjoy_progenic_happiness", "effect": "conditionalizes", "strength": "moderate"}])
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -521,6 +527,7 @@ b.add(
     description="Before declaring results for Dhooma, Gulika etc., consider the Sun and other planets' effects, strength, relations and aspects. Check dispositors of upagrahas.",
     commentary_context="Santhanam: We are advised to look upto the Sun and others while declaring the effects due to Dhooma, Gulika etc. So to say the dispositors of Dhooma etc. Should be scrutinized to know the extent of effects. For example if Gulika is due to give bad effects, but his dispositor is well-placed, well-aspected or well-related, the evils are minimised. We should balance the results of Dhooma etc. with the results due to the planets from Sun to Saturn (and of course the nodes).",
     prediction_type="trait",
+    modifiers=[{"condition": "dispositor_well_placed_aspected_minimises_evils_weak_dispositor_blocks_good", "effect": "conditionalizes", "strength": "strong"}],
 )
 
 
