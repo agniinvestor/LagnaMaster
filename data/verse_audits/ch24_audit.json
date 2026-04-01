@@ -1,0 +1,1149 @@
+{
+  "chapter": 24,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s309",
+  "audit_date": "2026-04-01",
+  "status": "complete",
+  "title": "Effects of the Bhava Lords",
+  "page_range": "189-236",
+  "total_slokas": 148,
+  "structure": "12 lords x 12 houses = 144 placements + 4 miscellaneous slokas (145-148)",
+  "verses": {
+    "1": {
+      "page": "189",
+      "lord": 1, "house": 1,
+      "claims": [
+        {"claim": "1st lord in 1st → physical felicity, health, strong constitution", "type": "condition", "domain": "physical_health", "direction": "favorable"},
+        {"claim": "Notes: noble descent, ambitious, beautiful, prosper by own efforts", "type": "amplifier", "domain": "character_temperament", "direction": "favorable"}
+      ]
+    },
+    "2": {
+      "page": "189",
+      "lord": 1, "house": 2,
+      "claims": [
+        {"claim": "1st lord in 2nd → wealthy, good speech, learned", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "3": {
+      "page": "189-190",
+      "lord": 1, "house": 3,
+      "claims": [
+        {"claim": "1st lord in 3rd → brave, no siblings lost, intelligent, happy", "type": "condition", "domain": "character_temperament", "direction": "favorable"},
+        {"claim": "Notes: equal to king, respected by others", "type": "amplifier", "domain": "fame_reputation", "direction": "favorable"},
+        {"claim": "Notes: may indulge in unnatural sexual gratification", "type": "distinct_condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "4": {
+      "page": "190",
+      "lord": 1, "house": 4,
+      "claims": [
+        {"claim": "1st lord in 4th → paternal+maternal happiness, many brothers, lustful, virtuous, charming", "type": "condition", "domain": "property_vehicles", "direction": "favorable"},
+        {"claim": "Notes: noble descent, ambitious, beautiful, prosperity comes easily", "type": "amplifier", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "5": {
+      "page": "190",
+      "lord": 1, "house": 5,
+      "claims": [
+        {"claim": "1st lord in 5th → mediocre progenic happiness", "type": "condition", "domain": "progeny", "direction": "mixed"},
+        {"claim": "1st lord in 5th → will lose first child", "type": "condition", "domain": "progeny", "direction": "unfavorable"},
+        {"claim": "1st lord in 5th → honourable, given to anger, dear to king", "type": "condition", "domain": "fame_reputation", "direction": "favorable"}
+      ]
+    },
+    "6": {
+      "page": "190",
+      "lord": 1, "house": 6,
+      "claims": [
+        {"claim": "1st lord in 6th + malefic → devoid of physical happiness, troubled by enemies", "type": "condition", "domain": "physical_health", "direction": "unfavorable"},
+        {"claim": "Exception: Scorpio/Taurus ascendant → felicitous augury for freedom from diseases", "type": "exception", "domain": "physical_health", "direction": "favorable"},
+        {"claim": "Notes: abundant wealth/respect apart from royal status", "type": "distinct_condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: more than one marriage or losing spouse early", "type": "distinct_condition", "domain": "marriage", "direction": "unfavorable"}
+      ]
+    },
+    "7": {
+      "page": "191",
+      "lord": 1, "house": 7,
+      "claims": [
+        {"claim": "1st lord in 7th + malefic → wife will not live long", "type": "condition", "domain": "marriage", "direction": "unfavorable"},
+        {"claim": "1st lord in 7th + benefic → wander aimlessly, penury, dejected", "type": "contrary", "domain": "wealth", "direction": "unfavorable"},
+        {"claim": "1st lord in 7th + strong planet → alternatively become king", "type": "exception", "domain": "career_status", "direction": "favorable"}
+      ]
+    },
+    "8": {
+      "page": "191",
+      "lord": 1, "house": 8,
+      "claims": [
+        {"claim": "1st lord in 8th → accomplished scholar", "type": "condition", "domain": "intelligence_education", "direction": "favorable"},
+        {"claim": "1st lord in 8th → sickly, thievish, gambler, anger, others' wives", "type": "condition", "domain": "physical_health", "direction": "unfavorable"},
+        {"claim": "Notes: Balarishta/child mortality, repository of misfortunes, poor", "type": "amplifier", "domain": "longevity", "direction": "unfavorable"},
+        {"claim": "Notes: Aries/Libra ascendant → evil results should be avoided/moderated", "type": "exception", "domain": "physical_health", "direction": "mixed"}
+      ]
+    },
+    "9": {
+      "page": "191",
+      "lord": 1, "house": 9,
+      "claims": [
+        {"claim": "1st lord in 9th → fortunate, devotee of Vishnu, skilful, eloquent, wife/sons/wealth", "type": "condition", "domain": "spirituality", "direction": "favorable"},
+        {"claim": "Notes: gain abundantly from father, every undertaking fruitful", "type": "amplifier", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "10": {
+      "page": "192",
+      "lord": 1, "house": 10,
+      "claims": [
+        {"claim": "1st lord in 10th → paternal happiness, royal honour, fame, self-earned wealth", "type": "condition", "domain": "career_status", "direction": "favorable"},
+        {"claim": "Notes: possess ambitions, prosper in pursuits, obtainment of co-born", "type": "amplifier", "domain": "career_status", "direction": "favorable"}
+      ]
+    },
+    "11": {
+      "page": "192",
+      "lord": 1, "house": 11,
+      "claims": [
+        {"claim": "1st lord in 11th → gains, good qualities, fame, many wives", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "12": {
+      "page": "192",
+      "lord": 1, "house": 12,
+      "claims": [
+        {"claim": "1st lord in 12th + no benefic aspect → bereft of physical happiness, spend unfruitfully, anger", "type": "condition", "domain": "physical_health", "direction": "unfavorable"},
+        {"claim": "Notes: addicted to gambling, debauchery, other vices, wasteful", "type": "amplifier", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "13": {
+      "page": "192",
+      "lord": 2, "house": 1,
+      "claims": [
+        {"claim": "2nd lord in 1st → endowed with sons and wealth, inimical to family, lustful, hard-hearted", "type": "condition", "domain": "wealth", "direction": "mixed"},
+        {"claim": "Notes: fraudulent, financial upheavals; not wholly apply to Capricorn ascendant", "type": "distinct_condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "14": {
+      "page": "192-193",
+      "lord": 2, "house": 2,
+      "claims": [
+        {"claim": "2nd lord in 2nd → wealthy, proud, two or more wives, bereft of progeny", "type": "condition", "domain": "wealth", "direction": "mixed"}
+      ]
+    },
+    "15": {
+      "page": "193",
+      "lord": 2, "house": 3,
+      "claims": [
+        {"claim": "2nd lord in 3rd → valorous, wise, virtuous, lustful (when related to benefic)", "type": "condition", "domain": "character_temperament", "direction": "favorable"},
+        {"claim": "2nd lord in 3rd + related to malefic → heterodox", "type": "contrary", "domain": "character_temperament", "direction": "unfavorable"},
+        {"claim": "Notes: ill-related to females, earn through prostitutes, dirty conduct if malefic", "type": "amplifier", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "16": {
+      "page": "193",
+      "lord": 2, "house": 4,
+      "claims": [
+        {"claim": "2nd lord in 4th → acquire all kinds of wealth", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "2nd lord in 4th + exalted + conjunct Jupiter → equal to king", "type": "condition", "domain": "career_status", "direction": "favorable"},
+        {"claim": "Notes: also produce heterodox and questionable character", "type": "distinct_condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "17": {
+      "page": "193",
+      "lord": 2, "house": 5,
+      "claims": [
+        {"claim": "2nd lord in 5th → native and sons wealthy, intent on earning", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: trickery, not kind to others, lustful, prone to lose child prematurely", "type": "distinct_condition", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "18": {
+      "page": "194",
+      "lord": 2, "house": 6,
+      "claims": [
+        {"claim": "2nd lord in 6th + benefic → gain wealth through enemies", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "2nd lord in 6th + malefic → loss through enemies, mutilation of shanks", "type": "contrary", "domain": "wealth", "direction": "unfavorable"},
+        {"claim": "Notes: severe loss of wealth through thefts/servants, defects of privities", "type": "amplifier", "domain": "wealth", "direction": "unfavorable"}
+      ]
+    },
+    "19": {
+      "page": "194",
+      "lord": 2, "house": 7,
+      "claims": [
+        {"claim": "2nd lord in 7th → addicted to others' wives, be a doctor", "type": "condition", "domain": "character_temperament", "direction": "unfavorable"},
+        {"claim": "2nd lord in 7th + malefic conjunction/aspect → questionable character, wife also", "type": "modifier", "domain": "marriage", "direction": "unfavorable"},
+        {"claim": "Notes: dire malefic → mother of native of questionable character", "type": "distinct_condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "20": {
+      "page": "194",
+      "lord": 2, "house": 8,
+      "claims": [
+        {"claim": "2nd lord in 8th → abundant land and wealth, limited marital felicity", "type": "condition", "domain": "wealth", "direction": "mixed"},
+        {"claim": "2nd lord in 8th → bereft of happiness from elder brother", "type": "condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "21": {
+      "page": "194",
+      "lord": 2, "house": 9,
+      "claims": [
+        {"claim": "2nd lord in 9th → wealthy, diligent, skilful, sick during childhood, happy later, religious", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "22": {
+      "page": "195",
+      "lord": 2, "house": 10,
+      "claims": [
+        {"claim": "2nd lord in 10th → libidinous, honourable, learned, many wives, much wealth, bereft of filial happiness", "type": "condition", "domain": "wealth", "direction": "mixed"}
+      ]
+    },
+    "23": {
+      "page": "195",
+      "lord": 2, "house": 11,
+      "claims": [
+        {"claim": "2nd lord in 11th → all kinds of wealth, diligent, honourable, famous", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: miseries due to ill-health during childhood, endowed with health over time", "type": "distinct_condition", "domain": "physical_health", "direction": "mixed"}
+      ]
+    },
+    "24": {
+      "page": "195",
+      "lord": 2, "house": 12,
+      "claims": [
+        {"claim": "2nd lord in 12th → adventurous, devoid of wealth, interested in others' wealth", "type": "condition", "domain": "wealth", "direction": "unfavorable"},
+        {"claim": "Notes: if 2+ favourable planets in 12th → actually wealthy", "type": "exception", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: Aries ascendant exception — Venus in 12th in high dignity → not bad for riches", "type": "exception", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "25": {
+      "page": "195-196",
+      "lord": 3, "house": 1,
+      "claims": [
+        {"claim": "3rd lord in 1st → self-made wealth, disposed to worship, valorous, intelligent (though devoid of learning)", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: lean body, ascendant lord in 3rd → short-tempered, ill-disposed to others", "type": "distinct_condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "26": {
+      "page": "196",
+      "lord": 3, "house": 2,
+      "claims": [
+        {"claim": "3rd lord in 2nd → corpulent, devoid of valour, not make efforts, happy, eye on others' wealth", "type": "condition", "domain": "character_temperament", "direction": "mixed"},
+        {"claim": "Notes: unnatural sexual means, no enthusiasm in undertakings", "type": "amplifier", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "27": {
+      "page": "196",
+      "lord": 3, "house": 3,
+      "claims": [
+        {"claim": "3rd lord in 3rd → happiness through co-born, wealth, sons, cheerful, extremely happy", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "28": {
+      "page": "196",
+      "lord": 3, "house": 4,
+      "claims": [
+        {"claim": "3rd lord in 4th → happy, wealthy, intelligent, wicked spouse", "type": "condition", "domain": "wealth", "direction": "mixed"}
+      ]
+    },
+    "29": {
+      "page": "196",
+      "lord": 3, "house": 5,
+      "claims": [
+        {"claim": "3rd lord in 5th → sons, virtuous, formidable wife if conjunct/aspected by malefic", "type": "condition", "domain": "progeny", "direction": "favorable"},
+        {"claim": "3rd lord in 5th + malefic conjunct/aspect → formidable wife", "type": "modifier", "domain": "marriage", "direction": "unfavorable"}
+      ]
+    },
+    "30": {
+      "page": "196",
+      "lord": 3, "house": 6,
+      "claims": [
+        {"claim": "3rd lord in 6th → inimical to co-born, affluent, not well-disposed to maternal uncle/aunt", "type": "condition", "domain": "enemies_litigation", "direction": "unfavorable"},
+        {"claim": "Notes: fond of physical mating with maternal aunt (controversial text)", "type": "distinct_condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "31": {
+      "page": "197",
+      "lord": 3, "house": 7,
+      "claims": [
+        {"claim": "3rd lord in 7th → interested in serving king, not happy during boyhood, unhappy at end of life", "type": "condition", "domain": "career_status", "direction": "mixed"},
+        {"claim": "Notes: not favourable for independent profession, tendency to steal, legal award like death", "type": "amplifier", "domain": "career_status", "direction": "unfavorable"}
+      ]
+    },
+    "32": {
+      "page": "197",
+      "lord": 3, "house": 8,
+      "claims": [
+        {"claim": "3rd lord in 8th → thief, derive livelihood serving others, die at gate of royal palace", "type": "condition", "domain": "career_status", "direction": "unfavorable"}
+      ]
+    },
+    "33": {
+      "page": "197",
+      "lord": 3, "house": 9,
+      "claims": [
+        {"claim": "3rd lord in 9th → lack paternal bliss, make fortunes through wife, progenic pleasures", "type": "condition", "domain": "wealth", "direction": "mixed"},
+        {"claim": "Notes: feel miserable despite fortunes/happiness, father will be contemptible", "type": "distinct_condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "34": {
+      "page": "198",
+      "lord": 3, "house": 10,
+      "claims": [
+        {"claim": "3rd lord in 10th → all kinds of happiness, self-made wealth, interested in wicked females", "type": "condition", "domain": "wealth", "direction": "mixed"}
+      ]
+    },
+    "35": {
+      "page": "198",
+      "lord": 3, "house": 11,
+      "claims": [
+        {"claim": "3rd lord in 11th → always gain in trading, intelligent (not literate), adventurous, serve others", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: emaciated body, misunderstandings with others, not a worthy friend", "type": "distinct_condition", "domain": "physical_appearance", "direction": "unfavorable"}
+      ]
+    },
+    "36": {
+      "page": "198",
+      "lord": 3, "house": 12,
+      "claims": [
+        {"claim": "3rd lord in 12th → spend on evil deeds, wicked father, fortunate through female (or wife)", "type": "condition", "domain": "wealth", "direction": "mixed"},
+        {"claim": "Notes (Ramadayalu): bestow every happiness in life, yet feel miserable. Mars joining 3rd lord spoils co-born prospects", "type": "amplifier", "domain": "character_temperament", "direction": "mixed"}
+      ]
+    },
+    "37": {
+      "page": "198",
+      "lord": 4, "house": 1,
+      "claims": [
+        {"claim": "4th lord in 1st → endowed with learning, virtues, ornaments, lands, conveyances, maternal happiness", "type": "condition", "domain": "intelligence_education", "direction": "favorable"},
+        {"claim": "Notes: incomparable learning in various branches, risk of ancestral property deprivation, may turn ascetic later", "type": "distinct_condition", "domain": "intelligence_education", "direction": "favorable"}
+      ]
+    },
+    "38": {
+      "page": "199",
+      "lord": 4, "house": 2,
+      "claims": [
+        {"claim": "4th lord in 2nd → all kinds of wealth, family life, honour, adventurous, cunning", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: abundant gains from mother/maternal relatives, self-earned wealth, lust for lucre", "type": "amplifier", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "39": {
+      "page": "199",
+      "lord": 4, "house": 3,
+      "claims": [
+        {"claim": "4th lord in 3rd → valorous, servants, liberal, virtuous, charitable, self-earned wealth, free from diseases", "type": "condition", "domain": "character_temperament", "direction": "favorable"}
+      ]
+    },
+    "40": {
+      "page": "199",
+      "lord": 4, "house": 4,
+      "claims": [
+        {"claim": "4th lord in 4th → minister, all kinds of wealth, skilful, virtuous, honourable, learned, happy, well-disposed to spouse", "type": "condition", "domain": "career_status", "direction": "favorable"}
+      ]
+    },
+    "41": {
+      "page": "199",
+      "lord": 4, "house": 5,
+      "claims": [
+        {"claim": "4th lord in 5th → happy, liked by all, devotee of Vishnu, virtuous, honourable, self-earned wealth", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "42": {
+      "page": "199-200",
+      "lord": 4, "house": 6,
+      "claims": [
+        {"claim": "4th lord in 6th → devoid of maternal happiness, anger, thief/conjurer, independent action, ill-disposed", "type": "condition", "domain": "property_vehicles", "direction": "unfavorable"},
+        {"claim": "Notes: brought up by another female, careless about own matters, litigations over property, sickly mother", "type": "amplifier", "domain": "property_vehicles", "direction": "unfavorable"}
+      ]
+    },
+    "43": {
+      "page": "200",
+      "lord": 4, "house": 7,
+      "claims": [
+        {"claim": "4th lord in 7th → high degree of education, sacrifice patrimony, dumb in assembly", "type": "condition", "domain": "intelligence_education", "direction": "mixed"},
+        {"claim": "Notes: not enjoy paternal properties, not be householder for long, may give up family burdens", "type": "amplifier", "domain": "property_vehicles", "direction": "unfavorable"}
+      ]
+    },
+    "44": {
+      "page": "200",
+      "lord": 4, "house": 8,
+      "claims": [
+        {"claim": "4th lord in 8th → devoid of domestic comforts, no parental happiness, equal to neuter", "type": "condition", "domain": "property_vehicles", "direction": "unfavorable"},
+        {"claim": "Notes: affect progenic ability, carnally satisfy spouse with difficulty, childhood difficulties, education as obstacle", "type": "amplifier", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "45": {
+      "page": "200",
+      "lord": 4, "house": 9,
+      "claims": [
+        {"claim": "4th lord in 9th → dear to all, devoted to God, virtuous, honourable, every kind of happiness", "type": "condition", "domain": "spirituality", "direction": "favorable"}
+      ]
+    },
+    "46": {
+      "page": "201",
+      "lord": 4, "house": 10,
+      "claims": [
+        {"claim": "4th lord in 10th → royal honours, alchemist, extremely pleased, conquer five senses", "type": "condition", "domain": "career_status", "direction": "favorable"},
+        {"claim": "Notes: professionally happy, abundant self-made properties, lack maternal happiness if not well placed", "type": "distinct_condition", "domain": "career_status", "direction": "favorable"}
+      ]
+    },
+    "47": {
+      "page": "201",
+      "lord": 4, "house": 11,
+      "claims": [
+        {"claim": "4th lord in 11th → fear of secret disease, liberal, virtuous, charitable, helpful", "type": "condition", "domain": "physical_health", "direction": "mixed"},
+        {"claim": "Notes: secret diseases (venereal etc.), sage does not prefer 4th lord here (8th from 4th)", "type": "amplifier", "domain": "physical_health", "direction": "unfavorable"}
+      ]
+    },
+    "48": {
+      "page": "201",
+      "lord": 4, "house": 12,
+      "claims": [
+        {"claim": "4th lord in 12th → devoid of domestic comforts, vices, foolish, indolent", "type": "condition", "domain": "property_vehicles", "direction": "unfavorable"},
+        {"claim": "Notes: complete absence of happiness (paternal), bereft of masculine vigour, mother of doubtful character", "type": "amplifier", "domain": "property_vehicles", "direction": "unfavorable"}
+      ]
+    },
+    "49": {
+      "page": "202",
+      "lord": 5, "house": 1,
+      "claims": [
+        {"claim": "5th lord in 1st → scholarly, progenic happiness, miser, crooked, steal others' wealth", "type": "condition", "domain": "intelligence_education", "direction": "mixed"},
+        {"claim": "Notes: unsteady disposition, though progenic happiness, other exponents warn of unpleasant situation for sons", "type": "amplifier", "domain": "progeny", "direction": "mixed"}
+      ]
+    },
+    "50": {
+      "page": "202",
+      "lord": 5, "house": 2,
+      "claims": [
+        {"claim": "5th lord in 2nd → many sons and wealth, pater familias, honourable, attached to spouse, famous in world", "type": "condition", "domain": "progeny", "direction": "favorable"},
+        {"claim": "Notes: Parasara praises very highly — worldwide fame. Example: Indira Gandhi", "type": "amplifier", "domain": "fame_reputation", "direction": "favorable"}
+      ]
+    },
+    "51": {
+      "page": "203",
+      "lord": 5, "house": 3,
+      "claims": [
+        {"claim": "5th lord in 3rd → attached to co-born, talebearer, miser, interested in own work", "type": "condition", "domain": "character_temperament", "direction": "mixed"},
+        {"claim": "Notes: further be an imposter, not helpful to others", "type": "amplifier", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "52": {
+      "page": "203",
+      "lord": 5, "house": 4,
+      "claims": [
+        {"claim": "5th lord in 4th → happy, maternal happiness, wealth, intelligence, king/minister/preceptor", "type": "condition", "domain": "intelligence_education", "direction": "favorable"},
+        {"claim": "Notes: long life to mother, prosperity from youth, posh/beautiful house", "type": "amplifier", "domain": "property_vehicles", "direction": "favorable"}
+      ]
+    },
+    "53": {
+      "page": "203",
+      "lord": 5, "house": 5,
+      "claims": [
+        {"claim": "5th lord in 5th → happy, sons, virtuous, dear to friends (if related to benefic)", "type": "condition", "domain": "progeny", "direction": "favorable"},
+        {"claim": "5th lord in 5th + malefic → no issues if related to malefic", "type": "contrary", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "54": {
+      "page": "204",
+      "lord": 5, "house": 6,
+      "claims": [
+        {"claim": "5th lord in 6th → sons inimical to native OR lose them, acquire adopted/purchased son", "type": "condition", "domain": "progeny", "direction": "unfavorable"},
+        {"claim": "Notes: 4 possibilities — (1) inimical sons, (2) loss of children, (3) adopted issue, (4) purchased child", "type": "amplifier", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "55": {
+      "page": "204",
+      "lord": 5, "house": 7,
+      "claims": [
+        {"claim": "5th lord in 7th → honourable, very religious, progenic happiness, helpful to others", "type": "condition", "domain": "progeny", "direction": "favorable"},
+        {"claim": "Notes: tall in stature, speak truth, honest dealings, firm disposition", "type": "amplifier", "domain": "character_temperament", "direction": "favorable"}
+      ]
+    },
+    "56": {
+      "page": "205",
+      "lord": 5, "house": 8,
+      "claims": [
+        {"claim": "5th lord in 8th → not much progenic happiness, cough/pulmonary disorders, anger, devoid of happiness", "type": "condition", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "57": {
+      "page": "205",
+      "lord": 5, "house": 9,
+      "claims": [
+        {"claim": "5th lord in 9th → prince or equal, author treatises, famous, shine in race", "type": "condition", "domain": "fame_reputation", "direction": "favorable"},
+        {"claim": "Notes: good augury for writership/authorship/editorship. Example: Adi Sankaracharya", "type": "amplifier", "domain": "intelligence_education", "direction": "favorable"}
+      ]
+    },
+    "58": {
+      "page": "207",
+      "lord": 5, "house": 10,
+      "claims": [
+        {"claim": "5th lord in 10th → Rajayoga, various pleasures, very famous", "type": "condition", "domain": "career_status", "direction": "favorable"},
+        {"claim": "Notes: superior material benefits — wealth, position, fame. Best placement for 5th lord. Needs exaltation or dignity ideally.", "type": "amplifier", "domain": "career_status", "direction": "favorable"}
+      ]
+    },
+    "59": {
+      "page": "208",
+      "lord": 5, "house": 11,
+      "claims": [
+        {"claim": "5th lord in 11th → learned, dear to people, author of treatises, skilful, many sons, wealth", "type": "condition", "domain": "intelligence_education", "direction": "favorable"},
+        {"claim": "Notes: free from misfortunes, academic achievements abundant, but 11th should be friendly sign for 5th lord", "type": "amplifier", "domain": "intelligence_education", "direction": "favorable"}
+      ]
+    },
+    "60": {
+      "page": "208",
+      "lord": 5, "house": 12,
+      "claims": [
+        {"claim": "5th lord in 12th → bereft of happiness from own sons, adopted son, loss of children", "type": "condition", "domain": "progeny", "direction": "unfavorable"},
+        {"claim": "Notes: all kinds of miseries re children, adoption if Saturn/Mercury rule 5th, grave defects with 5th in 12th (digestion/abdominal)", "type": "amplifier", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "61": {
+      "page": "208-209",
+      "lord": 6, "house": 1,
+      "claims": [
+        {"claim": "6th lord in 1st → sickly, famous, inimical to own men, rich, honourable, adventurous, virtuous", "type": "condition", "domain": "physical_health", "direction": "mixed"},
+        {"claim": "Notes: various diseases from rising sign, adverse effects on progeny acquisition. Venus in Taurus particularly gives benefic results", "type": "distinct_condition", "domain": "physical_health", "direction": "unfavorable"}
+      ]
+    },
+    "62": {
+      "page": "209",
+      "lord": 6, "house": 2,
+      "claims": [
+        {"claim": "6th lord in 2nd → adventurous, famous among racemen, live in alien countries, skilful speaker, own work", "type": "condition", "domain": "foreign_travel", "direction": "favorable"},
+        {"claim": "Notes: financial position somewhat shaky, skilful in hoary lore, good health", "type": "amplifier", "domain": "wealth", "direction": "mixed"}
+      ]
+    },
+    "63": {
+      "page": "209",
+      "lord": 6, "house": 3,
+      "claims": [
+        {"claim": "6th lord in 3rd → anger, bereft of courage, inimical to all co-born, disobedient servants", "type": "condition", "domain": "enemies_litigation", "direction": "unfavorable"},
+        {"claim": "Notes: 3rd house not served with intelligence, partly deprived of benefits, unsteady disposition", "type": "amplifier", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "64": {
+      "page": "209",
+      "lord": 6, "house": 4,
+      "claims": [
+        {"claim": "6th lord in 4th → devoid of maternal happiness, intelligent, talebearer, jealous, fickle-minded, very rich", "type": "condition", "domain": "property_vehicles", "direction": "mixed"}
+      ]
+    },
+    "65": {
+      "page": "210",
+      "lord": 6, "house": 5,
+      "claims": [
+        {"claim": "6th lord in 5th → fluctuating finances, enmity with sons, happy, selfish, kind", "type": "condition", "domain": "wealth", "direction": "mixed"}
+      ]
+    },
+    "66": {
+      "page": "210",
+      "lord": 6, "house": 6,
+      "claims": [
+        {"claim": "6th lord in 6th → enmity with group of kinsmen, friendly to others, mediocre wealth", "type": "condition", "domain": "enemies_litigation", "direction": "mixed"},
+        {"claim": "Notes: happiness of conveyances, free from diseases, long life span", "type": "distinct_condition", "domain": "physical_health", "direction": "favorable"}
+      ]
+    },
+    "67": {
+      "page": "210",
+      "lord": 6, "house": 7,
+      "claims": [
+        {"claim": "6th lord in 7th → deprived of happiness through wedlock, famous, virtuous, honourable, adventurous, wealthy", "type": "condition", "domain": "marriage", "direction": "mixed"},
+        {"claim": "Notes: deny marital happiness, dissatisfy in progeny, own spouse becomes sworn enemy", "type": "amplifier", "domain": "marriage", "direction": "unfavorable"}
+      ]
+    },
+    "68": {
+      "page": "210",
+      "lord": 6, "house": 8,
+      "claims": [
+        {"claim": "6th lord in 8th → sickly, inimical, desire others' wealth, interested in others' wives, impure", "type": "condition", "domain": "physical_health", "direction": "unfavorable"},
+        {"claim": "Notes: not good for purity of character, ever incurring enmity, eye on others' learning/wealth", "type": "amplifier", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "69": {
+      "page": "211",
+      "lord": 6, "house": 9,
+      "claims": [
+        {"claim": "6th lord in 9th → trade in wood and stones (or poison), fluctuating professional fortunes", "type": "condition", "domain": "career_status", "direction": "mixed"},
+        {"claim": "Notes: building construction material dealing, ups and downs in livelihood", "type": "amplifier", "domain": "career_status", "direction": "mixed"}
+      ]
+    },
+    "70": {
+      "page": "211",
+      "lord": 6, "house": 10,
+      "claims": [
+        {"claim": "6th lord in 10th → well-known, not respectfully disposed to father, happy in foreign countries, gifted speaker", "type": "condition", "domain": "fame_reputation", "direction": "mixed"},
+        {"claim": "Notes: valorous, learned in Sastras, litigations over ancestral properties, living in foreign place", "type": "amplifier", "domain": "foreign_travel", "direction": "mixed"}
+      ]
+    },
+    "71": {
+      "page": "211",
+      "lord": 6, "house": 11,
+      "claims": [
+        {"claim": "6th lord in 11th → gain wealth through enemies, virtuous, adventurous, bereft of progenic happiness", "type": "condition", "domain": "wealth", "direction": "mixed"},
+        {"claim": "Notes: unhappy to some extent, position can deny acquisition of child", "type": "amplifier", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "72": {
+      "page": "211",
+      "lord": 6, "house": 12,
+      "claims": [
+        {"claim": "6th lord in 12th → spend on vices, hostile to learned people, torture living beings", "type": "condition", "domain": "character_temperament", "direction": "unfavorable"},
+        {"claim": "Notes: questionable morality, intent on deriving sexual pleasures from other females", "type": "amplifier", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "73": {
+      "page": "212",
+      "lord": 7, "house": 1,
+      "claims": [
+        {"claim": "7th lord in 1st → go to others' wives, wicked, skilful, devoid of courage, windy diseases", "type": "condition", "domain": "character_temperament", "direction": "unfavorable"},
+        {"claim": "Notes: not firm in words, impart courage to others though bereft himself", "type": "amplifier", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "74": {
+      "page": "212",
+      "lord": 7, "house": 2,
+      "claims": [
+        {"claim": "7th lord in 2nd → many wives, wealth through wife, procrastinating", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: corrupt character, addicted to many women, lose wife early, prosperity ascends with marriage", "type": "distinct_condition", "domain": "marriage", "direction": "mixed"}
+      ]
+    },
+    "75": {
+      "page": "212",
+      "lord": 7, "house": 3,
+      "claims": [
+        {"claim": "7th lord in 3rd → loss of children, difficulty, living son with great difficulty, possibility of daughter", "type": "condition", "domain": "progeny", "direction": "unfavorable"},
+        {"claim": "Notes: loss of children, possibility of daughter (rarely), female child will live long, male children pass away", "type": "amplifier", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "76": {
+      "page": "213",
+      "lord": 7, "house": 4,
+      "claims": [
+        {"claim": "7th lord in 4th → wife not under his control, fond of truth, intelligent, religious, dental diseases", "type": "condition", "domain": "marriage", "direction": "mixed"},
+        {"claim": "Notes: wife brilliantly shine with chastity/devotion (Ramadayalu/Chaukambha view contradicts Maharshi)", "type": "distinct_condition", "domain": "marriage", "direction": "favorable"}
+      ]
+    },
+    "77": {
+      "page": "214",
+      "lord": 7, "house": 5,
+      "claims": [
+        {"claim": "7th lord in 5th → honourable, all seven principal virtues, delighted, all kinds of wealth", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: (1) delay/disappointments in married life (2) severe affliction to progenic indications", "type": "distinct_condition", "domain": "marriage", "direction": "unfavorable"}
+      ]
+    },
+    "78": {
+      "page": "215",
+      "lord": 7, "house": 6,
+      "claims": [
+        {"claim": "7th lord in 6th → sickly wife, inimical to her, anger, devoid of happiness", "type": "condition", "domain": "marriage", "direction": "unfavorable"},
+        {"claim": "Notes: reduce general happiness, poor health, wife weak in constitution, coalesce with harlots", "type": "amplifier", "domain": "marriage", "direction": "unfavorable"}
+      ]
+    },
+    "79": {
+      "page": "215",
+      "lord": 7, "house": 7,
+      "claims": [
+        {"claim": "7th lord in 7th → happiness through wife, courageous, skilful, intelligent, only windy diseases", "type": "condition", "domain": "marriage", "direction": "favorable"},
+        {"claim": "Notes: only possible defect is windy diseases (rheumatism, arthritis). Exception: addiction to other females (Venus in Taurus/Libra)", "type": "exception", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "80": {
+      "page": "215",
+      "lord": 7, "house": 8,
+      "claims": [
+        {"claim": "7th lord in 8th → deprived of marital happiness, wife troubled by diseases, devoid of good disposition, will not obey", "type": "condition", "domain": "marriage", "direction": "unfavorable"},
+        {"claim": "Notes: spouse liable to afflictions on longevity, marriage may bring pecuniary gains", "type": "distinct_condition", "domain": "longevity", "direction": "unfavorable"}
+      ]
+    },
+    "81": {
+      "page": "216",
+      "lord": 7, "house": 9,
+      "claims": [
+        {"claim": "7th lord in 9th → union with many women, well-disposed to own wife, many undertakings", "type": "condition", "domain": "marriage", "direction": "favorable"}
+      ]
+    },
+    "82": {
+      "page": "216",
+      "lord": 7, "house": 10,
+      "claims": [
+        {"claim": "7th lord in 10th → disobedient wife, religious, wealthy, endowed with sons", "type": "condition", "domain": "marriage", "direction": "mixed"}
+      ]
+    },
+    "83": {
+      "page": "216",
+      "lord": 7, "house": 11,
+      "claims": [
+        {"claim": "7th lord in 11th → gain wealth through wife, less happiness from sons, have daughters", "type": "condition", "domain": "wealth", "direction": "mixed"},
+        {"claim": "Notes: possibility of losing children, hostile sons, daughters obtained, sons not long-lived", "type": "amplifier", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "84": {
+      "page": "216",
+      "lord": 7, "house": 12,
+      "claims": [
+        {"claim": "7th lord in 12th → penury, miser, livelihood related to clothes, wife a spendthrift", "type": "condition", "domain": "wealth", "direction": "unfavorable"}
+      ]
+    },
+    "85": {
+      "page": "216-217",
+      "lord": 8, "house": 1,
+      "claims": [
+        {"claim": "8th lord in 1st → devoid of physical felicity, suffer from wounds, hostile to gods/brahmins, religious people", "type": "condition", "domain": "physical_health", "direction": "unfavorable"}
+      ]
+    },
+    "86": {
+      "page": "217",
+      "lord": 8, "house": 2,
+      "claims": [
+        {"claim": "8th lord in 2nd → devoid of bodily vigour, little wealth, not regain lost wealth", "type": "condition", "domain": "wealth", "direction": "unfavorable"}
+      ]
+    },
+    "87": {
+      "page": "217",
+      "lord": 8, "house": 3,
+      "claims": [
+        {"claim": "8th lord in 3rd → devoid of fraternal happiness, indolent, devoid of servants and strength", "type": "condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "88": {
+      "page": "217",
+      "lord": 8, "house": 4,
+      "claims": [
+        {"claim": "8th lord in 4th → deprived of mother (lose mother early), devoid of house/lands/happiness, betray friends", "type": "condition", "domain": "property_vehicles", "direction": "unfavorable"},
+        {"claim": "Notes: Parasara uses 'child' (shishu) — lose mother in early childhood", "type": "amplifier", "domain": "longevity", "direction": "unfavorable"}
+      ]
+    },
+    "89": {
+      "page": "217",
+      "lord": 8, "house": 5,
+      "claims": [
+        {"claim": "8th lord in 5th → dull-witted, limited children, longlived, wealthy", "type": "condition", "domain": "intelligence_education", "direction": "mixed"},
+        {"claim": "Notes: financial acquisitions unsteady, fluctuating, intentions not recognised as bona fide, no filial bliss", "type": "amplifier", "domain": "wealth", "direction": "mixed"}
+      ]
+    },
+    "90": {
+      "page": "218",
+      "lord": 8, "house": 6,
+      "claims": [
+        {"claim": "8th lord in 6th → win over enemies, afflicted by diseases in childhood, incur danger through snakes/water", "type": "condition", "domain": "enemies_litigation", "direction": "mixed"},
+        {"claim": "Notes: sureshot success over enemies/litigations, later free from calamities, indicates long span of life", "type": "distinct_condition", "domain": "longevity", "direction": "favorable"}
+      ]
+    },
+    "91": {
+      "page": "218",
+      "lord": 8, "house": 7,
+      "claims": [
+        {"claim": "8th lord in 7th → two wives, downfall in business (if malefic conjunct)", "type": "condition", "domain": "marriage", "direction": "mixed"},
+        {"claim": "Notes: forerunner of difficulties in married life, spouse weak in constitution, uncertainties/dangers, God-fearing outwardly but expert in stealing", "type": "amplifier", "domain": "marriage", "direction": "unfavorable"}
+      ]
+    },
+    "92": {
+      "page": "218",
+      "lord": 8, "house": 8,
+      "claims": [
+        {"claim": "8th lord in 8th → longlived. If weak → medium longevity, thief, blameworthy, blame others", "type": "condition", "domain": "longevity", "direction": "favorable"},
+        {"claim": "Notes: 8th lord should be strong in Shadbala for full span. Exception: Aquarius native with Mercury in 8th in Virgo (exaltation) not same effect", "type": "exception", "domain": "longevity", "direction": "mixed"},
+        {"claim": "Notes: 8th in own house → spouse of questionable character, but financial help from her", "type": "distinct_condition", "domain": "marriage", "direction": "mixed"}
+      ]
+    },
+    "93": {
+      "page": "219",
+      "lord": 8, "house": 9,
+      "claims": [
+        {"claim": "8th lord in 9th → betray religion, heterodox, beget wicked wife, steal others' wealth", "type": "condition", "domain": "spirituality", "direction": "unfavorable"},
+        {"claim": "Notes: frequent misfortunes, professional adversities, father suffers in longevity, wife of questionable birth, addicted to others' housewives. Gemini exception (Saturn in 9th = Moolatrikona, not these malefic effects)", "type": "amplifier", "domain": "career_status", "direction": "unfavorable"}
+      ]
+    },
+    "94": {
+      "page": "219",
+      "lord": 8, "house": 10,
+      "claims": [
+        {"claim": "8th lord in 10th → devoid of paternal bliss, talebearer, bereft of livelihood. If benefic aspect → these evils not mature", "type": "condition", "domain": "career_status", "direction": "unfavorable"},
+        {"claim": "Notes: 8th lord in 9th house causes deaths of parents in boyhood. 8th in 10th → all kinds of miseries. If benefic well placed in 10th → not all evil", "type": "exception", "domain": "career_status", "direction": "mixed"}
+      ]
+    },
+    "95": {
+      "page": "220",
+      "lord": 8, "house": 11,
+      "claims": [
+        {"claim": "8th lord in 11th + malefic → devoid of wealth, miserable in boyhood, happy later on, long-lived", "type": "condition", "domain": "wealth", "direction": "mixed"},
+        {"claim": "Notes: if alone in 11th → not deprive of financial benefits. Taurus ascendant + Jupiter in 11th = not baneful. Scorpio ascendant + Mercury in 11th = highly favourable", "type": "exception", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "96": {
+      "page": "220",
+      "lord": 8, "house": 12,
+      "claims": [
+        {"claim": "8th lord in 12th → spend on evil deeds, short life. If additionally malefic → more so", "type": "condition", "domain": "longevity", "direction": "unfavorable"}
+      ]
+    },
+    "97": {
+      "page": "220",
+      "lord": 9, "house": 1,
+      "claims": [
+        {"claim": "9th lord in 1st → fortunate/prosperous, honoured by king, virtuous, charming, learned, honoured by public", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: very high position, wealth, fame, free from enemies, worthy housewife, free from afflictions. Exception: Scorpio native not enjoy these effects", "type": "exception", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "98": {
+      "page": "221",
+      "lord": 9, "house": 2,
+      "claims": [
+        {"claim": "9th lord in 2nd → scholar, dear to all, wealthy, sensuous, happiness from wife/sons", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "99": {
+      "page": "221",
+      "lord": 9, "house": 3,
+      "claims": [
+        {"claim": "9th lord in 3rd → fraternal bliss, wealthy, virtuous, charming", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "100": {
+      "page": "221",
+      "lord": 9, "house": 4,
+      "claims": [
+        {"claim": "9th lord in 4th → houses, conveyances, happiness, all kinds of wealth, devoted to mother", "type": "condition", "domain": "property_vehicles", "direction": "favorable"}
+      ]
+    },
+    "101": {
+      "page": "221",
+      "lord": 9, "house": 5,
+      "claims": [
+        {"claim": "9th lord in 5th → sons, prosperity, devoted to elders, bold, charitable, learned", "type": "condition", "domain": "progeny", "direction": "favorable"}
+      ]
+    },
+    "102": {
+      "page": "221",
+      "lord": 9, "house": 6,
+      "claims": [
+        {"claim": "9th lord in 6th → meagre prosperity, devoid of happiness from maternal relatives, troubled by enemies", "type": "condition", "domain": "wealth", "direction": "unfavorable"}
+      ]
+    },
+    "103": {
+      "page": "221",
+      "lord": 9, "house": 7,
+      "claims": [
+        {"claim": "9th lord in 7th → happiness after marriage, virtuous, famous", "type": "condition", "domain": "marriage", "direction": "favorable"},
+        {"claim": "Notes: success in all undertakings, prosperity picks up after marriage, not well disposed to father", "type": "amplifier", "domain": "marriage", "direction": "favorable"}
+      ]
+    },
+    "104": {
+      "page": "222",
+      "lord": 9, "house": 8,
+      "claims": [
+        {"claim": "9th lord in 8th → not prosperous, no happiness from elder brother", "type": "condition", "domain": "wealth", "direction": "unfavorable"},
+        {"claim": "Notes: devoid of fortunes, failures in all undertakings, no professional/financial stability, father's longevity cut, blessing in disguise re patrimony inheritance", "type": "amplifier", "domain": "wealth", "direction": "unfavorable"}
+      ]
+    },
+    "105": {
+      "page": "222",
+      "lord": 9, "house": 9,
+      "claims": [
+        {"claim": "9th lord in 9th → abundant fortunes, virtues, beauty, happiness from co-born", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: fraternal bliss, own properties large scale, easy success in everything, father plays significant role, nurtured by maternal grandparents", "type": "amplifier", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "106": {
+      "page": "222",
+      "lord": 9, "house": 10,
+      "claims": [
+        {"claim": "9th lord in 10th → king or minister, virtuous, dear to all", "type": "condition", "domain": "career_status", "direction": "favorable"},
+        {"claim": "Notes: if prepotent → royal status; strength proportionally decreasing → lesser positions", "type": "amplifier", "domain": "career_status", "direction": "favorable"}
+      ]
+    },
+    "107": {
+      "page": "223",
+      "lord": 9, "house": 11,
+      "claims": [
+        {"claim": "9th lord in 11th → financial gains day by day, devoted to elders, virtuous, meritorious", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: increasing phases of fortunes/prosperity; extremely favourable for material upliftment. Exception: Gemini ascendant + Saturn in 11th = contrary (not apply)", "type": "exception", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "108": {
+      "page": "223",
+      "lord": 9, "house": 12,
+      "claims": [
+        {"claim": "9th lord in 12th → loss of fortunes, always spend on auspicious acts, become poor entertaining guests", "type": "condition", "domain": "wealth", "direction": "unfavorable"},
+        {"claim": "Notes: not auspicious for happiness of elder brothers/sisters", "type": "distinct_condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "109": {
+      "page": "223-224",
+      "lord": 10, "house": 1,
+      "claims": [
+        {"claim": "10th lord in 1st → scholarly, famous, be a poet, diseases in boyhood, happy later, wealth increases daily", "type": "condition", "domain": "career_status", "direction": "favorable"},
+        {"claim": "Notes: 10th lord in ascendant = very favourable for riches giving royal status. Example: Sarabhoji Maharaja", "type": "amplifier", "domain": "career_status", "direction": "favorable"}
+      ]
+    },
+    "110": {
+      "page": "225",
+      "lord": 10, "house": 2,
+      "claims": [
+        {"claim": "10th lord in 2nd → wealthy, virtuous, honoured by king, charitable, happiness from father/others", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: immeasurable financial success through profession, large scale patrimony. Example: Morarji Desai", "type": "amplifier", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "111": {
+      "page": "226",
+      "lord": 10, "house": 3,
+      "claims": [
+        {"claim": "10th lord in 3rd → happiness from brothers/servants, valorous, virtuous, eloquent, truthful", "type": "condition", "domain": "character_temperament", "direction": "favorable"}
+      ]
+    },
+    "112": {
+      "page": "226",
+      "lord": 10, "house": 4,
+      "claims": [
+        {"claim": "10th lord in 4th → happy, interested in mother's welfare, conveyances, lands, houses, virtuous, wealthy", "type": "condition", "domain": "property_vehicles", "direction": "favorable"}
+      ]
+    },
+    "113": {
+      "page": "226",
+      "lord": 10, "house": 5,
+      "claims": [
+        {"claim": "10th lord in 5th → endowed with all kinds of learning, always delighted, wealthy, endowed with sons", "type": "condition", "domain": "intelligence_education", "direction": "favorable"},
+        {"claim": "Notes: great asset, number of children, never filial grief, always move among wealthy people. Example: Rabindranath Tagore", "type": "amplifier", "domain": "intelligence_education", "direction": "favorable"}
+      ]
+    },
+    "114": {
+      "page": "227",
+      "lord": 10, "house": 6,
+      "claims": [
+        {"claim": "10th lord in 6th → bereft of paternal bliss, skilful but bereft of wealth, troubled by enemies", "type": "condition", "domain": "career_status", "direction": "unfavorable"},
+        {"claim": "Notes: dire blemish for professional/monetary stability, frequent changes in calling, financial growth severely paralyzed, lasting diseases. Advantage: extreme intelligence", "type": "amplifier", "domain": "career_status", "direction": "unfavorable"}
+      ]
+    },
+    "115": {
+      "page": "228",
+      "lord": 10, "house": 7,
+      "claims": [
+        {"claim": "10th lord in 7th → endowed with happiness through wife, intelligent, virtuous, eloquent, truthful, religious", "type": "condition", "domain": "marriage", "direction": "favorable"}
+      ]
+    },
+    "116": {
+      "page": "228",
+      "lord": 10, "house": 8,
+      "claims": [
+        {"claim": "10th lord in 8th → devoid of good acts, longlived, intent on blaming others", "type": "condition", "domain": "career_status", "direction": "unfavorable"},
+        {"claim": "Notes: 10th lord denotes potence of longevity, Karmic credit; should be strong in Shadbala. Exception: Gemini ascendant + Jupiter in 8th (fall) = adversely affect longevity. Leo native + Venus (significant beneficiary) in 8th exaltation = long span", "type": "exception", "domain": "longevity", "direction": "mixed"}
+      ]
+    },
+    "117": {
+      "page": "228",
+      "lord": 10, "house": 9,
+      "claims": [
+        {"claim": "10th lord in 9th → born of royal scion, king, equal to king, progenic happiness, wealth", "type": "condition", "domain": "career_status", "direction": "favorable"}
+      ]
+    },
+    "118": {
+      "page": "228",
+      "lord": 10, "house": 10,
+      "claims": [
+        {"claim": "10th lord in 10th → skilful in all jobs, valorous, truthful, devoted to elders", "type": "condition", "domain": "career_status", "direction": "favorable"}
+      ]
+    },
+    "119": {
+      "page": "228",
+      "lord": 10, "house": 11,
+      "claims": [
+        {"claim": "10th lord in 11th → wealth, happiness, sons, virtuous, truthful, always delighted", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "120": {
+      "page": "229",
+      "lord": 10, "house": 12,
+      "claims": [
+        {"claim": "10th lord in 12th → spend through royal abodes, fear from enemies, skilful but worried", "type": "condition", "domain": "wealth", "direction": "unfavorable"},
+        {"claim": "Notes: expenditure through taxes/fines/government, luxurious political expenses, financial troubles through government", "type": "amplifier", "domain": "wealth", "direction": "unfavorable"}
+      ]
+    },
+    "121": {
+      "page": "229",
+      "lord": 11, "house": 1,
+      "claims": [
+        {"claim": "11th lord in 1st → genuine, rich, happy, even-sighted, poet, eloquent, endowed with gains", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: befriend virtuous, reject evil associations, prosperous after marriage", "type": "amplifier", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "122": {
+      "page": "229",
+      "lord": 11, "house": 2,
+      "claims": [
+        {"claim": "11th lord in 2nd → all kinds of wealth, accomplishments, charitable, religious, always happy", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "123": {
+      "page": "229",
+      "lord": 11, "house": 3,
+      "claims": [
+        {"claim": "11th lord in 3rd → skilful in all jobs, wealthy, fraternal bliss, may sometimes incur gout pains", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "124": {
+      "page": "229-230",
+      "lord": 11, "house": 4,
+      "claims": [
+        {"claim": "11th lord in 4th → gain from maternal relatives, visits to shrines, happiness of house/lands", "type": "condition", "domain": "property_vehicles", "direction": "favorable"}
+      ]
+    },
+    "125": {
+      "page": "230",
+      "lord": 11, "house": 5,
+      "claims": [
+        {"claim": "11th lord in 5th → children happy/educated/virtuous, himself religious and happy", "type": "condition", "domain": "progeny", "direction": "favorable"}
+      ]
+    },
+    "126": {
+      "page": "230",
+      "lord": 11, "house": 6,
+      "claims": [
+        {"claim": "11th lord in 6th → afflicted by diseases, cruel, living in foreign places, troubled by enemies", "type": "condition", "domain": "physical_health", "direction": "unfavorable"},
+        {"claim": "Notes: acquisition of diseases augmented, hearing organ defects (Aquarius), deafness, selfish, servitude rather than independent profession, financial reversals", "type": "amplifier", "domain": "physical_health", "direction": "unfavorable"}
+      ]
+    },
+    "127": {
+      "page": "230",
+      "lord": 11, "house": 7,
+      "claims": [
+        {"claim": "11th lord in 7th → gain through wife's relatives, liberal, virtuous, sensuous, at command of spouse", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: look upto and receive help from wife's relatives, affluent, lack wisdom/judgement in expenses, union with others' females, spouse will boss over him", "type": "amplifier", "domain": "wealth", "direction": "mixed"}
+      ]
+    },
+    "128": {
+      "page": "231",
+      "lord": 11, "house": 8,
+      "claims": [
+        {"claim": "11th lord in 8th → reversals in undertakings, long life, wife predecease him", "type": "condition", "domain": "longevity", "direction": "mixed"},
+        {"claim": "Notes: increases longevity; Mars in 8th (11th lord for Gemini) bears testimony. Not apply to Leo with Mercury (11th lord) in 8th in debilitation", "type": "exception", "domain": "longevity", "direction": "mixed"}
+      ]
+    },
+    "129": {
+      "page": "231",
+      "lord": 11, "house": 9,
+      "claims": [
+        {"claim": "11th lord in 9th → fortunate, skilful, truthful, honoured by king, affluent", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "130": {
+      "page": "231",
+      "lord": 11, "house": 10,
+      "claims": [
+        {"claim": "11th lord in 10th → honoured by king, virtuous, attached to religion, truthful, intelligent, subdue senses", "type": "condition", "domain": "career_status", "direction": "favorable"},
+        {"claim": "Notes: primarily intent on public welfare/redemption, deep into religion, educate public. Example: Sri Bhakti Vedanta Swamiji (ISKCON founder) — Neechabhanga cancellation", "type": "amplifier", "domain": "spirituality", "direction": "favorable"}
+      ]
+    },
+    "131": {
+      "page": "232",
+      "lord": 11, "house": 11,
+      "claims": [
+        {"claim": "11th lord in 11th → gain in all undertakings, learning and happiness increase day by day", "type": "condition", "domain": "wealth", "direction": "favorable"}
+      ]
+    },
+    "132": {
+      "page": "233",
+      "lord": 11, "house": 12,
+      "claims": [
+        {"claim": "11th lord in 12th → expend on good deeds, sensuous, many wives, befriend barbarians/foreigners", "type": "condition", "domain": "wealth", "direction": "mixed"}
+      ]
+    },
+    "133": {
+      "page": "233",
+      "lord": 12, "house": 1,
+      "claims": [
+        {"claim": "12th lord in 1st → spendthrift, weak constitution, phlegmatic disorders, devoid of wealth/learning", "type": "condition", "domain": "physical_health", "direction": "unfavorable"},
+        {"claim": "Notes: breathing troubles, lung disorders, tuberculosis, many vices, fear of death, undertakings not yield success", "type": "amplifier", "domain": "physical_health", "direction": "unfavorable"}
+      ]
+    },
+    "134": {
+      "page": "233",
+      "lord": 12, "house": 2,
+      "claims": [
+        {"claim": "12th lord in 2nd → spend on auspicious deeds, religious, speak sweetly, endowed with virtues/happiness", "type": "condition", "domain": "spirituality", "direction": "favorable"}
+      ]
+    },
+    "135": {
+      "page": "233",
+      "lord": 12, "house": 3,
+      "claims": [
+        {"claim": "12th lord in 3rd → devoid of fraternal bliss, hate others, promote self-nourishment, quite selfish", "type": "condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "136": {
+      "page": "233",
+      "lord": 12, "house": 4,
+      "claims": [
+        {"claim": "12th lord in 4th → devoid of maternal happiness, day by day accrue losses in lands/conveyances/houses", "type": "condition", "domain": "property_vehicles", "direction": "unfavorable"}
+      ]
+    },
+    "137": {
+      "page": "234",
+      "lord": 12, "house": 5,
+      "claims": [
+        {"claim": "12th lord in 5th → bereft of sons and learning, spend and visit shrines to beget a son", "type": "condition", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "138": {
+      "page": "234",
+      "lord": 12, "house": 6,
+      "claims": [
+        {"claim": "12th lord in 6th → enmity with own men, anger, sinful, miserable, go to others' wives", "type": "condition", "domain": "enemies_litigation", "direction": "unfavorable"}
+      ]
+    },
+    "139": {
+      "page": "234",
+      "lord": 12, "house": 7,
+      "claims": [
+        {"claim": "12th lord in 7th → expenditure on wife, not enjoy conjugal bliss, bereft of learning/strength", "type": "condition", "domain": "marriage", "direction": "unfavorable"}
+      ]
+    },
+    "140": {
+      "page": "234",
+      "lord": 12, "house": 8,
+      "claims": [
+        {"claim": "12th lord in 8th → always gain, speak affably, medium span of life, all good qualities", "type": "condition", "domain": "wealth", "direction": "favorable"},
+        {"claim": "Notes: medium life = ~60 years. 12th lord in 8th not contribute to higher bracket of longevity", "type": "amplifier", "domain": "longevity", "direction": "mixed"}
+      ]
+    },
+    "141": {
+      "page": "234",
+      "lord": 12, "house": 9,
+      "claims": [
+        {"claim": "12th lord in 9th → dishonour elders, inimical even to friends, intent on own ends", "type": "condition", "domain": "character_temperament", "direction": "unfavorable"}
+      ]
+    },
+    "142": {
+      "page": "234",
+      "lord": 12, "house": 10,
+      "claims": [
+        {"claim": "12th lord in 10th → expenditure through royal persons, moderate paternal bliss only", "type": "condition", "domain": "wealth", "direction": "unfavorable"}
+      ]
+    },
+    "143": {
+      "page": "235",
+      "lord": 12, "house": 11,
+      "claims": [
+        {"claim": "12th lord in 11th → incur losses, brought up by others, gain through others sometimes", "type": "condition", "domain": "wealth", "direction": "unfavorable"},
+        {"claim": "Notes: obstacles in begetting child, will adopt a child", "type": "distinct_condition", "domain": "progeny", "direction": "unfavorable"}
+      ]
+    },
+    "144": {
+      "page": "235",
+      "lord": 12, "house": 12,
+      "claims": [
+        {"claim": "12th lord in 12th → heavy expenditure only, no physical felicity, iritable, spiteful", "type": "condition", "domain": "wealth", "direction": "unfavorable"}
+      ]
+    },
+    "145-148": {
+      "page": "235-236",
+      "lord": "general", "house": "general",
+      "claims": [
+        {"claim": "MISCELLANEOUS: Planet owning two bhavas → results deduced considering both lordships (same placement)", "type": "principle", "domain": "general"},
+        {"claim": "If contrary results from dual lordship → results are nullified", "type": "principle", "domain": "general"},
+        {"claim": "If varied nature results → planet yields full/half/quarter based on strength being full/medium/negligible", "type": "principle", "domain": "general"},
+        {"claim": "Sun and Moon own one sign each → results cited will come to pass directly", "type": "principle", "domain": "general"},
+        {"claim": "Notes: Example — Saturn in 5th for Pisces: as 11th lord gives children/happiness, as 12th lord denies education. Resolution: Jupiter (5th karaka) and Moon (5th lord) should be checked", "type": "principle", "domain": "general"}
+      ]
+    }
+  },
+  "claim_summary": {
+    "total_claims": 233,
+    "by_lord": {
+      "lord_1": 26, "lord_2": 23, "lord_3": 22, "lord_4": 20,
+      "lord_5": 22, "lord_6": 22, "lord_7": 22, "lord_8": 22,
+      "lord_9": 18, "lord_10": 20, "lord_11": 19, "lord_12": 17,
+      "misc": 5
+    }
+  }
+}
