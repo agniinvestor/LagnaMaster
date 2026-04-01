@@ -233,6 +233,8 @@ INDIA_1947 = {
 | Metric | Current | Phase 1B Target | 2030 Target |
 |--------|---------|-----------------|------------|
 | Tests passing | **7364** (3 skipped) | 4,000+ | 8,000+ |
+| V2 complete (L3+) | **492 rules** | ~4,500 | — |
+| Audit issues | **0** | 0 | 0 |
 | Lint errors | **0** | 0 | 0 |
 | Corpus — legacy (non-compliant) | 6,838 rules | deprecated | — |
 | Corpus — V2 compliant (Ch.12-25) | **461 rules** | ~4,500 | — |
