@@ -46,6 +46,55 @@ Applying the granularity definition:
 
 **Result: 6 rules from v.1-2 (currently 4, need 2 more)**
 
+## Entity Target — Who Is the Prediction About?
+
+Every rule must answer: **whose fate or behavior is being predicted?**
+
+The `entity_target` field is NOT "who is mentioned in the description." It is
+"who would confirm or deny this prediction from their own experience."
+
+### Decision rule
+
+Ask: "If I wanted to verify this prediction, whose life would I examine?"
+
+| The verse says... | Whose life to examine? | entity_target |
+|-------------------|----------------------|---------------|
+| "Native will be wealthy" | Native | `native` |
+| "Wife will not live long" | Spouse | `spouse` |
+| "Sons will be hostile to native" | Children | `children` |
+| "Father will pass away in childhood" | Father | `father` |
+| "Mother will be sickly" | Mother | `mother` |
+| "Co-born destroyed" | Siblings | `siblings` |
+| "Dual lordship results nullified" | No specific person | `general` |
+
+### Common mistakes
+
+- **"Native will have many sons"** → entity_target = `native`. The prediction is
+  about the native's life experience. You would verify by asking the native.
+
+- **"Sons will be inimical to native"** → entity_target = `children`. The prediction
+  is about the children's behavior. You would verify by observing the children.
+
+- **"Wife not under his control"** → entity_target = `spouse`. The prediction is
+  about the spouse's behavior/disposition.
+
+- **"Paternal happiness"** → entity_target = `native`. This describes the native's
+  experience of their father, not a prediction about the father's own life.
+
+- **"Father will die early"** → entity_target = `father`. This IS about the father's
+  fate. You would verify by checking whether the father died early.
+
+### When NOT to use 'general'
+
+`general` means "this rule is a structural principle or methodological note, not a
+prediction about any specific person." Examples: bhavat bhavam principle, dual
+lordship resolution rules, visible/invisible half principle.
+
+`general` is NOT a default for "I'm not sure" or "multiple entities mentioned."
+If the verse predicts something about a specific entity, use that entity. If the
+verse makes predictions about two different entities, it should be TWO rules
+(per granularity principle #2).
+
 ## The Mechanical Check
 
 For every rule, scan its `commentary_context` for:
@@ -60,4 +109,4 @@ If these keywords are found AND the rule has no corresponding:
 
 Then flag as: "Commentary contains unencoded condition — review for missing rule or modifier."
 
-This is a WARNING (not blocking) because not every "if" in commentary is an unencoded condition. But it surfaces the pattern for human review.
+This is a BLOCKING check at Step 2B (audit review). Every flagged keyword must be resolved — either a corresponding audit claim exists, or the auditor documents why it is not a separate claim (e.g., "restatement of claim X"). Unresolved flags block encoding.

@@ -275,7 +275,10 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
         entity = r.entity_target
         sc.entity_distribution[entity] = sc.entity_distribution.get(entity, 0) + 1
 
-        # Check for entity mismatch
+        # Check for entity mismatch — whose fate is being predicted?
+        # Detection looks for patterns where another entity is the SUBJECT
+        # of a prediction verb (e.g., "wife will die", "sons will be hostile").
+        # "Native will have many sons" is NOT a mismatch — native is the subject.
         desc_entities = _detect_entity_in_description(r.description)
         if desc_entities and entity == "native":
             non_native = desc_entities - {"native"}
@@ -288,6 +291,20 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
                     f"{', '.join(sorted(non_native))}",
                     f"Verify entity_target — likely should be '{likely}' or split "
                     f"into separate rules per entity",
+                ))
+        # Also flag 'general' misuse — general is for structural principles only,
+        # not for predictions that mention multiple entities
+        if entity == "general" and desc_entities:
+            specific = desc_entities - {"native"}
+            if specific:
+                sc.entity_mismatch_count += 1
+                likely = sorted(specific)[0]
+                flags.append(RedFlag(
+                    rid, "warning", "entity_general_misuse",
+                    f"entity_target='general' but prediction is about "
+                    f"{', '.join(sorted(specific))} — 'general' is for "
+                    f"structural principles only",
+                    f"Set entity_target='{likely}' or split into per-entity rules",
                 ))
 
         # Also check house-category mismatch
