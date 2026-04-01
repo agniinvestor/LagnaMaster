@@ -20,14 +20,63 @@
 
 If an encoding session discovers a gap that needs a new control: NOTE IT and finish encoding. Build the control in the next governance session. Do not stop encoding to build infrastructure.
 
-## Encoding Protocol (MANDATORY — before ANY encoding)
+## Encoding Protocol (MANDATORY — 5 hard gates, no skipping)
 
-1. **Verse audit FIRST** — read every sloka + commentary from the PDF. Create `data/verse_audits/chN_audit.json` listing every claim per verse. No encoding without an audit file.
-2. **Apply granularity definition** (`docs/ENCODING_GRANULARITY.md`) — every distinct condition, exception, contrary, and direction-changing modifier is a separate rule. Every amplifier that doesn't change direction is a modifier field or commentary.
-3. **Encode from the audit file** — the audit file is the spec. Each claim maps to a rule. When done, run `tools/verse_audit.py --compare` to verify zero unencoded claims.
-4. **Run scorecard + audit** — `tools/v2_scorecard.py` + full test suite before commit.
+```
+OCR → [OCR Gate] → Audit → [Audit Gate] → Encode → [Validate Gate] → Ship
+```
 
-A chapter without a verse audit file CANNOT be encoded. The audit file is the proof that the source text was read at the correct granularity.
+### Gate 0: OCR Verification (scanned PDFs only)
+If source is a scanned PDF, run OCR first (`tesseract input.pdf output -l san+hin+eng pdf`).
+Then verify: pick 3 verses spread across the chapter, compare OCR text against the PDF image.
+If any verse has material errors (wrong numbers, dropped negations, garbled conditions), fix OCR before proceeding.
+Store OCR'd text in `data/ocr/`. Skip this gate for text-based PDFs.
+
+### Gate 1: Verse Audit
+Read every sloka + commentary from the PDF/OCR text. Create `data/verse_audits/chN_audit.json` listing every claim per verse. Apply granularity definition (`docs/ENCODING_GRANULARITY.md`) — every distinct condition, exception, contrary, and direction-changing modifier is a separate claim.
+
+### Gate 2: Audit Review (who audits the auditor?)
+Before encoding, review the audit file for completeness. Check:
+- Does claim count match verse complexity? (simple verse = 1-2 claims, complex = 3-6)
+- Are contrary mirrors identified where text says "in contrary situation"?
+- Are entity targets noted (father/spouse/children) not defaulted to native?
+- Run the keyword scanner from ENCODING_GRANULARITY.md against the source text — any "if/unless/except" without a corresponding audit claim is a gap.
+
+**The audit file is treated as ground truth downstream. Errors here propagate silently through every gate that follows.** This is the highest-leverage review point.
+
+### Gate 3: Encode from Audit
+The audit file is the spec. Each claim maps to a rule. When done, run `tools/verse_audit.py --compare` to verify zero unencoded claims.
+
+### Gate 4: Validate (DURING work, not after)
+Run `tools/v2_scorecard.py --file <chapter_file>` after completing each chapter file.
+Fix all warnings and errors BEFORE moving to the next chapter or committing.
+Do not accumulate warnings across files — each file must be clean before proceeding.
+
+Then run full test suite + `ruff check` before commit. All must pass.
+
+A chapter without a verse audit file CANNOT be encoded. The builder blocks with ValueError.
+The builder also blocks on entity_target mismatches, mixed-entity rules, and prediction entity mismatches (T1-14 through T1-17).
+
+## Plugin Usage by Session Type
+
+**Encoding sessions — use these plugins:**
+- **hookify** — enforce gates as pre-commit hooks (audit file exists, claim count matches, 5 docs updated)
+- **code-review** — run on `chN_audit.json` at Gate 2 (review the audit, not the code)
+- **commit-commands** — `/commit` to ship
+- **security-guidance** — passive background monitoring
+- **claude-md-management** — 5-doc update enforcement
+
+**Governance sessions — use these plugins:**
+- **superpowers** — `/brainstorm` + `/write-plan` for infrastructure design
+- **feature-dev** — multi-agent feature development
+- **pr-review-toolkit** — deep PR review for infrastructure changes
+- **code-simplifier** — post-refactor cleanup
+
+**Do NOT use in encoding sessions:**
+- `/brainstorm` — the source text is the spec, not a design discussion
+- `/write-plan` — the audit file is the plan
+- `feature-dev` — encoding is not feature development
+- `playwright` / `firecrawl` — all docs are local
 
 ## Session Protocol (MANDATORY)
 
