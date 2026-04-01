@@ -168,6 +168,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.bphs_v2_ch23 import BPHS_V2_CH23_REGISTRY  # S312 production-ready
     from src.corpus.bphs_v2_ch24a import BPHS_V2_CH24A_REGISTRY  # noqa: F811  # S309 Block B start
     from src.corpus.bphs_v2_ch24b import BPHS_V2_CH24B_REGISTRY  # noqa: F811  # S310 lords 5-8
+    from src.corpus.bphs_v2_ch24c import BPHS_V2_CH24C_REGISTRY  # noqa: F811  # S311 lords 9-12+misc
 
     registry = CorpusRegistry()
     sources = [
@@ -289,6 +290,7 @@ def build_corpus() -> CorpusRegistry:
         BPHS_V2_CH23_REGISTRY,
         BPHS_V2_CH24A_REGISTRY,
         BPHS_V2_CH24B_REGISTRY,
+        BPHS_V2_CH24C_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():
