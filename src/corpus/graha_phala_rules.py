@@ -80,7 +80,7 @@ _GRAHA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="GPH004",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.3",
         school="mantreswara",
         category="graha_phala",
@@ -156,7 +156,7 @@ _GRAHA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="GPH008",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.3",
         school="mantreswara",
         category="graha_phala",
@@ -252,7 +252,7 @@ _GRAHA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="GPH013",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.3",
         school="mantreswara",
         category="graha_phala",
@@ -364,7 +364,7 @@ _GRAHA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="GPH019",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.3",
         school="mantreswara",
         category="graha_phala",
@@ -518,7 +518,7 @@ _GRAHA_PHALA_RULES = [
     # --- Combined House Effects (GPH027-030) ---
     RuleRecord(
         rule_id="GPH027",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="graha_phala",
@@ -554,7 +554,7 @@ _GRAHA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="GPH029",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.3",
         school="mantreswara",
         category="graha_phala",
@@ -572,7 +572,7 @@ _GRAHA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="GPH030",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="graha_phala",

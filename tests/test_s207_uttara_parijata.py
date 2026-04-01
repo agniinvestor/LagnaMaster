@@ -21,7 +21,7 @@ def test_uttara_kalamrita_at_least_15_rules():
 def test_uttara_kalamrita_source_correct():
     from src.corpus.uttara_kalamrita_rules import UTTARA_KALAMRITA_REGISTRY
     for r in UTTARA_KALAMRITA_REGISTRY.all():
-        assert r.source == "Uttara Kalamrita"
+        assert r.source == "UttaraKalamrita"
 
 
 def test_jataka_parijata_import():
@@ -37,7 +37,7 @@ def test_jataka_parijata_at_least_15_rules():
 def test_jataka_parijata_source_correct():
     from src.corpus.jataka_parijata_rules import JATAKA_PARIJATA_REGISTRY
     for r in JATAKA_PARIJATA_REGISTRY.all():
-        assert r.source == "Jataka Parijata"
+        assert r.source == "JatakaParijata"
 
 
 def test_five_text_corpus_over_130_rules():

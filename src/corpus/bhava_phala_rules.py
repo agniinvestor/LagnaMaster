@@ -253,7 +253,7 @@ _BHAVA_PHALA_RULES = [
     # --- Bhava Phal Extended Principles (BPH013-018) ---
     RuleRecord(
         rule_id="BPH013",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="bhava",
@@ -325,7 +325,7 @@ _BHAVA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="BPH017",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.7",
         school="mantreswara",
         category="bhava",
@@ -344,7 +344,7 @@ _BHAVA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="BPH018",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.7",
         school="mantreswara",
         category="bhava",
@@ -433,7 +433,7 @@ _BHAVA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="BPH023",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="bhava",
@@ -451,7 +451,7 @@ _BHAVA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="BPH024",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.7",
         school="mantreswara",
         category="bhava",
@@ -524,7 +524,7 @@ _BHAVA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="BPH028",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.7",
         school="mantreswara",
         category="bhava",
@@ -558,7 +558,7 @@ _BHAVA_PHALA_RULES = [
     ),
     RuleRecord(
         rule_id="BPH030",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="bhava",

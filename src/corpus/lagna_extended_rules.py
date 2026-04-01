@@ -416,7 +416,7 @@ _LAGNA_RULES = [
     ),
     RuleRecord(
         rule_id="LGE022",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.1",
         school="mantreswara",
         category="lagna",
@@ -471,7 +471,7 @@ _LAGNA_RULES = [
     ),
     RuleRecord(
         rule_id="LGE025",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.1",
         school="varahamihira",
         category="lagna",
@@ -488,7 +488,7 @@ _LAGNA_RULES = [
     ),
     RuleRecord(
         rule_id="LGE026",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.1",
         school="varahamihira",
         category="lagna",
@@ -505,7 +505,7 @@ _LAGNA_RULES = [
     ),
     RuleRecord(
         rule_id="LGE027",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.1",
         school="mantreswara",
         category="lagna",
@@ -559,7 +559,7 @@ _LAGNA_RULES = [
     ),
     RuleRecord(
         rule_id="LGE030",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.1",
         school="mantreswara",
         category="lagna",

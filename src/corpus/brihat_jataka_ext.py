@@ -24,7 +24,7 @@ _BRIHAT_JATAKA_EXT = [
     # --- Planetary Nature Classification (BJE001-009) ---
     RuleRecord(
         rule_id="BJE001",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="planetary_nature",
@@ -40,7 +40,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE002",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="planetary_nature",
@@ -55,7 +55,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE003",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="planetary_nature",
@@ -70,7 +70,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE004",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="planetary_nature",
@@ -85,7 +85,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE005",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="planetary_nature",
@@ -100,7 +100,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE006",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="planetary_nature",
@@ -115,7 +115,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE007",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="planetary_nature",
@@ -130,7 +130,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE008",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="planetary_nature",
@@ -146,7 +146,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE009",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.2",
         school="varahamihira",
         category="planetary_nature",
@@ -163,7 +163,7 @@ _BRIHAT_JATAKA_EXT = [
     # --- Brihat Jataka Unique Rules (BJE010-020) ---
     RuleRecord(
         rule_id="BJE010",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.4",
         school="varahamihira",
         category="planetary_nature",
@@ -179,7 +179,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE011",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.4",
         school="varahamihira",
         category="planetary_nature",
@@ -195,7 +195,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE012",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.4",
         school="varahamihira",
         category="planetary_nature",
@@ -211,7 +211,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE013",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.14",
         school="varahamihira",
         category="planetary_nature",
@@ -227,7 +227,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE014",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.14",
         school="varahamihira",
         category="planetary_nature",
@@ -243,7 +243,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE015",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.15",
         school="varahamihira",
         category="planetary_nature",
@@ -259,7 +259,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE016",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.15",
         school="varahamihira",
         category="planetary_nature",
@@ -275,7 +275,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE017",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.15",
         school="varahamihira",
         category="planetary_nature",
@@ -291,7 +291,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE018",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.15",
         school="varahamihira",
         category="planetary_nature",
@@ -308,7 +308,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE019",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.15",
         school="varahamihira",
         category="planetary_nature",
@@ -325,7 +325,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE020",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.19",
         school="varahamihira",
         category="planetary_nature",
@@ -342,7 +342,7 @@ _BRIHAT_JATAKA_EXT = [
     # --- Brihat Jataka Aspect Rules (BJE021-025) ---
     RuleRecord(
         rule_id="BJE021",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.4",
         school="varahamihira",
         category="planetary_nature",
@@ -358,7 +358,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE022",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.4",
         school="varahamihira",
         category="planetary_nature",
@@ -374,7 +374,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE023",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.4",
         school="varahamihira",
         category="planetary_nature",
@@ -391,7 +391,7 @@ _BRIHAT_JATAKA_EXT = [
     # --- Brihat Jataka on Specific Life Events (BJE024-030) ---
     RuleRecord(
         rule_id="BJE024",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.15",
         school="varahamihira",
         category="planetary_nature",
@@ -408,7 +408,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE025",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.15",
         school="varahamihira",
         category="planetary_nature",
@@ -425,7 +425,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE026",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.15",
         school="varahamihira",
         category="planetary_nature",
@@ -442,7 +442,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE027",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.15",
         school="varahamihira",
         category="planetary_nature",
@@ -459,7 +459,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE028",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.15",
         school="varahamihira",
         category="planetary_nature",
@@ -476,7 +476,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE029",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.19",
         school="varahamihira",
         category="planetary_nature",
@@ -493,7 +493,7 @@ _BRIHAT_JATAKA_EXT = [
     ),
     RuleRecord(
         rule_id="BJE030",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.19",
         school="varahamihira",
         category="planetary_nature",

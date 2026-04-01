@@ -25,7 +25,7 @@ _JAIMINI_RULES = [
     # --- Chara Karaka System (JMS001-008) ---
     RuleRecord(
         rule_id="JMS001",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -42,7 +42,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS002",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -62,7 +62,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS003",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -79,7 +79,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS004",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -97,7 +97,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS005",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -114,7 +114,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS006",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -131,7 +131,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS007",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -148,7 +148,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS008",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -166,7 +166,7 @@ _JAIMINI_RULES = [
     # --- Rashi Drishti (Sign Aspects) (JMS009-011) ---
     RuleRecord(
         rule_id="JMS009",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -184,7 +184,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS010",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -201,7 +201,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS011",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -219,7 +219,7 @@ _JAIMINI_RULES = [
     # --- Pada (Arudha) System (JMS012-016) ---
     RuleRecord(
         rule_id="JMS012",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -236,7 +236,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS013",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_1",
         school="jaimini",
         category="jaimini",
@@ -253,7 +253,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS014",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_2",
         school="jaimini",
         category="jaimini",
@@ -270,7 +270,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS015",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_2",
         school="jaimini",
         category="jaimini",
@@ -287,7 +287,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS016",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_2",
         school="jaimini",
         category="jaimini",
@@ -305,7 +305,7 @@ _JAIMINI_RULES = [
     # --- Chara Dasha (JMS017-021) ---
     RuleRecord(
         rule_id="JMS017",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_2",
         school="jaimini",
         category="jaimini",
@@ -322,7 +322,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS018",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_2",
         school="jaimini",
         category="jaimini",
@@ -339,7 +339,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS019",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_2",
         school="jaimini",
         category="jaimini",
@@ -356,7 +356,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS020",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_3",
         school="jaimini",
         category="jaimini",
@@ -373,7 +373,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS021",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_3",
         school="jaimini",
         category="jaimini",
@@ -392,7 +392,7 @@ _JAIMINI_RULES = [
     # --- Special Lagnas and Yogas (JMS022-026) ---
     RuleRecord(
         rule_id="JMS022",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_3",
         school="jaimini",
         category="jaimini",
@@ -409,7 +409,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS023",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_3",
         school="jaimini",
         category="jaimini",
@@ -426,7 +426,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS024",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_3",
         school="jaimini",
         category="jaimini",
@@ -443,7 +443,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS025",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_3",
         school="jaimini",
         category="jaimini",
@@ -460,7 +460,7 @@ _JAIMINI_RULES = [
     ),
     RuleRecord(
         rule_id="JMS026",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_4",
         school="jaimini",
         category="jaimini",

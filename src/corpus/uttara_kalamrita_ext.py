@@ -23,7 +23,7 @@ _UTTARA_KALAMRITA_EXT = [
     # --- Extended House Significations (UKE001-012) ---
     RuleRecord(
         rule_id="UKE001",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -39,7 +39,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE002",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -55,7 +55,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE003",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -71,7 +71,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE004",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -87,7 +87,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE005",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -103,7 +103,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE006",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -119,7 +119,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE007",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -135,7 +135,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE008",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -151,7 +151,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE009",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -167,7 +167,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE010",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -183,7 +183,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE011",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -199,7 +199,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE012",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="house_signification",
@@ -216,7 +216,7 @@ _UTTARA_KALAMRITA_EXT = [
     # --- Uttara Kalamrita Planetary Significations (UKE013-021) ---
     RuleRecord(
         rule_id="UKE013",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.5",
         school="kalidasa",
         category="planetary_signification",
@@ -232,7 +232,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE014",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.5",
         school="kalidasa",
         category="planetary_signification",
@@ -248,7 +248,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE015",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.5",
         school="kalidasa",
         category="planetary_signification",
@@ -264,7 +264,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE016",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.5",
         school="kalidasa",
         category="planetary_signification",
@@ -280,7 +280,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE017",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.5",
         school="kalidasa",
         category="planetary_signification",
@@ -296,7 +296,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE018",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.5",
         school="kalidasa",
         category="planetary_signification",
@@ -312,7 +312,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE019",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.5",
         school="kalidasa",
         category="planetary_signification",
@@ -328,7 +328,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE020",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.5",
         school="kalidasa",
         category="planetary_signification",
@@ -344,7 +344,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE021",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.5",
         school="kalidasa",
         category="planetary_signification",
@@ -361,7 +361,7 @@ _UTTARA_KALAMRITA_EXT = [
     # --- Uttara Kalamrita Special Principles (UKE022-030) ---
     RuleRecord(
         rule_id="UKE022",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.6",
         school="kalidasa",
         category="house_signification",
@@ -377,7 +377,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE023",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.6",
         school="kalidasa",
         category="house_signification",
@@ -393,7 +393,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE024",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.6",
         school="kalidasa",
         category="house_signification",
@@ -409,7 +409,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE025",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.6",
         school="kalidasa",
         category="house_signification",
@@ -425,7 +425,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE026",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.6",
         school="kalidasa",
         category="house_signification",
@@ -441,7 +441,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE027",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.6",
         school="kalidasa",
         category="house_signification",
@@ -457,7 +457,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE028",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.6",
         school="kalidasa",
         category="house_signification",
@@ -474,7 +474,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE029",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.6",
         school="kalidasa",
         category="house_signification",
@@ -491,7 +491,7 @@ _UTTARA_KALAMRITA_EXT = [
     ),
     RuleRecord(
         rule_id="UKE030",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.6",
         school="kalidasa",
         category="house_signification",

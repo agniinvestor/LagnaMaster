@@ -40,7 +40,7 @@ _TRANSIT_RULES = [
     ),
     RuleRecord(
         rule_id="TRN002",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -88,7 +88,7 @@ _TRANSIT_RULES = [
     ),
     RuleRecord(
         rule_id="TRN005",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -322,7 +322,7 @@ _TRANSIT_RULES = [
     ),
     RuleRecord(
         rule_id="TRN019",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -338,7 +338,7 @@ _TRANSIT_RULES = [
     ),
     RuleRecord(
         rule_id="TRN020",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -354,7 +354,7 @@ _TRANSIT_RULES = [
     ),
     RuleRecord(
         rule_id="TRN021",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -371,7 +371,7 @@ _TRANSIT_RULES = [
     # --- Rahu/Ketu Transit (TRN022-023) ---
     RuleRecord(
         rule_id="TRN022",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -387,7 +387,7 @@ _TRANSIT_RULES = [
     ),
     RuleRecord(
         rule_id="TRN023",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -404,7 +404,7 @@ _TRANSIT_RULES = [
     # --- Combined Transit Principles (TRN024-030) ---
     RuleRecord(
         rule_id="TRN024",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -420,7 +420,7 @@ _TRANSIT_RULES = [
     ),
     RuleRecord(
         rule_id="TRN025",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -468,7 +468,7 @@ _TRANSIT_RULES = [
     ),
     RuleRecord(
         rule_id="TRN028",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -484,7 +484,7 @@ _TRANSIT_RULES = [
     ),
     RuleRecord(
         rule_id="TRN029",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",
@@ -500,7 +500,7 @@ _TRANSIT_RULES = [
     ),
     RuleRecord(
         rule_id="TRN030",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="transit",

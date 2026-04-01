@@ -329,7 +329,7 @@ _SHADBALA_RULES = [
     ),
     RuleRecord(
         rule_id="SDB018",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.1",
         school="varahamihira",
         category="shadbala",
@@ -508,7 +508,7 @@ _SHADBALA_RULES = [
     ),
     RuleRecord(
         rule_id="SDB028",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.2",
         school="sarvartha",
         category="shadbala",

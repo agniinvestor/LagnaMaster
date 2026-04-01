@@ -24,7 +24,7 @@ _PHALA_DEEPIKA_EXT = [
     # --- Planets in Houses (Phala Deepika approach) (PDE001-012) ---
     RuleRecord(
         rule_id="PDE001",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.5",
         school="mantreswara",
         category="graha_in_bhava",
@@ -40,7 +40,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE002",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.5",
         school="mantreswara",
         category="graha_in_bhava",
@@ -56,7 +56,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE003",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.5",
         school="mantreswara",
         category="graha_in_bhava",
@@ -72,7 +72,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE004",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.5",
         school="mantreswara",
         category="graha_in_bhava",
@@ -88,7 +88,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE005",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.5",
         school="mantreswara",
         category="graha_in_bhava",
@@ -104,7 +104,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE006",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.5",
         school="mantreswara",
         category="graha_in_bhava",
@@ -120,7 +120,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE007",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.5",
         school="mantreswara",
         category="graha_in_bhava",
@@ -136,7 +136,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE008",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.6",
         school="mantreswara",
         category="graha_in_bhava",
@@ -152,7 +152,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE009",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.6",
         school="mantreswara",
         category="graha_in_bhava",
@@ -168,7 +168,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE010",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.6",
         school="mantreswara",
         category="graha_in_bhava",
@@ -184,7 +184,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE011",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.6",
         school="mantreswara",
         category="graha_in_bhava",
@@ -200,7 +200,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE012",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.6",
         school="mantreswara",
         category="graha_in_bhava",
@@ -217,7 +217,7 @@ _PHALA_DEEPIKA_EXT = [
     # --- Phala Deepika Special Yogas (PDE013-022) ---
     RuleRecord(
         rule_id="PDE013",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.8",
         school="mantreswara",
         category="yoga",
@@ -234,7 +234,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE014",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.8",
         school="mantreswara",
         category="yoga",
@@ -250,7 +250,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE015",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.8",
         school="mantreswara",
         category="yoga",
@@ -266,7 +266,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE016",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.8",
         school="mantreswara",
         category="yoga",
@@ -282,7 +282,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE017",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.8",
         school="mantreswara",
         category="yoga",
@@ -298,7 +298,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE018",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.8",
         school="mantreswara",
         category="yoga",
@@ -314,7 +314,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE019",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.13",
         school="mantreswara",
         category="yoga",
@@ -330,7 +330,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE020",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.13",
         school="mantreswara",
         category="yoga",
@@ -346,7 +346,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE021",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.13",
         school="mantreswara",
         category="yoga",
@@ -362,7 +362,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE022",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.13",
         school="mantreswara",
         category="yoga",
@@ -379,7 +379,7 @@ _PHALA_DEEPIKA_EXT = [
     # --- Phala Deepika on Health and Disease (PDE023-026) ---
     RuleRecord(
         rule_id="PDE023",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.14",
         school="mantreswara",
         category="health",
@@ -395,7 +395,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE024",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.14",
         school="mantreswara",
         category="health",
@@ -411,7 +411,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE025",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.14",
         school="mantreswara",
         category="health",
@@ -427,7 +427,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE026",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.14",
         school="mantreswara",
         category="health",
@@ -444,7 +444,7 @@ _PHALA_DEEPIKA_EXT = [
     # --- Phala Deepika Miscellaneous Principles (PDE027-030) ---
     RuleRecord(
         rule_id="PDE027",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.20",
         school="mantreswara",
         category="yoga",
@@ -460,7 +460,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE028",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.20",
         school="mantreswara",
         category="yoga",
@@ -476,7 +476,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE029",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.20",
         school="mantreswara",
         category="yoga",
@@ -492,7 +492,7 @@ _PHALA_DEEPIKA_EXT = [
     ),
     RuleRecord(
         rule_id="PDE030",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.20",
         school="mantreswara",
         category="yoga",

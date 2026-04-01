@@ -117,7 +117,7 @@ _YOGA_EXTENDED_RULES = [
     # --- Nabhasa Yogas (YGE006-012) ---
     RuleRecord(
         rule_id="YGE006",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.12",
         school="varahamihira",
         category="yoga",
@@ -134,7 +134,7 @@ _YOGA_EXTENDED_RULES = [
     ),
     RuleRecord(
         rule_id="YGE007",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.12",
         school="varahamihira",
         category="yoga",
@@ -150,7 +150,7 @@ _YOGA_EXTENDED_RULES = [
     ),
     RuleRecord(
         rule_id="YGE008",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.12",
         school="varahamihira",
         category="yoga",
@@ -166,7 +166,7 @@ _YOGA_EXTENDED_RULES = [
     ),
     RuleRecord(
         rule_id="YGE009",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.12",
         school="varahamihira",
         category="yoga",
@@ -183,7 +183,7 @@ _YOGA_EXTENDED_RULES = [
     ),
     RuleRecord(
         rule_id="YGE010",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.12",
         school="varahamihira",
         category="yoga",
@@ -201,7 +201,7 @@ _YOGA_EXTENDED_RULES = [
     ),
     RuleRecord(
         rule_id="YGE011",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.12",
         school="varahamihira",
         category="yoga",
@@ -218,7 +218,7 @@ _YOGA_EXTENDED_RULES = [
     ),
     RuleRecord(
         rule_id="YGE012",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.12",
         school="varahamihira",
         category="yoga",
@@ -375,7 +375,7 @@ _YOGA_EXTENDED_RULES = [
     ),
     RuleRecord(
         rule_id="YGE021",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.6",
         school="mantreswara",
         category="yoga",
@@ -445,7 +445,7 @@ _YOGA_EXTENDED_RULES = [
     ),
     RuleRecord(
         rule_id="YGE025",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.6",
         school="mantreswara",
         category="yoga",
@@ -531,7 +531,7 @@ _YOGA_EXTENDED_RULES = [
     ),
     RuleRecord(
         rule_id="YGE030",
-        source="Phala_Deepika",
+        source="Phaladeepika",
         chapter="Ch.6",
         school="mantreswara",
         category="yoga",

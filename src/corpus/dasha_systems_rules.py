@@ -93,7 +93,7 @@ _DASHA_RULES = [
     ),
     RuleRecord(
         rule_id="DSY005",
-        source="Uttara_Kalamrita",
+        source="UttaraKalamrita",
         chapter="Ch.4",
         school="kalidasa",
         category="dasha",
@@ -110,7 +110,7 @@ _DASHA_RULES = [
     ),
     RuleRecord(
         rule_id="DSY006",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.8",
         school="sarvartha",
         category="dasha",
@@ -339,7 +339,7 @@ _DASHA_RULES = [
     ),
     RuleRecord(
         rule_id="DSY019",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_2",
         school="jaimini",
         category="dasha",
@@ -356,7 +356,7 @@ _DASHA_RULES = [
     ),
     RuleRecord(
         rule_id="DSY020",
-        source="Jaimini_Sutras",
+        source="JaiminiSutras",
         chapter="Adhyaya_3",
         school="jaimini",
         category="dasha",
@@ -391,7 +391,7 @@ _DASHA_RULES = [
     ),
     RuleRecord(
         rule_id="DSY022",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.8",
         school="sarvartha",
         category="dasha",

@@ -283,7 +283,7 @@ _ASHTAKAVARGA_RULES = [
     ),
     RuleRecord(
         rule_id="AST016",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.19",
         school="varahamihira",
         category="ashtakavarga",
@@ -318,7 +318,7 @@ _ASHTAKAVARGA_RULES = [
     # --- Transit Assessment with BAV (AST018-022) ---
     RuleRecord(
         rule_id="AST018",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="ashtakavarga",
@@ -335,7 +335,7 @@ _ASHTAKAVARGA_RULES = [
     ),
     RuleRecord(
         rule_id="AST019",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="ashtakavarga",
@@ -386,7 +386,7 @@ _ASHTAKAVARGA_RULES = [
     ),
     RuleRecord(
         rule_id="AST022",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="ashtakavarga",
@@ -438,7 +438,7 @@ _ASHTAKAVARGA_RULES = [
     ),
     RuleRecord(
         rule_id="AST025",
-        source="Brihat_Jataka",
+        source="Brihat Jataka",
         chapter="Ch.19",
         school="varahamihira",
         category="ashtakavarga",
@@ -473,7 +473,7 @@ _ASHTAKAVARGA_RULES = [
     ),
     RuleRecord(
         rule_id="AST027",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="ashtakavarga",
@@ -524,7 +524,7 @@ _ASHTAKAVARGA_RULES = [
     ),
     RuleRecord(
         rule_id="AST030",
-        source="Sarvartha_Chintamani",
+        source="SarvarthaChintamani",
         chapter="Ch.10",
         school="sarvartha",
         category="ashtakavarga",

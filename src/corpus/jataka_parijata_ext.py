@@ -23,7 +23,7 @@ _JATAKA_PARIJATA_EXT = [
     # --- JP Unique Lagna-Based Rules (JPE001-010) ---
     RuleRecord(
         rule_id="JPE001",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.2",
         school="vaidyanatha",
         category="lagna_analysis",
@@ -39,7 +39,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE002",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.2",
         school="vaidyanatha",
         category="lagna_analysis",
@@ -55,7 +55,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE003",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.2",
         school="vaidyanatha",
         category="lagna_analysis",
@@ -71,7 +71,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE004",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.2",
         school="vaidyanatha",
         category="lagna_analysis",
@@ -87,7 +87,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE005",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.2",
         school="vaidyanatha",
         category="lagna_analysis",
@@ -103,7 +103,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE006",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.2",
         school="vaidyanatha",
         category="lagna_analysis",
@@ -119,7 +119,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE007",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.2",
         school="vaidyanatha",
         category="lagna_analysis",
@@ -135,7 +135,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE008",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.2",
         school="vaidyanatha",
         category="lagna_analysis",
@@ -151,7 +151,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE009",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.2",
         school="vaidyanatha",
         category="lagna_analysis",
@@ -167,7 +167,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE010",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.2",
         school="vaidyanatha",
         category="lagna_analysis",
@@ -185,7 +185,7 @@ _JATAKA_PARIJATA_EXT = [
     # --- JP Special Yogas (JPE011-020) ---
     RuleRecord(
         rule_id="JPE011",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.4",
         school="vaidyanatha",
         category="yoga",
@@ -202,7 +202,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE012",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.4",
         school="vaidyanatha",
         category="yoga",
@@ -218,7 +218,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE013",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.4",
         school="vaidyanatha",
         category="yoga",
@@ -234,7 +234,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE014",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.4",
         school="vaidyanatha",
         category="yoga",
@@ -250,7 +250,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE015",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.4",
         school="vaidyanatha",
         category="yoga",
@@ -266,7 +266,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE016",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.7",
         school="vaidyanatha",
         category="yoga",
@@ -282,7 +282,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE017",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.7",
         school="vaidyanatha",
         category="yoga",
@@ -298,7 +298,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE018",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.7",
         school="vaidyanatha",
         category="yoga",
@@ -314,7 +314,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE019",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.7",
         school="vaidyanatha",
         category="yoga",
@@ -330,7 +330,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE020",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.7",
         school="vaidyanatha",
         category="yoga",
@@ -347,7 +347,7 @@ _JATAKA_PARIJATA_EXT = [
     # --- JP Timing and Dasha Rules (JPE021-030) ---
     RuleRecord(
         rule_id="JPE021",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.11",
         school="vaidyanatha",
         category="dasha",
@@ -363,7 +363,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE022",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.11",
         school="vaidyanatha",
         category="dasha",
@@ -379,7 +379,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE023",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.11",
         school="vaidyanatha",
         category="dasha",
@@ -395,7 +395,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE024",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.11",
         school="vaidyanatha",
         category="dasha",
@@ -411,7 +411,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE025",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.11",
         school="vaidyanatha",
         category="dasha",
@@ -427,7 +427,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE026",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.11",
         school="vaidyanatha",
         category="dasha",
@@ -443,7 +443,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE027",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.11",
         school="vaidyanatha",
         category="dasha",
@@ -459,7 +459,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE028",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.11",
         school="vaidyanatha",
         category="dasha",
@@ -475,7 +475,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE029",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.11",
         school="vaidyanatha",
         category="dasha",
@@ -491,7 +491,7 @@ _JATAKA_PARIJATA_EXT = [
     ),
     RuleRecord(
         rule_id="JPE030",
-        source="Jataka_Parijata",
+        source="JatakaParijata",
         chapter="Ch.12",
         school="vaidyanatha",
         category="dasha",

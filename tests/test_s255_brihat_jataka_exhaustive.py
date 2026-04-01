@@ -23,7 +23,7 @@ def test_school_varahamihira():
 def test_source_brihat_jataka():
     from src.corpus.brihat_jataka_exhaustive import BRIHAT_JATAKA_EXHAUSTIVE_REGISTRY
     for rule in BRIHAT_JATAKA_EXHAUSTIVE_REGISTRY.all():
-        assert rule.source == "BrihatJataka", f"{rule.rule_id} wrong source"
+        assert rule.source == "Brihat Jataka", f"{rule.rule_id} wrong source"
 
 
 def test_implemented_false():

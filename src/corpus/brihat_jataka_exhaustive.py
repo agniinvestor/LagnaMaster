@@ -40,7 +40,7 @@ _RULES = [
     # CH.1-2: PLANET NATURES (VARAHAMIHIRA'S CLASSIFICATION)
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX001", source="BrihatJataka", chapter="Ch.1", school="varahamihira",
+        rule_id="BJX001", source="Brihat Jataka", chapter="Ch.1", school="varahamihira",
         category="graha_nature",
         description="Varahamihira's Planet Nature Classification: "
             "Sun and Moon are luminaries (Jyoti), not planets per se but light-givers. "
@@ -52,7 +52,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX002", source="BrihatJataka", chapter="Ch.1", school="varahamihira",
+        rule_id="BJX002", source="Brihat Jataka", chapter="Ch.1", school="varahamihira",
         category="graha_nature",
         description="Varahamihira's Planetary Colors: Sun=red, Moon=white, Mars=blood-red, "
             "Mercury=grass-green, Jupiter=yellow, Venus=variegated/white, Saturn=black. "
@@ -63,7 +63,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX003", source="BrihatJataka", chapter="Ch.1", school="varahamihira",
+        rule_id="BJX003", source="Brihat Jataka", chapter="Ch.1", school="varahamihira",
         category="graha_nature",
         description="Varahamihira's Planetary Tastes: Sun=pungent, Moon=saline, Mars=bitter, "
             "Mercury=mixed (all tastes), Jupiter=sweet, Venus=sour, Saturn=astringent. "
@@ -73,7 +73,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX004", source="BrihatJataka", chapter="Ch.2", school="varahamihira",
+        rule_id="BJX004", source="Brihat Jataka", chapter="Ch.2", school="varahamihira",
         category="graha_nature",
         description="BJ Planetary Periods (Age of Rulership): In a lifespan of 120 years: "
             "Sun=20 years (youth/ambition), Moon=life's beginning/emotion phase, "
@@ -89,7 +89,7 @@ _RULES = [
     # CH.3: PLANETARY ASPECTS — VARAHAMIHIRA'S FORMULATION
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX005", source="BrihatJataka", chapter="Ch.3", school="varahamihira",
+        rule_id="BJX005", source="Brihat Jataka", chapter="Ch.3", school="varahamihira",
         category="aspect_rule",
         description="BJ Aspect Rule — All planets: All planets fully aspect the 7th from position. "
             "Saturn additionally aspects 3rd and 10th (quarter strength each). "
@@ -101,7 +101,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX006", source="BrihatJataka", chapter="Ch.3", school="varahamihira",
+        rule_id="BJX006", source="Brihat Jataka", chapter="Ch.3", school="varahamihira",
         category="aspect_rule",
         description="BJ Aspect of Benefics on Malefic-Afflicted House: "
             "A house fully afflicted by malefics (Saturn/Mars/Rahu) is redeemed "
@@ -112,7 +112,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX007", source="BrihatJataka", chapter="Ch.3", school="varahamihira",
+        rule_id="BJX007", source="Brihat Jataka", chapter="Ch.3", school="varahamihira",
         category="aspect_rule",
         description="BJ Mutual Aspect (Drishti Yoga): Two planets in 7th from each other "
             "are in full mutual aspect — creates a Yoga between them. "
@@ -128,7 +128,7 @@ _RULES = [
     # CH.4: RASHI (SIGN) CHARACTERISTICS
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX008", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX008", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Aries: Quadruped, movable, fiery, bilious, masculine, head of Kalapurusha. "
             "East direction, Kshatriya caste. Ruling planet Mars. "
@@ -139,7 +139,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX009", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX009", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Taurus: Quadruped, fixed, earthy, Vata/Kapha, feminine. "
             "South direction, Vaishya caste. Venus ruled. Body part: face/neck. "
@@ -150,7 +150,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX010", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX010", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Gemini: Human (biped), dual, airy, mixed doshas, masculine. "
             "West direction, Shudra/Vaishya caste. Mercury ruled. Body: arms/shoulders. "
@@ -160,7 +160,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX011", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX011", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Cancer: Watery, movable, Kapha/Pitta, feminine. "
             "North direction, Brahmin caste. Moon ruled. Body: chest/breast. "
@@ -171,7 +171,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX012", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX012", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Leo: Quadruped, fixed, fiery, Pitta, masculine. "
             "East direction, Kshatriya caste. Sun ruled. Body: stomach/heart. "
@@ -182,7 +182,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX013", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX013", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Virgo: Human/biped, dual, earthy, Vata, feminine. "
             "South direction, Vaishya caste. Mercury ruled. Body: intestines. "
@@ -193,7 +193,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX014", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX014", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Libra: Human (biped), movable, airy, Vata/Kapha, masculine. "
             "West direction, Vaishya/Shudra caste. Venus ruled. Body: hips/lower back. "
@@ -203,7 +203,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX015", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX015", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Scorpio: Insect/watery sign, fixed, watery, Kapha/Pitta, feminine. "
             "North direction, Brahmin caste. Mars ruled. Body: reproductive organs. "
@@ -214,7 +214,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX016", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX016", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Sagittarius: First half human/biped, second half equine (Dhanus). "
             "Dual, fiery, Pitta, masculine. East direction, Kshatriya caste. Jupiter ruled. "
@@ -225,7 +225,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX017", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX017", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Capricorn: Front half goat, back half fish (Makara). "
             "Movable, earthy, Vata, feminine. South direction, Vaishya caste. Saturn ruled. "
@@ -236,7 +236,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX018", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX018", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Aquarius: Human (water-bearer), fixed, airy, Vata, masculine. "
             "West direction, Shudra caste. Saturn ruled. Body: calves/ankles. "
@@ -247,7 +247,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX019", source="BrihatJataka", chapter="Ch.4", school="varahamihira",
+        rule_id="BJX019", source="Brihat Jataka", chapter="Ch.4", school="varahamihira",
         category="rashi_nature",
         description="BJ Pisces: Two fish (watery), dual, watery, Kapha, feminine. "
             "North direction, Brahmin caste. Jupiter ruled. Body: feet. "
@@ -262,7 +262,7 @@ _RULES = [
     # CH.5: BHAVA SIGNIFICATIONS (BJ FORMULATION)
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX020", source="BrihatJataka", chapter="Ch.5", school="varahamihira",
+        rule_id="BJX020", source="Brihat Jataka", chapter="Ch.5", school="varahamihira",
         category="bhava_signification",
         description="BJ 1st Bhava: Body, appearance, nature/temperament, fame in birth-place, "
             "happiness, vitality, old age condition. Varahamihira adds: "
@@ -272,7 +272,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX021", source="BrihatJataka", chapter="Ch.5", school="varahamihira",
+        rule_id="BJX021", source="Brihat Jataka", chapter="Ch.5", school="varahamihira",
         category="bhava_signification",
         description="BJ 4th Bhava (Varahamihira's emphasis): Vehicles, landed property, "
             "relatives, harvest (crops), hidden treasure, wells. "
@@ -282,7 +282,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX022", source="BrihatJataka", chapter="Ch.5", school="varahamihira",
+        rule_id="BJX022", source="Brihat Jataka", chapter="Ch.5", school="varahamihira",
         category="bhava_signification",
         description="BJ 5th Bhava: Progeny, wisdom, literary composition, religious merit (Punya), "
             "authority (Rajasri), minister/advisor status. "
@@ -292,7 +292,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX023", source="BrihatJataka", chapter="Ch.5", school="varahamihira",
+        rule_id="BJX023", source="Brihat Jataka", chapter="Ch.5", school="varahamihira",
         category="bhava_signification",
         description="BJ 8th Bhava: Longevity, type of death, battle wounds, hidden treasure at death. "
             "Varahamihira: 8th also indicates enemies' secret weapons and the nature of "
@@ -302,7 +302,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX024", source="BrihatJataka", chapter="Ch.5", school="varahamihira",
+        rule_id="BJX024", source="Brihat Jataka", chapter="Ch.5", school="varahamihira",
         category="bhava_signification",
         description="BJ 10th Bhava (Karma): Profession, authority, father, rain/harvest, "
             "pilgrimage, sky/height. Varahamihira emphasizes: father is primarily 10th (unlike BPHS 9th). "
@@ -316,7 +316,7 @@ _RULES = [
     # CH.6-7: PLANETARY STRENGTHS AND STATES
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX025", source="BrihatJataka", chapter="Ch.6", school="varahamihira",
+        rule_id="BJX025", source="Brihat Jataka", chapter="Ch.6", school="varahamihira",
         category="graha_strength",
         description="BJ Planetary Strength Order: "
             "A planet is strong when: in own sign > exaltation > friendly sign > "
@@ -328,7 +328,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX026", source="BrihatJataka", chapter="Ch.6", school="varahamihira",
+        rule_id="BJX026", source="Brihat Jataka", chapter="Ch.6", school="varahamihira",
         category="graha_strength",
         description="BJ Weak Planet States: Planet is weak when: debilitated, combust, "
             "in enemy sign, in dusthana (6/8/12), in Papakartari (malefics on both sides), "
@@ -339,7 +339,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX027", source="BrihatJataka", chapter="Ch.6", school="varahamihira",
+        rule_id="BJX027", source="Brihat Jataka", chapter="Ch.6", school="varahamihira",
         category="graha_strength",
         description="BJ Planetary Avastha (States): 5 states — "
             "Deepta (illuminated/exalted): excellent results. "
@@ -352,7 +352,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX028", source="BrihatJataka", chapter="Ch.7", school="varahamihira",
+        rule_id="BJX028", source="Brihat Jataka", chapter="Ch.7", school="varahamihira",
         category="graha_strength",
         description="BJ Nine Avasthas (Alternative system): "
             "Sayana (sleeping), Upavesha (sitting), Netrapani (hand-on-eye), "
@@ -368,7 +368,7 @@ _RULES = [
     # CH.8-10: DIVISIONAL CHARTS (VARGAS)
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX029", source="BrihatJataka", chapter="Ch.8", school="varahamihira",
+        rule_id="BJX029", source="Brihat Jataka", chapter="Ch.8", school="varahamihira",
         category="varga",
         description="BJ Hora (D2 — Half-sign division): "
             "Each sign divided into two 15° halves. "
@@ -381,7 +381,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX030", source="BrihatJataka", chapter="Ch.9", school="varahamihira",
+        rule_id="BJX030", source="Brihat Jataka", chapter="Ch.9", school="varahamihira",
         category="varga",
         description="BJ Drekkana (D3 — Decanate): Each sign divided into three 10° portions. "
             "1st decan lord = sign lord. 2nd decan = 5th sign from it. 3rd decan = 9th sign. "
@@ -392,7 +392,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX031", source="BrihatJataka", chapter="Ch.10", school="varahamihira",
+        rule_id="BJX031", source="Brihat Jataka", chapter="Ch.10", school="varahamihira",
         category="varga",
         description="BJ Navamsha (D9): Each sign divided into nine 3°20' portions. "
             "Most important divisional chart — indicates marriage, dharma, and ultimate planetary strength. "
@@ -403,7 +403,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX032", source="BrihatJataka", chapter="Ch.10", school="varahamihira",
+        rule_id="BJX032", source="Brihat Jataka", chapter="Ch.10", school="varahamihira",
         category="varga",
         description="BJ Saptamsha (D7): Each sign divided into seven 4°17' portions. "
             "Shows children and grandchildren. "
@@ -414,7 +414,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX033", source="BrihatJataka", chapter="Ch.10", school="varahamihira",
+        rule_id="BJX033", source="Brihat Jataka", chapter="Ch.10", school="varahamihira",
         category="varga",
         description="BJ Dashamsha (D10): Each sign divided into ten 3° portions. "
             "Shows career, profession, and dharmic action in the world. "
@@ -425,7 +425,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX034", source="BrihatJataka", chapter="Ch.10", school="varahamihira",
+        rule_id="BJX034", source="Brihat Jataka", chapter="Ch.10", school="varahamihira",
         category="varga",
         description="BJ Dwadamsha (D12): Each sign divided into twelve 2°30' portions. "
             "Shows parents — 9th division = father, 4th division = mother. "
@@ -435,7 +435,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX035", source="BrihatJataka", chapter="Ch.10", school="varahamihira",
+        rule_id="BJX035", source="Brihat Jataka", chapter="Ch.10", school="varahamihira",
         category="varga",
         description="BJ Trimshamsha (D30): Each sign has unequal divisions by malefics (Mars/Saturn/Jupiter/Mercury/Venus). "
             "Shows: misfortune, disease, evil tendencies, and spiritual weaknesses. "
@@ -450,7 +450,7 @@ _RULES = [
     # CH.11: YOGAS (BJ FORMULATION)
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX036", source="BrihatJataka", chapter="Ch.11", school="varahamihira",
+        rule_id="BJX036", source="Brihat Jataka", chapter="Ch.11", school="varahamihira",
         category="yoga",
         description="BJ Mahapurusha Yogas (Varahamihira's version): Confirms BPHS Pancha Mahapurusha — "
             "Mars/Mercury/Jupiter/Venus/Saturn in own/exalted in Kendra produce Ruchaka/Bhadra/Hamsa/Malavya/Sasa. "
@@ -460,7 +460,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX037", source="BrihatJataka", chapter="Ch.11", school="varahamihira",
+        rule_id="BJX037", source="Brihat Jataka", chapter="Ch.11", school="varahamihira",
         category="yoga",
         description="BJ Raja Yoga (Varahamihira): Lords of Kendra and Trikona in conjunction, "
             "exchange, or mutual aspect produce Raja Yoga. "
@@ -471,7 +471,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX038", source="BrihatJataka", chapter="Ch.11", school="varahamihira",
+        rule_id="BJX038", source="Brihat Jataka", chapter="Ch.11", school="varahamihira",
         category="yoga",
         description="BJ Dhana Yoga: 2nd lord and 11th lord in conjunction or mutual exchange "
             "with lagna lord strong. "
@@ -482,7 +482,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX039", source="BrihatJataka", chapter="Ch.11", school="varahamihira",
+        rule_id="BJX039", source="Brihat Jataka", chapter="Ch.11", school="varahamihira",
         category="yoga",
         description="BJ Nabhasa Yogas: Varahamihira classifies Nabhasa yogas as: "
             "Akriti (shape-based), Sankhya (number-based), Ashraya (modality-based), Dala (quality-based). "
@@ -492,7 +492,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX040", source="BrihatJataka", chapter="Ch.11", school="varahamihira",
+        rule_id="BJX040", source="Brihat Jataka", chapter="Ch.11", school="varahamihira",
         category="yoga",
         description="BJ Unique Yoga — Pravrajya: Varahamihira states: if 4+ planets are in one sign "
             "AND the Moon is in the navamsha of Saturn — the native becomes an ascetic/monk. "
@@ -506,7 +506,7 @@ _RULES = [
     # CH.12: LUNAR MANSIONS (NAKSHATRAS) — BJ SYSTEM
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX041", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX041", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra Birth Effects — Ashwini (1): "
             "Born in Ashwini: beautiful, skillful, intelligent, popular, clever in work. "
@@ -517,7 +517,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX042", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX042", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra Birth Effects — Rohini (4): "
             "Born in Rohini: truthful, clean, beautiful, charming, sweet-voiced, "
@@ -528,7 +528,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX043", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX043", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra Birth Effects — Pushya (8): "
             "Born in Pushya: composed, tranquil, wealthy, learned, "
@@ -540,7 +540,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX044", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX044", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra Birth Effects — Magha (10): "
             "Born in Magha: wealthy, active, fond of ceremonies, many servants, "
@@ -551,7 +551,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX045", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX045", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra Birth Effects — Vishakha (16): "
             "Born in Vishakha: jealous, greedy, eloquent, shining like fire, "
@@ -562,7 +562,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX046", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX046", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra Birth Effects — Jyeshtha (18): "
             "Born in Jyeshtha: wealthy, liberal, few friends, content, virtuous. "
@@ -573,7 +573,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX047", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX047", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra Birth Effects — Shravan (22): "
             "Born in Shravana: wealthy, famous wife, generous, knowledgeable. "
@@ -584,7 +584,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX048", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX048", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra Birth Effects — Revati (27): "
             "Born in Revati: pure bodied, well-organized, brave, "
@@ -600,7 +600,7 @@ _RULES = [
     # CH.13-14: PLANETS IN SIGNS AND HOUSES
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX049", source="BrihatJataka", chapter="Ch.13", school="varahamihira",
+        rule_id="BJX049", source="Brihat Jataka", chapter="Ch.13", school="varahamihira",
         category="graha_rashi",
         description="BJ Sun in the 12 Signs (General Principle): "
             "Sun in own sign (Leo): royal dignity and authority. "
@@ -612,7 +612,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX050", source="BrihatJataka", chapter="Ch.13", school="varahamihira",
+        rule_id="BJX050", source="Brihat Jataka", chapter="Ch.13", school="varahamihira",
         category="graha_rashi",
         description="BJ Moon in Signs: Moon in Cancer (own) = full expression of nurturing and popularity. "
             "Moon in Taurus (exalted) = beautiful, wealthy, fortunate. "
@@ -623,7 +623,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX051", source="BrihatJataka", chapter="Ch.13", school="varahamihira",
+        rule_id="BJX051", source="Brihat Jataka", chapter="Ch.13", school="varahamihira",
         category="graha_rashi",
         description="BJ Jupiter in Signs: Jupiter in Sagittarius/Pisces (own) = dharmic prosperity. "
             "Jupiter in Cancer (exalted) = most powerful, greatest wisdom and fortune. "
@@ -634,7 +634,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX052", source="BrihatJataka", chapter="Ch.13", school="varahamihira",
+        rule_id="BJX052", source="Brihat Jataka", chapter="Ch.13", school="varahamihira",
         category="graha_rashi",
         description="BJ Saturn in Signs: Saturn in Capricorn/Aquarius (own) = disciplined authority. "
             "Saturn in Libra (exalted) = fair administration, justice in authority. "
@@ -645,7 +645,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX053", source="BrihatJataka", chapter="Ch.14", school="varahamihira",
+        rule_id="BJX053", source="Brihat Jataka", chapter="Ch.14", school="varahamihira",
         category="graha_bhava",
         description="BJ Sun in Houses — Key Positions: "
             "Sun in 10th: Dig Bala — most powerful position, great career authority. "
@@ -657,7 +657,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX054", source="BrihatJataka", chapter="Ch.14", school="varahamihira",
+        rule_id="BJX054", source="Brihat Jataka", chapter="Ch.14", school="varahamihira",
         category="graha_bhava",
         description="BJ Jupiter in Houses — Key Positions: "
             "Jupiter in 1st: wise, long-lived, religious, charitable. "
@@ -669,7 +669,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX055", source="BrihatJataka", chapter="Ch.14", school="varahamihira",
+        rule_id="BJX055", source="Brihat Jataka", chapter="Ch.14", school="varahamihira",
         category="graha_bhava",
         description="BJ Saturn in Houses — Key Positions: "
             "Saturn in 6th/11th (Upachaya): grows stronger over time — defeats enemies, gains income. "
@@ -685,7 +685,7 @@ _RULES = [
     # CH.15: CONCEPTION AND BIRTH (ADHANA AND JANMA)
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX056", source="BrihatJataka", chapter="Ch.15", school="varahamihira",
+        rule_id="BJX056", source="Brihat Jataka", chapter="Ch.15", school="varahamihira",
         category="birth_analysis",
         description="BJ Adhana Kundali (Conception Chart): Lagna at conception = 5th house of birth chart. "
             "5th lord's sign = lagna of Adhana chart. "
@@ -696,7 +696,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX057", source="BrihatJataka", chapter="Ch.15", school="varahamihira",
+        rule_id="BJX057", source="Brihat Jataka", chapter="Ch.15", school="varahamihira",
         category="birth_analysis",
         description="BJ Gender Determination: "
             "Odd signs (Aries/Gemini/Leo/Libra/Sagittarius/Aquarius) at lagna = male birth. "
@@ -708,7 +708,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX058", source="BrihatJataka", chapter="Ch.15", school="varahamihira",
+        rule_id="BJX058", source="Brihat Jataka", chapter="Ch.15", school="varahamihira",
         category="birth_analysis",
         description="BJ Multiple Births (Twins/Triplets): "
             "Two planets in the same sign or navamsha simultaneously = twins. "
@@ -723,7 +723,7 @@ _RULES = [
     # CH.16-17: PHYSICAL CHARACTERISTICS
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX059", source="BrihatJataka", chapter="Ch.16", school="varahamihira",
+        rule_id="BJX059", source="Brihat Jataka", chapter="Ch.16", school="varahamihira",
         category="physical_characteristics",
         description="BJ Physical Description from Lagna/Lagna Lord: "
             "Sun-influenced lagna: spare, reddish body, dignified bearing. "
@@ -738,7 +738,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX060", source="BrihatJataka", chapter="Ch.16", school="varahamihira",
+        rule_id="BJX060", source="Brihat Jataka", chapter="Ch.16", school="varahamihira",
         category="physical_characteristics",
         description="BJ Sign Physical Characteristics: "
             "Aries lagna: medium height, broad forehead, reddish complexion. "
@@ -752,7 +752,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX061", source="BrihatJataka", chapter="Ch.17", school="varahamihira",
+        rule_id="BJX061", source="Brihat Jataka", chapter="Ch.17", school="varahamihira",
         category="physical_characteristics",
         description="BJ Complexion from Planet: "
             "Sun prominent: reddish/copper complexion. "
@@ -769,7 +769,7 @@ _RULES = [
     # CH.18-19: WEALTH AND PROSPERITY
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX062", source="BrihatJataka", chapter="Ch.18", school="varahamihira",
+        rule_id="BJX062", source="Brihat Jataka", chapter="Ch.18", school="varahamihira",
         category="wealth",
         description="BJ Wealth Indicators (Varahamihira): Strong 2nd house + strong 11th house "
             "= consistent wealth. Lagna lord in 2nd or 11th = wealth through personal effort. "
@@ -780,7 +780,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX063", source="BrihatJataka", chapter="Ch.18", school="varahamihira",
+        rule_id="BJX063", source="Brihat Jataka", chapter="Ch.18", school="varahamihira",
         category="wealth",
         description="BJ Poverty Indicators: 2nd lord in 12th = family wealth lost. "
             "Lagna lord in 6th with 2nd lord weak = persistent financial struggle. "
@@ -791,7 +791,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX064", source="BrihatJataka", chapter="Ch.18", school="varahamihira",
+        rule_id="BJX064", source="Brihat Jataka", chapter="Ch.18", school="varahamihira",
         category="wealth",
         description="BJ Varahamihira on Dhana Timing: Wealth accumulation peaks in dasha of "
             "2nd/11th lord or planets placed in 2nd/11th. "
@@ -802,7 +802,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX065", source="BrihatJataka", chapter="Ch.19", school="varahamihira",
+        rule_id="BJX065", source="Brihat Jataka", chapter="Ch.19", school="varahamihira",
         category="wealth",
         description="BJ Types of Wealth Sources: "
             "Sun prominent: wealth from government, authority, father. "
@@ -821,7 +821,7 @@ _RULES = [
     # CH.20-21: FEMALE HOROSCOPY (STRI JATAKA)
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX066", source="BrihatJataka", chapter="Ch.20", school="varahamihira",
+        rule_id="BJX066", source="Brihat Jataka", chapter="Ch.20", school="varahamihira",
         category="female_chart",
         description="BJ Female Chart Analysis — 7th House Priority: "
             "For female natives, 7th house = nature of husband. "
@@ -834,7 +834,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX067", source="BrihatJataka", chapter="Ch.20", school="varahamihira",
+        rule_id="BJX067", source="Brihat Jataka", chapter="Ch.20", school="varahamihira",
         category="female_chart",
         description="BJ Female Chart — Chastity/Virtue Indicators: "
             "Venus and Moon strong without malefic affliction = virtuous and faithful. "
@@ -846,7 +846,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX068", source="BrihatJataka", chapter="Ch.21", school="varahamihira",
+        rule_id="BJX068", source="Brihat Jataka", chapter="Ch.21", school="varahamihira",
         category="female_chart",
         description="BJ Female Chart — Widowhood Indicators: "
             "7th lord in 6th/8th/12th with no benefic relief. "
@@ -858,7 +858,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX069", source="BrihatJataka", chapter="Ch.21", school="varahamihira",
+        rule_id="BJX069", source="Brihat Jataka", chapter="Ch.21", school="varahamihira",
         category="female_chart",
         description="BJ Female Chart — Children Analysis: "
             "5th house and 5th lord + Jupiter strength = number and quality of children. "
@@ -873,7 +873,7 @@ _RULES = [
     # CH.22-23: LONGEVITY AND DEATH
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX070", source="BrihatJataka", chapter="Ch.22", school="varahamihira",
+        rule_id="BJX070", source="Brihat Jataka", chapter="Ch.22", school="varahamihira",
         category="longevity",
         description="BJ Longevity Calculation Method: Varahamihira's system uses 3 factors: "
             "Lagna lord, 8th lord, and Saturn — their combined strength determines longevity group. "
@@ -885,7 +885,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX071", source="BrihatJataka", chapter="Ch.22", school="varahamihira",
+        rule_id="BJX071", source="Brihat Jataka", chapter="Ch.22", school="varahamihira",
         category="longevity",
         description="BJ Pindayu Method (Longevity from Planet Degrees): "
             "Each planet contributes years based on its degree position in sign. "
@@ -896,7 +896,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX072", source="BrihatJataka", chapter="Ch.22", school="varahamihira",
+        rule_id="BJX072", source="Brihat Jataka", chapter="Ch.22", school="varahamihira",
         category="longevity",
         description="BJ Amsayu Method (Navamsha longevity): "
             "Longevity calculated from Navamsha positions. "
@@ -907,7 +907,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX073", source="BrihatJataka", chapter="Ch.23", school="varahamihira",
+        rule_id="BJX073", source="Brihat Jataka", chapter="Ch.23", school="varahamihira",
         category="death_analysis",
         description="BJ Death Indicators — Type of Death: "
             "Sun associated with death markers: death from fevers, fire, weapons. "
@@ -922,7 +922,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX074", source="BrihatJataka", chapter="Ch.23", school="varahamihira",
+        rule_id="BJX074", source="Brihat Jataka", chapter="Ch.23", school="varahamihira",
         category="death_analysis",
         description="BJ Maraka Dasha (Death-inflicting period): "
             "2nd and 7th lords are primary Marakas. "
@@ -937,7 +937,7 @@ _RULES = [
     # CH.24: DASHA SYSTEM (BJ FORMULATION)
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX075", source="BrihatJataka", chapter="Ch.24", school="varahamihira",
+        rule_id="BJX075", source="Brihat Jataka", chapter="Ch.24", school="varahamihira",
         category="dasha",
         description="BJ Dasha Phala (Period Results — Varahamihira's view): "
             "During a planet's dasha: the house it lords + house it occupies both activated. "
@@ -949,7 +949,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX076", source="BrihatJataka", chapter="Ch.24", school="varahamihira",
+        rule_id="BJX076", source="Brihat Jataka", chapter="Ch.24", school="varahamihira",
         category="dasha",
         description="BJ Antardasha (Sub-period) Logic: "
             "During a planet's antardasha within a mahadasha: "
@@ -966,7 +966,7 @@ _RULES = [
     # CH.25: TRANSITS (GOCHARA) — BJ FORMULATION
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX077", source="BrihatJataka", chapter="Ch.25", school="varahamihira",
+        rule_id="BJX077", source="Brihat Jataka", chapter="Ch.25", school="varahamihira",
         category="transit",
         description="BJ Gochara (Transit) Principles: Transits measured from natal Moon sign. "
             "Jupiter transit favorable in: 2nd, 5th, 7th, 9th, 11th from natal Moon. "
@@ -977,7 +977,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX078", source="BrihatJataka", chapter="Ch.25", school="varahamihira",
+        rule_id="BJX078", source="Brihat Jataka", chapter="Ch.25", school="varahamihira",
         category="transit",
         description="BJ Saturn Transit (Sade Sati - Varahamihira's formulation): "
             "Saturn transiting 12th, 1st, 2nd from natal Moon = Sade Sati (7.5 years). "
@@ -988,7 +988,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX079", source="BrihatJataka", chapter="Ch.25", school="varahamihira",
+        rule_id="BJX079", source="Brihat Jataka", chapter="Ch.25", school="varahamihira",
         category="transit",
         description="BJ Mars Transit Vedha: Vedha (obstruction) principle — certain transits block others. "
             "Mars in 3rd (favorable) is blocked if Mars is simultaneously in 12th from Moon. "
@@ -999,7 +999,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX080", source="BrihatJataka", chapter="Ch.25", school="varahamihira",
+        rule_id="BJX080", source="Brihat Jataka", chapter="Ch.25", school="varahamihira",
         category="transit",
         description="BJ Double Transit (Varahamihira's Emphasis): "
             "When Jupiter and Saturn simultaneously transit beneficial positions from natal Moon, "
@@ -1015,7 +1015,7 @@ _RULES = [
     # ADDITIONAL BJ UNIQUE RULES (BJX081–120)
     # ══════════════════════════════════════════════════════════════════════════
     RuleRecord(
-        rule_id="BJX081", source="BrihatJataka", chapter="Ch.11", school="varahamihira",
+        rule_id="BJX081", source="Brihat Jataka", chapter="Ch.11", school="varahamihira",
         category="yoga",
         description="BJ Unique — Chandra Yoga: Moon in Kendra from lagna with benefic aspects "
             "and no malefic. Native is popular, prosperous, emotionally stable, and long-lived. "
@@ -1025,7 +1025,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX082", source="BrihatJataka", chapter="Ch.11", school="varahamihira",
+        rule_id="BJX082", source="Brihat Jataka", chapter="Ch.11", school="varahamihira",
         category="yoga",
         description="BJ Unique — Sunapha/Anapha (Varahamihira's version): "
             "Planet in 2nd from Moon (Sunapha): native is wealthy and self-made. "
@@ -1036,7 +1036,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX083", source="BrihatJataka", chapter="Ch.6", school="varahamihira",
+        rule_id="BJX083", source="Brihat Jataka", chapter="Ch.6", school="varahamihira",
         category="graha_strength",
         description="BJ Ishta/Kashta Phala (Benefit/Harm): "
             "Ishta Phala = planet's benefic power (exaltation, waxing, friendly aspects). "
@@ -1047,7 +1047,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX084", source="BrihatJataka", chapter="Ch.7", school="varahamihira",
+        rule_id="BJX084", source="Brihat Jataka", chapter="Ch.7", school="varahamihira",
         category="graha_strength",
         description="BJ Dig Bala (Directional Strength — Varahamihira confirms): "
             "Sun/Mars strongest in 10th (south direction). "
@@ -1060,7 +1060,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX085", source="BrihatJataka", chapter="Ch.8", school="varahamihira",
+        rule_id="BJX085", source="Brihat Jataka", chapter="Ch.8", school="varahamihira",
         category="varga",
         description="BJ Hora Chart Results: Native born in Sun's Hora = wealth through self, "
             "career in government, gold/copper dealings. "
@@ -1071,7 +1071,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX086", source="BrihatJataka", chapter="Ch.9", school="varahamihira",
+        rule_id="BJX086", source="Brihat Jataka", chapter="Ch.9", school="varahamihira",
         category="varga",
         description="BJ Drekkana Results: 1st Drekkana of a sign = physical/material manifestation. "
             "2nd Drekkana = emotional/psychological themes. "
@@ -1082,7 +1082,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX087", source="BrihatJataka", chapter="Ch.10", school="varahamihira",
+        rule_id="BJX087", source="Brihat Jataka", chapter="Ch.10", school="varahamihira",
         category="varga",
         description="BJ Navamsha Lagna Importance: Navamsha lagna (D9 lagna) = second lagna. "
             "Planet in D9 lagna strong = excellent second half of life. "
@@ -1093,7 +1093,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX088", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX088", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Abhijit Nakshatra: 28th nakshatra (not in standard 27) within Uttara Ashadha. "
             "Native born in Abhijit: winner in all endeavors, defeats enemies. "
@@ -1103,7 +1103,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX089", source="BrihatJataka", chapter="Ch.14", school="varahamihira",
+        rule_id="BJX089", source="Brihat Jataka", chapter="Ch.14", school="varahamihira",
         category="graha_bhava",
         description="BJ Venus in Houses: Venus in 1st = beautiful, attractive, artistic. "
             "Venus in 4th = luxury home, beautiful mother, many vehicles. "
@@ -1115,7 +1115,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX090", source="BrihatJataka", chapter="Ch.14", school="varahamihira",
+        rule_id="BJX090", source="Brihat Jataka", chapter="Ch.14", school="varahamihira",
         category="graha_bhava",
         description="BJ Mercury in Houses: Mercury in 1st = intelligent, communicative. "
             "Mercury in 4th = educated mother, intellectual home. "
@@ -1127,7 +1127,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX091", source="BrihatJataka", chapter="Ch.13", school="varahamihira",
+        rule_id="BJX091", source="Brihat Jataka", chapter="Ch.13", school="varahamihira",
         category="graha_rashi",
         description="BJ Mars in Signs: Mars in Aries/Scorpio (own) = courageous, physical prowess. "
             "Mars in Capricorn (exalted) = disciplined military authority. "
@@ -1138,7 +1138,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX092", source="BrihatJataka", chapter="Ch.13", school="varahamihira",
+        rule_id="BJX092", source="Brihat Jataka", chapter="Ch.13", school="varahamihira",
         category="graha_rashi",
         description="BJ Venus in Signs: Venus in Pisces (exalted) = maximum beauty, wealth, "
             "and artistic expression. Venus in Virgo (debilitated) = service-oriented relationships, "
@@ -1148,7 +1148,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX093", source="BrihatJataka", chapter="Ch.13", school="varahamihira",
+        rule_id="BJX093", source="Brihat Jataka", chapter="Ch.13", school="varahamihira",
         category="graha_rashi",
         description="BJ Mercury in Signs: Mercury in Virgo (exalted/own) = maximum analytical power, "
             "perfectionism. Mercury in Pisces (debilitated) = intuitive over analytical, "
@@ -1158,7 +1158,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX094", source="BrihatJataka", chapter="Ch.22", school="varahamihira",
+        rule_id="BJX094", source="Brihat Jataka", chapter="Ch.22", school="varahamihira",
         category="longevity",
         description="BJ Naisargika Ayurdaya (Natural Life Spans by Lagna): "
             "Movable lagna (Aries/Cancer/Libra/Capricorn): medium life tendency. "
@@ -1169,7 +1169,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX095", source="BrihatJataka", chapter="Ch.25", school="varahamihira",
+        rule_id="BJX095", source="Brihat Jataka", chapter="Ch.25", school="varahamihira",
         category="transit",
         description="BJ Sun Transit: Sun in favorable transit (3rd, 6th, 10th, 11th from Moon) = "
             "authority, career advancement, father's health good. "
@@ -1180,7 +1180,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX096", source="BrihatJataka", chapter="Ch.25", school="varahamihira",
+        rule_id="BJX096", source="Brihat Jataka", chapter="Ch.25", school="varahamihira",
         category="transit",
         description="BJ Moon Transit: Moon transiting favorable positions from Moon (1st, 3rd, 6th, "
             "7th, 10th, 11th) = mental peace, good relationships. "
@@ -1190,7 +1190,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX097", source="BrihatJataka", chapter="Ch.24", school="varahamihira",
+        rule_id="BJX097", source="Brihat Jataka", chapter="Ch.24", school="varahamihira",
         category="dasha",
         description="BJ Special Dasha Rule — Retrograde Planet Dasha: "
             "Retrograde planet's dasha gives results related to the house it's in "
@@ -1201,7 +1201,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX098", source="BrihatJataka", chapter="Ch.24", school="varahamihira",
+        rule_id="BJX098", source="Brihat Jataka", chapter="Ch.24", school="varahamihira",
         category="dasha",
         description="BJ Combust Planet Dasha: "
             "During the dasha of a combust planet, significations of that planet are suppressed. "
@@ -1212,7 +1212,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX099", source="BrihatJataka", chapter="Ch.3", school="varahamihira",
+        rule_id="BJX099", source="Brihat Jataka", chapter="Ch.3", school="varahamihira",
         category="aspect_rule",
         description="BJ Rashi Drishti (Sign Aspects): All movable signs aspect fixed signs except adjacent. "
             "All fixed signs aspect dual signs except adjacent. "
@@ -1224,7 +1224,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX100", source="BrihatJataka", chapter="Ch.5", school="varahamihira",
+        rule_id="BJX100", source="Brihat Jataka", chapter="Ch.5", school="varahamihira",
         category="bhava_signification",
         description="BJ 3rd House (Varahamihira's unique additions): "
             "Valor (Parakrama), younger siblings, short journeys, physical strength. "
@@ -1235,7 +1235,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX101", source="BrihatJataka", chapter="Ch.5", school="varahamihira",
+        rule_id="BJX101", source="Brihat Jataka", chapter="Ch.5", school="varahamihira",
         category="bhava_signification",
         description="BJ 6th House (Varahamihira's version): Enemies, wounds from battle, "
             "step-mother, maternal uncle. "
@@ -1246,7 +1246,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX102", source="BrihatJataka", chapter="Ch.5", school="varahamihira",
+        rule_id="BJX102", source="Brihat Jataka", chapter="Ch.5", school="varahamihira",
         category="bhava_signification",
         description="BJ 9th House (Varahamihira): Dharma, pilgrimages, father, grandchildren. "
             "Unique BJ: 9th represents the king's favor and special divine grace. "
@@ -1256,7 +1256,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX103", source="BrihatJataka", chapter="Ch.5", school="varahamihira",
+        rule_id="BJX103", source="Brihat Jataka", chapter="Ch.5", school="varahamihira",
         category="bhava_signification",
         description="BJ 11th House: Income, gains, elder siblings, success in wishes, left ear. "
             "Varahamihira uniquely emphasizes: 11th also shows the native's potential for "
@@ -1266,7 +1266,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX104", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX104", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra — Ardra (6): Born in Ardra: ungrateful, proud, causing suffering, "
             "engaged in cruel acts. Rahu ruled. "
@@ -1277,7 +1277,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX105", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX105", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra — Hasta (13): Born in Hasta: skillful hands, industrious, "
             "fond of gambling, thievery or trade (same skills), brave, shameless. "
@@ -1287,7 +1287,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX106", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX106", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra — Chitra (14): Born in Chitra: beautiful ornaments and clothes, "
             "bright eyes, charming, many wives/partners. "
@@ -1297,7 +1297,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX107", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX107", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra — Moola (19): Born in Moola: wealthy, happy, virtuous, "
             "but causes trouble to parents (especially father). "
@@ -1307,7 +1307,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX108", source="BrihatJataka", chapter="Ch.12", school="varahamihira",
+        rule_id="BJX108", source="Brihat Jataka", chapter="Ch.12", school="varahamihira",
         category="nakshatra",
         description="BJ Nakshatra — Shatabhisha (24): Born in Shatabhisha: truthful, controlled, "
             "sorrowful, thoughtful, fond of solitude. "
@@ -1318,7 +1318,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX109", source="BrihatJataka", chapter="Ch.6", school="varahamihira",
+        rule_id="BJX109", source="Brihat Jataka", chapter="Ch.6", school="varahamihira",
         category="graha_strength",
         description="BJ Planet in Own Nakshatra: A planet transiting or placed in its own nakshatra "
             "(the nakshatra it rules in the Vimshottari sequence) gains extra power. "
@@ -1328,7 +1328,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX110", source="BrihatJataka", chapter="Ch.11", school="varahamihira",
+        rule_id="BJX110", source="Brihat Jataka", chapter="Ch.11", school="varahamihira",
         category="yoga",
         description="BJ Budha Yoga (not Budhaditya): Mercury in Kendra with Jupiter — "
             "native is a great intellectual, advisor to rulers, mathematician. "
@@ -1338,7 +1338,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX111", source="BrihatJataka", chapter="Ch.11", school="varahamihira",
+        rule_id="BJX111", source="Brihat Jataka", chapter="Ch.11", school="varahamihira",
         category="yoga",
         description="BJ Shukra-Kuja Yoga: Venus and Mars conjunct or in mutual aspect. "
             "Native is passionate, romantic, loves fine arts and sports simultaneously. "
@@ -1348,7 +1348,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX112", source="BrihatJataka", chapter="Ch.16", school="varahamihira",
+        rule_id="BJX112", source="Brihat Jataka", chapter="Ch.16", school="varahamihira",
         category="physical_characteristics",
         description="BJ Sign-Based Physical Characteristics (continued): "
             "Libra lagna: medium height, graceful, artistic features. "
@@ -1362,7 +1362,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX113", source="BrihatJataka", chapter="Ch.17", school="varahamihira",
+        rule_id="BJX113", source="Brihat Jataka", chapter="Ch.17", school="varahamihira",
         category="physical_characteristics",
         description="BJ Height and Build: Movable sign lagna = medium height, proportionate build. "
             "Fixed sign lagna = stocky, sturdy build. "
@@ -1374,7 +1374,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX114", source="BrihatJataka", chapter="Ch.18", school="varahamihira",
+        rule_id="BJX114", source="Brihat Jataka", chapter="Ch.18", school="varahamihira",
         category="wealth",
         description="BJ Varahamihira on Inheritance: 8th house and its lord show inheritance potential. "
             "Strong 8th lord in 2nd = substantial inheritance. "
@@ -1385,7 +1385,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX115", source="BrihatJataka", chapter="Ch.19", school="varahamihira",
+        rule_id="BJX115", source="Brihat Jataka", chapter="Ch.19", school="varahamihira",
         category="wealth",
         description="BJ Varahamihira on Land and Real Estate: "
             "Mars and 4th house show land/property. "
@@ -1397,7 +1397,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX116", source="BrihatJataka", chapter="Ch.20", school="varahamihira",
+        rule_id="BJX116", source="Brihat Jataka", chapter="Ch.20", school="varahamihira",
         category="female_chart",
         description="BJ Female Chart — Marriage Timing: "
             "7th lord's position from Venus determines age of marriage. "
@@ -1409,7 +1409,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX117", source="BrihatJataka", chapter="Ch.22", school="varahamihira",
+        rule_id="BJX117", source="Brihat Jataka", chapter="Ch.22", school="varahamihira",
         category="longevity",
         description="BJ Longevity Reduction Factors: Each of these reduces computed longevity: "
             "Waning Moon = 25% reduction. Combust planets = 10% per planet. "
@@ -1420,7 +1420,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX118", source="BrihatJataka", chapter="Ch.23", school="varahamihira",
+        rule_id="BJX118", source="Brihat Jataka", chapter="Ch.23", school="varahamihira",
         category="death_analysis",
         description="BJ Death Place: "
             "Sun = death in government buildings, open places. "
@@ -1435,7 +1435,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX119", source="BrihatJataka", chapter="Ch.24", school="varahamihira",
+        rule_id="BJX119", source="Brihat Jataka", chapter="Ch.24", school="varahamihira",
         category="dasha",
         description="BJ Dasha of Exalted Planet: Exalted planet's dasha = maximum benefic results "
             "in that planet's natural significations. "
@@ -1446,7 +1446,7 @@ _RULES = [
         implemented=False,
     ),
     RuleRecord(
-        rule_id="BJX120", source="BrihatJataka", chapter="Ch.1", school="varahamihira",
+        rule_id="BJX120", source="Brihat Jataka", chapter="Ch.1", school="varahamihira",
         category="graha_nature",
         description="Varahamihira's Introduction to Jyotisha: "
             "Horoscopy (Jataka) is the branch of Jyotisha dealing with individual birth charts. "
