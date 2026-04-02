@@ -111,7 +111,6 @@ b.add(
 # v.2c: Lagna lord debilitated/combust/enemy sign → diseases
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 1, "house": "any"},
         {"type": "planet_dignity", "planet": "lord_of_1", "dignity": "debilitated"},
     ],
     signal_group="lagna_lord_debilitated_disease",
