@@ -1061,17 +1061,15 @@ def compute_one_chart(birth_data: dict) -> dict | None:
             birth_data["tz_offset"],
         )
 
-        # Convert local time to UTC for JD — handle date rollover
-        local_hour = birth_data["hour"]
-        tz_offset = birth_data["tz_offset"]
-        # Use JD arithmetic to avoid manual date rollover bugs
-        jd_local_noon = drik.swe.julday(
+        # PyJHora converts JD to UTC internally (drik.py line 256:
+        # jd_utc = jd - place.timezone / 24), so pass LOCAL time JD.
+        # Do NOT subtract tz_offset here — that would double-correct.
+        jd = drik.swe.julday(
             birth_data["year"],
             birth_data["month"],
             birth_data["day"],
-            0.0,
+            birth_data["hour"],
         )
-        jd = jd_local_noon + (local_hour - tz_offset) / 24.0
 
         # Rasi chart (D1)
         chart = rasi_chart(jd, place)
