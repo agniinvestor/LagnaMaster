@@ -74,7 +74,6 @@ b.add(
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 3, "house": "any"},
         {"type": "planet_dignity", "planet": "lord_of_3", "dignity": "weak"},
     ],
     signal_group="h3_lord_malefic_coborn_death",
@@ -223,7 +222,7 @@ b.add(
         "Santhanam: 12 = indicative number. Mars exalted + Jupiter company "
         "= Jupiter in fall. Some coborn die due to Jupiter's debilitation."
     ),
-    modifiers=[{"condition": "jupiter_in_company_of_exalted_mars_may_itself_be_in_debilitation", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[],
 )
 
 # ═══ v.12-13: Seven co-born ══════════════════════════════════════════════════
@@ -325,8 +324,10 @@ b.add(
 
 # v.3 gap: Universal relative-harm principle — elder siblings
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 11, "house": "any"},
-                {"type": "planet_dignity", "planet": "lord_of_11", "dignity": "weak"}],
+    conditions=[
+        {"type": "planet_dignity", "planet": "lord_of_11", "dignity": "weak"},
+        {"type": "planets_conjunct", "planets": ["Jupiter", "lord_of_11"]},
+    ],
     entity_target="siblings",
     signal_group="jupiter_h11_lord_malefic_elder_harm",
     direction="unfavorable", intensity="moderate", domains=["longevity"],
@@ -335,13 +336,15 @@ b.add(
     verse_ref="Ch.14 v.3",
     commentary_context="Santhanam: Jupiter + 11th lord together in malefic sign or with malefic → elder siblings harmed. Universal principle applied.",
     description="Jupiter + 11th lord in malefic sign or with malefic: elder siblings harmed.",
-    modifiers=[{"condition": "jupiter_conjunct_11th_lord_in_malefic_sign", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[],
     concordance_texts=["Saravali"])
 
 # v.3 gap: Universal relative-harm principle — spouse
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 7, "house": "any"},
-                {"type": "planet_dignity", "planet": "lord_of_7", "dignity": "weak"}],
+    conditions=[
+        {"type": "planet_dignity", "planet": "lord_of_7", "dignity": "weak"},
+        {"type": "planets_conjunct", "planets": ["Venus", "lord_of_7"]},
+    ],
     entity_target="spouse",
     signal_group="venus_h7_lord_malefic_spouse_harm",
     direction="unfavorable", intensity="moderate", domains=["marriage", "longevity"],
@@ -350,12 +353,14 @@ b.add(
     verse_ref="Ch.14 v.3",
     commentary_context="Santhanam: Venus + 7th lord in malefic sign or with malefic → spouse harmed.",
     description="Venus + 7th lord in malefic sign or with malefic: spouse harmed.",
-    modifiers=[{"condition": "venus_conjunct_7th_lord_in_malefic_sign", "effect": "conditionalizes", "strength": "strong"}])
+    modifiers=[])
 
 # v.3 gap: Universal relative-harm principle — father
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
-                {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "weak"}],
+    conditions=[
+        {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "weak"},
+        {"type": "planets_conjunct", "planets": ["Sun", "lord_of_9"]},
+    ],
     entity_target="father",
     signal_group="sun_h9_lord_malefic_father_harm",
     direction="unfavorable", intensity="moderate", domains=["longevity"],
@@ -364,12 +369,14 @@ b.add(
     verse_ref="Ch.14 v.3",
     commentary_context="Santhanam: Sun + 9th lord in malefic sign or with malefic → father harmed.",
     description="Sun + 9th lord in malefic sign or with malefic: father harmed.",
-    modifiers=[{"condition": "sun_conjunct_9th_lord_in_malefic_sign", "effect": "conditionalizes", "strength": "strong"}])
+    modifiers=[])
 
 # v.3 gap: Universal relative-harm principle — mother
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 4, "house": "any"},
-                {"type": "planet_dignity", "planet": "lord_of_4", "dignity": "weak"}],
+    conditions=[
+        {"type": "planet_dignity", "planet": "lord_of_4", "dignity": "weak"},
+        {"type": "planets_conjunct", "planets": ["Moon", "lord_of_4"]},
+    ],
     entity_target="mother",
     signal_group="moon_h4_lord_malefic_mother_harm",
     direction="unfavorable", intensity="moderate", domains=["longevity"],
@@ -378,7 +385,7 @@ b.add(
     verse_ref="Ch.14 v.3",
     commentary_context="Santhanam: Moon + 4th lord in malefic sign or with malefic → mother harmed.",
     description="Moon + 4th lord in malefic sign or with malefic: mother harmed.",
-    modifiers=[{"condition": "moon_conjunct_4th_lord_in_malefic_sign", "effect": "conditionalizes", "strength": "strong"}])
+    modifiers=[])
 
 # v.5-6 gap: Venus+7th lord in 8th → short married life
 b.add(
