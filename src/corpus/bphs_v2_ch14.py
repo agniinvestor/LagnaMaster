@@ -75,6 +75,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_dignity", "planet": "lord_of_3", "dignity": "weak"},
+        {"type": "planets_conjunct", "planets": ["Mars", "lord_of_3"]},
     ],
     signal_group="h3_lord_malefic_coborn_death",
     direction="unfavorable", intensity="strong", domains=["longevity"],
@@ -106,8 +107,12 @@ b.add(
 
 # ═══ v.4-4½: Female and male co-born ═════════════════════════════════════════
 
+# NOTE: Verse says "female planet" not "benefic". No planet-gender primitive
+# exists yet. Using Venus in 3rd as primary female-planet condition. Moon is
+# the other female planet but has its own rule (BPHS1408). Governance backlog:
+# consider adding planet_gender primitive for male/female/neutral classification.
 b.add(
-    conditions=[{"type": "planet_in_house", "planet": "any_benefic", "house": 3}],
+    conditions=[{"type": "planet_in_house", "planet": "Venus", "house": 3}],
     signal_group="h3_female_planet_sisters",
     direction="neutral", intensity="moderate", domains=["progeny"],
     predictions=[
@@ -122,7 +127,7 @@ b.add(
     commentary_context=(
         "Santhanam notes: Saturn/Mercury neutral, Rahu/Ketu shadowy. For "
         "sex: Saturn/Rahu = male, Mercury/Ketu = female. Odd signs = male, "
-        "even signs = female."
+        "even signs = female. Venus and Moon are primary female planets."
     ),
     prediction_type="trait",
 )
@@ -196,7 +201,7 @@ b.add(
         "Mercury in 3rd + 3rd lord and Moon together + Mars joins Saturn: "
         "elder sister born, younger brothers die, third brother dies."
     ),
-    commentary_context="Santhanam: 'Karaka' in sloka 7 = Mars, not Jupiter (per sloka 11).",
+    commentary_context="Santhanam: 'Karaka' in sloka 7 = Mars, not Jupiter (per sloka 11). Text does not restrict Mars+Saturn conjunction to 3rd house specifically — encoded as conjunction anywhere per source fidelity.",
 )
 
 # v.7-11b: 3rd lord exalted in trine + Jupiter → 12 total co-born
@@ -414,15 +419,18 @@ b.add(
 
 # v.12-13 gap: Moon alone + Venus aspect → younger sisters
 b.add(
-    conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 3}],
+    conditions=[
+        {"type": "planet_in_house", "planet": "Moon", "house": 3},
+        {"type": "planet_aspecting", "planet": "Venus", "house": 3},
+    ],
     signal_group="moon_h3_venus_aspect_sisters",
     direction="neutral", intensity="moderate", domains=["progeny"],
     predictions=[{"entity": "siblings", "claim": "younger_sisters_indicated",
                   "domain": "progeny", "direction": "neutral", "magnitude": 0.5}],
     verse_ref="Ch.14 v.12-13",
-    commentary_context="Moon alone in 3rd + male planet aspect → younger brothers; Venus aspect → younger sisters.",
+    commentary_context="Moon alone in 3rd + Venus aspect → younger sisters. Without Venus aspect and with male planet aspect → younger brothers instead.",
     description="Moon alone in 3rd with Venus aspect: younger sisters.",
-    modifiers=[{"condition": "venus_aspecting_3rd", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[],
     prediction_type="trait")
 
 # v.14 gap: Mars in 3rd → adverse on native's character
