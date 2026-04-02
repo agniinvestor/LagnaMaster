@@ -142,7 +142,6 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Jupiter", "house": 2},
-        {"type": "lord_in_house", "lord_of": 2, "house": "any"},
     ],
     signal_group="jupiter_h2_wealth",
     direction="favorable", intensity="strong",
@@ -202,7 +201,7 @@ b.add(
         "7th, 10th, 5th or 9th will also lead to financial gains."
     ),
     tags=["h2_lord", "h11_lord", "exchange", "parivartana", "wealth"],
-    modifiers=[{"condition": "2nd_and_11th_lords_conjunct_in_kendra_or_trikona_also_gives_wealth", "effect": "amplifies", "strength": "moderate"}],
+    modifiers=[],
 )
 
 # ═════════════════════════════════════════════════════════════════════════
@@ -280,7 +279,6 @@ b.add(
 # v.6-7b: Both lords combust → beg for food
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 2, "house": "any"},
         {"type": "planet_dignity", "planet": "lord_of_2", "dignity": "weak"},
     ],
     signal_group="h2_lord_combust_begging",
@@ -362,6 +360,8 @@ b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Jupiter", "house": 11},
         {"type": "planet_in_house", "planet": "Venus", "house": 2},
+        {"type": "planet_in_house", "planet": "any_benefic", "house": 12},
+        {"type": "planets_conjunct", "planets": ["lord_of_2", "any_benefic"]},
     ],
     signal_group="jupiter_h11_venus_h2_charity",
     direction="favorable", intensity="moderate",
@@ -377,10 +377,7 @@ b.add(
         "12th while the 2nd lord is conjunct a benefic: there will be "
         "expenses on religious or charitable grounds."
     ),
-    modifiers=[
-        {"condition": "benefic_in_12th", "effect": "amplifies", "strength": "moderate"},
-        {"condition": "h2_lord_conjunct_benefic", "effect": "amplifies", "strength": "moderate"},
-    ],
+    modifiers=[],
     tags=["jupiter", "venus", "h11", "h2", "charity", "religion"],
 )
 
@@ -390,7 +387,6 @@ b.add(
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 2, "house": "any"},
         {"type": "planet_dignity", "planet": "lord_of_2", "dignity": "exalted"},
     ],
     signal_group="h2_lord_exalted_fame",
@@ -426,8 +422,8 @@ b.add(
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 2, "house": "any"},
         {"type": "planet_dignity", "planet": "lord_of_2", "dignity": "strong"},
+        {"type": "planets_conjunct", "planets": ["lord_of_2", "any_benefic"]},
     ],
     signal_group="h2_lord_paravatamsa_wealth",
     direction="favorable", intensity="strong",
@@ -457,10 +453,7 @@ b.add(
         "all kinds."
     ),
     cross_chapter_refs=["Ch.6 Sixteen Divisions", "Ch.7 Divisional Consideration"],
-    modifiers=[
-        {"condition": "conjunct_benefic", "effect": "amplifies", "strength": "moderate"},
-        {"condition": "in_paravatamsa_or_higher", "effect": "amplifies", "strength": "strong"},
-    ],
+    modifiers=[],
     tags=["h2_lord", "paravatamsa", "varga", "effortless", "wealth"],
 )
 
@@ -471,7 +464,6 @@ b.add(
 # v.12a: 2nd lord strong → beautiful eyes
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 2, "house": "any"},
         {"type": "planet_dignity", "planet": "lord_of_2", "dignity": "strong"},
     ],
     signal_group="h2_lord_strong_eyes",
@@ -542,6 +534,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "any_malefic", "house": 2},
+        {"type": "planets_conjunct", "planets": ["lord_of_2", "any_malefic"]},
     ],
     signal_group="h2_malefic_untruthful",
     direction="unfavorable", intensity="moderate",
@@ -567,10 +560,7 @@ b.add(
         "is in affliction so related, gastric troubles will come to "
         "pass."
     ),
-    modifiers=[
-        {"condition": "h2_lord_also_conjunct_malefic", "effect": "amplifies",
-         "strength": "moderate"},
-    ],
+    modifiers=[],
     tags=["malefic", "h2", "untruth", "windy_disease", "gastric"],
     prediction_type="trait",
 )
@@ -597,7 +587,7 @@ b.add(
     commentary_context="Santhanam: Whether or not Jupiter owns the 2nd, if he is conjunct Mars, wealth will be acquired — house occupied by them not standing for consideration.",
     description="Jupiter conjunct Mars in any house: wealth acquired. House position irrelevant.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "house_occupied_by_them_not_relevant_only_conjunction_matters", "effect": "conditionalizes", "strength": "moderate"}])
+    modifiers=[])
 
 # ═══ v.4 MISSING: 2nd + 11th lords joining in kendra/trikona → gains
 b.add(
