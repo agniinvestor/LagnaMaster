@@ -72,4 +72,29 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "planet_in_house", "planet_in_sign", "planets_conjunct_in_house",
     "planets_conjunct", "lord_in_house", "lord_in_sign",
     "planet_aspecting", "planet_dignity",
+    # New primitives (S313 governance)
+    "planet_in_sign_type",
+    "planet_in_derived_house",
+    "upagraha_in_house",
+})
+
+VALID_SIGN_TYPES = frozenset({
+    "movable", "fixed", "dual",
+    "fire", "earth", "air", "water",
+    "odd", "even",
+})
+
+VALID_DERIVATIONS = frozenset({
+    "arudha_pada", "upa_pada", "karakamsa",
+    "navamsa_lagna", "hora_lagna", "ghati_lagna",
+    "varnada_lagna", "sri_lagna", "indu_lagna", "pranapada_lagna",
+})
+
+VALID_UPAGRAHAS = frozenset({
+    "dhuma", "vyatipata", "paridhi", "chapa", "dhwaja",
+    "gulika", "pranapada", "mandi",
+})
+
+VALID_CONDITION_MODES = frozenset({
+    "occupies", "aspects",
 })
