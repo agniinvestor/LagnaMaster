@@ -44,7 +44,7 @@ VALID_TIMING_TYPES = {
 }
 
 VALID_RELATIONSHIP_TYPES = {
-    "alternative", "addition", "override", "contrary_mirror",
+    "alternative", "addition", "override", "contrary_mirror", "mitigation",
 }
 
 

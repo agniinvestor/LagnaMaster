@@ -65,13 +65,13 @@ VALID_SAFETY_TIERS = frozenset({
 })
 
 VALID_RELATIONSHIP_TYPES = frozenset({
-    "alternative", "addition", "override", "contrary_mirror",
+    "alternative", "addition", "override", "contrary_mirror", "mitigation",
 })
 
 VALID_CONDITION_PRIMITIVES = frozenset({
     "planet_in_house", "planet_in_sign", "planets_conjunct_in_house",
     "planets_conjunct", "lord_in_house", "lord_in_sign",
-    "planet_aspecting", "planet_dignity",
+    "planet_aspecting", "planet_not_aspecting", "planet_dignity",
     # New primitives (S313 governance)
     "planet_in_sign_type",
     "planet_in_derived_house",

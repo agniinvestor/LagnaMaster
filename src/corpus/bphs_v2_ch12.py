@@ -221,7 +221,7 @@ b.add(
         "relief in the course of time can be hoped."
     ),
     concordance_texts=[],
-    rule_relationship={"type": "override", "related_rules": ["BPHS1200"]},
+    rule_relationship={"type": "mitigation", "related_rules": ["BPHS1200"]},
 )
 
 # ═════════════════════════════════════════════════════════════════════════
@@ -230,12 +230,10 @@ b.add(
 # aspected by or conjunct a malefic, being devoid of a benefic's aspect."
 # ═════════════════════════════════════════════════════════════════════════
 
-# NOTE: This rule requires a negative condition ("devoid of benefic aspect")
-# which cannot be expressed with current primitives. The modifier below is a
-# workaround. Governance backlog: add planet_not_aspecting primitive.
 b.add(
     conditions=[
         {"type": "planet_aspecting", "planet": "any_malefic", "house": "moon_position"},
+        {"type": "planet_not_aspecting", "planet": "any_benefic", "house": "moon_position"},
     ],
     signal_group="moon_malefic_no_benefic_health",
     direction="unfavorable", intensity="moderate",
@@ -254,15 +252,11 @@ b.add(
     commentary_context=(
         "No separate Santhanam note for v.3. The verse is self-contained: "
         "Moon or ascendant aspected/conjunct malefic without benefic "
-        "relief = no bodily health. The condition requires BOTH malefic "
-        "influence AND absence of benefic counterbalance. The absence "
-        "of benefic aspect is a co-equal condition, not a cancellation."
+        "relief = no bodily health. Both conditions are co-equal: "
+        "malefic influence present AND benefic counterbalance absent."
     ),
     concordance_texts=["Saravali"],
-    modifiers=[
-        {"condition": "no_benefic_aspect_on_moon_or_ascendant_required",
-         "effect": "conditionalizes", "strength": "strong"},
-    ],
+    modifiers=[],
     exceptions=[],
     tags=["moon", "malefic", "health"],
 )

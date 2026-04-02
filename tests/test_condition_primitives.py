@@ -229,3 +229,28 @@ def test_primary_condition_upagraha():
     r = b.rules()[0]
     assert r.primary_condition["placement_type"] == "upagraha_in_house"
     assert r.primary_condition["planet"] == "dhuma"
+
+
+# ── planet_not_aspecting (negative condition) ────────────────────────────────
+
+def test_not_aspecting_valid_accepted():
+    b = _make_builder()
+    b.add(**_base_add(
+        conditions=[
+            {"type": "planet_aspecting", "planet": "any_malefic", "house": 1},
+            {"type": "planet_not_aspecting", "planet": "any_benefic", "house": 1},
+        ],
+    ))
+    assert len(b.rules()) == 1
+
+
+def test_not_aspecting_in_primitives():
+    from src.corpus.taxonomy import VALID_CONDITION_PRIMITIVES
+    assert "planet_not_aspecting" in VALID_CONDITION_PRIMITIVES
+
+
+# ── mitigation relationship type ─────────────────────────────────────────────
+
+def test_mitigation_in_relationship_types():
+    from src.corpus.taxonomy import VALID_RELATIONSHIP_TYPES
+    assert "mitigation" in VALID_RELATIONSHIP_TYPES
