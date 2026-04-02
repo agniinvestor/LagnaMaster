@@ -34,7 +34,8 @@ def _upa(upagraha: str, house: int, signal: str, direction: str,
          **kwargs) -> None:
     """Helper to add a upagraha-in-house rule with consistent structure."""
     b.add(
-        conditions=[],
+        conditions=[{"type": "upagraha_in_house", "upagraha": upagraha,
+                      "house": house, "mode": "occupies"}],
         signal_group=f"{upagraha}_h{house}_{signal}",
         direction=direction, intensity=intensity,
         domains=domains,
