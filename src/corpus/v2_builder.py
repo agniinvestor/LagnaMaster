@@ -413,6 +413,69 @@ class V2ChapterBuilder:
                     f"use: {sorted(VALID_CONDITION_PRIMITIVES)}"
                 )
 
+        # T1-1 extended: validate new condition primitives' sub-fields
+        for i, cond in enumerate(conditions):
+            ctype = cond.get("type", "")
+
+            if ctype == "planet_in_sign_type":
+                from src.corpus.taxonomy import VALID_SIGN_TYPES
+                st = cond.get("sign_type", "")
+                if not st or st not in VALID_SIGN_TYPES:
+                    errors.append(
+                        f"T1-1: conditions[{i}].sign_type='{st}' not valid — "
+                        f"use: {sorted(VALID_SIGN_TYPES)}"
+                    )
+                if not cond.get("planet"):
+                    errors.append(f"T1-1: conditions[{i}] planet_in_sign_type missing 'planet'")
+
+            elif ctype == "planet_in_derived_house":
+                from src.corpus.taxonomy import VALID_DERIVATIONS, VALID_CONDITION_MODES
+                deriv = cond.get("derivation", "")
+                if not deriv or deriv not in VALID_DERIVATIONS:
+                    errors.append(
+                        f"T1-1: conditions[{i}].derivation='{deriv}' not valid — "
+                        f"use: {sorted(VALID_DERIVATIONS)}"
+                    )
+                offset = cond.get("offset")
+                if not isinstance(offset, int) or not (1 <= offset <= 12):
+                    errors.append(
+                        f"T1-1: conditions[{i}].offset={offset} must be int 1-12"
+                    )
+                if not cond.get("planet"):
+                    errors.append(f"T1-1: conditions[{i}] planet_in_derived_house missing 'planet'")
+                mode = cond.get("mode", "occupies")
+                if mode not in VALID_CONDITION_MODES:
+                    errors.append(
+                        f"T1-1: conditions[{i}].mode='{mode}' not valid — "
+                        f"use: {sorted(VALID_CONDITION_MODES)}"
+                    )
+                # base_house required for house-based derivations
+                _HOUSE_BASED = {"arudha_pada", "upa_pada"}
+                if deriv in _HOUSE_BASED and not isinstance(cond.get("base_house"), int):
+                    errors.append(
+                        f"T1-1: conditions[{i}] derivation='{deriv}' requires base_house (int 1-12)"
+                    )
+
+            elif ctype == "upagraha_in_house":
+                from src.corpus.taxonomy import VALID_UPAGRAHAS, VALID_CONDITION_MODES
+                upa = cond.get("upagraha", "")
+                if not upa or upa not in VALID_UPAGRAHAS:
+                    errors.append(
+                        f"T1-1: conditions[{i}].upagraha='{upa}' not valid — "
+                        f"use: {sorted(VALID_UPAGRAHAS)}"
+                    )
+                house = cond.get("house")
+                if not isinstance(house, int) or not (1 <= house <= 12):
+                    errors.append(
+                        f"T1-1: conditions[{i}].house={house} must be int 1-12"
+                    )
+                mode = cond.get("mode", "occupies")
+                if mode not in VALID_CONDITION_MODES:
+                    errors.append(
+                        f"T1-1: conditions[{i}].mode='{mode}' not valid — "
+                        f"use: {sorted(VALID_CONDITION_MODES)}"
+                    )
+
         # T1-2: Controlled vocabulary — domains, direction, intensity
         for d in domains:
             if d not in VALID_OUTCOME_DOMAINS:
@@ -638,6 +701,9 @@ class V2ChapterBuilder:
         elif ct == "planet_aspecting":
             pc["planet"] = c0.get("planet", "")
             pc["placement_type"] = "aspect_condition"
+        elif ct in ("planet_in_sign_type", "planet_in_derived_house", "upagraha_in_house"):
+            pc["planet"] = c0.get("planet", c0.get("upagraha", "general"))
+            pc["placement_type"] = ct
         else:
             pc["planet"] = c0.get("planet", "general")
             pc["placement_type"] = ct
