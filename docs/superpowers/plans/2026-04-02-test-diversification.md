@@ -391,6 +391,36 @@ class TestDiffField:
         assert v.status == "unclassified_disagreement"
 
 
+class TestCircularDiff:
+    def test_normal_diff(self):
+        from tools.diff_engine_core import _circular_diff
+        assert _circular_diff(100, 102) == pytest.approx(2.0)
+
+    def test_wrap_around_boundary(self):
+        from tools.diff_engine_core import _circular_diff
+        assert _circular_diff(359, 1) == pytest.approx(2.0)
+
+    def test_wrap_around_large(self):
+        from tools.diff_engine_core import _circular_diff
+        assert _circular_diff(1, 359) == pytest.approx(2.0)
+
+    def test_identical(self):
+        from tools.diff_engine_core import _circular_diff
+        assert _circular_diff(180, 180) == pytest.approx(0.0)
+
+
+class TestSchemaValidation:
+    def test_longitude_requires_tolerance(self):
+        from tools.diff_engine_core import validate_schema
+        with pytest.raises(ValueError, match="tolerance"):
+            validate_schema({"f": {"field_type": "longitude"}})
+
+    def test_valid_schema_passes(self):
+        from tools.diff_engine_core import validate_schema
+        validate_schema({"f": {"field_type": "longitude", "tolerance": 0.1}})
+        validate_schema({"g": {"field_type": "categorical"}})
+
+
 class TestDiffCharts:
     def test_fully_identical(self):
         lm = {"lagna_degree": 100.0, "lagna_sign": "Cancer"}
@@ -462,6 +492,12 @@ class Verdict:
     note: str | None = None
 
 
+def _circular_diff(a: float, b: float) -> float:
+    """Angular difference on a 0-360 circle."""
+    d = abs(a - b) % 360
+    return min(d, 360 - d)
+
+
 def diff_field(
     field_name: str,
     lm_value: object,
@@ -499,7 +535,7 @@ def diff_field(
             verdict.note = "NaN value"
             return verdict
 
-        verdict.diff = abs(lm_f - pjh_f)
+        verdict.diff = _circular_diff(lm_f, pjh_f)
         if verdict.diff <= (tolerance or 0.0):
             verdict.status = "agreement"
         else:
@@ -542,6 +578,18 @@ def diff_field(
     return verdict
 
 
+def validate_schema(schema: dict[str, dict]) -> None:
+    """Enforce schema correctness — prevents silent misconfiguration."""
+    for field_name, spec in schema.items():
+        if "field_type" not in spec:
+            raise ValueError(f"Schema field '{field_name}' missing field_type")
+        if spec["field_type"] in ("longitude", "degree") and "tolerance" not in spec:
+            raise ValueError(
+                f"Schema field '{field_name}' (type={spec['field_type']}) "
+                f"requires tolerance"
+            )
+
+
 def diff_charts(
     lm_data: dict,
     pjh_data: dict,
@@ -557,6 +605,7 @@ def diff_charts(
     Returns:
         Dict of field_name → Verdict.
     """
+    validate_schema(schema)
     verdicts = {}
     for field_name, field_def in schema.items():
         lm_val = lm_data.get(field_name)
@@ -752,20 +801,23 @@ def classify_disagreements(
     result = copy.deepcopy(all_verdicts)
     threshold = max(10, int(0.25 * segment_size))
 
-    # Count disagreements per field
-    field_disagree_count: Counter[str] = Counter()
+    # Count disagreements per (field_name, error_signature)
+    pattern_count: Counter[str] = Counter()
     for chart_id, verdicts in all_verdicts.items():
         for field_name, verdict in verdicts.items():
             if verdict.status == "unclassified_disagreement":
-                field_disagree_count[field_name] += 1
+                sig = _error_signature(verdict)
+                pattern_count[sig] += 1
 
     # Reclassify
     for chart_id, verdicts in result.items():
         for field_name, verdict in verdicts.items():
             if verdict.status != "unclassified_disagreement":
                 continue
-            if field_disagree_count[field_name] >= threshold:
+            sig = _error_signature(verdict)
+            if pattern_count[sig] >= threshold:
                 verdict.status = "systematic_disagreement"
+                verdict.pattern_id = sig
             else:
                 verdict.status = "random_disagreement"
 
@@ -1009,15 +1061,17 @@ def compute_one_chart(birth_data: dict) -> dict | None:
             birth_data["tz_offset"],
         )
 
-        # Convert local time to UTC for JD
+        # Convert local time to UTC for JD — handle date rollover
         local_hour = birth_data["hour"]
-        utc_hour = local_hour - birth_data["tz_offset"]
-        jd = drik.swe.julday(
+        tz_offset = birth_data["tz_offset"]
+        # Use JD arithmetic to avoid manual date rollover bugs
+        jd_local_noon = drik.swe.julday(
             birth_data["year"],
             birth_data["month"],
             birth_data["day"],
-            utc_hour,
+            0.0,
         )
+        jd = jd_local_noon + (local_hour - tz_offset) / 24.0
 
         # Rasi chart (D1)
         chart = rasi_chart(jd, place)
@@ -1217,10 +1271,11 @@ CHARTS_PER_LAGNA = 30
 GOLDEN_50_COUNT = 50
 
 # Per-lagna minimum edge-case coverage
+# NOTE: retrograde_present excluded — PyJHora rasi_chart doesn't expose
+# retrograde directly. Will be added when LM computation fills the flag.
 EDGE_MINIMUMS = {
     "lagna_boundary": 2,
     "nakshatra_boundary": 2,
-    "retrograde_present": 2,
     "high_latitude": 1,
     "midnight_window": 1,
 }
@@ -1707,6 +1762,27 @@ def run_pipeline(chart_ids: list[str] | None = None):
     # Classify
     print("Classifying disagreements...")
     classified = classify_disagreements(all_verdicts, segment_size=len(entries))
+
+    # Field-level non-regression check
+    regressions = []
+    for chart_id, verdicts in classified.items():
+        prev_path = RESULTS_DIR / f"{chart_id}.json"
+        if not prev_path.exists():
+            continue
+        prev = json.loads(prev_path.read_text())
+        for fname, v in verdicts.items():
+            prev_v = prev.get("verdicts", {}).get(fname, {})
+            if (prev_v.get("status") == "agreement"
+                    and v.status in ("random_disagreement",
+                                     "unclassified_disagreement")):
+                regressions.append(f"{chart_id}:{fname}")
+    if regressions:
+        print(f"\n❌ REGRESSION: {len(regressions)} previously-agreed fields "
+              f"now disagree:")
+        for r in regressions[:10]:
+            print(f"  {r}")
+        print("Aborting — fix regressions before re-running.")
+        sys.exit(1)
 
     # Write per-chart result files
     for chart_id, verdicts in classified.items():
