@@ -110,3 +110,39 @@ If these keywords are found AND the rule has no corresponding:
 Then flag as: "Commentary contains unencoded condition — review for missing rule or modifier."
 
 This is a BLOCKING check at Step 2B (audit review). Every flagged keyword must be resolved — either a corresponding audit claim exists, or the auditor documents why it is not a separate claim (e.g., "restatement of claim X"). Unresolved flags block encoding.
+
+## Condition vs Modifier vs Exception — Decision Rule
+
+> If the commentary says the condition is **required** for the prediction to hold, it's a **condition**.
+> If the commentary says the condition **strengthens, weakens, or contextualizes** an already-valid prediction, it's a **modifier**.
+> If the commentary says the condition **completely cancels** the prediction, it's an **exception**.
+
+### Mechanical Test
+
+| Question | If yes | If no |
+|----------|--------|-------|
+| "Does the prediction fire WITHOUT this factor?" | modifier | condition |
+| "Does this factor CANCEL the prediction entirely?" | exception | not an exception |
+| "Is this factor REQUIRED by the text (must/necessary/enumerates)?" | condition | use first question |
+
+### Anti-Patterns (DO NOT do these)
+
+- `"house": "any"` — use `planet_in_sign_type` with appropriate `sign_type`
+- Required conditions as modifiers — if commentary says "must" / "necessary" / enumerates as (a)(b)(c), these are conditions
+- Empty `exceptions` when commentary says "nullified" / "cancelled" — encode the cancellation clause
+- `conditions=[]` for upagrahas — use `upagraha_in_house`
+- `conditions=[]` for derived houses — use `planet_in_derived_house`
+
+### Derived House Conditions (Ch.29+)
+
+For rules referencing houses counted from Arudha Pada, Upa Pada, Karakamsa, or other derived points:
+
+```python
+{"type": "planet_in_derived_house", "derivation": "arudha_pada",
+ "base_house": 1, "offset": 7, "planet": "rahu", "mode": "occupies"}
+```
+
+- `derivation`: which derived system (arudha_pada, upa_pada, karakamsa, navamsa_lagna, etc.)
+- `base_house`: which house's pada (1-12). Required for arudha_pada and upa_pada.
+- `offset`: house counted from the derived anchor (1-12)
+- `mode`: "occupies" (default) or "aspects"
