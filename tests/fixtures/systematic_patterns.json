@@ -1,0 +1,35 @@
+[
+  {
+    "pattern_id": "SYS-001",
+    "field": "longitude_rahu",
+    "error_signature": "true_node_vs_mean_node",
+    "frequency": 78,
+    "status": "investigated",
+    "justification": "LagnaMaster uses true node (swe.NODBIT_MEAN not set); PyJHora likely uses mean node. Difference typically 0.3-1.5 degrees.",
+    "source": "Swiss Ephemeris docs: true vs mean node calculation",
+    "reviewed_by": null,
+    "review_date": null
+  },
+  {
+    "pattern_id": "SYS-002",
+    "field": "longitude_ketu",
+    "error_signature": "true_node_vs_mean_node",
+    "frequency": 78,
+    "status": "investigated",
+    "justification": "Same as SYS-001 — Ketu is 180 degrees from Rahu, inherits the same true/mean node discrepancy.",
+    "source": "Swiss Ephemeris docs: true vs mean node calculation",
+    "reviewed_by": null,
+    "review_date": null
+  },
+  {
+    "pattern_id": "SYS-003",
+    "field": "longitude_moon",
+    "error_signature": "moon_precision_diff",
+    "frequency": 67,
+    "status": "unresolved",
+    "justification": "Moon differs by 0.02-0.72 degrees. Possible causes: topocentric vs geocentric correction, ayanamsha precision, or different ephemeris flags.",
+    "source": null,
+    "reviewed_by": null,
+    "review_date": null
+  }
+]
