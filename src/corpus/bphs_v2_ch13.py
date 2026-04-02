@@ -208,6 +208,7 @@ b.add(
 # SLOKA 5: 2nd lord in angle + 11th lord in trine + Jupiter/Venus
 # ═════════════════════════════════════════════════════════════════════════
 
+# v.5a: 2nd lord in angle + 11th lord in trine → wealthy
 b.add(
     conditions=[
         {"type": "lord_in_house", "lord_of": 2, "house": [1, 4, 7, 10]},
@@ -222,23 +223,48 @@ b.add(
     ],
     verse_ref="Ch.13 v.5",
     description=(
-        "2nd lord in an angle while the 11th lord is in a trine thereof, "
-        "aspected by or conjunct Jupiter and Venus: the subject will "
-        "be wealthy."
+        "2nd lord in an angle while the 11th lord is in a trine thereof: "
+        "the subject will be wealthy."
     ),
     commentary_context=(
         "Santhanam notes: The lord of the 2nd should be in the ascendant, "
         "or 4th/7th/10th house. The 11th lord should be in the 5th/9th "
-        "counted from the house occupied by the 2nd lord. Alternatively "
-        "the 2nd lord should be related to Jupiter (and) or Venus by "
-        "conjunction or by aspect. Both the combinations are for "
-        "gaining wealth."
+        "counted from the house occupied by the 2nd lord. This is one of "
+        "two alternative combinations for gaining wealth (see BPHS1307)."
+    ),
+    modifiers=[],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1307"]},
+    tags=["h2_lord", "h11_lord", "wealth"],
+)
+
+# v.5b: 2nd lord aspected/conjunct Jupiter or Venus → wealthy (alternative path)
+b.add(
+    conditions=[
+        {"type": "planets_conjunct", "planets": ["lord_of_2", "Jupiter"]},
+    ],
+    signal_group="h2_lord_jupiter_venus_aspect_wealth",
+    direction="favorable", intensity="strong",
+    domains=["wealth"],
+    predictions=[
+        {"entity": "native", "claim": "wealthy_through_jupiter_venus_relation",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.13 v.5",
+    description=(
+        "Alternatively, the 2nd lord related to Jupiter or Venus by "
+        "conjunction or aspect: the subject will be wealthy."
+    ),
+    commentary_context=(
+        "Santhanam notes: Alternatively the 2nd lord should be related "
+        "to Jupiter (and) or Venus by conjunction or by aspect. Both "
+        "the combinations are for gaining wealth."
     ),
     modifiers=[
-        {"condition": "aspected_by_jupiter_or_venus", "effect": "amplifies",
-         "strength": "moderate"},
+        {"condition": "venus_also_aspects_or_conjuncts_lord_of_2",
+         "effect": "amplifies", "strength": "moderate"},
     ],
-    tags=["h2_lord", "h11_lord", "jupiter", "venus", "wealth"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1306"]},
+    tags=["h2_lord", "jupiter", "venus", "wealth"],
 )
 
 # ═════════════════════════════════════════════════════════════════════════
@@ -306,15 +332,39 @@ b.add(
     ),
     exceptions=["if_2nd_lord_conjunct_yogakaraka"],
     cross_chapter_refs=["Ch.34 Yoga Karakas"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1310"]},
     tags=["h2_lord", "h11_lord", "combust", "begging", "poverty"],
 )
 
-# v.6-7 contrary: yogakaraka conjunction → auspicious (stated in Santhanam notes)
-b.mirror("BPHS1308",
-         description="Contrary: 2nd lord conjunct a Yogakaraka (though malefic by nature) "
-                     "will prove very auspicious for finance. E.g., Mercury (2nd lord) "
-                     "joining Saturn for Taurus lagna makes financial prospects superior.",
-         signal_group="h2_lord_yogakaraka_auspicious")
+# v.6-7 contrary: weak 2nd lord BUT conjunct yogakaraka → auspicious (Santhanam)
+# NOT a mirror — different condition set (yogakaraka conjunction is REQUIRED here)
+b.add(
+    conditions=[
+        {"type": "planet_dignity", "planet": "lord_of_2", "dignity": "weak"},
+        {"type": "planets_conjunct", "planets": ["lord_of_2", "yogakaraka"]},
+    ],
+    signal_group="h2_lord_yogakaraka_auspicious",
+    direction="favorable", intensity="strong",
+    domains=["wealth"],
+    predictions=[
+        {"entity": "native", "claim": "financial_prospects_superior_despite_weak_lord",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.13 v.6-7",
+    description=(
+        "Contrary: 2nd lord conjunct a Yogakaraka (though malefic by nature) "
+        "will prove very auspicious for finance. E.g., Mercury (2nd lord) "
+        "joining Saturn for Taurus lagna makes financial prospects superior."
+    ),
+    commentary_context=(
+        "Santhanam notes: The conjunction of the 2nd lord with a Yogakaraka, "
+        "although a malefic, will not be adverse in the matter of finance. "
+        "On the contrary it will prove very auspicious."
+    ),
+    rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS1308"]},
+    cross_chapter_refs=["Ch.34 Yoga Karakas"],
+    tags=["h2_lord", "yogakaraka", "wealth", "reversal"],
+)
 
 # ═════════════════════════════════════════════════════════════════════════
 # SLOKA 8: Loss of Wealth Through the King
@@ -494,7 +544,7 @@ b.add(
         "fall and the like."
     ),
     concordance_texts=["Saravali"],
-    rule_relationship={"type": "alternative", "related_rules": ["BPHS1314"]},
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1315"]},
     tags=["h2_lord", "eyes", "beauty", "sight"],
     prediction_type="trait",
 )
@@ -566,16 +616,8 @@ b.add(
 )
 
 
-# ═══ v.1-2 MISSING: Jupiter ruling 2nd in 2nd → smooth finances (Scorpio/Aquarius)
-b.add(
-    conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 2}],
-    signal_group="jupiter_rules_h2_in_h2_smooth",
-    direction="favorable", intensity="moderate", domains=["wealth"],
-    predictions=[{"entity": "native", "claim": "financial_aspects_smooth_jupiter_rules_2nd", "domain": "wealth", "direction": "favorable", "magnitude": 0.6}],
-    verse_ref="Ch.13 v.1-2",
-    commentary_context="Santhanam: Jupiter will not be wholly auspicious in 2nd UNLESS he rules it. This applies to Scorpio and Aquarius ascendants only.",
-    description="Jupiter in 2nd AS RULER of 2nd (Scorpio/Aquarius lagna): financial aspects smooth.",
-    lagna_scope=["scorpio", "aquarius"])
+# v.1-2/v.3 combined: Jupiter in 2nd as ruler — covered by BPHS1304 with lagna_scope
+# Removed duplicate BPHS1317 — same condition + lagna_scope as BPHS1304
 
 # ═══ v.3 MISSING: Jupiter conjunct Mars anywhere → wealth
 b.add(
@@ -633,16 +675,29 @@ b.add(
     description="Mercury in 2nd: affects speech more than sight.",
     prediction_type="trait")
 
-# ═══ v.13 MISSING: Saturn/Mercury association → rheumatism
+# ═══ v.13 MISSING: Saturn in 2nd → rheumatism/windy disorders
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 2}],
-    signal_group="saturn_mercury_h2_rheumatism",
+    signal_group="saturn_h2_rheumatism",
     direction="unfavorable", intensity="moderate", domains=["physical_health"],
-    predictions=[{"entity": "native", "claim": "rheumatism_and_windy_disorders", "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5}],
+    predictions=[{"entity": "native", "claim": "rheumatism_and_windy_disorders",
+                   "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5}],
     verse_ref="Ch.13 v.13",
-    commentary_context="Santhanam: If 2nd house or its lord is associated with Saturn or Mercury = rheumatism and such other windy disorders.",
-    description="2nd house or lord with Saturn or Mercury: rheumatism and windy disorders.",
-    modifiers=[{"condition": "mercury_association", "effect": "amplifies", "strength": "moderate"}])
+    commentary_context="Santhanam: If 2nd house or its lord is associated with Saturn = rheumatism and such other windy disorders.",
+    description="Saturn in 2nd or associated with 2nd lord: rheumatism and windy disorders.",
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1324"]})
+
+# ═══ v.13 MISSING: Mercury in 2nd → rheumatism/windy disorders (alternative path)
+b.add(
+    conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 2}],
+    signal_group="mercury_h2_rheumatism",
+    direction="unfavorable", intensity="moderate", domains=["physical_health"],
+    predictions=[{"entity": "native", "claim": "rheumatism_and_windy_disorders",
+                   "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5}],
+    verse_ref="Ch.13 v.13",
+    commentary_context="Santhanam: If 2nd house or its lord is associated with Mercury = rheumatism and such other windy disorders. Mercury is an alternative causal path to Saturn.",
+    description="Mercury in 2nd or associated with 2nd lord: rheumatism and windy disorders.",
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1323"]})
 
 # ═══ v.13 MISSING: Jupiter in affliction → gastric
 b.add(
