@@ -401,6 +401,14 @@ def test_minimum_agreement_coverage():
 
 Priority: ≥ 5 charts = HIGH, < 5 = LOW (unless Phase 1 field → always HIGH).
 
+### 4a-bis. PyJHora Gravity Mitigation
+
+PyJHora is the cross-validation reference, not ground truth. For any persistent random disagreement in **Phase 1 fields** (positions, nakshatras, panchangam):
+- Require at least one external validation source before fixing LM (ephemeris reference table, published chart, independent calculation tool)
+- Document the external source in the bug entry
+
+This prevents systematic bias toward PyJHora when PyJHora itself may be wrong.
+
 ### 4b. Systematic Pattern Resolution
 
 Severity tiers:
@@ -520,6 +528,17 @@ Either engine updates version
 | Stability index per module | diff_report.py | Any module < 0.90 |
 | xfail count | pytest output | Not trending toward zero |
 | xfail age | verification_history.json | Any > 5 sessions old |
+
+---
+
+## Replay Mode
+
+`tools/diff_engine.py --replay <date>` reproduces a historical pipeline run using:
+- The selection manifest from that date (via `selection_hash`)
+- The engine versions recorded at that date
+- The normalization rules from that date
+
+Enabled by the reproducibility lock (selection_hash, compute_hash, engine versions) already stored in the manifest. Useful for debugging regressions that surface months later.
 
 ---
 
