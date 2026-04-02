@@ -140,6 +140,45 @@ def audit_registry(registry, chapter_name: str) -> list[dict]:
         )
         rule_flags.extend(exception_flags)
 
+        # Check for primitive misuse — enforce new primitives are used
+        conditions = rule.primary_condition.get("conditions", [])
+        for i, cond in enumerate(conditions):
+            # house:"any" workaround — should use planet_in_sign_type or planet_dignity
+            if cond.get("type") == "lord_in_house" and cond.get("house") == "any":
+                rule_flags.append({
+                    "type": "house_any_placeholder",
+                    "confidence": "high",
+                    "evidence": (
+                        f"conditions[{i}] uses lord_in_house with house='any' — "
+                        "use planet_in_sign_type or planet_dignity instead"
+                    ),
+                })
+
+        # Empty conditions on non-methodological rules
+        if not conditions and rule.outcome_direction != "neutral":
+            rule_flags.append({
+                "type": "empty_conditions",
+                "confidence": "medium",
+                "evidence": "conditions=[] on a non-neutral rule — consider upagraha_in_house or planet_in_derived_house",
+            })
+
+        # Commentary says "devoid" or "without aspect" but no planet_not_aspecting
+        comm_lower = (rule.commentary_context or "").lower()
+        _ABSENCE_KW = ("devoid of", "without aspect", "without benefic",
+                        "no benefic aspect", "bereft of benefic")
+        has_not_aspecting = any(
+            c.get("type") == "planet_not_aspecting" for c in conditions
+        )
+        if not has_not_aspecting:
+            for kw in _ABSENCE_KW:
+                if kw in comm_lower:
+                    rule_flags.append({
+                        "type": "missing_negative_condition",
+                        "confidence": "medium",
+                        "evidence": f"Commentary contains '{kw}' but no planet_not_aspecting in conditions",
+                    })
+                    break
+
         if rule_flags:
             results.append({
                 "rule_id": rule.rule_id,
