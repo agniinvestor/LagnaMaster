@@ -281,8 +281,9 @@ b.add(
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 5, "house": "any"},
         {"type": "planet_in_house", "planet": "Saturn", "house": 5},
+        {"type": "planet_in_sign_type", "planet": "lord_of_5", "sign_type": "movable"},
+        {"type": "planets_conjunct", "planets": ["moon", "rahu"]},
     ],
     signal_group="h5_lord_movable_saturn_rahu_illegitimate",
     direction="unfavorable", intensity="strong",
@@ -303,9 +304,10 @@ b.add(
         "certain conditions."
     ),
     concordance_texts=[],
-    modifiers=[
-        {"condition": "h5_lord_in_movable_sign", "effect": "conditionalizes", "strength": "strong"},
-        {"condition": "moon_conjunct_rahu_in_5th_indicates_illegitimate_child", "effect": "amplifies", "strength": "moderate"},
+    modifiers=[],
+    exceptions=[
+        "strong_jupiter_aspect_on_5th_nullifies",
+        "5th_lord_exalted_and_unafflicted_nullifies",
     ],
 )
 
@@ -581,7 +583,8 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": [5, 9]},
                 {"type": "lord_in_house", "lord_of": 5, "house": "any"},
-                {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "strong"}],
+                {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "strong"},
+                {"type": "lord_in_house", "lord_of": 2, "house": 10}],
     signal_group="jupiter_h5_h9_h5_lord_strong_8_sons",
     direction="favorable", intensity="strong", domains=["progeny"],
     predictions=[{"entity": "children", "claim": "eight_sons_indicated", "domain": "progeny", "direction": "favorable", "magnitude": 0.5}],
@@ -589,7 +592,7 @@ b.add(
     commentary_context="Santhanam: Eight sons if Jupiter in 5th/9th + 5th lord endowed with strength + 2nd lord in 10th.",
     description="Jupiter in 5th/9th + 5th lord strong + 2nd lord in 10th: eight sons.",
     prediction_type="trait",
-    modifiers=[{"condition": "2nd_lord_must_be_in_10th", "effect": "conditionalizes", "strength": "strong"}])
+    modifiers=[])
 
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 9},

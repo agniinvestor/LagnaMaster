@@ -142,6 +142,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Jupiter", "house": 2},
+        {"type": "lord_in_house", "lord_of": 2, "house": "any"},
     ],
     signal_group="jupiter_h2_wealth",
     direction="favorable", intensity="strong",
@@ -167,7 +168,7 @@ b.add(
     concordance_texts=["Saravali"],
     convergence_signals=["mars_conjunct_jupiter", "h2_lord_strong"],
     tags=["jupiter", "h2", "mars", "wealth"],
-    modifiers=[{"condition": "jupiter_must_rule_2nd_house_scorpio_aquarius_lagna", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[],
     lagna_scope=["scorpio", "aquarius"],
 )
 

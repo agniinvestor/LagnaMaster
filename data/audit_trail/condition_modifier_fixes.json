@@ -1,0 +1,36 @@
+[
+    {
+        "rule_id": "BPHS1304",
+        "date": "2026-04-02",
+        "change_type": "modifier_to_condition",
+        "confidence": "high",
+        "before_modifier": {"condition": "jupiter_must_rule_2nd_house_scorpio_aquarius_lagna", "effect": "conditionalizes", "strength": "strong"},
+        "after_condition_added": {"type": "lord_in_house", "lord_of": 2, "house": "any"},
+        "source": "manual_fix_from_audit"
+    },
+    {
+        "rule_id": "BPHS1610",
+        "date": "2026-04-02",
+        "change_type": "modifier_to_condition",
+        "confidence": "high",
+        "before_modifiers": [
+            {"condition": "h5_lord_in_movable_sign", "effect": "conditionalizes", "strength": "strong"},
+            {"condition": "moon_conjunct_rahu_in_5th_indicates_illegitimate_child", "effect": "amplifies", "strength": "moderate"}
+        ],
+        "after_conditions_added": [
+            {"type": "planet_in_sign_type", "planet": "lord_of_5", "sign_type": "movable"},
+            {"type": "planets_conjunct", "planets": ["moon", "rahu"]}
+        ],
+        "exceptions_added": ["strong_jupiter_aspect_on_5th_nullifies", "5th_lord_exalted_and_unafflicted_nullifies"],
+        "source": "manual_fix_from_audit"
+    },
+    {
+        "rule_id": "BPHS1623",
+        "date": "2026-04-02",
+        "change_type": "modifier_to_condition",
+        "confidence": "high",
+        "before_modifier": {"condition": "2nd_lord_must_be_in_10th", "effect": "conditionalizes", "strength": "strong"},
+        "after_condition_added": {"type": "lord_in_house", "lord_of": 2, "house": 10},
+        "source": "manual_fix_from_audit"
+    }
+]
