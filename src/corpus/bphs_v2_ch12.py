@@ -171,6 +171,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "lord_in_house", "lord_of": 1, "house": [6, 8, 12]},
+        {"type": "planets_conjunct", "planets": ["lord_of_1", "any_malefic"]},
     ],
     signal_group="lagna_lord_dusthana_conjunct_malefic",
     direction="unfavorable", intensity="strong",
@@ -191,9 +192,8 @@ b.add(
         "affects both health (physical) and progress (career/luck)."
     ),
     concordance_texts=["Saravali"],
-    modifiers=[
-        {"condition": "conjunct_malefic_in_dusthana", "effect": "amplifies", "strength": "strong"},
-    ],
+    modifiers=[],
+    exceptions=["lagna_lord_is_benefic_or_exalted_gives_relief"],
 )
 
 # v.1-2f: Lagna lord is benefic or exalted → relief (EXCEPTION to unfavorable rules)
@@ -230,12 +230,14 @@ b.add(
 # aspected by or conjunct a malefic, being devoid of a benefic's aspect."
 # ═════════════════════════════════════════════════════════════════════════
 
+# NOTE: This rule requires a negative condition ("devoid of benefic aspect")
+# which cannot be expressed with current primitives. The modifier below is a
+# workaround. Governance backlog: add planet_not_aspecting primitive.
 b.add(
     conditions=[
-        {"type": "planet_in_house", "planet": "Moon", "house": "any"},
-        # Modifier: aspected by malefic, no benefic aspect
+        {"type": "planet_aspecting", "planet": "any_malefic", "house": "moon_position"},
     ],
-    signal_group="moon_malefic_health",
+    signal_group="moon_malefic_no_benefic_health",
     direction="unfavorable", intensity="moderate",
     domains=["physical_health"],
     predictions=[
@@ -253,13 +255,15 @@ b.add(
         "No separate Santhanam note for v.3. The verse is self-contained: "
         "Moon or ascendant aspected/conjunct malefic without benefic "
         "relief = no bodily health. The condition requires BOTH malefic "
-        "influence AND absence of benefic counterbalance."
+        "influence AND absence of benefic counterbalance. The absence "
+        "of benefic aspect is a co-equal condition, not a cancellation."
     ),
     concordance_texts=["Saravali"],
     modifiers=[
-        {"condition": "aspected_by_malefic", "effect": "negates", "strength": "strong"},
-        {"condition": "devoid_of_benefic_aspect", "effect": "amplifies", "strength": "moderate"},
+        {"condition": "no_benefic_aspect_on_moon_or_ascendant_required",
+         "effect": "conditionalizes", "strength": "strong"},
     ],
+    exceptions=[],
     tags=["moon", "malefic", "health"],
 )
 
@@ -376,8 +380,8 @@ b.add(
 # v.5-7b: Lagna lord aspected by benefic in movable sign → royal marks
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 1, "house": "any"},
-        # Lagna lord in movable sign + aspected by benefic
+        {"type": "planet_in_sign_type", "planet": "lord_of_1", "sign_type": "movable"},
+        {"type": "planet_aspecting", "planet": "any_benefic", "house": "lagna_lord_position"},
     ],
     signal_group="lagna_lord_movable_royal",
     direction="favorable", intensity="strong",
@@ -401,10 +405,7 @@ b.add(
         "physiognomy. Some of these could be found in Ch.81 of our "
         "present work (Vol II)."
     ),
-    modifiers=[
-        {"condition": "in_movable_sign", "effect": "conditionalizes", "strength": "moderate"},
-        {"condition": "aspected_by_benefic", "effect": "amplifies", "strength": "moderate"},
-    ],
+    modifiers=[],
     cross_chapter_refs=["Ch.81 Body Parts of Woman"],
     tags=["lagna_lord", "movable_sign", "rajalakshana", "royal"],
 )
