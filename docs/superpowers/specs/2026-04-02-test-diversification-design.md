@@ -531,6 +531,87 @@ Either engine updates version
 
 ---
 
+## Section 6: Validation Layer Tests — Who Watches the Watchers
+
+The normalization, diff engine, classification logic, and test harness are all trusted by construction. This section ensures they prove they would break if they were wrong.
+
+### Location
+
+```
+tests/test_validation_system/
+├── test_normalization.py       # Normalization correctness
+├── test_diff_engine.py         # Diff detection accuracy
+├── test_classification.py      # Three-category classification logic
+├── test_invariants.py          # Universal chart invariants
+├── test_poison_pills.py        # Deliberate bad inputs
+```
+
+### A. Normalization Sanity (`test_normalization.py`)
+
+Proves the normalization layer is correct before any diff runs through it.
+
+- Longitude wrapping: 361° → 1°, -1° → 359°, 0° → 0°, 360° → 0°
+- Sign enum mapping: every sign name variant maps to canonical enum
+- Nakshatra name mapping: all 27 nakshatras normalize correctly (including transliteration variants)
+- House index normalization: 0-indexed → 1-indexed, 13 → error
+- Identity test: already-normalized values pass through unchanged
+
+### B. Diff Engine Sanity (`test_diff_engine.py`)
+
+Forces known inputs and verifies the diff detects what it should.
+
+- Identical inputs → all fields "agreement"
+- Known offset (e.g., lagna differs by 5°) → "random_disagreement"
+- Values within tolerance → "agreement"
+- Values at exact tolerance boundary → "agreement" (inclusive)
+- Values at tolerance + epsilon → disagreement
+- Mixed results: some fields agree, some don't → correct per-field verdicts
+
+### C. Classification Integrity (`test_classification.py`)
+
+Verifies the three-category logic with synthetic disagreement sets.
+
+- 20 identical disagreements in same field → classified as "systematic"
+- 2 sporadic disagreements → classified as "random"
+- Threshold boundary: `max(10, 0.25 × segment)` tested with various segment sizes
+- Lagna-segmented and module-segmented classification tested independently
+- Pattern deduplication: same `(field_name, error_signature)` → single bug, not N bugs
+
+### D. Universal Invariants (`test_invariants.py`)
+
+Properties that hold for ANY chart, tested against the full 360. These are the ultimate guardrails — no engine bug should violate these.
+
+- `0 ≤ lagna < 360`
+- `0 ≤ planet.longitude < 360` for all 9 planets
+- `planet.sign_index == floor(planet.longitude / 30)`
+- `Rahu.longitude` and `Ketu.longitude` differ by ~180° (± 0.1°)
+- Sarva Ashtakavarga total = 337 (universal constant)
+- Vimsottari Mahadasha total = 120 years
+- Nakshatra index ∈ [0, 26]
+- Pada ∈ [1, 4]
+- Exactly 12 house lords assigned
+
+### E. Poison Pill Tests (`test_poison_pills.py`)
+
+Deliberately malformed inputs that must be caught, not silently accepted.
+
+- Longitude 999° → normalization error or flagged, never "agreement"
+- Missing planet in one engine's output → field marked as disagreement, not skipped
+- NaN values → detected and flagged
+- Empty chart → graceful failure, not silent pass
+- Mismatched field counts between engines → warning in verdict
+
+### CI Priority
+
+```bash
+# Run BEFORE the diverse correctness suite
+pytest tests/test_validation_system/ -q --maxfail=1
+```
+
+Failures in the validation layer are **higher severity** than engine test failures. If the watchers are broken, nothing downstream is trustworthy.
+
+---
+
 ## Replay Mode
 
 `tools/diff_engine.py --replay <date>` reproduces a historical pipeline run using:
