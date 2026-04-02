@@ -1,0 +1,78 @@
+{
+  "chart_id": "byron_lord",
+  "name": "Lord Byron",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1788,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 259.9557706843262,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 19.955770684326183
+      },
+      "Moon": {
+        "longitude": 183.19128640252728,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 3.1912864025272825
+      },
+      "Mars": {
+        "longitude": 88.92391047538608,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 28.92391047538608
+      },
+      "Mercury": {
+        "longitude": 238.03051939756006,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 28.030519397560056
+      },
+      "Jupiter": {
+        "longitude": 58.109819952277455,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 28.109819952277455
+      },
+      "Venus": {
+        "longitude": 278.22379374977487,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 8.22379374977487
+      },
+      "Saturn": {
+        "longitude": 304.8129987590237,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 4.812998759023685
+      },
+      "Rahu": {
+        "longitude": 245.15694451114598,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 5.15694451114598
+      },
+      "Ketu": {
+        "longitude": 65.15694451114598,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 5.15694451114598
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 350.85215476451214,
+    "lagna_degree_in_sign": 20.852154764512136
+  }
+}

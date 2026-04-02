@@ -1,0 +1,78 @@
+{
+  "chart_id": "darwin_charles",
+  "name": "Charles Darwin",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1809,
+    "month": 2,
+    "day": 12,
+    "hour": 3.0,
+    "lat": 52.7085,
+    "lon": -2.753,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Shrewsbury, UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 301.86333349051245,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 1.8633334905124457
+      },
+      "Moon": {
+        "longitude": 270.167041421982,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 0.1670414219819918
+      },
+      "Mars": {
+        "longitude": 184.22635517872806,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 4.226355178728056
+      },
+      "Mercury": {
+        "longitude": 318.52161830757,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 18.52161830757001
+      },
+      "Jupiter": {
+        "longitude": 330.8067211663966,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 0.806721166396585
+      },
+      "Venus": {
+        "longitude": 345.81627243724506,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 15.816272437245061
+      },
+      "Saturn": {
+        "longitude": 221.9313523398976,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 11.931352339897586
+      },
+      "Rahu": {
+        "longitude": 195.0382403384057,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 15.0382403384057
+      },
+      "Ketu": {
+        "longitude": 15.038240338405672,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 15.038240338405672
+      }
+    },
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree": 224.1013906783653,
+    "lagna_degree_in_sign": 14.101390678365306
+  }
+}

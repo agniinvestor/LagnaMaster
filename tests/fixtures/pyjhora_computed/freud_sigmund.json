@@ -1,0 +1,78 @@
+{
+  "chart_id": "freud_sigmund",
+  "name": "Sigmund Freud",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1856,
+    "month": 5,
+    "day": 6,
+    "hour": 18.5,
+    "lat": 49.6,
+    "lon": 17.9,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "P\u0159\u00edbor, Czech Republic",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 24.483196028819936,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 24.483196028819936
+      },
+      "Moon": {
+        "longitude": 52.79678819592155,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 22.79678819592155
+      },
+      "Mars": {
+        "longitude": 161.51791304444765,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 11.517913044447653
+      },
+      "Mercury": {
+        "longitude": 35.953903177754476,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 5.953903177754476
+      },
+      "Jupiter": {
+        "longitude": 337.72564758402285,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 7.725647584022852
+      },
+      "Venus": {
+        "longitude": 4.358054224583756,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 4.358054224583756
+      },
+      "Saturn": {
+        "longitude": 65.70567532542576,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 5.705675325425759
+      },
+      "Rahu": {
+        "longitude": 2.4675655377793433,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 2.4675655377793433
+      },
+      "Ketu": {
+        "longitude": 182.46756553777934,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 2.467565537779336
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 197.75441407702482,
+    "lagna_degree_in_sign": 17.75441407702482
+  }
+}

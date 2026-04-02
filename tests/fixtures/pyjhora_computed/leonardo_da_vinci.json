@@ -1,0 +1,78 @@
+{
+  "chart_id": "leonardo_da_vinci",
+  "name": "Leonardo da Vinci",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1452,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Italy",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 264.22407750407734,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 24.224077504077343
+      },
+      "Moon": {
+        "longitude": 266.952030431105,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 26.952030431105015
+      },
+      "Mars": {
+        "longitude": 220.50094739744975,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 10.50094739744975
+      },
+      "Mercury": {
+        "longitude": 241.02391327692712,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.023913276927118
+      },
+      "Jupiter": {
+        "longitude": 290.04155833088964,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 20.041558330889643
+      },
+      "Venus": {
+        "longitude": 257.0854071393493,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 17.085407139349286
+      },
+      "Saturn": {
+        "longitude": 182.0292049133385,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 2.0292049133385035
+      },
+      "Rahu": {
+        "longitude": 267.5084144001754,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 27.50841440017541
+      },
+      "Ketu": {
+        "longitude": 87.50841440017541,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 27.50841440017541
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 354.88794769826507,
+    "lagna_degree_in_sign": 24.887947698265066
+  }
+}

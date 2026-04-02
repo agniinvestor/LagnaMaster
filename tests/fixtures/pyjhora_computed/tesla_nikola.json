@@ -1,0 +1,78 @@
+{
+  "chart_id": "tesla_nikola",
+  "name": "Nikola Tesla",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1856,
+    "month": 7,
+    "day": 10,
+    "hour": 0.0,
+    "lat": 44.2719,
+    "lon": 15.9517,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Smiljan, Croatia",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 85.96858201425908,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 25.968582014259084
+      },
+      "Moon": {
+        "longitude": 172.17051236060303,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 22.170512360603027
+      },
+      "Mars": {
+        "longitude": 177.0989387892983,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 27.098938789298302
+      },
+      "Mercury": {
+        "longitude": 66.26939885511688,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 6.269398855116876
+      },
+      "Jupiter": {
+        "longitude": 346.74077684232725,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 16.74077684232725
+      },
+      "Venus": {
+        "longitude": 82.99728898793707,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 22.99728898793707
+      },
+      "Saturn": {
+        "longitude": 73.71637596997496,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 13.716375969974962
+      },
+      "Rahu": {
+        "longitude": 358.25604742594567,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 28.256047425945667
+      },
+      "Ketu": {
+        "longitude": 178.25604742594567,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 28.256047425945667
+      }
+    },
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree": 12.359972865829917,
+    "lagna_degree_in_sign": 12.359972865829917
+  }
+}

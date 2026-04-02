@@ -1,0 +1,78 @@
+{
+  "chart_id": "mandela_nelson",
+  "name": "Nelson Mandela",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1918,
+    "month": 7,
+    "day": 18,
+    "hour": 14.75,
+    "lat": -31.5667,
+    "lon": 28.7833,
+    "tz_offset": 2.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Mvezo, Eastern Cape, South Africa",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 92.34606730777988,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 2.346067307779876
+      },
+      "Moon": {
+        "longitude": 207.45529570949458,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 27.455295709494578
+      },
+      "Mars": {
+        "longitude": 169.85486855307468,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 19.85486855307468
+      },
+      "Mercury": {
+        "longitude": 113.40953764598716,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 23.409537645987157
+      },
+      "Jupiter": {
+        "longitude": 68.44943343810306,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 8.449433438103057
+      },
+      "Venus": {
+        "longitude": 59.85672933081267,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 29.85672933081267
+      },
+      "Saturn": {
+        "longitude": 112.31453178597191,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 22.31453178597191
+      },
+      "Rahu": {
+        "longitude": 239.10832243841642,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 29.108322438416423
+      },
+      "Ketu": {
+        "longitude": 59.108322438416394,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 29.108322438416394
+      }
+    },
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree": 238.82573176345454,
+    "lagna_degree_in_sign": 28.82573176345454
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "chart_id": "galileo",
+  "name": "Galileo Galilei",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1564,
+    "month": 2,
+    "day": 15,
+    "hour": 15.0,
+    "lat": 43.7228,
+    "lon": 10.4017,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Pisa, Italy",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 308.21389285314996,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 8.213892853149957
+      },
+      "Moon": {
+        "longitude": 218.8961624258202,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 8.896162425820194
+      },
+      "Mars": {
+        "longitude": 35.88663277710667,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 5.886632777106669
+      },
+      "Mercury": {
+        "longitude": 306.2298883839493,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 6.229888383949287
+      },
+      "Jupiter": {
+        "longitude": 102.6040167765668,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 12.604016776566795
+      },
+      "Venus": {
+        "longitude": 320.3013849200253,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 20.301384920025328
+      },
+      "Saturn": {
+        "longitude": 100.2663437859916,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 10.266343785991594
+      },
+      "Rahu": {
+        "longitude": 258.8115962420244,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.811596242024393
+      },
+      "Ketu": {
+        "longitude": 78.8115962420244,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 18.811596242024393
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 96.99433936171243,
+    "lagna_degree_in_sign": 6.994339361712434
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "chart_id": "brahms_johannes",
+  "name": "Johannes Brahms",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1833,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Germany",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 259.4072153739224,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 19.407215373922384
+      },
+      "Moon": {
+        "longitude": 15.002825633195366,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 15.002825633195366
+      },
+      "Mars": {
+        "longitude": 29.73816347303733,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 29.73816347303733
+      },
+      "Mercury": {
+        "longitude": 243.876399772873,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 3.876399772872986
+      },
+      "Jupiter": {
+        "longitude": 331.0523375566623,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 1.0523375566622803
+      },
+      "Venus": {
+        "longitude": 297.8752942062946,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 27.875294206294598
+      },
+      "Saturn": {
+        "longitude": 156.52972635481925,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 6.529726354819246
+      },
+      "Rahu": {
+        "longitude": 92.86282192117761,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 2.8628219211776127
+      },
+      "Ketu": {
+        "longitude": 272.8628219211776,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 2.8628219211776127
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 350.33111044421355,
+    "lagna_degree_in_sign": 20.33111044421355
+  }
+}

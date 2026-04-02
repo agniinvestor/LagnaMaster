@@ -1,0 +1,78 @@
+{
+  "chart_id": "newton_isaac",
+  "name": "Isaac Newton",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1643,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 262.1918305731647,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 22.19183057316468
+      },
+      "Moon": {
+        "longitude": 41.56286880675267,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 11.562868806752668
+      },
+      "Mars": {
+        "longitude": 17.851681201971502,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 17.851681201971502
+      },
+      "Mercury": {
+        "longitude": 239.2250669779065,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 29.225066977906494
+      },
+      "Jupiter": {
+        "longitude": 324.81600537526157,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 24.816005375261568
+      },
+      "Venus": {
+        "longitude": 306.487326014304,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 6.487326014304017
+      },
+      "Saturn": {
+        "longitude": 330.8379717213203,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 0.8379717213202866
+      },
+      "Rahu": {
+        "longitude": 171.07757149325448,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 21.07757149325448
+      },
+      "Ketu": {
+        "longitude": 351.0775714932545,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 21.07757149325448
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 353.00508930833223,
+    "lagna_degree_in_sign": 23.00508930833223
+  }
+}

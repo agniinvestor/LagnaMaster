@@ -1,0 +1,78 @@
+{
+  "chart_id": "edison_thomas",
+  "name": "Thomas Edison",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1847,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "USA",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 258.80497018499483,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.80497018499483
+      },
+      "Moon": {
+        "longitude": 77.49141113451142,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 17.491411134511424
+      },
+      "Mars": {
+        "longitude": 220.4253886902303,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 10.425388690230307
+      },
+      "Mercury": {
+        "longitude": 236.12620075228062,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 26.126200752280624
+      },
+      "Jupiter": {
+        "longitude": 46.37682071571627,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 16.37682071571627
+      },
+      "Venus": {
+        "longitude": 262.7493363768836,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 22.749336376883605
+      },
+      "Saturn": {
+        "longitude": 305.7506638627588,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 5.750663862758813
+      },
+      "Rahu": {
+        "longitude": 183.2250024987955,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 3.2250024987955044
+      },
+      "Ketu": {
+        "longitude": 3.2250024987955044,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 3.2250024987955044
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 349.7181954820856,
+    "lagna_degree_in_sign": 19.718195482085605
+  }
+}

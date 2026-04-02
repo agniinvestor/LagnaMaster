@@ -1,0 +1,78 @@
+{
+  "chart_id": "pushkin_alexander",
+  "name": "Alexander Pushkin",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1799,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Russia",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 260.13978711323256,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 20.139787113232558
+      },
+      "Moon": {
+        "longitude": 201.22817806697628,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 21.228178066976284
+      },
+      "Mars": {
+        "longitude": 349.69527654011523,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 19.69527654011523
+      },
+      "Mercury": {
+        "longitude": 277.28713573879867,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 7.287135738798668
+      },
+      "Jupiter": {
+        "longitude": 25.450345679002734,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 25.450345679002734
+      },
+      "Venus": {
+        "longitude": 260.60311173167145,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 20.603111731671447
+      },
+      "Saturn": {
+        "longitude": 92.67221512584877,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 2.6722151258487656
+      },
+      "Rahu": {
+        "longitude": 33.051035344699116,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 3.051035344699116
+      },
+      "Ketu": {
+        "longitude": 213.05103534469913,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 3.0510353446991303
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 351.05701867429246,
+    "lagna_degree_in_sign": 21.057018674292465
+  }
+}

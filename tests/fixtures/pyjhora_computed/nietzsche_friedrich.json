@@ -1,0 +1,78 @@
+{
+  "chart_id": "nietzsche_friedrich",
+  "name": "Friedrich Nietzsche",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1844,
+    "month": 10,
+    "day": 15,
+    "hour": 10.0,
+    "lat": 51.3167,
+    "lon": 12.1333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "R\u00f6cken, Germany",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 180.427521538106,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 0.42752153810599225
+      },
+      "Moon": {
+        "longitude": 227.23413993876116,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 17.23413993876116
+      },
+      "Mars": {
+        "longitude": 156.23623279185176,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 6.236232791851762
+      },
+      "Mercury": {
+        "longitude": 162.4578320685992,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 12.457832068599203
+      },
+      "Jupiter": {
+        "longitude": 334.3309201536007,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 4.330920153600687
+      },
+      "Venus": {
+        "longitude": 134.66837141631444,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 14.668371416314443
+      },
+      "Saturn": {
+        "longitude": 279.0780322323635,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 9.078032232363512
+      },
+      "Rahu": {
+        "longitude": 223.8754766867573,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 13.87547668675731
+      },
+      "Ketu": {
+        "longitude": 43.87547668675734,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 13.875476686757338
+      }
+    },
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree": 215.42619052555244,
+    "lagna_degree_in_sign": 5.4261905255524425
+  }
+}

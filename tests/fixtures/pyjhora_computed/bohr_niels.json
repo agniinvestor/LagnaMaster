@@ -1,0 +1,78 @@
+{
+  "chart_id": "bohr_niels",
+  "name": "Niels Bohr",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1885,
+    "month": 10,
+    "day": 7,
+    "hour": 14.0,
+    "lat": 55.6761,
+    "lon": 12.5683,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Copenhagen, Denmark",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 172.1639522254114,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 22.163952225411407
+      },
+      "Moon": {
+        "longitude": 162.2725999879934,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 12.272599987993402
+      },
+      "Mars": {
+        "longitude": 110.09747274908898,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 20.09747274908898
+      },
+      "Mercury": {
+        "longitude": 165.56338523024107,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 15.563385230241067
+      },
+      "Jupiter": {
+        "longitude": 150.2318793897685,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 0.2318793897684941
+      },
+      "Venus": {
+        "longitude": 211.71723451205585,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 1.7172345120558532
+      },
+      "Saturn": {
+        "longitude": 75.98175111494314,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 15.981751114943137
+      },
+      "Rahu": {
+        "longitude": 153.28692162184083,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 3.2869216218408326
+      },
+      "Ketu": {
+        "longitude": 333.28692162184086,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 3.286921621840861
+      }
+    },
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree": 251.96904843895447,
+    "lagna_degree_in_sign": 11.969048438954474
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "chart_id": "poe_edgar_allan",
+  "name": "Edgar Allan Poe",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1809,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "USA",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 259.5636574909992,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 19.56365749099922
+      },
+      "Moon": {
+        "longitude": 74.84436698855143,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 14.844366988551428
+      },
+      "Mars": {
+        "longitude": 170.2082364042168,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 20.20823640421679
+      },
+      "Mercury": {
+        "longitude": 248.94704667222592,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 8.947046672225923
+      },
+      "Jupiter": {
+        "longitude": 322.38261546843205,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 22.38261546843205
+      },
+      "Venus": {
+        "longitude": 296.5358835298895,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 26.535883529889475
+      },
+      "Saturn": {
+        "longitude": 218.75476714829827,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 8.75476714829827
+      },
+      "Rahu": {
+        "longitude": 199.42599272008943,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 19.425992720089425
+      },
+      "Ketu": {
+        "longitude": 19.425992720089425,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 19.425992720089425
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 350.4665315918746,
+    "lagna_degree_in_sign": 20.466531591874627
+  }
+}

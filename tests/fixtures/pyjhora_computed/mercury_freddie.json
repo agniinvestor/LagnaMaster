@@ -1,0 +1,78 @@
+{
+  "chart_id": "mercury_freddie",
+  "name": "Freddie Mercury",
+  "rodden_rating": "Unknown",
+  "birth_data": {
+    "year": 1946,
+    "month": 9,
+    "day": 5,
+    "hour": 20.07,
+    "lat": 0,
+    "lon": 0,
+    "tz_offset": 0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 139.53707569108536,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 19.537075691085363
+      },
+      "Moon": {
+        "longitude": 253.69645580871466,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 13.69645580871466
+      },
+      "Mars": {
+        "longitude": 174.37334059260522,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 24.373340592605217
+      },
+      "Mercury": {
+        "longitude": 131.02204644037434,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 11.02204644037434
+      },
+      "Jupiter": {
+        "longitude": 183.085494491346,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 3.0854944913459974
+      },
+      "Venus": {
+        "longitude": 185.7431208419201,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 5.743120841920103
+      },
+      "Saturn": {
+        "longitude": 101.04687581703925,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 11.04687581703925
+      },
+      "Rahu": {
+        "longitude": 53.764899136799976,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 23.764899136799976
+      },
+      "Ketu": {
+        "longitude": 233.76489913679998,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 23.764899136799983
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 353.5715378990764,
+    "lagna_degree_in_sign": 23.571537899076418
+  }
+}

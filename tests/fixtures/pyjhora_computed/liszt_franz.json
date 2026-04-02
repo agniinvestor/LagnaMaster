@@ -1,0 +1,78 @@
+{
+  "chart_id": "liszt_franz",
+  "name": "Franz Liszt",
+  "rodden_rating": "Unknown",
+  "birth_data": {
+    "year": 1811,
+    "month": 10,
+    "day": 22,
+    "hour": 15.02,
+    "lat": 0,
+    "lon": 0,
+    "tz_offset": 0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Hungary",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 187.10238762725814,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 7.102387627258139
+      },
+      "Moon": {
+        "longitude": 246.88630395824222,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 6.886303958242223
+      },
+      "Mars": {
+        "longitude": 266.2046015511145,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 26.20460155111448
+      },
+      "Mercury": {
+        "longitude": 170.58340839298052,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 20.583408392980516
+      },
+      "Jupiter": {
+        "longitude": 75.03068544651467,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 15.030685446514667
+      },
+      "Venus": {
+        "longitude": 189.79938530755257,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 9.79938530755257
+      },
+      "Saturn": {
+        "longitude": 241.41572877885602,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.415728778856021
+      },
+      "Rahu": {
+        "longitude": 145.1569607048694,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 25.15696070486939
+      },
+      "Ketu": {
+        "longitude": 325.1569607048694,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 25.15696070486939
+      }
+    },
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree": 322.96503795457977,
+    "lagna_degree_in_sign": 22.96503795457977
+  }
+}

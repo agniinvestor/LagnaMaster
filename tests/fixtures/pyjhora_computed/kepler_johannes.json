@@ -1,0 +1,78 @@
+{
+  "chart_id": "kepler_johannes",
+  "name": "Johannes Kepler",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1571,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Germany",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 262.6657283922921,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 22.665728392292124
+      },
+      "Moon": {
+        "longitude": 197.38240108313087,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 17.382401083130873
+      },
+      "Mars": {
+        "longitude": 284.32470529958124,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 14.32470529958124
+      },
+      "Mercury": {
+        "longitude": 241.17237004710063,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.1723700471006282
+      },
+      "Jupiter": {
+        "longitude": 300.45951744106435,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 0.45951744106434944
+      },
+      "Venus": {
+        "longitude": 309.8352286594491,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 9.835228659449115
+      },
+      "Saturn": {
+        "longitude": 194.6627748845377,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 14.662774884537697
+      },
+      "Rahu": {
+        "longitude": 123.01072312283452,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 3.01072312283452
+      },
+      "Ketu": {
+        "longitude": 303.0107231228345,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 3.01072312283452
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 353.4125063354396,
+    "lagna_degree_in_sign": 23.412506335439616
+  }
+}

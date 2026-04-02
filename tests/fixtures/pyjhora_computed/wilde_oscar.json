@@ -1,0 +1,78 @@
+{
+  "chart_id": "wilde_oscar",
+  "name": "Oscar Wilde",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1854,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 259.0170387385974,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 19.01703873859742
+      },
+      "Moon": {
+        "longitude": 290.39638346487754,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 20.396383464877545
+      },
+      "Mars": {
+        "longitude": 144.0620452912328,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 24.062045291232806
+      },
+      "Mercury": {
+        "longitude": 238.3814346182914,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 28.381434618291394
+      },
+      "Jupiter": {
+        "longitude": 255.1916695927462,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 15.191669592746194
+      },
+      "Venus": {
+        "longitude": 305.5475298924727,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 5.54752989247271
+      },
+      "Saturn": {
+        "longitude": 33.620712060378786,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 3.6207120603787857
+      },
+      "Rahu": {
+        "longitude": 48.38585857120397,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 18.38585857120397
+      },
+      "Ketu": {
+        "longitude": 228.38585857120398,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 18.385858571203983
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 349.9458768254232,
+    "lagna_degree_in_sign": 19.945876825423227
+  }
+}

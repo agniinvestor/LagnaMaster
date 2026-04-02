@@ -1,0 +1,78 @@
+{
+  "chart_id": "mozart_wolfgang_amadeus",
+  "name": "Wolfgang Amadeus Mozart",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1756,
+    "month": 1,
+    "day": 27,
+    "hour": 20.0,
+    "lat": 47.798,
+    "lon": 13.0444,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Salzburg, Austria",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 286.9335551275019,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 16.933555127501904
+      },
+      "Moon": {
+        "longitude": 237.2643171932077,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 27.264317193207688
+      },
+      "Mars": {
+        "longitude": 69.87692029470341,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 9.87692029470341
+      },
+      "Mercury": {
+        "longitude": 287.69310668944047,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 17.69310668944047
+      },
+      "Jupiter": {
+        "longitude": 178.065539947359,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 28.065539947359014
+      },
+      "Venus": {
+        "longitude": 308.87447359755566,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 8.874473597555664
+      },
+      "Saturn": {
+        "longitude": 281.5448687776745,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 11.54486877767448
+      },
+      "Rahu": {
+        "longitude": 141.00965613325133,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 21.009656133251326
+      },
+      "Ketu": {
+        "longitude": 321.0096561332513,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 21.009656133251326
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 140.79335638543907,
+    "lagna_degree_in_sign": 20.79335638543907
+  }
+}

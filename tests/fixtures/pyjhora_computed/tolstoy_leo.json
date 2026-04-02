@@ -1,0 +1,78 @@
+{
+  "chart_id": "tolstoy_leo",
+  "name": "Leo Tolstoy",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1828,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Russia",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 258.67743961529686,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.677439615296862
+      },
+      "Moon": {
+        "longitude": 70.53073686595499,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 10.530736865954992
+      },
+      "Mars": {
+        "longitude": 196.63126363552317,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 16.63126363552317
+      },
+      "Mercury": {
+        "longitude": 240.29092126642323,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 0.2909212664232257
+      },
+      "Jupiter": {
+        "longitude": 198.0484737542864,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 18.04847375428639
+      },
+      "Venus": {
+        "longitude": 279.7143780678339,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 9.714378067833877
+      },
+      "Saturn": {
+        "longitude": 85.88197352542483,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 25.881973525424826
+      },
+      "Rahu": {
+        "longitude": 191.5560445846495,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 11.556044584649499
+      },
+      "Ketu": {
+        "longitude": 11.556044584649499,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 11.556044584649499
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 349.5584182288126,
+    "lagna_degree_in_sign": 19.558418228812627
+  }
+}

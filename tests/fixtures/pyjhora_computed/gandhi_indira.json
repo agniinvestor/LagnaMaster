@@ -1,0 +1,78 @@
+{
+  "chart_id": "gandhi_indira",
+  "name": "Indira Gandhi",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1917,
+    "month": 11,
+    "day": 19,
+    "hour": 23.11,
+    "lat": 25.4358,
+    "lon": 81.8463,
+    "tz_offset": 5.5,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Allahabad, India",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 214.1278527397583,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 4.1278527397583105
+      },
+      "Moon": {
+        "longitude": 275.54602301175447,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 5.546023011754471
+      },
+      "Mars": {
+        "longitude": 136.37785936056102,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 16.37785936056102
+      },
+      "Mercury": {
+        "longitude": 223.23727316570725,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 13.23727316570725
+      },
+      "Jupiter": {
+        "longitude": 44.99916537857981,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 14.99916537857981
+      },
+      "Venus": {
+        "longitude": 261.0067551642371,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 21.00675516423712
+      },
+      "Saturn": {
+        "longitude": 111.78798966617923,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 21.78798966617923
+      },
+      "Rahu": {
+        "longitude": 249.20441982030528,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 9.204419820305276
+      },
+      "Ketu": {
+        "longitude": 69.20441982030525,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 9.204419820305247
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 116.40127841317297,
+    "lagna_degree_in_sign": 26.401278413172975
+  }
+}

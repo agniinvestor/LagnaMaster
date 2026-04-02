@@ -1,0 +1,78 @@
+{
+  "chart_id": "ford_henry",
+  "name": "Henry Ford",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1863,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "USA",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 258.7034605430623,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.703460543062306
+      },
+      "Moon": {
+        "longitude": 39.34162585598404,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 9.341625855984041
+      },
+      "Mars": {
+        "longitude": 1.1415077707012196,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 1.1415077707012196
+      },
+      "Mercury": {
+        "longitude": 264.39684234206896,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 24.396842342068965
+      },
+      "Jupiter": {
+        "longitude": 182.92958863869256,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 2.9295886386925645
+      },
+      "Venus": {
+        "longitude": 263.88395692324696,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 23.883956923246956
+      },
+      "Saturn": {
+        "longitude": 163.42032994080643,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 13.420329940806425
+      },
+      "Rahu": {
+        "longitude": 234.09927592222365,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 24.099275922223654
+      },
+      "Ketu": {
+        "longitude": 54.09927592222368,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 24.099275922223683
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 349.6280211522196,
+    "lagna_degree_in_sign": 19.628021152219617
+  }
+}

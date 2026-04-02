@@ -1,0 +1,78 @@
+{
+  "chart_id": "napoleon_iii",
+  "name": "Napoleon III",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1808,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "France",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 258.80889930561676,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.808899305616762
+      },
+      "Moon": {
+        "longitude": 300.3947575844452,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 0.3947575844451876
+      },
+      "Mars": {
+        "longitude": 283.5919533790455,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 13.591953379045492
+      },
+      "Mercury": {
+        "longitude": 238.27874024509777,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 28.278740245097765
+      },
+      "Jupiter": {
+        "longitude": 293.2358808216668,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 23.235880821666797
+      },
+      "Venus": {
+        "longitude": 212.07034157197293,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 2.070341571972932
+      },
+      "Saturn": {
+        "longitude": 208.1636121974651,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 28.163612197465113
+      },
+      "Rahu": {
+        "longitude": 218.66779536955664,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 8.667795369556643
+      },
+      "Ketu": {
+        "longitude": 38.66779536955664,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 8.667795369556643
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 349.67125914393654,
+    "lagna_degree_in_sign": 19.67125914393654
+  }
+}

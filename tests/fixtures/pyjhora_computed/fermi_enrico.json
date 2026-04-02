@@ -1,0 +1,78 @@
+{
+  "chart_id": "fermi_enrico",
+  "name": "Enrico Fermi",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1901,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Italy",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 257.94579372993354,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 17.94579372993354
+      },
+      "Moon": {
+        "longitude": 32.889722447745115,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 2.8897224477451147
+      },
+      "Mars": {
+        "longitude": 139.23563109012053,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 19.235631090120535
+      },
+      "Mercury": {
+        "longitude": 245.97512246723795,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 5.975122467237952
+      },
+      "Jupiter": {
+        "longitude": 243.5999966701098,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 3.599996670109789
+      },
+      "Venus": {
+        "longitude": 228.90405087304126,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 18.904050873041257
+      },
+      "Saturn": {
+        "longitude": 255.29034174893167,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 15.290341748931667
+      },
+      "Rahu": {
+        "longitude": 218.83784049784413,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 8.837840497844127
+      },
+      "Ketu": {
+        "longitude": 38.83784049784413,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 8.837840497844127
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 348.8797578030322,
+    "lagna_degree_in_sign": 18.87975780303219
+  }
+}

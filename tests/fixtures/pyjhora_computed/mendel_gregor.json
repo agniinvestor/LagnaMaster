@@ -1,0 +1,78 @@
+{
+  "chart_id": "mendel_gregor",
+  "name": "Gregor Mendel",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1822,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Austria",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 259.22633477842413,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 19.226334778424132
+      },
+      "Moon": {
+        "longitude": 356.3314375215472,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 26.331437521547173
+      },
+      "Mars": {
+        "longitude": 137.8777936490228,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 17.877793649022806
+      },
+      "Mercury": {
+        "longitude": 246.78987675010893,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 6.789876750108931
+      },
+      "Jupiter": {
+        "longitude": 359.3906808034173,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 29.390680803417297
+      },
+      "Venus": {
+        "longitude": 306.40505656038823,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 6.405056560388232
+      },
+      "Saturn": {
+        "longitude": 358.5784745517295,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 28.578474551729528
+      },
+      "Rahu": {
+        "longitude": 304.9367942495471,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 4.93679424954712
+      },
+      "Ketu": {
+        "longitude": 124.93679424954712,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 4.93679424954712
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 350.12664556012663,
+    "lagna_degree_in_sign": 20.126645560126633
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "chart_id": "dylan_bob",
+  "name": "Bob Dylan",
+  "rodden_rating": "Unknown",
+  "birth_data": {
+    "year": 1941,
+    "month": 5,
+    "day": 24,
+    "hour": 13.15,
+    "lat": 0,
+    "lon": 0,
+    "tz_offset": 0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "USA",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 39.922648784489205,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 9.922648784489205
+      },
+      "Moon": {
+        "longitude": 21.58595580396833,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 21.58595580396833
+      },
+      "Mars": {
+        "longitude": 312.55950027920494,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 12.55950027920494
+      },
+      "Mercury": {
+        "longitude": 59.06117613055907,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 29.06117613055907
+      },
+      "Jupiter": {
+        "longitude": 36.50249009742659,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 6.502490097426588
+      },
+      "Venus": {
+        "longitude": 49.24624176617906,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 19.24624176617906
+      },
+      "Saturn": {
+        "longitude": 26.97598363952761,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 26.97598363952761
+      },
+      "Rahu": {
+        "longitude": 156.93425232198,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 6.934252321980011
+      },
+      "Ketu": {
+        "longitude": 336.93425232198,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 6.934252321980011
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 144.98879505771825,
+    "lagna_degree_in_sign": 24.98879505771825
+  }
+}

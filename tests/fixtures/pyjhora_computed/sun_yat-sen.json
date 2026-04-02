@@ -1,0 +1,78 @@
+{
+  "chart_id": "sun_yat-sen",
+  "name": "Sun Yat-sen",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1866,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "China",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 258.9390408683614,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.939040868361417
+      },
+      "Moon": {
+        "longitude": 81.77480808106681,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 21.77480808106681
+      },
+      "Mars": {
+        "longitude": 243.97230891655934,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 3.972308916559342
+      },
+      "Mercury": {
+        "longitude": 241.31881885777423,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.3188188577742324
+      },
+      "Jupiter": {
+        "longitude": 258.5986367489128,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.59863674891278
+      },
+      "Venus": {
+        "longitude": 245.5849716777284,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 5.58497167772839
+      },
+      "Saturn": {
+        "longitude": 198.31566247369125,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 18.315662473691248
+      },
+      "Rahu": {
+        "longitude": 175.0714593515281,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 25.07145935152809
+      },
+      "Ketu": {
+        "longitude": 355.0714593515281,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 25.07145935152812
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 349.87779158890936,
+    "lagna_degree_in_sign": 19.87779158890936
+  }
+}

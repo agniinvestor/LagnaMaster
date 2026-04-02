@@ -1,0 +1,78 @@
+{
+  "chart_id": "mao_zedong",
+  "name": "Mao Zedong",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1893,
+    "month": 12,
+    "day": 26,
+    "hour": 7.5,
+    "lat": 27.85,
+    "lon": 112.6,
+    "tz_offset": 8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Shaoshan, China",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 252.10276071197796,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 12.102760711977965
+      },
+      "Moon": {
+        "longitude": 111.46582012394003,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 21.465820123940034
+      },
+      "Mars": {
+        "longitude": 213.49866481445036,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 3.4986648144503647
+      },
+      "Mercury": {
+        "longitude": 233.37648871258705,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 23.376488712587047
+      },
+      "Jupiter": {
+        "longitude": 29.769837641652867,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 29.769837641652867
+      },
+      "Venus": {
+        "longitude": 297.79638726544505,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 27.79638726544505
+      },
+      "Saturn": {
+        "longitude": 181.49707699762584,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 1.4970769976258396
+      },
+      "Rahu": {
+        "longitude": 353.6260582168546,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 23.626058216854574
+      },
+      "Ketu": {
+        "longitude": 173.62605821685452,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 23.626058216854517
+      }
+    },
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree": 253.7134953588891,
+    "lagna_degree_in_sign": 13.713495358889105
+  }
+}

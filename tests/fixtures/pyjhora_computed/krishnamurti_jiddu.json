@@ -1,0 +1,78 @@
+{
+  "chart_id": "krishnamurti_jiddu",
+  "name": "Jiddu Krishnamurti",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1895,
+    "month": 5,
+    "day": 12,
+    "hour": 0.5,
+    "lat": 13.6288,
+    "lon": 79.4192,
+    "tz_offset": 5.5,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Madanapalle, India",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 28.401035168956742,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 28.401035168956742
+      },
+      "Moon": {
+        "longitude": 242.82452684650372,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 2.8245268465037157
+      },
+      "Mars": {
+        "longitude": 79.40796654574564,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 19.407966545745637
+      },
+      "Mercury": {
+        "longitude": 36.483592186698175,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 6.483592186698175
+      },
+      "Jupiter": {
+        "longitude": 72.80204287900327,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 12.802042879003267
+      },
+      "Venus": {
+        "longitude": 66.04263453447953,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 6.042634534479532
+      },
+      "Saturn": {
+        "longitude": 190.24915386788027,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 10.249153867880267
+      },
+      "Rahu": {
+        "longitude": 327.4478006577302,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 27.447800657730227
+      },
+      "Ketu": {
+        "longitude": 147.44780065773023,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 27.447800657730227
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 294.98875338216897,
+    "lagna_degree_in_sign": 24.988753382168966
+  }
+}

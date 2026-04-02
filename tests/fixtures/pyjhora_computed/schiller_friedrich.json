@@ -1,0 +1,78 @@
+{
+  "chart_id": "schiller_friedrich",
+  "name": "Friedrich Schiller",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1759,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Germany",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 260.4101623991941,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 20.41016239919412
+      },
+      "Moon": {
+        "longitude": 289.0068463419783,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 19.006846341978303
+      },
+      "Mars": {
+        "longitude": 271.5372611299942,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 1.5372611299941923
+      },
+      "Mercury": {
+        "longitude": 279.3001745285386,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 9.300174528538605
+      },
+      "Jupiter": {
+        "longitude": 252.74526532937864,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 12.74526532937864
+      },
+      "Venus": {
+        "longitude": 257.76898178690175,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 17.768981786901747
+      },
+      "Saturn": {
+        "longitude": 309.95694759103395,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 9.956947591033952
+      },
+      "Rahu": {
+        "longitude": 85.48949695963601,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 25.489496959636014
+      },
+      "Ketu": {
+        "longitude": 265.489496959636,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 25.48949695963603
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 351.2826790944615,
+    "lagna_degree_in_sign": 21.282679094461514
+  }
+}

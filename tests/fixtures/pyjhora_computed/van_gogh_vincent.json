@@ -1,0 +1,78 @@
+{
+  "chart_id": "van_gogh_vincent",
+  "name": "Vincent van Gogh",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1853,
+    "month": 3,
+    "day": 30,
+    "hour": 11.0,
+    "lat": 51.5906,
+    "lon": 4.4747,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Zundert, Netherlands",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 347.82809620756785,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 17.828096207567853
+      },
+      "Moon": {
+        "longitude": 238.52323826014938,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 28.523238260149384
+      },
+      "Mars": {
+        "longitude": 334.31189296869576,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 4.3118929686957586
+      },
+      "Mercury": {
+        "longitude": 3.7990249011247865,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 3.7990249011247865
+      },
+      "Jupiter": {
+        "longitude": 242.46522810425222,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 2.465228104252219
+      },
+      "Venus": {
+        "longitude": 336.2298242654184,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 6.229824265418415
+      },
+      "Saturn": {
+        "longitude": 24.158547324254602,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 24.158547324254602
+      },
+      "Rahu": {
+        "longitude": 60.667847078340586,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 0.6678470783405857
+      },
+      "Ketu": {
+        "longitude": 240.66784707834057,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 0.6678470783405714
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 81.28639485101749,
+    "lagna_degree_in_sign": 21.28639485101749
+  }
+}

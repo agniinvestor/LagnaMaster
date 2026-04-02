@@ -1,0 +1,78 @@
+{
+  "chart_id": "lennon_john",
+  "name": "John Lennon",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1940,
+    "month": 10,
+    "day": 9,
+    "hour": 18.5,
+    "lat": 53.4084,
+    "lon": -2.9916,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Liverpool, UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 173.28419915213996,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 23.284199152139962
+      },
+      "Moon": {
+        "longitude": 281.03797878318284,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 11.037978783182837
+      },
+      "Mars": {
+        "longitude": 159.66852578139347,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 9.66852578139347
+      },
+      "Mercury": {
+        "longitude": 195.59162288206653,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 15.591622882066531
+      },
+      "Jupiter": {
+        "longitude": 20.654119781658732,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 20.654119781658732
+      },
+      "Venus": {
+        "longitude": 130.23837202118276,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 10.238372021182755
+      },
+      "Saturn": {
+        "longitude": 20.178524494844048,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 20.178524494844048
+      },
+      "Rahu": {
+        "longitude": 167.99475085279664,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 17.994750852796642
+      },
+      "Ketu": {
+        "longitude": 347.99475085279664,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 17.994750852796642
+      }
+    },
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree": 28.197030546508557,
+    "lagna_degree_in_sign": 28.197030546508557
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "chart_id": "elizabeth_ii",
+  "name": "Queen Elizabeth II",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1926,
+    "month": 4,
+    "day": 21,
+    "hour": 2.75,
+    "lat": 51.5,
+    "lon": -0.1167,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Mayfair, London, UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 7.4326010592776255,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 7.4326010592776255
+      },
+      "Moon": {
+        "longitude": 109.83200545500625,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 19.832005455006254
+      },
+      "Mars": {
+        "longitude": 298.08178380299444,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 28.081783802994437
+      },
+      "Mercury": {
+        "longitude": 341.86687875912287,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 11.86687875912287
+      },
+      "Jupiter": {
+        "longitude": 299.69835554336834,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 29.698355543368336
+      },
+      "Venus": {
+        "longitude": 321.1817915179183,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 21.181791517918327
+      },
+      "Saturn": {
+        "longitude": 211.61574359071565,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 1.6157435907156525
+      },
+      "Rahu": {
+        "longitude": 87.2847587299986,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 27.2847587299986
+      },
+      "Ketu": {
+        "longitude": 267.2847587299986,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 27.2847587299986
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 292.9896805214309,
+    "lagna_degree_in_sign": 22.9896805214309
+  }
+}

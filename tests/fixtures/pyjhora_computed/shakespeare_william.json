@@ -1,0 +1,78 @@
+{
+  "chart_id": "shakespeare_william",
+  "name": "William Shakespeare",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1564,
+    "month": 4,
+    "day": 23,
+    "hour": 9.0,
+    "lat": 52.192,
+    "lon": -1.708,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Stratford-upon-Avon, UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 15.274657000327196,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 15.274657000327196
+      },
+      "Moon": {
+        "longitude": 45.221771592247286,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 15.221771592247286
+      },
+      "Mars": {
+        "longitude": 73.91216981037506,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 13.912169810375062
+      },
+      "Mercury": {
+        "longitude": 349.7783345919022,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 19.778334591902194
+      },
+      "Jupiter": {
+        "longitude": 101.72906259573108,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 11.72906259573108
+      },
+      "Venus": {
+        "longitude": 43.76014933756751,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 13.760149337567512
+      },
+      "Saturn": {
+        "longitude": 99.36132632377962,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 9.361326323779622
+      },
+      "Rahu": {
+        "longitude": 252.372855785709,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 12.372855785708992
+      },
+      "Ketu": {
+        "longitude": 72.37285578570902,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 12.372855785709021
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 87.8954865336552,
+    "lagna_degree_in_sign": 27.895486533655202
+  }
+}

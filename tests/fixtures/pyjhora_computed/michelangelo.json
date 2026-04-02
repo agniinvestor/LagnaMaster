@@ -1,0 +1,81 @@
+{
+  "chart_id": "michelangelo",
+  "name": "Michelangelo",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1475,
+    "month": 3,
+    "day": 6,
+    "hour": 3.0,
+    "lat": 43.6413,
+    "lon": 11.9875,
+    "tz_offset": 0.8,
+    "ayanamsha": "lahiri",
+    "place": "Caprese, Tuscany, Italy",
+    "trust": "medium",
+    "note": "Italian church register, rectified time"
+  },
+  "birth_place": "Caprese, Tuscany, Italy",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 328.6023809115699,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 28.602380911569924
+      },
+      "Moon": {
+        "longitude": 193.3679044741353,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 13.367904474135287
+      },
+      "Mars": {
+        "longitude": 325.2220035733551,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 25.222003573355096
+      },
+      "Mercury": {
+        "longitude": 301.18749726197694,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 1.1874972619769437
+      },
+      "Jupiter": {
+        "longitude": 285.3123567234827,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 15.312356723482708
+      },
+      "Venus": {
+        "longitude": 6.127898066544147,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 6.127898066544147
+      },
+      "Saturn": {
+        "longitude": 90.5632393876742,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 0.5632393876742015
+      },
+      "Rahu": {
+        "longitude": 177.54613664820224,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 27.546136648202236
+      },
+      "Ketu": {
+        "longitude": 357.54613664820226,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 27.546136648202264
+      }
+    },
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree": 256.9884073423054,
+    "lagna_degree_in_sign": 16.98840734230538
+  }
+}

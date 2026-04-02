@@ -1,0 +1,78 @@
+{
+  "chart_id": "goethe_johann_wolfgang",
+  "name": "Johann Wolfgang Goethe",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1749,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Germany",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 260.9820934376661,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 20.982093437666094
+      },
+      "Moon": {
+        "longitude": 56.57234436089599,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 26.57234436089599
+      },
+      "Mars": {
+        "longitude": 197.22090825204015,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 17.220908252040147
+      },
+      "Mercury": {
+        "longitude": 242.59858330546453,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 2.5985833054645298
+      },
+      "Jupiter": {
+        "longitude": 302.36098856809883,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 2.3609885680988327
+      },
+      "Venus": {
+        "longitude": 222.25421614708407,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 12.254216147084065
+      },
+      "Saturn": {
+        "longitude": 207.5109475892029,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 27.510947589202914
+      },
+      "Rahu": {
+        "longitude": 278.32978857810565,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 8.32978857810565
+      },
+      "Ketu": {
+        "longitude": 98.32978857810565,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 8.32978857810565
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 351.8728022416978,
+    "lagna_degree_in_sign": 21.872802241697798
+  }
+}

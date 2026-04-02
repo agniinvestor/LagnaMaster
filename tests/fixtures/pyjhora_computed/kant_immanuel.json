@@ -1,0 +1,78 @@
+{
+  "chart_id": "kant_immanuel",
+  "name": "Immanuel Kant",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1724,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Germany",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 260.3835359356663,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 20.383535935666316
+      },
+      "Moon": {
+        "longitude": 323.2634825743831,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 23.26348257438309
+      },
+      "Mars": {
+        "longitude": 65.45349395724556,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 5.453493957245556
+      },
+      "Mercury": {
+        "longitude": 255.6954016931313,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 15.695401693131288
+      },
+      "Jupiter": {
+        "longitude": 267.83594145204825,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 27.835941452048246
+      },
+      "Venus": {
+        "longitude": 273.7859084438205,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 3.7859084438205173
+      },
+      "Saturn": {
+        "longitude": 252.81981442508732,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 12.819814425087316
+      },
+      "Rahu": {
+        "longitude": 44.44125080116877,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 14.44125080116877
+      },
+      "Ketu": {
+        "longitude": 224.44125080116876,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.441250801168763
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 351.21326376064053,
+    "lagna_degree_in_sign": 21.21326376064053
+  }
+}

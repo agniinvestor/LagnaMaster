@@ -1,0 +1,1574 @@
+{
+  "schema_version": "1.0",
+  "generated_date": "2026-04-03",
+  "engine_versions": {
+    "lagnamaster": "3.0.0",
+    "pyjhora": "4.7.0"
+  },
+  "selection_hash": "a84d87bedfe1822d4ad3f4c2970cd6199e5e7932e010a14272fb87844b2f8309",
+  "total_charts": 81,
+  "golden_50_count": 50,
+  "Aries": [
+    {
+      "chart_id": "lennon_john",
+      "rodden_rating": "AA",
+      "score": 4.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": true
+      },
+      "edge_case_count": 3,
+      "pyjhora_lagna_degree": 28.197,
+      "golden_50": true,
+      "selection_rank": 1
+    },
+    {
+      "chart_id": "washington_george",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": true,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 26.3789,
+      "golden_50": false,
+      "selection_rank": 2
+    },
+    {
+      "chart_id": "tesla_nikola",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": true,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 12.36,
+      "golden_50": false,
+      "selection_rank": 3
+    },
+    {
+      "chart_id": "confucius",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 7.7733,
+      "golden_50": false,
+      "selection_rank": 4
+    },
+    {
+      "chart_id": "tagore_rabindranath",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 1.1901,
+      "golden_50": false,
+      "selection_rank": 5
+    }
+  ],
+  "Taurus": [
+    {
+      "chart_id": "turing_alan",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 41.093,
+      "golden_50": false,
+      "selection_rank": 1
+    }
+  ],
+  "Gemini": [
+    {
+      "chart_id": "van_gogh_vincent",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": true
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 81.2864,
+      "golden_50": true,
+      "selection_rank": 1
+    },
+    {
+      "chart_id": "shakespeare_william",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 87.8955,
+      "golden_50": true,
+      "selection_rank": 2
+    },
+    {
+      "chart_id": "schopenhauer_arthur",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 80.1044,
+      "golden_50": true,
+      "selection_rank": 3
+    },
+    {
+      "chart_id": "einstein_albert",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": true
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 79.474,
+      "golden_50": true,
+      "selection_rank": 4
+    }
+  ],
+  "Cancer": [
+    {
+      "chart_id": "picasso_pablo",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": true,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": true
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 90.6005,
+      "golden_50": true,
+      "selection_rank": 1
+    },
+    {
+      "chart_id": "nehru_jawaharlal",
+      "rodden_rating": "A",
+      "score": 2.8,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": true
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 111.7292,
+      "golden_50": true,
+      "selection_rank": 2
+    },
+    {
+      "chart_id": "gandhi_indira",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": true
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 116.4013,
+      "golden_50": true,
+      "selection_rank": 3
+    },
+    {
+      "chart_id": "gates_bill",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": true
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 93.7223,
+      "golden_50": true,
+      "selection_rank": 4
+    },
+    {
+      "chart_id": "galileo",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 96.9943,
+      "golden_50": false,
+      "selection_rank": 5
+    },
+    {
+      "chart_id": "aurobindo_sri",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 116.1494,
+      "golden_50": false,
+      "selection_rank": 6
+    },
+    {
+      "chart_id": "monroe_marilyn",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 110.2496,
+      "golden_50": false,
+      "selection_rank": 7
+    }
+  ],
+  "Leo": [
+    {
+      "chart_id": "mozart_wolfgang_amadeus",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 140.7934,
+      "golden_50": true,
+      "selection_rank": 1
+    },
+    {
+      "chart_id": "jobs_steve",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 148.073,
+      "golden_50": false,
+      "selection_rank": 2
+    }
+  ],
+  "Virgo": [
+    {
+      "chart_id": "beethoven_ludwig_van",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 161.2901,
+      "golden_50": true,
+      "selection_rank": 1
+    },
+    {
+      "chart_id": "pasteur_louis",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 177.4375,
+      "golden_50": true,
+      "selection_rank": 2
+    },
+    {
+      "chart_id": "Roosevelt_Franklin_D.",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 151.8947,
+      "golden_50": false,
+      "selection_rank": 3
+    },
+    {
+      "chart_id": "roosevelt_franklin_d",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 151.8947,
+      "golden_50": false,
+      "selection_rank": 4
+    },
+    {
+      "chart_id": "Kennedy_John_F.",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 177.4037,
+      "golden_50": false,
+      "selection_rank": 5
+    },
+    {
+      "chart_id": "kennedy_john_f",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 177.4037,
+      "golden_50": false,
+      "selection_rank": 6
+    }
+  ],
+  "Libra": [
+    {
+      "chart_id": "putin_vladimir",
+      "rodden_rating": "AA",
+      "score": 4.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": true,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": true
+      },
+      "edge_case_count": 3,
+      "pyjhora_lagna_degree": 192.2912,
+      "golden_50": true,
+      "selection_rank": 1
+    },
+    {
+      "chart_id": "dickens_charles",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": true,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 190.5628,
+      "golden_50": true,
+      "selection_rank": 2
+    },
+    {
+      "chart_id": "gandhi_mahatma",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": true,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": true
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 180.3556,
+      "golden_50": true,
+      "selection_rank": 3
+    },
+    {
+      "chart_id": "chaplin_charlie",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 196.3292,
+      "golden_50": true,
+      "selection_rank": 4
+    },
+    {
+      "chart_id": "rembrandt",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 201.7267,
+      "golden_50": true,
+      "selection_rank": 5
+    },
+    {
+      "chart_id": "hitler_adolf",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 182.9379,
+      "golden_50": true,
+      "selection_rank": 6
+    },
+    {
+      "chart_id": "napoleon_i",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 190.8388,
+      "golden_50": false,
+      "selection_rank": 7
+    },
+    {
+      "chart_id": "freud_sigmund",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 197.7544,
+      "golden_50": false,
+      "selection_rank": 8
+    }
+  ],
+  "Scorpio": [
+    {
+      "chart_id": "nietzsche_friedrich",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": true
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 215.4262,
+      "golden_50": true,
+      "selection_rank": 1
+    },
+    {
+      "chart_id": "darwin_charles",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 224.1014,
+      "golden_50": true,
+      "selection_rank": 2
+    },
+    {
+      "chart_id": "diana_princess_of_wales",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 235.0942,
+      "golden_50": true,
+      "selection_rank": 3
+    },
+    {
+      "chart_id": "mandela_nelson",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 238.8257,
+      "golden_50": false,
+      "selection_rank": 4
+    },
+    {
+      "chart_id": "presley_elvis",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 226.4501,
+      "golden_50": false,
+      "selection_rank": 5
+    }
+  ],
+  "Sagittarius": [
+    {
+      "chart_id": "bohr_niels",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": true
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 251.969,
+      "golden_50": true,
+      "selection_rank": 1
+    },
+    {
+      "chart_id": "michelangelo",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": true
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 256.9884,
+      "golden_50": true,
+      "selection_rank": 2
+    },
+    {
+      "chart_id": "mao_zedong",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 253.7135,
+      "golden_50": false,
+      "selection_rank": 3
+    },
+    {
+      "chart_id": "vivekananda_swami",
+      "rodden_rating": "A",
+      "score": 0.8,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 268.1475,
+      "golden_50": false,
+      "selection_rank": 4
+    }
+  ],
+  "Capricorn": [
+    {
+      "chart_id": "keats_john",
+      "rodden_rating": "AA",
+      "score": 4.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": true,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": true
+      },
+      "edge_case_count": 3,
+      "pyjhora_lagna_degree": 295.0308,
+      "golden_50": true,
+      "selection_rank": 1
+    },
+    {
+      "chart_id": "bowie_david",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 280.3129,
+      "golden_50": true,
+      "selection_rank": 2
+    },
+    {
+      "chart_id": "jung_carl",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": true,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 270.0024,
+      "golden_50": true,
+      "selection_rank": 3
+    },
+    {
+      "chart_id": "elizabeth_ii",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 292.9897,
+      "golden_50": true,
+      "selection_rank": 4
+    },
+    {
+      "chart_id": "obama_barack",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": true,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 291.9477,
+      "golden_50": true,
+      "selection_rank": 5
+    },
+    {
+      "chart_id": "marx_karl",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 287.5168,
+      "golden_50": false,
+      "selection_rank": 6
+    },
+    {
+      "chart_id": "ramanujan_srinivasa",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 282.2732,
+      "golden_50": false,
+      "selection_rank": 7
+    },
+    {
+      "chart_id": "krishnamurti_jiddu",
+      "rodden_rating": "AA",
+      "score": 1.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 294.9888,
+      "golden_50": false,
+      "selection_rank": 8
+    }
+  ],
+  "Aquarius": [
+    {
+      "chart_id": "lincoln_abraham",
+      "rodden_rating": "A",
+      "score": 0.8,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 0,
+      "pyjhora_lagna_degree": 326.9423,
+      "golden_50": false,
+      "selection_rank": 1
+    }
+  ],
+  "Pisces": [
+    {
+      "chart_id": "bismarck_otto_von",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": true,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": true,
+        "dst_transition": false
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 341.7931,
+      "golden_50": true,
+      "selection_rank": 1
+    },
+    {
+      "chart_id": "de_gaulle_charles",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": true,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 349.7425,
+      "golden_50": true,
+      "selection_rank": 2
+    },
+    {
+      "chart_id": "lorca_federico_garcia",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 349.6974,
+      "golden_50": true,
+      "selection_rank": 3
+    },
+    {
+      "chart_id": "zhou_enlai",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 349.6974,
+      "golden_50": true,
+      "selection_rank": 4
+    },
+    {
+      "chart_id": "khomeini_ruhollah",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 348.6071,
+      "golden_50": true,
+      "selection_rank": 5
+    },
+    {
+      "chart_id": "reagan_ronald",
+      "rodden_rating": "AA",
+      "score": 3.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": true,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 2,
+      "pyjhora_lagna_degree": 348.2897,
+      "golden_50": true,
+      "selection_rank": 6
+    },
+    {
+      "chart_id": "leonardo_da_vinci",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": true,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 354.8879,
+      "golden_50": true,
+      "selection_rank": 7
+    },
+    {
+      "chart_id": "pascal_blaise",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": true,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 353.1182,
+      "golden_50": true,
+      "selection_rank": 8
+    },
+    {
+      "chart_id": "bach_johann_sebastian",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": true,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 353.3011,
+      "golden_50": true,
+      "selection_rank": 9
+    },
+    {
+      "chart_id": "voltaire",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 352.9836,
+      "golden_50": false,
+      "selection_rank": 10
+    },
+    {
+      "chart_id": "bolivar_simon",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 351.1475,
+      "golden_50": true,
+      "selection_rank": 11
+    },
+    {
+      "chart_id": "faraday_michael",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 351.1018,
+      "golden_50": true,
+      "selection_rank": 12
+    },
+    {
+      "chart_id": "balzac_honor\u00e9_de",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 351.057,
+      "golden_50": true,
+      "selection_rank": 13
+    },
+    {
+      "chart_id": "pushkin_alexander",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 351.057,
+      "golden_50": true,
+      "selection_rank": 14
+    },
+    {
+      "chart_id": "verdi_giuseppe",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 350.444,
+      "golden_50": false,
+      "selection_rank": 15
+    },
+    {
+      "chart_id": "wagner_richard",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 350.444,
+      "golden_50": false,
+      "selection_rank": 16
+    },
+    {
+      "chart_id": "whitman_walt",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 349.8767,
+      "golden_50": false,
+      "selection_rank": 17
+    },
+    {
+      "chart_id": "dostoevsky_fyodor",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 350.3992,
+      "golden_50": true,
+      "selection_rank": 18
+    },
+    {
+      "chart_id": "flaubert_gustave",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 350.3992,
+      "golden_50": true,
+      "selection_rank": 19
+    },
+    {
+      "chart_id": "mendel_gregor",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 350.1266,
+      "golden_50": true,
+      "selection_rank": 20
+    },
+    {
+      "chart_id": "carnegie_andrew",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 349.7862,
+      "golden_50": true,
+      "selection_rank": 21
+    },
+    {
+      "chart_id": "twain_mark",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 349.7862,
+      "golden_50": false,
+      "selection_rank": 22
+    },
+    {
+      "chart_id": "shaw_george_bernard",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 349.4009,
+      "golden_50": true,
+      "selection_rank": 23
+    },
+    {
+      "chart_id": "ford_henry",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 349.628,
+      "golden_50": true,
+      "selection_rank": 24
+    },
+    {
+      "chart_id": "kipling_rudyard",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 350.1502,
+      "golden_50": true,
+      "selection_rank": 25
+    },
+    {
+      "chart_id": "Wells_H.G.",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 349.8778,
+      "golden_50": true,
+      "selection_rank": 26
+    },
+    {
+      "chart_id": "sun_yat-sen",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 349.8778,
+      "golden_50": false,
+      "selection_rank": 27
+    },
+    {
+      "chart_id": "wells_hg",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": false,
+        "exact_conjunction": true,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 349.8778,
+      "golden_50": false,
+      "selection_rank": 28
+    },
+    {
+      "chart_id": "trotsky_leon",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 349.5379,
+      "golden_50": false,
+      "selection_rank": 29
+    },
+    {
+      "chart_id": "ataturk_mustafa_kemal",
+      "rodden_rating": "AA",
+      "score": 2.0,
+      "edge_case_flags": {
+        "lagna_boundary": false,
+        "nakshatra_boundary": false,
+        "retrograde_present": false,
+        "combustion_edge": true,
+        "exact_conjunction": false,
+        "midnight_window": false,
+        "high_latitude": false,
+        "dst_transition": false
+      },
+      "edge_case_count": 1,
+      "pyjhora_lagna_degree": 350.06,
+      "golden_50": true,
+      "selection_rank": 30
+    }
+  ]
+}

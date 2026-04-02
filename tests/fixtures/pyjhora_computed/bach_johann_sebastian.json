@@ -1,0 +1,78 @@
+{
+  "chart_id": "bach_johann_sebastian",
+  "name": "Johann Sebastian Bach",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1685,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Germany",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 262.42744470226165,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 22.427444702261653
+      },
+      "Moon": {
+        "longitude": 213.3764555689636,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 3.3764555689635927
+      },
+      "Mars": {
+        "longitude": 191.07671166007748,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 11.076711660077478
+      },
+      "Mercury": {
+        "longitude": 264.43317325178435,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 24.433173251784353
+      },
+      "Jupiter": {
+        "longitude": 181.24697255972177,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 1.246972559721769
+      },
+      "Venus": {
+        "longitude": 220.27039841309514,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 10.270398413095137
+      },
+      "Saturn": {
+        "longitude": 147.7209995248185,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 27.720999524818495
+      },
+      "Rahu": {
+        "longitude": 78.0995480940248,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 18.099548094024797
+      },
+      "Ketu": {
+        "longitude": 258.0995480940248,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.099548094024783
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 353.30110418173797,
+    "lagna_degree_in_sign": 23.30110418173797
+  }
+}

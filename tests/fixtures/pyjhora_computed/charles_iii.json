@@ -1,0 +1,78 @@
+{
+  "chart_id": "charles_iii",
+  "name": "King Charles III",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1948,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 256.8663460302587,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 16.866346030258683
+      },
+      "Moon": {
+        "longitude": 141.51781159169772,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 21.517811591697722
+      },
+      "Mars": {
+        "longitude": 134.17205048559433,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 14.172050485594326
+      },
+      "Mercury": {
+        "longitude": 255.6662846990794,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 15.666284699079398
+      },
+      "Jupiter": {
+        "longitude": 232.12537065705922,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 22.12537065705922
+      },
+      "Venus": {
+        "longitude": 286.4227772404747,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 16.422777240474716
+      },
+      "Saturn": {
+        "longitude": 118.83232000364333,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 28.832320003643332
+      },
+      "Rahu": {
+        "longitude": 29.141295310581032,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 29.141295310581032
+      },
+      "Ketu": {
+        "longitude": 209.14129531058103,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 29.14129531058103
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 347.814076109808,
+    "lagna_degree_in_sign": 17.814076109808013
+  }
+}

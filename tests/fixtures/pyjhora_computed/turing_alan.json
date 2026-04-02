@@ -1,0 +1,78 @@
+{
+  "chart_id": "turing_alan",
+  "name": "Alan Turing",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1912,
+    "month": 6,
+    "day": 23,
+    "hour": 2.15,
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "London, UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 68.59912774714643,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 8.599127747146426
+      },
+      "Moon": {
+        "longitude": 173.88838798918985,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 23.88838798918985
+      },
+      "Mars": {
+        "longitude": 112.72217595912007,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 22.722175959120065
+      },
+      "Mercury": {
+        "longitude": 75.38744664497636,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 15.387446644976364
+      },
+      "Jupiter": {
+        "longitude": 225.27503500497625,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 15.275035004976246
+      },
+      "Venus": {
+        "longitude": 65.0232162217507,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 5.023216221750701
+      },
+      "Saturn": {
+        "longitude": 35.809416110449696,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 5.809416110449696
+      },
+      "Rahu": {
+        "longitude": 356.1700638925196,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 26.17006389251958
+      },
+      "Ketu": {
+        "longitude": 176.17006389251958,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 26.17006389251958
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 41.09304407166208,
+    "lagna_degree_in_sign": 11.093044071662078
+  }
+}

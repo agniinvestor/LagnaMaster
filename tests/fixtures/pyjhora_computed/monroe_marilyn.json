@@ -1,0 +1,78 @@
+{
+  "chart_id": "monroe_marilyn",
+  "name": "Marilyn Monroe",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1926,
+    "month": 6,
+    "day": 1,
+    "hour": 9.5,
+    "lat": 34.0522,
+    "lon": -118.2437,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Los Angeles CA, USA",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 47.62532660105339,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 17.625326601053388
+      },
+      "Moon": {
+        "longitude": 296.27390286091196,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 26.27390286091196
+      },
+      "Mars": {
+        "longitude": 327.9116203100301,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 27.911620310030116
+      },
+      "Mercury": {
+        "longitude": 43.97058657597862,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 13.970586575978622
+      },
+      "Jupiter": {
+        "longitude": 304.00236745120446,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 4.002367451204464
+      },
+      "Venus": {
+        "longitude": 5.932504252898513,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 5.932504252898513
+      },
+      "Saturn": {
+        "longitude": 208.61343896661478,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 28.61343896661478
+      },
+      "Rahu": {
+        "longitude": 84.07150242099804,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 24.071502420998044
+      },
+      "Ketu": {
+        "longitude": 264.07150242099806,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 24.07150242099806
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 110.24961238045044,
+    "lagna_degree_in_sign": 20.249612380450444
+  }
+}

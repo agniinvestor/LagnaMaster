@@ -1,0 +1,78 @@
+{
+  "chart_id": "proust_marcel",
+  "name": "Marcel Proust",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1871,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "France",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 258.64863544133624,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.64863544133624
+      },
+      "Moon": {
+        "longitude": 19.423317753053112,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 19.423317753053112
+      },
+      "Mars": {
+        "longitude": 158.57882757949977,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 8.578827579499773
+      },
+      "Mercury": {
+        "longitude": 278.0049845157707,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 8.004984515770673
+      },
+      "Jupiter": {
+        "longitude": 56.87374268898849,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 26.873742688988493
+      },
+      "Venus": {
+        "longitude": 264.4493891837517,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 24.44938918375169
+      },
+      "Saturn": {
+        "longitude": 250.01601632995562,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 10.016016329955619
+      },
+      "Rahu": {
+        "longitude": 77.94916620940576,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 17.94916620940576
+      },
+      "Ketu": {
+        "longitude": 257.94916620940575,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 17.949166209405746
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 349.5829573237023,
+    "lagna_degree_in_sign": 19.582957323702317
+  }
+}

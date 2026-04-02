@@ -1,0 +1,78 @@
+{
+  "chart_id": "hugo_victor",
+  "name": "Victor Hugo",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1802,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "France",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 259.35889489100674,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 19.35889489100674
+      },
+      "Moon": {
+        "longitude": 220.12934303017417,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 10.12934303017417
+      },
+      "Mars": {
+        "longitude": 237.8171203576661,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 27.817120357666113
+      },
+      "Mercury": {
+        "longitude": 244.09817835372914,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 4.098178353729139
+      },
+      "Jupiter": {
+        "longitude": 134.4457827065082,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 14.445782706508197
+      },
+      "Venus": {
+        "longitude": 241.13601560075543,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.136015600755428
+      },
+      "Saturn": {
+        "longitude": 136.24714448498494,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 16.247144484984943
+      },
+      "Rahu": {
+        "longitude": 332.7207743440423,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 2.7207743440422973
+      },
+      "Ketu": {
+        "longitude": 152.7207743440423,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 2.7207743440422973
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 350.2395325375673,
+    "lagna_degree_in_sign": 20.2395325375673
+  }
+}

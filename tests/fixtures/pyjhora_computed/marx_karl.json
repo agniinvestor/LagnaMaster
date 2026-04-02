@@ -1,0 +1,78 @@
+{
+  "chart_id": "marx_karl",
+  "name": "Karl Marx",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1818,
+    "month": 5,
+    "day": 5,
+    "hour": 2.0,
+    "lat": 49.75,
+    "lon": 6.6333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Trier, Germany",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 22.594499916534954,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 22.594499916534954
+      },
+      "Moon": {
+        "longitude": 19.669444917837783,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 19.669444917837783
+      },
+      "Mars": {
+        "longitude": 89.45116584695323,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 29.45116584695323
+      },
+      "Mercury": {
+        "longitude": 42.31027856773643,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 12.310278567736432
+      },
+      "Jupiter": {
+        "longitude": 261.62706878342794,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 21.627068783427944
+      },
+      "Venus": {
+        "longitude": 36.1836912682631,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 6.183691268263097
+      },
+      "Saturn": {
+        "longitude": 324.47988131314685,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 24.479881313146848
+      },
+      "Rahu": {
+        "longitude": 17.49804474159854,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 17.49804474159854
+      },
+      "Ketu": {
+        "longitude": 197.49804474159853,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 17.498044741598534
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 287.5168298270159,
+    "lagna_degree_in_sign": 17.516829827015897
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "chart_id": "nixon_richard",
+  "name": "Richard Nixon",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1913,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "USA",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 257.8620732310478,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 17.862073231047816
+      },
+      "Moon": {
+        "longitude": 188.56459418953946,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 8.564594189539463
+      },
+      "Mars": {
+        "longitude": 240.662274460367,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 0.6622744603670014
+      },
+      "Mercury": {
+        "longitude": 235.93430359756863,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 25.93430359756863
+      },
+      "Jupiter": {
+        "longitude": 247.0663110099589,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 7.066311009958895
+      },
+      "Venus": {
+        "longitude": 300.66745626936495,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 0.6674562693649477
+      },
+      "Saturn": {
+        "longitude": 35.2027198035309,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 5.202719803530897
+      },
+      "Rahu": {
+        "longitude": 345.1073617653042,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 15.107361765304177
+      },
+      "Ketu": {
+        "longitude": 165.10736176530418,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 15.107361765304177
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 348.81241973558974,
+    "lagna_degree_in_sign": 18.812419735589742
+  }
+}

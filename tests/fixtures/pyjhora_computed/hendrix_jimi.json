@@ -1,0 +1,78 @@
+{
+  "chart_id": "hendrix_jimi",
+  "name": "Jimi Hendrix",
+  "rodden_rating": "Unknown",
+  "birth_data": {
+    "year": 1942,
+    "month": 11,
+    "day": 27,
+    "hour": 10.83,
+    "lat": 0,
+    "lon": 0,
+    "tz_offset": 0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "USA",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 221.5131319725303,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 11.513131972530289
+      },
+      "Moon": {
+        "longitude": 91.86711386805187,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 1.8671138680518737
+      },
+      "Mars": {
+        "longitude": 204.29371179757763,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 24.29371179757763
+      },
+      "Mercury": {
+        "longitude": 219.48309886153658,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 9.483098861536575
+      },
+      "Jupiter": {
+        "longitude": 91.81497519340287,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 1.8149751934028728
+      },
+      "Venus": {
+        "longitude": 224.21855262849192,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.21855262849192
+      },
+      "Saturn": {
+        "longitude": 46.33424311273345,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 16.334243112733454
+      },
+      "Rahu": {
+        "longitude": 125.69610356477743,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 5.696103564777431
+      },
+      "Ketu": {
+        "longitude": 305.69610356477745,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 5.696103564777445
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 292.6512527510662,
+    "lagna_degree_in_sign": 22.65125275106618
+  }
+}

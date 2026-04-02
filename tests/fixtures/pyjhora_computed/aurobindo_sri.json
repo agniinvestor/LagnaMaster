@@ -1,0 +1,78 @@
+{
+  "chart_id": "aurobindo_sri",
+  "name": "Sri Aurobindo",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1872,
+    "month": 8,
+    "day": 15,
+    "hour": 5.0,
+    "lat": 22.5726,
+    "lon": 88.3639,
+    "tz_offset": 5.53,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Kolkata, India",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 120.32617289825836,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 0.3261728982583634
+      },
+      "Moon": {
+        "longitude": 245.7303968428258,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 5.730396842825797
+      },
+      "Mars": {
+        "longitude": 95.39421283248039,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 5.394212832480392
+      },
+      "Mercury": {
+        "longitude": 143.512984979038,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 23.51298497903801
+      },
+      "Jupiter": {
+        "longitude": 111.594517994474,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 21.594517994474003
+      },
+      "Venus": {
+        "longitude": 128.545631788389,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 8.545631788388988
+      },
+      "Saturn": {
+        "longitude": 263.49719298234453,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 23.49719298234453
+      },
+      "Rahu": {
+        "longitude": 47.71285094743243,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 17.71285094743243
+      },
+      "Ketu": {
+        "longitude": 227.71285094743243,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 17.71285094743243
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 116.14938937681329,
+    "lagna_degree_in_sign": 26.14938937681329
+  }
+}

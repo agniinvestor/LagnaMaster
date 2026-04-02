@@ -1,0 +1,78 @@
+{
+  "chart_id": "keats_john",
+  "name": "John Keats",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1795,
+    "month": 10,
+    "day": 31,
+    "hour": 14.0,
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "London, UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 197.15106652591226,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 17.151066525912256
+      },
+      "Moon": {
+        "longitude": 66.6267741293035,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 6.626774129303499
+      },
+      "Mars": {
+        "longitude": 156.41513267910847,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 6.415132679108467
+      },
+      "Mercury": {
+        "longitude": 219.50378775992567,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 9.503787759925672
+      },
+      "Jupiter": {
+        "longitude": 278.8091668187571,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 8.809166818757092
+      },
+      "Venus": {
+        "longitude": 201.13739867990898,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 21.137398679908983
+      },
+      "Saturn": {
+        "longitude": 51.596095808430505,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 21.596095808430505
+      },
+      "Rahu": {
+        "longitude": 92.0783923241642,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 2.0783923241641986
+      },
+      "Ketu": {
+        "longitude": 272.0783923241642,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 2.078392324164213
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 295.03075900604915,
+    "lagna_degree_in_sign": 25.030759006049152
+  }
+}

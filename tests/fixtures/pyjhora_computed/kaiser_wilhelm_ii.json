@@ -1,0 +1,78 @@
+{
+  "chart_id": "kaiser_wilhelm_ii",
+  "name": "Kaiser Wilhelm II",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1859,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "Germany",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 258.72506584227267,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.72506584227267
+      },
+      "Moon": {
+        "longitude": 229.038070689157,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 19.038070689156996
+      },
+      "Mars": {
+        "longitude": 315.24778850516697,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 15.247788505166966
+      },
+      "Mercury": {
+        "longitude": 253.89472193713513,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 13.894721937135131
+      },
+      "Jupiter": {
+        "longitude": 51.64128441381368,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 21.64128441381368
+      },
+      "Venus": {
+        "longitude": 232.5235341303903,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 22.52353413039029
+      },
+      "Saturn": {
+        "longitude": 109.10299038558045,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 19.102990385580455
+      },
+      "Rahu": {
+        "longitude": 308.7323689918336,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 8.732368991833596
+      },
+      "Ketu": {
+        "longitude": 128.7323689918336,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 8.732368991833596
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 349.6508553990866,
+    "lagna_degree_in_sign": 19.650855399086595
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "chart_id": "maxwell_james_clerk",
+  "name": "James Clerk Maxwell",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 1831,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "UK",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 258.9094436820991,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.909443682099095
+      },
+      "Moon": {
+        "longitude": 117.07837222349688,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 27.078372223496885
+      },
+      "Mars": {
+        "longitude": 354.8607867310762,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 24.86078673107619
+      },
+      "Mercury": {
+        "longitude": 274.8190727073729,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 4.819072707372925
+      },
+      "Jupiter": {
+        "longitude": 273.7966875609927,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 3.796687560992723
+      },
+      "Venus": {
+        "longitude": 261.6147334282333,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 21.614733428233308
+      },
+      "Saturn": {
+        "longitude": 129.92119972797244,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 9.921199727972436
+      },
+      "Rahu": {
+        "longitude": 130.59778422079012,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 10.597784220790118
+      },
+      "Ketu": {
+        "longitude": 310.5977842207901,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 10.597784220790118
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 349.80850642214244,
+    "lagna_degree_in_sign": 19.808506422142443
+  }
+}

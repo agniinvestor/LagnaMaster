@@ -1,0 +1,78 @@
+{
+  "chart_id": "confucius",
+  "name": "Confucius",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "year": 551,
+    "month": 1,
+    "day": 1,
+    "hour": 12.0,
+    "lat": 0.0,
+    "lon": 0.0,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "China",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 277.6101621119061,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 7.6101621119061065
+      },
+      "Moon": {
+        "longitude": 349.8216073712535,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 19.821607371253492
+      },
+      "Mars": {
+        "longitude": 217.6818878236591,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 7.68188782365911
+      },
+      "Mercury": {
+        "longitude": 254.32669177129782,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 14.326691771297817
+      },
+      "Jupiter": {
+        "longitude": 307.0164217136389,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 7.01642171363892
+      },
+      "Venus": {
+        "longitude": 324.60786177500336,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 24.607861775003357
+      },
+      "Saturn": {
+        "longitude": 308.71976545911775,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 8.719765459117752
+      },
+      "Rahu": {
+        "longitude": 67.9547883771488,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 7.954788377148802
+      },
+      "Ketu": {
+        "longitude": 247.95478837714882,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 7.954788377148816
+      }
+    },
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree": 7.773308063228431,
+    "lagna_degree_in_sign": 7.773308063228431
+  }
+}
