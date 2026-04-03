@@ -389,6 +389,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Sun", "house": [6, 8]},
+        {"type": "planet_in_house_from", "planet": "Moon", "reference": "Sun", "offset": 12, "mode": "occupies"},
     ],
     signal_group="sun_h6_h8_water_danger_5_9",
     direction="unfavorable", intensity="moderate",
@@ -399,7 +400,7 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [5, 9], "precision": "approximate"},
     verse_ref="Ch.17 v.20-22",
-    commentary_context="Santhanam: Sun in 6th/8th + Moon in 12th from Sun = water danger in 5th/9th year. Part of the UNFORTUNATE YEARS sequence (v.20-25).",
+    commentary_context="Santhanam: Sun in 6th/8th + Moon in 12th from Sun = water danger in 5th/9th year. Both conditions are now structurally encoded. Part of the UNFORTUNATE YEARS sequence (v.20-25).",
     description=(
         "Danger through water will have to be feared during the 5th and "
         "the 9th years if the Sun is in the 6th or 8th while the Moon "
@@ -547,7 +548,10 @@ b.add(
 
 # v.20b gap: Rahu in 6th + Saturn in 8th from Rahu → fire at 1-2, birds at 3
 b.add(
-    conditions=[{"type": "planet_in_house", "planet": "Rahu", "house": 6}],
+    conditions=[
+        {"type": "planet_in_house", "planet": "Rahu", "house": 6},
+        {"type": "planet_in_house_from", "planet": "Saturn", "reference": "Rahu", "offset": 8, "mode": "occupies"},
+    ],
     signal_group="rahu_h6_saturn_8th_from_rahu_fire",
     direction="unfavorable", intensity="moderate",
     domains=["physical_health"],
@@ -560,7 +564,6 @@ b.add(
     timing_window={"type": "age_range", "value": [1, 3], "precision": "approximate"},
     verse_ref="Ch.17 v.20",
     commentary_context="Santhanam: If Rahu is in the 6th while Saturn is in the 8th from said Rahu, the child will have danger from fire at age 1 and 2, while in the 3rd year birds will bring some evils.",
-    description="Rahu in 6th + Saturn in 8th from Rahu: danger from fire at age 1-2, birds bring evils at age 3.",
-    modifiers=[{"condition": "saturn_in_8th_from_rahu", "effect": "conditionalizes", "strength": "strong"}])
+    description="Rahu in 6th + Saturn in 8th from Rahu: danger from fire at age 1-2, birds bring evils at age 3.")
 
 BPHS_V2_CH17_REGISTRY = b.build()
