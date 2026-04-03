@@ -201,7 +201,10 @@ b.add(
         "7th, 10th, 5th or 9th will also lead to financial gains."
     ),
     tags=["h2_lord", "h11_lord", "exchange", "parivartana", "wealth"],
-    modifiers=[],
+    modifiers=[
+        {"condition": "lords_2_11_join_in_kendra_trikona_instead_of_exchange",
+         "effect": "conditionalizes", "strength": "moderate"},
+    ],
 )
 
 # ═════════════════════════════════════════════════════════════════════════
@@ -610,7 +613,10 @@ b.add(
         "is in affliction so related, gastric troubles will come to "
         "pass."
     ),
-    modifiers=[],
+    modifiers=[
+        {"condition": "saturn_or_mercury_associated", "effect": "conditionalizes", "strength": "moderate"},
+        {"condition": "jupiter_afflicted_in_connection", "effect": "conditionalizes", "strength": "moderate"},
+    ],
     tags=["malefic", "h2", "untruth", "windy_disease", "gastric"],
     prediction_type="trait",
 )
@@ -626,10 +632,12 @@ b.add(
     direction="favorable", intensity="moderate", domains=["wealth"],
     predictions=[{"entity": "native", "claim": "wealth_acquired_through_jupiter_mars_conjunction", "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
     verse_ref="Ch.13 v.3",
-    commentary_context="Santhanam: Whether or not Jupiter owns the 2nd, if he is conjunct Mars, wealth will be acquired — house occupied by them not standing for consideration.",
-    description="Jupiter conjunct Mars in any house: wealth acquired. House position irrelevant.",
+    commentary_context="Santhanam: Jupiter conjunct Mars gives wealth regardless of house ownership or placement. The 'whether or not' clarifies this is unconditional — no lordship or house modifier applies.",
+    description="Jupiter conjunct Mars in any house: wealth acquired. House position irrelevant. Unconditional — no lordship modifier.",
     concordance_texts=["Saravali"],
-    modifiers=[])
+    modifiers=[
+        {"condition": "unconditional_no_lordship_required", "effect": "conditionalizes", "strength": "none"},
+    ])
 
 # ═══ v.4 MISSING: 2nd + 11th lords joining in kendra/trikona → gains
 b.add(
