@@ -8,10 +8,13 @@ Used by V2ChapterBuilder.add() and corpus_audit.py for validation.
 from __future__ import annotations
 
 VALID_OUTCOME_DOMAINS = frozenset({
-    "longevity", "physical_health", "mental_health", "wealth", "career_status",
-    "marriage", "progeny", "spirituality", "intelligence_education",
-    "character_temperament", "physical_appearance", "foreign_travel",
-    "enemies_litigation", "property_vehicles", "fame_reputation",
+    # 8 primary domains (Track 2 target)
+    "wealth", "health", "relationships", "career",
+    "progeny", "longevity", "character", "spirituality",
+    # Legacy 15-domain taxonomy (accepted during migration; remove after Track 2 complete)
+    "physical_health", "mental_health", "career_status", "marriage",
+    "intelligence_education", "character_temperament", "physical_appearance",
+    "foreign_travel", "enemies_litigation", "property_vehicles", "fame_reputation",
 })
 
 VALID_OUTCOME_DIRECTIONS = frozenset({
@@ -115,3 +118,31 @@ VALID_UPAGRAHAS = frozenset({
 VALID_CONDITION_MODES = frozenset({
     "occupies", "aspects",
 })
+
+PRIMARY_DOMAINS = frozenset({
+    "wealth", "health", "relationships", "career",
+    "progeny", "longevity", "character", "spirituality",
+})
+
+PRIMARY_DOMAIN_PRIORITY = [
+    "wealth", "health", "relationships", "career",
+    "progeny", "longevity", "character", "spirituality",
+]
+
+DOMAIN_NORMALIZATION: dict[str, str] = {
+    "wealth": "wealth",
+    "physical_health": "health",
+    "marriage": "relationships",
+    "career_status": "career",
+    "progeny": "progeny",
+    "longevity": "longevity",
+    "character_temperament": "character",
+    "spirituality": "spirituality",
+    "fame_reputation": "career",
+    "property_vehicles": "wealth",
+    "intelligence_education": "character",
+    "enemies_litigation": "relationships",
+    "physical_appearance": "character",
+    "mental_health": "health",
+    "foreign_travel": "career",
+}

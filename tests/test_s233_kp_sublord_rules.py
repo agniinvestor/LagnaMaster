@@ -18,7 +18,7 @@ def test_fundamental_structure_rules():
     from src.corpus.kp_sublord_rules import KP_SUBLORD_RULES_REGISTRY
     rule = KP_SUBLORD_RULES_REGISTRY.get("KPS001")
     assert rule is not None
-    assert "vimshottari_proportion" in rule.tags
+    assert "vimshottari_proportion" in rule.keyword_tags
     assert rule.school == "kp"
 
 
@@ -26,40 +26,40 @@ def test_sublord_decisive_rule():
     from src.corpus.kp_sublord_rules import KP_SUBLORD_RULES_REGISTRY
     rule = KP_SUBLORD_RULES_REGISTRY.get("KPS002")
     assert rule is not None
-    assert "sublord_decisive" in rule.tags
-    assert "hierarchy" in rule.tags
+    assert "sublord_decisive" in rule.keyword_tags
+    assert "hierarchy" in rule.keyword_tags
 
 
 def test_marriage_rule():
     from src.corpus.kp_sublord_rules import KP_SUBLORD_RULES_REGISTRY
     rule = KP_SUBLORD_RULES_REGISTRY.get("KPS007")
     assert rule is not None
-    assert "kp_marriage" in rule.tags
-    assert "7th_house" in rule.tags
+    assert "kp_marriage" in rule.keyword_tags
+    assert "7th_house" in rule.keyword_tags
 
 
 def test_career_rule():
     from src.corpus.kp_sublord_rules import KP_SUBLORD_RULES_REGISTRY
     rule = KP_SUBLORD_RULES_REGISTRY.get("KPS015")
     assert rule is not None
-    assert "kp_career" in rule.tags
-    assert "10th_cusp" in rule.tags
+    assert "kp_career" in rule.keyword_tags
+    assert "10th_cusp" in rule.keyword_tags
 
 
 def test_disease_rule():
     from src.corpus.kp_sublord_rules import KP_SUBLORD_RULES_REGISTRY
     rule = KP_SUBLORD_RULES_REGISTRY.get("KPS019")
     assert rule is not None
-    assert "kp_disease" in rule.tags
-    assert "6_8_12_triangle" in rule.tags
+    assert "kp_disease" in rule.keyword_tags
+    assert "6_8_12_triangle" in rule.keyword_tags
 
 
 def test_horary_rule():
     from src.corpus.kp_sublord_rules import KP_SUBLORD_RULES_REGISTRY
     rule = KP_SUBLORD_RULES_REGISTRY.get("KPS027")
     assert rule is not None
-    assert "kp_horary" in rule.tags
-    assert "prashna" in rule.tags
+    assert "kp_horary" in rule.keyword_tags
+    assert "prashna" in rule.keyword_tags
 
 
 def test_all_kp_category():

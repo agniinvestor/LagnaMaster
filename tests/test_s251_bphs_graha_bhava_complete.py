@@ -42,7 +42,7 @@ def test_nine_planets_twelve_houses_each():
     for planet in planets:
         planet_rules = [
             r for r in BPHS_GRAHA_BHAVA_COMPLETE_REGISTRY.all()
-            if any(t.startswith(f"{planet}_") for t in r.tags)
+            if any(t.startswith(f"{planet}_") for t in r.keyword_tags)
         ]
         assert len(planet_rules) == 12, (
             f"{planet} has {len(planet_rules)} rules, expected 12"
@@ -54,7 +54,7 @@ def test_sun_block_gbc001_012():
     for i in range(1, 13):
         rule = BPHS_GRAHA_BHAVA_COMPLETE_REGISTRY.get(f"GBC{i:03d}")
         assert rule is not None
-        assert any(t.startswith("sun_") for t in rule.tags), f"GBC{i:03d} missing sun_ tag"
+        assert any(t.startswith("sun_") for t in rule.keyword_tags), f"GBC{i:03d} missing sun_ tag"
 
 
 def test_moon_block_gbc013_024():
@@ -62,7 +62,7 @@ def test_moon_block_gbc013_024():
     for i in range(13, 25):
         rule = BPHS_GRAHA_BHAVA_COMPLETE_REGISTRY.get(f"GBC{i:03d}")
         assert rule is not None
-        assert any(t.startswith("moon_") for t in rule.tags), f"GBC{i:03d} missing moon_ tag"
+        assert any(t.startswith("moon_") for t in rule.keyword_tags), f"GBC{i:03d} missing moon_ tag"
 
 
 def test_rahu_ketu_blocks():
@@ -70,11 +70,11 @@ def test_rahu_ketu_blocks():
     for i in range(85, 97):
         rule = BPHS_GRAHA_BHAVA_COMPLETE_REGISTRY.get(f"GBC{i:03d}")
         assert rule is not None
-        assert any(t.startswith("rahu_") for t in rule.tags), f"GBC{i:03d} missing rahu_ tag"
+        assert any(t.startswith("rahu_") for t in rule.keyword_tags), f"GBC{i:03d} missing rahu_ tag"
     for i in range(97, 109):
         rule = BPHS_GRAHA_BHAVA_COMPLETE_REGISTRY.get(f"GBC{i:03d}")
         assert rule is not None
-        assert any(t.startswith("ketu_") for t in rule.tags), f"GBC{i:03d} missing ketu_ tag"
+        assert any(t.startswith("ketu_") for t in rule.keyword_tags), f"GBC{i:03d} missing ketu_ tag"
 
 
 def test_implemented_false():

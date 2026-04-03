@@ -25,29 +25,29 @@ def test_rohini_most_favored():
     from src.corpus.bphs_nakshatra_rules_p1 import BPHS_NAKSHATRA_RULES_P1_REGISTRY
     rule = BPHS_NAKSHATRA_RULES_P1_REGISTRY.get("NAK004")
     assert rule is not None
-    assert "rohini" in rule.tags
-    assert "moon_favorite" in rule.tags
+    assert "rohini" in rule.keyword_tags
+    assert "moon_favorite" in rule.keyword_tags
 
 
 def test_pushya_most_auspicious():
     from src.corpus.bphs_nakshatra_rules_p1 import BPHS_NAKSHATRA_RULES_P1_REGISTRY
     rule = BPHS_NAKSHATRA_RULES_P1_REGISTRY.get("NAK008")
     assert rule is not None
-    assert "most_auspicious" in rule.tags
+    assert "most_auspicious" in rule.keyword_tags
 
 
 def test_rohini_moon_most_favored():
     from src.corpus.bphs_nakshatra_rules_p1 import BPHS_NAKSHATRA_RULES_P1_REGISTRY
     rule = BPHS_NAKSHATRA_RULES_P1_REGISTRY.get("NAK018")
     assert rule is not None
-    assert "moon_favorite" in rule.tags
+    assert "moon_favorite" in rule.keyword_tags
 
 
 def test_pushya_moon_most_auspicious():
     from src.corpus.bphs_nakshatra_rules_p1 import BPHS_NAKSHATRA_RULES_P1_REGISTRY
     rule = BPHS_NAKSHATRA_RULES_P1_REGISTRY.get("NAK022")
     assert rule is not None
-    assert "most_auspicious_moon" in rule.tags
+    assert "most_auspicious_moon" in rule.keyword_tags
 
 
 def test_nakshatra_categories():
@@ -62,9 +62,9 @@ def test_nakshatra_rulers_present():
     nak1 = BPHS_NAKSHATRA_RULES_P1_REGISTRY.get("NAK001")
     nak2 = BPHS_NAKSHATRA_RULES_P1_REGISTRY.get("NAK002")
     nak3 = BPHS_NAKSHATRA_RULES_P1_REGISTRY.get("NAK003")
-    assert "ketu" in nak1.tags
-    assert "venus" in nak2.tags
-    assert "sun" in nak3.tags
+    assert "ketu" in nak1.keyword_tags
+    assert "venus" in nak2.keyword_tags
+    assert "sun" in nak3.keyword_tags
 
 
 def test_combined_corpus_includes_nakshatra_p1():

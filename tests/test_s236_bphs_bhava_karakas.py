@@ -18,10 +18,10 @@ def test_12_naisargika_karakas():
     from src.corpus.bphs_bhava_karakas import BPHS_BHAVA_KARAKAS_REGISTRY
     naisargika_rules = [
         r for r in BPHS_BHAVA_KARAKAS_REGISTRY.all()
-        if any(f"{n}th_house" in r.tags or f"{n}st_house" in r.tags or
-               f"{n}nd_house" in r.tags or f"{n}rd_house" in r.tags
+        if any(f"{n}th_house" in r.keyword_tags or f"{n}st_house" in r.keyword_tags or
+               f"{n}nd_house" in r.keyword_tags or f"{n}rd_house" in r.keyword_tags
                for n in range(1, 13))
-        and "jaimini" not in r.tags
+        and "jaimini" not in r.keyword_tags
         and r.rule_id.startswith("BHK0") and int(r.rule_id[3:]) <= 12
     ]
     assert len(naisargika_rules) == 12
@@ -31,22 +31,22 @@ def test_7th_house_venus_karaka():
     from src.corpus.bphs_bhava_karakas import BPHS_BHAVA_KARAKAS_REGISTRY
     rule = BPHS_BHAVA_KARAKAS_REGISTRY.get("BHK007")
     assert rule is not None
-    assert "venus" in rule.tags
-    assert "spouse" in rule.tags
+    assert "venus" in rule.keyword_tags
+    assert "spouse" in rule.keyword_tags
 
 
 def test_karaka_bhava_nashta():
     from src.corpus.bphs_bhava_karakas import BPHS_BHAVA_KARAKAS_REGISTRY
     rule = BPHS_BHAVA_KARAKAS_REGISTRY.get("BHK021")
     assert rule is not None
-    assert "karaka_bhava_nashta" in rule.tags
+    assert "karaka_bhava_nashta" in rule.keyword_tags
 
 
 def test_atmakaraka_rule():
     from src.corpus.bphs_bhava_karakas import BPHS_BHAVA_KARAKAS_REGISTRY
     rule = BPHS_BHAVA_KARAKAS_REGISTRY.get("BHK014")
     assert rule is not None
-    assert "atmakaraka" in rule.tags
+    assert "atmakaraka" in rule.keyword_tags
     assert rule.school == "jaimini"
 
 

@@ -105,14 +105,14 @@ def test_all_12_lagnas_covered():
 def test_yogakaraka_count():
     from src.corpus.laghu_parashari_functional import LAGHU_PARASHARI_FUNCTIONAL_REGISTRY
     yogakaraka_rules = [r for r in LAGHU_PARASHARI_FUNCTIONAL_REGISTRY.all()
-                        if "yogakaraka" in r.tags]
+                        if "yogakaraka" in r.keyword_tags]
     assert len(yogakaraka_rules) == 6, f"Expected 6 yogakaraka rules, got {len(yogakaraka_rules)}"
 
 
 def test_aries_no_yogakaraka():
     from src.corpus.laghu_parashari_functional import LAGHU_PARASHARI_FUNCTIONAL_REGISTRY
     aries_yks = [r for r in LAGHU_PARASHARI_FUNCTIONAL_REGISTRY.all()
-                 if "aries" in r.lagna_scope and "yogakaraka" in r.tags]
+                 if "aries" in r.lagna_scope and "yogakaraka" in r.keyword_tags]
     assert len(aries_yks) == 0
 
 
@@ -121,8 +121,8 @@ def test_lpf016_taurus_saturn_yogakaraka():
     rule = LAGHU_PARASHARI_FUNCTIONAL_REGISTRY.get("LPF016")
     assert rule is not None
     assert "taurus" in rule.lagna_scope
-    assert "saturn" in rule.tags
-    assert "yogakaraka" in rule.tags
+    assert "saturn" in rule.keyword_tags
+    assert "yogakaraka" in rule.keyword_tags
 
 
 def test_lpf030_cancer_mars_yogakaraka():
@@ -130,8 +130,8 @@ def test_lpf030_cancer_mars_yogakaraka():
     rule = LAGHU_PARASHARI_FUNCTIONAL_REGISTRY.get("LPF030")
     assert rule is not None
     assert "cancer" in rule.lagna_scope
-    assert "mars" in rule.tags
-    assert "yogakaraka" in rule.tags
+    assert "mars" in rule.keyword_tags
+    assert "yogakaraka" in rule.keyword_tags
 
 
 def test_lpf039_leo_mars_yogakaraka():
@@ -139,7 +139,7 @@ def test_lpf039_leo_mars_yogakaraka():
     rule = LAGHU_PARASHARI_FUNCTIONAL_REGISTRY.get("LPF039")
     assert rule is not None
     assert "leo" in rule.lagna_scope
-    assert "yogakaraka" in rule.tags
+    assert "yogakaraka" in rule.keyword_tags
 
 
 def test_lpf061_libra_saturn_yogakaraka():
@@ -147,8 +147,8 @@ def test_lpf061_libra_saturn_yogakaraka():
     rule = LAGHU_PARASHARI_FUNCTIONAL_REGISTRY.get("LPF061")
     assert rule is not None
     assert "libra" in rule.lagna_scope
-    assert "saturn" in rule.tags
-    assert "yogakaraka" in rule.tags
+    assert "saturn" in rule.keyword_tags
+    assert "yogakaraka" in rule.keyword_tags
 
 
 def test_lpf087_capricorn_venus_yogakaraka():
@@ -156,8 +156,8 @@ def test_lpf087_capricorn_venus_yogakaraka():
     rule = LAGHU_PARASHARI_FUNCTIONAL_REGISTRY.get("LPF087")
     assert rule is not None
     assert "capricorn" in rule.lagna_scope
-    assert "venus" in rule.tags
-    assert "yogakaraka" in rule.tags
+    assert "venus" in rule.keyword_tags
+    assert "yogakaraka" in rule.keyword_tags
 
 
 def test_lpf096_aquarius_venus_yogakaraka():
@@ -165,7 +165,7 @@ def test_lpf096_aquarius_venus_yogakaraka():
     rule = LAGHU_PARASHARI_FUNCTIONAL_REGISTRY.get("LPF096")
     assert rule is not None
     assert "aquarius" in rule.lagna_scope
-    assert "yogakaraka" in rule.tags
+    assert "yogakaraka" in rule.keyword_tags
 
 
 def test_system_natal():

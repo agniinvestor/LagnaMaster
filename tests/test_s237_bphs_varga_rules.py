@@ -18,39 +18,39 @@ def test_navamsha_most_important():
     from src.corpus.bphs_varga_rules import BPHS_VARGA_RULES_REGISTRY
     rule = BPHS_VARGA_RULES_REGISTRY.get("VAR001")
     assert rule is not None
-    assert "most_important_varga" in rule.tags
+    assert "most_important_varga" in rule.keyword_tags
 
 
 def test_vargottama_rule():
     from src.corpus.bphs_varga_rules import BPHS_VARGA_RULES_REGISTRY
     rule = BPHS_VARGA_RULES_REGISTRY.get("VAR002")
     assert rule is not None
-    assert "vargottama" in rule.tags
-    assert "peak_strength" in rule.tags
+    assert "vargottama" in rule.keyword_tags
+    assert "peak_strength" in rule.keyword_tags
 
 
 def test_dashamsha_career():
     from src.corpus.bphs_varga_rules import BPHS_VARGA_RULES_REGISTRY
     rule = BPHS_VARGA_RULES_REGISTRY.get("VAR011")
     assert rule is not None
-    assert "dashamsha" in rule.tags
-    assert "career" in rule.tags
+    assert "dashamsha" in rule.keyword_tags
+    assert "career" in rule.keyword_tags
 
 
 def test_karakamsha_rule():
     from src.corpus.bphs_varga_rules import BPHS_VARGA_RULES_REGISTRY
     rule = BPHS_VARGA_RULES_REGISTRY.get("VAR009")
     assert rule is not None
-    assert "karakamsha" in rule.tags
-    assert "atmakaraka" in rule.tags
+    assert "karakamsha" in rule.keyword_tags
+    assert "atmakaraka" in rule.keyword_tags
 
 
 def test_d12_parents():
     from src.corpus.bphs_varga_rules import BPHS_VARGA_RULES_REGISTRY
     rule = BPHS_VARGA_RULES_REGISTRY.get("VAR020")
     assert rule is not None
-    assert "parents" in rule.tags
-    assert "dwadashamsha" in rule.tags
+    assert "parents" in rule.keyword_tags
+    assert "dwadashamsha" in rule.keyword_tags
 
 
 def test_all_varga_category():

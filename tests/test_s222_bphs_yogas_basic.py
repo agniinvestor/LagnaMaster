@@ -25,11 +25,11 @@ def test_neecha_bhanga_present():
     from src.corpus.bphs_yogas_basic import BPHS_YOGAS_BASIC_REGISTRY
     rule = BPHS_YOGAS_BASIC_REGISTRY.get("YB012")
     assert rule is not None
-    assert "neecha_bhanga" in rule.tags
+    assert "neecha_bhanga" in rule.keyword_tags
 
 
 def test_viparita_yoga_present():
     from src.corpus.bphs_yogas_basic import BPHS_YOGAS_BASIC_REGISTRY
     rule = BPHS_YOGAS_BASIC_REGISTRY.get("YB014")
     assert rule is not None
-    assert "viparita_raja_yoga" in rule.tags
+    assert "viparita_raja_yoga" in rule.keyword_tags

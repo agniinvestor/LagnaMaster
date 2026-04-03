@@ -35,13 +35,13 @@ def test_implemented_false():
 def test_phx_tag_on_all_rules():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
     for rule in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all():
-        assert "phx" in rule.tags, f"{rule.rule_id} missing 'phx' tag"
+        assert "phx" in rule.keyword_tags, f"{rule.rule_id} missing 'phx' tag"
 
 
 def test_parashari_tag_on_all_rules():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
     for rule in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all():
-        assert "parashari" in rule.tags, f"{rule.rule_id} missing 'parashari' tag"
+        assert "parashari" in rule.keyword_tags, f"{rule.rule_id} missing 'parashari' tag"
 
 
 def test_all_12_rashis_covered():
@@ -51,7 +51,7 @@ def test_all_12_rashis_covered():
         "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces",
     ]
     for rashi in rashis:
-        rules = [r for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all() if rashi in r.tags]
+        rules = [r for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all() if rashi in r.keyword_tags]
         assert len(rules) >= 1, f"{rashi} not covered"
 
 
@@ -60,20 +60,20 @@ def test_planets_covered():
     planets = ["sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn", "rahu", "ketu"]
     covered = [
         p for p in planets
-        if any(p in r.tags for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all())
+        if any(p in r.keyword_tags for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all())
     ]
     assert len(covered) >= 7
 
 
 def test_yoga_rules():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
-    yoga = [r for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all() if "yoga" in r.tags]
+    yoga = [r for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all() if "yoga" in r.keyword_tags]
     assert len(yoga) >= 10
 
 
 def test_dignity_rules():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
-    dignity = [r for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all() if "dignity" in r.tags]
+    dignity = [r for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all() if "dignity" in r.keyword_tags]
     assert len(dignity) >= 5
 
 
@@ -85,20 +85,20 @@ def test_house_rules():
     ]
     covered = [
         t for t in house_tags
-        if any(t in r.tags for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all())
+        if any(t in r.keyword_tags for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all())
     ]
     assert len(covered) >= 12
 
 
 def test_dasha_rules():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
-    dasha = [r for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all() if "dasha" in r.tags]
+    dasha = [r for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all() if "dasha" in r.keyword_tags]
     assert len(dasha) >= 5
 
 
 def test_divisional_chart_rules():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
-    div = [r for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all() if "varga" in r.tags]
+    div = [r for r in PHALADEEPIKA_EXHAUSTIVE_REGISTRY.all() if "varga" in r.keyword_tags]
     assert len(div) >= 5
 
 
@@ -106,42 +106,42 @@ def test_phx022_exaltation():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
     rule = PHALADEEPIKA_EXHAUSTIVE_REGISTRY.get("PHX022")
     assert rule is not None
-    assert "exaltation" in rule.tags
+    assert "exaltation" in rule.keyword_tags
 
 
 def test_phx026_neecha_bhanga():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
     rule = PHALADEEPIKA_EXHAUSTIVE_REGISTRY.get("PHX026")
     assert rule is not None
-    assert any("neecha_bhanga" in t for t in rule.tags)
+    assert any("neecha_bhanga" in t for t in rule.keyword_tags)
 
 
 def test_phx046_pancha_mahapurusha():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
     rule = PHALADEEPIKA_EXHAUSTIVE_REGISTRY.get("PHX046")
     assert rule is not None
-    assert "pancha_mahapurusha" in rule.tags
+    assert "pancha_mahapurusha" in rule.keyword_tags
 
 
 def test_phx047_gaja_kesari():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
     rule = PHALADEEPIKA_EXHAUSTIVE_REGISTRY.get("PHX047")
     assert rule is not None
-    assert any("gaja_kesari" in t for t in rule.tags)
+    assert any("gaja_kesari" in t for t in rule.keyword_tags)
 
 
 def test_phx087_sade_sati():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
     rule = PHALADEEPIKA_EXHAUSTIVE_REGISTRY.get("PHX087")
     assert rule is not None
-    assert "sade_sati" in rule.tags
+    assert "sade_sati" in rule.keyword_tags
 
 
 def test_phx103_shadbala():
     from src.corpus.phaladeepika_exhaustive import PHALADEEPIKA_EXHAUSTIVE_REGISTRY
     rule = PHALADEEPIKA_EXHAUSTIVE_REGISTRY.get("PHX103")
     assert rule is not None
-    assert "shadbala" in rule.tags
+    assert "shadbala" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_phx():

@@ -29,13 +29,13 @@ def test_lpy_all_12_lagnas_covered():
 
 def test_lpy_yogakaraka_6_lagnas():
     from src.corpus.laghu_parashari_bcd import LAGHU_PARASHARI_YOGAKARAKA_REGISTRY
-    yk = [r for r in LAGHU_PARASHARI_YOGAKARAKA_REGISTRY.all() if "yogakaraka" in r.tags]
+    yk = [r for r in LAGHU_PARASHARI_YOGAKARAKA_REGISTRY.all() if "yogakaraka" in r.keyword_tags]
     assert len(yk) == 6, f"Expected 6 yogakaraka rules, got {len(yk)}"
 
 
 def test_lpy_no_yogakaraka_6_lagnas():
     from src.corpus.laghu_parashari_bcd import LAGHU_PARASHARI_YOGAKARAKA_REGISTRY
-    no_yk = [r for r in LAGHU_PARASHARI_YOGAKARAKA_REGISTRY.all() if "no_yogakaraka" in r.tags]
+    no_yk = [r for r in LAGHU_PARASHARI_YOGAKARAKA_REGISTRY.all() if "no_yogakaraka" in r.keyword_tags]
     assert len(no_yk) == 6, f"Expected 6 no_yogakaraka rules, got {len(no_yk)}"
 
 
@@ -44,8 +44,8 @@ def test_lpy002_taurus_saturn_yogakaraka():
     rule = LAGHU_PARASHARI_YOGAKARAKA_REGISTRY.get("LPY002")
     assert rule is not None
     assert "taurus" in rule.lagna_scope
-    assert "saturn" in rule.tags
-    assert "yogakaraka" in rule.tags
+    assert "saturn" in rule.keyword_tags
+    assert "yogakaraka" in rule.keyword_tags
 
 
 def test_lpy004_cancer_mars_yogakaraka():
@@ -53,8 +53,8 @@ def test_lpy004_cancer_mars_yogakaraka():
     rule = LAGHU_PARASHARI_YOGAKARAKA_REGISTRY.get("LPY004")
     assert rule is not None
     assert "cancer" in rule.lagna_scope
-    assert "mars" in rule.tags
-    assert "yogakaraka" in rule.tags
+    assert "mars" in rule.keyword_tags
+    assert "yogakaraka" in rule.keyword_tags
 
 
 def test_lpy_phase_school_source():
@@ -96,21 +96,21 @@ def test_lpk_phase_1b_conditional():
 def test_lpk_aries_moon():
     from src.corpus.laghu_parashari_bcd import LAGHU_PARASHARI_KENDRADHIPATI_REGISTRY
     aries_moon = [r for r in LAGHU_PARASHARI_KENDRADHIPATI_REGISTRY.all()
-                  if "aries" in r.lagna_scope and "moon" in r.tags]
+                  if "aries" in r.lagna_scope and "moon" in r.keyword_tags]
     assert len(aries_moon) >= 1, "Aries Moon KD rule missing"
 
 
 def test_lpk_gemini_jupiter():
     from src.corpus.laghu_parashari_bcd import LAGHU_PARASHARI_KENDRADHIPATI_REGISTRY
     gmj = [r for r in LAGHU_PARASHARI_KENDRADHIPATI_REGISTRY.all()
-           if "gemini" in r.lagna_scope and "jupiter" in r.tags]
+           if "gemini" in r.lagna_scope and "jupiter" in r.keyword_tags]
     assert len(gmj) >= 1, "Gemini Jupiter KD rule missing"
 
 
 def test_lpk_virgo_jupiter():
     from src.corpus.laghu_parashari_bcd import LAGHU_PARASHARI_KENDRADHIPATI_REGISTRY
     vj = [r for r in LAGHU_PARASHARI_KENDRADHIPATI_REGISTRY.all()
-          if "virgo" in r.lagna_scope and "jupiter" in r.tags]
+          if "virgo" in r.lagna_scope and "jupiter" in r.keyword_tags]
     assert len(vj) >= 1, "Virgo Jupiter KD rule missing"
 
 
@@ -155,13 +155,13 @@ def test_lpd_all_12_houses_covered():
 
 def test_lpd_yogakaraka_present():
     from src.corpus.laghu_parashari_bcd import LAGHU_PARASHARI_DASHA_REGISTRY
-    yk = [r for r in LAGHU_PARASHARI_DASHA_REGISTRY.all() if "yogakaraka" in r.tags]
+    yk = [r for r in LAGHU_PARASHARI_DASHA_REGISTRY.all() if "yogakaraka" in r.keyword_tags]
     assert len(yk) >= 1, "No yogakaraka dasha rule found"
 
 
 def test_lpd_maraka_present():
     from src.corpus.laghu_parashari_bcd import LAGHU_PARASHARI_DASHA_REGISTRY
-    mk = [r for r in LAGHU_PARASHARI_DASHA_REGISTRY.all() if "maraka" in r.tags]
+    mk = [r for r in LAGHU_PARASHARI_DASHA_REGISTRY.all() if "maraka" in r.keyword_tags]
     assert len(mk) >= 1, "No maraka dasha rule found"
 
 

@@ -45,7 +45,7 @@ Confidence (Phase 1B — mechanical formula)
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field, asdict
+from dataclasses import dataclass, field, asdict, InitVar
 
 
 @dataclass
@@ -133,7 +133,10 @@ class RuleRecord:
     description: str
     confidence: float
     verse: str = ""
-    tags: list[str] = field(default_factory=list)
+    keyword_tags: list[str] = field(default_factory=list)
+    # 'tags' is a backward-compat alias for keyword_tags (legacy callers use tags=).
+    # The computed property 'tags' (domain tags) shadows this after __post_init__.
+    tags: InitVar[list[str] | None] = None
     implemented: bool = False
     engine_ref: str = ""
 
@@ -142,6 +145,7 @@ class RuleRecord:
     modifiers: list[dict] = field(default_factory=list)
     exceptions: list[str] = field(default_factory=list)
     outcome_domains: list[str] = field(default_factory=list)
+    primary_domain: str = ""
     outcome_direction: str = ""
     outcome_intensity: str = ""
     outcome_timing: str = "unspecified"
@@ -199,7 +203,15 @@ class RuleRecord:
     review_session: str = ""                # Session where maker-checker review occurred
     review_notes: str = ""                  # Brief summary of checker feedback
 
-    def __post_init__(self) -> None:
+    @property
+    def computed_outcome_domains(self) -> list[str]:
+        """All unique prediction domains. Derived from predictions."""
+        return sorted({p.get("domain", "") for p in self.predictions})
+
+    def __post_init__(self, tags: list[str] | None) -> None:
+        # Backward-compat: callers that pass tags=[ ... ] get stored in keyword_tags
+        if tags is not None and not self.keyword_tags:
+            self.keyword_tags = tags
         if not (0.0 <= self.confidence <= 1.0):
             raise ValueError(
                 f"RuleRecord {self.rule_id}: confidence={self.confidence} must be [0,1]"
@@ -207,3 +219,14 @@ class RuleRecord:
 
     def to_dict(self) -> dict:
         return asdict(self)
+
+
+# 'tags' property is defined post-class to avoid InitVar/property name conflict.
+# The InitVar 'tags' in __init__ accepts legacy keyword-search tags for backward compat;
+# this property returns the derived prediction-domain tags (all domains minus primary).
+def _tags_property(self) -> list[str]:
+    """All prediction domains except primary. Derived, not stored."""
+    return sorted({p.get("domain", "") for p in self.predictions} - {self.primary_domain})
+
+
+RuleRecord.tags = property(_tags_property, doc=_tags_property.__doc__)  # type: ignore[attr-defined]

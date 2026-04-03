@@ -18,31 +18,31 @@ def test_vaidyanatha_school():
     from src.corpus.jataka_parijata_ext import JATAKA_PARIJATA_EXT_REGISTRY
     for rule in JATAKA_PARIJATA_EXT_REGISTRY.all():
         assert rule.school == "vaidyanatha", f"{rule.rule_id} wrong school"
-        assert "vaidyanatha" in rule.tags
+        assert "vaidyanatha" in rule.keyword_tags
 
 
 def test_parivartana_classifications():
     from src.corpus.jataka_parijata_ext import JATAKA_PARIJATA_EXT_REGISTRY
     rule = JATAKA_PARIJATA_EXT_REGISTRY.get("JPE011")
     assert rule is not None
-    assert "maha_parivartana" in rule.tags
-    assert "dainya_parivartana" in rule.tags
+    assert "maha_parivartana" in rule.keyword_tags
+    assert "dainya_parivartana" in rule.keyword_tags
 
 
 def test_neecha_bhanga_rule():
     from src.corpus.jataka_parijata_ext import JATAKA_PARIJATA_EXT_REGISTRY
     rule = JATAKA_PARIJATA_EXT_REGISTRY.get("JPE012")
     assert rule is not None
-    assert "neecha_bhanga" in rule.tags
-    assert "debilitation_cancelled" in rule.tags
+    assert "neecha_bhanga" in rule.keyword_tags
+    assert "debilitation_cancelled" in rule.keyword_tags
 
 
 def test_kemadruma_yoga():
     from src.corpus.jataka_parijata_ext import JATAKA_PARIJATA_EXT_REGISTRY
     rule = JATAKA_PARIJATA_EXT_REGISTRY.get("JPE019")
     assert rule is not None
-    assert "kemadruma" in rule.tags
-    assert "moon_alone" in rule.tags
+    assert "kemadruma" in rule.keyword_tags
+    assert "moon_alone" in rule.keyword_tags
 
 
 def test_all_9_mahadashas_present():
@@ -56,8 +56,8 @@ def test_venus_dasha_20_years():
     from src.corpus.jataka_parijata_ext import JATAKA_PARIJATA_EXT_REGISTRY
     rule = JATAKA_PARIJATA_EXT_REGISTRY.get("JPE030")
     assert rule is not None
-    assert "20_years" in rule.tags
-    assert "venus_dasha" in rule.tags
+    assert "20_years" in rule.keyword_tags
+    assert "venus_dasha" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_jpe():

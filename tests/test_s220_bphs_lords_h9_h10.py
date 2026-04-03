@@ -21,5 +21,5 @@ def test_dharma_karma_adhipati_rule():
     for rule_id in ("H9L010", "H10L009"):
         rule = BPHS_LORDS_H9_H10_REGISTRY.get(rule_id)
         assert rule is not None
-        assert "dharma_karma_adhipati" in rule.tags, \
+        assert "dharma_karma_adhipati" in rule.keyword_tags, \
             f"{rule_id} missing dharma_karma_adhipati tag"

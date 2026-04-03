@@ -26,38 +26,38 @@ def test_chara_karaka_system():
     from src.corpus.jaimini_sutras_rules import JAIMINI_SUTRAS_RULES_REGISTRY
     rule = JAIMINI_SUTRAS_RULES_REGISTRY.get("JMS001")
     assert rule is not None
-    assert "chara_karaka" in rule.tags
-    assert "atmakaraka" in rule.tags
-    assert "darakaraka" in rule.tags
+    assert "chara_karaka" in rule.keyword_tags
+    assert "atmakaraka" in rule.keyword_tags
+    assert "darakaraka" in rule.keyword_tags
 
 
 def test_7_karakas_rule():
     from src.corpus.jaimini_sutras_rules import JAIMINI_SUTRAS_RULES_REGISTRY
     rule = JAIMINI_SUTRAS_RULES_REGISTRY.get("JMS002")
     assert rule is not None
-    assert "7_karakas" in rule.tags
-    assert "ak_amk_bk_mk_pk_gk_dk" in rule.tags
+    assert "7_karakas" in rule.keyword_tags
+    assert "ak_amk_bk_mk_pk_gk_dk" in rule.keyword_tags
 
 
 def test_rashi_drishti():
     from src.corpus.jaimini_sutras_rules import JAIMINI_SUTRAS_RULES_REGISTRY
     rule = JAIMINI_SUTRAS_RULES_REGISTRY.get("JMS009")
     assert rule is not None
-    assert "rashi_drishti" in rule.tags
-    assert "movable_fixed_dual" in rule.tags
+    assert "rashi_drishti" in rule.keyword_tags
+    assert "movable_fixed_dual" in rule.keyword_tags
 
 
 def test_arudha_lagna():
     from src.corpus.jaimini_sutras_rules import JAIMINI_SUTRAS_RULES_REGISTRY
     rule = JAIMINI_SUTRAS_RULES_REGISTRY.get("JMS012")
     assert rule is not None
-    assert "arudha_lagna" in rule.tags
-    assert "perception" in rule.tags
+    assert "arudha_lagna" in rule.keyword_tags
+    assert "perception" in rule.keyword_tags
 
 
 def test_chara_dasha():
     from src.corpus.jaimini_sutras_rules import JAIMINI_SUTRAS_RULES_REGISTRY
-    dasha_rules = [r for r in JAIMINI_SUTRAS_RULES_REGISTRY.all() if "chara_dasha" in r.tags]
+    dasha_rules = [r for r in JAIMINI_SUTRAS_RULES_REGISTRY.all() if "chara_dasha" in r.keyword_tags]
     assert len(dasha_rules) >= 3
 
 
@@ -65,7 +65,7 @@ def test_gulika_upagraha():
     from src.corpus.jaimini_sutras_rules import JAIMINI_SUTRAS_RULES_REGISTRY
     rule = JAIMINI_SUTRAS_RULES_REGISTRY.get("JMS027")
     assert rule is not None
-    assert "gulika" in rule.tags
+    assert "gulika" in rule.keyword_tags
     assert rule.category == "upagraha"
 
 
@@ -73,8 +73,8 @@ def test_karakamsha():
     from src.corpus.jaimini_sutras_rules import JAIMINI_SUTRAS_RULES_REGISTRY
     rule = JAIMINI_SUTRAS_RULES_REGISTRY.get("JMS003")
     assert rule is not None
-    assert "karakamsha" in rule.tags
-    assert "soul_purpose" in rule.tags
+    assert "karakamsha" in rule.keyword_tags
+    assert "soul_purpose" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_jms():

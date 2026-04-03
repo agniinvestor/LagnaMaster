@@ -30,7 +30,7 @@ def test_schools():
 
 def test_pancha_mahapurusha_5_yogas():
     from src.corpus.yoga_extended_rules import YOGA_EXTENDED_RULES_REGISTRY
-    pmp = [r for r in YOGA_EXTENDED_RULES_REGISTRY.all() if "pancha_mahapurusha" in r.tags]
+    pmp = [r for r in YOGA_EXTENDED_RULES_REGISTRY.all() if "pancha_mahapurusha" in r.keyword_tags]
     assert len(pmp) == 5
 
 
@@ -38,38 +38,38 @@ def test_ruchaka_yoga():
     from src.corpus.yoga_extended_rules import YOGA_EXTENDED_RULES_REGISTRY
     rule = YOGA_EXTENDED_RULES_REGISTRY.get("YGE001")
     assert rule is not None
-    assert "ruchaka_yoga" in rule.tags
-    assert "mars_kendra" in rule.tags
+    assert "ruchaka_yoga" in rule.keyword_tags
+    assert "mars_kendra" in rule.keyword_tags
 
 
 def test_hamsa_yoga():
     from src.corpus.yoga_extended_rules import YOGA_EXTENDED_RULES_REGISTRY
     rule = YOGA_EXTENDED_RULES_REGISTRY.get("YGE003")
     assert rule is not None
-    assert "hamsa_yoga" in rule.tags
-    assert "jupiter_kendra" in rule.tags
+    assert "hamsa_yoga" in rule.keyword_tags
+    assert "jupiter_kendra" in rule.keyword_tags
 
 
 def test_viparita_raja_yoga():
     from src.corpus.yoga_extended_rules import YOGA_EXTENDED_RULES_REGISTRY
     rule = YOGA_EXTENDED_RULES_REGISTRY.get("YGE013")
     assert rule is not None
-    assert "viparita_raja_yoga" in rule.tags
-    assert "6_8_12_lords" in rule.tags
+    assert "viparita_raja_yoga" in rule.keyword_tags
+    assert "6_8_12_lords" in rule.keyword_tags
 
 
 def test_kartari_yoga():
     from src.corpus.yoga_extended_rules import YOGA_EXTENDED_RULES_REGISTRY
     rule = YOGA_EXTENDED_RULES_REGISTRY.get("YGE030")
     assert rule is not None
-    assert "kartari_yoga" in rule.tags
-    assert "paapa_kartari" in rule.tags
-    assert "shubha_kartari" in rule.tags
+    assert "kartari_yoga" in rule.keyword_tags
+    assert "paapa_kartari" in rule.keyword_tags
+    assert "shubha_kartari" in rule.keyword_tags
 
 
 def test_nabhasa_yogas():
     from src.corpus.yoga_extended_rules import YOGA_EXTENDED_RULES_REGISTRY
-    nabhasa = [r for r in YOGA_EXTENDED_RULES_REGISTRY.all() if "nabhasa" in r.tags]
+    nabhasa = [r for r in YOGA_EXTENDED_RULES_REGISTRY.all() if "nabhasa" in r.keyword_tags]
     assert len(nabhasa) >= 6
 
 

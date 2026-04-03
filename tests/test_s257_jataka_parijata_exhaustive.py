@@ -35,7 +35,7 @@ def test_implemented_false():
 def test_jp_tag_on_all_rules():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     for rule in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all():
-        assert "jp" in rule.tags, f"{rule.rule_id} missing 'jp' tag"
+        assert "jp" in rule.keyword_tags, f"{rule.rule_id} missing 'jp' tag"
 
 
 def test_all_12_rashis_covered():
@@ -45,7 +45,7 @@ def test_all_12_rashis_covered():
         "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces",
     ]
     for rashi in rashis:
-        rules = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if rashi in r.tags]
+        rules = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if rashi in r.keyword_tags]
         assert len(rules) >= 1, f"{rashi} not covered"
 
 
@@ -53,13 +53,13 @@ def test_all_9_planets_covered():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     planets = ["sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn", "rahu", "ketu"]
     for p in planets:
-        rules = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if p in r.tags]
+        rules = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if p in r.keyword_tags]
         assert len(rules) >= 2, f"{p} has fewer than 2 rules"
 
 
 def test_raja_yoga_rules():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
-    raja = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if "raja_yoga" in r.tags]
+    raja = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if "raja_yoga" in r.keyword_tags]
     assert len(raja) >= 3
 
 
@@ -67,81 +67,81 @@ def test_mahapurusha_yoga():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     rule = JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.get("JPX042")
     assert rule is not None
-    assert "mahapurusha" in rule.tags
+    assert "mahapurusha" in rule.keyword_tags
 
 
 def test_viparita_raja_yoga():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     rule = JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.get("JPX041")
     assert rule is not None
-    assert "harsha" in rule.tags
-    assert "sarala" in rule.tags
-    assert "vimala" in rule.tags
+    assert "harsha" in rule.keyword_tags
+    assert "sarala" in rule.keyword_tags
+    assert "vimala" in rule.keyword_tags
 
 
 def test_yoga_karaka():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     rule = JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.get("JPX040")
     assert rule is not None
-    assert "yoga_karaka" in rule.tags
+    assert "yoga_karaka" in rule.keyword_tags
 
 
 def test_neecha_bhanga():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     rule = JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.get("JPX022")
     assert rule is not None
-    assert "neecha_bhanga" in rule.tags
+    assert "neecha_bhanga" in rule.keyword_tags
 
 
 def test_mangal_dosha():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     rule = JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.get("JPX050")
     assert rule is not None
-    assert "mangal_dosha" in rule.tags
+    assert "mangal_dosha" in rule.keyword_tags
 
 
 def test_dig_bala():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     rule = JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.get("JPX024")
     assert rule is not None
-    assert "dig_bala" in rule.tags
+    assert "dig_bala" in rule.keyword_tags
 
 
 def test_sade_sati():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     rule = JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.get("JPX074")
     assert rule is not None
-    assert "sade_sati" in rule.tags
+    assert "sade_sati" in rule.keyword_tags
 
 
 def test_vargottama():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     rule = JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.get("JPX025")
     assert rule is not None
-    assert "vargottama" in rule.tags
+    assert "vargottama" in rule.keyword_tags
 
 
 def test_longevity_rules():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
-    longevity = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if "longevity" in r.tags]
+    longevity = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if "longevity" in r.keyword_tags]
     assert len(longevity) >= 3
 
 
 def test_yoga_count():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
-    yogas = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if "yoga" in r.tags]
+    yogas = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if "yoga" in r.keyword_tags]
     assert len(yogas) >= 20
 
 
 def test_varga_rules():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
-    varga = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if "varga" in r.tags]
+    varga = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if "varga" in r.keyword_tags]
     assert len(varga) >= 4
 
 
 def test_medical_rules():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
-    medical = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if "medical" in r.tags]
+    medical = [r for r in JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.all() if "medical" in r.keyword_tags]
     assert len(medical) >= 4
 
 
@@ -149,7 +149,7 @@ def test_parijata_yoga():
     from src.corpus.jataka_parijata_exhaustive import JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY
     rule = JATAKA_PARIJATA_EXHAUSTIVE_REGISTRY.get("JPX093")
     assert rule is not None
-    assert "parijata_yoga" in rule.tags
+    assert "parijata_yoga" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_jpx():

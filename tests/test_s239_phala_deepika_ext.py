@@ -18,23 +18,23 @@ def test_mantreswara_school():
     from src.corpus.phala_deepika_ext import PHALA_DEEPIKA_EXT_REGISTRY
     for rule in PHALA_DEEPIKA_EXT_REGISTRY.all():
         assert rule.school == "mantreswara", f"{rule.rule_id} wrong school"
-        assert "mantreswara" in rule.tags
+        assert "mantreswara" in rule.keyword_tags
 
 
 def test_pancha_mahapurusha_details():
     from src.corpus.phala_deepika_ext import PHALA_DEEPIKA_EXT_REGISTRY
     rule = PHALA_DEEPIKA_EXT_REGISTRY.get("PDE013")
     assert rule is not None
-    assert "ruchaka" in rule.tags
-    assert "pancha_mahapurusha" in rule.tags
+    assert "ruchaka" in rule.keyword_tags
+    assert "pancha_mahapurusha" in rule.keyword_tags
 
 
 def test_gajakesari_refined():
     from src.corpus.phala_deepika_ext import PHALA_DEEPIKA_EXT_REGISTRY
     rule = PHALA_DEEPIKA_EXT_REGISTRY.get("PDE018")
     assert rule is not None
-    assert "gajakesari" in rule.tags
-    assert "refined_condition" in rule.tags
+    assert "gajakesari" in rule.keyword_tags
+    assert "refined_condition" in rule.keyword_tags
 
 
 def test_health_rules_present():
@@ -47,15 +47,15 @@ def test_yoga_cancellation_rule():
     from src.corpus.phala_deepika_ext import PHALA_DEEPIKA_EXT_REGISTRY
     rule = PHALA_DEEPIKA_EXT_REGISTRY.get("PDE027")
     assert rule is not None
-    assert "yoga_cancellation" in rule.tags
+    assert "yoga_cancellation" in rule.keyword_tags
 
 
 def test_graha_yuddha_rule():
     from src.corpus.phala_deepika_ext import PHALA_DEEPIKA_EXT_REGISTRY
     rule = PHALA_DEEPIKA_EXT_REGISTRY.get("PDE030")
     assert rule is not None
-    assert "graha_yuddha" in rule.tags
-    assert "planetary_war" in rule.tags
+    assert "graha_yuddha" in rule.keyword_tags
+    assert "planetary_war" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_pde():

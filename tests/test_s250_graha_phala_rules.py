@@ -30,7 +30,7 @@ def test_schools():
 
 def test_sun_house_rules():
     from src.corpus.graha_phala_rules import GRAHA_PHALA_RULES_REGISTRY
-    sun_rules = [r for r in GRAHA_PHALA_RULES_REGISTRY.all() if "sun_house" in r.tags]
+    sun_rules = [r for r in GRAHA_PHALA_RULES_REGISTRY.all() if "sun_house" in r.keyword_tags]
     assert len(sun_rules) >= 4
 
 
@@ -38,39 +38,39 @@ def test_mangal_dosha():
     from src.corpus.graha_phala_rules import GRAHA_PHALA_RULES_REGISTRY
     rule = GRAHA_PHALA_RULES_REGISTRY.get("GPH009")
     assert rule is not None
-    assert "mangal_dosha" in rule.tags
-    assert "1_4_7" in rule.tags
+    assert "mangal_dosha" in rule.keyword_tags
+    assert "1_4_7" in rule.keyword_tags
 
 
 def test_saturn_upachaya():
     from src.corpus.graha_phala_rules import GRAHA_PHALA_RULES_REGISTRY
     rule = GRAHA_PHALA_RULES_REGISTRY.get("GPH021")
     assert rule is not None
-    assert "upachaya_3_6_11" in rule.tags
-    assert "steady_gains" in rule.tags
+    assert "upachaya_3_6_11" in rule.keyword_tags
+    assert "steady_gains" in rule.keyword_tags
 
 
 def test_ketu_moksha():
     from src.corpus.graha_phala_rules import GRAHA_PHALA_RULES_REGISTRY
     rule = GRAHA_PHALA_RULES_REGISTRY.get("GPH026")
     assert rule is not None
-    assert "moksha_12th" in rule.tags
+    assert "moksha_12th" in rule.keyword_tags
 
 
 def test_combust_planets():
     from src.corpus.graha_phala_rules import GRAHA_PHALA_RULES_REGISTRY
     rule = GRAHA_PHALA_RULES_REGISTRY.get("GPH027")
     assert rule is not None
-    assert "combust" in rule.tags
-    assert "asta" in rule.tags
+    assert "combust" in rule.keyword_tags
+    assert "asta" in rule.keyword_tags
 
 
 def test_swakshetra():
     from src.corpus.graha_phala_rules import GRAHA_PHALA_RULES_REGISTRY
     rule = GRAHA_PHALA_RULES_REGISTRY.get("GPH030")
     assert rule is not None
-    assert "swakshetra" in rule.tags
-    assert "maximum_expression" in rule.tags
+    assert "swakshetra" in rule.keyword_tags
+    assert "maximum_expression" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_gph():

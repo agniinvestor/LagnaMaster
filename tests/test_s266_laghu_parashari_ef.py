@@ -43,20 +43,20 @@ def test_lpa_outcome_direction_valid():
 def test_lpa_trikona_trikona_present():
     from src.corpus.laghu_parashari_ef import LAGHU_PARASHARI_ANTARDASHA_REGISTRY
     tt = [r for r in LAGHU_PARASHARI_ANTARDASHA_REGISTRY.all()
-          if "trikona_md" in r.tags and "trikona_ad" in r.tags]
+          if "trikona_md" in r.keyword_tags and "trikona_ad" in r.keyword_tags]
     assert len(tt) >= 1, "No trikona-MD + trikona-AD rule found"
 
 
 def test_lpa_maraka_maraka_present():
     from src.corpus.laghu_parashari_ef import LAGHU_PARASHARI_ANTARDASHA_REGISTRY
     mm = [r for r in LAGHU_PARASHARI_ANTARDASHA_REGISTRY.all()
-          if "maraka_md" in r.tags and "maraka_ad" in r.tags]
+          if "maraka_md" in r.keyword_tags and "maraka_ad" in r.keyword_tags]
     assert len(mm) >= 1, "No maraka-MD + maraka-AD rule found"
 
 
 def test_lpa_yogakaraka_combinations_present():
     from src.corpus.laghu_parashari_ef import LAGHU_PARASHARI_ANTARDASHA_REGISTRY
-    yk = [r for r in LAGHU_PARASHARI_ANTARDASHA_REGISTRY.all() if "yogakaraka" in r.tags]
+    yk = [r for r in LAGHU_PARASHARI_ANTARDASHA_REGISTRY.all() if "yogakaraka" in r.keyword_tags]
     assert len(yk) >= 3, f"Expected ≥3 yogakaraka antardasha rules, got {len(yk)}"
 
 
@@ -102,7 +102,7 @@ def test_lpm_lagna_scope_populated():
 def test_lpm_maraka_tag_present():
     from src.corpus.laghu_parashari_ef import LAGHU_PARASHARI_MARAKA_REGISTRY
     for rule in LAGHU_PARASHARI_MARAKA_REGISTRY.all():
-        assert "maraka" in rule.tags, f"{rule.rule_id} missing maraka tag"
+        assert "maraka" in rule.keyword_tags, f"{rule.rule_id} missing maraka tag"
 
 
 def test_lpm_phase_conditional():
@@ -114,14 +114,14 @@ def test_lpm_phase_conditional():
 def test_lpm_aries_venus_double_maraka():
     from src.corpus.laghu_parashari_ef import LAGHU_PARASHARI_MARAKA_REGISTRY
     aries_venus = [r for r in LAGHU_PARASHARI_MARAKA_REGISTRY.all()
-                   if "aries" in r.lagna_scope and "venus" in r.tags]
+                   if "aries" in r.lagna_scope and "venus" in r.keyword_tags]
     assert len(aries_venus) >= 1, "Aries Venus double-maraka rule missing"
 
 
 def test_lpm_libra_mars_double_maraka():
     from src.corpus.laghu_parashari_ef import LAGHU_PARASHARI_MARAKA_REGISTRY
     libra_mars = [r for r in LAGHU_PARASHARI_MARAKA_REGISTRY.all()
-                  if "libra" in r.lagna_scope and "mars" in r.tags]
+                  if "libra" in r.lagna_scope and "mars" in r.keyword_tags]
     assert len(libra_mars) >= 1, "Libra Mars double-maraka rule missing"
 
 

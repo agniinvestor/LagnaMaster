@@ -11,21 +11,21 @@ def test_chandra_lagna_present():
     from src.corpus.bphs_special_lagnas import BPHS_SPECIAL_LAGNAS_REGISTRY
     rule = BPHS_SPECIAL_LAGNAS_REGISTRY.get("SL001")
     assert rule is not None
-    assert "chandra_lagna" in rule.tags
+    assert "chandra_lagna" in rule.keyword_tags
 
 
 def test_arudha_lagna_present():
     from src.corpus.bphs_special_lagnas import BPHS_SPECIAL_LAGNAS_REGISTRY
     rule = BPHS_SPECIAL_LAGNAS_REGISTRY.get("SL003")
     assert rule is not None
-    assert "arudha_lagna" in rule.tags
+    assert "arudha_lagna" in rule.keyword_tags
 
 
 def test_upapada_lagna_present():
     from src.corpus.bphs_special_lagnas import BPHS_SPECIAL_LAGNAS_REGISTRY
     rule = BPHS_SPECIAL_LAGNAS_REGISTRY.get("SL007")
     assert rule is not None
-    assert "upapada" in rule.tags
+    assert "upapada" in rule.keyword_tags
 
 
 def test_combined_corpus_count_after_s228():

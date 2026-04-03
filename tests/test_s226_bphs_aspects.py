@@ -17,11 +17,11 @@ def test_jupiter_aspect_moon_rule():
     from src.corpus.bphs_aspects import BPHS_ASPECTS_REGISTRY
     rule = BPHS_ASPECTS_REGISTRY.get("ASP007")
     assert rule is not None
-    assert "jupiter" in rule.tags and "moon" in rule.tags
+    assert "jupiter" in rule.keyword_tags and "moon" in rule.keyword_tags
 
 
 def test_mangal_dosha_aspect_present():
     from src.corpus.bphs_aspects import BPHS_ASPECTS_REGISTRY
     rule = BPHS_ASPECTS_REGISTRY.get("ASP010")
     assert rule is not None
-    assert "mangal_dosha" in rule.tags
+    assert "mangal_dosha" in rule.keyword_tags

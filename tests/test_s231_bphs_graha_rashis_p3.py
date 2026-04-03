@@ -25,62 +25,62 @@ def test_jupiter_exaltation_cancer():
     from src.corpus.bphs_graha_rashis_p3 import BPHS_GRAHA_RASHIS_P3_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P3_REGISTRY.get("JUR004")
     assert rule is not None
-    assert "exaltation" in rule.tags
-    assert "cancer" in rule.tags
+    assert "exaltation" in rule.keyword_tags
+    assert "cancer" in rule.keyword_tags
 
 
 def test_jupiter_own_sign_sagittarius():
     from src.corpus.bphs_graha_rashis_p3 import BPHS_GRAHA_RASHIS_P3_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P3_REGISTRY.get("JUR009")
     assert rule is not None
-    assert "own_sign" in rule.tags
-    assert "moolatrikona" in rule.tags
+    assert "own_sign" in rule.keyword_tags
+    assert "moolatrikona" in rule.keyword_tags
 
 
 def test_jupiter_debilitation_capricorn():
     from src.corpus.bphs_graha_rashis_p3 import BPHS_GRAHA_RASHIS_P3_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P3_REGISTRY.get("JUR010")
     assert rule is not None
-    assert "debilitation" in rule.tags
-    assert "neecha" in rule.tags
+    assert "debilitation" in rule.keyword_tags
+    assert "neecha" in rule.keyword_tags
 
 
 def test_jupiter_own_sign_pisces():
     from src.corpus.bphs_graha_rashis_p3 import BPHS_GRAHA_RASHIS_P3_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P3_REGISTRY.get("JUR012")
     assert rule is not None
-    assert "own_sign" in rule.tags
+    assert "own_sign" in rule.keyword_tags
 
 
 def test_venus_own_sign_taurus():
     from src.corpus.bphs_graha_rashis_p3 import BPHS_GRAHA_RASHIS_P3_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P3_REGISTRY.get("VER002")
     assert rule is not None
-    assert "own_sign" in rule.tags
-    assert "moolatrikona" in rule.tags
+    assert "own_sign" in rule.keyword_tags
+    assert "moolatrikona" in rule.keyword_tags
 
 
 def test_venus_debilitation_virgo():
     from src.corpus.bphs_graha_rashis_p3 import BPHS_GRAHA_RASHIS_P3_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P3_REGISTRY.get("VER006")
     assert rule is not None
-    assert "debilitation" in rule.tags
-    assert "neecha" in rule.tags
+    assert "debilitation" in rule.keyword_tags
+    assert "neecha" in rule.keyword_tags
 
 
 def test_venus_own_sign_libra():
     from src.corpus.bphs_graha_rashis_p3 import BPHS_GRAHA_RASHIS_P3_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P3_REGISTRY.get("VER007")
     assert rule is not None
-    assert "own_sign" in rule.tags
+    assert "own_sign" in rule.keyword_tags
 
 
 def test_venus_exaltation_pisces():
     from src.corpus.bphs_graha_rashis_p3 import BPHS_GRAHA_RASHIS_P3_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P3_REGISTRY.get("VER012")
     assert rule is not None
-    assert "exaltation" in rule.tags
-    assert "pisces" in rule.tags
+    assert "exaltation" in rule.keyword_tags
+    assert "pisces" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_graha_rashis_p3():

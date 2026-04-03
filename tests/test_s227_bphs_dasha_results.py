@@ -25,4 +25,4 @@ def test_dasha_yoga_activation_rule():
     from src.corpus.bphs_dasha_results import BPHS_DASHA_RESULTS_REGISTRY
     rule = BPHS_DASHA_RESULTS_REGISTRY.get("DAR014")
     assert rule is not None
-    assert "yoga_activation" in rule.tags
+    assert "yoga_activation" in rule.keyword_tags

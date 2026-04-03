@@ -25,54 +25,54 @@ def test_mars_own_sign_aries():
     from src.corpus.bphs_graha_rashis_p2 import BPHS_GRAHA_RASHIS_P2_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P2_REGISTRY.get("MAR001")
     assert rule is not None
-    assert "own_sign" in rule.tags
-    assert "moolatrikona" in rule.tags
+    assert "own_sign" in rule.keyword_tags
+    assert "moolatrikona" in rule.keyword_tags
 
 
 def test_mars_debilitation_cancer():
     from src.corpus.bphs_graha_rashis_p2 import BPHS_GRAHA_RASHIS_P2_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P2_REGISTRY.get("MAR004")
     assert rule is not None
-    assert "debilitation" in rule.tags
-    assert "neecha" in rule.tags
+    assert "debilitation" in rule.keyword_tags
+    assert "neecha" in rule.keyword_tags
 
 
 def test_mars_own_sign_scorpio():
     from src.corpus.bphs_graha_rashis_p2 import BPHS_GRAHA_RASHIS_P2_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P2_REGISTRY.get("MAR008")
     assert rule is not None
-    assert "own_sign" in rule.tags
+    assert "own_sign" in rule.keyword_tags
 
 
 def test_mars_exaltation_capricorn():
     from src.corpus.bphs_graha_rashis_p2 import BPHS_GRAHA_RASHIS_P2_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P2_REGISTRY.get("MAR010")
     assert rule is not None
-    assert "exaltation" in rule.tags
+    assert "exaltation" in rule.keyword_tags
 
 
 def test_mercury_own_sign_gemini():
     from src.corpus.bphs_graha_rashis_p2 import BPHS_GRAHA_RASHIS_P2_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P2_REGISTRY.get("BUR003")
     assert rule is not None
-    assert "own_sign" in rule.tags
-    assert "moolatrikona" in rule.tags
+    assert "own_sign" in rule.keyword_tags
+    assert "moolatrikona" in rule.keyword_tags
 
 
 def test_mercury_exaltation_virgo():
     from src.corpus.bphs_graha_rashis_p2 import BPHS_GRAHA_RASHIS_P2_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P2_REGISTRY.get("BUR006")
     assert rule is not None
-    assert "exaltation" in rule.tags
-    assert "own_sign" in rule.tags
+    assert "exaltation" in rule.keyword_tags
+    assert "own_sign" in rule.keyword_tags
 
 
 def test_mercury_debilitation_sagittarius():
     from src.corpus.bphs_graha_rashis_p2 import BPHS_GRAHA_RASHIS_P2_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P2_REGISTRY.get("BUR009")
     assert rule is not None
-    assert "debilitation" in rule.tags
-    assert "neecha" in rule.tags
+    assert "debilitation" in rule.keyword_tags
+    assert "neecha" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_graha_rashis_p2():

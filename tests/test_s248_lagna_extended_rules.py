@@ -37,14 +37,14 @@ def test_all_12_lagna_signs_covered():
     ]
     all_tags = set()
     for rule in LAGNA_EXTENDED_RULES_REGISTRY.all():
-        all_tags.update(rule.tags)
+        all_tags.update(rule.keyword_tags)
     for tag in lagna_tags:
         assert tag in all_tags, f"Missing lagna tag: {tag}"
 
 
 def test_yogakaraka_rules():
     from src.corpus.lagna_extended_rules import LAGNA_EXTENDED_RULES_REGISTRY
-    yogakaraka_rules = [r for r in LAGNA_EXTENDED_RULES_REGISTRY.all() if "yogakaraka" in r.tags]
+    yogakaraka_rules = [r for r in LAGNA_EXTENDED_RULES_REGISTRY.all() if "yogakaraka" in r.keyword_tags]
     assert len(yogakaraka_rules) >= 4
 
 
@@ -52,24 +52,24 @@ def test_kendra_adhipati_dosha():
     from src.corpus.lagna_extended_rules import LAGNA_EXTENDED_RULES_REGISTRY
     rule = LAGNA_EXTENDED_RULES_REGISTRY.get("LGE017")
     assert rule is not None
-    assert "kendra_adhipati_dosha" in rule.tags
-    assert "benefic_kendra_lord" in rule.tags
+    assert "kendra_adhipati_dosha" in rule.keyword_tags
+    assert "benefic_kendra_lord" in rule.keyword_tags
 
 
 def test_vargottama_lagna():
     from src.corpus.lagna_extended_rules import LAGNA_EXTENDED_RULES_REGISTRY
     rule = LAGNA_EXTENDED_RULES_REGISTRY.get("LGE028")
     assert rule is not None
-    assert "vargottama_lagna" in rule.tags
-    assert "exceptional_strength" in rule.tags
+    assert "vargottama_lagna" in rule.keyword_tags
+    assert "exceptional_strength" in rule.keyword_tags
 
 
 def test_chandra_surya_lagna():
     from src.corpus.lagna_extended_rules import LAGNA_EXTENDED_RULES_REGISTRY
     chandra = LAGNA_EXTENDED_RULES_REGISTRY.get("LGE019")
     surya = LAGNA_EXTENDED_RULES_REGISTRY.get("LGE020")
-    assert chandra is not None and "chandra_lagna" in chandra.tags
-    assert surya is not None and "surya_lagna" in surya.tags
+    assert chandra is not None and "chandra_lagna" in chandra.keyword_tags
+    assert surya is not None and "surya_lagna" in surya.keyword_tags
 
 
 def test_combined_corpus_includes_lge():

@@ -32,43 +32,43 @@ def test_fundamental_gochara_from_moon():
     from src.corpus.transit_rules import TRANSIT_RULES_REGISTRY
     rule = TRANSIT_RULES_REGISTRY.get("TRN001")
     assert rule is not None
-    assert "from_moon" in rule.tags
-    assert "janma_rashi" in rule.tags
-    assert "fundamental" in rule.tags
+    assert "from_moon" in rule.keyword_tags
+    assert "janma_rashi" in rule.keyword_tags
+    assert "fundamental" in rule.keyword_tags
 
 
 def test_vedha_principle():
     from src.corpus.transit_rules import TRANSIT_RULES_REGISTRY
     rule = TRANSIT_RULES_REGISTRY.get("TRN004")
     assert rule is not None
-    assert "vedha" in rule.tags
-    assert "obstruction" in rule.tags
+    assert "vedha" in rule.keyword_tags
+    assert "obstruction" in rule.keyword_tags
 
 
 def test_sade_sati_rule():
     from src.corpus.transit_rules import TRANSIT_RULES_REGISTRY
     sade_sati_rules = [
         r for r in TRANSIT_RULES_REGISTRY.all()
-        if "sade_sati" in r.tags
+        if "sade_sati" in r.keyword_tags
     ]
     assert len(sade_sati_rules) >= 1
     rule = sade_sati_rules[0]
-    assert "saturn_7_5_years" in rule.tags
+    assert "saturn_7_5_years" in rule.keyword_tags
 
 
 def test_ashtakavarga_rule():
     from src.corpus.transit_rules import TRANSIT_RULES_REGISTRY
     rule = TRANSIT_RULES_REGISTRY.get("TRN005")
     assert rule is not None
-    assert "ashtakavarga" in rule.tags
-    assert "bindus" in rule.tags
+    assert "ashtakavarga" in rule.keyword_tags
+    assert "bindus" in rule.keyword_tags
 
 
 def test_double_transit_rule():
     from src.corpus.transit_rules import TRANSIT_RULES_REGISTRY
     double_transit = [
         r for r in TRANSIT_RULES_REGISTRY.all()
-        if "double_transit" in r.tags
+        if "double_transit" in r.keyword_tags
     ]
     assert len(double_transit) >= 1
 

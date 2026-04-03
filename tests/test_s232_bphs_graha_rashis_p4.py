@@ -32,46 +32,46 @@ def test_saturn_debilitation_aries():
     from src.corpus.bphs_graha_rashis_p4 import BPHS_GRAHA_RASHIS_P4_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P4_REGISTRY.get("SAR001")
     assert rule is not None
-    assert "debilitation" in rule.tags
-    assert "neecha" in rule.tags
+    assert "debilitation" in rule.keyword_tags
+    assert "neecha" in rule.keyword_tags
 
 
 def test_saturn_exaltation_libra():
     from src.corpus.bphs_graha_rashis_p4 import BPHS_GRAHA_RASHIS_P4_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P4_REGISTRY.get("SAR007")
     assert rule is not None
-    assert "exaltation" in rule.tags
-    assert "libra" in rule.tags
+    assert "exaltation" in rule.keyword_tags
+    assert "libra" in rule.keyword_tags
 
 
 def test_saturn_own_sign_capricorn():
     from src.corpus.bphs_graha_rashis_p4 import BPHS_GRAHA_RASHIS_P4_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P4_REGISTRY.get("SAR010")
     assert rule is not None
-    assert "own_sign" in rule.tags
-    assert "moolatrikona" in rule.tags
+    assert "own_sign" in rule.keyword_tags
+    assert "moolatrikona" in rule.keyword_tags
 
 
 def test_saturn_own_sign_aquarius():
     from src.corpus.bphs_graha_rashis_p4 import BPHS_GRAHA_RASHIS_P4_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P4_REGISTRY.get("SAR011")
     assert rule is not None
-    assert "own_sign" in rule.tags
+    assert "own_sign" in rule.keyword_tags
 
 
 def test_ketu_moksha_scorpio():
     from src.corpus.bphs_graha_rashis_p4 import BPHS_GRAHA_RASHIS_P4_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P4_REGISTRY.get("KTR008")
     assert rule is not None
-    assert "moksha" in rule.tags
+    assert "moksha" in rule.keyword_tags
 
 
 def test_ketu_pisces_enlightenment():
     from src.corpus.bphs_graha_rashis_p4 import BPHS_GRAHA_RASHIS_P4_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P4_REGISTRY.get("KTR012")
     assert rule is not None
-    assert "moksha" in rule.tags
-    assert "liberation" in rule.tags
+    assert "moksha" in rule.keyword_tags
+    assert "liberation" in rule.keyword_tags
 
 
 def test_all_graha_in_rashi_category():

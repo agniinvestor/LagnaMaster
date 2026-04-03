@@ -25,48 +25,48 @@ def test_sun_exaltation_aries():
     from src.corpus.bphs_graha_rashis_p1 import BPHS_GRAHA_RASHIS_P1_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P1_REGISTRY.get("SUR001")
     assert rule is not None
-    assert "aries" in rule.tags
-    assert "exaltation_zone" in rule.tags
+    assert "aries" in rule.keyword_tags
+    assert "exaltation_zone" in rule.keyword_tags
 
 
 def test_sun_own_sign_leo():
     from src.corpus.bphs_graha_rashis_p1 import BPHS_GRAHA_RASHIS_P1_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P1_REGISTRY.get("SUR005")
     assert rule is not None
-    assert "own_sign" in rule.tags
-    assert "leo" in rule.tags
+    assert "own_sign" in rule.keyword_tags
+    assert "leo" in rule.keyword_tags
 
 
 def test_sun_debilitation_libra():
     from src.corpus.bphs_graha_rashis_p1 import BPHS_GRAHA_RASHIS_P1_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P1_REGISTRY.get("SUR007")
     assert rule is not None
-    assert "debilitation" in rule.tags
-    assert "neecha" in rule.tags
+    assert "debilitation" in rule.keyword_tags
+    assert "neecha" in rule.keyword_tags
 
 
 def test_moon_exaltation_taurus():
     from src.corpus.bphs_graha_rashis_p1 import BPHS_GRAHA_RASHIS_P1_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P1_REGISTRY.get("MOR002")
     assert rule is not None
-    assert "exaltation" in rule.tags
-    assert "taurus" in rule.tags
+    assert "exaltation" in rule.keyword_tags
+    assert "taurus" in rule.keyword_tags
 
 
 def test_moon_own_sign_cancer():
     from src.corpus.bphs_graha_rashis_p1 import BPHS_GRAHA_RASHIS_P1_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P1_REGISTRY.get("MOR004")
     assert rule is not None
-    assert "own_sign" in rule.tags
-    assert "mother" in rule.tags
+    assert "own_sign" in rule.keyword_tags
+    assert "mother" in rule.keyword_tags
 
 
 def test_moon_debilitation_scorpio():
     from src.corpus.bphs_graha_rashis_p1 import BPHS_GRAHA_RASHIS_P1_REGISTRY
     rule = BPHS_GRAHA_RASHIS_P1_REGISTRY.get("MOR008")
     assert rule is not None
-    assert "debilitation" in rule.tags
-    assert "neecha" in rule.tags
+    assert "debilitation" in rule.keyword_tags
+    assert "neecha" in rule.keyword_tags
 
 
 def test_all_graha_in_rashi_category():

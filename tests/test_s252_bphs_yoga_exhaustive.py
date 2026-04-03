@@ -34,19 +34,19 @@ def test_yex_source_bphs():
 
 def test_pancha_mahapurusha():
     from src.corpus.bphs_yoga_exhaustive import BPHS_YOGA_EXHAUSTIVE_REGISTRY
-    pmp = [r for r in BPHS_YOGA_EXHAUSTIVE_REGISTRY.all() if "pancha_mahapurusha" in r.tags]
+    pmp = [r for r in BPHS_YOGA_EXHAUSTIVE_REGISTRY.all() if "pancha_mahapurusha" in r.keyword_tags]
     assert len(pmp) == 5
 
 
 def test_nabhasa_yogas_present():
     from src.corpus.bphs_yoga_exhaustive import BPHS_YOGA_EXHAUSTIVE_REGISTRY
-    nabhasa = [r for r in BPHS_YOGA_EXHAUSTIVE_REGISTRY.all() if "nabhasa" in r.tags]
+    nabhasa = [r for r in BPHS_YOGA_EXHAUSTIVE_REGISTRY.all() if "nabhasa" in r.keyword_tags]
     assert len(nabhasa) >= 15
 
 
 def test_viparita_raja_types():
     from src.corpus.bphs_yoga_exhaustive import BPHS_YOGA_EXHAUSTIVE_REGISTRY
-    viparita = [r for r in BPHS_YOGA_EXHAUSTIVE_REGISTRY.all() if "viparita_raja" in r.tags]
+    viparita = [r for r in BPHS_YOGA_EXHAUSTIVE_REGISTRY.all() if "viparita_raja" in r.keyword_tags]
     assert len(viparita) == 3
     subtypes = {r.rule_id for r in viparita}
     assert "YEX049" in subtypes  # Harsha
@@ -56,13 +56,13 @@ def test_viparita_raja_types():
 
 def test_neechabhanga_rules():
     from src.corpus.bphs_yoga_exhaustive import BPHS_YOGA_EXHAUSTIVE_REGISTRY
-    nb = [r for r in BPHS_YOGA_EXHAUSTIVE_REGISTRY.all() if "neechabhanga" in r.tags]
+    nb = [r for r in BPHS_YOGA_EXHAUSTIVE_REGISTRY.all() if "neechabhanga" in r.keyword_tags]
     assert len(nb) >= 7
 
 
 def test_parivartana_yoga_count():
     from src.corpus.bphs_yoga_exhaustive import BPHS_YOGA_EXHAUSTIVE_REGISTRY
-    pari = [r for r in BPHS_YOGA_EXHAUSTIVE_REGISTRY.all() if "parivartana" in r.tags]
+    pari = [r for r in BPHS_YOGA_EXHAUSTIVE_REGISTRY.all() if "parivartana" in r.keyword_tags]
     assert len(pari) >= 10
 
 
@@ -70,32 +70,32 @@ def test_gaja_kesari():
     from src.corpus.bphs_yoga_exhaustive import BPHS_YOGA_EXHAUSTIVE_REGISTRY
     rule = BPHS_YOGA_EXHAUSTIVE_REGISTRY.get("YEX072")
     assert rule is not None
-    assert "gaja_kesari" in rule.tags
-    assert "jupiter_kendra_moon" in rule.tags
+    assert "gaja_kesari" in rule.keyword_tags
+    assert "jupiter_kendra_moon" in rule.keyword_tags
 
 
 def test_dharma_karma_adhipati():
     from src.corpus.bphs_yoga_exhaustive import BPHS_YOGA_EXHAUSTIVE_REGISTRY
     rule = BPHS_YOGA_EXHAUSTIVE_REGISTRY.get("YEX028")
     assert rule is not None
-    assert "dharma_karma_adhipati" in rule.tags
+    assert "dharma_karma_adhipati" in rule.keyword_tags
 
 
 def test_kala_sarpa():
     from src.corpus.bphs_yoga_exhaustive import BPHS_YOGA_EXHAUSTIVE_REGISTRY
     rule = BPHS_YOGA_EXHAUSTIVE_REGISTRY.get("YEX097")
     assert rule is not None
-    assert "kala_sarpa" in rule.tags
+    assert "kala_sarpa" in rule.keyword_tags
 
 
 def test_mangal_dosha_complete():
     from src.corpus.bphs_yoga_exhaustive import BPHS_YOGA_EXHAUSTIVE_REGISTRY
     rule = BPHS_YOGA_EXHAUSTIVE_REGISTRY.get("YEX125")
     assert rule is not None
-    assert "mangal_dosha" in rule.tags
+    assert "mangal_dosha" in rule.keyword_tags
     rule_cancel = BPHS_YOGA_EXHAUSTIVE_REGISTRY.get("YEX126")
     assert rule_cancel is not None
-    assert "mangal_dosha_cancellation" in rule_cancel.tags
+    assert "mangal_dosha_cancellation" in rule_cancel.keyword_tags
 
 
 def test_implemented_false():

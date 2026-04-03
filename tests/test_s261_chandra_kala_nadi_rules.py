@@ -35,13 +35,13 @@ def test_implemented_false():
 def test_ckn_tag_on_all_rules():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
     for rule in CHANDRA_KALA_NADI_REGISTRY.all():
-        assert "ckn" in rule.tags, f"{rule.rule_id} missing 'ckn' tag"
+        assert "ckn" in rule.keyword_tags, f"{rule.rule_id} missing 'ckn' tag"
 
 
 def test_nadi_tag_on_all_rules():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
     for rule in CHANDRA_KALA_NADI_REGISTRY.all():
-        assert "nadi" in rule.tags, f"{rule.rule_id} missing 'nadi' tag"
+        assert "nadi" in rule.keyword_tags, f"{rule.rule_id} missing 'nadi' tag"
 
 
 def test_moon_nakshatra_rules():
@@ -60,43 +60,43 @@ def test_all_27_nakshatras_covered():
         "shatabhisha", "purva_bhadrapada", "uttara_bhadrapada", "revati",
     ]
     for nak in nakshatras:
-        rules = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if nak in r.tags]
+        rules = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if nak in r.keyword_tags]
         assert len(rules) >= 1, f"{nak} not covered"
 
 
 def test_transit_rules():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
-    transit = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "transit" in r.tags]
+    transit = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "transit" in r.keyword_tags]
     assert len(transit) >= 8
 
 
 def test_dasha_rules():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
-    dasha = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "dasha" in r.tags]
+    dasha = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "dasha" in r.keyword_tags]
     assert len(dasha) >= 8
 
 
 def test_yoga_rules():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
-    yoga = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "yoga" in r.tags]
+    yoga = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "yoga" in r.keyword_tags]
     assert len(yoga) >= 5
 
 
 def test_medical_rules():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
-    medical = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "medical" in r.tags]
+    medical = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "medical" in r.keyword_tags]
     assert len(medical) >= 3
 
 
 def test_sade_sati_rule():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
-    rules = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "sade_sati" in r.tags]
+    rules = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "sade_sati" in r.keyword_tags]
     assert len(rules) >= 1
 
 
 def test_tara_rules():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
-    tara = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "tara" in r.tags]
+    tara = [r for r in CHANDRA_KALA_NADI_REGISTRY.all() if "tara" in r.keyword_tags]
     assert len(tara) >= 3
 
 
@@ -104,35 +104,35 @@ def test_ckn001_ashwini():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
     rule = CHANDRA_KALA_NADI_REGISTRY.get("CKN001")
     assert rule is not None
-    assert "ashwini" in rule.tags
+    assert "ashwini" in rule.keyword_tags
 
 
 def test_ckn028_gaja_kesari():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
     rule = CHANDRA_KALA_NADI_REGISTRY.get("CKN028")
     assert rule is not None
-    assert "gaja_kesari_yoga" in rule.tags
+    assert "gaja_kesari_yoga" in rule.keyword_tags
 
 
 def test_ckn041_sade_sati():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
     rule = CHANDRA_KALA_NADI_REGISTRY.get("CKN041")
     assert rule is not None
-    assert "sade_sati" in rule.tags
+    assert "sade_sati" in rule.keyword_tags
 
 
 def test_ckn064_nine_taras():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
     rule = CHANDRA_KALA_NADI_REGISTRY.get("CKN064")
     assert rule is not None
-    assert "9_taras" in rule.tags
+    assert "9_taras" in rule.keyword_tags
 
 
 def test_ckn120_philosophy():
     from src.corpus.chandra_kala_nadi_rules import CHANDRA_KALA_NADI_REGISTRY
     rule = CHANDRA_KALA_NADI_REGISTRY.get("CKN120")
     assert rule is not None
-    assert "philosophy" in rule.tags
+    assert "philosophy" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_ckn():

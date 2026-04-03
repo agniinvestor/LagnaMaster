@@ -25,29 +25,29 @@ def test_varahamihira_school():
     from src.corpus.brihat_jataka_ext import BRIHAT_JATAKA_EXT_REGISTRY
     for rule in BRIHAT_JATAKA_EXT_REGISTRY.all():
         assert rule.school == "varahamihira", f"{rule.rule_id} wrong school"
-        assert "varahamihira" in rule.tags
+        assert "varahamihira" in rule.keyword_tags
 
 
 def test_benefic_malefic_classification():
     from src.corpus.brihat_jataka_ext import BRIHAT_JATAKA_EXT_REGISTRY
     rule = BRIHAT_JATAKA_EXT_REGISTRY.get("BJE018")
     assert rule is not None
-    assert "benefic_malefic" in rule.tags
-    assert "waning_moon" in rule.tags
+    assert "benefic_malefic" in rule.keyword_tags
+    assert "waning_moon" in rule.keyword_tags
 
 
 def test_special_aspects_rule():
     from src.corpus.brihat_jataka_ext import BRIHAT_JATAKA_EXT_REGISTRY
     rule = BRIHAT_JATAKA_EXT_REGISTRY.get("BJE021")
     assert rule is not None
-    assert "special_aspects" in rule.tags
+    assert "special_aspects" in rule.keyword_tags
 
 
 def test_dasha_bhukti_rule():
     from src.corpus.brihat_jataka_ext import BRIHAT_JATAKA_EXT_REGISTRY
     rule = BRIHAT_JATAKA_EXT_REGISTRY.get("BJE029")
     assert rule is not None
-    assert "antardasha" in rule.tags
+    assert "antardasha" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_bje():

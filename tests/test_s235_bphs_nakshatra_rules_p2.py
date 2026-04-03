@@ -25,8 +25,8 @@ def test_revati_last_nakshatra():
     from src.corpus.bphs_nakshatra_rules_p2 import BPHS_NAKSHATRA_RULES_P2_REGISTRY
     rule = BPHS_NAKSHATRA_RULES_P2_REGISTRY.get("NAK041")
     assert rule is not None
-    assert "last_nakshatra" in rule.tags
-    assert "revati" in rule.tags
+    assert "last_nakshatra" in rule.keyword_tags
+    assert "revati" in rule.keyword_tags
 
 
 def test_pushya_nakshatra_lord():
@@ -34,15 +34,15 @@ def test_pushya_nakshatra_lord():
     # NAK029 = Swati, Rahu-ruled
     rule = BPHS_NAKSHATRA_RULES_P2_REGISTRY.get("NAK029")
     assert rule is not None
-    assert "rahu" in rule.tags
+    assert "rahu" in rule.keyword_tags
 
 
 def test_mula_liberation_tags():
     from src.corpus.bphs_nakshatra_rules_p2 import BPHS_NAKSHATRA_RULES_P2_REGISTRY
     rule = BPHS_NAKSHATRA_RULES_P2_REGISTRY.get("NAK033")
     assert rule is not None
-    assert "liberation" in rule.tags
-    assert "ketu" in rule.tags
+    assert "liberation" in rule.keyword_tags
+    assert "ketu" in rule.keyword_tags
 
 
 def test_all_nakshatra_categories():

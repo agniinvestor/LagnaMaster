@@ -18,7 +18,7 @@ def test_kalidasa_school():
     from src.corpus.uttara_kalamrita_ext import UTTARA_KALAMRITA_EXT_REGISTRY
     for rule in UTTARA_KALAMRITA_EXT_REGISTRY.all():
         assert rule.school == "kalidasa", f"{rule.rule_id} wrong school"
-        assert "kalidasa" in rule.tags
+        assert "kalidasa" in rule.keyword_tags
 
 
 def test_12_house_significations():
@@ -39,23 +39,23 @@ def test_bhavat_bhavam_rule():
     from src.corpus.uttara_kalamrita_ext import UTTARA_KALAMRITA_EXT_REGISTRY
     rule = UTTARA_KALAMRITA_EXT_REGISTRY.get("UKE023")
     assert rule is not None
-    assert "bhavat_bhavam" in rule.tags
+    assert "bhavat_bhavam" in rule.keyword_tags
 
 
 def test_kartari_rule():
     from src.corpus.uttara_kalamrita_ext import UTTARA_KALAMRITA_EXT_REGISTRY
     rule = UTTARA_KALAMRITA_EXT_REGISTRY.get("UKE025")
     assert rule is not None
-    assert "kartari" in rule.tags
-    assert "papa_kartari" in rule.tags
+    assert "kartari" in rule.keyword_tags
+    assert "papa_kartari" in rule.keyword_tags
 
 
 def test_temporal_malefic_benefic():
     from src.corpus.uttara_kalamrita_ext import UTTARA_KALAMRITA_EXT_REGISTRY
     rule = UTTARA_KALAMRITA_EXT_REGISTRY.get("UKE028")
     assert rule is not None
-    assert "temporal_malefic" in rule.tags
-    assert "temporal_benefic" in rule.tags
+    assert "temporal_malefic" in rule.keyword_tags
+    assert "temporal_benefic" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_uke():

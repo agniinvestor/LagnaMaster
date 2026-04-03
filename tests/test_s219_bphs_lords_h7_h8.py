@@ -19,4 +19,4 @@ def test_h7l007_own_house_strong_marriage():
     from src.corpus.bphs_lords_h7_h8 import BPHS_LORDS_H7_H8_REGISTRY
     rule = BPHS_LORDS_H7_H8_REGISTRY.get("H7L007")
     assert rule is not None
-    assert "own" in rule.description.lower() or "own_house" in rule.tags
+    assert "own" in rule.description.lower() or "own_house" in rule.keyword_tags

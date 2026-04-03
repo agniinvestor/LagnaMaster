@@ -1513,7 +1513,7 @@ def _make_house_rules(
             category=category,
             description=f"[BPHS — {category}] {desc}",
             confidence=confidence,
-            tags=tags,
+            keyword_tags=tags,
             implemented=False,
             primary_condition=primary,
             modifiers=modifiers,

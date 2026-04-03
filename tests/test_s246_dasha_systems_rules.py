@@ -32,41 +32,41 @@ def test_vimshottari_primary():
     from src.corpus.dasha_systems_rules import DASHA_SYSTEMS_RULES_REGISTRY
     rule = DASHA_SYSTEMS_RULES_REGISTRY.get("DSY001")
     assert rule is not None
-    assert "vimshottari" in rule.tags
-    assert "primary_dasha" in rule.tags
-    assert "120_years" in rule.tags
+    assert "vimshottari" in rule.keyword_tags
+    assert "primary_dasha" in rule.keyword_tags
+    assert "120_years" in rule.keyword_tags
 
 
 def test_ashtottari_dasha():
     from src.corpus.dasha_systems_rules import DASHA_SYSTEMS_RULES_REGISTRY
     rule = DASHA_SYSTEMS_RULES_REGISTRY.get("DSY007")
     assert rule is not None
-    assert "ashtottari" in rule.tags
-    assert "108_years" in rule.tags
+    assert "ashtottari" in rule.keyword_tags
+    assert "108_years" in rule.keyword_tags
 
 
 def test_yogini_dasha():
     from src.corpus.dasha_systems_rules import DASHA_SYSTEMS_RULES_REGISTRY
     rule = DASHA_SYSTEMS_RULES_REGISTRY.get("DSY010")
     assert rule is not None
-    assert "yogini_dasha" in rule.tags
-    assert "36_years" in rule.tags
+    assert "yogini_dasha" in rule.keyword_tags
+    assert "36_years" in rule.keyword_tags
 
 
 def test_maraka_dasha():
     from src.corpus.dasha_systems_rules import DASHA_SYSTEMS_RULES_REGISTRY
     rule = DASHA_SYSTEMS_RULES_REGISTRY.get("DSY025")
     assert rule is not None
-    assert "maraka" in rule.tags
-    assert "2nd_7th_lord" in rule.tags
+    assert "maraka" in rule.keyword_tags
+    assert "2nd_7th_lord" in rule.keyword_tags
 
 
 def test_transit_confirmation():
     from src.corpus.dasha_systems_rules import DASHA_SYSTEMS_RULES_REGISTRY
     rule = DASHA_SYSTEMS_RULES_REGISTRY.get("DSY022")
     assert rule is not None
-    assert "transit_confirmation" in rule.tags
-    assert "dasha_transit" in rule.tags
+    assert "transit_confirmation" in rule.keyword_tags
+    assert "dasha_transit" in rule.keyword_tags
 
 
 def test_planet_dashas_present():

@@ -32,45 +32,45 @@ def test_six_strengths_overview():
     from src.corpus.shadbala_rules import SHADBALA_RULES_REGISTRY
     rule = SHADBALA_RULES_REGISTRY.get("SDB001")
     assert rule is not None
-    assert "6_strengths" in rule.tags
-    assert "rupas" in rule.tags
+    assert "6_strengths" in rule.keyword_tags
+    assert "rupas" in rule.keyword_tags
 
 
 def test_minimum_thresholds():
     from src.corpus.shadbala_rules import SHADBALA_RULES_REGISTRY
     rule = SHADBALA_RULES_REGISTRY.get("SDB002")
     assert rule is not None
-    assert "minimum_threshold" in rule.tags
-    assert "ishta_shadbala" in rule.tags
+    assert "minimum_threshold" in rule.keyword_tags
+    assert "ishta_shadbala" in rule.keyword_tags
 
 
 def test_dig_bala():
     from src.corpus.shadbala_rules import SHADBALA_RULES_REGISTRY
     rule = SHADBALA_RULES_REGISTRY.get("SDB009")
     assert rule is not None
-    assert "dig_bala" in rule.tags
-    assert "directional_strength" in rule.tags
+    assert "dig_bala" in rule.keyword_tags
+    assert "directional_strength" in rule.keyword_tags
 
 
 def test_naisargika_bala():
     from src.corpus.shadbala_rules import SHADBALA_RULES_REGISTRY
     rule = SHADBALA_RULES_REGISTRY.get("SDB019")
     assert rule is not None
-    assert "naisargika_bala" in rule.tags
-    assert "sun_60_saturn_8" in rule.tags
+    assert "naisargika_bala" in rule.keyword_tags
+    assert "sun_60_saturn_8" in rule.keyword_tags
 
 
 def test_retrograde_strength():
     from src.corpus.shadbala_rules import SHADBALA_RULES_REGISTRY
     rule = SHADBALA_RULES_REGISTRY.get("SDB017")
     assert rule is not None
-    assert "retrograde" in rule.tags
-    assert "maximum_strength" in rule.tags
+    assert "retrograde" in rule.keyword_tags
+    assert "maximum_strength" in rule.keyword_tags
 
 
 def test_vimshopaka_bala():
     from src.corpus.shadbala_rules import SHADBALA_RULES_REGISTRY
-    vimsh_rules = [r for r in SHADBALA_RULES_REGISTRY.all() if "vimshopaka_bala" in r.tags]
+    vimsh_rules = [r for r in SHADBALA_RULES_REGISTRY.all() if "vimshopaka_bala" in r.keyword_tags]
     assert len(vimsh_rules) == 2
 
 

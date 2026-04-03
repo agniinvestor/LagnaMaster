@@ -35,18 +35,18 @@ def test_implemented_false():
 def test_lkx_tag_on_all_rules():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
     for rule in LAL_KITAB_RULES_REGISTRY.all():
-        assert "lkx" in rule.tags, f"{rule.rule_id} missing 'lkx' tag"
+        assert "lkx" in rule.keyword_tags, f"{rule.rule_id} missing 'lkx' tag"
 
 
 def test_lal_kitab_tag_on_all_rules():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
     for rule in LAL_KITAB_RULES_REGISTRY.all():
-        assert "lal_kitab" in rule.tags, f"{rule.rule_id} missing 'lal_kitab' tag"
+        assert "lal_kitab" in rule.keyword_tags, f"{rule.rule_id} missing 'lal_kitab' tag"
 
 
 def test_pakka_ghar_rules():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
-    pg = [r for r in LAL_KITAB_RULES_REGISTRY.all() if "pakka_ghar" in r.tags]
+    pg = [r for r in LAL_KITAB_RULES_REGISTRY.all() if "pakka_ghar" in r.keyword_tags]
     assert len(pg) >= 7
 
 
@@ -54,25 +54,25 @@ def test_all_9_planets_covered():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
     planets = ["sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn", "rahu", "ketu"]
     for p in planets:
-        rules = [r for r in LAL_KITAB_RULES_REGISTRY.all() if p in r.tags]
+        rules = [r for r in LAL_KITAB_RULES_REGISTRY.all() if p in r.keyword_tags]
         assert len(rules) >= 2, f"{p} has fewer than 2 rules"
 
 
 def test_andha_planet_rules():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
-    andha = [r for r in LAL_KITAB_RULES_REGISTRY.all() if "andha" in r.tags]
+    andha = [r for r in LAL_KITAB_RULES_REGISTRY.all() if "andha" in r.keyword_tags]
     assert len(andha) >= 5
 
 
 def test_rin_karma_rules():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
-    rin = [r for r in LAL_KITAB_RULES_REGISTRY.all() if "rin_karma" in r.tags]
+    rin = [r for r in LAL_KITAB_RULES_REGISTRY.all() if "rin_karma" in r.keyword_tags]
     assert len(rin) >= 5
 
 
 def test_remedy_rules():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
-    remedy = [r for r in LAL_KITAB_RULES_REGISTRY.all() if "remedy" in r.tags]
+    remedy = [r for r in LAL_KITAB_RULES_REGISTRY.all() if "remedy" in r.keyword_tags]
     assert len(remedy) >= 10
 
 
@@ -91,7 +91,7 @@ def test_all_12_houses_covered():
     houses[10] = "11th_house"
     houses[11] = "12th_house"
     for house in houses:
-        rules = [r for r in LAL_KITAB_RULES_REGISTRY.all() if house in r.tags]
+        rules = [r for r in LAL_KITAB_RULES_REGISTRY.all() if house in r.keyword_tags]
         assert len(rules) >= 1, f"{house} not covered"
 
 
@@ -99,36 +99,36 @@ def test_lkx001_sun_pakka_ghar():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
     rule = LAL_KITAB_RULES_REGISTRY.get("LKX001")
     assert rule is not None
-    assert "pakka_ghar" in rule.tags
-    assert "sun" in rule.tags
+    assert "pakka_ghar" in rule.keyword_tags
+    assert "sun" in rule.keyword_tags
 
 
 def test_lkx019_rin_karma():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
     rule = LAL_KITAB_RULES_REGISTRY.get("LKX019")
     assert rule is not None
-    assert "rin_karma" in rule.tags
+    assert "rin_karma" in rule.keyword_tags
 
 
 def test_lkx056_empty_house():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
     rule = LAL_KITAB_RULES_REGISTRY.get("LKX056")
     assert rule is not None
-    assert "empty_house" in rule.tags
+    assert "empty_house" in rule.keyword_tags
 
 
 def test_lkx111_vish_yoga():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
     rule = LAL_KITAB_RULES_REGISTRY.get("LKX111")
     assert rule is not None
-    assert "vish_yoga" in rule.tags
+    assert "vish_yoga" in rule.keyword_tags
 
 
 def test_lkx110_yoga():
     from src.corpus.lal_kitab_rules import LAL_KITAB_RULES_REGISTRY
     rule = LAL_KITAB_RULES_REGISTRY.get("LKX110")
     assert rule is not None
-    assert "yoga" in rule.tags
+    assert "yoga" in rule.keyword_tags
 
 
 def test_combined_corpus_includes_lkx():
