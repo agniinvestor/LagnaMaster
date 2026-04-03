@@ -305,12 +305,16 @@ def _check_compound_conditions(conditions: list[dict], chart) -> tuple[bool, int
 
         elif ctype == "lord_in_sign":
             lord_of = cond.get("lord_of", 0)
-            target_sign = cond.get("sign", "").lower()
+            raw_sign = cond.get("sign", "")
+            if isinstance(raw_sign, list):
+                target_signs = [s.lower() for s in raw_sign]
+            else:
+                target_signs = [raw_sign.lower()]
             lord_planet = _lord_of_house(chart, lord_of)
             if not lord_planet:
                 return False, 0
             actual_sign = _planet_sign(chart, lord_planet)
-            if actual_sign != target_sign:
+            if actual_sign not in target_signs:
                 return False, 0
             matched_house = matched_house or _planet_house(chart, lord_planet)
 

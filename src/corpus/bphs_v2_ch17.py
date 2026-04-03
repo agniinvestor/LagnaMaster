@@ -74,7 +74,11 @@ b.add(
 # ═══ v.6: Facial diseases ════════════════════════════════════════════════════
 
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 1, "house": "any"}],
+    conditions=[
+        {"type": "lord_in_sign", "lord_of": 1,
+         "sign": ["Aries", "Scorpio", "Gemini", "Virgo"]},
+        {"type": "planet_aspecting", "planet": "Mercury", "house": 1},
+    ],
     signal_group="asc_lord_mars_mercury_facial",
     direction="unfavorable", intensity="moderate",
     domains=["physical_health"],
@@ -91,19 +95,22 @@ b.add(
         "Santhanam notes: The lord of the ascendant should be in Aries, "
         "Scorpio, Gemini or Virgo and be aspected by Mercury. Even if "
         "Mars, ruling the ascendant, is in Gemini or Virgo and is "
-        "aspected by Mercury, the native will suffer facial diseases."
+        "aspected by Mercury, the native will suffer facial diseases. "
+        "Mercury aspect target is the ascendant lord's position, "
+        "approximated as aspect on house 1 (ascendant)."
     ),
     concordance_texts=[],
-    modifiers=[
-        {"condition": "in_mars_or_mercury_sign", "effect": "conditionalizes", "strength": "moderate"},
-        {"condition": "aspected_by_mercury", "effect": "amplifies", "strength": "moderate"},
-    ],
+    lagna_scope=["Aries", "Scorpio", "Gemini", "Virgo"],
 )
 
 # ═══ v.7-8½: Leprosy ════════════════════════════════════════════════════════
 
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 1, "house": "any"}],
+    conditions=[
+        {"type": "lord_in_sign", "lord_of": 1,
+         "sign": ["Aries", "Scorpio", "Gemini", "Virgo"]},
+        {"type": "planets_conjunct", "planets": ["Moon", "Rahu", "Saturn"]},
+    ],
     signal_group="asc_lord_leprosy",
     direction="unfavorable", intensity="strong",
     domains=["physical_health"],
@@ -112,7 +119,12 @@ b.add(
          "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.17 v.7-8",
-    commentary_context="Santhanam: Moon not in ascendant but with Rahu = white leprosy. Saturn replacing Rahu = black leprosy. Mars = blood-leprosy. Three distinct types by planetary combination.",
+    commentary_context=(
+        "Santhanam: Mars or Mercury must own the ascending sign (Aries, "
+        "Scorpio, Gemini, Virgo lagnas). Moon+Rahu = white leprosy. "
+        "Saturn replacing Rahu = black leprosy. Mars joining = "
+        "blood-leprosy. Three distinct types by planetary combination."
+    ),
     description=(
         "Mars or Mercury having ownership of the ascending sign and "
         "joining the Moon, Rahu and Saturn will cause leprosy. Moon not "
@@ -120,9 +132,6 @@ b.add(
         "Rahu → black leprosy. Mars → blood-leprosy."
     ),
     concordance_texts=[],
-    modifiers=[
-        {"condition": "moon_rahu_saturn_conjunction", "effect": "conditionalizes", "strength": "strong"},
-    ],
 )
 
 # ═══ v.9-12½: Diseases by planet in 6th/8th with ascendant lords ═════════════
@@ -168,8 +177,8 @@ b.add(
 # v.13: Illness throughout life
 b.add(
     conditions=[
-        {"type": "planet_in_house", "planet": "Saturn", "house": "any"},
         {"type": "planets_conjunct", "planets": ["Saturn", "Rahu"]},
+        {"type": "planets_conjunct", "planets": ["lord_of_6", "any_malefic"]},
     ],
     signal_group="saturn_rahu_h6_malefic_illness_lifelong",
     direction="unfavorable", intensity="strong",
@@ -179,7 +188,11 @@ b.add(
          "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.8},
     ],
     verse_ref="Ch.17 v.13",
-    commentary_context="No separate Santhanam note for v.13. The verse is a general principle: Saturn-Rahu conjunction with malefic 6th lord/house = lifelong illness.",
+    commentary_context=(
+        "Compound condition: Saturn-Rahu conjunction (anywhere) AND "
+        "6th lord conjunct malefics AND 6th house afflicted. All three "
+        "required for lifelong illness prediction."
+    ),
     description=(
         "The native will be afflicted by illness throughout life if Saturn "
         "is with Rahu while the 6th lord and 6th house are conjunct malefics."
@@ -238,6 +251,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Rahu", "house": 6},
+        {"type": "lord_in_house", "lord_of": 1, "house": 8},
     ],
     signal_group="rahu_h6_consumption_26",
     direction="unfavorable", intensity="strong",
@@ -248,16 +262,19 @@ b.add(
     ],
     timing_window={"type": "age", "value": 26, "precision": "approximate"},
     verse_ref="Ch.17 v.16",
-    commentary_context="Santhanam: Rahu in 6th + ascendant lord in 8th + Mandi in kendra = consumption at 26. Triple affliction involving Gulika/Mandi.",
+    commentary_context=(
+        "Santhanam: Triple compound condition — all three required: "
+        "(1) Rahu in 6th, (2) ascendant lord in 8th, (3) Mandi in a "
+        "kendra (1/4/7/10). Conditions 1-2 are structured; condition 3 "
+        "requires upagraha multi-house support (not yet available). "
+        "Gulika/Mandi are synonymous."
+    ),
+    modifiers=[{"condition": "mandi_in_kendra_1_4_7_10", "effect": "conditionalizes", "strength": "strong"}],
     description=(
         "If Rahu is in the 6th, ascendant lord is in the 8th and Mandi "
         "is in an angle, consumption will trouble the native at the age "
         "of 26."
     ),
-    modifiers=[
-        {"condition": "ascendant_lord_in_8th", "effect": "amplifies", "strength": "strong"},
-        {"condition": "mandi_in_kendra", "effect": "amplifies", "strength": "moderate"},
-    ],
     concordance_texts=[],
 )
 
@@ -311,6 +328,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "lord_in_house", "lord_of": 1, "house": 1},
+        {"type": "planets_conjunct", "planets": ["Saturn", "any_malefic"]},
     ],
     signal_group="asc_lord_inimical_windy_59",
     direction="unfavorable", intensity="moderate",
@@ -321,21 +339,27 @@ b.add(
     ],
     timing_window={"type": "age", "value": 59, "precision": "approximate"},
     verse_ref="Ch.17 v.19",
-    commentary_context="Santhanam: Saturn with inimical planet + ascendant lord in ascendant = windy disorders (rheumatism) at 59. Late-life Saturn affliction.",
+    commentary_context=(
+        "Santhanam: Compound condition — Saturn with inimical planet "
+        "(approximated as any_malefic) AND ascendant lord in ascendant. "
+        "Both required for late-life windy disorders at 59. "
+        "'Inimical planet' = natural enemy of Saturn, approximated here."
+    ),
     description=(
         "If Saturn is with an inimical planet while the ascendant lord "
         "is in the ascendant itself, windy disorders (like rheumatism) "
         "will trouble the native at the age of 59."
     ),
     concordance_texts=[],
-    modifiers=[{"condition": "saturn_with_inimical_planet", "effect": "conditionalizes", "strength": "moderate"}],
 )
 
 # ═══ v.20: Troubled by animals at age 8 ══════════════════════════════════════
 
 b.add(
     conditions=[
+        {"type": "planets_conjunct", "planets": ["Moon", "lord_of_6"]},
         {"type": "lord_in_house", "lord_of": 8, "house": 6},
+        {"type": "lord_in_house", "lord_of": 12, "house": 1},
     ],
     signal_group="h8_lord_h6_moon_animals_8",
     direction="unfavorable", intensity="moderate",
@@ -346,15 +370,18 @@ b.add(
     ],
     timing_window={"type": "age", "value": 8, "precision": "approximate"},
     verse_ref="Ch.17 v.20",
-    commentary_context="Santhanam: If Rahu is in the 6th while the 8th from said Rahu has Saturn, the child will have danger from fire at ages 1 and 2, while in the 3rd year birds will bring some evils. The 12th lord in ascendant amplifies.",
+    commentary_context=(
+        "Santhanam: Compound condition — all three required: "
+        "(1) Moon conjunct 6th lord, (2) 8th lord in 6th, "
+        "(3) 12th lord in ascendant. Separate verse clause about "
+        "Rahu/Saturn fire danger covered in BPHS1719."
+    ),
     description=(
         "Moon conjuncts 6th lord while the 8th lord is in the 6th and the "
         "12th lord is in the ascendant: the native will be troubled by "
         "animals at the age of eight."
     ),
     concordance_texts=[],
-    modifiers=[{"condition": "rahu_in_6th_saturn_in_8th_from_rahu_fire_danger_ages_1_2", "effect": "amplifies", "strength": "strong"},
-               {"condition": "12th_lord_in_ascendant", "effect": "amplifies", "strength": "moderate"}],
 )
 
 # ═══ v.20-22: Danger from water at ages 5 and 9 ═════════════════════════════
@@ -461,6 +488,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "lord_in_house", "lord_of": 5, "house": 6},
+        {"type": "planets_conjunct", "planets": ["lord_of_6", "Jupiter"]},
         {"type": "lord_in_house", "lord_of": 12, "house": 1},
     ],
     entity_target="children",
@@ -472,22 +500,27 @@ b.add(
          "domain": "enemies_litigation", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.17 v.27",
-    commentary_context="Santhanam: 5th lord in 6th + 6th lord with Jupiter + 12th lord in ascendant. All three conditions must be simultaneously satisfied for own sons to become enemies.",
+    commentary_context=(
+        "Santhanam: Triple compound condition — all three required: "
+        "(1) 5th lord in 6th, (2) 6th lord conjunct Jupiter, "
+        "(3) 12th lord in ascendant. All three simultaneously present "
+        "for own sons to become enemies."
+    ),
     description=(
         "One's own sons will be his enemies if the 5th lord is in the 6th "
         "while the 6th lord is with Jupiter. Simultaneously the 12th lord "
         "should be in the ascendant."
     ),
     concordance_texts=[],
-    modifiers=[{"condition": "h6_lord_with_jupiter", "effect": "conditionalizes", "strength": "moderate"}],
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1700"]},
 )
 
 # ═══ v.28: Fear from dogs at age 10 and 19 ═══════════════════════════════════
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 1, "house": "any"},
-        {"type": "lord_in_house", "lord_of": 6, "house": "any"},
+        {"type": "lord_in_house", "lord_of": 1, "house": 6},
+        {"type": "lord_in_house", "lord_of": 6, "house": 1},
     ],
     signal_group="asc_h6_exchange_dogs_10_19",
     direction="unfavorable", intensity="weak",
@@ -498,7 +531,11 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [10, 19], "precision": "approximate"},
     verse_ref="Ch.17 v.28",
-    commentary_context="Santhanam: Ascendant lord and 6th lord in exchange = fear from dogs at 10th and 19th year. The exchange activates enemy (6th) themes through the native (1st).",
+    commentary_context=(
+        "Santhanam: Parivartana yoga — ascendant lord in 6th AND 6th lord "
+        "in 1st (mutual exchange). The exchange activates enemy (6th) "
+        "themes through the native (1st) = fear from dogs at 10/19."
+    ),
     description=(
         "There will be fear from dogs during the 10th and 19th year "
         "if the ascendant lord and the 6th lord are in exchange."
