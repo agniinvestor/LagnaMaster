@@ -138,12 +138,18 @@ b.add(
          "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.16 v.8",
-    commentary_context="No separate note. Multiple dusthana/inimical placements all produce difficulty in begetting.",
+    commentary_context=(
+        "Weaker variant of BPHS1601 (no offspring). This verse covers the "
+        "same dusthana placement but predicts difficulty rather than denial. "
+        "Text distinguishes: dusthana = difficulty; dusthana + combust/weak "
+        "= no children (BPHS1627). Engine should resolve via precedence."
+    ),
     description=(
         "5th lord in 6th/8th/12th or in an inimical sign or in fall or "
         "in the 5th itself: the native will beget issues with difficulty."
     ),
     concordance_texts=["Saravali"],
+    rule_relationship={"type": "mitigation", "related_rules": ["BPHS1601", "BPHS1627"]},
 )
 
 # ═══ v.9: Adopted issues ═════════════════════════════════════════════════════
@@ -421,6 +427,8 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Rahu", "house": 5},
+        {"type": "planets_conjunct", "planets": ["lord_of_5", "any_malefic"]},
+        {"type": "planet_dignity", "planet": "Jupiter", "dignity": "debilitated"},
     ],
     signal_group="rahu_h5_child_loss_32",
     direction="unfavorable", intensity="strong",
@@ -438,17 +446,13 @@ b.add(
         "debilitation."
     ),
     concordance_texts=[],
-    modifiers=[
-        {"condition": "h5_lord_conjunct_malefic", "effect": "amplifies", "strength": "strong"},
-        {"condition": "jupiter_debilitated", "effect": "amplifies", "strength": "strong"},
-    ],
 )
 
 # ═══ v.22: Loss of children at 33 and 36 ═════════════════════════════════════
 
 b.add(
     conditions=[
-        {"type": "planet_in_house", "planet": "any_malefic", "house": "any"},
+        {"type": "planet_in_house", "planet": "any_malefic", "house": 5},
     ],
     signal_group="malefic_5th_from_jupiter_child_loss_33_36",
     direction="unfavorable", intensity="strong",
@@ -459,19 +463,27 @@ b.add(
     ],
     timing_window={"type": "age_range", "value": [33, 36], "precision": "approximate"},
     verse_ref="Ch.16 v.22",
-    commentary_context="Malefic in 5th from Jupiter + another in 5th from ascendant = double affliction causing loss at 33/36.",
+    commentary_context=(
+        "Dual condition: (1) a malefic in the 5th house from ascendant, AND "
+        "(2) another malefic in the 5th from Jupiter (relative house — "
+        "Jupiter's sign + 4). Both afflictions required simultaneously. "
+        "Condition (2) cannot be expressed as a current primitive; "
+        "encoded as modifier pending planet-relative-house primitive."
+    ),
     description=(
         "There will be loss of children at 33 and 36 if a malefic is in "
         "the 5th from Jupiter while another is in the 5th from the ascendant."
     ),
     concordance_texts=[],
+    modifiers=[{"condition": "malefic_in_5th_from_jupiter", "effect": "conditionalizes", "strength": "strong"}],
 )
 
 # ═══ v.23: Grief from child loss at 56 ═══════════════════════════════════════
 
 b.add(
     conditions=[
-        {"type": "planet_in_house", "planet": "any_malefic", "house": 1},
+        {"type": "upagraha_in_house", "upagraha": "gulika", "house": 1, "mode": "occupies"},
+        {"type": "planet_dignity", "planet": "lord_of_1", "dignity": "debilitated"},
     ],
     signal_group="mandi_asc_child_loss_56",
     direction="unfavorable", intensity="strong",
@@ -494,7 +506,6 @@ b.add(
         "will cause harm to the bhava concerned."
     ),
     concordance_texts=[],
-    modifiers=[{"condition": "ascendant_lord_in_fall", "effect": "conditionalizes", "strength": "strong"}],
 )
 
 # ═══ v.24-32: Number of children (compound rules, key ones) ══════════════════
@@ -557,15 +568,23 @@ b.add(
 
 # ═══ v.15: Born of other's loins (illegitimate) ══════════════════════════════
 b.add(
-    conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 8}],
+    conditions=[
+        {"type": "planet_in_house", "planet": "Moon", "house": 8},
+        {"type": "planet_in_house", "planet": "Jupiter", "house": 3},
+    ],
     entity_target="native",
     signal_group="moon_h8_jupiter_8th_from_moon_illegitimate",
     direction="unfavorable", intensity="strong", domains=["progeny"],
     predictions=[{"entity": "native", "claim": "born_of_others_loins_illegitimate", "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6}],
     verse_ref="Ch.16 v.15",
-    commentary_context="Santhanam: Moon in 8th from ascendant + Jupiter in 8th from Moon. Malefic's aspect/association is essential in this Yoga.",
-    description="Moon in 8th from ascendant + Jupiter in 8th from Moon: native born of other's loins (illegitimate).",
-    modifiers=[{"condition": "jupiter_in_8th_from_moon", "effect": "conditionalizes", "strength": "strong"}])
+    commentary_context=(
+        "Santhanam: Moon in 8th from ascendant + Jupiter in 8th from Moon. "
+        "When Moon is in house 8, Jupiter in 8th from Moon = house 3 "
+        "(8+7=15 mod 12=3). Malefic's aspect/association is essential in "
+        "this Yoga."
+    ),
+    description="Moon in 8th from ascendant + Jupiter in 8th from Moon (= house 3): native born of other's loins (illegitimate).",
+    modifiers=[{"condition": "malefic_aspect_or_association_required", "effect": "conditionalizes", "strength": "strong"}])
 
 # ═══ v.17: Mean deeds — 3-4 malefics in 5th ══════════════════════════════════
 b.add(
@@ -592,7 +611,7 @@ b.add(
     commentary_context="Santhanam: Eight sons if Jupiter in 5th/9th + 5th lord endowed with strength + 2nd lord in 10th.",
     description="Jupiter in 5th/9th + 5th lord strong + 2nd lord in 10th: eight sons.",
     prediction_type="trait",
-    modifiers=[])
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1619"]})
 
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 9},

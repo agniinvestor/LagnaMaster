@@ -78,7 +78,7 @@ _BHAVAT_BHAVAM = {
 # Chapters with confirmed GPT maker-checker review (evidence from git history).
 # Going forward, review_status field on RuleRecord tracks this per-rule.
 # Historical chapters tracked here from commit evidence.
-_GPT_REVIEWED_CHAPTERS: set[str] = {"12", "13", "14"}
+_GPT_REVIEWED_CHAPTERS: set[str] = {"12", "13", "14", "16"}
 
 VALID_TIMING_TYPES = {"age", "age_range", "after_event", "dasha_period", "unspecified"}
 VALID_ENTITY_TARGETS = {"native", "father", "mother", "spouse", "children", "siblings", "general"}
@@ -856,6 +856,14 @@ def main():
         sys.exit(0)
 
     sc = score_rules(rules, label)
+
+    # When --file targets a single chapter, filter red_flags to that chapter only
+    if args.file:
+        import re as _re
+        _ch_match = _re.search(r"ch(\d+[a-c]?)", args.file)
+        if _ch_match:
+            _target_ch = _ch_match.group(1)
+            sc.red_flags = [f for f in sc.red_flags if f"Ch.{_target_ch}" in f.rule_id]
 
     if args.json:
         print(json.dumps(sc.to_dict(), indent=2, default=str))
