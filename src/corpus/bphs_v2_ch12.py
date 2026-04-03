@@ -193,6 +193,7 @@ b.add(
     concordance_texts=["Saravali"],
     modifiers=[],
     exceptions=["lagna_lord_is_benefic_or_exalted_gives_relief"],
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1200"]},
 )
 
 # v.1-2f: Lagna lord is benefic or exalted → relief (EXCEPTION to unfavorable rules)
@@ -431,6 +432,7 @@ b.add(
     modifiers=[
         {"condition": "mercury_or_venus_also_in_kendra_or_with_moon", "effect": "amplifies", "strength": "moderate"},
     ],
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1209"]},
 )
 
 # ═════════════════════════════════════════════════════════════════════════
@@ -556,7 +558,7 @@ b.add(
     domains=["longevity"],
     predictions=[
         {"entity": "native", "claim": "nurtured_by_three_mothers",
-         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.6},
+         "domain": "longevity", "direction": "unfavorable", "magnitude": 0.6},
         {"entity": "mother", "claim": "loss_of_mother_within_3_months",
          "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7},
     ],
@@ -595,7 +597,7 @@ b.add(
     domains=["longevity"],
     predictions=[
         {"entity": "native", "claim": "vargottama_luminaries_exception_to_three_mothers",
-         "domain": "physical_health", "direction": "neutral", "magnitude": 0.3},
+         "domain": "longevity", "direction": "neutral", "magnitude": 0.3},
     ],
     verse_ref="Ch.12 v.10",
     description=(
@@ -620,29 +622,31 @@ b.add(
 # ═════════════════════════════════════════════════════════════════════════
 
 b.add(
-    conditions=[],  # Methodological principle, not a specific condition
+    conditions=[],  # Meta-rule: evaluation instruction, not a specific condition
     signal_group="moon_equals_ascendant_principle",
     direction="neutral", intensity="moderate",
-    domains=["physical_health", "character_temperament"],
+    domains=["physical_health"],
     predictions=[
-        {"entity": "native", "claim": "moon_effects_equal_ascendant_effects",
-         "domain": "character_temperament", "direction": "neutral", "magnitude": 0.5},
+        {"entity": "native", "claim": "replicate_all_lagna_rules_on_moon_axis",
+         "domain": "physical_health", "direction": "neutral", "magnitude": 0.0},
     ],
     verse_ref="Ch.12 v.11",
     description=(
-        "The learned in astrology should also base the effects on the "
-        "Moon as applicable to the ascendant. Now explained are clues "
-        "to know of ulcers, identity marks etc. on one's person."
+        "META-RULE: The learned in astrology should also base the effects "
+        "on the Moon as applicable to the ascendant. All lagna-lord rules "
+        "should be evaluated with Moon as secondary lagna."
     ),
     commentary_context=(
         "Santhanam notes: This wellknown rule is a speciality in Hindu "
         "Astrology and has the sage's sanction. The Moon is given a "
         "significant status equal to the ascendant for she rules one's "
         "mind and the mind in turn functions according to one's Karma, "
-        "see Buddhih Karmanusarini."
+        "see Buddhih Karmanusarini. ENGINE NOTE: This is an evaluation "
+        "instruction — all preceding rules should also be assessed from "
+        "Moon sign as secondary lagna."
     ),
     concordance_texts=["Saravali"],
-    tags=["moon", "ascendant", "methodological", "principle"],
+    tags=["moon", "ascendant", "meta_rule", "evaluation_instruction"],
 )
 
 # ═════════════════════════════════════════════════════════════════════════
@@ -658,7 +662,7 @@ b.add(
     domains=["physical_appearance"],
     predictions=[
         {"entity": "native", "claim": "body_parts_mapped_by_decanate",
-         "domain": "physical_appearance", "direction": "neutral", "magnitude": 0.5},
+         "domain": "physical_appearance", "direction": "neutral", "magnitude": 0.0},
     ],
     verse_ref="Ch.12 v.12-14",
     description=(
