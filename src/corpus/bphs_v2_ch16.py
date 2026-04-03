@@ -122,6 +122,7 @@ b.add(
         "even childlessness."
     ),
     concordance_texts=[],
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1601"]},
 )
 
 # ═══ v.8: Difficulty in begetting ════════════════════════════════════════════

@@ -273,6 +273,7 @@ b.add(
     verse_ref="Ch.20 v.26",
     commentary_context="One will enjoy abundant fortunes if Venus is in deep exaltation and be in the company of the 9th lord as Saturn is in the 3rd.",
     description="Venus in deep exaltation + company of 9th lord + Saturn in 3rd: abundant fortunes.",
+    rule_relationship={"type": "addition", "related_rules": ["BPHS2019"]},
 )
 
 # v.29 gap: 9th lord in 9th + asc lord in asc + Jupiter in 7th → wealth/conveyances
