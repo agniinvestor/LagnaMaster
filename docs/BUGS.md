@@ -25,21 +25,29 @@ Some bugs existed in the Excel v5 workbook but were **never present in the Pytho
 
 ## Active Known Issues (Python codebase, S188 state)
 
-### C-18 🟠 HIGH — Insufficient Stress-Test Fixtures
-**Issue:** The regression fixture set lacks charts testing specific edge cases critical for classical correctness.  
-**Missing fixtures (from PLAN.md S189+):**
-- Neecha Bhanga chart (debilitated planet with cancellation conditions)
-- Graha Yuddha chart (two planets within 1° longitude AND latitude)
-- Nakshatra cusp birth (Moon near nakshatra boundary — tests topocentric correction)
-- Parivartana yoga chart (mutual sign exchange)
-- Female chart (for gender-dependent rules)
-- High-latitude birth (>55°N — tests Bhava Chalita divergence)
-- Year-boundary birth (Dec 31/Jan 1 — tests JD calculation edge case)
-- BC date chart (pre-1800 — requires `seplm_18.se1` + `semom_18.se1`)  
+### C-18 🟠 HIGH — Stress-Test Edge Cases Not Cross-Validated
 
-**Current:** 200+ ADB fixtures covering all 12 Lagnas, but these 8 specific conditions not covered.  
-**Effort:** 1 day  
-**Session:** S189
+**Issue:** 8 classical edge-case categories need real-computation cross-validation, not mock-based testing.
+
+**Status per category (post-360-chart pipeline):**
+
+| # | Category | In 360 ADB? | In diverse_chart_fixtures? | Cross-validated? | Gap |
+|---|----------|-------------|---------------------------|-----------------|-----|
+| 1 | Neecha Bhanga | Can't verify (no dignity in verdicts) | Yes (3 synthetic) | **No** | Need real ADB charts with NB + Phase 2 dignity diff |
+| 2 | Graha Yuddha | 187 conjunctions (proxy only) | Yes (3 synthetic) | **No** | Conjunction ≠ Graha Yuddha (needs latitude check) |
+| 3 | Nakshatra cusp | 100 charts | Yes (9 synthetic) | **Positions only** | Need Phase 2 nakshatra cross-validation |
+| 4 | Parivartana | Can't verify (no house lords in verdicts) | Yes (3 synthetic) | **No** | Need real ADB charts + Phase 2 house lord diff |
+| 5 | Female chart | 50 charts | No | **Positions only** | Need gender-dependent rule testing |
+| 6 | High-latitude (>55°) | 45 charts | Yes (2 synthetic) | **Positions only** | Bhava Chalita divergence not tested |
+| 7 | Year-boundary | 8 charts | No | **Positions only** | JD edge case covered by position agreement |
+| 8 | BC/pre-1800 | 24 charts | No | **Positions only** | Needs `seplm_18.se1` + `semom_18.se1` verification |
+
+**Root problem:** `diverse_chart_fixtures.py` has synthetic position dicts for categories 1-4 but no real birth records. `test_diverse_charts.py` tests them via mock — never through `compute_chart()`. The 360-chart pipeline uses real computation but only covers positions (Phase 1).
+
+**To close C-18:** Extend diff_engine to Phase 2 (dignity, house lords, yogas), then verify the 360 ADB charts actually trigger these conditions. For categories not naturally present in ADB data, find real birth charts that exhibit them (BV Raman Notable Horoscopes is a source).
+
+**Effort:** Blocked on Phase 2 diff engine extension  
+**Session:** S189 (opened), updated S312+
 
 ---
 
