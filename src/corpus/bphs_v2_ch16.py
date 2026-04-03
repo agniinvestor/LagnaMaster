@@ -235,7 +235,6 @@ b.add(
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 5, "house": "any"},
         {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "strong"},
     ],
     signal_group="h5_lord_strong_many_children",
@@ -511,7 +510,6 @@ b.add(
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 5, "house": "any"},
         {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "exalted"},
     ],
     signal_group="h5_lord_deep_exalt_10_sons",
@@ -543,8 +541,7 @@ b.add(
 
 # ═══ v.6: Saturn+Mercury in 5th → one child only ═════════════════════════════
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 5, "house": "any"},
-                {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"}],
+    conditions=[{"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"}],
     signal_group="h5_lord_fall_saturn_mercury_one_child",
     direction="unfavorable", intensity="moderate", domains=["progeny"],
     predictions=[{"entity": "children", "claim": "one_child_only_saturn_mercury_in_5th", "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6}],
@@ -556,7 +553,7 @@ b.add(
 # ═══ v.7: 9th lord in ascendant + 5th lord fall + Ketu+Mercury → progeny after ordeal
 b.add(
     conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 1},
-                {"type": "lord_in_house", "lord_of": 5, "house": "any"}],
+                {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"}],
     signal_group="h9_lord_h1_h5_lord_fall_progeny_ordeal",
     direction="unfavorable", intensity="moderate", domains=["progeny"],
     predictions=[{"entity": "children", "claim": "progeny_after_great_ordeal", "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6}],
@@ -583,7 +580,7 @@ b.add(
         "this Yoga."
     ),
     description="Moon in 8th from ascendant + Jupiter in 8th from Moon (= house 3): native born of other's loins (illegitimate).",
-    modifiers=[{"condition": "malefic_aspect_or_association_required", "effect": "conditionalizes", "strength": "strong"}])
+    modifiers=[{"condition": "malefic_aspect_or_association_essential", "effect": "conditionalizes", "strength": "strong"}])
 
 # ═══ v.17: Mean deeds — 3-4 malefics in 5th ══════════════════════════════════
 b.add(
@@ -600,7 +597,6 @@ b.add(
 # ═══ v.25-28: Number of children (individual slokas from the block) ═══════════
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": [5, 9]},
-                {"type": "lord_in_house", "lord_of": 5, "house": "any"},
                 {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "strong"},
                 {"type": "lord_in_house", "lord_of": 2, "house": 10}],
     signal_group="jupiter_h5_h9_h5_lord_strong_8_sons",
@@ -637,22 +633,21 @@ b.add(
     prediction_type="trait")
 
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 5, "house": "any"}],
+    conditions=[{"type": "planets_conjunct", "planets": ["lord_of_5", "Mars"]}],
     signal_group="h5_lord_mars_lose_children_as_born",
     direction="unfavorable", intensity="strong", domains=["progeny", "longevity"],
     predictions=[{"entity": "children", "claim": "live_long_but_lose_children_one_after_other", "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7}],
     verse_ref="Ch.16 v.32",
     commentary_context="Santhanam: If the 5th lord is with Mars, one will live long but lose his children one after the other as they are born.",
     description="5th lord with Mars: native lives long but loses children one after the other as born.",
-    modifiers=[{"condition": "5th_lord_conjunct_mars_children_lost_one_after_another_as_born", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[],
     prediction_type="trait")
 
 # ═══ GAP FILLS (identified by PDF-first audit 2026-04-01) ═════════════════════
 
 # v.1-3 gap: 5th lord combust/with malefics/weak → no children (distinct from dusthana)
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 5, "house": "any"},
-                {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "weak"}],
+    conditions=[{"type": "planet_dignity", "planet": "lord_of_5", "dignity": "weak"}],
     signal_group="h5_lord_combust_weak_no_children",
     direction="unfavorable", intensity="strong", domains=["progeny"],
     predictions=[{"entity": "children", "claim": "no_children_combust_or_weak_5th_lord",

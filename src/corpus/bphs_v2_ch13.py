@@ -635,9 +635,7 @@ b.add(
     commentary_context="Santhanam: Jupiter conjunct Mars gives wealth regardless of house ownership or placement. The 'whether or not' clarifies this is unconditional — no lordship or house modifier applies.",
     description="Jupiter conjunct Mars in any house: wealth acquired. House position irrelevant. Unconditional — no lordship modifier.",
     concordance_texts=["Saravali"],
-    modifiers=[
-        {"condition": "unconditional_no_lordship_required", "effect": "conditionalizes", "strength": "none"},
-    ])
+    modifiers=[])
 
 # ═══ v.4 MISSING: 2nd + 11th lords joining in kendra/trikona → gains
 b.add(
