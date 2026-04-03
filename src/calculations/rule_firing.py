@@ -399,7 +399,8 @@ def _check_compound_conditions(conditions: list[dict], chart) -> tuple[bool, int
 
             ref_planet = resolved_ref[0]
             ref_house = _planet_house(chart, ref_planet)
-            target_house = (ref_house + offset - 1) % 12 + 1
+            # BPHS inclusive counting: "5th from house 3" = house 7 (3,4,5,6,7)
+            target_house = (ref_house + offset - 2) % 12 + 1
 
             # Resolve planet → may be multiple (any_malefic, etc.)
             if planet_spec == "any_malefic":

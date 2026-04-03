@@ -79,22 +79,22 @@ def test_rule_firing_lagna_scope_filter():
 
 
 # ═══ planet_in_house_from tests ══════════════════════════════════════════════
+# Engine formula (BPHS inclusive counting):
+#   target = (ref_house + offset - 2) % 12 + 1
+#   offset=1 → same house, offset=7 → opposite house
+# Inverse: offset = (planet_house - ref_house + 1) % 12 or 12
 
 def test_planet_in_house_from_basic():
-    """Basic occupancy: planet in Nth house from reference.
-
-    Engine formula: target = (ref_house + offset - 1) % 12 + 1
-    Inverse: offset = (planet_house - ref_house) % 12, treating 0 as 12.
-    """
+    """Basic occupancy: planet in Nth house from reference."""
     from src.calculations.rule_firing import _check_compound_conditions, _planet_house
     chart = _get_india_1947()
     rahu_house = _planet_house(chart, "Rahu")
     saturn_house = _planet_house(chart, "Saturn")
-    offset = (saturn_house - rahu_house) % 12 or 12
+    offset = (saturn_house - rahu_house + 1) % 12 or 12
     conds = [{"type": "planet_in_house_from", "planet": "Saturn",
               "reference": "Rahu", "offset": offset, "mode": "occupies"}]
     fires, house = _check_compound_conditions(conds, chart)
-    assert fires, f"Saturn should be in offset={offset} from Rahu (houses {rahu_house}→{saturn_house})"
+    assert fires, f"Saturn should be in {offset}th from Rahu"
     assert house == saturn_house
 
 
@@ -104,7 +104,8 @@ def test_planet_in_house_from_no_match():
     chart = _get_india_1947()
     rahu_house = _planet_house(chart, "Rahu")
     saturn_house = _planet_house(chart, "Saturn")
-    wrong_offset = (saturn_house - rahu_house + 3) % 12 + 1
+    correct_offset = (saturn_house - rahu_house + 1) % 12 or 12
+    wrong_offset = (correct_offset % 12) + 1  # shift by 1
     conds = [{"type": "planet_in_house_from", "planet": "Saturn",
               "reference": "Rahu", "offset": wrong_offset, "mode": "occupies"}]
     fires, _ = _check_compound_conditions(conds, chart)
@@ -116,7 +117,8 @@ def test_planet_in_house_from_any_malefic():
     from src.calculations.rule_firing import _check_compound_conditions, _planet_house
     chart = _get_india_1947()
     jupiter_house = _planet_house(chart, "Jupiter")
-    target = (jupiter_house + 5 - 1) % 12 + 1
+    # 5th from Jupiter (BPHS inclusive)
+    target = (jupiter_house + 5 - 2) % 12 + 1
     malefic_houses = [_planet_house(chart, m) for m in ("Sun", "Mars", "Saturn", "Rahu", "Ketu")]
     expected = target in malefic_houses
     conds = [{"type": "planet_in_house_from", "planet": "any_malefic",
@@ -126,17 +128,13 @@ def test_planet_in_house_from_any_malefic():
 
 
 def test_planet_in_house_from_lord_of_n():
-    """lord_of_N as reference: resolves correctly.
-
-    Engine formula: target = (ref_house + offset - 1) % 12 + 1
-    Inverse: offset = (planet_house - ref_house) % 12, treating 0 as 12.
-    """
+    """lord_of_N as reference: resolves correctly."""
     from src.calculations.rule_firing import _check_compound_conditions, _planet_house, _lord_of_house
     chart = _get_india_1947()
     lord5 = _lord_of_house(chart, 5)
     lord5_house = _planet_house(chart, lord5)
     moon_house = _planet_house(chart, "Moon")
-    offset = (moon_house - lord5_house) % 12 or 12
+    offset = (moon_house - lord5_house + 1) % 12 or 12
     conds = [{"type": "planet_in_house_from", "planet": "Moon",
               "reference": "lord_of_5", "offset": offset, "mode": "occupies"}]
     fires, house = _check_compound_conditions(conds, chart)
@@ -144,29 +142,30 @@ def test_planet_in_house_from_lord_of_n():
     assert house == moon_house
 
 
-def test_planet_in_house_from_offset_12_same_house():
-    """offset=12 means same house as reference (conjunction-like).
-
-    Engine formula: target = (ref_house + offset - 1) % 12 + 1
-    For offset=12: target = (ref_house + 11) % 12 + 1 = ref_house (always).
-    So offset=12 is the 'same house' / conjunction offset.
-    """
+def test_planet_in_house_from_offset_1_same_house():
+    """offset=1 means same house as reference (BPHS inclusive counting)."""
     from src.calculations.rule_firing import _check_compound_conditions, _planet_house
     chart = _get_india_1947()
-    houses: dict[int, str] = {}
+    # offset=1 should compute to same house as reference
+    sun_house = _planet_house(chart, "Sun")
+    target = (sun_house + 1 - 2) % 12 + 1
+    assert target == sun_house, "offset=1 must yield same house"
+    # Sun in 1st from Sun = True
+    conds = [{"type": "planet_in_house_from", "planet": "Sun",
+              "reference": "Sun", "offset": 1, "mode": "occupies"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires
+    # Find two planets in same house (conjunction)
+    houses = {}
     for p in ("Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Rahu", "Ketu"):
         h = _planet_house(chart, p)
         if h in houses:
-            conds = [{"type": "planet_in_house_from", "planet": p,
-                      "reference": houses[h], "offset": 12, "mode": "occupies"}]
-            fires, _ = _check_compound_conditions(conds, chart)
-            assert fires, f"{p} and {houses[h]} should be in same house (offset=12)"
+            conds2 = [{"type": "planet_in_house_from", "planet": p,
+                       "reference": houses[h], "offset": 1, "mode": "occupies"}]
+            fires2, _ = _check_compound_conditions(conds2, chart)
+            assert fires2, f"{p} and {houses[h]} in same house → offset=1 should fire"
             return
         houses[h] = p
-    # Fallback: any planet is in the same house as itself (offset=12)
-    sun_house = _planet_house(chart, "Sun")
-    target_via_12 = (sun_house + 12 - 1) % 12 + 1
-    assert target_via_12 == sun_house, "offset=12 must yield same house"
 
 
 def test_planet_in_house_from_missing_reference():
@@ -180,33 +179,27 @@ def test_planet_in_house_from_missing_reference():
     assert house == 0
 
 
-def test_planet_in_house_from_offset_wraparound():
-    """High-offset values wrap correctly past house 12.
-
-    Engine formula: target = (ref_house + offset - 1) % 12 + 1
-    Verify that a planet known to be in a specific house fires when the
-    matching offset is computed via the inverse formula.
-    """
+def test_planet_in_house_from_offset_12_wraparound():
+    """offset=12: 12th from reference wraps correctly."""
     from src.calculations.rule_firing import _check_compound_conditions, _planet_house
     chart = _get_india_1947()
-    # Ketu is in house 7, Sun is in house 3.
-    # Correct offset for Ketu from Sun: (7 - 3) % 12 or 12 = 4
     sun_house = _planet_house(chart, "Sun")
-    ketu_house = _planet_house(chart, "Ketu")
-    offset = (ketu_house - sun_house) % 12 or 12
-    target = (sun_house + offset - 1) % 12 + 1
-    assert target == ketu_house, f"offset={offset} from Sun({sun_house}) should give Ketu({ketu_house}), got {target}"
-    conds = [{"type": "planet_in_house_from", "planet": "Ketu",
-              "reference": "Sun", "offset": offset, "mode": "occupies"}]
-    fires, house = _check_compound_conditions(conds, chart)
-    assert fires
-    assert house == ketu_house
-    # Also verify a wrong offset (offset+1) does NOT fire
-    wrong_offset = (offset % 12) + 1
-    conds_wrong = [{"type": "planet_in_house_from", "planet": "Ketu",
-                    "reference": "Sun", "offset": wrong_offset, "mode": "occupies"}]
-    fires_wrong, _ = _check_compound_conditions(conds_wrong, chart)
-    assert not fires_wrong
+    # 12th from Sun (BPHS inclusive): (sun + 12 - 2) % 12 + 1
+    target = (sun_house + 12 - 2) % 12 + 1
+    # Find if any planet is there
+    for p in ("Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn", "Ketu"):
+        if _planet_house(chart, p) == target:
+            conds = [{"type": "planet_in_house_from", "planet": p,
+                      "reference": "Sun", "offset": 12, "mode": "occupies"}]
+            fires, _ = _check_compound_conditions(conds, chart)
+            assert fires
+            return
+    # No planet there — verify it correctly returns False
+    conds = [{"type": "planet_in_house_from", "planet": "Jupiter",
+              "reference": "Sun", "offset": 12, "mode": "occupies"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    jupiter_house = _planet_house(chart, "Jupiter")
+    assert fires == (jupiter_house == target)
 
 
 def test_planet_in_house_from_all_candidates_miss():
@@ -216,7 +209,7 @@ def test_planet_in_house_from_all_candidates_miss():
     saturn_house = _planet_house(chart, "Saturn")
     benefic_houses = {_planet_house(chart, b) for b in ("Jupiter", "Venus", "Mercury", "Moon")}
     for off in range(1, 13):
-        target = (saturn_house + off - 1) % 12 + 1
+        target = (saturn_house + off - 2) % 12 + 1
         if target not in benefic_houses:
             conds = [{"type": "planet_in_house_from", "planet": "any_benefic",
                       "reference": "Saturn", "offset": off, "mode": "occupies"}]
