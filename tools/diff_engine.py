@@ -127,6 +127,27 @@ def _extract_lm_values(chart, birth_data: dict | None = None) -> dict:
         sign_idx = (chart.lagna_sign_index + h - 1) % 12
         values[f"house_{h}_lord"] = _SIGN_LORDS[sign_idx]
 
+    # Phase 1: Panchangam
+    if birth_data:
+        try:
+            from src.calculations.panchanga import compute_panchanga
+            from datetime import datetime
+            bd = birth_data
+            birth_dt = datetime(bd["year"], bd["month"], bd["day"],
+                                int(bd["hour"]), int((bd["hour"] % 1) * 60))
+            p = compute_panchanga(
+                chart.planets["Sun"].longitude,
+                chart.planets["Moon"].longitude,
+                birth_dt,
+            )
+            values["tithi"] = p.tithi  # 1-30
+            values["vara"] = p.vara  # 0=Sun..6=Sat
+            values["yoga"] = p.yoga  # 1-27
+            values["karana"] = p.karana_name  # name string — avoids index mismatch
+            values["paksha"] = p.paksha  # "Shukla" or "Krishna"
+        except Exception:
+            pass
+
     # Phase 3: Ashtakavarga (Sarva AV per sign)
     try:
         from src.calculations.ashtakavarga import compute_ashtakavarga
@@ -208,6 +229,15 @@ def _extract_pjh_values(pjh: dict) -> dict:
         sign_idx = (lagna_sign_index + h - 1) % 12
         values[f"house_{h}_lord"] = _SIGN_LORDS[sign_idx]
 
+    # Phase 1: Panchangam
+    panch = pjh.get("panchangam")
+    if panch:
+        values["tithi"] = panch.get("tithi")
+        values["vara"] = panch.get("vara")
+        # PJH yoga is 1-indexed (Vishkambha=1), LM is 0-indexed (Vishkambha=0)
+        pjh_yoga = panch.get("yoga")
+        values["yoga"] = pjh_yoga - 1 if pjh_yoga is not None else None
+
     # Phase 3: Sarva Ashtakavarga
     sav = pjh.get("sarva_av")
     if sav and len(sav) == 12:
@@ -265,6 +295,11 @@ def _build_schema(has_edge_flags: bool) -> dict:
         }
         schema[f"sign_{n}"] = {"field_type": "categorical"}
         schema[f"nakshatra_{n}"] = {"field_type": "categorical"}
+
+    # Phase 1: Panchangam
+    schema["tithi"] = {"field_type": "integer"}
+    schema["vara"] = {"field_type": "integer"}
+    schema["yoga"] = {"field_type": "integer"}
 
     # Phase 2: dignity
     for name in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:

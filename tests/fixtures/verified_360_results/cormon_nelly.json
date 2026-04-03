@@ -66,6 +66,11 @@
     "house_10_lord": "Venus",
     "house_11_lord": "Mars",
     "house_12_lord": "Jupiter",
+    "tithi": 10,
+    "vara": 6,
+    "yoga": 18,
+    "karana": "Shakuni",
+    "paksha": "Shukla",
     "sav_aries": 12,
     "sav_taurus": 8,
     "sav_gemini": 10,
@@ -129,6 +134,9 @@
     "house_10_lord": "Venus",
     "house_11_lord": "Mars",
     "house_12_lord": "Jupiter",
+    "tithi": 10,
+    "vara": 6,
+    "yoga": 18,
     "sav_aries": 31,
     "sav_taurus": 31,
     "sav_gemini": 28,
@@ -477,6 +485,39 @@
       "pjh": "Magha",
       "diff": null,
       "field_type": "categorical",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "tithi": {
+      "status": "agreement",
+      "lm": 10,
+      "pjh": 10,
+      "diff": 0.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "vara": {
+      "status": "agreement",
+      "lm": 6,
+      "pjh": 6,
+      "diff": 0.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "yoga": {
+      "status": "agreement",
+      "lm": 18,
+      "pjh": 18,
+      "diff": 0.0,
+      "field_type": "integer",
       "tolerance": null,
       "normalized": true,
       "pattern_id": null,
@@ -836,10 +877,10 @@
     }
   },
   "summary": {
-    "total_fields": 61,
-    "agreement": 46,
+    "total_fields": 64,
+    "agreement": 49,
     "systematic": 8,
     "random": 7
   },
-  "confidence_score": 0.7541
+  "confidence_score": 0.7656
 }

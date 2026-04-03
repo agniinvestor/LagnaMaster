@@ -82,6 +82,20 @@ def compute_one_chart(birth_data: dict) -> dict | None:
                     "degree_in_sign": degree_in_sign,
                 }
 
+        # Phase 1: Panchangam
+        try:
+            tithi_data = drik.tithi(jd, place)
+            vara_data = drik.vaara(jd)
+            yogam_data = drik.yogam(jd, place)
+            karana_data = drik.karana(jd, place)
+            result["panchangam"] = {
+                "tithi": tithi_data[0] if isinstance(tithi_data, (list, tuple)) else None,
+                "vara": vara_data if isinstance(vara_data, int) else None,
+                "yoga": yogam_data[0] if isinstance(yogam_data, (list, tuple)) else None,
+            }
+        except Exception:
+            result["panchangam"] = None
+
         # Phase 3: Ashtakavarga
         try:
             house_list = ["" for _ in range(12)]

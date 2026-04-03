@@ -66,6 +66,11 @@
     "house_10_lord": "Jupiter",
     "house_11_lord": "Saturn",
     "house_12_lord": "Saturn",
+    "tithi": 6,
+    "vara": 1,
+    "yoga": 19,
+    "karana": "Kimstughna",
+    "paksha": "Shukla",
     "sav_aries": 13,
     "sav_taurus": 24,
     "sav_gemini": 4,
@@ -129,6 +134,9 @@
     "house_10_lord": "Jupiter",
     "house_11_lord": "Saturn",
     "house_12_lord": "Saturn",
+    "tithi": 6,
+    "vara": 1,
+    "yoga": 19,
     "sav_aries": 35,
     "sav_taurus": 36,
     "sav_gemini": 25,
@@ -477,6 +485,39 @@
       "pjh": "Mrigashira",
       "diff": null,
       "field_type": "categorical",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "tithi": {
+      "status": "agreement",
+      "lm": 6,
+      "pjh": 6,
+      "diff": 0.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "vara": {
+      "status": "agreement",
+      "lm": 1,
+      "pjh": 1,
+      "diff": 0.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "yoga": {
+      "status": "agreement",
+      "lm": 19,
+      "pjh": 19,
+      "diff": 0.0,
+      "field_type": "integer",
       "tolerance": null,
       "normalized": true,
       "pattern_id": null,
@@ -836,10 +877,10 @@
     }
   },
   "summary": {
-    "total_fields": 61,
-    "agreement": 43,
+    "total_fields": 64,
+    "agreement": 46,
     "systematic": 5,
     "random": 13
   },
-  "confidence_score": 0.7049
+  "confidence_score": 0.7188
 }

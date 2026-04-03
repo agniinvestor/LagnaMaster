@@ -66,6 +66,11 @@
     "house_10_lord": "Mercury",
     "house_11_lord": "Moon",
     "house_12_lord": "Sun",
+    "tithi": 27,
+    "vara": 3,
+    "yoga": 0,
+    "karana": "Chatushpada",
+    "paksha": "Krishna",
     "sav_aries": 2,
     "sav_taurus": 4,
     "sav_gemini": 13,
@@ -129,6 +134,9 @@
     "house_10_lord": "Mercury",
     "house_11_lord": "Moon",
     "house_12_lord": "Sun",
+    "tithi": 27,
+    "vara": 4,
+    "yoga": 0,
     "sav_aries": 20,
     "sav_taurus": 24,
     "sav_gemini": 32,
@@ -477,6 +485,39 @@
       "pjh": "Rohini",
       "diff": null,
       "field_type": "categorical",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "tithi": {
+      "status": "agreement",
+      "lm": 27,
+      "pjh": 27,
+      "diff": 0.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "vara": {
+      "status": "systematic_disagreement",
+      "lm": 3,
+      "pjh": 4,
+      "diff": 1.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": "vara:magnitude_0.0",
+      "note": null
+    },
+    "yoga": {
+      "status": "agreement",
+      "lm": 0,
+      "pjh": 0,
+      "diff": 0.0,
+      "field_type": "integer",
       "tolerance": null,
       "normalized": true,
       "pattern_id": null,
@@ -836,10 +877,10 @@
     }
   },
   "summary": {
-    "total_fields": 61,
-    "agreement": 45,
-    "systematic": 10,
+    "total_fields": 64,
+    "agreement": 47,
+    "systematic": 11,
     "random": 6
   },
-  "confidence_score": 0.7377
+  "confidence_score": 0.7344
 }

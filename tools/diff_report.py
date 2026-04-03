@@ -36,6 +36,9 @@ for _s in ["aries", "taurus", "gemini", "cancer", "leo", "virgo",
            "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"]:
     FIELD_MODULE[f"sav_{_s}"] = "ashtakavarga"
 FIELD_MODULE["vimsottari_sequence"] = "dashas"
+FIELD_MODULE["tithi"] = "panchangam"
+FIELD_MODULE["vara"] = "panchangam"
+FIELD_MODULE["yoga"] = "panchangam"
 
 
 def generate_report(as_json: bool = False) -> dict | None:
