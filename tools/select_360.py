@@ -196,7 +196,7 @@ def main():
     print(f"Manifest written to {args.output}")
     print(f"  Total: {manifest['total_charts']}")
     print(f"  Golden: {manifest['golden_50_count']}")
-    print(f"  Per lagna:")
+    print("  Per lagna:")
     for sign in SIGN_NAMES:
         count = len(manifest.get(sign, []))
         print(f"    {sign}: {count}")

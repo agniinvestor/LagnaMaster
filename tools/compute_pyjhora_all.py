@@ -89,7 +89,7 @@ def compute_one_chart(birth_data: dict) -> dict | None:
             tithi_data = drik.tithi(jd, place)
             vara_data = drik.vaara(jd)
             yogam_data = drik.yogam(jd, place)
-            karana_data = drik.karana(jd, place)
+            _karana_data = drik.karana(jd, place)  # noqa: F841 — computed for future use
             result["panchangam"] = {
                 "tithi": tithi_data[0] if isinstance(tithi_data, (list, tuple)) else None,
                 "vara": vara_data if isinstance(vara_data, int) else None,

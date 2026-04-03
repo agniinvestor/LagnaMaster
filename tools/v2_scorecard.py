@@ -629,7 +629,7 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
                 f"Ch.{ch}", "warning",
                 "chapter_not_ready",
                 f"Ch.{ch} not ship-ready: {', '.join(reasons)}",
-                f"Encode missing verses, resolve L2 gaps, and complete maker-checker review",
+                "Encode missing verses, resolve L2 gaps, and complete maker-checker review",
             ))
 
     sc.red_flags = flags

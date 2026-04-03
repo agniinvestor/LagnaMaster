@@ -6,8 +6,6 @@ Usage:
 from __future__ import annotations
 import argparse
 import importlib
-import os
-import sys
 
 
 def _patch_builder_for_migration():
