@@ -161,6 +161,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 9},
 b.add(conditions=[
           {"type": "planet_in_house", "planet": "Rahu", "house": 9},
           {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"},
+          {"type": "dispositor_condition", "planet": "Rahu", "dispositor_state": "in_house", "house": 8},
       ],
       signal_group="rahu_h9_no_fortune", direction="unfavorable", intensity="strong",
       primary_domain="wealth",
@@ -168,11 +169,10 @@ b.add(conditions=[
       verse_ref="Ch.20 v.30",
       commentary_context=(
           "Compound condition: Rahu in 9th + 9th lord in fall + Rahu's "
-          "dispositor in 8th. Dispositor condition is planet-relative, "
-          "kept as modifier."
+          "dispositor in 8th. Dispositor condition promoted from modifier "
+          "to first-class condition (Track 4)."
       ),
-      description="Rahu in 9th + 9th lord in fall + dispositor in 8th: devoid of fortunes.",
-      modifiers=[{"condition": "rahus_dispositor_in_8th", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}])
+      description="Rahu in 9th + 9th lord in fall + Rahu's dispositor in 8th: devoid of fortunes.")
 
 # ═══ v.31: Begging ═══════════════════════════════════════════════════════════
 b.add(conditions=[

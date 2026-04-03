@@ -508,6 +508,7 @@ b.add(
     conditions=[
         {"type": "planet_in_sign_type", "planet": "Venus", "sign_type": "dual"},
         {"type": "planet_dignity", "planet": "lord_of_7", "dignity": "strong"},
+        {"type": "dispositor_condition", "planet": "Venus", "dispositor_state": "dignity", "dignity": "exalted"},
     ],
     entity_target="native",
     signal_group="venus_dual_sign_many_wives",
@@ -518,9 +519,8 @@ b.add(
     commentary_context=(
         "Text: Venus in dual sign (Gemini/Virgo/Sagittarius/Pisces) + "
         "dispositor in exaltation + 7th lord strong = many wives. "
-        "Dispositor exaltation approximated via 7th lord strong."
+        "Dispositor exaltation promoted from modifier to condition (Track 4)."
     ),
-    description="Venus in dual sign + lord in exaltation + 7th lord strong: many wives.",
-    modifiers=[{"condition": "dispositor_of_venus_in_exaltation", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
+    description="Venus in dual sign + dispositor exalted + 7th lord strong: many wives.")
 
 BPHS_V2_CH18_REGISTRY = b.build()

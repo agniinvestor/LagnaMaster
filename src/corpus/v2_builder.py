@@ -576,6 +576,28 @@ class V2ChapterBuilder:
                     if not isinstance(house, int) or not (1 <= house <= 12):
                         errors.append(f"T1-1: conditions[{i}].house={house} must be int 1-12")
 
+            elif ctype == "planet_in_navamsa_sign":
+                if not cond.get("planet"):
+                    errors.append(f"T1-1: conditions[{i}] planet_in_navamsa_sign missing 'planet'")
+                sign = cond.get("sign")
+                if not sign:
+                    errors.append(f"T1-1: conditions[{i}] planet_in_navamsa_sign missing 'sign'")
+
+            elif ctype == "dispositor_condition":
+                if not cond.get("planet"):
+                    errors.append(f"T1-1: conditions[{i}] dispositor_condition missing 'planet'")
+                ds = cond.get("dispositor_state", "")
+                if ds not in ("in_house", "dignity"):
+                    errors.append(f"T1-1: conditions[{i}].dispositor_state='{ds}' must be 'in_house' or 'dignity'")
+                if ds == "in_house":
+                    house = cond.get("house")
+                    if not isinstance(house, int) or not (1 <= house <= 12):
+                        errors.append(f"T1-1: conditions[{i}].house={house} must be int 1-12")
+                elif ds == "dignity":
+                    dignity = cond.get("dignity", "")
+                    if not dignity:
+                        errors.append(f"T1-1: conditions[{i}] dispositor_condition dignity missing 'dignity'")
+
         # T1-2: Controlled vocabulary — domains, direction, intensity
         for d in domains:
             if d not in VALID_OUTCOME_DOMAINS:
@@ -825,7 +847,8 @@ class V2ChapterBuilder:
         elif ct == "planet_aspecting":
             pc["planet"] = c0.get("planet", "")
             pc["placement_type"] = "aspect_condition"
-        elif ct in ("planet_in_sign_type", "planet_in_derived_house", "upagraha_in_house", "planet_in_house_from"):
+        elif ct in ("planet_in_sign_type", "planet_in_derived_house", "upagraha_in_house", "planet_in_house_from",
+                    "planet_in_navamsa_sign", "dispositor_condition"):
             pc["planet"] = c0.get("planet", c0.get("upagraha", "general"))
             pc["placement_type"] = ct
         else:

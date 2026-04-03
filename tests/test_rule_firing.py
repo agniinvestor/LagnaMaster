@@ -254,3 +254,92 @@ def test_planet_not_aspecting_basic():
             fires, _ = _check_compound_conditions(conds, chart)
             assert fires
             return
+
+
+# ═══ planet_in_navamsa_sign tests ════════════════════════════════════════════
+
+def test_planet_in_navamsa_sign():
+    """Planet's navamsa sign matches target."""
+    from src.calculations.rule_firing import _check_compound_conditions, _find_planet
+    chart = _get_india_1947()
+    # Compute Sun's navamsa to verify
+    sun = _find_planet(chart, "Sun")
+    FIRE = {0, 4, 8}; EARTH = {1, 5, 9}; AIR = {2, 6, 10}; WATER = {3, 7, 11}
+    pada = int(sun.degree_in_sign / (30.0 / 9))
+    if pada >= 9:
+        pada = 8
+    if sun.sign_index in FIRE:
+        start = 0
+    elif sun.sign_index in EARTH:
+        start = 3
+    elif sun.sign_index in AIR:
+        start = 6
+    else:
+        start = 9
+    nav_idx = (start + pada) % 12
+    SIGNS = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+             "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"]
+    sun_nav = SIGNS[nav_idx]
+    conds = [{"type": "planet_in_navamsa_sign", "planet": "Sun", "sign": [sun_nav]}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires, f"Sun navamsa={sun_nav} should match"
+
+
+def test_planet_in_navamsa_sign_no_match():
+    """Planet's navamsa sign does not match wrong target → False."""
+    from src.calculations.rule_firing import _check_compound_conditions, _find_planet
+    chart = _get_india_1947()
+    sun = _find_planet(chart, "Sun")
+    FIRE = {0, 4, 8}; EARTH = {1, 5, 9}; AIR = {2, 6, 10}; WATER = {3, 7, 11}
+    pada = int(sun.degree_in_sign / (30.0 / 9))
+    if pada >= 9:
+        pada = 8
+    if sun.sign_index in FIRE:
+        start = 0
+    elif sun.sign_index in EARTH:
+        start = 3
+    elif sun.sign_index in AIR:
+        start = 6
+    else:
+        start = 9
+    nav_idx = (start + pada) % 12
+    SIGNS = ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo",
+             "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"]
+    sun_nav = SIGNS[nav_idx]
+    wrong_nav = SIGNS[(nav_idx + 1) % 12]
+    conds = [{"type": "planet_in_navamsa_sign", "planet": "Sun", "sign": [wrong_nav]}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert not fires, f"Sun navamsa={sun_nav}, wrong={wrong_nav} should not match"
+
+
+# ═══ dispositor_condition tests ══════════════════════════════════════════════
+
+def test_dispositor_in_house():
+    """Dispositor of planet is in target house."""
+    from src.calculations.rule_firing import _check_compound_conditions, _find_planet, _planet_house
+    chart = _get_india_1947()
+    rahu = _find_planet(chart, "Rahu")
+    LORDS = ["Mars", "Venus", "Mercury", "Moon", "Sun", "Mercury",
+             "Venus", "Mars", "Jupiter", "Saturn", "Saturn", "Jupiter"]
+    dispositor = LORDS[rahu.sign_index]
+    disp_house = _planet_house(chart, dispositor)
+    conds = [{"type": "dispositor_condition", "planet": "Rahu",
+              "dispositor_state": "in_house", "house": disp_house}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires
+
+
+def test_dispositor_in_house_wrong():
+    """Dispositor not in wrong house → False."""
+    from src.calculations.rule_firing import _check_compound_conditions, _find_planet, _planet_house
+    chart = _get_india_1947()
+    rahu = _find_planet(chart, "Rahu")
+    LORDS = ["Mars", "Venus", "Mercury", "Moon", "Sun", "Mercury",
+             "Venus", "Mars", "Jupiter", "Saturn", "Saturn", "Jupiter"]
+    dispositor = LORDS[rahu.sign_index]
+    disp_house = _planet_house(chart, dispositor)
+    wrong_house = (disp_house % 12) + 1
+    conds = [{"type": "dispositor_condition", "planet": "Rahu",
+              "dispositor_state": "in_house", "house": wrong_house}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert not fires

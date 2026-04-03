@@ -82,6 +82,9 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "planet_in_house_from",
     # Absence primitives (Track 3)
     "planet_not_in_house",
+    # Navamsa + dispositor primitives (Track 4)
+    "planet_in_navamsa_sign",
+    "dispositor_condition",
 })
 
 VALID_MODIFIER_EFFECTS = frozenset({

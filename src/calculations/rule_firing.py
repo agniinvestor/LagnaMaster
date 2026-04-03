@@ -458,6 +458,94 @@ def _check_compound_conditions(conditions: list[dict], chart) -> tuple[bool, int
                 return False, 0
             matched_house = matched_house or target_house
 
+        elif ctype == "planet_in_navamsa_sign":
+            planet_name = cond.get("planet", "")
+            target_signs = cond.get("sign", [])
+            if isinstance(target_signs, str):
+                target_signs = [target_signs]
+            target_signs_lower = [s.lower() for s in target_signs]
+
+            if planet_name.startswith("lord_of_"):
+                h = int(planet_name.split("_")[-1])
+                planet_name = _lord_of_house(chart, h)
+            if not planet_name:
+                return False, 0
+
+            pos = _find_planet(chart, planet_name.strip().title())
+            if not pos:
+                return False, 0
+
+            # Compute navamsa sign
+            # Standard navamsa: divide 30 degrees into 9 parts (3.333... each)
+            # Starting sign depends on element of rasi sign
+            FIRE_SIGNS = {0, 4, 8}      # Aries, Leo, Sagittarius
+            EARTH_SIGNS = {1, 5, 9}     # Taurus, Virgo, Capricorn
+            AIR_SIGNS = {2, 6, 10}      # Gemini, Libra, Aquarius
+            # WATER_SIGNS = {3, 7, 11} — else branch handles Cancer/Scorpio/Pisces
+
+            pada = int(pos.degree_in_sign / (30.0 / 9))
+            if pada >= 9:
+                pada = 8
+
+            sign_idx = pos.sign_index
+            if sign_idx in FIRE_SIGNS:
+                start = 0       # Aries
+            elif sign_idx in EARTH_SIGNS:
+                start = 3       # Cancer
+            elif sign_idx in AIR_SIGNS:
+                start = 6       # Libra
+            else:  # WATER
+                start = 9       # Capricorn
+
+            navamsa_sign_idx = (start + pada) % 12
+            SIGN_NAMES = ["aries", "taurus", "gemini", "cancer", "leo", "virgo",
+                          "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"]
+            navamsa_sign = SIGN_NAMES[navamsa_sign_idx]
+
+            if navamsa_sign not in target_signs_lower:
+                return False, 0
+
+        elif ctype == "dispositor_condition":
+            planet_name = cond.get("planet", "")
+            state = cond.get("dispositor_state", "")
+
+            if planet_name.startswith("lord_of_"):
+                h = int(planet_name.split("_")[-1])
+                planet_name = _lord_of_house(chart, h)
+            if not planet_name:
+                return False, 0
+
+            pos = _find_planet(chart, planet_name.strip().title())
+            if not pos:
+                return False, 0
+
+            # Dispositor = lord of the sign the planet occupies
+            _SIGN_LORDS_LIST = ["Mars", "Venus", "Mercury", "Moon", "Sun", "Mercury",
+                                "Venus", "Mars", "Jupiter", "Saturn", "Saturn", "Jupiter"]
+            dispositor = _SIGN_LORDS_LIST[pos.sign_index]
+
+            if state == "in_house":
+                target_house = cond.get("house", 0)
+                if isinstance(target_house, list):
+                    if _planet_house(chart, dispositor) not in target_house:
+                        return False, 0
+                else:
+                    if _planet_house(chart, dispositor) != target_house:
+                        return False, 0
+                matched_house = matched_house or (target_house if isinstance(target_house, int) else target_house[0])
+            elif state == "dignity":
+                target_dignity = cond.get("dignity", "")
+                actual_dignity = _planet_dignity_state(chart, dispositor)
+                if target_dignity in ("strong", "weak"):
+                    strong_states = {"exalted", "own_sign", "moolatrikona"}
+                    if target_dignity == "strong" and actual_dignity not in strong_states:
+                        return False, 0
+                    if target_dignity == "weak" and actual_dignity in strong_states | {"neutral"}:
+                        return False, 0
+                else:
+                    if actual_dignity != target_dignity:
+                        return False, 0
+
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire
             return False, 0
