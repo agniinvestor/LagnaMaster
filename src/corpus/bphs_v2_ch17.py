@@ -564,6 +564,7 @@ b.add(
     timing_window={"type": "age_range", "value": [1, 3], "precision": "approximate"},
     verse_ref="Ch.17 v.20",
     commentary_context="Santhanam: If Rahu is in the 6th while Saturn is in the 8th from said Rahu, the child will have danger from fire at age 1 and 2, while in the 3rd year birds will bring some evils.",
-    description="Rahu in 6th + Saturn in 8th from Rahu: danger from fire at age 1-2, birds bring evils at age 3.")
+    description="Rahu in 6th + Saturn in 8th from Rahu: danger from fire at age 1-2, birds bring evils at age 3.",
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1712"]})
 
 BPHS_V2_CH17_REGISTRY = b.build()

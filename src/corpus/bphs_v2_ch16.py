@@ -721,6 +721,7 @@ b.add(
     verse_ref="Ch.16 v.24-32",
     commentary_context="If the 5th house has a malefic in it or if Saturn is in the 5th from Jupiter, the native will beget offspring only through his 2nd or 3rd wife.",
     description="Malefic in 5th or Saturn in 5th from Jupiter: offspring only through 2nd or 3rd wife.",
-    prediction_type="trait")
+    prediction_type="trait",
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1629"]})
 
 BPHS_V2_CH16_REGISTRY = b.build()
