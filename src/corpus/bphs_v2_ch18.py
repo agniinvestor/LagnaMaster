@@ -198,7 +198,8 @@ for _mt_idx, (vref, ages, desc_suffix, conds) in enumerate(_MARRIAGE_TIMING):
 # ═══ v.27: Marriage at 18 (Venus relative to Moon — individual rule) ═════════
 b.add(
     conditions=[
-        {"type": "planets_conjunct", "planets": ["Venus", "Saturn"]},
+        {"type": "planet_in_house_from", "planet": "Venus", "reference": "Moon", "offset": 7, "mode": "occupies"},
+        {"type": "planet_in_house_from", "planet": "Saturn", "reference": "Venus", "offset": 7, "mode": "occupies"},
     ],
     entity_target="native",
     signal_group="marriage_timing_18",
@@ -209,15 +210,9 @@ b.add(
     verse_ref="Ch.18 v.27",
     commentary_context=(
         "Santhanam: Venus in 7th from Moon + Saturn in 7th from Venus. "
-        "Both are planet-relative conditions. Venus-Saturn interaction "
-        "captured as conjunction (approximation). Full encoding requires "
-        "planet_relative_house primitive."
+        "Both planet-relative conditions are now structurally encoded."
     ),
     description="Marriage timing: Venus in 7th from Moon + Saturn in 7th from Venus → marry at age 18.",
-    modifiers=[
-        {"condition": "venus_in_7th_from_moon", "effect": "conditionalizes", "strength": "strong"},
-        {"condition": "saturn_in_7th_from_venus", "effect": "conditionalizes", "strength": "strong"},
-    ],
 )
 
 # ═══ v.33: Marriage at 31/33 (Venus 9th from 5th — individual rule) ═════════
@@ -394,7 +389,11 @@ b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_7", "dignity": "
       description="7th lord in fall or malefic sign, 7th Navamsa = eunuch planet: two wives. Mars+Venus+Saturn = three. Venus in dual sign = many.")
 
 # ═══ v.40-41: Three marriages ═════════════════════════════════════════════════
-b.add(conditions=[{"type": "lord_in_house", "lord_of": 8, "house": 5}],
+b.add(conditions=[
+          {"type": "lord_in_house", "lord_of": 8, "house": 5},
+          {"type": "planet_in_house_from", "planet": "Moon", "reference": "Venus", "offset": 7, "mode": "occupies"},
+          {"type": "planet_in_house_from", "planet": "Mercury", "reference": "Moon", "offset": 7, "mode": "occupies"},
+      ],
       entity_target="native",
       signal_group="moon_venus_mercury_three_marriages", direction="neutral", intensity="moderate",
       domains=["marriage"],
@@ -403,15 +402,9 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 8, "house": 5}],
       verse_ref="Ch.18 v.40-41",
       commentary_context=(
           "Santhanam: Moon in 7th from Venus + Mercury in 7th from Moon + "
-          "8th lord in 5th = 3 marriages. Planet-relative conditions (Moon "
-          "from Venus, Mercury from Moon) require planet_relative_house "
-          "primitive. 8th lord in 5th is the only structurable condition."
+          "8th lord in 5th = 3 marriages. All conditions are now structurally encoded."
       ),
-      description="Moon in 7th from Venus + Mercury in 7th from Moon + 8th lord in 5th: three marriages (10th, 22nd, 33rd year).",
-      modifiers=[
-          {"condition": "moon_in_7th_from_venus", "effect": "conditionalizes", "strength": "strong"},
-          {"condition": "mercury_in_7th_from_moon", "effect": "conditionalizes", "strength": "strong"},
-      ])
+      description="Moon in 7th from Venus + Mercury in 7th from Moon + 8th lord in 5th: three marriages (10th, 22nd, 33rd year).")
 
 # ═══ GAP FILLS (identified by PDF-first audit 2026-04-01) ═════════════════════
 
