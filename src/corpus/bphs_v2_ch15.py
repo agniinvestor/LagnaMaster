@@ -110,6 +110,7 @@ b.add(
          "effect": "conditionalizes", "strength": "moderate"},
     ],
     concordance_texts=[],
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1500"]},
 )
 
 # ═══ v.6: Long-living mother ═════════════════════════════════════════════════
@@ -117,6 +118,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "any_benefic", "house": 4},
+        {"type": "planet_dignity", "planet": "lord_of_4", "dignity": "exalted"},
     ],
     entity_target="mother",
     signal_group="benefic_h4_mother_longevity",
@@ -141,7 +143,6 @@ b.add(
     concordance_texts=["Saravali"],
     cross_chapter_refs=["Ch.32 v.18-19 Planetary Karakatvas"],
     modifiers=[
-        {"condition": "h4_lord_in_exaltation", "effect": "amplifies", "strength": "strong"},
         {"condition": "mother_indicator_with_strength", "effect": "amplifies", "strength": "moderate"},
     ],
     convergence_signals=["moon_strong", "h4_lord_exalted", "no_malefic_in_4th"],
@@ -152,6 +153,8 @@ b.add(
 b.add(
     conditions=[
         {"type": "lord_in_house", "lord_of": 4, "house": [1, 4, 7, 10]},
+        {"type": "planet_in_house", "planet": "Venus", "house": [1, 4, 7, 10]},
+        {"type": "planet_dignity", "planet": "Mercury", "dignity": "exalted"},
     ],
     entity_target="mother",
     signal_group="h4_lord_kendra_mother_happy",
@@ -167,10 +170,6 @@ b.add(
         "The native's mother will be happy if the 4th lord is in an "
         "angle while Venus is also in an angle as Mercury is exalted."
     ),
-    modifiers=[
-        {"condition": "venus_in_kendra", "effect": "amplifies", "strength": "moderate"},
-        {"condition": "mercury_exalted", "effect": "amplifies", "strength": "moderate"},
-    ],
     concordance_texts=[],
 )
 
@@ -180,6 +179,8 @@ b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Sun", "house": 4},
         {"type": "planet_in_house", "planet": "Moon", "house": 9},
+        {"type": "planet_in_house", "planet": "Saturn", "house": 11},
+        {"type": "planet_in_house", "planet": "Mars", "house": 11},
     ],
     signal_group="sun_h4_moon_h9_quadrupeds",
     direction="favorable", intensity="moderate",
@@ -194,9 +195,6 @@ b.add(
         "Sun in the 4th, Moon in the 9th and Saturn and Mars in the "
         "11th — this yoga will confer cows and buffaloes on the native."
     ),
-    modifiers=[
-        {"condition": "saturn_and_mars_in_11th", "effect": "conditionalizes", "strength": "moderate"},
-    ],
     concordance_texts=[],
 )
 
@@ -225,6 +223,7 @@ b.add(
     ],
     concordance_texts=[],
     prediction_type="trait",
+    exceptions=["does_not_apply_to_fixed_or_dual_ascendants"],
 )
 
 # ═══ v.10-14: Conveyances with SPECIFIC TIMING ══════════════════════════════
@@ -262,6 +261,7 @@ b.add(
         {"condition": "venus_in_12th_or_11th", "effect": "amplifies", "strength": "moderate"},
     ],
     concordance_texts=[],
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1500"]},
 )
 
 # v.10b: Conveyances in 32nd year
@@ -269,6 +269,7 @@ b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Sun", "house": 4},
         {"type": "planet_dignity", "planet": "lord_of_4", "dignity": "exalted"},
+        {"type": "planets_conjunct", "planets": ["lord_of_4", "Venus"]},
     ],
     signal_group="sun_h4_lord_exalted_conveyance_32",
     direction="favorable", intensity="strong",
