@@ -14,6 +14,9 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+_MALEFICS = ("Sun", "Mars", "Saturn", "Rahu", "Ketu")
+_BENEFICS = ("Jupiter", "Venus", "Mercury", "Moon")
+
 
 @dataclass
 class FiredRule:
@@ -373,6 +376,54 @@ def _check_compound_conditions(conditions: list[dict], chart) -> tuple[bool, int
             if houses[0] != target:
                 return False, 0
             matched_house = target
+
+        elif ctype == "planet_in_house_from":
+            planet_spec = cond.get("planet", "")
+            ref_spec = cond.get("reference", "")
+            offset = cond.get("offset", 0)
+
+            # Resolve reference → must be exactly 1 planet
+            resolved_ref = []
+            if ref_spec.startswith("lord_of_"):
+                h = int(ref_spec.split("_")[-1])
+                p = _lord_of_house(chart, h)
+                if p:
+                    resolved_ref = [p]
+            else:
+                p = ref_spec.strip().title()
+                if _find_planet(chart, p):
+                    resolved_ref = [p]
+
+            if len(resolved_ref) != 1:
+                return False, 0
+
+            ref_planet = resolved_ref[0]
+            ref_house = _planet_house(chart, ref_planet)
+            target_house = (ref_house + offset - 1) % 12 + 1
+
+            # Resolve planet → may be multiple (any_malefic, etc.)
+            if planet_spec == "any_malefic":
+                candidates = list(_MALEFICS)
+            elif planet_spec == "any_benefic":
+                candidates = list(_BENEFICS)
+            elif planet_spec.startswith("lord_of_"):
+                lh = int(planet_spec.split("_")[-1])
+                lord = _lord_of_house(chart, lh)
+                candidates = [lord] if lord else []
+            else:
+                candidates = [planet_spec.strip().title()]
+
+            valid_candidates = [c for c in candidates if _find_planet(chart, c)]
+            if not valid_candidates:
+                return False, 0
+
+            hit = any(
+                _planet_house(chart, c) == target_house
+                for c in valid_candidates
+            )
+            if not hit:
+                return False, 0
+            matched_house = matched_house or target_house
 
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire
