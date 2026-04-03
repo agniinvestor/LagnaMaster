@@ -1,0 +1,85 @@
+{
+  "chart_id": "curnonsky",
+  "name": "Curnonsky",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2405078.626528,
+    "year": 1872,
+    "month": 10,
+    "day": 12,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "l",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Angers",
+    "country": "France",
+    "lat": 47.466667,
+    "lon": -0.55,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 177.02259275493955,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 27.022592754939552
+      },
+      "Moon": {
+        "longitude": 296.7556667135975,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 26.75566671359752
+      },
+      "Mars": {
+        "longitude": 131.89175800786458,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 11.891758007864581
+      },
+      "Mercury": {
+        "longitude": 176.2147643674186,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 26.21476436741861
+      },
+      "Jupiter": {
+        "longitude": 123.22719985893053,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 3.2271998589305326
+      },
+      "Venus": {
+        "longitude": 200.45207558222077,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 20.452075582220772
+      },
+      "Saturn": {
+        "longitude": 263.0255063014141,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 23.02550630141411
+      },
+      "Rahu": {
+        "longitude": 42.38014738975928,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 12.38014738975928
+      },
+      "Ketu": {
+        "longitude": 222.3801473897593,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 12.380147389759287
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 138.05801273950257,
+    "lagna_degree_in_sign": 18.058012739502573
+  }
+}

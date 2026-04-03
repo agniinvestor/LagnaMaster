@@ -1,0 +1,85 @@
+{
+  "chart_id": "cairati_bice",
+  "name": "Cairati, Bice",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2429093.3125,
+    "year": 1938,
+    "month": 7,
+    "day": 13,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Milano",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 87.72141197000943,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 27.721411970009427
+      },
+      "Moon": {
+        "longitude": 280.6806595925851,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 10.680659592585073
+      },
+      "Mars": {
+        "longitude": 91.10823316971553,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 1.1082331697155325
+      },
+      "Mercury": {
+        "longitude": 108.59605818814016,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 18.596058188140162
+      },
+      "Jupiter": {
+        "longitude": 308.4674224635288,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 8.467422463528806
+      },
+      "Venus": {
+        "longitude": 126.51071205230555,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 6.51071205230555
+      },
+      "Saturn": {
+        "longitude": 354.79421327472585,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 24.79421327472585
+      },
+      "Rahu": {
+        "longitude": 212.40852557002137,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 2.408525570021368
+      },
+      "Ketu": {
+        "longitude": 32.40852557002137,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 2.408525570021368
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 275.25338370790064,
+    "lagna_degree_in_sign": 5.253383707900639
+  }
+}

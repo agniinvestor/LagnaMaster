@@ -1,0 +1,85 @@
+{
+  "chart_id": "carr_fred",
+  "name": "Carr, Fred",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2432052.4375,
+    "year": 1946,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "15:30",
+    "time_type": "s",
+    "hour": 15.5,
+    "time_unknown": false,
+    "place": "Phoenix",
+    "country": "Arizona",
+    "lat": 33.45,
+    "lon": -112.066667,
+    "tz_offset": -7.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 123.20712518950604,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 3.207125189506044
+      },
+      "Moon": {
+        "longitude": 31.68151339348964,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 1.6815133934896416
+      },
+      "Mars": {
+        "longitude": 163.45749493304882,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 13.457494933048821
+      },
+      "Mercury": {
+        "longitude": 104.76827833834187,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 14.768278338341872
+      },
+      "Jupiter": {
+        "longitude": 180.17006728070646,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 0.17006728070646204
+      },
+      "Venus": {
+        "longitude": 168.35644703583932,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 18.356447035839324
+      },
+      "Saturn": {
+        "longitude": 99.07413204768325,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 9.07413204768325
+      },
+      "Rahu": {
+        "longitude": 55.15903707532651,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 25.15903707532651
+      },
+      "Ketu": {
+        "longitude": 235.15903707532652,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 25.159037075326523
+      }
+    },
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree": 243.66237804513628,
+    "lagna_degree_in_sign": 3.662378045136279
+  }
+}

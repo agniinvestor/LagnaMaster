@@ -1,0 +1,85 @@
+{
+  "chart_id": "cohen_ernst",
+  "name": "Cohen, Ernst",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2403763.715602,
+    "year": 1869,
+    "month": 3,
+    "day": 7,
+    "calendar": "g",
+    "time": "05:30",
+    "time_type": "s",
+    "hour": 5.5,
+    "time_unknown": false,
+    "place": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.366667,
+    "lon": 4.9,
+    "tz_offset": 0.2916666666666667,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 324.6831435297367,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 24.683143529736697
+      },
+      "Moon": {
+        "longitude": 257.63600370325116,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 17.636003703251163
+      },
+      "Mars": {
+        "longitude": 115.62758500816427,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 25.627585008164274
+      },
+      "Mercury": {
+        "longitude": 300.5320128369035,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 0.5320128369035046
+      },
+      "Jupiter": {
+        "longitude": 355.5733220207607,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 25.573322020760713
+      },
+      "Venus": {
+        "longitude": 308.54482050663495,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 8.544820506634949
+      },
+      "Saturn": {
+        "longitude": 234.82913165238153,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 24.829131652381534
+      },
+      "Rahu": {
+        "longitude": 114.4990076901141,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 24.499007690114098
+      },
+      "Ketu": {
+        "longitude": 294.4990076901141,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 24.499007690114126
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 289.70207768648,
+    "lagna_degree_in_sign": 19.70207768647998
+  }
+}

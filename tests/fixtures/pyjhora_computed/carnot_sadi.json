@@ -1,0 +1,85 @@
+{
+  "chart_id": "carnot_sadi",
+  "name": "Carnot, Sadi",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2392233.246481,
+    "year": 1837,
+    "month": 8,
+    "day": 11,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Limoges",
+    "country": "France",
+    "lat": 45.833333,
+    "lon": 1.266667,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 117.1858028214312,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 27.185802821431196
+      },
+      "Moon": {
+        "longitude": 234.62242729969594,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 24.622427299695943
+      },
+      "Mars": {
+        "longitude": 169.31768833831504,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 19.317688338315037
+      },
+      "Mercury": {
+        "longitude": 130.9445449921451,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 10.944544992145097
+      },
+      "Jupiter": {
+        "longitude": 125.0095464010436,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 5.009546401043593
+      },
+      "Venus": {
+        "longitude": 140.2605047197054,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 20.26050471970541
+      },
+      "Saturn": {
+        "longitude": 199.5236291169897,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 19.523629116989696
+      },
+      "Rahu": {
+        "longitude": 3.3284198934164304,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 3.3284198934164304
+      },
+      "Ketu": {
+        "longitude": 183.32841989341642,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 3.3284198934164237
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 271.5980704024758,
+    "lagna_degree_in_sign": 1.5980704024757983
+  }
+}

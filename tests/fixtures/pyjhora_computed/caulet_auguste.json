@@ -1,0 +1,85 @@
+{
+  "chart_id": "caulet_auguste",
+  "name": "Caulet, Auguste",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2424803.625,
+    "year": 1926,
+    "month": 10,
+    "day": 15,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Montpellier",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 3.883333,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 178.18028759144758,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 28.18028759144758
+      },
+      "Moon": {
+        "longitude": 274.8382944797204,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 4.838294479720389
+      },
+      "Mars": {
+        "longitude": 24.755266635126286,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 24.755266635126286
+      },
+      "Mercury": {
+        "longitude": 195.03756530137647,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 15.037565301376475
+      },
+      "Jupiter": {
+        "longitude": 294.4855824283817,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 24.48558242838169
+      },
+      "Venus": {
+        "longitude": 168.7241945565635,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 18.724194556563504
+      },
+      "Saturn": {
+        "longitude": 211.5325969238655,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 1.5325969238654977
+      },
+      "Rahu": {
+        "longitude": 77.96609989063707,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 17.966099890637068
+      },
+      "Ketu": {
+        "longitude": 257.96609989063705,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 17.966099890637054
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 143.1261280222495,
+    "lagna_degree_in_sign": 23.126128022249503
+  }
+}

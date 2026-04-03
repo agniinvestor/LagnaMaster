@@ -1,0 +1,85 @@
+{
+  "chart_id": "cher",
+  "name": "Cher",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2431961.142361,
+    "year": 1946,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "07:25",
+    "time_type": "s",
+    "hour": 7.416667,
+    "time_unknown": false,
+    "place": "El Centro",
+    "country": "California",
+    "lat": 32.8,
+    "lon": -115.566667,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 35.894683081010925,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 5.894683081010925
+      },
+      "Moon": {
+        "longitude": 265.19191727494484,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 25.191917274944842
+      },
+      "Mars": {
+        "longitude": 110.25070898339487,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 20.250708983394873
+      },
+      "Mercury": {
+        "longitude": 23.394115910462798,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 23.394115910462798
+      },
+      "Jupiter": {
+        "longitude": 175.2816994271327,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 25.281699427132708
+      },
+      "Venus": {
+        "longitude": 62.66706543077479,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 2.667065430774791
+      },
+      "Saturn": {
+        "longitude": 88.0343821341173,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 28.034382134117294
+      },
+      "Rahu": {
+        "longitude": 57.74765532338141,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 27.74765532338141
+      },
+      "Ketu": {
+        "longitude": 237.74765532338142,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 27.747655323381423
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 75.50516866615169,
+    "lagna_degree_in_sign": 15.50516866615169
+  }
+}

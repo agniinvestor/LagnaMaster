@@ -1,0 +1,85 @@
+{
+  "chart_id": "clidat_france",
+  "name": "Clidat, France",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2427034.0,
+    "year": 1932,
+    "month": 11,
+    "day": 22,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "s",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Nantes",
+    "country": "France",
+    "lat": 47.216667,
+    "lon": -1.55,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 217.0778493108221,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 7.077849310822103
+      },
+      "Moon": {
+        "longitude": 141.45197164748018,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 21.45197164748018
+      },
+      "Mars": {
+        "longitude": 131.14756390796094,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 11.147563907960944
+      },
+      "Mercury": {
+        "longitude": 237.30393777147196,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 27.303937771471965
+      },
+      "Jupiter": {
+        "longitude": 147.10912726448382,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 27.109127264483817
+      },
+      "Venus": {
+        "longitude": 181.58405276851823,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 1.5840527685182337
+      },
+      "Saturn": {
+        "longitude": 277.2672796583252,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 7.267279658325208
+      },
+      "Rahu": {
+        "longitude": 320.85976111635586,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 20.859761116355855
+      },
+      "Ketu": {
+        "longitude": 140.85976111635586,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 20.859761116355855
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 282.7577582622075,
+    "lagna_degree_in_sign": 12.757758262207517
+  }
+}

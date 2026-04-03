@@ -1,0 +1,85 @@
+{
+  "chart_id": "cohn_ruth",
+  "name": "Cohn, Ruth",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2419642.03125,
+    "year": 1912,
+    "month": 8,
+    "day": 27,
+    "calendar": "g",
+    "time": "13:45",
+    "time_type": "s",
+    "hour": 13.75,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 131.2175850566685,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 11.217585056668497
+      },
+      "Moon": {
+        "longitude": 307.9014670483022,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 7.901467048302209
+      },
+      "Mars": {
+        "longitude": 153.40091819789947,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 3.400918197899472
+      },
+      "Mercury": {
+        "longitude": 122.33258989347965,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 2.33258989347965
+      },
+      "Jupiter": {
+        "longitude": 223.85051570288846,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 13.850515702888458
+      },
+      "Venus": {
+        "longitude": 145.63963041740203,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 25.63963041740203
+      },
+      "Saturn": {
+        "longitude": 41.12240200211826,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 11.122402002118257
+      },
+      "Rahu": {
+        "longitude": 350.2562287238868,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 20.256228723886807
+      },
+      "Ketu": {
+        "longitude": 170.2562287238868,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 20.256228723886807
+      }
+    },
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree": 219.95047955915135,
+    "lagna_degree_in_sign": 9.950479559151347
+  }
+}

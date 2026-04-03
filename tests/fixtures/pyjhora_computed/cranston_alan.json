@@ -1,0 +1,85 @@
+{
+  "chart_id": "cranston_alan",
+  "name": "Cranston, Alan",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2420303.125,
+    "year": 1914,
+    "month": 6,
+    "day": 19,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Palo Alto",
+    "country": "California",
+    "lat": 37.45,
+    "lon": -122.15,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 64.79965847404925,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 4.799658474049252
+      },
+      "Moon": {
+        "longitude": 18.767537117194948,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 18.767537117194948
+      },
+      "Mars": {
+        "longitude": 123.54489586148442,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 3.54489586148442
+      },
+      "Mercury": {
+        "longitude": 89.65789684644282,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 29.657896846442824
+      },
+      "Jupiter": {
+        "longitude": 299.52164154998417,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 29.521641549984167
+      },
+      "Venus": {
+        "longitude": 96.67735715418436,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 6.677357154184364
+      },
+      "Saturn": {
+        "longitude": 59.81896203394343,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 29.81896203394343
+      },
+      "Rahu": {
+        "longitude": 316.15876709544375,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 16.15876709544375
+      },
+      "Ketu": {
+        "longitude": 136.15876709544375,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 16.15876709544375
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 92.43997605857913,
+    "lagna_degree_in_sign": 2.439976058579134
+  }
+}

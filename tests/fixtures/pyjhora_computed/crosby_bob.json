@@ -1,0 +1,85 @@
+{
+  "chart_id": "crosby_bob",
+  "name": "Crosby, Bob",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2420005.760417,
+    "year": 1913,
+    "month": 8,
+    "day": 25,
+    "calendar": "g",
+    "time": "22:15",
+    "time_type": "s",
+    "hour": 22.25,
+    "time_unknown": false,
+    "place": "Spokane",
+    "country": "Washington",
+    "lat": 47.666667,
+    "lon": -117.433333,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 129.74393707466643,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 9.743937074666434
+      },
+      "Moon": {
+        "longitude": 54.68945521546836,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 24.689455215468357
+      },
+      "Mars": {
+        "longitude": 55.35613247283478,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 25.35613247283478
+      },
+      "Mercury": {
+        "longitude": 112.04279777282657,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 22.042797772826574
+      },
+      "Jupiter": {
+        "longitude": 255.49253503836718,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 15.49253503836718
+      },
+      "Venus": {
+        "longitude": 90.25095103736129,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 0.25095103736128976
+      },
+      "Saturn": {
+        "longitude": 54.390009463901656,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 24.390009463901656
+      },
+      "Rahu": {
+        "longitude": 331.6604943709258,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 1.6604943709257896
+      },
+      "Ketu": {
+        "longitude": 151.6604943709258,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 1.6604943709257896
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 45.129110441484116,
+    "lagna_degree_in_sign": 15.129110441484116
+  }
+}

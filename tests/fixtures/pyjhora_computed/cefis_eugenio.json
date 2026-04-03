@@ -1,0 +1,85 @@
+{
+  "chart_id": "cefis_eugenio",
+  "name": "Cefis, Eugenio",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2422892.25,
+    "year": 1921,
+    "month": 7,
+    "day": 21,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Cividale del Friuli",
+    "country": "Italy",
+    "lat": 46.1,
+    "lon": 13.416667,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 95.63095875943384,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 5.630958759433838
+      },
+      "Moon": {
+        "longitude": 294.6976781601726,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 24.697678160172586
+      },
+      "Mars": {
+        "longitude": 88.99031938239622,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 28.990319382396223
+      },
+      "Mercury": {
+        "longitude": 78.6827067069253,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 18.682706706925302
+      },
+      "Jupiter": {
+        "longitude": 143.78925885450954,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 23.78925885450954
+      },
+      "Venus": {
+        "longitude": 51.12122698734986,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 21.121226987349857
+      },
+      "Saturn": {
+        "longitude": 148.25099859455392,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 28.25099859455392
+      },
+      "Rahu": {
+        "longitude": 179.00816602913304,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 29.008166029133037
+      },
+      "Ketu": {
+        "longitude": 359.008166029133,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 29.008166029133008
+      }
+    },
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree": 262.7313036101012,
+    "lagna_degree_in_sign": 22.73130361010118
+  }
+}

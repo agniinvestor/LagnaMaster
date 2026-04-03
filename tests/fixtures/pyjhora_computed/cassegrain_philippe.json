@@ -1,0 +1,85 @@
+{
+  "chart_id": "cassegrain_philippe",
+  "name": "Cassegrain, Philippe",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2428585.916667,
+    "year": 1937,
+    "month": 2,
+    "day": 21,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Angers",
+    "country": "France",
+    "lat": 47.466667,
+    "lon": -0.55,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 309.3999756838514,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 9.39997568385138
+      },
+      "Moon": {
+        "longitude": 81.27339650072389,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 21.27339650072389
+      },
+      "Mars": {
+        "longitude": 209.7905180296697,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 29.7905180296697
+      },
+      "Mercury": {
+        "longitude": 286.85017347601723,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 16.850173476017233
+      },
+      "Jupiter": {
+        "longitude": 265.01902699541046,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 25.019026995410456
+      },
+      "Venus": {
+        "longitude": 355.1512037824889,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 25.151203782488892
+      },
+      "Saturn": {
+        "longitude": 329.46811002972385,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 29.468110029723846
+      },
+      "Rahu": {
+        "longitude": 238.79725710777396,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 28.79725710777396
+      },
+      "Ketu": {
+        "longitude": 58.79725710777393,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 28.79725710777393
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 31.707519549267825,
+    "lagna_degree_in_sign": 1.7075195492678255
+  }
+}

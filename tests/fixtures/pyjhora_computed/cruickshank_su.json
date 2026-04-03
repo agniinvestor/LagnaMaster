@@ -1,0 +1,85 @@
+{
+  "chart_id": "cruickshank_su",
+  "name": "Cruickshank, Su",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2432063.78125,
+    "year": 1946,
+    "month": 8,
+    "day": 31,
+    "calendar": "g",
+    "time": "16:45",
+    "time_type": "s",
+    "hour": 16.75,
+    "time_unknown": false,
+    "place": "Sydney",
+    "country": "Australia",
+    "lat": -33.866667,
+    "lon": 151.216667,
+    "tz_offset": 10.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 134.15601871460998,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 14.156018714609985
+      },
+      "Moon": {
+        "longitude": 187.37074342124566,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 7.370743421245663
+      },
+      "Mars": {
+        "longitude": 170.75203357179095,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 20.752033571790946
+      },
+      "Mercury": {
+        "longitude": 120.58647446319758,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 0.5864744631975753
+      },
+      "Jupiter": {
+        "longitude": 182.0826985778793,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 2.082698577879313
+      },
+      "Venus": {
+        "longitude": 180.1804515586817,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 0.18045155868171037
+      },
+      "Saturn": {
+        "longitude": 100.42012557745939,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 10.420125577459388
+      },
+      "Rahu": {
+        "longitude": 53.90824992479705,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 23.908249924797047
+      },
+      "Ketu": {
+        "longitude": 233.90824992479705,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 23.908249924797047
+      }
+    },
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree": 304.4439755428809,
+    "lagna_degree_in_sign": 4.443975542880878
+  }
+}

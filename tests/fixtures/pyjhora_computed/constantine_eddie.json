@@ -1,0 +1,85 @@
+{
+  "chart_id": "constantine_eddie",
+  "name": "Constantine, Eddie",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2420070.395833,
+    "year": 1913,
+    "month": 10,
+    "day": 29,
+    "calendar": "g",
+    "time": "13:30",
+    "time_type": "s",
+    "hour": 13.5,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 193.2145680008896,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 13.214568000889614
+      },
+      "Moon": {
+        "longitude": 197.25658722003595,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 17.256587220035954
+      },
+      "Mars": {
+        "longitude": 87.21491970189209,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 27.214919701892086
+      },
+      "Mercury": {
+        "longitude": 216.38909497422827,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 6.389094974228271
+      },
+      "Jupiter": {
+        "longitude": 259.86898809260344,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 19.868988092603445
+      },
+      "Venus": {
+        "longitude": 168.04711362834453,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 18.047113628344533
+      },
+      "Saturn": {
+        "longitude": 54.764879292199936,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 24.764879292199936
+      },
+      "Rahu": {
+        "longitude": 330.80742110790965,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 0.8074211079096472
+      },
+      "Ketu": {
+        "longitude": 150.80742110790965,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 0.8074211079096472
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 296.1996664306832,
+    "lagna_degree_in_sign": 26.19966643068318
+  }
+}

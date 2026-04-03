@@ -1,0 +1,85 @@
+{
+  "chart_id": "carroll_virginia",
+  "name": "Carroll, Virginia",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2420104.388889,
+    "year": 1913,
+    "month": 12,
+    "day": 2,
+    "calendar": "g",
+    "time": "13:20",
+    "time_type": "s",
+    "hour": 13.333333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 227.47089427366066,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 17.47089427366066
+      },
+      "Moon": {
+        "longitude": 287.13304460078825,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 17.133044600788253
+      },
+      "Mars": {
+        "longitude": 91.65679119219722,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 1.6567911921972183
+      },
+      "Mercury": {
+        "longitude": 210.00296895974486,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 0.0029689597448623317
+      },
+      "Jupiter": {
+        "longitude": 266.0776944970817,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 26.077694497081723
+      },
+      "Venus": {
+        "longitude": 210.48975014905633,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 0.4897501490563343
+      },
+      "Saturn": {
+        "longitude": 52.38455961210258,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 22.384559612102578
+      },
+      "Rahu": {
+        "longitude": 327.6696738681566,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 27.66967386815662
+      },
+      "Ketu": {
+        "longitude": 147.66967386815662,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 27.66967386815662
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 341.74623034372064,
+    "lagna_degree_in_sign": 11.74623034372064
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "christie_sigrid",
+  "name": "Christie, Sigrid",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2423528.125,
+    "year": 1923,
+    "month": 4,
+    "day": 18,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 4.775830098689504,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 4.775830098689504
+      },
+      "Moon": {
+        "longitude": 30.44031343981466,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 0.4403134398146591
+      },
+      "Mars": {
+        "longitude": 38.93257479358539,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 8.932574793585388
+      },
+      "Mercury": {
+        "longitude": 15.670313469877028,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 15.670313469877028
+      },
+      "Jupiter": {
+        "longitude": 203.37554966299012,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 23.375549662990124
+      },
+      "Venus": {
+        "longitude": 327.77576330547265,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 27.77576330547265
+      },
+      "Saturn": {
+        "longitude": 173.14800440100439,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 23.148004401004385
+      },
+      "Rahu": {
+        "longitude": 147.23101984251122,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 27.231019842511216
+      },
+      "Ketu": {
+        "longitude": 327.2310198425112,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 27.231019842511216
+      }
+    },
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree": 151.88770980949747,
+    "lagna_degree_in_sign": 1.8877098094974656
+  }
+}

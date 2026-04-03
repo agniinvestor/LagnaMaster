@@ -1,0 +1,85 @@
+{
+  "chart_id": "comte_auguste",
+  "name": "Comte, Auguste",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2377784.989213,
+    "year": 1798,
+    "month": 1,
+    "day": 19,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Montpellier",
+    "country": "France",
+    "lat": 43.6,
+    "lon": 3.883333,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 278.73133578022293,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 8.731335780222935
+      },
+      "Moon": {
+        "longitude": 305.471472914403,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 5.471472914403023
+      },
+      "Mars": {
+        "longitude": 221.08256965001397,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 11.082569650013966
+      },
+      "Mercury": {
+        "longitude": 293.30566605771065,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 23.305666057710653
+      },
+      "Jupiter": {
+        "longitude": 352.2869617870201,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 22.286961787020118
+      },
+      "Venus": {
+        "longitude": 324.87451859758926,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 24.874518597589258
+      },
+      "Saturn": {
+        "longitude": 75.9499948059857,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 15.949994805985696
+      },
+      "Rahu": {
+        "longitude": 51.37579448354637,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 21.375794483546372
+      },
+      "Ketu": {
+        "longitude": 231.37579448354637,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 21.375794483546372
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 30.160930533869983,
+    "lagna_degree_in_sign": 0.16093053386998335
+  }
+}

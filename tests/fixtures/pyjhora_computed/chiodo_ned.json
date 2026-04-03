@@ -1,0 +1,85 @@
+{
+  "chart_id": "chiodo_ned",
+  "name": "Chiodo, Ned",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2430574.052083,
+    "year": 1942,
+    "month": 8,
+    "day": 2,
+    "calendar": "g",
+    "time": "08:15",
+    "time_type": "w",
+    "hour": 8.25,
+    "time_unknown": false,
+    "place": "Des Moines",
+    "country": "Iowa",
+    "lat": 41.6,
+    "lon": -93.616667,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 106.5536730945587,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 16.553673094558704
+      },
+      "Moon": {
+        "longitude": 0.38425587388033156,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 0.38425587388033156
+      },
+      "Mars": {
+        "longitude": 127.71046245262536,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 7.7104624526253644
+      },
+      "Mercury": {
+        "longitude": 106.12758938546038,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 16.127589385460382
+      },
+      "Jupiter": {
+        "longitude": 78.87874655094012,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 18.87874655094012
+      },
+      "Venus": {
+        "longitude": 79.31069605873199,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 19.310696058731992
+      },
+      "Saturn": {
+        "longitude": 47.01489374633599,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 17.014893746335993
+      },
+      "Rahu": {
+        "longitude": 131.43509057511457,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 11.435090575114572
+      },
+      "Ketu": {
+        "longitude": 311.4350905751146,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 11.4350905751146
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 130.00194514318372,
+    "lagna_degree_in_sign": 10.001945143183718
+  }
+}

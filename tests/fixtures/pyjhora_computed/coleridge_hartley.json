@@ -1,0 +1,85 @@
+{
+  "chart_id": "coleridge_hartley",
+  "name": "Coleridge, Hartley",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2377297.612083,
+    "year": 1796,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "l",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Clevedon",
+    "country": "England",
+    "lat": 51.45,
+    "lon": -2.85,
+    "tz_offset": -0.020833333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 155.8136461613015,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 5.813646161301506
+      },
+      "Moon": {
+        "longitude": 0.14291611816746724,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 0.14291611816746724
+      },
+      "Mars": {
+        "longitude": 256.3624433756815,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 16.362443375681494
+      },
+      "Mercury": {
+        "longitude": 176.5039657827232,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 26.503965782723213
+      },
+      "Jupiter": {
+        "longitude": 314.5922441685025,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 14.592244168502475
+      },
+      "Venus": {
+        "longitude": 113.011311597557,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 23.011311597556997
+      },
+      "Saturn": {
+        "longitude": 66.50939985468978,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 6.509399854689775
+      },
+      "Rahu": {
+        "longitude": 76.23795789945741,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 16.237957899457413
+      },
+      "Ketu": {
+        "longitude": 256.2379578994574,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 16.2379578994574
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 119.44994713393206,
+    "lagna_degree_in_sign": 29.449947133932056
+  }
+}

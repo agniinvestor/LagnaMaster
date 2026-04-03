@@ -1,0 +1,85 @@
+{
+  "chart_id": "cleo_miss",
+  "name": "Cleo, Miss",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2437889.1625,
+    "year": 1962,
+    "month": 8,
+    "day": 12,
+    "calendar": "g",
+    "time": "08:54",
+    "time_type": "d",
+    "hour": 8.9,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25,
+    "tz_offset": -7.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 116.12368219512098,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 26.123682195120978
+      },
+      "Moon": {
+        "longitude": 253.78599298639756,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 13.78599298639756
+      },
+      "Mars": {
+        "longitude": 60.270648082767835,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 0.2706480827678348
+      },
+      "Mercury": {
+        "longitude": 130.01146520376025,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 10.011465203760253
+      },
+      "Jupiter": {
+        "longitude": 316.77193753326424,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 16.771937533264236
+      },
+      "Venus": {
+        "longitude": 160.9332824944584,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 10.93328249445841
+      },
+      "Saturn": {
+        "longitude": 283.8586801386714,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 13.858680138671389
+      },
+      "Rahu": {
+        "longitude": 105.61492468166725,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 15.614924681667247
+      },
+      "Ketu": {
+        "longitude": 285.6149246816673,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 15.614924681667276
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 148.97338384244895,
+    "lagna_degree_in_sign": 28.973383842448953
+  }
+}

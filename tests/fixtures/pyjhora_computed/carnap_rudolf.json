@@ -1,0 +1,85 @@
+{
+  "chart_id": "carnap_rudolf",
+  "name": "Carnap, Rudolf",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2411871.355046,
+    "year": 1891,
+    "month": 5,
+    "day": 18,
+    "calendar": "g",
+    "time": "21:00",
+    "time_type": "l",
+    "hour": 21.0,
+    "time_unknown": false,
+    "place": "Wuppertal",
+    "country": "Germany",
+    "lat": 51.266667,
+    "lon": 7.183333,
+    "tz_offset": 0.8911111111111111,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 35.226221512105695,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 5.226221512105695
+      },
+      "Moon": {
+        "longitude": 158.5323002922255,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 8.5323002922255
+      },
+      "Mars": {
+        "longitude": 57.12162379503459,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 27.121623795034587
+      },
+      "Mercury": {
+        "longitude": 22.44294712840483,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 22.44294712840483
+      },
+      "Jupiter": {
+        "longitude": 321.927635263498,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 21.92763526349802
+      },
+      "Venus": {
+        "longitude": 3.1223088875451714,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 3.1223088875451714
+      },
+      "Saturn": {
+        "longitude": 138.01792688646668,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 18.017926886466682
+      },
+      "Rahu": {
+        "longitude": 43.07953268547964,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 13.079532685479641
+      },
+      "Ketu": {
+        "longitude": 223.07953268547965,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 13.079532685479649
+      }
+    },
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree": 225.01145472115994,
+    "lagna_degree_in_sign": 15.011454721159936
+  }
+}

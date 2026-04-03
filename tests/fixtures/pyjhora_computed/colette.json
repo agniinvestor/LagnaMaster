@@ -1,0 +1,85 @@
+{
+  "chart_id": "colette",
+  "name": "Colette",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2405187.407778,
+    "year": 1873,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "l",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "St.Sauveur",
+    "country": "France",
+    "lat": 47.616667,
+    "lon": 3.2,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 287.0476123965003,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 17.047612396500313
+      },
+      "Moon": {
+        "longitude": 289.66281008872414,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 19.662810088724143
+      },
+      "Mars": {
+        "longitude": 190.64025216048165,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 10.640252160481651
+      },
+      "Mercury": {
+        "longitude": 271.2059869672113,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 1.2059869672112882
+      },
+      "Jupiter": {
+        "longitude": 126.6182864101065,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 6.618286410106506
+      },
+      "Venus": {
+        "longitude": 331.92103057806685,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 1.9210305780668477
+      },
+      "Saturn": {
+        "longitude": 273.3514482274572,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 3.3514482274571833
+      },
+      "Rahu": {
+        "longitude": 38.82922348577232,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 8.829223485772317
+      },
+      "Ketu": {
+        "longitude": 218.82922348577233,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 8.829223485772332
+      }
+    },
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree": 164.6287483243489,
+    "lagna_degree_in_sign": 14.62874832434889
+  }
+}

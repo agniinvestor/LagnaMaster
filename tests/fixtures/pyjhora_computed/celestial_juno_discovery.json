@@ -1,0 +1,85 @@
+{
+  "chart_id": "celestial_juno_discovery",
+  "name": "Celestial: Juno Discovery",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2380201.400231,
+    "year": 1804,
+    "month": 9,
+    "day": 1,
+    "calendar": "g",
+    "time": "22:12",
+    "time_type": "l",
+    "hour": 22.2,
+    "time_unknown": false,
+    "place": "Lilienthal",
+    "country": "Germany",
+    "lat": 53.133333,
+    "lon": 8.916667,
+    "tz_offset": 0.8911111111111111,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 138.02111329753583,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 18.021113297535834
+      },
+      "Moon": {
+        "longitude": 110.3239563916432,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 20.323956391643193
+      },
+      "Mars": {
+        "longitude": 73.267802798273,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 13.267802798272996
+      },
+      "Mercury": {
+        "longitude": 162.8654368877961,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 12.865436887796108
+      },
+      "Jupiter": {
+        "longitude": 191.38989400366916,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 11.389894003669156
+      },
+      "Venus": {
+        "longitude": 103.14746117202296,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 13.147461172022957
+      },
+      "Saturn": {
+        "longitude": 162.15244223133462,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 12.152442231334618
+      },
+      "Rahu": {
+        "longitude": 283.4501376987258,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 13.450137698725825
+      },
+      "Ketu": {
+        "longitude": 103.45013769872583,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 13.450137698725825
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 53.1842014529516,
+    "lagna_degree_in_sign": 23.184201452951598
+  }
+}

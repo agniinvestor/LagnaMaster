@@ -1,0 +1,85 @@
+{
+  "chart_id": "clarke_mae",
+  "name": "Clarke, Mae",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2418899.708333,
+    "year": 1910,
+    "month": 8,
+    "day": 16,
+    "calendar": "g",
+    "time": "00:00",
+    "time_type": "s",
+    "hour": 0.0,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 119.84264396654186,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 29.842643966541857
+      },
+      "Moon": {
+        "longitude": 244.27114026769345,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 4.271140267693454
+      },
+      "Mars": {
+        "longitude": 133.83726286344614,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 13.837262863446142
+      },
+      "Mercury": {
+        "longitude": 143.18955487191533,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 23.189554871915334
+      },
+      "Jupiter": {
+        "longitude": 169.35671310957812,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 19.356713109578124
+      },
+      "Venus": {
+        "longitude": 93.72235735124318,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 3.7223573512431756
+      },
+      "Saturn": {
+        "longitude": 13.968760280788869,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 13.968760280788869
+      },
+      "Rahu": {
+        "longitude": 31.52000026555996,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 1.5200002655599612
+      },
+      "Ketu": {
+        "longitude": 211.52000026555996,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 1.5200002655599576
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 52.64606333321689,
+    "lagna_degree_in_sign": 22.646063333216887
+  }
+}

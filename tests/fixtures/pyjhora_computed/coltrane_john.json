@@ -1,0 +1,85 @@
+{
+  "chart_id": "coltrane_john",
+  "name": "Coltrane, John",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2424782.416667,
+    "year": 1926,
+    "month": 9,
+    "day": 23,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Hamlet",
+    "country": "North Carolina",
+    "lat": 34.883333,
+    "lon": -79.7,
+    "tz_offset": -4.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 157.2402642231133,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 7.240264223113286
+      },
+      "Moon": {
+        "longitude": 5.820115966210132,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 5.820115966210132
+      },
+      "Mars": {
+        "longitude": 26.41711072113248,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 26.41711072113248
+      },
+      "Mercury": {
+        "longitude": 160.75457193122037,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 10.754571931220369
+      },
+      "Jupiter": {
+        "longitude": 295.1646463284646,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 25.164646328464585
+      },
+      "Venus": {
+        "longitude": 142.25180787950674,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 22.251807879506742
+      },
+      "Saturn": {
+        "longitude": 209.46486288930402,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 29.464862889304015
+      },
+      "Rahu": {
+        "longitude": 80.1472989045951,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 20.147298904595104
+      },
+      "Ketu": {
+        "longitude": 260.1472989045951,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 20.147298904595118
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 289.57609908930357,
+    "lagna_degree_in_sign": 19.57609908930357
+  }
+}

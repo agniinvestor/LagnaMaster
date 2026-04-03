@@ -1,0 +1,85 @@
+{
+  "chart_id": "caro_heinrich",
+  "name": "Caro, Heinrich",
+  "rodden_rating": "B",
+  "birth_data": {
+    "jd_ut": 2390958.494676,
+    "year": 1834,
+    "month": 2,
+    "day": 14,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "l",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Poznan",
+    "country": "Poland",
+    "lat": 52.416667,
+    "lon": 16.916667,
+    "tz_offset": 1.4,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 303.32600240501637,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 3.326002405016368
+      },
+      "Moon": {
+        "longitude": 0.8399917036884061,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 0.8399917036884061
+      },
+      "Mars": {
+        "longitude": 273.50207562798505,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 3.5020756279850502
+      },
+      "Mercury": {
+        "longitude": 303.6905702499643,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 3.69057024996431
+      },
+      "Jupiter": {
+        "longitude": 8.869659029092958,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 8.869659029092958
+      },
+      "Venus": {
+        "longitude": 297.90629098350445,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 27.906290983504448
+      },
+      "Saturn": {
+        "longitude": 168.68303071939334,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 18.683030719393344
+      },
+      "Rahu": {
+        "longitude": 72.98174683948157,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 12.981746839481573
+      },
+      "Ketu": {
+        "longitude": 252.98174683948156,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 12.98174683948156
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 203.11411915108607,
+    "lagna_degree_in_sign": 23.114119151086072
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "cooper_marc",
+  "name": "Cooper, Marc",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2433634.409722,
+    "year": 1950,
+    "month": 12,
+    "day": 18,
+    "calendar": "g",
+    "time": "13:50",
+    "time_type": "s",
+    "hour": 13.833333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 243.2535586188671,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 3.253558618867089
+      },
+      "Moon": {
+        "longitude": 3.1756076801984103,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 3.1756076801984103
+      },
+      "Mars": {
+        "longitude": 279.59995620672345,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 9.599956206723448
+      },
+      "Mercury": {
+        "longitude": 263.20349242964403,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 23.20349242964403
+      },
+      "Jupiter": {
+        "longitude": 309.24634625884755,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 9.246346258847552
+      },
+      "Venus": {
+        "longitude": 251.75840483340977,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 11.75840483340977
+      },
+      "Saturn": {
+        "longitude": 158.6662975604108,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 8.666297560410811
+      },
+      "Rahu": {
+        "longitude": 330.55785269110635,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 0.5578526911063477
+      },
+      "Ketu": {
+        "longitude": 150.55785269110635,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 0.5578526911063477
+      }
+    },
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree": 15.34691624767034,
+    "lagna_degree_in_sign": 15.34691624767034
+  }
+}

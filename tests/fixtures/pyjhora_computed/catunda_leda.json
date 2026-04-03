@@ -1,0 +1,85 @@
+{
+  "chart_id": "catunda_leda",
+  "name": "Catunda, Leda",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2437474.145833,
+    "year": 1961,
+    "month": 6,
+    "day": 23,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "S\u00e3o Paulo",
+    "country": "Brazil",
+    "lat": -23.5525,
+    "lon": -46.624722,
+    "tz_offset": -3.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 68.59674778429043,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 8.596747784290429
+      },
+      "Moon": {
+        "longitude": 184.8728423052143,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 4.872842305214306
+      },
+      "Mars": {
+        "longitude": 123.55871500132787,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 3.5587150013278688
+      },
+      "Mercury": {
+        "longitude": 74.46396698865043,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 14.463966988650427
+      },
+      "Jupiter": {
+        "longitude": 282.55295103544836,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 12.552951035448359
+      },
+      "Venus": {
+        "longitude": 22.939724348091996,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 22.939724348091996
+      },
+      "Saturn": {
+        "longitude": 275.0236839946903,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 5.023683994690316
+      },
+      "Rahu": {
+        "longitude": 125.63207188146728,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 5.632071881467283
+      },
+      "Ketu": {
+        "longitude": 305.63207188146725,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 5.632071881467255
+      }
+    },
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree": 166.64845081288115,
+    "lagna_degree_in_sign": 16.64845081288115
+  }
+}

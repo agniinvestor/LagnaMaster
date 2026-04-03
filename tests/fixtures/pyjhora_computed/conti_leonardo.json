@@ -1,0 +1,85 @@
+{
+  "chart_id": "conti_leonardo",
+  "name": "Conti, Leonardo",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2415255.541667,
+    "year": 1900,
+    "month": 8,
+    "day": 24,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Lugano",
+    "country": "Switzerland",
+    "lat": 46.016667,
+    "lon": 8.966667,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 127.92006650205329,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 7.920066502053288
+      },
+      "Moon": {
+        "longitude": 115.42276567841421,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 25.42276567841421
+      },
+      "Mars": {
+        "longitude": 76.6661085136095,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 16.6661085136095
+      },
+      "Mercury": {
+        "longitude": 110.38560624713388,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 20.38560624713388
+      },
+      "Jupiter": {
+        "longitude": 219.55070288685835,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 9.550702886858346
+      },
+      "Venus": {
+        "longitude": 84.79307748173113,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 24.79307748173113
+      },
+      "Saturn": {
+        "longitude": 246.0327439950964,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 6.032743995096411
+      },
+      "Rahu": {
+        "longitude": 224.78374322194324,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.78374322194324
+      },
+      "Ketu": {
+        "longitude": 44.78374322194327,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 14.783743221943269
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 86.63434080033642,
+    "lagna_degree_in_sign": 26.634340800336417
+  }
+}

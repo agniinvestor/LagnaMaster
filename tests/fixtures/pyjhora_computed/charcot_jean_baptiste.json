@@ -1,0 +1,85 @@
+{
+  "chart_id": "charcot_jean_baptiste",
+  "name": "Charcot, Jean-Baptiste",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2403162.91037,
+    "year": 1867,
+    "month": 7,
+    "day": 15,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "l",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Neuilly sur Seine",
+    "country": "France",
+    "lat": 48.883333,
+    "lon": 2.266667,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 90.38838514432736,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 0.3883851443273585
+      },
+      "Moon": {
+        "longitude": 254.8247759272578,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 14.824775927257804
+      },
+      "Mars": {
+        "longitude": 141.5778383431804,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 21.57783834318039
+      },
+      "Mercury": {
+        "longitude": 114.15687671173997,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 24.15687671173997
+      },
+      "Jupiter": {
+        "longitude": 314.9840072645194,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 14.984007264519391
+      },
+      "Venus": {
+        "longitude": 70.96472671894743,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 10.964726718947432
+      },
+      "Saturn": {
+        "longitude": 205.46880390568924,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 25.468803905689242
+      },
+      "Rahu": {
+        "longitude": 143.63159593351295,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 23.631595933512955
+      },
+      "Ketu": {
+        "longitude": 323.6315959335129,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 23.631595933512926
+      }
+    },
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree": 152.68650481720044,
+    "lagna_degree_in_sign": 2.6865048172004435
+  }
+}

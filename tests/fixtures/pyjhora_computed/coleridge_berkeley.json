@@ -1,0 +1,85 @@
+{
+  "chart_id": "coleridge_berkeley",
+  "name": "Coleridge, Berkeley",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2377895.6125,
+    "year": 1798,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "l",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Somerset",
+    "country": "England",
+    "lat": 51.133333,
+    "lon": -3.0,
+    "tz_offset": -0.020833333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 28.573631852931282,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 28.573631852931282
+      },
+      "Moon": {
+        "longitude": 323.38396559223423,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 23.383965592234233
+      },
+      "Mars": {
+        "longitude": 291.3320793938959,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 21.332079393895924
+      },
+      "Mercury": {
+        "longitude": 48.21278531946947,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 18.212785319469468
+      },
+      "Jupiter": {
+        "longitude": 15.903297968481775,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 15.903297968481775
+      },
+      "Venus": {
+        "longitude": 343.653904615841,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 13.653904615840986
+      },
+      "Saturn": {
+        "longitude": 77.65383871615559,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 17.65383871615559
+      },
+      "Rahu": {
+        "longitude": 43.22641463414121,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 13.226414634141207
+      },
+      "Ketu": {
+        "longitude": 223.2264146341412,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 13.226414634141207
+      }
+    },
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree": 322.50863186417735,
+    "lagna_degree_in_sign": 22.508631864177346
+  }
+}

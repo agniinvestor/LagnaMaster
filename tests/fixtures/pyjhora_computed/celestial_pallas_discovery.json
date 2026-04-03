@@ -1,0 +1,85 @@
+{
+  "chart_id": "celestial_pallas_discovery",
+  "name": "Celestial: Pallas Discovery",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2379313.340093,
+    "year": 1802,
+    "month": 3,
+    "day": 28,
+    "calendar": "g",
+    "time": "20:45",
+    "time_type": "l",
+    "hour": 20.75,
+    "time_unknown": false,
+    "place": "Bremen",
+    "country": "Germany",
+    "lat": 53.066667,
+    "lon": 8.816667,
+    "tz_offset": 0.8911111111111111,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 346.3311141557989,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 16.3311141557989
+      },
+      "Moon": {
+        "longitude": 280.8446234991159,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 10.844623499115926
+      },
+      "Mars": {
+        "longitude": 302.8672500687501,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 2.8672500687500815
+      },
+      "Mercury": {
+        "longitude": 322.7301012007026,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 22.73010120070262
+      },
+      "Jupiter": {
+        "longitude": 125.55893983598843,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 5.558939835988426
+      },
+      "Venus": {
+        "longitude": 349.08570871879726,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 19.085708718797264
+      },
+      "Saturn": {
+        "longitude": 130.60121411661373,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 10.601214116613733
+      },
+      "Rahu": {
+        "longitude": 329.4695490133763,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 29.46954901337631
+      },
+      "Ketu": {
+        "longitude": 149.4695490133763,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 29.46954901337631
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 187.95791368988142,
+    "lagna_degree_in_sign": 7.957913689881423
+  }
+}

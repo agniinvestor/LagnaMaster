@@ -1,0 +1,85 @@
+{
+  "chart_id": "charubel",
+  "name": "Charubel",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2388304.800139,
+    "year": 1826,
+    "month": 11,
+    "day": 9,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "l",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Montgomery",
+    "country": "Wales",
+    "lat": 52.55,
+    "lon": -3.05,
+    "tz_offset": -0.020833333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 204.95032185091938,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 24.95032185091938
+      },
+      "Moon": {
+        "longitude": 325.60038602133073,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 25.600386021330735
+      },
+      "Mars": {
+        "longitude": 270.82521652846935,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 0.8252165284693547
+      },
+      "Mercury": {
+        "longitude": 220.67174940529236,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 10.67174940529236
+      },
+      "Jupiter": {
+        "longitude": 164.19505299676786,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 14.195052996767856
+      },
+      "Venus": {
+        "longitude": 248.3822224746818,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 8.38222247468181
+      },
+      "Saturn": {
+        "longitude": 74.26396104145203,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 14.263961041452035
+      },
+      "Rahu": {
+        "longitude": 212.19263846577064,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 2.192638465770642
+      },
+      "Ketu": {
+        "longitude": 32.19263846577064,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 2.192638465770642
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 200.19612704389132,
+    "lagna_degree_in_sign": 20.196127043891323
+  }
+}

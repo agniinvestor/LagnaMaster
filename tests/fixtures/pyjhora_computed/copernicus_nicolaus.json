@@ -1,0 +1,85 @@
+{
+  "chart_id": "copernicus_nicolaus",
+  "name": "Copernicus, Nicolaus",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2259121.165741,
+    "year": 1473,
+    "month": 2,
+    "day": 19,
+    "calendar": "j",
+    "time": "17:13",
+    "time_type": "l",
+    "hour": 17.216667,
+    "time_unknown": false,
+    "place": "Torun",
+    "country": "Poland",
+    "lat": 53.033333,
+    "lon": 18.583333,
+    "tz_offset": 1.4,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 314.67422049727224,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 14.674220497272245
+      },
+      "Moon": {
+        "longitude": 105.56008963397561,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 15.560089633975608
+      },
+      "Mars": {
+        "longitude": 298.1488036518856,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 28.1488036518856
+      },
+      "Mercury": {
+        "longitude": 331.9834621604573,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 1.983462160457293
+      },
+      "Jupiter": {
+        "longitude": 227.35589992129636,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 17.355899921296356
+      },
+      "Venus": {
+        "longitude": 339.59123188618923,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 9.591231886189235
+      },
+      "Saturn": {
+        "longitude": 62.00187106797554,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 2.001871067975543
+      },
+      "Rahu": {
+        "longitude": 218.40102525125184,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 8.401025251251838
+      },
+      "Ketu": {
+        "longitude": 38.40102525125184,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 8.401025251251838
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 132.7885523262804,
+    "lagna_degree_in_sign": 12.78855232628041
+  }
+}

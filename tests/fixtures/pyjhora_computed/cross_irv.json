@@ -1,0 +1,85 @@
+{
+  "chart_id": "cross_irv",
+  "name": "Cross, Irv",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2429472.375,
+    "year": 1939,
+    "month": 7,
+    "day": 27,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "d",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Hammond",
+    "country": "Indiana",
+    "lat": 41.583333,
+    "lon": -87.5,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 100.90504484829569,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 10.905044848295688
+      },
+      "Moon": {
+        "longitude": 242.96590172298562,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 2.9659017229856204
+      },
+      "Mars": {
+        "longitude": 275.3116802891081,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 5.3116802891080965
+      },
+      "Mercury": {
+        "longitude": 121.20414736369109,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 1.2041473636910922
+      },
+      "Jupiter": {
+        "longitude": 345.7695841924759,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 15.769584192475918
+      },
+      "Venus": {
+        "longitude": 89.97347184091487,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 29.97347184091487
+      },
+      "Saturn": {
+        "longitude": 8.000609487522983,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 8.000609487522983
+      },
+      "Rahu": {
+        "longitude": 191.16585854871778,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 11.165858548717779
+      },
+      "Ketu": {
+        "longitude": 11.165858548717779,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 11.165858548717779
+      }
+    },
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree": 221.20075728719215,
+    "lagna_degree_in_sign": 11.200757287192147
+  }
+}

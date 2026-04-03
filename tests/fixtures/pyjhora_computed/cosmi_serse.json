@@ -1,0 +1,85 @@
+{
+  "chart_id": "cosmi_serse",
+  "name": "Cosmi, Serse",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2436328.75,
+    "year": 1958,
+    "month": 5,
+    "day": 5,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Perugia",
+    "country": "Italy",
+    "lat": 43.133333,
+    "lon": 12.366667,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 20.969110594189583,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 20.969110594189583
+      },
+      "Moon": {
+        "longitude": 224.75803396303644,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.75803396303644
+      },
+      "Mars": {
+        "longitude": 312.7206430099409,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 12.720643009940886
+      },
+      "Mercury": {
+        "longitude": 357.6941913984329,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 27.694191398432906
+      },
+      "Jupiter": {
+        "longitude": 181.2905839568112,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 1.29058395681119
+      },
+      "Venus": {
+        "longitude": 336.45531131504276,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 6.4553113150427635
+      },
+      "Saturn": {
+        "longitude": 241.69567380165356,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.6956738016535553
+      },
+      "Rahu": {
+        "longitude": 187.98054997158542,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 7.980549971585418
+      },
+      "Ketu": {
+        "longitude": 7.980549971585447,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 7.980549971585447
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 56.080183263299766,
+    "lagna_degree_in_sign": 26.080183263299766
+  }
+}

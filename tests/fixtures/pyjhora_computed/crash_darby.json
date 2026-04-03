@@ -1,0 +1,85 @@
+{
+  "chart_id": "crash_darby",
+  "name": "Crash, Darby",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2436473.75,
+    "year": 1958,
+    "month": 9,
+    "day": 26,
+    "calendar": "g",
+    "time": "23:00",
+    "time_type": "d",
+    "hour": 23.0,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25,
+    "tz_offset": -7.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 160.35040573375667,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 10.350405733756673
+      },
+      "Moon": {
+        "longitude": 333.17289563555266,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 3.1728956355526634
+      },
+      "Mars": {
+        "longitude": 38.02408492444252,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 8.02408492444252
+      },
+      "Mercury": {
+        "longitude": 153.62630021276325,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 3.6263002127632546
+      },
+      "Jupiter": {
+        "longitude": 190.55028175566045,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 10.55028175566045
+      },
+      "Venus": {
+        "longitude": 148.7010001109624,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 28.70100011096241
+      },
+      "Saturn": {
+        "longitude": 236.7491244101069,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 26.7491244101069
+      },
+      "Rahu": {
+        "longitude": 179.00483754969338,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 29.004837549693377
+      },
+      "Ketu": {
+        "longitude": 359.0048375496934,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 29.004837549693377
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 61.41615511770389,
+    "lagna_degree_in_sign": 1.4161551177038874
+  }
+}

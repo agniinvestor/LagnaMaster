@@ -1,0 +1,85 @@
+{
+  "chart_id": "corn_seane",
+  "name": "Corn, Seane",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2439387.677083,
+    "year": 1966,
+    "month": 9,
+    "day": 19,
+    "calendar": "g",
+    "time": "00:15",
+    "time_type": "d",
+    "hour": 0.25,
+    "time_unknown": false,
+    "place": "Ridgewood",
+    "country": "New Jersey",
+    "lat": 40.983333,
+    "lon": -74.116667,
+    "tz_offset": -4.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 152.40127666453606,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 2.4012766645360557
+      },
+      "Moon": {
+        "longitude": 212.54065903032688,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 2.5406590303268786
+      },
+      "Mars": {
+        "longitude": 112.13350638722547,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 22.133506387225466
+      },
+      "Mercury": {
+        "longitude": 159.82728178556724,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 9.827281785567237
+      },
+      "Jupiter": {
+        "longitude": 95.2942652008128,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 5.294265200812802
+      },
+      "Venus": {
+        "longitude": 139.2388200338362,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 19.23882003383619
+      },
+      "Saturn": {
+        "longitude": 332.90978487833485,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 2.909784878334847
+      },
+      "Rahu": {
+        "longitude": 24.05731833690516,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 24.05731833690516
+      },
+      "Ketu": {
+        "longitude": 204.05731833690515,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 24.057318336905155
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 74.96967532921383,
+    "lagna_degree_in_sign": 14.969675329213828
+  }
+}

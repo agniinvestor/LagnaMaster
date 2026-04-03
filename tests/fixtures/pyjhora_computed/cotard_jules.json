@@ -1,0 +1,85 @@
+{
+  "chart_id": "cotard_jules",
+  "name": "Cotard, Jules",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2393257.744444,
+    "year": 1840,
+    "month": 6,
+    "day": 1,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "l",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "Issoudun",
+    "country": "France",
+    "lat": 46.95,
+    "lon": 2.0,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 49.11393655625028,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 19.11393655625028
+      },
+      "Moon": {
+        "longitude": 62.61099525159375,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 2.6109952515937493
+      },
+      "Mars": {
+        "longitude": 42.32255838295183,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 12.322558382951833
+      },
+      "Mercury": {
+        "longitude": 37.6880362313063,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 7.688036231306299
+      },
+      "Jupiter": {
+        "longitude": 199.03050525272133,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 19.030505252721326
+      },
+      "Venus": {
+        "longitude": 34.4321437380224,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 4.432143738022397
+      },
+      "Saturn": {
+        "longitude": 237.40951501395045,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 27.409515013950454
+      },
+      "Rahu": {
+        "longitude": 309.2768278093081,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 9.276827809308088
+      },
+      "Ketu": {
+        "longitude": 129.2768278093081,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 9.276827809308088
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 74.71536203497232,
+    "lagna_degree_in_sign": 14.715362034972316
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "cauchy_emmanuel",
+  "name": "Cauchy, Emmanuel",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2436986.208333,
+    "year": 1960,
+    "month": 2,
+    "day": 21,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Grand Quevilly",
+    "country": "France",
+    "lat": 49.433333,
+    "lon": 1.05,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 308.7870436440152,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 8.787043644015228
+      },
+      "Moon": {
+        "longitude": 241.5126246907389,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.5126246907389032
+      },
+      "Mars": {
+        "longitude": 275.5933687225959,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 5.593368722595926
+      },
+      "Mercury": {
+        "longitude": 326.5981908733357,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 26.59819087333568
+      },
+      "Jupiter": {
+        "longitude": 245.41017063962136,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 5.410170639621356
+      },
+      "Venus": {
+        "longitude": 277.94941860787327,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 7.94941860787327
+      },
+      "Saturn": {
+        "longitude": 261.82955811417935,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 21.82955811417935
+      },
+      "Rahu": {
+        "longitude": 151.5386475289361,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 1.5386475289361101
+      },
+      "Ketu": {
+        "longitude": 331.5386475289361,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 1.5386475289361101
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 125.4819548263613,
+    "lagna_degree_in_sign": 5.481954826361303
+  }
+}

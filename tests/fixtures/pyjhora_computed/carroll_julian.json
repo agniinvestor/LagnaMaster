@@ -1,0 +1,85 @@
+{
+  "chart_id": "carroll_julian",
+  "name": "Carroll, Julian",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2426448.083333,
+    "year": 1931,
+    "month": 4,
+    "day": 16,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Paducah",
+    "country": "Kentucky",
+    "lat": 37.083333,
+    "lon": -88.6,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 2.7256003515680196,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 2.7256003515680196
+      },
+      "Moon": {
+        "longitude": 346.6150788521496,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 16.615078852149622
+      },
+      "Mars": {
+        "longitude": 102.11541515159115,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 12.11541515159115
+      },
+      "Mercury": {
+        "longitude": 19.982187778077048,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 19.982187778077048
+      },
+      "Jupiter": {
+        "longitude": 80.03470643571931,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 20.034706435719315
+      },
+      "Venus": {
+        "longitude": 325.7863651966769,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 25.78636519667691
+      },
+      "Saturn": {
+        "longitude": 270.14846395334973,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 0.14846395334973295
+      },
+      "Rahu": {
+        "longitude": 351.53198647561754,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 21.531986475617543
+      },
+      "Ketu": {
+        "longitude": 171.5319864756175,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 21.531986475617487
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 51.87311091794258,
+    "lagna_degree_in_sign": 21.873110917942583
+  }
+}

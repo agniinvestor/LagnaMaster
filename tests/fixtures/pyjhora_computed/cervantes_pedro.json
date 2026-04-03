@@ -1,0 +1,85 @@
+{
+  "chart_id": "cervantes_pedro",
+  "name": "Cervantes, Pedro",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2427347.958333,
+    "year": 1933,
+    "month": 10,
+    "day": 2,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Mexico City",
+    "country": "Mexico",
+    "lat": 19.4,
+    "lon": -99.15,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 165.86607068860206,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 15.866070688602065
+      },
+      "Moon": {
+        "longitude": 330.49383304468375,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 0.493833044683754
+      },
+      "Mars": {
+        "longitude": 212.11865902131603,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 2.1186590213160343
+      },
+      "Mercury": {
+        "longitude": 180.74383908404715,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 0.7438390840471527
+      },
+      "Jupiter": {
+        "longitude": 161.8679034892259,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 11.86790348922591
+      },
+      "Venus": {
+        "longitude": 206.91361828491486,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 26.91361828491486
+      },
+      "Saturn": {
+        "longitude": 286.90599721535466,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 16.90599721535466
+      },
+      "Rahu": {
+        "longitude": 305.1622365309663,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 5.162236530966311
+      },
+      "Ketu": {
+        "longitude": 125.16223653096631,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 5.162236530966311
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 144.38092437805378,
+    "lagna_degree_in_sign": 24.380924378053777
+  }
+}

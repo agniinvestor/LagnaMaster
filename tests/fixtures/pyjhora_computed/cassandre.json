@@ -1,0 +1,85 @@
+{
+  "chart_id": "cassandre",
+  "name": "Cassandre",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2415409.107639,
+    "year": 1901,
+    "month": 1,
+    "day": 24,
+    "calendar": "g",
+    "time": "17:00",
+    "time_type": "s",
+    "hour": 17.0,
+    "time_unknown": false,
+    "place": "Khar'kov",
+    "country": "Ukraine",
+    "lat": 50.0,
+    "lon": 36.25,
+    "tz_offset": 2.0344444444444445,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 281.49829930872426,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 11.498299308724256
+      },
+      "Moon": {
+        "longitude": 334.66034356940634,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 4.660343569406336
+      },
+      "Mars": {
+        "longitude": 139.22543606950592,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 19.225436069505918
+      },
+      "Mercury": {
+        "longitude": 283.2197696836238,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 13.219769683623781
+      },
+      "Jupiter": {
+        "longitude": 248.6440104602152,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 8.644010460215213
+      },
+      "Venus": {
+        "longitude": 257.68101750105507,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 17.681017501055067
+      },
+      "Saturn": {
+        "longitude": 257.9639606959236,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 17.963960695923618
+      },
+      "Rahu": {
+        "longitude": 216.95149971698115,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 6.9514997169811465
+      },
+      "Ketu": {
+        "longitude": 36.951499716981175,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 6.951499716981175
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 110.34587005848988,
+    "lagna_degree_in_sign": 20.34587005848988
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "chancellor_alice",
+  "name": "Chancellor, Alice",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2419648.083333,
+    "year": 1912,
+    "month": 9,
+    "day": 2,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Kentland",
+    "country": "Indiana",
+    "lat": 40.766667,
+    "lon": -87.45,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 137.0700252258824,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 17.070025225882404
+      },
+      "Moon": {
+        "longitude": 22.685581369277834,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 22.685581369277834
+      },
+      "Mars": {
+        "longitude": 157.29089459981654,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 7.290894599816539
+      },
+      "Mercury": {
+        "longitude": 121.12575636925345,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 1.1257563692534518
+      },
+      "Jupiter": {
+        "longitude": 224.3468432351717,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.34684323517169
+      },
+      "Venus": {
+        "longitude": 153.11114488850447,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 3.1111448885044695
+      },
+      "Saturn": {
+        "longitude": 41.30407861225824,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 11.304078612258238
+      },
+      "Rahu": {
+        "longitude": 350.13459474395836,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 20.13459474395836
+      },
+      "Ketu": {
+        "longitude": 170.13459474395836,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 20.13459474395836
+      }
+    },
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree": 168.38129224666957,
+    "lagna_degree_in_sign": 18.381292246669574
+  }
+}

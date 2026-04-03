@@ -1,0 +1,85 @@
+{
+  "chart_id": "cardinal_pierre",
+  "name": "Cardinal, Pierre",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2423944.9375,
+    "year": 1924,
+    "month": 6,
+    "day": 8,
+    "calendar": "g",
+    "time": "10:30",
+    "time_type": "s",
+    "hour": 10.5,
+    "time_unknown": false,
+    "place": "Alger",
+    "country": "Algeria",
+    "lat": 36.783333,
+    "lon": 3.05,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 54.53754633000802,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 24.53754633000802
+      },
+      "Moon": {
+        "longitude": 119.24235464956436,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 29.242354649564362
+      },
+      "Mars": {
+        "longitude": 300.85837923425714,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 0.8583792342571428
+      },
+      "Mercury": {
+        "longitude": 31.0874189958506,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 1.0874189958506015
+      },
+      "Jupiter": {
+        "longitude": 231.9234940497527,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 21.92349404975269
+      },
+      "Venus": {
+        "longitude": 84.73514533674776,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 24.735145336747763
+      },
+      "Saturn": {
+        "longitude": 183.160383360292,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 3.160383360292002
+      },
+      "Rahu": {
+        "longitude": 122.48968252493813,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 2.4896825249381322
+      },
+      "Ketu": {
+        "longitude": 302.48968252493813,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 2.4896825249381322
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 130.22207334128888,
+    "lagna_degree_in_sign": 10.222073341288876
+  }
+}

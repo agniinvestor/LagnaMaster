@@ -1,0 +1,85 @@
+{
+  "chart_id": "cain_auguste",
+  "name": "Cain, Auguste",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2386480.118519,
+    "year": 1821,
+    "month": 11,
+    "day": 10,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 206.5636114863967,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 26.563611486396695
+      },
+      "Moon": {
+        "longitude": 39.21336074540257,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 9.213360745402568
+      },
+      "Mars": {
+        "longitude": 121.44523702654763,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 1.4452370265476304
+      },
+      "Mercury": {
+        "longitude": 225.37683512912403,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 15.376835129124032
+      },
+      "Jupiter": {
+        "longitude": 0.9465179682241669,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 0.9465179682241669
+      },
+      "Venus": {
+        "longitude": 248.86768939801973,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 8.867689398019735
+      },
+      "Saturn": {
+        "longitude": 0.022436114097045042,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 0.022436114097045042
+      },
+      "Rahu": {
+        "longitude": 309.90126404176044,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 9.901264041760442
+      },
+      "Ketu": {
+        "longitude": 129.90126404176044,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 9.901264041760442
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 348.1889281051714,
+    "lagna_degree_in_sign": 18.188928105171385
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "charles_of_mount_argus",
+  "name": "Charles of Mount Argus",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2386510.942037,
+    "year": 1821,
+    "month": 12,
+    "day": 11,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "l",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Sittard",
+    "country": "Netherlands",
+    "lat": 51.0,
+    "lon": 5.866667,
+    "tz_offset": 0.2916666666666667,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 237.77691414388426,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 27.776914143884255
+      },
+      "Moon": {
+        "longitude": 88.72731207660009,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 28.727312076600086
+      },
+      "Mars": {
+        "longitude": 133.49614310775425,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 13.49614310775425
+      },
+      "Mercury": {
+        "longitude": 217.14297275599503,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 7.142972755995032
+      },
+      "Jupiter": {
+        "longitude": 358.9378642034855,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 28.937864203485503
+      },
+      "Venus": {
+        "longitude": 284.2045694637244,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 14.204569463724397
+      },
+      "Saturn": {
+        "longitude": 358.6154021248607,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 28.61540212486068
+      },
+      "Rahu": {
+        "longitude": 306.35635752338607,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 6.356357523386066
+      },
+      "Ketu": {
+        "longitude": 126.35635752338607,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 6.356357523386066
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 289.55111297801193,
+    "lagna_degree_in_sign": 19.55111297801193
+  }
+}

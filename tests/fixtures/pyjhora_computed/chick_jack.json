@@ -1,0 +1,85 @@
+{
+  "chart_id": "chick_jack",
+  "name": "Chick, Jack",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2423889.416667,
+    "year": 1924,
+    "month": 4,
+    "day": 13,
+    "calendar": "g",
+    "time": "14:00",
+    "time_type": "s",
+    "hour": 14.0,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 0.8995298917788089,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 0.8995298917788089
+      },
+      "Moon": {
+        "longitude": 107.52778966648482,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 17.52778966648482
+      },
+      "Mars": {
+        "longitude": 270.816066531405,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 0.8160665314049993
+      },
+      "Mercury": {
+        "longitude": 20.161213687262933,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 20.161213687262933
+      },
+      "Jupiter": {
+        "longitude": 237.0077368186369,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 27.007736818636886
+      },
+      "Venus": {
+        "longitude": 46.275534514341494,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 16.275534514341494
+      },
+      "Saturn": {
+        "longitude": 186.6352158243646,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 6.635215824364593
+      },
+      "Rahu": {
+        "longitude": 127.95364492959325,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 7.953644929593253
+      },
+      "Ketu": {
+        "longitude": 307.9536449295932,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 7.953644929593224
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 126.66374769179498,
+    "lagna_degree_in_sign": 6.663747691794981
+  }
+}

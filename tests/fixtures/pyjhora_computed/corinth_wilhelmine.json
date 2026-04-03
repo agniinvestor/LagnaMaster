@@ -1,0 +1,85 @@
+{
+  "chart_id": "corinth_wilhelmine",
+  "name": "Corinth, Wilhelmine",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2418471.4375,
+    "year": 1909,
+    "month": 6,
+    "day": 13,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "s",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 59.636545812667464,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 29.636545812667464
+      },
+      "Moon": {
+        "longitude": 7.21682260820946,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 7.21682260820946
+      },
+      "Mars": {
+        "longitude": 318.8726767570832,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 18.872676757083184
+      },
+      "Mercury": {
+        "longitude": 61.202231080340276,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 1.202231080340276
+      },
+      "Jupiter": {
+        "longitude": 134.62122500012356,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 14.621225000123559
+      },
+      "Venus": {
+        "longitude": 72.01670588656968,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 12.016705886569682
+      },
+      "Saturn": {
+        "longitude": 358.39516629844746,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 28.395166298447464
+      },
+      "Rahu": {
+        "longitude": 54.06201568690856,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 24.06201568690856
+      },
+      "Ketu": {
+        "longitude": 234.06201568690855,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 24.062015686908552
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 297.150149734616,
+    "lagna_degree_in_sign": 27.15014973461598
+  }
+}

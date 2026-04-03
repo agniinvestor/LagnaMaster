@@ -1,0 +1,85 @@
+{
+  "chart_id": "cuomo_mario",
+  "name": "Cuomo, Mario",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2426874.0625,
+    "year": 1932,
+    "month": 6,
+    "day": 15,
+    "calendar": "g",
+    "time": "09:30",
+    "time_type": "d",
+    "hour": 9.5,
+    "time_unknown": false,
+    "place": "Jamaica",
+    "country": "New York",
+    "lat": 40.683333,
+    "lon": -73.8,
+    "tz_offset": -4.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 61.29243437263385,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 1.2924343726338492
+      },
+      "Moon": {
+        "longitude": 200.24652956087363,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 20.246529560873626
+      },
+      "Mars": {
+        "longitude": 32.20418951490541,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 2.2041895149054085
+      },
+      "Mercury": {
+        "longitude": 64.11083390313219,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 4.110833903132189
+      },
+      "Jupiter": {
+        "longitude": 115.96987544149184,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 25.969875441491837
+      },
+      "Venus": {
+        "longitude": 81.29804152322684,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 21.298041523226843
+      },
+      "Saturn": {
+        "longitude": 281.0527564387797,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 11.052756438779682
+      },
+      "Rahu": {
+        "longitude": 328.5708907103632,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 28.570890710363187
+      },
+      "Ketu": {
+        "longitude": 148.5708907103632,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 28.570890710363187
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 111.65658096805889,
+    "lagna_degree_in_sign": 21.65658096805889
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "cary_otis",
+  "name": "Cary, Otis",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2422982.277778,
+    "year": 1921,
+    "month": 10,
+    "day": 20,
+    "calendar": "g",
+    "time": "03:40",
+    "time_type": "s",
+    "hour": 3.666667,
+    "time_unknown": false,
+    "place": "Otaru",
+    "country": "Japan",
+    "lat": 43.189444,
+    "lon": 141.002222,
+    "tz_offset": 9.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 183.07743000719125,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 3.0774300071912535
+      },
+      "Moon": {
+        "longitude": 36.85645461831774,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 6.856454618317741
+      },
+      "Mars": {
+        "longitude": 146.18657601989884,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 26.186576019898837
+      },
+      "Mercury": {
+        "longitude": 203.52838588401642,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 23.528385884016416
+      },
+      "Jupiter": {
+        "longitude": 162.33241686818334,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 12.332416868183344
+      },
+      "Venus": {
+        "longitude": 156.0669683220451,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 6.066968322045113
+      },
+      "Saturn": {
+        "longitude": 158.68392131762758,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 8.68392131762758
+      },
+      "Rahu": {
+        "longitude": 175.2788486812881,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 25.27884868128811
+      },
+      "Ketu": {
+        "longitude": 355.2788486812881,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 25.278848681288082
+      }
+    },
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree": 156.2209641930648,
+    "lagna_degree_in_sign": 6.220964193064788
+  }
+}

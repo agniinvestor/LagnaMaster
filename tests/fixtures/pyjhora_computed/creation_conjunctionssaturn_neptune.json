@@ -1,0 +1,85 @@
+{
+  "chart_id": "creation_conjunctionssaturn_neptune",
+  "name": "Creation conjunctions:Saturn-Neptune",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2368904.899942,
+    "year": 1773,
+    "month": 9,
+    "day": 27,
+    "calendar": "g",
+    "time": "04:35:15",
+    "time_type": "l",
+    "hour": 4.5875,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667,
+    "tz_offset": -4.933888888888889,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 163.8473694861926,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 13.847369486192605
+      },
+      "Moon": {
+        "longitude": 304.6755288982228,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 4.675528898222808
+      },
+      "Mars": {
+        "longitude": 194.96550128456173,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 14.965501284561725
+      },
+      "Mercury": {
+        "longitude": 148.15860578385002,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 28.15860578385002
+      },
+      "Jupiter": {
+        "longitude": 343.54956829924396,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 13.549568299243958
+      },
+      "Venus": {
+        "longitude": 194.2611469060837,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 14.261146906083695
+      },
+      "Saturn": {
+        "longitude": 148.0244640468553,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 28.024464046855286
+      },
+      "Rahu": {
+        "longitude": 160.89035851736182,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 10.890358517361818
+      },
+      "Ketu": {
+        "longitude": 340.89035851736185,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 10.890358517361847
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 146.6162756923371,
+    "lagna_degree_in_sign": 26.616275692337098
+  }
+}

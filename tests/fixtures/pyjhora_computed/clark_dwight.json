@@ -1,0 +1,85 @@
+{
+  "chart_id": "clark_dwight",
+  "name": "Clark, Dwight",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2435846.934028,
+    "year": 1957,
+    "month": 1,
+    "day": 8,
+    "calendar": "g",
+    "time": "05:25",
+    "time_type": "s",
+    "hour": 5.416667,
+    "time_unknown": false,
+    "place": "Kinston",
+    "country": "USA",
+    "lat": 35.266667,
+    "lon": -77.583333,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 264.643238873699,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 24.643238873698976
+      },
+      "Moon": {
+        "longitude": 344.8702201450403,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 14.87022014504032
+      },
+      "Mars": {
+        "longitude": 354.7132231334215,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 24.71322313342148
+      },
+      "Mercury": {
+        "longitude": 269.7007692128069,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 29.700769212806904
+      },
+      "Jupiter": {
+        "longitude": 158.43902936363006,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 8.439029363630056
+      },
+      "Venus": {
+        "longitude": 241.2349293313539,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.2349293313538965
+      },
+      "Saturn": {
+        "longitude": 226.82561295136227,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 16.825612951362274
+      },
+      "Rahu": {
+        "longitude": 214.31512988727542,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 4.315129887275418
+      },
+      "Ketu": {
+        "longitude": 34.31512988727542,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 4.315129887275418
+      }
+    },
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree": 236.50145943250362,
+    "lagna_degree_in_sign": 26.501459432503623
+  }
+}

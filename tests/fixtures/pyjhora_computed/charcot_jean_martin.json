@@ -1,0 +1,85 @@
+{
+  "chart_id": "charcot_jean_martin",
+  "name": "Charcot, Jean-Martin",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2387960.285185,
+    "year": 1825,
+    "month": 11,
+    "day": 29,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "l",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 225.9094372136903,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 15.909437213690296
+      },
+      "Moon": {
+        "longitude": 93.72473907265268,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 3.7247390726526817
+      },
+      "Mars": {
+        "longitude": 162.98346482497243,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 12.98346482497243
+      },
+      "Mercury": {
+        "longitude": 241.39970994780367,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.3997099478036716
+      },
+      "Jupiter": {
+        "longitude": 141.57756698730918,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 21.577566987309183
+      },
+      "Venus": {
+        "longitude": 201.8195260289008,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 21.81952602890081
+      },
+      "Saturn": {
+        "longitude": 57.92105991756271,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 27.921059917562708
+      },
+      "Rahu": {
+        "longitude": 230.38712690979742,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 20.387126909797416
+      },
+      "Ketu": {
+        "longitude": 50.387126909797416,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 20.387126909797416
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 87.96452539827241,
+    "lagna_degree_in_sign": 27.964525398272414
+  }
+}

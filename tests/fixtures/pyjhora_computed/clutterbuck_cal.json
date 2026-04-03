@@ -1,0 +1,85 @@
+{
+  "chart_id": "clutterbuck_cal",
+  "name": "Clutterbuck, Cal",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2447118.541667,
+    "year": 1987,
+    "month": 11,
+    "day": 18,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "s",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Welland",
+    "country": "Ontario (CAN)",
+    "lat": 42.983333,
+    "lon": -79.25,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 212.4680085456871,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 2.4680085456870984
+      },
+      "Moon": {
+        "longitude": 184.22272253723258,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 4.222722537232585
+      },
+      "Mars": {
+        "longitude": 182.9944776863945,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 2.9944776863945037
+      },
+      "Mercury": {
+        "longitude": 194.55286843658735,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 14.552868436587346
+      },
+      "Jupiter": {
+        "longitude": 357.26089201938225,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 27.260892019382254
+      },
+      "Venus": {
+        "longitude": 235.08778701510852,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 25.087787015108518
+      },
+      "Saturn": {
+        "longitude": 236.77666551223587,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 26.776665512235866
+      },
+      "Rahu": {
+        "longitude": 337.3792167236503,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 7.379216723650302
+      },
+      "Ketu": {
+        "longitude": 157.3792167236503,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 7.379216723650302
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 81.17046358707813,
+    "lagna_degree_in_sign": 21.17046358707813
+  }
+}

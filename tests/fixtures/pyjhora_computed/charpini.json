@@ -1,0 +1,85 @@
+{
+  "chart_id": "charpini",
+  "name": "Charpini",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2415595.82684,
+    "year": 1901,
+    "month": 7,
+    "day": 30,
+    "calendar": "g",
+    "time": "08:00",
+    "time_type": "s",
+    "hour": 8.0,
+    "time_unknown": false,
+    "place": "Paris Arrondissement 6",
+    "country": "France",
+    "lat": 48.850556,
+    "lon": 2.332778,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 103.94648508628599,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 13.946485086285989
+      },
+      "Moon": {
+        "longitude": 270.1762368353376,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 0.1762368353375905
+      },
+      "Mars": {
+        "longitude": 167.15226941212111,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 17.152269412121115
+      },
+      "Mercury": {
+        "longitude": 85.25103327440604,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 25.25103327440604
+      },
+      "Jupiter": {
+        "longitude": 252.25233242144293,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 12.25233242144293
+      },
+      "Venus": {
+        "longitude": 128.16502241961948,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 8.165022419619476
+      },
+      "Saturn": {
+        "longitude": 258.88968805765313,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.88968805765313
+      },
+      "Rahu": {
+        "longitude": 206.992004300487,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 26.992004300486997
+      },
+      "Ketu": {
+        "longitude": 26.992004300486997,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 26.992004300486997
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 140.9659962285768,
+    "lagna_degree_in_sign": 20.965996228576813
+  }
+}

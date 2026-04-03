@@ -1,0 +1,85 @@
+{
+  "chart_id": "co_star_app",
+  "name": "Co-Star App",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2458032.322222,
+    "year": 2017,
+    "month": 10,
+    "day": 5,
+    "calendar": "g",
+    "time": "15:44",
+    "time_type": "d",
+    "hour": 15.733333,
+    "time_unknown": false,
+    "place": "New York City",
+    "country": "New York",
+    "lat": 40.716667,
+    "lon": -74.0,
+    "tz_offset": -4.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 168.65896280293057,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 18.658962802930574
+      },
+      "Moon": {
+        "longitude": 349.2318278779327,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 19.231827877932687
+      },
+      "Mars": {
+        "longitude": 145.19228550813332,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 25.192285508133324
+      },
+      "Mercury": {
+        "longitude": 166.33206720390982,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 16.332067203909816
+      },
+      "Jupiter": {
+        "longitude": 184.89269746568343,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 4.892697465683426
+      },
+      "Venus": {
+        "longitude": 145.26520299998717,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 25.265202999987167
+      },
+      "Saturn": {
+        "longitude": 238.43456129938176,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 28.434561299381755
+      },
+      "Rahu": {
+        "longitude": 119.09800648694176,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 29.098006486941756
+      },
+      "Ketu": {
+        "longitude": 299.09800648694176,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 29.098006486941756
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 283.574198784507,
+    "lagna_degree_in_sign": 13.574198784507018
+  }
+}

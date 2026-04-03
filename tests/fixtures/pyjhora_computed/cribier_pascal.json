@@ -1,0 +1,85 @@
+{
+  "chart_id": "cribier_pascal",
+  "name": "Cribier, Pascal",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2434641.541667,
+    "year": 1953,
+    "month": 9,
+    "day": 21,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Louviers",
+    "country": "France",
+    "lat": 49.216667,
+    "lon": 1.166667,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 154.5454605136938,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 4.545460513693797
+      },
+      "Moon": {
+        "longitude": 304.23455085609106,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 4.234550856091062
+      },
+      "Mars": {
+        "longitude": 130.7689915423862,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 10.768991542386203
+      },
+      "Mercury": {
+        "longitude": 165.5564280609859,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 15.556428060985894
+      },
+      "Jupiter": {
+        "longitude": 62.320689536435566,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 2.320689536435566
+      },
+      "Venus": {
+        "longitude": 123.0233640168203,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 3.0233640168202953
+      },
+      "Saturn": {
+        "longitude": 183.0704164931261,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 3.070416493126089
+      },
+      "Rahu": {
+        "longitude": 278.6160135544779,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 8.616013554477888
+      },
+      "Ketu": {
+        "longitude": 98.61601355447789,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 8.616013554477888
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 103.23486756899607,
+    "lagna_degree_in_sign": 13.234867568996066
+  }
+}

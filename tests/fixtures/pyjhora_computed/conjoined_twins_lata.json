@@ -1,0 +1,85 @@
+{
+  "chart_id": "conjoined_twins_lata",
+  "name": "Conjoined Twins: Lata",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2453177.083333,
+    "year": 2004,
+    "month": 6,
+    "day": 21,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Suva",
+    "country": "Fiji",
+    "lat": -18.133333,
+    "lon": 178.416667,
+    "tz_offset": 12.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 65.65354674857225,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 5.6535467485722535
+      },
+      "Moon": {
+        "longitude": 95.5430430078389,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 5.543043007838904
+      },
+      "Mars": {
+        "longitude": 94.02277305603825,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 4.022773056038247
+      },
+      "Mercury": {
+        "longitude": 67.75765081484327,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 7.757650814843274
+      },
+      "Jupiter": {
+        "longitude": 138.0489609505148,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 18.04896095051481
+      },
+      "Venus": {
+        "longitude": 47.43901139913181,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 17.439011399131807
+      },
+      "Saturn": {
+        "longitude": 80.58778530791848,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 20.58778530791848
+      },
+      "Rahu": {
+        "longitude": 16.11111295394063,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 16.11111295394063
+      },
+      "Ketu": {
+        "longitude": 196.11111295394062,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 16.11111295394062
+      }
+    },
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree": 2.177585078109516,
+    "lagna_degree_in_sign": 2.177585078109516
+  }
+}

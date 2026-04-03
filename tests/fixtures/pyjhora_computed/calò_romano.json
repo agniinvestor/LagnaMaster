@@ -1,0 +1,85 @@
+{
+  "chart_id": "cal\u00f2_romano",
+  "name": "Cal\u00f2, Romano",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2409303.319491,
+    "year": 1884,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "20:30",
+    "time_type": "s",
+    "hour": 20.5,
+    "time_unknown": false,
+    "place": "Rome",
+    "country": "Italy",
+    "lat": 41.9,
+    "lon": 12.483333,
+    "tz_offset": 0.8322222222222222,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 24.393490316168805,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 24.393490316168805
+      },
+      "Moon": {
+        "longitude": 167.65226479645023,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 17.652264796450226
+      },
+      "Mars": {
+        "longitude": 114.0727482306463,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 24.072748230646297
+      },
+      "Mercury": {
+        "longitude": 39.23682490581063,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 9.236824905810629
+      },
+      "Jupiter": {
+        "longitude": 95.5641924821411,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 5.564192482141095
+      },
+      "Venus": {
+        "longitude": 69.78496773361726,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 9.784967733617265
+      },
+      "Saturn": {
+        "longitude": 47.7861135955378,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 17.7861135955378
+      },
+      "Rahu": {
+        "longitude": 180.81740265361958,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 0.8174026536195811
+      },
+      "Ketu": {
+        "longitude": 0.8174026536195811,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 0.8174026536195811
+      }
+    },
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree": 222.12046807632547,
+    "lagna_degree_in_sign": 12.120468076325466
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "celestial_pluto_discovery",
+  "name": "Celestial: Pluto Discovery",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2426026.458333,
+    "year": 1930,
+    "month": 2,
+    "day": 18,
+    "calendar": "g",
+    "time": "16:00",
+    "time_type": "s",
+    "hour": 16.0,
+    "time_unknown": false,
+    "place": "Flagstaff",
+    "country": "Arizona",
+    "lat": 35.2,
+    "lon": -111.65,
+    "tz_offset": -7.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 306.70709502591075,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 6.707095025910746
+      },
+      "Moon": {
+        "longitude": 200.37055237142357,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 20.37055237142357
+      },
+      "Mars": {
+        "longitude": 286.59578762382995,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 16.59578762382995
+      },
+      "Mercury": {
+        "longitude": 280.7374201431259,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 10.737420143125917
+      },
+      "Jupiter": {
+        "longitude": 44.05159585955654,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 14.051595859556542
+      },
+      "Venus": {
+        "longitude": 309.6802508881439,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 9.680250888143917
+      },
+      "Saturn": {
+        "longitude": 256.0782063439152,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 16.078206343915213
+      },
+      "Rahu": {
+        "longitude": 12.294953406399836,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 12.294953406399836
+      },
+      "Ketu": {
+        "longitude": 192.29495340639983,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 12.294953406399827
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 100.69006764897281,
+    "lagna_degree_in_sign": 10.690067648972814
+  }
+}

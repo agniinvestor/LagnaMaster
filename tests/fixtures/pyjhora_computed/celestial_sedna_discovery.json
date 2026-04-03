@@ -1,0 +1,85 @@
+{
+  "chart_id": "celestial_sedna_discovery",
+  "name": "Celestial: Sedna Discovery",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2452963.284722,
+    "year": 2003,
+    "month": 11,
+    "day": 19,
+    "calendar": "g",
+    "time": "10:50",
+    "time_type": "s",
+    "hour": 10.833333,
+    "time_unknown": false,
+    "place": "Palomar Mountain (P O)",
+    "country": "California",
+    "lat": 33.316667,
+    "lon": -116.883333,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 213.1151690713817,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 3.1151690713817004
+      },
+      "Moon": {
+        "longitude": 155.58772766856868,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 5.587727668568675
+      },
+      "Mars": {
+        "longitude": 321.639898327262,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 21.639898327262017
+      },
+      "Mercury": {
+        "longitude": 227.40428800065044,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 17.40428800065044
+      },
+      "Jupiter": {
+        "longitude": 141.93299792498968,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 21.932997924989678
+      },
+      "Venus": {
+        "longitude": 237.0839921512951,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 27.083992151295092
+      },
+      "Saturn": {
+        "longitude": 78.768119236762,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 18.768119236762004
+      },
+      "Rahu": {
+        "longitude": 26.54635243057697,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 26.54635243057697
+      },
+      "Ketu": {
+        "longitude": 206.54635243057697,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 26.546352430576974
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 273.6827239526576,
+    "lagna_degree_in_sign": 3.682723952657625
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "chapman_sydney",
+  "name": "Chapman, Sydney",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2428093.059028,
+    "year": 1935,
+    "month": 10,
+    "day": 17,
+    "calendar": "g",
+    "time": "13:25",
+    "time_type": "s",
+    "hour": 13.416667,
+    "time_unknown": false,
+    "place": "Macclesfield",
+    "country": "England",
+    "lat": 53.266667,
+    "lon": -2.116667,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 180.2831724769334,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 0.28317247693340164
+      },
+      "Moon": {
+        "longitude": 70.85862018126447,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 10.85862018126447
+      },
+      "Mars": {
+        "longitude": 238.8139007166135,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 28.81390071661349
+      },
+      "Mercury": {
+        "longitude": 181.76711290955035,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 1.7671129095503488
+      },
+      "Jupiter": {
+        "longitude": 212.24695784225088,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 2.246957842250879
+      },
+      "Venus": {
+        "longitude": 139.1225213703665,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 19.122521370366513
+      },
+      "Saturn": {
+        "longitude": 310.9295740743108,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 10.929574074310779
+      },
+      "Rahu": {
+        "longitude": 263.7323543423056,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 23.732354342305598
+      },
+      "Ketu": {
+        "longitude": 83.7323543423056,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 23.732354342305598
+      }
+    },
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree": 255.5323919204825,
+    "lagna_degree_in_sign": 15.532391920482496
+  }
+}

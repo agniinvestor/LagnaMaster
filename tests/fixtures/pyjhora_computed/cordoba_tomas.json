@@ -1,0 +1,85 @@
+{
+  "chart_id": "cordoba_tomas",
+  "name": "Cordoba, Tomas",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2446805.399306,
+    "year": 1987,
+    "month": 1,
+    "day": 9,
+    "calendar": "g",
+    "time": "15:35",
+    "time_type": "s",
+    "hour": 15.583333,
+    "time_unknown": false,
+    "place": "Ciudad Mante",
+    "country": "Mexico",
+    "lat": 22.733333,
+    "lon": -98.95,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 265.4232436897536,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 25.423243689753576
+      },
+      "Moon": {
+        "longitude": 28.813113931668205,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 28.813113931668205
+      },
+      "Mars": {
+        "longitude": 337.29946204561634,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 7.2994620456163375
+      },
+      "Mercury": {
+        "longitude": 263.70242300028275,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 23.70242300028275
+      },
+      "Jupiter": {
+        "longitude": 325.3264073761396,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 25.326407376139628
+      },
+      "Venus": {
+        "longitude": 218.70318645001814,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 8.703186450018137
+      },
+      "Saturn": {
+        "longitude": 232.68299157719864,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 22.682991577198635
+      },
+      "Rahu": {
+        "longitude": 352.5521245692005,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 22.552124569200487
+      },
+      "Ketu": {
+        "longitude": 172.5521245692005,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 22.552124569200487
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 51.334576838705516,
+    "lagna_degree_in_sign": 21.334576838705516
+  }
+}

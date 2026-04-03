@@ -1,0 +1,85 @@
+{
+  "chart_id": "calmeyer_bengt",
+  "name": "Calmeyer, Bengt",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2426983.479167,
+    "year": 1932,
+    "month": 10,
+    "day": 3,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 166.6338117030542,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 16.633811703054192
+      },
+      "Moon": {
+        "longitude": 205.01673409951042,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 25.016734099510415
+      },
+      "Mars": {
+        "longitude": 104.34916971056633,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 14.34916971056633
+      },
+      "Mercury": {
+        "longitude": 169.40003366145373,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 19.400033661453733
+      },
+      "Jupiter": {
+        "longitude": 138.37406154254703,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 18.374061542547025
+      },
+      "Venus": {
+        "longitude": 122.35079370207688,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 2.350793702076885
+      },
+      "Saturn": {
+        "longitude": 275.1965331340316,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 5.196533134031597
+      },
+      "Rahu": {
+        "longitude": 324.055008329024,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 24.05500832902402
+      },
+      "Ketu": {
+        "longitude": 144.05500832902402,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 24.05500832902402
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 110.64764372566131,
+    "lagna_degree_in_sign": 20.64764372566131
+  }
+}

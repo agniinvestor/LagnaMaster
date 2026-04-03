@@ -1,0 +1,85 @@
+{
+  "chart_id": "cros_vitalis",
+  "name": "Cros, Vitalis",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2420053.541667,
+    "year": 1913,
+    "month": 10,
+    "day": 13,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Villeneuve-Minervois",
+    "country": "France",
+    "lat": 43.315556,
+    "lon": 2.463056,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 176.4433574474888,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 26.443357447488808
+      },
+      "Moon": {
+        "longitude": 332.35884890072145,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 2.358848900721455
+      },
+      "Mars": {
+        "longitude": 80.92556275229083,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 20.92556275229083
+      },
+      "Mercury": {
+        "longitude": 193.9630022356945,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 13.96300223569449
+      },
+      "Jupiter": {
+        "longitude": 257.6171229709958,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 17.61712297099581
+      },
+      "Venus": {
+        "longitude": 147.26623210743324,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 27.26623210743324
+      },
+      "Saturn": {
+        "longitude": 55.38422838784213,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 25.38422838784213
+      },
+      "Rahu": {
+        "longitude": 331.4360219498041,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 1.4360219498041147
+      },
+      "Ketu": {
+        "longitude": 151.43602194980411,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 1.4360219498041147
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 117.71956890466764,
+    "lagna_degree_in_sign": 27.71956890466764
+  }
+}

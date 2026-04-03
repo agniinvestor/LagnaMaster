@@ -1,0 +1,85 @@
+{
+  "chart_id": "cray_seymour",
+  "name": "Cray, Seymour",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2424422.104167,
+    "year": 1925,
+    "month": 9,
+    "day": 28,
+    "calendar": "g",
+    "time": "08:30",
+    "time_type": "s",
+    "hour": 8.5,
+    "time_unknown": false,
+    "place": "Chippewa Falls",
+    "country": "Wisconsin",
+    "lat": 44.933333,
+    "lon": -91.4,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 162.12535245842602,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 12.125352458426022
+      },
+      "Moon": {
+        "longitude": 293.40075586662084,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 23.40075586662084
+      },
+      "Mars": {
+        "longitude": 157.07271289472706,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 7.072712894727061
+      },
+      "Mercury": {
+        "longitude": 155.10646184648613,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 5.106461846486127
+      },
+      "Jupiter": {
+        "longitude": 260.46228163386553,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 20.46228163386553
+      },
+      "Venus": {
+        "longitude": 202.0018794968232,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 22.001879496823193
+      },
+      "Saturn": {
+        "longitude": 199.36281841417951,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 19.362818414179515
+      },
+      "Rahu": {
+        "longitude": 99.9834647122737,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 9.983464712273701
+      },
+      "Ketu": {
+        "longitude": 279.9834647122737,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 9.983464712273701
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 189.70630364427365,
+    "lagna_degree_in_sign": 9.706303644273646
+  }
+}

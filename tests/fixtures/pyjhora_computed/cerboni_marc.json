@@ -1,0 +1,85 @@
+{
+  "chart_id": "cerboni_marc",
+  "name": "Cerboni, Marc",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2435400.583333,
+    "year": 1955,
+    "month": 10,
+    "day": 20,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "s",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Nice",
+    "country": "France",
+    "lat": 43.7,
+    "lon": 7.25,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 182.66845361995314,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 2.668453619953141
+      },
+      "Moon": {
+        "longitude": 230.6026889459367,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 20.602688945936706
+      },
+      "Mars": {
+        "longitude": 161.0013791091333,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 11.001379109133296
+      },
+      "Mercury": {
+        "longitude": 170.6111605437687,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 20.611160543768705
+      },
+      "Jupiter": {
+        "longitude": 123.19224226075463,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 3.1922422607546252
+      },
+      "Venus": {
+        "longitude": 195.56782439742616,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 15.567824397426165
+      },
+      "Saturn": {
+        "longitude": 207.30804056294227,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 27.308040562942267
+      },
+      "Rahu": {
+        "longitude": 235.22391490356904,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 25.22391490356904
+      },
+      "Ketu": {
+        "longitude": 55.22391490356904,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 25.22391490356904
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 137.53795243032178,
+    "lagna_degree_in_sign": 17.53795243032178
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "carlos_iv_king_of_spain",
+  "name": "Carlos IV, King of Spain",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2359818.585185,
+    "year": 1748,
+    "month": 11,
+    "day": 11,
+    "calendar": "g",
+    "time": "03:00",
+    "time_type": "l",
+    "hour": 3.0,
+    "time_unknown": false,
+    "place": "Portici",
+    "country": "Italy",
+    "lat": 40.816667,
+    "lon": 14.333333,
+    "tz_offset": 0.8322222222222222,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 208.7654220919804,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 28.765422091980412
+      },
+      "Moon": {
+        "longitude": 95.2424723742889,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 5.242472374288894
+      },
+      "Mars": {
+        "longitude": 165.75789252151523,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 15.757892521515231
+      },
+      "Mercury": {
+        "longitude": 231.29763499072595,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 21.297634990725953
+      },
+      "Jupiter": {
+        "longitude": 293.90077125185854,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 23.900771251858544
+      },
+      "Venus": {
+        "longitude": 162.65315111895643,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 12.65315111895643
+      },
+      "Saturn": {
+        "longitude": 201.99993277341036,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 21.999932773410364
+      },
+      "Rahu": {
+        "longitude": 281.055701268258,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 11.05570126825802
+      },
+      "Ketu": {
+        "longitude": 101.05570126825802,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 11.05570126825802
+      }
+    },
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree": 165.52905636185858,
+    "lagna_degree_in_sign": 15.52905636185858
+  }
+}

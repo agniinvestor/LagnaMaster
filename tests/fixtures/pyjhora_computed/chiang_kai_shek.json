@@ -1,0 +1,85 @@
+{
+  "chart_id": "chiang_kai_shek",
+  "name": "Chiang Kai-Shek",
+  "rodden_rating": "B",
+  "birth_data": {
+    "jd_ut": 2410575.665353,
+    "year": 1887,
+    "month": 10,
+    "day": 31,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Xikou (Zhejiang)",
+    "country": "China",
+    "lat": 29.827778,
+    "lon": 120.472778,
+    "tz_offset": 8.095277777777778,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 195.14677285158962,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 15.146772851589617
+      },
+      "Moon": {
+        "longitude": 7.116568187808367,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 7.116568187808367
+      },
+      "Mars": {
+        "longitude": 137.58029223966332,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 17.580292239663322
+      },
+      "Mercury": {
+        "longitude": 218.49515844753356,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 8.495158447533555
+      },
+      "Jupiter": {
+        "longitude": 202.13522983822455,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 22.135229838224546
+      },
+      "Venus": {
+        "longitude": 153.74756589196215,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 3.7475658919621537
+      },
+      "Saturn": {
+        "longitude": 103.9528311896606,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 13.9528311896606
+      },
+      "Rahu": {
+        "longitude": 112.94079392159004,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 22.940793921590043
+      },
+      "Ketu": {
+        "longitude": 292.94079392159006,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 22.940793921590057
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 271.036855942652,
+    "lagna_degree_in_sign": 1.0368559426519823
+  }
+}

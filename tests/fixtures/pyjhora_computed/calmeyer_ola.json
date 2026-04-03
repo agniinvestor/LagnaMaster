@@ -1,0 +1,85 @@
+{
+  "chart_id": "calmeyer_ola",
+  "name": "Calmeyer, Ola",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2426081.28125,
+    "year": 1930,
+    "month": 4,
+    "day": 14,
+    "calendar": "g",
+    "time": "19:45",
+    "time_type": "s",
+    "hour": 19.75,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 1.2073874935553952,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 1.2073874935553952
+      },
+      "Moon": {
+        "longitude": 200.64981486973278,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 20.64981486973278
+      },
+      "Mars": {
+        "longitude": 329.41386615979883,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 29.41386615979883
+      },
+      "Mercury": {
+        "longitude": 15.135867763739125,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 15.135867763739125
+      },
+      "Jupiter": {
+        "longitude": 51.256352068257854,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 21.256352068257854
+      },
+      "Venus": {
+        "longitude": 17.80810357444467,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 17.80810357444467
+      },
+      "Saturn": {
+        "longitude": 258.964956616507,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.96495661650698
+      },
+      "Rahu": {
+        "longitude": 9.890175906069501,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 9.890175906069501
+      },
+      "Ketu": {
+        "longitude": 189.8901759060695,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 9.890175906069487
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 184.53135743486743,
+    "lagna_degree_in_sign": 4.531357434867431
+  }
+}

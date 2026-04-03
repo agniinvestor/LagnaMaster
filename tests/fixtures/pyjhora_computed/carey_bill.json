@@ -1,0 +1,85 @@
+{
+  "chart_id": "carey_bill",
+  "name": "Carey, Bill",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2421004.854167,
+    "year": 1916,
+    "month": 5,
+    "day": 21,
+    "calendar": "g",
+    "time": "00:30",
+    "time_type": "s",
+    "hour": 0.5,
+    "time_unknown": false,
+    "place": "Hollister",
+    "country": "California",
+    "lat": 36.85,
+    "lon": -121.4,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 37.2485877216872,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 7.248587721687201
+      },
+      "Moon": {
+        "longitude": 269.41561712415756,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 29.415617124157563
+      },
+      "Mars": {
+        "longitude": 123.90209251552113,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 3.902092515521133
+      },
+      "Mercury": {
+        "longitude": 56.029993950879906,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 26.029993950879906
+      },
+      "Jupiter": {
+        "longitude": 0.4361767736994752,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 0.4361767736994752
+      },
+      "Venus": {
+        "longitude": 79.17054207873034,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 19.170542078730335
+      },
+      "Saturn": {
+        "longitude": 81.02314604208497,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 21.023146042084974
+      },
+      "Rahu": {
+        "longitude": 278.09257754293793,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 8.092577542937931
+      },
+      "Ketu": {
+        "longitude": 98.09257754293793,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 8.092577542937931
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 298.5564744270033,
+    "lagna_degree_in_sign": 28.55647442700331
+  }
+}

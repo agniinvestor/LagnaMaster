@@ -1,0 +1,85 @@
+{
+  "chart_id": "chaplin_sydney",
+  "name": "Chaplin, Sydney",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2424605.201389,
+    "year": 1926,
+    "month": 3,
+    "day": 30,
+    "calendar": "g",
+    "time": "08:50",
+    "time_type": "s",
+    "hour": 8.833333,
+    "time_unknown": false,
+    "place": "Beverly Hills",
+    "country": "California",
+    "lat": 34.066667,
+    "lon": -118.4,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 346.4145768979737,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 16.41457689797369
+      },
+      "Moon": {
+        "longitude": 181.1533123367679,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 1.1533123367678968
+      },
+      "Mars": {
+        "longitude": 282.5972906491523,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 12.597290649152285
+      },
+      "Mercury": {
+        "longitude": 347.4035384157833,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 17.403538415783316
+      },
+      "Jupiter": {
+        "longitude": 295.989855570008,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 25.98985557000799
+      },
+      "Venus": {
+        "longitude": 301.7934491893478,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 1.7934491893478253
+      },
+      "Saturn": {
+        "longitude": 212.75508100335836,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 2.755081003358356
+      },
+      "Rahu": {
+        "longitude": 89.28069162577646,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 29.280691625776456
+      },
+      "Ketu": {
+        "longitude": 269.28069162577646,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 29.280691625776456
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 45.98391467293354,
+    "lagna_degree_in_sign": 15.983914672933537
+  }
+}

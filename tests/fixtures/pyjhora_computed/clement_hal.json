@@ -1,0 +1,85 @@
+{
+  "chart_id": "clement_hal",
+  "name": "Clement, Hal",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2423205.1875,
+    "year": 1922,
+    "month": 5,
+    "day": 30,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "d",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Somerville",
+    "country": "Massachusetts",
+    "lat": 42.383333,
+    "lon": -71.1,
+    "tz_offset": -4.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 45.68804734825486,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 15.688047348254862
+      },
+      "Moon": {
+        "longitude": 95.44544424980081,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 5.445444249800815
+      },
+      "Mars": {
+        "longitude": 239.40204047795004,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 29.402040477950038
+      },
+      "Mercury": {
+        "longitude": 66.61525496778411,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 6.615254967784111
+      },
+      "Jupiter": {
+        "longitude": 166.25844386106232,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 16.258443861062318
+      },
+      "Venus": {
+        "longitude": 73.25011758387483,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 13.250117583874825
+      },
+      "Saturn": {
+        "longitude": 158.05193933505086,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 8.05193933505086
+      },
+      "Rahu": {
+        "longitude": 163.87242609279042,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 13.87242609279042
+      },
+      "Ketu": {
+        "longitude": 343.8724260927904,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 13.87242609279042
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 136.81203011381592,
+    "lagna_degree_in_sign": 16.812030113815922
+  }
+}

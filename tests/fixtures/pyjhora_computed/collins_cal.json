@@ -1,0 +1,85 @@
+{
+  "chart_id": "collins_cal",
+  "name": "Collins, Cal",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2427197.78125,
+    "year": 1933,
+    "month": 5,
+    "day": 5,
+    "calendar": "g",
+    "time": "00:45",
+    "time_type": "s",
+    "hour": 0.75,
+    "time_unknown": false,
+    "place": "Owen",
+    "country": "Indiana",
+    "lat": 38.45,
+    "lon": -85.55,
+    "tz_offset": -4.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 21.313775071783176,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 21.313775071783176
+      },
+      "Moon": {
+        "longitude": 138.03308406424765,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 18.033084064247646
+      },
+      "Mars": {
+        "longitude": 130.87740925193881,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 10.877409251938815
+      },
+      "Mercury": {
+        "longitude": 358.69276196284727,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 28.69276196284727
+      },
+      "Jupiter": {
+        "longitude": 140.40381517318306,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 20.403815173183062
+      },
+      "Venus": {
+        "longitude": 24.870608766456005,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 24.870608766456005
+      },
+      "Saturn": {
+        "longitude": 293.0630578764378,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 23.063057876437824
+      },
+      "Rahu": {
+        "longitude": 312.27597686236186,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 12.275976862361858
+      },
+      "Ketu": {
+        "longitude": 132.27597686236186,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 12.275976862361858
+      }
+    },
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree": 254.7742551485459,
+    "lagna_degree_in_sign": 14.774255148545905
+  }
+}

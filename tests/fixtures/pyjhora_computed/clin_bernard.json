@@ -1,0 +1,85 @@
+{
+  "chart_id": "clin_bernard",
+  "name": "Clin, Bernard",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2431513.159722,
+    "year": 1945,
+    "month": 2,
+    "day": 26,
+    "calendar": "g",
+    "time": "16:50",
+    "time_type": "d",
+    "hour": 16.833333,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 314.61655077692325,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 14.616550776923248
+      },
+      "Moon": {
+        "longitude": 130.77201781324868,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 10.77201781324868
+      },
+      "Mars": {
+        "longitude": 286.3601329628811,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 16.360132962881096
+      },
+      "Mercury": {
+        "longitude": 312.7224119268066,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 12.722411926806615
+      },
+      "Jupiter": {
+        "longitude": 151.365372807366,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 1.3653728073659863
+      },
+      "Venus": {
+        "longitude": 358.90544330390946,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 28.905443303909465
+      },
+      "Saturn": {
+        "longitude": 70.79380023613037,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 10.793800236130366
+      },
+      "Rahu": {
+        "longitude": 84.30567135063524,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 24.305671350635237
+      },
+      "Ketu": {
+        "longitude": 264.30567135063524,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 24.305671350635237
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 117.76507776989322,
+    "lagna_degree_in_sign": 27.765077769893225
+  }
+}

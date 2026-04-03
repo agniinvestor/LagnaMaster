@@ -1,0 +1,85 @@
+{
+  "chart_id": "crawford_laurel",
+  "name": "Crawford, Laurel",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2414520.750694,
+    "year": 1898,
+    "month": 8,
+    "day": 19,
+    "calendar": "g",
+    "time": "00:01",
+    "time_type": "s",
+    "hour": 0.016667,
+    "time_unknown": false,
+    "place": "Scandia",
+    "country": "USA",
+    "lat": 39.8,
+    "lon": -97.783333,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 123.79890667717315,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 3.79890667717315
+      },
+      "Moon": {
+        "longitude": 144.65509947634501,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 24.655099476345015
+      },
+      "Mars": {
+        "longitude": 58.391168226998865,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 28.391168226998865
+      },
+      "Mercury": {
+        "longitude": 148.28512489881663,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 28.285124898816633
+      },
+      "Jupiter": {
+        "longitude": 166.727099149474,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 16.727099149473986
+      },
+      "Venus": {
+        "longitude": 167.36562918062515,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 17.36562918062515
+      },
+      "Saturn": {
+        "longitude": 223.28022648951904,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 13.280226489519038
+      },
+      "Rahu": {
+        "longitude": 264.70170881936554,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 24.701708819365535
+      },
+      "Ketu": {
+        "longitude": 84.70170881936554,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 24.701708819365535
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 49.019412912720796,
+    "lagna_degree_in_sign": 19.019412912720796
+  }
+}

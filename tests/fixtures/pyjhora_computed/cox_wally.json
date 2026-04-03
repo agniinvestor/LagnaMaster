@@ -1,0 +1,85 @@
+{
+  "chart_id": "cox_wally",
+  "name": "Cox, Wally",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2424125.885417,
+    "year": 1924,
+    "month": 12,
+    "day": 6,
+    "calendar": "g",
+    "time": "04:15",
+    "time_type": "s",
+    "hour": 4.25,
+    "time_unknown": false,
+    "place": "Detroit",
+    "country": "Michigan",
+    "lat": 42.333333,
+    "lon": -83.05,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 231.2007202779498,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 21.200720277949813
+      },
+      "Moon": {
+        "longitude": 356.7179790844968,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 26.71797908449679
+      },
+      "Mars": {
+        "longitude": 329.5512987728399,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 29.551298772839914
+      },
+      "Mercury": {
+        "longitude": 251.55006843301098,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 11.550068433010978
+      },
+      "Jupiter": {
+        "longitude": 244.49837601772668,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 4.4983760177266845
+      },
+      "Venus": {
+        "longitude": 198.1152057456083,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 18.115205745608307
+      },
+      "Saturn": {
+        "longitude": 196.8272061131691,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 16.827206113169098
+      },
+      "Rahu": {
+        "longitude": 113.254023492573,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 23.254023492572998
+      },
+      "Ketu": {
+        "longitude": 293.25402349257297,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 23.25402349257297
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 188.74909043376292,
+    "lagna_degree_in_sign": 8.749090433762916
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "chamberlain_wilt",
+  "name": "Chamberlain, Wilt",
+  "rodden_rating": "B",
+  "birth_data": {
+    "jd_ut": 2428402.64375,
+    "year": 1936,
+    "month": 8,
+    "day": 21,
+    "calendar": "g",
+    "time": "23:27",
+    "time_type": "d",
+    "hour": 23.45,
+    "time_unknown": false,
+    "place": "Philadelphia",
+    "country": "Pennsylvania",
+    "lat": 39.95,
+    "lon": -75.166667,
+    "tz_offset": -4.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 125.87468898820826,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 5.874688988208263
+      },
+      "Moon": {
+        "longitude": 182.01286528362058,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 2.0128652836205845
+      },
+      "Mars": {
+        "longitude": 104.59059484465713,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 14.590594844657133
+      },
+      "Mercury": {
+        "longitude": 149.56877211916432,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 29.568772119164322
+      },
+      "Jupiter": {
+        "longitude": 231.7837018882376,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 21.7837018882376
+      },
+      "Venus": {
+        "longitude": 140.66710673569227,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 20.667106735692272
+      },
+      "Saturn": {
+        "longitude": 327.69054245470693,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 27.69054245470693
+      },
+      "Rahu": {
+        "longitude": 248.66188449529412,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 8.661884495294117
+      },
+      "Ketu": {
+        "longitude": 68.66188449529409,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 8.661884495294089
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 33.26071355581672,
+    "lagna_degree_in_sign": 3.2607135558167215
+  }
+}

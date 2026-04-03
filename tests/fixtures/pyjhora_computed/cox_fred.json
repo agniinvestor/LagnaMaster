@@ -1,0 +1,85 @@
+{
+  "chart_id": "cox_fred",
+  "name": "Cox, Fred",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2429244.6875,
+    "year": 1938,
+    "month": 12,
+    "day": 11,
+    "calendar": "g",
+    "time": "23:30",
+    "time_type": "s",
+    "hour": 23.5,
+    "time_unknown": false,
+    "place": "Monongahela",
+    "country": "Pennsylvania",
+    "lat": 40.2,
+    "lon": -79.933333,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 236.4908057551167,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 26.490805755116696
+      },
+      "Moon": {
+        "longitude": 122.14176102763174,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 2.1417610276317447
+      },
+      "Mars": {
+        "longitude": 187.13231194924822,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 7.132311949248219
+      },
+      "Mercury": {
+        "longitude": 241.7192119435524,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.7192119435524091
+      },
+      "Jupiter": {
+        "longitude": 303.9308746131951,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 3.930874613195101
+      },
+      "Venus": {
+        "longitude": 206.59786532277624,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 26.597865322776244
+      },
+      "Saturn": {
+        "longitude": 348.2273743608683,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 18.227374360868282
+      },
+      "Rahu": {
+        "longitude": 204.34268730026795,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 24.342687300267954
+      },
+      "Ketu": {
+        "longitude": 24.342687300267926,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 24.342687300267926
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 139.30559928266706,
+    "lagna_degree_in_sign": 19.30559928266706
+  }
+}

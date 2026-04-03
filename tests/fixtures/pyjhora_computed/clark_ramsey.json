@@ -1,0 +1,85 @@
+{
+  "chart_id": "clark_ramsey",
+  "name": "Clark, Ramsey",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2425233.270833,
+    "year": 1927,
+    "month": 12,
+    "day": 18,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "s",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Dallas",
+    "country": "Texas",
+    "lat": 32.783333,
+    "lon": -96.8,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 243.0082948518468,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 3.008294851846813
+      },
+      "Moon": {
+        "longitude": 183.20412199038378,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 3.2041219903837828
+      },
+      "Mars": {
+        "longitude": 224.4825372566364,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.482537256636391
+      },
+      "Mercury": {
+        "longitude": 231.2322396652586,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 21.23223966525859
+      },
+      "Jupiter": {
+        "longitude": 332.18167626325464,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 2.1816762632546443
+      },
+      "Venus": {
+        "longitude": 198.2811345484168,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 18.281134548416787
+      },
+      "Saturn": {
+        "longitude": 229.1517992047192,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 19.151799204719197
+      },
+      "Rahu": {
+        "longitude": 55.86028741943394,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 25.860287419433938
+      },
+      "Ketu": {
+        "longitude": 235.86028741943394,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 25.860287419433945
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 332.7246313893771,
+    "lagna_degree_in_sign": 2.724631389377123
+  }
+}

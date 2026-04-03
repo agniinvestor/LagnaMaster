@@ -1,0 +1,85 @@
+{
+  "chart_id": "cali",
+  "name": "Cali",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2440035.625,
+    "year": 1968,
+    "month": 6,
+    "day": 28,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "Perpignan",
+    "country": "France",
+    "lat": 42.683333,
+    "lon": 2.883333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 73.06086348245633,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 13.060863482456327
+      },
+      "Moon": {
+        "longitude": 97.8775242889747,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 7.877524288974698
+      },
+      "Mars": {
+        "longitude": 71.23027166662766,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 11.230271666627658
+      },
+      "Mercury": {
+        "longitude": 60.01089389282787,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 0.01089389282787323
+      },
+      "Jupiter": {
+        "longitude": 128.4894031434857,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 8.489403143485703
+      },
+      "Venus": {
+        "longitude": 75.18162112690072,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 15.181621126900723
+      },
+      "Saturn": {
+        "longitude": 0.8017196020439517,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 0.8017196020439517
+      },
+      "Rahu": {
+        "longitude": 351.35972275663823,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 21.359722756638234
+      },
+      "Ketu": {
+        "longitude": 171.35972275663823,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 21.359722756638234
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 54.721769799600466,
+    "lagna_degree_in_sign": 24.721769799600466
+  }
+}

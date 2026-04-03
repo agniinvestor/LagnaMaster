@@ -1,0 +1,85 @@
+{
+  "chart_id": "colberg_elisa",
+  "name": "Colberg, Elisa",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2416229.875,
+    "year": 1903,
+    "month": 4,
+    "day": 25,
+    "calendar": "g",
+    "time": "05:00",
+    "time_type": "s",
+    "hour": 5.0,
+    "time_unknown": false,
+    "place": "Cabo Rojo",
+    "country": "Puerto Rico",
+    "lat": 18.083333,
+    "lon": -67.15,
+    "tz_offset": -4.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 11.47878930194976,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 11.47878930194976
+      },
+      "Moon": {
+        "longitude": 343.9671545671634,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 13.96715456716339
+      },
+      "Mars": {
+        "longitude": 156.26415836955653,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 6.264158369556526
+      },
+      "Mercury": {
+        "longitude": 24.922753882454213,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 24.922753882454213
+      },
+      "Jupiter": {
+        "longitude": 321.95115496448375,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 21.95115496448375
+      },
+      "Venus": {
+        "longitude": 45.969133103832576,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 15.969133103832576
+      },
+      "Saturn": {
+        "longitude": 286.3066163676554,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 16.30661636765541
+      },
+      "Rahu": {
+        "longitude": 173.41071275420012,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 23.41071275420012
+      },
+      "Ketu": {
+        "longitude": 353.4107127542001,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 23.41071275420012
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 350.2099487045321,
+    "lagna_degree_in_sign": 20.20994870453211
+  }
+}

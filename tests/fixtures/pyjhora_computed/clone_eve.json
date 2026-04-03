@@ -1,0 +1,85 @@
+{
+  "chart_id": "clone_eve",
+  "name": "Clone, Eve",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2452634.996528,
+    "year": 2002,
+    "month": 12,
+    "day": 26,
+    "calendar": "g",
+    "time": "11:55",
+    "time_type": "s",
+    "hour": 11.916667,
+    "time_unknown": false,
+    "place": "London",
+    "country": "England",
+    "lat": 51.5,
+    "lon": -0.166667,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 250.63838470789406,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 10.638384707894062
+      },
+      "Moon": {
+        "longitude": 153.78266554038294,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 3.7826655403829363
+      },
+      "Mars": {
+        "longitude": 202.13346048428014,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 22.133460484280135
+      },
+      "Mercury": {
+        "longitude": 270.45164547111995,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 0.4516454711199458
+      },
+      "Jupiter": {
+        "longitude": 113.42240479562369,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 23.42240479562369
+      },
+      "Venus": {
+        "longitude": 204.77433810540433,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 24.774338105404325
+      },
+      "Saturn": {
+        "longitude": 60.98316653902672,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 0.983166539026719
+      },
+      "Rahu": {
+        "longitude": 44.51194369575364,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 14.511943695753637
+      },
+      "Ketu": {
+        "longitude": 224.51194369575364,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.511943695753644
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 344.2049118444169,
+    "lagna_degree_in_sign": 14.204911844416927
+  }
+}

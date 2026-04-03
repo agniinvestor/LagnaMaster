@@ -1,0 +1,85 @@
+{
+  "chart_id": "carp_eade",
+  "name": "Carp, E.A.D.E.",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2413349.423935,
+    "year": 1895,
+    "month": 6,
+    "day": 4,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "s",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Den Haag",
+    "country": "Netherlands",
+    "lat": 52.083333,
+    "lon": 4.316667,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 51.59901226856316,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 21.599012268563158
+      },
+      "Moon": {
+        "longitude": 200.51420254719258,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 20.514202547192582
+      },
+      "Mars": {
+        "longitude": 94.0979696153498,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 4.097969615349797
+      },
+      "Mercury": {
+        "longitude": 75.29610480197395,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 15.296104801973954
+      },
+      "Jupiter": {
+        "longitude": 77.70993167014838,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 17.70993167014838
+      },
+      "Venus": {
+        "longitude": 93.65875787136098,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 3.658757871360976
+      },
+      "Saturn": {
+        "longitude": 188.82281462133886,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 8.822814621338864
+      },
+      "Rahu": {
+        "longitude": 325.5501108716726,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 25.550110871672587
+      },
+      "Ketu": {
+        "longitude": 145.5501108716726,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 25.550110871672587
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 270.24967307633295,
+    "lagna_degree_in_sign": 0.24967307633295377
+  }
+}

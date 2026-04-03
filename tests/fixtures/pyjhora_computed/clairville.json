@@ -1,0 +1,85 @@
+{
+  "chart_id": "clairville",
+  "name": "Clairville",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2382540.778194,
+    "year": 1811,
+    "month": 1,
+    "day": 28,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "l",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Lyon",
+    "country": "France",
+    "lat": 45.75,
+    "lon": 4.85,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 286.31211006870205,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 16.312110068702054
+      },
+      "Moon": {
+        "longitude": 335.7941545873527,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 5.794154587352693
+      },
+      "Mars": {
+        "longitude": 201.66862104384052,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 21.668621043840517
+      },
+      "Mercury": {
+        "longitude": 292.4655163964037,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 22.4655163964037
+      },
+      "Jupiter": {
+        "longitude": 30.397843625599062,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 0.3978436255990623
+      },
+      "Venus": {
+        "longitude": 249.8208959666189,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 9.820895966618906
+      },
+      "Saturn": {
+        "longitude": 241.92887253458233,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.9288725345823252
+      },
+      "Rahu": {
+        "longitude": 156.16921599628566,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 6.169215996285658
+      },
+      "Ketu": {
+        "longitude": 336.16921599628563,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 6.1692159962856294
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 278.54236162882387,
+    "lagna_degree_in_sign": 8.542361628823869
+  }
+}

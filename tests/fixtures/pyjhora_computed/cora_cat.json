@@ -1,0 +1,85 @@
+{
+  "chart_id": "cora_cat",
+  "name": "Cora, Cat",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2439584.229167,
+    "year": 1967,
+    "month": 4,
+    "day": 3,
+    "calendar": "g",
+    "time": "11:30",
+    "time_type": "s",
+    "hour": 11.5,
+    "time_unknown": false,
+    "place": "Jackson",
+    "country": "Mississippi",
+    "lat": 32.3,
+    "lon": -90.183333,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 349.8747719068799,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 19.874771906879914
+      },
+      "Moon": {
+        "longitude": 281.6514828835332,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 11.65148288353322
+      },
+      "Mars": {
+        "longitude": 185.5737364661356,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 5.573736466135614
+      },
+      "Mercury": {
+        "longitude": 322.3163957064552,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 22.316395706455182
+      },
+      "Jupiter": {
+        "longitude": 91.31134070643468,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 1.3113407064346774
+      },
+      "Venus": {
+        "longitude": 23.88462036419979,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 23.88462036419979
+      },
+      "Saturn": {
+        "longitude": 340.4263376464581,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 10.42633764645808
+      },
+      "Rahu": {
+        "longitude": 13.790613333753354,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 13.790613333753354
+      },
+      "Ketu": {
+        "longitude": 193.79061333375336,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 13.790613333753356
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 83.87531179916125,
+    "lagna_degree_in_sign": 23.875311799161253
+  }
+}

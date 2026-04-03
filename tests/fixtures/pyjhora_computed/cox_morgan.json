@@ -1,0 +1,85 @@
+{
+  "chart_id": "cox_morgan",
+  "name": "Cox, Morgan",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2446547.208333,
+    "year": 1986,
+    "month": 4,
+    "day": 26,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Memphis",
+    "country": "Tennessee",
+    "lat": 35.15,
+    "lon": -90.05,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 12.504440604824028,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 12.504440604824028
+      },
+      "Moon": {
+        "longitude": 223.048120859107,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 13.048120859107001
+      },
+      "Mars": {
+        "longitude": 259.798976982723,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 19.79897698272299
+      },
+      "Mercury": {
+        "longitude": 348.51483343309394,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 18.51483343309394
+      },
+      "Jupiter": {
+        "longitude": 320.888181764141,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 20.888181764140995
+      },
+      "Venus": {
+        "longitude": 36.23739893089783,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 6.237398930897832
+      },
+      "Saturn": {
+        "longitude": 224.884987442375,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.884987442375007
+      },
+      "Rahu": {
+        "longitude": 6.314350923868047,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 6.314350923868047
+      },
+      "Ketu": {
+        "longitude": 186.31435092386803,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 6.314350923868034
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 98.09608291980115,
+    "lagna_degree_in_sign": 8.096082919801148
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "curl_robert",
+  "name": "Curl, Robert",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2427307.760417,
+    "year": 1933,
+    "month": 8,
+    "day": 23,
+    "calendar": "g",
+    "time": "00:15",
+    "time_type": "s",
+    "hour": 0.25,
+    "time_unknown": false,
+    "place": "Alice",
+    "country": "Texas",
+    "lat": 27.75,
+    "lon": -98.066667,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 126.68596710371439,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 6.68596710371439
+      },
+      "Moon": {
+        "longitude": 150.32853762941184,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 0.3285376294118407
+      },
+      "Mars": {
+        "longitude": 185.11288776174354,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 5.112887761743536
+      },
+      "Mercury": {
+        "longitude": 109.44805701090208,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 19.448057010902076
+      },
+      "Jupiter": {
+        "longitude": 153.3156337111912,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 3.3156337111911967
+      },
+      "Venus": {
+        "longitude": 159.1240842125861,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 9.124084212586098
+      },
+      "Saturn": {
+        "longitude": 288.8361100961529,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 18.83611009615288
+      },
+      "Rahu": {
+        "longitude": 305.6555534253236,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 5.655553425323603
+      },
+      "Ketu": {
+        "longitude": 125.6555534253236,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 5.655553425323603
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 31.543566735863756,
+    "lagna_degree_in_sign": 1.543566735863756
+  }
+}

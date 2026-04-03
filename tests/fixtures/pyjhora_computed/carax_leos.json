@@ -1,0 +1,85 @@
+{
+  "chart_id": "carax_leos",
+  "name": "Carax, Leos",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2437261.295139,
+    "year": 1960,
+    "month": 11,
+    "day": 22,
+    "calendar": "g",
+    "time": "20:05",
+    "time_type": "s",
+    "hour": 20.083333,
+    "time_unknown": false,
+    "place": "Suresnes",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.233333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 217.1929336871203,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 7.192933687120302
+      },
+      "Moon": {
+        "longitude": 269.42796102754835,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 29.42796102754835
+      },
+      "Mars": {
+        "longitude": 85.31444449405846,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 25.314444494058463
+      },
+      "Mercury": {
+        "longitude": 197.55643097203844,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 17.55643097203844
+      },
+      "Jupiter": {
+        "longitude": 252.00723905280785,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 12.007239052807847
+      },
+      "Venus": {
+        "longitude": 255.67024037247745,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 15.670240372477451
+      },
+      "Saturn": {
+        "longitude": 262.0219554285852,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 22.021955428585215
+      },
+      "Rahu": {
+        "longitude": 138.56862116944308,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 18.568621169443077
+      },
+      "Ketu": {
+        "longitude": 318.5686211694431,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 18.568621169443077
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 83.62447107164624,
+    "lagna_degree_in_sign": 23.62447107164624
+  }
+}

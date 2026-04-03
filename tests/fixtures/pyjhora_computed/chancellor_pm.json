@@ -1,0 +1,85 @@
+{
+  "chart_id": "chancellor_pm",
+  "name": "Chancellor, P.M.",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2417917.916667,
+    "year": 1907,
+    "month": 12,
+    "day": 8,
+    "calendar": "g",
+    "time": "04:00",
+    "time_type": "s",
+    "hour": 4.0,
+    "time_unknown": false,
+    "place": "La Salle",
+    "country": "USA",
+    "lat": 41.333333,
+    "lon": -89.1,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 232.60904201612584,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 22.60904201612584
+      },
+      "Moon": {
+        "longitude": 273.8268810473944,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 3.8268810473944086
+      },
+      "Mars": {
+        "longitude": 313.79778129887245,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 13.79778129887245
+      },
+      "Mercury": {
+        "longitude": 213.6859915900312,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 3.6859915900311933
+      },
+      "Jupiter": {
+        "longitude": 110.95369778555592,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 20.953697785555917
+      },
+      "Venus": {
+        "longitude": 253.82156792761361,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 13.821567927613614
+      },
+      "Saturn": {
+        "longitude": 328.2754883633336,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 28.27548836333358
+      },
+      "Rahu": {
+        "longitude": 81.92238124568145,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 21.92238124568145
+      },
+      "Ketu": {
+        "longitude": 261.92238124568144,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 21.922381245681436
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 194.21820662770781,
+    "lagna_degree_in_sign": 14.218206627707815
+  }
+}

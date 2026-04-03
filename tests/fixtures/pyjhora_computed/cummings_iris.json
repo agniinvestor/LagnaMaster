@@ -1,0 +1,85 @@
+{
+  "chart_id": "cummings_iris",
+  "name": "Cummings, Iris",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2422680.753472,
+    "year": 1920,
+    "month": 12,
+    "day": 21,
+    "calendar": "g",
+    "time": "22:05",
+    "time_type": "s",
+    "hour": 22.083333,
+    "time_unknown": false,
+    "place": "Los Angeles",
+    "country": "California",
+    "lat": 34.05,
+    "lon": -118.25,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 247.3686681503572,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 7.368668150357195
+      },
+      "Moon": {
+        "longitude": 22.136388865064582,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 22.136388865064582
+      },
+      "Mars": {
+        "longitude": 296.32941542043545,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 26.329415420435453
+      },
+      "Mercury": {
+        "longitude": 233.20855932541994,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 23.20855932541994
+      },
+      "Jupiter": {
+        "longitude": 145.90383317073196,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 25.903833170731957
+      },
+      "Venus": {
+        "longitude": 288.9237538561548,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 18.923753856154804
+      },
+      "Saturn": {
+        "longitude": 151.88673214348938,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 1.8867321434893825
+      },
+      "Rahu": {
+        "longitude": 192.3568966120107,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 12.3568966120107
+      },
+      "Ketu": {
+        "longitude": 12.3568966120107,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 12.3568966120107
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 134.97635240305098,
+    "lagna_degree_in_sign": 14.976352403050981
+  }
+}

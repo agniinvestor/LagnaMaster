@@ -1,0 +1,85 @@
+{
+  "chart_id": "celestial_cancer_ingress_2006",
+  "name": "Celestial: Cancer Ingress 2006",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2453908.017361,
+    "year": 2006,
+    "month": 6,
+    "day": 21,
+    "calendar": "g",
+    "time": "08:25",
+    "time_type": "d",
+    "hour": 8.416667,
+    "time_unknown": false,
+    "place": "Washington Monument",
+    "country": "District of Columbia",
+    "lat": 38.883333,
+    "lon": -77.033333,
+    "tz_offset": -4.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 66.05760333678259,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 6.057603336782591
+      },
+      "Moon": {
+        "longitude": 14.147468295578712,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 14.147468295578712
+      },
+      "Mars": {
+        "longitude": 106.8115862348358,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 16.8115862348358
+      },
+      "Mercury": {
+        "longitude": 90.97420749584444,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 0.9742074958444391
+      },
+      "Jupiter": {
+        "longitude": 195.35939913745284,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 15.35939913745284
+      },
+      "Venus": {
+        "longitude": 33.09090159101512,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 3.0909015910151183
+      },
+      "Saturn": {
+        "longitude": 105.1746078408142,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 15.174607840814204
+      },
+      "Rahu": {
+        "longitude": 336.13593317326934,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 6.135933173269336
+      },
+      "Ketu": {
+        "longitude": 156.13593317326934,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 6.135933173269336
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 99.10828162139586,
+    "lagna_degree_in_sign": 9.10828162139586
+  }
+}

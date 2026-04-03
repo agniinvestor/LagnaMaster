@@ -1,0 +1,85 @@
+{
+  "chart_id": "celestial_chiron_discovery",
+  "name": "Celestial: Chiron Discovery",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2443449.25,
+    "year": 1977,
+    "month": 11,
+    "day": 1,
+    "calendar": "g",
+    "time": "10:00",
+    "time_type": "s",
+    "hour": 10.0,
+    "time_unknown": false,
+    "place": "Pasadena",
+    "country": "California",
+    "lat": 34.15,
+    "lon": -118.15,
+    "tz_offset": -8.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 195.66182152864104,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 15.661821528641042
+      },
+      "Moon": {
+        "longitude": 78.97459370567012,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 18.974593705670117
+      },
+      "Mars": {
+        "longitude": 98.90218560841876,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 8.902185608418762
+      },
+      "Mercury": {
+        "longitude": 204.2372387765123,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 24.2372387765123
+      },
+      "Jupiter": {
+        "longitude": 72.47747505561556,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 12.477475055615557
+      },
+      "Venus": {
+        "longitude": 175.9541593474799,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 25.9541593474799
+      },
+      "Saturn": {
+        "longitude": 125.58127401112283,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 5.581274011122829
+      },
+      "Rahu": {
+        "longitude": 171.42990680215664,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 21.429906802156637
+      },
+      "Ketu": {
+        "longitude": 351.42990680215667,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 21.429906802156665
+      }
+    },
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree": 242.50814161884745,
+    "lagna_degree_in_sign": 2.5081416188474464
+  }
+}

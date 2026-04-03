@@ -1,0 +1,85 @@
+{
+  "chart_id": "charpy_georges",
+  "name": "Charpy, Georges",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2402481.236667,
+    "year": 1865,
+    "month": 9,
+    "day": 1,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "l",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Oullins",
+    "country": "France",
+    "lat": 45.716667,
+    "lon": 4.8,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 137.2723617963275,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 17.272361796327488
+      },
+      "Moon": {
+        "longitude": 265.95172789232004,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 25.951727892320037
+      },
+      "Mars": {
+        "longitude": 159.51752653974668,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 9.517526539746683
+      },
+      "Mercury": {
+        "longitude": 148.01848401746147,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 28.018484017461475
+      },
+      "Jupiter": {
+        "longitude": 237.62006323476524,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 27.62006323476524
+      },
+      "Venus": {
+        "longitude": 96.54614369974864,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 6.54614369974864
+      },
+      "Saturn": {
+        "longitude": 185.05048987530753,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 5.050489875307534
+      },
+      "Rahu": {
+        "longitude": 179.92676714532183,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 29.926767145321833
+      },
+      "Ketu": {
+        "longitude": 359.92676714532183,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 29.926767145321833
+      }
+    },
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree": 306.7162652114971,
+    "lagna_degree_in_sign": 6.716265211497102
+  }
+}

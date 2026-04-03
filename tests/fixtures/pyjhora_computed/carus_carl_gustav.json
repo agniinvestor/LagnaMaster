@@ -1,0 +1,85 @@
+{
+  "chart_id": "carus_carl_gustav",
+  "name": "Carus, Carl Gustav",
+  "rodden_rating": "B",
+  "birth_data": {
+    "jd_ut": 2374482.090741,
+    "year": 1789,
+    "month": 1,
+    "day": 3,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "l",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Leipzig",
+    "country": "Germany",
+    "lat": 51.316667,
+    "lon": 12.333333,
+    "tz_offset": 0.8911111111111111,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 262.8488353513102,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 22.848835351310186
+      },
+      "Moon": {
+        "longitude": 340.5113609461114,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 10.511360946111381
+      },
+      "Mars": {
+        "longitude": 261.22981532268267,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 21.22981532268267
+      },
+      "Mercury": {
+        "longitude": 250.84404297442782,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 10.844042974427822
+      },
+      "Jupiter": {
+        "longitude": 95.3084272635239,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 5.308427263523896
+      },
+      "Venus": {
+        "longitude": 227.04049364790274,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 17.040493647902736
+      },
+      "Saturn": {
+        "longitude": 316.0229731755755,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 16.022973175575487
+      },
+      "Rahu": {
+        "longitude": 226.2044367802906,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 16.204436780290592
+      },
+      "Ketu": {
+        "longitude": 46.20443678029062,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 16.20443678029062
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 69.45792954451427,
+    "lagna_degree_in_sign": 9.457929544514272
+  }
+}

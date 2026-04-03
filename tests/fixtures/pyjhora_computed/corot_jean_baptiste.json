@@ -1,0 +1,85 @@
+{
+  "chart_id": "corot_jean_baptiste",
+  "name": "Corot, Jean-Baptiste",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2377232.556019,
+    "year": 1796,
+    "month": 7,
+    "day": 16,
+    "calendar": "g",
+    "time": "01:30",
+    "time_type": "l",
+    "hour": 1.5,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 93.09556405932526,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 3.0955640593252554
+      },
+      "Moon": {
+        "longitude": 229.39978415359815,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 19.399784153598148
+      },
+      "Mars": {
+        "longitude": 236.37205318712628,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 26.372053187126284
+      },
+      "Mercury": {
+        "longitude": 79.89718541030251,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 19.897185410302512
+      },
+      "Jupiter": {
+        "longitude": 321.6765032555269,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 21.67650325552688
+      },
+      "Venus": {
+        "longitude": 120.93544067446939,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 0.9354406744693904
+      },
+      "Saturn": {
+        "longitude": 61.106369163431985,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 1.1063691634319852
+      },
+      "Rahu": {
+        "longitude": 79.88595249466404,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 19.88595249466404
+      },
+      "Ketu": {
+        "longitude": 259.885952494664,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 19.885952494664025
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 56.02254520114316,
+    "lagna_degree_in_sign": 26.02254520114316
+  }
+}

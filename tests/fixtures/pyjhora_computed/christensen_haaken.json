@@ -1,0 +1,85 @@
+{
+  "chart_id": "christensen_haaken",
+  "name": "Christensen, Haaken",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2423832.236111,
+    "year": 1924,
+    "month": 2,
+    "day": 16,
+    "calendar": "g",
+    "time": "18:40",
+    "time_type": "s",
+    "hour": 18.666667,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 304.00877942325434,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 4.008779423254339
+      },
+      "Moon": {
+        "longitude": 76.99055115358397,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 16.990551153583965
+      },
+      "Mars": {
+        "longitude": 235.10522135067004,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 25.105221350670035
+      },
+      "Mercury": {
+        "longitude": 280.65217253070796,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 10.652172530707958
+      },
+      "Jupiter": {
+        "longitude": 233.54564600131437,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 23.545646001314367
+      },
+      "Venus": {
+        "longitude": 341.4997023328489,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 11.499702332848926
+      },
+      "Saturn": {
+        "longitude": 189.51249858651488,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 9.51249858651488
+      },
+      "Rahu": {
+        "longitude": 129.3949025410817,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 9.394902541081706
+      },
+      "Ketu": {
+        "longitude": 309.3949025410817,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 9.394902541081706
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 139.2942239394963,
+    "lagna_degree_in_sign": 19.294223939496305
+  }
+}

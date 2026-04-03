@@ -1,0 +1,85 @@
+{
+  "chart_id": "christensen_lew",
+  "name": "Christensen, Lew",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2418433.083333,
+    "year": 1909,
+    "month": 5,
+    "day": 6,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Brigham City",
+    "country": "Utah",
+    "lat": 41.516667,
+    "lon": -112.016667,
+    "tz_offset": -7.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 22.802072833475872,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 22.802072833475872
+      },
+      "Moon": {
+        "longitude": 215.18239724656505,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 5.182397246565046
+      },
+      "Mars": {
+        "longitude": 295.05036873133855,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 25.05036873133855
+      },
+      "Mercury": {
+        "longitude": 38.6757536646095,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 8.675753664609502
+      },
+      "Jupiter": {
+        "longitude": 131.9811299556207,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 11.981129955620702
+      },
+      "Venus": {
+        "longitude": 24.879360622604647,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 24.879360622604647
+      },
+      "Saturn": {
+        "longitude": 354.5399082409189,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 24.53990824091892
+      },
+      "Rahu": {
+        "longitude": 54.2324684987968,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 24.2324684987968
+      },
+      "Ketu": {
+        "longitude": 234.2324684987968,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 24.232468498796806
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 52.07609367271316,
+    "lagna_degree_in_sign": 22.076093672713156
+  }
+}

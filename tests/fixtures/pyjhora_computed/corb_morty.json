@@ -1,0 +1,85 @@
+{
+  "chart_id": "corb_morty",
+  "name": "Corb, Morty",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2421329.0,
+    "year": 1917,
+    "month": 4,
+    "day": 10,
+    "calendar": "g",
+    "time": "06:00",
+    "time_type": "s",
+    "hour": 6.0,
+    "time_unknown": false,
+    "place": "San Antonio",
+    "country": "Texas",
+    "lat": 29.416667,
+    "lon": -98.5,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 357.34047184871014,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 27.340471848710138
+      },
+      "Moon": {
+        "longitude": 212.40208142543227,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 2.4020814254322715
+      },
+      "Mars": {
+        "longitude": 348.7304240294638,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 18.73042402946379
+      },
+      "Mercury": {
+        "longitude": 9.79378635598674,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 9.79378635598674
+      },
+      "Jupiter": {
+        "longitude": 18.730752410201713,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 18.730752410201713
+      },
+      "Venus": {
+        "longitude": 353.21759158647984,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 23.21759158647984
+      },
+      "Saturn": {
+        "longitude": 91.16773751534026,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 1.1677375153402636
+      },
+      "Rahu": {
+        "longitude": 261.7532673214293,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 21.75326732142929
+      },
+      "Ketu": {
+        "longitude": 81.75326732142929,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 21.75326732142929
+      }
+    },
+    "lagna_sign": "Pisces",
+    "lagna_sign_index": 11,
+    "lagna_degree": 351.13311936189336,
+    "lagna_degree_in_sign": 21.133119361893364
+  }
+}

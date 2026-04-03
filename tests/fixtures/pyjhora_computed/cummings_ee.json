@@ -1,0 +1,85 @@
+{
+  "chart_id": "cummings_ee",
+  "name": "Cummings, E.E.",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2413116.5,
+    "year": 1894,
+    "month": 10,
+    "day": 14,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "Cambridge (Middlesex County)",
+    "country": "USA",
+    "lat": 42.366667,
+    "lon": -71.1,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 179.2477239949781,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 29.247723994978088
+      },
+      "Moon": {
+        "longitude": 1.9407989957405427,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 1.9407989957405427
+      },
+      "Mars": {
+        "longitude": 7.093251458803136,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 7.093251458803136
+      },
+      "Mercury": {
+        "longitude": 203.22712602108507,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 23.22712602108507
+      },
+      "Jupiter": {
+        "longitude": 73.79691365921674,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 13.796913659216742
+      },
+      "Venus": {
+        "longitude": 167.54455038983264,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 17.544550389832636
+      },
+      "Saturn": {
+        "longitude": 184.86943093929727,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 4.869430939297274
+      },
+      "Rahu": {
+        "longitude": 338.76822429586827,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 8.768224295868265
+      },
+      "Ketu": {
+        "longitude": 158.76822429586832,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 8.768224295868322
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 42.6277083362195,
+    "lagna_degree_in_sign": 12.627708336219499
+  }
+}

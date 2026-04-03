@@ -1,0 +1,85 @@
+{
+  "chart_id": "cassini_oleg",
+  "name": "Cassini, Oleg",
+  "rodden_rating": "B",
+  "birth_data": {
+    "jd_ut": 2419868.583333,
+    "year": 1913,
+    "month": 4,
+    "day": 11,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 357.9452286583868,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 27.94522865838678
+      },
+      "Moon": {
+        "longitude": 48.45271951578971,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 18.45271951578971
+      },
+      "Mars": {
+        "longitude": 316.5299625944962,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 16.529962594496226
+      },
+      "Mercury": {
+        "longitude": 336.89447962669044,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 6.8944796266904405
+      },
+      "Jupiter": {
+        "longitude": 264.25139044776375,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 24.251390447763754
+      },
+      "Venus": {
+        "longitude": 18.778747988136832,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 18.778747988136832
+      },
+      "Saturn": {
+        "longitude": 38.931928597405026,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 8.931928597405026
+      },
+      "Rahu": {
+        "longitude": 340.37889046179043,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 10.378890461790434
+      },
+      "Ketu": {
+        "longitude": 160.37889046179043,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 10.378890461790434
+      }
+    },
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree": 269.60848221766423,
+    "lagna_degree_in_sign": 29.608482217664232
+  }
+}

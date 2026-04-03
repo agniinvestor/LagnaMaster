@@ -1,0 +1,85 @@
+{
+  "chart_id": "celestial_vesta_discovery",
+  "name": "Celestial: Vesta Discovery",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2381140.312315,
+    "year": 1807,
+    "month": 3,
+    "day": 29,
+    "calendar": "g",
+    "time": "20:05",
+    "time_type": "l",
+    "hour": 20.083333,
+    "time_unknown": false,
+    "place": "Bremen",
+    "country": "Germany",
+    "lat": 53.066667,
+    "lon": 8.816667,
+    "tz_offset": 0.8911111111111111,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 347.01472582364113,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 17.01472582364113
+      },
+      "Moon": {
+        "longitude": 244.11266664956727,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 4.112666649567274
+      },
+      "Mars": {
+        "longitude": 133.53806475333317,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 13.538064753333174
+      },
+      "Mercury": {
+        "longitude": 3.270699227308497,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 3.270699227308497
+      },
+      "Jupiter": {
+        "longitude": 285.2957712044165,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 15.295771204416496
+      },
+      "Venus": {
+        "longitude": 8.863742970322127,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 8.863742970322127
+      },
+      "Saturn": {
+        "longitude": 198.05863511481607,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 18.05863511481607
+      },
+      "Rahu": {
+        "longitude": 230.81545235571906,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 20.81545235571906
+      },
+      "Ketu": {
+        "longitude": 50.81545235571906,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 20.81545235571906
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 181.5489236342034,
+    "lagna_degree_in_sign": 1.5489236342033905
+  }
+}

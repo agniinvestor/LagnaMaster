@@ -1,0 +1,85 @@
+{
+  "chart_id": "cowles_nelson",
+  "name": "Cowles, Nelson",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2426320.208333,
+    "year": 1930,
+    "month": 12,
+    "day": 9,
+    "calendar": "g",
+    "time": "11:00",
+    "time_type": "s",
+    "hour": 11.0,
+    "time_unknown": false,
+    "place": "Hallsville",
+    "country": "Texas",
+    "lat": 32.5,
+    "lon": -94.566667,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 234.02608795341644,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 24.026087953416436
+      },
+      "Moon": {
+        "longitude": 102.5781954404738,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 12.578195440473806
+      },
+      "Mars": {
+        "longitude": 113.42134137308804,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 23.42134137308804
+      },
+      "Mercury": {
+        "longitude": 251.26959871247612,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 11.269598712476125
+      },
+      "Jupiter": {
+        "longitude": 86.00784352474561,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 26.00784352474561
+      },
+      "Venus": {
+        "longitude": 209.4041867148235,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 29.40418671482351
+      },
+      "Saturn": {
+        "longitude": 258.2456060272381,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 18.245606027238125
+      },
+      "Rahu": {
+        "longitude": 359.18931556838095,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 29.189315568380948
+      },
+      "Ketu": {
+        "longitude": 179.18931556838095,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 29.189315568380948
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 291.9944389346019,
+    "lagna_degree_in_sign": 21.994438934601874
+  }
+}

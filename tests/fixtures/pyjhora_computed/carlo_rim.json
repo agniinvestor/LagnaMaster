@@ -1,0 +1,85 @@
+{
+  "chart_id": "carlo_rim",
+  "name": "Carlo-Rim",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2417199.285174,
+    "year": 1905,
+    "month": 12,
+    "day": 19,
+    "calendar": "g",
+    "time": "19:00",
+    "time_type": "s",
+    "hour": 19.0,
+    "time_unknown": false,
+    "place": "N\u00eemes",
+    "country": "France",
+    "lat": 43.833333,
+    "lon": 4.35,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 244.6967997647553,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 4.696799764755298
+      },
+      "Moon": {
+        "longitude": 158.28808539674617,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 8.288085396746169
+      },
+      "Mars": {
+        "longitude": 301.5017992610468,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 1.5017992610468127
+      },
+      "Mercury": {
+        "longitude": 235.83339668977013,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 25.833396689770126
+      },
+      "Jupiter": {
+        "longitude": 35.70056268999536,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 5.700562689995358
+      },
+      "Venus": {
+        "longitude": 231.14872598303407,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 21.14872598303407
+      },
+      "Saturn": {
+        "longitude": 305.6924504398819,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 5.692450439881895
+      },
+      "Rahu": {
+        "longitude": 119.97376781182702,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 29.973767811827017
+      },
+      "Ketu": {
+        "longitude": 299.97376781182703,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 29.97376781182703
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 99.9073886840525,
+    "lagna_degree_in_sign": 9.907388684052506
+  }
+}

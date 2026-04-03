@@ -1,0 +1,85 @@
+{
+  "chart_id": "carlsen_toril",
+  "name": "Carlsen, Toril",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2436321.326389,
+    "year": 1958,
+    "month": 4,
+    "day": 27,
+    "calendar": "g",
+    "time": "20:50",
+    "time_type": "s",
+    "hour": 20.833333,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 13.767346828564314,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 13.767346828564314
+      },
+      "Moon": {
+        "longitude": 115.64781696648316,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 25.647816966483163
+      },
+      "Mars": {
+        "longitude": 307.2604999137412,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 7.260499913741228
+      },
+      "Mercury": {
+        "longitude": 356.9638985963795,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 26.963898596379522
+      },
+      "Jupiter": {
+        "longitude": 182.1756309693841,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 2.1756309693840876
+      },
+      "Venus": {
+        "longitude": 328.4122711233643,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 28.41227112336429
+      },
+      "Saturn": {
+        "longitude": 242.00290868846653,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 2.0029086884665332
+      },
+      "Rahu": {
+        "longitude": 187.9737564775026,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 7.973756477502604
+      },
+      "Ketu": {
+        "longitude": 7.973756477502604,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 7.973756477502604
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 202.092217529302,
+    "lagna_degree_in_sign": 22.09221752930199
+  }
+}

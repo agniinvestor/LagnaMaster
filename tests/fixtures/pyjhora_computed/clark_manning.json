@@ -1,0 +1,85 @@
+{
+  "chart_id": "clark_manning",
+  "name": "Clark, Manning",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2420559.472222,
+    "year": 1915,
+    "month": 3,
+    "day": 3,
+    "calendar": "g",
+    "time": "09:20",
+    "time_type": "s",
+    "hour": 9.333333,
+    "time_unknown": false,
+    "place": "Sydney",
+    "country": "Australia",
+    "lat": -33.866667,
+    "lon": 151.216667,
+    "tz_offset": 10.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 318.6385658807808,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 18.63856588078079
+      },
+      "Moon": {
+        "longitude": 154.39768571864056,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 4.39768571864056
+      },
+      "Mars": {
+        "longitude": 302.1723441486798,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 2.1723441486798265
+      },
+      "Mercury": {
+        "longitude": 301.3786046708457,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 1.3786046708456752
+      },
+      "Jupiter": {
+        "longitude": 313.7994549186652,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 13.79945491866522
+      },
+      "Venus": {
+        "longitude": 273.3213961875804,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 3.321396187580376
+      },
+      "Saturn": {
+        "longitude": 62.713957386321944,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 2.713957386321944
+      },
+      "Rahu": {
+        "longitude": 303.84750798606893,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 3.8475079860689334
+      },
+      "Ketu": {
+        "longitude": 123.84750798606893,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 3.8475079860689334
+      }
+    },
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree": 3.2759124792607004,
+    "lagna_degree_in_sign": 3.2759124792607004
+  }
+}

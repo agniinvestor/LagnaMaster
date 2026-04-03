@@ -1,0 +1,85 @@
+{
+  "chart_id": "curtius_friedrich",
+  "name": "Curtius, Friedrich",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2397310.98375,
+    "year": 1851,
+    "month": 7,
+    "day": 7,
+    "calendar": "g",
+    "time": "12:30",
+    "time_type": "l",
+    "hour": 12.5,
+    "time_unknown": false,
+    "place": "Berlin",
+    "country": "Germany",
+    "lat": 52.483333,
+    "lon": 13.35,
+    "tz_offset": 0.8911111111111111,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 82.92380278060449,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 22.92380278060449
+      },
+      "Moon": {
+        "longitude": 192.5884756241104,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 12.588475624110401
+      },
+      "Mars": {
+        "longitude": 32.26873015015766,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 2.2687301501576584
+      },
+      "Mercury": {
+        "longitude": 73.20487891258577,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 13.20487891258577
+      },
+      "Jupiter": {
+        "longitude": 172.38771023780035,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 22.38771023780035
+      },
+      "Venus": {
+        "longitude": 60.265597866436615,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 0.26559786643661454
+      },
+      "Saturn": {
+        "longitude": 11.16731615651828,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 11.16731615651828
+      },
+      "Rahu": {
+        "longitude": 94.72947570304102,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 4.729475703041018
+      },
+      "Ketu": {
+        "longitude": 274.72947570304103,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 4.729475703041032
+      }
+    },
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree": 173.74999168504328,
+    "lagna_degree_in_sign": 23.749991685043284
+  }
+}

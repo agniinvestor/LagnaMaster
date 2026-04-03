@@ -1,0 +1,85 @@
+{
+  "chart_id": "curie_marie",
+  "name": "Curie, Marie",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2403277.941667,
+    "year": 1867,
+    "month": 11,
+    "day": 7,
+    "calendar": "g",
+    "time": "12:00",
+    "time_type": "l",
+    "hour": 12.0,
+    "time_unknown": false,
+    "place": "Warsaw",
+    "country": "Poland",
+    "lat": 52.25,
+    "lon": 21.0,
+    "tz_offset": 1.4,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 202.571928783756,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 22.571928783755993
+      },
+      "Moon": {
+        "longitude": 324.4703210021738,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 24.47032100217382
+      },
+      "Mars": {
+        "longitude": 217.61697461099826,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 7.6169746109982555
+      },
+      "Mercury": {
+        "longitude": 224.62704570935944,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.627045709359436
+      },
+      "Jupiter": {
+        "longitude": 305.9966258309258,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 5.99662583092578
+      },
+      "Venus": {
+        "longitude": 213.57670723653035,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 3.5767072365303534
+      },
+      "Saturn": {
+        "longitude": 213.27269233410232,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 3.2726923341023166
+      },
+      "Rahu": {
+        "longitude": 140.35295091472278,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 20.352950914722783
+      },
+      "Ketu": {
+        "longitude": 320.3529509147228,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 20.352950914722783
+      }
+    },
+    "lagna_sign": "Sagittarius",
+    "lagna_sign_index": 8,
+    "lagna_degree": 260.02397713166505,
+    "lagna_degree_in_sign": 20.02397713166505
+  }
+}

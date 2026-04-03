@@ -1,0 +1,85 @@
+{
+  "chart_id": "calment_jeanne",
+  "name": "Calment, Jeanne",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2405940.778796,
+    "year": 1875,
+    "month": 2,
+    "day": 21,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "l",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Arles",
+    "country": "France",
+    "lat": 43.666667,
+    "lon": 4.633333,
+    "tz_offset": 0.15583333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 310.1701355336568,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 10.170135533656776
+      },
+      "Moon": {
+        "longitude": 141.40684865208684,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 21.406848652086836
+      },
+      "Mars": {
+        "longitude": 222.73932987893352,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 12.739329878933518
+      },
+      "Mercury": {
+        "longitude": 324.5573933820557,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 24.557393382055693
+      },
+      "Jupiter": {
+        "longitude": 189.49969488855524,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 9.49969488855524
+      },
+      "Venus": {
+        "longitude": 263.4532080574019,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 23.453208057401923
+      },
+      "Saturn": {
+        "longitude": 296.4711968914461,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 26.471196891446084
+      },
+      "Rahu": {
+        "longitude": 356.11008530941393,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 26.110085309413932
+      },
+      "Ketu": {
+        "longitude": 176.110085309414,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 26.11008530941399
+      }
+    },
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree": 316.13683551500566,
+    "lagna_degree_in_sign": 16.136835515005657
+  }
+}

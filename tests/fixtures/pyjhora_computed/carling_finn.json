@@ -1,0 +1,85 @@
+{
+  "chart_id": "carling_finn",
+  "name": "Carling, Finn",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2424425.208333,
+    "year": 1925,
+    "month": 10,
+    "day": 1,
+    "calendar": "g",
+    "time": "18:00",
+    "time_type": "s",
+    "hour": 18.0,
+    "time_unknown": false,
+    "place": "Oslo",
+    "country": "Norway",
+    "lat": 59.916667,
+    "lon": 10.75,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 165.17575104907382,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 15.175751049073824
+      },
+      "Moon": {
+        "longitude": 338.32175890332746,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 8.321758903327463
+      },
+      "Mars": {
+        "longitude": 159.07996307936128,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 9.079963079361278
+      },
+      "Mercury": {
+        "longitude": 160.73810869813187,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 10.738108698131867
+      },
+      "Jupiter": {
+        "longitude": 260.6651961928555,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 20.66519619285549
+      },
+      "Venus": {
+        "longitude": 205.65036183797767,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 25.65036183797767
+      },
+      "Saturn": {
+        "longitude": 199.6873326173416,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 19.68733261734161
+      },
+      "Rahu": {
+        "longitude": 99.7008031842737,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 9.700803184273695
+      },
+      "Ketu": {
+        "longitude": 279.7008031842737,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 9.700803184273695
+      }
+    },
+    "lagna_sign": "Aries",
+    "lagna_sign_index": 0,
+    "lagna_degree": 0.7391038824044891,
+    "lagna_degree_in_sign": 0.7391038824044891
+  }
+}

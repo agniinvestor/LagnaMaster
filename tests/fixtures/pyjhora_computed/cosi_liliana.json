@@ -1,0 +1,85 @@
+{
+  "chart_id": "cosi_liliana",
+  "name": "Cosi, Liliana",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2430221.864583,
+    "year": 1941,
+    "month": 8,
+    "day": 15,
+    "calendar": "g",
+    "time": "10:45",
+    "time_type": "d",
+    "hour": 10.75,
+    "time_unknown": false,
+    "place": "Milan",
+    "country": "Italy",
+    "lat": 45.466667,
+    "lon": 9.2,
+    "tz_offset": 2.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 119.08009320554908,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 29.080093205549076
+      },
+      "Moon": {
+        "longitude": 32.29634123377899,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 2.296341233778989
+      },
+      "Mars": {
+        "longitude": 357.28761226350673,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 27.28761226350673
+      },
+      "Mercury": {
+        "longitude": 115.20916922462007,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 25.20916922462007
+      },
+      "Jupiter": {
+        "longitude": 53.701017704032225,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 23.701017704032225
+      },
+      "Venus": {
+        "longitude": 150.16483915712658,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 0.16483915712657904
+      },
+      "Saturn": {
+        "longitude": 34.89580909854633,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 4.89580909854633
+      },
+      "Rahu": {
+        "longitude": 150.1437610866561,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 0.14376108665609877
+      },
+      "Ketu": {
+        "longitude": 330.1437610866561,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 0.1437610866561272
+      }
+    },
+    "lagna_sign": "Virgo",
+    "lagna_sign_index": 5,
+    "lagna_degree": 167.40621024077168,
+    "lagna_degree_in_sign": 17.406210240771685
+  }
+}

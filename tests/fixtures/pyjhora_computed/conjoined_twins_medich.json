@@ -1,0 +1,85 @@
+{
+  "chart_id": "conjoined_twins_medich",
+  "name": "Conjoined Twins: Medich",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2424658.5625,
+    "year": 1926,
+    "month": 5,
+    "day": 22,
+    "calendar": "g",
+    "time": "19:30",
+    "time_type": "s",
+    "hour": 19.5,
+    "time_unknown": false,
+    "place": "South Bend",
+    "country": "Indiana",
+    "lat": 41.683333,
+    "lon": -86.25,
+    "tz_offset": -6.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 38.35325484400193,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 8.353254844001931
+      },
+      "Moon": {
+        "longitude": 165.05613051951988,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 15.056130519519883
+      },
+      "Mars": {
+        "longitude": 321.06542823623846,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 21.06542823623846
+      },
+      "Mercury": {
+        "longitude": 24.01531651354201,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 24.01531651354201
+      },
+      "Jupiter": {
+        "longitude": 303.41617454182995,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 3.416174541829946
+      },
+      "Venus": {
+        "longitude": 355.0907741266807,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 25.090774126680685
+      },
+      "Saturn": {
+        "longitude": 209.30317916368043,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 29.303179163680426
+      },
+      "Rahu": {
+        "longitude": 84.66962789571984,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 24.66962789571984
+      },
+      "Ketu": {
+        "longitude": 264.6696278957198,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 24.669627895719827
+      }
+    },
+    "lagna_sign": "Scorpio",
+    "lagna_sign_index": 7,
+    "lagna_degree": 224.55452902948616,
+    "lagna_degree_in_sign": 14.554529029486162
+  }
+}

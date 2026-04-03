@@ -1,0 +1,85 @@
+{
+  "chart_id": "courbis_rolland",
+  "name": "Courbis, Rolland",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2434601.75,
+    "year": 1953,
+    "month": 8,
+    "day": 12,
+    "calendar": "g",
+    "time": "07:00",
+    "time_type": "s",
+    "hour": 7.0,
+    "time_unknown": false,
+    "place": "Marseille",
+    "country": "France",
+    "lat": 43.3,
+    "lon": 5.4,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 116.02059374439695,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 26.020593744396947
+      },
+      "Moon": {
+        "longitude": 144.38508312321778,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 24.385083123217782
+      },
+      "Mars": {
+        "longitude": 105.45802061648861,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 15.45802061648861
+      },
+      "Mercury": {
+        "longitude": 97.31321217971205,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 7.313212179712053
+      },
+      "Jupiter": {
+        "longitude": 57.28183448589658,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 27.28183448589658
+      },
+      "Venus": {
+        "longitude": 76.10867422094098,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 16.108674220940983
+      },
+      "Saturn": {
+        "longitude": 179.28222970801457,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 29.28222970801457
+      },
+      "Rahu": {
+        "longitude": 280.02667043415397,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 10.02667043415397
+      },
+      "Ketu": {
+        "longitude": 100.02667043415397,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 10.02667043415397
+      }
+    },
+    "lagna_sign": "Leo",
+    "lagna_sign_index": 4,
+    "lagna_degree": 130.41159255598967,
+    "lagna_degree_in_sign": 10.411592555989671
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "calogero_singer",
+  "name": "Calogero (singer)",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2441162.541667,
+    "year": 1971,
+    "month": 7,
+    "day": 30,
+    "calendar": "g",
+    "time": "02:00",
+    "time_type": "s",
+    "hour": 2.0,
+    "time_unknown": false,
+    "place": "Grenoble",
+    "country": "France",
+    "lat": 45.166667,
+    "lon": 5.716667,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 102.78340566690684,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 12.783405666906845
+      },
+      "Moon": {
+        "longitude": 188.11615176858817,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 8.116151768588168
+      },
+      "Mars": {
+        "longitude": 296.3222755905142,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 26.32227559051421
+      },
+      "Mercury": {
+        "longitude": 129.94444235043412,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 9.944442350434116
+      },
+      "Jupiter": {
+        "longitude": 213.17570058733787,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 3.1757005873378716
+      },
+      "Venus": {
+        "longitude": 94.89567431314013,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 4.895674313140134
+      },
+      "Saturn": {
+        "longitude": 40.83778564857358,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 10.837785648573579
+      },
+      "Rahu": {
+        "longitude": 291.1224094034956,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 21.122409403495624
+      },
+      "Ketu": {
+        "longitude": 111.12240940349562,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 21.122409403495624
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 60.49204407565439,
+    "lagna_degree_in_sign": 0.4920440756543911
+  }
+}

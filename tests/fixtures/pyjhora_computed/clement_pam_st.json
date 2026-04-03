@@ -1,0 +1,85 @@
+{
+  "chart_id": "clement_pam_st",
+  "name": "Clement, Pam St.",
+  "rodden_rating": "B",
+  "birth_data": {
+    "jd_ut": 2430491.25,
+    "year": 1942,
+    "month": 5,
+    "day": 11,
+    "calendar": "g",
+    "time": "20:00",
+    "time_type": "d",
+    "hour": 20.0,
+    "time_unknown": false,
+    "place": "Harrow",
+    "country": "England",
+    "lat": 51.583333,
+    "lon": -0.35,
+    "tz_offset": 2.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 27.35025547389678,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 27.35025547389678
+      },
+      "Moon": {
+        "longitude": 348.15713943417444,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 18.15713943417444
+      },
+      "Mars": {
+        "longitude": 76.4146106100415,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 16.414610610041507
+      },
+      "Mercury": {
+        "longitude": 47.68833752353791,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 17.68833752353791
+      },
+      "Jupiter": {
+        "longitude": 60.43197535580797,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 0.4319753558079711
+      },
+      "Venus": {
+        "longitude": 343.11281373671295,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 13.112813736712951
+      },
+      "Saturn": {
+        "longitude": 37.332221287029945,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 7.332221287029945
+      },
+      "Rahu": {
+        "longitude": 138.02365868939967,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 18.023658689399667
+      },
+      "Ketu": {
+        "longitude": 318.02365868939967,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 18.023658689399667
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 190.99362143376746,
+    "lagna_degree_in_sign": 10.993621433767458
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "cecilia",
+  "name": "Cecilia",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2432836.361111,
+    "year": 1948,
+    "month": 10,
+    "day": 11,
+    "calendar": "g",
+    "time": "21:40",
+    "time_type": "s",
+    "hour": 21.666667,
+    "time_unknown": false,
+    "place": "Madrid",
+    "country": "Spain",
+    "lat": 40.4,
+    "lon": -3.683333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 175.30009206315617,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 25.30009206315617
+      },
+      "Moon": {
+        "longitude": 286.8565058944492,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 16.856505894449185
+      },
+      "Mars": {
+        "longitude": 213.0431849907526,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 3.043184990752593
+      },
+      "Mercury": {
+        "longitude": 191.34722939724315,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 11.347229397243154
+      },
+      "Jupiter": {
+        "longitude": 240.59890111983867,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 0.598901119838672
+      },
+      "Venus": {
+        "longitude": 132.94933041086875,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 12.949330410868754
+      },
+      "Saturn": {
+        "longitude": 129.3823098178241,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 9.382309817824108
+      },
+      "Rahu": {
+        "longitude": 11.931841007466746,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 11.931841007466746
+      },
+      "Ketu": {
+        "longitude": 191.93184100746674,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 11.931841007466744
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 55.645653829937444,
+    "lagna_degree_in_sign": 25.645653829937444
+  }
+}

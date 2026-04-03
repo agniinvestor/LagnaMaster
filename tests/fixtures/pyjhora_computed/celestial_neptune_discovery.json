@@ -1,0 +1,85 @@
+{
+  "chart_id": "celestial_neptune_discovery",
+  "name": "Celestial: Neptune Discovery",
+  "rodden_rating": "B",
+  "birth_data": {
+    "jd_ut": 2395563.462971,
+    "year": 1846,
+    "month": 9,
+    "day": 24,
+    "calendar": "g",
+    "time": "00:00:15",
+    "time_type": "l",
+    "hour": 0.004167,
+    "time_unknown": false,
+    "place": "Berlin Obseratory",
+    "country": "Germany",
+    "lat": 52.503333,
+    "lon": 13.393056,
+    "tz_offset": 0.8911111111111111,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 158.80128248909037,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 8.801282489090369
+      },
+      "Moon": {
+        "longitude": 196.14792039070267,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 16.147920390702666
+      },
+      "Mars": {
+        "longitude": 154.2642161700585,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 4.264216170058489
+      },
+      "Mercury": {
+        "longitude": 147.52610386498043,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 27.526103864980428
+      },
+      "Jupiter": {
+        "longitude": 54.72263533504581,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 24.72263533504581
+      },
+      "Venus": {
+        "longitude": 138.04485300541936,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 18.044853005419355
+      },
+      "Saturn": {
+        "longitude": 303.41001855845326,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 3.4100185584532596
+      },
+      "Rahu": {
+        "longitude": 186.4593389354503,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 6.45933893545029
+      },
+      "Ketu": {
+        "longitude": 6.459338935450319,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 6.459338935450319
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 97.50117306735658,
+    "lagna_degree_in_sign": 7.501173067356575
+  }
+}

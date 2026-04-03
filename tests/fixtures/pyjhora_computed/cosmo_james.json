@@ -1,0 +1,85 @@
+{
+  "chart_id": "cosmo_james",
+  "name": "Cosmo, James",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2432486.375,
+    "year": 1947,
+    "month": 10,
+    "day": 27,
+    "calendar": "g",
+    "time": "22:00",
+    "time_type": "d",
+    "hour": 22.0,
+    "time_unknown": false,
+    "place": "Dumbarton",
+    "country": "Scotland",
+    "lat": 55.95,
+    "lon": -4.583333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 190.4778214764396,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 10.477821476439601
+      },
+      "Moon": {
+        "longitude": 346.28590158542426,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 16.285901585424256
+      },
+      "Mars": {
+        "longitude": 111.55104679319432,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 21.551046793194317
+      },
+      "Mercury": {
+        "longitude": 207.99891250102826,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 27.998912501028258
+      },
+      "Jupiter": {
+        "longitude": 217.66557814458054,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 7.665578144580536
+      },
+      "Venus": {
+        "longitude": 204.72681740139896,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 24.72681740139896
+      },
+      "Saturn": {
+        "longitude": 118.27528675602534,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 28.275286756025338
+      },
+      "Rahu": {
+        "longitude": 30.379135319527634,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 0.37913531952763435
+      },
+      "Ketu": {
+        "longitude": 210.37913531952762,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 0.37913531952762014
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 87.4364861635921,
+    "lagna_degree_in_sign": 27.436486163592093
+  }
+}

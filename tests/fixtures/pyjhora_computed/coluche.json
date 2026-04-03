@@ -1,0 +1,85 @@
+{
+  "chart_id": "coluche",
+  "name": "Coluche",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2431392.222222,
+    "year": 1944,
+    "month": 10,
+    "day": 28,
+    "calendar": "g",
+    "time": "18:20",
+    "time_type": "d",
+    "hour": 18.333333,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 192.09502640375575,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 12.095026403755753
+      },
+      "Moon": {
+        "longitude": 332.2151084817765,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 2.2151084817764968
+      },
+      "Mars": {
+        "longitude": 197.3276715906989,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 17.327671590698912
+      },
+      "Mercury": {
+        "longitude": 197.103052965886,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 17.103052965886008
+      },
+      "Jupiter": {
+        "longitude": 146.6384116656615,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 26.638411665661494
+      },
+      "Venus": {
+        "longitude": 224.27793655469094,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.277936554690939
+      },
+      "Saturn": {
+        "longitude": 77.67777416267472,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 17.677774162674723
+      },
+      "Rahu": {
+        "longitude": 88.77934984153353,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 28.77934984153353
+      },
+      "Ketu": {
+        "longitude": 268.77934984153353,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 28.77934984153353
+      }
+    },
+    "lagna_sign": "Taurus",
+    "lagna_sign_index": 1,
+    "lagna_degree": 31.712130051944737,
+    "lagna_degree_in_sign": 1.7121300519447367
+  }
+}

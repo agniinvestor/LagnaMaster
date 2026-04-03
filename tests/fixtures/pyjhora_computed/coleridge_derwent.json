@@ -1,0 +1,85 @@
+{
+  "chart_id": "coleridge_derwent",
+  "name": "Coleridge, Derwent",
+  "rodden_rating": "B",
+  "birth_data": {
+    "jd_ut": 2378753.446204,
+    "year": 1800,
+    "month": 9,
+    "day": 14,
+    "calendar": "g",
+    "time": "22:30",
+    "time_type": "l",
+    "hour": 22.5,
+    "time_unknown": false,
+    "place": "Keswick",
+    "country": "England",
+    "lat": 54.616667,
+    "lon": -3.133333,
+    "tz_offset": -0.020833333333333332,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 150.74120555003915,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 0.7412055500391546
+      },
+      "Moon": {
+        "longitude": 102.2835234450668,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 12.283523445066805
+      },
+      "Mars": {
+        "longitude": 31.6586418158359,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 1.6586418158358995
+      },
+      "Mercury": {
+        "longitude": 134.07012194761296,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 14.07012194761296
+      },
+      "Jupiter": {
+        "longitude": 96.92547646833945,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 6.925476468339454
+      },
+      "Venus": {
+        "longitude": 161.80306935503845,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 11.803069355038446
+      },
+      "Saturn": {
+        "longitude": 117.61351733069675,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 27.61351733069675
+      },
+      "Rahu": {
+        "longitude": 357.6630878637993,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 27.66308786379932
+      },
+      "Ketu": {
+        "longitude": 177.66308786379932,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 27.66308786379932
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 74.23717349378188,
+    "lagna_degree_in_sign": 14.237173493781881
+  }
+}

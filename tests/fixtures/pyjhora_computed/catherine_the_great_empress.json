@@ -1,0 +1,85 @@
+{
+  "chart_id": "catherine_the_great_empress",
+  "name": "Catherine the Great, Empress",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2352685.563796,
+    "year": 1729,
+    "month": 5,
+    "day": 2,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "l",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Stettin",
+    "country": "Germany",
+    "lat": 53.416667,
+    "lon": 14.533333,
+    "tz_offset": 1.4,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 21.452611212477404,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 21.452611212477404
+      },
+      "Moon": {
+        "longitude": 62.83993602632906,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 2.839936026329063
+      },
+      "Mars": {
+        "longitude": 17.83399704276579,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 17.83399704276579
+      },
+      "Mercury": {
+        "longitude": 357.4039282463036,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 27.40392824630362
+      },
+      "Jupiter": {
+        "longitude": 73.19417808029988,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 13.194178080299878
+      },
+      "Venus": {
+        "longitude": 63.79063472270532,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 3.7906347227053203
+      },
+      "Saturn": {
+        "longitude": 317.0623810791833,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 17.062381079183297
+      },
+      "Rahu": {
+        "longitude": 299.9464436818573,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 29.946443681857318
+      },
+      "Ketu": {
+        "longitude": 119.94644368185732,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 29.946443681857318
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 295.2345128503729,
+    "lagna_degree_in_sign": 25.23451285037288
+  }
+}

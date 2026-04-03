@@ -1,0 +1,85 @@
+{
+  "chart_id": "clift_montgomery",
+  "name": "Clift, Montgomery",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2422614.854167,
+    "year": 1920,
+    "month": 10,
+    "day": 17,
+    "calendar": "g",
+    "time": "02:30",
+    "time_type": "s",
+    "hour": 2.5,
+    "time_unknown": false,
+    "place": "Omaha",
+    "country": "Nebraska",
+    "lat": 41.266667,
+    "lon": -95.933333,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 180.88140466553062,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 0.8814046655306242
+      },
+      "Moon": {
+        "longitude": 241.40578409004289,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 1.4057840900428857
+      },
+      "Mars": {
+        "longitude": 246.3496688486073,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 6.349668848607308
+      },
+      "Mercury": {
+        "longitude": 203.63942233114525,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 23.639422331145255
+      },
+      "Jupiter": {
+        "longitude": 137.79376333749693,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 17.793763337496927
+      },
+      "Venus": {
+        "longitude": 208.77743908658834,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 28.777439086588345
+      },
+      "Saturn": {
+        "longitude": 147.02216217075116,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 27.02216217075116
+      },
+      "Rahu": {
+        "longitude": 193.8227829739918,
+        "sign": "Libra",
+        "sign_index": 6,
+        "degree_in_sign": 13.822782973991792
+      },
+      "Ketu": {
+        "longitude": 13.82278297399182,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 13.82278297399182
+      }
+    },
+    "lagna_sign": "Cancer",
+    "lagna_sign_index": 3,
+    "lagna_degree": 119.6424063763217,
+    "lagna_degree_in_sign": 29.642406376321702
+  }
+}

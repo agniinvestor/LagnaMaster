@@ -1,0 +1,85 @@
+{
+  "chart_id": "cosmi_brigitte",
+  "name": "Cosmi, Brigitte",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2435651.083333,
+    "year": 1956,
+    "month": 6,
+    "day": 26,
+    "calendar": "g",
+    "time": "15:00",
+    "time_type": "s",
+    "hour": 15.0,
+    "time_unknown": false,
+    "place": "Paris",
+    "country": "France",
+    "lat": 48.866667,
+    "lon": 2.333333,
+    "tz_offset": 1.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 71.66236490231827,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 11.662364902318274
+      },
+      "Moon": {
+        "longitude": 287.89595084960615,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 17.89595084960615
+      },
+      "Mars": {
+        "longitude": 318.6471936341424,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 18.64719363414241
+      },
+      "Mercury": {
+        "longitude": 50.25867705292661,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 20.258677052926608
+      },
+      "Jupiter": {
+        "longitude": 124.79399547553027,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 4.7939954755302665
+      },
+      "Venus": {
+        "longitude": 64.86503306126562,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 4.8650330612656205
+      },
+      "Saturn": {
+        "longitude": 213.81155146761975,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 3.8115514676197506
+      },
+      "Rahu": {
+        "longitude": 224.64982681491813,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 14.649826814918129
+      },
+      "Ketu": {
+        "longitude": 44.64982681491813,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 14.649826814918129
+      }
+    },
+    "lagna_sign": "Libra",
+    "lagna_sign_index": 6,
+    "lagna_degree": 183.6081636395014,
+    "lagna_degree_in_sign": 3.608163639501413
+  }
+}

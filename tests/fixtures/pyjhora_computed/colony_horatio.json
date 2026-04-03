@@ -1,0 +1,85 @@
+{
+  "chart_id": "colony_horatio",
+  "name": "Colony, Horatio",
+  "rodden_rating": "B",
+  "birth_data": {
+    "jd_ut": 2415285.427083,
+    "year": 1900,
+    "month": 9,
+    "day": 22,
+    "calendar": "g",
+    "time": "17:15",
+    "time_type": "s",
+    "hour": 17.25,
+    "time_unknown": false,
+    "place": "Keene",
+    "country": "New Hampshire",
+    "lat": 42.933333,
+    "lon": -72.283333,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 156.95560634962766,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 6.955606349627658
+      },
+      "Moon": {
+        "longitude": 147.10594061285767,
+        "sign": "Leo",
+        "sign_index": 4,
+        "degree_in_sign": 27.105940612857665
+      },
+      "Mars": {
+        "longitude": 95.25310663294668,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 5.2531066329466825
+      },
+      "Mercury": {
+        "longitude": 164.4325457195395,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 14.43254571953949
+      },
+      "Jupiter": {
+        "longitude": 222.94157363009552,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 12.941573630095519
+      },
+      "Venus": {
+        "longitude": 111.02198883054126,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 21.02198883054126
+      },
+      "Saturn": {
+        "longitude": 246.2925538194518,
+        "sign": "Sagittarius",
+        "sign_index": 8,
+        "degree_in_sign": 6.292553819451797
+      },
+      "Rahu": {
+        "longitude": 221.55576230574704,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 11.555762305747038
+      },
+      "Ketu": {
+        "longitude": 41.555762305747066,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 11.555762305747066
+      }
+    },
+    "lagna_sign": "Aquarius",
+    "lagna_sign_index": 10,
+    "lagna_degree": 324.4188769065117,
+    "lagna_degree_in_sign": 24.418876906511684
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chart_id": "chesnais_charles",
+  "name": "Chesnais, Charles",
+  "rodden_rating": "AA",
+  "birth_data": {
+    "jd_ut": 2420627.541667,
+    "year": 1915,
+    "month": 5,
+    "day": 10,
+    "calendar": "g",
+    "time": "01:00",
+    "time_type": "s",
+    "hour": 1.0,
+    "time_unknown": false,
+    "place": "Sainte-Marie",
+    "country": "France",
+    "lat": 47.694722,
+    "lon": -1.999444,
+    "tz_offset": 0.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 25.631228159166437,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 25.631228159166437
+      },
+      "Moon": {
+        "longitude": 340.30199860600834,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 10.30199860600834
+      },
+      "Mars": {
+        "longitude": 355.1712950300776,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 25.1712950300776
+      },
+      "Mercury": {
+        "longitude": 35.3721248532192,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 5.372124853219198
+      },
+      "Jupiter": {
+        "longitude": 328.74549739639485,
+        "sign": "Aquarius",
+        "sign_index": 10,
+        "degree_in_sign": 28.745497396394853
+      },
+      "Venus": {
+        "longitude": 352.84887628451503,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 22.84887628451503
+      },
+      "Saturn": {
+        "longitude": 67.12650991861877,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 7.1265099186187655
+      },
+      "Rahu": {
+        "longitude": 299.9693418602707,
+        "sign": "Capricorn",
+        "sign_index": 9,
+        "degree_in_sign": 29.969341860270674
+      },
+      "Ketu": {
+        "longitude": 119.96934186027067,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 29.969341860270674
+      }
+    },
+    "lagna_sign": "Capricorn",
+    "lagna_sign_index": 9,
+    "lagna_degree": 282.51107066962123,
+    "lagna_degree_in_sign": 12.511070669621233
+  }
+}

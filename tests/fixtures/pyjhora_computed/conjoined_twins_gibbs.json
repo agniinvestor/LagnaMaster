@@ -1,0 +1,85 @@
+{
+  "chart_id": "conjoined_twins_gibbs",
+  "name": "Conjoined Twins: Gibbs",
+  "rodden_rating": "A",
+  "birth_data": {
+    "jd_ut": 2419542.979167,
+    "year": 1912,
+    "month": 5,
+    "day": 20,
+    "calendar": "g",
+    "time": "06:30",
+    "time_type": "s",
+    "hour": 6.5,
+    "time_unknown": false,
+    "place": "Holyoke",
+    "country": "USA",
+    "lat": 42.2,
+    "lon": -72.616667,
+    "tz_offset": -5.0,
+    "ayanamsha": "lahiri"
+  },
+  "birth_place": "",
+  "pyjhora": {
+    "planets": {
+      "Sun": {
+        "longitude": 36.434122546809704,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 6.434122546809704
+      },
+      "Moon": {
+        "longitude": 84.73528502268996,
+        "sign": "Gemini",
+        "sign_index": 2,
+        "degree_in_sign": 24.735285022689965
+      },
+      "Mars": {
+        "longitude": 92.76535929457798,
+        "sign": "Cancer",
+        "sign_index": 3,
+        "degree_in_sign": 2.7653592945779764
+      },
+      "Mercury": {
+        "longitude": 11.8324088698482,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 11.8324088698482
+      },
+      "Jupiter": {
+        "longitude": 229.39175427882188,
+        "sign": "Scorpio",
+        "sign_index": 7,
+        "degree_in_sign": 19.391754278821878
+      },
+      "Venus": {
+        "longitude": 23.805539797264196,
+        "sign": "Aries",
+        "sign_index": 0,
+        "degree_in_sign": 23.805539797264196
+      },
+      "Saturn": {
+        "longitude": 31.642735230325503,
+        "sign": "Taurus",
+        "sign_index": 1,
+        "degree_in_sign": 1.6427352303255027
+      },
+      "Rahu": {
+        "longitude": 358.2995966313863,
+        "sign": "Pisces",
+        "sign_index": 11,
+        "degree_in_sign": 28.299596631386294
+      },
+      "Ketu": {
+        "longitude": 178.2995966313863,
+        "sign": "Virgo",
+        "sign_index": 5,
+        "degree_in_sign": 28.299596631386294
+      }
+    },
+    "lagna_sign": "Gemini",
+    "lagna_sign_index": 2,
+    "lagna_degree": 68.10014838143007,
+    "lagna_degree_in_sign": 8.100148381430074
+  }
+}
