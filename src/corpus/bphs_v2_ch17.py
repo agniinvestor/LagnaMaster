@@ -68,7 +68,7 @@ b.add(
     concordance_texts=[],
     cross_chapter_refs=["Ch.32 Planetary Karakatvas"],
     prediction_type="trait",
-    modifiers=[{"condition": "6th_and_8th_lords_join_karaka_in_relevant_bhava", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "6th_and_8th_lords_join_karaka_in_relevant_bhava", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
 )
 
 # ═══ v.6: Facial diseases ════════════════════════════════════════════════════
@@ -269,7 +269,7 @@ b.add(
         "requires upagraha multi-house support (not yet available). "
         "Gulika/Mandi are synonymous."
     ),
-    modifiers=[{"condition": "mandi_in_kendra_1_4_7_10", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "mandi_in_kendra_1_4_7_10", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
     description=(
         "If Rahu is in the 6th, ascendant lord is in the 8th and Mandi "
         "is in an angle, consumption will trouble the native at the age "

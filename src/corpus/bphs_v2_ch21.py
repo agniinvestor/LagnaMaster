@@ -115,7 +115,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": [1, 4, 5, 7,
       commentary_context="Santhanam: 10th lord in Pisces + Jupiter = obtain robes, ornaments, happiness. If 11th lord in 10th + 10th lord + Jupiter = happy life.",
       description="10th lord exalted in kendra + Jupiter as 9th lord in 10th: honour, wealth, valour, robes, ornaments.",
       concordance_texts=["Saravali"],
-      modifiers=[{"condition": "11th_lord_also_in_10th_with_10th_lord_and_jupiter", "effect": "amplifies", "strength": "strong"}])
+      modifiers=[{"condition": "11th_lord_also_in_10th_with_10th_lord_and_jupiter", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}])
 
 # ═══ v.11: 4 malefics in 11th → cessation of duties ═════════════════════════
 b.add(conditions=[
@@ -145,8 +145,8 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 12}]
       verse_ref="Ch.21 v.12",
       commentary_context="Santhanam: 'Gnan' = sacred knowledge from meditation/philosophy. Gnana yoga taught by Jupiter+Venus in Pisces. The ascendant lord + exalted Moon renders mind fertile for self-knowledge. Material wealth comes as by-product of spiritual attainment.",
       description="Jupiter in Pisces + Venus + strong ascendant lord + Moon exalted: Gnana Yoga — learned, wealthy.",
-      modifiers=[{"condition": "jupiter_in_pisces", "effect": "conditionalizes", "strength": "strong"},
-                 {"condition": "venus_conjunct_asc_lord_strong_moon_exalted", "effect": "amplifies", "strength": "strong"}])
+      modifiers=[{"condition": "jupiter_in_pisces", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"},
+                 {"condition": "venus_conjunct_asc_lord_strong_moon_exalted", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}])
 
 # ═══ v.13: Precious stones ═══════════════════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": 11},
@@ -177,7 +177,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": 1}],
       verse_ref="Ch.21 v.15",
       commentary_context="No separate note. 10th lord in ascendant + ascendant lord + Moon in kendra/trikona = emotional investment in virtuous actions.",
       description="10th lord in ascendant + ascendant lord + Moon in angle/trine: interested in good deeds.",
-      modifiers=[{"condition": "ascendant_lord_with_moon_in_kendra_trikona", "effect": "amplifies", "strength": "moderate"}])
+      modifiers=[{"condition": "ascendant_lord_with_moon_in_kendra_trikona", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # ═══ v.16: Bereft of virtuous acts ═══════════════════════════════════════════
 b.add(conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 10}],
@@ -187,8 +187,8 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 10}],
       verse_ref="Ch.21 v.16",
       commentary_context="No separate note. Saturn + debilitated planet + Navamsa malefic = triple block on dharmic professional conduct.",
       description="Saturn in 10th + debilitated planet + Navamsa ascendant with malefic: bereft of virtuous acts.",
-      modifiers=[{"condition": "conjunct_debilitated_planet", "effect": "negates", "strength": "moderate"},
-                 {"condition": "navamsa_ascendant_with_malefic", "effect": "amplifies", "strength": "moderate"}])
+      modifiers=[{"condition": "conjunct_debilitated_planet", "effect": "negates", "target": "prediction", "strength": "medium", "scope": "local"},
+                 {"condition": "navamsa_ascendant_with_malefic", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # ═══ v.17: Bad acts — 8th-10th exchange ══════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": 8},
@@ -208,7 +208,7 @@ b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_10", "dignity": 
       verse_ref="Ch.21 v.18",
       commentary_context="No separate note. 10th lord in fall + malefics in 10th from both ascendant and 10th = career blocked from multiple directions.",
       description="10th lord in fall + both 10th from ascendant and 10th from 10th have malefics: obstructions.",
-      modifiers=[{"condition": "h10_from_both_asc_and_10th_with_malefics", "effect": "amplifies", "strength": "moderate"}])
+      modifiers=[{"condition": "h10_from_both_asc_and_10th_with_malefics", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # ═══ v.19: Fame — Moon in 10th ═══════════════════════════════════════════════
 b.add(conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 10},
@@ -230,7 +230,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 10}],
       verse_ref="Ch.21 v.20",
       commentary_context="Santhanam: Second fame yoga. 11th lord in 10th + 10th lord strong + Jupiter aspect = recognition through professional achievement.",
       description="11th lord in 10th + 10th lord strong + aspected by Jupiter: fame.",
-      modifiers=[{"condition": "h10_lord_strong_aspected_by_jupiter", "effect": "amplifies", "strength": "strong"}])
+      modifiers=[{"condition": "h10_lord_strong_aspected_by_jupiter", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}])
 
 # ═══ v.21: Fame — 10th lord in 9th ═══════════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": 9},

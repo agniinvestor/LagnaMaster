@@ -202,8 +202,7 @@ b.add(
     ),
     tags=["h2_lord", "h11_lord", "exchange", "parivartana", "wealth"],
     modifiers=[
-        {"condition": "lords_2_11_join_in_kendra_trikona_instead_of_exchange",
-         "effect": "conditionalizes", "strength": "moderate"},
+        {"condition": "lords_2_11_join_in_kendra_trikona_instead_of_exchange", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
     ],
 )
 
@@ -263,8 +262,7 @@ b.add(
         "the combinations are for gaining wealth."
     ),
     modifiers=[
-        {"condition": "venus_also_aspects_or_conjuncts_lord_of_2",
-         "effect": "amplifies", "strength": "moderate"},
+        {"condition": "venus_also_aspects_or_conjuncts_lord_of_2", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1306"]},
     tags=["h2_lord", "jupiter", "venus", "wealth"],
@@ -614,8 +612,8 @@ b.add(
         "pass."
     ),
     modifiers=[
-        {"condition": "saturn_or_mercury_associated", "effect": "conditionalizes", "strength": "moderate"},
-        {"condition": "jupiter_afflicted_in_connection", "effect": "conditionalizes", "strength": "moderate"},
+        {"condition": "saturn_or_mercury_associated", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
+        {"condition": "jupiter_afflicted_in_connection", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
     ],
     tags=["malefic", "h2", "untruth", "windy_disease", "gastric"],
     prediction_type="trait",
@@ -714,6 +712,6 @@ b.add(
     verse_ref="Ch.13 v.13",
     commentary_context="Santhanam: If Jupiter is in affliction so related, gastric troubles will come to pass.",
     description="Jupiter in 2nd in affliction: gastric troubles.",
-    modifiers=[{"condition": "jupiter_afflicted", "effect": "conditionalizes", "strength": "moderate"}])
+    modifiers=[{"condition": "jupiter_afflicted", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}])
 
 BPHS_V2_CH13_REGISTRY = b.build()

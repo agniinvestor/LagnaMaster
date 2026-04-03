@@ -185,7 +185,7 @@ b.add(
     description="9th lord in 10th: be a king or equal to him, or be a minister or an army chief, be virtuous and dear to all.",
     commentary_context="Santhanam: The sage suggests that with the 9th lord going to the 10th the native will be either a king or a minister or an army chief. Apparently, if the 9th lord is prepotent, one will enjoy royal status. The strength proportionately falling down will make the native enjoy comparatively lesser positions.",
     concordance_texts=["Saravali", "Phaladeepika"],
-    modifiers=[{"condition": "strength_proportionate_prepotent_royal_decreasing_lesser_positions", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "strength_proportionate_prepotent_royal_decreasing_lesser_positions", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 107: 9th lord in 11th ───────────────────────────────────────────
@@ -318,7 +318,7 @@ b.add(
     verse_ref="Ch.24 v.114",
     description="10th lord in 6th: bereft of paternal bliss, skilful but bereft of wealth, troubled by enemies.",
     commentary_context="Santhanam: The 10th lord going to the 6th house is a dire blemish for professional and monetary stability. One will undergo frequent changes in his calling and will suffer losses therein. His financial growth will be severely paralyzed. He will have a number of enemies contributing to his decline. He will incur lasting diseases. An advantage, however, will come to him in the form of extreme intelligence.",
-    modifiers=[{"condition": "advantage_of_extreme_intelligence_despite_career_and_financial_paralysis", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "advantage_of_extreme_intelligence_despite_career_and_financial_paralysis", "effect": "qualifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 115: 10th lord in 7th ───────────────────────────────────────────
@@ -799,7 +799,7 @@ b.add(
     verse_ref="Ch.24 v.143",
     description="12th lord in 11th: incur losses, be brought up by others, will sometimes gain through others.",
     commentary_context="Santhanam: One will face obstacles in begetting a child if the 12th lord occupies the 11th house. He will at last adopt a child.",
-    modifiers=[{"condition": "obstacles_begetting_child_will_at_last_adopt", "effect": "amplifies", "strength": "moderate"}],
+    modifiers=[{"condition": "obstacles_begetting_child_will_at_last_adopt", "effect": "qualifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 144: 12th lord in 12th ──────────────────────────────────────────
@@ -838,7 +838,7 @@ b.add(
     description="Miscellaneous: a planet owning two bhavas — results deduced considering both lordships. If opposing results, they are nullified.",
     commentary_context="Santhanam: In the case of a planet owning two bhavas, the results are to be deducted based on its two lordships (for the same placement). If opposing results are thus indicated, the results will be nullified, while results of varied nature will come to pass.",
     prediction_type="trait",
-    modifiers=[{"condition": "opposing_results_from_dual_lordship_nullify_each_other", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "opposing_results_from_dual_lordship_nullify_each_other", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
 )
 
 b.add(

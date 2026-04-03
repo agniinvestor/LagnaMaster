@@ -104,7 +104,7 @@ b.add(
     ),
     description="7th lord in a sign of Saturn or Venus, aspected by a benefic: there will be many wives. 7th lord in exaltation → same effect.",
     concordance_texts=[],
-    modifiers=[{"condition": "aspected_by_benefic", "effect": "amplifies", "strength": "moderate"}],
+    modifiers=[{"condition": "aspected_by_benefic", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ═══ v.14-15: Worthy spouse ══════════════════════════════════════════════════
@@ -131,7 +131,7 @@ b.add(
     ),
     description="7th lord exalted + ascendant lord strong in 7th with benefic: spouse endowed with seven principal virtues, expanding dynasty by sons and grandsons.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "benefic_also_in_7th", "effect": "amplifies", "strength": "moderate"}],
+    modifiers=[{"condition": "benefic_also_in_7th", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ═══ v.17: Loss of spouse (early death) ══════════════════════════════════════
@@ -147,7 +147,7 @@ b.add(
     commentary_context="Santhanam: If the 7th lord is in fall, the native's wife will be destroyed (i.e. she will die early). The placement in 6th/8th/12th compounds this.",
     description="7th lord devoid of strength in 6th/8th/12th or if 7th lord is in fall: the native's wife will be destroyed (i.e. she will die early).",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "7th_lord_in_fall_compounds_dusthana_placement", "effect": "amplifies", "strength": "strong"}],
+    modifiers=[{"condition": "7th_lord_in_fall_compounds_dusthana_placement", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ═══ v.22-34: TIMING OF MARRIAGE — each age as its own rule ══════════════════
@@ -354,7 +354,7 @@ b.add(conditions=[
           "(v.10-13). Moon decreasing is additional qualifier."
       ),
       description="Malefics in 12th + Moon in 5th: spouse controlled by others, inimical to family.",
-      modifiers=[{"condition": "moon_decreasing_strengthens", "effect": "amplifies", "strength": "moderate"}])
+      modifiers=[{"condition": "moon_decreasing_strengthens", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # ═══ v.16: Evils to spouse ════════════════════════════════════════════════════
 b.add(conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 7}],
@@ -365,7 +365,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 
       verse_ref="Ch.18 v.16",
       commentary_context="Santhanam: 7th house or its lord conjunct malefic + bereft of strength = wife incur evils. Especially if the 7th house/lord is not strong.",
       description="7th house or its lord conjunct malefic, bereft of strength: wife will incur evils.",
-      modifiers=[{"condition": "7th_house_or_lord_not_strong_intensifies_evils", "effect": "amplifies", "strength": "strong"}])
+      modifiers=[{"condition": "7th_house_or_lord_not_strong_intensifies_evils", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}])
 
 # ═══ v.18: Lack of conjugal felicity ═════════════════════════════════════════
 b.add(conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 7},
@@ -377,7 +377,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 7},
       verse_ref="Ch.18 v.18",
       commentary_context="Santhanam: Moon in 7th + 7th lord in 12th + Venus (Karaka) bereft of strength = no marital happiness. Moon increasing would stall adversity.",
       description="Moon in 7th + 7th lord in 12th + Venus weak: not endowed with marital happiness.",
-      modifiers=[{"condition": "venus_bereft_of_strength", "effect": "amplifies", "strength": "moderate"}])
+      modifiers=[{"condition": "venus_bereft_of_strength", "effect": "attenuates", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # ═══ v.19-21: Plurality of wives ══════════════════════════════════════════════
 b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_7", "dignity": "debilitated"}],
@@ -456,7 +456,7 @@ b.add(
         "as alternative trigger."
     ),
     description="Venus in Mars Rasi/Navamsa or conjunct Mars: unusual sexual habits.",
-    modifiers=[{"condition": "venus_in_mars_navamsa_or_conjunct_mars_also_triggers", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "venus_in_mars_navamsa_or_conjunct_mars_also_triggers", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
     prediction_type="trait")
 
 # v.10-13 gap: Venus related to Saturn → ugly relations with male
@@ -471,7 +471,7 @@ b.add(
     commentary_context="Text: 'If Venus is so related to Saturn, the native will have ugly relations with another male.' Venus-Saturn variant produces entirely different prediction direction from Venus-Mars.",
     description="Venus related to Saturn (instead of Mars): ugly relations with another male.",
     prediction_type="trait",
-    modifiers=[{"condition": "venus_saturn_conjunction_or_aspect_specifically", "effect": "conditionalizes", "strength": "strong"}])
+    modifiers=[{"condition": "venus_saturn_conjunction_or_aspect_specifically", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}])
 
 # v.19-21 gap: 3 wives (Mars+Venus in 7th or Saturn in 7th + asc lord in 8th)
 b.add(
@@ -521,6 +521,6 @@ b.add(
         "Dispositor exaltation approximated via 7th lord strong."
     ),
     description="Venus in dual sign + lord in exaltation + 7th lord strong: many wives.",
-    modifiers=[{"condition": "dispositor_of_venus_in_exaltation", "effect": "amplifies", "strength": "moderate"}])
+    modifiers=[{"condition": "dispositor_of_venus_in_exaltation", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 BPHS_V2_CH18_REGISTRY = b.build()

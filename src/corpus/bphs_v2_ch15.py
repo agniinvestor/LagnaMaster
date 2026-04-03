@@ -106,8 +106,7 @@ b.add(
         "his relatives."
     ),
     modifiers=[
-        {"condition": "h4_lord_is_benefic_aspected_by_benefic",
-         "effect": "conditionalizes", "strength": "moderate"},
+        {"condition": "h4_lord_is_benefic_aspected_by_benefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
     ],
     concordance_texts=[],
     rule_relationship={"type": "addition", "related_rules": ["BPHS1500"]},
@@ -143,7 +142,7 @@ b.add(
     concordance_texts=["Saravali"],
     cross_chapter_refs=["Ch.32 v.18-19 Planetary Karakatvas"],
     modifiers=[
-        {"condition": "mother_indicator_with_strength", "effect": "amplifies", "strength": "moderate"},
+        {"condition": "mother_indicator_with_strength", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
     convergence_signals=["moon_strong", "h4_lord_exalted", "no_malefic_in_4th"],
 )
@@ -219,7 +218,7 @@ b.add(
         "a movable ascendant: the native will be dumb."
     ),
     modifiers=[
-        {"condition": "movable_ascendant", "effect": "conditionalizes", "strength": "strong"},
+        {"condition": "movable_ascendant", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"},
     ],
     concordance_texts=[],
     prediction_type="trait",
@@ -257,8 +256,8 @@ b.add(
         "come to pass."
     ),
     modifiers=[
-        {"condition": "ascendant_lord_is_benefic", "effect": "conditionalizes", "strength": "moderate"},
-        {"condition": "venus_in_12th_or_11th", "effect": "amplifies", "strength": "moderate"},
+        {"condition": "ascendant_lord_is_benefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
+        {"condition": "venus_in_12th_or_11th", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
     concordance_texts=[],
     rule_relationship={"type": "addition", "related_rules": ["BPHS1500"]},

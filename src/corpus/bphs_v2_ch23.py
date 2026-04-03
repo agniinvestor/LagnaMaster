@@ -62,7 +62,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 12}],
       predictions=[{"entity": "native", "claim": "earnings_through_sinful_measures", "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.6}],
       verse_ref="Ch.23 v.13", commentary_context="No separate note. Malefic 12th without benefic aspect = income through unethical means.", description="12th occupied by Saturn/Mars + not aspected by benefic: earnings through sinful measures.",
       concordance_texts=["Saravali"],
-      modifiers=[{"condition": "not_aspected_by_benefic", "effect": "amplifies", "strength": "moderate"}],
+      modifiers=[{"condition": "not_aspected_by_benefic", "effect": "attenuates", "target": "prediction", "strength": "medium", "scope": "local"}],
       rule_relationship={"type": "addition", "related_rules": ["BPHS2304"]})
 
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 1, "house": 12},

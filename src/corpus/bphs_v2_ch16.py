@@ -179,7 +179,7 @@ b.add(
         "owner will not deprive one of progeny, making him go in for adoption."
     ),
     concordance_texts=[],
-    modifiers=[{"condition": "mandi_aspecting_5th", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "mandi_aspecting_5th", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
 )
 
 # ═══ v.10: 3 mothers or 2 fathers ════════════════════════════════════════════
@@ -418,7 +418,7 @@ b.add(
     ),
     concordance_texts=[],
     modifiers=[
-        {"condition": "ascendant_lord_with_venus", "effect": "amplifies", "strength": "moderate"},
+        {"condition": "ascendant_lord_with_venus", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
 )
 
@@ -537,7 +537,7 @@ b.add(
     ),
     concordance_texts=[],
     prediction_type="trait",
-    modifiers=[{"condition": "5th_lord_conjunct_mars_lose_children_as_born", "effect": "negates", "strength": "strong"}],
+    modifiers=[{"condition": "5th_lord_conjunct_mars_lose_children_as_born", "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ═══ v.6: Saturn+Mercury in 5th → one child only ═════════════════════════════
@@ -585,7 +585,7 @@ b.add(
         "this Yoga."
     ),
     description="Moon in 8th from ascendant + Jupiter in 8th from Moon (= house 3): native born of other's loins (illegitimate).",
-    modifiers=[{"condition": "malefic_aspect_or_association_essential", "effect": "conditionalizes", "strength": "strong"}])
+    modifiers=[{"condition": "malefic_aspect_or_association_essential", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}])
 
 # ═══ v.17: Mean deeds — 3-4 malefics in 5th ══════════════════════════════════
 b.add(
@@ -597,7 +597,7 @@ b.add(
     verse_ref="Ch.16 v.17",
     commentary_context="Santhanam: 5th occupied by 3-4 malefics + 5th lord in fall + benefic (including Mercury) excluded from 5th = children who indulge in mean deeds.",
     description="5th occupied by 3-4 malefics while 5th lord is in fall and benefic excluded: children indulge in mean deeds.",
-    modifiers=[{"condition": "no_benefic_in_5th", "effect": "conditionalizes", "strength": "moderate"}])
+    modifiers=[{"condition": "no_benefic_in_5th", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}])
 
 # ═══ v.25-28: Number of children (individual slokas from the block) ═══════════
 b.add(
@@ -660,7 +660,7 @@ b.add(
     verse_ref="Ch.16 v.1-3",
     commentary_context="Distinct from dusthana placement. Text: 'Should the lord of the 5th be combust or be with malefics and be weak, there will be no children; even if per chance issues are obtained they will only quit the world soon.'",
     description="5th lord combust or with malefics and weak: no children; if obtained they quit world soon.",
-    modifiers=[{"condition": "conjunct_malefics", "effect": "amplifies", "strength": "strong"}])
+    modifiers=[{"condition": "conjunct_malefics", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}])
 
 # v.24-32 gap: 9 sons (Jupiter deep exaltation + Rahu + 2nd lord + 9th own lord)
 b.add(

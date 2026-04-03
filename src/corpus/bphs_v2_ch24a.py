@@ -132,7 +132,7 @@ b.add(
     description="Lagna lord in 6th and related to a malefic: devoid of physical happiness, troubled by enemies if no benefic aspect.",
     commentary_context="Santhanam: The ascendant lord going to 6th mars health prospects. However, for Scorpio and Taurus ascendant, it will be a felicitous augury for freedom from diseases. The 6th house position of Lagna Lord in general will give abundant wealth and respect apart from royal status. There is, however, a possibility of more than one marriage or losing the spouse early.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "related_to_malefic", "effect": "amplifies", "strength": "moderate"}],
+    modifiers=[{"condition": "related_to_malefic", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # Exception: Scorpio/Taurus ascendant
@@ -166,7 +166,7 @@ b.add(
     verse_ref="Ch.24 v.7",
     description="Lagna lord in 7th as malefic: wife will not live long.",
     commentary_context="Santhanam: If the ascendant lord is a malefic and be in the 7th, the native's wife will not live long. If the planet in question be a benefic, one will wander aimlessly, face penury and be dejected. He will alternatively become a king (if the said planet is strong).",
-    modifiers=[{"condition": "planet_is_malefic", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "planet_is_malefic", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
     concordance_texts=["Saravali"],
 )
 
@@ -183,7 +183,7 @@ b.add(
     verse_ref="Ch.24 v.7",
     description="Lagna lord in 7th as benefic: wander aimlessly, face penury and be dejected.",
     commentary_context="Santhanam: If the planet in question be a benefic, one will wander aimlessly, face penury and be dejected. He will alternatively become a king (if the said planet is strong). The strong-planet exception overrides.",
-    modifiers=[{"condition": "planet_is_benefic", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "planet_is_benefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS2407"]},
 )
 
@@ -301,7 +301,7 @@ b.add(
     description="Lagna lord in 12th and devoid of benefic aspect/conjunction: bereft of physical happiness, spend unfruitfully, given to anger.",
     commentary_context="Santhanam: If the ascendant lord is in the 12th, the native's life will not be prosperous. He will be addicted to gambling, debauchery and other vices. He will expend wastefully.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "no_benefic_aspect_or_conjunction", "effect": "amplifies", "strength": "moderate"}],
+    modifiers=[{"condition": "no_benefic_aspect_or_conjunction", "effect": "attenuates", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 
@@ -356,7 +356,7 @@ b.add(
     verse_ref="Ch.24 v.15",
     description="2nd lord in 3rd: valorous, wise, virtuous, lustful — all these when related to a benefic. If related to malefic, heterodox.",
     commentary_context="Santhanam: Should the 2nd lord be in the 3rd house, the native will be ill-related to females and will earn through prostitutes. If a malefic is related to the 2nd lord in the 3rd, the person concerned will not be God-fearing and will have dirty conduct.",
-    modifiers=[{"condition": "related_to_benefic", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "related_to_benefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
     concordance_texts=["Saravali"],
 )
 
@@ -373,7 +373,7 @@ b.add(
     verse_ref="Ch.24 v.15",
     description="2nd lord in 3rd related to malefic: heterodox, not God-fearing, dirty conduct.",
     commentary_context="Santhanam: If a malefic is related to the 2nd lord in the 3rd, the person concerned will not be God-fearing and will have dirty conduct. Contrary condition to the benefic variant.",
-    modifiers=[{"condition": "related_to_malefic", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "related_to_malefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
     rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS2417"]},
 )
 
@@ -437,7 +437,7 @@ b.add(
     description="2nd lord in 6th with benefic: gain wealth through enemies. With malefic: loss through enemies, mutilation of shanks.",
     commentary_context="Santhanam: There will be severe loss of wealth through thefts and servants. He will have defects of privities. These are further effects of the 2nd lord occupying the 6th house.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "benefic_or_malefic_association", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "benefic_or_malefic_association", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 19: 2nd lord in 7th house ───────────────────────────────────────
@@ -454,7 +454,7 @@ b.add(
     description="2nd lord in 7th: addicted to others' wives, be a doctor. If malefic related, questionable character, wife also.",
     commentary_context="Santhanam: The 2nd lord in the 7th house and related to a dire malefic will render the mother of the native being of questionable character. However, the 4th house and its lord deserve a special attention in the context of mother's disposition.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "malefic_conjunction_or_aspect", "effect": "amplifies", "strength": "moderate"}],
+    modifiers=[{"condition": "malefic_conjunction_or_aspect", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 20: 2nd lord in 8th house ───────────────────────────────────────
@@ -518,7 +518,7 @@ b.add(
     description="2nd lord in 11th: all kinds of wealth, ever diligent, honourable, famous.",
     commentary_context="Santhanam: The native will undergo miseries due to ill-health during childhood and with the march of time he will be endowed with health throughout, if the 2nd lord is in the 11th house.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "childhood_ill_health_transitions_to_good_health_over_time", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "childhood_ill_health_transitions_to_good_health_over_time", "effect": "qualifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 24: 2nd lord in 12th house ──────────────────────────────────────
@@ -649,7 +649,7 @@ b.add(
     verse_ref="Ch.24 v.29",
     description="3rd lord in 5th: have sons, be virtuous. If 3rd lord conjunct/aspected by malefic, will have a formidable wife.",
     commentary_context="Santhanam: No separate note. The malefic influence on 3rd lord in 5th specifically affects the spouse dimension — a formidable (domineering) wife is indicated.",
-    modifiers=[{"condition": "conjunct_or_aspected_by_malefic", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "conjunct_or_aspected_by_malefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 30: 3rd lord in 6th house ───────────────────────────────────────
@@ -712,7 +712,7 @@ b.add(
     description="3rd lord in 9th: lack paternal bliss, will make fortunes through wife and will enjoy progenic pleasures.",
     commentary_context="Santhanam: Although one may have fortunes and happiness, one will unendingly feel miserable if the 3rd lord occupies the 9th house. His father will be a contemptible person.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "despite_fortunes_native_feels_perpetually_miserable", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "despite_fortunes_native_feels_perpetually_miserable", "effect": "qualifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 34: 3rd lord in 10th house ──────────────────────────────────────
@@ -759,7 +759,7 @@ b.add(
     description="3rd lord in 12th: spend on evil deeds, have a wicked father, be fortunate through a female (or wife).",
     commentary_context="Santhanam: The 3rd lord going to the 12th will bestow every happiness in life. Yet the native will feel highly miserable. This view is held by Ramadayalu. If Mars also joins the said 3rd lord, sustenance of co-born will be doubtful.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "mars_conjunct_3rd_lord_in_12th_coborn_sustenance_doubtful", "effect": "negates", "strength": "strong"}],
+    modifiers=[{"condition": "mars_conjunct_3rd_lord_in_12th_coborn_sustenance_doubtful", "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 
@@ -782,7 +782,7 @@ b.add(
     description="4th lord in ascendant: endowed with learning, virtues, ornaments, lands, conveyances and maternal happiness.",
     commentary_context="Santhanam: As a result of the 4th lord coming to occupy the ascendant, the subject will acquire incomparable learning in various branches. However, there is an element of risk of being deprived of one's ancestral properties. After leading married life for some time, the native will give up worldly life and may turn into an ascetic.",
     concordance_texts=["Saravali", "Phaladeepika"],
-    modifiers=[{"condition": "risk_of_ancestral_property_deprivation_and_later_asceticism", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "risk_of_ancestral_property_deprivation_and_later_asceticism", "effect": "qualifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 38: 4th lord in 2nd house ───────────────────────────────────────
@@ -923,7 +923,7 @@ b.add(
     description="4th lord in 10th: enjoy royal honours, be an alchemist, extremely pleased, enjoy all pleasures, conquer five senses.",
     commentary_context="Santhanam: One will be professionally happy and prosperous with the 4th lord in the 10th house. He will have abundant self-made properties. He will, however, lack maternal happiness if the 4th lord in the said house is not happily placed.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "4th_lord_not_happily_placed_in_10th_lacks_maternal_happiness", "effect": "negates", "strength": "moderate"}],
+    modifiers=[{"condition": "4th_lord_not_happily_placed_in_10th_lacks_maternal_happiness", "effect": "negates", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 47: 4th lord in 11th house ──────────────────────────────────────

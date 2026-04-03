@@ -63,7 +63,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": [1, 4, 7, 10]
       direction="favorable", intensity="strong", domains=["career_status", "wealth"],
       predictions=[{"entity": "father", "claim": "father_like_king_with_conveyances", "domain": "career_status", "direction": "favorable", "magnitude": 0.7}],
       verse_ref="Ch.20 v.6", commentary_context="No separate note. Kendra + Jupiter aspect = directional strength + benefic support.", description="9th lord in angle in aspect to Jupiter: father will be a king, endowed with conveyances.",
-      modifiers=[{"condition": "aspecting_or_aspected_by_jupiter", "effect": "amplifies", "strength": "moderate"}])
+      modifiers=[{"condition": "aspecting_or_aspected_by_jupiter", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # ═══ v.7: Wealthy and famous father ══════════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 10}],
@@ -172,7 +172,7 @@ b.add(conditions=[
           "kept as modifier."
       ),
       description="Rahu in 9th + 9th lord in fall + dispositor in 8th: devoid of fortunes.",
-      modifiers=[{"condition": "rahus_dispositor_in_8th", "effect": "conditionalizes", "strength": "strong"}])
+      modifiers=[{"condition": "rahus_dispositor_in_8th", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}])
 
 # ═══ v.31: Begging ═══════════════════════════════════════════════════════════
 b.add(conditions=[
@@ -219,7 +219,7 @@ b.add(
     verse_ref="Ch.20 v.8-9",
     commentary_context="Sun in trine from ascendant + 9th lord in 7th + conjunction/aspect of Jupiter → native devoted to father.",
     description="Sun in trine + 9th lord in 7th + Jupiter conjunction/aspect: devoted to father.",
-    modifiers=[{"condition": "jupiter_conjunct_or_aspecting", "effect": "amplifies", "strength": "moderate"}])
+    modifiers=[{"condition": "jupiter_conjunct_or_aspecting", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # v.23-25 gap: Sun in 8th + 8th lord in 9th → father dies within 1 year
 b.add(
@@ -259,7 +259,7 @@ b.add(
     verse_ref="Ch.20 v.12",
     commentary_context="If the 10th lord and 3rd lord are both bereft of strength while the 9th lord is in fall or in combustion, the native will go abegging for his food.",
     description="10th + 3rd lords both weak + 9th lord in fall/combustion: native begs for food.",
-    modifiers=[{"condition": "h10_lord_and_h3_lord_both_weak", "effect": "conditionalizes", "strength": "strong"}])
+    modifiers=[{"condition": "h10_lord_and_h3_lord_both_weak", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}])
 
 # v.26 gap: Venus deep exaltation + 9th lord + Saturn in 3rd → abundant fortunes
 b.add(

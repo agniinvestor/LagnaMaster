@@ -104,7 +104,7 @@ b.add(
     verse_ref="Ch.24 v.53",
     description="5th lord in 5th: happy, have sons, be virtuous, dear to friends — if related to benefic. If malefic related, no issues.",
     commentary_context="Santhanam: If the 5th lord is related to the said 5th lord placed in 5th, the 5th lord in 5th will, however, make one virtuous and dear to friends. The contrary condition (malefic) denies progeny.",
-    modifiers=[{"condition": "related_to_benefic", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "related_to_benefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
     concordance_texts=["Saravali"],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS2458"]},
 )
@@ -122,7 +122,7 @@ b.add(
     verse_ref="Ch.24 v.53",
     description="5th lord in 5th related to malefic: no issues (progeny denied).",
     commentary_context="Santhanam: The contrary condition — if malefic is related to the 5th lord placed in 5th, there will be no issues. This is the explicit contrary stated in the verse.",
-    modifiers=[{"condition": "related_to_malefic", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "related_to_malefic", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
     rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS2457"]},
 )
 
@@ -140,7 +140,7 @@ b.add(
     verse_ref="Ch.24 v.54",
     description="5th lord in 6th: sons inimical to native, or will lose them, or acquire adopted/purchased son.",
     commentary_context="Santhanam: Maharshi Parasara enunciates four different possibilities if the 5th lord is in the 6th: (1) sons inimical to native, (2) loss of children (6th is maraka for 5th), (3) obtaining adopted issue, (4) purchase of a child. It is also not advisable for a female to have her 9th lord from the 10th house from the point of view of filial happiness.",
-    modifiers=[{"condition": "four_possibilities_inimical_sons_or_loss_or_adopted_or_purchased", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "four_possibilities_inimical_sons_or_loss_or_adopted_or_purchased", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 55: 5th lord in 7th house ───────────────────────────────────────
@@ -204,7 +204,7 @@ b.add(
     description="5th lord in 10th: enjoy a Rajayoga and various pleasures, be very famous.",
     commentary_context="Santhanam: For enjoying a superior degree of material benefits like wealth, position, fame etc. the 5th lord is the best placed in the 10th house than elsewhere. This one position with sterling qualities will equal many Rajayogas. It is a prerequisite of course that in such a placement the 5th lord is preferably with exaltation or such other dignities. If he is placed in an enemy's house or such other afflictions tormenting him, he will prove rather adverse than a Rajayoga maker.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "if_in_enemy_house_or_afflicted_proves_adverse_not_rajayoga", "effect": "negates", "strength": "strong"}],
+    modifiers=[{"condition": "if_in_enemy_house_or_afflicted_proves_adverse_not_rajayoga", "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 59: 5th lord in 11th house ──────────────────────────────────────
@@ -220,7 +220,7 @@ b.add(
     verse_ref="Ch.24 v.59",
     description="5th lord in 11th: learned, dear to people, author of treatises, skilful, many sons and wealth.",
     commentary_context="Santhanam: The 5th lord's station in the 11th house will keep one free from misfortunes and unhappiness. His academic achievements will be abundant. He will be happy in respect of his children, but the said 11th house should be a friendly sign for the 5th lord. If the 5th lord is inimically placed in the 11th, for example the Sun in Aquarius in the 11th in the case of Aries ascendant, the progeny will be inimical to the native.",
-    modifiers=[{"condition": "5th_lord_inimically_placed_in_11th_progeny_inimical_eg_sun_in_aquarius_aries", "effect": "negates", "strength": "moderate"}],
+    modifiers=[{"condition": "5th_lord_inimically_placed_in_11th_progeny_inimical_eg_sun_in_aquarius_aries", "effect": "negates", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 60: 5th lord in 12th house ──────────────────────────────────────
@@ -236,7 +236,7 @@ b.add(
     verse_ref="Ch.24 v.60",
     description="5th lord in 12th: bereft of happiness from own sons, will have an adopted or purchased son.",
     commentary_context="Santhanam: The placement of the 5th lord in the 12th terminal house will cause various kinds of miseries in the matter of children. One may not obtain a child at all, or may incur inimical relations with his own child. Adoption will surely come to pass if Saturn or Mercury ruling the 5th is in the 12th. Further grave defects with the 5th in the 12th are difficulties in digestion and abdominal disorders.",
-    modifiers=[{"condition": "adoption_certain_if_saturn_or_mercury_rules_5th_in_12th_also_digestive_defects", "effect": "amplifies", "strength": "strong"}],
+    modifiers=[{"condition": "adoption_certain_if_saturn_or_mercury_rules_5th_in_12th_also_digestive_defects", "effect": "qualifies", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 
@@ -259,7 +259,7 @@ b.add(
     description="6th lord in ascendant: sickly, famous, inimical to own men, rich, honourable, adventurous, virtuous.",
     commentary_context="Santhanam: The 6th lord in the ascending sign will bring various diseases to the native. He will incur adverse effects in the matter of acquisition of progeny. Venus in Taurus ascendant will particularly give benefic results in full measure as stated. There will, however, be more daughters than sons, while the first child will be a male.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "venus_in_taurus_ascendant_gives_full_benefic_results_more_daughters_first_male", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "venus_in_taurus_ascendant_gives_full_benefic_results_more_daughters_first_male", "effect": "qualifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 62: 6th lord in 2nd house ───────────────────────────────────────
@@ -369,7 +369,7 @@ b.add(
     verse_ref="Ch.24 v.68",
     description="6th lord in 8th: sickly, inimical, desire others' wealth, interested in others' wives, impure (or degraded).",
     commentary_context="Santhanam: It is not good for one's purity of character if the 8th house is occupied by the 6th lord. The native will be ever incurring enmity with others and be not happy. He will have a green eye on others' learning and an eye on others' wealth.",
-    modifiers=[{"condition": "6th_lord_in_8th_ever_incurring_enmity_eye_on_others_learning_wealth", "effect": "amplifies", "strength": "moderate"}],
+    modifiers=[{"condition": "6th_lord_in_8th_ever_incurring_enmity_eye_on_others_learning_wealth", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 69: 6th lord in 9th house ───────────────────────────────────────
@@ -416,7 +416,7 @@ b.add(
     verse_ref="Ch.24 v.71",
     description="6th lord in 11th: gain wealth through enemies, be virtuous, adventurous, but bereft of progenic happiness.",
     commentary_context="Santhanam: One will, to some extent, be happy and to yet some extent be unhappy if the 6th lord occupies the 11th house. This is in regard to progeny. There is also a view that this position can wholly deny acquisition of a child.",
-    modifiers=[{"condition": "position_can_wholly_deny_acquisition_of_child", "effect": "negates", "strength": "strong"}],
+    modifiers=[{"condition": "position_can_wholly_deny_acquisition_of_child", "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 72: 6th lord in 12th house ──────────────────────────────────────
@@ -504,7 +504,7 @@ b.add(
     commentary_context="Santhanam: A disobedient wife follows the 4th house position of the 7th lord. This is Maharshi's instruction. However, Ramadayalu states in this context that the native's wife will brilliantly shine with chastity and devotion to husband. The Chaukambha edition also clearly states that the native's wife will not be chaste.",
     concordance_texts=["Saravali"],
     divergence_notes="Ramadayalu contradicts — says wife will shine with chastity",
-    modifiers=[{"condition": "ramadayalu_contradicts_says_wife_shines_with_chastity_devotion", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "ramadayalu_contradicts_says_wife_shines_with_chastity_devotion", "effect": "qualifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 77: 7th lord in 5th house ───────────────────────────────────────
@@ -569,7 +569,7 @@ b.add(
     description="7th lord in 8th: deprived of marital happiness, wife troubled by diseases, devoid of good disposition, will not obey.",
     commentary_context="Santhanam: As the 7th lord goes to the 8th house, the native's spouse will be liable to incur afflictions on her longevity. However, marriage may bring some pecuniary gains for the native.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "marriage_may_bring_pecuniary_gains_despite_marital_unhappiness", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "marriage_may_bring_pecuniary_gains_despite_marital_unhappiness", "effect": "qualifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 81: 7th lord in 9th house ───────────────────────────────────────
@@ -615,7 +615,7 @@ b.add(
     verse_ref="Ch.24 v.83",
     description="7th lord in 11th: gain wealth through wife, less happiness from sons, have daughters.",
     commentary_context="Santhanam: If the 7th lord is in the 11th house, there is a possibility of the native losing his children to his grief. He will obtain (more) daughters. His own sons will be hostile to him and will cause him no happiness. Living son also seems to be a very remote probability.",
-    modifiers=[{"condition": "possibility_losing_children_hostile_sons_daughters_obtained_sons_not_longlived", "effect": "negates", "strength": "strong"}],
+    modifiers=[{"condition": "possibility_losing_children_hostile_sons_daughters_obtained_sons_not_longlived", "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 84: 7th lord in 12th house ──────────────────────────────────────
@@ -715,7 +715,7 @@ b.add(
     verse_ref="Ch.24 v.88",
     description="8th lord in 4th: deprived of mother (shishu — lose mother in childhood), devoid of house, lands and happiness, betray friends.",
     commentary_context="Santhanam: Maharshi Parasara uses the word 'shishu' meaning child. Hence it is apparent that the native will lose his mother in the very childhood if the 8th lord is in the 4th house.",
-    modifiers=[{"condition": "parasara_uses_shishu_indicating_mother_lost_in_very_childhood", "effect": "amplifies", "strength": "strong"}],
+    modifiers=[{"condition": "parasara_uses_shishu_indicating_mother_lost_in_very_childhood", "effect": "qualifies", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 89: 8th lord in 5th house ───────────────────────────────────────
@@ -749,7 +749,7 @@ b.add(
     description="8th lord in 6th: win over enemies, afflicted by diseases in childhood, danger through snakes/water, but indicates long life.",
     commentary_context="Santhanam: The position of the 8th lord in the 6th house is a sureshot of success over enemies and in litigations. The native will be reduced to danger through snakes, scorpions etc. during childhood. Afterwards he will be free from such calamities. However, this position is not very favourable for one's health. This also indicates a long span of life.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "not_favourable_for_health_but_indicates_long_span_of_life", "effect": "conditionalizes", "strength": "moderate"}],
+    modifiers=[{"condition": "not_favourable_for_health_but_indicates_long_span_of_life", "effect": "qualifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 91: 8th lord in 7th house ───────────────────────────────────────
@@ -766,7 +766,7 @@ b.add(
     description="8th lord in 7th: two wives; if conjunct malefic, downfall in business (or livelihood).",
     commentary_context="Santhanam: The 7th house being occupied by the 8th lord is a forerunner of difficulties in married life. There will be want of understanding between the native and his spouse. The constitution of the spouse will be quite weak and she will always be subjected to uncertainties or dangers. Outwardly the native may pose to be God-fearing, but he will not be sincerely devoted to the Almighty. He will be an expert in stealing others' things.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "malefic_conjunct", "effect": "amplifies", "strength": "strong"}],
+    modifiers=[{"condition": "malefic_conjunct", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 92: 8th lord in 8th house ───────────────────────────────────────
@@ -783,7 +783,7 @@ b.add(
     description="8th lord in 8th: longlived. If the said planet is weak, medium longevity; will be a thief, blameworthy, blame others.",
     commentary_context="Santhanam: In remaining in the 8th itself, the 8th lord should be quite strong in Shadbala, so the native will enjoy full span of life. If he is bereft of strength, the native will not enjoy full span of life. The 8th house in occupation by its own lord will give a spouse with questionable character. However she will be a source of financial help to the native by her own earnings or inheritance.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "8th_lord_weak_in_shadbala_reduces_to_medium_longevity", "effect": "negates", "strength": "moderate"}],
+    modifiers=[{"condition": "8th_lord_weak_in_shadbala_reduces_to_medium_longevity", "effect": "attenuates", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 93: 8th lord in 9th house ───────────────────────────────────────
@@ -815,7 +815,7 @@ b.add(
     verse_ref="Ch.24 v.94",
     description="8th lord in 10th: devoid of paternal bliss, be a talebearer, bereft of livelihood. If benefic aspect, evils will not mature.",
     commentary_context="Santhanam: There is a school of thought to say that the 8th lord occupying the 9th house will cause the deaths of parents right in the native's boyhood. Apparently one will not enjoy parental happiness for a long duration. This placement of the 8th lord in the 10th will produce all kinds of miseries in livelihood, fortunes, fame, properties and the like. According to Maharshi Parasara, if the 8th lord in the 10th is (well) related to a benefic, no evils will come to pass.",
-    modifiers=[{"condition": "benefic_aspect_on_8th_lord_in_10th_prevents_evils_from_maturing", "effect": "negates", "strength": "strong"}],
+    modifiers=[{"condition": "benefic_aspect_on_8th_lord_in_10th_prevents_evils_from_maturing", "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 95: 8th lord in 11th house ──────────────────────────────────────
@@ -832,7 +832,7 @@ b.add(
     description="8th lord in 11th with malefic: devoid of wealth, miserable in boyhood but happy later, longlived.",
     commentary_context="Santhanam: The 11th house will, unless related to a malefic, particularly by conjunction, will not deprive the native of financial benefits. If he is alone in the 11th, he will not prove that bad in this respect. Moreover, for Taurus ascendant, Jupiter in the 11th is not baneful. And for Scorpio ascendant, Mercury in the 11th will prove a highly favourable bargain in the matter of wealth, fame, knowledge etc.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "8th_lord_conjunct_malefic_in_11th_deprivation_of_wealth_amplified", "effect": "amplifies", "strength": "moderate"}],
+    modifiers=[{"condition": "8th_lord_conjunct_malefic_in_11th_deprivation_of_wealth_amplified", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 96: 8th lord in 12th house ──────────────────────────────────────
@@ -848,7 +848,7 @@ b.add(
     verse_ref="Ch.24 v.96",
     description="8th lord in 12th: spend on evil deeds, incur a short life. If additionally with malefic, more so.",
     commentary_context="Santhanam: No separate note. The double 12th (loss) from the 8th (longevity) creates the worst conditions for lifespan and moral conduct.",
-    modifiers=[{"condition": "additionally_with_malefic", "effect": "amplifies", "strength": "strong"}],
+    modifiers=[{"condition": "additionally_with_malefic", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 

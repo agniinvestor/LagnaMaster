@@ -92,7 +92,7 @@ b.add(
         "Similarly consider Saturn and 10th lord in the matter of longevity."
     ),
     concordance_texts=[],
-    modifiers=[{"condition": "10th_lord_in_8th_with_malefic_or_ascendant_lord", "effect": "amplifies", "strength": "strong"}],
+    modifiers=[{"condition": "10th_lord_in_8th_with_malefic_or_ascendant_lord", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}],
     rule_relationship={"type": "addition", "related_rules": ["BPHS1901"]},
 )
 

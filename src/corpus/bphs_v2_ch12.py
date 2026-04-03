@@ -361,8 +361,7 @@ b.add(
     concordance_texts=["Saravali", "Phaladeepika", "Brihat Jataka"],
     cross_chapter_refs=["Ch.81 Body Parts"],
     modifiers=[
-        {"condition": "mercury_jupiter_venus_also_in_kendra_trikona",
-         "effect": "amplifies", "strength": "strong"},
+        {"condition": "mercury_jupiter_venus_also_in_kendra_trikona", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"},
     ],
     convergence_signals=[
         "mercury_or_jupiter_or_venus_in_kendra",
@@ -431,7 +430,7 @@ b.add(
     ),
     concordance_texts=["Saravali"],
     modifiers=[
-        {"condition": "mercury_or_venus_also_in_kendra_or_with_moon", "effect": "amplifies", "strength": "moderate"},
+        {"condition": "mercury_or_venus_also_in_kendra_or_with_moon", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
     rule_relationship={"type": "addition", "related_rules": ["BPHS1209"]},
 )
@@ -538,7 +537,7 @@ b.add(
     ),
     tags=["sun", "twins", "quadruped_sign", "dual_sign"],
     prediction_type="event",
-    modifiers=[{"condition": "other_six_planets_endowed_with_strength", "effect": "conditionalizes", "strength": "strong"}],
+    modifiers=[{"condition": "other_six_planets_endowed_with_strength", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
 )
 
 # ═════════════════════════════════════════════════════════════════════════
@@ -775,8 +774,7 @@ b.add(
     concordance_texts=["Saravali"],
     cross_chapter_refs=["Saravali Ch.4 v.6"],
     modifiers=[
-        {"condition": "in_own_rasi_or_navamsa", "effect": "conditionalizes",
-         "strength": "moderate"},
+        {"condition": "in_own_rasi_or_navamsa", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
     ],
     tags=["body_marks", "timing", "own_sign"],
 )
