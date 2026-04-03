@@ -33,8 +33,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 9}],
       modifiers=[{"condition": "h9_lord_in_kendra", "effect": "amplifies", "strength": "strong"}])
 
 # ═══ v.3: Fortunate father ═══════════════════════════════════════════════════
-b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
-                   {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "strong"}],
+b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_9", "dignity": "strong"}],
       entity_target="father", signal_group="h9_lord_strong_father_fortunate",
       direction="favorable", intensity="strong", domains=["wealth"],
       predictions=[{"entity": "father", "claim": "father_is_fortunate_affluent", "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
@@ -42,8 +41,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
       derived_house_chains=[{"base_house": 9, "derivative": "self", "effective_house": 9, "entity": "father", "domain": "wealth"}])
 
 # ═══ v.4: Indigent father ════════════════════════════════════════════════════
-b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
-                   {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"}],
+b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"}],
       entity_target="father", signal_group="h9_lord_debilitated_father_poor",
       direction="unfavorable", intensity="moderate", domains=["wealth"],
       predictions=[{"entity": "father", "claim": "father_is_poor", "domain": "wealth", "direction": "unfavorable", "magnitude": 0.7}],
@@ -53,8 +51,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
       concordance_texts=["Saravali"], exceptions=["if_neecha_bhanga_raja_yoga"])
 
 # ═══ v.5: Long-living father ═════════════════════════════════════════════════
-b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
-                   {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "exalted"}],
+b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_9", "dignity": "exalted"}],
       entity_target="father", signal_group="h9_lord_exalted_father_long_life",
       direction="favorable", intensity="strong", domains=["longevity"],
       predictions=[{"entity": "father", "claim": "father_enjoys_long_life", "domain": "longevity", "direction": "favorable", "magnitude": 0.7}],
@@ -99,7 +96,7 @@ _FATHER_DEATH = [
      [{"type": "planet_in_house", "planet": "Sun", "house": [6, 8, 12]}],
      {"type": "age", "value": 0, "precision": "exact"}),
     ("Ch.20 v.14", "3_or_16", "9th lord in debilitation Navamsa",
-     [{"type": "lord_in_house", "lord_of": 9, "house": "any"}, {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"}],
+     [{"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"}],
      {"type": "age_range", "value": [3, 16], "precision": "approximate"}),
     ("Ch.20 v.15", "2_or_12", "Ascendant lord in 2nd as 8th lord in 8th",
      [{"type": "lord_in_house", "lord_of": 1, "house": 2}],
@@ -117,7 +114,7 @@ _FATHER_DEATH = [
      [{"type": "planets_conjunct", "planets": ["Sun", "Mars", "Saturn"]}],
      {"type": "age", "value": 50, "precision": "approximate"}),
     ("Ch.20 v.20", "26_or_30", "9th lord in debilitation + dispositor in 9th",
-     [{"type": "lord_in_house", "lord_of": 9, "house": "any"}],
+     [{"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"}],
      {"type": "age_range", "value": [26, 30], "precision": "approximate"}),
     ("Ch.20 v.21", "6_or_25", "Saturn in 7th from 8th (= 2nd from ascendant)",
      [{"type": "planet_in_house", "planet": "Saturn", "house": 2}],
@@ -161,22 +158,37 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 9},
       verse_ref="Ch.20 v.28", commentary_context="Santhanam: Mercury exalted as 9th lord in 9th = fortunes after 36th year. Capricorn/Aquarius lagnas.", description="Mercury in deep exaltation as 9th lord in 9th: abundant fortunes earned after 36th year.")
 
 # ═══ v.30: Lack of fortunes ══════════════════════════════════════════════════
-b.add(conditions=[{"type": "planet_in_house", "planet": "Rahu", "house": 9}],
+b.add(conditions=[
+          {"type": "planet_in_house", "planet": "Rahu", "house": 9},
+          {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"},
+      ],
       signal_group="rahu_h9_no_fortune", direction="unfavorable", intensity="strong",
       domains=["wealth"],
       predictions=[{"entity": "native", "claim": "devoid_of_fortunes", "domain": "wealth", "direction": "unfavorable", "magnitude": 0.8}],
-      verse_ref="Ch.20 v.30", commentary_context="No separate note. Triple affliction destroys all fortune significations.", description="Rahu in 9th + dispositor in 8th + 9th lord in fall: devoid of fortunes.",
-      modifiers=[{"condition": "rahus_dispositor_in_8th", "effect": "amplifies", "strength": "strong"},
-                 {"condition": "h9_lord_in_fall", "effect": "amplifies", "strength": "strong"}])
+      verse_ref="Ch.20 v.30",
+      commentary_context=(
+          "Compound condition: Rahu in 9th + 9th lord in fall + Rahu's "
+          "dispositor in 8th. Dispositor condition is planet-relative, "
+          "kept as modifier."
+      ),
+      description="Rahu in 9th + 9th lord in fall + dispositor in 8th: devoid of fortunes.",
+      modifiers=[{"condition": "rahus_dispositor_in_8th", "effect": "conditionalizes", "strength": "strong"}])
 
 # ═══ v.31: Begging ═══════════════════════════════════════════════════════════
-b.add(conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 9},
-                   {"type": "planet_in_house", "planet": "Moon", "house": 9}],
+b.add(conditions=[
+          {"type": "planet_in_house", "planet": "Saturn", "house": 9},
+          {"type": "planet_in_house", "planet": "Moon", "house": 9},
+          {"type": "planet_dignity", "planet": "lord_of_1", "dignity": "debilitated"},
+      ],
       signal_group="saturn_moon_h9_begging", direction="unfavorable", intensity="strong",
       domains=["wealth"],
       predictions=[{"entity": "native", "claim": "acquire_food_by_begging", "domain": "wealth", "direction": "unfavorable", "magnitude": 0.9}],
-      verse_ref="Ch.20 v.31", commentary_context="No separate note. Saturn + Moon + fallen ascendant lord = poverty destroying fortune.", description="Saturn in 9th + Moon + ascendant lord in fall: food by begging.",
-      modifiers=[{"condition": "ascendant_lord_in_fall", "effect": "amplifies", "strength": "strong"}])
+      verse_ref="Ch.20 v.31",
+      commentary_context=(
+          "Compound condition: Saturn in 9th + Moon in 9th + ascendant "
+          "lord in fall. All three required for extreme poverty prediction."
+      ),
+      description="Saturn in 9th + Moon in 9th + ascendant lord in fall: food by begging.")
 
 # ═══ GAP FILLS (identified by PDF-first audit 2026-04-01) ═════════════════════
 
@@ -239,8 +251,7 @@ b.add(
 
 # v.12 gap: 10th+3rd lord weak + 9th lord fall/combust → begging
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 9, "house": "any"},
-                {"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"}],
+    conditions=[{"type": "planet_dignity", "planet": "lord_of_9", "dignity": "debilitated"}],
     signal_group="h10_h3_weak_h9_fall_begging",
     direction="unfavorable", intensity="strong", domains=["wealth"],
     predictions=[{"entity": "native", "claim": "go_begging_for_food",
