@@ -43,8 +43,27 @@ _DEFAULT_MAP = {
 }
 
 _MANUAL_OVERRIDES: dict[tuple[str, int], tuple[str, str]] = {
-    # Populated after running --report and reviewing edge cases.
-    # Format: ("BPHS_XXXX", modifier_index): ("new_effect", "new_target"),
+    # Gates → Qualifies (adds interpretation/secondary outcome, not a requirement)
+    ("BPHS2428", 0): ("qualifies", "prediction"),   # childhood→good health temporal interpretation
+    ("BPHS2440", 0): ("qualifies", "prediction"),   # despite fortunes, feels miserable
+    ("BPHS2444", 0): ("qualifies", "prediction"),   # ancestral property risk + asceticism
+    ("BPHS2469", 0): ("qualifies", "prediction"),   # Venus/Taurus lagna-specific nuance
+    ("BPHS2484", 0): ("qualifies", "prediction"),   # Ramadayalu contradicts — commentary interpretation
+    ("BPHS2488", 0): ("qualifies", "prediction"),   # marriage pecuniary gains despite unhappiness
+    ("BPHS2499", 0): ("qualifies", "prediction"),   # not health but long life — mixed interpretation
+    ("BPHS2523", 0): ("qualifies", "prediction"),   # intelligence despite career paralysis
+    ("BPHS2628", 0): ("qualifies", "prediction"),   # females + bad character but progenic happiness
+    ("BPHS2629", 0): ("qualifies", "prediction"),   # misfortunes but progenic happiness
+    # Amplifies → Attenuates (weakens rather than strengthens)
+    ("BPHS1832", 0): ("attenuates", "prediction"),  # Venus bereft of strength weakens
+    ("BPHS2306", 0): ("attenuates", "prediction"),  # not aspected by benefic = lack of protection
+    ("BPHS2415", 0): ("attenuates", "prediction"),  # no benefic aspect/conjunction
+    # Negates → Attenuates (reduces magnitude, doesn't fully cancel)
+    ("BPHS2501", 0): ("attenuates", "prediction"),  # weak shadbala → medium longevity (not denial)
+    # Amplifies → Qualifies (changes nature/interpretation, not magnitude)
+    ("BPHS2468", 0): ("qualifies", "prediction"),   # adoption + digestive defects (adds outcomes)
+    ("BPHS2497", 0): ("qualifies", "prediction"),   # 'shishu' = timing qualification (childhood)
+    ("BPHS2553", 0): ("qualifies", "prediction"),   # obstacles then adopt (temporal interpretation)
 }
 
 _STRENGTH_MAP = {"weak": "weak", "moderate": "medium", "strong": "strong", "none": None}
