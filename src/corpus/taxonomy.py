@@ -79,6 +79,22 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "planet_in_house_from",
 })
 
+VALID_MODIFIER_EFFECTS = frozenset({
+    "gates", "amplifies", "attenuates", "negates", "qualifies",
+})
+
+VALID_MODIFIER_TARGETS = frozenset({"rule", "prediction"})
+
+VALID_MODIFIER_STRENGTHS = frozenset({"weak", "medium", "strong"})
+
+EFFECT_TARGET_CONSTRAINTS: dict[str, str] = {
+    "gates": "rule",
+    "amplifies": "prediction",
+    "attenuates": "prediction",
+    "negates": "prediction",
+    "qualifies": "prediction",
+}
+
 VALID_SIGN_TYPES = frozenset({
     "movable", "fixed", "dual",
     "fire", "earth", "air", "water",

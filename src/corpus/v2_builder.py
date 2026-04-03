@@ -621,24 +621,48 @@ class V2ChapterBuilder:
                     f"entity_target='{entity_target}' — fix entity or set target='general'"
                 )
 
-        # T1-18: Modifier quality — effect vocabulary and condition specificity
-        _VALID_EFFECTS = {"amplifies", "negates", "conditionalizes"}
+        # T1-18: Modifier semantic validation (strict 5-effect schema)
+        from src.corpus.taxonomy import (
+            VALID_MODIFIER_EFFECTS, VALID_MODIFIER_TARGETS,
+            VALID_MODIFIER_STRENGTHS, EFFECT_TARGET_CONSTRAINTS,
+        )
         if modifiers is None:
             modifiers = []
         for i, mod in enumerate(modifiers):
             if not isinstance(mod, dict):
                 continue
+            cond = mod.get("condition", "")
+            if not cond:
+                errors.append(f"T1-18: modifiers[{i}] missing 'condition'")
             effect = mod.get("effect", "")
-            if effect and effect not in _VALID_EFFECTS:
+            if effect not in VALID_MODIFIER_EFFECTS:
                 errors.append(
                     f"T1-18: modifiers[{i}].effect='{effect}' not valid — "
-                    f"use: {sorted(_VALID_EFFECTS)}"
+                    f"use: {sorted(VALID_MODIFIER_EFFECTS)}"
                 )
-            cond = mod.get("condition", "")
-            if cond and len(cond) < 15:
+            target = mod.get("target", "")
+            if target not in VALID_MODIFIER_TARGETS:
                 errors.append(
-                    f"T1-18: modifiers[{i}].condition='{cond}' too short "
-                    f"({len(cond)} < 15) — describe what the text actually states"
+                    f"T1-18: modifiers[{i}].target='{target}' not valid — "
+                    f"use: {sorted(VALID_MODIFIER_TARGETS)}"
+                )
+            if effect in EFFECT_TARGET_CONSTRAINTS:
+                expected_target = EFFECT_TARGET_CONSTRAINTS[effect]
+                if target and target != expected_target:
+                    errors.append(
+                        f"T1-18: modifiers[{i}] effect='{effect}' requires "
+                        f"target='{expected_target}', got '{target}'"
+                    )
+            strength = mod.get("strength", "")
+            if strength not in VALID_MODIFIER_STRENGTHS:
+                errors.append(
+                    f"T1-18: modifiers[{i}].strength='{strength}' not valid — "
+                    f"use: {sorted(VALID_MODIFIER_STRENGTHS)}"
+                )
+            scope = mod.get("scope", "")
+            if scope != "local":
+                errors.append(
+                    f"T1-18: modifiers[{i}].scope='{scope}' must be 'local'"
                 )
 
         # T1-19: Conditional language in commentary without modifiers — Q9
