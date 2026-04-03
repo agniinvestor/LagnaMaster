@@ -91,7 +91,7 @@ VALID_RELATIONSHIP_TYPES = {"alternative", "addition", "override", "contrary_mir
 _BPHS_PREDICTIVE_VERSES: dict[str, int] = {
     "12": 16, "13": 12, "14": 20, "15": 14, "16": 26, "17": 14,
     "18": 18, "19": 5, "20": 22, "21": 20, "22": 10, "23": 10,
-    "24a": 80, "24b": 75, "24c": 80, "25": 85,
+    "24a": 56, "24b": 50, "24c": 52, "25": 85,
 }
 
 # Chapter → V2 corpus module name mapping
