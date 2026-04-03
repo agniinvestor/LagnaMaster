@@ -52,6 +52,21 @@ Offset uses BPHS counting convention (inclusive of starting house):
 
 Computation: `target_house = (reference_house + offset - 1) % 12 + 1`
 
+### House System Assumption
+
+This primitive assumes whole-sign house calculation. House positions are integer values 1-12 derived from sign indices. If house system changes in future (e.g., Placidus), this primitive must be re-evaluated.
+
+### Planet Name Normalization
+
+All planet identifiers must be normalized via a single helper (`_normalize_planet()` or equivalent). Direct string transformations (e.g., `.title()`) are not allowed in evaluation logic. This ensures consistency across rule_firing, lord resolution, and future alias handling.
+
+### Failure Semantics
+
+The condition returns `(False, 0)` if:
+1. `reference` cannot be resolved to exactly one planet
+2. No valid candidate planets are found for `planet`
+3. No candidate occupies the computed target house
+
 ## Builder Validation
 
 In `v2_builder.py:_validate_add()`:
