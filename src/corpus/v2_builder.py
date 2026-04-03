@@ -476,6 +476,34 @@ class V2ChapterBuilder:
                         f"use: {sorted(VALID_CONDITION_MODES)}"
                     )
 
+            elif ctype == "planet_in_house_from":
+                planet = cond.get("planet", "")
+                if not planet:
+                    errors.append(
+                        f"T1-1: conditions[{i}] planet_in_house_from missing 'planet'"
+                    )
+                ref = cond.get("reference", "")
+                if not ref:
+                    errors.append(
+                        f"T1-1: conditions[{i}] planet_in_house_from missing 'reference'"
+                    )
+                elif ref in ("any_malefic", "any_benefic"):
+                    errors.append(
+                        f"T1-1: conditions[{i}] planet_in_house_from 'reference' must "
+                        f"resolve to single planet, not '{ref}'"
+                    )
+                offset = cond.get("offset")
+                if not isinstance(offset, int) or not (1 <= offset <= 12):
+                    errors.append(
+                        f"T1-1: conditions[{i}].offset={offset} must be int 1-12"
+                    )
+                mode = cond.get("mode", "")
+                if mode != "occupies":
+                    errors.append(
+                        f"T1-1: conditions[{i}].mode='{mode}' must be 'occupies' "
+                        f"(only supported mode)"
+                    )
+
         # T1-2: Controlled vocabulary — domains, direction, intensity
         for d in domains:
             if d not in VALID_OUTCOME_DOMAINS:
@@ -701,7 +729,7 @@ class V2ChapterBuilder:
         elif ct == "planet_aspecting":
             pc["planet"] = c0.get("planet", "")
             pc["placement_type"] = "aspect_condition"
-        elif ct in ("planet_in_sign_type", "planet_in_derived_house", "upagraha_in_house"):
+        elif ct in ("planet_in_sign_type", "planet_in_derived_house", "upagraha_in_house", "planet_in_house_from"):
             pc["planet"] = c0.get("planet", c0.get("upagraha", "general"))
             pc["placement_type"] = ct
         else:

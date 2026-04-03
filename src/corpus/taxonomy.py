@@ -76,6 +76,7 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "planet_in_sign_type",
     "planet_in_derived_house",
     "upagraha_in_house",
+    "planet_in_house_from",
 })
 
 VALID_SIGN_TYPES = frozenset({
