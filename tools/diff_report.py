@@ -29,6 +29,9 @@ for _p in ["sun", "moon", "mars", "mercury", "jupiter", "venus",
     FIELD_MODULE[f"longitude_{_p}"] = "positions"
     FIELD_MODULE[f"sign_{_p}"] = "positions"
     FIELD_MODULE[f"nakshatra_{_p}"] = "nakshatra"
+    FIELD_MODULE[f"dignity_{_p}"] = "dignity"
+for _h in range(1, 13):
+    FIELD_MODULE[f"house_{_h}_lord"] = "house_lords"
 
 
 def generate_report(as_json: bool = False) -> dict | None:

@@ -24,11 +24,58 @@ from pathlib import Path
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 
+from src.calculations.dignity import compute_dignity  # noqa: E402
 from src.calculations.nakshatra import nakshatra_position  # noqa: E402
 from src.ephemeris import compute_chart  # noqa: E402
 from tools.classification import classify_disagreements  # noqa: E402
 from tools.diff_engine_core import Verdict, diff_field  # noqa: E402
-from tools.normalize_outputs import normalize_longitude, normalize_sign  # noqa: E402
+from tools.normalize_outputs import normalize_longitude, normalize_sign, normalize_nakshatra  # noqa: E402
+
+# Sign → lord mapping (standard Parashari)
+_SIGN_LORDS = {
+    0: "Mars", 1: "Venus", 2: "Mercury", 3: "Moon", 4: "Sun", 5: "Mercury",
+    6: "Venus", 7: "Mars", 8: "Jupiter", 9: "Saturn", 10: "Saturn", 11: "Jupiter",
+}
+
+# Nakshatra names for index-to-name conversion
+_NAK_NAMES = [
+    "Ashwini", "Bharani", "Krittika", "Rohini", "Mrigashira", "Ardra",
+    "Punarvasu", "Pushya", "Ashlesha", "Magha", "Purva Phalguni",
+    "Uttara Phalguni", "Hasta", "Chitra", "Swati", "Vishakha", "Anuradha",
+    "Jyeshtha", "Mula", "Purva Ashadha", "Uttara Ashadha", "Shravana",
+    "Dhanishta", "Shatabhisha", "Purva Bhadrapada", "Uttara Bhadrapada",
+    "Revati",
+]
+
+# Dignity labels used by LM
+# Coarse dignity: own/exalted/debilitated/other
+# Finer levels (friend/enemy/mooltrikona) need relationship table
+# which PyJHora doesn't expose via sign lookup — compare at this level
+_DIGNITY_COARSE = {
+    "Own Sign": "own",
+    "Exalted": "exalted",
+    "Debilitated": "debilitated",
+    "Mooltrikona": "own",  # mooltrikona is a subset of own sign
+    "Friendly Sign": "other",
+    "Neutral Sign": "other",
+    "Enemy Sign": "other",
+    "Great Friend Sign": "other",
+    "Great Enemy Sign": "other",
+}
+
+# PyJHora planet ID → name (SWE constants)
+_PJH_PLANET_MAP = {
+    0: "Sun", 1: "Moon", 2: "Mars", 3: "Mercury", 4: "Jupiter",
+    5: "Venus", 6: "Saturn", 7: "Rahu", 8: "Ketu",
+}
+
+# Dignity from sign placement (simplified — matches PyJHora's approach)
+_EXALTATION = {"Sun": 0, "Moon": 1, "Mars": 9, "Mercury": 5, "Jupiter": 3, "Venus": 11, "Saturn": 6}
+_DEBILITATION = {"Sun": 6, "Moon": 7, "Mars": 3, "Mercury": 11, "Jupiter": 9, "Venus": 5, "Saturn": 0}
+_OWN_SIGNS = {
+    "Sun": [4], "Moon": [3], "Mars": [0, 7], "Mercury": [2, 5],
+    "Jupiter": [8, 11], "Venus": [1, 6], "Saturn": [9, 10],
+}
 
 MANIFEST_PATH = ROOT / "tests" / "fixtures" / "verified_360.json"
 PYJHORA_DIR = ROOT / "tests" / "fixtures" / "pyjhora_computed"
@@ -57,13 +104,43 @@ def _extract_lm_values(chart) -> dict:
         "lagna_degree": chart.lagna,
         "lagna_sign": chart.lagna_sign,
     }
+
+    # Phase 1: positions + nakshatras
     for name in PLANET_NAMES:
         pos = chart.planets[name]
-        values[f"longitude_{name.lower()}"] = pos.longitude
-        values[f"sign_{name.lower()}"] = pos.sign
+        n = name.lower()
+        values[f"longitude_{n}"] = pos.longitude
+        values[f"sign_{n}"] = pos.sign
         nak = nakshatra_position(pos.longitude)
-        values[f"nakshatra_{name.lower()}"] = nak.nakshatra
+        values[f"nakshatra_{n}"] = nak.nakshatra
+
+    # Phase 2: dignity
+    for name in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
+        try:
+            d = compute_dignity(name, chart)
+            values[f"dignity_{name.lower()}"] = _DIGNITY_COARSE.get(d.dignity.value, "other")
+        except Exception:
+            values[f"dignity_{name.lower()}"] = None
+
+    # Phase 2: house lords
+    for h in range(1, 13):
+        sign_idx = (chart.lagna_sign_index + h - 1) % 12
+        values[f"house_{h}_lord"] = _SIGN_LORDS[sign_idx]
+
     return values
+
+
+def _pjh_dignity(planet_name: str, sign_index: int) -> str:
+    """Derive dignity from sign placement (matches basic Parashari rules)."""
+    if planet_name in ("Rahu", "Ketu"):
+        return "other"
+    if sign_index == _EXALTATION.get(planet_name):
+        return "exalted"
+    if sign_index == _DEBILITATION.get(planet_name):
+        return "debilitated"
+    if sign_index in _OWN_SIGNS.get(planet_name, []):
+        return "own"
+    return "other"  # friend/enemy/neutral requires relationship table — compare at coarser level
 
 
 def _extract_pjh_values(pjh: dict) -> dict:
@@ -72,11 +149,39 @@ def _extract_pjh_values(pjh: dict) -> dict:
         "lagna_degree": pjh.get("lagna_degree", 0.0),
         "lagna_sign": pjh.get("lagna_sign", ""),
     }
+
     planets = pjh.get("planets", {})
+    lagna_sign_index = pjh.get("lagna_sign_index", 0)
+
+    # Phase 1: positions
     for name in PLANET_NAMES:
         pdata = planets.get(name, {})
-        values[f"longitude_{name.lower()}"] = pdata.get("longitude")
-        values[f"sign_{name.lower()}"] = pdata.get("sign")
+        n = name.lower()
+        values[f"longitude_{n}"] = pdata.get("longitude")
+        values[f"sign_{n}"] = pdata.get("sign")
+
+        # Phase 1+: nakshatras (derived from longitude)
+        lon = pdata.get("longitude")
+        if lon is not None:
+            nak_idx = int(lon / (360.0 / 27.0))
+            values[f"nakshatra_{n}"] = _NAK_NAMES[nak_idx] if 0 <= nak_idx <= 26 else None
+        else:
+            values[f"nakshatra_{n}"] = None
+
+    # Phase 2: dignity (derived from sign placement)
+    for name in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
+        pdata = planets.get(name, {})
+        si = pdata.get("sign_index")
+        if si is not None:
+            values[f"dignity_{name.lower()}"] = _pjh_dignity(name, si)
+        else:
+            values[f"dignity_{name.lower()}"] = None
+
+    # Phase 2: house lords
+    for h in range(1, 13):
+        sign_idx = (lagna_sign_index + h - 1) % 12
+        values[f"house_{h}_lord"] = _SIGN_LORDS[sign_idx]
+
     return values
 
 
@@ -92,7 +197,12 @@ def _normalize_values(values: dict) -> dict:
                 out[key] = normalize_longitude(float(val))
             except (ValueError, TypeError):
                 out[key] = val
-        elif "sign" in key and "nakshatra" not in key:
+        elif "nakshatra" in key:
+            try:
+                out[key] = normalize_nakshatra(val)
+            except (ValueError, TypeError):
+                out[key] = val
+        elif "sign" in key:
             try:
                 out[key] = normalize_sign(val)
             except (ValueError, TypeError):
@@ -103,20 +213,30 @@ def _normalize_values(values: dict) -> dict:
 
 
 def _build_schema(has_edge_flags: bool) -> dict:
-    """Build the field comparison schema."""
+    """Build the field comparison schema — Phase 1 + 2 + 3."""
     lon_tol = 0.2 if has_edge_flags else 0.1
     schema = {
         "lagna_degree": {"field_type": "longitude", "tolerance": lon_tol},
         "lagna_sign": {"field_type": "categorical"},
     }
+
+    # Phase 1: positions + nakshatras
     for name in PLANET_NAMES:
         n = name.lower()
         schema[f"longitude_{n}"] = {
             "field_type": "longitude", "tolerance": lon_tol,
         }
         schema[f"sign_{n}"] = {"field_type": "categorical"}
-        # nakshatra comparison deferred to Phase 2 — requires PyJHora
-        # nakshatra extraction (not exposed by rasi_chart output)
+        schema[f"nakshatra_{n}"] = {"field_type": "categorical"}
+
+    # Phase 2: dignity
+    for name in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
+        schema[f"dignity_{name.lower()}"] = {"field_type": "categorical"}
+
+    # Phase 2: house lords
+    for h in range(1, 13):
+        schema[f"house_{h}_lord"] = {"field_type": "categorical"}
+
     return schema
 
 
