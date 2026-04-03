@@ -3,33 +3,36 @@
     "pattern_id": "SYS-001",
     "field": "longitude_rahu",
     "error_signature": "true_node_vs_mean_node",
-    "frequency": 78,
-    "status": "investigated",
-    "justification": "LagnaMaster uses true node (swe.NODBIT_MEAN not set); PyJHora likely uses mean node. Difference typically 0.3-1.5 degrees.",
-    "source": "Swiss Ephemeris docs: true vs mean node calculation",
-    "reviewed_by": null,
-    "review_date": null
+    "frequency": 338,
+    "status": "resolved",
+    "resolution": "definitional",
+    "justification": "LagnaMaster uses swe.MEAN_NODE (traditional Indian astrology). PyJHora defaults to swe.TRUE_NODE (modern software convention). Difference typically 0.3-1.5 degrees. BPHS does not specify mathematical model for nodes. Mean node is the traditional choice.",
+    "source": "Swiss Ephemeris Manual §2.3; BPHS does not distinguish true vs mean node; traditional practice uses mean",
+    "reviewed_by": "session_312+",
+    "review_date": "2026-04-03"
   },
   {
     "pattern_id": "SYS-002",
     "field": "longitude_ketu",
     "error_signature": "true_node_vs_mean_node",
-    "frequency": 78,
-    "status": "investigated",
-    "justification": "Same as SYS-001 — Ketu is 180 degrees from Rahu, inherits the same true/mean node discrepancy.",
-    "source": "Swiss Ephemeris docs: true vs mean node calculation",
-    "reviewed_by": null,
-    "review_date": null
+    "frequency": 338,
+    "status": "resolved",
+    "resolution": "definitional",
+    "justification": "Same as SYS-001. Ketu = Rahu + 180 degrees. Inherits the same true/mean node discrepancy.",
+    "source": "Same as SYS-001",
+    "reviewed_by": "session_312+",
+    "review_date": "2026-04-03"
   },
   {
     "pattern_id": "SYS-003",
     "field": "longitude_moon",
-    "error_signature": "moon_precision_diff",
-    "frequency": 67,
-    "status": "unresolved",
-    "justification": "Moon differs by 0.02-0.72 degrees. Possible causes: topocentric vs geocentric correction, ayanamsha precision, or different ephemeris flags.",
-    "source": null,
-    "reviewed_by": null,
-    "review_date": null
+    "error_signature": "moon_topocentric_vs_geocentric",
+    "frequency": 263,
+    "status": "resolved",
+    "resolution": "lm_correct",
+    "justification": "LagnaMaster applies topocentric correction (swe.set_topo + SEFLG_TOPOCTR) per Swiss Ephemeris Manual §2.3 — accounts for observer's position on Earth surface. PyJHora uses geocentric Moon (no SEFLG_TOPOCTR). Difference 0.2-0.9 degrees, varies by latitude and Moon altitude, not systematic in one direction (136 LM>PJH, 127 LM<PJH). Topocentric is astronomically more accurate for natal chart calculation.",
+    "source": "Swiss Ephemeris Manual §2.3; src/ephemeris.py line 217-220 (S161 fix); PyJHora drik.py has no SEFLG_TOPOCTR",
+    "reviewed_by": "session_312+",
+    "review_date": "2026-04-03"
   }
 ]

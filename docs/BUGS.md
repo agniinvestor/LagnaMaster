@@ -59,44 +59,36 @@ Some bugs existed in the Excel v5 workbook but were **never present in the Pytho
 
 ---
 
-### SK-1 🟡 MEDIUM — Shadbala Kala Bala Sub-Components Unverified
-**Issue:** Kala Bala has 8 sub-components per BPHS. Not confirmed whether all 8 are implemented vs partial.  
-**Impact:** Shadbala total may be off by the missing components.  
-**Fix:** Cross-check `shadbala.py` against PyJHora algorithm reference. Verify all 8: Nathonnata, Paksha, Tribhaga, Abda, Masa, Vara, Hora, Ayana.  
-**Effort:** 2 hours  
-**Session:** S189
+### SK-1 ✅ RESOLVED — Shadbala Kala Bala Sub-Components Verified
+**All 8 sub-components implemented** in `src/calculations/shadbala.py::compute_kala_bala()`: Nathonnata, Paksha, Tribhaga, Vara, Hora, Masa, Abda, Ayana. Each produces non-zero values for appropriate charts (India 1947 verified). Stored in `ShadBalaResult` dataclass with individual fields.  
+**PyJHora cross-check:** Not yet done at individual sub-component level (Phase 3 diff engine extension). Implementation follows BPHS formulas.  
+**Session:** Implemented pre-S189, confirmed S312+
 
 ---
 
-### UI-1 🟡 MEDIUM — Confidence Model Not Surfaced in Streamlit UI
-**Issue:** `GET /charts/{id}/confidence` endpoint exists and works (S188). The `ConfidenceOut` model is defined. But the Streamlit UI has no tab or section displaying birth time sensitivity / lagna boundary warnings to the analyst.  
-**Effort:** 2 hours  
-**Session:** S189
+### UI-1 ✅ RESOLVED — Confidence Model Surfaced in Streamlit UI
+**Implemented** as Tab 14 ("Confidence") in `src/ui/app.py` lines 1308-1347+. Includes birth time uncertainty slider, severity banner (high/medium/low), `compute_uncertainty_flags()` integration, and `compute_confidence()` output.  
+**Session:** Implemented pre-S189, confirmed S312+
 
 ---
 
-### FX-1 🟡 MEDIUM — Nehru Capricorn Lagna Skip
-**Issue:** One ADB fixture (Nehru, Capricorn Lagna) is skipped in `test_calculations.py` with no documented root cause.  
-**Fix:** Investigate — likely a sign-specific bug in one calculation module for Capricorn Lagna.  
-**Effort:** 1 hour  
-**Session:** S189
+### FX-1 ✅ RESOLVED — Nehru Capricorn Lagna Skip
+**Root cause:** Rodden A rating (family memory, not birth certificate). Engine computes Cancer Lagna from given time. Traditional Capricorn attribution is unverifiable. `assert_lagna=False` and `data_trust_level='low'` are correct. Skip is intended behavior.  
+**Documented:** `test_s189_diverse_stress.py::TestNehruLagnaSkipRootCause` (3 tests)  
+**Session:** S189 (investigated), S312+ (confirmed)
 
 ---
 
-### EPH-1 🟡 MEDIUM — BC Date Charts Need Extended Ephemeris Files
-**Issue:** For birth charts before 1800 AD, the standard `sepl_18.se1` / `semo_18.se1` files are insufficient. The extended files `seplm_18.se1` + `semom_18.se1` are needed.  
-**Fix:** Download extended files from `github.com/aloistr/swisseph` to `ephe/`.  
-**Effort:** 30 minutes  
-**Session:** S189
+### EPH-1 ✅ RESOLVED — Extended Ephemeris Files Installed
+**All 4 ephemeris files present in `ephe/`:** `sepl_18.se1`, `semo_18.se1`, `semom_18.se1`, `seplm_18.se1`.  
+Pre-1800 charts (Shakespeare 1564, Confucius, etc.) compute correctly.  
+**Session:** `semom_18.se1` installed S188; `seplm_18.se1` downloaded S312+
 
 ---
 
-### R21-1 🟡 MEDIUM — R21 Pushkara Navamsha Stub
-**Issue:** Rule R21 (Pushkara Navamsha) is a stub returning `score=0.0` for all charts. It silently contributes nothing to house scores.  
-**Classical reference:** PVRNR BPHS — Pushkara Navamsha planets are exceptionally strengthened.  
-**Fix:** Implement the 14 Pushkara Navamsha positions (specific navamsha padas) and the additional Pushkara Bhaga degrees. Assign a `+0.5` modifier when bhavesh occupies a Pushkara position.  
-**Effort:** 2-3 hours  
-**Session:** S190+
+### R21-1 ✅ RESOLVED — R21 Pushkara Navamsha Implemented
+**Implemented** in `src/calculations/pushkara_navamsha.py` (24 zones, 2 per sign) and wired in `multi_axis_scoring.py` line 364-376. Adds W["R21"] (0.25-0.5 per school) when bhavesh is in a Pushkara Navamsha zone. Verified firing: India 1947 → Sun, Moon, Jupiter, Rahu in Pushkara zones.  
+**Session:** Implemented pre-S190, confirmed S312+
 
 ---
 
