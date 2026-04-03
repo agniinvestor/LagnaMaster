@@ -399,6 +399,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Jupiter", "house": 9},
+        {"type": "planet_in_house_from", "planet": "Venus", "reference": "Jupiter", "offset": 9, "mode": "occupies"},
     ],
     signal_group="jupiter_h9_venus_child_40",
     direction="favorable", intensity="moderate",
@@ -417,7 +418,6 @@ b.add(
     ),
     concordance_texts=[],
     modifiers=[
-        {"condition": "venus_in_9th_from_jupiter", "effect": "conditionalizes", "strength": "moderate"},
         {"condition": "ascendant_lord_with_venus", "effect": "amplifies", "strength": "moderate"},
     ],
 )
@@ -453,6 +453,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "any_malefic", "house": 5},
+        {"type": "planet_in_house_from", "planet": "any_malefic", "reference": "Jupiter", "offset": 5, "mode": "occupies"},
     ],
     signal_group="malefic_5th_from_jupiter_child_loss_33_36",
     direction="unfavorable", intensity="strong",
@@ -467,15 +468,13 @@ b.add(
         "Dual condition: (1) a malefic in the 5th house from ascendant, AND "
         "(2) another malefic in the 5th from Jupiter (relative house — "
         "Jupiter's sign + 4). Both afflictions required simultaneously. "
-        "Condition (2) cannot be expressed as a current primitive; "
-        "encoded as modifier pending planet-relative-house primitive."
+        "Both conditions are now structurally encoded."
     ),
     description=(
         "There will be loss of children at 33 and 36 if a malefic is in "
         "the 5th from Jupiter while another is in the 5th from the ascendant."
     ),
     concordance_texts=[],
-    modifiers=[{"condition": "malefic_in_5th_from_jupiter", "effect": "conditionalizes", "strength": "strong"}],
 )
 
 # ═══ v.23: Grief from child loss at 56 ═══════════════════════════════════════
@@ -679,7 +678,10 @@ b.add(
 
 # v.24-32 gap: Only 1 son (malefic 5th from asc + Jupiter 5th from Saturn)
 b.add(
-    conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 5}],
+    conditions=[
+        {"type": "planet_in_house", "planet": "any_malefic", "house": 5},
+        {"type": "planet_in_house_from", "planet": "Jupiter", "reference": "Saturn", "offset": 5, "mode": "occupies"},
+    ],
     signal_group="malefic_5th_jupiter_5th_from_saturn_1_son",
     direction="unfavorable", intensity="moderate", domains=["progeny"],
     predictions=[{"entity": "children", "claim": "only_one_son",
@@ -687,12 +689,31 @@ b.add(
     verse_ref="Ch.16 v.24-32",
     commentary_context="Only one son if malefic in 5th from ascendant while Jupiter is in 5th from Saturn or vice versa.",
     description="Malefic in 5th from ascendant + Jupiter in 5th from Saturn (or vice versa): only one son.",
-    modifiers=[{"condition": "jupiter_5th_from_saturn_or_vice_versa", "effect": "conditionalizes", "strength": "strong"}],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1631"]},
+    prediction_type="trait")
+
+# v.24-32 gap: Only 1 son — Saturn 5th from Jupiter variant (alternative)
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "any_malefic", "house": 5},
+        {"type": "planet_in_house_from", "planet": "Saturn", "reference": "Jupiter", "offset": 5, "mode": "occupies"},
+    ],
+    signal_group="saturn_5th_from_jupiter_1_son_alt",
+    direction="unfavorable", intensity="moderate", domains=["progeny"],
+    predictions=[{"entity": "children", "claim": "only_one_son",
+                  "domain": "progeny", "direction": "unfavorable", "magnitude": 0.5}],
+    verse_ref="Ch.16 v.24-32",
+    commentary_context="Only one son if malefic in 5th from ascendant while Jupiter is in 5th from Saturn or vice versa.",
+    description="Malefic in 5th from ascendant + Saturn in 5th from Jupiter (vice versa variant): only one son.",
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1629"]},
     prediction_type="trait")
 
 # v.24-32 gap: Offspring through 2nd/3rd wife only
 b.add(
-    conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 5}],
+    conditions=[
+        {"type": "planet_in_house", "planet": "any_malefic", "house": 5},
+        {"type": "planet_in_house_from", "planet": "Saturn", "reference": "Jupiter", "offset": 5, "mode": "occupies"},
+    ],
     signal_group="malefic_h5_saturn_5th_from_jupiter_later_wife",
     direction="unfavorable", intensity="moderate", domains=["progeny", "marriage"],
     predictions=[{"entity": "children", "claim": "offspring_only_through_2nd_or_3rd_wife",
@@ -700,7 +721,6 @@ b.add(
     verse_ref="Ch.16 v.24-32",
     commentary_context="If the 5th house has a malefic in it or if Saturn is in the 5th from Jupiter, the native will beget offspring only through his 2nd or 3rd wife.",
     description="Malefic in 5th or Saturn in 5th from Jupiter: offspring only through 2nd or 3rd wife.",
-    modifiers=[{"condition": "saturn_5th_from_jupiter", "effect": "conditionalizes", "strength": "moderate"}],
     prediction_type="trait")
 
 BPHS_V2_CH16_REGISTRY = b.build()
