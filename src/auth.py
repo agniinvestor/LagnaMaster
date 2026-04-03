@@ -1,6 +1,7 @@
 """src/auth.py — LagnaMaster Session 22 — multi-user JWT auth."""
 
 from __future__ import annotations
+import contextlib
 import os
 import sqlite3
 from dataclasses import dataclass
@@ -65,13 +66,21 @@ def _p(path):
     return USER_DB_PATH if path is _SENTINEL else str(path)
 
 
+@contextlib.contextmanager
 def _cx(path):
     p = _p(path)
     Path(p).parent.mkdir(parents=True, exist_ok=True)
     c = sqlite3.connect(p)
     c.row_factory = sqlite3.Row
     c.execute("PRAGMA journal_mode=WAL")
-    return c
+    try:
+        yield c
+        c.commit()
+    except BaseException:
+        c.rollback()
+        raise
+    finally:
+        c.close()
 
 
 def init_user_db(path=_SENTINEL):
