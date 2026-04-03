@@ -21,6 +21,8 @@ sys.path.insert(0, str(ROOT))
 from jhora.panchanga import drik  # noqa: E402, TID251
 from jhora.horoscope.chart.charts import rasi_chart  # noqa: E402, TID251
 from jhora.horoscope.chart import ashtakavarga  # noqa: E402, TID251
+from jhora.horoscope.chart.charts import divisional_chart  # noqa: E402, TID251
+from jhora.horoscope.chart import strength as jhora_strength  # noqa: E402, TID251
 from jhora.horoscope.dhasa.graha import vimsottari  # noqa: E402, TID251
 import swisseph as swe  # noqa: E402
 
@@ -113,14 +115,42 @@ def compute_one_chart(birth_data: dict) -> dict | None:
         except Exception:
             result["sarva_av"] = None
 
-        # Phase 3: Vimsottari dasha
+        # Phase 3: Vimsottari dasha (sequence + JD boundaries)
         try:
             md = vimsottari.vimsottari_mahadasa(jd, place)
             result["vimsottari_sequence"] = [
                 PJH_PLANET_MAP.get(k, str(k)) for k in md.keys()
             ]
+            result["vimsottari_jds"] = [float(v) for v in md.values()]
         except Exception:
             result["vimsottari_sequence"] = None
+            result["vimsottari_jds"] = None
+
+        # Phase 3: Shadbala
+        try:
+            sb = jhora_strength.shad_bala(jd, place)
+            result["shadbala"] = sb
+        except Exception:
+            result["shadbala"] = None
+
+        # Phase 3: D9 Navamsha
+        try:
+            d9_chart = divisional_chart(jd, place, divisional_chart_factor=9)
+            d9_data = {"planets": {}}
+            for entry in d9_chart:
+                pid, (rasi_idx, deg) = entry
+                if pid == "L":
+                    d9_data["lagna_sign"] = SIGN_NAMES[rasi_idx]
+                elif pid in PJH_PLANET_MAP:
+                    name = PJH_PLANET_MAP[pid]
+                    d9_data["planets"][name] = {
+                        "sign": SIGN_NAMES[rasi_idx],
+                        "sign_index": rasi_idx,
+                        "degree_in_sign": deg,
+                    }
+            result["d9"] = d9_data
+        except Exception:
+            result["d9"] = None
 
         return result
 

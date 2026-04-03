@@ -36,9 +36,21 @@ for _s in ["aries", "taurus", "gemini", "cancer", "leo", "virgo",
            "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"]:
     FIELD_MODULE[f"sav_{_s}"] = "ashtakavarga"
 FIELD_MODULE["vimsottari_sequence"] = "dashas"
+for _i in range(3):
+    FIELD_MODULE[f"dasha_{_i}_start_jd"] = "dashas"
 FIELD_MODULE["tithi"] = "panchangam"
 FIELD_MODULE["vara"] = "panchangam"
 FIELD_MODULE["yoga"] = "panchangam"
+for _p in ["sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn"]:
+    for _c in ["sthana", "dig", "kala", "chesta", "naisargika", "drik"]:
+        FIELD_MODULE[f"shadbala_{_p}_{_c}"] = "shadbala"
+    FIELD_MODULE[f"aspect7_{_p}"] = "aspects"
+FIELD_MODULE["d9_lagna"] = "vargas"
+for _p in ["sun", "moon", "mars", "mercury", "jupiter", "venus",
+           "saturn", "rahu", "ketu"]:
+    FIELD_MODULE[f"d9_{_p}"] = "vargas"
+for _h in range(1, 13):
+    FIELD_MODULE[f"house_{_h}_planets"] = "house_occupants"
 
 
 def generate_report(as_json: bool = False) -> dict | None:

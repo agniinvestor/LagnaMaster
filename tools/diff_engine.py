@@ -158,7 +158,22 @@ def _extract_lm_values(chart, birth_data: dict | None = None) -> dict:
     except Exception:
         pass
 
-    # Phase 3: Vimsottari dasha sequence
+    # Phase 2: planets-in-house
+    for h in range(1, 13):
+        sign_idx = (chart.lagna_sign_index + h - 1) % 12
+        occupants = sorted(
+            name for name, pos in chart.planets.items()
+            if pos.sign_index == sign_idx
+        )
+        values[f"house_{h}_planets"] = ",".join(occupants) if occupants else ""
+
+    # Phase 2: aspects (7th house aspect for all planets)
+    for name in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
+        pos = chart.planets[name]
+        aspected_sign = (pos.sign_index + 6) % 12  # 7th aspect (all planets)
+        values[f"aspect7_{name.lower()}"] = SIGN_NAMES[aspected_sign]
+
+    # Phase 3: Vimsottari dasha periods
     if birth_data:
         try:
             from src.calculations.vimshottari_dasa import compute_vimshottari_dasa
@@ -171,8 +186,49 @@ def _extract_lm_values(chart, birth_data: dict | None = None) -> dict:
                 values["vimsottari_sequence"] = ",".join(
                     md.lord for md in vd
                 )
+                # Period boundaries (JD for first 3 transitions)
+                for i, md in enumerate(vd[:3]):
+                    import swisseph as swe
+                    jd_start = swe.julday(
+                        md.start.year, md.start.month, md.start.day,
+                        md.start.hour + md.start.minute / 60.0
+                    )
+                    values[f"dasha_{i}_start_jd"] = jd_start
         except Exception:
             pass
+
+    # Phase 3: Shadbala (6 components per planet)
+    if birth_data:
+        try:
+            from src.calculations.shadbala import compute_shadbala
+            from datetime import datetime
+            bd = birth_data
+            birth_dt = datetime(bd["year"], bd["month"], bd["day"],
+                                int(bd["hour"]), int((bd["hour"] % 1) * 60))
+            for name in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
+                sb = compute_shadbala(name, chart, birth_dt)
+                n = name.lower()
+                values[f"shadbala_{n}_sthana"] = round(sb.sthana_bala, 1)
+                values[f"shadbala_{n}_dig"] = round(sb.dig_bala, 1)
+                values[f"shadbala_{n}_kala"] = round(sb.kala_bala, 1)
+                values[f"shadbala_{n}_chesta"] = round(sb.chesta_bala, 1)
+                values[f"shadbala_{n}_naisargika"] = round(sb.naisargika_bala, 1)
+                values[f"shadbala_{n}_drik"] = round(sb.drik_bala, 1)
+        except Exception:
+            pass
+
+    # Phase 3: D9 Navamsha
+    try:
+        from src.calculations.varga import compute_varga
+        vc = compute_varga(chart)
+        d9 = vc.d9()
+        values["d9_lagna"] = d9.varga_lagna_sign
+        for name in PLANET_NAMES:
+            p = d9.planets.get(name)
+            if p:
+                values[f"d9_{name.lower()}"] = p.varga_sign
+    except Exception:
+        pass
 
     return values
 
@@ -238,16 +294,60 @@ def _extract_pjh_values(pjh: dict) -> dict:
         pjh_yoga = panch.get("yoga")
         values["yoga"] = pjh_yoga - 1 if pjh_yoga is not None else None
 
+    # Phase 2: planets-in-house (derived from sign placements)
+    for h in range(1, 13):
+        sign_idx = (lagna_sign_index + h - 1) % 12
+        occupants = sorted(
+            name for name in PLANET_NAMES
+            if planets.get(name, {}).get("sign_index") == sign_idx
+        )
+        values[f"house_{h}_planets"] = ",".join(occupants) if occupants else ""
+
+    # Phase 2: aspects (7th house aspect — universal for all planets)
+    for name in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
+        pdata = planets.get(name, {})
+        si = pdata.get("sign_index")
+        if si is not None:
+            values[f"aspect7_{name.lower()}"] = SIGN_NAMES[(si + 6) % 12]
+
     # Phase 3: Sarva Ashtakavarga
     sav = pjh.get("sarva_av")
     if sav and len(sav) == 12:
         for i, sign in enumerate(SIGN_NAMES):
             values[f"sav_{sign.lower()}"] = sav[i]
 
-    # Phase 3: Vimsottari dasha sequence
+    # Phase 3: Vimsottari dasha
     vseq = pjh.get("vimsottari_sequence")
     if vseq:
         values["vimsottari_sequence"] = ",".join(vseq)
+    # Period boundaries from PyJHora JDs
+    vjds = pjh.get("vimsottari_jds")
+    if vjds:
+        for i, jd_val in enumerate(vjds[:3]):
+            values[f"dasha_{i}_start_jd"] = jd_val
+
+    # Phase 3: Shadbala (PyJHora returns [7 planets][7 components])
+    sb = pjh.get("shadbala")
+    if sb and isinstance(sb, list) and len(sb) >= 7:
+        _SB_PLANETS = ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
+        for i, name in enumerate(_SB_PLANETS):
+            if isinstance(sb[i], (list, tuple)) and len(sb[i]) >= 6:
+                n = name.lower()
+                values[f"shadbala_{n}_sthana"] = round(sb[i][0], 1)
+                values[f"shadbala_{n}_dig"] = round(sb[i][1], 1)
+                values[f"shadbala_{n}_kala"] = round(sb[i][2], 1)
+                values[f"shadbala_{n}_chesta"] = round(sb[i][3], 1)
+                values[f"shadbala_{n}_naisargika"] = round(sb[i][4], 1)
+                values[f"shadbala_{n}_drik"] = round(sb[i][5], 1)
+
+    # Phase 3: D9 Navamsha
+    d9 = pjh.get("d9")
+    if d9:
+        values["d9_lagna"] = d9.get("lagna_sign")
+        for name in PLANET_NAMES:
+            pdata = d9.get("planets", {}).get(name)
+            if pdata:
+                values[f"d9_{name.lower()}"] = pdata.get("sign")
 
     return values
 
@@ -309,12 +409,32 @@ def _build_schema(has_edge_flags: bool) -> dict:
     for h in range(1, 13):
         schema[f"house_{h}_lord"] = {"field_type": "categorical"}
 
+    # Phase 2: planets-in-house
+    for h in range(1, 13):
+        schema[f"house_{h}_planets"] = {"field_type": "categorical"}
+
+    # Phase 2: 7th aspects
+    for name in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
+        schema[f"aspect7_{name.lower()}"] = {"field_type": "categorical"}
+
     # Phase 3: Sarva Ashtakavarga (integer per sign)
     for sign in SIGN_NAMES:
         schema[f"sav_{sign.lower()}"] = {"field_type": "integer"}
 
-    # Phase 3: Vimsottari dasha sequence (comma-joined string)
+    # Phase 3: Vimsottari dasha
     schema["vimsottari_sequence"] = {"field_type": "categorical"}
+    for i in range(3):
+        schema[f"dasha_{i}_start_jd"] = {"field_type": "degree", "tolerance": 1.0}
+
+    # Phase 3: Shadbala (6 components × 7 planets)
+    for name in ["sun", "moon", "mars", "mercury", "jupiter", "venus", "saturn"]:
+        for comp in ["sthana", "dig", "kala", "chesta", "naisargika", "drik"]:
+            schema[f"shadbala_{name}_{comp}"] = {"field_type": "degree", "tolerance": 5.0}
+
+    # Phase 3: D9 Navamsha
+    schema["d9_lagna"] = {"field_type": "categorical"}
+    for name in PLANET_NAMES:
+        schema[f"d9_{name.lower()}"] = {"field_type": "categorical"}
 
     return schema
 
