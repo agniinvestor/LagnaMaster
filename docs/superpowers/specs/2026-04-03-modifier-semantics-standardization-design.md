@@ -32,8 +32,15 @@ In-place migration to a strict 5-effect taxonomy with enforced effect-target con
 | `gates` | Controls whether the rule applies at all. If gate condition is absent, rule is inapplicable. | "Does the verse say this condition is REQUIRED for the prediction?" |
 | `amplifies` | Increases the prediction's magnitude/confidence. Rule fires regardless. | "Does this make the prediction stronger without changing its nature?" |
 | `attenuates` | Decreases the prediction's magnitude. Rule fires but weaker. | "Does this weaken the prediction without reversing it?" |
-| `negates` | Suppresses or reverses the prediction entirely. | "Does this CANCEL or REVERSE the predicted outcome?" |
-| `qualifies` | Changes interpretation context without changing direction or magnitude. | "Does this add a contextual nuance (e.g., 'more daughters than sons') without changing the base prediction?" |
+| `negates` | Cancels or replaces the base prediction outcome. The prediction no longer holds as stated. | "Does this CANCEL or REPLACE the predicted outcome entirely?" |
+| `qualifies` | Changes the type or nature of the prediction without changing direction or magnitude. | "Does this change WHAT is predicted (e.g., sons→daughters) without changing WHETHER it's favorable/unfavorable?" |
+
+### Attenuates vs Qualifies Boundary
+
+- `attenuates` → changes **magnitude** (fewer children, less wealth)
+- `qualifies` → changes **type or nature** (sons vs daughters, wealth vs fame)
+
+Example: "more daughters than sons" → `qualifies` (type change). "Fewer children" → `attenuates` (magnitude change).
 
 ### Gate vs Negate Boundary (Critical Invariant)
 
@@ -97,6 +104,27 @@ Do NOT key off wording — key off semantics.
 Example:
 - "gives sons" + "with Venus → more daughters" → this is `qualifies`, NOT `negates` (prediction direction unchanged, interpretation shifts)
 - "gives sons" + "with Mars → lose children" → this IS `negates` (prediction direction reversed)
+
+### Classification Checklist (for manual review of flagged modifiers)
+
+For each flagged modifier, apply this deterministic checklist:
+
+1. Remove the modifier mentally — does the rule's base prediction still make sense?
+   - **No** (prediction invalid without it) → `gates` (target: rule)
+   - **Yes** → continue to step 2
+
+2. Does the modifier change the prediction's **magnitude** (more/less/stronger/weaker)?
+   - **Yes, stronger** → `amplifies`
+   - **Yes, weaker** → `attenuates`
+   - **No** → continue to step 3
+
+3. Does the modifier change the **type or nature** of the outcome (e.g., sons→daughters, wealth→fame)?
+   - **Yes** → `qualifies`
+   - **No** → continue to step 4
+
+4. Does the modifier **cancel or replace** the prediction outcome entirely?
+   - **Yes** → `negates`
+   - **No** → re-examine; likely `qualifies` or `amplifies` with weak strength
 
 ### Strength Migration
 
