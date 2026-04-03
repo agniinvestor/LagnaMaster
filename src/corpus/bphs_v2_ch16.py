@@ -640,8 +640,8 @@ b.add(
     verse_ref="Ch.16 v.32",
     commentary_context="Santhanam: If the 5th lord is with Mars, one will live long but lose his children one after the other as they are born.",
     description="5th lord with Mars: native lives long but loses children one after the other as born.",
-    modifiers=[],
-    prediction_type="trait")
+    prediction_type="trait",
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1618"]})
 
 # ═══ GAP FILLS (identified by PDF-first audit 2026-04-01) ═════════════════════
 
