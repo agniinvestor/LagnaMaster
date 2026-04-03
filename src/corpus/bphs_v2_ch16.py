@@ -99,6 +99,7 @@ b.add(
     conditions=[
         {"type": "lord_in_house", "lord_of": 5, "house": [6, 8, 12]},
         {"type": "planet_in_house", "planet": "Mercury", "house": 5},
+        {"type": "planet_in_house", "planet": "Ketu", "house": 5},
     ],
     signal_group="h5_lord_dusthana_mercury_ketu_one_child",
     direction="unfavorable", intensity="moderate",
@@ -121,7 +122,6 @@ b.add(
         "even childlessness."
     ),
     concordance_texts=[],
-    modifiers=[{"condition": "ketu_also_in_5th", "effect": "amplifies", "strength": "moderate"}],
 )
 
 # ═══ v.8: Difficulty in begetting ════════════════════════════════════════════
@@ -351,6 +351,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Jupiter", "house": 5},
+        {"type": "planets_conjunct", "planets": ["lord_of_5", "Venus"]},
     ],
     signal_group="jupiter_h5_offspring_32",
     direction="favorable", intensity="moderate",
@@ -367,7 +368,6 @@ b.add(
         "one will obtain an offspring in his 32nd/33rd year."
     ),
     concordance_texts=[],
-    modifiers=[{"condition": "h5_lord_with_venus", "effect": "conditionalizes", "strength": "moderate"}],
 )
 
 # ═══ v.19: Child at 30 or 36 ═════════════════════════════════════════════════
@@ -541,26 +541,30 @@ b.add(
 
 # ═══ v.6: Saturn+Mercury in 5th → one child only ═════════════════════════════
 b.add(
-    conditions=[{"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"}],
+    conditions=[{"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"},
+               {"type": "planet_in_house", "planet": "Saturn", "house": 5},
+               {"type": "planet_in_house", "planet": "Mercury", "house": 5}],
     signal_group="h5_lord_fall_saturn_mercury_one_child",
     direction="unfavorable", intensity="moderate", domains=["progeny"],
     predictions=[{"entity": "children", "claim": "one_child_only_saturn_mercury_in_5th", "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6}],
     verse_ref="Ch.16 v.6",
     commentary_context="Santhanam: 5th lord in fall and not aspecting 5th while Saturn and Mercury in 5th = wife gives birth to one child only. Kakavandhya Dosha.",
     description="5th lord in fall, not aspecting 5th, while Saturn and Mercury in 5th: one child only.",
-    modifiers=[{"condition": "saturn_and_mercury_in_5th", "effect": "conditionalizes", "strength": "strong"}])
+)
 
 # ═══ v.7: 9th lord in ascendant + 5th lord fall + Ketu+Mercury → progeny after ordeal
 b.add(
     conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 1},
-                {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"}],
+                {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"},
+                {"type": "planet_in_house", "planet": "Ketu", "house": 5},
+                {"type": "planet_in_house", "planet": "Mercury", "house": 5}],
     signal_group="h9_lord_h1_h5_lord_fall_progeny_ordeal",
     direction="unfavorable", intensity="moderate", domains=["progeny"],
     predictions=[{"entity": "children", "claim": "progeny_after_great_ordeal", "domain": "progeny", "direction": "unfavorable", "magnitude": 0.6}],
     verse_ref="Ch.16 v.7",
     commentary_context="Santhanam: Mercury, Ketu, or Saturn in 5th = doubtful progeny. Two of them = Kakavandhya Dosha (single issue) or even childlessness.",
     description="9th lord in ascendant + 5th lord in fall + Ketu in 5th with Mercury: progeny after great ordeal.",
-    modifiers=[{"condition": "h5_lord_in_fall_ketu_mercury_in_5th", "effect": "conditionalizes", "strength": "strong"}])
+)
 
 # ═══ v.15: Born of other's loins (illegitimate) ══════════════════════════════
 b.add(
@@ -584,15 +588,15 @@ b.add(
 
 # ═══ v.17: Mean deeds — 3-4 malefics in 5th ══════════════════════════════════
 b.add(
-    conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 5}],
+    conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 5},
+               {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"}],
     signal_group="malefics_h5_mean_deeds_children",
     direction="unfavorable", intensity="moderate", domains=["progeny", "character_temperament"],
     predictions=[{"entity": "children", "claim": "children_indulge_in_mean_deeds", "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.5}],
     verse_ref="Ch.16 v.17",
     commentary_context="Santhanam: 5th occupied by 3-4 malefics + 5th lord in fall + benefic (including Mercury) excluded from 5th = children who indulge in mean deeds.",
     description="5th occupied by 3-4 malefics while 5th lord is in fall and benefic excluded: children indulge in mean deeds.",
-    modifiers=[{"condition": "h5_lord_in_fall", "effect": "amplifies", "strength": "strong"},
-               {"condition": "no_benefic_in_5th", "effect": "conditionalizes", "strength": "moderate"}])
+    modifiers=[{"condition": "no_benefic_in_5th", "effect": "conditionalizes", "strength": "moderate"}])
 
 # ═══ v.25-28: Number of children (individual slokas from the block) ═══════════
 b.add(
@@ -620,7 +624,8 @@ b.add(
     prediction_type="trait")
 
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 5, "house": 5}],
+    conditions=[{"type": "lord_in_house", "lord_of": 5, "house": 5},
+               {"type": "planets_conjunct", "planets": ["lord_of_5", "lord_of_2"]}],
     signal_group="h5_lord_h5_h2_lord_7_sons_3_die",
     direction="mixed", intensity="moderate", domains=["progeny", "longevity"],
     predictions=[
@@ -629,7 +634,6 @@ b.add(
     verse_ref="Ch.16 v.28",
     commentary_context="Santhanam: 5th lord in 5th in conjunction with 2nd lord = birth of 7 sons out of which 3 will pass away.",
     description="5th lord in 5th + conjunction with 2nd lord: 7 sons, 3 will pass away.",
-    modifiers=[{"condition": "conjunct_h2_lord", "effect": "conditionalizes", "strength": "moderate"}],
     prediction_type="trait")
 
 b.add(
@@ -660,7 +664,8 @@ b.add(
 # v.24-32 gap: 9 sons (Jupiter deep exaltation + Rahu + 2nd lord + 9th own lord)
 b.add(
     conditions=[{"type": "planet_dignity", "planet": "Jupiter", "dignity": "exalted"},
-                {"type": "planets_conjunct", "planets": ["Rahu", "lord_of_2"]}],
+                {"type": "planets_conjunct", "planets": ["Rahu", "lord_of_2"]},
+                {"type": "lord_in_house", "lord_of": 9, "house": 9}],
     signal_group="jupiter_deep_exalt_rahu_2nd_lord_9_sons",
     direction="favorable", intensity="strong", domains=["progeny"],
     predictions=[{"entity": "children", "claim": "nine_sons_indicated",
@@ -668,7 +673,6 @@ b.add(
     verse_ref="Ch.16 v.24-32",
     commentary_context="Jupiter in deep exaltation + Rahu with 2nd lord + 9th occupied by own lord → nine sons.",
     description="Jupiter deep exaltation + Rahu with 2nd lord + 9th lord in 9th: nine sons.",
-    modifiers=[{"condition": "9th_house_occupied_by_its_own_lord_completes_nine_son_yoga", "effect": "conditionalizes", "strength": "moderate"}],
     prediction_type="trait")
 
 # v.24-32 gap: Only 1 son (malefic 5th from asc + Jupiter 5th from Saturn)

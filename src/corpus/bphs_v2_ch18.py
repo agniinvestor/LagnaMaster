@@ -316,6 +316,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 7}],
       verse_ref="Ch.18 v.7-8",
       commentary_context="Santhanam: Mars in 7th = female of marriageable age, or one in her monthly course, or one devoid of conceiving ability. Jupiter in 7th is also no exception to this negative pattern.",
       description="Mars in 7th: associate with marriageable girls or those with menses.",
+      exceptions=["jupiter_in_7th_produces_similar_negative_effects"],
       rule_relationship={"type": "alternative", "related_rules": ["BPHS1828"]})
 
 b.add(conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 7}],

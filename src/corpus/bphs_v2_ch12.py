@@ -221,6 +221,7 @@ b.add(
         "relief in the course of time can be hoped."
     ),
     concordance_texts=[],
+    exceptions=["benefic_or_exalted_lagna_lord_provides_relief"],
     rule_relationship={"type": "mitigation", "related_rules": ["BPHS1200"]},
 )
 

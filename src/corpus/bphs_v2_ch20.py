@@ -24,13 +24,13 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 9},
       verse_ref="Ch.20 v.1-2", commentary_context="Santhanam: Bhagyasthana = fortune. One's capacity to retain wealth should be studied from 9th house.", description="9th lord with strength in the 9th: fortunate and affluent.",
       concordance_texts=["Saravali", "Phaladeepika"])
 
-b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 9}],
+b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 9},
+                  {"type": "lord_in_house", "lord_of": 9, "house": [1, 4, 7, 10]}],
       signal_group="jupiter_h9_fortune", direction="favorable", intensity="strong",
       domains=["wealth", "spirituality", "fame_reputation"],
       predictions=[{"entity": "native", "claim": "extremely_fortunate", "domain": "wealth", "direction": "favorable", "magnitude": 0.9}],
       verse_ref="Ch.20 v.2", commentary_context="Santhanam: Triple combination — Jupiter + 9th lord kendra + strong ascendant lord = highest grade of fortune.", description="Jupiter in 9th + 9th lord in angle + ascendant lord strong: extremely fortunate.",
-      concordance_texts=["Saravali"],
-      modifiers=[{"condition": "h9_lord_in_kendra", "effect": "amplifies", "strength": "strong"}])
+      concordance_texts=["Saravali"])
 
 # ═══ v.3: Fortunate father ═══════════════════════════════════════════════════
 b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_9", "dignity": "strong"}],
@@ -264,7 +264,8 @@ b.add(
 # v.26 gap: Venus deep exaltation + 9th lord + Saturn in 3rd → abundant fortunes
 b.add(
     conditions=[{"type": "planet_dignity", "planet": "Venus", "dignity": "exalted"},
-                {"type": "planet_in_house", "planet": "Saturn", "house": 3}],
+                {"type": "planet_in_house", "planet": "Saturn", "house": 3},
+                {"type": "planets_conjunct", "planets": ["Venus", "lord_of_9"]}],
     signal_group="venus_exalted_h9_lord_saturn_h3_fortune",
     direction="favorable", intensity="strong", domains=["wealth"],
     predictions=[{"entity": "native", "claim": "abundant_fortunes",
@@ -272,7 +273,7 @@ b.add(
     verse_ref="Ch.20 v.26",
     commentary_context="One will enjoy abundant fortunes if Venus is in deep exaltation and be in the company of the 9th lord as Saturn is in the 3rd.",
     description="Venus in deep exaltation + company of 9th lord + Saturn in 3rd: abundant fortunes.",
-    modifiers=[{"condition": "venus_in_company_of_9th_lord", "effect": "conditionalizes", "strength": "moderate"}])
+)
 
 # v.29 gap: 9th lord in 9th + asc lord in asc + Jupiter in 7th → wealth/conveyances
 b.add(

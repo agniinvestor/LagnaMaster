@@ -211,16 +211,16 @@ b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_10", "dignity": 
       modifiers=[{"condition": "h10_from_both_asc_and_10th_with_malefics", "effect": "amplifies", "strength": "moderate"}])
 
 # ═══ v.19: Fame — Moon in 10th ═══════════════════════════════════════════════
-b.add(conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 10}],
+b.add(conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 10},
+                  {"type": "lord_in_house", "lord_of": 10, "house": [1, 5, 9]},
+                  {"type": "lord_in_house", "lord_of": 1, "house": [1, 4, 7, 10]}],
       signal_group="moon_h10_fame_1", direction="favorable", intensity="strong",
       domains=["fame_reputation"],
       predictions=[{"entity": "native", "claim": "endowed_with_fame_public_visibility", "domain": "fame_reputation", "direction": "favorable", "magnitude": 0.7}],
       verse_ref="Ch.21 v.19",
       commentary_context="Santhanam: First of three fame yogas (v.19-21). Moon in 10th = public visibility + 10th lord in trine + ascendant lord in kendra = lasting renown.",
       description="Moon in 10th + 10th lord in trine + ascendant lord in angle: endowed with fame.",
-      concordance_texts=["Saravali"],
-      modifiers=[{"condition": "h10_lord_in_trikona", "effect": "amplifies", "strength": "moderate"},
-                 {"condition": "ascendant_lord_in_kendra", "effect": "amplifies", "strength": "moderate"}])
+      concordance_texts=["Saravali"])
 
 # ═══ v.20: Fame — 11th lord in 10th ══════════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 10}],
@@ -233,14 +233,14 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 10}],
       modifiers=[{"condition": "h10_lord_strong_aspected_by_jupiter", "effect": "amplifies", "strength": "strong"}])
 
 # ═══ v.21: Fame — 10th lord in 9th ═══════════════════════════════════════════
-b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": 9}],
+b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": 9},
+                  {"type": "lord_in_house", "lord_of": 1, "house": 10},
+                  {"type": "planet_in_house", "planet": "Moon", "house": 5}],
       signal_group="h10_lord_h9_fame_3", direction="favorable", intensity="strong",
       domains=["fame_reputation"],
       predictions=[{"entity": "native", "claim": "fame_through_dharma_karma_connection", "domain": "fame_reputation", "direction": "favorable", "magnitude": 0.7}],
       verse_ref="Ch.21 v.21",
       commentary_context="Santhanam: Third fame yoga. 10th lord in 9th + ascendant lord in 10th + Moon in 5th = dharma-karma connection + purva punya = lasting renown.",
-      description="10th lord in 9th + ascendant lord in 10th + Moon in 5th: fame.",
-      modifiers=[{"condition": "ascendant_lord_in_10th", "effect": "amplifies", "strength": "moderate"},
-                 {"condition": "moon_in_5th_house_completes_dharma_karma_triple_combination", "effect": "amplifies", "strength": "moderate"}])
+      description="10th lord in 9th + ascendant lord in 10th + Moon in 5th: fame.")
 
 BPHS_V2_CH21_REGISTRY = b.build()

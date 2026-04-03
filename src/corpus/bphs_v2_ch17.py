@@ -227,6 +227,7 @@ b.add(
 b.add(
     conditions=[
         {"type": "planet_in_house", "planet": "Jupiter", "house": 6},
+        {"type": "planet_in_sign", "planet": "Moon", "sign": ["Sagittarius", "Pisces"]},
     ],
     signal_group="jupiter_h6_moon_sag_pisces_leprosy_19_22",
     direction="unfavorable", intensity="strong",
@@ -243,7 +244,6 @@ b.add(
         "from the ascendant, one will suffer from leprosy at the age of "
         "19 and 22."
     ),
-    modifiers=[{"condition": "moon_in_sagittarius_or_pisces", "effect": "conditionalizes", "strength": "strong"}],
     concordance_texts=[],
 )
 
