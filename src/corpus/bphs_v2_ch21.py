@@ -14,8 +14,7 @@ b = V2ChapterBuilder(chapter="Ch.21", category="10th_house_effects", id_start=21
                       sloka_count=20)
 
 # ═══ v.2: 10th lord strong → paternal happiness, fame ════════════════════════
-b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": "any"},
-                   {"type": "planet_dignity", "planet": "lord_of_10", "dignity": "strong"}],
+b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_10", "dignity": "strong"}],
       signal_group="h10_lord_strong_fame", direction="favorable", intensity="strong",
       domains=["career_status", "fame_reputation"],
       predictions=[{"entity": "native", "claim": "paternal_happiness_fame_good_deeds", "domain": "career_status", "direction": "favorable", "magnitude": 0.8}],
@@ -26,8 +25,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": "any"},
       rule_relationship={"type": "alternative", "related_rules": ["BPHS2101"]})
 
 # ═══ v.3a: 10th lord weak → obstructions ═════════════════════════════════════
-b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": "any"},
-                   {"type": "planet_dignity", "planet": "lord_of_10", "dignity": "weak"}],
+b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_10", "dignity": "weak"}],
       signal_group="h10_lord_weak_obstruction", direction="unfavorable", intensity="moderate",
       domains=["career_status"],
       predictions=[{"entity": "native", "claim": "obstructions_in_professional_work", "domain": "career_status", "direction": "unfavorable", "magnitude": 0.7}],
@@ -47,15 +45,22 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Rahu", "house": [1, 4, 
       description="Rahu strongly disposed in angle or trine: performs Jyotishtoma sacrifice, extremely religious.")
 
 # ═══ v.4: Royal patronage (+ contrary mirror) ════════════════════════════════
-b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": "any"}],
+b.add(conditions=[
+          {"type": "lord_in_sign", "lord_of": 10,
+           "sign": ["Sagittarius", "Pisces", "Taurus", "Libra", "Cancer", "Gemini", "Virgo"]},
+      ],
       signal_group="h10_lord_benefic_patronage", direction="favorable", intensity="strong",
       domains=["career_status", "wealth"],
       predictions=[{"entity": "native", "claim": "always_gain_through_royal_patronage_and_business", "domain": "career_status", "direction": "favorable", "magnitude": 0.7}],
       verse_ref="Ch.21 v.4",
-      commentary_context="Santhanam: 10th lord with benefic or in benefic's Rasi = ever gain. 'Anyatha-nyatha' = contrary situation: malefic/malefic Rasi = loser, will not serve king/worthy person.",
-      description="10th lord with benefic or in auspicious house: always gain through royal patronage and business.",
-      concordance_texts=["Saravali"],
-      modifiers=[{"condition": "with_benefic_or_in_benefic_rasi", "effect": "conditionalizes", "strength": "moderate"}])
+      commentary_context=(
+          "Santhanam: 10th lord with benefic or in benefic's Rasi = ever gain. "
+          "Benefic signs: Jupiter (Sag/Pisces), Venus (Taurus/Libra), "
+          "Moon (Cancer), Mercury (Gemini/Virgo). 'Anyatha-nyatha' = contrary: "
+          "malefic Rasi = loser."
+      ),
+      description="10th lord in benefic's Rasi: always gain through royal patronage and business.",
+      concordance_texts=["Saravali"])
 
 b.mirror("BPHS2103",
          description="Contrary: 10th lord with malefic or in malefic's Rasi — loser in calling, will not serve king.",
@@ -82,15 +87,20 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": 8},
       description="10th lord in 8th with Rahu: hate others, great fool, bad deeds.")
 
 # ═══ v.7: Saturn+Mars+10th lord in 7th → carnal ══════════════════════════════
-b.add(conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 7},
-                   {"type": "planet_in_house", "planet": "Mars", "house": 7}],
+b.add(conditions=[
+          {"type": "planet_in_house", "planet": "Saturn", "house": 7},
+          {"type": "planet_in_house", "planet": "Mars", "house": 7},
+          {"type": "lord_in_house", "lord_of": 10, "house": 7},
+      ],
       signal_group="saturn_mars_h10_lord_h7_carnal", direction="unfavorable", intensity="moderate",
       domains=["character_temperament", "marriage"],
       predictions=[{"entity": "native", "claim": "fond_of_carnal_pleasures_and_filling_belly", "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.5}],
       verse_ref="Ch.21 v.7",
-      commentary_context="Santhanam: 'Sisnodara Parayana' = devoted to male organ and stomach. Saturn+Mars+10th lord all in 7th as malefic.",
-      description="Saturn, Mars and 10th lord in 7th as malefic: fond of carnal pleasures and filling belly.",
-      modifiers=[{"condition": "h10_lord_also_in_7th", "effect": "conditionalizes", "strength": "moderate"}])
+      commentary_context=(
+          "Santhanam: 'Sisnodara Parayana' = devoted to male organ and stomach. "
+          "All three required in 7th: Saturn + Mars + 10th lord."
+      ),
+      description="Saturn, Mars and 10th lord all in 7th: fond of carnal pleasures and filling belly.")
 
 # ═══ v.8-10: Exalted 10th lord + Jupiter → honour, robes ═════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": [1, 4, 5, 7, 9, 10]},
@@ -108,15 +118,21 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": [1, 4, 5, 7,
       modifiers=[{"condition": "11th_lord_also_in_10th_with_10th_lord_and_jupiter", "effect": "amplifies", "strength": "strong"}])
 
 # ═══ v.11: 4 malefics in 11th → cessation of duties ═════════════════════════
-b.add(conditions=[{"type": "planet_in_house", "planet": "Rahu", "house": 11},
-                   {"type": "planet_in_house", "planet": "Sun", "house": 11}],
+b.add(conditions=[
+          {"type": "planet_in_house", "planet": "Rahu", "house": 11},
+          {"type": "planet_in_house", "planet": "Sun", "house": 11},
+          {"type": "planet_in_house", "planet": "Saturn", "house": 11},
+          {"type": "planet_in_house", "planet": "Mars", "house": 11},
+      ],
       signal_group="rahu_sun_saturn_mars_h11_cessation", direction="unfavorable", intensity="strong",
       domains=["career_status"],
       predictions=[{"entity": "native", "claim": "cessation_of_duties_no_happy_calling", "domain": "career_status", "direction": "unfavorable", "magnitude": 0.7}],
       verse_ref="Ch.21 v.11",
-      commentary_context="Santhanam: Sun, Mars, Rahu, Saturn in 11th = not successful, no happy calling or profession worth the name, will gain nothing.",
-      description="Rahu, Sun, Saturn and Mars in 11th: cessation of duties.",
-      modifiers=[{"condition": "saturn_and_mars_also_in_11th", "effect": "amplifies", "strength": "strong"}])
+      commentary_context=(
+          "Santhanam: All four malefics required in 11th — Sun, Mars, "
+          "Rahu, Saturn. Quadruple affliction of gains house."
+      ),
+      description="Rahu, Sun, Saturn and Mars all in 11th: cessation of duties.")
 
 # ═══ v.12: Gnana Yoga ════════════════════════════════════════════════════════
 b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 12}],
@@ -185,8 +201,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": 8},
       description="10th lord in 8th + 8th lord in 10th with malefic: indulge in bad acts.")
 
 # ═══ v.18: Obstructions ══════════════════════════════════════════════════════
-b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": "any"},
-                   {"type": "planet_dignity", "planet": "lord_of_10", "dignity": "debilitated"}],
+b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_10", "dignity": "debilitated"}],
       signal_group="h10_lord_fall_obstruction", direction="unfavorable", intensity="strong",
       domains=["career_status"],
       predictions=[{"entity": "native", "claim": "obstructions_career_completely_blocked", "domain": "career_status", "direction": "unfavorable", "magnitude": 0.7}],
