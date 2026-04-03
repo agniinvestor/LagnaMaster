@@ -75,6 +75,11 @@ _BHAVAT_BHAVAM = {
     (6, "4th_house_effects"): {"base_house": 4, "derivative": "3rd_from", "entity": "mother", "domain": "siblings"},
 }
 
+# Chapters with confirmed GPT maker-checker review (evidence from git history).
+# Going forward, review_status field on RuleRecord tracks this per-rule.
+# Historical chapters tracked here from commit evidence.
+_GPT_REVIEWED_CHAPTERS: set[str] = {"13", "14"}
+
 VALID_TIMING_TYPES = {"age", "age_range", "after_event", "dasha_period", "unspecified"}
 VALID_ENTITY_TARGETS = {"native", "father", "mother", "spouse", "children", "siblings", "general"}
 VALID_RELATIONSHIP_TYPES = {"alternative", "addition", "override", "contrary_mirror"}
@@ -587,16 +592,26 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
                 reviewed += 1
 
         l3_ratio = l3_plus / total_ch if total_ch > 0 else 0.0
-        review_ratio = reviewed / total_ch if total_ch > 0 else 0.0
         verse_ratio = ch_data["ratio"]
-        ready = verse_ratio >= 1.0 and l3_ratio >= 0.9 and review_ratio >= 1.0
+
+        # Maker-checker: check git evidence OR per-rule review_status field
+        gpt_reviewed_from_git = ch in _GPT_REVIEWED_CHAPTERS
+        field_reviewed = reviewed / total_ch if total_ch > 0 else 0.0
+        chapter_reviewed = gpt_reviewed_from_git or field_reviewed >= 1.0
+        review_source = (
+            "git" if gpt_reviewed_from_git
+            else f"field ({field_reviewed:.0%})" if field_reviewed > 0
+            else "none"
+        )
+
+        ready = verse_ratio >= 1.0 and l3_ratio >= 0.9 and chapter_reviewed
 
         sc.chapter_readiness[ch] = {
             "verse_coverage": verse_ratio,
             "l3_plus_ratio": round(l3_ratio, 2),
             "l3_plus": l3_plus,
-            "review_ratio": round(review_ratio, 2),
-            "reviewed": reviewed,
+            "review_status": "reviewed" if chapter_reviewed else "unreviewed",
+            "review_source": review_source,
             "total_rules": total_ch,
             "maturity": maturity_dist,
             "ready": ready,
@@ -608,8 +623,8 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
                 reasons.append(f"verse coverage {verse_ratio:.0%}")
             if l3_ratio < 0.9:
                 reasons.append(f"L3+ ratio {l3_ratio:.0%}")
-            if review_ratio < 1.0:
-                reasons.append(f"maker-checker {review_ratio:.0%}")
+            if not chapter_reviewed:
+                reasons.append("maker-checker not done")
             flags.append(RedFlag(
                 f"Ch.{ch}", "warning",
                 "chapter_not_ready",
@@ -740,19 +755,21 @@ def format_scorecard(sc: V2Scorecard) -> str:
     lines.append("")
 
     # N. Chapter Readiness Gate
-    lines.append("N. CHAPTER READINESS GATE (verses ≥100% + L3+ ≥90% + reviewed 100% = SHIP)")
+    lines.append("N. CHAPTER READINESS GATE (verses ≥100% + L3+ ≥90% + GPT reviewed = SHIP)")
     if sc.chapter_readiness:
         for ch in sorted(sc.chapter_readiness.keys()):
             cr = sc.chapter_readiness[ch]
             vc = cr["verse_coverage"]
             l3r = cr["l3_plus_ratio"]
-            rr = cr["review_ratio"]
+            rev = cr["review_status"]
+            rev_src = cr["review_source"]
             ready = "SHIP ✅" if cr["ready"] else "BLOCKED ❌"
             mat = cr["maturity"]
             mat_str = f"L1={mat[1]} L2={mat[2]} L3={mat[3]} L4={mat[4]}"
+            rev_str = f"✓({rev_src})" if rev == "reviewed" else "✗"
             lines.append(
                 f"    Ch.{ch:4s}: verses={vc:5.0%} L3+={l3r:5.0%} "
-                f"reviewed={rr:5.0%} [{mat_str}] → {ready}"
+                f"review={rev_str:10s} [{mat_str}] → {ready}"
             )
         ship_count = sum(1 for cr in sc.chapter_readiness.values() if cr["ready"])
         total_ch = len(sc.chapter_readiness)

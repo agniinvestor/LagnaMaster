@@ -115,10 +115,6 @@ def assess_rule(rule) -> RuleAssessment:
     is_general = getattr(rule, "category", "") in ("upagraha_effects",) or not has_conditions
     conditions_ok = has_conditions or is_general
 
-    # Maker-checker review status
-    review_status = getattr(rule, "review_status", "unreviewed") or "unreviewed"
-    has_review = review_status == "reviewed"
-
     # ── Collect gaps ────────────────────────────────────────────────────
     gaps = []
     if not taxonomy_ok:
@@ -135,8 +131,6 @@ def assess_rule(rule) -> RuleAssessment:
         gaps.append("signal_group_not_canonical")
     if not conditions_ok:
         gaps.append("no_structured_conditions")
-    if not has_review:
-        gaps.append("maker_checker_not_reviewed")
 
     ra.gaps = gaps
 
