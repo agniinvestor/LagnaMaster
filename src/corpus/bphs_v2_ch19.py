@@ -34,25 +34,48 @@ b.add(
 # ═══ v.2: Short life — 8th lord with malefic/ascendant lord in 8th ════════════
 
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 8, "house": 8}],
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 8, "house": 8},
+        {"type": "planets_conjunct", "planets": ["lord_of_8", "any_malefic"]},
+    ],
     signal_group="h8_lord_h8_malefic_short_life",
     direction="unfavorable", intensity="strong", domains=["longevity"],
-    predictions=[{"entity": "native", "claim": "short_lived",
+    predictions=[{"entity": "native", "claim": "short_lived_malefic_in_8th",
                   "domain": "longevity", "direction": "unfavorable", "magnitude": 0.8}],
     verse_ref="Ch.19 v.2",
     description=(
-        "8th lord joining the ascendant lord or a malefic and being in "
-        "the 8th itself: the native will be short-lived."
+        "8th lord in the 8th conjunct a malefic: the native will be "
+        "short-lived."
     ),
     commentary_context=(
-        "Santhanam notes: To get the actual import of this verse, read it "
-        "in the context of the previous verse. Short life will come to pass "
-        "if: 1) The 8th lord is in the 8th along with a malefic or along "
-        "with the ascendant lord, or 2) Saturn joins a malefic/ascendant "
-        "lord in the 8th house."
+        "Santhanam: Short life if 8th lord in 8th with malefic. "
+        "Ascendant lord variant encoded as alternative rule."
     ),
     concordance_texts=["Saravali"],
     rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS1900"]},
+)
+
+# v.2b: Alternative — 8th lord in 8th with ascendant lord
+b.add(
+    conditions=[
+        {"type": "lord_in_house", "lord_of": 8, "house": 8},
+        {"type": "planets_conjunct", "planets": ["lord_of_8", "lord_of_1"]},
+    ],
+    signal_group="h8_lord_h8_asc_lord_short_life",
+    direction="unfavorable", intensity="strong", domains=["longevity"],
+    predictions=[{"entity": "native", "claim": "short_lived_asc_lord_in_8th",
+                  "domain": "longevity", "direction": "unfavorable", "magnitude": 0.8}],
+    verse_ref="Ch.19 v.2",
+    description=(
+        "8th lord in the 8th conjunct the ascendant lord: the native "
+        "will be short-lived."
+    ),
+    commentary_context=(
+        "Santhanam: Alternative path — ascendant lord joining 8th lord "
+        "in 8th also produces short life."
+    ),
+    concordance_texts=["Saravali"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1901"]},
 )
 
 # ═══ v.3: Saturn and 10th lord in longevity ══════════════════════════════════
@@ -70,6 +93,7 @@ b.add(
     ),
     concordance_texts=[],
     modifiers=[{"condition": "10th_lord_in_8th_with_malefic_or_ascendant_lord", "effect": "amplifies", "strength": "strong"}],
+    rule_relationship={"type": "addition", "related_rules": ["BPHS1901"]},
 )
 
 # ═══ v.4-7: Long life yogas ══════════════════════════════════════════════════
@@ -92,8 +116,9 @@ b.add(
 
 b.add(
     conditions=[
-        {"type": "lord_in_house", "lord_of": 5, "house": "any"},
-        {"type": "lord_in_house", "lord_of": 8, "house": "any"},
+        {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "strong"},
+        {"type": "planet_dignity", "planet": "lord_of_8", "dignity": "strong"},
+        {"type": "planet_dignity", "planet": "lord_of_1", "dignity": "strong"},
     ],
     signal_group="h5_h8_lords_own_navamsa_long_life",
     direction="favorable", intensity="strong", domains=["longevity"],
