@@ -35,8 +35,8 @@ def _minimal_rule(**overrides) -> RuleRecord:
 # ── Backward compatibility ────────────────────────────────────────────────────
 
 def test_total_field_count():
-    """RuleRecord has exactly 45 fields after S309."""
-    assert len(RuleRecord.__dataclass_fields__) == 53
+    """RuleRecord field count — 53 (S311) + 3 maker-checker fields."""
+    assert len(RuleRecord.__dataclass_fields__) == 56
 
 
 def test_minimal_rule_creates_without_new_fields():

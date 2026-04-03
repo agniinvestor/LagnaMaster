@@ -187,6 +187,18 @@ class RuleRecord:
     deprecated_reason: str = ""              # Non-empty = rule is deprecated, reason given
     encoding_session_context: str = ""      # Brief note on encoding context (e.g., "batch with Ch.15-19, PDF pp.142-169")
 
+    # ── Maker-Checker Protocol ───────────────────────────────────────────────
+    # review_status tracks whether this rule has been through the mandatory
+    # external GPT maker-checker review (CLAUDE.md protocol). A rule without
+    # review_status="reviewed" cannot contribute to a SHIP-ready chapter.
+    #   "unreviewed"  — encoded but not yet presented for checker review
+    #   "pending"     — presented to checker, awaiting feedback
+    #   "reviewed"    — checker feedback incorporated, rule approved
+    #   "disputed"    — checker flagged issues, not yet resolved
+    review_status: str = "unreviewed"
+    review_session: str = ""                # Session where maker-checker review occurred
+    review_notes: str = ""                  # Brief summary of checker feedback
+
     def __post_init__(self) -> None:
         if not (0.0 <= self.confidence <= 1.0):
             raise ValueError(

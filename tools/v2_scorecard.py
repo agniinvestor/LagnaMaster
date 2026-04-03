@@ -189,7 +189,7 @@ class V2Scorecard:
 
     # ── N. Chapter Readiness Gate ───────────────────────────────────────
     chapter_readiness: dict = field(default_factory=dict)
-    # {ch: {"verse_coverage": ratio, "l3_plus_ratio": ratio, "ready": bool}}
+    # {ch: {"verse_coverage": ratio, "l3_plus_ratio": ratio, "review_ratio": ratio, "ready": bool}}
 
     # ── O. Overall ────────────────────────────────────────────────────────
     v2_completeness_score: float = 0.0  # 0-100%
@@ -576,21 +576,27 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
         ch_rules_list = chapter_rules.get(ch, [])
         total_ch = len(ch_rules_list)
         l3_plus = 0
+        reviewed = 0
         maturity_dist = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
         for r in ch_rules_list:
             a = _assess_rule(r)
             maturity_dist[a.level] += 1
             if a.level >= 3:
                 l3_plus += 1
+            if getattr(r, "review_status", "unreviewed") == "reviewed":
+                reviewed += 1
 
         l3_ratio = l3_plus / total_ch if total_ch > 0 else 0.0
+        review_ratio = reviewed / total_ch if total_ch > 0 else 0.0
         verse_ratio = ch_data["ratio"]
-        ready = verse_ratio >= 1.0 and l3_ratio >= 0.9
+        ready = verse_ratio >= 1.0 and l3_ratio >= 0.9 and review_ratio >= 1.0
 
         sc.chapter_readiness[ch] = {
             "verse_coverage": verse_ratio,
             "l3_plus_ratio": round(l3_ratio, 2),
             "l3_plus": l3_plus,
+            "review_ratio": round(review_ratio, 2),
+            "reviewed": reviewed,
             "total_rules": total_ch,
             "maturity": maturity_dist,
             "ready": ready,
@@ -602,11 +608,13 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
                 reasons.append(f"verse coverage {verse_ratio:.0%}")
             if l3_ratio < 0.9:
                 reasons.append(f"L3+ ratio {l3_ratio:.0%}")
+            if review_ratio < 1.0:
+                reasons.append(f"maker-checker {review_ratio:.0%}")
             flags.append(RedFlag(
                 f"Ch.{ch}", "warning",
                 "chapter_not_ready",
                 f"Ch.{ch} not ship-ready: {', '.join(reasons)}",
-                f"Encode missing verses and resolve L2 gaps",
+                f"Encode missing verses, resolve L2 gaps, and complete maker-checker review",
             ))
 
     sc.red_flags = flags
@@ -732,18 +740,19 @@ def format_scorecard(sc: V2Scorecard) -> str:
     lines.append("")
 
     # N. Chapter Readiness Gate
-    lines.append("N. CHAPTER READINESS GATE (verse coverage ≥100% + L3+ ≥90% = SHIP)")
+    lines.append("N. CHAPTER READINESS GATE (verses ≥100% + L3+ ≥90% + reviewed 100% = SHIP)")
     if sc.chapter_readiness:
         for ch in sorted(sc.chapter_readiness.keys()):
             cr = sc.chapter_readiness[ch]
             vc = cr["verse_coverage"]
             l3r = cr["l3_plus_ratio"]
+            rr = cr["review_ratio"]
             ready = "SHIP ✅" if cr["ready"] else "BLOCKED ❌"
             mat = cr["maturity"]
             mat_str = f"L1={mat[1]} L2={mat[2]} L3={mat[3]} L4={mat[4]}"
             lines.append(
                 f"    Ch.{ch:4s}: verses={vc:5.0%} L3+={l3r:5.0%} "
-                f"({cr['l3_plus']}/{cr['total_rules']}) [{mat_str}] → {ready}"
+                f"reviewed={rr:5.0%} [{mat_str}] → {ready}"
             )
         ship_count = sum(1 for cr in sc.chapter_readiness.values() if cr["ready"])
         total_ch = len(sc.chapter_readiness)
