@@ -79,6 +79,21 @@ VALID_TIMING_TYPES = {"age", "age_range", "after_event", "dasha_period", "unspec
 VALID_ENTITY_TARGETS = {"native", "father", "mother", "spouse", "children", "siblings", "general"}
 VALID_RELATIONSHIP_TYPES = {"alternative", "addition", "override", "contrary_mirror"}
 
+# Expected predictive verse counts per BPHS chapter (from coverage map).
+# Source: actual reading of Santhanam translation, excluding definitional/intro slokas.
+# This drives the verse coverage dimension — any chapter where
+# rules_encoded < predictive_verses is flagged as incomplete.
+_BPHS_PREDICTIVE_VERSES: dict[str, int] = {
+    "12": 16, "13": 12, "14": 20, "15": 28, "16": 26, "17": 14,
+    "18": 18, "19": 19, "20": 22, "21": 20, "22": 12, "23": 14,
+    "24a": 80, "24b": 75, "24c": 80, "25": 90,
+}
+
+# Chapter → V2 corpus module name mapping
+_BPHS_CHAPTER_MODULES: dict[str, str] = {
+    ch: f"src.corpus.bphs_v2_ch{ch}" for ch in _BPHS_PREDICTIVE_VERSES
+}
+
 
 @dataclass
 class RedFlag:
@@ -163,7 +178,16 @@ class V2Scorecard:
     verse_ref_populated: int = 0
     description_mean_length: float = 0.0
 
-    # ── M. Overall ────────────────────────────────────────────────────────
+    # ── M. Verse Coverage (breadth) ─────────────────────────────────────
+    verse_coverage_chapters: dict = field(default_factory=dict)
+    # {ch: {"predictive_verses": N, "rules_encoded": M, "ratio": M/N}}
+    verse_coverage_total_predictive: int = 0
+    verse_coverage_total_encoded: int = 0
+    verse_coverage_ratio: float = 0.0
+    verse_coverage_gaps: list = field(default_factory=list)
+    # chapters where ratio < 1.0
+
+    # ── N. Overall ────────────────────────────────────────────────────────
     v2_completeness_score: float = 0.0  # 0-100%
     red_flags: list = field(default_factory=list)
 
@@ -472,6 +496,50 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
         }
         sc.v2_completeness_score = sum(weights.values())
 
+    # ── M. Verse Coverage (breadth) ──────────────────────────────────────
+    # Count rules per BPHS chapter and compare against expected verses
+    import importlib
+    total_predictive = 0
+    total_encoded = 0
+    for ch, expected_verses in _BPHS_PREDICTIVE_VERSES.items():
+        module_name = _BPHS_CHAPTER_MODULES[ch]
+        try:
+            mod = importlib.import_module(module_name)
+            reg = None
+            for attr in dir(mod):
+                if "REGISTRY" in attr:
+                    reg = getattr(mod, attr)
+                    break
+            encoded = reg.count() if reg and hasattr(reg, "count") else 0
+        except (ImportError, AttributeError):
+            encoded = 0
+
+        ratio = encoded / expected_verses if expected_verses > 0 else 0.0
+        sc.verse_coverage_chapters[ch] = {
+            "predictive_verses": expected_verses,
+            "rules_encoded": encoded,
+            "ratio": round(ratio, 2),
+        }
+        total_predictive += expected_verses
+        total_encoded += encoded
+
+        if ratio < 1.0:
+            sc.verse_coverage_gaps.append(ch)
+            flags.append(RedFlag(
+                f"Ch.{ch}", "error" if ratio < 0.5 else "warning",
+                "verse_coverage_gap",
+                f"Ch.{ch}: {encoded}/{expected_verses} verses encoded ({ratio:.0%})",
+                f"Re-read Ch.{ch} source text and encode the "
+                f"{expected_verses - encoded} missing predictive verses",
+            ))
+
+    sc.verse_coverage_total_predictive = total_predictive
+    sc.verse_coverage_total_encoded = total_encoded
+    sc.verse_coverage_ratio = (
+        round(total_encoded / total_predictive, 3)
+        if total_predictive > 0 else 0.0
+    )
+
     sc.red_flags = flags
     return sc
 
@@ -572,6 +640,26 @@ def format_scorecard(sc: V2Scorecard) -> str:
     lines.append(f"  Concordance mean:       {sc.concordance_mean:.2f} texts/rule")
     lines.append(f"  Verse ref populated:    {sc.verse_ref_populated}/{n}")
     lines.append(f"  Description avg length: {sc.description_mean_length:.0f} chars")
+    lines.append("")
+
+    # M. Verse Coverage
+    lines.append("M. VERSE COVERAGE (breadth — are all source verses encoded?)")
+    lines.append(f"  Total predictive verses: {sc.verse_coverage_total_predictive}")
+    lines.append(f"  Total rules encoded:     {sc.verse_coverage_total_encoded}")
+    lines.append(f"  Coverage ratio:          {sc.verse_coverage_ratio:.0%}")
+    if sc.verse_coverage_chapters:
+        lines.append("  Per chapter:")
+        for ch, info in sorted(sc.verse_coverage_chapters.items(),
+                               key=lambda x: x[1]["ratio"]):
+            ratio = info["ratio"]
+            encoded = info["rules_encoded"]
+            expected = info["predictive_verses"]
+            status = "✅" if ratio >= 1.0 else "⚠️" if ratio >= 0.5 else "❌"
+            lines.append(
+                f"    Ch.{ch:4s}: {encoded:3d}/{expected:3d} ({ratio:5.0%}) {status}"
+            )
+    if sc.verse_coverage_gaps:
+        lines.append(f"  ⚠ Chapters with gaps: {', '.join(f'Ch.{c}' for c in sc.verse_coverage_gaps)}")
     lines.append("")
 
     # Red flags
