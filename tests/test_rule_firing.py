@@ -216,3 +216,41 @@ def test_planet_in_house_from_all_candidates_miss():
             fires, _ = _check_compound_conditions(conds, chart)
             assert not fires, f"No benefic should be in {off}th from Saturn (house {target})"
             return
+
+
+def test_planet_not_in_house_basic():
+    """Absence: no benefic in target house → fires."""
+    from src.calculations.rule_firing import _check_compound_conditions, _planet_house
+    chart = _get_india_1947()
+    # Find a house with no benefics
+    benefic_houses = {_planet_house(chart, b) for b in ("Jupiter", "Venus", "Mercury", "Moon")}
+    for h in range(1, 13):
+        if h not in benefic_houses:
+            conds = [{"type": "planet_not_in_house", "planet": "any_benefic", "house": h}]
+            fires, _ = _check_compound_conditions(conds, chart)
+            assert fires, f"No benefic in house {h} → should fire"
+            return
+
+
+def test_planet_not_in_house_fails_when_present():
+    """Absence: benefic IS in house → does not fire."""
+    from src.calculations.rule_firing import _check_compound_conditions, _planet_house
+    chart = _get_india_1947()
+    jupiter_house = _planet_house(chart, "Jupiter")
+    conds = [{"type": "planet_not_in_house", "planet": "any_benefic", "house": jupiter_house}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert not fires, f"Jupiter (benefic) IS in house {jupiter_house} → should not fire"
+
+
+def test_planet_not_aspecting_basic():
+    """No benefic aspects target house → fires."""
+    from src.calculations.rule_firing import _check_compound_conditions, _planet_aspects_house
+    chart = _get_india_1947()
+    # Find a house not aspected by any benefic
+    for h in range(1, 13):
+        aspected = any(_planet_aspects_house(chart, b, h) for b in ("Jupiter", "Venus", "Mercury", "Moon"))
+        if not aspected:
+            conds = [{"type": "planet_not_aspecting", "planet": "any_benefic", "house": h}]
+            fires, _ = _check_compound_conditions(conds, chart)
+            assert fires
+            return

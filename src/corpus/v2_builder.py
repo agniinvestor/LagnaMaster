@@ -556,6 +556,26 @@ class V2ChapterBuilder:
                         f"(only supported mode)"
                     )
 
+            elif ctype == "planet_not_in_house":
+                planet = cond.get("planet", "")
+                if not planet:
+                    errors.append(f"T1-1: conditions[{i}] planet_not_in_house missing 'planet'")
+                house = cond.get("house")
+                _DYNAMIC_HOUSE_REFS = {"moon_position"}
+                if house not in _DYNAMIC_HOUSE_REFS:
+                    if not isinstance(house, int) or not (1 <= house <= 12):
+                        errors.append(f"T1-1: conditions[{i}].house={house} must be int 1-12")
+
+            elif ctype == "planet_not_aspecting":
+                planet = cond.get("planet", "")
+                if not planet:
+                    errors.append(f"T1-1: conditions[{i}] planet_not_aspecting missing 'planet'")
+                house = cond.get("house")
+                _DYNAMIC_HOUSE_REFS = {"moon_position"}
+                if house not in _DYNAMIC_HOUSE_REFS:
+                    if not isinstance(house, int) or not (1 <= house <= 12):
+                        errors.append(f"T1-1: conditions[{i}].house={house} must be int 1-12")
+
         # T1-2: Controlled vocabulary — domains, direction, intensity
         for d in domains:
             if d not in VALID_OUTCOME_DOMAINS:

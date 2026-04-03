@@ -590,14 +590,14 @@ b.add(
 # ═══ v.17: Mean deeds — 3-4 malefics in 5th ══════════════════════════════════
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 5},
-               {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"}],
+               {"type": "planet_dignity", "planet": "lord_of_5", "dignity": "debilitated"},
+               {"type": "planet_not_in_house", "planet": "any_benefic", "house": 5}],
     signal_group="malefics_h5_mean_deeds_children",
     direction="unfavorable", intensity="moderate", primary_domain="character",
     predictions=[{"entity": "children", "claim": "children_indulge_in_mean_deeds", "domain": "character", "direction": "unfavorable", "magnitude": 0.5}],
     verse_ref="Ch.16 v.17",
     commentary_context="Santhanam: 5th occupied by 3-4 malefics + 5th lord in fall + benefic (including Mercury) excluded from 5th = children who indulge in mean deeds.",
-    description="5th occupied by 3-4 malefics while 5th lord is in fall and benefic excluded: children indulge in mean deeds.",
-    modifiers=[{"condition": "no_benefic_in_5th", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}])
+    description="5th occupied by 3-4 malefics while 5th lord is in fall and benefic excluded: children indulge in mean deeds.")
 
 # ═══ v.25-28: Number of children (individual slokas from the block) ═══════════
 b.add(

@@ -289,7 +289,9 @@ b.add(
 
 # ── Sloka 12: 1st lord in 12th house ──────────────────────────────────────
 b.add(
-    conditions=[{"type": "lord_in_house", "lord_of": 1, "house": 12}],
+    conditions=[{"type": "lord_in_house", "lord_of": 1, "house": 12},
+               {"type": "planet_not_in_house", "planet": "any_benefic", "house": 12},
+               {"type": "planet_not_aspecting", "planet": "any_benefic", "house": 12}],
     signal_group="h1_lord_in_h12_bereft_happiness",
     direction="unfavorable", intensity="moderate",
     primary_domain="health",
@@ -301,7 +303,6 @@ b.add(
     description="Lagna lord in 12th and devoid of benefic aspect/conjunction: bereft of physical happiness, spend unfruitfully, given to anger.",
     commentary_context="Santhanam: If the ascendant lord is in the 12th, the native's life will not be prosperous. He will be addicted to gambling, debauchery and other vices. He will expend wastefully.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "no_benefic_aspect_or_conjunction", "effect": "attenuates", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 

@@ -426,6 +426,38 @@ def _check_compound_conditions(conditions: list[dict], chart) -> tuple[bool, int
                 return False, 0
             matched_house = matched_house or target_house
 
+        elif ctype == "planet_not_in_house":
+            planet_spec = cond.get("planet", "")
+            target_house = cond.get("house", 0)
+            if isinstance(target_house, list):
+                target_house = target_house[0]
+            if planet_spec == "any_benefic":
+                candidates = list(_BENEFICS)
+            elif planet_spec == "any_malefic":
+                candidates = list(_MALEFICS)
+            else:
+                candidates = [planet_spec.strip().title()]
+            valid = [c for c in candidates if _find_planet(chart, c)]
+            if any(_planet_house(chart, c) == target_house for c in valid):
+                return False, 0
+            matched_house = matched_house or target_house
+
+        elif ctype == "planet_not_aspecting":
+            planet_spec = cond.get("planet", "")
+            target_house = cond.get("house", 0)
+            if isinstance(target_house, list):
+                target_house = target_house[0]
+            if planet_spec == "any_benefic":
+                candidates = list(_BENEFICS)
+            elif planet_spec == "any_malefic":
+                candidates = list(_MALEFICS)
+            else:
+                candidates = [planet_spec.strip().title()]
+            valid = [c for c in candidates if _find_planet(chart, c)]
+            if any(_planet_aspects_house(chart, c, target_house) for c in valid):
+                return False, 0
+            matched_house = matched_house or target_house
+
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire
             return False, 0
