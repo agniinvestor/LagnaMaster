@@ -217,11 +217,19 @@ def _db_path(path=_SENTINEL) -> str:
     return USER_DB_PATH if path is _SENTINEL else str(path)
 
 
+@contextlib.contextmanager
 def _connect(path=_SENTINEL):
-    """Return a sqlite3 connection with row_factory set."""
+    """Yield a sqlite3 connection with row_factory set; closes on exit."""
     import sqlite3
 
     p = _db_path(path)
     conn = sqlite3.connect(p)
     conn.row_factory = sqlite3.Row
-    return conn
+    try:
+        yield conn
+        conn.commit()
+    except BaseException:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()

@@ -11,8 +11,9 @@ Age gate: birth_year check — under-18 blocks chart creation.
 """
 
 from __future__ import annotations
+import contextlib
 from dataclasses import dataclass
-from datetime import datetime, date
+from datetime import datetime, date, timezone
 from pathlib import Path
 import sqlite3
 import hashlib
@@ -39,10 +40,18 @@ class ConsentRecord:
     is_active: bool
 
 
-def _get_conn(db_path: str | Path = "lagna.db") -> sqlite3.Connection:
+@contextlib.contextmanager
+def _get_conn(db_path: str | Path = "lagna.db"):
     conn = sqlite3.connect(str(db_path))
     conn.row_factory = sqlite3.Row
-    return conn
+    try:
+        yield conn
+        conn.commit()
+    except BaseException:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
 
 
 def ensure_consent_tables(db_path: str | Path = "lagna.db") -> None:
@@ -76,7 +85,7 @@ def grant_consent(
     db_path: str | Path = "lagna.db",
 ) -> ConsentRecord:
     ensure_consent_tables(db_path)
-    now = datetime.utcnow().isoformat()
+    now = datetime.now(timezone.utc).isoformat()
     with _get_conn(db_path) as conn:
         conn.execute(
             """
@@ -88,7 +97,7 @@ def grant_consent(
     return ConsentRecord(
         user_id=user_id,
         purpose=purpose,
-        granted_at=datetime.utcnow(),
+        granted_at=datetime.now(timezone.utc),
         withdrawn_at=None,
         jurisdiction=jurisdiction,
         version=CONSENT_VERSION,
@@ -100,7 +109,7 @@ def withdraw_consent(
     user_id: str, purpose: str, db_path: str | Path = "lagna.db"
 ) -> bool:
     ensure_consent_tables(db_path)
-    now = datetime.utcnow().isoformat()
+    now = datetime.now(timezone.utc).isoformat()
     with _get_conn(db_path) as conn:
         conn.execute(
             """
@@ -161,7 +170,7 @@ def right_to_erasure(user_id: str, db_path: str | Path = "lagna.db") -> dict:
             INSERT INTO erasure_log (user_id_hash, erased_at, tables_cleared)
             VALUES (?, ?, ?)
         """,
-            (uid_hash, datetime.utcnow().isoformat(), ", ".join(cleared)),
+            (uid_hash, datetime.now(timezone.utc).isoformat(), ", ".join(cleared)),
         )
 
     return {

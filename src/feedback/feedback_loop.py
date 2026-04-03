@@ -7,6 +7,7 @@ Reproducibility lock: any guidance output is recomputable from chart + date + ve
 """
 
 from __future__ import annotations
+import contextlib
 from dataclasses import dataclass
 from pathlib import Path
 import sqlite3
@@ -14,8 +15,21 @@ import sqlite3
 FEEDBACK_SCHEMA_VERSION = "1.0"
 
 
+@contextlib.contextmanager
+def _db(db_path):
+    conn = sqlite3.connect(str(db_path))
+    try:
+        yield conn
+        conn.commit()
+    except BaseException:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
+
+
 def ensure_feedback_tables(db_path: str | Path = "lagna.db") -> None:
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         conn.executescript("""
         CREATE TABLE IF NOT EXISTS feedback_events (
             id            INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -70,7 +84,7 @@ def record_feedback(
     if rating not in valid_ratings:
         raise ValueError(f"rating must be one of {valid_ratings}")
 
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         cur = conn.execute(
             """
             INSERT INTO feedback_events
@@ -104,7 +118,7 @@ def record_feedback(
 def get_quality_metrics(db_path: str | Path = "lagna.db") -> dict:
     """Output quality monitoring — never used for parameter changes."""
     ensure_feedback_tables(db_path)
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         conn.row_factory = sqlite3.Row
         rows = conn.execute("""
             SELECT domain, rating, COUNT(*) as n FROM feedback_events

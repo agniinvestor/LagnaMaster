@@ -9,9 +9,23 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
+import contextlib
 import sqlite3
 
 _DAILY_CAP = 3  # sessions per day before nudge
+
+
+@contextlib.contextmanager
+def _db(db_path):
+    conn = sqlite3.connect(str(db_path))
+    try:
+        yield conn
+        conn.commit()
+    except BaseException:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
 _WEEKLY_CAP = 15  # sessions per week before nudge
 
 
@@ -25,7 +39,7 @@ class DependencyStatus:
 
 
 def ensure_session_table(db_path: str | Path = "lagna.db") -> None:
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         conn.executescript("""
         CREATE TABLE IF NOT EXISTS session_log (
             id         INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -41,7 +55,7 @@ def log_session(
     user_id: str, domain: str = "general", db_path: str | Path = "lagna.db"
 ) -> None:
     ensure_session_table(db_path)
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         conn.execute(
             "INSERT INTO session_log (user_id, domain, started_at) VALUES (?, ?, ?)",
             (user_id, domain, __import__("datetime").datetime.now().isoformat()),
@@ -55,7 +69,7 @@ def check_dependency_status(
     today = date.today().isoformat()
     week_ago = (date.today() - __import__("datetime").timedelta(days=7)).isoformat()
 
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         # Use string prefix match so timezone offset in stored datetime doesn't matter
         today_count = conn.execute(
             """

@@ -19,6 +19,7 @@ Public API
 """
 
 from __future__ import annotations
+import contextlib
 from dataclasses import dataclass, field, asdict
 import sqlite3
 import uuid
@@ -86,12 +87,20 @@ class EmpiricalEvent:
     event_id: str = field(default_factory=lambda: f"EVT_{uuid.uuid4().hex[:8].upper()}")
 
 
-def _get_conn(path: str | Path) -> sqlite3.Connection:
+@contextlib.contextmanager
+def _get_conn(path: str | Path):
     p = Path(str(path))
     p.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(str(p))
     conn.row_factory = sqlite3.Row
-    return conn
+    try:
+        yield conn
+        conn.commit()
+    except BaseException:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
 
 
 def init_empirica_db(path: str | Path = "data/empirica.db") -> None:

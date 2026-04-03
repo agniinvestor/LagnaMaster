@@ -13,10 +13,24 @@ Rules:
 """
 
 from __future__ import annotations
+import contextlib
 from datetime import datetime, timedelta, timezone
 import hashlib
 import sqlite3
 from pathlib import Path
+
+
+@contextlib.contextmanager
+def _db(db_path):
+    conn = sqlite3.connect(str(db_path))
+    try:
+        yield conn
+        conn.commit()
+    except BaseException:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
 
 
 def minimise_birth_time(hour: float) -> float:
@@ -60,7 +74,7 @@ def apply_retention_policy(
         datetime.now(timezone.utc) - timedelta(days=event_log_days)
     ).isoformat()
 
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         # Count eligible birth data rows
         try:
             n = conn.execute(
@@ -109,7 +123,7 @@ def apply_retention_policy(
 def audit_stored_fields(db_path: str | Path = "lagna.db") -> list[dict]:
     """Return list of tables and their columns for privacy audit."""
     result = []
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         tables = conn.execute(
             "SELECT name FROM sqlite_master WHERE type='table'"
         ).fetchall()

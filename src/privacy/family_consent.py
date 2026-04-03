@@ -8,10 +8,24 @@ Kundali Milan (compatibility) requires active consent from both individuals.
 """
 
 from __future__ import annotations
+import contextlib
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timezone
 import sqlite3
 from pathlib import Path
+
+
+@contextlib.contextmanager
+def _db(db_path):
+    conn = sqlite3.connect(str(db_path))
+    try:
+        yield conn
+        conn.commit()
+    except BaseException:
+        conn.rollback()
+        raise
+    finally:
+        conn.close()
 
 
 @dataclass
@@ -25,7 +39,7 @@ class FamilyMember:
 
 
 def ensure_family_tables(db_path: str | Path = "lagna.db") -> None:
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         conn.executescript("""
         CREATE TABLE IF NOT EXISTS family_members (
             id                    INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -49,8 +63,8 @@ def add_family_member(
     db_path: str | Path = "lagna.db",
 ) -> FamilyMember:
     ensure_family_tables(db_path)
-    now = datetime.utcnow().isoformat() if has_consented else None
-    with sqlite3.connect(str(db_path)) as conn:
+    now = datetime.now(timezone.utc).isoformat() if has_consented else None
+    with _db(db_path) as conn:
         conn.execute(
             """
             INSERT OR REPLACE INTO family_members
@@ -64,15 +78,15 @@ def add_family_member(
         owner_user_id=owner_user_id,
         relationship=relationship,
         has_consented=has_consented,
-        consent_granted_at=datetime.utcnow() if has_consented else None,
+        consent_granted_at=datetime.now(timezone.utc) if has_consented else None,
         consent_withdrawn_at=None,
     )
 
 
 def grant_family_consent(member_id: str, db_path: str | Path = "lagna.db") -> bool:
     ensure_family_tables(db_path)
-    now = datetime.utcnow().isoformat()
-    with sqlite3.connect(str(db_path)) as conn:
+    now = datetime.now(timezone.utc).isoformat()
+    with _db(db_path) as conn:
         conn.execute(
             """
             UPDATE family_members SET consent_granted_at=?, consent_withdrawn_at=NULL
@@ -85,8 +99,8 @@ def grant_family_consent(member_id: str, db_path: str | Path = "lagna.db") -> bo
 
 def revoke_family_consent(member_id: str, db_path: str | Path = "lagna.db") -> bool:
     ensure_family_tables(db_path)
-    now = datetime.utcnow().isoformat()
-    with sqlite3.connect(str(db_path)) as conn:
+    now = datetime.now(timezone.utc).isoformat()
+    with _db(db_path) as conn:
         conn.execute(
             """
             UPDATE family_members SET consent_withdrawn_at=? WHERE member_id=?
@@ -98,14 +112,14 @@ def revoke_family_consent(member_id: str, db_path: str | Path = "lagna.db") -> b
 
 def delete_family_member(member_id: str, db_path: str | Path = "lagna.db") -> bool:
     ensure_family_tables(db_path)
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         conn.execute("DELETE FROM family_members WHERE member_id=?", (member_id,))
     return True
 
 
 def has_family_consent(member_id: str, db_path: str | Path = "lagna.db") -> bool:
     ensure_family_tables(db_path)
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         conn.row_factory = sqlite3.Row
         row = conn.execute(
             """
@@ -141,7 +155,7 @@ def get_consenting_members(
     owner_user_id: str, db_path: str | Path = "lagna.db"
 ) -> list[FamilyMember]:
     ensure_family_tables(db_path)
-    with sqlite3.connect(str(db_path)) as conn:
+    with _db(db_path) as conn:
         conn.row_factory = sqlite3.Row
         rows = conn.execute(
             """

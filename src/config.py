@@ -56,12 +56,16 @@ def is_school_enabled(school: str) -> bool:
 def _ensure_school_column(path) -> None:
     """Add `school` column to users table if it does not exist yet."""
     db = _auth._db_path(path)
-    with sqlite3.connect(db) as conn:
+    conn = sqlite3.connect(db)
+    try:
         cols = [row[1] for row in conn.execute("PRAGMA table_info(users)")]
         if "school" not in cols:
             conn.execute(
                 f"ALTER TABLE users ADD COLUMN school TEXT NOT NULL DEFAULT '{DEFAULT_SCHOOL}'"
             )
+            conn.commit()
+    finally:
+        conn.close()
 
 
 # ── public API ────────────────────────────────────────────────────────────────
