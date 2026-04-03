@@ -26,7 +26,7 @@ from src.corpus.v2_builder import V2ChapterBuilder
 
 b = V2ChapterBuilder(
     chapter="Ch.24", category="bhava_lord_effects",
-    id_start=2400, session="S309", sloka_count=48,
+    id_start=2400, session="S313", sloka_count=48,
     chapter_tags=["bhava_lords", "lord_placement"],
     entity_target="native",
     prediction_type="trait",
@@ -149,7 +149,7 @@ b.add(
     description="Exception: For Scorpio and Taurus ascendant, lagna lord in 6th is felicitous for freedom from diseases.",
     commentary_context="Santhanam: However, for Scorpio and Taurus ascendant, it will be a felicitous augury for freedom from diseases. This is a lagna-specific exception to the general unfavorable reading.",
     lagna_scope=["scorpio", "taurus"],
-    rule_relationship={"type": "exception", "related_rules": ["BPHS2405"]},
+    rule_relationship={"type": "override", "related_rules": ["BPHS2405"]},
 )
 
 # ── Sloka 7: 1st lord in 7th house ────────────────────────────────────────
@@ -201,7 +201,7 @@ b.add(
     verse_ref="Ch.24 v.7",
     description="Lagna lord in 7th and strong: will alternatively become a king.",
     commentary_context="Santhanam: He will alternatively become a king (if the said planet is strong). Strength overrides the general unfavorable reading.",
-    rule_relationship={"type": "exception", "related_rules": ["BPHS2407", "BPHS2408"]},
+    rule_relationship={"type": "override", "related_rules": ["BPHS2407", "BPHS2408"]},
 )
 
 # ── Sloka 8: 1st lord in 8th house ────────────────────────────────────────
@@ -236,7 +236,7 @@ b.add(
     description="Exception: For Aries and Libra ascendant, evil results of 1st lord in 8th should be avoided; scan radix further.",
     commentary_context="Santhanam: In case of Aries and Libra ascendant, this approach for evil results should be avoided and results declared after further scanning the radix. Mars (Aries lord) and Venus (Libra lord) are in own houses when in the 8th from these lagnas.",
     lagna_scope=["aries", "libra"],
-    rule_relationship={"type": "exception", "related_rules": ["BPHS2410"]},
+    rule_relationship={"type": "override", "related_rules": ["BPHS2410"]},
 )
 
 # ── Sloka 9: 1st lord in 9th house ────────────────────────────────────────

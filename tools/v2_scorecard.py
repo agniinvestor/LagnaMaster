@@ -78,7 +78,7 @@ _BHAVAT_BHAVAM = {
 # Chapters with confirmed GPT maker-checker review (evidence from git history).
 # Going forward, review_status field on RuleRecord tracks this per-rule.
 # Historical chapters tracked here from commit evidence.
-_GPT_REVIEWED_CHAPTERS: set[str] = {"12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "25"}
+_GPT_REVIEWED_CHAPTERS: set[str] = {"12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24a", "24b", "24c", "25"}
 
 VALID_TIMING_TYPES = {"age", "age_range", "after_event", "dasha_period", "unspecified"}
 VALID_ENTITY_TARGETS = {"native", "father", "mother", "spouse", "children", "siblings", "general"}
