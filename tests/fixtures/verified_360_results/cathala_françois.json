@@ -65,7 +65,20 @@
     "house_9_lord": "Venus",
     "house_10_lord": "Mars",
     "house_11_lord": "Jupiter",
-    "house_12_lord": "Saturn"
+    "house_12_lord": "Saturn",
+    "sav_aries": 8,
+    "sav_taurus": 9,
+    "sav_gemini": 10,
+    "sav_cancer": 7,
+    "sav_leo": 3,
+    "sav_virgo": 12,
+    "sav_libra": 9,
+    "sav_scorpio": 21,
+    "sav_sagittarius": 24,
+    "sav_capricorn": 5,
+    "sav_aquarius": 10,
+    "sav_pisces": 2,
+    "vimsottari_sequence": "Sun,Moon,Mars,Rahu,Jupiter,Saturn,Mercury,Ketu,Venus"
   },
   "pyjhora_values": {
     "lagna_degree": 313.473171,
@@ -115,7 +128,20 @@
     "house_9_lord": "Venus",
     "house_10_lord": "Mars",
     "house_11_lord": "Jupiter",
-    "house_12_lord": "Saturn"
+    "house_12_lord": "Saturn",
+    "sav_aries": 28,
+    "sav_taurus": 24,
+    "sav_gemini": 27,
+    "sav_cancer": 28,
+    "sav_leo": 21,
+    "sav_virgo": 28,
+    "sav_libra": 25,
+    "sav_scorpio": 42,
+    "sav_sagittarius": 42,
+    "sav_capricorn": 19,
+    "sav_aquarius": 27,
+    "sav_pisces": 26,
+    "vimsottari_sequence": "Sun,Moon,Mars,Rahu,Jupiter,Saturn,Mercury,Ketu,Venus"
   },
   "entry": {
     "chart_id": "cathala_fran\u00e7ois",
@@ -664,13 +690,156 @@
       "normalized": true,
       "pattern_id": null,
       "note": null
+    },
+    "sav_aries": {
+      "status": "systematic_disagreement",
+      "lm": 8,
+      "pjh": 28,
+      "diff": 20.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": "sav_aries:magnitude_1.3",
+      "note": null
+    },
+    "sav_taurus": {
+      "status": "random_disagreement",
+      "lm": 9,
+      "pjh": 24,
+      "diff": 15.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "sav_gemini": {
+      "status": "random_disagreement",
+      "lm": 10,
+      "pjh": 27,
+      "diff": 17.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "sav_cancer": {
+      "status": "systematic_disagreement",
+      "lm": 7,
+      "pjh": 28,
+      "diff": 21.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": "sav_cancer:magnitude_1.3",
+      "note": null
+    },
+    "sav_leo": {
+      "status": "systematic_disagreement",
+      "lm": 3,
+      "pjh": 21,
+      "diff": 18.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": "sav_leo:magnitude_1.3",
+      "note": null
+    },
+    "sav_virgo": {
+      "status": "random_disagreement",
+      "lm": 12,
+      "pjh": 28,
+      "diff": 16.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "sav_libra": {
+      "status": "random_disagreement",
+      "lm": 9,
+      "pjh": 25,
+      "diff": 16.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "sav_scorpio": {
+      "status": "systematic_disagreement",
+      "lm": 21,
+      "pjh": 42,
+      "diff": 21.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": "sav_scorpio:magnitude_1.3",
+      "note": null
+    },
+    "sav_sagittarius": {
+      "status": "systematic_disagreement",
+      "lm": 24,
+      "pjh": 42,
+      "diff": 18.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": "sav_sagittarius:magnitude_1.3",
+      "note": null
+    },
+    "sav_capricorn": {
+      "status": "random_disagreement",
+      "lm": 5,
+      "pjh": 19,
+      "diff": 14.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "sav_aquarius": {
+      "status": "random_disagreement",
+      "lm": 10,
+      "pjh": 27,
+      "diff": 17.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "sav_pisces": {
+      "status": "random_disagreement",
+      "lm": 2,
+      "pjh": 26,
+      "diff": 24.0,
+      "field_type": "integer",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
+    },
+    "vimsottari_sequence": {
+      "status": "agreement",
+      "lm": "Sun,Moon,Mars,Rahu,Jupiter,Saturn,Mercury,Ketu,Venus",
+      "pjh": "Sun,Moon,Mars,Rahu,Jupiter,Saturn,Mercury,Ketu,Venus",
+      "diff": null,
+      "field_type": "categorical",
+      "tolerance": null,
+      "normalized": true,
+      "pattern_id": null,
+      "note": null
     }
   },
   "summary": {
-    "total_fields": 48,
-    "agreement": 43,
-    "systematic": 0,
-    "random": 5
+    "total_fields": 61,
+    "agreement": 44,
+    "systematic": 5,
+    "random": 12
   },
-  "confidence_score": 0.8958
+  "confidence_score": 0.7213
 }

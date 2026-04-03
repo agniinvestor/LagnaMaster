@@ -32,6 +32,10 @@ for _p in ["sun", "moon", "mars", "mercury", "jupiter", "venus",
     FIELD_MODULE[f"dignity_{_p}"] = "dignity"
 for _h in range(1, 13):
     FIELD_MODULE[f"house_{_h}_lord"] = "house_lords"
+for _s in ["aries", "taurus", "gemini", "cancer", "leo", "virgo",
+           "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"]:
+    FIELD_MODULE[f"sav_{_s}"] = "ashtakavarga"
+FIELD_MODULE["vimsottari_sequence"] = "dashas"
 
 
 def generate_report(as_json: bool = False) -> dict | None:

@@ -98,7 +98,7 @@ _META_KEYS = {
 }
 
 
-def _extract_lm_values(chart) -> dict:
+def _extract_lm_values(chart, birth_data: dict | None = None) -> dict:
     """Extract flat dict of values from a LagnaMaster BirthChart."""
     values = {
         "lagna_degree": chart.lagna,
@@ -126,6 +126,32 @@ def _extract_lm_values(chart) -> dict:
     for h in range(1, 13):
         sign_idx = (chart.lagna_sign_index + h - 1) % 12
         values[f"house_{h}_lord"] = _SIGN_LORDS[sign_idx]
+
+    # Phase 3: Ashtakavarga (Sarva AV per sign)
+    try:
+        from src.calculations.ashtakavarga import compute_ashtakavarga
+        av = compute_ashtakavarga(chart)
+        if hasattr(av, "sarva") and hasattr(av.sarva, "bindus"):
+            for i, sign in enumerate(SIGN_NAMES):
+                values[f"sav_{sign.lower()}"] = av.sarva.bindus[i]
+    except Exception:
+        pass
+
+    # Phase 3: Vimsottari dasha sequence
+    if birth_data:
+        try:
+            from src.calculations.vimshottari_dasa import compute_vimshottari_dasa
+            from datetime import datetime
+            bd = birth_data
+            birth_dt = datetime(bd["year"], bd["month"], bd["day"],
+                                int(bd["hour"]), int((bd["hour"] % 1) * 60))
+            vd = compute_vimshottari_dasa(chart, birth_dt)
+            if isinstance(vd, list) and vd:
+                values["vimsottari_sequence"] = ",".join(
+                    md.lord for md in vd
+                )
+        except Exception:
+            pass
 
     return values
 
@@ -182,6 +208,17 @@ def _extract_pjh_values(pjh: dict) -> dict:
         sign_idx = (lagna_sign_index + h - 1) % 12
         values[f"house_{h}_lord"] = _SIGN_LORDS[sign_idx]
 
+    # Phase 3: Sarva Ashtakavarga
+    sav = pjh.get("sarva_av")
+    if sav and len(sav) == 12:
+        for i, sign in enumerate(SIGN_NAMES):
+            values[f"sav_{sign.lower()}"] = sav[i]
+
+    # Phase 3: Vimsottari dasha sequence
+    vseq = pjh.get("vimsottari_sequence")
+    if vseq:
+        values["vimsottari_sequence"] = ",".join(vseq)
+
     return values
 
 
@@ -236,6 +273,13 @@ def _build_schema(has_edge_flags: bool) -> dict:
     # Phase 2: house lords
     for h in range(1, 13):
         schema[f"house_{h}_lord"] = {"field_type": "categorical"}
+
+    # Phase 3: Sarva Ashtakavarga (integer per sign)
+    for sign in SIGN_NAMES:
+        schema[f"sav_{sign.lower()}"] = {"field_type": "integer"}
+
+    # Phase 3: Vimsottari dasha sequence (comma-joined string)
+    schema["vimsottari_sequence"] = {"field_type": "categorical"}
 
     return schema
 
@@ -294,7 +338,7 @@ def run_pipeline(chart_ids: list[str] | None = None):
             continue
 
         # Extract + normalize
-        lm_values = _normalize_values(_extract_lm_values(lm_chart))
+        lm_values = _normalize_values(_extract_lm_values(lm_chart, birth_data))
         pjh_values = _normalize_values(
             _extract_pjh_values(pjh_data.get("pyjhora", {}))
         )
