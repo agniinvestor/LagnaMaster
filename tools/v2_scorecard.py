@@ -187,7 +187,11 @@ class V2Scorecard:
     verse_coverage_gaps: list = field(default_factory=list)
     # chapters where ratio < 1.0
 
-    # ── N. Overall ────────────────────────────────────────────────────────
+    # ── N. Chapter Readiness Gate ───────────────────────────────────────
+    chapter_readiness: dict = field(default_factory=dict)
+    # {ch: {"verse_coverage": ratio, "l3_plus_ratio": ratio, "ready": bool}}
+
+    # ── O. Overall ────────────────────────────────────────────────────────
     v2_completeness_score: float = 0.0  # 0-100%
     red_flags: list = field(default_factory=list)
 
@@ -540,6 +544,71 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
         if total_predictive > 0 else 0.0
     )
 
+    # ── N. Chapter Readiness Gate ────────────────────────────────────────
+    # Combine verse coverage + maturity level to determine chapter readiness
+    from tools.rule_grader import assess_rule as _assess_rule
+
+    # Group rules by chapter
+    chapter_rules: dict[str, list] = {}
+    for r in rules:
+        rid = r.rule_id
+        if not rid.startswith("BPHS"):
+            continue
+        # Map BPHS rule IDs to chapter modules
+        for ch in _BPHS_PREDICTIVE_VERSES:
+            mod_name = _BPHS_CHAPTER_MODULES[ch]
+            try:
+                mod = importlib.import_module(mod_name)
+                reg = None
+                for attr in dir(mod):
+                    if "REGISTRY" in attr:
+                        reg = getattr(mod, attr)
+                        break
+                if reg and hasattr(reg, "all"):
+                    ch_rule_ids = {cr.rule_id for cr in reg.all()}
+                    if rid in ch_rule_ids:
+                        chapter_rules.setdefault(ch, []).append(r)
+                        break
+            except (ImportError, AttributeError):
+                continue
+
+    for ch, ch_data in sc.verse_coverage_chapters.items():
+        ch_rules_list = chapter_rules.get(ch, [])
+        total_ch = len(ch_rules_list)
+        l3_plus = 0
+        maturity_dist = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+        for r in ch_rules_list:
+            a = _assess_rule(r)
+            maturity_dist[a.level] += 1
+            if a.level >= 3:
+                l3_plus += 1
+
+        l3_ratio = l3_plus / total_ch if total_ch > 0 else 0.0
+        verse_ratio = ch_data["ratio"]
+        ready = verse_ratio >= 1.0 and l3_ratio >= 0.9
+
+        sc.chapter_readiness[ch] = {
+            "verse_coverage": verse_ratio,
+            "l3_plus_ratio": round(l3_ratio, 2),
+            "l3_plus": l3_plus,
+            "total_rules": total_ch,
+            "maturity": maturity_dist,
+            "ready": ready,
+        }
+
+        if not ready and total_ch > 0:
+            reasons = []
+            if verse_ratio < 1.0:
+                reasons.append(f"verse coverage {verse_ratio:.0%}")
+            if l3_ratio < 0.9:
+                reasons.append(f"L3+ ratio {l3_ratio:.0%}")
+            flags.append(RedFlag(
+                f"Ch.{ch}", "warning",
+                "chapter_not_ready",
+                f"Ch.{ch} not ship-ready: {', '.join(reasons)}",
+                f"Encode missing verses and resolve L2 gaps",
+            ))
+
     sc.red_flags = flags
     return sc
 
@@ -660,6 +729,25 @@ def format_scorecard(sc: V2Scorecard) -> str:
             )
     if sc.verse_coverage_gaps:
         lines.append(f"  ⚠ Chapters with gaps: {', '.join(f'Ch.{c}' for c in sc.verse_coverage_gaps)}")
+    lines.append("")
+
+    # N. Chapter Readiness Gate
+    lines.append("N. CHAPTER READINESS GATE (verse coverage ≥100% + L3+ ≥90% = SHIP)")
+    if sc.chapter_readiness:
+        for ch in sorted(sc.chapter_readiness.keys()):
+            cr = sc.chapter_readiness[ch]
+            vc = cr["verse_coverage"]
+            l3r = cr["l3_plus_ratio"]
+            ready = "SHIP ✅" if cr["ready"] else "BLOCKED ❌"
+            mat = cr["maturity"]
+            mat_str = f"L1={mat[1]} L2={mat[2]} L3={mat[3]} L4={mat[4]}"
+            lines.append(
+                f"    Ch.{ch:4s}: verses={vc:5.0%} L3+={l3r:5.0%} "
+                f"({cr['l3_plus']}/{cr['total_rules']}) [{mat_str}] → {ready}"
+            )
+        ship_count = sum(1 for cr in sc.chapter_readiness.values() if cr["ready"])
+        total_ch = len(sc.chapter_readiness)
+        lines.append(f"  Ship-ready: {ship_count}/{total_ch} chapters")
     lines.append("")
 
     # Red flags
