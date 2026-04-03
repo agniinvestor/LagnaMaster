@@ -281,9 +281,13 @@ def _check_compound_conditions(conditions: list[dict], chart) -> tuple[bool, int
 
         elif ctype == "planet_in_sign":
             planet = cond.get("planet", "")
-            target_sign = cond.get("sign", "").lower()
+            raw_sign = cond.get("sign", "")
+            if isinstance(raw_sign, list):
+                target_signs = [s.lower() for s in raw_sign]
+            else:
+                target_signs = [raw_sign.lower()]
             actual_sign = _planet_sign(chart, planet.title())
-            if actual_sign != target_sign:
+            if actual_sign not in target_signs:
                 return False, 0
             matched_house = matched_house or _planet_house(chart, planet.title())
 
