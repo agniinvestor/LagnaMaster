@@ -49,12 +49,23 @@ Predictive count excludes definitional, introductory, and summary slokas.
 Each predictive sloka produces 1+ rules depending on distinct outcomes and
 conditional clauses stated. Block A (Ch.12-23) complete as of S308.
 
-## Block B: Bhava Lords & Upagrahas (Ch.24-25)
+## Block B: Bhava Lords & Upagrahas (Ch.24-25) — COMPLETE
 
 | Ch | Title | Pages | Source Verses | Rules Encoded | Status |
 |----|-------|-------|---------------|---------------|--------|
-| 24 | Effects of Bhava Lords | 18 | 148 (counted) | 0 | 🔲 |
-| 25 | Effects of Non-Luminous Planets | 23 | TBD | 0 | 🔲 |
+| 24 | Effects of Bhava Lords | 18 | 235 | 158 (3 parts) | ✅ S309-S311 |
+| 25 | Effects of Non-Luminous Planets | 23 | ~90 | 85 | ✅ S312 |
+
+## Block B2: House-Specific Effects (Ch.26-31)
+
+| Ch | Title | Pages | Source Verses | Rules Encoded | Status |
+|----|-------|-------|---------------|---------------|--------|
+| 26 | Effects of Bhavas (House Results) | ~20 | TBD | 0 | 🔲 |
+| 27 | Effects of the 7th House (Marriage) | ~12 | TBD | 0 | 🔲 |
+| 28 | Effects of the 8th House (Longevity) | ~8 | TBD | 0 | 🔲 |
+| 29 | Effects of the 9th House (Dharma) | ~8 | TBD | 0 | 🔲 |
+| 30 | Effects of the 10th House (Karma) | ~8 | TBD | 0 | 🔲 |
+| 31 | Effects of the 11th House (Gains) | ~6 | TBD | 0 | 🔲 |
 
 ## Block C: Yogas (Ch.34-42)
 
