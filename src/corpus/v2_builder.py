@@ -18,7 +18,7 @@ Usage:
         conditions=[{"type": "planet_in_house", "planet": "Sun", "house": 3}],
         signal_group="sun_h3_elder_loss",
         direction="unfavorable", intensity="strong",
-        domains=["longevity"],
+        primary_domain="longevity",
         predictions=[{"entity": "siblings", "claim": "elder_destroyed", ...}],
         verse_ref="Ch.14 v.14",
         description="Sun in 3rd destroys the preborn...",
@@ -99,7 +99,7 @@ class V2ChapterBuilder:
         signal_group: str,
         direction: str,
         intensity: str,
-        domains: list[str],
+        primary_domain: str,
         predictions: list[dict],
         verse_ref: str,
         description: str,
@@ -120,6 +120,56 @@ class V2ChapterBuilder:
         lagna_scope: list[str] | None = None,
     ) -> str:
         """Add a rule. Returns the generated rule_id."""
+        from src.corpus.taxonomy import PRIMARY_DOMAINS, DOMAIN_NORMALIZATION
+
+        # ── Normalize prediction domains ─────────────────────────────────
+        _FAME_TO_WEALTH = {"gains", "nishka", "money", "wealthy", "affluent", "fortunes",
+                           "prosperity", "rich", "opulent", "gold", "grains"}
+        _EDUCATION_TO_CAREER = {"profession", "skill", "expertise", "livelihood", "calling"}
+        _ENEMIES_TO_CHARACTER = {"cruel", "aggression", "wicked", "sinful", "mean_deeds"}
+
+        def _norm_domain(old_domain: str, claim: str = "") -> str:
+            if not old_domain or old_domain in PRIMARY_DOMAINS:
+                return old_domain
+            if old_domain == "fame_reputation":
+                cl = claim.lower().replace("_", " ")
+                return "wealth" if any(kw in cl for kw in _FAME_TO_WEALTH) else "career"
+            if old_domain == "intelligence_education":
+                cl = claim.lower().replace("_", " ")
+                return "career" if any(kw in cl for kw in _EDUCATION_TO_CAREER) else "character"
+            if old_domain == "enemies_litigation":
+                cl = claim.lower().replace("_", " ")
+                return "character" if any(kw in cl for kw in _ENEMIES_TO_CHARACTER) else "relationships"
+            return DOMAIN_NORMALIZATION.get(old_domain, "character")
+
+        normalized_predictions = []
+        for p in predictions:
+            old_domain = p.get("domain", "")
+            new_domain = _norm_domain(old_domain, p.get("claim", ""))
+            if new_domain != old_domain:
+                p = dict(p)
+                p["domain"] = new_domain
+            normalized_predictions.append(p)
+        predictions = normalized_predictions
+
+        # ── Validate primary_domain ──────────────────────────────────────
+        if primary_domain not in PRIMARY_DOMAINS:
+            raise ValueError(
+                f"primary_domain='{primary_domain}' not in PRIMARY_DOMAINS: "
+                f"{sorted(PRIMARY_DOMAINS)}"
+            )
+
+        # ── Validate primary_domain matches at least one prediction domain ─
+        pred_domains = {p.get("domain", "") for p in predictions}
+        if predictions and primary_domain not in pred_domains:
+            raise ValueError(
+                f"primary_domain='{primary_domain}' does not match any prediction "
+                f"domain: {sorted(pred_domains)}"
+            )
+
+        # ── outcome_domains from normalized prediction domains ────────────
+        domains = sorted(pred_domains - {""})
+
         # ── Tier 1 validation (build-time) ──────────────────────────────
         ent = entity_target if entity_target is not None else self._default_entity
         self._validate_add(conditions, direction, intensity, domains, predictions,
@@ -154,6 +204,7 @@ class V2ChapterBuilder:
             confidence=confidence, keyword_tags=all_tags, implemented=False,
             primary_condition=pc, modifiers=modifiers or [],
             exceptions=exceptions or [], outcome_domains=domains,
+            primary_domain=primary_domain,
             outcome_direction=direction, outcome_intensity=intensity,
             outcome_timing="unspecified", lagna_scope=lagna_scope or [],
             dasha_scope=[], verse_ref=verse_ref,
@@ -255,6 +306,7 @@ class V2ChapterBuilder:
             primary_condition=source.primary_condition,
             modifiers=source.modifiers, exceptions=source.exceptions,
             outcome_domains=source.outcome_domains,
+            primary_domain=source.primary_domain,
             outcome_direction=new_dir, outcome_intensity=source.outcome_intensity,
             outcome_timing=source.outcome_timing,
             lagna_scope=source.lagna_scope, dasha_scope=source.dasha_scope,
@@ -686,7 +738,7 @@ class V2ChapterBuilder:
     @staticmethod
     def _derive_health_sensitive(domains, direction):
         """Derive health_sensitive flag from domains and direction (G02)."""
-        health_domains = {"longevity", "physical_health", "mental_health"}
+        health_domains = {"longevity", "health", "physical_health", "mental_health"}
         has_health = bool(set(domains) & health_domains)
         is_negative = direction in ("unfavorable", "mixed")
         return has_health and is_negative

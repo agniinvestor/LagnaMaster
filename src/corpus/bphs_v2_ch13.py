@@ -37,7 +37,7 @@ b.add(
     ],
     signal_group="h2_lord_kendra_wealth",
     direction="favorable", intensity="strong",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "wealth_promoted",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.8},
@@ -67,7 +67,7 @@ b.add(
     ],
     signal_group="h2_lord_dusthana_poverty",
     direction="unfavorable", intensity="moderate",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "financial_conditions_decline",
          "domain": "wealth", "direction": "unfavorable", "magnitude": 0.7},
@@ -91,7 +91,7 @@ b.add(
     ],
     signal_group="benefic_h2_wealth",
     direction="favorable", intensity="moderate",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "wealth_through_benefic_in_2nd",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.6},
@@ -120,7 +120,7 @@ b.add(
     ],
     signal_group="malefic_h2_poverty",
     direction="unfavorable", intensity="moderate",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "wealth_destroyed_by_malefic",
          "domain": "wealth", "direction": "unfavorable", "magnitude": 0.6},
@@ -145,7 +145,7 @@ b.add(
     ],
     signal_group="jupiter_h2_wealth",
     direction="favorable", intensity="strong",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "wealthy_jupiter_rules_or_occupies_2nd",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.8},
@@ -182,7 +182,7 @@ b.add(
     ],
     signal_group="h2_h11_exchange_wealth",
     direction="favorable", intensity="strong",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "wealth_acquired_through_exchange",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.8},
@@ -218,7 +218,7 @@ b.add(
     ],
     signal_group="h2_kendra_h11_trikona_wealth",
     direction="favorable", intensity="strong",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "wealthy_subject",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.8},
@@ -246,7 +246,7 @@ b.add(
     ],
     signal_group="h2_lord_jupiter_venus_aspect_wealth",
     direction="favorable", intensity="strong",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "wealthy_through_jupiter_venus_relation",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
@@ -280,7 +280,7 @@ b.add(
     ],
     signal_group="h2_lord_dusthana_penniless",
     direction="unfavorable", intensity="strong",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "penniless_from_birth",
          "domain": "wealth", "direction": "unfavorable", "magnitude": 0.9},
@@ -310,7 +310,7 @@ b.add(
     ],
     signal_group="h2_lord_combust_begging",
     direction="unfavorable", intensity="strong",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "beg_for_food",
          "domain": "wealth", "direction": "unfavorable", "magnitude": 0.9},
@@ -346,7 +346,7 @@ b.add(
     ],
     signal_group="h2_lord_yogakaraka_auspicious",
     direction="favorable", intensity="strong",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "financial_prospects_superior_despite_weak_lord",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
@@ -380,12 +380,12 @@ b.add(
     ],
     signal_group="h2_h11_government_loss",
     direction="unfavorable", intensity="strong",
-    domains=["wealth", "enemies_litigation"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "lose_wealth_through_government",
          "domain": "wealth", "direction": "unfavorable", "magnitude": 0.8},
         {"entity": "native", "claim": "royal_punishments_fines",
-         "domain": "enemies_litigation", "direction": "unfavorable", "magnitude": 0.7},
+         "domain": "relationships", "direction": "unfavorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.13 v.8",
     description=(
@@ -416,7 +416,7 @@ b.add(
     ],
     signal_group="jupiter_h11_venus_h2_charity",
     direction="favorable", intensity="moderate",
-    domains=["wealth", "spirituality"],
+    primary_domain="spirituality",
     predictions=[
         {"entity": "native", "claim": "expenses_on_religious_charitable_grounds",
          "domain": "spirituality", "direction": "favorable", "magnitude": 0.6},
@@ -442,12 +442,12 @@ b.add(
     ],
     signal_group="h2_lord_exalted_fame",
     direction="favorable", intensity="strong",
-    domains=["fame_reputation", "character_temperament"],
+    primary_domain="career",
     predictions=[
         {"entity": "native", "claim": "famous_helps_others",
-         "domain": "fame_reputation", "direction": "favorable", "magnitude": 0.7},
+         "domain": "career", "direction": "favorable", "magnitude": 0.7},
         {"entity": "native", "claim": "looks_after_his_people",
-         "domain": "character_temperament", "direction": "favorable", "magnitude": 0.6},
+         "domain": "character", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.13 v.10",
     description=(
@@ -478,7 +478,7 @@ b.add(
     ],
     signal_group="h2_lord_paravatamsa_wealth",
     direction="favorable", intensity="strong",
-    domains=["wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "effortless_wealth_all_kinds",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.9},
@@ -519,10 +519,10 @@ b.add(
     ],
     signal_group="h2_lord_strong_eyes",
     direction="favorable", intensity="moderate",
-    domains=["physical_appearance"],
+    primary_domain="character",
     predictions=[
         {"entity": "native", "claim": "beautiful_eyes",
-         "domain": "physical_appearance", "direction": "favorable", "magnitude": 0.6},
+         "domain": "character", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.13 v.12",
     description=(
@@ -557,10 +557,10 @@ b.add(
     ],
     signal_group="h2_lord_dusthana_eye_disease",
     direction="unfavorable", intensity="moderate",
-    domains=["physical_health", "physical_appearance"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "disease_or_deformity_of_eyes",
-         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.6},
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.13 v.12",
     commentary_context=(
@@ -589,12 +589,12 @@ b.add(
     ],
     signal_group="h2_malefic_untruthful",
     direction="unfavorable", intensity="moderate",
-    domains=["character_temperament", "physical_health"],
+    primary_domain="character",
     predictions=[
         {"entity": "native", "claim": "tale_bearer_speaks_untruth",
-         "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.6},
+         "domain": "character", "direction": "unfavorable", "magnitude": 0.6},
         {"entity": "native", "claim": "windy_diseases_gastric",
-         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5},
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.5},
     ],
     verse_ref="Ch.13 v.13",
     description=(
@@ -627,7 +627,7 @@ b.add(
 b.add(
     conditions=[{"type": "planets_conjunct", "planets": ["Jupiter", "Mars"]}],
     signal_group="jupiter_mars_conjunct_wealth",
-    direction="favorable", intensity="moderate", domains=["wealth"],
+    direction="favorable", intensity="moderate", primary_domain="wealth",
     predictions=[{"entity": "native", "claim": "wealth_acquired_through_jupiter_mars_conjunction", "domain": "wealth", "direction": "favorable", "magnitude": 0.7}],
     verse_ref="Ch.13 v.3",
     commentary_context="Santhanam: Jupiter conjunct Mars gives wealth regardless of house ownership or placement. The 'whether or not' clarifies this is unconditional — no lordship or house modifier applies.",
@@ -640,7 +640,7 @@ b.add(
     conditions=[{"type": "lord_in_house", "lord_of": 2, "house": [1, 4, 5, 7, 9, 10]},
                 {"type": "lord_in_house", "lord_of": 11, "house": [1, 4, 5, 7, 9, 10]}],
     signal_group="h2_h11_lords_kendra_trikona_gains",
-    direction="favorable", intensity="moderate", domains=["wealth"],
+    direction="favorable", intensity="moderate", primary_domain="wealth",
     predictions=[{"entity": "native", "claim": "financial_gains_through_wealth_lords_in_kendra", "domain": "wealth", "direction": "favorable", "magnitude": 0.6}],
     verse_ref="Ch.13 v.4",
     commentary_context="Santhanam: The 11th lord has a say in financial matters apart from 2nd lord. These two joining in ascendant, 4th, 7th, 10th, 5th or 9th will also lead to financial gains.",
@@ -650,8 +650,8 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 2}],
     signal_group="jupiter_h2_beautiful_eyes",
-    direction="favorable", intensity="moderate", domains=["physical_appearance"],
-    predictions=[{"entity": "native", "claim": "beautiful_eyes_from_jupiter_in_2nd", "domain": "physical_appearance", "direction": "favorable", "magnitude": 0.6}],
+    direction="favorable", intensity="moderate", primary_domain="character",
+    predictions=[{"entity": "native", "claim": "beautiful_eyes_from_jupiter_in_2nd", "domain": "character", "direction": "favorable", "magnitude": 0.6}],
     verse_ref="Ch.13 v.12",
     commentary_context="Santhanam: Jupiter well placed in 2nd, or 2nd lord in exaltation, or with benefic = beautiful eyes. Jupiter's position in 2nd is a safe bet for strong sight and beauty of eyes.",
     description="Jupiter in 2nd: beautiful eyes and strong sight.",
@@ -661,8 +661,8 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Venus", "house": 2}],
     signal_group="venus_full_moon_h2_beautiful_eyes",
-    direction="favorable", intensity="moderate", domains=["physical_appearance"],
-    predictions=[{"entity": "native", "claim": "beautiful_eyes_venus_or_full_moon_in_2nd", "domain": "physical_appearance", "direction": "favorable", "magnitude": 0.5}],
+    direction="favorable", intensity="moderate", primary_domain="character",
+    predictions=[{"entity": "native", "claim": "beautiful_eyes_venus_or_full_moon_in_2nd", "domain": "character", "direction": "favorable", "magnitude": 0.5}],
     verse_ref="Ch.13 v.12",
     commentary_context="Santhanam: Venus in 2nd or Full Moon in 2nd will not deprive one of beautiful eyes.",
     description="Venus or Full Moon in 2nd: will not deprive of beautiful eyes.",
@@ -672,8 +672,8 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 2}],
     signal_group="mercury_h2_speech_not_sight",
-    direction="neutral", intensity="moderate", domains=["intelligence_education"],
-    predictions=[{"entity": "native", "claim": "mercury_2nd_affects_speech_more_than_sight", "domain": "intelligence_education", "direction": "neutral", "magnitude": 0.4}],
+    direction="neutral", intensity="moderate", primary_domain="character",
+    predictions=[{"entity": "native", "claim": "mercury_2nd_affects_speech_more_than_sight", "domain": "character", "direction": "neutral", "magnitude": 0.4}],
     verse_ref="Ch.13 v.12",
     commentary_context="Santhanam: Mercury in 2nd will have a say on the speech rather than on the sight. Hence Jupiter's position in the 2nd is a safe bet for strong sight.",
     description="Mercury in 2nd: affects speech more than sight.",
@@ -683,9 +683,9 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 2}],
     signal_group="saturn_h2_rheumatism",
-    direction="unfavorable", intensity="moderate", domains=["physical_health"],
+    direction="unfavorable", intensity="moderate", primary_domain="health",
     predictions=[{"entity": "native", "claim": "rheumatism_and_windy_disorders",
-                   "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5}],
+                   "domain": "health", "direction": "unfavorable", "magnitude": 0.5}],
     verse_ref="Ch.13 v.13",
     commentary_context="Santhanam: If 2nd house or its lord is associated with Saturn = rheumatism and such other windy disorders.",
     description="Saturn in 2nd or associated with 2nd lord: rheumatism and windy disorders.",
@@ -695,9 +695,9 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Mercury", "house": 2}],
     signal_group="mercury_h2_rheumatism",
-    direction="unfavorable", intensity="moderate", domains=["physical_health"],
+    direction="unfavorable", intensity="moderate", primary_domain="health",
     predictions=[{"entity": "native", "claim": "rheumatism_and_windy_disorders",
-                   "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5}],
+                   "domain": "health", "direction": "unfavorable", "magnitude": 0.5}],
     verse_ref="Ch.13 v.13",
     commentary_context="Santhanam: If 2nd house or its lord is associated with Mercury = rheumatism and such other windy disorders. Mercury is an alternative causal path to Saturn.",
     description="Mercury in 2nd or associated with 2nd lord: rheumatism and windy disorders.",
@@ -707,8 +707,8 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 2}],
     signal_group="jupiter_h2_afflicted_gastric",
-    direction="unfavorable", intensity="moderate", domains=["physical_health"],
-    predictions=[{"entity": "native", "claim": "gastric_troubles_from_afflicted_jupiter", "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5}],
+    direction="unfavorable", intensity="moderate", primary_domain="health",
+    predictions=[{"entity": "native", "claim": "gastric_troubles_from_afflicted_jupiter", "domain": "health", "direction": "unfavorable", "magnitude": 0.5}],
     verse_ref="Ch.13 v.13",
     commentary_context="Santhanam: If Jupiter is in affliction so related, gastric troubles will come to pass.",
     description="Jupiter in 2nd in affliction: gastric troubles.",

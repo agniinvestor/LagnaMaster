@@ -43,12 +43,12 @@ b.add(
     ],
     signal_group="lagna_lord_dusthana_health",
     direction="unfavorable", intensity="moderate",
-    domains=["physical_health", "longevity"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "physical_felicity_diminishes",
-         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.7},
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.7},
         {"entity": "native", "claim": "luck_and_progress_defective",
-         "domain": "career_status", "direction": "unfavorable", "magnitude": 0.5},
+         "domain": "career", "direction": "unfavorable", "magnitude": 0.5},
     ],
     verse_ref="Ch.12 v.1-2",
     description=(
@@ -80,12 +80,12 @@ b.add(
     ],
     signal_group="lagna_lord_kendra_health",
     direction="favorable", intensity="strong",
-    domains=["physical_health", "longevity"],
+    primary_domain="longevity",
     predictions=[
         {"entity": "native", "claim": "full_span_of_life",
          "domain": "longevity", "direction": "favorable", "magnitude": 0.8},
         {"entity": "native", "claim": "physical_felicity",
-         "domain": "physical_health", "direction": "favorable", "magnitude": 0.7},
+         "domain": "health", "direction": "favorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.12 v.1-2",
     description=(
@@ -115,10 +115,10 @@ b.add(
     ],
     signal_group="lagna_lord_debilitated_disease",
     direction="unfavorable", intensity="strong",
-    domains=["physical_health"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "chronic_diseases",
-         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.8},
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.8},
     ],
     verse_ref="Ch.12 v.2",
     description=(
@@ -145,10 +145,10 @@ b.add(
     ],
     signal_group="benefic_kendra_health_remedy",
     direction="favorable", intensity="moderate",
-    domains=["physical_health"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "diseases_disappear",
-         "domain": "physical_health", "direction": "favorable", "magnitude": 0.6},
+         "domain": "health", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.12 v.2",
     description=(
@@ -174,10 +174,10 @@ b.add(
     ],
     signal_group="lagna_lord_dusthana_conjunct_malefic",
     direction="unfavorable", intensity="strong",
-    domains=["physical_health", "career_status"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "dire_defect_health_luck_and_progress",
-         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.8},
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.8},
     ],
     verse_ref="Ch.12 v.1-2",
     description=(
@@ -204,10 +204,10 @@ b.add(
     ],
     signal_group="lagna_lord_dusthana_but_benefic_relief",
     direction="mixed", intensity="moderate",
-    domains=["physical_health"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "relief_from_health_issues_over_time",
-         "domain": "physical_health", "direction": "favorable", "magnitude": 0.5},
+         "domain": "health", "direction": "favorable", "magnitude": 0.5},
     ],
     verse_ref="Ch.12 v.1-2",
     description=(
@@ -238,10 +238,10 @@ b.add(
     ],
     signal_group="moon_malefic_no_benefic_health",
     direction="unfavorable", intensity="moderate",
-    domains=["physical_health"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "no_bodily_health",
-         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.7},
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.12 v.3",
     description=(
@@ -275,10 +275,10 @@ b.add(
     ],
     signal_group="benefic_h1_appearance",
     direction="favorable", intensity="moderate",
-    domains=["physical_appearance"],
+    primary_domain="character",
     predictions=[
         {"entity": "native", "claim": "pleasing_appearance",
-         "domain": "physical_appearance", "direction": "favorable", "magnitude": 0.7},
+         "domain": "character", "direction": "favorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.12 v.4",
     description=(
@@ -304,10 +304,10 @@ b.add(
     ],
     signal_group="malefic_h1_appearance",
     direction="unfavorable", intensity="moderate",
-    domains=["physical_appearance"],
+    primary_domain="character",
     predictions=[
         {"entity": "native", "claim": "bereft_of_good_appearance",
-         "domain": "physical_appearance", "direction": "unfavorable", "magnitude": 0.7},
+         "domain": "character", "direction": "unfavorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.12 v.4",
     description=(
@@ -334,14 +334,14 @@ b.add(
     ],
     signal_group="lagna_lord_kendra_benefits",
     direction="favorable", intensity="strong",
-    domains=["longevity", "wealth", "intelligence_education", "fame_reputation"],
+    primary_domain="longevity",
     predictions=[
         {"entity": "native", "claim": "longlived_full_span",
          "domain": "longevity", "direction": "favorable", "magnitude": 0.8},
         {"entity": "native", "claim": "wealthy_and_prosperous",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
         {"entity": "native", "claim": "intelligent_liked_by_authorities",
-         "domain": "intelligence_education", "direction": "favorable", "magnitude": 0.7},
+         "domain": "character", "direction": "favorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.12 v.5-7",
     description=(
@@ -379,12 +379,12 @@ b.add(
     ],
     signal_group="lagna_lord_movable_royal",
     direction="favorable", intensity="strong",
-    domains=["fame_reputation", "physical_appearance"],
+    primary_domain="career",
     predictions=[
         {"entity": "native", "claim": "royal_marks_of_fortune",
-         "domain": "fame_reputation", "direction": "favorable", "magnitude": 0.7},
+         "domain": "career", "direction": "favorable", "magnitude": 0.7},
         {"entity": "native", "claim": "endowed_with_rajalakshana",
-         "domain": "physical_appearance", "direction": "favorable", "magnitude": 0.6},
+         "domain": "character", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.12 v.5-7",
     description=(
@@ -412,10 +412,10 @@ b.add(
     ],
     signal_group="mercury_jupiter_venus_kendra_moon_royal",
     direction="favorable", intensity="strong",
-    domains=["fame_reputation", "wealth"],
+    primary_domain="wealth",
     predictions=[
         {"entity": "native", "claim": "royal_fortunes_through_benefics_in_kendra",
-         "domain": "fame_reputation", "direction": "favorable", "magnitude": 0.7},
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.12 v.5-7",
     description=(
@@ -449,10 +449,10 @@ b.add(
     ],
     signal_group="saturn_h1_coiled_birth",
     direction="unfavorable", intensity="weak",
-    domains=["physical_health"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "coiled_birth_cord_around_body",
-         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5},
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.5},
     ],
     timing_window={"type": "age", "value": 0, "precision": "exact"},
     verse_ref="Ch.12 v.8",
@@ -483,10 +483,10 @@ b.add(
     ],
     signal_group="mars_h1_coiled_birth",
     direction="unfavorable", intensity="weak",
-    domains=["physical_health"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "coiled_birth_cord_around_body",
-         "domain": "physical_health", "direction": "unfavorable", "magnitude": 0.5},
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.5},
     ],
     timing_window={"type": "age", "value": 0, "precision": "exact"},
     verse_ref="Ch.12 v.8",
@@ -514,10 +514,10 @@ b.add(
     ],
     signal_group="sun_quadruped_twins",
     direction="neutral", intensity="moderate",
-    domains=["physical_health"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "born_as_twin",
-         "domain": "physical_health", "direction": "neutral", "magnitude": 0.6},
+         "domain": "health", "direction": "neutral", "magnitude": 0.6},
     ],
     timing_window={"type": "age", "value": 0, "precision": "exact"},
     verse_ref="Ch.12 v.9",
@@ -555,7 +555,7 @@ b.add(
     entity_target="general",
     signal_group="sun_moon_conjunct_mother",
     direction="unfavorable", intensity="strong",
-    domains=["longevity"],
+    primary_domain="longevity",
     predictions=[
         {"entity": "native", "claim": "nurtured_by_three_mothers",
          "domain": "longevity", "direction": "unfavorable", "magnitude": 0.6},
@@ -594,7 +594,7 @@ b.add(
     entity_target="general",
     signal_group="sun_moon_vargottama_exception",
     direction="neutral", intensity="moderate",
-    domains=["longevity"],
+    primary_domain="longevity",
     predictions=[
         {"entity": "native", "claim": "vargottama_luminaries_exception_to_three_mothers",
          "domain": "longevity", "direction": "neutral", "magnitude": 0.3},
@@ -625,10 +625,10 @@ b.add(
     conditions=[],  # Meta-rule: evaluation instruction, not a specific condition
     signal_group="moon_equals_ascendant_principle",
     direction="neutral", intensity="moderate",
-    domains=["physical_health"],
+    primary_domain="health",
     predictions=[
         {"entity": "native", "claim": "replicate_all_lagna_rules_on_moon_axis",
-         "domain": "physical_health", "direction": "neutral", "magnitude": 0.0},
+         "domain": "health", "direction": "neutral", "magnitude": 0.0},
     ],
     verse_ref="Ch.12 v.11",
     description=(
@@ -659,10 +659,10 @@ b.add(
     conditions=[],  # Reference mapping, not a trigger condition
     signal_group="decanate_body_mapping",
     direction="neutral", intensity="moderate",
-    domains=["physical_appearance"],
+    primary_domain="character",
     predictions=[
         {"entity": "native", "claim": "body_parts_mapped_by_decanate",
-         "domain": "physical_appearance", "direction": "neutral", "magnitude": 0.0},
+         "domain": "character", "direction": "neutral", "magnitude": 0.0},
     ],
     verse_ref="Ch.12 v.12-14",
     description=(
@@ -698,10 +698,10 @@ b.add(
     ],
     signal_group="malefic_decanate_scars",
     direction="unfavorable", intensity="weak",
-    domains=["physical_appearance"],
+    primary_domain="character",
     predictions=[
         {"entity": "native", "claim": "ulcers_or_scars_on_limb",
-         "domain": "physical_appearance", "direction": "unfavorable", "magnitude": 0.5},
+         "domain": "character", "direction": "unfavorable", "magnitude": 0.5},
     ],
     verse_ref="Ch.12 v.15",
     description=(
@@ -728,10 +728,10 @@ b.add(
     ],
     signal_group="benefic_decanate_moles",
     direction="neutral", intensity="weak",
-    domains=["physical_appearance"],
+    primary_domain="character",
     predictions=[
         {"entity": "native", "claim": "moles_or_beauty_marks_on_limb",
-         "domain": "physical_appearance", "direction": "neutral", "magnitude": 0.4},
+         "domain": "character", "direction": "neutral", "magnitude": 0.4},
     ],
     verse_ref="Ch.12 v.15",
     description=(
@@ -755,10 +755,10 @@ b.add(
     ],
     signal_group="body_mark_timing",
     direction="neutral", intensity="weak",
-    domains=["physical_appearance"],
+    primary_domain="character",
     predictions=[
         {"entity": "native", "claim": "body_marks_from_birth_if_own_sign",
-         "domain": "physical_appearance", "direction": "neutral", "magnitude": 0.4},
+         "domain": "character", "direction": "neutral", "magnitude": 0.4},
     ],
     verse_ref="Ch.12 v.15",
     description=(

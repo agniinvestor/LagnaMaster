@@ -13,12 +13,7 @@ from src.corpus.corpus_audit import (
 RULES = BPHS_V2_CH13_REGISTRY.all()
 
 VALID_DIRECTIONS = {"favorable", "unfavorable", "neutral", "mixed"}
-VALID_DOMAINS = {
-    "longevity", "physical_health", "mental_health", "wealth", "career_status",
-    "marriage", "progeny", "spirituality", "intelligence_education",
-    "character_temperament", "physical_appearance", "foreign_travel",
-    "enemies_litigation", "property_vehicles", "fame_reputation",
-}
+from src.corpus.taxonomy import VALID_OUTCOME_DOMAINS as VALID_DOMAINS  # includes both legacy and primary
 
 
 def test_total_rule_count():

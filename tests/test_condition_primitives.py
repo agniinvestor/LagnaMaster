@@ -77,7 +77,7 @@ def _base_add(**overrides):
         conditions=[{"type": "planet_in_house", "planet": "sun", "house": 1}],
         signal_group="test_signal",
         direction="favorable", intensity="moderate",
-        domains=["wealth"],
+        primary_domain="wealth",
         predictions=[{"entity": "native", "claim": "test_claim_placeholder",
                        "domain": "wealth", "direction": "favorable", "magnitude": 0.5}],
         verse_ref="Ch.99 v.1",

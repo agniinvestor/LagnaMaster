@@ -25,13 +25,7 @@ from __future__ import annotations
 
 import re
 
-VALID_DOMAINS = frozenset({
-    "longevity", "physical_health", "mental_health", "wealth",
-    "career_status", "marriage", "progeny", "spirituality",
-    "intelligence_education", "character_temperament",
-    "physical_appearance", "foreign_travel", "enemies_litigation",
-    "property_vehicles", "fame_reputation",
-})
+from src.corpus.taxonomy import VALID_OUTCOME_DOMAINS as VALID_DOMAINS  # includes both legacy and primary
 
 VALID_DIRECTIONS = frozenset({"favorable", "unfavorable", "neutral", "mixed"})
 VALID_INTENSITIES = frozenset({"strong", "moderate", "weak", "conditional"})

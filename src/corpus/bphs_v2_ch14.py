@@ -22,12 +22,12 @@ b.add(
     conditions=[{"type": "planet_in_house", "planet": "any_benefic", "house": 3}],
     entity_target="general",
     signal_group="benefic_h3_coborn", direction="favorable", intensity="moderate",
-    domains=["character_temperament"],
+    primary_domain="progeny",
     predictions=[
         {"entity": "siblings", "claim": "endowed_with_coborn",
          "domain": "progeny", "direction": "favorable", "magnitude": 0.7},
         {"entity": "native", "claim": "courageous",
-         "domain": "character_temperament", "direction": "favorable", "magnitude": 0.6},
+         "domain": "character", "direction": "favorable", "magnitude": 0.6},
     ],
     verse_ref="Ch.14 v.1",
     description=(
@@ -52,7 +52,7 @@ b.add(
         {"type": "planet_aspecting", "planet": "Mars", "house": 3},
     ],
     signal_group="h3_lord_mars_aspect_coborn", direction="favorable", intensity="moderate",
-    domains=["progeny"],
+    primary_domain="progeny",
     predictions=[
         {"entity": "siblings", "claim": "good_results_for_coborn",
          "domain": "progeny", "direction": "favorable", "magnitude": 0.7},
@@ -78,7 +78,7 @@ b.add(
         {"type": "planets_conjunct", "planets": ["Mars", "lord_of_3"]},
     ],
     signal_group="h3_lord_malefic_coborn_death",
-    direction="unfavorable", intensity="strong", domains=["longevity"],
+    direction="unfavorable", intensity="strong", primary_domain="longevity",
     predictions=[
         {"entity": "siblings", "claim": "destruction_of_coborn",
          "domain": "longevity", "direction": "unfavorable", "magnitude": 0.8},
@@ -114,7 +114,7 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Venus", "house": 3}],
     signal_group="h3_female_planet_sisters",
-    direction="neutral", intensity="moderate", domains=["progeny"],
+    direction="neutral", intensity="moderate", primary_domain="progeny",
     predictions=[
         {"entity": "siblings", "claim": "sisters_born_after_native",
          "domain": "progeny", "direction": "neutral", "magnitude": 0.6},
@@ -140,7 +140,7 @@ b.add(
         {"type": "planet_in_house", "planet": "Mars", "house": 8},
     ],
     signal_group="h3_lord_mars_h8_coborn_death",
-    direction="unfavorable", intensity="strong", domains=["longevity"],
+    direction="unfavorable", intensity="strong", primary_domain="longevity",
     predictions=[
         {"entity": "siblings", "claim": "destruction_of_coborn",
          "domain": "longevity", "direction": "unfavorable", "magnitude": 0.8},
@@ -165,7 +165,7 @@ b.add(
 b.add(
     conditions=[{"type": "lord_in_house", "lord_of": 3, "house": [1, 4, 5, 7, 9, 10]}],
     signal_group="h3_lord_kendra_coborn_happy",
-    direction="favorable", intensity="moderate", domains=["longevity"],
+    direction="favorable", intensity="moderate", primary_domain="longevity",
     predictions=[
         {"entity": "siblings", "claim": "happiness_for_coborn",
          "domain": "longevity", "direction": "favorable", "magnitude": 0.7},
@@ -187,7 +187,7 @@ b.add(
         {"type": "planets_conjunct", "planets": ["Mars", "Saturn"]},
     ],
     signal_group="mercury_h3_mars_saturn_siblings",
-    direction="mixed", intensity="strong", domains=["longevity"],
+    direction="mixed", intensity="strong", primary_domain="longevity",
     predictions=[
         {"entity": "siblings", "claim": "elder_sister_born",
          "domain": "progeny", "direction": "favorable", "magnitude": 0.5},
@@ -211,7 +211,7 @@ b.add(
         {"type": "planet_dignity", "planet": "lord_of_3", "dignity": "exalted"},
     ],
     signal_group="h3_lord_exalted_trikona_12_coborn",
-    direction="favorable", intensity="strong", domains=["progeny"],
+    direction="favorable", intensity="strong", primary_domain="progeny",
     predictions=[
         {"entity": "siblings", "claim": "twelve_total_coborn",
          "domain": "progeny", "direction": "favorable", "magnitude": 0.6},
@@ -235,7 +235,7 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 3}],
     signal_group="moon_h3_seven_coborn",
-    direction="favorable", intensity="moderate", domains=["progeny"],
+    direction="favorable", intensity="moderate", primary_domain="progeny",
     predictions=[
         {"entity": "siblings", "claim": "seven_coborn",
          "domain": "progeny", "direction": "favorable", "magnitude": 0.5},
@@ -253,7 +253,7 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Sun", "house": 3}],
     signal_group="sun_h3_elder_sibling_loss",
-    direction="unfavorable", intensity="strong", domains=["longevity"],
+    direction="unfavorable", intensity="strong", primary_domain="longevity",
     predictions=[
         {"entity": "siblings", "claim": "elder_siblings_destroyed",
          "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7},
@@ -267,7 +267,7 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 3}],
     signal_group="saturn_h3_younger_sibling_loss",
-    direction="unfavorable", intensity="strong", domains=["longevity"],
+    direction="unfavorable", intensity="strong", primary_domain="longevity",
     predictions=[
         {"entity": "siblings", "claim": "younger_siblings_destroyed",
          "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7},
@@ -281,7 +281,7 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 3}],
     signal_group="mars_h3_all_sibling_loss",
-    direction="unfavorable", intensity="strong", domains=["longevity"],
+    direction="unfavorable", intensity="strong", primary_domain="longevity",
     predictions=[
         {"entity": "siblings", "claim": "both_elder_and_younger_destroyed",
          "domain": "longevity", "direction": "unfavorable", "magnitude": 0.8},
@@ -301,7 +301,7 @@ b.add(
 b.add(
     conditions=[],
     signal_group="yoga_strength_siblings_method",
-    direction="neutral", intensity="moderate", domains=["progeny"],
+    direction="neutral", intensity="moderate", primary_domain="progeny",
     predictions=[
         {"entity": "siblings", "claim": "assess_yoga_strength_before_declaring",
          "domain": "progeny", "direction": "neutral", "magnitude": 0.5},
@@ -318,7 +318,7 @@ b.add(
 b.add(
     conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 3}],
     signal_group="mars_alone_h3_not_conducive",
-    direction="unfavorable", intensity="moderate", domains=["progeny"],
+    direction="unfavorable", intensity="moderate", primary_domain="progeny",
     predictions=[{"entity": "siblings", "claim": "mars_alone_not_conducive_to_brothers",
                   "domain": "progeny", "direction": "unfavorable", "magnitude": 0.5}],
     verse_ref="Ch.14 v.2",
@@ -335,7 +335,7 @@ b.add(
     ],
     entity_target="siblings",
     signal_group="jupiter_h11_lord_malefic_elder_harm",
-    direction="unfavorable", intensity="moderate", domains=["longevity"],
+    direction="unfavorable", intensity="moderate", primary_domain="longevity",
     predictions=[{"entity": "siblings", "claim": "elder_siblings_harmed",
                   "domain": "longevity", "direction": "unfavorable", "magnitude": 0.6}],
     verse_ref="Ch.14 v.3",
@@ -352,7 +352,7 @@ b.add(
     ],
     entity_target="spouse",
     signal_group="venus_h7_lord_malefic_spouse_harm",
-    direction="unfavorable", intensity="moderate", domains=["marriage", "longevity"],
+    direction="unfavorable", intensity="moderate", primary_domain="longevity",
     predictions=[{"entity": "spouse", "claim": "spouse_harmed",
                   "domain": "longevity", "direction": "unfavorable", "magnitude": 0.6}],
     verse_ref="Ch.14 v.3",
@@ -368,7 +368,7 @@ b.add(
     ],
     entity_target="father",
     signal_group="sun_h9_lord_malefic_father_harm",
-    direction="unfavorable", intensity="moderate", domains=["longevity"],
+    direction="unfavorable", intensity="moderate", primary_domain="longevity",
     predictions=[{"entity": "father", "claim": "father_harmed",
                   "domain": "longevity", "direction": "unfavorable", "magnitude": 0.6}],
     verse_ref="Ch.14 v.3",
@@ -384,7 +384,7 @@ b.add(
     ],
     entity_target="mother",
     signal_group="moon_h4_lord_malefic_mother_harm",
-    direction="unfavorable", intensity="moderate", domains=["longevity"],
+    direction="unfavorable", intensity="moderate", primary_domain="longevity",
     predictions=[{"entity": "mother", "claim": "mother_harmed",
                   "domain": "longevity", "direction": "unfavorable", "magnitude": 0.6}],
     verse_ref="Ch.14 v.3",
@@ -398,7 +398,7 @@ b.add(
                 {"type": "lord_in_house", "lord_of": 7, "house": 8}],
     entity_target="spouse",
     signal_group="venus_h7_lord_h8_short_marriage",
-    direction="unfavorable", intensity="strong", domains=["marriage", "longevity"],
+    direction="unfavorable", intensity="strong", primary_domain="longevity",
     predictions=[{"entity": "spouse", "claim": "short_married_life",
                   "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7}],
     verse_ref="Ch.14 v.5-6",
@@ -410,7 +410,7 @@ b.add(
     conditions=[{"type": "planets_conjunct", "planets": ["Mars", "Rahu"]},
                 {"type": "planet_dignity", "planet": "lord_of_3", "dignity": "debilitated"}],
     signal_group="mars_rahu_h3_lord_fall_sibling_loss",
-    direction="unfavorable", intensity="strong", domains=["longevity"],
+    direction="unfavorable", intensity="strong", primary_domain="longevity",
     predictions=[{"entity": "siblings", "claim": "loss_of_younger_three_elders_remain",
                   "domain": "longevity", "direction": "unfavorable", "magnitude": 0.7}],
     verse_ref="Ch.14 v.7-11",
@@ -424,7 +424,7 @@ b.add(
         {"type": "planet_aspecting", "planet": "Venus", "house": 3},
     ],
     signal_group="moon_h3_venus_aspect_sisters",
-    direction="neutral", intensity="moderate", domains=["progeny"],
+    direction="neutral", intensity="moderate", primary_domain="progeny",
     predictions=[{"entity": "siblings", "claim": "younger_sisters_indicated",
                   "domain": "progeny", "direction": "neutral", "magnitude": 0.5}],
     verse_ref="Ch.14 v.12-13",
@@ -438,9 +438,9 @@ b.add(
     conditions=[{"type": "planet_in_house", "planet": "Mars", "house": 3}],
     entity_target="native",
     signal_group="mars_h3_adverse_character",
-    direction="unfavorable", intensity="moderate", domains=["character_temperament"],
+    direction="unfavorable", intensity="moderate", primary_domain="character",
     predictions=[{"entity": "native", "claim": "adverse_effect_on_character",
-                  "domain": "character_temperament", "direction": "unfavorable", "magnitude": 0.5}],
+                  "domain": "character", "direction": "unfavorable", "magnitude": 0.5}],
     verse_ref="Ch.14 v.14",
     commentary_context="Santhanam: Mars in 3rd has also adverse say on the native's character. See Saravali 'Effects of Planets in Bhavas' for details.",
     description="Mars in 3rd: adverse effect on native's character.",
