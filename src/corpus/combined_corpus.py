@@ -44,6 +44,18 @@ from __future__ import annotations
 from src.corpus.registry import CorpusRegistry
 
 
+def _classify_v1_derivation(rule) -> str:
+    """Classify V1 rule derivation type for ranking.
+
+    verse_derived > commentary_derived > interpretive.
+    """
+    if getattr(rule, "verse_ref", "") and getattr(rule, "concordance_texts", []):
+        return "verse_derived"
+    elif getattr(rule, "verse_ref", ""):
+        return "commentary_derived"
+    return "interpretive"
+
+
 def build_corpus() -> CorpusRegistry:
     """Build a fresh combined corpus from all registered sources."""
     # ── Phase 0 sources ───────────────────────────────────────────────────────
