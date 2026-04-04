@@ -170,6 +170,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.bphs_v2_ch24b import BPHS_V2_CH24B_REGISTRY  # noqa: F811  # S310 lords 5-8
     from src.corpus.bphs_v2_ch24c import BPHS_V2_CH24C_REGISTRY  # noqa: F811  # S311 lords 9-12+misc
     from src.corpus.bphs_v2_ch25 import BPHS_V2_CH25_REGISTRY  # noqa: F811  # S312 upagrahas
+    from src.corpus.bphs_v2_ch29 import BPHS_V2_CH29_REGISTRY  # noqa: F811  # S314 bhava padas
 
     registry = CorpusRegistry()
     sources = [
@@ -293,6 +294,7 @@ def build_corpus() -> CorpusRegistry:
         BPHS_V2_CH24B_REGISTRY,
         BPHS_V2_CH24C_REGISTRY,
         BPHS_V2_CH25_REGISTRY,
+        BPHS_V2_CH29_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():

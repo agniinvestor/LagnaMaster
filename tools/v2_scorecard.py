@@ -197,7 +197,11 @@ class V2Scorecard:
     chapter_readiness: dict = field(default_factory=dict)
     # {ch: {"verse_coverage": ratio, "l3_plus_ratio": ratio, "review_ratio": ratio, "ready": bool}}
 
-    # ── O. Overall ────────────────────────────────────────────────────────
+    # ── O. Legacy Debt by Source ─────────────────────────────────────────
+    legacy_debt: dict = field(default_factory=dict)
+    # {source: {total, v2, legacy, chapters: {ch: {total, v2, legacy}}}}
+
+    # ── P. Overall ────────────────────────────────────────────────────────
     v2_completeness_score: float = 0.0  # 0-100%
     red_flags: list = field(default_factory=list)
 
@@ -777,6 +781,30 @@ def format_scorecard(sc: V2Scorecard) -> str:
         lines.append(f"  Ship-ready: {ship_count}/{total_ch} chapters")
     lines.append("")
 
+    # O. Legacy Debt by Source
+    if sc.legacy_debt:
+        lines.append("O. LEGACY DEBT BY SOURCE (full corpus)")
+        total_all = sum(d["total"] for d in sc.legacy_debt.values())
+        total_v2 = sum(d["v2"] for d in sc.legacy_debt.values())
+        total_leg = sum(d["legacy"] for d in sc.legacy_debt.values())
+        lines.append(f"  Total: {total_all} rules ({total_v2} V2, {total_leg} legacy)")
+        # Sort sources by legacy count descending
+        for src in sorted(sc.legacy_debt, key=lambda s: -sc.legacy_debt[s]["legacy"]):
+            d = sc.legacy_debt[src]
+            if d["total"] == 0:
+                continue
+            v2_pct = d["v2"] / d["total"] * 100 if d["total"] else 0
+            lines.append(f"  {src:25s}: {d['total']:5d} ({d['v2']:4d} V2, {d['legacy']:4d} legacy) [{v2_pct:5.1f}% V2]")
+            # Show chapters with legacy debt (skip pure-V2 chapters)
+            chs = d["chapters"]
+            for ch in sorted(chs, key=lambda c: c.replace("Ch.", "").zfill(5)):
+                cd = chs[ch]
+                if cd["legacy"] == 0:
+                    continue  # skip chapters fully upgraded
+                tag = "MIXED" if cd["v2"] > 0 else "LEGACY"
+                lines.append(f"    {ch:15s}: {cd['total']:4d} ({cd['v2']:3d} V2, {cd['legacy']:3d} legacy)  {tag}")
+        lines.append("")
+
     # Red flags
     errors = [f for f in sc.red_flags if f.severity == "error"]
     warnings = [f for f in sc.red_flags if f.severity == "warning"]
@@ -857,6 +885,28 @@ def main():
         sys.exit(0)
 
     sc = score_rules(rules, label)
+
+    # ── O. Legacy Debt by Source (computed from full corpus) ──────────────
+    _debt: dict[str, dict] = {}
+    for r in all_rules:
+        src = r.source or "Unknown"
+        ch = r.chapter or "Unknown"
+        if src not in _debt:
+            _debt[src] = {"total": 0, "v2": 0, "legacy": 0, "chapters": {}}
+        _debt[src]["total"] += 1
+        is_v2 = r.last_modified_session >= "S310"
+        if is_v2:
+            _debt[src]["v2"] += 1
+        else:
+            _debt[src]["legacy"] += 1
+        if ch not in _debt[src]["chapters"]:
+            _debt[src]["chapters"][ch] = {"total": 0, "v2": 0, "legacy": 0}
+        _debt[src]["chapters"][ch]["total"] += 1
+        if is_v2:
+            _debt[src]["chapters"][ch]["v2"] += 1
+        else:
+            _debt[src]["chapters"][ch]["legacy"] += 1
+    sc.legacy_debt = _debt
 
     # When --file targets a single chapter, filter red_flags to that chapter only
     if args.file:
