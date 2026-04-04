@@ -102,7 +102,7 @@ for house, domain, claim, direction, mag, desc in _HOUSE_EFFECTS:
              "domain": domain, "direction": direction, "magnitude": mag},
         ],
         verse_ref="Ch.31 v.11-17",
-        description=f"[BPHS — argala_effects] {desc}",
+        description=desc,
         commentary_context=f"Santhanam: Per-house Argala effect. When unobstructed Argala operates on the {house}th house (from ascendant or Arudha), the significations of that house are activated. Argala = planetary intervention from 4th/2nd/11th; obstruction from 10th/12th/3rd. NON-COMPUTABLE: needs argala_condition primitive.",
         concordance_texts=[],
     )
