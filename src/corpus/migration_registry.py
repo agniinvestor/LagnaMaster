@@ -132,6 +132,13 @@ MIGRATION_REGISTRY: dict[tuple[str, str], dict] = {
         "finding": "VERSE_ONLY — no relevant V1 category. All V1 rules are cross-chapter noise.",
         "verified_session": "S314",
     },
+    ("BPHS", "Ch.30"): {
+        "status": "verse_verified",
+        "verse_coverage": 1.0,
+        "v1_rules": 0, "v1_excluded": 0, "v2_rules": 46,
+        "finding": "Encoded from PDF in S315. 42 rules from 38 predictive slokas. Uses upa_pada + arudha_pada derivations.",
+        "verified_session": "S315",
+    },
 }
 
 

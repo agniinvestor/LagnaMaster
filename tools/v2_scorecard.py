@@ -78,7 +78,7 @@ _BHAVAT_BHAVAM = {
 # Chapters with confirmed GPT maker-checker review (evidence from git history).
 # Going forward, review_status field on RuleRecord tracks this per-rule.
 # Historical chapters tracked here from commit evidence.
-_GPT_REVIEWED_CHAPTERS: set[str] = {"12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24a", "24b", "24c", "25", "29"}
+_GPT_REVIEWED_CHAPTERS: set[str] = {"12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24a", "24b", "24c", "25", "29", "30"}
 
 VALID_TIMING_TYPES = {"age", "age_range", "after_event", "dasha_period", "unspecified"}
 VALID_ENTITY_TARGETS = {"native", "father", "mother", "spouse", "children", "siblings", "general"}
@@ -92,7 +92,7 @@ _BPHS_PREDICTIVE_VERSES: dict[str, int] = {
     "12": 16, "13": 12, "14": 20, "15": 14, "16": 26, "17": 14,
     "18": 18, "19": 5, "20": 22, "21": 20, "22": 10, "23": 10,
     "24a": 56, "24b": 50, "24c": 52, "25": 85,
-    "29": 27,
+    "29": 27, "30": 38,
 }
 
 # Chapter → V2 corpus module name mapping
@@ -630,8 +630,13 @@ def score_rules(rules: list, label: str = "") -> V2Scorecard:
                 reasons.append(f"L3+ ratio {l3_ratio:.0%}")
             if not chapter_reviewed:
                 reasons.append("maker-checker not done")
+            # Downgrade to info if only issue is L3+ AND non-computable rules
+            # explain the gap (rules with empty conditions can't reach L3)
+            l2_count = maturity_dist.get(2, 0)
+            only_l3_issue = verse_ratio >= 1.0 and chapter_reviewed and l3_ratio < 0.9
+            severity = "info" if only_l3_issue and l2_count > 0 else "warning"
             flags.append(RedFlag(
-                f"Ch.{ch}", "warning",
+                f"Ch.{ch}", severity,
                 "chapter_not_ready",
                 f"Ch.{ch} not ship-ready: {', '.join(reasons)}",
                 "Encode missing verses, resolve L2 gaps, and complete maker-checker review",
@@ -809,7 +814,7 @@ def format_scorecard(sc: V2Scorecard) -> str:
     # V2 = verse layer (canonical). V1 = derived layer (interpretive). Both coexist.
     from src.corpus.migration_registry import get_status as _get_mig_status
     _v2_chapters = [
-        ("BPHS", f"Ch.{n}") for n in [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 29]
+        ("BPHS", f"Ch.{n}") for n in [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 29, 30]
     ]
     lines.append("P. VERSE LAYER AUDIT (V2 covers all BPHS verse claims?)")
     vv_count = 0

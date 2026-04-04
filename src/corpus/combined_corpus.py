@@ -171,6 +171,7 @@ def build_corpus() -> CorpusRegistry:
     from src.corpus.bphs_v2_ch24c import BPHS_V2_CH24C_REGISTRY  # noqa: F811  # S311 lords 9-12+misc
     from src.corpus.bphs_v2_ch25 import BPHS_V2_CH25_REGISTRY  # noqa: F811  # S312 upagrahas
     from src.corpus.bphs_v2_ch29 import BPHS_V2_CH29_REGISTRY  # noqa: F811  # S314 bhava padas
+    from src.corpus.bphs_v2_ch30 import BPHS_V2_CH30_REGISTRY  # noqa: F811, F401  # S315 upa pada
 
     # ── V1/V2 Coexistence (S314 decision) ─────────────────────────────────
     # V1 (legacy) and V2 rules coexist in the corpus. V1 is NOT excluded.
@@ -301,6 +302,7 @@ def build_corpus() -> CorpusRegistry:
         BPHS_V2_CH24C_REGISTRY,
         BPHS_V2_CH25_REGISTRY,
         BPHS_V2_CH29_REGISTRY,
+        BPHS_V2_CH30_REGISTRY,
     ]
     for source_reg in sources:
         for rule in source_reg.all():

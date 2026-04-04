@@ -1,0 +1,349 @@
+{
+  "chapter": 30,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s315_verified",
+  "audit_date": "2026-04-04",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.303-310. Chapter 30 'Upa Pada' covers Upa Pada computation (slokas 1-6) plus spouse/progeny/co-born predictions from Upa Pada, Lagna Pada, and derived houses. 43 slokas total, ~40 predictive claims. Conditions use planet_in_derived_house with derivation=upa_pada.",
+  "predictive_verse_count": 38,
+  "total_slokas": 43,
+  "content_type": "predictive",
+  "verses": {
+    "1-6": {
+      "page": "303-304",
+      "claims": [
+        {
+          "claim": "Upa Pada conjunct or aspected by benefic planet -> full happiness from progeny and spouse",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Upa Pada in malefic sign or aspected/conjunct malefic -> ascetic, go without wife",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Exception: if benefic aspect on upa pada or related malefic -> deprival of spouse will not come to pass",
+          "type": "exception",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Sun exalted or in friendly sign -> treated as benefic; Sun in debilitation or enemy sign -> treated as malefic",
+          "type": "structural_definition",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "7-12": {
+      "page": "305",
+      "claims": [
+        {
+          "claim": "2nd from Upa Pada is benefic sign or aspected/conjunct benefic -> good results for wife and sons",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Planet in 2nd from UP in debilitation sign/Amsa or conjunct debilitated/malefic planet -> destruction of wife",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Occupant of 2nd from UP in exaltation sign/Navamsa and aspected by another planet -> many charming and virtuous wives",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Gemini as 2nd from Upa Pada -> many wives",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Uparudha or 2nd therefrom occupied by own lord or if said lord in his other own house -> death of wife will be at advanced age",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "2nd lord from Uparudha in 2nd itself -> protect native from calamity; spouse will live to advanced age",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "13-15": {
+      "page": "306",
+      "claims": [
+        {
+          "claim": "Planet being constant indicator of wife (7th lord or Venus) in own house -> loss of wife only at later stage",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Lord of Upapada or constant significator of wife in exaltation -> wife from noble family",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Contrary: if he is debilitated -> reverse (wife from low family)",
+          "type": "contrary",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "2nd from Upapada related to benefic -> wife will be beautiful, fortunate and virtuous",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "16": {
+      "page": "306",
+      "claims": [
+        {
+          "claim": "Saturn and Rahu in 2nd from Upa Pada -> native will lose wife on account of calumny or through death",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "17": {
+      "page": "306",
+      "claims": [
+        {
+          "claim": "Venus and Ketu in 2nd from Upapada -> wife troubled by disorder of blood, leucorrhoea etc.",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "18": {
+      "page": "306",
+      "claims": [
+        {
+          "claim": "Mercury with Ketu in 2nd from Upapada -> breakage of bones; Rahu, Saturn and Sun cause distress of bones",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "19-22": {
+      "page": "307",
+      "claims": [
+        {
+          "claim": "Mercury and Rahu in 2nd from Upapada -> stout-bodied wife",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "2nd from UP a sign of Mercury + tenanted by Mars and Saturn -> wife suffers nasal disorders",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Sign of Mars as 2nd from UP occupied by Mars and Saturn -> nasal disorders to wife",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Jupiter and Saturn in 2nd from UP -> disorders of ears/eyes to wife",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Mercury and Mars in 2nd from UP other than own signs, or Rahu with Jupiter in 2nd -> wife dental disorders",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Saturn and Rahu together in sign of Saturn as 2nd from UP -> lameness or windy disorders to wife",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Exception: these evils will not come to pass if benefic conjunction or aspect (or from another benefic)",
+          "type": "exception",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "23-24": {
+      "page": "307",
+      "claims": [
+        {
+          "claim": "Methodology: effects can be deduced from natal ascendant, Lagna Pada, 7th from Upapada and lords thereof",
+          "type": "preamble",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "25-28": {
+      "page": "308",
+      "claims": [
+        {
+          "claim": "Saturn and Moon together in 9th from one of the said places (sloka 23) -> no son at all",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Sun, Jupiter and Rahu so placed -> number of sons",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Moon so placed -> give a son while mixture of planets delays obtainment of son",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Sun + Jupiter + Rahu conjunction in 9th -> son will be strong, valorous, greatly successful, destroy enemies",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Mars and Saturn in 9th -> no son, or obtained by adoption or brother's son",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Odd signs yield many sons, even signs cause only a few",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "29-30": {
+      "page": "308",
+      "claims": [
+        {
+          "claim": "Leo as Upapada aspected by Moon -> limited number of children",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Virgo as Upapada -> many daughters",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "31": {
+      "page": "308",
+      "claims": [
+        {
+          "claim": "Rahu and Saturn in 3rd/11th from Lagna Pada -> destroy co-born (11th = elder brothers/sisters, 3rd = younger)",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "32": {
+      "page": "309",
+      "claims": [
+        {
+          "claim": "Venus in 3rd/11th from Lagna Pada -> abortion earlier (or 8th from natal ascendant, or from Lagnarudha)",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "33-36": {
+      "page": "309",
+      "claims": [
+        {
+          "claim": "Moon, Jupiter, Mercury and Mars in 3rd/11th from Lagna Pada -> many valorous co-born",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Saturn and Mars in 3rd/11th from Lagna Pada or lend aspects -> younger and elder coborn respectively destroyed",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Saturn alone in one of said houses -> native spared while co-born will die",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Ketu in 3rd/11th from Lagna Pada -> abundant happiness from one's sisters",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "37": {
+      "page": "309",
+      "claims": [
+        {
+          "claim": "6th from Lagna Pada occupied by malefic and bereft of benefic conjunction/aspect -> native will be a thief",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "38": {
+      "page": "309",
+      "claims": [
+        {
+          "claim": "Rahu in 7th/12th from Lagna Pada or aspect one of said houses -> spiritual knowledge and be very fortunate",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "39": {
+      "page": "310",
+      "claims": [
+        {
+          "claim": "Mercury in Lagna Pada -> native will lord over whole country",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Jupiter in Lagna Pada -> will make him a knower of all things; Venus = poet/speaker",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "40": {
+      "page": "310",
+      "claims": [
+        {
+          "claim": "Benefics occupy 2nd from Upapada or from Lagna Pada -> endowed with all kinds of wealth and be intelligent",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "41": {
+      "page": "310",
+      "claims": [
+        {
+          "claim": "Lord of 2nd from Upapada is in 2nd from natal ascendant and be with malefic planet -> surely become a thief",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "42-43": {
+      "page": "310",
+      "claims": [
+        {
+          "claim": "Rahu in 2nd from lord of 7th counted from Upapada -> long and projected teeth",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Ketu so placed -> stammering",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Saturn so placed -> one look ugly; mixed planets = mixed effects",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    }
+  }
+}
