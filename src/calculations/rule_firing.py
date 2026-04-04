@@ -966,6 +966,20 @@ def evaluate_chart(chart) -> RuleFiringResult:
         )
         result.fired_rules.append(fired)
 
+        # BB chain enrichment: derived_house_chains contribute to context
+        if hasattr(rule, "derived_house_chains") and rule.derived_house_chains and ctx:
+            from src.calculations.derived_house import resolve_house
+            ctx.setdefault("aggregates", {})
+            ctx["aggregates"].setdefault("bb_houses", [])
+            ctx["aggregates"].setdefault("bb_strength", 0.0)
+            for chain in rule.derived_house_chains:
+                steps = chain if isinstance(chain, list) else [chain]
+                current = steps[0].get("from", 1) if steps else 1
+                for step in steps:
+                    current = resolve_house(current, step.get("offset", 1))
+                ctx["aggregates"]["bb_houses"].append(current)
+                ctx["aggregates"]["bb_strength"] += 0.2
+
     result.total_fired = len(result.fired_rules)
 
     # Build house summaries
