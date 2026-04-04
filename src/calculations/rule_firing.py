@@ -258,6 +258,61 @@ def _planet_aspects_house(chart, planet_name: str, target_house: int) -> bool:
     return diff in _SPECIAL_ASPECTS.get(name, set())
 
 
+_DIGNITY_RANK = {"exalted": 5, "moolatrikona": 4, "own_sign": 3, "neutral": 2, "debilitated": 1, "unknown": 0}
+MAX_BIND_ATTEMPTS = 10
+
+
+def _check_with_bindings(conditions: list[dict], chart, context: dict | None = None) -> tuple[bool, int]:
+    """Evaluate conditions with bind variables. Strongest valid binding wins."""
+    # Find the bind-producing condition (first one with "bind" field)
+    bind_idx = None
+    bind_var = None
+    for i, cond in enumerate(conditions):
+        if cond.get("bind"):
+            bind_idx = i
+            bind_var = cond["bind"]
+            break
+
+    if bind_idx is None:
+        return _check_compound_conditions(conditions, chart, context)
+
+    bind_cond = conditions[bind_idx]
+    planet_spec = bind_cond.get("planet", "")
+
+    # Resolve candidate list
+    if planet_spec == "any_benefic":
+        candidates = list(_BENEFICS)
+    elif planet_spec == "any_malefic":
+        candidates = list(_MALEFICS)
+    else:
+        candidates = [planet_spec.title()]
+
+    # Filter to planets that exist in chart
+    candidates = [c for c in candidates if _find_planet(chart, c)]
+
+    # Rank by dignity (strongest first)
+    candidates.sort(key=lambda p: _DIGNITY_RANK.get(_planet_dignity_state(chart, p), 0), reverse=True)
+
+    # Try each candidate
+    for attempt, planet in enumerate(candidates[:MAX_BIND_ATTEMPTS]):
+        # Substitute: replace bind var with specific planet in all conditions
+        resolved = []
+        for cond in conditions:
+            c = dict(cond)
+            if c.get("bind") == bind_var:
+                c["planet"] = planet
+                c.pop("bind", None)
+            elif c.get("planet") == bind_var:
+                c["planet"] = planet
+            resolved.append(c)
+
+        fires, house = _check_compound_conditions(resolved, chart, context)
+        if fires:
+            return True, house
+
+    return False, 0
+
+
 def _check_compound_conditions(conditions: list[dict], chart, context: dict | None = None) -> tuple[bool, int]:
     """Evaluate a list of computable primitive conditions (AND logic).
 
@@ -266,6 +321,11 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
     """
     if not conditions:
         return False, 0
+
+    # Detect bind variables — if present, delegate to bind-aware evaluator
+    has_binds = any(c.get("bind") for c in conditions)
+    if has_binds:
+        return _check_with_bindings(conditions, chart, context)
 
     matched_house = 0
 

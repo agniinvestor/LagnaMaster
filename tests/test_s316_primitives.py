@@ -115,3 +115,47 @@ def test_argala_no_entries_doesnt_fire():
     # May or may not fire depending on whether compute_argala returns entries
     # Just verify no crash
     assert isinstance(fires, bool)
+
+
+# --- same_planet_constraint (bind variables) ---
+
+def test_bind_variable_same_planet():
+    """Jupiter exalted in Cancer (sign_index=3). For Aries lagna, Cancer=H4."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Jupiter": _P(3, name="Jupiter"),  # Cancer = H4, exalted
+        "Venus": _P(5, name="Venus"),      # Virgo = H6, debilitated
+        "Mercury": _P(2, name="Mercury"),  # Gemini = H3, neutral
+        "Moon": _P(1, name="Moon"),        # Taurus = H2, exalted
+    })
+    conds = [
+        {"type": "planet_in_house", "planet": "any_benefic", "house": 4, "bind": "X"},
+        {"type": "planet_dignity", "planet": "X", "dignity": "exalted"},
+    ]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True  # Jupiter in H4 + exalted in Cancer
+
+
+def test_bind_variable_no_match():
+    """Venus in H6 debilitated — bind needs exalted in H6, fails."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Jupiter": _P(3, name="Jupiter"),  # H4
+        "Venus": _P(5, name="Venus"),      # H6, debilitated
+        "Mercury": _P(2, name="Mercury"),  # H3
+        "Moon": _P(1, name="Moon"),        # H2
+    })
+    conds = [
+        {"type": "planet_in_house", "planet": "any_benefic", "house": 6, "bind": "X"},
+        {"type": "planet_dignity", "planet": "X", "dignity": "exalted"},
+    ]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False  # Venus in H6 but debilitated
+
+
+def test_bind_without_bind_field_unchanged():
+    """Conditions without bind work exactly as before."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Sun": _P(0, name="Sun"),  # H1
+    })
+    conds = [{"type": "planet_in_house", "planet": "Sun", "house": 1}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
