@@ -43,33 +43,39 @@ _RELEVANT_V1_CATEGORIES: dict[str, set[str]] = {
 
 
 def _load_rules(source: str, chapter: str):
-    """Load all rules for a source+chapter from combined corpus.
+    """Load rules for migration audit.
 
-    V1 rules are soft-classified by category relevance. Rules in non-relevant
-    categories are separated as 'excluded' but still tracked and reported.
-    Returns (v1_included, v1_excluded, v2).
+    V1 rules: loaded from the specified chapter, soft-classified by category
+    relevance. Non-relevant categories separated as 'excluded'.
+
+    V2 rules: loaded from the ENTIRE V2 corpus (all chapters). This is critical
+    because V2 coverage of a concept can span multiple chapters. E.g., "lagna
+    lord in 6th" may be in Ch.12 V2 (1st house effects) AND Ch.24 V2 (lords
+    in houses). Matching against only same-chapter V2 creates false gaps.
+
+    Returns (v1_included, v1_excluded, v2_all).
     """
     from src.corpus.combined_corpus import build_corpus
     corpus = build_corpus()
     relevant_cats = _RELEVANT_V1_CATEGORIES.get(chapter, None)
-    v1_included, v1_excluded, v2 = [], [], []
+    v1_included, v1_excluded = [], []
+    v2_all = []  # ALL V2 rules from same source, any chapter
     for r in corpus.all():
-        if r.source != source or r.chapter != chapter:
+        if r.source != source:
             continue
         if r.last_modified_session >= "S310":
-            v2.append(r)
-        else:
+            # Collect ALL V2 rules (cross-chapter matching)
+            v2_all.append(r)
+        elif r.chapter == chapter:
+            # V1 rules: only from the specified chapter
             if relevant_cats is not None:
-                # We have a relevance mapping for this chapter
                 if not relevant_cats or r.category not in relevant_cats:
-                    # Empty set = no V1 category is relevant; or category doesn't match
                     v1_excluded.append(r)
                 else:
                     v1_included.append(r)
             else:
-                # No mapping exists — include all V1 rules (unknown chapter)
                 v1_included.append(r)
-    return v1_included, v1_excluded, v2
+    return v1_included, v1_excluded, v2_all
 
 
 def match_v1_to_v2(v1_bucket: dict, v2_buckets: list[dict]) -> str:
