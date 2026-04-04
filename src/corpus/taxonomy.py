@@ -87,6 +87,8 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "dispositor_condition",
     # Functional classification primitive (S316)
     "functional_benefic",
+    # Argala primitive (S316)
+    "argala_condition",
 })
 
 VALID_MODIFIER_EFFECTS = frozenset({

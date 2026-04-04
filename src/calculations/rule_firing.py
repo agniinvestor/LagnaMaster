@@ -547,6 +547,84 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
                     if actual_dignity != target_dignity:
                         return False, 0
 
+        elif ctype == "argala_condition":
+            from src.calculations.argala import compute_argala
+            ref_house = cond.get("reference_house", 1)
+            argala_type = cond.get("argala_type", "any")
+            min_strength = cond.get("min_strength", "weak")
+            obstruction_req = cond.get("obstruction", "any")
+
+            result = compute_argala(chart, ref_house)
+
+            # If no entries at all, argala doesn't apply
+            if not result.entries:
+                return False, 0
+
+            # Normalize score: theoretical max = 12.0 (v1_linear)
+            max_score = 12.0
+            normalized = min(1.0, max(0.0, abs(result.net_argala_score) / max_score))
+
+            # Filter by argala_type
+            if argala_type == "benefic":
+                matching = [e for e in result.entries if e.nature == "benefic_argala"]
+                if not matching:
+                    return False, 0
+            elif argala_type == "malefic":
+                matching = [e for e in result.entries if e.nature == "malefic_argala"]
+                if not matching:
+                    return False, 0
+
+            # Filter by obstruction
+            if obstruction_req == "unobstructed":
+                active = [e for e in result.entries if not e.is_obstructed]
+                if not active:
+                    return False, 0
+            elif obstruction_req == "partial":
+                obstructed = [e for e in result.entries if e.is_obstructed]
+                if not obstructed:
+                    return False, 0
+
+            # Check min_strength threshold
+            strength_thresholds = {"weak": 0.01, "medium": 0.15, "strong": 0.35}
+            if normalized < strength_thresholds.get(min_strength, 0.01):
+                return False, 0
+
+            # Determine actual type
+            natures = {e.nature for e in result.entries if not e.is_obstructed}
+            if natures == {"benefic_argala"}:
+                actual_type = "benefic"
+            elif natures == {"malefic_argala"}:
+                actual_type = "malefic"
+            else:
+                actual_type = "mixed"
+
+            # Obstruction level
+            total = len(result.entries)
+            obstructed_count = sum(1 for e in result.entries if e.is_obstructed)
+            if total == 0:
+                obs_level = "none"
+            elif obstructed_count == 0:
+                obs_level = "unobstructed"
+            elif obstructed_count == total:
+                obs_level = "full"
+            else:
+                obs_level = "partial"
+
+            # Emit metadata to context
+            if context is not None:
+                context["conditions"][f"cond_{idx}"] = {
+                    "type": "argala_condition",
+                    "metadata": {
+                        "argala_strength": round(normalized, 3),
+                        "argala_type": actual_type,
+                        "obstruction": obs_level,
+                        "contributing_houses": [e.house_from_reference for e in result.entries if not e.is_obstructed],
+                        "net_score": result.net_argala_score,
+                        "normalization_version": "v1_linear",
+                    },
+                }
+            matched_house = matched_house or ref_house
+
         elif ctype == "functional_benefic":
             from src.calculations.functional_dignity import compute_functional_classifications
             planet_spec = cond.get("planet", "")
