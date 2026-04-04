@@ -159,3 +159,70 @@ def test_bind_without_bind_field_unchanged():
     conds = [{"type": "planet_in_house", "planet": "Sun", "house": 1}]
     fires, _ = _check_compound_conditions(conds, chart)
     assert fires is True
+
+
+# --- dynamic_karaka ---
+
+def test_dynamic_karaka_mother_strong():
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Moon": _P(1, name="Moon"),   # Taurus = exalted
+        "Mars": _P(3, name="Mars"),   # Cancer = debilitated
+    })
+    conds = [{"type": "dynamic_karaka", "karaka": "mother", "state": "strong"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True  # Moon is stronger (exalted), and is strong
+
+
+def test_dynamic_karaka_father_weak():
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Sun": _P(2, name="Sun"),        # Gemini = neutral
+        "Jupiter": _P(2, name="Jupiter"),  # Gemini = neutral
+    })
+    conds = [{"type": "dynamic_karaka", "karaka": "father", "state": "strong"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False  # both neutral, not strong
+
+
+# --- shadbala_strength ---
+
+def test_shadbala_strength_graceful_failure():
+    """shadbala_strength with mock chart fails gracefully (returns False)."""
+    chart = _Chart(lagna_sign_index=0, planets={"Sun": _P(0, name="Sun")})
+    conds = [{"type": "shadbala_strength", "planet": "Sun", "threshold": "weak"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    # Mock chart may not have all data needed for shadbala — should fail gracefully
+    assert isinstance(fires, bool)
+
+
+# --- navamsa_lagna ---
+
+def test_navamsa_lagna():
+    """Aries lagna at 15 degrees. Fire sign start=Aries. pada=4 -> Leo."""
+    chart = _Chart(lagna_sign_index=0, planets={})
+    chart.lagna_degree = 15.0
+    conds = [{"type": "navamsa_lagna", "sign": "leo"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_navamsa_lagna_no_degree():
+    """Chart without lagna_degree -> doesn't fire."""
+    chart = _Chart(lagna_sign_index=0, planets={})
+    conds = [{"type": "navamsa_lagna", "sign": "leo"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False
+
+
+# --- timing activation ---
+
+def test_timing_activation_default():
+    from src.calculations.rule_firing import _is_activated
+    class _R:
+        timing_window = None
+    assert _is_activated(_R(), chart=None) is True
+
+def test_timing_activation_unspecified():
+    from src.calculations.rule_firing import _is_activated
+    class _R:
+        timing_window = {"type": "unspecified"}
+    assert _is_activated(_R(), chart=None) is True

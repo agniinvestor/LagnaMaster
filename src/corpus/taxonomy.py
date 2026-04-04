@@ -89,6 +89,10 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "functional_benefic",
     # Argala primitive (S316)
     "argala_condition",
+    # S316 batch 2 primitives
+    "dynamic_karaka",
+    "shadbala_strength",
+    "navamsa_lagna",
 })
 
 VALID_MODIFIER_EFFECTS = frozenset({

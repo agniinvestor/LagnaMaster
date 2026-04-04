@@ -710,6 +710,82 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             elif classification == "badhaka" and not entry.is_badhaka:
                 return False, 0
 
+        elif ctype == "dynamic_karaka":
+            karaka = cond.get("karaka", "")
+            state = cond.get("state", "")
+            if karaka == "mother":
+                candidates = ["Moon", "Mars"]
+            elif karaka == "father":
+                candidates = ["Sun", "Jupiter"]
+            else:
+                return False, 0
+            ranked = sorted(candidates, key=lambda p: _DIGNITY_RANK.get(
+                _planet_dignity_state(chart, p), 0), reverse=True)
+            resolved = ranked[0]
+            actual_dignity = _planet_dignity_state(chart, resolved)
+            if state == "strong":
+                if actual_dignity not in ("exalted", "own_sign", "moolatrikona"):
+                    return False, 0
+            elif state == "weak":
+                if actual_dignity in ("exalted", "own_sign", "moolatrikona"):
+                    return False, 0
+            matched_house = matched_house or _planet_house(chart, resolved)
+
+        elif ctype == "shadbala_strength":
+            planet_spec = cond.get("planet", "")
+            threshold = cond.get("threshold", "weak")
+            if planet_spec.startswith("lord_of_"):
+                h = int(planet_spec.split("_")[-1])
+                planet_spec = _lord_of_house(chart, h)
+            if not planet_spec or not _find_planet(chart, planet_spec.title()):
+                return False, 0
+            try:
+                from src.calculations.shadbala import compute_shadbala
+                sb = compute_shadbala(planet_spec.title(), chart)
+                total = getattr(sb, "total", 0.0)
+                normalized = min(1.0, max(0.0, total / 1.0)) if total else 0.0
+            except Exception:
+                # Shadbala may need birth_dt — if it fails, condition can't be evaluated
+                return False, 0
+            if threshold == "weak" and normalized >= 0.5:
+                return False, 0
+            elif threshold == "strong" and normalized < 0.5:
+                return False, 0
+            if context is not None:
+                context["conditions"][f"cond_{idx}"] = {
+                    "type": "shadbala_strength",
+                    "metadata": {"shadbala_normalized": round(normalized, 3)},
+                }
+
+        elif ctype == "navamsa_lagna":
+            target_signs = cond.get("sign", [])
+            if isinstance(target_signs, str):
+                target_signs = [target_signs]
+            target_lower = [s.lower() for s in target_signs]
+            lagna_degree = getattr(chart, "lagna_degree", None)
+            if lagna_degree is None:
+                return False, 0
+            FIRE_SIGNS = {0, 4, 8}
+            EARTH_SIGNS = {1, 5, 9}
+            AIR_SIGNS = {2, 6, 10}
+            lsi = chart.lagna_sign_index
+            pada = int(lagna_degree / (30.0 / 9))
+            if pada >= 9:
+                pada = 8
+            if lsi in FIRE_SIGNS:
+                start = 0
+            elif lsi in EARTH_SIGNS:
+                start = 3
+            elif lsi in AIR_SIGNS:
+                start = 6
+            else:
+                start = 9
+            nav_si = (start + pada) % 12
+            SIGN_NAMES = ["aries", "taurus", "gemini", "cancer", "leo", "virgo",
+                          "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"]
+            if SIGN_NAMES[nav_si] not in target_lower:
+                return False, 0
+
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire
             return False, 0
@@ -817,6 +893,14 @@ def _check_rule_fires(rule, chart) -> tuple[bool, int, dict | None]:
     return False, 0, None
 
 
+def _is_activated(rule, chart, dasha_context=None) -> bool:
+    """Check if a rule is currently activated. Default: always active."""
+    timing = getattr(rule, "timing_window", None)
+    if not timing or timing.get("type") == "unspecified":
+        return True
+    return True
+
+
 def evaluate_chart(chart) -> RuleFiringResult:
     """Evaluate all Phase 1B corpus rules against a chart.
 
@@ -839,6 +923,9 @@ def evaluate_chart(chart) -> RuleFiringResult:
     result.total_evaluated = len(phase1b_rules)
 
     for rule in phase1b_rules:
+        if not _is_activated(rule, chart):
+            result.skipped_rules.append(SkippedRule(rule_id=rule.rule_id, reason="not_activated"))
+            continue
         fires, house, ctx = _check_rule_fires(rule, chart)
         if not fires:
             # Tier 3 Item 1: audit trail for skipped rules
