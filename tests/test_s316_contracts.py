@@ -26,3 +26,39 @@ def test_fired_rule_has_context_field():
     )
     assert hasattr(fired, "context")
     assert fired.context is None
+
+
+from src.calculations.inference import aggregate_condition_metadata, CONSUMABLE_AGGREGATES
+
+
+def test_aggregate_empty_conditions():
+    result = aggregate_condition_metadata({})
+    assert result["bb_strength"] == 0.0
+    assert "argala_strength_total" not in result
+
+
+def test_aggregate_argala_metadata():
+    conditions = {
+        "cond_0": {
+            "type": "argala_condition",
+            "metadata": {"argala_strength": 0.7},
+        }
+    }
+    result = aggregate_condition_metadata(conditions)
+    assert result["argala_strength_total"] == 0.7
+
+
+def test_aggregate_caps_argala_at_1():
+    conditions = {
+        "cond_0": {"type": "argala_condition", "metadata": {"argala_strength": 0.6}},
+        "cond_1": {"type": "argala_condition", "metadata": {"argala_strength": 0.7}},
+    }
+    result = aggregate_condition_metadata(conditions)
+    assert result["argala_strength_total"] == 1.0
+
+
+def test_consumable_aggregates_whitelist():
+    assert "argala_strength_total" in CONSUMABLE_AGGREGATES
+    assert "bb_strength" in CONSUMABLE_AGGREGATES
+    assert "shadbala_normalized" in CONSUMABLE_AGGREGATES
+    assert len(CONSUMABLE_AGGREGATES) == 3

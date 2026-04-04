@@ -14,6 +14,32 @@ from src.calculations.rule_firing import evaluate_chart, FiredRule
 # Strength weights for modifier magnitude adjustment
 _STRENGTH_WEIGHTS = {"weak": 0.15, "medium": 0.30, "strong": 0.50}
 
+CONSUMABLE_AGGREGATES = frozenset({
+    "argala_strength_total",
+    "bb_strength",
+    "shadbala_normalized",
+})
+
+
+def aggregate_condition_metadata(conditions: dict) -> dict:
+    """Compute summary aggregates from per-condition metadata.
+
+    Only keys in CONSUMABLE_AGGREGATES are used by modifiers.
+    Raw condition metadata is debug-only.
+    """
+    agg: dict = {"bb_strength": 0.0, "bb_houses": []}
+    argala_total = sum(
+        c.get("metadata", {}).get("argala_strength", 0)
+        for c in conditions.values()
+        if c.get("type") == "argala_condition"
+    )
+    if argala_total > 0:
+        agg["argala_strength_total"] = min(1.0, argala_total)
+    for c in conditions.values():
+        if c.get("type") == "shadbala_strength":
+            agg["shadbala_normalized"] = c.get("metadata", {}).get("shadbala_normalized", 0)
+    return agg
+
 
 @dataclass
 class ModifiedRule:
