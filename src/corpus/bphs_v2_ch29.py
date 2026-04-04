@@ -629,7 +629,7 @@ _pada(2, "venus", "occupies", "pada_h2_venus_occ_poet_speaker",
 # --- C28: Dara Pada in angle/trine from Lagna Pada → rich + famous ---
 
 b.add(
-    conditions=[],  # Non-computable: requires derived_house_relationship primitive
+    conditions=[],  # BLOCKED: needs derived_house_relationship primitive (Dara Pada vs Lagna Pada mutual position)
     signal_group="dara_pada_kendra_trikona_rich_famous",
     direction="favorable", intensity="strong",
     primary_domain="wealth",
@@ -648,7 +648,7 @@ b.add(
 # --- C29: Dara Pada in 6/8/12 from Lagna Pada → poor ---
 
 b.add(
-    conditions=[],  # Non-computable: requires derived_house_relationship primitive
+    conditions=[],  # BLOCKED: needs derived_house_relationship primitive (Dara Pada vs Lagna Pada mutual position)
     signal_group="dara_pada_dusthana_poor",
     direction="unfavorable", intensity="strong",
     primary_domain="wealth",
@@ -666,7 +666,7 @@ b.add(
 # --- C30: Strong planet in Pada and 7th → marital happiness ---
 
 b.add(
-    conditions=[],  # Non-computable: needs strength + dual derived house occupancy
+    conditions=[],  # BLOCKED: needs strength + dual derived house occupancy primitive
     signal_group="pada_h1_h7_strong_marital_happiness",
     direction="favorable", intensity="moderate",
     primary_domain="relationships",
@@ -683,7 +683,7 @@ b.add(
 # --- C31: Pada and Dara Pada mutually angular/trinal → amity ---
 
 b.add(
-    conditions=[],  # Non-computable: requires derived_house_relationship
+    conditions=[],  # BLOCKED: needs derived_house_relationship primitive
     signal_group="pada_dara_pada_kendra_trikona_amity",
     direction="favorable", intensity="moderate",
     primary_domain="relationships",
@@ -701,7 +701,7 @@ b.add(
 # --- C32: Pada and Dara Pada mutually 6/8/12 → enmity ---
 
 b.add(
-    conditions=[],  # Non-computable: requires derived_house_relationship
+    conditions=[],  # BLOCKED: needs derived_house_relationship primitive
     signal_group="pada_dara_pada_dusthana_enmity",
     direction="unfavorable", intensity="moderate",
     primary_domain="relationships",
@@ -719,7 +719,7 @@ b.add(
 # --- C33: Pada and Dara Pada mutually angular/3rd/11th/trinal → king ---
 
 b.add(
-    conditions=[],  # Non-computable: requires derived_house_relationship
+    conditions=[],  # BLOCKED: needs derived_house_relationship primitive
     signal_group="pada_dara_pada_supportive_king",
     direction="favorable", intensity="strong",
     primary_domain="career",

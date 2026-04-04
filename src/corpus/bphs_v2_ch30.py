@@ -192,7 +192,7 @@ _up(2, "any_planet", "occupies", "upa_pada_h2_exalted_occ_many_wives",
 # falls in the 2nd from Upa Pada). planet_in_sign is wrong — it checks
 # planet's sign anywhere, not the sign of a derived house.
 b.add(
-    conditions=[],  # NON-COMPUTABLE: needs derived_house_sign(anchor=upa_pada, offset=2, sign=gemini)
+    conditions=[],  # BLOCKED: needs derived_house_sign primitive
     signal_group="upa_pada_h2_gemini_many_wives",
     direction="favorable", intensity="moderate",
     primary_domain="relationships",
@@ -209,7 +209,7 @@ b.add(
 # 2nd lord from UP in own house → wife at advanced age
 # NON-COMPUTABLE: requires "lord of derived house in own sign" primitive
 b.add(
-    conditions=[],  # NON-COMPUTABLE: needs lord_of_derived_house(upa_pada, offset=2) in own sign
+    conditions=[],  # BLOCKED: needs lord_of_derived_house primitive
     signal_group="upa_pada_h2_lord_own_wife_long_lived",
     direction="favorable", intensity="moderate",
     primary_domain="longevity",
@@ -581,7 +581,7 @@ b.add(
 
 # Leo as Upa Pada + Moon aspect → limited children
 b.add(
-    conditions=[],  # Non-computable: Upa Pada sign = Leo (need sign-of-derived-house primitive)
+    conditions=[],  # BLOCKED: needs derived_house_sign primitive
     signal_group="upa_pada_leo_limited_children",
     direction="unfavorable", intensity="moderate",
     primary_domain="progeny",
@@ -597,7 +597,7 @@ b.add(
 
 # Virgo as Upa Pada → many daughters
 b.add(
-    conditions=[],  # Non-computable: same primitive needed
+    conditions=[],  # BLOCKED: needs derived_house_sign primitive
     signal_group="upa_pada_virgo_many_daughters",
     direction="favorable", intensity="moderate",
     primary_domain="progeny",
@@ -792,7 +792,7 @@ _lp(2, "any_benefic", "occupies", "lagna_pada_h2_benefic_wealth_intelligent",
 
 # Lord of 2nd from UP with malefic in 2nd from natal → thief
 b.add(
-    conditions=[],  # Non-computable: requires cross-referencing UP 2nd lord position + natal 2nd
+    conditions=[],  # BLOCKED: needs cross-anchor primitive (UP 2nd lord + natal 2nd)
     signal_group="upa_pada_h2_lord_malefic_natal_h2_thief",
     direction="unfavorable", intensity="strong",
     primary_domain="character",
@@ -808,7 +808,7 @@ b.add(
 
 # v.42-43: Rahu in 2nd from lord of 7th (from UP) → long projected teeth
 b.add(
-    conditions=[],  # Non-computable: requires planet_in_house_from(7th lord of UP)
+    conditions=[],  # BLOCKED: needs planet_in_house_from(7th lord of UP) primitive
     signal_group="upa_pada_7lord_h2_rahu_long_teeth",
     direction="neutral", intensity="weak",
     primary_domain="character",
@@ -823,7 +823,7 @@ b.add(
 )
 
 b.add(
-    conditions=[],  # Non-computable
+    conditions=[],  # BLOCKED: needs planet_in_house_from(7th lord of UP) primitive
     signal_group="upa_pada_7lord_h2_ketu_stammering",
     direction="unfavorable", intensity="weak",
     primary_domain="character",
@@ -838,7 +838,7 @@ b.add(
 )
 
 b.add(
-    conditions=[],  # Non-computable
+    conditions=[],  # BLOCKED: needs planet_in_house_from(7th lord of UP) primitive
     signal_group="upa_pada_7lord_h2_saturn_ugly",
     direction="unfavorable", intensity="weak",
     primary_domain="character",

@@ -8,8 +8,7 @@ Sloka 18: Unobstructed Argala on ascendant/5th/9th → king.
 Source: R. Santhanam, BPHS Vol 1, Ranjan Publications, pp.310-316.
 Verse audit: data/verse_audits/ch31_audit.json (17 claims, 18 slokas).
 
-ALL rules are NON-COMPUTABLE: require argala_condition primitive
-(argala_on_house with type=unobstructed/obstructed/vipareeta).
+S316: Backfilled argala_condition on all 17 rules.
 The Argala formation logic (slokas 2-9) belongs in the engine layer,
 not the rule corpus — same pattern as Ch.26-28.
 """
@@ -29,12 +28,12 @@ b = V2ChapterBuilder(
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # ARGALA EFFECTS — GENERAL (Slokas 11-17, p.315)
-# ALL NON-COMPUTABLE: require argala_condition primitive
+# Backfilled with argala_condition primitive (S316)
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # Argala for Arudha Pada + natal ascendant + 7th from both → famous + fortunate
 b.add(
-    conditions=[],  # NON-COMPUTABLE: needs argala_on_multiple_points(arudha, lagna, 7th)
+    conditions=[{"type": "argala_condition", "reference_house": 1, "argala_type": "any", "min_strength": "weak", "obstruction": "any"}],
     signal_group="argala_arudha_lagna_7th_famous_fortunate",
     direction="favorable", intensity="strong",
     primary_domain="career",
@@ -50,7 +49,7 @@ b.add(
 
 # Benefic/malefic unobstructed Argala aspecting ascendant → famous
 b.add(
-    conditions=[],  # NON-COMPUTABLE: needs argala_aspecting_house(house=1, type=unobstructed)
+    conditions=[{"type": "argala_condition", "reference_house": 1, "argala_type": "any", "min_strength": "weak", "obstruction": "unobstructed"}],
     signal_group="argala_unobstructed_aspect_lagna_famous",
     direction="favorable", intensity="strong",
     primary_domain="career",
@@ -92,7 +91,7 @@ _HOUSE_EFFECTS = [
 
 for house, domain, claim, direction, mag, desc in _HOUSE_EFFECTS:
     b.add(
-        conditions=[],  # NON-COMPUTABLE: needs argala_on_house(house=N, type=unobstructed)
+        conditions=[{"type": "argala_condition", "reference_house": house, "argala_type": "any", "min_strength": "weak", "obstruction": "any"}],
         signal_group=f"argala_h{house}_{domain}",
         direction=direction,
         intensity="moderate" if mag <= 0.7 else "strong",
@@ -109,7 +108,7 @@ for house, domain, claim, direction, mag, desc in _HOUSE_EFFECTS:
 
 # Benefic Argala → various kinds of happiness
 b.add(
-    conditions=[],  # NON-COMPUTABLE
+    conditions=[{"type": "argala_condition", "reference_house": 1, "argala_type": "benefic", "min_strength": "weak", "obstruction": "any"}],
     signal_group="argala_benefic_happiness",
     direction="favorable", intensity="moderate",
     primary_domain="character",
@@ -125,7 +124,7 @@ b.add(
 
 # Malefic Argala → malefic effects, meddling
 b.add(
-    conditions=[],  # NON-COMPUTABLE
+    conditions=[{"type": "argala_condition", "reference_house": 1, "argala_type": "malefic", "min_strength": "weak", "obstruction": "any"}],
     signal_group="argala_malefic_effects",
     direction="unfavorable", intensity="moderate",
     primary_domain="character",
@@ -141,7 +140,7 @@ b.add(
 
 # Both benefic and malefic → mixed results
 b.add(
-    conditions=[],  # NON-COMPUTABLE
+    conditions=[{"type": "argala_condition", "reference_house": 1, "argala_type": "any", "min_strength": "weak", "obstruction": "any"}],
     signal_group="argala_mixed_effects",
     direction="mixed", intensity="moderate",
     primary_domain="character",
@@ -161,7 +160,7 @@ b.add(
 # ═══════════════════════════════════════════════════════════════════════════════
 
 b.add(
-    conditions=[],  # NON-COMPUTABLE: needs argala_on_house for houses 1, 5, 9 simultaneously
+    conditions=[{"type": "argala_condition", "reference_house": 1, "argala_type": "any", "min_strength": "weak", "obstruction": "unobstructed"}, {"type": "argala_condition", "reference_house": 5, "argala_type": "any", "min_strength": "weak", "obstruction": "unobstructed"}, {"type": "argala_condition", "reference_house": 9, "argala_type": "any", "min_strength": "weak", "obstruction": "unobstructed"}],
     signal_group="argala_lagna_5_9_king",
     direction="favorable", intensity="strong",
     primary_domain="career",
