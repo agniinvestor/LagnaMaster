@@ -104,7 +104,7 @@ b.add(
     ),
     description="7th lord in a sign of Saturn or Venus, aspected by a benefic: there will be many wives. 7th lord in exaltation → same effect.",
     concordance_texts=[],
-    modifiers=[{"condition": "aspected_by_benefic", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ═══ v.14-15: Worthy spouse ══════════════════════════════════════════════════

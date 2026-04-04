@@ -181,7 +181,7 @@ _up(2, "any_planet", "occupies", "upa_pada_h2_exalted_occ_many_wives",
      "Occupant of 2nd from Upa Pada in exaltation and aspected by another planet: many charming and virtuous wives.",
      "Santhanam: Exaltation status of the occupant is the key trigger. The aspect from another planet activates the result.",
      modifiers=[
-         {"condition": "planet_must_be_exalted", "effect": "gates",
+         {"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "exalted"}], "effect": "gates",
           "target": "rule", "strength": "strong", "scope": "local"},
          {"condition": "aspected_by_another_planet", "effect": "gates",
           "target": "rule", "strength": "medium", "scope": "local"},
