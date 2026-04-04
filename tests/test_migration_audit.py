@@ -51,4 +51,4 @@ def test_audit_chapter_returns_report():
     assert report["chapter"] == "Ch.29"
     assert "matching" in report
     assert report["v1_rules"] >= 0
-    assert report["v2_rules"] >= 0
+    assert report["v2_rules_same_chapter"] >= 0

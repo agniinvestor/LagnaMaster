@@ -53,21 +53,27 @@ def _load_rules(source: str, chapter: str):
     lord in 6th" may be in Ch.12 V2 (1st house effects) AND Ch.24 V2 (lords
     in houses). Matching against only same-chapter V2 creates false gaps.
 
-    Returns (v1_included, v1_excluded, v2_all).
+    Returns (v1_included, v1_excluded, v2_same_chapter, v2_all).
+
+    Two V2 pools are returned:
+    - v2_same_chapter: V2 rules from the same chapter (for precision matching)
+    - v2_all: ALL V2 rules from same source (for gap detection)
+    Precision uses same-chapter; gap detection uses full corpus.
     """
     from src.corpus.combined_corpus import build_corpus
     corpus = build_corpus()
     relevant_cats = _RELEVANT_V1_CATEGORIES.get(chapter, None)
     v1_included, v1_excluded = [], []
-    v2_all = []  # ALL V2 rules from same source, any chapter
+    v2_same_chapter = []
+    v2_all = []
     for r in corpus.all():
         if r.source != source:
             continue
         if r.last_modified_session >= "S310":
-            # Collect ALL V2 rules (cross-chapter matching)
             v2_all.append(r)
+            if r.chapter == chapter:
+                v2_same_chapter.append(r)
         elif r.chapter == chapter:
-            # V1 rules: only from the specified chapter
             if relevant_cats is not None:
                 if not relevant_cats or r.category not in relevant_cats:
                     v1_excluded.append(r)
@@ -75,7 +81,7 @@ def _load_rules(source: str, chapter: str):
                     v1_included.append(r)
             else:
                 v1_included.append(r)
-    return v1_included, v1_excluded, v2_all
+    return v1_included, v1_excluded, v2_same_chapter, v2_all
 
 
 def match_v1_to_v2(v1_bucket: dict, v2_buckets: list[dict]) -> str:
@@ -119,8 +125,16 @@ def match_v1_to_v2(v1_bucket: dict, v2_buckets: list[dict]) -> str:
 
 
 def audit_chapter(source: str, chapter: str) -> dict:
-    """Run migration audit for a single chapter. Returns report dict."""
-    v1_rules, v1_excluded, v2_rules = _load_rules(source, chapter)
+    """Run migration audit for a single chapter. Returns report dict.
+
+    Uses dual-pool matching:
+    - Same-chapter V2: for FULL/PARTIAL precision (strict)
+    - All-chapter V2: for gap detection only (prevents false GAP_CRITICAL)
+
+    A claim is GAP_CRITICAL only if NO V2 rule anywhere covers its domain.
+    But FULL requires a same-chapter V2 match (prevents overmatching).
+    """
+    v1_rules, v1_excluded, v2_same, v2_all = _load_rules(source, chapter)
 
     # Extract V1 claims (from included rules only)
     v1_claims: list[dict] = []
@@ -130,13 +144,20 @@ def audit_chapter(source: str, chapter: str) -> dict:
             c["v1_rule_id"] = r.rule_id
             v1_claims.append(c)
 
-    # Extract V2 claims
-    v2_buckets: list[dict] = []
-    for r in v2_rules:
+    # Extract V2 claims — both pools
+    v2_same_buckets: list[dict] = []
+    for r in v2_same:
         for pred in r.predictions:
             bucket = extract_v2_bucket(pred)
             bucket["v2_rule_id"] = r.rule_id
-            v2_buckets.append(bucket)
+            v2_same_buckets.append(bucket)
+
+    v2_all_buckets: list[dict] = []
+    for r in v2_all:
+        for pred in r.predictions:
+            bucket = extract_v2_bucket(pred)
+            bucket["v2_rule_id"] = r.rule_id
+            v2_all_buckets.append(bucket)
 
     # Match
     results = {"FULL": 0, "PARTIAL": 0, "GAP_CRITICAL": 0, "UNMAPPED": 0}
@@ -146,7 +167,18 @@ def audit_chapter(source: str, chapter: str) -> dict:
     low_confidence: list[dict] = []
 
     for v1c in v1_claims:
-        result = match_v1_to_v2(v1c, v2_buckets)
+        # Dual-pool matching:
+        # 1. Try same-chapter V2 first (precision)
+        # 2. If GAP_CRITICAL in same-chapter, check full corpus (recall)
+        # This prevents false gaps while maintaining match precision
+        result = match_v1_to_v2(v1c, v2_same_buckets)
+        if result == "GAP_CRITICAL":
+            # Check if ANY V2 rule covers this domain (cross-chapter)
+            cross_result = match_v1_to_v2(v1c, v2_all_buckets)
+            if cross_result != "GAP_CRITICAL":
+                # Domain exists elsewhere — downgrade to PARTIAL
+                # (covered somewhere in V2, but not in same chapter)
+                result = "PARTIAL"
         results[result] = results.get(result, 0) + 1
 
         if result == "GAP_CRITICAL":
@@ -160,7 +192,7 @@ def audit_chapter(source: str, chapter: str) -> dict:
         elif result == "PARTIAL":
             v1_mechs = set(v1c.get("mechanisms", []))
             v2_mechs_union: set[str] = set()
-            for b in v2_buckets:
+            for b in v2_same_buckets:
                 if b["domain_direction"] == v1c["domain_direction"]:
                     v2_mechs_union.update(b.get("mechanisms", []))
             missing = v1_mechs - v2_mechs_union
@@ -240,9 +272,10 @@ def audit_chapter(source: str, chapter: str) -> dict:
         "audit_date": str(date.today()),
         "v1_rules": len(v1_rules),
         "v1_excluded": len(v1_excluded),
-        "v2_rules": len(v2_rules),
+        "v2_rules_same_chapter": len(v2_same),
+        "v2_rules_total": len(v2_all),
         "v1_claims_extracted": len(v1_claims),
-        "v2_claims_extracted": len(v2_buckets),
+        "v2_claims_extracted": len(v2_same_buckets),
         "matching": {
             "full": results["FULL"],
             "partial": results["PARTIAL"],
@@ -271,7 +304,7 @@ def format_report(report: dict) -> str:
         "=" * 40,
         f"V1 rules: {report['v1_rules']} included, {excluded} excluded (out-of-scope)",
         f"  -> {report['v1_claims_extracted']} claims extracted",
-        f"V2 rules: {report['v2_rules']} → {report['v2_claims_extracted']} claims extracted",
+        f"V2 rules: {report['v2_rules_same_chapter']} same-chapter, {report['v2_rules_total']} total → {report['v2_claims_extracted']} claims matched against",
         f"Confidence: {report['confidence']:.0%} ({report['confidence_tier']})",
     ]
     if report.get("excluded_categories"):
