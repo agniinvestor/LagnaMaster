@@ -98,6 +98,19 @@ context = {
 3. Passed to `apply_modifiers` (consumed by modifiers)
 4. Attached to final `FiredRule.context`
 
+**Context consumption whitelist (enforced):**
+```python
+# Only these aggregate keys are consumable by modifiers.
+# Raw condition metadata is read-only / debug-only — modifiers must not
+# reach into context["conditions"] directly.
+CONSUMABLE_AGGREGATES = frozenset({
+    "argala_strength_total",
+    "bb_strength",
+    "shadbala_normalized",
+})
+```
+This prevents context from becoming an unbounded dependency surface. New aggregate keys require explicit addition to the whitelist.
+
 ### Contract 2: Modifier Execution
 
 Application order (locked, do not revisit):
@@ -275,6 +288,8 @@ def theoretical_max_argala(reference_house: int) -> float:
 normalized = min(1.0, max(0.0, result.net_argala_score / theoretical_max_argala(ref)))
 ```
 
+**Normalization versioning:** Include `"normalization_version": "v1_linear"` in metadata so upgrades (e.g., house-weighted or non-linear scaling) don't silently change behavior and old outputs can be reprocessed.
+
 **Metadata emission:**
 ```python
 context["conditions"][f"cond_{idx}"] = {
@@ -285,6 +300,7 @@ context["conditions"][f"cond_{idx}"] = {
         "obstruction": obstruction_level,
         "contributing_houses": [e.source_house for e in result.entries if e.active],
         "net_score": result.net_argala_score,
+        "normalization_version": "v1_linear",
     }
 }
 ```
@@ -301,14 +317,21 @@ Unblocks: 17 Ch.31 rules.
 ]
 ```
 
-**Evaluator change:** In `_check_compound_conditions`, when a condition has `bind` and planet is a candidate list (any_benefic, any_malefic), iterate candidates. Lock the first that satisfies all downstream bound conditions.
+**Evaluator change:** In `_check_compound_conditions`, when a condition has `bind` and planet is a candidate list (any_benefic, any_malefic), iterate candidates. Select the **strongest** candidate (by dignity rank) that satisfies all downstream bound conditions — not the first match. This ensures deterministic, astrologically meaningful resolution regardless of iteration order.
+
+**Candidate ranking:**
+```python
+# Dignity rank: exalted(5) > moolatrikona(4) > own_sign(3) > neutral(2) > debilitated(1)
+valid_candidates = [c for c in candidates if satisfies_all_bound(c)]
+best = max(valid_candidates, key=lambda p: _dignity_rank(chart, p))
+```
 
 **Bounded determinism:**
 ```python
 MAX_BIND_ATTEMPTS = 10  # prevents exponential search
 ```
 
-Short-circuit on first full match across all bound conditions.
+Short-circuit once all valid candidates evaluated or MAX_BIND_ATTEMPTS reached.
 
 Unblocks: Ch.34-42 (9 yoga chapters).
 
