@@ -93,6 +93,10 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "dynamic_karaka",
     "shadbala_strength",
     "navamsa_lagna",
+    # S316 batch 3 — derived point primitives
+    "derived_points_relationship",
+    "derived_house_sign",
+    "lord_of_derived_house",
 })
 
 VALID_MODIFIER_EFFECTS = frozenset({

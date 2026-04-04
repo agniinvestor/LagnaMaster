@@ -226,3 +226,130 @@ def test_timing_activation_unspecified():
     class _R:
         timing_window = {"type": "unspecified"}
     assert _is_activated(_R(), chart=None) is True
+
+
+# --- compute_arudha (generalized) ---
+
+def test_compute_arudha_house1_matches_arudha_lagna():
+    """compute_arudha(chart, 1) should match compute_arudha_lagna result."""
+    from src.calculations.argala import compute_arudha, compute_arudha_lagna
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Mars": _P(4, name="Mars"),  # Mars (Aries lord) in Leo
+    })
+    al = compute_arudha_lagna(chart)
+    generalized = compute_arudha(chart, 1)
+    assert generalized == al.arudha_lagna_sign_index
+
+
+def test_compute_arudha_exception_same_sign():
+    """When arudha falls on the house sign, move 10 forward."""
+    from src.calculations.argala import compute_arudha
+    # Aries lagna, Mars in Aries (sign 0). dist=1, arudha=Aries=house sign -> exception
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Mars": _P(0, name="Mars"),
+    })
+    result = compute_arudha(chart, 1)
+    # Arudha = Aries, exception -> (0+9)%12 = 9 = Capricorn
+    assert result == 9
+
+
+def test_compute_arudha_no_exception():
+    """Normal case without exception."""
+    from src.calculations.argala import compute_arudha
+    # Aries lagna, Mars in Gemini (sign 2). dist=(2-0)%12+1=3, arudha=(2+3-1)%12=4 (Leo)
+    # Leo != Aries, Leo != Libra -> no exception
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Mars": _P(2, name="Mars"),
+    })
+    result = compute_arudha(chart, 1)
+    assert result == 4  # Leo
+
+
+# --- derived_points_relationship ---
+
+def test_derived_points_relationship_kendra():
+    """Test mutual kendra relationship between two arudha points."""
+    # Aries lagna. Mars in Aries (sign 0) -> AL exception -> Cap (9)
+    # Venus in Libra (sign 6) -> Dara Pada exception -> Cancer (3)
+    # Offset Cap(9)->Cancer(3) = (3-9)%12+1 = 7 -> kendra
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Mars": _P(0, name="Mars"),
+        "Venus": _P(6, name="Venus"),
+    })
+    conds = [{"type": "derived_points_relationship",
+              "point_a": {"derivation": "arudha_pada", "house": 1},
+              "point_b": {"derivation": "arudha_pada", "house": 7},
+              "relationship": "kendra_trikona"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True  # offset 7 is in kendra
+
+
+def test_derived_points_relationship_dusthana():
+    """Test dusthana relationship doesn't fire for kendra."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Mars": _P(0, name="Mars"),
+        "Venus": _P(6, name="Venus"),
+    })
+    conds = [{"type": "derived_points_relationship",
+              "point_a": {"derivation": "arudha_pada", "house": 1},
+              "point_b": {"derivation": "arudha_pada", "house": 7},
+              "relationship": "dusthana"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False  # offset 7 is kendra, not dusthana
+
+
+# --- derived_house_sign ---
+
+def test_derived_house_sign_gemini_2nd_from_up():
+    """Check if Gemini is 2nd from Upa Pada (arudha of 12th)."""
+    # Aries lagna: 12th house = Pisces (sign 11), lord = Jupiter
+    # Jupiter in Sagittarius (sign 8): dist=(8-11)%12+1=10, arudha=(8+10-1)%12=5 (Virgo)
+    # 2nd from Virgo = Libra (sign 6) -- not Gemini
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Jupiter": _P(8, name="Jupiter"),
+    })
+    conds = [{"type": "derived_house_sign", "derivation": "arudha_pada",
+              "base_house": 12, "offset": 2, "sign": "gemini"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False  # 2nd from Virgo UP is Libra, not Gemini
+
+
+def test_derived_house_sign_gemini_as_up():
+    """Check if Gemini is the Upa Pada itself."""
+    # Aries lagna: 12th house = Pisces (sign 11), lord = Jupiter
+    # Jupiter in Sag (8): dist=10, arudha=Virgo(5), but 5=(11+6)%12 -> exception -> Gemini(2)
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Jupiter": _P(8, name="Jupiter"),
+    })
+    conds = [{"type": "derived_house_sign", "derivation": "arudha_pada",
+              "base_house": 12, "offset": 1, "sign": "gemini"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True  # UP = Gemini
+
+
+# --- lord_of_derived_house ---
+
+def test_lord_of_derived_house_own_sign():
+    """Lord of UP in own sign."""
+    # Aries lagna: UP = Gemini (sign 2), lord of Gemini = Mercury
+    # Mercury in Gemini (sign 2) = own sign
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Jupiter": _P(8, name="Jupiter"),  # needed for UP computation (12th lord)
+        "Mercury": _P(2, name="Mercury"),  # Gemini = own sign
+    })
+    conds = [{"type": "lord_of_derived_house", "derivation": "arudha_pada",
+              "base_house": 12, "offset": 1, "lord_state": "own_sign"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True  # Mercury in Gemini = own sign
+
+
+def test_lord_of_derived_house_not_own():
+    """Lord of UP NOT in own sign."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Jupiter": _P(8, name="Jupiter"),  # 12th lord for UP computation
+        "Mercury": _P(0, name="Mercury"),  # Aries, not own sign
+    })
+    conds = [{"type": "lord_of_derived_house", "derivation": "arudha_pada",
+              "base_house": 12, "offset": 1, "lord_state": "own_sign"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False  # Mercury in Aries != own sign

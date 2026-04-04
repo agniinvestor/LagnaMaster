@@ -175,6 +175,36 @@ class ArudhaResult:
     pressure_note: str
 
 
+def compute_arudha(chart, house: int) -> int:
+    """Compute arudha pada sign index for any house (1-12).
+
+    Returns sign index (0-11) of the arudha pada.
+
+    Algorithm (Parashari):
+      1. Find the lord of the given house
+      2. Count from the house sign to the lord's sign: that distance = D
+      3. Count D signs forward from the lord's sign → that is the arudha sign
+      4. Exception: if arudha falls on the house sign itself or 7th from it,
+         move 10 signs forward
+    """
+    lsi = chart.lagna_sign_index
+    house_si = (lsi + house - 1) % 12  # sign of the house
+    lord = _SIGN_LORD[house_si]
+    lord_pos = chart.planets.get(lord)
+    if lord_pos is None:
+        return house_si  # fallback
+    lord_si = lord_pos.sign_index
+
+    dist = (lord_si - house_si) % 12 + 1  # 1-based distance
+    arudha_si = (lord_si + dist - 1) % 12
+
+    # Exception: if arudha falls on house sign or 7th from it
+    if arudha_si == house_si or arudha_si == (house_si + 6) % 12:
+        arudha_si = (arudha_si + 9) % 12  # move 10 signs forward
+
+    return arudha_si
+
+
 def compute_arudha_lagna(chart) -> ArudhaResult:
     """
     Compute the Arudha Lagna (AL) — mirror of Lagna.

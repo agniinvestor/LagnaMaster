@@ -786,6 +786,82 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             if SIGN_NAMES[nav_si] not in target_lower:
                 return False, 0
 
+        elif ctype == "derived_points_relationship":
+            from src.calculations.argala import compute_arudha
+            point_a = cond.get("point_a", {})
+            point_b = cond.get("point_b", {})
+            relationship = cond.get("relationship", "")
+
+            # Compute both arudha points
+            a_si = compute_arudha(chart, point_a.get("house", 1))
+            b_si = compute_arudha(chart, point_b.get("house", 7))
+
+            # Offset from A to B (1-based)
+            offset = (b_si - a_si) % 12 + 1
+
+            KENDRA = {1, 4, 7, 10}
+            TRIKONA = {1, 5, 9}
+            DUSTHANA = {6, 8, 12}
+            UPACHAYA = {3, 6, 10, 11}
+
+            if relationship == "kendra_trikona":
+                if offset not in (KENDRA | TRIKONA):
+                    return False, 0
+            elif relationship == "dusthana":
+                if offset not in DUSTHANA:
+                    return False, 0
+            elif relationship == "upachaya":
+                if offset not in UPACHAYA:
+                    return False, 0
+            elif relationship == "kendra_trikona_upachaya":
+                if offset not in (KENDRA | TRIKONA | UPACHAYA):
+                    return False, 0
+
+        elif ctype == "derived_house_sign":
+            from src.calculations.argala import compute_arudha
+            base_house = cond.get("base_house", 1)
+            offset = cond.get("offset", 1)
+            target_signs = cond.get("sign", [])
+            if isinstance(target_signs, str):
+                target_signs = [target_signs]
+            target_lower = [s.lower() for s in target_signs]
+
+            # Compute the derived point
+            derived_si = compute_arudha(chart, base_house)
+            # Apply offset (inclusive counting)
+            target_si = (derived_si + offset - 1) % 12
+
+            SIGN_NAMES = ["aries", "taurus", "gemini", "cancer", "leo", "virgo",
+                          "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"]
+            if SIGN_NAMES[target_si] not in target_lower:
+                return False, 0
+
+        elif ctype == "lord_of_derived_house":
+            from src.calculations.argala import compute_arudha
+            base_house = cond.get("base_house", 1)
+            offset = cond.get("offset", 1)
+            lord_state = cond.get("lord_state", "")
+
+            derived_si = compute_arudha(chart, base_house)
+            target_si = (derived_si + offset - 1) % 12
+            lord = _SIGN_LORDS.get(target_si, "")
+
+            if not lord or not _find_planet(chart, lord):
+                return False, 0
+
+            if lord_state == "own_sign":
+                dignity = _planet_dignity_state(chart, lord)
+                if dignity != "own_sign":
+                    return False, 0
+            elif lord_state == "in_target":
+                lord_pos = _find_planet(chart, lord)
+                if lord_pos is None or lord_pos.sign_index != target_si:
+                    return False, 0
+            elif lord_state:
+                dignity = _planet_dignity_state(chart, lord)
+                if dignity != lord_state:
+                    return False, 0
+
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire
             return False, 0
