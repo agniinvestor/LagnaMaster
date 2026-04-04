@@ -24,7 +24,7 @@ When in doubt, read that file to reconstruct state.
 - **Historical charts (pre-1800):** use `seplm_18.se1` + `semom_18.se1`
 
 ### Test Status
-- **14530 passing**, 210 skipped, 0 lint errors, 0 V2 audit errors, 583 V2 rules (18 chapters incl. Ch.29+Ch.30), 16/16 verse-verified, V1/V2 coexistence (V2=verse layer, V1=derived layer), migration audit system complete
+- **14530 passing**, 210 skipped, 0 lint errors, 0 V2 audit errors, 600 V2 rules (19 chapters: Ch.12-25 + Ch.29-31), 17/17 verse-verified, BPHS Ch.26-31 block complete, V1/V2 coexistence, migration audit system
 - **S305 extensions:** RuleRecord 10 new fields, 18 contract tests, corpus dashboard, modifier extractor, planet normalization, diverse 12-lagna test suite, 140 scripts archived to tools/archive/
 - The 3 skipped tests require a live `PG_DSN` (PostgreSQL). They pass when a Postgres instance is wired.
 - 200+ ADB fixture charts covering all 12 Lagnas

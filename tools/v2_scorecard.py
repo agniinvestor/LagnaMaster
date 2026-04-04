@@ -78,7 +78,7 @@ _BHAVAT_BHAVAM = {
 # Chapters with confirmed GPT maker-checker review (evidence from git history).
 # Going forward, review_status field on RuleRecord tracks this per-rule.
 # Historical chapters tracked here from commit evidence.
-_GPT_REVIEWED_CHAPTERS: set[str] = {"12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24a", "24b", "24c", "25", "29", "30"}
+_GPT_REVIEWED_CHAPTERS: set[str] = {"12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24a", "24b", "24c", "25", "29", "30", "31"}
 
 VALID_TIMING_TYPES = {"age", "age_range", "after_event", "dasha_period", "unspecified"}
 VALID_ENTITY_TARGETS = {"native", "father", "mother", "spouse", "children", "siblings", "general"}
@@ -92,7 +92,7 @@ _BPHS_PREDICTIVE_VERSES: dict[str, int] = {
     "12": 16, "13": 12, "14": 20, "15": 14, "16": 26, "17": 14,
     "18": 18, "19": 5, "20": 22, "21": 20, "22": 10, "23": 10,
     "24a": 56, "24b": 50, "24c": 52, "25": 85,
-    "29": 27, "30": 38,
+    "29": 27, "30": 38, "31": 8,
 }
 
 # Chapter → V2 corpus module name mapping
@@ -814,7 +814,7 @@ def format_scorecard(sc: V2Scorecard) -> str:
     # V2 = verse layer (canonical). V1 = derived layer (interpretive). Both coexist.
     from src.corpus.migration_registry import get_status as _get_mig_status
     _v2_chapters = [
-        ("BPHS", f"Ch.{n}") for n in [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 29, 30]
+        ("BPHS", f"Ch.{n}") for n in [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 29, 30, 31]
     ]
     lines.append("P. VERSE LAYER AUDIT (V2 covers all BPHS verse claims?)")
     vv_count = 0

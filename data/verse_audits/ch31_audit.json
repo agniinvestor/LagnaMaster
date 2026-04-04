@@ -1,0 +1,139 @@
+{
+  "chapter": 31,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s315_verified",
+  "audit_date": "2026-04-04",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.310-316. Chapter 31 'Argala (Planetary Intervention)' is hybrid: slokas 1-10 define Argala formation (computational — HOW to determine if Argala exists), slokas 11-18 give Argala effects (predictive — WHAT happens when Argala operates). 18 slokas total, 8 predictive, ~17 claims. All predictive rules require argala_condition primitive (NON-COMPUTABLE until Argala engine built).",
+  "predictive_verse_count": 8,
+  "total_slokas": 18,
+  "content_type": "hybrid",
+  "verses": {
+    "1": {
+      "page": "310",
+      "claims": [
+        {
+          "claim": "Question sloka: Maitreya asks about Argala conditions and effects",
+          "type": "preamble",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "2-9": {
+      "page": "310-312",
+      "claims": [
+        {
+          "claim": "Argala formation: planets in 4th, 2nd, 11th from a house/planet cause Argala. Obstructors in 10th, 12th, 3rd. Stronger prevails. 3+ malefics in 3rd = Vipareeta Argala. 5th also Argala, 9th counteracts. Nodes reverse. 1 planet = limited, 2+ = excellent. From sign or planet. Unobstructed = fruitful. Effects in Dasha periods.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "10": {
+      "page": "314",
+      "claims": [
+        {
+          "claim": "Quarter refinement: Argala in 1st quarter countered by 4th quarter of obstructive sign. 2nd quarter eliminated by 3rd quarter.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "11-17": {
+      "page": "315",
+      "claims": [
+        {
+          "claim": "Argala for Arudha Pada + natal ascendant + 7th from both → native famous and fortunate",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Benefic or malefic causing unobstructed Argala aspecting ascendant → makes one famous",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "2nd house Argala → acquisition of wealth and grains",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "3rd house Argala → happiness from co-born",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "4th house Argala → residences, quadrupeds and relatives",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "5th house Argala → sons, grand sons and intelligence",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "6th house Argala → fear from enemies",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "7th house Argala → abundant wealth and marital happiness",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "8th house Argala → difficulties",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "9th house Argala → fortunes",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "10th house Argala → royal honour",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "11th house Argala → gains",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "12th house Argala → expenses",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Benefic Argala → various kinds of happiness",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Malefic Argala → meddling with malefic effects",
+          "type": "condition",
+          "encoded": "PENDING"
+        },
+        {
+          "claim": "Both benefic and malefic Argala → mixed results",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    },
+    "18": {
+      "page": "316",
+      "claims": [
+        {
+          "claim": "Unobstructed Argala for ascendant, 5th and 9th → native will doubtlessly become a king and fortunate",
+          "type": "condition",
+          "encoded": "PENDING"
+        }
+      ]
+    }
+  }
+}

@@ -136,7 +136,14 @@ MIGRATION_REGISTRY: dict[tuple[str, str], dict] = {
         "status": "verse_verified",
         "verse_coverage": 1.0,
         "v1_rules": 0, "v1_excluded": 0, "v2_rules": 46,
-        "finding": "Encoded from PDF in S315. 42 rules from 38 predictive slokas. Uses upa_pada + arudha_pada derivations.",
+        "finding": "Encoded from PDF in S315. 46 rules from 38 predictive slokas. Uses upa_pada + arudha_pada derivations.",
+        "verified_session": "S315",
+    },
+    ("BPHS", "Ch.31"): {
+        "status": "verse_verified",
+        "verse_coverage": 1.0,
+        "v1_rules": 0, "v1_excluded": 0, "v2_rules": 17,
+        "finding": "Encoded from PDF in S315. 17 rules from 8 predictive slokas. All NON-COMPUTABLE (need argala_condition primitive). Slokas 1-10 are computational (Argala formation).",
         "verified_session": "S315",
     },
 }
