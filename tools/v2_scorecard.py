@@ -78,7 +78,7 @@ _BHAVAT_BHAVAM = {
 # Chapters with confirmed GPT maker-checker review (evidence from git history).
 # Going forward, review_status field on RuleRecord tracks this per-rule.
 # Historical chapters tracked here from commit evidence.
-_GPT_REVIEWED_CHAPTERS: set[str] = {"12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24a", "24b", "24c", "25"}
+_GPT_REVIEWED_CHAPTERS: set[str] = {"12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24a", "24b", "24c", "25", "29"}
 
 VALID_TIMING_TYPES = {"age", "age_range", "after_event", "dasha_period", "unspecified"}
 VALID_ENTITY_TARGETS = {"native", "father", "mother", "spouse", "children", "siblings", "general"}
@@ -92,6 +92,7 @@ _BPHS_PREDICTIVE_VERSES: dict[str, int] = {
     "12": 16, "13": 12, "14": 20, "15": 14, "16": 26, "17": 14,
     "18": 18, "19": 5, "20": 22, "21": 20, "22": 10, "23": 10,
     "24a": 56, "24b": 50, "24c": 52, "25": 85,
+    "29": 27,
 }
 
 # Chapter → V2 corpus module name mapping

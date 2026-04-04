@@ -1,0 +1,244 @@
+{
+  "chapter": 27,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s314_verified",
+  "audit_date": "2026-04-04",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.263-288. Chapter 27 'Evaluation of Strengths' covers Shadbala computation in full: 6 strength components (Sthaana, Dig, Kaala, Cheshta, Naisargika, Drik), sub-components (Uchcha, Saptavargaja, Ojhayugmarasiamsa, Kendradi, Drekkana Balas under Sthaana; Nathonnatha, Paksha, Tribhaga, Varsha-Maasa-Dina-Hora, Ayana Balas under Kaala), planetary war, 8 motion types, Bhava Balas, and minimum Shadbala requirements. Includes large specula for Ahargana (pp.272-274), Horas (p.275), and Ayana Bala (pp.278-283). Zero predictive verses. Slokas 37-38 state a meta-principle ('effects come through strongest planet') which belongs in inference engine weighting, not rule corpus.",
+  "predictive_verse_count": 0,
+  "total_slokas": 40,
+  "content_type": "computational",
+  "verses": {
+    "1": {
+      "page": "263-264",
+      "claims": [
+        {
+          "claim": "Introduction to Shadbala: 6 strengths (Sthaana Bala, Dig Bala, Kaala Bala, Cheshta Bala, Naisargika Bala, Drik Bala) computed for Sun through Saturn. Sthaana Bala comprises 5 sub-components: Uchcha, Saptavargaja, Ojhayugmarasiamsa, Kendradi, Drekkana.",
+          "type": "structural_definition",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "2-4": {
+      "page": "265",
+      "claims": [
+        {
+          "claim": "Saptavargaja Bala: Moolatrikona=45, own Rasi=30, extreme friend=20, friend=15, neutral=10, enemy=4, extreme enemy=2 Virupas. Same values for Hora, Decanate, Saptamamsa, Navamsa, Dvadasamsa, Trimsamsa. Sum all 7 divisional strengths.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "4.5": {
+      "page": "265-266",
+      "claims": [
+        {
+          "claim": "Ojhayugmarasiamsa Bala: Jupiter/Sun/Mars/Mercury/Saturn get 15 Virupas in odd Rasis; Venus/Moon in even Rasis. Same for Navamsa. Male planets in male Rasi/Navamsa, female in female.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "5": {
+      "page": "266",
+      "claims": [
+        {
+          "claim": "Kendradi Bala: planet in angle (1,4,7,10)=60 Virupas, succedent (2,5,8,11)=30, cadent (3,6,9,12)=15.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "6": {
+      "page": "266",
+      "claims": [
+        {
+          "claim": "Drekkana Bala: male/female/hermaphrodite planets get 15 Virupas in 1st/2nd/3rd decanate respectively. Male=Sun/Mars/Jupiter, Female=Venus/Moon, Eunuch=Saturn/Mercury.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "7-7.5": {
+      "page": "267",
+      "claims": [
+        {
+          "claim": "Digbala (directional strength): Jupiter/Mercury strong in 1st house (ascendant), Venus/Moon in 4th (nadir), Saturn in 7th (descendant), Sun/Mars in 10th (meridian). Max 60 Virupas at strongest point, 0 at opposite. Formula: deduct longitudes, process through 180/360, divide by 3.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "8-9": {
+      "page": "268",
+      "claims": [
+        {
+          "claim": "Nathonnatha Bala (diurnal/nocturnal strength): Moon/Mars/Saturn strong at night, Sun/Jupiter/Venus strong in day. Mercury always gets 1 Rupa. Formula based on Natha ghatis from apparent midnight.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "10-11": {
+      "page": "269",
+      "claims": [
+        {
+          "claim": "Paksha Bala: deduct Moon from Sun, convert to degrees, divide by 3. Benefics get this value, malefics get 60 minus this. Mercury is malefic if conjunct malefic. Moon in dark half is malefic.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "12": {
+      "page": "269-270",
+      "claims": [
+        {
+          "claim": "Tribhaga Bala: 1 Rupa to Mercury (1st third of day), Sun (2nd), Saturn (3rd); Moon (1st third of night), Venus (2nd), Mars (3rd). Jupiter gets 1 Rupa at all times.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "13": {
+      "page": "270-275",
+      "claims": [
+        {
+          "claim": "Varsha-Maasa-Dina-Hora Bala: 15/30/45/60 Virupas for Varsha/Maasa/Dina/Hora lords respectively. Includes Ahargana speculum (pp.272-274) and Hora speculum (p.275) for determining these lords.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "14": {
+      "page": "276",
+      "claims": [
+        {
+          "claim": "Naisargika Bala (natural strength): constant values — Sun=1.000, Moon=0.857, Mars=0.286, Mercury=0.429, Jupiter=0.571, Venus=0.714, Saturn=0.143 Rupas. Based on luminosity. Same for all charts.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "15-17": {
+      "page": "277-283",
+      "claims": [
+        {
+          "claim": "Ayana Bala (equinoctial strength): based on planetary declination (Kranti). Complex formula involving Ayanamsa, Bhuja, Khandas. Sun's value doubled. Moon/Saturn take southern Kranti as positive, others take northern. Mercury always plus. Includes full Ayana Bala speculum (pp.278-283).",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "18": {
+      "page": "284",
+      "claims": [
+        {
+          "claim": "Cheshta Bala for Sun and Moon: Sun's Cheshta Bala = his Ayana Bala. Moon's Cheshta Bala = her Paksha Bala. Other 5 planets use slokas 24-25.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "19": {
+      "page": "284",
+      "claims": [
+        {
+          "claim": "Drik Bala (aspectual strength): reduce Drishti Pinda by 1/4 for malefic aspects, add 1/4 for benefic aspects. Super add entire aspect of Mercury and Jupiter for net Drik Bala.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "20": {
+      "page": "284",
+      "claims": [
+        {
+          "claim": "Planetary War: when two starry planets (Mars-Saturn) are in war, difference in Shadbala is added to victor and deducted from vanquished.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "21-23": {
+      "page": "284-285",
+      "claims": [
+        {
+          "claim": "8 types of planetary motion: Vakra (retrograde), Anuvakra, Vikala (stationary), Manda, Mandatara, Sama, Chara, Atichara. Strengths: 60, 30, 15, 30, 15, 7.5, 45, 30 Virupas respectively.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "24-25": {
+      "page": "285",
+      "claims": [
+        {
+          "claim": "Motional Strength for Mars to Saturn: average mean and true longitudes, divide by 2. Reduce from Seeghrocha (apogee). Result is Cheshta Kendra. Convert to degrees, divide by 3 for motional strength in Virupas.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "26-29": {
+      "page": "286",
+      "claims": [
+        {
+          "claim": "Bhava Balas: deduct 7th house from bhava. Apply sign-based rules (Virgo/Gemini/Libra/Aquarius/1st half Sagittarius → descendant; Aries/Taurus/Leo/1st half Capricorn/Sagittarius → nadir; Cancer/Scorpio → ascendant; 2nd half Capricorn/Pisces → meridian). Convert to degrees, divide by 3. Add/subtract 1/4 for benefic/malefic aspects. Add lord's aspectual strength.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "30-31": {
+      "page": "286",
+      "claims": [
+        {
+          "claim": "Special Rules: Jupiter/Mercury add 1 Rupa to occupied bhava. Saturn/Mars/Sun reduce 1 Rupa. 15 Virupas added for Seershodaya Rasis in daytime or dual Rasis at twilight or Prishtodaya Rasis at night.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "32-33": {
+      "page": "287",
+      "claims": [
+        {
+          "claim": "Shadbala Requirements: minimum Pindas — Sun=390, Moon=360, Mars=300, Mercury=420, Jupiter=390, Venus=330, Saturn=300 Virupas. Equivalently Sun=6.5, Moon=6.0, Mars=5.0, Mercury=7.0, Jupiter=6.5, Venus=5.5, Saturn=5.0 Rupas.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "34-36": {
+      "page": "287-288",
+      "claims": [
+        {
+          "claim": "Component-wise minimums in 3 groups: Group A (Sun/Jupiter/Mercury): Sthaana=165, Dig=35, Kaala=50, Cheshta=112, Ayana=30. Group B (Moon/Venus): 133, 50, 30, 100, 40. Group C (Mars/Saturn): 96, 30, 40, 67, 20. Ayanabala normally included in Kaalabala.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "37-38": {
+      "page": "288",
+      "claims": [
+        {
+          "claim": "Meta-principle: 'Whatever yogas or effects have been stated with respect to a bhava will come to pass through the strongest planet.' This is an inference engine principle about how Shadbala determines which planet delivers bhava results, not a prediction about a native's life.",
+          "type": "meta_principle",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "39-40": {
+      "page": "288",
+      "claims": [
+        {
+          "claim": "Eligibility to issue predictions: astrologer must have skill in mathematics, grammar, logic, knowledge of justice, geography, conquered senses, and be favourable to astrology. Not a prediction about natives.",
+          "type": "preamble",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    }
+  }
+}

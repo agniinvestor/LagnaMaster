@@ -1,0 +1,114 @@
+{
+  "chapter": 28,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s314_verified",
+  "audit_date": "2026-04-04",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.288-292. Chapter 28 'Ishta and Kashta Balas' covers computation of benefic/malefic tendencies of planets for Dasa effect evaluation. Includes Uchcha Rasmi, Cheshta Rasmi, Subha/Asubha Rasmis, Ishta/Kashta Phala formulas, Saptavargaja benefic points, and meta-principles for mapping strength to auspiciousness. Zero predictive verses — all content is computational formula or meta-principles about how strength determines Dasa/Bhava auspiciousness, belonging in inference engine logic.",
+  "predictive_verse_count": 0,
+  "total_slokas": 20,
+  "content_type": "computational",
+  "verses": {
+    "1": {
+      "page": "288",
+      "claims": [
+        {
+          "claim": "Preamble: 'Now I narrate the benefic and evil tendencies of the planets based on which the Dasa effects — good or bad — can be decided.'",
+          "type": "preamble",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "2": {
+      "page": "289",
+      "claims": [
+        {
+          "claim": "Uchcha Rasmi (exaltation rays): deduct debilitation point from planet's actual position. If sum exceeds 6 signs, deduct from 12. Convert to degrees, multiply by 2 = Uchcha Rasmi of the planet.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "3-4": {
+      "page": "289",
+      "claims": [
+        {
+          "claim": "Cheshta Rasmi: calculated from Cheshta Kendra similar to Uchcha Rasmi computations. For Sun, add 3 Rasis to Sayana Sun (Sun with Ayanamsa) for Cheshta Kendra. For Moon, deduct sidereal Sun from Moon for Cheshta Kendra. If exceeds 6 signs, deduct from 12. Add 1 sign, multiply degrees by 2 = Cheshta Rasmi.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "5": {
+      "page": "290",
+      "claims": [
+        {
+          "claim": "Subha Rasmis (auspicious rays): add Uchcha and Cheshta Rasmis, divide by 2. Deduct from 8 Subha Rasmis to get Asubha Rasmis (inauspicious rays).",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "6": {
+      "page": "290",
+      "claims": [
+        {
+          "claim": "Ishta and Kashta Phala: reduce 1 from each of Cheshta and Uchcha Rasmi, multiply products by 10, add together. Half of sum = Ishta Phala (benefic tendency). 60 minus Ishta Phala = Kashta Phala (malefic tendency).",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "7-9": {
+      "page": "290",
+      "claims": [
+        {
+          "claim": "Ishta Kashta Saptavargaja Phala: Subhankas (benefic points) per dignity — exaltation=60, moolatrikona=45, own sign=30, extreme friend=22, friend=15, neutral=8, enemy=4, extreme enemy=2, debilitation=0. Deduct from 60 for Asubhanka. Same applies to all 7 Vargas.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "10": {
+      "page": "290",
+      "claims": [
+        {
+          "claim": "Classification rule: planet auspicious in first 5 dignity levels (exaltation through neutral), equal/neither in 6th (enemy), inauspicious in last 3 (bitter enemy, extreme enemy, debilitation).",
+          "type": "structural_definition",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "11-12": {
+      "page": "291",
+      "claims": [
+        {
+          "claim": "Meta-principle: directional strength represents effects of the direction; Dinabala represents effects of day/night. Whatever quantum of Digbala etc. obtained = extent of auspicious effects. 60 minus that = extent of inauspiciousness. If auspiciousness predominates, Dasa and Bhavas of that planet are auspicious; converse if inauspiciousness predominates.",
+          "type": "meta_principle",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "13-14": {
+      "page": "291",
+      "claims": [
+        {
+          "claim": "Saptavargaja Ishta Kashta continued: multiply planet's shadbala pinda by respective varga for auspiciousness of that varga. Multiply Subha or Asubha Pankthi for auspicious or inauspicious effects respectively.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "15-20": {
+      "page": "291-292",
+      "claims": [
+        {
+          "claim": "Bhava Effects: actual effects = combination of bhava strength and lord's strength. Benefic in bhava → add auspicious, deduct inauspicious. Malefic in bhava → reverse. Exalted planet adds auspicious; debilitated adds inauspicious. In Ashtaka Varga, add Bindus (auspicious) and deduct Karanas (inauspicious). If bhava extends over two Rasis, rectify per both lords; whichever Rasi has more Bindus yields more favourable results.",
+          "type": "meta_principle",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "chapter": 26,
+  "source": "BPHS",
+  "translator": "santhanam",
+  "auditor": "claude_s314_verified",
+  "audit_date": "2026-04-04",
+  "status": "verified",
+  "verification_note": "PDF-first audit from Santhanam Vol 1 pp.253-263. Chapter 26 'Evaluation of Planetary Aspects' is entirely computational. 12 slokas covering: aspect definitions (sign-based vs degree-based), Drishti Kona computation, special aspect formulas for Saturn/Mars/Jupiter, and a full speculum lookup table (0-300 degrees in 0.5-degree steps). Zero predictive verses — no claims about a native's life outcomes. All content is computational formula suitable for engine module implementation, not rule corpus encoding.",
+  "predictive_verse_count": 0,
+  "total_slokas": 12,
+  "content_type": "computational",
+  "verses": {
+    "1": {
+      "page": "253",
+      "claims": [
+        {
+          "claim": "Question sloka: Maitreya asks Parasara about aspects and strengths used in deciding effects, and how many kinds exist.",
+          "type": "preamble",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "2-5": {
+      "page": "253-255",
+      "claims": [
+        {
+          "claim": "Defines two kinds of aspects: sign-based (previously explained) and degree-based (Spashta Drishti). Aspects on 3rd/10th are 1/4 strength, 5th/9th are 1/2, 4th/8th are 3/4, 7th is full. Effects due to aspects are proportionate to their strength. Saturn has special full aspects on 3rd and 10th, Jupiter on 5th and 9th, Mars on 4th and 8th. These sign-based aspects are ordinary; degree-based computation follows.",
+          "type": "structural_definition",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "6-8": {
+      "page": "255",
+      "claims": [
+        {
+          "claim": "Drishti Kona (aspectual angle) computation: deduct aspected longitude from aspector longitude. If sum exceeds 6 signs (180 deg), deduct from 10 signs (300 deg). Convert to degrees and divide by 2. Result is Drishti Kona. Process through sign/degree arithmetic for cases exceeding 5, 4, 3, 2, or 1 sign(s).",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "9-10": {
+      "page": "256",
+      "claims": [
+        {
+          "claim": "Saturn's special aspect computation: find difference between Saturn and aspected planet. If sum above 1 sign, multiply degrees by 2 for Drishti value. If above 9 signs, double and deduct from 60. If above 2 signs, halve and deduct from 60, add 30. If above 8 signs, process as standard.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "11": {
+      "page": "256",
+      "claims": [
+        {
+          "claim": "Mars' special aspect computation: if sum is 3 or 7 Rasis & c, after ignoring Rasis reduce from 60. If above 2 Rasis, increase by half (50%) and superadd 15. If sum is 6 signs, one Rupa (60 Virupas).",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "12": {
+      "page": "256-257",
+      "claims": [
+        {
+          "claim": "Jupiter's special aspect computation: if sum is 3 or 7 Rasis & c, halve degrees and increase by 45. If 4 or 8 Rasis & c, subtract from 60. For house aspect, consider cusp as planetary degree. Notes on Virupa units (60 Kalas = 1 Rupa).",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "santhanam_rules_1_6": {
+      "page": "257",
+      "claims": [
+        {
+          "claim": "Santhanam's exposition: 6 rules for converting aspect angle to Drishti value. Rule 1 (30-60 deg): reduce 30, divide by 2. Rule 2 (60-90 deg): reduce 60, add 15. Rule 3 (90-120 deg): reduce from 120, halve, add 30. Rule 4 (120-150 deg): reduce from 150, double. Rule 5 (150-180 deg): reduce from aspect angle, double. Rule 6 (180-300 deg): deduct from 300, halve. No value for 300-360 deg range.",
+          "type": "computational_formula",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    "speculum_table": {
+      "page": "258-263",
+      "claims": [
+        {
+          "claim": "Computerized speculum of aspectual values: lookup table from 30:0 degrees (0.00 Virupas) through 180:0 degrees (60.00 Virupas) and back to 299:30 degrees (0.25 Virupas). Provides Drishti strength in Virupa units for every 0.5 degree increment. Mars/Jupiter/Saturn special additions noted separately.",
+          "type": "reference_table",
+          "encoded": "NOT_APPLICABLE"
+        }
+      ]
+    }
+  }
+}
