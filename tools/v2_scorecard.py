@@ -805,26 +805,24 @@ def format_scorecard(sc: V2Scorecard) -> str:
                 lines.append(f"    {ch:15s}: {cd['total']:4d} ({cd['v2']:3d} V2, {cd['legacy']:3d} legacy)  {tag}")
         lines.append("")
 
-    # P. Migration Audit Status
+    # P. Migration Audit Status (V1/V2 coexistence — S314)
+    # V2 = verse layer (canonical). V1 = derived layer (interpretive). Both coexist.
     from src.corpus.migration_registry import get_status as _get_mig_status
     _v2_chapters = [
         ("BPHS", f"Ch.{n}") for n in [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 29]
     ]
-    lines.append("P. MIGRATION AUDIT STATUS")
-    verified_count = 0
+    lines.append("P. VERSE LAYER AUDIT (V2 covers all BPHS verse claims?)")
+    vv_count = 0
     for _src, _ch in _v2_chapters:
         st = _get_mig_status(_src, _ch)
-        _status = st["status"]
-        if _status == "verified":
-            verified_count += 1
-            lines.append(f"    {_ch:8s}: VERIFIED    ({st['verified_at']}, "
-                         f"{st['confidence']:.0%}, {st['partial_count']} annotated partials)")
-        elif _status == "audited":
-            lines.append(f"    {_ch:8s}: AUDITED     ({st['gap_critical_count']} gaps, "
-                         f"{st['partial_count']} partials)")
+        _status = st.get("status", "unaudited")
+        if _status == "verse_verified":
+            vv_count += 1
+            lines.append(f"    {_ch:8s}: VERSE_VERIFIED  (V2={st.get('v2_rules', '?')} rules, session={st.get('verified_session', '?')})")
         else:
             lines.append(f"    {_ch:8s}: UNAUDITED")
-    lines.append(f"  Verified: {verified_count}/{len(_v2_chapters)} chapters")
+    lines.append(f"  Verse-verified: {vv_count}/{len(_v2_chapters)} chapters")
+    lines.append("  Note: V1 rules NOT excluded — they contain derived knowledge (house significations, etc.)")
     lines.append("")
 
     # Red flags
