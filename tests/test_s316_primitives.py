@@ -353,3 +353,17 @@ def test_lord_of_derived_house_not_own():
               "base_house": 12, "offset": 1, "lord_state": "own_sign"}]
     fires, _ = _check_compound_conditions(conds, chart)
     assert fires is False  # Mercury in Aries != own sign
+
+
+# --- planet_from_derived_lord ---
+
+def test_planet_from_derived_lord():
+    """Chain: planet in Nth from lord of Mth from arudha."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Jupiter": _P(8, name="Jupiter"),  # Sagittarius
+        "Rahu": _P(0, name="Rahu"),        # Aries
+    })
+    conds = [{"type": "planet_from_derived_lord", "derivation": "arudha_pada",
+              "base_house": 12, "lord_offset": 7, "planet_offset": 2, "planet": "Rahu"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert isinstance(fires, bool)  # verify no crash

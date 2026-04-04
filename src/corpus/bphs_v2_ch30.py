@@ -824,7 +824,7 @@ b.add(
 
 # v.42-43: Rahu in 2nd from lord of 7th (from UP) → long projected teeth
 b.add(
-    conditions=[],  # BLOCKED: needs multi-step derived chain primitive (7th lord from UP)
+    conditions=[{"type": "planet_from_derived_lord", "derivation": "arudha_pada", "base_house": 12, "lord_offset": 7, "planet_offset": 2, "planet": "Rahu"}],
     signal_group="upa_pada_7lord_h2_rahu_long_teeth",
     direction="neutral", intensity="weak",
     primary_domain="character",
@@ -839,7 +839,7 @@ b.add(
 )
 
 b.add(
-    conditions=[],  # BLOCKED: needs multi-step derived chain primitive (7th lord from UP)
+    conditions=[{"type": "planet_from_derived_lord", "derivation": "arudha_pada", "base_house": 12, "lord_offset": 7, "planet_offset": 2, "planet": "Ketu"}],
     signal_group="upa_pada_7lord_h2_ketu_stammering",
     direction="unfavorable", intensity="weak",
     primary_domain="character",
@@ -854,7 +854,7 @@ b.add(
 )
 
 b.add(
-    conditions=[],  # BLOCKED: needs multi-step derived chain primitive (7th lord from UP)
+    conditions=[{"type": "planet_from_derived_lord", "derivation": "arudha_pada", "base_house": 12, "lord_offset": 7, "planet_offset": 2, "planet": "Saturn"}],
     signal_group="upa_pada_7lord_h2_saturn_ugly",
     direction="unfavorable", intensity="weak",
     primary_domain="character",

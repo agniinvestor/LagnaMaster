@@ -862,6 +862,37 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
                 if dignity != lord_state:
                     return False, 0
 
+        elif ctype == "planet_from_derived_lord":
+            from src.calculations.argala import compute_arudha
+            base_house = cond.get("base_house", 1)
+            lord_offset = cond.get("lord_offset", 1)
+            planet_offset = cond.get("planet_offset", 1)
+            planet_spec = cond.get("planet", "")
+
+            # Step 1: Compute arudha
+            derived_si = compute_arudha(chart, base_house)
+            # Step 2: Find sign at lord_offset from derived point
+            target_si = (derived_si + lord_offset - 1) % 12
+            # Step 3: Lord of that sign
+            lord = _SIGN_LORDS[target_si]
+            lord_pos = _find_planet(chart, lord)
+            if not lord_pos:
+                return False, 0
+            lord_house = (lord_pos.sign_index - chart.lagna_sign_index) % 12 + 1
+            # Step 4: House at planet_offset from lord's house
+            from src.calculations.derived_house import resolve_house
+            check_house = resolve_house(lord_house, planet_offset)
+            # Step 5: Check if planet is in that house
+            if planet_spec.startswith("lord_of_"):
+                h = int(planet_spec.split("_")[-1])
+                planet_spec = _lord_of_house(chart, h)
+            if not planet_spec or not _find_planet(chart, planet_spec.title()):
+                return False, 0
+            actual_house = _planet_house(chart, planet_spec.title())
+            if actual_house != check_house:
+                return False, 0
+            matched_house = matched_house or check_house
+
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire
             return False, 0

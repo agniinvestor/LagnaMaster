@@ -676,7 +676,7 @@ b.add(
 # --- C30: Strong planet in Pada and 7th → marital happiness ---
 
 b.add(
-    conditions=[],  # PARTIAL: needs planet-occupying-derived-point primitive (strong planet in AL sign AND 7th from AL)
+    conditions=[],  # BLOCKED: needs planet_at_derived_point with dignity filter (1 rule)
     signal_group="pada_h1_h7_strong_marital_happiness",
     direction="favorable", intensity="moderate",
     primary_domain="relationships",

@@ -97,6 +97,8 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "derived_points_relationship",
     "derived_house_sign",
     "lord_of_derived_house",
+    # S316 batch 4 — multi-step derived chain
+    "planet_from_derived_lord",
 })
 
 VALID_MODIFIER_EFFECTS = frozenset({
