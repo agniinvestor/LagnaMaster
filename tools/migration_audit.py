@@ -194,26 +194,38 @@ def audit_chapter(source: str, chapter: str) -> dict:
     else:
         conf_tier = "LOW"
 
-    # Determine audit status (epistemically honest)
-    # UNVERIFIABLE: no V1 baseline to compare against
-    # VERIFIED: gaps=0, all partials annotated, confidence>=0.7
-    # PARTIAL: some coverage but gaps/unmapped remain
-    # INCOMPLETE: significant gaps
-    if len(v1_rules) == 0:
-        audit_status = "UNVERIFIABLE"
+    # Determine audit status (epistemically honest, two axes)
+    # Axis 1: V1 cross-validation status
+    # Axis 2: verse audit coverage (from scorecard)
+    if len(v1_rules) == 0 and len(v1_excluded) > 0:
+        # V1 rules exist but all excluded as out-of-scope
+        audit_status = "VERSE_ONLY"  # verified by verse audit, no V1 cross-check possible
+    elif len(v1_rules) == 0 and len(v1_excluded) == 0:
+        audit_status = "VERSE_ONLY"  # no V1 at all
     elif results["GAP_CRITICAL"] == 0 and results["UNMAPPED"] == 0:
-        audit_status = "VERIFIED"
+        audit_status = "CROSS_VALIDATED"
     elif results["GAP_CRITICAL"] == 0:
         audit_status = "PARTIAL"
     else:
         audit_status = "INCOMPLETE"
 
-    # Integrity warning: if more rules excluded than included, flag it
+    # Audit confidence tier based on excluded percentage
+    total_v1 = len(v1_rules) + len(v1_excluded)
+    if total_v1 == 0:
+        audit_confidence_tier = "N/A"
+    elif len(v1_excluded) / total_v1 < 0.2:
+        audit_confidence_tier = "HIGH"
+    elif len(v1_excluded) / total_v1 < 0.5:
+        audit_confidence_tier = "MEDIUM"
+    else:
+        audit_confidence_tier = "LOW"
+
+    # Integrity warning
     integrity_warning = ""
     if v1_excluded and len(v1_excluded) > len(v1_rules):
         integrity_warning = (
             f"More V1 rules excluded ({len(v1_excluded)}) than included "
-            f"({len(v1_rules)}) — chapter integrity risk"
+            f"({len(v1_rules)}) — auditing on minority data"
         )
 
     return {
@@ -234,6 +246,7 @@ def audit_chapter(source: str, chapter: str) -> dict:
         "confidence": round(avg_confidence, 2),
         "confidence_tier": conf_tier,
         "audit_status": audit_status,
+        "audit_confidence_tier": audit_confidence_tier,
         "integrity_warning": integrity_warning,
         "excluded_categories": sorted({r.category for r in v1_excluded}) if v1_excluded else [],
         "gaps": gaps,
@@ -277,13 +290,14 @@ def format_report(report: dict) -> str:
         lines.append(f"  {label:20s}: {count:4d} ({pct:>4s}){marker}")
 
     # Status (epistemically honest)
+    act = report.get("audit_confidence_tier", "N/A")
     status = report.get("audit_status", "INCOMPLETE")
-    if status == "UNVERIFIABLE":
-        lines.append("\nStatus: UNVERIFIABLE (no V1 baseline — V2 encoding cannot be cross-checked)")
-    elif status == "VERIFIED":
-        lines.append("\nStatus: VERIFIED (all V1 claims matched)")
+    if status == "VERSE_ONLY":
+        lines.append("\nStatus: VERSE_ONLY (V2 verified by verse audit, no V1 cross-check available)")
+    elif status == "CROSS_VALIDATED":
+        lines.append(f"\nStatus: CROSS_VALIDATED (all V1 claims matched) [audit confidence: {act}]")
     elif status == "PARTIAL":
-        lines.append(f"\nStatus: PARTIAL (0 gaps, {m['unmapped']} unmapped need review)")
+        lines.append(f"\nStatus: PARTIAL (0 gaps, {m['unmapped']} unmapped need review) [audit confidence: {act}]")
     else:
         reasons = []
         if m["gap_critical"] > 0:
