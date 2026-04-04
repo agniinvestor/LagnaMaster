@@ -51,6 +51,9 @@ class ModifiedRule:
     source_rule: FiredRule
     qualifications: list[str] = field(default_factory=list)
     gated_out: bool = False
+    gate_reason: str = ""
+    unevaluated_gates: list[dict] = field(default_factory=list)
+    context: dict | None = None
 
 
 @dataclass
@@ -74,39 +77,114 @@ class ChartAnalysis:
     total_rules_gated: int = 0
 
 
-def apply_modifiers(fired: FiredRule, rule) -> ModifiedRule:
-    """Apply modifiers to a fired rule. Returns ModifiedRule or gated-out result."""
+# Modifier application order: gates first so we can short-circuit, then negates,
+# attenuates, amplifies, qualifies last (informational only).
+_EFFECT_ORDER = {"gates": 0, "negates": 1, "attenuates": 2, "amplifies": 3, "qualifies": 4}
+
+
+def _context_scaled_weight(base_weight: float, condition_context: dict | None) -> float:
+    """Scale a modifier weight using the first available consumable aggregate.
+
+    Formula: effective = base * (1 + 0.5 * ctx_strength)
+    """
+    if not condition_context:
+        return base_weight
+    aggregates = condition_context.get("aggregates", {})
+    for key in CONSUMABLE_AGGREGATES:
+        if key in aggregates:
+            ctx_strength = float(aggregates[key])
+            return base_weight * (1.0 + 0.5 * ctx_strength)
+    return base_weight
+
+
+def apply_modifiers(
+    fired: FiredRule,
+    rule,
+    chart=None,
+    condition_context: dict | None = None,
+) -> ModifiedRule:
+    """Apply modifiers to a fired rule. Returns ModifiedRule or gated-out result.
+
+    Modifiers are applied in strict order: gates → negates → attenuates → amplifies → qualifies.
+    Gates with structured conditions (list[dict]) are evaluated via _check_compound_conditions.
+    Gates with string conditions are logged as unevaluated with blocking severity.
+    Negation uses 3-tier logic: strong flips direction, medium weakens, weak is negligible.
+    Weights are scaled by condition context aggregates when available.
+    """
     magnitude = fired.confidence  # base magnitude from rule confidence
     direction = fired.outcome_direction
-    qualifications = []
+    qualifications: list[str] = []
+    gate_reason = ""
+    unevaluated_gates: list[dict] = []
 
     # Use prediction magnitude if available
     if rule.predictions:
         max_pred_mag = max(p.get("magnitude", 0.5) for p in rule.predictions)
         magnitude = max_pred_mag
 
-    for mod in (rule.modifiers or []):
+    # Sort modifiers by effect order
+    modifiers = sorted(
+        (rule.modifiers or []),
+        key=lambda m: _EFFECT_ORDER.get(m.get("effect", ""), 99),
+    )
+
+    for mod in modifiers:
         effect = mod.get("effect", "")
         strength = mod.get("strength", "medium")
-        weight = _STRENGTH_WEIGHTS.get(strength, 0.30)
+        base_weight = _STRENGTH_WEIGHTS.get(strength, 0.30)
+        weight = _context_scaled_weight(base_weight, condition_context)
+        condition = mod.get("condition", "")
 
         if effect == "gates":
-            # Gates currently don't evaluate (no modifier condition engine yet)
-            # They are documented constraints — in future, evaluate_gate() here
-            pass
-        elif effect == "amplifies":
-            magnitude *= (1.0 + weight)
+            if isinstance(condition, list):
+                # Structured gate — evaluate via compound conditions engine
+                from src.calculations.rule_firing import _check_compound_conditions
+
+                gate_ctx = dict(condition_context) if condition_context else None
+                fires, _ = _check_compound_conditions(condition, chart, context=gate_ctx)
+                if not fires:
+                    gate_reason = f"gate failed: {condition}"
+                    return ModifiedRule(
+                        rule_id=fired.rule_id,
+                        primary_domain=getattr(rule, "primary_domain", "character"),
+                        direction=direction,
+                        magnitude=0.0,
+                        source_rule=fired,
+                        qualifications=qualifications,
+                        gated_out=True,
+                        gate_reason=gate_reason,
+                        unevaluated_gates=unevaluated_gates,
+                        context=condition_context,
+                    )
+            else:
+                # String gate — not evaluable, log with severity
+                severity = "blocking" if strength in ("strong", "medium") else "informational"
+                unevaluated_gates.append({
+                    "condition": condition,
+                    "strength": strength,
+                    "severity": severity,
+                })
+
+        elif effect == "negates":
+            # 3-tier negation: strong flips, medium weakens, weak negligible
+            if strength == "strong":
+                if direction == "favorable":
+                    direction = "unfavorable"
+                elif direction == "unfavorable":
+                    direction = "favorable"
+            elif strength == "medium":
+                magnitude *= (1.0 - weight)
+
+            # weak: no change (negligible)
+
         elif effect == "attenuates":
             magnitude *= (1.0 - weight)
-        elif effect == "negates":
-            # Flip direction
-            if direction == "favorable":
-                direction = "unfavorable"
-            elif direction == "unfavorable":
-                direction = "favorable"
-            magnitude *= weight  # reduce magnitude since negation is conditional
+
+        elif effect == "amplifies":
+            magnitude *= (1.0 + weight)
+
         elif effect == "qualifies":
-            qualifications.append(mod.get("condition", ""))
+            qualifications.append(condition if isinstance(condition, str) else str(condition))
 
     return ModifiedRule(
         rule_id=fired.rule_id,
@@ -115,19 +193,63 @@ def apply_modifiers(fired: FiredRule, rule) -> ModifiedRule:
         magnitude=round(magnitude, 3),
         source_rule=fired,
         qualifications=qualifications,
+        gate_reason=gate_reason,
+        unevaluated_gates=unevaluated_gates,
+        context=condition_context,
     )
 
 
-def aggregate_domains(modified_rules: list[ModifiedRule]) -> dict[str, DomainScore]:
-    """Aggregate fired rules into domain scores."""
+def aggregate_domains(
+    modified_rules: list[ModifiedRule],
+    contrary_mirrors: set[tuple[str, str]] | None = None,
+) -> dict[str, DomainScore]:
+    """Aggregate fired rules into domain scores.
+
+    Conflict resolution layers:
+      1. Contrary mirror cancellation — rule pairs in contrary_mirrors cancel to net 0
+      2. Same signal-group dominance — opposite directions in the same signal_group
+         keep only the strongest rule (by abs magnitude)
+      3. Confidence-weighted scoring — effective = magnitude × source confidence
+    """
     from src.corpus.taxonomy import PRIMARY_DOMAIN_PRIORITY
 
-    scores = {}
+    # --- 1. Contrary mirror cancellation ---
+    cancelled_ids: set[str] = set()
+    if contrary_mirrors:
+        rule_ids = {mr.rule_id for mr in modified_rules if not mr.gated_out}
+        for a, b in contrary_mirrors:
+            if a in rule_ids and b in rule_ids:
+                cancelled_ids.add(a)
+                cancelled_ids.add(b)
+
+    # --- 2. Signal-group dominance ---
+    suppressed_ids: set[str] = set()
+    # Group active rules by (domain, signal_group)
+    from collections import defaultdict
+    sg_groups: dict[tuple[str, str], list[ModifiedRule]] = defaultdict(list)
+    for mr in modified_rules:
+        if mr.gated_out or mr.rule_id in cancelled_ids:
+            continue
+        sg = getattr(mr.source_rule, "signal_group", "") or ""
+        if sg:
+            sg_groups[(mr.primary_domain, sg)].append(mr)
+
+    for _key, group in sg_groups.items():
+        directions = {mr.direction for mr in group}
+        if "favorable" in directions and "unfavorable" in directions:
+            # Opposite directions present — keep only the strongest
+            strongest = max(group, key=lambda m: abs(m.magnitude))
+            for mr in group:
+                if mr.rule_id != strongest.rule_id:
+                    suppressed_ids.add(mr.rule_id)
+
+    # --- 3. Accumulate with confidence weighting ---
+    scores: dict[str, DomainScore] = {}
     for domain in PRIMARY_DOMAIN_PRIORITY:
         scores[domain] = DomainScore(domain=domain)
 
     for mr in modified_rules:
-        if mr.gated_out:
+        if mr.gated_out or mr.rule_id in cancelled_ids or mr.rule_id in suppressed_ids:
             continue
         domain = mr.primary_domain
         if domain not in scores:
@@ -136,14 +258,17 @@ def aggregate_domains(modified_rules: list[ModifiedRule]) -> dict[str, DomainSco
         ds = scores[domain]
         ds.rule_count += 1
 
+        confidence = getattr(mr.source_rule, "confidence", 1.0)
+        effective = mr.magnitude * confidence
+
         if mr.direction == "favorable":
-            ds.favorable_score += mr.magnitude
+            ds.favorable_score += effective
         elif mr.direction == "unfavorable":
-            ds.unfavorable_score += mr.magnitude
+            ds.unfavorable_score += effective
         else:
             # mixed/neutral — split evenly
-            ds.favorable_score += mr.magnitude * 0.5
-            ds.unfavorable_score += mr.magnitude * 0.5
+            ds.favorable_score += effective * 0.5
+            ds.unfavorable_score += effective * 0.5
 
         ds.net_score = round(ds.favorable_score - ds.unfavorable_score, 3)
 

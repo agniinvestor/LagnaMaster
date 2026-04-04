@@ -1,4 +1,5 @@
 """Tests for inference engine — modifier application + domain aggregation."""
+import pytest
 from src.calculations.inference import (
     apply_modifiers, aggregate_domains, ModifiedRule,
 )
@@ -72,9 +73,10 @@ def test_aggregate_domains():
         ModifiedRule(rule_id="R3", primary_domain="health", direction="favorable", magnitude=0.6, source_rule=_make_fired()),
     ]
     scores = aggregate_domains(rules)
-    assert scores["wealth"].favorable_score == 0.8
-    assert scores["wealth"].unfavorable_score == 0.5
-    assert scores["wealth"].net_score == 0.3
+    # Confidence-weighted: magnitude * confidence (0.7 default)
+    assert scores["wealth"].favorable_score == pytest.approx(0.8 * 0.7)
+    assert scores["wealth"].unfavorable_score == pytest.approx(0.5 * 0.7)
+    assert scores["wealth"].net_score == pytest.approx(round(0.8 * 0.7 - 0.5 * 0.7, 3))
     assert scores["wealth"].rule_count == 2
-    assert scores["health"].favorable_score == 0.6
+    assert scores["health"].favorable_score == pytest.approx(0.6 * 0.7)
     assert scores["health"].rule_count == 1
