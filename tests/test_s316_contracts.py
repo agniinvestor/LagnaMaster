@@ -62,3 +62,25 @@ def test_consumable_aggregates_whitelist():
     assert "bb_strength" in CONSUMABLE_AGGREGATES
     assert "shadbala_normalized" in CONSUMABLE_AGGREGATES
     assert len(CONSUMABLE_AGGREGATES) == 3
+
+
+from src.corpus.feature_registry import IMPLEMENTED_FEATURES, PENDING_FEATURES
+
+
+def test_s316_features_implemented():
+    s316 = {"argala_condition", "functional_benefic", "same_planet_constraint",
+            "dynamic_karaka", "shadbala_strength", "navamsa_lagna",
+            "modifier_execution", "bhavat_bhavam_execution",
+            "modifier_condition_structured", "prediction_type_classification",
+            "timing_activation"}
+    for f in s316:
+        assert f in IMPLEMENTED_FEATURES, f"{f} not in IMPLEMENTED_FEATURES"
+
+
+def test_s316_features_not_pending():
+    s316 = {"argala_condition", "functional_benefic", "same_planet_constraint",
+            "dynamic_karaka", "shadbala_strength", "navamsa_lagna",
+            "modifier_execution", "bhavat_bhavam_execution",
+            "modifier_condition_structured", "prediction_type_classification"}
+    for f in s316:
+        assert f not in PENDING_FEATURES, f"{f} still in PENDING_FEATURES"

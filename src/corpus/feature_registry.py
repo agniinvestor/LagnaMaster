@@ -34,21 +34,23 @@ IMPLEMENTED_FEATURES: frozenset[str] = frozenset({
     "inference_skeleton",
     # Derived house (exists but limited to special lagnas)
     "planet_in_derived_house",
+    # S316 features (11)
+    "same_planet_constraint",
+    "shadbala_strength",
+    "dynamic_karaka",
+    "functional_benefic",
+    "navamsa_lagna",
+    "modifier_condition_structured",
+    "modifier_execution",
+    "prediction_type_classification",
+    "bhavat_bhavam_execution",
+    "argala_condition",
+    "timing_activation",
 })
 
 # Features NOT YET implemented (add trigger + dependency)
 PENDING_FEATURES: dict[str, str] = {
-    "same_planet_constraint": "Bind variable for conditions that must resolve to same planet (BPHS2303)",
-    "shadbala_strength": "6-fold planetary strength computation (BPHS2501)",
-    "timing_activation": "Dasha-period probabilistic windows for timing rules",
-    "dynamic_karaka": "Stronger-of-two-planets karaka resolution (BPHS1504)",
-    "functional_benefic": "Per-lagna benefic/malefic classification (BPHS1503, 1508, 2408, 2623)",
     "planet_in_house_from_aspects": "Aspect mode for planet_in_house_from primitive",
-    "navamsa_lagna": "D9 ascendant computation (BPHS2114)",
-    "modifier_condition_structured": "Replace modifier condition strings with structured dicts",
-    "modifier_execution": "Engine evaluates modifier gates/negates at rule-firing time",
-    "prediction_type_classification": "Classify predictions as trait/event/status/health",
-    "bhavat_bhavam_execution": "Make derived_house_chains computable, not just metadata",
 }
 
 # Chapter → required features (only chapters with non-standard requirements)
