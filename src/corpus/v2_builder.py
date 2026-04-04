@@ -469,6 +469,15 @@ class V2ChapterBuilder:
         for i, cond in enumerate(conditions):
             ctype = cond.get("type", "")
 
+            # Reject lord_in_house with house="any" — always a no-op (use planet_dignity)
+            if ctype == "lord_in_house":
+                house = cond.get("house")
+                if house == "any":
+                    errors.append(
+                        f"T1-1: conditions[{i}] lord_in_house house='any' is a no-op — "
+                        f"use planet_dignity or planet_in_sign_type instead"
+                    )
+
             if ctype == "planet_in_sign_type":
                 from src.corpus.taxonomy import VALID_SIGN_TYPES
                 st = cond.get("sign_type", "")
