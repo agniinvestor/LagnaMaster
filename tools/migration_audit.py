@@ -45,25 +45,31 @@ _RELEVANT_V1_CATEGORIES: dict[str, set[str]] = {
 def _load_rules(source: str, chapter: str):
     """Load all rules for a source+chapter from combined corpus.
 
-    V1 rules are filtered by category relevance to avoid cross-chapter
-    noise from legacy encoding. See _RELEVANT_V1_CATEGORIES.
+    V1 rules are soft-classified by category relevance. Rules in non-relevant
+    categories are separated as 'excluded' but still tracked and reported.
+    Returns (v1_included, v1_excluded, v2).
     """
     from src.corpus.combined_corpus import build_corpus
     corpus = build_corpus()
     relevant_cats = _RELEVANT_V1_CATEGORIES.get(chapter, None)
-    v1, v2 = [], []
+    v1_included, v1_excluded, v2 = [], [], []
     for r in corpus.all():
         if r.source != source or r.chapter != chapter:
             continue
         if r.last_modified_session >= "S310":
             v2.append(r)
         else:
-            # Filter V1 by category relevance if mapping exists
             if relevant_cats is not None:
+                # We have a relevance mapping for this chapter
                 if not relevant_cats or r.category not in relevant_cats:
-                    continue
-            v1.append(r)
-    return v1, v2
+                    # Empty set = no V1 category is relevant; or category doesn't match
+                    v1_excluded.append(r)
+                else:
+                    v1_included.append(r)
+            else:
+                # No mapping exists — include all V1 rules (unknown chapter)
+                v1_included.append(r)
+    return v1_included, v1_excluded, v2
 
 
 def match_v1_to_v2(v1_bucket: dict, v2_buckets: list[dict]) -> str:
@@ -108,9 +114,9 @@ def match_v1_to_v2(v1_bucket: dict, v2_buckets: list[dict]) -> str:
 
 def audit_chapter(source: str, chapter: str) -> dict:
     """Run migration audit for a single chapter. Returns report dict."""
-    v1_rules, v2_rules = _load_rules(source, chapter)
+    v1_rules, v1_excluded, v2_rules = _load_rules(source, chapter)
 
-    # Extract V1 claims
+    # Extract V1 claims (from included rules only)
     v1_claims: list[dict] = []
     for r in v1_rules:
         claims = extract_claims(r.description)
@@ -188,11 +194,34 @@ def audit_chapter(source: str, chapter: str) -> dict:
     else:
         conf_tier = "LOW"
 
+    # Determine audit status (epistemically honest)
+    # UNVERIFIABLE: no V1 baseline to compare against
+    # VERIFIED: gaps=0, all partials annotated, confidence>=0.7
+    # PARTIAL: some coverage but gaps/unmapped remain
+    # INCOMPLETE: significant gaps
+    if len(v1_rules) == 0:
+        audit_status = "UNVERIFIABLE"
+    elif results["GAP_CRITICAL"] == 0 and results["UNMAPPED"] == 0:
+        audit_status = "VERIFIED"
+    elif results["GAP_CRITICAL"] == 0:
+        audit_status = "PARTIAL"
+    else:
+        audit_status = "INCOMPLETE"
+
+    # Integrity warning: if more rules excluded than included, flag it
+    integrity_warning = ""
+    if v1_excluded and len(v1_excluded) > len(v1_rules):
+        integrity_warning = (
+            f"More V1 rules excluded ({len(v1_excluded)}) than included "
+            f"({len(v1_rules)}) — chapter integrity risk"
+        )
+
     return {
         "chapter": chapter,
         "source": source,
         "audit_date": str(date.today()),
         "v1_rules": len(v1_rules),
+        "v1_excluded": len(v1_excluded),
         "v2_rules": len(v2_rules),
         "v1_claims_extracted": len(v1_claims),
         "v2_claims_extracted": len(v2_buckets),
@@ -204,6 +233,9 @@ def audit_chapter(source: str, chapter: str) -> dict:
         },
         "confidence": round(avg_confidence, 2),
         "confidence_tier": conf_tier,
+        "audit_status": audit_status,
+        "integrity_warning": integrity_warning,
+        "excluded_categories": sorted({r.category for r in v1_excluded}) if v1_excluded else [],
         "gaps": gaps,
         "partials": partials,
         "unmapped": unmapped,
@@ -214,14 +246,20 @@ def audit_chapter(source: str, chapter: str) -> dict:
 def format_report(report: dict) -> str:
     """Format audit report as CLI text."""
     ch = report["chapter"]
+    excluded = report.get("v1_excluded", 0)
     lines = [
         f"Migration Audit — BPHS {ch}",
         "=" * 40,
-        f"V1 rules: {report['v1_rules']} → {report['v1_claims_extracted']} claims extracted",
+        f"V1 rules: {report['v1_rules']} included, {excluded} excluded (out-of-scope)",
+        f"  -> {report['v1_claims_extracted']} claims extracted",
         f"V2 rules: {report['v2_rules']} → {report['v2_claims_extracted']} claims extracted",
         f"Confidence: {report['confidence']:.0%} ({report['confidence_tier']})",
-        "",
     ]
+    if report.get("excluded_categories"):
+        lines.append(f"  Excluded categories: {', '.join(report['excluded_categories'])}")
+    if report.get("integrity_warning"):
+        lines.append(f"  WARNING: {report['integrity_warning']}")
+    lines.append("")
 
     m = report["matching"]
     total = sum(m.values())
@@ -238,18 +276,24 @@ def format_report(report: dict) -> str:
             marker = "  ← manual review"
         lines.append(f"  {label:20s}: {count:4d} ({pct:>4s}){marker}")
 
-    # Status
-    has_gaps = m["gap_critical"] > 0
-    unannotated = sum(1 for p in report["partials"] if not p.get("annotation"))
-    if has_gaps or unannotated > 0:
+    # Status (epistemically honest)
+    status = report.get("audit_status", "INCOMPLETE")
+    if status == "UNVERIFIABLE":
+        lines.append("\nStatus: UNVERIFIABLE (no V1 baseline — V2 encoding cannot be cross-checked)")
+    elif status == "VERIFIED":
+        lines.append("\nStatus: VERIFIED (all V1 claims matched)")
+    elif status == "PARTIAL":
+        lines.append(f"\nStatus: PARTIAL (0 gaps, {m['unmapped']} unmapped need review)")
+    else:
         reasons = []
-        if has_gaps:
+        if m["gap_critical"] > 0:
             reasons.append(f"{m['gap_critical']} gaps")
+        unannotated = sum(1 for p in report["partials"] if not p.get("annotation"))
         if unannotated:
             reasons.append(f"{unannotated} unannotated partials")
-        lines.append(f"\nStatus: NOT VERIFIED ({', '.join(reasons)})")
-    else:
-        lines.append("\nStatus: VERIFIED")
+        if m["unmapped"] > 0:
+            reasons.append(f"{m['unmapped']} unmapped")
+        lines.append(f"\nStatus: INCOMPLETE ({', '.join(reasons)})")
 
     if report["gaps"]:
         lines.append("\nGAPS (must fix):")
