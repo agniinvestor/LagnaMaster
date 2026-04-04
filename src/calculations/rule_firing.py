@@ -34,6 +34,7 @@ class FiredRule:
     predictions: list[dict] = field(default_factory=list)
     signal_group: str = ""
     health_sensitive: bool = False
+    context: dict | None = None
 
 
 @dataclass
@@ -257,7 +258,7 @@ def _planet_aspects_house(chart, planet_name: str, target_house: int) -> bool:
     return diff in _SPECIAL_ASPECTS.get(name, set())
 
 
-def _check_compound_conditions(conditions: list[dict], chart) -> tuple[bool, int]:
+def _check_compound_conditions(conditions: list[dict], chart, context: dict | None = None) -> tuple[bool, int]:
     """Evaluate a list of computable primitive conditions (AND logic).
 
     Each condition dict has a "type" key. All must be true for the rule to fire.
@@ -268,7 +269,7 @@ def _check_compound_conditions(conditions: list[dict], chart) -> tuple[bool, int
 
     matched_house = 0
 
-    for cond in conditions:
+    for idx, cond in enumerate(conditions):
         ctype = cond.get("type", "")
 
         if ctype == "planet_in_house":
@@ -553,22 +554,25 @@ def _check_compound_conditions(conditions: list[dict], chart) -> tuple[bool, int
     return True, matched_house
 
 
-def _check_rule_fires(rule, chart) -> tuple[bool, int]:
+def _check_rule_fires(rule, chart) -> tuple[bool, int, dict | None]:
     """Check if a rule's primary_condition is satisfied by this chart.
 
-    Returns (fires: bool, house: int).
+    Returns (fires: bool, house: int, context: dict | None).
     House is 0 for non-house-specific rules.
+    Context is populated only for V2 rules; legacy paths return None.
     """
     pc = rule.primary_condition
     if not pc:
-        return False, 0
+        return False, 0, None
 
     # V2 computable primitives — use conditions list if present.
     # V2 conditions is a list of dicts with "type" keys.
     # Legacy "conditions" (pre-V2) is a single dict — skip those.
     conditions = pc.get("conditions", [])
     if isinstance(conditions, list) and conditions and isinstance(conditions[0], dict) and "type" in conditions[0]:
-        return _check_compound_conditions(conditions, chart)
+        context: dict = {"conditions": {}, "aggregates": {}, "gates": {}}
+        fires, house = _check_compound_conditions(conditions, chart, context=context)
+        return fires, house, context
 
     planet = pc.get("planet", "")
     ptype = pc.get("placement_type", "")
@@ -580,7 +584,7 @@ def _check_rule_fires(rule, chart) -> tuple[bool, int]:
     # Skip compound/multi-planet rules that need conjunction detection
     # (we'll add conjunction checking later)
     if planet_norm in ("house_lord", "nodes", "general", "none", ""):
-        return False, 0
+        return False, 0, None
 
     # Handle conjunction rules (e.g., "sun_moon", "mars_jupiter")
     if "_" in planet_norm and ptype in ("conjunction_in_house", "conjunction_condition",
@@ -595,12 +599,12 @@ def _check_rule_fires(rule, chart) -> tuple[bool, int]:
                     # Check if they're in the specified house
                     target_house = pval[0] if pval else 0
                     if isinstance(target_house, int) and target_house == h1:
-                        return True, h1
+                        return True, h1, None
                     if not pval or not isinstance(pval[0] if pval else None, int):
-                        return True, h1
+                        return True, h1, None
                 else:
-                    return True, h1
-        return False, 0
+                    return True, h1, None
+        return False, 0, None
 
     # Sign placement rules
     if ptype == "sign_placement":
@@ -610,8 +614,8 @@ def _check_rule_fires(rule, chart) -> tuple[bool, int]:
             if actual_sign == target_sign.lower():
                 # Determine house for this planet
                 h = _planet_house(chart, planet_norm.title())
-                return True, h
-        return False, 0
+                return True, h, None
+        return False, 0, None
 
     # House placement rules
     if ptype == "house_placement":
@@ -619,35 +623,35 @@ def _check_rule_fires(rule, chart) -> tuple[bool, int]:
         if isinstance(target_house, int) and target_house > 0:
             actual_house = _planet_house(chart, planet_norm.title())
             if actual_house == target_house:
-                return True, target_house
-        return False, 0
+                return True, target_house, None
+        return False, 0, None
 
     # Sign condition / house condition (modifier rules)
     # These are supplementary/general rules — they modify base rules,
     # not standalone predictions. Skip for now; they'll be wired when
     # the modifier system is built.
     if ptype in ("sign_condition", "house_condition", "conjunction_condition"):
-        return False, 0
+        return False, 0, None
 
     # Yoga rules — need dedicated yoga detection logic
     if ptype in ("yoga", "special"):
-        return False, 0
+        return False, 0, None
 
     # Lagna-conditional rules (BVR)
     if ptype in ("house_placement",) and rule.lagna_scope:
         # Check if chart's lagna matches the rule's lagna_scope
         chart_lagna = chart.lagna_sign.lower()
         if chart_lagna not in rule.lagna_scope:
-            return False, 0
+            return False, 0, None
         # Lagna matches — check house placement
         target_house = pc.get("house", pval[0] if pval else 0)
         if isinstance(target_house, int):
             actual_house = _planet_house(chart, planet_norm.title())
             if actual_house == target_house:
-                return True, target_house
-        return False, 0
+                return True, target_house, None
+        return False, 0, None
 
-    return False, 0
+    return False, 0, None
 
 
 def evaluate_chart(chart) -> RuleFiringResult:
@@ -672,7 +676,7 @@ def evaluate_chart(chart) -> RuleFiringResult:
     result.total_evaluated = len(phase1b_rules)
 
     for rule in phase1b_rules:
-        fires, house = _check_rule_fires(rule, chart)
+        fires, house, ctx = _check_rule_fires(rule, chart)
         if not fires:
             # Tier 3 Item 1: audit trail for skipped rules
             reason = "condition_not_met"
@@ -708,6 +712,7 @@ def evaluate_chart(chart) -> RuleFiringResult:
             predictions=getattr(rule, "predictions", []),
             signal_group=getattr(rule, "signal_group", ""),
             health_sensitive=getattr(rule, "health_sensitive", False),
+            context=ctx,
         )
         result.fired_rules.append(fired)
 
