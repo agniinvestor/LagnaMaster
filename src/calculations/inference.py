@@ -10,6 +10,57 @@ from dataclasses import dataclass, field
 
 from src.calculations.rule_firing import evaluate_chart, FiredRule
 
+# Trace toggle — disabled by default, enable for debug/test
+TRACE_ENABLED = False
+
+
+@dataclass
+class ConditionTrace:
+    """One condition's evaluation record."""
+
+    condition_id: str
+    type: str
+    evaluated: bool
+    passed: bool
+    metadata_emitted: dict = field(default_factory=dict)
+
+
+@dataclass
+class ModifierTrace:
+    """One modifier's application record."""
+
+    effect: str
+    condition: str | list = ""
+    strength: str = "medium"
+    evaluated: bool = False
+    fired: bool | None = None
+    context_factors: dict = field(default_factory=dict)
+    weight_before: float = 0.0
+    weight_after: float = 0.0
+    magnitude_before: float = 0.0
+    magnitude_after: float = 0.0
+    direction_before: str = ""
+    direction_after: str = ""
+
+
+@dataclass
+class ExecutionTrace:
+    """Complete execution record for one rule through the pipeline."""
+
+    rule_id: str = ""
+    condition_traces: list[ConditionTrace] = field(default_factory=list)
+    condition_metadata: dict = field(default_factory=dict)
+    aggregates: dict = field(default_factory=dict)
+    modifier_traces: list[ModifierTrace] = field(default_factory=list)
+    magnitude_initial: float = 0.0
+    magnitude_final: float = 0.0
+    direction_initial: str = ""
+    direction_final: str = ""
+    gated_out: bool = False
+    gate_details: dict | None = None
+    conflict_outcome: dict | None = None
+    effective_magnitude: float = 0.0
+
 
 # Strength weights for modifier magnitude adjustment
 _STRENGTH_WEIGHTS = {"weak": 0.15, "medium": 0.30, "strong": 0.50}
@@ -54,6 +105,7 @@ class ModifiedRule:
     gate_reason: str = ""
     unevaluated_gates: list[dict] = field(default_factory=list)
     context: dict | None = None
+    trace: ExecutionTrace | None = None
 
 
 @dataclass
@@ -122,6 +174,32 @@ def apply_modifiers(
         max_pred_mag = max(p.get("magnitude", 0.5) for p in rule.predictions)
         magnitude = max_pred_mag
 
+    trace = None
+    if TRACE_ENABLED:
+        trace = ExecutionTrace(
+            rule_id=fired.rule_id,
+            magnitude_initial=magnitude,
+            direction_initial=direction,
+        )
+        # Build condition traces from context
+        if condition_context:
+            trace.condition_metadata = dict(condition_context.get("conditions", {}))
+            trace.aggregates = {
+                k: v
+                for k, v in condition_context.get("aggregates", {}).items()
+                if not isinstance(v, list)
+            }
+            for cid, cdata in condition_context.get("conditions", {}).items():
+                trace.condition_traces.append(
+                    ConditionTrace(
+                        condition_id=cid,
+                        type=cdata.get("type", ""),
+                        evaluated=True,
+                        passed=True,  # if it's in context, condition passed
+                        metadata_emitted=cdata.get("metadata", {}),
+                    )
+                )
+
     # Sort modifiers by effect order
     modifiers = sorted(
         (rule.modifiers or []),
@@ -135,15 +213,44 @@ def apply_modifiers(
         weight = _context_scaled_weight(base_weight, condition_context)
         condition = mod.get("condition", "")
 
+        # Capture before-state for trace
+        mag_before = magnitude
+        dir_before = direction
+        gate_fires = None
+
         if effect == "gates":
             if isinstance(condition, list):
                 # Structured gate — evaluate via compound conditions engine
                 from src.calculations.rule_firing import _check_compound_conditions
 
                 gate_ctx = dict(condition_context) if condition_context else None
-                fires, _ = _check_compound_conditions(condition, chart, context=gate_ctx)
-                if not fires:
+                gate_fires, _ = _check_compound_conditions(condition, chart, context=gate_ctx)
+                if not gate_fires:
                     gate_reason = f"gate failed: {condition}"
+                    if trace is not None:
+                        trace.gated_out = True
+                        trace.gate_details = {
+                            "failed_condition": str(condition),
+                            "severity": "blocking",
+                        }
+                        trace.magnitude_final = 0.0
+                        trace.direction_final = direction
+                        trace.effective_magnitude = 0.0
+                        trace.modifier_traces.append(
+                            ModifierTrace(
+                                effect=effect,
+                                condition=condition,
+                                strength=strength,
+                                evaluated=True,
+                                fired=False,
+                                magnitude_before=mag_before,
+                                magnitude_after=0.0,
+                                direction_before=dir_before,
+                                direction_after=direction,
+                                weight_before=base_weight,
+                                weight_after=base_weight,
+                            )
+                        )
                     return ModifiedRule(
                         rule_id=fired.rule_id,
                         primary_domain=getattr(rule, "primary_domain", "character"),
@@ -155,6 +262,7 @@ def apply_modifiers(
                         gate_reason=gate_reason,
                         unevaluated_gates=unevaluated_gates,
                         context=condition_context,
+                        trace=trace,
                     )
             else:
                 # String gate — not evaluable, log with severity
@@ -186,6 +294,37 @@ def apply_modifiers(
         elif effect == "qualifies":
             qualifications.append(condition if isinstance(condition, str) else str(condition))
 
+        # Record modifier trace
+        if trace is not None:
+            ctx_factors = {}
+            if condition_context and effect in ("amplifies", "attenuates"):
+                for key in CONSUMABLE_AGGREGATES:
+                    val = condition_context.get("aggregates", {}).get(key)
+                    if val is not None:
+                        ctx_factors[key] = val
+            trace.modifier_traces.append(
+                ModifierTrace(
+                    effect=effect,
+                    condition=condition,
+                    strength=strength,
+                    evaluated=isinstance(condition, list),
+                    fired=gate_fires if effect == "gates" and isinstance(condition, list) else None,
+                    context_factors=ctx_factors,
+                    weight_before=base_weight,
+                    weight_after=weight if effect in ("amplifies", "attenuates") else base_weight,
+                    magnitude_before=mag_before,
+                    magnitude_after=magnitude,
+                    direction_before=dir_before,
+                    direction_after=direction,
+                )
+            )
+
+    # Finalize trace
+    if trace is not None:
+        trace.magnitude_final = round(magnitude, 3)
+        trace.direction_final = direction
+        trace.effective_magnitude = round(magnitude * fired.confidence, 3)
+
     return ModifiedRule(
         rule_id=fired.rule_id,
         primary_domain=getattr(rule, "primary_domain", "character"),
@@ -196,6 +335,7 @@ def apply_modifiers(
         gate_reason=gate_reason,
         unevaluated_gates=unevaluated_gates,
         context=condition_context,
+        trace=trace,
     )
 
 
