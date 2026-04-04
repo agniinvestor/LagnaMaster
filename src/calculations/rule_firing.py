@@ -547,6 +547,31 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
                     if actual_dignity != target_dignity:
                         return False, 0
 
+        elif ctype == "functional_benefic":
+            from src.calculations.functional_dignity import compute_functional_classifications
+            planet_spec = cond.get("planet", "")
+            classification = cond.get("classification", "")
+            if planet_spec.startswith("lord_of_"):
+                h = int(planet_spec.split("_")[-1])
+                planet_spec = _lord_of_house(chart, h)
+            if not planet_spec or not _find_planet(chart, planet_spec.title()):
+                return False, 0
+            planet_name = planet_spec.title()
+            fc = compute_functional_classifications(chart.lagna_sign_index)
+            entry = fc.get(planet_name)
+            if not entry:
+                return False, 0
+            if classification == "benefic" and not entry.is_functional_benefic:
+                return False, 0
+            elif classification == "malefic" and not entry.is_functional_malefic:
+                return False, 0
+            elif classification == "yogakaraka" and not entry.is_yogakaraka:
+                return False, 0
+            elif classification == "maraka" and not entry.is_maraka:
+                return False, 0
+            elif classification == "badhaka" and not entry.is_badhaka:
+                return False, 0
+
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire
             return False, 0

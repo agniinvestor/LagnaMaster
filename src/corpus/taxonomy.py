@@ -85,6 +85,8 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     # Navamsa + dispositor primitives (Track 4)
     "planet_in_navamsa_sign",
     "dispositor_condition",
+    # Functional classification primitive (S316)
+    "functional_benefic",
 })
 
 VALID_MODIFIER_EFFECTS = frozenset({
