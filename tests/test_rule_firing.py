@@ -264,7 +264,10 @@ def test_planet_in_navamsa_sign():
     chart = _get_india_1947()
     # Compute Sun's navamsa to verify
     sun = _find_planet(chart, "Sun")
-    FIRE = {0, 4, 8}; EARTH = {1, 5, 9}; AIR = {2, 6, 10}; WATER = {3, 7, 11}
+    FIRE = {0, 4, 8}
+    EARTH = {1, 5, 9}
+    AIR = {2, 6, 10}
+    WATER = {3, 7, 11}  # noqa: F841
     pada = int(sun.degree_in_sign / (30.0 / 9))
     if pada >= 9:
         pada = 8
@@ -290,7 +293,10 @@ def test_planet_in_navamsa_sign_no_match():
     from src.calculations.rule_firing import _check_compound_conditions, _find_planet
     chart = _get_india_1947()
     sun = _find_planet(chart, "Sun")
-    FIRE = {0, 4, 8}; EARTH = {1, 5, 9}; AIR = {2, 6, 10}; WATER = {3, 7, 11}
+    FIRE = {0, 4, 8}
+    EARTH = {1, 5, 9}
+    AIR = {2, 6, 10}
+    WATER = {3, 7, 11}  # noqa: F841
     pada = int(sun.degree_in_sign / (30.0 / 9))
     if pada >= 9:
         pada = 8

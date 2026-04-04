@@ -9,11 +9,11 @@ from src.corpus.corpus_audit import (
     VALID_ENTITY_TARGETS,
     VALID_TIMING_TYPES,
 )
+from src.corpus.taxonomy import VALID_OUTCOME_DOMAINS as VALID_DOMAINS  # includes both legacy and primary
 
 RULES = BPHS_V2_CH13_REGISTRY.all()
 
 VALID_DIRECTIONS = {"favorable", "unfavorable", "neutral", "mixed"}
-from src.corpus.taxonomy import VALID_OUTCOME_DOMAINS as VALID_DOMAINS  # includes both legacy and primary
 
 
 def test_total_rule_count():

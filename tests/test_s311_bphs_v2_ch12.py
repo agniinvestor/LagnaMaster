@@ -15,13 +15,13 @@ from src.corpus.corpus_audit import (
     VALID_TIMING_TYPES,
     VALID_RELATIONSHIP_TYPES,
 )
+from src.corpus.taxonomy import VALID_OUTCOME_DOMAINS as VALID_DOMAINS  # includes both legacy and primary
 
 RULES = BPHS_V2_CH12_REGISTRY.all()
 
 VALID_DIRECTIONS = {"favorable", "unfavorable", "neutral", "mixed"}
 VALID_INTENSITIES = {"strong", "moderate", "weak", "conditional"}
 VALID_PHASES = {"1B_matrix", "1B_conditional", "1B_compound"}
-from src.corpus.taxonomy import VALID_OUTCOME_DOMAINS as VALID_DOMAINS  # includes both legacy and primary
 
 
 # ── Basic counts ──────────────────────────────────────────────────────────────
