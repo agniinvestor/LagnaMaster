@@ -18,11 +18,39 @@ from datetime import date
 
 from src.corpus.migration_tags import extract_claims, extract_v2_bucket
 
+# ── V1 Category Relevance Filter ─────────────────────────────────────────
+# Only these V1 categories are semantically relevant to each V2 chapter.
+# V1 rules in other categories (bhava_signification, graha_in_rashi,
+# graha_bhava, graha_phala, lagna, etc.) are cross-chapter noise that
+# was incorrectly tagged with the chapter number during legacy encoding.
+_RELEVANT_V1_CATEGORIES: dict[str, set[str]] = {
+    "Ch.12": {"1st_house_effects"},
+    "Ch.13": {"2nd_house_effects"},
+    "Ch.14": {"3rd_house_effects"},
+    "Ch.15": {"4th_house_effects"},
+    "Ch.16": {"5th_house_effects"},
+    "Ch.17": {"6th_house_effects"},
+    "Ch.18": {"7th_house_effects"},
+    "Ch.19": {"8th_house_effects"},
+    "Ch.20": {"9th_house_effects"},
+    "Ch.21": {"10th_house_effects"},
+    "Ch.22": {"11th_house_effects"},
+    "Ch.23": {"12th_house_effects"},
+    "Ch.24": {"bhava_phala"},
+    "Ch.25": set(),  # No V1 category matches upagraha effects
+    "Ch.29": set(),  # No V1 category matches pada effects
+}
+
 
 def _load_rules(source: str, chapter: str):
-    """Load all rules for a source+chapter from combined corpus."""
+    """Load all rules for a source+chapter from combined corpus.
+
+    V1 rules are filtered by category relevance to avoid cross-chapter
+    noise from legacy encoding. See _RELEVANT_V1_CATEGORIES.
+    """
     from src.corpus.combined_corpus import build_corpus
     corpus = build_corpus()
+    relevant_cats = _RELEVANT_V1_CATEGORIES.get(chapter, None)
     v1, v2 = [], []
     for r in corpus.all():
         if r.source != source or r.chapter != chapter:
@@ -30,6 +58,10 @@ def _load_rules(source: str, chapter: str):
         if r.last_modified_session >= "S310":
             v2.append(r)
         else:
+            # Filter V1 by category relevance if mapping exists
+            if relevant_cats is not None:
+                if not relevant_cats or r.category not in relevant_cats:
+                    continue
             v1.append(r)
     return v1, v2
 
