@@ -1,5 +1,6 @@
 """Tests for governance: derived house resolver, archetypes, interpretation."""
 from src.calculations.derived_house import resolve_house
+from src.calculations.interpretation import interpret
 from src.corpus.planet_archetypes import PLANET_ARCHETYPES
 
 
@@ -34,3 +35,26 @@ def test_archetype_has_nature_and_themes():
         assert "themes" in arch, f"{planet} missing themes"
         assert arch["nature"] in ("benefic", "malefic"), f"{planet} has invalid nature"
         assert len(arch["themes"]) >= 3, f"{planet} needs at least 3 themes"
+
+
+def test_interpret_basic():
+    pred = {"claim": "will be wealthy", "domain": "wealth", "direction": "favorable"}
+    ctx = {"qualifications": [], "trigger_planet": ""}
+    result = interpret(pred, ctx)
+    assert "will be wealthy" in result
+
+
+def test_interpret_with_qualifications():
+    pred = {"claim": "will be wealthy", "domain": "wealth"}
+    ctx = {"qualifications": ["more_daughters"], "trigger_planet": ""}
+    result = interpret(pred, ctx)
+    assert "qualified by" in result
+    assert "more_daughters" in result
+
+
+def test_interpret_with_planet_themes():
+    pred = {"claim": "will be wealthy", "domain": "wealth"}
+    ctx = {"qualifications": [], "trigger_planet": "Jupiter"}
+    result = interpret(pred, ctx)
+    assert "Jupiter" in result
+    assert "wisdom" in result
