@@ -77,6 +77,10 @@ class V2ChapterBuilder:
         self.session = session
         self.sloka_count = sloka_count
 
+        # Feature requirement gate — blocks encoding if chapter needs unimplemented primitives
+        from src.corpus.feature_registry import enforce_chapter_requirements
+        enforce_chapter_requirements(chapter)
+
         # T1-8: Source text canonicalization
         from src.corpus.source_texts import VALID_SOURCE_NAMES, get_source_info
         if source not in VALID_SOURCE_NAMES:
