@@ -167,9 +167,9 @@ _up(2, "any_planet", "occupies", "upa_pada_h2_debilitated_or_malefic_wife_destru
      "Planet in 2nd from Upa Pada in debilitation or conjunct malefic: destruction of wife.",
      "Santhanam: The condition is: any planet in the 2nd from UP that is (a) in debilitation sign/Amsa, or (b) conjunct a debilitated planet, or (c) conjunct a malefic. Not simply 'malefic in 2nd' — even a benefic in debilitation triggers this.",
      entity_target="spouse",
-     extra_conditions=[
-         {"type": "unstructured",
-          "description": "planet_debilitated_or_conjunct_malefic: occupant must be in debilitation sign/Amsa, or conjunct a debilitated planet, or conjunct a malefic"},
+     modifiers=[
+         {"condition": "planet_debilitated_or_conjunct_malefic", "effect": "gates",
+          "target": "rule", "strength": "strong", "scope": "local"},
      ])
 
 # Exalted planet in 2nd from UP + aspected → many charming virtuous wives
@@ -238,9 +238,9 @@ _up(2, "any_planet", "occupies", "upa_pada_lord_exalted_noble_wife",
      "Ch.30 v.13-15",
      "Lord of Upapada or constant significator of wife in exaltation: wife will be from noble family.",
      "Santhanam: If the lord of Upapada or the constant significator of wife is in exaltation, the wife will be from a noble family. Reverse if debilitated.",
-     extra_conditions=[
-         {"type": "unstructured",
-          "description": "lord_of_upapada_or_venus_must_be_exalted: lord of Upapada or Venus (constant significator of wife) must be in exaltation"},
+     modifiers=[
+         {"condition": "lord_of_upapada_or_venus_must_be_exalted", "effect": "gates",
+          "target": "rule", "strength": "strong", "scope": "local"},
      ],
      entity_target="spouse")
 
@@ -252,9 +252,9 @@ _up(2, "any_planet", "occupies", "upa_pada_lord_debilitated_low_wife",
      "Ch.30 v.13-15",
      "Lord of Upapada or significator of wife debilitated: wife from low family (contrary of exaltation rule).",
      "Santhanam: Contrary — if debilitated, reverse applies.",
-     extra_conditions=[
-         {"type": "unstructured",
-          "description": "lord_of_upapada_or_venus_must_be_debilitated: lord of Upapada or Venus (constant significator of wife) must be in debilitation"},
+     modifiers=[
+         {"condition": "lord_of_upapada_or_venus_must_be_debilitated", "effect": "gates",
+          "target": "rule", "strength": "strong", "scope": "local"},
      ],
      entity_target="spouse",
      rule_rel={"type": "contrary_mirror", "related_rules": ["BPHS3009"]})

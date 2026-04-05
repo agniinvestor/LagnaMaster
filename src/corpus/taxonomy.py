@@ -99,8 +99,6 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "lord_of_derived_house",
     # S316 batch 4 — multi-step derived chain
     "planet_from_derived_lord",
-    # Non-computable placeholder for conditions that cannot yet be structured
-    "unstructured",
 })
 
 VALID_MODIFIER_EFFECTS = frozenset({
