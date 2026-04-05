@@ -676,7 +676,10 @@ b.add(
 # --- C30: Strong planet in Pada and 7th → marital happiness ---
 
 b.add(
-    conditions=[],  # BLOCKED: needs planet_at_derived_point with dignity filter (1 rule)
+    conditions=[
+        {"type": "planet_at_derived_point", "derivation": "arudha_pada", "base_house": 1, "offset": 1, "dignity": "strong"},
+        {"type": "planet_at_derived_point", "derivation": "arudha_pada", "base_house": 1, "offset": 7, "dignity": "strong"},
+    ],
     signal_group="pada_h1_h7_strong_marital_happiness",
     direction="favorable", intensity="moderate",
     primary_domain="relationships",
