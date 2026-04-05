@@ -1,7 +1,20 @@
 # Future Development Inventory
 
 **Created:** S316 (2026-04-05)
+**Last updated:** S316 end-of-session
 **Purpose:** Everything planned but not yet shipped, organized by priority tier.
+
+## S316 Closure Status
+
+| Metric | Value |
+|--------|-------|
+| V2 rules computable | 599/600 (99.8%) |
+| Implemented features | 34 |
+| Pending features | 1 (`planet_in_house_from_aspects`) |
+| Blocked rules | 1 (BPHS2936 — needs planet_at_derived_point with dignity filter) |
+| String modifier conditions | 146 (need per-rule semantic review) |
+| Tests | 14,605 |
+| Session commits | 27 |
 
 ---
 
