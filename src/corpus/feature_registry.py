@@ -51,11 +51,13 @@ IMPLEMENTED_FEATURES: frozenset[str] = frozenset({
     "derived_house_sign",
     "lord_of_derived_house",
     "planet_from_derived_lord",
+    # S316 batch 5
+    "planet_at_derived_point",
+    "planet_in_house_from_aspects",
 })
 
 # Features NOT YET implemented (add trigger + dependency)
 PENDING_FEATURES: dict[str, str] = {
-    "planet_in_house_from_aspects": "Aspect mode for planet_in_house_from primitive",
 }
 
 # Chapter → required features (only chapters with non-standard requirements)

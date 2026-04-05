@@ -479,10 +479,17 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             if not valid_candidates:
                 return False, 0
 
-            hit = any(
-                _planet_house(chart, c) == target_house
-                for c in valid_candidates
-            )
+            mode = cond.get("mode", "occupies")
+            if mode == "aspects":
+                hit = any(
+                    _planet_aspects_house(chart, c, target_house)
+                    for c in valid_candidates
+                )
+            else:
+                hit = any(
+                    _planet_house(chart, c) == target_house
+                    for c in valid_candidates
+                )
             if not hit:
                 return False, 0
             matched_house = matched_house or target_house
@@ -892,6 +899,46 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             if actual_house != check_house:
                 return False, 0
             matched_house = matched_house or check_house
+
+        elif ctype == "planet_at_derived_point":
+            from src.calculations.argala import compute_arudha
+            base_house = cond.get("base_house", 1)
+            offset = cond.get("offset", 1)
+            dignity_req = cond.get("dignity", "any")
+
+            derived_si = compute_arudha(chart, base_house)
+            target_si = (derived_si + offset - 1) % 12
+
+            # Find ALL planets at this sign
+            planets_at = [
+                name for name, pos in chart.planets.items()
+                if pos.sign_index == target_si
+            ]
+            if not planets_at:
+                return False, 0
+
+            if dignity_req == "any":
+                pass  # any planet present is enough
+            elif dignity_req == "strong":
+                strong = [
+                    p for p in planets_at
+                    if _planet_dignity_state(chart, p) in (
+                        "exalted", "own_sign", "moolatrikona",
+                    )
+                ]
+                if not strong:
+                    return False, 0
+            elif dignity_req == "weak":
+                weak = [
+                    p for p in planets_at
+                    if _planet_dignity_state(chart, p) in ("debilitated",)
+                ]
+                if not weak:
+                    return False, 0
+
+            matched_house = matched_house or (
+                (target_si - chart.lagna_sign_index) % 12 + 1
+            )
 
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire

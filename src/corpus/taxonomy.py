@@ -99,6 +99,8 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "lord_of_derived_house",
     # S316 batch 4 — multi-step derived chain
     "planet_from_derived_lord",
+    # S316 batch 5 — derived point with dignity filter
+    "planet_at_derived_point",
 })
 
 VALID_MODIFIER_EFFECTS = frozenset({

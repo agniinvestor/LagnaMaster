@@ -78,9 +78,9 @@ _pada(11, "any_benefic", "occupies", "pada_h11_benefic_occ_virtuous_wealth",
       modifiers=[
           {"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "strong"}], "effect": "amplifies",
            "target": "prediction", "strength": "strong", "scope": "local"},
-          {"condition": "12th_from_pada_unaspected", "effect": "amplifies",
+          {"condition": [{"type": "planet_not_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "amplifies",
            "target": "prediction", "strength": "medium", "scope": "local"},
-          {"condition": "12th_from_pada_has_malefic", "effect": "attenuates",
+          {"condition": [{"type": "planet_in_derived_house", "derivation": "arudha_pada", "base_house": 1, "offset": 12, "planet": "any_malefic", "mode": "occupies"}], "effect": "attenuates",
            "target": "prediction", "strength": "strong", "scope": "local"},
       ],
       rule_rel={"type": "alternative", "related_rules": ["BPHS2901"]})
@@ -97,9 +97,9 @@ _pada(11, "any_benefic", "aspects", "pada_h11_benefic_asp_virtuous_wealth",
       modifiers=[
           {"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "strong"}], "effect": "amplifies",
            "target": "prediction", "strength": "strong", "scope": "local"},
-          {"condition": "12th_from_pada_unaspected", "effect": "amplifies",
+          {"condition": [{"type": "planet_not_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "amplifies",
            "target": "prediction", "strength": "medium", "scope": "local"},
-          {"condition": "12th_from_pada_has_malefic", "effect": "attenuates",
+          {"condition": [{"type": "planet_in_derived_house", "derivation": "arudha_pada", "base_house": 1, "offset": 12, "planet": "any_malefic", "mode": "occupies"}], "effect": "attenuates",
            "target": "prediction", "strength": "strong", "scope": "local"},
       ],
       rule_rel={"type": "alternative", "related_rules": ["BPHS2900"]})
@@ -118,7 +118,7 @@ _pada(11, "any_malefic", "occupies", "pada_h11_malefic_occ_questionable_wealth",
       modifiers=[
           {"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "strong"}], "effect": "amplifies",
            "target": "prediction", "strength": "strong", "scope": "local"},
-          {"condition": "12th_from_pada_has_malefic", "effect": "attenuates",
+          {"condition": [{"type": "planet_in_derived_house", "derivation": "arudha_pada", "base_house": 1, "offset": 12, "planet": "any_malefic", "mode": "occupies"}], "effect": "attenuates",
            "target": "prediction", "strength": "strong", "scope": "local"},
       ],
       rule_rel={"type": "alternative", "related_rules": ["BPHS2903"]})

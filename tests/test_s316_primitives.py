@@ -367,3 +367,60 @@ def test_planet_from_derived_lord():
               "base_house": 12, "lord_offset": 7, "planet_offset": 2, "planet": "Rahu"}]
     fires, _ = _check_compound_conditions(conds, chart)
     assert isinstance(fires, bool)  # verify no crash
+
+
+# --- planet_at_derived_point ---
+
+def test_planet_at_derived_point():
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Mars": _P(0, name="Mars"),      # Aries (lagna sign)
+        "Jupiter": _P(3, name="Jupiter"), # Cancer = exalted
+    })
+    # Arudha of 1: Mars in Aries, dist=1, arudha=Aries, exception→Capricorn(9)
+    # Check if strong planet at Capricorn — no planets there → False
+    conds = [{"type": "planet_at_derived_point", "derivation": "arudha_pada",
+              "base_house": 1, "offset": 1, "dignity": "strong"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert isinstance(fires, bool)
+
+
+def test_planet_at_derived_point_any_dignity():
+    """Any planet at the derived point (no dignity filter)."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Mars": _P(2, name="Mars"),      # Gemini
+        "Jupiter": _P(4, name="Jupiter"), # Leo
+    })
+    # Arudha of 1: Mars in Gemini (sign 2), dist=(2-0)%12+1=3, arudha=(2+3-1)%12=4 (Leo)
+    # Leo != Aries, Leo != Libra -> no exception -> arudha=Leo(4)
+    # offset=1 -> target=Leo(4). Jupiter is at Leo(4) -> True
+    conds = [{"type": "planet_at_derived_point", "derivation": "arudha_pada",
+              "base_house": 1, "offset": 1, "dignity": "any"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+# --- planet_in_house_from aspects mode ---
+
+def test_planet_in_house_from_aspects():
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Jupiter": _P(3, name="Jupiter"),  # Cancer = H4
+    })
+    # Jupiter special aspects: 5th and 9th from itself + 7th.
+    # From H4: aspects H8(5th) and H12(9th) and H10(7th)
+    conds = [{"type": "planet_in_house_from", "planet": "Jupiter", "reference": "Jupiter",
+              "offset": 7, "mode": "aspects"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    # 7th from Jupiter(H4) = H10. Jupiter aspects its 7th -> True
+    assert fires is True
+
+
+def test_planet_in_house_from_aspects_no_aspect():
+    """Mars does not aspect 3rd from itself (only 4th, 7th, 8th)."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Mars": _P(0, name="Mars"),  # Aries = H1
+    })
+    conds = [{"type": "planet_in_house_from", "planet": "Mars", "reference": "Mars",
+              "offset": 3, "mode": "aspects"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    # 3rd from Mars(H1) = H3. Mars aspects 4th(H4), 7th(H7), 8th(H8) — not H3
+    assert fires is False
