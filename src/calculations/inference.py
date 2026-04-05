@@ -434,7 +434,7 @@ def analyze_chart(chart, rules) -> ChartAnalysis:
         rule = rule_lookup.get(fired.rule_id)
         if not rule:
             continue
-        mr = apply_modifiers(fired, rule)
+        mr = apply_modifiers(fired, rule, chart=chart, condition_context=fired.context)
         if mr.gated_out:
             gated += 1
         modified.append(mr)
