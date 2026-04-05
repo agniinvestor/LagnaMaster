@@ -208,7 +208,7 @@ def score_charts(fixtures: list[dict], verbose: bool = True) -> list[dict[int, f
         try:
             chart = _MockChart.from_fixture(d)
             results = score_all_axes(chart)
-            scores = {h: r.final_score for h, r in results.items()}
+            scores = dict(results.d1.scores)  # D1 axis house scores
         except Exception:
             errors += 1
             scores = {}
