@@ -131,7 +131,7 @@ b.add(
     ),
     description="7th lord exalted + ascendant lord strong in 7th with benefic: spouse endowed with seven principal virtues, expanding dynasty by sons and grandsons.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "benefic_also_in_7th", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_in_house", "planet": "any_benefic", "house": 7}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ═══ v.17: Loss of spouse (early death) ══════════════════════════════════════
@@ -147,7 +147,7 @@ b.add(
     commentary_context="Santhanam: If the 7th lord is in fall, the native's wife will be destroyed (i.e. she will die early). The placement in 6th/8th/12th compounds this.",
     description="7th lord devoid of strength in 6th/8th/12th or if 7th lord is in fall: the native's wife will be destroyed (i.e. she will die early).",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "7th_lord_in_fall_compounds_dusthana_placement", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_dignity", "planet": "lord_of_7", "dignity": "debilitated"}], "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ═══ v.22-34: TIMING OF MARRIAGE — each age as its own rule ══════════════════
@@ -377,7 +377,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Moon", "house": 7},
       verse_ref="Ch.18 v.18",
       commentary_context="Santhanam: Moon in 7th + 7th lord in 12th + Venus (Karaka) bereft of strength = no marital happiness. Moon increasing would stall adversity.",
       description="Moon in 7th + 7th lord in 12th + Venus weak: not endowed with marital happiness.",
-      modifiers=[{"condition": "venus_bereft_of_strength", "effect": "attenuates", "target": "prediction", "strength": "medium", "scope": "local"}])
+      modifiers=[{"condition": [{"type": "planet_dignity", "planet": "Venus", "dignity": "debilitated"}], "effect": "attenuates", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # ═══ v.19-21: Plurality of wives ══════════════════════════════════════════════
 b.add(conditions=[{"type": "planet_dignity", "planet": "lord_of_7", "dignity": "debilitated"}],

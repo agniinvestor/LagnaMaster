@@ -168,7 +168,7 @@ _up(2, "any_planet", "occupies", "upa_pada_h2_debilitated_or_malefic_wife_destru
      "Santhanam: The condition is: any planet in the 2nd from UP that is (a) in debilitation sign/Amsa, or (b) conjunct a debilitated planet, or (c) conjunct a malefic. Not simply 'malefic in 2nd' — even a benefic in debilitation triggers this.",
      entity_target="spouse",
      modifiers=[
-         {"condition": "planet_debilitated_or_conjunct_malefic", "effect": "gates",
+         {"condition": [{"type": "or_group", "alternatives": [{"type": "planet_dignity", "planet": "trigger", "dignity": "debilitated"}, {"type": "planets_conjunct", "planets": ["trigger", "any_malefic"]}]}], "effect": "gates",
           "target": "rule", "strength": "strong", "scope": "local"},
      ])
 
@@ -239,7 +239,7 @@ _up(2, "any_planet", "occupies", "upa_pada_lord_exalted_noble_wife",
      "Lord of Upapada or constant significator of wife in exaltation: wife will be from noble family.",
      "Santhanam: If the lord of Upapada or the constant significator of wife is in exaltation, the wife will be from a noble family. Reverse if debilitated.",
      modifiers=[
-         {"condition": "lord_of_upapada_or_venus_must_be_exalted", "effect": "gates",
+         {"condition": [{"type": "or_group", "alternatives": [{"type": "lord_of_derived_house", "derivation": "arudha_pada", "base_house": 12, "offset": 1, "lord_state": "exalted"}, {"type": "planet_dignity", "planet": "Venus", "dignity": "exalted"}]}], "effect": "gates",
           "target": "rule", "strength": "strong", "scope": "local"},
      ],
      entity_target="spouse")
@@ -253,7 +253,7 @@ _up(2, "any_planet", "occupies", "upa_pada_lord_debilitated_low_wife",
      "Lord of Upapada or significator of wife debilitated: wife from low family (contrary of exaltation rule).",
      "Santhanam: Contrary — if debilitated, reverse applies.",
      modifiers=[
-         {"condition": "lord_of_upapada_or_venus_must_be_debilitated", "effect": "gates",
+         {"condition": [{"type": "or_group", "alternatives": [{"type": "lord_of_derived_house", "derivation": "arudha_pada", "base_house": 12, "offset": 1, "lord_state": "debilitated"}, {"type": "planet_dignity", "planet": "Venus", "dignity": "debilitated"}]}], "effect": "gates",
           "target": "rule", "strength": "strong", "scope": "local"},
      ],
      entity_target="spouse",

@@ -418,7 +418,7 @@ b.add(
     ),
     concordance_texts=[],
     modifiers=[
-        {"condition": "ascendant_lord_with_venus", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
+        {"condition": [{"type": "planets_conjunct", "planets": ["lord_of_1", "Venus"]}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
 )
 
@@ -537,7 +537,7 @@ b.add(
     ),
     concordance_texts=[],
     prediction_type="trait",
-    modifiers=[{"condition": "5th_lord_conjunct_mars_lose_children_as_born", "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planets_conjunct", "planets": ["lord_of_5", "Mars"]}], "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ═══ v.6: Saturn+Mercury in 5th → one child only ═════════════════════════════
@@ -585,7 +585,7 @@ b.add(
         "this Yoga."
     ),
     description="Moon in 8th from ascendant + Jupiter in 8th from Moon (= house 3): native born of other's loins (illegitimate).",
-    modifiers=[{"condition": "malefic_aspect_or_association_essential", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}])
+    modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "any_malefic", "house": "self"}], "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}])
 
 # ═══ v.17: Mean deeds — 3-4 malefics in 5th ══════════════════════════════════
 b.add(

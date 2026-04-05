@@ -166,7 +166,7 @@ b.add(
     verse_ref="Ch.24 v.7",
     description="Lagna lord in 7th as malefic: wife will not live long.",
     commentary_context="Santhanam: If the ascendant lord is a malefic and be in the 7th, the native's wife will not live long. If the planet in question be a benefic, one will wander aimlessly, face penury and be dejected. He will alternatively become a king (if the said planet is strong).",
-    modifiers=[{"condition": "planet_is_malefic", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_nature", "planet": "trigger", "nature": "malefic"}], "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
     concordance_texts=["Saravali"],
 )
 
@@ -183,7 +183,7 @@ b.add(
     verse_ref="Ch.24 v.7",
     description="Lagna lord in 7th as benefic: wander aimlessly, face penury and be dejected.",
     commentary_context="Santhanam: If the planet in question be a benefic, one will wander aimlessly, face penury and be dejected. He will alternatively become a king (if the said planet is strong). The strong-planet exception overrides.",
-    modifiers=[{"condition": "planet_is_benefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_nature", "planet": "trigger", "nature": "benefic"}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS2407"]},
 )
 
@@ -455,7 +455,7 @@ b.add(
     description="2nd lord in 7th: addicted to others' wives, be a doctor. If malefic related, questionable character, wife also.",
     commentary_context="Santhanam: The 2nd lord in the 7th house and related to a dire malefic will render the mother of the native being of questionable character. However, the 4th house and its lord deserve a special attention in the context of mother's disposition.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "malefic_conjunction_or_aspect", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "any_malefic", "house": "self"}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 20: 2nd lord in 8th house ───────────────────────────────────────
@@ -760,7 +760,7 @@ b.add(
     description="3rd lord in 12th: spend on evil deeds, have a wicked father, be fortunate through a female (or wife).",
     commentary_context="Santhanam: The 3rd lord going to the 12th will bestow every happiness in life. Yet the native will feel highly miserable. This view is held by Ramadayalu. If Mars also joins the said 3rd lord, sustenance of co-born will be doubtful.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "mars_conjunct_3rd_lord_in_12th_coborn_sustenance_doubtful", "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planets_conjunct", "planets": ["Mars", "lord_of_3"]}], "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 
@@ -924,7 +924,7 @@ b.add(
     description="4th lord in 10th: enjoy royal honours, be an alchemist, extremely pleased, enjoy all pleasures, conquer five senses.",
     commentary_context="Santhanam: One will be professionally happy and prosperous with the 4th lord in the 10th house. He will have abundant self-made properties. He will, however, lack maternal happiness if the 4th lord in the said house is not happily placed.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "4th_lord_not_happily_placed_in_10th_lacks_maternal_happiness", "effect": "negates", "target": "prediction", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_dignity", "planet": "lord_of_4", "dignity": "weak"}], "effect": "negates", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 47: 4th lord in 11th house ──────────────────────────────────────

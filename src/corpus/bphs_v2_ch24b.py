@@ -204,7 +204,7 @@ b.add(
     description="5th lord in 10th: enjoy a Rajayoga and various pleasures, be very famous.",
     commentary_context="Santhanam: For enjoying a superior degree of material benefits like wealth, position, fame etc. the 5th lord is the best placed in the 10th house than elsewhere. This one position with sterling qualities will equal many Rajayogas. It is a prerequisite of course that in such a placement the 5th lord is preferably with exaltation or such other dignities. If he is placed in an enemy's house or such other afflictions tormenting him, he will prove rather adverse than a Rajayoga maker.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "if_in_enemy_house_or_afflicted_proves_adverse_not_rajayoga", "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_dignity", "planet": "lord_of_5", "dignity": "weak"}], "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 59: 5th lord in 11th house ──────────────────────────────────────
@@ -783,7 +783,7 @@ b.add(
     description="8th lord in 8th: longlived. If the said planet is weak, medium longevity; will be a thief, blameworthy, blame others.",
     commentary_context="Santhanam: In remaining in the 8th itself, the 8th lord should be quite strong in Shadbala, so the native will enjoy full span of life. If he is bereft of strength, the native will not enjoy full span of life. The 8th house in occupation by its own lord will give a spouse with questionable character. However she will be a source of financial help to the native by her own earnings or inheritance.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "8th_lord_weak_in_shadbala_reduces_to_medium_longevity", "effect": "attenuates", "target": "prediction", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_dignity", "planet": "lord_of_8", "dignity": "weak"}], "effect": "attenuates", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 93: 8th lord in 9th house ───────────────────────────────────────
@@ -815,7 +815,7 @@ b.add(
     verse_ref="Ch.24 v.94",
     description="8th lord in 10th: devoid of paternal bliss, be a talebearer, bereft of livelihood. If benefic aspect, evils will not mature.",
     commentary_context="Santhanam: There is a school of thought to say that the 8th lord occupying the 9th house will cause the deaths of parents right in the native's boyhood. Apparently one will not enjoy parental happiness for a long duration. This placement of the 8th lord in the 10th will produce all kinds of miseries in livelihood, fortunes, fame, properties and the like. According to Maharshi Parasara, if the 8th lord in the 10th is (well) related to a benefic, no evils will come to pass.",
-    modifiers=[{"condition": "benefic_aspect_on_8th_lord_in_10th_prevents_evils_from_maturing", "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "negates", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 95: 8th lord in 11th house ──────────────────────────────────────
@@ -832,7 +832,7 @@ b.add(
     description="8th lord in 11th with malefic: devoid of wealth, miserable in boyhood but happy later, longlived.",
     commentary_context="Santhanam: The 11th house will, unless related to a malefic, particularly by conjunction, will not deprive the native of financial benefits. If he is alone in the 11th, he will not prove that bad in this respect. Moreover, for Taurus ascendant, Jupiter in the 11th is not baneful. And for Scorpio ascendant, Mercury in the 11th will prove a highly favourable bargain in the matter of wealth, fame, knowledge etc.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "8th_lord_conjunct_malefic_in_11th_deprivation_of_wealth_amplified", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planets_conjunct", "planets": ["lord_of_8", "any_malefic"]}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 96: 8th lord in 12th house ──────────────────────────────────────

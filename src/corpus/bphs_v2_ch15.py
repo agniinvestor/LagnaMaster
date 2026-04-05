@@ -256,7 +256,7 @@ b.add(
         "come to pass."
     ),
     modifiers=[
-        {"condition": "ascendant_lord_is_benefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
+        {"condition": [{"type": "planet_nature", "planet": "lord_of_1", "nature": "benefic"}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
         {"condition": [{"type": "planet_in_house", "planet": "Venus", "house": [11, 12]}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
     concordance_texts=[],

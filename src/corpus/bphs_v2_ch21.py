@@ -230,7 +230,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 11, "house": 10}],
       verse_ref="Ch.21 v.20",
       commentary_context="Santhanam: Second fame yoga. 11th lord in 10th + 10th lord strong + Jupiter aspect = recognition through professional achievement.",
       description="11th lord in 10th + 10th lord strong + aspected by Jupiter: fame.",
-      modifiers=[{"condition": "h10_lord_strong_aspected_by_jupiter", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}])
+      modifiers=[{"condition": [{"type": "planet_dignity", "planet": "lord_of_10", "dignity": "strong"}, {"type": "planet_aspecting", "planet": "Jupiter", "house": "self"}], "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}])
 
 # ═══ v.21: Fame — 10th lord in 9th ═══════════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 10, "house": 9},

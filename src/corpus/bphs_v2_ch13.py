@@ -612,8 +612,8 @@ b.add(
         "pass."
     ),
     modifiers=[
-        {"condition": "saturn_or_mercury_associated", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
-        {"condition": "jupiter_afflicted_in_connection", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
+        {"condition": [{"type": "or_group", "alternatives": [{"type": "planets_conjunct", "planets": ["trigger", "Saturn"]}, {"type": "planets_conjunct", "planets": ["trigger", "Mercury"]}]}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
+        {"condition": [{"type": "planets_conjunct", "planets": ["Jupiter", "any_malefic"]}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
     ],
     tags=["malefic", "h2", "untruth", "windy_disease", "gastric"],
     prediction_type="trait",
@@ -712,6 +712,6 @@ b.add(
     verse_ref="Ch.13 v.13",
     commentary_context="Santhanam: If Jupiter is in affliction so related, gastric troubles will come to pass.",
     description="Jupiter in 2nd in affliction: gastric troubles.",
-    modifiers=[{"condition": "jupiter_afflicted", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}])
+    modifiers=[{"condition": [{"type": "planets_conjunct", "planets": ["Jupiter", "any_malefic"]}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}])
 
 BPHS_V2_CH13_REGISTRY = b.build()
