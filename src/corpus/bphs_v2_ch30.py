@@ -239,7 +239,7 @@ _up(2, "any_planet", "occupies", "upa_pada_lord_exalted_noble_wife",
      "Lord of Upapada or constant significator of wife in exaltation: wife will be from noble family.",
      "Santhanam: If the lord of Upapada or the constant significator of wife is in exaltation, the wife will be from a noble family. Reverse if debilitated.",
      modifiers=[
-         {"condition": "lord_or_venus_must_be_exalted", "effect": "gates",
+         {"condition": "lord_of_upapada_or_venus_must_be_exalted", "effect": "gates",
           "target": "rule", "strength": "strong", "scope": "local"},
      ],
      entity_target="spouse")
@@ -253,7 +253,7 @@ _up(2, "any_planet", "occupies", "upa_pada_lord_debilitated_low_wife",
      "Lord of Upapada or significator of wife debilitated: wife from low family (contrary of exaltation rule).",
      "Santhanam: Contrary — if debilitated, reverse applies.",
      modifiers=[
-         {"condition": "lord_or_venus_must_be_debilitated", "effect": "gates",
+         {"condition": "lord_of_upapada_or_venus_must_be_debilitated", "effect": "gates",
           "target": "rule", "strength": "strong", "scope": "local"},
      ],
      entity_target="spouse",

@@ -28,7 +28,8 @@ def classify_modifier(*, modifier: dict, commentary: str) -> dict:
 
     Returns dict with 'type', 'confidence', 'evidence'.
     """
-    cond_text = modifier.get("condition", "").lower()
+    raw_cond = modifier.get("condition", "")
+    cond_text = str(raw_cond).lower() if not isinstance(raw_cond, list) else ""
     comm_lower = commentary.lower()
 
     # High confidence: "must", "required", "necessary" in modifier condition text
@@ -211,10 +212,11 @@ def main():
         results = audit_registry(registry, ch_path.stem)
         all_results.extend(results)
 
+    high = sum(1 for r in all_results for f in r["flags"] if f["confidence"] == "high")
+
     if args.json:
         print(json.dumps(all_results, indent=2))
     else:
-        high = sum(1 for r in all_results for f in r["flags"] if f["confidence"] == "high")
         medium = sum(1 for r in all_results for f in r["flags"] if f["confidence"] == "medium")
         low = sum(1 for r in all_results for f in r["flags"] if f["confidence"] == "low")
         print(f"Audit complete: {len(all_results)} rules flagged")
