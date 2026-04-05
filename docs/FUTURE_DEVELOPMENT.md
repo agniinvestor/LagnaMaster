@@ -1,20 +1,26 @@
 # Future Development Inventory
 
 **Created:** S316 (2026-04-05)
-**Last updated:** S316 end-of-session
+**Last updated:** S316 final
 **Purpose:** Everything planned but not yet shipped, organized by priority tier.
 
-## S316 Closure Status
+## S316 Final State
 
 | Metric | Value |
 |--------|-------|
-| V2 rules computable | 599/600 (99.8%) |
-| Implemented features | 34 |
-| Pending features | 1 (`planet_in_house_from_aspects`) |
-| Blocked rules | 1 (BPHS2936 — needs planet_at_derived_point with dignity filter) |
-| String modifier conditions | 146 (need per-rule semantic review) |
-| Tests | 14,605 |
-| Session commits | 27 |
+| V2 rules computable | 600/600 (100%) |
+| Implemented features | 45 |
+| Pending features | 0 |
+| String modifier conditions | 191 (49 V2, 142 V1) |
+| Structured modifier conditions | 419 |
+| Tests | 14,636 |
+| Session commits | 39 |
+
+## Paradigm Shift (Discovered S316)
+
+OB-3 rerun: 23 rules gave ρ=0.44, 600 rules gave ρ=0.46 (+0.016). Marginal utility of encoding is near zero for signal. All future gains from: weighting, interactions, timing, better labels.
+
+**New roadmap:** `docs/superpowers/specs/2026-04-05-revised-roadmap-design.md`
 
 ---
 
