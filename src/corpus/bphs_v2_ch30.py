@@ -183,7 +183,7 @@ _up(2, "any_planet", "occupies", "upa_pada_h2_exalted_occ_many_wives",
      modifiers=[
          {"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "exalted"}], "effect": "gates",
           "target": "rule", "strength": "strong", "scope": "local"},
-         {"condition": "aspected_by_another_planet", "effect": "gates",
+         {"condition": [{"type": "planet_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "gates",
           "target": "rule", "strength": "medium", "scope": "local"},
      ])
 

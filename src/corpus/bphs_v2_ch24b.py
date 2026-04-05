@@ -766,7 +766,7 @@ b.add(
     description="8th lord in 7th: two wives; if conjunct malefic, downfall in business (or livelihood).",
     commentary_context="Santhanam: The 7th house being occupied by the 8th lord is a forerunner of difficulties in married life. There will be want of understanding between the native and his spouse. The constitution of the spouse will be quite weak and she will always be subjected to uncertainties or dangers. Outwardly the native may pose to be God-fearing, but he will not be sincerely devoted to the Almighty. He will be an expert in stealing others' things.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "malefic_conjunct", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planets_conjunct", "planets": ["trigger", "any_malefic"]}], "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 # ── Sloka 92: 8th lord in 8th house ───────────────────────────────────────
@@ -848,7 +848,7 @@ b.add(
     verse_ref="Ch.24 v.96",
     description="8th lord in 12th: spend on evil deeds, incur a short life. If additionally with malefic, more so.",
     commentary_context="Santhanam: No separate note. The double 12th (loss) from the 8th (longevity) creates the worst conditions for lifespan and moral conduct.",
-    modifiers=[{"condition": "additionally_with_malefic", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planets_conjunct", "planets": ["trigger", "any_malefic"]}], "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}],
 )
 
 

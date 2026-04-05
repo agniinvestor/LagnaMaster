@@ -257,7 +257,7 @@ b.add(
     ),
     modifiers=[
         {"condition": "ascendant_lord_is_benefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
-        {"condition": "venus_in_12th_or_11th", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
+        {"condition": [{"type": "planet_in_house", "planet": "Venus", "house": [11, 12]}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
     concordance_texts=[],
     rule_relationship={"type": "addition", "related_rules": ["BPHS1500"]},

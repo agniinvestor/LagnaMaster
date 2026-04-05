@@ -145,7 +145,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Jupiter", "house": 12}]
       verse_ref="Ch.21 v.12",
       commentary_context="Santhanam: 'Gnan' = sacred knowledge from meditation/philosophy. Gnana yoga taught by Jupiter+Venus in Pisces. The ascendant lord + exalted Moon renders mind fertile for self-knowledge. Material wealth comes as by-product of spiritual attainment.",
       description="Jupiter in Pisces + Venus + strong ascendant lord + Moon exalted: Gnana Yoga — learned, wealthy.",
-      modifiers=[{"condition": "jupiter_in_pisces", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"},
+      modifiers=[{"condition": [{"type": "planet_in_sign", "planet": "Jupiter", "sign": "pisces"}], "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"},
                  {"condition": "venus_conjunct_asc_lord_strong_moon_exalted", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}])
 
 # ═══ v.13: Precious stones ═══════════════════════════════════════════════════
@@ -187,7 +187,7 @@ b.add(conditions=[{"type": "planet_in_house", "planet": "Saturn", "house": 10}],
       verse_ref="Ch.21 v.16",
       commentary_context="No separate note. Saturn + debilitated planet + Navamsa malefic = triple block on dharmic professional conduct.",
       description="Saturn in 10th + debilitated planet + Navamsa ascendant with malefic: bereft of virtuous acts.",
-      modifiers=[{"condition": "conjunct_debilitated_planet", "effect": "negates", "target": "prediction", "strength": "medium", "scope": "local"},
+      modifiers=[{"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "debilitated"}], "effect": "negates", "target": "prediction", "strength": "medium", "scope": "local"},
                  {"condition": "navamsa_ascendant_with_malefic", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # ═══ v.17: Bad acts — 8th-10th exchange ══════════════════════════════════════

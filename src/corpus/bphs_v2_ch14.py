@@ -176,7 +176,7 @@ b.add(
         "Mars or 3rd lord in angle/trine/exaltation/friendly: happiness for coborn."
     ),
     rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS1404"]},
-    modifiers=[{"condition": "in_exaltation_or_friendly", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "strong"}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ═══ v.7-11: Number of siblings (complex) ════════════════════════════════════

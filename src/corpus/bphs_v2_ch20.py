@@ -63,7 +63,7 @@ b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": [1, 4, 7, 10]
       direction="favorable", intensity="strong", primary_domain="career",
       predictions=[{"entity": "father", "claim": "father_like_king_with_conveyances", "domain": "career", "direction": "favorable", "magnitude": 0.7}],
       verse_ref="Ch.20 v.6", commentary_context="No separate note. Kendra + Jupiter aspect = directional strength + benefic support.", description="9th lord in angle in aspect to Jupiter: father will be a king, endowed with conveyances.",
-      modifiers=[{"condition": "aspecting_or_aspected_by_jupiter", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
+      modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "Jupiter", "house": "self"}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # ═══ v.7: Wealthy and famous father ══════════════════════════════════════════
 b.add(conditions=[{"type": "lord_in_house", "lord_of": 9, "house": 10}],
