@@ -660,7 +660,7 @@ b.add(
     verse_ref="Ch.16 v.1-3",
     commentary_context="Distinct from dusthana placement. Text: 'Should the lord of the 5th be combust or be with malefics and be weak, there will be no children; even if per chance issues are obtained they will only quit the world soon.'",
     description="5th lord combust or with malefics and weak: no children; if obtained they quit world soon.",
-    modifiers=[{"condition": "conjunct_malefics", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}])
+    modifiers=[{"condition": [{"type": "planets_conjunct", "planets": ["trigger", "any_malefic"]}], "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"}])
 
 # v.24-32 gap: 9 sons (Jupiter deep exaltation + Rahu + 2nd lord + 9th own lord)
 b.add(

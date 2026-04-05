@@ -132,7 +132,7 @@ b.add(
     description="Lagna lord in 6th and related to a malefic: devoid of physical happiness, troubled by enemies if no benefic aspect.",
     commentary_context="Santhanam: The ascendant lord going to 6th mars health prospects. However, for Scorpio and Taurus ascendant, it will be a felicitous augury for freedom from diseases. The 6th house position of Lagna Lord in general will give abundant wealth and respect apart from royal status. There is, however, a possibility of more than one marriage or losing the spouse early.",
     concordance_texts=["Saravali"],
-    modifiers=[{"condition": "related_to_malefic", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "any_malefic", "house": "self"}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # Exception: Scorpio/Taurus ascendant
@@ -357,7 +357,7 @@ b.add(
     verse_ref="Ch.24 v.15",
     description="2nd lord in 3rd: valorous, wise, virtuous, lustful — all these when related to a benefic. If related to malefic, heterodox.",
     commentary_context="Santhanam: Should the 2nd lord be in the 3rd house, the native will be ill-related to females and will earn through prostitutes. If a malefic is related to the 2nd lord in the 3rd, the person concerned will not be God-fearing and will have dirty conduct.",
-    modifiers=[{"condition": "related_to_benefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
     concordance_texts=["Saravali"],
 )
 
@@ -374,7 +374,7 @@ b.add(
     verse_ref="Ch.24 v.15",
     description="2nd lord in 3rd related to malefic: heterodox, not God-fearing, dirty conduct.",
     commentary_context="Santhanam: If a malefic is related to the 2nd lord in the 3rd, the person concerned will not be God-fearing and will have dirty conduct. Contrary condition to the benefic variant.",
-    modifiers=[{"condition": "related_to_malefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "any_malefic", "house": "self"}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
     rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS2417"]},
 )
 
@@ -650,7 +650,7 @@ b.add(
     verse_ref="Ch.24 v.29",
     description="3rd lord in 5th: have sons, be virtuous. If 3rd lord conjunct/aspected by malefic, will have a formidable wife.",
     commentary_context="Santhanam: No separate note. The malefic influence on 3rd lord in 5th specifically affects the spouse dimension — a formidable (domineering) wife is indicated.",
-    modifiers=[{"condition": "conjunct_or_aspected_by_malefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "any_malefic", "house": "self"}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 30: 3rd lord in 6th house ───────────────────────────────────────

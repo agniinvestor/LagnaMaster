@@ -382,7 +382,7 @@ b.add(
     concordance_texts=[],
     entity_target="spouse",
     modifiers=[
-        {"condition": "benefic_conjunction_or_aspect", "effect": "negates",
+        {"condition": [{"type": "planet_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "negates",
          "target": "prediction", "strength": "strong", "scope": "local"},
     ],
 )
@@ -408,7 +408,7 @@ b.add(
     concordance_texts=[],
     entity_target="spouse",
     modifiers=[
-        {"condition": "benefic_conjunction_or_aspect", "effect": "negates",
+        {"condition": [{"type": "planet_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "negates",
          "target": "prediction", "strength": "strong", "scope": "local"},
     ],
 )
@@ -434,7 +434,7 @@ b.add(
     concordance_texts=[],
     entity_target="spouse",
     modifiers=[
-        {"condition": "benefic_conjunction_or_aspect", "effect": "negates",
+        {"condition": [{"type": "planet_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "negates",
          "target": "prediction", "strength": "strong", "scope": "local"},
     ],
 )
@@ -732,7 +732,7 @@ _lp(6, "any_malefic", "occupies", "lagna_pada_h6_malefic_occ_thief",
      "6th from Lagna Pada occupied by malefic and bereft of benefic conjunction/aspect: native will be a thief.",
      "Santhanam: The 6th from Arudha Lagna with malefic influence and no benefic mitigation produces a thief.",
      modifiers=[
-         {"condition": "benefic_conjunction_or_aspect", "effect": "negates",
+         {"condition": [{"type": "planet_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "negates",
           "target": "prediction", "strength": "strong", "scope": "local"},
      ])
 

@@ -104,7 +104,7 @@ b.add(
     verse_ref="Ch.24 v.53",
     description="5th lord in 5th: happy, have sons, be virtuous, dear to friends — if related to benefic. If malefic related, no issues.",
     commentary_context="Santhanam: If the 5th lord is related to the said 5th lord placed in 5th, the 5th lord in 5th will, however, make one virtuous and dear to friends. The contrary condition (malefic) denies progeny.",
-    modifiers=[{"condition": "related_to_benefic", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
     concordance_texts=["Saravali"],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS2458"]},
 )
@@ -122,7 +122,7 @@ b.add(
     verse_ref="Ch.24 v.53",
     description="5th lord in 5th related to malefic: no issues (progeny denied).",
     commentary_context="Santhanam: The contrary condition — if malefic is related to the 5th lord placed in 5th, there will be no issues. This is the explicit contrary stated in the verse.",
-    modifiers=[{"condition": "related_to_malefic", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_aspecting", "planet": "any_malefic", "house": "self"}], "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
     rule_relationship={"type": "contrary_mirror", "related_rules": ["BPHS2457"]},
 )
 
