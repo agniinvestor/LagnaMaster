@@ -61,6 +61,10 @@ IMPLEMENTED_FEATURES: frozenset[str] = frozenset({
     "planet_nature",
     "planet_in_house_category",
     "or_group",
+    # S316 final push — new primitives
+    "count_planets_with_state",
+    "lagna_sign_type",
+    "house_sign_nature",
 })
 
 # Features NOT YET implemented (add trigger + dependency)

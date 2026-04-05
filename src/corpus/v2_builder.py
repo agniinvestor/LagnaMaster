@@ -537,9 +537,14 @@ class V2ChapterBuilder:
                         f"use: {sorted(VALID_UPAGRAHAS)}"
                     )
                 house = cond.get("house")
-                if not isinstance(house, int) or not (1 <= house <= 12):
+                if isinstance(house, list):
+                    if not all(isinstance(h, int) and 1 <= h <= 12 for h in house):
+                        errors.append(
+                            f"T1-1: conditions[{i}].house={house} must be int 1-12 or list of int 1-12"
+                        )
+                elif not isinstance(house, int) or not (1 <= house <= 12):
                     errors.append(
-                        f"T1-1: conditions[{i}].house={house} must be int 1-12"
+                        f"T1-1: conditions[{i}].house={house} must be int 1-12 or list of int 1-12"
                     )
                 mode = cond.get("mode", "occupies")
                 if mode not in VALID_CONDITION_MODES:
@@ -569,11 +574,10 @@ class V2ChapterBuilder:
                     errors.append(
                         f"T1-1: conditions[{i}].offset={offset} must be int 1-12"
                     )
-                mode = cond.get("mode", "")
-                if mode != "occupies":
+                mode = cond.get("mode", "occupies")
+                if mode not in ("occupies", "aspects"):
                     errors.append(
-                        f"T1-1: conditions[{i}].mode='{mode}' must be 'occupies' "
-                        f"(only supported mode)"
+                        f"T1-1: conditions[{i}].mode='{mode}' must be 'occupies' or 'aspects'"
                     )
 
             elif ctype == "planet_not_in_house":
@@ -617,6 +621,31 @@ class V2ChapterBuilder:
                     dignity = cond.get("dignity", "")
                     if not dignity:
                         errors.append(f"T1-1: conditions[{i}] dispositor_condition dignity missing 'dignity'")
+
+            elif ctype == "count_planets_with_state":
+                state = cond.get("state", "")
+                if state not in ("strong", "weak", "any"):
+                    errors.append(f"T1-1: conditions[{i}].state='{state}' must be 'strong', 'weak', or 'any'")
+                min_count = cond.get("min_count")
+                if not isinstance(min_count, int) or not (1 <= min_count <= 7):
+                    errors.append(f"T1-1: conditions[{i}].min_count={min_count} must be int 1-7")
+
+            elif ctype == "lagna_sign_type":
+                from src.corpus.taxonomy import VALID_SIGN_TYPES
+                st = cond.get("sign_type", "")
+                if not st or st not in VALID_SIGN_TYPES:
+                    errors.append(
+                        f"T1-1: conditions[{i}].sign_type='{st}' not valid — "
+                        f"use: {sorted(VALID_SIGN_TYPES)}"
+                    )
+
+            elif ctype == "house_sign_nature":
+                house = cond.get("house")
+                if not isinstance(house, int) or not (1 <= house <= 12):
+                    errors.append(f"T1-1: conditions[{i}].house={house} must be int 1-12")
+                nature = cond.get("nature", "")
+                if nature not in ("benefic", "malefic"):
+                    errors.append(f"T1-1: conditions[{i}].nature='{nature}' must be 'benefic' or 'malefic'")
 
         # T1-2: Controlled vocabulary — domains, direction, intensity
         for d in domains:

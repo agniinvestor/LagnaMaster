@@ -361,7 +361,7 @@ b.add(
     concordance_texts=["Saravali", "Phaladeepika", "Brihat Jataka"],
     cross_chapter_refs=["Ch.81 Body Parts"],
     modifiers=[
-        {"condition": "mercury_jupiter_venus_also_in_kendra_trikona", "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"},
+        {"condition": [{"type": "planet_in_house_category", "planet": "Mercury", "category": "kendra_trikona"}, {"type": "planet_in_house_category", "planet": "Jupiter", "category": "kendra_trikona"}, {"type": "planet_in_house_category", "planet": "Venus", "category": "kendra_trikona"}], "effect": "amplifies", "target": "prediction", "strength": "strong", "scope": "local"},
     ],
     convergence_signals=[
         "mercury_or_jupiter_or_venus_in_kendra",
@@ -430,7 +430,7 @@ b.add(
     ),
     concordance_texts=["Saravali"],
     modifiers=[
-        {"condition": "mercury_or_venus_also_in_kendra_or_with_moon", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
+        {"condition": [{"type": "or_group", "alternatives": [{"type": "planet_in_house_category", "planet": "Mercury", "category": "kendra"}, {"type": "planet_in_house_category", "planet": "Venus", "category": "kendra"}, {"type": "planets_conjunct", "planets": ["Mercury", "Moon"]}, {"type": "planets_conjunct", "planets": ["Venus", "Moon"]}]}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
     rule_relationship={"type": "addition", "related_rules": ["BPHS1209"]},
 )
@@ -537,7 +537,7 @@ b.add(
     ),
     tags=["sun", "twins", "quadruped_sign", "dual_sign"],
     prediction_type="event",
-    modifiers=[{"condition": "other_six_planets_endowed_with_strength", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "count_planets_with_state", "state": "strong", "min_count": 6}], "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
 )
 
 # ═════════════════════════════════════════════════════════════════════════

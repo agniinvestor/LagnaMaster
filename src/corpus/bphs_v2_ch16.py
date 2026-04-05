@@ -179,7 +179,7 @@ b.add(
         "owner will not deprive one of progeny, making him go in for adoption."
     ),
     concordance_texts=[],
-    modifiers=[{"condition": "mandi_aspecting_5th", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "upagraha_in_house", "upagraha": "mandi", "house": 5, "mode": "aspects"}], "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
 )
 
 # ═══ v.10: 3 mothers or 2 fathers ════════════════════════════════════════════

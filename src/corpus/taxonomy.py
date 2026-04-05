@@ -108,6 +108,10 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "planet_nature",
     "planet_in_house_category",
     "or_group",
+    # S316 final push — new primitives
+    "count_planets_with_state",
+    "lagna_sign_type",
+    "house_sign_nature",
 })
 
 VALID_MODIFIER_EFFECTS = frozenset({

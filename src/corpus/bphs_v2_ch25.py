@@ -411,7 +411,7 @@ _upa("gulika", 6, "devoid_enemies", "favorable", "moderate",
      "relationships", "devoid_enemies_strong_bodied_spleenorous_liked_wife_enthusiastic_helpful",
      "Ch.25 v.67", "devoid of enemies, be strong-bodied, spleenorous, liked by his wife, enthusiastic, very friendly and helpful in disposition.",
      "Santhanam: When Gulika is in the 6th house, the native will be interested in controlling evil spirits and make a livelihood from such achievements. He will obtain children. He will be very courageous. There will be freedom from diseases if the 6th house containing Gulika is a benefic sign.",
-     modifiers=[{"condition": "freedom_from_diseases_if_6th_house_is_benefic_sign", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}])
+     modifiers=[{"condition": [{"type": "house_sign_nature", "house": 6, "nature": "benefic"}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}])
 
 _upa("gulika", 7, "subdue_spouse", "unfavorable", "strong",
      "relationships", "subdue_spouse_sinful_others_females_emaciated_devoid_friendship_wife_wealth",

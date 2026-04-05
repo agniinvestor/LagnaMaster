@@ -202,7 +202,7 @@ b.add(
     ),
     tags=["h2_lord", "h11_lord", "exchange", "parivartana", "wealth"],
     modifiers=[
-        {"condition": "lords_2_11_join_in_kendra_trikona_instead_of_exchange", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
+        {"condition": [{"type": "planet_in_house_category", "planet": "lord_of_2", "category": "kendra_trikona"}, {"type": "planet_in_house_category", "planet": "lord_of_11", "category": "kendra_trikona"}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"},
     ],
 )
 

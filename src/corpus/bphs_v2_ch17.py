@@ -269,7 +269,7 @@ b.add(
         "requires upagraha multi-house support (not yet available). "
         "Gulika/Mandi are synonymous."
     ),
-    modifiers=[{"condition": "mandi_in_kendra_1_4_7_10", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "upagraha_in_house", "upagraha": "mandi", "house": [1, 4, 7, 10]}], "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}],
     description=(
         "If Rahu is in the 6th, ascendant lord is in the 8th and Mandi "
         "is in an angle, consumption will trouble the native at the age "

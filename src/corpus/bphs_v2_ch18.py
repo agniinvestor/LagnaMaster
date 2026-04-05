@@ -354,7 +354,7 @@ b.add(conditions=[
           "(v.10-13). Moon decreasing is additional qualifier."
       ),
       description="Malefics in 12th + Moon in 5th: spouse controlled by others, inimical to family.",
-      modifiers=[{"condition": "moon_decreasing_strengthens", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
+      modifiers=[{"condition": [{"type": "moon_phase", "phase": "waning"}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"}])
 
 # ═══ v.16: Evils to spouse ════════════════════════════════════════════════════
 b.add(conditions=[{"type": "planet_in_house", "planet": "any_malefic", "house": 7}],
@@ -456,7 +456,7 @@ b.add(
         "as alternative trigger."
     ),
     description="Venus in Mars Rasi/Navamsa or conjunct Mars: unusual sexual habits.",
-    modifiers=[{"condition": "venus_in_mars_navamsa_or_conjunct_mars_also_triggers", "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "or_group", "alternatives": [{"type": "planet_in_navamsa_sign", "planet": "Venus", "sign": ["aries", "scorpio"]}, {"type": "planets_conjunct", "planets": ["Venus", "Mars"]}]}], "effect": "gates", "target": "rule", "strength": "medium", "scope": "local"}],
     prediction_type="trait")
 
 # v.10-13 gap: Venus related to Saturn → ugly relations with male
@@ -471,7 +471,7 @@ b.add(
     commentary_context="Text: 'If Venus is so related to Saturn, the native will have ugly relations with another male.' Venus-Saturn variant produces entirely different prediction direction from Venus-Mars.",
     description="Venus related to Saturn (instead of Mars): ugly relations with another male.",
     prediction_type="trait",
-    modifiers=[{"condition": "venus_saturn_conjunction_or_aspect_specifically", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}])
+    modifiers=[{"condition": [{"type": "or_group", "alternatives": [{"type": "planets_conjunct", "planets": ["Venus", "Saturn"]}, {"type": "planet_aspecting", "planet": "Saturn", "house": 7}]}], "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"}])
 
 # v.19-21 gap: 3 wives (Mars+Venus in 7th or Saturn in 7th + asc lord in 8th)
 b.add(

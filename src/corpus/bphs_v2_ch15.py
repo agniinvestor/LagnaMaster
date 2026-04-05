@@ -142,7 +142,7 @@ b.add(
     concordance_texts=["Saravali"],
     cross_chapter_refs=["Ch.32 v.18-19 Planetary Karakatvas"],
     modifiers=[
-        {"condition": "mother_indicator_with_strength", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
+        {"condition": [{"type": "dynamic_karaka", "karaka": "mother", "state": "strong"}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
     convergence_signals=["moon_strong", "h4_lord_exalted", "no_malefic_in_4th"],
 )
@@ -218,7 +218,7 @@ b.add(
         "a movable ascendant: the native will be dumb."
     ),
     modifiers=[
-        {"condition": "movable_ascendant", "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"},
+        {"condition": [{"type": "lagna_sign_type", "sign_type": "movable"}], "effect": "gates", "target": "rule", "strength": "strong", "scope": "local"},
     ],
     concordance_texts=[],
     prediction_type="trait",

@@ -220,7 +220,7 @@ b.add(
     verse_ref="Ch.24 v.59",
     description="5th lord in 11th: learned, dear to people, author of treatises, skilful, many sons and wealth.",
     commentary_context="Santhanam: The 5th lord's station in the 11th house will keep one free from misfortunes and unhappiness. His academic achievements will be abundant. He will be happy in respect of his children, but the said 11th house should be a friendly sign for the 5th lord. If the 5th lord is inimically placed in the 11th, for example the Sun in Aquarius in the 11th in the case of Aries ascendant, the progeny will be inimical to the native.",
-    modifiers=[{"condition": "5th_lord_inimically_placed_in_11th_progeny_inimical_eg_sun_in_aquarius_aries", "effect": "negates", "target": "prediction", "strength": "medium", "scope": "local"}],
+    modifiers=[{"condition": [{"type": "planet_dignity", "planet": "lord_of_5", "dignity": "enemy_sign"}], "effect": "negates", "target": "prediction", "strength": "medium", "scope": "local"}],
 )
 
 # ── Sloka 60: 5th lord in 12th house ──────────────────────────────────────

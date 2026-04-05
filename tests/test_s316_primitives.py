@@ -570,3 +570,113 @@ def test_planet_retrograde_false():
     conds = [{"type": "planet_retrograde", "planet": "Saturn"}]
     fires, _ = _check_compound_conditions(conds, chart)
     assert fires is False
+
+
+# --- count_planets_with_state ---
+
+def test_count_planets_with_state_strong():
+    """Sun exalted in Aries(0), Moon exalted in Taurus(1), Jupiter exalted in Cancer(3)."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Sun": _P(0, name="Sun"),         # Aries = exalted
+        "Moon": _P(1, name="Moon"),        # Taurus = exalted
+        "Jupiter": _P(3, name="Jupiter"),  # Cancer = exalted
+    })
+    conds = [{"type": "count_planets_with_state", "state": "strong", "min_count": 2}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_count_planets_with_state_insufficient():
+    """Only 1 strong planet, need 3."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Sun": _P(0, name="Sun"),         # Aries = exalted
+        "Moon": _P(5, name="Moon"),        # Virgo = neutral
+    })
+    conds = [{"type": "count_planets_with_state", "state": "strong", "min_count": 3}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False
+
+
+def test_count_planets_with_state_exclude():
+    """Exclude Sun from count."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Sun": _P(0, name="Sun"),         # exalted
+        "Moon": _P(1, name="Moon"),        # exalted
+    })
+    conds = [{"type": "count_planets_with_state", "state": "strong", "min_count": 2, "exclude": ["Sun"]}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False  # only Moon is strong after excluding Sun
+
+
+# --- lagna_sign_type ---
+
+def test_lagna_sign_type_movable():
+    """Aries (0) is movable."""
+    chart = _Chart(lagna_sign_index=0)
+    conds = [{"type": "lagna_sign_type", "sign_type": "movable"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_lagna_sign_type_fixed():
+    """Taurus (1) is fixed."""
+    chart = _Chart(lagna_sign_index=1)
+    conds = [{"type": "lagna_sign_type", "sign_type": "fixed"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_lagna_sign_type_movable_fails_for_fixed():
+    """Taurus (1) is not movable."""
+    chart = _Chart(lagna_sign_index=1)
+    conds = [{"type": "lagna_sign_type", "sign_type": "movable"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False
+
+
+# --- house_sign_nature ---
+
+def test_house_sign_nature_benefic():
+    """Aries lagna, 6th house = Virgo, lord = Mercury (benefic)."""
+    chart = _Chart(lagna_sign_index=0)
+    conds = [{"type": "house_sign_nature", "house": 6, "nature": "benefic"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_house_sign_nature_malefic():
+    """Aries lagna, 8th house = Scorpio, lord = Mars (malefic)."""
+    chart = _Chart(lagna_sign_index=0)
+    conds = [{"type": "house_sign_nature", "house": 8, "nature": "malefic"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_house_sign_nature_fails():
+    """Aries lagna, 6th = Virgo = Mercury (benefic), not malefic."""
+    chart = _Chart(lagna_sign_index=0)
+    conds = [{"type": "house_sign_nature", "house": 6, "nature": "malefic"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False
+
+
+# --- planet_dignity enemy_sign ---
+
+def test_planet_dignity_enemy_sign():
+    """Sun in Libra (sign 6) = neutral dignity, not strong -> enemy_sign passes."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Sun": _P(6, name="Sun"),  # Libra = debilitated actually
+    })
+    conds = [{"type": "planet_dignity", "planet": "Sun", "dignity": "enemy_sign"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True  # debilitated is not strong -> enemy_sign passes
+
+
+def test_planet_dignity_enemy_sign_fails_for_exalted():
+    """Sun exalted in Aries should fail enemy_sign."""
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Sun": _P(0, name="Sun"),  # Aries = exalted
+    })
+    conds = [{"type": "planet_dignity", "planet": "Sun", "dignity": "enemy_sign"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False

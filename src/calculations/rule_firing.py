@@ -404,6 +404,10 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
                 # "weak" = debilitated or neutral (not strong)
                 if actual_dignity in ("exalted", "own_sign", "moolatrikona"):
                     return False, 0
+            elif target_dignity == "enemy_sign":
+                # Enemy sign = not own, not exalted, not moolatrikona
+                if actual_dignity in ("exalted", "own_sign", "moolatrikona"):
+                    return False, 0
             elif actual_dignity != target_dignity:
                 return False, 0
 
@@ -1034,6 +1038,92 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
                     break
             if not any_passed:
                 return False, 0
+
+        elif ctype == "count_planets_with_state":
+            state = cond.get("state", "strong")  # "strong"|"weak"|"any"
+            min_count = cond.get("min_count", 1)
+            exclude = cond.get("exclude", [])
+            count = 0
+            for pname in ("Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"):
+                if pname in exclude:
+                    continue
+                if not _find_planet(chart, pname):
+                    continue
+                if state == "any":
+                    count += 1
+                elif state == "strong":
+                    d = _planet_dignity_state(chart, pname)
+                    if d in ("exalted", "own_sign", "moolatrikona"):
+                        count += 1
+                elif state == "weak":
+                    d = _planet_dignity_state(chart, pname)
+                    if d in ("debilitated",):
+                        count += 1
+            if count < min_count:
+                return False, 0
+
+        elif ctype == "lagna_sign_type":
+            target_type = cond.get("sign_type", "")
+            lsi = chart.lagna_sign_index
+            SIGN_TYPES = {
+                "movable": {0, 3, 6, 9},
+                "fixed": {1, 4, 7, 10},
+                "dual": {2, 5, 8, 11},
+                "fire": {0, 4, 8},
+                "earth": {1, 5, 9},
+                "air": {2, 6, 10},
+                "water": {3, 7, 11},
+                "odd": {0, 2, 4, 6, 8, 10},
+                "even": {1, 3, 5, 7, 9, 11},
+            }
+            if lsi not in SIGN_TYPES.get(target_type, set()):
+                return False, 0
+
+        elif ctype == "house_sign_nature":
+            house = cond.get("house", 1)
+            nature = cond.get("nature", "benefic")  # "benefic"|"malefic"
+            house_si = (chart.lagna_sign_index + house - 1) % 12
+            lord = _SIGN_LORDS[house_si]
+            if nature == "benefic" and lord not in _BENEFICS:
+                return False, 0
+            if nature == "malefic" and lord not in _MALEFICS:
+                return False, 0
+
+        elif ctype == "upagraha_in_house":
+            # Upagraha position evaluation — uses Mandi/Gulika lookup
+            upagraha = cond.get("upagraha", "")
+            target_house = cond.get("house", 0)
+            mode = cond.get("mode", "occupies")
+            # Attempt to get upagraha position from chart
+            upa_pos = None
+            if hasattr(chart, "upagrahas") and isinstance(chart.upagrahas, dict):
+                upa_pos = chart.upagrahas.get(upagraha)
+            if upa_pos is None:
+                # Upagraha not computed — condition can't be evaluated
+                return False, 0
+            upa_si = upa_pos.sign_index if hasattr(upa_pos, "sign_index") else upa_pos
+            upa_house = (upa_si - chart.lagna_sign_index) % 12 + 1
+            if isinstance(target_house, list):
+                if mode == "aspects":
+                    hit = any((upa_house + 6) % 12 + 1 == th if (upa_house + 6) % 12 + 1 == th
+                              else False for th in target_house)
+                    # Upagrahas only have 7th aspect
+                    aspect_house = (upa_house - 1 + 6) % 12 + 1
+                    if aspect_house not in target_house:
+                        return False, 0
+                else:
+                    if upa_house not in target_house:
+                        return False, 0
+            else:
+                if mode == "aspects":
+                    # Upagrahas only have 7th aspect (like all non-special planets)
+                    aspect_house = (upa_house - 1 + 6) % 12 + 1
+                    if aspect_house != target_house:
+                        return False, 0
+                else:
+                    if upa_house != target_house:
+                        return False, 0
+            matched_house = matched_house or (target_house if isinstance(target_house, int) else target_house[0])
 
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire
