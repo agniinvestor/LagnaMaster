@@ -7,15 +7,15 @@ from __future__ import annotations
 import re
 
 _MODIFIER_PATTERNS = [
-    (r"aspected by (\w+)", lambda m: {"condition": f"aspected_by_{m.group(1).lower()}", "effect": "qualifies", "target": "prediction", "strength": "strong"}),
-    (r"aspect of (\w+)", lambda m: {"condition": f"aspected_by_{m.group(1).lower()}", "effect": "qualifies", "target": "prediction", "strength": "strong"}),
-    (r"if exalted|when exalted", lambda m: {"condition": "if_exalted", "effect": "amplifies", "strength": "strong"}),
-    (r"if debilitated|when debilitated", lambda m: {"condition": "if_debilitated", "effect": "negates", "strength": "strong"}),
-    (r"in own sign|own house", lambda m: {"condition": "if_own_sign", "effect": "amplifies", "strength": "moderate"}),
-    (r"combust|combustion", lambda m: {"condition": "if_combust", "effect": "negates", "strength": "moderate"}),
+    (r"aspected by (\w+)", lambda m: {"condition": [{"type": "planet_aspecting", "planet": m.group(1).title(), "house": "self"}], "effect": "qualifies", "target": "prediction", "strength": "strong"}),
+    (r"aspect of (\w+)", lambda m: {"condition": [{"type": "planet_aspecting", "planet": m.group(1).title(), "house": "self"}], "effect": "qualifies", "target": "prediction", "strength": "strong"}),
+    (r"if exalted|when exalted", lambda m: {"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "exalted"}], "effect": "amplifies", "strength": "strong"}),
+    (r"if debilitated|when debilitated", lambda m: {"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "debilitated"}], "effect": "negates", "strength": "strong"}),
+    (r"in own sign|own house", lambda m: {"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "own_sign"}], "effect": "amplifies", "strength": "moderate"}),
+    (r"combust|combustion", lambda m: {"condition": [{"type": "planet_dignity", "planet": "trigger", "dignity": "debilitated"}], "effect": "negates", "strength": "moderate"}),
     (r"retrograde", lambda m: {"condition": "if_retrograde", "effect": "qualifies", "target": "prediction", "strength": "moderate"}),
-    (r"malefic aspect|aspected by malefic", lambda m: {"condition": "malefic_aspect", "effect": "negates", "strength": "strong"}),
-    (r"benefic aspect|aspected by benefic", lambda m: {"condition": "benefic_aspect", "effect": "amplifies", "strength": "moderate"}),
+    (r"malefic aspect|aspected by malefic", lambda m: {"condition": [{"type": "planet_aspecting", "planet": "any_malefic", "house": "self"}], "effect": "negates", "strength": "strong"}),
+    (r"benefic aspect|aspected by benefic", lambda m: {"condition": [{"type": "planet_aspecting", "planet": "any_benefic", "house": "self"}], "effect": "amplifies", "strength": "moderate"}),
     (r"waxing moon|full moon", lambda m: {"condition": "moon_waxing", "effect": "amplifies", "strength": "moderate"}),
     (r"waning moon|new moon|dark moon", lambda m: {"condition": "moon_waning", "effect": "negates", "strength": "moderate"}),
 ]
