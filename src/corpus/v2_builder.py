@@ -95,6 +95,7 @@ class V2ChapterBuilder:
         self._default_timing = timing_window or {"type": "unspecified"}
         self._num = id_start
         self._rules: list[RuleRecord] = []
+        self._quality_warnings: list[str] = []
 
     def add(
         self,
@@ -179,7 +180,9 @@ class V2ChapterBuilder:
         self._validate_add(conditions, direction, intensity, domains, predictions,
                            description=description, entity_target=ent,
                            commentary_context=commentary_context,
-                           modifiers=modifiers or [])
+                           modifiers=modifiers or [],
+                           convergence_signals=convergence_signals,
+                           confidence=0)
 
         rid = f"BPHS{self._num:04d}"
         self._num += 1
@@ -448,10 +451,14 @@ class V2ChapterBuilder:
         """Return the raw list of rules."""
         return list(self._rules)
 
-    @staticmethod
-    def _validate_add(conditions, direction, intensity, domains, predictions,
+    def quality_warnings(self) -> list[str]:
+        """Return accumulated quality warnings (non-blocking)."""
+        return list(self._quality_warnings)
+
+    def _validate_add(self, conditions, direction, intensity, domains, predictions,
                       *, description="", entity_target="native",
-                      commentary_context="", modifiers=None):
+                      commentary_context="", modifiers=None,
+                      convergence_signals=None, confidence=0):
         """Tier 1 build-time validation — encoding quality gates enforced here."""
         from src.corpus.taxonomy import (
             VALID_OUTCOME_DOMAINS, VALID_OUTCOME_DIRECTIONS,
@@ -783,6 +790,41 @@ class V2ChapterBuilder:
                 # (can't check here — those aren't passed to _validate_add)
                 # So this is advisory, not blocking
                 pass  # Handled by scorecard and maturity grader, not builder
+
+        # ── Quality checklist (warnings, not errors) ──────────────────────
+        warnings = []
+
+        # Q1: Does every prediction have a claim?
+        for i, p in enumerate(predictions):
+            if not p.get("claim"):
+                warnings.append(f"prediction[{i}] has no claim text")
+
+        # Q2: Is commentary populated?
+        if not commentary_context:
+            warnings.append("commentary_context is empty — add translator context")
+
+        # Q3: Are modifiers classified correctly?
+        for i, mod in enumerate(modifiers or []):
+            if mod.get("effect") == "gates" and isinstance(mod.get("condition"), str):
+                warnings.append(f"modifier[{i}] is a gate with string condition — consider structuring")
+
+        # Q4: Does the rule have at least one prediction?
+        if not predictions:
+            warnings.append("no predictions — rule has no machine-parseable claims")
+
+        # Q5: Is entity_target specific?
+        if entity_target == "general":
+            warnings.append("entity_target='general' — consider specifying native/father/mother/spouse/children/siblings")
+
+        # Q6: Are there convergence signals for high-confidence rules?
+        if confidence > 0.8 and not convergence_signals:
+            warnings.append("high confidence rule without convergence_signals")
+
+        if warnings:
+            rule_label = f"{self.chapter}/rule_{len(self._rules)}"
+            self._quality_warnings.extend(
+                f"{rule_label}: {w}" for w in warnings
+            )
 
         if errors:
             raise ValueError(

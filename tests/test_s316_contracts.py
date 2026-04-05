@@ -64,6 +64,30 @@ def test_consumable_aggregates_whitelist():
     assert len(CONSUMABLE_AGGREGATES) == 3
 
 
+def test_builder_quality_warnings():
+    """Builder accumulates quality warnings without blocking."""
+    from src.corpus.v2_builder import V2ChapterBuilder
+    b = V2ChapterBuilder(
+        chapter="Ch.99", category="test", id_start=9900,
+        session="S999", sloka_count=10, chapter_tags=["test"],
+    )
+    b.add(
+        conditions=[{"type": "planet_in_house", "planet": "sun", "house": 1}],
+        signal_group="test_signal",
+        direction="favorable", intensity="moderate",
+        primary_domain="wealth",
+        predictions=[{"entity": "native", "claim": "gains_wealth_and_property", "domain": "wealth",
+                      "direction": "favorable", "magnitude": 0.7}],
+        verse_ref="Ch.99 v.1",
+        description="Test rule",
+        commentary_context="",  # empty → should warn
+        entity_target="general",  # general → should warn
+    )
+    warnings = b.quality_warnings()
+    assert any("commentary_context" in w for w in warnings)
+    assert any("entity_target" in w for w in warnings)
+
+
 from src.corpus.feature_registry import IMPLEMENTED_FEATURES, PENDING_FEATURES
 
 
