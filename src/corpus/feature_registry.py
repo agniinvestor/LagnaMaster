@@ -46,6 +46,11 @@ IMPLEMENTED_FEATURES: frozenset[str] = frozenset({
     "bhavat_bhavam_execution",
     "argala_condition",
     "timing_activation",
+    # S316 derived primitives (4)
+    "derived_points_relationship",
+    "derived_house_sign",
+    "lord_of_derived_house",
+    "planet_from_derived_lord",
 })
 
 # Features NOT YET implemented (add trigger + dependency)

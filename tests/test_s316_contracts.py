@@ -84,3 +84,9 @@ def test_s316_features_not_pending():
             "modifier_condition_structured", "prediction_type_classification"}
     for f in s316:
         assert f not in PENDING_FEATURES, f"{f} still in PENDING_FEATURES"
+
+
+def test_s316_derived_primitives_implemented():
+    for f in ("derived_points_relationship", "derived_house_sign",
+              "lord_of_derived_house", "planet_from_derived_lord"):
+        assert f in IMPLEMENTED_FEATURES, f"{f} not implemented"
