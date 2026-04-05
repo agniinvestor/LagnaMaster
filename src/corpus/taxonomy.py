@@ -101,6 +101,13 @@ VALID_CONDITION_PRIMITIVES = frozenset({
     "planet_from_derived_lord",
     # S316 batch 5 — derived point with dignity filter
     "planet_at_derived_point",
+    # S316 batch 6 — condition primitives governance
+    "moon_phase",
+    "planet_retrograde",
+    "parivartana",
+    "planet_nature",
+    "planet_in_house_category",
+    "or_group",
 })
 
 VALID_MODIFIER_EFFECTS = frozenset({

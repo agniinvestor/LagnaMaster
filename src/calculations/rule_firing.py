@@ -940,6 +940,101 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
                 (target_si - chart.lagna_sign_index) % 12 + 1
             )
 
+        elif ctype == "moon_phase":
+            phase = cond.get("phase", "")  # "waxing" or "waning"
+            moon_pos = _find_planet(chart, "Moon")
+            sun_pos = _find_planet(chart, "Sun")
+            if not moon_pos or not sun_pos:
+                return False, 0
+            # Angular distance Moon - Sun (0-360)
+            angle = (moon_pos.sign_index * 30 + moon_pos.degree_in_sign -
+                     sun_pos.sign_index * 30 - sun_pos.degree_in_sign) % 360
+            is_waxing = angle < 180
+            if phase == "waxing" and not is_waxing:
+                return False, 0
+            if phase == "waning" and is_waxing:
+                return False, 0
+
+        elif ctype == "planet_retrograde":
+            planet_spec = cond.get("planet", "")
+            if planet_spec.startswith("lord_of_"):
+                h = int(planet_spec.split("_")[-1])
+                planet_spec = _lord_of_house(chart, h)
+            if not planet_spec:
+                return False, 0
+            pos = _find_planet(chart, planet_spec.title())
+            if not pos:
+                return False, 0
+            is_retro = getattr(pos, "is_retrograde", False) or getattr(pos, "retrograde", False)
+            if not is_retro:
+                return False, 0
+
+        elif ctype == "parivartana":
+            house_a = cond.get("house_a", 0)
+            house_b = cond.get("house_b", 0)
+            lord_a = _lord_of_house(chart, house_a)
+            lord_b = _lord_of_house(chart, house_b)
+            if not lord_a or not lord_b:
+                return False, 0
+            # Lord of A should be in house B's sign, and vice versa
+            sign_a = (chart.lagna_sign_index + house_a - 1) % 12
+            sign_b = (chart.lagna_sign_index + house_b - 1) % 12
+            pos_a = _find_planet(chart, lord_a)
+            pos_b = _find_planet(chart, lord_b)
+            if not pos_a or not pos_b:
+                return False, 0
+            if pos_a.sign_index != sign_b or pos_b.sign_index != sign_a:
+                return False, 0
+            matched_house = matched_house or house_a
+
+        elif ctype == "planet_nature":
+            planet_spec = cond.get("planet", "")
+            nature = cond.get("nature", "")  # "malefic" or "benefic"
+            if planet_spec.startswith("lord_of_"):
+                h = int(planet_spec.split("_")[-1])
+                planet_spec = _lord_of_house(chart, h)
+            if not planet_spec:
+                return False, 0
+            pname = planet_spec.title()
+            if nature == "malefic" and pname not in _MALEFICS:
+                return False, 0
+            if nature == "benefic" and pname not in _BENEFICS:
+                return False, 0
+
+        elif ctype == "planet_in_house_category":
+            planet_spec = cond.get("planet", "")
+            category = cond.get("category", "")  # kendra/trikona/dusthana/upachaya
+            if planet_spec.startswith("lord_of_"):
+                h = int(planet_spec.split("_")[-1])
+                planet_spec = _lord_of_house(chart, h)
+            if not planet_spec:
+                return False, 0
+            actual_house = _planet_house(chart, planet_spec.title())
+            if actual_house == 0:
+                return False, 0
+            CATEGORIES = {
+                "kendra": {1, 4, 7, 10},
+                "trikona": {1, 5, 9},
+                "dusthana": {6, 8, 12},
+                "upachaya": {3, 6, 10, 11},
+                "kendra_trikona": {1, 4, 5, 7, 9, 10},
+            }
+            if actual_house not in CATEGORIES.get(category, set()):
+                return False, 0
+            matched_house = matched_house or actual_house
+
+        elif ctype == "or_group":
+            alternatives = cond.get("alternatives", [])
+            any_passed = False
+            for alt in alternatives:
+                alt_fires, alt_house = _check_compound_conditions([alt], chart, context)
+                if alt_fires:
+                    any_passed = True
+                    matched_house = matched_house or alt_house
+                    break
+            if not any_passed:
+                return False, 0
+
         else:
             # Unknown condition type — can't evaluate, rule doesn't fire
             return False, 0

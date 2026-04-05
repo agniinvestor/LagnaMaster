@@ -54,6 +54,13 @@ IMPLEMENTED_FEATURES: frozenset[str] = frozenset({
     # S316 batch 5
     "planet_at_derived_point",
     "planet_in_house_from_aspects",
+    # S316 batch 6 — condition primitives governance
+    "moon_phase",
+    "planet_retrograde",
+    "parivartana",
+    "planet_nature",
+    "planet_in_house_category",
+    "or_group",
 })
 
 # Features NOT YET implemented (add trigger + dependency)

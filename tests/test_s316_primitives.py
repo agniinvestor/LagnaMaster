@@ -424,3 +424,149 @@ def test_planet_in_house_from_aspects_no_aspect():
     fires, _ = _check_compound_conditions(conds, chart)
     # 3rd from Mars(H1) = H3. Mars aspects 4th(H4), 7th(H7), 8th(H8) — not H3
     assert fires is False
+
+
+# --- moon_phase ---
+
+def test_moon_phase_waxing():
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Moon": _P(4, degree_in_sign=15.0, name="Moon"),  # Leo
+        "Sun": _P(0, degree_in_sign=15.0, name="Sun"),    # Aries
+    })
+    # Moon at 135°, Sun at 15° → angle = 120° < 180 → waxing
+    conds = [{"type": "moon_phase", "phase": "waxing"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_moon_phase_waning():
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Moon": _P(0, degree_in_sign=15.0, name="Moon"),  # Aries
+        "Sun": _P(4, degree_in_sign=15.0, name="Sun"),    # Leo
+    })
+    # Moon at 15°, Sun at 135° → angle = (15-135)%360 = 240° >= 180 → waning
+    conds = [{"type": "moon_phase", "phase": "waning"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_moon_phase_waxing_fails_for_waning():
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Moon": _P(0, degree_in_sign=15.0, name="Moon"),  # Aries
+        "Sun": _P(4, degree_in_sign=15.0, name="Sun"),    # Leo
+    })
+    conds = [{"type": "moon_phase", "phase": "waxing"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False
+
+
+# --- planet_nature ---
+
+def test_planet_nature_malefic():
+    chart = _Chart(lagna_sign_index=0, planets={"Saturn": _P(0, name="Saturn")})
+    conds = [{"type": "planet_nature", "planet": "Saturn", "nature": "malefic"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_planet_nature_benefic_fails_for_malefic():
+    chart = _Chart(lagna_sign_index=0, planets={"Saturn": _P(0, name="Saturn")})
+    conds = [{"type": "planet_nature", "planet": "Saturn", "nature": "benefic"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False
+
+
+def test_planet_nature_benefic():
+    chart = _Chart(lagna_sign_index=0, planets={"Jupiter": _P(0, name="Jupiter")})
+    conds = [{"type": "planet_nature", "planet": "Jupiter", "nature": "benefic"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+# --- planet_in_house_category ---
+
+def test_planet_in_house_category_kendra():
+    chart = _Chart(lagna_sign_index=0, planets={"Jupiter": _P(3, name="Jupiter")})  # H4
+    conds = [{"type": "planet_in_house_category", "planet": "Jupiter", "category": "kendra"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_planet_in_house_category_dusthana():
+    chart = _Chart(lagna_sign_index=0, planets={"Saturn": _P(5, name="Saturn")})  # Virgo=H6
+    conds = [{"type": "planet_in_house_category", "planet": "Saturn", "category": "dusthana"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_planet_in_house_category_fails():
+    chart = _Chart(lagna_sign_index=0, planets={"Jupiter": _P(3, name="Jupiter")})  # H4
+    conds = [{"type": "planet_in_house_category", "planet": "Jupiter", "category": "dusthana"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False
+
+
+# --- or_group ---
+
+def test_or_group():
+    chart = _Chart(lagna_sign_index=0, planets={"Sun": _P(0, name="Sun")})  # H1
+    conds = [{"type": "or_group", "alternatives": [
+        {"type": "planet_in_house", "planet": "Sun", "house": 5},  # fails
+        {"type": "planet_in_house", "planet": "Sun", "house": 1},  # passes
+    ]}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_or_group_all_fail():
+    chart = _Chart(lagna_sign_index=0, planets={"Sun": _P(0, name="Sun")})  # H1
+    conds = [{"type": "or_group", "alternatives": [
+        {"type": "planet_in_house", "planet": "Sun", "house": 5},
+        {"type": "planet_in_house", "planet": "Sun", "house": 7},
+    ]}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False
+
+
+# --- parivartana ---
+
+def test_parivartana():
+    # Mars in Taurus (Venus's sign), Venus in Aries (Mars's sign) = exchange
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Mars": _P(1, name="Mars"),   # Taurus (Venus's sign)
+        "Venus": _P(0, name="Venus"), # Aries (Mars's sign)
+    })
+    conds = [{"type": "parivartana", "house_a": 1, "house_b": 2}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_parivartana_no_exchange():
+    # Mars in Aries (own sign), Venus in Taurus (own sign) — no exchange
+    chart = _Chart(lagna_sign_index=0, planets={
+        "Mars": _P(0, name="Mars"),
+        "Venus": _P(1, name="Venus"),
+    })
+    conds = [{"type": "parivartana", "house_a": 1, "house_b": 2}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False
+
+
+# --- planet_retrograde ---
+
+def test_planet_retrograde_true():
+    class _PR(_P):
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, **kwargs)
+            self.is_retrograde = True
+    chart = _Chart(lagna_sign_index=0, planets={"Saturn": _PR(0, name="Saturn")})
+    conds = [{"type": "planet_retrograde", "planet": "Saturn"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is True
+
+
+def test_planet_retrograde_false():
+    chart = _Chart(lagna_sign_index=0, planets={"Saturn": _P(0, name="Saturn")})
+    conds = [{"type": "planet_retrograde", "planet": "Saturn"}]
+    fires, _ = _check_compound_conditions(conds, chart)
+    assert fires is False
