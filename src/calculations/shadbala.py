@@ -543,17 +543,14 @@ def compute_drik_bala(planet: str, chart) -> float:
         return 0.0
 
     from src.calculations.sputa_drishti import bphs_drishti_with_specials
+    from src.calculations.rule_firing import is_natural_malefic
 
     planet_lon = chart.planets[planet].longitude
     total = 0.0
 
-    natural_benefics = {"Moon", "Mercury", "Jupiter", "Venus"}
-    natural_malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
-
     for aspector, aspector_pos in chart.planets.items():
         if aspector == planet:
             continue
-        # Arc from aspector to aspected planet
         arc = (planet_lon - aspector_pos.longitude) % 360.0
         virupas = bphs_drishti_with_specials(aspector, arc)
 
@@ -562,12 +559,11 @@ def compute_drik_bala(planet: str, chart) -> float:
             # BPHS Ch.27 v.19 (p.284): "Reduce one fourth if malefic aspects,
             # add a fourth if benefic. Super add entire aspect of Mercury and Jupiter."
             if aspector in ("Mercury", "Jupiter"):
-                # Full aspect added (special rule for Mercury/Jupiter)
-                total += rupa_fraction
-            elif aspector in natural_benefics:
-                total += rupa_fraction * 0.25
-            elif aspector in natural_malefics:
+                total += rupa_fraction  # full (special rule)
+            elif is_natural_malefic(aspector, chart):
                 total -= rupa_fraction * 0.25
+            else:
+                total += rupa_fraction * 0.25  # benefic
 
     return round(total * 60.0, 3)  # convert Rupas to Virupas
 

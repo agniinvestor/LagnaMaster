@@ -22,26 +22,35 @@ def is_natural_malefic(planet: str, chart=None) -> bool:
     """BPHS Ch.3 v.11: conditional benefic/malefic for Moon and Mercury.
 
     Moon: malefic if waning (Krishna Paksha — elongation from Sun > 180°).
-    Mercury: malefic if conjunct a malefic (same sign).
+    Mercury: malefic if conjunct a malefic (same sign). This includes
+      waning Moon, since waning Moon IS a malefic per the same verse.
     Others: static classification.
     """
     if planet in ("Sun", "Mars", "Saturn", "Rahu", "Ketu"):
         return True
     if planet in ("Jupiter", "Venus"):
         return False
-    if planet == "Moon" and chart is not None:
-        moon = chart.planets.get("Moon")
-        sun = chart.planets.get("Sun")
-        if moon and sun:
-            elong = (moon.longitude - sun.longitude) % 360
-            return elong > 180  # waning = malefic
-    if planet == "Mercury" and chart is not None:
-        merc = chart.planets.get("Mercury")
-        if merc:
-            static_malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
-            for p, pos in chart.planets.items():
-                if p != "Mercury" and p in static_malefics and pos.sign_index == merc.sign_index:
-                    return True  # conjunct malefic = malefic
+    if planet == "Moon":
+        if chart is not None:
+            moon = chart.planets.get("Moon")
+            sun = chart.planets.get("Sun")
+            if moon and sun:
+                elong = (moon.longitude - sun.longitude) % 360
+                return elong > 180  # waning = malefic
+        return False  # default benefic if no chart
+    if planet == "Mercury":
+        if chart is not None:
+            merc = chart.planets.get("Mercury")
+            if merc:
+                for p, pos in chart.planets.items():
+                    if p == "Mercury":
+                        continue
+                    if pos.sign_index != merc.sign_index:
+                        continue
+                    # Check if this cotenant is a malefic (including waning Moon)
+                    if is_natural_malefic(p, chart):
+                        return True
+        return False  # default benefic if no chart or no malefic conjunction
     return False
 
 
