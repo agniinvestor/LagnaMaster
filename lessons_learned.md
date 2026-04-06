@@ -209,4 +209,6 @@
 
 **Principle violated:** #2 (Nullify rework), #6 (System enforces)
 
+**Also:** Skipping the read is often motivated by "reading existing code will consume context tokens" — which is L014 (overestimating cost) applied to reading instead of building. Reading a 100-line module = ~2k tokens. A parallel build + debug + consolidation = ~30k tokens. The "savings" cost 15× more.
+
 **Control needed:** Pre-build grep gate. Should be a hook or checklist item, not a behavioral promise. L012 was a behavioral lesson and was violated 5 times in the same session it was written.
