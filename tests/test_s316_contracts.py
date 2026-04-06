@@ -2,6 +2,7 @@
 from src.calculations.rule_firing import (
     _check_compound_conditions, FiredRule,
 )
+from src.calculations.inference import aggregate_condition_metadata, CONSUMABLE_AGGREGATES
 
 
 def test_context_param_accepted():
@@ -28,7 +29,6 @@ def test_fired_rule_has_context_field():
     assert fired.context is None
 
 
-from src.calculations.inference import aggregate_condition_metadata, CONSUMABLE_AGGREGATES
 
 
 def test_aggregate_empty_conditions():
@@ -88,10 +88,8 @@ def test_builder_quality_warnings():
     assert any("entity_target" in w for w in warnings)
 
 
-from src.corpus.feature_registry import IMPLEMENTED_FEATURES, PENDING_FEATURES
-
-
 def test_s316_features_implemented():
+    from src.corpus.feature_registry import IMPLEMENTED_FEATURES
     s316 = {"argala_condition", "functional_benefic", "same_planet_constraint",
             "dynamic_karaka", "shadbala_strength", "navamsa_lagna",
             "modifier_execution", "bhavat_bhavam_execution",
@@ -102,6 +100,7 @@ def test_s316_features_implemented():
 
 
 def test_s316_features_not_pending():
+    from src.corpus.feature_registry import PENDING_FEATURES
     s316 = {"argala_condition", "functional_benefic", "same_planet_constraint",
             "dynamic_karaka", "shadbala_strength", "navamsa_lagna",
             "modifier_execution", "bhavat_bhavam_execution",
@@ -111,6 +110,7 @@ def test_s316_features_not_pending():
 
 
 def test_s316_derived_primitives_implemented():
+    from src.corpus.feature_registry import IMPLEMENTED_FEATURES
     for f in ("derived_points_relationship", "derived_house_sign",
               "lord_of_derived_house", "planet_from_derived_lord"):
         assert f in IMPLEMENTED_FEATURES, f"{f} not implemented"

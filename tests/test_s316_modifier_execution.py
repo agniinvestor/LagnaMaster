@@ -1,5 +1,5 @@
 """Tests for modifier execution: gate eval, ordering, 3-tier negation, context scaling."""
-from src.calculations.inference import apply_modifiers
+from src.calculations.inference import apply_modifiers, aggregate_domains, ModifiedRule
 from src.calculations.rule_firing import FiredRule
 
 
@@ -162,7 +162,6 @@ def test_no_modifiers_unchanged():
 
 # --- Conflict resolution in aggregate_domains ---
 
-from src.calculations.inference import aggregate_domains, ModifiedRule
 
 
 def _modified(rule_id, domain, direction, magnitude, confidence=0.7, signal_group=""):
