@@ -449,14 +449,18 @@ def compute_drik_bala(planet: str, chart) -> float:
         virupas = bphs_drishti_with_specials(aspector, arc)
 
         if virupas > 0:
-            # Normalize to Rupa scale (60 virupas = 1 Rupa)
             rupa_fraction = virupas / 60.0
-            if aspector in natural_benefics:
+            # BPHS Ch.27 v.19 (p.284): "Reduce one fourth if malefic aspects,
+            # add a fourth if benefic. Super add entire aspect of Mercury and Jupiter."
+            if aspector in ("Mercury", "Jupiter"):
+                # Full aspect added (special rule for Mercury/Jupiter)
                 total += rupa_fraction
+            elif aspector in natural_benefics:
+                total += rupa_fraction * 0.25
             elif aspector in natural_malefics:
-                total -= rupa_fraction
+                total -= rupa_fraction * 0.25
 
-    return round(total * 30.0, 3)  # scale to Virupa range (±30 typical)
+    return round(total * 60.0, 3)  # convert Rupas to Virupas
 
 
 # ─── Saptavargaja Bala ────────────────────────────────────────────────────────
