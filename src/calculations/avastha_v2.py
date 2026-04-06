@@ -1,113 +1,62 @@
 """
-src/calculations/avastha_v2.py — Session 39 (fixed)
-Corrected Baaladi (even-sign reversal) and Sayanadi avastha systems.
+src/calculations/avastha_v2.py — Session 39 (fixed), S317 consolidated.
+Delegates to avasthas.py (BPHS Ch.45 authoritative) for Baaladi.
+Lajjitadi from avasthas.py replaces the ad-hoc Sayanadi modifier.
 """
 
 from __future__ import annotations
 from dataclasses import dataclass
 
-_BAALADI_ODD = [
-    (0, 6, "Bala", 0.25),
-    (6, 12, "Kumar", 0.5),
-    (12, 18, "Yuva", 1.0),
-    (18, 24, "Vridha", 0.5),
-    (24, 30, "Mrita", 0.0),
-]
-_BAALADI_EVEN = [
-    (0, 6, "Mrita", 0.0),
-    (6, 12, "Vridha", 0.5),
-    (12, 18, "Yuva", 1.0),
-    (18, 24, "Kumar", 0.5),
-    (24, 30, "Bala", 0.25),
-]
+from src.calculations.avasthas import (
+    compute_baaladi as _bphs_baaladi,
+    compute_jagradadi,
+    compute_lajjitadi,
+    BAALADI_EFFECT,
+    JAGRADADI_EFFECT,
+    LajjitadiAvastha,
+)
 
-_NAT_FRIEND = {
-    "Sun": {"Moon", "Mars", "Jupiter"},
-    "Moon": {"Sun", "Mercury"},
-    "Mars": {"Sun", "Moon", "Jupiter"},
-    "Mercury": {"Sun", "Venus"},
-    "Jupiter": {"Sun", "Moon", "Mars"},
-    "Venus": {"Mercury", "Saturn"},
-    "Saturn": {"Mercury", "Venus"},
+
+# Legacy name mapping for backward compatibility with existing consumers
+_BAALADI_NAMES = {
+    "BAALA": "Bala", "KUMARA": "Kumar", "YUVA": "Yuva",
+    "VRIDDHA": "Vridha", "MRITA": "Mrita",
 }
-_NAT_ENEMY = {
-    "Sun": {"Venus", "Saturn"},
-    "Moon": set(),
-    "Mars": {"Mercury"},
-    "Mercury": {"Moon"},
-    "Jupiter": {"Mercury", "Venus"},
-    "Venus": {"Sun", "Moon"},
-    "Saturn": {"Sun", "Moon", "Mars"},
-}
-_SIGN_LORD = {
-    0: "Mars",
-    1: "Venus",
-    2: "Mercury",
-    3: "Moon",
-    4: "Sun",
-    5: "Mercury",
-    6: "Venus",
-    7: "Mars",
-    8: "Jupiter",
-    9: "Saturn",
-    10: "Saturn",
-    11: "Jupiter",
-}
-_WATERY = {3, 7, 11}
-_NAT_MALEFIC = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
 
 def compute_baaladi(planet: str, chart) -> tuple[str, float]:
+    """Delegates to BPHS-authoritative avasthas.py (Ch.45 v.3-4)."""
     pos = chart.planets.get(planet)
     if not pos:
         return "Yuva", 1.0
-    deg = pos.degree_in_sign
-    table = _BAALADI_EVEN if pos.sign_index % 2 == 1 else _BAALADI_ODD
-    for lo, hi, name, eff in table:
-        if lo <= deg < hi:
-            return name, eff
-    return "Bala", 0.25
+    result = _bphs_baaladi(pos.sign_index, pos.degree_in_sign)
+    name = _BAALADI_NAMES.get(result.name, result.value)
+    return name, BAALADI_EFFECT[result]
+
+
+# Lajjitadi modifier mapping — BPHS Ch.45 v.24-29 (p.453)
+_LAJJITADI_MOD: dict[LajjitadiAvastha | None, float] = {
+    LajjitadiAvastha.GARVITA: 1.25,    # Proud — exalted/MT
+    LajjitadiAvastha.MUDITA: 1.15,     # Delighted — friendly + benefic
+    None: 1.0,                          # No specific state
+    LajjitadiAvastha.LAJJITA: 0.75,    # Ashamed — 5th + malefic
+    LajjitadiAvastha.KSHUDITA: 0.70,   # Hungry — enemy sign
+    LajjitadiAvastha.TRUSHITA: 0.65,   # Thirsty — watery + enemy
+    LajjitadiAvastha.KSHOBHITA: 0.50,  # Agitated — Sun + malefic
+}
 
 
 def compute_sayanadi(planet: str, chart) -> tuple[str, float]:
-    pos = chart.planets.get(planet)
-    if not pos:
-        return "Prakrita", 1.0
-
-    # Kopa: combust
-    try:
-        from src.calculations.dignity import compute_all_dignities, DignityLevel
-
-        dig = compute_all_dignities(chart).get(planet)
-        if dig and dig.combust:
-            return "Kopa", 0.5
-        if dig and dig.dignity in {
-            DignityLevel.EXALT,
-            DignityLevel.OWN_SIGN,
-            DignityLevel.MOOLTRIKONA,
-        }:
-            return "Sthira", 1.25
-    except Exception:
-        pass
-
-    # Friendly sign → Mudita
-    lord = _SIGN_LORD[pos.sign_index]
-    if lord in _NAT_FRIEND.get(planet, set()):
-        return "Mudita", 1.25
-
-    # Enemy sign → Kshuditha
-    if lord in _NAT_ENEMY.get(planet, set()):
-        return "Kshuditha", 0.75
-
-    # Watery sign + malefic aspect → Trashita
-    if pos.sign_index in _WATERY:
-        for p2, p2pos in chart.planets.items():
-            if p2 in _NAT_MALEFIC and p2 != planet:
-                diff = (pos.sign_index - p2pos.sign_index) % 12
-                if diff == 6:
-                    return "Trashita", 0.75
-
-    return "Prakrita", 1.0
+    """Uses BPHS Lajjitadi (Ch.45 v.11-18) for association-based modifier."""
+    lajj = compute_lajjitadi(planet, chart)
+    if lajj is None:
+        # Fall back to Jagradadi for basic dignity-based modifier
+        pos = chart.planets.get(planet)
+        if not pos:
+            return "Prakrita", 1.0
+        jag = compute_jagradadi(planet, pos.sign_index)
+        return jag.value, JAGRADADI_EFFECT[jag] * 1.25 if JAGRADADI_EFFECT[jag] > 0 else 1.0
+    return lajj.value, _LAJJITADI_MOD.get(lajj, 1.0)
 
 
 @dataclass

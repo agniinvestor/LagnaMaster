@@ -39,21 +39,34 @@ BALA_AVASTHA_MODIFIER: dict[BalaAvastha, float] = {
 }
 
 
-def bala_avastha(degree_in_sign: float) -> BalaAvastha:
-    """
-    Returns the Bala Avastha for a planet's degree within its sign.
+def bala_avastha(degree_in_sign: float, sign_index: int = 0) -> BalaAvastha:
+    """Returns the Bala Avastha for a planet's degree within its sign.
+
+    BPHS Ch.45 v.3: reversed for even signs (Taurus, Cancer, etc.).
     Source: PVRNR · BPHS Ch.45 v.1-8
     """
     d = degree_in_sign % 30
+    is_odd = sign_index % 2 == 0  # Aries=0 is odd
+    if is_odd:
+        if d < 6:
+            return BalaAvastha.BALA
+        if d < 12:
+            return BalaAvastha.KUMARA
+        if d < 18:
+            return BalaAvastha.YUVA
+        if d < 24:
+            return BalaAvastha.VRIDDHA
+        return BalaAvastha.MRITA
+    # even sign: reversed
     if d < 6:
-        return BalaAvastha.BALA
+        return BalaAvastha.MRITA
     if d < 12:
-        return BalaAvastha.KUMARA
+        return BalaAvastha.VRIDDHA
     if d < 18:
         return BalaAvastha.YUVA
     if d < 24:
-        return BalaAvastha.VRIDDHA
-    return BalaAvastha.MRITA
+        return BalaAvastha.KUMARA
+    return BalaAvastha.BALA
 
 
 # ─── Jagradadi Avastha (Awake/Dreaming/Sleeping) ─────────────────────────────
@@ -233,7 +246,7 @@ def compute_avasthas(planet: str, chart) -> AvasthaResult:
     deg = chart.planets[planet].degree_in_sign
     si = chart.planets[planet].sign_index
 
-    bala = bala_avastha(deg)
+    bala = bala_avastha(deg, si)
     jagra = jagradadi_avastha(planet, si)
     deepta = deeptadi_avastha(planet, chart)
 

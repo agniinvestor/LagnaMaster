@@ -1081,9 +1081,9 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             if not planet_spec:
                 return False, 0
             pname = planet_spec.title()
-            if nature == "malefic" and pname not in _MALEFICS:
+            if nature == "malefic" and not is_natural_malefic(pname, chart):
                 return False, 0
-            if nature == "benefic" and pname not in _BENEFICS:
+            if nature == "benefic" and is_natural_malefic(pname, chart):
                 return False, 0
 
         elif ctype == "planet_in_house_category":
@@ -1165,9 +1165,9 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             nature = cond.get("nature", "benefic")  # "benefic"|"malefic"
             house_si = (chart.lagna_sign_index + house - 1) % 12
             lord = _SIGN_LORDS[house_si]
-            if nature == "benefic" and lord not in _BENEFICS:
+            if nature == "benefic" and is_natural_malefic(lord, chart):
                 return False, 0
-            if nature == "malefic" and lord not in _MALEFICS:
+            if nature == "malefic" and not is_natural_malefic(lord, chart):
                 return False, 0
 
         elif ctype == "upagraha_in_house":
