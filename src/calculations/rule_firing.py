@@ -60,20 +60,36 @@ def is_natural_malefic(planet: str, chart=None) -> bool:
         merc = chart.planets.get("Mercury")
         if not merc:
             return False
-        # Check cotenants for malefics.
-        # NOTE: text is silent on Mercury + benefic + malefic together.
-        # Current interpretation: any malefic conjunction = malefic.
-        has_malefic_cotenant = False
+        # Mercury's nature determined by strongest influence in same sign.
+        # Factors: proximity (degree distance), planetary war, strength.
+        # BPHS Ch.3 v.11 + general principles: closest planet's nature dominates.
+        # Moon-Mercury mutual rescue (p.28): Moon never makes Mercury malefic.
+        closest_planet = None
+        closest_dist = 999.0
         for p, pos in chart.planets.items():
             if p == "Mercury" or pos.sign_index != merc.sign_index:
                 continue
-            # Moon-Mercury mutual rescue (p.28): both benefic when together
             if p == "Moon":
-                continue  # Moon never makes Mercury malefic (mutual rescue)
-            if p in ("Sun", "Mars", "Saturn", "Rahu", "Ketu"):
-                has_malefic_cotenant = True
-                break
-        return has_malefic_cotenant
+                continue  # mutual rescue — Moon never contaminates Mercury
+            dist = abs(merc.longitude - pos.longitude)
+            if dist > 180:
+                dist = 360 - dist
+            if dist < closest_dist:
+                closest_dist = dist
+                closest_planet = p
+        if closest_planet is None:
+            return False  # no conjunction → default benefic
+        # Check if closest planet is malefic
+        # Also check graha yuddha: war winner's nature dominates
+        war_losers = getattr(chart, "planetary_war_losers", set())
+        if closest_planet in war_losers and "Mercury" not in war_losers:
+            # Mercury won the war → Mercury's default benefic nature prevails
+            return False
+        if "Mercury" in war_losers and closest_planet not in war_losers:
+            # Mercury lost → opponent's nature dominates
+            return closest_planet in ("Sun", "Mars", "Saturn", "Rahu", "Ketu")
+        # No war or both equal: closest planet's nature determines
+        return closest_planet in ("Sun", "Mars", "Saturn", "Rahu", "Ketu")
 
     return False
 
