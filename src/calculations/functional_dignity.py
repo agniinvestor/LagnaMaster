@@ -222,18 +222,18 @@ def yogakaraka(lagna_sign_index: int) -> list[str]:
 
 # Classic Yogakarakas by Lagna
 KNOWN_YOGAKARAKAS: dict[int, list[str]] = {
-    0: ["Sun"],  # Aries: Sun (H5 lord = Trikona; H4 Kendra via rulership)
-    1: ["Saturn"],  # Taurus: Saturn rules H9+H10
-    2: [],  # Gemini: no single Yogakaraka
-    3: ["Mars"],  # Cancer: Mars rules H5+H10
-    4: ["Mars"],  # Leo: Mars rules H4+H9
-    5: ["Venus"],  # Virgo: Venus rules H2+H9... (partial)
-    6: ["Saturn"],  # Libra: Saturn rules H4+H5
-    7: ["Jupiter"],  # Scorpio: Jupiter rules H2+H5
-    8: [],  # Sagittarius: no clear Yogakaraka
-    9: ["Venus"],  # Capricorn: Venus rules H5+H10
-    10: ["Venus"],  # Aquarius: Venus rules H4+H9
-    11: [],  # Pisces: Mars partial (H2+H9)
+    0: [],  # Aries: Mars is "best planet" (BPHS Ch.34 v.19) but H1 is degenerate K+T
+    1: ["Saturn"],  # Taurus: Saturn rules H9(T)+H10(K) — BPHS Ch.34 v.23
+    2: [],  # Gemini: no single yogakaraka — BPHS Ch.34 v.25
+    3: ["Mars"],  # Cancer: Mars rules H5(T)+H10(K) — BPHS Ch.34 v.27
+    4: ["Mars"],  # Leo: Mars rules H4(K)+H9(T) — BPHS Ch.34 v.29
+    5: [],  # Virgo: Venus auspicious (H2+H9) but H2≠kendra — BPHS Ch.34 v.31
+    6: ["Saturn"],  # Libra: Saturn rules H4(K)+H5(T) — BPHS Ch.34 v.33
+    7: [],  # Scorpio: Sun+Moon jointly favorable; Jupiter H2+H5 (H2≠K) — Ch.34 v.35
+    8: [],  # Sagittarius: no single yogakaraka — BPHS Ch.34 v.37
+    9: ["Venus"],  # Capricorn: Venus rules H5(T)+H10(K) — BPHS Ch.34 v.39
+    10: ["Venus"],  # Aquarius: Venus rules H4(K)+H9(T) — BPHS Ch.34 v.41
+    11: [],  # Pisces: Mars+Jupiter jointly; no single strict K+T — Ch.34 v.43
 }
 
 # Functional malefic by Lagna (traditional summary)
