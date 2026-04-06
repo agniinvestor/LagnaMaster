@@ -195,6 +195,21 @@ _NAISARGIKA: dict[tuple[str, str], str] = {
     ("Saturn", "Moon"): "Enemy",
     ("Saturn", "Mars"): "Enemy",
     ("Saturn", "Jupiter"): "Neutral",
+    # Rahu/Ketu — BPHS Ch.3 notes (p.41, Santhanam Vol 1)
+    ("Rahu", "Sun"): "Enemy",
+    ("Rahu", "Moon"): "Enemy",
+    ("Rahu", "Mars"): "Enemy",
+    ("Rahu", "Mercury"): "Neutral",
+    ("Rahu", "Jupiter"): "Friend",
+    ("Rahu", "Venus"): "Friend",
+    ("Rahu", "Saturn"): "Friend",
+    ("Ketu", "Sun"): "Enemy",
+    ("Ketu", "Moon"): "Enemy",
+    ("Ketu", "Mars"): "Friend",
+    ("Ketu", "Mercury"): "Neutral",
+    ("Ketu", "Jupiter"): "Neutral",
+    ("Ketu", "Venus"): "Friend",
+    ("Ketu", "Saturn"): "Friend",
 }
 
 # ─── Combustion orbs ─────────────────────────────────────────────────────────

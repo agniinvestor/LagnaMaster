@@ -32,6 +32,9 @@ _NAT_FRIEND_DICT = {
     "Jupiter": {"Sun", "Moon", "Mars"},
     "Venus": {"Mercury", "Saturn"},
     "Saturn": {"Mercury", "Venus"},
+    # BPHS Ch.3 notes (p.41, Santhanam Vol 1)
+    "Rahu": {"Jupiter", "Venus", "Saturn"},
+    "Ketu": {"Mars", "Venus", "Saturn"},
 }
 _NAT_ENEMY_DICT = {
     "Sun": {"Venus", "Saturn"},
@@ -41,6 +44,9 @@ _NAT_ENEMY_DICT = {
     "Jupiter": {"Mercury", "Venus"},
     "Venus": {"Sun", "Moon"},
     "Saturn": {"Sun", "Moon", "Mars"},
+    # BPHS Ch.3 notes (p.41, Santhanam Vol 1)
+    "Rahu": {"Sun", "Moon", "Mars"},
+    "Ketu": {"Sun", "Moon"},
 }
 
 _TATKALIK_FRIEND_HOUSES = {2, 3, 4, 10, 11, 12}  # from P1's house
