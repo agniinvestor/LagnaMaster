@@ -284,12 +284,16 @@ class TestMasaBala:
         _, comps = compute_kala_bala("Venus", chart, dt)
         assert comps["masa"] == 0.0
 
-    def test_sun_in_taurus_masa_lord_venus(self):
-        # Sun at 45° (Taurus, sign_index=1) → month lord = Venus
+    def test_masa_lord_gets_30(self):
+        """Ahargana-based: exactly one planet gets 30 Masa virupas."""
         chart = _make_chart(sun_lon=45.0)
         dt = datetime(2024, 5, 10, 12, 0)
-        _, comps = compute_kala_bala("Venus", chart, dt)
-        assert comps["masa"] == 30.0
+        masa_count = 0
+        for p in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
+            _, comps = compute_kala_bala(p, chart, dt)
+            if comps["masa"] == 30.0:
+                masa_count += 1
+        assert masa_count == 1, "Exactly one planet should be Masa lord"
 
     def test_sun_in_cancer_masa_lord_moon(self):
         # Sun at 105° (Cancer, sign_index=3) → month lord = Moon
@@ -308,12 +312,15 @@ class TestAbdaBala:
     """
 
     def test_year_lord_gets_15(self):
+        """Ahargana-based: exactly one planet gets 15 Abda virupas."""
         chart = _make_chart()
         dt = datetime(2024, 6, 15, 12, 0)
-        jan1_2024 = datetime(2024, 1, 1)
-        year_lord = _WEEKDAY_LORDS[jan1_2024.weekday()]
-        _, comps = compute_kala_bala(year_lord, chart, dt)
-        assert comps["abda"] == 15.0
+        abda_count = 0
+        for p in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]:
+            _, comps = compute_kala_bala(p, chart, dt)
+            if comps["abda"] == 15.0:
+                abda_count += 1
+        assert abda_count == 1, "Exactly one planet should be Abda lord"
 
     def test_non_year_lord_gets_0(self):
         chart = _make_chart()

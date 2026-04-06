@@ -91,6 +91,22 @@ KENDRADI_VIRUPAS: dict[str, float] = {
     "apoklima": 15.0,  # H3/H6/H9/H12
 }
 
+# Ahargana computation — BPHS Ch.27 v.13, speculum pp.271-274
+# Reference: Jan 0, 1947 (= Dec 31, 1946) has Ahargana 51628 per BPHS table (p.274)
+_AHARGANA_REF_DATE = (1946, 12, 31)  # year, month, day
+_AHARGANA_REF_VALUE = 51628
+
+
+def _compute_ahargana(birth_dt) -> int:
+    """Compute abbreviated Ahargana from birth datetime.
+    Uses BPHS speculum reference point (1947 Jan 0 = 51628).
+    """
+    from datetime import date
+    ref = date(*_AHARGANA_REF_DATE)
+    birth = date(birth_dt.year, birth_dt.month, birth_dt.day)
+    return _AHARGANA_REF_VALUE + (birth - ref).days
+
+
 # Hora sequence for Kala Bala (weekday lord order)
 _HORA_SEQUENCE = ["Sun", "Venus", "Mercury", "Moon", "Saturn", "Jupiter", "Mars"]
 _WEEKDAY_LORDS = [
@@ -367,36 +383,25 @@ def compute_kala_bala(
     else:
         components["hora"] = 0.0
 
-    # 6. Masa Bala (month lord — simplified: use Sun's sign for solar month)
+    # 6-7. Masa and Abda Bala — BPHS Ch.27 v.13 (p.270)
+    # Uses Ahargana (abbreviated days from creation) per BPHS speculum (pp.271-274)
+    # Abda lord: ((Ahargana÷360)×3+1) mod 7; Masa lord: ((Ahargana÷30)×2+1) mod 7
     if birth_dt is not None:
-        sun_sign = chart.planets["Sun"].sign_index if "Sun" in chart.planets else 0
-        # Solar month lords cycle: Aries=Mars, Taurus=Venus, etc.
-        month_lords = [
-            "Mars",
-            "Venus",
-            "Mercury",
-            "Moon",
-            "Sun",
-            "Mercury",
-            "Venus",
-            "Mars",
-            "Jupiter",
-            "Saturn",
-            "Saturn",
-            "Jupiter",
-        ]
-        masa_lord = month_lords[sun_sign % 12]
+        ahargana = _compute_ahargana(birth_dt)
+        # Weekday mapping: 1=Sun, 2=Mon, 3=Tue, 4=Wed, 5=Thu, 6=Fri, 0(7)=Sat
+        _AHARGANA_LORDS = {1: "Sun", 2: "Moon", 3: "Mars", 4: "Mercury",
+                           5: "Jupiter", 6: "Venus", 0: "Saturn"}
+
+        abda_wd = ((ahargana // 360) * 3 + 1) % 7
+        abda_lord = _AHARGANA_LORDS.get(abda_wd, "Sun")
+        components["abda"] = 15.0 if planet == abda_lord else 0.0
+
+        masa_wd = ((ahargana // 30) * 2 + 1) % 7
+        masa_lord = _AHARGANA_LORDS.get(masa_wd, "Sun")
         components["masa"] = 30.0 if planet == masa_lord else 0.0
     else:
-        components["masa"] = 0.0
-
-    # 7. Abda Bala (year lord — use weekday of January 1 of birth year)
-    if birth_dt is not None:
-        jan1 = datetime(birth_dt.year, 1, 1)
-        year_lord = _WEEKDAY_LORDS[jan1.weekday()]
-        components["abda"] = 15.0 if planet == year_lord else 0.0
-    else:
         components["abda"] = 0.0
+        components["masa"] = 0.0
 
     # 8. Ayana Bala — BPHS Ch.27 v.15-17 (pp.277-283)
     # Uses planet's true declination (Kranti), not sign-based approximation.
