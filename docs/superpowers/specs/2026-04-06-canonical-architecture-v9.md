@@ -67,17 +67,24 @@ Birth Data (date, time, location)
 | `LORDS` | Planet → Sign | — |
 | `LORDS_HOUSE` | Planet → House | — (lagna-dependent) |
 
-**Tier 2 — Derived (eager, computed from Tier 1)**
+**Tier 2a — Derived, lagna-independent (eager, shared across lagnas)**
+Planet-to-planet relationships that depend on POSITIONS, not house assignments.
 
 | Edge | Source → Target | Schema | Depends On | School? |
 |------|----------------|--------|-----------|---------|
 | `ASPECTS_PLANET` | Planet → Planet | `{strength_virupas, type}` | positions | **Yes** |
-| `ASPECTS_HOUSE` | Planet → House | `{strength_virupas, type}` | positions | **Yes** |
 | `CONJUNCT` | Planet → Planet | `{orb_degrees}` | positions | No |
-| `IN_KENDRA_FROM` | Planet → Planet | `{houses_apart, method}` | IN_HOUSE or IN_SIGN | **Yes** |
-| `IN_TRIKONA_FROM` | Planet → Planet | `{houses_apart, method}` | IN_HOUSE or IN_SIGN | **Yes** |
 | `COMBUSTION` | Planet → Sun | `{orb_degrees, is_cazimi}` | positions | Partially |
 | `FRIENDSHIP` | Planet → Planet | `{naisargika, tatkalik, compound}` | IN_SIGN + static | Partially |
+
+**Tier 2b — Derived, lagna-dependent (recomputed per lagna)**
+House-relative relationships that change when lagna changes.
+
+| Edge | Source → Target | Schema | Depends On | School? |
+|------|----------------|--------|-----------|---------|
+| `ASPECTS_HOUSE` | Planet → House | `{strength_virupas, type}` | positions + houses | **Yes** |
+| `IN_KENDRA_FROM` | Planet → Planet | `{houses_apart, method}` | IN_HOUSE or IN_SIGN | **Yes** |
+| `IN_TRIKONA_FROM` | Planet → Planet | `{houses_apart, method}` | IN_HOUSE or IN_SIGN | **Yes** |
 
 **Tier 3 — Interpretive-Factual (eager, classification only)**
 
@@ -88,7 +95,7 @@ Birth Data (date, time, location)
 
 **Tier 4 — Evaluative (LAZY, component-level, school-specific)**
 
-Computed on first access per (lagna, school). Memoized within one evaluation. Stores component dataclasses, NOT aggregates.
+Computed on first access. Memoized within one evaluation with explicit key `(node, lagna, school)`. Stores component dataclasses, NOT aggregates.
 
 | Attribute | Node | Schema | Depends On |
 |-----------|------|--------|-----------|
@@ -188,7 +195,7 @@ All config explicit, never hardcoded in computation modules.
 **School:** only matching school's rules evaluated.
 **Concordance:** all rules fire. Grouped by (grouping_key, domain, direction). Score = `Σ(text_authority × rule_confidence × direction)` normalized per text (mean per text, not sum — prevents rule-density flooding). Higher specificity overrides lower within same text.
 
-House score = `Σ(rule_weight × direction × confidence)` per house, preserving existing school weight tables (_WEIGHTS dicts).
+House score = `Σ(rule_weight × direction × confidence × lagna_weight)` per house. Lagna weights from config (default: natal=1.0, chandra=0.5, surya=0.3, D9=0.4, D10=0.3). Preserves existing school weight tables (_WEIGHTS dicts). Multiple cancellation modifiers compose multiplicatively: `final_effect = base × Π(modifiers)`. NB attenuation values (50% for 1 condition, 100% for 2+) are in ConventionSet, not hardcoded.
 
 Aggregation invariants: deterministic, no domain computation (statistical/meta operations allowed), full traceability.
 
@@ -200,7 +207,7 @@ Aggregation invariants: deterministic, no domain computation (statistical/meta o
 3. Build base ChartGraph + VargaGraphSet (Layer 3, Tier 1-3 eager, Tier 4 lazy)
    — all registered schools, all configured vargas
 4. For each lagna (natal, chandra, surya...):
-   a. Derive lagna graph (shared positions, recomputed Tier 2-4)
+   a. Derive lagna graph (shared positions + Tier 2a, recomputed Tier 1-house + Tier 2b + Tier 3-4)
    b. Evaluate rules against lagna graph (Layer 4)
       — Tier 4 computes lazily on first query, memoizes
       — rules auto-filtered to declared school
