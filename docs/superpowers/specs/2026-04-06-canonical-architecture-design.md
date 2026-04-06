@@ -36,6 +36,7 @@ Birth Data (date, time, location)
   Phase 1: procedural conditions querying graph
   Phase 2: declarative Rule IR (DSL) as pattern templates
   Multi-text: rules carry provenance (source, chapter, verse, school)
+  Rule execution scope: edge queries auto-filter to rule's declared school
   ↓
 [Layer 6] Aggregation (mode-dependent)
   Hierarchy: BPHS overrides others for computation
@@ -98,7 +99,7 @@ Provenance-complete. Every result traces to source, graph pattern, AND reasoning
 ## Graph Schema
 
 ### Node Types
-- `PlanetNode`: name, longitude, latitude, speed (Layer 1 data attached)
+- `PlanetNode`: name, longitude, latitude, speed, is_natural_malefic (computed at construction via chart-aware classification — Moon phase, Mercury conjunction)
 - `HouseNode`: number (1-12), sign, cusp_longitude
 - `SignNode`: index (0-11), name, lord
 
@@ -219,11 +220,11 @@ Rule:
 
 ### Contradictions Are Data
 ```
-Moon in 1st house:
-  (Moon)--[ASPECTS {school=parashari, strength=60}]-->(House1)
-  (Moon)--[ASPECTS {school=jaimini, strength=0}]-->(House1)
+Saturn aspecting Moon:
+  Parashari: (Saturn)--[ASPECTS {school=parashari, strength_virupas=60}]-->(Moon)
+  Jaimini:   [no ASPECTS edge exists between Saturn and Moon]
 ```
-Both edges exist simultaneously. Aggregation layer resolves per mode.
+Absence of edge IS the position — Jaimini says no aspect exists. Do NOT create zero-strength edges to represent "no relationship." Absence = no opinion/no relationship in that school. Presence = relationship exists with its attributes. Aggregation sees: Parashari fired a rule (aspect exists), Jaimini didn't fire (no edge to match). Silence = no opinion, not disagreement.
 
 ### Default School (explicit config, never implicit)
 ```python
