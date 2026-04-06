@@ -75,7 +75,7 @@ conventions_version: str
 Canonical representation. All downstream layers query this.
 
 ### Layer 4: Feature Access
-**Projection-only.** Feature access is a read-only view over the graph, not a computation layer. `moon.parashari.shadbala` resolves to a graph query, not a separate calculation. No hidden computation allowed — if the graph doesn't have it, the feature doesn't exist.
+**Graph-derived computation only.** Feature access computes derived values (Shadbala, dignity scores, avastha effects) but ALL inputs must come from graph edges — never from raw chart data. This is the hard constraint: the graph is the sole input source. Layer 4 may aggregate, weight, and combine graph attributes, but it cannot bypass the graph to access Layer 1-2 data directly. Existing domain taxonomy (`outcome_domains`) and concordance infrastructure (`concordance_count`, `concordance_texts`) on V2 rules are preserved and used by the aggregation layer.
 
 ### Layer 5 → Layer 6: `RuleResult`
 ```
@@ -173,8 +173,8 @@ Tier 1 (structural):
 Tier 2 (derived):
   ASPECTS ← positions (+ school for method)
   CONJUNCT ← positions
-  IN_KENDRA_FROM ← IN_HOUSE
-  IN_TRIKONA_FROM ← IN_HOUSE
+  IN_KENDRA_FROM ← IN_HOUSE (if method=house-based) OR IN_SIGN (if method=sign-based)
+  IN_TRIKONA_FROM ← IN_HOUSE (if method=house-based) OR IN_SIGN (if method=sign-based)
   COMBUSTION ← positions + conventions (orbs)
   FRIENDSHIP ← IN_SIGN (tatkalik) + static tables (naisargika)
 
@@ -191,7 +191,7 @@ New edge types require: (1) tier assignment, (2) dependency declaration, (3) typ
 1. Every planet has exactly 1 `IN_SIGN` and 1 `IN_HOUSE` edge
 2. Every house has exactly 1 `LORDS_HOUSE` incoming edge
 3. Every sign has exactly 1 `LORDS` incoming edge
-4. No duplicate edges of same (type + school) between same nodes
+4. No duplicate edges of same identity tuple `(type, school, method)` between same nodes. This is the canonical edge identity — two edges between the same nodes with different method or school are DISTINCT edges, not duplicates.
 5. All edge attributes are typed and validated at construction
 6. Graph construction is **pure** — same input always produces same graph
 7. No predictions, scores, or rule outputs in the graph — state + relationships only
