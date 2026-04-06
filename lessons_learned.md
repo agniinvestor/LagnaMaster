@@ -122,3 +122,43 @@
 **The honest assessment:** Build-time validation (T1-14 to T1-18) is the correct response because it removes self-detection from the equation. The system catches what I fail to catch. This is Principle #6 applied to my own behavior.
 
 **Control built:** The entire 4-moment gate system exists because self-detection is unreliable.
+
+---
+
+## L011: Read the text before trusting the table (2026-04-06, S317)
+
+**What happened:** The codebase had planetary data tables (friendship matrix, yogakarakas, functional malefics, upagraha formulas) built from secondary sources, workbooks, and other software — not verified against the BPHS text. 14 bugs found across 5 chapters when actually reading Santhanam Vol 1.
+
+**Examples:** Jupiter→Venus was "Neutral" (should be "Enemy" per Ch.3 v.55 table). Upaketu formula was off by ~167°. Three non-yogakarakas were listed as yogakarakas. Jupiter was listed as malefic for Cancer when the verse explicitly says "auspicious."
+
+**The rule:** Every hardcoded astrological constant must cite a specific verse number. If it doesn't, it's unverified. "From BPHS" is not a citation — "BPHS Ch.3 v.55, p.40" is.
+
+**Principle violated:** #8 (Source fidelity)
+
+**Control built:** `tests/test_s317_bphs_audit.py` — 102 regression tests, each citing a specific BPHS verse.
+
+---
+
+## L012: Don't add parallel infrastructure without discussing architecture (2026-04-06, S317)
+
+**What happened:** Added `bphs_drishti_virupas()` alongside existing `sputa_drishti_strength()` without checking callers, discussing the relationship, or cleaning up. Created parallel implementations serving the same conceptual purpose.
+
+**The rule:** Before adding new functions to a module that already has similar functions, check: (1) who calls the existing functions, (2) whether the new function replaces or supplements them, (3) whether dead code is created. Discuss architecture choices with the user.
+
+**Principle violated:** #9 (Exhaust the problem before proposing)
+
+**Control built:** None — behavioral lesson. Check callers before adding parallel code.
+
+---
+
+## L013: Translator's notes ≠ verse text (2026-04-06, S317)
+
+**What happened:** Expanded R16 evil lords from {6,8,12} to {3,6,8,11,12} based on Santhanam's parenthetical on p.123. But Santhanam's own detailed note (c) on p.125 uses {6,8,12}. The expansion was based on a loose translation gloss, not the verse itself.
+
+**Also:** Initially interpreted "lord's aspect on own house" as a negative condition (penalty for absence). The text actually says absence is the normal state — the aspect is a bonus when it happens.
+
+**The rule:** When the verse says X and the translator's notes say Y, the verse takes priority. Parenthetical glosses, worked examples, and notes are interpretive aids, not primary authority. Read the full context — if the same author contradicts his own parenthetical in detailed notes, the detailed notes prevail.
+
+**Principle violated:** #8 (Source fidelity)
+
+**Control built:** Clean sweep protocol — after initial audit, re-examine all interpretations for translator vs text confusion.
