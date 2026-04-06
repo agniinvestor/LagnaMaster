@@ -95,7 +95,7 @@ House-relative relationships that change when lagna changes.
 
 **Tier 4 — Evaluative (LAZY, component-level, school-specific)**
 
-Computed on first access. Memoized within one evaluation with explicit key `(node, lagna, school)`. Stores component dataclasses, NOT aggregates.
+Computed on first access. Memoized within one evaluation with explicit key `(node, lagna, school)`. **Immutable once computed** — no rule, cancellation, or aggregation step can modify Tier 4 values. Rules are pure readers. Stores BASE, CONTEXT-FREE, NON-INTERACTING components only. Rules are responsible for interpreting, composing, and applying contextual adjustments to these base values. Two engineers reading the same Tier 4 output must get the same meaning — there is no "adjusted" vs "raw" distinction. There is only the base components.
 
 | Attribute | Node | Schema | Depends On |
 |-----------|------|--------|-----------|
