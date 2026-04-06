@@ -86,7 +86,12 @@ matched_pattern:
   bindings: dict[str, Any] # variable bindings (e.g., planet=Jupiter, house=4)
 prediction: {domain, direction, intensity, entity_target}
 confidence: float
-trace: {edges_queried, conditions_checked, why_fired}
+context:
+  graph_schema_version: str
+  conventions_version: str    # which conventions produced the graph this rule queried
+  computation_school: str     # which school's edges were available
+trace: {edges_queried, conditions_checked, why_fired, convention_dependencies}
+grouping_key: str             # for aggregation: "H4" (house-specific) or "Jupiter-Moon" (relational)
 ```
 Provenance-complete. Every result traces to source, graph pattern, AND reasoning.
 
@@ -117,8 +122,8 @@ These require position-based computation.
 |-----------|----------------|--------|-----------|-----------------|
 | `ASPECTS` | Planet → Planet/House | `{strength_virupas: float, aspect_type: str}` | positions | **Yes** (Parashari graha / Jaimini rasi) |
 | `CONJUNCT` | Planet → Planet | `{orb_degrees: float}` | positions | No |
-| `IN_KENDRA_FROM` | Planet → Planet | `{houses_apart: int}` | `IN_HOUSE` | No |
-| `IN_TRIKONA_FROM` | Planet → Planet | `{houses_apart: int}` | `IN_HOUSE` | No |
+| `IN_KENDRA_FROM` | Planet → Planet | `{houses_apart: int, method: str}` | `IN_HOUSE` | **Yes** (house-based=Parashari, sign-based=Jaimini) |
+| `IN_TRIKONA_FROM` | Planet → Planet | `{houses_apart: int, method: str}` | `IN_HOUSE` | **Yes** (same as above) |
 | `COMBUSTION` | Planet → Sun | `{orb_degrees: float, is_cazimi: bool}` | positions | Partially (orbs vary) |
 | `FRIENDSHIP` | Planet → Planet | `{naisargika: str, tatkalik: str, compound: str}` | `IN_SIGN` (for tatkalik) | Partially |
 
@@ -141,6 +146,21 @@ These classify state but do NOT evaluate or score.
 **Yogas are NOT graph edges.** Yoga detection belongs to the Rule Engine (Layer 5) as pattern matching over the graph.
 
 **New edge types must justify why they cannot be an attribute of an existing edge type.** This prevents edge explosion.
+
+### Edge Direction Semantics (formal)
+Every directed edge `(A)--[TYPE]-->(B)` has a fixed reading:
+- `IN_SIGN(Planet, Sign)`: "Planet occupies Sign"
+- `IN_HOUSE(Planet, House)`: "Planet occupies House"
+- `LORDS(Planet, Sign)`: "Planet rules Sign"
+- `LORDS_HOUSE(Planet, House)`: "Planet rules House"
+- `ASPECTS(A, B)`: "A casts aspect on B" (A is aspector, B is aspected)
+- `CONJUNCT(A, B)`: "A is conjunct B" (symmetric — both edges created)
+- `IN_KENDRA_FROM(A, B)`: "A is in kendra from B" ⇔ `(house(A) - house(B)) % 12 ∈ {0, 3, 6, 9}`
+- `IN_TRIKONA_FROM(A, B)`: "A is in trikona from B" ⇔ `(house(A) - house(B)) % 12 ∈ {0, 4, 8}`
+- `FRIENDSHIP(A, B)`: "A's relationship toward B" (asymmetric — A→B may differ from B→A)
+- `COMBUSTION(Planet, Sun)`: "Planet is combust by Sun"
+
+Direction is **never implicit**. Flipping source/target changes the meaning. Enforced by typed constructors that accept (source_type, target_type).
 
 ### Edge Dependency Graph
 ```
@@ -229,7 +249,7 @@ BPHS/Parashari is the recommended default. This is declared in config and passed
 
 **Concordance mode (recommended):**
 - All rules fire regardless of school
-- Results grouped by (house, domain, direction)
+- Results grouped by (grouping_key, domain, direction) — grouping_key is house-number for house-specific rules, planet-pair for relational rules, "global" for chart-wide rules
 - Weighted concordance: `score = Σ(text_authority_weight × rule_confidence × agreement_sign)`
 - Text authority weights configurable (default: BPHS=1.0, others=0.8)
 - Rule confidence from corpus metadata (concordance_count, verse specificity)
