@@ -60,7 +60,9 @@ def is_natural_malefic(planet: str, chart=None) -> bool:
         merc = chart.planets.get("Mercury")
         if not merc:
             return False
-        # Check cotenants for malefics
+        # Check cotenants for malefics.
+        # NOTE: text is silent on Mercury + benefic + malefic together.
+        # Current interpretation: any malefic conjunction = malefic.
         has_malefic_cotenant = False
         for p, pos in chart.planets.items():
             if p == "Mercury" or pos.sign_index != merc.sign_index:
