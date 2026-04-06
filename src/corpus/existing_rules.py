@@ -22,15 +22,16 @@ EXISTING_RULES_REGISTRY = CorpusRegistry()
 _RULES = [
     RuleRecord(
         rule_id="R01",
-        source="BPHS",
-        chapter="Ch.11",
+        source="General Jyotish",
+        chapter="General",
         school="all",
         category="house_quality",
         description=(
-            "Gentle/benefic signs (Cancer, Taurus, Libra, Pisces, Sagittarius) "
+            "Signs ruled by natural benefics (Venus, Moon, Jupiter) — "
+            "i.e. Taurus, Cancer, Libra, Sagittarius, Pisces — "
             "occupying the house cusp give benefic results for that house."
         ),
-        confidence=0.9,
+        confidence=0.8,
         tags=["gentle_sign", "saumya", "house_sign"],
         implemented=True,
         engine_ref="multi_axis_scoring._score_one_house:R01",

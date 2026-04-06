@@ -91,17 +91,6 @@ KENDRADI_VIRUPAS: dict[str, float] = {
     "apoklima": 15.0,  # H3/H6/H9/H12
 }
 
-# Aspect partial strengths (Phase 0 fix: BPHS Ch.26 v.3-5)
-# Used for Drik Bala computation
-ASPECT_STRENGTH: dict[tuple[str, int], float] = {
-    ("Mars", 4): 0.75,
-    ("Mars", 8): 0.75,
-    ("Jupiter", 5): 0.75,
-    ("Jupiter", 9): 0.75,
-    ("Saturn", 3): 0.75,
-    ("Saturn", 10): 0.75,
-}
-
 # Hora sequence for Kala Bala (weekday lord order)
 _HORA_SEQUENCE = ["Sun", "Venus", "Mercury", "Moon", "Saturn", "Jupiter", "Mars"]
 _WEEKDAY_LORDS = [
@@ -172,7 +161,7 @@ class ShadbalResult:
 
     @property
     def is_strong(self) -> bool:
-        """Minimum Shadbala threshold per BPHS."""
+        """Minimum Shadbala threshold per BPHS Ch.27 v.32-33 (p.287)."""
         thresholds = {
             "Sun": 390,
             "Moon": 360,
@@ -183,6 +172,28 @@ class ShadbalResult:
             "Saturn": 300,
         }
         return self.total >= thresholds.get(self.planet, 300)
+
+    @property
+    def component_strength(self) -> dict[str, bool]:
+        """Per-component minimum check per BPHS Ch.27 v.34-36 (p.288).
+        Group A = Jupiter/Mercury/Sun, B = Moon/Venus, C = Mars/Saturn."""
+        _MINS: dict[str, dict[str, float]] = {
+            "Sun": {"sthana": 165, "dig": 35, "kala": 50, "chesta": 112, "ayana": 30},
+            "Mercury": {"sthana": 165, "dig": 35, "kala": 50, "chesta": 112, "ayana": 30},
+            "Jupiter": {"sthana": 165, "dig": 35, "kala": 50, "chesta": 112, "ayana": 30},
+            "Moon": {"sthana": 133, "dig": 50, "kala": 30, "chesta": 100, "ayana": 40},
+            "Venus": {"sthana": 133, "dig": 50, "kala": 30, "chesta": 100, "ayana": 40},
+            "Mars": {"sthana": 96, "dig": 30, "kala": 40, "chesta": 67, "ayana": 20},
+            "Saturn": {"sthana": 96, "dig": 30, "kala": 40, "chesta": 67, "ayana": 20},
+        }
+        mins = _MINS.get(self.planet, {})
+        return {
+            "sthana": self.sthana_bala >= mins.get("sthana", 0),
+            "dig": self.dig_bala >= mins.get("dig", 0),
+            "kala": self.kala_bala >= mins.get("kala", 0),
+            "chesta": self.chesta_bala >= mins.get("chesta", 0),
+            "ayana": self.ayana_bala >= mins.get("ayana", 0),
+        }
 
 
 # ─── Dig Bala ────────────────────────────────────────────────────────────────
@@ -230,15 +241,34 @@ def compute_kendradi_bala(planet: str, chart) -> float:
 
 
 def compute_ojha_yugma_bala(planet: str, chart) -> float:
+    """Ojhayugmarasiamsa Bala — BPHS Ch.27 v.4 (p.265).
+
+    Male planets get 15 virupas in odd Rasi, female in even Rasi.
+    'These are applicable to such Navamsas also' — check both independently.
+    Maximum 30 virupas (15 Rasi + 15 Navamsa).
+    """
     if planet not in chart.planets:
         return 15.0
     si = chart.planets[planet].sign_index
-    is_odd_sign = si % 2 == 0  # Aries=0 is odd
+    is_odd_rasi = si % 2 == 0  # Aries=0 is odd
+
+    # Navamsa sign
+    try:
+        from src.calculations.vargas import compute_varga_sign
+        d9_si = compute_varga_sign(chart.planets[planet].longitude, 9)
+        is_odd_d9 = d9_si % 2 == 0
+    except Exception:
+        is_odd_d9 = is_odd_rasi  # fallback: assume same as Rasi
+
     if planet in MALE_PLANETS:
-        return 30.0 if is_odd_sign else 0.0
-    if planet in FEMALE_PLANETS:
-        return 30.0 if not is_odd_sign else 0.0
-    return 15.0  # neutral planets (Mercury, Saturn)
+        rasi_v = 15.0 if is_odd_rasi else 0.0
+        d9_v = 15.0 if is_odd_d9 else 0.0
+    elif planet in FEMALE_PLANETS:
+        rasi_v = 15.0 if not is_odd_rasi else 0.0
+        d9_v = 15.0 if not is_odd_d9 else 0.0
+    else:
+        return 15.0  # neutral planets (Mercury, Saturn) — always 15
+    return rasi_v + d9_v
 
 
 # ─── Kala Bala — all 8 sub-components ───────────────────────────────────────
@@ -254,26 +284,30 @@ def compute_kala_bala(
     """
     components: dict[str, float] = {}
 
-    # 1. Nathonnata Bala (day/night strength)
-    # Sun/Jupiter/Venus: strong by day (Natha)
-    # Moon/Mars/Saturn: strong by night (Unnata)
-    # Mercury: strong both day and night
+    # 1. Nathonnata Bala (day/night strength) — BPHS Ch.27 v.8-9 (p.268)
+    # Continuous: based on distance from midnight (night planets) or noon (day planets).
+    # Sun/Jupiter/Venus: max at noon (Natha), zero at midnight
+    # Moon/Mars/Saturn: max at midnight (Unnata), zero at noon
+    # Mercury: always 60 virupas
     if birth_dt is not None:
         hour = birth_dt.hour + birth_dt.minute / 60.0
-        is_day = 6.0 <= hour < 18.0  # simplified; ideally use sunrise
     else:
-        # Default: use Sun's position (above horizon = day)
+        # Estimate from Sun's position (rough: Sun at MC ≈ noon)
         sun_lon = chart.planets["Sun"].longitude if "Sun" in chart.planets else 270.0
-        is_day = not (90 <= sun_lon % 360 < 270)
+        hour = 12.0 if not (90 <= sun_lon % 360 < 270) else 0.0
+
+    # Distance from noon (0-12 hours), normalized to 0-1
+    dist_from_noon = min(abs(hour - 12.0), abs(hour - 12.0 + 24), abs(hour - 12.0 - 24))
+    noon_frac = 1.0 - dist_from_noon / 12.0  # 1.0 at noon, 0.0 at midnight
 
     day_planets = {"Sun", "Jupiter", "Venus"}
     night_planets = {"Moon", "Mars", "Saturn"}
     if planet == "Mercury":
         components["nathonnata"] = 60.0
     elif planet in day_planets:
-        components["nathonnata"] = 60.0 if is_day else 0.0
+        components["nathonnata"] = round(60.0 * noon_frac, 3)
     elif planet in night_planets:
-        components["nathonnata"] = 0.0 if is_day else 60.0
+        components["nathonnata"] = round(60.0 * (1.0 - noon_frac), 3)
     else:
         components["nathonnata"] = 30.0
 
@@ -294,6 +328,8 @@ def compute_kala_bala(
         components["paksha"] = 30.0
 
     # 3. Tribhaga Bala (day/night thirds)
+    # is_day derived from noon_frac (computed in Nathonnata above)
+    is_day = noon_frac >= 0.5
     if birth_dt is not None:
         hour = birth_dt.hour + birth_dt.minute / 60.0
         if is_day:

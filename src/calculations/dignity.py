@@ -212,6 +212,22 @@ _NAISARGIKA: dict[tuple[str, str], str] = {
     ("Ketu", "Saturn"): "Friend",
 }
 
+# ─── Planetary classifications — BPHS Ch.3 ──────────────────────────────────
+
+# Dhatu/Moola/Jeeva — BPHS Ch.3 v.47 (p.38)
+# "Dhatu planets are Rahu, Mars, Saturn and the Moon while the Sun and
+#  Venus are Moola planets. Mercury, Jupiter and Ketu rule Jeevas."
+DHATU_PLANETS = {"Rahu", "Mars", "Saturn", "Moon"}  # metals, minerals
+MOOLA_PLANETS = {"Sun", "Venus"}  # roots, vegetables
+JEEVA_PLANETS = {"Mercury", "Jupiter", "Ketu"}  # living beings
+
+# Satwik/Rajasik/Tamasik guna — BPHS Ch.3 v.22 (p.31)
+# "Satwik planets are the luminaries and Jupiter, Venus and Mercury are
+#  Rajasik while Mars and Saturn are Tamasik planets."
+SATWIK_PLANETS = {"Sun", "Moon", "Jupiter"}
+RAJASIK_PLANETS = {"Venus", "Mercury"}
+TAMASIK_PLANETS = {"Mars", "Saturn"}
+
 # ─── Combustion orbs ─────────────────────────────────────────────────────────
 # Source: BPHS; Saravali Ch.3 (Rx orbs reduced)
 # Format: {planet: (direct_orb, retrograde_orb)}

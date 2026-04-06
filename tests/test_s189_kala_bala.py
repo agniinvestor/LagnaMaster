@@ -51,28 +51,34 @@ class TestNathonnataBala:
     """
 
     def test_sun_strong_by_day(self):
+        """Continuous: Sun at 10 AM = 50 virupas (not binary 60)."""
         chart = _make_chart()
-        dt = datetime(2024, 3, 15, 10, 0)  # 10:00 AM — daytime
+        dt = datetime(2024, 3, 15, 10, 0)  # 10:00 AM — 2h before noon
         _, comps = compute_kala_bala("Sun", chart, dt)
-        assert comps["nathonnata"] == 60.0
+        assert comps["nathonnata"] > 40.0  # strong but not max
+        assert comps["nathonnata"] <= 60.0
 
     def test_sun_weak_by_night(self):
+        """Continuous: Sun at 10 PM = 10 virupas (not binary 0)."""
         chart = _make_chart()
-        dt = datetime(2024, 3, 15, 22, 0)  # 10:00 PM — nighttime
+        dt = datetime(2024, 3, 15, 22, 0)  # 10:00 PM — 10h from noon
         _, comps = compute_kala_bala("Sun", chart, dt)
-        assert comps["nathonnata"] == 0.0
+        assert comps["nathonnata"] < 20.0  # weak but not zero
+        assert comps["nathonnata"] >= 0.0
 
     def test_moon_strong_by_night(self):
+        """Continuous: Moon at 10 PM = strong (inverse of Sun)."""
         chart = _make_chart()
         dt = datetime(2024, 3, 15, 22, 0)
         _, comps = compute_kala_bala("Moon", chart, dt)
-        assert comps["nathonnata"] == 60.0
+        assert comps["nathonnata"] > 40.0
 
     def test_moon_weak_by_day(self):
+        """Continuous: Moon at 10 AM = weak (inverse of Sun)."""
         chart = _make_chart()
         dt = datetime(2024, 3, 15, 10, 0)
         _, comps = compute_kala_bala("Moon", chart, dt)
-        assert comps["nathonnata"] == 0.0
+        assert comps["nathonnata"] < 20.0
 
     def test_mercury_always_60(self):
         chart = _make_chart()
@@ -90,10 +96,11 @@ class TestNathonnataBala:
         assert comps["nathonnata"] == 60.0
 
     def test_saturn_strong_by_night(self):
+        """Continuous: Saturn at 11 PM = strong (night planet)."""
         chart = _make_chart()
         dt = datetime(2024, 3, 15, 23, 0)
         _, comps = compute_kala_bala("Saturn", chart, dt)
-        assert comps["nathonnata"] == 60.0
+        assert comps["nathonnata"] > 40.0
 
 
 # ─── 2. Paksha Bala (lunar phase) ───────────────────────────────────────────

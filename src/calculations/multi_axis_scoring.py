@@ -319,9 +319,22 @@ def _score_one_house(
     if paap_k:
         total += W["R12"]
 
-    # R13 bhavesh with func malefic
-    if any(is_func_malefic_fn(p) for p in bh_cotenants):
-        total += W["R13"]
+    # R13 bhavesh with func malefic — BPHS Ch.11 note (b), p.125:
+    # Mitigated if malefic is (a) friendly, (b) exalted, (c) in kendra/trikona
+    malefic_cotenants = [p for p in bh_cotenants if is_func_malefic_fn(p)]
+    if malefic_cotenants:
+        # Check for mitigation per BPHS Ch.11
+        mitigated = False
+        for mc in malefic_cotenants:
+            mc_si = chart.planets[mc].sign_index if mc in chart.planets else -1
+            from src.calculations.dignity import _NAISARGIKA, EXALT_SIGN
+            is_friendly = _NAISARGIKA.get((mc, bhavesh), "Neutral") == "Friend"
+            is_exalted = EXALT_SIGN.get(mc) == mc_si
+            in_good_house = p_house.get(mc, 0) in _KENDRA or p_house.get(mc, 0) in _TRIKONA
+            if is_friendly or is_exalted or in_good_house:
+                mitigated = True
+                break
+        total += W["R13"] * (0.5 if mitigated else 1.0)
 
     # R14 (WC) malefic aspects bhavesh
     if fm_aspects_bh:
@@ -332,8 +345,10 @@ def _score_one_house(
         total += W["R15"]
 
     # R16 bhavesh with dusthana lord (6/8/12) — BPHS Ch.11 note (c), p.125
+    # Exemption: "If he himself is an evil lord, then some relief can be expected"
     if any(p in dusthana_lords for p in bh_cotenants):
-        total += W["R16"]
+        bhavesh_is_dusthana_lord = bhavesh in dusthana_lords
+        total += W["R16"] * (0.5 if bhavesh_is_dusthana_lord else 1.0)
 
     # R17 sthir karak in or aspecting its signified house (BPHS Ch.32)
     # R18 sthir karak in dusthana FROM its signified house
