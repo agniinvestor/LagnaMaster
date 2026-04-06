@@ -192,3 +192,21 @@
 **Principle violated:** #15 (The user manages sessions and tokens)
 
 **Control built:** None — behavioral lesson. Never classify work as deferred without stating the reason and getting approval.
+
+---
+
+## L016: Search before you build (2026-04-06, S317)
+
+**What happened:** Built avasthas.py when avastha_v2.py and planet_avasthas.py already existed. Built is_natural_malefic() without wiring it to the 4 places that use static _MALEFICS. Improved compute_mandi_gulika() which has zero callers. Built 5 parallel implementations in one session despite writing L012 ("don't add parallel infrastructure") in the SAME session.
+
+**Root cause:** Writing new code from a spec is easier than reading existing code. Fresh feels cleaner than extending. Switching from "BPHS text" to "read existing module" feels disruptive. All three are false economies.
+
+**The rule:** Before writing ANY new function, constant, or file:
+  1. `grep -r "concept" src/` — does this already exist?
+  2. If yes → read it, understand the API, modify or extend it
+  3. If no → proceed with new code
+  4. After building → `grep -r "new_thing" src/` — who should call this? Wire it in.
+
+**Principle violated:** #2 (Nullify rework), #6 (System enforces)
+
+**Control needed:** Pre-build grep gate. Should be a hook or checklist item, not a behavioral promise. L012 was a behavioral lesson and was violated 5 times in the same session it was written.
