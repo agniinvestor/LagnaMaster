@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """tools/classify_prediction_types.py — Assign prediction_type to rules missing it."""
 from __future__ import annotations
-import sys, os
+import sys
+import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.corpus.combined_corpus import build_corpus

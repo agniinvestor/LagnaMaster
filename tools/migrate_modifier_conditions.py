@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """tools/migrate_modifier_conditions.py — Migrate modifier condition strings to structured dicts."""
 from __future__ import annotations
-import sys, os, re
+import sys
+import os
+import re
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.corpus.combined_corpus import build_corpus
