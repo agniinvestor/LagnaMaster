@@ -75,6 +75,7 @@ class PlanetPosition:
     degree_in_sign: float  # 0–30°
     is_retrograde: bool
     speed: float  # degrees/day (negative = retrograde)
+    latitude: float = 0.0  # ecliptic latitude, degrees (S317: for declination)
 
 
 @dataclass
@@ -220,6 +221,7 @@ def compute_chart(
         planet_flags = flags | swe.FLG_TOPOCTR if name == "Moon" else flags
         result, _ = swe.calc_ut(jd_ut, planet_id, planet_flags)
         lon_sid = result[0] % 360
+        lat_ecl = result[1]  # ecliptic latitude, degrees
         speed = result[3]  # longitude speed, deg/day
         sign, sign_idx, deg_in_sign = _sign_from_lon(lon_sid)
         planets_out[name] = PlanetPosition(
@@ -230,6 +232,7 @@ def compute_chart(
             degree_in_sign=deg_in_sign,
             is_retrograde=(speed < 0),
             speed=speed,
+            latitude=lat_ecl,
         )
 
     # Ketu = Rahu + 180° (always "retrograde" — moves opposite to direct motion)

@@ -398,24 +398,67 @@ def compute_kala_bala(
     else:
         components["abda"] = 0.0
 
-    # 8. Ayana Bala (Sun's declination effect)
-    # Simplified: Sun in Uttarayana (Capricorn-Gemini = signs 9-2) benefits solar planets
-    if "Sun" in chart.planets:
-        sun_si = chart.planets["Sun"].sign_index
-        uttarayana = sun_si in (9, 10, 11, 0, 1, 2)
-        sun_benefited = {"Sun", "Mars", "Jupiter"}
-        moon_benefited = {"Moon", "Venus", "Saturn"}
-        if planet in sun_benefited:
-            components["ayana"] = 48.0 if uttarayana else 12.0
-        elif planet in moon_benefited:
-            components["ayana"] = 12.0 if uttarayana else 48.0
-        else:
-            components["ayana"] = 30.0
-    else:
-        components["ayana"] = 30.0
+    # 8. Ayana Bala — BPHS Ch.27 v.15-17 (pp.277-283)
+    # Uses planet's true declination (Kranti), not sign-based approximation.
+    # Formula: Ayana Bala = (23.45 + adjusted_kranti) / 46.9 × 60
+    components["ayana"] = _compute_ayana_bala(planet, chart)
 
     total = sum(components.values())
     return round(total, 3), components
+
+
+# ─── Ayana Bala (helper) ─────────────────────────────────────────────────────
+
+
+def _compute_ayana_bala(planet: str, chart) -> float:
+    """BPHS Ch.27 v.15-17 (p.277): Ayana Bala from true declination (Kranti).
+
+    Uses proper spherical astronomy: δ = arcsin(sinβ·cosε + cosβ·sinε·sinλ)
+    where β = ecliptic latitude, ε = obliquity, λ = tropical longitude.
+
+    Sign convention (p.277):
+      Sun, Mars, Jupiter, Venus: Northern declination → +, Southern → -
+      Moon, Saturn: Southern declination → +, Northern → -
+      Mercury: always +
+    """
+    from math import sin, cos, asin, radians, degrees
+
+    if planet not in chart.planets or planet in ("Rahu", "Ketu"):
+        return 30.0
+
+    pos = chart.planets[planet]
+
+    # Tropical longitude = sidereal + ayanamsha
+    ayanamsha = getattr(chart, "ayanamsha_value", 23.15)
+    trop_lon = radians((pos.longitude + ayanamsha) % 360.0)
+
+    # Ecliptic latitude (stored from swisseph, 0.0 for Sun)
+    lat_ecl = radians(getattr(pos, "latitude", 0.0))
+
+    # Obliquity of the ecliptic (mean, ~23.44° for modern epoch)
+    # For higher precision, could use swe.calc_ut(jd, ECL_NUT) but this is
+    # within 0.01° for any chart within ±2000 years of J2000
+    obliquity = radians(23.4393)
+
+    # True declination: sin(δ) = sin(β)cos(ε) + cos(β)sin(ε)sin(λ)
+    sin_decl = sin(lat_ecl) * cos(obliquity) + cos(lat_ecl) * sin(obliquity) * sin(trop_lon)
+    declination = degrees(asin(max(-1.0, min(1.0, sin_decl))))
+
+    # Adjust sign per planet group (BPHS Ch.27 v.15-17)
+    north_positive = {"Sun", "Mars", "Jupiter", "Venus"}
+    south_positive = {"Moon", "Saturn"}
+
+    if planet in north_positive:
+        adjusted = declination  # Northern = positive
+    elif planet in south_positive:
+        adjusted = -declination  # Southern = positive
+    else:  # Mercury
+        adjusted = abs(declination)  # always positive
+
+    # Ayana Bala = (23.45 + adjusted) / 46.9 × 60
+    # Range: 0 (at max negative) to 60 (at max positive)
+    ayana = (23.45 + adjusted) / 46.9 * 60.0
+    return round(max(0.0, min(60.0, ayana)), 3)
 
 
 # ─── Chesta Bala ─────────────────────────────────────────────────────────────
@@ -425,6 +468,8 @@ def compute_chesta_bala(planet: str, chart) -> float:
     """
     Chesta Bala from planet's speed relative to mean motion.
     Source: Saravali Ch.3; BPHS Ch.27
+    Note: Sun's Chesta Bala = Sun's Ayana Bala (BPHS Ch.27 v.18).
+    Moon's Chesta Bala = Moon's Paksha Bala (BPHS Ch.27 v.18).
     """
     if planet not in chart.planets:
         return 30.0
