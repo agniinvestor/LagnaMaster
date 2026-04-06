@@ -403,6 +403,24 @@ def _score_one_house(
         if bindus >= 5:
             total += W["R23"]
 
+    # D6: Avastha-based house evaluation — BPHS Ch.11 v.14-16 (pp.123-126)
+    # Yuva/Kumara lord → prosper, Vriddha → ineffective, Mrita → destroyed
+    try:
+        from src.calculations.avasthas import compute_baaladi, BaaladiAvastha
+        if bhavesh in chart.planets:
+            bh_si = chart.planets[bhavesh].sign_index
+            bh_deg = chart.planets[bhavesh].degree_in_sign
+            baaladi = compute_baaladi(bh_si, bh_deg)
+            # Vriddha/Mrita penalize, Yuva is neutral (full = 1.0), Baala/Kumara partial
+            if baaladi == BaaladiAvastha.MRITA:
+                total += -1.5  # "bhava will be destroyed" (Ch.11 p.126)
+            elif baaladi == BaaladiAvastha.VRIDDHA:
+                total += -0.75  # "ineffective from the view point of good results"
+            elif baaladi == BaaladiAvastha.BAALA:
+                total += -0.25  # 1/4 effect — reduced but not destroyed
+    except ImportError:
+        pass
+
     # S164: War loser bhavesh penalty (Saravali Ch.4 v.18-22)
     if bh_war_loser:
         total += -1.5  # treat bhavesh as effectively debilitated throughout life

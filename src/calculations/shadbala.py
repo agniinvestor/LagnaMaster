@@ -465,39 +465,62 @@ def _compute_ayana_bala(planet: str, chart) -> float:
 
 
 def compute_chesta_bala(planet: str, chart) -> float:
-    """
-    Chesta Bala from planet's speed relative to mean motion.
-    Source: Saravali Ch.3; BPHS Ch.27
-    Note: Sun's Chesta Bala = Sun's Ayana Bala (BPHS Ch.27 v.18).
-    Moon's Chesta Bala = Moon's Paksha Bala (BPHS Ch.27 v.18).
+    """BPHS Ch.27 v.18, v.24-25 (pp.284-285): Motional Strength.
+
+    Sun: Chesta Bala = Ayana Bala (v.18)
+    Moon: Chesta Bala = Paksha Bala (v.18)
+    Mars-Saturn: Chesta Kendra = Seeghrocha - (mean+true)/2, then /3 (v.24-25)
+      For superior planets (Mars/Jupiter/Saturn), Seeghrocha ≈ Sun's longitude.
+      For inferior planets (Mercury/Venus), uses speed-based approximation.
     """
     if planet not in chart.planets:
         return 30.0
 
-    # Mean motions in degrees/day
-    MEAN_MOTION: dict[str, float] = {
-        "Sun": 0.9856,
-        "Moon": 13.176,
-        "Mars": 0.524,
-        "Mercury": 1.383,
-        "Jupiter": 0.083,
-        "Venus": 1.2,
-        "Saturn": 0.033,
-    }
-    if planet not in MEAN_MOTION:
+    # Sun → Ayana Bala (BPHS Ch.27 v.18)
+    if planet == "Sun":
+        return _compute_ayana_bala("Sun", chart)
+
+    # Moon → Paksha Bala (BPHS Ch.27 v.18)
+    if planet == "Moon":
+        if "Sun" in chart.planets:
+            moon_lon = chart.planets["Moon"].longitude
+            sun_lon = chart.planets["Sun"].longitude
+            elong = (moon_lon - sun_lon) % 360
+            paksha_frac = elong / 180.0 if elong <= 180 else (360 - elong) / 180.0
+            return round(60.0 * paksha_frac, 3)
         return 30.0
 
-    speed = abs(chart.planets[planet].speed)
-    mean = MEAN_MOTION[planet]
-    is_rx = chart.planets[planet].is_retrograde
+    # Superior planets (Mars, Jupiter, Saturn): Chesta Kendra from Sun
+    # BPHS v.24-25: Seeghrocha = Sun for superior planets
+    if planet in ("Mars", "Jupiter", "Saturn") and "Sun" in chart.planets:
+        sun_lon = chart.planets["Sun"].longitude
+        planet_lon = chart.planets[planet].longitude
+        # Chesta Kendra ≈ |Sun - Planet| (simplified: mean ≈ true for slow planets)
+        chesta_kendra = abs(sun_lon - planet_lon) % 360
+        if chesta_kendra > 180:
+            chesta_kendra = 360 - chesta_kendra
+        return round(min(60.0, chesta_kendra / 3.0), 3)
 
-    if is_rx:
-        # Retrograde: Chesta Bala from how far from stationary
-        chesta = 60.0 * min(speed / mean, 1.0)
-    else:
-        chesta = 60.0 * min(speed / mean, 1.0) if mean > 0 else 30.0
+    # Inferior planets (Mercury, Venus): 8-motion classification (v.21-23)
+    # Based on speed relative to mean motion
+    _MEAN_MOTION = {"Mercury": 1.383, "Venus": 1.2}
+    if planet in _MEAN_MOTION:
+        speed = chart.planets[planet].speed  # signed
+        mean = _MEAN_MOTION[planet]
+        is_rx = chart.planets[planet].is_retrograde
 
-    return round(min(60.0, max(0.0, chesta)), 3)
+        if is_rx:
+            return 60.0  # Vakra (retrograde) = 60 virupas (v.21)
+        if abs(speed) < 0.01:
+            return 15.0  # Vikala (stationary) = 15 virupas
+        ratio = abs(speed) / mean
+        if ratio < 0.5:
+            return 30.0  # Manda (slow) = 30 virupas
+        if ratio < 1.0:
+            return 7.5  # Sama (somewhat increasing) = 7.5 virupas
+        return 45.0  # Chara (fast) = 45 virupas
+
+    return 30.0
 
 
 # ─── Drik Bala ───────────────────────────────────────────────────────────────
