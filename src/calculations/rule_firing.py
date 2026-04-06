@@ -18,39 +18,61 @@ _MALEFICS = ("Sun", "Mars", "Saturn", "Rahu", "Ketu")
 _BENEFICS = ("Jupiter", "Venus", "Mercury", "Moon")
 
 
-def is_natural_malefic(planet: str, chart=None) -> bool:
-    """BPHS Ch.3 v.11: conditional benefic/malefic for Moon and Mercury.
+def _is_moon_waning(chart) -> bool:
+    """Check if Moon is waning (Krishna Paksha — elongation from Sun > 180°)."""
+    moon = chart.planets.get("Moon")
+    sun = chart.planets.get("Sun")
+    if moon and sun:
+        return (moon.longitude - sun.longitude) % 360 > 180
+    return False
 
-    Moon: malefic if waning (Krishna Paksha — elongation from Sun > 180°).
-    Mercury: malefic if conjunct a malefic (same sign). This includes
-      waning Moon, since waning Moon IS a malefic per the same verse.
+
+def is_natural_malefic(planet: str, chart=None) -> bool:
+    """BPHS Ch.3 v.11 (p.27-28): conditional benefic/malefic for Moon and Mercury.
+
+    Moon: malefic if waning (Krishna Paksha). BUT: "Should the Moon be conjunct
+      a benefic or aspected by a benefic, she turns a benefic, even if waning."
+    Mercury: malefic if conjunct a malefic. BUT: "If waning Moon and Mercury
+      are together, both are benefics" (mutual rescue — p.28).
     Others: static classification.
     """
     if planet in ("Sun", "Mars", "Saturn", "Rahu", "Ketu"):
         return True
     if planet in ("Jupiter", "Venus"):
         return False
+
+    if chart is None:
+        return False  # default benefic for Moon/Mercury without chart
+
     if planet == "Moon":
-        if chart is not None:
-            moon = chart.planets.get("Moon")
-            sun = chart.planets.get("Sun")
-            if moon and sun:
-                elong = (moon.longitude - sun.longitude) % 360
-                return elong > 180  # waning = malefic
-        return False  # default benefic if no chart
+        if not _is_moon_waning(chart):
+            return False  # waxing = benefic
+        # Waning Moon: check if conjunct a benefic (turns benefic per p.27)
+        moon = chart.planets.get("Moon")
+        if moon:
+            default_benefics = {"Mercury", "Jupiter", "Venus"}
+            for p, pos in chart.planets.items():
+                if p != "Moon" and p in default_benefics and pos.sign_index == moon.sign_index:
+                    return False  # waning Moon rescued by benefic conjunction
+        return True  # waning, no benefic rescue
+
     if planet == "Mercury":
-        if chart is not None:
-            merc = chart.planets.get("Mercury")
-            if merc:
-                for p, pos in chart.planets.items():
-                    if p == "Mercury":
-                        continue
-                    if pos.sign_index != merc.sign_index:
-                        continue
-                    # Check if this cotenant is a malefic (including waning Moon)
-                    if is_natural_malefic(p, chart):
-                        return True
-        return False  # default benefic if no chart or no malefic conjunction
+        merc = chart.planets.get("Mercury")
+        if not merc:
+            return False
+        # Check cotenants for malefics
+        has_malefic_cotenant = False
+        for p, pos in chart.planets.items():
+            if p == "Mercury" or pos.sign_index != merc.sign_index:
+                continue
+            # Moon-Mercury mutual rescue (p.28): both benefic when together
+            if p == "Moon":
+                continue  # Moon never makes Mercury malefic (mutual rescue)
+            if p in ("Sun", "Mars", "Saturn", "Rahu", "Ketu"):
+                has_malefic_cotenant = True
+                break
+        return has_malefic_cotenant
+
     return False
 
 
