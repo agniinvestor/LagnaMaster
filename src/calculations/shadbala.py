@@ -506,24 +506,16 @@ def compute_chesta_bala(planet: str, chart) -> float:
             chesta_kendra = 360 - chesta_kendra
         return round(min(60.0, chesta_kendra / 3.0), 3)
 
-    # Inferior planets (Mercury, Venus): 8-motion classification (v.21-23)
-    # Based on speed relative to mean motion
-    _MEAN_MOTION = {"Mercury": 1.383, "Venus": 1.2}
-    if planet in _MEAN_MOTION:
-        speed = chart.planets[planet].speed  # signed
-        mean = _MEAN_MOTION[planet]
-        is_rx = chart.planets[planet].is_retrograde
-
-        if is_rx:
-            return 60.0  # Vakra (retrograde) = 60 virupas (v.21)
-        if abs(speed) < 0.01:
-            return 15.0  # Vikala (stationary) = 15 virupas
-        ratio = abs(speed) / mean
-        if ratio < 0.5:
-            return 30.0  # Manda (slow) = 30 virupas
-        if ratio < 1.0:
-            return 7.5  # Sama (somewhat increasing) = 7.5 virupas
-        return 45.0  # Chara (fast) = 45 virupas
+    # Inferior planets (Mercury, Venus): BPHS v.24-25 same formula applies.
+    # For inferior planets, Seeghrocha ≈ Sun's longitude (they orbit near Sun).
+    # Same elongation-based Chesta Kendra as superior planets.
+    if planet in ("Mercury", "Venus") and "Sun" in chart.planets:
+        sun_lon = chart.planets["Sun"].longitude
+        planet_lon = chart.planets[planet].longitude
+        chesta_kendra = abs(sun_lon - planet_lon) % 360
+        if chesta_kendra > 180:
+            chesta_kendra = 360 - chesta_kendra
+        return round(min(60.0, chesta_kendra / 3.0), 3)
 
     return 30.0
 

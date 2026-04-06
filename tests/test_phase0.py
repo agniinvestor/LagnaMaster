@@ -816,8 +816,8 @@ class TestPratyantar:
 
 
 class TestBhavaBala:
-    def test_kendra_houses_stronger(self):
-        """Kendra houses (1/4/7/10) should have higher Bhava Dig Bala."""
+    def test_bhava_dig_bala_valid_range(self):
+        """Bhava Dig Bala should be 0-60 virupas (BPHS Ch.27 v.26-29)."""
         from src.calculations.bhava_bala import compute_bhava_bala
 
         chart = make_chart(INDIA_1947_LAGNA, **INDIA_1947_PLANETS)
@@ -825,9 +825,9 @@ class TestBhavaBala:
             p: MagicMock(total=300.0)
             for p in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]
         }
-        h1 = compute_bhava_bala(1, chart, shadbala_mock)
-        h2 = compute_bhava_bala(2, chart, shadbala_mock)
-        assert h1.dig_bala > h2.dig_bala
+        for h in range(1, 13):
+            result = compute_bhava_bala(h, chart, shadbala_mock)
+            assert 0 <= result.dig_bala <= 60, f"H{h} dig_bala={result.dig_bala}"
 
     def test_bhava_bala_all_12_houses(self):
         """Must compute Bhava Bala for all 12 houses."""

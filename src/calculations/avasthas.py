@@ -203,6 +203,91 @@ def compute_lajjitadi(planet: str, chart) -> LajjitadiAvastha | None:
 # Combined Avastha Result
 # ═══════════════════════════════════════════════════════════════════════════════
 
+# ═══════════════════════════════════════════════════════════════════════════════
+# 4. Sayanadi Avasthas — BPHS Ch.45 v.30-37 (pp.454-456)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+class SayandiAvastha(Enum):
+    """12 states computed by formula. BPHS Ch.45 v.30-37."""
+    SAYANA = "Lying Down"
+    UPAVESANA = "Sitting"
+    NETRAPANI = "Hands on Eyes"
+    PRAKASANA = "Shining"
+    GAMANA = "Going"
+    AAGAMANA = "Coming"
+    SABHA = "In Assembly"
+    AGAMA = "Approaching"
+    BHOJANA = "Eating"
+    NRITYALIPSA = "Dancing"
+    KAUTUKA = "Curious"
+    NIDRA = "Sleeping"
+
+
+# Planet multipliers for Sayanadi — BPHS Ch.45 v.30 (p.454)
+_SAYANADI_PLANET_MULT: dict[str, int] = {
+    "Sun": 5, "Moon": 2, "Mars": 2, "Mercury": 3,
+    "Jupiter": 5, "Venus": 3, "Saturn": 3, "Rahu": 4, "Ketu": 4,
+}
+
+# Planet additaments for sub-state — v.30 (p.454)
+_SAYANADI_PLANET_ADD: dict[str, int] = {
+    "Sun": 5, "Moon": 2, "Mars": 2, "Mercury": 3,
+    "Jupiter": 5, "Venus": 3, "Saturn": 3, "Rahu": 4, "Ketu": 4,
+}
+
+_SAYANADI_ORDER = list(SayandiAvastha)
+
+
+def compute_sayanadi(
+    planet: str, chart, birth_ghatis: float = 0.0,
+) -> SayandiAvastha | None:
+    """BPHS Ch.45 v.30-37: Sayanadi avastha from formula.
+
+    Formula: ((s × p × n) + (a + g + r)) mod 12 = avastha index
+    Where: s = planet's nakshatra (1-27), p = planet multiplier,
+           n = navamsa (1-9), a = birth nakshatra, g = birth ghatis,
+           r = lagna sign count from Aries + 1.
+
+    Note: sub-state computation (v.36, p.456) requires native's name
+    first syllable — not implementable without user input.
+    """
+    if planet not in chart.planets or planet not in _SAYANADI_PLANET_MULT:
+        return None
+
+    pos = chart.planets[planet]
+    lon = pos.longitude
+
+    # s: nakshatra number (1-27) from planet's longitude
+    s = int(lon / (360 / 27)) + 1  # 13°20' per nakshatra
+
+    # p: planet multiplier
+    p = _SAYANADI_PLANET_MULT[planet]
+
+    # n: navamsa position (1-9)
+    try:
+        from src.calculations.vargas import compute_varga_sign
+        d9_si = compute_varga_sign(lon, 9)
+        n = (d9_si % 9) + 1  # 1-9 within the navamsa cycle
+    except Exception:
+        n = int((lon % 30) / 3.333) + 1  # fallback
+
+    # a: birth nakshatra (Moon's nakshatra)
+    moon = chart.planets.get("Moon")
+    a = int(moon.longitude / (360 / 27)) + 1 if moon else 1
+
+    # g: birth ghatis (from midnight)
+    g = int(birth_ghatis)
+
+    # r: signs from Aries to ascendant + 1
+    r = chart.lagna_sign_index + 1
+
+    # Avastha = ((s × p × n) + (a + g + r)) mod 12
+    total = (s * p * n) + (a + g + r)
+    idx = total % 12
+
+    return _SAYANADI_ORDER[idx]
+
+
 @dataclass
 class AvasthaSummary:
     planet: str
@@ -212,9 +297,10 @@ class AvasthaSummary:
     jagradadi_effect: float  # 0.0 to 1.0
     combined_effect: float  # baaladi × jagradadi (Ch.45 v.6)
     lajjitadi: LajjitadiAvastha | None
+    sayanadi: SayandiAvastha | None = None
 
 
-def compute_avasthas(planet: str, chart) -> AvasthaSummary:
+def compute_avasthas(planet: str, chart, birth_ghatis: float = 0.0) -> AvasthaSummary:
     """Compute all avastha states for a planet."""
     if planet not in chart.planets:
         return AvasthaSummary(
@@ -233,6 +319,7 @@ def compute_avasthas(planet: str, chart) -> AvasthaSummary:
     baaladi = compute_baaladi(si, deg)
     jagradadi = compute_jagradadi(planet, si)
     lajjitadi = compute_lajjitadi(planet, chart)
+    sayanadi = compute_sayanadi(planet, chart, birth_ghatis)
 
     b_eff = BAALADI_EFFECT[baaladi]
     j_eff = JAGRADADI_EFFECT[jagradadi]
@@ -245,4 +332,5 @@ def compute_avasthas(planet: str, chart) -> AvasthaSummary:
         jagradadi_effect=j_eff,
         combined_effect=round(b_eff * j_eff, 4),
         lajjitadi=lajjitadi,
+        sayanadi=sayanadi,
     )

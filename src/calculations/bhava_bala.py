@@ -55,35 +55,77 @@ def compute_bhava_bala(
     if house_lord and house_lord in shadbala_results:
         bhavadhipati_bala = shadbala_results[house_lord].total
 
-    # Bhava Dig Bala (positional strength of house)
-    # Kendra = strong, Trikona = strong, others = moderate
-    if house_num in (1, 4, 7, 10):
-        dig_bala = 60.0
-    elif house_num in (2, 5, 8, 11):
-        dig_bala = 30.0
+    # Bhava Dig Bala — BPHS Ch.27 v.26-29 (p.286)
+    # Sign-based deduction: deduct specific house cusp from bhava cusp
+    # based on which sign the bhava falls in.
+    bhava_cusp_lon = (chart.lagna + (house_num - 1) * 30) % 360
+    bhava_deg = bhava_cusp_lon % 30
+
+    # Determine deduction house cusp based on bhava sign
+    _DEDUCT_7TH = {2, 5, 6, 10}  # Gemini, Virgo, Libra, Aquarius
+    _DEDUCT_4TH = {0, 1, 4}  # Aries, Taurus, Leo
+    _DEDUCT_1ST = {3, 7}  # Cancer, Scorpio
+    _DEDUCT_10TH = {11}  # Pisces
+
+    if house_sign in _DEDUCT_7TH:
+        deduct_house = 7
+    elif house_sign in _DEDUCT_4TH:
+        deduct_house = 4
+    elif house_sign in _DEDUCT_1ST:
+        deduct_house = 1
+    elif house_sign in _DEDUCT_10TH:
+        deduct_house = 10
+    elif house_sign == 8:  # Sagittarius: first half→7th, second half→4th
+        deduct_house = 7 if bhava_deg < 15 else 4
+    elif house_sign == 9:  # Capricorn: first half→4th, second half→10th
+        deduct_house = 4 if bhava_deg < 15 else 10
     else:
-        dig_bala = 15.0
+        deduct_house = 7  # fallback
 
-    # Drishti Bala: sum of benefic aspects on house cusp - malefic aspects
-    house_cusp_sign = house_sign  # noqa: F841
-    natural_benefics = {"Moon", "Mercury", "Jupiter", "Venus"}
-    natural_malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
+    deduct_cusp_lon = (chart.lagna + (deduct_house - 1) * 30) % 360
+    arc = abs(bhava_cusp_lon - deduct_cusp_lon) % 360
+    if arc > 180:
+        arc = 360 - arc
+    dig_bala = min(60.0, arc / 3.0)
 
-    from src.calculations.sputa_drishti import get_aspect_strength
-    from src.calculations.scoring_patches import aspect_hits
+    # Drishti Bala — BPHS v.26-29: +1/4 benefic, -1/4 malefic aspects
+    from src.calculations.sputa_drishti import bphs_drishti_with_specials
+    from src.calculations.rule_firing import is_natural_malefic
 
     drishti_bala = 0.0
     for planet, pdata in chart.planets.items():
-        p_house = hmap.planet_house.get(planet, 1)
-        ha = aspect_hits(p_house, house_num)
-        astr = get_aspect_strength(planet, ha)
-        if astr > 0:
-            if planet in natural_benefics:
-                drishti_bala += astr * 30.0
-            elif planet in natural_malefics:
-                drishti_bala -= astr * 30.0
+        arc_to_house = (bhava_cusp_lon - pdata.longitude) % 360
+        virupas = bphs_drishti_with_specials(planet, arc_to_house)
+        if virupas > 0:
+            rupa = virupas / 60.0
+            if is_natural_malefic(planet, chart):
+                drishti_bala -= rupa * 0.25
+            else:
+                drishti_bala += rupa * 0.25
+    drishti_bala = round(drishti_bala * 60.0, 3)  # convert to virupas
 
-    total = round(bhavadhipati_bala + dig_bala + drishti_bala, 3)
+    # Special additions — BPHS Ch.27 v.30-31 (p.286)
+    specials = 0.0
+    # Jupiter/Mercury in house → +60 virupas; Saturn/Mars/Sun → -60
+    for planet, pdata in chart.planets.items():
+        p_house = hmap.planet_house.get(planet, 1)
+        if p_house == house_num:
+            if planet in ("Jupiter", "Mercury"):
+                specials += 60.0
+            elif planet in ("Saturn", "Mars", "Sun"):
+                specials -= 60.0
+
+    # Seershodaya signs in daytime → +15 virupas
+    _SEERSHODAYA = {2, 4, 5, 6, 7, 10}  # Gemini, Leo, Virgo, Libra, Scorpio, Aquarius
+    sun = chart.planets.get("Sun")
+    if sun:
+        is_day = not (90 <= sun.longitude % 360 < 270)
+        if is_day and house_sign in _SEERSHODAYA:
+            specials += 15.0
+        if not is_day and house_sign not in _SEERSHODAYA and house_sign != 11:
+            specials += 15.0  # Prishtodaya in nighttime
+
+    total = round(bhavadhipati_bala + dig_bala + drishti_bala + specials, 3)
 
     if total >= 250:
         strength = "Strong"
