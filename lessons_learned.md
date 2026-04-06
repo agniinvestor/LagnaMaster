@@ -162,3 +162,19 @@
 **Principle violated:** #8 (Source fidelity)
 
 **Control built:** Clean sweep protocol — after initial audit, re-examine all interpretations for translator vs text confusion.
+
+---
+
+## L014: Overestimating implementation cost feeds premature closure (2026-04-06, S317)
+
+**What happened:** Estimated Ch.45 avasthas would cost 200-300k tokens. Actual cost: ~22k. Estimated Saptavargaja fix would be "architectural." Actual: ~30 lines. These inflated estimates were used to justify proposing session closure with 70% context remaining.
+
+**The pattern:** Imagine the work will be hard → estimate high token cost → propose stopping → user pushes back → work turns out to be straightforward. The overestimate isn't random — it serves the closure instinct.
+
+**Why it happens:** When source text is precise and infrastructure exists, implementation is fast. Cost balloons only when there's ambiguity, missing dependencies, or debugging. Estimating without checking these factors produces worst-case numbers.
+
+**The rule:** Before estimating cost, check: (1) is the source text clear? (2) does the infrastructure exist? (3) are there dependency unknowns? If all three are favorable, the work is probably 10-20% of worst-case estimate. Don't estimate from imagination — estimate from inspection.
+
+**Principle violated:** #15 (The user manages sessions and tokens)
+
+**Control built:** None — behavioral lesson. Check infrastructure before estimating, not after.
