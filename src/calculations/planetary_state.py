@@ -252,17 +252,19 @@ def compute_mandi_gulika(
     sunrise_lon: Optional[float] = None,
     day_duration_hours: float = 12.0,
     is_day_birth: bool = True,
+    lat: float = 28.6139,
+    lon: float = 77.2090,
 ) -> dict[str, float]:
-    """
-    Compute Mandi and Gulika longitudes.
+    """Compute Mandi and Gulika longitudes.
 
-    Formula (BPHS Ch.25):
-    For day births: each portion = day_duration / 8
-    For night births: each portion = night_duration / 8
-    Order of weekday sequence determines which portion is Mandi.
+    BPHS Ch.3 v.66-70 (pp.44-46): "The degree ascending at the time of
+    start of Gulika's portion will be the longitude of Gulika."
+
+    Uses swe.rise_trans for actual sunrise/sunset, then swe.houses at
+    Saturn's portion start time for the exact ascending degree.
 
     Returns {'mandi': longitude, 'gulika': longitude}
-    Source: BPHS Ch.25; Phaladeepika Ch.26
+    Source: BPHS Ch.3 v.66-70; Phaladeepika Ch.26
     """
     try:
         if hasattr(birth_dt, "weekday"):
@@ -272,30 +274,75 @@ def compute_mandi_gulika(
     except Exception:
         return {}
 
-    # Weekday lord index in Jyotish sequence
+    # Weekday lord index in Jyotish sequence (Saturn's portion = Gulika)
     weekday_lord = _JYOTISH_WEEKDAY[weekday]
     lord_idx = _JYOTISH_WEEKDAY_ORDER.index(weekday_lord)
 
-    # Duration of each portion
-    duration_per_portion = day_duration_hours / 8.0
+    # Saturn's index in the 7-planet order (for finding its portion)
+    saturn_idx = _JYOTISH_WEEKDAY_ORDER.index("Saturn")
 
-    # Mandi's portion index (lord_idx)
-    # Gulika's portion = Mandi - 1 portion (precedes Mandi)
+    # Day sequence: portions go in weekday lord order starting from weekday lord
+    # Saturn's portion number = (saturn_idx - lord_idx) % 7
+    # (The 8th portion is lordless)
+    saturn_portion = (saturn_idx - lord_idx) % 7
+
+    # Try proper computation with swe.rise_trans
+    try:
+        import swisseph as swe
+
+        jd_ut = chart.jd_ut
+        # Find sunrise before birth
+        res_rise, tret_rise = swe.rise_trans(
+            jd_ut - 1, swe.SUN, swe.CALC_RISE, (lon, lat, 0)
+        )
+        sunrise_jd = tret_rise[0]
+
+        # Find sunset after sunrise
+        res_set, tret_set = swe.rise_trans(
+            sunrise_jd, swe.SUN, swe.CALC_SET, (lon, lat, 0)
+        )
+        sunset_jd = tret_set[0]
+
+        day_dur = sunset_jd - sunrise_jd  # in days
+        night_dur = 1.0 - day_dur  # approximate
+
+        if is_day_birth:
+            portion_dur = day_dur / 8.0
+            gulika_start_jd = sunrise_jd + saturn_portion * portion_dur
+        else:
+            portion_dur = night_dur / 8.0
+            # Night sequence starts from 5th weekday lord
+            night_saturn_portion = (saturn_idx - (lord_idx + 5) % 7) % 7
+            gulika_start_jd = sunset_jd + night_saturn_portion * portion_dur
+
+        # Ascendant at Gulika's portion start = Gulika longitude
+        ayanamsha = getattr(chart, "ayanamsha_value", swe.get_ayanamsa_ut(gulika_start_jd))
+        cusps, ascmc = swe.houses(gulika_start_jd, lat, lon, b"P")
+        gulika_lon = (ascmc[0] - ayanamsha) % 360
+
+        # Mandi = 1 portion before Gulika
+        mandi_portion = (saturn_portion - 1) % 7
+        if is_day_birth:
+            mandi_start_jd = sunrise_jd + mandi_portion * portion_dur
+        else:
+            mandi_start_jd = gulika_start_jd - portion_dur
+        cusps2, ascmc2 = swe.houses(mandi_start_jd, lat, lon, b"P")
+        mandi_lon = (ascmc2[0] - ayanamsha) % 360
+
+        return {
+            "mandi": round(mandi_lon, 4),
+            "gulika": round(gulika_lon, 4),
+        }
+    except Exception:
+        pass
+
+    # Fallback: 15°/hr approximation if swe.rise_trans unavailable
     if sunrise_lon is None:
-        sunrise_lon = 0.0  # default: Aries rising
-
-    # Time since sunrise in hours
-    birth_hour = birth_dt.hour + birth_dt.minute / 60.0
-    sunrise_hour = 6.0  # simplified; ideally computed from swe.rise_trans
-
-    elapsed = birth_hour - sunrise_hour  # noqa: F841
-
-    # Longitude of Mandi = sunrise longitude + (lord_idx * portion * 15°/hr)
-    # Each hour = 15° of celestial motion approximately
-    mandi_elapsed = lord_idx * duration_per_portion
-    mandi_lon = (sunrise_lon + mandi_elapsed * 15.0) % 360
-
-    gulika_lon = (sunrise_lon + (lord_idx - 1) * duration_per_portion * 15.0) % 360
+        sunrise_lon = 0.0
+    duration_per_portion = day_duration_hours / 8.0
+    gulika_elapsed = saturn_portion * duration_per_portion
+    gulika_lon = (sunrise_lon + gulika_elapsed * 15.0) % 360
+    mandi_lon = (sunrise_lon + (saturn_portion - 1) * duration_per_portion * 15.0) % 360
 
     return {
         "mandi": round(mandi_lon, 4),
