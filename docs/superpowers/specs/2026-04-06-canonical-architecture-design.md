@@ -68,18 +68,27 @@ Configurable. Explicit about which conventions are applied.
 ### Layer 3 output: `ChartGraph`
 ```
 nodes: [PlanetNode, HouseNode, SignNode]
-edges: [TypedEdge(source, target, type, attributes, school)]
+edges: [typed edge instances per schema below]
+schema_version: str
+conventions_version: str
 ```
 Canonical representation. All downstream layers query this.
 
+### Layer 4: Feature Access
+**Projection-only.** Feature access is a read-only view over the graph, not a computation layer. `moon.parashari.shadbala` resolves to a graph query, not a separate calculation. No hidden computation allowed — if the graph doesn't have it, the feature doesn't exist.
+
 ### Layer 5 → Layer 6: `RuleResult`
 ```
-rule_id, source_text, chapter, verse
-matched_pattern: list[Edge]
+rule_id, source_text, chapter, verse, school
+matched_pattern:
+  nodes: list[NodeRef]     # which nodes participated
+  edges: list[EdgeRef]     # which edges matched
+  bindings: dict[str, Any] # variable bindings (e.g., planet=Jupiter, house=4)
 prediction: {domain, direction, intensity, entity_target}
 confidence: float
+trace: {edges_queried, conditions_checked, why_fired}
 ```
-Provenance-complete. Every result traces to a source and a graph pattern.
+Provenance-complete. Every result traces to source, graph pattern, AND reasoning.
 
 ## Graph Schema
 
@@ -88,24 +97,66 @@ Provenance-complete. Every result traces to a source and a graph pattern.
 - `HouseNode`: number (1-12), sign, cusp_longitude
 - `SignNode`: index (0-11), name, lord
 
-### Edge Types (Controlled Vocabulary)
-| Edge Type | Source → Target | Attributes | School-Specific? |
-|-----------|----------------|------------|-----------------|
+### Edge Tiers
+Edges are organized into tiers based on their derivation level. Higher tiers depend on lower tiers. This ordering governs construction sequence and recomputation.
+
+**Tier 1: Structural (from Layer 1-2, no computation)**
+These are direct facts from astronomy + conventions.
+
+| Edge Type | Source → Target | Schema | School-Specific? |
+|-----------|----------------|--------|-----------------|
 | `IN_SIGN` | Planet → Sign | — | No |
-| `IN_HOUSE` | Planet → House | — | No (convention-dependent) |
+| `IN_HOUSE` | Planet → House | — | Convention-dependent |
 | `LORDS` | Planet → Sign | — | No |
 | `LORDS_HOUSE` | Planet → House | — | No |
-| `ASPECTS` | Planet → Planet/House | strength (virupas), type | **Yes** (Parashari vs Jaimini) |
-| `CONJUNCT` | Planet → Planet | orb (degrees) | No |
-| `DIGNITY` | Planet → DignityLevel | level, score | Partially (MT ranges vary) |
-| `AVASTHA` | Planet → AvasthaState | system, state, effect | **Yes** (Baaladi/Lajjitadi/etc.) |
-| `FRIENDSHIP` | Planet → Planet | naisargika, tatkalik, compound | No (naisargika) / Yes (compound) |
-| `COMBUSTION` | Planet → Sun | orb, is_cazimi | Partially (orbs vary) |
-| `IN_KENDRA_FROM` | Planet → Planet | houses_apart | No |
-| `IN_TRIKONA_FROM` | Planet → Planet | houses_apart | No |
-| `YOGA_COMPONENT` | Planet → YogaPattern | yoga_name, role | **Yes** (different texts define differently) |
 
-New edge types require explicit addition to this registry.
+**Tier 2: Derived (computed from Tier 1, deterministic)**
+These require position-based computation.
+
+| Edge Type | Source → Target | Schema | Depends On | School-Specific? |
+|-----------|----------------|--------|-----------|-----------------|
+| `ASPECTS` | Planet → Planet/House | `{strength_virupas: float, aspect_type: str}` | positions | **Yes** (Parashari graha / Jaimini rasi) |
+| `CONJUNCT` | Planet → Planet | `{orb_degrees: float}` | positions | No |
+| `IN_KENDRA_FROM` | Planet → Planet | `{houses_apart: int}` | `IN_HOUSE` | No |
+| `IN_TRIKONA_FROM` | Planet → Planet | `{houses_apart: int}` | `IN_HOUSE` | No |
+| `COMBUSTION` | Planet → Sun | `{orb_degrees: float, is_cazimi: bool}` | positions | Partially (orbs vary) |
+| `FRIENDSHIP` | Planet → Planet | `{naisargika: str, tatkalik: str, compound: str}` | `IN_SIGN` (for tatkalik) | Partially |
+
+**Tier 3: Interpretive (computed from Tier 1-2, may involve conventions)**
+These require strength/state computation.
+
+| Edge Type | Source → Target | Schema | Depends On | School-Specific? |
+|-----------|----------------|--------|-----------|-----------------|
+| `DIGNITY` | Planet → — (self-attribute) | `{level: str, score: float}` | `IN_SIGN`, conventions | Partially (MT ranges) |
+| `AVASTHA` | Planet → — (self-attribute) | `{system: str, state: str, effect: float}` | `IN_SIGN`, positions | **Yes** |
+| `STRENGTH` | Planet → — (self-attribute) | `{component: str, virupas: float}` | multiple | **Yes** |
+
+**Yogas are NOT graph edges.** Yoga detection belongs to the Rule Engine (Layer 5) as pattern matching over the graph. Putting yoga results in the graph would violate the invariant: "no predictions or rule outputs in the graph."
+
+### Edge Dependency Graph
+```
+Tier 1 (structural):
+  IN_SIGN ← positions + conventions
+  IN_HOUSE ← positions + conventions
+  LORDS ← sign data
+  LORDS_HOUSE ← LORDS + IN_HOUSE
+
+Tier 2 (derived):
+  ASPECTS ← positions (+ school for method)
+  CONJUNCT ← positions
+  IN_KENDRA_FROM ← IN_HOUSE
+  IN_TRIKONA_FROM ← IN_HOUSE
+  COMBUSTION ← positions + conventions (orbs)
+  FRIENDSHIP ← IN_SIGN (tatkalik) + static tables (naisargika)
+
+Tier 3 (interpretive):
+  DIGNITY ← IN_SIGN + conventions (MT ranges)
+  AVASTHA ← IN_SIGN + positions + DIGNITY
+  STRENGTH ← multiple Tier 1-2 edges + conventions
+```
+Construction follows tier order. Tier N depends only on Tier <N.
+
+New edge types require: (1) tier assignment, (2) dependency declaration, (3) typed schema, (4) explicit addition to this registry.
 
 ### Graph Invariants (enforced at construction)
 1. Every planet has exactly 1 `IN_SIGN` and 1 `IN_HOUSE` edge
@@ -145,8 +196,37 @@ Moon in 1st house:
 ```
 Both edges exist simultaneously. Aggregation layer resolves per mode.
 
-### Default School
-BPHS/Parashari is the default for computation (Layer 2-3). This is explicit, not hidden. Users can override. Rules from other schools still fire but are tagged with their school for aggregation.
+### Default School (explicit config, never implicit)
+```python
+# In config, never hardcoded in computation modules
+COMPUTATION_SCHOOL = "parashari"  # affects Layer 3 derived edges
+RULE_SCHOOL = "all"               # "all" | "parashari" | "jaimini" | "kp"
+AGGREGATION_MODE = "concordance"  # "hierarchy" | "school" | "concordance"
+```
+BPHS/Parashari is the recommended default. This is declared in config and passed explicitly to graph construction and rule evaluation. No module assumes a school — it receives one.
+
+### Aggregation Layer (formal definition)
+
+**Hierarchy mode:**
+- Rules ranked by `source_text.authority_rank`
+- When rules from different texts fire for the same configuration, highest-rank wins
+- Ties broken by concordance count
+
+**School mode:**
+- Only rules matching `RULE_SCHOOL` are evaluated
+- No contradictions possible (scope is filtered)
+
+**Concordance mode (recommended):**
+- All rules fire regardless of school
+- Results grouped by (house, domain, direction)
+- Concordance score = (texts_agreeing / texts_with_opinion)
+- Final direction = majority direction, weighted by concordance
+- Contradictions surfaced in output, not suppressed
+
+**Aggregation invariants:**
+- Deterministic: same rules + same graph → same output, always
+- No aggregation-time computation — only combining RuleResults
+- Every output traces to specific RuleResults which trace to specific graph edges
 
 ## Migration Strategy (Two Phases)
 
@@ -202,16 +282,21 @@ Every graph output carries its schema + conventions version. Historical outputs 
 - Graph construction: O(planets × relationships) — no nested recomputation
 - Rule evaluation: queries pre-computed graph — no trigger of recomputation
 - Memoization on graph edges for repeated queries within same evaluation
+- **Target: graph construction < 10ms, validated via benchmark suite** (not assumed)
+- Benchmark suite runs in CI on every push touching graph construction code
 
 ### Debugging & Observability
-- Every edge carries: which layer created it, which inputs were used
-- Rule trace: which edges were queried, what matched, why rule fired/didn't
+- Every edge carries: which tier created it, which inputs were used, which school
+- Rule trace: which edges were queried, what matched, why rule fired/didn't fire
+- `explain(rule_id, chart)` → returns full trace from graph edges to prediction
 - "Why did this rule fire?" answerable for any rule in any chart
 
 ### Migration Safety Net
-- Snapshot comparison: old system vs graph system outputs for regression suite
-- Acceptable deviation: zero (correctness, not performance)
+- Snapshot comparison: old system vs graph system outputs for full regression suite
+- Acceptable deviation: **zero** (correctness, not performance)
 - Phase 1 does not ship until snapshot parity achieved
+- **Rollback mechanism:** feature flag to switch between old evaluation engine and graph-based engine. Both coexist during migration. Flag removed only after Phase 1 exit criteria are met.
+- Comparison mode: run BOTH engines on every test chart during migration, assert identical outputs
 
 ## What This Architecture Prevents
 
