@@ -48,19 +48,32 @@ DIG_BALA_PEAK_HOUSE: dict[str, int] = {
     "Saturn": 7,
 }
 
-# Saptavargaja Bala Virupas per dignity level per varga
-# Source: BPHS Ch.27 v.1-20
+# Saptavargaja Bala Virupas — BPHS Ch.27 v.2-4 (p.265, Santhanam Vol 1)
+# Uses 7-level compound (Panchadha) relationship, NOT simple dignity.
+# "Moolatrikona Rasi 45, own Rasi 30, extreme friend 20, friend 15,
+#  neutral 10, enemy 4, extreme enemy 2 Virupas"
+SAPTAVARGAJA_VIRUPAS_BPHS: dict[str, float] = {
+    "Moolatrikona": 45.0,
+    "Own": 30.0,
+    "Adhi Mitra": 20.0,
+    "Mitra": 15.0,
+    "Sama": 10.0,
+    "Shatru": 4.0,
+    "Adhi Shatru": 2.0,
+}
+
+# Legacy lookup (kept for backward compat with shodashavarga_bala.py)
 SAPTAVARGAJA_VIRUPAS: dict[str, float] = {
     "DEEP_EXALT": 30.0,
     "EXALT": 30.0,
-    "MOOLTRIKONA": 30.0,
-    "OWN_SIGN": 22.5,
+    "MOOLTRIKONA": 45.0,  # corrected: was 30.0
+    "OWN_SIGN": 30.0,  # corrected: was 22.5
     "FRIEND_SIGN": 15.0,
-    "NEUTRAL": 7.5,
-    "ENEMY_SIGN": 3.75,
-    "DEBIL": 1.875,
-    "NEECHA_BHANGA_RAJA": 22.5,  # treated as neutral for Saptavargaja
-    "NEECHA_BHANGA": 7.5,
+    "NEUTRAL": 10.0,  # corrected: was 7.5
+    "ENEMY_SIGN": 4.0,  # corrected: was 3.75
+    "DEBIL": 2.0,  # corrected: was 1.875
+    "NEECHA_BHANGA_RAJA": 30.0,
+    "NEECHA_BHANGA": 10.0,
 }
 
 # 7 vargas used for Saptavargaja Bala
@@ -457,16 +470,6 @@ def compute_saptavargaja_bala(planet: str, chart) -> float:
     """
     try:
         from src.calculations.vargas import compute_varga_sign  # noqa: F401
-        from src.calculations.dignity import (  # noqa: F401
-            EXALT_SIGN,
-            DEBIL_SIGN,
-            MOOLTRIKONA_RANGES,
-            OWN_SIGNS,
-            _NAISARGIKA,
-            _get_sign_lord,
-            DEEP_EXALT_ORB,
-            PARAMOTCHA_DEGREE,
-        )
     except ImportError:
         return 0.0
 
@@ -482,66 +485,68 @@ def compute_saptavargaja_bala(planet: str, chart) -> float:
         except Exception:
             continue
 
-        # Determine dignity in this varga
-        virupas = _get_saptavargaja_virupas(planet, varga_sign, longitude, varga_n)
+        # Determine relationship-based virupas in this varga (BPHS Ch.27 v.2-4)
+        virupas = _get_saptavargaja_virupas(
+            planet, varga_sign, longitude, varga_n, chart=chart,
+        )
         total += virupas
 
     return round(total, 3)
 
 
 def _get_saptavargaja_virupas(
-    planet: str, sign_index: int, longitude: float, varga_n: int
+    planet: str, sign_index: int, longitude: float, varga_n: int,
+    chart=None,
 ) -> float:
-    """Determine Virupas for a planet in a given varga sign."""
-    from src.calculations.dignity import (  # noqa: F401
-        EXALT_SIGN,
-        DEBIL_SIGN,
-        MOOLTRIKONA_RANGES,
-        OWN_SIGNS,
-        PARAMOTCHA_DEGREE,
-        DEEP_EXALT_ORB,
-    )
+    """Determine Virupas for a planet in a given varga sign.
+
+    BPHS Ch.27 v.2-4: uses compound (Panchadha) relationship with sign lord.
+    Exaltation/debilitation are NOT Saptavargaja categories — those are
+    handled by Uchcha Bala. Saptavargaja uses: MT, Own, and 5-fold relationship.
+
+    Note on compound relationships (p.265 notes): "compound relationships of
+    two given planets be seen in the Rasi chart only and not in the concerned
+    divisional chart."
+    """
+    from src.calculations.dignity import MOOLTRIKONA_RANGES
+
+    V = SAPTAVARGAJA_VIRUPAS_BPHS
 
     if planet in ("Rahu", "Ketu"):
-        return SAPTAVARGAJA_VIRUPAS["NEUTRAL"]
+        return V["Sama"]
 
-    # Exaltation
-    if planet in EXALT_SIGN and sign_index == EXALT_SIGN[planet]:
-        deg = longitude % 30
-        if (
-            varga_n == 1
-            and abs(deg - PARAMOTCHA_DEGREE.get(planet, 15)) <= DEEP_EXALT_ORB
-        ):
-            return SAPTAVARGAJA_VIRUPAS["DEEP_EXALT"]
-        return SAPTAVARGAJA_VIRUPAS["EXALT"]
-
-    # Debilitation
-    if planet in DEBIL_SIGN and sign_index == DEBIL_SIGN[planet]:
-        return SAPTAVARGAJA_VIRUPAS["DEBIL"]
-
-    # Mooltrikona
-    if planet in MOOLTRIKONA_RANGES and varga_n == 1:
-        mt_si, mt_s, mt_e = MOOLTRIKONA_RANGES[planet]
-        deg = longitude % 30
-        if sign_index == mt_si and mt_s <= deg < mt_e:
-            return SAPTAVARGAJA_VIRUPAS["MOOLTRIKONA"]
-
-    # Own sign
-    if planet in OWN_SIGNS and sign_index in OWN_SIGNS[planet]:
-        return SAPTAVARGAJA_VIRUPAS["OWN_SIGN"]
-
-    # Friendship (simplified naisargika for Saptavargaja)
     lord = _simple_sign_lord(sign_index)
-    if lord:
-        from src.calculations.dignity import _NAISARGIKA  # noqa: F401
+    if not lord or lord == planet:
+        # Planet is in its own sign
+        # Check if MT (D1: degree range; other vargas: sign match only)
+        if planet in MOOLTRIKONA_RANGES:
+            mt_si, mt_s, mt_e = MOOLTRIKONA_RANGES[planet]
+            if sign_index == mt_si:
+                if varga_n == 1:
+                    deg = longitude % 30
+                    if mt_s <= deg < mt_e:
+                        return V["Moolatrikona"]
+                    return V["Own"]  # own sign portion of MT sign
+                return V["Moolatrikona"]  # in other vargas, MT sign = MT
+        return V["Own"]
 
-        rel = _NAISARGIKA.get((planet, lord), "Neutral")
-        if rel == "Friend":
-            return SAPTAVARGAJA_VIRUPAS["FRIEND_SIGN"]
-        if rel == "Enemy":
-            return SAPTAVARGAJA_VIRUPAS["ENEMY_SIGN"]
+    # Planet is in another planet's sign — use compound relationship
+    if chart is not None:
+        try:
+            from src.calculations.panchadha_maitri import panchadha_relation
+            rel = panchadha_relation(planet, lord, chart)
+            return V.get(rel, V["Sama"])
+        except Exception:
+            pass
 
-    return SAPTAVARGAJA_VIRUPAS["NEUTRAL"]
+    # Fallback: simple Naisargika if chart not available
+    from src.calculations.dignity import _NAISARGIKA
+    nai = _NAISARGIKA.get((planet, lord), "Neutral")
+    if nai == "Friend":
+        return V["Mitra"]
+    if nai == "Enemy":
+        return V["Shatru"]
+    return V["Sama"]
 
 
 def _simple_sign_lord(sign_index: int) -> Optional[str]:
