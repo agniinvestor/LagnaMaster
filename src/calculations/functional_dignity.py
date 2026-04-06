@@ -236,18 +236,36 @@ KNOWN_YOGAKARAKAS: dict[int, list[str]] = {
     11: [],  # Pisces: Mars+Jupiter jointly; no single strict K+T — Ch.34 v.43
 }
 
-# Functional malefic by Lagna (traditional summary)
+# Functional malefic by Lagna — BPHS Ch.34 verse classifications
+# Each entry cites the specific verse and lordship rationale.
+# Rahu/Ketu included per sloka 16 (natural malefic default).
 KNOWN_FUNCTIONAL_MALEFICS: dict[int, list[str]] = {
-    0: ["Mercury", "Saturn", "Rahu", "Ketu"],
-    1: ["Jupiter", "Moon", "Rahu", "Ketu"],
-    2: ["Mars", "Jupiter", "Rahu", "Ketu"],
-    3: ["Jupiter", "Saturn", "Mercury", "Rahu", "Ketu"],
+    # Aries v.19: "Saturn, Mercury and Venus are malefics"
+    0: ["Saturn", "Mercury", "Venus", "Rahu", "Ketu"],
+    # Taurus v.23: "Jupiter, Venus and the Moon are malefics"
+    # Venus: lagna lord BUT MT=Libra(H6), so 6th lordship predominates
+    1: ["Jupiter", "Venus", "Moon", "Rahu", "Ketu"],
+    # Gemini v.25: "Mars, Jupiter and the Sun are malefics"
+    2: ["Mars", "Jupiter", "Sun", "Rahu", "Ketu"],
+    # Cancer v.27: "Venus and Mercury are malefics"
+    # Jupiter is AUSPICIOUS per verse (H6+H9, trikona dominates)
+    3: ["Venus", "Mercury", "Rahu", "Ketu"],
+    # Leo v.29: "Mercury, Venus and Saturn are malefics"
     4: ["Mercury", "Venus", "Saturn", "Rahu", "Ketu"],
+    # Virgo v.31: "Mars, Jupiter and the Moon are malefics"
     5: ["Mars", "Jupiter", "Moon", "Rahu", "Ketu"],
-    6: ["Jupiter", "Mercury", "Rahu", "Ketu"],
-    7: ["Venus", "Mercury", "Rahu", "Ketu"],
-    8: ["Venus", "Saturn", "Rahu", "Ketu"],
+    # Libra v.33: "Jupiter, the Sun and Mars are malefics"
+    # Mercury is AUSPICIOUS per verse (H9+H12, trikona dominates)
+    6: ["Jupiter", "Sun", "Mars", "Rahu", "Ketu"],
+    # Scorpio v.35: "Venus, Mercury and Saturn are malefics"
+    7: ["Venus", "Mercury", "Saturn", "Rahu", "Ketu"],
+    # Sagittarius v.37: "Only Venus is inauspicious"
+    # Saturn is "a killer" (H2+H3) but verse limits malefic to Venus only
+    8: ["Venus", "Rahu", "Ketu"],
+    # Capricorn v.39: "Mars, Jupiter and the Moon are malefics"
     9: ["Mars", "Jupiter", "Moon", "Rahu", "Ketu"],
+    # Aquarius v.41: "Jupiter, the Moon and Mars are malefics"
     10: ["Jupiter", "Moon", "Mars", "Rahu", "Ketu"],
-    11: ["Saturn", "Venus", "Sun", "Rahu", "Ketu"],
+    # Pisces v.43: "Saturn, Venus, the Sun and Mercury are malefics"
+    11: ["Saturn", "Venus", "Sun", "Mercury", "Rahu", "Ketu"],
 }
