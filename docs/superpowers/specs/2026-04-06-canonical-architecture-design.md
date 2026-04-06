@@ -76,7 +76,7 @@ conventions_version: str
 Canonical representation. All downstream layers query this.
 
 ### Layer 4: Feature Access
-**Graph-derived computation only.** Feature access computes derived values (Shadbala, dignity scores, avastha effects) but ALL inputs must come from graph edges — never from raw chart data. This is the hard constraint: the graph is the sole input source. Layer 4 may aggregate, weight, and combine graph attributes, but it cannot bypass the graph to access Layer 1-2 data directly. Existing domain taxonomy (`outcome_domains`) and concordance infrastructure (`concordance_count`, `concordance_texts`) on V2 rules are preserved and used by the aggregation layer.
+**Graph-derived computation only.** Feature access computes derived values (Shadbala, dignity scores, avastha effects) but ALL inputs must come from graph edges — never from raw chart data. Input is the `VargaGraphSet` (D1 + requested divisional graphs), not a single graph. Saptavargaja Bala explicitly requires 7 varga graphs. Functional malefic classification requires lagna context + LORDS_HOUSE edges. This is the defined computation layer — not "hidden" computation, but the designed aggregation point for multi-graph, multi-lagna derived values. Existing domain taxonomy (`outcome_domains`) and concordance infrastructure (`concordance_count`, `concordance_texts`) on V2 rules are preserved and used by the aggregation layer.
 
 ### Layer 5 → Layer 6: `RuleResult`
 ```
@@ -87,6 +87,7 @@ matched_pattern:
   bindings: dict[str, Any] # variable bindings (e.g., planet=Jupiter, house=4)
 prediction: {domain, direction, intensity, entity_target}
 confidence: float
+lagna: str                    # which lagna context produced this result (natal/chandra/surya/etc.)
 context:
   graph_schema_version: str
   conventions_version: str    # which conventions produced the graph this rule queried
@@ -260,6 +261,33 @@ BPHS/Parashari is the recommended default. This is declared in config and passed
 - Deterministic: same rules + same graph + same config → same output, always
 - No domain computation at aggregation — but statistical/meta operations allowed (normalization, confidence scaling, weighting)
 - Every output traces to specific RuleResults which trace to specific graph edges
+
+## Multi-Lagna and Divisional Chart Model
+
+### graph.with_lagna(lagna_type) → DerivedGraph
+A derived graph shares Tier 1 structural edges (positions, sign lordships — these don't change with lagna) and recomputes Tier 2+ edges (IN_HOUSE changes, so IN_KENDRA_FROM, IN_TRIKONA_FROM, and all house-dependent edges recompute). Not a view (shared state risk), not a full copy (wasteful). Lagna types: `natal`, `chandra`, `surya`, `bhava`, `hora`, `ghatika`.
+
+### VargaGraphSet
+Each divisional chart (D1, D9, D10, etc.) produces a separate ChartGraph with its own IN_SIGN edges. `VargaGraphSet = {varga_number: ChartGraph}`. Layer 4 (Feature Access) takes the full VargaGraphSet as input.
+
+### LORDS_HOUSE school variant
+Default: universal Parashari sign-based lordship. KP system adds `LORDS_HOUSE {school=kp}` edges where sub-lord logic changes the effective lord. Most rules use default; KP-specific rules declare `requires: ["lords_kp"]`.
+
+## Execution Sequence (explicit)
+
+```
+1. Build AstronomicalChart (Layer 1 — immutable positions)
+2. Apply conventions → ConventionedChart (Layer 2)
+3. Construct ChartGraph + VargaGraphSet (Layer 3 — all schools, all vargas)
+4. For each lagna (natal, chandra, surya...):
+   a. Derive lagna-specific graph (recompute Tier 2+ edges)
+   b. Compute features from VargaGraphSet + lagna graph (Layer 4)
+   c. Evaluate rules against graph + features (Layer 5)
+   d. Apply cancellations within this lagna scope (Pass 2)
+5. Aggregate across lagnas and schools (Layer 6)
+6. Format output (Layer 7)
+```
+Cancellation in step 4d is scoped to `(lagna, school)` — Neecha Bhanga from D1 natal cannot cancel debilitation rules from Chandra lagna.
 
 ## Migration Strategy (Two Phases)
 
