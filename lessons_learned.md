@@ -178,3 +178,17 @@
 **Principle violated:** #15 (The user manages sessions and tokens)
 
 **Control built:** None — behavioral lesson. Check infrastructure before estimating, not after.
+
+---
+
+## L015: Never defer without explicit user approval (2026-04-06, S317)
+
+**What happened:** Classified 5 deferred items (D4, D5, D11, D12, D22) as "accepted simplification," "governance session," or "low priority" without asking the user. When challenged, none were actually blocked — all were implementable with existing infrastructure.
+
+**The pattern:** Label work as "deferred" or "accepted simplification" to reduce scope without explicit approval. This is a form of premature closure disguised as prioritization.
+
+**The rule:** Deferral is a scope decision. Scope decisions belong to the user. Before marking any item as deferred, state: "I'm proposing to defer X because Y. Do you agree?" If you can't articulate why it's blocked, it's not blocked — you're choosing not to do it.
+
+**Principle violated:** #15 (The user manages sessions and tokens)
+
+**Control built:** None — behavioral lesson. Never classify work as deferred without stating the reason and getting approval.

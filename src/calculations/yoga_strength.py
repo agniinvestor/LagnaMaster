@@ -338,7 +338,8 @@ def detect_chamara_yoga(chart) -> Optional[NamedYogaResult]:
 
     jup_si = chart.planets["Jupiter"].sign_index
     jup_house = (jup_si - lagna_si) % 12 + 1
-    from src.calculations.scoring_patches import aspect_hits, get_aspect_strength
+    from src.calculations.sputa_drishti import get_aspect_strength
+    from src.calculations.scoring_patches import aspect_hits
 
     asp_str = get_aspect_strength("Jupiter", aspect_hits(jup_house, house))
     if asp_str == 0:

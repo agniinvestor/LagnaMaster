@@ -55,32 +55,96 @@ _SPECIAL_ASPECT_HOUSES: dict[str, set[int]] = {
 }
 
 
+def _saturn_special_drishti(arc: float) -> float:
+    """BPHS Ch.26 v.9-10: Saturn's special aspect computation.
+
+    Special aspects at 3rd (60°) and 10th (270°) houses.
+    Within these house ranges, Saturn gets enhanced drishti.
+    """
+    a = arc % 360.0
+    rasi = int(a / 30)
+    deg = a - rasi * 30
+
+    # 3rd house range (60-90°): rasi 2
+    if rasi == 2:
+        return deg * 2.0  # "multiply the degrees by 2"
+    # 10th house range (270-300°): rasi 9
+    if rasi == 9:
+        return (30.0 - deg) * 2.0  # "degrees to elapse be doubled"
+    # Adjacent: rasi 3 (90-120°) — "halved and deducted from 60"
+    if rasi == 3:
+        return 60.0 - deg / 2.0
+    # Adjacent: rasi 8 (240-270°) — "add to the degrees 30"
+    if rasi == 8:
+        return deg + 30.0
+    return -1.0  # not in Saturn's special range
+
+
+def _mars_special_drishti(arc: float) -> float:
+    """BPHS Ch.26 v.11: Mars's special aspect computation.
+
+    Special aspects at 4th (90°) and 8th (210°) houses.
+    """
+    a = arc % 360.0
+    rasi = int(a / 30)
+    deg = a - rasi * 30
+
+    # 4th house (90-120°, rasi 3) or 8th house (210-240°, rasi 7):
+    # "reduced from 60"
+    if rasi in (3, 7):
+        return 60.0 - deg
+    # Adjacent: rasi 2 (60-90°) or rasi 6 (180-210°):
+    # "increased by half and superadd 15"
+    if rasi in (2, 6):
+        return deg * 1.5 + 15.0
+    return -1.0  # not in Mars's special range
+
+
+def _jupiter_special_drishti(arc: float) -> float:
+    """BPHS Ch.26 v.12: Jupiter's special aspect computation.
+
+    Special aspects at 5th (120°) and 9th (240°) houses.
+    """
+    a = arc % 360.0
+    rasi = int(a / 30)
+    deg = a - rasi * 30
+
+    # 5th house (120-150°, rasi 4) or 9th house (240-270°, rasi 8):
+    # "degrees be subtracted from 60"
+    if rasi in (4, 8):
+        return 60.0 - deg
+    # Adjacent: rasi 3 (90-120°) or rasi 7 (210-240°):
+    # "halve the degrees and increase by 45"
+    if rasi in (3, 7):
+        return deg / 2.0 + 45.0
+    return -1.0  # not in Jupiter's special range
+
+
+_SPECIAL_DRISHTI_FN = {
+    "Saturn": _saturn_special_drishti,
+    "Mars": _mars_special_drishti,
+    "Jupiter": _jupiter_special_drishti,
+}
+
+
 def bphs_drishti_with_specials(
     aspector: str, arc_degrees: float
 ) -> float:
-    """
-    BPHS drishti including special aspect boost for Mars/Jupiter/Saturn.
+    """BPHS drishti including special aspects per Ch.26 v.9-12.
 
-    At special aspect houses, the base strength is boosted to full (60 virupas)
-    using a smooth interpolation within ±15° of the house center.
-    BPHS Ch.26 v.9-12.
+    For Mars/Jupiter/Saturn, computes special aspect strength using
+    the exact piecewise formulas from the BPHS verses. Returns the
+    maximum of the base drishti and the special drishti.
     """
     base = bphs_drishti_virupas(arc_degrees)
-    special_houses = _SPECIAL_ASPECT_HOUSES.get(aspector)
-    if not special_houses:
+    special_fn = _SPECIAL_DRISHTI_FN.get(aspector)
+    if not special_fn:
         return base
 
-    # Check proximity to special aspect house centers
-    a = arc_degrees % 360.0
-    for house in special_houses:
-        center = (house - 1) * 30.0  # house 4 → 90°, house 8 → 210°, etc.
-        diff = min(abs(a - center), 360.0 - abs(a - center))
-        if diff <= 15.0:
-            # Within the special aspect house: boost to 60 virupas
-            # with linear interpolation from house edge to center
-            special_strength = 60.0 * (1.0 - diff / 15.0)
-            return max(base, special_strength)
-    return base
+    special = special_fn(arc_degrees)
+    if special < 0:
+        return base  # not in special range
+    return max(base, min(60.0, special))
 
 # ─── Aspect orb definitions ───────────────────────────────────────────────────
 # Each planet can cast a full (100%), three-quarter (75%), half (50%),

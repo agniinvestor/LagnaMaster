@@ -69,7 +69,8 @@ def compute_bhava_bala(
     natural_benefics = {"Moon", "Mercury", "Jupiter", "Venus"}
     natural_malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
-    from src.calculations.scoring_patches import get_aspect_strength, aspect_hits
+    from src.calculations.sputa_drishti import get_aspect_strength
+    from src.calculations.scoring_patches import aspect_hits
 
     drishti_bala = 0.0
     for planet, pdata in chart.planets.items():

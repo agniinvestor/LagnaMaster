@@ -390,12 +390,10 @@ def _score_one_house(
     except (ImportError, AttributeError):
         pass
 
-    # R22 retrograde
+    # R22 retrograde — Phaladeepika Ch.2 v.9: retrograde = strong (like exaltation)
+    # Classical texts treat ALL retrograde planets as strong, no inner/outer distinction
     if bh_rx:
-        if bhavesh in {"Jupiter", "Saturn"}:
-            total += W["R22"]
-        elif bhavesh in {"Mercury", "Venus", "Mars"}:
-            total -= abs(W["R22"]) * 2
+        total += W["R22"]
 
     # R23 Ashtakavarga SAV
     if av_bindus:

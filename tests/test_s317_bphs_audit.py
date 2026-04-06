@@ -280,13 +280,19 @@ class TestDrishtiSpeculum:
             ("Mars", 210.0),
             ("Jupiter", 120.0),
             ("Jupiter", 240.0),
-            ("Saturn", 60.0),
             ("Saturn", 270.0),
         ],
     )
     def test_special_aspect_full_at_center(self, planet, angle):
         """Special aspects reach full strength (60 virupas) at house center."""
         assert abs(self.special(planet, angle) - 60.0) < 0.01
+
+    def test_saturn_3rd_house_ramps(self):
+        """Saturn's 3rd house aspect ramps 0→60 across 60°-90° per Ch.26 v.9-10."""
+        assert self.special("Saturn", 60.0) == 15.0  # base drishti (special = 0 at start)
+        assert self.special("Saturn", 75.0) >= 30.0  # ramping up
+        assert self.special("Saturn", 85.0) > 40.0  # approaching full
+        assert abs(self.special("Saturn", 89.0) - 58.0) < 2.0  # near full
 
     def test_non_special_planet_no_boost(self):
         """Sun at 90° gets base strength only (45), no special boost."""
