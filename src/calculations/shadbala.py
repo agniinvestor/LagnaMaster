@@ -412,44 +412,38 @@ def compute_chesta_bala(planet: str, chart) -> float:
 def compute_drik_bala(planet: str, chart) -> float:
     """
     Drik Bala: signed sum of aspectual strength received from all other planets.
-    Source: BPHS Ch.27 v.22-29
+    Source: BPHS Ch.27 v.22-29, using continuous drishti from Ch.26 v.6-8.
+
+    Benefic aspects add virupas, malefic aspects subtract.
+    Uses degree-based BPHS drishti (speculum table) instead of house-based binary.
     """
     if planet not in chart.planets:
         return 0.0
 
-    from src.calculations.house_lord import compute_house_map  # noqa: F401
+    from src.calculations.sputa_drishti import bphs_drishti_with_specials
 
-    hmap = compute_house_map(chart)
-
-    planet_house = hmap.planet_house.get(planet, 1)
+    planet_lon = chart.planets[planet].longitude
     total = 0.0
 
-    # Natural benefic/malefic for Drik Bala (chart-specific would require functional roles)
     natural_benefics = {"Moon", "Mercury", "Jupiter", "Venus"}
     natural_malefics = {"Sun", "Mars", "Saturn", "Rahu", "Ketu"}
 
     for aspector, aspector_pos in chart.planets.items():
         if aspector == planet:
             continue
-        aspector_house = hmap.planet_house.get(aspector, 1)
+        # Arc from aspector to aspected planet
+        arc = (planet_lon - aspector_pos.longitude) % 360.0
+        virupas = bphs_drishti_with_specials(aspector, arc)
 
-        # Check if aspector aspects the target planet's house
-        houses_from = (planet_house - aspector_house) % 12 + 1
-
-        # All planets aspect 7th
-        aspect_str = 0.0
-        if houses_from == 7:
-            aspect_str = 1.0
-        else:
-            aspect_str = ASPECT_STRENGTH.get((aspector, houses_from), 0.0)
-
-        if aspect_str > 0:
+        if virupas > 0:
+            # Normalize to Rupa scale (60 virupas = 1 Rupa)
+            rupa_fraction = virupas / 60.0
             if aspector in natural_benefics:
-                total += aspect_str
+                total += rupa_fraction
             elif aspector in natural_malefics:
-                total -= aspect_str
+                total -= rupa_fraction
 
-    return round(total * 30.0, 3)  # scale to Virupa range
+    return round(total * 30.0, 3)  # scale to Virupa range (±30 typical)
 
 
 # ─── Saptavargaja Bala ────────────────────────────────────────────────────────

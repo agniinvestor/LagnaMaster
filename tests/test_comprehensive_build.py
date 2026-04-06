@@ -520,12 +520,24 @@ class TestDerivedUpagrahas:
         expected_dhuma = (100.0 + 133.333) % 360
         assert abs(result.dhuma - expected_dhuma) < 0.01
 
-    def test_vyatipata_is_360_minus_dhuma(self):
+    def test_vyatipata_is_dhuma_plus_53_333(self):
+        """BPHS Ch.3 v.62: Vyatipata = Dhuma + 53°20' (verified against worked example p.43)."""
         from src.calculations.upagrahas_derived import compute_derived_upagrahas
 
         result = compute_derived_upagrahas(100.0)
-        expected = (360 - result.dhuma) % 360
+        expected = (result.dhuma + 53.333) % 360
         assert abs(result.vyatipata - expected) < 0.01
+
+    def test_upaketu_plus_30_equals_sun(self):
+        """BPHS Ch.3 v.64 self-check: Upaketu + 30° = Sun's longitude."""
+        from src.calculations.upagrahas_derived import compute_derived_upagrahas
+
+        for sun_lon in [0.0, 40.0, 100.0, 200.0, 350.0]:
+            result = compute_derived_upagrahas(sun_lon)
+            reconstructed = (result.upaketu + 30) % 360
+            assert abs(reconstructed - sun_lon) < 0.01, (
+                f"Sun={sun_lon}: Upaketu+30={reconstructed}"
+            )
 
     def test_sign_positions_all_valid(self):
         from src.calculations.upagrahas_derived import compute_derived_upagrahas

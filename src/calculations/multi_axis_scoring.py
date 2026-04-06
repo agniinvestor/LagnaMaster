@@ -331,7 +331,7 @@ def _score_one_house(
     if bh_house in _DUSTHANA:
         total += W["R15"]
 
-    # R16 bhavesh with dusthana lord
+    # R16 bhavesh with dusthana lord (6/8/12) — BPHS Ch.11 note (c), p.125
     if any(p in dusthana_lords for p in bh_cotenants):
         total += W["R16"]
 

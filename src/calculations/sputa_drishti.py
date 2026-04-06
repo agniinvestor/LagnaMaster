@@ -15,6 +15,73 @@ Sources:
 from __future__ import annotations
 from dataclasses import dataclass
 
+
+# ─── BPHS Ch.26 v.6-8 Drishti Kona (speculum-based) ────────────────────────
+# Piecewise linear function verified against the Speculum of Aspectual Values
+# (pp.258-262). Maximum 60 virupas at 180° (full aspect = 1 Rupa).
+# No aspect in 0°-30° and 300°-360° arcs.
+
+def bphs_drishti_virupas(arc_degrees: float) -> float:
+    """
+    BPHS Ch.26 v.6-8: continuous aspect strength in virupas (0-60).
+
+    arc_degrees: angular distance from aspector to aspected (0-360).
+    Returns virupas of aspectual strength.
+
+    Verified against BPHS speculum table (pp.258-262, Santhanam Vol 1).
+    """
+    a = arc_degrees % 360.0
+    if a < 30.0 or a >= 300.0:
+        return 0.0
+    if a < 60.0:
+        return (a - 30.0) / 2.0  # 0→15
+    if a < 90.0:
+        return (a - 60.0) + 15.0  # 15→45
+    if a < 120.0:
+        return (120.0 - a) / 2.0 + 30.0  # 45→30
+    if a < 150.0:
+        return 150.0 - a  # 30→0
+    if a < 180.0:
+        return (a - 150.0) * 2.0  # 0→60
+    return (300.0 - a) / 2.0  # 60→0 (180-300)
+
+
+# Special aspect houses where Mars/Jupiter/Saturn get full (60 virupa) strength
+# BPHS Ch.26 v.9-12
+_SPECIAL_ASPECT_HOUSES: dict[str, set[int]] = {
+    "Mars": {4, 8},      # 4th and 8th from aspector
+    "Jupiter": {5, 9},   # 5th and 9th
+    "Saturn": {3, 10},   # 3rd and 10th
+}
+
+
+def bphs_drishti_with_specials(
+    aspector: str, arc_degrees: float
+) -> float:
+    """
+    BPHS drishti including special aspect boost for Mars/Jupiter/Saturn.
+
+    At special aspect houses, the base strength is boosted to full (60 virupas)
+    using a smooth interpolation within ±15° of the house center.
+    BPHS Ch.26 v.9-12.
+    """
+    base = bphs_drishti_virupas(arc_degrees)
+    special_houses = _SPECIAL_ASPECT_HOUSES.get(aspector)
+    if not special_houses:
+        return base
+
+    # Check proximity to special aspect house centers
+    a = arc_degrees % 360.0
+    for house in special_houses:
+        center = (house - 1) * 30.0  # house 4 → 90°, house 8 → 210°, etc.
+        diff = min(abs(a - center), 360.0 - abs(a - center))
+        if diff <= 15.0:
+            # Within the special aspect house: boost to 60 virupas
+            # with linear interpolation from house edge to center
+            special_strength = 60.0 * (1.0 - diff / 15.0)
+            return max(base, special_strength)
+    return base
+
 # ─── Aspect orb definitions ───────────────────────────────────────────────────
 # Each planet can cast a full (100%), three-quarter (75%), half (50%),
 # or quarter (25%) aspect depending on the arc from the aspector.

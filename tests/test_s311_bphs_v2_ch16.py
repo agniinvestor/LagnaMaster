@@ -7,7 +7,6 @@ from src.corpus.bphs_v2_ch16 import BPHS_V2_CH16_REGISTRY
 from src.corpus.corpus_audit import CorpusAudit, VALID_ENTITY_TARGETS, VALID_TIMING_TYPES
 
 RULES = BPHS_V2_CH16_REGISTRY.all()
-from src.corpus.taxonomy import VALID_OUTCOME_DOMAINS as VALID_DOMAINS  # includes both legacy and primary
 
 
 def test_total_rule_count():

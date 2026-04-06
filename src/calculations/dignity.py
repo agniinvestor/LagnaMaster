@@ -107,7 +107,7 @@ MOOLTRIKONA_RANGES: dict[str, tuple[int, float, float]] = {
     "Sun": (4, 0.0, 20.0),  # Leo 0°-20°; 20°-30° = own sign
     "Moon": (1, 4.0, 30.0),  # Taurus 4°-30°; 0°-3°59' = own sign
     "Mars": (0, 0.0, 12.0),  # Aries 0°-12°; 12°-30° = own sign
-    "Mercury": (5, 16.0, 20.0),  # Virgo 16°-20° ONLY — 4° window critical
+    "Mercury": (5, 15.0, 20.0),  # Virgo 15°-20° — BPHS Ch.3 v.51-54: "first 15° exaltation, next 5° MT"
     "Jupiter": (8, 0.0, 10.0),  # Sagittarius 0°-10°
     "Venus": (6, 0.0, 15.0),  # Libra 0°-15°
     "Saturn": (10, 0.0, 20.0),  # Aquarius 0°-20°
@@ -116,7 +116,7 @@ MOOLTRIKONA_RANGES: dict[str, tuple[int, float, float]] = {
 # Own sign indices (including non-MT portion and second sign)
 OWN_SIGNS: dict[str, list[int]] = {
     "Sun": [4],  # Leo
-    "Moon": [3, 1],  # Cancer + Taurus (non-MT portion)
+    "Moon": [3],  # Cancer only — Taurus is exaltation sign (BPHS Ch.3 v.49-50), not own
     "Mars": [0, 7],  # Aries + Scorpio
     "Mercury": [5, 2],  # Virgo + Gemini
     "Jupiter": [8, 11],  # Sagittarius + Pisces
@@ -181,19 +181,19 @@ _NAISARGIKA: dict[tuple[str, str], str] = {
     ("Jupiter", "Moon"): "Friend",
     ("Jupiter", "Mars"): "Friend",
     ("Jupiter", "Mercury"): "Enemy",
-    ("Jupiter", "Saturn"): "Enemy",
-    ("Jupiter", "Venus"): "Neutral",
+    ("Jupiter", "Venus"): "Enemy",
+    ("Jupiter", "Saturn"): "Neutral",
     ("Venus", "Mercury"): "Friend",
     ("Venus", "Saturn"): "Friend",
     ("Venus", "Sun"): "Enemy",
-    ("Venus", "Moon"): "Neutral",
+    ("Venus", "Moon"): "Enemy",
     ("Venus", "Mars"): "Neutral",
     ("Venus", "Jupiter"): "Neutral",
     ("Saturn", "Mercury"): "Friend",
     ("Saturn", "Venus"): "Friend",
     ("Saturn", "Sun"): "Enemy",
     ("Saturn", "Moon"): "Enemy",
-    ("Saturn", "Mars"): "Neutral",
+    ("Saturn", "Mars"): "Enemy",
     ("Saturn", "Jupiter"): "Neutral",
 }
 
@@ -482,18 +482,25 @@ def _check_neecha_bhanga(planet: str, chart) -> DignityResult:
         result.nb_exalt_kendra_moon = kendra_from(moon_si, exalt_in_debil)
 
     # Condition 5: debilitated planet aspected by its debilitation lord
-    # Full 7th aspect check
+    # Full graha drishti: 7th for all + special aspects (BPHS Ch.26)
+    _NB_SPECIAL_ASPECTS: dict[str, set[int]] = {
+        "Mars": {3, 6, 7},      # 4th, 7th, 8th house diffs (0-indexed)
+        "Jupiter": {4, 6, 8},   # 5th, 7th, 9th
+        "Saturn": {2, 6, 9},    # 3rd, 7th, 10th
+    }
     if debil_lord and debil_lord in chart.planets:
         lord_si = chart.planets[debil_lord].sign_index
-        result.nb_aspected_by_lord = lord_si == (sign_index + 6) % 12
+        diff = (sign_index - lord_si) % 12
+        aspect_diffs = _NB_SPECIAL_ASPECTS.get(debil_lord, {6})  # default: 7th only
+        result.nb_aspected_by_lord = diff in aspect_diffs
 
     # Condition 6: Parivartana — mutual sign exchange
+    # Planet is in debil_lord's sign (by definition: debil sign IS lord's sign)
+    # Lord must be in the debilitated PLANET's own sign for exchange
     if debil_lord and debil_lord in chart.planets:
         lord_sign = chart.planets[debil_lord].sign_index
-        # Planet is in debil_lord's sign if the debil_lord rules it
-        planet_in_lords_sign = sign_index in OWN_SIGNS.get(debil_lord, [])
-        lord_in_debil_sign = lord_sign == debil_sign
-        result.nb_parivartana = planet_in_lords_sign and lord_in_debil_sign
+        lord_in_planets_own = lord_sign in OWN_SIGNS.get(planet, [])
+        result.nb_parivartana = lord_in_planets_own
 
     return result
 

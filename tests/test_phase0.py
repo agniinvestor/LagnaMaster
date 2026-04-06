@@ -72,12 +72,12 @@ class TestMooltrikonaRanges:
     """BPHS Ch.3 v.2-9 exact MT degree boundaries."""
 
     def test_mercury_mt_start_boundary(self):
-        """Mercury 15.99 Virgo: not in MT(16-20), within 5deg of Paramotcha(15) = DEEP_EXALT."""
+        """Mercury 15.99 Virgo: in MT(15-20) per BPHS Ch.3 v.51-54 = MOOLTRIKONA."""
         from src.calculations.dignity import compute_dignity, DignityLevel
 
         chart = make_chart(0.0, Mercury=5 * 30 + 15.99)
         r = compute_dignity("Mercury", chart)
-        assert r.dignity == DignityLevel.DEEP_EXALT
+        assert r.dignity == DignityLevel.MOOLTRIKONA
 
     def test_mercury_mt_at_16(self):
         """Mercury at exactly 16° Virgo is Mooltrikona."""

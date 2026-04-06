@@ -43,11 +43,13 @@ def compute_derived_upagrahas(sun_longitude: float) -> DerivedUpagrahas:
 
     Source: PVRNR · BPHS Ch.25; Hora Makaranda; Phaladeepika Ch.26 v.1-6
     """
-    dhuma = (sun_longitude + 133.333) % 360
-    vyatipata = (360 - dhuma) % 360
-    parivesha = (vyatipata + 180) % 360
-    indrachapa = (360 - parivesha) % 360
-    upaketu = (dhuma + 30) % 360
+    # BPHS Ch.3 v.61-64 — verified against worked example (p.43-44)
+    # Self-check: Upaketu + 30° = Sun's longitude
+    dhuma = (sun_longitude + 133.333) % 360  # Sun + 4s 13°20'
+    vyatipata = (dhuma + 53.333) % 360  # Dhuma + 53°20' (BPHS example, p.43)
+    parivesha = (vyatipata + 180) % 360  # Vyatipata + 6 signs
+    indrachapa = (parivesha - 53.333) % 360  # Parivesha - 53°20'
+    upaketu = (indrachapa + 16.667) % 360  # Chapa + 16°40'
 
     return DerivedUpagrahas(
         dhuma=dhuma,
