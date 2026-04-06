@@ -122,16 +122,25 @@ These require position-based computation.
 | `COMBUSTION` | Planet → Sun | `{orb_degrees: float, is_cazimi: bool}` | positions | Partially (orbs vary) |
 | `FRIENDSHIP` | Planet → Planet | `{naisargika: str, tatkalik: str, compound: str}` | `IN_SIGN` (for tatkalik) | Partially |
 
-**Tier 3: Interpretive (computed from Tier 1-2, may involve conventions)**
-These require strength/state computation.
+**Tier 3: Interpretive-Factual (computed from Tier 1-2, factual classification only)**
+These classify state but do NOT evaluate or score.
 
 | Edge Type | Source → Target | Schema | Depends On | School-Specific? |
 |-----------|----------------|--------|-----------|-----------------|
-| `DIGNITY` | Planet → — (self-attribute) | `{level: str, score: float}` | `IN_SIGN`, conventions | Partially (MT ranges) |
-| `AVASTHA` | Planet → — (self-attribute) | `{system: str, state: str, effect: float}` | `IN_SIGN`, positions | **Yes** |
-| `STRENGTH` | Planet → — (self-attribute) | `{component: str, virupas: float}` | multiple | **Yes** |
+| `DIGNITY` | Planet → — (self-attribute) | `{level: str}` | `IN_SIGN`, conventions | Partially (MT ranges) |
+| `AVASTHA` | Planet → — (self-attribute) | `{system: str, state: str}` | `IN_SIGN`, positions | Partially (Baaladi = positional, Lajjitadi = associational) |
 
-**Yogas are NOT graph edges.** Yoga detection belongs to the Rule Engine (Layer 5) as pattern matching over the graph. Putting yoga results in the graph would violate the invariant: "no predictions or rule outputs in the graph."
+**NOT in graph (moved to Feature Access Layer 4):**
+- `STRENGTH` (Shadbala, KP strength) — school-dependent evaluation, not a relationship
+- Dignity SCORE — the classification (exalted/debilitated) is factual, the numeric score is evaluative
+- Avastha EFFECT multiplier — the state (Yuva/Mrita) is factual, the effect (1.0/0.0) is evaluative
+- Any computation that answers "how strong" rather than "what is"
+
+**The graph answers: "what is the state?" The Feature Layer answers: "how strong/weak is it?"**
+
+**Yogas are NOT graph edges.** Yoga detection belongs to the Rule Engine (Layer 5) as pattern matching over the graph.
+
+**New edge types must justify why they cannot be an attribute of an existing edge type.** This prevents edge explosion.
 
 ### Edge Dependency Graph
 ```
@@ -154,9 +163,9 @@ Tier 3 (interpretive):
   AVASTHA ← IN_SIGN + positions + DIGNITY
   STRENGTH ← multiple Tier 1-2 edges + conventions
 ```
-Construction follows tier order. Tier N depends only on Tier <N.
+Construction follows tier order. Tier N depends only on Tier <N. **Enforced in code via topological build order** — edge constructors declare their dependencies, graph builder resolves order automatically. No edge can be computed outside this ordering.
 
-New edge types require: (1) tier assignment, (2) dependency declaration, (3) typed schema, (4) explicit addition to this registry.
+New edge types require: (1) tier assignment, (2) dependency declaration, (3) typed schema, (4) justification for why not an attribute of existing edge, (5) explicit addition to this registry.
 
 ### Graph Invariants (enforced at construction)
 1. Every planet has exactly 1 `IN_SIGN` and 1 `IN_HOUSE` edge
@@ -205,6 +214,8 @@ AGGREGATION_MODE = "concordance"  # "hierarchy" | "school" | "concordance"
 ```
 BPHS/Parashari is the recommended default. This is declared in config and passed explicitly to graph construction and rule evaluation. No module assumes a school — it receives one.
 
+**Graph neutrality (future-ready):** Graph construction builds edges for ALL registered schools simultaneously. Config determines which edges are QUERIED by the rule engine, not which are BUILT. This allows multi-school comparison without graph reconstruction. Cost: more edges in graph. Benefit: true school-neutral substrate.
+
 ### Aggregation Layer (formal definition)
 
 **Hierarchy mode:**
@@ -219,13 +230,14 @@ BPHS/Parashari is the recommended default. This is declared in config and passed
 **Concordance mode (recommended):**
 - All rules fire regardless of school
 - Results grouped by (house, domain, direction)
-- Concordance score = (texts_agreeing / texts_with_opinion)
-- Final direction = majority direction, weighted by concordance
-- Contradictions surfaced in output, not suppressed
+- Weighted concordance: `score = Σ(text_authority_weight × rule_confidence × agreement_sign)`
+- Text authority weights configurable (default: BPHS=1.0, others=0.8)
+- Rule confidence from corpus metadata (concordance_count, verse specificity)
+- Contradictions surfaced in output with per-text breakdown, not suppressed
 
 **Aggregation invariants:**
-- Deterministic: same rules + same graph → same output, always
-- No aggregation-time computation — only combining RuleResults
+- Deterministic: same rules + same graph + same config → same output, always
+- No domain computation at aggregation — but statistical/meta operations allowed (normalization, confidence scaling, weighting)
 - Every output traces to specific RuleResults which trace to specific graph edges
 
 ## Migration Strategy (Two Phases)
@@ -290,6 +302,7 @@ Every graph output carries its schema + conventions version. Historical outputs 
 - Rule trace: which edges were queried, what matched, why rule fired/didn't fire
 - `explain(rule_id, chart)` → returns full trace from graph edges to prediction
 - "Why did this rule fire?" answerable for any rule in any chart
+- **Trace levels:** `minimal` (matched edges only), `standard` (edges + bindings), `full` (all queried edges including non-matches). Default: `minimal`. Full trace opt-in per query to control size.
 
 ### Migration Safety Net
 - Snapshot comparison: old system vs graph system outputs for full regression suite
