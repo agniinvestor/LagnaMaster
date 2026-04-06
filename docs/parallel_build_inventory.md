@@ -48,10 +48,32 @@ multi_axis_scoring.py, sayanadi_full.py, planetary_state.py, and more.
 4. `scoring_patches.py` — Patches and helpers.
 5. `scoring.py` — Root-level scorer.
 
+## Additional Duplication (found in deep search)
+
+**Exaltation/Debilitation tables:** Referenced in 30+ files. Many have inline copies instead of importing from dignity.py.
+
+**Combustion orbs:** Referenced in 23 files. dignity.py has authoritative COMBUSTION_ORBS but multiple modules have own checks.
+
+**Mooltrikona ranges:** Referenced in 11 files. dignity.py has MOOLTRIKONA_RANGES but others may have own copies.
+
+**Graha Yuddha:** 2 implementations — `graha_yuddha.py` AND `planetary_state.py:detect_graha_yuddha`.
+
+**Functional classification:** 2 modules — `functional_dignity.py` AND `functional_roles.py`.
+
+**Dig Bala:** 2 implementations — `dig_bala.py` AND `shadbala.py:compute_dig_bala`.
+
+**Neecha Bhanga:** Referenced in 5 files — dignity.py is authoritative but shadbala_patches.py, extended_yogas.py, scoring_v3.py also check conditions.
+
+**Pushkara:** 2 modules — `dignity.py` PUSHKARA tables AND `pushkara_navamsha.py`.
+
 ## Consolidation Priority
-1. **Sign Lord** — single canonical `SIGN_LORDS` in one place, all others import from there
-2. **Friendship** — dignity.py and panchadha_maitri.py are authoritative, delete/redirect others
-3. **Malefic/Benefic** — is_natural_malefic is authoritative, wire remaining consumers
-4. **Avastha** — avasthas.py is BPHS authoritative, merge/redirect remaining 4 modules
-5. **Aspect** — sputa_drishti.py BPHS functions are authoritative, consolidate scoring_patches
-6. **Scoring** — determine which scorer is primary, document the others' purposes
+1. **Sign Lord** — 30 files, many inline copies. Single canonical import needed.
+2. **Exaltation/Debilitation** — 30+ files. dignity.py is authoritative.
+3. **Friendship** — 4+ copies. dignity.py + panchadha_maitri.py authoritative.
+4. **Malefic/Benefic** — 5+ hardcoded sets. is_natural_malefic is authoritative.
+5. **Avastha** — 5 modules. avasthas.py is BPHS authoritative.
+6. **Aspect** — 5+ sources. sputa_drishti.py BPHS functions authoritative.
+7. **Combustion** — 23 files. dignity.py COMBUSTION_ORBS authoritative.
+8. **Scoring** — 5 modules. Need to determine primary.
+9. **Graha Yuddha** — 2 implementations. Need to pick one.
+10. **Dig Bala** — 2 implementations. shadbala.py is authoritative post-S317.
