@@ -137,13 +137,20 @@ These classify state but do NOT evaluate or score.
 | `DIGNITY` | Planet → — (self-attribute) | `{level: str}` | `IN_SIGN`, conventions | Partially (MT ranges) |
 | `AVASTHA` | Planet → — (self-attribute) | `{system: str, state: str}` | `IN_SIGN`, positions | Partially (Baaladi = positional, Lajjitadi = associational) |
 
-**NOT in graph (moved to Feature Access Layer 4):**
-- `STRENGTH` (Shadbala, KP strength) — school-dependent evaluation, not a relationship
-- Dignity SCORE — the classification (exalted/debilitated) is factual, the numeric score is evaluative
-- Avastha EFFECT multiplier — the state (Yuva/Mrita) is factual, the effect (1.0/0.0) is evaluative
-- Any computation that answers "how strong" rather than "what is"
+**Tier 4: Evaluative (lazy, component-level, school-specific)**
+Computed on first access, memoized within one evaluation. Stores COMPONENT dataclasses, not aggregate scores.
 
-**The graph answers: "what is the state?" The Feature Layer answers: "how strong/weak is it?"**
+| Attribute | Node Type | Schema | Depends On | Notes |
+|-----------|-----------|--------|-----------|-------|
+| `SHADBALA` | Planet | `ShadbalResult{sthana, dig, kala, chesta, naisargika, drik}` | Tier 1-3 | Lazy. Components queryable individually. |
+| `DIGNITY_SCORE` | Planet | `{score: float}` | `DIGNITY` (Tier 3) | Numeric score from classification. |
+| `AVASTHA_EFFECT` | Planet | `{baaladi_effect: float, jagradadi_effect: float, combined: float}` | `AVASTHA` (Tier 3) | Effect multipliers from state. |
+| `FUNCTIONAL_ROLE` | Planet | `{is_func_malefic: bool, is_func_benefic: bool, is_yogakaraka: bool}` | `LORDS_HOUSE`, lagna | Lagna-dependent. Recomputed per lagna. |
+| `BHAVA_BALA` | House | `BhavaBalaResult{bhavadhipati, dig, drishti, specials, total}` | Planet SHADBALA + Tier 2 edges | Components queryable. |
+
+**Tier 4 is LAZY:** not computed at graph build time. Computed on first query, memoized per (lagna, school) combination. This prevents the compute explosion of 7 vargas × 5 lagnas × 3 schools = 105 contexts evaluated upfront. Most rules touch 1-2 contexts.
+
+**Tier 4 stores COMPONENTS, not aggregates.** A rule asking "is Jupiter's Dig Bala strong?" queries `graph.tier4(Jupiter).shadbala.dig_bala`, not a single composite number. The rule decides what "strong" means in its context.
 
 **Yogas are NOT graph edges.** Yoga detection belongs to the Rule Engine (Layer 5) as pattern matching over the graph.
 
