@@ -210,6 +210,19 @@ Boundary behavior differs between formulas. Charts near nakshatra boundaries may
 ### House Computation — Mixed Conventions
 360 occurrences of `% 12` in house calculations. Most use `(si - lagna) % 12 + 1` (1-indexed). Some use `(si - lagna) % 12` (0-indexed). Mixed conventions in same codebase = off-by-one risk at every house computation.
 
+## scoring.py (ROOT) — Line-by-Line Audit
+
+**Line 91: TWO gentle sign sets in same file that DISAGREE.**
+`_GENTLE_SIGNS = {1,2,3,5,8,11}` vs `_GENTLE_SIGN_IDX = {2,3,4,6,8,11}` — different signs.
+
+**Line 110-120: FOURTH yogakaraka source.** Own `_YOGAKARAKA_MAP` dict separate from functional_dignity, functional_roles, multi_lagna. Cancer mapped to Venus (WRONG — should be Mars). Comment acknowledges it's wrong but code ships it.
+
+**Line 97-102: `_is_benefic`/`_is_malefic` accept chart param but ignore it.** Static classification pretending to be chart-aware.
+
+**Line 129-134: `_houses_aspected_by` returns 7th aspect ONLY.** No special aspects for Mars/Jupiter/Saturn. But `_planet_aspects_house` (line 137) DOES include them. Two aspect functions in same file give different answers.
+
+**Line 145: Mars offsets `[3, 7]` — CORRECT.** scoring.py has right Mars aspects while multi_axis_scoring.py has wrong `{3, 9}`. The API-facing engine is correct; the internal analysis engine is wrong.
+
 ## Scoring Path Analysis
 
 **TWO parallel scoring engines serve different consumers:**
