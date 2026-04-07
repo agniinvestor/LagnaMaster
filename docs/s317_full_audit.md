@@ -9,6 +9,11 @@
 2. **11 modules have static malefic sets** that don't use chart-aware `is_natural_malefic()` — waning Moon and Mercury conjunction NOT considered in argala, arudha_perception, extended_yogas, functional_roles, longevity, multi_axis_scoring, multi_lagna, narayana_argala, yogas_extended, diagnostic_scorer, feature_decomp
 3. **scoring_patches.py has stale ASPECT_STRENGTH** (0.75 fixed values) — not using BPHS speculum
 4. **Only 23/7,412 rules (0.3%) marked "implemented"** — scoring engine can only evaluate 23 rules
+5. **🔴🔴 MARS ASPECT BUG in multi_axis_scoring.py AND feature_decomp.py** — `Mars: {3, 9}` should be `Mars: {3, 7}`. Mars's 8th house aspect (diff=7) is coded as 10th house aspect (diff=9). This means Mars's 8th house aspect has been MISSING from the core scoring engine and a WRONG 10th house aspect applied instead. Affects R03, R07, R10, R14 for every chart. rule_firing.py, diagnostic_scorer.py, scoring_patches.py, sputa_drishti.py all have the CORRECT value {3, 7}. ONLY multi_axis_scoring and feature_decomp are wrong.
+6. **107 `except Exception` clauses with ZERO logging** — errors silently swallowed across the calculation layer. Bugs produce wrong defaults instead of visible failures. NONE of the 107 clauses log the error.
+7. **13 independent dignity computation functions** across different modules — each using own tables, own logic. Not guaranteed to produce same results for same input.
+8. **21 independent aspect computation functions** across different modules — different implementations of the same concept.
+9. **Tests importing from stale modules** — test_phase0.py and test_diverse_charts.py import from scoring_patches.py (stale ASPECT_STRENGTH). Tests for avasthas import from both avastha.py (old) and planet_avasthas.py (S138), not avasthas.py (S317 BPHS).
 
 ### 🟠 HIGH RISK (will cause issues under stress)
 5. **multi_axis_scoring.py: 13 importers, 1 test file** — core scoring engine nearly untested
