@@ -240,13 +240,40 @@ Same chart, two engines, potentially different scores. The API serves `score_cha
 
 ## What This Audit Did NOT Cover
 
-- Line-by-line CODE LOGIC correctness of 111 untouched calculation modules (swept for stale VALUES, not logic bugs)
+- Line-by-line CODE LOGIC correctness of 111 untouched calculation modules (swept for stale VALUES and structural patterns, not comprehensive logic review)
 - API endpoint BEHAVIOR testing (counted endpoints, not tested responses)
 - UI VISUAL correctness
-- Privacy module LEGAL compliance verification
+- Privacy module LEGAL compliance verification (code exists, DB ops present, correctness unverified)
 - DB schema validation
-- Docker build verification
-- Celery worker functionality
+- Docker build verification (Dockerfile says Python 3.12, CLAUDE.md says 3.14)
+- Celery worker functionality (worker.py exists with 3 async tasks)
 - Performance profiling
 - Security penetration testing
-- Corpus rule CONTENT quality (checked metadata, not whether each rule correctly encodes its verse)
+- Corpus rule CONTENT quality (metadata checked, not whether each rule correctly encodes its verse)
+- Guidance module functional testing (8 modules, ~1000 lines, 0 tests)
+- Research module correctness (OSF, CV splitter, data license — 0 tests)
+- Tool correctness (31 active tools, 14 import from src/ — stale dependencies possible)
+
+## Systems That Exist But Are Completely Untested
+
+| System | Files | Lines | Purpose | Tests |
+|--------|-------|-------|---------|-------|
+| Guidance/Ethics | 8 | ~1,000 | Fatalism filter, disclaimers, practitioner handoff, educational layer | 0 |
+| Privacy/GDPR | 3 | ~518 | Consent, data minimisation, family consent (real DB ops) | 0 |
+| Research | 3 | ~297 | OSF pre-registration, CV splitter, data license | 0 |
+| ML | 1 | ~87 | MLflow config | 0 |
+| Feedback | 3 | ~332 | Dependency prevention, harm escalation, feedback loop | 0 |
+| API mobile | 1 | ~90 | Mobile router | 0 |
+| UI components | 3 | ~818 | Chart visual, confidence tab, kundali page | 0 |
+| **Total untested** | **22 modules** | **~3,142 lines** | | **0 tests** |
+
+## Tool Dependencies (14 tools import from src/)
+
+| Tool | src imports | Risk |
+|------|-----------|------|
+| rule_grader.py | 18 imports | 🔴 Deep corpus dependency |
+| diff_engine.py | 8 imports | 🟠 Has own tables (sign lord, exalt) |
+| adb_scraper.py | 2 | Uses scoring.py path |
+| scrape_200_aa.py | 2 | Uses scoring.py path |
+| ob3_calibrate.py | 1 | Uses multi_axis_scoring path |
+| v2_scorecard.py | 2 | Primary quality gate tool |
