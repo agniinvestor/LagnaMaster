@@ -176,6 +176,40 @@ rule_firing.py has 32 `elif ctype ==` branches. Each is a condition type that co
 ### 61 Yoga Detection Functions
 Across 12 files. No inventory of which yogas are detected vs which are missing from the ~300 classical yogas.
 
+## Deep Logic Sweep Findings
+
+### Parallel Scoring Engines
+`src/scoring.py` (619 lines) has its OWN R01-R23 weight table (87 R-rule references) completely separate from `src/calculations/multi_axis_scoring.py` (588 lines). Two independent scoring engines scoring the same chart. Which one produces the API output? Both exist, both are imported by different consumers.
+
+### Yogakaraka — 3 Independent Sources
+1. `functional_dignity.py:KNOWN_YOGAKARAKAS` — static table (S317 verified against BPHS)
+2. `functional_roles.py:compute_functional_roles()` — dynamic computation from lordships (does NOT use KNOWN_YOGAKARAKAS)
+3. `multi_lagna.py:_YOGAKARAKA` — separate static dict
+
+These may produce DIFFERENT yogakarakas for the same lagna. No test verifies they agree.
+
+### Configuration Class Collision
+`calc_config.py:CalcConfig` AND `config_toggles.py:CalcConfig` — same class name, different modules. Importing `CalcConfig` gives different behavior depending on which module you import from.
+
+### Error Swallowing
+107 `except Exception` clauses across calculations/ with ZERO logging. Bugs produce silent wrong defaults.
+
+### Test Fragility
+- 241 exact float equality assertions (`assert x == 0.75`)
+- Only 19 using `pytest.approx` (robust)
+- 1 test file with zero assertions (`test_panchanga_legacy.py`)
+- Tests import from stale modules (scoring_patches ASPECT_STRENGTH, old avastha modules)
+
+### Nakshatra Index — 3 Formulas
+1. `int(lon * 27 / 360)` — used in ashtottari_dasha, kalachakra_dasha
+2. `int(lon / 13.333)` — documented as WRONG in nakshatra.py itself
+3. `int(lon / (360/27))` — used in avasthas.py
+
+Boundary behavior differs between formulas. Charts near nakshatra boundaries may get different nakshatras depending on which module computes it.
+
+### House Computation — Mixed Conventions
+360 occurrences of `% 12` in house calculations. Most use `(si - lagna) % 12 + 1` (1-indexed). Some use `(si - lagna) % 12` (0-indexed). Mixed conventions in same codebase = off-by-one risk at every house computation.
+
 ## What This Audit Did NOT Cover
 
 - Line-by-line CODE LOGIC correctness of 111 untouched calculation modules (swept for stale VALUES, not logic bugs)
