@@ -390,7 +390,7 @@ def _get_dignity_level(
         return _get_node_dignity(planet, sign_index, node_school)
 
     # Mooltrikona FIRST — takes priority over exaltation (BPHS Ch.3)
-    # Moon Taurus 4-30deg and Mercury Virgo 16-20deg are MT, not Exalt
+    # Moon Taurus 4-30deg and Mercury Virgo 15-20deg are MT, not Exalt (S317: 16→15)
     if planet in MOOLTRIKONA_RANGES:
         mt_si, mt_start, mt_end = MOOLTRIKONA_RANGES[planet]
         if sign_index == mt_si and mt_start <= degree_in_sign < mt_end:
