@@ -1,12 +1,26 @@
 # S318 Deep Audit — Line-by-Line Code Reading
 
+## HARD RULE: USE THE Read TOOL, NOT grep/Bash
+
+S317 claimed "deep audit" but read 2.2% of the codebase. The rest was grepped. Grep finds PATTERNS (stale values, duplicate names). It does NOT find LOGIC BUGS (wrong formula, missing edge case, incorrect condition, off-by-one).
+
+**Every file listed below must be opened with the Read tool and read in full.** Not grepped. Not sampled. Not skimmed via `head`. The Read tool, offset 0, reading to the end. For files over 200 lines, read in 200-line chunks until complete.
+
+**Do NOT:**
+- Run grep across files and call it "auditing"
+- Read the first 30 lines and skip to the next file
+- Commit findings after every file (batch per tier)
+- Propose stopping before all tiers are read
+
+**Evidence that reading works:** S317 read 15 modules and found bugs in ALL of them. Mars aspect wrong in multi_axis_scoring. Jupiter malefic for Cancer in functional_roles. Jaimini rasi drishti wrong in the dedicated module. Friendship values wrong in shadbala_patches. Every module read = bugs found. The remaining 110 modules are not cleaner — they just haven't been read.
+
 ## Context
 
 S317 produced a full system audit (`docs/s317_full_audit.md`) that found 12 active contradictions, but only READ 2.2% of the codebase (3,600 of 166,500 lines). Every module that was actually read revealed bugs. The remaining 97.8% was grepped for patterns but not read for logic correctness.
 
 ## Task
 
-Read EVERY .py file in the codebase line by line. For each file, check:
+Read EVERY .py file in the codebase line by line using the Read tool. For each file, check:
 
 1. **Stale constants:** Does it define its own sign lords, exalt/debil, malefic/benefic, kendra/trikona/dusthana sets instead of importing from canonical sources (house_lord.py, dignity.py, rule_firing.py)?
 
