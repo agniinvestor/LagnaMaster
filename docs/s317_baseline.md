@@ -1,7 +1,6 @@
 # S317 Engineering Baseline — 2026-04-07
 
-Snapshot of system state at end of S317. All numbers measured, not estimated.
-This is the BEFORE measurement. S318 and onwards measure against this.
+**QUANTITATIVE ONLY.** File counts, line counts, function counts, import counts are measured and accurate. CONTENT QUALITY (is the code correct? are docs accurate? do tests test the right things?) is NOT verified. This is a surface scan, not a content audit. S318 must read and verify the highest-risk files — the numbers here tell you WHERE to look, not WHAT you'll find.
 
 ## Corpus Quality
 
