@@ -239,7 +239,7 @@ Same chart, THREE engines, each producing different scores:
 
 house_lord.py is clean and canonical (82 lines) with `is_kendra()`, `is_trikona()`, `is_dusthana()`. But 45 files define own kendra sets. 7 files define own sign lord tables. The canonical source EXISTS — the codebase ignores it.
 
-### 10 Active Contradictions (producing different answers for same chart)
+### 12 Active Contradictions (producing different answers for same chart)
 1. **Mars aspects:** scoring.py `{3,7}` CORRECT vs multi_axis_scoring `{3,9}` WRONG
 2. **Gentle signs:** scoring.py has TWO sets in same file that disagree
 3. **Yogakarakas:** 4 sources — Cancer=Mars (BPHS), Cancer=Venus (scoring.py), Cancer computed dynamically (functional_roles)
@@ -250,6 +250,8 @@ house_lord.py is clean and canonical (82 lines) with `is_kendra()`, `is_trikona(
 8. **Nakshatra index:** 3 formulas (one documented as wrong in its own docstring)
 9. **House indexing:** 0-based vs 1-based mixed across 360 occurrences
 10. **Malefic classification:** 32 static sets vs 2 chart-aware functions
+11. **Rasi Drishti:** jaimini_rashi_drishti.py says Aries aspects 11 signs (WRONG). extended_yogas.py says Aries aspects {4,7,10} (CORRECT per standard Jaimini). The DEDICATED module is wrong; the general module is right.
+12. **Neecha Bhanga:** dignity.py checks 6 conditions (S317 corrected). extended_yogas.py checks 3 conditions. Two NB implementations with different condition sets. Wrong source citation in extended_yogas (says Ch.30, should be Ch.49).
 
 ## Corpus Data Quality
 
