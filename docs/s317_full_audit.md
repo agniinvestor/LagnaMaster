@@ -122,16 +122,64 @@ This is 3-5x worse than the original inventory estimated.
 | yogas_additions.py | 307 | PM Yoga, Lunar/Solar yogas | Yoga detection pipeline |
 | feature_expansion.py | 171 | V2 corpus → continuous features | Phase 2 scoring (premature) |
 
+## Additional Findings (deep sweep)
+
+### Dig Bala — 4 SEPARATE IMPLEMENTATIONS
+1. `dig_bala.py` — standalone module with `_DIG_BALA_PEAK` dict + `compute_dig_bala(chart)` → returns dict
+2. `shadbala.py` — `DIG_BALA_PEAK_HOUSE` dict + `compute_dig_bala(planet, chart)` → returns float
+3. `multi_axis_scoring.py` — `_DIG_BALA` dict (inline, used for R20)
+4. `feature_decomp.py` — `_DIG_BALA` dict (inline, used for feature extraction)
+Same concept, 4 implementations, 4 dictionaries. Any change to dig bala peak houses requires updating 4 files.
+
+### Vimshottari Dasha Years — 2 COPIES
+1. `vimshottari_dasa.py` — `MAHADASHA_YEARS`
+2. `pratyantar_dasha.py` — `VIMSHOTTARI_YEARS`
+Same data, two files. Change to dasha years requires updating both.
+
+### Corpus Rule Duplication — 364 verse-level duplicates
+Same (source, chapter, verse_ref) appearing in multiple rules. LaghuParashari Ch.1 v.3 appears 21 times. These may be legitimate (one verse encoding multiple claims) or true duplicates (same claim encoded twice). Needs manual audit.
+
+### Magic Number Prevalence
+| Constant | Occurrences | Named? |
+|----------|------------|--------|
+| 0.75 | 53 | Sometimes (ASPECT_STRENGTH) |
+| 60.0 | 42 | Sometimes (VIRUPAS) |
+| 30.0 | 35 | Rarely |
+| 15.0 | 27 | Rarely |
+| 23.45 | 1 | Yes (obliquity) |
+
+### Tests Asserting Stale Values
+- **5 tests assert aspect strength = 0.75** (test_phase0.py:330-350) — this is the old house-based value, not the BPHS speculum continuous function
+- **37 test locations** hardcode malefic lists — any change to conditional Moon/Mercury won't be tested
+- Tests assert specific house scores that may no longer be correct after S317 scoring changes
+
+### Untested Modules (comprehensive)
+| Layer | Module | Lines | Risk |
+|-------|--------|-------|------|
+| calculations/ | diagnostic_scorer.py | 351 | 🔴 1 importer, 0 tests |
+| calculations/ | feature_expansion.py | 171 | 🟠 0 importers, 0 tests |
+| api/ | mobile_router.py | 90 | 🟠 API endpoint, 0 tests |
+| api/ | models.py | 199 | 🟠 Pydantic models, 0 tests |
+| ui/ | chart_visual.py | 282 | 🟡 SVG generation, 0 tests |
+| ui/ | confidence_tab.py | 236 | 🟡 UI component, 0 tests |
+| ui/ | kundali_page.py | 300 | 🟡 UI page, 0 tests |
+| guidance/ | guidance_api.py | 170 | 🟠 User-facing, 0 tests |
+
+### 32 Condition Types in Rule Engine
+rule_firing.py has 32 `elif ctype ==` branches. Each is a condition type that corpus rules can use. These must ALL be translatable to graph queries in Phase 1. Most complex: `or_group`, `count_planets_with_state`, `dispositor_condition`, `derived_points_relationship`.
+
+### 61 Yoga Detection Functions
+Across 12 files. No inventory of which yogas are detected vs which are missing from the ~300 classical yogas.
+
 ## What This Audit Did NOT Cover
 
-- Line-by-line code correctness of 111 untouched modules
-- API endpoint behavior testing
-- UI functionality verification
-- Privacy module correctness verification
+- Line-by-line CODE LOGIC correctness of 111 untouched calculation modules (swept for stale VALUES, not logic bugs)
+- API endpoint BEHAVIOR testing (counted endpoints, not tested responses)
+- UI VISUAL correctness
+- Privacy module LEGAL compliance verification
 - DB schema validation
 - Docker build verification
 - Celery worker functionality
-- All 197 test files for test quality (testing the right things?)
-- All 171 tools for correctness
 - Performance profiling
 - Security penetration testing
+- Corpus rule CONTENT quality (checked metadata, not whether each rule correctly encodes its verse)
