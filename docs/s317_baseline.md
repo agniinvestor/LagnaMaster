@@ -149,6 +149,81 @@ main.py (603 lines) — primary API. No main_v2.py found (may have been consolid
 ### Privacy
 4 modules, 518 lines. Scope: birth data handling. Compliance status: not audited.
 
+## Dead Code & Orphans
+
+| Type | Count | Examples |
+|------|-------|---------|
+| Orphaned modules (0 importers) | 3 | config_additions (141 lines), feature_expansion (171), yogas_additions (307) |
+| Untested modules (0 test refs) | 2 | diagnostic_scorer (351 lines), feature_expansion (171) |
+| Circular imports detected | 0 | Clean |
+| tools/archive/ | 140 files | Historical scripts, should not grow |
+
+## Security
+
+| Finding | Status |
+|---------|--------|
+| JWT secret | Hardcoded fallback "dev-secret-change-in-production" in auth.py:25 |
+| .env file | Does not exist |
+| Dependencies | 0 pinned, 21 unpinned (ALL using >= not ==) |
+
+## API & Infrastructure
+
+| Metric | Value |
+|--------|-------|
+| API endpoints | 29 (main: 11, auth: 5, main_v2: 5, empirica: 3, mobile: 2, school: 3) |
+| API versions | 2 (main.py + main_v2.py) |
+| UI streamlit refs | 343 (app.py: 273, kundali: 44, confidence: 26) |
+| Docker services | api + ui (docker-compose.yml) |
+| Makefile targets | 15 (up, down, test, etc.) |
+| Makefile test count | Says "76 tests" — stale (actual: 14,740) |
+
+## Documentation
+
+| Doc | Lines | Last Modified | Stale? |
+|-----|-------|---------------|--------|
+| CHANGELOG.md | 1,600 | 7 days ago | Needs S317 entry |
+| SESSION_LOG.md | 682 | 7 days ago | Needs S317 entry |
+| ARCHITECTURE.md | 565 | 7 days ago | Pre-dates graph architecture spec |
+| GUARDRAILS.md | 308 | 10 days ago | Not audited |
+| ROADMAP.md | 288 | 7 days ago | Needs S317 status update |
+| MEMORY.md (docs/) | 280 | 11 hours ago | Test count updated |
+| BPHS_ENCODING_ROADMAP.md | 262 | 24 hours ago | Statuses stale for 6 audited chapters |
+| shadbala_audit_gaps.md | 159 | 21 hours ago | ALL gaps resolved but doc says open |
+| KPIS.md | 120 | 10 days ago | Not aligned with new baseline |
+| **Total docs** | **58 files** | | Unknown how many are stale |
+
+## Memory System
+
+| Metric | Value |
+|--------|-------|
+| Memory files | 20 |
+| MEMORY.md entries | 15 |
+| Oldest memory | project_test_diversification (Apr 3) |
+| Newest memory | feedback_s317_closure_fixture (Apr 6) |
+| S316 memories | 8 (heaviest session in memory) |
+| S317 memories | 2 |
+| Verified as current | Unknown — no staleness check mechanism |
+
+## Guardrails & Ethics
+
+| Metric | Value |
+|--------|-------|
+| G-series references in code | 79 |
+| Health-sensitive rule tracking | 3 modules (rule_record, v2_builder, rule_firing) |
+| Guidance modules | 9 (fatalism filter, disclaimers, practitioner handoff, etc.) |
+| Privacy modules | 4 (518 lines) |
+| Guardrail test coverage | Not measured |
+
+## Tools
+
+| Category | Count | Lines |
+|----------|-------|-------|
+| Active tools | 31 | 9,055+ |
+| Archived tools | 140 | Not measured |
+| Largest tool | scrape_200_aa.py (1,042 lines) |
+| v2_scorecard.py | 951 lines | Primary quality gate tool |
+| Key tools | ob3_calibrate, rule_grader, rework_detector, verse_audit |
+
 ## What Doesn't Exist Yet
 
 - Production monitoring/alerting
@@ -165,3 +240,9 @@ main.py (603 lines) — primary API. No main_v2.py found (may have been consolid
 - Practitioner feedback loop
 - API response time monitoring
 - Deployment pipeline beyond git push
+- Dependency pinning (0/21 dependencies pinned)
+- Dead code removal process
+- Documentation staleness checker
+- Memory system verification
+- Guardrail test coverage
+- Security audit (JWT secret hardcoded)
