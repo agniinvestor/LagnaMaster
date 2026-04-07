@@ -232,7 +232,24 @@ Boundary behavior differs between formulas. Charts near nakshatra boundaries may
 | `score_chart()` | src/scoring.py (619 lines) | API main.py, API main_v2.py, UI app.py, worker.py, montecarlo, pushkara | 11 |
 | `score_all_axes()` | src/calculations/multi_axis_scoring.py (588 lines) | scoring_v3, domain_weighting, lpi, house_score, dominance_engine, varga_agreement, chart_exceptions, interfaces/scoring_engine | 10 |
 
-Same chart, two engines, potentially different scores. The API serves `score_chart`. Internal analysis uses `score_all_axes`. These are NOT the same computation.
+Same chart, THREE engines, each producing different scores:
+- **API → scoring.py** (correct Mars {3,7}, wrong Cancer yogakaraka=Venus, static malefic)
+- **Internal → multi_axis_scoring.py** (WRONG Mars {3,9}, uses functional_roles which has wrong Cancer functional malefics)
+- **Adapter → scoring_v3.py → multi_axis_scoring** (inherits multi_axis bugs)
+
+house_lord.py is clean and canonical (82 lines) with `is_kendra()`, `is_trikona()`, `is_dusthana()`. But 45 files define own kendra sets. 7 files define own sign lord tables. The canonical source EXISTS — the codebase ignores it.
+
+### 10 Active Contradictions (producing different answers for same chart)
+1. **Mars aspects:** scoring.py `{3,7}` CORRECT vs multi_axis_scoring `{3,9}` WRONG
+2. **Gentle signs:** scoring.py has TWO sets in same file that disagree
+3. **Yogakarakas:** 4 sources — Cancer=Mars (BPHS), Cancer=Venus (scoring.py), Cancer computed dynamically (functional_roles)
+4. **Functional malefics:** functional_dignity (BPHS-verified) vs functional_roles (lordship rules) — Jupiter for Cancer differs
+5. **Friendship tables:** 4 copies (dignity.py, panchadha_maitri, friendship.py, sayanadi_full.py)
+6. **Dignity computation:** 13 independent functions using own tables
+7. **Aspect computation:** 21 independent functions
+8. **Nakshatra index:** 3 formulas (one documented as wrong in its own docstring)
+9. **House indexing:** 0-based vs 1-based mixed across 360 occurrences
+10. **Malefic classification:** 32 static sets vs 2 chart-aware functions
 
 ## Corpus Data Quality
 
