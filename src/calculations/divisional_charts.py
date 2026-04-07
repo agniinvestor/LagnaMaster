@@ -219,12 +219,13 @@ def _d45(longitude: float) -> int:
 
 
 def _d60(longitude: float) -> int:
+    """D60 Shashtiamsa — aligned with varga.py canonical source."""
     si = int(longitude / 30) % 12
     div = int((longitude % 30) * 2)  # 0-59
-    if si % 2 == 0:
+    if si % 2 == 0:  # odd sign
         return div % 12
-    else:
-        return (div + 6) % 12
+    else:  # even sign — offset +5 (Virgo start, matching varga.py)
+        return (5 + div) % 12
 
 
 def _d9(longitude: float) -> int:

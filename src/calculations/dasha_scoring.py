@@ -204,22 +204,30 @@ def apply_dasha_scoring(
                                 break
                     break
     else:
-        # Derive from Moon nakshatra (Vimshottari)
-        _DASHA_LORDS = [
-            "Ketu",
-            "Venus",
-            "Sun",
-            "Moon",
-            "Mars",
-            "Rahu",
-            "Jupiter",
-            "Saturn",
-            "Mercury",
-        ]
-        if "Moon" in chart.planets:
-            moon_lon = chart.planets["Moon"].longitude
-            nak_idx = int(moon_lon * 3 / 40) % 27
-            md_lord = _DASHA_LORDS[nak_idx % 9]
+        # BUG-012 fix: compute actual running dasha lord from Vimshottari, not just birth lord
+        try:
+            from src.calculations.vimshottari_dasa import compute_vimshottari_dasa, current_dasha
+            birth_date = getattr(chart, "birth_date", None)
+            if birth_date is not None:
+                periods = compute_vimshottari_dasa(chart, birth_date)
+                current = current_dasha(periods, query_date)
+                if current:
+                    md_lord = current.get("md_lord", md_lord)
+                    ad_lord = current.get("ad_lord", ad_lord)
+            else:
+                # No birth_date — fall back to birth nakshatra lord (imperfect but better than hardcoded)
+                if "Moon" in chart.planets:
+                    _DASHA_LORDS = ["Ketu", "Venus", "Sun", "Moon", "Mars", "Rahu", "Jupiter", "Saturn", "Mercury"]
+                    moon_lon = chart.planets["Moon"].longitude
+                    nak_idx = int(moon_lon * 3 / 40) % 27
+                    md_lord = _DASHA_LORDS[nak_idx % 9]
+        except Exception:
+            # Fallback: birth nakshatra lord
+            if "Moon" in chart.planets:
+                _DASHA_LORDS = ["Ketu", "Venus", "Sun", "Moon", "Mars", "Rahu", "Jupiter", "Saturn", "Mercury"]
+                moon_lon = chart.planets["Moon"].longitude
+                nak_idx = int(moon_lon * 3 / 40) % 27
+                md_lord = _DASHA_LORDS[nak_idx % 9]
 
     modifiers = []
     for house in range(1, 13):

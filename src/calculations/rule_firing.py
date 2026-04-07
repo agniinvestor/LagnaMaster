@@ -265,9 +265,11 @@ _OWN_SIGNS = {
     "Jupiter": [8, 11], "Venus": [1, 6], "Saturn": [9, 10],
     "Rahu": [10], "Ketu": [7],
 }
-_MT_SIGNS = {
-    "Sun": 4, "Moon": 1, "Mars": 0, "Mercury": 5,
-    "Jupiter": 8, "Venus": 6, "Saturn": 10,
+# BUG-037 fix: MT uses degree ranges (BPHS Ch.3 v.51-54)
+_MT_RANGES = {
+    "Sun": (4, 0.0, 20.0), "Moon": (1, 4.0, 30.0), "Mars": (0, 0.0, 12.0),
+    "Mercury": (5, 15.0, 20.0), "Jupiter": (8, 0.0, 10.0),
+    "Venus": (6, 0.0, 15.0), "Saturn": (10, 0.0, 20.0),
 }
 
 # ── Parashari graha drishti (7th always; Mars 4,8; Jupiter 5,9; Saturn 3,10) ──
@@ -305,12 +307,17 @@ def _planet_dignity_state(chart, planet_name: str) -> str:
             name = std_name
             break
     si = p.sign_index
+    deg = p.degree_in_sign if hasattr(p, "degree_in_sign") else (p.longitude % 30)
+    # BUG-037 fix: check MT BEFORE exaltation (with degree ranges — BPHS Ch.3 v.51-54)
+    # MT takes priority when planet is in its MT sign AND within degree range
+    if name in _MT_RANGES:
+        mt_si, mt_lo, mt_hi = _MT_RANGES[name]
+        if si == mt_si and mt_lo <= deg < mt_hi:
+            return "moolatrikona"
     if name in _EXALT_SIGN and si == _EXALT_SIGN[name]:
         return "exalted"
     if name in _DEBIL_SIGN and si == _DEBIL_SIGN[name]:
         return "debilitated"
-    if name in _MT_SIGNS and si == _MT_SIGNS[name]:
-        return "moolatrikona"
     if name in _OWN_SIGNS and si in _OWN_SIGNS[name]:
         return "own_sign"
     return "neutral"

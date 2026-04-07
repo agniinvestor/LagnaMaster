@@ -109,7 +109,10 @@ def compute_baladi(planet: str, chart) -> str:
         return "Bala"
 
 
-# ── Lajjitadi (6 states for 5th house lord — stress-focused) ─────────────────
+# ── Lajjitadi (simplified: 5th house lord only) ─────────────────────────────
+# NOTE: BPHS Ch.45 v.11-18 says Lajjitadi applies to ANY planet, not just H5 lord.
+# The canonical any-planet implementation is in avasthas.py (S317 BPHS module).
+# This function is kept for pressure_engine.py backward compatibility only.
 @dataclass
 class LajjitadiResult:
     fifth_lord: str
