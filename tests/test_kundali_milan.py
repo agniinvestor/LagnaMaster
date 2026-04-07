@@ -123,7 +123,7 @@ class TestBhakut:
         assert _bh(0, 5) == 0.0
 
     def test_59(self):
-        assert _bh(0, 4) == 0.0
+        assert _bh(0, 4) == 7.0  # 5/9 is trikona (auspicious), not dosha
 
     def test_17(self):
         assert _bh(0, 0) == 7.0

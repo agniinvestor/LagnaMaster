@@ -70,15 +70,15 @@ _VD = {
     "qh": ["q", "h"],
     "jq": ["j", "q"],
 }
-_TS = {1: 3, 2: 3, 3: 0, 4: 3, 5: 0, 6: 3, 7: 0, 8: 3, 9: 3}
+_TS = {1: 0, 2: 3, 3: 0, 4: 3, 5: 0, 6: 3, 7: 0, 8: 3, 9: 3}  # Janma(1)=inauspicious
 _Y = [
     "horse",
     "elephant",
     "goat",
     "serpent",
-    "dog",
-    "cat",
-    "cat",
+    "serpent",  # Mrigashira — serpent (was "dog", BUG-058)
+    "dog",      # Ardra — dog (was "cat", BUG-058)
+    "cat",      # Punarvasu
     "goat",
     "cat",
     "rat",
@@ -132,11 +132,11 @@ _NF = {
         "Saturn": "E",
         "Mercury": "N",
     },
-    "Moon": {
+    "Moon": {  # BPHS Ch.3 v.55: Moon has no enemies, friends=Sun+Mercury
         "Sun": "F",
         "Mars": "N",
-        "Jupiter": "F",
-        "Venus": "F",
+        "Jupiter": "N",   # was F — BPHS says Neutral
+        "Venus": "N",     # was F — BPHS says Neutral
         "Saturn": "N",
         "Mercury": "F",
     },
@@ -148,13 +148,13 @@ _NF = {
         "Saturn": "N",
         "Mercury": "E",
     },
-    "Mercury": {
+    "Mercury": {  # BPHS Ch.3 v.55: Mercury friends=Sun+Venus, enemy=Moon
         "Sun": "F",
-        "Moon": "N",
+        "Moon": "E",      # was N — BPHS says Enemy
         "Mars": "N",
         "Jupiter": "N",
         "Venus": "F",
-        "Saturn": "F",
+        "Saturn": "N",    # was F — BPHS says Neutral
     },
     "Jupiter": {
         "Sun": "F",
@@ -164,18 +164,18 @@ _NF = {
         "Venus": "E",
         "Saturn": "N",
     },
-    "Venus": {
+    "Venus": {  # BPHS Ch.3 v.55: Venus friends=Mercury+Saturn, enemies=Sun+Moon
         "Sun": "E",
-        "Moon": "N",
+        "Moon": "E",      # was N — BPHS says Enemy
         "Mars": "N",
         "Mercury": "F",
         "Jupiter": "N",
         "Saturn": "F",
     },
-    "Saturn": {
+    "Saturn": {  # BPHS Ch.3 v.55: Saturn friends=Mercury+Venus, enemies=Sun+Moon+Mars
         "Sun": "E",
         "Moon": "E",
-        "Mars": "N",
+        "Mars": "E",      # was N — BPHS says Enemy
         "Mercury": "F",
         "Jupiter": "N",
         "Venus": "F",
@@ -314,7 +314,7 @@ def _gn(m, f):
 def _bh(m, f):
     m2f = (f - m) % 12 + 1
     f2m = (m - f) % 12 + 1
-    return 0.0 if m2f in (5, 6, 8, 9) or f2m in (5, 6, 8, 9) else 7.0
+    return 0.0 if m2f in (6, 8) or f2m in (6, 8) else 7.0  # 6/8=Shadashtak dosha; 5/9=trikona (auspicious)
 
 
 def _nd(m, f):

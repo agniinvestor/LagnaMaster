@@ -582,8 +582,8 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
         elif ctype == "planet_not_in_house":
             planet_spec = cond.get("planet", "")
             target_house = cond.get("house", 0)
-            if isinstance(target_house, list):
-                target_house = target_house[0]
+            # BUG-035 fix: check ALL houses in list, not just first
+            target_houses = target_house if isinstance(target_house, list) else [target_house]
             if planet_spec == "any_benefic":
                 candidates = list(_BENEFICS)
             elif planet_spec == "any_malefic":
@@ -591,15 +591,15 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             else:
                 candidates = [planet_spec.strip().title()]
             valid = [c for c in candidates if _find_planet(chart, c)]
-            if any(_planet_house(chart, c) == target_house for c in valid):
+            if any(_planet_house(chart, c) in target_houses for c in valid):
                 return False, 0
-            matched_house = matched_house or target_house
+            matched_house = matched_house or (target_houses[0] if target_houses else 0)
 
         elif ctype == "planet_not_aspecting":
             planet_spec = cond.get("planet", "")
             target_house = cond.get("house", 0)
-            if isinstance(target_house, list):
-                target_house = target_house[0]
+            # BUG-036 fix: check ALL houses in list, not just first
+            target_houses = target_house if isinstance(target_house, list) else [target_house]
             if planet_spec == "any_benefic":
                 candidates = list(_BENEFICS)
             elif planet_spec == "any_malefic":
@@ -607,9 +607,9 @@ def _check_compound_conditions(conditions: list[dict], chart, context: dict | No
             else:
                 candidates = [planet_spec.strip().title()]
             valid = [c for c in candidates if _find_planet(chart, c)]
-            if any(_planet_aspects_house(chart, c, target_house) for c in valid):
+            if any(_planet_aspects_house(chart, c, th) for c in valid for th in target_houses):
                 return False, 0
-            matched_house = matched_house or target_house
+            matched_house = matched_house or (target_houses[0] if target_houses else 0)
 
         elif ctype == "planet_in_navamsa_sign":
             planet_name = cond.get("planet", "")

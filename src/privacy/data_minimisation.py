@@ -80,7 +80,7 @@ def apply_retention_policy(
             n = conn.execute(
                 """
                 SELECT COUNT(*) FROM charts
-                WHERE last_accessed < ? OR last_accessed IS NULL
+                WHERE created_at < ?  -- BUG-066 fix: was last_accessed (column doesn't exist)
             """,
                 (cutoff_birth,),
             ).fetchone()[0]
@@ -88,7 +88,7 @@ def apply_retention_policy(
             if not dry_run and n > 0:
                 conn.execute(
                     """
-                    DELETE FROM charts WHERE last_accessed < ? OR last_accessed IS NULL
+                    DELETE FROM charts WHERE created_at < ?
                 """,
                     (cutoff_birth,),
                 )

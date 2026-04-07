@@ -73,7 +73,7 @@ def planet_transit_quality(
         from src.calculations.ashtakavarga import compute_ashtakavarga
 
         av = compute_ashtakavarga(natal_chart)
-        planet_av = getattr(av, planet.lower(), None)
+        planet_av = av.planet_av.get(planet, None)  # BUG-040 fix: was getattr(av, planet.lower())
         rekhas = planet_av.bindus[transit_si] if planet_av else 4
     except Exception:
         rekhas = 4

@@ -64,29 +64,49 @@ def compute_deeptadi(planet: str, chart) -> str:
 # Bala=0–6°: infant (weak); Kumara=6–12°: adolescent; Yuva=12–18°: youth (strong)
 # Vriddha=18–24°: old (declining); Mrita=24–30°: dead (very weak)
 BALADI_STATES = {
-    "Bala": {"description": "Infant — weak and dependent", "multiplier": 0.25},
-    "Kumara": {"description": "Adolescent — developing", "multiplier": 0.5},
-    "Yuva": {"description": "Youth — full strength", "multiplier": 1.0},
-    "Vriddha": {"description": "Old — declining", "multiplier": 0.5},
-    "Mrita": {"description": "Dead — extremely weak results", "multiplier": 0.1},
+    "Bala": {"description": "Infant — quarter results", "multiplier": 0.25},      # BPHS Ch.45 v.4
+    "Kumara": {"description": "Adolescent — half results", "multiplier": 0.5},     # BPHS Ch.45 v.4
+    "Yuva": {"description": "Youth — full results", "multiplier": 1.0},            # BPHS Ch.45 v.4
+    "Vriddha": {"description": "Old — negligible results", "multiplier": 0.125},   # BPHS Ch.45 v.4 "negligible"
+    "Mrita": {"description": "Dead — nil results", "multiplier": 0.0},             # BPHS Ch.45 v.4 "nil"
 }
 
 
 def compute_baladi(planet: str, chart) -> str:
-    """Return the Baladi state for a planet based on degree within sign."""
+    """Return the Baladi state for a planet based on degree within sign.
+
+    BPHS Ch.45 v.3: order reverses for even signs.
+    Odd signs (Aries=0, Gemini=2, ...): Bala→Kumara→Yuva→Vriddha→Mrita
+    Even signs (Taurus=1, Cancer=3, ...): Mrita→Vriddha→Yuva→Kumara→Bala
+    """
     pos = chart.planets.get(planet)
     if pos is None:
         return "Yuva"
     d = pos.degree_in_sign
-    if d < 6:
+    is_odd = pos.sign_index % 2 == 0  # Aries(0)=odd, Taurus(1)=even
+
+    if is_odd:
+        # Odd signs: ascending order
+        if d < 6:
+            return "Bala"
+        if d < 12:
+            return "Kumara"
+        if d < 18:
+            return "Yuva"
+        if d < 24:
+            return "Vriddha"
+        return "Mrita"
+    else:
+        # Even signs: reversed — BPHS Ch.45 v.3
+        if d < 6:
+            return "Mrita"
+        if d < 12:
+            return "Vriddha"
+        if d < 18:
+            return "Yuva"
+        if d < 24:
+            return "Kumara"
         return "Bala"
-    if d < 12:
-        return "Kumara"
-    if d < 18:
-        return "Yuva"
-    if d < 24:
-        return "Vriddha"
-    return "Mrita"
 
 
 # ── Lajjitadi (6 states for 5th house lord — stress-focused) ─────────────────
