@@ -27,17 +27,24 @@
 16. **Only 22/143 corpus files (15%) use V2 builder** — 85% old format
 17. **13 rules still entity_target="general"** — L004 violation
 
-## Duplication Index (measured)
+## Duplication Index (EXHAUSTIVE — measured across entire repo)
 
-| What | Copies | Authoritative Source | Consumers of Copies |
-|------|--------|---------------------|-------------------|
-| Sign lord table | 5 inline + 7 via import | dignity.py, rule_firing.py | diagnostic_scorer, feature_decomp, avasthas(2), rule_firing |
-| Malefic/benefic set | 11 static + 2 chart-aware | rule_firing.py:is_natural_malefic | argala, arudha_perception, diagnostic_scorer, extended_yogas, feature_decomp, functional_roles, longevity, multi_axis_scoring, multi_lagna, narayana_argala, yogas_extended |
-| Friendship table | 4 full copies | dignity.py:_NAISARGIKA | panchadha_maitri.py, friendship.py, sayanadi_full.py |
-| Exalt/debil tables | 26 files reference | dignity.py | Too many to list — every scoring/yoga module |
-| Avastha modules | 8 files | avasthas.py (S317, BPHS) | avastha.py, avastha_v2.py, planet_avasthas.py, sayanadi_full.py + consumers |
-| Scoring modules | 12 files | multi_axis_scoring.py | scoring.py, scoring_v2.py, scoring_v3.py, scoring_patches.py, etc. |
-| ASPECT_STRENGTH | 2 copies | sputa_drishti.py (BPHS speculum) | scoring_patches.py (stale 0.75 values) |
+| Concept | Inline Copies | Previous Estimate | Where They Are |
+|---------|--------------|-------------------|---------------|
+| Malefic set `{Sun,Mars,Saturn,Rahu,Ketu}` | **32** | 11 | 20 in src/calculations/, 2 in src/ui/, 1 in src/scoring.py, 1 in tools/, + corpus descriptions |
+| Benefic set references | **102** | "a few" | Scattered across calculations, corpus descriptions, UI, guidance |
+| Sign lord table | **7 inline dicts** | 5 | +rule_firing list form, +tools/diff_engine.py, +tests |
+| Exalt sign dict | **4 inline** | "26 refs" | diagnostic_scorer, tools/diff_engine + dignity.py (authoritative), rule_firing (perf copy) |
+| Dusthana `{6,8,12}` | **34** | "a few" | Nearly every scoring/yoga/dasha module defines its own |
+| Kendra `{1,4,7,10}` | **45** | not measured | Worst duplication cluster — 45 separate definitions |
+| Trikona `{1,5,9}` | **29** | not measured | Second worst — 29 separate definitions |
+| Friendship table | **4 full copies** | 4 | dignity.py, panchadha_maitri.py, friendship.py, sayanadi_full.py |
+| Avastha modules | **8 files** | 8 | avasthas.py, avastha_v2.py, avastha.py, planet_avasthas.py, sayanadi_full.py + 3 consumers |
+| Scoring modules | **12 files** | 12 | scoring.py, scoring_v2.py, scoring_v3.py, scoring_patches.py, multi_axis_scoring.py, diagnostic_scorer.py + 6 others |
+| ASPECT_STRENGTH | **2 copies** | 2 | scoring_patches.py (stale 0.75) + was in shadbala.py (removed S317) |
+
+**Total inline concept duplications: ~275+ across the codebase.**
+This is 3-5x worse than the original inventory estimated.
 
 ## Source Coverage
 
