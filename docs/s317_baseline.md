@@ -115,6 +115,40 @@ This is the BEFORE measurement. S318 and onwards measure against this.
 | Tests added | 102 BPHS-cited |
 | Tests passing | 14,740 |
 
+## Full System Inventory (beyond calculations + corpus)
+
+| Layer | Files | Lines | Key Modules |
+|-------|-------|-------|-------------|
+| src/calculations/ | 125 | 30,880 | rule_firing (1,442), shadbala (874), dignity (837) |
+| src/corpus/ | 144 | 86,151 | 7,412 rules across 14 texts |
+| src/ root | 15 | 3,217 | ephemeris (270), scoring (619), worker (359), db (5 files, 666), auth (235), cache (208) |
+| src/api/ | 8 | 1,443 | main.py (603), auth_router, mobile_router, empirica_router |
+| src/ui/ | 5 | 2,233 | app.py (1,415), chart_visual, kundali_page |
+| src/guidance/ | 9 | 995 | fatalism_filter, disclaimers, practitioner_handoff |
+| src/privacy/ | 4 | 518 | Privacy/data protection |
+| src/ci/ | 4 | 637 | health_check, protocol_compliance, phase0_checkpoint |
+| src/interfaces/ | 5 | 322 | Adapter layer (scoring_engine, dasha_engine) |
+| src/feedback/ | 4 | 332 | Feedback collection |
+| src/ml/ | 2 | 89 | ML integration (minimal) |
+| src/research/ | 4 | 298 | Research tooling |
+| **tests/** | **197** | **—** | 14,740 passing |
+| **tools/** | **171** | **9,055+** | ob3_calibrate, rule_grader, rework_counter, + archive |
+| **docs/** | **58** | **—** | Specs, plans, roadmaps, memory |
+| **.git/hooks/** | **2** | **—** | pre-push (quality gate), pre-commit (deferral check) |
+| **Infrastructure** | **—** | **—** | Dockerfile, docker-compose.yml, Makefile, pytest.ini |
+
+### Database Layer (not measured in original baseline)
+5 database modules: db.py, db_pg.py, db_timescale.py, db_vector.py, db_family.py. PostgreSQL, TimescaleDB, vector store. Status unknown — may be partially implemented or stubs.
+
+### API Layer
+main.py (603 lines) — primary API. No main_v2.py found (may have been consolidated). Mobile router, empirica router, auth router present. API versioning status: unclear.
+
+### Ethical Guardrails
+9 guidance modules including fatalism_filter.py, disclaimer_engine.py, practitioner_handoff.py. These enforce G-series guardrails. Coverage and testing status: not measured.
+
+### Privacy
+4 modules, 518 lines. Scope: birth data handling. Compliance status: not audited.
+
 ## What Doesn't Exist Yet
 
 - Production monitoring/alerting
