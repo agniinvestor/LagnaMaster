@@ -148,22 +148,36 @@ main.py (603 lines) — primary API. No main_v2.py found (may have been consolid
 ### Privacy
 4 modules, 518 lines. Scope: birth data handling. Compliance status: not audited.
 
-## Dead Code & Orphans
+## Dead Code & Orphans (CONTENT AUDITED)
 
-| Type | Count | Examples |
-|------|-------|---------|
-| Orphaned modules (0 importers) | 3 | config_additions (141 lines), feature_expansion (171), yogas_additions (307) |
-| Untested modules (0 test refs) | 2 | diagnostic_scorer (351 lines), feature_expansion (171) |
-| Circular imports detected | 0 | Clean |
-| tools/archive/ | 140 files | Historical scripts, should not grow |
+| Module | Lines | Status | Audit Finding |
+|--------|-------|--------|---------------|
+| config_additions.py | 141 | UNWIRED, NOT dead | Contains 36 ayanamshas, node mode config, AstronomicalConfig dataclass. This is the Layer 2 conventions infrastructure the architecture spec needs. Should be wired into ephemeris.py (which hardcodes only 3 ayanamshas). |
+| feature_expansion.py | 171 | UNWIRED, NOT dead | V2 corpus → continuous feature vectors. Phase 2 (S411-S425) work per its docstring. Premature — depends on full corpus. Uses old _EXALT/_DEBIL tables from diagnostic_scorer (may have stale values post-S317 fixes). |
+| yogas_additions.py | 307 | UNWIRED, NOT dead | Pancha Mahapurusha, Sunapha/Anapha/Durudhura, Vesi/Vasi/Ubhayachari yoga definitions. Legitimate yoga detection code. Should be wired into yoga detection pipeline. |
+| Circular imports | 0 | Clean | No circular import risk detected. |
+| tools/archive/ | 140 files | Historical | Should not grow. |
 
-## Security
+## Security (CONTENT AUDITED)
 
-| Finding | Status |
-|---------|--------|
-| JWT secret | Hardcoded fallback "dev-secret-change-in-production" in auth.py:25 |
-| .env file | Does not exist |
-| Dependencies | 0 pinned, 21 unpinned (ALL using >= not ==) |
+| Finding | Severity | Details |
+|---------|----------|---------|
+| JWT secret | HIGH | auth.py:25 — `os.environ.get("JWT_SECRET", "dev-secret-change-in-production")`. Fallback is a static string. In production without JWT_SECRET env var, all JWTs use same secret. |
+| .env file | MEDIUM | Does not exist. No template. Environment variables undocumented. |
+| Dependencies | MEDIUM | 0/21 pinned. All `>=` not `==`. Supply chain risk — any dependency update could break build. |
+| SQL injection | LOW | auth.py uses parameterized queries (?, ?). No raw string concatenation found. |
+| CORS | INFO | Streamlit config has `enableCORS=false`. API CORS policy not audited. |
+
+## Documentation Staleness (CONTENT AUDITED)
+
+| Doc | Lines | Key Staleness Findings |
+|-----|-------|----------------------|
+| ARCHITECTURE.md | 565 | PlanetPosition missing `latitude` field. "12 Jyotish modules" → 125. "22 rules" → 23. Wrong file paths. 3-layer convergence model conflicts with graph architecture spec. Layer III references sessions 491-746 (not yet reached). |
+| KPIS.md | 120 | Tests: "1338" → 14,740. Rules: "23 hard-coded" → 7,412. Texts: "2" → 14. FRAMEWORK is excellent — numbers need updating. This doc should be the primary tracking instrument, not my S317 baseline. |
+| shadbala_audit_gaps.md | 159 | ALL 9 gaps say "open" but ALL were resolved in S317. Entire doc is stale. |
+| ROADMAP.md | 288 | 1000-session plan through Phase 10 — this is the STRATEGIC context the graph architecture spec must align to. Graph spec = Phase 2 infrastructure (S411-S470), not standalone. |
+| Makefile | — | Target `test` says "76 tests". Actual: 14,740. |
+| BPHS_ENCODING_ROADMAP.md | 262 | Ch.3, 11, 26, 27, 34, 45 statuses not updated for S317 audit work. |
 
 ## API & Infrastructure
 
