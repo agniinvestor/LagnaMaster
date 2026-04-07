@@ -253,8 +253,7 @@ def score_chart_v2(chart) -> ChartScoresV2:
             [
                 p
                 for p, pp in chart.planets.items()
-                if pp.sign_index == chart.planets.get(bhavesh, None) and p != bhavesh
-                if chart.planets.get(bhavesh)
+                if chart.planets.get(bhavesh) and pp.sign_index == chart.planets[bhavesh].sign_index and p != bhavesh
             ]
             if bhavesh in chart.planets
             else []

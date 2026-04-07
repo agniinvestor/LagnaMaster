@@ -719,11 +719,16 @@ def compute_shadbala(
     # Kendradi Bala
     result.kendradi_bala = compute_kendradi_bala(planet, chart)
 
-    # Drekkana Bala (simplified: male in 1st drekkana 0°-10°, female in 3rd 20°-30°)
+    # Drekkana Bala — BPHS Ch.27 v.6:
+    # Male planets (Sun/Mars/Jupiter) in 1st drekkana (0-10°) = 15 virupas
+    # Female planets (Moon/Venus) in 2nd drekkana (10-20°) = 15 virupas
+    # Neutral planets (Mercury/Saturn) in 3rd drekkana (20-30°) = 15 virupas
     deg = chart.planets[planet].degree_in_sign
     if planet in MALE_PLANETS and deg < 10.0:
         result.drekkana_bala = 15.0
-    elif planet in FEMALE_PLANETS and deg >= 20.0:
+    elif planet in FEMALE_PLANETS and 10.0 <= deg < 20.0:
+        result.drekkana_bala = 15.0
+    elif planet in {"Mercury", "Saturn"} and deg >= 20.0:
         result.drekkana_bala = 15.0
     else:
         result.drekkana_bala = 0.0

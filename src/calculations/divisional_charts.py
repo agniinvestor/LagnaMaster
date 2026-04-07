@@ -135,45 +135,36 @@ def _hora(longitude: float) -> int:
 
 
 def _d4(longitude: float) -> int:
+    """D4 Chaturthamsa — kendras from sign (BPHS Ch.6 v.9)."""
     si = int(longitude / 30) % 12
-    div = int((longitude % 30) / 7.5)
-    base = (si // 3) * 3  # 0,3,6,9 for each modality group
-    return (base + div) % 12
+    k = int((longitude % 30) / 7.5)
+    return (si + k * 3) % 12  # same sign, 4th, 7th, 10th
 
 
 def _d16(longitude: float) -> int:
+    """D16 Shodasamsa — movable→Aries, fixed→Leo, mutable→Sagittarius (BPHS Ch.6 v.16)."""
     si = int(longitude / 30) % 12
     div = int((longitude % 30) * 16 / 30)
-    base = {
-        0: 0,
-        1: 0,
-        2: 0,
-        3: 0,  # Fire group starts Aries
-        4: 1,
-        5: 1,
-        6: 1,
-        7: 1,  # Earth starts Taurus
-        8: 9,
-        9: 9,
-        10: 9,
-        11: 9,
-    }.get(si % 4, 0)
-    return (base * 4 + div) % 12
+    modality = si % 3  # 0=movable, 1=fixed, 2=mutable
+    base = {0: 0, 1: 4, 2: 8}[modality]  # Aries, Leo, Sagittarius
+    return (base + div) % 12
 
 
 def _d20(longitude: float) -> int:
+    """D20 Vimsamsa — movable→Aries, fixed→Sagittarius, mutable→Leo (BPHS Ch.6 v.17-21)."""
     si = int(longitude / 30) % 12
     div = int((longitude % 30) * 20 / 30)
-    # Odd: starts Aries; Even: starts Libra
-    base = 0 if si % 2 == 0 else 6
+    modality = si % 3  # 0=movable, 1=fixed, 2=mutable
+    base = {0: 0, 1: 8, 2: 4}[modality]  # Aries, Sagittarius, Leo
     return (base + div) % 12
 
 
 def _d24(longitude: float) -> int:
+    """D24 Chaturvimsamsa — odd→Leo(4), even→Cancer(3) (BPHS Ch.6 v.22-23)."""
     si = int(longitude / 30) % 12
     div = int((longitude % 30) * 24 / 30)
-    3 if si % 2 == 0 else 8  # Odd: Leo/Sagittarius start
-    return (div + (4 if si % 2 == 0 else 8)) % 12
+    base = 4 if si % 2 == 0 else 3  # Leo for odd, Cancer for even
+    return (base + div) % 12
 
 
 def _d27(longitude: float) -> int:
@@ -219,11 +210,12 @@ def _d40(longitude: float) -> int:
 
 
 def _d45(longitude: float) -> int:
+    """D45 Akshavedamsa — movable→Aries, fixed→Leo, mutable→Sagittarius (BPHS Ch.6 v.31-32)."""
     si = int(longitude / 30) % 12
     div = int((longitude % 30) * 45 / 30)
-    elem = si % 3
-    bases = {0: 0, 1: 3, 2: 6}
-    return (bases[elem] + div) % 12
+    modality = si % 3  # 0=movable, 1=fixed, 2=mutable
+    bases = {0: 0, 1: 4, 2: 8}  # Aries, Leo, Sagittarius
+    return (bases[modality] + div) % 12
 
 
 def _d60(longitude: float) -> int:
@@ -243,26 +235,30 @@ def _d9(longitude: float) -> int:
 
 
 def _d10(longitude: float) -> int:
+    """D10 Dasamsa — odd from sign, even from 9th (BPHS Ch.6 v.13-14)."""
     si = int(longitude / 30) % 12
-    div = int((longitude % 30) / 3)
-    if si % 2 == 0:
-        return (si * 10 + div) % 12
-    else:
-        return (si * 10 + (9 - div)) % 12
+    k = min(int((longitude % 30) / 3), 9)
+    if si % 2 == 0:  # odd sign
+        return (si + k) % 12
+    else:  # even sign
+        return (si + 9 + k) % 12
 
 
 def _d3(longitude: float) -> int:
+    """D3 Drekkana — trikona-based (BPHS Ch.6 v.7-8)."""
     si = int(longitude / 30) % 12
-    div = int((longitude % 30) / 10)
-    elem = si % 4
-    starts = {0: 0, 1: 4, 2: 8, 3: 0}
-    return (starts[elem] + div * 4) % 12
+    k = int((longitude % 30) / 10)
+    return (si + k * 4) % 12  # same sign, 5th, 9th
 
 
 def _d7(longitude: float) -> int:
+    """D7 Saptamsa — odd from sign, even from 7th (BPHS Ch.6 v.10-11)."""
     si = int(longitude / 30) % 12
-    div = int((longitude % 30) * 7 / 30)
-    return (si % 2 == 0) and (si + div) % 12 or (6 + si + div) % 12
+    k = min(int((longitude % 30) * 7 / 30), 6)
+    if si % 2 == 0:  # odd sign
+        return (si + k) % 12
+    else:  # even sign
+        return (si + 6 + k) % 12
 
 
 def _d12(longitude: float) -> int:

@@ -183,10 +183,10 @@ def _compute_solar_return_jd(
 
         swe.set_sid_mode(swe.SIDM_LAHIRI)
 
-        # Estimate: Sun moves ~1°/day, start search from approximate date
-        # Approximate JD for query_year Aug 15
+        # Estimate: derive birth year from birth_jd, then compute offset
         days_per_year = 365.25
-        estimated_jd = birth_jd + (query_year - 1947) * days_per_year
+        birth_year_approx = int(2000 + (birth_jd - 2451545.0) / 365.25)  # JD2000 epoch
+        estimated_jd = birth_jd + (query_year - birth_year_approx) * days_per_year
 
         # Binary search: find when Sun longitude = natal_sun_lon
         # Search window: ±10 days around estimate
@@ -219,10 +219,10 @@ def _compute_solar_return_jd(
         return (jd_low + jd_high) / 2.0
 
     except Exception:
-        # Fallback: approximate solar return JD
+        # Fallback: approximate solar return JD from birth_jd
         days_per_year = 365.25636  # sidereal year
-        birth_jd_approx = 2432126.7  # 1947-08-15 JD approx
-        return birth_jd_approx + (query_year - 1947) * days_per_year
+        birth_year_approx = int(2000 + (birth_jd - 2451545.0) / 365.25)
+        return birth_jd + (query_year - birth_year_approx) * days_per_year
 
 
 def _jd_to_date(jd: float) -> date:
@@ -408,7 +408,7 @@ def compute_varshaphala(
     query_year = int(query_year)
     if birth_year is None:
         if birth_date_or_year is None:
-            birth_year = 1947
+            raise ValueError("birth_year or birth_date_or_year is required")  # BUG-039 fix: was hardcoded 1947
         elif isinstance(birth_date_or_year, date):
             birth_year = birth_date_or_year.year
         else:
@@ -429,7 +429,7 @@ def compute_varshaphala(
         swe.set_sid_mode(swe.SIDM_LAHIRI)
         birth_jd = swe.julday(birth_year, 8, 15, 0.0)
     except Exception:
-        birth_jd = 2432126.7 + (birth_year - 1947) * 365.25
+        birth_jd = 2451545.0 + (birth_year - 2000) * 365.25  # J2000 epoch fallback
 
     # Compute solar return JD
     sr_jd = _compute_solar_return_jd(natal_sun_lon, birth_jd, query_year, lat, lon)
