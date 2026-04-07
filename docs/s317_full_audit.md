@@ -210,6 +210,34 @@ Boundary behavior differs between formulas. Charts near nakshatra boundaries may
 ### House Computation — Mixed Conventions
 360 occurrences of `% 12` in house calculations. Most use `(si - lagna) % 12 + 1` (1-indexed). Some use `(si - lagna) % 12` (0-indexed). Mixed conventions in same codebase = off-by-one risk at every house computation.
 
+## Scoring Path Analysis
+
+**TWO parallel scoring engines serve different consumers:**
+
+| Engine | File | Consumers | Call Count |
+|--------|------|-----------|-----------|
+| `score_chart()` | src/scoring.py (619 lines) | API main.py, API main_v2.py, UI app.py, worker.py, montecarlo, pushkara | 11 |
+| `score_all_axes()` | src/calculations/multi_axis_scoring.py (588 lines) | scoring_v3, domain_weighting, lpi, house_score, dominance_engine, varga_agreement, chart_exceptions, interfaces/scoring_engine | 10 |
+
+Same chart, two engines, potentially different scores. The API serves `score_chart`. Internal analysis uses `score_all_axes`. These are NOT the same computation.
+
+## Corpus Data Quality
+
+| Metric | Value | Implication |
+|--------|-------|------------|
+| Empty outcome_direction | 2,634 (35.5%) | Can't contribute to directional scoring |
+| Missing signal_group | 6,812 (91.9%) | Can't be grouped for pattern analysis |
+| Health-sensitive rules | 110 | G02 guardrail NOT implemented — unprotected |
+| entity_target = "general" | 13 | L004 violation (cop-out) |
+| Verse-level duplicates | 364 | Potential double-counting |
+
+## Deployment Inconsistency
+
+| Setting | CLAUDE.md | Dockerfile | Reality |
+|---------|-----------|-----------|---------|
+| Python | 3.14 | 3.12-slim | Mismatch — Docker builds different Python |
+| Makefile test count | — | "76 tests" | Actual: 14,740 |
+
 ## What This Audit Did NOT Cover
 
 - Line-by-line CODE LOGIC correctness of 111 untouched calculation modules (swept for stale VALUES, not logic bugs)
