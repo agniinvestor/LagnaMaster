@@ -349,7 +349,7 @@ def _aspects(planet: str, p_house: int, t_house: int) -> bool:
     diff = (t_house - p_house) % 12
     if diff == 6:
         return True
-    extras = {"Mars": {3, 9}, "Jupiter": {4, 8}, "Saturn": {2, 9}}
+    extras = {"Mars": {3, 7}, "Jupiter": {4, 8}, "Saturn": {2, 9}}  # BPHS Ch.26 v.5: Mars 4th+8th
     return diff in extras.get(planet, set())
 
 

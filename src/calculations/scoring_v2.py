@@ -166,10 +166,10 @@ def score_chart_v2(chart) -> ChartScoresV2:
             return False
         diff = (target_house - ph) % 12
         extras = {
-            "Mars": {3, 7, 9},  # 4th, 7th, 8th from Mars
-            "Jupiter": {4, 6, 9},  # 5th, 7th, 9th
-            "Saturn": {2, 6, 9},  # 3rd, 7th, 10th
-        }
+            "Mars": {3, 7},     # 4th, 8th from Mars — BPHS Ch.26 v.5
+            "Jupiter": {4, 8},  # 5th, 9th from Jupiter — BPHS Ch.26 v.5
+            "Saturn": {2, 9},   # 3rd, 10th from Saturn — BPHS Ch.26 v.5
+        }  # 7th aspect handled by diff==6 check above
         if diff == 6:
             return True  # 7th aspect all planets
         return diff in extras.get(planet, set())

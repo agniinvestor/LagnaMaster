@@ -82,9 +82,11 @@ def detect_nabhasa_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
     occupied = set(ph.get(p) for p in planets_7 if ph.get(p))
     results = []
 
-    # Rajju — all in movable signs (H1,H4,H7,H10)
-    movable_houses = {1, 4, 7, 10}
-    all_movable = all(ph.get(p, 0) in movable_houses for p in planets_7 if p in ph)
+    # Rajju — all in movable signs (Aries/Cancer/Libra/Capricorn = sign_index % 3 == 0)
+    all_movable = all(
+        chart.planets[p].sign_index % 3 == 0
+        for p in planets_7 if p in chart.planets
+    )
     results.append(
         _yoga(
             "Rajju Yoga",
@@ -99,9 +101,11 @@ def detect_nabhasa_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
         )
     )
 
-    # Musala — all in fixed signs (H2,H5,H8,H11)
-    fixed_houses = {2, 5, 8, 11}
-    all_fixed = all(ph.get(p, 0) in fixed_houses for p in planets_7 if p in ph)
+    # Musala — all in fixed signs (Taurus/Leo/Scorpio/Aquarius = sign_index % 3 == 1)
+    all_fixed = all(
+        chart.planets[p].sign_index % 3 == 1
+        for p in planets_7 if p in chart.planets
+    )
     results.append(
         _yoga(
             "Musala Yoga",
@@ -116,9 +120,11 @@ def detect_nabhasa_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
         )
     )
 
-    # Nala — all in dual signs (H3,H6,H9,H12)
-    dual_houses = {3, 6, 9, 12}
-    all_dual = all(ph.get(p, 0) in dual_houses for p in planets_7 if p in ph)
+    # Nala — all in dual signs (Gemini/Virgo/Sagittarius/Pisces = sign_index % 3 == 2)
+    all_dual = all(
+        chart.planets[p].sign_index % 3 == 2
+        for p in planets_7 if p in chart.planets
+    )
     results.append(
         _yoga(
             "Nala Yoga",
@@ -134,8 +140,9 @@ def detect_nabhasa_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
     )
 
     # Mala — benefics in kendras (1,4,7,10)
+    kendra_houses = {1, 4, 7, 10}
     benefics_in_kendra = all(
-        ph.get(p, 0) in movable_houses for p in _NAT_BENEFIC if p in ph
+        ph.get(p, 0) in kendra_houses for p in _NAT_BENEFIC if p in ph
     )
     results.append(
         _yoga(
@@ -210,13 +217,13 @@ def detect_chandra_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
     planets_before = [p for p in non_luminaries if ph.get(p) == h_before]
     planets_after = [p for p in non_luminaries if ph.get(p) == h_after]
 
-    # Sunapha — planet(s) in 2nd from Moon (not Sun)
-    sunapha = bool(planets_before)
+    # Sunapha — planet(s) in 2nd from Moon (h_after = 2nd from Moon)
+    sunapha = bool(planets_after)
     results.append(
         _yoga(
             "Sunapha Yoga",
             "Chandra",
-            planets_before,
+            planets_after,
             sunapha,
             2.0 if sunapha else 0.0,
             "Planet(s) in 2nd from Moon — earned wealth",
@@ -226,13 +233,13 @@ def detect_chandra_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
         )
     )
 
-    # Anapha — planet(s) in 12th from Moon
-    anapha = bool(planets_after)
+    # Anapha — planet(s) in 12th from Moon (h_before = 12th from Moon)
+    anapha = bool(planets_before)
     results.append(
         _yoga(
             "Anapha Yoga",
             "Chandra",
-            planets_after,
+            planets_before,
             anapha,
             2.0 if anapha else 0.0,
             "Planet(s) in 12th from Moon — pleasure, enjoyment",
@@ -312,13 +319,13 @@ def detect_surya_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
     planets_before = [p for p in non_luminaries if ph.get(p) == h_before]
     planets_after = [p for p in non_luminaries if ph.get(p) == h_after]
 
-    # Vesi — planet in 2nd from Sun
-    vesi = bool(planets_before)
+    # Vesi — planet in 2nd from Sun (h_after = 2nd from Sun)
+    vesi = bool(planets_after)
     results.append(
         _yoga(
             "Vesi Yoga",
             "Surya",
-            planets_before,
+            planets_after,
             vesi,
             2.0 if vesi else 0.0,
             "Planet in 2nd from Sun — fortunate",
@@ -328,13 +335,13 @@ def detect_surya_yogas(chart, dashas=None, on_date=None) -> list[YogaResult]:
         )
     )
 
-    # Vasi — planet in 12th from Sun
-    vasi = bool(planets_after)
+    # Vasi — planet in 12th from Sun (h_before = 12th from Sun)
+    vasi = bool(planets_before)
     results.append(
         _yoga(
             "Vasi Yoga",
             "Surya",
-            planets_after,
+            planets_before,
             vasi,
             1.5 if vasi else 0.0,
             "Planet in 12th from Sun — clever, prosperous",

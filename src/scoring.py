@@ -107,17 +107,9 @@ def _is_yogakaraka(planet: str, lagna_sign_idx: int) -> bool:
     Yogakaraka = planet ruling both a Kendra and Trikona simultaneously.
     Most common: Saturn for Taurus/Libra Lagna; Mars for Cancer/Leo Lagna.
     """
-    _YOGAKARAKA_MAP: dict[int, str] = {
-        1: "Saturn",  # Taurus lagna: Saturn rules H9(Capricorn) + H10(Aquarius)...
-        # Actually standard: Taurus=Saturn (rules 9+10? no...
-        # Taurus lagna: H1=Tau, H2=Gem, H3=Can, H4=Leo, H5=Vir, H6=Lib, H7=Sco, H8=Sag, H9=Cap, H10=Aqu, H11=Pis, H12=Ari
-        # Saturn rules H9(Cap)+H10(Aqu) = Trikona(9)+Kendra(10) → Yogakaraka ✓
-        3: "Venus",  # Cancer: Venus rules H4+H11 → not YK; standard YK=Mars (H5+H10)
-        4: "Mars",  # Leo lagna: Mars rules H4(Scorpio)+H9(Aries) — trikona+kendra → YK
-        6: "Saturn",  # Scorpio lagna: Saturn rules H3+H4 — not YK
-        # This is simplified — full YK depends on specific sign placements
-    }
-    return _YOGAKARAKA_MAP.get(lagna_sign_idx) == planet
+    # Canonical yogakarakas — BPHS Ch.34 v.19-44
+    from src.calculations.functional_dignity import KNOWN_YOGAKARAKAS
+    return planet in KNOWN_YOGAKARAKAS.get(lagna_sign_idx, [])
 
 
 # ---------------------------------------------------------------------------

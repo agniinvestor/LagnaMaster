@@ -153,9 +153,17 @@ class TestTribhagaBala:
     Night thirds (18-22, 22-02, 02-06): lords are Moon, Venus, Mars.
     """
 
-    def test_day_first_watch_jupiter(self):
+    def test_day_first_watch_mercury(self):
+        """BPHS Ch.27 v.12: Mercury lords 1st day watch."""
         chart = _make_chart()
-        dt = datetime(2024, 3, 15, 8, 0)   # 8 AM → first day watch → Jupiter
+        dt = datetime(2024, 3, 15, 8, 0)   # 8 AM → first day watch → Mercury
+        _, comps = compute_kala_bala("Mercury", chart, dt)
+        assert comps["tribhaga"] == 20.0
+
+    def test_jupiter_always_gets_tribhaga(self):
+        """BPHS Ch.27 v.12: Jupiter gets Tribhaga at all times."""
+        chart = _make_chart()
+        dt = datetime(2024, 3, 15, 8, 0)
         _, comps = compute_kala_bala("Jupiter", chart, dt)
         assert comps["tribhaga"] == 20.0
 
@@ -173,13 +181,14 @@ class TestTribhagaBala:
 
     def test_non_lord_gets_zero(self):
         chart = _make_chart()
-        dt = datetime(2024, 3, 15, 8, 0)   # first day watch → Jupiter lord
+        dt = datetime(2024, 3, 15, 8, 0)   # first day watch → Mercury lord
         _, comps = compute_kala_bala("Mars", chart, dt)
         assert comps["tribhaga"] == 0.0
 
-    def test_night_second_watch_venus(self):
+    def test_night_first_watch_venus(self):
+        """BPHS Ch.27 v.12: Venus lords 1st night watch."""
         chart = _make_chart()
-        dt = datetime(2024, 3, 15, 23, 0)  # 11 PM → second night watch → Venus
+        dt = datetime(2024, 3, 15, 20, 0)  # 8 PM → first night watch → Venus
         _, comps = compute_kala_bala("Venus", chart, dt)
         assert comps["tribhaga"] == 20.0
 

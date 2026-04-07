@@ -350,12 +350,16 @@ def compute_kala_bala(
         hour = birth_dt.hour + birth_dt.minute / 60.0
         if is_day:
             watch = int((hour - 6) / 4) % 3
-            tribhaga_lords = {0: "Jupiter", 1: "Sun", 2: "Saturn"}
+            tribhaga_lords = {0: "Mercury", 1: "Sun", 2: "Saturn"}  # BPHS Ch.27 v.12 p.269
         else:
             night_hour = hour if hour < 6 else hour - 18
             watch = int(night_hour / 4) % 3
-            tribhaga_lords = {0: "Moon", 1: "Venus", 2: "Mars"}
-        components["tribhaga"] = 20.0 if planet == tribhaga_lords.get(watch) else 0.0
+            tribhaga_lords = {0: "Venus", 1: "Moon", 2: "Mars"}  # BPHS Ch.27 v.12 p.269
+        # Jupiter gets Tribhaga at all times — BPHS Ch.27 v.12
+        if planet == "Jupiter":
+            components["tribhaga"] = 20.0
+        else:
+            components["tribhaga"] = 20.0 if planet == tribhaga_lords.get(watch) else 0.0
     else:
         components["tribhaga"] = 0.0
 
