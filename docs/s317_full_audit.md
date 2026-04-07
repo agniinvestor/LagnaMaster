@@ -254,6 +254,17 @@ Same chart, two engines, potentially different scores. The API serves `score_cha
 - Research module correctness (OSF, CV splitter, data license — 0 tests)
 - Tool correctness (31 active tools, 14 import from src/ — stale dependencies possible)
 
+## 🔴🔴🔴 CRITICAL: S317 Fixes Don't Reach Primary Scoring Engine
+
+**multi_axis_scoring.py imports from functional_roles.py** (dynamic computation).
+**functional_dignity.py** (S317 BPHS-verified table) is used by diagnostic_scorer, scoring_v3, and rule_firing — NOT by the main scoring engine.
+
+functional_roles.py independently computes functional classification using generic lordship rules. For Cancer ascendant, it classifies Jupiter as malefic (owns H6+H9, "mixed including dusthana" rule). But BPHS Ch.34 v.27 explicitly says Jupiter is AUSPICIOUS for Cancer (H9 trikona dominates H6).
+
+**10 consumers use the WRONG module. 3 use the CORRECT one.**
+
+The entire S317 functional malefic audit (12 planet changes across 7 lagnas, every verse cited) does not affect the primary scoring path.
+
 ## Systems That Exist But Are Completely Untested
 
 | System | Files | Lines | Purpose | Tests |
