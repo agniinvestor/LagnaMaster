@@ -458,6 +458,214 @@ class V2ChapterBuilder:
         """Return accumulated quality warnings (non-blocking)."""
         return list(self._quality_warnings)
 
+    @staticmethod
+    def _validate_single_condition(cond, label, errors, valid_primitives):
+        """Validate a single condition dict's type and sub-fields.
+
+        Args:
+            cond: The condition dict to validate.
+            label: Human-readable label like "conditions[0]" or
+                   "conditions[0].or_group[1]" for error messages.
+            errors: List to append error strings to.
+            valid_primitives: Set of valid condition type strings.
+        """
+        ctype = cond.get("type", "")
+
+        # Whitelist check
+        if ctype and ctype not in valid_primitives:
+            errors.append(
+                f"T1-1: {label}.type='{ctype}' not a valid primitive — "
+                f"use: {sorted(valid_primitives)}"
+            )
+
+        # Reject lord_in_house with house="any"
+        if ctype == "lord_in_house":
+            house = cond.get("house")
+            if house == "any":
+                errors.append(
+                    f"T1-1: {label} lord_in_house house='any' is a no-op — "
+                    f"use planet_dignity or planet_in_sign_type instead"
+                )
+
+        if ctype == "planet_in_sign_type":
+            from src.corpus.taxonomy import VALID_SIGN_TYPES
+            st = cond.get("sign_type", "")
+            if not st or st not in VALID_SIGN_TYPES:
+                errors.append(
+                    f"T1-1: {label}.sign_type='{st}' not valid — "
+                    f"use: {sorted(VALID_SIGN_TYPES)}"
+                )
+            if not cond.get("planet"):
+                errors.append(f"T1-1: {label} planet_in_sign_type missing 'planet'")
+
+        elif ctype == "planet_in_derived_house":
+            from src.corpus.taxonomy import VALID_DERIVATIONS, VALID_CONDITION_MODES
+            deriv = cond.get("derivation", "")
+            if not deriv or deriv not in VALID_DERIVATIONS:
+                errors.append(
+                    f"T1-1: {label}.derivation='{deriv}' not valid — "
+                    f"use: {sorted(VALID_DERIVATIONS)}"
+                )
+            offset = cond.get("offset")
+            if not isinstance(offset, int) or not (1 <= offset <= 12):
+                errors.append(
+                    f"T1-1: {label}.offset={offset} must be int 1-12"
+                )
+            if not cond.get("planet"):
+                errors.append(f"T1-1: {label} planet_in_derived_house missing 'planet'")
+            mode = cond.get("mode", "occupies")
+            if mode not in VALID_CONDITION_MODES:
+                errors.append(
+                    f"T1-1: {label}.mode='{mode}' not valid — "
+                    f"use: {sorted(VALID_CONDITION_MODES)}"
+                )
+            _HOUSE_BASED = {"arudha_pada", "upa_pada"}
+            if deriv in _HOUSE_BASED and not isinstance(cond.get("base_house"), int):
+                errors.append(
+                    f"T1-1: {label} derivation='{deriv}' requires base_house (int 1-12)"
+                )
+
+        elif ctype == "upagraha_in_house":
+            from src.corpus.taxonomy import VALID_UPAGRAHAS, VALID_CONDITION_MODES
+            upa = cond.get("upagraha", "")
+            if not upa or upa not in VALID_UPAGRAHAS:
+                errors.append(
+                    f"T1-1: {label}.upagraha='{upa}' not valid — "
+                    f"use: {sorted(VALID_UPAGRAHAS)}"
+                )
+            house = cond.get("house")
+            if isinstance(house, list):
+                if not all(isinstance(h, int) and 1 <= h <= 12 for h in house):
+                    errors.append(
+                        f"T1-1: {label}.house={house} must be int 1-12 or list of int 1-12"
+                    )
+            elif not isinstance(house, int) or not (1 <= house <= 12):
+                errors.append(
+                    f"T1-1: {label}.house={house} must be int 1-12 or list of int 1-12"
+                )
+            mode = cond.get("mode", "occupies")
+            if mode not in VALID_CONDITION_MODES:
+                errors.append(
+                    f"T1-1: {label}.mode='{mode}' not valid — "
+                    f"use: {sorted(VALID_CONDITION_MODES)}"
+                )
+
+        elif ctype == "planet_in_house_from":
+            planet = cond.get("planet", "")
+            if not planet:
+                errors.append(
+                    f"T1-1: {label} planet_in_house_from missing 'planet'"
+                )
+            ref = cond.get("reference", "")
+            if not ref:
+                errors.append(
+                    f"T1-1: {label} planet_in_house_from missing 'reference'"
+                )
+            elif ref in ("any_malefic", "any_benefic"):
+                errors.append(
+                    f"T1-1: {label} planet_in_house_from 'reference' must "
+                    f"resolve to single planet, not '{ref}'"
+                )
+            offset = cond.get("offset")
+            if not isinstance(offset, int) or not (1 <= offset <= 12):
+                errors.append(
+                    f"T1-1: {label}.offset={offset} must be int 1-12"
+                )
+            mode = cond.get("mode", "occupies")
+            if mode not in ("occupies", "aspects"):
+                errors.append(
+                    f"T1-1: {label}.mode='{mode}' must be 'occupies' or 'aspects'"
+                )
+
+        elif ctype == "planet_not_in_house":
+            planet = cond.get("planet", "")
+            if not planet:
+                errors.append(f"T1-1: {label} planet_not_in_house missing 'planet'")
+            house = cond.get("house")
+            _DYNAMIC_HOUSE_REFS = {"moon_position"}
+            if house not in _DYNAMIC_HOUSE_REFS:
+                if not isinstance(house, int) or not (1 <= house <= 12):
+                    errors.append(f"T1-1: {label}.house={house} must be int 1-12")
+
+        elif ctype == "planet_not_aspecting":
+            planet = cond.get("planet", "")
+            if not planet:
+                errors.append(f"T1-1: {label} planet_not_aspecting missing 'planet'")
+            house = cond.get("house")
+            _DYNAMIC_HOUSE_REFS = {"moon_position"}
+            if house not in _DYNAMIC_HOUSE_REFS:
+                if not isinstance(house, int) or not (1 <= house <= 12):
+                    errors.append(f"T1-1: {label}.house={house} must be int 1-12")
+
+        elif ctype == "planet_in_navamsa_sign":
+            if not cond.get("planet"):
+                errors.append(f"T1-1: {label} planet_in_navamsa_sign missing 'planet'")
+            sign = cond.get("sign")
+            if not sign:
+                errors.append(f"T1-1: {label} planet_in_navamsa_sign missing 'sign'")
+
+        elif ctype == "dispositor_condition":
+            if not cond.get("planet"):
+                errors.append(f"T1-1: {label} dispositor_condition missing 'planet'")
+            ds = cond.get("dispositor_state", "")
+            if ds not in ("in_house", "dignity"):
+                errors.append(f"T1-1: {label}.dispositor_state='{ds}' must be 'in_house' or 'dignity'")
+            if ds == "in_house":
+                house = cond.get("house")
+                if not isinstance(house, int) or not (1 <= house <= 12):
+                    errors.append(f"T1-1: {label}.house={house} must be int 1-12")
+            elif ds == "dignity":
+                dignity = cond.get("dignity", "")
+                if not dignity:
+                    errors.append(f"T1-1: {label} dispositor_condition dignity missing 'dignity'")
+
+        elif ctype == "count_planets_with_state":
+            state = cond.get("state", "")
+            if state not in ("strong", "weak", "any"):
+                errors.append(f"T1-1: {label}.state='{state}' must be 'strong', 'weak', or 'any'")
+            min_count = cond.get("min_count")
+            if not isinstance(min_count, int) or not (1 <= min_count <= 7):
+                errors.append(f"T1-1: {label}.min_count={min_count} must be int 1-7")
+
+        elif ctype == "lagna_sign_type":
+            from src.corpus.taxonomy import VALID_SIGN_TYPES
+            st = cond.get("sign_type", "")
+            if not st or st not in VALID_SIGN_TYPES:
+                errors.append(
+                    f"T1-1: {label}.sign_type='{st}' not valid — "
+                    f"use: {sorted(VALID_SIGN_TYPES)}"
+                )
+
+        elif ctype == "house_sign_nature":
+            house = cond.get("house")
+            if not isinstance(house, int) or not (1 <= house <= 12):
+                errors.append(f"T1-1: {label}.house={house} must be int 1-12")
+            nature = cond.get("nature", "")
+            if nature not in ("benefic", "malefic"):
+                errors.append(f"T1-1: {label}.nature='{nature}' must be 'benefic' or 'malefic'")
+
+    @classmethod
+    def _validate_conditions_list(cls, conditions, errors, valid_primitives):
+        """Validate a list of conditions, recursing into or_group alternatives."""
+        for i, cond in enumerate(conditions):
+            ctype = cond.get("type", "")
+            label = f"conditions[{i}]"
+            cls._validate_single_condition(cond, label, errors, valid_primitives)
+
+            # Recurse into or_group sub-conditions
+            if ctype == "or_group":
+                alternatives = cond.get("alternatives", [])
+                if not alternatives:
+                    errors.append(
+                        f"T1-1: {label} or_group has empty or missing "
+                        f"'alternatives' list"
+                    )
+                for j, sub_cond in enumerate(alternatives):
+                    sub_label = f"conditions[{i}].or_group[{j}]"
+                    cls._validate_single_condition(
+                        sub_cond, sub_label, errors, valid_primitives
+                    )
+
     def _validate_add(self, conditions, direction, intensity, domains, predictions,
                       *, description="", entity_target="native",
                       commentary_context="", modifiers=None,
@@ -470,185 +678,9 @@ class V2ChapterBuilder:
         )
         errors = []
 
-        # T1-1: Condition primitive whitelist
-        for i, cond in enumerate(conditions):
-            ctype = cond.get("type", "")
-            if ctype and ctype not in VALID_CONDITION_PRIMITIVES:
-                errors.append(
-                    f"T1-1: conditions[{i}].type='{ctype}' not a valid primitive — "
-                    f"use: {sorted(VALID_CONDITION_PRIMITIVES)}"
-                )
-
-        # T1-1 extended: validate new condition primitives' sub-fields
-        for i, cond in enumerate(conditions):
-            ctype = cond.get("type", "")
-
-            # Reject lord_in_house with house="any" — always a no-op (use planet_dignity)
-            if ctype == "lord_in_house":
-                house = cond.get("house")
-                if house == "any":
-                    errors.append(
-                        f"T1-1: conditions[{i}] lord_in_house house='any' is a no-op — "
-                        f"use planet_dignity or planet_in_sign_type instead"
-                    )
-
-            if ctype == "planet_in_sign_type":
-                from src.corpus.taxonomy import VALID_SIGN_TYPES
-                st = cond.get("sign_type", "")
-                if not st or st not in VALID_SIGN_TYPES:
-                    errors.append(
-                        f"T1-1: conditions[{i}].sign_type='{st}' not valid — "
-                        f"use: {sorted(VALID_SIGN_TYPES)}"
-                    )
-                if not cond.get("planet"):
-                    errors.append(f"T1-1: conditions[{i}] planet_in_sign_type missing 'planet'")
-
-            elif ctype == "planet_in_derived_house":
-                from src.corpus.taxonomy import VALID_DERIVATIONS, VALID_CONDITION_MODES
-                deriv = cond.get("derivation", "")
-                if not deriv or deriv not in VALID_DERIVATIONS:
-                    errors.append(
-                        f"T1-1: conditions[{i}].derivation='{deriv}' not valid — "
-                        f"use: {sorted(VALID_DERIVATIONS)}"
-                    )
-                offset = cond.get("offset")
-                if not isinstance(offset, int) or not (1 <= offset <= 12):
-                    errors.append(
-                        f"T1-1: conditions[{i}].offset={offset} must be int 1-12"
-                    )
-                if not cond.get("planet"):
-                    errors.append(f"T1-1: conditions[{i}] planet_in_derived_house missing 'planet'")
-                mode = cond.get("mode", "occupies")
-                if mode not in VALID_CONDITION_MODES:
-                    errors.append(
-                        f"T1-1: conditions[{i}].mode='{mode}' not valid — "
-                        f"use: {sorted(VALID_CONDITION_MODES)}"
-                    )
-                # base_house required for house-based derivations
-                _HOUSE_BASED = {"arudha_pada", "upa_pada"}
-                if deriv in _HOUSE_BASED and not isinstance(cond.get("base_house"), int):
-                    errors.append(
-                        f"T1-1: conditions[{i}] derivation='{deriv}' requires base_house (int 1-12)"
-                    )
-
-            elif ctype == "upagraha_in_house":
-                from src.corpus.taxonomy import VALID_UPAGRAHAS, VALID_CONDITION_MODES
-                upa = cond.get("upagraha", "")
-                if not upa or upa not in VALID_UPAGRAHAS:
-                    errors.append(
-                        f"T1-1: conditions[{i}].upagraha='{upa}' not valid — "
-                        f"use: {sorted(VALID_UPAGRAHAS)}"
-                    )
-                house = cond.get("house")
-                if isinstance(house, list):
-                    if not all(isinstance(h, int) and 1 <= h <= 12 for h in house):
-                        errors.append(
-                            f"T1-1: conditions[{i}].house={house} must be int 1-12 or list of int 1-12"
-                        )
-                elif not isinstance(house, int) or not (1 <= house <= 12):
-                    errors.append(
-                        f"T1-1: conditions[{i}].house={house} must be int 1-12 or list of int 1-12"
-                    )
-                mode = cond.get("mode", "occupies")
-                if mode not in VALID_CONDITION_MODES:
-                    errors.append(
-                        f"T1-1: conditions[{i}].mode='{mode}' not valid — "
-                        f"use: {sorted(VALID_CONDITION_MODES)}"
-                    )
-
-            elif ctype == "planet_in_house_from":
-                planet = cond.get("planet", "")
-                if not planet:
-                    errors.append(
-                        f"T1-1: conditions[{i}] planet_in_house_from missing 'planet'"
-                    )
-                ref = cond.get("reference", "")
-                if not ref:
-                    errors.append(
-                        f"T1-1: conditions[{i}] planet_in_house_from missing 'reference'"
-                    )
-                elif ref in ("any_malefic", "any_benefic"):
-                    errors.append(
-                        f"T1-1: conditions[{i}] planet_in_house_from 'reference' must "
-                        f"resolve to single planet, not '{ref}'"
-                    )
-                offset = cond.get("offset")
-                if not isinstance(offset, int) or not (1 <= offset <= 12):
-                    errors.append(
-                        f"T1-1: conditions[{i}].offset={offset} must be int 1-12"
-                    )
-                mode = cond.get("mode", "occupies")
-                if mode not in ("occupies", "aspects"):
-                    errors.append(
-                        f"T1-1: conditions[{i}].mode='{mode}' must be 'occupies' or 'aspects'"
-                    )
-
-            elif ctype == "planet_not_in_house":
-                planet = cond.get("planet", "")
-                if not planet:
-                    errors.append(f"T1-1: conditions[{i}] planet_not_in_house missing 'planet'")
-                house = cond.get("house")
-                _DYNAMIC_HOUSE_REFS = {"moon_position"}
-                if house not in _DYNAMIC_HOUSE_REFS:
-                    if not isinstance(house, int) or not (1 <= house <= 12):
-                        errors.append(f"T1-1: conditions[{i}].house={house} must be int 1-12")
-
-            elif ctype == "planet_not_aspecting":
-                planet = cond.get("planet", "")
-                if not planet:
-                    errors.append(f"T1-1: conditions[{i}] planet_not_aspecting missing 'planet'")
-                house = cond.get("house")
-                _DYNAMIC_HOUSE_REFS = {"moon_position"}
-                if house not in _DYNAMIC_HOUSE_REFS:
-                    if not isinstance(house, int) or not (1 <= house <= 12):
-                        errors.append(f"T1-1: conditions[{i}].house={house} must be int 1-12")
-
-            elif ctype == "planet_in_navamsa_sign":
-                if not cond.get("planet"):
-                    errors.append(f"T1-1: conditions[{i}] planet_in_navamsa_sign missing 'planet'")
-                sign = cond.get("sign")
-                if not sign:
-                    errors.append(f"T1-1: conditions[{i}] planet_in_navamsa_sign missing 'sign'")
-
-            elif ctype == "dispositor_condition":
-                if not cond.get("planet"):
-                    errors.append(f"T1-1: conditions[{i}] dispositor_condition missing 'planet'")
-                ds = cond.get("dispositor_state", "")
-                if ds not in ("in_house", "dignity"):
-                    errors.append(f"T1-1: conditions[{i}].dispositor_state='{ds}' must be 'in_house' or 'dignity'")
-                if ds == "in_house":
-                    house = cond.get("house")
-                    if not isinstance(house, int) or not (1 <= house <= 12):
-                        errors.append(f"T1-1: conditions[{i}].house={house} must be int 1-12")
-                elif ds == "dignity":
-                    dignity = cond.get("dignity", "")
-                    if not dignity:
-                        errors.append(f"T1-1: conditions[{i}] dispositor_condition dignity missing 'dignity'")
-
-            elif ctype == "count_planets_with_state":
-                state = cond.get("state", "")
-                if state not in ("strong", "weak", "any"):
-                    errors.append(f"T1-1: conditions[{i}].state='{state}' must be 'strong', 'weak', or 'any'")
-                min_count = cond.get("min_count")
-                if not isinstance(min_count, int) or not (1 <= min_count <= 7):
-                    errors.append(f"T1-1: conditions[{i}].min_count={min_count} must be int 1-7")
-
-            elif ctype == "lagna_sign_type":
-                from src.corpus.taxonomy import VALID_SIGN_TYPES
-                st = cond.get("sign_type", "")
-                if not st or st not in VALID_SIGN_TYPES:
-                    errors.append(
-                        f"T1-1: conditions[{i}].sign_type='{st}' not valid — "
-                        f"use: {sorted(VALID_SIGN_TYPES)}"
-                    )
-
-            elif ctype == "house_sign_nature":
-                house = cond.get("house")
-                if not isinstance(house, int) or not (1 <= house <= 12):
-                    errors.append(f"T1-1: conditions[{i}].house={house} must be int 1-12")
-                nature = cond.get("nature", "")
-                if nature not in ("benefic", "malefic"):
-                    errors.append(f"T1-1: conditions[{i}].nature='{nature}' must be 'benefic' or 'malefic'")
+        # T1-1: Condition primitive whitelist + sub-field validation
+        # Recurses into or_group alternatives automatically
+        self._validate_conditions_list(conditions, errors, VALID_CONDITION_PRIMITIVES)
 
         # T1-2: Controlled vocabulary — domains, direction, intensity
         for d in domains:
@@ -667,15 +699,21 @@ class V2ChapterBuilder:
             "lord_of_5", "lord_of_6", "lord_of_7", "lord_of_8", "lord_of_9",
             "lord_of_10", "lord_of_11", "lord_of_12",
         }
-        for i, cond in enumerate(conditions):
-            planet = cond.get("planet", "")
+
+        def _check_planet_name(cond_item, lbl):
+            planet = cond_item.get("planet", "")
             if planet and planet.lower() not in _CANONICAL_PLANETS:
-                # Allow h{N}_lord format and multi-planet conjunctions
                 if not (planet.startswith("h") and "_lord" in planet):
-                    if "_" not in planet:  # not a conjunction pair
+                    if "_" not in planet:
                         errors.append(
-                            f"T1-3: conditions[{i}].planet='{planet}' not canonical"
+                            f"T1-3: {lbl}.planet='{planet}' not canonical"
                         )
+
+        for i, cond in enumerate(conditions):
+            _check_planet_name(cond, f"conditions[{i}]")
+            if cond.get("type") == "or_group":
+                for j, alt in enumerate(cond.get("alternatives", [])):
+                    _check_planet_name(alt, f"conditions[{i}].or_group[{j}]")
 
         # T1-13: Claim minimum length and specificity
         _GENERIC_CLAIMS = {

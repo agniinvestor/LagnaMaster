@@ -70,13 +70,13 @@ b.add(
     exceptions=["mars_alone_in_3rd_without_3rd_lord_not_conducive_except_capricorn_scorpio_aries"],
 )
 
-# ═══ v.3: Destruction of co-born ═════════════════════════════════════════════
+# ═══ v.5-6: Destruction of co-born ═══════════════════════════════════════════
 
 b.add(
     conditions=[
-        {"type": "or_group", "conditions": [
+        {"type": "or_group", "alternatives": [
             {"type": "planets_conjunct", "planets": ["lord_of_3", "any_malefic"]},
-            {"type": "planet_in_sign_type", "planet": "lord_of_3", "sign_type": "malefic_ruled"},
+            {"type": "planet_dignity", "planet": "lord_of_3", "dignity": "debilitated"},
         ]},
         {"type": "planets_conjunct", "planets": ["Mars", "lord_of_3"]},
     ],
@@ -88,17 +88,18 @@ b.add(
         {"entity": "siblings", "claim": "coborn_will_not_live_long",
          "domain": "longevity", "direction": "unfavorable", "magnitude": 0.8},
     ],
-    verse_ref="Ch.14 v.3",
+    verse_ref="Ch.14 v.5-6",
     description=(
-        "3rd lord and Mars together with malefic or in malefic's sign: "
+        "3rd lord and Mars together with malefic or in debilitation: "
         "destruction of coborn at once. 'The coborn will not live long.'"
     ),
     commentary_context=(
         "Santhanam notes: Universal principle — the significator and lord "
-        "of a house together in malefic sign or with malefic brings harm "
-        "to that relative. Jupiter+11th lord → elder siblings; Venus+7th "
-        "lord → spouse; Jupiter+5th lord → progeny; Sun+9th lord → father; "
-        "Moon+4th lord → mother."
+        "of a house together in debilitation/inimical sign or with malefic "
+        "brings harm to that relative. Jupiter+11th lord → elder siblings; "
+        "Venus+7th lord → spouse; Jupiter+5th lord → progeny; Sun+9th lord "
+        "→ father; Moon+4th lord → mother. Verse also says happiness comes "
+        "if Mars or 3rd lord is in angle/trine/exaltation/friendly divisions."
     ),
     concordance_texts=["Saravali"],
     cross_chapter_refs=[
