@@ -8,7 +8,7 @@ Slokas: 13 (v.1-2 wealth combinations, v.3 Jupiter/Mars wealth, v.4 exchange,
   v.12 eyes, v.13 untruthful person)
 
 V2 Protocol Compliance:
-  Protocol A: One-claim-one-rule — 20 rules from 13 slokas ✓
+  Protocol A: One-claim-one-rule — 27 rules from 13 slokas ✓
   Protocol B: Contrary mirrors — v.1-2 (wealth/decline), v.12 (eyes) ✓
   Protocol C: Entity target — all "native" (verified, no father/spouse) ✓
   Protocol D: Santhanam commentary included ✓
@@ -246,43 +246,81 @@ b.add(
     tags=["h2_lord", "h11_lord", "wealth"],
 )
 
-# v.5b: 2nd lord aspected/conjunct Jupiter or Venus → wealthy (alternative path)
+# v.5b: 2nd lord conjunct Jupiter → wealthy (alternative path)
 b.add(
     conditions=[
         {"type": "planets_conjunct", "planets": ["lord_of_2", "Jupiter"]},
     ],
-    signal_group="h2_lord_jupiter_venus_aspect_wealth",
+    signal_group="h2_lord_jupiter_conjunct_wealth",
     direction="favorable", intensity="strong",
     primary_domain="wealth",
     predictions=[
-        {"entity": "native", "claim": "wealthy_through_jupiter_venus_relation",
+        {"entity": "native", "claim": "wealthy_through_jupiter_conjunction",
          "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
     ],
     verse_ref="Ch.13 v.5",
     description=(
-        "Alternatively, the 2nd lord related to Jupiter or Venus by "
-        "conjunction or aspect: the subject will be wealthy."
+        "2nd lord conjunct Jupiter: the subject will be wealthy. "
+        "Jupiter's conjunction with the 2nd lord is one of the "
+        "combinations for gaining wealth."
     ),
     commentary_context=(
         "Santhanam notes: Alternatively the 2nd lord should be related "
         "to Jupiter (and) or Venus by conjunction or by aspect. Both "
-        "the combinations are for gaining wealth."
+        "the combinations are for gaining wealth. NOTE: aspect path "
+        "cannot be encoded with current engine primitives — conjunction "
+        "path only. See S319 gap note below."
     ),
-    modifiers=[
-        {"condition": "venus_also_aspects_or_conjuncts_lord_of_2", "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
-    ],
     rule_relationship={"type": "alternative", "related_rules": ["BPHS1306"]},
-    tags=["h2_lord", "jupiter", "venus", "wealth"],
+    tags=["h2_lord", "jupiter", "wealth"],
 )
+
+# v.5d: 2nd lord conjunct Venus → wealthy (Venus path — S319 gap)
+b.add(
+    conditions=[
+        {"type": "planets_conjunct", "planets": ["lord_of_2", "Venus"]},
+    ],
+    signal_group="h2_lord_venus_conjunct_wealth",
+    direction="favorable", intensity="strong",
+    primary_domain="wealth",
+    predictions=[
+        {"entity": "native", "claim": "wealthy_through_venus_conjunction",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.13 v.5",
+    description=(
+        "2nd lord conjunct Venus: the subject will be wealthy. "
+        "Venus conjunction with the 2nd lord is one of the "
+        "combinations for gaining wealth."
+    ),
+    commentary_context=(
+        "Santhanam: The verse says 'aspected by or conjunct by Jupiter "
+        "and Venus.' Venus was previously only a modifier on Jupiter's "
+        "rule — but the text treats Jupiter and Venus as co-equal "
+        "alternatives. S319 gap fill. NOTE: aspect path cannot be "
+        "encoded with current engine primitives — conjunction path only."
+    ),
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1307"]},
+    tags=["h2_lord", "venus", "wealth"],
+)
+
+# NOTE: v.5 aspect paths (Jupiter/Venus aspecting 2nd lord) are stated
+# in the text ("aspected by or conjunct by Jupiter and Venus") but cannot
+# be encoded with current engine primitives. planet_aspecting requires a
+# numeric house target, not a lord position reference. The conjunction
+# paths above (BPHS1307, BPHS1309) cover the conjunction variant. Aspect
+# paths require engine enhancement to planet_aspecting to resolve
+# "lord_of_N_position" targets. Tracked as known gap.
 
 # ═════════════════════════════════════════════════════════════════════════
 # SLOKAS 6-7: Yogas for Poverty
 # ═════════════════════════════════════════════════════════════════════════
 
-# v.6-7a: 2nd lord in evil house + malefic in 2nd → penniless
+# v.6-7a: 2nd lord in evil house + 11th lord in evil house + malefic in 2nd → penniless
 b.add(
     conditions=[
         {"type": "lord_in_house", "lord_of": 2, "house": [6, 8, 12]},
+        {"type": "lord_in_house", "lord_of": 11, "house": [6, 8, 12]},
         {"type": "planet_in_house", "planet": "any_malefic", "house": 2},
     ],
     signal_group="h2_lord_dusthana_penniless",
@@ -295,16 +333,18 @@ b.add(
     timing_window={"type": "age", "value": 0, "precision": "exact"},
     verse_ref="Ch.13 v.6-7",
     description=(
-        "2nd lord in an evil house while the 11th lord is also badly "
-        "placed and the 2nd is occupied by a malefic: one will be "
-        "penniless. Penury right from birth."
+        "2nd lord in an evil house while the 11th lord is also in an "
+        "evil house and the 2nd is occupied by a malefic: one will be "
+        "penniless. Penury right from birth. Three afflictions combine."
     ),
     commentary_context=(
         "Santhanam notes: The lords of the 2nd and 11th can be jointly "
         "in the 6th/8th/12th or individually disposed in any two of "
         "the said three houses. Simultaneously the 2nd house needs a "
         "malefic in it. Thus there are afflictions from three "
-        "directions which will make the native extremely poor."
+        "directions which will make the native extremely poor. "
+        "S319 fix: added 11th lord in dusthana as explicit condition — "
+        "previously only in description but not in conditions list."
     ),
     concordance_texts=["Saravali"],
     tags=["h2_lord", "h11_lord", "dusthana", "poverty", "penury"],

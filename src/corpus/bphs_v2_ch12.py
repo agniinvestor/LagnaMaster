@@ -262,6 +262,37 @@ b.add(
     tags=["moon", "malefic", "health"],
 )
 
+# v.3b: Ascendant aspected/conjunct malefic without benefic aspect → no bodily health
+# (S319 gap: verse says "the ascendant or the Moon" — ascendant path was missing)
+b.add(
+    conditions=[
+        {"type": "planet_aspecting", "planet": "any_malefic", "house": 1},
+        {"type": "planet_not_aspecting", "planet": "any_benefic", "house": 1},
+    ],
+    signal_group="ascendant_malefic_no_benefic_health",
+    direction="unfavorable", intensity="moderate",
+    primary_domain="health",
+    predictions=[
+        {"entity": "native", "claim": "no_bodily_health_ascendant_afflicted",
+         "domain": "health", "direction": "unfavorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.12 v.3",
+    description=(
+        "Ascendant aspected by or conjunct a malefic, being devoid of "
+        "a benefic's aspect: there will not be bodily health. The verse "
+        "states 'the ascendant or the Moon' — this is the ascendant path."
+    ),
+    commentary_context=(
+        "The verse explicitly says 'the ascendant or the Moon.' BPHS1204 "
+        "encodes the Moon path. This rule encodes the ascendant path — "
+        "malefic influence on the 1st house without benefic relief. "
+        "S319 gap fill."
+    ),
+    concordance_texts=["Saravali"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1204"]},
+    tags=["ascendant", "malefic", "health"],
+)
+
 # ═════════════════════════════════════════════════════════════════════════
 # SLOKA 4: Bodily Beauty
 # "A benefic in the ascendant will give a pleasing appearance, while a
@@ -433,6 +464,73 @@ b.add(
         {"condition": [{"type": "or_group", "alternatives": [{"type": "planet_in_house_category", "planet": "Mercury", "category": "kendra"}, {"type": "planet_in_house_category", "planet": "Venus", "category": "kendra"}, {"type": "planets_conjunct", "planets": ["Mercury", "Moon"]}, {"type": "planets_conjunct", "planets": ["Venus", "Moon"]}]}], "effect": "amplifies", "target": "prediction", "strength": "medium", "scope": "local"},
     ],
     rule_relationship={"type": "addition", "related_rules": ["BPHS1209"]},
+)
+
+# v.5-7d: Mercury in kendra/trikona → longlived, wealthy, intelligent (S319 gap)
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Mercury", "house": [1, 4, 5, 7, 9, 10]},
+    ],
+    signal_group="mercury_kendra_trikona_benefits",
+    direction="favorable", intensity="moderate",
+    primary_domain="wealth",
+    predictions=[
+        {"entity": "native", "claim": "wealthy_intelligent_through_mercury_kendra",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.6},
+        {"entity": "native", "claim": "intelligent_through_mercury_kendra",
+         "domain": "character", "direction": "favorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.12 v.5-7",
+    description=(
+        "Mercury in an angle or trine: the native will be longlived, "
+        "wealthy, intelligent and liked by the king. Mercury in kendra "
+        "is one of the named benefics in the verse alongside Jupiter "
+        "and Venus."
+    ),
+    commentary_context=(
+        "Santhanam: 'If Mercury, Jupiter or Venus be in the ascendant "
+        "along with the Moon, or be in angle from the ascendant, the "
+        "native will enjoy royal fortunes.' Mercury is listed as a "
+        "co-equal benefic alongside Jupiter and Venus. Previously only "
+        "Jupiter had a standalone rule (BPHS1209). S319 gap fill."
+    ),
+    concordance_texts=["Saravali"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1209"]},
+    tags=["mercury", "kendra", "trikona", "wealth", "intelligence"],
+)
+
+# v.5-7e: Venus in kendra/trikona → longlived, wealthy, pleasures (S319 gap)
+b.add(
+    conditions=[
+        {"type": "planet_in_house", "planet": "Venus", "house": [1, 4, 5, 7, 9, 10]},
+    ],
+    signal_group="venus_kendra_trikona_benefits",
+    direction="favorable", intensity="moderate",
+    primary_domain="wealth",
+    predictions=[
+        {"entity": "native", "claim": "wealthy_through_venus_kendra",
+         "domain": "wealth", "direction": "favorable", "magnitude": 0.6},
+        {"entity": "native", "claim": "abundant_pleasures_through_venus",
+         "domain": "character", "direction": "favorable", "magnitude": 0.7},
+    ],
+    verse_ref="Ch.12 v.5-7",
+    description=(
+        "Venus in an angle or trine: the native will be longlived, "
+        "wealthy, and enjoy abundant pleasures and comforts of the body. "
+        "Venus in kendra is one of the named benefics in the verse."
+    ),
+    commentary_context=(
+        "Santhanam: 'If Mercury, Jupiter or Venus be in the ascendant "
+        "along with the Moon, or be in angle from the ascendant, the "
+        "native will enjoy royal fortunes.' If Mercury, Jupiter or Venus "
+        "be in 4th, 7th or 10th from the ascendant, or be in the company "
+        "of the Moon in the ascendant, the native will enjoy royal "
+        "fortunes. Venus previously only a modifier — now standalone. "
+        "S319 gap fill."
+    ),
+    concordance_texts=["Saravali", "Phaladeepika"],
+    rule_relationship={"type": "alternative", "related_rules": ["BPHS1209"]},
+    tags=["venus", "kendra", "trikona", "wealth", "pleasures"],
 )
 
 # ═════════════════════════════════════════════════════════════════════════
