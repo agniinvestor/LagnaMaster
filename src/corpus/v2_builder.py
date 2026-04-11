@@ -28,6 +28,7 @@ Usage:
 """
 from __future__ import annotations
 
+
 from src.corpus.registry import CorpusRegistry
 from src.corpus.rule_record import RuleRecord
 
@@ -305,21 +306,23 @@ class V2ChapterBuilder:
                 existing.append(rid)
                 source.rule_relationship["related_rules"] = existing
 
+        # BUG-088: deepcopy mutable objects to prevent shared-state corruption
+        import copy
         self._rules.append(RuleRecord(
             rule_id=rid, source=source.source, chapter=source.chapter,
             school=source.school, category=source.category,
             description=f"[BPHS — {self.category}] {new_desc}",
-            confidence=source.confidence, keyword_tags=source.keyword_tags, implemented=False,
-            primary_condition=source.primary_condition,
-            modifiers=source.modifiers, exceptions=source.exceptions,
-            outcome_domains=source.outcome_domains,
+            confidence=source.confidence, keyword_tags=copy.deepcopy(source.keyword_tags), implemented=False,
+            primary_condition=copy.deepcopy(source.primary_condition),
+            modifiers=copy.deepcopy(source.modifiers), exceptions=copy.deepcopy(source.exceptions),
+            outcome_domains=copy.deepcopy(source.outcome_domains),
             primary_domain=source.primary_domain,
             outcome_direction=new_dir, outcome_intensity=source.outcome_intensity,
             outcome_timing=source.outcome_timing,
             lagna_scope=source.lagna_scope, dasha_scope=source.dasha_scope,
             verse_ref=source.verse_ref,
-            concordance_texts=source.concordance_texts,
-            divergence_notes=source.divergence_notes,
+            concordance_texts=copy.deepcopy(source.concordance_texts),
+            divergence_notes=copy.deepcopy(source.divergence_notes),
             phase=source.phase, system=source.system,
             prediction_type=source.prediction_type,
             gender_scope=source.gender_scope,
@@ -332,11 +335,11 @@ class V2ChapterBuilder:
             predictions=new_preds, entity_target=source.entity_target,
             signal_group=new_sg,
             commentary_context=source.commentary_context,
-            cross_chapter_refs=source.cross_chapter_refs,
-            timing_window=source.timing_window,
-            functional_modulation=source.functional_modulation,
-            derived_house_chains=source.derived_house_chains,
-            convergence_signals=source.convergence_signals,
+            cross_chapter_refs=copy.deepcopy(source.cross_chapter_refs),
+            timing_window=copy.deepcopy(source.timing_window),
+            functional_modulation=copy.deepcopy(source.functional_modulation),
+            derived_house_chains=copy.deepcopy(source.derived_house_chains),
+            convergence_signals=copy.deepcopy(source.convergence_signals),
             rule_relationship=mirror_rel,
         ))
         return rid

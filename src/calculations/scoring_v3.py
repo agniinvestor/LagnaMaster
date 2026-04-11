@@ -69,7 +69,7 @@ def score_chart_v3(
 
     from src.calculations.multi_axis_scoring import score_all_axes
     from src.calculations.lpi import compute_lpi
-    from src.calculations.divisional_charts import compute_vimshopaka
+    from src.calculations.divisional_charts import compute_vimshopaka  # BUG-083: should use varga.py
     from src.calculations.avastha_v2 import compute_avasthas_v2
     from src.calculations.extended_yogas import (
         detect_raja_dhana_yogas,
