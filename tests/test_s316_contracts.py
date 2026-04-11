@@ -1,4 +1,5 @@
 """Tests for Wave 0 contracts: context accumulator, aggregation, whitelist."""
+import pytest
 from src.calculations.rule_firing import (
     _check_compound_conditions, FiredRule,
 )
@@ -45,7 +46,7 @@ def test_aggregate_argala_metadata():
         }
     }
     result = aggregate_condition_metadata(conditions)
-    assert result["argala_strength_total"] == 0.7
+    assert result["argala_strength_total"] == pytest.approx(0.7)
 
 
 def test_aggregate_caps_argala_at_1():

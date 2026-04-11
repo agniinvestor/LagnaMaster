@@ -25,7 +25,7 @@ def test_apply_modifiers_no_modifiers():
     fired = _make_fired()
     rule = _FakeRule()
     result = apply_modifiers(fired, rule)
-    assert result.magnitude == 0.7
+    assert result.magnitude == pytest.approx(0.7)
     assert result.direction == "favorable"
 
 
@@ -63,7 +63,7 @@ def test_apply_modifiers_qualifies():
     ])
     result = apply_modifiers(fired, rule)
     assert "more_daughters" in result.qualifications
-    assert result.magnitude == 0.7  # unchanged
+    assert result.magnitude == pytest.approx(0.7)  # unchanged
 
 
 def test_aggregate_domains():

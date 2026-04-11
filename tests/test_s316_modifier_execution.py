@@ -1,4 +1,5 @@
 """Tests for modifier execution: gate eval, ordering, 3-tier negation, context scaling."""
+import pytest
 from src.calculations.inference import apply_modifiers, aggregate_domains, ModifiedRule
 from src.calculations.rule_firing import FiredRule
 
@@ -106,7 +107,7 @@ def test_weak_negation_negligible():
     }])
     result = apply_modifiers(fired, rule, chart=None)
     assert result.direction == "favorable"
-    assert result.magnitude == 0.7
+    assert result.magnitude == pytest.approx(0.7)
 
 
 # --- Ordering ---
@@ -155,7 +156,7 @@ def test_no_modifiers_unchanged():
     fired = _fired()
     rule = _Rule()
     result = apply_modifiers(fired, rule, chart=None)
-    assert result.magnitude == 0.7
+    assert result.magnitude == pytest.approx(0.7)
     assert result.direction == "favorable"
     assert not result.gated_out
 
@@ -176,7 +177,7 @@ def _modified(rule_id, domain, direction, magnitude, confidence=0.7, signal_grou
 def test_confidence_weighted_scoring():
     rules = [_modified("R1", "wealth", "favorable", 0.8, confidence=0.5)]
     scores = aggregate_domains(rules)
-    assert scores["wealth"].favorable_score == 0.4  # 0.8 * 0.5
+    assert scores["wealth"].favorable_score == pytest.approx(0.4)  # 0.8 * 0.5
 
 
 def test_contrary_mirror_cancellation():

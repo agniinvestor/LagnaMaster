@@ -1,4 +1,5 @@
 """Tests for ExecutionTrace observability layer."""
+import pytest
 import src.calculations.inference as inf
 from src.calculations.inference import (
     apply_modifiers, ExecutionTrace,
@@ -57,12 +58,12 @@ def test_trace_populated_when_enabled():
         assert result.trace is not None
         assert isinstance(result.trace, ExecutionTrace)
         assert result.trace.rule_id == "T001"
-        assert result.trace.magnitude_initial == 0.7
+        assert result.trace.magnitude_initial == pytest.approx(0.7)
         assert result.trace.magnitude_final == result.magnitude
         assert len(result.trace.modifier_traces) == 1
         mt = result.trace.modifier_traces[0]
         assert mt.effect == "amplifies"
-        assert mt.magnitude_before == 0.7
+        assert mt.magnitude_before == pytest.approx(0.7)
         assert mt.magnitude_after > 0.7
     finally:
         inf.TRACE_ENABLED = old
@@ -116,7 +117,7 @@ def test_modifier_trace_context_factors():
         result = apply_modifiers(fired, rule, chart=None, condition_context=ctx)
         assert result.trace is not None
         mt = result.trace.modifier_traces[0]
-        assert mt.context_factors.get("argala_strength_total") == 0.8
+        assert mt.context_factors.get("argala_strength_total") == pytest.approx(0.8)
         assert mt.weight_after > mt.weight_before  # context scaled up
     finally:
         inf.TRACE_ENABLED = old

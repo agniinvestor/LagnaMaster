@@ -14,6 +14,8 @@ Classical sources:
 
 from __future__ import annotations
 
+import pytest
+
 
 # ─────────────────────────────────────────────────────────────
 # 1. WeightContext dataclass fields
@@ -63,7 +65,7 @@ def test_yogakaraka_amplification_parashari():
         base_weight=2.0,
     )
     result = W(ctx)
-    assert result == 2.0 * 1.5, f"Expected 3.0, got {result}"
+    assert result == pytest.approx(2.0 * 1.5), f"Expected 3.0, got {result}"
 
 
 def test_yogakaraka_amplification_jaimini():
@@ -80,7 +82,7 @@ def test_yogakaraka_amplification_jaimini():
         base_weight=1.0,
     )
     result = W(ctx)
-    assert result == 1.0 * 1.25, f"Expected 1.25, got {result}"
+    assert result == pytest.approx(1.0 * 1.25), f"Expected 1.25, got {result}"
 
 
 # ─────────────────────────────────────────────────────────────
