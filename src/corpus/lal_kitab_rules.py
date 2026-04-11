@@ -413,6 +413,7 @@ _RULES = [
         verse="Lal Kitab 1942 Ed., Rin Chapter",
         tags=["lkx", "rin_karma", "santan_rin", "children", "jupiter", "lal_kitab"],
         implemented=False,
+        entity_target="children",
     ),
     RuleRecord(
         rule_id="LKX025",

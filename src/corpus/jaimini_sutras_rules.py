@@ -145,6 +145,7 @@ _JAIMINI_RULES = [
         verse="JS Adhyaya 1.53-60",
         tags=["jaimini", "puttrakaraka", "children", "progeny", "5th_karakamsha"],
         implemented=False,
+        entity_target="children",
     ),
     RuleRecord(
         rule_id="JMS008",

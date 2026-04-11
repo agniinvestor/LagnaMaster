@@ -1339,3 +1339,12 @@ def _build_all_rules() -> list[RuleRecord]:
 BPHS_1B_HOUSES_2_REGISTRY = CorpusRegistry()
 for _rule in _build_all_rules():
     BPHS_1B_HOUSES_2_REGISTRY.add(_rule)
+
+# ── S320: Bhavat bhavam fixup ─────────────────────────────────────────────────
+# BPHS0414: 5th lord in 9th = 5th-from-5th (children's progeny chain)
+for _r in BPHS_1B_HOUSES_2_REGISTRY.all():
+    if _r.rule_id == "BPHS0414":
+        _r.derived_house_chains = [
+            {"base_house": 5, "derivative": "5th_from",
+             "effective_house": 9, "entity": "children", "domain": "progeny"},
+        ]

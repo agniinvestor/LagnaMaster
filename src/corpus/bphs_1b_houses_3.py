@@ -1369,3 +1369,23 @@ def _build_all_rules() -> list[RuleRecord]:
 BPHS_1B_HOUSES_3_REGISTRY = CorpusRegistry()
 for _rule in _build_all_rules():
     BPHS_1B_HOUSES_3_REGISTRY.add(_rule)
+
+# ── S320: Entity target + bhavat bhavam fixups ────────────────────────────────
+# These rules predict about father (derived from 9th house), not native.
+_ENTITY_FIXUPS = {
+    "BPHS0806": "father",  # v.6: father will be a king
+    "BPHS0807": "father",  # v.7: father will be wealthy/famous
+    "BPHS0813": "father",  # v.13: father passed away before birth
+    "BPHS0815": "father",  # v.17-18: father will face his end
+}
+for _r in BPHS_1B_HOUSES_3_REGISTRY.all():
+    if _r.rule_id in _ENTITY_FIXUPS:
+        _r.entity_target = _ENTITY_FIXUPS[_r.rule_id]
+
+# BPHS0807: House 10 in 9th_house_effects = 2nd-from-9th (father's wealth)
+for _r in BPHS_1B_HOUSES_3_REGISTRY.all():
+    if _r.rule_id == "BPHS0807":
+        _r.derived_house_chains = [
+            {"base_house": 9, "derivative": "2nd_from",
+             "effective_house": 10, "entity": "father", "domain": "wealth"},
+        ]
