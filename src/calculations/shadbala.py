@@ -283,6 +283,8 @@ def compute_ojha_yugma_bala(planet: str, chart) -> float:
         rasi_v = 15.0 if not is_odd_rasi else 0.0
         d9_v = 15.0 if not is_odd_d9 else 0.0
     else:
+        # KNOWN_GAP: BUG-044 — Mercury/Saturn should check rasi+navamsa independently
+        # per BPHS Ch.27 v.4 p.265, not return flat 15. Needs odd/even logic for neutrals.
         return 15.0  # neutral planets (Mercury, Saturn) — always 15
     return rasi_v + d9_v
 
@@ -755,6 +757,10 @@ def compute_shadbala(
     result.abda_bala = kala_components.get("abda", 0.0)
     result.ayana_bala = kala_components.get("ayana", 0.0)
     result.kala_bala = kala_total
+
+    # KNOWN_GAP: BUG-043 — Yuddha Bala (planetary war) missing entirely.
+    # BPHS Ch.27 v.20 p.284: when two planets are within 1 degree,
+    # loser transfers Shadbala to winner. Requires full feature implementation.
 
     # Chesta Bala
     result.chesta_bala = compute_chesta_bala(planet, chart)

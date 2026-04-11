@@ -1321,7 +1321,12 @@ def _check_rule_fires(rule, chart) -> tuple[bool, int, dict | None]:
 
 
 def _is_activated(rule, chart, dasha_context=None) -> bool:
-    """Check if a rule is currently activated. Default: always active."""
+    """Check if a rule is currently activated. Default: always active.
+
+    KNOWN_GAP: BUG-048 — both branches return True, making this a no-op.
+    Needs dasha/transit timing context to implement properly. All corpus rules
+    currently fire regardless of timing_window specification.
+    """
     timing = getattr(rule, "timing_window", None)
     if not timing or timing.get("type") == "unspecified":
         return True

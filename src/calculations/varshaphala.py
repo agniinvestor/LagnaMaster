@@ -495,3 +495,13 @@ def get_tajika_aspect(lon_a: float, lon_b: float):
                 "aspect_type": names.get(angle, "Unknown"),
             }
     return None
+
+
+# KNOWN_GAP: BUG-045 — Sahams (sensitive points) not implemented.
+# Tajika Nilakanthi describes 50+ sahams. Requires dedicated feature build.
+#
+# KNOWN_GAP: BUG-046 — Mudda Dasha (annual dasha) not implemented.
+# Requires annual dasha calculation from Muntha lord. Dedicated feature.
+#
+# KNOWN_GAP: BUG-047 — Pancha Vargeeya Bala not implemented.
+# Aggregate of D1,D2,D9,D12,D30 strength. Requires varga integration.

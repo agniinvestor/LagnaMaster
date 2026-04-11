@@ -544,7 +544,9 @@ def score_chart(chart: BirthChart, query_date=None) -> ChartScores:
             )
         )
 
-        # --- R21: Pushkara Navamsha (deferred — always 0 in pilot) ---
+        # --- R21: Pushkara Navamsha ---
+        # KNOWN_GAP: BUG-049 — hardcoded to 0. Needs Pushkara Navamsha lookup
+        # (12 specific navamsas per BPHS Ch.8 that confer extra strength).
         rules.append(
             RuleResult("R21", "Bhavesh Pada in Pushkara Navamsha", 0.0, triggered=False)
         )
