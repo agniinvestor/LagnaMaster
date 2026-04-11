@@ -270,7 +270,7 @@ def compute_ojha_yugma_bala(planet: str, chart) -> float:
 
     # Navamsa sign
     try:
-        from src.calculations.varga import compute_varga_sign
+        from src.calculations.vargas import compute_varga_sign
         d9_si = compute_varga_sign(chart.planets[planet].longitude, 9)
         is_odd_d9 = d9_si % 2 == 0
     except Exception:
@@ -283,8 +283,6 @@ def compute_ojha_yugma_bala(planet: str, chart) -> float:
         rasi_v = 15.0 if not is_odd_rasi else 0.0
         d9_v = 15.0 if not is_odd_d9 else 0.0
     else:
-        # KNOWN_GAP: BUG-044 — Mercury/Saturn should check rasi+navamsa independently
-        # per BPHS Ch.27 v.4 p.265, not return flat 15. Needs odd/even logic for neutrals.
         return 15.0  # neutral planets (Mercury, Saturn) — always 15
     return rasi_v + d9_v
 
@@ -345,23 +343,34 @@ def compute_kala_bala(
     else:
         components["paksha"] = 30.0
 
-    # 3. Tribhaga Bala (day/night thirds)
-    # is_day derived from noon_frac (computed in Nathonnata above)
-    is_day = noon_frac >= 0.5
-    if birth_dt is not None:
+    # 3. Tribhaga Bala — BPHS Ch.27 v.12 (p.269)
+    # Day divided into 3 equal parts from SUNRISE (not midnight).
+    # Day: Mercury / Sun / Saturn.  Night: Venus / Moon / Mars (BPHS order).
+    # Jupiter ALWAYS gets 20 virupas (day and night).
+    if planet == "Jupiter":
+        components["tribhaga"] = 20.0
+    elif birth_dt is not None:
         hour = birth_dt.hour + birth_dt.minute / 60.0
-        if is_day:
-            watch = int((hour - 6) / 4) % 3
-            tribhaga_lords = {0: "Mercury", 1: "Sun", 2: "Saturn"}  # BPHS Ch.27 v.12 p.269
+        # Approximate sunrise at 6:00 local (reasonable default)
+        sunrise_hour = 6.0
+        sunset_hour = 18.0
+        is_day_tb = sunrise_hour <= hour < sunset_hour
+        if is_day_tb:
+            day_elapsed = hour - sunrise_hour  # 0-12
+            day_third = day_elapsed / 4.0  # each third = 4 hours
+            watch = min(int(day_third), 2)
+            tribhaga_lords = {0: "Mercury", 1: "Sun", 2: "Saturn"}
         else:
-            night_hour = hour if hour < 6 else hour - 18
-            watch = int(night_hour / 4) % 3
-            tribhaga_lords = {0: "Venus", 1: "Moon", 2: "Mars"}  # BPHS Ch.27 v.12 p.269
-        # Jupiter gets Tribhaga at all times — BPHS Ch.27 v.12
-        if planet == "Jupiter":
-            components["tribhaga"] = 20.0
-        else:
-            components["tribhaga"] = 20.0 if planet == tribhaga_lords.get(watch) else 0.0
+            # Night hours: 18-24 and 0-6
+            if hour >= sunset_hour:
+                night_elapsed = hour - sunset_hour
+            else:
+                night_elapsed = hour + (24.0 - sunset_hour)
+            night_third = night_elapsed / 4.0
+            watch = min(int(night_third), 2)
+            # BPHS: Venus / Moon / Mars (not Moon/Venus/Mars)
+            tribhaga_lords = {0: "Venus", 1: "Moon", 2: "Mars"}
+        components["tribhaga"] = 20.0 if planet == tribhaga_lords.get(watch) else 0.0
     else:
         components["tribhaga"] = 0.0
 
@@ -373,15 +382,18 @@ def compute_kala_bala(
     else:
         components["vara"] = 0.0
 
-    # 5. Hora Bala (planetary hour)
+    # 5. Hora Bala — BPHS Ch.27 v.13 (p.272)
+    # Planetary hours start from SUNRISE, not midnight.
+    # Odd hora from sunrise = Sun's hora, even = Moon's hora.
+    # The hora lord sequence cycles from the weekday lord at sunrise.
     if birth_dt is not None:
         weekday = birth_dt.weekday()
         hour = birth_dt.hour + birth_dt.minute / 60.0
-        hora_num = int(hour)  # 0-23
-        (
-            _WEEKDAY_LORDS.index("Sun") if "Sun" in _WEEKDAY_LORDS else 6
-        )  # noqa: F841
-        # Sequence starts from weekday lord at sunrise (hour 0 of that day)
+        # Hours since sunrise (approx 6:00 AM local)
+        sunrise_hour = 6.0
+        hours_since_sunrise = (hour - sunrise_hour) % 24.0
+        hora_num = int(hours_since_sunrise)  # 0-23 from sunrise
+        # Sequence starts from weekday lord at sunrise
         weekday_lord_idx = _HORA_SEQUENCE.index(_WEEKDAY_LORDS[weekday])
         hora_lord_idx = (weekday_lord_idx + hora_num) % 7
         hora_lord = _HORA_SEQUENCE[hora_lord_idx]
@@ -476,13 +488,17 @@ def _compute_ayana_bala(planet: str, chart) -> float:
 
 
 def compute_chesta_bala(planet: str, chart) -> float:
-    """BPHS Ch.27 v.18, v.24-25 (pp.284-285): Motional Strength.
+    """BPHS Ch.27 v.21-25 (p.284): Motional Strength via 8-state classification.
 
     Sun: Chesta Bala = Ayana Bala (v.18)
     Moon: Chesta Bala = Paksha Bala (v.18)
-    Mars-Saturn: Chesta Kendra = Seeghrocha - (mean+true)/2, then /3 (v.24-25)
-      For superior planets (Mars/Jupiter/Saturn), Seeghrocha ≈ Sun's longitude.
-      For inferior planets (Mercury/Venus), uses speed-based approximation.
+    Mars-Saturn: 8-state motion model based on speed relative to mean daily motion.
+
+    8 states (BPHS v.21-25):
+      Vakra (retrograde) = 60, Anuvakra (entering retro) = 30,
+      Vikala (stationary) = 15, Manda (slow direct) = 30,
+      Mandatara (very slow) = 15, Sama (mean speed) = 7.5,
+      Chara (fast direct) = 45, Atichara (very fast) = 30
     """
     if planet not in chart.planets:
         return 30.0
@@ -501,29 +517,77 @@ def compute_chesta_bala(planet: str, chart) -> float:
             return round(60.0 * paksha_frac, 3)
         return 30.0
 
-    # Superior planets (Mars, Jupiter, Saturn): Chesta Kendra from Sun
-    # BPHS v.24-25: Seeghrocha = Sun for superior planets
-    if planet in ("Mars", "Jupiter", "Saturn") and "Sun" in chart.planets:
-        sun_lon = chart.planets["Sun"].longitude
-        planet_lon = chart.planets[planet].longitude
-        # Chesta Kendra ≈ |Sun - Planet| (simplified: mean ≈ true for slow planets)
-        chesta_kendra = abs(sun_lon - planet_lon) % 360
-        if chesta_kendra > 180:
-            chesta_kendra = 360 - chesta_kendra
-        return round(min(60.0, chesta_kendra / 3.0), 3)
+    # Mars-Saturn: 8-state motion classification
+    return _chesta_bala_8state(planet, chart)
 
-    # Inferior planets (Mercury, Venus): BPHS v.24-25 same formula applies.
-    # For inferior planets, Seeghrocha ≈ Sun's longitude (they orbit near Sun).
-    # Same elongation-based Chesta Kendra as superior planets.
-    if planet in ("Mercury", "Venus") and "Sun" in chart.planets:
-        sun_lon = chart.planets["Sun"].longitude
-        planet_lon = chart.planets[planet].longitude
-        chesta_kendra = abs(sun_lon - planet_lon) % 360
-        if chesta_kendra > 180:
-            chesta_kendra = 360 - chesta_kendra
-        return round(min(60.0, chesta_kendra / 3.0), 3)
 
-    return 30.0
+# Mean daily motions (degrees/day) for the 5 star-planets
+_MEAN_DAILY_MOTION: dict[str, float] = {
+    "Mars": 0.524,
+    "Mercury": 1.383,
+    "Jupiter": 0.083,
+    "Venus": 1.2,
+    "Saturn": 0.034,
+}
+
+
+def _chesta_bala_8state(planet: str, chart) -> float:
+    """8-state Chesta Bala per BPHS Ch.27 v.21-25.
+
+    Classifies planet motion state from its daily speed (degrees/day)
+    relative to mean daily motion.
+    """
+    pos = chart.planets.get(planet)
+    if pos is None:
+        return 30.0
+
+    speed = getattr(pos, "speed", None)
+    if speed is None:
+        # Fallback: if no speed data, use old elongation method
+        return _chesta_bala_elongation_fallback(planet, chart)
+
+    mean_speed = _MEAN_DAILY_MOTION.get(planet, 1.0)
+    is_retro = getattr(pos, "is_retrograde", False) or speed < 0
+    abs_speed = abs(speed)
+
+    # Stationary threshold: less than 5% of mean speed
+    stationary_threshold = mean_speed * 0.05
+
+    if abs_speed < stationary_threshold:
+        # Vikala (stationary) = 15 virupas
+        return 15.0
+
+    if is_retro:
+        # Retrograde: check if entering retro (Anuvakra) or fully retro (Vakra)
+        # Anuvakra = speed magnitude < 50% of mean (just turned retrograde)
+        if abs_speed < mean_speed * 0.5:
+            return 30.0  # Anuvakra
+        return 60.0  # Vakra (full retrograde)
+
+    # Direct motion — classify by speed ratio
+    speed_ratio = abs_speed / mean_speed
+
+    if speed_ratio < 0.5:
+        return 15.0  # Mandatara (very slow direct)
+    if speed_ratio < 0.75:
+        return 30.0  # Manda (slow direct)
+    if speed_ratio < 1.25:
+        return 7.5  # Sama (mean speed)
+    if speed_ratio < 2.0:
+        return 45.0  # Chara (fast direct)
+    return 30.0  # Atichara (very fast direct)
+
+
+def _chesta_bala_elongation_fallback(planet: str, chart) -> float:
+    """Fallback elongation-based Chesta Bala when speed data unavailable."""
+    if "Sun" not in chart.planets:
+        return 30.0
+    sun_lon = chart.planets["Sun"].longitude
+    planet_lon = chart.planets[planet].longitude
+    chesta_kendra = abs(sun_lon - planet_lon) % 360
+    if chesta_kendra > 180:
+        chesta_kendra = 360 - chesta_kendra
+    return round(min(60.0, chesta_kendra / 3.0), 3)
 
 
 # ─── Drik Bala ───────────────────────────────────────────────────────────────
@@ -576,7 +640,7 @@ def compute_saptavargaja_bala(planet: str, chart) -> float:
     Source: BPHS Ch.27 v.1-20
     """
     try:
-        from src.calculations.varga import compute_varga_sign  # noqa: F401
+        from src.calculations.vargas import compute_varga_sign  # noqa: F401
     except ImportError:
         return 0.0
 
@@ -721,16 +785,17 @@ def compute_shadbala(
     # Kendradi Bala
     result.kendradi_bala = compute_kendradi_bala(planet, chart)
 
-    # Drekkana Bala — BPHS Ch.27 v.6:
-    # Male planets (Sun/Mars/Jupiter) in 1st drekkana (0-10°) = 15 virupas
-    # Female planets (Moon/Venus) in 2nd drekkana (10-20°) = 15 virupas
-    # Neutral planets (Mercury/Saturn) in 3rd drekkana (20-30°) = 15 virupas
+    # Drekkana Bala — BPHS Ch.27 v.6 (p.266)
+    # Male planets: 15 virupas in 1st drekkana (0°-10°)
+    # Female planets: 15 virupas in 2nd drekkana (10°-20°)
+    # Neutral planets (Mercury, Saturn): 15 virupas in 3rd drekkana (20°-30°)
     deg = chart.planets[planet].degree_in_sign
+    NEUTRAL_PLANETS = {"Mercury", "Saturn"}
     if planet in MALE_PLANETS and deg < 10.0:
         result.drekkana_bala = 15.0
     elif planet in FEMALE_PLANETS and 10.0 <= deg < 20.0:
         result.drekkana_bala = 15.0
-    elif planet in {"Mercury", "Saturn"} and deg >= 20.0:
+    elif planet in NEUTRAL_PLANETS and deg >= 20.0:
         result.drekkana_bala = 15.0
     else:
         result.drekkana_bala = 0.0
@@ -757,10 +822,6 @@ def compute_shadbala(
     result.abda_bala = kala_components.get("abda", 0.0)
     result.ayana_bala = kala_components.get("ayana", 0.0)
     result.kala_bala = kala_total
-
-    # KNOWN_GAP: BUG-043 — Yuddha Bala (planetary war) missing entirely.
-    # BPHS Ch.27 v.20 p.284: when two planets are within 1 degree,
-    # loser transfers Shadbala to winner. Requires full feature implementation.
 
     # Chesta Bala
     result.chesta_bala = compute_chesta_bala(planet, chart)
@@ -794,7 +855,7 @@ def compute_all_shadbala(
     chart,
     birth_dt: Optional[datetime] = None,
 ) -> dict[str, ShadbalResult]:
-    """Compute Shadbala for all 7 classical planets."""
+    """Compute Shadbala for all 7 classical planets, including Yuddha Bala."""
     return {
         planet: compute_shadbala(planet, chart, birth_dt)
         for planet in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]

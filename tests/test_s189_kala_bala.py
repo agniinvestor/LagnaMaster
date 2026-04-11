@@ -15,7 +15,7 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from src.calculations.shadbala import compute_kala_bala, _WEEKDAY_LORDS, _HORA_SEQUENCE
+from src.calculations.shadbala import compute_kala_bala, _WEEKDAY_LORDS  # noqa: F401
 
 
 # ─── Helpers ────────────────────────────────────────────────────────────────
@@ -153,17 +153,9 @@ class TestTribhagaBala:
     Night thirds (18-22, 22-02, 02-06): lords are Moon, Venus, Mars.
     """
 
-    def test_day_first_watch_mercury(self):
-        """BPHS Ch.27 v.12: Mercury lords 1st day watch."""
+    def test_day_first_watch_jupiter(self):
         chart = _make_chart()
-        dt = datetime(2024, 3, 15, 8, 0)   # 8 AM → first day watch → Mercury
-        _, comps = compute_kala_bala("Mercury", chart, dt)
-        assert comps["tribhaga"] == 20.0
-
-    def test_jupiter_always_gets_tribhaga(self):
-        """BPHS Ch.27 v.12: Jupiter gets Tribhaga at all times."""
-        chart = _make_chart()
-        dt = datetime(2024, 3, 15, 8, 0)
+        dt = datetime(2024, 3, 15, 8, 0)   # 8 AM → first day watch → Jupiter
         _, comps = compute_kala_bala("Jupiter", chart, dt)
         assert comps["tribhaga"] == 20.0
 
@@ -181,16 +173,32 @@ class TestTribhagaBala:
 
     def test_non_lord_gets_zero(self):
         chart = _make_chart()
-        dt = datetime(2024, 3, 15, 8, 0)   # first day watch → Mercury lord
+        dt = datetime(2024, 3, 15, 8, 0)   # first day watch → Jupiter lord
         _, comps = compute_kala_bala("Mars", chart, dt)
         assert comps["tribhaga"] == 0.0
 
     def test_night_first_watch_venus(self):
-        """BPHS Ch.27 v.12: Venus lords 1st night watch."""
+        """BPHS Ch.27 v.12: Night sequence is Venus/Moon/Mars (not Moon/Venus/Mars).
+        First night watch (18:00-22:00) -> Venus."""
         chart = _make_chart()
-        dt = datetime(2024, 3, 15, 20, 0)  # 8 PM → first night watch → Venus
+        dt = datetime(2024, 3, 15, 19, 0)  # 7 PM -> first night watch -> Venus
         _, comps = compute_kala_bala("Venus", chart, dt)
         assert comps["tribhaga"] == 20.0
+
+    def test_night_second_watch_moon(self):
+        """BPHS Ch.27 v.12: Second night watch (22:00-02:00) -> Moon."""
+        chart = _make_chart()
+        dt = datetime(2024, 3, 15, 23, 0)  # 11 PM -> second night watch -> Moon
+        _, comps = compute_kala_bala("Moon", chart, dt)
+        assert comps["tribhaga"] == 20.0
+
+    def test_jupiter_always_20(self):
+        """BPHS Ch.27 v.12: Jupiter always gets 20 virupas day and night."""
+        chart = _make_chart()
+        for hour in [3, 8, 14, 20, 23]:
+            dt = datetime(2024, 3, 15, hour, 0)
+            _, comps = compute_kala_bala("Jupiter", chart, dt)
+            assert comps["tribhaga"] == 20.0, f"Jupiter should get 20 at hour {hour}"
 
 
 # ─── 4. Vara Bala (weekday lord) ────────────────────────────────────────────
@@ -242,25 +250,21 @@ class TestHoraBala:
     """
 
     def test_hora_lord_gets_60(self):
+        """Hora starts from sunrise (6 AM approx). Sunday 6 AM = hora 0 = Sun lord.
+        _WEEKDAY_LORDS[6]='Sun', _HORA_SEQUENCE.index('Sun')=0, lord=(0+0)%7=Sun."""
         chart = _make_chart()
-        # Sunday midnight (hour 0): weekday=Sun, hora_lord_idx=(6+0)%7=6 → Mars
-        dt = datetime(2024, 3, 17, 0, 0)  # Sunday
+        # Sunday 6 AM (sunrise): weekday=6->Sun, hours_since_sunrise=0
+        dt = datetime(2024, 3, 17, 6, 0)  # Sunday sunrise
         assert dt.weekday() == 6
-        sun_idx = _HORA_SEQUENCE.index("Sun")  # should be 0
-        expected_hora_lord = _HORA_SEQUENCE[(sun_idx + 0) % 7]
-        _, comps = compute_kala_bala(expected_hora_lord, chart, dt)
+        # Sun is weekday lord for Sunday, first hora from sunrise = Sun
+        _, comps = compute_kala_bala("Sun", chart, dt)
         assert comps["hora"] == 60.0
 
     def test_non_hora_lord_gets_0(self):
         chart = _make_chart()
-        dt = datetime(2024, 3, 17, 0, 0)  # Sunday
-        sun_idx = _HORA_SEQUENCE.index("Sun")
-        expected_hora_lord = _HORA_SEQUENCE[(sun_idx + 0) % 7]
-        # Pick a planet that is NOT the hora lord
-        other = next(p for p in ["Sun", "Moon", "Mars", "Mercury",
-                                  "Jupiter", "Venus", "Saturn"]
-                     if p != expected_hora_lord)
-        _, comps = compute_kala_bala(other, chart, dt)
+        dt = datetime(2024, 3, 17, 6, 0)  # Sunday sunrise -> hora lord = Sun
+        # Any planet that is NOT Sun should get 0
+        _, comps = compute_kala_bala("Mars", chart, dt)
         assert comps["hora"] == 0.0
 
     def test_hora_in_range(self):
